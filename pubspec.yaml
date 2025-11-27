@@ -10,7 +10,15 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Native splash only
+  # Firebase Core (required for all Firebase features)
+  firebase_core: ^3.6.0
+
+  # Optional (you will need these later if you want storage or database)
+  # cloud_firestore: ^5.4.4
+  # firebase_auth: ^5.2.0
+  # firebase_storage: ^12.1.0
+
+  # Native splash
   flutter_native_splash: ^2.4.6
 
 dev_dependencies:
@@ -24,13 +32,15 @@ flutter:
   assets:
     - assets/images/
 
-# --- Native splash screen config ---
+# ----------------------------------------------------
+# Native splash screen configuration
+# ----------------------------------------------------
 flutter_native_splash:
   # Light mode splash
   color: "#F8F9FA"
   image: assets/images/vaultara_logo.png
 
-  # Dark mode (optional; fallback is light)
+  # Dark mode splash
   color_dark: "#003F5C"
   image_dark: assets/images/vaultara_logo.png
 

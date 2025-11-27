@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "14180323356",
+    "project_id": "vaultara-f49ab",
+    "storage_bucket": "vaultara-f49ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14180323356:android:711e7fac61ebbaad76cfd9",
+        "android_client_info": {
+          "package_name": "com.example.vaultara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAzYCTAxvBkw3xALT8-nOki2BpICw2Tkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
