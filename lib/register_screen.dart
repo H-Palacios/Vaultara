@@ -15,11 +15,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  late final ScrollController _scrollController;
+
   bool isBusy = false;
   bool isPasswordVisible = false;
   double passwordStrength = 0.0;
   String passwordStrengthLabel = 'Too short';
   bool showPasswordStrength = false;
+
+  // For the gradient cue
+  bool _showBottomGradient = false;
 
   // Field-level error messages
   String? firstNameErrorText;
@@ -28,12 +33,39 @@ class _RegisterScreenState extends State<RegisterScreen> {
   String? passwordErrorText;
 
   @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+    _scrollController.addListener(_updateScrollFade);
+
+    // After first layout, check if we should show the gradient
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _updateScrollFade();
+    });
+  }
+
+  @override
   void dispose() {
     firstNameController.dispose();
     lastNameController.dispose();
     emailController.dispose();
     passwordController.dispose();
+    _scrollController.dispose();
     super.dispose();
+  }
+
+  void _updateScrollFade() {
+    if (!_scrollController.hasClients) return;
+
+    final position = _scrollController.position;
+    final bool shouldShow =
+        position.maxScrollExtent > 0 && position.pixels < position.maxScrollExtent - 4;
+
+    if (shouldShow != _showBottomGradient) {
+      setState(() {
+        _showBottomGradient = shouldShow;
+      });
+    }
   }
 
   // Simple strength check: length + character variety
@@ -60,7 +92,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       strength = score / 5.0;
 
-      // If it is long enough but still very weak, call it "Too weak"
       if (password.length >= 8 && strength < 0.3) {
         passwordStrengthLabel = 'Too weak';
       } else if (strength < 0.3) {
@@ -145,45 +176,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
     if (passwordStrength < 0.3 && password.isNotEmpty) {
       final bool proceed = await _showWeakPasswordWarningDialog();
       if (!proceed) {
-        // User chose to change the password
         return;
       }
     }
 
     setState(() => isBusy = true);
 
-    // First check: is this email already in our Vaultara users collection?
     try {
-      final QuerySnapshot<Map<String, dynamic>> snapshot =
-          await FirebaseFirestore.instance
-              .collection('users')
-              .where('email', isEqualTo: email)
-              .limit(1)
-              .get();
-
-      if (snapshot.docs.isNotEmpty) {
-        setState(() {
-          isBusy = false;
-          emailErrorText =
-              'This email address is already linked to a Vaultara account. Please sign in instead.';
-        });
-        return;
-      }
-    } catch (_) {
-      await _showErrorDialog(
-        title: 'Network issue',
-        message:
-            'Vaultara could not reach the server. Please check your connection and try again.',
-        isWarning: true,
-      );
-      if (mounted) {
-        setState(() => isBusy = false);
-      }
-      return;
-    }
-
-    // Create account in Firebase Auth
-    try {
+      // 1) Create account in Firebase Auth
       final UserCredential credential =
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
@@ -192,6 +192,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       final User? user = credential.user;
 
+      // 2) After the user is authenticated, create the Firestore profile
       if (user != null) {
         await FirebaseFirestore.instance
             .collection('users')
@@ -208,24 +209,24 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (!mounted) return;
       Navigator.of(context).pushReplacementNamed('/shell');
     } on FirebaseAuthException catch (e) {
-      // Backup handling in case Auth also says email is in use etc.
       String title = 'Account not created';
       String message =
           'We could not create your account at the moment. Please try again.';
+      bool showDialog = true;
 
       if (e.code == 'email-already-in-use') {
-        title = 'Email already in use';
-        message =
-            'An account already exists for that email address. Try signing in instead.';
+        // Only red error text, no dialog
         setState(() {
-          emailErrorText = 'This email address is already registered.';
+          emailErrorText =
+              'This email address is already linked to a Vaultara account. Please sign in instead.';
         });
+        showDialog = false;
       } else if (e.code == 'invalid-email') {
-        title = 'Email address not valid';
-        message = 'The email address format does not look quite right.';
+        // Only red error text, no dialog
         setState(() {
           emailErrorText = 'Please enter a valid email address.';
         });
+        showDialog = false;
       } else if (e.code == 'weak-password') {
         title = 'Password not strong enough';
         message =
@@ -235,11 +236,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
         });
       }
 
-      await _showErrorDialog(
-        title: title,
-        message: message,
-        isWarning: true,
-      );
+      if (showDialog) {
+        await _showErrorDialog(
+          title: title,
+          message: message,
+          isWarning: true,
+        );
+      }
     } catch (_) {
       await _showErrorDialog(
         title: 'Something went wrong',
@@ -342,7 +345,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   InputDecoration _inputDecoration({
-    required String hintText,
+    required String labelText,
+    String? hintText,
     String? errorText,
     String? helperText,
     Widget? suffixIcon,
@@ -350,6 +354,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
     return InputDecoration(
+      labelText: labelText, // floating label
       hintText: hintText,
       filled: true,
       fillColor: scheme.surfaceVariant.withOpacity(0.25),
@@ -382,7 +387,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           width: 1.6,
         ),
       ),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
       errorText: errorText,
       errorMaxLines: 3,
       helperText: errorText == null ? helperText : null,
@@ -394,117 +399,183 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     final Color strengthColour = _strengthColour();
-
     final Color suffixIconColour =
         Theme.of(context).colorScheme.onSurfaceVariant;
+    final Color cardColour = Theme.of(context).cardColor;
 
     return AutofillGroup(
-      child: Column(
-        children: [
-          TextField(
-            controller: firstNameController,
-            textCapitalization: TextCapitalization.words,
-            decoration: _inputDecoration(
-              hintText: 'First name',
-              errorText: firstNameErrorText,
-            ),
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: lastNameController,
-            textCapitalization: TextCapitalization.words,
-            decoration: _inputDecoration(
-              hintText: 'Last name',
-              errorText: lastNameErrorText,
-            ),
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: emailController,
-            keyboardType: TextInputType.emailAddress,
-            autofillHints: const [AutofillHints.email],
-            decoration: _inputDecoration(
-              hintText: 'Email address',
-              errorText: emailErrorText,
-            ),
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: passwordController,
-            obscureText: !isPasswordVisible,
-            onChanged: _updatePasswordStrength,
-            autofillHints: const [AutofillHints.newPassword],
-            decoration: _inputDecoration(
-              hintText: 'Password',
-              errorText: passwordErrorText,
-              helperText:
-                  'At least 8 characters with a mix of letters, numbers and symbols.',
-              suffixIcon: IconButton(
-                onPressed: () {
-                  setState(() {
-                    isPasswordVisible = !isPasswordVisible;
-                  });
-                },
-                icon: Icon(
-                  // Eye without line = visible, eye with line = hidden
-                  isPasswordVisible
-                      ? Icons.visibility_rounded
-                      : Icons.visibility_off_rounded,
-                  color: suffixIconColour, // stays same colour, not red
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return Column(
+            children: [
+              // Scrollable area for fields + strength bar with gradient cue
+              Expanded(
+                child: Stack(
+                  children: [
+                    SingleChildScrollView(
+                      controller: _scrollController,
+                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 24),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          TextField(
+                            controller: firstNameController,
+                            textCapitalization: TextCapitalization.words,
+                            onChanged: (_) {
+                              if (firstNameErrorText != null) {
+                                setState(
+                                    () => firstNameErrorText = null);
+                              }
+                            },
+                            decoration: _inputDecoration(
+                              labelText: 'First name',
+                              errorText: firstNameErrorText,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextField(
+                            controller: lastNameController,
+                            textCapitalization: TextCapitalization.words,
+                            onChanged: (_) {
+                              if (lastNameErrorText != null) {
+                                setState(
+                                    () => lastNameErrorText = null);
+                              }
+                            },
+                            decoration: _inputDecoration(
+                              labelText: 'Last name',
+                              errorText: lastNameErrorText,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextField(
+                            controller: emailController,
+                            keyboardType: TextInputType.emailAddress,
+                            autofillHints: const [AutofillHints.email],
+                            onChanged: (_) {
+                              if (emailErrorText != null) {
+                                setState(() => emailErrorText = null);
+                              }
+                            },
+                            decoration: _inputDecoration(
+                              labelText: 'Email address',
+                              errorText: emailErrorText,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          TextField(
+                            controller: passwordController,
+                            obscureText: !isPasswordVisible,
+                            onChanged: (value) {
+                              if (passwordErrorText != null) {
+                                setState(
+                                    () => passwordErrorText = null);
+                              }
+                              _updatePasswordStrength(value);
+                            },
+                            autofillHints: const [AutofillHints.newPassword],
+                            decoration: _inputDecoration(
+                              labelText: 'Password',
+                              errorText: passwordErrorText,
+                              helperText:
+                                  'At least 8 characters with a mix of letters, numbers and symbols.',
+                              suffixIcon: IconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    isPasswordVisible = !isPasswordVisible;
+                                  });
+                                },
+                                icon: Icon(
+                                  isPasswordVisible
+                                      ? Icons.visibility_rounded
+                                      : Icons.visibility_off_rounded,
+                                  color: suffixIconColour,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          if (showPasswordStrength)
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius:
+                                        BorderRadius.circular(999),
+                                    child: LinearProgressIndicator(
+                                      value: passwordStrength,
+                                      minHeight: 6,
+                                      backgroundColor:
+                                          Theme.of(context)
+                                              .colorScheme
+                                              .surfaceVariant,
+                                      valueColor:
+                                          AlwaysStoppedAnimation<Color>(
+                                              strengthColour),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Text(
+                                  passwordStrengthLabel,
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                    color: strengthColour,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          if (showPasswordStrength)
+                            const SizedBox(height: 16)
+                          else
+                            const SizedBox(height: 24),
+                        ],
+                      ),
+                    ),
+
+                    // Bottom gradient cue
+                    if (_showBottomGradient)
+                      IgnorePointer(
+                        child: Align(
+                          alignment: Alignment.bottomCenter,
+                          child: Container(
+                            height: 32,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  cardColour.withOpacity(0.0),
+                                  cardColour.withOpacity(0.9),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
               ),
-            ),
-          ),
-          const SizedBox(height: 8),
-
-          // Only show meter once the user has started typing
-          if (showPasswordStrength)
-            Row(
-              children: [
-                Expanded(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(999),
-                    child: LinearProgressIndicator(
-                      value: passwordStrength,
-                      minHeight: 6,
-                      backgroundColor:
-                          Theme.of(context).colorScheme.surfaceVariant,
-                      valueColor:
-                          AlwaysStoppedAnimation<Color>(strengthColour),
-                    ),
-                  ),
+              const SizedBox(height: 8),
+              // Fixed button at the bottom of the form area
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: isBusy ? null : _handleRegister,
+                  child: isBusy
+                      ? const SizedBox(
+                          width: 18,
+                          height: 18,
+                          child:
+                              CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : const Text('Create account'),
                 ),
-                const SizedBox(width: 8),
-                Text(
-                  passwordStrengthLabel,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: strengthColour,
-                  ),
-                ),
-              ],
-            ),
-
-          if (showPasswordStrength)
-            const SizedBox(height: 16)
-          else
-            const SizedBox(height: 24),
-
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton(
-              onPressed: isBusy ? null : _handleRegister,
-              child: isBusy
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : const Text('Create account'),
-            ),
-          ),
-        ],
+              ),
+            ],
+          );
+        },
       ),
     );
   }
