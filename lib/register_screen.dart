@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'text_normaliser.dart';
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -22,11 +23,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   double passwordStrength = 0.0;
   String passwordStrengthLabel = 'Too short';
   bool showPasswordStrength = false;
-
-  // For the gradient cue
   bool _showBottomGradient = false;
-
-  // Field-level error messages
   String? firstNameErrorText;
   String? lastNameErrorText;
   String? emailErrorText;
@@ -38,7 +35,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _scrollController = ScrollController();
     _scrollController.addListener(_updateScrollFade);
 
-    // After first layout, check if we should show the gradient
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _updateScrollFade();
     });
@@ -120,12 +116,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   Future<void> _handleRegister() async {
-    final String firstName = firstNameController.text.trim();
-    final String lastName = lastNameController.text.trim();
+    final String rawFirstName = firstNameController.text.trim();
+    final String rawLastName = lastNameController.text.trim();
     final String email = emailController.text.trim();
     final String password = passwordController.text.trim();
-
-    // Clear previous errors
+    final String firstName = normaliseTitleCase(rawFirstName);
+    final String lastName = normaliseTitleCase(rawLastName);
+    firstNameController.text = firstName;
+    lastNameController.text = lastName;
     setState(() {
       firstNameErrorText = null;
       lastNameErrorText = null;
@@ -194,13 +192,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       // 2) After the user is authenticated, create the Firestore profile
       if (user != null) {
+        final String fullName = '$firstName $lastName';
+
         await FirebaseFirestore.instance
             .collection('users')
             .doc(user.uid)
             .set({
           'firstName': firstName,
           'lastName': lastName,
-          'fullName': '$firstName $lastName',
+          'fullName': fullName,
           'email': email,
           'createdAt': FieldValue.serverTimestamp(),
         });
@@ -354,7 +354,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
     return InputDecoration(
-      labelText: labelText, // floating label
+      labelText: labelText,
       hintText: hintText,
       filled: true,
       fillColor: scheme.surfaceVariant.withOpacity(0.25),
@@ -408,7 +408,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         builder: (context, constraints) {
           return Column(
             children: [
-              // Scrollable area for fields + strength bar with gradient cue
               Expanded(
                 child: Stack(
                   children: [
@@ -423,12 +422,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             textCapitalization: TextCapitalization.words,
                             onChanged: (_) {
                               if (firstNameErrorText != null) {
-                                setState(
-                                    () => firstNameErrorText = null);
+                                setState(() => firstNameErrorText = null);
                               }
                             },
                             decoration: _inputDecoration(
                               labelText: 'First name',
+                              hintText: 'Enter first name',
                               errorText: firstNameErrorText,
                             ),
                           ),
@@ -438,12 +437,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             textCapitalization: TextCapitalization.words,
                             onChanged: (_) {
                               if (lastNameErrorText != null) {
-                                setState(
-                                    () => lastNameErrorText = null);
+                                setState(() => lastNameErrorText = null);
                               }
                             },
                             decoration: _inputDecoration(
                               labelText: 'Last name',
+                              hintText: 'Enter last name',
                               errorText: lastNameErrorText,
                             ),
                           ),
@@ -459,6 +458,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             },
                             decoration: _inputDecoration(
                               labelText: 'Email address',
+                              hintText: 'Enter email address',
                               errorText: emailErrorText,
                             ),
                           ),
@@ -468,14 +468,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             obscureText: !isPasswordVisible,
                             onChanged: (value) {
                               if (passwordErrorText != null) {
-                                setState(
-                                    () => passwordErrorText = null);
+                                setState(() => passwordErrorText = null);
                               }
                               _updatePasswordStrength(value);
                             },
                             autofillHints: const [AutofillHints.newPassword],
                             decoration: _inputDecoration(
                               labelText: 'Password',
+                              hintText: 'Enter password',
                               errorText: passwordErrorText,
                               helperText:
                                   'At least 8 characters with a mix of letters, numbers and symbols.',
@@ -500,8 +500,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               children: [
                                 Expanded(
                                   child: ClipRRect(
-                                    borderRadius:
-                                        BorderRadius.circular(999),
+                                    borderRadius: BorderRadius.circular(999),
                                     child: LinearProgressIndicator(
                                       value: passwordStrength,
                                       minHeight: 6,
@@ -533,8 +532,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ],
                       ),
                     ),
-
-                    // Bottom gradient cue
                     if (_showBottomGradient)
                       IgnorePointer(
                         child: Align(
@@ -558,7 +555,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              // Fixed button at the bottom of the form area
               SizedBox(
                 width: double.infinity,
                 child: FilledButton(
@@ -567,8 +563,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ? const SizedBox(
                           width: 18,
                           height: 18,
-                          child:
-                              CircularProgressIndicator(strokeWidth: 2),
+                          child: CircularProgressIndicator(strokeWidth: 2),
                         )
                       : const Text('Create account'),
                 ),

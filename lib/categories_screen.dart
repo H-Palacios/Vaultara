@@ -1,8 +1,10 @@
+// categories_screen.dart
 import 'package:flutter/material.dart';
 
 import 'category_item.dart';
 import 'subcategory_screen.dart';
 import 'document_hierarchy.dart';
+import 'item_repository.dart';
 
 enum CategoryFilterMode {
   all,
@@ -13,16 +15,6 @@ enum CategoryFilterMode {
 enum CategorySortMode {
   mostUsed,
   recentlyUsed,
-}
-
-class CategoryOverview {
-  final int totalItems;
-  final int expiringSoon;
-
-  const CategoryOverview({
-    required this.totalItems,
-    required this.expiringSoon,
-  });
 }
 
 class CategoriesScreen extends StatefulWidget {
@@ -47,21 +39,18 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
   CategoryFilterMode _filterMode = CategoryFilterMode.all;
 
-  // Sort mode, pinned categories and open counts
   CategorySortMode _sortMode = CategorySortMode.recentlyUsed;
   final Set<String> _pinnedCategoryLabels = <String>{};
   final Map<String, int> _openCountByLabel = <String, int>{};
   final Map<String, DateTime> _lastOpenedByLabel = <String, DateTime>{};
 
-  // Placeholder: later you can populate this from Firestore.
-  final Map<String, CategoryOverview> _overviewByLabel =
-      <String, CategoryOverview>{};
-
   @override
   void initState() {
     super.initState();
+    _initCategories();
+  }
 
-    // Build default categories from DocumentHierarchy.
+  Future<void> _initCategories() async {
     _categories = DocumentHierarchy.buildCategorySeeds()
         .map(
           (CategorySeed seed) => CategoryItem(
@@ -71,6 +60,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           ),
         )
         .toList();
+
+    // Load all items for the current user so counts are correct
+    // and survive app restarts.
+    await ItemRepository.loadForCurrentUser();
+
+    if (!mounted) return;
+    setState(() {});
   }
 
   @override
@@ -113,7 +109,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   }
 
   bool _isDefaultCategoryLabel(String label) {
-    // Default categories are exactly those defined in DocumentHierarchy.
     return DocumentHierarchy.categories.contains(label);
   }
 
@@ -150,7 +145,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           ),
           const SizedBox(height: 8),
           SizedBox(
-            height: 40, // slightly taller to avoid small overflows
+            height: 40,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               itemCount: pinned.length,
@@ -253,14 +248,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
     final String query = _searchController.text.trim().toLowerCase();
 
-    // All categories (for pinned row)
     final List<CategoryItem> allCategories =
         List<CategoryItem>.from(_categories);
 
-    // Start from all categories for grid.
     List<CategoryItem> filtered = List<CategoryItem>.from(_categories);
 
-    // Apply search on label.
     if (query.isNotEmpty) {
       filtered = filtered
           .where(
@@ -270,7 +262,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           .toList();
     }
 
-    // Apply filter mode.
     filtered = switch (_filterMode) {
       CategoryFilterMode.presetOnly => filtered
           .where((CategoryItem c) => _isDefaultCategoryLabel(c.label))
@@ -281,12 +272,10 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       CategoryFilterMode.all => filtered,
     };
 
-    // Apply pinned + sort logic.
     filtered.sort((CategoryItem a, CategoryItem b) {
       final bool aPinned = _pinnedCategoryLabels.contains(a.label);
       final bool bPinned = _pinnedCategoryLabels.contains(b.label);
 
-      // Pinned categories first.
       if (aPinned != bPinned) {
         return aPinned ? -1 : 1;
       }
@@ -295,7 +284,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         final int aCount = _openCountByLabel[a.label] ?? 0;
         final int bCount = _openCountByLabel[b.label] ?? 0;
         if (aCount != bCount) {
-          // Higher usage first.
           return bCount.compareTo(aCount);
         }
       } else if (_sortMode == CategorySortMode.recentlyUsed) {
@@ -306,19 +294,18 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
             _lastOpenedByLabel[b.label] ??
                 DateTime.fromMillisecondsSinceEpoch(0);
         if (aTime != bTime) {
-          // More recently opened first.
           return bTime.compareTo(aTime);
         }
       }
 
-      // Stable fallback alphabetical by label.
       return a.label.toLowerCase().compareTo(b.label.toLowerCase());
     });
+
+    final int threshold = ItemRepository.expiringThresholdDays;
 
     return SafeArea(
       child: Column(
         children: [
-          // Pinned categories row
           _buildPinnedRow(allCategories),
 
           // Search bar
@@ -452,25 +439,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                       final bool isCustom =
                           !_isDefaultCategoryLabel(item.label);
 
-                      final CategoryOverview overview =
-                          _overviewByLabel[item.label] ??
-                              const CategoryOverview(
-                                totalItems: 0,
-                                expiringSoon: 0,
-                              );
-
                       final bool isPinned =
                           _pinnedCategoryLabels.contains(item.label);
 
-                      // Structural counts
                       final int subcategoryCount =
                           item.subcategories.length;
-                      final int itemTypeCount =
-                          item.subSubcategories.values.fold<int>(
-                        0,
-                        (int sum, List<String> types) =>
-                            sum + types.length,
-                      );
+
+                      // Real stats from repository.
+                      final int totalItems =
+                          ItemRepository.totalItemsForCategory(item.label);
+                      final int expiringSoon =
+                          ItemRepository.expiringSoonForCategory(item.label);
 
                       return Card(
                         elevation: 1.5,
@@ -591,25 +570,23 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
                                 const SizedBox(height: 4),
 
-                                // Counts line: structure + placeholder item info
+                                // Structure + items
                                 Text(
                                   '$subcategoryCount subcategories • '
-                                  '$itemTypeCount item types',
+                                  '$totalItems items',
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.w500,
-                                    color:
-                                        scheme.onSurfaceVariant,
+                                    color: scheme.onSurfaceVariant,
                                   ),
                                 ),
-                                if (overview.totalItems > 0 ||
-                                    overview.expiringSoon > 0)
+
+                                if (expiringSoon > 0)
                                   Padding(
                                     padding:
                                         const EdgeInsets.only(top: 2),
                                     child: Text(
-                                      '${overview.totalItems} documents • '
-                                      '${overview.expiringSoon} expiring soon',
+                                      '$expiringSoon items expiring in $threshold days',
                                       style: TextStyle(
                                         fontSize: 11,
                                         fontWeight: FontWeight.w500,
@@ -622,7 +599,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
                                 const SizedBox(height: 8),
 
-                                // Subcategories (pills)
+                                // Subcategories preview as pills
                                 Wrap(
                                   spacing: 6,
                                   runSpacing: 6,

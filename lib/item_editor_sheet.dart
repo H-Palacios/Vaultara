@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'document_hierarchy.dart';
+import 'text_normaliser.dart';
 
-/// Whether the sheet is opened from the FAB (global)
-/// or from inside a specific category + group (scoped).
 enum ItemEditorMode {
   global,
   scoped,
 }
 
-/// Lightweight result of the sheet.
 class ItemDraft {
   final String name;
   final DateTime expiryDate;
@@ -26,16 +24,38 @@ class ItemDraft {
   });
 }
 
-/// Shared bottom sheet for creating an item.
-/// - In [ItemEditorMode.global] it lets the user choose category + group.
-/// - In [ItemEditorMode.scoped] it shows category + group as read only.
 Future<void> showItemEditorSheet({
   required BuildContext context,
   required ItemEditorMode mode,
   String? categoryLabel,
   String? subcategoryName,
+  ItemDraft? initialDraft, // <-- now supported
   required void Function(ItemDraft) onSave,
 }) async {
+  // Prefill from initialDraft if editing, otherwise empty
+  final TextEditingController nameController = TextEditingController(
+    text: initialDraft?.name ?? '',
+  );
+  final TextEditingController notesController = TextEditingController(
+    text: initialDraft?.notes ?? '',
+  );
+  final TextEditingController expiryController = TextEditingController(
+    text: initialDraft != null
+        ? initialDraft.expiryDate.toIso8601String().substring(0, 10)
+        : '',
+  );
+
+  DateTime? expiryDate = initialDraft?.expiryDate;
+
+  // Selected category / group
+  String? selectedCategory =
+      categoryLabel ?? initialDraft?.categoryLabel;
+  String? selectedSubcategory =
+      subcategoryName ?? initialDraft?.subcategoryName;
+
+  bool isNameFocused = false;
+  bool isNotesFocused = false;
+
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
@@ -44,16 +64,54 @@ Future<void> showItemEditorSheet({
       final double bottomInset =
           MediaQuery.of(sheetContext).viewInsets.bottom;
       final ThemeData theme = Theme.of(sheetContext);
+      final ColorScheme scheme = theme.colorScheme;
 
-      final TextEditingController nameController =
-          TextEditingController();
-      final TextEditingController notesController =
-          TextEditingController();
-
-      // Local state inside the sheet.
-      DateTime? expiryDate;
-      String? selectedCategory = categoryLabel;
-      String? selectedSubcategory = subcategoryName;
+      InputDecoration _fieldDecoration({
+        String? labelText,
+        String? hintText,
+        bool showLabel = false,
+        Widget? prefixIcon,
+        Widget? suffixIcon,
+      }) {
+        return InputDecoration(
+          labelText: showLabel ? labelText : null,
+          hintText: showLabel ? null : hintText,
+          filled: true,
+          fillColor: scheme.surfaceVariant.withOpacity(0.25),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(
+              color: scheme.outlineVariant,
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(
+              color: scheme.primary,
+              width: 1.6,
+            ),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(
+              color: scheme.error,
+            ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(
+              color: scheme.error,
+              width: 1.6,
+            ),
+          ),
+          contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
+          prefixIcon: prefixIcon,
+          suffixIcon: suffixIcon,
+        );
+      }
 
       Future<void> pickDate(
         void Function(void Function()) setSheetState,
@@ -70,16 +128,28 @@ Future<void> showItemEditorSheet({
         );
 
         if (selected != null) {
-          setSheetState(() => expiryDate = selected);
+          setSheetState(() {
+            expiryDate = selected;
+            expiryController.text =
+                selected.toIso8601String().substring(0, 10);
+          });
         }
       }
 
       void save() {
-        final String rawName = nameController.text.trim();
-        final String? cat = selectedCategory ?? categoryLabel;
-        final String? sub = selectedSubcategory ?? subcategoryName;
+        // Raw user input
+        final String rawName = nameController.text;
 
-        if (rawName.isEmpty) {
+        // Normalised display + storage version
+        final String formattedName = normaliseTitleCase(rawName);
+
+        // Effective category + group (from selection, parameters, or initial draft)
+        final String? cat =
+            selectedCategory ?? categoryLabel ?? initialDraft?.categoryLabel;
+        final String? sub =
+            selectedSubcategory ?? subcategoryName ?? initialDraft?.subcategoryName;
+
+        if (formattedName.trim().isEmpty) {
           ScaffoldMessenger.of(sheetContext).showSnackBar(
             const SnackBar(
               content: Text('Please enter an item name'),
@@ -115,11 +185,14 @@ Future<void> showItemEditorSheet({
           }
         }
 
+        // Update the field so the user sees the corrected casing if they re open.
+        nameController.text = formattedName;
+
         final ItemDraft draft = ItemDraft(
-          name: rawName,
+          name: formattedName,
           expiryDate: expiryDate!,
-          categoryLabel: cat!,
-          subcategoryName: sub!,
+          categoryLabel: (cat ?? '').trim(),
+          subcategoryName: (sub ?? '').trim(),
           notes: notesController.text.trim().isEmpty
               ? null
               : notesController.text.trim(),
@@ -133,36 +206,45 @@ Future<void> showItemEditorSheet({
         void Function(void Function()) setSheetState,
       ) {
         if (mode == ItemEditorMode.scoped) {
-          // Read-only location
-          if ((categoryLabel == null) && (subcategoryName == null)) {
+          // For scoped mode, we show the fixed category and group as read only
+          final String effectiveCategory =
+              categoryLabel ?? selectedCategory ?? initialDraft?.categoryLabel ?? '';
+          final String effectiveSubcategory = subcategoryName ??
+              selectedSubcategory ??
+              initialDraft?.subcategoryName ??
+              '';
+
+          if (effectiveCategory.isEmpty && effectiveSubcategory.isEmpty) {
             return const SizedBox.shrink();
           }
 
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              if (categoryLabel != null)
+              if (effectiveCategory.isNotEmpty)
                 InputDecorator(
-                  decoration: const InputDecoration(
+                  decoration: _fieldDecoration(
                     labelText: 'Category',
-                    border: OutlineInputBorder(),
+                    hintText: 'Category',
+                    showLabel: true,
                   ),
                   child: Text(
-                    categoryLabel!,
+                    effectiveCategory,
                     style: const TextStyle(
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
               const SizedBox(height: 8),
-              if (subcategoryName != null)
+              if (effectiveSubcategory.isNotEmpty)
                 InputDecorator(
-                  decoration: const InputDecoration(
+                  decoration: _fieldDecoration(
                     labelText: 'Group',
-                    border: OutlineInputBorder(),
+                    hintText: 'Group',
+                    showLabel: true,
                   ),
                   child: Text(
-                    subcategoryName!,
+                    effectiveSubcategory,
                     style: const TextStyle(
                       fontWeight: FontWeight.w600,
                     ),
@@ -173,10 +255,8 @@ Future<void> showItemEditorSheet({
           );
         }
 
-        // Global (FAB) mode: category + group dropdowns,
-        // using DocumentHierarchy so nothing is hard-coded twice.
-        final List<String> categories =
-            DocumentHierarchy.categories;
+        // GLOBAL MODE: user chooses category + group
+        final List<String> categories = DocumentHierarchy.categories;
         final List<String> subcategories = (selectedCategory != null)
             ? DocumentHierarchy.subcategoriesForCategory(
                 selectedCategory!,
@@ -188,9 +268,12 @@ Future<void> showItemEditorSheet({
           children: [
             DropdownButtonFormField<String>(
               value: selectedCategory,
-              decoration: const InputDecoration(
+              isExpanded: true,
+              icon: const Icon(Icons.arrow_drop_down_rounded),
+              decoration: _fieldDecoration(
                 labelText: 'Category',
-                border: OutlineInputBorder(),
+                hintText: 'Select a category',
+                showLabel: selectedCategory != null,
               ),
               items: categories
                   .map(
@@ -203,8 +286,6 @@ Future<void> showItemEditorSheet({
               onChanged: (String? value) {
                 setSheetState(() {
                   selectedCategory = value;
-                  // When you change category, clear the group
-                  // so the user must choose one.
                   selectedSubcategory = null;
                 });
               },
@@ -212,10 +293,12 @@ Future<void> showItemEditorSheet({
             const SizedBox(height: 10),
             DropdownButtonFormField<String>(
               value: selectedSubcategory,
-              decoration: const InputDecoration(
+              isExpanded: true,
+              icon: const Icon(Icons.arrow_drop_down_rounded),
+              decoration: _fieldDecoration(
                 labelText: 'Group',
-                hintText: 'Choose the group under this category',
-                border: OutlineInputBorder(),
+                hintText: 'Enter a group under this category',
+                showLabel: selectedSubcategory != null,
               ),
               items: subcategories
                   .map(
@@ -255,10 +338,10 @@ Future<void> showItemEditorSheet({
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      const Text(
-                        'Add item',
+                      Text(
+                        initialDraft == null ? 'Add item' : 'Edit item',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
                         ),
@@ -269,60 +352,61 @@ Future<void> showItemEditorSheet({
                       buildCategorySection(setSheetState),
 
                       // Item name
-                      TextField(
-                        controller: nameController,
-                        decoration: const InputDecoration(
-                          labelText: 'Item name',
-                          hintText:
-                              'For example, German passport or Main gym membership',
-                          border: OutlineInputBorder(),
+                      Focus(
+                        onFocusChange: (bool hasFocus) {
+                          setSheetState(() {
+                            isNameFocused = hasFocus;
+                          });
+                        },
+                        child: TextField(
+                          controller: nameController,
+                          onChanged: (_) => setSheetState(() {}),
+                          decoration: _fieldDecoration(
+                            labelText: 'Item name',
+                            hintText: 'Enter item name',
+                            showLabel:
+                                nameController.text.isNotEmpty || isNameFocused,
+                          ),
+                          textInputAction: TextInputAction.next,
                         ),
-                        textInputAction: TextInputAction.next,
                       ),
                       const SizedBox(height: 10),
 
-                      // Expiry date selector
-                      InkWell(
-                        borderRadius: BorderRadius.circular(12),
+                      // Expiry date
+                      TextField(
+                        controller: expiryController,
+                        readOnly: true,
                         onTap: () => pickDate(setSheetState),
-                        child: InputDecorator(
-                          decoration: const InputDecoration(
-                            labelText: 'Expiry date',
-                            border: OutlineInputBorder(),
-                          ),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.event_rounded, size: 20),
-                              const SizedBox(width: 8),
-                              Text(
-                                expiryDate == null
-                                    ? 'Select date'
-                                    : expiryDate!
-                                        .toIso8601String()
-                                        .substring(0, 10),
-                                style: TextStyle(
-                                  color: expiryDate == null
-                                      ? theme.hintColor
-                                      : theme.colorScheme.onSurface,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ],
-                          ),
+                        decoration: _fieldDecoration(
+                          labelText: 'Expiry date',
+                          hintText: 'Select expiry date',
+                          showLabel: expiryController.text.isNotEmpty,
+                          prefixIcon: const Icon(Icons.event_rounded),
+                          suffixIcon:
+                              const Icon(Icons.arrow_drop_down_rounded),
                         ),
                       ),
                       const SizedBox(height: 10),
 
-                      // Notes (optional)
-                      TextField(
-                        controller: notesController,
-                        decoration: const InputDecoration(
-                          labelText: 'Notes (optional)',
-                          hintText:
-                              'Where it is stored, renewal steps, reference numbers, etc.',
-                          border: OutlineInputBorder(),
+                      // Notes
+                      Focus(
+                        onFocusChange: (bool hasFocus) {
+                          setSheetState(() {
+                            isNotesFocused = hasFocus;
+                          });
+                        },
+                        child: TextField(
+                          controller: notesController,
+                          maxLines: 3,
+                          onChanged: (_) => setSheetState(() {}),
+                          decoration: _fieldDecoration(
+                            labelText: 'Notes (optional)',
+                            hintText:
+                                'Enter notes for this item (for example, where it is stored or renewal steps)',
+                            showLabel: notesController.text.isNotEmpty ||
+                                isNotesFocused,
+                          ),
                         ),
-                        maxLines: 3,
                       ),
                       const SizedBox(height: 16),
 
