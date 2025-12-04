@@ -56,61 +56,51 @@ class _LoginScreenState extends State<LoginScreen> {
 
     setState(() => isBusy = true);
 
-    // Step 1: check if an account with this email exists in Firestore (Vaultara user collection)
     try {
-      final QuerySnapshot<Map<String, dynamic>> snapshot =
-          await FirebaseFirestore.instance
-              .collection('users')
-              .where('email', isEqualTo: email)
-              .limit(1)
-              .get();
-
-      if (snapshot.docs.isEmpty) {
-        // No user document found, so this email is not registered in Vaultara
-        setState(() {
-          isBusy = false;
-          emailErrorText =
-              'We could not find a Vaultara account for that email address. '
-              'Please check the spelling or create a new account.';
-        });
-        return;
-      }
-    } catch (_) {
-      // If Firestore fails, show a general modal
-      await _showErrorDialog(
-        title: 'Network issue',
-        message:
-            'Vaultara could not reach the server. Please check your connection and try again.',
-        isWarning: true,
-      );
-      if (mounted) {
-        setState(() => isBusy = false);
-      }
-      return;
-    }
-
-    // Step 2: attempt to sign in with Firebase Auth
-    try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      // 1) Sign in with Firebase Auth
+      final UserCredential credential =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
 
+      final User? user = credential.user;
+
+      // 2) Optional Firestore user doc check
+      if (user != null) {
+        final DocumentReference<Map<String, dynamic>> docRef =
+            FirebaseFirestore.instance.collection('users').doc(user.uid);
+
+        final DocumentSnapshot<Map<String, dynamic>> docSnap =
+            await docRef.get();
+
+        if (!docSnap.exists) {
+          await docRef.set({
+            'email': email,
+            'createdAt': FieldValue.serverTimestamp(),
+          });
+        }
+      }
+
       if (!mounted) return;
       Navigator.of(context).pushReplacementNamed('/shell');
     } on FirebaseAuthException catch (e) {
-      if (e.code == 'wrong-password') {
+      String title = 'Could not sign you in';
+      String message = 'Please try again in a moment.';
+      bool showDialog = true;
+
+      if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
         setState(() {
           passwordErrorText =
               'The password you entered does not match this account.';
         });
-        return;
-      }
-
-      String title = 'Could not sign you in';
-      String message = 'Please try again in a moment.';
-
-      if (e.code == 'invalid-email') {
+        showDialog = false;
+      } else if (e.code == 'user-not-found') {
+        setState(() {
+          emailErrorText =
+              'We could not find a Vaultara account for that email address. Please check the spelling or create a new account.';
+        });
+      } else if (e.code == 'invalid-email') {
         title = 'Email address not valid';
         message = 'The email address format does not look correct.';
         setState(() {
@@ -122,11 +112,13 @@ class _LoginScreenState extends State<LoginScreen> {
             'This account has been disabled. Please contact support if you think this is a mistake.';
       }
 
-      await _showErrorDialog(
-        title: title,
-        message: message,
-        isWarning: true,
-      );
+      if (showDialog) {
+        await _showErrorDialog(
+          title: title,
+          message: message,
+          isWarning: true,
+        );
+      }
     } catch (_) {
       await _showErrorDialog(
         title: 'Something went wrong',
@@ -187,14 +179,14 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   InputDecoration _inputDecoration({
-    required String hintText,
+    required String labelText,
     String? errorText,
     Widget? suffixIcon,
   }) {
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
     return InputDecoration(
-      hintText: hintText,
+      labelText: labelText,
       filled: true,
       fillColor: scheme.surfaceVariant.withOpacity(0.25),
       border: OutlineInputBorder(
@@ -226,7 +218,7 @@ class _LoginScreenState extends State<LoginScreen> {
           width: 1.6,
         ),
       ),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
       errorText: errorText,
       errorMaxLines: 3,
       suffixIcon: suffixIcon,
@@ -239,56 +231,68 @@ class _LoginScreenState extends State<LoginScreen> {
         Theme.of(context).colorScheme.onSurfaceVariant;
 
     return AutofillGroup(
-      child: Column(
-        children: [
-          TextField(
-            controller: emailController,
-            keyboardType: TextInputType.emailAddress,
-            autofillHints: const [AutofillHints.email],
-            decoration: _inputDecoration(
-              hintText: 'Email address',
-              errorText: emailErrorText,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 12), // <-- fixes label being cut
+        child: Column(
+          children: [
+            TextField(
+              controller: emailController,
+              keyboardType: TextInputType.emailAddress,
+              autofillHints: const [AutofillHints.email],
+              onChanged: (_) {
+                if (emailErrorText != null) {
+                  setState(() => emailErrorText = null);
+                }
+              },
+              decoration: _inputDecoration(
+                labelText: 'Email address',
+                errorText: emailErrorText,
+              ),
             ),
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: passwordController,
-            obscureText: !isPasswordVisible,
-            autofillHints: const [AutofillHints.password],
-            decoration: _inputDecoration(
-              hintText: 'Password',
-              errorText: passwordErrorText,
-              suffixIcon: IconButton(
-                onPressed: () {
-                  setState(() {
-                    isPasswordVisible = !isPasswordVisible;
-                  });
-                },
-                icon: Icon(
-                  // Eye without line = visible, eye with line = hidden
-                  isPasswordVisible
-                      ? Icons.visibility_rounded
-                      : Icons.visibility_off_rounded,
-                  color: suffixIconColour,
+            const SizedBox(height: 12),
+            TextField(
+              controller: passwordController,
+              obscureText: !isPasswordVisible,
+              autofillHints: const [AutofillHints.password],
+              onChanged: (_) {
+                if (passwordErrorText != null) {
+                  setState(() => passwordErrorText = null);
+                }
+              },
+              decoration: _inputDecoration(
+                labelText: 'Password',
+                errorText: passwordErrorText,
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    setState(() {
+                      isPasswordVisible = !isPasswordVisible;
+                    });
+                  },
+                  icon: Icon(
+                    isPasswordVisible
+                        ? Icons.visibility_rounded
+                        : Icons.visibility_off_rounded,
+                    color: suffixIconColour,
+                  ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(height: 16),
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton(
-              onPressed: isBusy ? null : _handleSignIn,
-              child: isBusy
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : const Text('Sign in'),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: isBusy ? null : _handleSignIn,
+                child: isBusy
+                    ? const SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      )
+                    : const Text('Sign in'),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
