@@ -1,7 +1,9 @@
+// subcategory_screen.dart
 import 'package:flutter/material.dart';
 
 import 'category_item.dart';
 import 'items_screen.dart';
+import 'item_repository.dart';
 
 enum SubcategoryFilterMode {
   all,
@@ -62,7 +64,6 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
     final bool isSuggested =
         widget.category.builtInSubcategories.contains(name);
     if (isSuggested) {
-      // Do not allow deleting pre-set Vaultara subcategories.
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
@@ -108,17 +109,14 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
 
     final String query = _searchController.text.trim().toLowerCase();
 
-    // Start from all subcategories.
     List<String> filtered = List<String>.from(_subcategories);
 
-    // Search
     if (query.isNotEmpty) {
       filtered = filtered
           .where((String s) => s.toLowerCase().contains(query))
           .toList();
     }
 
-    // Filter by pre-set/custom using the snapshot from CategoryItem.
     filtered = switch (_filterMode) {
       SubcategoryFilterMode.suggestedOnly => filtered
           .where(
@@ -135,10 +133,11 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
       SubcategoryFilterMode.all => filtered,
     };
 
-    // Always sort alphabetically.
     filtered.sort(
       (String a, String b) => a.toLowerCase().compareTo(b.toLowerCase()),
     );
+
+    final int threshold = ItemRepository.expiringThresholdDays;
 
     return Scaffold(
       appBar: AppBar(
@@ -187,7 +186,6 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Filter chips in a compact pill container
                   Container(
                     padding: const EdgeInsets.all(2),
                     decoration: BoxDecoration(
@@ -307,6 +305,18 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                             widget.category.builtInSubcategories
                                 .contains(name);
 
+                        // Live stats from ItemRepository for this group.
+                        final int totalItems =
+                            ItemRepository.totalItemsForGroup(
+                          widget.category.label,
+                          name,
+                        );
+                        final int expiringSoon =
+                            ItemRepository.expiringSoonForGroup(
+                          widget.category.label,
+                          name,
+                        );
+
                         return Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14),
@@ -314,14 +324,19 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(14),
                             onTap: () {
-                              Navigator.of(context).push(
+                              Navigator.of(context)
+                                  .push(
                                 MaterialPageRoute<void>(
                                   builder: (_) => ItemsScreen(
                                     category: widget.category,
                                     subcategoryName: name,
                                   ),
                                 ),
-                              );
+                              )
+                                  .then((_) {
+                                // When returning from ItemsScreen, refresh counts.
+                                setState(() {});
+                              });
                             },
                             child: Padding(
                               padding: const EdgeInsets.all(10),
@@ -377,6 +392,16 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                                     ],
                                   ),
                                   const SizedBox(height: 6),
+                                  Text(
+                                    '$totalItems items • '
+                                    '$expiringSoon expiring within $threshold days',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w500,
+                                      color: scheme.onSurfaceVariant,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 4),
                                   Text(
                                     'Tap to add and track items in this group.',
                                     style: TextStyle(
@@ -475,7 +500,6 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
 
                               setState(() {
                                 _subcategories.add(formatted);
-                                // Still treated as user-defined group.
                               });
 
                               Navigator.pop(sheetContext);

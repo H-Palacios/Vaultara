@@ -1,6 +1,9 @@
+// lib/login_register_screens.dart (or whatever file you use)
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'text_normaliser.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -180,13 +183,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
   InputDecoration _inputDecoration({
     required String labelText,
+    String? hintText,
     String? errorText,
     Widget? suffixIcon,
   }) {
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
     return InputDecoration(
-      labelText: labelText,
+      labelText: labelText, // floating label
+      hintText: hintText,   // placeholder inside the field
       filled: true,
       fillColor: scheme.surfaceVariant.withOpacity(0.25),
       border: OutlineInputBorder(
@@ -232,7 +237,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     return AutofillGroup(
       child: Padding(
-        padding: const EdgeInsets.only(top: 12), // <-- fixes label being cut
+        padding: const EdgeInsets.only(top: 12), // label fix
         child: Column(
           children: [
             TextField(
@@ -246,6 +251,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               decoration: _inputDecoration(
                 labelText: 'Email address',
+                hintText: 'Enter email address',
                 errorText: emailErrorText,
               ),
             ),
@@ -261,6 +267,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               decoration: _inputDecoration(
                 labelText: 'Password',
+                hintText: 'Enter your password',
                 errorText: passwordErrorText,
                 suffixIcon: IconButton(
                   onPressed: () {
@@ -297,3 +304,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
