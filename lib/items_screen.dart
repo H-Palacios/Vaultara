@@ -1,26 +1,11 @@
+// items_screen.dart
 import 'package:flutter/material.dart';
 
 import 'category_item.dart';
 import 'item_editor_sheet.dart';
+import 'item_repository.dart';
+import 'tracked_item.dart';
 
-/// A tracked item under a specific category + group.
-class TrackedItem {
-  final String name;
-  final DateTime expiryDate;
-  final String categoryLabel;
-  final String subcategoryName;
-  final String? notes;
-
-  TrackedItem({
-    required this.name,
-    required this.expiryDate,
-    required this.categoryLabel,
-    required this.subcategoryName,
-    this.notes,
-  });
-}
-
-/// Manages real items (with expiry) inside a subcategory.
 class ItemsScreen extends StatefulWidget {
   final CategoryItem category;
   final String subcategoryName;
@@ -37,15 +22,13 @@ class ItemsScreen extends StatefulWidget {
 
 enum ItemFilterMode {
   all,
-  expiringSoon,
+  expiringSoon, // UI label will be "Expiring in 30 days"
   expired,
 }
 
 class _ItemsScreenState extends State<ItemsScreen> {
   final TextEditingController _searchController = TextEditingController();
   ItemFilterMode _filterMode = ItemFilterMode.all;
-
-  final List<TrackedItem> _items = <TrackedItem>[];
 
   @override
   void dispose() {
@@ -64,7 +47,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
       return 'Expires today';
     } else if (daysLeft == 1) {
       return 'Expires in 1 day';
-    } else if (daysLeft <= 30) {
+    } else if (daysLeft <= ItemRepository.expiringThresholdDays) {
       return 'Expires in $daysLeft days';
     }
     return 'Valid';
@@ -73,12 +56,13 @@ class _ItemsScreenState extends State<ItemsScreen> {
   Color _statusColour(ColorScheme scheme, int daysLeft) {
     if (daysLeft < 0) {
       return Colors.red;
-    } else if (daysLeft <= 30) {
+    } else if (daysLeft <= ItemRepository.expiringThresholdDays) {
       return Colors.orange;
     }
     return Colors.green;
   }
 
+  // Add item from inside a specific group
   void _openAddItemSheet() {
     showItemEditorSheet(
       context: context,
@@ -86,17 +70,18 @@ class _ItemsScreenState extends State<ItemsScreen> {
       categoryLabel: widget.category.label,
       subcategoryName: widget.subcategoryName,
       onSave: (ItemDraft draft) {
-        setState(() {
-          _items.add(
-            TrackedItem(
-              name: draft.name,
-              expiryDate: draft.expiryDate,
-              categoryLabel: draft.categoryLabel,
-              subcategoryName: draft.subcategoryName,
-              notes: draft.notes,
-            ),
-          );
-        });
+        final TrackedItem item = TrackedItem(
+          name: draft.name,
+          expiryDate: draft.expiryDate,
+          categoryLabel: draft.categoryLabel,
+          subcategoryName: draft.subcategoryName,
+          notes: draft.notes,
+        );
+
+        // Persist in memory + Firestore (in repository version)
+        ItemRepository.addItem(item);
+
+        setState(() {});
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -110,13 +95,74 @@ class _ItemsScreenState extends State<ItemsScreen> {
     );
   }
 
+  // Edit item
+  void _openEditItemSheet(TrackedItem item) {
+    showItemEditorSheet(
+      context: context,
+      mode: ItemEditorMode.scoped,
+      categoryLabel: widget.category.label,
+      subcategoryName: widget.subcategoryName,
+      onSave: (ItemDraft draft) {
+        final TrackedItem updated = TrackedItem(
+          id: item.id, // keep Firestore id if your model has it
+          name: draft.name,
+          expiryDate: draft.expiryDate,
+          categoryLabel: draft.categoryLabel,
+          subcategoryName: draft.subcategoryName,
+          notes: draft.notes,
+        );
+
+        // Let repository update cache + Firestore
+        ItemRepository.updateItem(item, updated);
+
+        setState(() {});
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Updated "${draft.name}".',
+            ),
+          ),
+        );
+      },
+      initialDraft: ItemDraft(
+        name: item.name,
+        expiryDate: item.expiryDate,
+        categoryLabel: item.categoryLabel,
+        subcategoryName: item.subcategoryName,
+        notes: item.notes,
+      ),
+    );
+  }
+
+  // Delete item
+  void _deleteItem(TrackedItem item) {
+    ItemRepository.deleteItem(item);
+
+    setState(() {});
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Item "${item.name}" deleted.'),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final ColorScheme scheme = Theme.of(context).colorScheme;
     final String query = _searchController.text.trim().toLowerCase();
 
+    final int threshold = ItemRepository.expiringThresholdDays;
+
+    // Load all items for this category + group from repository
+    List<TrackedItem> items = ItemRepository.getItemsForGroup(
+      widget.category.label,
+      widget.subcategoryName,
+    );
+
     // Filter by search
-    List<TrackedItem> filtered = _items.where((TrackedItem item) {
+    List<TrackedItem> filtered = items.where((TrackedItem item) {
       final String haystack =
           '${item.name} ${item.notes ?? ''}'.toLowerCase();
       return haystack.contains(query);
@@ -127,7 +173,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
       final int daysLeft = _daysLeft(item.expiryDate);
       switch (_filterMode) {
         case ItemFilterMode.expiringSoon:
-          return daysLeft >= 0 && daysLeft <= 30;
+          return daysLeft >= 0 && daysLeft <= threshold;
         case ItemFilterMode.expired:
           return daysLeft < 0;
         case ItemFilterMode.all:
@@ -146,7 +192,6 @@ class _ItemsScreenState extends State<ItemsScreen> {
       appBar: AppBar(
         title: Text(widget.subcategoryName),
       ),
-      // No FAB any more – single entry point via top-right button
       body: SafeArea(
         child: Column(
           children: [
@@ -175,10 +220,10 @@ class _ItemsScreenState extends State<ItemsScreen> {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             'Items in this group',
                             style: TextStyle(
@@ -188,7 +233,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
                           ),
                           SizedBox(height: 4),
                           Text(
-                            'Track each important document with its expiry date so you can renew it on time.',
+                            'Track each important item with its expiry date so you can renew it on time.',
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
@@ -217,7 +262,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
               ),
             ),
 
-            // Filter row + Add item button (consistent with categories / subcategories)
+            // Filter row + Add item button
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
               child: Row(
@@ -243,13 +288,12 @@ class _ItemsScreenState extends State<ItemsScreen> {
                           },
                         ),
                         _ItemFilterChip(
-                          label: 'Expiring soon',
-                          selected: _filterMode ==
-                              ItemFilterMode.expiringSoon,
+                          label: 'Expiring in $threshold days',
+                          selected:
+                              _filterMode == ItemFilterMode.expiringSoon,
                           onTap: () {
                             setState(() {
-                              _filterMode =
-                                  ItemFilterMode.expiringSoon;
+                              _filterMode = ItemFilterMode.expiringSoon;
                             });
                           },
                         ),
@@ -294,25 +338,25 @@ class _ItemsScreenState extends State<ItemsScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
-                          children: const [
-                            Icon(
+                          children: [
+                            const Icon(
                               Icons.event_busy_rounded,
                               size: 40,
                               color: Colors.grey,
                             ),
-                            SizedBox(height: 8),
-                            Text(
+                            const SizedBox(height: 8),
+                            const Text(
                               'No items yet.',
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            SizedBox(height: 4),
+                            const SizedBox(height: 4),
                             Text(
-                              'Add your documents so you can see what expires soon at a glance.',
+                              'Add your items so you can see what expires in the next $threshold days at a glance.',
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -345,8 +389,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
                                 Row(
                                   children: [
                                     Container(
-                                      padding:
-                                          const EdgeInsets.all(6),
+                                      padding: const EdgeInsets.all(6),
                                       decoration: BoxDecoration(
                                         color: scheme.primary
                                             .withOpacity(0.08),
@@ -440,6 +483,24 @@ class _ItemsScreenState extends State<ItemsScreen> {
                                           );
                                         },
                                       ),
+                                    IconButton(
+                                      tooltip: 'Edit item',
+                                      icon: const Icon(
+                                        Icons.edit_rounded,
+                                        size: 18,
+                                      ),
+                                      onPressed: () =>
+                                          _openEditItemSheet(item),
+                                    ),
+                                    IconButton(
+                                      tooltip: 'Delete item',
+                                      icon: const Icon(
+                                        Icons.delete_outline_rounded,
+                                        size: 18,
+                                      ),
+                                      onPressed: () =>
+                                          _deleteItem(item),
+                                    ),
                                   ],
                                 ),
                               ],

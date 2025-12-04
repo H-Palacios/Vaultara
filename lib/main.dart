@@ -7,6 +7,11 @@ import 'auth_gateway_screen.dart';
 import 'categories_screen.dart';
 import 'profile_screen.dart';
 import 'item_editor_sheet.dart';
+import 'home_screen.dart';
+
+// NEW: Firestore backed item repository + model
+import 'item_repository.dart';
+import 'tracked_item.dart';
 
 void main() async {
   final WidgetsBinding widgetsBinding =
@@ -56,6 +61,14 @@ class _ShellState extends State<Shell> {
   int _index = 0;
   bool _isPremium = false;
 
+  @override
+  void initState() {
+    super.initState();
+    // Load all items for the current user into the in memory cache
+    // so categories / subcategories show correct counts after login.
+    ItemRepository.loadForCurrentUser();
+  }
+
   void _selectTab(int index) {
     setState(() => _index = index);
   }
@@ -93,7 +106,6 @@ class _ShellState extends State<Shell> {
     return Scaffold(
       body: pages[_index],
 
-      // Hide floating action button when typing (keyboard open)
       floatingActionButton: isKeyboardOpen
           ? null
           : FloatingActionButton(
@@ -102,8 +114,25 @@ class _ShellState extends State<Shell> {
                 showItemEditorSheet(
                   context: context,
                   mode: ItemEditorMode.global,
-                  onSave: (ItemDraft draft) {
-                    // For now just show a confirmation.
+                  onSave: (ItemDraft draft) async {
+                    // 1) Save globally via repository -> Firestore + cache
+                    await ItemRepository.addItem(
+                      TrackedItem(
+                        name: draft.name,
+                        expiryDate: draft.expiryDate,
+                        categoryLabel: draft.categoryLabel,
+                        subcategoryName: draft.subcategoryName,
+                        notes: draft.notes,
+                      ),
+                    );
+
+                    // 2) Rebuild Shell so Category and Subcategory screens
+                    //    reflect the new counts immediately.
+                    if (mounted) {
+                      setState(() {});
+                    }
+
+                    // 3) Keep your snackbar message
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
@@ -118,11 +147,9 @@ class _ShellState extends State<Shell> {
               },
               child: const Icon(Icons.add, color: Colors.white),
             ),
-
       floatingActionButtonLocation:
           FloatingActionButtonLocation.centerDocked,
 
-      // Hide bottom nav when keyboard is open
       bottomNavigationBar: isKeyboardOpen
           ? null
           : SafeArea(
@@ -134,7 +161,6 @@ class _ShellState extends State<Shell> {
                   notchMargin: 8,
                   child: Row(
                     children: [
-                      // Left side (Home, Categories)
                       Expanded(
                         child: Row(
                           mainAxisAlignment:
@@ -159,8 +185,6 @@ class _ShellState extends State<Shell> {
                         ),
                       ),
                       const SizedBox(width: 57),
-
-                      // Right side (Reminders, Profile)
                       Expanded(
                         child: Row(
                           mainAxisAlignment:
@@ -220,8 +244,7 @@ class _NavItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
       onTap: onTap,
       child: Padding(
-        padding:
-            const EdgeInsets.only(top: 6, left: 6, right: 6, bottom: 0),
+        padding: const EdgeInsets.only(top: 6, left: 6, right: 6, bottom: 0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -264,134 +287,6 @@ class _NavItem extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-// ---------------- HOME SCREEN ----------------
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  final TextEditingController assistantController = TextEditingController();
-
-  void _handleAssistantSubmit(String value) {
-    final String query = value.trim();
-    if (query.isEmpty) return;
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text(
-          'Assistant feature is coming soon. For now, use the + button and tabs to manage items.',
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final List<Map<String, DateTime>> documents = <Map<String, DateTime>>[
-      <String, DateTime>{'Passport': DateTime(2026, 6, 12)},
-      <String, DateTime>{'Driver’s licence': DateTime(2025, 11, 25)},
-      <String, DateTime>{'Car insurance': DateTime(2026, 1, 15)},
-    ];
-
-    return SafeArea(
-      child: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
-              borderRadius: BorderRadius.circular(14),
-              border: Border.all(
-                color: Theme.of(context)
-                    .dividerColor
-                    .withOpacity(0.4),
-              ),
-            ),
-            child: Row(
-              children: [
-                const Icon(Icons.help_outline_rounded),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: TextField(
-                    controller: assistantController,
-                    onSubmitted: _handleAssistantSubmit,
-                    decoration: const InputDecoration.collapsed(
-                      hintText:
-                          'Assistant coming soon. For now, use + to add an item.',
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 16),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: documents.length,
-            itemBuilder: (_, int index) {
-              final String name = documents[index].keys.first;
-              final DateTime expiry = documents[index].values.first;
-              final int daysLeft =
-                  expiry.difference(DateTime.now()).inDays;
-
-              late String statusText;
-              late Color statusColour;
-
-              if (daysLeft < 0) {
-                statusText = 'Expired';
-                statusColour = Colors.red;
-              } else if (daysLeft <= 30) {
-                statusText = 'Expiring soon';
-                statusColour = Colors.orange;
-              } else {
-                statusText = 'Valid';
-                statusColour = Colors.green;
-              }
-
-              return Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: ListTile(
-                  title: Text(name),
-                  subtitle: Text(
-                    'Expiry: ${expiry.toIso8601String().substring(0, 10)}',
-                  ),
-                  trailing: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 6,
-                    ),
-                    decoration: BoxDecoration(
-                      color: statusColour.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      statusText,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: statusColour,
-                      ),
-                    ),
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
       ),
     );
   }
