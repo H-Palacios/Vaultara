@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:local_auth/local_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'text_normaliser.dart';
+
+const String kBiometricsEnabledKey = 'vaultara_biometrics_enabled';
+
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -17,6 +22,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController passwordController = TextEditingController();
 
   late final ScrollController _scrollController;
+  final LocalAuthentication _localAuth = LocalAuthentication();
 
   bool isBusy = false;
   bool isPasswordVisible = false;
@@ -55,7 +61,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
     final position = _scrollController.position;
     final bool shouldShow =
-        position.maxScrollExtent > 0 && position.pixels < position.maxScrollExtent - 4;
+        position.maxScrollExtent > 0 &&
+        position.pixels < position.maxScrollExtent - 4;
 
     if (shouldShow != _showBottomGradient) {
       setState(() {
@@ -124,6 +131,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     final String lastName = normaliseTitleCase(rawLastName);
     firstNameController.text = firstName;
     lastNameController.text = lastName;
+
     setState(() {
       firstNameErrorText = null;
       lastNameErrorText = null;
@@ -159,7 +167,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
     }
 
     if (password.length < 8) {
-      passwordErrorText = 'Password must be at least eight characters long.';
+      passwordErrorText =
+          'Password must be at least eight characters long.';
       setState(() {});
       await _showErrorDialog(
         title: 'Choose a stronger password',
@@ -203,10 +212,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
           'fullName': fullName,
           'email': email,
           'createdAt': FieldValue.serverTimestamp(),
+          // 'biometricsEnabled': false,  // optional server-side flag if you want
         });
       }
 
       if (!mounted) return;
+
+      // 3) Ask ONCE about biometrics before entering the app
+      final bool enableBiometrics =
+          await _showBiometricOnboardingSheet();
+
+      if (enableBiometrics) {
+        await _enableBiometricLock();
+      }
+
+      if (!mounted) return;
+      // 4) Finally go to the main shell
       Navigator.of(context).pushReplacementNamed('/shell');
     } on FirebaseAuthException catch (e) {
       String title = 'Account not created';
@@ -342,6 +363,163 @@ class _RegisterScreenState extends State<RegisterScreen> {
     );
 
     return result ?? false;
+  }
+
+  /// Bottom sheet that appears once after registration:
+  /// “Do you want to use biometrics on this device?”
+  Future<bool> _showBiometricOnboardingSheet() async {
+    final ColorScheme scheme = Theme.of(context).colorScheme;
+
+    final bool? result = await showModalBottomSheet<bool>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      isScrollControlled: false,
+      builder: (BuildContext ctx) {
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: 42,
+                  height: 4,
+                  margin: const EdgeInsets.only(bottom: 12),
+                  decoration: BoxDecoration(
+                    color: scheme.outlineVariant,
+                    borderRadius: BorderRadius.circular(999),
+                  ),
+                ),
+              ),
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: scheme.primary.withOpacity(0.14),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.lock_rounded,
+                      size: 22,
+                      color: scheme.primary,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  const Expanded(
+                    child: Text(
+                      'Add an extra layer of protection',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'You can unlock Vaultara using your fingerprint or face so that your expiry details stay protected on this device.',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: scheme.onSurface.withOpacity(0.85),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'You can change this at any time under Privacy and security in your profile.',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: scheme.onSurfaceVariant,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () => Navigator.of(ctx).pop(false),
+                      child: const Text('Not now'),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: FilledButton(
+                      onPressed: () => Navigator.of(ctx).pop(true),
+                      child: const Text('Use biometrics'),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        );
+      },
+    );
+
+    return result ?? false;
+  }
+
+  /// Real biometric setup using local_auth + SharedPreferences flag.
+  Future<void> _enableBiometricLock() async {
+    if (!mounted) return;
+
+    try {
+      final bool canCheck = await _localAuth.canCheckBiometrics;
+      final bool isDeviceSupported = await _localAuth.isDeviceSupported();
+
+      if (!canCheck || !isDeviceSupported) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('This device does not support biometric unlock.'),
+          ),
+        );
+        return;
+      }
+
+      final bool didAuthenticate = await _localAuth.authenticate(
+        localizedReason:
+            'Use your fingerprint or face to protect Vaultara on this device.',
+        options: const AuthenticationOptions(
+          biometricOnly: true,
+          stickyAuth: false,
+          useErrorDialogs: true,
+        ),
+      );
+
+      if (!didAuthenticate) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Biometric lock was not enabled.'),
+          ),
+        );
+        return;
+      }
+
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(kBiometricsEnabledKey, true);
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Biometric lock enabled on this device.'),
+        ),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Could not enable biometrics on this device.',
+          ),
+        ),
+      );
+    }
   }
 
   InputDecoration _inputDecoration({
@@ -500,17 +678,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               children: [
                                 Expanded(
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(999),
+                                    borderRadius:
+                                        BorderRadius.circular(999),
                                     child: LinearProgressIndicator(
                                       value: passwordStrength,
                                       minHeight: 6,
-                                      backgroundColor:
-                                          Theme.of(context)
-                                              .colorScheme
-                                              .surfaceVariant,
+                                      backgroundColor: Theme.of(context)
+                                          .colorScheme
+                                          .surfaceVariant,
                                       valueColor:
                                           AlwaysStoppedAnimation<Color>(
-                                              strengthColour),
+                                        strengthColour,
+                                      ),
                                     ),
                                   ),
                                 ),
