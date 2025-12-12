@@ -1,8 +1,14 @@
+// lib/profile_screen.dart
 import 'package:flutter/material.dart';
+import 'package:local_auth/local_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+/// This must match the key used in register_screen.dart
+const String kBiometricsEnabledKey = 'biometricsEnabled';
 
 enum BillingCycle { monthly, yearly }
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   final bool isPremium;
   final VoidCallback onUpgrade;
 
@@ -13,11 +19,108 @@ class ProfileScreen extends StatelessWidget {
   });
 
   @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  final LocalAuthentication _localAuth = LocalAuthentication();
+
+  bool _biometricsEnabled = false;
+  bool _loadingBiometrics = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadBiometricPreference();
+  }
+
+  Future<void> _loadBiometricPreference() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final bool enabled = prefs.getBool(kBiometricsEnabledKey) ?? false;
+
+    if (!mounted) return;
+    setState(() {
+      _biometricsEnabled = enabled;
+      _loadingBiometrics = false;
+    });
+  }
+
+  Future<void> _updateBiometricPreference(bool value) async {
+    if (!mounted) return;
+
+    if (value) {
+      // Turning ON: require biometric auth once
+      try {
+        final bool canCheck = await _localAuth.canCheckBiometrics;
+        final bool isSupported = await _localAuth.isDeviceSupported();
+
+        if (!canCheck || !isSupported) {
+          if (!mounted) return;
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('This device does not support biometric unlock.'),
+            ),
+          );
+          return;
+        }
+
+        final bool didAuth = await _localAuth.authenticate(
+          localizedReason:
+              'Confirm it is you before turning on biometric lock.',
+          options: const AuthenticationOptions(
+            biometricOnly: true,
+            stickyAuth: false,
+            useErrorDialogs: true,
+          ),
+        );
+
+        if (!didAuth) {
+          // User cancelled or failed – do not change the toggle
+          return;
+        }
+
+        final SharedPreferences prefs =
+            await SharedPreferences.getInstance();
+        await prefs.setBool(kBiometricsEnabledKey, true);
+
+        if (!mounted) return;
+        setState(() => _biometricsEnabled = true);
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Biometric lock enabled on this device.'),
+          ),
+        );
+      } catch (_) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Could not enable biometrics on this device.'),
+          ),
+        );
+      }
+    } else {
+      // Turning OFF – optional: you could also re-authenticate here
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(kBiometricsEnabledKey, false);
+
+      if (!mounted) return;
+      setState(() => _biometricsEnabled = false);
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Biometric lock disabled on this device.'),
+        ),
+      );
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final ColorScheme scheme = Theme.of(context).colorScheme;
-    final String planLabel = isPremium ? 'Premium plan' : 'Free plan';
+    final String planLabel = widget.isPremium ? 'Premium plan' : 'Free plan';
     final Color badgeColour =
-        isPremium ? scheme.primary : scheme.secondaryContainer;
+        widget.isPremium ? scheme.primary : scheme.secondaryContainer;
 
     return SafeArea(
       child: ListView(
@@ -84,7 +187,7 @@ class ProfileScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w700,
-                      color: isPremium
+                      color: widget.isPremium
                           ? scheme.onPrimary
                           : scheme.onSecondaryContainer,
                     ),
@@ -116,13 +219,29 @@ class ProfileScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
+                // PRIVACY + BIOMETRICS TOGGLE
                 _SettingsTile(
-                icon: Icons.lock_outline_rounded,
+                  icon: Icons.lock_outline_rounded,
                   title: 'Privacy and security',
-                  subtitle: 'Biometric lock, encryption, offline mode.',
-                  onTap: () {
-                    // TODO: Navigate to a dedicated security screen when ready.
-                  },
+                  subtitle: _biometricsEnabled
+                      ? 'Biometric lock is on for this device.'
+                      : 'Biometric lock is off. Turn it on to protect Vaultara.',
+                  trailing: _loadingBiometrics
+                      ? SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: scheme.primary,
+                          ),
+                        )
+                      : Switch(
+                          value: _biometricsEnabled,
+                          onChanged: (bool value) {
+                            _updateBiometricPreference(value);
+                          },
+                        ),
+                  onTap: null, // switch handles it
                 ),
                 const Divider(height: 0),
                 _SettingsTile(
@@ -189,14 +308,14 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               title: Text(
-                isPremium ? 'Premium (active)' : 'Upgrade to Premium',
+                widget.isPremium ? 'Premium (active)' : 'Upgrade to Premium',
                 style: const TextStyle(
                   fontWeight: FontWeight.w800,
                   fontSize: 14,
                 ),
               ),
               subtitle: Text(
-                isPremium
+                widget.isPremium
                     ? 'Secure backup, advanced reminders and unlimited organisation are unlocked on this device.'
                     : 'See pricing and unlock secure backup, advanced reminders and unlimited organisation.',
                 style: TextStyle(
@@ -213,10 +332,10 @@ class ProfileScreen extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute<void>(
                     builder: (_) => PlansScreen(
-                      isPremium: isPremium,
+                      isPremium: widget.isPremium,
                       onPremiumChanged: (bool value) {
-                        if (value && !isPremium) {
-                          onUpgrade();
+                        if (value && !widget.isPremium) {
+                          widget.onUpgrade();
                         }
                       },
                     ),
@@ -247,12 +366,14 @@ class _SettingsTile extends StatelessWidget {
   final String title;
   final String subtitle;
   final VoidCallback? onTap;
+  final Widget? trailing;
 
   const _SettingsTile({
     required this.icon,
     required this.title,
     required this.subtitle,
     this.onTap,
+    this.trailing,
   });
 
   @override
@@ -286,17 +407,18 @@ class _SettingsTile extends StatelessWidget {
           color: scheme.onSurfaceVariant,
         ),
       ),
-      trailing: Icon(
-        Icons.arrow_forward_ios_rounded,
-        size: 14,
-        color: scheme.onSurfaceVariant.withOpacity(0.9),
-      ),
+      trailing: trailing ??
+          Icon(
+            Icons.arrow_forward_ios_rounded,
+            size: 14,
+            color: scheme.onSurfaceVariant.withOpacity(0.9),
+          ),
       onTap: onTap,
     );
   }
 }
 
-// ---------------- PLANS SCREEN (unchanged) ----------------
+// ---------------- PLANS SCREEN ----------------
 
 class PlansScreen extends StatefulWidget {
   final bool isPremium;
@@ -403,7 +525,6 @@ class _PlansScreenState extends State<PlansScreen> {
   }
 }
 
-// Cycle toggle, button, premium card stay the same as your version:
 class _CycleToggle extends StatelessWidget {
   final BillingCycle value;
   final ValueChanged<BillingCycle> onChanged;
