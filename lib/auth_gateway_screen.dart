@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'login_screen.dart';
 import 'register_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthGatewayScreen extends StatefulWidget {
   const AuthGatewayScreen({super.key});
@@ -13,11 +13,20 @@ class AuthGatewayScreen extends StatefulWidget {
 class _AuthGatewayScreenState extends State<AuthGatewayScreen>
     with SingleTickerProviderStateMixin {
   late final TabController tabController;
+  bool biometricsEnabled = false;
+  bool loadedPrefs = false;
 
   @override
   void initState() {
     super.initState();
     tabController = TabController(length: 2, vsync: this);
+    _loadPrefs();
+  }
+
+  Future<void> _loadPrefs() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    biometricsEnabled = prefs.getBool('biometricsEnabled') ?? false;
+    setState(() => loadedPrefs = true);
   }
 
   @override
@@ -30,7 +39,6 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
   Widget build(BuildContext context) {
     final ColorScheme colourScheme = Theme.of(context).colorScheme;
 
-    // Responsive height
     final double screenHeight = MediaQuery.of(context).size.height;
     final double formHeight = screenHeight < 700 ? 380 : 430;
 
@@ -45,7 +53,6 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Branding
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -76,8 +83,6 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                     ),
                   ),
                   const SizedBox(height: 24),
-
-                  // Tabs Card
                   Card(
                     elevation: 2,
                     shape: RoundedRectangleBorder(
@@ -88,7 +93,6 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          // Tabs
                           Container(
                             padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
@@ -108,7 +112,8 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                                 fontWeight: FontWeight.w600,
                               ),
                               labelColor: colourScheme.onPrimary,
-                              unselectedLabelColor: colourScheme.onSurfaceVariant.withOpacity(0.85),
+                              unselectedLabelColor:
+                                  colourScheme.onSurfaceVariant.withOpacity(0.85),
                               indicator: BoxDecoration(
                                 color: colourScheme.primary,
                                 borderRadius: BorderRadius.circular(999),
@@ -120,31 +125,27 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                             ),
                           ),
                           const SizedBox(height: 16),
-
-                          // Forms
                           SizedBox(
                             height: formHeight,
-                            child: TabBarView(
-                              controller: tabController,
-                              children: const [
-                                LoginScreen(),
-                                RegisterScreen(),
-                              ],
-                            ),
+                            child: loadedPrefs
+                                ? TabBarView(
+                                    controller: tabController,
+                                    children: [
+                                      LoginScreen(biometricsEnabled: biometricsEnabled),
+                                      const RegisterScreen(),
+                                    ],
+                                  )
+                                : const SizedBox.shrink(),
                           ),
                         ],
                       ),
                     ),
                   ),
-
                   const SizedBox(height: 16),
-
-                  // Footer
                   AnimatedBuilder(
                     animation: tabController,
                     builder: (context, _) {
                       final bool isSignIn = tabController.index == 0;
-
                       return Text(
                         isSignIn
                             ? 'Sign in to access your personal Vaultara space and keep every renewal under control.'
