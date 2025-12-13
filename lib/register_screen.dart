@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'text_normaliser.dart';
 
-const String kBiometricsEnabledKey = 'vaultara_biometrics_enabled';
+const String kBiometricsEnabledKey = 'biometricsEnabled';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -21,15 +21,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
-  late final ScrollController _scrollController;
   final LocalAuthentication _localAuth = LocalAuthentication();
+  late final ScrollController _scrollController;
 
   bool isBusy = false;
   bool isPasswordVisible = false;
-  double passwordStrength = 0.0;
-  String passwordStrengthLabel = 'Too short';
   bool showPasswordStrength = false;
   bool _showBottomGradient = false;
+
+  double passwordStrength = 0.0;
+  String passwordStrengthLabel = 'Too short';
+
   String? firstNameErrorText;
   String? lastNameErrorText;
   String? emailErrorText;
@@ -40,10 +42,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     super.initState();
     _scrollController = ScrollController();
     _scrollController.addListener(_updateScrollFade);
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _updateScrollFade();
-    });
+    WidgetsBinding.instance.addPostFrameCallback((_) => _updateScrollFade());
   }
 
   @override
@@ -58,48 +57,37 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   void _updateScrollFade() {
     if (!_scrollController.hasClients) return;
-
-    final position = _scrollController.position;
-    final bool shouldShow =
-        position.maxScrollExtent > 0 &&
-        position.pixels < position.maxScrollExtent - 4;
-
+    final pos = _scrollController.position;
+    final shouldShow = pos.maxScrollExtent > 0 && pos.pixels < pos.maxScrollExtent - 4;
     if (shouldShow != _showBottomGradient) {
-      setState(() {
-        _showBottomGradient = shouldShow;
-      });
+      setState(() => _showBottomGradient = shouldShow);
     }
   }
 
-  // Simple strength check: length + character variety
   void _updatePasswordStrength(String password) {
-    double strength = 0;
-
+    double s = 0;
     if (password.isEmpty) {
-      strength = 0;
       passwordStrengthLabel = 'Too short';
     } else {
-      final bool hasLower = password.contains(RegExp(r'[a-z]'));
-      final bool hasUpper = password.contains(RegExp(r'[A-Z]'));
-      final bool hasDigit = password.contains(RegExp(r'\d'));
-      final bool hasSymbol = password.contains(
-        RegExp(r'[!@#\$%\^&\*\(\)_\+\-=\[\]\{\};:"\\|,.<>\/?]'),
-      );
+      final lower = password.contains(RegExp(r'[a-z]'));
+      final upper = password.contains(RegExp(r'[A-Z]'));
+      final digit = password.contains(RegExp(r'\d'));
+      final symbol = password.contains(RegExp(r'[!@#\$%\^&\*\(\)_\+\-=\[\]\{\};:"\\|,.<>\/?]'));
 
       int score = 0;
       if (password.length >= 8) score++;
       if (password.length >= 12) score++;
-      if (hasLower && hasUpper) score++;
-      if (hasDigit) score++;
-      if (hasSymbol) score++;
+      if (lower && upper) score++;
+      if (digit) score++;
+      if (symbol) score++;
 
-      strength = score / 5.0;
+      s = score / 5.0;
 
-      if (password.length >= 8 && strength < 0.3) {
+      if (password.length >= 8 && s < 0.3) {
         passwordStrengthLabel = 'Too weak';
-      } else if (strength < 0.3) {
+      } else if (s < 0.3) {
         passwordStrengthLabel = 'Too short';
-      } else if (strength < 0.7) {
+      } else if (s < 0.7) {
         passwordStrengthLabel = 'Medium';
       } else {
         passwordStrengthLabel = 'Strong';
@@ -107,30 +95,28 @@ class _RegisterScreenState extends State<RegisterScreen> {
     }
 
     setState(() {
-      passwordStrength = strength;
+      passwordStrength = s;
       showPasswordStrength = password.isNotEmpty;
     });
   }
 
   Color _strengthColour() {
-    if (passwordStrength < 0.3) {
-      return Colors.red;
-    } else if (passwordStrength < 0.7) {
-      return Colors.orange;
-    } else {
-      return Colors.green;
-    }
+    if (passwordStrength < 0.3) return Colors.red;
+    if (passwordStrength < 0.7) return Colors.orange;
+    return Colors.green;
   }
 
   Future<void> _handleRegister() async {
-    final String rawFirstName = firstNameController.text.trim();
-    final String rawLastName = lastNameController.text.trim();
+    final String rawFirst = firstNameController.text.trim();
+    final String rawLast = lastNameController.text.trim();
     final String email = emailController.text.trim();
     final String password = passwordController.text.trim();
-    final String firstName = normaliseTitleCase(rawFirstName);
-    final String lastName = normaliseTitleCase(rawLastName);
-    firstNameController.text = firstName;
-    lastNameController.text = lastName;
+
+    final String first = normaliseTitleCase(rawFirst);
+    final String last = normaliseTitleCase(rawLast);
+
+    firstNameController.text = first;
+    lastNameController.text = last;
 
     setState(() {
       firstNameErrorText = null;
@@ -139,138 +125,96 @@ class _RegisterScreenState extends State<RegisterScreen> {
       passwordErrorText = null;
     });
 
-    bool hasError = false;
+    bool error = false;
 
-    if (firstName.isEmpty) {
+    if (first.isEmpty) {
       firstNameErrorText = 'Please enter your first name.';
-      hasError = true;
+      error = true;
     }
-
-    if (lastName.isEmpty) {
+    if (last.isEmpty) {
       lastNameErrorText = 'Please enter your last name.';
-      hasError = true;
+      error = true;
     }
-
     if (email.isEmpty) {
       emailErrorText = 'Please enter your email address.';
-      hasError = true;
+      error = true;
     }
-
     if (password.isEmpty) {
       passwordErrorText = 'Please choose a password.';
-      hasError = true;
+      error = true;
     }
 
-    if (hasError) {
+    if (error) {
       setState(() {});
       return;
     }
 
     if (password.length < 8) {
-      passwordErrorText =
-          'Password must be at least eight characters long.';
+      passwordErrorText = 'Password must be at least eight characters long.';
       setState(() {});
       await _showErrorDialog(
         title: 'Choose a stronger password',
-        message:
-            'For your safety, please use at least eight characters with a mix of letters, numbers and symbols.',
-        isWarning: true,
+        message: 'Please use at least eight characters with a mix of letters, numbers and symbols.',
       );
       return;
     }
 
-    // If the meter says "Too weak", warn the user and let them decide
     if (passwordStrength < 0.3 && password.isNotEmpty) {
       final bool proceed = await _showWeakPasswordWarningDialog();
-      if (!proceed) {
-        return;
-      }
+      if (!proceed) return;
     }
 
     setState(() => isBusy = true);
 
     try {
-      // 1) Create account in Firebase Auth
-      final UserCredential credential =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      final credential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
 
       final User? user = credential.user;
 
-      // 2) After the user is authenticated, create the Firestore profile
       if (user != null) {
-        final String fullName = '$firstName $lastName';
-
-        await FirebaseFirestore.instance
-            .collection('users')
-            .doc(user.uid)
-            .set({
-          'firstName': firstName,
-          'lastName': lastName,
+        final fullName = '$first $last';
+        await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
+          'firstName': first,
+          'lastName': last,
           'fullName': fullName,
           'email': email,
           'createdAt': FieldValue.serverTimestamp(),
-          // 'biometricsEnabled': false,  // optional server-side flag if you want
         });
       }
 
       if (!mounted) return;
 
-      // 3) Ask ONCE about biometrics before entering the app
-      final bool enableBiometrics =
-          await _showBiometricOnboardingSheet();
+      final bool enableBio = await _showBiometricOnboardingSheet();
 
-      if (enableBiometrics) {
-        await _enableBiometricLock();
+      if (enableBio) {
+        await _enableBiometricsForDevice();
       }
 
       if (!mounted) return;
-      // 4) Finally go to the main shell
       Navigator.of(context).pushReplacementNamed('/shell');
     } on FirebaseAuthException catch (e) {
       String title = 'Account not created';
-      String message =
-          'We could not create your account at the moment. Please try again.';
+      String message = 'We could not create your account. Please try again.';
       bool showDialog = true;
 
       if (e.code == 'email-already-in-use') {
-        // Only red error text, no dialog
-        setState(() {
-          emailErrorText =
-              'This email address is already linked to a Vaultara account. Please sign in instead.';
-        });
+        emailErrorText = 'This email address is already linked to a Vaultara account.';
         showDialog = false;
       } else if (e.code == 'invalid-email') {
-        // Only red error text, no dialog
-        setState(() {
-          emailErrorText = 'Please enter a valid email address.';
-        });
+        emailErrorText = 'Please enter a valid email address.';
         showDialog = false;
       } else if (e.code == 'weak-password') {
-        title = 'Password not strong enough';
-        message =
-            'Your password is not strong enough yet. Please add a few more characters, including a number or symbol.';
-        setState(() {
-          passwordErrorText = 'Please choose a stronger password.';
-        });
+        passwordErrorText = 'Please choose a stronger password.';
+        title = 'Weak password';
+        message = 'Please use a stronger password.';
       }
 
       if (showDialog) {
-        await _showErrorDialog(
-          title: title,
-          message: message,
-          isWarning: true,
-        );
+        await _showErrorDialog(title: title, message: message);
       }
-    } catch (_) {
-      await _showErrorDialog(
-        title: 'Something went wrong',
-        message:
-            'There was an unexpected problem while creating your account. Please try again in a moment.',
-        isWarning: true,
-      );
     } finally {
       if (mounted) setState(() => isBusy = false);
     }
@@ -279,119 +223,72 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Future<void> _showErrorDialog({
     required String title,
     required String message,
-    bool isWarning = true,
   }) async {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-    final Color iconColour = isWarning ? scheme.error : scheme.primary;
-
+    final s = Theme.of(context).colorScheme;
     await showDialog<void>(
       context: context,
-      builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+      builder: (c) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Row(
           children: [
-            Icon(
-              isWarning
-                  ? Icons.error_outline_rounded
-                  : Icons.info_outline_rounded,
-              color: iconColour,
-            ),
+            Icon(Icons.error_outline_rounded, color: s.error),
             const SizedBox(width: 8),
-            Flexible(
-              child: Text(
-                title,
-                style: const TextStyle(fontWeight: FontWeight.w700),
-              ),
-            ),
+            Text(title),
           ],
         ),
-        content: Text(
-          message,
-          style: const TextStyle(fontSize: 14),
-        ),
+        content: Text(message),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text('OK'),
-          ),
+          TextButton(onPressed: () => Navigator.of(c).pop(), child: const Text('OK')),
         ],
       ),
     );
   }
 
   Future<bool> _showWeakPasswordWarningDialog() async {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-
-    final bool? result = await showDialog<bool>(
+    final s = Theme.of(context).colorScheme;
+    final bool? ok = await showDialog<bool>(
       context: context,
-      builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+      builder: (c) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Row(
           children: [
-            Icon(
-              Icons.error_outline_rounded,
-              color: scheme.error,
-            ),
+            Icon(Icons.error_outline_rounded, color: s.error),
             const SizedBox(width: 8),
-            const Flexible(
-              child: Text(
-                'Password looks weak',
-                style: TextStyle(fontWeight: FontWeight.w700),
-              ),
-            ),
+            const Text('Password looks weak'),
           ],
         ),
         content: const Text(
-          'This password looks quite weak. For better protection, we recommend using a longer password with a mix of letters, numbers and symbols.\n\nDo you still want to use this password?',
-          style: TextStyle(fontSize: 14),
+          'This password looks weak. Do you still want to use it?',
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Choose a different password'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: const Text('Use this password'),
-          ),
+          TextButton(onPressed: () => Navigator.of(c).pop(false), child: const Text('Choose again')),
+          FilledButton(onPressed: () => Navigator.of(c).pop(true), child: const Text('Use password')),
         ],
       ),
     );
-
-    return result ?? false;
+    return ok ?? false;
   }
 
-  /// Bottom sheet that appears once after registration:
-  /// “Do you want to use biometrics on this device?”
   Future<bool> _showBiometricOnboardingSheet() async {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-
-    final bool? result = await showModalBottomSheet<bool>(
+    final s = Theme.of(context).colorScheme;
+    final bool? enable = await showModalBottomSheet<bool>(
       context: context,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      isScrollControlled: false,
-      builder: (BuildContext ctx) {
+      builder: (ctx) {
         return Padding(
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Center(
-                child: Container(
-                  width: 42,
-                  height: 4,
-                  margin: const EdgeInsets.only(bottom: 12),
-                  decoration: BoxDecoration(
-                    color: scheme.outlineVariant,
-                    borderRadius: BorderRadius.circular(999),
-                  ),
+              Container(
+                width: 42,
+                height: 4,
+                margin: const EdgeInsets.only(bottom: 12),
+                decoration: BoxDecoration(
+                  color: s.outlineVariant,
+                  borderRadius: BorderRadius.circular(999),
                 ),
               ),
               Row(
@@ -399,42 +296,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: scheme.primary.withOpacity(0.14),
+                      color: s.primary.withOpacity(0.14),
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
-                      Icons.lock_rounded,
-                      size: 22,
-                      color: scheme.primary,
-                    ),
+                    child: Icon(Icons.lock_rounded, color: s.primary),
                   ),
                   const SizedBox(width: 12),
                   const Expanded(
                     child: Text(
                       'Add an extra layer of protection',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                      ),
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
                     ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               Text(
-                'You can unlock Vaultara using your fingerprint or face so that your expiry details stay protected on this device.',
-                style: TextStyle(
-                  fontSize: 13,
-                  color: scheme.onSurface.withOpacity(0.85),
-                ),
+                'Use fingerprint or face unlock to protect Vaultara.',
+                style: TextStyle(fontSize: 13, color: s.onSurface.withOpacity(0.85)),
               ),
               const SizedBox(height: 8),
               Text(
-                'You can change this at any time under Privacy and security in your profile.',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: scheme.onSurfaceVariant,
-                ),
+                'You can change this anytime in your profile.',
+                style: TextStyle(fontSize: 12, color: s.onSurfaceVariant),
               ),
               const SizedBox(height: 16),
               Row(
@@ -459,67 +343,28 @@ class _RegisterScreenState extends State<RegisterScreen> {
         );
       },
     );
-
-    return result ?? false;
+    return enable ?? false;
   }
 
-  /// Real biometric setup using local_auth + SharedPreferences flag.
-  Future<void> _enableBiometricLock() async {
-    if (!mounted) return;
+  Future<void> _enableBiometricsForDevice() async {
+    final canCheck = await _localAuth.canCheckBiometrics;
+    final supported = await _localAuth.isDeviceSupported();
 
-    try {
-      final bool canCheck = await _localAuth.canCheckBiometrics;
-      final bool isDeviceSupported = await _localAuth.isDeviceSupported();
+    if (!canCheck || !supported) return;
 
-      if (!canCheck || !isDeviceSupported) {
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('This device does not support biometric unlock.'),
-          ),
-        );
-        return;
-      }
+    final authed = await _localAuth.authenticate(
+      localizedReason: 'Enable biometric unlock for Vaultara.',
+      options: const AuthenticationOptions(
+        biometricOnly: true,
+        stickyAuth: false,
+        useErrorDialogs: true,
+      ),
+    );
 
-      final bool didAuthenticate = await _localAuth.authenticate(
-        localizedReason:
-            'Use your fingerprint or face to protect Vaultara on this device.',
-        options: const AuthenticationOptions(
-          biometricOnly: true,
-          stickyAuth: false,
-          useErrorDialogs: true,
-        ),
-      );
+    if (!authed) return;
 
-      if (!didAuthenticate) {
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Biometric lock was not enabled.'),
-          ),
-        );
-        return;
-      }
-
-      final SharedPreferences prefs = await SharedPreferences.getInstance();
-      await prefs.setBool(kBiometricsEnabledKey, true);
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Biometric lock enabled on this device.'),
-        ),
-      );
-    } catch (_) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Could not enable biometrics on this device.',
-          ),
-        ),
-      );
-    }
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(kBiometricsEnabledKey, true);
   }
 
   InputDecoration _inputDecoration({
@@ -529,61 +374,45 @@ class _RegisterScreenState extends State<RegisterScreen> {
     String? helperText,
     Widget? suffixIcon,
   }) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-
+    final s = Theme.of(context).colorScheme;
     return InputDecoration(
       labelText: labelText,
       hintText: hintText,
       filled: true,
-      fillColor: scheme.surfaceVariant.withOpacity(0.25),
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+      fillColor: s.surfaceVariant.withOpacity(0.25),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(
-          color: scheme.outlineVariant,
-        ),
+        borderSide: BorderSide(color: s.outlineVariant),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(
-          color: scheme.primary,
-          width: 1.6,
-        ),
+        borderSide: BorderSide(color: s.primary, width: 1.6),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(
-          color: scheme.error,
-        ),
+        borderSide: BorderSide(color: s.error),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(
-          color: scheme.error,
-          width: 1.6,
-        ),
+        borderSide: BorderSide(color: s.error, width: 1.6),
       ),
       contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
       errorText: errorText,
-      errorMaxLines: 3,
       helperText: errorText == null ? helperText : null,
-      helperMaxLines: 2,
       suffixIcon: suffixIcon,
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    final Color strengthColour = _strengthColour();
-    final Color suffixIconColour =
-        Theme.of(context).colorScheme.onSurfaceVariant;
-    final Color cardColour = Theme.of(context).cardColor;
+    final Color strengthColor = _strengthColour();
+    final card = Theme.of(context).cardColor;
+    final suffix = Theme.of(context).colorScheme.onSurfaceVariant;
 
     return AutofillGroup(
       child: LayoutBuilder(
-        builder: (context, constraints) {
+        builder: (context, _) {
           return Column(
             children: [
               Expanded(
@@ -593,16 +422,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       controller: _scrollController,
                       padding: const EdgeInsets.fromLTRB(0, 12, 0, 24),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           TextField(
                             controller: firstNameController,
                             textCapitalization: TextCapitalization.words,
-                            onChanged: (_) {
-                              if (firstNameErrorText != null) {
-                                setState(() => firstNameErrorText = null);
-                              }
-                            },
+                            onChanged: (_) => setState(() => firstNameErrorText = null),
                             decoration: _inputDecoration(
                               labelText: 'First name',
                               hintText: 'Enter first name',
@@ -613,11 +437,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           TextField(
                             controller: lastNameController,
                             textCapitalization: TextCapitalization.words,
-                            onChanged: (_) {
-                              if (lastNameErrorText != null) {
-                                setState(() => lastNameErrorText = null);
-                              }
-                            },
+                            onChanged: (_) => setState(() => lastNameErrorText = null),
                             decoration: _inputDecoration(
                               labelText: 'Last name',
                               hintText: 'Enter last name',
@@ -629,11 +449,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             controller: emailController,
                             keyboardType: TextInputType.emailAddress,
                             autofillHints: const [AutofillHints.email],
-                            onChanged: (_) {
-                              if (emailErrorText != null) {
-                                setState(() => emailErrorText = null);
-                              }
-                            },
+                            onChanged: (_) => setState(() => emailErrorText = null),
                             decoration: _inputDecoration(
                               labelText: 'Email address',
                               hintText: 'Enter email address',
@@ -644,30 +460,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           TextField(
                             controller: passwordController,
                             obscureText: !isPasswordVisible,
-                            onChanged: (value) {
-                              if (passwordErrorText != null) {
-                                setState(() => passwordErrorText = null);
-                              }
-                              _updatePasswordStrength(value);
+                            onChanged: (v) {
+                              setState(() => passwordErrorText = null);
+                              _updatePasswordStrength(v);
                             },
-                            autofillHints: const [AutofillHints.newPassword],
                             decoration: _inputDecoration(
                               labelText: 'Password',
                               hintText: 'Enter password',
                               errorText: passwordErrorText,
-                              helperText:
-                                  'At least 8 characters with a mix of letters, numbers and symbols.',
+                              helperText: 'At least 8 characters with mixed types.',
                               suffixIcon: IconButton(
-                                onPressed: () {
-                                  setState(() {
-                                    isPasswordVisible = !isPasswordVisible;
-                                  });
-                                },
+                                onPressed: () =>
+                                    setState(() => isPasswordVisible = !isPasswordVisible),
                                 icon: Icon(
                                   isPasswordVisible
                                       ? Icons.visibility_rounded
                                       : Icons.visibility_off_rounded,
-                                  color: suffixIconColour,
+                                  color: suffix,
                                 ),
                               ),
                             ),
@@ -678,36 +487,24 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               children: [
                                 Expanded(
                                   child: ClipRRect(
-                                    borderRadius:
-                                        BorderRadius.circular(999),
+                                    borderRadius: BorderRadius.circular(999),
                                     child: LinearProgressIndicator(
                                       value: passwordStrength,
                                       minHeight: 6,
-                                      backgroundColor: Theme.of(context)
-                                          .colorScheme
-                                          .surfaceVariant,
-                                      valueColor:
-                                          AlwaysStoppedAnimation<Color>(
-                                        strengthColour,
-                                      ),
+                                      backgroundColor:
+                                          Theme.of(context).colorScheme.surfaceVariant,
+                                      valueColor: AlwaysStoppedAnimation<Color>(strengthColor),
                                     ),
                                   ),
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
                                   passwordStrengthLabel,
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
-                                    color: strengthColour,
-                                  ),
+                                  style: TextStyle(color: strengthColor, fontWeight: FontWeight.w600),
                                 ),
                               ],
                             ),
-                          if (showPasswordStrength)
-                            const SizedBox(height: 16)
-                          else
-                            const SizedBox(height: 24),
+                          SizedBox(height: showPasswordStrength ? 16 : 24),
                         ],
                       ),
                     ),
@@ -719,12 +516,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             height: 32,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
+                                colors: [
+                                  card.withOpacity(0.0),
+                                  card.withOpacity(0.9),
+                                ],
                                 begin: Alignment.topCenter,
                                 end: Alignment.bottomCenter,
-                                colors: [
-                                  cardColour.withOpacity(0.0),
-                                  cardColour.withOpacity(0.9),
-                                ],
                               ),
                             ),
                           ),
