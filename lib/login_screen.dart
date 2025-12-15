@@ -4,10 +4,12 @@ import 'package:local_auth/local_auth.dart';
 
 class LoginScreen extends StatefulWidget {
   final bool biometricsEnabled;
+  final bool showBiometricFirst;
 
   const LoginScreen({
     super.key,
     required this.biometricsEnabled,
+    required this.showBiometricFirst,
   });
 
   @override
@@ -33,6 +35,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
+    showPasswordForm = !widget.showBiometricFirst;
+    canUseBiometrics =
+        widget.biometricsEnabled && widget.showBiometricFirst;
+
     _checkBiometrics();
   }
 
@@ -45,7 +51,9 @@ class _LoginScreenState extends State<LoginScreen> {
     final canCheck = await auth.canCheckBiometrics;
     final supported = await auth.isDeviceSupported();
 
-    setState(() => canUseBiometrics = canCheck && supported);
+    setState(() {
+      canUseBiometrics = canCheck && supported;
+    });
   }
 
   Future<void> _triggerBiometricLogin() async {

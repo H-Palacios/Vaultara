@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'document_hierarchy.dart';
 import 'text_normaliser.dart';
 
@@ -27,12 +26,12 @@ class ItemDraft {
 Future<void> showItemEditorSheet({
   required BuildContext context,
   required ItemEditorMode mode,
+  required bool isPremium, // ✅ ADDED — intentionally unused for now
   String? categoryLabel,
   String? subcategoryName,
-  ItemDraft? initialDraft, // <-- now supported
+  ItemDraft? initialDraft,
   required void Function(ItemDraft) onSave,
 }) async {
-  // Prefill from initialDraft if editing, otherwise empty
   final TextEditingController nameController = TextEditingController(
     text: initialDraft?.name ?? '',
   );
@@ -47,7 +46,6 @@ Future<void> showItemEditorSheet({
 
   DateTime? expiryDate = initialDraft?.expiryDate;
 
-  // Selected category / group
   String? selectedCategory =
       categoryLabel ?? initialDraft?.categoryLabel;
   String? selectedSubcategory =
@@ -137,13 +135,9 @@ Future<void> showItemEditorSheet({
       }
 
       void save() {
-        // Raw user input
         final String rawName = nameController.text;
-
-        // Normalised display + storage version
         final String formattedName = normaliseTitleCase(rawName);
 
-        // Effective category + group (from selection, parameters, or initial draft)
         final String? cat =
             selectedCategory ?? categoryLabel ?? initialDraft?.categoryLabel;
         final String? sub =
@@ -151,41 +145,27 @@ Future<void> showItemEditorSheet({
 
         if (formattedName.trim().isEmpty) {
           ScaffoldMessenger.of(sheetContext).showSnackBar(
-            const SnackBar(
-              content: Text('Please enter an item name'),
-            ),
+            const SnackBar(content: Text('Please enter an item name')),
           );
           return;
         }
+
         if (expiryDate == null) {
           ScaffoldMessenger.of(sheetContext).showSnackBar(
-            const SnackBar(
-              content: Text('Please select an expiry date'),
-            ),
+            const SnackBar(content: Text('Please select an expiry date')),
           );
           return;
         }
 
         if (mode == ItemEditorMode.global) {
-          if (cat == null) {
+          if (cat == null || sub == null) {
             ScaffoldMessenger.of(sheetContext).showSnackBar(
-              const SnackBar(
-                content: Text('Please choose a category'),
-              ),
-            );
-            return;
-          }
-          if (sub == null) {
-            ScaffoldMessenger.of(sheetContext).showSnackBar(
-              const SnackBar(
-                content: Text('Please choose a group'),
-              ),
+              const SnackBar(content: Text('Please choose a category and group')),
             );
             return;
           }
         }
 
-        // Update the field so the user sees the corrected casing if they re open.
         nameController.text = formattedName;
 
         final ItemDraft draft = ItemDraft(
@@ -206,13 +186,10 @@ Future<void> showItemEditorSheet({
         void Function(void Function()) setSheetState,
       ) {
         if (mode == ItemEditorMode.scoped) {
-          // For scoped mode, we show the fixed category and group as read only
           final String effectiveCategory =
               categoryLabel ?? selectedCategory ?? initialDraft?.categoryLabel ?? '';
-          final String effectiveSubcategory = subcategoryName ??
-              selectedSubcategory ??
-              initialDraft?.subcategoryName ??
-              '';
+          final String effectiveSubcategory =
+              subcategoryName ?? selectedSubcategory ?? initialDraft?.subcategoryName ?? '';
 
           if (effectiveCategory.isEmpty && effectiveSubcategory.isEmpty) {
             return const SizedBox.shrink();
@@ -225,14 +202,11 @@ Future<void> showItemEditorSheet({
                 InputDecorator(
                   decoration: _fieldDecoration(
                     labelText: 'Category',
-                    hintText: 'Category',
                     showLabel: true,
                   ),
                   child: Text(
                     effectiveCategory,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
               const SizedBox(height: 8),
@@ -240,14 +214,11 @@ Future<void> showItemEditorSheet({
                 InputDecorator(
                   decoration: _fieldDecoration(
                     labelText: 'Group',
-                    hintText: 'Group',
                     showLabel: true,
                   ),
                   child: Text(
                     effectiveSubcategory,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
               const SizedBox(height: 12),
@@ -255,12 +226,9 @@ Future<void> showItemEditorSheet({
           );
         }
 
-        // GLOBAL MODE: user chooses category + group
         final List<String> categories = DocumentHierarchy.categories;
         final List<String> subcategories = (selectedCategory != null)
-            ? DocumentHierarchy.subcategoriesForCategory(
-                selectedCategory!,
-              )
+            ? DocumentHierarchy.subcategoriesForCategory(selectedCategory!)
             : <String>[];
 
         return Column(
@@ -269,7 +237,6 @@ Future<void> showItemEditorSheet({
             DropdownButtonFormField<String>(
               value: selectedCategory,
               isExpanded: true,
-              icon: const Icon(Icons.arrow_drop_down_rounded),
               decoration: _fieldDecoration(
                 labelText: 'Category',
                 hintText: 'Select a category',
@@ -294,7 +261,6 @@ Future<void> showItemEditorSheet({
             DropdownButtonFormField<String>(
               value: selectedSubcategory,
               isExpanded: true,
-              icon: const Icon(Icons.arrow_drop_down_rounded),
               decoration: _fieldDecoration(
                 labelText: 'Group',
                 hintText: 'Enter a group under this category',
@@ -327,15 +293,11 @@ Future<void> showItemEditorSheet({
             bottom: bottomInset,
           ),
           child: StatefulBuilder(
-            builder: (
-              BuildContext context,
-              void Function(void Function()) setSheetState,
-            ) {
+            builder: (_, setSheetState) {
               return SingleChildScrollView(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 16, bottom: 16),
                   child: Column(
-                    mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
@@ -347,32 +309,16 @@ Future<void> showItemEditorSheet({
                         ),
                       ),
                       const SizedBox(height: 16),
-
-                      // Category / group section
                       buildCategorySection(setSheetState),
-
-                      // Item name
-                      Focus(
-                        onFocusChange: (bool hasFocus) {
-                          setSheetState(() {
-                            isNameFocused = hasFocus;
-                          });
-                        },
-                        child: TextField(
-                          controller: nameController,
-                          onChanged: (_) => setSheetState(() {}),
-                          decoration: _fieldDecoration(
-                            labelText: 'Item name',
-                            hintText: 'Enter item name',
-                            showLabel:
-                                nameController.text.isNotEmpty || isNameFocused,
-                          ),
-                          textInputAction: TextInputAction.next,
+                      TextField(
+                        controller: nameController,
+                        decoration: _fieldDecoration(
+                          labelText: 'Item name',
+                          hintText: 'Enter item name',
+                          showLabel: nameController.text.isNotEmpty || isNameFocused,
                         ),
                       ),
                       const SizedBox(height: 10),
-
-                      // Expiry date
                       TextField(
                         controller: expiryController,
                         readOnly: true,
@@ -382,34 +328,21 @@ Future<void> showItemEditorSheet({
                           hintText: 'Select expiry date',
                           showLabel: expiryController.text.isNotEmpty,
                           prefixIcon: const Icon(Icons.event_rounded),
-                          suffixIcon:
-                              const Icon(Icons.arrow_drop_down_rounded),
+                          suffixIcon: const Icon(Icons.arrow_drop_down_rounded),
                         ),
                       ),
                       const SizedBox(height: 10),
-
-                      // Notes
-                      Focus(
-                        onFocusChange: (bool hasFocus) {
-                          setSheetState(() {
-                            isNotesFocused = hasFocus;
-                          });
-                        },
-                        child: TextField(
-                          controller: notesController,
-                          maxLines: 3,
-                          onChanged: (_) => setSheetState(() {}),
-                          decoration: _fieldDecoration(
-                            labelText: 'Notes (optional)',
-                            hintText:
-                                'Enter notes for this item (for example, where it is stored or renewal steps)',
-                            showLabel: notesController.text.isNotEmpty ||
-                                isNotesFocused,
-                          ),
+                      TextField(
+                        controller: notesController,
+                        maxLines: 3,
+                        decoration: _fieldDecoration(
+                          labelText: 'Notes (optional)',
+                          hintText:
+                              'Enter notes for this item (for example, where it is stored or renewal steps)',
+                          showLabel: notesController.text.isNotEmpty || isNotesFocused,
                         ),
                       ),
                       const SizedBox(height: 16),
-
                       Row(
                         children: [
                           TextButton(
