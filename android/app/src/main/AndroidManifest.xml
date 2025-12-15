@@ -1,16 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Biometric / fingerprint permissions -->
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-
-    <!-- (Optional but common) Internet, if you ever need it explicitly
-         Flutter usually injects this via libraries, so you can leave it out
-         if you want. -->
-    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:label="vaultara"
+        android:label="Vaultara"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 
@@ -24,7 +19,6 @@
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
 
-            <!-- Theme that shows while Flutter initialises -->
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
@@ -35,21 +29,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Don't delete this: used by Flutter to register plugins -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
 
-    <!-- Required to query activities that can process text, see:
-         https://developer.android.com/training/package-visibility and
-         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT
-
-         Used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
     <queries>
         <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT" />
-            <data android:mimeType="text/plain" />
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
         </intent>
     </queries>
 

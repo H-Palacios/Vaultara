@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 import 'login_screen.dart';
 import 'register_screen.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthGatewayScreen extends StatefulWidget {
   const AuthGatewayScreen({super.key});
@@ -13,8 +14,12 @@ class AuthGatewayScreen extends StatefulWidget {
 class _AuthGatewayScreenState extends State<AuthGatewayScreen>
     with SingleTickerProviderStateMixin {
   late final TabController tabController;
+
   bool biometricsEnabled = false;
   bool loadedPrefs = false;
+
+  /// 🔑 Controls which login view shows first
+  bool showBiometricFirst = false;
 
   @override
   void initState() {
@@ -25,7 +30,13 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
 
   Future<void> _loadPrefs() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
+
     biometricsEnabled = prefs.getBool('biometricsEnabled') ?? false;
+
+    /// ✅ If biometrics are enabled,
+    /// show the biometric sign-in screen immediately
+    showBiometricFirst = biometricsEnabled;
+
     setState(() => loadedPrefs = true);
   }
 
@@ -131,7 +142,10 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                                 ? TabBarView(
                                     controller: tabController,
                                     children: [
-                                      LoginScreen(biometricsEnabled: biometricsEnabled),
+                                      LoginScreen(
+                                        biometricsEnabled: biometricsEnabled,
+                                        showBiometricFirst: showBiometricFirst,
+                                      ),
                                       const RegisterScreen(),
                                     ],
                                   )
