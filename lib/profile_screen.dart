@@ -1,11 +1,11 @@
-// lib/profile_screen.dart
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import 'plans_screen.dart';
 
 const String kBiometricsEnabledKey = 'biometricsEnabled';
-
-enum BillingCycle { monthly, yearly }
 
 class ProfileScreen extends StatefulWidget {
   final bool isPremium;
@@ -45,21 +45,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _updateBiometricPreference(bool value) async {
-    if (!mounted) return;
-
-    final bool canCheck = await _localAuth.canCheckBiometrics;
-    final bool supported = await _localAuth.isDeviceSupported();
+    final canCheck = await _localAuth.canCheckBiometrics;
+    final supported = await _localAuth.isDeviceSupported();
 
     if (!canCheck || !supported) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Biometric authentication is not available on this device.'),
+          content: Text(
+            'Biometric authentication is not available on this device.',
+          ),
         ),
       );
       return;
     }
 
-    final bool didAuth = await _localAuth.authenticate(
+    final didAuth = await _localAuth.authenticate(
       localizedReason: value
           ? 'Confirm your identity to enable biometric lock.'
           : 'Confirm your identity to disable biometric lock.',
@@ -77,13 +77,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     if (!mounted) return;
     setState(() => _biometricsEnabled = value);
+  }
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          value
-              ? 'Biometric lock enabled on this device.'
-              : 'Biometric lock disabled on this device.',
+  Future<void> _openSubscriptionManagement() async {
+    const url = 'https://play.google.com/store/account/subscriptions';
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+  }
+
+  void _openPlans() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => PlansScreen(
+          onUpgrade: widget.onUpgrade,
         ),
       ),
     );
@@ -100,7 +108,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       child: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // HEADER
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
@@ -117,7 +124,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     shape: BoxShape.circle,
                     color: scheme.primary.withOpacity(0.12),
                   ),
-                  child: Icon(Icons.person_rounded, size: 28, color: scheme.primary),
+                  child: Icon(Icons.person_rounded,
+                      size: 28, color: scheme.primary),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -126,7 +134,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     children: [
                       const Text(
                         'Your Vaultara profile',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w800),
                       ),
                       const SizedBox(height: 4),
                       Text(
@@ -139,9 +148,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ],
                   ),
                 ),
-                const SizedBox(width: 8),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                   decoration: BoxDecoration(
                     color: badgeColour,
                     borderRadius: BorderRadius.circular(999),
@@ -163,7 +172,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
           const SizedBox(height: 20),
 
-          // SETTINGS
           Text(
             'App settings',
             style: TextStyle(
@@ -173,6 +181,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ),
           const SizedBox(height: 8),
+
           Container(
             decoration: BoxDecoration(
               color: scheme.surface,
@@ -188,13 +197,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ? 'Biometric lock is on for this device.'
                       : 'Biometric lock is off. Turn it on to protect Vaultara.',
                   trailing: _loadingBiometrics
-                      ? SizedBox(
+                      ? const SizedBox(
                           width: 20,
                           height: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: scheme.primary,
-                          ),
+                          child: CircularProgressIndicator(strokeWidth: 2),
                         )
                       : Switch(
                           value: _biometricsEnabled,
@@ -202,18 +208,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                 ),
                 const Divider(height: 0),
-                _SettingsTile(
+                const _SettingsTile(
                   icon: Icons.cloud_sync_rounded,
                   title: 'Backup and sync',
                   subtitle: 'Cloud backup and restore (when enabled).',
-                  onTap: () {},
                 ),
                 const Divider(height: 0),
-                _SettingsTile(
+                const _SettingsTile(
                   icon: Icons.notifications_active_rounded,
                   title: 'Notifications',
                   subtitle: 'Reminder timings and notification channels.',
-                  onTap: () {},
                 ),
               ],
             ),
@@ -221,7 +225,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
           const SizedBox(height: 20),
 
-          // PREMIUM (unchanged)
           Text(
             'Premium',
             style: TextStyle(
@@ -231,12 +234,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ),
           const SizedBox(height: 8),
+
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18),
               gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
                 colors: [
                   scheme.primary.withOpacity(0.08),
                   scheme.primary.withOpacity(0.03),
@@ -258,11 +260,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               title: Text(
                 widget.isPremium ? 'Premium (active)' : 'Upgrade to Premium',
-                style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
+                style:
+                    const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
               ),
               subtitle: Text(
                 widget.isPremium
-                    ? 'Secure backup, advanced reminders and unlimited organisation are unlocked on this device.'
+                    ? 'Secure backup, advanced reminders and unlimited organisation are unlocked.'
                     : 'See pricing and unlock secure backup, advanced reminders and unlimited organisation.',
                 style: TextStyle(
                   fontSize: 12.5,
@@ -271,9 +274,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               trailing: Icon(Icons.arrow_forward_ios_rounded,
                   size: 16, color: scheme.onSurfaceVariant),
-              onTap: () {
-                widget.onUpgrade();
-              },
+              onTap: widget.isPremium
+                  ? _openSubscriptionManagement
+                  : _openPlans,
             ),
           ),
         ],
@@ -286,14 +289,12 @@ class _SettingsTile extends StatelessWidget {
   final IconData icon;
   final String title;
   final String subtitle;
-  final VoidCallback? onTap;
   final Widget? trailing;
 
   const _SettingsTile({
     required this.icon,
     required this.title,
     required this.subtitle,
-    this.onTap,
     this.trailing,
   });
 
@@ -312,12 +313,9 @@ class _SettingsTile extends StatelessWidget {
       ),
       title: Text(title,
           style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
-      subtitle: Text(subtitle,
-          style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant)),
-      trailing: trailing ??
-          Icon(Icons.arrow_forward_ios_rounded,
-              size: 14, color: scheme.onSurfaceVariant),
-      onTap: onTap,
+      subtitle:
+          Text(subtitle, style: TextStyle(color: scheme.onSurfaceVariant)),
+      trailing: trailing,
     );
   }
 }

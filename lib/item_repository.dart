@@ -1,21 +1,23 @@
-// item_repository.dart
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'tracked_item.dart';
 
 /// Global item repository for Vaultara.
-/// - Keeps an in memory cache for fast UI.
-/// - Persists items in Firestore under the current user:
+/// - Keeps an in-memory cache for fast UI.
+/// - Persists items in Firestore under:
 ///   users/{uid}/items
 class ItemRepository {
-  /// In memory store:
+  /// In-memory store:
   /// categoryLabel -> subcategoryName -> list of items
   static final Map<String, Map<String, List<TrackedItem>>> _store =
       <String, Map<String, List<TrackedItem>>>{};
 
-  /// Threshold used everywhere for "expiring in X days".
+  /// Threshold used everywhere for "expiring in X days"
   static const int expiringThresholdDays = 30;
+
+  /// Free plan item limit
+  static const int freeItemLimit = 5;
 
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -24,13 +26,12 @@ class ItemRepository {
 
   static String _itemsCollectionPath(String uid) => 'users/$uid/items';
 
-  /// Load all items for the current user from Firestore into the in memory cache.
-  /// Call this once after login (for example from Shell.initState).
+  /// Load all items for the current user from Firestore into memory.
+  /// Call once after login.
   static Future<void> loadForCurrentUser() async {
     final User? user = _auth.currentUser;
     if (user == null) {
-      _store.clear();
-      _hasLoadedForUser = false;
+      clearForSignOut();
       return;
     }
 
@@ -52,13 +53,17 @@ class ItemRepository {
 
   static void _addToMemory(TrackedItem item) {
     final Map<String, List<TrackedItem>> byGroup =
-        _store.putIfAbsent(item.categoryLabel, () => <String, List<TrackedItem>>{});
+        _store.putIfAbsent(
+      item.categoryLabel,
+      () => <String, List<TrackedItem>>{},
+    );
 
     final List<TrackedItem> itemsForGroup =
         byGroup.putIfAbsent(item.subcategoryName, () => <TrackedItem>[]);
 
     itemsForGroup.add(item);
   }
+
   static List<TrackedItem> getAllItemsFlat() {
     final List<TrackedItem> result = <TrackedItem>[];
     for (final Map<String, List<TrackedItem>> byGroup in _store.values) {
@@ -79,37 +84,61 @@ class ItemRepository {
     final List<TrackedItem>? items = byGroup[subcategoryName];
     if (items == null) return <TrackedItem>[];
 
-    // Return the actual list so that edits / deletes directly affect the cache.
     return items;
   }
 
-  // --------------- MUTATIONS (also write to Firestore) ---------------
+  // ---------------- FREE PLAN HELPERS ----------------
 
-  static Future<void> addItem(TrackedItem item) async {
-    // Add to memory first so UI reacts instantly.
+  static bool canAddItem({required bool isPremium}) {
+    if (isPremium) return true;
+    return totalItemsAll() < freeItemLimit;
+  }
+
+  static bool isFreeLimitReached() {
+    return totalItemsAll() >= freeItemLimit;
+  }
+
+  static bool isNearFreeLimit() {
+    return totalItemsAll() == freeItemLimit - 1;
+  }
+
+  // ---------------- MUTATIONS ----------------
+
+  /// Attempts to add an item.
+  /// Returns false if the free plan limit is reached.
+  static Future<bool> addItem(
+    TrackedItem item, {
+    required bool isPremium,
+  }) async {
+    if (!canAddItem(isPremium: isPremium)) {
+      return false;
+    }
+
     _addToMemory(item);
 
     final User? user = _auth.currentUser;
-    if (user == null) return;
+    if (user != null) {
+      final DocumentReference<Map<String, dynamic>> docRef =
+          await _firestore
+              .collection(_itemsCollectionPath(user.uid))
+              .add(item.toMap());
 
-    final DocumentReference<Map<String, dynamic>> docRef =
-        await _firestore.collection(_itemsCollectionPath(user.uid)).add(
-              item.toMap(),
-            );
+      item.id = docRef.id;
+    }
 
-    // Store the generated id back into the in memory object.
-    item.id = docRef.id;
+    return true;
   }
 
   static Future<void> updateItem(
     TrackedItem oldItem,
     TrackedItem updated,
   ) async {
-    // Update in memory
     final Map<String, List<TrackedItem>>? byGroup =
         _store[oldItem.categoryLabel];
+
     if (byGroup != null) {
-      final List<TrackedItem>? list = byGroup[oldItem.subcategoryName];
+      final List<TrackedItem>? list =
+          byGroup[oldItem.subcategoryName];
       if (list != null) {
         final int index = list.indexOf(oldItem);
         if (index != -1) {
@@ -128,12 +157,10 @@ class ItemRepository {
   }
 
   static Future<void> deleteItem(TrackedItem item) async {
-    // Remove from memory
-    final Map<String, List<TrackedItem>>? byGroup = _store[item.categoryLabel];
-    if (byGroup != null) {
-      final List<TrackedItem>? list = byGroup[item.subcategoryName];
-      list?.remove(item);
-    }
+    final Map<String, List<TrackedItem>>? byGroup =
+        _store[item.categoryLabel];
+
+    byGroup?[item.subcategoryName]?.remove(item);
 
     final User? user = _auth.currentUser;
     if (user == null || item.id == null) return;
@@ -144,7 +171,7 @@ class ItemRepository {
         .delete();
   }
 
-  // --------------- CATEGORY LEVEL STATS ---------------
+  // ---------------- CATEGORY STATS ----------------
 
   static int totalItemsForCategory(String categoryLabel) {
     final Map<String, List<TrackedItem>>? byGroup = _store[categoryLabel];
@@ -162,6 +189,7 @@ class ItemRepository {
 
     int count = 0;
     final DateTime now = DateTime.now();
+
     for (final List<TrackedItem> items in byGroup.values) {
       for (final TrackedItem item in items) {
         final int daysLeft = item.expiryDate.difference(now).inDays;
@@ -170,12 +198,16 @@ class ItemRepository {
         }
       }
     }
+
     return count;
   }
 
-  // --------------- GROUP LEVEL STATS ---------------
+  // ---------------- GROUP STATS ----------------
 
-  static int totalItemsForGroup(String categoryLabel, String subcategoryName) {
+  static int totalItemsForGroup(
+    String categoryLabel,
+    String subcategoryName,
+  ) {
     return getItemsForGroup(categoryLabel, subcategoryName).length;
   }
 
@@ -188,42 +220,45 @@ class ItemRepository {
 
     int count = 0;
     final DateTime now = DateTime.now();
+
     for (final TrackedItem item in items) {
       final int daysLeft = item.expiryDate.difference(now).inDays;
       if (daysLeft >= 0 && daysLeft <= expiringThresholdDays) {
         count++;
       }
     }
+
     return count;
   }
 
-  // --------------- GLOBAL STATS (optional helpers) ---------------
+  // ---------------- GLOBAL STATS ----------------
 
-  /// Total items across all categories.
   static int totalItemsAll() => getAllItemsFlat().length;
 
-  /// Number of items that are already expired across all categories.
   static int expiredItemsAll() {
     final DateTime now = DateTime.now();
     int count = 0;
+
     for (final TrackedItem item in getAllItemsFlat()) {
       if (item.expiryDate.isBefore(now)) {
         count++;
       }
     }
+
     return count;
   }
 
-  /// Number of items expiring soon across all categories.
   static int expiringSoonAll() {
     final DateTime now = DateTime.now();
     int count = 0;
+
     for (final TrackedItem item in getAllItemsFlat()) {
       final int daysLeft = item.expiryDate.difference(now).inDays;
       if (daysLeft >= 0 && daysLeft <= expiringThresholdDays) {
         count++;
       }
     }
+
     return count;
   }
 

@@ -8,7 +8,7 @@ import 'categories_screen.dart';
 import 'profile_screen.dart';
 import 'item_editor_sheet.dart';
 import 'home_screen.dart';
-import 'calendar_screen.dart'; 
+import 'calendar_screen.dart';
 
 import 'item_repository.dart';
 import 'tracked_item.dart';
@@ -93,7 +93,7 @@ class _ShellState extends State<Shell> {
     final List<Widget> pages = <Widget>[
       HomeScreen(),
       CategoriesScreen(isPremium: _isPremium),
-      CalendarScreen(), 
+      CalendarScreen(),
       ProfileScreen(
         isPremium: _isPremium,
         onUpgrade: _handlePremiumUpgrade,
@@ -111,8 +111,10 @@ class _ShellState extends State<Shell> {
                 showItemEditorSheet(
                   context: context,
                   mode: ItemEditorMode.global,
+                  isPremium: _isPremium,
                   onSave: (ItemDraft draft) async {
-                    await ItemRepository.addItem(
+                    final bool added =
+                        await ItemRepository.addItem(
                       TrackedItem(
                         name: draft.name,
                         expiryDate: draft.expiryDate,
@@ -120,7 +122,21 @@ class _ShellState extends State<Shell> {
                         subcategoryName: draft.subcategoryName,
                         notes: draft.notes,
                       ),
+                      isPremium: _isPremium,
                     );
+
+                    if (!added) {
+                      if (!mounted) return;
+
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text(
+                            'Free plan allows up to 5 items. Upgrade to Premium to add more.',
+                          ),
+                        ),
+                      );
+                      return;
+                    }
 
                     if (mounted) {
                       setState(() {});
@@ -129,8 +145,7 @@ class _ShellState extends State<Shell> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          'Saved "${draft.name}" in '
-                          '${draft.categoryLabel} • '
+                          'Saved "${draft.name}" • '
                           '${draft.expiryDate.toIso8601String().substring(0, 10)}',
                         ),
                       ),
@@ -140,6 +155,7 @@ class _ShellState extends State<Shell> {
               },
               child: const Icon(Icons.add, color: Colors.white),
             ),
+
       floatingActionButtonLocation:
           FloatingActionButtonLocation.centerDocked,
 
@@ -148,7 +164,7 @@ class _ShellState extends State<Shell> {
           : SafeArea(
               top: false,
               child: SizedBox(
-                height: 80,
+                height: 88, // ✅ FIX: was 80 (prevents 3px overflow)
                 child: BottomAppBar(
                   shape: const CircularNotchedRectangle(),
                   notchMargin: 8,
@@ -167,7 +183,8 @@ class _ShellState extends State<Shell> {
                             ),
                             _NavItem(
                               label: 'Categories',
-                              imagePath: 'assets/images/category-icon.png',
+                              imagePath:
+                                  'assets/images/category-icon.png',
                               selected: _index == 1,
                               selectedColour: primaryColour,
                               onTap: () => _selectTab(1),
@@ -181,15 +198,17 @@ class _ShellState extends State<Shell> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             _NavItem(
-                              label: 'Calendar', 
-                              imagePath: 'assets/images/calendar-icon.png', // CHANGED ✔
+                              label: 'Calendar',
+                              imagePath:
+                                  'assets/images/calendar-icon.png',
                               selected: _index == 2,
                               selectedColour: primaryColour,
                               onTap: () => _selectTab(2),
                             ),
                             _NavItem(
                               label: 'Profile',
-                              imagePath: 'assets/images/profile-icon.png',
+                              imagePath:
+                                  'assets/images/profile-icon.png',
                               selected: _index == 3,
                               selectedColour: primaryColour,
                               onTap: () => _selectTab(3),
@@ -232,7 +251,7 @@ class _NavItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(top: 6, left: 6, right: 6, bottom: 0),
+        padding: const EdgeInsets.only(top: 6, left: 6, right: 6),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -257,20 +276,8 @@ class _NavItem extends StatelessWidget {
               label,
               style: TextStyle(
                 fontSize: 12.5,
-                height: 1.0,
                 fontWeight: FontWeight.w700,
                 color: selected ? selectedColour : unselectedText,
-              ),
-            ),
-            const SizedBox(height: 1),
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 180),
-              curve: Curves.easeInOut,
-              height: 1,
-              width: selected ? 20 : 0,
-              decoration: BoxDecoration(
-                color: selected ? selectedColour : Colors.transparent,
-                borderRadius: BorderRadius.circular(2),
               ),
             ),
           ],
