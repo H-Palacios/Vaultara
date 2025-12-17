@@ -67,6 +67,8 @@
 
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+<key>NSUserNotificationUsageDescription</key>
+<string>Vaultara sends reminders before important items expire.</string>
 
 </dict>
 </plist>

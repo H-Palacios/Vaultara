@@ -30,16 +30,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-    _loadBiometricPreference();
+    _loadPreferences();
   }
 
-  Future<void> _loadBiometricPreference() async {
+  Future<void> _loadPreferences() async {
     final prefs = await SharedPreferences.getInstance();
-    final enabled = prefs.getBool(kBiometricsEnabledKey) ?? false;
+    final biometrics =
+        prefs.getBool(kBiometricsEnabledKey) ?? false;
 
     if (!mounted) return;
     setState(() {
-      _biometricsEnabled = enabled;
+      _biometricsEnabled = biometrics;
       _loadingBiometrics = false;
     });
   }
@@ -52,8 +53,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
-            'Biometric authentication is not available on this device.',
-          ),
+              'Biometric authentication is not available on this device.'),
         ),
       );
       return;
@@ -80,10 +80,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _openSubscriptionManagement() async {
-    const url = 'https://play.google.com/store/account/subscriptions';
+    const url =
+        'https://play.google.com/store/account/subscriptions';
     final uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
+      await launchUrl(uri,
+          mode: LaunchMode.externalApplication);
     }
   }
 
@@ -100,9 +102,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final planLabel = widget.isPremium ? 'Premium plan' : 'Free plan';
-    final badgeColour =
-        widget.isPremium ? scheme.primary : scheme.secondaryContainer;
+    final planLabel =
+        widget.isPremium ? 'Premium plan' : 'Free plan';
+    final badgeColour = widget.isPremium
+        ? scheme.primary
+        : scheme.secondaryContainer;
 
     return SafeArea(
       child: ListView(
@@ -113,7 +117,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
             decoration: BoxDecoration(
               color: scheme.surface,
               borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: scheme.outlineVariant.withOpacity(0.7)),
+              border: Border.all(
+                color: scheme.outlineVariant.withOpacity(0.7),
+              ),
             ),
             child: Row(
               children: [
@@ -130,16 +136,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment:
+                        CrossAxisAlignment.start,
                     children: [
                       const Text(
                         'Your Vaultara profile',
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w800),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Manage your security, backup, notifications and premium features in one place.',
+                        'Manage your security, backup and premium features in one place.',
                         style: TextStyle(
                           fontSize: 12.5,
                           color: scheme.onSurfaceVariant,
@@ -149,8 +158,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 6,
+                  ),
                   decoration: BoxDecoration(
                     color: badgeColour,
                     borderRadius: BorderRadius.circular(999),
@@ -186,7 +197,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
             decoration: BoxDecoration(
               color: scheme.surface,
               borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: scheme.outlineVariant.withOpacity(0.6)),
+              border: Border.all(
+                color: scheme.outlineVariant.withOpacity(0.6),
+              ),
             ),
             child: Column(
               children: [
@@ -195,29 +208,26 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   title: 'Privacy and security',
                   subtitle: _biometricsEnabled
                       ? 'Biometric lock is on for this device.'
-                      : 'Biometric lock is off. Turn it on to protect Vaultara.',
+                      : 'Biometric lock is off.',
                   trailing: _loadingBiometrics
                       ? const SizedBox(
                           width: 20,
                           height: 20,
-                          child: CircularProgressIndicator(strokeWidth: 2),
+                          child:
+                              CircularProgressIndicator(strokeWidth: 2),
                         )
                       : Switch(
                           value: _biometricsEnabled,
-                          onChanged: _updateBiometricPreference,
+                          onChanged:
+                              _updateBiometricPreference,
                         ),
                 ),
                 const Divider(height: 0),
                 const _SettingsTile(
                   icon: Icons.cloud_sync_rounded,
                   title: 'Backup and sync',
-                  subtitle: 'Cloud backup and restore (when enabled).',
-                ),
-                const Divider(height: 0),
-                const _SettingsTile(
-                  icon: Icons.notifications_active_rounded,
-                  title: 'Notifications',
-                  subtitle: 'Reminder timings and notification channels.',
+                  subtitle:
+                      'Cloud backup and restore (when enabled).',
                 ),
               ],
             ),
@@ -244,36 +254,48 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   scheme.primary.withOpacity(0.03),
                 ],
               ),
-              border: Border.all(color: scheme.primary.withOpacity(0.7)),
+              border: Border.all(
+                color: scheme.primary.withOpacity(0.7),
+              ),
             ),
             child: ListTile(
               contentPadding:
-                  const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                  const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 10),
               leading: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: scheme.primary.withOpacity(0.15),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Icon(Icons.workspace_premium_rounded,
-                    color: scheme.primary, size: 22),
+                child: Icon(
+                  Icons.workspace_premium_rounded,
+                  color: scheme.primary,
+                  size: 22,
+                ),
               ),
               title: Text(
-                widget.isPremium ? 'Premium (active)' : 'Upgrade to Premium',
-                style:
-                    const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
+                widget.isPremium
+                    ? 'Premium (active)'
+                    : 'Upgrade to Premium',
+                style: const TextStyle(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 14),
               ),
               subtitle: Text(
                 widget.isPremium
-                    ? 'Secure backup, advanced reminders and unlimited organisation are unlocked.'
-                    : 'See pricing and unlock secure backup, advanced reminders and unlimited organisation.',
+                    ? 'Advanced reminders and unlimited organisation are unlocked.'
+                    : 'Unlock advanced reminders and unlimited organisation.',
                 style: TextStyle(
                   fontSize: 12.5,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
-              trailing: Icon(Icons.arrow_forward_ios_rounded,
-                  size: 16, color: scheme.onSurfaceVariant),
+              trailing: Icon(
+                Icons.arrow_forward_ios_rounded,
+                size: 16,
+                color: scheme.onSurfaceVariant,
+              ),
               onTap: widget.isPremium
                   ? _openSubscriptionManagement
                   : _openPlans,
@@ -309,12 +331,17 @@ class _SettingsTile extends StatelessWidget {
           color: scheme.primary.withOpacity(0.06),
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Icon(icon, size: 22, color: scheme.primary),
+        child: Icon(icon,
+            size: 22, color: scheme.primary),
       ),
-      title: Text(title,
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
+      title: Text(
+        title,
+        style: const TextStyle(
+            fontSize: 14, fontWeight: FontWeight.w700),
+      ),
       subtitle:
-          Text(subtitle, style: TextStyle(color: scheme.onSurfaceVariant)),
+          Text(subtitle,
+              style: TextStyle(color: scheme.onSurfaceVariant)),
       trailing: trailing,
     );
   }
