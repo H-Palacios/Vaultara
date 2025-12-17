@@ -12,6 +12,7 @@ import 'calendar_screen.dart';
 
 import 'item_repository.dart';
 import 'tracked_item.dart';
+import 'service/reminder_scheduler.dart';
 
 void main() async {
   final WidgetsBinding widgetsBinding =
@@ -21,6 +22,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  await ReminderScheduler.init();
 
   FlutterNativeSplash.remove();
 
@@ -164,7 +167,7 @@ class _ShellState extends State<Shell> {
           : SafeArea(
               top: false,
               child: SizedBox(
-                height: 88, // ✅ FIX: was 80 (prevents 3px overflow)
+                height: 88,
                 child: BottomAppBar(
                   shape: const CircularNotchedRectangle(),
                   notchMargin: 8,
@@ -224,9 +227,6 @@ class _ShellState extends State<Shell> {
     );
   }
 }
-
-// ---------------- NAV ITEM ----------------
-
 class _NavItem extends StatelessWidget {
   final String label;
   final String imagePath;

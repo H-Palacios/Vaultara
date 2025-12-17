@@ -2,21 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'tracked_item.dart';
+import 'service/reminder_scheduler.dart';
 
-/// Global item repository for Vaultara.
-/// - Keeps an in-memory cache for fast UI.
-/// - Persists items in Firestore under:
-///   users/{uid}/items
 class ItemRepository {
-  /// In-memory store:
-  /// categoryLabel -> subcategoryName -> list of items
   static final Map<String, Map<String, List<TrackedItem>>> _store =
       <String, Map<String, List<TrackedItem>>>{};
 
-  /// Threshold used everywhere for "expiring in X days"
   static const int expiringThresholdDays = 30;
-
-  /// Free plan item limit
   static const int freeItemLimit = 5;
 
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -26,8 +18,6 @@ class ItemRepository {
 
   static String _itemsCollectionPath(String uid) => 'users/$uid/items';
 
-  /// Load all items for the current user from Firestore into memory.
-  /// Call once after login.
   static Future<void> loadForCurrentUser() async {
     final User? user = _auth.currentUser;
     if (user == null) {
@@ -87,8 +77,6 @@ class ItemRepository {
     return items;
   }
 
-  // ---------------- FREE PLAN HELPERS ----------------
-
   static bool canAddItem({required bool isPremium}) {
     if (isPremium) return true;
     return totalItemsAll() < freeItemLimit;
@@ -102,13 +90,41 @@ class ItemRepository {
     return totalItemsAll() == freeItemLimit - 1;
   }
 
-  // ---------------- MUTATIONS ----------------
+  static List<int> _buildReminderOffsets({
+    required int selectedOffset,
+    required bool isPremium,
+  }) {
+    if (!isPremium) {
+      return <int>[selectedOffset];
+    }
 
-  /// Attempts to add an item.
-  /// Returns false if the free plan limit is reached.
+    if (selectedOffset >= 60) {
+      return <int>[selectedOffset, 30, 14, 7, 1, 0];
+    }
+
+    if (selectedOffset >= 30) {
+      return <int>[selectedOffset, 14, 7, 1, 0];
+    }
+
+    if (selectedOffset >= 14) {
+      return <int>[selectedOffset, 7, 1, 0];
+    }
+
+    if (selectedOffset >= 7) {
+      return <int>[selectedOffset, 1, 0];
+    }
+
+    if (selectedOffset >= 1) {
+      return <int>[selectedOffset, 0];
+    }
+
+    return <int>[0];
+  }
+
   static Future<bool> addItem(
     TrackedItem item, {
     required bool isPremium,
+    int? reminderOffsetDays,
   }) async {
     if (!canAddItem(isPremium: isPremium)) {
       return false;
@@ -124,6 +140,26 @@ class ItemRepository {
               .add(item.toMap());
 
       item.id = docRef.id;
+    }
+
+    if (reminderOffsetDays != null && item.id != null) {
+      final String firstName =
+          (_auth.currentUser?.displayName ?? 'Hi').split(' ').first;
+
+      final List<int> offsets = _buildReminderOffsets(
+        selectedOffset: reminderOffsetDays,
+        isPremium: isPremium,
+      );
+
+      for (final int offset in offsets) {
+        await ReminderScheduler.scheduleReminder(
+          notificationId: item.id.hashCode + offset,
+          expiryDate: item.expiryDate,
+          offsetDays: offset,
+          firstName: firstName,
+          itemName: item.name,
+        );
+      }
     }
 
     return true;
@@ -171,8 +207,6 @@ class ItemRepository {
         .delete();
   }
 
-  // ---------------- CATEGORY STATS ----------------
-
   static int totalItemsForCategory(String categoryLabel) {
     final Map<String, List<TrackedItem>>? byGroup = _store[categoryLabel];
     if (byGroup == null) return 0;
@@ -202,8 +236,6 @@ class ItemRepository {
     return count;
   }
 
-  // ---------------- GROUP STATS ----------------
-
   static int totalItemsForGroup(
     String categoryLabel,
     String subcategoryName,
@@ -230,8 +262,6 @@ class ItemRepository {
 
     return count;
   }
-
-  // ---------------- GLOBAL STATS ----------------
 
   static int totalItemsAll() => getAllItemsFlat().length;
 
@@ -262,7 +292,6 @@ class ItemRepository {
     return count;
   }
 
-  /// Reset when the user signs out.
   static void clearForSignOut() {
     _store.clear();
     _hasLoadedForUser = false;

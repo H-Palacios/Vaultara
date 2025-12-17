@@ -24,7 +24,7 @@ class _PlansScreenState extends State<PlansScreen> {
         title: const Text('Choose your plan'),
       ),
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
@@ -36,91 +36,86 @@ class _PlansScreenState extends State<PlansScreen> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-
               const SizedBox(height: 20),
-
-              Expanded(
-                child: Row(
-                  children: [
-                    // -------- FREE PLAN --------
-                    Expanded(
-                      child: _PlanCard(
-                        title: 'Free',
-                        badgeText: 'Current plan',
-                        badgeColour: scheme.secondaryContainer,
-                        background: scheme.surface,
-                        features: const [
-                          'Add up to 5 items',
-                          'Edit and delete items',
-                          'Create up to 3 custom categories',
-                          'Edit and delete categories',
-                          'Preset subcategories only',
-                          'Search and filter items',
-                          'Search and filter categories and subcategories',
-                          'Cloud account storage',
-                        ],
-                        footer: const Text(
-                          'You are already on this plan.',
-                          style: TextStyle(fontSize: 12),
-                          textAlign: TextAlign.center,
-                        ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: _PlanCard(
+                      title: 'Free',
+                      badgeText: 'Current plan',
+                      badgeColour: scheme.secondaryContainer,
+                      background: scheme.surface,
+                      features: const [
+                        'Add up to 5 items',
+                        'Edit and delete items',
+                        'Create up to 3 custom categories',
+                        'Edit and delete categories',
+                        'Preset subcategories only',
+                        'Search and filter items',
+                        'Search and filter categories and subcategories',
+                        'Cloud account storage',
+                        'One basic expiry reminder per item',
+                      ],
+                      footer: const Text(
+                        'You are already on this plan.',
+                        style: TextStyle(fontSize: 12),
+                        textAlign: TextAlign.center,
                       ),
                     ),
-
-                    const SizedBox(width: 12),
-
-                    // -------- PREMIUM PLAN --------
-                    Expanded(
-                      child: _PlanCard(
-                        title: 'Premium',
-                        badgeText: 'Best value',
-                        badgeColour: scheme.primary,
-                        background: scheme.primary.withOpacity(0.08),
-                        features: const [
-                          'Add unlimited items',
-                          'Edit and delete unlimited items',
-                          'Create unlimited categories',
-                          'Edit and delete categories',
-                          'Add custom subcategories',
-                          'Edit and delete subcategories',
-                          'Search and filter items',
-                          'Search and filter categories and subcategories',
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: _PlanCard(
+                      title: 'Premium',
+                      badgeText: 'Best value',
+                      badgeColour: scheme.primary,
+                      background: scheme.primary.withOpacity(0.08),
+                      features: const [
+                        'Add unlimited items',
+                        'Edit and delete unlimited items',
+                        'Create unlimited categories',
+                        'Edit and delete categories',
+                        'Add custom subcategories',
+                        'Delete custom subcategories',
+                        'Multiple reminder options per item',
+                        'Custom reminder timing up to 180 days',
+                        'Automatic follow-up reminders as expiry approaches',
+                      ],
+                      footer: Column(
+                        children: [
+                          _BillingToggle(
+                            yearlySelected: _yearlySelected,
+                            onChanged: (value) {
+                              setState(() => _yearlySelected = value);
+                            },
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            _yearlySelected
+                                ? 'R960 per year\nSave compared to monthly'
+                                : 'R99 per month',
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          FilledButton(
+                            onPressed: widget.onUpgrade,
+                            child: const Text('Start free trial'),
+                          ),
+                          const SizedBox(height: 6),
+                          const Text(
+                            '7-day free trial · No charge today',
+                            style: TextStyle(fontSize: 11),
+                          ),
                         ],
-                        footer: Column(
-                          children: [
-                            _BillingToggle(
-                              yearlySelected: _yearlySelected,
-                              onChanged: (value) {
-                                setState(() => _yearlySelected = value);
-                              },
-                            ),
-                            const SizedBox(height: 10),
-                            Text(
-                              _yearlySelected
-                                  ? 'R960 per year\nSave compared to monthly'
-                                  : 'R99 per month',
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                            const SizedBox(height: 12),
-                            FilledButton(
-                              onPressed: widget.onUpgrade,
-                              child: const Text('Start free trial'),
-                            ),
-                            const SizedBox(height: 6),
-                            const Text(
-                              '7-day free trial · No charge today',
-                              style: TextStyle(fontSize: 11),
-                            ),
-                          ],
-                        ),
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ],
           ),
@@ -166,7 +161,8 @@ class _PlanCard extends StatelessWidget {
           Align(
             alignment: Alignment.topRight,
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
               decoration: BoxDecoration(
                 color: badgeColour,
                 borderRadius: BorderRadius.circular(999),
@@ -181,9 +177,7 @@ class _PlanCard extends StatelessWidget {
               ),
             ),
           ),
-
           const SizedBox(height: 8),
-
           Text(
             title,
             style: const TextStyle(
@@ -191,9 +185,7 @@ class _PlanCard extends StatelessWidget {
               fontWeight: FontWeight.w800,
             ),
           ),
-
           const SizedBox(height: 12),
-
           ...features.map(
             (f) => Padding(
               padding: const EdgeInsets.only(bottom: 6),
@@ -212,9 +204,7 @@ class _PlanCard extends StatelessWidget {
               ),
             ),
           ),
-
-          const Spacer(),
-
+          const SizedBox(height: 12),
           footer,
         ],
       ),
@@ -278,7 +268,8 @@ class _BillingOption extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+        padding:
+            const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
         decoration: BoxDecoration(
           color: selected ? scheme.primary : Colors.transparent,
           borderRadius: BorderRadius.circular(999),
