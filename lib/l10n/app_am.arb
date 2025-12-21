@@ -1,0 +1,117 @@
+{
+  "@@locale": "am",
+
+  "expiryCalendarTitle": "የመጨረሻ ቀን ቀንበር",
+
+  "calendarIntro":
+    "የመጨረሻ ቀኖችን እንዴት መመልከት እንደሚፈልጉ ይምረጡ፡\n\n• ከዛሬ ጀምሮ የቀኖችን ብዛት ያስገቡ።\n• ወይም በቀንበር ላይ ቀን ይምረጡ።\n\nVaultara በዚያ ቀን የሚያበቁ ነገሮችን ያሳያል።",
+
+  "daysFromTodayLabel": "ከዛሬ ጀምሮ ቀኖች",
+  "daysFromTodayHint": "ለምሳሌ 0, 1, 7, 30",
+
+  "apply": "ተግባር",
+  "pickDateOnCalendar": "ቀን ከቀንበር ይምረጡ",
+
+  "today": "ዛሬ",
+  "tomorrow": "ነገ",
+  "in7Days": "በ7 ቀኖች ውስጥ",
+  "in30Days": "በ30 ቀኖች ውስጥ",
+
+  "inDays": "በ{days} ቀኖች ውስጥ",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "የቀኖችን ብዛት ያስገቡ",
+  "invalidDaysError": "ትክክለኛ ብዛት ያስገቡ (0 ወይም ከዚያ በላይ)",
+
+  "showingItemsRelative": "{time} የሚያበቁ ነገሮች",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "በተመረጠው ቀን የሚያበቁ ነገሮች",
+  "noItemsOnDate": "በዚህ ቀን የሚያበቅ ነገር የለም",
+
+  "editorAddTitle": "ነገር ያክሉ",
+  "editorEditTitle": "ነገር ያስተካክሉ",
+
+  "editorCategory": "ምድብ",
+  "editorCategoryHint": "ምድብ ይምረጡ",
+
+  "editorGroup": "ቡድን",
+  "editorGroupHint": "ቡድን ይምረጡ",
+
+  "editorItemName": "የነገር ስም",
+  "editorItemNameHint": "የነገር ስም ያስገቡ",
+
+  "editorExpiryDate": "የመጨረሻ ቀን",
+  "editorExpiryDateHint": "የመጨረሻ ቀን ይምረጡ",
+
+  "editorErrorCategory": "ምድብ ያስፈልጋል",
+  "editorErrorGroup": "ቡድን ያስፈልጋል",
+  "editorErrorName": "የነገር ስም ያስፈልጋል",
+  "editorErrorExpiry": "ቀን ያስፈልጋል",
+  "editorErrorExpiryPast": "ቀኑ ዛሬ ወይም ወደፊት መሆን አለበት",
+
+  "cancel": "ሰርዝ",
+  "save": "አስቀምጥ",
+
+  "addCategoryTitle": "ምድብ ያክሉ",
+  "unlimitedCategories": "ያልተገደበ ምድቦች (Premium)",
+
+  "categoryUsage": "{current} / {limit} ምድቦች",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "የምድብ ስም",
+  "categoryNameHint": "ምድብ ያስገቡ",
+
+  "categoryLimitReached":
+    "የBasic እቅድ የምድብ ገደብ {limit} ደርሷል። Premium በመሻሻል ያልተገደበ ምድቦችን መፍጠር ይችላሉ።",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryLimitInfo":
+    "በBasic እቅድ እስከ {limit} ምድቦች መፍጠር ይችላሉ።",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "የምድብ ስም ያስፈልጋል",
+  "categoryErrorTooShort": "የምድብ ስም አጭር ነው",
+  "categoryErrorTooLong": "የምድብ ስም ረጅም ነው",
+  "categoryErrorSymbols": "ምልክቶች መጠቀም አይቻልም",
+  "categoryErrorNumbers": "ቁጥሮች መጠቀም አይቻልም",
+
+  "upgradeRequired": "መሻሻል ያስፈልጋል",
+  "viewPremiumBenefits": "የPremium ጥቅሞችን ይመልከቱ",
+
+  "createCategory": "ፍጠር",
+
+  "addGroupTitle": "ቡድን ያክሉ",
+
+  "groupNameLabel": "ቡድን",
+  "groupNameHint": "ቡድን ያስገቡ",
+
+  "groupErrorEmpty": "የቡድን ስም ያስፈልጋል",
+  "groupErrorTooShort": "የቡድን ስም አጭር ነው",
+  "groupErrorTooLong": "የቡድን ስም ረጅም ነው",
+  "groupErrorSymbols": "ምልክቶች መጠቀም አይቻልም",
+  "groupErrorNumbers": "ቁጥሮች መጠቀም አይቻልም",
+
+  "createGroup": "ፍጠር"
+}

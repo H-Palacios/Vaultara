@@ -1,0 +1,106 @@
+{
+  "@@locale": "sv",
+
+  "expiryCalendarTitle": "Utgångskalender",
+
+  "calendarIntro":
+    "Välj hur du vill visa utgångsdatum:\n\n• Ange antal dagar från idag.\n• Eller välj ett specifikt datum i kalendern.\n\nVaultara visar objekt som går ut den dagen.",
+
+  "daysFromTodayLabel": "Dagar från idag",
+  "daysFromTodayHint": "Till exempel 0, 1, 7, 30",
+
+  "apply": "Tillämpa",
+  "pickDateOnCalendar": "Välj datum i kalendern",
+
+  "today": "Idag",
+  "tomorrow": "Imorgon",
+  "in7Days": "Om 7 dagar",
+  "in30Days": "Om 30 dagar",
+
+  "inDays": "om {days} dagar",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Antal dagar krävs",
+  "invalidDaysError": "Ange ett giltigt antal dagar (0 eller mer)",
+
+  "showingItemsRelative": "Objekt som går ut {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Objekt som går ut på valt datum",
+  "noItemsOnDate": "Inga objekt går ut denna dag",
+
+  "editorAddTitle": "Lägg till objekt",
+  "editorEditTitle": "Redigera objekt",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Välj kategori",
+
+  "editorGroup": "Grupp",
+  "editorGroupHint": "Välj grupp i denna kategori",
+
+  "editorItemName": "Objektnamn",
+  "editorItemNameHint": "Ange objektnamn",
+
+  "editorExpiryDate": "Utgångsdatum",
+  "editorExpiryDateHint": "Välj utgångsdatum",
+
+  "editorErrorCategory": "Kategori krävs",
+  "editorErrorGroup": "Grupp krävs",
+  "editorErrorName": "Objektnamn krävs",
+  "editorErrorExpiry": "Utgångsdatum krävs",
+  "editorErrorExpiryPast": "Datumet måste vara idag eller i framtiden",
+
+  "cancel": "Avbryt",
+  "save": "Spara",
+
+  "addCategoryTitle": "Lägg till kategori",
+  "unlimitedCategories": "Obegränsade kategorier (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorier använda",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategorinamn",
+  "categoryNameHint": "Ange kategori",
+
+  "categoryLimitReached":
+    "Gränsen för Basic-planen har nåtts. Premium tillåter obegränsade kategorier",
+
+  "categoryLimitInfo":
+    "Basic-planen tillåter upp till {limit} kategorier",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategorinamn krävs",
+  "categoryErrorTooShort": "Kategorinamnet är för kort",
+  "categoryErrorTooLong": "Kategorinamnet är för långt",
+  "categoryErrorSymbols": "Namnet kan inte bestå av endast symboler",
+  "categoryErrorNumbers": "Namnet kan inte innehålla siffror",
+
+  "upgradeRequired": "Uppgradering krävs",
+  "viewPremiumBenefits": "Visa Premium-fördelar",
+
+  "createCategory": "Skapa",
+
+  "addGroupTitle": "Lägg till grupp",
+
+  "groupNameLabel": "Grupp",
+  "groupNameHint": "Ange grupp",
+
+  "groupErrorEmpty": "Gruppnamn krävs",
+  "groupErrorTooShort": "Gruppnamnet är för kort",
+  "groupErrorTooLong": "Gruppnamnet är för långt",
+  "groupErrorSymbols": "Gruppnamnet kan inte vara endast symboler",
+  "groupErrorNumbers": "Gruppnamnet kan inte innehålla siffror",
+
+  "createGroup": "Skapa"
+}

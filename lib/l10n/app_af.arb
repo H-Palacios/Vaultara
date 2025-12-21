@@ -1,0 +1,101 @@
+{
+  "@@locale": "af",
+
+  "expiryCalendarTitle": "Vervaldatum-kalender",
+
+  "calendarIntro":
+    "Kies hoe vervaldatums bekyk word:\n\n• Tik hoeveel dae vanaf vandag gesien moet word.\n• Of kies ’n datum op die kalender.\n\nVaultara wys items wat op daardie dag verval.",
+
+  "daysFromTodayLabel": "Dae vanaf vandag",
+  "daysFromTodayHint": "Byvoorbeeld 0, 1, 7, 30",
+
+  "apply": "Pas toe",
+  "pickDateOnCalendar": "Kies ’n datum op die kalender",
+
+  "today": "Vandag",
+  "tomorrow": "Môre",
+  "in7Days": "Oor 7 dae",
+  "in30Days": "Oor 30 dae",
+
+  "inDays": "oor {days} dae",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Voer ’n aantal dae in.",
+  "invalidDaysError": "Voer ’n geldige aantal dae in (0 of meer).",
+
+  "showingItemsRelative": "Wys items wat {time} verval",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Wys items wat op die gekose datum verval",
+  "noItemsOnDate": "Geen items verval op hierdie datum nie.",
+
+  "editorAddTitle": "Voeg item by",
+  "editorEditTitle": "Wysig item",
+
+  "editorCategory": "Kategorie",
+  "editorCategoryHint": "Kies ’n kategorie",
+
+  "editorGroup": "Groep",
+  "editorGroupHint": "Kies ’n groep",
+
+  "editorItemName": "Itemnaam",
+  "editorItemNameHint": "Voer itemnaam in",
+
+  "editorExpiryDate": "Vervaldatum",
+  "editorExpiryDateHint": "Kies vervaldatum",
+
+  "editorErrorCategory": "Kategorie is vereis",
+  "editorErrorGroup": "Groep is vereis",
+  "editorErrorName": "Itemnaam is vereis",
+  "editorErrorExpiry": "Vervaldatum is vereis",
+  "editorErrorExpiryPast": "Vervaldatum moet vandag of later wees",
+
+  "cancel": "Kanselleer",
+  "save": "Stoor",
+
+  "addCategoryTitle": "Voeg kategorie by",
+  "unlimitedCategories": "Onbeperkte kategorieë (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorieë gebruik",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategorie naam",
+  "categoryNameHint": "Voer kategorie in",
+
+  "categoryLimitReached":
+    "Die basiese planlimiet is bereik. Gradeer op vir onbeperkte kategorieë.",
+
+  "categoryLimitInfo":
+    "Die basiese plan laat tot {limit} pasgemaakte kategorieë toe.",
+
+  "categoryErrorEmpty": "Kategorie naam is vereis",
+  "categoryErrorTooShort": "Kategorie naam is te kort",
+  "categoryErrorTooLong": "Kategorie naam is te lank",
+  "categoryErrorSymbols": "Kategorie naam kan nie simbole bevat nie",
+  "categoryErrorNumbers": "Kategorie naam kan nie syfers bevat nie",
+
+  "upgradeRequired": "Opgradering nodig",
+  "viewPremiumBenefits": "Sien Premium voordele",
+  "createCategory": "Skep",
+
+  "addGroupTitle": "Voeg groep by",
+  "groupNameLabel": "Groep",
+  "groupNameHint": "Voer groep in",
+
+  "groupErrorEmpty": "Groepnaam is vereis",
+  "groupErrorTooShort": "Groepnaam is te kort",
+  "groupErrorTooLong": "Groepnaam is te lank",
+  "groupErrorSymbols": "Groepnaam kan nie simbole bevat nie",
+  "groupErrorNumbers": "Groepnaam kan nie syfers bevat nie",
+
+  "createGroup": "Skep"
+}

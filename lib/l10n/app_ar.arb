@@ -1,0 +1,113 @@
+{
+  "@@locale": "ar",
+
+  "expiryCalendarTitle": "تقويم تواريخ الانتهاء",
+
+  "calendarIntro":
+    "اختر كيفية استعراض تواريخ الانتهاء:\n\n• أدخل عدد الأيام من اليوم.\n• أو اختر تاريخًا محددًا من التقويم.\n\nتعرض Vaultara العناصر التي تصل إلى تاريخ الانتهاء في ذلك اليوم.",
+
+  "daysFromTodayLabel": "عدد الأيام من اليوم",
+  "daysFromTodayHint": "على سبيل المثال 0، 1، 7، 30",
+
+  "apply": "تطبيق",
+  "pickDateOnCalendar": "اختر تاريخًا من التقويم",
+
+  "today": "اليوم",
+  "tomorrow": "غدًا",
+  "in7Days": "بعد 7 أيام",
+  "in30Days": "بعد 30 يومًا",
+
+  "inDays": "بعد {days} يوم",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "إدخال عدد الأيام مطلوب",
+  "invalidDaysError": "إدخال عدد أيام صالح (0 أو أكثر) مطلوب",
+
+  "showingItemsRelative": "العناصر التي تنتهي {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "العناصر التي تنتهي في التاريخ المحدد",
+  "noItemsOnDate": "لا توجد عناصر تنتهي في هذا اليوم",
+
+  "editorAddTitle": "إضافة عنصر",
+  "editorEditTitle": "تعديل عنصر",
+
+  "editorCategory": "الفئة",
+  "editorCategoryHint": "اختر فئة",
+
+  "editorGroup": "المجموعة",
+  "editorGroupHint": "اختر مجموعة",
+
+  "editorItemName": "اسم العنصر",
+  "editorItemNameHint": "أدخل اسم العنصر",
+
+  "editorExpiryDate": "تاريخ الانتهاء",
+  "editorExpiryDateHint": "اختر تاريخ الانتهاء",
+
+  "editorErrorCategory": "اختيار الفئة مطلوب",
+  "editorErrorGroup": "اختيار المجموعة مطلوب",
+  "editorErrorName": "اسم العنصر مطلوب",
+  "editorErrorExpiry": "اختيار تاريخ الانتهاء مطلوب",
+  "editorErrorExpiryPast": "يجب أن يكون التاريخ اليوم أو بعده",
+
+  "cancel": "إلغاء",
+  "save": "حفظ",
+
+  "addCategoryTitle": "إضافة فئة",
+  "unlimitedCategories": "فئات غير محدودة (Premium)",
+
+  "categoryUsage": "{current} / {limit} فئات مستخدمة",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "اسم الفئة",
+  "categoryNameHint": "أدخل اسم الفئة",
+
+  "categoryLimitReached":
+    "لقد وصلت إلى حد خطة Basic وهو {limit} فئات. قم بالترقية إلى Premium لإنشاء فئات غير محدودة.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryLimitInfo":
+    "في خطة Basic يمكنك إنشاء ما يصل إلى {limit} فئات مخصصة.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "اسم الفئة مطلوب",
+  "categoryErrorTooShort": "اسم الفئة قصير جدًا",
+  "categoryErrorTooLong": "اسم الفئة طويل جدًا",
+  "categoryErrorSymbols": "لا يمكن أن يحتوي الاسم على رموز",
+  "categoryErrorNumbers": "لا يمكن أن يحتوي الاسم على أرقام",
+
+  "upgradeRequired": "الترقية مطلوبة",
+  "viewPremiumBenefits": "عرض مزايا Premium",
+
+  "createCategory": "إنشاء",
+
+  "addGroupTitle": "إضافة مجموعة",
+
+  "groupNameLabel": "المجموعة",
+  "groupNameHint": "أدخل اسم المجموعة",
+
+  "groupErrorEmpty": "اسم المجموعة مطلوب",
+  "groupErrorTooShort": "اسم المجموعة قصير جدًا",
+  "groupErrorTooLong": "اسم المجموعة طويل جدًا",
+  "groupErrorSymbols": "لا يمكن أن يحتوي الاسم على رموز",
+  "groupErrorNumbers": "لا يمكن أن يحتوي الاسم على أرقام",
+
+  "createGroup": "إنشاء"
+}

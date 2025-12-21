@@ -10,6 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
   firebase_core: ^3.6.0
   firebase_auth: ^5.2.0
   cloud_firestore: ^5.4.4
@@ -33,15 +37,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
     - assets/images/
 
+l10n:
+  arb-dir: lib/l10n
+  template-arb-file: app_en.arb
+  output-localization-file: app_localizations.dart
+
 flutter_native_splash:
-  color: "#F8F9FA"
+  color: "#00897B"
   image: assets/images/vaultara_logo.png
 
-  color_dark: "#003F5C"
+  color_dark: "#00897B"
   image_dark: assets/images/vaultara_logo.png
 
   android: true
@@ -49,7 +59,7 @@ flutter_native_splash:
   web: false
 
   android_12:
-    color: "#003F5C"
+    color: "#00897B"
     image: assets/images/vaultara_logo.png
-    color_dark: "#003F5C"
+    color_dark: "#00897B"
     image_dark: assets/images/vaultara_logo.png

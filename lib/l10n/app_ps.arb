@@ -1,0 +1,106 @@
+{
+  "@@locale": "ps",
+
+  "expiryCalendarTitle": "د پای نېټې کلیز",
+
+  "calendarIntro":
+    "د پای ته رسېدو د لیدلو طریقه وټاکئ:\n\n• له نن څخه د ورځو شمېر ولیکئ.\n• یا یوه ځانګړې نېټه وټاکئ.\n\nVaultara به هغه توکي وښيي چې په هماغه ورځ پای ته رسېږي.",
+
+  "daysFromTodayLabel": "له نن څخه ورځې",
+  "daysFromTodayHint": "لکه 0، 1، 7، 30",
+
+  "apply": "پلي کول",
+  "pickDateOnCalendar": "له کلیز څخه نېټه وټاکئ",
+
+  "today": "نن",
+  "tomorrow": "سبا",
+  "in7Days": "۷ ورځې وروسته",
+  "in30Days": "۳۰ ورځې وروسته",
+
+  "inDays": "{days} ورځې وروسته",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "د ورځو شمېر اړین دی",
+  "invalidDaysError": "سم شمېر اړین دی (۰ یا زیات)",
+
+  "showingItemsRelative": "{time} پای ته رسېدونکي توکي ښودل کېږي",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "په ټاکل شوې نېټه پای ته رسېدونکي توکي ښودل کېږي",
+  "noItemsOnDate": "په دې نېټه هېڅ توکی نه پای ته رسېږي",
+
+  "editorAddTitle": "توکی زیات کړئ",
+  "editorEditTitle": "توکی سمول",
+
+  "editorCategory": "کټګوري",
+  "editorCategoryHint": "کټګوري وټاکئ",
+
+  "editorGroup": "ډله",
+  "editorGroupHint": "په دې کټګورۍ کې ډله وټاکئ",
+
+  "editorItemName": "د توکي نوم",
+  "editorItemNameHint": "د توکي نوم ولیکئ",
+
+  "editorExpiryDate": "د پای نېټه",
+  "editorExpiryDateHint": "د پای نېټه وټاکئ",
+
+  "editorErrorCategory": "کټګوري اړینه ده",
+  "editorErrorGroup": "ډله اړینه ده",
+  "editorErrorName": "د توکي نوم اړین دی",
+  "editorErrorExpiry": "نېټه اړینه ده",
+  "editorErrorExpiryPast": "نېټه باید نن یا راتلونکې وي",
+
+  "cancel": "لغوه",
+  "save": "ساتل",
+
+  "addCategoryTitle": "کټګوري زیاته کړئ",
+  "unlimitedCategories": "بې‌حده کټګورۍ (Premium)",
+
+  "categoryUsage": "{current} / {limit} کټګورۍ کارول شوې",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "د کټګورۍ نوم",
+  "categoryNameHint": "کټګوري ولیکئ",
+
+  "categoryLimitReached":
+    "د Basic پلان حد ته رسېدلي یاست. Premium بې‌حده کټګورۍ برابروي",
+
+  "categoryLimitInfo":
+    "Basic پلان تر {limit} کټګوریو اجازه ورکوي",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "د کټګورۍ نوم اړین دی",
+  "categoryErrorTooShort": "د کټګورۍ نوم ډېر لنډ دی",
+  "categoryErrorTooLong": "د کټګورۍ نوم ډېر اوږد دی",
+  "categoryErrorSymbols": "نوم یوازې سمبولونه نه شي کېدای",
+  "categoryErrorNumbers": "نوم شمېرې نه شي لرلی",
+
+  "upgradeRequired": "اپګریډ اړین دی",
+  "viewPremiumBenefits": "د Premium ګټې وګورئ",
+
+  "createCategory": "جوړول",
+
+  "addGroupTitle": "ډله زیاته کړئ",
+
+  "groupNameLabel": "ډله",
+  "groupNameHint": "ډله ولیکئ",
+
+  "groupErrorEmpty": "د ډلې نوم اړین دی",
+  "groupErrorTooShort": "د ډلې نوم ډېر لنډ دی",
+  "groupErrorTooLong": "د ډلې نوم ډېر اوږد دی",
+  "groupErrorSymbols": "د ډلې نوم یوازې سمبولونه نه شي کېدای",
+  "groupErrorNumbers": "د ډلې نوم شمېرې نه شي لرلی",
+
+  "createGroup": "جوړول"
+}

@@ -1,0 +1,107 @@
+{
+  "@@locale": "cs",
+
+  "expiryCalendarTitle": "Kalendář expirací",
+
+  "calendarIntro":
+    "Vyberte způsob zobrazení expirací:\n\n• Zadejte počet dní od dneška.\n• Nebo vyberte konkrétní datum v kalendáři.\n\nVaultara zobrazí položky, které v daný den expirují.",
+
+  "daysFromTodayLabel": "Dny od dneška",
+  "daysFromTodayHint": "Například 0, 1, 7, 30",
+
+  "apply": "Použít",
+  "pickDateOnCalendar": "Vybrat datum v kalendáři",
+
+  "today": "Dnes",
+  "tomorrow": "Zítra",
+  "in7Days": "Za 7 dní",
+  "in30Days": "Za 30 dní",
+
+  "inDays": "za {days} dní",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Zadejte počet dní",
+  "invalidDaysError": "Zadejte platný počet dní (0 nebo více)",
+
+  "showingItemsRelative": "Položky expirující {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Položky expirující k vybranému datu",
+  "noItemsOnDate": "K tomuto dni nejsou žádné položky k expiraci",
+
+  "editorAddTitle": "Přidat položku",
+  "editorEditTitle": "Upravit položku",
+
+  "editorCategory": "Kategorie",
+  "editorCategoryHint": "Vyberte kategorii",
+
+  "editorGroup": "Skupina",
+  "editorGroupHint": "Vyberte skupinu",
+
+  "editorItemName": "Název položky",
+  "editorItemNameHint": "Zadejte název položky",
+
+  "editorExpiryDate": "Datum expirace",
+  "editorExpiryDateHint": "Vyberte datum expirace",
+
+  "editorErrorCategory": "Kategorie je povinná",
+  "editorErrorGroup": "Skupina je povinná",
+  "editorErrorName": "Název položky je povinný",
+  "editorErrorExpiry": "Datum expirace je povinné",
+  "editorErrorExpiryPast": "Datum musí být dnes nebo v budoucnu",
+
+  "cancel": "Zrušit",
+  "save": "Uložit",
+
+  "addCategoryTitle": "Přidat kategorii",
+  "unlimitedCategories": "Neomezené kategorie (Premium)",
+
+  "categoryUsage": "{current} / {limit} použitých kategorií",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Název kategorie",
+  "categoryNameHint": "Zadejte kategorii",
+
+  "categoryLimitReached":
+    "Dosáhli jste limitu Basic plánu {limit} kategorií. Pro neomezené kategorie přejděte na Premium.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Basic plán umožňuje vytvořit maximálně {limit} vlastních kategorií.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Název kategorie je povinný",
+  "categoryErrorTooShort": "Název kategorie je příliš krátký",
+  "categoryErrorTooLong": "Název kategorie je příliš dlouhý",
+  "categoryErrorSymbols": "Název nemůže obsahovat symboly",
+  "categoryErrorNumbers": "Název nemůže obsahovat čísla",
+
+  "upgradeRequired": "Vyžadována aktualizace",
+  "viewPremiumBenefits": "Zobrazit výhody Premium",
+  "createCategory": "Vytvořit",
+
+  "addGroupTitle": "Přidat skupinu",
+  "groupNameLabel": "Skupina",
+  "groupNameHint": "Zadejte skupinu",
+
+  "groupErrorEmpty": "Název skupiny je povinný",
+  "groupErrorTooShort": "Název skupiny je příliš krátký",
+  "groupErrorTooLong": "Název skupiny je příliš dlouhý",
+  "groupErrorSymbols": "Název nemůže obsahovat symboly",
+  "groupErrorNumbers": "Název nemůže obsahovat čísla",
+
+  "createGroup": "Vytvořit"
+}

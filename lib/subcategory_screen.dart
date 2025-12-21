@@ -1,10 +1,10 @@
-// subcategory_screen.dart
 import 'package:flutter/material.dart';
 
 import 'category_item.dart';
 import 'items_screen.dart';
 import 'item_repository.dart';
 import 'subcategory_repository.dart';
+import 'add_subcategory_sheet.dart';
 
 enum SubcategoryFilterMode {
   all,
@@ -62,20 +62,6 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
     super.dispose();
   }
 
-  String _toTitleCase(String input) {
-    final List<String> words = input
-        .trim()
-        .split(RegExp(r'\s+'))
-        .where((String w) => w.isNotEmpty)
-        .toList();
-    return words
-        .map((String word) {
-          final String lower = word.toLowerCase();
-          return lower[0].toUpperCase() + lower.substring(1);
-        })
-        .join(' ');
-  }
-
   void _deleteSubcategory(String name) async {
     final int index = _subcategories.indexOf(name);
     if (index == -1) return;
@@ -114,10 +100,8 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
             if (_recentlyDeletedName != null &&
                 _recentlyDeletedIndex != null) {
               setState(() {
-                final int safeIndex = _recentlyDeletedIndex!.clamp(
-                  0,
-                  _subcategories.length,
-                );
+                final int safeIndex =
+                    _recentlyDeletedIndex!.clamp(0, _subcategories.length);
                 _subcategories.insert(
                   safeIndex,
                   _recentlyDeletedName!,
@@ -132,6 +116,28 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
           },
         ),
       ),
+    );
+  }
+
+  void _openAddSubcategorySheet() {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (_) {
+        return AddSubcategorySheet(
+          onCreate: (String name) async {
+            setState(() {
+              _subcategories.add(name);
+            });
+
+            await SubcategoryRepository.addSubcategory(
+              categoryLabel: widget.category.label,
+              name: name,
+            );
+          },
+        );
+      },
     );
   }
 
@@ -229,10 +235,12 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                       children: [
                         _SubcategoryFilterChip(
                           label: 'All',
-                          selected: _filterMode == SubcategoryFilterMode.all,
+                          selected: _filterMode ==
+                              SubcategoryFilterMode.all,
                           onTap: () {
                             setState(() {
-                              _filterMode = SubcategoryFilterMode.all;
+                              _filterMode =
+                                  SubcategoryFilterMode.all;
                             });
                           },
                         ),
@@ -249,8 +257,8 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                         ),
                         _SubcategoryFilterChip(
                           label: 'Custom',
-                          selected:
-                              _filterMode == SubcategoryFilterMode.customOnly,
+                          selected: _filterMode ==
+                              SubcategoryFilterMode.customOnly,
                           onTap: () {
                             setState(() {
                               _filterMode =
@@ -282,20 +290,24 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
             ),
 
             const SizedBox(height: 4),
+
             Expanded(
               child: ListView.builder(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                padding:
+                    const EdgeInsets.fromLTRB(16, 8, 16, 16),
                 itemCount: filtered.length,
-                itemBuilder: (BuildContext context, int index) {
+                itemBuilder: (context, index) {
                   final String name = filtered[index];
                   final bool isSuggested =
-                      widget.category.builtInSubcategories.contains(name);
+                      widget.category.builtInSubcategories
+                          .contains(name);
 
                   final int totalItems =
                       ItemRepository.totalItemsForGroup(
                     widget.category.label,
                     name,
                   );
+
                   final int expiringSoon =
                       ItemRepository.expiringSoonForGroup(
                     widget.category.label,
@@ -324,15 +336,19 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment:
+                              CrossAxisAlignment.start,
                           children: [
                             Row(
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.all(6),
+                                  padding:
+                                      const EdgeInsets.all(6),
                                   decoration: BoxDecoration(
-                                    color: scheme.primary.withOpacity(0.08),
-                                    borderRadius: BorderRadius.circular(12),
+                                    color: scheme.primary
+                                        .withOpacity(0.08),
+                                    borderRadius:
+                                        BorderRadius.circular(12),
                                   ),
                                   child: Icon(
                                     Icons.folder_rounded,
@@ -345,17 +361,19 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
                                   child: Text(
                                     name,
                                     maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
+                                    overflow:
+                                        TextOverflow.ellipsis,
                                     style: const TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w800,
                                     ),
                                   ),
                                 ),
-                                if (widget.isPremium && !isSuggested)
+                                if (widget.isPremium &&
+                                    !isSuggested)
                                   IconButton(
-                                    icon: const Icon(
-                                        Icons.delete_outline_rounded),
+                                    icon: const Icon(Icons
+                                        .delete_outline_rounded),
                                     onPressed: () =>
                                         _deleteSubcategory(name),
                                   ),
@@ -393,93 +411,6 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
       ),
     );
   }
-
-  void _openAddSubcategorySheet() {
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
-      builder: (BuildContext sheetContext) {
-        final double bottomInset =
-            MediaQuery.of(sheetContext).viewInsets.bottom;
-
-        final TextEditingController nameController =
-            TextEditingController();
-
-        return SafeArea(
-          child: Padding(
-            padding: EdgeInsets.only(
-              left: 16,
-              right: 16,
-              bottom: bottomInset,
-            ),
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 16, bottom: 16),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    const Text(
-                      'Add group',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    TextField(
-                      controller: nameController,
-                      decoration: const InputDecoration(
-                        labelText: 'Group name',
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        TextButton(
-                          onPressed: () => Navigator.pop(sheetContext),
-                          child: const Text('Cancel'),
-                        ),
-                        const Spacer(),
-                        SizedBox(
-                          width: 150,
-                          child: FilledButton(
-                            onPressed: () async {
-                              final String rawName =
-                                  nameController.text.trim();
-                              if (rawName.isEmpty) return;
-
-                              final String formatted =
-                                  _toTitleCase(rawName);
-
-                              setState(() {
-                                _subcategories.add(formatted);
-                              });
-
-                              await SubcategoryRepository.addSubcategory(
-                                categoryLabel: widget.category.label,
-                                name: formatted,
-                              );
-
-                              Navigator.pop(sheetContext);
-                            },
-                            child: const Text('Create'),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
 }
 
 class _SubcategoryFilterChip extends StatelessWidget {
@@ -500,7 +431,8 @@ class _SubcategoryFilterChip extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        padding:
+            const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(999),
           color: selected
@@ -512,7 +444,9 @@ class _SubcategoryFilterChip extends StatelessWidget {
           style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w700,
-            color: selected ? scheme.primary : scheme.onSurfaceVariant,
+            color: selected
+                ? scheme.primary
+                : scheme.onSurfaceVariant,
           ),
         ),
       ),

@@ -1,0 +1,107 @@
+{
+  "@@locale": "ha",
+
+  "expiryCalendarTitle": "Kalandar karewa",
+
+  "calendarIntro":
+    "Zaɓi yadda kake son duba ranakun karewa:\n\n• Shigar da adadin kwanaki daga yau.\n• Ko zaɓi takamaiman rana a kalanda.\n\nVaultara zai nuna abubuwan da za su kare a ranar.",
+
+  "daysFromTodayLabel": "Kwanaki daga yau",
+  "daysFromTodayHint": "Misali 0, 1, 7, 30",
+
+  "apply": "Aiwatar",
+  "pickDateOnCalendar": "Zaɓi rana daga kalanda",
+
+  "today": "Yau",
+  "tomorrow": "Gobe",
+  "in7Days": "Cikin kwanaki 7",
+  "in30Days": "Cikin kwanaki 30",
+
+  "inDays": "cikin kwanaki {days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Shigar da adadin kwanaki",
+  "invalidDaysError": "Shigar da ingantaccen adadi (0 ko fiye)",
+
+  "showingItemsRelative": "Ana nuna abubuwan da za su kare {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Ana nuna abubuwan da za su kare a ranar da aka zaɓa",
+  "noItemsOnDate": "Babu wani abu da zai kare a ranar",
+
+  "editorAddTitle": "Ƙara abu",
+  "editorEditTitle": "Gyara abu",
+
+  "editorCategory": "Rukuni",
+  "editorCategoryHint": "Zaɓi rukuni",
+
+  "editorGroup": "Ƙungiya",
+  "editorGroupHint": "Zaɓi ƙungiya",
+
+  "editorItemName": "Sunan abu",
+  "editorItemNameHint": "Shigar da sunan abu",
+
+  "editorExpiryDate": "Ranar karewa",
+  "editorExpiryDateHint": "Zaɓi ranar karewa",
+
+  "editorErrorCategory": "Ana buƙatar rukuni",
+  "editorErrorGroup": "Ana buƙatar ƙungiya",
+  "editorErrorName": "Ana buƙatar suna",
+  "editorErrorExpiry": "Ana buƙatar rana",
+  "editorErrorExpiryPast": "Ranar dole ta kasance yau ko gaba",
+
+  "cancel": "Soke",
+  "save": "Ajiye",
+
+  "addCategoryTitle": "Ƙara rukuni",
+  "unlimitedCategories": "Rukuni marasa iyaka (Premium)",
+
+  "categoryUsage": "{current} / {limit} rukuni da aka yi amfani da su",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Sunan rukuni",
+  "categoryNameHint": "Shigar da rukuni",
+
+  "categoryLimitReached":
+    "Ka kai iyakar rukuni {limit} na shirin Basic. Ka haɓaka zuwa Premium don rukuni marasa iyaka.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Shirin Basic yana ba da damar ƙirƙirar rukuni na musamman har zuwa {limit}.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Ana buƙatar sunan rukuni",
+  "categoryErrorTooShort": "Sunan ya yi gajarta",
+  "categoryErrorTooLong": "Sunan ya yi tsawo",
+  "categoryErrorSymbols": "Ba a yarda da alamu ba",
+  "categoryErrorNumbers": "Ba a yarda da lambobi ba",
+
+  "upgradeRequired": "Ana buƙatar haɓakawa",
+  "viewPremiumBenefits": "Duba fa’idodin Premium",
+  "createCategory": "Ƙirƙiri",
+
+  "addGroupTitle": "Ƙara ƙungiya",
+  "groupNameLabel": "Ƙungiya",
+  "groupNameHint": "Shigar da ƙungiya",
+
+  "groupErrorEmpty": "Ana buƙatar sunan ƙungiya",
+  "groupErrorTooShort": "Sunan ya yi gajarta",
+  "groupErrorTooLong": "Sunan ya yi tsawo",
+  "groupErrorSymbols": "Ba a yarda da alamu ba",
+  "groupErrorNumbers": "Ba a yarda da lambobi ba",
+
+  "createGroup": "Ƙirƙiri"
+}

@@ -1,0 +1,106 @@
+{
+  "@@locale": "si",
+
+  "expiryCalendarTitle": "කල් ඉකුත් වීමේ දින දසුන",
+
+  "calendarIntro":
+    "කල් ඉකුත් වන දින බලන ආකාරය තෝරන්න:\n\n• අද සිට දින ගණනක් ඇතුළත් කරන්න.\n• හෝ දින දසුනෙන් නිශ්චිත දිනයක් තෝරන්න.\n\nVaultara එදින කල් ඉකුත් වන අයිතම පෙන්වයි.",
+
+  "daysFromTodayLabel": "අද සිට දින",
+  "daysFromTodayHint": "උදාහරණයක්: 0, 1, 7, 30",
+
+  "apply": "යොදන්න",
+  "pickDateOnCalendar": "දින දසුනෙන් දිනය තෝරන්න",
+
+  "today": "අද",
+  "tomorrow": "හෙට",
+  "in7Days": "දින 7 කින්",
+  "in30Days": "දින 30 කින්",
+
+  "inDays": "දින {days} කින්",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "දින ගණන අවශ්‍යයි",
+  "invalidDaysError": "වලංගු දින ගණනක් අවශ්‍යයි (0 හෝ වැඩි)",
+
+  "showingItemsRelative": "{time} කල් ඉකුත් වන අයිතම",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "තෝරාගත් දිනයේ කල් ඉකුත් වන අයිතම",
+  "noItemsOnDate": "මෙම දිනයේ කල් ඉකුත් වන අයිතම නොමැත",
+
+  "editorAddTitle": "අයිතමය එක් කරන්න",
+  "editorEditTitle": "අයිතමය සංස්කරණය කරන්න",
+
+  "editorCategory": "වර්ගය",
+  "editorCategoryHint": "වර්ගයක් තෝරන්න",
+
+  "editorGroup": "කණ්ඩායම",
+  "editorGroupHint": "මෙම වර්ගයට අයත් කණ්ඩායමක් තෝරන්න",
+
+  "editorItemName": "අයිතමයේ නම",
+  "editorItemNameHint": "අයිතමයේ නම ඇතුළත් කරන්න",
+
+  "editorExpiryDate": "කල් ඉකුත් වන දිනය",
+  "editorExpiryDateHint": "කල් ඉකුත් වන දිනය තෝරන්න",
+
+  "editorErrorCategory": "වර්ගය අවශ්‍යයි",
+  "editorErrorGroup": "කණ්ඩායම අවශ්‍යයි",
+  "editorErrorName": "අයිතමයේ නම අවශ්‍යයි",
+  "editorErrorExpiry": "දිනය අවශ්‍යයි",
+  "editorErrorExpiryPast": "දිනය අද හෝ අනාගත දිනයක් විය යුතුය",
+
+  "cancel": "අවලංගු කරන්න",
+  "save": "සුරකින්න",
+
+  "addCategoryTitle": "වර්ගය එක් කරන්න",
+  "unlimitedCategories": "සීමා නොමැති වර්ග (Premium)",
+
+  "categoryUsage": "{current} / {limit} වර්ග භාවිතා කර ඇත",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "වර්ග නාමය",
+  "categoryNameHint": "වර්ගය ඇතුළත් කරන්න",
+
+  "categoryLimitReached":
+    "Basic සැලසුමේ සීමාවට ළඟා වී ඇත. Premium මඟින් සීමා නොමැති වර්ග ලබා දේ",
+
+  "categoryLimitInfo":
+    "Basic සැලසුම {limit} වර්ග සීමා කරයි",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "වර්ග නාමය අවශ්‍යයි",
+  "categoryErrorTooShort": "වර්ග නාමය කෙටි වේ",
+  "categoryErrorTooLong": "වර්ග නාමය දිගු වේ",
+  "categoryErrorSymbols": "වර්ග නාමය සංකේත පමණක් විය නොහැක",
+  "categoryErrorNumbers": "වර්ග නාමයට අංක ඇතුළත් කළ නොහැක",
+
+  "upgradeRequired": "උත්ශ්‍රේණිය අවශ්‍යයි",
+  "viewPremiumBenefits": "Premium වාසි බලන්න",
+
+  "createCategory": "සාදන්න",
+
+  "addGroupTitle": "කණ්ඩායම එක් කරන්න",
+
+  "groupNameLabel": "කණ්ඩායම",
+  "groupNameHint": "කණ්ඩායම ඇතුළත් කරන්න",
+
+  "groupErrorEmpty": "කණ්ඩායම් නාමය අවශ්‍යයි",
+  "groupErrorTooShort": "කණ්ඩායම් නාමය කෙටි වේ",
+  "groupErrorTooLong": "කණ්ඩායම් නාමය දිගු වේ",
+  "groupErrorSymbols": "කණ්ඩායම් නාමය සංකේත පමණක් විය නොහැක",
+  "groupErrorNumbers": "කණ්ඩායම් නාමයට අංක ඇතුළත් කළ නොහැක",
+
+  "createGroup": "සාදන්න"
+}

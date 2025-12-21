@@ -1,0 +1,107 @@
+{
+  "@@locale": "de",
+
+  "expiryCalendarTitle": "Ablaufkalender",
+
+  "calendarIntro":
+    "Wählen Sie, wie Sie Ihre Abläufe anzeigen möchten:\n\n• Geben Sie die Anzahl der Tage ab heute ein.\n• Oder wählen Sie ein genaues Datum im Kalender.\n\nVaultara zeigt die Elemente an, die an diesem Tag ablaufen.",
+
+  "daysFromTodayLabel": "Tage ab heute",
+  "daysFromTodayHint": "Zum Beispiel 0, 1, 7, 30",
+
+  "apply": "Anwenden",
+  "pickDateOnCalendar": "Datum im Kalender auswählen",
+
+  "today": "Heute",
+  "tomorrow": "Morgen",
+  "in7Days": "In 7 Tagen",
+  "in30Days": "In 30 Tagen",
+
+  "inDays": "in {days} Tagen",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Anzahl der Tage eingeben",
+  "invalidDaysError": "Gültige Anzahl eingeben (0 oder mehr)",
+
+  "showingItemsRelative": "Elemente, die {time} ablaufen",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Elemente, die am ausgewählten Datum ablaufen",
+  "noItemsOnDate": "An diesem Tag laufen keine Elemente ab",
+
+  "editorAddTitle": "Element hinzufügen",
+  "editorEditTitle": "Element bearbeiten",
+
+  "editorCategory": "Kategorie",
+  "editorCategoryHint": "Kategorie auswählen",
+
+  "editorGroup": "Gruppe",
+  "editorGroupHint": "Gruppe auswählen",
+
+  "editorItemName": "Elementname",
+  "editorItemNameHint": "Elementname eingeben",
+
+  "editorExpiryDate": "Ablaufdatum",
+  "editorExpiryDateHint": "Ablaufdatum auswählen",
+
+  "editorErrorCategory": "Kategorie ist erforderlich",
+  "editorErrorGroup": "Gruppe ist erforderlich",
+  "editorErrorName": "Elementname ist erforderlich",
+  "editorErrorExpiry": "Ablaufdatum ist erforderlich",
+  "editorErrorExpiryPast": "Datum muss heute oder zukünftig sein",
+
+  "cancel": "Abbrechen",
+  "save": "Speichern",
+
+  "addCategoryTitle": "Kategorie hinzufügen",
+  "unlimitedCategories": "Unbegrenzte Kategorien (Premium)",
+
+  "categoryUsage": "{current} / {limit} Kategorien verwendet",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategoriename",
+  "categoryNameHint": "Kategorie eingeben",
+
+  "categoryLimitReached":
+    "Sie haben das Basic-Limit von {limit} Kategorien erreicht. Upgrade auf Premium.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Im Basic-Plan können bis zu {limit} benutzerdefinierte Kategorien erstellt werden.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategoriename ist erforderlich",
+  "categoryErrorTooShort": "Kategoriename ist zu kurz",
+  "categoryErrorTooLong": "Kategoriename ist zu lang",
+  "categoryErrorSymbols": "Name darf keine Symbole enthalten",
+  "categoryErrorNumbers": "Name darf keine Zahlen enthalten",
+
+  "upgradeRequired": "Upgrade erforderlich",
+  "viewPremiumBenefits": "Premium-Vorteile anzeigen",
+  "createCategory": "Erstellen",
+
+  "addGroupTitle": "Gruppe hinzufügen",
+  "groupNameLabel": "Gruppe",
+  "groupNameHint": "Gruppe eingeben",
+
+  "groupErrorEmpty": "Gruppenname ist erforderlich",
+  "groupErrorTooShort": "Gruppenname ist zu kurz",
+  "groupErrorTooLong": "Gruppenname ist zu lang",
+  "groupErrorSymbols": "Name darf keine Symbole enthalten",
+  "groupErrorNumbers": "Name darf keine Zahlen enthalten",
+
+  "createGroup": "Erstellen"
+}

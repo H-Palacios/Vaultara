@@ -1,0 +1,107 @@
+{
+  "@@locale": "zu",
+
+  "expiryCalendarTitle": "Ikhalenda yokuphelelwa yisikhathi",
+
+  "calendarIntro":
+    "Khetha indlela ofuna ukubona ngayo ukuphelelwa yisikhathi:\n\n• Faka inani lezinsuku kusukela namuhla.\n• Noma khetha usuku oluthile kukhalenda.\n\nIVaultara izobonisa izinto eziphelelwa yisikhathi ngalolo suku.",
+
+  "daysFromTodayLabel": "Izinsuku kusukela namuhla",
+  "daysFromTodayHint": "Isibonelo 0, 1, 7, 30",
+
+  "apply": "Sebenzisa",
+  "pickDateOnCalendar": "Khetha usuku kukhalenda",
+
+  "today": "Namuhla",
+  "tomorrow": "Kusasa",
+  "in7Days": "Ezinsukwini ezi-7",
+  "in30Days": "Ezinsukwini ezi-30",
+
+  "inDays": "ezinsukwini ezi-{days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Faka inani lezinsuku",
+  "invalidDaysError": "Faka inani elifanele (0 noma ngaphezulu)",
+
+  "showingItemsRelative": "Kuboniswayo izinto eziphelelwa yisikhathi {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Kuboniswayo izinto eziphelelwa yisikhathi ngosuku olukhethiwe",
+  "noItemsOnDate": "Azikho izinto eziphelelwa yisikhathi ngalolo suku",
+
+  "editorAddTitle": "Engeza into",
+  "editorEditTitle": "Hlela into",
+
+  "editorCategory": "Isigaba",
+  "editorCategoryHint": "Khetha isigaba",
+
+  "editorGroup": "Iqembu",
+  "editorGroupHint": "Khetha iqembu",
+
+  "editorItemName": "Igama lento",
+  "editorItemNameHint": "Faka igama lento",
+
+  "editorExpiryDate": "Usuku lokuphelelwa",
+  "editorExpiryDateHint": "Khetha usuku lokuphelelwa",
+
+  "editorErrorCategory": "Isigaba siyadingeka",
+  "editorErrorGroup": "Iqembu liyadingeka",
+  "editorErrorName": "Igama lento liyadingeka",
+  "editorErrorExpiry": "Usuku lokuphelelwa luyadingeka",
+  "editorErrorExpiryPast": "Usuku kufanele lube namuhla noma esikhathini esizayo",
+
+  "cancel": "Khansela",
+  "save": "Londoloza",
+
+  "addCategoryTitle": "Engeza isigaba",
+  "unlimitedCategories": "Izigaba ezinganemkhawulo (Premium)",
+
+  "categoryUsage": "{current} / {limit} izigaba ezisetshenzisiwe",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Igama lesigaba",
+  "categoryNameHint": "Faka isigaba",
+
+  "categoryLimitReached":
+    "Umkhawulo we-Basic usufinyelelwe. I-Premium inezigaba ezinganemkhawulo",
+
+  "categoryLimitInfo":
+    "I-Basic ivumela izigaba ezifika ku-{limit}",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Igama lesigaba liyadingeka",
+  "categoryErrorTooShort": "Igama lesigaba lifushane",
+  "categoryErrorTooLong": "Igama lesigaba lide kakhulu",
+  "categoryErrorSymbols": "Igama lesigaba alikwazi ukuba izimpawu kuphela",
+  "categoryErrorNumbers": "Igama lesigaba alikwazi ukuba nezinombolo",
+
+  "upgradeRequired": "Kudingeka ukuthuthukisa",
+  "viewPremiumBenefits": "Bona izinzuzo ze-Premium",
+
+  "createCategory": "Dala",
+
+  "addGroupTitle": "Engeza iqembu",
+  "groupNameLabel": "Iqembu",
+  "groupNameHint": "Faka iqembu",
+
+  "groupErrorEmpty": "Igama leqembu liyadingeka",
+  "groupErrorTooShort": "Igama leqembu lifushane",
+  "groupErrorTooLong": "Igama leqembu lide kakhulu",
+  "groupErrorSymbols": "Igama leqembu alikwazi ukuba izimpawu kuphela",
+  "groupErrorNumbers": "Igama leqembu alikwazi ukuba nezinombolo",
+
+  "createGroup": "Dala"
+}

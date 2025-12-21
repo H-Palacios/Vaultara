@@ -1,0 +1,106 @@
+{
+  "@@locale": "ms",
+
+  "expiryCalendarTitle": "Kalendar tamat tempoh",
+
+  "calendarIntro":
+    "Pilih cara melihat tarikh tamat tempoh:\n\n• Masukkan bilangan hari dari hari ini.\n• Atau pilih tarikh tertentu dalam kalendar.\n\nVaultara akan memaparkan item yang tamat tempoh pada hari tersebut.",
+
+  "daysFromTodayLabel": "Hari dari hari ini",
+  "daysFromTodayHint": "Contoh 0, 1, 7, 30",
+
+  "apply": "Gunakan",
+  "pickDateOnCalendar": "Pilih tarikh dalam kalendar",
+
+  "today": "Hari ini",
+  "tomorrow": "Esok",
+  "in7Days": "Dalam 7 hari",
+  "in30Days": "Dalam 30 hari",
+
+  "inDays": "dalam {days} hari",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Masukkan bilangan hari",
+  "invalidDaysError": "Masukkan bilangan hari yang sah (0 atau lebih)",
+
+  "showingItemsRelative": "Memaparkan item yang tamat tempoh {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Memaparkan item yang tamat tempoh pada tarikh dipilih",
+  "noItemsOnDate": "Tiada item tamat tempoh pada hari tersebut",
+
+  "editorAddTitle": "Tambah item",
+  "editorEditTitle": "Edit item",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Pilih kategori",
+
+  "editorGroup": "Kumpulan",
+  "editorGroupHint": "Pilih kumpulan",
+
+  "editorItemName": "Nama item",
+  "editorItemNameHint": "Masukkan nama item",
+
+  "editorExpiryDate": "Tarikh tamat tempoh",
+  "editorExpiryDateHint": "Pilih tarikh tamat tempoh",
+
+  "editorErrorCategory": "Kategori diperlukan",
+  "editorErrorGroup": "Kumpulan diperlukan",
+  "editorErrorName": "Nama item diperlukan",
+  "editorErrorExpiry": "Tarikh tamat tempoh diperlukan",
+  "editorErrorExpiryPast": "Tarikh mesti hari ini atau akan datang",
+
+  "cancel": "Batal",
+  "save": "Simpan",
+
+  "addCategoryTitle": "Tambah kategori",
+  "unlimitedCategories": "Kategori tanpa had (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategori digunakan",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nama kategori",
+  "categoryNameHint": "Masukkan kategori",
+
+  "categoryLimitReached":
+    "Had pelan Basic telah dicapai. Premium membenarkan kategori tanpa had",
+
+  "categoryLimitInfo":
+    "Pelan Basic membenarkan sehingga {limit} kategori",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Nama kategori diperlukan",
+  "categoryErrorTooShort": "Nama kategori terlalu pendek",
+  "categoryErrorTooLong": "Nama kategori terlalu panjang",
+  "categoryErrorSymbols": "Nama kategori tidak boleh simbol sahaja",
+  "categoryErrorNumbers": "Nama kategori tidak boleh mengandungi nombor",
+
+  "upgradeRequired": "Naik taraf diperlukan",
+  "viewPremiumBenefits": "Lihat manfaat Premium",
+
+  "createCategory": "Cipta",
+
+  "addGroupTitle": "Tambah kumpulan",
+
+  "groupNameLabel": "Kumpulan",
+  "groupNameHint": "Masukkan kumpulan",
+
+  "groupErrorEmpty": "Nama kumpulan diperlukan",
+  "groupErrorTooShort": "Nama kumpulan terlalu pendek",
+  "groupErrorTooLong": "Nama kumpulan terlalu panjang",
+  "groupErrorSymbols": "Nama kumpulan tidak boleh simbol",
+  "groupErrorNumbers": "Nama kumpulan tidak boleh mengandungi nombor",
+
+  "createGroup": "Cipta"
+}

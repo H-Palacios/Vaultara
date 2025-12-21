@@ -1,0 +1,107 @@
+{
+  "@@locale": "fil",
+
+  "expiryCalendarTitle": "Kalendaryo ng pag-expire",
+
+  "calendarIntro":
+    "Piliin kung paano mo gustong tingnan ang mga pag-expire:\n\n• I-type kung ilang araw mula ngayon ang gusto mong tingnan.\n• O pumili ng eksaktong petsa sa kalendaryo.\n\nIpapakita ng Vaultara ang mga item na mag-e-expire sa araw na iyon.",
+
+  "daysFromTodayLabel": "Mga araw mula ngayon",
+  "daysFromTodayHint": "Halimbawa 0, 1, 7, 30",
+
+  "apply": "Ilapat",
+  "pickDateOnCalendar": "Pumili ng petsa sa kalendaryo",
+
+  "today": "Ngayon",
+  "tomorrow": "Bukas",
+  "in7Days": "Sa loob ng 7 araw",
+  "in30Days": "Sa loob ng 30 araw",
+
+  "inDays": "sa loob ng {days} araw",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Maglagay ng bilang ng mga araw",
+  "invalidDaysError": "Maglagay ng wastong bilang (0 o higit pa)",
+
+  "showingItemsRelative": "Ipinapakita ang mga item na mag-e-expire {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Ipinapakita ang mga item na mag-e-expire sa napiling petsa",
+  "noItemsOnDate": "Walang mga item na mag-e-expire sa petsang ito",
+
+  "editorAddTitle": "Magdagdag ng item",
+  "editorEditTitle": "I-edit ang item",
+
+  "editorCategory": "Kategorya",
+  "editorCategoryHint": "Pumili ng kategorya",
+
+  "editorGroup": "Grupo",
+  "editorGroupHint": "Pumili ng grupo",
+
+  "editorItemName": "Pangalan ng item",
+  "editorItemNameHint": "Ilagay ang pangalan ng item",
+
+  "editorExpiryDate": "Petsa ng pag-expire",
+  "editorExpiryDateHint": "Pumili ng petsa ng pag-expire",
+
+  "editorErrorCategory": "Kinakailangan ang kategorya",
+  "editorErrorGroup": "Kinakailangan ang grupo",
+  "editorErrorName": "Kinakailangan ang pangalan",
+  "editorErrorExpiry": "Kinakailangan ang petsa",
+  "editorErrorExpiryPast": "Ang petsa ay dapat ngayon o sa hinaharap",
+
+  "cancel": "Kanselahin",
+  "save": "I-save",
+
+  "addCategoryTitle": "Magdagdag ng kategorya",
+  "unlimitedCategories": "Walang limit na kategorya (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorya ang nagamit",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Pangalan ng kategorya",
+  "categoryNameHint": "Ilagay ang kategorya",
+
+  "categoryLimitReached":
+    "Naabot mo na ang Basic plan limit na {limit} kategorya. Mag-upgrade sa Premium.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Pinapayagan ng Basic plan ang hanggang {limit} custom na kategorya.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kinakailangan ang pangalan ng kategorya",
+  "categoryErrorTooShort": "Masyadong maikli ang pangalan",
+  "categoryErrorTooLong": "Masyadong mahaba ang pangalan",
+  "categoryErrorSymbols": "Hindi maaaring may simbolo ang pangalan",
+  "categoryErrorNumbers": "Hindi maaaring may numero ang pangalan",
+
+  "upgradeRequired": "Kailangan ng upgrade",
+  "viewPremiumBenefits": "Tingnan ang Premium na benepisyo",
+  "createCategory": "Gumawa",
+
+  "addGroupTitle": "Magdagdag ng grupo",
+  "groupNameLabel": "Grupo",
+  "groupNameHint": "Ilagay ang grupo",
+
+  "groupErrorEmpty": "Kinakailangan ang pangalan ng grupo",
+  "groupErrorTooShort": "Masyadong maikli ang pangalan",
+  "groupErrorTooLong": "Masyadong mahaba ang pangalan",
+  "groupErrorSymbols": "Hindi maaaring may simbolo ang pangalan",
+  "groupErrorNumbers": "Hindi maaaring may numero ang pangalan",
+
+  "createGroup": "Gumawa"
+}

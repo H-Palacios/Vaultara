@@ -1,0 +1,105 @@
+{
+  "@@locale": "hr",
+
+  "expiryCalendarTitle": "Kalendar isteka",
+
+  "calendarIntro":
+    "Odaberite kako želite pregledavati isteke:\n\n• Unesite broj dana od danas.\n• Ili odaberite određeni datum u kalendaru.\n\nVaultara će prikazati stavke koje istječu tog dana.",
+
+  "daysFromTodayLabel": "Dani od danas",
+  "daysFromTodayHint": "Na primjer 0, 1, 7, 30",
+
+  "apply": "Primijeni",
+  "pickDateOnCalendar": "Odaberite datum u kalendaru",
+
+  "today": "Danas",
+  "tomorrow": "Sutra",
+  "in7Days": "Za 7 dana",
+  "in30Days": "Za 30 dana",
+
+  "inDays": "za {days} dana",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Unesite broj dana",
+  "invalidDaysError": "Unesite valjan broj dana (0 ili više)",
+
+  "showingItemsRelative": "Prikazuju se stavke koje istječu {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Prikazuju se stavke koje istječu na odabrani datum",
+  "noItemsOnDate": "Nema stavki koje istječu tog dana",
+
+  "editorAddTitle": "Dodaj stavku",
+  "editorEditTitle": "Uredi stavku",
+
+  "editorCategory": "Kategorija",
+  "editorCategoryHint": "Odaberite kategoriju",
+
+  "editorGroup": "Grupa",
+  "editorGroupHint": "Odaberite grupu",
+
+  "editorItemName": "Naziv stavke",
+  "editorItemNameHint": "Unesite naziv stavke",
+
+  "editorExpiryDate": "Datum isteka",
+  "editorExpiryDateHint": "Odaberite datum isteka",
+
+  "editorErrorCategory": "Kategorija je obavezna",
+  "editorErrorGroup": "Grupa je obavezna",
+  "editorErrorName": "Naziv stavke je obavezan",
+  "editorErrorExpiry": "Datum isteka je obavezan",
+  "editorErrorExpiryPast": "Datum mora biti danas ili u budućnosti",
+
+  "cancel": "Odustani",
+  "save": "Spremi",
+
+  "addCategoryTitle": "Dodaj kategoriju",
+  "unlimitedCategories": "Neograničene kategorije (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorija korišteno",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Naziv kategorije",
+  "categoryNameHint": "Unesite kategoriju",
+
+  "categoryLimitReached":
+    "Dosegnuto je ograničenje Basic plana. Premium omogućuje neograničene kategorije",
+
+  "categoryLimitInfo":
+    "Basic plan omogućuje do {limit} kategorija",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Naziv kategorije je obavezan",
+  "categoryErrorTooShort": "Naziv kategorije je prekratak",
+  "categoryErrorTooLong": "Naziv kategorije je predugačak",
+  "categoryErrorSymbols": "Naziv ne može sadržavati samo simbole",
+  "categoryErrorNumbers": "Naziv ne može sadržavati brojeve",
+
+  "upgradeRequired": "Potrebna nadogradnja",
+  "viewPremiumBenefits": "Pogledaj Premium pogodnosti",
+  "createCategory": "Kreiraj",
+
+  "addGroupTitle": "Dodaj grupu",
+
+  "groupNameLabel": "Grupa",
+  "groupNameHint": "Unesite grupu",
+
+  "groupErrorEmpty": "Naziv grupe je obavezan",
+  "groupErrorTooShort": "Naziv grupe je prekratak",
+  "groupErrorTooLong": "Naziv grupe je predugačak",
+  "groupErrorSymbols": "Naziv grupe ne može sadržavati simbole",
+  "groupErrorNumbers": "Naziv grupe ne može sadržavati brojeve",
+
+  "createGroup": "Kreiraj"
+}

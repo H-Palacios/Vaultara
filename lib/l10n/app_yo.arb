@@ -1,0 +1,105 @@
+{
+  "@@locale": "yo",
+
+  "expiryCalendarTitle": "Kalẹnda ipari",
+
+  "calendarIntro":
+    "Yan bi o ṣe fẹ wo awọn ọjọ ipari:\n\n• Tẹ iye awọn ọjọ lati oni.\n• Tabi yan ọjọ kan lori kalẹnda.\n\nVaultara nfi awọn nkan ti o pari ni ọjọ yẹn han.",
+
+  "daysFromTodayLabel": "Awọn ọjọ lati oni",
+  "daysFromTodayHint": "Apẹẹrẹ 0, 1, 7, 30",
+
+  "apply": "Lo",
+  "pickDateOnCalendar": "Yan ọjọ lori kalẹnda",
+
+  "today": "Oni",
+  "tomorrow": "Ọla",
+  "in7Days": "Lẹ́yìn ọjọ́ 7",
+  "in30Days": "Lẹ́yìn ọjọ́ 30",
+
+  "inDays": "lẹ́yìn ọjọ́ {days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Iye awọn ọjọ jẹ dandan",
+  "invalidDaysError": "Tẹ iye to wulo sii (0 tabi ju bẹẹ lọ)",
+
+  "showingItemsRelative": "Awọn nkan ti yoo pari {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Awọn nkan ti yoo pari ni ọjọ ti a yan",
+  "noItemsOnDate": "Ko si nkan ti yoo pari ni ọjọ yẹn",
+
+  "editorAddTitle": "Fi nkan kun",
+  "editorEditTitle": "Ṣatunkọ nkan",
+
+  "editorCategory": "Ẹka",
+  "editorCategoryHint": "Yan ẹka",
+
+  "editorGroup": "Ẹgbẹ",
+  "editorGroupHint": "Yan ẹgbẹ ninu ẹka yii",
+
+  "editorItemName": "Orukọ nkan",
+  "editorItemNameHint": "Tẹ orukọ nkan sii",
+
+  "editorExpiryDate": "Ọjọ ipari",
+  "editorExpiryDateHint": "Yan ọjọ",
+
+  "editorErrorCategory": "Ẹka jẹ dandan",
+  "editorErrorGroup": "Ẹgbẹ jẹ dandan",
+  "editorErrorName": "Orukọ nkan jẹ dandan",
+  "editorErrorExpiry": "Ọjọ jẹ dandan",
+  "editorErrorExpiryPast": "Ọjọ gbọdọ jẹ oni tabi ọjọ iwaju",
+
+  "cancel": "Fagilee",
+  "save": "Fipamọ",
+
+  "addCategoryTitle": "Fi ẹka kun",
+  "unlimitedCategories": "Awọn ẹka ailopin (Premium)",
+
+  "categoryUsage": "{current} / {limit} ẹka ti lo",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Orukọ ẹka",
+  "categoryNameHint": "Tẹ ẹka sii",
+
+  "categoryLimitReached":
+    "A ti de opin Basic. Premium gba awọn ẹka ailopin laaye",
+
+  "categoryLimitInfo":
+    "Basic gba to awọn ẹka {limit}",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Orukọ ẹka jẹ dandan",
+  "categoryErrorTooShort": "Orukọ ẹka kuru ju",
+  "categoryErrorTooLong": "Orukọ ẹka gun ju",
+  "categoryErrorSymbols": "Orukọ ko le jẹ aami nikan",
+  "categoryErrorNumbers": "Orukọ ko le ni awọn nọmba",
+
+  "upgradeRequired": "Igbesoke nilo",
+  "viewPremiumBenefits": "Wo awọn anfani Premium",
+
+  "createCategory": "Ṣẹda",
+
+  "addGroupTitle": "Fi ẹgbẹ kun",
+  "groupNameLabel": "Ẹgbẹ",
+  "groupNameHint": "Tẹ ẹgbẹ sii",
+
+  "groupErrorEmpty": "Orukọ ẹgbẹ jẹ dandan",
+  "groupErrorTooShort": "Orukọ ẹgbẹ kuru ju",
+  "groupErrorTooLong": "Orukọ ẹgbẹ gun ju",
+  "groupErrorSymbols": "Orukọ ẹgbẹ ko le jẹ aami nikan",
+  "groupErrorNumbers": "Orukọ ẹgbẹ ko le ni awọn nọmba",
+
+  "createGroup": "Ṣẹda"
+}

@@ -1,0 +1,106 @@
+{
+  "@@locale": "sw",
+
+  "expiryCalendarTitle": "Kalenda ya mwisho wa matumizi",
+
+  "calendarIntro":
+    "Chagua jinsi ya kuangalia tarehe za mwisho wa matumizi:\n\n• Andika idadi ya siku kuanzia leo.\n• Au chagua tarehe maalum kwenye kalenda.\n\nVaultara inaonyesha vitu vinavyofikia mwisho wa matumizi siku hiyo.",
+
+  "daysFromTodayLabel": "Siku kutoka leo",
+  "daysFromTodayHint": "Mfano 0, 1, 7, 30",
+
+  "apply": "Tumia",
+  "pickDateOnCalendar": "Chagua tarehe kwenye kalenda",
+
+  "today": "Leo",
+  "tomorrow": "Kesho",
+  "in7Days": "Baada ya siku 7",
+  "in30Days": "Baada ya siku 30",
+
+  "inDays": "baada ya siku {days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Idadi ya siku inahitajika",
+  "invalidDaysError": "Weka idadi sahihi ya siku (0 au zaidi)",
+
+  "showingItemsRelative": "Vitu vinavyokwisha {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Vitu vinavyokwisha tarehe iliyochaguliwa",
+  "noItemsOnDate": "Hakuna vitu vinavyokwisha siku hiyo",
+
+  "editorAddTitle": "Ongeza kipengee",
+  "editorEditTitle": "Hariri kipengee",
+
+  "editorCategory": "Kategoria",
+  "editorCategoryHint": "Chagua kategoria",
+
+  "editorGroup": "Kikundi",
+  "editorGroupHint": "Chagua kikundi katika kategoria hii",
+
+  "editorItemName": "Jina la kipengee",
+  "editorItemNameHint": "Ingiza jina la kipengee",
+
+  "editorExpiryDate": "Tarehe ya mwisho",
+  "editorExpiryDateHint": "Chagua tarehe ya mwisho",
+
+  "editorErrorCategory": "Kategoria inahitajika",
+  "editorErrorGroup": "Kikundi kinahitajika",
+  "editorErrorName": "Jina la kipengee linahitajika",
+  "editorErrorExpiry": "Tarehe inahitajika",
+  "editorErrorExpiryPast": "Tarehe lazima iwe leo au baadaye",
+
+  "cancel": "Ghairi",
+  "save": "Hifadhi",
+
+  "addCategoryTitle": "Ongeza kategoria",
+  "unlimitedCategories": "Kategoria zisizo na kikomo (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategoria zilizotumika",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Jina la kategoria",
+  "categoryNameHint": "Ingiza kategoria",
+
+  "categoryLimitReached":
+    "Kikomo cha mpango wa Basic kimefikiwa. Premium huruhusu kategoria zisizo na kikomo",
+
+  "categoryLimitInfo":
+    "Mpango wa Basic huruhusu hadi kategoria {limit}",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Jina la kategoria linahitajika",
+  "categoryErrorTooShort": "Jina la kategoria ni fupi sana",
+  "categoryErrorTooLong": "Jina la kategoria ni refu sana",
+  "categoryErrorSymbols": "Jina haliwezi kuwa alama pekee",
+  "categoryErrorNumbers": "Jina haliwezi kuwa na nambari",
+
+  "upgradeRequired": "Inahitaji kuboreshwa",
+  "viewPremiumBenefits": "Tazama faida za Premium",
+
+  "createCategory": "Unda",
+
+  "addGroupTitle": "Ongeza kikundi",
+
+  "groupNameLabel": "Kikundi",
+  "groupNameHint": "Ingiza kikundi",
+
+  "groupErrorEmpty": "Jina la kikundi linahitajika",
+  "groupErrorTooShort": "Jina la kikundi ni fupi sana",
+  "groupErrorTooLong": "Jina la kikundi ni refu sana",
+  "groupErrorSymbols": "Jina la kikundi haliwezi kuwa alama pekee",
+  "groupErrorNumbers": "Jina la kikundi haliwezi kuwa na nambari",
+
+  "createGroup": "Unda"
+}

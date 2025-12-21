@@ -1,0 +1,106 @@
+{
+  "@@locale": "ne",
+
+  "expiryCalendarTitle": "म्याद समाप्त क्यालेन्डर",
+
+  "calendarIntro":
+    "म्याद हेर्ने तरिका चयन गर्नुहोस्:\n\n• आजदेखि कति दिन हेर्न चाहनुहुन्छ लेख्नुहोस्।\n• वा क्यालेन्डरबाट मिति चयन गर्नुहोस्।\n\nVaultara सो दिन म्याद समाप्त हुने वस्तुहरू देखाउनेछ।",
+
+  "daysFromTodayLabel": "आजदेखि दिन",
+  "daysFromTodayHint": "उदाहरण: 0, 1, 7, 30",
+
+  "apply": "लागू गर्नुहोस्",
+  "pickDateOnCalendar": "क्यालेन्डरबाट मिति छान्नुहोस्",
+
+  "today": "आज",
+  "tomorrow": "भोलि",
+  "in7Days": "७ दिनमा",
+  "in30Days": "३० दिनमा",
+
+  "inDays": "{days} दिनमा",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "दिनहरूको संख्या प्रविष्ट गर्नुहोस्",
+  "invalidDaysError": "मान्य दिन संख्या प्रविष्ट गर्नुहोस् (0 वा बढी)",
+
+  "showingItemsRelative": "{time} म्याद समाप्त हुने वस्तुहरू देखाउँदै",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "चयन गरिएको मितिमा म्याद समाप्त हुने वस्तुहरू देखाउँदै",
+  "noItemsOnDate": "यस मितिमा कुनै वस्तु समाप्त हुँदैन",
+
+  "editorAddTitle": "वस्तु थप्नुहोस्",
+  "editorEditTitle": "वस्तु सम्पादन गर्नुहोस्",
+
+  "editorCategory": "श्रेणी",
+  "editorCategoryHint": "श्रेणी चयन गर्नुहोस्",
+
+  "editorGroup": "समूह",
+  "editorGroupHint": "समूह चयन गर्नुहोस्",
+
+  "editorItemName": "वस्तुको नाम",
+  "editorItemNameHint": "वस्तुको नाम प्रविष्ट गर्नुहोस्",
+
+  "editorExpiryDate": "म्याद समाप्ति मिति",
+  "editorExpiryDateHint": "म्याद समाप्ति मिति चयन गर्नुहोस्",
+
+  "editorErrorCategory": "श्रेणी आवश्यक छ",
+  "editorErrorGroup": "समूह आवश्यक छ",
+  "editorErrorName": "वस्तुको नाम आवश्यक छ",
+  "editorErrorExpiry": "मिति आवश्यक छ",
+  "editorErrorExpiryPast": "मिति आज वा भविष्यको हुनुपर्छ",
+
+  "cancel": "रद्द गर्नुहोस्",
+  "save": "सुरक्षित गर्नुहोस्",
+
+  "addCategoryTitle": "श्रेणी थप्नुहोस्",
+  "unlimitedCategories": "असीमित श्रेणीहरू (Premium)",
+
+  "categoryUsage": "{current} / {limit} श्रेणी प्रयोग गरिएको",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "श्रेणीको नाम",
+  "categoryNameHint": "श्रेणी प्रविष्ट गर्नुहोस्",
+
+  "categoryLimitReached":
+    "Basic योजना सीमा पुगेको छ। Premium ले असीमित श्रेणी दिन्छ",
+
+  "categoryLimitInfo":
+    "Basic योजनाले {limit} श्रेणीसम्म अनुमति दिन्छ",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "श्रेणी नाम आवश्यक छ",
+  "categoryErrorTooShort": "श्रेणी नाम धेरै छोटो छ",
+  "categoryErrorTooLong": "श्रेणी नाम धेरै लामो छ",
+  "categoryErrorSymbols": "श्रेणी नाम केवल चिन्ह हुन सक्दैन",
+  "categoryErrorNumbers": "श्रेणी नाममा अंक हुन सक्दैन",
+
+  "upgradeRequired": "अपग्रेड आवश्यक छ",
+  "viewPremiumBenefits": "Premium फाइदाहरू हेर्नुहोस्",
+
+  "createCategory": "सिर्जना",
+
+  "addGroupTitle": "समूह थप्नुहोस्",
+
+  "groupNameLabel": "समूह",
+  "groupNameHint": "समूह प्रविष्ट गर्नुहोस्",
+
+  "groupErrorEmpty": "समूहको नाम आवश्यक छ",
+  "groupErrorTooShort": "समूहको नाम धेरै छोटो छ",
+  "groupErrorTooLong": "समूहको नाम धेरै लामो छ",
+  "groupErrorSymbols": "समूहको नाम केवल चिन्ह हुन सक्दैन",
+  "groupErrorNumbers": "समूहको नाममा अंक हुन सक्दैन",
+
+  "createGroup": "सिर्जना"
+}
