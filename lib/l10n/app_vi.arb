@@ -1,0 +1,106 @@
+{
+  "@@locale": "vi",
+
+  "expiryCalendarTitle": "Lịch hết hạn",
+
+  "calendarIntro":
+    "Chọn cách xem ngày hết hạn:\n\n• Nhập số ngày kể từ hôm nay.\n• Hoặc chọn ngày cụ thể trên lịch.\n\nVaultara hiển thị các mục hết hạn vào ngày đó.",
+
+  "daysFromTodayLabel": "Số ngày từ hôm nay",
+  "daysFromTodayHint": "Ví dụ 0, 1, 7, 30",
+
+  "apply": "Áp dụng",
+  "pickDateOnCalendar": "Chọn ngày trên lịch",
+
+  "today": "Hôm nay",
+  "tomorrow": "Ngày mai",
+  "in7Days": "Trong 7 ngày",
+  "in30Days": "Trong 30 ngày",
+
+  "inDays": "trong {days} ngày",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Cần nhập số ngày",
+  "invalidDaysError": "Nhập số hợp lệ (0 hoặc lớn hơn)",
+
+  "showingItemsRelative": "Mục hết hạn {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Mục hết hạn vào ngày đã chọn",
+  "noItemsOnDate": "Không có mục nào hết hạn ngày này",
+
+  "editorAddTitle": "Thêm mục",
+  "editorEditTitle": "Chỉnh sửa mục",
+
+  "editorCategory": "Danh mục",
+  "editorCategoryHint": "Chọn danh mục",
+
+  "editorGroup": "Nhóm",
+  "editorGroupHint": "Chọn nhóm trong danh mục",
+
+  "editorItemName": "Tên mục",
+  "editorItemNameHint": "Nhập tên mục",
+
+  "editorExpiryDate": "Ngày hết hạn",
+  "editorExpiryDateHint": "Chọn ngày",
+
+  "editorErrorCategory": "Danh mục bắt buộc",
+  "editorErrorGroup": "Nhóm bắt buộc",
+  "editorErrorName": "Tên mục bắt buộc",
+  "editorErrorExpiry": "Ngày bắt buộc",
+  "editorErrorExpiryPast": "Ngày phải là hôm nay hoặc tương lai",
+
+  "cancel": "Hủy",
+  "save": "Lưu",
+
+  "addCategoryTitle": "Thêm danh mục",
+  "unlimitedCategories": "Danh mục không giới hạn (Premium)",
+
+  "categoryUsage": "{current} / {limit} danh mục đã dùng",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Tên danh mục",
+  "categoryNameHint": "Nhập danh mục",
+
+  "categoryLimitReached":
+    "Đã đạt giới hạn Basic. Premium cho phép danh mục không giới hạn",
+
+  "categoryLimitInfo":
+    "Basic cho phép tối đa {limit} danh mục",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Tên danh mục bắt buộc",
+  "categoryErrorTooShort": "Tên danh mục quá ngắn",
+  "categoryErrorTooLong": "Tên danh mục quá dài",
+  "categoryErrorSymbols": "Tên không thể chỉ gồm ký hiệu",
+  "categoryErrorNumbers": "Tên không thể chứa số",
+
+  "upgradeRequired": "Cần nâng cấp",
+  "viewPremiumBenefits": "Xem quyền lợi Premium",
+
+  "createCategory": "Tạo",
+
+  "addGroupTitle": "Thêm nhóm",
+
+  "groupNameLabel": "Nhóm",
+  "groupNameHint": "Nhập nhóm",
+
+  "groupErrorEmpty": "Tên nhóm bắt buộc",
+  "groupErrorTooShort": "Tên nhóm quá ngắn",
+  "groupErrorTooLong": "Tên nhóm quá dài",
+  "groupErrorSymbols": "Tên nhóm không thể chỉ gồm ký hiệu",
+  "groupErrorNumbers": "Tên nhóm không thể chứa số",
+
+  "createGroup": "Tạo"
+}

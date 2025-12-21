@@ -1,0 +1,106 @@
+{
+  "@@locale": "ur",
+
+  "expiryCalendarTitle": "اختتامی کیلنڈر",
+
+  "calendarIntro":
+    "اختتام دیکھنے کا طریقہ منتخب کریں:\n\n• آج سے دنوں کی تعداد درج کریں۔\n• یا کیلنڈر سے تاریخ منتخب کریں۔\n\nVaultara اس دن ختم ہونے والی اشیاء دکھاتا ہے۔",
+
+  "daysFromTodayLabel": "آج سے دن",
+  "daysFromTodayHint": "مثال 0، 1، 7، 30",
+
+  "apply": "لاگو کریں",
+  "pickDateOnCalendar": "کیلنڈر سے تاریخ منتخب کریں",
+
+  "today": "آج",
+  "tomorrow": "کل",
+  "in7Days": "7 دن بعد",
+  "in30Days": "30 دن بعد",
+
+  "inDays": "{days} دن بعد",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "دنوں کی تعداد ضروری ہے",
+  "invalidDaysError": "درست تعداد درج کریں (0 یا زیادہ)",
+
+  "showingItemsRelative": "{time} ختم ہونے والی اشیاء",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "منتخب تاریخ پر ختم ہونے والی اشیاء",
+  "noItemsOnDate": "اس تاریخ پر کوئی چیز ختم نہیں ہو رہی",
+
+  "editorAddTitle": "آئٹم شامل کریں",
+  "editorEditTitle": "آئٹم میں ترمیم کریں",
+
+  "editorCategory": "زمرہ",
+  "editorCategoryHint": "زمرہ منتخب کریں",
+
+  "editorGroup": "گروپ",
+  "editorGroupHint": "اس زمرے میں گروپ منتخب کریں",
+
+  "editorItemName": "آئٹم کا نام",
+  "editorItemNameHint": "آئٹم کا نام درج کریں",
+
+  "editorExpiryDate": "اختتامی تاریخ",
+  "editorExpiryDateHint": "تاریخ منتخب کریں",
+
+  "editorErrorCategory": "زمرہ ضروری ہے",
+  "editorErrorGroup": "گروپ ضروری ہے",
+  "editorErrorName": "آئٹم کا نام ضروری ہے",
+  "editorErrorExpiry": "تاریخ ضروری ہے",
+  "editorErrorExpiryPast": "تاریخ آج یا مستقبل کی ہونی چاہیے",
+
+  "cancel": "منسوخ",
+  "save": "محفوظ کریں",
+
+  "addCategoryTitle": "زمرہ شامل کریں",
+  "unlimitedCategories": "لامحدود زمرے (Premium)",
+
+  "categoryUsage": "{current} / {limit} زمرے استعمال ہو چکے",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "زمرے کا نام",
+  "categoryNameHint": "زمرہ درج کریں",
+
+  "categoryLimitReached":
+    "Basic منصوبے کی حد مکمل ہو چکی ہے۔ Premium لامحدود زمرے دیتا ہے",
+
+  "categoryLimitInfo":
+    "Basic منصوبہ زیادہ سے زیادہ {limit} زمرے دیتا ہے",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "زمرے کا نام ضروری ہے",
+  "categoryErrorTooShort": "زمرے کا نام بہت چھوٹا ہے",
+  "categoryErrorTooLong": "زمرے کا نام بہت لمبا ہے",
+  "categoryErrorSymbols": "نام صرف علامتوں پر مشتمل نہیں ہو سکتا",
+  "categoryErrorNumbers": "نام میں اعداد شامل نہیں ہو سکتے",
+
+  "upgradeRequired": "اپ گریڈ ضروری ہے",
+  "viewPremiumBenefits": "Premium فوائد دیکھیں",
+
+  "createCategory": "بنائیں",
+
+  "addGroupTitle": "گروپ شامل کریں",
+
+  "groupNameLabel": "گروپ",
+  "groupNameHint": "گروپ درج کریں",
+
+  "groupErrorEmpty": "گروپ کا نام ضروری ہے",
+  "groupErrorTooShort": "گروپ کا نام بہت چھوٹا ہے",
+  "groupErrorTooLong": "گروپ کا نام بہت لمبا ہے",
+  "groupErrorSymbols": "نام صرف علامتوں پر مشتمل نہیں ہو سکتا",
+  "groupErrorNumbers": "نام میں اعداد شامل نہیں ہو سکتے",
+
+  "createGroup": "بنائیں"
+}

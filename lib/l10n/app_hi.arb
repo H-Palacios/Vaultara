@@ -1,0 +1,101 @@
+{
+  "@@locale": "hi",
+
+  "expiryCalendarTitle": "समाप्ति कैलेंडर",
+
+  "calendarIntro":
+    "समाप्ति देखने का तरीका चुनें:\n\n• आज से दिनों की संख्या लिखें।\n• या कोई तारीख चुनें।\n\nVaultara उस दिन समाप्त होने वाले आइटम दिखाएगा।",
+
+  "daysFromTodayLabel": "आज से दिन",
+  "daysFromTodayHint": "उदाहरण: 0, 1, 7, 30",
+
+  "apply": "लागू करें",
+  "pickDateOnCalendar": "कैलेंडर से तारीख चुनें",
+
+  "today": "आज",
+  "tomorrow": "कल",
+  "in7Days": "7 दिनों में",
+  "in30Days": "30 दिनों में",
+
+  "inDays": "{days} दिनों में",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "दिनों की संख्या दर्ज करें।",
+  "invalidDaysError": "मान्य संख्या दर्ज करें (0 या अधिक)।",
+
+  "showingItemsRelative": "{time} समाप्त होने वाले आइटम",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "चयनित तारीख पर समाप्त होने वाले आइटम",
+  "noItemsOnDate": "इस तारीख पर कोई आइटम समाप्त नहीं हो रहा है।",
+
+  "editorAddTitle": "आइटम जोड़ें",
+  "editorEditTitle": "आइटम संपादित करें",
+
+  "editorCategory": "श्रेणी",
+  "editorCategoryHint": "श्रेणी चुनें",
+
+  "editorGroup": "समूह",
+  "editorGroupHint": "समूह चुनें",
+
+  "editorItemName": "आइटम का नाम",
+  "editorItemNameHint": "आइटम का नाम दर्ज करें",
+
+  "editorExpiryDate": "समाप्ति तिथि",
+  "editorExpiryDateHint": "समाप्ति तिथि चुनें",
+
+  "editorErrorCategory": "श्रेणी चुनें",
+  "editorErrorGroup": "समूह चुनें",
+  "editorErrorName": "आइटम का नाम आवश्यक है",
+  "editorErrorExpiry": "समाप्ति तिथि चुनें",
+  "editorErrorExpiryPast": "समाप्ति तिथि आज या भविष्य की होनी चाहिए",
+
+  "cancel": "रद्द करें",
+  "save": "सहेजें",
+
+  "addCategoryTitle": "श्रेणी जोड़ें",
+  "unlimitedCategories": "असीमित श्रेणियाँ (प्रीमियम)",
+
+  "categoryUsage": "{current} / {limit} श्रेणियाँ उपयोग की गई",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "श्रेणी का नाम",
+  "categoryNameHint": "श्रेणी दर्ज करें",
+
+  "categoryLimitReached":
+    "बेसिक योजना की सीमा पूरी हो चुकी है। प्रीमियम पर जाएँ।",
+
+  "categoryLimitInfo":
+    "बेसिक योजना में अधिकतम {limit} कस्टम श्रेणियाँ बनाई जा सकती हैं।",
+
+  "categoryErrorEmpty": "श्रेणी का नाम आवश्यक है",
+  "categoryErrorTooShort": "श्रेणी का नाम बहुत छोटा है",
+  "categoryErrorTooLong": "श्रेणी का नाम बहुत लंबा है",
+  "categoryErrorSymbols": "श्रेणी नाम में प्रतीक नहीं हो सकते",
+  "categoryErrorNumbers": "श्रेणी नाम में संख्या नहीं हो सकती",
+
+  "upgradeRequired": "अपग्रेड आवश्यक",
+  "viewPremiumBenefits": "प्रीमियम लाभ देखें",
+  "createCategory": "बनाएँ",
+
+  "addGroupTitle": "समूह जोड़ें",
+  "groupNameLabel": "समूह",
+  "groupNameHint": "समूह दर्ज करें",
+
+  "groupErrorEmpty": "समूह का नाम आवश्यक है",
+  "groupErrorTooShort": "समूह का नाम बहुत छोटा है",
+  "groupErrorTooLong": "समूह का नाम बहुत लंबा है",
+  "groupErrorSymbols": "समूह नाम में प्रतीक नहीं हो सकते",
+  "groupErrorNumbers": "समूह नाम में संख्या नहीं हो सकती",
+
+  "createGroup": "बनाएँ"
+}

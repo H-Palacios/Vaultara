@@ -1,0 +1,101 @@
+{
+  "@@locale": "pt",
+
+  "expiryCalendarTitle": "Calendário de expiração",
+
+  "calendarIntro":
+    "Escolha como deseja explorar suas expirações:\n\n• Digite quantos dias a partir de hoje deseja visualizar.\n• Ou selecione uma data específica no calendário.\n\nO Vaultara mostrará quais itens atingem a data de expiração nesse dia.",
+
+  "daysFromTodayLabel": "Dias a partir de hoje",
+  "daysFromTodayHint": "Por exemplo 0, 1, 7, 30",
+
+  "apply": "Aplicar",
+  "pickDateOnCalendar": "Selecionar uma data no calendário",
+
+  "today": "Hoje",
+  "tomorrow": "Amanhã",
+  "in7Days": "Em 7 dias",
+  "in30Days": "Em 30 dias",
+
+  "inDays": "em {days} dias",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Insira um número de dias.",
+  "invalidDaysError": "Insira um número válido de dias (0 ou maior).",
+
+  "showingItemsRelative": "Mostrando itens que expiram {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Mostrando itens que expiram na data selecionada",
+  "noItemsOnDate": "Nenhum item expira nessa data.",
+
+  "editorAddTitle": "Adicionar item",
+  "editorEditTitle": "Editar item",
+
+  "editorCategory": "Categoria",
+  "editorCategoryHint": "Selecionar uma categoria",
+
+  "editorGroup": "Grupo",
+  "editorGroupHint": "Selecionar um grupo",
+
+  "editorItemName": "Nome do item",
+  "editorItemNameHint": "Inserir nome do item",
+
+  "editorExpiryDate": "Data de expiração",
+  "editorExpiryDateHint": "Selecionar data de expiração",
+
+  "editorErrorCategory": "Selecione uma categoria",
+  "editorErrorGroup": "Selecione um grupo",
+  "editorErrorName": "O nome do item é obrigatório",
+  "editorErrorExpiry": "Selecione uma data de expiração",
+  "editorErrorExpiryPast": "A data deve ser hoje ou futura",
+
+  "cancel": "Cancelar",
+  "save": "Salvar",
+
+  "addCategoryTitle": "Adicionar categoria",
+  "unlimitedCategories": "Categorias ilimitadas (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorias usadas",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nome da categoria",
+  "categoryNameHint": "Inserir categoria",
+
+  "categoryLimitReached":
+    "O limite do plano Básico foi atingido. Atualize para Premium para criar categorias ilimitadas.",
+
+  "categoryLimitInfo":
+    "No plano Básico é possível criar até {limit} categorias personalizadas.",
+
+  "categoryErrorEmpty": "O nome da categoria é obrigatório",
+  "categoryErrorTooShort": "O nome da categoria é muito curto",
+  "categoryErrorTooLong": "O nome da categoria é muito longo",
+  "categoryErrorSymbols": "O nome da categoria não pode conter símbolos",
+  "categoryErrorNumbers": "O nome da categoria não pode conter números",
+
+  "upgradeRequired": "Atualização necessária",
+  "viewPremiumBenefits": "Ver benefícios Premium",
+  "createCategory": "Criar",
+
+  "addGroupTitle": "Adicionar grupo",
+  "groupNameLabel": "Grupo",
+  "groupNameHint": "Inserir grupo",
+
+  "groupErrorEmpty": "O nome do grupo é obrigatório",
+  "groupErrorTooShort": "O nome do grupo é muito curto",
+  "groupErrorTooLong": "O nome do grupo é muito longo",
+  "groupErrorSymbols": "O nome do grupo não pode conter símbolos",
+  "groupErrorNumbers": "O nome do grupo não pode conter números",
+
+  "createGroup": "Criar"
+}

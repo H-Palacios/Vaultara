@@ -1,0 +1,106 @@
+{
+  "@@locale": "sq",
+
+  "expiryCalendarTitle": "Kalendari i skadimit",
+
+  "calendarIntro":
+    "Zgjidhni mënyrën e shikimit të skadimeve:\n\n• Vendosni numrin e ditëve nga sot.\n• Ose zgjidhni një datë specifike në kalendar.\n\nVaultara shfaq artikujt që skadojnë atë ditë.",
+
+  "daysFromTodayLabel": "Ditë nga sot",
+  "daysFromTodayHint": "Shembull 0, 1, 7, 30",
+
+  "apply": "Apliko",
+  "pickDateOnCalendar": "Zgjidh datën në kalendar",
+
+  "today": "Sot",
+  "tomorrow": "Nesër",
+  "in7Days": "Pas 7 ditësh",
+  "in30Days": "Pas 30 ditësh",
+
+  "inDays": "pas {days} ditësh",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Numri i ditëve është i detyrueshëm",
+  "invalidDaysError": "Numër i vlefshëm kërkohet (0 ose më shumë)",
+
+  "showingItemsRelative": "Artikuj që skadojnë {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Artikuj që skadojnë në datën e zgjedhur",
+  "noItemsOnDate": "Nuk ka artikuj që skadojnë atë ditë",
+
+  "editorAddTitle": "Shto artikull",
+  "editorEditTitle": "Redakto artikull",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Zgjidh kategori",
+
+  "editorGroup": "Grup",
+  "editorGroupHint": "Zgjidh grup në këtë kategori",
+
+  "editorItemName": "Emri i artikullit",
+  "editorItemNameHint": "Vendos emrin e artikullit",
+
+  "editorExpiryDate": "Data e skadimit",
+  "editorExpiryDateHint": "Zgjidh datën e skadimit",
+
+  "editorErrorCategory": "Kategoria është e detyrueshme",
+  "editorErrorGroup": "Grupi është i detyrueshëm",
+  "editorErrorName": "Emri i artikullit është i detyrueshëm",
+  "editorErrorExpiry": "Data e skadimit është e detyrueshme",
+  "editorErrorExpiryPast": "Data duhet të jetë sot ose në të ardhmen",
+
+  "cancel": "Anulo",
+  "save": "Ruaj",
+
+  "addCategoryTitle": "Shto kategori",
+  "unlimitedCategories": "Kategori të pakufizuara (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategori të përdorura",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Emri i kategorisë",
+  "categoryNameHint": "Vendos kategori",
+
+  "categoryLimitReached":
+    "Kufiri i planit Basic është arritur. Premium lejon kategori të pakufizuara",
+
+  "categoryLimitInfo":
+    "Plani Basic lejon deri në {limit} kategori",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Emri i kategorisë është i detyrueshëm",
+  "categoryErrorTooShort": "Emri i kategorisë është shumë i shkurtër",
+  "categoryErrorTooLong": "Emri i kategorisë është shumë i gjatë",
+  "categoryErrorSymbols": "Emri nuk mund të ketë vetëm simbole",
+  "categoryErrorNumbers": "Emri nuk mund të përmbajë numra",
+
+  "upgradeRequired": "Nevojitet përmirësim",
+  "viewPremiumBenefits": "Shiko përfitimet Premium",
+
+  "createCategory": "Krijo",
+
+  "addGroupTitle": "Shto grup",
+
+  "groupNameLabel": "Grup",
+  "groupNameHint": "Vendos grup",
+
+  "groupErrorEmpty": "Emri i grupit është i detyrueshëm",
+  "groupErrorTooShort": "Emri i grupit është shumë i shkurtër",
+  "groupErrorTooLong": "Emri i grupit është shumë i gjatë",
+  "groupErrorSymbols": "Emri i grupit nuk mund të ketë vetëm simbole",
+  "groupErrorNumbers": "Emri i grupit nuk mund të përmbajë numra",
+
+  "createGroup": "Krijo"
+}

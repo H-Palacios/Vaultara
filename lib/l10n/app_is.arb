@@ -1,0 +1,105 @@
+{
+  "@@locale": "is",
+
+  "expiryCalendarTitle": "Gildistímadagatal",
+
+  "calendarIntro":
+    "Veldu hvernig þú vilt skoða gildistíma:\n\n• Sláðu inn fjölda daga frá deginum í dag.\n• Eða veldu ákveðna dagsetningu í dagatalinu.\n\nVaultara sýnir atriði sem renna út þann dag.",
+
+  "daysFromTodayLabel": "Dagar frá deginum í dag",
+  "daysFromTodayHint": "Til dæmis 0, 1, 7, 30",
+
+  "apply": "Virkja",
+  "pickDateOnCalendar": "Velja dagsetningu í dagatalinu",
+
+  "today": "Í dag",
+  "tomorrow": "Á morgun",
+  "in7Days": "Eftir 7 daga",
+  "in30Days": "Eftir 30 daga",
+
+  "inDays": "eftir {days} daga",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Sláðu inn fjölda daga",
+  "invalidDaysError": "Sláðu inn giltan fjölda daga (0 eða fleiri)",
+
+  "showingItemsRelative": "Sýnir atriði sem renna út {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Sýnir atriði sem renna út á völdum degi",
+  "noItemsOnDate": "Engin atriði renna út á þessum degi",
+
+  "editorAddTitle": "Bæta við atriði",
+  "editorEditTitle": "Breyta atriði",
+
+  "editorCategory": "Flokkur",
+  "editorCategoryHint": "Veldu flokk",
+
+  "editorGroup": "Hópur",
+  "editorGroupHint": "Veldu hóp",
+
+  "editorItemName": "Heiti atriðis",
+  "editorItemNameHint": "Sláðu inn heiti atriðis",
+
+  "editorExpiryDate": "Gildistími",
+  "editorExpiryDateHint": "Veldu gildistímadag",
+
+  "editorErrorCategory": "Flokkur er nauðsynlegur",
+  "editorErrorGroup": "Hópur er nauðsynlegur",
+  "editorErrorName": "Heiti atriðis er nauðsynlegt",
+  "editorErrorExpiry": "Gildistími er nauðsynlegur",
+  "editorErrorExpiryPast": "Dagsetning verður að vera í dag eða síðar",
+
+  "cancel": "Hætta við",
+  "save": "Vista",
+
+  "addCategoryTitle": "Bæta við flokki",
+  "unlimitedCategories": "Ótakmarkaðir flokkar (Premium)",
+
+  "categoryUsage": "{current} / {limit} flokkar notaðir",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Heiti flokks",
+  "categoryNameHint": "Sláðu inn flokk",
+
+  "categoryLimitReached":
+    "Takmörk Basic hafa náðst. Premium býður ótakmarkaða flokka",
+
+  "categoryLimitInfo":
+    "Basic leyfir allt að {limit} flokka",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Heiti flokks er nauðsynlegt",
+  "categoryErrorTooShort": "Heiti flokks er of stutt",
+  "categoryErrorTooLong": "Heiti flokks er of langt",
+  "categoryErrorSymbols": "Heiti flokks má ekki vera aðeins tákn",
+  "categoryErrorNumbers": "Heiti flokks má ekki innihalda tölur",
+
+  "upgradeRequired": "Uppfærsla nauðsynleg",
+  "viewPremiumBenefits": "Skoða Premium kosti",
+  "createCategory": "Búa til",
+
+  "addGroupTitle": "Bæta við hópi",
+
+  "groupNameLabel": "Hópur",
+  "groupNameHint": "Sláðu inn hóp",
+
+  "groupErrorEmpty": "Heiti hóps er nauðsynlegt",
+  "groupErrorTooShort": "Heiti hóps er of stutt",
+  "groupErrorTooLong": "Heiti hóps er of langt",
+  "groupErrorSymbols": "Heiti hóps má ekki vera aðeins tákn",
+  "groupErrorNumbers": "Heiti hóps má ekki innihalda tölur",
+
+  "createGroup": "Búa til"
+}

@@ -1,0 +1,107 @@
+{
+  "@@locale": "ga",
+
+  "expiryCalendarTitle": "Féilire éaga",
+
+  "calendarIntro":
+    "Roghnaigh conas is mian leat dátaí éaga a fheiceáil:\n\n• Iontráil líon na laethanta ó inniu.\n• Nó roghnaigh dáta ar an bhféilire.\n\nTaispeánfaidh Vaultara míreanna a rachaidh in éag ar an lá sin.",
+
+  "daysFromTodayLabel": "Laethanta ó inniu",
+  "daysFromTodayHint": "Mar shampla 0, 1, 7, 30",
+
+  "apply": "Cuir i bhfeidhm",
+  "pickDateOnCalendar": "Roghnaigh dáta ar an bhféilire",
+
+  "today": "Inniu",
+  "tomorrow": "Amárach",
+  "in7Days": "I gceann 7 lá",
+  "in30Days": "I gceann 30 lá",
+
+  "inDays": "i gceann {days} lá",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Iontráil líon laethanta",
+  "invalidDaysError": "Iontráil uimhir bhailí (0 nó níos mó)",
+
+  "showingItemsRelative": "Míreanna a rachaidh in éag {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Míreanna a rachaidh in éag ar an dáta roghnaithe",
+  "noItemsOnDate": "Níl aon mhíreanna ag dul in éag ar an dáta seo",
+
+  "editorAddTitle": "Cuir mír leis",
+  "editorEditTitle": "Cuir mír in eagar",
+
+  "editorCategory": "Catagóir",
+  "editorCategoryHint": "Roghnaigh catagóir",
+
+  "editorGroup": "Grúpa",
+  "editorGroupHint": "Roghnaigh grúpa",
+
+  "editorItemName": "Ainm na míre",
+  "editorItemNameHint": "Iontráil ainm na míre",
+
+  "editorExpiryDate": "Dáta éaga",
+  "editorExpiryDateHint": "Roghnaigh dáta éaga",
+
+  "editorErrorCategory": "Tá catagóir riachtanach",
+  "editorErrorGroup": "Tá grúpa riachtanach",
+  "editorErrorName": "Tá ainm riachtanach",
+  "editorErrorExpiry": "Tá dáta riachtanach",
+  "editorErrorExpiryPast": "Caithfidh an dáta a bheith inniu nó sa todhchaí",
+
+  "cancel": "Cealaigh",
+  "save": "Sábháil",
+
+  "addCategoryTitle": "Cuir catagóir leis",
+  "unlimitedCategories": "Catagóirí gan teorainn (Premium)",
+
+  "categoryUsage": "{current} / {limit} catagóir in úsáid",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Ainm na catagóire",
+  "categoryNameHint": "Iontráil catagóir",
+
+  "categoryLimitReached":
+    "Tá teorainn {limit} catagóire an phlean Basic bainte amach agat. Uasghrádaigh go Premium.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Ceadaíonn an plean Basic suas le {limit} catagóir saincheaptha.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Tá ainm catagóire riachtanach",
+  "categoryErrorTooShort": "Tá an t-ainm ró-ghearr",
+  "categoryErrorTooLong": "Tá an t-ainm ró-fhada",
+  "categoryErrorSymbols": "Ní cheadaítear siombailí",
+  "categoryErrorNumbers": "Ní cheadaítear uimhreacha",
+
+  "upgradeRequired": "Teastaíonn uasghrádú",
+  "viewPremiumBenefits": "Féach buntáistí Premium",
+  "createCategory": "Cruthaigh",
+
+  "addGroupTitle": "Cuir grúpa leis",
+  "groupNameLabel": "Grúpa",
+  "groupNameHint": "Iontráil grúpa",
+
+  "groupErrorEmpty": "Tá ainm grúpa riachtanach",
+  "groupErrorTooShort": "Tá an t-ainm ró-ghearr",
+  "groupErrorTooLong": "Tá an t-ainm ró-fhada",
+  "groupErrorSymbols": "Ní cheadaítear siombailí",
+  "groupErrorNumbers": "Ní cheadaítear uimhreacha",
+
+  "createGroup": "Cruthaigh"
+}

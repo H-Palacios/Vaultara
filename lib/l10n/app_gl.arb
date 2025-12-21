@@ -1,0 +1,107 @@
+{
+  "@@locale": "gl",
+
+  "expiryCalendarTitle": "Calendario de caducidade",
+
+  "calendarIntro":
+    "Escolle como queres consultar as caducidades:\n\n• Introduce cantos días desde hoxe queres ver.\n• Ou selecciona unha data concreta no calendario.\n\nVaultara mostrará os elementos que caducan ese día.",
+
+  "daysFromTodayLabel": "Días desde hoxe",
+  "daysFromTodayHint": "Por exemplo 0, 1, 7, 30",
+
+  "apply": "Aplicar",
+  "pickDateOnCalendar": "Seleccionar data no calendario",
+
+  "today": "Hoxe",
+  "tomorrow": "Mañá",
+  "in7Days": "En 7 días",
+  "in30Days": "En 30 días",
+
+  "inDays": "en {days} días",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Introduce un número de días",
+  "invalidDaysError": "Introduce un número válido (0 ou máis)",
+
+  "showingItemsRelative": "Mostrando elementos que caducan {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Mostrando elementos que caducan na data seleccionada",
+  "noItemsOnDate": "Non hai elementos que caduquen nesta data",
+
+  "editorAddTitle": "Engadir elemento",
+  "editorEditTitle": "Editar elemento",
+
+  "editorCategory": "Categoría",
+  "editorCategoryHint": "Selecciona unha categoría",
+
+  "editorGroup": "Grupo",
+  "editorGroupHint": "Selecciona un grupo",
+
+  "editorItemName": "Nome do elemento",
+  "editorItemNameHint": "Introduce o nome do elemento",
+
+  "editorExpiryDate": "Data de caducidade",
+  "editorExpiryDateHint": "Selecciona a data de caducidade",
+
+  "editorErrorCategory": "A categoría é obrigatoria",
+  "editorErrorGroup": "O grupo é obrigatorio",
+  "editorErrorName": "O nome é obrigatorio",
+  "editorErrorExpiry": "A data é obrigatoria",
+  "editorErrorExpiryPast": "A data debe ser hoxe ou futura",
+
+  "cancel": "Cancelar",
+  "save": "Gardar",
+
+  "addCategoryTitle": "Engadir categoría",
+  "unlimitedCategories": "Categorías ilimitadas (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorías usadas",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nome da categoría",
+  "categoryNameHint": "Introduce categoría",
+
+  "categoryLimitReached":
+    "Acadaches o límite de {limit} categorías do plan Basic. Actualiza a Premium para crear categorías ilimitadas.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "O plan Basic permite crear ata {limit} categorías personalizadas.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "O nome da categoría é obrigatorio",
+  "categoryErrorTooShort": "O nome é demasiado curto",
+  "categoryErrorTooLong": "O nome é demasiado longo",
+  "categoryErrorSymbols": "O nome non pode conter símbolos",
+  "categoryErrorNumbers": "O nome non pode conter números",
+
+  "upgradeRequired": "É necesaria unha actualización",
+  "viewPremiumBenefits": "Ver vantaxes Premium",
+  "createCategory": "Crear",
+
+  "addGroupTitle": "Engadir grupo",
+  "groupNameLabel": "Grupo",
+  "groupNameHint": "Introduce grupo",
+
+  "groupErrorEmpty": "O nome do grupo é obrigatorio",
+  "groupErrorTooShort": "O nome é demasiado curto",
+  "groupErrorTooLong": "O nome é demasiado longo",
+  "groupErrorSymbols": "O nome non pode conter símbolos",
+  "groupErrorNumbers": "O nome non pode conter números",
+
+  "createGroup": "Crear"
+}

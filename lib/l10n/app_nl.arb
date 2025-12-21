@@ -1,0 +1,106 @@
+{
+  "@@locale": "nl",
+
+  "expiryCalendarTitle": "Vervalkalender",
+
+  "calendarIntro":
+    "Kies hoe vervaldatums worden bekeken:\n\n• Voer het aantal dagen vanaf vandaag in.\n• Of kies een specifieke datum in de kalender.\n\nVaultara toont items die op die dag vervallen.",
+
+  "daysFromTodayLabel": "Dagen vanaf vandaag",
+  "daysFromTodayHint": "Bijvoorbeeld 0, 1, 7, 30",
+
+  "apply": "Toepassen",
+  "pickDateOnCalendar": "Datum in de kalender kiezen",
+
+  "today": "Vandaag",
+  "tomorrow": "Morgen",
+  "in7Days": "Over 7 dagen",
+  "in30Days": "Over 30 dagen",
+
+  "inDays": "over {days} dagen",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Voer een aantal dagen in",
+  "invalidDaysError": "Voer een geldig aantal dagen in (0 of meer)",
+
+  "showingItemsRelative": "Items die {time} vervallen worden weergegeven",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Items die op de geselecteerde datum vervallen worden weergegeven",
+  "noItemsOnDate": "Er vervallen geen items op die dag",
+
+  "editorAddTitle": "Item toevoegen",
+  "editorEditTitle": "Item bewerken",
+
+  "editorCategory": "Categorie",
+  "editorCategoryHint": "Selecteer een categorie",
+
+  "editorGroup": "Groep",
+  "editorGroupHint": "Selecteer een groep",
+
+  "editorItemName": "Itemnaam",
+  "editorItemNameHint": "Voer de itemnaam in",
+
+  "editorExpiryDate": "Vervaldatum",
+  "editorExpiryDateHint": "Selecteer de vervaldatum",
+
+  "editorErrorCategory": "Categorie is verplicht",
+  "editorErrorGroup": "Groep is verplicht",
+  "editorErrorName": "Itemnaam is verplicht",
+  "editorErrorExpiry": "Vervaldatum is verplicht",
+  "editorErrorExpiryPast": "De datum moet vandaag of later zijn",
+
+  "cancel": "Annuleren",
+  "save": "Opslaan",
+
+  "addCategoryTitle": "Categorie toevoegen",
+  "unlimitedCategories": "Onbeperkte categorieën (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorieën gebruikt",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Categorienaam",
+  "categoryNameHint": "Categorie invoeren",
+
+  "categoryLimitReached":
+    "De limiet van het Basic-plan is bereikt. Premium biedt onbeperkte categorieën",
+
+  "categoryLimitInfo":
+    "Het Basic-plan staat maximaal {limit} categorieën toe",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Categorienaam is verplicht",
+  "categoryErrorTooShort": "Categorienaam is te kort",
+  "categoryErrorTooLong": "Categorienaam is te lang",
+  "categoryErrorSymbols": "Categorienaam mag niet alleen symbolen bevatten",
+  "categoryErrorNumbers": "Categorienaam mag geen cijfers bevatten",
+
+  "upgradeRequired": "Upgrade vereist",
+  "viewPremiumBenefits": "Premium-voordelen bekijken",
+
+  "createCategory": "Aanmaken",
+
+  "addGroupTitle": "Groep toevoegen",
+
+  "groupNameLabel": "Groep",
+  "groupNameHint": "Groep invoeren",
+
+  "groupErrorEmpty": "Groepsnaam is verplicht",
+  "groupErrorTooShort": "Groepsnaam is te kort",
+  "groupErrorTooLong": "Groepsnaam is te lang",
+  "groupErrorSymbols": "Groepsnaam mag niet alleen symbolen bevatten",
+  "groupErrorNumbers": "Groepsnaam mag geen cijfers bevatten",
+
+  "createGroup": "Aanmaken"
+}

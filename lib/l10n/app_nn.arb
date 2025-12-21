@@ -1,0 +1,106 @@
+{
+  "@@locale": "nn",
+
+  "expiryCalendarTitle": "Utløpskalender",
+
+  "calendarIntro":
+    "Vel korleis du vil sjå utløp:\n\n• Skriv inn tal på dagar frå i dag.\n• Eller vel ein bestemt dato i kalenderen.\n\nVaultara viser element som går ut denne dagen.",
+
+  "daysFromTodayLabel": "Dagar frå i dag",
+  "daysFromTodayHint": "Til dømes 0, 1, 7, 30",
+
+  "apply": "Bruk",
+  "pickDateOnCalendar": "Vel dato i kalenderen",
+
+  "today": "I dag",
+  "tomorrow": "I morgon",
+  "in7Days": "Om 7 dagar",
+  "in30Days": "Om 30 dagar",
+
+  "inDays": "om {days} dagar",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Tal på dagar må fyllast inn",
+  "invalidDaysError": "Gyldig tal på dagar krevst (0 eller meir)",
+
+  "showingItemsRelative": "Viser element som går ut {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Viser element som går ut på vald dato",
+  "noItemsOnDate": "Ingen element går ut denne dagen",
+
+  "editorAddTitle": "Legg til element",
+  "editorEditTitle": "Rediger element",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Vel kategori",
+
+  "editorGroup": "Gruppe",
+  "editorGroupHint": "Vel gruppe i denne kategorien",
+
+  "editorItemName": "Elementnamn",
+  "editorItemNameHint": "Skriv inn elementnamn",
+
+  "editorExpiryDate": "Utløpsdato",
+  "editorExpiryDateHint": "Vel utløpsdato",
+
+  "editorErrorCategory": "Kategori er påkravd",
+  "editorErrorGroup": "Gruppe er påkravd",
+  "editorErrorName": "Elementnamn er påkravd",
+  "editorErrorExpiry": "Utløpsdato er påkravd",
+  "editorErrorExpiryPast": "Datoen må vere i dag eller seinare",
+
+  "cancel": "Avbryt",
+  "save": "Lagre",
+
+  "addCategoryTitle": "Legg til kategori",
+  "unlimitedCategories": "Uavgrensa kategoriar (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategoriar brukt",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategorinamn",
+  "categoryNameHint": "Skriv inn kategori",
+
+  "categoryLimitReached":
+    "Grensa for Basic-planen er nådd. Premium gir uavgrensa kategoriar",
+
+  "categoryLimitInfo":
+    "Basic-planen tillèt opptil {limit} kategoriar",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategorinamn er påkravd",
+  "categoryErrorTooShort": "Kategorinamn er for kort",
+  "categoryErrorTooLong": "Kategorinamn er for langt",
+  "categoryErrorSymbols": "Kategorinamn kan ikkje berre vere symbol",
+  "categoryErrorNumbers": "Kategorinamn kan ikkje innehalde tal",
+
+  "upgradeRequired": "Oppgradering krevst",
+  "viewPremiumBenefits": "Sjå Premium-fordelar",
+
+  "createCategory": "Opprett",
+
+  "addGroupTitle": "Legg til gruppe",
+
+  "groupNameLabel": "Gruppe",
+  "groupNameHint": "Skriv inn gruppe",
+
+  "groupErrorEmpty": "Gruppenamn er påkravd",
+  "groupErrorTooShort": "Gruppenamn er for kort",
+  "groupErrorTooLong": "Gruppenamn er for langt",
+  "groupErrorSymbols": "Gruppenamn kan ikkje berre vere symbol",
+  "groupErrorNumbers": "Gruppenamn kan ikkje innehalde tal",
+
+  "createGroup": "Opprett"
+}

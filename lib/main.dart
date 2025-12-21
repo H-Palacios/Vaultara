@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'firebase_options.dart';
 import 'auth_gateway_screen.dart';
@@ -40,9 +41,29 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.teal,
-        brightness: Brightness.light,
+
+        // 🔒 LOCKED brand colour (no Material tonal generation)
+        colorScheme: const ColorScheme(
+          brightness: Brightness.light,
+
+          primary: Color(0xFF00897B),
+          onPrimary: Colors.white,
+
+          secondary: Color(0xFF00897B),
+          onSecondary: Colors.white,
+
+          surface: Colors.white,
+          onSurface: Colors.black,
+
+          background: Colors.white,
+          onBackground: Colors.black,
+
+          error: Colors.red,
+          onError: Colors.white,
+        ),
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const AuthGatewayScreen(),
       routes: {
         '/shell': (_) => const Shell(),
@@ -227,6 +248,7 @@ class _ShellState extends State<Shell> {
     );
   }
 }
+
 class _NavItem extends StatelessWidget {
   final String label;
   final String imagePath;

@@ -1,0 +1,109 @@
+{
+  "@@locale": "ca",
+
+  "expiryCalendarTitle": "Calendari de caducitat",
+
+  "calendarIntro":
+    "Tria com vols consultar les caducitats:\n\n• Escriu quants dies a partir d’avui vols consultar.\n• O selecciona una data concreta al calendari.\n\nVaultara mostrarà els elements que caduquen aquell dia.",
+
+  "daysFromTodayLabel": "Dies des d’avui",
+  "daysFromTodayHint": "Per exemple 0, 1, 7, 30",
+
+  "apply": "Aplicar",
+  "pickDateOnCalendar": "Selecciona una data al calendari",
+
+  "today": "Avui",
+  "tomorrow": "Demà",
+  "in7Days": "D’aquí a 7 dies",
+  "in30Days": "D’aquí a 30 dies",
+
+  "inDays": "d’aquí a {days} dies",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Introdueix un nombre de dies",
+  "invalidDaysError": "Introdueix un nombre vàlid (0 o superior)",
+
+  "showingItemsRelative": "Mostrant elements que caduquen {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Mostrant elements que caduquen a la data seleccionada",
+  "noItemsOnDate": "No hi ha elements que caduquin en aquesta data",
+
+  "editorAddTitle": "Afegir element",
+  "editorEditTitle": "Editar element",
+
+  "editorCategory": "Categoria",
+  "editorCategoryHint": "Selecciona una categoria",
+
+  "editorGroup": "Grup",
+  "editorGroupHint": "Selecciona un grup",
+
+  "editorItemName": "Nom de l’element",
+  "editorItemNameHint": "Introdueix el nom",
+
+  "editorExpiryDate": "Data de caducitat",
+  "editorExpiryDateHint": "Selecciona la data",
+
+  "editorErrorCategory": "La categoria és obligatòria",
+  "editorErrorGroup": "El grup és obligatori",
+  "editorErrorName": "El nom és obligatori",
+  "editorErrorExpiry": "La data és obligatòria",
+  "editorErrorExpiryPast": "La data ha de ser avui o futura",
+
+  "cancel": "Cancel·lar",
+  "save": "Desar",
+
+  "addCategoryTitle": "Afegir categoria",
+  "unlimitedCategories": "Categories il·limitades (Premium)",
+
+  "categoryUsage": "{current} / {limit} categories utilitzades",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nom de la categoria",
+  "categoryNameHint": "Introdueix la categoria",
+
+  "categoryLimitReached":
+    "Has arribat al límit del pla Basic de {limit} categories. Actualitza a Premium.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "El pla Basic permet crear fins a {limit} categories personalitzades.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "El nom de la categoria és obligatori",
+  "categoryErrorTooShort": "El nom de la categoria és massa curt",
+  "categoryErrorTooLong": "El nom de la categoria és massa llarg",
+  "categoryErrorSymbols": "El nom no pot contenir símbols",
+  "categoryErrorNumbers": "El nom no pot contenir números",
+
+  "upgradeRequired": "Actualització necessària",
+  "viewPremiumBenefits": "Veure avantatges Premium",
+
+  "createCategory": "Crear",
+
+  "addGroupTitle": "Afegir grup",
+
+  "groupNameLabel": "Grup",
+  "groupNameHint": "Introdueix el grup",
+
+  "groupErrorEmpty": "El nom del grup és obligatori",
+  "groupErrorTooShort": "El nom del grup és massa curt",
+  "groupErrorTooLong": "El nom del grup és massa llarg",
+  "groupErrorSymbols": "El nom no pot contenir símbols",
+  "groupErrorNumbers": "El nom no pot contenir números",
+
+  "createGroup": "Crear"
+}
