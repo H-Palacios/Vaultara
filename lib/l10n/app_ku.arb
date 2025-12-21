@@ -1,0 +1,106 @@
+{
+  "@@locale": "ku",
+
+  "expiryCalendarTitle": "Salnameya Dawiya Demê",
+
+  "calendarIntro":
+    "Rêbaza dîtina dawiyên demê hilbijêre:\n\n• Hejmara rojan ji îro ve binivîse.\n• An jî roja taybet di salnameyê de hilbijêre.\n\nVaultara dê tiştên ku di wê rojê de dawî dibin nîşan bide.",
+
+  "daysFromTodayLabel": "Roj ji îro",
+  "daysFromTodayHint": "Mînak: 0, 1, 7, 30",
+
+  "apply": "Bisepîne",
+  "pickDateOnCalendar": "Roja di salnameyê de hilbijêre",
+
+  "today": "Îro",
+  "tomorrow": "Sibê",
+  "in7Days": "Di 7 rojan de",
+  "in30Days": "Di 30 rojan de",
+
+  "inDays": "di {days} rojan de",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Hejmara rojan binivîse",
+  "invalidDaysError": "Hejmara rast binivîse (0 an zêdetir)",
+
+  "showingItemsRelative": "Tiştên ku {time} dawî dibin tên nîşandan",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Tiştên ku di roja hilbijartî de dawî dibin tên nîşandan",
+  "noItemsOnDate": "Di vê rojê de tişt tune",
+
+  "editorAddTitle": "Tiştê zêde bike",
+  "editorEditTitle": "Tiştê biguherîne",
+
+  "editorCategory": "Kategorî",
+  "editorCategoryHint": "Kategorî hilbijêre",
+
+  "editorGroup": "Kom",
+  "editorGroupHint": "Kom hilbijêre",
+
+  "editorItemName": "Navê tiştê",
+  "editorItemNameHint": "Navê tiştê binivîse",
+
+  "editorExpiryDate": "Dawiya demê",
+  "editorExpiryDateHint": "Dîrokê hilbijêre",
+
+  "editorErrorCategory": "Kategorî pêwîst e",
+  "editorErrorGroup": "Kom pêwîst e",
+  "editorErrorName": "Nav pêwîst e",
+  "editorErrorExpiry": "Dîrok pêwîst e",
+  "editorErrorExpiryPast": "Divê dîrok îro an pêşeroj be",
+
+  "cancel": "Betal bike",
+  "save": "Tomar bike",
+
+  "addCategoryTitle": "Kategorî zêde bike",
+  "unlimitedCategories": "Kategorî bê sînor (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorî hatine bikaranîn",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Navê kategorî",
+  "categoryNameHint": "Kategorî binivîse",
+
+  "categoryLimitReached":
+    "Sînorê Basic gihîşt. Premium kategorî bê sînor pêşkêş dike",
+
+  "categoryLimitInfo":
+    "Basic heta {limit} kategorî destûr dide",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Navê kategorî pêwîst e",
+  "categoryErrorTooShort": "Navê kategorî kurt e",
+  "categoryErrorTooLong": "Navê kategorî dirêj e",
+  "categoryErrorSymbols": "Navê kategorî nikanî bi tenê nîşan be",
+  "categoryErrorNumbers": "Navê kategorî nikanî jimare hebe",
+
+  "upgradeRequired": "Pêdivî ye ku were bilindkirin",
+  "viewPremiumBenefits": "Feydeyên Premium bibîne",
+
+  "createCategory": "Çêke",
+
+  "addGroupTitle": "Kom zêde bike",
+
+  "groupNameLabel": "Kom",
+  "groupNameHint": "Kom binivîse",
+
+  "groupErrorEmpty": "Navê komê pêwîst e",
+  "groupErrorTooShort": "Navê komê kurt e",
+  "groupErrorTooLong": "Navê komê dirêj e",
+  "groupErrorSymbols": "Navê komê nikanî nîşan be",
+  "groupErrorNumbers": "Navê komê nikanî jimare hebe",
+
+  "createGroup": "Çêke"
+}

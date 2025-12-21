@@ -1,0 +1,118 @@
+{
+  "@@locale": "en",
+
+  "expiryCalendarTitle": "Expiry calendar",
+
+  "calendarIntro":
+    "Choose how you want to explore your expiries:\n\n• Type how many days from today you want to look ahead.\n• Or pick an exact calendar date.\n\nVaultara will show which items reach their expiry date on that day.",
+
+  "daysFromTodayLabel": "Days from today",
+  "daysFromTodayHint": "For example 0, 1, 7, 30",
+
+  "apply": "Apply",
+  "pickDateOnCalendar": "Pick a date on the calendar",
+
+  "today": "Today",
+  "tomorrow": "Tomorrow",
+  "in7Days": "In 7 days",
+  "in30Days": "In 30 days",
+
+  "inDays": "in {days} days",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "Enter a number of days.",
+  "invalidDaysError": "Enter a valid number of days (0 or higher).",
+
+  "showingItemsRelative": "Showing items that expire {time}",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "Showing items that expire on the selected date",
+
+  "noItemsOnDate":
+    "No items are set to reach their expiry date on that day.",
+
+  "editorAddTitle": "Add item",
+  "editorEditTitle": "Edit item",
+
+  "editorCategory": "Category",
+  "editorCategoryHint": "Select a category",
+
+  "editorGroup": "Group",
+  "editorGroupHint": "Select a group under this category",
+
+  "editorItemName": "Item name",
+  "editorItemNameHint": "Enter item name",
+
+  "editorExpiryDate": "Expiry date",
+  "editorExpiryDateHint": "Select expiry date",
+
+  "editorErrorCategory": "Select a category",
+  "editorErrorGroup": "Select a group",
+  "editorErrorName": "Item name is required",
+  "editorErrorExpiry": "Select an expiry date",
+  "editorErrorExpiryPast": "Expiry date must be today or a future date",
+
+  "cancel": "Cancel",
+  "save": "Save",
+
+  "addCategoryTitle": "Add category",
+
+  "unlimitedCategories": "Unlimited categories (Premium)",
+
+  "categoryUsage": "{current} / {limit} categories used",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Category name",
+  "categoryNameHint": "Enter category",
+
+  "categoryLimitReached":
+    "You have reached the Basic plan limit of {limit} categories. Upgrade to Premium to create unlimited custom categories.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryLimitInfo":
+    "On the Basic plan you can create up to {limit} custom categories.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Category name is required",
+  "categoryErrorTooShort": "Category name is too short",
+  "categoryErrorTooLong": "Category name is too long",
+  "categoryErrorSymbols": "Category name cannot contain only symbols",
+  "categoryErrorNumbers": "Category name cannot contain numbers",
+
+  "upgradeRequired": "Upgrade required",
+  "viewPremiumBenefits": "View Premium benefits",
+
+  "createCategory": "Create",
+  "addGroupTitle": "Add group",
+  "groupNameLabel": "Group",
+  "groupNameHint": "Enter group",
+
+  "groupErrorEmpty": "Group name is required",
+  "groupErrorTooShort": "Group name is too short",
+  "groupErrorTooLong": "Group name is too long",
+  "groupErrorSymbols": "Group name cannot contain symbols",
+  "groupErrorNumbers": "Group name cannot contain numbers",
+  "createGroup": "Create"
+
+}

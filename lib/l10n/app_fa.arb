@@ -1,0 +1,107 @@
+{
+  "@@locale": "fa",
+
+  "expiryCalendarTitle": "تقویم انقضا",
+
+  "calendarIntro":
+    "روش مشاهده تاریخ‌های انقضا را انتخاب کنید:\n\n• تعداد روزها از امروز را وارد کنید.\n• یا یک تاریخ مشخص را در تقویم انتخاب کنید.\n\nVaultara مواردی را که در آن روز منقضی می‌شوند نمایش می‌دهد.",
+
+  "daysFromTodayLabel": "روزها از امروز",
+  "daysFromTodayHint": "مثلاً 0، 1، 7، 30",
+
+  "apply": "اعمال",
+  "pickDateOnCalendar": "انتخاب تاریخ از تقویم",
+
+  "today": "امروز",
+  "tomorrow": "فردا",
+  "in7Days": "۷ روز دیگر",
+  "in30Days": "۳۰ روز دیگر",
+
+  "inDays": "{days} روز دیگر",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "تعداد روزها را وارد کنید",
+  "invalidDaysError": "عدد معتبر وارد کنید (۰ یا بیشتر)",
+
+  "showingItemsRelative": "نمایش مواردی که {time} منقضی می‌شوند",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "نمایش مواردی که در تاریخ انتخاب‌شده منقضی می‌شوند",
+  "noItemsOnDate": "هیچ موردی در این تاریخ منقضی نمی‌شود",
+
+  "editorAddTitle": "افزودن مورد",
+  "editorEditTitle": "ویرایش مورد",
+
+  "editorCategory": "دسته‌بندی",
+  "editorCategoryHint": "انتخاب دسته‌بندی",
+
+  "editorGroup": "گروه",
+  "editorGroupHint": "انتخاب گروه",
+
+  "editorItemName": "نام مورد",
+  "editorItemNameHint": "وارد کردن نام مورد",
+
+  "editorExpiryDate": "تاریخ انقضا",
+  "editorExpiryDateHint": "انتخاب تاریخ انقضا",
+
+  "editorErrorCategory": "دسته‌بندی الزامی است",
+  "editorErrorGroup": "گروه الزامی است",
+  "editorErrorName": "نام مورد الزامی است",
+  "editorErrorExpiry": "تاریخ انقضا الزامی است",
+  "editorErrorExpiryPast": "تاریخ باید امروز یا آینده باشد",
+
+  "cancel": "لغو",
+  "save": "ذخیره",
+
+  "addCategoryTitle": "افزودن دسته‌بندی",
+  "unlimitedCategories": "دسته‌بندی نامحدود (Premium)",
+
+  "categoryUsage": "{current} / {limit} دسته‌بندی استفاده‌شده",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "نام دسته‌بندی",
+  "categoryNameHint": "وارد کردن دسته‌بندی",
+
+  "categoryLimitReached":
+    "به محدودیت {limit} دسته‌بندی در طرح Basic رسیده‌اید. برای نامحدود شدن به Premium ارتقا دهید.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "طرح Basic امکان ایجاد حداکثر {limit} دسته‌بندی سفارشی را می‌دهد.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "نام دسته‌بندی الزامی است",
+  "categoryErrorTooShort": "نام دسته‌بندی بسیار کوتاه است",
+  "categoryErrorTooLong": "نام دسته‌بندی بسیار طولانی است",
+  "categoryErrorSymbols": "نام نمی‌تواند شامل نماد باشد",
+  "categoryErrorNumbers": "نام نمی‌تواند شامل عدد باشد",
+
+  "upgradeRequired": "نیاز به ارتقا",
+  "viewPremiumBenefits": "مشاهده مزایای Premium",
+  "createCategory": "ایجاد",
+
+  "addGroupTitle": "افزودن گروه",
+  "groupNameLabel": "گروه",
+  "groupNameHint": "وارد کردن گروه",
+
+  "groupErrorEmpty": "نام گروه الزامی است",
+  "groupErrorTooShort": "نام گروه بسیار کوتاه است",
+  "groupErrorTooLong": "نام گروه بسیار طولانی است",
+  "groupErrorSymbols": "نام نمی‌تواند شامل نماد باشد",
+  "groupErrorNumbers": "نام نمی‌تواند شامل عدد باشد",
+
+  "createGroup": "ایجاد"
+}

@@ -1,0 +1,95 @@
+{
+  "@@locale": "es",
+
+  "expiryCalendarTitle": "Calendario de vencimientos",
+
+  "calendarIntro":
+    "Elige cómo quieres explorar tus vencimientos:\n\n• Escribe cuántos días desde hoy deseas consultar.\n• O selecciona una fecha exacta en el calendario.\n\nVaultara mostrará qué elementos alcanzan su fecha de vencimiento ese día.",
+
+  "daysFromTodayLabel": "Días desde hoy",
+  "daysFromTodayHint": "Por ejemplo 0, 1, 7, 30",
+
+  "apply": "Aplicar",
+  "pickDateOnCalendar": "Seleccionar una fecha en el calendario",
+
+  "today": "Hoy",
+  "tomorrow": "Mañana",
+  "in7Days": "En 7 días",
+  "in30Days": "En 30 días",
+
+  "inDays": "en {days} días",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Ingresa un número de días.",
+  "invalidDaysError": "Ingresa un número válido de días (0 o mayor).",
+
+  "showingItemsRelative": "Mostrando elementos que vencen {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Mostrando elementos que vencen en la fecha seleccionada",
+  "noItemsOnDate": "No hay elementos que venzan en esa fecha.",
+
+  "editorAddTitle": "Agregar elemento",
+  "editorEditTitle": "Editar elemento",
+
+  "editorCategory": "Categoría",
+  "editorCategoryHint": "Selecciona una categoría",
+
+  "editorGroup": "Grupo",
+  "editorGroupHint": "Selecciona un grupo",
+
+  "editorItemName": "Nombre del elemento",
+  "editorItemNameHint": "Ingresa el nombre del elemento",
+
+  "editorExpiryDate": "Fecha de vencimiento",
+  "editorExpiryDateHint": "Selecciona la fecha de vencimiento",
+
+  "editorErrorCategory": "Selecciona una categoría",
+  "editorErrorGroup": "Selecciona un grupo",
+  "editorErrorName": "El nombre del elemento es obligatorio",
+  "editorErrorExpiry": "Selecciona una fecha de vencimiento",
+  "editorErrorExpiryPast": "La fecha debe ser hoy o futura",
+
+  "cancel": "Cancelar",
+  "save": "Guardar",
+
+  "addCategoryTitle": "Agregar categoría",
+  "unlimitedCategories": "Categorías ilimitadas (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorías usadas",
+
+  "categoryNameLabel": "Nombre de la categoría",
+  "categoryNameHint": "Ingresar categoría",
+
+  "categoryLimitReached":
+    "Has alcanzado el límite del plan Básico. Actualiza a Premium para crear categorías ilimitadas.",
+
+  "categoryLimitInfo":
+    "En el plan Básico puedes crear hasta {limit} categorías personalizadas.",
+
+  "categoryErrorEmpty": "El nombre de la categoría es obligatorio",
+  "categoryErrorTooShort": "El nombre de la categoría es demasiado corto",
+  "categoryErrorTooLong": "El nombre de la categoría es demasiado largo",
+  "categoryErrorSymbols": "El nombre de la categoría no puede contener símbolos",
+  "categoryErrorNumbers": "El nombre de la categoría no puede contener números",
+
+  "upgradeRequired": "Actualización requerida",
+  "viewPremiumBenefits": "Ver beneficios Premium",
+  "createCategory": "Crear",
+
+  "addGroupTitle": "Agregar grupo",
+  "groupNameLabel": "Grupo",
+  "groupNameHint": "Ingresar grupo",
+
+  "groupErrorEmpty": "El nombre del grupo es obligatorio",
+  "groupErrorTooShort": "El nombre del grupo es demasiado corto",
+  "groupErrorTooLong": "El nombre del grupo es demasiado largo",
+  "groupErrorSymbols": "El nombre del grupo no puede contener símbolos",
+  "groupErrorNumbers": "El nombre del grupo no puede contener números",
+
+  "createGroup": "Crear"
+}

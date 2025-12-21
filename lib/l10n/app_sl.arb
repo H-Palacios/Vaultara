@@ -1,0 +1,106 @@
+{
+  "@@locale": "sl",
+
+  "expiryCalendarTitle": "Koledar poteka",
+
+  "calendarIntro":
+    "Izberite, kako želite prikazati poteke:\n\n• Vnesite število dni od danes.\n• Ali izberite določen datum v koledarju.\n\nVaultara prikaže elemente, ki potečejo na ta dan.",
+
+  "daysFromTodayLabel": "Dnevi od danes",
+  "daysFromTodayHint": "Na primer 0, 1, 7, 30",
+
+  "apply": "Uporabi",
+  "pickDateOnCalendar": "Izberite datum v koledarju",
+
+  "today": "Danes",
+  "tomorrow": "Jutri",
+  "in7Days": "Čez 7 dni",
+  "in30Days": "Čez 30 dni",
+
+  "inDays": "čez {days} dni",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Število dni je obvezno",
+  "invalidDaysError": "Vnesite veljavno število dni (0 ali več)",
+
+  "showingItemsRelative": "Elementi potečejo {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Elementi potečejo na izbrani datum",
+  "noItemsOnDate": "Na ta dan ne poteče noben element",
+
+  "editorAddTitle": "Dodaj element",
+  "editorEditTitle": "Uredi element",
+
+  "editorCategory": "Kategorija",
+  "editorCategoryHint": "Izberite kategorijo",
+
+  "editorGroup": "Skupina",
+  "editorGroupHint": "Izberite skupino v tej kategoriji",
+
+  "editorItemName": "Ime elementa",
+  "editorItemNameHint": "Vnesite ime elementa",
+
+  "editorExpiryDate": "Datum poteka",
+  "editorExpiryDateHint": "Izberite datum poteka",
+
+  "editorErrorCategory": "Kategorija je obvezna",
+  "editorErrorGroup": "Skupina je obvezna",
+  "editorErrorName": "Ime elementa je obvezno",
+  "editorErrorExpiry": "Datum poteka je obvezen",
+  "editorErrorExpiryPast": "Datum mora biti danes ali v prihodnosti",
+
+  "cancel": "Prekliči",
+  "save": "Shrani",
+
+  "addCategoryTitle": "Dodaj kategorijo",
+  "unlimitedCategories": "Neomejene kategorije (Premium)",
+
+  "categoryUsage": "{current} / {limit} uporabljenih kategorij",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Ime kategorije",
+  "categoryNameHint": "Vnesite kategorijo",
+
+  "categoryLimitReached":
+    "Dosežena je omejitev paketa Basic. Premium omogoča neomejene kategorije",
+
+  "categoryLimitInfo":
+    "Paket Basic omogoča do {limit} kategorij",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Ime kategorije je obvezno",
+  "categoryErrorTooShort": "Ime kategorije je prekratko",
+  "categoryErrorTooLong": "Ime kategorije je predolgo",
+  "categoryErrorSymbols": "Ime ne sme vsebovati samo simbolov",
+  "categoryErrorNumbers": "Ime ne sme vsebovati številk",
+
+  "upgradeRequired": "Nadgradnja je potrebna",
+  "viewPremiumBenefits": "Ogled Premium ugodnosti",
+
+  "createCategory": "Ustvari",
+
+  "addGroupTitle": "Dodaj skupino",
+
+  "groupNameLabel": "Skupina",
+  "groupNameHint": "Vnesite skupino",
+
+  "groupErrorEmpty": "Ime skupine je obvezno",
+  "groupErrorTooShort": "Ime skupine je prekratko",
+  "groupErrorTooLong": "Ime skupine je predolgo",
+  "groupErrorSymbols": "Ime skupine ne sme vsebovati samo simbolov",
+  "groupErrorNumbers": "Ime skupine ne sme vsebovati številk",
+
+  "createGroup": "Ustvari"
+}

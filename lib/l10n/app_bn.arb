@@ -1,0 +1,109 @@
+{
+  "@@locale": "bn",
+
+  "expiryCalendarTitle": "মেয়াদ শেষের ক্যালেন্ডার",
+
+  "calendarIntro":
+    "মেয়াদ শেষ দেখার উপায় বেছে নিন:\n\n• আজ থেকে কত দিন পর দেখতে চান তা লিখুন।\n• অথবা ক্যালেন্ডার থেকে একটি নির্দিষ্ট তারিখ নির্বাচন করুন।\n\nVaultara সেই দিনে মেয়াদ শেষ হওয়া আইটেম দেখাবে।",
+
+  "daysFromTodayLabel": "আজ থেকে দিন",
+  "daysFromTodayHint": "উদাহরণ: 0, 1, 7, 30",
+
+  "apply": "প্রয়োগ",
+  "pickDateOnCalendar": "ক্যালেন্ডার থেকে তারিখ নির্বাচন",
+
+  "today": "আজ",
+  "tomorrow": "আগামীকাল",
+  "in7Days": "৭ দিনের মধ্যে",
+  "in30Days": "৩০ দিনের মধ্যে",
+
+  "inDays": "{days} দিনের মধ্যে",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "দিনের সংখ্যা লিখতে হবে",
+  "invalidDaysError": "সঠিক দিনের সংখ্যা লিখতে হবে (০ বা তার বেশি)",
+
+  "showingItemsRelative": "{time} মেয়াদ শেষ হওয়া আইটেম",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "নির্বাচিত তারিখে মেয়াদ শেষ হওয়া আইটেম",
+  "noItemsOnDate": "এই তারিখে কোনো আইটেমের মেয়াদ শেষ হয় না",
+
+  "editorAddTitle": "আইটেম যোগ",
+  "editorEditTitle": "আইটেম সম্পাদনা",
+
+  "editorCategory": "বিভাগ",
+  "editorCategoryHint": "একটি বিভাগ নির্বাচন করুন",
+
+  "editorGroup": "গ্রুপ",
+  "editorGroupHint": "একটি গ্রুপ নির্বাচন করুন",
+
+  "editorItemName": "আইটেমের নাম",
+  "editorItemNameHint": "আইটেমের নাম লিখুন",
+
+  "editorExpiryDate": "মেয়াদ শেষের তারিখ",
+  "editorExpiryDateHint": "তারিখ নির্বাচন করুন",
+
+  "editorErrorCategory": "বিভাগ নির্বাচন আবশ্যক",
+  "editorErrorGroup": "গ্রুপ নির্বাচন আবশ্যক",
+  "editorErrorName": "আইটেমের নাম আবশ্যক",
+  "editorErrorExpiry": "তারিখ নির্বাচন আবশ্যক",
+  "editorErrorExpiryPast": "তারিখ আজ বা ভবিষ্যতের হতে হবে",
+
+  "cancel": "বাতিল",
+  "save": "সংরক্ষণ",
+
+  "addCategoryTitle": "বিভাগ যোগ",
+  "unlimitedCategories": "সীমাহীন বিভাগ (Premium)",
+
+  "categoryUsage": "{current} / {limit} বিভাগ ব্যবহৃত",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "বিভাগের নাম",
+  "categoryNameHint": "বিভাগের নাম লিখুন",
+
+  "categoryLimitReached":
+    "আপনি Basic পরিকল্পনার {limit} বিভাগের সীমায় পৌঁছেছেন। Premium এ আপগ্রেড করুন।",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Basic পরিকল্পনায় সর্বোচ্চ {limit} টি বিভাগ তৈরি করা যায়।",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "বিভাগের নাম আবশ্যক",
+  "categoryErrorTooShort": "বিভাগের নাম খুব ছোট",
+  "categoryErrorTooLong": "বিভাগের নাম খুব বড়",
+  "categoryErrorSymbols": "শুধু চিহ্ন ব্যবহার করা যাবে না",
+  "categoryErrorNumbers": "সংখ্যা ব্যবহার করা যাবে না",
+
+  "upgradeRequired": "আপগ্রেড প্রয়োজন",
+  "viewPremiumBenefits": "Premium সুবিধা দেখুন",
+
+  "createCategory": "তৈরি",
+
+  "addGroupTitle": "গ্রুপ যোগ",
+
+  "groupNameLabel": "গ্রুপ",
+  "groupNameHint": "গ্রুপের নাম লিখুন",
+
+  "groupErrorEmpty": "গ্রুপের নাম আবশ্যক",
+  "groupErrorTooShort": "গ্রুপের নাম খুব ছোট",
+  "groupErrorTooLong": "গ্রুপের নাম খুব বড়",
+  "groupErrorSymbols": "শুধু চিহ্ন ব্যবহার করা যাবে না",
+  "groupErrorNumbers": "সংখ্যা ব্যবহার করা যাবে না",
+
+  "createGroup": "তৈরি"
+}

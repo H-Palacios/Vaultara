@@ -1,0 +1,101 @@
+{
+  "@@locale": "zh_TW",
+
+  "expiryCalendarTitle": "到期日曆",
+
+  "calendarIntro":
+    "選擇查看到期項目的方式：\n\n• 輸入從今天起的天數。\n• 或選擇特定日期。\n\nVaultara 將顯示該日期到期的項目。",
+
+  "daysFromTodayLabel": "距今天數",
+  "daysFromTodayHint": "例如 0、1、7、30",
+
+  "apply": "套用",
+  "pickDateOnCalendar": "在日曆中選擇日期",
+
+  "today": "今天",
+  "tomorrow": "明天",
+  "in7Days": "7 天後",
+  "in30Days": "30 天後",
+
+  "inDays": "{days} 天後",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "請輸入天數。",
+  "invalidDaysError": "請輸入有效的天數（0 或以上）。",
+
+  "showingItemsRelative": "顯示 {time} 到期的項目",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "顯示在所選日期到期的項目",
+  "noItemsOnDate": "該日期沒有到期的項目。",
+
+  "editorAddTitle": "新增項目",
+  "editorEditTitle": "編輯項目",
+
+  "editorCategory": "分類",
+  "editorCategoryHint": "選擇分類",
+
+  "editorGroup": "群組",
+  "editorGroupHint": "選擇群組",
+
+  "editorItemName": "項目名稱",
+  "editorItemNameHint": "輸入項目名稱",
+
+  "editorExpiryDate": "到期日期",
+  "editorExpiryDateHint": "選擇到期日期",
+
+  "editorErrorCategory": "請選擇分類",
+  "editorErrorGroup": "請選擇群組",
+  "editorErrorName": "項目名稱為必填",
+  "editorErrorExpiry": "請選擇到期日期",
+  "editorErrorExpiryPast": "到期日期必須是今天或未來",
+
+  "cancel": "取消",
+  "save": "儲存",
+
+  "addCategoryTitle": "新增分類",
+  "unlimitedCategories": "無限制分類（進階版）",
+
+  "categoryUsage": "已使用 {current} / {limit} 個分類",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "分類名稱",
+  "categoryNameHint": "輸入分類",
+
+  "categoryLimitReached":
+    "已達到基本方案限制。升級至進階版以建立無限制分類。",
+
+  "categoryLimitInfo":
+    "基本方案最多可建立 {limit} 個自訂分類。",
+
+  "categoryErrorEmpty": "分類名稱為必填",
+  "categoryErrorTooShort": "分類名稱過短",
+  "categoryErrorTooLong": "分類名稱過長",
+  "categoryErrorSymbols": "分類名稱不能包含符號",
+  "categoryErrorNumbers": "分類名稱不能包含數字",
+
+  "upgradeRequired": "需要升級",
+  "viewPremiumBenefits": "查看進階版權益",
+  "createCategory": "建立",
+
+  "addGroupTitle": "新增群組",
+  "groupNameLabel": "群組",
+  "groupNameHint": "輸入群組",
+
+  "groupErrorEmpty": "群組名稱為必填",
+  "groupErrorTooShort": "群組名稱過短",
+  "groupErrorTooLong": "群組名稱過長",
+  "groupErrorSymbols": "群組名稱不能包含符號",
+  "groupErrorNumbers": "群組名稱不能包含數字",
+
+  "createGroup": "建立"
+}

@@ -1,0 +1,101 @@
+{
+  "@@locale": "ko",
+
+  "expiryCalendarTitle": "만료 일정",
+
+  "calendarIntro":
+    "만료 항목을 확인하는 방법을 선택하세요:\n\n• 오늘부터의 일수를 입력합니다.\n• 또는 날짜를 선택합니다.\n\nVaultara는 해당 날짜에 만료되는 항목을 표시합니다.",
+
+  "daysFromTodayLabel": "오늘부터 일수",
+  "daysFromTodayHint": "예: 0, 1, 7, 30",
+
+  "apply": "적용",
+  "pickDateOnCalendar": "캘린더에서 날짜 선택",
+
+  "today": "오늘",
+  "tomorrow": "내일",
+  "in7Days": "7일 후",
+  "in30Days": "30일 후",
+
+  "inDays": "{days}일 후",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "일수를 입력하세요.",
+  "invalidDaysError": "유효한 일수를 입력하세요 (0 이상).",
+
+  "showingItemsRelative": "{time} 만료 항목",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "선택한 날짜에 만료되는 항목",
+  "noItemsOnDate": "해당 날짜에 만료되는 항목이 없습니다.",
+
+  "editorAddTitle": "항목 추가",
+  "editorEditTitle": "항목 편집",
+
+  "editorCategory": "카테고리",
+  "editorCategoryHint": "카테고리 선택",
+
+  "editorGroup": "그룹",
+  "editorGroupHint": "그룹 선택",
+
+  "editorItemName": "항목 이름",
+  "editorItemNameHint": "항목 이름 입력",
+
+  "editorExpiryDate": "만료 날짜",
+  "editorExpiryDateHint": "만료 날짜 선택",
+
+  "editorErrorCategory": "카테고리 선택",
+  "editorErrorGroup": "그룹 선택",
+  "editorErrorName": "항목 이름은 필수",
+  "editorErrorExpiry": "만료 날짜 선택",
+  "editorErrorExpiryPast": "만료 날짜는 오늘 이후여야 합니다",
+
+  "cancel": "취소",
+  "save": "저장",
+
+  "addCategoryTitle": "카테고리 추가",
+  "unlimitedCategories": "카테고리 무제한 (프리미엄)",
+
+  "categoryUsage": "{current} / {limit} 카테고리 사용",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "카테고리 이름",
+  "categoryNameHint": "카테고리 입력",
+
+  "categoryLimitReached":
+    "베이직 요금제 한도에 도달했습니다. 프리미엄으로 업그레이드하세요.",
+
+  "categoryLimitInfo":
+    "베이직 요금제에서는 최대 {limit}개의 카테고리를 만들 수 있습니다.",
+
+  "categoryErrorEmpty": "카테고리 이름은 필수",
+  "categoryErrorTooShort": "카테고리 이름이 너무 짧음",
+  "categoryErrorTooLong": "카테고리 이름이 너무 김",
+  "categoryErrorSymbols": "기호는 사용할 수 없음",
+  "categoryErrorNumbers": "숫자는 사용할 수 없음",
+
+  "upgradeRequired": "업그레이드 필요",
+  "viewPremiumBenefits": "프리미엄 혜택 보기",
+  "createCategory": "생성",
+
+  "addGroupTitle": "그룹 추가",
+  "groupNameLabel": "그룹",
+  "groupNameHint": "그룹 입력",
+
+  "groupErrorEmpty": "그룹 이름은 필수",
+  "groupErrorTooShort": "그룹 이름이 너무 짧음",
+  "groupErrorTooLong": "그룹 이름이 너무 김",
+  "groupErrorSymbols": "기호는 사용할 수 없음",
+  "groupErrorNumbers": "숫자는 사용할 수 없음",
+
+  "createGroup": "생성"
+}

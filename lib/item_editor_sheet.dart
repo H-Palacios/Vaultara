@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 import 'document_hierarchy.dart';
 import 'text_normaliser.dart';
 
@@ -42,6 +43,8 @@ Future<void> showItemEditorSheet({
   ItemDraft? initialDraft,
   required void Function(ItemDraft) onSave,
 }) async {
+  final loc = AppLocalizations.of(context)!;
+
   final TextEditingController nameController =
       TextEditingController(text: initialDraft?.name ?? '');
   final TextEditingController notesController =
@@ -53,9 +56,6 @@ Future<void> showItemEditorSheet({
         : '',
   );
 
-  final FocusNode nameFocus = FocusNode();
-  final FocusNode notesFocus = FocusNode();
-
   DateTime? expiryDate = initialDraft?.expiryDate;
 
   String? selectedCategory =
@@ -63,19 +63,10 @@ Future<void> showItemEditorSheet({
   String? selectedSubcategory =
       subcategoryName ?? initialDraft?.subcategoryName;
 
-  ReminderOffset selectedReminder = ReminderOffset.days7;
-  int customReminderDays = 14;
-
-  if (initialDraft?.reminderOffsetDays != null) {
-    final v = initialDraft!.reminderOffsetDays!;
-    if (v == 0) selectedReminder = ReminderOffset.onExpiry;
-    else if (v == 7) selectedReminder = ReminderOffset.days7;
-    else if (v == 30) selectedReminder = ReminderOffset.days30;
-    else {
-      selectedReminder = ReminderOffset.custom;
-      customReminderDays = v;
-    }
-  }
+  String? categoryError;
+  String? subcategoryError;
+  String? nameError;
+  String? expiryError;
 
   return showModalBottomSheet<void>(
     context: context,
@@ -92,10 +83,12 @@ Future<void> showItemEditorSheet({
         bool showLabel = false,
         Widget? prefixIcon,
         Widget? suffixIcon,
+        String? errorText,
       }) {
         return InputDecoration(
           labelText: showLabel ? labelText : null,
           hintText: showLabel ? null : hintText,
+          errorText: errorText,
           filled: true,
           fillColor: scheme.surfaceVariant.withOpacity(0.25),
           border: OutlineInputBorder(
@@ -112,13 +105,13 @@ Future<void> showItemEditorSheet({
         void Function(void Function()) setSheetState,
       ) async {
         final now = DateTime.now();
-        final initial =
-            expiryDate ?? now.add(const Duration(days: 365));
+        final todayOnly =
+            DateTime(now.year, now.month, now.day);
 
         final selected = await showDatePicker(
           context: sheetContext,
-          initialDate: initial,
-          firstDate: DateTime(now.year - 10),
+          initialDate: expiryDate ?? todayOnly,
+          firstDate: todayOnly,
           lastDate: DateTime(now.year + 20),
         );
 
@@ -127,143 +120,76 @@ Future<void> showItemEditorSheet({
             expiryDate = selected;
             expiryController.text =
                 selected.toIso8601String().substring(0, 10);
+            expiryError = null;
           });
         }
       }
 
-      void save() {
+      void save(void Function(void Function()) setSheetState) {
+        setSheetState(() {
+          categoryError = null;
+          subcategoryError = null;
+          nameError = null;
+          expiryError = null;
+        });
+
         final formattedName =
             normaliseTitleCase(nameController.text);
 
-        if (formattedName.trim().isEmpty || expiryDate == null) {
-          return;
+        if (selectedCategory == null || selectedCategory!.isEmpty) {
+          categoryError = loc.editorErrorCategory;
         }
 
-        int? reminderOffset;
-        switch (selectedReminder) {
-          case ReminderOffset.none:
-            reminderOffset = null;
-            break;
-          case ReminderOffset.onExpiry:
-            reminderOffset = 0;
-            break;
-          case ReminderOffset.days7:
-            reminderOffset = 7;
-            break;
-          case ReminderOffset.days30:
-            reminderOffset = 30;
-            break;
-          case ReminderOffset.custom:
-            reminderOffset = customReminderDays;
-            break;
+        if (selectedSubcategory == null ||
+            selectedSubcategory!.isEmpty) {
+          subcategoryError = loc.editorErrorGroup;
+        }
+
+        if (formattedName.trim().isEmpty) {
+          nameError = loc.editorErrorName;
+        }
+
+        if (expiryDate == null) {
+          expiryError = loc.editorErrorExpiry;
+        } else {
+          final now = DateTime.now();
+          final todayOnly =
+              DateTime(now.year, now.month, now.day);
+
+          if (expiryDate!.isBefore(todayOnly)) {
+            expiryError = loc.editorErrorExpiryPast;
+          }
+        }
+
+        if (categoryError != null ||
+            subcategoryError != null ||
+            nameError != null ||
+            expiryError != null) {
+          setSheetState(() {});
+          return;
         }
 
         onSave(
           ItemDraft(
             name: formattedName,
             expiryDate: expiryDate!,
-            categoryLabel: (selectedCategory ?? '').trim(),
-            subcategoryName:
-                (selectedSubcategory ?? '').trim(),
+            categoryLabel: selectedCategory!.trim(),
+            subcategoryName: selectedSubcategory!.trim(),
             notes: notesController.text.trim().isEmpty
                 ? null
                 : notesController.text.trim(),
-            reminderOffsetDays: reminderOffset,
+            reminderOffsetDays: null,
           ),
         );
 
         Navigator.pop(sheetContext);
       }
 
-      Widget buildCategorySection(
-        void Function(void Function()) setSheetState,
-      ) {
-        if (mode == ItemEditorMode.scoped) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              InputDecorator(
-                decoration: fieldDecoration(
-                  labelText: 'Category',
-                  showLabel: true,
-                ),
-                child: Text(
-                  selectedCategory ?? '',
-                  style:
-                      const TextStyle(fontWeight: FontWeight.w600),
-                ),
-              ),
-              const SizedBox(height: 8),
-              InputDecorator(
-                decoration: fieldDecoration(
-                  labelText: 'Group',
-                  showLabel: true,
-                ),
-                child: Text(
-                  selectedSubcategory ?? '',
-                  style:
-                      const TextStyle(fontWeight: FontWeight.w600),
-                ),
-              ),
-              const SizedBox(height: 12),
-            ],
-          );
-        }
-
-        final categories = DocumentHierarchy.categories;
-        final subcategories = selectedCategory != null
-            ? DocumentHierarchy.subcategoriesForCategory(
-                selectedCategory!)
-            : <String>[];
-
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            DropdownButtonFormField<String>(
-              value: selectedCategory,
-              decoration: fieldDecoration(
-                labelText: 'Category',
-                hintText: 'Select a category',
-                showLabel: selectedCategory != null,
-              ),
-              items: categories
-                  .map(
-                    (c) => DropdownMenuItem(
-                      value: c,
-                      child: Text(c),
-                    ),
-                  )
-                  .toList(),
-              onChanged: (v) {
-                setSheetState(() {
-                  selectedCategory = v;
-                  selectedSubcategory = null;
-                });
-              },
-            ),
-            const SizedBox(height: 10),
-            DropdownButtonFormField<String>(
-              value: selectedSubcategory,
-              decoration: fieldDecoration(
-                labelText: 'Group',
-                hintText: 'Select a group under this category',
-                showLabel: selectedSubcategory != null,
-              ),
-              items: subcategories
-                  .map(
-                    (s) => DropdownMenuItem(
-                      value: s,
-                      child: Text(s),
-                    ),
-                  )
-                  .toList(),
-              onChanged: (v) =>
-                  setSheetState(() => selectedSubcategory = v),
-            ),
-            const SizedBox(height: 12),
-          ],
-        );
-      }
+      final categories = DocumentHierarchy.categories;
+      final subcategories = selectedCategory != null
+          ? DocumentHierarchy.subcategoriesForCategory(
+              selectedCategory!)
+          : <String>[];
 
       return SafeArea(
         child: Padding(
@@ -274,14 +200,6 @@ Future<void> showItemEditorSheet({
           ),
           child: StatefulBuilder(
             builder: (_, setSheetState) {
-              nameFocus.addListener(() {
-                setSheetState(() {});
-              });
-
-              notesFocus.addListener(() {
-                setSheetState(() {});
-              });
-
               return SingleChildScrollView(
                 child: Padding(
                   padding:
@@ -291,8 +209,8 @@ Future<void> showItemEditorSheet({
                     children: [
                       Text(
                         initialDraft == null
-                            ? 'Add item'
-                            : 'Edit item',
+                            ? loc.editorAddTitle
+                            : loc.editorEditTitle,
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                           fontSize: 18,
@@ -300,16 +218,58 @@ Future<void> showItemEditorSheet({
                         ),
                       ),
                       const SizedBox(height: 16),
-                      buildCategorySection(setSheetState),
+                      DropdownButtonFormField<String>(
+                        value: selectedCategory,
+                        decoration: fieldDecoration(
+                          labelText: loc.editorCategory,
+                          hintText: loc.editorCategoryHint,
+                          showLabel: selectedCategory != null,
+                          errorText: categoryError,
+                        ),
+                        items: categories
+                            .map((c) => DropdownMenuItem(
+                                  value: c,
+                                  child: Text(c),
+                                ))
+                            .toList(),
+                        onChanged: (v) {
+                          setSheetState(() {
+                            selectedCategory = v;
+                            selectedSubcategory = null;
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 10),
+                      DropdownButtonFormField<String>(
+                        value: selectedSubcategory,
+                        decoration: fieldDecoration(
+                          labelText: loc.editorGroup,
+                          hintText: loc.editorGroupHint,
+                          showLabel:
+                              selectedSubcategory != null,
+                          errorText: subcategoryError,
+                        ),
+                        items: subcategories
+                            .map((s) => DropdownMenuItem(
+                                  value: s,
+                                  child: Text(s),
+                                ))
+                            .toList(),
+                        onChanged: (v) {
+                          setSheetState(() {
+                            selectedSubcategory = v;
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 12),
                       TextField(
                         controller: nameController,
-                        focusNode: nameFocus,
                         decoration: fieldDecoration(
-                          labelText: 'Item name',
-                          hintText: 'Enter item name',
+                          labelText: loc.editorItemName,
+                          hintText: loc.editorItemNameHint,
                           showLabel:
-                              nameController.text.isNotEmpty ||
-                              nameFocus.hasFocus,
+                              nameController.text.isNotEmpty,
+                          errorText: nameError,
                         ),
                       ),
                       const SizedBox(height: 10),
@@ -318,157 +278,15 @@ Future<void> showItemEditorSheet({
                         readOnly: true,
                         onTap: () => pickDate(setSheetState),
                         decoration: fieldDecoration(
-                          labelText: 'Expiry date',
-                          hintText: 'Select expiry date',
+                          labelText: loc.editorExpiryDate,
+                          hintText: loc.editorExpiryDateHint,
                           showLabel:
                               expiryController.text.isNotEmpty,
                           prefixIcon:
                               const Icon(Icons.event_rounded),
                           suffixIcon: const Icon(
                               Icons.arrow_drop_down_rounded),
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      const Text(
-                        'Reminder',
-                        style:
-                            TextStyle(fontWeight: FontWeight.w700),
-                      ),
-                      RadioListTile(
-                        value: ReminderOffset.none,
-                        groupValue: selectedReminder,
-                        onChanged: (_) =>
-                            setSheetState(() =>
-                                selectedReminder =
-                                    ReminderOffset.none),
-                        title: const Text('No reminder'),
-                      ),
-                      RadioListTile(
-                        value: ReminderOffset.days7,
-                        groupValue: selectedReminder,
-                        onChanged: (_) =>
-                            setSheetState(() =>
-                                selectedReminder =
-                                    ReminderOffset.days7),
-                        title:
-                            const Text('7 days before expiry'),
-                      ),
-                      if (isPremium) ...[
-                        RadioListTile(
-                          value: ReminderOffset.onExpiry,
-                          groupValue: selectedReminder,
-                          onChanged: (_) => setSheetState(() =>
-                              selectedReminder =
-                                  ReminderOffset.onExpiry),
-                          title:
-                              const Text('On expiry date'),
-                        ),
-                        RadioListTile(
-                          value: ReminderOffset.days30,
-                          groupValue: selectedReminder,
-                          onChanged: (_) => setSheetState(() =>
-                              selectedReminder =
-                                  ReminderOffset.days30),
-                          title: const Text(
-                              '30 days before expiry'),
-                        ),
-                        RadioListTile(
-                          value: ReminderOffset.custom,
-                          groupValue: selectedReminder,
-                          onChanged: (_) => setSheetState(() =>
-                              selectedReminder =
-                                  ReminderOffset.custom),
-                          title: const Text('Custom'),
-                        ),
-                        if (selectedReminder ==
-                            ReminderOffset.custom)
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(16, 8, 16, 0),
-                            child: Column(
-                              crossAxisAlignment:
-                                  CrossAxisAlignment.start,
-                              children: [
-                                const Text(
-                                  'Days before expiry',
-                                  style: TextStyle(
-                                      fontWeight:
-                                          FontWeight.w600),
-                                ),
-                                const SizedBox(height: 8),
-                                Wrap(
-                                  spacing: 8,
-                                  children: [3, 14, 60, 90]
-                                      .map((d) {
-                                    final selected =
-                                        customReminderDays == d;
-                                    return ChoiceChip(
-                                      label: Text('$d'),
-                                      selected: selected,
-                                      onSelected: (_) =>
-                                          setSheetState(() =>
-                                              customReminderDays =
-                                                  d),
-                                    );
-                                  }).toList(),
-                                ),
-                                const SizedBox(height: 10),
-                                Row(
-                                  children: [
-                                    IconButton(
-                                      onPressed:
-                                          customReminderDays >
-                                                  1
-                                              ? () =>
-                                                  setSheetState(
-                                                      () =>
-                                                          customReminderDays--)
-                                              : null,
-                                      icon: const Icon(Icons
-                                          .remove_circle_outline),
-                                    ),
-                                    Expanded(
-                                      child: Center(
-                                        child: Text(
-                                          '$customReminderDays days before',
-                                          style: const TextStyle(
-                                            fontSize: 14,
-                                            fontWeight:
-                                                FontWeight.w700,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    IconButton(
-                                      onPressed:
-                                          customReminderDays <
-                                                  180
-                                              ? () =>
-                                                  setSheetState(
-                                                      () =>
-                                                          customReminderDays++)
-                                              : null,
-                                      icon: const Icon(Icons
-                                          .add_circle_outline),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                      ],
-                      const SizedBox(height: 10),
-                      TextField(
-                        controller: notesController,
-                        focusNode: notesFocus,
-                        maxLines: 3,
-                        decoration: fieldDecoration(
-                          labelText: 'Notes',
-                          hintText:
-                              'Enter notes such as storage location, renewal steps, or reference details',
-                          showLabel:
-                              notesController.text.isNotEmpty ||
-                              notesFocus.hasFocus,
+                          errorText: expiryError,
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -477,14 +295,15 @@ Future<void> showItemEditorSheet({
                           TextButton(
                             onPressed: () =>
                                 Navigator.pop(sheetContext),
-                            child: const Text('Cancel'),
+                            child: Text(loc.cancel),
                           ),
                           const Spacer(),
                           SizedBox(
                             width: 140,
                             child: FilledButton(
-                              onPressed: save,
-                              child: const Text('Save'),
+                              onPressed: () =>
+                                  save(setSheetState),
+                              child: Text(loc.save),
                             ),
                           ),
                         ],

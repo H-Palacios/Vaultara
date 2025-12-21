@@ -1,0 +1,101 @@
+{
+  "@@locale": "zh",
+
+  "expiryCalendarTitle": "到期日历",
+
+  "calendarIntro":
+    "选择查看到期项目的方式：\n\n• 输入从今天起的天数。\n• 或选择一个具体的日期。\n\nVaultara 将显示在该日期到期的项目。",
+
+  "daysFromTodayLabel": "距今天数",
+  "daysFromTodayHint": "例如 0、1、7、30",
+
+  "apply": "应用",
+  "pickDateOnCalendar": "在日历中选择日期",
+
+  "today": "今天",
+  "tomorrow": "明天",
+  "in7Days": "7 天后",
+  "in30Days": "30 天后",
+
+  "inDays": "{days} 天后",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "请输入天数。",
+  "invalidDaysError": "请输入有效的天数（0 或以上）。",
+
+  "showingItemsRelative": "显示 {time} 到期的项目",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "显示在所选日期到期的项目",
+  "noItemsOnDate": "该日期没有到期的项目。",
+
+  "editorAddTitle": "添加项目",
+  "editorEditTitle": "编辑项目",
+
+  "editorCategory": "类别",
+  "editorCategoryHint": "选择类别",
+
+  "editorGroup": "分组",
+  "editorGroupHint": "选择分组",
+
+  "editorItemName": "项目名称",
+  "editorItemNameHint": "输入项目名称",
+
+  "editorExpiryDate": "到期日期",
+  "editorExpiryDateHint": "选择到期日期",
+
+  "editorErrorCategory": "请选择类别",
+  "editorErrorGroup": "请选择分组",
+  "editorErrorName": "项目名称不能为空",
+  "editorErrorExpiry": "请选择到期日期",
+  "editorErrorExpiryPast": "到期日期必须是今天或将来",
+
+  "cancel": "取消",
+  "save": "保存",
+
+  "addCategoryTitle": "添加类别",
+  "unlimitedCategories": "无限类别（高级版）",
+
+  "categoryUsage": "已使用 {current} / {limit} 个类别",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "类别名称",
+  "categoryNameHint": "输入类别",
+
+  "categoryLimitReached":
+    "已达到基础版限制。升级到高级版以创建无限类别。",
+
+  "categoryLimitInfo":
+    "基础版最多可创建 {limit} 个自定义类别。",
+
+  "categoryErrorEmpty": "类别名称不能为空",
+  "categoryErrorTooShort": "类别名称过短",
+  "categoryErrorTooLong": "类别名称过长",
+  "categoryErrorSymbols": "类别名称不能包含符号",
+  "categoryErrorNumbers": "类别名称不能包含数字",
+
+  "upgradeRequired": "需要升级",
+  "viewPremiumBenefits": "查看高级版权益",
+  "createCategory": "创建",
+
+  "addGroupTitle": "添加分组",
+  "groupNameLabel": "分组",
+  "groupNameHint": "输入分组",
+
+  "groupErrorEmpty": "分组名称不能为空",
+  "groupErrorTooShort": "分组名称过短",
+  "groupErrorTooLong": "分组名称过长",
+  "groupErrorSymbols": "分组名称不能包含符号",
+  "groupErrorNumbers": "分组名称不能包含数字",
+
+  "createGroup": "创建"
+}

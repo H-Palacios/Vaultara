@@ -1,0 +1,106 @@
+{
+  "@@locale": "tr",
+
+  "expiryCalendarTitle": "Son kullanma takvimi",
+
+  "calendarIntro":
+    "Son kullanma tarihlerini nasıl görmek istediğinizi seçin:\n\n• Bugünden itibaren kaç gün bakmak istediğinizi girin.\n• Veya takvimden belirli bir tarih seçin.\n\nVaultara o gün süresi dolan öğeleri gösterir.",
+
+  "daysFromTodayLabel": "Bugünden itibaren gün",
+  "daysFromTodayHint": "Örneğin 0, 1, 7, 30",
+
+  "apply": "Uygula",
+  "pickDateOnCalendar": "Takvimden tarih seç",
+
+  "today": "Bugün",
+  "tomorrow": "Yarın",
+  "in7Days": "7 gün içinde",
+  "in30Days": "30 gün içinde",
+
+  "inDays": "{days} gün içinde",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Gün sayısı gerekli",
+  "invalidDaysError": "Geçerli bir sayı girin (0 veya daha fazla)",
+
+  "showingItemsRelative": "{time} süresi dolan öğeler",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Seçilen tarihte süresi dolan öğeler",
+  "noItemsOnDate": "Bu tarihte süresi dolan öğe yok",
+
+  "editorAddTitle": "Öğe ekle",
+  "editorEditTitle": "Öğeyi düzenle",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Kategori seç",
+
+  "editorGroup": "Grup",
+  "editorGroupHint": "Bu kategoride grup seç",
+
+  "editorItemName": "Öğe adı",
+  "editorItemNameHint": "Öğe adını gir",
+
+  "editorExpiryDate": "Son kullanma tarihi",
+  "editorExpiryDateHint": "Tarih seç",
+
+  "editorErrorCategory": "Kategori gerekli",
+  "editorErrorGroup": "Grup gerekli",
+  "editorErrorName": "Öğe adı gerekli",
+  "editorErrorExpiry": "Tarih gerekli",
+  "editorErrorExpiryPast": "Tarih bugün veya gelecekte olmalı",
+
+  "cancel": "İptal",
+  "save": "Kaydet",
+
+  "addCategoryTitle": "Kategori ekle",
+  "unlimitedCategories": "Sınırsız kategoriler (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategori kullanıldı",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategori adı",
+  "categoryNameHint": "Kategori gir",
+
+  "categoryLimitReached":
+    "Basic plan sınırına ulaşıldı. Premium sınırsız kategori sağlar",
+
+  "categoryLimitInfo":
+    "Basic plan en fazla {limit} kategoriye izin verir",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategori adı gerekli",
+  "categoryErrorTooShort": "Kategori adı çok kısa",
+  "categoryErrorTooLong": "Kategori adı çok uzun",
+  "categoryErrorSymbols": "Ad yalnızca sembollerden oluşamaz",
+  "categoryErrorNumbers": "Ad sayı içeremez",
+
+  "upgradeRequired": "Yükseltme gerekli",
+  "viewPremiumBenefits": "Premium avantajlarını gör",
+
+  "createCategory": "Oluştur",
+
+  "addGroupTitle": "Grup ekle",
+
+  "groupNameLabel": "Grup",
+  "groupNameHint": "Grup gir",
+
+  "groupErrorEmpty": "Grup adı gerekli",
+  "groupErrorTooShort": "Grup adı çok kısa",
+  "groupErrorTooLong": "Grup adı çok uzun",
+  "groupErrorSymbols": "Ad yalnızca sembollerden oluşamaz",
+  "groupErrorNumbers": "Ad sayı içeremez",
+
+  "createGroup": "Oluştur"
+}

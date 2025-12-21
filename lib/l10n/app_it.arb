@@ -1,0 +1,106 @@
+{
+  "@@locale": "it",
+
+  "expiryCalendarTitle": "Calendario delle scadenze",
+
+  "calendarIntro":
+    "Scegli come visualizzare le scadenze:\n\n• Inserisci il numero di giorni da oggi.\n• Oppure seleziona una data dal calendario.\n\nVaultara mostrerà gli elementi che scadono in quel giorno.",
+
+  "daysFromTodayLabel": "Giorni da oggi",
+  "daysFromTodayHint": "Ad esempio 0, 1, 7, 30",
+
+  "apply": "Applica",
+  "pickDateOnCalendar": "Seleziona una data dal calendario",
+
+  "today": "Oggi",
+  "tomorrow": "Domani",
+  "in7Days": "Tra 7 giorni",
+  "in30Days": "Tra 30 giorni",
+
+  "inDays": "tra {days} giorni",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Inserisci un numero di giorni",
+  "invalidDaysError": "Inserisci un numero valido (0 o superiore)",
+
+  "showingItemsRelative": "Visualizzazione degli elementi che scadono {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact":
+    "Visualizzazione degli elementi che scadono nella data selezionata",
+  "noItemsOnDate": "Nessun elemento scade in quel giorno",
+
+  "editorAddTitle": "Aggiungi elemento",
+  "editorEditTitle": "Modifica elemento",
+
+  "editorCategory": "Categoria",
+  "editorCategoryHint": "Seleziona una categoria",
+
+  "editorGroup": "Gruppo",
+  "editorGroupHint": "Seleziona un gruppo",
+
+  "editorItemName": "Nome elemento",
+  "editorItemNameHint": "Inserisci il nome dell’elemento",
+
+  "editorExpiryDate": "Data di scadenza",
+  "editorExpiryDateHint": "Seleziona la data di scadenza",
+
+  "editorErrorCategory": "Categoria obbligatoria",
+  "editorErrorGroup": "Gruppo obbligatorio",
+  "editorErrorName": "Il nome dell’elemento è obbligatorio",
+  "editorErrorExpiry": "Data di scadenza obbligatoria",
+  "editorErrorExpiryPast": "La data deve essere oggi o futura",
+
+  "cancel": "Annulla",
+  "save": "Salva",
+
+  "addCategoryTitle": "Aggiungi categoria",
+  "unlimitedCategories": "Categorie illimitate (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorie utilizzate",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nome categoria",
+  "categoryNameHint": "Inserisci categoria",
+
+  "categoryLimitReached":
+    "Limite del piano Basic raggiunto. Premium consente categorie illimitate",
+
+  "categoryLimitInfo":
+    "Il piano Basic consente fino a {limit} categorie",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Il nome della categoria è obbligatorio",
+  "categoryErrorTooShort": "Il nome della categoria è troppo corto",
+  "categoryErrorTooLong": "Il nome della categoria è troppo lungo",
+  "categoryErrorSymbols": "Il nome non può contenere solo simboli",
+  "categoryErrorNumbers": "Il nome non può contenere numeri",
+
+  "upgradeRequired": "Aggiornamento richiesto",
+  "viewPremiumBenefits": "Visualizza vantaggi Premium",
+  "createCategory": "Crea",
+
+  "addGroupTitle": "Aggiungi gruppo",
+
+  "groupNameLabel": "Gruppo",
+  "groupNameHint": "Inserisci gruppo",
+
+  "groupErrorEmpty": "Il nome del gruppo è obbligatorio",
+  "groupErrorTooShort": "Il nome del gruppo è troppo corto",
+  "groupErrorTooLong": "Il nome del gruppo è troppo lungo",
+  "groupErrorSymbols": "Il nome del gruppo non può contenere simboli",
+  "groupErrorNumbers": "Il nome del gruppo non può contenere numeri",
+
+  "createGroup": "Crea"
+}

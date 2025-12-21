@@ -1,0 +1,101 @@
+{
+  "@@locale": "ja",
+
+  "expiryCalendarTitle": "有効期限カレンダー",
+
+  "calendarIntro":
+    "有効期限の確認方法を選択してください：\n\n• 今日からの日数を入力。\n• または日付を選択。\n\nVaultara はその日に期限切れになる項目を表示します。",
+
+  "daysFromTodayLabel": "今日からの日数",
+  "daysFromTodayHint": "例：0、1、7、30",
+
+  "apply": "適用",
+  "pickDateOnCalendar": "カレンダーから日付を選択",
+
+  "today": "今日",
+  "tomorrow": "明日",
+  "in7Days": "7日後",
+  "in30Days": "30日後",
+
+  "inDays": "{days}日後",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "日数を入力してください",
+  "invalidDaysError": "有効な日数を入力してください（0以上）",
+
+  "showingItemsRelative": "{time} に期限切れの項目",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "選択した日に期限切れの項目",
+  "noItemsOnDate": "この日に期限切れの項目はありません",
+
+  "editorAddTitle": "アイテムを追加",
+  "editorEditTitle": "アイテムを編集",
+
+  "editorCategory": "カテゴリ",
+  "editorCategoryHint": "カテゴリを選択",
+
+  "editorGroup": "グループ",
+  "editorGroupHint": "グループを選択",
+
+  "editorItemName": "アイテム名",
+  "editorItemNameHint": "アイテム名を入力",
+
+  "editorExpiryDate": "有効期限",
+  "editorExpiryDateHint": "有効期限を選択",
+
+  "editorErrorCategory": "カテゴリを選択してください",
+  "editorErrorGroup": "グループを選択してください",
+  "editorErrorName": "アイテム名は必須です",
+  "editorErrorExpiry": "有効期限を選択してください",
+  "editorErrorExpiryPast": "有効期限は今日以降である必要があります",
+
+  "cancel": "キャンセル",
+  "save": "保存",
+
+  "addCategoryTitle": "カテゴリを追加",
+  "unlimitedCategories": "カテゴリ無制限（Premium）",
+
+  "categoryUsage": "{current} / {limit} カテゴリ使用中",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "カテゴリ名",
+  "categoryNameHint": "カテゴリ名を入力",
+
+  "categoryLimitReached":
+    "ベーシックプランの上限に達しました。Premium にアップグレードしてください。",
+
+  "categoryLimitInfo":
+    "ベーシックプランでは最大 {limit} 件のカテゴリを作成できます",
+
+  "categoryErrorEmpty": "カテゴリ名は必須です",
+  "categoryErrorTooShort": "カテゴリ名が短すぎます",
+  "categoryErrorTooLong": "カテゴリ名が長すぎます",
+  "categoryErrorSymbols": "カテゴリ名に記号は使用できません",
+  "categoryErrorNumbers": "カテゴリ名に数字は使用できません",
+
+  "upgradeRequired": "アップグレードが必要",
+  "viewPremiumBenefits": "Premium の特典を見る",
+  "createCategory": "作成",
+
+  "addGroupTitle": "グループを追加",
+  "groupNameLabel": "グループ",
+  "groupNameHint": "グループ名を入力",
+
+  "groupErrorEmpty": "グループ名は必須です",
+  "groupErrorTooShort": "グループ名が短すぎます",
+  "groupErrorTooLong": "グループ名が長すぎます",
+  "groupErrorSymbols": "グループ名に記号は使用できません",
+  "groupErrorNumbers": "グループ名に数字は使用できません",
+
+  "createGroup": "作成"
+}

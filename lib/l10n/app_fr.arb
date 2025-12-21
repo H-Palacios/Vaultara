@@ -1,0 +1,101 @@
+{
+  "@@locale": "fr",
+
+  "expiryCalendarTitle": "Calendrier des expirations",
+
+  "calendarIntro":
+    "Choisissez comment consulter vos expirations :\n\n• Indiquez le nombre de jours à partir d’aujourd’hui.\n• Ou sélectionnez une date précise dans le calendrier.\n\nVaultara affichera les éléments expirant ce jour-là.",
+
+  "daysFromTodayLabel": "Jours à partir d’aujourd’hui",
+  "daysFromTodayHint": "Par exemple 0, 1, 7, 30",
+
+  "apply": "Appliquer",
+  "pickDateOnCalendar": "Choisir une date dans le calendrier",
+
+  "today": "Aujourd’hui",
+  "tomorrow": "Demain",
+  "in7Days": "Dans 7 jours",
+  "in30Days": "Dans 30 jours",
+
+  "inDays": "dans {days} jours",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Saisir un nombre de jours.",
+  "invalidDaysError": "Saisir un nombre valide de jours (0 ou plus).",
+
+  "showingItemsRelative": "Éléments expirant {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Éléments expirant à la date sélectionnée",
+  "noItemsOnDate": "Aucun élément n’expire à cette date.",
+
+  "editorAddTitle": "Ajouter un élément",
+  "editorEditTitle": "Modifier l’élément",
+
+  "editorCategory": "Catégorie",
+  "editorCategoryHint": "Sélectionner une catégorie",
+
+  "editorGroup": "Groupe",
+  "editorGroupHint": "Sélectionner un groupe",
+
+  "editorItemName": "Nom de l’élément",
+  "editorItemNameHint": "Entrer le nom de l’élément",
+
+  "editorExpiryDate": "Date d’expiration",
+  "editorExpiryDateHint": "Sélectionner la date d’expiration",
+
+  "editorErrorCategory": "Sélectionner une catégorie",
+  "editorErrorGroup": "Sélectionner un groupe",
+  "editorErrorName": "Le nom de l’élément est requis",
+  "editorErrorExpiry": "Sélectionner une date d’expiration",
+  "editorErrorExpiryPast": "La date doit être aujourd’hui ou future",
+
+  "cancel": "Annuler",
+  "save": "Enregistrer",
+
+  "addCategoryTitle": "Ajouter une catégorie",
+  "unlimitedCategories": "Catégories illimitées (Premium)",
+
+  "categoryUsage": "{current} / {limit} catégories utilisées",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nom de la catégorie",
+  "categoryNameHint": "Entrer une catégorie",
+
+  "categoryLimitReached":
+    "La limite du plan Basique est atteinte. Passez à Premium pour créer des catégories illimitées.",
+
+  "categoryLimitInfo":
+    "Le plan Basique permet de créer jusqu’à {limit} catégories personnalisées.",
+
+  "categoryErrorEmpty": "Le nom de la catégorie est requis",
+  "categoryErrorTooShort": "Le nom de la catégorie est trop court",
+  "categoryErrorTooLong": "Le nom de la catégorie est trop long",
+  "categoryErrorSymbols": "Le nom de la catégorie ne peut pas contenir de symboles",
+  "categoryErrorNumbers": "Le nom de la catégorie ne peut pas contenir de chiffres",
+
+  "upgradeRequired": "Mise à niveau requise",
+  "viewPremiumBenefits": "Voir les avantages Premium",
+  "createCategory": "Créer",
+
+  "addGroupTitle": "Ajouter un groupe",
+  "groupNameLabel": "Groupe",
+  "groupNameHint": "Entrer un groupe",
+
+  "groupErrorEmpty": "Le nom du groupe est requis",
+  "groupErrorTooShort": "Le nom du groupe est trop court",
+  "groupErrorTooLong": "Le nom du groupe est trop long",
+  "groupErrorSymbols": "Le nom du groupe ne peut pas contenir de symboles",
+  "groupErrorNumbers": "Le nom du groupe ne peut pas contenir de chiffres",
+
+  "createGroup": "Créer"
+}

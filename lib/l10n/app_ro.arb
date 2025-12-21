@@ -1,0 +1,106 @@
+{
+  "@@locale": "ro",
+
+  "expiryCalendarTitle": "Calendar de expirare",
+
+  "calendarIntro":
+    "Alegeți cum doriți să vizualizați expirările:\n\n• Introduceți numărul de zile de la astăzi.\n• Sau selectați o dată exactă în calendar.\n\nVaultara va afișa elementele care expiră în acea zi.",
+
+  "daysFromTodayLabel": "Zile de la astăzi",
+  "daysFromTodayHint": "De exemplu 0, 1, 7, 30",
+
+  "apply": "Aplică",
+  "pickDateOnCalendar": "Selectați data din calendar",
+
+  "today": "Astăzi",
+  "tomorrow": "Mâine",
+  "in7Days": "Peste 7 zile",
+  "in30Days": "Peste 30 de zile",
+
+  "inDays": "peste {days} zile",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Numărul de zile este obligatoriu",
+  "invalidDaysError": "Număr valid necesar (0 sau mai mult)",
+
+  "showingItemsRelative": "Elemente care expiră {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Elemente care expiră la data selectată",
+  "noItemsOnDate": "Nu există elemente care expiră în acea zi",
+
+  "editorAddTitle": "Adaugă element",
+  "editorEditTitle": "Editează element",
+
+  "editorCategory": "Categorie",
+  "editorCategoryHint": "Selectați categorie",
+
+  "editorGroup": "Grup",
+  "editorGroupHint": "Selectați grup în această categorie",
+
+  "editorItemName": "Nume element",
+  "editorItemNameHint": "Introduceți numele elementului",
+
+  "editorExpiryDate": "Data expirării",
+  "editorExpiryDateHint": "Selectați data expirării",
+
+  "editorErrorCategory": "Categoria este obligatorie",
+  "editorErrorGroup": "Grupul este obligatoriu",
+  "editorErrorName": "Numele elementului este obligatoriu",
+  "editorErrorExpiry": "Data expirării este obligatorie",
+  "editorErrorExpiryPast": "Data trebuie să fie astăzi sau în viitor",
+
+  "cancel": "Anulează",
+  "save": "Salvează",
+
+  "addCategoryTitle": "Adaugă categorie",
+  "unlimitedCategories": "Categorii nelimitate (Premium)",
+
+  "categoryUsage": "{current} / {limit} categorii utilizate",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nume categorie",
+  "categoryNameHint": "Introduceți categoria",
+
+  "categoryLimitReached":
+    "Limita planului Basic a fost atinsă. Premium permite categorii nelimitate",
+
+  "categoryLimitInfo":
+    "Planul Basic permite până la {limit} categorii",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Numele categoriei este obligatoriu",
+  "categoryErrorTooShort": "Numele categoriei este prea scurt",
+  "categoryErrorTooLong": "Numele categoriei este prea lung",
+  "categoryErrorSymbols": "Numele nu poate conține doar simboluri",
+  "categoryErrorNumbers": "Numele nu poate conține cifre",
+
+  "upgradeRequired": "Este necesară actualizarea",
+  "viewPremiumBenefits": "Vezi beneficiile Premium",
+
+  "createCategory": "Creează",
+
+  "addGroupTitle": "Adaugă grup",
+
+  "groupNameLabel": "Grup",
+  "groupNameHint": "Introduceți grupul",
+
+  "groupErrorEmpty": "Numele grupului este obligatoriu",
+  "groupErrorTooShort": "Numele grupului este prea scurt",
+  "groupErrorTooLong": "Numele grupului este prea lung",
+  "groupErrorSymbols": "Numele grupului nu poate conține doar simboluri",
+  "groupErrorNumbers": "Numele grupului nu poate conține cifre",
+
+  "createGroup": "Creează"
+}

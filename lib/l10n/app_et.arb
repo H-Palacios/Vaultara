@@ -1,0 +1,107 @@
+{
+  "@@locale": "et",
+
+  "expiryCalendarTitle": "Aegumiskalender",
+
+  "calendarIntro":
+    "Vali, kuidas soovid aegumisi vaadata:\n\n• Sisesta päevade arv alates tänasest.\n• Või vali konkreetne kuupäev kalendrist.\n\nVaultara näitab esemeid, mis aeguvad sel päeval.",
+
+  "daysFromTodayLabel": "Päevi alates tänasest",
+  "daysFromTodayHint": "Näiteks 0, 1, 7, 30",
+
+  "apply": "Rakenda",
+  "pickDateOnCalendar": "Vali kuupäev kalendrist",
+
+  "today": "Täna",
+  "tomorrow": "Homme",
+  "in7Days": "7 päeva pärast",
+  "in30Days": "30 päeva pärast",
+
+  "inDays": "{days} päeva pärast",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Sisesta päevade arv",
+  "invalidDaysError": "Sisesta kehtiv arv (0 või rohkem)",
+
+  "showingItemsRelative": "Aeguvad esemed {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Valitud kuupäeval aeguvad esemed",
+  "noItemsOnDate": "Sellel kuupäeval ei aegu ühtegi eset",
+
+  "editorAddTitle": "Lisa ese",
+  "editorEditTitle": "Muuda eset",
+
+  "editorCategory": "Kategooria",
+  "editorCategoryHint": "Vali kategooria",
+
+  "editorGroup": "Grupp",
+  "editorGroupHint": "Vali grupp",
+
+  "editorItemName": "Eseme nimi",
+  "editorItemNameHint": "Sisesta eseme nimi",
+
+  "editorExpiryDate": "Aegumiskuupäev",
+  "editorExpiryDateHint": "Vali aegumiskuupäev",
+
+  "editorErrorCategory": "Kategooria on kohustuslik",
+  "editorErrorGroup": "Grupp on kohustuslik",
+  "editorErrorName": "Eseme nimi on kohustuslik",
+  "editorErrorExpiry": "Aegumiskuupäev on kohustuslik",
+  "editorErrorExpiryPast": "Kuupäev peab olema täna või tulevikus",
+
+  "cancel": "Tühista",
+  "save": "Salvesta",
+
+  "addCategoryTitle": "Lisa kategooria",
+  "unlimitedCategories": "Piiramatud kategooriad (Premium)",
+
+  "categoryUsage": "{current} / {limit} kasutatud kategooriat",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategooria nimi",
+  "categoryNameHint": "Sisesta kategooria",
+
+  "categoryLimitReached":
+    "Oled saavutanud Basic-plaani piiri {limit} kategooriat. Uuenda Premiumile.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Basic-plaan võimaldab luua kuni {limit} kohandatud kategooriat.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategooria nimi on kohustuslik",
+  "categoryErrorTooShort": "Kategooria nimi on liiga lühike",
+  "categoryErrorTooLong": "Kategooria nimi on liiga pikk",
+  "categoryErrorSymbols": "Nimi ei tohi sisaldada sümboleid",
+  "categoryErrorNumbers": "Nimi ei tohi sisaldada numbreid",
+
+  "upgradeRequired": "Vajalik uuendus",
+  "viewPremiumBenefits": "Vaata Premiumi eeliseid",
+  "createCategory": "Loo",
+
+  "addGroupTitle": "Lisa grupp",
+  "groupNameLabel": "Grupp",
+  "groupNameHint": "Sisesta grupp",
+
+  "groupErrorEmpty": "Grupi nimi on kohustuslik",
+  "groupErrorTooShort": "Grupi nimi on liiga lühike",
+  "groupErrorTooLong": "Grupi nimi on liiga pikk",
+  "groupErrorSymbols": "Nimi ei tohi sisaldada sümboleid",
+  "groupErrorNumbers": "Nimi ei tohi sisaldada numbreid",
+
+  "createGroup": "Loo"
+}

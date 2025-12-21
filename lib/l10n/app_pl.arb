@@ -1,0 +1,106 @@
+{
+  "@@locale": "pl",
+
+  "expiryCalendarTitle": "Kalendarz wygaśnięć",
+
+  "calendarIntro":
+    "Wybierz sposób przeglądania terminów wygaśnięcia:\n\n• Wpisz liczbę dni od dzisiaj.\n• Lub wybierz konkretną datę w kalendarzu.\n\nVaultara pokaże elementy wygasające w tym dniu.",
+
+  "daysFromTodayLabel": "Dni od dziś",
+  "daysFromTodayHint": "Na przykład 0, 1, 7, 30",
+
+  "apply": "Zastosuj",
+  "pickDateOnCalendar": "Wybierz datę w kalendarzu",
+
+  "today": "Dziś",
+  "tomorrow": "Jutro",
+  "in7Days": "Za 7 dni",
+  "in30Days": "Za 30 dni",
+
+  "inDays": "za {days} dni",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Liczba dni jest wymagana",
+  "invalidDaysError": "Wymagana jest prawidłowa liczba dni (0 lub więcej)",
+
+  "showingItemsRelative": "Wyświetlane są elementy wygasające {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Wyświetlane są elementy wygasające w wybranym dniu",
+  "noItemsOnDate": "Brak elementów wygasających tego dnia",
+
+  "editorAddTitle": "Dodaj element",
+  "editorEditTitle": "Edytuj element",
+
+  "editorCategory": "Kategoria",
+  "editorCategoryHint": "Wybierz kategorię",
+
+  "editorGroup": "Grupa",
+  "editorGroupHint": "Wybierz grupę w tej kategorii",
+
+  "editorItemName": "Nazwa elementu",
+  "editorItemNameHint": "Wpisz nazwę elementu",
+
+  "editorExpiryDate": "Data wygaśnięcia",
+  "editorExpiryDateHint": "Wybierz datę wygaśnięcia",
+
+  "editorErrorCategory": "Kategoria jest wymagana",
+  "editorErrorGroup": "Grupa jest wymagana",
+  "editorErrorName": "Nazwa elementu jest wymagana",
+  "editorErrorExpiry": "Data wygaśnięcia jest wymagana",
+  "editorErrorExpiryPast": "Data musi być dzisiejsza lub przyszła",
+
+  "cancel": "Anuluj",
+  "save": "Zapisz",
+
+  "addCategoryTitle": "Dodaj kategorię",
+  "unlimitedCategories": "Nieograniczone kategorie (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategorii użyto",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nazwa kategorii",
+  "categoryNameHint": "Wpisz kategorię",
+
+  "categoryLimitReached":
+    "Osiągnięto limit planu Basic. Premium umożliwia nieograniczone kategorie",
+
+  "categoryLimitInfo":
+    "Plan Basic pozwala na {limit} kategorii",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Nazwa kategorii jest wymagana",
+  "categoryErrorTooShort": "Nazwa kategorii jest za krótka",
+  "categoryErrorTooLong": "Nazwa kategorii jest za długa",
+  "categoryErrorSymbols": "Nazwa kategorii nie może zawierać tylko symboli",
+  "categoryErrorNumbers": "Nazwa kategorii nie może zawierać cyfr",
+
+  "upgradeRequired": "Wymagana aktualizacja",
+  "viewPremiumBenefits": "Zobacz korzyści Premium",
+
+  "createCategory": "Utwórz",
+
+  "addGroupTitle": "Dodaj grupę",
+
+  "groupNameLabel": "Grupa",
+  "groupNameHint": "Wpisz grupę",
+
+  "groupErrorEmpty": "Nazwa grupy jest wymagana",
+  "groupErrorTooShort": "Nazwa grupy jest za krótka",
+  "groupErrorTooLong": "Nazwa grupy jest za długa",
+  "groupErrorSymbols": "Nazwa grupy nie może zawierać tylko symboli",
+  "groupErrorNumbers": "Nazwa grupy nie może zawierać cyfr",
+
+  "createGroup": "Utwórz"
+}

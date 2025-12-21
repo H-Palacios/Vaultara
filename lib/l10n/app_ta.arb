@@ -1,0 +1,106 @@
+{
+  "@@locale": "ta",
+
+  "expiryCalendarTitle": "காலாவதி நாட்காட்டி",
+
+  "calendarIntro":
+    "காலாவதிகளை பார்க்கும் முறையைத் தேர்ந்தெடுக்கவும்:\n\n• இன்று முதல் நாட்களின் எண்ணிக்கையை உள்ளிடவும்.\n• அல்லது நாட்காட்டியில் இருந்து ஒரு குறிப்பிட்ட தேதியைத் தேர்ந்தெடுக்கவும்.\n\nVaultara அந்த நாளில் காலாவதியாகும் பொருட்களை காட்டுகிறது.",
+
+  "daysFromTodayLabel": "இன்றிலிருந்து நாட்கள்",
+  "daysFromTodayHint": "உதாரணம் 0, 1, 7, 30",
+
+  "apply": "பயன்படுத்து",
+  "pickDateOnCalendar": "நாட்காட்டியில் தேதி தேர்வு செய்",
+
+  "today": "இன்று",
+  "tomorrow": "நாளை",
+  "in7Days": "7 நாட்களில்",
+  "in30Days": "30 நாட்களில்",
+
+  "inDays": "{days} நாட்களில்",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "நாட்களின் எண்ணிக்கை அவசியம்",
+  "invalidDaysError": "சரியான நாட்களின் எண்ணிக்கையை உள்ளிடவும் (0 அல்லது அதற்கு மேல்)",
+
+  "showingItemsRelative": "{time} காலாவதியாகும் பொருட்கள்",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "தேர்ந்தெடுக்கப்பட்ட தேதியில் காலாவதியாகும் பொருட்கள்",
+  "noItemsOnDate": "இந்த நாளில் காலாவதியாகும் பொருட்கள் இல்லை",
+
+  "editorAddTitle": "உருப்படியை சேர்க்கவும்",
+  "editorEditTitle": "உருப்படியை திருத்தவும்",
+
+  "editorCategory": "வகை",
+  "editorCategoryHint": "ஒரு வகையைத் தேர்ந்தெடுக்கவும்",
+
+  "editorGroup": "குழு",
+  "editorGroupHint": "இந்த வகையில் ஒரு குழுவைத் தேர்ந்தெடுக்கவும்",
+
+  "editorItemName": "உருப்படியின் பெயர்",
+  "editorItemNameHint": "உருப்படியின் பெயரை உள்ளிடவும்",
+
+  "editorExpiryDate": "காலாவதி தேதி",
+  "editorExpiryDateHint": "காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்",
+
+  "editorErrorCategory": "வகை அவசியம்",
+  "editorErrorGroup": "குழு அவசியம்",
+  "editorErrorName": "உருப்படியின் பெயர் அவசியம்",
+  "editorErrorExpiry": "தேதி அவசியம்",
+  "editorErrorExpiryPast": "தேதி இன்று அல்லது எதிர்காலமாக இருக்க வேண்டும்",
+
+  "cancel": "ரத்து",
+  "save": "சேமி",
+
+  "addCategoryTitle": "வகையை சேர்க்கவும்",
+  "unlimitedCategories": "வரம்பற்ற வகைகள் (Premium)",
+
+  "categoryUsage": "{current} / {limit} பயன்படுத்தப்பட்ட வகைகள்",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "வகையின் பெயர்",
+  "categoryNameHint": "வகையை உள்ளிடவும்",
+
+  "categoryLimitReached":
+    "Basic திட்ட வரம்பு அடைந்தது. Premium வரம்பற்ற வகைகளை அனுமதிக்கும்",
+
+  "categoryLimitInfo":
+    "Basic திட்டம் {limit} வகைகள் வரை அனுமதிக்கும்",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "வகையின் பெயர் அவசியம்",
+  "categoryErrorTooShort": "வகையின் பெயர் மிகவும் குறுகியது",
+  "categoryErrorTooLong": "வகையின் பெயர் மிகவும் நீளமானது",
+  "categoryErrorSymbols": "பெயர் சின்னங்களால் மட்டும் இருக்க முடியாது",
+  "categoryErrorNumbers": "பெயரில் எண்கள் இருக்க முடியாது",
+
+  "upgradeRequired": "மேம்படுத்தல் தேவை",
+  "viewPremiumBenefits": "Premium நன்மைகளை காண்க",
+
+  "createCategory": "உருவாக்கு",
+
+  "addGroupTitle": "குழுவை சேர்க்கவும்",
+
+  "groupNameLabel": "குழு",
+  "groupNameHint": "குழுவை உள்ளிடவும்",
+
+  "groupErrorEmpty": "குழு பெயர் அவசியம்",
+  "groupErrorTooShort": "குழு பெயர் மிகவும் குறுகியது",
+  "groupErrorTooLong": "குழு பெயர் மிகவும் நீளமானது",
+  "groupErrorSymbols": "குழு பெயர் சின்னங்களால் மட்டும் இருக்க முடியாது",
+  "groupErrorNumbers": "குழு பெயரில் எண்கள் இருக்க முடியாது",
+
+  "createGroup": "உருவாக்கு"
+}

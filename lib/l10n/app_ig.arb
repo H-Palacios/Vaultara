@@ -1,0 +1,105 @@
+{
+  "@@locale": "ig",
+
+  "expiryCalendarTitle": "Kalenda ngwụcha",
+
+  "calendarIntro":
+    "Họrọ otu ị ga-esi lee ụbọchị ngwụcha:\n\n• Tinye ọnụọgụ ụbọchị site taa.\n• Ma ọ bụ họrọ otu ụbọchị na kalenda.\n\nVaultara ga-egosi ihe ndị ga-agwụ n'ụbọchị ahụ.",
+
+  "daysFromTodayLabel": "Ụbọchị site taa",
+  "daysFromTodayHint": "Dịka ọmụmaatụ 0, 1, 7, 30",
+
+  "apply": "Tinye",
+  "pickDateOnCalendar": "Họrọ ụbọchị na kalenda",
+
+  "today": "Taa",
+  "tomorrow": "Echi",
+  "in7Days": "N'ime ụbọchị 7",
+  "in30Days": "N'ime ụbọchị 30",
+
+  "inDays": "n'ime ụbọchị {days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Tinye ọnụọgụ ụbọchị",
+  "invalidDaysError": "Tinye ọnụọgụ ziri ezi (0 ma ọ bụ karịa)",
+
+  "showingItemsRelative": "Na-egosi ihe ga-agwụ {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Na-egosi ihe ga-agwụ n'ụbọchị ahọpụtara",
+  "noItemsOnDate": "Enweghị ihe ga-agwụ n'ụbọchị ahụ",
+
+  "editorAddTitle": "Tinye ihe",
+  "editorEditTitle": "Dezie ihe",
+
+  "editorCategory": "Kategọrị",
+  "editorCategoryHint": "Họrọ kategọrị",
+
+  "editorGroup": "Otu",
+  "editorGroupHint": "Họrọ otu",
+
+  "editorItemName": "Aha ihe",
+  "editorItemNameHint": "Tinye aha ihe",
+
+  "editorExpiryDate": "Ụbọchị ngwụcha",
+  "editorExpiryDateHint": "Họrọ ụbọchị ngwụcha",
+
+  "editorErrorCategory": "Kategọrị achọrọ",
+  "editorErrorGroup": "Otu achọrọ",
+  "editorErrorName": "Aha ihe achọrọ",
+  "editorErrorExpiry": "Ụbọchị ngwụcha achọrọ",
+  "editorErrorExpiryPast": "Ụbọchị ga-abụ taa ma ọ bụ n’ọdịnihu",
+
+  "cancel": "Kagbuo",
+  "save": "Chekwaa",
+
+  "addCategoryTitle": "Tinye kategọrị",
+  "unlimitedCategories": "Kategọrị na-enweghị oke (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategọrị ejirila",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Aha kategọrị",
+  "categoryNameHint": "Tinye kategọrị",
+
+  "categoryLimitReached":
+    "Eruola oke nke Basic. Premium na-enye kategọrị na-enweghị oke",
+
+  "categoryLimitInfo":
+    "Basic na-enye ruo {limit} kategọrị",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Aha kategọrị achọrọ",
+  "categoryErrorTooShort": "Aha kategọrị dị mkpụmkpụ",
+  "categoryErrorTooLong": "Aha kategọrị dị ogologo",
+  "categoryErrorSymbols": "Aha kategọrị apụghị ịbụ naanị akara",
+  "categoryErrorNumbers": "Aha kategọrị apụghị ịnwe ọnụọgụ",
+
+  "upgradeRequired": "Achọrọ mmelite",
+  "viewPremiumBenefits": "Lelee uru Premium",
+  "createCategory": "Mepụta",
+
+  "addGroupTitle": "Tinye otu",
+
+  "groupNameLabel": "Otu",
+  "groupNameHint": "Tinye otu",
+
+  "groupErrorEmpty": "Aha otu achọrọ",
+  "groupErrorTooShort": "Aha otu dị mkpụmkpụ",
+  "groupErrorTooLong": "Aha otu dị ogologo",
+  "groupErrorSymbols": "Aha otu apụghị ịbụ akara",
+  "groupErrorNumbers": "Aha otu apụghị ịnwe ọnụọgụ",
+
+  "createGroup": "Mepụta"
+}

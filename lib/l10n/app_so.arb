@@ -1,0 +1,106 @@
+{
+  "@@locale": "so",
+
+  "expiryCalendarTitle": "Jadwalka dhicista",
+
+  "calendarIntro":
+    "Dooro sida loo arko taariikhaha dhicista:\n\n• Geli tirada maalmaha laga bilaabo maanta.\n• Ama dooro taariikh gaar ah oo jadwalka ah.\n\nVaultara wuxuu muujinayaa waxyaabaha dhaca maalintaas.",
+
+  "daysFromTodayLabel": "Maalmo laga bilaabo maanta",
+  "daysFromTodayHint": "Tusaale 0, 1, 7, 30",
+
+  "apply": "Codso",
+  "pickDateOnCalendar": "Ka dooro taariikh jadwalka",
+
+  "today": "Maanta",
+  "tomorrow": "Berri",
+  "in7Days": "7 maalmood kadib",
+  "in30Days": "30 maalmood kadib",
+
+  "inDays": "{days} maalmood kadib",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Tirada maalmaha waa waajib",
+  "invalidDaysError": "Tiro sax ah ayaa loo baahan yahay (0 ama ka badan)",
+
+  "showingItemsRelative": "Waxyaabaha dhacaya {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Waxyaabaha dhacaya taariikhda la doortay",
+  "noItemsOnDate": "Wax dhacaya maalintaas ma jiro",
+
+  "editorAddTitle": "Ku dar shay",
+  "editorEditTitle": "Wax ka beddel shay",
+
+  "editorCategory": "Qayb",
+  "editorCategoryHint": "Dooro qayb",
+
+  "editorGroup": "Koox",
+  "editorGroupHint": "Dooro koox ka tirsan qaybtaan",
+
+  "editorItemName": "Magaca shayga",
+  "editorItemNameHint": "Geli magaca shayga",
+
+  "editorExpiryDate": "Taariikhda dhicista",
+  "editorExpiryDateHint": "Dooro taariikhda dhicista",
+
+  "editorErrorCategory": "Qayb waa waajib",
+  "editorErrorGroup": "Koox waa waajib",
+  "editorErrorName": "Magaca shayga waa waajib",
+  "editorErrorExpiry": "Taariikh waa waajib",
+  "editorErrorExpiryPast": "Taariikhdu waa inay noqotaa maanta ama mustaqbal",
+
+  "cancel": "Jooji",
+  "save": "Kaydi",
+
+  "addCategoryTitle": "Ku dar qayb",
+  "unlimitedCategories": "Qaybo aan xadidnayn (Premium)",
+
+  "categoryUsage": "{current} / {limit} qaybo la isticmaalay",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Magaca qaybta",
+  "categoryNameHint": "Geli qayb",
+
+  "categoryLimitReached":
+    "Xadka Basic waa la gaadhay. Premium wuxuu oggolaanayaa qaybo aan xad lahayn",
+
+  "categoryLimitInfo":
+    "Qorshaha Basic wuxuu oggol yahay ilaa {limit} qaybo",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Magaca qaybta waa waajib",
+  "categoryErrorTooShort": "Magaca qaybta waa gaaban",
+  "categoryErrorTooLong": "Magaca qaybta waa dheer",
+  "categoryErrorSymbols": "Magacu ma noqon karo calaamado kaliya",
+  "categoryErrorNumbers": "Magacu ma lahaan karo tirooyin",
+
+  "upgradeRequired": "Cusboonaysiin ayaa loo baahan yahay",
+  "viewPremiumBenefits": "Fiiri faa'iidooyinka Premium",
+
+  "createCategory": "Abuur",
+
+  "addGroupTitle": "Ku dar koox",
+
+  "groupNameLabel": "Koox",
+  "groupNameHint": "Geli koox",
+
+  "groupErrorEmpty": "Magaca kooxda waa waajib",
+  "groupErrorTooShort": "Magaca kooxda waa gaaban",
+  "groupErrorTooLong": "Magaca kooxda waa dheer",
+  "groupErrorSymbols": "Magaca kooxda ma noqon karo calaamado kaliya",
+  "groupErrorNumbers": "Magaca kooxda ma lahaan karo tirooyin",
+
+  "createGroup": "Abuur"
+}

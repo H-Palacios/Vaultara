@@ -1,0 +1,107 @@
+{
+  "@@locale": "eu",
+
+  "expiryCalendarTitle": "Iraungitze-egutegia",
+
+  "calendarIntro":
+    "Aukeratu nola ikusi nahi dituzun iraungitzeak:\n\n• Idatzi gaurtik zenbat egunetara begiratu nahi duzun.\n• Edo hautatu data zehatz bat egutegian.\n\nVaultarak egun horretan iraungitzen diren elementuak erakutsiko ditu.",
+
+  "daysFromTodayLabel": "Egunak gaurtik",
+  "daysFromTodayHint": "Adibidez 0, 1, 7, 30",
+
+  "apply": "Aplikatu",
+  "pickDateOnCalendar": "Hautatu data egutegian",
+
+  "today": "Gaur",
+  "tomorrow": "Bihar",
+  "in7Days": "7 egun barru",
+  "in30Days": "30 egun barru",
+
+  "inDays": "{days} egun barru",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Sartu egun kopurua",
+  "invalidDaysError": "Sartu baliozko zenbakia (0 edo gehiago)",
+
+  "showingItemsRelative": "{time} iraungitzen diren elementuak",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Hautatutako egunean iraungitzen diren elementuak",
+  "noItemsOnDate": "Egun horretan ez da elementurik iraungitzen",
+
+  "editorAddTitle": "Elementua gehitu",
+  "editorEditTitle": "Elementua editatu",
+
+  "editorCategory": "Kategoria",
+  "editorCategoryHint": "Hautatu kategoria",
+
+  "editorGroup": "Taldea",
+  "editorGroupHint": "Hautatu taldea",
+
+  "editorItemName": "Elementuaren izena",
+  "editorItemNameHint": "Idatzi izena",
+
+  "editorExpiryDate": "Iraungitze-data",
+  "editorExpiryDateHint": "Hautatu data",
+
+  "editorErrorCategory": "Kategoria beharrezkoa da",
+  "editorErrorGroup": "Taldea beharrezkoa da",
+  "editorErrorName": "Izena beharrezkoa da",
+  "editorErrorExpiry": "Data beharrezkoa da",
+  "editorErrorExpiryPast": "Data gaurkoa edo etorkizunekoa izan behar da",
+
+  "cancel": "Utzi",
+  "save": "Gorde",
+
+  "addCategoryTitle": "Kategoria gehitu",
+  "unlimitedCategories": "Mugarik gabeko kategoriak (Premium)",
+
+  "categoryUsage": "{current} / {limit} erabilitako kategoriak",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Kategoriaren izena",
+  "categoryNameHint": "Sartu kategoria",
+
+  "categoryLimitReached":
+    "Basic planaren {limit} kategoriaren muga lortu duzu. Premiumera eguneratu mugarik gabe sortzeko.",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryLimitInfo":
+    "Basic planak gehienez {limit} kategoria pertsonalizatu sortzea ahalbidetzen du.",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Kategoriaren izena beharrezkoa da",
+  "categoryErrorTooShort": "Izena laburregia da",
+  "categoryErrorTooLong": "Izena luzeegia da",
+  "categoryErrorSymbols": "Izena ezin da sinboloz osatu",
+  "categoryErrorNumbers": "Izena ezin da zenbakiekin osatu",
+
+  "upgradeRequired": "Eguneratzea beharrezkoa da",
+  "viewPremiumBenefits": "Ikusi Premium abantailak",
+  "createCategory": "Sortu",
+
+  "addGroupTitle": "Taldea gehitu",
+  "groupNameLabel": "Taldea",
+  "groupNameHint": "Sartu taldea",
+
+  "groupErrorEmpty": "Taldearen izena beharrezkoa da",
+  "groupErrorTooShort": "Taldearen izena laburregia da",
+  "groupErrorTooLong": "Taldearen izena luzeegia da",
+  "groupErrorSymbols": "Izena ezin da sinboloz osatu",
+  "groupErrorNumbers": "Izena ezin da zenbakiekin osatu",
+
+  "createGroup": "Sortu"
+}

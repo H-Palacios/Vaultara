@@ -1,0 +1,105 @@
+{
+  "@@locale": "xh",
+
+  "expiryCalendarTitle": "Ikhalenda yokuphelelwa lixesha",
+
+  "calendarIntro":
+    "Khetha indlela yokujonga imihla yokuphelelwa lixesha:\n\n• Faka inani leentsuku ukusuka namhlanje.\n• Okanye khetha umhla kwikhalenda.\n\nIVaultara ibonisa izinto eziphelelwa lixesha ngaloo mini.",
+
+  "daysFromTodayLabel": "Iintsuku ukusuka namhlanje",
+  "daysFromTodayHint": "Umzekelo 0, 1, 7, 30",
+
+  "apply": "Sebenzisa",
+  "pickDateOnCalendar": "Khetha umhla kwikhalenda",
+
+  "today": "Namhlanje",
+  "tomorrow": "Ngomso",
+  "in7Days": "Kwiintsuku ezi-7",
+  "in30Days": "Kwiintsuku ezi-30",
+
+  "inDays": "kwiintsuku ezi-{days}",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "Inani leentsuku liyafuneka",
+  "invalidDaysError": "Faka inani elichanekileyo (0 okanye ngaphezulu)",
+
+  "showingItemsRelative": "Izinto eziphelelwa lixesha {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "Izinto eziphelelwa lixesha kumhla okhethiweyo",
+  "noItemsOnDate": "Akukho zinto ziphelelwa lixesha ngaloo mini",
+
+  "editorAddTitle": "Yongeza into",
+  "editorEditTitle": "Hlela into",
+
+  "editorCategory": "Udidi",
+  "editorCategoryHint": "Khetha udidi",
+
+  "editorGroup": "Iqela",
+  "editorGroupHint": "Khetha iqela kolu didi",
+
+  "editorItemName": "Igama lento",
+  "editorItemNameHint": "Faka igama lento",
+
+  "editorExpiryDate": "Umhla wokuphelelwa",
+  "editorExpiryDateHint": "Khetha umhla",
+
+  "editorErrorCategory": "Udidi luyafuneka",
+  "editorErrorGroup": "Iqela liyafuneka",
+  "editorErrorName": "Igama lento liyafuneka",
+  "editorErrorExpiry": "Umhla uyafuneka",
+  "editorErrorExpiryPast": "Umhla kufuneka ube namhlanje okanye kwixesha elizayo",
+
+  "cancel": "Rhoxisa",
+  "save": "Gcina",
+
+  "addCategoryTitle": "Yongeza udidi",
+  "unlimitedCategories": "Iindidi ezingapheliyo (Premium)",
+
+  "categoryUsage": "{current} / {limit} iindidi zisetyenzisiwe",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Igama lodidi",
+  "categoryNameHint": "Faka udidi",
+
+  "categoryLimitReached":
+    "Umda we-Basic ufikelelwe. Premium ivumela iindidi ezingapheliyo",
+
+  "categoryLimitInfo":
+    "I-Basic ivumela ukuya kuthi ga kwiindidi {limit}",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "Igama lodidi liyafuneka",
+  "categoryErrorTooShort": "Igama lodidi lifutshane kakhulu",
+  "categoryErrorTooLong": "Igama lodidi lide kakhulu",
+  "categoryErrorSymbols": "Igama alinakuba ziimpawu kuphela",
+  "categoryErrorNumbers": "Igama alinakuba neenombolo",
+
+  "upgradeRequired": "Uphuculo luyafuneka",
+  "viewPremiumBenefits": "Jonga izibonelelo ze-Premium",
+
+  "createCategory": "Yenza",
+
+  "addGroupTitle": "Yongeza iqela",
+  "groupNameLabel": "Iqela",
+  "groupNameHint": "Faka iqela",
+
+  "groupErrorEmpty": "Igama leqela liyafuneka",
+  "groupErrorTooShort": "Igama leqela lifutshane kakhulu",
+  "groupErrorTooLong": "Igama leqela lide kakhulu",
+  "groupErrorSymbols": "Igama leqela alinakuba ziimpawu kuphela",
+  "groupErrorNumbers": "Igama leqela alinakuba neenombolo",
+
+  "createGroup": "Yenza"
+}

@@ -1,0 +1,105 @@
+{
+  "@@locale": "he",
+
+  "expiryCalendarTitle": "לוח תפוגה",
+
+  "calendarIntro":
+    "בחר כיצד תרצה לבדוק תאריכי תפוגה:\n\n• הזן מספר ימים מהיום.\n• או בחר תאריך מסוים בלוח השנה.\n\nVaultara תציג פריטים שפג תוקפם באותו יום.",
+
+  "daysFromTodayLabel": "ימים מהיום",
+  "daysFromTodayHint": "לדוגמה 0, 1, 7, 30",
+
+  "apply": "החל",
+  "pickDateOnCalendar": "בחר תאריך בלוח השנה",
+
+  "today": "היום",
+  "tomorrow": "מחר",
+  "in7Days": "בעוד 7 ימים",
+  "in30Days": "בעוד 30 ימים",
+
+  "inDays": "בעוד {days} ימים",
+  "@inDays": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "enterDaysError": "הזן מספר ימים",
+  "invalidDaysError": "הזן מספר חוקי (0 או יותר)",
+
+  "showingItemsRelative": "מציג פריטים שפג תוקפם {time}",
+  "@showingItemsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingItemsExact": "מציג פריטים שפג תוקפם בתאריך שנבחר",
+  "noItemsOnDate": "אין פריטים שפג תוקפם בתאריך זה",
+
+  "editorAddTitle": "הוסף פריט",
+  "editorEditTitle": "ערוך פריט",
+
+  "editorCategory": "קטגוריה",
+  "editorCategoryHint": "בחר קטגוריה",
+
+  "editorGroup": "קבוצה",
+  "editorGroupHint": "בחר קבוצה",
+
+  "editorItemName": "שם הפריט",
+  "editorItemNameHint": "הזן שם פריט",
+
+  "editorExpiryDate": "תאריך תפוגה",
+  "editorExpiryDateHint": "בחר תאריך תפוגה",
+
+  "editorErrorCategory": "קטגוריה נדרשת",
+  "editorErrorGroup": "קבוצה נדרשת",
+  "editorErrorName": "שם הפריט נדרש",
+  "editorErrorExpiry": "תאריך תפוגה נדרש",
+  "editorErrorExpiryPast": "התאריך חייב להיות היום או עתידי",
+
+  "cancel": "ביטול",
+  "save": "שמור",
+
+  "addCategoryTitle": "הוסף קטגוריה",
+  "unlimitedCategories": "קטגוריות ללא הגבלה (Premium)",
+
+  "categoryUsage": "{current} / {limit} קטגוריות בשימוש",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "שם קטגוריה",
+  "categoryNameHint": "הזן קטגוריה",
+
+  "categoryLimitReached":
+    "הגעת למגבלת תוכנית Basic. Premium מאפשר קטגוריות ללא הגבלה",
+
+  "categoryLimitInfo":
+    "תוכנית Basic מאפשרת עד {limit} קטגוריות",
+  "@categoryLimitInfo": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
+
+  "categoryErrorEmpty": "שם קטגוריה נדרש",
+  "categoryErrorTooShort": "שם הקטגוריה קצר מדי",
+  "categoryErrorTooLong": "שם הקטגוריה ארוך מדי",
+  "categoryErrorSymbols": "שם הקטגוריה לא יכול להכיל רק סמלים",
+  "categoryErrorNumbers": "שם הקטגוריה לא יכול להכיל מספרים",
+
+  "upgradeRequired": "נדרש שדרוג",
+  "viewPremiumBenefits": "הצגת יתרונות Premium",
+  "createCategory": "צור",
+
+  "addGroupTitle": "הוסף קבוצה",
+
+  "groupNameLabel": "קבוצה",
+  "groupNameHint": "הזן קבוצה",
+
+  "groupErrorEmpty": "שם הקבוצה נדרש",
+  "groupErrorTooShort": "שם הקבוצה קצר מדי",
+  "groupErrorTooLong": "שם הקבוצה ארוך מדי",
+  "groupErrorSymbols": "שם הקבוצה לא יכול להכיל סמלים",
+  "groupErrorNumbers": "שם הקבוצה לא יכול להכיל מספרים",
+
+  "createGroup": "צור"
+}

@@ -1,0 +1,115 @@
+{
+  "@@locale": "id",
+
+  "expiryCalendarTitle": "Kalender kedaluwarsa",
+
+  "calendarIntro":
+    "Pilih cara melihat masa kedaluwarsa:\n\n• Masukkan jumlah hari dari hari ini.\n• Atau pilih tanggal tertentu di kalender.\n\nVaultara akan menampilkan item yang kedaluwarsa pada hari tersebut.",
+
+  "daysFromTodayLabel": "Hari dari hari ini",
+  "daysFromTodayHint": "Contoh 0, 1, 7, 30",
+
+  "apply": "Terapkan",
+  "pickDateOnCalendar": "Pilih tanggal di kalender",
+
+  "today": "Hari ini",
+  "tomorrow": "Besok",
+  "in7Days": "Dalam 7 hari",
+  "in30Days": "Dalam 30 hari",
+
+  "inDays": "dalam {days} hari",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "Masukkan jumlah hari",
+  "invalidDaysError": "Masukkan jumlah yang valid (0 atau lebih)",
+
+  "showingItemsRelative": "Menampilkan item yang kedaluwarsa {time}",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact":
+    "Menampilkan item yang kedaluwarsa pada tanggal yang dipilih",
+
+  "noItemsOnDate":
+    "Tidak ada item yang kedaluwarsa pada hari tersebut",
+
+  "editorAddTitle": "Tambah item",
+  "editorEditTitle": "Edit item",
+
+  "editorCategory": "Kategori",
+  "editorCategoryHint": "Pilih kategori",
+
+  "editorGroup": "Grup",
+  "editorGroupHint": "Pilih grup",
+
+  "editorItemName": "Nama item",
+  "editorItemNameHint": "Masukkan nama item",
+
+  "editorExpiryDate": "Tanggal kedaluwarsa",
+  "editorExpiryDateHint": "Pilih tanggal kedaluwarsa",
+
+  "editorErrorCategory": "Kategori wajib diisi",
+  "editorErrorGroup": "Grup wajib diisi",
+  "editorErrorName": "Nama item wajib diisi",
+  "editorErrorExpiry": "Tanggal kedaluwarsa wajib diisi",
+  "editorErrorExpiryPast": "Tanggal harus hari ini atau di masa depan",
+
+  "cancel": "Batal",
+  "save": "Simpan",
+
+  "addCategoryTitle": "Tambah kategori",
+  "unlimitedCategories": "Kategori tanpa batas (Premium)",
+
+  "categoryUsage": "{current} / {limit} kategori digunakan",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Nama kategori",
+  "categoryNameHint": "Masukkan kategori",
+
+  "categoryLimitReached":
+    "Batas paket Basic tercapai. Premium menyediakan kategori tanpa batas",
+
+  "categoryLimitInfo":
+    "Paket Basic mengizinkan hingga {limit} kategori",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Nama kategori wajib diisi",
+  "categoryErrorTooShort": "Nama kategori terlalu pendek",
+  "categoryErrorTooLong": "Nama kategori terlalu panjang",
+  "categoryErrorSymbols": "Nama kategori tidak boleh hanya simbol",
+  "categoryErrorNumbers": "Nama kategori tidak boleh mengandung angka",
+
+  "upgradeRequired": "Perlu upgrade",
+  "viewPremiumBenefits": "Lihat manfaat Premium",
+
+  "createCategory": "Buat",
+
+  "addGroupTitle": "Tambah grup",
+
+  "groupNameLabel": "Grup",
+  "groupNameHint": "Masukkan grup",
+
+  "groupErrorEmpty": "Nama grup wajib diisi",
+  "groupErrorTooShort": "Nama grup terlalu pendek",
+  "groupErrorTooLong": "Nama grup terlalu panjang",
+  "groupErrorSymbols": "Nama grup tidak boleh mengandung simbol",
+  "groupErrorNumbers": "Nama grup tidak boleh mengandung angka",
+
+  "createGroup": "Buat"
+}
