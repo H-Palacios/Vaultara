@@ -4,7 +4,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'input_validator.dart';
 import 'text_normaliser.dart';
 
-class AddSubcategorySheet extends StatelessWidget {
+class AddSubcategorySheet extends StatefulWidget {
   final void Function(String name) onCreate;
 
   const AddSubcategorySheet({
@@ -13,30 +13,66 @@ class AddSubcategorySheet extends StatelessWidget {
   });
 
   @override
+  State<AddSubcategorySheet> createState() => _AddSubcategorySheetState();
+}
+
+class _AddSubcategorySheetState extends State<AddSubcategorySheet> {
+  late final TextEditingController controller;
+  late final FocusNode focusNode;
+
+  String? errorText;
+
+  bool get _hasText => controller.text.trim().isNotEmpty;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = TextEditingController();
+    focusNode = FocusNode();
+
+    focusNode.addListener(() => setState(() {}));
+
+    controller.addListener(() {
+      if (errorText != null) {
+        setState(() => errorText = null);
+      } else {
+        setState(() {});
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    focusNode.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final AppLocalizations loc = AppLocalizations.of(context)!;
-    final TextEditingController controller = TextEditingController();
-    final FocusNode focusNode = FocusNode();
+    final scheme = Theme.of(context).colorScheme;
 
-    String? errorText;
+    final bool showLabel = focusNode.hasFocus || _hasText;
+    final String? hint = showLabel ? null : loc.groupNameHint;
+    final String? label = showLabel ? loc.groupNameLabel : null;
+
+    final baseSize = Theme.of(context).textTheme.bodyMedium?.fontSize ?? 14.0;
+    final hintSize = (baseSize - 2).clamp(10.0, 40.0);
+
+    final double bottomInset = MediaQuery.of(context).viewInsets.bottom;
 
     return SafeArea(
-      child: StatefulBuilder(
-        builder: (context, setState) {
-          focusNode.addListener(() {
-            setState(() {});
-          });
-
-          final double bottomInset =
-              MediaQuery.of(context).viewInsets.bottom;
-
-          return Padding(
-            padding: EdgeInsets.only(
-              left: 16,
-              right: 16,
-              bottom: bottomInset,
-            ),
-            child: SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.only(
+          left: 16,
+          right: 16,
+          bottom: bottomInset,
+        ),
+        child: SingleChildScrollView(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 720),
               child: Padding(
                 padding: const EdgeInsets.only(top: 16, bottom: 16),
                 child: Column(
@@ -51,27 +87,25 @@ class AddSubcategorySheet extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-
                     const SizedBox(height: 16),
-
                     TextField(
                       controller: controller,
                       focusNode: focusNode,
                       decoration: InputDecoration(
-                        hintText:
-                            focusNode.hasFocus ? null : loc.groupNameHint,
-                        labelText:
-                            focusNode.hasFocus ? loc.groupNameLabel : null,
-                        floatingLabelBehavior:
-                            FloatingLabelBehavior.auto,
+                        hintText: hint,
+                        labelText: label,
+                        floatingLabelBehavior: FloatingLabelBehavior.auto,
                         errorText: errorText,
+                        hintStyle: TextStyle(
+                          fontSize: hintSize.toDouble(),
+                          color: scheme.onSurfaceVariant.withOpacity(0.85),
+                          fontWeight: FontWeight.w400,
+                        ),
                         border: const OutlineInputBorder(),
                       ),
                       textInputAction: TextInputAction.done,
                     ),
-
                     const SizedBox(height: 16),
-
                     Row(
                       children: [
                         TextButton(
@@ -83,12 +117,9 @@ class AddSubcategorySheet extends StatelessWidget {
                           width: 150,
                           child: FilledButton(
                             onPressed: () {
-                              final String raw =
-                                  controller.text.trim();
+                              final String raw = controller.text.trim();
 
-                              setState(() {
-                                errorText = null;
-                              });
+                              setState(() => errorText = null);
 
                               if (raw.isEmpty) {
                                 errorText = loc.groupErrorEmpty;
@@ -110,7 +141,7 @@ class AddSubcategorySheet extends StatelessWidget {
                               final String formatted =
                                   normaliseTitleCase(raw);
 
-                              onCreate(formatted);
+                              widget.onCreate(formatted);
                               Navigator.pop(context);
                             },
                             child: Text(loc.createGroup),
@@ -122,8 +153,8 @@ class AddSubcategorySheet extends StatelessWidget {
                 ),
               ),
             ),
-          );
-        },
+          ),
+        ),
       ),
     );
   }

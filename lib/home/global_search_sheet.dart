@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
-
-import '../item_repository.dart';
+import 'package:vaultara/services/item_lifecycle_manager.dart';
+import '../document_hierarchy.dart';
 import '../tracked_item.dart';
+import 'package:vaultara/record_status_helper.dart';
+import 'package:vaultara/action_feedback_snackbar.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
+
+import 'package:vaultara/category_repository.dart';
+import '../category_item.dart';
+import '../items_screen.dart';
 
 enum ItemFilterMode {
   all,
@@ -12,21 +19,17 @@ enum ItemFilterMode {
 class GlobalSearchSheet {
   static void open(
     BuildContext context, {
+    required bool isPremium,
     ItemFilterMode initialFilter = ItemFilterMode.all,
     bool limitTo7Days = false,
     bool onlyThisMonth = false,
   }) {
     final ColorScheme scheme = Theme.of(context).colorScheme;
-    final List<TrackedItem> allItems = ItemRepository.getAllItemsFlat();
+    final l10n = AppLocalizations.of(context)!;
+    final List<TrackedItem> allItems = ItemLifecycleManager.getAllItemsFlat();
 
     if (allItems.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'There are no items to search yet. Add a few items and Vaultara will index them automatically.',
-          ),
-        ),
-      );
+      ActionFeedbackSnackbar.showNoRecordsToSearch(context);
       return;
     }
 
@@ -35,8 +38,7 @@ class GlobalSearchSheet {
       isScrollControlled: true,
       showDragHandle: true,
       builder: (BuildContext sheetContext) {
-        final TextEditingController searchController =
-            TextEditingController();
+        final TextEditingController searchController = TextEditingController();
 
         ItemFilterMode filterMode = initialFilter;
 
@@ -45,10 +47,54 @@ class GlobalSearchSheet {
 
         final DateTime today = DateTime.now();
 
-        List<TrackedItem> applyFilter(
-          String query,
-          ItemFilterMode mode,
-        ) {
+        CategoryItem? categoryItemForKey(BuildContext ctx, String key) {
+          final seeds = DocumentHierarchy.buildCategorySeeds(ctx);
+          final preset = seeds.where((s) => s.key == key).toList();
+          if (preset.isNotEmpty) {
+            final s = preset.first;
+            return CategoryItem(
+              key: s.key,
+              label: s.label,
+              icon: s.icon,
+              subcategories: List<String>.from(s.subcategoryKeys),
+            );
+          }
+
+          final custom =
+              CategoryRepository.getAll().where((c) => c.key == key).toList();
+          if (custom.isNotEmpty) {
+            final c = custom.first;
+            return CategoryItem(
+              key: c.key,
+              label: c.label,
+              icon: c.icon ?? Icons.category_rounded,
+              subcategories: List<String>.from(c.subcategories),
+            );
+          }
+
+          return null;
+        }
+
+        void openItem(BuildContext ctx, TrackedItem item) {
+          final cat = categoryItemForKey(ctx, item.categoryKey);
+          if (cat == null) return;
+
+          Navigator.pop(sheetContext);
+
+          Navigator.push(
+            ctx,
+            MaterialPageRoute(
+              builder: (_) => ItemsScreen(
+                category: cat,
+                subcategoryName: item.subcategoryName,
+                isPremium: isPremium,
+                initialQuery: 'open:${item.id}|${item.name}',
+              ),
+            ),
+          );
+        }
+
+        List<TrackedItem> applyFilter(String query, ItemFilterMode mode) {
           final String q = query.trim().toLowerCase();
           final DateTime now = DateTime.now();
 
@@ -56,25 +102,23 @@ class GlobalSearchSheet {
             if (q.isEmpty) return true;
 
             final String haystack =
-                '${item.name} ${item.categoryLabel} ${item.subcategoryName}'
+                '${item.name} ${item.categoryKey} ${item.subcategoryName}'
                     .toLowerCase();
 
             return haystack.contains(q);
           }).toList();
 
           filtered = filtered.where((TrackedItem item) {
-            final int daysLeft =
-                item.expiryDate.difference(now).inDays;
+            final int d = RecordStatusHelper.daysLeft(item.expiryDate, now: now);
 
             bool matchesMode = true;
             switch (mode) {
               case ItemFilterMode.expiringSoon:
-                matchesMode = daysLeft >= 0 &&
-                    daysLeft <=
-                        ItemRepository.expiringThresholdDays;
+                matchesMode = d >= 0 &&
+                    d <= ItemLifecycleManager.expiringThresholdDays;
                 break;
               case ItemFilterMode.expired:
-                matchesMode = daysLeft < 0;
+                matchesMode = d < 0;
                 break;
               case ItemFilterMode.all:
               default:
@@ -85,13 +129,12 @@ class GlobalSearchSheet {
             if (!matchesMode) return false;
 
             if (activeLimitTo7Days) {
-              if (daysLeft < 0 || daysLeft > 7) return false;
+              if (d < 0 || d > 7) return false;
             }
 
             if (activeOnlyThisMonth) {
               final DateTime e = item.expiryDate;
-              if (!(e.year == today.year &&
-                  e.month == today.month)) {
+              if (!(e.year == today.year && e.month == today.month)) {
                 return false;
               }
             }
@@ -107,34 +150,6 @@ class GlobalSearchSheet {
           return filtered;
         }
 
-        int daysLeft(DateTime expiry) {
-          return expiry.difference(DateTime.now()).inDays;
-        }
-
-        String statusLabel(int daysLeft) {
-          if (daysLeft < 0) {
-            return 'Expired';
-          } else if (daysLeft == 0) {
-            return 'Expires today';
-          } else if (daysLeft == 1) {
-            return 'Expires in 1 day';
-          } else if (daysLeft <=
-              ItemRepository.expiringThresholdDays) {
-            return 'Expires in $daysLeft days';
-          }
-          return 'Valid';
-        }
-
-        Color statusColour(ColorScheme scheme, int daysLeft) {
-          if (daysLeft < 0) {
-            return Colors.red;
-          } else if (daysLeft <=
-              ItemRepository.expiringThresholdDays) {
-            return Colors.orange;
-          }
-          return Colors.green;
-        }
-
         return StatefulBuilder(
           builder: (
             BuildContext context,
@@ -143,17 +158,12 @@ class GlobalSearchSheet {
             final List<TrackedItem> results =
                 applyFilter(searchController.text, filterMode);
 
-            final String expiringLabel = activeLimitTo7Days
-                ? 'Expiring within 7 days'
-                : 'Expiring within ${ItemRepository.expiringThresholdDays} days';
-
             return SafeArea(
               child: Padding(
                 padding: EdgeInsets.only(
                   left: 16,
                   right: 16,
-                  bottom:
-                      MediaQuery.of(sheetContext).viewInsets.bottom,
+                  bottom: MediaQuery.of(sheetContext).viewInsets.bottom,
                   top: 12,
                 ),
                 child: Column(
@@ -168,225 +178,149 @@ class GlobalSearchSheet {
                         borderRadius: BorderRadius.circular(999),
                       ),
                     ),
-                    const Text(
-                      'Search all items',
-                      style: TextStyle(
+                    Text(
+                      l10n.globalSearchTitle,
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
                     const SizedBox(height: 12),
-
                     TextField(
                       controller: searchController,
                       autofocus: true,
                       onChanged: (_) => setSheetState(() {}),
                       decoration: InputDecoration(
-                        prefixIcon:
-                            const Icon(Icons.search_rounded),
-                        hintText:
-                            'Type item name, category or group',
+                        prefixIcon: const Icon(Icons.search_rounded),
+                        hintText: l10n.globalSearchHint,
                         filled: true,
-                        fillColor: scheme.surfaceVariant
-                            .withOpacity(0.25),
+                        fillColor: scheme.surfaceVariant.withOpacity(0.25),
                         border: OutlineInputBorder(
-                          borderRadius:
-                              BorderRadius.circular(999),
+                          borderRadius: BorderRadius.circular(999),
                         ),
                         isDense: true,
                       ),
                     ),
-
-                    const SizedBox(height: 10),
-
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.circular(999),
-                          border: Border.all(
-                            color:
-                                scheme.outline.withOpacity(0.4),
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            _GlobalFilterChip(
-                              label: 'All',
-                              selected:
-                                  filterMode == ItemFilterMode.all,
-                              onTap: () {
-                                setSheetState(() {
-                                  filterMode =
-                                      ItemFilterMode.all;
-                                  activeLimitTo7Days = false;
-                                  activeOnlyThisMonth = false;
-                                });
-                              },
-                            ),
-                            _GlobalFilterChip(
-                              label: expiringLabel,
-                              selected: filterMode ==
-                                  ItemFilterMode.expiringSoon,
-                              onTap: () {
-                                setSheetState(() {
-                                  filterMode =
-                                      ItemFilterMode.expiringSoon;
-                                  activeLimitTo7Days = false;
-                                  activeOnlyThisMonth = false;
-                                });
-                              },
-                            ),
-                            _GlobalFilterChip(
-                              label: 'Expired',
-                              selected: filterMode ==
-                                  ItemFilterMode.expired,
-                              onTap: () {
-                                setSheetState(() {
-                                  filterMode =
-                                      ItemFilterMode.expired;
-                                  activeLimitTo7Days = false;
-                                  activeOnlyThisMonth = false;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-
                     const SizedBox(height: 12),
-
                     Expanded(
                       child: results.isEmpty
-                          ? const Center(
+                          ? Center(
                               child: Text(
-                                'No items match your search yet.',
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                                l10n.globalSearchNoMatches,
                               ),
                             )
                           : ListView.builder(
                               itemCount: results.length,
-                              itemBuilder:
-                                  (BuildContext context, int index) {
-                                final TrackedItem item =
-                                    results[index];
-                                final int d =
-                                    daysLeft(item.expiryDate);
+                              itemBuilder: (BuildContext context, int index) {
+                                final TrackedItem item = results[index];
+
+                                final int d = RecordStatusHelper.daysLeft(
+                                  item.expiryDate,
+                                );
                                 final String statusText =
-                                    statusLabel(d);
+                                    RecordStatusHelper.statusLabel(context, d);
                                 final Color colour =
-                                    statusColour(scheme, d);
+                                    RecordStatusHelper.statusColour(d);
+                                final IconData overallIcon =
+                                    RecordStatusHelper.overallRecordIcon(d);
+
+                                final String categoryLabel =
+                                    DocumentHierarchy.categoryLabel(
+                                  context,
+                                  item.categoryKey,
+                                );
+
+                                final String subcategoryLabel =
+                                    DocumentHierarchy.subcategoryLabel(
+                                  context,
+                                  item.subcategoryName,
+                                );
 
                                 return Card(
                                   shape: RoundedRectangleBorder(
-                                    borderRadius:
-                                        BorderRadius.circular(14),
+                                    borderRadius: BorderRadius.circular(14),
                                   ),
-                                  child: Padding(
-                                    padding:
-                                        const EdgeInsets.all(10),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Container(
-                                              padding:
-                                                  const EdgeInsets.all(
-                                                6,
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(14),
+                                    onTap: () => openItem(context, item),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(10),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                overallIcon,
+                                                size: 22,
+                                                color: scheme.primary,
                                               ),
-                                              decoration: BoxDecoration(
+                                              const SizedBox(width: 8),
+                                              Expanded(
+                                                child: Text(
+                                                  item.name,
+                                                  maxLines: 1,
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
+                                                  style: const TextStyle(
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.w800,
+                                                  ),
+                                                ),
+                                              ),
+                                              Icon(
+                                                Icons.chevron_right_rounded,
+                                                size: 20,
                                                 color: scheme.primary
-                                                    .withOpacity(0.08),
-                                                borderRadius:
-                                                    BorderRadius.circular(
-                                                  12,
-                                                ),
+                                                    .withOpacity(0.7),
                                               ),
-                                              child: Icon(
-                                                Icons
-                                                    .description_rounded,
-                                                size: 18,
-                                                color:
-                                                    scheme.primary,
-                                              ),
-                                            ),
-                                            const SizedBox(width: 8),
-                                            Expanded(
-                                              child: Text(
-                                                item.name,
-                                                maxLines: 1,
-                                                overflow:
-                                                    TextOverflow.ellipsis,
-                                                style:
-                                                    const TextStyle(
-                                                  fontSize: 14,
-                                                  fontWeight:
-                                                      FontWeight.w800,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        const SizedBox(height: 4),
-                                        Text(
-                                          '${item.categoryLabel} • ${item.subcategoryName}',
-                                          maxLines: 1,
-                                          overflow:
-                                              TextOverflow.ellipsis,
-                                          style: TextStyle(
-                                            fontSize: 11,
-                                            color: scheme
-                                                .onSurfaceVariant,
+                                            ],
                                           ),
-                                        ),
-                                        const SizedBox(height: 4),
-                                        Text(
-                                          'Expiry: ${item.expiryDate.toIso8601String().substring(0, 10)}',
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color: scheme
-                                                .onSurfaceVariant,
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            '$categoryLabel • $subcategoryLabel',
+                                            style: TextStyle(
+                                              fontSize: 11,
+                                              color: scheme.onSurfaceVariant,
+                                            ),
                                           ),
-                                        ),
-                                        const SizedBox(height: 6),
-                                        Row(
-                                          children: [
-                                            Container(
-                                              padding:
-                                                  const EdgeInsets.symmetric(
-                                                horizontal: 10,
-                                                vertical: 4,
-                                              ),
-                                              decoration: BoxDecoration(
-                                                color: colour
-                                                    .withOpacity(0.15),
-                                                borderRadius:
-                                                    BorderRadius.circular(
-                                                  999,
-                                                ),
-                                              ),
-                                              child: Text(
-                                                statusText,
-                                                style: TextStyle(
-                                                  fontSize: 11,
-                                                  fontWeight:
-                                                      FontWeight.w700,
+                                          const SizedBox(height: 6),
+                                          Container(
+                                            padding: const EdgeInsets.symmetric(
+                                              horizontal: 10,
+                                              vertical: 4,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color: colour.withOpacity(0.15),
+                                              borderRadius:
+                                                  BorderRadius.circular(999),
+                                            ),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: [
+                                                Icon(
+                                                  RecordStatusHelper
+                                                      .statusLabelIcon(d),
+                                                  size: 13,
                                                   color: colour,
                                                 ),
-                                              ),
+                                                const SizedBox(width: 6),
+                                                Text(
+                                                  statusText,
+                                                  style: TextStyle(
+                                                    fontSize: 11,
+                                                    fontWeight:
+                                                        FontWeight.w700,
+                                                    color: colour,
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ],
-                                        ),
-                                      ],
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 );
@@ -423,22 +357,17 @@ class _GlobalFilterChip extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
       onTap: onTap,
       child: Container(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(999),
-          color: selected
-              ? scheme.primary.withOpacity(0.1)
-              : Colors.transparent,
+          color: selected ? scheme.primary.withOpacity(0.1) : Colors.transparent,
         ),
         child: Text(
           label,
           style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w700,
-            color: selected
-                ? scheme.primary
-                : scheme.onSurfaceVariant,
+            color: selected ? scheme.primary : scheme.onSurfaceVariant,
           ),
         ),
       ),

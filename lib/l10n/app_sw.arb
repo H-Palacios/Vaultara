@@ -3,11 +3,10 @@
 
   "expiryCalendarTitle": "Kalenda ya mwisho wa matumizi",
 
-  "calendarIntro":
-    "Chagua jinsi ya kuangalia tarehe za mwisho wa matumizi:\n\n• Andika idadi ya siku kuanzia leo.\n• Au chagua tarehe maalum kwenye kalenda.\n\nVaultara inaonyesha vitu vinavyofikia mwisho wa matumizi siku hiyo.",
+  "calendarIntro": "Chagua jinsi unavyotaka kuangalia muda wa matumizi:\n\n• Andika idadi ya siku kuanzia leo.\n• Au chagua tarehe halisi kwenye kalenda.\n\nVaultara itaonyesha vitu vinavyofikia mwisho wa matumizi siku hiyo.",
 
   "daysFromTodayLabel": "Siku kutoka leo",
-  "daysFromTodayHint": "Mfano 0, 1, 7, 30",
+  "daysFromTodayHint": "Kwa mfano 0, 1, 7, 30",
 
   "apply": "Tumia",
   "pickDateOnCalendar": "Chagua tarehe kwenye kalenda",
@@ -19,19 +18,23 @@
 
   "inDays": "baada ya siku {days}",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
-  "enterDaysError": "Idadi ya siku inahitajika",
-  "invalidDaysError": "Weka idadi sahihi ya siku (0 au zaidi)",
+  "enterDaysError": "Weka idadi ya siku.",
+  "invalidDaysError": "Weka idadi sahihi ya siku (0 au zaidi).",
 
-  "showingItemsRelative": "Vitu vinavyokwisha {time}",
+  "showingItemsRelative": "Inaonyesha vitu vinavyokwisha {time}",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "Vitu vinavyokwisha tarehe iliyochaguliwa",
-  "noItemsOnDate": "Hakuna vitu vinavyokwisha siku hiyo",
+  "showingItemsExact": "Inaonyesha vitu vinavyokwisha tarehe iliyochaguliwa",
+  "noItemsOnDate": "Hakuna vitu vinavyofikia mwisho wa matumizi siku hiyo.",
 
   "editorAddTitle": "Ongeza kipengee",
   "editorEditTitle": "Hariri kipengee",
@@ -40,19 +43,19 @@
   "editorCategoryHint": "Chagua kategoria",
 
   "editorGroup": "Kikundi",
-  "editorGroupHint": "Chagua kikundi katika kategoria hii",
+  "editorGroupHint": "Chagua kikundi chini ya kategoria hii",
 
   "editorItemName": "Jina la kipengee",
-  "editorItemNameHint": "Ingiza jina la kipengee",
+  "editorItemNameHint": "Weka jina la kipengee",
 
-  "editorExpiryDate": "Tarehe ya mwisho",
+  "editorExpiryDate": "Tarehe ya mwisho wa matumizi",
   "editorExpiryDateHint": "Chagua tarehe ya mwisho",
 
-  "editorErrorCategory": "Kategoria inahitajika",
-  "editorErrorGroup": "Kikundi kinahitajika",
+  "editorErrorCategory": "Chagua kategoria",
+  "editorErrorGroup": "Chagua kikundi",
   "editorErrorName": "Jina la kipengee linahitajika",
-  "editorErrorExpiry": "Tarehe inahitajika",
-  "editorErrorExpiryPast": "Tarehe lazima iwe leo au baadaye",
+  "editorErrorExpiry": "Chagua tarehe ya mwisho",
+  "editorErrorExpiryPast": "Tarehe lazima iwe leo au siku zijazo",
 
   "cancel": "Ghairi",
   "save": "Hifadhi",
@@ -69,38 +72,828 @@
   },
 
   "categoryNameLabel": "Jina la kategoria",
-  "categoryNameHint": "Ingiza kategoria",
+  "categoryNameHint": "Weka kategoria",
 
-  "categoryLimitReached":
-    "Kikomo cha mpango wa Basic kimefikiwa. Premium huruhusu kategoria zisizo na kikomo",
+  "categoryLimitReached": "Umefikia kikomo cha mpango wa Basic cha kategoria {limit}. Boresha hadi Premium ili kupata kategoria zisizo na kikomo.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
 
-  "categoryLimitInfo":
-    "Mpango wa Basic huruhusu hadi kategoria {limit}",
+  "categoryLimitInfo": "Katika mpango wa Basic unaweza kuunda hadi kategoria {limit}.",
   "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
   "categoryErrorEmpty": "Jina la kategoria linahitajika",
   "categoryErrorTooShort": "Jina la kategoria ni fupi sana",
   "categoryErrorTooLong": "Jina la kategoria ni refu sana",
-  "categoryErrorSymbols": "Jina haliwezi kuwa alama pekee",
-  "categoryErrorNumbers": "Jina haliwezi kuwa na nambari",
+  "categoryErrorSymbols": "Jina la kategoria haliwezi kuwa alama pekee",
+  "categoryErrorNumbers": "Jina la kategoria haliwezi kuwa na nambari",
 
   "upgradeRequired": "Inahitaji kuboreshwa",
   "viewPremiumBenefits": "Tazama faida za Premium",
-
   "createCategory": "Unda",
 
   "addGroupTitle": "Ongeza kikundi",
-
   "groupNameLabel": "Kikundi",
-  "groupNameHint": "Ingiza kikundi",
+  "groupNameHint": "Weka kikundi",
 
   "groupErrorEmpty": "Jina la kikundi linahitajika",
   "groupErrorTooShort": "Jina la kikundi ni fupi sana",
   "groupErrorTooLong": "Jina la kikundi ni refu sana",
-  "groupErrorSymbols": "Jina la kikundi haliwezi kuwa alama pekee",
+  "groupErrorSymbols": "Jina la kikundi haliwezi kuwa alama",
   "groupErrorNumbers": "Jina la kikundi haliwezi kuwa na nambari",
 
-  "createGroup": "Unda"
+  "createGroup": "Unda",
+
+  "firstNameLabel": "Jina la kwanza",
+  "firstNameHint": "Weka jina la kwanza",
+
+  "lastNameLabel": "Jina la mwisho",
+  "lastNameHint": "Weka jina la mwisho",
+
+  "emailLabel": "Anwani ya barua pepe",
+
+  "passwordLabel": "Nenosiri",
+  "passwordHelper": "Angalau herufi 8 zenye mchanganyiko",
+
+  "passwordTooShort": "Fupi sana",
+  "passwordTooWeak": "Dhaifu",
+  "passwordMedium": "Wastani",
+  "passwordStrong": "Imara",
+
+  "errorFirstName": "Jina la kwanza linahitajika",
+  "errorLastName": "Jina la mwisho linahitajika",
+  "errorEmailInvalid": "Weka barua pepe sahihi",
+  "errorEmailInUse": "Barua pepe hii tayari imeunganishwa\nna akaunti ya Vaultara",
+  "errorPasswordLength": "Nenosiri lazima liwe na angalau herufi 8",
+  "errorPasswordWeak": "Weka nenosiri lenye nguvu zaidi",
+  "errorGeneric": "Usajili umeshindikana. Tafadhali jaribu tena",
+"emailRequired": "Barua pepe yako inahitajika",
+"passwordRequired": "Nenosiri lako linahitajika",
+"registerPasswordHint": "Ingiza nenosiri",
+"loginPasswordHint": "Ingiza nenosiri lako",
+"emailHint": "Ingiza anwani yako ya barua pepe",
+  "createAccount": "Unda akaunti",
+  "appName": "Vaultara",
+  "authTagline": "Kituo chako binafsi cha pasipoti, leseni, kadi na nyaraka muhimu",
+  "tabSignIn": "Ingia",
+  "tabCreateAccount": "Unda akaunti",
+  "signInFooterText": "Ingia ili kufikia nafasi yako binafsi ya Vaultara na kudhibiti upya kila kitu",
+  "createAccountFooterText": "Unda akaunti yako ya Vaultara kuhifadhi vikumbusho muhimu na kuvipata wakati wowote",
+  "invalidEmail": "Weka anwani sahihi ya barua pepe",
+  "emailNotFound": "Barua pepe si sahihi.\nHakuna akaunti ya Vaultara yenye barua pepe hii",
+  "incorrectPassword": "Nenosiri si sahihi",
+  "emailLabel": "Anwani ya barua pepe",
+  "passwordLabel": "Nenosiri",
+  "signIn": "Ingia",
+   "categoryPersonalIdentification": "Utambulisho wa Kibinafsi",
+  "categoryDrivingAndVehicles": "Uendeshaji na Magari",
+  "categoryTravelAndImmigration": "Safari na Uhamiaji",
+  "categoryBankingAndCards": "Benki na Kadi",
+  "categoryInsuranceAndCover": "Bima na Ulinzi",
+  "categoryHealthAndMedical": "Afya na Matibabu",
+  "categoryWorkAndProfessional": "Kazi na Taaluma",
+  "categoryPropertyAndHousing": "Mali na Makazi",
+  "categoryHouseholdAndUtilities": "Nyumba na Huduma",
+
+  "subcategoryPassports": "Pasipoti",
+  "subcategoryIdCards": "Vitambulisho",
+  "subcategoryResidencePermits": "Vibali vya Makazi",
+
+  "subcategoryDrivingLicences": "Leseni za Kuendesha",
+  "subcategoryVehicleRegistrations": "Usajili wa Magari",
+  "subcategoryRoadworthyCertificates": "Vyeti vya Ustahiki wa Barabara",
+  "subcategoryVehicleInspectionCertificates": "Vyeti vya Ukaguzi wa Magari",
+
+  "subcategoryVisas": "Viza",
+  "subcategoryStudyPermits": "Vibali vya Masomo",
+  "subcategoryWorkPermits": "Vibali vya Kazi",
+  "subcategoryTravelInsuranceDocuments": "Nyaraka za Bima ya Safari",
+
+  "subcategoryDebitAndCreditCards": "Kadi za Debit na Credit",
+  "subcategoryStoreCards": "Kadi za Maduka",
+  "subcategoryFuelCards": "Kadi za Mafuta",
+
+  "subcategoryVehicleInsurances": "Bima za Magari",
+  "subcategoryPropertyInsurances": "Bima za Mali",
+  "subcategoryLifeInsurances": "Bima za Maisha",
+  "subcategoryHealthInsurances": "Bima za Afya",
+  "subcategoryTravelInsurances": "Bima za Safari",
+
+  "subcategoryMedicalPrescriptions": "Maagizo ya Dawa",
+  "subcategoryOpticalPrescriptions": "Maagizo ya Macho",
+  "subcategoryMedicalCertificates": "Vyeti vya Matibabu",
+
+  "subcategoryProfessionalLicences": "Leseni za Kitaaluma",
+  "subcategoryProfessionalRegistrations": "Usajili wa Kitaaluma",
+  "subcategoryIndustryRegistrations": "Usajili wa Sekta",
+  "subcategoryWorkAccessCards": "Kadi za Ufikiaji wa Kazi",
+
+  "subcategoryLeaseAgreements": "Mikataba ya Kodi",
+  "subcategoryAccessCardsAndTags": "Kadi na Vitambulisho vya Ufikiaji",
+  "subcategoryParkingPermits": "Vibali vya Maegesho",
+  "subcategorySecurityAccessPermits": "Vibali vya Ufikiaji wa Usalama",
+
+  "subcategoryElectricityAccounts": "Akaunti za Umeme",
+  "subcategoryWaterAccounts": "Akaunti za Maji",
+  "subcategoryInternetContracts": "Mikataba ya Intaneti",
+  "subcategorySecurityServiceContracts": "Mikataba ya Huduma za Usalama",
+   "searchCategories": "Tafuta makundi",
+  "filterAll": "Zote",
+  "filterPreset": "Zilizowekwa",
+  "filterCustom": "Binafsi",
+  "addCategoryTitle": "Ongeza kundi",
+  "customLabel": "Binafsi",
+  "subcategoriesLabel": "Vikundi vidogo",
+  "itemsLabel": "Vipengee",
+  "itemsExpiring": "Vipengee {count} vitaisha ndani ya siku {days}",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Makundi yaliyobandikwa",
+  "pinnedHint": "Bandika makundi unayofungua mara nyingi ili yabaki juu ya orodha.",
+  "noCategoriesFound": "Hakuna makundi yaliyopatikana",
+   "searchGroups": "Tafuta vikundi",
+  "addGroupTitle": "Ongeza kikundi",
+  "basicPlanGroupInfo": "Unatumia mpango wa Basic.\nUnaweza kuona vikundi vilivyowekwa tayari katika kategoria hii.\nBoresha hadi Premium ili kuunda vikundi vyako mwenyewe.",
+  "groupDeleted": "Kikundi kimefutwa",
+  "undo": "Tendua",
+  "groupStats": "Vipengee {items} • {expiring} vitaisha ndani ya siku {days}",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Gusa ili kuongeza na kudhibiti vipengee katika kikundi hiki.",
+  "itemsInGroup": "Vipengee katika kundi hili",
+  "itemsInGroupHint": "Fuatilia vipengee muhimu vilivyo na tarehe za mwisho ili kuvirekebisha kwa wakati.",
+  "searchItems": "Tafuta vipengee",
+  "filterAll": "Vyote",
+  "filterExpiringWithin": "Inaisha baada ya siku {days}",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Vilivyoisha",
+  "addItem": "Ongeza kipengee",
+  "noItemsYet": "Bado hakuna vipengee.",
+
+  "statusExpired": "Imeisha",
+  "statusExpiresToday": "Inaisha leo",
+  "statusExpiresInOneDay": "Inaisha kesho",
+  "statusExpiresInDays": "Inaisha baada ya siku {days}",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Halali",
+
+  "deleteCategoryTitle": "Futa kategoria",
+  "deleteCategoryMessage": "Je, una uhakika unataka kufuta kategoria \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Futa kundi",
+  "deleteGroupMessage": "Je, una uhakika unataka kufuta kundi \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Futa kipengee",
+  "deleteItemMessage": "Je, una uhakika unataka kufuta \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Ghairi",
+  "delete": "Futa",
+  "homeWelcomeFirstTitle": "Karibu, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Karibu tena, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara hukusaidia kufuatilia tarehe muhimu za kuisha muda ili hakuna kitu kinachopita bila kutambuliwa.",
+
+"homeWelcomeSubtitleFirst":
+  "Tunafurahi kukuona hapa. Vaultara hukusaidia kupanga tarehe na kumbukumbu muhimu mahali pamoja salama.",
+
+"homeWelcomeSubtitleBack":
+  "Tunafurahi kukuona tena. Vaultara iko tayari wakati wowote unapotaka kukagua tarehe na kumbukumbu zako muhimu.",
+   "insightEmptyTitle": "Bado hujaongeza chochote",
+  "insightEmptyBody": "Unapoanza kufuatilia tarehe muhimu, Vaultara itakusaidia kukaa mbele ya muda wa mwisho.",
+
+  "insightExpiresTodayTitle": "\"{name}\" inaisha leo",
+  "insightExpiresTodayBody": "Ukaguzi wa haraka huweka taarifa sahihi.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" inaisha kesho",
+  "insightExpiresTomorrowBody": "Kuikagua sasa kunaweza kuokoa muda baadaye.",
+
+  "insightExpiresSoonTitle": "\"{name}\" itaisha {date}",
+  "insightExpiresSoonBody": "Kushughulikia mapema hufanya mambo kuwa rahisi.",
+
+  "insightNextExpiryTitle": "Mwisho unaofuata ni \"{name}\" ({date})",
+  "insightNextExpiryBody": "Hakuna hatua inayohitajika kwa sasa.",
+
+  "insightClusteredTitle": "Vitu kadhaa vitaisha karibu na {month}",
+  "insightClusteredBody": "Kuvikagua pamoja kunaweza kuokoa muda.",
+
+  "insightTopCategoryTitle": "Vitu vingi viko chini ya {category}",
+  "insightTopCategoryBody": "Kuanzia hapa kuna athari kubwa zaidi.",
+
+  "insightStableTitle": "Kila kitu kiko sawa",
+  "insightStableBody": "Hakuna mwisho wa haraka unaohitaji umakini.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Karibu",
+  "summaryAllTitle": "Vipengee vyote",
+"summaryAllCaption": "Vinafuatiwa katika Vaultara",
+"summarySoonTitle": "Vinaisha hivi karibuni",
+"summarySoonCaption": "Ndani ya siku 30",
+"summaryWeekTitle": "Wiki hii",
+"summaryWeekCaption": "Vinaisha baada ya siku 7",
+"summaryExpiredTitle": "Vimeisha",
+"summaryExpiredCaption": "Tarehe ya mwisho imepita",
+"stabilityStableTitle": "Kila kitu kinaonekana thabiti",
+"stabilityStableBody": "Rekodi zako hazionyeshi hatari za haraka au zilizokusanyika.",
+
+"stabilityDecliningTitle": "Uthabiti unapungua",
+"stabilityDecliningBody": "Baadhi ya vitu vimeisha muda wake, vingine vinakaribia kuisha.",
+
+"stabilityWeakenedTitle": "Uthabiti umedhoofika",
+"stabilityWeakenedBody": "Uwepo wa rekodi zilizoisha muda wake hupunguza uaminifu wa jumla.",
+
+"stabilityPressureTitle": "Msukumo unaongezeka",
+"stabilityPressureBody": "Rekodi kadhaa zitahitaji uangalizi hivi karibuni ili kudumisha uthabiti.",
+"editorNotes": "Vidokezo",
+"notesHint": "Weka vidokezo",
+"editorReminderTitle": "Kikumbusho",
+"editorReminderNone": "Hakuna kikumbusho",
+"editorReminderOnExpiry": "Siku ya kuisha",
+"editorReminder7Days": "Siku 7 kabla ya kuisha",
+"editorReminder30Days": "Siku 30 kabla ya kuisha",
+"editorReminderCustom": "Maalum",
+"daysBeforeExpiry": "siku kabla ya kuisha",
+"reminderStage0Title": "Kikumbusho cha kuisha",
+"reminderStage0Body": "{firstName}, {itemName} itaisha baada ya siku {days}.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Kikumbusho cha ufuatiliaji",
+"reminderStage1Body": "{firstName}, {itemName} bado haijasasishwa.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Kuisha kunakaribia",
+"reminderStage2Body": "Tarehe ya kuisha ya {itemName} inakaribia.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Kikumbusho cha mwisho",
+"reminderFinalBody": "{firstName}, tafadhali sasisha {itemName} sasa.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Usawazishaji wa ufunikaji",
+"coverageAllRepresented": "Rekodi zako zinajumuisha vipengele katika makundi yote.",
+"coverageMissingNamed": "Hakuna rekodi zilizopatikana katika makundi {count}: {names}.",
+"coverageMissingSummary": "Hujaongeza rekodi yoyote katika kategoria {count}, ikijumuisha {names} na {remaining} nyingine.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Tumia nenosiri",
+"signInWithBiometrics": "Ingia kwa biometrics",
+"enableBiometricsTitle": "Washa usalama wa biometrics",
+"enableBiometricsBody": "Tumia alama ya kidole au utambuzi wa uso kulinda Vaultara.",
+"enableBiometricsReason": "Washa ufunguzi wa biometrics kwa Vaultara.",
+"notNow": "Sio sasa",
+"useBiometrics": "Tumia biometrics",
+"recordsCalendarIntro":
+  "Chagua jinsi unavyotaka kuchunguza tarehe zako za mwisho wa matumizi:\n\n• Andika ni siku ngapi kuanzia leo unataka kuangalia mbele.\n• Au chagua tarehe maalum kwenye kalenda.\n\nVaultara itaonyesha rekodi zipi zinafikia tarehe ya mwisho wa matumizi siku hiyo.",
+
+"showingRecordsRelative": "Inaonyesha rekodi zinazokwisha {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Inaonyesha rekodi zinazokwisha tarehe iliyochaguliwa",
+
+"noRecordsOnDate":
+  "Hakuna rekodi zilizowekwa kuisha siku hiyo.",
+
+"recordEditorAddTitle": "Ongeza rekodi",
+"recordEditorEditTitle": "Hariri rekodi",
+
+"editorRecordName": "Jina la rekodi",
+"editorRecordNameHint": "Weka jina la rekodi",
+"recordEditorErrorName": "Jina la rekodi linahitajika",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Gusa ili kuongeza na kufuatilia rekodi katika kundi hili.",
+
+"recordsInGroup": "Rekodi katika kundi hili",
+
+"recordsInGroupHint":
+  "Fuatilia kila rekodi muhimu na tarehe yake ya mwisho wa matumizi ili uisasishe kwa wakati.",
+
+"searchRecords": "Tafuta rekodi",
+"addRecord": "Ongeza rekodi",
+"noRecordsYet": "Bado hakuna rekodi.",
+
+"deleteRecordTitle": "Futa rekodi",
+
+"recordsInsightClusteredTitle":
+  "Rekodi kadhaa zinaisha karibu na {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Rekodi zako nyingi zimepangwa chini ya {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Rekodi zote",
+
+"recordsStabilityDecliningBody":
+  "Baadhi ya rekodi tayari zimeisha na nyingine zinakaribia kuisha.",
+
+"recordsCoverageAllRepresented":
+  "Rekodi zako zinajumuisha makundi yote.",
+
+"recordReminderStage0Body":
+  "{firstName}, rekodi yako {recordName} itaisha baada ya siku {days}.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, rekodi yako {recordName} bado haijasasishwa.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Tarehe ya mwisho wa matumizi ya {recordName} inakaribia.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, tafadhali sasisha rekodi {recordName} sasa.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Bado hakuna vikundi",
+"recordsExpiring": "{count, plural, one {rekodi 1 itaisha baada ya siku {days}} other {{count} rekodi zitaisha baada ya siku {days}}}",
+"recordsGroupStats": "{records, plural, one {rekodi 1} other {{records} rekodi}} • {expiring} baada ya siku {days}",
+"groupLabel": "{count, plural, one {{count} kikundi} other {{count} vikundi}}",
+"recordsLabel": "{count, plural, one {{count} rekodi} other {{count} rekodi}}",
+"forgotPassword": "Umesahau nenosiri?",
+  "forgotPasswordTitle": "Weka upya nenosiri",
+  "forgotPasswordBody": "Weka anwani yako ya barua pepe na tutakutumia kiungo cha kuweka upya nenosiri.",
+  "sendResetLink": "Tuma kiungo",
+  "passwordResetEmailSent": "Barua pepe ya kuweka upya nenosiri imetumwa.",
+  "verifyEmailToContinue": "Tafadhali thibitisha anwani yako ya barua pepe kabla ya kuingia",
+  "changeEmailTitle": "Badilisha anwani ya barua pepe",
+"newEmailHint": "Weka barua pepe yako mpya",
+"sendVerificationEmail": "Tuma barua pepe ya uthibitisho",
+"deleteAccountTitle": "Futa akaunti",
+"deleteAccountWarning": "Hatua hii itafuta akaunti yako na data zote zilizohifadhiwa kabisa.\nHatua hii haiwezi kutenduliwa.",
+"deleteAccountConfirm": "Futa akaunti kabisa",
+"supportTitle": "Msaada",
+"supportSubtitle": "Wasiliana nasi ikiwa unahitaji msaada au una maswali.",
+"supportEmailSubject": "Ombi la msaada la Vaultara",
+"supportEmailError": "Haiwezi kufungua programu ya barua pepe.",
+"passwordResetEmailFailed": "Imeshindikana kutuma barua pepe ya kuweka upya nenosiri.",
+"loggedInPasswordResetBody": "Tutuma kiungo cha kuweka upya nenosiri kwa:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Usimamizi wa akaunti",
+"changeEmailTitle": "Badilisha anwani ya barua pepe",
+"changeEmailSubtitle": "Sasisha barua pepe inayohusishwa na akaunti yako.",
+"changePasswordTitle": "Badilisha nenosiri",
+"changePasswordSubtitle": "Tutakutumia barua pepe yenye kiungo cha kubadilisha nenosiri kwa usalama.",
+"deleteAccountTitle": "Futa akaunti",
+"deleteAccountSubtitle": "Futa akaunti yako ya Vaultara kabisa.",
+"biometricAuthReason": "Thibitisha ili kufikia akaunti yako",
+"verifyEmailTitle": "Thibitisha barua pepe yako",
+"verifyEmailBody": "Tumetuma barua pepe ya uthibitisho kwenye kikasha chako. Tafadhali ifungue na uthibitishe anwani yako ya barua pepe, kisha rudi hapa kuendelea.",
+"verifyEmailConfirmedButton": "Nimethibitisha barua pepe yangu",
+"verifyEmailResendButton": "Tuma tena barua pepe ya uthibitisho",
+"verifyEmailSending": "Inatuma...",
+"navHome": "Mwanzo",
+"navCategories": "Aina",
+"navInsights": "Maarifa",
+"navCalendar": "Kalenda",
+"tutorialHomeSearch": "Tumia kisanduku cha kutafuta kupata rekodi kwa haraka.",
+"tutorialHomeFab": "Ongeza rekodi yako ya kwanza hapa.\nChagua sehemu, ongeza maelezo na tarehe ya mwisho.",
+"tutorialHomeSummary": "Sehemu hii husaidia kugundua rekodi zinazokaribia mwisho.",
+"tutorialHomeInsight": "Uchambuzi huu unaonyesha mifumo.\nUnaweza kugusa aikoni ya spika.",
+"tutorialHomeCoverage": "Usawa wa ufunikaji unaonyesha mgawanyo wa rekodi.",
+"tutorialHomeStability": "Utulivu unaonyesha uaminifu wa rekodi.",
+"tutorialCancel": "Ghairi",
+"tutorialNext": "Ifuatayo",
+"tutorialEnd": "Maliza mafunzo",
+"softDeleteCategory": "kategoria",
+"softDeleteGroup": "kikundi",
+"softDeleteRecord": "rekodi",
+
+"softDeleteTitle": "Hamisha {type} kwenda Zilizofutwa",
+
+"softDeleteMessage": "{type} \"{name}\" itahamishwa kwenda Zilizofutwa.\n\nUnaweza kuirejesha ndani ya siku 30. Baada ya hapo itafutwa kabisa.",
+
+"softDeleteMove": "Hamisha",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Zilizofutwa hivi karibuni",
+"categories": "Kategoria",
+"groups": "Vikundi",
+"records": "Rekodi",
+"restore": "Rejesha",
+"deletePermanently": "Futa kabisa",
+
+"recentlyDeletedBanner": "{type} zilizofutwa huhifadhiwa kwa siku 30.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Tafuta {type} zilizofutwa",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Hakuna {type} zilizofutwa",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Gusa kategoria ili kuona vikundi vyake na kudhibiti rekodi zako.",
+"groupsHint": "Vikundi hupanga rekodi zako katika kategoria hii. Gusa kikundi ili kudhibiti rekodi.",
+"notLoggedIn": "Hujaingia",
+"recordsInsideGroupHint": "Hizi ni rekodi ndani ya kundi hili.",
+"snackMovedToRecentlyDeleted": "\"{name}\" imehamishwa hadi Zilizofutwa Hivi Karibuni",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" imefutwa kwa mafanikio",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" imesasishwa kwa mafanikio",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" imeongezwa kwa mafanikio",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" imerejeshwa kwa mafanikio",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Umefikia kikomo cha bure ({current}/{limit}). Boresha ili kuongeza zaidi.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+     "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Tafuta rekodi zote",
+"globalSearchHint": "Andika jina, kategoria au kikundi",
+"globalSearchNoMatches": "Hakuna rekodi zinazolingana na utafutaji wako.",
+"snackNoRecordsToSearch": "Hakuna rekodi za kutafuta. Ongeza rekodi chache na Vaultara zitaziweka kwenye faharasa kiotomatiki.",
+"recoveryCentreTitle": "Kituo cha kurejesha",
+"recoveryCentreSubtitle": "Rejesha au futa rekodi zilizofutwa kabisa.",
+"plan_premium": "Premium",
+"plan_free": "Bure",
+"profile_app_settings_title": "Mipangilio ya programu",
+"profile_privacy_security_title": "Faragha na usalama",
+"profile_biometric_on": "Kufuli ya kibayometriki imewashwa kwenye kifaa hiki.",
+"profile_biometric_off": "Kufuli ya kibayometriki imezimwa.",
+"profile_biometric_enable_reason": "Thibitisha utambulisho wako ili kuwasha kufuli ya kibayometriki.",
+"profile_biometric_disable_reason": "Thibitisha utambulisho wako ili kuzima kufuli ya kibayometriki.",
+"profile_account_management_title": "Usimamizi wa akaunti",
+"profile_account_management_subtitle": "Badilisha barua pepe, nenosiri au futa akaunti.",
+"profile_premium_active_title": "Premium imewashwa",
+"profile_premium_upgrade_title": "Boresha hadi Premium",
+"profile_premium_active_subtitle": "Vikumbusho vya hali ya juu vimefunguliwa.",
+"profile_premium_upgrade_subtitle": "Fungua vikumbusho vya hali ya juu na mpangilio usio na kikomo.",
+"profile_manage_cancel_hint": "Dhibiti au ghairi wakati wowote kupitia Google Play.",
+"profile_manage_subscription_button": "Dhibiti usajili",
+"plansTitle": "Chagua mpango wako",
+"plansTrialBanner": "Jaribu bure kwa siku 7.\nGhairi wakati wowote.",
+"plansLoading": "Inapakia…",
+"plansStartFreeTrial": "Anza bure",
+"plansNoChargeTodayFooter": "Siku 7 bure · Hakuna malipo leo",
+
+"planFreeTitle": "Bure",
+"planFreeSubtitle": "Kwa kuanza",
+"planPremiumMonthlyTitle": "Premium ya Mwezi",
+"planPremiumYearlyTitle": "Premium ya Mwaka",
+"planPerMonth": "kwa mwezi",
+"planPerYear": "kwa mwaka",
+
+"planBadgeCurrent": "Mpango wa sasa",
+"planBadgePopular": "Maarufu",
+"planBadgeBestValue": "Thamani bora",
+
+"planYouAreOnThisPlan": "Tayari uko kwenye mpango huu.",
+
+"planFeatureUpToRecords": "Hadi rekodi {count}",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Kategoria maalum (hadi {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Vikundi vilivyowekwa",
+"planFeatureCloudStorage": "Hifadhi ya wingu",
+"planFeatureSmartExpiryInsights": "Maarifa ya tarehe ya mwisho",
+"planFeatureCoverageBalance": "Usawa wa kategoria",
+"planFeatureRecordStabilityTracking": "Uthabiti wa rekodi",
+
+"planFeatureUnlimitedRecords": "Rekodi zisizo na kikomo",
+"planFeatureUnlimitedCategories": "Kategoria zisizo na kikomo",
+"planFeatureCustomSubcategories": "Vikundi maalum",
+"planFeatureMultipleRemindersPerRecord": "Vikumbusho vingi",
+"planFeatureAdvancedReminderTiming": "Udhibiti wa muda wa hali ya juu",
+"planFeatureAutomaticFollowUps": "Vikumbusho vya kufuatilia",
+
+"planFeatureEverythingInMonthly": "Yote ya mpango wa mwezi",
+"planFeatureSavePercentComparedToMonthly": "Okoa {percent}% dhidi ya mwezi",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Thamani bora ya muda mrefu",
+"editorReminderLabel": "Kikumbusho",
+"editorReminderSelectOptional": "Chagua kikumbusho (hiari)",
+"editorReminderOnExpiry": "Siku ya mwisho",
+"editorReminderDaysBefore": "Siku {days} kabla ya mwisho",
+"editorFreeItemsCount": "Rekodi za bure: {used}/{limit}",
+"editorExpiryPastWarning": "Tarehe ya mwisho tayari imepita.",
+"editorExpiryTodayWarning": "Rekodi hii inaisha leo.",
+"editorErrorExpiryPast": "Tarehe ya mwisho haiwezi kuwa zamani.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Maarifa ya leo",
+"tutorialBannerTitle": "Mwongozo wa haraka",
+"tutorialBannerBody": "Jifunze wapi pa kutafuta, jinsi ya kuongeza rekodi na maana ya insights ndani ya dakika moja.",
+"tutorialBannerStart": "Anza mafunzo",
+"tutorialBannerDismiss": "Sio sasa",
+"authErrorUserDisabled": "Akaunti hii imezimwa.",
+"authErrorNetwork": "Hitilafu ya mtandao. Jaribu tena.",
+"authErrorTooManyRequests": "Majaribio mengi. Jaribu baadaye.",
+"authErrorSignInFailed": "Kuingia kumeshindikana. Jaribu tena.",
+"ok": "Sawa",
+"snackPremiumEnabled": "Premium imewezeshwa",
+"snackPremiumRestored": "Premium imerejeshwa",
+"passwordNeedLower": "Lazima iwe na herufi ndogo",
+"passwordNeedUpper": "Lazima iwe na herufi kubwa",
+"passwordNeedNumber": "Lazima iwe na nambari",
+"passwordNeedSymbol": "Lazima iwe na alama",
+"confirmIdentityTitle": "Thibitisha utambulisho",
+"confirm": "Thibitisha",
+"profile_sign_out_title": "Ondoka",
+"profile_sign_out_subtitle": "Ondoka kwenye Vaultara kwenye kifaa hiki",
+"profile_sign_out_confirm_title": "Unataka kuondoka?",
+"profile_sign_out_confirm_body": "Utahitaji kuingia tena ili kufikia akaunti yako.",
+"profile_sign_out_action": "Ondoka",
+"todayInsightsAudioHint": "Unapendelea sauti? Tumia ikoni ya spika.",
+"category2Label": "Kategoria",
+"enable2BiometricsBody": "Tumia utambuzi wa alama ya kidole kulinda akaunti yako ya Vaultara.",
+"snackNotificationsDisabled": "Arifa zimezimwa. Ziwashe ili upokee vikumbusho.",
+"openSettings": "Fungua mipangilio",
+
+"reminderOnExpiryTitle": "Inaisha leo",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Habari {firstName}, \"{itemName}\" inaisha leo.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Kategoria za bure: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Inaonyesha ni kategoria ngapi za bure zimetumika kati ya kikomo cha bure.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ongeza maelezo (hiari)",
+"apply": "Tumia",
+"smartInsightExpiresTodayHeading": "Inaisha Leo",
+"smartInsightExpiresTodaySingleBody": "{name} inaisha leo. Chukua hatua sasa ili kuiweka ya kisasa.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} na hati 1 nyingine zinaisha leo.} other{{names} na hati {extra} nyingine zinaisha leo.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Inahitaji Umakini Wako",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} inaisha katika siku 1 na haina ukumbusho. Thibitisha kuwa maelezo bado ni sahihi.} other{{name} inaisha katika siku {days} na haina ukumbusho. Thibitisha kuwa maelezo bado ni sahihi.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Upyaisho Mwingi Karibu Pamoja",
+"smartInsightRenewalTwinBodyTwo": "{a} na {b} zinaisha ndani ya wiki tatu kutoka kwa kila mmoja. Panga mapema.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, na {c} zote zinaisha ndani ya wiki tatu. Panga mapema.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, na hati 1 nyingine zinaisha ndani ya wiki tatu. Panga mapema.} other{{a}, {b}, na hati {extra} nyingine zinaisha ndani ya wiki tatu. Panga mapema.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Kundi Linalokuja",
+"smartInsightClusterBody": "{count, plural, =1{Hati 1 katika {category} inaisha ndani ya miezi miwili ijayo. Fikiria kuzishughulikia pamoja.} other{Hati {count} katika {category} zinaisha ndani ya miezi miwili ijayo. Fikiria kuzishughulikia pamoja.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Kipindi Cha Utulivu Mbele",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Hakuna kinachoisha katika siku 1 ijayo. Upyaisho wako ujao ni {firstDate}.} other{Hakuna kinachoisha katika siku {days} zijazo. Upyaisho wako ujao ni {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Yote Ni Ya Kisasa",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{Mwisho 1 ujao umefunikwa na vikumbusho. Hakuna kingine kinachohitaji umakini wako.} other{Miisho {count} ijayo imefunikwa na vikumbusho. Hakuna kingine kinachohitaji umakini wako.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Yote ni ya kisasa. Hakuna kinachohitaji umakini wako sasa hivi.",
+"smartInsightNoRecordsHeading": "Ongeza Rekodi Yako Ya Kwanza",
+"smartInsightNoRecordsBody": "Anza kufuatilia hati zako na Vaultara itaonyesha ufahamu mahiri hapa.",
+"expiryTimelineTitle": "Rekodi ya muda wa kuisha",
+"expiryTimelineSubtitle": "Gusa mwezi ili kuona rekodi zinazoisha katika mwezi huo",
+"expiryTimelineDetailCount": "{count, plural, =1{Rekodi 1} other{Rekodi {count}}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Yanayokuja",
+"summaryUpcomingCaption": "Ndani ya siku 30",
+"summaryUrgentTitle": "Haraka",
+"summaryUrgentCaption": "Ndani ya siku 7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

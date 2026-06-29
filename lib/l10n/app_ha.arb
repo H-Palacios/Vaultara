@@ -103,5 +103,788 @@
   "groupErrorSymbols": "Ba a yarda da alamu ba",
   "groupErrorNumbers": "Ba a yarda da lambobi ba",
 
-  "createGroup": "Ƙirƙiri"
+  "createGroup": "Ƙirƙiri",
+
+  "registerTitle": "Ƙirƙiri asusu",
+
+  "firstNameLabel": "Suna",
+  "firstNameHint": "Shigar da suna",
+  "errorFirstName": "Ana bukatar sunan farko",
+
+  "lastNameLabel": "Sunan ƙarshe",
+  "lastNameHint": "Shigar da sunan ƙarshe",
+  "errorLastName": "Ana bukatar sunan karshe",
+
+  "emailLabel": "Imel",
+  "errorEmailInvalid": "Shigar da ingantaccen imel.",
+  "errorEmailInUse": "Wannan imel yana da alaƙa da asusun Vaultara.",
+
+  "passwordLabel": "Kalmar sirri",
+  "passwordHelper": "Aƙalla haruffa 8 tare da nau’o’i daban-daban.",
+
+  "passwordTooShort": "Ya yi gajarta",
+  "passwordTooWeak": "Ya yi rauni",
+  "passwordMedium": "Matsakaici",
+  "passwordStrong": "Mai ƙarfi",
+
+  "errorPasswordLength": "Kalmar sirri dole ta ƙunshi aƙalla haruffa 8.",
+  "errorPasswordWeak": "Zaɓi kalmar sirri mafi ƙarfi.",
+
+  "errorGeneric": "Rajista ta gaza. Da fatan a sake gwadawa.",
+
+  "createAccount": "Ƙirƙiri asusu",
+  "appName": "Vaultara",
+"authTagline": "Cibiyarka ta sirri don fasfo, lasisi, kati da sauran muhimman abubuwa",
+"tabSignIn": "Shiga",
+"tabCreateAccount": "Kirkiri asusu",
+"signInFooterText": "Shiga domin samun damar Vaultara naka da kuma kula da duk sabuntawa",
+"createAccountFooterText": "Kirkiri asusun Vaultara domin adana muhimman tunatarwa da samun su duk lokacin da kake bukata",
+"emailRequired": "Ana buƙatar imel ɗinka",
+"passwordRequired": "Ana buƙatar kalmar sirrinka",
+"registerPasswordHint": "Shigar da kalmar sirri",
+"loginPasswordHint": "Shigar da kalmar sirrinka",
+"emailHint": "Shigar da adireshin imel ɗinka",
+  "emailNotFound": "Imel ba daidai ba.\nBabu asusun Vaultara da wannan imel",
+  "incorrectPassword": "Kalmar sirri ba daidai ba",
+  "emailLabel": "Adireshin imel",
+  "passwordLabel": "Kalmar sirri",
+  "signIn": "Shiga",
+   "categoryPersonalIdentification": "Shaidar Kai",
+  "categoryDrivingAndVehicles": "Tuki da Motoci",
+  "categoryTravelAndImmigration": "Tafiya da Shige da Fice",
+  "categoryBankingAndCards": "Harkokin Banki da Katuna",
+  "categoryInsuranceAndCover": "Inshora da Kariya",
+  "categoryHealthAndMedical": "Lafiya da Magani",
+  "categoryWorkAndProfessional": "Aiki da Sana'a",
+  "categoryPropertyAndHousing": "Dukiya da Gidaje",
+  "categoryHouseholdAndUtilities": "Gida da Ayyuka",
+
+  "subcategoryPassports": "Fasfo",
+  "subcategoryIdCards": "Katunan Shaida",
+  "subcategoryResidencePermits": "Izinin Zama",
+
+  "subcategoryDrivingLicences": "Lasin Tuki",
+  "subcategoryVehicleRegistrations": "Rajistar Motoci",
+  "subcategoryRoadworthyCertificates": "Takardun Cancanta na Mota",
+  "subcategoryVehicleInspectionCertificates": "Takardun Binciken Mota",
+
+  "subcategoryVisas": "Biza",
+  "subcategoryStudyPermits": "Izinin Karatu",
+  "subcategoryWorkPermits": "Izinin Aiki",
+  "subcategoryTravelInsuranceDocuments": "Takardun Inshorar Tafiya",
+
+  "subcategoryDebitAndCreditCards": "Katunan Cire Kuɗi da Bashi",
+  "subcategoryStoreCards": "Katunan Shago",
+  "subcategoryFuelCards": "Katunan Mai",
+
+  "subcategoryVehicleInsurances": "Inshorar Mota",
+  "subcategoryPropertyInsurances": "Inshorar Dukiya",
+  "subcategoryLifeInsurances": "Inshorar Rayuwa",
+  "subcategoryHealthInsurances": "Inshorar Lafiya",
+  "subcategoryTravelInsurances": "Inshorar Tafiya",
+
+  "subcategoryMedicalPrescriptions": "Rubutattun Magunguna",
+  "subcategoryOpticalPrescriptions": "Rubutattun Maganin Ido",
+  "subcategoryMedicalCertificates": "Takardun Likita",
+
+  "subcategoryProfessionalLicences": "Lasisin Sana'a",
+  "subcategoryProfessionalRegistrations": "Rajistar Sana'a",
+  "subcategoryIndustryRegistrations": "Rajistar Masana'antu",
+  "subcategoryWorkAccessCards": "Katunan Shiga Aiki",
+
+  "subcategoryLeaseAgreements": "Yarjejeniyar Hayar Gida",
+  "subcategoryAccessCardsAndTags": "Katuna da Alamar Shiga",
+  "subcategoryParkingPermits": "Izinin Ajiye Mota",
+  "subcategorySecurityAccessPermits": "Izinin Shiga Tsaro",
+
+  "subcategoryElectricityAccounts": "Asusun Wutar Lantarki",
+  "subcategoryWaterAccounts": "Asusun Ruwa",
+  "subcategoryInternetContracts": "Yarjejeniyar Intanet",
+  "subcategorySecurityServiceContracts": "Yarjejeniyar Ayyukan Tsaro",
+  "searchCategories": "Bincika rukunoni",
+  "filterAll": "Duka",
+  "filterPreset": "Na asali",
+  "filterCustom": "Na musamman",
+  "addCategoryTitle": "Ƙara rukuni",
+  "customLabel": "Na musamman",
+  "subcategoriesLabel": "ƙananan rukunoni",
+  "itemsLabel": "abubuwa",
+  "itemsExpiring": "Abubuwa {count} za su ƙare cikin kwanaki {days}",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Muhimman abubuwan da aka manne",
+  "pinnedHint": "Manna rukunonin da kake buɗewa akai-akai domin su kasance a saman jerin.",
+  "noCategoriesFound": "Ba a sami rukuni ba",
+  "searchGroups": "Bincika rukuni",
+  "addGroupTitle": "Ƙara rukuni",
+  "basicPlanGroupInfo": "Kana amfani da tsarin Basic.\nZa ka iya duba rukunin da aka riga aka saita a wannan rukuni.\nHaɓaka zuwa Premium domin ƙirƙirar rukunin ka.",
+  "groupDeleted": "An goge rukuni",
+  "undo": "MAYAR",
+  "groupStats": "{items} abubuwa • {expiring} za su ƙare cikin kwanaki {days}",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Danna domin ƙara da bibiyar abubuwa a wannan rukuni.",
+   "itemsInGroup": "Abubuwa a cikin wannan rukuni",
+  "itemsInGroupHint": "Bibiyi kowane abu mai muhimmanci tare da ranar karewarsa don sabuntawa a kan lokaci.",
+  "searchItems": "Bincika abubuwa",
+  "filterAll": "Duka",
+  "filterExpiringWithin": "Yana karewa cikin kwanaki {days}",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Ya kare",
+  "addItem": "Ƙara abu",
+  "noItemsYet": "Babu abubuwa tukuna.",
+
+  "statusExpired": "Ya kare",
+  "statusExpiresToday": "Yana karewa yau",
+  "statusExpiresInOneDay": "Yana karewa cikin rana 1",
+  "statusExpiresInDays": "Yana karewa cikin kwanaki {days}",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Yana aiki",
+
+  "deleteCategoryTitle": "Share rukuni",
+  "deleteCategoryMessage": "Ka tabbata kana son share rukunin \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Share ƙungiya",
+  "deleteGroupMessage": "Ka tabbata kana son share ƙungiyar \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Share abu",
+  "deleteItemMessage": "Ka tabbata kana son share \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Soke",
+  "delete": "Share",
+  "homeWelcomeTitle": "Barka da zuwa",
+
+  "homeWelcomeFirstTitle": "Barka da zuwa, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Barka da dawowa, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara na taimaka maka wajen bibiyar muhimman kwanakin karewa domin kada wani abu ya wuce ka.",
+
+  "homeWelcomeSubtitleFirst":
+    "Muna farin cikin ganin ka a nan. Vaultara na taimaka maka ka kasance cikin tsari ta hanyar adana muhimman kwanaki da bayanai a wuri guda mai tsaro.",
+
+  "homeWelcomeSubtitleBack":
+    "Muna farin cikin sake ganinka. Vaultara na nan a duk lokacin da kake son duba muhimman kwanaki da bayananka.",
+    "insightEmptyTitle": "Ba ka ƙara komai ba tukuna",
+  "insightEmptyBody": "Da zarar ka fara bibiyar muhimman ranaku, Vaultara zai taimaka maka ka kasance a shirye.",
+
+  "insightExpiresTodayTitle": "\"{name}\" zai ƙare yau",
+  "insightExpiresTodayBody": "Dubawa kaɗan zai taimaka wajen kiyaye bayanai daidai.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" zai ƙare gobe",
+  "insightExpiresTomorrowBody": "Dubawa yanzu na iya ceton lokaci daga baya.",
+
+  "insightExpiresSoonTitle": "\"{name}\" zai ƙare a {date}",
+  "insightExpiresSoonBody": "Magance shi da wuri yana sa komai ya fi sauƙi.",
+
+  "insightNextExpiryTitle": "Ƙarewa ta gaba ita ce \"{name}\" a {date}",
+  "insightNextExpiryBody": "Babu abin yi a yanzu.",
+
+  "insightClusteredTitle": "Abubuwa da dama za su ƙare a kusa da {month}",
+  "insightClusteredBody": "Dubawa tare na iya adana lokaci.",
+
+  "insightTopCategoryTitle": "Yawancin abubuwa suna cikin {category}",
+  "insightTopCategoryBody": "Wannan wuri ne mafi kyau don farawa.",
+
+  "insightStableTitle": "Komai yana cikin kwanciyar hankali",
+  "insightStableBody": "Babu wani ƙarewa da ke buƙatar kulawa a yanzu.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Dukkan abubuwa",
+"summaryAllCaption": "Ana bibiyarsu a Vaultara",
+"summarySoonTitle": "Za su ƙare nan ba da jimawa ba",
+"summarySoonCaption": "Cikin kwanaki 30",
+"summaryWeekTitle": "Wannan makon",
+"summaryWeekCaption": "Za su ƙare cikin kwanaki 7",
+"summaryExpiredTitle": "Sun ƙare",
+"summaryExpiredCaption": "Lokacin ƙarewa ya wuce",
+"stabilityStableTitle": "Komai yana daidaita",
+"stabilityStableBody": "Bayanan ka ba su nuna wata barazana ta gaggawa ko ta taruwa ba.",
+
+"stabilityDecliningTitle": "Daidaito yana raguwa",
+"stabilityDecliningBody": "Wasu abubuwa sun riga sun ƙare, wasu kuma suna kusa da ƙarewa.",
+
+"stabilityWeakenedTitle": "Daidaito ya raunana",
+"stabilityWeakenedBody": "Kasancewar bayanan da suka ƙare yana rage amincin gaba ɗaya.",
+
+"stabilityPressureTitle": "Matsi yana ƙaruwa",
+"stabilityPressureBody": "Wasu bayanai za su buƙaci kulawa nan ba da jimawa ba don kiyaye daidaito.",
+"editorNotes": "Bayanan kula",
+"notesHint": "Shigar da bayanan kula",
+"editorReminderTitle": "Tunatarwa",
+"editorReminderNone": "Babu tunatarwa",
+"editorReminderOnExpiry": "A ranar ƙarewa",
+"editorReminder7Days": "Kwana 7 kafin ƙarewa",
+"editorReminder30Days": "Kwana 30 kafin ƙarewa",
+"editorReminderCustom": "Na musamman",
+"daysBeforeExpiry": "kwanaki kafin ƙarewa",
+"reminderStage0Title": "Tunatarwar karewa",
+"reminderStage0Body": "{firstName}, {itemName} zai kare cikin kwanaki {days}.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Tunatarwar biyo baya",
+"reminderStage1Body": "{firstName}, har yanzu ba a sabunta {itemName} ba.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Karewa na gabatowa",
+"reminderStage2Body": "Ranar karewar {itemName} na gabatowa.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Tunatarwa ta ƙarshe",
+"reminderFinalBody": "{firstName}, don Allah sabunta {itemName} yanzu.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Daidaiton rufi",
+"coverageAllRepresented": "Bayanan ka sun ƙunshi abubuwa a dukkan rukunai.",
+"coverageMissingNamed": "Ba a sami bayanai a rukunai {count} ba: {names}.",
+"coverageMissingSummary": "Ba ka ƙara wani rikodi a cikin rukuni {count} ba, ciki har da {names} da sauran {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Yi amfani da kalmar sirri",
+"signInWithBiometrics": "Shiga da biometrics",
+"enableBiometricsTitle": "Kunna tsaron biometrics",
+"enableBiometricsBody": "Yi amfani da sawun yatsa ko tantance fuska don kare Vaultara.",
+"enableBiometricsReason": "Kunna buɗe Vaultara da biometrics.",
+"notNow": "Ba yanzu ba",
+"useBiometrics": "Yi amfani da biometrics",
+"recordsCalendarIntro":
+  "Zaɓi yadda kake son bincika ranakun ƙarewa:\n\n• Rubuta kwanaki nawa daga yau kake son dubawa gaba.\n• Ko zaɓi takamaiman rana a kalanda.\n\nVaultara zai nuna waɗanne bayanai ke kaiwa ranar ƙarewarsu a waccan ranar.",
+
+"showingRecordsRelative": "Ana nuna bayanai da za su ƙare cikin {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Ana nuna bayanai da za su ƙare a ranar da aka zaɓa",
+"noRecordsOnDate": "Babu bayanan da aka saita su ƙare a wannan ranar.",
+
+"recordEditorAddTitle": "Ƙara bayanin",
+"recordEditorEditTitle": "Gyara bayanin",
+
+"editorRecordName": "Sunan bayanin",
+"editorRecordNameHint": "Shigar da sunan bayanin",
+"recordEditorErrorName": "Ana buƙatar sunan bayanin",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Danna don ƙara da bin diddigin bayanai a wannan rukuni.",
+
+"recordsInGroup": "Bayanai a wannan rukuni",
+"recordsInGroupHint":
+  "Bi kowane muhimmin bayani tare da ranar ƙarewarsa don sabunta shi akan lokaci.",
+
+"searchRecords": "Bincika bayanai",
+"addRecord": "Ƙara bayani",
+"noRecordsYet": "Babu bayanai tukuna.",
+
+"deleteRecordTitle": "Goge bayani",
+
+"recordsInsightClusteredTitle":
+  "Bayanai da yawa za su ƙare a kusa da {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Yawancin bayananka suna ƙarƙashin rukunin {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Dukkan bayanai",
+
+"recordsStabilityDecliningBody":
+  "Wasu bayanai sun riga sun ƙare kuma wasu suna gab da ƙarewa.",
+
+"recordsCoverageAllRepresented":
+  "Bayananka sun rufe dukkan rukuni.",
+
+"recordReminderStage0Body":
+  "{firstName}, bayaninka {recordName} zai ƙare cikin kwanaki {days}.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, ba a sabunta bayaninka {recordName} ba tukuna.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Ranar ƙarewar {recordName} na ƙaratowa.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, da fatan za a sabunta {recordName} yanzu.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Babu ƙungiyoyi tukuna",
+"recordsExpiring": "{count, plural, one {rikodi 1 zai ƙare cikin kwanaki {days}} other {{count} rikodi za su ƙare cikin kwanaki {days}}}",
+"recordsGroupStats": "{records, plural, one {rikodi 1} other {{records} rikodi}} • {expiring} cikin kwanaki {days}",
+"groupLabel": "{count, plural, one {{count} rukuni} other {{count} rukuni}}",
+"recordsLabel": "{count, plural, one {{count} rikodi} other {{count} rikodi}}",
+"forgotPassword": "Ka manta da kalmar sirri?",
+  "forgotPasswordTitle": "Sake saita kalmar sirri",
+  "forgotPasswordBody": "Shigar da adireshin imel ɗinka domin mu aiko maka da hanyar sake saita kalmar sirri.",
+  "sendResetLink": "Aika hanyar sake saiti",
+  "passwordResetEmailSent": "An aika imel ɗin sake saita kalmar sirri.",
+  "verifyEmailToContinue": "Da fatan za a tabbatar da adireshin imel ɗinka kafin ka shiga",
+  "changeEmailTitle": "Canza adireshin imel",
+"newEmailHint": "Shigar da sabon imel ɗinka",
+"sendVerificationEmail": "Aika imel na tabbaci",
+"deleteAccountTitle": "Share asusu",
+"deleteAccountWarning": "Wannan aikin zai share asusunka da duk bayanan da aka adana gaba ɗaya.\nBa za a iya mayar da shi ba.",
+"deleteAccountConfirm": "Share asusu gaba ɗaya",
+"supportTitle": "Tallafi",
+"supportSubtitle": "Tuntube mu idan kana buƙatar taimako ko kana da tambayoyi.",
+"supportEmailSubject": "Buƙatar tallafin Vaultara",
+"supportEmailError": "Ba a iya buɗe manhajar imel ba.",
+"passwordResetEmailFailed": "An kasa aika imel ɗin sake saita kalmar sirri.",
+"loggedInPasswordResetBody": "Za mu aika da hanyar sake saita kalmar sirri zuwa:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }
+},
+"accountManagementTitle": "Gudanar da Asusun",
+"changeEmailTitle": "Canza adireshin imel",
+"changeEmailSubtitle": "Sabunta imel ɗin da ke da alaƙa da asusunka.",
+"changePasswordTitle": "Canza kalmar sirri",
+"changePasswordSubtitle": "Za mu aiko maka da imel mai ɗauke da hanyar canza kalmar sirri cikin aminci.",
+"deleteAccountTitle": "Share asusu",
+"deleteAccountSubtitle": "Goge asusun Vaultara ɗinka gaba ɗaya.",
+"biometricAuthReason": "Tabbatar da shaida don shiga asusun Vaultara naka",
+"verifyEmailTitle": "Tabbatar da imel ɗinka",
+"verifyEmailBody": "Mun aika imel na tabbatarwa zuwa akwatin saƙonka. Buɗe shi ka tabbatar da adireshin imel ɗinka, sannan ka dawo nan don ci gaba.",
+"verifyEmailConfirmedButton": "Na tabbatar da imel ɗina",
+"verifyEmailResendButton": "Sake aika imel na tabbatarwa",
+"verifyEmailSending": "Ana aikawa...",
+"navHome": "Gida",
+"navCategories": "Rukunoni",
+"navInsights": "Bayanai",
+"navCalendar": "Kalanda",
+"tutorialHomeSearch": "Yi amfani da mashigin bincike don gano kowane rikodi da kake bi cikin sauri.",
+"tutorialHomeFab": "Ƙara rikodinka na farko a nan.\nZaɓi inda ya dace, ƙara bayanin zaɓi, sannan ka zaɓi ranar karewa.",
+"tutorialHomeSummary": "Yayin da kake ƙara rikodi, wannan ɓangaren yana taimaka maka gano waɗanda suke kusa da karewa.",
+"tutorialHomeInsight": "Wannan hangen nesa mai kaifin basira yana nuna tsari da karewa masu zuwa.\nZa ka iya danna alamar magana don sauraro.",
+"tutorialHomeCoverage": "Ma'aunin rufewa yana nuna yadda aka rarraba rikodinka.\nMa'auni mafi girma yana nuna ƙarancin gibi.",
+"tutorialHomeStability": "Kwanciyar hankali yana nuna yadda rikodinka ke da aminci a tsawon lokaci.\nRikodi da suka kare da masu zuwa na iya rage kwanciyar hankali.",
+"tutorialCancel": "Soke",
+"tutorialNext": "Na gaba",
+"tutorialEnd": "Kammala koyarwa",
+"softDeleteCategory": "Rukuni",
+"softDeleteGroup": "Ƙungiya",
+"softDeleteRecord": "Rikodi",
+"softDeleteTitle": "Matsar da {type} zuwa Recently Deleted",
+"softDeleteMessage": "Za a matsar da {type} \"{name}\" zuwa Recently Deleted.\n\nZa ka iya dawo da shi cikin kwanaki 30. Bayan haka za a goge shi gaba ɗaya.",
+"softDeleteMove": "Matsar",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "An goge kwanan nan",
+  "categories": "Rukuni",
+  "groups": "Ƙungiyoyi",
+  "records": "Rubuce-rubuce",
+  "restore": "Mayar",
+  "deletePermanently": "Goge har abada",
+
+  "recentlyDeletedBanner": "Ana adana {type} da aka goge na tsawon kwanaki 30.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Nemo {type} da aka goge",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Babu {type} da aka goge",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Taɓa rukuni don ka ga ƙungiyoyinsa kuma ka sarrafa rikod ɗinka.",
+  "groupsHint": "Rukuni suna tsara bayananka a cikin wannan rukunin. Taɓa rukuni don sarrafa bayanai.",
+  "notLoggedIn": "Ba ka shiga ba",
+"recordsInsideGroupHint": "Waɗannan su ne bayanan da ke cikin wannan rukuni.",
+"snackMovedToRecentlyDeleted": "An matsar da \"{name}\" zuwa Kwanan nan da aka Goge",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "An goge \"{name}\" cikin nasara",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "An sabunta \"{name}\" cikin nasara",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "An ƙara \"{name}\" cikin nasara",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "An dawo da \"{name}\" cikin nasara",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "An kai iyakar kyauta ({current}/{limit}). Yi haɓakawa don ƙara ƙari.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Bincika duk bayanai",
+"globalSearchHint": "Rubuta sunan rikodi, rukuni ko ƙungiya",
+"globalSearchNoMatches": "Babu rikodin da ya dace da bincikenka.",
+"snackNoRecordsToSearch": "Babu bayanai don nema. Ƙara wasu bayanai kuma Vaultara zai yi musu index ta atomatik.",
+"recoveryCentreTitle": "Cibiyar Mayarwa",
+"recoveryCentreSubtitle": "Maido ko share bayanan da aka cire har abada.",
+"plan_premium": "Premium",
+"plan_free": "Kyauta",
+"profile_app_settings_title": "Saitunan manhaja",
+"profile_privacy_security_title": "Sirri da tsaro",
+"profile_biometric_on": "An kunna kulle na biometrics a wannan na’ura.",
+"profile_biometric_off": "An kashe kulle na biometrics.",
+"profile_biometric_enable_reason": "Tabbatar da shaidarka don kunna kulle na biometrics.",
+"profile_biometric_disable_reason": "Tabbatar da shaidarka don kashe kulle na biometrics.",
+"profile_account_management_title": "Gudanar da asusu",
+"profile_account_management_subtitle": "Canza imel, kalmar sirri ko goge asusu.",
+"profile_premium_active_title": "Premium yana aiki",
+"profile_premium_upgrade_title": "Haɓaka zuwa Premium",
+"profile_premium_active_subtitle": "An buɗe tunatarwa masu ci gaba.",
+"profile_premium_upgrade_subtitle": "Buɗe tunatarwa masu ci gaba da tsari mara iyaka.",
+"profile_manage_cancel_hint": "Gudanar ko soke a kowane lokaci ta Google Play.",
+"profile_manage_subscription_button": "Gudanar da biyan kuɗi",
+"plansTitle": "Zaɓi tsarin ka",
+"plansTrialBanner": "Fara da gwaji na kwanaki 7 kyauta.\nSoke kowane lokaci.",
+"plansLoading": "Ana lodawa…",
+"plansStartFreeTrial": "Fara gwaji kyauta",
+"plansNoChargeTodayFooter": "Kwanaki 7 kyauta · Babu caji yau",
+
+"planFreeTitle": "Kyauta",
+"planFreeSubtitle": "Don farawa",
+"planPremiumMonthlyTitle": "Premium na wata",
+"planPremiumYearlyTitle": "Premium na shekara",
+"planPerMonth": "a wata",
+"planPerYear": "a shekara",
+
+"planBadgeCurrent": "Tsarin yanzu",
+"planBadgePopular": "Mashahuri",
+"planBadgeBestValue": "Mafi daraja",
+
+"planYouAreOnThisPlan": "Kana kan wannan tsari.",
+
+"planFeatureUpToRecords": "Har zuwa rikodi {count}",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Rukuni na musamman (har {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Ƙananan rukuni na tsohuwa",
+"planFeatureCloudStorage": "Ajiya na gajimare",
+"planFeatureSmartExpiryInsights": "Binciken ƙarewa mai wayo",
+"planFeatureCoverageBalance": "Daidaiton rufe bayanai",
+"planFeatureRecordStabilityTracking": "Kwanciyar rikodi",
+
+"planFeatureUnlimitedRecords": "Rikodi marasa iyaka",
+"planFeatureUnlimitedCategories": "Rukuni marasa iyaka",
+"planFeatureCustomSubcategories": "Ƙananan rukuni na musamman",
+"planFeatureMultipleRemindersPerRecord": "Tunatarwa da yawa",
+"planFeatureAdvancedReminderTiming": "Lokaci mai ci gaba",
+"planFeatureAutomaticFollowUps": "Tunatarwa ta atomatik",
+
+"planFeatureEverythingInMonthly": "Dukkan cikin na wata",
+"planFeatureSavePercentComparedToMonthly": "Ajiye {percent}% idan aka kwatanta da wata",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Mafi daraja na dogon lokaci",
+"editorReminderLabel": "Tuna",
+"editorReminderSelectOptional": "Zaɓi tuna (na zaɓi)",
+"editorReminderOnExpiry": "A ranar ƙarewa",
+"editorReminderDaysBefore": "{days} kwanaki kafin ƙarewa",
+"editorFreeItemsCount": "Rubutun kyauta: {used}/{limit}",
+"editorExpiryPastWarning": "Ranar ƙarewa ta wuce.",
+"editorExpiryTodayWarning": "Wannan rubutu zai ƙare yau.",
+"editorErrorExpiryPast": "Ba za a iya zaɓar ranar da ta wuce ba.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Hasashen yau",
+"tutorialBannerTitle": "Jagora mai sauri",
+"tutorialBannerBody": "Koyi inda za ka nema, yadda za ka ƙara bayanai da fahimtar insights cikin minti ɗaya.",
+"tutorialBannerStart": "Fara koyawa",
+"tutorialBannerDismiss": "Ba yanzu ba",
+"authErrorUserDisabled": "An kashe wannan asusun.",
+"authErrorNetwork": "Matsalar hanyar sadarwa. Sake gwadawa.",
+"authErrorTooManyRequests": "An yi ƙoƙari da yawa. Gwada daga baya.",
+"authErrorSignInFailed": "Shiga bai yi nasara ba. Sake gwadawa.",
+"ok": "OK",
+"snackPremiumEnabled": "An kunna Premium",
+"snackPremiumRestored": "An dawo da Premium",
+"passwordNeedLower": "Dole ne ya ƙunshi ƙaramin harafi",
+"passwordNeedUpper": "Dole ne ya ƙunshi babban harafi",
+"passwordNeedNumber": "Dole ne ya ƙunshi lamba",
+"passwordNeedSymbol": "Dole ne ya ƙunshi alama",
+"confirmIdentityTitle": "Tabbatar da ainihi",
+"confirm": "Tabbatar",
+"profile_sign_out_title": "Fita",
+"profile_sign_out_subtitle": "Fita daga Vaultara a wannan na'ura",
+"profile_sign_out_confirm_title": "Za ka fita?",
+"profile_sign_out_confirm_body": "Za ka bukaci shiga asusu kuma don samun damar shiga.",
+"profile_sign_out_action": "Fita",
+"todayInsightsAudioHint": "Kana ka fi son audio? Yi amfani da alamar lasifika.",
+"category2Label": "Rukuni",
+"enable2BiometricsBody": "Yi amfani da tantance yatsa don kare asusun Vaultara.",
+"snackNotificationsDisabled": "An kashe sanarwa. Kunna su don karɓar tunatarwa.",
+"openSettings": "Buɗe saituna",
+
+"reminderOnExpiryTitle": "Yana ƙarewa yau",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Sannu {firstName}, \"{itemName}\" yana ƙarewa yau.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Rukuni kyauta: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Yana nuna adadin rukunan kyauta da aka yi amfani da su daga iyakar kyauta.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ƙara bayanai (na zaɓi)",
+"apply": "Aiwatar",
+"smartInsightExpiresTodayHeading": "Yana Ƙarewa Yau",
+"smartInsightExpiresTodaySingleBody": "{name} yana ƙarewa yau. Ɗauki mataki yanzu don kiyaye shi a sabunta.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} da wani takarda 1 suna ƙarewa yau.} other{{names} da wasu takardu {extra} suna ƙarewa yau.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Yana Buƙatar Hankalinka",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} zai ƙare cikin rana 1 kuma babu tunatarwa. Tabbatar cewa cikakkun bayanai har yanzu daidai ne.} other{{name} zai ƙare cikin kwanaki {days} kuma babu tunatarwa. Tabbatar cewa cikakkun bayanai har yanzu daidai ne.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Sabuntawa Da Yawa Kusa Da Juna",
+"smartInsightRenewalTwinBodyTwo": "{a} da {b} suna ƙarewa cikin makonni uku da juna. Yi shiri tukunna.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, da {c} duk suna ƙarewa cikin makonni uku. Yi shiri tukunna.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, da wani takarda 1 suna ƙarewa cikin makonni uku. Yi shiri tukunna.} other{{a}, {b}, da wasu takardu {extra} suna ƙarewa cikin makonni uku. Yi shiri tukunna.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Ƙungiya Mai Zuwa",
+"smartInsightClusterBody": "{count, plural, =1{Takarda 1 a cikin {category} zai ƙare cikin watanni biyu masu zuwa. Yi la'akari da sarrafa su tare.} other{Takardu {count} a cikin {category} suna ƙarewa cikin watanni biyu masu zuwa. Yi la'akari da sarrafa su tare.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Lokacin Shiru Mai Zuwa",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Babu wani abu da zai ƙare cikin rana 1 mai zuwa. Sabuntawarka ta gaba a {firstDate} ne.} other{Babu wani abu da zai ƙare cikin kwanaki {days} masu zuwa. Sabuntawarka ta gaba a {firstDate} ne.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Komai Yana Sabuntawa",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{Ƙarewa 1 mai zuwa yana ɗauke da tunatarwa. Babu wani abin da yake buƙatar hankalinka.} other{Ƙarewa {count} masu zuwa suna ɗauke da tunatarwa. Babu wani abin da yake buƙatar hankalinka.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Komai yana sabuntawa. Babu wani abin da yake buƙatar hankalinka yanzu.",
+"smartInsightNoRecordsHeading": "Ƙara Bayanin Farko Naka",
+"smartInsightNoRecordsBody": "Fara bin diddigin takardunka kuma Vaultara zai nuna basira mai wayo a nan.",
+"expiryTimelineTitle": "Layin lokacin ƙarewa",
+"expiryTimelineSubtitle": "Latsa wata don ganin rikodin da suka ƙare a wannan watan",
+"expiryTimelineDetailCount": "{count, plural, =1{Rikodi 1} other{Rikodi {count}}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Masu zuwa",
+"summaryUpcomingCaption": "Cikin kwanaki 30",
+"summaryUrgentTitle": "Gaggawa",
+"summaryUrgentCaption": "Cikin kwanaki 7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

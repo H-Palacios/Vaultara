@@ -1,0 +1,911 @@
+{
+  "@@locale": "hu",
+  "expiryCalendarTitle": "Lejárati naptár",
+
+"calendarIntro": "Válaszd ki, hogyan szeretnéd megtekinteni a lejáratokat:\n\n• Írd be, hány napra előre szeretnél nézni.\n• Vagy válassz egy pontos dátumot a naptárból.\n\nA Vaultara megmutatja, mely elemek járnak le azon a napon.",
+
+"daysFromTodayLabel": "Napok mától",
+"daysFromTodayHint": "Például 0, 1, 7, 30",
+
+"apply": "Alkalmaz",
+"pickDateOnCalendar": "Dátum kiválasztása a naptárban",
+
+"today": "Ma",
+"tomorrow": "Holnap",
+"in7Days": "7 nap múlva",
+"in30Days": "30 nap múlva",
+
+"inDays": "{days} nap múlva",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Add meg a napok számát.",
+"invalidDaysError": "Adj meg egy érvényes számot (0 vagy nagyobb).",
+
+"showingItemsRelative": "Az elemek megjelenítése, amelyek {time} járnak le",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Az elemek megjelenítése, amelyek a kiválasztott napon járnak le",
+"noItemsOnDate": "Ezen a napon egyetlen elem sem jár le.",
+
+"editorAddTitle": "Elem hozzáadása",
+"editorEditTitle": "Elem szerkesztése",
+
+"editorCategory": "Kategória",
+"editorCategoryHint": "Válassz kategóriát",
+
+"editorGroup": "Csoport",
+"editorGroupHint": "Válassz egy csoportot ebben a kategóriában",
+
+"editorItemName": "Elem neve",
+"editorItemNameHint": "Add meg az elem nevét",
+
+"editorExpiryDate": "Lejárati dátum",
+"editorExpiryDateHint": "Válaszd ki a lejárati dátumot",
+
+"editorErrorCategory": "Válassz kategóriát",
+"editorErrorGroup": "Válassz csoportot",
+"editorErrorName": "Az elem neve kötelező",
+"editorErrorExpiry": "Válassz lejárati dátumot",
+"editorErrorExpiryPast": "A lejárati dátumnak ma vagy a jövőben kell lennie",
+"cancel": "Mégse",
+"save": "Mentés",
+
+"addCategoryTitle": "Kategória hozzáadása",
+"unlimitedCategories": "Korlátlan kategóriák (Premium)",
+
+"categoryUsage": "{current} / {limit} kategória használva",
+
+"categoryNameLabel": "Kategória",
+"categoryNameHint": "Add meg a kategóriát",
+
+"categoryLimitReached": "Elérted a Basic csomag {limit} kategóriás korlátját. Frissíts Premiumra.",
+
+"categoryLimitInfo": "A Basic csomagban legfeljebb {limit} kategória hozható létre.",
+
+"categoryErrorEmpty": "A kategória kötelező",
+"categoryErrorTooShort": "A kategória túl rövid",
+"categoryErrorTooLong": "A kategória túl hosszú",
+"categoryErrorSymbols": "A kategória nem állhat csak szimbólumokból",
+"categoryErrorNumbers": "A kategória nem állhat csak számokból",
+
+"upgradeRequired": "Frissítés szükséges",
+"viewPremiumBenefits": "Premium előnyök megtekintése",
+"createCategory": "Létrehozás",
+
+"addGroupTitle": "Csoport hozzáadása",
+"groupNameLabel": "Csoport",
+"groupNameHint": "Add meg a csoportot",
+
+"groupErrorEmpty": "A csoport kötelező",
+"groupErrorTooShort": "A csoport túl rövid",
+"groupErrorTooLong": "A csoport túl hosszú",
+"groupErrorSymbols": "A csoport nem tartalmazhat szimbólumokat",
+"groupErrorNumbers": "A csoport nem tartalmazhat számokat",
+"createGroup": "Létrehozás",
+
+"firstNameLabel": "Keresztnév",
+"firstNameHint": "Add meg a keresztnevet",
+
+"lastNameLabel": "Vezetéknév",
+"lastNameHint": "Add meg a vezetéknevet",
+
+"emailLabel": "Email cím",
+"loginPasswordHint": "Add meg a jelszavad",
+"registerPasswordHint": "Add meg a jelszót",
+"passwordHelper": "Legalább 8 karakter, vegyes típusokkal",
+
+"passwordTooShort": "Túl rövid",
+"passwordTooWeak": "Túl gyenge",
+"passwordMedium": "Közepes",
+"passwordStrong": "Erős",
+
+"errorFirstName": "A keresztnév kötelező",
+"errorLastName": "A vezetéknév kötelező",
+"errorEmailInvalid": "Adj meg egy érvényes email címet",
+"errorEmailInUse": "Ez az email cím már\nVaultara fiókhoz van társítva",
+"errorPasswordLength": "A jelszónak legalább nyolc karakter hosszúnak kell lennie",
+"errorPasswordWeak": "Adj meg egy erősebb jelszót",
+"errorGeneric": "A regisztráció sikertelen. Próbáld újra",
+
+"createAccount": "Fiók létrehozása",
+"appName": "Vaultara",
+"authTagline": "Személyes központ útlevelekhez, jogosítványokhoz, kártyákhoz és fontos iratokhoz",
+"tabSignIn": "Bejelentkezés",
+"tabCreateAccount": "Fiók létrehozása",
+"signInFooterText": "Jelentkezz be, és kezeld könnyedén a megújításokat",
+"createAccountFooterText": "Hozd létre Vaultara fiókodat, és érd el emlékeztetőidet bármikor",
+
+"emailRequired": "Email cím szükséges",
+"passwordRequired": "Jelszó szükséges",
+"emailNotFound": "Hibás email. Nincs Vaultara fiók\nilyen címmel",
+"incorrectPassword": "Hibás jelszó",
+
+"emailLabel": "Email cím",
+"emailHint": "Add meg az email címet",
+"passwordLabel": "Jelszó",
+"signIn": "Bejelentkezés",
+
+"categoryPersonalIdentification": "Személyazonosítás",
+"categoryDrivingAndVehicles": "Vezetés és járművek",
+"categoryTravelAndImmigration": "Utazás és bevándorlás",
+"categoryBankingAndCards": "Bank és kártyák",
+"categoryInsuranceAndCover": "Biztosítás és védelem",
+"categoryHealthAndMedical": "Egészség és orvosi",
+"categoryWorkAndProfessional": "Munka és szakmai",
+"categoryPropertyAndHousing": "Ingatlan és lakhatás",
+"categoryHouseholdAndUtilities": "Háztartás és szolgáltatások",
+
+"subcategoryPassports": "Útlevelek",
+"subcategoryIdCards": "Személyi igazolványok",
+"subcategoryResidencePermits": "Tartózkodási engedélyek",
+
+"subcategoryDrivingLicences": "Vezetői engedélyek",
+"subcategoryVehicleRegistrations": "Járműregisztrációk",
+"subcategoryRoadworthyCertificates": "Műszaki igazolások",
+"subcategoryVehicleInspectionCertificates": "Járműellenőrzési igazolások",
+
+"subcategoryVisas": "Vízumok",
+"subcategoryStudyPermits": "Tanulmányi engedélyek",
+"subcategoryWorkPermits": "Munkavállalási engedélyek",
+"subcategoryTravelInsuranceDocuments": "Utazási biztosítási dokumentumok",
+
+"subcategoryDebitAndCreditCards": "Betéti és hitelkártyák",
+"subcategoryStoreCards": "Üzleti kártyák",
+"subcategoryFuelCards": "Üzemanyagkártyák",
+"subcategoryVehicleInsurances": "Járműbiztosítások",
+"subcategoryPropertyInsurances": "Ingatlanbiztosítások",
+"subcategoryLifeInsurances": "Életbiztosítások",
+"subcategoryHealthInsurances": "Egészségbiztosítások",
+"subcategoryTravelInsurances": "Utazási biztosítások",
+
+"subcategoryMedicalPrescriptions": "Orvosi receptek",
+"subcategoryOpticalPrescriptions": "Optikai receptek",
+"subcategoryMedicalCertificates": "Orvosi igazolások",
+
+"subcategoryProfessionalLicences": "Szakmai engedélyek",
+"subcategoryProfessionalRegistrations": "Szakmai regisztrációk",
+"subcategoryIndustryRegistrations": "Iparági regisztrációk",
+"subcategoryWorkAccessCards": "Munkahelyi belépőkártyák",
+
+"subcategoryLeaseAgreements": "Bérleti szerződések",
+"subcategoryAccessCardsAndTags": "Belépőkártyák és címkék",
+"subcategoryParkingPermits": "Parkolási engedélyek",
+"subcategorySecurityAccessPermits": "Biztonsági hozzáférési engedélyek",
+
+"subcategoryElectricityAccounts": "Villanyszámlák",
+"subcategoryWaterAccounts": "Vízszámlák",
+"subcategoryInternetContracts": "Internetszerződések",
+"subcategorySecurityServiceContracts": "Biztonsági szolgáltatási szerződések",
+
+"searchCategories": "Kategóriák keresése",
+"filterAll": "Összes",
+"filterPreset": "Előre beállított",
+"filterCustom": "Egyéni",
+"addCategoryTitle": "Kategória hozzáadása",
+"customLabel": "Egyéni",
+"subcategoriesLabel": "alkategóriák",
+"itemsLabel": "elemek",
+
+"itemsExpiring": "{count} elem lejár {days} nap múlva",
+
+"pinnedEssentials": "Rögzített fontosak",
+"pinnedHint": "Rögzítsd a leggyakrabban használt kategóriákat.",
+"noCategoriesFound": "Nem találhatók kategóriák",
+
+"searchGroups": "Csoportok keresése",
+"addGroupTitle": "Csoport hozzáadása",
+
+"basicPlanGroupInfo": "Basic csomagot használsz.\nMegtekintheted az előre beállított csoportokat.\nFrissíts Premiumra saját csoportok létrehozásához.",
+
+"groupDeleted": "Csoport törölve",
+"undo": "VISSZAVON",
+
+"groupTapHint": "Koppints ide elemek hozzáadásához és követéséhez.",
+"itemsInGroup": "Ebben a csoportban lévő elemek",
+"itemsInGroupHint": "Kövesd az elemeket a lejárati dátummal együtt.",
+"searchItems": "Elemek keresése",
+"filterExpiringWithin": "{days} napon belül lejárók",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Lejárt",
+"addItem": "Elem hozzáadása",
+"noItemsYet": "Még nincsenek elemek.",
+
+"statusExpired": "Lejárt",
+"statusExpiresToday": "Ma lejár",
+"statusExpiresInOneDay": "1 nap múlva lejár",
+"statusExpiresInDays": "{days} nap múlva lejár",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Érvényes",
+
+"deleteCategoryTitle": "Kategória törlése",
+"deleteCategoryMessage": "Biztosan törölni szeretnéd a(z) \"{name}\" kategóriát?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Csoport törlése",
+"deleteGroupMessage": "Biztosan törölni szeretnéd a(z) \"{name}\" csoportot?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Elem törlése",
+"deleteItemMessage": "Biztosan törölni szeretnéd: \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Mégse",
+"delete": "Törlés",
+
+"homeWelcomeTitle": "Üdvözlünk",
+
+"homeWelcomeFirstTitle": "Üdvözlünk, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Üdv újra, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Összes",
+"homeWelcomeSubtitleGeneric": "A Vaultara segít nyomon követni a fontos lejárati dátumokat, hogy semmi se járjon le észrevétlenül.",
+
+"homeWelcomeSubtitleFirst": "Örülünk, hogy itt vagy. A Vaultara egy biztonságos helyen tartja a fontos dátumokat és adatokat.",
+
+"homeWelcomeSubtitleBack": "Jó újra látni. A Vaultara mindig készen áll fontos adataid áttekintésére.",
+
+"insightEmptyTitle": "Még nincs hozzáadva semmi",
+"insightEmptyBody": "Amint elkezded követni a dátumokat, a Vaultara segít előre tervezni.",
+
+"insightExpiresTodayTitle": "\"{name}\" ma lejár",
+"insightExpiresTodayBody": "Egy gyors ellenőrzés segít a pontosság megőrzésében.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" holnap lejár",
+"insightExpiresTomorrowBody": "A mai ellenőrzés később időt spórol.",
+
+"insightExpiresSoonTitle": "\"{name}\" lejár ekkor: {date}",
+"insightExpiresSoonBody": "A korai intézkedés megkönnyíti a dolgokat.",
+
+"insightNextExpiryTitle": "A következő lejárat: \"{name}\" {date}",
+"insightNextExpiryBody": "Még nincs teendő, de jó észben tartani.",
+
+"insightClusteredTitle": "Több elem jár le {month} hónapban",
+"insightClusteredBody": "Együtt átnézve időt spórolhatsz.",
+
+"insightTopCategoryTitle": "A legtöbb elem a(z) {category} kategóriában van",
+"insightTopCategoryBody": "Ennek áttekintése adja a legnagyobb hatást.",
+
+"insightStableTitle": "Minden stabil",
+"insightStableBody": "Nincs olyan lejárat, ami figyelmet igényelne.",
+
+"summaryAllTitle": "Összes elem",
+"summaryAllCaption": "Nyomon követve a Vaultarában",
+"summarySoonTitle": "Hamarosan lejár",
+"summarySoonCaption": "30 napon belül",
+"summaryWeekTitle": "Ezen a héten",
+"summaryWeekCaption": "7 napon belül lejár",
+"summaryExpiredTitle": "Lejárt",
+"summaryExpiredCaption": "Lejárati dátum után",
+
+"stabilityStableTitle": "Stabil állapot",
+"stabilityStableBody": "Nincsenek azonnali kockázatok.",
+
+"stabilityDecliningTitle": "A stabilitás csökken",
+"stabilityDecliningBody": "Néhány elem már lejárt, mások közelednek.",
+
+"stabilityWeakenedTitle": "A stabilitás gyengült",
+"stabilityWeakenedBody": "A lejárt adatok csökkentik a megbízhatóságot.",
+
+"stabilityPressureTitle": "Növekvő nyomás",
+"stabilityPressureBody": "Több adat hamarosan figyelmet igényel.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Jegyzetek",
+"notesHint": "Jegyzetek megadása",
+"editorReminderTitle": "Emlékeztető",
+"editorReminderNone": "Nincs emlékeztető",
+"editorReminderOnExpiry": "Lejáratkor",
+"editorReminder7Days": "7 nappal a lejárat előtt",
+"editorReminder30Days": "30 nappal a lejárat előtt",
+"editorReminderCustom": "Egyéni",
+"daysBeforeExpiry": "nappal a lejárat előtt",
+
+"reminderStage0Title": "Lejárati emlékeztető",
+"reminderStage0Body": "{firstName}, a(z) {itemName} {days} nap múlva lejár.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Emlékeztető követés",
+"reminderStage1Body": "{firstName}, a(z) {itemName} még nincs frissítve.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Közeleg a lejárat",
+"reminderStage2Body": "A(z) {itemName} lejárati dátuma közeleg.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Utolsó emlékeztető",
+"reminderFinalBody": "{firstName}, kérjük frissítse most a(z) {itemName} elemet.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Lefedettségi egyensúly",
+"coverageAllRepresented": "Az adatai minden kategóriát tartalmaznak.",
+"coverageMissingNamed": "Nincs adat {count} kategóriában: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Nem adott hozzá adatot {count} kategóriához, beleértve: {names}, valamint még {remaining} másikat.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Használjon inkább jelszót",
+"signInWithBiometrics": "Bejelentkezés biometrikus azonosítással",
+"enableBiometricsTitle": "Biometrikus védelem engedélyezése",
+"enableBiometricsBody": "Használjon ujjlenyomatot vagy arcfelismerést a Vaultara védelméhez.",
+"enableBiometricsReason": "Biometrikus feloldás engedélyezése a Vaultarához.",
+"notNow": "Most nem",
+"useBiometrics": "Biometria használata",
+
+"recordsCalendarIntro": "Válassza ki, hogyan szeretné megtekinteni a lejáratokat:\n\n• Adja meg, hány napra előre szeretne látni.\n• Vagy válasszon egy pontos dátumot a naptárból.\n\nA Vaultara megmutatja, mely rekordok járnak le azon a napon.",
+
+"showingRecordsRelative": "A(z) {time} lejáró rekordok megjelenítése",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "A kiválasztott napon lejáró rekordok megjelenítése",
+
+"noRecordsOnDate": "Ezen a napon egyetlen rekord sem jár le.",
+
+"recordEditorAddTitle": "Rekord hozzáadása",
+"recordEditorEditTitle": "Rekord szerkesztése",
+
+"editorRecordName": "Rekord neve",
+"editorRecordNameHint": "Adja meg a rekord nevét",
+"recordEditorErrorName": "A rekord neve kötelező",
+
+"recordsGroupTapHint": "Érintse meg a rekordok hozzáadásához és követéséhez.",
+
+"recordsInGroup": "Rekordok ebben a csoportban",
+
+"recordsInGroupHint": "Kövesse minden fontos rekord lejárati dátumát.",
+
+"searchRecords": "Rekordok keresése",
+
+"addRecord": "Rekord hozzáadása",
+
+"noRecordsYet": "Még nincsenek rekordok.",
+"deleteRecordTitle": "Rekord törlése",
+
+"recordsInsightClusteredTitle": "Több rekord jár le {month} körül",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "A rekordok többsége a(z) {category} kategóriában található",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Összes rekord",
+
+"recordsStabilityDecliningBody": "Néhány rekord már lejárt, és több hamarosan lejár.",
+
+"recordsCoverageAllRepresented": "A rekordjai minden kategóriát lefednek.",
+
+"recordReminderStage0Body": "{firstName}, a(z) {recordName} {days} nap múlva lejár.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, a(z) {recordName} még nincs frissítve.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "A(z) {recordName} lejárati dátuma közeledik.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, kérjük frissítse a(z) {recordName} rekordot most.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Még nincsenek csoportok",
+
+"recordsExpiring": "{count, plural, one {1 rekord lejár {days} napon belül} other {{count} rekord lejár {days} napon belül}}",
+
+"recordsGroupStats": "{records, plural, one {1 rekord} other {{records} rekord}} • {expiring} lejár {days} napon belül",
+
+"groupLabel": "{count, plural, one {{count} csoport} other {{count} csoport}}",
+
+"recordsLabel": "{count, plural, one {{count} rekord} other {{count} rekord}}",
+
+"forgotPassword": "Elfelejtette a jelszót?",
+"forgotPasswordTitle": "Jelszó visszaállítása",
+"forgotPasswordBody": "Adja meg e-mail címét, és küldünk egy linket a jelszó visszaállításához.",
+"sendResetLink": "Visszaállító link küldése",
+"passwordResetEmailSent": "A jelszó-visszaállító e-mail elküldve.",
+"verifyEmailToContinue": "Kérjük, igazolja e-mail címét a bejelentkezés előtt",
+
+"changeEmailTitle": "E-mail cím módosítása",
+"newEmailHint": "Adja meg az új e-mail címet",
+"sendVerificationEmail": "Ellenőrző e-mail küldése",
+
+"deleteAccountTitle": "Fiók törlése",
+"deleteAccountWarning": "Ez a művelet véglegesen törli a fiókját és az összes adatot.\nEz nem vonható vissza.",
+"deleteAccountConfirm": "Fiók végleges törlése",
+
+"supportTitle": "Támogatás",
+"supportSubtitle": "Vegye fel velünk a kapcsolatot, ha segítségre van szüksége.",
+"supportEmailSubject": "Vaultara támogatási kérés",
+"supportEmailError": "Nem sikerült megnyitni az e-mail alkalmazást.",
+
+"passwordResetEmailFailed": "Nem sikerült elküldeni a jelszó-visszaállító e-mailt.",
+
+"loggedInPasswordResetBody": "Jelszó-visszaállító linket küldünk ide:\n{email}",
+
+"accountManagementTitle": "Fiókkezelés",
+"changeEmailSubtitle": "Frissítse a fiókjához tartozó e-mail címet.",
+"changePasswordTitle": "Jelszó módosítása",
+"changePasswordSubtitle": "E-mailben küldünk egy biztonságos módosító linket.",
+
+"deleteAccountSubtitle": "Vaultara-fiók végleges törlése.",
+
+"biometricAuthReason": "Hitelesítse magát a Vaultara fiók eléréséhez.",
+
+"verifyEmailTitle": "E-mail megerősítése",
+"verifyEmailBody": "Ellenőrző e-mailt küldtünk. Nyissa meg és erősítse meg címét, majd térjen vissza ide.",
+"verifyEmailConfirmedButton": "Megerősítettem az e-mailt",
+"verifyEmailResendButton": "Ellenőrző e-mail újraküldése",
+"verifyEmailSending": "Küldés...",
+"navHome": "Kezdő",
+"navCategories": "Kategóriák",
+"navInsights": "Elemzés",
+"navCalendar": "Naptár",
+"tutorialCancel": "Mégse",
+"tutorialNext": "Következő",
+"tutorialEnd": "Oktatóanyag vége",
+
+"softDeleteCategory": "Kategória",
+"softDeleteGroup": "Csoport",
+"softDeleteRecord": "Rekord",
+
+"softDeleteTitle": "{type} áthelyezése a Nemrég töröltek közé",
+"softDeleteMessage": "A(z) {type} \"{name}\" átkerül a Nemrég töröltek közé.\n\n30 napon belül visszaállítható, utána végleg törlődik.",
+"softDeleteMove": "Áthelyezés",
+"@recordsExpiring": { "description": "Megmutatja, hány rekord jár le adott nap alatt", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "Csoport statisztikák", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "Csoportok száma", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Rekordok száma", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "Jelzi a jelszó-visszaállító email küldését", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "Ideiglenes törlés címe", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "Ideiglenes törlés magyarázata", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "Nemrég törölt elemek",
+"categories": "Kategóriák",
+"groups": "Csoportok",
+"records": "Rekordok",
+"restore": "Visszaállítás",
+"deletePermanently": "Végleges törlés",
+
+"recentlyDeletedBanner": "A törölt {type} elemek 30 napig maradnak itt, mielőtt végleg eltávolításra kerülnek.",
+"@recentlyDeletedBanner": {
+  "placeholders": {
+    "type": { "type": "String" }
+  }
+},
+
+"searchDeletedHint": "Törölt {type} keresése",
+"@searchDeletedHint": {
+  "placeholders": {
+    "type": { "type": "String" }
+  }
+},
+
+"noDeletedItems": "Még nincs törölt {type}",
+"@noDeletedItems": {
+  "placeholders": {
+    "type": { "type": "String" }
+  }
+},
+
+"categoriesHint": "Koppintson egy kategóriára a csoportok megtekintéséhez és a rekordok kezeléséhez.",
+"groupsHint": "A csoportok rendszerezik a rekordokat ebben a kategóriában. Koppintson egy csoportra a kezeléshez.",
+"notLoggedIn": "Nincs bejelentkezve",
+
+"recordsInsideGroupHint": "Ezek a rekordok ebben a csoportban.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" áthelyezve a Nemrég törölt elemek közé",
+"@snackMovedToRecentlyDeleted": {
+  "placeholders": {
+    "name": { "type": "String", "example": "Útlevél" }
+  }
+},
+
+"snackDeletedSuccessfully": "\"{name}\" sikeresen törölve",
+"@snackDeletedSuccessfully": {
+  "placeholders": {
+    "name": { "type": "String", "example": "Jogosítvány" }
+  }
+},
+
+"snackUpdatedSuccessfully": "\"{name}\" sikeresen frissítve",
+"@snackUpdatedSuccessfully": {
+  "placeholders": {
+    "name": { "type": "String", "example": "Vízum" }
+  }
+},
+
+"snackAddedSuccessfully": "\"{name}\" sikeresen hozzáadva",
+"@snackAddedSuccessfully": {
+  "placeholders": {
+    "name": { "type": "String", "example": "Biztosítás" }
+  }
+},
+
+"snackRestoredSuccessfully": "\"{name}\" sikeresen visszaállítva",
+"@snackRestoredSuccessfully": {
+  "placeholders": {
+    "name": { "type": "String", "example": "Útlevél" }
+  }
+},
+
+"snackFreeLimitReached": "Az ingyenes korlát elérve ({current}/{limit}). Frissítsen a további hozzáadáshoz.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int", "example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+
+"globalSearchTitle": "Összes rekord keresése",
+"globalSearchHint": "Írja be a rekord nevét, kategóriát vagy csoportot",
+"globalSearchNoMatches": "Nincs a keresésnek megfelelő rekord.",
+"snackNoRecordsToSearch": "Nincs kereshető rekord. Adjon hozzá néhány rekordot, és a Vaultara automatikusan indexeli őket.",
+
+"recoveryCentreTitle": "Helyreállítási központ",
+"recoveryCentreSubtitle": "Törölt rekordok visszaállítása vagy végleges törlése.",
+
+"plan_premium": "Prémium",
+"plan_free": "Ingyenes",
+
+"profile_app_settings_title": "Alkalmazás beállításai",
+"profile_privacy_security_title": "Adatvédelem és biztonság",
+"profile_biometric_on": "A biometrikus zárolás be van kapcsolva ezen az eszközön.",
+"profile_biometric_off": "A biometrikus zárolás ki van kapcsolva.",
+"profile_biometric_enable_reason": "Erősítse meg személyazonosságát a biometrikus zárolás engedélyezéséhez.",
+"profile_biometric_disable_reason": "Erősítse meg személyazonosságát a biometrikus zárolás letiltásához.",
+"profile_account_management_title": "Fiókkezelés",
+"profile_premium_active_title": "A Premium aktív",
+"profile_premium_upgrade_title": "Frissítés Premiumra",
+"profile_premium_active_subtitle": "Speciális emlékeztetők feloldva.",
+"profile_premium_upgrade_subtitle": "Speciális emlékeztetők és korlátlan rendszerezés.",
+"profile_manage_cancel_hint": "Kezeld vagy mondd le bármikor a Google Playen.",
+"profile_manage_subscription_button": "Előfizetés kezelése",
+"plansTitle": "Válassz csomagot",
+"plansTrialBanner": "Kezdd 7 napos ingyenes próbaidőszakkal.\nBármikor lemondható.",
+"plansLoading": "Betöltés…",
+"plansStartFreeTrial": "Ingyenes próba indítása",
+"plansNoChargeTodayFooter": "7 nap ingyen · Ma nincs terhelés",
+
+"planFreeTitle": "Ingyenes",
+"planFreeSubtitle": "Kezdéshez",
+"planPremiumMonthlyTitle": "Premium havi",
+"planPremiumYearlyTitle": "Premium éves",
+"planPerMonth": "havonta",
+"planPerYear": "évente",
+
+"planBadgeCurrent": "Jelenlegi csomag",
+"planBadgePopular": "Népszerű",
+"planBadgeBestValue": "Legjobb ár-érték",
+
+"planYouAreOnThisPlan": "Már ezen a csomagon vagy.",
+
+"planFeatureUpToRecords": "Legfeljebb {count} rekord",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Egyéni kategóriák (max. {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Előre beállított alkategóriák",
+"planFeatureCloudStorage": "Felhőtárhely",
+"planFeatureSmartExpiryInsights": "Intelligens lejárati értesítések",
+"planFeatureCoverageBalance": "Fedezeti egyensúly",
+"planFeatureRecordStabilityTracking": "Rekordstabilitás követése",
+
+"planFeatureUnlimitedRecords": "Korlátlan rekord",
+"planFeatureUnlimitedCategories": "Korlátlan kategóriák",
+"planFeatureCustomSubcategories": "Egyéni alkategóriák",
+"planFeatureMultipleRemindersPerRecord": "Több emlékeztető",
+"planFeatureAdvancedReminderTiming": "Speciális időzítés",
+"planFeatureAutomaticFollowUps": "Automatikus követések",
+
+"planFeatureEverythingInMonthly": "Minden a havi csomagból",
+"planFeatureSavePercentComparedToMonthly": "Takaríts meg {percent}%-ot a havihoz képest",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Legjobb hosszú távú érték",
+
+"editorReminderLabel": "Emlékeztető",
+"editorReminderSelectOptional": "Válassz emlékeztetőt (opcionális)",
+"editorReminderOnExpiry": "Lejárat napján",
+"editorReminderDaysBefore": "{days} nappal a lejárat előtt",
+"editorFreeItemsCount": "Ingyenes elemek: {used}/{limit}",
+"editorExpiryPastWarning": "A lejárati dátum már elmúlt.",
+"editorExpiryTodayWarning": "Ez a rekord ma lejár.",
+"editorErrorExpiryPast": "A lejárati dátum nem lehet a múltban.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Mai áttekintés",
+"tutorialBannerTitle": "Gyors bemutató",
+"tutorialBannerBody": "Egy perc alatt megtudhatod, hol keress, hogyan adj hozzá rekordokat és mit jelentenek az áttekintések.",
+"tutorialBannerStart": "Bemutató indítása",
+"tutorialBannerDismiss": "Most nem",
+"authErrorUserDisabled": "Ez a fiók le van tiltva.",
+"authErrorNetwork": "Hálózati hiba. Ellenőrizd az internetkapcsolatot és próbáld újra.",
+"authErrorTooManyRequests": "Túl sok próbálkozás. Kérlek, próbáld később.",
+"authErrorSignInFailed": "A bejelentkezés sikertelen. Kérlek, próbáld újra.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium engedélyezve",
+"snackPremiumRestored": "Premium visszaállítva",
+"passwordNeedLower": "Kisbetűt kell tartalmaznia",
+"passwordNeedUpper": "Nagybetűt kell tartalmaznia",
+"passwordNeedNumber": "Számot kell tartalmaznia",
+"passwordNeedSymbol": "Szimbólumot kell tartalmaznia",
+"editorFreeItemsCount": "Ingyenes elemek: {used}/{limit}",
+"editorExpiryPastWarning": "A lejárati dátum már elmúlt.",
+"editorExpiryTodayWarning": "Ez a rekord ma lejár.",
+"editorErrorExpiryPast": "A lejárati dátum nem lehet a múltban.",
+"todayInsightsTitle": "Mai áttekintés",
+"tutorialBannerTitle": "Gyors bemutató",
+"tutorialBannerBody": "Egy perc alatt megtudhatod, hol keress, hogyan adj hozzá rekordokat és mit jelentenek az áttekintések.",
+"tutorialBannerStart": "Bemutató indítása",
+"tutorialBannerDismiss": "Most nem",
+"authErrorUserDisabled": "Ez a fiók le van tiltva.",
+"authErrorNetwork": "Hálózati hiba. Ellenőrizd az internetet és próbáld újra.",
+"authErrorTooManyRequests": "Túl sok próbálkozás. Kérlek, próbáld később.",
+"authErrorSignInFailed": "A bejelentkezés sikertelen. Kérlek, próbáld újra.",
+"ok": "OK",
+"tutorialHomeSearch": "Használd a keresősávot, hogy gyorsan megtaláld bármelyik követett rekordot.",
+"tutorialHomeFab": "Itt add hozzá az első rekordodat.\nVálaszd ki, hová tartozik, adj hozzá opcionális jegyzeteket, és válassz lejárati dátumot.",
+"tutorialHomeSummary": "Ahogy több rekordot adsz hozzá, ez a rész segít észrevenni, melyek járnak le hamarosan vagy már lejártak.",
+"tutorialHomeInsight": "Ez az okos betekintés mintákat és közelgő lejáratokat emel ki.\nA hangszóró ikonra koppintva fel is olvastathatod.",
+"tutorialHomeCoverage": "A lefedettségi egyensúly azt mutatja, mennyire egyenletesen oszlanak meg a rekordjaid az összes kategória között.",
+"tutorialHomeStability": "A stabilitás azt mutatja, mennyire megbízhatóak a rekordjaid idővel.",
+"profile_account_management_subtitle": "E-mail, jelszó módosítása vagy a fiók törlése.",
+"confirmIdentityTitle": "Személyazonosság megerősítése",
+"confirm": "Megerősítés",
+"profile_sign_out_title": "Kijelentkezés",
+"profile_sign_out_subtitle": "Kijelentkezés a Vaultarából ezen az eszközön",
+"profile_sign_out_confirm_title": "Kijelentkezel?",
+"profile_sign_out_confirm_body": "A fiókod eléréséhez újra be kell jelentkezned.",
+"profile_sign_out_action": "Kijelentkezés",
+"todayInsightsAudioHint": "Hangot szeretnél? Használd a hangszóró ikont.",
+"category2Label": "Kategória",
+"enable2BiometricsBody": "Használd az ujjlenyomat-felismerést Vaultara fiókod védelméhez.",
+"snackNotificationsDisabled": "Az értesítések ki vannak kapcsolva. Kapcsold be őket az emlékeztetőkhez.",
+"openSettings": "Beállítások megnyitása",
+
+"reminderOnExpiryTitle": "Ma lejár",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Szia {firstName}, a(z) \"{itemName}\" ma lejár.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Ingyenes kategóriák: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Megjeleníti, hány ingyenes kategória lett felhasználva az ingyenes limitből.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Jegyzetek hozzáadása (opcionális)",
+"apply": "Alkalmaz",
+"smartInsightExpiresTodayHeading": "Ma lejár",
+"smartInsightExpiresTodaySingleBody": "{name} ma lejár. Cselekedjen most, hogy naprakész maradjon.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} és még {extra} dokumentum ma lejár.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Figyelmet igényel",
+"smartInsightSilentRiskBody": "{name} {days} napon belül lejár, és nincs hozzá emlékeztető beállítva. Ellenőrizze, hogy az adatok még helyesek-e.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Több közelgő megújítás",
+"smartInsightRenewalTwinBodyTwo": "{a} és {b} három héten belül lejárnak egymáshoz képest. Tervezzen előre.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} és {c} mind három héten belül lejárnak. Tervezzen előre.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} és még {extra} dokumentum három héten belül lejár. Tervezzen előre.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Közelgő csoport",
+"smartInsightClusterBody": "{count} dokumentum a(z) {category} kategóriában a következő két hónapban lejár. Fontolja meg az együttes megújítást.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Nyugodt időszak következik",
+"smartInsightQuietPeriodBody": "Semmi sem jár le a következő {days} napban. A következő megújítás dátuma: {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Minden naprakész",
+"smartInsightAllCaughtUpBody": "Mind a {count} közelgő lejárathoz emlékeztető tartozik. Jelenleg nincs más teendő.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Minden naprakész. Jelenleg nincs teendő.",
+"smartInsightNoRecordsHeading": "Adja hozzá az első rekordját",
+"smartInsightNoRecordsBody": "Kezdje el nyomon követni dokumentumait, és a Vaultara itt intelligens betekintéseket jelenít meg.",
+"expiryTimelineTitle": "Lejárati idővonal",
+"expiryTimelineSubtitle": "Koppintson egy hónapra, hogy lássa az adott hónapban lejáró rekordokat",
+"expiryTimelineDetailCount": "{count, plural, =1{1 rekord} other{{count} rekord}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Közelgő",
+"summaryUpcomingCaption": "30 napon belül",
+"summaryUrgentTitle": "Sürgős",
+"summaryUrgentCaption": "7 napon belül"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

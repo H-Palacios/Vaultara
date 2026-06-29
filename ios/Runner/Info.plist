@@ -53,5 +53,20 @@
 		<string>Vaultara sends reminders before important items expire.</string>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<!-- ✅ Custom URL Scheme: vaultara:// -->
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>vaultara</string>
+				</array>
+			</dict>
+		</array>
+		<!-- ✅ Universal Links -->
+		<key>AssociatedDomains</key>
+		<array>
+			<string>applinks:vaultara.app</string>
+		</array>
 	</dict>
 </plist>

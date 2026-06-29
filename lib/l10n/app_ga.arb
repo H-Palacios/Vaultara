@@ -103,5 +103,790 @@
   "groupErrorSymbols": "Ní cheadaítear siombailí",
   "groupErrorNumbers": "Ní cheadaítear uimhreacha",
 
-  "createGroup": "Cruthaigh"
+  "createGroup": "Cruthaigh",
+
+
+  "registerTitle": "Cruthaigh cuntas",
+
+  "firstNameLabel": "Ainm",
+  "firstNameHint": "Iontráil d’ainm",
+  "errorFirstName": "Tá an chéad ainm riachtanach",
+
+  "lastNameLabel": "Sloinne",
+  "lastNameHint": "Iontráil do shloinne",
+  "errorLastName": "Tá an sloinne riachtanach",
+
+  "emailLabel": "Ríomhphost",
+  "errorEmailInvalid": "Iontráil ríomhphost bailí.",
+  "errorEmailInUse": "Tá an ríomhphost seo ceangailte le cuntas Vaultara cheana féin.",
+"emailRequired": "Tá do sheoladh ríomhphoist ag teastáil",
+"passwordRequired": "Tá do phasfhocal ag teastáil",
+"registerPasswordHint": "Iontráil pasfhocal",
+"loginPasswordHint": "Iontráil do phasfhocal",
+"emailHint": "Iontráil do sheoladh ríomhphoist",
+  "passwordLabel": "Pasfhocal",
+  "passwordHelper": "Ar a laghad 8 gcarachtar le cineálacha éagsúla.",
+
+  "passwordTooShort": "Ró-ghearr",
+  "passwordTooWeak": "Ró-lag",
+  "passwordMedium": "Meánach",
+  "passwordStrong": "Láidir",
+
+  "errorPasswordLength": "Caithfidh 8 gcarachtar ar a laghad a bheith sa phasfhocal.",
+  "errorPasswordWeak": "Roghnaigh pasfhocal níos láidre.",
+
+  "errorGeneric": "Theip ar chlárú. Bain triail eile as.",
+
+  "createAccount": "Cruthaigh cuntas",
+  "appName": "Vaultara",
+"authTagline": "Do mhol pearsanta do phasanna, ceadúnais, cártaí agus rudaí tábhachtacha eile",
+"tabSignIn": "Sínigh isteach",
+"tabCreateAccount": "Cruthaigh cuntas",
+"signInFooterText": "Sínigh isteach chun rochtain a fháil ar do spás Vaultara pearsanta agus gach athnuachan a choinneáil faoi smacht",
+"createAccountFooterText": "Cruthaigh do chuntas Vaultara chun meabhrúcháin riachtanacha a chúltaca agus rochtain a fháil orthu am ar bith",
+  "emailNotFound": "Ríomhphost mícheart.\nNíl cuntas Vaultara leis an ríomhphost seo",
+  "incorrectPassword": "Pasfhocal mícheart",
+  "emailLabel": "Seoladh ríomhphoist",
+  "passwordLabel": "Pasfhocal",
+  "signIn": "Sínigh isteach",
+    "categoryPersonalIdentification": "Aitheantas Pearsanta",
+  "categoryDrivingAndVehicles": "Tiomáint agus Feithiclí",
+  "categoryTravelAndImmigration": "Taisteal agus Inimirce",
+  "categoryBankingAndCards": "Baincéireacht agus Cártaí",
+  "categoryInsuranceAndCover": "Árachas agus Clúdach",
+  "categoryHealthAndMedical": "Sláinte agus Leighis",
+  "categoryWorkAndProfessional": "Obair agus Gairmiúil",
+  "categoryPropertyAndHousing": "Maoin agus Tithíocht",
+  "categoryHouseholdAndUtilities": "Teaghlach agus Seirbhísí",
+
+  "subcategoryPassports": "Pasanna",
+  "subcategoryIdCards": "Cártaí Aitheantais",
+  "subcategoryResidencePermits": "Ceadanna Cónaithe",
+
+  "subcategoryDrivingLicences": "Ceadúnais Tiomána",
+  "subcategoryVehicleRegistrations": "Clárúcháin Feithicle",
+  "subcategoryRoadworthyCertificates": "Teastais Incháilitheachta",
+  "subcategoryVehicleInspectionCertificates": "Teastais Iniúchta Feithicle",
+
+  "subcategoryVisas": "Víosaí",
+  "subcategoryStudyPermits": "Ceadanna Staidéir",
+  "subcategoryWorkPermits": "Ceadanna Oibre",
+  "subcategoryTravelInsuranceDocuments": "Doiciméid Árachais Taistil",
+
+  "subcategoryDebitAndCreditCards": "Cártaí Dochair agus Creidmheasa",
+  "subcategoryStoreCards": "Cártaí Siopa",
+  "subcategoryFuelCards": "Cártaí Breosla",
+
+  "subcategoryVehicleInsurances": "Árachais Feithicle",
+  "subcategoryPropertyInsurances": "Árachais Maoine",
+  "subcategoryLifeInsurances": "Árachais Saoil",
+  "subcategoryHealthInsurances": "Árachais Sláinte",
+  "subcategoryTravelInsurances": "Árachais Taistil",
+
+  "subcategoryMedicalPrescriptions": "Oidis Leighis",
+  "subcategoryOpticalPrescriptions": "Oidis Optúla",
+  "subcategoryMedicalCertificates": "Teastais Leighis",
+
+  "subcategoryProfessionalLicences": "Ceadúnais Ghairmiúla",
+  "subcategoryProfessionalRegistrations": "Clárúcháin Ghairmiúla",
+  "subcategoryIndustryRegistrations": "Clárúcháin Tionscail",
+  "subcategoryWorkAccessCards": "Cártaí Rochtana Oibre",
+
+  "subcategoryLeaseAgreements": "Comhaontuithe Léasa",
+  "subcategoryAccessCardsAndTags": "Cártaí agus Clibeanna Rochtana",
+  "subcategoryParkingPermits": "Ceadanna Páirceála",
+  "subcategorySecurityAccessPermits": "Ceadanna Rochtana Slándála",
+
+  "subcategoryElectricityAccounts": "Cuntais Leictreachais",
+  "subcategoryWaterAccounts": "Cuntais Uisce",
+  "subcategoryInternetContracts": "Conarthaí Idirlín",
+  "subcategorySecurityServiceContracts": "Conarthaí Seirbhísí Slándála",
+  "searchCategories": "Cuardaigh catagóirí",
+  "filterAll": "Gach ceann",
+  "filterPreset": "Réamhshocraithe",
+  "filterCustom": "Saincheaptha",
+  "addCategoryTitle": "Cuir catagóir leis",
+  "customLabel": "Saincheaptha",
+  "subcategoriesLabel": "fochatagóirí",
+  "itemsLabel": "míreanna",
+  "itemsExpiring": "Tá {count} mír ag dul in éag i gceann {days} lá",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Bunriachtanais greamaithe",
+  "pinnedHint": "Greamaigh na catagóirí a osclaíonn tú is minice ionas go bhfanfaidh siad ag an mbarr.",
+  "noCategoriesFound": "Níor aimsíodh aon chatagóirí",
+  "searchGroups": "Cuardaigh grúpaí",
+  "addGroupTitle": "Cuir grúpa leis",
+  "basicPlanGroupInfo": "Tá tú ar an bplean Bunúsach.\nIs féidir leat na grúpaí réamhshocraithe sa chatagóir seo a fheiceáil.\nUasghrádaigh go Premium chun do ghrúpaí féin a chruthú.",
+  "groupDeleted": "Scriosadh an grúpa",
+  "undo": "CEALAIGH",
+  "groupStats": "{items} mír • {expiring} ag dul in éag laistigh de {days} lá",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tapáil chun míreanna a chur leis agus a rianú sa ghrúpa seo.",
+  "itemsInGroup": "Míreanna sa ghrúpa seo",
+  "itemsInGroupHint": "Rianaigh gach mír thábhachtach lena dáta éaga chun í a athnuachan in am.",
+  "searchItems": "Cuardaigh míreanna",
+  "filterAll": "Gach ceann",
+  "filterExpiringWithin": "Ag dul in éag laistigh de {days} lá",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Éagtha",
+  "addItem": "Cuir mír leis",
+  "noItemsYet": "Níl aon mhíreanna fós.",
+
+  "statusExpired": "Éagtha",
+  "statusExpiresToday": "Éagann sé inniu",
+  "statusExpiresInOneDay": "Éagann sé i gceann 1 lá",
+  "statusExpiresInDays": "Éagann sé i gceann {days} lá",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Bailí",
+
+  "deleteCategoryTitle": "Scrios catagóir",
+  "deleteCategoryMessage": "An bhfuil tú cinnte gur mhaith leat an chatagóir \"{name}\" a scriosadh?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Scrios grúpa",
+  "deleteGroupMessage": "An bhfuil tú cinnte gur mhaith leat an grúpa \"{name}\" a scriosadh?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Scrios mír",
+  "deleteItemMessage": "An bhfuil tú cinnte gur mhaith leat \"{name}\" a scriosadh?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Cealaigh",
+  "delete": "Scrios",
+  "homeWelcomeTitle": "Fáilte",
+
+  "homeWelcomeFirstTitle": "Fáilte, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Fáilte ar ais, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Cabhraíonn Vaultara leat dátaí éaga tábhachtacha a rianú ionas nach gcailltear aon rud.",
+
+  "homeWelcomeSubtitleFirst":
+    "Tá áthas orainn tú a fheiceáil anseo. Cabhraíonn Vaultara leat fanacht eagraithe trí dhátaí agus taifid thábhachtacha a choinneáil in aon áit shlán amháin.",
+
+  "homeWelcomeSubtitleBack":
+    "Tá áthas orainn tú a fheiceáil arís. Tá Vaultara anseo aon uair is mian leat do dhátaí agus taifid thábhachtacha a athbhreithniú.",
+     "insightEmptyTitle": "Níl aon rud curtha leis fós",
+  "insightEmptyBody": "Nuair a thosóidh tú ag rianú dátaí tábhachtacha, cabhróidh Vaultara leat fanacht chun tosaigh ar dhul in éag.",
+
+  "insightExpiresTodayTitle": "Rachaidh \"{name}\" in éag inniu",
+  "insightExpiresTodayBody": "Is féidir le seiceáil thapa gach rud a choinneáil cruinn.",
+
+  "insightExpiresTomorrowTitle": "Rachaidh \"{name}\" in éag amárach",
+  "insightExpiresTomorrowBody": "D’fhéadfadh athbhreithniú anois am a shábháil níos déanaí.",
+
+  "insightExpiresSoonTitle": "Rachaidh \"{name}\" in éag ar {date}",
+  "insightExpiresSoonBody": "Bíonn rudaí níos éasca nuair a dhéantar iad go luath.",
+
+  "insightNextExpiryTitle": "Is é \"{name}\" an chéad dul in éag eile ar {date}",
+  "insightNextExpiryBody": "Níl gá le gníomh faoi láthair.",
+
+  "insightClusteredTitle": "Rachaidh roinnt míreanna in éag timpeall {month}",
+  "insightClusteredBody": "D’fhéadfadh athbhreithniú comhchoiteann am a shábháil.",
+
+  "insightTopCategoryTitle": "Tá formhór na míreanna i {category}",
+  "insightTopCategoryBody": "Is áit mhaith í seo chun tosú ag eagrú.",
+
+  "insightStableTitle": "Tá gach rud seasmhach",
+  "insightStableBody": "Níl aon dul in éag práinneach ann faoi láthair.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Gach mír",
+"summaryAllCaption": "Rianaithe i Vaultara",
+"summarySoonTitle": "Ag dul in éag go luath",
+"summarySoonCaption": "Laistigh de 30 lá",
+"summaryWeekTitle": "An tseachtain seo",
+"summaryWeekCaption": "Rachaidh in éag i gceann 7 lá",
+"summaryExpiredTitle": "In éag",
+"summaryExpiredCaption": "Tá an dáta éaga caite",
+"stabilityStableTitle": "Tá gach rud cobhsaí",
+"stabilityStableBody": "Ní léiríonn do thaifid aon rioscaí láithreacha ná carnacha.",
+
+"stabilityDecliningTitle": "Tá cobhsaíocht ag laghdú",
+"stabilityDecliningBody": "Tá roinnt míreanna imithe in éag agus tá cinn eile ag druidim leis an dáta éaga.",
+
+"stabilityWeakenedTitle": "Cobhsaíocht lagaithe",
+"stabilityWeakenedBody": "Laghdaíonn láithreacht taifead atá imithe in éag an iontaofacht iomlán.",
+
+"stabilityPressureTitle": "Tá brú ag méadú",
+"stabilityPressureBody": "Beidh aird ag teastáil ó roinnt taifead go luath chun cobhsaíocht a choinneáil.",
+"editorNotes": "Nótaí",
+"notesHint": "Iontráil nótaí",
+"editorReminderTitle": "Meabhrúchán",
+"editorReminderNone": "Gan meabhrúchán",
+"editorReminderOnExpiry": "Ar an dáta éaga",
+"editorReminder7Days": "7 lá roimh éag",
+"editorReminder30Days": "30 lá roimh éag",
+"editorReminderCustom": "Saincheaptha",
+"daysBeforeExpiry": "laethanta roimh éag",
+"reminderStage0Title": "Meabhrúchán éaga",
+"reminderStage0Body": "{firstName}, rachaidh {itemName} in éag i gceann {days} lá.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Meabhrúchán leantach",
+"reminderStage1Body": "{firstName}, níl {itemName} nuashonraithe fós.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Ag druidim le héag",
+"reminderStage2Body": "Tá dáta éaga {itemName} ag druidim.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Meabhrúchán deiridh",
+"reminderFinalBody": "{firstName}, nuashonraigh {itemName} anois.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Cothromaíocht chumhdaigh",
+"coverageAllRepresented": "Clúdaíonn do thaifid gach catagóir.",
+"coverageMissingNamed": "Níor aimsíodh taifid i {count} chatagóir: {names}.",
+"coverageMissingSummary": "Níor chuir tú aon taifead leis faoi {count} chatagóir, lena n-áirítear {names} agus {remaining} eile.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Úsáid pasfhocal",
+"signInWithBiometrics": "Sínigh isteach le bithmhéadracht",
+"enableBiometricsTitle": "Cumasaigh slándáil bhithmhéadrach",
+"enableBiometricsBody": "Úsáid méarloirg nó aithint aghaidhe chun Vaultara a chosaint.",
+"enableBiometricsReason": "Cumasaigh díghlasáil bhithmhéadrach do Vaultara.",
+"notNow": "Ní anois",
+"useBiometrics": "Úsáid bithmhéadracht",
+"recordsCalendarIntro":
+  "Roghnaigh conas is mian leat do dhátaí éaga a iniúchadh:\n\n• Iontráil cé mhéad lá ón lá inniu ar mhaith leat breathnú chun cinn.\n• Nó roghnaigh dáta ar leith ar an bhféilire.\n\nTaispeánfaidh Vaultara cé na taifid a shroicheann a ndáta éaga an lá sin.",
+
+"showingRecordsRelative": "Ag taispeáint taifid a éagann i {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Ag taispeáint taifid a éagann ar an dáta roghnaithe",
+"noRecordsOnDate": "Níl aon taifid socraithe chun éagadh ar an lá sin.",
+
+"recordEditorAddTitle": "Cuir taifead leis",
+"recordEditorEditTitle": "Cuir taifead in eagar",
+
+"editorRecordName": "Ainm an taifid",
+"editorRecordNameHint": "Iontráil ainm an taifid",
+"recordEditorErrorName": "Tá ainm an taifid riachtanach",
+
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Tapáil chun taifid a chur leis agus a rianú sa ghrúpa seo.",
+
+"recordsInGroup": "Taifid sa ghrúpa seo",
+"recordsInGroupHint":
+  "Rianaigh gach taifead tábhachtach lena dháta éaga ionas gur féidir é a athnuachan in am.",
+
+"searchRecords": "Cuardaigh taifid",
+"addRecord": "Cuir taifead leis",
+"noRecordsYet": "Níl aon taifid ann fós.",
+
+"deleteRecordTitle": "Scrios taifead",
+
+"recordsInsightClusteredTitle":
+  "Éagann roinnt taifead timpeall {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Tá an chuid is mó de do thaifid grúpáilte faoi {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Gach taifead",
+
+"recordsStabilityDecliningBody":
+  "Tá roinnt taifid éagtha cheana féin agus tá níos mó ag druidim le héag.",
+
+"recordsCoverageAllRepresented":
+  "Clúdaíonn do thaifid gach catagóir.",
+
+"recordReminderStage0Body":
+  "{firstName}, éagfaidh do {recordName} i gceann {days} lá.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, níl do {recordName} nuashonraithe fós.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Tá dáta éaga {recordName} ag druidim.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, déan {recordName} a nuashonrú anois le do thoil.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Níl aon ghrúpaí fós",
+"recordsExpiring": "{count, plural, one {Taifead amháin ag dul in éag i gceann {days} lá} other {{count} taifead ag dul in éag i gceann {days} lá}}",
+"recordsGroupStats": "{records, plural, one {Taifead amháin} other {{records} taifid}} • {expiring} laistigh de {days} lá",
+"groupLabel": "{count, plural, one {{count} grúpa} other {{count} grúpaí}}",
+"recordsLabel": "{count, plural, one {{count} taifead} other {{count} taifid}}",
+"forgotPassword": "Dearmad ar do fhocal faire?",
+  "forgotPasswordTitle": "Athshocraigh focal faire",
+  "forgotPasswordBody": "Cuir isteach do sheoladh ríomhphoist agus seolfaimid nasc chun do fhocal faire a athshocrú.",
+  "sendResetLink": "Seol nasc",
+  "passwordResetEmailSent": "Seoladh ríomhphost athshocraithe focail faire.",
+  "verifyEmailToContinue": "Deimhnigh do sheoladh ríomhphoist le do thoil sula síníonn tú isteach",
+  "changeEmailTitle": "Athraigh seoladh ríomhphoist",
+"newEmailHint": "Cuir isteach do ríomhphost nua",
+"sendVerificationEmail": "Seol ríomhphost fíoraithe",
+"deleteAccountTitle": "Scrios cuntas",
+"deleteAccountWarning": "Scriosfaidh an gníomh seo do chuntas agus gach sonra stóráilte go buan.\nNí féidir é seo a chealú.",
+"deleteAccountConfirm": "Scrios an cuntas go buan",
+"supportTitle": "Tacaíocht",
+"supportSubtitle": "Déan teagmháil linn má theastaíonn cúnamh uait nó má tá ceisteanna agat.",
+"supportEmailSubject": "Iarratas tacaíochta Vaultara",
+"supportEmailError": "Ní féidir an aip ríomhphoist a oscailt.",
+"passwordResetEmailFailed": "Níorbh fhéidir ríomhphost athshocraithe focal faire a sheoladh.",
+"loggedInPasswordResetBody": "Seolfaimid nasc athshocraithe focal faire chuig:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Bainistíocht Cuntais",
+"changeEmailTitle": "Athraigh seoladh ríomhphoist",
+"changeEmailSubtitle": "Nuashonraigh an ríomhphost atá ceangailte le do chuntas.",
+"changePasswordTitle": "Athraigh pasfhocal",
+"changePasswordSubtitle": "Seolfaimid nasc ríomhphoist chugat chun do phasfhocal a athrú go slán.",
+"deleteAccountTitle": "Scrios an cuntas",
+"deleteAccountSubtitle": "Bain do chuntas Vaultara go buan.",
+"biometricAuthReason": "Fíordheimhnigh chun rochtain a fháil ar do chuntas Vaultara",
+"verifyEmailTitle": "Deimhnigh do ríomhphost",
+"verifyEmailBody": "Sheolamar ríomhphost fíoraithe chuig do bhosca isteach. Oscail é agus deimhnigh do sheoladh ríomhphoist, ansin fill anseo chun leanúint ar aghaidh.",
+"verifyEmailConfirmedButton": "Tá mo ríomhphost deimhnithe agam",
+"verifyEmailResendButton": "Seol ríomhphost fíoraithe arís",
+"verifyEmailSending": "Á sheoladh...",
+"navHome": "Baile",
+"navCategories": "Catagóirí",
+"navInsights": "Léargas",
+"navCalendar": "Féilire",
+"tutorialHomeSearch": "Úsáid an barra cuardaigh chun aon taifead atá á rianú agat a aimsiú go tapa.",
+"tutorialHomeFab": "Cuir do chéad taifead leis anseo.\nRoghnaigh cá mbaineann sé, cuir nótaí roghnacha leis agus roghnaigh dáta éaga.",
+"tutorialHomeSummary": "De réir mar a chuireann tú níos mó taifead leis, cabhraíonn an chuid seo leat míreanna atá ag druidim le héag a aithint.",
+"tutorialHomeInsight": "Leagann an léargas cliste seo béim ar phatrúin agus ar éagthaí atá le teacht.\nIs féidir leat tapáil ar an deilbhín cainteora chun é a chloisteáil.",
+"tutorialHomeCoverage": "Léiríonn cothromaíocht an chlúdaigh cé chomh cothrom agus atá do thaifid dáilte.\nLéiríonn cothromaíocht níos airde níos lú bearnaí.",
+"tutorialHomeStability": "Léiríonn cobhsaíocht cé chomh hiontaofa agus atá do thaifid le himeacht ama.\nIs féidir le míreanna atá éagtha nó ag druidim le héag cobhsaíocht a laghdú.",
+"tutorialCancel": "Cealaigh",
+"tutorialNext": "Ar aghaidh",
+"tutorialEnd": "Críochnaigh an rang teagaisc",
+"softDeleteCategory": "Catagóir",
+"softDeleteGroup": "Grúpa",
+"softDeleteRecord": "Taifead",
+"softDeleteTitle": "Bog {type} go Scriosta le Déanaí",
+"softDeleteMessage": "Bogfar an {type} \"{name}\" go Scriosta le Déanaí.\n\nIs féidir é a chur ar ais laistigh de 30 lá. Ina dhiaidh sin scriosfar go buan é.",
+"softDeleteMove": "Bog",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Scriosta le déanaí",
+  "categories": "Catagóirí",
+  "groups": "Grúpaí",
+  "records": "Taifid",
+  "restore": "Athchóirigh",
+  "deletePermanently": "Scrios go buan",
+
+  "recentlyDeletedBanner": "Coinnítear {type} scriosta ar feadh 30 lá.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Cuardaigh {type} scriosta",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Níl {type} scriosta ann",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Tapáil catagóir chun a grúpaí a fheiceáil agus do thaifid a bhainistiú.",
+  "groupsHint": "Eagraíonn grúpaí do thaifid sa chatagóir seo. Tapáil grúpa chun taifid a bhainistiú.",
+  "notLoggedIn": "Níl tú logáilte isteach",
+"recordsInsideGroupHint": "Seo iad na taifid laistigh den ghrúpa seo.",
+"snackMovedToRecentlyDeleted": "Bogadh \"{name}\" go Scriosta le Déanaí",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "Scriosadh \"{name}\" go rathúil",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "Nuashonraíodh \"{name}\" go rathúil",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "Cuireadh \"{name}\" leis go rathúil",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "Athchóiríodh \"{name}\" go rathúil",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Sroicheadh an teorainn saor in aisce ({current}/{limit}). Uasghrádaigh chun níos mó a chur leis.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Cuardaigh gach taifead",
+"globalSearchHint": "Clóscríobh ainm, catagóir nó grúpa",
+"globalSearchNoMatches": "Ní oireann aon taifead do do chuardach.",
+"snackNoRecordsToSearch": "Níl aon taifid le cuardach. Cuir cúpla taifead leis agus déanfaidh Vaultara iad a innéacsú go huathoibríoch.",
+"recoveryCentreTitle": "Ionad Aisghabhála",
+"recoveryCentreSubtitle": "Athchóirigh nó scrios go buan taifid bainte.",
+"plan_premium": "Préimhium",
+"plan_free": "Saor in aisce",
+"profile_app_settings_title": "Socruithe na haipe",
+"profile_privacy_security_title": "Príobháideachas agus slándáil",
+"profile_biometric_on": "Tá glas bithmhéadrach gníomhach ar an ngléas seo.",
+"profile_biometric_off": "Tá glas bithmhéadrach múchta.",
+"profile_biometric_enable_reason": "Deimhnigh d’aitheantas chun an glas bithmhéadrach a chumasú.",
+"profile_biometric_disable_reason": "Deimhnigh d’aitheantas chun an glas bithmhéadrach a dhíchumasú.",
+"profile_account_management_title": "Bainistíocht cuntais",
+"profile_account_management_subtitle": "Athraigh ríomhphost, pasfhocal nó scrios an cuntas.",
+"profile_premium_active_title": "Préimhium gníomhach",
+"profile_premium_upgrade_title": "Uasghrádaigh go Préimhium",
+"profile_premium_active_subtitle": "Meabhrúcháin ardleibhéil díghlasáilte.",
+"profile_premium_upgrade_subtitle": "Díghlasáil meabhrúcháin ardleibhéil agus eagrú gan teorainn.",
+"profile_manage_cancel_hint": "Bainistigh nó cealaigh am ar bith ar Google Play.",
+"profile_manage_subscription_button": "Bainistigh an síntiús",
+"plansTitle": "Roghnaigh do phlean",
+"plansTrialBanner": "Tosaigh le triail saor 7 lá.\nCealaigh am ar bith.",
+"plansLoading": "Ag lódáil…",
+"plansStartFreeTrial": "Tosaigh triail saor",
+"plansNoChargeTodayFooter": "7 lá saor · Gan muirear inniu",
+
+"planFreeTitle": "Saor",
+"planFreeSubtitle": "Le tosú",
+"planPremiumMonthlyTitle": "Préimh mhíosúil",
+"planPremiumYearlyTitle": "Préimh bhliantúil",
+"planPerMonth": "in aghaidh na míosa",
+"planPerYear": "in aghaidh na bliana",
+
+"planBadgeCurrent": "Plean reatha",
+"planBadgePopular": "Coitianta",
+"planBadgeBestValue": "Luach is fearr",
+
+"planYouAreOnThisPlan": "Tá tú ar an bplean seo cheana.",
+
+"planFeatureUpToRecords": "Suas le {count} taifead",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Catagóirí saincheaptha (suas le {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Fochatagóirí réamhshocraithe",
+"planFeatureCloudStorage": "Stóráil néil",
+"planFeatureSmartExpiryInsights": "Léargais chliste éaga",
+"planFeatureCoverageBalance": "Cothromaíocht clúdaigh",
+"planFeatureRecordStabilityTracking": "Cobhsaíocht taifead",
+
+"planFeatureUnlimitedRecords": "Taifid gan teorainn",
+"planFeatureUnlimitedCategories": "Catagóirí gan teorainn",
+"planFeatureCustomSubcategories": "Fochatagóirí saincheaptha",
+"planFeatureMultipleRemindersPerRecord": "Il-meabhrúcháin",
+"planFeatureAdvancedReminderTiming": "Amchlár ardleibhéil",
+"planFeatureAutomaticFollowUps": "Meabhrúcháin uathoibríocha",
+
+"planFeatureEverythingInMonthly": "Gach rud sa mhíosúil",
+"planFeatureSavePercentComparedToMonthly": "Sábháil {percent}% i gcomparáid leis an míosúil",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Luach fadtéarmach is fearr",
+"editorReminderLabel": "Meabhrúchán",
+"editorReminderSelectOptional": "Roghnaigh meabhrúchán (roghnach)",
+"editorReminderOnExpiry": "Ar an lá éaga",
+"editorReminderDaysBefore": "{days} lá roimh éag",
+"editorFreeItemsCount": "Taifid saor in aisce: {used}/{limit}",
+"editorExpiryPastWarning": "Tá an dáta éaga caite cheana.",
+"editorExpiryTodayWarning": "Rachaidh an taifead seo in éag inniu.",
+"editorErrorExpiryPast": "Ní féidir an dáta éaga a bheith san am atá caite.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Léargais an lae",
+"tutorialBannerTitle": "Turas tapa",
+"tutorialBannerBody": "Foghlaim cá háit le cuardach, conas taifid a chur leis agus brí na léargas i gceann nóiméid.",
+"tutorialBannerStart": "Tosaigh an rang teagaisc",
+"tutorialBannerDismiss": "Ní anois",
+"authErrorUserDisabled": "Tá an cuntas seo díchumasaithe.",
+"authErrorNetwork": "Earráid líonra. Bain triail eile as.",
+"authErrorTooManyRequests": "Ró-mhór iarrachtaí. Bain triail níos déanaí.",
+"authErrorSignInFailed": "Theip ar shíniú isteach. Bain triail eile as.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium gníomhachtaithe",
+"snackPremiumRestored": "Premium athchóirithe",
+"passwordNeedLower": "Caithfidh litir bheag a bheith ann",
+"passwordNeedUpper": "Caithfidh litir mhór a bheith ann",
+"passwordNeedNumber": "Caithfidh uimhir a bheith ann",
+"passwordNeedSymbol": "Caithfidh siombail a bheith ann",
+"confirmIdentityTitle": "Deimhnigh céannacht",
+"confirm": "Deimhnigh",
+"profile_sign_out_title": "Logáil amach",
+"profile_sign_out_subtitle": "Logáil amach as Vaultara ar an ngléas seo",
+"profile_sign_out_confirm_title": "Logáil amach?",
+"profile_sign_out_confirm_body": "Beidh ort logáil isteach arís chun rochtain a fháil ar do chuntas.",
+"profile_sign_out_action": "Logáil amach",
+"todayInsightsAudioHint": "Is fearr leat fuaim? Úsáid an deilbhín cainteora.",
+"category2Label": "Catagóir",
+"enable2BiometricsBody": "Úsáid aithint méarloirg chun do chuntas Vaultara a chosaint.",
+"snackNotificationsDisabled": "Tá fógraí díchumasaithe. Cumasaigh iad chun meabhrúcháin a fháil.",
+"openSettings": "Oscail socruithe",
+
+"reminderOnExpiryTitle": "In éag inniu",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Dia duit {firstName}, rachaidh \"{itemName}\" in éag inniu.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Catagóirí saor in aisce: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Taispeánann cé mhéad catagóir saor in aisce a úsáideadh as an teorainn saor in aisce.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Cuir nótaí leis (roghnach)",
+"apply": "Cuir i bhfeidhm",
+"smartInsightExpiresTodayHeading": "Éagann Inniu",
+"smartInsightExpiresTodaySingleBody": "Éagann {name} inniu. Glac gníomh anois chun é a choinneáil cothrom le dáta.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{Éagann {names} agus 1 cháipéis eile inniu.} =2{Éagann {names} agus {extra} cháipéis eile inniu.} few{Éagann {names} agus {extra} cháipéis eile inniu.} many{Éagann {names} agus {extra} gcáipéis eile inniu.} other{Éagann {names} agus {extra} cáipéis eile inniu.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Tá Aird Uait",
+"smartInsightSilentRiskBody": "{days, plural, =1{Éagann {name} i 1 lá agus níl meabhrúchán ann. Cinntigh go bhfuil na sonraí ceart fós.} =2{Éagann {name} i {days} lá agus níl meabhrúchán ann. Cinntigh go bhfuil na sonraí ceart fós.} few{Éagann {name} i {days} lá agus níl meabhrúchán ann. Cinntigh go bhfuil na sonraí ceart fós.} many{Éagann {name} i {days} lá agus níl meabhrúchán ann. Cinntigh go bhfuil na sonraí ceart fós.} other{Éagann {name} i {days} lá agus níl meabhrúchán ann. Cinntigh go bhfuil na sonraí ceart fós.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Iliomad Athnuachan Gar Le Chéile",
+"smartInsightRenewalTwinBodyTwo": "Éagann {a} agus {b} laistigh de thrí seachtaine óna chéile. Pleanáil chun cinn.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "Éagann {a}, {b}, agus {c} ar fad laistigh de thrí seachtaine. Pleanáil chun cinn.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{Éagann {a}, {b}, agus 1 cháipéis eile laistigh de thrí seachtaine. Pleanáil chun cinn.} other{Éagann {a}, {b}, agus {extra} cháipéis eile laistigh de thrí seachtaine. Pleanáil chun cinn.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Grúpa Le Teacht",
+"smartInsightClusterBody": "{count, plural, =1{Éagann 1 cháipéis i {category} laistigh den dá mhí amach romhainn. Smaoinigh ar iad a láimhseáil le chéile.} =2{Éagann {count} cháipéis i {category} laistigh den dá mhí amach romhainn. Smaoinigh ar iad a láimhseáil le chéile.} few{Éagann {count} cháipéis i {category} laistigh den dá mhí amach romhainn. Smaoinigh ar iad a láimhseáil le chéile.} many{Éagann {count} gcáipéis i {category} laistigh den dá mhí amach romhainn. Smaoinigh ar iad a láimhseáil le chéile.} other{Éagann {count} cáipéis i {category} laistigh den dá mhí amach romhainn. Smaoinigh ar iad a láimhseáil le chéile.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Tréimhse Chiúin Romhainn",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Ní éagann aon rud sa lá amháin amach romhainn. Tá an chéad athnuachan eile agat ar {firstDate}.} other{Ní éagann aon rud sna {days} lá amach romhainn. Tá an chéad athnuachan eile agat ar {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Gach Rud Cothrom Le Dáta",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{Tá 1 éag amach romhainn clúdaithe ag meabhrúcháin. Níl aon rud eile ag teastáil d'aird.} other{Tá {count} éag amach romhainn clúdaithe ag meabhrúcháin. Níl aon rud eile ag teastáil d'aird.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Gach rud cothrom le dáta. Níl aon rud ag teastáil d'aird faoi láthair.",
+"smartInsightNoRecordsHeading": "Cuir Do Chéad Taifead Leis",
+"smartInsightNoRecordsBody": "Tosaigh ag rianú do cháipéisí agus taispeánfaidh Vaultara léargais chliste anseo.",
+"expiryTimelineTitle": "Amlíne éaga",
+"expiryTimelineSubtitle": "Tapáil mí chun na taifid a éagann an mhí sin a fheiceáil",
+"expiryTimelineDetailCount": "{count, plural, =1{1 taifead} =2{2 thaifead} few{{count} thaifead} many{{count} dtaifead} other{{count} taifead}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Le Teacht",
+"summaryUpcomingCaption": "Laistigh de 30 lá",
+"summaryUrgentTitle": "Práinneach",
+"summaryUrgentCaption": "Laistigh de 7 lá"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

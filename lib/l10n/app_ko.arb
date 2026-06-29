@@ -18,20 +18,16 @@
   "in30Days": "30일 후",
 
   "inDays": "{days}일 후",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
-  "enterDaysError": "일수를 입력하세요.",
-  "invalidDaysError": "유효한 일수를 입력하세요 (0 이상).",
+  "enterDaysError": "일수를 입력하세요",
+  "invalidDaysError": "유효한 일수를 입력하세요 (0 이상)",
 
   "showingItemsRelative": "{time} 만료 항목",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "선택한 날짜에 만료되는 항목",
-  "noItemsOnDate": "해당 날짜에 만료되는 항목이 없습니다.",
+  "noItemsOnDate": "해당 날짜에 만료되는 항목이 없습니다",
 
   "editorAddTitle": "항목 추가",
   "editorEditTitle": "항목 편집",
@@ -48,10 +44,10 @@
   "editorExpiryDate": "만료 날짜",
   "editorExpiryDateHint": "만료 날짜 선택",
 
-  "editorErrorCategory": "카테고리 선택",
-  "editorErrorGroup": "그룹 선택",
-  "editorErrorName": "항목 이름은 필수",
-  "editorErrorExpiry": "만료 날짜 선택",
+  "editorErrorCategory": "카테고리를 선택하세요",
+  "editorErrorGroup": "그룹을 선택하세요",
+  "editorErrorName": "항목 이름은 필수입니다",
+  "editorErrorExpiry": "만료 날짜를 선택하세요",
   "editorErrorExpiryPast": "만료 날짜는 오늘 이후여야 합니다",
 
   "cancel": "취소",
@@ -71,17 +67,14 @@
   "categoryNameLabel": "카테고리 이름",
   "categoryNameHint": "카테고리 입력",
 
-  "categoryLimitReached":
-    "베이직 요금제 한도에 도달했습니다. 프리미엄으로 업그레이드하세요.",
+  "categoryLimitReached": "베이직 요금제 한도에 도달했습니다",
+  "categoryLimitInfo": "베이직 요금제에서는 최대 {limit}개의 카테고리를 만들 수 있습니다",
 
-  "categoryLimitInfo":
-    "베이직 요금제에서는 최대 {limit}개의 카테고리를 만들 수 있습니다.",
-
-  "categoryErrorEmpty": "카테고리 이름은 필수",
-  "categoryErrorTooShort": "카테고리 이름이 너무 짧음",
-  "categoryErrorTooLong": "카테고리 이름이 너무 김",
-  "categoryErrorSymbols": "기호는 사용할 수 없음",
-  "categoryErrorNumbers": "숫자는 사용할 수 없음",
+  "categoryErrorEmpty": "카테고리 이름은 필수입니다",
+  "categoryErrorTooShort": "카테고리 이름이 너무 짧습니다",
+  "categoryErrorTooLong": "카테고리 이름이 너무 깁니다",
+  "categoryErrorSymbols": "기호만 사용할 수 없습니다",
+  "categoryErrorNumbers": "숫자를 포함할 수 없습니다",
 
   "upgradeRequired": "업그레이드 필요",
   "viewPremiumBenefits": "프리미엄 혜택 보기",
@@ -91,11 +84,814 @@
   "groupNameLabel": "그룹",
   "groupNameHint": "그룹 입력",
 
-  "groupErrorEmpty": "그룹 이름은 필수",
-  "groupErrorTooShort": "그룹 이름이 너무 짧음",
-  "groupErrorTooLong": "그룹 이름이 너무 김",
-  "groupErrorSymbols": "기호는 사용할 수 없음",
-  "groupErrorNumbers": "숫자는 사용할 수 없음",
+  "groupErrorEmpty": "그룹 이름은 필수입니다",
+  "groupErrorTooShort": "그룹 이름이 너무 짧습니다",
+  "groupErrorTooLong": "그룹 이름이 너무 깁니다",
+  "groupErrorSymbols": "기호만 사용할 수 없습니다",
+  "groupErrorNumbers": "숫자를 포함할 수 없습니다",
 
-  "createGroup": "생성"
+  "createGroup": "생성",
+
+  "registerTitle": "계정 만들기",
+
+  "firstNameLabel": "이름",
+  "firstNameHint": "이름 입력",
+  "errorFirstName": "이름은 필수입니다",
+
+  "lastNameLabel": "성",
+  "lastNameHint": "성 입력",
+  "errorLastName": "성은 필수입니다",
+
+  "emailLabel": "이메일 주소",
+  "errorEmailInvalid": "유효한 이메일 주소를 입력하세요",
+  "errorEmailInUse": "이 이메일 주소는 이미 Vaultara 계정에 연결되어 있습니다",
+
+  "passwordLabel": "비밀번호",
+  "passwordHelper": "최소 8자 이상 다양한 문자 조합",
+
+  "passwordTooShort": "너무 짧음",
+  "passwordTooWeak": "약함",
+  "passwordMedium": "보통",
+  "passwordStrong": "강함",
+
+  "errorPasswordRequired": "비밀번호는 필수입니다",
+  "errorPasswordLength": "비밀번호는 최소 8자 이상이어야 합니다",
+  "errorPasswordWeak": "더 강력한 비밀번호를 선택하세요",
+
+  "errorGeneric": "등록에 실패했습니다 다시 시도하세요",
+
+  "createAccount": "계정 만들기",
+
+  "appName": "Vaultara",
+  "authTagline": "여권 면허 카드 및 기타 중요한 항목을 위한 개인 허브",
+  "tabSignIn": "로그인",
+  "tabCreateAccount": "계정 생성",
+  "signInFooterText": "로그인하여 개인 Vaultara 공간에 접근하고 모든 갱신을 관리하세요",
+  "createAccountFooterText": "중요한 알림을 백업하고 언제든지 접근하려면 Vaultara 계정을 생성하세요",
+  "emailNotFound": "잘못된 이메일입니다.\n해당 이메일로 된 Vaultara 계정이 없습니다",
+  "incorrectPassword": "비밀번호가 올바르지 않습니다",
+  "emailLabel": "이메일 주소",
+  "passwordLabel": "비밀번호",
+  "emailRequired": "이메일이 필요합니다",
+"passwordRequired": "비밀번호가 필요합니다",
+"registerPasswordHint": "비밀번호 입력",
+"loginPasswordHint": "비밀번호를 입력하세요",
+"emailHint": "이메일 주소를 입력하세요",
+  "signIn": "로그인",
+   "categoryPersonalIdentification": "개인 신분증",
+  "categoryDrivingAndVehicles": "운전 및 차량",
+  "categoryTravelAndImmigration": "여행 및 출입국",
+  "categoryBankingAndCards": "은행 및 카드",
+  "categoryInsuranceAndCover": "보험 및 보장",
+  "categoryHealthAndMedical": "건강 및 의료",
+  "categoryWorkAndProfessional": "업무 및 전문",
+  "categoryPropertyAndHousing": "부동산 및 주거",
+  "categoryHouseholdAndUtilities": "가정 및 공공요금",
+
+  "subcategoryPassports": "여권",
+  "subcategoryIdCards": "신분증",
+  "subcategoryResidencePermits": "거주 허가증",
+
+  "subcategoryDrivingLicences": "운전면허증",
+  "subcategoryVehicleRegistrations": "차량 등록",
+  "subcategoryRoadworthyCertificates": "차량 적합 증명서",
+  "subcategoryVehicleInspectionCertificates": "차량 검사 증명서",
+
+  "subcategoryVisas": "비자",
+  "subcategoryStudyPermits": "유학 허가",
+  "subcategoryWorkPermits": "취업 허가",
+  "subcategoryTravelInsuranceDocuments": "여행 보험 서류",
+
+  "subcategoryDebitAndCreditCards": "직불카드 및 신용카드",
+  "subcategoryStoreCards": "상점 카드",
+  "subcategoryFuelCards": "연료 카드",
+
+  "subcategoryVehicleInsurances": "차량 보험",
+  "subcategoryPropertyInsurances": "재산 보험",
+  "subcategoryLifeInsurances": "생명 보험",
+  "subcategoryHealthInsurances": "건강 보험",
+  "subcategoryTravelInsurances": "여행 보험",
+
+  "subcategoryMedicalPrescriptions": "의료 처방전",
+  "subcategoryOpticalPrescriptions": "안경 처방전",
+  "subcategoryMedicalCertificates": "의료 증명서",
+
+  "subcategoryProfessionalLicences": "전문 자격증",
+  "subcategoryProfessionalRegistrations": "전문 등록",
+  "subcategoryIndustryRegistrations": "산업 등록",
+  "subcategoryWorkAccessCards": "근무 출입 카드",
+
+  "subcategoryLeaseAgreements": "임대 계약서",
+  "subcategoryAccessCardsAndTags": "출입 카드 및 태그",
+  "subcategoryParkingPermits": "주차 허가증",
+  "subcategorySecurityAccessPermits": "보안 출입 허가",
+
+  "subcategoryElectricityAccounts": "전기 요금 계정",
+  "subcategoryWaterAccounts": "수도 요금 계정",
+  "subcategoryInternetContracts": "인터넷 계약",
+  "subcategorySecurityServiceContracts": "보안 서비스 계약",
+   "searchCategories": "카테고리 검색",
+  "filterAll": "전체",
+  "filterPreset": "기본",
+  "filterCustom": "사용자 정의",
+  "addCategoryTitle": "카테고리 추가",
+  "customLabel": "사용자 정의",
+  "subcategoriesLabel": "하위 카테고리",
+  "itemsLabel": "항목",
+  "itemsExpiring": "{days}일 이내에 만료되는 항목 {count}개",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "고정된 카테고리",
+  "pinnedHint": "자주 사용하는 카테고리를 고정하여 목록 상단에 표시하세요.",
+  "noCategoriesFound": "카테고리를 찾을 수 없습니다",
+  "searchGroups": "그룹 검색",
+  "addGroupTitle": "그룹 추가",
+  "basicPlanGroupInfo": "현재 Basic 플랜을 사용 중입니다.\n이 카테고리의 기본 그룹을 볼 수 있습니다.\nPremium으로 업그레이드하여 나만의 그룹을 생성하세요.",
+  "groupDeleted": "그룹이 삭제되었습니다",
+  "undo": "실행 취소",
+  "groupStats": "{items}개 항목 • {expiring}개가 {days}일 내 만료",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "이 그룹에서 항목을 추가하고 추적하려면 탭하세요.",
+  "itemsInGroup": "이 그룹의 항목",
+  "itemsInGroupHint": "중요한 항목과 만료일을 관리하여 제때 갱신할 수 있습니다.",
+  "searchItems": "항목 검색",
+  "filterAll": "전체",
+  "filterExpiringWithin": "{days}일 이내 만료",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "만료됨",
+  "addItem": "항목 추가",
+  "noItemsYet": "아직 항목이 없습니다.",
+
+  "statusExpired": "만료됨",
+  "statusExpiresToday": "오늘 만료",
+  "statusExpiresInOneDay": "내일 만료",
+  "statusExpiresInDays": "{days}일 후 만료",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "유효함",
+
+  "deleteCategoryTitle": "카테고리 삭제",
+  "deleteCategoryMessage": "카테고리 \"{name}\"을(를) 삭제하시겠습니까?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "그룹 삭제",
+  "deleteGroupMessage": "그룹 \"{name}\"을(를) 삭제하시겠습니까?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "항목 삭제",
+  "deleteItemMessage": "\"{name}\"을(를) 삭제하시겠습니까?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "취소",
+  "delete": "삭제",
+  "homeWelcomeFirstTitle": "{name}님, 환영합니다",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "{name}님, 다시 오신 것을 환영합니다",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara는 중요한 만료일을 추적하여 놓치는 일이 없도록 도와줍니다.",
+
+"homeWelcomeSubtitleFirst":
+  "환영합니다. Vaultara는 중요한 날짜와 기록을 안전한 한 곳에서 정리할 수 있도록 도와줍니다.",
+
+"homeWelcomeSubtitleBack":
+  "다시 만나서 반갑습니다. Vaultara는 언제든 중요한 날짜와 기록을 검토할 수 있습니다.",
+   "insightEmptyTitle": "아직 추가된 항목이 없습니다",
+  "insightEmptyBody": "중요한 날짜를 추적하기 시작하면 Vaultara가 만료를 미리 관리해 드립니다.",
+
+  "insightExpiresTodayTitle": "\"{name}\"의 만료일이 오늘입니다",
+  "insightExpiresTodayBody": "지금 간단히 확인하면 정보를 정확하게 유지할 수 있습니다.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\"의 만료일이 내일입니다",
+  "insightExpiresTomorrowBody": "지금 검토하면 나중에 시간을 절약할 수 있습니다.",
+
+  "insightExpiresSoonTitle": "\"{name}\"은 {date}에 만료됩니다",
+  "insightExpiresSoonBody": "미리 처리하면 훨씬 수월합니다.",
+
+  "insightNextExpiryTitle": "다음 만료 항목은 \"{name}\" ({date})입니다",
+  "insightNextExpiryBody": "지금 당장 조치가 필요하지는 않습니다.",
+
+  "insightClusteredTitle": "{month} 무렵에 여러 항목이 만료됩니다",
+  "insightClusteredBody": "함께 검토하면 시간을 절약할 수 있습니다.",
+
+  "insightTopCategoryTitle": "대부분의 항목이 {category}에 있습니다",
+  "insightTopCategoryBody": "이 영역을 검토하면 가장 큰 효과를 볼 수 있습니다.",
+
+  "insightStableTitle": "모든 것이 안정적입니다",
+  "insightStableBody": "현재 주의가 필요한 만료 항목은 없습니다.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "환영합니다",
+  "summaryAllTitle": "모든 항목",
+"summaryAllCaption": "Vaultara에서 추적됨",
+"summarySoonTitle": "곧 만료됨",
+"summarySoonCaption": "30일 이내",
+"summaryWeekTitle": "이번 주",
+"summaryWeekCaption": "7일 이내 만료",
+"summaryExpiredTitle": "만료됨",
+"summaryExpiredCaption": "만료 날짜가 지났습니다",
+"stabilityStableTitle": "모든 것이 안정적으로 보입니다",
+"stabilityStableBody": "기록에 즉각적이거나 누적된 위험이 없습니다.",
+
+"stabilityDecliningTitle": "안정성이 저하되고 있습니다",
+"stabilityDecliningBody": "일부 항목은 만료되었고, 다른 항목은 곧 만료됩니다.",
+
+"stabilityWeakenedTitle": "안정성이 약화되었습니다",
+"stabilityWeakenedBody": "만료된 기록의 존재로 전체 신뢰도가 낮아집니다.",
+
+"stabilityPressureTitle": "주의가 필요합니다",
+"stabilityPressureBody": "안정성을 유지하려면 여러 기록을 곧 확인해야 합니다.",
+"editorNotes": "메모",
+"notesHint": "메모 입력",
+"editorReminderTitle": "알림",
+"editorReminderNone": "알림 없음",
+"editorReminderOnExpiry": "만료일에",
+"editorReminder7Days": "만료 7일 전",
+"editorReminder30Days": "만료 30일 전",
+"editorReminderCustom": "사용자 지정",
+"daysBeforeExpiry": "만료 전 일수",
+"reminderStage0Title": "만료 알림",
+"reminderStage0Body": "{firstName}님, {itemName}은(는) {days}일 후에 만료됩니다.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "추가 알림",
+"reminderStage1Body": "{firstName}님, {itemName}이(가) 아직 업데이트되지 않았습니다.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "만료 임박",
+"reminderStage2Body": "{itemName}의 만료일이 가까워지고 있습니다.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "최종 알림",
+"reminderFinalBody": "{firstName}님, 지금 {itemName}을(를) 업데이트해 주세요.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "보장 균형",
+"coverageAllRepresented": "모든 카테고리에 항목이 포함되어 있습니다.",
+"coverageMissingNamed": "{count}개 카테고리에서 기록을 찾을 수 없습니다: {names}.",
+"coverageMissingSummary": "{count}개의 카테고리에 아무 기록도 추가하지 않았습니다. {names} 및 기타 {remaining}개가 포함됩니다.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "비밀번호 사용",
+"signInWithBiometrics": "생체 인식으로 로그인",
+"enableBiometricsTitle": "생체 인식 보안 활성화",
+"enableBiometricsBody": "지문 또는 얼굴 인식을 사용하여 Vaultara를 보호하세요.",
+"enableBiometricsReason": "Vaultara에 대한 생체 인식 잠금 해제를 활성화합니다.",
+"notNow": "나중에",
+"useBiometrics": "생체 인식 사용",
+"recordsCalendarIntro":
+  "만료일을 확인하는 방법을 선택하세요:\n\n• 오늘부터 며칠 후까지 볼지 입력하세요.\n• 또는 달력에서 특정 날짜를 선택하세요.\n\nVaultara는 해당 날짜에 만료되는 기록을 표시합니다.",
+
+"showingRecordsRelative": "{time} 후에 만료되는 기록을 표시하고 있습니다",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "선택한 날짜에 만료되는 기록을 표시하고 있습니다",
+"noRecordsOnDate": "해당 날짜에 만료되는 기록이 없습니다.",
+
+"recordEditorAddTitle": "기록 추가",
+"recordEditorEditTitle": "기록 수정",
+
+"editorRecordName": "기록 이름",
+"editorRecordNameHint": "기록 이름을 입력하세요",
+"recordEditorErrorName": "기록 이름은 필수입니다",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "이 그룹에 기록을 추가하고 관리하려면 탭하세요.",
+
+"recordsInGroup": "이 그룹의 기록",
+"recordsInGroupHint":
+  "각 기록의 만료일을 추적하여 제때 갱신할 수 있습니다.",
+
+"searchRecords": "기록 검색",
+"addRecord": "기록 추가",
+"noRecordsYet": "아직 기록이 없습니다.",
+
+"deleteRecordTitle": "기록 삭제",
+
+"recordsInsightClusteredTitle":
+  "{month}에 여러 기록이 만료됩니다",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "대부분의 기록이 {category}에 속해 있습니다",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "모든 기록",
+
+"recordsStabilityDecliningBody":
+  "일부 기록은 이미 만료되었으며 더 많은 기록이 곧 만료됩니다.",
+
+"recordsCoverageAllRepresented":
+  "모든 카테고리에 기록이 포함되어 있습니다.",
+
+"recordReminderStage0Body":
+  "{firstName}님, {recordName}은 {days}일 후에 만료됩니다.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}님, {recordName}이 아직 업데이트되지 않았습니다.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName}의 만료일이 다가오고 있습니다.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}님, 지금 {recordName}을(를) 업데이트하세요.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "아직 그룹이 없습니다",
+"recordsExpiring": "{count, plural, one {{days}일 내에 기록 1개 만료} other {{days}일 내에 기록 {count}개 만료}}",
+"recordsGroupStats": "{records, plural, one {기록 1개} other {기록 {records}개}} • {expiring}개 {days}일 이내",
+"groupLabel": "{count, plural, one {{count} 그룹} other {{count} 그룹}}",
+"recordsLabel": "{count, plural, one {{count} 기록} other {{count} 기록}}",
+"forgotPassword": "비밀번호를 잊으셨나요?",
+  "forgotPasswordTitle": "비밀번호 재설정",
+  "forgotPasswordBody": "이메일 주소를 입력하면 비밀번호 재설정 링크를 보내드립니다.",
+  "sendResetLink": "링크 보내기",
+  "passwordResetEmailSent": "비밀번호 재설정 이메일이 전송되었습니다.",
+  "verifyEmailToContinue": "로그인하기 전에 이메일 주소를 확인해 주세요",
+  "changeEmailTitle": "이메일 주소 변경",
+"newEmailHint": "새 이메일 주소를 입력하세요",
+"sendVerificationEmail": "인증 이메일 보내기",
+"deleteAccountTitle": "계정 삭제",
+"deleteAccountWarning": "이 작업은 계정과 저장된 모든 데이터를 영구적으로 삭제합니다.\n이 작업은 되돌릴 수 없습니다.",
+"deleteAccountConfirm": "계정 영구 삭제",
+"supportTitle": "지원",
+"supportSubtitle": "도움이 필요하거나 질문이 있으면 문의하세요.",
+"supportEmailSubject": "Vaultara 지원 요청",
+"supportEmailError": "이메일 앱을 열 수 없습니다.",
+"passwordResetEmailFailed": "비밀번호 재설정 이메일을 보낼 수 없습니다.",
+"loggedInPasswordResetBody": "비밀번호 재설정 링크를 다음 주소로 보냅니다:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "계정 관리",
+"changeEmailTitle": "이메일 주소 변경",
+"changeEmailSubtitle": "계정에 연결된 이메일을 업데이트하세요.",
+"changePasswordTitle": "비밀번호 변경",
+"changePasswordSubtitle": "비밀번호를 안전하게 변경할 수 있는 링크를 이메일로 보내드립니다.",
+"deleteAccountTitle": "계정 삭제",
+"deleteAccountSubtitle": "Vaultara 계정을 영구적으로 삭제합니다.",
+"biometricAuthReason": "계정에 접근하려면 인증하세요",
+"verifyEmailTitle": "이메일을 확인하세요",
+"verifyEmailBody": "받은편지함으로 확인 이메일을 보냈습니다. 이메일을 열어 주소를 확인한 후, 다시 돌아와 계속 진행하세요.",
+"verifyEmailConfirmedButton": "이메일을 확인했습니다",
+"verifyEmailResendButton": "확인 이메일 다시 보내기",
+"verifyEmailSending": "전송 중...",
+"navHome": "홈",
+"navCategories": "카테고리",
+"navInsights": "분석",
+"navCalendar": "캘린더",
+"tutorialHomeSearch": "검색창을 사용하여 추적 중인 기록을 빠르게 찾으세요.",
+"tutorialHomeFab": "여기에 첫 번째 기록을 추가하세요.\n소속을 선택하고, 선택적 메모를 추가하고, 만료 날짜를 선택하세요.",
+"tutorialHomeSummary": "기록을 더 추가하면 이 섹션에서 만료 예정 또는 만료된 항목을 확인할 수 있습니다.",
+"tutorialHomeInsight": "이 스마트 인사이트는 패턴과 다가오는 만료를 강조 표시합니다.\n스피커 아이콘을 눌러 음성으로 들을 수 있습니다.",
+"tutorialHomeCoverage": "커버리지 균형은 기록이 얼마나 고르게 분포되어 있는지 보여줍니다.\n균형이 높을수록 빈틈이 적다는 의미입니다.",
+"tutorialHomeStability": "안정성은 기록이 시간에 따라 얼마나 신뢰할 수 있는지를 나타냅니다.\n만료되었거나 만료 예정인 항목은 안정성을 낮출 수 있습니다.",
+"tutorialCancel": "취소",
+"tutorialNext": "다음",
+"tutorialEnd": "튜토리얼 종료",
+"softDeleteCategory": "카테고리",
+"softDeleteGroup": "그룹",
+"softDeleteRecord": "기록",
+"softDeleteTitle": "{type}을(를) 최근 삭제로 이동",
+"softDeleteMessage": "{type} \"{name}\"이(가) 최근 삭제로 이동됩니다.\n\n30일 이내에 복원할 수 있으며 이후에는 영구 삭제됩니다.",
+"softDeleteMove": "이동",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "최근 삭제됨",
+  "categories": "카테고리",
+  "groups": "그룹",
+  "records": "기록",
+  "restore": "복원",
+  "deletePermanently": "영구 삭제",
+
+  "recentlyDeletedBanner": "삭제된 {type} 항목은 30일 동안 보관됩니다.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "삭제된 {type} 검색",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "삭제된 {type} 없음",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "카테고리를 눌러 그룹을 보고 기록을 관리하세요.",
+  "groupsHint": "그룹은 이 카테고리에서 기록을 정리합니다. 기록을 관리하려면 그룹을 탭하세요.",
+  "notLoggedIn": "로그인되지 않음",
+"recordsInsideGroupHint": "이 그룹 안의 기록입니다.",
+"snackMovedToRecentlyDeleted": "\"{name}\"이(가) 최근 삭제됨으로 이동했습니다",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\"이(가) 성공적으로 삭제되었습니다",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\"이(가) 성공적으로 업데이트되었습니다",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\"이(가) 성공적으로 추가되었습니다",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\"이(가) 성공적으로 복원되었습니다",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "무료 한도에 도달했습니다 ({current}/{limit}). 더 추가하려면 업그레이드하세요.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "모든 기록 검색",
+"globalSearchHint": "기록 이름, 카테고리 또는 그룹 입력",
+"globalSearchNoMatches": "검색과 일치하는 기록이 없습니다.",
+"snackNoRecordsToSearch": "검색할 기록이 없습니다. 몇 개의 기록을 추가하면 Vaultara가 자동으로 인덱싱합니다.",
+"recoveryCentreTitle": "복구 센터",
+"recoveryCentreSubtitle": "삭제된 기록을 복원하거나 영구적으로 삭제합니다.",
+"plan_premium": "프리미엄",
+"plan_free": "무료",
+"profile_app_settings_title": "앱 설정",
+"profile_privacy_security_title": "개인정보 및 보안",
+"profile_biometric_on": "이 기기에서 생체 인식 잠금이 활성화되어 있습니다.",
+"profile_biometric_off": "생체 인식 잠금이 비활성화되어 있습니다.",
+"profile_biometric_enable_reason": "생체 인식 잠금을 활성화하려면 본인 확인을 해주세요.",
+"profile_biometric_disable_reason": "생체 인식 잠금을 비활성화하려면 본인 확인을 해주세요.",
+"profile_account_management_title": "계정 관리",
+"profile_account_management_subtitle": "이메일, 비밀번호 변경 또는 계정 삭제.",
+"profile_premium_active_title": "프리미엄 활성화됨",
+"profile_premium_upgrade_title": "프리미엄으로 업그레이드",
+"profile_premium_active_subtitle": "고급 알림이 활성화되었습니다.",
+"profile_premium_upgrade_subtitle": "고급 알림과 무제한 정리를 이용하세요.",
+"profile_manage_cancel_hint": "Google Play에서 언제든지 관리하거나 취소할 수 있습니다.",
+"profile_manage_subscription_button": "구독 관리",
+"plansTitle": "요금제 선택",
+"plansTrialBanner": "7일 무료 체험을 시작하세요.\n언제든지 취소할 수 있습니다.",
+"plansLoading": "불러오는 중…",
+"plansStartFreeTrial": "무료로 시작",
+"plansNoChargeTodayFooter": "7일 무료 · 오늘 결제 없음",
+
+"planFreeTitle": "무료",
+"planFreeSubtitle": "시작용",
+"planPremiumMonthlyTitle": "프리미엄 월간",
+"planPremiumYearlyTitle": "프리미엄 연간",
+"planPerMonth": "월별",
+"planPerYear": "연간",
+
+"planBadgeCurrent": "현재 요금제",
+"planBadgePopular": "인기",
+"planBadgeBestValue": "최고 가치",
+
+"planYouAreOnThisPlan": "이미 이 요금제를 사용 중입니다.",
+
+"planFeatureUpToRecords": "최대 {count}개 기록",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "맞춤 카테고리 (최대 {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "기본 하위 카테고리",
+"planFeatureCloudStorage": "클라우드 저장소",
+"planFeatureSmartExpiryInsights": "스마트 만료 인사이트",
+"planFeatureCoverageBalance": "커버리지 균형",
+"planFeatureRecordStabilityTracking": "기록 안정성",
+
+"planFeatureUnlimitedRecords": "무제한 기록",
+"planFeatureUnlimitedCategories": "무제한 카테고리",
+"planFeatureCustomSubcategories": "맞춤 하위 카테고리",
+"planFeatureMultipleRemindersPerRecord": "여러 알림",
+"planFeatureAdvancedReminderTiming": "고급 알림 설정",
+"planFeatureAutomaticFollowUps": "자동 추가 알림",
+
+"planFeatureEverythingInMonthly": "월간 모든 기능 포함",
+"planFeatureSavePercentComparedToMonthly": "월간 대비 {percent}% 절약",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "장기 이용 최적",
+"editorReminderLabel": "알림",
+"editorReminderSelectOptional": "알림 선택 (선택 사항)",
+"editorReminderOnExpiry": "만료일 당일",
+"editorReminderDaysBefore": "만료 {days}일 전",
+"editorFreeItemsCount": "무료 기록: {used}/{limit}",
+"editorExpiryPastWarning": "만료 날짜가 이미 지났습니다.",
+"editorExpiryTodayWarning": "이 기록은 오늘 만료됩니다.",
+"editorErrorExpiryPast": "만료 날짜는 과거일 수 없습니다.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "오늘의 인사이트",
+"tutorialBannerTitle": "빠른 안내",
+"tutorialBannerBody": "검색 방법, 기록 추가 방법, 인사이트 의미를 1분 안에 알아보세요.",
+"tutorialBannerStart": "튜토리얼 시작",
+"tutorialBannerDismiss": "나중에",
+"authErrorUserDisabled": "이 계정은 비활성화되었습니다.",
+"authErrorNetwork": "네트워크 오류입니다. 다시 시도하세요.",
+"authErrorTooManyRequests": "시도 횟수가 너무 많습니다. 나중에 다시 시도하세요.",
+"authErrorSignInFailed": "로그인에 실패했습니다. 다시 시도하세요.",
+"ok": "확인",
+"snackPremiumEnabled": "프리미엄이 활성화되었습니다",
+"snackPremiumRestored": "프리미엄이 복원되었습니다",
+"passwordNeedLower": "소문자를 포함해야 합니다",
+"passwordNeedUpper": "대문자를 포함해야 합니다",
+"passwordNeedNumber": "숫자를 포함해야 합니다",
+"passwordNeedSymbol": "기호를 포함해야 합니다",
+"confirmIdentityTitle": "신원 확인",
+"confirm": "확인",
+"profile_sign_out_title": "로그아웃",
+"profile_sign_out_subtitle": "이 기기에서 Vaultara에서 로그아웃",
+"profile_sign_out_confirm_title": "로그아웃할까요?",
+"profile_sign_out_confirm_body": "계정에 접근하려면 다시 로그인해야 합니다.",
+"profile_sign_out_action": "로그아웃",
+"todayInsightsAudioHint": "오디오를 원하시나요? 스피커 아이콘을 사용하세요.",
+"category2Label": "카테고리",
+"enable2BiometricsBody": "지문 인식을 사용하여 Vaultara 계정을 보호하세요.",
+"snackNotificationsDisabled": "알림이 비활성화되어 있습니다. 알림을 받으려면 활성화하세요.",
+"openSettings": "설정 열기",
+
+"reminderOnExpiryTitle": "오늘 만료됨",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "안녕하세요 {firstName}, \"{itemName}\" 이(가) 오늘 만료됩니다.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "무료 카테고리: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "무료 한도 중 사용한 무료 카테고리 수를 표시합니다.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "메모 추가 (선택 사항)",
+"apply": "적용",
+"smartInsightExpiresTodayHeading": "오늘 만료",
+"smartInsightExpiresTodaySingleBody": "{name}의 만료일이 오늘입니다. 최신 상태를 유지하려면 지금 조치하세요.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} 및 추가 {extra}개의 문서가 오늘 만료됩니다.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "주의가 필요합니다",
+"smartInsightSilentRiskBody": "{name}의 만료까지 {days}일 남았지만 알림이 설정되어 있지 않습니다. 정보가 아직 정확한지 확인하세요.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "여러 갱신이 가까이 있습니다",
+"smartInsightRenewalTwinBodyTwo": "{a}와 {b}의 만료일이 3주 이내입니다. 미리 계획하세요.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, {c} 모두 3주 이내에 만료됩니다. 미리 계획하세요.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} 및 추가 {extra}개의 문서가 3주 이내에 만료됩니다. 미리 계획하세요.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "다가오는 그룹",
+"smartInsightClusterBody": "{category} 카테고리의 문서 {count}개가 향후 2개월 내에 만료됩니다. 함께 처리하는 것을 고려해 보세요.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "잠시 여유가 있습니다",
+"smartInsightQuietPeriodBody": "앞으로 {days}일 동안 만료되는 항목이 없습니다. 다음 갱신일은 {firstDate}입니다.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "모두 최신 상태입니다",
+"smartInsightAllCaughtUpBody": "다가오는 만료 {count}건 모두 알림이 설정되어 있습니다. 현재 추가로 주의가 필요한 항목은 없습니다.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "모든 것이 최신 상태입니다. 현재 주의가 필요한 항목이 없습니다.",
+"smartInsightNoRecordsHeading": "첫 번째 기록 추가",
+"smartInsightNoRecordsBody": "문서를 추적하기 시작하면 Vaultara가 여기에 스마트 인사이트를 표시합니다.",
+"expiryTimelineTitle": "만료 타임라인",
+"expiryTimelineSubtitle": "해당 월에 만료되는 레코드를 보려면 월을 탭하세요",
+"expiryTimelineDetailCount": "레코드 {count}개",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "예정됨",
+"summaryUpcomingCaption": "30일 이내",
+"summaryUrgentTitle": "긴급",
+"summaryUrgentCaption": "7일 이내"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

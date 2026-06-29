@@ -18,19 +18,15 @@
   "in30Days": "Dalam 30 hari",
 
   "inDays": "dalam {days} hari",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Masukkan bilangan hari",
   "invalidDaysError": "Masukkan bilangan hari yang sah (0 atau lebih)",
 
-  "showingItemsRelative": "Memaparkan item yang tamat tempoh {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "showingItemsRelative": "Item tamat tempoh {time}",
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
-  "showingItemsExact": "Memaparkan item yang tamat tempoh pada tarikh dipilih",
+  "showingItemsExact": "Item tamat tempoh pada tarikh dipilih",
   "noItemsOnDate": "Tiada item tamat tempoh pada hari tersebut",
 
   "editorAddTitle": "Tambah item",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Nama kategori",
   "categoryNameHint": "Masukkan kategori",
 
-  "categoryLimitReached":
-    "Had pelan Basic telah dicapai. Premium membenarkan kategori tanpa had",
-
-  "categoryLimitInfo":
-    "Pelan Basic membenarkan sehingga {limit} kategori",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Had pelan Basic telah dicapai",
+  "categoryLimitInfo": "Pelan Basic membenarkan sehingga {limit} kategori",
 
   "categoryErrorEmpty": "Nama kategori diperlukan",
   "categoryErrorTooShort": "Nama kategori terlalu pendek",
@@ -88,19 +78,817 @@
 
   "upgradeRequired": "Naik taraf diperlukan",
   "viewPremiumBenefits": "Lihat manfaat Premium",
-
   "createCategory": "Cipta",
 
   "addGroupTitle": "Tambah kumpulan",
-
   "groupNameLabel": "Kumpulan",
   "groupNameHint": "Masukkan kumpulan",
 
   "groupErrorEmpty": "Nama kumpulan diperlukan",
   "groupErrorTooShort": "Nama kumpulan terlalu pendek",
   "groupErrorTooLong": "Nama kumpulan terlalu panjang",
-  "groupErrorSymbols": "Nama kumpulan tidak boleh simbol",
+  "groupErrorSymbols": "Nama kumpulan tidak boleh simbol sahaja",
   "groupErrorNumbers": "Nama kumpulan tidak boleh mengandungi nombor",
 
-  "createGroup": "Cipta"
+  "createGroup": "Cipta",
+
+  "registerTitle": "Cipta akaun",
+
+  "firstNameLabel": "Nama pertama",
+  "firstNameHint": "Masukkan nama pertama",
+  "errorFirstName": "Nama pertama diperlukan",
+
+  "lastNameLabel": "Nama akhir",
+  "lastNameHint": "Masukkan nama akhir",
+  "errorLastName": "Nama akhir diperlukan",
+
+  "emailLabel": "E-mel",
+  "errorEmailInvalid": "Masukkan e-mel yang sah",
+  "errorEmailInUse": "E-mel ini sudah digunakan oleh akaun Vaultara",
+
+  "passwordLabel": "Kata laluan",
+  "passwordHelper": "Sekurang-kurangnya 8 aksara dengan pelbagai jenis",
+
+  "passwordTooShort": "Terlalu pendek",
+  "passwordTooWeak": "Terlalu lemah",
+  "passwordMedium": "Sederhana",
+  "passwordStrong": "Kuat",
+"emailRequired": "E-mel anda diperlukan",
+"passwordRequired": "Kata laluan anda diperlukan",
+"registerPasswordHint": "Masukkan kata laluan",
+"loginPasswordHint": "Masukkan kata laluan anda",
+"emailHint": "Masukkan alamat e-mel anda",
+  "errorPasswordLength": "Kata laluan mesti sekurang-kurangnya 8 aksara",
+  "errorPasswordWeak": "Pilih kata laluan yang lebih kuat",
+
+  "errorGeneric": "Pendaftaran gagal Sila cuba lagi",
+
+  "createAccount": "Cipta akaun",
+
+  "appName": "Vaultara",
+  "authTagline": "Hab peribadi anda untuk pasport lesen kad dan keperluan penting lain",
+  "tabSignIn": "Log masuk",
+  "tabCreateAccount": "Cipta akaun",
+  "signInFooterText": "Log masuk untuk mengakses ruang Vaultara peribadi anda dan mengawal semua pembaharuan",
+  "createAccountFooterText": "Cipta akaun Vaultara untuk menyandarkan peringatan penting dan mengaksesnya bila diperlukan",
+  "invalidEmail": "Masukkan alamat e-mel yang sah",
+  "emailNotFound": "E-mel salah.\nTiada akaun Vaultara dengan e-mel ini",
+  "incorrectPassword": "Kata laluan salah",
+  "emailLabel": "Alamat e-mel",
+  "passwordLabel": "Kata laluan",
+  "signIn": "Log masuk",
+   "categoryPersonalIdentification": "Pengenalan Diri",
+  "categoryDrivingAndVehicles": "Pemanduan dan Kenderaan",
+  "categoryTravelAndImmigration": "Perjalanan dan Imigresen",
+  "categoryBankingAndCards": "Perbankan dan Kad",
+  "categoryInsuranceAndCover": "Insurans dan Perlindungan",
+  "categoryHealthAndMedical": "Kesihatan dan Perubatan",
+  "categoryWorkAndProfessional": "Kerja dan Profesional",
+  "categoryPropertyAndHousing": "Harta dan Perumahan",
+  "categoryHouseholdAndUtilities": "Isi Rumah dan Utiliti",
+
+  "subcategoryPassports": "Pasport",
+  "subcategoryIdCards": "Kad Pengenalan",
+  "subcategoryResidencePermits": "Permit Kediaman",
+
+  "subcategoryDrivingLicences": "Lesen Memandu",
+  "subcategoryVehicleRegistrations": "Pendaftaran Kenderaan",
+  "subcategoryRoadworthyCertificates": "Sijil Kelayakan Jalan",
+  "subcategoryVehicleInspectionCertificates": "Sijil Pemeriksaan Kenderaan",
+
+  "subcategoryVisas": "Visa",
+  "subcategoryStudyPermits": "Permit Pengajian",
+  "subcategoryWorkPermits": "Permit Kerja",
+  "subcategoryTravelInsuranceDocuments": "Dokumen Insurans Perjalanan",
+
+  "subcategoryDebitAndCreditCards": "Kad Debit dan Kredit",
+  "subcategoryStoreCards": "Kad Kedai",
+  "subcategoryFuelCards": "Kad Bahan Api",
+
+  "subcategoryVehicleInsurances": "Insurans Kenderaan",
+  "subcategoryPropertyInsurances": "Insurans Harta",
+  "subcategoryLifeInsurances": "Insurans Hayat",
+  "subcategoryHealthInsurances": "Insurans Kesihatan",
+  "subcategoryTravelInsurances": "Insurans Perjalanan",
+
+  "subcategoryMedicalPrescriptions": "Preskripsi Perubatan",
+  "subcategoryOpticalPrescriptions": "Preskripsi Optik",
+  "subcategoryMedicalCertificates": "Sijil Perubatan",
+
+  "subcategoryProfessionalLicences": "Lesen Profesional",
+  "subcategoryProfessionalRegistrations": "Pendaftaran Profesional",
+  "subcategoryIndustryRegistrations": "Pendaftaran Industri",
+  "subcategoryWorkAccessCards": "Kad Akses Kerja",
+
+  "subcategoryLeaseAgreements": "Perjanjian Sewa",
+  "subcategoryAccessCardsAndTags": "Kad dan Tag Akses",
+  "subcategoryParkingPermits": "Permit Letak Kenderaan",
+  "subcategorySecurityAccessPermits": "Permit Akses Keselamatan",
+
+  "subcategoryElectricityAccounts": "Akaun Elektrik",
+  "subcategoryWaterAccounts": "Akaun Air",
+  "subcategoryInternetContracts": "Kontrak Internet",
+  "subcategorySecurityServiceContracts": "Kontrak Perkhidmatan Keselamatan",
+  "searchCategories": "Cari kategori",
+  "filterAll": "Semua",
+  "filterPreset": "Pratetap",
+  "filterCustom": "Tersuai",
+  "addCategoryTitle": "Tambah kategori",
+  "customLabel": "Tersuai",
+  "subcategoriesLabel": "Subkategori",
+  "itemsLabel": "Item",
+  "itemsExpiring": "{count} item akan tamat tempoh dalam {days} hari",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Kategori Dipinkan",
+  "pinnedHint": "Pin kategori yang paling kerap digunakan supaya ia kekal di bahagian atas senarai.",
+  "noCategoriesFound": "Tiada kategori ditemui",
+  "searchGroups": "Cari kumpulan",
+  "addGroupTitle": "Tambah kumpulan",
+  "basicPlanGroupInfo": "Anda menggunakan pelan Basic.\nAnda boleh melihat kumpulan pratetap dalam kategori ini.\nNaik taraf ke Premium untuk mencipta kumpulan sendiri.",
+  "groupDeleted": "Kumpulan telah dipadam",
+  "undo": "BATALKAN",
+  "groupStats": "{items} item • {expiring} tamat tempoh dalam {days} hari",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Ketik untuk menambah dan menjejak item dalam kumpulan ini.",
+  "itemsInGroup": "Item dalam kumpulan ini",
+  "itemsInGroupHint": "Jejaki item penting bersama tarikh luput supaya boleh diperbaharui tepat pada masanya.",
+  "searchItems": "Cari item",
+  "filterAll": "Semua",
+  "filterExpiringWithin": "Luput dalam {days} hari",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Telah luput",
+  "addItem": "Tambah item",
+  "noItemsYet": "Tiada item lagi.",
+
+  "statusExpired": "Telah luput",
+  "statusExpiresToday": "Luput hari ini",
+  "statusExpiresInOneDay": "Luput esok",
+  "statusExpiresInDays": "Luput dalam {days} hari",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Sah",
+
+  "deleteCategoryTitle": "Padam kategori",
+  "deleteCategoryMessage": "Adakah anda pasti mahu memadam kategori \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Padam kumpulan",
+  "deleteGroupMessage": "Adakah anda pasti mahu memadam kumpulan \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Padam item",
+  "deleteItemMessage": "Adakah anda pasti mahu memadam \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Batal",
+  "delete": "Padam",
+  "homeWelcomeFirstTitle": "Selamat datang, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Selamat kembali, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara membantu anda menjejaki tarikh luput penting supaya tiada apa yang terlepas.",
+
+"homeWelcomeSubtitleFirst":
+  "Gembira melihat anda di sini. Vaultara membantu anda mengatur tarikh dan rekod penting di satu tempat yang selamat.",
+
+"homeWelcomeSubtitleBack":
+  "Seronok bertemu anda kembali. Vaultara sentiasa sedia apabila anda ingin menyemak tarikh dan rekod penting anda.",
+  "insightEmptyTitle": "Belum ada item ditambah",
+  "insightEmptyBody": "Apabila anda mula menjejaki tarikh penting, Vaultara akan membantu anda mendahului tarikh luput.",
+
+  "insightExpiresTodayTitle": "\"{name}\" tamat hari ini",
+  "insightExpiresTodayBody": "Semakan pantas membantu memastikan maklumat tepat.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" tamat esok",
+  "insightExpiresTomorrowBody": "Menyemaknya sekarang boleh menjimatkan masa kemudian.",
+
+  "insightExpiresSoonTitle": "\"{name}\" tamat pada {date}",
+  "insightExpiresSoonBody": "Menguruskannya awal menjadikan semuanya lebih mudah.",
+
+  "insightNextExpiryTitle": "Tarikh luput seterusnya ialah \"{name}\" pada {date}",
+  "insightNextExpiryBody": "Tiada tindakan diperlukan buat masa ini.",
+
+  "insightClusteredTitle": "Beberapa item tamat sekitar {month}",
+  "insightClusteredBody": "Menyemaknya bersama boleh menjimatkan masa.",
+
+  "insightTopCategoryTitle": "Kebanyakan item berada dalam {category}",
+  "insightTopCategoryBody": "Menyemak kawasan ini memberi kesan terbesar.",
+
+  "insightStableTitle": "Semuanya kelihatan stabil",
+  "insightStableBody": "Tiada tarikh luput mendesak buat masa ini.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Selamat datang",
+  "summaryAllTitle": "Semua item",
+"summaryAllCaption": "Ditjejaki dalam Vaultara",
+"summarySoonTitle": "Akan tamat tidak lama lagi",
+"summarySoonCaption": "Dalam 30 hari",
+"summaryWeekTitle": "Minggu ini",
+"summaryWeekCaption": "Tamat dalam 7 hari",
+"summaryExpiredTitle": "Tamat tempoh",
+"summaryExpiredCaption": "Tarikh tamat telah berlalu",
+"stabilityStableTitle": "Segalanya kelihatan stabil",
+"stabilityStableBody": "Rekod anda tidak menunjukkan risiko segera atau terkumpul.",
+
+"stabilityDecliningTitle": "Kestabilan semakin menurun",
+"stabilityDecliningBody": "Beberapa item telah tamat tempoh dan yang lain hampir tamat.",
+
+"stabilityWeakenedTitle": "Kestabilan melemah",
+"stabilityWeakenedBody": "Kehadiran rekod tamat tempoh mengurangkan kebolehpercayaan keseluruhan.",
+
+"stabilityPressureTitle": "Tekanan semakin meningkat",
+"stabilityPressureBody": "Beberapa rekod akan memerlukan perhatian tidak lama lagi untuk mengekalkan kestabilan.",
+"editorNotes": "Nota",
+"notesHint": "Masukkan nota",
+"editorReminderTitle": "Peringatan",
+"editorReminderNone": "Tiada peringatan",
+"editorReminderOnExpiry": "Pada tarikh luput",
+"editorReminder7Days": "7 hari sebelum luput",
+"editorReminder30Days": "30 hari sebelum luput",
+"editorReminderCustom": "Tersuai",
+"daysBeforeExpiry": "hari sebelum luput",
+"reminderStage0Title": "Peringatan tamat tempoh",
+"reminderStage0Body": "{firstName}, {itemName} akan tamat tempoh dalam {days} hari.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Peringatan susulan",
+"reminderStage1Body": "{firstName}, {itemName} masih belum dikemas kini.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Tamat tempoh semakin hampir",
+"reminderStage2Body": "Tarikh tamat tempoh untuk {itemName} semakin hampir.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Peringatan terakhir",
+"reminderFinalBody": "{firstName}, sila kemas kini {itemName} sekarang.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Keseimbangan perlindungan",
+"coverageAllRepresented": "Rekod anda merangkumi item dalam semua kategori.",
+"coverageMissingNamed": "Tiada rekod ditemui dalam {count} kategori: {names}.",
+"coverageMissingSummary": "Anda belum menambah sebarang rekod dalam {count} kategori, termasuk {names} dan {remaining} yang lain.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Gunakan kata laluan",
+"signInWithBiometrics": "Log masuk dengan biometrik",
+"enableBiometricsTitle": "Dayakan keselamatan biometrik",
+"enableBiometricsBody": "Gunakan cap jari atau pengecaman wajah untuk melindungi Vaultara.",
+"enableBiometricsReason": "Dayakan buka kunci biometrik untuk Vaultara.",
+"notNow": "Bukan sekarang",
+"useBiometrics": "Gunakan biometrik",
+"recordsCalendarIntro":
+  "Pilih cara anda ingin melihat tarikh luput:\n\n• Taip berapa hari dari hari ini yang anda ingin lihat ke hadapan.\n• Atau pilih tarikh tertentu pada kalendar.\n\nVaultara akan menunjukkan rekod yang mencapai tarikh luput pada hari tersebut.",
+
+"showingRecordsRelative": "Menunjukkan rekod yang luput dalam {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Menunjukkan rekod yang luput pada tarikh yang dipilih",
+
+"noRecordsOnDate":
+  "Tiada rekod ditetapkan untuk luput pada hari tersebut.",
+
+"recordEditorAddTitle": "Tambah rekod",
+"recordEditorEditTitle": "Edit rekod",
+
+"editorRecordName": "Nama rekod",
+"editorRecordNameHint": "Masukkan nama rekod",
+"recordEditorErrorName": "Nama rekod diperlukan",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Ketik untuk menambah dan menjejak rekod dalam kumpulan ini.",
+
+"recordsInGroup": "Rekod dalam kumpulan ini",
+
+"recordsInGroupHint":
+  "Jejak setiap rekod penting bersama tarikh luputnya supaya anda boleh mengemas kini tepat pada masanya.",
+
+"searchRecords": "Cari rekod",
+"addRecord": "Tambah rekod",
+"noRecordsYet": "Tiada rekod lagi.",
+
+"deleteRecordTitle": "Padam rekod",
+
+"recordsInsightClusteredTitle":
+  "Beberapa rekod akan luput sekitar {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Kebanyakan rekod anda dikelompokkan di bawah {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Semua rekod",
+
+"recordsStabilityDecliningBody":
+  "Beberapa rekod telah luput dan lebih banyak akan menyusul tidak lama lagi.",
+
+"recordsCoverageAllRepresented":
+  "Rekod anda merangkumi semua kategori.",
+
+"recordReminderStage0Body":
+  "{firstName}, rekod anda {recordName} akan luput dalam {days} hari.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, rekod anda {recordName} belum dikemas kini lagi.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Tarikh luput untuk {recordName} semakin hampir.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, sila kemas kini {recordName} sekarang.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Tiada kumpulan lagi",
+"recordsExpiring": "{count, plural, one {1 rekod tamat tempoh dalam {days} hari} other {{count} rekod tamat tempoh dalam {days} hari}}",
+"recordsGroupStats": "{records, plural, one {1 rekod} other {{records} rekod}} • {expiring} dalam {days} hari",
+"groupLabel": "{count, plural, one {{count} kumpulan} other {{count} kumpulan}}",
+"recordsLabel": "{count, plural, one {{count} rekod} other {{count} rekod}}",
+"forgotPassword": "Lupa kata laluan?",
+  "forgotPasswordTitle": "Tetapkan semula kata laluan",
+  "forgotPasswordBody": "Masukkan alamat e-mel anda dan kami akan menghantar pautan untuk menetapkan semula kata laluan.",
+  "sendResetLink": "Hantar pautan",
+  "passwordResetEmailSent": "E-mel penetapan semula kata laluan telah dihantar.",
+  "verifyEmailToContinue": "Sila sahkan alamat e-mel anda sebelum log masuk",
+  "changeEmailTitle": "Tukar alamat emel",
+"newEmailHint": "Masukkan emel baharu anda",
+"sendVerificationEmail": "Hantar emel pengesahan",
+"deleteAccountTitle": "Padam akaun",
+"deleteAccountWarning": "Tindakan ini akan memadam akaun anda dan semua data yang disimpan secara kekal.\nIa tidak boleh dipulihkan.",
+"deleteAccountConfirm": "Padam akaun secara kekal",
+"supportTitle": "Sokongan",
+"supportSubtitle": "Hubungi kami jika anda memerlukan bantuan atau mempunyai soalan.",
+"supportEmailSubject": "Permintaan Sokongan Vaultara",
+"supportEmailError": "Tidak dapat membuka aplikasi e-mel.",
+"passwordResetEmailFailed": "Gagal menghantar e-mel tetapan semula kata laluan.",
+"loggedInPasswordResetBody": "Kami akan menghantar pautan tetapan semula kata laluan ke:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Pengurusan akaun",
+"changeEmailTitle": "Tukar alamat emel",
+"changeEmailSubtitle": "Kemas kini emel yang dipautkan ke akaun anda.",
+"changePasswordTitle": "Tukar kata laluan",
+"changePasswordSubtitle": "Kami akan menghantar pautan emel untuk menukar kata laluan anda dengan selamat.",
+"deleteAccountTitle": "Padam akaun",
+"deleteAccountSubtitle": "Padam akaun Vaultara anda secara kekal.",
+"biometricAuthReason": "Sahkan untuk mengakses akaun anda",
+"verifyEmailTitle": "Sahkan emel anda",
+"verifyEmailBody": "Kami telah menghantar emel pengesahan ke peti masuk anda. Sila buka dan sahkan alamat emel anda, kemudian kembali ke sini untuk meneruskan.",
+"verifyEmailConfirmedButton": "Saya telah mengesahkan emel saya",
+"verifyEmailResendButton": "Hantar semula emel pengesahan",
+"verifyEmailSending": "Menghantar...",
+"navHome": "Utama",
+"navCategories": "Kategori",
+"navInsights": "Wawasan",
+"navCalendar": "Kalendar",
+"tutorialHomeSearch": "Gunakan bar carian untuk mencari sebarang rekod yang anda jejaki dengan pantas.",
+"tutorialHomeFab": "Tambah rekod pertama anda di sini.\nPilih kategorinya, tambah nota pilihan dan pilih tarikh luput.",
+"tutorialHomeSummary": "Apabila anda menambah lebih banyak rekod, bahagian ini membantu mengenal pasti item hampir atau telah luput.",
+"tutorialHomeInsight": "Wawasan pintar ini menonjolkan corak dan tarikh luput akan datang.\nAnda boleh mengetik ikon pembesar suara untuk mendengarnya.",
+"tutorialHomeCoverage": "Keseimbangan liputan menunjukkan sejauh mana rekod anda diagihkan secara sekata.\nKeseimbangan lebih tinggi bermaksud jurang lebih sedikit.",
+"tutorialHomeStability": "Kestabilan menunjukkan kebolehpercayaan rekod anda dari semasa ke semasa.\nItem luput atau hampir luput boleh mengurangkan kestabilan.",
+"tutorialCancel": "Batal",
+"tutorialNext": "Seterusnya",
+"tutorialEnd": "Tamatkan tutorial",
+"softDeleteCategory": "kategori",
+"softDeleteGroup": "kumpulan",
+"softDeleteRecord": "rekod",
+
+"softDeleteTitle": "Alihkan {type} ke Baru Dipadam",
+
+"softDeleteMessage": "Fail {type} \"{name}\" akan dipindahkan ke Baru Dipadam.\n\nAnda boleh memulihkannya dalam masa 30 hari. Selepas itu, ia akan dipadam secara kekal.",
+
+"softDeleteMove": "Alih",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "Baru Dipadam",
+"categories": "Kategori",
+"groups": "Kumpulan",
+"records": "Rekod",
+"restore": "Pulihkan",
+"deletePermanently": "Padam secara kekal",
+
+"recentlyDeletedBanner": "{type} yang dipadam disimpan selama 30 hari.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Cari {type} yang dipadam",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Tiada {type} yang dipadam",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Ketik kategori untuk melihat kumpulannya dan mengurus rekod anda.",
+"groupsHint": "Kumpulan menyusun rekod anda dalam kategori ini. Ketik kumpulan untuk mengurus rekod.",
+"notLoggedIn": "Belum log masuk",
+"recordsInsideGroupHint": "Ini ialah rekod di dalam kumpulan ini.",
+"snackMovedToRecentlyDeleted": "\"{name}\" dipindahkan ke Baru Dipadam",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" berjaya dipadam",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" berjaya dikemas kini",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" berjaya ditambah",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" berjaya dipulihkan",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Had percuma dicapai ({current}/{limit}). Naik taraf untuk tambah lagi.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Cari semua rekod",
+"globalSearchHint": "Taip nama rekod, kategori atau kumpulan",
+"globalSearchNoMatches": "Tiada rekod sepadan dengan carian anda.",
+"snackNoRecordsToSearch": "Tiada rekod untuk dicari. Tambah beberapa rekod dan Vaultara akan mengindeksnya secara automatik.",
+"recoveryCentreTitle": "Pusat Pemulihan",
+"recoveryCentreSubtitle": "Pulihkan atau padamkan rekod yang dibuang secara kekal.",
+"plan_premium": "Premium",
+"plan_free": "Percuma",
+"profile_app_settings_title": "Tetapan aplikasi",
+"profile_privacy_security_title": "Privasi dan keselamatan",
+"profile_biometric_on": "Kunci biometrik diaktifkan pada peranti ini.",
+"profile_biometric_off": "Kunci biometrik dimatikan.",
+"profile_biometric_enable_reason": "Sahkan identiti anda untuk mengaktifkan kunci biometrik.",
+"profile_biometric_disable_reason": "Sahkan identiti anda untuk mematikan kunci biometrik.",
+"profile_account_management_title": "Pengurusan akaun",
+"profile_account_management_subtitle": "Tukar emel, kata laluan atau padam akaun.",
+"profile_premium_active_title": "Premium aktif",
+"profile_premium_upgrade_title": "Naik taraf ke Premium",
+"profile_premium_active_subtitle": "Peringatan lanjutan dibuka.",
+"profile_premium_upgrade_subtitle": "Buka peringatan lanjutan dan organisasi tanpa had.",
+"profile_manage_cancel_hint": "Urus atau batalkan pada bila-bila masa di Google Play.",
+"profile_manage_subscription_button": "Urus langganan",
+"plansTitle": "Pilih pelan",
+"plansTrialBanner": "Mulakan dengan percubaan percuma 7 hari.\nBatal bila-bila masa.",
+"plansLoading": "Memuatkan…",
+"plansStartFreeTrial": "Mula percuma",
+"plansNoChargeTodayFooter": "7 hari percuma · Tiada caj hari ini",
+
+"planFreeTitle": "Percuma",
+"planFreeSubtitle": "Untuk permulaan",
+"planPremiumMonthlyTitle": "Premium bulanan",
+"planPremiumYearlyTitle": "Premium tahunan",
+"planPerMonth": "sebulan",
+"planPerYear": "setahun",
+
+"planBadgeCurrent": "Pelan semasa",
+"planBadgePopular": "Popular",
+"planBadgeBestValue": "Nilai terbaik",
+
+"planYouAreOnThisPlan": "Anda sedang menggunakan pelan ini.",
+
+"planFeatureUpToRecords": "Sehingga {count} rekod",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Kategori tersuai (hingga {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Subkategori pratetap",
+"planFeatureCloudStorage": "Storan awan",
+"planFeatureSmartExpiryInsights": "Analisis tarikh luput",
+"planFeatureCoverageBalance": "Keseimbangan kategori",
+"planFeatureRecordStabilityTracking": "Kestabilan rekod",
+
+"planFeatureUnlimitedRecords": "Rekod tanpa had",
+"planFeatureUnlimitedCategories": "Kategori tanpa had",
+"planFeatureCustomSubcategories": "Subkategori tersuai",
+"planFeatureMultipleRemindersPerRecord": "Pelbagai peringatan",
+"planFeatureAdvancedReminderTiming": "Masa peringatan lanjutan",
+"planFeatureAutomaticFollowUps": "Peringatan automatik",
+
+"planFeatureEverythingInMonthly": "Semua dari bulanan",
+"planFeatureSavePercentComparedToMonthly": "Jimat {percent}% berbanding bulanan",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Terbaik untuk jangka panjang",
+"editorReminderLabel": "Peringatan",
+"editorReminderSelectOptional": "Pilih peringatan (pilihan)",
+"editorReminderOnExpiry": "Pada tarikh luput",
+"editorReminderDaysBefore": "{days} hari sebelum luput",
+"editorFreeItemsCount": "Rekod percuma: {used}/{limit}",
+"editorExpiryPastWarning": "Tarikh luput telah berlalu.",
+"editorExpiryTodayWarning": "Rekod ini tamat hari ini.",
+"editorErrorExpiryPast": "Tarikh luput tidak boleh di masa lalu.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Wawasan hari ini",
+"tutorialBannerTitle": "Panduan pantas",
+"tutorialBannerBody": "Ketahui cara mencari, menambah rekod dan memahami insights dalam masa kurang seminit.",
+"tutorialBannerStart": "Mulakan tutorial",
+"tutorialBannerDismiss": "Bukan sekarang",
+"authErrorUserDisabled": "Akaun ini telah dilumpuhkan.",
+"authErrorNetwork": "Ralat rangkaian. Sila cuba lagi.",
+"authErrorTooManyRequests": "Terlalu banyak percubaan. Cuba lagi kemudian.",
+"authErrorSignInFailed": "Log masuk gagal. Sila cuba lagi.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium telah diaktifkan",
+"snackPremiumRestored": "Premium telah dipulihkan",
+"passwordNeedLower": "Mesti mengandungi huruf kecil",
+"passwordNeedUpper": "Mesti mengandungi huruf besar",
+"passwordNeedNumber": "Mesti mengandungi nombor",
+"passwordNeedSymbol": "Mesti mengandungi simbol",
+"confirmIdentityTitle": "Sahkan identiti",
+"confirm": "Sahkan",
+"profile_sign_out_title": "Log keluar",
+"profile_sign_out_subtitle": "Log keluar dari Vaultara pada peranti ini",
+"profile_sign_out_confirm_title": "Log keluar?",
+"profile_sign_out_confirm_body": "Anda perlu log masuk semula untuk mengakses akaun anda.",
+"profile_sign_out_action": "Log keluar",
+"todayInsightsAudioHint": "Prefer audio? Gunakan ikon pembesar suara.",
+"category2Label": "Kategori",
+"enable2BiometricsBody": "Gunakan pengecaman cap jari untuk melindungi akaun Vaultara anda.",
+"snackNotificationsDisabled": "Pemberitahuan dimatikan. Hidupkan untuk menerima peringatan.",
+"openSettings": "Buka tetapan",
+
+"reminderOnExpiryTitle": "Tamat hari ini",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Hai {firstName}, \"{itemName}\" tamat hari ini.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Kategori percuma: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Menunjukkan berapa kategori percuma yang telah digunakan daripada had percuma.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Tambah nota (pilihan)",
+"apply": "Guna",
+"smartInsightExpiresTodayHeading": "Tamat Tempoh Hari Ini",
+"smartInsightExpiresTodaySingleBody": "{name} tamat tempoh hari ini. Ambil tindakan sekarang untuk memastikannya kemas kini.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{names} dan {extra} dokumen lain tamat tempoh hari ini.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Memerlukan Perhatian Anda",
+"smartInsightSilentRiskBody": "{name} tamat tempoh dalam {days} hari dan tiada peringatan ditetapkan. Pastikan butirannya masih betul.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Beberapa Pembaharuan Rapat",
+"smartInsightRenewalTwinBodyTwo": "{a} dan {b} tamat tempoh dalam tiga minggu antara satu sama lain. Rancang lebih awal.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, dan {c} semuanya tamat tempoh dalam tiga minggu. Rancang lebih awal.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{a}, {b}, dan {extra} dokumen lain tamat tempoh dalam tiga minggu. Rancang lebih awal.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Kelompok Akan Datang",
+"smartInsightClusterBody": "{count} dokumen dalam {category} tamat tempoh dalam dua bulan akan datang. Pertimbangkan untuk mengendalikan mereka bersama.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Tempoh Tenang Di Hadapan",
+"smartInsightQuietPeriodBody": "Tiada yang tamat tempoh untuk {days} hari akan datang. Pembaharuan seterusnya anda ialah pada {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Semua Terkini",
+"smartInsightAllCaughtUpBody": "{count} tamat tempoh akan datang dilindungi oleh peringatan. Tiada yang lain memerlukan perhatian anda.",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Semua terkini. Tiada yang memerlukan perhatian anda sekarang.",
+"smartInsightNoRecordsHeading": "Tambah Rekod Pertama Anda",
+"smartInsightNoRecordsBody": "Mula menjejaki dokumen anda dan Vaultara akan memaparkan wawasan pintar di sini.",
+"expiryTimelineTitle": "Garis masa tamat tempoh",
+"expiryTimelineSubtitle": "Ketik bulan untuk melihat rekod yang tamat tempoh pada bulan tersebut",
+"expiryTimelineDetailCount": "{count} rekod",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Akan datang",
+"summaryUpcomingCaption": "Dalam 30 hari",
+"summaryUrgentTitle": "Mendesak",
+"summaryUrgentCaption": "Dalam 7 hari"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -105,5 +105,796 @@
   "groupErrorSymbols": "El nom no pot contenir símbols",
   "groupErrorNumbers": "El nom no pot contenir números",
 
-  "createGroup": "Crear"
+  "createGroup": "Crear",
+
+  "registerTitle": "Crear compte",
+
+  "firstNameLabel": "Nom",
+  "firstNameHint": "Introdueix el nom",
+  "errorFirstName": "El nom és obligatori",
+
+  "lastNameLabel": "Cognom",
+  "lastNameHint": "Introdueix el cognom",
+  "errorLastName": "El cognom és obligatori",
+  "emailLabel": "Correu electrònic",
+  "errorEmailInvalid": "Introdueix un correu electrònic vàlid.",
+  "errorEmailInUse": "Aquest correu electrònic ja està vinculat a un compte Vaultara.",
+
+  "passwordLabel": "Contrasenya",
+  "passwordHelper": "Mínim 8 caràcters amb una combinació de tipus.",
+
+  "passwordTooShort": "Massa curta",
+  "passwordTooWeak": "Massa feble",
+  "passwordMedium": "Mitjana",
+  "passwordStrong": "Forta",
+  "errorPasswordLength": "La contrasenya ha de tenir com a mínim 8 caràcters.",
+  "errorPasswordWeak": "Selecciona una contrasenya més forta.",
+
+  "errorGeneric": "No s’ha pogut registrar. Torna-ho a provar.",
+
+  "createAccount": "Crear compte",
+  "appName": "Vaultara",
+"authTagline": "El teu centre personal per a passaports, llicències, targetes i altres elements essencials",
+"tabSignIn": "Inicia sessió",
+"tabCreateAccount": "Crea un compte",
+"signInFooterText": "Inicia sessió per accedir al teu espai personal de Vaultara i controlar cada renovació",
+"createAccountFooterText": "Crea el teu compte de Vaultara per desar recordatoris essencials i accedir-hi quan ho necessitis",
+"emailRequired": "El teu correu electrònic és obligatori",
+"passwordRequired": "La teva contrasenya és obligatòria",
+"registerPasswordHint": "Introdueix la contrasenya",
+"loginPasswordHint": "Introdueix la teva contrasenya",
+"emailHint": "Introdueix la teva adreça de correu electrònic",
+
+  "emailNotFound": "Correu incorrecte.\nNo existeix cap compte Vaultara amb aquest correu",
+  "incorrectPassword": "Contrasenya incorrecta",
+  "emailLabel": "Correu electrònic",
+  "passwordLabel": "Contrasenya",
+  "signIn": "Inicia sessió",
+  "categoryPersonalIdentification": "Identificació personal",
+  "categoryDrivingAndVehicles": "Conducció i vehicles",
+  "categoryTravelAndImmigration": "Viatges i immigració",
+  "categoryBankingAndCards": "Banca i targetes",
+  "categoryInsuranceAndCover": "Assegurances i cobertura",
+  "categoryHealthAndMedical": "Salut i assistència mèdica",
+  "categoryWorkAndProfessional": "Treball i professional",
+  "categoryPropertyAndHousing": "Propietat i habitatge",
+  "categoryHouseholdAndUtilities": "Llar i serveis bàsics",
+
+  "subcategoryPassports": "Passaports",
+  "subcategoryIdCards": "Targetes d'identitat",
+  "subcategoryResidencePermits": "Permisos de residència",
+
+  "subcategoryDrivingLicences": "Permisos de conducció",
+  "subcategoryVehicleRegistrations": "Registres de vehicles",
+  "subcategoryRoadworthyCertificates": "Certificats d'aptitud viària",
+  "subcategoryVehicleInspectionCertificates": "Certificats d'inspecció de vehicles",
+
+  "subcategoryVisas": "Visats",
+  "subcategoryStudyPermits": "Permisos d'estudi",
+  "subcategoryWorkPermits": "Permisos de treball",
+  "subcategoryTravelInsuranceDocuments": "Documents d'assegurança de viatge",
+
+  "subcategoryDebitAndCreditCards": "Targetes de dèbit i crèdit",
+  "subcategoryStoreCards": "Targetes de botiga",
+  "subcategoryFuelCards": "Targetes de combustible",
+
+  "subcategoryVehicleInsurances": "Assegurances de vehicles",
+  "subcategoryPropertyInsurances": "Assegurances de propietat",
+  "subcategoryLifeInsurances": "Assegurances de vida",
+  "subcategoryHealthInsurances": "Assegurances de salut",
+  "subcategoryTravelInsurances": "Assegurances de viatge",
+
+  "subcategoryMedicalPrescriptions": "Prescripcions mèdiques",
+  "subcategoryOpticalPrescriptions": "Prescripcions òptiques",
+  "subcategoryMedicalCertificates": "Certificats mèdics",
+
+  "subcategoryProfessionalLicences": "Llicències professionals",
+  "subcategoryProfessionalRegistrations": "Registres professionals",
+  "subcategoryIndustryRegistrations": "Registres industrials",
+  "subcategoryWorkAccessCards": "Targetes d'accés laboral",
+
+  "subcategoryLeaseAgreements": "Contractes de lloguer",
+  "subcategoryAccessCardsAndTags": "Targetes i etiquetes d'accés",
+  "subcategoryParkingPermits": "Permisos d'aparcament",
+  "subcategorySecurityAccessPermits": "Permisos d'accés de seguretat",
+
+  "subcategoryElectricityAccounts": "Comptes d'electricitat",
+  "subcategoryWaterAccounts": "Comptes d'aigua",
+  "subcategoryInternetContracts": "Contractes d'internet",
+  "subcategorySecurityServiceContracts": "Contractes de serveis de seguretat",
+    "searchCategories": "Cerca categories",
+  "filterAll": "Totes",
+  "filterPreset": "Predefinides",
+  "filterCustom": "Personalitzades",
+  "addCategoryTitle": "Afegeix categoria",
+  "customLabel": "Personalitzada",
+  "subcategoriesLabel": "subcategories",
+  "itemsLabel": "elements",
+  "itemsExpiring": "{count} elements caduquen en {days} dies",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Essencials fixats",
+  "pinnedHint": "Fixa les categories que obres més sovint perquè es mantinguin a la part superior.",
+  "noCategoriesFound": "No s'han trobat categories",
+  "searchGroups": "Cerca grups",
+  "addGroupTitle": "Afegeix grup",
+  "basicPlanGroupInfo": "Estàs al pla bàsic.\nPots veure els grups predefinits d’aquesta categoria.\nActualitza a Premium per crear els teus propis grups.",
+  "groupDeleted": "Grup eliminat",
+  "undo": "DESFER",
+  "groupStats": "{items} elements • {expiring} caduquen en {days} dies",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Toca per afegir i fer el seguiment d’elements en aquest grup.",
+  "itemsInGroup": "Elements d'aquest grup",
+  "itemsInGroupHint": "Fes el seguiment de cada element important amb la seva data de caducitat per renovar-lo a temps.",
+  "searchItems": "Cerca elements",
+  "filterAll": "Tots",
+  "filterExpiringWithin": "Caduca en {days} dies",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Caducat",
+  "addItem": "Afegeix element",
+  "noItemsYet": "Encara no hi ha elements.",
+
+  "statusExpired": "Caducat",
+  "statusExpiresToday": "Caduca avui",
+  "statusExpiresInOneDay": "Caduca en 1 dia",
+  "statusExpiresInDays": "Caduca en {days} dies",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Vàlid",
+
+  "deleteCategoryTitle": "Suprimeix categoria",
+  "deleteCategoryMessage": "Segur que vols suprimir la categoria \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Suprimeix grup",
+  "deleteGroupMessage": "Segur que vols suprimir el grup \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Suprimeix element",
+  "deleteItemMessage": "Segur que vols suprimir \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Cancel·la",
+  "delete": "Suprimeix",
+  "homeWelcomeTitle": "Benvingut",
+
+  "homeWelcomeFirstTitle": "Benvingut, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Benvingut de nou, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara t’ajuda a fer el seguiment de dates de venciment importants perquè no se’n perdi cap.",
+
+  "homeWelcomeSubtitleFirst":
+    "Ens alegra tenir-te aquí. Vaultara t’ajuda a mantenir-te organitzat guardant dates i registres importants en un únic lloc segur.",
+
+  "homeWelcomeSubtitleBack":
+    "Ens alegra tornar-te a veure. Vaultara és aquí quan vulguis revisar les teves dates i registres importants.",
+     "insightEmptyTitle": "Encara no has afegit res",
+  "insightEmptyBody": "Quan comencis a seguir dates importants, Vaultara t’ajudarà a anticipar els venciments.",
+
+  "insightExpiresTodayTitle": "\"{name}\" venç avui",
+  "insightExpiresTodayBody": "Una revisió ràpida ara pot ajudar a mantenir-ho tot al dia.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" venç demà",
+  "insightExpiresTomorrowBody": "Pot ser útil revisar-ho avui.",
+
+  "insightExpiresSoonTitle": "\"{name}\" venç el {date}",
+  "insightExpiresSoonBody": "Gestionar-ho abans pot fer els dies més tranquils.",
+
+  "insightNextExpiryTitle": "El proper venciment és \"{name}\" el {date}",
+  "insightNextExpiryBody": "No cal fer res ara mateix.",
+
+  "insightClusteredTitle": "Diversos elements vencen al {month}",
+  "insightClusteredBody": "Revisar-los junts pot estalviar temps.",
+
+  "insightTopCategoryTitle": "La majoria d’elements són a {category}",
+  "insightTopCategoryBody": "És el millor punt de partida per revisar.",
+
+  "insightStableTitle": "Tot està sota control",
+  "insightStableBody": "No hi ha venciments imminents ara mateix.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Tots els elements",
+"summaryAllCaption": "Seguiment a Vaultara",
+"summarySoonTitle": "Caduquen aviat",
+"summarySoonCaption": "En 30 dies",
+"summaryWeekTitle": "Aquesta setmana",
+"summaryWeekCaption": "Caduquen en 7 dies",
+"summaryExpiredTitle": "Caducat",
+"summaryExpiredCaption": "Data de caducitat superada",
+"stabilityStableTitle": "Tot sembla estable",
+"stabilityStableBody": "Els teus registres no mostren riscos immediats ni acumulatius.",
+
+"stabilityDecliningTitle": "L’estabilitat disminueix",
+"stabilityDecliningBody": "Alguns elements han vençut i d’altres s’hi apropen.",
+
+"stabilityWeakenedTitle": "Estabilitat afeblida",
+"stabilityWeakenedBody": "La presència de registres vençuts redueix la fiabilitat general.",
+
+"stabilityPressureTitle": "La pressió augmenta",
+"stabilityPressureBody": "Diversos registres requeriran atenció aviat per mantenir l’estabilitat.",
+"editorNotes": "Notes",
+"notesHint": "Introduïu notes",
+"editorReminderTitle": "Recordatori",
+"editorReminderNone": "Sense recordatori",
+"editorReminderOnExpiry": "En la data de venciment",
+"editorReminder7Days": "7 dies abans del venciment",
+"editorReminder30Days": "30 dies abans del venciment",
+"editorReminderCustom": "Personalitzat",
+"daysBeforeExpiry": "dies abans del venciment",
+"reminderStage0Title": "Recordatori de caducitat",
+"reminderStage0Body": "{firstName}, {itemName} caduca d’aquí {days} dies.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Recordatori de seguiment",
+"reminderStage1Body": "{firstName}, {itemName} encara no s’ha actualitzat.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "La caducitat s’acosta",
+"reminderStage2Body": "La data de caducitat de {itemName} s’acosta.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Recordatori final",
+"reminderFinalBody": "{firstName}, actualitza {itemName} ara.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Equilibri de cobertura",
+"coverageAllRepresented": "Els teus registres inclouen elements en totes les categories.",
+"coverageMissingNamed": "No s'han trobat registres en {count} categories: {names}.",
+"coverageMissingSummary": "No has afegit cap registre en {count} categories, incloent {names} i {remaining} més.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Utilitza la contrasenya",
+"signInWithBiometrics": "Inicia sessió amb biometria",
+"enableBiometricsTitle": "Activa la seguretat biomètrica",
+"enableBiometricsBody": "Utilitza empremta digital o reconeixement facial per protegir Vaultara.",
+"enableBiometricsReason": "Activa el desbloqueig biomètric per a Vaultara.",
+"notNow": "Ara no",
+"useBiometrics": "Utilitza biometria",
+"recordsCalendarIntro":
+  "Tria com vols explorar les dates de caducitat:\n\n• Escriu quants dies a partir d’avui vols consultar.\n• O selecciona una data concreta al calendari.\n\nVaultara mostrarà els registres que arriben a la seva data de caducitat aquell dia.",
+
+"showingRecordsRelative": "Mostrant registres que caduquen en {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Mostrant registres que caduquen en la data seleccionada",
+"noRecordsOnDate": "No hi ha registres configurats per caducar aquest dia.",
+
+"recordEditorAddTitle": "Afegeix registre",
+"recordEditorEditTitle": "Edita registre",
+
+"editorRecordName": "Nom del registre",
+"editorRecordNameHint": "Introdueix el nom del registre",
+"recordEditorErrorName": "El nom del registre és obligatori",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint": "Toca per afegir i fer seguiment dels registres d’aquest grup.",
+
+"recordsInGroup": "Registres d’aquest grup",
+"recordsInGroupHint":
+  "Fes seguiment de cada registre important amb la seva data de caducitat per renovar-lo a temps.",
+
+"searchRecords": "Cerca registres",
+"addRecord": "Afegeix registre",
+"noRecordsYet": "Encara no hi ha registres.",
+
+"deleteRecordTitle": "Suprimeix registre",
+
+"recordsInsightClusteredTitle":
+  "Diversos registres caduquen al voltant de {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "La majoria dels teus registres estan agrupats sota {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Tots els registres",
+
+"recordsStabilityDecliningBody":
+  "Alguns registres ja han caducat i d’altres ho faran aviat.",
+
+"recordsCoverageAllRepresented":
+  "Els teus registres cobreixen totes les categories.",
+
+"recordReminderStage0Body":
+  "{firstName}, el teu {recordName} caduca en {days} dies.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, el teu {recordName} encara no s’ha actualitzat.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "La data de caducitat de {recordName} s’acosta.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, actualitza {recordName} ara.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Encara no hi ha grups",
+"recordsExpiring": "{count, plural, one {1 registre caduca en {days} dies} other {{count} registres caduquen en {days} dies}}",
+"recordsGroupStats": "{records, plural, one {1 registre} other {{records} registres}} • {expiring} en {days} dies",
+"groupLabel": "{count, plural, one {{count} grup} other {{count} grups}}",
+"recordsLabel": "{count, plural, one {{count} registre} other {{count} registres}}",
+"forgotPassword": "Has oblidat la contrasenya?",
+  "forgotPasswordTitle": "Restablir contrasenya",
+  "forgotPasswordBody": "Introdueix el teu correu electrònic i t’enviarem un enllaç per restablir la contrasenya.",
+  "sendResetLink": "Envia l’enllaç",
+  "passwordResetEmailSent": "S’ha enviat un correu per restablir la contrasenya.",
+  "verifyEmailToContinue": "Si us plau, verifica la teva adreça de correu electrònic abans d’iniciar sessió",
+  "changeEmailTitle": "Canvia l’adreça de correu",
+"newEmailHint": "Introdueix el teu nou correu electrònic",
+"sendVerificationEmail": "Envia correu de verificació",
+"deleteAccountTitle": "Suprimeix el compte",
+"deleteAccountWarning": "Aquesta acció suprimirà permanentment el teu compte i totes les dades desades.\nNo es pot desfer.",
+"deleteAccountConfirm": "Suprimeix el compte definitivament",
+"supportTitle": "Assistència",
+"supportSubtitle": "Contacta amb nosaltres si necessites ajuda o tens preguntes.",
+"supportEmailSubject": "Sol·licitud de suport de Vaultara",
+"supportEmailError": "No s'ha pogut obrir l'aplicació de correu.",
+"passwordResetEmailFailed": "No s'ha pogut enviar el correu de restabliment de contrasenya.",
+"loggedInPasswordResetBody": "Enviarem un enllaç per restablir la contrasenya a:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Gestió del compte",
+  "changeEmailTitle": "Canvia l’adreça electrònica",
+  "changeEmailSubtitle": "Actualitza el correu electrònic associat al teu compte.",
+  "changePasswordTitle": "Canvia la contrasenya",
+  "changePasswordSubtitle": "T’enviarem un enllaç per correu per canviar la contrasenya de manera segura.",
+  "deleteAccountTitle": "Suprimeix el compte",
+  "deleteAccountSubtitle": "Elimina permanentment el teu compte Vaultara.",
+  "biometricAuthReason": "Autentiqueu-vos per accedir al vostre compte de Vaultara",
+  "verifyEmailTitle": "Verifica el teu correu electrònic",
+"verifyEmailBody": "Hem enviat un correu de verificació a la teva safata d’entrada. Obre’l i confirma la teva adreça de correu, després torna aquí per continuar.",
+"verifyEmailConfirmedButton": "He verificat el meu correu",
+"verifyEmailResendButton": "Reenviar correu de verificació",
+"verifyEmailSending": "Enviant...",
+"navHome": "Inici",
+"navCategories": "Categories",
+"navInsights": "Anàlisi",
+"navCalendar": "Calendari",
+"tutorialHomeSearch": "Utilitza la barra de cerca per trobar ràpidament qualsevol registre que estiguis seguint.",
+"tutorialHomeFab": "Afegeix aquí el teu primer registre.\nTria on pertany, afegeix notes opcionals i selecciona una data de caducitat.",
+"tutorialHomeSummary": "A mesura que afegeixes més registres, aquesta secció t'ajuda a detectar elements propers o passats de caducitat.",
+"tutorialHomeInsight": "Aquesta visió intel·ligent destaca patrons i caducitats properes.\nPots tocar la icona de l'altaveu per escoltar-la.",
+"tutorialHomeCoverage": "El balanç de cobertura mostra com es distribueixen els teus registres entre les categories.\nUn balanç més alt indica menys buits.",
+"tutorialHomeStability": "L'estabilitat reflecteix com de fiables són els teus registres amb el temps.\nEls elements caducats i propers a caducar poden reduir l'estabilitat.",
+"tutorialCancel": "Cancel·la",
+"tutorialNext": "Següent",
+"tutorialEnd": "Finalitza el tutorial",
+"softDeleteCategory": "Categoria",
+"softDeleteGroup": "Grup",
+"softDeleteRecord": "Registre",
+"softDeleteTitle": "Mou {type} a Eliminats recentment",
+"softDeleteMessage": "{type} \"{name}\" es mourà a Eliminats recentment.\n\nPots restaurar-lo dins de 30 dies. Després s'eliminarà definitivament.",
+"softDeleteMove": "Mou",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Eliminats recentment",
+  "categories": "Categories",
+  "groups": "Grups",
+  "records": "Registres",
+  "restore": "Restaurar",
+  "deletePermanently": "Eliminar definitivament",
+
+  "recentlyDeletedBanner": "Els {type} eliminats es conserven durant 30 dies abans d’eliminar-se definitivament.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Cerca {type} eliminats",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Encara no hi ha {type} eliminats",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Toca una categoria per veure els seus grups i gestionar els teus registres.",
+ "groupsHint": "Els grups organitzen els teus registres dins d’aquesta categoria. Toca un grup per gestionar els registres.",
+ "notLoggedIn": "No s'ha iniciat la sessió",
+"recordsInsideGroupHint": "Aquests són els registres dins d'aquest grup.",
+"snackMovedToRecentlyDeleted": "\"{name}\" s'ha mogut a Eliminats recentment",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" s'ha suprimit correctament",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" s'ha actualitzat correctament",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" s'ha afegit correctament",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" s'ha restaurat correctament",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "S'ha arribat al límit gratuït ({current}/{limit}). Actualitza per afegir-ne més.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Cerca tots els registres",
+"globalSearchHint": "Escriu el nom del registre, categoria o grup",
+"globalSearchNoMatches": "Cap registre coincideix amb la teva cerca.",
+"snackNoRecordsToSearch": "No hi ha registres per cercar. Afegeix alguns registres i Vaultara els indexarà automàticament.",
+"recoveryCentreTitle": "Centre de recuperació",
+"recoveryCentreSubtitle": "Restaura o elimina permanentment els registres eliminats.",
+"plan_premium": "Premium",
+"plan_free": "Gratuït",
+"profile_app_settings_title": "Configuració de l’aplicació",
+"profile_privacy_security_title": "Privadesa i seguretat",
+"profile_biometric_on": "El bloqueig biomètric està activat en aquest dispositiu.",
+"profile_biometric_off": "El bloqueig biomètric està desactivat.",
+"profile_biometric_enable_reason": "Confirmeu la identitat per activar el bloqueig biomètric.",
+"profile_biometric_disable_reason": "Confirmeu la identitat per desactivar el bloqueig biomètric.",
+"profile_account_management_title": "Gestió del compte",
+"profile_account_management_subtitle": "Canvieu el correu, la contrasenya o suprimiu el compte.",
+"profile_premium_active_title": "Premium actiu",
+"profile_premium_upgrade_title": "Actualitza a Premium",
+"profile_premium_active_subtitle": "Recordatoris avançats activats.",
+"profile_premium_upgrade_subtitle": "Desbloqueja recordatoris avançats i organització il·limitada.",
+"profile_manage_cancel_hint": "Gestiona o cancel·la en qualsevol moment a Google Play.",
+"profile_manage_subscription_button": "Gestionar subscripció",
+"plansTitle": "Tria el teu pla",
+"plansTrialBanner": "Comença amb una prova gratuïta de 7 dies.\nCancel·la quan vulguis.",
+"plansLoading": "Carregant…",
+"plansStartFreeTrial": "Inicia la prova",
+"plansNoChargeTodayFooter": "7 dies gratis · Sense càrrec avui",
+
+"planFreeTitle": "Gratuït",
+"planFreeSubtitle": "Per començar",
+"planPremiumMonthlyTitle": "Premium mensual",
+"planPremiumYearlyTitle": "Premium anual",
+"planPerMonth": "al mes",
+"planPerYear": "a l’any",
+
+"planBadgeCurrent": "Pla actual",
+"planBadgePopular": "Popular",
+"planBadgeBestValue": "Millor valor",
+
+"planYouAreOnThisPlan": "Ja estàs en aquest pla.",
+
+"planFeatureUpToRecords": "Fins a {count} registres",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Categories personalitzades (fins a {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Subcategories predefinides",
+"planFeatureCloudStorage": "Emmagatzematge al núvol",
+"planFeatureSmartExpiryInsights": "Anàlisi intel·ligent d’expiració",
+"planFeatureCoverageBalance": "Equilibri de cobertura",
+"planFeatureRecordStabilityTracking": "Estabilitat dels registres",
+
+"planFeatureUnlimitedRecords": "Registres il·limitats",
+"planFeatureUnlimitedCategories": "Categories il·limitades",
+"planFeatureCustomSubcategories": "Subcategories personalitzades",
+"planFeatureMultipleRemindersPerRecord": "Múltiples recordatoris",
+"planFeatureAdvancedReminderTiming": "Temps avançat de recordatori",
+"planFeatureAutomaticFollowUps": "Recordatoris automàtics",
+
+"planFeatureEverythingInMonthly": "Tot el del mensual",
+"planFeatureSavePercentComparedToMonthly": "Estalvia {percent}% respecte al mensual",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Millor valor a llarg termini",
+"editorReminderLabel": "Recordatori",
+"editorReminderSelectOptional": "Seleccioneu un recordatori (opcional)",
+"editorReminderOnExpiry": "A la data de caducitat",
+"editorReminderDaysBefore": "{days} dies abans de caducar",
+"editorFreeItemsCount": "Elements gratuïts: {used}/{limit}",
+"editorExpiryPastWarning": "La data de caducitat ja ha passat.",
+"editorExpiryTodayWarning": "Aquest element caduca avui.",
+"editorErrorExpiryPast": "La data de caducitat no pot ser al passat.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Informació d’avui",
+"tutorialBannerTitle": "Visita ràpida",
+"tutorialBannerBody": "Aprèn a cercar, afegir registres i entendre els insights en menys d’un minut.",
+"tutorialBannerStart": "Inicia el tutorial",
+"tutorialBannerDismiss": "Ara no",
+"authErrorUserDisabled": "Aquest compte ha estat desactivat.",
+"authErrorNetwork": "Error de xarxa. Torna-ho a provar.",
+"authErrorTooManyRequests": "Massa intents. Torna-ho a provar més tard.",
+"authErrorSignInFailed": "L'inici de sessió ha fallat. Torna-ho a provar.",
+"ok": "D'acord",
+"snackPremiumEnabled": "Premium activat",
+"snackPremiumRestored": "Premium restaurat",
+"passwordNeedLower": "Ha de contenir una lletra minúscula",
+"passwordNeedUpper": "Ha de contenir una lletra majúscula",
+"passwordNeedNumber": "Ha de contenir un número",
+"passwordNeedSymbol": "Ha de contenir un símbol",
+"confirmIdentityTitle": "Confirma la identitat",
+"confirm": "Confirma",
+"profile_sign_out_title": "Tanca la sessió",
+"profile_sign_out_subtitle": "Tanca la sessió de Vaultara en aquest dispositiu",
+"profile_sign_out_confirm_title": "Vols tancar la sessió?",
+"profile_sign_out_confirm_body": "Hauràs de tornar a iniciar sessió per accedir al teu compte.",
+"profile_sign_out_action": "Tanca la sessió",
+"todayInsightsAudioHint": "Prefereixes àudio? Utilitza la icona de l'altaveu.",
+"category2Label": "Categoria",
+"enable2BiometricsBody": "Utilitza el reconeixement d'empremta digital per protegir el teu compte Vaultara.",
+"snackNotificationsDisabled": "Les notificacions estan desactivades. Activa-les per rebre recordatoris.",
+"openSettings": "Obre la configuració",
+
+"reminderOnExpiryTitle": "Caduca avui",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hola {firstName}, \"{itemName}\" caduca avui.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Categories gratuïtes: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Mostra quantes categories gratuïtes s'han utilitzat del límit gratuït.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Afegir notes (opcional)",
+"apply": "Aplicar",
+"smartInsightExpiresTodayHeading": "Caduca Avui",
+"smartInsightExpiresTodaySingleBody": "{name} caduca avui. Actua ara per mantenir-lo actualitzat.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} i 1 altre document caduquen avui.} other{{names} i {extra} altres documents caduquen avui.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Requereix La Teva Atenció",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} caduca en 1 dia i no té recordatori. Comprova que els detalls encara siguin correctes.} other{{name} caduca en {days} dies i no té recordatori. Comprova que els detalls encara siguin correctes.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Múltiples Renovacions Properes",
+"smartInsightRenewalTwinBodyTwo": "{a} i {b} caduquen en tres setmanes l'un de l'altre. Planifica amb antelació.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} i {c} tots caduquen en tres setmanes. Planifica amb antelació.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} i 1 altre document caduquen en tres setmanes. Planifica amb antelació.} other{{a}, {b} i {extra} altres documents caduquen en tres setmanes. Planifica amb antelació.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Grup Proper",
+"smartInsightClusterBody": "{count, plural, =1{1 document a {category} caduca en els pròxims dos mesos. Considera gestionar-los junts.} other{{count} documents a {category} caduquen en els pròxims dos mesos. Considera gestionar-los junts.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Període Tranquil Pròxim",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Res no caduca durant el pròxim dia. La teva pròxima renovació és el {firstDate}.} other{Res no caduca durant els pròxims {days} dies. La teva pròxima renovació és el {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Tot Al Dia",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 caducitat pròxima està coberta amb recordatoris. Res més requereix la teva atenció.} other{{count} caducitats pròximes estan cobertes amb recordatoris. Res més requereix la teva atenció.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Tot al dia. Res no requereix la teva atenció ara mateix.",
+"smartInsightNoRecordsHeading": "Afegeix El Teu Primer Registre",
+"smartInsightNoRecordsBody": "Comença a fer seguiment dels teus documents i Vaultara mostrarà aquí informació intel·ligent.",
+"expiryTimelineTitle": "Cronologia de venciments",
+"expiryTimelineSubtitle": "Toca un mes per veure els registres que caduquen aquell mes",
+"expiryTimelineDetailCount": "{count, plural, =1{1 registre} other{{count} registres}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Pròxims",
+"summaryUpcomingCaption": "En 30 dies",
+"summaryUrgentTitle": "Urgent",
+"summaryUrgentCaption": "En 7 dies"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

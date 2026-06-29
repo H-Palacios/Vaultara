@@ -18,20 +18,16 @@
   "in30Days": "Oor 30 dae",
 
   "inDays": "oor {days} dae",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
-  "enterDaysError": "Voer ’n aantal dae in.",
-  "invalidDaysError": "Voer ’n geldige aantal dae in (0 of meer).",
+  "enterDaysError": "Voer ’n aantal dae in",
+  "invalidDaysError": "Voer ’n geldige aantal dae in (0 of meer)",
 
   "showingItemsRelative": "Wys items wat {time} verval",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Wys items wat op die gekose datum verval",
-  "noItemsOnDate": "Geen items verval op hierdie datum nie.",
+  "noItemsOnDate": "Geen items verval op hierdie datum nie",
 
   "editorAddTitle": "Voeg item by",
   "editorEditTitle": "Wysig item",
@@ -61,26 +57,21 @@
   "unlimitedCategories": "Onbeperkte kategorieë (Premium)",
 
   "categoryUsage": "{current} / {limit} kategorieë gebruik",
-  "@categoryUsage": {
-    "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
-    }
-  },
+  "@categoryUsage": { "placeholders": { "current": { "type": "int" }, "limit": { "type": "int" } } },
 
   "categoryNameLabel": "Kategorie naam",
   "categoryNameHint": "Voer kategorie in",
 
-  "categoryLimitReached":
-    "Die basiese planlimiet is bereik. Gradeer op vir onbeperkte kategorieë.",
+  "categoryLimitReached": "Jy het die Basic-planlimiet van {limit} kategorieë bereik",
+  "@categoryLimitReached": { "placeholders": { "limit": { "type": "int" } } },
 
-  "categoryLimitInfo":
-    "Die basiese plan laat tot {limit} pasgemaakte kategorieë toe.",
+  "categoryLimitInfo": "Die Basic-plan laat tot {limit} kategorieë toe",
+  "@categoryLimitInfo": { "placeholders": { "limit": { "type": "int" } } },
 
   "categoryErrorEmpty": "Kategorie naam is vereis",
   "categoryErrorTooShort": "Kategorie naam is te kort",
   "categoryErrorTooLong": "Kategorie naam is te lank",
-  "categoryErrorSymbols": "Kategorie naam kan nie simbole bevat nie",
+  "categoryErrorSymbols": "Kategorie naam kan nie net simbole bevat nie",
   "categoryErrorNumbers": "Kategorie naam kan nie syfers bevat nie",
 
   "upgradeRequired": "Opgradering nodig",
@@ -97,5 +88,780 @@
   "groupErrorSymbols": "Groepnaam kan nie simbole bevat nie",
   "groupErrorNumbers": "Groepnaam kan nie syfers bevat nie",
 
-  "createGroup": "Skep"
+  "createGroup": "Skep",
+
+  "registerTitle": "Skep rekening",
+
+  "firstNameLabel": "Voornaam",
+  "firstNameHint": "Voer voornaam in",
+  "errorFirstName": "Voornaam is vereis",
+
+  "lastNameLabel": "Van",
+  "lastNameHint": "Voer van in",
+  "errorLastName": "Van is vereis",
+
+  "emailLabel": "E-posadres",
+  "errorEmailInvalid": "Voer ’n geldige e-posadres in",
+  "errorEmailInUse": "Hierdie e-posadres is reeds aan\n’n Vaultara-rekening gekoppel",
+
+"registerPasswordHint": "Voer wagwoord in",
+"loginPasswordHint": "Voer jou wagwoord in",
+
+  "passwordLabel": "Wagwoord",
+  "passwordHint": "Voer wagwoord in",
+  "passwordHelper": "Ten minste 8 karakters met gemengde tipes",
+
+  "passwordTooShort": "Te kort",
+  "passwordTooWeak": "Te swak",
+  "passwordMedium": "Medium",
+  "passwordStrong": "Sterk",
+  "errorPasswordLength": "Wagwoord moet minstens agt karakters lank wees",
+  "errorPasswordWeak": "Kies ’n sterker wagwoord",
+
+  "errorGeneric": "Registrasie het misluk. Probeer asseblief weer",
+
+  "createAccount": "Skep rekening",
+
+  "appName": "Vaultara",
+  "authTagline": "Jou persoonlike spilpunt vir paspoorte, lisensies, kaarte en ander belangrike noodsaaklikhede",
+  "tabSignIn": "Teken in",
+  "tabCreateAccount": "Skep rekening",
+  "signInFooterText": "Teken in om toegang tot jou Vaultara-ruimte te kry",
+  "createAccountFooterText": "Skep jou Vaultara-rekening om herinneringe te rugsteun",
+   "emailRequired": "Jou e-posadres is verpligtend",
+  "passwordRequired": "Jou wagwoord is verpligtend",
+  "emailNotFound": "Verkeerde e-pos. Daar is geen\nVaultara-rekening met hierdie e-pos nie",
+  "incorrectPassword": "Verkeerde wagwoord",
+  "emailLabel": "E-posadres",
+  "emailHint": "Voer jou e-pos in",
+  "passwordLabel": "Wagwoord",
+  "signIn": "Teken in",
+   "categoryPersonalIdentification": "Persoonlike Identifikasie",
+  "categoryDrivingAndVehicles": "Bestuur en Voertuie",
+  "categoryTravelAndImmigration": "Reis en Immigrasie",
+  "categoryBankingAndCards": "Bankdienste en Kaarte",
+  "categoryInsuranceAndCover": "Versekering en Dekking",
+  "categoryHealthAndMedical": "Gesondheid en Medies",
+  "categoryWorkAndProfessional": "Werk en Professioneel",
+  "categoryPropertyAndHousing": "Eiendom en Behuising",
+  "categoryHouseholdAndUtilities": "Huishouding en Nutsdienste",
+
+  "subcategoryPassports": "Paspoorte",
+  "subcategoryIdCards": "ID-kaarte",
+  "subcategoryResidencePermits": "Verblyfpermitte",
+
+  "subcategoryDrivingLicences": "Bestuurslisensies",
+  "subcategoryVehicleRegistrations": "Voertuigregistrasies",
+  "subcategoryRoadworthyCertificates": "Padwaardigheidsertifikate",
+  "subcategoryVehicleInspectionCertificates": "Voertuiginspeksiesertifikate",
+
+  "subcategoryVisas": "Visums",
+  "subcategoryStudyPermits": "Studiepermitte",
+  "subcategoryWorkPermits": "Werkpermitte",
+  "subcategoryTravelInsuranceDocuments": "Reisversekeringsdokumente",
+
+  "subcategoryDebitAndCreditCards": "Debiet- en Kredietkaarte",
+  "subcategoryStoreCards": "Winkelkaarte",
+  "subcategoryFuelCards": "Brandstofkaarte",
+
+  "subcategoryVehicleInsurances": "Voertuigversekering",
+  "subcategoryPropertyInsurances": "Eiendomsversekering",
+  "subcategoryLifeInsurances": "Lewensversekering",
+  "subcategoryHealthInsurances": "Gesondheidsversekering",
+  "subcategoryTravelInsurances": "Reisversekering",
+
+  "subcategoryMedicalPrescriptions": "Mediese Voorskrifte",
+  "subcategoryOpticalPrescriptions": "Optiese Voorskrifte",
+  "subcategoryMedicalCertificates": "Mediese Sertifikate",
+
+  "subcategoryProfessionalLicences": "Professionele Lisensies",
+  "subcategoryProfessionalRegistrations": "Professionele Registrasies",
+  "subcategoryIndustryRegistrations": "Bedryfsregistrasies",
+  "subcategoryWorkAccessCards": "Werktoegangkaarte",
+
+  "subcategoryLeaseAgreements": "Huurooreenkomste",
+  "subcategoryAccessCardsAndTags": "Toegangkaarte en -etikette",
+  "subcategoryParkingPermits": "Parkeerpermitte",
+  "subcategorySecurityAccessPermits": "Sekuriteitstoegangspermitte",
+
+  "subcategoryElectricityAccounts": "Elektrisiteitsrekeninge",
+  "subcategoryWaterAccounts": "Waterrekeninge",
+  "subcategoryInternetContracts": "Internetkontrakte",
+  "subcategorySecurityServiceContracts": "Sekuriteitsdienskontrakte",
+  "searchCategories": "Soek kategorieë",
+  "filterAll": "Alles",
+  "filterPreset": "Vooraf",
+  "filterCustom": "Pasgemaak",
+  "addCategoryTitle": "Voeg kategorie by",
+  "customLabel": "Pasgemaak",
+  "subcategoriesLabel": "subkategorieë",
+  "itemsLabel": "items",
+  "itemsExpiring": "{count} items verval binne {days} dae",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Vasgespelde noodsaaklikhede",
+  "pinnedHint": "Speld die kategorieë wat jy die meeste gebruik vas sodat hulle bo bly.",
+  "noCategoriesFound": "Geen kategorieë gevind nie",
+  "searchGroups": "Soek groepe",
+  "addGroupTitle": "Voeg groep by",
+  "basicPlanGroupInfo": "Jy is op die Basiese plan.\nJy kan vooraf ingestelde groepe onder hierdie kategorie sien.\nGradeer op na Premium om jou eie groepe te skep.",
+  "groupDeleted": "Groep verwyder",
+  "undo": "ONTDOEN",
+  "groupStats": "{items} items • {expiring} verval binne {days} dae",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tik om items in hierdie groep by te voeg en op te spoor.",
+  "itemsInGroup": "Items in hierdie groep",
+  "itemsInGroupHint": "Hou elke belangrike item dop met sy vervaldatum sodat jy dit betyds kan hernu.",
+  "searchItems": "Soek items",
+  "filterAll": "Alles",
+  "filterExpiringWithin": "Verval binne {days} dae",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Verval",
+  "addItem": "Voeg item by",
+  "noItemsYet": "Nog geen items nie.",
+
+  "statusExpired": "Verval",
+  "statusExpiresToday": "Verval vandag",
+  "statusExpiresInOneDay": "Verval oor 1 dag",
+  "statusExpiresInDays": "Verval oor {days} dae",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Geldig",
+
+  "deleteCategoryTitle": "Verwyder kategorie",
+  "deleteCategoryMessage": "Is jy seker jy wil die kategorie \"{name}\" verwyder?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Verwyder groep",
+  "deleteGroupMessage": "Is jy seker jy wil die groep \"{name}\" verwyder?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Verwyder item",
+  "deleteItemMessage": "Is jy seker jy wil \"{name}\" verwyder?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Kanselleer",
+  "delete": "Verwyder",
+    "homeWelcomeTitle": "Welkom",
+
+  "homeWelcomeFirstTitle": "Welkom, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Welkom terug, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara help jou om belangrike vervaldatums dop te hou sodat niks ongemerk verbygaan nie.",
+
+  "homeWelcomeSubtitleFirst":
+    "Dis goed om jou hier te hê. Vaultara help jou om georganiseerd te bly deur belangrike datums en rekords op een veilige plek te hou.",
+
+  "homeWelcomeSubtitleBack":
+    "Dis goed om jou weer te sien. Vaultara is hier wanneer jy jou belangrike datums en rekords wil hersien.",
+    "insightEmptyTitle": "Nog geen items nie",
+  "insightEmptyBody": "Sodra jy belangrike datums begin byvoeg, sal Vaultara jou help om vervaldatums voor te bly.",
+
+  "insightExpiresTodayTitle": "\"{name}\" verval vandag",
+  "insightExpiresTodayBody": "’n Vinnige kyk nou kan help om alles op datum te hou.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" verval môre",
+  "insightExpiresTomorrowBody": "Dit kan nuttig wees om dit vandag reeds te hersien.",
+
+  "insightExpiresSoonTitle": "\"{name}\" verval op {date}",
+  "insightExpiresSoonBody": "Om dit vroeg te hanteer kan die week meer ontspanne laat voel.",
+
+  "insightNextExpiryTitle": "Volgende vervaldatum: \"{name}\" op {date}",
+  "insightNextExpiryBody": "Daar is geen dringende aksie nodig nie, maar dit is goed om dit in gedagte te hou.",
+
+  "insightClusteredTitle": "Verskeie items verval in {month}",
+  "insightClusteredBody": "Om hulle saam te hersien kan tyd bespaar en toekomstige herinnerings verminder.",
+
+  "insightTopCategoryTitle": "Meeste items is onder {category}",
+  "insightTopCategoryBody": "Om hierdie afdeling te hersien gee jou die grootste impak.",
+
+  "insightStableTitle": "Alles lyk stabiel",
+  "insightStableBody": "Daar is tans geen vervaldatums wat aandag verg nie.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Alle items",
+"summaryAllCaption": "Gekeur in Vaultara",
+"summarySoonTitle": "Verval binnekort",
+"summarySoonCaption": "Binne 30 dae",
+"summaryWeekTitle": "Hierdie week",
+"summaryWeekCaption": "Verval binne 7 dae",
+"summaryExpiredTitle": "Verval",
+"summaryExpiredCaption": "Verby vervaldatum",
+"stabilityStableTitle": "Alles lyk stabiel",
+"stabilityStableBody": "Jou rekords toon geen onmiddellike of ophopende risiko’s nie.",
+
+"stabilityDecliningTitle": "Stabiliteit neem af",
+"stabilityDecliningBody": "Sommige items het reeds verval, en meer verval binnekort.",
+
+"stabilityWeakenedTitle": "Stabiliteit verswak",
+"stabilityWeakenedBody": "Vervalde rekords is teenwoordig en verminder algehele betroubaarheid.",
+
+"stabilityPressureTitle": "Druk neem toe",
+"stabilityPressureBody": "Verskeie rekords sal binnekort aandag verg om stabiliteit te behou.",
+"editorNotes": "Notas",
+"notesHint": "Voer notas in",
+"editorReminderTitle": "Herinnering",
+"editorReminderNone": "Geen herinnering",
+"editorReminderOnExpiry": "Op vervaldatum",
+"editorReminder7Days": "7 dae voor vervaldatum",
+"editorReminder30Days": "30 dae voor vervaldatum",
+"editorReminderCustom": "Pasgemaak",
+"daysBeforeExpiry": "dae voor vervaldatum",
+"reminderStage0Title": "Vervalherinnering",
+"reminderStage0Body": "{firstName}, jou {itemName} verval oor {days} dae.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Opvolgherinnering",
+"reminderStage1Body": "{firstName}, jou {itemName} is nog nie opgedateer nie.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Vervaldatum nader",
+"reminderStage2Body": "Die vervaldatum van {itemName} kom al hoe nader.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Finale herinnering",
+"reminderFinalBody": "{firstName}, werk asseblief {itemName} nou op.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+  
+},
+"coverageBalanceTitle": "Dekkingsbalans",
+"coverageAllRepresented": "Jou rekords bevat items in alle kategorieë.",
+"coverageMissingNamed": "Geen rekords gevind in {count} kategorieë: {names}.",
+"coverageMissingSummary": "Jy het geen rekords by {count} kategorieë gevoeg nie, insluitend {names} en nog {remaining} ander.",
+
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Gebruik wagwoord eerder",
+"signInWithBiometrics": "Meld aan met biometrie",
+"enableBiometricsTitle": "Aktiveer biometriese sekuriteit",
+"enableBiometricsBody": "Gebruik vingerafdruk of gesigsherkenning om Vaultara te beskerm.",
+"enableBiometricsReason": "Aktiveer biometriese ontgrendeling vir Vaultara.",
+"notNow": "Nie nou nie",
+"useBiometrics": "Gebruik biometrie",
+ "recordsCalendarIntro":
+    "Kies hoe jy jou vervaldatums wil verken:\n\n• Tik hoeveel dae van vandag af jy vooruit wil kyk.\n• Of kies ’n spesifieke datum op die kalender.\n\nVaultara sal wys watter rekords hul vervaldatum op daardie dag bereik.",
+
+  "showingRecordsRelative": "Wys rekords wat oor {time} verval",
+  "@showingRecordsRelative": { "placeholders": { "time": { "type": "String" } } },
+
+  "showingRecordsExact": "Wys rekords wat op die gekose datum verval",
+  "noRecordsOnDate": "Geen rekords is ingestel om op daardie dag te verval nie.",
+
+  "recordEditorAddTitle": "Voeg rekord by",
+  "recordEditorEditTitle": "Wysig rekord",
+
+  "editorRecordName": "Rekordnaam",
+  "editorRecordNameHint": "Voer rekordnaam in",
+  "recordEditorErrorName": "Rekordnaam is verpligtend",
+  "@recordsExpiring": {
+    "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+  },
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupTapHint": "Tik om rekords in hierdie groep by te voeg en te volg.",
+
+  "recordsInGroup": "Rekords in hierdie groep",
+  "recordsInGroupHint":
+    "Volg elke belangrike rekord met sy vervaldatum sodat jy dit betyds kan hernu.",
+
+  "searchRecords": "Soek rekords",
+  "addRecord": "Voeg rekord by",
+  "noRecordsYet": "Nog geen rekords nie.",
+
+  "deleteRecordTitle": "Skrap rekord",
+
+  "recordsInsightClusteredTitle":
+    "Verskeie rekords verval rondom {month}",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "recordsInsightTopCategoryTitle":
+    "Die meeste van jou rekords is onder {category} gegroepeer",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "summaryAllRecordsTitle": "Alle rekords",
+
+  "recordsStabilityDecliningBody":
+    "Sommige rekords het reeds verval en meer sal binnekort verval.",
+
+  "recordsCoverageAllRepresented":
+    "Jou rekords sluit rekords oor alle kategorieë in.",
+
+  "recordReminderStage0Body":
+    "{firstName}, jou {recordName} verval oor {days} dae.",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body":
+    "{firstName}, jou {recordName} is nog nie opgedateer nie.",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body":
+    "Die vervaldatum vir {recordName} kom al hoe nader.",
+  "@recordReminderStage2Body": {
+    "placeholders": { "recordName": { "type": "String" } }
+  },
+
+  "recordReminderFinalBody":
+    "{firstName}, werk asseblief nou {recordName} by.",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+  "noGroupFound": "Nog geen groepe nie",
+"recordsExpiring": "{count, plural, one {1 rekord wat oor {days} dae verval} other {{count} rekords wat oor {days} dae verval}}",
+"recordsGroupStats": "{records, plural, one {1 rekord} other {{records} rekords}} • {expiring} verval binne {days} dae",
+"groupLabel": "{count, plural, one {{count} groep} other {{count} groepe}}",
+"recordsLabel": "{count, plural, one {{count} rekord} other {{count} rekords}}",
+"forgotPassword": "Wagwoord vergeet?",
+  "forgotPasswordTitle": "Stel wagwoord terug",
+  "forgotPasswordBody": "Voer jou e-posadres in en ons stuur vir jou ’n skakel om jou wagwoord terug te stel.",
+  "sendResetLink": "Stuur herstelskakel",
+  "passwordResetEmailSent": "’n Wagwoordherstelskakel is na jou e-pos gestuur.",
+  "verifyEmailToContinue": "Bevestig asseblief jou e-posadres voordat jy aanmeld",
+  "changeEmailTitle": "Verander e-posadres",
+"newEmailHint": "Voer jou nuwe e-pos in",
+"sendVerificationEmail": "Stuur verifikasie-e-pos",
+"deleteAccountTitle": "Vee rekening uit",
+"deleteAccountWarning": "Hierdie aksie sal jou rekening en alle gestoorde data permanent verwyder.\nDit kan nie ongedaan gemaak word nie.",
+"deleteAccountConfirm": "Vee rekening permanent uit",
+"supportTitle": "Ondersteuning",
+"supportSubtitle": "Kontak ons as jy hulp nodig het of vrae het.",
+"supportEmailSubject": "Vaultara Ondersteuningsversoek",
+"supportEmailError": "Kan nie e-posprogram oopmaak nie.",
+"passwordResetEmailFailed": "Kon nie wagwoordherstel-e-pos stuur nie.",
+"loggedInPasswordResetBody": "Ons sal 'n wagwoordherstel-skakel stuur na:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Rekeningbestuur",
+  "changeEmailTitle": "Verander e-posadres",
+  "changeEmailSubtitle": "Werk die e-pos wat aan jou rekening gekoppel is op.",
+  "changePasswordTitle": "Verander wagwoord",
+  "changePasswordSubtitle": "Ons sal vir jou ’n skakel e-pos om jou wagwoord veilig te verander.",
+  "deleteAccountSubtitle": "Verwyder jou Vaultara-rekening permanent.",
+  "biometricAuthReason": "Verifieer om toegang tot jou Vaultara-rekening te kry",
+  "verifyEmailTitle": "Verifieer jou e-pos",
+"verifyEmailBody": "Ons het ’n verifikasie-e-pos na jou inkassie gestuur. Maak dit oop en bevestig jou e-posadres. Kom daarna hierheen terug om voort te gaan.",
+"verifyEmailConfirmedButton": "Ek het my e-pos geverifieer",
+"verifyEmailResendButton": "Stuur verifikasie-e-pos weer",
+"verifyEmailSending": "Stuur tans...",
+"navHome": "Tuis",
+"navCategories": "Kategorieë",
+"navInsights": "Insigte",
+"navCalendar": "Kalender",
+"tutorialHomeSearch": "Gebruik die soekbalk om vinnig enige rekord te vind wat jy volg.",
+"tutorialHomeFab": "Voeg jou eerste rekord hier by.\nKies waar dit hoort, voeg opsionele notas by en kies 'n vervaldatum.",
+"tutorialHomeSummary": "Soos jy meer rekords byvoeg, help hierdie afdeling jou om items te sien wat binnekort verval of reeds verval het.",
+"tutorialHomeInsight": "Hierdie slim insig beklemtoon patrone en komende vervaldatums.\nJy kan die luidsprekerikoon tik om dit hardop te hoor.",
+"tutorialHomeCoverage": "Dekkingsbalans wys hoe eweredig jou rekords oor alle kategorieë versprei is.\n'n Hoër balans dui op minder gapings.",
+"tutorialHomeStability": "Stabiliteit wys hoe betroubaar jou rekords oor tyd is.\nVerval items en komende vervaldatums kan stabiliteit verminder.",
+"tutorialCancel": "Kanselleer",
+"tutorialNext": "Volgende",
+"tutorialEnd": "Beëindig tutoriaal",
+"softDeleteCategory": "Kategorie",
+"softDeleteGroup": "Groep",
+"softDeleteRecord": "Rekord",
+"softDeleteTitle": "Skuif {type} na Onlangs verwyder",
+"softDeleteMessage": "Die {type} \"{name}\" sal na Onlangs verwyder geskuif word.\n\nJy kan dit binne 30 dae herstel. Daarna sal dit permanent verwyder word.",
+"softDeleteMove": "Skuif",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Onlangs verwyder",
+  "categories": "Kategorieë",
+  "groups": "Groepe",
+  "records": "Rekords",
+  "restore": "Herstel",
+  "deletePermanently": "Verwyder permanent",
+
+  "recentlyDeletedBanner": "Verwyderde {type} word hier vir 30 dae gehou. Daarna word dit permanent verwyder en kan dit nie herstel word nie.",
+  "@recentlyDeletedBanner": {
+    "description": "Information banner for deleted items retention",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+
+  "searchDeletedHint": "Soek verwyderde {type}",
+  "@searchDeletedHint": {
+    "description": "Search hint for deleted items",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+
+  "noDeletedItems": "Geen verwyderde {type} nog nie",
+  "@noDeletedItems": {
+    "description": "Empty state message for deleted items",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "categoriesHint": "Tik op ’n kategorie om sy groepe te sien en jou rekords te bestuur.",
+ "groupsHint": "Groepe organiseer jou rekords binne hierdie kategorie. Tik op ’n groep om sy rekords te bestuur.",
+ "notLoggedIn": "Nie aangemeld nie",
+"recordsInsideGroupHint": "Dit is die rekords binne hierdie groep.",
+"snackMovedToRecentlyDeleted": "\"{name}\" geskuif na Onlangs uitgevee",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" suksesvol uitgevee",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" suksesvol opgedateer",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" suksesvol bygevoeg",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" suksesvol herstel",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Gratis limiet bereik ({current}/{limit}). Gradeer op om meer by te voeg.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3" },
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Soek deur alle rekords",
+"globalSearchHint": "Tik rekordnaam, kategorie of groep",
+"globalSearchNoMatches": "Geen rekords pas by jou soektog nie.",
+"snackNoRecordsToSearch": "Daar is geen rekords om te deursoek nie. Voeg ’n paar rekords by en Vaultara sal hulle outomaties indekseer.",
+"recoveryCentreTitle": "Herstel-sentrum",
+"recoveryCentreSubtitle": "Herstel of verwyder verwyderde rekords permanent.",
+
+  "plan_premium": "Premium",
+  "plan_free": "Gratis",
+
+  "profile_app_settings_title": "Toepassingsinstellings",
+
+  "profile_privacy_security_title": "Privaatheid en sekuriteit",
+  "profile_biometric_on": "Biometriese sluit is op hierdie toestel geaktiveer.",
+  "profile_biometric_off": "Biometriese sluit is gedeaktiveer.",
+
+  "profile_biometric_enable_reason": "Bevestig jou identiteit om biometriese sluit te aktiveer.",
+  "profile_biometric_disable_reason": "Bevestig jou identiteit om biometriese sluit te deaktiveer.",
+
+  "profile_account_management_title": "Rekeningbestuur",
+  "profile_account_management_subtitle": "Verander e-pos, wagwoord of verwyder jou rekening.",
+
+  "profile_premium_active_title": "Premium is aktief",
+  "profile_premium_upgrade_title": "Gradeer op na Premium",
+  "profile_premium_active_subtitle": "Gevorderde herinneringe ontsluit.",
+  "profile_premium_upgrade_subtitle": "Ontsluit gevorderde herinneringe en onbeperkte organisasie.",
+
+  "profile_manage_cancel_hint": "Bestuur of kanselleer enige tyd in Google Play.",
+  "profile_manage_subscription_button": "Bestuur intekening",
+  "plansTitle": "Kies jou plan",
+"plansTrialBanner": "Begin met ’n 7-dae gratis proef.\nKanselleer enige tyd.",
+"plansLoading": "Laai…",
+"plansStartFreeTrial": "Begin gratis proef",
+"plansNoChargeTodayFooter": "7-dae gratis proef · Geen koste vandag",
+
+"planFreeTitle": "Gratis",
+"planFreeSubtitle": "Om te begin",
+"planPremiumMonthlyTitle": "Premium Maandeliks",
+"planPremiumYearlyTitle": "Premium Jaarliks",
+"planPerMonth": "per maand",
+"planPerYear": "per jaar",
+
+"planBadgeCurrent": "Huidige plan",
+"planBadgePopular": "Gewild",
+"planBadgeBestValue": "Beste waarde",
+
+"planYouAreOnThisPlan": "Jy is reeds op hierdie plan.",
+
+"planFeatureUpToRecords": "Tot {count} rekords",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Pasgemaakte kategorieë (tot {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Vooraf subkategorieë",
+"planFeatureCloudStorage": "Wolkberging",
+"planFeatureSmartExpiryInsights": "Slim verval-insigte",
+"planFeatureCoverageBalance": "Dekking-balans",
+"planFeatureRecordStabilityTracking": "Rekord-stabiliteit",
+
+"planFeatureUnlimitedRecords": "Onbeperkte rekords",
+"planFeatureUnlimitedCategories": "Onbeperkte kategorieë",
+"planFeatureCustomSubcategories": "Pasgemaakte subkategorieë",
+"planFeatureMultipleRemindersPerRecord": "Veelvuldige herinnerings per rekord",
+"planFeatureAdvancedReminderTiming": "Gevorderde herinnering-tyding",
+"planFeatureAutomaticFollowUps": "Outomatiese opvolg-herinnerings",
+
+"planFeatureEverythingInMonthly": "Alles in Maandeliks",
+"planFeatureSavePercentComparedToMonthly": "Bespaar {percent}% teenoor maandeliks",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+"planFeatureBestLongTermValue": "Beste langtermynwaarde",
+"editorReminderLabel": "Herinnering",
+"editorReminderSelectOptional": "Kies ’n herinnering (opsioneel)",
+"editorReminderOnExpiry": "Op vervaldatum",
+"editorReminderDaysBefore": "{days} dae voor verval",
+"editorFreeItemsCount": "Gratis items: {used}/{limit}",
+"editorExpiryPastWarning": "Die vervaldatum is reeds verby.",
+"editorExpiryTodayWarning": "Hierdie item verval vandag.",
+"editorErrorExpiryPast": "Vervaldatum mag nie in die verlede wees nie.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Vandag se insigte",
+"tutorialBannerTitle": "Vinnige toer",
+"tutorialBannerBody": "Leer waar om te soek, hoe om rekords by te voeg en wat insigte beteken in minder as ’n minuut.",
+"tutorialBannerStart": "Begin tutoriaal",
+"tutorialBannerDismiss": "Nie nou nie",
+"authErrorUserDisabled": "Hierdie rekening is gedeaktiveer.",
+"authErrorNetwork": "Netwerkfout. Gaan jou internet na en probeer weer.",
+"authErrorTooManyRequests": "Te veel pogings. Probeer later weer.",
+"authErrorSignInFailed": "Aanmelding het misluk. Probeer asseblief weer.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium is geaktiveer",
+"snackPremiumRestored": "Premium is herstel",
+"passwordNeedLower": "Moet 'n kleinletter bevat",
+"passwordNeedUpper": "Moet 'n hoofletter bevat",
+"passwordNeedNumber": "Moet 'n nommer bevat",
+"passwordNeedSymbol": "Moet 'n simbool bevat",
+"confirmIdentityTitle": "Bevestig identiteit",
+"confirm": "Bevestig",
+"profile_sign_out_title": "Meld af",
+"profile_sign_out_subtitle": "Meld af by Vaultara op hierdie toestel",
+"profile_sign_out_confirm_title": "Meld af?",
+"profile_sign_out_confirm_body": "Jy sal weer moet aanmeld om jou rekening te gebruik.",
+"profile_sign_out_action": "Meld af",
+"todayInsightsAudioHint": "Verkies jy klank? Gebruik die luidspreker-ikoon.",
+"category2Label": "Kategorie",
+"enable2BiometricsBody": "Gebruik vingerafdrukherkenning om jou Vaultara-rekening te beskerm.",
+"snackNotificationsDisabled": "Kennisgewings is gedeaktiveer. Skakel dit aan om herinneringe te ontvang.",
+"openSettings": "Maak instellings oop",
+
+"reminderOnExpiryTitle": "Verval vandag",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hallo {firstName}, \"{itemName}\" verval vandag.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Gratis kategorieë: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Wys hoeveel gratis kategorieë gebruik is uit die gratis limiet.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Voeg notas by (opsioneel)",
+"apply": "Pas toe",
+"smartInsightExpiresTodayHeading": "Verstryk Vandag",
+"smartInsightExpiresTodaySingleBody": "{name} verstryk vandag. Tree nou op om dit op datum te hou.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} en 1 ander dokument verstryk vandag.} other{{names} en {extra} ander dokumente verstryk vandag.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Vereis Jou Aandag",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} verstryk oor 1 dag en het geen herinnering nie. Maak seker die besonderhede is steeds korrek.} other{{name} verstryk oor {days} dae en het geen herinnering nie. Maak seker die besonderhede is steeds korrek.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Veelvuldige Hernuwings Naby Mekaar",
+"smartInsightRenewalTwinBodyTwo": "{a} en {b} verstryk binne drie weke van mekaar. Beplan vooruit.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, en {c} verstryk almal binne drie weke. Beplan vooruit.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, en 1 ander dokument verstryk binne drie weke. Beplan vooruit.} other{{a}, {b}, en {extra} ander dokumente verstryk binne drie weke. Beplan vooruit.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Komende Groep",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument in {category} verstryk binne die volgende twee maande. Oorweeg om dit saam te hanteer.} other{{count} dokumente in {category} verstryk binne die volgende twee maande. Oorweeg om hulle saam te hanteer.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Stil Tydperk Voor",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Niks verstryk vir die volgende dag nie. Jou volgende hernuwing is op {firstDate}.} other{Niks verstryk vir die volgende {days} dae nie. Jou volgende hernuwing is op {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Alles Op Datum",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 komende verstryking word deur herinneringe gedek. Niks anders benodig jou aandag nie.} other{{count} komende verstrykings word deur herinneringe gedek. Niks anders benodig jou aandag nie.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Alles op datum. Niks benodig jou aandag op die oomblik nie.",
+"smartInsightNoRecordsHeading": "Voeg Jou Eerste Rekord By",
+"smartInsightNoRecordsBody": "Begin om jou dokumente te volg en Vaultara sal slim insigte hier vertoon.",
+"expiryTimelineTitle": "Verstryktydlyn",
+"expiryTimelineSubtitle": "Tik 'n maand om die rekords wat in daardie maand verstryk te sien",
+"expiryTimelineDetailCount": "{count, plural, =1{1 rekord} other{{count} rekords}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Kom Binnekort",
+"summaryUpcomingCaption": "Binne 30 dae",
+"summaryUrgentTitle": "Dringend",
+"summaryUrgentCaption": "Binne 7 dae"
+
+
+
+
+
+
+
+
 }

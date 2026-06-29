@@ -22,8 +22,8 @@
     "placeholders": { "days": { "type": "int" } }
   },
 
-  "enterDaysError": "Saisir un nombre de jours.",
-  "invalidDaysError": "Saisir un nombre valide de jours (0 ou plus).",
+  "enterDaysError": "Saisir un nombre de jours",
+  "invalidDaysError": "Saisir un nombre valide de jours (0 ou plus)",
 
   "showingItemsRelative": "Éléments expirant {time}",
   "@showingItemsRelative": {
@@ -31,7 +31,7 @@
   },
 
   "showingItemsExact": "Éléments expirant à la date sélectionnée",
-  "noItemsOnDate": "Aucun élément n’expire à cette date.",
+  "noItemsOnDate": "Aucun élément n’expire à cette date",
 
   "editorAddTitle": "Ajouter un élément",
   "editorEditTitle": "Modifier l’élément",
@@ -43,7 +43,7 @@
   "editorGroupHint": "Sélectionner un groupe",
 
   "editorItemName": "Nom de l’élément",
-  "editorItemNameHint": "Entrer le nom de l’élément",
+  "editorItemNameHint": "Saisir le nom de l’élément",
 
   "editorExpiryDate": "Date d’expiration",
   "editorExpiryDateHint": "Sélectionner la date d’expiration",
@@ -72,10 +72,13 @@
   "categoryNameHint": "Entrer une catégorie",
 
   "categoryLimitReached":
-    "La limite du plan Basique est atteinte. Passez à Premium pour créer des catégories illimitées.",
+    "La limite du plan Basique est atteinte",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
 
   "categoryLimitInfo":
-    "Le plan Basique permet de créer jusqu’à {limit} catégories personnalisées.",
+    "Le plan Basique permet de créer jusqu’à {limit} catégories personnalisées",
 
   "categoryErrorEmpty": "Le nom de la catégorie est requis",
   "categoryErrorTooShort": "Le nom de la catégorie est trop court",
@@ -89,7 +92,7 @@
 
   "addGroupTitle": "Ajouter un groupe",
   "groupNameLabel": "Groupe",
-  "groupNameHint": "Entrer un groupe",
+  "groupNameHint": "Saisir un groupe",
 
   "groupErrorEmpty": "Le nom du groupe est requis",
   "groupErrorTooShort": "Le nom du groupe est trop court",
@@ -97,5 +100,820 @@
   "groupErrorSymbols": "Le nom du groupe ne peut pas contenir de symboles",
   "groupErrorNumbers": "Le nom du groupe ne peut pas contenir de chiffres",
 
-  "createGroup": "Créer"
+  "createGroup": "Créer",
+
+  "registerTitle": "Créer un compte",
+
+  "firstNameLabel": "Prénom",
+  "firstNameHint": "Saisir votre prénom",
+  "errorFirstName": "Le prénom est requis",
+
+  "lastNameLabel": "Nom",
+  "lastNameHint": "Saisir votre nom",
+  "errorLastName": "Le nom est requis",
+
+  "emailLabel": "Adresse e-mail",
+  "errorEmailInvalid": "Entrez une adresse e-mail valide",
+  "errorEmailInUse":
+    "Cette adresse e-mail est déjà liée à un compte Vaultara",
+
+  "passwordLabel": "Mot de passe",
+  "passwordHelper": "Au moins 8 caractères avec différents types",
+
+  "passwordTooShort": "Trop court",
+  "passwordTooWeak": "Faible",
+  "passwordMedium": "Moyen",
+  "passwordStrong": "Fort",
+"emailRequired": "Votre adresse e-mail est requise",
+"passwordRequired": "Votre mot de passe est requis",
+"registerPasswordHint": "Saisir le mot de passe",
+"loginPasswordHint": "Saisir votre mot de passe",
+"emailHint": "Saisir votre adresse e-mail",
+  "errorPasswordLength": "Le mot de passe doit contenir au moins 8 caractères",
+  "errorPasswordWeak": "Veuillez choisir un mot de passe plus sécurisé",
+
+  "errorGeneric": "L’inscription a échoué Veuillez réessayer",
+
+  "createAccount": "Créer un compte",
+
+  "appName": "Vaultara",
+  "authTagline":
+    "Votre centre personnel pour passeports permis cartes et autres éléments essentiels",
+  "tabSignIn": "Se connecter",
+  "tabCreateAccount": "Créer un compte",
+  "signInFooterText":
+    "Connectez-vous pour accéder à votre espace Vaultara personnel et garder chaque renouvellement sous contrôle",
+  "createAccountFooterText":
+    "Créez votre compte Vaultara pour sauvegarder vos rappels essentiels et y accéder à tout moment",
+  "emailNotFound": "E-mail incorrect.\nAucun compte Vaultara avec cet e-mail",
+  "incorrectPassword": "Mot de passe incorrect",
+  "emailLabel": "Adresse e-mail",
+  "passwordLabel": "Mot de passe",
+  "signIn": "Se connecter",
+   "categoryPersonalIdentification": "Identification personnelle",
+  "categoryDrivingAndVehicles": "Conduite et véhicules",
+  "categoryTravelAndImmigration": "Voyages et immigration",
+  "categoryBankingAndCards": "Banque et cartes",
+  "categoryInsuranceAndCover": "Assurance et couverture",
+  "categoryHealthAndMedical": "Santé et médecine",
+  "categoryWorkAndProfessional": "Travail et professionnel",
+  "categoryPropertyAndHousing": "Propriété et logement",
+  "categoryHouseholdAndUtilities": "Foyer et services",
+
+  "subcategoryPassports": "Passeports",
+  "subcategoryIdCards": "Cartes d’identité",
+  "subcategoryResidencePermits": "Permis de séjour",
+
+  "subcategoryDrivingLicences": "Permis de conduire",
+  "subcategoryVehicleRegistrations": "Immatriculations de véhicules",
+  "subcategoryRoadworthyCertificates": "Certificats de conformité",
+  "subcategoryVehicleInspectionCertificates": "Certificats de contrôle technique",
+
+  "subcategoryVisas": "Visas",
+  "subcategoryStudyPermits": "Permis d’études",
+  "subcategoryWorkPermits": "Permis de travail",
+  "subcategoryTravelInsuranceDocuments": "Documents d’assurance voyage",
+
+  "subcategoryDebitAndCreditCards": "Cartes de débit et de crédit",
+  "subcategoryStoreCards": "Cartes de magasin",
+  "subcategoryFuelCards": "Cartes carburant",
+
+  "subcategoryVehicleInsurances": "Assurances véhicules",
+  "subcategoryPropertyInsurances": "Assurances habitation",
+  "subcategoryLifeInsurances": "Assurances vie",
+  "subcategoryHealthInsurances": "Assurances santé",
+  "subcategoryTravelInsurances": "Assurances voyage",
+
+  "subcategoryMedicalPrescriptions": "Ordonnances médicales",
+  "subcategoryOpticalPrescriptions": "Ordonnances optiques",
+  "subcategoryMedicalCertificates": "Certificats médicaux",
+
+  "subcategoryProfessionalLicences": "Licences professionnelles",
+  "subcategoryProfessionalRegistrations": "Inscriptions professionnelles",
+  "subcategoryIndustryRegistrations": "Inscriptions industrielles",
+  "subcategoryWorkAccessCards": "Cartes d’accès professionnelles",
+
+  "subcategoryLeaseAgreements": "Contrats de location",
+  "subcategoryAccessCardsAndTags": "Cartes et badges d’accès",
+  "subcategoryParkingPermits": "Permis de stationnement",
+  "subcategorySecurityAccessPermits": "Permis d’accès de sécurité",
+
+  "subcategoryElectricityAccounts": "Comptes d’électricité",
+  "subcategoryWaterAccounts": "Comptes d’eau",
+  "subcategoryInternetContracts": "Contrats internet",
+  "subcategorySecurityServiceContracts": "Contrats de services de sécurité",
+  "searchCategories": "Rechercher des catégories",
+  "filterAll": "Toutes",
+  "filterPreset": "Prédéfinies",
+  "filterCustom": "Personnalisées",
+  "addCategoryTitle": "Ajouter une catégorie",
+  "customLabel": "Personnalisée",
+  "subcategoriesLabel": "sous-catégories",
+  "itemsLabel": "éléments",
+  "itemsExpiring": "{count} éléments expirent dans {days} jours",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Éléments épinglés",
+  "pinnedHint": "Épinglez les catégories que vous ouvrez le plus afin qu’elles restent en haut.",
+  "noCategoriesFound": "Aucune catégorie trouvée",
+  
+  "searchGroups": "Rechercher des groupes",
+  "addGroupTitle": "Ajouter un groupe",
+  "basicPlanGroupInfo": "Vous utilisez le plan Basic.\nVous pouvez consulter les groupes prédéfinis de cette catégorie.\nPassez à Premium pour créer vos propres groupes.",
+  "groupDeleted": "Groupe supprimé",
+  "undo": "ANNULER",
+  "groupStats": "{items} éléments • {expiring} expirent dans {days} jours",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Appuyez pour ajouter et suivre des éléments dans ce groupe.",
+  "itemsInGroup": "Éléments de ce groupe",
+  "itemsInGroupHint": "Suivez chaque élément important avec sa date d’expiration afin de le renouveler à temps.",
+  "searchItems": "Rechercher des éléments",
+  "filterAll": "Tous",
+  "filterExpiringWithin": "Expire dans {days} jours",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Expirés",
+  "addItem": "Ajouter un élément",
+  "noItemsYet": "Aucun élément pour le moment.",
+
+  "statusExpired": "Expiré",
+  "statusExpiresToday": "Expire aujourd’hui",
+  "statusExpiresInOneDay": "Expire dans 1 jour",
+  "statusExpiresInDays": "Expire dans {days} jours",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Valide",
+
+  "deleteCategoryTitle": "Supprimer la catégorie",
+  "deleteCategoryMessage": "Voulez-vous vraiment supprimer la catégorie \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Supprimer le groupe",
+  "deleteGroupMessage": "Voulez-vous vraiment supprimer le groupe \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Supprimer l’élément",
+  "deleteItemMessage": "Voulez-vous vraiment supprimer \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "homeWelcomeTitle": "Bienvenue",
+
+  "homeWelcomeFirstTitle": "Bienvenue, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Bon retour, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara vous aide à suivre les dates d’expiration importantes afin que rien ne passe inaperçu.",
+
+  "homeWelcomeSubtitleFirst":
+    "Ravi de vous accueillir. Vaultara vous aide à rester organisé en conservant vos dates et enregistrements importants en un seul endroit sécurisé.",
+
+  "homeWelcomeSubtitleBack":
+    "Heureux de vous revoir. Vaultara est là chaque fois que vous souhaitez consulter vos dates et enregistrements importants.",
+      "insightEmptyTitle": "Rien n’a encore été ajouté",
+  "insightEmptyBody": "Lorsque vous commencerez à suivre des dates importantes, Vaultara vous aidera à anticiper les expirations.",
+
+  "insightExpiresTodayTitle": "\"{name}\" expire aujourd’hui",
+  "insightExpiresTodayBody": "Un rapide contrôle permet de garder les informations à jour.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" expire demain",
+  "insightExpiresTomorrowBody": "Le vérifier maintenant peut faire gagner du temps plus tard.",
+
+  "insightExpiresSoonTitle": "\"{name}\" expire le {date}",
+  "insightExpiresSoonBody": "S’en occuper à l’avance rend les choses plus simples.",
+
+  "insightNextExpiryTitle": "La prochaine expiration est \"{name}\" le {date}",
+  "insightNextExpiryBody": "Aucune action n’est requise pour l’instant.",
+
+  "insightClusteredTitle": "Plusieurs éléments expirent autour de {month}",
+  "insightClusteredBody": "Les examiner ensemble peut faire gagner du temps.",
+
+  "insightTopCategoryTitle": "La majorité de vos éléments se trouvent dans {category}",
+  "insightTopCategoryBody": "C’est l’endroit idéal pour commencer un nettoyage.",
+
+  "insightStableTitle": "Tout est stable",
+  "insightStableBody": "Aucune expiration imminente ne nécessite votre attention.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Tous les éléments",
+"summaryAllCaption": "Suivis dans Vaultara",
+"summarySoonTitle": "Expire bientôt",
+"summarySoonCaption": "Dans les 30 jours",
+"summaryWeekTitle": "Cette semaine",
+"summaryWeekCaption": "Expire dans 7 jours",
+"summaryExpiredTitle": "Expiré",
+"summaryExpiredCaption": "Date d’expiration dépassée",
+"stabilityStableTitle": "Tout semble stable",
+"stabilityStableBody": "Vos enregistrements ne montrent aucun risque immédiat ou cumulatif.",
+
+"stabilityDecliningTitle": "La stabilité diminue",
+"stabilityDecliningBody": "Certains éléments ont expiré et d’autres approchent de l’expiration.",
+
+"stabilityWeakenedTitle": "Stabilité affaiblie",
+"stabilityWeakenedBody": "La présence d’enregistrements expirés réduit la fiabilité globale.",
+
+"stabilityPressureTitle": "La pression augmente",
+"stabilityPressureBody": "Plusieurs enregistrements nécessiteront bientôt une attention pour maintenir la stabilité.",
+"editorNotes": "Notes",
+"notesHint": "Saisir des notes",
+"editorReminderTitle": "Rappel",
+"editorReminderNone": "Aucun rappel",
+"editorReminderOnExpiry": "À la date d’expiration",
+"editorReminder7Days": "7 jours avant l’expiration",
+"editorReminder30Days": "30 jours avant l’expiration",
+"editorReminderCustom": "Personnalisé",
+"daysBeforeExpiry": "jours avant l’expiration",
+"reminderStage0Title": "Rappel d’expiration",
+"reminderStage0Body": "{firstName}, {itemName} expire dans {days} jours.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Rappel de suivi",
+"reminderStage1Body": "{firstName}, {itemName} n’a pas encore été mis à jour.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Expiration imminente",
+"reminderStage2Body": "La date d’expiration de {itemName} approche.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Dernier rappel",
+"reminderFinalBody": "{firstName}, veuillez mettre à jour {itemName} maintenant.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Équilibre de couverture",
+"coverageAllRepresented": "Vos enregistrements couvrent toutes les catégories.",
+"coverageMissingNamed": "Aucun enregistrement trouvé dans {count} catégories : {names}.",
+"coverageMissingSummary": "Vous n’avez ajouté aucun enregistrement dans {count} catégories, y compris {names} et {remaining} autres.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Utiliser le mot de passe",
+"signInWithBiometrics": "Se connecter avec la biométrie",
+"enableBiometricsTitle": "Activer la sécurité biométrique",
+"enableBiometricsBody": "Utilisez l’empreinte digitale ou la reconnaissance faciale pour protéger Vaultara.",
+"enableBiometricsReason": "Activer le déverrouillage biométrique pour Vaultara.",
+"notNow": "Pas maintenant",
+"useBiometrics": "Utiliser la biométrie",
+"recordsCalendarIntro":
+  "Choisissez comment vous souhaitez explorer vos dates d’expiration :\n\n• Indiquez le nombre de jours à partir d’aujourd’hui.\n• Ou sélectionnez une date précise dans le calendrier.\n\nVaultara affichera les enregistrements qui arrivent à expiration ce jour-là.",
+
+"showingRecordsRelative": "Affichage des enregistrements expirant dans {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Affichage des enregistrements expirant à la date sélectionnée",
+"noRecordsOnDate": "Aucun enregistrement n’est prévu pour expirer ce jour-là.",
+
+"recordEditorAddTitle": "Ajouter un enregistrement",
+"recordEditorEditTitle": "Modifier l’enregistrement",
+
+"editorRecordName": "Nom de l’enregistrement",
+"editorRecordNameHint": "Saisir le nom de l’enregistrement",
+"recordEditorErrorName": "Le nom de l’enregistrement est requis",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Appuyez pour ajouter et suivre les enregistrements de ce groupe.",
+
+"recordsInGroup": "Enregistrements de ce groupe",
+"recordsInGroupHint":
+  "Suivez chaque enregistrement important avec sa date d’expiration afin de le renouveler à temps.",
+
+"searchRecords": "Rechercher des enregistrements",
+"addRecord": "Ajouter un enregistrement",
+"noRecordsYet": "Aucun enregistrement pour le moment.",
+
+"deleteRecordTitle": "Supprimer l’enregistrement",
+
+"recordsInsightClusteredTitle":
+  "Plusieurs enregistrements expirent autour de {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "La plupart de vos enregistrements sont regroupés dans {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Tous les enregistrements",
+
+"recordsStabilityDecliningBody":
+  "Certains enregistrements ont déjà expiré et d’autres approchent de l’expiration.",
+
+"recordsCoverageAllRepresented":
+  "Vos enregistrements couvrent toutes les catégories.",
+
+"recordReminderStage0Body":
+  "{firstName}, votre {recordName} expire dans {days} jours.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, votre {recordName} n’a pas encore été mis à jour.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "La date d’expiration de {recordName} approche.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, veuillez mettre à jour {recordName} maintenant.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Aucun groupe pour le moment",
+"recordsExpiring": "{count, plural, one {1 enregistrement expire dans {days} jours} other {{count} enregistrements expirent dans {days} jours}}",
+"recordsGroupStats": "{records, plural, one {1 enregistrement} other {{records} enregistrements}} • {expiring} sous {days} jours",
+"groupLabel": "{count, plural, one {{count} groupe} other {{count} groupes}}",
+"recordsLabel": "{count, plural, one {{count} enregistrement} other {{count} enregistrements}}",
+"forgotPassword": "Mot de passe oublié ?",
+  "forgotPasswordTitle": "Réinitialiser le mot de passe",
+  "forgotPasswordBody": "Saisissez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+  "sendResetLink": "Envoyer le lien",
+  "passwordResetEmailSent": "Un e-mail de réinitialisation du mot de passe a été envoyé.",
+  "verifyEmailToContinue": "Veuillez vérifier votre adresse e-mail avant de vous connecter",
+  "changeEmailTitle": "Changer l’adresse e-mail",
+"newEmailHint": "Entrez votre nouvelle adresse e-mail",
+"sendVerificationEmail": "Envoyer un e-mail de vérification",
+"deleteAccountTitle": "Supprimer le compte",
+"deleteAccountWarning": "Cette action supprimera définitivement votre compte et toutes les données enregistrées.\nCette action est irréversible.",
+"deleteAccountConfirm": "Supprimer le compte définitivement",
+"supportTitle": "Assistance",
+"supportSubtitle": "Contactez-nous si vous avez besoin d’aide ou des questions.",
+"supportEmailSubject": "Demande d’assistance Vaultara",
+"supportEmailError": "Impossible d’ouvrir l’application e-mail.",
+"passwordResetEmailFailed": "Impossible d'envoyer l'e-mail de réinitialisation du mot de passe.",
+"loggedInPasswordResetBody": "Nous enverrons un lien de réinitialisation du mot de passe à :\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Gestion du compte",
+"changeEmailTitle": "Changer l’adresse e-mail",
+"changeEmailSubtitle": "Mettez à jour l’e-mail associé à votre compte.",
+"changePasswordTitle": "Changer le mot de passe",
+"changePasswordSubtitle": "Nous vous enverrons un lien par e-mail pour modifier votre mot de passe en toute sécurité.",
+"deleteAccountTitle": "Supprimer le compte",
+"deleteAccountSubtitle": "Supprimer définitivement votre compte Vaultara.",
+"biometricAuthReason": "Authentifiez-vous pour accéder à votre compte Vaultara",
+"verifyEmailTitle": "Vérifiez votre e-mail",
+"verifyEmailBody": "Nous avons envoyé un e-mail de vérification dans votre boîte de réception. Ouvrez-le et confirmez votre adresse e-mail, puis revenez ici pour continuer.",
+"verifyEmailConfirmedButton": "J’ai vérifié mon e-mail",
+"verifyEmailResendButton": "Renvoyer l’e-mail de vérification",
+"verifyEmailSending": "Envoi...",
+"navHome": "Accueil",
+"navCategories": "Catégories",
+"navInsights": "Analyses",
+"navCalendar": "Agenda",
+"tutorialHomeSearch": "Utilisez la barre de recherche pour trouver rapidement n'importe quel enregistrement que vous suivez.",
+"tutorialHomeFab": "Ajoutez votre premier enregistrement ici.\nChoisissez où il appartient, ajoutez des notes facultatives et sélectionnez une date d’expiration.",
+"tutorialHomeSummary": "Au fur et à mesure que vous ajoutez des enregistrements, cette section vous aide à repérer ceux qui approchent de l’expiration.",
+"tutorialHomeInsight": "Cet aperçu intelligent met en évidence les tendances et les expirations à venir.\nVous pouvez appuyer sur l’icône du haut-parleur pour l’écouter.",
+"tutorialHomeCoverage": "L’équilibre de couverture reflète la répartition de vos enregistrements.\nUn équilibre plus élevé indique moins de manques.",
+"tutorialHomeStability": "La stabilité reflète la fiabilité de vos enregistrements au fil du temps.\nLes éléments expirés ou proches de l’expiration peuvent réduire la stabilité.",
+"tutorialCancel": "Annuler",
+"tutorialNext": "Suivant",
+"tutorialEnd": "Terminer le tutoriel",
+"softDeleteCategory": "Catégorie",
+"softDeleteGroup": "Groupe",
+"softDeleteRecord": "Enregistrement",
+"softDeleteTitle": "Déplacer {type} vers Supprimés récemment",
+"softDeleteMessage": "Le {type} \"{name}\" sera déplacé vers Supprimés récemment.\n\nVous pouvez le restaurer dans les 30 jours. Ensuite, il sera supprimé définitivement.",
+"softDeleteMove": "Déplacer",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+ "recentlyDeletedTitle": "Supprimés récemment",
+  "categories": "Catégories",
+  "groups": "Groupes",
+  "records": "Enregistrements",
+  "restore": "Restaurer",
+  "deletePermanently": "Supprimer définitivement",
+
+  "recentlyDeletedBanner": "Les {type} supprimés sont conservés pendant 30 jours.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Rechercher des {type} supprimés",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Aucun {type} supprimé",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Appuyez sur une catégorie pour voir ses groupes et gérer vos documents.",
+  "groupsHint": "Les groupes organisent vos enregistrements dans cette catégorie. Touchez un groupe pour gérer les enregistrements.",
+  "notLoggedIn": "Non connecté",
+"recordsInsideGroupHint": "Voici les enregistrements dans ce groupe.",
+"snackMovedToRecentlyDeleted": "\"{name}\" a été déplacé dans Supprimés récemment",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" a été supprimé avec succès",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" a été mis à jour avec succès",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" a été ajouté avec succès",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" a été restauré avec succès",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Limite gratuite atteinte ({current}/{limit}). Passez à la version supérieure pour en ajouter plus.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Rechercher tous les enregistrements",
+"globalSearchHint": "Saisissez le nom, la catégorie ou le groupe",
+"globalSearchNoMatches": "Aucun enregistrement ne correspond à votre recherche.",
+"snackNoRecordsToSearch": "Il n’y a aucun enregistrement à rechercher. Ajoutez quelques enregistrements et Vaultara les indexera automatiquement.",
+"recoveryCentreTitle": "Centre de récupération",
+"recoveryCentreSubtitle": "Restaurez ou supprimez définitivement les enregistrements supprimés.",
+
+  "plan_premium": "Premium",
+  "plan_free": "Gratuit",
+
+  "profile_app_settings_title": "Paramètres de l’application",
+
+  "profile_privacy_security_title": "Confidentialité et sécurité",
+  "profile_biometric_on": "Le verrouillage biométrique est activé sur cet appareil.",
+  "profile_biometric_off": "Le verrouillage biométrique est désactivé.",
+
+  "profile_biometric_enable_reason": "Confirmez votre identité pour activer le verrouillage biométrique.",
+  "profile_biometric_disable_reason": "Confirmez votre identité pour désactiver le verrouillage biométrique.",
+
+  "profile_account_management_title": "Gestion du compte",
+  "profile_account_management_subtitle": "Modifier l’e-mail, le mot de passe ou supprimer le compte.",
+
+  "profile_premium_active_title": "Premium actif",
+  "profile_premium_upgrade_title": "Passer à Premium",
+  "profile_premium_active_subtitle": "Rappels avancés débloqués.",
+  "profile_premium_upgrade_subtitle": "Débloquez des rappels avancés et une organisation illimitée.",
+
+  "profile_manage_cancel_hint": "Gérez ou annulez à tout moment sur Google Play.",
+  "profile_manage_subscription_button": "Gérer l’abonnement",
+  "plan_premium": "Premium",
+"plan_free": "Gratuit",
+"profile_app_settings_title": "Paramètres de l’application",
+"profile_privacy_security_title": "Confidentialité et sécurité",
+"profile_biometric_on": "Le verrouillage biométrique est activé sur cet appareil.",
+"profile_biometric_off": "Le verrouillage biométrique est désactivé.",
+"profile_biometric_enable_reason": "Confirmez votre identité pour activer le verrouillage biométrique.",
+"profile_biometric_disable_reason": "Confirmez votre identité pour désactiver le verrouillage biométrique.",
+"profile_account_management_title": "Gestion du compte",
+"profile_account_management_subtitle": "Modifier l’e-mail, le mot de passe ou supprimer le compte.",
+"profile_premium_active_title": "Premium actif",
+"profile_premium_upgrade_title": "Passer à Premium",
+"profile_premium_active_subtitle": "Rappels avancés débloqués.",
+"profile_premium_upgrade_subtitle": "Débloquez des rappels avancés et une organisation illimitée.",
+"profile_manage_cancel_hint": "Gérez ou annulez à tout moment sur Google Play.",
+"profile_manage_subscription_button": "Gérer l’abonnement",
+"plansTitle": "Choisir un forfait",
+"plansTrialBanner": "Commencez avec 7 jours gratuits.\nAnnulez à tout moment.",
+"plansLoading": "Chargement…",
+"plansStartFreeTrial": "Commencer gratuitement",
+"plansNoChargeTodayFooter": "7 jours gratuits · Aucun paiement aujourd’hui",
+
+"planFreeTitle": "Gratuit",
+"planFreeSubtitle": "Pour débuter",
+"planPremiumMonthlyTitle": "Premium mensuel",
+"planPremiumYearlyTitle": "Premium annuel",
+"planPerMonth": "par mois",
+"planPerYear": "par an",
+
+"planBadgeCurrent": "Forfait actuel",
+"planBadgePopular": "Populaire",
+"planBadgeBestValue": "Meilleure valeur",
+
+"planYouAreOnThisPlan": "Vous utilisez déjà ce forfait.",
+
+"planFeatureUpToRecords": "Jusqu’à {count} enregistrements",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Catégories personnalisées (jusqu’à {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Sous-catégories prédéfinies",
+"planFeatureCloudStorage": "Stockage cloud",
+"planFeatureSmartExpiryInsights": "Analyses d’expiration",
+"planFeatureCoverageBalance": "Équilibre des catégories",
+"planFeatureRecordStabilityTracking": "Stabilité des données",
+
+"planFeatureUnlimitedRecords": "Enregistrements illimités",
+"planFeatureUnlimitedCategories": "Catégories illimitées",
+"planFeatureCustomSubcategories": "Sous-catégories personnalisées",
+"planFeatureMultipleRemindersPerRecord": "Rappels multiples",
+"planFeatureAdvancedReminderTiming": "Planification avancée",
+"planFeatureAutomaticFollowUps": "Rappels automatiques",
+
+"planFeatureEverythingInMonthly": "Tout du mensuel",
+"planFeatureSavePercentComparedToMonthly": "Économisez {percent}% par rapport au mensuel",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Idéal à long terme",
+"editorReminderLabel": "Rappel",
+"editorReminderSelectOptional": "Sélectionner un rappel (facultatif)",
+"editorReminderOnExpiry": "Le jour d’expiration",
+"editorReminderDaysBefore": "{days} jours avant l’expiration",
+"editorFreeItemsCount": "Enregistrements gratuits : {used}/{limit}",
+"editorExpiryPastWarning": "La date d’expiration est déjà passée.",
+"editorExpiryTodayWarning": "Cet enregistrement expire aujourd’hui.",
+"editorErrorExpiryPast": "La date d’expiration ne peut pas être dans le passé.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Aperçus du jour",
+"tutorialBannerTitle": "Visite rapide",
+"tutorialBannerBody": "Découvrez où chercher, comment ajouter des enregistrements et comprendre les insights en moins d’une minute.",
+"tutorialBannerStart": "Démarrer le tutoriel",
+"tutorialBannerDismiss": "Pas maintenant",
+"authErrorUserDisabled": "Ce compte a été désactivé.",
+"authErrorNetwork": "Erreur réseau. Veuillez réessayer.",
+"authErrorTooManyRequests": "Trop de tentatives. Réessayez plus tard.",
+"authErrorSignInFailed": "Échec de la connexion. Veuillez réessayer.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium activé",
+"snackPremiumRestored": "Premium restauré",
+"passwordNeedLower": "Doit contenir une minuscule",
+"passwordNeedUpper": "Doit contenir une majuscule",
+"passwordNeedNumber": "Doit contenir un chiffre",
+"passwordNeedSymbol": "Doit contenir un symbole",
+"confirmIdentityTitle": "Confirmer l'identité",
+"confirm": "Confirmer",
+"profile_sign_out_title": "Se déconnecter",
+"profile_sign_out_subtitle": "Se déconnecter de Vaultara sur cet appareil",
+"profile_sign_out_confirm_title": "Se déconnecter ?",
+"profile_sign_out_confirm_body": "Vous devrez vous reconnecter pour accéder à votre compte.",
+"profile_sign_out_action": "Se déconnecter",
+"todayInsightsAudioHint": "Vous préférez l’audio ? Utilisez l’icône du haut-parleur.",
+"category2Label": "Catégorie",
+"enable2BiometricsBody": "Utilisez la reconnaissance d’empreinte digitale pour protéger votre compte Vaultara.",
+"snackNotificationsDisabled": "Les notifications sont désactivées. Activez-les pour recevoir des rappels.",
+"openSettings": "Ouvrir les paramètres",
+
+"reminderOnExpiryTitle": "Expire aujourd’hui",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Bonjour {firstName}, \"{itemName}\" expire aujourd’hui.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Catégories gratuites : {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Indique combien de catégories gratuites ont été utilisées sur la limite gratuite.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ajouter des notes (optionnel)",
+"apply": "Appliquer",
+"smartInsightExpiresTodayHeading": "Expire Aujourd'hui",
+"smartInsightExpiresTodaySingleBody": "{name} expire aujourd'hui. Agissez maintenant pour le maintenir à jour.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} et 1 autre document expirent aujourd'hui.} other{{names} et {extra} autres documents expirent aujourd'hui.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Demande Votre Attention",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} expire dans 1 jour et n'a aucun rappel. Vérifiez que les détails sont toujours corrects.} other{{name} expire dans {days} jours et n'a aucun rappel. Vérifiez que les détails sont toujours corrects.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Plusieurs Renouvellements Proches",
+"smartInsightRenewalTwinBodyTwo": "{a} et {b} expirent à trois semaines l'un de l'autre. Planifiez à l'avance.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} et {c} expirent tous dans les trois semaines. Planifiez à l'avance.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} et 1 autre document expirent dans les trois semaines. Planifiez à l'avance.} other{{a}, {b} et {extra} autres documents expirent dans les trois semaines. Planifiez à l'avance.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Groupe À Venir",
+"smartInsightClusterBody": "{count, plural, =1{1 document dans {category} expire dans les deux prochains mois. Envisagez de les gérer ensemble.} other{{count} documents dans {category} expirent dans les deux prochains mois. Envisagez de les gérer ensemble.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Période Calme À Venir",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Rien n'expire pendant le prochain jour. Votre prochain renouvellement est le {firstDate}.} other{Rien n'expire pendant les {days} prochains jours. Votre prochain renouvellement est le {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Tout Est À Jour",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 expiration à venir est couverte par des rappels. Rien d'autre ne nécessite votre attention.} other{{count} expirations à venir sont couvertes par des rappels. Rien d'autre ne nécessite votre attention.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Tout est à jour. Rien ne nécessite votre attention pour le moment.",
+"smartInsightNoRecordsHeading": "Ajoutez Votre Premier Document",
+"smartInsightNoRecordsBody": "Commencez à suivre vos documents et Vaultara affichera des informations intelligentes ici.",
+"expiryTimelineTitle": "Chronologie d'expiration",
+"expiryTimelineSubtitle": "Appuyez sur un mois pour voir les documents qui expirent ce mois-ci",
+"expiryTimelineDetailCount": "{count, plural, =1{1 document} other{{count} documents}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "À Venir",
+"summaryUpcomingCaption": "Dans les 30 prochains jours",
+"summaryUrgentTitle": "Urgent",
+"summaryUrgentCaption": "Dans les 7 prochains jours"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,0 +1,862 @@
+{
+  "@@locale": "lo",
+  "expiryCalendarTitle": "ປະຕິທິນວັນໝົດອາຍຸ",
+
+"calendarIntro": "ເລືອກວິທີທີ່ທ່ານຕ້ອງການເບິ່ງວັນໝົດອາຍຸ:\n\n• ພິມຈຳນວນມື້ຈາກມື້ນີ້ທີ່ທ່ານຕ້ອງການເບິ່ງລ່ວງໜ້າ.\n• ຫຼື ເລືອກວັນທີທີ່ແນ່ນອນໃນປະຕິທິນ.\n\nVaultara ຈະສະແດງວ່າລາຍການໃດຈະໝົດອາຍຸໃນມື້ນັ້ນ.",
+
+"daysFromTodayLabel": "ຈຳນວນມື້ຈາກມື້ນີ້",
+"daysFromTodayHint": "ຕົວຢ່າງ 0, 1, 7, 30",
+
+"apply": "ນຳໃຊ້",
+"pickDateOnCalendar": "ເລືອກວັນທີໃນປະຕິທິນ",
+
+"today": "ມື້ນີ້",
+"tomorrow": "ມື້ອື່ນ",
+"in7Days": "ໃນ 7 ມື້",
+"in30Days": "ໃນ 30 ມື້",
+
+"inDays": "ໃນ {days} ມື້",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "ກະລຸນາໃສ່ຈຳນວນມື້.",
+"invalidDaysError": "ກະລຸນາໃສ່ຈຳນວນມື້ທີ່ຖືກຕ້ອງ (0 ຫຼື ຫຼາຍກວ່າ).",
+
+"showingItemsRelative": "ກຳລັງສະແດງລາຍການທີ່ຈະໝົດອາຍຸ {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "ກຳລັງສະແດງລາຍການທີ່ຈະໝົດອາຍຸໃນວັນທີທີ່ເລືອກ",
+"noItemsOnDate": "ບໍ່ມີລາຍການໃດໝົດອາຍຸໃນມື້ນັ້ນ.",
+
+"editorAddTitle": "ເພີ່ມລາຍການ",
+"editorEditTitle": "ແກ້ໄຂລາຍການ",
+
+"editorCategory": "ໝວດໝູ່",
+"editorCategoryHint": "ເລືອກໝວດໝູ່",
+
+"editorGroup": "ກຸ່ມ",
+"editorGroupHint": "ເລືອກກຸ່ມພາຍໃຕ້ໝວດໝູ່ນີ້",
+
+"editorItemName": "ຊື່ລາຍການ",
+"editorItemNameHint": "ໃສ່ຊື່ລາຍການ",
+
+"editorExpiryDate": "ວັນໝົດອາຍຸ",
+"editorExpiryDateHint": "ເລືອກວັນໝົດອາຍຸ",
+
+"editorErrorCategory": "ເລືອກໝວດໝູ່",
+"editorErrorGroup": "ເລືອກກຸ່ມ",
+"editorErrorName": "ຈຳເປັນຕ້ອງໃສ່ຊື່ລາຍການ",
+"editorErrorExpiry": "ເລືອກວັນໝົດອາຍຸ",
+"editorErrorExpiryPast": "ວັນໝົດອາຍຸຕ້ອງເປັນມື້ນີ້ ຫຼື ວັນໃນອະນາຄົດ",
+"cancel": "ຍົກເລີກ",
+"save": "ບັນທຶກ",
+
+"addCategoryTitle": "ເພີ່ມໝວດໝູ່",
+"unlimitedCategories": "ໝວດໝູ່ບໍ່ຈຳກັດ (Premium)",
+
+"categoryUsage": "ໃຊ້ແລ້ວ {current} / {limit} ໝວດໝູ່",
+
+"categoryNameLabel": "ໝວດໝູ່",
+"categoryNameHint": "ໃສ່ໝວດໝູ່",
+
+"categoryLimitReached": "ທ່ານເຖິງຂີດຈຳກັດ {limit} ໝວດໝູ່ໃນ Basic. ອັບເກຣດເປັນ Premium.",
+
+"categoryLimitInfo": "ແຜນ Basic ສາມາດສ້າງໄດ້ສູງສຸດ {limit} ໝວດໝູ່.",
+
+"categoryErrorEmpty": "ຈຳເປັນຕ້ອງໃສ່ໝວດໝູ່",
+"categoryErrorTooShort": "ໝວດໝູ່ສັ້ນເກີນໄປ",
+"categoryErrorTooLong": "ໝວດໝູ່ຍາວເກີນໄປ",
+"categoryErrorSymbols": "ໝວດໝູ່ບໍ່ສາມາດເປັນສັນຍາລັກລ້ວນໆ",
+"categoryErrorNumbers": "ໝວດໝູ່ບໍ່ສາມາດເປັນຕົວເລກລ້ວນໆ",
+
+"upgradeRequired": "ຕ້ອງອັບເກຣດ",
+"viewPremiumBenefits": "ເບິ່ງສິດ Premium",
+"createCategory": "ສ້າງ",
+
+"addGroupTitle": "ເພີ່ມກຸ່ມ",
+"groupNameLabel": "ກຸ່ມ",
+"groupNameHint": "ໃສ່ກຸ່ມ",
+
+"groupErrorEmpty": "ຈຳເປັນຕ້ອງໃສ່ກຸ່ມ",
+"groupErrorTooShort": "ກຸ່ມສັ້ນເກີນໄປ",
+"groupErrorTooLong": "ກຸ່ມຍາວເກີນໄປ",
+"groupErrorSymbols": "ກຸ່ມບໍ່ສາມາດມີສັນຍາລັກ",
+"groupErrorNumbers": "ກຸ່ມບໍ່ສາມາດມີຕົວເລກ",
+"createGroup": "ສ້າງ",
+
+"firstNameLabel": "ຊື່",
+"firstNameHint": "ໃສ່ຊື່",
+
+"lastNameLabel": "ນາມສະກຸນ",
+"lastNameHint": "ໃສ່ນາມສະກຸນ",
+
+"emailLabel": "ອີເມວ",
+"loginPasswordHint": "ໃສ່ລະຫັດຜ່ານຂອງທ່ານ",
+"registerPasswordHint": "ໃສ່ລະຫັດຜ່ານ",
+"passwordHelper": "ຢ່າງນ້ອຍ 8 ຕົວອັກສອນ ແລະ ຜະສົມປະເພດ",
+
+"passwordTooShort": "ສັ້ນເກີນໄປ",
+"passwordTooWeak": "ອ່ອນເກີນໄປ",
+"passwordMedium": "ປານກາງ",
+"passwordStrong": "ແຂງແຮງ",
+
+"errorFirstName": "ຈຳເປັນຕ້ອງໃສ່ຊື່",
+"errorLastName": "ຈຳເປັນຕ້ອງໃສ່ນາມສະກຸນ",
+"errorEmailInvalid": "ກະລຸນາໃສ່ອີເມວທີ່ຖືກຕ້ອງ",
+"errorEmailInUse": "ອີເມວນີ້ໄດ້ຖືກ\nເຊື່ອມກັບບັນຊີ Vaultara ແລ້ວ",
+"errorPasswordLength": "ລະຫັດຜ່ານຕ້ອງມີຢ່າງນ້ອຍ 8 ຕົວອັກສອນ",
+"errorPasswordWeak": "ກະລຸນາໃສ່ລະຫັດຜ່ານທີ່ແຂງແຮງກວ່າ",
+"errorGeneric": "ລົງທະບຽນບໍ່ສຳເລັດ. ກະລຸນາລອງອີກຄັ້ງ",
+
+"createAccount": "ສ້າງບັນຊີ",
+"appName": "Vaultara",
+"authTagline": "ສູນກາງສ່ວນຕົວຂອງທ່ານສຳລັບພາສປອດ, ໃບອະນຸຍາດ, ບັດ ແລະ ສິ່ງຈຳເປັນສຳຄັນອື່ນໆ",
+"tabSignIn": "ເຂົ້າລະບົບ",
+"tabCreateAccount": "ສ້າງບັນຊີ",
+"signInFooterText": "ເຂົ້າລະບົບເພື່ອເຂົ້າເຖິງພື້ນທີ່ Vaultara ຂອງທ່ານ ແລະ ຄວບຄຸມການຕໍ່ອາຍຸທຸກຢ່າງ",
+"createAccountFooterText": "ສ້າງບັນຊີ Vaultara ເພື່ອສຳຮອງການແຈ້ງເຕືອນສຳຄັນ ແລະ ເຂົ້າເຖິງໄດ້ເມື່ອຕ້ອງການ",
+
+"emailRequired": "ຈຳເປັນຕ້ອງໃສ່ອີເມວ",
+"passwordRequired": "ຈຳເປັນຕ້ອງໃສ່ລະຫັດຜ່ານ",
+"emailNotFound": "ອີເມວຜິດ. ບໍ່ມີ\nບັນຊີ Vaultara ທີ່ໃຊ້ອີເມວນີ້",
+"incorrectPassword": "ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ",
+
+"emailLabel": "ອີເມວ",
+"emailHint": "ໃສ່ອີເມວ",
+"passwordLabel": "ລະຫັດຜ່ານ",
+"signIn": "ເຂົ້າລະບົບ",
+
+"categoryPersonalIdentification": "ການຢືນຢັນຕົວຕົນ",
+"categoryDrivingAndVehicles": "ການຂັບຂີ່ ແລະ ພາຫະນະ",
+"categoryTravelAndImmigration": "ການເດີນທາງ ແລະ ການອົບພະຍົບ",
+"categoryBankingAndCards": "ທະນາຄານ ແລະ ບັດ",
+"categoryInsuranceAndCover": "ປະກັນໄພ ແລະ ຄວາມຄຸ້ມຄອງ",
+"categoryHealthAndMedical": "ສຸຂະພາບ ແລະ ການແພດ",
+"categoryWorkAndProfessional": "ວຽກງານ ແລະ ວິຊາຊີບ",
+"categoryPropertyAndHousing": "ຊັບສິນ ແລະ ທີ່ຢູ່ອາໄສ",
+"categoryHouseholdAndUtilities": "ຄົວເຮືອນ ແລະ ສາທາລະນູປະໂພກ",
+
+"subcategoryPassports": "ພາສປອດ",
+"subcategoryIdCards": "ບັດປະຈຳຕົວ",
+"subcategoryResidencePermits": "ໃບອະນຸຍາດພັກອາໄສ",
+
+"subcategoryDrivingLicences": "ໃບຂັບຂີ່",
+"subcategoryVehicleRegistrations": "ການຈົດທະບຽນພາຫະນະ",
+"subcategoryRoadworthyCertificates": "ໃບຢັ້ງຢືນຄວາມພ້ອມຂອງພາຫະນະ",
+"subcategoryVehicleInspectionCertificates": "ໃບຢັ້ງຢືນການກວດສອບພາຫະນະ",
+
+"subcategoryVisas": "ວີຊາ",
+"subcategoryStudyPermits": "ໃບອະນຸຍາດຮຽນ",
+"subcategoryWorkPermits": "ໃບອະນຸຍາດເຮັດວຽກ",
+"subcategoryTravelInsuranceDocuments": "ເອກະສານປະກັນໄພການເດີນທາງ",
+
+"subcategoryDebitAndCreditCards": "ບັດເດບິດ ແລະ ບັດເຄຣດິດ",
+"subcategoryStoreCards": "ບັດຮ້ານ",
+"subcategoryFuelCards": "ບັດນ້ຳມັນ",
+"subcategoryVehicleInsurances": "ປະກັນລົດ",
+"subcategoryPropertyInsurances": "ປະກັນຊັບສິນ",
+"subcategoryLifeInsurances": "ປະກັນຊີວິດ",
+"subcategoryHealthInsurances": "ປະກັນສຸຂະພາບ",
+"subcategoryTravelInsurances": "ປະກັນການເດີນທາງ",
+
+"subcategoryMedicalPrescriptions": "ໃບສັ່ງຢາ",
+"subcategoryOpticalPrescriptions": "ໃບສັ່ງແວ່ນ",
+"subcategoryMedicalCertificates": "ໃບຢັ້ງຢືນທາງການແພດ",
+
+"subcategoryProfessionalLicences": "ໃບອະນຸຍາດວິຊາຊີບ",
+"subcategoryProfessionalRegistrations": "ການລົງທະບຽນວິຊາຊີບ",
+"subcategoryIndustryRegistrations": "ການລົງທະບຽນອຸດສາຫະກຳ",
+"subcategoryWorkAccessCards": "ບັດເຂົ້າທຳງານ",
+
+"subcategoryLeaseAgreements": "ສັນຍາເຊົ່າ",
+"subcategoryAccessCardsAndTags": "ບັດແລະແທັກເຂົ້າໃຊ້",
+"subcategoryParkingPermits": "ໃບອະນຸຍາດຈອດລົດ",
+"subcategorySecurityAccessPermits": "ໃບອະນຸຍາດຄວາມປອດໄພ",
+
+"subcategoryElectricityAccounts": "ບັນຊີໄຟຟ້າ",
+"subcategoryWaterAccounts": "ບັນຊີນ້ຳ",
+"subcategoryInternetContracts": "ສັນຍາອິນເຕີເນັດ",
+"subcategorySecurityServiceContracts": "ສັນຍາບໍລິການຄວາມປອດໄພ",
+
+"searchCategories": "ຄົ້ນຫາໝວດໝູ່",
+"filterAll": "ທັງໝົດ",
+"filterPreset": "ຕັ້ງໄວ້ລ່ວງໜ້າ",
+"filterCustom": "ກຳນົດເອງ",
+"addCategoryTitle": "ເພີ່ມໝວດໝູ່",
+"customLabel": "ກຳນົດເອງ",
+"subcategoriesLabel": "ໝວດຍ່ອຍ",
+"itemsLabel": "ລາຍການ",
+
+"itemsExpiring": "{count} ລາຍການຈະໝົດອາຍຸໃນ {days} ມື້",
+
+"pinnedEssentials": "ລາຍການທີ່ປັກໝຸດ",
+"pinnedHint": "ປັກໝຸດໝວດໝູ່ທີ່ໃຊ້ບ່ອຍ.",
+"noCategoriesFound": "ບໍ່ພົບໝວດໝູ່",
+
+"searchGroups": "ຄົ້ນຫາກຸ່ມ",
+"addGroupTitle": "ເພີ່ມກຸ່ມ",
+
+"basicPlanGroupInfo": "ທ່ານຢູ່ໃນແຜນ Basic.\nສາມາດເບິ່ງກຸ່ມທີ່ຕັ້ງໄວ້.\nອັບເກຣດເປັນ Premium ເພື່ອສ້າງກຸ່ມເອງ.",
+
+"groupDeleted": "ກຸ່ມຖືກລຶບ",
+"undo": "ຍົກເລີກ",
+
+"groupTapHint": "ແຕະເພື່ອເພີ່ມແລະຕິດຕາມລາຍການ",
+"itemsInGroup": "ລາຍການໃນກຸ່ມນີ້",
+"itemsInGroupHint": "ຕິດຕາມທຸກລາຍການກັບວັນໝົດອາຍຸ",
+"searchItems": "ຄົ້ນຫາລາຍການ",
+"filterExpiringWithin": "ໝົດອາຍຸໃນ {days} ມື້",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "ໝົດອາຍຸແລ້ວ",
+"addItem": "ເພີ່ມລາຍການ",
+"noItemsYet": "ຍັງບໍ່ມີລາຍການ.",
+
+"statusExpired": "ໝົດອາຍຸແລ້ວ",
+"statusExpiresToday": "ໝົດອາຍຸມື້ນີ້",
+"statusExpiresInOneDay": "ໝົດອາຍຸໃນ 1 ມື້",
+"statusExpiresInDays": "ໝົດອາຍຸໃນ {days} ມື້",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "ຍັງໃຊ້ໄດ້",
+
+"deleteCategoryTitle": "ລຶບໝວດໝູ່",
+"deleteCategoryMessage": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບໝວດໝູ່ \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "ລຶບກຸ່ມ",
+"deleteGroupMessage": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບກຸ່ມ \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "ລຶບລາຍການ",
+"deleteItemMessage": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະລຶບ \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "ຍົກເລີກ",
+"delete": "ລຶບ",
+
+"homeWelcomeTitle": "ຍິນດີຕ້ອນຮັບ",
+
+"homeWelcomeFirstTitle": "ຍິນດີຕ້ອນຮັບ, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "ຍິນດີຕ້ອນຮັບກັບ, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "ທັງໝົດ",
+"homeWelcomeSubtitleGeneric": "Vaultara ຊ່ວຍໃຫ້ທ່ານຕິດຕາມວັນໝົດອາຍຸສຳຄັນ ເພື່ອບໍ່ໃຫ້ສິ່ງໃດໝົດອາຍຸໂດຍບໍ່ຮູ້ຕົວ.",
+
+"homeWelcomeSubtitleFirst": "ຍິນດີທີ່ໄດ້ພົບທ່ານ. Vaultara ຊ່ວຍເກັບວັນທີ່ ແລະ ບັນທຶກສຳຄັນໄວ້ໃນບ່ອນດຽວທີ່ປອດໄພ.",
+
+"homeWelcomeSubtitleBack": "ຍິນດີທີ່ໄດ້ພົບທ່ານອີກຄັ້ງ. Vaultara ພ້ອມສຳລັບຂໍ້ມູນສຳຄັນຂອງທ່ານເສມີ.",
+
+"insightEmptyTitle": "ຍັງບໍ່ມີການເພີ່ມ",
+"insightEmptyBody": "ເມື່ອທ່ານເລີ່ມຕິດຕາມວັນສຳຄັນ Vaultara ຈະຊ່ວຍໃຫ້ທ່ານນຳໜ້າ.",
+
+"insightExpiresTodayTitle": "\"{name}\" ໝົດອາຍຸມື້ນີ້",
+"insightExpiresTodayBody": "ການກວດເຊັກຕອນນີ້ຊ່ວຍຮັກສາຄວາມຖືກຕ້ອງ.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" ໝົດອາຍຸມື້ອື່ນ",
+"insightExpiresTomorrowBody": "ການກວດມື້ນີ້ຊ່ວຍປະຢັດເວລາພາຍຫຼັງ.",
+
+"insightExpiresSoonTitle": "\"{name}\" ໝົດອາຍຸວັນທີ {date}",
+"insightExpiresSoonBody": "ຈັດການແຕ່ເຊົ້າຊ່ວຍໃຫ້ຮູ້ສຶກສະບາຍ.",
+
+"insightNextExpiryTitle": "ກຳນົດຕໍ່ໄປແມ່ນ \"{name}\" ໃນວັນທີ {date}",
+"insightNextExpiryBody": "ຍັງບໍ່ຈຳເປັນຕ້ອງດຳເນີນການ ແຕ່ຄວນຈື່ຈຳໄວ້.",
+
+"insightClusteredTitle": "ຫຼາຍລາຍການໝົດອາຍຸໃນ {month}",
+"insightClusteredBody": "ການກວດພ້ອມກັນຊ່ວຍປະຢັດເວລາ.",
+
+"insightTopCategoryTitle": "ລາຍການສ່ວນໃຫຍ່ຢູ່ໃນ {category}",
+"insightTopCategoryBody": "ການກວດສ່ວນນີ້ໃຫ້ຜົນດີທີ່ສຸດ.",
+
+"insightStableTitle": "ທຸກຢ່າງດູສະໝຳເສີ",
+"insightStableBody": "ບໍ່ມີກຳນົດທີ່ຕ້ອງໃຫ້ຄວາມສົນໃຈໃນຕອນນີ້.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "ໝາຍເຫດ",
+"notesHint": "ໃສ່ໝາຍເຫດ",
+"editorReminderTitle": "ແຈ້ງເຕືອນ",
+"editorReminderNone": "ບໍ່ມີການແຈ້ງເຕືອນ",
+"editorReminderOnExpiry": "ໃນວັນໝົດອາຍຸ",
+"editorReminder7Days": "7 ມື້ກ່ອນ",
+"editorReminder30Days": "30 ມື້ກ່ອນ",
+"editorReminderCustom": "ກຳນົດເອງ",
+"daysBeforeExpiry": "ມື້ກ່ອນໝົດອາຍຸ",
+
+"reminderStage0Title": "ແຈ້ງເຕືອນວັນໝົດອາຍຸ",
+"reminderStage0Body": "{firstName}, {itemName} ຂອງທ່ານຈະໝົດອາຍຸໃນ {days} ມື້.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "ການຕິດຕາມການແຈ້ງເຕືອນ",
+"reminderStage1Body": "{firstName}, {itemName} ຍັງບໍ່ໄດ້ອັບເດດ.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "ວັນໝົດອາຍຸໃກ້ເຂົ້າມາ",
+"reminderStage2Body": "ວັນໝົດອາຍຸຂອງ {itemName} ກຳລັງໃກ້ເຂົ້າມາ.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "ແຈ້ງເຕືອນສຸດທ້າຍ",
+"reminderFinalBody": "{firstName}, ກະລຸນາອັບເດດ {itemName} ດຽວນີ້.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "ສົມດຸນການຄຸ້ມຄອງ",
+"coverageAllRepresented": "ຂໍ້ມູນຂອງທ່ານມີທຸກໝວດໝູ່.",
+"coverageMissingNamed": "ບໍ່ພົບຂໍ້ມູນໃນ {count} ໝວດໝູ່: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "ທ່ານຍັງບໍ່ໄດ້ເພີ່ມຂໍ້ມູນໃນ {count} ໝວດໝູ່, ຮວມທັງ {names} ແລະອີກ {remaining} ໝວດ.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "ໃຊ້ລະຫັດຜ່ານແທນ",
+"signInWithBiometrics": "ເຂົ້າລະບົບດ້ວຍຊີວະມິຕິ",
+"enableBiometricsTitle": "ເປີດໃຊ້ຄວາມປອດໄພຊີວະມິຕິ",
+"enableBiometricsBody": "ໃຊ້ລາຍນິ້ວມືຫຼືການຈຳໃບໜ້າເພື່ອປົກປ້ອງ Vaultara.",
+"enableBiometricsReason": "ເປີດໃຊ້ການປົດລັອກຊີວະມິຕິສຳລັບ Vaultara.",
+"notNow": "ບໍ່ໃຊ້ຕອນນີ້",
+"useBiometrics": "ໃຊ້ຊີວະມິຕິ",
+
+"recordsCalendarIntro": "ເລືອກວິທີການເບິ່ງກຳນົດໝົດອາຍຸ:\n\n• ພິມຈຳນວນມື້ທີ່ຕ້ອງການເບິ່ງລ່ວງໜ້າ.\n• ຫຼືເລືອກວັນທີ່ຈາກປະຕິທິນ.\n\nVaultara ຈະສະແດງບັນທຶກທີ່ໝົດອາຍຸໃນວັນນັ້ນ.",
+
+"showingRecordsRelative": "ກຳລັງສະແດງບັນທຶກທີ່ໝົດອາຍຸ {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "ກຳລັງສະແດງບັນທຶກທີ່ໝົດອາຍຸໃນວັນທີ່ເລືອກ",
+
+"noRecordsOnDate": "ບໍ່ມີບັນທຶກໃດໝົດອາຍຸໃນວັນນັ້ນ.",
+
+"recordEditorAddTitle": "ເພີ່ມບັນທຶກ",
+"recordEditorEditTitle": "ແກ້ໄຂບັນທຶກ",
+
+"editorRecordName": "ຊື່ບັນທຶກ",
+"editorRecordNameHint": "ໃສ່ຊື່ບັນທຶກ",
+"recordEditorErrorName": "ຈຳເປັນຕ້ອງໃສ່ຊື່ບັນທຶກ",
+
+"recordsGroupTapHint": "ແຕະເພື່ອເພີ່ມ ແລະຕິດຕາມບັນທຶກໃນກຸ່ມນີ້.",
+
+"recordsInGroup": "ບັນທຶກໃນກຸ່ມນີ້",
+
+"recordsInGroupHint": "ຕິດຕາມທຸກບັນທຶກສຳຄັນດ້ວຍວັນໝົດອາຍຸ.",
+
+"searchRecords": "ຄົ້ນຫາບັນທຶກ",
+
+"addRecord": "ເພີ່ມບັນທຶກ",
+
+"noRecordsYet": "ຍັງບໍ່ມີບັນທຶກ.",
+"deleteRecordTitle": "ລຶບບັນທຶກ",
+
+"recordsInsightClusteredTitle": "ມີຫຼາຍບັນທຶກໝົດອາຍຸໃນເດືອນ {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "ບັນທຶກສ່ວນໃຫຍ່ຂອງທ່ານຢູ່ໃນຫມວດ {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "ບັນທຶກທັງໝົດ",
+
+"recordsStabilityDecliningBody": "ບາງບັນທຶກໄດ້ໝົດອາຍຸແລ້ວ ແລະອື່ນໆກຳລັງໃກ້ໝົດອາຍຸ.",
+
+"recordsCoverageAllRepresented": "ບັນທຶກຂອງທ່ານຄອບຄຸມທຸກຫມວດ.",
+
+"recordReminderStage0Body": "{firstName}, {recordName} ຂອງທ່ານຈະໝົດອາຍຸໃນ {days} ມື້.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, {recordName} ຂອງທ່ານຍັງບໍ່ໄດ້ອັບເດດ.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "ວັນໝົດອາຍຸຂອງ {recordName} ກຳລັງໃກ້ເຂົ້າມາ.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, ກະລຸນາອັບເດດ {recordName} ດຽວນີ້.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "ຍັງບໍ່ມີກຸ່ມ",
+
+"recordsExpiring": "{count, plural, one {1 ບັນທຶກຈະໝົດອາຍຸໃນ {days} ມື້} other {{count} ບັນທຶກຈະໝົດອາຍຸໃນ {days} ມື້}}",
+
+"recordsGroupStats": "{records, plural, one {1 ບັນທຶກ} other {{records} ບັນທຶກ}} • {expiring} ໝົດອາຍຸໃນ {days} ມື້",
+
+"groupLabel": "{count, plural, one {{count} ກຸ່ມ} other {{count} ກຸ່ມ}}",
+
+"recordsLabel": "{count, plural, one {{count} ບັນທຶກ} other {{count} ບັນທຶກ}}",
+
+"forgotPassword": "ລືມລະຫັດຜ່ານ?",
+"forgotPasswordTitle": "ຕັ້ງລະຫັດຜ່ານໃໝ່",
+"forgotPasswordBody": "ໃສ່ອີເມວຂອງທ່ານ ແລະພວກເຮົາຈະສົ່ງລິ້ງສຳລັບຕັ້ງລະຫັດຜ່ານໃໝ່.",
+"sendResetLink": "ສົ່ງລິ້ງຕັ້ງລະຫັດໃໝ່",
+"passwordResetEmailSent": "ສົ່ງອີເມວຕັ້ງລະຫັດຜ່ານໃໝ່ແລ້ວ.",
+"verifyEmailToContinue": "ກະລຸນາຢືນຢັນອີເມວກ່ອນເຂົ້າລະບົບ",
+
+"changeEmailTitle": "ປ່ຽນອີເມວ",
+"newEmailHint": "ໃສ່ອີເມວໃໝ່",
+"sendVerificationEmail": "ສົ່ງອີເມວຢືນຢັນ",
+
+"deleteAccountTitle": "ລຶບບັນຊີ",
+"deleteAccountWarning": "ການດຳເນີນການນີ້ຈະລຶບບັນຊີແລະຂໍ້ມູນທັງໝົດຢ່າງຖາວອນ.\nບໍ່ສາມາດກູ້ຄືນໄດ້.",
+"deleteAccountConfirm": "ລຶບບັນຊີຖາວອນ",
+
+"supportTitle": "ຝ່າຍຊ່ວຍເຫຼືອ",
+"supportSubtitle": "ຕິດຕໍ່ພວກເຮົາຖ້າຕ້ອງການຄວາມຊ່ວຍເຫຼືອ.",
+"supportEmailSubject": "ຄຳຮ້ອງຂໍຊ່ວຍເຫຼືອ Vaultara",
+"supportEmailError": "ບໍ່ສາມາດເປີດແອັບອີເມວໄດ້.",
+
+"passwordResetEmailFailed": "ສົ່ງອີເມວຕັ້ງລະຫັດຜ່ານໃໝ່ບໍ່ສຳເລັດ.",
+
+"loggedInPasswordResetBody": "ພວກເຮົາຈະສົ່ງລິ້ງຕັ້ງລະຫັດຜ່ານໃໝ່ໄປທີ່:\n{email}",
+
+"accountManagementTitle": "ການຈັດການບັນຊີ",
+"changeEmailSubtitle": "ອັບເດດອີເມວທີ່ເຊື່ອມກັບບັນຊີ.",
+"changePasswordTitle": "ປ່ຽນລະຫັດຜ່ານ",
+"changePasswordSubtitle": "ພວກເຮົາຈະສົ່ງລິ້ງໃຫ້ທ່ານປ່ຽນຢ່າງປອດໄພ.",
+
+"deleteAccountSubtitle": "ລຶບບັນຊີ Vaultara ຢ່າງຖາວອນ.",
+
+"biometricAuthReason": "ຢືນຢັນຕົວຕົນເພື່ອເຂົ້າເຖິງບັນຊີ Vaultara.",
+
+"verifyEmailTitle": "ຢືນຢັນອີເມວ",
+"verifyEmailBody": "ພວກເຮົາໄດ້ສົ່ງອີເມວຢືນຢັນໄປແລ້ວ. ກະລຸນາເປີດແລະຢືນຢັນອີເມວ ແລ້ວກັບມາທີ່ນີ້.",
+"verifyEmailConfirmedButton": "ຂ້ອຍໄດ້ຢືນຢັນອີເມວແລ້ວ",
+"verifyEmailResendButton": "ສົ່ງອີເມວຢືນຢັນອີກຄັ້ງ",
+"verifyEmailSending": "ກຳລັງສົ່ງ...",
+"navHome": "ໜ້າຫຼັກ",
+"navCategories": "ໝວດ",
+"navInsights": "ວິເຄາະ",
+"navCalendar": "ປະຕິທິນ",
+
+"tutorialCancel": "ຍົກເລີກ",
+"tutorialNext": "ຕໍ່ໄປ",
+"tutorialEnd": "ສິ້ນສຸດຄູ່ມື",
+
+"softDeleteCategory": "ໝວດ",
+"softDeleteGroup": "ກຸ່ມ",
+"softDeleteRecord": "ບັນທຶກ",
+
+"softDeleteTitle": "ຍ້າຍ {type} ໄປທີ່ລຶບແລ້ວ",
+"softDeleteMessage": "{type} \"{name}\" ຈະຖືກຍ້າຍໄປທີ່ລຶບແລ້ວ.\n\nທ່ານສາມາດກູ້ຄືນໄດ້ພາຍໃນ 30 ມື້. ຫຼັງຈາກນັ້ນຈະຖືກລຶບຖາວອນ.",
+"softDeleteMove": "ຍ້າຍ",
+"@recordsExpiring": { "description": "ຈຳນວນບັນທຶກທີ່ກຳລັງໝົດອາຍຸ", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "ສະຖິຕິຂອງກຸ່ມ", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "ຈຳນວນກຸ່ມ", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "ຈຳນວນບັນທຶກ", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "ແຈ້ງການສົ່ງອີເມວກູ້ຄືນລະຫັດ", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "ຫົວຂໍ້ການລຶບຊົ່ວຄາວ", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "ອະທິບາຍການລຶບຊົ່ວຄາວ", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "ລຶບລ່າສຸດ",
+"categories": "ໝວດໝູ່",
+"groups": "ກຸ່ມ",
+"records": "ລາຍການ",
+"restore": "ກູ້ຄືນ",
+"deletePermanently": "ລຶບຖາວອນ",
+
+"recentlyDeletedBanner": "ລາຍການ {type} ທີ່ຖືກລຶບຈະຖືກເກັບໄວ້ 30 ມື້ ກ່ອນຈະຖືກລຶບຖາວອນ.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "ຄົ້ນຫາ {type} ທີ່ຖືກລຶບ",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "ຍັງບໍ່ມີ {type} ທີ່ຖືກລຶບ",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "ແຕະໝວດໝູ່ເພື່ອເບິ່ງກຸ່ມ ແລະ ຈັດການລາຍການ.",
+"groupsHint": "ກຸ່ມຈັດລຽງລາຍການໃນໝວດໝູ່ນີ້. ແຕະກຸ່ມເພື່ອຈັດການລາຍການ.",
+"notLoggedIn": "ຍັງບໍ່ໄດ້ເຂົ້າລະບົບ",
+
+"recordsInsideGroupHint": "ນີ້ແມ່ນລາຍການໃນກຸ່ມນີ້.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" ຖືກຍ້າຍໄປຫາລາຍການທີ່ລຶບລ່າສຸດ",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"ພາສປອດ"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" ຖືກລຶບສຳເລັດ",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"ໃບຂັບຂີ່"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" ຖືກອັບເດດສຳເລັດ",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"ວີຊາ"} } },
+
+"snackAddedSuccessfully": "\"{name}\" ຖືກເພີ່ມສຳເລັດ",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"ປະກັນ"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" ຖືກກູ້ຄືນສຳເລັດ",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"ພາສປອດ"} } },
+
+"snackFreeLimitReached": "ຮອດຂີດຈຳກັດຟຣີ ({current}/{limit}). ອັບເກຣດເພື່ອເພີ່ມອີກ.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "ຄົ້ນຫາບັນທຶກທັງໝົດ",
+"globalSearchHint": "ພິມຊື່ບັນທຶກ, ໝວດໝູ່ ຫຼື ກຸ່ມ",
+"globalSearchNoMatches": "ບໍ່ພົບບັນທຶກທີ່ຕົງກັບການຄົ້ນຫາ.",
+"snackNoRecordsToSearch": "ບໍ່ມີບັນທຶກໃຫ້ຄົ້ນຫາ. ເພີ່ມບັນທຶກແລ້ວ Vaultara ຈະຈັດທຳດັດຊະນີໃຫ້ອັດຕະໂນມັດ.",
+
+"recoveryCentreTitle": "ສູນກູ້ຄືນ",
+"recoveryCentreSubtitle": "ກູ້ຄືນ ຫຼື ລຶບບັນທຶກທີ່ຖືກລຶບຢ່າງຖາວອນ.",
+
+"plan_premium": "ພຣີເມຍມ",
+"plan_free": "ຟຣີ",
+
+"profile_app_settings_title": "ການຕັ້ງຄ່າແອັບ",
+"profile_privacy_security_title": "ຄວາມເປັນສ່ວນຕົວ ແລະ ຄວາມປອດໄພ",
+"profile_biometric_on": "ເປີດການລັອກດ້ວຍຊີວະມິຕິແລ້ວ",
+"profile_biometric_off": "ປິດການລັອກດ້ວຍຊີວະມິຕິແລ້ວ",
+"profile_biometric_enable_reason": "ຢືນຢັນຕົວຕົນເພື່ອເປີດຊີວະມິຕິ",
+"profile_biometric_disable_reason": "ຢືນຢັນຕົວຕົນເພື່ອປິດຊີວະມິຕິ",
+"profile_account_management_title": "ການຈັດການບັນຊີ",
+"profile_premium_active_title": "Premium ເປີດໃຊ້ງານແລ້ວ",
+"profile_premium_upgrade_title": "ອັບເກຣດເປັນ Premium",
+"profile_premium_active_subtitle": "ເປີດໃຊ້ການແຈ້ງເຕືອນຂັ້ນສູງແລ້ວ",
+"profile_premium_upgrade_subtitle": "ເປີດການແຈ້ງເຕືອນຂັ້ນສູງ ແລະ ການຈັດການບໍ່ຈໍາກັດ",
+"profile_manage_cancel_hint": "ຈັດການ ຫຼື ຍົກເລີກໄດ້ທຸກເວລາໃນ Google Play",
+"profile_manage_subscription_button": "ຈັດການການສະໝັກ",
+"plansTitle": "ເລືອກແຜນ",
+"plansTrialBanner": "ເລີ່ມດ້ວຍການທົດລອງຟຣີ 7 ມື້\nຍົກເລີກໄດ້ທຸກເວລາ",
+"plansLoading": "ກໍາລັງໂຫຼດ…",
+"plansStartFreeTrial": "ເລີ່ມທົດລອງຟຣີ",
+"plansNoChargeTodayFooter": "ຟຣີ 7 ມື້ · ບໍ່ມີຄ່າໃຊ້ຈ່າຍວັນນີ້",
+
+"planFreeTitle": "ຟຣີ",
+"planFreeSubtitle": "ສໍາລັບການເລີ່ມຕົ້ນ",
+"planPremiumMonthlyTitle": "Premium ລາຍເດືອນ",
+"planPremiumYearlyTitle": "Premium ລາຍປີ",
+"planPerMonth": "ຕໍ່ເດືອນ",
+"planPerYear": "ຕໍ່ປີ",
+
+"planBadgeCurrent": "ແຜນປັດຈຸບັນ",
+"planBadgePopular": "ນິຍົມ",
+"planBadgeBestValue": "ຄຸ້ມຄ່າທີ່ສຸດ",
+
+"planYouAreOnThisPlan": "ທ່ານຢູ່ໃນແຜນນີ້ແລ້ວ",
+
+"planFeatureUpToRecords": "ສູງສຸດ {count} ລາຍການ",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "ໝວດໝູ່ກໍານົດເອງ (ສູງສຸດ {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "ໝວດຍ່ອຍທີ່ກໍານົດໄວ້",
+"planFeatureCloudStorage": "ພື້ນທີ່ເກັບຂໍ້ມູນຄລາວ",
+"planFeatureSmartExpiryInsights": "ການແຈ້ງເຕືອນກໍານົດເວລາອັດສະລິຍະ",
+"planFeatureCoverageBalance": "ຄວາມສົມດຸນການຄຸ້ມຄອງ",
+"planFeatureRecordStabilityTracking": "ການຕິດຕາມຄວາມສະຖຽນຂອງລາຍການ",
+
+"planFeatureUnlimitedRecords": "ລາຍການບໍ່ຈໍາກັດ",
+"planFeatureUnlimitedCategories": "ໝວດໝູ່ບໍ່ຈໍາກັດ",
+"planFeatureCustomSubcategories": "ໝວດຍ່ອຍກໍານົດເອງ",
+"planFeatureMultipleRemindersPerRecord": "ຫຼາຍການແຈ້ງເຕືອນ",
+"planFeatureAdvancedReminderTiming": "ການຕັ້ງເວລາຂັ້ນສູງ",
+"planFeatureAutomaticFollowUps": "ການຕິດຕາມອັດຕະໂນມັດ",
+
+"planFeatureEverythingInMonthly": "ທຸກຢ່າງໃນແຜນລາຍເດືອນ",
+"planFeatureSavePercentComparedToMonthly": "ປະຢັດ {percent}% ເມື່ອທຽບກັບລາຍເດືອນ",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "ຄຸ້ມຄ່າລະຍະຍາວທີ່ສຸດ",
+
+"editorReminderLabel": "ການແຈ້ງເຕືອນ",
+"editorReminderSelectOptional": "ເລືອກການແຈ້ງເຕືອນ (ທາງເລືອກ)",
+"editorReminderOnExpiry": "ໃນວັນໝົດອາຍຸ",
+"editorReminderDaysBefore": "{days} ມື້ກ່ອນໝົດອາຍຸ",
+"editorFreeItemsCount": "ລາຍການຟຣີ: {used}/{limit}",
+"editorExpiryPastWarning": "ວັນໝົດອາຍຸໄດ້ຜ່ານໄປແລ້ວ.",
+"editorExpiryTodayWarning": "ລາຍການນີ້ໝົດອາຍຸມື້ນີ້.",
+"editorErrorExpiryPast": "ວັນໝົດອາຍຸບໍ່ສາມາດເປັນອະດີດໄດ້.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "ຂໍ້ມູນມື້ນີ້",
+"tutorialBannerTitle": "ຄໍາແນະນໍາດ່ວນ",
+"tutorialBannerBody": "ຮຽນຮູ້ວິທີຄົ້ນຫາ, ເພີ່ມລາຍການ ແລະ ເຂົ້າໃຈຂໍ້ມູນໃນ 1 ນາທີ.",
+"tutorialBannerStart": "ເລີ່ມຄໍາແນະນໍາ",
+"tutorialBannerDismiss": "ບໍ່ໃນຕອນນີ້",
+"authErrorUserDisabled": "ບັນຊີນີ້ຖືກປິດໃຊ້ງານ.",
+"authErrorNetwork": "ຂໍ້ຜິດພາດເຄືອຂ່າຍ. ກວດສອບອິນເຕີເນັດແລ້ວລອງໃໝ່.",
+"authErrorTooManyRequests": "ມີຄວາມພະຍາຍາມຫຼາຍເກີນໄປ. ກະລຸນາລອງໃໝ່ພາຍຫຼັງ.",
+"authErrorSignInFailed": "ການເຂົ້າລະບົບລົ້ມເຫຼວ. ກະລຸນາລອງໃໝ່.",
+"ok": "ຕົກລົງ",
+"snackPremiumEnabled": "ເປີດໃຊ້ Premium ແລ້ວ",
+"snackPremiumRestored": "ກູ້ຄືນ Premium ແລ້ວ",
+"passwordNeedLower": "ຕ້ອງມີຕົວອັກສອນນ້ອຍ",
+"passwordNeedUpper": "ຕ້ອງມີຕົວອັກສອນໃຫຍ່",
+"passwordNeedNumber": "ຕ້ອງມີຕົວເລກ",
+"passwordNeedSymbol": "ຕ້ອງມີສັນຍາລັກ",
+"summaryAllTitle": "ລາຍການທັງໝົດ",
+"summaryAllCaption": "ຕິດຕາມຢູ່ໃນ Vaultara",
+"summarySoonTitle": "ໃກ້ໝົດອາຍຸ",
+"summarySoonCaption": "ພາຍໃນ 30 ມື້",
+"summaryWeekTitle": "ອາທິດນີ້",
+"summaryWeekCaption": "ໝົດອາຍຸໃນ 7 ມື້",
+"summaryExpiredTitle": "ໝົດອາຍຸແລ້ວ",
+"summaryExpiredCaption": "ຜ່ານວັນໝົດອາຍຸ",
+
+"stabilityStableTitle": "ທຸກຢ່າງເບິ່ງຈະສະໝຳເສມ",
+"stabilityStableBody": "ບັນທຶກຂອງທ່ານບໍ່ມີຄວາມສ່ຽງທັນທີ ຫຼື ກໍາລັງສະສົມ.",
+"stabilityDecliningTitle": "ຄວາມສະໝຳເສມກໍາລັງຫຼຸດລົງ",
+"stabilityDecliningBody": "ບາງລາຍການໝົດອາຍຸແລ້ວ ແລະ ອີກຫຼາຍລາຍການກໍາລັງໃກ້ເຂົ້າມາ.",
+"stabilityWeakenedTitle": "ຄວາມສະໝຳເສມອ່ອນລົງ",
+"stabilityWeakenedBody": "ມີບັນທຶກທີ່ໝົດອາຍຸ ທໍາໃຫ້ຄວາມໜ້າເຊື່ອຖືໂດຍລວມຫຼຸດລົງ.",
+"stabilityPressureTitle": "ຄວາມກົດດັນກໍາລັງເພີ່ມຂຶ້ນ",
+"stabilityPressureBody": "ຫຼາຍບັນທຶກຈະຕ້ອງໄດ້ຮັບຄວາມສົນໃຈໃນໄວໆນີ້ເພື່ອຮັກສາຄວາມສະໝຳເສມ.",
+
+"tutorialHomeSearch": "ໃຊ້ແຖບຄົ້ນຫາເພື່ອຊອກຫາບັນທຶກທີ່ທ່ານກໍາລັງຕິດຕາມໄດ້ຢ່າງໄວ.",
+"tutorialHomeFab": "ເພີ່ມບັນທຶກອັນທໍາອິດຂອງທ່ານທີ່ນີ້.\nເລືອກວ່າມັນຄວນຢູ່ສ່ວນໃດ, ເພີ່ມໝາຍເຫດ (ທາງເລືອກ) ແລະ ເລືອກວັນໝົດອາຍຸ.",
+"tutorialHomeSummary": "ເມື່ອທ່ານເພີ່ມບັນທຶກຫຼາຍຂຶ້ນ, ສ່ວນນີ້ຊ່ວຍໃຫ້ເຫັນລາຍການທີ່ໃກ້ໝົດອາຍຸ ຫຼື ໝົດອາຍຸແລ້ວ.",
+"tutorialHomeInsight": "ຂໍ້ມູນອັດສະລິຍະນີ້ຊີ້ໃຫ້ເຫັນຮູບແບບ ແລະ ກໍານົດເວລາທີ່ກໍາລັງໃກ້ເຂົ້າມາ.\nທ່ານສາມາດແຕະໄອຄອນລໍາໂພງເພື່ອໃຫ້ອ່ານອອກສຽງໄດ້.",
+"tutorialHomeCoverage": "Coverage Balance ບອກວ່າບັນທຶກຂອງທ່ານກະຈາຍຢູ່ໃນທຸກໝວດໝູ່ຢ່າງເທົ່າເທິງປານໃດ.\nຄ່າທີ່ສູງກວ່າໝາຍເຖິງຊ່ອງວ່າງໃນການຕິດຕາມນ້ອຍລົງ.",
+"tutorialHomeStability": "Stability ສະທ້ອນວ່າບັນທຶກຂອງທ່ານໜ້າເຊື່ອຖືຕາມເວລາແນວໃດ.\nລາຍການທີ່ໝົດອາຍຸ ແລະ ກໍານົດເວລາທີ່ກໍາລັງໃກ້ມາ ອາດຫຼຸດຄ່າຄວາມສະໝຳເສມໂດຍລວມ.",
+
+"profile_account_management_subtitle": "ປ່ຽນອີເມວ, ລະຫັດຜ່ານ ຫຼື ລຶບບັນຊີຂອງທ່ານ.",
+"confirmIdentityTitle": "ຢືນຢັນຕົວຕົນ",
+"confirm": "ຢືນຢັນ",
+"profile_sign_out_title": "ອອກຈາກລະບົບ",
+"profile_sign_out_subtitle": "ອອກຈາກ Vaultara ໃນອຸປະກອນນີ້",
+"profile_sign_out_confirm_title": "ອອກຈາກລະບົບບໍ?",
+"profile_sign_out_confirm_body": "ເຈົ້າຈະຕ້ອງເຂົ້າລະບົບອີກຄັ້ງເພື່ອເຂົ້າເຖິງບັນຊີ.",
+"profile_sign_out_action": "ອອກຈາກລະບົບ",
+"todayInsightsAudioHint": "ຕ້ອງການຟັງສຽງບໍ? ໃຊ້ໄອຄອນລຳໂພງ.",
+"category2Label": "ໝວດໝູ່",
+"enable2BiometricsBody": "ໃຊ້ການຈຳແນກລາຍນິ້ວມືເພື່ອປົກປ້ອງບັນຊີ Vaultara.",
+"snackNotificationsDisabled": "ການແຈ້ງເຕືອນຖືກປິດຢູ່. ເປີດເພື່ອຮັບການແຈ້ງເຕືອນ.",
+"openSettings": "ເປີດການຕັ້ງຄ່າ",
+
+"reminderOnExpiryTitle": "ໝົດອາຍຸມື້ນີ້",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "ສະບາຍດີ {firstName}, \"{itemName}\" ໝົດອາຍຸມື້ນີ້.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "ໝວດໝູ່ຟຣີ: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "ສະແດງຈຳນວນໝວດໝູ່ຟຣີທີ່ໃຊ້ໄປຈາກຂີດຈຳກັດຟຣີ.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "ເພີ່ມບັນທຶກ (ທາງເລືອກ)",
+"apply": "ນຳໃຊ້",
+"smartInsightExpiresTodayHeading": "ໝົດອາຍຸມື້ນີ້",
+"smartInsightExpiresTodaySingleBody": "{name} ຈະໝົດອາຍຸໃນມື້ນີ້. ດຳເນີນການຕອນນີ້ເພື່ອໃຫ້ຂໍ້ມູນຍັງທັນສະໄໝ.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} ແລະອີກ {extra} ເອກະສານຈະໝົດອາຍຸໃນມື້ນີ້.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "ຕ້ອງການຄວາມສົນໃຈຂອງທ່ານ",
+"smartInsightSilentRiskBody": "{name} ຈະໝົດອາຍຸໃນອີກ {days} ວັນ ແລະຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ. ກະລຸນາກວດສອບວ່າຂໍ້ມູນຍັງຖືກຕ້ອງ.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "ມີຫຼາຍການຕໍ່ອາຍຸໃກ້ກັນ",
+"smartInsightRenewalTwinBodyTwo": "{a} ແລະ {b} ຈະໝົດອາຍຸພາຍໃນສາມອາທິດ. ວາງແຜນລ່ວງໜ້າ.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} ແລະ {c} ຈະໝົດອາຍຸພາຍໃນສາມອາທິດ. ວາງແຜນລ່ວງໜ້າ.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} ແລະອີກ {extra} ເອກະສານຈະໝົດອາຍຸພາຍໃນສາມອາທິດ. ວາງແຜນລ່ວງໜ້າ.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "ກຸ່ມທີ່ກຳລັງຈະມາ",
+"smartInsightClusterBody": "ມີ {count} ເອກະສານໃນໝວດ {category} ຈະໝົດອາຍຸໃນສອງເດືອນຂ້າງໜ້າ. ພິຈາລະນາຈັດການພ້ອມກັນ.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ຊ່ວງເວລາສະຫງົບຂ້າງໜ້າ",
+"smartInsightQuietPeriodBody": "ຈະບໍ່ມີການໝົດອາຍຸໃນ {days} ວັນຂ້າງໜ້າ. ການຕໍ່ອາຍຸຄັ້ງຕໍ່ໄປແມ່ນ {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "ທຸກຢ່າງເປັນປັດຈຸບັນ",
+"smartInsightAllCaughtUpBody": "ການໝົດອາຍຸທັງ {count} ລາຍການມີການເຕືອນແລ້ວ. ບໍ່ມີສິ່ງໃດທີ່ຕ້ອງໃຫ້ຄວາມສົນໃຈ.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "ທຸກຢ່າງເປັນປັດຈຸບັນ. ບໍ່ມີສິ່ງໃດຕ້ອງໃຫ້ຄວາມສົນໃຈໃນຕອນນີ້.",
+"smartInsightNoRecordsHeading": "ເພີ່ມບັນທຶກທຳອິດຂອງທ່ານ",
+"smartInsightNoRecordsBody": "ເລີ່ມຕິດຕາມເອກະສານຂອງທ່ານ ແລະ Vaultara ຈະສະແດງຂໍ້ມູນອັດສະລິຍະຢູ່ທີ່ນີ້.",
+"expiryTimelineTitle": "ໄລຍະເວລາໝົດອາຍຸ",
+"expiryTimelineSubtitle": "ແຕະເດືອນເພື່ອເບິ່ງບັນທຶກທີ່ໝົດອາຍຸໃນເດືອນນັ້ນ",
+"expiryTimelineDetailCount": "{count} ບັນທຶກ",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "ກຳລັງຈະມາ",
+"summaryUpcomingCaption": "ພາຍໃນ 30 ມື້",
+"summaryUrgentTitle": "ດ່ວນ",
+"summaryUrgentCaption": "ພາຍໃນ 7 ມື້"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

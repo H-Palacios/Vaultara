@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "到期日历",
 
-  "calendarIntro":
-    "选择查看到期项目的方式：\n\n• 输入从今天起的天数。\n• 或选择一个具体的日期。\n\nVaultara 将显示在该日期到期的项目。",
+  "calendarIntro": "选择查看到期项目的方式：\n\n• 输入从今天起的天数。\n• 或选择一个具体的日期。\n\nVaultara 将显示在该日期到期的项目。",
 
   "daysFromTodayLabel": "距今天数",
   "daysFromTodayHint": "例如 0、1、7、30",
@@ -19,7 +18,9 @@
 
   "inDays": "{days} 天后",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
   "enterDaysError": "请输入天数。",
@@ -27,7 +28,9 @@
 
   "showingItemsRelative": "显示 {time} 到期的项目",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
   "showingItemsExact": "显示在所选日期到期的项目",
@@ -71,16 +74,24 @@
   "categoryNameLabel": "类别名称",
   "categoryNameHint": "输入类别",
 
-  "categoryLimitReached":
-    "已达到基础版限制。升级到高级版以创建无限类别。",
+  "categoryLimitReached": "您已达到基础版的 {limit} 个类别限制。升级到高级版可创建无限类别。",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
 
-  "categoryLimitInfo":
-    "基础版最多可创建 {limit} 个自定义类别。",
+  "categoryLimitInfo": "在基础版中，您最多可以创建 {limit} 个自定义类别。",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
 
   "categoryErrorEmpty": "类别名称不能为空",
   "categoryErrorTooShort": "类别名称过短",
   "categoryErrorTooLong": "类别名称过长",
-  "categoryErrorSymbols": "类别名称不能包含符号",
+  "categoryErrorSymbols": "类别名称不能只包含符号",
   "categoryErrorNumbers": "类别名称不能包含数字",
 
   "upgradeRequired": "需要升级",
@@ -88,6 +99,7 @@
   "createCategory": "创建",
 
   "addGroupTitle": "添加分组",
+
   "groupNameLabel": "分组",
   "groupNameHint": "输入分组",
 
@@ -97,5 +109,801 @@
   "groupErrorSymbols": "分组名称不能包含符号",
   "groupErrorNumbers": "分组名称不能包含数字",
 
-  "createGroup": "创建"
+  "createGroup": "创建",
+
+  "registerTitle": "创建账户",
+
+  "firstNameLabel": "名字",
+  "firstNameHint": "输入名字",
+  "errorFirstName": "名字是必填项",
+
+  "lastNameLabel": "姓氏",
+  "lastNameHint": "输入姓氏",
+  "errorLastName": "姓氏是必填项",
+
+  "emailLabel": "电子邮箱",
+  "emailRequired": "需要您的电子邮件",
+"passwordRequired": "需要您的密码",
+"registerPasswordHint": "输入密码",
+"loginPasswordHint": "输入您的密码",
+"emailHint": "输入您的电子邮件地址",
+  "errorEmailInvalid": "请输入有效的电子邮箱",
+  "errorEmailInUse": "该电子邮箱已关联\nVaultara 账户",
+
+  "passwordLabel": "密码",
+  "passwordHelper": "至少 8 个字符，包含多种类型",
+
+  "passwordTooShort": "太短",
+  "passwordTooWeak": "太弱",
+  "passwordMedium": "中等",
+  "passwordStrong": "强",
+  "errorPasswordLength": "密码至少需要 8 个字符",
+  "errorPasswordWeak": "请输入更强的密码",
+
+  "errorGeneric": "注册失败，请重试",
+
+  "createAccount": "创建账户",
+
+  "appName": "Vaultara",
+  "authTagline": "用于护照、许可证、卡片和其他重要物品的个人中心",
+  "tabSignIn": "登录",
+  "tabCreateAccount": "创建账户",
+  "signInFooterText": "登录以访问您的 Vaultara 个人空间并管理所有续期",
+  "createAccountFooterText": "创建 Vaultara 账户以备份重要提醒并随时访问",
+  "emailNotFound": "邮箱错误。\n该邮箱没有 Vaultara 账户",
+  "incorrectPassword": "密码错误",
+  "emailLabel": "电子邮箱地址",
+  "passwordLabel": "密码",
+  "signIn": "登录",
+   "categoryPersonalIdentification": "个人身份",
+  "categoryDrivingAndVehicles": "驾驶与车辆",
+  "categoryTravelAndImmigration": "旅行与移民",
+  "categoryBankingAndCards": "银行与卡片",
+  "categoryInsuranceAndCover": "保险与保障",
+  "categoryHealthAndMedical": "健康与医疗",
+  "categoryWorkAndProfessional": "工作与职业",
+  "categoryPropertyAndHousing": "房产与住房",
+  "categoryHouseholdAndUtilities": "家庭与公共服务",
+
+  "subcategoryPassports": "护照",
+  "subcategoryIdCards": "身份证",
+  "subcategoryResidencePermits": "居留许可",
+
+  "subcategoryDrivingLicences": "驾驶执照",
+  "subcategoryVehicleRegistrations": "车辆登记",
+  "subcategoryRoadworthyCertificates": "车辆合格证",
+  "subcategoryVehicleInspectionCertificates": "车辆检测证书",
+
+  "subcategoryVisas": "签证",
+  "subcategoryStudyPermits": "学习许可",
+  "subcategoryWorkPermits": "工作许可",
+  "subcategoryTravelInsuranceDocuments": "旅行保险文件",
+
+  "subcategoryDebitAndCreditCards": "借记卡和信用卡",
+  "subcategoryStoreCards": "商店卡",
+  "subcategoryFuelCards": "燃油卡",
+
+  "subcategoryVehicleInsurances": "车辆保险",
+  "subcategoryPropertyInsurances": "房产保险",
+  "subcategoryLifeInsurances": "人寿保险",
+  "subcategoryHealthInsurances": "健康保险",
+  "subcategoryTravelInsurances": "旅行保险",
+
+  "subcategoryMedicalPrescriptions": "医疗处方",
+  "subcategoryOpticalPrescriptions": "眼科处方",
+  "subcategoryMedicalCertificates": "医疗证明",
+
+  "subcategoryProfessionalLicences": "专业执照",
+  "subcategoryProfessionalRegistrations": "专业注册",
+  "subcategoryIndustryRegistrations": "行业注册",
+  "subcategoryWorkAccessCards": "工作通行证",
+
+  "subcategoryLeaseAgreements": "租赁协议",
+  "subcategoryAccessCardsAndTags": "门禁卡与标签",
+  "subcategoryParkingPermits": "停车许可",
+  "subcategorySecurityAccessPermits": "安全通行许可",
+
+  "subcategoryElectricityAccounts": "电力账户",
+  "subcategoryWaterAccounts": "水务账户",
+  "subcategoryInternetContracts": "互联网合约",
+  "subcategorySecurityServiceContracts": "安保服务合约",
+   "searchCategories": "搜索类别",
+  "filterAll": "全部",
+  "filterPreset": "预设",
+  "filterCustom": "自定义",
+  "addCategoryTitle": "添加类别",
+  "customLabel": "自定义",
+  "subcategoriesLabel": "子类别",
+  "itemsLabel": "项目",
+  "itemsExpiring": "{count} 个项目将在 {days} 天内到期",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "已固定的重要类别",
+  "pinnedHint": "固定你经常打开的类别，使它们始终显示在列表顶部。",
+  "noCategoriesFound": "未找到任何类别",
+   "searchGroups": "搜索分组",
+  "addGroupTitle": "添加分组",
+  "basicPlanGroupInfo": "您正在使用基础版。\n您可以查看此分类下的预设分组。\n升级到高级版以创建您自己的分组。",
+  "groupDeleted": "分组已删除",
+  "undo": "撤销",
+  "groupStats": "{items} 个项目 • {expiring} 个将在 {days} 天内到期",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "点击以添加并管理此分组中的项目。",
+  "itemsInGroup": "此组中的项目",
+  "itemsInGroupHint": "跟踪重要项目及其到期日期，以便及时续期。",
+  "searchItems": "搜索项目",
+  "filterAll": "全部",
+  "filterExpiringWithin": "{days} 天内到期",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "已过期",
+  "addItem": "添加项目",
+  "noItemsYet": "暂无项目。",
+
+  "statusExpired": "已过期",
+  "statusExpiresToday": "今天到期",
+  "statusExpiresInOneDay": "1 天后到期",
+  "statusExpiresInDays": "{days} 天后到期",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "有效",
+
+  "deleteCategoryTitle": "删除类别",
+  "deleteCategoryMessage": "确定要删除类别“{name}”吗？",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "删除分组",
+  "deleteGroupMessage": "确定要删除分组“{name}”吗？",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "删除项目",
+  "deleteItemMessage": "确定要删除“{name}”吗？",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "取消",
+  "delete": "删除",
+  "homeWelcomeFirstTitle": "欢迎，{name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "欢迎回来，{name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara 可帮助您跟踪重要的到期日期，避免遗漏任何事项。",
+
+"homeWelcomeSubtitleFirst":
+  "很高兴见到您。Vaultara 可帮助您在一个安全的位置整理重要日期和记录。",
+
+"homeWelcomeSubtitleBack":
+  "很高兴再次见到您。每当您想查看重要日期和记录时，Vaultara 都已准备就绪。",
+  "insightEmptyTitle": "你还没有添加任何内容",
+  "insightEmptyBody": "当你开始跟踪重要日期时，Vaultara 会帮助你提前应对到期情况。",
+
+  "insightExpiresTodayTitle": "“{name}” 今天到期",
+  "insightExpiresTodayBody": "现在快速查看有助于保持信息准确。",
+
+  "insightExpiresTomorrowTitle": "“{name}” 明天到期",
+  "insightExpiresTomorrowBody": "现在检查可以节省以后时间。",
+
+  "insightExpiresSoonTitle": "“{name}” 将于 {date} 到期",
+  "insightExpiresSoonBody": "提前处理会让事情更轻松。",
+
+  "insightNextExpiryTitle": "下一个到期的是 “{name}”（{date}）",
+  "insightNextExpiryBody": "目前不需要采取行动。",
+
+  "insightClusteredTitle": "多个项目集中在 {month} 到期",
+  "insightClusteredBody": "一起查看可以节省时间。",
+
+  "insightTopCategoryTitle": "大多数项目位于 {category}",
+  "insightTopCategoryBody": "从这里开始会带来最大的效果。",
+
+  "insightStableTitle": "目前一切都很稳定",
+  "insightStableBody": "暂时没有需要关注的到期事项。",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "欢迎",
+  "summaryAllTitle": "所有项目",
+"summaryAllCaption": "在 Vaultara 中跟踪",
+"summarySoonTitle": "即将到期",
+"summarySoonCaption": "30 天内",
+"summaryWeekTitle": "本周",
+"summaryWeekCaption": "7 天内到期",
+"summaryExpiredTitle": "已过期",
+"summaryExpiredCaption": "到期日期已过",
+"stabilityStableTitle": "一切看起来很稳定",
+"stabilityStableBody": "您的记录未显示任何即时或累积风险。",
+
+"stabilityDecliningTitle": "稳定性正在下降",
+"stabilityDecliningBody": "部分项目已过期，其他项目即将到期。",
+
+"stabilityWeakenedTitle": "稳定性减弱",
+"stabilityWeakenedBody": "存在已过期记录会降低整体可靠性。",
+
+"stabilityPressureTitle": "压力正在增加",
+"stabilityPressureBody": "为了保持稳定，一些记录将很快需要关注。",
+"editorNotes": "备注",
+"notesHint": "输入备注",
+"editorReminderTitle": "提醒",
+"editorReminderNone": "无提醒",
+"editorReminderOnExpiry": "到期当天",
+"editorReminder7Days": "到期前 7 天",
+"editorReminder30Days": "到期前 30 天",
+"editorReminderCustom": "自定义",
+"daysBeforeExpiry": "到期前天数",
+"reminderStage0Title": "到期提醒",
+"reminderStage0Body": "{firstName}，{itemName} 将在 {days} 天后到期。",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "跟进提醒",
+"reminderStage1Body": "{firstName}，{itemName} 尚未更新。",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "即将到期",
+"reminderStage2Body": "{itemName} 的到期日期正在接近。",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "最终提醒",
+"reminderFinalBody": "{firstName}，请立即更新 {itemName}。",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "覆盖平衡",
+"coverageAllRepresented": "您的记录涵盖了所有类别。",
+"coverageMissingNamed": "在 {count} 个类别中未找到记录：{names}。",
+"coverageMissingSummary": "您尚未在 {count} 个分类中添加任何记录，包括 {names} 以及另外 {remaining} 个。",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "使用密码",
+"signInWithBiometrics": "使用生物识别登录",
+"enableBiometricsTitle": "启用生物识别安全",
+"enableBiometricsBody": "使用指纹或面部识别来保护 Vaultara。",
+"enableBiometricsReason": "为 Vaultara 启用生物识别解锁。",
+"notNow": "暂不",
+"useBiometrics": "使用生物识别",
+"recordsCalendarIntro":
+  "选择您想要查看到期日期的方式：\n\n• 输入从今天开始想要查看的天数。\n• 或在日历中选择一个具体日期。\n\nVaultara 将显示在该日期到期的记录。",
+
+"showingRecordsRelative": "正在显示 {time} 到期的记录",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "正在显示在所选日期到期的记录",
+
+"noRecordsOnDate":
+  "没有记录设置为在该日期到期。",
+
+"recordEditorAddTitle": "添加记录",
+"recordEditorEditTitle": "编辑记录",
+
+"editorRecordName": "记录名称",
+"editorRecordNameHint": "输入记录名称",
+"recordEditorErrorName": "记录名称为必填项",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "点击以添加并跟踪此组中的记录。",
+
+"recordsInGroup": "此组中的记录",
+
+"recordsInGroupHint":
+  "跟踪每条重要记录及其到期日期，以便及时更新。",
+
+"searchRecords": "搜索记录",
+"addRecord": "添加记录",
+"noRecordsYet": "暂无记录。",
+
+"deleteRecordTitle": "删除记录",
+
+"recordsInsightClusteredTitle":
+  "多条记录将在 {month} 左右到期",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "您的大多数记录归类于 {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "所有记录",
+
+"recordsStabilityDecliningBody":
+  "部分记录已过期，更多记录即将到期。",
+
+"recordsCoverageAllRepresented":
+  "您的记录涵盖所有类别。",
+
+"recordReminderStage0Body":
+  "{firstName}，您的记录 {recordName} 将在 {days} 天后到期。",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}，您的记录 {recordName} 尚未更新。",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "记录 {recordName} 的到期日期即将到来。",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}，请立即更新记录 {recordName}。",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "暂无群组",
+"recordsExpiring": "{count, plural, one {{days}天内有1条记录到期} other {{days}天内有{count}条记录到期}}",
+"recordsGroupStats": "{records, plural, one {1条记录} other {{records}条记录}} • {expiring}条将在{days}天内到期",
+"groupLabel": "{count, plural, one {{count} 个组} other {{count} 个组}}",
+"recordsLabel": "{count, plural, one {{count} 条记录} other {{count} 条记录}}",
+"forgotPassword": "忘记密码？",
+  "forgotPasswordTitle": "重置密码",
+  "forgotPasswordBody": "请输入您的电子邮箱地址，我们将向您发送重置密码的链接。",
+  "sendResetLink": "发送链接",
+  "passwordResetEmailSent": "重置密码的电子邮件已发送。",
+  "verifyEmailToContinue": "请在登录前验证您的电子邮件地址",
+  "changeEmailTitle": "更改电子邮件地址",
+"newEmailHint": "请输入您的新电子邮件",
+"sendVerificationEmail": "发送验证邮件",
+"deleteAccountTitle": "删除账户",
+"deleteAccountWarning": "此操作将永久删除您的账户以及所有已保存的数据。\n此操作无法撤销。",
+"deleteAccountConfirm": "永久删除账户",
+"supportTitle": "支持",
+"supportSubtitle": "如果您需要帮助或有疑问，请联系我们。",
+"supportEmailSubject": "Vaultara 支持请求",
+"supportEmailError": "无法打开电子邮件应用。",
+"passwordResetEmailFailed": "无法发送密码重置电子邮件。",
+"loggedInPasswordResetBody": "我们将把密码重置链接发送到：\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "账户管理",
+"changeEmailTitle": "更改电子邮箱",
+"changeEmailSubtitle": "更新与您账户关联的电子邮箱。",
+"changePasswordTitle": "更改密码",
+"changePasswordSubtitle": "我们将通过电子邮件向您发送安全更改密码的链接。",
+"deleteAccountTitle": "删除账户",
+"deleteAccountSubtitle": "永久删除您的 Vaultara 账户。",
+"biometricAuthReason": "请验证以访问您的账户",
+"verifyEmailTitle": "验证您的电子邮箱",
+"verifyEmailBody": "我们已向您的收件箱发送了一封验证邮件。请打开并确认您的电子邮箱地址，然后返回此处继续。",
+"verifyEmailConfirmedButton": "我已验证我的电子邮箱",
+"verifyEmailResendButton": "重新发送验证邮件",
+"verifyEmailSending": "发送中...",
+"navHome": "首页",
+"navCategories": "分类",
+"navInsights": "洞察",
+"navCalendar": "日历",
+"tutorialHomeSearch": "使用搜索栏快速查找您正在跟踪的任何记录。",
+"tutorialHomeFab": "在此添加您的第一条记录。\n选择所属位置，添加可选备注，并选择到期日期。",
+"tutorialHomeSummary": "当您添加更多记录时，此部分可帮助您发现即将到期或已到期的项目。",
+"tutorialHomeInsight": "此智能洞察可突出显示模式和即将到期的项目。\n您可以点击扬声器图标进行收听。",
+"tutorialHomeCoverage": "覆盖平衡显示您的记录分布是否均匀。\n更高的平衡表示更少的空缺。",
+"tutorialHomeStability": "稳定性反映了记录随时间的可靠性。\n已到期和即将到期的项目可能会降低稳定性。",
+"tutorialCancel": "取消",
+"tutorialNext": "下一步",
+"tutorialEnd": "结束教程",
+"softDeleteCategory": "类别",
+"softDeleteGroup": "分组",
+"softDeleteRecord": "记录",
+
+"softDeleteTitle": "将{type}移至最近删除",
+
+"softDeleteMessage": "{type} \"{name}\" 将被移至最近删除。\n\n您可以在30天内恢复。之后将被永久删除。",
+
+"softDeleteMove": "移动",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "最近删除",
+"categories": "类别",
+"groups": "分组",
+"records": "记录",
+"restore": "恢复",
+"deletePermanently": "永久删除",
+
+"recentlyDeletedBanner": "已删除的 {type} 将保存 30 天。",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "搜索已删除的 {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "没有已删除的 {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "点击类别以查看其分组并管理您的记录。",
+"groupsHint": "分组会在此类别中整理您的记录。点击分组以管理记录。",
+"notLoggedIn": "未登录",
+"recordsInsideGroupHint": "这些是该组内的记录。",
+"snackMovedToRecentlyDeleted": "“{name}”已移至最近删除",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "“{name}”删除成功",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "“{name}”更新成功",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "“{name}”添加成功",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "“{name}”恢复成功",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "已达到免费上限（{current}/{limit}）。升级以添加更多。",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "搜索所有记录",
+"globalSearchHint": "输入记录名称、类别或组",
+"globalSearchNoMatches": "没有记录与您的搜索匹配。",
+"snackNoRecordsToSearch": "没有可搜索的记录。添加一些记录后，Vaultara 将自动建立索引。",
+"recoveryCentreTitle": "恢复中心",
+"recoveryCentreSubtitle": "恢复或永久删除已移除的记录。",
+"plan_premium": "高级版",
+"plan_free": "免费",
+"profile_app_settings_title": "应用设置",
+"profile_privacy_security_title": "隐私与安全",
+"profile_biometric_on": "此设备已启用生物识别锁。",
+"profile_biometric_off": "此设备未启用生物识别锁。",
+"profile_biometric_enable_reason": "请确认身份以启用生物识别锁。",
+"profile_biometric_disable_reason": "请确认身份以关闭生物识别锁。",
+"profile_account_management_title": "账户管理",
+"profile_account_management_subtitle": "更改邮箱、密码或删除账户。",
+"profile_premium_active_title": "高级版已激活",
+"profile_premium_upgrade_title": "升级到高级版",
+"profile_premium_active_subtitle": "高级提醒已解锁。",
+"profile_premium_upgrade_subtitle": "解锁高级提醒和无限整理功能。",
+"profile_manage_cancel_hint": "可随时在 Google Play 中管理或取消。",
+"profile_manage_subscription_button": "管理订阅",
+"plansTitle": "选择您的方案",
+"plansTrialBanner": "7天免费试用。\n随时取消。",
+"plansLoading": "加载中…",
+"plansStartFreeTrial": "开始免费试用",
+"plansNoChargeTodayFooter": "7天免费 · 今日不收费",
+
+"planFreeTitle": "免费",
+"planFreeSubtitle": "用于入门",
+"planPremiumMonthlyTitle": "高级月付",
+"planPremiumYearlyTitle": "高级年付",
+"planPerMonth": "每月",
+"planPerYear": "每年",
+
+"planBadgeCurrent": "当前方案",
+"planBadgePopular": "热门",
+"planBadgeBestValue": "最优选择",
+
+"planYouAreOnThisPlan": "您正在使用此方案。",
+
+"planFeatureUpToRecords": "最多 {count} 条记录",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "自定义分类（最多 {count} 个）",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "预设子分类",
+"planFeatureCloudStorage": "云端存储",
+"planFeatureSmartExpiryInsights": "到期分析",
+"planFeatureCoverageBalance": "分类平衡",
+"planFeatureRecordStabilityTracking": "记录稳定性",
+
+"planFeatureUnlimitedRecords": "无限记录",
+"planFeatureUnlimitedCategories": "无限分类",
+"planFeatureCustomSubcategories": "自定义子分类",
+"planFeatureMultipleRemindersPerRecord": "多个提醒",
+"planFeatureAdvancedReminderTiming": "高级时间设置",
+"planFeatureAutomaticFollowUps": "自动跟进提醒",
+
+"planFeatureEverythingInMonthly": "包含月付所有内容",
+"planFeatureSavePercentComparedToMonthly": "比月付节省 {percent}%",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "长期最佳价值",
+"editorReminderLabel": "提醒",
+"editorReminderSelectOptional": "选择提醒（可选）",
+"editorReminderOnExpiry": "到期当天",
+"editorReminderDaysBefore": "到期前 {days} 天",
+"editorFreeItemsCount": "免费记录：{used}/{limit}",
+"editorExpiryPastWarning": "到期日期已过。",
+"editorExpiryTodayWarning": "此记录今天到期。",
+"editorErrorExpiryPast": "到期日期不能是过去的日期。",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "今日洞察",
+"tutorialBannerTitle": "快速指引",
+"tutorialBannerBody": "在一分钟内了解如何搜索、添加记录，以及洞察的含义。",
+"tutorialBannerStart": "开始教程",
+"tutorialBannerDismiss": "暂不",
+"authErrorUserDisabled": "此账户已被停用。",
+"authErrorNetwork": "网络错误，请重试。",
+"authErrorTooManyRequests": "尝试次数过多，请稍后再试。",
+"authErrorSignInFailed": "登录失败，请重试。",
+"ok": "确定",
+"snackPremiumEnabled": "高级版已启用",
+"snackPremiumRestored": "高级版已恢复",
+"passwordNeedLower": "必须包含小写字母",
+"passwordNeedUpper": "必须包含大写字母",
+"passwordNeedNumber": "必须包含数字",
+"passwordNeedSymbol": "必须包含符号",
+"confirmIdentityTitle": "确认身份",
+"confirm": "确认",
+"profile_sign_out_title": "退出登录",
+"profile_sign_out_subtitle": "在此设备上退出 Vaultara",
+"profile_sign_out_confirm_title": "要退出登录吗？",
+"profile_sign_out_confirm_body": "您需要重新登录才能访问您的账户。",
+"profile_sign_out_action": "退出登录",
+"todayInsightsAudioHint": "更喜欢听音频？使用扬声器图标。",
+"category2Label": "类别",
+"enable2BiometricsBody": "使用指纹识别来保护你的 Vaultara 账户。",
+"snackNotificationsDisabled": "通知已关闭。请开启以接收提醒。",
+"openSettings": "打开设置",
+
+"reminderOnExpiryTitle": "今天到期",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "你好 {firstName}，“{itemName}”今天到期。",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "免费类别：{current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "显示已使用的免费类别数量与免费上限。",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "添加备注（可选）",
+"apply": "应用",
+"smartInsightExpiresTodayHeading": "今天到期",
+"smartInsightExpiresTodaySingleBody": "{name} 今天到期。立即采取行动以保持最新。",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{names} 和另外 {extra} 个文档今天到期。",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "需要您的关注",
+"smartInsightSilentRiskBody": "{name} 将在 {days} 天后到期且未设置提醒。请确认详细信息仍然正确。",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "多个续订时间接近",
+"smartInsightRenewalTwinBodyTwo": "{a} 和 {b} 将在三周内相继到期。提前计划。",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}、{b} 和 {c} 都将在三周内到期。提前计划。",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{a}、{b} 和另外 {extra} 个文档将在三周内到期。提前计划。",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "即将到来的群组",
+"smartInsightClusterBody": "{category} 中有 {count} 个文档将在未来两个月内到期。考虑一起处理。",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "前方平静期",
+"smartInsightQuietPeriodBody": "未来 {days} 天内没有任何到期。您的下一次续订是 {firstDate}。",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "全部最新",
+"smartInsightAllCaughtUpBody": "{count} 个即将到来的到期由提醒覆盖。无其他事项需要您的关注。",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "全部最新。目前没有任何事项需要您的关注。",
+"smartInsightNoRecordsHeading": "添加您的第一条记录",
+"smartInsightNoRecordsBody": "开始跟踪您的文档,Vaultara 将在此处显示智能见解。",
+"expiryTimelineTitle": "到期时间线",
+"expiryTimelineSubtitle": "点击月份查看该月到期的记录",
+"expiryTimelineDetailCount": "{count} 条记录",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "即将到来",
+"summaryUpcomingCaption": "30天内",
+"summaryUrgentTitle": "紧急",
+"summaryUrgentCaption": "7天内"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -103,5 +103,795 @@
   "groupErrorSymbols": "Název nemůže obsahovat symboly",
   "groupErrorNumbers": "Název nemůže obsahovat čísla",
 
-  "createGroup": "Vytvořit"
+  "createGroup": "Vytvořit",
+
+  "registerTitle": "Vytvořit účet",
+
+  "firstNameLabel": "Jméno",
+  "firstNameHint": "Zadejte jméno",
+  "errorFirstName": "Jméno je povinné",
+
+  "lastNameLabel": "Příjmení",
+  "lastNameHint": "Zadejte příjmení",
+  "errorLastName": "Příjmení je povinné",
+
+  "emailLabel": "Email",
+  "errorEmailInvalid": "Zadejte platnou emailovou adresu.",
+  "errorEmailInUse": "Tato emailová adresa je již spojena s účtem Vaultara.",
+
+  "passwordLabel": "Heslo",
+  "passwordHelper": "Minimálně 8 znaků s kombinací typů.",
+
+  "passwordTooShort": "Příliš krátké",
+  "passwordTooWeak": "Příliš slabé",
+  "passwordMedium": "Střední",
+  "passwordStrong": "Silné",
+  "emailRequired": "Váš e-mail je povinný",
+"passwordRequired": "Vaše heslo je povinné",
+"registerPasswordHint": "Zadejte heslo",
+"loginPasswordHint": "Zadejte své heslo",
+"emailHint": "Zadejte svou e-mailovou adresu",
+  "errorPasswordLength": "Heslo musí mít alespoň 8 znaků.",
+  "errorPasswordWeak": "Zvolte silnější heslo.",
+
+  "errorGeneric": "Registrace se nezdařila. Zkuste to znovu.",
+
+  "createAccount": "Vytvořit účet",
+  "appName": "Vaultara",
+"authTagline": "Vaše osobní centrum pro pasy, licence, karty a další důležité věci",
+"tabSignIn": "Přihlásit se",
+"tabCreateAccount": "Vytvořit účet",
+"signInFooterText": "Přihlaste se pro přístup ke svému osobnímu prostoru Vaultara a mějte každé obnovení pod kontrolou",
+"createAccountFooterText": "Vytvořte si účet Vaultara pro zálohování důležitých připomínek a přístup kdykoli",
+  "emailNotFound": "Nesprávný e-mail.\nNeexistuje účet Vaultara s tímto e-mailem",
+  "incorrectPassword": "Nesprávné heslo",
+  "emailLabel": "E-mailová adresa",
+  "passwordLabel": "Heslo",
+  "signIn": "Přihlásit se",
+  "categoryPersonalIdentification": "Osobní identifikace",
+  "categoryDrivingAndVehicles": "Řízení a vozidla",
+  "categoryTravelAndImmigration": "Cestování a imigrace",
+  "categoryBankingAndCards": "Bankovnictví a karty",
+  "categoryInsuranceAndCover": "Pojištění a krytí",
+  "categoryHealthAndMedical": "Zdraví a lékařská péče",
+  "categoryWorkAndProfessional": "Práce a profesní záležitosti",
+  "categoryPropertyAndHousing": "Nemovitosti a bydlení",
+  "categoryHouseholdAndUtilities": "Domácnost a služby",
+
+  "subcategoryPassports": "Pasy",
+  "subcategoryIdCards": "Občanské průkazy",
+  "subcategoryResidencePermits": "Povolení k pobytu",
+
+  "subcategoryDrivingLicences": "Řidičské průkazy",
+  "subcategoryVehicleRegistrations": "Registrace vozidel",
+  "subcategoryRoadworthyCertificates": "Osvědčení o technické způsobilosti",
+  "subcategoryVehicleInspectionCertificates": "Certifikáty technické kontroly",
+
+  "subcategoryVisas": "Víz",
+  "subcategoryStudyPermits": "Studijní povolení",
+  "subcategoryWorkPermits": "Pracovní povolení",
+  "subcategoryTravelInsuranceDocuments": "Dokumenty cestovního pojištění",
+
+  "subcategoryDebitAndCreditCards": "Debetní a kreditní karty",
+  "subcategoryStoreCards": "Obchodní karty",
+  "subcategoryFuelCards": "Palivové karty",
+
+  "subcategoryVehicleInsurances": "Pojištění vozidel",
+  "subcategoryPropertyInsurances": "Pojištění majetku",
+  "subcategoryLifeInsurances": "Životní pojištění",
+  "subcategoryHealthInsurances": "Zdravotní pojištění",
+  "subcategoryTravelInsurances": "Cestovní pojištění",
+
+  "subcategoryMedicalPrescriptions": "Lékařské předpisy",
+  "subcategoryOpticalPrescriptions": "Oční předpisy",
+  "subcategoryMedicalCertificates": "Lékařská potvrzení",
+
+  "subcategoryProfessionalLicences": "Profesní licence",
+  "subcategoryProfessionalRegistrations": "Profesní registrace",
+  "subcategoryIndustryRegistrations": "Průmyslové registrace",
+  "subcategoryWorkAccessCards": "Přístupové karty na pracoviště",
+
+  "subcategoryLeaseAgreements": "Nájemní smlouvy",
+  "subcategoryAccessCardsAndTags": "Přístupové karty a štítky",
+  "subcategoryParkingPermits": "Parkovací povolení",
+  "subcategorySecurityAccessPermits": "Bezpečnostní přístupová povolení",
+
+  "subcategoryElectricityAccounts": "Účty za elektřinu",
+  "subcategoryWaterAccounts": "Účty za vodu",
+  "subcategoryInternetContracts": "Internetové smlouvy",
+  "subcategorySecurityServiceContracts": "Smlouvy o bezpečnostních službách",
+  "searchCategories": "Hledat kategorie",
+  "filterAll": "Vše",
+  "filterPreset": "Přednastavené",
+  "filterCustom": "Vlastní",
+  "addCategoryTitle": "Přidat kategorii",
+  "customLabel": "Vlastní",
+  "subcategoriesLabel": "podkategorie",
+  "itemsLabel": "položky",
+  "itemsExpiring": "{count} položek vyprší za {days} dní",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Připnuté důležité položky",
+  "pinnedHint": "Připněte kategorie, které otevíráte nejčastěji, aby zůstaly nahoře.",
+  "noCategoriesFound": "Nenalezeny žádné kategorie",
+   "searchGroups": "Hledat skupiny",
+  "addGroupTitle": "Přidat skupinu",
+  "basicPlanGroupInfo": "Používáte základní plán.\nMůžete si prohlížet přednastavené skupiny v této kategorii.\nUpgradujte na Premium a vytvořte si vlastní skupiny.",
+  "groupDeleted": "Skupina byla odstraněna",
+  "undo": "VRÁTIT",
+  "groupStats": "{items} položek • {expiring} vyprší do {days} dnů",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Klepnutím přidáte a budete sledovat položky v této skupině.",
+  "itemsInGroup": "Položky v této skupině",
+  "itemsInGroupHint": "Sledujte každou důležitou položku s datem vypršení platnosti, abyste ji mohli včas obnovit.",
+  "searchItems": "Hledat položky",
+  "filterAll": "Vše",
+  "filterExpiringWithin": "Vyprší do {days} dnů",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Vypršelo",
+  "addItem": "Přidat položku",
+  "noItemsYet": "Zatím žádné položky.",
+
+  "statusExpired": "Vypršelo",
+  "statusExpiresToday": "Vyprší dnes",
+  "statusExpiresInOneDay": "Vyprší za 1 den",
+  "statusExpiresInDays": "Vyprší za {days} dnů",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Platné",
+
+  "deleteCategoryTitle": "Smazat kategorii",
+  "deleteCategoryMessage": "Opravdu chcete smazat kategorii \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Smazat skupinu",
+  "deleteGroupMessage": "Opravdu chcete smazat skupinu \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Smazat položku",
+  "deleteItemMessage": "Opravdu chcete smazat \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Zrušit",
+  "delete": "Smazat",
+  "homeWelcomeTitle": "Vítejte",
+
+  "homeWelcomeFirstTitle": "Vítejte, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Vítejte zpět, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara vám pomáhá sledovat důležitá data vypršení, aby vám nic neuniklo.",
+
+  "homeWelcomeSubtitleFirst":
+    "Jsme rádi, že jste tady. Vaultara vám pomáhá zůstat organizovaný tím, že uchovává důležitá data a záznamy na jednom bezpečném místě.",
+
+  "homeWelcomeSubtitleBack":
+    "Jsme rádi, že vás znovu vidíme. Vaultara je zde, kdykoli si chcete prohlédnout svá důležitá data a záznamy.",
+     "insightEmptyTitle": "Zatím nebyly přidány žádné položky",
+  "insightEmptyBody": "Jakmile začnete sledovat důležitá data, Vaultara vám pomůže zůstat v předstihu.",
+
+  "insightExpiresTodayTitle": "\"{name}\" vyprší dnes",
+  "insightExpiresTodayBody": "Rychlá kontrola nyní může pomoci udržet vše správně.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" vyprší zítra",
+  "insightExpiresTomorrowBody": "Možná stojí za to se na to podívat už dnes.",
+
+  "insightExpiresSoonTitle": "\"{name}\" vyprší {date}",
+  "insightExpiresSoonBody": "Včasné řešení může ušetřit stres.",
+
+  "insightNextExpiryTitle": "Další vypršení je \"{name}\" ({date})",
+  "insightNextExpiryBody": "Momentálně není potřeba žádná akce.",
+
+  "insightClusteredTitle": "Více položek vyprší v měsíci {month}",
+  "insightClusteredBody": "Společná kontrola může ušetřit čas.",
+
+  "insightTopCategoryTitle": "Většina položek je v kategorii {category}",
+  "insightTopCategoryBody": "Zde začnete s největším přínosem.",
+
+  "insightStableTitle": "Vše je stabilní",
+  "insightStableBody": "Momentálně není potřeba žádná pozornost.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Všechny položky",
+"summaryAllCaption": "Sledováno ve Vaultaře",
+"summarySoonTitle": "Brzy vyprší",
+"summarySoonCaption": "Do 30 dnů",
+"summaryWeekTitle": "Tento týden",
+"summaryWeekCaption": "Vyprší za 7 dní",
+"summaryExpiredTitle": "Vypršelo",
+"summaryExpiredCaption": "Platnost vypršela",
+"stabilityStableTitle": "Vše vypadá stabilně",
+"stabilityStableBody": "Vaše záznamy nevykazují žádná okamžitá ani kumulující se rizika.",
+
+"stabilityDecliningTitle": "Stabilita klesá",
+"stabilityDecliningBody": "Některé položky již vypršely a další se blíží ke konci platnosti.",
+
+"stabilityWeakenedTitle": "Stabilita oslabena",
+"stabilityWeakenedBody": "Přítomnost prošlých záznamů snižuje celkovou spolehlivost.",
+
+"stabilityPressureTitle": "Roste tlak",
+"stabilityPressureBody": "Některé záznamy budou brzy vyžadovat pozornost pro zachování stability.",
+"editorNotes": "Poznámky",
+"notesHint": "Zadejte poznámky",
+"editorReminderTitle": "Připomínka",
+"editorReminderNone": "Bez připomínky",
+"editorReminderOnExpiry": "V den vypršení",
+"editorReminder7Days": "7 dní před vypršením",
+"editorReminder30Days": "30 dní před vypršením",
+"editorReminderCustom": "Vlastní",
+"daysBeforeExpiry": "dnů před vypršením",
+"reminderStage0Title": "Upozornění na vypršení",
+"reminderStage0Body": "{firstName}, {itemName} vyprší za {days} dní.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Následné upozornění",
+"reminderStage1Body": "{firstName}, {itemName} zatím nebyl aktualizován.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Vypršení se blíží",
+"reminderStage2Body": "Datum vypršení {itemName} se blíží.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Závěrečné upozornění",
+"reminderFinalBody": "{firstName}, prosím aktualizujte {itemName}.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Vyváženost pokrytí",
+"coverageAllRepresented": "Vaše záznamy obsahují položky ve všech kategoriích.",
+"coverageMissingNamed": "Nebyly nalezeny záznamy v {count} kategoriích: {names}.",
+"coverageMissingSummary": "Nepřidali jste žádné záznamy do {count} kategorií, včetně {names} a dalších {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Použít heslo",
+"signInWithBiometrics": "Přihlásit se pomocí biometrie",
+"enableBiometricsTitle": "Povolit biometrické zabezpečení",
+"enableBiometricsBody": "Použijte otisk prstu nebo rozpoznání obličeje k ochraně Vaultary.",
+"enableBiometricsReason": "Povolit biometrické odemykání pro Vaultaru.",
+"notNow": "Teď ne",
+"useBiometrics": "Použít biometrii",
+"recordsCalendarIntro":
+  "Vyberte, jak chcete procházet data vypršení:\n\n• Zadejte, kolik dní od dneška chcete zobrazit.\n• Nebo vyberte konkrétní datum v kalendáři.\n\nVaultara zobrazí záznamy, které v daný den dosáhnou data vypršení.",
+
+"showingRecordsRelative": "Zobrazeny záznamy, které vyprší za {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Zobrazeny záznamy, které vyprší ve vybraný den",
+"noRecordsOnDate": "Na tento den nejsou nastaveny žádné záznamy k vypršení.",
+
+"recordEditorAddTitle": "Přidat záznam",
+"recordEditorEditTitle": "Upravit záznam",
+
+"editorRecordName": "Název záznamu",
+"editorRecordNameHint": "Zadejte název záznamu",
+"recordEditorErrorName": "Název záznamu je povinný",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint": "Klepnutím přidáte a budete sledovat záznamy v této skupině.",
+
+"recordsInGroup": "Záznamy v této skupině",
+"recordsInGroupHint":
+  "Sledujte každý důležitý záznam s datem vypršení, abyste jej mohli včas obnovit.",
+
+"searchRecords": "Hledat záznamy",
+"addRecord": "Přidat záznam",
+"noRecordsYet": "Zatím žádné záznamy.",
+
+"deleteRecordTitle": "Smazat záznam",
+
+"recordsInsightClusteredTitle":
+  "Několik záznamů vyprší kolem {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Většina vašich záznamů je seskupena v kategorii {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Všechny záznamy",
+
+"recordsStabilityDecliningBody":
+  "Některé záznamy již vypršely a další se brzy blíží k vypršení.",
+
+"recordsCoverageAllRepresented":
+  "Vaše záznamy pokrývají všechny kategorie.",
+
+"recordReminderStage0Body":
+  "{firstName}, váš {recordName} vyprší za {days} dní.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, váš {recordName} ještě nebyl aktualizován.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Datum vypršení záznamu {recordName} se blíží.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, aktualizujte prosím {recordName} nyní.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Zatím žádné skupiny",
+"recordsExpiring": "{count, plural, one {1 záznam vyprší za {days} dní} other {{count} záznamů vyprší za {days} dní}}",
+"recordsGroupStats": "{records, plural, one {1 záznam} other {{records} záznamů}} • {expiring} za {days} dní",
+"groupLabel": "{count, plural, one {{count} skupina} other {{count} skupiny}}",
+"recordsLabel": "{count, plural, one {{count} záznam} other {{count} záznamy}}",
+"forgotPassword": "Zapomněli jste heslo?",
+  "forgotPasswordTitle": "Obnovení hesla",
+  "forgotPasswordBody": "Zadejte svou e-mailovou adresu a zašleme vám odkaz pro obnovení hesla.",
+  "sendResetLink": "Odeslat odkaz",
+  "passwordResetEmailSent": "E-mail pro obnovení hesla byl odeslán.",
+  "verifyEmailToContinue": "Před přihlášením prosím ověřte svou e-mailovou adresu",
+  "changeEmailTitle": "Změnit emailovou adresu",
+"newEmailHint": "Zadejte svůj nový email",
+"sendVerificationEmail": "Odeslat ověřovací email",
+"deleteAccountTitle": "Smazat účet",
+"deleteAccountWarning": "Tato akce trvale smaže váš účet a všechna uložená data.\nNelze ji vrátit zpět.",
+"deleteAccountConfirm": "Trvale smazat účet",
+"supportTitle": "Podpora",
+"supportSubtitle": "Kontaktujte nás, pokud potřebujete pomoc nebo máte dotazy.",
+"supportEmailSubject": "Žádost o podporu Vaultara",
+"supportEmailError": "Nelze otevřít e-mailovou aplikaci.",
+"passwordResetEmailFailed": "No s'ha pogut enviar el correu de restabliment de contrasenya.",
+"loggedInPasswordResetBody": "Enviarem un enllaç per restablir la contrasenya a:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Správa účtu",
+  "changeEmailTitle": "Změnit e-mailovou adresu",
+  "changeEmailSubtitle": "Aktualizujte e-mail propojený s vaším účtem.",
+  "changePasswordTitle": "Změnit heslo",
+  "changePasswordSubtitle": "Zašleme vám e-mail s odkazem pro bezpečnou změnu hesla.",
+  "deleteAccountTitle": "Smazat účet",
+  "deleteAccountSubtitle": "Trvale odstranit váš účet Vaultara.",
+  "biometricAuthReason": "Ověřte se pro přístup ke svému účtu Vaultara",
+  "verifyEmailTitle": "Ověřte svůj e-mail",
+"verifyEmailBody": "Poslali jsme ověřovací e-mail do vaší schránky. Otevřete jej a potvrďte svou e-mailovou adresu, poté se vraťte sem a pokračujte.",
+"verifyEmailConfirmedButton": "Ověřil jsem svůj e-mail",
+"verifyEmailResendButton": "Znovu odeslat ověřovací e-mail",
+"verifyEmailSending": "Odesílání...",
+"navHome": "Domů",
+"navCategories": "Kategorie",
+"navInsights": "Přehledy",
+"navCalendar": "Kalendář",
+"tutorialHomeSearch": "Použijte vyhledávací pole k rychlému nalezení jakéhokoli záznamu, který sledujete.",
+"tutorialHomeFab": "Zde přidejte svůj první záznam.\nVyberte, kam patří, přidejte volitelné poznámky a zvolte datum platnosti.",
+"tutorialHomeSummary": "Jak přidáváte další záznamy, tato část vám pomůže rozpoznat položky blížící se k vypršení.",
+"tutorialHomeInsight": "Tento chytrý přehled zvýrazňuje vzory a nadcházející expirace.\nKlepnutím na ikonu reproduktoru si jej můžete poslechnout.",
+"tutorialHomeCoverage": "Vyváženost pokrytí ukazuje, jak rovnoměrně jsou záznamy rozloženy.\nVyšší vyváženost znamená méně mezer.",
+"tutorialHomeStability": "Stabilita ukazuje, jak spolehlivé jsou vaše záznamy v čase.\nVypršené a blížící se položky mohou stabilitu snížit.",
+"tutorialCancel": "Zrušit",
+"tutorialNext": "Další",
+"tutorialEnd": "Ukončit tutoriál",
+"softDeleteCategory": "Kategorie",
+"softDeleteGroup": "Skupina",
+"softDeleteRecord": "Záznam",
+"softDeleteTitle": "Přesunout {type} do Nedávno odstraněné",
+"softDeleteMessage": "{type} \"{name}\" bude přesunut do Nedávno odstraněné.\n\nLze jej obnovit do 30 dnů. Poté bude trvale odstraněn.",
+"softDeleteMove": "Přesunout",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Nedávno odstraněné",
+  "categories": "Kategorie",
+  "groups": "Skupiny",
+  "records": "Záznamy",
+  "restore": "Obnovit",
+  "deletePermanently": "Trvale odstranit",
+
+  "recentlyDeletedBanner": "Odstraněné {type} jsou zde uloženy 30 dní.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Hledat odstraněné {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Žádné odstraněné {type}",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Klepněte na kategorii, abyste zobrazili její skupiny a spravovali své záznamy.",
+ "groupsHint": "Skupiny organizují vaše záznamy v této kategorii. Klepněte na skupinu pro správu záznamů.",
+ "notLoggedIn": "Nejste přihlášeni",
+"recordsInsideGroupHint": "Toto jsou záznamy v této skupině.",
+"snackMovedToRecentlyDeleted": "\"{name}\" přesunuto do Nedávno smazané",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" bylo úspěšně smazáno",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" bylo úspěšně aktualizováno",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" bylo úspěšně přidáno",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" bylo úspěšně obnoveno",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Dosažen bezplatný limit ({current}/{limit}). Upgradujte pro přidání dalších.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Hledat všechny záznamy",
+"globalSearchHint": "Zadejte název záznamu, kategorii nebo skupinu",
+"globalSearchNoMatches": "Žádné záznamy neodpovídají vašemu hledání.",
+"snackNoRecordsToSearch": "Nejsou žádné záznamy k vyhledávání. Přidejte několik záznamů a Vaultara je automaticky zaindexuje.",
+"recoveryCentreTitle": "Centrum obnovy",
+"recoveryCentreSubtitle": "Obnovte nebo trvale odstraňte smazané záznamy.",
+"plan_premium": "Premium",
+"plan_free": "Zdarma",
+"profile_app_settings_title": "Nastavení aplikace",
+"profile_privacy_security_title": "Soukromí a zabezpečení",
+"profile_biometric_on": "Biometrický zámek je na tomto zařízení aktivní.",
+"profile_biometric_off": "Biometrický zámek je vypnutý.",
+"profile_biometric_enable_reason": "Potvrďte svou identitu pro zapnutí biometrického zámku.",
+"profile_biometric_disable_reason": "Potvrďte svou identitu pro vypnutí biometrického zámku.",
+"profile_account_management_title": "Správa účtu",
+"profile_account_management_subtitle": "Změňte e-mail, heslo nebo smažte svůj účet.",
+"profile_premium_active_title": "Premium je aktivní",
+"profile_premium_upgrade_title": "Přejít na Premium",
+"profile_premium_active_subtitle": "Pokročilé připomínky jsou odemčeny.",
+"profile_premium_upgrade_subtitle": "Odemkněte pokročilé připomínky a neomezenou organizaci.",
+"profile_manage_cancel_hint": "Spravujte nebo zrušte kdykoli na Google Play.",
+"profile_manage_subscription_button": "Spravovat předplatné",
+"plansTitle": "Vyberte si plán",
+"plansTrialBanner": "Začněte 7denní zkušební verzi.\nZrušit kdykoli.",
+"plansLoading": "Načítání…",
+"plansStartFreeTrial": "Spustit zkušební verzi",
+"plansNoChargeTodayFooter": "7 dní zdarma · Dnes bez platby",
+
+"planFreeTitle": "Zdarma",
+"planFreeSubtitle": "Pro začátek",
+"planPremiumMonthlyTitle": "Premium měsíčně",
+"planPremiumYearlyTitle": "Premium ročně",
+"planPerMonth": "měsíčně",
+"planPerYear": "ročně",
+
+"planBadgeCurrent": "Aktuální plán",
+"planBadgePopular": "Populární",
+"planBadgeBestValue": "Nejlepší hodnota",
+
+"planYouAreOnThisPlan": "Tento plán již používáte.",
+
+"planFeatureUpToRecords": "Až {count} záznamů",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Vlastní kategorie (max. {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Přednastavené podkategorie",
+"planFeatureCloudStorage": "Cloudové úložiště",
+"planFeatureSmartExpiryInsights": "Chytré přehledy expirace",
+"planFeatureCoverageBalance": "Vyvážení pokrytí",
+"planFeatureRecordStabilityTracking": "Stabilita záznamů",
+
+"planFeatureUnlimitedRecords": "Neomezené záznamy",
+"planFeatureUnlimitedCategories": "Neomezené kategorie",
+"planFeatureCustomSubcategories": "Vlastní podkategorie",
+"planFeatureMultipleRemindersPerRecord": "Více připomínek",
+"planFeatureAdvancedReminderTiming": "Pokročilé načasování",
+"planFeatureAutomaticFollowUps": "Automatické připomínky",
+
+"planFeatureEverythingInMonthly": "Vše z měsíčního",
+"planFeatureSavePercentComparedToMonthly": "Ušetříte {percent}% oproti měsíčnímu",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Nejlepší dlouhodobá hodnota",
+"editorReminderLabel": "Připomínka",
+"editorReminderSelectOptional": "Vyberte připomínku (volitelné)",
+"editorReminderOnExpiry": "V den vypršení",
+"editorReminderDaysBefore": "{days} dní před vypršením",
+"editorFreeItemsCount": "Bezplatné záznamy: {used}/{limit}",
+"editorExpiryPastWarning": "Datum vypršení již uplynulo.",
+"editorExpiryTodayWarning": "Tento záznam vyprší dnes.",
+"editorErrorExpiryPast": "Datum vypršení nemůže být v minulosti.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Dnešní přehledy",
+"tutorialBannerTitle": "Rychlá prohlídka",
+"tutorialBannerBody": "Zjistěte, kde hledat, jak přidávat záznamy a co znamenají přehledy během jedné minuty.",
+"tutorialBannerStart": "Spustit tutoriál",
+"tutorialBannerDismiss": "Teď ne",
+"authErrorUserDisabled": "Tento účet byl zakázán.",
+"authErrorNetwork": "Chyba sítě. Zkuste to znovu.",
+"authErrorTooManyRequests": "Příliš mnoho pokusů. Zkuste později.",
+"authErrorSignInFailed": "Přihlášení se nezdařilo. Zkuste to znovu.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium aktivováno",
+"snackPremiumRestored": "Premium obnoveno",
+"passwordNeedLower": "Musí obsahovat malé písmeno",
+"passwordNeedUpper": "Musí obsahovat velké písmeno",
+"passwordNeedNumber": "Musí obsahovat číslo",
+"passwordNeedSymbol": "Musí obsahovat symbol",
+"confirmIdentityTitle": "Potvrdit identitu",
+"confirm": "Potvrdit",
+"profile_sign_out_title": "Odhlásit se",
+"profile_sign_out_subtitle": "Odhlásit se z Vaultary na tomto zařízení",
+"profile_sign_out_confirm_title": "Opravdu se chcete odhlásit?",
+"profile_sign_out_confirm_body": "Pro přístup k účtu se budete muset znovu přihlásit.",
+"profile_sign_out_action": "Odhlásit se",
+"todayInsightsAudioHint": "Preferujete zvuk? Použijte ikonu reproduktoru.",
+"category2Label": "Kategorie",
+"enable2BiometricsBody": "Použijte rozpoznání otisku prstu k ochraně svého účtu Vaultara.",
+"snackNotificationsDisabled": "Oznámení jsou vypnutá. Zapněte je pro příjem připomínek.",
+"openSettings": "Otevřít nastavení",
+
+"reminderOnExpiryTitle": "Vyprší dnes",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Ahoj {firstName}, \"{itemName}\" vyprší dnes.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Bezplatné kategorie: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Zobrazuje počet použitých bezplatných kategorií z bezplatného limitu.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Přidat poznámky (volitelné)",
+"apply": "Použít",
+"smartInsightExpiresTodayHeading": "Vyprší Dnes",
+"smartInsightExpiresTodaySingleBody": "{name} vyprší dnes. Reagujte nyní, abyste jej udrželi aktuální.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} a 1 další dokument vyprší dnes.} few{{names} a {extra} další dokumenty vyprší dnes.} other{{names} a {extra} dalších dokumentů vyprší dnes.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Vyžaduje Vaši Pozornost",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} vyprší za 1 den a nemá nastavené připomenutí. Zkontrolujte, zda jsou údaje stále správné.} few{{name} vyprší za {days} dny a nemá nastavené připomenutí. Zkontrolujte, zda jsou údaje stále správné.} other{{name} vyprší za {days} dní a nemá nastavené připomenutí. Zkontrolujte, zda jsou údaje stále správné.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Více Obnov Blízko Sebe",
+"smartInsightRenewalTwinBodyTwo": "{a} a {b} vyprší během tří týdnů od sebe. Plánujte dopředu.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} a {c} všechny vyprší během tří týdnů. Plánujte dopředu.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} a 1 další dokument vyprší během tří týdnů. Plánujte dopředu.} few{{a}, {b} a {extra} další dokumenty vyprší během tří týdnů. Plánujte dopředu.} other{{a}, {b} a {extra} dalších dokumentů vyprší během tří týdnů. Plánujte dopředu.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Nadcházející Skupina",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument v {category} vyprší během příštích dvou měsíců. Zvažte společné řešení.} few{{count} dokumenty v {category} vyprší během příštích dvou měsíců. Zvažte společné řešení.} other{{count} dokumentů v {category} vyprší během příštích dvou měsíců. Zvažte společné řešení.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Klidné Období Před Vámi",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Nic nevyprší během příštího 1 dne. Vaše příští obnova je {firstDate}.} few{Nic nevyprší během příštích {days} dní. Vaše příští obnova je {firstDate}.} other{Nic nevyprší během příštích {days} dní. Vaše příští obnova je {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Vše Aktuální",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 nadcházející vypršení je pokryto připomenutími. Nic dalšího nevyžaduje vaši pozornost.} few{{count} nadcházející vypršení jsou pokryta připomenutími. Nic dalšího nevyžaduje vaši pozornost.} other{{count} nadcházejících vypršení je pokryto připomenutími. Nic dalšího nevyžaduje vaši pozornost.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Vše aktuální. Nic nevyžaduje vaši pozornost právě teď.",
+"smartInsightNoRecordsHeading": "Přidejte Svůj První Záznam",
+"smartInsightNoRecordsBody": "Začněte sledovat své dokumenty a Vaultara zde zobrazí chytré přehledy.",
+"expiryTimelineTitle": "Časová osa vypršení",
+"expiryTimelineSubtitle": "Klepněte na měsíc a zobrazte záznamy, kterým vyprší platnost v daném měsíci",
+"expiryTimelineDetailCount": "{count, plural, =1{1 záznam} few{{count} záznamy} other{{count} záznamů}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Nadcházející",
+"summaryUpcomingCaption": "Během 30 dnů",
+"summaryUrgentTitle": "Naléhavé",
+"summaryUrgentCaption": "Během 7 dnů"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+

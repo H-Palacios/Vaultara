@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "Lịch hết hạn",
 
-  "calendarIntro":
-    "Chọn cách xem ngày hết hạn:\n\n• Nhập số ngày kể từ hôm nay.\n• Hoặc chọn ngày cụ thể trên lịch.\n\nVaultara hiển thị các mục hết hạn vào ngày đó.",
+  "calendarIntro": "Chọn cách xem ngày hết hạn:\n\n• Nhập số ngày kể từ hôm nay.\n• Hoặc chọn ngày cụ thể trên lịch.\n\nVaultara sẽ hiển thị các mục đạt đến ngày hết hạn vào ngày đó.",
 
   "daysFromTodayLabel": "Số ngày từ hôm nay",
   "daysFromTodayHint": "Ví dụ 0, 1, 7, 30",
@@ -19,19 +18,23 @@
 
   "inDays": "trong {days} ngày",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
-  "enterDaysError": "Cần nhập số ngày",
-  "invalidDaysError": "Nhập số hợp lệ (0 hoặc lớn hơn)",
+  "enterDaysError": "Nhập số ngày.",
+  "invalidDaysError": "Nhập số ngày hợp lệ (0 hoặc lớn hơn).",
 
-  "showingItemsRelative": "Mục hết hạn {time}",
+  "showingItemsRelative": "Đang hiển thị các mục hết hạn {time}",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "Mục hết hạn vào ngày đã chọn",
-  "noItemsOnDate": "Không có mục nào hết hạn ngày này",
+  "showingItemsExact": "Đang hiển thị các mục hết hạn vào ngày đã chọn",
+  "noItemsOnDate": "Không có mục nào được đặt hết hạn vào ngày đó.",
 
   "editorAddTitle": "Thêm mục",
   "editorEditTitle": "Chỉnh sửa mục",
@@ -40,19 +43,19 @@
   "editorCategoryHint": "Chọn danh mục",
 
   "editorGroup": "Nhóm",
-  "editorGroupHint": "Chọn nhóm trong danh mục",
+  "editorGroupHint": "Chọn nhóm trong danh mục này",
 
   "editorItemName": "Tên mục",
   "editorItemNameHint": "Nhập tên mục",
 
   "editorExpiryDate": "Ngày hết hạn",
-  "editorExpiryDateHint": "Chọn ngày",
+  "editorExpiryDateHint": "Chọn ngày hết hạn",
 
-  "editorErrorCategory": "Danh mục bắt buộc",
-  "editorErrorGroup": "Nhóm bắt buộc",
-  "editorErrorName": "Tên mục bắt buộc",
-  "editorErrorExpiry": "Ngày bắt buộc",
-  "editorErrorExpiryPast": "Ngày phải là hôm nay hoặc tương lai",
+  "editorErrorCategory": "Chọn danh mục",
+  "editorErrorGroup": "Chọn nhóm",
+  "editorErrorName": "Tên mục là bắt buộc",
+  "editorErrorExpiry": "Chọn ngày hết hạn",
+  "editorErrorExpiryPast": "Ngày hết hạn phải là hôm nay hoặc trong tương lai",
 
   "cancel": "Hủy",
   "save": "Lưu",
@@ -60,7 +63,7 @@
   "addCategoryTitle": "Thêm danh mục",
   "unlimitedCategories": "Danh mục không giới hạn (Premium)",
 
-  "categoryUsage": "{current} / {limit} danh mục đã dùng",
+  "categoryUsage": "{current} / {limit} danh mục đã sử dụng",
   "@categoryUsage": {
     "placeholders": {
       "current": { "type": "int" },
@@ -71,36 +74,849 @@
   "categoryNameLabel": "Tên danh mục",
   "categoryNameHint": "Nhập danh mục",
 
-  "categoryLimitReached":
-    "Đã đạt giới hạn Basic. Premium cho phép danh mục không giới hạn",
-
-  "categoryLimitInfo":
-    "Basic cho phép tối đa {limit} danh mục",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+  "categoryLimitReached": "Bạn đã đạt giới hạn {limit} danh mục của gói Basic. Nâng cấp lên Premium để tạo danh mục không giới hạn.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
-  "categoryErrorEmpty": "Tên danh mục bắt buộc",
+  "categoryLimitInfo": "Với gói Basic, bạn có thể tạo tối đa {limit} danh mục tùy chỉnh.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Tên danh mục là bắt buộc",
   "categoryErrorTooShort": "Tên danh mục quá ngắn",
   "categoryErrorTooLong": "Tên danh mục quá dài",
-  "categoryErrorSymbols": "Tên không thể chỉ gồm ký hiệu",
-  "categoryErrorNumbers": "Tên không thể chứa số",
+  "categoryErrorSymbols": "Tên danh mục không thể chỉ chứa ký hiệu",
+  "categoryErrorNumbers": "Tên danh mục không thể chứa số",
 
   "upgradeRequired": "Cần nâng cấp",
   "viewPremiumBenefits": "Xem quyền lợi Premium",
-
   "createCategory": "Tạo",
 
   "addGroupTitle": "Thêm nhóm",
-
   "groupNameLabel": "Nhóm",
   "groupNameHint": "Nhập nhóm",
 
-  "groupErrorEmpty": "Tên nhóm bắt buộc",
+  "groupErrorEmpty": "Tên nhóm là bắt buộc",
   "groupErrorTooShort": "Tên nhóm quá ngắn",
   "groupErrorTooLong": "Tên nhóm quá dài",
-  "groupErrorSymbols": "Tên nhóm không thể chỉ gồm ký hiệu",
+  "groupErrorSymbols": "Tên nhóm không thể chứa ký hiệu",
   "groupErrorNumbers": "Tên nhóm không thể chứa số",
+  "createGroup": "Tạo",
 
-  "createGroup": "Tạo"
+  "firstNameLabel": "Tên",
+  "firstNameHint": "Nhập tên",
+
+  "lastNameLabel": "Họ",
+  "lastNameHint": "Nhập họ",
+
+  "emailLabel": "Địa chỉ email",
+ "emailRequired": "Email của bạn là bắt buộc",
+"passwordRequired": "Mật khẩu của bạn là bắt buộc",
+"registerPasswordHint": "Nhập mật khẩu",
+"loginPasswordHint": "Nhập mật khẩu của bạn",
+"emailHint": "Nhập địa chỉ email của bạn",
+
+  "passwordLabel": "Mật khẩu",
+  "passwordHelper": "Ít nhất 8 ký tự với nhiều loại",
+
+  "passwordTooShort": "Quá ngắn",
+  "passwordTooWeak": "Quá yếu",
+  "passwordMedium": "Trung bình",
+  "passwordStrong": "Mạnh",
+
+  "errorFirstName": "Tên là bắt buộc",
+  "errorLastName": "Họ là bắt buộc",
+  "errorEmailInvalid": "Nhập địa chỉ email hợp lệ",
+  "errorEmailInUse": "Địa chỉ email này đã được\nliên kết với tài khoản Vaultara",
+  "errorPasswordLength": "Mật khẩu phải có ít nhất tám ký tự",
+  "errorPasswordWeak": "Nhập mật khẩu mạnh hơn",
+  "errorGeneric": "Đăng ký thất bại. Vui lòng thử lại",
+
+  "createAccount": "Tạo tài khoản",
+  "appName": "Vaultara",
+  "authTagline": "Trung tâm cá nhân cho hộ chiếu, giấy phép, thẻ và các vật dụng quan trọng khác",
+  "tabSignIn": "Đăng nhập",
+  "tabCreateAccount": "Tạo tài khoản",
+  "signInFooterText": "Đăng nhập để truy cập không gian Vaultara cá nhân và kiểm soát mọi lần gia hạn",
+  "createAccountFooterText": "Tạo tài khoản Vaultara để sao lưu các lời nhắc quan trọng và truy cập chúng bất cứ lúc nào",
+  "emailNotFound": "Email không đúng.\nKhông có tài khoản Vaultara với email này",
+  "incorrectPassword": "Mật khẩu không đúng",
+  "emailLabel": "Địa chỉ email",
+  "passwordLabel": "Mật khẩu",
+  "signIn": "Đăng nhập",
+  "categoryPersonalIdentification": "Nhận dạng cá nhân",
+  "categoryDrivingAndVehicles": "Lái xe và phương tiện",
+  "categoryTravelAndImmigration": "Du lịch và nhập cư",
+  "categoryBankingAndCards": "Ngân hàng và thẻ",
+  "categoryInsuranceAndCover": "Bảo hiểm và bảo vệ",
+  "categoryHealthAndMedical": "Sức khỏe và y tế",
+  "categoryWorkAndProfessional": "Công việc và chuyên môn",
+  "categoryPropertyAndHousing": "Tài sản và nhà ở",
+  "categoryHouseholdAndUtilities": "Gia đình và tiện ích",
+
+  "subcategoryPassports": "Hộ chiếu",
+  "subcategoryIdCards": "Thẻ căn cước",
+  "subcategoryResidencePermits": "Giấy phép cư trú",
+
+  "subcategoryDrivingLicences": "Giấy phép lái xe",
+  "subcategoryVehicleRegistrations": "Đăng ký phương tiện",
+  "subcategoryRoadworthyCertificates": "Giấy chứng nhận đủ điều kiện lưu thông",
+  "subcategoryVehicleInspectionCertificates": "Giấy chứng nhận kiểm định phương tiện",
+
+  "subcategoryVisas": "Thị thực",
+  "subcategoryStudyPermits": "Giấy phép học tập",
+  "subcategoryWorkPermits": "Giấy phép lao động",
+  "subcategoryTravelInsuranceDocuments": "Giấy tờ bảo hiểm du lịch",
+
+  "subcategoryDebitAndCreditCards": "Thẻ ghi nợ và thẻ tín dụng",
+  "subcategoryStoreCards": "Thẻ cửa hàng",
+  "subcategoryFuelCards": "Thẻ nhiên liệu",
+
+  "subcategoryVehicleInsurances": "Bảo hiểm phương tiện",
+  "subcategoryPropertyInsurances": "Bảo hiểm tài sản",
+  "subcategoryLifeInsurances": "Bảo hiểm nhân thọ",
+  "subcategoryHealthInsurances": "Bảo hiểm y tế",
+  "subcategoryTravelInsurances": "Bảo hiểm du lịch",
+
+  "subcategoryMedicalPrescriptions": "Đơn thuốc",
+  "subcategoryOpticalPrescriptions": "Đơn kính",
+  "subcategoryMedicalCertificates": "Giấy chứng nhận y tế",
+
+  "subcategoryProfessionalLicences": "Giấy phép chuyên môn",
+  "subcategoryProfessionalRegistrations": "Đăng ký chuyên môn",
+  "subcategoryIndustryRegistrations": "Đăng ký ngành nghề",
+  "subcategoryWorkAccessCards": "Thẻ truy cập nơi làm việc",
+
+  "subcategoryLeaseAgreements": "Hợp đồng thuê",
+  "subcategoryAccessCardsAndTags": "Thẻ và thẻ truy cập",
+  "subcategoryParkingPermits": "Giấy phép đỗ xe",
+  "subcategorySecurityAccessPermits": "Giấy phép truy cập an ninh",
+
+  "subcategoryElectricityAccounts": "Tài khoản điện",
+  "subcategoryWaterAccounts": "Tài khoản nước",
+  "subcategoryInternetContracts": "Hợp đồng Internet",
+  "subcategorySecurityServiceContracts": "Hợp đồng dịch vụ an ninh",
+   "searchCategories": "Tìm kiếm danh mục",
+  "filterAll": "Tất cả",
+  "filterPreset": "Cài sẵn",
+  "filterCustom": "Tùy chỉnh",
+  "addCategoryTitle": "Thêm danh mục",
+  "customLabel": "Tùy chỉnh",
+  "subcategoriesLabel": "Danh mục con",
+  "itemsLabel": "Mục",
+  "itemsExpiring": "{count} mục sẽ hết hạn trong {days} ngày",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Danh mục đã ghim",
+  "pinnedHint": "Ghim các danh mục bạn mở thường xuyên để giữ chúng ở đầu danh sách.",
+  "noCategoriesFound": "Không tìm thấy danh mục nào",
+  "searchGroups": "Tìm kiếm nhóm",
+  "addGroupTitle": "Thêm nhóm",
+  "basicPlanGroupInfo": "Bạn đang sử dụng gói Basic.\nBạn có thể xem các nhóm được thiết lập sẵn trong danh mục này.\nNâng cấp lên Premium để tạo nhóm riêng của bạn.",
+  "groupDeleted": "Đã xóa nhóm",
+  "undo": "HOÀN TÁC",
+  "groupStats": "{items} mục • {expiring} mục hết hạn trong {days} ngày",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Chạm để thêm và theo dõi các mục trong nhóm này.",
+   "itemsInGroup": "Các mục trong nhóm này",
+  "itemsInGroupHint": "Theo dõi các mục quan trọng cùng ngày hết hạn để gia hạn đúng thời điểm.",
+  "searchItems": "Tìm kiếm mục",
+  "filterAll": "Tất cả",
+  "filterExpiringWithin": "Hết hạn trong {days} ngày",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Đã hết hạn",
+  "addItem": "Thêm mục",
+  "noItemsYet": "Chưa có mục nào.",
+
+  "statusExpired": "Đã hết hạn",
+  "statusExpiresToday": "Hết hạn hôm nay",
+  "statusExpiresInOneDay": "Hết hạn trong 1 ngày",
+  "statusExpiresInDays": "Hết hạn trong {days} ngày",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Còn hiệu lực",
+
+  "deleteCategoryTitle": "Xóa danh mục",
+  "deleteCategoryMessage": "Bạn có chắc chắn muốn xóa danh mục \"{name}\" không?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Xóa nhóm",
+  "deleteGroupMessage": "Bạn có chắc chắn muốn xóa nhóm \"{name}\" không?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Xóa mục",
+  "deleteItemMessage": "Bạn có chắc chắn muốn xóa \"{name}\" không?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Hủy",
+  "delete": "Xóa",
+  "homeWelcomeFirstTitle": "Chào mừng, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Chào mừng quay lại, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara giúp bạn theo dõi các ngày hết hạn quan trọng để không bỏ lỡ điều gì.",
+
+"homeWelcomeSubtitleFirst":
+  "Rất vui được gặp bạn tại đây. Vaultara giúp bạn sắp xếp các ngày và hồ sơ quan trọng ở một nơi an toàn.",
+
+"homeWelcomeSubtitleBack":
+  "Rất vui được gặp lại bạn. Vaultara luôn sẵn sàng khi bạn muốn xem lại các ngày và hồ sơ quan trọng của mình.",
+  "insightEmptyTitle": "Bạn chưa thêm mục nào",
+  "insightEmptyBody": "Khi bạn bắt đầu theo dõi các mốc thời gian quan trọng, Vaultara sẽ giúp bạn chủ động trước các ngày hết hạn.",
+
+  "insightExpiresTodayTitle": "\"{name}\" hết hạn hôm nay",
+  "insightExpiresTodayBody": "Việc kiểm tra nhanh ngay bây giờ sẽ giúp thông tin luôn chính xác.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" hết hạn vào ngày mai",
+  "insightExpiresTomorrowBody": "Xem xét sớm có thể giúp bạn tiết kiệm thời gian sau này.",
+
+  "insightExpiresSoonTitle": "\"{name}\" sẽ hết hạn vào {date}",
+  "insightExpiresSoonBody": "Xử lý sớm sẽ giúp mọi việc diễn ra nhẹ nhàng hơn.",
+
+  "insightNextExpiryTitle": "Mục sắp hết hạn tiếp theo là \"{name}\" vào {date}",
+  "insightNextExpiryBody": "Hiện tại chưa cần hành động, nhưng bạn nên ghi nhớ.",
+
+  "insightClusteredTitle": "Nhiều mục sẽ hết hạn vào khoảng {month}",
+  "insightClusteredBody": "Xem xét các mục này cùng lúc có thể giúp bạn tiết kiệm thời gian.",
+
+  "insightTopCategoryTitle": "Phần lớn các mục của bạn nằm trong {category}",
+  "insightTopCategoryBody": "Bắt đầu từ đây sẽ mang lại hiệu quả cao nhất khi bạn muốn sắp xếp lại.",
+
+  "insightStableTitle": "Mọi thứ hiện đang ổn định",
+  "insightStableBody": "Không có ngày hết hạn nào cần bạn chú ý ngay lúc này.",
+
+  "@insightExpiresTodayTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "@insightExpiresTomorrowTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "@insightExpiresSoonTitle": {
+    "placeholders": {
+      "name": { "type": "String" },
+      "date": { "type": "String" }
+    }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": {
+      "name": { "type": "String" },
+      "date": { "type": "String" }
+    }
+  },
+  "@insightClusteredTitle": {
+    "placeholders": {
+      "month": { "type": "String" }
+    }
+  },
+  "@insightTopCategoryTitle": {
+    "placeholders": {
+      "category": { "type": "String" }
+    }
+  },
+"homeWelcomeTitle": "Chào mừng",
+"summaryAllTitle": "Tất cả mục",
+"summaryAllCaption": "Được theo dõi trong Vaultara",
+"summarySoonTitle": "Sắp hết hạn",
+"summarySoonCaption": "Trong vòng 30 ngày",
+"summaryWeekTitle": "Tuần này",
+"summaryWeekCaption": "Hết hạn trong 7 ngày",
+"summaryExpiredTitle": "Đã hết hạn",
+"summaryExpiredCaption": "Ngày hết hạn đã qua",
+"stabilityStableTitle": "Mọi thứ trông ổn định",
+"stabilityStableBody": "Hồ sơ của bạn không cho thấy rủi ro tức thời hoặc tích lũy.",
+
+"stabilityDecliningTitle": "Độ ổn định đang giảm",
+"stabilityDecliningBody": "Một số mục đã hết hạn và những mục khác đang đến gần.",
+
+"stabilityWeakenedTitle": "Độ ổn định bị suy yếu",
+"stabilityWeakenedBody": "Sự tồn tại của các hồ sơ hết hạn làm giảm độ tin cậy tổng thể.",
+
+"stabilityPressureTitle": "Áp lực đang tăng",
+"stabilityPressureBody": "Một số hồ sơ sẽ sớm cần được chú ý để duy trì sự ổn định.",
+"editorNotes": "Ghi chú",
+"notesHint": "Nhập ghi chú",
+"editorReminderTitle": "Nhắc nhở",
+"editorReminderNone": "Không có nhắc nhở",
+"editorReminderOnExpiry": "Vào ngày hết hạn",
+"editorReminder7Days": "7 ngày trước khi hết hạn",
+"editorReminder30Days": "30 ngày trước khi hết hạn",
+"editorReminderCustom": "Tùy chỉnh",
+"daysBeforeExpiry": "ngày trước khi hết hạn",
+"reminderStage0Title": "Nhắc nhở hết hạn",
+"reminderStage0Body": "{firstName}, {itemName} sẽ hết hạn sau {days} ngày.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Nhắc nhở theo dõi",
+"reminderStage1Body": "{firstName}, {itemName} vẫn chưa được cập nhật.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Sắp hết hạn",
+"reminderStage2Body": "Ngày hết hạn của {itemName} đang đến gần.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Nhắc nhở cuối cùng",
+"reminderFinalBody": "{firstName}, vui lòng cập nhật {itemName} ngay bây giờ.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Cân bằng phạm vi",
+"coverageAllRepresented": "Hồ sơ của bạn bao gồm các mục trong tất cả danh mục.",
+"coverageMissingNamed": "Không tìm thấy hồ sơ trong {count} danh mục: {names}.",
+"coverageMissingSummary": "Bạn chưa thêm bản ghi nào trong {count} danh mục, bao gồm {names} và {remaining} mục khác.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Sử dụng mật khẩu",
+"signInWithBiometrics": "Đăng nhập bằng sinh trắc học",
+"enableBiometricsTitle": "Bật bảo mật sinh trắc học",
+"enableBiometricsBody": "Sử dụng vân tay hoặc nhận diện khuôn mặt để bảo vệ Vaultara.",
+"enableBiometricsReason": "Bật mở khóa sinh trắc học cho Vaultara.",
+"notNow": "Không phải bây giờ",
+"useBiometrics": "Sử dụng sinh trắc học",
+"recordsCalendarIntro":
+  "Chọn cách bạn muốn xem các ngày hết hạn:\n\n• Nhập số ngày từ hôm nay mà bạn muốn xem trước.\n• Hoặc chọn một ngày cụ thể trên lịch.\n\nVaultara sẽ hiển thị những hồ sơ hết hạn vào ngày đó.",
+
+"showingRecordsRelative": "Đang hiển thị hồ sơ hết hạn {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Đang hiển thị hồ sơ hết hạn vào ngày đã chọn",
+
+"noRecordsOnDate":
+  "Không có hồ sơ nào được thiết lập để hết hạn vào ngày đó.",
+
+"recordEditorAddTitle": "Thêm hồ sơ",
+"recordEditorEditTitle": "Chỉnh sửa hồ sơ",
+
+"editorRecordName": "Tên hồ sơ",
+"editorRecordNameHint": "Nhập tên hồ sơ",
+"recordEditorErrorName": "Tên hồ sơ là bắt buộc",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Chạm để thêm và theo dõi hồ sơ trong nhóm này.",
+
+"recordsInGroup": "Hồ sơ trong nhóm này",
+
+"recordsInGroupHint":
+  "Theo dõi từng hồ sơ quan trọng cùng ngày hết hạn để cập nhật kịp thời.",
+
+"searchRecords": "Tìm kiếm hồ sơ",
+"addRecord": "Thêm hồ sơ",
+"noRecordsYet": "Chưa có hồ sơ nào.",
+
+"deleteRecordTitle": "Xóa hồ sơ",
+
+"recordsInsightClusteredTitle":
+  "Nhiều hồ sơ hết hạn vào khoảng {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Hầu hết hồ sơ của bạn được nhóm dưới {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Tất cả hồ sơ",
+
+"recordsStabilityDecliningBody":
+  "Một số hồ sơ đã hết hạn và nhiều hồ sơ khác sắp hết hạn.",
+
+"recordsCoverageAllRepresented":
+  "Hồ sơ của bạn bao phủ tất cả các danh mục.",
+
+"recordReminderStage0Body":
+  "{firstName}, hồ sơ {recordName} của bạn sẽ hết hạn trong {days} ngày.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, hồ sơ {recordName} của bạn vẫn chưa được cập nhật.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Ngày hết hạn của hồ sơ {recordName} đang đến gần.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, vui lòng cập nhật hồ sơ {recordName} ngay bây giờ.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Chưa có nhóm nào",
+"recordsExpiring": "{count, plural, one {1 bản ghi hết hạn trong {days} ngày} other {{count} bản ghi hết hạn trong {days} ngày}}",
+"recordsGroupStats": "{records, plural, one {1 bản ghi} other {{records} bản ghi}} • {expiring} trong {days} ngày",
+"groupLabel": "{count, plural, one {{count} nhóm} other {{count} nhóm}}",
+"recordsLabel": "{count, plural, one {{count} bản ghi} other {{count} bản ghi}}",
+"forgotPassword": "Quên mật khẩu?",
+  "forgotPasswordTitle": "Đặt lại mật khẩu",
+  "forgotPasswordBody": "Nhập địa chỉ email của bạn và chúng tôi sẽ gửi liên kết đặt lại mật khẩu.",
+  "sendResetLink": "Gửi liên kết",
+  "passwordResetEmailSent": "Email đặt lại mật khẩu đã được gửi.",
+  "verifyEmailToContinue": "Vui lòng xác minh địa chỉ email của bạn trước khi đăng nhập",
+  "changeEmailTitle": "Thay đổi địa chỉ email",
+"newEmailHint": "Nhập email mới của bạn",
+"sendVerificationEmail": "Gửi email xác minh",
+"deleteAccountTitle": "Xóa tài khoản",
+"deleteAccountWarning": "Hành động này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu đã lưu.\nKhông thể hoàn tác.",
+"deleteAccountConfirm": "Xóa tài khoản vĩnh viễn",
+"supportTitle": "Hỗ trợ",
+"supportSubtitle": "Liên hệ với chúng tôi nếu bạn cần trợ giúp hoặc có câu hỏi.",
+"supportEmailSubject": "Yêu cầu hỗ trợ Vaultara",
+"supportEmailError": "Không thể mở ứng dụng email.",
+"passwordResetEmailFailed": "Không thể gửi email đặt lại mật khẩu.",
+"loggedInPasswordResetBody": "Chúng tôi sẽ gửi liên kết đặt lại mật khẩu đến:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Quản lý tài khoản",
+"changeEmailTitle": "Thay đổi địa chỉ email",
+"changeEmailSubtitle": "Cập nhật email được liên kết với tài khoản của bạn.",
+"changePasswordTitle": "Thay đổi mật khẩu",
+"changePasswordSubtitle": "Chúng tôi sẽ gửi email chứa liên kết để thay đổi mật khẩu một cách an toàn.",
+"deleteAccountTitle": "Xóa tài khoản",
+"deleteAccountSubtitle": "Xóa vĩnh viễn tài khoản Vaultara của bạn.",
+"biometricAuthReason": "Xác thực để truy cập tài khoản của bạn",
+"verifyEmailTitle": "Xác minh email của bạn",
+"verifyEmailBody": "Chúng tôi đã gửi email xác minh đến hộp thư của bạn. Vui lòng mở và xác nhận địa chỉ email của bạn, sau đó quay lại đây để tiếp tục.",
+"verifyEmailConfirmedButton": "Tôi đã xác minh email của mình",
+"verifyEmailResendButton": "Gửi lại email xác minh",
+"verifyEmailSending": "Đang gửi...",
+"navHome": "Trang chủ",
+"navCategories": "Danh mục",
+"navInsights": "Phân tích",
+"navCalendar": "Lịch",
+"tutorialHomeSearch": "Sử dụng thanh tìm kiếm để nhanh chóng tìm bản ghi.",
+"tutorialHomeFab": "Thêm bản ghi đầu tiên tại đây.\nChọn danh mục, ghi chú và ngày hết hạn.",
+"tutorialHomeSummary": "Phần này giúp phát hiện bản ghi sắp hết hạn.",
+"tutorialHomeInsight": "Phân tích này hiển thị các mẫu.\nBạn có thể nhấn biểu tượng loa.",
+"tutorialHomeCoverage": "Cân bằng bao phủ cho thấy sự phân bố bản ghi.",
+"tutorialHomeStability": "Độ ổn định cho thấy độ tin cậy.",
+"tutorialCancel": "Hủy",
+"tutorialNext": "Tiếp",
+"tutorialEnd": "Kết thúc hướng dẫn",
+"softDeleteCategory": "danh mục",
+"softDeleteGroup": "nhóm",
+"softDeleteRecord": "bản ghi",
+
+"softDeleteTitle": "Chuyển {type} vào Đã xóa gần đây",
+
+"softDeleteMessage": "{type} \"{name}\" sẽ được chuyển vào Đã xóa gần đây.\n\nBạn có thể khôi phục trong vòng 30 ngày. Sau đó sẽ bị xóa vĩnh viễn.",
+
+"softDeleteMove": "Chuyển",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Đã xóa gần đây",
+"categories": "Danh mục",
+"groups": "Nhóm",
+"records": "Bản ghi",
+"restore": "Khôi phục",
+"deletePermanently": "Xóa vĩnh viễn",
+
+"recentlyDeletedBanner": "{type} đã xóa được lưu trong 30 ngày.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Tìm {type} đã xóa",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Không có {type} đã xóa",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Nhấn vào một danh mục để xem các nhóm và quản lý bản ghi của bạn.",
+"groupsHint": "Các nhóm sắp xếp bản ghi của bạn trong danh mục này. Nhấn vào nhóm để quản lý bản ghi.",
+"notLoggedIn": "Chưa đăng nhập",
+"recordsInsideGroupHint": "Đây là các bản ghi trong nhóm này.",
+"snackMovedToRecentlyDeleted": "\"{name}\" đã được chuyển vào Đã xóa gần đây",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "Đã xóa \"{name}\" thành công",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "Đã cập nhật \"{name}\" thành công",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "Đã thêm \"{name}\" thành công",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "Đã khôi phục \"{name}\" thành công",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Đã đạt giới hạn miễn phí ({current}/{limit}). Nâng cấp để thêm nhiều hơn.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Tìm tất cả bản ghi",
+"globalSearchHint": "Nhập tên, danh mục hoặc nhóm",
+"globalSearchNoMatches": "Không có bản ghi nào khớp với tìm kiếm của bạn.",
+"snackNoRecordsToSearch": "Không có bản ghi để tìm kiếm. Thêm một vài bản ghi và Vaultara sẽ tự động lập chỉ mục.",
+"recoveryCentreTitle": "Trung tâm khôi phục",
+"recoveryCentreSubtitle": "Khôi phục hoặc xóa vĩnh viễn các bản ghi đã xóa.",
+"plan_premium": "Premium",
+"plan_free": "Miễn phí",
+"profile_app_settings_title": "Cài đặt ứng dụng",
+"profile_privacy_security_title": "Quyền riêng tư và bảo mật",
+"profile_biometric_on": "Khóa sinh trắc học đang bật trên thiết bị này.",
+"profile_biometric_off": "Khóa sinh trắc học đang tắt.",
+"profile_biometric_enable_reason": "Xác nhận danh tính để bật khóa sinh trắc học.",
+"profile_biometric_disable_reason": "Xác nhận danh tính để tắt khóa sinh trắc học.",
+"profile_account_management_title": "Quản lý tài khoản",
+"profile_account_management_subtitle": "Thay đổi email, mật khẩu hoặc xóa tài khoản.",
+"profile_premium_active_title": "Premium đang hoạt động",
+"profile_premium_upgrade_title": "Nâng cấp lên Premium",
+"profile_premium_active_subtitle": "Nhắc nhở nâng cao đã được mở khóa.",
+"profile_premium_upgrade_subtitle": "Mở khóa nhắc nhở nâng cao và tổ chức không giới hạn.",
+"profile_manage_cancel_hint": "Quản lý hoặc hủy bất kỳ lúc nào trên Google Play.",
+"profile_manage_subscription_button": "Quản lý đăng ký",
+"plansTitle": "Chọn gói của bạn",
+"plansTrialBanner": "Dùng thử 7 ngày.\nHủy bất kỳ lúc nào.",
+"plansLoading": "Đang tải…",
+"plansStartFreeTrial": "Bắt đầu miễn phí",
+"plansNoChargeTodayFooter": "Dùng thử 7 ngày · Không tính phí hôm nay",
+
+"planFreeTitle": "Miễn phí",
+"planFreeSubtitle": "Để bắt đầu",
+"planPremiumMonthlyTitle": "Premium hàng tháng",
+"planPremiumYearlyTitle": "Premium hàng năm",
+"planPerMonth": "mỗi tháng",
+"planPerYear": "mỗi năm",
+
+"planBadgeCurrent": "Hiện tại",
+"planBadgePopular": "Phổ biến",
+"planBadgeBestValue": "Giá trị nhất",
+
+"planYouAreOnThisPlan": "Bạn đang dùng gói này.",
+
+"planFeatureUpToRecords": "Tối đa {count} bản ghi",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Danh mục tùy chỉnh (tối đa {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Danh mục con có sẵn",
+"planFeatureCloudStorage": "Lưu trữ đám mây",
+"planFeatureSmartExpiryInsights": "Phân tích hết hạn",
+"planFeatureCoverageBalance": "Cân bằng danh mục",
+"planFeatureRecordStabilityTracking": "Độ ổn định dữ liệu",
+
+"planFeatureUnlimitedRecords": "Không giới hạn bản ghi",
+"planFeatureUnlimitedCategories": "Không giới hạn danh mục",
+"planFeatureCustomSubcategories": "Danh mục con tùy chỉnh",
+"planFeatureMultipleRemindersPerRecord": "Nhiều nhắc nhở",
+"planFeatureAdvancedReminderTiming": "Thời gian nâng cao",
+"planFeatureAutomaticFollowUps": "Nhắc nhở tự động",
+
+"planFeatureEverythingInMonthly": "Tất cả trong gói tháng",
+"planFeatureSavePercentComparedToMonthly": "Tiết kiệm {percent}% so với tháng",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Giá trị dài hạn tốt nhất",
+"editorReminderLabel": "Nhắc nhở",
+"editorReminderSelectOptional": "Chọn nhắc nhở (tùy chọn)",
+"editorReminderOnExpiry": "Vào ngày hết hạn",
+"editorReminderDaysBefore": "Trước {days} ngày",
+"editorFreeItemsCount": "Bản ghi miễn phí: {used}/{limit}",
+"editorExpiryPastWarning": "Ngày hết hạn đã qua.",
+"editorExpiryTodayWarning": "Bản ghi này hết hạn hôm nay.",
+"editorErrorExpiryPast": "Ngày hết hạn không được ở trong quá khứ.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Thông tin hôm nay",
+"tutorialBannerTitle": "Hướng dẫn nhanh",
+"tutorialBannerBody": "Tìm hiểu cách tìm kiếm, thêm bản ghi và hiểu ý nghĩa của insights trong chưa đến một phút.",
+"tutorialBannerStart": "Bắt đầu hướng dẫn",
+"tutorialBannerDismiss": "Không phải lúc này",
+"authErrorUserDisabled": "Tài khoản này đã bị vô hiệu hóa.",
+"authErrorNetwork": "Lỗi mạng. Vui lòng thử lại.",
+"authErrorTooManyRequests": "Quá nhiều lần thử. Vui lòng thử lại sau.",
+"authErrorSignInFailed": "Đăng nhập thất bại. Vui lòng thử lại.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium đã được kích hoạt",
+"snackPremiumRestored": "Premium đã được khôi phục",
+"passwordNeedLower": "Phải chứa chữ thường",
+"passwordNeedUpper": "Phải chứa chữ hoa",
+"passwordNeedNumber": "Phải chứa số",
+"passwordNeedSymbol": "Phải chứa ký hiệu",
+"confirmIdentityTitle": "Xác nhận danh tính",
+"confirm": "Xác nhận",
+"profile_sign_out_title": "Đăng xuất",
+"profile_sign_out_subtitle": "Đăng xuất khỏi Vaultara trên thiết bị này",
+"profile_sign_out_confirm_title": "Đăng xuất?",
+"profile_sign_out_confirm_body": "Bạn sẽ cần đăng nhập lại để truy cập tài khoản.",
+"profile_sign_out_action": "Đăng xuất",
+"todayInsightsAudioHint": "Thích nghe audio? Dùng biểu tượng loa.",
+"category2Label": "Danh mục",
+"enable2BiometricsBody": "Dùng nhận diện vân tay để bảo vệ tài khoản Vaultara của bạn.",
+"snackNotificationsDisabled": "Thông báo đã bị tắt. Bật để nhận lời nhắc.",
+"openSettings": "Mở cài đặt",
+
+"reminderOnExpiryTitle": "Hết hạn hôm nay",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Chào {firstName}, \"{itemName}\" hết hạn hôm nay.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Danh mục miễn phí: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Hiển thị số danh mục miễn phí đã dùng so với giới hạn miễn phí.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Thêm ghi chú (tùy chọn)",
+"apply": "Áp dụng",
+"smartInsightExpiresTodayHeading": "Hết Hạn Hôm Nay",
+"smartInsightExpiresTodaySingleBody": "{name} hết hạn hôm nay. Hành động ngay bây giờ để giữ nó được cập nhật.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{names} và {extra} tài liệu khác hết hạn hôm nay.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Cần Sự Chú Ý Của Bạn",
+"smartInsightSilentRiskBody": "{name} hết hạn trong {days} ngày và không có lời nhắc nào được đặt. Xác nhận rằng các chi tiết vẫn còn đúng.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Nhiều Lần Gia Hạn Gần Nhau",
+"smartInsightRenewalTwinBodyTwo": "{a} và {b} hết hạn trong vòng ba tuần với nhau. Lên kế hoạch trước.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, và {c} đều hết hạn trong vòng ba tuần. Lên kế hoạch trước.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{a}, {b}, và {extra} tài liệu khác hết hạn trong vòng ba tuần. Lên kế hoạch trước.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Nhóm Sắp Tới",
+"smartInsightClusterBody": "{count} tài liệu trong {category} hết hạn trong hai tháng tới. Cân nhắc xử lý chúng cùng nhau.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Giai Đoạn Yên Bình Phía Trước",
+"smartInsightQuietPeriodBody": "Không có gì hết hạn trong {days} ngày tới. Lần gia hạn tiếp theo của bạn là vào {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Tất Cả Cập Nhật",
+"smartInsightAllCaughtUpBody": "{count} lần hết hạn sắp tới được bao phủ bởi lời nhắc. Không có gì khác cần sự chú ý của bạn.",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Tất cả cập nhật. Không có gì cần sự chú ý của bạn ngay bây giờ.",
+"smartInsightNoRecordsHeading": "Thêm Bản Ghi Đầu Tiên Của Bạn",
+"smartInsightNoRecordsBody": "Bắt đầu theo dõi tài liệu của bạn và Vaultara sẽ hiển thị thông tin chi tiết thông minh tại đây.",
+"expiryTimelineTitle": "Mốc thời gian hết hạn",
+"expiryTimelineSubtitle": "Chạm vào một tháng để xem các bản ghi hết hạn trong tháng đó",
+"expiryTimelineDetailCount": "{count} bản ghi",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Sắp tới",
+"summaryUpcomingCaption": "Trong 30 ngày",
+"summaryUrgentTitle": "Khẩn cấp",
+"summaryUrgentCaption": "Trong 7 ngày"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,6 +1,6 @@
-// lib/home/tts_service.dart
 import 'dart:io';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
 class TtsService {
@@ -8,10 +8,29 @@ class TtsService {
   bool available = false;
   bool speaking = false;
 
-  Future<void> init(VoidCallback onStart, VoidCallback onEnd) async {
+  Future<void> init(
+    BuildContext context,
+    VoidCallback onStateChanged,
+  ) async {
     try {
-      final tts = FlutterTts();
-      await tts.setLanguage('en-GB');
+      final FlutterTts tts = FlutterTts();
+
+      // 🔹 Get app locale
+      final locale = Localizations.localeOf(context);
+      final String languageCode = locale.languageCode;
+
+      // 🔹 Only English and Persian are special
+      String ttsLanguage;
+      if (languageCode == 'en') {
+        ttsLanguage = 'en-GB';
+      } else if (languageCode == 'fa') {
+        ttsLanguage = 'fa-IR';
+      } else {
+        ttsLanguage = languageCode;
+      }
+
+      await tts.setLanguage(ttsLanguage);
+
       await tts.setSpeechRate(0.45);
       await tts.awaitSpeakCompletion(true);
 
@@ -19,14 +38,28 @@ class TtsService {
         await tts.setSharedInstance(true);
       }
 
-      tts.setStartHandler(onStart);
-      tts.setCompletionHandler(onEnd);
-      tts.setCancelHandler(onEnd);
+      tts.setStartHandler(() {
+        speaking = true;
+        onStateChanged();
+      });
+
+      tts.setCompletionHandler(() {
+        speaking = false;
+        onStateChanged();
+      });
+
+      tts.setCancelHandler(() {
+        speaking = false;
+        onStateChanged();
+      });
 
       _tts = tts;
+
       available = true;
-    } catch (_) {
+      onStateChanged();
+    } catch (e) {
       available = false;
+      onStateChanged();
     }
   }
 

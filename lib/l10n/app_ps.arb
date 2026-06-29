@@ -18,17 +18,13 @@
   "in30Days": "۳۰ ورځې وروسته",
 
   "inDays": "{days} ورځې وروسته",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "د ورځو شمېر اړین دی",
   "invalidDaysError": "سم شمېر اړین دی (۰ یا زیات)",
 
   "showingItemsRelative": "{time} پای ته رسېدونکي توکي ښودل کېږي",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "په ټاکل شوې نېټه پای ته رسېدونکي توکي ښودل کېږي",
   "noItemsOnDate": "په دې نېټه هېڅ توکی نه پای ته رسېږي",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "د کټګورۍ نوم",
   "categoryNameHint": "کټګوري ولیکئ",
 
-  "categoryLimitReached":
-    "د Basic پلان حد ته رسېدلي یاست. Premium بې‌حده کټګورۍ برابروي",
-
-  "categoryLimitInfo":
-    "Basic پلان تر {limit} کټګوریو اجازه ورکوي",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "د Basic پلان حد ته رسېدلي یاست",
+  "categoryLimitInfo": "Basic پلان تر {limit} کټګوریو اجازه ورکوي",
 
   "categoryErrorEmpty": "د کټګورۍ نوم اړین دی",
   "categoryErrorTooShort": "د کټګورۍ نوم ډېر لنډ دی",
@@ -102,5 +92,797 @@
   "groupErrorSymbols": "د ډلې نوم یوازې سمبولونه نه شي کېدای",
   "groupErrorNumbers": "د ډلې نوم شمېرې نه شي لرلی",
 
-  "createGroup": "جوړول"
+  "createGroup": "جوړول",
+
+  "registerTitle": "حساب جوړ کړئ",
+
+  "firstNameLabel": "لومړی نوم",
+  "firstNameHint": "لومړی نوم ولیکئ",
+  "errorFirstName": "لومړی نوم اړین دی",
+
+  "lastNameLabel": "تخلص",
+  "lastNameHint": "تخلص ولیکئ",
+  "errorLastName": "تخلص اړین دی",
+
+  "emailLabel": "برېښنالیک",
+  "errorEmailInvalid": "سم برېښنالیک ولیکئ",
+  "errorEmailInUse": "دا برېښنالیک لا دمخه د Vaultara حساب سره تړلی دی",
+
+  "passwordLabel": "پټنوم",
+  "passwordHelper": "لږ تر لږه ۸ توري او مختلف ډولونه",
+
+  "passwordTooShort": "ډېر لنډ",
+  "passwordTooWeak": "کمزوری",
+  "passwordMedium": "منځنی",
+  "passwordStrong": "پیاوړی",
+"emailRequired": "ستاسو برېښنالیک اړین دی",
+"passwordRequired": "ستاسو پټ نوم اړین دی",
+"registerPasswordHint": "پټ نوم دننه کړئ",
+"loginPasswordHint": "خپل پټ نوم دننه کړئ",
+"emailHint": "خپل برېښنالیک پته دننه کړئ",
+  "errorPasswordLength": "پټنوم باید لږ تر لږه ۸ توري ولري",
+  "errorPasswordWeak": "پیاوړی پټنوم وټاکئ",
+
+  "errorGeneric": "ثبت نام ناکام شو بیا هڅه وکړئ",
+
+  "createAccount": "حساب جوړ کړئ",
+
+  "appName": "Vaultara",
+  "authTagline": "ستاسو شخصي مرکز د پاسپورټ جواز کارتونو او نورو مهمو توکو لپاره",
+  "tabSignIn": "ننوتل",
+  "tabCreateAccount": "حساب جوړ کړئ",
+  "signInFooterText": "ننوتل وکړئ ترڅو خپل شخصي Vaultara فضا ته لاسرسی ولرئ او ټول نوي کېدنې تر کنټرول لاندې وساتئ",
+  "createAccountFooterText": "د Vaultara حساب جوړ کړئ ترڅو مهم یادښتونه خوندي کړئ او هر وخت ورته لاسرسی ولرئ",
+  "invalidEmail": "سمه برېښنالیک پته دننه کړئ",
+  "emailNotFound": "غلط برېښنالیک.\nد دې برېښنالیک سره د Vaultara حساب نشته",
+  "incorrectPassword": "پټ نوم ناسم دی",
+  "emailLabel": "برېښنالیک",
+  "passwordLabel": "پټ نوم",
+  "signIn": "ننوتل",
+   "categoryPersonalIdentification": "شخصي پېژندنه",
+  "categoryDrivingAndVehicles": "موټر چلونه او وسایط",
+  "categoryTravelAndImmigration": "سفر او کډوالي",
+  "categoryBankingAndCards": "بانکداري او کارتونه",
+  "categoryInsuranceAndCover": "بیمه او پوښښ",
+  "categoryHealthAndMedical": "روغتیا او طبي",
+  "categoryWorkAndProfessional": "کار او مسلکي",
+  "categoryPropertyAndHousing": "ملکیت او استوګنځای",
+  "categoryHouseholdAndUtilities": "کورنی ژوند او اسانتیاوې",
+
+  "subcategoryPassports": "پاسپورټونه",
+  "subcategoryIdCards": "پېژندپاڼې",
+  "subcategoryResidencePermits": "د استوګنې جوازونه",
+
+  "subcategoryDrivingLicences": "د موټر چلولو جوازونه",
+  "subcategoryVehicleRegistrations": "د وسایطو ثبت",
+  "subcategoryRoadworthyCertificates": "د سړک وړتیا سندونه",
+  "subcategoryVehicleInspectionCertificates": "د وسایطو د معاینې سندونه",
+
+  "subcategoryVisas": "ویزې",
+  "subcategoryStudyPermits": "د زده کړې جوازونه",
+  "subcategoryWorkPermits": "د کار جوازونه",
+  "subcategoryTravelInsuranceDocuments": "د سفر بیمې اسناد",
+
+  "subcategoryDebitAndCreditCards": "ډیبیټ او کریډیټ کارتونه",
+  "subcategoryStoreCards": "د پلورنځي کارتونه",
+  "subcategoryFuelCards": "د سون توکو کارتونه",
+
+  "subcategoryVehicleInsurances": "د وسایطو بیمه",
+  "subcategoryPropertyInsurances": "د ملکیت بیمه",
+  "subcategoryLifeInsurances": "د ژوند بیمه",
+  "subcategoryHealthInsurances": "د روغتیا بیمه",
+  "subcategoryTravelInsurances": "د سفر بیمه",
+
+  "subcategoryMedicalPrescriptions": "طبي نسخې",
+  "subcategoryOpticalPrescriptions": "د سترګو نسخې",
+  "subcategoryMedicalCertificates": "طبي تصدیقونه",
+
+  "subcategoryProfessionalLicences": "مسلکي جوازونه",
+  "subcategoryProfessionalRegistrations": "مسلکي ثبتونه",
+  "subcategoryIndustryRegistrations": "صنعتي ثبتونه",
+  "subcategoryWorkAccessCards": "د کار د لاسرسي کارتونه",
+
+  "subcategoryLeaseAgreements": "د کرایې تړونونه",
+  "subcategoryAccessCardsAndTags": "د لاسرسي کارتونه او ټګونه",
+  "subcategoryParkingPermits": "د پارکینګ جوازونه",
+  "subcategorySecurityAccessPermits": "د امنیت د لاسرسي جوازونه",
+
+  "subcategoryElectricityAccounts": "د برېښنا حسابونه",
+  "subcategoryWaterAccounts": "د اوبو حسابونه",
+  "subcategoryInternetContracts": "د انټرنېټ تړونونه",
+  "subcategorySecurityServiceContracts": "د امنیتي خدمتونو تړونونه",
+  "searchCategories": "کتګورۍ ولټوئ",
+  "filterAll": "ټول",
+  "filterPreset": "مخکې ټاکل شوي",
+  "filterCustom": "شخصي",
+  "addCategoryTitle": "کتګوري اضافه کړئ",
+  "customLabel": "شخصي",
+  "subcategoriesLabel": "فرعي کتګورۍ",
+  "itemsLabel": "توکي",
+  "itemsExpiring": "{count} توکي به په {days} ورځو کې پای ته ورسېږي",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "نښلول شوې کتګورۍ",
+  "pinnedHint": "هغه کتګورۍ نښل کړئ چې ډېر کاروئ ترڅو د لست په سر کې پاتې شي.",
+  "noCategoriesFound": "هیڅ کتګوري ونه موندل شوه",
+   "searchGroups": "ګروپونه ولټوئ",
+  "addGroupTitle": "ګروپ اضافه کړئ",
+  "basicPlanGroupInfo": "تاسو د Basic پلان کاروئ.\nتاسو کولی شئ په دې کټګورۍ کې مخکې ټاکل شوي ګروپونه وګورئ.\nد Premium ته ارتقا ورکړئ ترڅو خپل ګروپونه جوړ کړئ.",
+  "groupDeleted": "ګروپ حذف شو",
+  "undo": "بېرته واخلئ",
+  "groupStats": "{items} توکي • {expiring} به په {days} ورځو کې پای ته ورسېږي",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "د دې ګروپ کې د توکو د اضافه کولو او تعقیب لپاره ټچ وکړئ.",
+  "itemsInGroup": "په دې ګروپ کې توکي",
+  "itemsInGroupHint": "مهم توکي د پای نېټو سره تعقیب کړئ ترڅو پر وخت یې نوي کړئ.",
+  "searchItems": "توکي ولټوئ",
+  "filterAll": "ټول",
+  "filterExpiringWithin": "په {days} ورځو کې پای ته رسېږي",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "پای ته رسېدلي",
+  "addItem": "توکی اضافه کړئ",
+  "noItemsYet": "تر اوسه کوم توکي نشته.",
+
+  "statusExpired": "پای ته رسېدلی",
+  "statusExpiresToday": "نن پای ته رسېږي",
+  "statusExpiresInOneDay": "سبا پای ته رسېږي",
+  "statusExpiresInDays": "په {days} ورځو کې پای ته رسېږي",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "اعتبار لري",
+
+  "deleteCategoryTitle": "کتګوري ړنګه کړئ",
+  "deleteCategoryMessage": "ایا تاسې ډاډه یاست چې کتګوري \"{name}\" ړنګه کړئ؟",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "ګروپ ړنګ کړئ",
+  "deleteGroupMessage": "ایا تاسې ډاډه یاست چې ګروپ \"{name}\" ړنګ کړئ؟",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "توکی ړنګ کړئ",
+  "deleteItemMessage": "ایا تاسې ډاډه یاست چې \"{name}\" ړنګ کړئ؟",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "لغوه",
+  "delete": "ړنګ کړئ",
+  "homeWelcomeFirstTitle": "ښه راغلاست، {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "بیا ښه راغلاست، {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara تاسو سره مرسته کوي چې مهمې پای نیټې تعقیب کړئ ترڅو هېڅ شی له پامه ونه غورځول شي.",
+
+"homeWelcomeSubtitleFirst":
+  "تاسو دلته لیدل خوشحالۍ ده. Vaultara تاسو سره مرسته کوي چې مهمې نیټې او ریکارډونه په یو خوندي ځای کې تنظیم کړئ.",
+
+"homeWelcomeSubtitleBack":
+  "بیا مو لیدل خوښ شول. Vaultara هر وخت چمتو ده چې تاسو خپلې مهمې نیټې او ریکارډونه بیاکتنه کړئ.",
+  "insightEmptyTitle": "تر اوسه هېڅ شی نه دی اضافه شوی",
+  "insightEmptyBody": "کله چې مهمې نیټې تعقیب کړئ، Vaultara به تاسو سره د پای نېټو نه مخکې پاتې کېدو کې مرسته وکړي.",
+
+  "insightExpiresTodayTitle": "\"{name}\" نن پای ته رسېږي",
+  "insightExpiresTodayBody": "یو لنډ کتنه معلومات سم ساتي.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" سبا پای ته رسېږي",
+  "insightExpiresTomorrowBody": "اوس یې بیاکتنه وروسته وخت سپموي.",
+
+  "insightExpiresSoonTitle": "\"{name}\" په {date} پای ته رسېږي",
+  "insightExpiresSoonBody": "ژر اقدام کول هر څه اسانه کوي.",
+
+  "insightNextExpiryTitle": "بل پای \"{name}\" دی ({date})",
+  "insightNextExpiryBody": "دا مهال هېڅ اقدام ته اړتیا نشته.",
+
+  "insightClusteredTitle": "څو توکي د {month} شاوخوا پای ته رسېږي",
+  "insightClusteredBody": "یوځای یې بیاکتنه وخت سپموي.",
+
+  "insightTopCategoryTitle": "ډېر توکي د {category} لاندې دي",
+  "insightTopCategoryBody": "له دې ځایه پیل تر ټولو اغېزمن دی.",
+
+  "insightStableTitle": "هر څه ثابت ښکاري",
+  "insightStableBody": "اوس مهال عاجل پای نېټې نشته.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "ښه راغلاست",
+  "summaryAllTitle": "ټول توکي",
+"summaryAllCaption": "په Vaultara کې تعقیب شوي",
+"summarySoonTitle": "ژر پای ته رسیږي",
+"summarySoonCaption": "په ۳۰ ورځو کې",
+"summaryWeekTitle": "دا اونۍ",
+"summaryWeekCaption": "په ۷ ورځو کې پای ته رسیږي",
+"summaryExpiredTitle": "پای ته رسیدلي",
+"summaryExpiredCaption": "د پای نېټه تېره شوې ده",
+"stabilityStableTitle": "هر څه باثباته ښکاري",
+"stabilityStableBody": "ستاسو ثبتونه هېڅ فوري یا راټولېدونکی خطر نه ښيي.",
+
+"stabilityDecliningTitle": "ثبات کمېږي",
+"stabilityDecliningBody": "ځینې توکي پای ته رسېدلي او نور نږدې دي.",
+
+"stabilityWeakenedTitle": "ثبات کمزوری شوی",
+"stabilityWeakenedBody": "د پای ته رسېدلو ثبتونو شتون عمومي باور کموي.",
+
+"stabilityPressureTitle": "فشار زیاتېږي",
+"stabilityPressureBody": "د ثبات ساتلو لپاره به ځینې ثبتونه ژر پاملرنې ته اړتیا ولري.",
+"editorNotes": "یادښتونه",
+"notesHint": "یادښتونه ولیکئ",
+"editorReminderTitle": "یادونه",
+"editorReminderNone": "یادونه نشته",
+"editorReminderOnExpiry": "د پای نېټه کې",
+"editorReminder7Days": "د پای څخه ۷ ورځې مخکې",
+"editorReminder30Days": "د پای څخه ۳۰ ورځې مخکې",
+"editorReminderCustom": "ځانګړی",
+"daysBeforeExpiry": "د پای څخه مخکې ورځې",
+"reminderStage0Title": "د پای ته رسېدو یادونه",
+"reminderStage0Body": "{firstName}, {itemName} به په {days} ورځو کې پای ته ورسېږي.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "تعقیبي یادونه",
+"reminderStage1Body": "{firstName}, {itemName} لا هم نه دی تازه شوی.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "پای ته رسېدل نږدې دي",
+"reminderStage2Body": "د {itemName} د پای نېټه نږدې ده.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "وروستۍ یادونه",
+"reminderFinalBody": "{firstName}, مهرباني وکړئ {itemName} اوس تازه کړئ.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "د پوښښ توازن",
+"coverageAllRepresented": "ستاسو ریکارډونه ټول کټګورۍ پوښي.",
+"coverageMissingNamed": "په {count} کټګوریو کې هېڅ ریکارډ ونه موندل شو: {names}.",
+"coverageMissingSummary": "تاسو په {count} کټګوریو کې هېڅ ریکارډ نه دی اضافه کړی، چې پکې {names} او نور {remaining} شامل دي.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "پاسورډ وکاروئ",
+"signInWithBiometrics": "د بایومتریک له لارې ننوتل",
+"enableBiometricsTitle": "بایومتریک امنیت فعال کړئ",
+"enableBiometricsBody": "د Vaultara د ساتنې لپاره د ګوتې نښه یا د مخ پېژندنه وکاروئ.",
+"enableBiometricsReason": "د Vaultara لپاره بایومتریک خلاصول فعال کړئ.",
+"notNow": "اوس نه",
+"useBiometrics": "بایومتریک وکاروئ",
+"recordsCalendarIntro":
+  "وټاکئ چې څنګه غواړئ د ختمېدو نېټې وګورئ:\n\n• ولیکئ چې له نن څخه څو ورځې مخکې ته کتل غواړئ.\n• یا په تقویم کې ځانګړې نېټه وټاکئ.\n\nVaultara به هغه ریکارډونه وښيي چې په هماغه ورځ ختمېږي.",
+
+"showingRecordsRelative": "هغه ریکارډونه ښيي چې په {time} کې ختمېږي",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "هغه ریکارډونه ښيي چې په ټاکل شوې نېټه ختمېږي",
+
+"noRecordsOnDate":
+  "په دې ورځ د ختمېدو لپاره هېڅ ریکارډ نه دی ټاکل شوی.",
+
+"recordEditorAddTitle": "ریکارډ اضافه کړئ",
+"recordEditorEditTitle": "ریکارډ سمول",
+
+"editorRecordName": "د ریکارډ نوم",
+"editorRecordNameHint": "د ریکارډ نوم ولیکئ",
+"recordEditorErrorName": "د ریکارډ نوم اړین دی",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "د دې ډلې ریکارډونه د اضافه کولو او تعقیب لپاره ټېپ وکړئ.",
+
+"recordsInGroup": "په دې ډلې کې ریکارډونه",
+
+"recordsInGroupHint":
+  "هر مهم ریکارډ د ختمېدو نېټې سره تعقیب کړئ ترڅو پر وخت یې نوي کړئ.",
+
+"searchRecords": "ریکارډونه ولټوئ",
+"addRecord": "ریکارډ اضافه کړئ",
+"noRecordsYet": "تر اوسه هېڅ ریکارډ نشته.",
+
+"deleteRecordTitle": "ریکارډ ړنګ کړئ",
+
+"recordsInsightClusteredTitle":
+  "څو ریکارډونه د {month} شاوخوا ختمېږي",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "ستاسو ډېر ریکارډونه د {category} لاندې دي",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "ټول ریکارډونه",
+
+"recordsStabilityDecliningBody":
+  "ځینې ریکارډونه لا دمخه ختم شوي او نور به ژر ختم شي.",
+
+"recordsCoverageAllRepresented":
+  "ستاسو ریکارډونه ټولې کټګورۍ پوښي.",
+
+"recordReminderStage0Body":
+  "{firstName}، ستاسو {recordName} ریکارډ په {days} ورځو کې ختمېږي.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}، ستاسو {recordName} ریکارډ لا تر اوسه نوي شوی نه دی.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "د {recordName} ریکارډ د ختمېدو نېټه نږدې ده.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}، مهرباني وکړئ اوس {recordName} ریکارډ نوي کړئ.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "تر اوسه ډلې نشته",
+"recordsExpiring": "{count, plural, one {۱ ریکارډ په {days} ورځو کې ختمېږي} other {{count} ریکارډونه په {days} ورځو کې ختمېږي}}",
+"recordsGroupStats": "{records, plural, one {۱ ریکارډ} other {{records} ریکارډونه}} • {expiring} په {days} ورځو کې",
+"groupLabel": "{count, plural, one {{count} grupa} other {{count} grupy}}",
+"recordsLabel": "{count, plural, one {{count} rekord} other {{count} rekordy}}",
+"forgotPassword": "پاسورډ مو هېر شوی؟",
+  "forgotPasswordTitle": "پاسورډ بیا تنظیم کړئ",
+  "forgotPasswordBody": "خپل برېښنالیک دننه کړئ ترڅو د پاسورډ د بیا تنظیم لینک درولېږو.",
+  "sendResetLink": "لینک ولېږئ",
+  "passwordResetEmailSent": "د پاسورډ د بیا تنظیم برېښنالیک واستول شو.",
+  "verifyEmailToContinue": "Verifique o seu endereço de e-mail antes de iniciar sessão",
+  "changeEmailTitle": "د برېښنالیک پته بدلول",
+"newEmailHint": "خپل نوی برېښنالیک ولیکئ",
+"sendVerificationEmail": "د تایید برېښنالیک واستوئ",
+"deleteAccountTitle": "حساب ړنګول",
+"deleteAccountWarning": "دا عمل به ستاسو حساب او ټول ساتل شوي معلومات په دايمي ډول ړنګ کړي.\nدا بېرته نشي راګرځېدلی.",
+"deleteAccountConfirm": "حساب په دايمي ډول ړنګ کړئ",
+"supportTitle": "ملاتړ",
+"supportSubtitle": "که مرستې ته اړتیا لرئ یا پوښتنې لرئ، له موږ سره اړیکه ونیسئ.",
+"supportEmailSubject": "د Vaultara د ملاتړ غوښتنه",
+"supportEmailError": "د برېښنالیک اپلیکیشن نه خلاصیږي.",
+"passwordResetEmailFailed": "د پټنوم د بیا تنظیم ایمیل ونه لېږل شو.",
+"loggedInPasswordResetBody": "موږ به د پټنوم د بیا تنظیم لینک واستوو:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "د حساب مدیریت",
+"changeEmailTitle": "د برېښنالیک پته بدل کړئ",
+"changeEmailSubtitle": "د خپل حساب پورې تړلی برېښنالیک تازه کړئ.",
+"changePasswordTitle": "پټنوم بدل کړئ",
+"changePasswordSubtitle": "موږ به تاسو ته د پټنوم د خوندي بدلون لپاره برېښنالیک واستوو.",
+"deleteAccountTitle": "حساب ړنګ کړئ",
+"deleteAccountSubtitle": "خپل Vaultara حساب په بشپړ ډول ړنګ کړئ.",
+"biometricAuthReason": "د خپل حساب ته د لاسرسي لپاره تصدیق وکړئ",
+"verifyEmailTitle": "خپل برېښنالیک تایید کړئ",
+"verifyEmailBody": "موږ ستاسو انباکس ته د تایید برېښنالیک استولی دی. مهرباني وکړئ هغه خلاص کړئ او خپل برېښنالیک تایید کړئ، بیا دلته راستون شئ ترڅو دوام ورکړئ.",
+"verifyEmailConfirmedButton": "ما خپل برېښنالیک تایید کړی",
+"verifyEmailResendButton": "د تایید برېښنالیک بیا ولېږئ",
+"verifyEmailSending": "لېږل کېږي...",
+"navHome": "کور",
+"navCategories": "ډلې",
+"navInsights": "تحلیل",
+"navCalendar": "تقویم",
+"tutorialHomeSearch": "د لټون پټه وکاروئ تر څو هر ثبت شوی توکی ژر پیدا کړئ.",
+"tutorialHomeFab": "دلته خپل لومړی ریکارډ اضافه کړئ.\nځای وټاکئ، یادښتونه اضافه کړئ او د پای نېټه وټاکئ.",
+"tutorialHomeSummary": "دا برخه تاسو سره مرسته کوي چې پای ته نږدې توکي ومومئ.",
+"tutorialHomeInsight": "دا هوښیار تحلیل نمونې او راتلونکې پای نېټې ښيي.\nتاسو کولی شئ د غږ نښه ټچ کړئ.",
+"tutorialHomeCoverage": "د پوښښ توازن ښيي چې ریکارډونه څومره مساوي ویشل شوي دي.",
+"tutorialHomeStability": "ثبات ښيي چې ریکارډونه څومره باور وړ دي.",
+"tutorialCancel": "لغوه",
+"tutorialNext": "بل",
+"tutorialEnd": "لارښود پای ته ورسوئ",
+"softDeleteCategory": "کټګوري",
+"softDeleteGroup": "ډله",
+"softDeleteRecord": "ریکارډ",
+
+"softDeleteTitle": "{type} وروستي حذف شويو ته ولېږدوه",
+
+"softDeleteMessage": "{type} \"{name}\" به وروستي حذف شويو ته ولېږدول شي.\n\nتاسو کولی شئ دا د ۳۰ ورځو دننه بېرته ترلاسه کړئ. وروسته به دا تل لپاره حذف شي.",
+
+"softDeleteMove": "ولېږدوه",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "وروستي حذف شوي",
+"categories": "کټګورۍ",
+"groups": "ګروپونه",
+"records": "ریکارډونه",
+"restore": "بیا راګرځول",
+"deletePermanently": "تل لپاره حذف کول",
+
+"recentlyDeletedBanner": "حذف شوي {type} د ۳۰ ورځو لپاره ساتل کېږي.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "حذف شوي {type} ولټوئ",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "هیڅ حذف شوي {type} نشته",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "یو کټګوري وټاکئ ترڅو ډلې یې وګورئ او خپل ریکارډونه اداره کړئ.",
+"groupsHint": "ګروپونه ستاسو ریکارډونه په دې کټګورۍ کې تنظیموي. د ریکارډونو د مدیریت لپاره په ګروپ ټک وکړئ.",
+"notLoggedIn": "ننوتل نه دي شوي",
+"recordsInsideGroupHint": "دا د دې ډلې دننه ریکارډونه دي.",
+"snackMovedToRecentlyDeleted": "\"{name}\" تازه حذف شويو ته ولېږدول شو",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" په برياليتوب سره حذف شو",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" په برياليتوب سره تازه شو",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" په برياليتوب سره اضافه شو",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" په برياليتوب سره بېرته راوستل شو",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "وړيا حد ته ورسېدئ ({current}/{limit}). د نورو لپاره اپګرېډ وکړئ.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+     "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "ټول ریکارډونه ولټوئ",
+"globalSearchHint": "د ریکارډ نوم، کټګوري یا ډله ولیکئ",
+"globalSearchNoMatches": "هیڅ ریکارډ ستاسو له لټون سره سمون نه لري.",
+"snackNoRecordsToSearch": "د لټون لپاره هېڅ ریکارډ نشته. څو ریکارډونه اضافه کړئ او Vaultara به یې په اوتومات ډول فهرست کړي.",
+"recoveryCentreTitle": "د بیا رغونې مرکز",
+"recoveryCentreSubtitle": "لرې شوي ریکارډونه بېرته راوګرځوئ یا یې تل لپاره حذف کړئ.",
+"plan_premium": "پریمیم",
+"plan_free": "وړیا",
+"profile_app_settings_title": "د اپ تنظیمات",
+"profile_privacy_security_title": "محرمیت او امنیت",
+"profile_biometric_on": "بیومیټریک قفل په دې وسیله کې فعال دی.",
+"profile_biometric_off": "بیومیټریک قفل غیر فعال دی.",
+"profile_biometric_enable_reason": "د بیومیټریک قفل د فعالولو لپاره خپل هویت تایید کړئ.",
+"profile_biometric_disable_reason": "د بیومیټریک قفل د غیر فعالولو لپاره خپل هویت تایید کړئ.",
+"profile_account_management_title": "د حساب مدیریت",
+"profile_account_management_subtitle": "برېښنالیک، پټنوم بدل کړئ یا حساب حذف کړئ.",
+"profile_premium_active_title": "پریمیم فعال دی",
+"profile_premium_upgrade_title": "پریمیم ته لوړ کړئ",
+"profile_premium_active_subtitle": "پرمختللي یادونې فعالې شوې.",
+"profile_premium_upgrade_subtitle": "پرمختللي یادونې او نامحدود تنظیم خلاص کړئ.",
+"profile_manage_cancel_hint": "په هر وخت کې په Google Play کې اداره یا لغوه کړئ.",
+"profile_manage_subscription_button": "د ګډون مدیریت",
+"plansTitle": "خپل پلان وټاکئ",
+"plansTrialBanner": "د ۷ ورځو وړیا ازموینه پیل کړئ.\nهر وخت لغوه کولی شئ.",
+"plansLoading": "پورته کېږي…",
+"plansStartFreeTrial": "وړیا پیل کړئ",
+"plansNoChargeTodayFooter": "۷ ورځې وړیا · نن هېڅ لګښت نشته",
+
+"planFreeTitle": "وړیا",
+"planFreeSubtitle": "د پیل لپاره",
+"planPremiumMonthlyTitle": "پریمیم میاشتنی",
+"planPremiumYearlyTitle": "پریمیم کلنی",
+"planPerMonth": "په میاشت",
+"planPerYear": "په کال",
+
+"planBadgeCurrent": "اوسنی",
+"planBadgePopular": "مشهور",
+"planBadgeBestValue": "غوره ارزښت",
+
+"planYouAreOnThisPlan": "تاسو په همدې پلان کې یاست.",
+
+"planFeatureUpToRecords": "تر {count} ریکارډه",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "شخصي کټګورۍ (تر {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "چمتو فرعي کټګورۍ",
+"planFeatureCloudStorage": "کلاوډ ذخیره",
+"planFeatureSmartExpiryInsights": "د ختمېدو شننه",
+"planFeatureCoverageBalance": "د کټګوریو توازن",
+"planFeatureRecordStabilityTracking": "د معلوماتو ثبات",
+
+"planFeatureUnlimitedRecords": "نامحدود ریکارډونه",
+"planFeatureUnlimitedCategories": "نامحدود کټګورۍ",
+"planFeatureCustomSubcategories": "شخصي فرعي کټګورۍ",
+"planFeatureMultipleRemindersPerRecord": "ډېر یادونې",
+"planFeatureAdvancedReminderTiming": "پرمختللی وخت",
+"planFeatureAutomaticFollowUps": "اتومات یادونې",
+
+"planFeatureEverythingInMonthly": "د میاشتني ټول امکانات",
+"planFeatureSavePercentComparedToMonthly": "د میاشتني پرتله {percent}% سپما",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "غوره اوږدمهاله ارزښت",
+"editorReminderLabel": "یادونه",
+"editorReminderSelectOptional": "یادونه وټاکئ (اختیاري)",
+"editorReminderOnExpiry": "د پای نېټه",
+"editorReminderDaysBefore": "{days} ورځې د پای څخه مخکې",
+"editorFreeItemsCount": "وړیا ریکارډونه: {used}/{limit}",
+"editorExpiryPastWarning": "د پای نېټه تیره شوې ده.",
+"editorExpiryTodayWarning": "دا ریکارډ نن پای ته رسیږي.",
+"editorErrorExpiryPast": "د پای نېټه نشي کولی په تېر وخت کې وي.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "د نن ورځې لیدونه",
+"tutorialBannerTitle": "چټک لارښود",
+"tutorialBannerBody": "په یوه دقیقه کې زده کړئ چې څنګه لټون وکړئ، ریکارډونه اضافه کړئ او د بصیرتونو مانا څه ده.",
+"tutorialBannerStart": "لارښود پیل کړئ",
+"tutorialBannerDismiss": "اوس نه",
+"authErrorUserDisabled": "دا حساب غیر فعال شوی دی.",
+"authErrorNetwork": "د شبکې ستونزه. بیا هڅه وکړئ.",
+"authErrorTooManyRequests": "ډېرې هڅې شوې دي. وروسته بیا هڅه وکړئ.",
+"authErrorSignInFailed": "ننوتل ناکام شول. بیا هڅه وکړئ.",
+"ok": "سمه ده",
+"snackPremiumEnabled": "پریمیم فعال شو",
+"snackPremiumRestored": "پریمیم بېرته راوګرځول شو",
+"passwordNeedLower": "باید کوچنی توری ولري",
+"passwordNeedUpper": "باید لويه توری ولري",
+"passwordNeedNumber": "باید شمېره ولري",
+"passwordNeedSymbol": "باید نښه ولري",
+"confirmIdentityTitle": "هویت تایید کړئ",
+"confirm": "تایید کړئ",
+"profile_sign_out_title": "وتل",
+"profile_sign_out_subtitle": "په دې وسیله کې له Vaultara څخه ووځئ",
+"profile_sign_out_confirm_title": "وتل غواړئ؟",
+"profile_sign_out_confirm_body": "خپل حساب ته د لاسرسي لپاره به بیا ننوتل اړین وي.",
+"profile_sign_out_action": "وتل",
+"todayInsightsAudioHint": "غږ خوښوئ؟ د سپيکر نښه وکاروئ.",
+"category2Label": "کټګوري",
+"enable2BiometricsBody": "د خپل Vaultara حساب د خوندي کولو لپاره د ګوتې نښې پېژندنه وکاروئ.",
+"snackNotificationsDisabled": "خبرتیاوې بندې دي. د یادونو ترلاسه کولو لپاره یې فعالې کړئ.",
+"openSettings": "تنظیمات پرانیزئ",
+
+"reminderOnExpiryTitle": "نن پای ته رسېږي",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "سلام {firstName}، \"{itemName}\" نن پای ته رسېږي.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "وړیا کټګورۍ: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "ښيي چې د وړیا حد څخه څو وړیا کټګورۍ کارول شوې دي.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "یادښتونه اضافه کړئ (اختیاري)",
+"apply": "پلي کول",
+"smartInsightExpiresTodayHeading": "نن ورځ پای ته رسیږي",
+"smartInsightExpiresTodaySingleBody": "{name} نن ورځ پای ته رسیږي. اوس اقدام وکړئ ترڅو دا تازه وساتئ.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} او ۱ نور سند نن ورځ پای ته رسیږي.} other{{names} او {extra} نور سندونه نن ورځ پای ته رسیږي.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "ستاسو پاملرنه غواړي",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} په ۱ ورځ کې پای ته رسیږي او هیڅ یادونه نشته. ډاډ ترلاسه کړئ چې جزئیات لاهم سم دي.} other{{name} په {days} ورځو کې پای ته رسیږي او هیڅ یادونه نشته. ډاډ ترلاسه کړئ چې جزئیات لاهم سم دي.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "ډیر نوي کول یوځای نږدې",
+"smartInsightRenewalTwinBodyTwo": "{a} او {b} د یو بل څخه په درې اونیو کې پای ته رسیږي. مخکې له مخکې پلان وکړئ.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, او {c} ټول په درې اونیو کې پای ته رسیږي. مخکې له مخکې پلان وکړئ.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, او ۱ نور سند په درې اونیو کې پای ته رسیږي. مخکې له مخکې پلان وکړئ.} other{{a}, {b}, او {extra} نور سندونه په درې اونیو کې پای ته رسیږي. مخکې له مخکې پلان وکړئ.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "راتلونکې ډله",
+"smartInsightClusterBody": "{count, plural, =1{په {category} کې ۱ سند په راتلونکو دوو میاشتو کې پای ته رسیږي. د دوی په ګډه اداره کولو ته فکر وکړئ.} other{په {category} کې {count} سندونه په راتلونکو دوو میاشتو کې پای ته رسیږي. د دوی په ګډه اداره کولو ته فکر وکړئ.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "آرامه دوره مخکې",
+"smartInsightQuietPeriodBody": "{days, plural, =1{د راتلونکې ۱ ورځې لپاره هیڅ شی پای ته نه رسیږي. ستاسو راتلونکی نوي کول په {firstDate} دی.} other{د راتلونکو {days} ورځو لپاره هیڅ شی پای ته نه رسیږي. ستاسو راتلونکی نوي کول په {firstDate} دی.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "ټول تازه دي",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{۱ راتلونکی پای ته رسیدل د یادونو لخوا پوښل شوي. بل هیڅ شی ستاسو پاملرنه ته اړتیا نلري.} other{{count} راتلونکي پای ته رسیدل د یادونو لخوا پوښل شوي. بل هیڅ شی ستاسو پاملرنه ته اړتیا نلري.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "ټول تازه دي. اوس هیڅ شی ستاسو پاملرنه ته اړتیا نلري.",
+"smartInsightNoRecordsHeading": "خپل لومړی ریکارډ اضافه کړئ",
+"smartInsightNoRecordsBody": "د خپلو اسنادو تعقیب پیل کړئ او Vaultara به دلته هوښیار بصیرتونه ښکاره کړي.",
+"expiryTimelineTitle": "د پای ته رسیدو مهالویش",
+"expiryTimelineSubtitle": "په هغه میاشت کې د پای ته رسیدونکو ریکارډونو لیدلو لپاره میاشت ټک کړئ",
+"expiryTimelineDetailCount": "{count, plural, =1{۱ ریکارډ} other{{count} ریکارډونه}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "راتلونکي",
+"summaryUpcomingCaption": "په 30 ورځو کې",
+"summaryUrgentTitle": "بیړنی",
+"summaryUrgentCaption": "په 7 ورځو کې"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,28 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'category_item.dart';
 import 'subcategory_screen.dart';
 import 'document_hierarchy.dart';
-import 'item_repository.dart';
-import 'add_category_sheet.dart'; 
+import 'add_category_sheet.dart';
+import 'category_filter_chips.dart';
+import 'category_usage_tracker.dart';
+import 'category_card.dart';
 
-enum CategoryFilterMode {
-  all,
-  presetOnly,
-  customOnly,
-}
+import 'category_repository.dart';
+import 'action_feedback_snackbar.dart';
+import 'confirm_soft_delete_dialog.dart';
+import 'package:vaultara/screens/profile/recovery_centre/recently_deleted_screen.dart';
+import 'package:vaultara/home/home_header_loader.dart';
+import 'package:vaultara/item_repository.dart';
+import 'package:vaultara/subcategory_repository.dart';
 
-enum CategorySortMode {
-  mostUsed,
-  recentlyUsed,
-}
+enum CategoryFilterMode { all, presetOnly, customOnly }
+enum CategorySortMode { mostUsed, recentlyUsed }
 
 class CategoriesScreen extends StatefulWidget {
   final bool isPremium;
+  final void Function(String categoryKey)? onCategoryOpened;
 
   const CategoriesScreen({
     super.key,
     required this.isPremium,
+    this.onCategoryOpened,
   });
 
   @override
@@ -30,435 +35,305 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
-  static const int _freeCustomCategoryLimit = 3;
-
   final TextEditingController _searchController = TextEditingController();
+  final CategoryUsageTracker _usageTracker = CategoryUsageTracker();
 
-  // ✅ SAFE INITIALISATION (NO UI CHANGE)
-  List<CategoryItem> _categories = <CategoryItem>[];
-  bool _isLoading = true;
-
-  int _customCategoryCount = 0;
+  late List<CategoryItem> _presetCategories;
+  bool _categoriesReady = false;
 
   CategoryFilterMode _filterMode = CategoryFilterMode.all;
   CategorySortMode _sortMode = CategorySortMode.recentlyUsed;
 
-  final Set<String> _pinnedCategoryLabels = <String>{};
-  final Map<String, int> _openCountByLabel = <String, int>{};
-  final Map<String, DateTime> _lastOpenedByLabel = <String, DateTime>{};
-
   @override
-  void initState() {
-    super.initState();
-    _initCategories();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    if (!_categoriesReady) {
+      _presetCategories = DocumentHierarchy.buildCategorySeeds(context)
+          .map(
+            (seed) => CategoryItem(
+              key: seed.key,
+              label: seed.label,
+              icon: seed.icon,
+              subcategories: List<String>.from(seed.subcategoryKeys),
+            ),
+          )
+          .toList();
+
+      _categoriesReady = true;
+    }
   }
 
-  Future<void> _initCategories() async {
-    _categories = DocumentHierarchy.buildCategorySeeds()
-        .map(
-          (CategorySeed seed) => CategoryItem(
-            label: seed.label,
-            icon: seed.icon,
-            subcategories: List<String>.from(seed.subcategories),
-          ),
-        )
-        .toList();
+  Future<void> _openRecentlyDeletedCategories() async {
+    final changed = await Navigator.push<bool>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const RecentlyDeletedScreen(initialTabIndex: 0),
+      ),
+    );
 
-    await ItemRepository.loadForCurrentUser();
+    if (changed == true) {
+      await HomeHeaderLoader.clearCache();
+
+      CategoryRepository.clearForSignOut();
+      ItemRepository.clearForSignOut();
+      SubcategoryRepository.clearForSignOut();
+
+      await CategoryRepository.loadForCurrentUser();
+      await ItemRepository.loadForCurrentUser();
+      await SubcategoryRepository.loadForCurrentUser(forceReload: true);
+
+      if (!mounted) return;
+      setState(() {});
+    }
+  }
+
+  Future<void> _deleteCustomCategory(CategoryItem item) async {
+    final confirmed = await ConfirmSoftDeleteDialog.show(
+      context,
+      type: SoftDeleteTarget.category,
+      name: item.label,
+    );
+
+    if (!confirmed) return;
+
+    await CategoryRepository.softDeleteCategory(item.key);
 
     if (!mounted) return;
-    setState(() => _isLoading = false);
-  }
-
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
-
-  bool _isDefaultCategoryLabel(String label) {
-    return DocumentHierarchy.categories.contains(label);
-  }
-
-  bool _canAddCategory() {
-    if (widget.isPremium) return true;
-    return _customCategoryCount < _freeCustomCategoryLimit;
+    ActionFeedbackSnackbar.showDeleted(context, item.label);
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-    final String query = _searchController.text.trim().toLowerCase();
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
 
-    final List<CategoryItem> allCategories =
-        List<CategoryItem>.from(_categories);
+    final custom = CategoryRepository.getAll();
+    final customKeySet = custom.map((c) => c.key).toSet();
+    final Map<String, CategoryItem> byKey = <String, CategoryItem>{};
 
-    List<CategoryItem> filtered = List<CategoryItem>.from(_categories);
-
-    if (query.isNotEmpty) {
-      filtered = filtered
-          .where((c) => c.label.toLowerCase().contains(query))
-          .toList();
+    for (final p in _presetCategories) {
+      byKey[p.key] = p;
+    }
+    for (final c in custom) {
+      byKey[c.key] = c; // custom wins
     }
 
-    filtered = switch (_filterMode) {
-      CategoryFilterMode.presetOnly =>
-        filtered.where((c) => _isDefaultCategoryLabel(c.label)).toList(),
-      CategoryFilterMode.customOnly =>
-        filtered.where((c) => !_isDefaultCategoryLabel(c.label)).toList(),
-      CategoryFilterMode.all => filtered,
-    };
+    final merged = byKey.values.toList();
 
-    filtered.sort((a, b) {
-      final bool aPinned = _pinnedCategoryLabels.contains(a.label);
-      final bool bPinned = _pinnedCategoryLabels.contains(b.label);
+    final q = _searchController.text.trim().toLowerCase();
 
-      if (aPinned != bPinned) return aPinned ? -1 : 1;
+    var visible = merged.where((c) {
+      if (q.isEmpty) return true;
+      return c.label.toLowerCase().contains(q);
+    }).toList();
 
-      if (_sortMode == CategorySortMode.mostUsed) {
-        return (_openCountByLabel[b.label] ?? 0)
-            .compareTo(_openCountByLabel[a.label] ?? 0);
+    visible = visible.where((c) {
+      final bool isCustom = customKeySet.contains(c.key);
+      switch (_filterMode) {
+        case CategoryFilterMode.all:
+          return true;
+        case CategoryFilterMode.presetOnly:
+          return !isCustom;
+        case CategoryFilterMode.customOnly:
+          return isCustom;
       }
+    }).toList();
 
-      return (_lastOpenedByLabel[b.label] ??
-              DateTime.fromMillisecondsSinceEpoch(0))
-          .compareTo(
-              _lastOpenedByLabel[a.label] ??
-                  DateTime.fromMillisecondsSinceEpoch(0));
-    });
-
-    final int threshold = ItemRepository.expiringThresholdDays;
+    _usageTracker.sortCategories(visible, _sortMode);
+    final w = MediaQuery.of(context).size.width;
+    final crossAxisCount = w >= 900 ? 4 : (w >= 600 ? 3 : 2);
 
     return SafeArea(
       child: Column(
         children: [
-          _buildPinnedRow(allCategories),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+            child: Row(
+              children: [
+                const Icon(Icons.category_rounded),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    loc.categories,
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+                IconButton(
+                  tooltip: loc.recentlyDeletedTitle,
+                  icon: const Icon(Icons.restore_from_trash_rounded),
+                  onPressed: _openRecentlyDeletedCategories,
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: scheme.primary.withOpacity(0.08),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: scheme.primary.withOpacity(0.25),
+                ),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(
+                    Icons.info_outline_rounded,
+                    color: scheme.primary,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      loc.categoriesHint,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: scheme.onSurface.withOpacity(0.8),
+                        height: 1.4,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: TextField(
               controller: _searchController,
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
-                hintText: 'Search categories',
+                hintText: loc.searchCategories,
                 prefixIcon: const Icon(Icons.search_rounded),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(999),
                 ),
                 isDense: true,
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
-            child: Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(2),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(999),
-                    border: Border.all(
-                      color: scheme.outline.withOpacity(0.4),
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      _CategoryFilterChip(
-                        label: 'All',
-                        selected: _filterMode == CategoryFilterMode.all,
-                        onTap: () => setState(
-                          () => _filterMode = CategoryFilterMode.all,
-                        ),
-                      ),
-                      _CategoryFilterChip(
-                        label: 'Pre-set',
-                        selected:
-                            _filterMode == CategoryFilterMode.presetOnly,
-                        onTap: () => setState(
-                          () => _filterMode =
-                              CategoryFilterMode.presetOnly,
-                        ),
-                      ),
-                      _CategoryFilterChip(
-                        label: 'Custom',
-                        selected:
-                            _filterMode == CategoryFilterMode.customOnly,
-                        onTap: () => setState(
-                          () => _filterMode =
-                              CategoryFilterMode.customOnly,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const Spacer(),
-                FilledButton.icon(
-                  onPressed: _openAddCategorySheet, 
-                  icon: const Icon(Icons.add_rounded, size: 18),
-                  label: const Text('Add category'),
-                ),
-              ],
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: FilledButton.icon(
+                onPressed: _openAddCategorySheet,
+                icon: const Icon(Icons.add_rounded, size: 18),
+                label: Text(loc.addCategoryTitle),
+              ),
             ),
           ),
-
-          const SizedBox(height: 4),
+          Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: CategoryFilterChips(
+              filterMode: _filterMode,
+              onChanged: (m) => setState(() => _filterMode = m),
+            ),
+          ),
           Expanded(
-            child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
-                : filtered.isEmpty
-                    ? _buildEmptyCategoriesPlaceholder()
-                    : GridView.builder(
-                        padding: const EdgeInsets.all(16),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          mainAxisSpacing: 12,
-                          crossAxisSpacing: 12,
-                          childAspectRatio: 0.7,
+            child: GridView.builder(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 140),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: crossAxisCount, // ✅ CHANGED
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 12,
+                mainAxisExtent: 230,
+              ),
+              itemCount: visible.length,
+              itemBuilder: (context, index) {
+                final item = visible[index];
+                final bool isCustom = customKeySet.contains(item.key);
+
+                return CategoryCard(
+                  category: item,
+                  scheme: scheme,
+                  isPinned: _usageTracker.isPinned(item.key),
+                  isCustom: isCustom,
+                  onPinnedToggle: () =>
+                      setState(() => _usageTracker.togglePin(item.key)),
+                  onDelete: isCustom ? () => _deleteCustomCategory(item) : null,
+                  onOpen: () {
+                    widget.onCategoryOpened?.call(item.key);
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => SubcategoryScreen(
+                          category: item,
+                          isPremium: widget.isPremium,
                         ),
-                        itemCount: filtered.length,
-                        itemBuilder: (context, index) {
-                          final CategoryItem item = filtered[index];
-                          final bool isCustom =
-                              !_isDefaultCategoryLabel(item.label);
-                          final bool isPinned =
-                              _pinnedCategoryLabels.contains(item.label);
-
-                          final int totalItems =
-                              ItemRepository.totalItemsForCategory(item.label);
-                          final int expiringSoon =
-                              ItemRepository.expiringSoonForCategory(item.label);
-
-                          return Card(
-                            elevation: 1.5,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(16),
-                            ),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(16),
-                              onTap: () {
-                                setState(() {
-                                  _openCountByLabel[item.label] =
-                                      (_openCountByLabel[item.label] ?? 0) + 1;
-                                  _lastOpenedByLabel[item.label] =
-                                      DateTime.now();
-                                });
-
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (_) => SubcategoryScreen(
-                                      category: item,
-                                      isPremium: widget.isPremium,
-                                    ),
-                                  ),
-                                );
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Container(
-                                          padding: const EdgeInsets.all(6),
-                                          decoration: BoxDecoration(
-                                            color: scheme.primary
-                                                .withOpacity(0.08),
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                          ),
-                                          child: Icon(
-                                            item.icon,
-                                            size: 20,
-                                            color: scheme.primary,
-                                          ),
-                                        ),
-                                        const Spacer(),
-                                        if (isCustom)
-                                          Container(
-                                            padding:
-                                                const EdgeInsets.symmetric(
-                                              horizontal: 8,
-                                              vertical: 3,
-                                            ),
-                                            decoration: BoxDecoration(
-                                              color: scheme
-                                                  .secondaryContainer,
-                                              borderRadius:
-                                                  BorderRadius.circular(999),
-                                            ),
-                                            child: Text(
-                                              'Custom',
-                                              style: TextStyle(
-                                                fontSize: 9,
-                                                fontWeight: FontWeight.w700,
-                                                color: scheme
-                                                    .onSecondaryContainer,
-                                              ),
-                                            ),
-                                          ),
-                                        IconButton(
-                                          icon: Icon(
-                                            isPinned
-                                                ? Icons.push_pin_rounded
-                                                : Icons.push_pin_outlined,
-                                            size: 18,
-                                            color: isPinned
-                                                ? scheme.primary
-                                                : scheme.outline,
-                                          ),
-                                          onPressed: () {
-                                            setState(() {
-                                              isPinned
-                                                  ? _pinnedCategoryLabels
-                                                      .remove(item.label)
-                                                  : _pinnedCategoryLabels
-                                                      .add(item.label);
-                                            });
-                                          },
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      item.label,
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w800,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      '${item.subcategories.length} subcategories • '
-                                      '$totalItems items',
-                                      style: TextStyle(
-                                        fontSize: 11,
-                                        color: scheme.onSurfaceVariant,
-                                      ),
-                                    ),
-                                    if (expiringSoon > 0)
-                                      Text(
-                                        '$expiringSoon items expiring in $threshold days',
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          color: scheme.onSurfaceVariant,
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        },
                       ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
         ],
       ),
     );
   }
 
-  // ✅ ONLY LOGIC CHANGE: CALL SEPARATE SHEET
   void _openAddCategorySheet() {
-    showModalBottomSheet<void>(
+    final int current = widget.isPremium
+        ? CategoryRepository.customCategoryCount()
+        : CategoryRepository.createdCategoriesCount();
+
+    final int limit =
+        CategoryRepository.limitForPlan(isPremium: widget.isPremium);
+
+    if (!CategoryRepository.canAddCategory(isPremium: widget.isPremium)) {
+      ActionFeedbackSnackbar.showLimitReached(
+        context,
+        current: current,
+        limit: limit,
+      );
+      return;
+    }
+
+    showModalBottomSheet(
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => AddCategorySheet(
         isPremium: widget.isPremium,
-        currentCount: _customCategoryCount,
-        freeLimit: _freeCustomCategoryLimit,
-        onCreate: (CategoryItem item) {
-          setState(() {
-            _categories.add(item);
-            _customCategoryCount++;
-          });
+        currentCount: current,
+        freeLimit: limit,
+        onCreate: (newCat) async {
+          final ok = await CategoryRepository.addCategory(
+            newCat,
+            isPremium: widget.isPremium,
+          );
+
+          if (!mounted) return;
+
+          if (!ok) {
+            final refreshedCurrent = widget.isPremium
+                ? CategoryRepository.customCategoryCount()
+                : CategoryRepository.createdCategoriesCount();
+
+            final refreshedLimit =
+                CategoryRepository.limitForPlan(isPremium: widget.isPremium);
+
+            ActionFeedbackSnackbar.showLimitReached(
+              context,
+              current: refreshedCurrent,
+              limit: refreshedLimit,
+            );
+            return;
+          }
+
+          ActionFeedbackSnackbar.showAdded(context, newCat.label);
+          setState(() {});
         },
-      ),
-    );
-  }
-  Widget _buildPinnedRow(List<CategoryItem> allCategories) {
-    final pinned = allCategories
-        .where((c) => _pinnedCategoryLabels.contains(c.label))
-        .toList();
-
-    if (pinned.isEmpty) return const SizedBox.shrink();
-
-    final scheme = Theme.of(context).colorScheme;
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'Pinned essentials',
-            style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            'Pin the categories you open most so they stay at the top of your list.',
-            style: TextStyle(fontSize: 11, color: scheme.onSurfaceVariant),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildEmptyCategoriesPlaceholder() {
-    final scheme = Theme.of(context).colorScheme;
-
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.folder_off_rounded, size: 40, color: scheme.outline),
-          const SizedBox(height: 8),
-          const Text(
-            'No categories found',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _CategoryFilterChip extends StatelessWidget {
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _CategoryFilterChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-
-    return InkWell(
-      borderRadius: BorderRadius.circular(999),
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(999),
-          color:
-              selected ? scheme.primary.withOpacity(0.1) : Colors.transparent,
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            color: selected ? scheme.primary : scheme.onSurfaceVariant,
-          ),
-        ),
       ),
     );
   }

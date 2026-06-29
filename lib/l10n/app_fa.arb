@@ -103,5 +103,794 @@
   "groupErrorSymbols": "نام نمی‌تواند شامل نماد باشد",
   "groupErrorNumbers": "نام نمی‌تواند شامل عدد باشد",
 
-  "createGroup": "ایجاد"
+  "createGroup": "ایجاد",
+
+
+  "registerTitle": "ایجاد حساب",
+
+  "firstNameLabel": "نام",
+  "firstNameHint": "نام خود را وارد کنید",
+  "errorFirstName": "نام الزامی است",
+
+  "lastNameLabel": "نام خانوادگی",
+  "lastNameHint": "نام خانوادگی خود را وارد کنید",
+  "errorLastName": "نام خانوادگی الزامی است",
+
+  "emailLabel": "ایمیل",
+  "errorEmailInvalid": "ایمیل معتبر وارد کنید.",
+  "errorEmailInUse": "این ایمیل قبلاً به حساب Vaultara متصل شده است.",
+
+  "passwordLabel": "رمز عبور",
+
+  "passwordHelper": "حداقل ۸ کاراکتر با ترکیب‌های مختلف.",
+
+  "passwordTooShort": "خیلی کوتاه",
+  "passwordTooWeak": "خیلی ضعیف",
+  "passwordMedium": "متوسط",
+  "passwordStrong": "قوی",
+"emailRequired": "ایمیل شما الزامی است",
+"passwordRequired": "رمز عبور شما الزامی است",
+"registerPasswordHint": "رمز عبور را وارد کنید",
+"loginPasswordHint": "رمز عبور خود را وارد کنید",
+"emailHint": "آدرس ایمیل خود را وارد کنید",
+  "errorPasswordLength": "رمز عبور باید حداقل ۸ کاراکتر باشد.",
+  "errorPasswordWeak": "رمز عبور قوی‌تری انتخاب کنید.",
+
+  "errorGeneric": "ثبت‌نام ناموفق بود. دوباره تلاش کنید.",
+
+  "createAccount": "ایجاد حساب",
+  "appName": "Vaultara",
+"authTagline": "مرکز شخصی شما برای گذرنامه‌ها، مجوزها، کارت‌ها و سایر موارد ضروری",
+"tabSignIn": "ورود",
+"tabCreateAccount": "ایجاد حساب",
+"signInFooterText": "وارد شوید تا به فضای شخصی Vaultara خود دسترسی داشته باشید و هر تمدید را کنترل کنید",
+"createAccountFooterText": "حساب Vaultara خود را برای پشتیبان‌گیری از یادآورها و دسترسی در هر زمان ایجاد کنید",
+  "emailNotFound": "ایمیل نادرست است.\nهیچ حساب Vaultara با این ایمیل وجود ندارد",
+  "incorrectPassword": "رمز عبور نادرست است",
+  "emailLabel": "ایمیل",
+  "passwordLabel": "رمز عبور",
+  "signIn": "ورود",
+ "categoryPersonalIdentification": "هویت شخصی",
+  "categoryDrivingAndVehicles": "رانندگی و وسایل نقلیه",
+  "categoryTravelAndImmigration": "سفر و مهاجرت",
+  "categoryBankingAndCards": "بانکداری و کارت‌ها",
+  "categoryInsuranceAndCover": "بیمه و پوشش",
+  "categoryHealthAndMedical": "سلامت و پزشکی",
+  "categoryWorkAndProfessional": "کار و حرفه‌ای",
+  "categoryPropertyAndHousing": "املاک و مسکن",
+  "categoryHouseholdAndUtilities": "خانه و خدمات",
+
+  "subcategoryPassports": "گذرنامه‌ها",
+  "subcategoryIdCards": "کارت‌های شناسایی",
+  "subcategoryResidencePermits": "مجوزهای اقامت",
+
+  "subcategoryDrivingLicences": "گواهینامه‌های رانندگی",
+  "subcategoryVehicleRegistrations": "ثبت وسایل نقلیه",
+  "subcategoryRoadworthyCertificates": "گواهی‌های سلامت خودرو",
+  "subcategoryVehicleInspectionCertificates": "گواهی‌های معاینه فنی خودرو",
+
+  "subcategoryVisas": "ویزاها",
+  "subcategoryStudyPermits": "مجوزهای تحصیل",
+  "subcategoryWorkPermits": "مجوزهای کار",
+  "subcategoryTravelInsuranceDocuments": "اسناد بیمه سفر",
+
+  "subcategoryDebitAndCreditCards": "کارت‌های بدهی و اعتباری",
+  "subcategoryStoreCards": "کارت‌های فروشگاهی",
+  "subcategoryFuelCards": "کارت‌های سوخت",
+
+  "subcategoryVehicleInsurances": "بیمه‌های خودرو",
+  "subcategoryPropertyInsurances": "بیمه‌های املاک",
+  "subcategoryLifeInsurances": "بیمه‌های عمر",
+  "subcategoryHealthInsurances": "بیمه‌های سلامت",
+  "subcategoryTravelInsurances": "بیمه‌های سفر",
+
+  "subcategoryMedicalPrescriptions": "نسخه‌های پزشکی",
+  "subcategoryOpticalPrescriptions": "نسخه‌های بینایی",
+  "subcategoryMedicalCertificates": "گواهی‌های پزشکی",
+
+  "subcategoryProfessionalLicences": "مجوزهای حرفه‌ای",
+  "subcategoryProfessionalRegistrations": "ثبت‌های حرفه‌ای",
+  "subcategoryIndustryRegistrations": "ثبت‌های صنعتی",
+  "subcategoryWorkAccessCards": "کارت‌های دسترسی کاری",
+
+  "subcategoryLeaseAgreements": "قراردادهای اجاره",
+  "subcategoryAccessCardsAndTags": "کارت‌ها و برچسب‌های دسترسی",
+  "subcategoryParkingPermits": "مجوزهای پارکینگ",
+  "subcategorySecurityAccessPermits": "مجوزهای دسترسی امنیتی",
+
+  "subcategoryElectricityAccounts": "حساب‌های برق",
+  "subcategoryWaterAccounts": "حساب‌های آب",
+  "subcategoryInternetContracts": "قراردادهای اینترنت",
+  "subcategorySecurityServiceContracts": "قراردادهای خدمات امنیتی",
+  "searchCategories": "جستجوی دسته‌بندی‌ها",
+  "filterAll": "همه",
+  "filterPreset": "از پیش تعیین‌شده",
+  "filterCustom": "سفارشی",
+  "addCategoryTitle": "افزودن دسته‌بندی",
+  "customLabel": "سفارشی",
+  "subcategoriesLabel": "زیر‌دسته‌ها",
+  "itemsLabel": "موارد",
+  "itemsExpiring": "{count} مورد که تا {days} روز دیگر منقضی می‌شوند",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "موارد سنجاق‌شده",
+  "pinnedHint": "دسته‌بندی‌هایی را که بیشتر استفاده می‌کنید سنجاق کنید تا در بالا باقی بمانند.",
+  "noCategoriesFound": "هیچ دسته‌بندی‌ای یافت نشد",
+  "searchGroups": "جستجوی گروه‌ها",
+  "addGroupTitle": "افزودن گروه",
+  "basicPlanGroupInfo": "شما از طرح پایه استفاده می‌کنید.\nمی‌توانید گروه‌های از پیش تعیین‌شده این دسته را مشاهده کنید.\nبرای ایجاد گروه‌های سفارشی، به نسخه پریمیوم ارتقا دهید.",
+  "groupDeleted": "گروه حذف شد",
+  "undo": "بازگردانی",
+  "groupStats": "{items} مورد • {expiring} مورد تا {days} روز دیگر منقضی می‌شوند",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "برای افزودن و پیگیری موارد در این گروه ضربه بزنید.",
+  "itemsInGroup": "موارد این گروه",
+  "itemsInGroupHint": "هر مورد مهم را همراه با تاریخ انقضا دنبال کنید تا به موقع آن را تمدید کنید.",
+  "searchItems": "جستجوی موارد",
+  "filterAll": "همه",
+  "filterExpiringWithin": "انقضا تا {days} روز دیگر",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "منقضی‌شده",
+  "addItem": "افزودن مورد",
+  "noItemsYet": "هنوز موردی وجود ندارد.",
+
+  "statusExpired": "منقضی‌شده",
+  "statusExpiresToday": "امروز منقضی می‌شود",
+  "statusExpiresInOneDay": "تا ۱ روز دیگر منقضی می‌شود",
+  "statusExpiresInDays": "تا {days} روز دیگر منقضی می‌شود",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "معتبر",
+
+  "deleteCategoryTitle": "حذف دسته‌بندی",
+  "deleteCategoryMessage": "آیا مطمئن هستید که می‌خواهید دسته‌بندی «{name}» را حذف کنید؟",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "حذف گروه",
+  "deleteGroupMessage": "آیا مطمئن هستید که می‌خواهید گروه «{name}» را حذف کنید؟",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "حذف مورد",
+  "deleteItemMessage": "آیا مطمئن هستید که می‌خواهید «{name}» را حذف کنید؟",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "لغو",
+  "delete": "حذف",
+  "homeWelcomeTitle": "خوش آمدید",
+
+  "homeWelcomeFirstTitle": "خوش آمدید، {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "دوباره خوش آمدید، {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara به شما کمک می‌کند تاریخ‌های انقضای مهم را پیگیری کنید تا هیچ چیزی نادیده گرفته نشود.",
+
+  "homeWelcomeSubtitleFirst":
+    "خوشحالیم که اینجا هستید. Vaultara با نگهداری تاریخ‌ها و سوابق مهم در یک مکان امن به شما کمک می‌کند منظم بمانید.",
+
+  "homeWelcomeSubtitleBack":
+    "خوشحالیم دوباره شما را می‌بینیم. Vaultara هر زمان که بخواهید تاریخ‌ها و سوابق مهم خود را بررسی کنید در کنار شماست.",
+    "insightEmptyTitle": "هنوز چیزی اضافه نشده است",
+  "insightEmptyBody": "با شروع ثبت تاریخ‌های مهم، Vaultara به شما کمک می‌کند همیشه یک قدم جلوتر باشید.",
+
+  "insightExpiresTodayTitle": "\"{name}\" امروز منقضی می‌شود",
+  "insightExpiresTodayBody": "یک بررسی کوتاه می‌تواند اطلاعات را به‌روز نگه دارد.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" فردا منقضی می‌شود",
+  "insightExpiresTomorrowBody": "بررسی امروز می‌تواند بعداً زمان را ذخیره کند.",
+
+  "insightExpiresSoonTitle": "\"{name}\" در {date} منقضی می‌شود",
+  "insightExpiresSoonBody": "رسیدگی زودتر باعث آرامش بیشتر می‌شود.",
+
+  "insightNextExpiryTitle": "انقضای بعدی \"{name}\" در {date} است",
+  "insightNextExpiryBody": "در حال حاضر نیازی به اقدام نیست.",
+
+  "insightClusteredTitle": "چند مورد در {month} منقضی می‌شوند",
+  "insightClusteredBody": "بررسی همزمان آن‌ها می‌تواند زمان را ذخیره کند.",
+
+  "insightTopCategoryTitle": "بیشتر موارد در دسته {category} هستند",
+  "insightTopCategoryBody": "بررسی این بخش بیشترین تأثیر را دارد.",
+
+  "insightStableTitle": "همه‌چیز پایدار است",
+  "insightStableBody": "در حال حاضر انقضای فوری وجود ندارد.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "همه موارد",
+"summaryAllCaption": "پیگیری‌شده در Vaultara",
+"summarySoonTitle": "به‌زودی منقضی می‌شود",
+"summarySoonCaption": "تا ۳۰ روز",
+"summaryWeekTitle": "این هفته",
+"summaryWeekCaption": "تا ۷ روز دیگر منقضی می‌شود",
+"summaryExpiredTitle": "منقضی‌شده",
+"summaryExpiredCaption": "تاریخ انقضا گذشته است",
+"stabilityStableTitle": "همه چیز پایدار به نظر می‌رسد",
+"stabilityStableBody": "سوابق شما هیچ خطر فوری یا انباشته‌ای نشان نمی‌دهند.",
+
+"stabilityDecliningTitle": "پایداری در حال کاهش است",
+"stabilityDecliningBody": "برخی موارد منقضی شده‌اند و موارد بیشتری در حال نزدیک شدن به انقضا هستند.",
+
+"stabilityWeakenedTitle": "پایداری تضعیف شده است",
+"stabilityWeakenedBody": "وجود سوابق منقضی‌شده، قابلیت اطمینان کلی را کاهش می‌دهد.",
+
+"stabilityPressureTitle": "فشار در حال افزایش است",
+"stabilityPressureBody": "برای حفظ پایداری، چندین مورد به‌زودی نیاز به توجه خواهند داشت.",
+"editorNotes": "یادداشت‌ها",
+"notesHint": "یادداشت وارد کنید",
+"editorReminderTitle": "یادآور",
+"editorReminderNone": "بدون یادآور",
+"editorReminderOnExpiry": "در تاریخ انقضا",
+"editorReminder7Days": "۷ روز قبل از انقضا",
+"editorReminder30Days": "۳۰ روز قبل از انقضا",
+"editorReminderCustom": "سفارشی",
+"daysBeforeExpiry": "روز قبل از انقضا",
+"reminderStage0Title": "یادآور انقضا",
+"reminderStage0Body": "{firstName}، {itemName} تا {days} روز دیگر منقضی می‌شود.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "یادآور پیگیری",
+"reminderStage1Body": "{firstName}، {itemName} هنوز به‌روزرسانی نشده است.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "انقضا نزدیک است",
+"reminderStage2Body": "تاریخ انقضای {itemName} در حال نزدیک شدن است.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "یادآور نهایی",
+"reminderFinalBody": "{firstName}، لطفاً {itemName} را اکنون به‌روزرسانی کنید.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "تعادل پوشش",
+"coverageAllRepresented": "سوابق شما شامل همه دسته‌بندی‌ها هستند.",
+"coverageMissingNamed": "هیچ سابقه‌ای در {count} دسته یافت نشد: {names}.",
+"coverageMissingSummary": "شما هیچ رکوردی در {count} دسته‌بندی اضافه نکرده‌اید، از جمله {names} و {remaining} مورد دیگر.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "استفاده از رمز عبور",
+"signInWithBiometrics": "ورود با بیومتریک",
+"enableBiometricsTitle": "فعال‌سازی امنیت بیومتریک",
+"enableBiometricsBody": "برای محافظت از Vaultara از اثر انگشت یا تشخیص چهره استفاده کنید.",
+"enableBiometricsReason": "فعال‌سازی باز کردن بیومتریک برای Vaultara.",
+"notNow": "الان نه",
+"useBiometrics": "استفاده از بیومتریک",
+"recordsCalendarIntro":
+  "انتخاب کنید چگونه می‌خواهید تاریخ‌های انقضا را بررسی کنید:\n\n• تعداد روزهایی که می‌خواهید از امروز جلوتر ببینید را وارد کنید.\n• یا یک تاریخ مشخص را از تقویم انتخاب کنید.\n\nVaultara نشان می‌دهد کدام سوابق در آن روز منقضی می‌شوند.",
+
+"showingRecordsRelative": "نمایش سوابقی که در {time} منقضی می‌شوند",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "نمایش سوابقی که در تاریخ انتخاب‌شده منقضی می‌شوند",
+"noRecordsOnDate": "هیچ سابقه‌ای برای انقضا در آن روز تنظیم نشده است.",
+
+"recordEditorAddTitle": "افزودن سابقه",
+"recordEditorEditTitle": "ویرایش سابقه",
+
+"editorRecordName": "نام سابقه",
+"editorRecordNameHint": "نام سابقه را وارد کنید",
+"recordEditorErrorName": "نام سابقه الزامی است",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "برای افزودن و پیگیری سوابق در این گروه ضربه بزنید.",
+
+"recordsInGroup": "سوابق این گروه",
+"recordsInGroupHint":
+  "هر سابقه مهم را با تاریخ انقضای آن پیگیری کنید تا به‌موقع تمدید شود.",
+
+"searchRecords": "جستجوی سوابق",
+"addRecord": "افزودن سابقه",
+"noRecordsYet": "هنوز سابقه‌ای وجود ندارد.",
+
+"deleteRecordTitle": "حذف سابقه",
+
+"recordsInsightClusteredTitle":
+  "چندین سابقه در حدود {month} منقضی می‌شوند",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "بیشتر سوابق شما در دسته {category} قرار دارند",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "همه سوابق",
+
+"recordsStabilityDecliningBody":
+  "برخی سوابق قبلاً منقضی شده‌اند و موارد بیشتری در حال نزدیک شدن به انقضا هستند.",
+
+"recordsCoverageAllRepresented":
+  "سوابق شما تمام دسته‌ها را پوشش می‌دهند.",
+
+"recordReminderStage0Body":
+  "{firstName}، {recordName} شما تا {days} روز دیگر منقضی می‌شود.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}، {recordName} شما هنوز به‌روزرسانی نشده است.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "تاریخ انقضای {recordName} در حال نزدیک شدن است.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}، لطفاً اکنون {recordName} را به‌روزرسانی کنید.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "هنوز گروهی وجود ندارد",
+"recordsExpiring": "{count, plural, one {۱ رکورد تا {days} روز دیگر منقضی می‌شود} other {{count} رکورد تا {days} روز دیگر منقضی می‌شوند}}",
+"recordsGroupStats": "{records, plural, one {۱ رکورد} other {{records} رکورد}} • {expiring} تا {days} روز",
+"groupLabel": "{count, plural, one {{count} گروه} other {{count} گروه‌ها}}",
+"recordsLabel": "{count, plural, one {{count} رکورد} other {{count} رکوردها}}",
+"forgotPassword": "رمز عبور را فراموش کرده‌اید؟",
+  "forgotPasswordTitle": "بازنشانی رمز عبور",
+  "forgotPasswordBody": "ایمیل خود را وارد کنید تا لینک بازنشانی رمز عبور ارسال شود.",
+  "sendResetLink": "ارسال لینک",
+  "passwordResetEmailSent": "ایمیل بازنشانی رمز عبور ارسال شد.",
+  "verifyEmailToContinue": "لطفاً قبل از ورود آدرس ایمیل خود را تأیید کنید",
+  "changeEmailTitle": "تغییر آدرس ایمیل",
+"newEmailHint": "ایمیل جدید خود را وارد کنید",
+"sendVerificationEmail": "ارسال ایمیل تأیید",
+"deleteAccountTitle": "حذف حساب",
+"deleteAccountWarning": "این اقدام حساب شما و تمام داده‌های ذخیره‌شده را به‌صورت دائمی حذف می‌کند.\nاین عمل قابل بازگشت نیست.",
+"deleteAccountConfirm": "حذف دائمی حساب",
+"supportTitle": "پشتیبانی",
+"supportSubtitle": "اگر به کمک نیاز دارید یا سوالی دارید با ما تماس بگیرید.",
+"supportEmailSubject": "درخواست پشتیبانی Vaultara",
+"supportEmailError": "امکان باز کردن برنامه ایمیل وجود ندارد.",
+"passwordResetEmailFailed": "ارسال ایمیل بازنشانی رمز عبور ناموفق بود.",
+"loggedInPasswordResetBody": "لینک بازنشانی رمز عبور را به:\n{email} ارسال می‌کنیم",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "مدیریت حساب",
+"changeEmailTitle": "تغییر آدرس ایمیل",
+"changeEmailSubtitle": "ایمیل مرتبط با حساب خود را به‌روزرسانی کنید.",
+"changePasswordTitle": "تغییر رمز عبور",
+"changePasswordSubtitle": "برای تغییر امن رمز عبور، یک لینک ایمیل برای شما ارسال می‌کنیم.",
+"deleteAccountTitle": "حذف حساب",
+"deleteAccountSubtitle": "حساب Vaultara خود را برای همیشه حذف کنید.",
+"biometricAuthReason": "برای دسترسی به حساب Vaultara خود احراز هویت کنید",
+"verifyEmailTitle": "ایمیل خود را تأیید کنید",
+"verifyEmailBody": "ما یک ایمیل تأیید به صندوق ورودی شما ارسال کرده‌ایم. لطفاً آن را باز کرده و آدرس ایمیل خود را تأیید کنید، سپس برای ادامه به اینجا بازگردید.",
+"verifyEmailConfirmedButton": "ایمیل خود را تأیید کرده‌ام",
+"verifyEmailResendButton": "ارسال مجدد ایمیل تأیید",
+"verifyEmailSending": "در حال ارسال...",
+"navHome": "خانه",
+"navCategories": "دسته‌ها",
+"navInsights": "تحلیل",
+"navCalendar": "تقویم",
+"tutorialHomeSearch": "از نوار جستجو برای پیدا کردن سریع هر رکوردی که دنبال می‌کنید استفاده کنید.",
+"tutorialHomeFab": "اولین رکورد خود را اینجا اضافه کنید.\nمحل آن را انتخاب کنید، یادداشت اختیاری اضافه کنید و تاریخ انقضا را تعیین کنید.",
+"tutorialHomeSummary": "با افزودن رکوردهای بیشتر، این بخش به شما کمک می‌کند موارد نزدیک به انقضا را شناسایی کنید.",
+"tutorialHomeInsight": "این بینش هوشمند الگوها و انقضاهای آینده را برجسته می‌کند.\nمی‌توانید برای شنیدن آن روی آیکون بلندگو ضربه بزنید.",
+"tutorialHomeCoverage": "تعادل پوشش نشان می‌دهد رکوردهای شما چقدر یکنواخت توزیع شده‌اند.\nتعادل بالاتر یعنی فاصله‌های کمتر.",
+"tutorialHomeStability": "پایداری نشان می‌دهد رکوردهای شما در طول زمان چقدر قابل اعتماد هستند.\nموارد منقضی و نزدیک به انقضا می‌توانند پایداری را کاهش دهند.",
+"tutorialCancel": "لغو",
+"tutorialNext": "بعدی",
+"tutorialEnd": "پایان آموزش",
+"softDeleteCategory": "دسته‌بندی",
+"softDeleteGroup": "گروه",
+"softDeleteRecord": "رکورد",
+"softDeleteTitle": "انتقال {type} به حذف‌شده‌های اخیر",
+"softDeleteMessage": "{type} \"{name}\" به حذف‌شده‌های اخیر منتقل می‌شود.\n\nمی‌توانید آن را تا ۳۰ روز بازیابی کنید. پس از آن برای همیشه حذف می‌شود.",
+"softDeleteMove": "انتقال",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "اخیراً حذف شده",
+  "categories": "دسته‌ها",
+  "groups": "گروه‌ها",
+  "records": "سوابق",
+  "restore": "بازیابی",
+  "deletePermanently": "حذف دائمی",
+
+  "recentlyDeletedBanner": "موارد حذف‌شده {type} به مدت ۳۰ روز نگهداری می‌شوند.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "جستجوی {type} حذف‌شده",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "هیچ {type} حذف‌شده‌ای وجود ندارد",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "برای دیدن گروه‌های آن و مدیریت سوابق خود روی یک دسته ضربه بزنید.",
+  "groupsHint": "گروه‌ها سوابق شما را در این دسته‌بندی سازمان‌دهی می‌کنند. برای مدیریت سوابق روی گروه بزنید.",
+  "notLoggedIn": "وارد نشده‌اید",
+"recordsInsideGroupHint": "این‌ها رکوردهای داخل این گروه هستند.",
+"snackMovedToRecentlyDeleted": "\"{name}\" به «اخیراً حذف‌شده» منتقل شد",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" با موفقیت حذف شد",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" با موفقیت به‌روزرسانی شد",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" با موفقیت اضافه شد",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" با موفقیت بازیابی شد",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "به سقف رایگان رسیدید ({current}/{limit}). برای افزودن بیشتر ارتقا دهید.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "جستجوی همه رکوردها",
+"globalSearchHint": "نام رکورد، دسته یا گروه را وارد کنید",
+"globalSearchNoMatches": "هیچ رکوردی با جستجوی شما مطابقت ندارد.",
+"snackNoRecordsToSearch": "هیچ رکوردی برای جستجو وجود ندارد. چند رکورد اضافه کنید تا Vaultara آن‌ها را به‌صورت خودکار فهرست کند.",
+"recoveryCentreTitle": "مرکز بازیابی",
+"recoveryCentreSubtitle": "سوابق حذف‌شده را بازیابی کنید یا برای همیشه حذف کنید.",
+"plan_premium": "پریمیوم",
+"plan_free": "رایگان",
+"profile_app_settings_title": "تنظیمات برنامه",
+"profile_privacy_security_title": "حریم خصوصی و امنیت",
+"profile_biometric_on": "قفل بیومتریک در این دستگاه فعال است.",
+"profile_biometric_off": "قفل بیومتریک غیرفعال است.",
+"profile_biometric_enable_reason": "برای فعال‌سازی قفل بیومتریک هویت خود را تأیید کنید.",
+"profile_biometric_disable_reason": "برای غیرفعال‌سازی قفل بیومتریک هویت خود را تأیید کنید.",
+"profile_account_management_title": "مدیریت حساب",
+"profile_account_management_subtitle": "تغییر ایمیل، رمز عبور یا حذف حساب.",
+"profile_premium_active_title": "پریمیوم فعال است",
+"profile_premium_upgrade_title": "ارتقا به پریمیوم",
+"profile_premium_active_subtitle": "یادآورهای پیشرفته فعال شده‌اند.",
+"profile_premium_upgrade_subtitle": "یادآورهای پیشرفته و سازماندهی نامحدود را فعال کنید.",
+"profile_manage_cancel_hint": "در هر زمان از طریق Google Play مدیریت یا لغو کنید.",
+"profile_manage_subscription_button": "مدیریت اشتراک",
+"plansTitle": "انتخاب اشتراک",
+"plansTrialBanner": "با ۷ روز آزمایشی رایگان شروع کنید.\nهر زمان می‌توانید لغو کنید.",
+"plansLoading": "در حال بارگذاری…",
+"plansStartFreeTrial": "شروع رایگان",
+"plansNoChargeTodayFooter": "۷ روز رایگان · امروز هزینه‌ای ندارد",
+
+"planFreeTitle": "رایگان",
+"planFreeSubtitle": "برای شروع",
+"planPremiumMonthlyTitle": "پرمیوم ماهانه",
+"planPremiumYearlyTitle": "پرمیوم سالانه",
+"planPerMonth": "در ماه",
+"planPerYear": "در سال",
+
+"planBadgeCurrent": "اشتراک فعلی",
+"planBadgePopular": "محبوب",
+"planBadgeBestValue": "بهترین ارزش",
+
+"planYouAreOnThisPlan": "شما در این اشتراک هستید.",
+
+"planFeatureUpToRecords": "حداکثر {count} رکورد",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "دسته‌های سفارشی (تا {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "زیر‌دسته‌های آماده",
+"planFeatureCloudStorage": "ذخیره‌سازی ابری",
+"planFeatureSmartExpiryInsights": "بینش‌های هوشمند انقضا",
+"planFeatureCoverageBalance": "تعادل دسته‌بندی",
+"planFeatureRecordStabilityTracking": "پایداری رکورد",
+
+"planFeatureUnlimitedRecords": "رکورد نامحدود",
+"planFeatureUnlimitedCategories": "دسته نامحدود",
+"planFeatureCustomSubcategories": "زیر‌دسته سفارشی",
+"planFeatureMultipleRemindersPerRecord": "چند یادآور",
+"planFeatureAdvancedReminderTiming": "زمان‌بندی پیشرفته",
+"planFeatureAutomaticFollowUps": "یادآور خودکار",
+
+"planFeatureEverythingInMonthly": "همه امکانات ماهانه",
+"planFeatureSavePercentComparedToMonthly": "{percent}% صرفه‌جویی نسبت به ماهانه",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "بهترین برای بلندمدت",
+"editorReminderLabel": "یادآور",
+"editorReminderSelectOptional": "یک یادآور انتخاب کنید (اختیاری)",
+"editorReminderOnExpiry": "در روز انقضا",
+"editorReminderDaysBefore": "{days} روز قبل از انقضا",
+"editorFreeItemsCount": "سوابق رایگان: {used}/{limit}",
+"editorExpiryPastWarning": "تاریخ انقضا قبلاً گذشته است.",
+"editorExpiryTodayWarning": "این رکورد امروز منقضی می‌شود.",
+"editorErrorExpiryPast": "تاریخ انقضا نمی‌تواند در گذشته باشد.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "بینش‌های امروز",
+"tutorialBannerTitle": "راهنمای سریع",
+"tutorialBannerBody": "در کمتر از یک دقیقه یاد بگیرید چگونه جستجو کنید، رکورد اضافه کنید و اینسایت‌ها را بفهمید.",
+"tutorialBannerStart": "شروع آموزش",
+"tutorialBannerDismiss": "الان نه",
+"authErrorUserDisabled": "این حساب غیرفعال شده است.",
+"authErrorNetwork": "خطای شبکه. دوباره تلاش کنید.",
+"authErrorTooManyRequests": "تلاش‌های زیاد. بعداً دوباره امتحان کنید.",
+"authErrorSignInFailed": "ورود ناموفق بود. دوباره تلاش کنید.",
+"ok": "باشه",
+"snackPremiumEnabled": "پریمیوم فعال شد",
+"snackPremiumRestored": "پریمیوم بازیابی شد",
+"passwordNeedLower": "باید شامل حرف کوچک باشد",
+"passwordNeedUpper": "باید شامل حرف بزرگ باشد",
+"passwordNeedNumber": "باید شامل عدد باشد",
+"passwordNeedSymbol": "باید شامل نماد باشد",
+"confirmIdentityTitle": "تأیید هویت",
+"confirm": "تأیید",
+"profile_sign_out_title": "خروج از حساب",
+"profile_sign_out_subtitle": "خروج از Vaultara در این دستگاه",
+"profile_sign_out_confirm_title": "خارج می‌شوید؟",
+"profile_sign_out_confirm_body": "برای دسترسی به حساب خود باید دوباره وارد شوید.",
+"profile_sign_out_action": "خروج",
+"todayInsightsAudioHint": "صدا را ترجیح می‌دهید؟ از آیکون بلندگو استفاده کنید.",
+"category2Label": "دسته‌بندی",
+"enable2BiometricsBody": "برای محافظت از حساب Vaultara خود از اثر انگشت استفاده کنید.",
+"snackNotificationsDisabled": "اعلان‌ها غیرفعال هستند. برای دریافت یادآورها آن‌ها را فعال کنید.",
+"openSettings": "باز کردن تنظیمات",
+
+"reminderOnExpiryTitle": "امروز منقضی می‌شود",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "سلام {firstName}، \"{itemName}\" امروز منقضی می‌شود.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "دسته‌های رایگان: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "نمایش می‌دهد چند دسته رایگان از سقف رایگان استفاده شده است.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "افزودن یادداشت (اختیاری)",
+"apply": "اعمال",
+"smartInsightExpiresTodayHeading": "امروز منقضی می‌شود",
+"smartInsightExpiresTodaySingleBody": "{name} امروز منقضی می‌شود. اکنون اقدام کنید تا به‌روز بماند.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} و 1 سند دیگر امروز منقضی می‌شوند.} other{{names} و {extra} سند دیگر امروز منقضی می‌شوند.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "نیازمند توجه شما",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} در 1 روز منقضی می‌شود و یادآوری ندارد. مطمئن شوید جزئیات هنوز درست هستند.} other{{name} در {days} روز منقضی می‌شود و یادآوری ندارد. مطمئن شوید جزئیات هنوز درست هستند.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "چند تمدید نزدیک به هم",
+"smartInsightRenewalTwinBodyTwo": "{a} و {b} در عرض سه هفته از یکدیگر منقضی می‌شوند. از قبل برنامه‌ریزی کنید.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}، {b} و {c} همگی در عرض سه هفته منقضی می‌شوند. از قبل برنامه‌ریزی کنید.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}، {b} و 1 سند دیگر در عرض سه هفته منقضی می‌شوند. از قبل برنامه‌ریزی کنید.} other{{a}، {b} و {extra} سند دیگر در عرض سه هفته منقضی می‌شوند. از قبل برنامه‌ریزی کنید.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "گروه پیش رو",
+"smartInsightClusterBody": "{count, plural, =1{1 سند در {category} طی دو ماه آینده منقضی می‌شود. در نظر بگیرید آن‌ها را با هم مدیریت کنید.} other{{count} سند در {category} طی دو ماه آینده منقضی می‌شوند. در نظر بگیرید آن‌ها را با هم مدیریت کنید.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "دوره آرام پیش رو",
+"smartInsightQuietPeriodBody": "{days, plural, =1{در 1 روز آینده چیزی منقضی نمی‌شود. تمدید بعدی شما در {firstDate} است.} other{در {days} روز آینده چیزی منقضی نمی‌شود. تمدید بعدی شما در {firstDate} است.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "همه چیز به‌روز",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 انقضای پیش رو با یادآوری‌ها پوشش داده شده است. چیز دیگری نیاز به توجه شما ندارد.} other{{count} انقضای پیش رو با یادآوری‌ها پوشش داده شده‌اند. چیز دیگری نیاز به توجه شما ندارد.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "همه چیز به‌روز. در حال حاضر چیزی نیاز به توجه شما ندارد.",
+"smartInsightNoRecordsHeading": "اولین رکورد خود را اضافه کنید",
+"smartInsightNoRecordsBody": "شروع به ردیابی اسناد خود کنید و Vaultara بینش‌های هوشمند را اینجا نمایش خواهد داد.",
+"expiryTimelineTitle": "خط زمانی انقضا",
+"expiryTimelineSubtitle": "روی یک ماه ضربه بزنید تا رکوردهایی که در آن ماه منقضی می‌شوند را ببینید",
+"expiryTimelineDetailCount": "{count, plural, =1{۱ رکورد} other{{count} رکورد}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "پیش‌رو",
+"summaryUpcomingCaption": "در ۳۰ روز آینده",
+"summaryUrgentTitle": "فوری",
+"summaryUrgentCaption": "در ۷ روز آینده"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

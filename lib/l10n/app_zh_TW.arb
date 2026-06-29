@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "到期日曆",
 
-  "calendarIntro":
-    "選擇查看到期項目的方式：\n\n• 輸入從今天起的天數。\n• 或選擇特定日期。\n\nVaultara 將顯示該日期到期的項目。",
+  "calendarIntro": "選擇查看到期項目的方式：\n\n• 輸入從今天起的天數。\n• 或選擇特定日期。\n\nVaultara 將顯示該日期到期的項目。",
 
   "daysFromTodayLabel": "距今天數",
   "daysFromTodayHint": "例如 0、1、7、30",
@@ -71,11 +70,8 @@
   "categoryNameLabel": "分類名稱",
   "categoryNameHint": "輸入分類",
 
-  "categoryLimitReached":
-    "已達到基本方案限制。升級至進階版以建立無限制分類。",
-
-  "categoryLimitInfo":
-    "基本方案最多可建立 {limit} 個自訂分類。",
+  "categoryLimitReached": "您已達到基本方案的 {limit} 個分類限制。升級至進階版可建立無限制分類。",
+  "categoryLimitInfo": "基本方案最多可建立 {limit} 個自訂分類。",
 
   "categoryErrorEmpty": "分類名稱為必填",
   "categoryErrorTooShort": "分類名稱過短",
@@ -97,5 +93,804 @@
   "groupErrorSymbols": "群組名稱不能包含符號",
   "groupErrorNumbers": "群組名稱不能包含數字",
 
-  "createGroup": "建立"
+  "createGroup": "建立",
+
+  "registerTitle": "建立帳戶",
+
+  "firstNameLabel": "名字",
+  "firstNameHint": "輸入名字",
+  "errorFirstName": "名字為必填",
+
+  "lastNameLabel": "姓氏",
+  "lastNameHint": "輸入姓氏",
+  "errorLastName": "姓氏為必填",
+
+  "emailLabel": "電子郵件",
+"emailRequired": "需要您的電子郵件",
+"passwordRequired": "需要您的密碼",
+"registerPasswordHint": "輸入密碼",
+"loginPasswordHint": "輸入您的密碼",
+"emailHint": "輸入您的電子郵件地址",
+  "errorEmailInvalid": "請輸入有效的電子郵件",
+  "errorEmailInUse": "此電子郵件已連結至 Vaultara 帳戶",
+
+  "passwordLabel": "密碼",
+  "passwordHelper": "至少 8 個字元，包含字母、數字或符號",
+
+  "passwordTooShort": "太短",
+  "passwordTooWeak": "太弱",
+  "passwordMedium": "中等",
+  "passwordStrong": "強",
+
+  "errorPasswordLength": "密碼至少需要 8 個字元",
+  "errorPasswordWeak": "請選擇更強的密碼",
+
+  "errorGeneric": "註冊失敗，請再試一次",
+
+  "createAccount": "建立帳戶",
+  "appName": "Vaultara",
+  "authTagline": "用於護照、證照、卡片和其他重要物品的個人中心",
+  "tabSignIn": "登入",
+  "tabCreateAccount": "建立帳戶",
+  "signInFooterText": "登入以存取您的 Vaultara 個人空間並掌控所有續期",
+  "createAccountFooterText": "建立 Vaultara 帳戶以備份重要提醒並隨時存取",
+  "emailNotFound": "電子郵件錯誤。\n此電子郵件沒有 Vaultara 帳戶",
+  "incorrectPassword": "密碼錯誤",
+  "emailLabel": "電子郵件地址",
+  "passwordLabel": "密碼",
+  "signIn": "登入",
+    "categoryPersonalIdentification": "個人身分",
+  "categoryDrivingAndVehicles": "駕駛與車輛",
+  "categoryTravelAndImmigration": "旅遊與移民",
+  "categoryBankingAndCards": "銀行與卡片",
+  "categoryInsuranceAndCover": "保險與保障",
+  "categoryHealthAndMedical": "健康與醫療",
+  "categoryWorkAndProfessional": "工作與專業",
+  "categoryPropertyAndHousing": "房產與住宅",
+  "categoryHouseholdAndUtilities": "家庭與公共服務",
+
+  "subcategoryPassports": "護照",
+  "subcategoryIdCards": "身分證",
+  "subcategoryResidencePermits": "居留許可",
+
+  "subcategoryDrivingLicences": "駕駛執照",
+  "subcategoryVehicleRegistrations": "車輛登記",
+  "subcategoryRoadworthyCertificates": "行車合格證",
+  "subcategoryVehicleInspectionCertificates": "車輛檢驗證書",
+
+  "subcategoryVisas": "簽證",
+  "subcategoryStudyPermits": "學習許可",
+  "subcategoryWorkPermits": "工作許可",
+  "subcategoryTravelInsuranceDocuments": "旅遊保險文件",
+
+  "subcategoryDebitAndCreditCards": "金融卡與信用卡",
+  "subcategoryStoreCards": "商店卡",
+  "subcategoryFuelCards": "燃油卡",
+
+  "subcategoryVehicleInsurances": "車輛保險",
+  "subcategoryPropertyInsurances": "房產保險",
+  "subcategoryLifeInsurances": "人壽保險",
+  "subcategoryHealthInsurances": "健康保險",
+  "subcategoryTravelInsurances": "旅遊保險",
+
+  "subcategoryMedicalPrescriptions": "醫療處方",
+  "subcategoryOpticalPrescriptions": "眼科處方",
+  "subcategoryMedicalCertificates": "醫療證明",
+
+  "subcategoryProfessionalLicences": "專業執照",
+  "subcategoryProfessionalRegistrations": "專業註冊",
+  "subcategoryIndustryRegistrations": "產業註冊",
+  "subcategoryWorkAccessCards": "工作通行證",
+
+  "subcategoryLeaseAgreements": "租賃合約",
+  "subcategoryAccessCardsAndTags": "門禁卡與標籤",
+  "subcategoryParkingPermits": "停車許可",
+  "subcategorySecurityAccessPermits": "安全通行許可",
+
+  "subcategoryElectricityAccounts": "電力帳戶",
+  "subcategoryWaterAccounts": "水務帳戶",
+  "subcategoryInternetContracts": "網路合約",
+  "subcategorySecurityServiceContracts": "保全服務合約",
+  
+  "searchCategories": "搜尋類別",
+  "filterAll": "全部",
+  "filterPreset": "預設",
+  "filterCustom": "自訂",
+  "addCategoryTitle": "新增類別",
+  "customLabel": "自訂",
+  "subcategoriesLabel": "子類別",
+  "itemsLabel": "項目",
+  "itemsExpiring": "{count} 個項目將於 {days} 天內到期",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "已釘選的重要類別",
+  "pinnedHint": "釘選你經常開啟的類別，讓它們顯示在清單頂端。",
+  "noCategoriesFound": "找不到任何類別",
+   "searchGroups": "搜尋群組",
+  "addGroupTitle": "新增群組",
+  "basicPlanGroupInfo": "您目前使用的是基本方案。\n您可以查看此分類下的預設群組。\n升級至進階方案即可建立自己的群組。",
+  "groupDeleted": "群組已刪除",
+  "undo": "復原",
+  "groupStats": "{items} 個項目 • {expiring} 個將在 {days} 天內到期",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "點擊以新增並管理此群組中的項目。",
+  "itemsInGroup": "此群組中的項目",
+  "itemsInGroupHint": "追蹤重要項目及其到期日，以便及時更新。",
+  "searchItems": "搜尋項目",
+  "filterAll": "全部",
+  "filterExpiringWithin": "{days} 天內到期",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "已過期",
+  "addItem": "新增項目",
+  "noItemsYet": "尚無項目。",
+
+  "statusExpired": "已過期",
+  "statusExpiresToday": "今天到期",
+  "statusExpiresInOneDay": "1 天後到期",
+  "statusExpiresInDays": "{days} 天後到期",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "有效",
+
+  "deleteCategoryTitle": "刪除類別",
+  "deleteCategoryMessage": "確定要刪除類別「{name}」嗎？",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "刪除群組",
+  "deleteGroupMessage": "確定要刪除群組「{name}」嗎？",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "刪除項目",
+  "deleteItemMessage": "確定要刪除「{name}」嗎？",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "取消",
+  "delete": "刪除",
+  "homeWelcomeFirstTitle": "歡迎，{name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "歡迎回來，{name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara 可協助您追蹤重要的到期日期，確保不會錯過任何事項。",
+
+"homeWelcomeSubtitleFirst":
+  "很高興在這裡見到您。Vaultara 可幫助您將重要日期與記錄集中在一個安全的地方。",
+
+"homeWelcomeSubtitleBack":
+  "很高興再次見到您。當您想查看重要日期與記錄時，Vaultara 隨時準備就緒。",
+  "insightEmptyTitle": "你还没有添加任何内容",
+  "insightEmptyBody": "当你开始跟踪重要日期时，Vaultara 会帮助你提前应对到期情况。",
+
+  "insightExpiresTodayTitle": "“{name}” 今天到期",
+  "insightExpiresTodayBody": "现在查看有助于保持信息准确。",
+
+  "insightExpiresTomorrowTitle": "“{name}” 明天到期",
+  "insightExpiresTomorrowBody": "现在查看可以节省时间。",
+
+  "insightExpiresSoonTitle": "“{name}” 将于 {date} 到期",
+  "insightExpiresSoonBody": "提前处理会更轻松。",
+
+  "insightNextExpiryTitle": "下一个到期的是 “{name}”（{date}）",
+  "insightNextExpiryBody": "目前无需操作。",
+
+  "insightClusteredTitle": "多个项目集中在 {month} 到期",
+  "insightClusteredBody": "一起查看可以节省时间。",
+
+  "insightTopCategoryTitle": "大多数项目位于 {category}",
+  "insightTopCategoryBody": "从这里开始效果最好。",
+
+  "insightStableTitle": "目前一切稳定",
+  "insightStableBody": "没有需要立即关注的事项。",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "歡迎",
+  "summaryAllTitle": "所有項目",
+"summaryAllCaption": "在 Vaultara 中追蹤",
+"summarySoonTitle": "即將到期",
+"summarySoonCaption": "30 天內",
+"summaryWeekTitle": "本週",
+"summaryWeekCaption": "7 天內到期",
+"summaryExpiredTitle": "已過期",
+"summaryExpiredCaption": "到期日已過",
+"stabilityStableTitle": "一切看起來很穩定",
+"stabilityStableBody": "您的紀錄未顯示任何即時或累積的風險。",
+
+"stabilityDecliningTitle": "穩定性正在下降",
+"stabilityDecliningBody": "部分項目已過期，其他項目即將到期。",
+
+"stabilityWeakenedTitle": "穩定性已減弱",
+"stabilityWeakenedBody": "過期紀錄的存在會降低整體可靠性。",
+
+"stabilityPressureTitle": "壓力正在增加",
+"stabilityPressureBody": "為了維持穩定，一些紀錄將很快需要關注。",
+"editorNotes": "備註",
+"notesHint": "輸入備註",
+"editorReminderTitle": "提醒",
+"editorReminderNone": "無提醒",
+"editorReminderOnExpiry": "到期當天",
+"editorReminder7Days": "到期前 7 天",
+"editorReminder30Days": "到期前 30 天",
+"editorReminderCustom": "自訂",
+"daysBeforeExpiry": "到期前天數",
+"reminderStage0Title": "到期提醒",
+"reminderStage0Body": "{firstName}，{itemName} 將在 {days} 天後到期。",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "後續提醒",
+"reminderStage1Body": "{firstName}，{itemName} 尚未更新。",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "即將到期",
+"reminderStage2Body": "{itemName} 的到期日正在接近。",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "最後提醒",
+"reminderFinalBody": "{firstName}，請立即更新 {itemName}。",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "覆蓋平衡",
+"coverageAllRepresented": "您的紀錄涵蓋所有分類。",
+"coverageMissingNamed": "在 {count} 個分類中未找到紀錄：{names}。",
+"coverageMissingSummary": "您尚未在 {count} 個分類中新增任何紀錄，包括 {names} 以及另外 {remaining} 個。",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "使用密碼",
+"signInWithBiometrics": "使用生物辨識登入",
+"enableBiometricsTitle": "啟用生物辨識安全",
+"enableBiometricsBody": "使用指紋或臉部辨識來保護 Vaultara。",
+"enableBiometricsReason": "為 Vaultara 啟用生物辨識解鎖。",
+"notNow": "稍後再說",
+"useBiometrics": "使用生物辨識",
+"recordsCalendarIntro":
+  "選擇您想要查看到期日期的方式：\n\n• 輸入從今天起想查看的天數。\n• 或在行事曆中選擇一個特定日期。\n\nVaultara 將顯示在該日期到期的記錄。",
+
+"showingRecordsRelative": "正在顯示於 {time} 到期的記錄",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "正在顯示於所選日期到期的記錄",
+
+"noRecordsOnDate":
+  "沒有任何記錄設定於該日期到期。",
+
+"recordEditorAddTitle": "新增記錄",
+"recordEditorEditTitle": "編輯記錄",
+
+"editorRecordName": "記錄名稱",
+"editorRecordNameHint": "輸入記錄名稱",
+"recordEditorErrorName": "記錄名稱為必填",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "點擊以新增並追蹤此群組中的記錄。",
+
+"recordsInGroup": "此群組中的記錄",
+
+"recordsInGroupHint":
+  "追蹤每一筆重要記錄及其到期日期，以便準時更新。",
+
+"searchRecords": "搜尋記錄",
+"addRecord": "新增記錄",
+"noRecordsYet": "尚無記錄。",
+
+"deleteRecordTitle": "刪除記錄",
+
+"recordsInsightClusteredTitle":
+  "多筆記錄將於 {month} 左右到期",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "您的大多數記錄歸類於 {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "所有記錄",
+
+"recordsStabilityDecliningBody":
+  "部分記錄已到期，且更多記錄即將到期。",
+
+"recordsCoverageAllRepresented":
+  "您的記錄涵蓋所有分類。",
+
+"recordReminderStage0Body":
+  "{firstName}，您的記錄 {recordName} 將於 {days} 天後到期。",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}，您的記錄 {recordName} 尚未更新。",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "記錄 {recordName} 的到期日即將到來。",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}，請立即更新記錄 {recordName}。",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"recordsExpiring": "{count, plural, one {{days}天內有1筆記錄到期} other {{days}天內有{count}筆記錄到期}}",
+"recordsGroupStats": "{records, plural, one {1筆記錄} other {{records}筆記錄}} • {expiring}筆將於{days}天內到期",
+"groupLabel": "{count, plural, one {{count} 個群組} other {{count} 個群組}}",
+"recordsLabel": "{count, plural, one {{count} 筆記錄} other {{count} 筆記錄}}",
+"noGroupFound": "尚未建立任何群組",
+"forgotPassword": "忘記密碼？",
+  "forgotPasswordTitle": "重設密碼",
+  "forgotPasswordBody": "請輸入您的電子郵件地址，我們將傳送重設密碼的連結。",
+  "sendResetLink": "傳送連結",
+  "passwordResetEmailSent": "重設密碼的電子郵件已寄出。",
+  "verifyEmailToContinue": "請在登入前驗證您的電子郵件地址",
+  "changeEmailTitle": "更改電子郵件地址",
+"newEmailHint": "請輸入您的新電子郵件",
+"sendVerificationEmail": "發送驗證電子郵件",
+"deleteAccountTitle": "刪除帳戶",
+"deleteAccountWarning": "此操作將永久刪除您的帳戶及所有已儲存的資料。\n此操作無法復原。",
+"deleteAccountConfirm": "永久刪除帳戶",
+"supportTitle": "支援",
+"supportSubtitle": "如果您需要協助或有任何疑問，請與我們聯絡。",
+"supportEmailSubject": "Vaultara 支援請求",
+"supportEmailError": "無法開啟電子郵件應用程式。",
+"passwordResetEmailFailed": "無法傳送密碼重設電子郵件。",
+"loggedInPasswordResetBody": "我們將傳送密碼重設連結至：\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "帳戶管理",
+"changeEmailTitle": "更改電子郵件地址",
+"changeEmailSubtitle": "更新與您帳戶關聯的電子郵件。",
+"changePasswordTitle": "更改密碼",
+"changePasswordSubtitle": "我們將透過電子郵件寄送安全更改密碼的連結。",
+"deleteAccountTitle": "刪除帳戶",
+"deleteAccountSubtitle": "永久刪除您的 Vaultara 帳戶。",
+"biometricAuthReason": "請驗證以存取您的帳戶",
+"verifyEmailTitle": "驗證您的電子郵件",
+"verifyEmailBody": "我們已向您的收件匣發送驗證郵件。請開啟並確認您的電子郵件地址，然後返回此處繼續。",
+"verifyEmailConfirmedButton": "我已驗證我的電子郵件",
+"verifyEmailResendButton": "重新傳送驗證郵件",
+"verifyEmailSending": "傳送中...",
+"navHome": "首頁",
+"navCategories": "分類",
+"navInsights": "洞察",
+"navCalendar": "日曆",
+"tutorialHomeSearch": "使用搜尋列快速找到您正在追蹤的任何記錄。",
+"tutorialHomeFab": "在此新增您的第一筆記錄。\n選擇所屬位置，加入選填備註，並選擇到期日期。",
+"tutorialHomeSummary": "當您新增更多記錄時，此區段可協助您找出即將或已到期的項目。",
+"tutorialHomeInsight": "此智慧分析會突顯模式與即將到期的項目。\n您可以點擊喇叭圖示收聽內容。",
+"tutorialHomeCoverage": "覆蓋平衡顯示您的記錄分佈是否均勻。\n較高的平衡代表較少空缺。",
+"tutorialHomeStability": "穩定性反映您的記錄隨時間的可靠程度。\n已到期與即將到期的項目可能會降低穩定性。",
+"tutorialCancel": "取消",
+"tutorialNext": "下一步",
+"tutorialEnd": "結束教學",
+"softDeleteCategory": "類別",
+"softDeleteGroup": "群組",
+"softDeleteRecord": "記錄",
+
+"softDeleteTitle": "將{type}移至最近刪除",
+
+"softDeleteMessage": "{type} \"{name}\" 將被移至最近刪除。\n\n您可在30天內恢復，之後將永久刪除。",
+
+"softDeleteMove": "移動",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "最近刪除",
+"categories": "類別",
+"groups": "群組",
+"records": "紀錄",
+"restore": "還原",
+"deletePermanently": "永久刪除",
+
+"recentlyDeletedBanner": "已刪除的 {type} 將保存 30 天。",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "搜尋已刪除的 {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "沒有已刪除的 {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "點擊分類以查看其群組並管理您的紀錄。",
+"groupsHint": "群組會在此分類中整理您的紀錄。點擊群組以管理紀錄。",
+"notLoggedIn": "尚未登入",
+"recordsInsideGroupHint": "這些是此群組內的記錄。",
+"snackMovedToRecentlyDeleted": "「{name}」已移至最近刪除",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "「{name}」刪除成功",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "「{name}」更新成功",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "「{name}」新增成功",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "「{name}」復原成功",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "已達免費上限（{current}/{limit}）。升級以新增更多。",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "搜尋所有記錄",
+"globalSearchHint": "輸入記錄名稱、分類或群組",
+"globalSearchNoMatches": "沒有記錄符合您的搜尋。",
+"snackNoRecordsToSearch": "沒有可搜尋的記錄。新增一些記錄後，Vaultara 會自動建立索引。",
+"recoveryCentreTitle": "復原中心",
+"recoveryCentreSubtitle": "還原或永久刪除已移除的紀錄。",
+"plan_premium": "進階版",
+"plan_free": "免費",
+"profile_app_settings_title": "應用程式設定",
+"profile_privacy_security_title": "隱私與安全",
+"profile_biometric_on": "此裝置已啟用生物辨識鎖。",
+"profile_biometric_off": "此裝置未啟用生物辨識鎖。",
+"profile_biometric_enable_reason": "請確認身分以啟用生物辨識鎖。",
+"profile_biometric_disable_reason": "請確認身分以停用生物辨識鎖。",
+"profile_account_management_title": "帳戶管理",
+"profile_account_management_subtitle": "變更電子郵件、密碼或刪除帳戶。",
+"profile_premium_active_title": "進階版已啟用",
+"profile_premium_upgrade_title": "升級至進階版",
+"profile_premium_active_subtitle": "進階提醒已解鎖。",
+"profile_premium_upgrade_subtitle": "解鎖進階提醒與無限整理功能。",
+"profile_manage_cancel_hint": "可隨時在 Google Play 管理或取消。",
+"profile_manage_subscription_button": "管理訂閱",
+"plansTitle": "選擇您的方案",
+"plansTrialBanner": "7天免費試用。\n隨時取消。",
+"plansLoading": "載入中…",
+"plansStartFreeTrial": "開始免費試用",
+"plansNoChargeTodayFooter": "7天免費 · 今日不收費",
+
+"planFreeTitle": "免費",
+"planFreeSubtitle": "適合入門",
+"planPremiumMonthlyTitle": "高級月付",
+"planPremiumYearlyTitle": "高級年付",
+"planPerMonth": "每月",
+"planPerYear": "每年",
+
+"planBadgeCurrent": "目前方案",
+"planBadgePopular": "熱門",
+"planBadgeBestValue": "最佳選擇",
+
+"planYouAreOnThisPlan": "您正在使用此方案。",
+
+"planFeatureUpToRecords": "最多 {count} 筆記錄",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "自訂分類（最多 {count} 個）",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "預設子分類",
+"planFeatureCloudStorage": "雲端儲存",
+"planFeatureSmartExpiryInsights": "到期分析",
+"planFeatureCoverageBalance": "分類平衡",
+"planFeatureRecordStabilityTracking": "記錄穩定性",
+
+"planFeatureUnlimitedRecords": "無限記錄",
+"planFeatureUnlimitedCategories": "無限分類",
+"planFeatureCustomSubcategories": "自訂子分類",
+"planFeatureMultipleRemindersPerRecord": "多重提醒",
+"planFeatureAdvancedReminderTiming": "進階時間設定",
+"planFeatureAutomaticFollowUps": "自動追蹤提醒",
+
+"planFeatureEverythingInMonthly": "包含月付所有功能",
+"planFeatureSavePercentComparedToMonthly": "比月付節省 {percent}%",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "長期最佳價值",
+"editorReminderLabel": "提醒",
+"editorReminderSelectOptional": "選擇提醒（可選）",
+"editorReminderOnExpiry": "到期當天",
+"editorReminderDaysBefore": "到期前 {days} 天",
+"editorFreeItemsCount": "免費紀錄：{used}/{limit}",
+"editorExpiryPastWarning": "到期日期已過。",
+"editorExpiryTodayWarning": "此紀錄今天到期。",
+"editorErrorExpiryPast": "到期日期不能是過去的日期。",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "今日洞察",
+"tutorialBannerTitle": "快速導覽",
+"tutorialBannerBody": "在一分鐘內了解如何搜尋、新增紀錄，以及洞察的含義。",
+"tutorialBannerStart": "開始教學",
+"tutorialBannerDismiss": "暫時不要",
+"authErrorUserDisabled": "此帳戶已停用。",
+"authErrorNetwork": "網路錯誤，請再試一次。",
+"authErrorTooManyRequests": "嘗試次數過多，請稍後再試。",
+"authErrorSignInFailed": "登入失敗，請再試一次。",
+"ok": "確定",
+"snackPremiumEnabled": "已啟用高級版",
+"snackPremiumRestored": "已恢復高級版",
+"passwordNeedLower": "必須包含小寫字母",
+"passwordNeedUpper": "必須包含大寫字母",
+"passwordNeedNumber": "必須包含數字",
+"passwordNeedSymbol": "必須包含符號",
+"confirmIdentityTitle": "確認身分",
+"confirm": "確認",
+"profile_sign_out_title": "登出",
+"profile_sign_out_subtitle": "在此裝置上登出 Vaultara",
+"profile_sign_out_confirm_title": "要登出嗎？",
+"profile_sign_out_confirm_body": "您需要重新登入才能存取您的帳戶。",
+"profile_sign_out_action": "登出",
+"todayInsightsAudioHint": "偏好音訊？使用喇叭圖示。",
+"category2Label": "類別",
+"enable2BiometricsBody": "使用指紋辨識來保護你的 Vaultara 帳戶。",
+"snackNotificationsDisabled": "通知已關閉。請開啟以接收提醒。",
+"openSettings": "開啟設定",
+
+"reminderOnExpiryTitle": "今天到期",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "你好 {firstName}，「{itemName}」今天到期。",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "免費類別：{current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "顯示已使用的免費類別數量與免費上限。",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "新增備註（選填）",
+"apply": "套用",
+"smartInsightExpiresTodayHeading": "今天到期",
+"smartInsightExpiresTodaySingleBody": "{name} 今天到期。立即採取行動以保持最新。",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{names} 和另外 {extra} 個文件今天到期。",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "需要您的關注",
+"smartInsightSilentRiskBody": "{name} 將在 {days} 天後到期且未設定提醒。請確認詳細資料仍然正確。",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "多個續訂時間接近",
+"smartInsightRenewalTwinBodyTwo": "{a} 和 {b} 將在三週內相繼到期。提前計劃。",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}、{b} 和 {c} 都將在三週內到期。提前計劃。",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{a}、{b} 和另外 {extra} 個文件將在三週內到期。提前計劃。",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "即將到來的群組",
+"smartInsightClusterBody": "{category} 中有 {count} 個文件將在未來兩個月內到期。考慮一起處理。",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "前方平靜期",
+"smartInsightQuietPeriodBody": "未來 {days} 天內沒有任何到期。您的下一次續訂是 {firstDate}。",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "全部最新",
+"smartInsightAllCaughtUpBody": "{count} 個即將到來的到期由提醒覆蓋。無其他事項需要您的關注。",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "全部最新。目前沒有任何事項需要您的關注。",
+"smartInsightNoRecordsHeading": "新增您的第一筆記錄",
+"smartInsightNoRecordsBody": "開始追蹤您的文件,Vaultara 將在此處顯示智慧見解。",
+"expiryTimelineTitle": "到期時間線",
+"expiryTimelineSubtitle": "點擊月份查看該月到期的記錄",
+"expiryTimelineDetailCount": "{count} 條記錄",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "即將到來",
+"summaryUpcomingCaption": "30天內",
+"summaryUrgentTitle": "緊急",
+"summaryUrgentCaption": "7天內"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

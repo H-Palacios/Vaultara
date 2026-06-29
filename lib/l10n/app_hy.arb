@@ -1,0 +1,881 @@
+{
+  "@@locale": "hy",
+   "expiryCalendarTitle": "Ժամկետի օրացույց",
+
+  "calendarIntro": "Ընտրեք, թե ինչպես եք ցանկանում դիտել ձեր ժամկետները:\n\n• Մուտքագրեք, թե քանի օր առաջ եք ցանկանում դիտել:\n• Կամ ընտրեք օրացույցի կոնկրետ ամսաթիվ:\n\nVaultara-ն կցուցադրի, թե որ տարրերն են հասնում իրենց ժամկետին այդ օրը։",
+
+  "daysFromTodayLabel": "Օրեր այսօրվանից",
+  "daysFromTodayHint": "Օրինակ՝ 0, 1, 7, 30",
+
+  "apply": "Կիրառել",
+  "pickDateOnCalendar": "Ընտրեք ամսաթիվը օրացույցում",
+
+  "today": "Այսօր",
+  "tomorrow": "Վաղը",
+  "in7Days": "7 օր հետո",
+  "in30Days": "30 օր հետո",
+
+  "inDays": "{days} օր հետո",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "Մուտքագրեք օրերի թիվը։",
+  "invalidDaysError": "Մուտքագրեք վավեր օրերի թիվ (0 կամ ավելի)։",
+
+  "showingItemsRelative": "Ցուցադրվում են տարրերը, որոնց ժամկետը ավարտվում է {time}",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "Ցուցադրվում են տարրերը, որոնց ժամկետը ավարտվում է ընտրված ամսաթվին",
+  "noItemsOnDate": "Այդ օրը ժամկետին հասնող տարրեր չկան։",
+
+  "editorAddTitle": "Ավելացնել տարր",
+  "editorEditTitle": "Խմբագրել տարրը",
+
+  "editorCategory": "Կատեգորիա",
+  "editorCategoryHint": "Ընտրեք կատեգորիա",
+
+  "editorGroup": "Խումբ",
+  "editorGroupHint": "Ընտրեք խումբը",
+
+  "editorItemName": "Տարրի անունը",
+  "editorItemNameHint": "Մուտքագրեք տարրի անունը",
+
+  "editorExpiryDate": "Ժամկետի ամսաթիվ",
+  "editorExpiryDateHint": "Ընտրեք ժամկետի օրը",
+
+  "editorErrorCategory": "Ընտրեք կատեգորիա",
+  "editorErrorGroup": "Ընտրեք խումբ",
+  "editorErrorName": "Տարրի անունը պարտադիր է",
+  "editorErrorExpiry": "Ընտրեք ժամկետի ամսաթիվը",
+  "editorErrorExpiryPast": "Ժամկետի ամսաթիվը պետք է լինի այսօր կամ ապագայում",
+  "cancel": "Չեղարկել",
+"save": "Պահպանել",
+
+"addCategoryTitle": "Ավելացնել կատեգորիա",
+"unlimitedCategories": "Անսահմանափակ կատեգորիաներ (Premium)",
+
+"categoryUsage": "Օգտագործված է {current} / {limit} կատեգորիա",
+
+"categoryNameLabel": "Կատեգորիա",
+"categoryNameHint": "Մուտքագրեք կատեգորիա",
+
+"categoryLimitReached": "Դուք հասել եք Basic պլանի {limit} կատեգորիայի սահմանաչափին։ Թարմացրեք Premium՝ անսահմանափակ կատեգորիաների համար։",
+
+"categoryLimitInfo": "Basic պլանում կարող եք ստեղծել մինչև {limit} կատեգորիա։",
+
+"categoryErrorEmpty": "Կատեգորիան պարտադիր է",
+"categoryErrorTooShort": "Կատեգորիան շատ կարճ է",
+"categoryErrorTooLong": "Կատեգորիան շատ երկար է",
+"categoryErrorSymbols": "Կատեգորիան չի կարող բաղկացած լինել միայն նշաններից",
+"categoryErrorNumbers": "Կատեգորիան չի կարող պարունակել միայն թվեր",
+
+"upgradeRequired": "Պահանջվում է թարմացում",
+"viewPremiumBenefits": "Դիտել Premium առավելությունները",
+"createCategory": "Ստեղծել",
+
+"addGroupTitle": "Ավելացնել խումբ",
+"groupNameLabel": "Խումբ",
+"groupNameHint": "Մուտքագրեք խումբ",
+
+"groupErrorEmpty": "Խումբը պարտադիր է",
+"groupErrorTooShort": "Խումբը շատ կարճ է",
+"groupErrorTooLong": "Խումբը շատ երկար է",
+"groupErrorSymbols": "Խումբը չի կարող պարունակել նշաններ",
+"groupErrorNumbers": "Խումբը չի կարող պարունակել թվեր",
+"createGroup": "Ստեղծել",
+
+"firstNameLabel": "Անուն",
+"firstNameHint": "Մուտքագրեք անուն",
+
+"lastNameLabel": "Ազգանուն",
+"lastNameHint": "Մուտքագրեք ազգանուն",
+
+"emailLabel": "Էլ. փոստ",
+"loginPasswordHint": "Մուտքագրեք ձեր գաղտնաբառը",
+"registerPasswordHint": "Մուտքագրեք գաղտնաբառը",
+"passwordHelper": "Առնվազն 8 նիշ՝ տարբեր տեսակներով",
+
+"passwordTooShort": "Շատ կարճ է",
+"passwordTooWeak": "Շատ թույլ է",
+"passwordMedium": "Միջին",
+"passwordStrong": "Ուժեղ",
+
+"errorFirstName": "Անունը պարտադիր է",
+"errorLastName": "Ազգանունը պարտադիր է",
+"errorEmailInvalid": "Մուտքագրեք վավեր էլ. փոստի հասցե",
+"errorEmailInUse": "Այս էլ. փոստի հասցեն արդեն\nկապված է Vaultara հաշվի հետ",
+"errorPasswordLength": "Գաղտնաբառը պետք է լինի առնվազն ութ նիշ",
+"errorPasswordWeak": "Մուտքագրեք ավելի ուժեղ գաղտնաբառ",
+"errorGeneric": "Գրանցումը ձախողվեց։ Փորձեք կրկին",
+
+"createAccount": "Ստեղծել հաշիվ",
+"appName": "Vaultara",
+"authTagline": "Ձեր անձնական կենտրոնը անձնագրերի, լիցենզիաների, քարտերի և այլ կարևոր անհրաժեշտությունների համար",
+"tabSignIn": "Մուտք գործել",
+"tabCreateAccount": "Ստեղծել հաշիվ",
+"signInFooterText": "Մուտք գործեք՝ ձեր անձնական Vaultara տարածք մուտք ունենալու և բոլոր թարմացումները վերահսկելու համար",
+"createAccountFooterText": "Ստեղծեք Vaultara հաշիվ՝ ձեր կարևոր հիշեցումները պահուստավորելու և անհրաժեշտության դեպքում դրանց հասանելի լինելու համար",
+
+"emailRequired": "Էլ. փոստի հասցեն պարտադիր է",
+"passwordRequired": "Գաղտնաբառը պարտադիր է",
+"emailNotFound": "Սխալ էլ. փոստ։ Այս էլ. փոստով\nVaultara հաշիվ չկա",
+"incorrectPassword": "Սխալ գաղտնաբառ",
+
+"emailLabel": "Էլ. փոստի հասցե",
+"emailHint": "Մուտքագրեք էլ. փոստը",
+"passwordLabel": "Գաղտնաբառ",
+"signIn": "Մուտք գործել",
+
+"categoryPersonalIdentification": "Անձնական նույնականացում",
+"categoryDrivingAndVehicles": "Վարորդություն և տրանսպորտ",
+"categoryTravelAndImmigration": "Ճանապարհորդություն և ներգաղթ",
+"categoryBankingAndCards": "Բանկ և քարտեր",
+"categoryInsuranceAndCover": "Ապահովագրություն և պաշտպանություն",
+"categoryHealthAndMedical": "Առողջություն և բժշկություն",
+"categoryWorkAndProfessional": "Աշխատանք և մասնագիտական",
+"categoryPropertyAndHousing": "Գույք և բնակարան",
+"categoryHouseholdAndUtilities": "Տնային տնտեսություն և կոմունալներ",
+
+"subcategoryPassports": "Անձնագրեր",
+"subcategoryIdCards": "Նույնականացման քարտեր",
+"subcategoryResidencePermits": "Բնակության թույլտվություններ",
+
+"subcategoryDrivingLicences": "Վարորդական վկայականներ",
+"subcategoryVehicleRegistrations": "Տրանսպորտի գրանցումներ",
+"subcategoryRoadworthyCertificates": "Տեխնիկական պիտանիության վկայականներ",
+"subcategoryVehicleInspectionCertificates": "Տրանսպորտի ստուգման վկայականներ",
+
+"subcategoryVisas": "Վիզաներ",
+"subcategoryStudyPermits": "Ուսման թույլտվություններ",
+"subcategoryWorkPermits": "Աշխատանքի թույլտվություններ",
+"subcategoryTravelInsuranceDocuments": "Ճանապարհորդական ապահովագրության փաստաթղթեր",
+
+"subcategoryDebitAndCreditCards": "Դեբետային և կրեդիտ քարտեր",
+"subcategoryStoreCards": "Խանութի քարտեր",
+"subcategoryFuelCards": "Վառելիքի քարտեր",
+"subcategoryVehicleInsurances": "Տրանսպորտի ապահովագրություններ",
+"subcategoryPropertyInsurances": "Գույքի ապահովագրություններ",
+"subcategoryLifeInsurances": "Կյանքի ապահովագրություններ",
+"subcategoryHealthInsurances": "Առողջության ապահովագրություններ",
+"subcategoryTravelInsurances": "Ճանապարհորդական ապահովագրություններ",
+
+"subcategoryMedicalPrescriptions": "Բժշկական դեղատոմսեր",
+"subcategoryOpticalPrescriptions": "Օպտիկական դեղատոմսեր",
+"subcategoryMedicalCertificates": "Բժշկական վկայականներ",
+
+"subcategoryProfessionalLicences": "Մասնագիտական լիցենզիաներ",
+"subcategoryProfessionalRegistrations": "Մասնագիտական գրանցումներ",
+"subcategoryIndustryRegistrations": "Արդյունաբերական գրանցումներ",
+"subcategoryWorkAccessCards": "Աշխատանքային մուտքի քարտեր",
+
+"subcategoryLeaseAgreements": "Վարձակալության պայմանագրեր",
+"subcategoryAccessCardsAndTags": "Մուտքի քարտեր և թեգեր",
+"subcategoryParkingPermits": "Կայանման թույլտվություններ",
+"subcategorySecurityAccessPermits": "Անվտանգության մուտքի թույլտվություններ",
+
+"subcategoryElectricityAccounts": "Էլեկտրաէներգիայի հաշիվներ",
+"subcategoryWaterAccounts": "Ջրի հաշիվներ",
+"subcategoryInternetContracts": "Ինտերնետ պայմանագրեր",
+"subcategorySecurityServiceContracts": "Անվտանգության ծառայության պայմանագրեր",
+
+"searchCategories": "Որոնել կատեգորիաներ",
+"filterAll": "Բոլորը",
+"filterPreset": "Նախապես սահմանված",
+"filterCustom": "Անհատական",
+"addCategoryTitle": "Ավելացնել կատեգորիա",
+"customLabel": "Անհատական",
+"subcategoriesLabel": "ենթակատեգորիաներ",
+"itemsLabel": "տարրեր",
+
+"itemsExpiring": "{count} տարրերի ժամկետը կավարտվի {days} օրում",
+
+"pinnedEssentials": "Կցված կարևորները",
+"pinnedHint": "Կցեք ամենահաճախ օգտագործվող կատեգորիաները։",
+"noCategoriesFound": "Կատեգորիաներ չեն գտնվել",
+
+"searchGroups": "Որոնել խմբեր",
+"addGroupTitle": "Ավելացնել խումբ",
+
+"basicPlanGroupInfo": "Դուք Basic պլանում եք։\nԿարող եք դիտել նախապես սահմանված խմբերը։\nԹարմացրեք Premium-ի՝ ձեր սեփական խմբերը ստեղծելու համար։",
+
+"groupDeleted": "Խումբը ջնջվել է",
+"undo": "ՉԵՂԱՐԿԵԼ",
+
+"groupTapHint": "Հպեք՝ այս խմբում տարրեր ավելացնելու և հետևելու համար։",
+"itemsInGroup": "Տարրեր այս խմբում",
+"itemsInGroupHint": "Հետևեք յուրաքանչյուր կարևոր տարրին իր ժամկետի հետ։",
+"searchItems": "Որոնել տարրեր",
+"filterExpiringWithin": "Ժամկետը կլրանա {days} օրում",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Ժամկետանց",
+"addItem": "Ավելացնել տարր",
+"noItemsYet": "Դեռ տարրեր չկան։",
+
+"statusExpired": "Ժամկետանց",
+"statusExpiresToday": "Ժամկետը լրանում է այսօր",
+"statusExpiresInOneDay": "Ժամկետը լրանում է 1 օրում",
+"statusExpiresInDays": "Ժամկետը լրանում է {days} օրում",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Վավեր",
+
+"deleteCategoryTitle": "Ջնջել կատեգորիան",
+"deleteCategoryMessage": "Վստա՞հ եք, որ ցանկանում եք ջնջել \"{name}\" կատեգորիան",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Ջնջել խումբը",
+"deleteGroupMessage": "Վստա՞հ եք, որ ցանկանում եք ջնջել \"{name}\" խումբը",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Ջնջել տարրը",
+"deleteItemMessage": "Վստա՞հ եք, որ ցանկանում եք ջնջել \"{name}\"",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Չեղարկել",
+"delete": "Ջնջել",
+
+"homeWelcomeTitle": "Բարի գալուստ",
+
+"homeWelcomeFirstTitle": "Բարի գալուստ, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Բարի վերադարձ, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Բոլորը",
+"homeWelcomeSubtitleGeneric": "Vaultara օգնում է հետևել կարևոր ժամկետներին, որպեսզի ոչինչ աննկատ չավարտվի։",
+
+"homeWelcomeSubtitleFirst": "Ուրախ ենք ձեզ տեսնել այստեղ։ Vaultara օգնում է պահել կարևոր ամսաթվերը և գրառումները մեկ ապահով վայրում։",
+
+"homeWelcomeSubtitleBack": "Ուրախ ենք ձեզ կրկին տեսնել։ Vaultara միշտ պատրաստ է ձեր կարևոր տվյալների համար։",
+
+"insightEmptyTitle": "Դեռ ոչինչ չի ավելացվել",
+"insightEmptyBody": "Սկսեք հետևել ժամկետներին, և Vaultara կօգնի ձեզ առաջ մնալ։",
+
+"insightExpiresTodayTitle": "\"{name}\"-ի ժամկետը ավարտվում է այսօր",
+"insightExpiresTodayBody": "Արագ ստուգումը կպահպանի ճշգրտությունը։",
+
+"insightExpiresTomorrowTitle": "\"{name}\"-ի ժամկետը ավարտվում է վաղը",
+"insightExpiresTomorrowBody": "Այսօր ստուգելը կխնայի ժամանակը հետո։",
+
+"insightExpiresSoonTitle": "\"{name}\"-ի ժամկետը ավարտվում է {date}",
+"insightExpiresSoonBody": "Վաղ ուշադրությունը հանգստացնում է գործընթացը։",
+
+"insightNextExpiryTitle": "Հաջորդ ժամկետը՝ \"{name}\" {date}",
+"insightNextExpiryBody": "Գործողություն դեռ պետք չէ, բայց հիշելն օգտակար է։",
+
+"insightClusteredTitle": "Մի քանի տարր ավարտվում են {month}-ին",
+"insightClusteredBody": "Միասին ստուգելը խնայում է ժամանակը։",
+
+"insightTopCategoryTitle": "Տարրերի մեծ մասը {category}-ում է",
+"insightTopCategoryBody": "Այս բաժինը տալիս է ամենամեծ ազդեցությունը։",
+
+"insightStableTitle": "Ամեն ինչ կայուն է",
+"insightStableBody": "Մոտ ժամկետներ չկան, որոնք ուշադրություն են պահանջում։",
+
+"summaryAllTitle": "Բոլոր տարրերը",
+"summaryAllCaption": "Հետևվում են Vaultara-ում",
+"summarySoonTitle": "Շուտով ավարտվող",
+"summarySoonCaption": "30 օրվա ընթացքում",
+"summaryWeekTitle": "Այս շաբաթ",
+"summaryWeekCaption": "Ավարտվում են 7 օրում",
+"summaryExpiredTitle": "Ժամկետանց",
+"summaryExpiredCaption": "Ժամկետից հետո",
+
+"stabilityStableTitle": "Կայունությունը պահպանված է",
+"stabilityStableBody": "Անմիջական վտանգներ չկան։",
+
+"stabilityDecliningTitle": "Կայունությունը նվազում է",
+"stabilityDecliningBody": "Որոշ տարրեր արդեն ժամկետանց են, մյուսները մոտենում են։",
+
+"stabilityWeakenedTitle": "Կայունությունը թուլացել է",
+"stabilityWeakenedBody": "Ժամկետանց գրառումները նվազեցնում են վստահելիությունը։",
+
+"stabilityPressureTitle": "Ճնշումը աճում է",
+"stabilityPressureBody": "Մի քանի գրառում շուտով ուշադրություն կպահանջի։",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Նշումներ",
+"notesHint": "Մուտքագրեք նշումներ",
+"editorReminderTitle": "Հիշեցում",
+"editorReminderNone": "Հիշեցում չկա",
+"editorReminderOnExpiry": "Ժամկետի օրը",
+"editorReminder7Days": "7 օր առաջ",
+"editorReminder30Days": "30 օր առաջ",
+"editorReminderCustom": "Հատուկ",
+"daysBeforeExpiry": "օր մինչև ժամկետը",
+
+"reminderStage0Title": "Ժամկետի հիշեցում",
+"reminderStage0Body": "{firstName}, ձեր {itemName} կավարտվի {days} օրից։",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Հիշեցման շարունակություն",
+"reminderStage1Body": "{firstName}, {itemName}-ը դեռ չի թարմացվել։",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Ժամկետը մոտենում է",
+"reminderStage2Body": "{itemName}-ի ժամկետը մոտենում է։",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Վերջնական հիշեցում",
+"reminderFinalBody": "{firstName}, խնդրում ենք թարմացնել {itemName}-ը հիմա։",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Ծածկույթի հավասարակշռություն",
+"coverageAllRepresented": "Ձեր գրառումները ներառում են բոլոր կատեգորիաները։",
+"coverageMissingNamed": "Գրառումներ չկան {count} կատեգորիայում՝ {names}։",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Դուք գրառում չունեք {count} կատեգորիաներում, ներառյալ {names} և ևս {remaining} այլ։",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Օգտագործել գաղտնաբառը",
+"signInWithBiometrics": "Մուտք գործել բիոմետրիկով",
+"enableBiometricsTitle": "Միացնել բիոմետրիկ պաշտպանությունը",
+"enableBiometricsBody": "Օգտագործեք մատնահետք կամ դեմքի ճանաչում Vaultara-ի պաշտպանության համար։",
+"enableBiometricsReason": "Միացնել բիոմետրիկ բացումը Vaultara-ում։",
+"notNow": "Ոչ հիմա",
+"useBiometrics": "Օգտագործել բիոմետրիկա",
+
+"recordsCalendarIntro": "Ընտրեք, թե ինչպես եք ցանկանում դիտել ժամկետները.\n\n• Մուտքագրեք քանի օր առաջ եք ուզում դիտել.\n• Կամ ընտրեք ճշգրիտ ամսաթիվը օրացույցից.\n\nVaultara-ն կցուցադրի, թե որ գրառումներն են ավարտվում այդ օրը։",
+
+"showingRecordsRelative": "Ցուցադրվում են գրառումները, որոնք ավարտվում են {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Ցուցադրվում են ընտրված օրվա ավարտվող գրառումները",
+
+"noRecordsOnDate": "Այդ օրը ավարտվող գրառումներ չկան։",
+
+"recordEditorAddTitle": "Ավելացնել գրառում",
+"recordEditorEditTitle": "Խմբագրել գրառում",
+
+"editorRecordName": "Գրառման անունը",
+"editorRecordNameHint": "Մուտքագրեք գրառման անունը",
+"recordEditorErrorName": "Գրառման անունը պարտադիր է",
+
+"recordsGroupTapHint": "Հպեք՝ այս խմբում գրառումներ ավելացնելու և հետևելու համար։",
+
+"recordsInGroup": "Գրառումները այս խմբում",
+
+"recordsInGroupHint": "Հետևեք յուրաքանչյուր կարևոր գրառման իր ժամկետով։",
+
+"searchRecords": "Որոնել գրառումներ",
+
+"addRecord": "Ավելացնել գրառում",
+
+"noRecordsYet": "Դեռ գրառումներ չկան։",
+"deleteRecordTitle": "Ջնջել գրառումը",
+
+"recordsInsightClusteredTitle": "Մի քանի գրառումներ ավարտվում են մոտ {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Ձեր գրառումների մեծ մասը գտնվում է {category} կատեգորիայում",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Բոլոր գրառումները",
+
+"recordsStabilityDecliningBody": "Որոշ գրառումներ արդեն ավարտվել են, իսկ մյուսները շուտով կավարտվեն։",
+
+"recordsCoverageAllRepresented": "Ձեր գրառումները ընդգրկում են բոլոր կատեգորիաները։",
+
+"recordReminderStage0Body": "{firstName}, ձեր {recordName} կավարտվի {days} օրից։",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, {recordName}-ը դեռ չի թարմացվել։",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName}-ի ժամկետը մոտենում է։",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, խնդրում ենք թարմացնել {recordName}-ը հիմա։",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Դեռ խմբեր չկան",
+
+"recordsExpiring": "{count, plural, one {1 գրառում կավարտվի {days} օրից} other {{count} գրառում կավարտվի {days} օրից}}",
+
+"recordsGroupStats": "{records, plural, one {1 գրառում} other {{records} գրառում}} • {expiring} կավարտվի {days} օրում",
+
+"groupLabel": "{count, plural, one {{count} խումբ} other {{count} խումբ}}",
+
+"recordsLabel": "{count, plural, one {{count} գրառում} other {{count} գրառում}}",
+
+"forgotPassword": "Մոռացե՞լ եք գաղտնաբառը",
+"forgotPasswordTitle": "Վերականգնել գաղտնաբառը",
+"forgotPasswordBody": "Մուտքագրեք ձեր էլ. փոստը, և մենք կուղարկենք վերականգնման հղում։",
+"sendResetLink": "Ուղարկել վերականգնման հղումը",
+"passwordResetEmailSent": "Գաղտնաբառի վերականգնման նամակը ուղարկված է։",
+"verifyEmailToContinue": "Մուտք գործելուց առաջ հաստատեք ձեր էլ. փոստը",
+
+"changeEmailTitle": "Փոխել էլ. փոստը",
+"newEmailHint": "Մուտքագրեք նոր էլ. փոստը",
+"sendVerificationEmail": "Ուղարկել հաստատման նամակ",
+
+"deleteAccountTitle": "Ջնջել հաշիվը",
+"deleteAccountWarning": "Այս գործողությունը կջնջի ձեր հաշիվը և բոլոր տվյալները մշտապես։\nԱյն հնարավոր չէ հետ վերադարձնել։",
+"deleteAccountConfirm": "Ջնջել հաշիվը մշտապես",
+
+"supportTitle": "Աջակցություն",
+"supportSubtitle": "Կապ հաստատեք մեզ հետ օգնության կամ հարցերի համար։",
+"supportEmailSubject": "Vaultara աջակցության հարցում",
+"supportEmailError": "Չհաջողվեց բացել էլ. փոստի հավելվածը։",
+
+"passwordResetEmailFailed": "Չհաջողվեց ուղարկել գաղտնաբառի վերականգնման նամակը։",
+
+"loggedInPasswordResetBody": "Մենք կուղարկենք գաղտնաբառի վերականգնման հղում հետևյալ հասցեին․\n{email}",
+
+"accountManagementTitle": "Հաշվի կառավարում",
+"changeEmailSubtitle": "Թարմացրեք ձեր հաշվին կապված էլ. փոստը։",
+"changePasswordTitle": "Փոխել գաղտնաբառը",
+"changePasswordSubtitle": "Մենք կուղարկենք անվտանգ փոփոխման հղում։",
+
+"deleteAccountSubtitle": "Մշտապես ջնջել Vaultara հաշիվը։",
+
+"biometricAuthReason": "Հաստատեք ինքնությունը՝ Vaultara հաշիվ մուտք գործելու համար։",
+
+"verifyEmailTitle": "Հաստատեք էլ. փոստը",
+"verifyEmailBody": "Մենք ուղարկել ենք հաստատման նամակ։ Բացեք այն և հաստատեք ձեր հասցեն, ապա վերադարձեք այստեղ։",
+"verifyEmailConfirmedButton": "Ես հաստատել եմ իմ էլ. փոստը",
+"verifyEmailResendButton": "Կրկին ուղարկել հաստատման նամակ",
+"verifyEmailSending": "Ուղարկվում է...",
+
+"navHome": "Տուն",
+"navCategories": "Բաժին",
+"navInsights": "Տվյալներ",
+"navCalendar": "Օրացույց",
+
+"tutorialCancel": "Չեղարկել",
+"tutorialNext": "Հաջորդը",
+"tutorialEnd": "Ավարտել ուսուցումը",
+
+"softDeleteCategory": "Կատեգորիա",
+"softDeleteGroup": "Խումբ",
+"softDeleteRecord": "Գրառում",
+
+"softDeleteTitle": "Տեղափոխել {type}-ը Վերջերս ջնջվածներ",
+"softDeleteMessage": "{type} \"{name}\" կտեղափոխվի Վերջերս ջնջվածներ։\n\nԴուք կարող եք վերականգնել այն 30 օրվա ընթացքում։ Այնուհետև այն կջնջվի մշտապես։",
+"softDeleteMove": "Տեղափոխել",
+"@recordsExpiring": { "description": "Ցույց է տալիս, թե քանի գրառում է ավարտվում", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "Խմբի վիճակագրություն", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "Խմբերի քանակը", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Գրառումների քանակը", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "Տեղեկացնում է գաղտնաբառի վերականգնման նամակի մասին", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "Ժամանակավոր ջնջման վերնագիր", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "Ժամանակավոր ջնջման բացատրություն", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "Վերջերս ջնջվածները",
+"categories": "Կատեգորիաներ",
+"groups": "Խմբեր",
+"records": "Գրառումներ",
+"restore": "Վերականգնել",
+"deletePermanently": "Մշտապես ջնջել",
+
+"recentlyDeletedBanner": "Ջնջված {type}-ները պահվում են այստեղ 30 օր՝ մինչև մշտապես հեռացվելը։",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Որոնել ջնջված {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Դեռևս ջնջված {type} չկա",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Հպեք կատեգորիային՝ խմբերը տեսնելու և գրառումները կառավարելու համար։",
+"groupsHint": "Խմբերը դասավորում են գրառումները այս կատեգորիայում։ Հպեք խմբին՝ դրանք կառավարելու համար։",
+"notLoggedIn": "Մուտք գործած չեք",
+
+"recordsInsideGroupHint": "Սրանք այս խմբի գրառումներն են։",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" տեղափոխվեց Վերջերս ջնջվածներ",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Անձնագիր"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" հաջողությամբ ջնջվեց",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Վարորդական"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" հաջողությամբ թարմացվեց",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Վիզա"} } },
+
+"snackAddedSuccessfully": "\"{name}\" հաջողությամբ ավելացվեց",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Ապահովագրություն"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" հաջողությամբ վերականգնվեց",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Անձնագիր"} } },
+
+"snackFreeLimitReached": "Անվճար սահմանաչափը հասել է ({current}/{limit})։ Թարմացրեք՝ ավելացնելու համար։",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Որոնել բոլոր գրառումները",
+"globalSearchHint": "Մուտքագրեք գրառման անունը, կատեգորիան կամ խումբը",
+"globalSearchNoMatches": "Ձեր որոնմանը համապատասխան գրառումներ չկան։",
+"snackNoRecordsToSearch": "Որոնելու համար գրառումներ չկան։ Ավելացրեք մի քանի գրառում, և Vaultara-ն դրանք ավտոմատ կինդեքսավորի։",
+
+"recoveryCentreTitle": "Վերականգնման կենտրոն",
+"recoveryCentreSubtitle": "Վերականգնեք կամ մշտապես ջնջեք հեռացված գրառումները։",
+
+"plan_premium": "Պրեմիում",
+"plan_free": "Անվճար",
+
+"profile_app_settings_title": "Հավելվածի կարգավորումներ",
+"profile_privacy_security_title": "Գաղտնիություն և անվտանգություն",
+"profile_biometric_on": "Կենսաչափական կողպումը միացված է այս սարքում։",
+"profile_biometric_off": "Կենսաչափական կողպումը անջատված է։",
+"profile_biometric_enable_reason": "Հաստատեք ինքնությունը՝ կենսաչափական կողպումը միացնելու համար։",
+"profile_biometric_disable_reason": "Հաստատեք ինքնությունը՝ կենսաչափական կողպումը անջատելու համար։",
+"profile_account_management_title": "Հաշվի կառավարում",
+"profile_premium_active_title": "Պրեմիումը ակտիվ է",
+"profile_premium_upgrade_title": "Թարմացնել Պրեմիումի",
+"profile_premium_active_subtitle": "Ընդլայնված հիշեցումները բացված են։",
+"profile_premium_upgrade_subtitle": "Բացեք ընդլայնված հիշեցումները և անսահման կազմակերպումը։",
+"profile_manage_cancel_hint": "Կառավարեք կամ չեղարկեք Google Play-ում ցանկացած պահի։",
+"profile_manage_subscription_button": "Կառավարել բաժանորդագրությունը",
+"plansTitle": "Ընտրեք փաթեթը",
+"plansTrialBanner": "Սկսեք 7-օրյա անվճար փորձաշրջանով։\nՉեղարկեք ցանկացած պահի։",
+"plansLoading": "Բեռնվում է…",
+"plansStartFreeTrial": "Սկսել անվճար փորձը",
+"plansNoChargeTodayFooter": "7 օր անվճար · Այսօր վճարում չկա",
+
+"planFreeTitle": "Անվճար",
+"planFreeSubtitle": "Սկսելու համար",
+"planPremiumMonthlyTitle": "Պրեմիում ամսական",
+"planPremiumYearlyTitle": "Պրեմիում տարեկան",
+"planPerMonth": "ամսական",
+"planPerYear": "տարեկան",
+
+"planBadgeCurrent": "Ընթացիկ փաթեթ",
+"planBadgePopular": "Հանրաճանաչ",
+"planBadgeBestValue": "Լավագույն արժեք",
+
+"planYouAreOnThisPlan": "Դուք արդեն այս փաթեթում եք։",
+
+"planFeatureUpToRecords": "Մինչև {count} գրառում",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Հարմարեցված կատեգորիաներ (մինչև {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Նախապես սահմանված ենթակատեգորիաներ",
+"planFeatureCloudStorage": "Ամպային պահեստ",
+"planFeatureSmartExpiryInsights": "Խելացի ժամկետի հիշեցումներ",
+"planFeatureCoverageBalance": "Ծածկույթի հավասարակշռություն",
+"planFeatureRecordStabilityTracking": "Գրառումների կայունության հետևում",
+
+"planFeatureUnlimitedRecords": "Անսահման գրառումներ",
+"planFeatureUnlimitedCategories": "Անսահման կատեգորիաներ",
+"planFeatureCustomSubcategories": "Հարմարեցված ենթակատեգորիաներ",
+"planFeatureMultipleRemindersPerRecord": "Մի քանի հիշեցում",
+"planFeatureAdvancedReminderTiming": "Ընդլայնված ժամանակացույց",
+"planFeatureAutomaticFollowUps": "Ավտոմատ հետևումներ",
+
+"planFeatureEverythingInMonthly": "Ամսական փաթեթի ամբողջ բովանդակությունը",
+"planFeatureSavePercentComparedToMonthly": "Խնայեք {percent}% ամսականի համեմատ",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Լավագույն երկարաժամկետ արժեք",
+
+"editorReminderLabel": "Հիշեցում",
+"editorReminderSelectOptional": "Ընտրեք հիշեցում (ընտրովի)",
+"editorReminderOnExpiry": "Ժամկետի օրը",
+"editorReminderDaysBefore": "{days} օր առաջ ժամկետից",
+"editorFreeItemsCount": "Անվճար տարրեր՝ {used}/{limit}",
+"editorExpiryPastWarning": "Ժամկետը արդեն անցել է։",
+"editorExpiryTodayWarning": "Այս գրառման ժամկետը այսօր է լրանում։",
+"editorErrorExpiryPast": "Ժամկետը չի կարող լինել անցյալում։",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Այսօրվա դիտարկումներ",
+"tutorialBannerTitle": "Արագ շրջայց",
+"tutorialBannerBody": "Մեկ րոպեում սովորեք՝ որտեղ որոնել, ինչպես ավելացնել գրառումներ և ինչ են նշանակում դիտարկումները։",
+"tutorialBannerStart": "Սկսել շրջայցը",
+"tutorialBannerDismiss": "Ոչ հիմա",
+"authErrorUserDisabled": "Այս հաշիվը անջատված է։",
+"authErrorNetwork": "Ցանցային սխալ։ Ստուգեք ինտերնետը և կրկին փորձեք։",
+"authErrorTooManyRequests": "Չափազանց շատ փորձեր։ Խնդրում ենք փորձել ավելի ուշ։",
+"authErrorSignInFailed": "Մուտքը ձախողվեց։ Խնդրում ենք կրկին փորձել։",
+"ok": "Լավ",
+"snackPremiumEnabled": "Պրեմիումը ակտիվացված է",
+"snackPremiumRestored": "Պրեմիումը վերականգնված է",
+"passwordNeedLower": "Պետք է պարունակի փոքրատառ տառ",
+"passwordNeedUpper": "Պետք է պարունակի մեծատառ տառ",
+"passwordNeedNumber": "Պետք է պարունակի թիվ",
+"passwordNeedSymbol": "Պետք է պարունակի նշան",
+"editorFreeItemsCount": "Անվճար տարրեր՝ {used}/{limit}",
+"editorExpiryPastWarning": "Ժամկետը արդեն անցել է։",
+"editorExpiryTodayWarning": "Այս գրառման ժամկետը այսօր է լրանում։",
+"editorErrorExpiryPast": "Ժամկետը չի կարող լինել անցյալում։",
+"todayInsightsTitle": "Այսօրվա դիտարկումներ",
+"tutorialBannerTitle": "Արագ շրջայց",
+"tutorialBannerBody": "Մեկ րոպեում սովորեք՝ որտեղ որոնել, ինչպես ավելացնել գրառումներ և ինչ են նշանակում դիտարկումները։",
+"tutorialBannerStart": "Սկսել ուղեցույցը",
+"tutorialBannerDismiss": "Հետո",
+"authErrorUserDisabled": "Այս հաշիվը անջատված է։",
+"authErrorNetwork": "Ցանցային սխալ։ Ստուգեք ինտերնետը և կրկին փորձեք։",
+"authErrorTooManyRequests": "Չափազանց շատ փորձեր։ Խնդրում ենք փորձել ավելի ուշ։",
+"authErrorSignInFailed": "Մուտքը ձախողվեց։ Խնդրում ենք կրկին փորձել։",
+"ok": "Լավ",
+"tutorialHomeSearch": "Օգտագործեք որոնման տողը՝ արագ գտնելու ձեր հետևած ցանկացած գրառումը։",
+"tutorialHomeFab": "Ավելացրեք ձեր առաջին գրառումը այստեղ։\nԸնտրեք, թե որտեղ է այն պատկանում, ավելացրեք նշումներ և ընտրեք ավարտման ամսաթիվը։",
+"tutorialHomeSummary": "Ավելացնելով ավելի շատ գրառումներ՝ այս բաժինը կօգնի նկատել մոտեցող կամ ավարտված գրառումները։",
+"tutorialHomeInsight": "Այս խելացի դիտարկումը ցույց է տալիս օրինաչափությունները և մոտեցող ավարտումները։",
+"tutorialHomeCoverage": "Ծածկույթի հավասարակշռությունը ցույց է տալիս գրառումների բաշխումը բոլոր կատեգորիաներում։",
+"tutorialHomeStability": "Կայունությունը ցույց է տալիս գրառումների հուսալիությունը ժամանակի ընթացքում։",
+"profile_account_management_subtitle": "Փոխել էլ․ փոստը, գաղտնաբառը կամ ջնջել հաշիվը։",
+"confirmIdentityTitle": "Հաստատել ինքնությունը",
+"confirm": "Հաստատել",
+"profile_sign_out_title": "Դուրս գալ",
+"profile_sign_out_subtitle": "Դուրս գալ Vaultara-ից այս սարքում",
+"profile_sign_out_confirm_title": "Դուրս գա՞լ",
+"profile_sign_out_confirm_body": "Հաշիվդ մուտք գործելու համար կրկին պետք է մուտք գործես։",
+"profile_sign_out_action": "Դուրս գալ",
+"todayInsightsAudioHint": "Ցանկանու՞մ եք ձայն։ Օգտագործեք բարձրախոսի նշանը։",
+"category2Label": "Կատեգորիա",
+"enable2BiometricsBody": "Օգտագործեք մատնահետքի ճանաչումը ձեր Vaultara հաշիվը պաշտպանելու համար։",
+"snackNotificationsDisabled": "Ծանուցումները անջատված են։ Միացրեք դրանք հիշեցումներ ստանալու համար։",
+"openSettings": "Բացել կարգավորումները",
+
+"reminderOnExpiryTitle": "Սպառվում է այսօր",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Բարև {firstName}, \"{itemName}\"-ը սպառվում է այսօր։",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Անվճար կատեգորիաներ՝ {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Ցույց է տալիս՝ քանի անվճար կատեգորիա է օգտագործվել անվճար սահմանաչափից։",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ավելացնել նշումներ (ըստ ցանկության)",
+"apply": "Կիրառել",
+"smartInsightExpiresTodayHeading": "Լրանում է այսօր",
+"smartInsightExpiresTodaySingleBody": "{name}-ի ժամկետը լրանում է այսօր։ Գործեք հիմա՝ այն թարմ պահելու համար։",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} և ևս {extra} փաստաթուղթ այսօր լրանում են։",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Պահանջում է ձեր ուշադրությունը",
+"smartInsightSilentRiskBody": "{name}-ի ժամկետը լրանում է {days} օրից, և հիշեցում սահմանված չէ։ Համոզվեք, որ տվյալները դեռ ճիշտ են։",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Մի քանի մոտակա երկարաձգումներ",
+"smartInsightRenewalTwinBodyTwo": "{a} և {b}-ի ժամկետները լրանում են երեք շաբաթվա ընթացքում։ Նախապես պլանավորեք։",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} և {c}-ի ժամկետները բոլորը լրանում են երեք շաբաթվա ընթացքում։ Նախապես պլանավորեք։",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} և ևս {extra} փաստաթուղթ լրանում են երեք շաբաթվա ընթացքում։ Նախապես պլանավորեք։",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Մոտակա խումբ",
+"smartInsightClusterBody": "{category} կատեգորիայում {count} փաստաթուղթ կլրանա առաջիկա երկու ամսվա ընթացքում։ Մտածեք դրանք միասին թարմացնելու մասին։",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Հանգիստ ժամանակահատված առջևում",
+"smartInsightQuietPeriodBody": "Առաջիկա {days} օրում ոչինչ չի լրանում։ Ձեր հաջորդ երկարաձգումը {firstDate}-ին է։",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Ամեն ինչ թարմ է",
+"smartInsightAllCaughtUpBody": "Առաջիկա {count} լրացումները ծածկված են հիշեցումներով։ Այլ ուշադրություն պահանջող բան չկա։",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Ամեն ինչ թարմ է։ Այս պահին ուշադրություն պահանջող բան չկա։",
+"smartInsightNoRecordsHeading": "Ավելացրեք ձեր առաջին գրառումը",
+"smartInsightNoRecordsBody": "Սկսեք հետևել ձեր փաստաթղթերին, և Vaultara-ն այստեղ կցուցադրի խելացի առաջարկներ։",
+"expiryTimelineTitle": "Ավարտի ժամանակացույց",
+"expiryTimelineSubtitle": "Հպեք ամսին՝ տեսնելու այդ ամսում ավարտվող գրառումները",
+"expiryTimelineDetailCount": "{count, plural, =1{1 գրառում} other{{count} գրառում}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Մոտակա",
+"summaryUpcomingCaption": "Առաջիկա 30 օրվա ընթացքում",
+"summaryUrgentTitle": "Շտապ",
+"summaryUrgentCaption": "Առաջիկա 7 օրվա ընթացքում"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

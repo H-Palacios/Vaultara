@@ -18,17 +18,13 @@
   "in30Days": "Pas 30 ditësh",
 
   "inDays": "pas {days} ditësh",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Numri i ditëve është i detyrueshëm",
   "invalidDaysError": "Numër i vlefshëm kërkohet (0 ose më shumë)",
 
   "showingItemsRelative": "Artikuj që skadojnë {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Artikuj që skadojnë në datën e zgjedhur",
   "noItemsOnDate": "Nuk ka artikuj që skadojnë atë ditë",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Emri i kategorisë",
   "categoryNameHint": "Vendos kategori",
 
-  "categoryLimitReached":
-    "Kufiri i planit Basic është arritur. Premium lejon kategori të pakufizuara",
-
-  "categoryLimitInfo":
-    "Plani Basic lejon deri në {limit} kategori",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Kufiri i planit Basic është arritur",
+  "categoryLimitInfo": "Plani Basic lejon deri në {limit} kategori",
 
   "categoryErrorEmpty": "Emri i kategorisë është i detyrueshëm",
   "categoryErrorTooShort": "Emri i kategorisë është shumë i shkurtër",
@@ -102,5 +92,798 @@
   "groupErrorSymbols": "Emri i grupit nuk mund të ketë vetëm simbole",
   "groupErrorNumbers": "Emri i grupit nuk mund të përmbajë numra",
 
-  "createGroup": "Krijo"
+  "createGroup": "Krijo",
+
+  "registerTitle": "Krijo llogari",
+
+  "firstNameLabel": "Emri",
+  "firstNameHint": "Shkruani emrin",
+  "errorFirstName": "Emri është i detyrueshëm",
+
+  "lastNameLabel": "Mbiemri",
+  "lastNameHint": "Shkruani mbiemrin",
+  "errorLastName": "Mbiemri është i detyrueshëm",
+
+  "emailLabel": "Email",
+  "emailRequired": "Email-i juaj është i detyrueshëm",
+"passwordRequired": "Fjalëkalimi juaj është i detyrueshëm",
+"registerPasswordHint": "Shkruani fjalëkalimin",
+"loginPasswordHint": "Shkruani fjalëkalimin tënd",
+"emailHint": "ShkruaniVendos adresën tënde të email-it",
+  "errorEmailInvalid": "Shkruani një email të vlefshëm",
+  "errorEmailInUse": "Ky email është tashmë i lidhur me një llogari Vaultara",
+
+  "passwordLabel": "Fjalëkalimi",
+  "passwordHelper": "Të paktën 8 karaktere me kombinim",
+
+  "passwordTooShort": "Shumë i shkurtër",
+  "passwordTooWeak": "I dobët",
+  "passwordMedium": "Mesatar",
+  "passwordStrong": "I fortë",
+
+  "errorPasswordLength": "Fjalëkalimi duhet të ketë të paktën 8 karaktere",
+  "errorPasswordWeak": "Zgjidh një fjalëkalim më të fortë",
+
+  "errorGeneric": "Regjistrimi dështoi Provo përsëri",
+
+  "createAccount": "Krijo llogari",
+
+  "appName": "Vaultara",
+  "authTagline": "Qendra juaj personale për pasaporta licenca karta dhe dokumente të tjera të rëndësishme",
+  "tabSignIn": "Hyr",
+  "tabCreateAccount": "Krijo llogari",
+  "signInFooterText": "Hyni për të aksesuar hapësirën tuaj personale Vaultara dhe për të mbajtur nën kontroll të gjitha rinovimet",
+  "createAccountFooterText": "Krijoni një llogari Vaultara për të ruajtur kujtesa të rëndësishme dhe për t’i aksesuar sa herë të nevojiten",
+  "invalidEmail": "Vendosni një adresë emaili të vlefshme",
+  "emailNotFound": "Email i pasaktë.\nNuk ekziston një llogari Vaultara me këtë email",
+  "incorrectPassword": "Fjalëkalim i pasaktë",
+  "emailLabel": "Adresa e emailit",
+  "passwordLabel": "Fjalëkalimi",
+  "signIn": "Hyr",
+  "categoryPersonalIdentification": "Identifikim Personal",
+  "categoryDrivingAndVehicles": "Drejtimi dhe Automjetet",
+  "categoryTravelAndImmigration": "Udhëtim dhe Imigrim",
+  "categoryBankingAndCards": "Banka dhe Kartat",
+  "categoryInsuranceAndCover": "Sigurime dhe Mbulim",
+  "categoryHealthAndMedical": "Shëndet dhe Mjekësi",
+  "categoryWorkAndProfessional": "Punë dhe Profesionale",
+  "categoryPropertyAndHousing": "Pronë dhe Banesa",
+  "categoryHouseholdAndUtilities": "Familje dhe Shërbime",
+
+  "subcategoryPassports": "Pasaporta",
+  "subcategoryIdCards": "Karta Identiteti",
+  "subcategoryResidencePermits": "Leje Qëndrimi",
+
+  "subcategoryDrivingLicences": "Leje Drejtimi",
+  "subcategoryVehicleRegistrations": "Regjistrime Automjetesh",
+  "subcategoryRoadworthyCertificates": "Certifikata Teknikë",
+  "subcategoryVehicleInspectionCertificates": "Certifikata Inspektimi Automjeti",
+
+  "subcategoryVisas": "Viza",
+  "subcategoryStudyPermits": "Leje Studimi",
+  "subcategoryWorkPermits": "Leje Pune",
+  "subcategoryTravelInsuranceDocuments": "Dokumente Sigurimi Udhëtimi",
+
+  "subcategoryDebitAndCreditCards": "Karta Debiti dhe Krediti",
+  "subcategoryStoreCards": "Karta Dyqanesh",
+  "subcategoryFuelCards": "Karta Karburanti",
+
+  "subcategoryVehicleInsurances": "Sigurime Automjetesh",
+  "subcategoryPropertyInsurances": "Sigurime Pronash",
+  "subcategoryLifeInsurances": "Sigurime Jete",
+  "subcategoryHealthInsurances": "Sigurime Shëndetësore",
+  "subcategoryTravelInsurances": "Sigurime Udhëtimi",
+
+  "subcategoryMedicalPrescriptions": "Receta Mjekësore",
+  "subcategoryOpticalPrescriptions": "Receta Optike",
+  "subcategoryMedicalCertificates": "Certifikata Mjekësore",
+
+  "subcategoryProfessionalLicences": "Licenca Profesionale",
+  "subcategoryProfessionalRegistrations": "Regjistrime Profesionale",
+  "subcategoryIndustryRegistrations": "Regjistrime Industriale",
+  "subcategoryWorkAccessCards": "Karta Akses Pune",
+
+  "subcategoryLeaseAgreements": "Marrëveshje Qiraje",
+  "subcategoryAccessCardsAndTags": "Karta dhe Etiketa Aksesi",
+  "subcategoryParkingPermits": "Leje Parkimi",
+  "subcategorySecurityAccessPermits": "Leje Aksesi Sigurie",
+
+  "subcategoryElectricityAccounts": "Llogari Elektrike",
+  "subcategoryWaterAccounts": "Llogari Uji",
+  "subcategoryInternetContracts": "Kontrata Interneti",
+  "subcategorySecurityServiceContracts": "Kontrata Shërbimesh Sigurie",
+   "searchCategories": "Kërko kategori",
+  "filterAll": "Të gjitha",
+  "filterPreset": "Të paracaktuara",
+  "filterCustom": "Të personalizuara",
+  "addCategoryTitle": "Shto kategori",
+  "customLabel": "E personalizuar",
+  "subcategoriesLabel": "Nënkategori",
+  "itemsLabel": "Artikuj",
+  "itemsExpiring": "{count} artikuj skadojnë pas {days} ditësh",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Kategori të fiksuara",
+  "pinnedHint": "Fiksoni kategoritë që hapni më shpesh për t’i mbajtur në krye të listës.",
+  "noCategoriesFound": "Nuk u gjet asnjë kategori",
+  "searchGroups": "Kërko grupe",
+  "addGroupTitle": "Shto grup",
+  "basicPlanGroupInfo": "Jeni në planin Basic.\nMund të shihni grupet e paracaktuara në këtë kategori.\nKaloni në Premium për të krijuar grupet tuaja.",
+  "groupDeleted": "Grupi u fshi",
+  "undo": "KTHEJE",
+  "groupStats": "{items} artikuj • {expiring} skadojnë brenda {days} ditësh",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Prek për të shtuar dhe ndjekur artikujt në këtë grup.",
+  "itemsInGroup": "Artikuj në këtë grup",
+  "itemsInGroupHint": "Ndiqni artikujt e rëndësishëm me data skadence për t’i rinovuar në kohë.",
+  "searchItems": "Kërko artikuj",
+  "filterAll": "Të gjitha",
+  "filterExpiringWithin": "Skadon për {days} ditë",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Të skaduara",
+  "addItem": "Shto artikull",
+  "noItemsYet": "Ende nuk ka artikuj.",
+
+  "statusExpired": "I skaduar",
+  "statusExpiresToday": "Skadon sot",
+  "statusExpiresInOneDay": "Skadon nesër",
+  "statusExpiresInDays": "Skadon për {days} ditë",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "I vlefshëm",
+
+  "deleteCategoryTitle": "Fshi kategorinë",
+  "deleteCategoryMessage": "A jeni të sigurt që dëshironi të fshini kategorinë \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Fshi grupin",
+  "deleteGroupMessage": "A jeni të sigurt që dëshironi të fshini grupin \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Fshi artikullin",
+  "deleteItemMessage": "A jeni të sigurt që dëshironi të fshini \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Anulo",
+  "delete": "Fshi",
+  "homeWelcomeFirstTitle": "Mirë se vini, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Mirë se u rikthyet, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara ju ndihmon të ndiqni datat e rëndësishme të skadimit në mënyrë që asgjë të mos kalojë pa u vënë re.",
+
+"homeWelcomeSubtitleFirst":
+  "Na vjen mirë që ju shohim këtu. Vaultara ju ndihmon të organizoni data dhe regjistra të rëndësishëm në një vend të sigurt.",
+
+"homeWelcomeSubtitleBack":
+  "Na vjen mirë që ju shohim përsëri. Vaultara është gati kurdo që dëshironi të rishikoni datat dhe regjistrat tuaj të rëndësishëm.",
+  "insightEmptyTitle": "Nuk keni shtuar ende asgjë",
+  "insightEmptyBody": "Kur të filloni të gjurmoni data të rëndësishme, Vaultara do t’ju ndihmojë të qëndroni përpara skadimeve.",
+
+  "insightExpiresTodayTitle": "\"{name}\" skadon sot",
+  "insightExpiresTodayBody": "Një kontroll i shpejtë mban të dhënat të sakta.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" skadon nesër",
+  "insightExpiresTomorrowBody": "Rishikimi tani mund të kursejë kohë më vonë.",
+
+  "insightExpiresSoonTitle": "\"{name}\" skadon më {date}",
+  "insightExpiresSoonBody": "Zgjidhja herët i bën gjërat më të lehta.",
+
+  "insightNextExpiryTitle": "Skadimi i radhës është \"{name}\" ({date})",
+  "insightNextExpiryBody": "Aktualisht nuk nevojitet asnjë veprim.",
+
+  "insightClusteredTitle": "Disa elemente skadojnë rreth muajit {month}",
+  "insightClusteredBody": "Rishikimi i tyre së bashku mund të kursejë kohë.",
+
+  "insightTopCategoryTitle": "Shumica e elementeve janë nën {category}",
+  "insightTopCategoryBody": "Fillimi këtu jep ndikimin më të madh.",
+
+  "insightStableTitle": "Gjithçka duket e qëndrueshme",
+  "insightStableBody": "Nuk ka skadime urgjente për momentin.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Mirë se vini",
+  "summaryAllTitle": "Të gjitha artikujt",
+"summaryAllCaption": "Të ndjekura në Vaultara",
+"summarySoonTitle": "Skadojnë së shpejti",
+"summarySoonCaption": "Brenda 30 ditësh",
+"summaryWeekTitle": "Këtë javë",
+"summaryWeekCaption": "Skadon pas 7 ditësh",
+"summaryExpiredTitle": "Skaduar",
+"summaryExpiredCaption": "Data e skadimit ka kaluar",
+"stabilityStableTitle": "Gjithçka duket e qëndrueshme",
+"stabilityStableBody": "Regjistrat tuaj nuk tregojnë rreziqe të menjëhershme ose të grumbulluara.",
+
+"stabilityDecliningTitle": "Qëndrueshmëria po bie",
+"stabilityDecliningBody": "Disa elemente kanë skaduar dhe të tjerë po i afrohen skadimit.",
+
+"stabilityWeakenedTitle": "Qëndrueshmëri e dobësuar",
+"stabilityWeakenedBody": "Prania e regjistrave të skaduar ul besueshmërinë e përgjithshme.",
+
+"stabilityPressureTitle": "Presioni po rritet",
+"stabilityPressureBody": "Disa regjistra do të kërkojnë vëmendje së shpejti për të ruajtur qëndrueshmërinë.",
+"editorNotes": "Shënime",
+"notesHint": "Shkruani shënime",
+"editorReminderTitle": "Përkujtues",
+"editorReminderNone": "Pa përkujtues",
+"editorReminderOnExpiry": "Në datën e skadimit",
+"editorReminder7Days": "7 ditë para skadimit",
+"editorReminder30Days": "30 ditë para skadimit",
+"editorReminderCustom": "I personalizuar",
+"daysBeforeExpiry": "ditë para skadimit",
+"reminderStage0Title": "Kujtesë skadimi",
+"reminderStage0Body": "{firstName}, {itemName} skadon pas {days} ditësh.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Kujtesë ndjekëse",
+"reminderStage1Body": "{firstName}, {itemName} ende nuk është përditësuar.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Skadimi po afron",
+"reminderStage2Body": "Data e skadimit për {itemName} po afron.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Kujtesë përfundimtare",
+"reminderFinalBody": "{firstName}, ju lutemi përditësoni {itemName} tani.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Balanca e mbulimit",
+"coverageAllRepresented": "Regjistrimet tuaja përfshijnë të gjitha kategoritë.",
+"coverageMissingNamed": "Nuk u gjetën regjistrime në {count} kategori: {names}.",
+"coverageMissingSummary": "Nuk keni shtuar asnjë regjistër në {count} kategori, përfshirë {names} dhe {remaining} të tjera.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Përdor fjalëkalimin",
+"signInWithBiometrics": "Hyr me biometrikë",
+"enableBiometricsTitle": "Aktivizo sigurinë biometrike",
+"enableBiometricsBody": "Përdor gjurmën e gishtit ose njohjen e fytyrës për të mbrojtur Vaultara.",
+"enableBiometricsReason": "Aktivizo zhbllokimin biometrik për Vaultara.",
+"notNow": "Jo tani",
+"useBiometrics": "Përdor biometrikën",
+"recordsCalendarIntro":
+  "Zgjidhni si dëshironi të shikoni datat e skadimit:\n\n• Shkruani sa ditë nga sot dëshironi të shihni përpara.\n• Ose zgjidhni një datë të saktë në kalendar.\n\nVaultara do të tregojë cilat regjistra skadojnë në atë ditë.",
+
+"showingRecordsRelative": "Duke shfaqur regjistra që skadojnë {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Duke shfaqur regjistra që skadojnë në datën e zgjedhur",
+
+"noRecordsOnDate":
+  "Nuk ka regjistra të caktuar për të skaduar në atë ditë.",
+
+"recordEditorAddTitle": "Shto regjistër",
+"recordEditorEditTitle": "Ndrysho regjistër",
+
+"editorRecordName": "Emri i regjistrit",
+"editorRecordNameHint": "Vendosni emrin e regjistrit",
+"recordEditorErrorName": "Emri i regjistrit është i detyrueshëm",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Prekni për të shtuar dhe ndjekur regjistra në këtë grup.",
+
+"recordsInGroup": "Regjistra në këtë grup",
+
+"recordsInGroupHint":
+  "Ndiqni çdo regjistër të rëndësishëm me datën e skadimit për ta përditësuar në kohë.",
+
+"searchRecords": "Kërko regjistra",
+"addRecord": "Shto regjistër",
+"noRecordsYet": "Ende nuk ka regjistra.",
+
+"deleteRecordTitle": "Fshi regjistër",
+
+"recordsInsightClusteredTitle":
+  "Disa regjistra skadojnë rreth muajit {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Shumica e regjistrave tuaj janë nën kategorinë {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Të gjithë regjistrat",
+
+"recordsStabilityDecliningBody":
+  "Disa regjistra kanë skaduar tashmë dhe të tjerë do të skadojnë së shpejti.",
+
+"recordsCoverageAllRepresented":
+  "Regjistrat tuaj mbulojnë të gjitha kategoritë.",
+
+"recordReminderStage0Body":
+  "{firstName}, regjistri juaj {recordName} skadon pas {days} ditësh.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, regjistri juaj {recordName} nuk është përditësuar ende.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Data e skadimit për {recordName} po afrohet.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, ju lutemi përditësoni tani {recordName}.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Ende nuk ka grupe",
+"recordsExpiring": "{count, plural, one {1 regjistër skadon në {days} ditë} other {{count} regjistra skadojnë në {days} ditë}}",
+"recordsGroupStats": "{records, plural, one {1 regjistër} other {{records} regjistra}} • {expiring} në {days} ditë",
+"groupLabel": "{count, plural, one {{count} grup} other {{count} grupe}}",
+"recordsLabel": "{count, plural, one {{count} regjistër} other {{count} regjistra}}",
+"forgotPassword": "Keni harruar fjalëkalimin?",
+  "forgotPasswordTitle": "Rivendos fjalëkalimin",
+  "forgotPasswordBody": "Vendosni adresën tuaj të email-it dhe ne do t’ju dërgojmë një lidhje për rivendosjen e fjalëkalimit.",
+  "sendResetLink": "Dërgo lidhjen",
+  "passwordResetEmailSent": "Email-i për rivendosjen e fjalëkalimit u dërgua.",
+  "verifyEmailToContinue": "Ju lutemi verifikoni adresën tuaj të emailit përpara se të hyni",
+  "changeEmailTitle": "Ndrysho adresën e emailit",
+"newEmailHint": "Shkruani emailin tuaj të ri",
+"sendVerificationEmail": "Dërgo email verifikimi",
+"deleteAccountTitle": "Fshi llogarinë",
+"deleteAccountWarning": "Ky veprim do të fshijë përgjithmonë llogarinë tuaj dhe të gjitha të dhënat e ruajtura.\nKy veprim nuk mund të zhbëhet.",
+"deleteAccountConfirm": "Fshi llogarinë përgjithmonë",
+"supportTitle": "Mbështetje",
+"supportSubtitle": "Na kontaktoni nëse keni nevojë për ndihmë ose keni pyetje.",
+"supportEmailSubject": "Kërkesë mbështetjeje Vaultara",
+"supportEmailError": "Nuk mund të hapet aplikacioni i emailit.",
+"passwordResetEmailFailed": "Nuk u dërgua emaili për rivendosjen e fjalëkalimit.",
+"loggedInPasswordResetBody": "Do të dërgojmë një lidhje për rivendosjen e fjalëkalimit në:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Menaxhimi i llogarisë",
+"changeEmailTitle": "Ndrysho adresën e emailit",
+"changeEmailSubtitle": "Përditëso emailin e lidhur me llogarinë tënde.",
+"changePasswordTitle": "Ndrysho fjalëkalimin",
+"changePasswordSubtitle": "Do t’ju dërgojmë një email me lidhje për të ndryshuar fjalëkalimin në mënyrë të sigurt.",
+"deleteAccountTitle": "Fshi llogarinë",
+"deleteAccountSubtitle": "Fshi përfundimisht llogarinë tënde Vaultara.",
+"biometricAuthReason": "Autentifikohu për të hyrë në llogarinë tënde",
+"verifyEmailTitle": "Verifiko emailin tënd",
+"verifyEmailBody": "Ne kemi dërguar një email verifikimi në kutinë tënde hyrëse. Hapeni dhe konfirmoni adresën tuaj të emailit, pastaj kthehuni këtu për të vazhduar.",
+"verifyEmailConfirmedButton": "E kam verifikuar emailin tim",
+"verifyEmailResendButton": "Ridërgo emailin e verifikimit",
+"verifyEmailSending": "Duke dërguar...",
+"navHome": "Kreu",
+"navCategories": "Kategori",
+"navInsights": "Analiza",
+"navCalendar": "Kalendar",
+"tutorialHomeSearch": "Përdorni shiritin e kërkimit për të gjetur shpejt çdo regjistrim.",
+"tutorialHomeFab": "Shtoni regjistrimin tuaj të parë këtu.\nZgjidhni kategorinë, shtoni shënime dhe datën e skadimit.",
+"tutorialHomeSummary": "Kjo pjesë ndihmon në identifikimin e regjistrimeve që po skadojnë.",
+"tutorialHomeInsight": "Kjo analizë inteligjente shfaq modele.\nMund të prekni ikonën e altoparlantit.",
+"tutorialHomeCoverage": "Balanca e mbulimit tregon shpërndarjen e regjistrimeve.",
+"tutorialHomeStability": "Stabiliteti tregon besueshmërinë e regjistrimeve.",
+"tutorialCancel": "Anulo",
+"tutorialNext": "Tjetër",
+"tutorialEnd": "Përfundo udhëzuesin",
+"softDeleteCategory": "kategori",
+"softDeleteGroup": "grup",
+"softDeleteRecord": "regjistër",
+
+"softDeleteTitle": "Zhvendos {type} te Fshirë së Fundmi",
+
+"softDeleteMessage": "{type} \"{name}\" do të zhvendoset te Fshirë së Fundmi.\n\nMund ta riktheni brenda 30 ditëve. Pas kësaj do të fshihet përgjithmonë.",
+
+"softDeleteMove": "Zhvendos",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Fshirë së fundmi",
+"categories": "Kategori",
+"groups": "Grupe",
+"records": "Regjistra",
+"restore": "Rikthe",
+"deletePermanently": "Fshi përgjithmonë",
+
+"recentlyDeletedBanner": "{type} e fshira ruhen për 30 ditë.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Kërko {type} të fshira",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Nuk ka {type} të fshira",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Prekni një kategori për të parë grupet dhe për të menaxhuar regjistrimet tuaja.",
+"groupsHint": "Grupet organizojnë regjistrimet tuaja në këtë kategori. Prekni një grup për të menaxhuar regjistrimet.",
+"notLoggedIn": "Nuk jeni kyçur",
+"recordsInsideGroupHint": "Këto janë regjistrimet brenda këtij grupi.",
+"snackMovedToRecentlyDeleted": "\"{name}\" u zhvendos te Të fshira së fundi",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" u fshi me sukses",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" u përditësua me sukses",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" u shtua me sukses",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" u rikthye me sukses",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "U arrit kufiri falas ({current}/{limit}). Përmirëso për të shtuar më shumë.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Kërko të gjitha regjistrimet",
+"globalSearchHint": "Shkruani emrin, kategorinë ose grupin",
+"globalSearchNoMatches": "Asnjë regjistrim nuk përputhet me kërkimin tuaj.",
+"snackNoRecordsToSearch": "Nuk ka regjistrime për kërkim. Shtoni disa regjistrime dhe Vaultara do t’i indeksojë automatikisht.",
+"recoveryCentreTitle": "Qendra e rikuperimit",
+"recoveryCentreSubtitle": "Riktheni ose fshini përgjithmonë regjistrimet e fshira.",
+"plan_premium": "Premium",
+"plan_free": "Falë",
+"profile_app_settings_title": "Cilësimet e aplikacionit",
+"profile_privacy_security_title": "Privatësia dhe siguria",
+"profile_biometric_on": "Bllokimi biometrik është aktiv në këtë pajisje.",
+"profile_biometric_off": "Bllokimi biometrik është çaktivizuar.",
+"profile_biometric_enable_reason": "Konfirmoni identitetin për të aktivizuar bllokimin biometrik.",
+"profile_biometric_disable_reason": "Konfirmoni identitetin për të çaktivizuar bllokimin biometrik.",
+"profile_account_management_title": "Menaxhimi i llogarisë",
+"profile_account_management_subtitle": "Ndrysho emailin, fjalëkalimin ose fshi llogarinë.",
+"profile_premium_active_title": "Premium aktiv",
+"profile_premium_upgrade_title": "Përmirëso në Premium",
+"profile_premium_active_subtitle": "Kujtuesit e avancuar janë zhbllokuar.",
+"profile_premium_upgrade_subtitle": "Zhblloko kujtues të avancuar dhe organizim të pakufizuar.",
+"profile_manage_cancel_hint": "Menaxho ose anulo në çdo kohë në Google Play.",
+"profile_manage_subscription_button": "Menaxho abonimin",
+"plansTitle": "Zgjidh planin",
+"plansTrialBanner": "Fillo me 7 ditë falas.\nAnulo kur të duash.",
+"plansLoading": "Po ngarkohet…",
+"plansStartFreeTrial": "Fillo falas",
+"plansNoChargeTodayFooter": "7 ditë falas · Pa pagesë sot",
+
+"planFreeTitle": "Falas",
+"planFreeSubtitle": "Për fillim",
+"planPremiumMonthlyTitle": "Premium mujor",
+"planPremiumYearlyTitle": "Premium vjetor",
+"planPerMonth": "në muaj",
+"planPerYear": "në vit",
+
+"planBadgeCurrent": "Aktual",
+"planBadgePopular": "Popullor",
+"planBadgeBestValue": "Vlera më e mirë",
+
+"planYouAreOnThisPlan": "Jeni në këtë plan.",
+
+"planFeatureUpToRecords": "Deri në {count} regjistrime",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Kategori të personalizuara (deri {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Nënkategori të paracaktuara",
+"planFeatureCloudStorage": "Ruajtje në cloud",
+"planFeatureSmartExpiryInsights": "Analizë skadence",
+"planFeatureCoverageBalance": "Balancë kategorish",
+"planFeatureRecordStabilityTracking": "Stabilitet i të dhënave",
+
+"planFeatureUnlimitedRecords": "Regjistrime të pakufizuara",
+"planFeatureUnlimitedCategories": "Kategori të pakufizuara",
+"planFeatureCustomSubcategories": "Nënkategori të personalizuara",
+"planFeatureMultipleRemindersPerRecord": "Shumë kujtues",
+"planFeatureAdvancedReminderTiming": "Kohëzim i avancuar",
+"planFeatureAutomaticFollowUps": "Kujtues automatikë",
+
+"planFeatureEverythingInMonthly": "Gjithçka nga mujori",
+"planFeatureSavePercentComparedToMonthly": "Kurseni {percent}% krahasuar me mujorin",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Vlera më e mirë afatgjatë",
+"editorReminderLabel": "Kujtesë",
+"editorReminderSelectOptional": "Zgjidhni një kujtesë (opsionale)",
+"editorReminderOnExpiry": "Në ditën e skadimit",
+"editorReminderDaysBefore": "{days} ditë para skadimit",
+"editorFreeItemsCount": "Regjistrime falas: {used}/{limit}",
+"editorExpiryPastWarning": "Data e skadimit ka kaluar.",
+"editorExpiryTodayWarning": "Ky regjistrim skadon sot.",
+"editorErrorExpiryPast": "Data e skadimit nuk mund të jetë në të kaluarën.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Vështrimet e sotme",
+"tutorialBannerTitle": "Udhëzim i shpejtë",
+"tutorialBannerBody": "Mësoni ku të kërkoni, si të shtoni regjistrime dhe çfarë kuptojnë insight-et në më pak se një minutë.",
+"tutorialBannerStart": "Nis tutorialin",
+"tutorialBannerDismiss": "Jo tani",
+"authErrorUserDisabled": "Ky llogari është çaktivizuar.",
+"authErrorNetwork": "Gabim rrjeti. Provo përsëri.",
+"authErrorTooManyRequests": "Shumë përpjekje. Provo më vonë.",
+"authErrorSignInFailed": "Hyrja dështoi. Provo përsëri.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium u aktivizua",
+"snackPremiumRestored": "Premium u rikthye",
+"passwordNeedLower": "Duhet të përmbajë shkronjë të vogël",
+"passwordNeedUpper": "Duhet të përmbajë shkronjë të madhe",
+"passwordNeedNumber": "Duhet të përmbajë numër",
+"passwordNeedSymbol": "Duhet të përmbajë simbol",
+"confirmIdentityTitle": "Konfirmo identitetin",
+"confirm": "Konfirmo",
+"profile_sign_out_title": "Dil",
+"profile_sign_out_subtitle": "Dil nga Vaultara në këtë pajisje",
+"profile_sign_out_confirm_title": "Të dalësh?",
+"profile_sign_out_confirm_body": "Do të duhet të identifikohesh përsëri për të hyrë në llogari.",
+"profile_sign_out_action": "Dil",
+"todayInsightsAudioHint": "Preferon audion? Përdor ikonën e altoparlantit.",
+"category2Label": "Kategori",
+"enable2BiometricsBody": "Përdor njohjen e gjurmës së gishtit për të mbrojtur llogarinë tënde Vaultara.",
+"snackNotificationsDisabled": "Njoftimet janë çaktivizuar. Aktivizojini për të marrë kujtesa.",
+"openSettings": "Hap cilësimet",
+
+"reminderOnExpiryTitle": "Skadon sot",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Përshëndetje {firstName}, \"{itemName}\" skadon sot.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Kategori falas: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Tregon sa kategori falas janë përdorur nga kufiri falas.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Shto shënime (opsionale)",
+"apply": "Apliko",
+"smartInsightExpiresTodayHeading": "Skadon Sot",
+"smartInsightExpiresTodaySingleBody": "{name} skadon sot. Vepro tani për ta mbajtur të përditësuar.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} dhe 1 dokument tjetër skadojnë sot.} other{{names} dhe {extra} dokumente të tjera skadojnë sot.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Kërkon Vëmendjen Tënde",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} skadon në 1 ditë dhe nuk ka kujtues të vendosur. Konfirmo që detajet janë ende të sakta.} other{{name} skadon në {days} ditë dhe nuk ka kujtues të vendosur. Konfirmo që detajet janë ende të sakta.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Disa Rinovime Të Afërta",
+"smartInsightRenewalTwinBodyTwo": "{a} dhe {b} skadojnë brenda tre javësh nga njëra-tjetra. Planifiko paraprakisht.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} dhe {c} të gjitha skadojnë brenda tre javësh. Planifiko paraprakisht.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} dhe 1 dokument tjetër skadojnë brenda tre javësh. Planifiko paraprakisht.} other{{a}, {b} dhe {extra} dokumente të tjera skadojnë brenda tre javësh. Planifiko paraprakisht.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Grup I Afërt",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument në {category} skadon në dy muajt e ardhshëm. Mendoni t'i trajtoni së bashku.} other{{count} dokumente në {category} skadojnë në dy muajt e ardhshëm. Mendoni t'i trajtoni së bashku.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Periudhë E Qetë Përpara",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Asgjë nuk skadon në 1 ditën e ardhshme. Rinovimi yt i ardhshëm është më {firstDate}.} other{Asgjë nuk skadon në {days} ditët e ardhshme. Rinovimi yt i ardhshëm është më {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Gjithçka E Përditësuar",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 skadim i ardhshëm është mbuluar nga kujtuesit. Asgjë tjetër nuk kërkon vëmendjen tënde.} other{{count} skadime të ardhshme janë mbuluar nga kujtuesit. Asgjë tjetër nuk kërkon vëmendjen tënde.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Gjithçka e përditësuar. Asgjë nuk kërkon vëmendjen tënde tani.",
+"smartInsightNoRecordsHeading": "Shto Të Dhënën Tënde Të Parë",
+"smartInsightNoRecordsBody": "Fillo të gjurmosh dokumentet e tua dhe Vaultara do të shfaqë këtu njohuri inteligjente.",
+"expiryTimelineTitle": "Afati kohor i skadimit",
+"expiryTimelineSubtitle": "Trokit një muaj për të parë regjistrimet që skadojnë atë muaj",
+"expiryTimelineDetailCount": "{count, plural, =1{1 regjistrim} other{{count} regjistrime}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Të afërt",
+"summaryUpcomingCaption": "Brenda 30 ditëve",
+"summaryUrgentTitle": "Urgjent",
+"summaryUrgentCaption": "Brenda 7 ditëve"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,0 +1,875 @@
+{
+  "@@locale": "mn",
+  "expiryCalendarTitle": "Дуусах хугацааны хуанли",
+
+"calendarIntro": "Та дуусах хугацааг хэрхэн харахыг сонгоно уу:\n\n• Өнөөдрөөс хойш хэдэн өдөр харахыг хүсэж байгаагаа оруулна уу.\n• Эсвэл хуанлиас яг огноо сонгоно уу.\n\nVaultara тухайн өдөр дуусах зүйлсийг харуулна.",
+
+"daysFromTodayLabel": "Өнөөдрөөс хойшхи өдрүүд",
+"daysFromTodayHint": "Жишээ нь 0, 1, 7, 30",
+
+"apply": "Хэрэглэх",
+"pickDateOnCalendar": "Хуанлиас огноо сонгох",
+
+"today": "Өнөөдөр",
+"tomorrow": "Маргааш",
+"in7Days": "7 хоногийн дараа",
+"in30Days": "30 хоногийн дараа",
+
+"inDays": "{days} хоногийн дараа",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Өдрийн тоог оруулна уу.",
+"invalidDaysError": "Зөв өдрийн тоо оруулна уу (0 эсвэл түүнээс их).",
+
+"showingItemsRelative": "{time} дуусах зүйлсийг харуулж байна",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Сонгосон өдөр дуусах зүйлсийг харуулж байна",
+"noItemsOnDate": "Тухайн өдөр дуусах зүйл байхгүй байна.",
+
+"editorAddTitle": "Зүйл нэмэх",
+"editorEditTitle": "Зүйлийг засах",
+
+"editorCategory": "Ангилал",
+"editorCategoryHint": "Ангилал сонгоно уу",
+
+"editorGroup": "Бүлэг",
+"editorGroupHint": "Бүлгийг сонгоно уу",
+
+"editorItemName": "Зүйлийн нэр",
+"editorItemNameHint": "Зүйлийн нэрийг оруулна уу",
+
+"editorExpiryDate": "Дуусах огноо",
+"editorExpiryDateHint": "Дуусахыг сонгоно уу",
+
+"editorErrorCategory": "Ангилал сонгоно уу",
+"editorErrorGroup": "Бүлэг сонгоно уу",
+"editorErrorName": "Зүйлийн нэр заавал шаардлагатай",
+"editorErrorExpiry": "Дуусах огноог сонгоно уу",
+"editorErrorExpiryPast": "Дуусах огноо өнөөдөр эсвэл ирээдүйн огноо байх ёстой",
+"cancel": "Цуцлах",
+"save": "Хадгалах",
+
+"addCategoryTitle": "Ангилал нэмэх",
+"unlimitedCategories": "Хязгааргүй ангилал (Premium)",
+
+"categoryUsage": "{current} / {limit} ангилал ашигласан",
+
+"categoryNameLabel": "Ангилал",
+"categoryNameHint": "Ангилал оруулна уу",
+
+"categoryLimitReached": "Basic төлөвлөгөөний {limit} ангиллын хязгаарт хүрлээ. Premium руу шинэчилнэ үү.",
+
+"categoryLimitInfo": "Basic төлөвлөгөөнд {limit} ангилал үүсгэж болно.",
+
+"categoryErrorEmpty": "Ангилал заавал шаардлагатай",
+"categoryErrorTooShort": "Ангилал хэт богино",
+"categoryErrorTooLong": "Ангилал хэт урт",
+"categoryErrorSymbols": "Ангилал зөвхөн тэмдэгт байж болохгүй",
+"categoryErrorNumbers": "Ангилал зөвхөн тоо байж болохгүй",
+
+"upgradeRequired": "Шинэчлэлт шаардлагатай",
+"viewPremiumBenefits": "Premium давуу талыг харах",
+"createCategory": "Үүсгэх",
+
+"addGroupTitle": "Бүлэг нэмэх",
+"groupNameLabel": "Бүлэг",
+"groupNameHint": "Бүлэг оруулна уу",
+
+"groupErrorEmpty": "Бүлэг заавал шаардлагатай",
+"groupErrorTooShort": "Бүлэг хэт богино",
+"groupErrorTooLong": "Бүлэг хэт урт",
+"groupErrorSymbols": "Бүлэг тэмдэгт агуулж болохгүй",
+"groupErrorNumbers": "Бүлэг тоо агуулж болохгүй",
+"createGroup": "Үүсгэх",
+
+"firstNameLabel": "Нэр",
+"firstNameHint": "Нэр оруулна уу",
+
+"lastNameLabel": "Овог",
+"lastNameHint": "Овог оруулна уу",
+
+"emailLabel": "Имэйл",
+"loginPasswordHint": "Нууц үгээ оруулна уу",
+"registerPasswordHint": "Нууц үг оруулна уу",
+"passwordHelper": "Дор хаяж 8 тэмдэгт, төрөл бүрийг хольсон",
+
+"passwordTooShort": "Хэт богино",
+"passwordTooWeak": "Хэт сул",
+"passwordMedium": "Дунд",
+"passwordStrong": "Хүчтэй",
+
+"errorFirstName": "Нэр заавал шаардлагатай",
+"errorLastName": "Овог заавал шаардлагатай",
+"errorEmailInvalid": "Зөв имэйл хаяг оруулна уу",
+"errorEmailInUse": "Энэ имэйл хаяг аль хэдийн\nVaultara бүртгэлтэй холбоотой байна",
+"errorPasswordLength": "Нууц үг дор хаяж найман тэмдэгттэй байх ёстой",
+"errorPasswordWeak": "Илүү хүчтэй нууц үг оруулна уу",
+"errorGeneric": "Бүртгэл амжилтгүй боллоо. Дахин оролдоно уу",
+
+"createAccount": "Бүртгэл үүсгэх",
+"appName": "Vaultara",
+"authTagline": "Паспорт, лиценз, карт болон бусад чухал зүйлсийн тань хувийн төв",
+"tabSignIn": "Нэвтрэх",
+"tabCreateAccount": "Бүртгэл үүсгэх",
+"signInFooterText": "Нэвтэрч хувийн Vaultara орон зайдаа хандаж, бүх сунгалтаа хяналттай байлгаарай",
+"createAccountFooterText": "Чухал сануулгуудаа нөөцлөх, хэрэгтэй үедээ хэзээ ч хүрэхийн тулд Vaultara бүртгэл үүсгээрэй",
+
+"emailRequired": "Имэйл хаяг шаардлагатай",
+"passwordRequired": "Нууц үг шаардлагатай",
+"emailNotFound": "Буруу имэйл. Энэ имэйлээр\nVaultara бүртгэл байхгүй",
+"incorrectPassword": "Буруу нууц үг",
+
+"emailLabel": "Имэйл хаяг",
+"emailHint": "Имэйлээ оруулна уу",
+"passwordLabel": "Нууц үг",
+"signIn": "Нэвтрэх",
+
+"categoryPersonalIdentification": "Хувийн таних баримт",
+"categoryDrivingAndVehicles": "Жолоодлого ба тээврийн хэрэгсэл",
+"categoryTravelAndImmigration": "Аялал ба цагаачлал",
+"categoryBankingAndCards": "Банк ба картууд",
+"categoryInsuranceAndCover": "Даатгал ба хамгаалалт",
+"categoryHealthAndMedical": "Эрүүл мэнд ба эмнэлэг",
+"categoryWorkAndProfessional": "Ажил ба мэргэжлийн",
+"categoryPropertyAndHousing": "Өмч ба орон сууц",
+"categoryHouseholdAndUtilities": "Өрх гэр ба үйлчилгээ",
+
+"subcategoryPassports": "Паспорт",
+"subcategoryIdCards": "Иргэний үнэмлэх",
+"subcategoryResidencePermits": "Оршин суух зөвшөөрөл",
+
+"subcategoryDrivingLicences": "Жолооны үнэмлэх",
+"subcategoryVehicleRegistrations": "Тээврийн хэрэгслийн бүртгэл",
+"subcategoryRoadworthyCertificates": "Тээврийн хэрэгслийн техник шаардлагын гэрчилгээ",
+"subcategoryVehicleInspectionCertificates": "Тээврийн хэрэгслийн үзлэгийн гэрчилгээ",
+
+"subcategoryVisas": "Виз",
+"subcategoryStudyPermits": "Суралцах зөвшөөрөл",
+"subcategoryWorkPermits": "Ажиллах зөвшөөрөл",
+"subcategoryTravelInsuranceDocuments": "Аяллын даатгалын баримт бичиг",
+
+"subcategoryDebitAndCreditCards": "Дебит ба кредит карт",
+"subcategoryStoreCards": "Дэлгүүрийн карт",
+"subcategoryFuelCards": "Шатахууны карт",
+"subcategoryVehicleInsurances": "Тээврийн хэрэгслийн даатгал",
+"subcategoryPropertyInsurances": "Эд хөрөнгийн даатгал",
+"subcategoryLifeInsurances": "Амь насны даатгал",
+"subcategoryHealthInsurances": "Эрүүл мэндийн даатгал",
+"subcategoryTravelInsurances": "Аяллын даатгал",
+
+"subcategoryMedicalPrescriptions": "Эмчийн жор",
+"subcategoryOpticalPrescriptions": "Нүдний шилний жор",
+"subcategoryMedicalCertificates": "Эмчилгээний тодорхойлолт",
+
+"subcategoryProfessionalLicences": "Мэргэжлийн лиценз",
+"subcategoryProfessionalRegistrations": "Мэргэжлийн бүртгэл",
+"subcategoryIndustryRegistrations": "Салбарын бүртгэл",
+"subcategoryWorkAccessCards": "Ажлын нэвтрэх карт",
+
+"subcategoryLeaseAgreements": "Түрээсийн гэрээ",
+"subcategoryAccessCardsAndTags": "Нэвтрэх карт ба шошго",
+"subcategoryParkingPermits": "Зогсоолын зөвшөөрөл",
+"subcategorySecurityAccessPermits": "Аюулгүй байдлын зөвшөөрөл",
+
+"subcategoryElectricityAccounts": "Цахилгааны тооцоо",
+"subcategoryWaterAccounts": "Усны тооцоо",
+"subcategoryInternetContracts": "Интернэт гэрээ",
+"subcategorySecurityServiceContracts": "Хамгаалалтын үйлчилгээний гэрээ",
+
+"searchCategories": "Ангилал хайх",
+"filterAll": "Бүгд",
+"filterPreset": "Урьдчилан тохируулсан",
+"filterCustom": "Тохируулсан",
+"addCategoryTitle": "Ангилал нэмэх",
+"customLabel": "Тохируулсан",
+"subcategoriesLabel": "дэд ангилал",
+"itemsLabel": "элементүүд",
+
+"itemsExpiring": "{count} элемент {days} хоногийн дараа дуусна",
+
+"pinnedEssentials": "Тогтоосон чухал",
+"pinnedHint": "Их ашигладаг ангиллуудаа тогтооно уу.",
+"noCategoriesFound": "Ангилал олдсонгүй",
+
+"searchGroups": "Бүлэг хайх",
+"addGroupTitle": "Бүлэг нэмэх",
+
+"basicPlanGroupInfo": "Та Basic төлөвлөгөөнд байна.\nУрьдчилан тохируулсан бүлгүүдийг харж болно.\nPremium-д шинэчлээд өөрийн бүлгийг үүсгээрэй.",
+
+"groupDeleted": "Бүлэг устгагдсан",
+"undo": "БУЦААХ",
+
+"groupTapHint": "Элемент нэмэх, хянахын тулд дарна уу.",
+"itemsInGroup": "Энэ бүлгийн элементүүд",
+"itemsInGroupHint": "Элемент бүрийг дуусах хугацаатай нь хянаарай.",
+"searchItems": "Элемент хайх",
+"filterExpiringWithin": "{days} хоногийн дотор дуусах",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Дууссан",
+"addItem": "Зүйл нэмэх",
+"noItemsYet": "Одоогоор зүйл байхгүй.",
+
+"statusExpired": "Дууссан",
+"statusExpiresToday": "Өнөөдөр дуусна",
+"statusExpiresInOneDay": "1 хоногийн дараа дуусна",
+"statusExpiresInDays": "{days} хоногийн дараа дуусна",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Хүчинтэй",
+
+"deleteCategoryTitle": "Ангилал устгах",
+"deleteCategoryMessage": "\"{name}\" ангиллыг устгахдаа итгэлтэй байна уу?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Бүлэг устгах",
+"deleteGroupMessage": "\"{name}\" бүлгийг устгахдаа итгэлтэй байна уу?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Зүйл устгах",
+"deleteItemMessage": "\"{name}\" устгах уу?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Цуцлах",
+"delete": "Устгах",
+
+"homeWelcomeTitle": "Тавтай морил",
+
+"homeWelcomeFirstTitle": "Тавтай морил, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Дахин тавтай морил, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Бүгд",
+"homeWelcomeSubtitleGeneric": "Vaultara нь чухал хугацааг хянахад тань тусалж, юу ч анзааралгүй дуусахгүй байхад дэмжинэ.",
+
+"homeWelcomeSubtitleFirst": "Таныг энд байгаад баяртай байна. Vaultara чухал огноо, бүртгэлийг нэг аюулгүй газар хадгална.",
+
+"homeWelcomeSubtitleBack": "Таныг дахин харах сайхан байна. Vaultara таны чухал мэдээлэлд үргэлж бэлэн.",
+
+"insightEmptyTitle": "Одоогоор юу ч нэмэгдээгүй",
+"insightEmptyBody": "Огноонуудыг хянаж эхлээрэй, Vaultara таныг нэг алхам түрүүлж байхад тусална.",
+
+"insightExpiresTodayTitle": "\"{name}\" өнөөдөр дуусна",
+"insightExpiresTodayBody": "Түргэн шалгалт нь үнэн зөвийг хадгална.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" маргааш дуусна",
+"insightExpiresTomorrowBody": "Өнөөдөр шалгавал дараа нь цаг хэмнэнэ.",
+
+"insightExpiresSoonTitle": "\"{name}\" {date} дуусна",
+"insightExpiresSoonBody": "Эрт анхаарах нь процессыг хялбар болгоно.",
+
+"insightNextExpiryTitle": "Дараагийн хугацаа — \"{name}\" {date}",
+"insightNextExpiryBody": "Одоогоор арга хэмжээ хэрэггүй ч санахад илүүдэхгүй.",
+
+"insightClusteredTitle": "{month} сард хэд хэдэн бичлэг дуусна",
+"insightClusteredBody": "Хамтад нь шалгавал цаг хэмнэнэ.",
+
+"insightTopCategoryTitle": "Ихэнх бичлэг {category}-д байна",
+"insightTopCategoryBody": "Энэ хэсгийг шалгах нь хамгийн их үр дүн өгнө.",
+
+"insightStableTitle": "Бүх зүйл тогтвортой",
+"insightStableBody": "Одоогоор анхаарах хугацаа алга.",
+
+"summaryAllTitle": "Бүх бичлэг",
+"summaryAllCaption": "Vaultara-д хянагдсан",
+"summarySoonTitle": "Удахгүй дуусна",
+"summarySoonCaption": "30 хоногийн дотор",
+"summaryWeekTitle": "Энэ долоо хоногт",
+"summaryWeekCaption": "7 хоногт дуусна",
+"summaryExpiredTitle": "Дууссан",
+"summaryExpiredCaption": "Хугацаа хэтэрсэн",
+
+"stabilityStableTitle": "Тогтвортой байдал хадгалагдсан",
+"stabilityStableBody": "Яаралтай эрсдэл алга.",
+
+"stabilityDecliningTitle": "Тогтвортой байдал буурч байна",
+"stabilityDecliningBody": "Зарим бичлэг дууссан, зарим нь ойртож байна.",
+
+"stabilityWeakenedTitle": "Тогтвортой байдал сулрав",
+"stabilityWeakenedBody": "Дууссан бичлэгүүд найдвартай байдлыг бууруулж байна.",
+
+"stabilityPressureTitle": "Даралт нэмэгдэж байна",
+"stabilityPressureBody": "Хэд хэдэн бичлэг удахгүй анхаарал шаардана.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Тэмдэглэл",
+"notesHint": "Тэмдэглэл оруулна уу",
+"editorReminderTitle": "Сануулах",
+"editorReminderNone": "Сануулахгүй",
+"editorReminderOnExpiry": "Дуусах өдөр",
+"editorReminder7Days": "7 хоногийн өмнө",
+"editorReminder30Days": "30 хоногийн өмнө",
+"editorReminderCustom": "Тохируулсан",
+"daysBeforeExpiry": "дуусахаас өмнөх хоног",
+
+"reminderStage0Title": "Дуусах хугацааны сануулга",
+"reminderStage0Body": "{firstName}, таны {itemName} {days} хоногийн дараа дуусна.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Сануулах үргэлжлэл",
+"reminderStage1Body": "{firstName}, {itemName} одоогоор шинэчлэгдээгүй байна.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Дуусах хугацаа ойртож байна",
+"reminderStage2Body": "{itemName}-ийн дуусах хугацаа ойртож байна.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Сүүлийн сануулга",
+"reminderFinalBody": "{firstName}, {itemName}-ийг одоо шинэчилнэ үү.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Хамрах хүрээний тэнцвэр",
+"coverageAllRepresented": "Таны бүртгэл бүх ангиллыг хамарсан байна.",
+"coverageMissingNamed": "{count} ангилалд бүртгэл олдсонгүй: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Та {count} ангилалд бүртгэл нэмээгүй бөгөөд үүнд {names} болон өөр {remaining} багтана.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Нууц үг ашиглах",
+"signInWithBiometrics": "Биометрикаар нэвтрэх",
+"enableBiometricsTitle": "Биометр хамгаалалт идэвхжүүлэх",
+"enableBiometricsBody": "Vaultara-г хамгаалахын тулд хурууны хээ эсвэл царай танилтыг ашиглана уу.",
+"enableBiometricsReason": "Vaultara-д биометрээр нээхийг идэвхжүүлэх.",
+"notNow": "Одоо биш",
+"useBiometrics": "Биометрик ашиглах",
+
+"recordsCalendarIntro": "Дуусах хугацааг хэрхэн харахыг сонгоно уу:\n\n• Хэдэн хоногийн дараахыг харахаа бичнэ үү.\n• Эсвэл календараас тодорхой огноо сонгоно уу.\n\nVaultara тухайн өдөр дуусах бичлэгүүдийг харуулна.",
+
+"showingRecordsRelative": "{time} дуусах бичлэгүүдийг харуулж байна",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Сонгосон өдөр дуусах бичлэгүүдийг харуулж байна",
+
+"noRecordsOnDate": "Тухайн өдөр дуусах бичлэг байхгүй.",
+
+"recordEditorAddTitle": "Бичлэг нэмэх",
+"recordEditorEditTitle": "Бичлэг засах",
+
+"editorRecordName": "Бичлэгийн нэр",
+"editorRecordNameHint": "Бичлэгийн нэр оруулна уу",
+"recordEditorErrorName": "Бичлэгийн нэр заавал шаардлагатай",
+
+"recordsGroupTapHint": "Энэ бүлэгт бичлэг нэмэх, хянахын тулд товшино уу.",
+
+"recordsInGroup": "Энэ бүлгийн бичлэгүүд",
+
+"recordsInGroupHint": "Чухал бичлэг бүрийг дуусах огноотой нь хянаарай.",
+
+"searchRecords": "Бичлэг хайх",
+
+"addRecord": "Бичлэг нэмэх",
+
+"noRecordsYet": "Одоогоор бичлэг алга.",
+"deleteRecordTitle": "Бичлэг устгах",
+
+"recordsInsightClusteredTitle": "Хэд хэдэн бичлэг {month} орчимд дуусна",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Таны ихэнх бичлэг {category} ангилалд байна",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Бүх бичлэг",
+
+"recordsStabilityDecliningBody": "Зарим бичлэг аль хэдийн дууссан бөгөөд бусад нь удахгүй дуусна.",
+
+"recordsCoverageAllRepresented": "Таны бичлэгүүд бүх ангиллыг хамарсан байна.",
+
+"recordReminderStage0Body": "{firstName}, таны {recordName} {days} хоногийн дараа дуусна.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, таны {recordName} хараахан шинэчлэгдээгүй байна.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName}-ийн дуусах огноо ойртож байна.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, {recordName}-ийг одоо шинэчилнэ үү.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Одоогоор бүлэг алга",
+
+"recordsExpiring": "{count, plural, one {1 бичлэг {days} хоногийн дараа дуусна} other {{count} бичлэг {days} хоногийн дараа дуусна}}",
+
+"recordsGroupStats": "{records, plural, one {1 бичлэг} other {{records} бичлэг}} • {expiring} {days} хоногийн дотор дуусна",
+
+"groupLabel": "{count, plural, one {{count} бүлэг} other {{count} бүлэг}}",
+
+"recordsLabel": "{count, plural, one {{count} бичлэг} other {{count} бичлэг}}",
+
+"forgotPassword": "Нууц үгээ мартсан уу?",
+"forgotPasswordTitle": "Нууц үг сэргээх",
+"forgotPasswordBody": "Имэйл хаягаа оруулна уу, бид сэргээх холбоос илгээнэ.",
+"sendResetLink": "Сэргээх холбоос илгээх",
+"passwordResetEmailSent": "Нууц үг сэргээх имэйл илгээгдлээ.",
+"verifyEmailToContinue": "Нэвтрэхээс өмнө имэйлээ баталгаажуулна уу",
+
+"changeEmailTitle": "Имэйл солих",
+"newEmailHint": "Шинэ имэйл оруулна уу",
+"sendVerificationEmail": "Баталгаажуулах имэйл илгээх",
+
+"deleteAccountTitle": "Бүртгэл устгах",
+"deleteAccountWarning": "Энэ үйлдэл таны бүртгэл болон бүх өгөгдлийг бүрмөсөн устгана.\nБуцаах боломжгүй.",
+"deleteAccountConfirm": "Бүртгэлийг бүрмөсөн устгах",
+
+"supportTitle": "Дэмжлэг",
+"supportSubtitle": "Тусламж хэрэгтэй бол бидэнтэй холбоо барина уу.",
+"supportEmailSubject": "Vaultara дэмжлэгийн хүсэлт",
+"supportEmailError": "Имэйл апп нээх боломжгүй.",
+
+"passwordResetEmailFailed": "Нууц үг сэргээх имэйл илгээж чадсангүй.",
+
+"loggedInPasswordResetBody": "Сэргээх холбоосыг дараах хаяг руу илгээнэ:\n{email}",
+
+"accountManagementTitle": "Бүртгэлийн удирдлага",
+"changeEmailSubtitle": "Бүртгэлтэй холбоотой имэйлийг шинэчилнэ үү.",
+"changePasswordTitle": "Нууц үг солих",
+"changePasswordSubtitle": "Аюулгүй солих холбоос илгээнэ.",
+
+"deleteAccountSubtitle": "Vaultara бүртгэлийг бүрмөсөн устгах.",
+
+"biometricAuthReason": "Vaultara бүртгэлд нэвтрэхийн тулд баталгаажуулна уу.",
+
+"verifyEmailTitle": "Имэйл баталгаажуулах",
+"verifyEmailBody": "Баталгаажуулах имэйл илгээлээ. Нээгээд баталгаажуулсны дараа энд эргэн ирнэ үү.",
+"verifyEmailConfirmedButton": "Имэйлээ баталгаажуулсан",
+"verifyEmailResendButton": "Баталгаажуулах имэйлийг дахин илгээх",
+"verifyEmailSending": "Илгээж байна...",
+
+"navHome": "Нүүр",
+"navCategories": "Ангилал",
+"navInsights": "Шинжилгээ",
+"navCalendar": "Хуанли",
+
+"tutorialCancel": "Цуцлах",
+"tutorialNext": "Дараах",
+"tutorialEnd": "Сургалтыг дуусгах",
+
+"softDeleteCategory": "Ангилал",
+"softDeleteGroup": "Бүлэг",
+"softDeleteRecord": "Бичлэг",
+
+"softDeleteTitle": "{type}-ийг Саяхан устгасан руу зөөх",
+"softDeleteMessage": "{type} \"{name}\" Саяхан устгасан руу шилжинэ.\n\nТа 30 хоногийн дотор сэргээж болно. Үүний дараа бүрмөсөн устна.",
+"softDeleteMove": "Зөөх",
+"@recordsExpiring": {
+  "description": "Тодорхой хоногийн дотор дуусах бичлэгийн тоог харуулна",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Бүлгийн статистик мэдээлэл",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Бүлгийн тоо", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Бичлэгийн тоо", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": {
+  "description": "Нууц үг сэргээх имэйл илгээгдэхийг мэдээлнэ",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "Түр устгалын баталгаажуулалтын гарчиг",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "Түр устгалын тайлбар",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "Саяхан устгасан",
+"categories": "Ангиллууд",
+"groups": "Бүлгүүд",
+"records": "Бичлэгүүд",
+"restore": "Сэргээх",
+"deletePermanently": "Бүрмөсөн устгах",
+
+"recentlyDeletedBanner": "Устгасан {type} зүйлс 30 хоногийн дараа бүрмөсөн устгагдана.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Устгасан {type} хайх",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Одоогоор устгасан {type} алга",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Ангиллыг товшиж бүлгүүдийг харж, бичлэгүүдийг удирдана уу.",
+"groupsHint": "Бүлгүүд энэ ангиллын бичлэгүүдийг зохион байгуулна. Бүлгийг товшиж удирдана уу.",
+"notLoggedIn": "Нэвтрээгүй байна",
+
+"recordsInsideGroupHint": "Эдгээр нь энэ бүлгийн бичлэгүүд.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" саяхан устгасан руу шилжлээ",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" амжилттай устгагдлаа",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Жолооны үнэмлэх"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" амжилттай шинэчлэгдлээ",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Виз"} } },
+
+"snackAddedSuccessfully": "\"{name}\" амжилттай нэмэгдлээ",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Даатгал"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" амжилттай сэргээгдлээ",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackFreeLimitReached": "Үнэгүй хязгаар хүрлээ ({current}/{limit}). Илүү нэмэхийн тулд шинэчилнэ үү.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Бүх бичлэгийг хайх",
+"globalSearchHint": "Бичлэгийн нэр, ангилал эсвэл бүлгийг оруулна уу",
+"globalSearchNoMatches": "Таны хайлтад тохирох бичлэг олдсонгүй.",
+"snackNoRecordsToSearch": "Хайх бичлэг алга. Хэдэн бичлэг нэмбэл Vaultara автоматаар индексжүүлнэ.",
+
+"recoveryCentreTitle": "Сэргээх төв",
+"recoveryCentreSubtitle": "Устгасан бичлэгүүдийг сэргээх эсвэл бүрмөсөн устгах.",
+
+"plan_premium": "Премиум",
+"plan_free": "Үнэгүй",
+
+"profile_app_settings_title": "Аппын тохиргоо",
+"profile_privacy_security_title": "Нууцлал ба аюулгүй байдал",
+"profile_biometric_on": "Биометр түгжээ энэ төхөөрөмж дээр идэвхтэй байна.",
+"profile_biometric_off": "Биометр түгжээ идэвхгүй байна.",
+"profile_biometric_enable_reason": "Биометр түгжээг идэвхжүүлэхийн тулд өөрийгөө баталгаажуулна уу.",
+"profile_biometric_disable_reason": "Биометр түгжээг унтраахын тулд өөрийгөө баталгаажуулна уу.",
+"profile_account_management_title": "Бүртгэлийн удирдлага",
+"profile_premium_active_title": "Premium идэвхтэй",
+"profile_premium_upgrade_title": "Premium руу шинэчлэх",
+"profile_premium_active_subtitle": "Дэвшилтэт сануулгууд нээгдсэн.",
+"profile_premium_upgrade_subtitle": "Дэвшилтэт сануулга болон хязгааргүй зохион байгуулалтыг нээнэ үү.",
+"profile_manage_cancel_hint": "Google Play-ээр дамжуулан хүссэн үедээ удирдах эсвэл цуцлах боломжтой.",
+"profile_manage_subscription_button": "Захиалгыг удирдах",
+"plansTitle": "Төлөвлөгөө сонгох",
+"plansTrialBanner": "7 хоногийн үнэгүй туршилтаар эхлээрэй.\nХэзээ ч цуцалж болно.",
+"plansLoading": "Ачаалж байна…",
+"plansStartFreeTrial": "Үнэгүй туршилт эхлүүлэх",
+"plansNoChargeTodayFooter": "7 хоног үнэгүй · Өнөөдөр төлбөргүй",
+
+"planFreeTitle": "Үнэгүй",
+"planFreeSubtitle": "Эхлэхэд",
+"planPremiumMonthlyTitle": "Premium сарын",
+"planPremiumYearlyTitle": "Premium жилийн",
+"planPerMonth": "сард",
+"planPerYear": "жилд",
+
+"planBadgeCurrent": "Одоогийн төлөвлөгөө",
+"planBadgePopular": "Алдартай",
+"planBadgeBestValue": "Хамгийн ашигтай",
+
+"planYouAreOnThisPlan": "Та аль хэдийн энэ төлөвлөгөөнд байна.",
+
+"planFeatureUpToRecords": "{count} хүртэлх бичлэг",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Тохируулгатай ангиллууд ({count} хүртэл)",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Урьдчилан тохируулсан дэд ангиллууд",
+"planFeatureCloudStorage": "Үүлэн хадгалалт",
+"planFeatureSmartExpiryInsights": "Ухаалаг хугацаа дуусах сануулга",
+"planFeatureCoverageBalance": "Хамрах хүрээний тэнцвэр",
+"planFeatureRecordStabilityTracking": "Бичлэгийн тогтвортой байдлын хяналт",
+
+"planFeatureUnlimitedRecords": "Хязгааргүй бичлэгүүд",
+"planFeatureUnlimitedCategories": "Хязгааргүй ангиллууд",
+"planFeatureCustomSubcategories": "Тохируулгатай дэд ангиллууд",
+"planFeatureMultipleRemindersPerRecord": "Олон сануулга",
+"planFeatureAdvancedReminderTiming": "Дэвшилтэт цаг тохируулах",
+"planFeatureAutomaticFollowUps": "Автомат сануулгууд",
+
+"planFeatureEverythingInMonthly": "Сарын төлөвлөгөөн дэх бүх зүйл",
+"planFeatureSavePercentComparedToMonthly": "Сартай харьцуулахад {percent}% хэмнэнэ",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Урт хугацааны хамгийн ашигтай сонголт",
+
+"editorReminderLabel": "Сануулга",
+"editorReminderSelectOptional": "Сануулга сонгох (сонголтоор)",
+"editorReminderOnExpiry": "Хугацаа дуусах өдөр",
+"editorReminderDaysBefore": "Хугацаанаас {days} хоногийн өмнө",
+"editorFreeItemsCount": "Үнэгүй зүйлс: {used}/{limit}",
+"editorExpiryPastWarning": "Хугацаа аль хэдийн дууссан байна.",
+"editorExpiryTodayWarning": "Энэ бичлэг өнөөдөр дуусна.",
+"editorErrorExpiryPast": "Хугацаа өнгөрсөн өдөр байж болохгүй.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Өнөөдрийн тойм",
+"tutorialBannerTitle": "Товч танилцуулга",
+"tutorialBannerBody": "Нэг минутын дотор хаанаас хайх, хэрхэн бичлэг нэмэх, тойм юу гэсэн утгатайг сурна.",
+"tutorialBannerStart": "Танилцуулга эхлүүлэх",
+"tutorialBannerDismiss": "Одоо биш",
+"authErrorUserDisabled": "Энэ бүртгэл идэвхгүй болсон байна.",
+"authErrorNetwork": "Сүлжээний алдаа. Интернэтээ шалгаад дахин оролдоно уу.",
+"authErrorTooManyRequests": "Хэт олон оролдлого. Дараа дахин оролдоно уу.",
+"authErrorSignInFailed": "Нэвтрэхэд амжилтгүй боллоо. Дахин оролдоно уу.",
+"ok": "За",
+"snackPremiumEnabled": "Premium идэвхжсэн",
+"snackPremiumRestored": "Premium сэргээгдсэн",
+"passwordNeedLower": "Жижиг үсэг агуулсан байх ёстой",
+"passwordNeedUpper": "Том үсэг агуулсан байх ёстой",
+"passwordNeedNumber": "Тоо агуулсан байх ёстой",
+"passwordNeedSymbol": "Тэмдэгт агуулсан байх ёстой",
+"editorFreeItemsCount": "Үнэгүй зүйлс: {used}/{limit}",
+"editorExpiryPastWarning": "Хугацаа аль хэдийн дууссан байна.",
+"editorExpiryTodayWarning": "Энэ бичлэг өнөөдөр дуусна.",
+"editorErrorExpiryPast": "Хугацаа өнгөрсөн өдөр байж болохгүй.",
+"todayInsightsTitle": "Өнөөдрийн тойм",
+"tutorialBannerTitle": "Товч танилцуулга",
+"tutorialBannerBody": "Нэг минутын дотор хаанаас хайх, хэрхэн бичлэг нэмэх, тойм юу гэсэн утгатайг сурна.",
+"tutorialBannerStart": "Заавар эхлүүлэх",
+"tutorialBannerDismiss": "Одоо биш",
+"authErrorUserDisabled": "Энэ бүртгэл идэвхгүй байна.",
+"authErrorNetwork": "Сүлжээний алдаа. Интернэтээ шалгаад дахин оролдоно уу.",
+"authErrorTooManyRequests": "Хэт олон оролдлого. Дараа дахин оролдоно уу.",
+"authErrorSignInFailed": "Нэвтрэх амжилтгүй боллоо. Дахин оролдоно уу.",
+"ok": "За",
+"tutorialHomeSearch": "Хянаж буй бичлэгээ хурдан олохын тулд хайлтыг ашиглана уу.",
+"tutorialHomeFab": "Энд анхны бичлэгээ нэмнэ үү.\nАнгиллыг сонгож, тэмдэглэл нэмээд дуусах огноо сонгоно уу.",
+"tutorialHomeSummary": "Бичлэг нэмэгдэх тусам энэ хэсэг ойртож буй хугацааг харуулна.",
+"tutorialHomeInsight": "Энэ ухаалаг тойм нь хэв маяг болон ойртож буй хугацааг харуулна.",
+"tutorialHomeCoverage": "Хамрах хүрээний тэнцвэр нь бичлэгүүдийн тархалтыг харуулна.",
+"tutorialHomeStability": "Тогтвортой байдал нь бичлэгийн найдвартай байдлыг илэрхийлнэ.",
+"profile_account_management_subtitle": "Имэйл, нууц үг солих эсвэл бүртгэл устгах.",
+"confirmIdentityTitle": "Таних тэмдгийг баталгаажуулах",
+"confirm": "Баталгаажуулах",
+"profile_sign_out_title": "Гарах",
+"profile_sign_out_subtitle": "Энэ төхөөрөмж дээр Vaultara-с гарах",
+"profile_sign_out_confirm_title": "Гарах уу?",
+"profile_sign_out_confirm_body": "Бүртгэлдээ нэвтрэхийн тулд дахин нэвтрэх шаардлагатай.",
+"profile_sign_out_action": "Гарах",
+"todayInsightsAudioHint": "Аудио илүү таалагдаж байна уу? Чанга яригчийн дүрсийг ашигла.",
+"category2Label": "Ангилал",
+"enable2BiometricsBody": "Vaultara бүртгэлээ хамгаалахын тулд хурууны хээ танилтыг ашигла.",
+"snackNotificationsDisabled": "Мэдэгдлүүд идэвхгүй байна. Сануулга авахын тулд асаана уу.",
+"openSettings": "Тохиргоо нээх",
+
+"reminderOnExpiryTitle": "Өнөөдөр дуусна",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Сайн уу {firstName}, \"{itemName}\" өнөөдөр дуусна.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Үнэгүй ангиллууд: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Үнэгүй хязгаараас хэдэн үнэгүй ангилал ашигласныг харуулна.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Тэмдэглэл нэмэх (заавал биш)",
+"apply": "Хэрэглэх",
+"smartInsightExpiresTodayHeading": "Өнөөдөр Дуусна",
+"smartInsightExpiresTodaySingleBody": "{name} өнөөдөр дуусна. Шинэчилсэн байлгахын тулд одоо арга хэмжээ ав.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} болон бусад 1 баримт өнөөдөр дуусна.} other{{names} болон бусад {extra} баримт өнөөдөр дуусна.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Таны Анхаарлыг Шаардаж Байна",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} 1 өдрийн дотор дуусах бөгөөд сануулга тохируулагдаагүй байна. Дэлгэрэнгүй мэдээлэл зөв хэвээр байгаа эсэхийг баталгаажуул.} other{{name} {days} өдрийн дотор дуусах бөгөөд сануулга тохируулагдаагүй байна. Дэлгэрэнгүй мэдээлэл зөв хэвээр байгаа эсэхийг баталгаажуул.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Олон Шинэчлэлт Ойролцоо",
+"smartInsightRenewalTwinBodyTwo": "{a} ба {b} нь бие биенээсээ гурван долоо хоногийн дотор дуусна. Урьдчилан төлөвлө.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, болон {c} бүгд гурван долоо хоногийн дотор дуусна. Урьдчилан төлөвлө.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, болон бусад 1 баримт гурван долоо хоногийн дотор дуусна. Урьдчилан төлөвлө.} other{{a}, {b}, болон бусад {extra} баримт гурван долоо хоногийн дотор дуусна. Урьдчилан төлөвлө.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Удахгүй Болох Бүлэг",
+"smartInsightClusterBody": "{count, plural, =1{{category}-д 1 баримт дараагийн хоёр сарын дотор дуусна. Хамтад нь шийдвэрлэхийг бод.} other{{category}-д {count} баримт дараагийн хоёр сарын дотор дуусна. Хамтад нь шийдвэрлэхийг бод.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Тайван Үе Урагшаа",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Дараагийн 1 өдрийн дотор юу ч дуусахгүй. Таны дараагийн шинэчлэлт {firstDate}-д байна.} other{Дараагийн {days} өдрийн дотор юу ч дуусахгүй. Таны дараагийн шинэчлэлт {firstDate}-д байна.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Бүгд Шинэчлэгдсэн",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 удахгүй болох дуусгавар сануулгаар хамгаалагдсан. Өөр юу ч таны анхаарлыг шаардахгүй.} other{{count} удахгүй болох дуусгавар сануулгаар хамгаалагдсан. Өөр юу ч таны анхаарлыг шаардахгүй.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Бүгд шинэчлэгдсэн. Одоогоор юу ч таны анхаарлыг шаардахгүй.",
+"smartInsightNoRecordsHeading": "Эхний Бичлэгээ Нэмэх",
+"smartInsightNoRecordsBody": "Баримт бичгүүдээ хянаж эхэл, Vaultara энд ухаалаг ойлголтуудыг харуулна.",
+"expiryTimelineTitle": "Дуусах хугацааны шугам",
+"expiryTimelineSubtitle": "Тухайн сард дуусах бичлэгүүдийг харахын тулд сар дээр товш",
+"expiryTimelineDetailCount": "{count, plural, =1{1 бичлэг} other{{count} бичлэг}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Удахгүй болох",
+"summaryUpcomingCaption": "30 хоногийн дотор",
+"summaryUrgentTitle": "Яаралтай",
+"summaryUrgentCaption": "7 хоногийн дотор"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
