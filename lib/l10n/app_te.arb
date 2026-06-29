@@ -1,0 +1,887 @@
+{
+  "@@locale": "te",
+  "expiryCalendarTitle": "గడువు క్యాలెండర్",
+
+  "calendarIntro": "మీ గడువులను ఎలా చూడాలనుకుంటున్నారో ఎంచుకోండి:\n\n• ఈ రోజు నుంచి ఎన్ని రోజులు ముందుకు చూడాలనుకుంటున్నారో టైప్ చేయండి.\n• లేదా క్యాలెండర్‌లో ఖచ్చితమైన తేదీని ఎంచుకోండి.\n\nVaultara ఆ రోజున గడువు ముగిసే అంశాలను చూపిస్తుంది.",
+
+  "daysFromTodayLabel": "ఈ రోజు నుండి రోజులు",
+  "daysFromTodayHint": "ఉదాహరణకు 0, 1, 7, 30",
+
+  "apply": "వర్తించు",
+  "pickDateOnCalendar": "క్యాలెండర్‌లో తేదీని ఎంచుకోండి",
+
+  "today": "ఈ రోజు",
+  "tomorrow": "రేపు",
+  "in7Days": "7 రోజుల్లో",
+  "in30Days": "30 రోజుల్లో",
+
+  "inDays": "{days} రోజుల్లో",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "రోజుల సంఖ్యను నమోదు చేయండి.",
+  "invalidDaysError": "చెల్లుబాటు అయ్యే రోజుల సంఖ్యను నమోదు చేయండి (0 లేదా అంతకంటే ఎక్కువ).",
+
+  "showingItemsRelative": "{time} గడువు ముగిసే అంశాలను చూపిస్తోంది",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "ఎంచుకున్న తేదీన గడువు ముగిసే అంశాలను చూపిస్తోంది",
+  "noItemsOnDate": "ఆ రోజున గడువు ముగిసే అంశాలు లేవు.",
+
+  "editorAddTitle": "అంశాన్ని జోడించండి",
+  "editorEditTitle": "అంశాన్ని సవరించండి",
+
+  "editorCategory": "వర్గం",
+  "editorCategoryHint": "వర్గాన్ని ఎంచుకోండి",
+
+  "editorGroup": "సమూహం",
+  "editorGroupHint": "సమూహాన్ని ఎంచుకోండి",
+
+  "editorItemName": "అంశం పేరు",
+  "editorItemNameHint": "అంశం పేరును నమోదు చేయండి",
+
+  "editorExpiryDate": "గడువు తేదీ",
+  "editorExpiryDateHint": "గడువు తేదీని ఎంచుకోండి",
+
+  "editorErrorCategory": "వర్గాన్ని ఎంచుకోండి",
+  "editorErrorGroup": "సమూహాన్ని ఎంచుకోండి",
+  "editorErrorName": "అంశం పేరు తప్పనిసరి",
+  "editorErrorExpiry": "గడువు తేదీని ఎంచుకోండి",
+  "editorErrorExpiryPast": "గడువు తేదీ ఈ రోజు లేదా భవిష్య తేదీ కావాలి",
+  "cancel": "రద్దు",
+"save": "సేవ్",
+
+"addCategoryTitle": "వర్గాన్ని జోడించండి",
+"unlimitedCategories": "అపరిమిత వర్గాలు (Premium)",
+
+"categoryUsage": "{current} / {limit} వర్గాలు ఉపయోగించబడ్డాయి",
+
+"categoryNameLabel": "వర్గం",
+"categoryNameHint": "వర్గాన్ని నమోదు చేయండి",
+
+"categoryLimitReached": "Basic ప్లాన్‌లో {limit} వర్గాల పరిమితిని చేరుకున్నారు. Premium కి అప్‌గ్రేడ్ చేయండి.",
+
+"categoryLimitInfo": "Basic ప్లాన్‌లో గరిష్టంగా {limit} వర్గాలు సృష్టించవచ్చు.",
+
+"categoryErrorEmpty": "వర్గం తప్పనిసరి",
+"categoryErrorTooShort": "వర్గం చాలా చిన్నది",
+"categoryErrorTooLong": "వర్గం చాలా పొడవుగా ఉంది",
+"categoryErrorSymbols": "కేవలం గుర్తులతో ఉండకూడదు",
+"categoryErrorNumbers": "కేవలం సంఖ్యలతో ఉండకూడదు",
+
+"upgradeRequired": "అప్‌గ్రేడ్ అవసరం",
+"viewPremiumBenefits": "Premium ప్రయోజనాలు చూడండి",
+"createCategory": "సృష్టించు",
+
+"addGroupTitle": "గ్రూప్ జోడించండి",
+"groupNameLabel": "గ్రూప్",
+"groupNameHint": "గ్రూప్ నమోదు చేయండి",
+
+"groupErrorEmpty": "గ్రూప్ తప్పనిసరి",
+"groupErrorTooShort": "గ్రూప్ చాలా చిన్నది",
+"groupErrorTooLong": "చాలా పొడవుగా ఉంది",
+"groupErrorSymbols": "గుర్తులు కలిగి ఉండకూడదు",
+"groupErrorNumbers": "సంఖ్యలు కలిగి ఉండకూడదు",
+"createGroup": "సృష్టించు",
+
+"firstNameLabel": "మొదటి పేరు",
+"firstNameHint": "మొదటి పేరు నమోదు చేయండి",
+
+"lastNameLabel": "చివరి పేరు",
+"lastNameHint": "చివరి పేరు నమోదు చేయండి",
+
+"emailLabel": "ఈమెయిల్ చిరునామా",
+"loginPasswordHint": "మీ పాస్‌వర్డ్ నమోదు చేయండి",
+"registerPasswordHint": "పాస్‌వర్డ్ నమోదు చేయండి",
+"passwordHelper": "కనీసం 8 అక్షరాలు, భిన్నమైన రకాలతో",
+
+"passwordTooShort": "చాలా చిన్నది",
+"passwordTooWeak": "చాలా బలహీనంగా ఉంది",
+"passwordMedium": "మధ్యస్థం",
+"passwordStrong": "బలమైనది",
+
+"errorFirstName": "మొదటి పేరు తప్పనిసరి",
+"errorLastName": "చివరి పేరు తప్పనిసరి",
+"errorEmailInvalid": "సరైన ఈమెయిల్ చిరునామాను నమోదు చేయండి",
+"errorEmailInUse": "ఈ ఈమెయిల్ చిరునామా ఇప్పటికే\nVaultara ఖాతాతో అనుసంధానించబడింది",
+"errorPasswordLength": "పాస్‌వర్డ్ కనీసం ఎనిమిది అక్షరాలు ఉండాలి",
+"errorPasswordWeak": "మరింత బలమైన పాస్‌వర్డ్ నమోదు చేయండి",
+"errorGeneric": "నమోదు విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి",
+
+"createAccount": "ఖాతా సృష్టించండి",
+"appName": "Vaultara",
+"authTagline": "పాస్‌పోర్టులు, లైసెన్సులు, కార్డులు మరియు ఇతర ముఖ్యమైన అవసరాల కోసం మీ వ్యక్తిగత కేంద్రం",
+"tabSignIn": "సైన్ ఇన్",
+"tabCreateAccount": "ఖాతా సృష్టించండి",
+"signInFooterText": "మీ వ్యక్తిగత Vaultara స్థలాన్ని యాక్సెస్ చేయడానికి సైన్ ఇన్ చేయండి మరియు అన్ని రీన్యూల్స్‌ను నియంత్రణలో ఉంచండి",
+"createAccountFooterText": "మీ ముఖ్యమైన రిమైండర్లను బ్యాక్ అప్ చేసుకోవడానికి Vaultara ఖాతాను సృష్టించండి మరియు అవసరమైనప్పుడు వాటిని పొందండి",
+
+"emailRequired": "మీ ఈమెయిల్ చిరునామా తప్పనిసరి",
+"passwordRequired": "మీ పాస్‌వర్డ్ తప్పనిసరి",
+"emailNotFound": "తప్పు ఈమెయిల్. ఈ ఈమెయిల్‌తో\nVaultara ఖాతా లేదు",
+"incorrectPassword": "తప్పు పాస్‌వర్డ్",
+
+"emailLabel": "ఈమెయిల్ చిరునామా",
+"emailHint": "మీ ఈమెయిల్ నమోదు చేయండి",
+"passwordLabel": "పాస్‌వర్డ్",
+"signIn": "సైన్ ఇన్",
+
+"categoryPersonalIdentification": "వ్యక్తిగత గుర్తింపు",
+"categoryDrivingAndVehicles": "డ్రైవింగ్ మరియు వాహనాలు",
+"categoryTravelAndImmigration": "ప్రయాణం మరియు ఇమ్మిగ్రేషన్",
+"categoryBankingAndCards": "బ్యాంకింగ్ మరియు కార్డులు",
+"categoryInsuranceAndCover": "బీమా మరియు కవరేజ్",
+"categoryHealthAndMedical": "ఆరోగ్యం మరియు వైద్యము",
+"categoryWorkAndProfessional": "పని మరియు వృత్తిపరమైన",
+"categoryPropertyAndHousing": "ఆస్తి మరియు నివాసం",
+"categoryHouseholdAndUtilities": "గృహ మరియు యుటిలిటీలు",
+
+"subcategoryPassports": "పాస్‌పోర్టులు",
+"subcategoryIdCards": "గుర్తింపు కార్డులు",
+"subcategoryResidencePermits": "నివాస అనుమతులు",
+
+"subcategoryDrivingLicences": "డ్రైవింగ్ లైసెన్సులు",
+"subcategoryVehicleRegistrations": "వాహన నమోదు పత్రాలు",
+"subcategoryRoadworthyCertificates": "రోడ్వర్థీ సర్టిఫికెట్లు",
+"subcategoryVehicleInspectionCertificates": "వాహన తనిఖీ సర్టిఫికెట్లు",
+
+"subcategoryVisas": "వీసాలు",
+"subcategoryStudyPermits": "విద్య అనుమతులు",
+"subcategoryWorkPermits": "పని అనుమతులు",
+"subcategoryTravelInsuranceDocuments": "ప్రయాణ బీమా పత్రాలు",
+
+"subcategoryDebitAndCreditCards": "డెబిట్ మరియు క్రెడిట్ కార్డులు",
+"subcategoryStoreCards": "స్టోర్ కార్డులు",
+"subcategoryFuelCards": "ఇంధన కార్డులు",
+"subcategoryVehicleInsurances": "వాహన బీమాలు",
+"subcategoryPropertyInsurances": "ఆస్తి బీమాలు",
+"subcategoryLifeInsurances": "జీవిత బీమాలు",
+"subcategoryHealthInsurances": "ఆరోగ్య బీమాలు",
+"subcategoryTravelInsurances": "ప్రయాణ బీమాలు",
+
+"subcategoryMedicalPrescriptions": "వైద్య ప్రిస్క్రిప్షన్లు",
+"subcategoryOpticalPrescriptions": "ఆప్టికల్ ప్రిస్క్రిప్షన్లు",
+"subcategoryMedicalCertificates": "వైద్య సర్టిఫికెట్లు",
+
+"subcategoryProfessionalLicences": "వృత్తిపర లైసెన్సులు",
+"subcategoryProfessionalRegistrations": "వృత్తిపర నమోదు పత్రాలు",
+"subcategoryIndustryRegistrations": "పరిశ్రమ నమోదు పత్రాలు",
+"subcategoryWorkAccessCards": "పని యాక్సెస్ కార్డులు",
+
+"subcategoryLeaseAgreements": "లీజ్ ఒప్పందాలు",
+"subcategoryAccessCardsAndTags": "యాక్సెస్ కార్డులు మరియు ట్యాగులు",
+"subcategoryParkingPermits": "పార్కింగ్ అనుమతులు",
+"subcategorySecurityAccessPermits": "భద్రతా యాక్సెస్ అనుమతులు",
+
+"subcategoryElectricityAccounts": "విద్యుత్ ఖాతాలు",
+"subcategoryWaterAccounts": "నీటి ఖాతాలు",
+"subcategoryInternetContracts": "ఇంటర్నెట్ ఒప్పందాలు",
+"subcategorySecurityServiceContracts": "భద్రతా సేవల ఒప్పందాలు",
+
+"searchCategories": "వర్గాలను శోధించండి",
+"filterAll": "అన్నీ",
+"filterPreset": "ముందుగా సెట్ చేసినవి",
+"filterCustom": "అనుకూలమైనవి",
+"addCategoryTitle": "వర్గం జోడించండి",
+"customLabel": "అనుకూలం",
+"subcategoriesLabel": "ఉపవర్గాలు",
+"itemsLabel": "అంశాలు",
+
+"itemsExpiring": "{days} రోజుల్లో {count} అంశాలు గడువు ముగుస్తాయి",
+
+"pinnedEssentials": "పిన్ చేసిన అవసరాలు",
+"pinnedHint": "మీరు ఎక్కువగా ఉపయోగించే వర్గాలను పిన్ చేయండి, అవి జాబితా పైభాగంలో ఉంటాయి.",
+"noCategoriesFound": "వర్గాలు కనబడలేదు",
+
+"searchGroups": "గ్రూపులను శోధించండి",
+"addGroupTitle": "గ్రూప్ జోడించండి",
+
+"basicPlanGroupInfo": "మీరు Basic ప్లాన్‌లో ఉన్నారు.\nఈ వర్గంలోని ముందుగా సెట్ చేసిన గ్రూపులను చూడవచ్చు.\nమీ స్వంత గ్రూపులు సృష్టించడానికి Premiumకి అప్‌గ్రేడ్ చేయండి.",
+
+"groupDeleted": "గ్రూప్ తొలగించబడింది",
+"undo": "రద్దు చేయి",
+
+"groupTapHint": "ఈ గ్రూప్‌లో అంశాలను జోడించడానికి మరియు ట్రాక్ చేయడానికి టాప్ చేయండి.",
+"itemsInGroup": "ఈ గ్రూప్‌లోని అంశాలు",
+"itemsInGroupHint": "ప్రతి ముఖ్యమైన అంశాన్ని దాని గడువు తేదితో ట్రాక్ చేయండి.",
+"searchItems": "అంశాలను శోధించండి",
+"filterExpiringWithin": "{days} రోజుల్లో గడువు ముగియనున్నవి",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "గడువు ముగిసినవి",
+"addItem": "అంశం జోడించండి",
+"noItemsYet": "ఇప్పటికీ అంశాలు లేవు.",
+
+"statusExpired": "గడువు ముగిసింది",
+"statusExpiresToday": "ఈరోజు గడువు ముగుస్తుంది",
+"statusExpiresInOneDay": "1 రోజులో గడువు ముగుస్తుంది",
+"statusExpiresInDays": "{days} రోజుల్లో గడువు ముగుస్తుంది",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "చెల్లుబాటు అయ్యేది",
+
+"deleteCategoryTitle": "వర్గాన్ని తొలగించండి",
+"deleteCategoryMessage": "\"{name}\" వర్గాన్ని తొలగించాలనుకుంటున్నారా?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "గ్రూప్ తొలగించండి",
+"deleteGroupMessage": "\"{name}\" గ్రూప్‌ను తొలగించాలనుకుంటున్నారా?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "అంశాన్ని తొలగించండి",
+"deleteItemMessage": "\"{name}\" ను తొలగించాలనుకుంటున్నారా?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "రద్దు",
+"delete": "తొలగించండి",
+
+"homeWelcomeTitle": "స్వాగతం",
+
+"homeWelcomeFirstTitle": "స్వాగతం, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "మళ్లీ స్వాగతం, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "అన్నీ",
+"homeWelcomeSubtitleGeneric": "Vaultara ముఖ్యమైన గడువు తేదీలను గమనించడంలో మీకు సహాయపడుతుంది, ఏదీ నిశ్శబ్దంగా గడువు తీరకుండా.",
+
+"homeWelcomeSubtitleFirst": "మీరు ఇక్కడ ఉండటం చాలా ఆనందంగా ఉంది. Vaultara ముఖ్యమైన తేదీలు మరియు రికార్డులను ఒకే భద్రమైన చోట ఉంచి మీను సవ్యంగా ఉంచుతుంది.",
+
+"homeWelcomeSubtitleBack": "మళ్లీ మిమ్మల్ని చూడటం సంతోషంగా ఉంది. Vaultara మీ ముఖ్యమైన తేదీలు మరియు రికార్డులను సమీక్షించేందుకు ఎప్పుడూ సిద్ధంగా ఉంటుంది.",
+
+"insightEmptyTitle": "ఇప్పటికీ ఏదీ జోడించలేదు",
+"insightEmptyBody": "మీరు ముఖ్యమైన తేదీలను ట్రాక్ చేయడం ప్రారంభించిన వెంటనే, Vaultara గడువుల ముందు ఉండేలా సహాయపడుతుంది.",
+
+"insightExpiresTodayTitle": "\"{name}\" ఈరోజు గడువు తీరుతుంది",
+"insightExpiresTodayBody": "ఇప్పుడే పరిశీలించడం అన్ని వివరాలను సరైనవిగా ఉంచుతుంది.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" రేపు గడువు తీరుతుంది",
+"insightExpiresTomorrowBody": "ఈరోజే పరిశీలిస్తే తర్వాత సమయం ఆదా అవుతుంది.",
+
+"insightExpiresSoonTitle": "\"{name}\" {date} న గడువు తీరుతుంది",
+"insightExpiresSoonBody": "ముందుగానే చూసుకుంటే విషయం తేలికగా ఉంటుంది.",
+
+"insightNextExpiryTitle": "మీ తదుపరి గడువు \"{name}\" — {date}",
+"insightNextExpiryBody": "ఇప్పటికి చర్య అవసరం లేదు, కానీ గుర్తుంచుకోవడం మంచిది.",
+
+"insightClusteredTitle": "{month} లో అనేక అంశాలు గడువు తీరుతాయి",
+"insightClusteredBody": "వాటిని కలిపి సమీక్షిస్తే సమయం ఆదా అవుతుంది.",
+
+"insightTopCategoryTitle": "మీ ఎక్కువ అంశాలు {category} లో ఉన్నాయి",
+"insightTopCategoryBody": "ఈ విభాగాన్ని సమీక్షిస్తే ఎక్కువ ప్రయోజనం ఉంటుంది.",
+
+"insightStableTitle": "అన్ని స్థిరంగా ఉన్నాయి",
+"insightStableBody": "ఇప్పటికి శ్రద్ధ అవసరమైన గడువులు లేవు.",
+
+"summaryAllTitle": "అన్ని అంశాలు",
+"summaryAllCaption": "Vaultara లో ట్రాక్ చేయబడినవి",
+"summarySoonTitle": "త్వరలో గడువు",
+"summarySoonCaption": "30 రోజుల్లో",
+"summaryWeekTitle": "ఈ వారం",
+"summaryWeekCaption": "7 రోజుల్లో గడువు",
+"summaryExpiredTitle": "గడువు ముగిసినవి",
+"summaryExpiredCaption": "గత గడువు తేదీ",
+
+"stabilityStableTitle": "అన్ని స్థిరంగా ఉన్నాయి",
+"stabilityStableBody": "మీ రికార్డులు ఎలాంటి తక్షణ ప్రమాదాలను చూపడం లేదు.",
+
+"stabilityDecliningTitle": "స్థిరత్వం తగ్గుతోంది",
+"stabilityDecliningBody": "కొన్ని అంశాలు గడువు తీరాయి, మరికొన్ని త్వరలో తీరనున్నాయి.",
+
+"stabilityWeakenedTitle": "స్థిరత్వం బలహీనమైంది",
+"stabilityWeakenedBody": "గడువు ముగిసిన రికార్డులు మొత్తం విశ్వసనీయతను తగ్గిస్తున్నాయి.",
+
+"stabilityPressureTitle": "ఒత్తిడి పెరుగుతోంది",
+"stabilityPressureBody": "స్థిరత్వాన్ని నిలుపుకోవడానికి కొన్ని రికార్డులకు త్వరలో శ్రద్ధ అవసరం.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "గమనికలు",
+"notesHint": "గమనికలు నమోదు చేయండి",
+"editorReminderTitle": "రిమైండర్",
+"editorReminderNone": "రిమైండర్ లేదు",
+"editorReminderOnExpiry": "గడువు రోజున",
+"editorReminder7Days": "7 రోజుల ముందు",
+"editorReminder30Days": "30 రోజుల ముందు",
+"editorReminderCustom": "అనుకూలం",
+"daysBeforeExpiry": "గడువుకు ముందు రోజులు",
+
+"reminderStage0Title": "గడువు రిమైండర్",
+"reminderStage0Body": "{firstName}, మీ {itemName} {days} రోజుల్లో ముగుస్తుంది.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "రిమైండర్ కొనసాగింపు",
+"reminderStage1Body": "{firstName}, {itemName} ఇంకా నవీకరించబడలేదు.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "గడువు దగ్గరపడుతోంది",
+"reminderStage2Body": "{itemName} గడువు దగ్గరపడుతోంది.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "చివరి రిమైండర్",
+"reminderFinalBody": "{firstName}, దయచేసి {itemName} ని ఇప్పుడు నవీకరించండి.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "కవరేజ్ సమతుల్యత",
+"coverageAllRepresented": "మీ రికార్డులు అన్ని వర్గాలను కలిగి ఉన్నాయి.",
+"coverageMissingNamed": "{count} వర్గాల్లో రికార్డులు లేవు: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "మీరు {count} వర్గాల్లో రికార్డులు జోడించలేదు, అందులో {names} మరియు ఇంకా {remaining} ఉన్నాయి.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "పాస్‌వర్డ్ ఉపయోగించండి",
+"signInWithBiometrics": "బయోమెట్రిక్స్‌తో సైన్ ఇన్ చేయండి",
+"enableBiometricsTitle": "బయోమెట్రిక్ భద్రతను ప్రారంభించండి",
+"enableBiometricsBody": "Vaultara ను రక్షించడానికి వేలిముద్ర లేదా ముఖ గుర్తింపును ఉపయోగించండి.",
+"enableBiometricsReason": "Vaultara కోసం బయోమెట్రిక్ అన్‌లాక్‌ను ప్రారంభించండి.",
+"notNow": "ఇప్పుడు కాదు",
+"useBiometrics": "బయోమెట్రిక్స్ ఉపయోగించండి",
+
+"recordsCalendarIntro": "గడువు తేదీలను ఎలా చూడాలనుకుంటున్నారో ఎంచుకోండి:\n\n• ఈరోజు నుండి ఎన్ని రోజులు ముందుకు చూడాలనుకుంటున్నారో నమోదు చేయండి.\n• లేదా క్యాలెండర్ నుండి ఖచ్చితమైన తేదీని ఎంచుకోండి.\n\nVaultara ఆ రోజున గడువు ముగిసే రికార్డులను చూపిస్తుంది.",
+
+"showingRecordsRelative": "{time} గడువు ముగిసే రికార్డులు చూపబడుతున్నాయి",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "ఎంచుకున్న తేదీన గడువు ముగిసే రికార్డులు చూపబడుతున్నాయి",
+
+"noRecordsOnDate": "ఆ రోజున గడువు ముగిసే రికార్డులు లేవు.",
+
+"recordEditorAddTitle": "రికార్డు జోడించండి",
+"recordEditorEditTitle": "రికార్డు సవరించండి",
+
+"editorRecordName": "రికార్డు పేరు",
+"editorRecordNameHint": "రికార్డు పేరు నమోదు చేయండి",
+"recordEditorErrorName": "రికార్డు పేరు తప్పనిసరి",
+
+"recordsGroupTapHint": "ఈ గ్రూప్‌లో రికార్డులను జోడించడానికి మరియు ట్రాక్ చేయడానికి తాకండి.",
+
+"recordsInGroup": "ఈ గ్రూప్‌లో రికార్డులు",
+
+"recordsInGroupHint": "ప్రతి ముఖ్యమైన రికార్డును దాని గడువు తేదితో ట్రాక్ చేయండి.",
+
+"searchRecords": "రికార్డులను వెతకండి",
+
+"addRecord": "రికార్డు జోడించండి",
+
+"noRecordsYet": "ఇంకా రికార్డులు లేవు.",
+"deleteRecordTitle": "రికార్డు తొలగించండి",
+
+"recordsInsightClusteredTitle": "{month}లో అనేక రికార్డులు గడువు ముగుస్తున్నాయి",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "మీ రికార్డులలో ఎక్కువవి {category} కేటగిరీలో ఉన్నాయి",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "అన్ని రికార్డులు",
+
+"recordsStabilityDecliningBody": "కొన్ని రికార్డులు ఇప్పటికే గడువు ముగిశాయి, మరికొన్ని త్వరలో ముగుస్తాయి.",
+
+"recordsCoverageAllRepresented": "మీ రికార్డులు అన్ని కేటగిరీలను కలిగి ఉన్నాయి.",
+
+"recordReminderStage0Body": "{firstName}, మీ {recordName} {days} రోజుల్లో గడువు ముగుస్తుంది.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, మీ {recordName} ఇంకా నవీకరించబడలేదు.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName} యొక్క గడువు తేదీ దగ్గరపడుతోంది.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, దయచేసి {recordName} ను ఇప్పుడు నవీకరించండి.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "ఇంకా గ్రూపులు లేవు",
+
+"recordsExpiring": "{count, plural, one {1 రికార్డు {days} రోజుల్లో గడువు ముగుస్తుంది} other {{count} రికార్డులు {days} రోజుల్లో గడువు ముగుస్తాయి}}",
+
+"recordsGroupStats": "{records, plural, one {1 రికార్డు} other {{records} రికార్డులు}} • {expiring} {days} రోజుల్లో ముగుస్తాయి",
+
+"groupLabel": "{count, plural, one {{count} గ్రూప్} other {{count} గ్రూపులు}}",
+
+"recordsLabel": "{count, plural, one {{count} రికార్డు} other {{count} రికార్డులు}}",
+
+"forgotPassword": "పాస్‌వర్డ్ మర్చిపోయారా?",
+"forgotPasswordTitle": "పాస్‌వర్డ్ రీసెట్",
+"forgotPasswordBody": "మీ ఈమెయిల్ చిరునామా నమోదు చేయండి. మేము రీసెట్ లింక్ పంపుతాము.",
+"sendResetLink": "రీసెట్ లింక్ పంపండి",
+"passwordResetEmailSent": "పాస్‌వర్డ్ రీసెట్ ఈమెయిల్ పంపబడింది.",
+"verifyEmailToContinue": "సైన్ ఇన్ చేసే ముందు మీ ఈమెయిల్‌ను ధృవీకరించండి",
+
+"changeEmailTitle": "ఈమెయిల్ మార్చండి",
+"newEmailHint": "కొత్త ఈమెయిల్ నమోదు చేయండి",
+"sendVerificationEmail": "వెరిఫికేషన్ ఈమెయిల్ పంపండి",
+
+"deleteAccountTitle": "ఖాతాను తొలగించండి",
+"deleteAccountWarning": "ఈ చర్య మీ ఖాతా మరియు అన్ని డేటాను శాశ్వతంగా తొలగిస్తుంది.\nదీనిని రద్దు చేయలేరు.",
+"deleteAccountConfirm": "ఖాతాను శాశ్వతంగా తొలగించండి",
+
+"supportTitle": "సపోర్ట్",
+"supportSubtitle": "సహాయం అవసరమైతే మమ్మల్ని సంప్రదించండి.",
+"supportEmailSubject": "Vaultara సపోర్ట్ అభ్యర్థన",
+"supportEmailError": "ఈమెయిల్ యాప్ తెరవలేకపోయింది.",
+
+"passwordResetEmailFailed": "పాస్‌వర్డ్ రీసెట్ ఈమెయిల్ పంపలేకపోయాం.",
+
+"loggedInPasswordResetBody": "మేము పాస్‌వర్డ్ రీసెట్ లింక్ పంపేది:\n{email}",
+
+"accountManagementTitle": "ఖాతా నిర్వహణ",
+"changeEmailSubtitle": "మీ ఖాతాకు సంబంధించిన ఈమెయిల్‌ను నవీకరించండి.",
+"changePasswordTitle": "పాస్‌వర్డ్ మార్చండి",
+"changePasswordSubtitle": "సురక్షిత మార్పు కోసం లింక్ పంపుతాము.",
+
+"deleteAccountSubtitle": "Vaultara ఖాతాను శాశ్వతంగా తొలగించండి.",
+
+"biometricAuthReason": "Vaultara ఖాతాను యాక్సెస్ చేయడానికి ధృవీకరించండి.",
+
+"verifyEmailTitle": "ఈమెయిల్ ధృవీకరించండి",
+"verifyEmailBody": "మేము వెరిఫికేషన్ ఈమెయిల్ పంపాము. దానిని తెరచి ధృవీకరించండి, తరువాత ఇక్కడికి తిరిగి రండి.",
+"verifyEmailConfirmedButton": "నేను ఈమెయిల్ ధృవీకరించాను",
+"verifyEmailResendButton": "వెరిఫికేషన్ ఈమెయిల్ మళ్లీ పంపండి",
+"verifyEmailSending": "పంపుతోంది...",
+"navHome": "హోమ్",
+"navCategories": "విభాగాలు",
+"navInsights": "విశ్లేషణ",
+"navCalendar": "క్యాలెండర్",
+"tutorialCancel": "రద్దు",
+"tutorialNext": "తర్వాత",
+"tutorialEnd": "ట్యుటోరియల్ ముగించండి",
+
+"softDeleteCategory": "వర్గం",
+"softDeleteGroup": "గ్రూప్",
+"softDeleteRecord": "రికార్డు",
+
+"softDeleteTitle": "{type} ను ఇటీవల తొలగించిన వాటికి తరలించండి",
+"softDeleteMessage": "{type} \"{name}\" ఇటీవల తొలగించిన వాటికి తరలించబడుతుంది.\n\nమీరు దీన్ని 30 రోజుల్లో పునరుద్ధరించవచ్చు. ఆ తరువాత ఇది శాశ్వతంగా తొలగించబడుతుంది.",
+"softDeleteMove": "తరలించండి",
+"@recordsExpiring": {
+  "description": "ఎన్ని రికార్డులు త్వరలో గడువు ముగుస్తాయో చూపిస్తుంది",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "గ్రూప్ గణాంకాలు",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "గ్రూపుల సంఖ్య", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "రికార్డుల సంఖ్య", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": {
+  "description": "పాస్‌వర్డ్ రీసెట్ ఈమెయిల్ పంపబడుతుందని తెలియజేస్తుంది",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "తాత్కాలిక తొలగింపు నిర్ధారణ శీర్షిక",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "తాత్కాలిక తొలగింపు వివరణ",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "ఇటీవల తొలగించినవి",
+"categories": "వర్గాలు",
+"groups": "గుంపులు",
+"records": "రికార్డులు",
+"restore": "పునరుద్ధరించు",
+"deletePermanently": "శాశ్వతంగా తొలగించు",
+
+"recentlyDeletedBanner": "తొలగించిన {type}లను శాశ్వతంగా తొలగించే ముందు 30 రోజుల పాటు ఇక్కడ ఉంచుతారు.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "తొలగించిన {type}లను శోధించండి",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "ఇంకా తొలగించిన {type}లు లేవు",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "వర్గాన్ని ట్యాప్ చేసి దాని గుంపులను చూడండి మరియు మీ రికార్డులను నిర్వహించండి.",
+"groupsHint": "ఈ వర్గంలో గుంపులు మీ రికార్డులను క్రమబద్ధీకరిస్తాయి. రికార్డులను చూడటానికి మరియు నిర్వహించడానికి గుంపును ట్యాప్ చేయండి.",
+"notLoggedIn": "లాగిన్ కాలేదు",
+"recordsInsideGroupHint": "ఇవి ఈ గుంపులోని రికార్డులు.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" ను ఇటీవల తొలగించినవిలోకి తరలించారు",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "పాస్‌పోర్ట్" } }
+},
+
+"snackDeletedSuccessfully": "\"{name}\" విజయవంతంగా తొలగించబడింది",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "డ్రైవర్ లైసెన్స్" } }
+},
+
+"snackUpdatedSuccessfully": "\"{name}\" విజయవంతంగా నవీకరించబడింది",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "వీసా" } }
+},
+
+"snackAddedSuccessfully": "\"{name}\" విజయవంతంగా చేర్చబడింది",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "ఇన్సూరెన్స్" } }
+},
+
+"snackRestoredSuccessfully": "\"{name}\" విజయవంతంగా పునరుద్ధరించబడింది",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "పాస్‌పోర్ట్" } }
+},
+
+"snackFreeLimitReached": "ఉచిత పరిమితి చేరింది ({current}/{limit}). మరింత చేర్చడానికి అప్‌గ్రేడ్ చేయండి.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+
+"globalSearchTitle": "అన్ని రికార్డుల్లో శోధించండి",
+"globalSearchHint": "రికార్డు పేరు, వర్గం లేదా గుంపును టైప్ చేయండి",
+"globalSearchNoMatches": "మీ శోధనకు సరిపడే రికార్డులు లేవు.",
+"snackNoRecordsToSearch": "శోధించడానికి రికార్డులు లేవు. కొన్ని రికార్డులు జోడించండి; Vaultara వాటిని స్వయంచాలకంగా ఇండెక్స్ చేస్తుంది.",
+"recoveryCentreTitle": "రికవరీ సెంటర్",
+"recoveryCentreSubtitle": "తొలగించిన రికార్డులను పునరుద్ధరించండి లేదా శాశ్వతంగా తొలగించండి.",
+"plan_premium": "ప్రీమియమ్",
+"plan_free": "ఉచితం",
+"profile_app_settings_title": "యాప్ సెట్టింగ్స్",
+"profile_privacy_security_title": "గోప్యత మరియు భద్రత",
+"profile_biometric_on": "ఈ పరికరంలో బయోమెట్రిక్ లాక్ ఆన్‌లో ఉంది.",
+"profile_biometric_off": "బయోమెట్రిక్ లాక్ ఆఫ్‌లో ఉంది.",
+"profile_biometric_enable_reason": "బయోమెట్రిక్ లాక్‌ను ప్రారంభించడానికి మీ గుర్తింపును నిర్ధారించండి.",
+"profile_biometric_disable_reason": "బయోమెట్రిక్ లాక్‌ను ఆపడానికి మీ గుర్తింపును నిర్ధారించండి.",
+"profile_account_management_title": "ఖాతా నిర్వహణ",
+"profile_premium_active_title": "Premium సక్రియంగా ఉంది",
+"profile_premium_upgrade_title": "Premiumకి అప్‌గ్రేడ్ చేయండి",
+"profile_premium_active_subtitle": "అధునాతన రిమైండర్లు ప్రారంభించబడ్డాయి.",
+"profile_premium_upgrade_subtitle": "అధునాతన రిమైండర్లు మరియు అపరిమిత నిర్వహణను అన్లాక్ చేయండి.",
+"profile_manage_cancel_hint": "Google Play ద్వారా ఎప్పుడైనా నిర్వహించండి లేదా రద్దు చేయండి.",
+"profile_manage_subscription_button": "సబ్‌స్క్రిప్షన్ నిర్వహించండి",
+"plansTitle": "ప్లాన్‌ను ఎంచుకోండి",
+"plansTrialBanner": "7 రోజుల ఉచిత ట్రయల్‌తో ప్రారంభించండి.\nఎప్పుడైనా రద్దు చేయవచ్చు.",
+"plansLoading": "లోడ్ అవుతోంది…",
+"plansStartFreeTrial": "ఉచిత ట్రయల్ ప్రారంభించండి",
+"plansNoChargeTodayFooter": "7 రోజులు ఉచితం · ఈరోజు ఛార్జ్ లేదు",
+
+"planFreeTitle": "ఉచితం",
+"planFreeSubtitle": "ప్రారంభించడానికి",
+"planPremiumMonthlyTitle": "Premium నెలవారీ",
+"planPremiumYearlyTitle": "Premium వార్షిక",
+"planPerMonth": "నెలకు",
+"planPerYear": "సంవత్సరానికి",
+
+"planBadgeCurrent": "ప్రస్తుత ప్లాన్",
+"planBadgePopular": "ప్రాచుర్యం",
+"planBadgeBestValue": "ఉత్తమ విలువ",
+
+"planYouAreOnThisPlan": "మీరు ఇప్పటికే ఈ ప్లాన్‌లో ఉన్నారు.",
+
+"planFeatureUpToRecords": "{count} రికార్డుల వరకు",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "కస్టమ్ వర్గాలు ({count} వరకు)",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "ముందుగా సెట్ చేసిన ఉపవర్గాలు",
+"planFeatureCloudStorage": "క్లౌడ్ నిల్వ",
+"planFeatureSmartExpiryInsights": "స్మార్ట్ గడువు రిమైండర్లు",
+"planFeatureCoverageBalance": "కవరేజ్ సమతుల్యత",
+"planFeatureRecordStabilityTracking": "రికార్డ్ స్థిరత్వం ట్రాకింగ్",
+
+"planFeatureUnlimitedRecords": "అపరిమిత రికార్డులు",
+"planFeatureUnlimitedCategories": "అపరిమిత వర్గాలు",
+"planFeatureCustomSubcategories": "కస్టమ్ ఉపవర్గాలు",
+"planFeatureMultipleRemindersPerRecord": "బహుళ రిమైండర్లు",
+"planFeatureAdvancedReminderTiming": "అధునాతన టైమింగ్",
+"planFeatureAutomaticFollowUps": "ఆటోమేటిక్ ఫాలో-అప్స్",
+
+"planFeatureEverythingInMonthly": "నెలవారీ ప్లాన్‌లో ఉన్న ప్రతిదీ",
+"planFeatureSavePercentComparedToMonthly": "నెలవారీతో పోలిస్తే {percent}% ఆదా చేయండి",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "ఉత్తమ దీర్ఘకాలిక విలువ",
+
+"editorReminderLabel": "రిమైండర్",
+"editorReminderSelectOptional": "రిమైండర్‌ను ఎంచుకోండి (ఐచ్ఛికం)",
+"editorReminderOnExpiry": "గడువు రోజున",
+"editorReminderDaysBefore": "గడువుకు {days} రోజులు ముందు",
+"editorFreeItemsCount": "ఉచిత అంశాలు: {used}/{limit}",
+"editorExpiryPastWarning": "గడువు తేదీ ఇప్పటికే గడిచింది.",
+"editorExpiryTodayWarning": "ఈ రికార్డు ఈరోజు గడువు ముగుస్తుంది.",
+"editorErrorExpiryPast": "గడువు తేదీ గతంలో ఉండకూడదు.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "ఈరోజు విశ్లేషణలు",
+"tutorialBannerTitle": "త్వరిత పర్యటన",
+"tutorialBannerBody": "ఒక నిమిషంలో ఎక్కడ వెతకాలి, ఎలా రికార్డులు జోడించాలి మరియు విశ్లేషణల అర్థం ఏమిటో తెలుసుకోండి.",
+"tutorialBannerStart": "పర్యటన ప్రారంభించండి",
+"tutorialBannerDismiss": "ఇప్పుడు కాదు",
+"authErrorUserDisabled": "ఈ ఖాతా నిలిపివేయబడింది.",
+"authErrorNetwork": "నెట్‌వర్క్ లోపం. ఇంటర్నెట్‌ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+"authErrorTooManyRequests": "చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి తర్వాత ప్రయత్నించండి.",
+"authErrorSignInFailed": "లాగిన్ విఫలమైంది. మళ్లీ ప్రయత్నించండి.",
+"ok": "సరే",
+"snackPremiumEnabled": "Premium ప్రారంభించబడింది",
+"snackPremiumRestored": "Premium పునరుద్ధరించబడింది",
+"passwordNeedLower": "చిన్న అక్షరం ఉండాలి",
+"passwordNeedUpper": "పెద్ద అక్షరం ఉండాలి",
+"passwordNeedNumber": "సంఖ్య ఉండాలి",
+"passwordNeedSymbol": "చిహ్నం ఉండాలి",
+"editorFreeItemsCount": "ఉచిత అంశాలు: {used}/{limit}",
+"editorExpiryPastWarning": "గడువు తేదీ ఇప్పటికే గడిచింది.",
+"editorExpiryTodayWarning": "ఈ రికార్డు ఈరోజు గడువు ముగుస్తుంది.",
+"editorErrorExpiryPast": "గడువు తేదీ గతంలో ఉండకూడదు.",
+"todayInsightsTitle": "ఈరోజు విశ్లేషణలు",
+"tutorialBannerTitle": "త్వరిత పర్యటన",
+"tutorialBannerBody": "ఒక నిమిషంలో ఎక్కడ వెతకాలి, ఎలా రికార్డులు జోడించాలి మరియు విశ్లేషణల అర్థం ఏమిటో తెలుసుకోండి.",
+"tutorialBannerStart": "ట్యుటోరియల్ ప్రారంభించండి",
+"tutorialBannerDismiss": "ఇప్పుడుకాదు",
+"authErrorUserDisabled": "ఈ ఖాతా నిలిపివేయబడింది.",
+"authErrorNetwork": "నెట్‌వర్క్ లోపం. ఇంటర్నెట్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+"authErrorTooManyRequests": "చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి తరువాత ప్రయత్నించండి.",
+"authErrorSignInFailed": "లాగిన్ విఫలమైంది. మళ్లీ ప్రయత్నించండి.",
+"ok": "సరే",
+"tutorialHomeSearch": "మీరు ట్రాక్ చేస్తున్న ఏ రికార్డునైనా త్వరగా కనుగొనడానికి శోధనను ఉపయోగించండి.",
+"tutorialHomeFab": "ఇక్కడ మీ మొదటి రికార్డును జోడించండి.\nవర్గాన్ని ఎంచుకుని, గమనికలు జోడించి, గడువు తేదీని ఎంచుకోండి.",
+"tutorialHomeSummary": "రికార్డులు పెరిగిన కొద్దీ, ఈ భాగం గడువు సమీపిస్తున్నవాటిని చూపిస్తుంది.",
+"tutorialHomeInsight": "ఈ స్మార్ట్ ఇన్‌సైట్ నమూనాలు మరియు సమీప గడువులను చూపిస్తుంది.",
+"tutorialHomeCoverage": "కవరేజ్ బ్యాలెన్స్ అన్ని వర్గాలలో రికార్డుల పంపిణీని చూపిస్తుంది.",
+"tutorialHomeStability": "స్థిరత్వం కాలక్రమంలో రికార్డుల నమ్మకాన్ని చూపిస్తుంది.",
+"profile_account_management_subtitle": "ఇమెయిల్, పాస్‌వర్డ్ మార్చడం లేదా ఖాతాను తొలగించడం.",
+"confirmIdentityTitle": "గుర్తింపును నిర్ధారించండి",
+"confirm": "నిర్ధారించండి",
+"profile_sign_out_title": "లాగ్ అవుట్",
+"profile_sign_out_subtitle": "ఈ పరికరంలో Vaultara నుండి లాగ్ అవుట్ అవ్వండి",
+"profile_sign_out_confirm_title": "లాగ్ అవుట్ చేయాలా?",
+"profile_sign_out_confirm_body": "మీ ఖాతాను ఉపయోగించడానికి మళ్లీ లాగిన్ అవ్వాలి.",
+"profile_sign_out_action": "లాగ్ అవుట్",
+"todayInsightsAudioHint": "ఆడియో ఇష్టమా? స్పీకర్ ఐకాన్‌ను ఉపయోగించండి.",
+"category2Label": "వర్గం",
+"enable2BiometricsBody": "మీ Vaultara ఖాతాను రక్షించడానికి ఫింగర్‌ప్రింట్ గుర్తింపును ఉపయోగించండి.",
+"snackNotificationsDisabled": "నోటిఫికేషన్లు నిలిపివేయబడ్డాయి. రిమైండర్లు పొందేందుకు వాటిని ఆన్ చేయండి.",
+"openSettings": "సెట్టింగ్‌లు తెరవండి",
+
+"reminderOnExpiryTitle": "ఈరోజు గడువు ముగుస్తుంది",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "హాయ్ {firstName}, \"{itemName}\" ఈరోజు గడువు ముగుస్తుంది.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "ఉచిత వర్గాలు: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "ఉచిత పరిమితిలో ఎంతమంది ఉచిత వర్గాలు ఉపయోగించబడ్డాయో చూపిస్తుంది.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "గమనికలు జోడించండి (ఐచ్చికం)",
+"apply": "వర్తించు",
+"smartInsightExpiresTodayHeading": "ఈరోజు గడువు ముగుస్తుంది",
+"smartInsightExpiresTodaySingleBody": "{name} ఈరోజు గడువు ముగుస్తుంది. దానిని తాజాగా ఉంచడానికి ఇప్పుడే చర్య తీసుకోండి.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} మరియు మరో 1 పత్రం ఈరోజు గడువు ముగుస్తుంది.} other{{names} మరియు మరో {extra} పత్రాలు ఈరోజు గడువు ముగుస్తాయి.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "మీ దృష్టి అవసరం",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} 1 రోజులో గడువు ముగుస్తుంది మరియు రిమైండర్ సెట్ చేయబడలేదు. వివరాలు ఇప్పటికీ సరైనవేనా అని నిర్ధారించుకోండి.} other{{name} {days} రోజులలో గడువు ముగుస్తుంది మరియు రిమైండర్ సెట్ చేయబడలేదు. వివరాలు ఇప్పటికీ సరైనవేనా అని నిర్ధారించుకోండి.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "అనేక పునరుద్ధరణలు దగ్గరగా",
+"smartInsightRenewalTwinBodyTwo": "{a} మరియు {b} ఒకరికొకరు మూడు వారాలలో గడువు ముగుస్తాయి. ముందుగానే ప్రణాళిక చేసుకోండి.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, మరియు {c} అన్నీ మూడు వారాలలో గడువు ముగుస్తాయి. ముందుగానే ప్రణాళిక చేసుకోండి.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, మరియు మరో 1 పత్రం మూడు వారాలలో గడువు ముగుస్తాయి. ముందుగానే ప్రణాళిక చేసుకోండి.} other{{a}, {b}, మరియు మరో {extra} పత్రాలు మూడు వారాలలో గడువు ముగుస్తాయి. ముందుగానే ప్రణాళిక చేసుకోండి.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "రాబోయే సమూహం",
+"smartInsightClusterBody": "{count, plural, =1{{category}లో 1 పత్రం రాబోయే రెండు నెలలలో గడువు ముగుస్తుంది. వాటిని కలిసి నిర్వహించడాన్ని పరిగణించండి.} other{{category}లో {count} పత్రాలు రాబోయే రెండు నెలలలో గడువు ముగుస్తాయి. వాటిని కలిసి నిర్వహించడాన్ని పరిగణించండి.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ముందున్న ప్రశాంత కాలం",
+"smartInsightQuietPeriodBody": "{days, plural, =1{రాబోయే 1 రోజులో ఏదీ గడువు ముగియదు. మీ తదుపరి పునరుద్ధరణ {firstDate}.} other{రాబోయే {days} రోజులలో ఏదీ గడువు ముగియదు. మీ తదుపరి పునరుద్ధరణ {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "అన్నీ తాజాగా ఉన్నాయి",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 రాబోయే గడువు రిమైండర్లచే కవర్ చేయబడింది. మరేదీ మీ దృష్టిని అవసరం లేదు.} other{{count} రాబోయే గడువులు రిమైండర్లచే కవర్ చేయబడ్డాయి. మరేదీ మీ దృష్టిని అవసరం లేదు.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "అన్నీ తాజాగా ఉన్నాయి. ప్రస్తుతం ఏదీ మీ దృష్టిని అవసరం లేదు.",
+"smartInsightNoRecordsHeading": "మీ మొదటి రికార్డ్ జోడించండి",
+"smartInsightNoRecordsBody": "మీ పత్రాలను ట్రాక్ చేయడం ప్రారంభించండి మరియు Vaultara ఇక్కడ స్మార్ట్ అంతర్దృష్టులను ప్రదర్శిస్తుంది.",
+"expiryTimelineTitle": "గడువు ముగింపు కాలక్రమం",
+"expiryTimelineSubtitle": "ఆ నెలలో ముగిసే రికార్డులను చూడటానికి నెలను నొక్కండి",
+"expiryTimelineDetailCount": "{count, plural, =1{1 రికార్డ్} other{{count} రికార్డులు}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "రాబోయే",
+"summaryUpcomingCaption": "30 రోజులలో",
+"summaryUrgentTitle": "అత్యవసరం",
+"summaryUrgentCaption": "7 రోజులలో"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

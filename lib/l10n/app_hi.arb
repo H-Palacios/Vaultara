@@ -22,8 +22,8 @@
     "placeholders": { "days": { "type": "int" } }
   },
 
-  "enterDaysError": "दिनों की संख्या दर्ज करें।",
-  "invalidDaysError": "मान्य संख्या दर्ज करें (0 या अधिक)।",
+  "enterDaysError": "दिनों की संख्या दर्ज करें",
+  "invalidDaysError": "मान्य संख्या दर्ज करें (0 या अधिक)",
 
   "showingItemsRelative": "{time} समाप्त होने वाले आइटम",
   "@showingItemsRelative": {
@@ -31,7 +31,7 @@
   },
 
   "showingItemsExact": "चयनित तारीख पर समाप्त होने वाले आइटम",
-  "noItemsOnDate": "इस तारीख पर कोई आइटम समाप्त नहीं हो रहा है।",
+  "noItemsOnDate": "इस तारीख पर कोई आइटम समाप्त नहीं हो रहा है",
 
   "editorAddTitle": "आइटम जोड़ें",
   "editorEditTitle": "आइटम संपादित करें",
@@ -72,10 +72,13 @@
   "categoryNameHint": "श्रेणी दर्ज करें",
 
   "categoryLimitReached":
-    "बेसिक योजना की सीमा पूरी हो चुकी है। प्रीमियम पर जाएँ।",
+    "बेसिक योजना की सीमा पूरी हो चुकी है",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
 
   "categoryLimitInfo":
-    "बेसिक योजना में अधिकतम {limit} कस्टम श्रेणियाँ बनाई जा सकती हैं।",
+    "बेसिक योजना में अधिकतम {limit} कस्टम श्रेणियाँ बनाई जा सकती हैं",
 
   "categoryErrorEmpty": "श्रेणी का नाम आवश्यक है",
   "categoryErrorTooShort": "श्रेणी का नाम बहुत छोटा है",
@@ -97,5 +100,791 @@
   "groupErrorSymbols": "समूह नाम में प्रतीक नहीं हो सकते",
   "groupErrorNumbers": "समूह नाम में संख्या नहीं हो सकती",
 
-  "createGroup": "बनाएँ"
+  "createGroup": "बनाएँ",
+
+  "registerTitle": "खाता बनाएँ",
+
+  "firstNameLabel": "पहला नाम",
+  "firstNameHint": "अपना पहला नाम दर्ज करें",
+  "errorFirstName": "पहला नाम आवश्यक है",
+
+  "lastNameLabel": "अंतिम नाम",
+  "lastNameHint": "अपना अंतिम नाम दर्ज करें",
+  "errorLastName": "अंतिम नाम आवश्यक है",
+
+  "emailLabel": "ईमेल पता",
+"emailRequired": "आपका ईमेल आवश्यक है",
+"passwordRequired": "आपका पासवर्ड आवश्यक है",
+"registerPasswordHint": "पासवर्ड दर्ज करें",
+"loginPasswordHint": "अपना पासवर्ड दर्ज करें",
+"emailHint": "अपना ईमेल पता दर्ज करें",
+  "errorEmailInvalid": "मान्य ईमेल पता दर्ज करें",
+  "errorEmailInUse":
+    "यह ईमेल पता पहले से Vaultara खाते से जुड़ा हुआ है",
+
+  "passwordLabel": "पासवर्ड",
+  "passwordHelper": "कम से कम 8 अक्षर विभिन्न प्रकारों के साथ",
+
+  "passwordTooShort": "बहुत छोटा",
+  "passwordTooWeak": "कमज़ोर",
+  "passwordMedium": "मध्यम",
+  "passwordStrong": "मज़बूत",
+  "errorPasswordLength": "पासवर्ड कम से कम 8 अक्षरों का होना चाहिए",
+  "errorPasswordWeak": "कृपया अधिक मजबूत पासवर्ड चुनें",
+
+  "errorGeneric": "पंजीकरण विफल रहा कृपया पुनः प्रयास करें",
+
+  "createAccount": "खाता बनाएँ",
+
+  "appName": "Vaultara",
+  "authTagline":
+    "पासपोर्ट लाइसेंस कार्ड और अन्य महत्वपूर्ण चीज़ों के लिए आपका निजी केंद्र",
+  "tabSignIn": "साइन इन करें",
+  "tabCreateAccount": "खाता बनाएँ",
+  "signInFooterText":
+    "अपने निजी Vaultara स्थान तक पहुँचने और सभी नवीनीकरण को नियंत्रित रखने के लिए साइन इन करें",
+  "createAccountFooterText":
+    "महत्वपूर्ण रिमाइंडर का बैकअप लेने और कभी भी उन तक पहुँचने के लिए Vaultara खाता बनाएँ",
+  "emailNotFound": "गलत ईमेल।\nइस ईमेल से कोई Vaultara खाता नहीं है",
+  "incorrectPassword": "गलत पासवर्ड",
+  "emailLabel": "ईमेल",
+  "passwordLabel": "पासवर्ड",
+  "signIn": "साइन इन",
+  "categoryPersonalIdentification": "व्यक्तिगत पहचान",
+  "categoryDrivingAndVehicles": "ड्राइविंग और वाहन",
+  "categoryTravelAndImmigration": "यात्रा और आव्रजन",
+  "categoryBankingAndCards": "बैंकिंग और कार्ड",
+  "categoryInsuranceAndCover": "बीमा और कवरेज",
+  "categoryHealthAndMedical": "स्वास्थ्य और चिकित्सा",
+  "categoryWorkAndProfessional": "कार्य और पेशेवर",
+  "categoryPropertyAndHousing": "संपत्ति और आवास",
+  "categoryHouseholdAndUtilities": "घरेलू और सेवाएँ",
+
+  "subcategoryPassports": "पासपोर्ट",
+  "subcategoryIdCards": "पहचान पत्र",
+  "subcategoryResidencePermits": "निवास परमिट",
+
+  "subcategoryDrivingLicences": "ड्राइविंग लाइसेंस",
+  "subcategoryVehicleRegistrations": "वाहन पंजीकरण",
+  "subcategoryRoadworthyCertificates": "रोडवर्थी प्रमाणपत्र",
+  "subcategoryVehicleInspectionCertificates": "वाहन निरीक्षण प्रमाणपत्र",
+
+  "subcategoryVisas": "वीज़ा",
+  "subcategoryStudyPermits": "अध्ययन परमिट",
+  "subcategoryWorkPermits": "कार्य परमिट",
+  "subcategoryTravelInsuranceDocuments": "यात्रा बीमा दस्तावेज़",
+
+  "subcategoryDebitAndCreditCards": "डेबिट और क्रेडिट कार्ड",
+  "subcategoryStoreCards": "स्टोर कार्ड",
+  "subcategoryFuelCards": "ईंधन कार्ड",
+
+  "subcategoryVehicleInsurances": "वाहन बीमा",
+  "subcategoryPropertyInsurances": "संपत्ति बीमा",
+  "subcategoryLifeInsurances": "जीवन बीमा",
+  "subcategoryHealthInsurances": "स्वास्थ्य बीमा",
+  "subcategoryTravelInsurances": "यात्रा बीमा",
+
+  "subcategoryMedicalPrescriptions": "चिकित्सीय पर्चे",
+  "subcategoryOpticalPrescriptions": "नेत्र पर्चे",
+  "subcategoryMedicalCertificates": "चिकित्सीय प्रमाणपत्र",
+
+  "subcategoryProfessionalLicences": "पेशेवर लाइसेंस",
+  "subcategoryProfessionalRegistrations": "पेशेवर पंजीकरण",
+  "subcategoryIndustryRegistrations": "उद्योग पंजीकरण",
+  "subcategoryWorkAccessCards": "कार्य प्रवेश कार्ड",
+
+  "subcategoryLeaseAgreements": "लीज़ समझौते",
+  "subcategoryAccessCardsAndTags": "प्रवेश कार्ड और टैग",
+  "subcategoryParkingPermits": "पार्किंग परमिट",
+  "subcategorySecurityAccessPermits": "सुरक्षा प्रवेश परमिट",
+
+  "subcategoryElectricityAccounts": "बिजली खाते",
+  "subcategoryWaterAccounts": "पानी खाते",
+  "subcategoryInternetContracts": "इंटरनेट अनुबंध",
+  "subcategorySecurityServiceContracts": "सुरक्षा सेवा अनुबंध",
+  "searchCategories": "श्रेणियाँ खोजें",
+  "filterAll": "सभी",
+  "filterPreset": "पूर्वनिर्धारित",
+  "filterCustom": "कस्टम",
+  "addCategoryTitle": "श्रेणी जोड़ें",
+  "customLabel": "कस्टम",
+  "subcategoriesLabel": "उप-श्रेणियाँ",
+  "itemsLabel": "आइटम",
+  "itemsExpiring": "{count} आइटम {days} दिनों में समाप्त हो रहे हैं",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "पिन की गई आवश्यकताएँ",
+  "pinnedHint": "जिन श्रेणियों को आप सबसे अधिक खोलते हैं उन्हें पिन करें ताकि वे ऊपर रहें।",
+  "noCategoriesFound": "कोई श्रेणी नहीं मिली",
+  "searchGroups": "समूह खोजें",
+  "addGroupTitle": "समूह जोड़ें",
+  "basicPlanGroupInfo": "आप बेसिक प्लान पर हैं।\nआप इस श्रेणी के पूर्वनिर्धारित समूह देख सकते हैं।\nअपने स्वयं के समूह बनाने के लिए Premium में अपग्रेड करें।",
+  "groupDeleted": "समूह हटाया गया",
+  "undo": "पूर्ववत करें",
+  "groupStats": "{items} आइटम • {expiring} {days} दिनों में समाप्त होंगे",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "इस समूह में आइटम जोड़ने और ट्रैक करने के लिए टैप करें।",
+  "itemsInGroup": "इस समूह के आइटम",
+  "itemsInGroupHint": "प्रत्येक महत्वपूर्ण आइटम को उसकी समाप्ति तिथि के साथ ट्रैक करें ताकि समय पर नवीनीकरण किया जा सके।",
+  "searchItems": "आइटम खोजें",
+  "filterAll": "सभी",
+  "filterExpiringWithin": "{days} दिनों में समाप्त",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "समाप्त",
+  "addItem": "आइटम जोड़ें",
+  "noItemsYet": "अभी कोई आइटम नहीं है।",
+
+  "statusExpired": "समाप्त",
+  "statusExpiresToday": "आज समाप्त",
+  "statusExpiresInOneDay": "1 दिन में समाप्त",
+  "statusExpiresInDays": "{days} दिनों में समाप्त",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "मान्य",
+
+  "deleteCategoryTitle": "श्रेणी हटाएँ",
+  "deleteCategoryMessage": "क्या आप वाकई \"{name}\" श्रेणी हटाना चाहते हैं?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "समूह हटाएँ",
+  "deleteGroupMessage": "क्या आप वाकई \"{name}\" समूह हटाना चाहते हैं?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "आइटम हटाएँ",
+  "deleteItemMessage": "क्या आप वाकई \"{name}\" हटाना चाहते हैं?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "रद्द करें",
+  "delete": "हटाएँ",
+  "homeWelcomeTitle": "स्वागत है",
+
+  "homeWelcomeFirstTitle": "स्वागत है, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "वापसी पर स्वागत है, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara आपको महत्वपूर्ण समाप्ति तिथियों को ट्रैक करने में मदद करता है ताकि कुछ भी छूट न जाए।",
+
+  "homeWelcomeSubtitleFirst":
+    "हमें आपको यहाँ देखकर खुशी हुई। Vaultara आपकी महत्वपूर्ण तिथियों और रिकॉर्ड्स को एक सुरक्षित स्थान पर व्यवस्थित रखने में मदद करता है।",
+
+  "homeWelcomeSubtitleBack":
+    "आपका फिर से स्वागत है। Vaultara तब उपलब्ध है जब भी आप अपनी महत्वपूर्ण तिथियों और रिकॉर्ड्स की समीक्षा करना चाहें।",
+    "insightEmptyTitle": "आपने अभी कुछ भी नहीं जोड़ा है",
+  "insightEmptyBody": "जब आप महत्वपूर्ण तारीखें ट्रैक करना शुरू करेंगे, Vaultara आपको समय से पहले तैयार रहने में मदद करेगा।",
+
+  "insightExpiresTodayTitle": "\"{name}\" आज समाप्त हो रहा है",
+  "insightExpiresTodayBody": "एक त्वरित जाँच जानकारी को सही बनाए रख सकती है।",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" कल समाप्त हो रहा है",
+  "insightExpiresTomorrowBody": "अभी समीक्षा करने से बाद में समय बच सकता है।",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} को समाप्त होगा",
+  "insightExpiresSoonBody": "पहले से ध्यान देने से काम आसान हो जाता है।",
+
+  "insightNextExpiryTitle": "अगला समाप्त होने वाला आइटम \"{name}\" है ({date})",
+  "insightNextExpiryBody": "अभी कोई कार्रवाई आवश्यक नहीं है।",
+
+  "insightClusteredTitle": "कई आइटम {month} के आसपास समाप्त हो रहे हैं",
+  "insightClusteredBody": "इन्हें साथ में देखने से समय बच सकता है।",
+
+  "insightTopCategoryTitle": "अधिकांश आइटम {category} में हैं",
+  "insightTopCategoryBody": "यहाँ समीक्षा करने से सबसे अधिक लाभ मिलता है।",
+
+  "insightStableTitle": "सब कुछ स्थिर है",
+  "insightStableBody": "कोई तत्काल समाप्ति नहीं है जिस पर ध्यान देना पड़े।",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "सभी आइटम",
+"summaryAllCaption": "Vaultara में ट्रैक किया गया",
+"summarySoonTitle": "जल्द समाप्त होने वाले",
+"summarySoonCaption": "30 दिनों के भीतर",
+"summaryWeekTitle": "इस सप्ताह",
+"summaryWeekCaption": "7 दिनों में समाप्त",
+"summaryExpiredTitle": "समाप्त",
+"summaryExpiredCaption": "समाप्ति तिथि पार हो चुकी है",
+"stabilityStableTitle": "सब कुछ स्थिर दिख रहा है",
+"stabilityStableBody": "आपके रिकॉर्ड किसी तात्कालिक या संचयी जोखिम को नहीं दिखाते हैं।",
+
+"stabilityDecliningTitle": "स्थिरता कम हो रही है",
+"stabilityDecliningBody": "कुछ आइटम समाप्त हो चुके हैं और कुछ जल्द समाप्त होने वाले हैं।",
+
+"stabilityWeakenedTitle": "स्थिरता कमजोर हुई",
+"stabilityWeakenedBody": "समाप्त रिकॉर्ड की मौजूदगी समग्र विश्वसनीयता को कम करती है।",
+
+"stabilityPressureTitle": "दबाव बढ़ रहा है",
+"stabilityPressureBody": "स्थिरता बनाए रखने के लिए कई रिकॉर्ड्स को जल्द ध्यान देने की आवश्यकता होगी।",
+"editorNotes": "नोट्स",
+"notesHint": "नोट्स दर्ज करें",
+"editorReminderTitle": "रिमाइंडर",
+"editorReminderNone": "कोई रिमाइंडर नहीं",
+"editorReminderOnExpiry": "समाप्ति तिथि पर",
+"editorReminder7Days": "समाप्ति से 7 दिन पहले",
+"editorReminder30Days": "समाप्ति से 30 दिन पहले",
+"editorReminderCustom": "कस्टम",
+"daysBeforeExpiry": "समाप्ति से पहले दिन",
+"reminderStage0Title": "समाप्ति अनुस्मारक",
+"reminderStage0Body": "{firstName}, {itemName} {days} दिनों में समाप्त हो जाएगा।",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "अनुवर्ती अनुस्मारक",
+"reminderStage1Body": "{firstName}, {itemName} अभी तक अपडेट नहीं किया गया है।",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "समाप्ति निकट है",
+"reminderStage2Body": "{itemName} की समाप्ति तिथि नज़दीक आ रही है।",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "अंतिम अनुस्मारक",
+"reminderFinalBody": "{firstName}, कृपया {itemName} अभी अपडेट करें।",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "कवरेज संतुलन",
+"coverageAllRepresented": "आपके रिकॉर्ड सभी श्रेणियों में आइटम शामिल करते हैं।",
+"coverageMissingNamed": "{count} श्रेणियों में कोई रिकॉर्ड नहीं मिला: {names}।",
+"coverageMissingSummary": "आपने {count} श्रेणियों के अंतर्गत कोई रिकॉर्ड नहीं जोड़ा है, जिनमें {names} और अन्य {remaining} शामिल हैं।",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "पासवर्ड का उपयोग करें",
+"signInWithBiometrics": "बायोमेट्रिक्स से साइन इन करें",
+"enableBiometricsTitle": "बायोमेट्रिक सुरक्षा सक्षम करें",
+"enableBiometricsBody": "Vaultara को सुरक्षित रखने के लिए फिंगरप्रिंट या फेस पहचान का उपयोग करें।",
+"enableBiometricsReason": "Vaultara के लिए बायोमेट्रिक अनलॉक सक्षम करें।",
+"notNow": "अभी नहीं",
+"useBiometrics": "बायोमेट्रिक्स उपयोग करें",
+"recordsCalendarIntro":
+  "चुनें कि आप अपनी समाप्ति तिथियों को कैसे देखना चाहते हैं:\n\n• आज से कितने दिनों आगे देखना चाहते हैं, वह दर्ज करें।\n• या कैलेंडर पर कोई विशिष्ट तिथि चुनें।\n\nVaultara दिखाएगा कि कौन से रिकॉर्ड उस दिन अपनी समाप्ति तिथि तक पहुँचते हैं।",
+
+"showingRecordsRelative": "{time} में समाप्त होने वाले रिकॉर्ड दिखाए जा रहे हैं",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "चयनित तिथि पर समाप्त होने वाले रिकॉर्ड दिखाए जा रहे हैं",
+"noRecordsOnDate": "इस दिन समाप्त होने के लिए कोई रिकॉर्ड सेट नहीं है।",
+
+"recordEditorAddTitle": "रिकॉर्ड जोड़ें",
+"recordEditorEditTitle": "रिकॉर्ड संपादित करें",
+
+"editorRecordName": "रिकॉर्ड नाम",
+"editorRecordNameHint": "रिकॉर्ड नाम दर्ज करें",
+"recordEditorErrorName": "रिकॉर्ड नाम आवश्यक है",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "इस समूह में रिकॉर्ड जोड़ने और ट्रैक करने के लिए टैप करें।",
+
+"recordsInGroup": "इस समूह में रिकॉर्ड",
+"recordsInGroupHint":
+  "प्रत्येक महत्वपूर्ण रिकॉर्ड को उसकी समाप्ति तिथि के साथ ट्रैक करें ताकि समय पर नवीनीकरण किया जा सके।",
+
+"searchRecords": "रिकॉर्ड खोजें",
+"addRecord": "रिकॉर्ड जोड़ें",
+"noRecordsYet": "अभी कोई रिकॉर्ड नहीं है।",
+
+"deleteRecordTitle": "रिकॉर्ड हटाएँ",
+
+"recordsInsightClusteredTitle":
+  "{month} के आसपास कई रिकॉर्ड समाप्त हो रहे हैं",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "आपके अधिकांश रिकॉर्ड {category} के अंतर्गत हैं",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "सभी रिकॉर्ड",
+
+"recordsStabilityDecliningBody":
+  "कुछ रिकॉर्ड पहले ही समाप्त हो चुके हैं और अन्य जल्द समाप्त होने वाले हैं।",
+
+"recordsCoverageAllRepresented":
+  "आपके रिकॉर्ड सभी श्रेणियों को कवर करते हैं।",
+
+"recordReminderStage0Body":
+  "{firstName}, आपका {recordName} {days} दिनों में समाप्त हो जाएगा।",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, आपका {recordName} अभी तक अपडेट नहीं किया गया है।",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} की समाप्ति तिथि नज़दीक आ रही है।",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, कृपया अब {recordName} अपडेट करें।",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "अभी तक कोई समूह नहीं है",
+"recordsExpiring": "{count, plural, one {1 रिकॉर्ड {days} दिनों में समाप्त होगा} other {{count} रिकॉर्ड {days} दिनों में समाप्त होंगे}}",
+"recordsGroupStats": "{records, plural, one {1 रिकॉर्ड} other {{records} रिकॉर्ड}} • {expiring} {days} दिनों में",
+"groupLabel": "{count, plural, one {{count} समूह} other {{count} समूह}}",
+"recordsLabel": "{count, plural, one {{count} रिकॉर्ड} other {{count} रिकॉर्ड}}",
+"forgotPassword": "पासवर्ड भूल गए?",
+  "forgotPasswordTitle": "पासवर्ड रीसेट करें",
+  "forgotPasswordBody": "अपना ईमेल पता दर्ज करें और हम पासवर्ड रीसेट लिंक भेजेंगे।",
+  "sendResetLink": "रीसेट लिंक भेजें",
+  "passwordResetEmailSent": "पासवर्ड रीसेट ईमेल भेज दिया गया है।",
+  "verifyEmailToContinue": "साइन इन करने से पहले कृपया अपना ईमेल पता सत्यापित करें",
+  "changeEmailTitle": "ईमेल पता बदलें",
+"newEmailHint": "अपना नया ईमेल दर्ज करें",
+"sendVerificationEmail": "सत्यापन ईमेल भेजें",
+"deleteAccountTitle": "खाता हटाएँ",
+"deleteAccountWarning": "यह कार्रवाई आपके खाते और सभी सहेजे गए डेटा को स्थायी रूप से हटा देगी।\nइसे वापस नहीं किया जा सकता।",
+"deleteAccountConfirm": "खाता स्थायी रूप से हटाएँ",
+"supportTitle": "सहायता",
+"supportSubtitle": "यदि आपको मदद चाहिए या कोई प्रश्न हैं तो हमसे संपर्क करें।",
+"supportEmailSubject": "Vaultara सहायता अनुरोध",
+"supportEmailError": "ईमेल ऐप खोलने में असमर्थ।",
+"passwordResetEmailFailed": "पासवर्ड रीसेट ईमेल भेजा नहीं जा सका।",
+"loggedInPasswordResetBody": "हम पासवर्ड रीसेट लिंक भेजेंगे:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "खाता प्रबंधन",
+"changeEmailTitle": "ईमेल पता बदलें",
+"changeEmailSubtitle": "अपने खाते से जुड़े ईमेल को अपडेट करें।",
+"changePasswordTitle": "पासवर्ड बदलें",
+"changePasswordSubtitle": "हम आपके पासवर्ड को सुरक्षित रूप से बदलने के लिए एक लिंक ईमेल करेंगे।",
+"deleteAccountTitle": "खाता हटाएँ",
+"deleteAccountSubtitle": "अपने Vaultara खाते को स्थायी रूप से हटाएँ।",
+"biometricAuthReason": "अपने Vaultara खाते तक पहुँचने के लिए प्रमाणीकरण करें",
+"verifyEmailTitle": "अपने ईमेल की पुष्टि करें",
+"verifyEmailBody": "हमने आपके इनबॉक्स में एक सत्यापन ईमेल भेजा है। कृपया उसे खोलें और अपना ईमेल पता पुष्टि करें, फिर यहाँ वापस आकर जारी रखें।",
+"verifyEmailConfirmedButton": "मैंने अपना ईमेल सत्यापित कर लिया है",
+"verifyEmailResendButton": "सत्यापन ईमेल फिर से भेजें",
+"verifyEmailSending": "भेजा जा रहा है...",
+"navHome": "होम",
+"navCategories": "श्रेणियाँ",
+"navInsights": "विश्लेषण",
+"navCalendar": "कैलेंडर",
+"tutorialHomeSearch": "जिस रिकॉर्ड को आप ट्रैक कर रहे हैं उसे जल्दी खोजने के लिए सर्च बार का उपयोग करें।",
+"tutorialHomeFab": "यहाँ अपना पहला रिकॉर्ड जोड़ें।\nयह चुनें कि यह कहाँ संबंधित है, वैकल्पिक नोट्स जोड़ें और समाप्ति तिथि चुनें।",
+"tutorialHomeSummary": "जैसे-जैसे आप अधिक रिकॉर्ड जोड़ते हैं, यह अनुभाग आपको समाप्ति के करीब या समाप्त रिकॉर्ड पहचानने में मदद करता है।",
+"tutorialHomeInsight": "यह स्मार्ट इनसाइट पैटर्न और आने वाली समाप्तियों को दर्शाता है।\nआप स्पीकर आइकन पर टैप करके इसे सुन सकते हैं।",
+"tutorialHomeCoverage": "कवरेज संतुलन दर्शाता है कि आपके रिकॉर्ड कितनी समान रूप से वितरित हैं।\nउच्च संतुलन कम अंतर दर्शाता है।",
+"tutorialHomeStability": "स्थिरता दर्शाती है कि समय के साथ आपके रिकॉर्ड कितने विश्वसनीय हैं।\nसमाप्त और आने वाले रिकॉर्ड स्थिरता कम कर सकते हैं।",
+"tutorialCancel": "रद्द करें",
+"tutorialNext": "अगला",
+"tutorialEnd": "ट्यूटोरियल समाप्त करें",
+"softDeleteCategory": "श्रेणी",
+"softDeleteGroup": "समूह",
+"softDeleteRecord": "रिकॉर्ड",
+"softDeleteTitle": "{type} को हाल ही में हटाए गए में ले जाएं",
+"softDeleteMessage": "{type} \"{name}\" को हाल ही में हटाए गए में ले जाया जाएगा।\n\nआप इसे 30 दिनों के भीतर पुनर्स्थापित कर सकते हैं। उसके बाद यह स्थायी रूप से हट जाएगा।",
+"softDeleteMove": "ले जाएं",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+ "recentlyDeletedTitle": "हाल ही में हटाए गए",
+  "categories": "श्रेणियाँ",
+  "groups": "समूह",
+  "records": "रिकॉर्ड",
+  "restore": "पुनर्स्थापित करें",
+  "deletePermanently": "स्थायी रूप से हटाएँ",
+
+  "recentlyDeletedBanner": "हटाए गए {type} 30 दिनों तक सुरक्षित रखे जाते हैं।",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "हटाए गए {type} खोजें",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "कोई हटाया गया {type} नहीं है",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "समूह देखने और अपने रिकॉर्ड प्रबंधित करने के लिए किसी श्रेणी पर टैप करें।",
+  "groupsHint": "समूह इस श्रेणी में आपके रिकॉर्ड व्यवस्थित करते हैं। रिकॉर्ड प्रबंधित करने के लिए समूह पर टैप करें।",
+  "notLoggedIn": "लॉग इन नहीं है",
+"recordsInsideGroupHint": "ये इस समूह के अंदर के रिकॉर्ड हैं।",
+"snackMovedToRecentlyDeleted": "\"{name}\" को हाल ही में हटाए गए में ले जाया गया",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" सफलतापूर्वक हटाया गया",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" सफलतापूर्वक अपडेट किया गया",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" सफलतापूर्वक जोड़ा गया",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" सफलतापूर्वक बहाल किया गया",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "मुफ़्त सीमा पूरी हो गई ({current}/{limit}). और जोड़ने के लिए अपग्रेड करें।",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "सभी रिकॉर्ड खोजें",
+"globalSearchHint": "रिकॉर्ड नाम, श्रेणी या समूह लिखें",
+"globalSearchNoMatches": "कोई रिकॉर्ड आपकी खोज से मेल नहीं खाता।",
+"snackNoRecordsToSearch": "खोजने के लिए कोई रिकॉर्ड नहीं है। कुछ रिकॉर्ड जोड़ें और Vaultara उन्हें अपने आप इंडेक्स कर देगा।",
+"recoveryCentreTitle": "पुनर्प्राप्ति केंद्र",
+"recoveryCentreSubtitle": "हटाए गए रिकॉर्ड पुनर्स्थापित करें या स्थायी रूप से हटाएँ।",
+"plan_premium": "प्रीमियम",
+"plan_free": "मुफ़्त",
+"profile_app_settings_title": "ऐप सेटिंग्स",
+"profile_privacy_security_title": "गोपनीयता और सुरक्षा",
+"profile_biometric_on": "इस डिवाइस पर बायोमेट्रिक लॉक चालू है।",
+"profile_biometric_off": "बायोमेट्रिक लॉक बंद है।",
+"profile_biometric_enable_reason": "बायोमेट्रिक लॉक चालू करने के लिए अपनी पहचान की पुष्टि करें।",
+"profile_biometric_disable_reason": "बायोमेट्रिक लॉक बंद करने के लिए अपनी पहचान की पुष्टि करें।",
+"profile_account_management_title": "खाता प्रबंधन",
+"profile_account_management_subtitle": "ईमेल बदलें, पासवर्ड बदलें या खाता हटाएँ।",
+"profile_premium_active_title": "प्रीमियम सक्रिय है",
+"profile_premium_upgrade_title": "प्रीमियम में अपग्रेड करें",
+"profile_premium_active_subtitle": "उन्नत रिमाइंडर अनलॉक हो गए हैं।",
+"profile_premium_upgrade_subtitle": "उन्नत रिमाइंडर और असीमित संगठन अनलॉक करें।",
+"profile_manage_cancel_hint": "Google Play पर कभी भी प्रबंधित या रद्द करें।",
+"profile_manage_subscription_button": "सदस्यता प्रबंधित करें",
+"plansTitle": "अपना प्लान चुनें",
+"plansTrialBanner": "7 दिन का मुफ्त ट्रायल शुरू करें।\nकभी भी रद्द करें।",
+"plansLoading": "लोड हो रहा है…",
+"plansStartFreeTrial": "मुफ्त ट्रायल शुरू करें",
+"plansNoChargeTodayFooter": "7 दिन मुफ्त · आज कोई शुल्क नहीं",
+
+"planFreeTitle": "मुफ्त",
+"planFreeSubtitle": "शुरुआत के लिए",
+"planPremiumMonthlyTitle": "प्रीमियम मासिक",
+"planPremiumYearlyTitle": "प्रीमियम वार्षिक",
+"planPerMonth": "प्रति माह",
+"planPerYear": "प्रति वर्ष",
+
+"planBadgeCurrent": "वर्तमान प्लान",
+"planBadgePopular": "लोकप्रिय",
+"planBadgeBestValue": "सबसे अच्छा मूल्य",
+
+"planYouAreOnThisPlan": "आप पहले से इस प्लान पर हैं।",
+
+"planFeatureUpToRecords": "अधिकतम {count} रिकॉर्ड",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "कस्टम श्रेणियाँ (अधिकतम {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "पूर्वनिर्धारित उपश्रेणियाँ",
+"planFeatureCloudStorage": "क्लाउड स्टोरेज",
+"planFeatureSmartExpiryInsights": "स्मार्ट समाप्ति जानकारी",
+"planFeatureCoverageBalance": "कवरेज संतुलन",
+"planFeatureRecordStabilityTracking": "रिकॉर्ड स्थिरता",
+
+"planFeatureUnlimitedRecords": "असीमित रिकॉर्ड",
+"planFeatureUnlimitedCategories": "असीमित श्रेणियाँ",
+"planFeatureCustomSubcategories": "कस्टम उपश्रेणियाँ",
+"planFeatureMultipleRemindersPerRecord": "एकाधिक रिमाइंडर",
+"planFeatureAdvancedReminderTiming": "उन्नत समय नियंत्रण",
+"planFeatureAutomaticFollowUps": "स्वचालित फॉलो-अप",
+
+"planFeatureEverythingInMonthly": "मासिक में सब कुछ",
+"planFeatureSavePercentComparedToMonthly": "मासिक से {percent}% बचाएँ",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "सबसे अच्छा दीर्घकालिक मूल्य",
+"editorReminderLabel": "रिमाइंडर",
+"editorReminderSelectOptional": "रिमाइंडर चुनें (वैकल्पिक)",
+"editorReminderOnExpiry": "समाप्ति के दिन",
+"editorReminderDaysBefore": "समाप्ति से {days} दिन पहले",
+"editorFreeItemsCount": "मुफ़्त रिकॉर्ड: {used}/{limit}",
+"editorExpiryPastWarning": "समाप्ति तिथि पहले ही गुजर चुकी है।",
+"editorExpiryTodayWarning": "यह रिकॉर्ड आज समाप्त होता है।",
+"editorErrorExpiryPast": "समाप्ति तिथि अतीत में नहीं हो सकती।",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "आज की जानकारियाँ",
+"tutorialBannerTitle": "त्वरित मार्गदर्शिका",
+"tutorialBannerBody": "एक मिनट में खोजें, रिकॉर्ड जोड़ें और इनसाइट्स समझें।",
+"tutorialBannerStart": "ट्यूटोरियल शुरू करें",
+"tutorialBannerDismiss": "अभी नहीं",
+"authErrorUserDisabled": "यह खाता अक्षम कर दिया गया है।",
+"authErrorNetwork": "नेटवर्क त्रुटि। फिर से प्रयास करें।",
+"authErrorTooManyRequests": "बहुत अधिक प्रयास। बाद में कोशिश करें।",
+"authErrorSignInFailed": "साइन इन विफल हुआ। फिर से प्रयास करें।",
+"ok": "ठीक है",
+"snackPremiumEnabled": "प्रीमियम सक्रिय किया गया",
+"snackPremiumRestored": "प्रीमियम पुनः बहाल किया गया",
+"passwordNeedLower": "छोटा अक्षर होना चाहिए",
+"passwordNeedUpper": "बड़ा अक्षर होना चाहिए",
+"passwordNeedNumber": "संख्या होनी चाहिए",
+"passwordNeedSymbol": "चिन्ह होना चाहिए",
+"confirmIdentityTitle": "पहचान की पुष्टि करें",
+"confirm": "पुष्टि करें",
+"profile_sign_out_title": "साइन आउट",
+"profile_sign_out_subtitle": "इस डिवाइस पर Vaultara से साइन आउट करें",
+"profile_sign_out_confirm_title": "साइन आउट करें?",
+"profile_sign_out_confirm_body": "अपने खाते तक पहुँचने के लिए आपको फिर से साइन इन करना होगा।",
+"profile_sign_out_action": "साइन आउट",
+"todayInsightsAudioHint": "ऑडियो पसंद है? स्पीकर आइकन का उपयोग करें।",
+"category2Label": "श्रेणी",
+"enable2BiometricsBody": "अपने Vaultara खाते की सुरक्षा के लिए फिंगरप्रिंट का उपयोग करें।",
+"snackNotificationsDisabled": "सूचनाएं बंद हैं। रिमाइंडर पाने के लिए इन्हें चालू करें।",
+"openSettings": "सेटिंग्स खोलें",
+
+"reminderOnExpiryTitle": "आज समाप्त हो रहा है",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "नमस्ते {firstName}, \"{itemName}\" आज समाप्त हो रहा है।",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "मुफ़्त श्रेणियाँ: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "मुफ़्त सीमा में से कितनी मुफ़्त श्रेणियाँ उपयोग हुई हैं दिखाता है।",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "नोट्स जोड़ें (वैकल्पिक)",
+"apply": "लागू करें",
+"smartInsightExpiresTodayHeading": "आज समाप्त हो रहा है",
+"smartInsightExpiresTodaySingleBody": "{name} आज समाप्त हो रहा है। इसे अद्यतन रखने के लिए अभी कार्रवाई करें।",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} और 1 अन्य दस्तावेज़ आज समाप्त हो रहे हैं।} other{{names} और {extra} अन्य दस्तावेज़ आज समाप्त हो रहे हैं।}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "आपके ध्यान की आवश्यकता है",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} 1 दिन में समाप्त हो रहा है और कोई अनुस्मारक नहीं है। पुष्टि करें कि विवरण अभी भी सही हैं।} other{{name} {days} दिनों में समाप्त हो रहा है और कोई अनुस्मारक नहीं है। पुष्टि करें कि विवरण अभी भी सही हैं।}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "एक साथ कई नवीनीकरण",
+"smartInsightRenewalTwinBodyTwo": "{a} और {b} एक दूसरे के तीन सप्ताह के भीतर समाप्त हो रहे हैं। पहले से योजना बनाएं।",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, और {c} सभी तीन सप्ताह के भीतर समाप्त हो रहे हैं। पहले से योजना बनाएं।",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, और 1 अन्य दस्तावेज़ तीन सप्ताह के भीतर समाप्त हो रहे हैं। पहले से योजना बनाएं।} other{{a}, {b}, और {extra} अन्य दस्तावेज़ तीन सप्ताह के भीतर समाप्त हो रहे हैं। पहले से योजना बनाएं।}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "आगामी समूह",
+"smartInsightClusterBody": "{count, plural, =1{{category} में 1 दस्तावेज़ अगले दो महीनों में समाप्त हो रहा है। उन्हें एक साथ संभालने पर विचार करें।} other{{category} में {count} दस्तावेज़ अगले दो महीनों में समाप्त हो रहे हैं। उन्हें एक साथ संभालने पर विचार करें।}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "शांत अवधि आगे",
+"smartInsightQuietPeriodBody": "{days, plural, =1{अगले 1 दिन में कुछ भी समाप्त नहीं हो रहा है। आपका अगला नवीनीकरण {firstDate} को है।} other{अगले {days} दिनों में कुछ भी समाप्त नहीं हो रहा है। आपका अगला नवीनीकरण {firstDate} को है।}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "सब कुछ अद्यतन है",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 आगामी समाप्ति अनुस्मारकों द्वारा कवर है। और कुछ भी आपके ध्यान की आवश्यकता नहीं है।} other{{count} आगामी समाप्तियां अनुस्मारकों द्वारा कवर हैं। और कुछ भी आपके ध्यान की आवश्यकता नहीं है।}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "सब कुछ अद्यतन है। अभी कुछ भी आपके ध्यान की आवश्यकता नहीं है।",
+"smartInsightNoRecordsHeading": "अपना पहला रिकॉर्ड जोड़ें",
+"smartInsightNoRecordsBody": "अपने दस्तावेज़ों को ट्रैक करना शुरू करें और Vaultara यहां स्मार्ट अंतर्दृष्टि प्रदर्शित करेगा।",
+"expiryTimelineTitle": "समाप्ति समयरेखा",
+"expiryTimelineSubtitle": "उस महीने में समाप्त होने वाले रिकॉर्ड देखने के लिए महीने पर टैप करें",
+"expiryTimelineDetailCount": "{count, plural, =1{1 रिकॉर्ड} other{{count} रिकॉर्ड}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "आगामी",
+"summaryUpcomingCaption": "अगले 30 दिनों के भीतर",
+"summaryUrgentTitle": "अत्यावश्यक",
+"summaryUrgentCaption": "अगले 7 दिनों के भीतर"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

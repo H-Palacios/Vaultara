@@ -1,0 +1,850 @@
+{
+  "@@locale": "fi",
+  "expiryCalendarTitle": "Vanhentumiskalenteri",
+
+  "calendarIntro": "Valitse, miten haluat tarkastella vanhentumisia:\n\n• Kirjoita, kuinka monta päivää eteenpäin haluat katsoa.\n• Tai valitse tarkka päivämäärä kalenterista.\n\nVaultara näyttää, mitkä tuotteet vanhenevat kyseisenä päivänä.",
+
+  "daysFromTodayLabel": "Päiviä tästä päivästä",
+  "daysFromTodayHint": "Esimerkiksi 0, 1, 7, 30",
+
+  "apply": "Käytä",
+  "pickDateOnCalendar": "Valitse päivämäärä kalenterista",
+
+  "today": "Tänään",
+  "tomorrow": "Huomenna",
+  "in7Days": "7 päivän kuluttua",
+  "in30Days": "30 päivän kuluttua",
+
+  "inDays": "{days} päivän kuluttua",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "Anna päivien määrä.",
+  "invalidDaysError": "Anna kelvollinen päivien määrä (0 tai suurempi).",
+
+  "showingItemsRelative": "Näytetään tuotteet, jotka vanhenevat {time}",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "Näytetään tuotteet, jotka vanhenevat valittuna päivänä",
+  "noItemsOnDate": "Yhtään tuotetta ei vanhene kyseisenä päivänä.",
+
+  "editorAddTitle": "Lisää tuote",
+  "editorEditTitle": "Muokkaa tuotetta",
+
+  "editorCategory": "Kategoria",
+  "editorCategoryHint": "Valitse kategoria",
+
+  "editorGroup": "Ryhmä",
+  "editorGroupHint": "Valitse ryhmä tämän kategorian alta",
+
+  "editorItemName": "Tuotteen nimi",
+  "editorItemNameHint": "Syötä tuotteen nimi",
+
+  "editorExpiryDate": "Vanhentumispäivä",
+  "editorExpiryDateHint": "Valitse vanhentumispäivä",
+
+  "editorErrorCategory": "Valitse kategoria",
+  "editorErrorGroup": "Valitse ryhmä",
+  "editorErrorName": "Tuotteen nimi vaaditaan",
+  "editorErrorExpiry": "Valitse vanhentumispäivä",
+  "editorErrorExpiryPast": "Vanhentumispäivän tulee olla tänään tai tulevaisuudessa",
+  "cancel": "Peruuta",
+"save": "Tallenna",
+
+"addCategoryTitle": "Lisää kategoria",
+"unlimitedCategories": "Rajoittamattomat kategoriat (Premium)",
+
+"categoryUsage": "{current} / {limit} kategoriaa käytössä",
+
+"categoryNameLabel": "Kategoria",
+"categoryNameHint": "Syötä kategoria",
+
+"categoryLimitReached": "Olet saavuttanut Basic-suunnitelman {limit} kategorian rajan. Päivitä Premiumiin.",
+
+"categoryLimitInfo": "Basic-suunnitelmassa voit luoda enintään {limit} kategoriaa.",
+
+"categoryErrorEmpty": "Kategoria on pakollinen",
+"categoryErrorTooShort": "Kategoria on liian lyhyt",
+"categoryErrorTooLong": "Kategoria on liian pitkä",
+"categoryErrorSymbols": "Kategoria ei voi sisältää vain symboleja",
+"categoryErrorNumbers": "Kategoria ei voi sisältää vain numeroita",
+
+"upgradeRequired": "Päivitys vaaditaan",
+"viewPremiumBenefits": "Näytä Premium-edut",
+"createCategory": "Luo",
+
+"addGroupTitle": "Lisää ryhmä",
+"groupNameLabel": "Ryhmä",
+"groupNameHint": "Syötä ryhmä",
+
+"groupErrorEmpty": "Ryhmä on pakollinen",
+"groupErrorTooShort": "Ryhmä on liian lyhyt",
+"groupErrorTooLong": "Ryhmä on liian pitkä",
+"groupErrorSymbols": "Ryhmä ei voi sisältää symboleja",
+"groupErrorNumbers": "Ryhmä ei voi sisältää numeroita",
+"createGroup": "Luo",
+
+"firstNameLabel": "Etunimi",
+"firstNameHint": "Syötä etunimi",
+
+"lastNameLabel": "Sukunimi",
+"lastNameHint": "Syötä sukunimi",
+
+"emailLabel": "Sähköpostiosoite",
+"loginPasswordHint": "Syötä salasanasi",
+"registerPasswordHint": "Syötä salasana",
+"passwordHelper": "Vähintään 8 merkkiä ja eri merkkejä",
+
+"passwordTooShort": "Liian lyhyt",
+"passwordTooWeak": "Liian heikko",
+"passwordMedium": "Keskitaso",
+"passwordStrong": "Vahva",
+
+"errorFirstName": "Etunimi vaaditaan",
+"errorLastName": "Sukunimi vaaditaan",
+"errorEmailInvalid": "Syötä kelvollinen sähköpostiosoite",
+"errorEmailInUse": "Tämä sähköpostiosoite on jo\nliitetty Vaultara-tiliin",
+"errorPasswordLength": "Salasanan tulee olla vähintään kahdeksan merkkiä",
+"errorPasswordWeak": "Syötä vahvempi salasana",
+"errorGeneric": "Rekisteröinti epäonnistui. Yritä uudelleen",
+
+"createAccount": "Luo tili",
+"appName": "Vaultara",
+"authTagline": "Henkilökohtainen keskuksesi passeille, ajokorteille, korteille ja muille tärkeille asiakirjoille",
+"tabSignIn": "Kirjaudu sisään",
+"tabCreateAccount": "Luo tili",
+"signInFooterText": "Kirjaudu sisään ja hallitse kaikkia uusintoja helposti",
+"createAccountFooterText": "Luo Vaultara-tili ja käytä muistutuksiasi milloin tahansa",
+
+"emailRequired": "Sähköpostiosoite vaaditaan",
+"passwordRequired": "Salasana vaaditaan",
+"emailNotFound": "Väärä sähköposti. Tällä osoitteella ei ole\nVaultara-tiliä",
+"incorrectPassword": "Väärä salasana",
+
+"emailLabel": "Sähköpostiosoite",
+"emailHint": "Syötä sähköpostiosoite",
+"passwordLabel": "Salasana",
+"signIn": "Kirjaudu sisään",
+
+"categoryPersonalIdentification": "Henkilöllisyysasiakirjat",
+"categoryDrivingAndVehicles": "Ajaminen ja ajoneuvot",
+"categoryTravelAndImmigration": "Matkustus ja maahanmuutto",
+"categoryBankingAndCards": "Pankki ja kortit",
+"categoryInsuranceAndCover": "Vakuutus ja turva",
+"categoryHealthAndMedical": "Terveys ja lääketiede",
+"categoryWorkAndProfessional": "Työ ja ammatillinen",
+"categoryPropertyAndHousing": "Kiinteistöt ja asuminen",
+"categoryHouseholdAndUtilities": "Kotitalous ja palvelut",
+
+"subcategoryPassports": "Passit",
+"subcategoryIdCards": "Henkilökortit",
+"subcategoryResidencePermits": "Oleskeluluvat",
+
+"subcategoryDrivingLicences": "Ajokortit",
+"subcategoryVehicleRegistrations": "Ajoneuvorekisteröinnit",
+"subcategoryRoadworthyCertificates": "Katsastustodistukset",
+"subcategoryVehicleInspectionCertificates": "Ajoneuvotarkastustodistukset",
+
+"subcategoryVisas": "Viisumit",
+"subcategoryStudyPermits": "Opiskeluluvat",
+"subcategoryWorkPermits": "Työluvat",
+"subcategoryTravelInsuranceDocuments": "Matkavakuutusasiakirjat",
+
+"subcategoryDebitAndCreditCards": "Debit- ja luottokortit",
+"subcategoryStoreCards": "Kauppakortit",
+"subcategoryFuelCards": "Polttoainekortit",
+"subcategoryVehicleInsurances": "Ajoneuvovakuutukset",
+"subcategoryPropertyInsurances": "Omaisuusvakuutukset",
+"subcategoryLifeInsurances": "Henkivakuutukset",
+"subcategoryHealthInsurances": "Sairausvakuutukset",
+"subcategoryTravelInsurances": "Matkavakuutukset",
+
+"subcategoryMedicalPrescriptions": "Lääkemääräykset",
+"subcategoryOpticalPrescriptions": "Optiset reseptit",
+"subcategoryMedicalCertificates": "Lääkärintodistukset",
+
+"subcategoryProfessionalLicences": "Ammattipätevyydet",
+"subcategoryProfessionalRegistrations": "Ammattirekisteröinnit",
+"subcategoryIndustryRegistrations": "Toimialarekisteröinnit",
+"subcategoryWorkAccessCards": "Työkulkukortit",
+
+"subcategoryLeaseAgreements": "Vuokrasopimukset",
+"subcategoryAccessCardsAndTags": "Kulku- ja tunnistekortit",
+"subcategoryParkingPermits": "Pysäköintiluvat",
+"subcategorySecurityAccessPermits": "Turvallisuuskulkuluvat",
+
+"subcategoryElectricityAccounts": "Sähkösopimukset",
+"subcategoryWaterAccounts": "Vesitilit",
+"subcategoryInternetContracts": "Internet-sopimukset",
+"subcategorySecurityServiceContracts": "Turvapalvelusopimukset",
+
+"searchCategories": "Hae kategorioita",
+"filterAll": "Kaikki",
+"filterPreset": "Esiasetetut",
+"filterCustom": "Mukautetut",
+"addCategoryTitle": "Lisää kategoria",
+"customLabel": "Mukautettu",
+"subcategoriesLabel": "alaluokat",
+"itemsLabel": "kohteet",
+
+"itemsExpiring": "{count} kohdetta vanhenee {days} päivän kuluttua",
+
+"pinnedEssentials": "Kiinnitetyt tärkeät",
+"pinnedHint": "Kiinnitä useimmin käyttämäsi kategoriat.",
+"noCategoriesFound": "Kategorioita ei löytynyt",
+
+"searchGroups": "Hae ryhmiä",
+"addGroupTitle": "Lisää ryhmä",
+
+"basicPlanGroupInfo": "Olet Basic-suunnitelmassa.\nVoit tarkastella esiasetettuja ryhmiä.\nPäivitä Premiumiin luodaksesi omia ryhmiä.",
+
+"groupDeleted": "Ryhmä poistettu",
+"undo": "KUMOA",
+
+"groupTapHint": "Napauta lisätäksesi ja seurataksesi kohteita tässä ryhmässä.",
+"itemsInGroup": "Tämän ryhmän kohteet",
+"itemsInGroupHint": "Seuraa jokaista tärkeää kohdetta sen vanhenemispäivällä.",
+"searchItems": "Hae kohteita",
+"filterExpiringWithin": "Vanhenee {days} päivän sisällä",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Vanhentuneet",
+"addItem": "Lisää kohde",
+"noItemsYet": "Ei vielä kohteita.",
+
+"statusExpired": "Vanhentunut",
+"statusExpiresToday": "Vanhenee tänään",
+"statusExpiresInOneDay": "Vanhenee 1 päivän kuluttua",
+"statusExpiresInDays": "Vanhenee {days} päivän kuluttua",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Voimassa",
+
+"deleteCategoryTitle": "Poista kategoria",
+"deleteCategoryMessage": "Haluatko varmasti poistaa kategorian \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Poista ryhmä",
+"deleteGroupMessage": "Haluatko varmasti poistaa ryhmän \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Poista kohde",
+"deleteItemMessage": "Haluatko varmasti poistaa kohteen \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Peruuta",
+"delete": "Poista",
+
+"homeWelcomeTitle": "Tervetuloa",
+
+"homeWelcomeFirstTitle": "Tervetuloa, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Tervetuloa takaisin, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Kaikki",
+"homeWelcomeSubtitleGeneric": "Vaultara auttaa sinua seuraamaan tärkeitä päivämääriä, jotta mikään ei vanhene huomaamatta.",
+
+"homeWelcomeSubtitleFirst": "Hienoa, että olet täällä. Vaultara auttaa pitämään tärkeät päivämäärät ja tiedot yhdessä turvallisessa paikassa.",
+
+"homeWelcomeSubtitleBack": "Mukava nähdä sinua taas. Vaultara on aina valmiina tärkeiden tietojesi tarkasteluun.",
+
+"insightEmptyTitle": "Mitään ei ole vielä lisätty",
+"insightEmptyBody": "Kun alat seurata tärkeitä päivämääriä, Vaultara auttaa sinua pysymään ajoissa.",
+
+"insightExpiresTodayTitle": "\"{name}\" vanhenee tänään",
+"insightExpiresTodayBody": "Nopea tarkistus auttaa pitämään tiedot oikein.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" vanhenee huomenna",
+"insightExpiresTomorrowBody": "Tarkistaminen tänään säästää aikaa myöhemmin.",
+
+"insightExpiresSoonTitle": "\"{name}\" vanhenee {date}",
+"insightExpiresSoonBody": "Aikainen käsittely tekee asioista helpompia.",
+
+"insightNextExpiryTitle": "Seuraava vanheneminen on \"{name}\" {date}",
+"insightNextExpiryBody": "Toimia ei vielä tarvita, mutta on hyvä muistaa.",
+
+"insightClusteredTitle": "Useita kohteita vanhenee {month}",
+"insightClusteredBody": "Yhdessä tarkistaminen säästää aikaa.",
+
+"insightTopCategoryTitle": "Useimmat kohteesi ovat kategoriassa {category}",
+"insightTopCategoryBody": "Tämän alueen tarkistus tuo suurimman hyödyn.",
+
+"insightStableTitle": "Kaikki näyttää vakaalta",
+"insightStableBody": "Ei ole vanhenemisia, jotka vaatisivat huomiota.",
+
+"summaryAllTitle": "Kaikki kohteet",
+"summaryAllCaption": "Seurattu Vaultarassa",
+"summarySoonTitle": "Vanhenee pian",
+"summarySoonCaption": "30 päivän sisällä",
+"summaryWeekTitle": "Tällä viikolla",
+"summaryWeekCaption": "Vanhenee 7 päivässä",
+"summaryExpiredTitle": "Vanhentuneet",
+"summaryExpiredCaption": "Vanhentumispäivän jälkeen",
+
+"stabilityStableTitle": "Vakaus on hyvä",
+"stabilityStableBody": "Tietosi eivät osoita välittömiä riskejä.",
+
+"stabilityDecliningTitle": "Vakaus heikkenee",
+"stabilityDecliningBody": "Jotkin kohteet ovat vanhentuneet ja lisää lähestyy.",
+
+"stabilityWeakenedTitle": "Vakaus heikentynyt",
+"stabilityWeakenedBody": "Vanhentuneet tiedot heikentävät luotettavuutta.",
+
+"stabilityPressureTitle": "Paine kasvaa",
+"stabilityPressureBody": "Useat tiedot vaativat pian huomiota.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Muistiinpanot",
+"notesHint": "Kirjoita muistiinpanoja",
+"editorReminderTitle": "Muistutus",
+"editorReminderNone": "Ei muistutusta",
+"editorReminderOnExpiry": "Eräpäivänä",
+"editorReminder7Days": "7 päivää ennen eräpäivää",
+"editorReminder30Days": "30 päivää ennen eräpäivää",
+"editorReminderCustom": "Mukautettu",
+"daysBeforeExpiry": "päivää ennen eräpäivää",
+
+"reminderStage0Title": "Eräpäivämuistutus",
+"reminderStage0Body": "{firstName}, kohteesi {itemName} vanhenee {days} päivän kuluttua.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Muistutuksen jatko",
+"reminderStage1Body": "{firstName}, kohdetta {itemName} ei ole vielä päivitetty.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Eräpäivä lähestyy",
+"reminderStage2Body": "Kohteen {itemName} eräpäivä lähestyy.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Viimeinen muistutus",
+"reminderFinalBody": "{firstName}, päivitä {itemName} nyt.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Kattavuuden tasapaino",
+"coverageAllRepresented": "Tietosi sisältävät kohteita kaikista kategorioista.",
+"coverageMissingNamed": "Ei tietoja {count} kategoriassa: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Et ole lisännyt tietoja {count} kategoriaan, mukaan lukien {names} ja vielä {remaining} muuta.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Käytä salasanaa sen sijaan",
+"signInWithBiometrics": "Kirjaudu biometrisellä tunnistuksella",
+"enableBiometricsTitle": "Ota biometrinen suojaus käyttöön",
+"enableBiometricsBody": "Käytä sormenjälkeä tai kasvojentunnistusta Vaultaran suojaamiseen.",
+"enableBiometricsReason": "Ota biometrinen lukitus käyttöön Vaultarassa.",
+"notNow": "Ei nyt",
+"useBiometrics": "Käytä biometriaa",
+
+"recordsCalendarIntro": "Valitse, miten haluat tarkastella eräpäiviä:\n\n• Kirjoita, kuinka monen päivän päähän haluat katsoa.\n• Tai valitse tarkka päivämäärä kalenterista.\n\nVaultara näyttää, mitkä tiedot vanhenevat kyseisenä päivänä.",
+
+"showingRecordsRelative": "Näytetään tiedot, jotka vanhenevat {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Näytetään tiedot, jotka vanhenevat valittuna päivänä",
+
+"noRecordsOnDate": "Yksikään tieto ei vanhene kyseisenä päivänä.",
+
+"recordEditorAddTitle": "Lisää tieto",
+"recordEditorEditTitle": "Muokkaa tietoa",
+
+"editorRecordName": "Tiedon nimi",
+"editorRecordNameHint": "Syötä tiedon nimi",
+"recordEditorErrorName": "Tiedon nimi on pakollinen",
+
+"recordsGroupTapHint": "Napauta lisätäksesi ja seurataksesi tietoja tässä ryhmässä.",
+
+"recordsInGroup": "Tiedot tässä ryhmässä",
+
+"recordsInGroupHint": "Seuraa jokaista tärkeää tietoa sen eräpäivän avulla.",
+
+"searchRecords": "Hae tietoja",
+
+"addRecord": "Lisää tieto",
+
+"noRecordsYet": "Ei vielä tietoja.",
+"deleteRecordTitle": "Poista tieto",
+
+"recordsInsightClusteredTitle": "Useat tiedot vanhenevat noin {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Suurin osa tiedoistasi on ryhmitelty kategoriaan {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Kaikki tiedot",
+
+"recordsStabilityDecliningBody": "Osa tiedoista on jo vanhentunut, ja lisää on pian vanhenemassa.",
+
+"recordsCoverageAllRepresented": "Tietosi sisältävät merkintöjä kaikista kategorioista.",
+
+"recordReminderStage0Body": "{firstName}, tietosi {recordName} vanhenee {days} päivän kuluttua.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, tietoa {recordName} ei ole vielä päivitetty.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "Tiedon {recordName} eräpäivä lähestyy.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, päivitä {recordName} nyt.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Ei vielä ryhmiä",
+
+"recordsExpiring": "{count, plural, one {1 tieto vanhenee {days} päivän kuluttua} other {{count} tietoa vanhenee {days} päivän kuluttua}}",
+
+"recordsGroupStats": "{records, plural, one {1 tieto} other {{records} tietoa}} • {expiring} vanhenee {days} päivän kuluessa",
+
+"groupLabel": "{count, plural, one {{count} ryhmä} other {{count} ryhmää}}",
+
+"recordsLabel": "{count, plural, one {{count} tieto} other {{count} tietoa}}",
+
+"forgotPassword": "Unohditko salasanan?",
+"forgotPasswordTitle": "Nollaa salasana",
+"forgotPasswordBody": "Syötä sähköpostiosoitteesi, niin lähetämme sinulle linkin salasanan vaihtamiseen.",
+"sendResetLink": "Lähetä nollauslinkki",
+"passwordResetEmailSent": "Salasanan nollausviesti on lähetetty.",
+"verifyEmailToContinue": "Vahvista sähköpostiosoitteesi ennen kirjautumista",
+
+"changeEmailTitle": "Vaihda sähköpostiosoite",
+"newEmailHint": "Syötä uusi sähköpostiosoite",
+"sendVerificationEmail": "Lähetä vahvistusviesti",
+
+"deleteAccountTitle": "Poista tili",
+"deleteAccountWarning": "Tämä toiminto poistaa tilisi ja kaikki tallennetut tiedot pysyvästi.\nTätä ei voi perua.",
+"deleteAccountConfirm": "Poista tili pysyvästi",
+
+"supportTitle": "Tuki",
+"supportSubtitle": "Ota yhteyttä, jos tarvitset apua tai sinulla on kysyttävää.",
+"supportEmailSubject": "Vaultara tukipyyntö",
+"supportEmailError": "Sähköpostisovellusta ei voitu avata.",
+
+"passwordResetEmailFailed": "Salasanan nollausviestiä ei voitu lähettää.",
+
+"loggedInPasswordResetBody": "Lähetämme salasanan nollauslinkin osoitteeseen:\n{email}",
+
+"accountManagementTitle": "Tilin hallinta",
+"changeEmailSubtitle": "Päivitä tiliisi liitetty sähköpostiosoite.",
+"changePasswordTitle": "Vaihda salasana",
+"changePasswordSubtitle": "Lähetämme sinulle linkin salasanan turvalliseen vaihtamiseen.",
+
+"deleteAccountSubtitle": "Poista Vaultara-tilisi pysyvästi.",
+
+"biometricAuthReason": "Tunnistaudu käyttääksesi Vaultara-tiliäsi.",
+
+"verifyEmailTitle": "Vahvista sähköpostisi",
+"verifyEmailBody": "Olemme lähettäneet vahvistusviestin sähköpostiisi. Avaa se ja vahvista osoitteesi, sitten palaa tänne jatkaaksesi.",
+"verifyEmailConfirmedButton": "Olen vahvistanut sähköpostini",
+"verifyEmailResendButton": "Lähetä vahvistusviesti uudelleen",
+"verifyEmailSending": "Lähetetään...",
+
+"navHome": "Etusivu",
+"navCategories": "Luokat",
+"navInsights": "Tiedot",
+"navCalendar": "Kalenteri",
+"tutorialHomeSearch": "Käytä hakupalkkia löytääksesi nopeasti minkä tahansa seuraamasi tiedon.",
+"tutorialHomeFab": "Lisää ensimmäinen tietosi tästä.\nValitse sijainti, lisää muistiinpanot ja valitse eräpäivä.",
+"tutorialHomeSummary": "Kun lisäät lisää tietoja, tämä osio auttaa havaitsemaan vanhenevat tai vanhentuneet kohteet.",
+"tutorialHomeInsight": "Tämä älykäs näkymä korostaa malleja ja tulevia vanhenemisia.\nVoit kuunnella sen myös ääneen.",
+"tutorialHomeCoverage": "Kattavuuden tasapaino näyttää, kuinka tasaisesti tietosi jakautuvat kategorioihin.\nKorkeampi tasapaino tarkoittaa vähemmän puutteita.",
+"tutorialHomeStability": "Vakaus kuvaa tietojen luotettavuutta ajan mittaan.\nVanhentuneet ja pian vanhenevat tiedot heikentävät vakautta.",
+
+"tutorialCancel": "Peruuta",
+"tutorialNext": "Seuraava",
+"tutorialEnd": "Lopeta opastus",
+
+"softDeleteCategory": "Kategoria",
+"softDeleteGroup": "Ryhmä",
+"softDeleteRecord": "Tieto",
+
+"softDeleteTitle": "Siirrä {type} Äskettäin poistettuihin",
+"softDeleteMessage": "{type} \"{name}\" siirretään Äskettäin poistettuihin.\n\nVoit palauttaa sen 30 päivän kuluessa. Tämän jälkeen se poistetaan pysyvästi.",
+"softDeleteMove": "Siirrä",
+"@recordsExpiring": {
+  "description": "Näyttää kuinka monta tietoa vanhenee tietyn päivän kuluessa",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Ryhmätilastot: tietojen määrä ja vanhenevat tiedot",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Ryhmien lukumäärä", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Tietojen lukumäärä", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "Ilmoittaa salasanan palautussähköpostin lähettämisestä", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "Otsikko poistamisen vahvistukselle", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "Selittää väliaikaisen poistamisen", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "Äskettäin poistetut",
+"categories": "Kategoriat",
+"groups": "Ryhmät",
+"records": "Tietueet",
+"restore": "Palauta",
+"deletePermanently": "Poista pysyvästi",
+
+"recentlyDeletedBanner": "Poistetut {type} säilytetään täällä 30 päivää ennen pysyvää poistamista.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Etsi poistettuja {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Ei poistettuja {type} vielä",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Napauta kategoriaa nähdäksesi sen ryhmät ja hallitaksesi tietueita.",
+"groupsHint": "Ryhmät järjestävät tietueesi tässä kategoriassa. Napauta ryhmää hallitaksesi tietueita.",
+"notLoggedIn": "Ei kirjautuneena",
+
+"recordsInsideGroupHint": "Nämä ovat tämän ryhmän tietueet.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" siirrettiin Äskettäin poistettuihin",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Passi"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" poistettu onnistuneesti",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Ajokortti"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" päivitetty onnistuneesti",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Viisumi"} } },
+
+"snackAddedSuccessfully": "\"{name}\" lisätty onnistuneesti",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Vakuutus"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" palautettu onnistuneesti",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Passi"} } },
+
+"snackFreeLimitReached": "Ilmainen raja saavutettu ({current}/{limit}). Päivitä lisätäksesi lisää.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Hae kaikista tietueista",
+"globalSearchHint": "Kirjoita tietueen nimi, kategoria tai ryhmä",
+"globalSearchNoMatches": "Hakusi ei vastaa yhtään tietuetta.",
+"snackNoRecordsToSearch": "Ei tietueita haettavaksi. Lisää muutama tietue ja Vaultara indeksoi ne automaattisesti.",
+
+"recoveryCentreTitle": "Palautuskeskus",
+"recoveryCentreSubtitle": "Palauta tai poista pysyvästi poistetut tietueet.",
+
+"plan_premium": "Premium",
+"plan_free": "Ilmainen",
+
+"profile_app_settings_title": "Sovelluksen asetukset",
+"profile_privacy_security_title": "Tietosuoja ja turvallisuus",
+"profile_biometric_on": "Biometrinen lukitus on käytössä tällä laitteella.",
+"profile_biometric_off": "Biometrinen lukitus on pois käytöstä.",
+"profile_biometric_enable_reason": "Vahvista henkilöllisyytesi ottaaksesi biometrisen lukituksen käyttöön.",
+"profile_biometric_disable_reason": "Vahvista henkilöllisyytesi poistaaksesi biometrisen lukituksen.",
+"profile_account_management_title": "Tilinhallinta",
+"profile_premium_active_title": "Premium on aktiivinen",
+"profile_premium_upgrade_title": "Päivitä Premiumiin",
+"profile_premium_active_subtitle": "Edistyneet muistutukset käytössä.",
+"profile_premium_upgrade_subtitle": "Avaa edistyneet muistutukset ja rajaton järjestely.",
+"profile_manage_cancel_hint": "Hallitse tai peru milloin tahansa Google Playssa.",
+"profile_manage_subscription_button": "Hallitse tilausta",
+"plansTitle": "Valitse suunnitelma",
+"plansTrialBanner": "Aloita 7 päivän ilmainen kokeilu.\nPeru milloin tahansa.",
+"plansLoading": "Ladataan…",
+"plansStartFreeTrial": "Aloita ilmainen kokeilu",
+"plansNoChargeTodayFooter": "7 päivää ilmaiseksi · Ei veloitusta tänään",
+
+"planFreeTitle": "Ilmainen",
+"planFreeSubtitle": "Aloittelijoille",
+"planPremiumMonthlyTitle": "Premium kuukausittain",
+"planPremiumYearlyTitle": "Premium vuosittain",
+"planPerMonth": "kuukaudessa",
+"planPerYear": "vuodessa",
+
+"planBadgeCurrent": "Nykyinen suunnitelma",
+"planBadgePopular": "Suosittu",
+"planBadgeBestValue": "Paras arvo",
+
+"planYouAreOnThisPlan": "Olet jo tällä suunnitelmalla.",
+
+"planFeatureUpToRecords": "Enintään {count} tietuetta",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Mukautetut kategoriat (enintään {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Esiasetetut alaluokat",
+"planFeatureCloudStorage": "Pilvitallennus",
+"planFeatureSmartExpiryInsights": "Älykkäät vanhenemisilmoitukset",
+"planFeatureCoverageBalance": "Kattavuuden tasapaino",
+"planFeatureRecordStabilityTracking": "Tietueiden vakauden seuranta",
+
+"planFeatureUnlimitedRecords": "Rajoittamattomat tietueet",
+"planFeatureUnlimitedCategories": "Rajoittamattomat kategoriat",
+"planFeatureCustomSubcategories": "Mukautetut alaluokat",
+"planFeatureMultipleRemindersPerRecord": "Useita muistutuksia",
+"planFeatureAdvancedReminderTiming": "Edistynyt ajoitus",
+"planFeatureAutomaticFollowUps": "Automaattiset seurannat",
+
+"planFeatureEverythingInMonthly": "Kaikki kuukausisuunnitelmassa",
+"planFeatureSavePercentComparedToMonthly": "Säästä {percent}% verrattuna kuukausihintaan",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Paras pitkän aikavälin arvo",
+
+"editorReminderLabel": "Muistutus",
+"editorReminderSelectOptional": "Valitse muistutus (valinnainen)",
+"editorReminderOnExpiry": "Vanhenemispäivänä",
+"editorReminderDaysBefore": "{days} päivää ennen vanhenemista",
+"editorFreeItemsCount": "Ilmaiset kohteet: {used}/{limit}",
+"editorExpiryPastWarning": "Vanhentumispäivä on jo mennyt.",
+"editorExpiryTodayWarning": "Tämä tietue vanhenee tänään.",
+"editorErrorExpiryPast": "Vanhentumispäivä ei voi olla menneisyydessä.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Päivän havainnot",
+"tutorialBannerTitle": "Pikaesittely",
+"tutorialBannerBody": "Opit, mistä etsiä, miten lisätä tietueita ja mitä havainnot tarkoittavat alle minuutissa.",
+"tutorialBannerStart": "Aloita opastus",
+"tutorialBannerDismiss": "Ei nyt",
+"authErrorUserDisabled": "Tämä tili on poistettu käytöstä.",
+"authErrorNetwork": "Verkkovirhe. Tarkista internet-yhteys ja yritä uudelleen.",
+"authErrorTooManyRequests": "Liikaa yrityksiä. Yritä myöhemmin uudelleen.",
+"authErrorSignInFailed": "Kirjautuminen epäonnistui. Yritä uudelleen.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium otettu käyttöön",
+"snackPremiumRestored": "Premium palautettu",
+"passwordNeedLower": "Täytyy sisältää pienen kirjaimen",
+"passwordNeedUpper": "Täytyy sisältää ison kirjaimen",
+"passwordNeedNumber": "Täytyy sisältää numeron",
+"passwordNeedSymbol": "Täytyy sisältää symbolin",
+"profile_account_management_subtitle": "Vaihda sähköpostiosoite, salasana tai poista tilisi.",
+"confirmIdentityTitle": "Vahvista henkilöllisyys",
+"confirm": "Vahvista",
+"profile_sign_out_title": "Kirjaudu ulos",
+"profile_sign_out_subtitle": "Kirjaudu ulos Vaultarasta tällä laitteella",
+"profile_sign_out_confirm_title": "Kirjaudutaanko ulos?",
+"profile_sign_out_confirm_body": "Sinun täytyy kirjautua uudelleen sisään käyttääksesi tiliäsi.",
+"profile_sign_out_action": "Kirjaudu ulos",
+"todayInsightsAudioHint": "Haluatko ääntä? Käytä kaiutinkuvaketta.",
+"category2Label": "Kategoria",
+"enable2BiometricsBody": "Käytä sormenjälkitunnistusta Vaultara-tilisi suojaamiseen.",
+"snackNotificationsDisabled": "Ilmoitukset on poistettu käytöstä. Ota ne käyttöön saadaksesi muistutuksia.",
+"openSettings": "Avaa asetukset",
+
+"reminderOnExpiryTitle": "Vanhenee tänään",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hei {firstName}, \"{itemName}\" vanhenee tänään.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Ilmaiset kategoriat: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Näyttää, montako ilmaista kategoriaa on käytetty ilmaisesta rajasta.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Lisää muistiinpanoja (valinnainen)",
+"apply": "Käytä",
+"smartInsightExpiresTodayHeading": "Vanhenee Tänään",
+"smartInsightExpiresTodaySingleBody": "{name} vanhenee tänään. Toimi nyt pitääksesi sen ajan tasalla.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ja 1 muu asiakirja vanhenevat tänään.} other{{names} ja {extra} muuta asiakirjaa vanhenevat tänään.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Vaatii Huomiotasi",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} vanhenee 1 päivän kuluttua eikä siinä ole muistutusta. Varmista, että tiedot ovat edelleen oikein.} other{{name} vanhenee {days} päivän kuluttua eikä siinä ole muistutusta. Varmista, että tiedot ovat edelleen oikein.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Useita Uudistuksia Lähekkäin",
+"smartInsightRenewalTwinBodyTwo": "{a} ja {b} vanhenevat kolmen viikon sisällä toisistaan. Suunnittele etukäteen.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} ja {c} vanhenevat kaikki kolmen viikon sisällä. Suunnittele etukäteen.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} ja 1 muu asiakirja vanhenevat kolmen viikon sisällä. Suunnittele etukäteen.} other{{a}, {b} ja {extra} muuta asiakirjaa vanhenevat kolmen viikon sisällä. Suunnittele etukäteen.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Tuleva Ryhmä",
+"smartInsightClusterBody": "{count, plural, =1{1 asiakirja kategoriassa {category} vanhenee seuraavien kahden kuukauden aikana. Harkitse niiden käsittelyä yhdessä.} other{{count} asiakirjaa kategoriassa {category} vanhenevat seuraavien kahden kuukauden aikana. Harkitse niiden käsittelyä yhdessä.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Hiljainen Jakso Edessä",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Mikään ei vanhene seuraavan 1 päivän aikana. Seuraava uudistuksesi on {firstDate}.} other{Mikään ei vanhene seuraavien {days} päivän aikana. Seuraava uudistuksesi on {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Kaikki Ajan Tasalla",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 tuleva vanheneminen on katettu muistutuksilla. Mikään muu ei vaadi huomiotasi.} other{{count} tulevaa vanhenemista on katettu muistutuksilla. Mikään muu ei vaadi huomiotasi.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Kaikki ajan tasalla. Mikään ei vaadi huomiotasi juuri nyt.",
+"smartInsightNoRecordsHeading": "Lisää Ensimmäinen Tietueesi",
+"smartInsightNoRecordsBody": "Aloita asiakirjojesi seuraaminen ja Vaultara näyttää älykkäitä oivalluksia täällä.",
+"expiryTimelineTitle": "Vanhentumisaikajana",
+"expiryTimelineSubtitle": "Napauta kuukautta nähdäksesi kyseisenä kuukautena vanhenevat tietueet",
+"expiryTimelineDetailCount": "{count, plural, =1{1 tietue} other{{count} tietuetta}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Tulossa",
+"summaryUpcomingCaption": "Seuraavan 30 päivän aikana",
+"summaryUrgentTitle": "Kiireellinen",
+"summaryUrgentCaption": "Seuraavan 7 päivän aikana"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'login_screen.dart';
 import 'register_screen.dart';
 
 class AuthGatewayScreen extends StatefulWidget {
-  const AuthGatewayScreen({super.key});
+  final VoidCallback onAuthenticated;
+
+  const AuthGatewayScreen({
+    super.key,
+    required this.onAuthenticated,
+  });
 
   @override
   State<AuthGatewayScreen> createState() => _AuthGatewayScreenState();
@@ -16,10 +22,12 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
   late final TabController tabController;
 
   bool biometricsEnabled = false;
-  bool loadedPrefs = false;
-
-  /// 🔑 Controls which login view shows first
   bool showBiometricFirst = false;
+
+  bool _didPrecacheLogo = false;
+
+  static const String _kLegacyGlobalBioKey = 'biometricsEnabled';
+  static const String _kLastUidKey = 'lastUid';
 
   @override
   void initState() {
@@ -28,16 +36,37 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
     _loadPrefs();
   }
 
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_didPrecacheLogo) return;
+    _didPrecacheLogo = true;
+
+    try {
+      precacheImage(
+        const AssetImage('assets/images/vaultara_logo_teal.png'),
+        context,
+      );
+    } catch (_) {}
+  }
+
   Future<void> _loadPrefs() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
 
-    biometricsEnabled = prefs.getBool('biometricsEnabled') ?? false;
+    final lastUid = prefs.getString(_kLastUidKey);
+    bool enabled = false;
 
-    /// ✅ If biometrics are enabled,
-    /// show the biometric sign-in screen immediately
-    showBiometricFirst = biometricsEnabled;
+    if (lastUid != null && lastUid.trim().isNotEmpty) {
+      enabled = prefs.getBool('biometricsEnabled_$lastUid') ?? false;
+    } else {
+      enabled = prefs.getBool(_kLegacyGlobalBioKey) ?? false;
+    }
 
-    setState(() => loadedPrefs = true);
+    if (!mounted) return;
+    setState(() {
+      biometricsEnabled = enabled;
+      showBiometricFirst = false;
+    });
   }
 
   @override
@@ -48,13 +77,14 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
 
   @override
   Widget build(BuildContext context) {
-    final ColorScheme colourScheme = Theme.of(context).colorScheme;
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
 
-    final double screenHeight = MediaQuery.of(context).size.height;
-    final double formHeight = screenHeight < 700 ? 380 : 430;
+    final screenH = MediaQuery.of(context).size.height;
+    final formHeight = (screenH * 0.55).clamp(380.0, 520.0);
 
     return Scaffold(
-      backgroundColor: colourScheme.surface,
+      backgroundColor: scheme.surface,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -67,110 +97,106 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.verified_user_rounded,
-                        color: colourScheme.primary,
-                        size: 26,
+                      SizedBox(
+                        width: 75,
+                        height: 75,
+                        child: Image.asset(
+                          'assets/images/vaultara_logo_teal.png',
+                          fit: BoxFit.contain,
+                          gaplessPlayback: true,
+                          errorBuilder: (context, error, stackTrace) =>
+                              const SizedBox.shrink(),
+                        ),
                       ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Vaultara',
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.w900,
-                          color: colourScheme.primary,
-                          letterSpacing: -0.5,
+                      const SizedBox(width: 10),
+                      Flexible(
+                        child: Text(
+                          loc.appName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w900,
+                            color: scheme.primary,
+                          ),
                         ),
                       ),
                     ],
                   ),
                   const SizedBox(height: 6),
-                  const Text(
-                    'Your personal hub for passports, licences, cards and other important essentials.',
+                  Text(
+                    loc.authTagline,
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 20),
                   Card(
                     elevation: 2,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 12, 16, 20),
+                      padding: const EdgeInsets.fromLTRB(16, 14, 16, 18),
                       child: Column(
-                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Container(
-                            padding: const EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(999),
-                              color: colourScheme.surfaceVariant.withOpacity(0.6),
-                            ),
-                            child: TabBar(
-                              controller: tabController,
-                              indicatorSize: TabBarIndicatorSize.tab,
-                              dividerColor: Colors.transparent,
-                              labelStyle: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w700,
-                              ),
-                              unselectedLabelStyle: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                              ),
-                              labelColor: colourScheme.onPrimary,
-                              unselectedLabelColor:
-                                  colourScheme.onSurfaceVariant.withOpacity(0.85),
-                              indicator: BoxDecoration(
-                                color: colourScheme.primary,
+                          SizedBox(
+                            width: double.infinity,
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(999),
+                                color: scheme.surfaceVariant.withOpacity(0.85),
+                                border: Border.all(
+                                  color: scheme.outlineVariant.withOpacity(0.6),
+                                ),
                               ),
-                              tabs: const [
-                                Tab(text: 'Sign in'),
-                                Tab(text: 'Create account'),
-                              ],
+                              child: TabBar(
+                                controller: tabController,
+                                dividerColor: Colors.transparent,
+                                indicatorSize: TabBarIndicatorSize.tab,
+                                indicator: BoxDecoration(
+                                  color: scheme.primary,
+                                  borderRadius: BorderRadius.circular(999),
+                                ),
+                                labelColor: scheme.onPrimary,
+                                unselectedLabelColor:
+                                    scheme.onSurface.withOpacity(0.75),
+                                tabs: [
+                                  SizedBox(
+                                    height: 44,
+                                    child: Center(child: Text(loc.tabSignIn)),
+                                  ),
+                                  SizedBox(
+                                    height: 44,
+                                    child: Center(
+                                      child: Text(loc.tabCreateAccount),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
-                          const SizedBox(height: 16),
+                          const SizedBox(height: 14),
                           SizedBox(
                             height: formHeight,
-                            child: loadedPrefs
-                                ? TabBarView(
-                                    controller: tabController,
-                                    children: [
-                                      LoginScreen(
-                                        biometricsEnabled: biometricsEnabled,
-                                        showBiometricFirst: showBiometricFirst,
-                                      ),
-                                      const RegisterScreen(),
-                                    ],
-                                  )
-                                : const SizedBox.shrink(),
+                            child: TabBarView(
+                              controller: tabController,
+                              children: [
+                                LoginScreen(
+                                  biometricsEnabled: biometricsEnabled,
+                                  showBiometricFirst: showBiometricFirst,
+                                  onAuthenticated: widget.onAuthenticated,
+                                ),
+                                const RegisterScreen(),
+                              ],
+                            ),
                           ),
                         ],
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 16),
-                  AnimatedBuilder(
-                    animation: tabController,
-                    builder: (context, _) {
-                      final bool isSignIn = tabController.index == 0;
-                      return Text(
-                        isSignIn
-                            ? 'Sign in to access your personal Vaultara space and keep every renewal under control.'
-                            : 'Create your Vaultara account to back up your essential reminders and reach them whenever you need them.',
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      );
-                    },
                   ),
                 ],
               ),

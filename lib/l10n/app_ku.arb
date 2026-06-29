@@ -1,66 +1,65 @@
 {
   "@@locale": "ku",
 
-  "expiryCalendarTitle": "Salnameya Dawiya Demê",
+  "expiryCalendarTitle": "ڕۆژمێری بەسەرچوون",
 
-  "calendarIntro":
-    "Rêbaza dîtina dawiyên demê hilbijêre:\n\n• Hejmara rojan ji îro ve binivîse.\n• An jî roja taybet di salnameyê de hilbijêre.\n\nVaultara dê tiştên ku di wê rojê de dawî dibin nîşan bide.",
+  "calendarIntro": "ڕێگاکە هەڵبژێرە بۆ بینینی بەروارەکانی بەسەرچوون:\n\n• ژمارەی ڕۆژەکان لە ئەمڕۆوە بنووسە.\n• یان ڕۆژێکی دیاریکراو لە ڕۆژمێرەکە هەڵبژێرە.\n\nڤۆڵتارا ئەو شتانە پیشان دەدات کە لەو ڕۆژەدا بەسەر دەچن.",
 
-  "daysFromTodayLabel": "Roj ji îro",
-  "daysFromTodayHint": "Mînak: 0, 1, 7, 30",
+  "daysFromTodayLabel": "ڕۆژ لە ئەمڕۆوە",
+  "daysFromTodayHint": "نموونە: ٠، ١، ٧، ٣٠",
 
-  "apply": "Bisepîne",
-  "pickDateOnCalendar": "Roja di salnameyê de hilbijêre",
+  "apply": "جێبەجێ بکە",
+  "pickDateOnCalendar": "ڕۆژێک لە ڕۆژمێرەکە هەڵبژێرە",
 
-  "today": "Îro",
-  "tomorrow": "Sibê",
-  "in7Days": "Di 7 rojan de",
-  "in30Days": "Di 30 rojan de",
+  "today": "ئەمڕۆ",
+  "tomorrow": "سبەی",
+  "in7Days": "لە ٧ ڕۆژدا",
+  "in30Days": "لە ٣٠ ڕۆژدا",
 
-  "inDays": "di {days} rojan de",
+  "inDays": "لە {days} ڕۆژدا",
   "@inDays": {
     "placeholders": { "days": { "type": "int" } }
   },
 
-  "enterDaysError": "Hejmara rojan binivîse",
-  "invalidDaysError": "Hejmara rast binivîse (0 an zêdetir)",
+  "enterDaysError": "ژمارەی ڕۆژەکان بنووسە",
+  "invalidDaysError": "ژمارەیەکی دروست بنووسە (٠ یان زیاتر)",
 
-  "showingItemsRelative": "Tiştên ku {time} dawî dibin tên nîşandan",
+  "showingItemsRelative": "ئەو شتانە پیشان دەدرێن کە {time} بەسەر دەچن",
   "@showingItemsRelative": {
     "placeholders": { "time": { "type": "String" } }
   },
 
-  "showingItemsExact": "Tiştên ku di roja hilbijartî de dawî dibin tên nîşandan",
-  "noItemsOnDate": "Di vê rojê de tişt tune",
+  "showingItemsExact": "ئەو شتانە پیشان دەدرێن کە لە ڕۆژی هەڵبژێردراودا بەسەر دەچن",
+  "noItemsOnDate": "هیچ شتێک لەم ڕۆژەدا نییە",
 
-  "editorAddTitle": "Tiştê zêde bike",
-  "editorEditTitle": "Tiştê biguherîne",
+  "editorAddTitle": "زیادکردنی تۆمار",
+  "editorEditTitle": "دەستکاریکردنی تۆمار",
 
-  "editorCategory": "Kategorî",
-  "editorCategoryHint": "Kategorî hilbijêre",
+  "editorCategory": "هاوپۆل",
+  "editorCategoryHint": "هاوپۆل هەڵبژێرە",
 
-  "editorGroup": "Kom",
-  "editorGroupHint": "Kom hilbijêre",
+  "editorGroup": "گرووپ",
+  "editorGroupHint": "گرووپ هەڵبژێرە",
 
-  "editorItemName": "Navê tiştê",
-  "editorItemNameHint": "Navê tiştê binivîse",
+  "editorItemName": "ناوی شت",
+  "editorItemNameHint": "ناوی شت بنووسە",
 
-  "editorExpiryDate": "Dawiya demê",
-  "editorExpiryDateHint": "Dîrokê hilbijêre",
+  "editorExpiryDate": "بەرواری بەسەرچوون",
+  "editorExpiryDateHint": "بەروار هەڵبژێرە",
 
-  "editorErrorCategory": "Kategorî pêwîst e",
-  "editorErrorGroup": "Kom pêwîst e",
-  "editorErrorName": "Nav pêwîst e",
-  "editorErrorExpiry": "Dîrok pêwîst e",
-  "editorErrorExpiryPast": "Divê dîrok îro an pêşeroj be",
+  "editorErrorCategory": "هاوپۆل پێویستە",
+  "editorErrorGroup": "گرووپ پێویستە",
+  "editorErrorName": "ناو پێویستە",
+  "editorErrorExpiry": "بەروار پێویستە",
+  "editorErrorExpiryPast": "بەروار دەبێت ئەمڕۆ یان داهاتوو بێت",
 
-  "cancel": "Betal bike",
-  "save": "Tomar bike",
+  "cancel": "هەڵوەشاندنەوە",
+  "save": "پاشەکەوتکردن",
 
-  "addCategoryTitle": "Kategorî zêde bike",
-  "unlimitedCategories": "Kategorî bê sînor (Premium)",
+  "addCategoryTitle": "زیادکردنی هاوپۆل",
+  "unlimitedCategories": "هاوپۆلی بێسنوور (پرێمیۆم)",
 
-  "categoryUsage": "{current} / {limit} kategorî hatine bikaranîn",
+  "categoryUsage": "{current} / {limit} هاوپۆل بەکارهاتووە",
   "@categoryUsage": {
     "placeholders": {
       "current": { "type": "int" },
@@ -68,39 +67,807 @@
     }
   },
 
-  "categoryNameLabel": "Navê kategorî",
-  "categoryNameHint": "Kategorî binivîse",
+  "categoryNameLabel": "ناوی هاوپۆل",
+  "categoryNameHint": "ناوی هاوپۆل بنووسە",
 
-  "categoryLimitReached":
-    "Sînorê Basic gihîşt. Premium kategorî bê sînor pêşkêş dike",
+  "categoryLimitReached": "گەیشتنە سنووری بەیسیک. پرێمیۆم هاوپۆلی بێسنوور پێشکەش دەکات",
 
-  "categoryLimitInfo":
-    "Basic heta {limit} kategorî destûr dide",
+  "categoryLimitInfo": "بەیسیک تەنها {limit} هاوپۆل ڕێگەپێدراوە",
   "@categoryLimitInfo": {
     "placeholders": { "limit": { "type": "int" } }
   },
 
-  "categoryErrorEmpty": "Navê kategorî pêwîst e",
-  "categoryErrorTooShort": "Navê kategorî kurt e",
-  "categoryErrorTooLong": "Navê kategorî dirêj e",
-  "categoryErrorSymbols": "Navê kategorî nikanî bi tenê nîşan be",
-  "categoryErrorNumbers": "Navê kategorî nikanî jimare hebe",
+  "categoryErrorEmpty": "ناوی هاوپۆل پێویستە",
+  "categoryErrorTooShort": "ناوی هاوپۆل کورتە",
+  "categoryErrorTooLong": "ناوی هاوپۆل درێژە",
+  "categoryErrorSymbols": "ناوی هاوپۆل ناتوانێت تەنها هێما بێت",
+  "categoryErrorNumbers": "ناوی هاوپۆل ناتوانێت ژمارەی تێدا بێت",
 
-  "upgradeRequired": "Pêdivî ye ku were bilindkirin",
-  "viewPremiumBenefits": "Feydeyên Premium bibîne",
+  "upgradeRequired": "بەرزکردنەوە پێویستە",
+  "viewPremiumBenefits": "سوودەکانی پرێمیۆم ببینە",
 
-  "createCategory": "Çêke",
+  "createCategory": "دروستکردن",
 
-  "addGroupTitle": "Kom zêde bike",
+  "addGroupTitle": "زیادکردنی گرووپ",
 
-  "groupNameLabel": "Kom",
-  "groupNameHint": "Kom binivîse",
+  "groupNameLabel": "گرووپ",
+  "groupNameHint": "ناوی گرووپ بنووسە",
 
-  "groupErrorEmpty": "Navê komê pêwîst e",
-  "groupErrorTooShort": "Navê komê kurt e",
-  "groupErrorTooLong": "Navê komê dirêj e",
-  "groupErrorSymbols": "Navê komê nikanî nîşan be",
-  "groupErrorNumbers": "Navê komê nikanî jimare hebe",
+  "groupErrorEmpty": "ناوی گرووپ پێویستە",
+  "groupErrorTooShort": "ناوی گرووپ کورتە",
+  "groupErrorTooLong": "ناوی گرووپ درێژە",
+  "groupErrorSymbols": "ناوی گرووپ ناتوانێت هێما بێت",
+  "groupErrorNumbers": "ناوی گرووپ ناتوانێت ژمارەی تێدا بێت",
 
-  "createGroup": "Çêke"
+  "createGroup": "دروستکردن",
+  "registerTitle": "هەژمار دروست بکە",
+
+  "firstNameLabel": "ناوی یەکەم",
+  "firstNameHint": "ناوی یەکەم بنووسە",
+  "errorFirstName": "ناوی یەکەم پێویستە",
+
+  "lastNameLabel": "ناوی دوایی",
+  "lastNameHint": "ناوی دوایی بنووسە",
+  "errorLastName": "ناوی دوایی پێویستە",
+
+  "emailLabel": "ئیمەیڵ",
+  "errorEmailInvalid": "ئیمەیڵێکی دروست بنووسە",
+  "errorEmailInUse": "ئەم ئیمەیڵە لەگەڵ هەژمارێکی ڤۆڵتارا بەکارهاتووە",
+
+  "passwordLabel": "وشەی نهێنی",
+  "emailRequired": "ئیمەیڵی تۆ پێویستە",
+  "passwordRequired": "وشەی نهێنی تۆ پێویستە",
+  "registerPasswordHint": "وشەی نهێنی بنووسە",
+  "loginPasswordHint": "وشەی نهێنی خۆت بنووسە",
+  "emailHint": "ناونیشانی ئیمەیڵی خۆت بنووسە",
+  "passwordHelper": "بەلایەنی کەمەوە ٨ پیت بە جۆرە جیاوازەکان",
+
+  "passwordTooShort": "کورتە",
+  "passwordTooWeak": "لاوازە",
+  "passwordMedium": "ناوەند",
+  "passwordStrong": "بەهێز",
+
+  "errorPasswordLength": "وشەی نهێنی دەبێت بەلایەنی کەمەوە ٨ پیت بێت",
+  "errorPasswordWeak": "وشەیەکی نهێنی بەهێزتر هەڵبژێرە",
+
+  "errorGeneric": "تۆمارکردن سەرکەوتوو نەبوو. دووبارە هەوڵ بدەرەوە",
+
+  "createAccount": "هەژمار دروست بکە",
+  "appName": "ڤۆڵتارا",
+  "authTagline": "ناوەندی کەسی تۆ بۆ پاسپۆرت، مۆڵەت، کارت و شتە گرنگەکان",
+  "tabSignIn": "چوونەژوورەوە",
+  "tabCreateAccount": "هەژمار دروست بکە",
+  "signInFooterText": "بچۆ ژوورەوە بۆ گەیشتن بە شوێنی ڤۆڵتارای خۆت و هەموو نوێکردنەوەکان لە کۆنترۆڵدا بهێڵە",
+  "createAccountFooterText": "هەژمارێکی ڤۆڵتارا دروست بکە بۆ پاراستنی یاداشتە گرنگەکان و گەیشتنیان لە هەموو کاتێکدا",
+
+  "emailNotFound": "ئیمەیڵ هەڵەیە.\nهەژمارێکی ڤۆڵتارا بەم ئیمەیڵە نییە",
+  "incorrectPassword": "وشەی نهێنی هەڵەیە",
+  "signIn": "چوونەژوورەوە",
+  "categoryPersonalIdentification": "ناسنامەی کەسی",
+  "categoryDrivingAndVehicles": "لێخوڕین و ئۆتۆمبێل",
+  "categoryTravelAndImmigration": "گەشت و کۆچ",
+  "categoryBankingAndCards": "بانک و کارت",
+  "categoryInsuranceAndCover": "بیمە و پاراستن",
+  "categoryHealthAndMedical": "تەندروستی و پزیشکی",
+  "categoryWorkAndProfessional": "کار و پیشەیی",
+  "categoryPropertyAndHousing": "موڵک و خانوو",
+  "categoryHouseholdAndUtilities": "ماڵ و خزمەتگوزاری",
+
+  "subcategoryPassports": "پاسپۆرت",
+  "subcategoryIdCards": "کارتی ناسنامە",
+  "subcategoryResidencePermits": "مۆڵەتی نیشتەجێبوون",
+
+  "subcategoryDrivingLicences": "مۆڵەتی لێخوڕین",
+  "subcategoryVehicleRegistrations": "تۆماری ئۆتۆمبێل",
+  "subcategoryRoadworthyCertificates": "بڕوانامەی شیاوی ڕێگا",
+  "subcategoryVehicleInspectionCertificates": "بڕوانامەی پشکنینی ئۆتۆمبێل",
+
+  "subcategoryVisas": "ڤیزا",
+  "subcategoryStudyPermits": "مۆڵەتی خوێندن",
+  "subcategoryWorkPermits": "مۆڵەتی کار",
+  "subcategoryTravelInsuranceDocuments": "بەڵگەی بیمەی گەشت",
+
+  "subcategoryDebitAndCreditCards": "کارتی دێبت و کرێدت",
+  "subcategoryStoreCards": "کارتی فرۆشگا",
+  "subcategoryFuelCards": "کارتی سووتەمەنی",
+
+  "subcategoryVehicleInsurances": "بیمەی ئۆتۆمبێل",
+  "subcategoryPropertyInsurances": "بیمەی موڵک",
+  "subcategoryLifeInsurances": "بیمەی ژیان",
+  "subcategoryHealthInsurances": "بیمەی تەندروستی",
+  "subcategoryTravelInsurances": "بیمەی گەشت",
+
+  "subcategoryMedicalPrescriptions": "ڕێنماییە پزیشکیەکان",
+  "subcategoryOpticalPrescriptions": "ڕێنماییەکانی چاو",
+  "subcategoryMedicalCertificates": "بڕوانامەی پزیشکی",
+
+  "subcategoryProfessionalLicences": "مۆڵەتی پیشەیی",
+  "subcategoryProfessionalRegistrations": "تۆماری پیشەیی",
+  "subcategoryIndustryRegistrations": "تۆماری پیشەسازی",
+  "subcategoryWorkAccessCards": "کارتی گەیشتنی کار",
+
+  "subcategoryLeaseAgreements": "گرێبەستی کرێ",
+  "subcategoryAccessCardsAndTags": "کارت و نیشانەکانی گەیشتن",
+  "subcategoryParkingPermits": "مۆڵەتی پارک",
+  "subcategorySecurityAccessPermits": "مۆڵەتی گەیشتنی پاراستن",
+
+  "subcategoryElectricityAccounts": "هەژماری کارەبا",
+  "subcategoryWaterAccounts": "هەژماری ئاو",
+  "subcategoryInternetContracts": "گرێبەستی ئینتەرنێت",
+  "subcategorySecurityServiceContracts": "گرێبەستی خزمەتگوزاری پاراستن",
+  "searchCategories": "گەڕان لە هاوپۆلەکان",
+  "filterAll": "هەموو",
+  "filterPreset": "پێشدانراو",
+  "filterCustom": "تایبەت",
+  "customLabel": "تایبەت",
+  "subcategoriesLabel": "ژێرپۆل",
+  "itemsLabel": "شتەکان",
+
+  "itemsExpiring": "{count} شت لە {days} ڕۆژدا بەسەر دەچن",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "pinnedEssentials": "هاوپۆلە سەرەکیەکان",
+  "pinnedHint": "ئەو هاوپۆلانە ببەستە کە زۆرتر بەکاریان دەهێنیت تا لە سەرەوە بمێننەوە.",
+  "noCategoriesFound": "هیچ هاوپۆلێک نەدۆزرایەوە",
+
+  "searchGroups": "گەڕان لە گرووپەکان",
+  "basicPlanGroupInfo": "تۆ لە پلانی بەیسیکدایت.\nدەتوانیت گرووپە پێشدانراوەکانی ئەم هاوپۆلە ببینیت.\nبۆ دروستکردنی گرووپی خۆت، بۆ پرێمیۆم بەرزی بکەرەوە.",
+  "groupDeleted": "گرووپێک سڕایەوە",
+  "undo": "گەڕانەوە",
+
+  "groupStats": "{items} ئایتم • {expiring} لە {days} ڕۆژدا بەسەر دەچن",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "groupTapHint": "بۆ زیادکردن و شوێنکەوتنی ئایتمەکان لەم گرووپە بکە.",
+  "itemsInGroup": "ئایتمەکانی ئەم گرووپە",
+  "itemsInGroupHint": "ئایتمە گرنگەکان بە بەرواری بەسەرچوون شوێنکەوتە بکە بۆ نوێکردنەوەی بەکات.",
+
+  "searchItems": "گەڕان لە ئایتمەکان",
+
+  "filterExpiringWithin": "لە {days} ڕۆژدا بەسەر دەچن",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "filterExpired": "بەسەرچووە",
+  "addItem": "زیادکردنی ئایتم",
+  "noItemsYet": "هێشتا هیچ ئایتمێک نییە.",
+
+  "statusExpired": "بەسەرچووە",
+  "statusExpiresToday": "ئەمڕۆ بەسەر دەچێت",
+  "statusExpiresInOneDay": "سبەی بەسەر دەچێت",
+
+  "statusExpiresInDays": "لە {days} ڕۆژدا بەسەر دەچێت",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "statusValid": "دروستە",
+
+  "deleteCategoryTitle": "سڕینەوەی هاوپۆل",
+  "deleteCategoryMessage": "ئایا بەڕاستی دەتەوێت هاوپۆلی \"{name}\" بسڕیتەوە؟",
+  "@deleteCategoryMessage": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "deleteGroupTitle": "سڕینەوەی گرووپ",
+  "deleteGroupMessage": "ئایا بەڕاستی دەتەوێت گرووپی \"{name}\" بسڕیتەوە؟",
+  "@deleteGroupMessage": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "deleteItemTitle": "سڕینەوەی ئایتم",
+  "deleteItemMessage": "ئایا بەڕاستی دەتەوێت \"{name}\" بسڕیتەوە؟",
+  "@deleteItemMessage": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "delete": "سڕینەوە",
+  "homeWelcomeFirstTitle": "بەخێربێیت، {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "homeWelcomeBackTitle": "بەخێر گەڕایتەوە، {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "homeWelcomeSubtitleGeneric": "ڤۆڵتارا یارمەتیت دەدات بەرواری گرنگی بەسەرچوون شوێنکەوتە بکەیت بۆ ئەوەی هیچ شتێک بێدەنگ تێنەپەڕێت.",
+  "homeWelcomeSubtitleFirst": "بەخێربێیت. ڤۆڵتارا یارمەتیت دەدات بەرواری گرنگ و تۆمارەکان لە شوێنێکی پارێزراودا ڕێک بخەیت.",
+  "homeWelcomeSubtitleBack": "خۆشحاڵین کە دیسان دەتبینین. ڤۆڵتارا هەمیشە ئامادەیە بۆ پێداچوونەوەی بەرواری گرنگ و تۆمارەکانت.",
+
+  "insightEmptyTitle": "هێشتا هیچ شتێک زیاد نەکراوە",
+  "insightEmptyBody": "کاتێک دەست بە شوێنکەوتنی بەرواری گرنگ دەکەیت، ڤۆڵتارا یارمەتیت دەدات لە بەسەرچوونەکان پێشبکەویت.",
+
+  "insightExpiresTodayTitle": "\"{name}\" ئەمڕۆ بەسەر دەچێت",
+  "insightExpiresTodayBody": "پشکنینێکی خێرا دەتوانێت ڕاستی زانیاریەکان بپارێزێت.",
+  "@insightExpiresTodayTitle": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "insightExpiresTomorrowTitle": "\"{name}\" سبەی بەسەر دەچێت",
+  "insightExpiresTomorrowBody": "ئێستا پشکنین دەتوانێت کاتی پاش بپارێزێت.",
+  "@insightExpiresTomorrowTitle": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "insightExpiresSoonTitle": "\"{name}\" لە {date}دا بەسەر دەچێت",
+  "insightExpiresSoonBody": "کارکردنی پێشوەختە شتەکان ئاسانتر دەکات.",
+  "@insightExpiresSoonTitle": {
+    "placeholders": {
+      "name": { "type": "String" },
+      "date": { "type": "String" }
+    }
+  },
+
+  "insightNextExpiryTitle": "بەسەرچوونی داهاتوو \"{name}\" یە ({date})",
+  "insightNextExpiryBody": "ئێستا هیچ کارێک پێویست نییە.",
+  "@insightNextExpiryTitle": {
+    "placeholders": {
+      "name": { "type": "String" },
+      "date": { "type": "String" }
+    }
+  },
+
+  "insightClusteredTitle": "چەند شت لە دەوروبەری {month}دا بەسەر دەچن",
+  "insightClusteredBody": "پشکنینی پێکەوە کات دەپارێزێت.",
+  "@insightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "insightTopCategoryTitle": "زۆرینەی شتەکان لە {category}دان",
+  "insightTopCategoryBody": "لێرە دەست پێکردن زۆرترین کاریگەری هەیە.",
+  "@insightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "insightStableTitle": "هەموو شتێک ئارامە",
+  "insightStableBody": "ئێستا هیچ بەسەرچوونێکی خێرا نییە.",
+
+  "homeWelcomeTitle": "بەخێربێیت",
+
+  "summaryAllTitle": "هەموو شتەکان",
+  "summaryAllCaption": "لە ڤۆڵتارا شوێنکەوتە دەکرێن",
+  "summarySoonTitle": "بەزووی بەسەر دەچن",
+  "summarySoonCaption": "لە ٣٠ ڕۆژدا",
+  "summaryWeekTitle": "ئەم هەفتەیە",
+  "summaryWeekCaption": "لە ٧ ڕۆژدا بەسەر دەچن",
+  "summaryExpiredTitle": "بەسەرچوون",
+  "summaryExpiredCaption": "بەرواری بەسەرچوون تێپەڕیوە",
+
+  "stabilityStableTitle": "هەموو شتێک ئارام دەردەکەوێت",
+  "stabilityStableBody": "تۆمارەکانت هیچ مەترسیەکی خێرا یان کۆبوونەوەیەک پیشان نادەن.",
+
+  "stabilityDecliningTitle": "جێگیری دادەبەزێت",
+  "stabilityDecliningBody": "هەندێک شت بەسەرچوون و هەندێکی تر نزیکی بەسەرچوونن.",
+
+  "stabilityWeakenedTitle": "جێگیری لاواز بووە",
+  "stabilityWeakenedBody": "هەبوونی تۆمارە بەسەرچووەکان دڵنیایی گشتی کەم دەکاتەوە.",
+
+  "stabilityPressureTitle": "دەرفەتێک خۆی پیشان دەدات",
+  "stabilityPressureBody": "هەندێک تۆمار لە داهاتوویەکی نزیکدا پێویستیان بە هۆشیاریە بۆ پاراستنی جێگیری.",
+  "editorNotes": "تێبینی",
+  "notesHint": "تێبینی بنووسە",
+  "editorReminderTitle": "بیرخستنەوە",
+  "editorReminderNone": "بیرخستنەوە نییە",
+  "editorReminderOnExpiry": "لە ڕۆژی بەسەرچووندا",
+  "editorReminder7Days": "٧ ڕۆژ پێش بەسەرچوون",
+  "editorReminder30Days": "٣٠ ڕۆژ پێش بەسەرچوون",
+  "editorReminderCustom": "تایبەت",
+  "daysBeforeExpiry": "ڕۆژ پێش بەسەرچوون",
+
+  "reminderStage0Title": "بیرخستنەوەی بەسەرچوون",
+  "reminderStage0Body": "سڵاو {firstName}، {itemName} لە {days} ڕۆژدا بەسەر دەچێت.",
+  "@reminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "itemName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "reminderStage1Title": "بیرخستنەوەی شوێنکەوتە",
+  "reminderStage1Body": "{firstName}، {itemName} هێشتا نوێ نەکراوەتەوە.",
+  "@reminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "itemName": { "type": "String" }
+    }
+  },
+
+  "reminderStage2Title": "بەسەرچوون نزیکە",
+  "reminderStage2Body": "بەرواری بەسەرچوونی {itemName} نزیک دەبێتەوە.",
+  "@reminderStage2Body": {
+    "placeholders": {
+      "itemName": { "type": "String" }
+    }
+  },
+
+  "reminderFinalTitle": "بیرخستنەوەی کۆتایی",
+  "reminderFinalBody": "{firstName}، تکایە {itemName} ئێستا نوێ بکەرەوە.",
+  "@reminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "itemName": { "type": "String" }
+    }
+  },
+
+  "coverageBalanceTitle": "هاوسەنگی پۆشاندن",
+  "coverageAllRepresented": "تۆمارەکانت لە هەموو هاوپۆلەکاندا هەن.",
+  "coverageMissingNamed": "لە {count} هاوپۆلدا هیچ تۆمارێک نەدۆزرایەوە: {names}.",
+  "@coverageMissingNamed": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "names": { "type": "String" }
+    }
+  },
+
+  "coverageMissingSummary": "تۆ هیچ تۆمارێکی تر زیاد نەکردووە لە نێو {count} هاوپۆلدا، بە ناوی {names} و {remaining}ی تر.",
+  "@coverageMissingSummary": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "names": { "type": "String" },
+      "remaining": { "type": "int" }
+    }
+  },
+
+  "usePasswordInstead": "وشەی نهێنی بەکار بهێنە",
+  "signInWithBiometrics": "بە بایۆمێتریک بچۆ ژوورەوە",
+  "enableBiometricsTitle": "پاراستنی بایۆمێتریک چالاک بکە",
+  "enableBiometricsBody": "بۆ پاراستنی ڤۆڵتارا، نیشانەی پەنجە یان ناسینەوەی ڕوو بەکار بهێنە.",
+  "enableBiometricsReason": "بۆ کردنەوەی ڤۆڵتارا بایۆمێتریک چالاک بکە.",
+  "notNow": "ئێستا نا",
+  "useBiometrics": "بایۆمێتریک بەکار بهێنە",
+  "recordsCalendarIntro": "ڕێگاکە هەڵبژێرە بۆ بینینی بەرواری بەسەرچوون:\n\n• ژمارەی ڕۆژەکان لە ئەمڕۆوە بنووسە.\n• یان بەروارێکی دیاریکراو لە ڕۆژمێرەکە هەڵبژێرە.\n\nڤۆڵتارا ئەو تۆمارانە پیشان دەدات کە لەو ڕۆژەدا بەسەر دەچن.",
+
+  "showingRecordsRelative": "ئەو تۆمارانە پیشان دەدرێن کە پاش {time} بەسەر دەچن",
+  "@showingRecordsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingRecordsExact": "ئەو تۆمارانە پیشان دەدرێن کە لە بەرواری هەڵبژێردراودا بەسەر دەچن",
+  "noRecordsOnDate": "هیچ تۆمارێک نییە کە لەو ڕۆژەدا بەسەر بچێت.",
+
+  "recordEditorAddTitle": "زیادکردنی تۆمار",
+  "recordEditorEditTitle": "دەستکاریکردنی تۆمار",
+
+  "editorRecordName": "ناوی تۆمار",
+  "editorRecordNameHint": "ناوی تۆمار بنووسە",
+  "recordEditorErrorName": "ناوی تۆمار پێویستە",
+
+  "recordsGroupTapHint": "بۆ زیادکردن و شوێنکەوتنی تۆمارەکانی ئەم گرووپە بکە.",
+  "recordsInGroup": "تۆمارەکانی ئەم گرووپە",
+  "recordsInGroupHint": "هەر تۆمارێک بە بەرواری بەسەرچوون شوێنکەوتە بکە بۆ نوێکردنەوەی بەکات.",
+
+  "searchRecords": "گەڕان لە تۆمارەکان",
+  "addRecord": "زیادکردنی تۆمار",
+  "noRecordsYet": "هێشتا هیچ تۆمارێک نییە.",
+
+  "deleteRecordTitle": "سڕینەوەی تۆمار",
+
+  "recordsInsightClusteredTitle": "چەند تۆمار لە دەوروبەری {month}دا بەسەر دەچن",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "recordsInsightTopCategoryTitle": "زۆرینەی تۆمارەکانت لە {category}دان",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "summaryAllRecordsTitle": "هەموو تۆمارەکان",
+  "recordsStabilityDecliningBody": "هەندێک تۆمار پێشتر بەسەرچوون و هەندێکی تریش نزیکی بەسەرچوونن.",
+  "recordsCoverageAllRepresented": "تۆمارەکانت لە هەموو هاوپۆلەکاندا هەن.",
+
+  "recordReminderStage0Body": "{firstName}، تۆماری {recordName}ی تۆ لە {days} ڕۆژدا بەسەر دەچێت.",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body": "{firstName}، تۆماری {recordName}ی تۆ هێشتا نوێ نەکراوەتەوە.",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body": "بەرواری بەسەرچوونی {recordName} نزیک دەبێتەوە.",
+  "@recordReminderStage2Body": {
+    "placeholders": { "recordName": { "type": "String" } }
+  },
+
+  "recordReminderFinalBody": "{firstName}، تکایە {recordName} ئێستا نوێ بکەرەوە.",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "noGroupFound": "هێشتا هیچ گرووپێک نییە",
+
+  "recordsExpiring": "{count, plural, one {١ تۆمار لە {days} ڕۆژدا بەسەر دەچێت} other {{count} تۆمار لە {days} ڕۆژدا بەسەر دەچن}}",
+  "@recordsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupStats": "{records, plural, one {١ تۆمار} other {{records} تۆمار}} • {expiring} لە {days} ڕۆژدا",
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "groupLabel": "{count, plural, one {{count} گرووپ} other {{count} گرووپ}}",
+  "recordsLabel": "{count, plural, one {{count} تۆمار} other {{count} تۆمار}}",
+  "forgotPassword": "وشەی نهێنیت لەبیر چووە؟",
+  "forgotPasswordTitle": "نوێکردنەوەی وشەی نهێنی",
+  "forgotPasswordBody": "ناونیشانی ئیمەیڵی خۆت بنووسە و ئێمە لینکێک بۆ نوێکردنەوەی وشەی نهێنی دەنێرین.",
+  "sendResetLink": "ناردنی لینک",
+  "passwordResetEmailSent": "ئیمەیڵی نوێکردنەوەی وشەی نهێنی نێردرا.",
+  "verifyEmailToContinue": "تکایە پێش چوونەژوورەوە ناونیشانی ئیمەیڵەکەت پشتڕاست بکەرەوە",
+
+  "changeEmailTitle": "گۆڕینی ناونیشانی ئیمەیڵ",
+  "newEmailHint": "ئیمەیڵی نوێی خۆت بنووسە",
+  "sendVerificationEmail": "ناردنی ئیمەیڵی پشتڕاستکردنەوە",
+
+  "deleteAccountTitle": "سڕینەوەی هەژمار",
+  "deleteAccountWarning": "ئەم کارە هەژمارەکەت و هەموو داتا تۆمارکراوەکانت بە تەواوی دەسڕێتەوە.\nگەڕاندنەوەی شیاو نییە.",
+  "deleteAccountConfirm": "سڕینەوەی هەژمار بە تەواوی",
+
+  "supportTitle": "پشتگیری",
+  "supportSubtitle": "ئەگەر یارمەتیت پێویستە یان پرسیارت هەیە، پەیوەندیمان پێوە بکە.",
+  "supportEmailSubject": "داوای پشتگیری ڤۆڵتارا",
+  "supportEmailError": "ناتوانرێت ئەپی ئیمەیڵ بکرێتەوە.",
+  "passwordResetEmailFailed": "نەتوانرا ئیمەیڵی نوێکردنەوەی وشەی نهێنی بنێردرێت.",
+
+  "loggedInPasswordResetBody": "ئێمە بەستەری نوێکردنەوەی وشەی نهێنی دەنێرین بۆ:\n{email}",
+  "@loggedInPasswordResetBody": {
+    "description": "Informs the user that a password reset email will be sent",
+    "placeholders": { "email": { "type": "String" } }
+  },
+
+  "accountManagementTitle": "بەڕێوەبردنی هەژمار",
+  "changeEmailSubtitle": "ئیمەیڵی بەستراو بە هەژمارت نوێ بکەرەوە.",
+  "changePasswordTitle": "گۆڕینی وشەی نهێنی",
+  "changePasswordSubtitle": "ئێمە لینکێک بە ئیمەیڵ دەنێرین بۆ گۆڕینی بێ‌مەترسی وشەی نهێنی.",
+  "deleteAccountSubtitle": "هەژماری ڤۆڵتارای خۆت بە تەواوی بسڕەوە.",
+
+  "biometricAuthReason": "بۆ ئەوەی بگەیتە هەژمارەکەت پشتڕاست بکەرەوە",
+  "verifyEmailTitle": "ئیمەیڵەکەت پشتڕاست بکەرەوە",
+  "verifyEmailBody": "ئێمە ئیمەیڵێکی پشتڕاستکردنەومان بۆ سندوقەکەت ناردووە. تکایە بکەیەوە و ناونیشانی ئیمەیڵەکە پشتڕاست بکەرەوە، پاشان بگەڕێوە بۆ ئێرە بۆ بەردەوامبوون.",
+  "verifyEmailConfirmedButton": "ئیمەیڵەکەم پشتڕاست کردووە",
+  "verifyEmailResendButton": "ئیمەیڵی پشتڕاستکردنەوە دیسان بنێرە",
+  "verifyEmailSending": "دەنێردرێت...",
+  "navHome": "ماڵ",
+  "navCategories": "هاوپۆل",
+  "navInsights": "تێگەیشتن",
+  "navCalendar": "ڕۆژمێر",
+
+  "tutorialHomeSearch": "بەستەری گەڕان بەکار بهێنە بۆ دۆزینەوەی هەر تۆمارێک کە شوێنکەوتە دەکەیت.",
+  "tutorialHomeFab": "تۆماری یەکەمت لێرە زیاد بکە.\nشوێنەکەی هەڵبژێرە، تێبینی ئیختیاری زیاد بکە و بەرواری بەسەرچوون هەڵبژێرە.",
+  "tutorialHomeSummary": "کاتێک تۆمار زیاد دەکەیت، ئەم بەشە یارمەتیت دەدات تۆمارە نزیکەکانی بەسەرچوون بناسیتەوە.",
+  "tutorialHomeInsight": "ئەم تێگەیشتنە زیرەکە ڕووداو و بەسەرچوونە نزیکەکان پیشان دەدات.\nدەتوانیت کلیک لە ئایکۆنی دەنگ بکەیت بۆ گۆڕینی.",
+  "tutorialHomeCoverage": "هاوسەنگی پۆشاندن پیشان دەدات تۆمارەکانت بە چەند هاوپۆلێکی هاوبەش دابەش بوون.\nهاوسەنگی بەرز کەمتر کەلێن پیشان دەدات.",
+  "tutorialHomeStability": "جێگیری پیشان دەدات تۆمارەکانت بە درێژایی کات چەند جێگیرن.\nتۆمارە بەسەرچووەکان و ئەوانەی نزیکی بەسەرچوونن دەتوانن جێگیری کەم بکەنەوە.",
+
+  "tutorialCancel": "هەڵوەشاندنەوە",
+  "tutorialNext": "پێشەوە",
+  "tutorialEnd": "کۆتایی هێنانی فێرکاری",
+
+  "softDeleteCategory": "هاوپۆل",
+  "softDeleteGroup": "گرووپ",
+  "softDeleteRecord": "تۆمار",
+
+  "softDeleteTitle": "{type} بنێرە بۆ بەتازەیی سڕاوەکان",
+  "@softDeleteTitle": { "placeholders": { "type": {} } },
+
+  "softDeleteMessage": "{type}ی \"{name}\" دەنێردرێت بۆ بەتازەیی سڕاوەکان.\n\nدەتوانیت لە ٣٠ ڕۆژدا بیگەڕێنیتەوە. پاش ئەوە بە تەواوی دەسڕێتەوە.",
+  "@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "softDeleteMove": "ناردن",
+
+  "recentlyDeletedTitle": "بەتازەیی سڕاوەکان",
+  "categories": "هاوپۆلەکان",
+  "groups": "گرووپەکان",
+  "records": "تۆمارەکان",
+  "restore": "گەڕاندنەوە",
+  "deletePermanently": "سڕینەوەی هەمیشەیی",
+
+  "recentlyDeletedBanner": "{type}ی سڕاوەکان ٣٠ ڕۆژ لێرە دەپارێزرێن.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "گەڕان لە {type}ی سڕاوەکان",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "هیچ {type}ێکی سڕاو نییە",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+  "categoriesHint": "بۆ بینینی گرووپەکان و بەڕێوەبردنی تۆمارەکانت، کلیک لە هاوپۆلێک بکە.",
+  "groupsHint": "گرووپەکان تۆمارەکان لەم هاوپۆلەدا ڕێک دەخەن. بۆ بەڕێوەبردنی تۆمارەکان کلیک لە گرووپ بکە.",
+  "notLoggedIn": "نەچوویتە ژوورەوە",
+  "recordsInsideGroupHint": "ئەمە ئەو تۆمارانەن کە لە ناوەوەی ئەم گرووپەدان.",
+  "snackMovedToRecentlyDeleted": "\"{name}\" گەڕێندرا بۆ \"بەتازەیی سڕاوەکان\"",
+  "@snackMovedToRecentlyDeleted": {
+    "description": "Snackbar when an item is moved to recently deleted",
+    "placeholders": { "name": { "type": "String", "example": "Passport" } }
+  },
+
+  "snackDeletedSuccessfully": "\"{name}\" بە سەرکەوتوویی سڕایەوە",
+  "@snackDeletedSuccessfully": {
+    "description": "Snackbar when an item is permanently deleted",
+    "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+  },
+
+  "snackUpdatedSuccessfully": "\"{name}\" بە سەرکەوتوویی نوێکرایەوە",
+  "@snackUpdatedSuccessfully": {
+    "description": "Snackbar when an item is updated",
+    "placeholders": { "name": { "type": "String", "example": "Visa" } }
+  },
+
+  "snackAddedSuccessfully": "\"{name}\" بە سەرکەوتوویی زیادکرا",
+  "@snackAddedSuccessfully": {
+    "description": "Snackbar when an item is added",
+    "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+  },
+
+  "snackRestoredSuccessfully": "\"{name}\" بە سەرکەوتوویی گەڕێندرایەوە",
+  "@snackRestoredSuccessfully": {
+    "description": "Snackbar when an item is restored from recently deleted",
+    "placeholders": { "name": { "type": "String", "example": "Passport" } }
+  },
+
+  "snackFreeLimitReached": "گەیشتنە سنووری بەخۆڕایی ({current}/{limit}). بۆ زیادکردنی زیاتر بەرز بکەرەوە.",
+  "@snackFreeLimitReached": {
+    "description": "Snackbar when free plan limit is reached",
+    "placeholders": {
+      "current": { "type": "int", "example": "3" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "globalSearchTitle": "گەڕان لە هەموو تۆمارەکان",
+  "globalSearchHint": "ناو، هاوپۆل یان گرووپ بنووسە",
+  "globalSearchNoMatches": "هیچ تۆمارێک لەگەڵ گەڕانەکەت ناگونجێت.",
+  "snackNoRecordsToSearch": "هیچ تۆمارێک نییە بۆ گەڕان. هەندێک تۆمار زیاد بکە و ڤۆڵتارا بە شێوەی خۆکار ئەندێکسیان دەکات.",
+
+  "recoveryCentreTitle": "ناوەندی گەڕاندنەوە",
+  "recoveryCentreSubtitle": "تۆمارە سڕاوەکان بگەڕێنەوە یان بە هەمیشەیی بیانسڕەوە.",
+
+  "plan_premium": "پرێمیۆم",
+  "plan_free": "بەخۆڕایی",
+
+  "profile_app_settings_title": "ڕێکخستنەکانی ئەپ",
+  "profile_privacy_security_title": "تایبەتمەندی و پاراستن",
+  "profile_biometric_on": "قوفڵی بایۆمێتریک لەم ئامێرەدا چالاکە.",
+  "profile_biometric_off": "قوفڵی بایۆمێتریک چالاک نییە.",
+  "profile_biometric_enable_reason": "ناسنامەی خۆت پشتڕاست بکەرەوە بۆ چالاککردنی قوفڵی بایۆمێتریک.",
+  "profile_biometric_disable_reason": "ناسنامەی خۆت پشتڕاست بکەرەوە بۆ ناچالاککردنی قوفڵی بایۆمێتریک.",
+  "profile_account_management_title": "بەڕێوەبردنی هەژمار",
+  "profile_account_management_subtitle": "ئیمەیڵ، وشەی نهێنی بگۆڕە یان هەژمار بسڕەوە.",
+  "profile_premium_active_title": "پرێمیۆم چالاکە",
+  "profile_premium_upgrade_title": "بەرزکردنەوە بۆ پرێمیۆم",
+  "profile_premium_active_subtitle": "بیرخستنەوە پێشکەوتووەکان کراوەن.",
+  "profile_premium_upgrade_subtitle": "بیرخستنەوە پێشکەوتووەکان و ڕێکخستنی بێسنوور بکەرەوە.",
+  "profile_manage_cancel_hint": "لە Google Play هەرکات بەڕێوەی ببە یان هەڵیبوەشێنەوە.",
+  "profile_manage_subscription_button": "بەڕێوەبردنی ئەندامێتی",
+
+  "plansTitle": "پلانی خۆت هەڵبژێرە",
+  "plansTrialBanner": "دەست بە ٧ ڕۆژ تاقیکردنەوەی بەخۆڕایی بکە.\nهەرکات دەتوانیت ڕاوەستی.",
+  "plansLoading": "بارکردن…",
+  "plansStartFreeTrial": "بەخۆڕایی دەست پێ بکە",
+  "plansNoChargeTodayFooter": "٧ ڕۆژ بەخۆڕایی · ئەمڕۆ هیچ خەرجیەک نییە",
+
+  "planFreeTitle": "بەخۆڕایی",
+  "planFreeSubtitle": "بۆ دەستپێک",
+  "planPremiumMonthlyTitle": "پرێمیۆمی مانگانە",
+  "planPremiumYearlyTitle": "پرێمیۆمی ساڵانە",
+  "planPerMonth": "مانگ",
+  "planPerYear": "ساڵ",
+
+  "planBadgeCurrent": "پلانی ئێستا",
+  "planBadgePopular": "بەناوبانگ",
+  "planBadgeBestValue": "باشترین بەها",
+
+  "planYouAreOnThisPlan": "تۆ پێشتر لەسەر ئەم پلانەیت.",
+
+  "planFeatureUpToRecords": "تا {count} تۆمار",
+  "@planFeatureUpToRecords": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "planFeatureCustomCategoriesUpTo": "هاوپۆلی تایبەت (تا {count})",
+  "@planFeatureCustomCategoriesUpTo": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "planFeaturePresetSubcategories": "ژێرپۆلی پێشدانراو",
+  "planFeatureCloudStorage": "هەڵگرتن لە کلاود",
+  "planFeatureSmartExpiryInsights": "تێگەیشتنی زیرەک",
+  "planFeatureCoverageBalance": "هاوسەنگی هاوپۆل",
+  "planFeatureRecordStabilityTracking": "جێگیری تۆمار",
+
+  "planFeatureUnlimitedRecords": "تۆماری بێسنوور",
+  "planFeatureUnlimitedCategories": "هاوپۆلی بێسنوور",
+  "planFeatureCustomSubcategories": "ژێرپۆلی تایبەت",
+  "planFeatureMultipleRemindersPerRecord": "بیرخستنەوەی فرە",
+  "planFeatureAdvancedReminderTiming": "کاتی بیرخستنەوەی پێشکەوتوو",
+  "planFeatureAutomaticFollowUps": "بیرخستنەوەی خۆکار",
+
+  "planFeatureEverythingInMonthly": "هەموو شتەکانی مانگانە",
+  "planFeatureSavePercentComparedToMonthly": "{percent}% پاشەکەوت بکە بەرامبەر بە مانگانە",
+  "@planFeatureSavePercentComparedToMonthly": {
+    "placeholders": { "percent": { "type": "int" } }
+  },
+
+  "planFeatureBestLongTermValue": "باشترین بەها بۆ ماوەی درێژ",
+  "editorReminderLabel": "بیرخستنەوە",
+  "editorReminderSelectOptional": "بیرخستنەوە هەڵبژێرە (ئیختیاری)",
+
+  "editorReminderDaysBefore": "{days} ڕۆژ پێش بەسەرچوون",
+  "@editorReminderDaysBefore": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "editorFreeItemsCount": "تۆمارە بەخۆڕاییەکان: {used}/{limit}",
+  "@editorFreeItemsCount": {
+    "placeholders": {
+      "used": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "editorExpiryPastWarning": "بەرواری بەسەرچوون تێپەڕیوە.",
+  "editorExpiryTodayWarning": "ئەم تۆمارە ئەمڕۆ بەسەر دەچێت.",
+
+  "todayInsightsTitle": "تێگەیشتنەکانی ئەمڕۆ",
+  "tutorialBannerTitle": "فێرکاری خێرا",
+  "tutorialBannerBody": "فێرببە لە کوێ بگەڕێیت، چۆن تۆمار زیاد بکەیت و تێگەیشتنەکان لە یەک خولەکدا.",
+  "tutorialBannerStart": "دەستپێکی فێرکاری",
+  "tutorialBannerDismiss": "ئێستا نا",
+
+  "authErrorUserDisabled": "ئەم هەژمارە لەکارخراوە.",
+  "authErrorNetwork": "هەڵەی تۆڕ. دیسان هەوڵ بدەرەوە.",
+  "authErrorTooManyRequests": "هەوڵدانی زۆر. دواتر دیسان هەوڵ بدەرەوە.",
+  "authErrorSignInFailed": "چوونەژوورەوە سەرکەوتوو نەبوو. دیسان هەوڵ بدەرەوە.",
+  "ok": "باشە",
+  "snackPremiumEnabled": "پرێمیۆم چالاککرا",
+  "snackPremiumRestored": "پرێمیۆم گەڕێندرایەوە",
+
+  "passwordNeedLower": "دەبێت پیتی بچووک هەبێت",
+  "passwordNeedUpper": "دەبێت پیتی گەورە هەبێت",
+  "passwordNeedNumber": "دەبێت ژمارە هەبێت",
+  "passwordNeedSymbol": "دەبێت هێما هەبێت",
+
+  "confirmIdentityTitle": "ناسنامە پشتڕاست بکەرەوە",
+  "confirm": "پشتڕاستکردنەوە",
+
+  "profile_sign_out_title": "چوونەدەرەوە",
+  "profile_sign_out_subtitle": "لەم ئامێرە لە ڤۆڵتارا بچۆ دەرەوە",
+  "profile_sign_out_confirm_title": "بچیتە دەرەوە؟",
+  "profile_sign_out_confirm_body": "بۆ گەیشتن بە هەژمار دەبێت دیسان بچیتە ژوورەوە.",
+  "profile_sign_out_action": "چوونەدەرەوە",
+
+  "todayInsightsAudioHint": "دەنگت دەوێت؟ ئایکۆنی دەنگ بەکار بهێنە.",
+  "category2Label": "هاوپۆل",
+  "enable2BiometricsBody": "نیشانەی پەنجە بەکار بهێنە بۆ پاراستنی هەژماری ڤۆڵتارا.",
+  "snackNotificationsDisabled": "ئاگادارکردنەوەکان چالاک نین. بۆ وەرگرتنی بیرخستنەوەکان چالاکیان بکە.",
+  "openSettings": "کردنەوەی ڕێکخستنەکان",
+
+  "reminderOnExpiryTitle": "ئەمڕۆ بەسەرچوو",
+  "@reminderOnExpiryTitle": {
+    "description": "Title for a notification shown on the day an item expires"
+  },
+
+  "reminderOnExpiryBody": "سڵاو {firstName}، \"{itemName}\" ئەمڕۆ بەسەر چوو.",
+  "@reminderOnExpiryBody": {
+    "description": "Notification body shown on the expiry day, addressing the user by first name",
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "itemName": { "type": "String" }
+    }
+  },
+
+  "freeCategoriesProgress": "هاوپۆلە بەخۆڕاییەکان: {current}/{limit}",
+  "@freeCategoriesProgress": {
+    "description": "Shows how many free categories have been used out of the free limit.",
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "addNotesHint": "تێبینی زیاد بکە (ئیختیاری)",
+"apply": "جێبەجێکردن",
+ "smartInsightExpiresTodayHeading": "ئەمڕۆ بەسەر دەچێت",
+"smartInsightExpiresTodaySingleBody": "{name} ئەمڕۆ بەسەر دەچێت. ئێستا کار بکە بۆ نوێ هێشتنەوەی.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} و ١ بەڵگەنامەی تر ئەمڕۆ بەسەر دەچن.} other{{names} و {extra} بەڵگەنامەی تر ئەمڕۆ بەسەر دەچن.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "پێویستی بە سەرنجی تۆ هەیە",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} لە ١ ڕۆژدا بەسەر دەچێت و هیچ بیرخستنەوەیەکی نییە. دڵنیا بەرەوە لە ڕاستی زانیاریەکان.} other{{name} لە {days} ڕۆژدا بەسەر دەچێت و هیچ بیرخستنەوەیەکی نییە. دڵنیا بەرەوە لە ڕاستی زانیاریەکان.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "چەند نوێکردنەوەیەکی نزیک",
+"smartInsightRenewalTwinBodyTwo": "{a} و {b} لە سێ هەفتەی یەکتر بەسەر دەچن. پێشوەختە پلان بکە.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}، {b} و {c} هەموو لە سێ هەفتەدا بەسەر دەچن. پێشوەختە پلان بکە.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}، {b} و ١ بەڵگەنامەی تر لە سێ هەفتەدا بەسەر دەچن. پێشوەختە پلان بکە.} other{{a}، {b} و {extra} بەڵگەنامەی تر لە سێ هەفتەدا بەسەر دەچن. پێشوەختە پلان بکە.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "کۆمەڵێک لە پێشدایە",
+"smartInsightClusterBody": "{count, plural, =1{١ بەڵگەنامە لە {category}دا لە دوو مانگی داهاتوودا بەسەر دەچێت. بیر لە بەڕێوەبردنیان پێکەوە بکەرەوە.} other{{count} بەڵگەنامە لە {category}دا لە دوو مانگی داهاتوودا بەسەر دەچن. بیر لە بەڕێوەبردنیان پێکەوە بکەرەوە.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ماوەیەکی ئارام لە پێشدایە",
+"smartInsightQuietPeriodBody": "{days, plural, =1{بۆ ١ ڕۆژی داهاتوو هیچ شتێک بەسەر ناچێت. نوێکردنەوەی داهاتووت لە {firstDate}دایە.} other{بۆ {days} ڕۆژی داهاتوو هیچ شتێک بەسەر ناچێت. نوێکردنەوەی داهاتووت لە {firstDate}دایە.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "هەموو نوێکراوەتەوە",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{١ بەسەرچوونی داهاتوو بە بیرخستنەوەکان پۆشراوە. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.} other{{count} بەسەرچوونی داهاتوو بە بیرخستنەوەکان پۆشراون. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "هەموو نوێکراوەتەوە. ئێستا هیچ شتێک پێویستی بە سەرنجی تۆ نییە.",
+"smartInsightNoRecordsHeading": "یەکەم تۆمارت زیاد بکە",
+"smartInsightNoRecordsBody": "دەست بە شوێنکەوتنی بەڵگەنامەکان بکە و Vaultara تێگەیشتنی زیرەکانە لێرە پیشان دەدات.",
+  "expiryTimelineTitle": "هێڵی کاتی بەسەرچوون",
+"expiryTimelineSubtitle": "لەسەر مانگێک بکە بۆ بینینی ئەو تۆمارانەی لەو مانگەدا بەسەر دەچن",
+"expiryTimelineDetailCount": "{count, plural, =1{١ تۆمار} other{{count} تۆمار}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "لە نزیکەوە",
+"summaryUpcomingCaption": "لە ماوەی ٣٠ ڕۆژی داهاتوودا",
+"summaryUrgentTitle": "خێرا",
+"summaryUrgentCaption": "لە ماوەی ٧ ڕۆژی داهاتوودا"
 }

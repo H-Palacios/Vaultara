@@ -1,0 +1,876 @@
+{
+  "@@locale": "mk",
+  "expiryCalendarTitle": "Календар на истекување",
+
+"calendarIntro": "Изберете како сакате да ги прегледувате истекувањата:\n\n• Внесете колку денови однапред сакате да гледате.\n• Или изберете точен датум од календарот.\n\nVaultara ќе прикаже кои ставки истекуваат на тој ден.",
+
+"daysFromTodayLabel": "Денови од денес",
+"daysFromTodayHint": "На пример 0, 1, 7, 30",
+
+"apply": "Примени",
+"pickDateOnCalendar": "Изберете датум од календарот",
+
+"today": "Денес",
+"tomorrow": "Утре",
+"in7Days": "За 7 дена",
+"in30Days": "За 30 дена",
+
+"inDays": "за {days} дена",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Внесете број на денови.",
+"invalidDaysError": "Внесете валиден број на денови (0 или повеќе).",
+
+"showingItemsRelative": "Прикажани се ставки што истекуваат {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Прикажани се ставки што истекуваат на избраниот датум",
+"noItemsOnDate": "Ниту една ставка не истекува на тој ден.",
+
+"editorAddTitle": "Додај ставка",
+"editorEditTitle": "Уреди ставка",
+
+"editorCategory": "Категорија",
+"editorCategoryHint": "Изберете категорија",
+
+"editorGroup": "Група",
+"editorGroupHint": "Изберете група",
+
+"editorItemName": "Име на ставка",
+"editorItemNameHint": "Внесете име на ставка",
+
+"editorExpiryDate": "Датум на истекување",
+"editorExpiryDateHint": "Изберете истекување",
+
+"editorErrorCategory": "Изберете категорија",
+"editorErrorGroup": "Изберете група",
+"editorErrorName": "Името на ставката е задолжително",
+"editorErrorExpiry": "Изберете датум на истекување",
+"editorErrorExpiryPast": "Датумот мора да биде денес или во иднина",
+"cancel": "Откажи",
+"save": "Зачувај",
+
+"addCategoryTitle": "Додај категорија",
+"unlimitedCategories": "Неограничени категории (Premium)",
+
+"categoryUsage": "Искористени {current} / {limit} категории",
+
+"categoryNameLabel": "Категорија",
+"categoryNameHint": "Внесете категорија",
+
+"categoryLimitReached": "Го достигнавте лимитот од {limit} категории во Basic планот. Надградете на Premium.",
+
+"categoryLimitInfo": "Во Basic планот може да се создадат до {limit} категории.",
+
+"categoryErrorEmpty": "Категоријата е задолжителна",
+"categoryErrorTooShort": "Категоријата е премногу кратка",
+"categoryErrorTooLong": "Категоријата е премногу долга",
+"categoryErrorSymbols": "Категоријата не може да содржи само симболи",
+"categoryErrorNumbers": "Категоријата не може да содржи само броеви",
+
+"upgradeRequired": "Потребна е надградба",
+"viewPremiumBenefits": "Погледни Premium придобивки",
+"createCategory": "Креирај",
+
+"addGroupTitle": "Додај група",
+"groupNameLabel": "Група",
+"groupNameHint": "Внесете група",
+
+"groupErrorEmpty": "Групата е задолжителна",
+"groupErrorTooShort": "Групата е премногу кратка",
+"groupErrorTooLong": "Групата е премногу долга",
+"groupErrorSymbols": "Групата не може да содржи симболи",
+"groupErrorNumbers": "Групата не може да содржи броеви",
+"createGroup": "Креирај",
+
+"firstNameLabel": "Име",
+"firstNameHint": "Внесете име",
+
+"lastNameLabel": "Презиме",
+"lastNameHint": "Внесете презиме",
+
+"emailLabel": "Е-пошта",
+"loginPasswordHint": "Внесете ја вашата лозинка",
+"registerPasswordHint": "Внесете лозинка",
+"passwordHelper": "Најмалку 8 знаци со мешани типови",
+
+"passwordTooShort": "Премногу кратка",
+"passwordTooWeak": "Премногу слаба",
+"passwordMedium": "Средна",
+"passwordStrong": "Силна",
+
+"errorFirstName": "Името е задолжително",
+"errorLastName": "Презимето е задолжително",
+"errorEmailInvalid": "Внесете валидна е-пошта",
+"errorEmailInUse": "Оваа е-пошта е веќе\nповрзана со Vaultara сметка",
+"errorPasswordLength": "Лозинката мора да има најмалку осум знаци",
+"errorPasswordWeak": "Внесете посилна лозинка",
+"errorGeneric": "Регистрацијата не успеа. Обидете се повторно",
+
+"createAccount": "Креирај сметка",
+"appName": "Vaultara",
+"authTagline": "Вашиот личен центар за пасоши, лиценци, картички и други важни потреби",
+"tabSignIn": "Најави се",
+"tabCreateAccount": "Креирај сметка",
+"signInFooterText": "Најавете се за да пристапите до вашиот Vaultara простор и да ги држите под контрола сите обновувања",
+"createAccountFooterText": "Креирајте Vaultara сметка за да ги зачувате важните потсетници и да ги имате кога ви требаат",
+
+"emailRequired": "Е-поштата е задолжителна",
+"passwordRequired": "Лозинката е задолжителна",
+"emailNotFound": "Погрешна е-пошта. Нема\nVaultara сметка со оваа е-пошта",
+"incorrectPassword": "Погрешна лозинка",
+
+"emailLabel": "Е-пошта",
+"emailHint": "Внесете е-пошта",
+"passwordLabel": "Лозинка",
+"signIn": "Најави се",
+
+"categoryPersonalIdentification": "Лична идентификација",
+"categoryDrivingAndVehicles": "Возење и возила",
+"categoryTravelAndImmigration": "Патување и имиграција",
+"categoryBankingAndCards": "Банкарство и картички",
+"categoryInsuranceAndCover": "Осигурување и покритие",
+"categoryHealthAndMedical": "Здравје и медицина",
+"categoryWorkAndProfessional": "Работа и професионално",
+"categoryPropertyAndHousing": "Имот и домување",
+"categoryHouseholdAndUtilities": "Домаќинство и комуналии",
+
+"subcategoryPassports": "Пасоши",
+"subcategoryIdCards": "Лични карти",
+"subcategoryResidencePermits": "Дозволи за престој",
+
+"subcategoryDrivingLicences": "Возачки дозволи",
+"subcategoryVehicleRegistrations": "Регистрации на возила",
+"subcategoryRoadworthyCertificates": "Сертификати за техничка исправност",
+"subcategoryVehicleInspectionCertificates": "Сертификати за преглед на возила",
+
+"subcategoryVisas": "Визи",
+"subcategoryStudyPermits": "Дозволи за студирање",
+"subcategoryWorkPermits": "Работни дозволи",
+"subcategoryTravelInsuranceDocuments": "Документи за патничко осигурување",
+
+"subcategoryDebitAndCreditCards": "Дебитни и кредитни картички",
+"subcategoryStoreCards": "Картички од продавници",
+"subcategoryFuelCards": "Картички за гориво",
+"subcategoryVehicleInsurances": "Осигурување на возила",
+"subcategoryPropertyInsurances": "Осигурување на имот",
+"subcategoryLifeInsurances": "Животно осигурување",
+"subcategoryHealthInsurances": "Здравствено осигурување",
+"subcategoryTravelInsurances": "Патничко осигурување",
+
+"subcategoryMedicalPrescriptions": "Медицински рецепти",
+"subcategoryOpticalPrescriptions": "Оптички рецепти",
+"subcategoryMedicalCertificates": "Медицински потврди",
+
+"subcategoryProfessionalLicences": "Професионални лиценци",
+"subcategoryProfessionalRegistrations": "Професионални регистрации",
+"subcategoryIndustryRegistrations": "Индустриски регистрации",
+"subcategoryWorkAccessCards": "Картички за пристап до работа",
+
+"subcategoryLeaseAgreements": "Договори за закуп",
+"subcategoryAccessCardsAndTags": "Картички и тагови за пристап",
+"subcategoryParkingPermits": "Дозволи за паркирање",
+"subcategorySecurityAccessPermits": "Безбедносни дозволи",
+
+"subcategoryElectricityAccounts": "Сметки за струја",
+"subcategoryWaterAccounts": "Сметки за вода",
+"subcategoryInternetContracts": "Интернет договори",
+"subcategorySecurityServiceContracts": "Договори за безбедносни услуги",
+
+"searchCategories": "Пребарај категории",
+"filterAll": "Сите",
+"filterPreset": "Претходно поставени",
+"filterCustom": "Прилагодени",
+"addCategoryTitle": "Додај категорија",
+"customLabel": "Прилагодена",
+"subcategoriesLabel": "подкатегории",
+"itemsLabel": "ставки",
+
+"itemsExpiring": "{count} ставки истекуваат за {days} дена",
+
+"pinnedEssentials": "Закачени важни",
+"pinnedHint": "Закачете ги најчесто користените категории.",
+"noCategoriesFound": "Не се пронајдени категории",
+
+"searchGroups": "Пребарај групи",
+"addGroupTitle": "Додај група",
+
+"basicPlanGroupInfo": "Вие сте на Basic план.\nМожете да ги видите претходно поставените групи.\nНадградете на Premium за да креирате сопствени групи.",
+
+"groupDeleted": "Групата е избришана",
+"undo": "ВРАТИ",
+
+"groupTapHint": "Допрете за да додадете и следите ставки.",
+"itemsInGroup": "Ставки во оваа група",
+"itemsInGroupHint": "Следете ја секоја ставка со датум на истекување.",
+"searchItems": "Пребарај ставки",
+"filterExpiringWithin": "Истекува во рок од {days} дена",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Истечено",
+"addItem": "Додај ставка",
+"noItemsYet": "Сѐ уште нема ставки.",
+
+"statusExpired": "Истечено",
+"statusExpiresToday": "Истекува денес",
+"statusExpiresInOneDay": "Истекува за 1 ден",
+"statusExpiresInDays": "Истекува за {days} дена",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Валидно",
+
+"deleteCategoryTitle": "Избриши категорија",
+"deleteCategoryMessage": "Дали сте сигурни дека сакате да ја избришете категоријата \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Избриши група",
+"deleteGroupMessage": "Дали сте сигурни дека сакате да ја избришете групата \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Избриши ставка",
+"deleteItemMessage": "Дали сте сигурни дека сакате да ја избришете \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Откажи",
+"delete": "Избриши",
+
+"homeWelcomeTitle": "Добредојдовте",
+
+"homeWelcomeFirstTitle": "Добредојдовте, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Добредојдовте назад, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Сите",
+"homeWelcomeSubtitleGeneric": "Vaultara ви помага да ги следите важните рокови, за ништо да не истече незабележано.",
+
+"homeWelcomeSubtitleFirst": "Драго ни е што сте тука. Vaultara ги чува важните датуми и записи на едно безбедно место.",
+
+"homeWelcomeSubtitleBack": "Драго ни е што ве гледаме повторно. Vaultara е секогаш тука за вашите важни податоци.",
+
+"insightEmptyTitle": "Сѐ уште ништо не е додадено",
+"insightEmptyBody": "Започнете да ги следите датумите и Vaultara ќе ви помогне да бидете чекор напред.",
+
+"insightExpiresTodayTitle": "\"{name}\" истекува денес",
+"insightExpiresTodayBody": "Брза проверка ја одржува точноста.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" истекува утре",
+"insightExpiresTomorrowBody": "Проверката денес заштедува време подоцна.",
+
+"insightExpiresSoonTitle": "\"{name}\" истекува на {date}",
+"insightExpiresSoonBody": "Раното внимание го олеснува процесот.",
+
+"insightNextExpiryTitle": "Следниот рок е \"{name}\" на {date}",
+"insightNextExpiryBody": "Сѐ уште не е потребна акција, но добро е да се запомни.",
+
+"insightClusteredTitle": "Неколку записи истекуваат во {month}",
+"insightClusteredBody": "Заедничката проверка заштедува време.",
+
+"insightTopCategoryTitle": "Повеќето записи се во {category}",
+"insightTopCategoryBody": "Прегледот на овој дел носи најголем ефект.",
+
+"insightStableTitle": "Сѐ изгледа стабилно",
+"insightStableBody": "Нема рокови што бараат внимание.",
+
+"summaryAllTitle": "Сите записи",
+"summaryAllCaption": "Следени во Vaultara",
+"summarySoonTitle": "Наскоро истекуваат",
+"summarySoonCaption": "Во рок од 30 дена",
+"summaryWeekTitle": "Оваа недела",
+"summaryWeekCaption": "Истекуваат за 7 дена",
+"summaryExpiredTitle": "Истечени",
+"summaryExpiredCaption": "По рокот",
+
+"stabilityStableTitle": "Стабилноста е зачувана",
+"stabilityStableBody": "Нема итни ризици.",
+
+"stabilityDecliningTitle": "Стабилноста опаѓа",
+"stabilityDecliningBody": "Некои записи веќе истекоа, други се приближуваат.",
+
+"stabilityWeakenedTitle": "Стабилноста е ослабена",
+"stabilityWeakenedBody": "Истечените записи ја намалуваат доверливоста.",
+
+"stabilityPressureTitle": "Притисокот расте",
+"stabilityPressureBody": "Неколку записи наскоро ќе бараат внимание.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Белешки",
+"notesHint": "Внесете белешки",
+"editorReminderTitle": "Потсетник",
+"editorReminderNone": "Нема потсетник",
+"editorReminderOnExpiry": "На денот на истекување",
+"editorReminder7Days": "7 дена претходно",
+"editorReminder30Days": "30 дена претходно",
+"editorReminderCustom": "Прилагодено",
+"daysBeforeExpiry": "денови пред истекување",
+
+"reminderStage0Title": "Потсетник за истекување",
+"reminderStage0Body": "{firstName}, вашиот {itemName} истекува за {days} дена.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Следење на потсетник",
+"reminderStage1Body": "{firstName}, {itemName} сè уште не е ажуриран.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Истекувањето се приближува",
+"reminderStage2Body": "Датумот на истекување за {itemName} се приближува.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Последен потсетник",
+"reminderFinalBody": "{firstName}, ве молиме ажурирајте го {itemName} сега.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Баланс на покриеност",
+"coverageAllRepresented": "Вашите записи ги опфаќаат сите категории.",
+"coverageMissingNamed": "Нема записи во {count} категории: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Немате записи во {count} категории, вклучувајќи {names} и уште {remaining} други.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Користи лозинка",
+"signInWithBiometrics": "Најава со биометрика",
+"enableBiometricsTitle": "Овозможи биометриска заштита",
+"enableBiometricsBody": "Користете отпечаток од прст или препознавање лице за заштита на Vaultara.",
+"enableBiometricsReason": "Овозможи биометриско отклучување за Vaultara.",
+"notNow": "Не сега",
+"useBiometrics": "Користи биометрика",
+
+"recordsCalendarIntro": "Изберете како сакате да ги прегледувате истекувањата:\n\n• Внесете за колку дена однапред сакате да гледате.\n• Или изберете точен датум од календарот.\n\nVaultara ќе покаже кои записи истекуваат на тој ден.",
+
+"showingRecordsRelative": "Се прикажуваат записи што истекуваат {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Се прикажуваат записи што истекуваат на избраниот датум",
+
+"noRecordsOnDate": "Нема записи што истекуваат на тој ден.",
+
+"recordEditorAddTitle": "Додај запис",
+"recordEditorEditTitle": "Уреди запис",
+
+"editorRecordName": "Име на запис",
+"editorRecordNameHint": "Внесете име на запис",
+"recordEditorErrorName": "Името на записот е задолжително",
+
+"recordsGroupTapHint": "Допрете за да додадете и следите записи во оваа група.",
+
+"recordsInGroup": "Записи во оваа група",
+
+"recordsInGroupHint": "Следете го секој важен запис со неговиот датум на истекување.",
+
+"searchRecords": "Пребарај записи",
+
+"addRecord": "Додај запис",
+
+"noRecordsYet": "Сè уште нема записи.",
+"deleteRecordTitle": "Избриши запис",
+
+"recordsInsightClusteredTitle": "Неколку записи истекуваат околу {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Повеќето од вашите записи се во категоријата {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Сите записи",
+
+"recordsStabilityDecliningBody": "Некои записи веќе истекоа, а други наскоро ќе истечат.",
+
+"recordsCoverageAllRepresented": "Вашите записи ги опфаќаат сите категории.",
+
+"recordReminderStage0Body": "{firstName}, вашиот {recordName} истекува за {days} дена.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, вашиот {recordName} сè уште не е ажуриран.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "Датумот на истекување за {recordName} се приближува.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, ве молиме ажурирајте го {recordName} сега.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Сè уште нема групи",
+
+"recordsExpiring": "{count, plural, one {1 запис истекува за {days} дена} other {{count} записи истекуваат за {days} дена}}",
+
+"recordsGroupStats": "{records, plural, one {1 запис} other {{records} записи}} • {expiring} истекуваат во {days} дена",
+
+"groupLabel": "{count, plural, one {{count} група} other {{count} групи}}",
+
+"recordsLabel": "{count, plural, one {{count} запис} other {{count} записи}}",
+
+"forgotPassword": "Ја заборавивте лозинката?",
+"forgotPasswordTitle": "Ресетирање лозинка",
+"forgotPasswordBody": "Внесете ја вашата е-пошта и ќе ви испратиме линк за ресетирање на лозинката.",
+"sendResetLink": "Испрати линк за ресетирање",
+"passwordResetEmailSent": "Испратена е е-пошта за ресетирање на лозинката.",
+"verifyEmailToContinue": "Потврдете ја вашата е-пошта пред да се најавите",
+
+"changeEmailTitle": "Промени е-пошта",
+"newEmailHint": "Внесете нова е-пошта",
+"sendVerificationEmail": "Испрати е-пошта за потврда",
+
+"deleteAccountTitle": "Избриши сметка",
+"deleteAccountWarning": "Ова дејство трајно ќе ја избрише вашата сметка и сите податоци.\nНе може да се врати.",
+"deleteAccountConfirm": "Трајно избриши сметка",
+
+"supportTitle": "Поддршка",
+"supportSubtitle": "Контактирајте нè ако ви е потребна помош.",
+"supportEmailSubject": "Vaultara барање за поддршка",
+"supportEmailError": "Не може да се отвори апликацијата за е-пошта.",
+
+"passwordResetEmailFailed": "Не успеавме да ја испратиме е-поштата за ресетирање на лозинката.",
+
+"loggedInPasswordResetBody": "Ќе испратиме линк за ресетирање на:\n{email}",
+
+"accountManagementTitle": "Управување со сметка",
+"changeEmailSubtitle": "Ажурирајте ја е-поштата поврзана со вашата сметка.",
+"changePasswordTitle": "Промени лозинка",
+"changePasswordSubtitle": "Ќе ви испратиме линк за безбедна промена.",
+
+"deleteAccountSubtitle": "Трајно отстранете ја вашата Vaultara сметка.",
+
+"biometricAuthReason": "Автентификација за пристап до вашата Vaultara сметка.",
+
+"verifyEmailTitle": "Потврдете ја е-поштата",
+"verifyEmailBody": "Испративме е-пошта за потврда. Отворете ја и потврдете ја адресата, потоа вратете се овде.",
+"verifyEmailConfirmedButton": "Ја потврдив е-поштата",
+"verifyEmailResendButton": "Испрати повторно е-пошта за потврда",
+"verifyEmailSending": "Се испраќа...",
+
+"navHome": "Почетна",
+"navCategories": "Категории",
+"navInsights": "Увиди",
+"navCalendar": "Календар",
+
+"tutorialCancel": "Откажи",
+"tutorialNext": "Следно",
+"tutorialEnd": "Заврши упатство",
+
+"softDeleteCategory": "Категорија",
+"softDeleteGroup": "Група",
+"softDeleteRecord": "Запис",
+
+"softDeleteTitle": "Премести {type} во Неодамна избришани",
+"softDeleteMessage": "{type} \"{name}\" ќе биде преместен во Неодамна избришани.\n\nМоже да го вратите во рок од 30 дена. Потоа ќе биде трајно избришан.",
+"softDeleteMove": "Премести",
+"@recordsExpiring": {
+  "description": "Прикажува колку записи наскоро истекуваат",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Статистика на група",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Број на групи", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Број на записи", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": {
+  "description": "Известува за испраќање е-пошта за ресетирање лозинка",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "Наслов за потврда на привремено бришење",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "Објаснување за привремено бришење",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "Неодамна избришани",
+"categories": "Категории",
+"groups": "Групи",
+"records": "Записи",
+"restore": "Врати",
+"deletePermanently": "Избриши трајно",
+
+"recentlyDeletedBanner": "Избришаните {type} се чуваат овде 30 дена пред трајно да бидат отстранети.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Пребарај избришани {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Сè уште нема избришани {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Допрете категорија за да ги видите групите и да ги управувате записите.",
+"groupsHint": "Групите ги организираат записите во оваа категорија. Допрете група за управување.",
+"notLoggedIn": "Не сте најавени",
+
+"recordsInsideGroupHint": "Ова се записите во оваа група.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" преместен во Неодамна избришани",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Пасош"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" успешно избришан",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Возачка дозвола"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" успешно ажуриран",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Виза"} } },
+
+"snackAddedSuccessfully": "\"{name}\" успешно додаден",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Осигурување"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" успешно вратен",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Пасош"} } },
+
+"snackFreeLimitReached": "Достигнат е бесплатниот лимит ({current}/{limit}). Надградете за да додадете повеќе.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Пребарување на сите записи",
+"globalSearchHint": "Внесете име на запис, категорија или група",
+"globalSearchNoMatches": "Нема записи што одговараат на пребарувањето.",
+"snackNoRecordsToSearch": "Нема записи за пребарување. Додајте неколку записи и Vaultara автоматски ќе ги индексира.",
+
+"recoveryCentreTitle": "Центар за обновување",
+"recoveryCentreSubtitle": "Вратете или трајно избришете отстранети записи.",
+
+"plan_premium": "Премиум",
+"plan_free": "Бесплатен",
+
+"profile_app_settings_title": "Поставки на апликацијата",
+"profile_privacy_security_title": "Приватност и безбедност",
+"profile_biometric_on": "Биометриското заклучување е вклучено на овој уред.",
+"profile_biometric_off": "Биометриското заклучување е исклучено.",
+"profile_biometric_enable_reason": "Потврдете го идентитетот за да го вклучите биометриското заклучување.",
+"profile_biometric_disable_reason": "Потврдете го идентитетот за да го исклучите биометриското заклучување.",
+"profile_account_management_title": "Управување со сметка",
+"profile_premium_active_title": "Премиум е активен",
+"profile_premium_upgrade_title": "Надгради на Премиум",
+"profile_premium_active_subtitle": "Напредните потсетници се отклучени.",
+"profile_premium_upgrade_subtitle": "Отклучете напредни потсетници и неограничена организација.",
+"profile_manage_cancel_hint": "Управувајте или откажете во секое време преку Google Play.",
+"profile_manage_subscription_button": "Управување со претплата",
+"plansTitle": "Изберете план",
+"plansTrialBanner": "Започнете со 7-дневен бесплатен пробен период.\nОткажете во секое време.",
+"plansLoading": "Се вчитува…",
+"plansStartFreeTrial": "Започни бесплатен пробен период",
+"plansNoChargeTodayFooter": "7 дена бесплатно · Денес нема наплата",
+
+"planFreeTitle": "Бесплатен",
+"planFreeSubtitle": "За почеток",
+"planPremiumMonthlyTitle": "Премиум месечно",
+"planPremiumYearlyTitle": "Премиум годишно",
+"planPerMonth": "месечно",
+"planPerYear": "годишно",
+
+"planBadgeCurrent": "Тековен план",
+"planBadgePopular": "Популарно",
+"planBadgeBestValue": "Најдобра вредност",
+
+"planYouAreOnThisPlan": "Веќе сте на овој план.",
+
+"planFeatureUpToRecords": "До {count} записи",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Прилагодени категории (до {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Претходно поставени поткатегории",
+"planFeatureCloudStorage": "Облачно складирање",
+"planFeatureSmartExpiryInsights": "Паметни потсетници за истек",
+"planFeatureCoverageBalance": "Баланс на покриеност",
+"planFeatureRecordStabilityTracking": "Следење на стабилноста на записите",
+
+"planFeatureUnlimitedRecords": "Неограничени записи",
+"planFeatureUnlimitedCategories": "Неограничени категории",
+"planFeatureCustomSubcategories": "Прилагодени поткатегории",
+"planFeatureMultipleRemindersPerRecord": "Повеќе потсетници",
+"planFeatureAdvancedReminderTiming": "Напредно темпирање",
+"planFeatureAutomaticFollowUps": "Автоматски потсетници",
+
+"planFeatureEverythingInMonthly": "Сѐ од месечниот план",
+"planFeatureSavePercentComparedToMonthly": "Заштедете {percent}% во споредба со месечниот",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Најдобра долгорочна вредност",
+
+"editorReminderLabel": "Потсетник",
+"editorReminderSelectOptional": "Изберете потсетник (опционално)",
+"editorReminderOnExpiry": "На датумот на истек",
+"editorReminderDaysBefore": "{days} дена пред истек",
+"editorFreeItemsCount": "Бесплатни ставки: {used}/{limit}",
+"editorExpiryPastWarning": "Датумот на истек веќе помина.",
+"editorExpiryTodayWarning": "Овој запис истекува денес.",
+"editorErrorExpiryPast": "Датумот на истек не смее да биде во минатото.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Денешни сознанија",
+"tutorialBannerTitle": "Брза тура",
+"tutorialBannerBody": "За една минута дознајте каде да пребарувате, како да додавате записи и што значат сознанијата.",
+"tutorialBannerStart": "Започни тура",
+"tutorialBannerDismiss": "Не сега",
+"authErrorUserDisabled": "Оваа сметка е оневозможена.",
+"authErrorNetwork": "Мрежна грешка. Проверете го интернетот и обидете се повторно.",
+"authErrorTooManyRequests": "Премногу обиди. Обидете се подоцна.",
+"authErrorSignInFailed": "Најавувањето не успеа. Обидете се повторно.",
+"ok": "Во ред",
+"snackPremiumEnabled": "Premium е активиран",
+"snackPremiumRestored": "Premium е обновен",
+"passwordNeedLower": "Мора да содржи мала буква",
+"passwordNeedUpper": "Мора да содржи голема буква",
+"passwordNeedNumber": "Мора да содржи број",
+"passwordNeedSymbol": "Мора да содржи симбол",
+"editorFreeItemsCount": "Бесплатни ставки: {used}/{limit}",
+"editorExpiryPastWarning": "Датумот на истек веќе помина.",
+"editorExpiryTodayWarning": "Овој запис истекува денес.",
+"editorErrorExpiryPast": "Датумот на истек не смее да биде во минатото.",
+"todayInsightsTitle": "Денешни сознанија",
+"tutorialBannerTitle": "Брза тура",
+"tutorialBannerBody": "За една минута дознајте каде да пребарувате, како да додавате записи и што значат сознанијата.",
+"tutorialBannerStart": "Започни туторијал",
+"tutorialBannerDismiss": "Не сега",
+"authErrorUserDisabled": "Оваа сметка е оневозможена.",
+"authErrorNetwork": "Мрежна грешка. Проверете интернет и обидете се повторно.",
+"authErrorTooManyRequests": "Премногу обиди. Обидете се подоцна.",
+"authErrorSignInFailed": "Најавувањето не успеа. Обидете се повторно.",
+"ok": "Во ред",
+"tutorialHomeSearch": "Користете пребарување за брзо да најдете кој било запис.",
+"tutorialHomeFab": "Додајте го вашиот прв запис тука.\nИзберете категорија, додајте белешки и рок на важност.",
+"tutorialHomeSummary": "Со повеќе записи, овој дел ќе ви помогне да ги забележите роковите.",
+"tutorialHomeInsight": "Овој паметен увид ги истакнува шемите и роковите.",
+"tutorialHomeCoverage": "Балансот на покриеност ја покажува распределбата на записите.",
+"tutorialHomeStability": "Стабилноста ја покажува доверливоста со текот на времето.",
+"profile_account_management_subtitle": "Промена на е-пошта, лозинка или бришење на сметката.",
+"confirmIdentityTitle": "Потврди идентитет",
+"confirm": "Потврди",
+"profile_sign_out_title": "Одјави се",
+"profile_sign_out_subtitle": "Одјави се од Vaultara на овој уред",
+"profile_sign_out_confirm_title": "Одјавување?",
+"profile_sign_out_confirm_body": "Ќе треба повторно да се најавите за да пристапите до сметката.",
+"profile_sign_out_action": "Одјави се",
+"todayInsightsAudioHint": "Преферираш аудио? Користи ја иконата за звучник.",
+"category2Label": "Категорија",
+"enable2BiometricsBody": "Користи препознавање на отпечаток од прст за да го заштитиш твојот Vaultara профил.",
+"snackNotificationsDisabled": "Известувањата се исклучени. Вклучете ги за да добивате потсетници.",
+"openSettings": "Отвори поставки",
+
+"reminderOnExpiryTitle": "Истекува денес",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Здраво {firstName}, \"{itemName}\" истекува денес.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Бесплатни категории: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Прикажува колку бесплатни категории се искористени од бесплатниот лимит.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Додај белешки (опционално)",
+"apply": "Примени",
+"smartInsightExpiresTodayHeading": "Истекува Денес",
+"smartInsightExpiresTodaySingleBody": "{name} истекува денес. Дејствувајте сега за да го одржите ажурно.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} и уште 1 документ истекуваат денес.} other{{names} и уште {extra} документи истекуваат денес.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Бара Ваше Внимание",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} истекува за 1 ден и нема поставен потсетник. Потврдете дали деталите се сè уште точни.} other{{name} истекува за {days} дена и нема поставен потсетник. Потврдете дали деталите се сè уште точни.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Повеќе Обнови Блиску Заедно",
+"smartInsightRenewalTwinBodyTwo": "{a} и {b} истекуваат во рок од три недели еден од друг. Планирајте однапред.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} и {c} сите истекуваат во рок од три недели. Планирајте однапред.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} и уште 1 документ истекуваат во рок од три недели. Планирајте однапред.} other{{a}, {b} и уште {extra} документи истекуваат во рок од три недели. Планирајте однапред.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Претстојна Група",
+"smartInsightClusterBody": "{count, plural, =1{1 документ во {category} истекува во следните два месеци. Размислете да ги решавате заедно.} other{{count} документи во {category} истекуваат во следните два месеци. Размислете да ги решавате заедно.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Мирен Период Пред Вас",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Ништо не истекува во следниот 1 ден. Вашето следно обновување е на {firstDate}.} other{Ништо не истекува во следните {days} дена. Вашето следно обновување е на {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Сè Ажурно",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 претстојно истекување е покриено со потсетници. Ништо друго не бара ваше внимание.} other{{count} претстојни истекувања се покриени со потсетници. Ништо друго не бара ваше внимание.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Сè ажурно. Ништо не бара ваше внимание во моментов.",
+"smartInsightNoRecordsHeading": "Додадете Го Вашиот Прв Запис",
+"smartInsightNoRecordsBody": "Започнете да ги следите вашите документи и Vaultara ќе прикаже паметни увиди овде.",
+"expiryTimelineTitle": "Временска линија на истекување",
+"expiryTimelineSubtitle": "Допрете месец за да ги видите записите што истекуваат во тој месец",
+"expiryTimelineDetailCount": "{count, plural, =1{1 запис} other{{count} записи}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Претстојни",
+"summaryUpcomingCaption": "Во рок од 30 дена",
+"summaryUrgentTitle": "Итно",
+"summaryUrgentCaption": "Во рок од 7 дена"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

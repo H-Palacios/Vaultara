@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "Ikhalenda yokuphelelwa lixesha",
 
-  "calendarIntro":
-    "Khetha indlela yokujonga imihla yokuphelelwa lixesha:\n\n• Faka inani leentsuku ukusuka namhlanje.\n• Okanye khetha umhla kwikhalenda.\n\nIVaultara ibonisa izinto eziphelelwa lixesha ngaloo mini.",
+  "calendarIntro": "Khetha indlela ofuna ukujonga ngayo ukuphelelwa lixesha:\n\n• Faka inani leentsuku ukusuka namhlanje.\n• Okanye khetha umhla ochanekileyo kwikhalenda.\n\nIVaultara iya kubonisa izinto ezifikelela kumhla wokuphelelwa ngaloo mini.",
 
   "daysFromTodayLabel": "Iintsuku ukusuka namhlanje",
   "daysFromTodayHint": "Umzekelo 0, 1, 7, 30",
@@ -19,19 +18,23 @@
 
   "inDays": "kwiintsuku ezi-{days}",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
-  "enterDaysError": "Inani leentsuku liyafuneka",
-  "invalidDaysError": "Faka inani elichanekileyo (0 okanye ngaphezulu)",
+  "enterDaysError": "Faka inani leentsuku.",
+  "invalidDaysError": "Faka inani elichanekileyo leentsuku (0 okanye ngaphezulu).",
 
-  "showingItemsRelative": "Izinto eziphelelwa lixesha {time}",
+  "showingItemsRelative": "Kuboniswa izinto eziphelelwa lixesha {time}",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "Izinto eziphelelwa lixesha kumhla okhethiweyo",
-  "noItemsOnDate": "Akukho zinto ziphelelwa lixesha ngaloo mini",
+  "showingItemsExact": "Kuboniswa izinto eziphelelwa lixesha kumhla okhethiweyo",
+  "noItemsOnDate": "Akukho zinto zicwangciselwe ukuphelelwa ngaloo mini.",
 
   "editorAddTitle": "Yongeza into",
   "editorEditTitle": "Hlela into",
@@ -40,19 +43,19 @@
   "editorCategoryHint": "Khetha udidi",
 
   "editorGroup": "Iqela",
-  "editorGroupHint": "Khetha iqela kolu didi",
+  "editorGroupHint": "Khetha iqela phantsi kolu didi",
 
   "editorItemName": "Igama lento",
   "editorItemNameHint": "Faka igama lento",
 
   "editorExpiryDate": "Umhla wokuphelelwa",
-  "editorExpiryDateHint": "Khetha umhla",
+  "editorExpiryDateHint": "Khetha umhla wokuphelelwa",
 
-  "editorErrorCategory": "Udidi luyafuneka",
-  "editorErrorGroup": "Iqela liyafuneka",
+  "editorErrorCategory": "Khetha udidi",
+  "editorErrorGroup": "Khetha iqela",
   "editorErrorName": "Igama lento liyafuneka",
-  "editorErrorExpiry": "Umhla uyafuneka",
-  "editorErrorExpiryPast": "Umhla kufuneka ube namhlanje okanye kwixesha elizayo",
+  "editorErrorExpiry": "Khetha umhla wokuphelelwa",
+  "editorErrorExpiryPast": "Umhla wokuphelelwa kufuneka ube namhlanje okanye kwixesha elizayo",
 
   "cancel": "Rhoxisa",
   "save": "Gcina",
@@ -60,7 +63,7 @@
   "addCategoryTitle": "Yongeza udidi",
   "unlimitedCategories": "Iindidi ezingapheliyo (Premium)",
 
-  "categoryUsage": "{current} / {limit} iindidi zisetyenzisiwe",
+  "categoryUsage": "{current} / {limit} iindidi ezisetyenzisiweyo",
   "@categoryUsage": {
     "placeholders": {
       "current": { "type": "int" },
@@ -71,24 +74,28 @@
   "categoryNameLabel": "Igama lodidi",
   "categoryNameHint": "Faka udidi",
 
-  "categoryLimitReached":
-    "Umda we-Basic ufikelelwe. Premium ivumela iindidi ezingapheliyo",
+  "categoryLimitReached": "Ufikelele kumda we-Basic weendidi {limit}. Nyusela kwi-Premium ukuze ufumane iindidi ezingapheliyo.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
 
-  "categoryLimitInfo":
-    "I-Basic ivumela ukuya kuthi ga kwiindidi {limit}",
+  "categoryLimitInfo": "Kwi-Basic ungadala ukuya kuthi ga kwiindidi {limit}.",
   "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
   "categoryErrorEmpty": "Igama lodidi liyafuneka",
   "categoryErrorTooShort": "Igama lodidi lifutshane kakhulu",
   "categoryErrorTooLong": "Igama lodidi lide kakhulu",
-  "categoryErrorSymbols": "Igama alinakuba ziimpawu kuphela",
-  "categoryErrorNumbers": "Igama alinakuba neenombolo",
+  "categoryErrorSymbols": "Igama lodidi alinakuba ziimpawu kuphela",
+  "categoryErrorNumbers": "Igama lodidi alinakuba neenombolo",
 
   "upgradeRequired": "Uphuculo luyafuneka",
   "viewPremiumBenefits": "Jonga izibonelelo ze-Premium",
-
   "createCategory": "Yenza",
 
   "addGroupTitle": "Yongeza iqela",
@@ -100,6 +107,794 @@
   "groupErrorTooLong": "Igama leqela lide kakhulu",
   "groupErrorSymbols": "Igama leqela alinakuba ziimpawu kuphela",
   "groupErrorNumbers": "Igama leqela alinakuba neenombolo",
+  "createGroup": "Yenza",
 
-  "createGroup": "Yenza"
+  "firstNameLabel": "Igama lokuqala",
+  "firstNameHint": "Faka igama lokuqala",
+
+  "lastNameLabel": "Igama lokugqibela",
+  "lastNameHint": "Faka igama lokugqibela",
+
+  "emailLabel": "Idilesi ye-imeyile",
+"emailRequired": "I-imeyile yakho iyafuneka",
+"passwordRequired": "Iphasiwedi yakho iyafuneka",
+"registerPasswordHint": "Faka iphasiwedi",
+"loginPasswordHint": "Faka iphasiwedi yakho",
+"emailHint": "Faka idilesi ye-imeyile yakho",
+
+  "passwordLabel": "Iphasiwedi",
+  "passwordHelper": "Ubuncinane iimpawu ezi-8 kunye neentlobo ezahlukeneyo",
+
+  "passwordTooShort": "Mfutshane kakhulu",
+  "passwordTooWeak": "Ibuthathaka",
+  "passwordMedium": "Phakathi",
+  "passwordStrong": "Yomelele",
+
+  "errorFirstName": "Igama lokuqala liyafuneka",
+  "errorLastName": "Igama lokugqibela liyafuneka",
+  "errorEmailInvalid": "Faka i-imeyile esebenzayo",
+  "errorEmailInUse": "Le imeyile sele\ninxulunyaniswe neakhawunti yeVaultara",
+
+  "errorPasswordLength": "Iphasiwedi kufuneka ibe neempawu ezisibhozo ubuncinane",
+  "errorPasswordWeak": "Faka iphasiwedi eyomeleleyo",
+  "errorGeneric": "Ubhaliso aluphumelelanga. Nceda uzame kwakhona",
+
+  "createAccount": "Yenza i-akhawunti",
+  "appName": "Vaultara",
+  "authTagline": "Indawo yakho yabucala yeepasipoti, iilayisensi, amakhadi nezinye izinto ezibalulekileyo",
+  "tabSignIn": "Ngena",
+  "tabCreateAccount": "Yenza i-akhawunti",
+  "signInFooterText": "Ngena ukuze ufikelele kwindawo yakho yeVaultara kwaye ulawule zonke izihlaziyo",
+  "createAccountFooterText": "Yenza iakhawunti yeVaultara ukuze ugcine izikhumbuzo ezibalulekileyo kwaye uzifikelele nanini na",
+  "emailNotFound": "I-imeyile ayichanekanga.\nAkukho akhawunti yeVaultara ngale imeyile",
+  "incorrectPassword": "Iphasiwedi ayichanekanga",
+  "emailLabel": "Idilesi ye-imeyile",
+  "passwordLabel": "Iphasiwedi",
+  "signIn": "Ngena",
+  "categoryPersonalIdentification": "Isazisi Sobuqu",
+  "categoryDrivingAndVehicles": "Ukuqhuba Nezithuthi",
+  "categoryTravelAndImmigration": "Uhambo Nokufuduka",
+  "categoryBankingAndCards": "Iibhanki Namakhadi",
+  "categoryInsuranceAndCover": "I-inshurensi Nokhuseleko",
+  "categoryHealthAndMedical": "Impilo Nezonyango",
+  "categoryWorkAndProfessional": "Umsebenzi Nobungcali",
+  "categoryPropertyAndHousing": "Ipropati Nezindlu",
+  "categoryHouseholdAndUtilities": "Ikhaya Neenkonzo",
+
+  "subcategoryPassports": "Iipasipoti",
+  "subcategoryIdCards": "Amakhadi esazisi",
+  "subcategoryResidencePermits": "Iimvume zokuhlala",
+
+  "subcategoryDrivingLicences": "Iilayisensi zokuqhuba",
+  "subcategoryVehicleRegistrations": "Ubhaliso lwezithuthi",
+  "subcategoryRoadworthyCertificates": "Izatifikethi zokulunga endleleni",
+  "subcategoryVehicleInspectionCertificates": "Izatifikethi zohlolo lwezithuthi",
+
+  "subcategoryVisas": "IiVisa",
+  "subcategoryStudyPermits": "Iimvume zokufunda",
+  "subcategoryWorkPermits": "Iimvume zokusebenza",
+  "subcategoryTravelInsuranceDocuments": "Amaxwebhu einshurensi yohambo",
+
+  "subcategoryDebitAndCreditCards": "Amakhadi eDebit neCredit",
+  "subcategoryStoreCards": "Amakhadi evenkile",
+  "subcategoryFuelCards": "Amakhadi epetroli",
+
+  "subcategoryVehicleInsurances": "I-inshurensi yezithuthi",
+  "subcategoryPropertyInsurances": "I-inshurensi yepropathi",
+  "subcategoryLifeInsurances": "I-inshurensi yobomi",
+  "subcategoryHealthInsurances": "I-inshurensi yezempilo",
+  "subcategoryTravelInsurances": "I-inshurensi yohambo",
+
+  "subcategoryMedicalPrescriptions": "Imiyalelo yamayeza",
+  "subcategoryOpticalPrescriptions": "Imiyalelo yamehlo",
+  "subcategoryMedicalCertificates": "Izatifikethi zonyango",
+
+  "subcategoryProfessionalLicences": "Iilayisensi zobungcali",
+  "subcategoryProfessionalRegistrations": "Ubhaliso lobungcali",
+  "subcategoryIndustryRegistrations": "Ubhaliso lwamashishini",
+  "subcategoryWorkAccessCards": "Amakhadi okufikelela emsebenzini",
+
+  "subcategoryLeaseAgreements": "Izivumelwano zokuqesha",
+  "subcategoryAccessCardsAndTags": "Amakhadi neethegi zokufikelela",
+  "subcategoryParkingPermits": "Iimvume zokupaka",
+  "subcategorySecurityAccessPermits": "Iimvume zokhuseleko",
+
+  "subcategoryElectricityAccounts": "Iiakhawunti zombane",
+  "subcategoryWaterAccounts": "Iiakhawunti zamanzi",
+  "subcategoryInternetContracts": "Izivumelwano ze-Intanethi",
+  "subcategorySecurityServiceContracts": "Izivumelwano zeenkonzo zokhuseleko",
+   "searchCategories": "Khangela iindidi",
+  "filterAll": "Zonke",
+  "filterPreset": "Ezilungiselelweyo",
+  "filterCustom": "Ezizodwa",
+  "addCategoryTitle": "Yongeza udidi",
+  "customLabel": "Ezizodwa",
+  "subcategoriesLabel": "Iindidi ezisezantsi",
+  "itemsLabel": "Izinto",
+  "itemsExpiring": "Izinto ezi-{count} ziphelelwa ziintsuku ezi-{days}",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Iindidi ezipiniweyo",
+  "pinnedHint": "Pina iindidi ozivula rhoqo ukuze zihlale ziphezulu kuluhlu.",
+  "noCategoriesFound": "Akukho ndidi zifunyenweyo",
+   "searchGroups": "Khangela amaqela",
+  "addGroupTitle": "Yongeza iqela",
+  "basicPlanGroupInfo": "Usebenzisa isicwangciso se-Basic.\nUngabona amaqela amiswe kwangaphambili phantsi kweli candelo.\nNyusa uye kwi-Premium ukuze wenze amaqela akho.",
+  "groupDeleted": "Iqela lisusiwe",
+  "undo": "BUYISELA",
+  "groupStats": "{items} izinto • {expiring} ziza kuphelelwa kwiintsuku ezi-{days}",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Cofa ukuze ungeze kwaye ulandele izinto kweli qela.",
+  "itemsInGroup": "Izinto kweli qela",
+  "itemsInGroupHint": "Landela izinto ezibalulekileyo kunye nemihla yokuphelelwa ukuze uhlaziye ngexesha.",
+  "searchItems": "Khangela izinto",
+  "filterAll": "Zonke",
+  "filterExpiringWithin": "Ziphelelwa kwiintsuku ezi-{days}",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Ziphelelwe",
+  "addItem": "Yongeza into",
+  "noItemsYet": "Akukho zinto okwangoku.",
+
+  "statusExpired": "Iphelelwe",
+  "statusExpiresToday": "Iphelelwa namhlanje",
+  "statusExpiresInOneDay": "Iphelelwa ngomso",
+  "statusExpiresInDays": "Iphelelwa kwiintsuku ezi-{days}",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Isebenza",
+
+  "deleteCategoryTitle": "Cima udidi",
+  "deleteCategoryMessage": "Uqinisekile ukuba ufuna ukucima udidi \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Cima iqela",
+  "deleteGroupMessage": "Uqinisekile ukuba ufuna ukucima iqela \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Cima into",
+  "deleteItemMessage": "Uqinisekile ukuba ufuna ukucima \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Rhoxisa",
+  "delete": "Cima",
+  "homeWelcomeFirstTitle": "Wamkelekile, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Wamkelekile kwakhona, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "IVaultara ikunceda ukulandela imihla ebalulekileyo yokuphelelwa ukuze kungabikho nto ephoswayo.",
+
+"homeWelcomeSubtitleFirst":
+  "Siyavuya ukukubona apha. IVaultara ikunceda ukuhlela imihla kunye neerekhodi ezibalulekileyo kwindawo enye ekhuselekileyo.",
+
+"homeWelcomeSubtitleBack":
+  "Siyavuya ukukubona kwakhona. IVaultara ikulungele nanini na xa ufuna ukujonga kwakhona imihla kunye neerekhodi zakho ezibalulekileyo.",
+  "insightEmptyTitle": "Awukafaki nto okwangoku",
+  "insightEmptyBody": "Xa uqala ukulandelela imihla ebalulekileyo, iVaultara iya kukunceda uhlale phambi kokuphelelwa lixesha.",
+
+  "insightExpiresTodayTitle": "\"{name}\" iphelelwa namhlanje",
+  "insightExpiresTodayBody": "Ukujonga ngokukhawuleza ngoku kunceda ukugcina ulwazi luchanekile.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" iphelelwa ngomso",
+  "insightExpiresTomorrowBody": "Ukujonga ngoku kunokonga ixesha kamva.",
+
+  "insightExpiresSoonTitle": "\"{name}\" iphelelwa ngomhla we-{date}",
+  "insightExpiresSoonBody": "Ukuyilungisa kwangethuba kwenza izinto zibe lula.",
+
+  "insightNextExpiryTitle": "Ukuphelelwa okulandelayo yi-\"{name}\" ngo-{date}",
+  "insightNextExpiryBody": "Okwangoku akukho manyathelo afunekayo.",
+
+  "insightClusteredTitle": "Izinto ezininzi ziphelelwa kufutshane no-{month}",
+  "insightClusteredBody": "Ukuzijonga kunye kunokonga ixesha.",
+
+  "insightTopCategoryTitle": "Uninzi lwezinto zikwi-{category}",
+  "insightTopCategoryBody": "Ukuqala apha kunika impembelelo enkulu.",
+
+  "insightStableTitle": "Yonke into izinzile ngoku",
+  "insightStableBody": "Akukho ziphelelwa ezifunayo ingqalelo ngoku.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Wamkelekile",
+  "summaryAllTitle": "Zonke izinto",
+"summaryAllCaption": "Zilandelwa kwiVaultara",
+"summarySoonTitle": "Ziza kuphelelwa lixesha kungekudala",
+"summarySoonCaption": "Kwiintsuku ezingama-30",
+"summaryWeekTitle": "Kule veki",
+"summaryWeekCaption": "Kuphelelwa lixesha kwiintsuku ezi-7",
+"summaryExpiredTitle": "Ziphelelwe lixesha",
+"summaryExpiredCaption": "Umhla wokuphelelwa lixesha udlulile",
+"stabilityStableTitle": "Yonke into ibonakala izinzile",
+"stabilityStableBody": "Iirekhodi zakho azibonisi imingcipheko ekhawulezayo okanye eqokelelweyo.",
+
+"stabilityDecliningTitle": "Uzinzo luyancipha",
+"stabilityDecliningBody": "Ezinye izinto ziphelelwe lixesha, ezinye zisondela.",
+
+"stabilityWeakenedTitle": "Uzinzo lubuthathaka",
+"stabilityWeakenedBody": "Ubukho beerikhodi eziphelelwe lixesha bunciphisa ukuthembeka ngokubanzi.",
+
+"stabilityPressureTitle": "Uxinzelelo luyanda",
+"stabilityPressureBody": "Ezinye iirekhodi ziya kufuna ingqalelo kungekudala ukuze kugcinwe uzinzo.",
+"editorNotes": "Amanqaku",
+"notesHint": "Faka amanqaku",
+"editorReminderTitle": "Isikhumbuzi",
+"editorReminderNone": "Akukho sikhumbuzi",
+"editorReminderOnExpiry": "Ngomhla wokuphela",
+"editorReminder7Days": "Iintsuku ezi-7 ngaphambi kokuphela",
+"editorReminder30Days": "Iintsuku ezi-30 ngaphambi kokuphela",
+"editorReminderCustom": "Eyenzelwe wena",
+"daysBeforeExpiry": "iintsuku ngaphambi kokuphela",
+"reminderStage0Title": "Isikhumbuzi sokuphelelwa",
+"reminderStage0Body": "{firstName}, {itemName} iza kuphelelwa kwiintsuku ezi-{days}.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Isikhumbuzi sokulandela",
+"reminderStage1Body": "{firstName}, {itemName} ayikahlaziywa.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Ukuphelelwa kusondela",
+"reminderStage2Body": "Umhla wokuphelelwa kwe-{itemName} usondela.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Isikhumbuzi sokugqibela",
+"reminderFinalBody": "{firstName}, nceda uhlaziye {itemName} ngoku.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Ulingano lokugubungela",
+"coverageAllRepresented": "Iirekhodi zakho zibandakanya zonke iindidi.",
+"coverageMissingNamed": "Akukho zirekhodi zifunyenwe kwiindidi {count}: {names}.",
+"coverageMissingSummary": "Awongezanga naziphi na iirekhodi kwiindidi {count}, kuquka {names} kunye nezinye {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Sebenzisa igama lokugqitha",
+"signInWithBiometrics": "Ngena usebenzisa i-biometrics",
+"enableBiometricsTitle": "Vula ukhuseleko lwe-biometrics",
+"enableBiometricsBody": "Sebenzisa umnwe okanye ukuqatshelwa kobuso ukukhusela i-Vaultara.",
+"enableBiometricsReason": "Vula ukuvula nge-biometrics kwi-Vaultara.",
+"notNow": "Hayi ngoku",
+"useBiometrics": "Sebenzisa i-biometrics",
+"recordsCalendarIntro":
+  "Khetha indlela ofuna ukujonga ngayo imihla yokuphelelwa:\n\n• Bhala ukuba zingaphi iintsuku ukusuka namhlanje ofuna ukuzijonga.\n• Okanye khetha umhla othile kwikhalenda.\n\nIVaultara iza kubonisa iirekhodi eziphelelwa ngolo suku.",
+
+"showingRecordsRelative": "Kuboniswayo iirekhodi eziphelelwa {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Kuboniswayo iirekhodi eziphelelwa kumhla okhethiweyo",
+
+"noRecordsOnDate":
+  "Akukho zirekhodi zimiselwe ukuphelelwa ngaloo mini.",
+
+"recordEditorAddTitle": "Yongeza irekhodi",
+"recordEditorEditTitle": "Hlela irekhodi",
+
+"editorRecordName": "Igama lerekodi",
+"editorRecordNameHint": "Ngenisa igama lerekodi",
+"recordEditorErrorName": "Igama lerekodi liyafuneka",
+
+"recordsLabel": "iirekhodi",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Cofa ukongeza nokulandelela iirekhodi kweli qela.",
+
+"recordsInGroup": "Iirekhodi kweli qela",
+
+"recordsInGroupHint":
+  "Landela irekhodi ngalinye elibalulekileyo kunye nomhla wokuphelelwa ukuze uhlaziye ngexesha.",
+
+"searchRecords": "Khangela iirekhodi",
+"addRecord": "Yongeza irekhodi",
+"noRecordsYet": "Akukabikho zirekhodi.",
+
+"deleteRecordTitle": "Cima irekhodi",
+
+"recordsInsightClusteredTitle":
+  "Iirekhodi ezininzi ziphelelwa malunga no {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Uninzi lweerekhodi zakho luphantsi kwe {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Zonke iirekhodi",
+
+"recordsStabilityDecliningBody":
+  "Ezinye iirekhodi sele ziphelelwe kwaye ezinye ziya kuphelelwa kungekudala.",
+
+"recordsCoverageAllRepresented":
+  "Iirekhodi zakho zigubungela zonke iindidi.",
+
+"recordReminderStage0Body":
+  "{firstName}, irekhodi lakho {recordName} liphelelwa kwiintsuku ezi-{days}.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, irekhodi lakho {recordName} alikahlaziywa.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Umhla wokuphelelwa kwe {recordName} usondele.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, nceda uhlaziye irekhodi {recordName} ngoku.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Akukho maqela okwangoku",
+"groupLabel": "{count, plural, one {Iqela} other {Amaqela}}",
+"recordsExpiring": "{count, plural, one {irekhodi eli-1 liphelelwa lixesha kwiintsuku {days}} other {{count} iirekhodi ziphelelwa lixesha kwiintsuku {days}}}",
+"recordsGroupStats": "{records, plural, one {irekhodi eli-1} other {{records} iirekhodi}} • {expiring} kwiintsuku {days}",
+"groupLabel": "{count, plural, one {{count} iqela} other {{count} amaqela}}",
+"recordsLabel": "{count, plural, one {{count} irekhodi} other {{count} iirekhodi}}",
+"forgotPassword": "Uyilibele iphasiwedi?",
+  "forgotPasswordTitle": "Phinda usete iphasiwedi",
+  "forgotPasswordBody": "Faka idilesi ye-imeyile yakho ukuze sithumele ikhonkco lokuseta kwakhona iphasiwedi.",
+  "sendResetLink": "Thumela ikhonkco",
+  "passwordResetEmailSent": "I-imeyile yokuseta kwakhona iphasiwedi ithunyelwe.",
+  "verifyEmailToContinue": "Nceda uqinisekise idilesi yakho ye-imeyile ngaphambi kokungena",
+  "changeEmailTitle": "Guqula idilesi ye-imeyile",
+"newEmailHint": "Faka i-imeyile yakho entsha",
+"sendVerificationEmail": "Thumela i-imeyile yokuqinisekisa",
+"deleteAccountTitle": "Cima iakhawunti",
+"deleteAccountWarning": "Eli nyathelo liza kucima iakhawunti yakho kunye nayo yonke idatha egciniweyo ngonaphakade.\nAlinakubuyiselwa.",
+"deleteAccountConfirm": "Cima iakhawunti ngonaphakade",
+"supportTitle": "Inkxaso",
+"supportSubtitle": "Qhagamshelana nathi ukuba ufuna uncedo okanye unemibuzo.",
+"supportEmailSubject": "Isicelo senkxaso seVaultara",
+"supportEmailError": "Ayikwazi ukuvula usetyenziso lwe-imeyile.",
+"passwordResetEmailFailed": "Ayikwazanga ukuthumela i-imeyile yokuseta kwakhona iphasiwedi.",
+"loggedInPasswordResetBody": "Siza kuthumela ikhonkco lokuseta kwakhona iphasiwedi ku:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Ulawulo lweakhawunti",
+"changeEmailTitle": "Tshintsha idilesi ye-imeyile",
+"changeEmailSubtitle": "Hlaziya i-imeyile enxulumene neakhawunti yakho.",
+"changePasswordTitle": "Tshintsha iphasiwedi",
+"changePasswordSubtitle": "Siza kukuthumelela i-imeyile enekhonkco lokutshintsha iphasiwedi ngokhuseleko.",
+"deleteAccountTitle": "Cima iakhawunti",
+"deleteAccountSubtitle": "Cima iakhawunti yakho yeVaultara ngokusisigxina.",
+"biometricAuthReason": "Qinisekisa ukuze ufikelele kwiakhawunti yakho",
+"verifyEmailTitle": "Qinisekisa i-imeyile yakho",
+"verifyEmailBody": "Sithumele i-imeyile yokuqinisekisa kwibhokisi yakho yokungenayo. Nceda uyivule uze uqinisekise idilesi ye-imeyile yakho, emva koko ubuyele apha ukuze uqhubeke.",
+"verifyEmailConfirmedButton": "Ndiqinisekisile i-imeyile yam",
+"verifyEmailResendButton": "Thumela kwakhona i-imeyile yokuqinisekisa",
+"verifyEmailSending": "Iyathunyelwa...",
+"navHome": "Ikhaya",
+"navCategories": "Iindidi",
+"navInsights": "Iimbono",
+"navCalendar": "Ikhalenda",
+"tutorialHomeSearch": "Sebenzisa ibha yokukhangela ukufumana irekhodi ngokukhawuleza.",
+"tutorialHomeFab": "Yongeza irekhodi lakho lokuqala apha.\nKhetha udidi, yongeza amanqaku kunye nomhla wokuphelelwa.",
+"tutorialHomeSummary": "Eli candelo likunceda ufumane iirekhodi ezisondela ekuphelelweni.",
+"tutorialHomeInsight": "Olu hlalutyo lubonisa iipateni.\nUngacofa uphawu lwesandi.",
+"tutorialHomeCoverage": "Ibhalansi yokugubungela ibonisa ukwabiwa.",
+"tutorialHomeStability": "Uzinzo lubonisa ukuthembeka.",
+"tutorialCancel": "Rhoxisa",
+"tutorialNext": "Okulandelayo",
+"tutorialEnd": "Gqiba isifundo",
+"softDeleteCategory": "udidi",
+"softDeleteGroup": "iqela",
+"softDeleteRecord": "irekhodi",
+
+"softDeleteTitle": "Hambisa {type} ku Ezisusiweyo",
+
+"softDeleteMessage": "{type} \"{name}\" iza kuhanjiswa ku Ezisusiweyo.\n\nUngayibuyisela ngaphakathi kweentsuku ezingama-30. Emva koko iya kususwa ngokupheleleyo.",
+
+"softDeleteMove": "Hambisa",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Kususwe kutshanje",
+"categories": "Iindidi",
+"groups": "Amaqela",
+"records": "Iirekhodi",
+"restore": "Buyisela",
+"deletePermanently": "Susa ngokupheleleyo",
+
+"recentlyDeletedBanner": "{type} ezisusiweyo zigcinwa iintsuku ezingama-30.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Khangela {type} ezisusiweyo",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Azikho {type} ezisusiweyo",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Cofa udidi ukuze ubone amaqela awo kwaye ulawule iirekhodi zakho.",
+"groupsHint": "Amaqela alungelelanisa iirekhodi zakho kolu didi. Cofa iqela ukulawula iirekhodi.",
+"notLoggedIn": "Awungenanga",
+"recordsInsideGroupHint": "Ezi ziirekhodi ngaphakathi kweli qela.",
+"snackMovedToRecentlyDeleted": "\"{name}\" ifuduselwe kwi Kutshanje Kucinyiweyo",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" icinywe ngempumelelo",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" ihlaziywe ngempumelelo",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" yongezwe ngempumelelo",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" ibuyiselwe ngempumelelo",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Umda wasimahla ufikelelwe ({current}/{limit}). Phucula ukuze ungeze ngakumbi.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Khangela zonke iirekhodi",
+"globalSearchHint": "Faka igama, udidi okanye iqela",
+"globalSearchNoMatches": "Akukho rekhodi ihambelana nokukhangela kwakho.",
+"snackNoRecordsToSearch": "Akukho rekhodi zokukhangela. Yongeza iirekhodi ezimbalwa kwaye iVaultara iza kuzifaka kuluhlu ngokuzenzekelayo.",
+"recoveryCentreTitle": "Iziko lokuBuyisela",
+"recoveryCentreSubtitle": "Buyisela okanye ucime ngokusisigxina iirekhodi ezisusiweyo.",
+"plan_premium": "Premium",
+"plan_free": "Simahla",
+"profile_app_settings_title": "Iisetingi ze-app",
+"profile_privacy_security_title": "Ubumfihlo nokhuseleko",
+"profile_biometric_on": "Ukutshixa nge-biometric kusebenzayo kule sixhobo.",
+"profile_biometric_off": "Ukutshixa nge-biometric kukhubazekile.",
+"profile_biometric_enable_reason": "Qinisekisa isazisi sakho ukuze uvule ukutshixa nge-biometric.",
+"profile_biometric_disable_reason": "Qinisekisa isazisi sakho ukuze ucime ukutshixa nge-biometric.",
+"profile_account_management_title": "Ulawulo lweakhawunti",
+"profile_account_management_subtitle": "Guqula i-imeyile, igama lokugqitha okanye ucime iakhawunti.",
+"profile_premium_active_title": "Premium iyasebenza",
+"profile_premium_upgrade_title": "Phucula uye kwiPremium",
+"profile_premium_active_subtitle": "Izikhumbuzo eziphambili zivuliwe.",
+"profile_premium_upgrade_subtitle": "Vula izikhumbuzo eziphambili kunye nolungelelwaniso olungenamda.",
+"profile_manage_cancel_hint": "Lawula okanye rhoxisa nanini na kuGoogle Play.",
+"profile_manage_subscription_button": "Lawula ubhaliso",
+"plansTitle": "Khetha isicwangciso sakho",
+"plansTrialBanner": "Iintsuku ezi-7 simahla.\nRhoxisa nanini.",
+"plansLoading": "Kulayishwa…",
+"plansStartFreeTrial": "Qalisa simahla",
+"plansNoChargeTodayFooter": "Iintsuku ezi-7 simahla · Akukho ntlawulo namhlanje",
+
+"planFreeTitle": "Simahla",
+"planFreeSubtitle": "Ukuqala",
+"planPremiumMonthlyTitle": "Premium nyanga",
+"planPremiumYearlyTitle": "Premium unyaka",
+"planPerMonth": "ngenyanga",
+"planPerYear": "ngonyaka",
+
+"planBadgeCurrent": "Okwangoku",
+"planBadgePopular": "Idumile",
+"planBadgeBestValue": "Ixabiso elingcono",
+
+"planYouAreOnThisPlan": "Usebenzisa esi sicwangciso.",
+
+"planFeatureUpToRecords": "Ukuya kuthi ga {count} iirekhodi",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Iindidi zesiko (ukuya kuthi ga {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Iindidi ezisezantsi ezimiselweyo",
+"planFeatureCloudStorage": "Ukugcinwa kwilifu",
+"planFeatureSmartExpiryInsights": "Uhlalutyo lokuphelelwa",
+"planFeatureCoverageBalance": "Ibhalansi yeendidi",
+"planFeatureRecordStabilityTracking": "Uzinzo lwerekhodi",
+
+"planFeatureUnlimitedRecords": "Iirekhodi ezingapheliyo",
+"planFeatureUnlimitedCategories": "Iindidi ezingapheliyo",
+"planFeatureCustomSubcategories": "Iindidi ezisezantsi zesiko",
+"planFeatureMultipleRemindersPerRecord": "Izikhumbuzi ezininzi",
+"planFeatureAdvancedReminderTiming": "Ixesha eliphucukileyo",
+"planFeatureAutomaticFollowUps": "Izikhumbuzi ezizenzekelayo",
+
+"planFeatureEverythingInMonthly": "Konke kwinyanga",
+"planFeatureSavePercentComparedToMonthly": "Gcina i-{percent}% xa uthelekisa nenyanga",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Ixabiso elingcono kwixesha elide",
+"editorReminderLabel": "Isikhumbuzi",
+"editorReminderSelectOptional": "Khetha isikhumbuzi (ngokuzikhethela)",
+"editorReminderOnExpiry": "Ngomhla wokuphelelwa",
+"editorReminderDaysBefore": "Iintsuku ezi-{days} ngaphambi kokuphelelwa",
+"editorFreeItemsCount": "Iirekhodi zasimahla: {used}/{limit}",
+"editorExpiryPastWarning": "Umhla wokuphelelwa sele udlulile.",
+"editorExpiryTodayWarning": "Le rekhodi iphelelwa namhlanje.",
+"editorErrorExpiryPast": "Umhla wokuphelelwa awunakuba kudlulileyo.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Iingcinga zanamhlanje",
+"tutorialBannerTitle": "Isikhokelo esikhawulezayo",
+"tutorialBannerBody": "Funda apho ungakhangela khona, indlela yokongeza iirekhodi, nentsingiselo ye-insights ngaphantsi komzuzu.",
+"tutorialBannerStart": "Qalisa isifundo",
+"tutorialBannerDismiss": "Hayi ngoku",
+"authErrorUserDisabled": "Le akhawunti ivaliwe.",
+"authErrorNetwork": "Impazamo yenethiwekhi. Zama kwakhona.",
+"authErrorTooManyRequests": "Imizamo emininzi kakhulu. Zama kamva.",
+"authErrorSignInFailed": "Ukungena akuphumelelanga. Zama kwakhona.",
+"ok": "Kulungile",
+"snackPremiumEnabled": "IPremium ivuliwe",
+"snackPremiumRestored": "IPremium ibuyiselwe",
+"passwordNeedLower": "Kufuneka ibe nonobumba omncinci",
+"passwordNeedUpper": "Kufuneka ibe nonobumba omkhulu",
+"passwordNeedNumber": "Kufuneka ibe nenombolo",
+"passwordNeedSymbol": "Kufuneka ibe nesimboli",
+"confirmIdentityTitle": "Qinisekisa isazisi",
+"confirm": "Qinisekisa",
+"profile_sign_out_title": "Phuma",
+"profile_sign_out_subtitle": "Phuma kuVaultara kule sixhobo",
+"profile_sign_out_confirm_title": "Ufuna ukuphuma?",
+"profile_sign_out_confirm_body": "Kuya kufuneka ungene kwakhona ukuze ufikelele kwiakhawunti yakho.",
+"profile_sign_out_action": "Phuma",
+"todayInsightsAudioHint": "Ukhetha iaudio? Sebenzisa i-icon yesithethi.",
+"category2Label": "Udidi",
+"enable2BiometricsBody": "Sebenzisa ukuqaphela umnwe ukuze ukhusele i-akhawunti yakho yeVaultara.",
+"snackNotificationsDisabled": "Izaziso zicinyiwe. Zivule ukuze ufumane izikhumbuzo.",
+"openSettings": "Vula izicwangciso",
+
+"reminderOnExpiryTitle": "Iphela namhlanje",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Molo {firstName}, \"{itemName}\" iphela namhlanje.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Iindidi zasimahla: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Ibonisa ukuba zingaphi iindidi zasimahla ezisetyenzisiweyo kumda wasimahla.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Yongeza amanqaku (uyazikhethela)",
+"apply": "Sebenzisa",
+"smartInsightExpiresTodayHeading": "Iphelelwa Namhlanje",
+"smartInsightExpiresTodaySingleBody": "{name} iphelelwa namhlanje. Thatha inyathelo ngoku ukugcina ihlaziyiwe.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} kunye nelinye 1 uxwebhu liphelelwa namhlanje.} other{{names} kunye namanye {extra} amaxwebhu aphelelwa namhlanje.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Ifuna Ingqalelo Yakho",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} iphelelwa kwiintsuku 1 kwaye akukho sikhumbuzo somisiweyo. Qinisekisa ukuba iinkcukacha zisalungile.} other{{name} iphelelwa kwiintsuku {days} kwaye akukho sikhumbuzo somisiweyo. Qinisekisa ukuba iinkcukacha zisalungile.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Uhlaziyo Oluninzi Kufutshane",
+"smartInsightRenewalTwinBodyTwo": "{a} kunye {b} ziphelelwa kwiiveki ezintathu kumnye komnye. Cwangcisa kwangaphambili.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, kunye {c} zonke ziphelelwa kwiiveki ezintathu. Cwangcisa kwangaphambili.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, kunye nelinye 1 uxwebhu ziphelelwa kwiiveki ezintathu. Cwangcisa kwangaphambili.} other{{a}, {b}, kunye namanye {extra} amaxwebhu aphelelwa kwiiveki ezintathu. Cwangcisa kwangaphambili.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Iqela Elilandelayo",
+"smartInsightClusterBody": "{count, plural, =1{Uxwebhu 1 ku {category} luphelelwa kwiinyanga ezimbini ezilandelayo. Cinga ngokuphatha bonke kunye.} other{Amaxwebhu {count} ku {category} aphelelwa kwiinyanga ezimbini ezilandelayo. Cinga ngokuphatha onke kunye.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Ixesha Lokuzola Phambili",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Akukho nto iphelelwayo kusuku olulandelayo 1. Uhlaziyo lwakho olulandelayo ngo {firstDate}.} other{Akukho nto iphelelwayo kwiintsuku {days} ezilandelayo. Uhlaziyo lwakho olulandelayo ngo {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Yonke Into Ihlaziyiwe",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 ukuphelelwa okuzayo kufakwe izikhumbuzo. Akukho nto enye efuna ingqalelo yakho.} other{{count} ukuphelelwa okuzayo kufakwe izikhumbuzo. Akukho nto enye efuna ingqalelo yakho.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Yonke into ihlaziyiwe. Akukho nto efuna ingqalelo yakho ngoku.",
+"smartInsightNoRecordsHeading": "Yongeza Irekhodi Yakho Yokuqala",
+"smartInsightNoRecordsBody": "Qalisa ukulandelela amaxwebhu akho kwaye iVaultara izakubonisa ukuqonda okukrelekrele apha.",
+"expiryTimelineTitle": "Umlinganiselo wexesha lokuphelelwa",
+"expiryTimelineSubtitle": "Cofa inyanga ukubona iirekhodi eziphelelwa kwaloo nyanga",
+"expiryTimelineDetailCount": "{count, plural, =1{1 irekhodi} other{{count} iirekhodi}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Ezizayo",
+"summaryUpcomingCaption": "Kwiintsuku ezi-30",
+"summaryUrgentTitle": "Ngxamisekileyo",
+"summaryUrgentCaption": "Kwiintsuku ezi-7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

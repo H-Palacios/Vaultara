@@ -103,5 +103,793 @@
   "groupErrorSymbols": "Izena ezin da sinboloz osatu",
   "groupErrorNumbers": "Izena ezin da zenbakiekin osatu",
 
-  "createGroup": "Sortu"
+  "createGroup": "Sortu",
+
+
+  "registerTitle": "Kontua sortu",
+
+  "firstNameLabel": "Izena",
+  "firstNameHint": "Idatzi izena",
+  "errorFirstName": "Izena beharrezkoa da",
+  "lastNameLabel": "Abizena",
+  "lastNameHint": "Idatzi abizena",
+  "errorLastName": "Abizena beharrezkoa da",
+
+  "emailLabel": "Helbide elektronikoa",
+  "errorEmailInvalid": "Idatzi baliozko helbide elektronikoa.",
+  "errorEmailInUse": "Helbide elektroniko hau dagoeneko\nVaultara kontu bati lotuta dago.",
+
+  "passwordLabel": "Pasahitza",
+  "passwordHelper": "Gutxienez 8 karaktere, mota desberdinekin",
+
+  "passwordTooShort": "Laburregia",
+  "passwordTooWeak": "Ahulegia",
+  "passwordMedium": "Ertaina",
+  "passwordStrong": "Indartsua",
+  "errorPasswordLength": "Pasahitzak gutxienez 8 karaktere izan behar ditu",
+  "errorPasswordWeak": "Aukeratu pasahitz sendoagoa",
+
+  "errorGeneric": "Erregistroak huts egin du. Saiatu berriro",
+
+  "createAccount": "Kontua sortu",
+  "appName": "Vaultara",
+"authTagline": "Pasaporte, lizentzia, txartel eta beste funtsezko gauzentzako zure gune pertsonala",
+"tabSignIn": "Hasi saioa",
+"tabCreateAccount": "Sortu kontua",
+"signInFooterText": "Hasi saioa zure Vaultara espazio pertsonala atzitzeko eta berritze guztiak kontrolpean edukitzeko",
+"createAccountFooterText": "Sortu Vaultara kontua funtsezko oroigarriak babesteko eta nahi duzunean sartzeko",
+  "emailNotFound": "Helbide okerra.\nEz dago Vaultara konturik helbide honekin",
+  "incorrectPassword": "Pasahitz okerra",
+  "emailLabel": "Helbide elektronikoa",
+  "passwordLabel": "Pasahitza",
+  "emailRequired": "Zure helbide elektronikoa beharrezkoa da",
+"passwordRequired": "Zure pasahitza beharrezkoa da",
+"registerPasswordHint": "Idatzi pasahitza",
+"loginPasswordHint": "Idatzi zure pasahitza",
+"emailHint": "Idatzi zure helbide elektronikoa",
+  "signIn": "Hasi saioa",
+"categoryPersonalIdentification": "Identifikazio pertsonala",
+  "categoryDrivingAndVehicles": "Gidatzea eta ibilgailuak",
+  "categoryTravelAndImmigration": "Bidaiak eta immigrazioa",
+  "categoryBankingAndCards": "Bankuak eta txartelak",
+  "categoryInsuranceAndCover": "Aseguruak eta estaldura",
+  "categoryHealthAndMedical": "Osasuna eta medikuntza",
+  "categoryWorkAndProfessional": "Lana eta profesionala",
+  "categoryPropertyAndHousing": "Higiezinak eta etxebizitza",
+  "categoryHouseholdAndUtilities": "Etxea eta zerbitzuak",
+
+  "subcategoryPassports": "Pasaporteak",
+  "subcategoryIdCards": "Nortasun-agiriak",
+  "subcategoryResidencePermits": "Egoitza-baimenak",
+
+  "subcategoryDrivingLicences": "Gidabaimenak",
+  "subcategoryVehicleRegistrations": "Ibilgailuen erregistroak",
+  "subcategoryRoadworthyCertificates": "Ibilgailu-egoeraren ziurtagiriak",
+  "subcategoryVehicleInspectionCertificates": "Ibilgailuen ikuskapen-ziurtagiriak",
+
+  "subcategoryVisas": "Bisak",
+  "subcategoryStudyPermits": "Ikasketa-baimenak",
+  "subcategoryWorkPermits": "Lan-baimenak",
+  "subcategoryTravelInsuranceDocuments": "Bidaia-aseguruaren dokumentuak",
+
+  "subcategoryDebitAndCreditCards": "Zordunketa- eta kreditu-txartelak",
+  "subcategoryStoreCards": "Denda-txartelak",
+  "subcategoryFuelCards": "Erregai-txartelak",
+
+  "subcategoryVehicleInsurances": "Ibilgailuen aseguruak",
+  "subcategoryPropertyInsurances": "Ondasun-aseguruak",
+  "subcategoryLifeInsurances": "Bizitza-aseguruak",
+  "subcategoryHealthInsurances": "Osasun-aseguruak",
+  "subcategoryTravelInsurances": "Bidaia-aseguruak",
+
+  "subcategoryMedicalPrescriptions": "Errezeta medikoak",
+  "subcategoryOpticalPrescriptions": "Errezeta optikoak",
+  "subcategoryMedicalCertificates": "Ziurtagiri medikoak",
+
+  "subcategoryProfessionalLicences": "Lizentzia profesionalak",
+  "subcategoryProfessionalRegistrations": "Erregistro profesionalak",
+  "subcategoryIndustryRegistrations": "Industria-erregistroak",
+  "subcategoryWorkAccessCards": "Laneko sarbide-txartelak",
+
+  "subcategoryLeaseAgreements": "Alokairu-kontratuak",
+  "subcategoryAccessCardsAndTags": "Sarbide-txartelak eta etiketak",
+  "subcategoryParkingPermits": "Aparkatzeko baimenak",
+  "subcategorySecurityAccessPermits": "Segurtasun-sarbide baimenak",
+
+  "subcategoryElectricityAccounts": "Elektrizitate-kontuak",
+  "subcategoryWaterAccounts": "Ur-kontuak",
+  "subcategoryInternetContracts": "Interneteko kontratuak",
+  "subcategorySecurityServiceContracts": "Segurtasun-zerbitzuen kontratuak",
+   "searchCategories": "Otsi kategooriaid",
+  "filterAll": "Kõik",
+  "filterPreset": "Eelseadistatud",
+  "filterCustom": "Kohandatud",
+  "addCategoryTitle": "Lisa kategooria",
+  "customLabel": "Kohandatud",
+  "subcategoriesLabel": "alamkategooriad",
+  "itemsLabel": "üksused",
+  "itemsExpiring": "{count} üksust aegub {days} päeva pärast",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Kinnitatud olulised",
+  "pinnedHint": "Kinnita kategooriad, mida avad kõige sagedamini, et need jääksid ülaossa.",
+  "noCategoriesFound": "Kategooriaid ei leitud",
+  "searchGroups": "Bilatu taldeak",
+  "addGroupTitle": "Gehitu taldea",
+  "basicPlanGroupInfo": "Oinarrizko plana erabiltzen ari zara.\nKategoria honetako aurrez ezarritako taldeak ikus ditzakezu.\nEguneratu Premiumera zure talde propioak sortzeko.",
+  "groupDeleted": "Taldea ezabatu da",
+  "undo": "DESEGIN",
+  "groupStats": "{items} elementu • {expiring} {days} egun barru iraungiko dira",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Ukitu elementuak gehitu eta talde honetan kudeatzeko.",
+  "itemsInGroup": "Talde honetako elementuak",
+  "itemsInGroupHint": "Jarraitu elementu garrantzitsu bakoitza bere iraungitze-datarekin garaiz berritzeko.",
+  "searchItems": "Bilatu elementuak",
+  "filterAll": "Guztiak",
+  "filterExpiringWithin": "{days} egun barru iraungitzen da",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Iraungita",
+  "addItem": "Gehitu elementua",
+  "noItemsYet": "Oraindik ez dago elementurik.",
+
+  "statusExpired": "Iraungita",
+  "statusExpiresToday": "Gaur iraungitzen da",
+  "statusExpiresInOneDay": "Egun 1 barru iraungitzen da",
+  "statusExpiresInDays": "{days} egun barru iraungitzen da",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Baliozkoa",
+
+  "deleteCategoryTitle": "Ezabatu kategoria",
+  "deleteCategoryMessage": "Ziur zaude \"{name}\" kategoria ezabatu nahi duzula?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Ezabatu taldea",
+  "deleteGroupMessage": "Ziur zaude \"{name}\" taldea ezabatu nahi duzula?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Ezabatu elementua",
+  "deleteItemMessage": "Ziur zaude \"{name}\" ezabatu nahi duzula?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Utzi",
+  "delete": "Ezabatu",
+  "homeWelcomeTitle": "Ongi etorri",
+
+  "homeWelcomeFirstTitle": "Ongi etorri, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Ongi etorri berriro, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultarak iraungitze-data garrantzitsuen jarraipena egiten laguntzen dizu, ezer oharkabean gera ez dadin.",
+
+  "homeWelcomeSubtitleFirst":
+    "Pozik gaude hemen zaudelako. Vaultarak antolatuta egoten laguntzen dizu data eta erregistro garrantzitsuak leku seguru bakarrean gordez.",
+
+  "homeWelcomeSubtitleBack":
+    "Pozik gaude berriro ikusteaz. Vaultara hemen dago zure data eta erregistro garrantzitsuak berrikusi nahi dituzunean.",
+    "insightEmptyTitle": "Oraindik ez duzu ezer gehitu",
+  "insightEmptyBody": "Data garrantzitsuak jarraitzen hasten zarenean, Vaultarak iraungitzeak kontrolpean mantenduko ditu.",
+
+  "insightExpiresTodayTitle": "\"{name}\" gaur iraungitzen da",
+  "insightExpiresTodayBody": "Orain begiratzeak dena eguneratuta mantentzen laguntzen du.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" bihar iraungitzen da",
+  "insightExpiresTomorrowBody": "Gaur berrikustea komenigarria izan daiteke.",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} egunean iraungitzen da",
+  "insightExpiresSoonBody": "Aldez aurretik kudeatzeak lasaitasuna ematen du.",
+
+  "insightNextExpiryTitle": "Hurrengo iraungitzea \"{name}\" da ({date})",
+  "insightNextExpiryBody": "Une honetan ez da ekintzarik behar.",
+
+  "insightClusteredTitle": "Elementu batzuk {month} inguruan iraungitzen dira",
+  "insightClusteredBody": "Elkarrekin berrikusteak denbora aurrez dezake.",
+
+  "insightTopCategoryTitle": "Elementu gehienak {category} kategorian daude",
+  "insightTopCategoryBody": "Hortik hastea eraginkorrena da.",
+
+  "insightStableTitle": "Dena egonkor dago",
+  "insightStableBody": "Ez dago arreta behar duen iraungitzerik.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Elementu guztiak",
+"summaryAllCaption": "Vaultaran jarraituta",
+"summarySoonTitle": "Laster iraungiko da",
+"summarySoonCaption": "30 egun barru",
+"summaryWeekTitle": "Aste honetan",
+"summaryWeekCaption": "7 egunetan iraungiko da",
+"summaryExpiredTitle": "Iraungita",
+"summaryExpiredCaption": "Iraungitze-data igaro da",
+"stabilityStableTitle": "Dena egonkorra dirudi",
+"stabilityStableBody": "Zure erregistroek ez dute berehalako edo pilatutako arriskurik erakusten.",
+
+"stabilityDecliningTitle": "Egonkortasuna jaisten ari da",
+"stabilityDecliningBody": "Zenbait elementu iraungita daude eta beste batzuk iraungitzear daude.",
+
+"stabilityWeakenedTitle": "Egonkortasuna ahuldu da",
+"stabilityWeakenedBody": "Iraungitako erregistroek fidagarritasun orokorra murrizten dute.",
+
+"stabilityPressureTitle": "Presioa handitzen ari da",
+"stabilityPressureBody": "Egonkortasuna mantentzeko, hainbat erregistrok arreta beharko dute laster.",
+"editorNotes": "Oharrak",
+"notesHint": "Idatzi oharrak",
+"editorReminderTitle": "Oroigarria",
+"editorReminderNone": "Oroigarririk ez",
+"editorReminderOnExpiry": "Iraungitze-datan",
+"editorReminder7Days": "Iraungitzetik 7 egun lehenago",
+"editorReminder30Days": "Iraungitzetik 30 egun lehenago",
+"editorReminderCustom": "Pertsonalizatua",
+"daysBeforeExpiry": "egun iraungitu aurretik",
+"reminderStage0Title": "Iraungitze-oharra",
+"reminderStage0Body": "{firstName}, {itemName} {days} egun barru iraungiko da.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Jarraipen-oharra",
+"reminderStage1Body": "{firstName}, {itemName} oraindik ez da eguneratu.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Iraungitzea hurbiltzen",
+"reminderStage2Body": "{itemName}-ren iraungitze-data hurbiltzen ari da.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Azken ohartarazpena",
+"reminderFinalBody": "{firstName}, eguneratu {itemName} orain.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Estalduraren oreka",
+"coverageAllRepresented": "Zure erregistroek kategoria guztiak hartzen dituzte.",
+"coverageMissingNamed": "{count} kategoriatan ez da erregistrorik aurkitu: {names}.",
+"coverageMissingSummary": "Ez duzu erregistrorik gehitu {count} kategoriatan, {names} eta beste {remaining} barne.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Erabili pasahitza",
+"signInWithBiometrics": "Hasi saioa biometriarekin",
+"enableBiometricsTitle": "Gaitu segurtasun biometrikoa",
+"enableBiometricsBody": "Erabili hatz-marka edo aurpegi-ezagutza Vaultara babesteko.",
+"enableBiometricsReason": "Gaitu Vaultararen desblokeo biometrikoa.",
+"notNow": "Orain ez",
+"useBiometrics": "Erabili biometria",
+"recordsCalendarIntro":
+  "Aukeratu nola aztertu nahi dituzun iraungitze-datak:\n\n• Idatzi gaurtik zenbat egunera begiratu nahi duzun.\n• Edo hautatu egutegian data zehatz bat.\n\nVaultarak egun horretan iraungitzen diren erregistroak erakutsiko ditu.",
+
+"showingRecordsRelative": "{time} barru iraungitzen diren erregistroak erakusten",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Hautatutako egunean iraungitzen diren erregistroak erakusten",
+"noRecordsOnDate": "Ez dago egun horretan iraungitzeko ezarritako erregistrorik.",
+
+"recordEditorAddTitle": "Erregistroa gehitu",
+"recordEditorEditTitle": "Erregistroa editatu",
+
+"editorRecordName": "Erregistroaren izena",
+"editorRecordNameHint": "Sartu erregistroaren izena",
+"recordEditorErrorName": "Erregistroaren izena derrigorrezkoa da",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Sakatu talde honetan erregistroak gehitu eta jarraitzeko.",
+
+"recordsInGroup": "Talde honetako erregistroak",
+"recordsInGroupHint":
+  "Jarraitu erregistro garrantzitsu bakoitza bere iraungitze-datarekin garaiz berritzeko.",
+
+"searchRecords": "Erregistroak bilatu",
+"addRecord": "Erregistroa gehitu",
+"noRecordsYet": "Oraindik ez dago erregistrorik.",
+
+"deleteRecordTitle": "Erregistroa ezabatu",
+
+"recordsInsightClusteredTitle":
+  "Hainbat erregistro {month} inguruan iraungitzen dira",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Zure erregistro gehienak {category} kategorian daude",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Erregistro guztiak",
+
+"recordsStabilityDecliningBody":
+  "Erregistro batzuk jada iraungi dira eta gehiago laster iraungiko dira.",
+
+"recordsCoverageAllRepresented":
+  "Zure erregistroek kategoria guztiak estaltzen dituzte.",
+
+"recordReminderStage0Body":
+  "{firstName}, zure {recordName} {days} egun barru iraungiko da.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, zure {recordName} oraindik ez da eguneratu.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} erregistroaren iraungitze-data hurbiltzen ari da.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, mesedez eguneratu {recordName} orain.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Oraindik ez dago talderik",
+"recordsExpiring": "{count, plural, one {Erregistro 1 {days} egun barru iraungiko da} other {{count} erregistro {days} egun barru iraungiko dira}}",
+"recordsGroupStats": "{records, plural, one {Erregistro 1} other {{records} erregistro}} • {expiring} {days} egunetan",
+"groupLabel": "{count, plural, one {{count} talde} other {{count} talde}}",
+"recordsLabel": "{count, plural, one {{count} erregistro} other {{count} erregistro}}",
+"forgotPassword": "Pasahitza ahaztu duzu?",
+  "forgotPasswordTitle": "Pasahitza berrezarri",
+  "forgotPasswordBody": "Sartu zure helbide elektronikoa eta pasahitza berrezartzeko esteka bidaliko dizugu.",
+  "sendResetLink": "Bidali esteka",
+  "passwordResetEmailSent": "Pasahitza berrezartzeko mezu elektronikoa bidali da.",
+  "verifyEmailToContinue": "Mesedez, egiaztatu zure helbide elektronikoa saioa hasi aurretik",
+  "changeEmailTitle": "Helbide elektronikoa aldatu",
+"newEmailHint": "Sartu zure helbide elektroniko berria",
+"sendVerificationEmail": "Bidali egiaztapen-mezua",
+"deleteAccountTitle": "Ezabatu kontua",
+"deleteAccountWarning": "Ekintza honek zure kontua eta gordetako datu guztiak behin betiko ezabatuko ditu.\nEzin da atzera bota.",
+"deleteAccountConfirm": "Kontua behin betiko ezabatu",
+"supportTitle": "Laguntza",
+"supportSubtitle": "Jarri gurekin harremanetan laguntza behar baduzu edo galderarik baduzu.",
+"supportEmailSubject": "Vaultara laguntza eskaera",
+"supportEmailError": "Ezin da posta aplikazioa ireki.",
+"passwordResetEmailFailed": "Ezin izan da pasahitza berrezartzeko mezu elektronikoa bidali.",
+"loggedInPasswordResetBody": "Pasahitza berrezartzeko esteka bidaliko dugu hona:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Kontuaren kudeaketa",
+"changeEmailTitle": "Aldatu helbide elektronikoa",
+"changeEmailSubtitle": "Eguneratu zure kontuari lotutako helbide elektronikoa.",
+"changePasswordTitle": "Aldatu pasahitza",
+"changePasswordSubtitle": "Pasahitza segurtasunez aldatzeko esteka bat bidaliko dizugu posta elektronikoz.",
+"deleteAccountTitle": "Ezabatu kontua",
+"deleteAccountSubtitle": "Ezabatu betiko zure Vaultara kontua.",
+"biometricAuthReason": "Autentifikatu zure Vaultara kontura sartzeko",
+"verifyEmailTitle": "Egiaztatu zure posta elektronikoa",
+"verifyEmailBody": "Egiaztapen mezu bat bidali dizugu sarrera-ontzira. Ireki eta baieztatu zure helbidea, ondoren itzuli hona jarraitzeko.",
+"verifyEmailConfirmedButton": "Nire posta elektronikoa egiaztatu dut",
+"verifyEmailResendButton": "Bidali berriro egiaztapen-mezua",
+"verifyEmailSending": "Bidaltzen...",
+"navHome": "Hasiera",
+"navCategories": "Kategoriak",
+"navInsights": "Datuak",
+"navCalendar": "Egutegia",
+"tutorialHomeSearch": "Erabili bilaketa barra jarraitzen ari zaren edozein erregistro azkar aurkitzeko.",
+"tutorialHomeFab": "Gehitu zure lehen erregistroa hemen.\nAukeratu non dagoen, gehitu aukerako oharrak eta hautatu iraungitze data.",
+"tutorialHomeSummary": "Erregistro gehiago gehitzen dituzunean, atal honek iraungitzear dauden edo iraungitako elementuak ikusten laguntzen dizu.",
+"tutorialHomeInsight": "Ikuspegi adimendun honek ereduak eta hurrengo iraungitzeak nabarmentzen ditu.\nBozgorailuaren ikonoa sakatu dezakezu entzuteko.",
+"tutorialHomeCoverage": "Estaldura orekak erregistroak kategorietan nola banatzen diren erakusten du.\nOreka handiagoak hutsune gutxiago adierazten ditu.",
+"tutorialHomeStability": "Egonkortasunak denboran zehar erregistroak zein fidagarriak diren adierazten du.\nIraungitako eta hurrengo elementuek egonkortasuna murriztu dezakete.",
+"tutorialCancel": "Utzi",
+"tutorialNext": "Hurrengoa",
+"tutorialEnd": "Amaitu tutoriala",
+"softDeleteCategory": "Kategoria",
+"softDeleteGroup": "Taldea",
+"softDeleteRecord": "Erregistroa",
+"softDeleteTitle": "Eraman {type} Duela gutxi ezabatutakoetara",
+"softDeleteMessage": "{type} \"{name}\" Duela gutxi ezabatutakoetara eramango da.\n\n30 eguneko epean leheneratu dezakezu. Ondoren betirako ezabatuko da.",
+"softDeleteMove": "Eraman",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Duela gutxi ezabatuak",
+  "categories": "Kategoriak",
+  "groups": "Taldeak",
+  "records": "Erregistroak",
+  "restore": "Berreskuratu",
+  "deletePermanently": "Betirako ezabatu",
+
+  "recentlyDeletedBanner": "Ezabatutako {type} 30 egunez gordetzen dira.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Bilatu ezabatutako {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Ez dago ezabatutako {type}",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Sakatu kategoria bat bere taldeak ikusteko eta zure erregistroak kudeatzeko.",
+  "groupsHint": "Taldeek zure erregistroak antolatzen dituzte kategoria honetan. Sakatu talde bat erregistroak kudeatzeko.",
+  "notLoggedIn": "Ez duzu saioa hasi",
+"recordsInsideGroupHint": "Hauek dira talde honetako erregistroak.",
+"snackMovedToRecentlyDeleted": "\"{name}\" Azkenaldian ezabatuetara mugitu da",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" behar bezala ezabatu da",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" behar bezala eguneratu da",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" behar bezala gehitu da",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" behar bezala berreskuratu da",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Doako muga lortu da ({current}/{limit}). Eguneratu gehiago gehitzeko.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Bilatu erregistro guztiak",
+"globalSearchHint": "Idatzi erregistroaren izena, kategoria edo taldea",
+"globalSearchNoMatches": "Ez dago zure bilaketarekin bat datorren erregistrorik.",
+"snackNoRecordsToSearch": "Ez dago bilatzeko erregistrorik. Gehitu erregistro batzuk eta Vaultara-k automatikoki indexatuko ditu.",
+"recoveryCentreTitle": "Berreskuratze-zentroa",
+"recoveryCentreSubtitle": "Lehengoratu edo ezabatu betiko kendutako erregistroak.",
+"plan_premium": "Premium",
+"plan_free": "Doakoa",
+"profile_app_settings_title": "Aplikazioaren ezarpenak",
+"profile_privacy_security_title": "Pribatutasuna eta segurtasuna",
+"profile_biometric_on": "Blokeo biometrikoa aktibatuta dago gailu honetan.",
+"profile_biometric_off": "Blokeo biometrikoa desaktibatuta dago.",
+"profile_biometric_enable_reason": "Baieztatu zure identitatea blokeo biometrikoa aktibatzeko.",
+"profile_biometric_disable_reason": "Baieztatu zure identitatea blokeo biometrikoa desaktibatzeko.",
+"profile_account_management_title": "Kontuaren kudeaketa",
+"profile_account_management_subtitle": "Aldatu posta elektronikoa, pasahitza edo ezabatu kontua.",
+"profile_premium_active_title": "Premium aktibo",
+"profile_premium_upgrade_title": "Premiumera eguneratu",
+"profile_premium_active_subtitle": "Gogorarazle aurreratuak desblokeatuta.",
+"profile_premium_upgrade_subtitle": "Desblokeatu gogorarazle aurreratuak eta antolaketa mugagabea.",
+"profile_manage_cancel_hint": "Kudeatu edo bertan behera utzi edozein unetan Google Play-n.",
+"profile_manage_subscription_button": "Harpidetza kudeatu",
+"plansTitle": "Aukeratu plana",
+"plansTrialBanner": "Hasi 7 eguneko doako proba.\nUtzi nahi duzunean.",
+"plansLoading": "Kargatzen…",
+"plansStartFreeTrial": "Hasi doan",
+"plansNoChargeTodayFooter": "7 egun doan · Gaur ez da kobratzen",
+
+"planFreeTitle": "Doakoa",
+"planFreeSubtitle": "Hasiberrientzat",
+"planPremiumMonthlyTitle": "Premium hilekoa",
+"planPremiumYearlyTitle": "Premium urtekoa",
+"planPerMonth": "hilean",
+"planPerYear": "urtean",
+
+"planBadgeCurrent": "Uneko plana",
+"planBadgePopular": "Ezaguna",
+"planBadgeBestValue": "Baliorik onena",
+
+"planYouAreOnThisPlan": "Plana hau erabiltzen ari zara.",
+
+"planFeatureUpToRecords": "Gehienez {count} erregistro",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Kategoria pertsonalak (gehienez {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Azpikategoria lehenetsiak",
+"planFeatureCloudStorage": "Hodeiko biltegiratzea",
+"planFeatureSmartExpiryInsights": "Iraungitze adimenak",
+"planFeatureCoverageBalance": "Kategoria oreka",
+"planFeatureRecordStabilityTracking": "Erregistro egonkortasuna",
+
+"planFeatureUnlimitedRecords": "Erregistro mugagabeak",
+"planFeatureUnlimitedCategories": "Kategoria mugagabeak",
+"planFeatureCustomSubcategories": "Azpikategoria pertsonalak",
+"planFeatureMultipleRemindersPerRecord": "Oroigarri anitz",
+"planFeatureAdvancedReminderTiming": "Oroigarri aurreratuak",
+"planFeatureAutomaticFollowUps": "Oroigarri automatikoak",
+
+"planFeatureEverythingInMonthly": "Hileko planeko guztia",
+"planFeatureSavePercentComparedToMonthly": "Hilekoarekiko % {percent} aurrezten",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Epe luzerako balio onena",
+"editorReminderLabel": "Oroigarria",
+"editorReminderSelectOptional": "Hautatu oroigarri bat (aukerakoa)",
+"editorReminderOnExpiry": "Iraungitze egunean",
+"editorReminderDaysBefore": "Iraungitze aurretik {days} egun",
+"editorFreeItemsCount": "Doako erregistroak: {used}/{limit}",
+"editorExpiryPastWarning": "Iraungitze-data dagoeneko igaro da.",
+"editorExpiryTodayWarning": "Erregistro hau gaur iraungitzen da.",
+"editorErrorExpiryPast": "Iraungitze-data ezin da iraganean egon.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Gaurko ikuspegiak",
+"tutorialBannerTitle": "Ibilbide azkarra",
+"tutorialBannerBody": "Ikasi non bilatu, nola gehitu erregistroak eta zer esan nahi duten ikuspegiek minutu batean.",
+"tutorialBannerStart": "Hasi tutoriala",
+"tutorialBannerDismiss": "Orain ez",
+"authErrorUserDisabled": "Kontu hau desgaituta dago.",
+"authErrorNetwork": "Sareko errorea. Saiatu berriro.",
+"authErrorTooManyRequests": "Saiakera gehiegi. Saiatu geroago.",
+"authErrorSignInFailed": "Saioa hasteak huts egin du. Saiatu berriro.",
+"ok": "Ados",
+"snackPremiumEnabled": "Premium aktibatuta",
+"snackPremiumRestored": "Premium berreskuratuta",
+"passwordNeedLower": "Letra xehea eduki behar du",
+"passwordNeedUpper": "Letra larria eduki behar du",
+"passwordNeedNumber": "Zenbaki bat eduki behar du",
+"passwordNeedSymbol": "Sinbolo bat eduki behar du",
+"confirmIdentityTitle": "Identitatea baieztatu",
+"confirm": "Baieztatu",
+"profile_sign_out_title": "Saioa itxi",
+"profile_sign_out_subtitle": "Vaultaratik saioa itxi gailu honetan",
+"profile_sign_out_confirm_title": "Saioa itxi?",
+"profile_sign_out_confirm_body": "Zure kontura sartzeko berriro saioa hasi beharko duzu.",
+"profile_sign_out_action": "Saioa itxi",
+"todayInsightsAudioHint": "Audioa nahiago? Erabili bozgorailuaren ikonoa.",
+"category2Label": "Kategoria",
+"enable2BiometricsBody": "Erabili hatz-marken aitortza zure Vaultara kontua babesteko.",
+"snackNotificationsDisabled": "Jakinarazpenak desgaituta daude. Aktibatu oroigarriak jasotzeko.",
+"openSettings": "Ireki ezarpenak",
+
+"reminderOnExpiryTitle": "Gaur iraungitzen da",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Kaixo {firstName}, \"{itemName}\" gaur iraungitzen da.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Doako kategoriak: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Doako mugatik zenbat doako kategoria erabili diren erakusten du.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Gehitu oharrak (aukerakoa)",
+"apply": "Aplikatu",
+"smartInsightExpiresTodayHeading": "Gaur Iraungitzen Da",
+"smartInsightExpiresTodaySingleBody": "{name} gaur iraungitzen da. Egin ezazu zerbait orain eguneratuta mantentzeko.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} eta beste dokumentu 1 gaur iraungitzen dira.} other{{names} eta beste {extra} dokumentu gaur iraungitzen dira.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Zure Arreta Behar Du",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} egun 1 barru iraungitzen da eta ez du oroigarririk. Egiaztatu xehetasunak oraindik zuzenak diren.} other{{name} {days} egun barru iraungitzen da eta ez du oroigarririk. Egiaztatu xehetasunak oraindik zuzenak diren.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Berritze Ugari Hurbil",
+"smartInsightRenewalTwinBodyTwo": "{a} eta {b} hiru asteren barruan iraungitzen dira elkarrengandik. Aurretik planifikatu.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} eta {c} guztiak hiru asteren barruan iraungitzen dira. Aurretik planifikatu.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} eta beste dokumentu 1 hiru asteren barruan iraungitzen dira. Aurretik planifikatu.} other{{a}, {b} eta beste {extra} dokumentu hiru asteren barruan iraungitzen dira. Aurretik planifikatu.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Datorren Taldea",
+"smartInsightClusterBody": "{count, plural, =1{{category} kategorian dokumentu 1 iraungitzen da hurrengo bi hilabeteetan. Pentsatu elkarrekin kudeatzea.} other{{category} kategorian {count} dokumentu iraungitzen dira hurrengo bi hilabeteetan. Pentsatu elkarrekin kudeatzea.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Aldi Lasaia Aurrean",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Hurrengo egun 1ean ez da ezer iraungitzen. Zure hurrengo berritzea {firstDate}an da.} other{Hurrengo {days} egunetan ez da ezer iraungitzen. Zure hurrengo berritzea {firstDate}an da.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Dena Eguneratuta",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{Datorren iraungitze 1 oroigarriekin estalita dago. Beste ezerk ez du zure arreta behar.} other{Datozen {count} iraungitze oroigarriekin estalita daude. Beste ezerk ez du zure arreta behar.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Dena eguneratuta. Ezerk ez du zure arreta behar oraintxe.",
+"smartInsightNoRecordsHeading": "Gehitu Zure Lehen Erregistroa",
+"smartInsightNoRecordsBody": "Hasi zure dokumentuak jarraitzen eta Vaultarak ikuspegi adimentsuak erakutsiko ditu hemen.",
+"expiryTimelineTitle": "Iraungitze kronograma",
+"expiryTimelineSubtitle": "Sakatu hilabete bat hilabete horretan iraungitzen diren erregistroak ikusteko",
+"expiryTimelineDetailCount": "{count, plural, =1{erregistro 1} other{{count} erregistro}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Laster",
+"summaryUpcomingCaption": "Hurrengo 30 egunetan",
+"summaryUrgentTitle": "Premiazkoa",
+"summaryUrgentCaption": "Hurrengo 7 egunetan"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -18,17 +18,13 @@
   "in30Days": "Peste 30 de zile",
 
   "inDays": "peste {days} zile",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Numărul de zile este obligatoriu",
   "invalidDaysError": "Număr valid necesar (0 sau mai mult)",
 
   "showingItemsRelative": "Elemente care expiră {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Elemente care expiră la data selectată",
   "noItemsOnDate": "Nu există elemente care expiră în acea zi",
@@ -40,7 +36,7 @@
   "editorCategoryHint": "Selectați categorie",
 
   "editorGroup": "Grup",
-  "editorGroupHint": "Selectați grup în această categorie",
+  "editorGroupHint": "Selectați grup",
 
   "editorItemName": "Nume element",
   "editorItemNameHint": "Introduceți numele elementului",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Nume categorie",
   "categoryNameHint": "Introduceți categoria",
 
-  "categoryLimitReached":
-    "Limita planului Basic a fost atinsă. Premium permite categorii nelimitate",
-
-  "categoryLimitInfo":
-    "Planul Basic permite până la {limit} categorii",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Limita planului Basic a fost atinsă",
+  "categoryLimitInfo": "Planul Basic permite până la {limit} categorii",
 
   "categoryErrorEmpty": "Numele categoriei este obligatoriu",
   "categoryErrorTooShort": "Numele categoriei este prea scurt",
@@ -102,5 +92,802 @@
   "groupErrorSymbols": "Numele grupului nu poate conține doar simboluri",
   "groupErrorNumbers": "Numele grupului nu poate conține cifre",
 
-  "createGroup": "Creează"
+  "createGroup": "Creează",
+
+  "registerTitle": "Creează cont",
+
+  "firstNameLabel": "Prenume",
+  "firstNameHint": "Introduceți prenumele",
+  "errorFirstName": "Prenumele este obligatoriu",
+
+  "lastNameLabel": "Nume",
+  "lastNameHint": "Introduceți numele",
+  "errorLastName": "Numele este obligatoriu",
+
+  "emailLabel": "E-mail",
+  "errorEmailInvalid": "Introduceți o adresă de e-mail validă",
+  "errorEmailInUse": "Această adresă de e-mail este deja asociată unui cont Vaultara",
+
+  "passwordLabel": "Parolă",
+  "passwordHelper": "Minimum 8 caractere cu varietate",
+
+  "passwordTooShort": "Prea scurtă",
+  "passwordTooWeak": "Slabă",
+  "passwordMedium": "Medie",
+  "passwordStrong": "Puternică",
+  "errorPasswordLength": "Parola trebuie să conțină cel puțin 8 caractere",
+  "errorPasswordWeak": "Alegeți o parolă mai puternică",
+
+  "errorGeneric": "Înregistrarea a eșuat Încercați din nou",
+
+  "createAccount": "Creează cont",
+
+  "appName": "Vaultara",
+  "authTagline": "Hubul tău personal pentru pașapoarte licențe carduri și alte documente importante",
+  "tabSignIn": "Autentificare",
+  "tabCreateAccount": "Creează cont",
+  "signInFooterText": "Autentificați vă pentru a accesa spațiul personal Vaultara și a controla toate reînnoirile",
+  "createAccountFooterText": "Creați un cont Vaultara pentru a salva mementouri importante și a le accesa oricând",
+  "invalidEmail": "Introduceți o adresă de email validă",
+  "emailNotFound": "Email incorect.\nNu există un cont Vaultara cu acest email",
+  "incorrectPassword": "Parolă incorectă",
+  "emailLabel": "Adresă de email",
+  "passwordLabel": "Parolă",
+  "emailRequired": "Adresa ta de e-mail este obligatorie",
+"passwordRequired": "Parola ta este obligatorie",
+"registerPasswordHint": "Introdu parola",
+"loginPasswordHint": "Introdu parola ta",
+"emailHint": "Introdu adresa ta de e-mail",
+  "signIn": "Autentificare",
+   "categoryPersonalIdentification": "Identificare Personală",
+  "categoryDrivingAndVehicles": "Conducere și Vehicule",
+  "categoryTravelAndImmigration": "Călătorii și Imigrare",
+  "categoryBankingAndCards": "Bancar și Carduri",
+  "categoryInsuranceAndCover": "Asigurări și Acoperire",
+  "categoryHealthAndMedical": "Sănătate și Medical",
+  "categoryWorkAndProfessional": "Muncă și Profesional",
+  "categoryPropertyAndHousing": "Proprietăți și Locuință",
+  "categoryHouseholdAndUtilities": "Gospodărie și Utilități",
+
+  "subcategoryPassports": "Pașapoarte",
+  "subcategoryIdCards": "Cărți de Identitate",
+  "subcategoryResidencePermits": "Permise de Ședere",
+
+  "subcategoryDrivingLicences": "Permise de Conducere",
+  "subcategoryVehicleRegistrations": "Înmatriculări Vehicule",
+  "subcategoryRoadworthyCertificates": "Certificate de Inspecție Tehnică",
+  "subcategoryVehicleInspectionCertificates": "Certificate de Inspecție Vehicul",
+
+  "subcategoryVisas": "Vize",
+  "subcategoryStudyPermits": "Permise de Studii",
+  "subcategoryWorkPermits": "Permise de Muncă",
+  "subcategoryTravelInsuranceDocuments": "Documente de Asigurare de Călătorie",
+
+  "subcategoryDebitAndCreditCards": "Carduri de Debit și Credit",
+  "subcategoryStoreCards": "Carduri de Magazin",
+  "subcategoryFuelCards": "Carduri de Combustibil",
+
+  "subcategoryVehicleInsurances": "Asigurări Auto",
+  "subcategoryPropertyInsurances": "Asigurări de Proprietate",
+  "subcategoryLifeInsurances": "Asigurări de Viață",
+  "subcategoryHealthInsurances": "Asigurări de Sănătate",
+  "subcategoryTravelInsurances": "Asigurări de Călătorie",
+
+  "subcategoryMedicalPrescriptions": "Rețete Medicale",
+  "subcategoryOpticalPrescriptions": "Rețete Oftalmologice",
+  "subcategoryMedicalCertificates": "Certificate Medicale",
+
+  "subcategoryProfessionalLicences": "Licențe Profesionale",
+  "subcategoryProfessionalRegistrations": "Înregistrări Profesionale",
+  "subcategoryIndustryRegistrations": "Înregistrări Industriale",
+  "subcategoryWorkAccessCards": "Carduri de Acces la Muncă",
+
+  "subcategoryLeaseAgreements": "Contracte de Închiriere",
+  "subcategoryAccessCardsAndTags": "Carduri și Etichete de Acces",
+  "subcategoryParkingPermits": "Permise de Parcare",
+  "subcategorySecurityAccessPermits": "Permise de Acces Securitate",
+
+  "subcategoryElectricityAccounts": "Conturi de Electricitate",
+  "subcategoryWaterAccounts": "Conturi de Apă",
+  "subcategoryInternetContracts": "Contracte de Internet",
+  "subcategorySecurityServiceContracts": "Contracte de Servicii de Securitate",
+  "searchCategories": "Caută categorii",
+  "filterAll": "Toate",
+  "filterPreset": "Predefinite",
+  "filterCustom": "Personalizate",
+  "addCategoryTitle": "Adaugă categorie",
+  "customLabel": "Personalizată",
+  "subcategoriesLabel": "Subcategorii",
+  "itemsLabel": "Elemente",
+  "itemsExpiring": "{count} elemente expiră în {days} zile",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Categorii fixate",
+  "pinnedHint": "Fixează categoriile pe care le deschizi frecvent pentru a rămâne în partea de sus a listei.",
+  "noCategoriesFound": "Nu a fost găsită nicio categorie",
+  "searchGroups": "Caută grupuri",
+  "addGroupTitle": "Adaugă grup",
+  "basicPlanGroupInfo": "Folosești planul Basic.\nPoți vedea grupurile prestabilite din această categorie.\nTreci la Premium pentru a crea propriile grupuri.",
+  "groupDeleted": "Grupul a fost șters",
+  "undo": "ANULEAZĂ",
+  "groupStats": "{items} elemente • {expiring} expiră în {days} zile",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Atinge pentru a adăuga și urmări elemente în acest grup.",
+  "itemsInGroup": "Elemente din acest grup",
+  "itemsInGroupHint": "Urmăriți elementele importante cu date de expirare pentru a le reînnoi la timp.",
+  "searchItems": "Căutați elemente",
+  "filterAll": "Toate",
+  "filterExpiringWithin": "Expiră în {days} zile",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Expirate",
+  "addItem": "Adăugați element",
+  "noItemsYet": "Nu există încă elemente.",
+
+  "statusExpired": "Expirat",
+  "statusExpiresToday": "Expiră astăzi",
+  "statusExpiresInOneDay": "Expiră mâine",
+  "statusExpiresInDays": "Expiră în {days} zile",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Valid",
+
+  "deleteCategoryTitle": "Ștergeți categoria",
+  "deleteCategoryMessage": "Sigur doriți să ștergeți categoria „{name}”?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Ștergeți grupul",
+  "deleteGroupMessage": "Sigur doriți să ștergeți grupul „{name}”?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Ștergeți elementul",
+  "deleteItemMessage": "Sigur doriți să ștergeți „{name}”?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Anulați",
+  "delete": "Ștergeți",
+  "homeWelcomeFirstTitle": "Bun venit, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Bine ai revenit, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara te ajută să urmărești datele importante de expirare, astfel încât nimic să nu fie omis.",
+
+"homeWelcomeSubtitleFirst":
+  "Ne bucurăm să te vedem aici. Vaultara te ajută să organizezi datele și înregistrările importante într-un singur loc sigur.",
+
+"homeWelcomeSubtitleBack":
+  "Bine ai revenit. Vaultara este gata oricând dorești să revizuiești datele și înregistrările tale importante.",
+  "insightEmptyTitle": "Nu ai adăugat nimic încă",
+  "insightEmptyBody": "Când începi să urmărești date importante, Vaultara te va ajuta să previi expirările.",
+
+  "insightExpiresTodayTitle": "\"{name}\" expiră astăzi",
+  "insightExpiresTodayBody": "O verificare rapidă menține datele corecte.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" expiră mâine",
+  "insightExpiresTomorrowBody": "Revizuirea acum poate economisi timp mai târziu.",
+
+  "insightExpiresSoonTitle": "\"{name}\" expiră pe {date}",
+  "insightExpiresSoonBody": "Gestionarea din timp face lucrurile mai ușoare.",
+
+  "insightNextExpiryTitle": "Următoarea expirare este \"{name}\" ({date})",
+  "insightNextExpiryBody": "Nu este necesară nicio acțiune acum.",
+
+  "insightClusteredTitle": "Mai multe elemente expiră în jurul lunii {month}",
+  "insightClusteredBody": "Revizuirea lor împreună poate economisi timp.",
+
+  "insightTopCategoryTitle": "Majoritatea elementelor sunt în {category}",
+  "insightTopCategoryBody": "Începerea de aici oferă cel mai mare impact.",
+
+  "insightStableTitle": "Totul pare stabil",
+  "insightStableBody": "Nu există expirări urgente în acest moment.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Bun venit",
+  "summaryAllTitle": "Toate elementele",
+"summaryAllCaption": "Urmărite în Vaultara",
+"summarySoonTitle": "Expiră curând",
+"summarySoonCaption": "În 30 de zile",
+"summaryWeekTitle": "Săptămâna aceasta",
+"summaryWeekCaption": "Expiră în 7 zile",
+"summaryExpiredTitle": "Expirat",
+"summaryExpiredCaption": "Data de expirare a trecut",
+"stabilityStableTitle": "Totul pare stabil",
+"stabilityStableBody": "Înregistrările tale nu indică riscuri imediate sau cumulative.",
+
+"stabilityDecliningTitle": "Stabilitatea este în scădere",
+"stabilityDecliningBody": "Unele elemente au expirat, iar altele se apropie de expirare.",
+
+"stabilityWeakenedTitle": "Stabilitate slăbită",
+"stabilityWeakenedBody": "Prezența înregistrărilor expirate reduce fiabilitatea generală.",
+
+"stabilityPressureTitle": "Presiunea crește",
+"stabilityPressureBody": "Mai multe înregistrări vor necesita atenție în curând pentru a menține stabilitatea.",
+"editorNotes": "Note",
+"notesHint": "Introduceți note",
+"editorReminderTitle": "Memento",
+"editorReminderNone": "Fără memento",
+"editorReminderOnExpiry": "La data expirării",
+"editorReminder7Days": "Cu 7 zile înainte de expirare",
+"editorReminder30Days": "Cu 30 de zile înainte de expirare",
+"editorReminderCustom": "Personalizat",
+"daysBeforeExpiry": "zile înainte de expirare",
+"reminderStage0Title": "Memento de expirare",
+"reminderStage0Body": "{firstName}, {itemName} expiră în {days} zile.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Memento de urmărire",
+"reminderStage1Body": "{firstName}, {itemName} nu a fost încă actualizat.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Expirarea se apropie",
+"reminderStage2Body": "Data de expirare pentru {itemName} se apropie.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Memento final",
+"reminderFinalBody": "{firstName}, te rugăm să actualizezi {itemName} acum.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Echilibru de acoperire",
+"coverageAllRepresented": "Înregistrările tale acoperă toate categoriile.",
+"coverageMissingNamed": "Nu există înregistrări în {count} categorii: {names}.",
+"coverageMissingSummary": "Nu ai adăugat niciun înregistrare în {count} categorii, inclusiv {names} și încă {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Folosește parola",
+"signInWithBiometrics": "Autentificare cu biometrie",
+"enableBiometricsTitle": "Activează securitatea biometrică",
+"enableBiometricsBody": "Folosește amprenta sau recunoașterea facială pentru a proteja Vaultara.",
+"enableBiometricsReason": "Activează deblocarea biometrică pentru Vaultara.",
+"notNow": "Nu acum",
+"useBiometrics": "Folosește biometria",
+"recordsCalendarIntro":
+  "Alege cum dorești să explorezi datele de expirare:\n\n• Introdu câte zile de la astăzi vrei să vezi înainte.\n• Sau selectează o dată exactă din calendar.\n\nVaultara va afișa ce înregistrări expiră în acea zi.",
+
+"showingRecordsRelative": "Se afișează înregistrările care expiră {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Se afișează înregistrările care expiră la data selectată",
+
+"noRecordsOnDate":
+  "Nu există înregistrări setate să expire în acea zi.",
+
+"recordEditorAddTitle": "Adaugă înregistrare",
+"recordEditorEditTitle": "Editează înregistrare",
+
+"editorRecordName": "Numele înregistrării",
+"editorRecordNameHint": "Introdu numele înregistrării",
+"recordEditorErrorName": "Numele înregistrării este obligatoriu",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Atinge pentru a adăuga și urmări înregistrări în acest grup.",
+
+"recordsInGroup": "Înregistrări în acest grup",
+
+"recordsInGroupHint":
+  "Urmărește fiecare înregistrare importantă cu data sa de expirare pentru a o reînnoi la timp.",
+
+"searchRecords": "Caută înregistrări",
+"addRecord": "Adaugă înregistrare",
+"noRecordsYet": "Nu există încă înregistrări.",
+
+"deleteRecordTitle": "Șterge înregistrare",
+
+"recordsInsightClusteredTitle":
+  "Mai multe înregistrări expiră în jurul lunii {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Cele mai multe înregistrări sunt grupate în {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Toate înregistrările",
+
+"recordsStabilityDecliningBody":
+  "Unele înregistrări au expirat deja, iar altele vor expira în curând.",
+
+"recordsCoverageAllRepresented":
+  "Înregistrările tale acoperă toate categoriile.",
+
+"recordReminderStage0Body":
+  "{firstName}, înregistrarea ta {recordName} expiră în {days} zile.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, înregistrarea ta {recordName} nu a fost încă actualizată.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Data de expirare a înregistrării {recordName} se apropie.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, te rugăm să actualizezi acum înregistrarea {recordName}.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Nu există încă grupuri",
+"recordsExpiring": "{count, plural, one {1 înregistrare expiră în {days} zile} other {{count} înregistrări expiră în {days} zile}}",
+"recordsGroupStats": "{records, plural, one {1 înregistrare} other {{records} înregistrări}} • {expiring} în {days} zile",
+"groupLabel": "{count, plural, one {{count} grup} other {{count} grupuri}}",
+"recordsLabel": "{count, plural, one {{count} înregistrare} other {{count} înregistrări}}",
+ "forgotPassword": "Ai uitat parola?",
+  "forgotPasswordTitle": "Resetare parolă",
+  "forgotPasswordBody": "Introduceți adresa ta de email și îți vom trimite un link pentru resetarea parolei.",
+  "sendResetLink": "Trimite link",
+  "passwordResetEmailSent": "Emailul pentru resetarea parolei a fost trimis.",
+  "verifyEmailToContinue": "Vă rugăm să vă verificați adresa de e-mail înainte de a vă conecta",
+  "changeEmailTitle": "Schimbă adresa de email",
+"newEmailHint": "Introdu noua ta adresă de email",
+"sendVerificationEmail": "Trimite email de verificare",
+"deleteAccountTitle": "Șterge contul",
+"deleteAccountWarning": "Această acțiune va șterge definitiv contul tău și toate datele salvate.\nAceastă acțiune nu poate fi anulată.",
+"deleteAccountConfirm": "Șterge contul definitiv",
+"supportTitle": "Suport",
+"supportSubtitle": "Contactează-ne dacă ai nevoie de ajutor sau ai întrebări.",
+"supportEmailSubject": "Solicitare de suport Vaultara",
+"supportEmailError": "Nu se poate deschide aplicația de e-mail.",
+"passwordResetEmailFailed": "Nu s-a putut trimite emailul de resetare a parolei.",
+"loggedInPasswordResetBody": "Vom trimite un link de resetare a parolei la:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Gestionarea contului",
+"changeEmailTitle": "Schimbă adresa de email",
+"changeEmailSubtitle": "Actualizează emailul asociat contului tău.",
+"changePasswordTitle": "Schimbă parola",
+"changePasswordSubtitle": "Îți vom trimite un email cu un link pentru a schimba parola în siguranță.",
+"deleteAccountTitle": "Șterge contul",
+"deleteAccountSubtitle": "Șterge definitiv contul tău Vaultara.",
+"biometricAuthReason": "Autentificați-vă pentru a accesa contul",
+"verifyEmailTitle": "Verifică-ți adresa de email",
+"verifyEmailBody": "Am trimis un email de verificare în căsuța ta poștală. Deschide-l și confirmă adresa de email, apoi revino aici pentru a continua.",
+"verifyEmailConfirmedButton": "Mi-am verificat emailul",
+"verifyEmailResendButton": "Retrimite emailul de verificare",
+"verifyEmailSending": "Se trimite...",
+"navHome": "Acasă",
+"navCategories": "Categorii",
+"navInsights": "Analize",
+"navCalendar": "Calendar",
+"tutorialHomeSearch": "Folosiți bara de căutare pentru a găsi rapid orice înregistrare.",
+"tutorialHomeFab": "Adăugați prima înregistrare aici.\nAlegeți categoria, adăugați note și selectați data expirării.",
+"tutorialHomeSummary": "Această secțiune ajută la identificarea înregistrărilor aproape expirate.",
+"tutorialHomeInsight": "Această analiză inteligentă evidențiază tipare și date apropiate.\nPuteți atinge pictograma difuzorului pentru a asculta.",
+"tutorialHomeCoverage": "Echilibrul de acoperire arată distribuția înregistrărilor.",
+"tutorialHomeStability": "Stabilitatea reflectă fiabilitatea înregistrărilor.",
+"tutorialCancel": "Anulează",
+"tutorialNext": "Următorul",
+"tutorialEnd": "Încheie tutorialul",
+"softDeleteCategory": "categorie",
+"softDeleteGroup": "grup",
+"softDeleteRecord": "înregistrare",
+
+"softDeleteTitle": "Mută {type} în Șterse recent",
+
+"softDeleteMessage": "{type} \"{name}\" va fi mutat în Șterse recent.\n\nÎl puteți restaura în termen de 30 de zile. După aceea, va fi șters definitiv.",
+
+"softDeleteMove": "Mută",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "Șterse recent",
+"categories": "Categorii",
+"groups": "Grupuri",
+"records": "Înregistrări",
+"restore": "Restaurează",
+"deletePermanently": "Șterge definitiv",
+
+"recentlyDeletedBanner": "{type} șterse sunt păstrate timp de 30 de zile.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Caută {type} șterse",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Nu există {type} șterse",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Apasă pe o categorie pentru a vedea grupurile și a-ți gestiona înregistrările.",
+"groupsHint": "Grupurile îți organizează înregistrările în această categorie. Apasă un grup pentru a gestiona înregistrările.",
+"notLoggedIn": "Neconectat",
+"recordsInsideGroupHint": "Acestea sunt înregistrările din acest grup.",
+"snackMovedToRecentlyDeleted": "\"{name}\" a fost mutat în Șterse recent",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" a fost șters cu succes",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" a fost actualizat cu succes",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" a fost adăugat cu succes",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" a fost restaurat cu succes",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Limita gratuită a fost atinsă ({current}/{limit}). Actualizează pentru a adăuga mai multe.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Caută toate înregistrările",
+"globalSearchHint": "Introdu numele, categoria sau grupul",
+"globalSearchNoMatches": "Nicio înregistrare nu corespunde căutării tale.",
+"snackNoRecordsToSearch": "Nu există înregistrări pentru căutare. Adaugă câteva înregistrări și Vaultara le va indexa automat.",
+"recoveryCentreTitle": "Centru de recuperare",
+"recoveryCentreSubtitle": "Restaurați sau ștergeți definitiv înregistrările eliminate.",
+"plan_premium": "Premium",
+"plan_free": "Gratuit",
+"profile_app_settings_title": "Setări aplicație",
+"profile_privacy_security_title": "Confidențialitate și securitate",
+"profile_biometric_on": "Blocarea biometrică este activă pe acest dispozitiv.",
+"profile_biometric_off": "Blocarea biometrică este dezactivată.",
+"profile_biometric_enable_reason": "Confirmați identitatea pentru a activa blocarea biometrică.",
+"profile_biometric_disable_reason": "Confirmați identitatea pentru a dezactiva blocarea biometrică.",
+"profile_account_management_title": "Gestionarea contului",
+"profile_account_management_subtitle": "Schimbați e-mailul, parola sau ștergeți contul.",
+"profile_premium_active_title": "Premium activ",
+"profile_premium_upgrade_title": "Actualizați la Premium",
+"profile_premium_active_subtitle": "Memento-uri avansate deblocate.",
+"profile_premium_upgrade_subtitle": "Deblocați memento-uri avansate și organizare nelimitată.",
+"profile_manage_cancel_hint": "Gestionați sau anulați oricând în Google Play.",
+"profile_manage_subscription_button": "Gestionați abonamentul",
+"plansTitle": "Alege planul",
+"plansTrialBanner": "Începe cu 7 zile gratuite.\nPoți anula oricând.",
+"plansLoading": "Se încarcă…",
+"plansStartFreeTrial": "Începe gratuit",
+"plansNoChargeTodayFooter": "7 zile gratuite · Fără plată azi",
+
+"planFreeTitle": "Gratuit",
+"planFreeSubtitle": "Pentru început",
+"planPremiumMonthlyTitle": "Premium lunar",
+"planPremiumYearlyTitle": "Premium anual",
+"planPerMonth": "pe lună",
+"planPerYear": "pe an",
+
+"planBadgeCurrent": "Curent",
+"planBadgePopular": "Popular",
+"planBadgeBestValue": "Cea mai bună alegere",
+
+"planYouAreOnThisPlan": "Folosești acest plan.",
+
+"planFeatureUpToRecords": "Până la {count} înregistrări",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Categorii personalizate (până la {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Subcategorii predefinite",
+"planFeatureCloudStorage": "Stocare în cloud",
+"planFeatureSmartExpiryInsights": "Analiză expirare",
+"planFeatureCoverageBalance": "Echilibru categorii",
+"planFeatureRecordStabilityTracking": "Stabilitate date",
+
+"planFeatureUnlimitedRecords": "Înregistrări nelimitate",
+"planFeatureUnlimitedCategories": "Categorii nelimitate",
+"planFeatureCustomSubcategories": "Subcategorii personalizate",
+"planFeatureMultipleRemindersPerRecord": "Mai multe mementouri",
+"planFeatureAdvancedReminderTiming": "Programare avansată",
+"planFeatureAutomaticFollowUps": "Mementouri automate",
+
+"planFeatureEverythingInMonthly": "Tot din lunar",
+"planFeatureSavePercentComparedToMonthly": "Economisești {percent}% față de lunar",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Cel mai bun pe termen lung",
+"editorReminderLabel": "Memento",
+"editorReminderSelectOptional": "Selectați mementoul (opțional)",
+"editorReminderOnExpiry": "La data expirării",
+"editorReminderDaysBefore": "{days} zile înainte de expirare",
+"editorFreeItemsCount": "Înregistrări gratuite: {used}/{limit}",
+"editorExpiryPastWarning": "Data expirării a trecut deja.",
+"editorExpiryTodayWarning": "Acest record expiră astăzi.",
+"editorErrorExpiryPast": "Data expirării nu poate fi în trecut.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Perspectivele de azi",
+"tutorialBannerTitle": "Tur rapid",
+"tutorialBannerBody": "Află unde să cauți, cum să adaugi înregistrări și ce înseamnă insight-urile în mai puțin de un minut.",
+"tutorialBannerStart": "Pornește tutorialul",
+"tutorialBannerDismiss": "Nu acum",
+"authErrorUserDisabled": "Acest cont a fost dezactivat.",
+"authErrorNetwork": "Eroare de rețea. Încercați din nou.",
+"authErrorTooManyRequests": "Prea multe încercări. Încercați mai târziu.",
+"authErrorSignInFailed": "Autentificarea a eșuat. Încercați din nou.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium activat",
+"snackPremiumRestored": "Premium restaurat",
+"passwordNeedLower": "Trebuie să conțină o literă mică",
+"passwordNeedUpper": "Trebuie să conțină o literă mare",
+"passwordNeedNumber": "Trebuie să conțină un număr",
+"passwordNeedSymbol": "Trebuie să conțină un simbol",
+"confirmIdentityTitle": "Confirmă identitatea",
+"confirm": "Confirmă",
+"profile_sign_out_title": "Deconectare",
+"profile_sign_out_subtitle": "Deconectare din Vaultara pe acest dispozitiv",
+"profile_sign_out_confirm_title": "Deconectare?",
+"profile_sign_out_confirm_body": "Va trebui să vă autentificați din nou pentru a accesa contul.",
+"profile_sign_out_action": "Deconectare",
+"todayInsightsAudioHint": "Preferi audio? Folosește pictograma difuzor.",
+"category2Label": "Categorie",
+"enable2BiometricsBody": "Folosește recunoașterea amprentei pentru a-ți proteja contul Vaultara.",
+"snackNotificationsDisabled": "Notificările sunt dezactivate. Activează-le pentru a primi memento-uri.",
+"openSettings": "Deschide setările",
+
+"reminderOnExpiryTitle": "Expiră astăzi",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Salut {firstName}, \"{itemName}\" expiră astăzi.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Categorii gratuite: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Afișează câte categorii gratuite au fost folosite din limita gratuită.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Adaugă note (opțional)",
+"apply": "Aplică",
+"smartInsightExpiresTodayHeading": "Expiră Astăzi",
+"smartInsightExpiresTodaySingleBody": "{name} expiră astăzi. Acționează acum pentru a-l menține la zi.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} și încă 1 document expiră astăzi.} few{{names} și încă {extra} documente expiră astăzi.} other{{names} și încă {extra} de documente expiră astăzi.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Necesită Atenția Ta",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} expiră în 1 zi și nu are memento setat. Confirmă că detaliile sunt încă corecte.} few{{name} expiră în {days} zile și nu are memento setat. Confirmă că detaliile sunt încă corecte.} other{{name} expiră în {days} de zile și nu are memento setat. Confirmă că detaliile sunt încă corecte.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Mai Multe Reînnoiri Aproape",
+"smartInsightRenewalTwinBodyTwo": "{a} și {b} expiră în trei săptămâni unul de altul. Planifică din timp.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} și {c} expiră toate în trei săptămâni. Planifică din timp.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} și încă 1 document expiră în trei săptămâni. Planifică din timp.} few{{a}, {b} și încă {extra} documente expiră în trei săptămâni. Planifică din timp.} other{{a}, {b} și încă {extra} de documente expiră în trei săptămâni. Planifică din timp.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Grup Apropiat",
+"smartInsightClusterBody": "{count, plural, =1{1 document în {category} expiră în următoarele două luni. Ia în considerare gestionarea lor împreună.} few{{count} documente în {category} expiră în următoarele două luni. Ia în considerare gestionarea lor împreună.} other{{count} de documente în {category} expiră în următoarele două luni. Ia în considerare gestionarea lor împreună.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Perioadă Liniștită Înainte",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Nimic nu expiră în următoarea zi. Următoarea ta reînnoire este pe {firstDate}.} few{Nimic nu expiră în următoarele {days} zile. Următoarea ta reînnoire este pe {firstDate}.} other{Nimic nu expiră în următoarele {days} de zile. Următoarea ta reînnoire este pe {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Totul La Zi",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 expirare apropiată este acoperită de mementouri. Nimic altceva nu necesită atenția ta.} few{{count} expirări apropiate sunt acoperite de mementouri. Nimic altceva nu necesită atenția ta.} other{{count} de expirări apropiate sunt acoperite de mementouri. Nimic altceva nu necesită atenția ta.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Totul la zi. Nimic nu necesită atenția ta în acest moment.",
+"smartInsightNoRecordsHeading": "Adaugă Prima Ta Înregistrare",
+"smartInsightNoRecordsBody": "Începe să-ți urmărești documentele și Vaultara va afișa aici informații inteligente.",
+"expiryTimelineTitle": "Cronologie expirare",
+"expiryTimelineSubtitle": "Atinge o lună pentru a vedea înregistrările care expiră în acea lună",
+"expiryTimelineDetailCount": "{count, plural, =1{1 înregistrare} few{{count} înregistrări} other{{count} de înregistrări}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Apropiate",
+"summaryUpcomingCaption": "În 30 de zile",
+"summaryUrgentTitle": "Urgent",
+"summaryUrgentCaption": "În 7 zile"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

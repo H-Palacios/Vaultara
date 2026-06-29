@@ -18,17 +18,13 @@
   "in30Days": "Om 30 dagar",
 
   "inDays": "om {days} dagar",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Antal dagar krävs",
   "invalidDaysError": "Ange ett giltigt antal dagar (0 eller mer)",
 
   "showingItemsRelative": "Objekt som går ut {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Objekt som går ut på valt datum",
   "noItemsOnDate": "Inga objekt går ut denna dag",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Kategorinamn",
   "categoryNameHint": "Ange kategori",
 
-  "categoryLimitReached":
-    "Gränsen för Basic-planen har nåtts. Premium tillåter obegränsade kategorier",
-
-  "categoryLimitInfo":
-    "Basic-planen tillåter upp till {limit} kategorier",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Gränsen för Basic-planen har nåtts",
+  "categoryLimitInfo": "Basic-planen tillåter upp till {limit} kategorier",
 
   "categoryErrorEmpty": "Kategorinamn krävs",
   "categoryErrorTooShort": "Kategorinamnet är för kort",
@@ -102,5 +92,799 @@
   "groupErrorSymbols": "Gruppnamnet kan inte vara endast symboler",
   "groupErrorNumbers": "Gruppnamnet kan inte innehålla siffror",
 
-  "createGroup": "Skapa"
+  "createGroup": "Skapa",
+
+  "registerTitle": "Skapa konto",
+
+  "firstNameLabel": "Förnamn",
+  "firstNameHint": "Ange förnamn",
+  "errorFirstName": "Förnamn krävs",
+
+  "lastNameLabel": "Efternamn",
+  "lastNameHint": "Ange efternamn",
+  "errorLastName": "Efternamn krävs",
+
+  "emailLabel": "E-post",
+  "emailRequired": "Din e-postadress krävs",
+"passwordRequired": "Ditt lösenord krävs",
+"registerPasswordHint": "Ange lösenord",
+"loginPasswordHint": "Ange ditt lösenord",
+"emailHint": "Ange din e-postadress",
+  "errorEmailInvalid": "Ange en giltig e-postadress",
+  "errorEmailInUse": "Denna e-post är redan kopplad till ett Vaultara-konto",
+
+  "passwordLabel": "Lösenord",
+  "passwordHelper": "Minst 8 tecken med variation",
+
+  "passwordTooShort": "För kort",
+  "passwordTooWeak": "Svagt",
+  "passwordMedium": "Medel",
+  "passwordStrong": "Starkt",
+
+  "errorPasswordLength": "Lösenordet måste innehålla minst 8 tecken",
+  "errorPasswordWeak": "Välj ett starkare lösenord",
+
+  "errorGeneric": "Registreringen misslyckades Försök igen",
+
+  "createAccount": "Skapa konto",
+
+  "appName": "Vaultara",
+  "authTagline": "Din personliga hub för pass licenser kort och andra viktiga dokument",
+  "tabSignIn": "Logga in",
+  "tabCreateAccount": "Skapa konto",
+  "signInFooterText": "Logga in för att komma åt ditt personliga Vaultara utrymme och hålla alla förnyelser under kontroll",
+  "createAccountFooterText": "Skapa ett Vaultara konto för att spara viktiga påminnelser och nå dem när du behöver",
+  "invalidEmail": "Ange en giltig e-postadress",
+  "emailNotFound": "Fel e-postadress.\nDet finns inget Vaultara-konto med denna e-post",
+  "incorrectPassword": "Fel lösenord",
+  "emailLabel": "E-postadress",
+  "passwordLabel": "Lösenord",
+  "signIn": "Logga in",
+   "categoryPersonalIdentification": "Personlig Identifiering",
+  "categoryDrivingAndVehicles": "Körning och Fordon",
+  "categoryTravelAndImmigration": "Resor och Immigration",
+  "categoryBankingAndCards": "Bank och Kort",
+  "categoryInsuranceAndCover": "Försäkring och Skydd",
+  "categoryHealthAndMedical": "Hälsa och Medicin",
+  "categoryWorkAndProfessional": "Arbete och Yrke",
+  "categoryPropertyAndHousing": "Fastighet och Bostad",
+  "categoryHouseholdAndUtilities": "Hushåll och Tjänster",
+
+  "subcategoryPassports": "Pass",
+  "subcategoryIdCards": "ID-kort",
+  "subcategoryResidencePermits": "Uppehållstillstånd",
+
+  "subcategoryDrivingLicences": "Körkort",
+  "subcategoryVehicleRegistrations": "Fordonregistreringar",
+  "subcategoryRoadworthyCertificates": "Trafiksäkerhetsintyg",
+  "subcategoryVehicleInspectionCertificates": "Fordonbesiktningsintyg",
+
+  "subcategoryVisas": "Visum",
+  "subcategoryStudyPermits": "Studietillstånd",
+  "subcategoryWorkPermits": "Arbetstillstånd",
+  "subcategoryTravelInsuranceDocuments": "Reseförsäkringsdokument",
+
+  "subcategoryDebitAndCreditCards": "Betal- och Kreditkort",
+  "subcategoryStoreCards": "Butikskort",
+  "subcategoryFuelCards": "Bränslekort",
+
+  "subcategoryVehicleInsurances": "Fordonförsäkringar",
+  "subcategoryPropertyInsurances": "Fastighetsförsäkringar",
+  "subcategoryLifeInsurances": "Livförsäkringar",
+  "subcategoryHealthInsurances": "Sjukförsäkringar",
+  "subcategoryTravelInsurances": "Reseförsäkringar",
+
+  "subcategoryMedicalPrescriptions": "Läkarrecept",
+  "subcategoryOpticalPrescriptions": "Synrecept",
+  "subcategoryMedicalCertificates": "Läkarintyg",
+
+  "subcategoryProfessionalLicences": "Yrkeslicenser",
+  "subcategoryProfessionalRegistrations": "Yrkesregistreringar",
+  "subcategoryIndustryRegistrations": "Industriregistreringar",
+  "subcategoryWorkAccessCards": "Arbetsåtkomstkort",
+
+  "subcategoryLeaseAgreements": "Hyresavtal",
+  "subcategoryAccessCardsAndTags": "Åtkomstkort och Taggar",
+  "subcategoryParkingPermits": "Parkeringstillstånd",
+  "subcategorySecurityAccessPermits": "Säkerhetsåtkomsttillstånd",
+
+  "subcategoryElectricityAccounts": "Elkonton",
+  "subcategoryWaterAccounts": "Vattenkonton",
+  "subcategoryInternetContracts": "Internetavtal",
+  "subcategorySecurityServiceContracts": "Säkerhetstjänstavtal",
+  
+  "searchCategories": "Sök kategorier",
+  "filterAll": "Alla",
+  "filterPreset": "Förinställda",
+  "filterCustom": "Anpassade",
+  "addCategoryTitle": "Lägg till kategori",
+  "customLabel": "Anpassad",
+  "subcategoriesLabel": "Underkategorier",
+  "itemsLabel": "Objekt",
+  "itemsExpiring": "{count} objekt går ut om {days} dagar",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Fästa kategorier",
+  "pinnedHint": "Fäst de kategorier du öppnar oftast så att de stannar högst upp i listan.",
+  "noCategoriesFound": "Inga kategorier hittades",
+  "searchGroups": "Sök grupper",
+  "addGroupTitle": "Lägg till grupp",
+  "basicPlanGroupInfo": "Du använder Basic-planen.\nDu kan se förinställda grupper under denna kategori.\nUppgradera till Premium för att skapa egna grupper.",
+  "groupDeleted": "Gruppen har tagits bort",
+  "undo": "ÅNGRA",
+  "groupStats": "{items} objekt • {expiring} går ut inom {days} dagar",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tryck för att lägga till och spåra objekt i denna grupp.",
+  "itemsInGroup": "Objekt i denna grupp",
+  "itemsInGroupHint": "Håll koll på viktiga objekt med utgångsdatum för att förnya dem i tid.",
+  "searchItems": "Sök objekt",
+  "filterAll": "Alla",
+  "filterExpiringWithin": "Går ut om {days} dagar",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Utgångna",
+  "addItem": "Lägg till objekt",
+  "noItemsYet": "Inga objekt ännu.",
+
+  "statusExpired": "Utgånget",
+  "statusExpiresToday": "Går ut idag",
+  "statusExpiresInOneDay": "Går ut imorgon",
+  "statusExpiresInDays": "Går ut om {days} dagar",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Giltigt",
+
+  "deleteCategoryTitle": "Ta bort kategori",
+  "deleteCategoryMessage": "Är du säker på att du vill ta bort kategorin \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Ta bort grupp",
+  "deleteGroupMessage": "Är du säker på att du vill ta bort gruppen \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Ta bort objekt",
+  "deleteItemMessage": "Är du säker på att du vill ta bort \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Avbryt",
+  "delete": "Ta bort",
+  "homeWelcomeFirstTitle": "Välkommen, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Välkommen tillbaka, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara hjälper dig att hålla koll på viktiga utgångsdatum så att inget missas.",
+
+"homeWelcomeSubtitleFirst":
+  "Kul att ha dig här. Vaultara hjälper dig att organisera viktiga datum och uppgifter på ett säkert ställe.",
+
+"homeWelcomeSubtitleBack":
+  "Kul att se dig igen. Vaultara är redo när du vill granska dina viktiga datum och uppgifter.",
+  "insightEmptyTitle": "Du har inte lagt till något ännu",
+  "insightEmptyBody": "När du börjar spåra viktiga datum hjälper Vaultara dig att ligga steget före utgångar.",
+
+  "insightExpiresTodayTitle": "\"{name}\" går ut idag",
+  "insightExpiresTodayBody": "En snabb kontroll håller informationen korrekt.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" går ut imorgon",
+  "insightExpiresTomorrowBody": "Att se över det nu kan spara tid senare.",
+
+  "insightExpiresSoonTitle": "\"{name}\" går ut {date}",
+  "insightExpiresSoonBody": "Att ta hand om det tidigt gör allt enklare.",
+
+  "insightNextExpiryTitle": "Nästa utgång är \"{name}\" ({date})",
+  "insightNextExpiryBody": "Ingen åtgärd behövs just nu.",
+
+  "insightClusteredTitle": "Flera objekt går ut runt {month}",
+  "insightClusteredBody": "Att granska dem tillsammans kan spara tid.",
+
+  "insightTopCategoryTitle": "De flesta objekten finns i {category}",
+  "insightTopCategoryBody": "Att börja här ger störst effekt.",
+
+  "insightStableTitle": "Allt ser stabilt ut",
+  "insightStableBody": "Det finns inga brådskande utgångar just nu.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Välkommen",
+  "summaryAllTitle": "Alla objekt",
+"summaryAllCaption": "Spårade i Vaultara",
+"summarySoonTitle": "Går snart ut",
+"summarySoonCaption": "Inom 30 dagar",
+"summaryWeekTitle": "Denna vecka",
+"summaryWeekCaption": "Går ut om 7 dagar",
+"summaryExpiredTitle": "Utgångna",
+"summaryExpiredCaption": "Utgångsdatumet har passerat",
+"stabilityStableTitle": "Allt ser stabilt ut",
+"stabilityStableBody": "Dina poster visar inga omedelbara eller ackumulerade risker.",
+
+"stabilityDecliningTitle": "Stabiliteten minskar",
+"stabilityDecliningBody": "Vissa objekt har löpt ut och andra närmar sig utgång.",
+
+"stabilityWeakenedTitle": "Stabiliteten är försvagad",
+"stabilityWeakenedBody": "Förekomsten av utgångna poster minskar den övergripande tillförlitligheten.",
+
+"stabilityPressureTitle": "Trycket ökar",
+"stabilityPressureBody": "Flera poster kommer snart att kräva uppmärksamhet för att behålla stabiliteten.",
+"editorNotes": "Anteckningar",
+"notesHint": "Ange anteckningar",
+"editorReminderTitle": "Påminnelse",
+"editorReminderNone": "Ingen påminnelse",
+"editorReminderOnExpiry": "På utgångsdatumet",
+"editorReminder7Days": "7 dagar före utgång",
+"editorReminder30Days": "30 dagar före utgång",
+"editorReminderCustom": "Anpassad",
+"daysBeforeExpiry": "dagar före utgång",
+"reminderStage0Title": "Utgångspåminnelse",
+"reminderStage0Body": "{firstName}, {itemName} går ut om {days} dagar.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Uppföljningspåminnelse",
+"reminderStage1Body": "{firstName}, {itemName} har ännu inte uppdaterats.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Utgången närmar sig",
+"reminderStage2Body": "Utgångsdatumet för {itemName} närmar sig.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Sista påminnelsen",
+"reminderFinalBody": "{firstName}, uppdatera {itemName} nu.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Täckningsbalans",
+"coverageAllRepresented": "Dina poster innehåller objekt i alla kategorier.",
+"coverageMissingNamed": "Inga poster hittades i {count} kategorier: {names}.",
+"coverageMissingSummary": "Du har inte lagt till några poster i {count} kategorier, inklusive {names} och ytterligare {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Använd lösenord",
+"signInWithBiometrics": "Logga in med biometrik",
+"enableBiometricsTitle": "Aktivera biometrisk säkerhet",
+"enableBiometricsBody": "Använd fingeravtryck eller ansiktsigenkänning för att skydda Vaultara.",
+"enableBiometricsReason": "Aktivera biometrisk upplåsning för Vaultara.",
+"notNow": "Inte nu",
+"useBiometrics": "Använd biometrik",
+"recordsCalendarIntro":
+  "Välj hur du vill utforska dina utgångsdatum:\n\n• Ange hur många dagar framåt från idag du vill se.\n• Eller välj ett exakt datum i kalendern.\n\nVaultara visar vilka poster som når sitt utgångsdatum den dagen.",
+
+"showingRecordsRelative": "Visar poster som löper ut {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Visar poster som löper ut på det valda datumet",
+
+"noRecordsOnDate":
+  "Inga poster är inställda på att löpa ut den dagen.",
+
+"recordEditorAddTitle": "Lägg till post",
+"recordEditorEditTitle": "Redigera post",
+
+"editorRecordName": "Postnamn",
+"editorRecordNameHint": "Ange postnamn",
+"recordEditorErrorName": "Postnamn krävs",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Tryck för att lägga till och följa poster i denna grupp.",
+
+"recordsInGroup": "Poster i denna grupp",
+
+"recordsInGroupHint":
+  "Följ varje viktig post med dess utgångsdatum för att uppdatera den i tid.",
+
+"searchRecords": "Sök poster",
+"addRecord": "Lägg till post",
+"noRecordsYet": "Inga poster ännu.",
+
+"deleteRecordTitle": "Ta bort post",
+
+"recordsInsightClusteredTitle":
+  "Flera poster löper ut runt {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "De flesta av dina poster är grupperade under {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Alla poster",
+
+"recordsStabilityDecliningBody":
+  "Vissa poster har redan löpt ut och fler närmar sig.",
+
+"recordsCoverageAllRepresented":
+  "Dina poster täcker alla kategorier.",
+
+"recordReminderStage0Body":
+  "{firstName}, din post {recordName} löper ut om {days} dagar.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, din post {recordName} har ännu inte uppdaterats.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Utgångsdatumet för {recordName} närmar sig.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, vänligen uppdatera {recordName} nu.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Inga grupper ännu",
+"recordsExpiring": "{count, plural, one {1 post löper ut om {days} dagar} other {{count} poster löper ut om {days} dagar}}",
+"recordsGroupStats": "{records, plural, one {1 post} other {{records} poster}} • {expiring} om {days} dagar",
+"groupLabel": "{count, plural, one {{count} grupp} other {{count} grupper}}",
+"recordsLabel": "{count, plural, one {{count} post} other {{count} poster}}",
+"forgotPassword": "Glömt lösenord?",
+  "forgotPasswordTitle": "Återställ lösenord",
+  "forgotPasswordBody": "Ange din e-postadress så skickar vi en länk för att återställa lösenordet.",
+  "sendResetLink": "Skicka länk",
+  "passwordResetEmailSent": "Ett e-postmeddelande för lösenordsåterställning har skickats.",
+  "verifyEmailToContinue": "Verifiera din e-postadress innan du loggar in",
+  "changeEmailTitle": "Ändra e-postadress",
+"newEmailHint": "Ange din nya e-postadress",
+"sendVerificationEmail": "Skicka verifieringsmail",
+"deleteAccountTitle": "Radera konto",
+"deleteAccountWarning": "Den här åtgärden raderar ditt konto och alla sparade data permanent.\nÅtgärden kan inte ångras.",
+"deleteAccountConfirm": "Radera konto permanent",
+"supportTitle": "Support",
+"supportSubtitle": "Kontakta oss om du behöver hjälp eller har frågor.",
+"supportEmailSubject": "Vaultara supportförfrågan",
+"supportEmailError": "Kan inte öppna e-postappen.",
+"passwordResetEmailFailed": "Kunde inte skicka e-post för återställning av lösenord.",
+"loggedInPasswordResetBody": "Vi skickar en länk för återställning av lösenord till:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Kontohantering",
+"changeEmailTitle": "Ändra e-postadress",
+"changeEmailSubtitle": "Uppdatera e-postadressen som är kopplad till ditt konto.",
+"changePasswordTitle": "Ändra lösenord",
+"changePasswordSubtitle": "Vi skickar ett e-postmeddelande med en länk för att ändra lösenordet säkert.",
+"deleteAccountTitle": "Ta bort konto",
+"deleteAccountSubtitle": "Ta bort ditt Vaultara-konto permanent.",
+"biometricAuthReason": "Autentisera för att få åtkomst till ditt konto",
+"verifyEmailTitle": "Verifiera din e-post",
+"verifyEmailBody": "Vi har skickat ett verifieringsmail till din inkorg. Öppna det och bekräfta din e-postadress, och återvänd sedan hit för att fortsätta.",
+"verifyEmailConfirmedButton": "Jag har verifierat min e-post",
+"verifyEmailResendButton": "Skicka verifieringsmail igen",
+"verifyEmailSending": "Skickar...",
+"navHome": "Hem",
+"navCategories": "Kategorier",
+"navInsights": "Insikter",
+"navCalendar": "Kalender",
+"tutorialHomeSearch": "Använd sökfältet för att snabbt hitta en post.",
+"tutorialHomeFab": "Lägg till din första post här.\nVälj kategori, anteckningar och utgångsdatum.",
+"tutorialHomeSummary": "Denna sektion hjälper dig att upptäcka poster nära utgång.",
+"tutorialHomeInsight": "Denna smarta analys visar mönster.\nTryck på högtalarikonen för att lyssna.",
+"tutorialHomeCoverage": "Täckningsbalansen visar fördelningen av poster.",
+"tutorialHomeStability": "Stabilitet visar posternas tillförlitlighet.",
+"tutorialCancel": "Avbryt",
+"tutorialNext": "Nästa",
+"tutorialEnd": "Avsluta handledning",
+"softDeleteCategory": "kategori",
+"softDeleteGroup": "grupp",
+"softDeleteRecord": "post",
+
+"softDeleteTitle": "Flytta {type} till Nyligen borttaget",
+
+"softDeleteMessage": "{type} \"{name}\" flyttas till Nyligen borttaget.\n\nDu kan återställa den inom 30 dagar. Därefter tas den bort permanent.",
+
+"softDeleteMove": "Flytta",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Nyligen borttagna",
+"categories": "Kategorier",
+"groups": "Grupper",
+"records": "Poster",
+"restore": "Återställ",
+"deletePermanently": "Ta bort permanent",
+
+"recentlyDeletedBanner": "Borttagna {type} sparas i 30 dagar.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Sök borttagna {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Inga borttagna {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Tryck på en kategori för att se dess grupper och hantera dina poster.",
+"groupsHint": "Grupper organiserar dina poster i denna kategori. Tryck på en grupp för att hantera poster.",
+"notLoggedIn": "Inte inloggad",
+"recordsInsideGroupHint": "Detta är posterna i denna grupp.",
+"snackMovedToRecentlyDeleted": "\"{name}\" flyttades till Nyligen raderade",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" raderades",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" uppdaterades",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" lades till",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" återställdes",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Gratisgränsen är nådd ({current}/{limit}). Uppgradera för att lägga till fler.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+     "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Sök alla poster",
+"globalSearchHint": "Skriv namn, kategori eller grupp",
+"globalSearchNoMatches": "Inga poster matchar din sökning.",
+"snackNoRecordsToSearch": "Det finns inga poster att söka i. Lägg till några poster så indexerar Vaultara dem automatiskt.",
+"recoveryCentreTitle": "Återställningscenter",
+"recoveryCentreSubtitle": "Återställ eller radera borttagna poster permanent.",
+"plan_premium": "Premium",
+"plan_free": "Gratis",
+"profile_app_settings_title": "Appinställningar",
+"profile_privacy_security_title": "Sekretess och säkerhet",
+"profile_biometric_on": "Biometriskt lås är aktiverat på den här enheten.",
+"profile_biometric_off": "Biometriskt lås är inaktiverat.",
+"profile_biometric_enable_reason": "Bekräfta din identitet för att aktivera biometriskt lås.",
+"profile_biometric_disable_reason": "Bekräfta din identitet för att inaktivera biometriskt lås.",
+"profile_account_management_title": "Kontohantering",
+"profile_account_management_subtitle": "Ändra e-post, lösenord eller ta bort kontot.",
+"profile_premium_active_title": "Premium aktiv",
+"profile_premium_upgrade_title": "Uppgradera till Premium",
+"profile_premium_active_subtitle": "Avancerade påminnelser är upplåsta.",
+"profile_premium_upgrade_subtitle": "Lås upp avancerade påminnelser och obegränsad organisering.",
+"profile_manage_cancel_hint": "Hantera eller avsluta när som helst på Google Play.",
+"profile_manage_subscription_button": "Hantera prenumeration",
+"plansTitle": "Välj din plan",
+"plansTrialBanner": "Börja med 7 dagar gratis.\nAvsluta när som helst.",
+"plansLoading": "Laddar…",
+"plansStartFreeTrial": "Starta gratis",
+"plansNoChargeTodayFooter": "7 dagar gratis · Ingen kostnad idag",
+
+"planFreeTitle": "Gratis",
+"planFreeSubtitle": "För att komma igång",
+"planPremiumMonthlyTitle": "Premium månadsvis",
+"planPremiumYearlyTitle": "Premium årsvis",
+"planPerMonth": "per månad",
+"planPerYear": "per år",
+
+"planBadgeCurrent": "Nuvarande",
+"planBadgePopular": "Populär",
+"planBadgeBestValue": "Bästa värde",
+
+"planYouAreOnThisPlan": "Du använder denna plan.",
+
+"planFeatureUpToRecords": "Upp till {count} poster",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Egna kategorier (upp till {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Förinställda underkategorier",
+"planFeatureCloudStorage": "Molnlagring",
+"planFeatureSmartExpiryInsights": "Utgångsanalys",
+"planFeatureCoverageBalance": "Kategoribalans",
+"planFeatureRecordStabilityTracking": "Datastabilitet",
+
+"planFeatureUnlimitedRecords": "Obegränsade poster",
+"planFeatureUnlimitedCategories": "Obegränsade kategorier",
+"planFeatureCustomSubcategories": "Egna underkategorier",
+"planFeatureMultipleRemindersPerRecord": "Flera påminnelser",
+"planFeatureAdvancedReminderTiming": "Avancerad tidsstyrning",
+"planFeatureAutomaticFollowUps": "Automatiska påminnelser",
+
+"planFeatureEverythingInMonthly": "Allt från månadsplanen",
+"planFeatureSavePercentComparedToMonthly": "Spara {percent}% jämfört med månadsvis",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Bästa långsiktiga värde",
+"editorReminderLabel": "Påminnelse",
+"editorReminderSelectOptional": "Välj en påminnelse (valfritt)",
+"editorReminderOnExpiry": "På utgångsdatumet",
+"editorReminderDaysBefore": "{days} dagar före utgång",
+"editorFreeItemsCount": "Gratisposter: {used}/{limit}",
+"editorExpiryPastWarning": "Utgångsdatumet har redan passerat.",
+"editorExpiryTodayWarning": "Den här posten går ut idag.",
+"editorErrorExpiryPast": "Utgångsdatumet får inte vara i det förflutna.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Dagens insikter",
+"tutorialBannerTitle": "Snabb genomgång",
+"tutorialBannerBody": "Lär dig var du kan söka, hur du lägger till poster och vad insikter betyder på under en minut.",
+"tutorialBannerStart": "Starta guiden",
+"tutorialBannerDismiss": "Inte nu",
+"authErrorUserDisabled": "Detta konto har inaktiverats.",
+"authErrorNetwork": "Nätverksfel. Försök igen.",
+"authErrorTooManyRequests": "För många försök. Försök senare.",
+"authErrorSignInFailed": "Inloggningen misslyckades. Försök igen.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium aktiverat",
+"snackPremiumRestored": "Premium återställt",
+"passwordNeedLower": "Måste innehålla en liten bokstav",
+"passwordNeedUpper": "Måste innehålla en stor bokstav",
+"passwordNeedNumber": "Måste innehålla en siffra",
+"passwordNeedSymbol": "Måste innehålla en symbol",
+"confirmIdentityTitle": "Bekräfta identitet",
+"confirm": "Bekräfta",
+"profile_sign_out_title": "Logga ut",
+"profile_sign_out_subtitle": "Logga ut från Vaultara på den här enheten",
+"profile_sign_out_confirm_title": "Logga ut?",
+"profile_sign_out_confirm_body": "Du måste logga in igen för att komma åt ditt konto.",
+"profile_sign_out_action": "Logga ut",
+"todayInsightsAudioHint": "Föredrar du ljud? Använd högtalarikonen.",
+"category2Label": "Kategori",
+"enable2BiometricsBody": "Använd fingeravtrycksigenkänning för att skydda ditt Vaultara-konto.",
+"snackNotificationsDisabled": "Aviseringar är inaktiverade. Slå på dem för att få påminnelser.",
+"openSettings": "Öppna inställningar",
+
+"reminderOnExpiryTitle": "Går ut idag",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hej {firstName}, \"{itemName}\" går ut idag.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Gratis kategorier: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Visar hur många gratiskategorier som har använts av gratisgränsen.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Lägg till anteckningar (valfritt)",
+"apply": "Använd",
+"smartInsightExpiresTodayHeading": "Går Ut Idag",
+"smartInsightExpiresTodaySingleBody": "{name} går ut idag. Agera nu för att hålla det uppdaterat.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} och 1 annat dokument går ut idag.} other{{names} och {extra} andra dokument går ut idag.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Behöver Din Uppmärksamhet",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} går ut om 1 dag och har ingen påminnelse. Bekräfta att detaljerna fortfarande är korrekta.} other{{name} går ut om {days} dagar och har ingen påminnelse. Bekräfta att detaljerna fortfarande är korrekta.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Flera Förnyelser Nära Varandra",
+"smartInsightRenewalTwinBodyTwo": "{a} och {b} går ut inom tre veckor från varandra. Planera i förväg.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} och {c} går alla ut inom tre veckor. Planera i förväg.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} och 1 annat dokument går ut inom tre veckor. Planera i förväg.} other{{a}, {b} och {extra} andra dokument går ut inom tre veckor. Planera i förväg.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Kommande Grupp",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument i {category} går ut under de kommande två månaderna. Överväg att hantera dem tillsammans.} other{{count} dokument i {category} går ut under de kommande två månaderna. Överväg att hantera dem tillsammans.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Lugn Period Framöver",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Inget går ut nästa dag. Din nästa förnyelse är {firstDate}.} other{Inget går ut de nästa {days} dagarna. Din nästa förnyelse är {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Allt Uppdaterat",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 kommande utgång täcks av påminnelser. Inget annat kräver din uppmärksamhet.} other{{count} kommande utgångar täcks av påminnelser. Inget annat kräver din uppmärksamhet.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Allt uppdaterat. Inget kräver din uppmärksamhet just nu.",
+"smartInsightNoRecordsHeading": "Lägg Till Din Första Post",
+"smartInsightNoRecordsBody": "Börja spåra dina dokument och Vaultara visar smarta insikter här.",
+"expiryTimelineTitle": "Utgångstidslinje",
+"expiryTimelineSubtitle": "Tryck på en månad för att se posterna som går ut den månaden",
+"expiryTimelineDetailCount": "{count, plural, =1{1 post} other{{count} poster}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Kommande",
+"summaryUpcomingCaption": "Inom 30 dagar",
+"summaryUrgentTitle": "Brådskande",
+"summaryUrgentCaption": "Inom 7 dagar"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

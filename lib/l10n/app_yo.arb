@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "Kalẹnda ipari",
 
-  "calendarIntro":
-    "Yan bi o ṣe fẹ wo awọn ọjọ ipari:\n\n• Tẹ iye awọn ọjọ lati oni.\n• Tabi yan ọjọ kan lori kalẹnda.\n\nVaultara nfi awọn nkan ti o pari ni ọjọ yẹn han.",
+  "calendarIntro": "Yan bi o ṣe fẹ wo awọn ọjọ ipari:\n\n• Tẹ iye awọn ọjọ lati oni.\n• Tabi yan ọjọ kan lori kalẹnda.\n\nVaultara yoo fi awọn nkan ti o de ọjọ ipari wọn han ni ọjọ yẹn.",
 
   "daysFromTodayLabel": "Awọn ọjọ lati oni",
   "daysFromTodayHint": "Apẹẹrẹ 0, 1, 7, 30",
@@ -19,18 +18,22 @@
 
   "inDays": "lẹ́yìn ọjọ́ {days}",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
   "enterDaysError": "Iye awọn ọjọ jẹ dandan",
   "invalidDaysError": "Tẹ iye to wulo sii (0 tabi ju bẹẹ lọ)",
 
-  "showingItemsRelative": "Awọn nkan ti yoo pari {time}",
+  "showingItemsRelative": "Nfi awọn nkan ti yoo pari {time} han",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "Awọn nkan ti yoo pari ni ọjọ ti a yan",
+  "showingItemsExact": "Nfi awọn nkan ti yoo pari ni ọjọ ti a yan han",
   "noItemsOnDate": "Ko si nkan ti yoo pari ni ọjọ yẹn",
 
   "editorAddTitle": "Fi nkan kun",
@@ -71,13 +74,18 @@
   "categoryNameLabel": "Orukọ ẹka",
   "categoryNameHint": "Tẹ ẹka sii",
 
-  "categoryLimitReached":
-    "A ti de opin Basic. Premium gba awọn ẹka ailopin laaye",
+  "categoryLimitReached": "O ti de opin Basic ti awọn ẹka {limit}. Ṣe igbesoke si Premium lati ṣẹda awọn ẹka ailopin.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
 
-  "categoryLimitInfo":
-    "Basic gba to awọn ẹka {limit}",
+  "categoryLimitInfo": "Lori ero Basic o le ṣẹda to awọn ẹka {limit}.",
   "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
   "categoryErrorEmpty": "Orukọ ẹka jẹ dandan",
@@ -88,10 +96,10 @@
 
   "upgradeRequired": "Igbesoke nilo",
   "viewPremiumBenefits": "Wo awọn anfani Premium",
-
   "createCategory": "Ṣẹda",
 
   "addGroupTitle": "Fi ẹgbẹ kun",
+
   "groupNameLabel": "Ẹgbẹ",
   "groupNameHint": "Tẹ ẹgbẹ sii",
 
@@ -101,5 +109,794 @@
   "groupErrorSymbols": "Orukọ ẹgbẹ ko le jẹ aami nikan",
   "groupErrorNumbers": "Orukọ ẹgbẹ ko le ni awọn nọmba",
 
-  "createGroup": "Ṣẹda"
+  "createGroup": "Ṣẹda",
+
+  "registerTitle": "Ṣẹda àkọọlẹ",
+
+  "firstNameLabel": "Orukọ akọkọ",
+  "firstNameHint": "Tẹ orukọ akọkọ sii",
+  "errorFirstName": "Orukọ akọkọ jẹ dandan",
+
+  "lastNameLabel": "Orukọ ikẹhin",
+  "lastNameHint": "Tẹ orukọ ikẹhin sii",
+  "errorLastName": "Orukọ ikẹhin jẹ dandan",
+
+  "emailLabel": "Imeeli",
+"emailRequired": "Imeeli rẹ nilo",
+"passwordRequired": "Ọrọigbaniwọle rẹ nilo",
+"registerPasswordHint": "Tẹ ọrọigbaniwọle sii",
+"loginPasswordHint": "Tẹ ọrọigbaniwọle rẹ sii",
+"emailHint": "Tẹ adirẹsi imeeli rẹ sii",
+  "errorEmailInvalid": "Tẹ imeeli to wulo",
+  "errorEmailInUse": "Imeeli yii ti sopọ mọ àkọọlẹ Vaultara tẹlẹ",
+
+  "passwordLabel": "Ọrọigbaniwọle",
+  "passwordHelper": "O kere ju awọn ohun kikọ 8 pẹlu onírúurú",
+
+  "passwordTooShort": "Kukuru ju",
+  "passwordTooWeak": "Alailagbara",
+  "passwordMedium": "Aarin",
+  "passwordStrong": "Lagbara",
+  "errorPasswordLength": "Ọrọigbaniwọle gbọdọ jẹ o kere ju awọn ohun kikọ 8",
+  "errorPasswordWeak": "Yan ọrọigbaniwọle to lagbara",
+
+  "errorGeneric": "Iforukọsilẹ kuna. Jọwọ gbiyanju lẹẹkansi",
+
+  "createAccount": "Ṣẹda àkọọlẹ",
+
+  "appName": "Vaultara",
+  "authTagline": "Ile-iṣẹ tirẹ fun awọn iwe irinna, iwe-aṣẹ, kaadi ati awọn nkan pataki miiran",
+  "tabSignIn": "Wọle",
+  "tabCreateAccount": "Ṣẹda àkọọlẹ",
+  "signInFooterText": "Wọle lati wọle si aaye Vaultara tirẹ ki o ṣakoso gbogbo awọn isọdọtun",
+  "createAccountFooterText": "Ṣẹda àkọọlẹ Vaultara lati ṣe afẹyinti awọn iranti pataki ki o le wọle si wọn nigbakugba",
+  "emailNotFound": "Imeeli aṣiṣe.\nKo si akọọlẹ Vaultara pẹlu imeeli yii",
+  "incorrectPassword": "Ọrọ aṣínà aṣiṣe",
+  "emailLabel": "Adirẹsi imeeli",
+  "passwordLabel": "Ọrọ aṣínà",
+  "signIn": "Wọlé",
+  "categoryPersonalIdentification": "Idanimọ Ara ẹni",
+  "categoryDrivingAndVehicles": "Iwakọ ati Awọn Ọkọ",
+  "categoryTravelAndImmigration": "Irin-ajo ati Iṣilọ",
+  "categoryBankingAndCards": "Ile-ifowopamọ ati Awọn Kaadi",
+  "categoryInsuranceAndCover": "Iṣeduro ati Idaabobo",
+  "categoryHealthAndMedical": "Ilera ati Iṣoogun",
+  "categoryWorkAndProfessional": "Iṣẹ ati Ọjọgbọn",
+  "categoryPropertyAndHousing": "Ohun-ini ati Ile",
+  "categoryHouseholdAndUtilities": "Ile ati Awọn Iṣẹ",
+
+  "subcategoryPassports": "Awọn Iwe Irinna",
+  "subcategoryIdCards": "Awọn Kaadi Idanimọ",
+  "subcategoryResidencePermits": "Awọn Iwe-aṣẹ Ibugbe",
+
+  "subcategoryDrivingLicences": "Awọn Iwe-aṣẹ Iwakọ",
+  "subcategoryVehicleRegistrations": "Iforukọsilẹ Awọn Ọkọ",
+  "subcategoryRoadworthyCertificates": "Awọn Ijẹrisi Ibaramu Opopona",
+  "subcategoryVehicleInspectionCertificates": "Awọn Ijẹrisi Ayẹwo Ọkọ",
+
+  "subcategoryVisas": "Awọn Fisa",
+  "subcategoryStudyPermits": "Awọn Iwe-aṣẹ Ikẹkọ",
+  "subcategoryWorkPermits": "Awọn Iwe-aṣẹ Iṣẹ",
+  "subcategoryTravelInsuranceDocuments": "Awọn Iwe Aṣẹ Iṣeduro Irin-ajo",
+
+  "subcategoryDebitAndCreditCards": "Awọn Kaadi Debit ati Credit",
+  "subcategoryStoreCards": "Awọn Kaadi Ile-itaja",
+  "subcategoryFuelCards": "Awọn Kaadi Epo",
+
+  "subcategoryVehicleInsurances": "Iṣeduro Awọn Ọkọ",
+  "subcategoryPropertyInsurances": "Iṣeduro Ohun-ini",
+  "subcategoryLifeInsurances": "Iṣeduro Iye-aye",
+  "subcategoryHealthInsurances": "Iṣeduro Ilera",
+  "subcategoryTravelInsurances": "Iṣeduro Irin-ajo",
+
+  "subcategoryMedicalPrescriptions": "Awọn Aṣẹ Oogun",
+  "subcategoryOpticalPrescriptions": "Awọn Aṣẹ Oju",
+  "subcategoryMedicalCertificates": "Awọn Ijẹrisi Iṣoogun",
+
+  "subcategoryProfessionalLicences": "Awọn Iwe-aṣẹ Ọjọgbọn",
+  "subcategoryProfessionalRegistrations": "Iforukọsilẹ Ọjọgbọn",
+  "subcategoryIndustryRegistrations": "Iforukọsilẹ Ile-iṣẹ",
+  "subcategoryWorkAccessCards": "Awọn Kaadi Wiwọle Iṣẹ",
+
+  "subcategoryLeaseAgreements": "Awọn Adehun Iyalo",
+  "subcategoryAccessCardsAndTags": "Awọn Kaadi ati Ami Wiwọle",
+  "subcategoryParkingPermits": "Awọn Iwe-aṣẹ Iduro",
+  "subcategorySecurityAccessPermits": "Awọn Iwe-aṣẹ Wiwọle Aabo",
+
+  "subcategoryElectricityAccounts": "Awọn Akanti Ina",
+  "subcategoryWaterAccounts": "Awọn Akanti Omi",
+  "subcategoryInternetContracts": "Awọn Adehun Ayelujara",
+  "subcategorySecurityServiceContracts": "Awọn Adehun Iṣẹ Aabo",
+   "searchCategories": "Wa àwọn ẹka",
+  "filterAll": "Gbogbo rẹ",
+  "filterPreset": "Tí a ti ṣètò",
+  "filterCustom": "Ti ara ẹni",
+  "addCategoryTitle": "Ṣafikun ẹka",
+  "customLabel": "Ti ara ẹni",
+  "subcategoriesLabel": "Àwọn ẹka kékeré",
+  "itemsLabel": "Àwọn nkan",
+  "itemsExpiring": "Àwọn nkan {count} yóò parí ní ọjọ́ {days}",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Àwọn ẹka tí a ti dì",
+  "pinnedHint": "Dì àwọn ẹka tí o máa ń ṣí lọ́pọ̀lọpọ̀ kí wọ́n lè dúró lókè àtòkọ.",
+  "noCategoriesFound": "A kò rí ẹka kankan",
+  "searchGroups": "Wa awọn ẹgbẹ",
+  "addGroupTitle": "Ṣafikun ẹgbẹ",
+  "basicPlanGroupInfo": "O wa lori eto Basic.\nO le wo awọn ẹgbẹ ti a ti ṣeto tẹlẹ labẹ ẹka yii.\nṢe igbesoke si Premium lati ṣẹda awọn ẹgbẹ tirẹ.",
+  "groupDeleted": "Ti paarẹ ẹgbẹ",
+  "undo": "DA PADÀ",
+  "groupStats": "{items} ohun • {expiring} yoo pari ni ọjọ {days}",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tẹ lati ṣafikun ati tọpinpin awọn ohun inu ẹgbẹ yii.",
+  "itemsInGroup": "Awọn nkan ninu ẹgbẹ yii",
+  "itemsInGroupHint": "Tọpa awọn nkan pataki pẹlu ọjọ ipari wọn lati tunse ni akoko.",
+  "searchItems": "Wa awọn nkan",
+  "filterAll": "Gbogbo rẹ",
+  "filterExpiringWithin": "N pari ni ọjọ {days}",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Ti pari",
+  "addItem": "Fi nkan kun",
+  "noItemsYet": "Ko si nkan sibẹsibẹ.",
+
+  "statusExpired": "Ti pari",
+  "statusExpiresToday": "N pari loni",
+  "statusExpiresInOneDay": "N pari ni ọla",
+  "statusExpiresInDays": "N pari ni ọjọ {days}",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Wulo",
+
+  "deleteCategoryTitle": "Pa ẹka rẹ",
+  "deleteCategoryMessage": "Ṣe o da ọ loju pe o fẹ pa ẹka \"{name}\" rẹ?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Pa ẹgbẹ rẹ",
+  "deleteGroupMessage": "Ṣe o da ọ loju pe o fẹ pa ẹgbẹ \"{name}\" rẹ?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Pa nkan rẹ",
+  "deleteItemMessage": "Ṣe o da ọ loju pe o fẹ pa \"{name}\" rẹ?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Fagilee",
+  "delete": "Pa rẹ",
+  "homeWelcomeFirstTitle": "Kaabọ, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Kaabọ padà, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara n ṣe iranlọwọ fun ọ lati tọpa awọn ọjọ ipari pataki ki ohunkohun má bàjẹ́.",
+
+"homeWelcomeSubtitleFirst":
+  "Inú wa dùn láti rí ọ níbí. Vaultara n ṣe iranlọwọ fun ọ lati ṣeto awọn ọjọ ati awọn igbasilẹ pataki ni ibi kan ti o ni aabo.",
+
+"homeWelcomeSubtitleBack":
+  "Inú wa dùn láti rí ọ padà. Vaultara ṣetan nigbakugba ti o ba fẹ lati tún wo awọn ọjọ ati awọn igbasilẹ pataki rẹ.",
+  "insightEmptyTitle": "O ko ti fi ohunkohun kun sibẹsibẹ",
+  "insightEmptyBody": "Nigbati o ba bẹrẹ lati tọpa awọn ọjọ pataki, Vaultara yoo ran ọ lọwọ lati wa niwaju awọn ipari.",
+
+  "insightExpiresTodayTitle": "\"{name}\" n pari loni",
+  "insightExpiresTodayBody": "Ṣayẹwo ni kiakia le jẹ ki alaye wa ni deede.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" n pari lọla",
+  "insightExpiresTomorrowBody": "Ṣayẹwo ni bayi le fi akoko pamọ nigbamii.",
+
+  "insightExpiresSoonTitle": "\"{name}\" n pari ni {date}",
+  "insightExpiresSoonBody": "Ṣiṣe e ni kutukutu jẹ ki ohun gbogbo rọrun.",
+
+  "insightNextExpiryTitle": "Ipẹyà atẹle ni \"{name}\" ni {date}",
+  "insightNextExpiryBody": "Ko si igbese kankan ti o nilo lọwọlọwọ.",
+
+  "insightClusteredTitle": "Ọpọlọpọ awọn nkan n pari ni ayika {month}",
+  "insightClusteredBody": "Ṣayẹwo wọn papọ le fi akoko pamọ.",
+
+  "insightTopCategoryTitle": "Ọpọlọpọ awọn nkan wa ninu {category}",
+  "insightTopCategoryBody": "Bibẹrẹ nibi funni ni ipa ti o tobi julọ.",
+
+  "insightStableTitle": "Ohun gbogbo wa ni iduroṣinṣin lọwọlọwọ",
+  "insightStableBody": "Ko si awọn ipari to nilo akiyesi ni bayi.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Kaabọ",
+  "summaryAllTitle": "Gbogbo awọn nkan",
+"summaryAllCaption": "Tẹle ninu Vaultara",
+"summarySoonTitle": "Yóò parí laipẹ",
+"summarySoonCaption": "Laarin ọjọ́ 30",
+"summaryWeekTitle": "Ọsẹ́ yìí",
+"summaryWeekCaption": "Yóò parí ní ọjọ́ 7",
+"summaryExpiredTitle": "Ti parí",
+"summaryExpiredCaption": "Ọjọ́ ipari ti kọja",
+"stabilityStableTitle": "Ohun gbogbo dabi ẹni pe o duroṣinṣin",
+"stabilityStableBody": "Awọn igbasilẹ rẹ ko fi ewu lẹsẹkẹsẹ tabi ti kojọpọ han.",
+
+"stabilityDecliningTitle": "Iduroṣinṣin n dinku",
+"stabilityDecliningBody": "Diẹ ninu awọn nkan ti pari, awọn miiran si n sunmọ ipari.",
+
+"stabilityWeakenedTitle": "Iduroṣinṣin ti rọ",
+"stabilityWeakenedBody": "Wiwa awọn igbasilẹ ti pari dinku igbẹkẹle lapapọ.",
+
+"stabilityPressureTitle": "Titẹ n pọ si",
+"stabilityPressureBody": "Diẹ ninu awọn igbasilẹ yoo nilo akiyesi laipẹ lati ṣetọju iduroṣinṣin.",
+"editorNotes": "Àwọn àkọsílẹ̀",
+"notesHint": "Tẹ̀ àkọsílẹ̀ sílẹ̀",
+"editorReminderTitle": "Iranti",
+"editorReminderNone": "Ko si iranti",
+"editorReminderOnExpiry": "Ni ọjọ ipari",
+"editorReminder7Days": "Ọjọ 7 ṣaaju ipari",
+"editorReminder30Days": "Ọjọ 30 ṣaaju ipari",
+"editorReminderCustom": "Aṣàtọ",
+"daysBeforeExpiry": "ọjọ ṣaaju ipari",
+"reminderStage0Title": "Iranti ipari",
+"reminderStage0Body": "{firstName}, {itemName} yoo pari ni ọjọ́ {days}.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Iranti atẹle",
+"reminderStage1Body": "{firstName}, {itemName} kò tíì jẹ́ imudojuiwọn.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Ipári ń bọ",
+"reminderStage2Body": "Ọjọ́ ipari {itemName} ń sunmọ́.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Iranti ikẹhin",
+"reminderFinalBody": "{firstName}, jọwọ ṣe imudojuiwọn {itemName} báyìí.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Iwontunwonsi boṣewa",
+"coverageAllRepresented": "Awọn igbasilẹ rẹ bo gbogbo awọn ẹka.",
+"coverageMissingNamed": "Ko si igbasilẹ ninu awọn ẹka {count}: {names}.",
+"coverageMissingSummary": "O ko fi igbasilẹ kankan kun awọn ẹka {count}, pẹlu {names} ati awọn {remaining} miiran.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Lo ọrọ igbaniwọle",
+"signInWithBiometrics": "Wọle pẹlu biometrics",
+"enableBiometricsTitle": "Mu aabo biometrics ṣiṣẹ",
+"enableBiometricsBody": "Lo ika ọwọ tabi idanimọ oju lati daabobo Vaultara.",
+"enableBiometricsReason": "Mu ṣiṣi biometrics ṣiṣẹ fun Vaultara.",
+"notNow": "Kii ṣe bayi",
+"useBiometrics": "Lo biometrics",
+"recordsCalendarIntro":
+  "Yan bi o ṣe fẹ ṣawari awọn ọjọ ipari:\n\n• Tẹ iye ọjọ lati oni ti o fẹ wo siwaju.\n• Tabi yan ọjọ kan pato lori kalẹnda.\n\nVaultara yoo fi han awọn igbasilẹ ti o pari ni ọjọ yẹn.",
+
+"showingRecordsRelative": "N ṣafihan awọn igbasilẹ ti o pari {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "N ṣafihan awọn igbasilẹ ti o pari ni ọjọ ti a yan",
+
+"noRecordsOnDate":
+  "Ko si awọn igbasilẹ ti a ṣeto lati pari ni ọjọ yẹn.",
+
+"recordEditorAddTitle": "Ṣafikun igbasilẹ",
+"recordEditorEditTitle": "Ṣatunkọ igbasilẹ",
+
+"editorRecordName": "Orukọ igbasilẹ",
+"editorRecordNameHint": "Tẹ orukọ igbasilẹ",
+"recordEditorErrorName": "Orukọ igbasilẹ jẹ dandan",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Tẹ lati ṣafikun ati tọpinpin awọn igbasilẹ ninu ẹgbẹ yii.",
+
+"recordsInGroup": "Awọn igbasilẹ ninu ẹgbẹ yii",
+
+"recordsInGroupHint":
+  "Tọpinpin gbogbo igbasilẹ pataki pẹlu ọjọ ipari rẹ lati le ṣe imudojuiwọn ni akoko.",
+
+"searchRecords": "Wa awọn igbasilẹ",
+"addRecord": "Ṣafikun igbasilẹ",
+"noRecordsYet": "Ko si awọn igbasilẹ sibẹsibẹ.",
+
+"deleteRecordTitle": "Pa igbasilẹ rẹ",
+
+"recordsInsightClusteredTitle":
+  "Ọpọlọpọ awọn igbasilẹ n pari ni ayika {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Pupọ ninu awọn igbasilẹ rẹ wa labẹ {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Gbogbo awọn igbasilẹ",
+
+"recordsStabilityDecliningBody":
+  "Diẹ ninu awọn igbasilẹ ti pari tẹlẹ ati pe diẹ sii n bọ laipẹ.",
+
+"recordsCoverageAllRepresented":
+  "Awọn igbasilẹ rẹ bo gbogbo awọn ẹka.",
+
+"recordReminderStage0Body":
+  "{firstName}, igbasilẹ rẹ {recordName} yoo pari ni {days} ọjọ.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, igbasilẹ rẹ {recordName} ko tii ṣe imudojuiwọn.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Ọjọ ipari fun {recordName} n sunmọ.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, jọwọ ṣe imudojuiwọn igbasilẹ {recordName} bayii.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Ko si ẹgbẹ kankan sibẹ",
+"recordsExpiring": "{count, plural, one {ìforúkọsílẹ̀ 1 yóò parí ní ọjọ́ {days}} other {{count} ìforúkọsílẹ̀ yóò parí ní ọjọ́ {days}}}",
+"recordsGroupStats": "{records, plural, one {ìforúkọsílẹ̀ 1} other {{records} ìforúkọsílẹ̀}} • {expiring} ní ọjọ́ {days}",
+"groupLabel": "{count, plural, one {{count} ẹgbẹ} other {{count} awọn ẹgbẹ}}",
+"recordsLabel": "{count, plural, one {{count} igbasilẹ} other {{count} awọn igbasilẹ}}",
+"forgotPassword": "Gbagbe ọrọ aṣínà?",
+  "forgotPasswordTitle": "Tun ọrọ aṣínà ṣe",
+  "forgotPasswordBody": "Tẹ adirẹsi imeeli rẹ sii, a ó sì rán ọ ní ìjápọ̀ atunṣe ọrọ aṣínà.",
+  "sendResetLink": "Rán ìjápọ̀",
+  "passwordResetEmailSent": "Imeeli atunṣe ọrọ aṣínà ti rán.",
+  "verifyEmailToContinue": "Jọwọ jẹrisi adirẹsi imeeli rẹ ṣaaju ki o to wọle",
+  "changeEmailTitle": "Yi adirẹsi imeeli pada",
+"newEmailHint": "Tẹ imeeli tuntun rẹ sii",
+"sendVerificationEmail": "Firanṣẹ imeeli ìmúdájú",
+"deleteAccountTitle": "Pa àkọọlẹ rẹ́",
+"deleteAccountWarning": "Ìgbésẹ̀ yìí yóò pa àkọọlẹ rẹ àti gbogbo ìtàn tí a fipamọ́ rẹ́ títí láé.\nKò lè yípadà.",
+"deleteAccountConfirm": "Pa àkọọlẹ rẹ́ títí láé",
+"supportTitle": "Atilẹyin",
+"supportSubtitle": "Kan si wa ti o ba nilo iranlọwọ tabi ni ibeere.",
+"supportEmailSubject": "Ìbéèrè àtilẹ́yin Vaultara",
+"supportEmailError": "Ko le ṣí app imeeli.",
+"passwordResetEmailFailed": "A ko le fi imeeli atunto ọrọ igbaniwọle ranṣẹ.",
+"loggedInPasswordResetBody": "A ó fi ọna asopọ atunto ọrọ igbaniwọle ranṣẹ si:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Isakoso akọọlẹ",
+"changeEmailTitle": "Yi adirẹsi imeeli pada",
+"changeEmailSubtitle": "Ṣe imudojuiwọn imeeli ti o so mọ akọọlẹ rẹ.",
+"changePasswordTitle": "Yi ọrọ aṣínà pada",
+"changePasswordSubtitle": "A ó fi imeeli ranṣẹ pẹlu ọna asopọ lati yi ọrọ aṣínà pada lailewu.",
+"deleteAccountTitle": "Pa akọọlẹ rẹ",
+"deleteAccountSubtitle": "Pa akọọlẹ Vaultara rẹ patapata.",
+"biometricAuthReason": "Jẹrisi lati wọle si akọọlẹ rẹ",
+"verifyEmailTitle": "Jẹrisi imeeli rẹ",
+"verifyEmailBody": "A ti fi imeeli ìmúdájú ranṣẹ si apoti imeeli rẹ. Jọwọ ṣí i ki o jẹrisi adirẹsi imeeli rẹ, lẹhinna pada si ibi lati tẹsiwaju.",
+"verifyEmailConfirmedButton": "Mo ti jẹrisi imeeli mi",
+"verifyEmailResendButton": "Tun fi imeeli ìmúdájú ranṣẹ",
+"verifyEmailSending": "Nfi ranṣẹ...",
+"navHome": "Ile",
+"navCategories": "Ipele",
+"navInsights": "Ifihan",
+"navCalendar": "Kalẹnda",
+"tutorialHomeSearch": "Lo apoti wiwa lati wa igbasilẹ eyikeyi ni kiakia.",
+"tutorialHomeFab": "Fi igbasilẹ akọkọ rẹ kun nibi.\nYan ẹka, fi akọsilẹ kun ati yan ọjọ ipari.",
+"tutorialHomeSummary": "Apakan yii n ṣe iranlọwọ lati ri igbasilẹ ti o sunmọ ipari.",
+"tutorialHomeInsight": "Itupalẹ ọlọgbọn yii n fi awọn ilana han.\nO le tẹ aami agbọrọsọ.",
+"tutorialHomeCoverage": "Iwontunwonsi boṣewa n fihan pinpin igbasilẹ.",
+"tutorialHomeStability": "Iduroṣinṣin n fihan igbẹkẹle igbasilẹ.",
+"tutorialCancel": "Fagilee",
+"tutorialNext": "Tẹle",
+"tutorialEnd": "Pari ikẹkọ",
+"softDeleteCategory": "ẹka",
+"softDeleteGroup": "ẹgbẹ́",
+"softDeleteRecord": "àkọsílẹ̀",
+
+"softDeleteTitle": "Gbe {type} sí Àwọn tí a ti paarẹ",
+
+"softDeleteMessage": "{type} \"{name}\" yóò gbe sí Àwọn tí a ti paarẹ.\n\nO lè tún gba a padà láàárín ọjọ́ 30. Lẹ́yìn náà yóò parẹ patapata.",
+
+"softDeleteMove": "Gbe",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Ti parẹ laipẹ",
+"categories": "Ẹka",
+"groups": "Ẹgbẹ",
+"records": "Ìkọ̀ọ́lẹ̀",
+"restore": "Da pada",
+"deletePermanently": "Pa run patapata",
+
+"recentlyDeletedBanner": "{type} ti parẹ ni a pa fun ọjọ 30.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Wa {type} ti parẹ",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Ko si {type} ti parẹ",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Tẹ ẹka kan lati wo awọn ẹgbẹ rẹ ati lati ṣakoso awọn igbasilẹ rẹ.",
+"groupsHint": "Awọn ẹgbẹ n ṣeto awọn igbasilẹ rẹ ninu ẹka yii. Tẹ ẹgbẹ kan lati ṣakoso awọn igbasilẹ.",
+"notLoggedIn": "Kò wọlé",
+"recordsInsideGroupHint": "Àwọn ìkọsílẹ̀ wọ̀nyí wà nínú ẹgbẹ́ yìí.",
+"snackMovedToRecentlyDeleted": "\"{name}\" ti gbe si A ṣẹ̀ṣẹ̀ pa rẹ́",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" ti parẹ́ ní àṣeyọrí",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" ti jẹ́ kíkọ́-ọdún síi ní àṣeyọrí",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" ti fi kún un ní àṣeyọrí",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" ti tún bọ̀ sípò ní àṣeyọrí",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "A ti dé ààlà ọ̀fẹ́ ({current}/{limit}). Ṣàgbéga láti fi kún un síi.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Wa gbogbo awọn igbasilẹ",
+"globalSearchHint": "Tẹ orukọ, ẹka tabi ẹgbẹ",
+"globalSearchNoMatches": "Ko si igbasilẹ to baamu wiwa rẹ.",
+"snackNoRecordsToSearch": "Ko si igbasilẹ lati wa. Ṣafikun diẹ ninu awọn igbasilẹ, Vaultara yoo si ṣe atọka wọn laifọwọyi.",
+"recoveryCentreTitle": "Ile-iṣẹ imupadabọ",
+"recoveryCentreSubtitle": "Mu pada tabi pa awọn igbasilẹ ti a yọ kuro patapata.",
+"plan_premium": "Premium",
+"plan_free": "Ọfẹ",
+"profile_app_settings_title": "Eto ohun elo",
+"profile_privacy_security_title": "Asiri ati aabo",
+"profile_biometric_on": "Titiipa biometric wa ni titan lori ẹrọ yii.",
+"profile_biometric_off": "Titiipa biometric wa ni pipa.",
+"profile_biometric_enable_reason": "Jẹrisi idanimọ rẹ lati tan titiipa biometric.",
+"profile_biometric_disable_reason": "Jẹrisi idanimọ rẹ lati pa titiipa biometric.",
+"profile_account_management_title": "Isakoso akọọlẹ",
+"profile_account_management_subtitle": "Yi imeeli, ọrọ aṣínà tabi pa akọọlẹ rẹ.",
+"profile_premium_active_title": "Premium n ṣiṣẹ",
+"profile_premium_upgrade_title": "Ṣe igbesoke si Premium",
+"profile_premium_active_subtitle": "Awọn iranti ilọsiwaju ti ṣii.",
+"profile_premium_upgrade_subtitle": "Ṣii awọn iranti ilọsiwaju ati iṣeto ailopin.",
+"profile_manage_cancel_hint": "Ṣakoso tabi fagilee nigbakugba lori Google Play.",
+"profile_manage_subscription_button": "Ṣakoso alabapin",
+"plansTitle": "Yan eto rẹ",
+"plansTrialBanner": "Ọjọ 7 idanwo ọfẹ.\nFagile nigbakugba.",
+"plansLoading": "N gba…",
+"plansStartFreeTrial": "Bẹrẹ ọfẹ",
+"plansNoChargeTodayFooter": "Ọjọ 7 ọfẹ · Ko si owo loni",
+
+"planFreeTitle": "Ọfẹ",
+"planFreeSubtitle": "Fun ibẹrẹ",
+"planPremiumMonthlyTitle": "Premium oṣooṣu",
+"planPremiumYearlyTitle": "Premium ọdun",
+"planPerMonth": "ni oṣooṣu",
+"planPerYear": "ni ọdun",
+
+"planBadgeCurrent": "Lọwọlọwọ",
+"planBadgePopular": "Gbajumo",
+"planBadgeBestValue": "Iye to dara",
+
+"planYouAreOnThisPlan": "O wa lori eto yii.",
+
+"planFeatureUpToRecords": "Titi di {count} igbasilẹ",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Ẹka aṣa (titi di {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Awọn ẹgbẹ kekere tito tẹlẹ",
+"planFeatureCloudStorage": "Ipamọ awọsanma",
+"planFeatureSmartExpiryInsights": "Itupalẹ ipari",
+"planFeatureCoverageBalance": "Iwọntunwọnsi ẹka",
+"planFeatureRecordStabilityTracking": "Iduroṣinṣin igbasilẹ",
+
+"planFeatureUnlimitedRecords": "Igbasilẹ ailopin",
+"planFeatureUnlimitedCategories": "Ẹka ailopin",
+"planFeatureCustomSubcategories": "Awọn ẹgbẹ kekere aṣa",
+"planFeatureMultipleRemindersPerRecord": "Ọpọlọpọ iranti",
+"planFeatureAdvancedReminderTiming": "Akoko ilọsiwaju",
+"planFeatureAutomaticFollowUps": "Iranti laifọwọyi",
+
+"planFeatureEverythingInMonthly": "Gbogbo ninu oṣooṣu",
+"planFeatureSavePercentComparedToMonthly": "Fipamọ {percent}% ju oṣooṣu lọ",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Iye to dara fun igba pipẹ",
+"editorReminderLabel": "Iranti",
+"editorReminderSelectOptional": "Yan iranti (ayanfẹ́)",
+"editorReminderOnExpiry": "Ni ọjọ́ ipari",
+"editorReminderDaysBefore": "Ọjọ́ {days} ṣáájú ipari",
+"editorFreeItemsCount": "Àwọn àkọsílẹ̀ ọfẹ: {used}/{limit}",
+"editorExpiryPastWarning": "Ọjọ́ ipari ti kọjá.",
+"editorExpiryTodayWarning": "Àkọsílẹ̀ yìí ń parí lónìí.",
+"editorErrorExpiryPast": "Ọjọ́ ipari kò le jẹ́ ti ìgbà tí kọjá.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Ìmọ̀ràn òní",
+"tutorialBannerTitle": "Itọ́sọ́nà kíákíá",
+"tutorialBannerBody": "Kọ́ ibi tí o ti lè wá, bí o ṣe lè fi ìkọ̀kọ̀ síi, àti itumọ insights ní kéré ju ìṣẹ́jú kan lọ.",
+"tutorialBannerStart": "Bẹrẹ ìtọ́́nisọ́nà",
+"tutorialBannerDismiss": "Kì í ṣe báyìí",
+"authErrorUserDisabled": "A ti pa akọọlẹ yii mọ.",
+"authErrorNetwork": "Aṣiṣe nẹtiwọọki. Gbiyanju lẹẹkansi.",
+"authErrorTooManyRequests": "Ọpọlọpọ igbiyanju. Gbiyanju nigbamii.",
+"authErrorSignInFailed": "Wiwọle kuna. Gbiyanju lẹẹkansi.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium ti muu ṣiṣẹ",
+"snackPremiumRestored": "Premium ti pada",
+"passwordNeedLower": "Gbọdọ ni lẹta kekere",
+"passwordNeedUpper": "Gbọdọ ni lẹta nla",
+"passwordNeedNumber": "Gbọdọ ni nọmba",
+"passwordNeedSymbol": "Gbọdọ ni aami",
+"confirmIdentityTitle": "Jẹ́risi ìdánimọ̀",
+"confirm": "Jẹ́risi",
+"profile_sign_out_title": "Jáde",
+"profile_sign_out_subtitle": "Jáde kúrò ní Vaultara lórí ẹrọ yìí",
+"profile_sign_out_confirm_title": "Ṣe o fẹ́ jáde?",
+"profile_sign_out_confirm_body": "Ìwọ yóò nílò láti wọlé padà láti wọlé sí àkàǹtì rẹ.",
+"profile_sign_out_action": "Jáde",
+"todayInsightsAudioHint": "Ṣe o fẹ́ audio? Lo aami agbọrọsọ.",
+"category2Label": "Ẹ̀ka",
+"enable2BiometricsBody": "Lo ìmúlò ìdánimọ̀ ìka ọwọ́ láti dáàbò bo àkọọlẹ Vaultara rẹ.",
+"snackNotificationsDisabled": "A ti pa awọn iwifunni. Tan wọn lati gba awọn iranti.",
+"openSettings": "Ṣii eto",
+
+"reminderOnExpiryTitle": "Parí lónìí",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Báwo {firstName}, \"{itemName}\" parí lónìí.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Àwọn ẹ̀ka ọ̀fẹ́: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Ó ń fi hàn iye àwọn ẹ̀ka ọ̀fẹ́ tí a ti lò nínú ààlà ọ̀fẹ́.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Dampela amanothi (ngokuzikhethela)",
+"apply": "Faka",
+"smartInsightExpiresTodayHeading": "Pari Lónìí",
+"smartInsightExpiresTodaySingleBody": "{name} parí lónìí. Gbé ìgbésẹ̀ báyìí láti jẹ́ kí ó wà ní ìmúdójú.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} àti àkọsílẹ̀ 1 mìíràn parí lónìí.} other{{names} àti àwọn àkọsílẹ̀ mìíràn {extra} parí lónìí.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Ó Nílò Àfiyèsí Rẹ",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} parí ní ọjọ́ 1 kò sì sí ìránní tí a ti gbé kalẹ̀. Jẹ́rìí pé àwọn àlàyé jẹ́ ó tọ́ síbẹ̀.} other{{name} parí ní ọjọ́ {days} kò sì sí ìránní tí a ti gbé kalẹ̀. Jẹ́rìí pé àwọn àlàyé jẹ́ ó tọ́ síbẹ̀.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Àwọn Ìṣèdíyé Pípọ̀ Tó Súnmọ́ Ara Wọn",
+"smartInsightRenewalTwinBodyTwo": "{a} àti {b} parí láàárín ọ̀sẹ̀ mẹ́ta sí ara wọn. Ṣe ètò ṣáájú.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, àti {c} gbogbo wọn parí láàárín ọ̀sẹ̀ mẹ́ta. Ṣe ètò ṣáájú.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, àti àkọsílẹ̀ 1 mìíràn parí láàárín ọ̀sẹ̀ mẹ́ta. Ṣe ètò ṣáájú.} other{{a}, {b}, àti àwọn àkọsílẹ̀ mìíràn {extra} parí láàárín ọ̀sẹ̀ mẹ́ta. Ṣe ètò ṣáájú.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Àkójọpọ̀ Tó Ń Bọ̀",
+"smartInsightClusterBody": "{count, plural, =1{Àkọsílẹ̀ 1 nínú {category} parí láàárín oṣù méjì tó ń bọ̀. Wo bí ó ṣe lè dára láti dojú kọ wọ́n papọ̀.} other{Àwọn àkọsílẹ̀ {count} nínú {category} parí láàárín oṣù méjì tó ń bọ̀. Wo bí ó ṣe lè dára láti dojú kọ wọ́n papọ̀.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Àkókò Ìdákẹ́jẹ́ Níwájú",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Kò sí ohun tó parí fún ọjọ́ 1 tó ń bọ̀. Ìṣèdíyé rẹ tókàn wà ní {firstDate}.} other{Kò sí ohun tó parí fún àwọn ọjọ́ {days} tó ń bọ̀. Ìṣèdíyé rẹ tókàn wà ní {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Gbogbo Rẹ̀ Wà Ní Ìmúdójú",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{Ìparí 1 tó ń bọ̀ ní àbojútó pẹ̀lú àwọn ìránní. Kò sí ohun mìíràn tó nílò àfiyèsí rẹ.} other{Àwọn ìparí {count} tó ń bọ̀ ní àbojútó pẹ̀lú àwọn ìránní. Kò sí ohun mìíràn tó nílò àfiyèsí rẹ.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Gbogbo rẹ̀ wà ní ìmúdójú. Kò sí ohun tó nílò àfiyèsí rẹ báyìí.",
+"smartInsightNoRecordsHeading": "Fi Àkọsílẹ̀ Àkọ́kọ́ Rẹ Kún",
+"smartInsightNoRecordsBody": "Bẹ̀rẹ̀ sí tọpa àwọn àkọsílẹ̀ rẹ, Vaultara yóò sì hàn àwọn ìmọ̀ ọlọ́gbọ́n níbí.",
+"expiryTimelineTitle": "Ilana akoko ipari",
+"expiryTimelineSubtitle": "Tẹ oṣù kan láti rí àwọn àkọsílẹ̀ tó parí ní oṣù náà",
+"expiryTimelineDetailCount": "{count, plural, =1{Àkọsílẹ̀ 1} other{Àwọn àkọsílẹ̀ {count}}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Tó ń bọ̀",
+"summaryUpcomingCaption": "Láàárín ọjọ́ 30",
+"summaryUrgentTitle": "Kíákíá",
+"summaryUrgentCaption": "Láàárín ọjọ́ 7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

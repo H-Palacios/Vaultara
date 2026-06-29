@@ -103,5 +103,781 @@
   "groupErrorSymbols": "Nimi ei tohi sisaldada sümboleid",
   "groupErrorNumbers": "Nimi ei tohi sisaldada numbreid",
 
-  "createGroup": "Loo"
+  "createGroup": "Loo",
+  "registerTitle": "Loo konto",
+
+  "firstNameLabel": "Eesnimi",
+  "firstNameHint": "Sisesta eesnimi",
+  "errorFirstName": "Eesnimi on kohustuslik",
+
+  "lastNameLabel": "Perekonnanimi",
+  "lastNameHint": "Sisesta perekonnanimi",
+  "errorLastName": "Perekonnanimi on kohustuslik",
+
+  "emailLabel": "E-post",
+  "errorEmailInvalid": "Sisesta kehtiv e-posti aadress.",
+  "errorEmailInUse": "See e-posti aadress on juba Vaultara kontoga seotud.",
+
+  "passwordLabel": "Parool",
+  "passwordHelper": "Vähemalt 8 märki, mitut tüüpi.",
+
+  "passwordTooShort": "Liiga lühike",
+  "passwordTooWeak": "Liiga nõrk",
+  "passwordMedium": "Keskmine",
+  "passwordStrong": "Tugev",
+
+  "errorPasswordLength": "Parool peab olema vähemalt 8 märki.",
+  "errorPasswordWeak": "Vali tugevam parool.",
+
+  "errorGeneric": "Registreerimine ebaõnnestus. Proovi uuesti.",
+
+  "createAccount": "Loo konto",
+  "appName": "Vaultara",
+"authTagline": "Sinu isiklik keskus passide, lubade, kaartide ja muude oluliste asjade jaoks",
+"tabSignIn": "Logi sisse",
+"tabCreateAccount": "Loo konto",
+"signInFooterText": "Logi sisse, et pääseda oma isiklikku Vaultara ruumi ja hoida kõik uuendamised kontrolli all",
+"createAccountFooterText": "Loo Vaultara konto oluliste meeldetuletuste varundamiseks ja neile igal ajal ligipääsuks",
+  "emailNotFound": "Vale e-post.\nSelle e-postiga Vaultara kontot ei ole",
+  "incorrectPassword": "Vale parool",
+  "emailLabel": "E-posti aadress",
+  "passwordLabel": "Parool",
+  "emailRequired": "Teie e-posti aadress on nõutav",
+"passwordRequired": "Teie parool on nõutav",
+"registerPasswordHint": "Sisesta parool",
+"loginPasswordHint": "Sisesta oma parool",
+"emailHint": "Sisesta oma e-posti aadress",
+  "signIn": "Logi sisse",
+"categoryPersonalIdentification": "Isikutuvastus",
+  "categoryDrivingAndVehicles": "Juhtimine ja sõidukid",
+  "categoryTravelAndImmigration": "Reisimine ja immigratsioon",
+  "categoryBankingAndCards": "Pangandus ja kaardid",
+  "categoryInsuranceAndCover": "Kindlustus ja kaitse",
+  "categoryHealthAndMedical": "Tervis ja meditsiin",
+  "categoryWorkAndProfessional": "Töö ja professionaalne",
+  "categoryPropertyAndHousing": "Kinnisvara ja eluasemed",
+  "categoryHouseholdAndUtilities": "Majapidamine ja teenused",
+
+  "subcategoryPassports": "Passid",
+  "subcategoryIdCards": "Isikutunnistused",
+  "subcategoryResidencePermits": "Elamisload",
+
+  "subcategoryDrivingLicences": "Juhiload",
+  "subcategoryVehicleRegistrations": "Sõidukite registreerimised",
+  "subcategoryRoadworthyCertificates": "Tehnilise seisukorra tunnistused",
+  "subcategoryVehicleInspectionCertificates": "Sõiduki ülevaatuse tunnistused",
+
+  "subcategoryVisas": "Viisad",
+  "subcategoryStudyPermits": "Õppeload",
+  "subcategoryWorkPermits": "Töölubad",
+  "subcategoryTravelInsuranceDocuments": "Reisikindlustuse dokumendid",
+
+  "subcategoryDebitAndCreditCards": "Deebet- ja krediitkaardid",
+  "subcategoryStoreCards": "Poekaardid",
+  "subcategoryFuelCards": "Kütusekaardid",
+
+  "subcategoryVehicleInsurances": "Sõidukikindlustused",
+  "subcategoryPropertyInsurances": "Varakindlustused",
+  "subcategoryLifeInsurances": "Elukindlustused",
+  "subcategoryHealthInsurances": "Tervisekindlustused",
+  "subcategoryTravelInsurances": "Reisikindlustused",
+
+  "subcategoryMedicalPrescriptions": "Meditsiinilised retseptid",
+  "subcategoryOpticalPrescriptions": "Optilised retseptid",
+  "subcategoryMedicalCertificates": "Meditsiinilised tõendid",
+
+  "subcategoryProfessionalLicences": "Kutselitsentsid",
+  "subcategoryProfessionalRegistrations": "Kutselised registreeringud",
+  "subcategoryIndustryRegistrations": "Tööstuslikud registreeringud",
+  "subcategoryWorkAccessCards": "Töökohapääsukaardid",
+
+  "subcategoryLeaseAgreements": "Üürilepingud",
+  "subcategoryAccessCardsAndTags": "Pääsukaardid ja märgised",
+  "subcategoryParkingPermits": "Parkimisload",
+  "subcategorySecurityAccessPermits": "Turvapääsuload",
+
+  "subcategoryElectricityAccounts": "Elektriarved",
+  "subcategoryWaterAccounts": "Veearved",
+  "subcategoryInternetContracts": "Interneti lepingud",
+  "subcategorySecurityServiceContracts": "Turvateenuste lepingud",
+   "searchCategories": "Otsi kategooriaid",
+  "filterAll": "Kõik",
+  "filterPreset": "Eelseadistatud",
+  "filterCustom": "Kohandatud",
+  "addCategoryTitle": "Lisa kategooria",
+  "customLabel": "Kohandatud",
+  "subcategoriesLabel": "alamkategooriad",
+  "itemsLabel": "üksused",
+  "itemsExpiring": "{count} üksust aegub {days} päeva pärast",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Kinnitatud olulised",
+  "pinnedHint": "Kinnita kategooriad, mida avad kõige sagedamini, et need jääksid ülaossa.",
+  "noCategoriesFound": "Kategooriaid ei leitud",
+  "searchGroups": "Otsi gruppe",
+  "addGroupTitle": "Lisa grupp",
+  "basicPlanGroupInfo": "Kasutad Põhiplaani.\nSaad vaadata selle kategooria eelmääratud gruppe.\nUuenda Premiumile, et luua oma gruppe.",
+  "groupDeleted": "Grupp kustutatud",
+  "undo": "TÜHISTA",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Puuduta, et lisada ja jälgida selle grupi elemente.",
+   "itemsInGroup": "Selle rühma üksused",
+  "itemsInGroupHint": "Jälgi iga olulist üksust koos aegumiskuupäevaga, et saaksid selle õigel ajal uuendada.",
+  "searchItems": "Otsi üksusi",
+  "filterAll": "Kõik",
+  "filterExpiringWithin": "Aegub {days} päeva jooksul",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Aegunud",
+  "addItem": "Lisa üksus",
+  "noItemsYet": "Ühtegi üksust veel pole.",
+
+  "statusExpired": "Aegunud",
+  "statusExpiresToday": "Aegub täna",
+  "statusExpiresInOneDay": "Aegub 1 päeva pärast",
+  "statusExpiresInDays": "Aegub {days} päeva pärast",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Kehtiv",
+
+  "deleteCategoryTitle": "Kustuta kategooria",
+  "deleteCategoryMessage": "Kas oled kindel, et soovid kustutada kategooria \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Kustuta rühm",
+  "deleteGroupMessage": "Kas oled kindel, et soovid kustutada rühma \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Kustuta üksus",
+  "deleteItemMessage": "Kas oled kindel, et soovid kustutada \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Tühista",
+  "delete": "Kustuta",
+  "homeWelcomeTitle": "Tere tulemast",
+
+  "homeWelcomeFirstTitle": "Tere tulemast, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Tere tulemast tagasi, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara aitab sul jälgida olulisi aegumiskuupäevi, et midagi ei jääks märkamata.",
+
+  "homeWelcomeSubtitleFirst":
+    "Meil on hea meel sind siin näha. Vaultara aitab sul püsida organiseerituna, hoides olulised kuupäevad ja kirjed ühes turvalises kohas.",
+
+  "homeWelcomeSubtitleBack":
+    "Hea meel sind jälle näha. Vaultara on siin, kui soovid oma olulisi kuupäevi ja kirjeid üle vaadata.",
+    "insightEmptyTitle": "Midagi pole veel lisatud",
+  "insightEmptyBody": "Kui hakkad tähtsaid kuupäevi jälgima, aitab Vaultara aegumistega sammu pidada.",
+
+  "insightExpiresTodayTitle": "\"{name}\" aegub täna",
+  "insightExpiresTodayBody": "Kiire kontroll aitab hoida andmed korras.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" aegub homme",
+  "insightExpiresTomorrowBody": "Täna ülevaatamine võib hiljem aega säästa.",
+
+  "insightExpiresSoonTitle": "\"{name}\" aegub {date}",
+  "insightExpiresSoonBody": "Varajane tegutsemine teeb asja lihtsamaks.",
+
+  "insightNextExpiryTitle": "Järgmine aegumine on \"{name}\" ({date})",
+  "insightNextExpiryBody": "Hetkel pole vaja midagi teha.",
+
+  "insightClusteredTitle": "Mitu kirjet aegub {month}",
+  "insightClusteredBody": "Koos ülevaatamine võib aega säästa.",
+
+  "insightTopCategoryTitle": "Enamik kirjeid kuulub kategooriasse {category}",
+  "insightTopCategoryBody": "Sealt alustades on mõju suurim.",
+
+  "insightStableTitle": "Kõik on stabiilne",
+  "insightStableBody": "Praegu pole ühtegi kiireloomulist aegumist.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Kõik üksused",
+"summaryAllCaption": "Jälgitud Vaultaras",
+"summarySoonTitle": "Aegub varsti",
+"summarySoonCaption": "30 päeva jooksul",
+"summaryWeekTitle": "Sel nädalal",
+"summaryWeekCaption": "Aegub 7 päeva pärast",
+"summaryExpiredTitle": "Aegunud",
+"summaryExpiredCaption": "Aegumiskuupäev möödas",
+"stabilityStableTitle": "Todo parece estable",
+"stabilityStableBody": "Tus registros no muestran riesgos inmediatos ni acumulativos.",
+
+"stabilityDecliningTitle": "La estabilidad está disminuyendo",
+"stabilityDecliningBody": "Algunos elementos han vencido y otros se acercan a su vencimiento.",
+
+"stabilityWeakenedTitle": "Estabilidad debilitada",
+"stabilityWeakenedBody": "La presencia de registros vencidos reduce la fiabilidad general.",
+
+"stabilityPressureTitle": "La presión aumenta",
+"stabilityPressureBody": "Varios registros requerirán atención pronto para mantener la estabilidad.",
+"editorNotes": "Notas",
+"notesHint": "Introducir notas",
+"editorReminderTitle": "Meeldetuletus",
+"editorReminderNone": "Meeldetuletus puudub",
+"editorReminderOnExpiry": "Aegumiskuupäeval",
+"editorReminder7Days": "7 päeva enne aegumist",
+"editorReminder30Days": "30 päeva enne aegumist",
+"editorReminderCustom": "Kohandatud",
+"daysBeforeExpiry": "päeva enne aegumist",
+"reminderStage0Title": "Aegumisteade",
+"reminderStage0Body": "{firstName}, {itemName} aegub {days} päeva pärast.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Järelmeeldetuletus",
+"reminderStage1Body": "{firstName}, {itemName} pole veel uuendatud.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Aegumine läheneb",
+"reminderStage2Body": "{itemName} aegumiskuupäev läheneb.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Viimane meeldetuletus",
+"reminderFinalBody": "{firstName}, palun uuenda {itemName} kohe.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Katvuse tasakaal",
+"coverageAllRepresented": "Teie kirjed hõlmavad kõiki kategooriaid.",
+"coverageMissingNamed": "{count} kategoorias ei leitud kirjeid: {names}.",
+"coverageMissingSummary": "Sa ei ole lisanud ühtegi kirjet {count} kategooriasse, sealhulgas {names} ja veel {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Kasuta parooli",
+"signInWithBiometrics": "Logi sisse biomeetriaga",
+"enableBiometricsTitle": "Luba biomeetriline turve",
+"enableBiometricsBody": "Kasuta sõrmejälge või näotuvastust Vaultara kaitsmiseks.",
+"enableBiometricsReason": "Luba Vaultara biomeetriline avamine.",
+"notNow": "Mitte praegu",
+"useBiometrics": "Kasuta biomeetriat",
+"recordsCalendarIntro":
+  "Vali, kuidas soovid oma aegumiskuupäevi vaadata:\n\n• Sisesta, mitu päeva alates tänasest soovid ette vaadata.\n• Või vali kalendrist kindel kuupäev.\n\nVaultara näitab, millised kirjed sel päeval aeguvad.",
+
+"showingRecordsRelative": "Kuvatakse kirjed, mis aeguvad {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Kuvatakse kirjed, mis aeguvad valitud kuupäeval",
+"noRecordsOnDate": "Selleks päevaks ei ole aeguvat kirjet.",
+
+"recordEditorAddTitle": "Lisa kirje",
+"recordEditorEditTitle": "Muuda kirjet",
+
+"editorRecordName": "Kirje nimi",
+"editorRecordNameHint": "Sisesta kirje nimi",
+"recordEditorErrorName": "Kirje nimi on kohustuslik",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Puuduta, et lisada ja jälgida selle grupi kirjeid.",
+
+"recordsInGroup": "Selle grupi kirjed",
+"recordsInGroupHint":
+  "Jälgi iga olulist kirjet koos aegumiskuupäevaga, et see õigeaegselt uuendada.",
+
+"searchRecords": "Otsi kirjeid",
+"addRecord": "Lisa kirje",
+"noRecordsYet": "Kirjeid pole veel.",
+
+"deleteRecordTitle": "Kustuta kirje",
+
+"recordsInsightClusteredTitle":
+  "Mitmed kirjed aeguvad {month} paiku",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Enamik sinu kirjeid on kategoorias {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Kõik kirjed",
+
+"recordsStabilityDecliningBody":
+  "Mõned kirjed on juba aegunud ja rohkem on peagi aegumas.",
+
+"recordsCoverageAllRepresented":
+  "Sinu kirjed hõlmavad kõiki kategooriaid.",
+
+"recordReminderStage0Body":
+  "{firstName}, sinu {recordName} aegub {days} päeva pärast.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, sinu {recordName} ei ole veel uuendatud.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} aegumiskuupäev läheneb.",
+"@recordReminderStage2Body": {
+  "place placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, palun uuenda nüüd {recordName}.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Gruppe pole veel",
+"recordsExpiring": "{count, plural, one {1 kirje aegub {days} päeva pärast} other {{count} kirjet aeguvad {days} päeva pärast}}",
+"recordsGroupStats": "{records, plural, one {1 kirje} other {{records} kirjet}} • {expiring} {days} päeva jooksul",
+"groupLabel": "{count, plural, one {{count} grupp} other {{count} gruppi}}",
+"recordsLabel": "{count, plural, one {{count} kirje} other {{count} kirjet}}",
+"forgotPassword": "Unustasid parooli?",
+  "forgotPasswordTitle": "Parooli lähtestamine",
+  "forgotPasswordBody": "Sisesta oma e-posti aadress ja saadame sulle parooli lähtestamise lingi.",
+  "sendResetLink": "Saada link",
+  "passwordResetEmailSent": "Parooli lähtestamise e-kiri on saadetud.",
+  "verifyEmailToContinue": "Palun kinnitage oma e-posti aadress enne sisselogimist",
+  "changeEmailTitle": "Muuda e-posti aadressi",
+"newEmailHint": "Sisesta oma uus e-posti aadress",
+"sendVerificationEmail": "Saada kinnitusmeil",
+"deleteAccountTitle": "Kustuta konto",
+"deleteAccountWarning": "See toiming kustutab jäädavalt sinu konto ja kõik salvestatud andmed.\nSeda ei saa tagasi võtta.",
+"deleteAccountConfirm": "Kustuta konto jäädavalt",
+"supportTitle": "Tugi",
+"supportSubtitle": "Võtke meiega ühendust, kui vajate abi või teil on küsimusi.",
+"supportEmailSubject": "Vaultara toe taotlus",
+"supportEmailError": "E-posti rakendust ei saa avada.",
+"passwordResetEmailFailed": "Parooli lähtestamise e-kirja ei õnnestunud saata.",
+"loggedInPasswordResetBody": "Saadame parooli lähtestamise lingi aadressile:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Konto haldamine",
+  "changeEmailTitle": "Muuda e-posti aadressi",
+  "changeEmailSubtitle": "Uuenda oma kontoga seotud e-posti.",
+  "changePasswordTitle": "Muuda parooli",
+  "changePasswordSubtitle": "Saadame sulle e-kirja lingiga parooli turvaliseks muutmiseks.",
+  "deleteAccountTitle": "Kustuta konto",
+  "deleteAccountSubtitle": "Eemalda oma Vaultara konto jäädavalt.",
+  "biometricAuthReason": "Autentige oma Vaultara kontole juurdepääsuks",
+  "verifyEmailTitle": "Kinnita oma e-post",
+"verifyEmailBody": "Saatsime kinnituskirja sinu postkasti. Ava see ja kinnita oma e-posti aadress, seejärel tule siia tagasi jätkamiseks.",
+"verifyEmailConfirmedButton": "Olen oma e-posti kinnitanud",
+"verifyEmailResendButton": "Saada kinnitusmeil uuesti",
+"verifyEmailSending": "Saatmine...",
+"navHome": "Avaleht",
+"navCategories": "Kategooriad",
+"navInsights": "Ülevaade",
+"navCalendar": "Kalender",
+"tutorialHomeSearch": "Kasuta otsinguriba, et kiiresti leida mis tahes jälgitav kirje.",
+"tutorialHomeFab": "Lisa oma esimene kirje siia.\nVali, kuhu see kuulub, lisa valikulised märkmed ja vali aegumiskuupäev.",
+"tutorialHomeSummary": "Rohkemate kirjete lisamisel aitab see osa märgata aegumisele lähenevaid või aegunud kirjeid.",
+"tutorialHomeInsight": "See nutikas ülevaade toob esile mustrid ja lähenevad aegumised.\nVõid puudutada kõlariikooni, et seda kuulata.",
+"tutorialHomeCoverage": "Katvuse tasakaal näitab, kui ühtlaselt kirjed on jaotunud.\nKõrgem tasakaal tähendab vähem lünki.",
+"tutorialHomeStability": "Stabiilsus näitab, kui usaldusväärsed on kirjed aja jooksul.\nAegunud ja lähenevad kirjed võivad stabiilsust vähendada.",
+"tutorialCancel": "Tühista",
+"tutorialNext": "Edasi",
+"tutorialEnd": "Lõpeta juhend",
+"softDeleteCategory": "Kategooria",
+"softDeleteGroup": "Grupp",
+"softDeleteRecord": "Kirje",
+"softDeleteTitle": "Teisalda {type} Hiljuti kustutatud",
+"softDeleteMessage": "{type} \"{name}\" teisaldatakse Hiljuti kustutatud.\n\nSaad selle taastada 30 päeva jooksul. Pärast seda kustutatakse see jäädavalt.",
+"softDeleteMove": "Teisalda",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Hiljuti kustutatud",
+  "categories": "Kategooriad",
+  "groups": "Grupid",
+  "records": "Kirjed",
+  "restore": "Taasta",
+  "deletePermanently": "Kustuta jäädavalt",
+
+  "recentlyDeletedBanner": "Kustutatud {type} säilitatakse 30 päeva.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Otsi kustutatud {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Kustutatud {type} puuduvad",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Puuduta kategooriat, et vaadata selle gruppe ja hallata oma kirjeid.",
+  "groupsHint": "Grupid korraldavad sinu kirjed selles kategoorias. Puuduta gruppi, et hallata kirjeid.",
+  "notLoggedIn": "Pole sisse logitud",
+"recordsInsideGroupHint": "Need on selle grupi kirjed.",
+"snackMovedToRecentlyDeleted": "\"{name}\" teisaldati jaotisse Hiljuti kustutatud",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" kustutati edukalt",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" uuendati edukalt",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" lisati edukalt",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" taastati edukalt",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Tasuta limiit on täis ({current}/{limit}). Rohkema lisamiseks uuenda paketti.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Otsi kõiki kirjeid",
+"globalSearchHint": "Sisesta kirje nimi, kategooria või grupp",
+"globalSearchNoMatches": "Ükski kirje ei vasta sinu otsingule.",
+"snackNoRecordsToSearch": "Otsimiseks pole ühtegi kirjet. Lisa mõned kirjed ja Vaultara indekseerib need automaatselt.",
+"recoveryCentreTitle": "Taastekeskus",
+"recoveryCentreSubtitle": "Taasta või kustuta eemaldatud kirjed jäädavalt.",
+"plan_premium": "Premium",
+"plan_free": "Tasuta",
+"profile_app_settings_title": "Rakenduse seaded",
+"profile_privacy_security_title": "Privaatsus ja turvalisus",
+"profile_biometric_on": "Biomeetriline lukustus on selles seadmes sisse lülitatud.",
+"profile_biometric_off": "Biomeetriline lukustus on välja lülitatud.",
+"profile_biometric_enable_reason": "Kinnitage oma isik, et biomeetriline lukustus sisse lülitada.",
+"profile_biometric_disable_reason": "Kinnitage oma isik, et biomeetriline lukustus välja lülitada.",
+"profile_account_management_title": "Konto haldamine",
+"profile_account_management_subtitle": "Muuda e-posti, parooli või kustuta konto.",
+"profile_premium_active_title": "Premium on aktiivne",
+"profile_premium_upgrade_title": "Uuenda Premiumile",
+"profile_premium_active_subtitle": "Täiustatud meeldetuletused on avatud.",
+"profile_premium_upgrade_subtitle": "Ava täiustatud meeldetuletused ja piiramatu korraldus.",
+"profile_manage_cancel_hint": "Halda või tühista igal ajal Google Play’s.",
+"profile_manage_subscription_button": "Halda tellimust",
+"plansTitle": "Vali oma plaan",
+"plansTrialBanner": "Alusta 7-päevase tasuta prooviga.\nTühista igal ajal.",
+"plansLoading": "Laadimine…",
+"plansStartFreeTrial": "Alusta tasuta",
+"plansNoChargeTodayFooter": "7 päeva tasuta · Täna ei võeta tasu",
+
+"planFreeTitle": "Tasuta",
+"planFreeSubtitle": "Alustamiseks",
+"planPremiumMonthlyTitle": "Premium kuupõhine",
+"planPremiumYearlyTitle": "Premium aastane",
+"planPerMonth": "kuus",
+"planPerYear": "aastas",
+
+"planBadgeCurrent": "Praegune plaan",
+"planBadgePopular": "Populaarne",
+"planBadgeBestValue": "Parim väärtus",
+
+"planYouAreOnThisPlan": "Kasutad juba seda plaani.",
+
+"planFeatureUpToRecords": "Kuni {count} kirjet",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Kohandatud kategooriad (kuni {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Eelseadistatud alamkategooriad",
+"planFeatureCloudStorage": "Pilvesalvestus",
+"planFeatureSmartExpiryInsights": "Targad aegumise ülevaated",
+"planFeatureCoverageBalance": "Katvuse tasakaal",
+"planFeatureRecordStabilityTracking": "Kirjete stabiilsus",
+
+"planFeatureUnlimitedRecords": "Piiramatu kirje",
+"planFeatureUnlimitedCategories": "Piiramatud kategooriad",
+"planFeatureCustomSubcategories": "Kohandatud alamkategooriad",
+"planFeatureMultipleRemindersPerRecord": "Mitu meeldetuletust",
+"planFeatureAdvancedReminderTiming": "Täpsem ajastus",
+"planFeatureAutomaticFollowUps": "Automaatsed meeldetuletused",
+
+"planFeatureEverythingInMonthly": "Kõik kuupaketist",
+"planFeatureSavePercentComparedToMonthly": "Säästa {percent}% võrreldes kuupaketiga",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Parim pikaajaline väärtus",
+"editorReminderLabel": "Meeldetuletus",
+"editorReminderSelectOptional": "Vali meeldetuletus (valikuline)",
+"editorReminderOnExpiry": "Aegumiskuupäeval",
+"editorReminderDaysBefore": "{days} päeva enne aegumist",
+"editorFreeItemsCount": "Tasuta kirjed: {used}/{limit}",
+"editorExpiryPastWarning": "Aegumiskuupäev on juba möödunud.",
+"editorExpiryTodayWarning": "See kirje aegub täna.",
+"editorErrorExpiryPast": "Aegumiskuupäev ei tohi olla minevikus.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Tänased ülevaated",
+"tutorialBannerTitle": "Kiire ülevaade",
+"tutorialBannerBody": "Õpi otsima, lisama kirjeid ja mõistma ülevaateid vähem kui minutiga.",
+"tutorialBannerStart": "Alusta õpetust",
+"tutorialBannerDismiss": "Mitte praegu",
+"authErrorUserDisabled": "See konto on keelatud.",
+"authErrorNetwork": "Võrguviga. Proovi uuesti.",
+"authErrorTooManyRequests": "Liiga palju katseid. Proovi hiljem.",
+"authErrorSignInFailed": "Sisselogimine ebaõnnestus. Proovi uuesti.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium aktiveeritud",
+"snackPremiumRestored": "Premium taastatud",
+"passwordNeedLower": "Peab sisaldama väiketähte",
+"passwordNeedUpper": "Peab sisaldama suurtähte",
+"passwordNeedNumber": "Peab sisaldama numbrit",
+"passwordNeedSymbol": "Peab sisaldama sümbolit",
+"confirmIdentityTitle": "Kinnita identiteet",
+"confirm": "Kinnita",
+"profile_sign_out_title": "Logi välja",
+"profile_sign_out_subtitle": "Logi Vaultarast välja selles seadmes",
+"profile_sign_out_confirm_title": "Kas logida välja?",
+"profile_sign_out_confirm_body": "Konto kasutamiseks pead uuesti sisse logima.",
+"profile_sign_out_action": "Logi välja",
+"todayInsightsAudioHint": "Eelistad heli? Kasuta kõlariikooni.",
+"category2Label": "Kategooria",
+"enable2BiometricsBody": "Kasuta sõrmejäljetuvastust oma Vaultara konto kaitsmiseks.",
+"snackNotificationsDisabled": "Teavitused on keelatud. Lülitage need meeldetuletuste saamiseks sisse.",
+"openSettings": "Ava seaded",
+
+"reminderOnExpiryTitle": "Aegub täna",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Tere {firstName}, \"{itemName}\" aegub täna.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Tasuta kategooriad: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Näitab, mitu tasuta kategooriat on kasutatud tasuta limiidist.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Lisa märkmeid (valikuline)",
+"apply": "Rakenda",
+"smartInsightExpiresTodayHeading": "Aegub Täna",
+"smartInsightExpiresTodaySingleBody": "{name} aegub täna. Tegutsege nüüd, et see ajakohane hoida.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ja veel 1 dokument aeguvad täna.} other{{names} ja veel {extra} dokumenti aeguvad täna.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Vajab Teie Tähelepanu",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} aegub 1 päeva pärast ja meeldetuletust pole määratud. Kontrollige, kas üksikasjad on endiselt õiged.} other{{name} aegub {days} päeva pärast ja meeldetuletust pole määratud. Kontrollige, kas üksikasjad on endiselt õiged.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Mitu Uuendust Lähestikku",
+"smartInsightRenewalTwinBodyTwo": "{a} ja {b} aeguvad kolme nädala jooksul üksteisest. Planeerige ette.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} ja {c} aeguvad kõik kolme nädala jooksul. Planeerige ette.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} ja veel 1 dokument aeguvad kolme nädala jooksul. Planeerige ette.} other{{a}, {b} ja veel {extra} dokumenti aeguvad kolme nädala jooksul. Planeerige ette.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Eelseisev Rühm",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument kategoorias {category} aegub järgmise kahe kuu jooksul. Kaaluge nende koos käsitlemist.} other{{count} dokumenti kategoorias {category} aeguvad järgmise kahe kuu jooksul. Kaaluge nende koos käsitlemist.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Vaikne Periood Ees",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Järgmise 1 päeva jooksul ei aegu midagi. Teie järgmine uuendamine on {firstDate}.} other{Järgmise {days} päeva jooksul ei aegu midagi. Teie järgmine uuendamine on {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Kõik Ajakohane",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 eelseisev aegumine on meeldetuletustega kaetud. Miski muu ei vaja teie tähelepanu.} other{{count} eelseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja teie tähelepanu.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Kõik ajakohane. Praegu ei vaja miski teie tähelepanu.",
+"smartInsightNoRecordsHeading": "Lisage Oma Esimene Kirje",
+"smartInsightNoRecordsBody": "Hakake oma dokumente jälgima ja Vaultara kuvab siin nutikaid ülevaateid.",
+"expiryTimelineTitle": "Aegumise ajatelg",
+"expiryTimelineSubtitle": "Puudutage kuud, et näha selles kuus aeguvaid kirjeid",
+"expiryTimelineDetailCount": "{count, plural, =1{1 kirje} other{{count} kirjet}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Peatselt Saabuvad",
+"summaryUpcomingCaption": "30 päeva jooksul",
+"summaryUrgentTitle": "Kiireloomuline",
+"summaryUrgentCaption": "7 päeva jooksul"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+  
+

@@ -4,7 +4,7 @@
   "expiryCalendarTitle": "የመጨረሻ ቀን ቀንበር",
 
   "calendarIntro":
-    "የመጨረሻ ቀኖችን እንዴት መመልከት እንደሚፈልጉ ይምረጡ፡\n\n• ከዛሬ ጀምሮ የቀኖችን ብዛት ያስገቡ።\n• ወይም በቀንበር ላይ ቀን ይምረጡ።\n\nVaultara በዚያ ቀን የሚያበቁ ነገሮችን ያሳያል።",
+    "የመጨረሻ ቀኖችን እንዴት መመልከት እንደሚፈልጉ ይምረጡ፡\n\n• ከዛሬ ጀምሮ ስንት ቀኖች መመልከት እንደሚፈልጉ ያስገቡ።\n• ወይም በቀንበር ላይ ቀን ይምረጡ።\n\nVaultara በዚያ ቀን የሚያበቁ ነገሮችን ያሳያል።",
 
   "daysFromTodayLabel": "ከዛሬ ጀምሮ ቀኖች",
   "daysFromTodayHint": "ለምሳሌ 0, 1, 7, 30",
@@ -18,21 +18,13 @@
   "in30Days": "በ30 ቀኖች ውስጥ",
 
   "inDays": "በ{days} ቀኖች ውስጥ",
-  "@inDays": {
-    "placeholders": {
-      "days": { "type": "int" }
-    }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
-  "enterDaysError": "የቀኖችን ብዛት ያስገቡ",
+  "enterDaysError": "የቀኖች ብዛት ያስገቡ",
   "invalidDaysError": "ትክክለኛ ብዛት ያስገቡ (0 ወይም ከዚያ በላይ)",
 
   "showingItemsRelative": "{time} የሚያበቁ ነገሮች",
-  "@showingItemsRelative": {
-    "placeholders": {
-      "time": { "type": "String" }
-    }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "በተመረጠው ቀን የሚያበቁ ነገሮች",
   "noItemsOnDate": "በዚህ ቀን የሚያበቅ ነገር የለም",
@@ -65,53 +57,840 @@
   "unlimitedCategories": "ያልተገደበ ምድቦች (Premium)",
 
   "categoryUsage": "{current} / {limit} ምድቦች",
-  "@categoryUsage": {
-    "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
-    }
-  },
+  "@categoryUsage": { "placeholders": { "current": { "type": "int" }, "limit": { "type": "int" } } },
 
   "categoryNameLabel": "የምድብ ስም",
   "categoryNameHint": "ምድብ ያስገቡ",
 
   "categoryLimitReached":
-    "የBasic እቅድ የምድብ ገደብ {limit} ደርሷል። Premium በመሻሻል ያልተገደበ ምድቦችን መፍጠር ይችላሉ።",
-  "@categoryLimitReached": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
-
+    "የBasic እቅድ ገደብ {limit} ምድቦች ላይ ደርሷል",
   "categoryLimitInfo":
-    "በBasic እቅድ እስከ {limit} ምድቦች መፍጠር ይችላሉ።",
-  "@categoryLimitInfo": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
+    "በBasic እቅድ እስከ {limit} ምድቦች መፍጠር ይችላሉ",
 
   "categoryErrorEmpty": "የምድብ ስም ያስፈልጋል",
   "categoryErrorTooShort": "የምድብ ስም አጭር ነው",
   "categoryErrorTooLong": "የምድብ ስም ረጅም ነው",
-  "categoryErrorSymbols": "ምልክቶች መጠቀም አይቻልም",
-  "categoryErrorNumbers": "ቁጥሮች መጠቀም አይቻልም",
+  "categoryErrorSymbols": "ስም ምልክቶች ብቻ መሆን አይችልም",
+  "categoryErrorNumbers": "ስም ቁጥሮችን መያዝ አይችልም",
 
   "upgradeRequired": "መሻሻል ያስፈልጋል",
   "viewPremiumBenefits": "የPremium ጥቅሞችን ይመልከቱ",
-
   "createCategory": "ፍጠር",
 
   "addGroupTitle": "ቡድን ያክሉ",
-
   "groupNameLabel": "ቡድን",
   "groupNameHint": "ቡድን ያስገቡ",
 
   "groupErrorEmpty": "የቡድን ስም ያስፈልጋል",
   "groupErrorTooShort": "የቡድን ስም አጭር ነው",
   "groupErrorTooLong": "የቡድን ስም ረጅም ነው",
-  "groupErrorSymbols": "ምልክቶች መጠቀም አይቻልም",
-  "groupErrorNumbers": "ቁጥሮች መጠቀም አይቻልም",
+  "groupErrorSymbols": "ስም ምልክቶች ብቻ መሆን አይችልም",
+  "groupErrorNumbers": "ስም ቁጥሮችን መያዝ አይችልም",
 
-  "createGroup": "ፍጠር"
+  "createGroup": "ፍጠር",
+
+  "firstNameLabel": "የመጀመሪያ ስም",
+  "firstNameHint": "የመጀመሪያ ስም ያስገቡ",
+  "errorFirstName": "የመጀመሪያ ስም ያስፈልጋል",
+
+  "lastNameLabel": "የአባት ስም",
+  "lastNameHint": "የአባት ስም ያስገቡ",
+  "errorLastName": "የአባት ስም ያስፈልጋል",
+
+  "emailLabel": "ኢሜይል",
+
+  "errorEmailInvalid": "ትክክለኛ ኢሜይል ያስገቡ",
+  "errorEmailInUse": "ይህ ኢሜይል ከVaultara\nመለያ ጋር አስቀድሞ ተጠቃሚ ነው",
+
+  "passwordLabel": "የይለፍ ቃል",
+  "passwordHelper": "ቢያንስ 8 ቁምፊዎች እና የተለያዩ አይነቶች",
+"emailRequired": "ኢሜይልዎ ያስፈልጋል",
+"passwordRequired": "የይለፍ ቃልዎ ያስፈልጋል",
+"registerPasswordHint": "የይለፍ ቃል አስገባ",
+"loginPasswordHint": "የይለፍ ቃልዎን አስገባ",
+"emailHint": "የኢሜይል አድራሻዎን አስገባ",
+  "passwordTooShort": "አጭር",
+  "passwordTooWeak": "ደካማ",
+  "passwordMedium": "መካከለኛ",
+  "passwordStrong": "ጠንካራ",
+  "errorPasswordLength": "የይለፍ ቃል ቢያንስ 8 ቁምፊዎች መሆን አለበት",
+  "errorPasswordWeak": "የተሻለ የይለፍ ቃል ይምረጡ",
+
+  "errorGeneric": "ምዝገባ አልተሳካም እንደገና ይሞክሩ",
+
+  "createAccount": "መለያ ፍጠር",
+
+  "appName": "Vaultara",
+  "authTagline": "ለፓስፖርቶች፣ ፈቃዶች፣ ካርዶች እና ሌሎች አስፈላጊ ነገሮች የግል መድረክዎ",
+  "tabSignIn": "ግባ",
+  "tabCreateAccount": "መለያ ፍጠር",
+  "signInFooterText": "ወደ Vaultara የግል ቦታዎ ለመግባት እና ሁሉንም ማደስ ለመቆጣጠር ይግቡ",
+  "createAccountFooterText": "አስፈላጊ ማስታወሻዎችዎን ለመጠበቅ እና በማንኛውም ጊዜ ለመድረስ Vaultara መለያ ፍጠሩ",
+  "emailNotFound": "የተሳሳተ ኢሜይል።\nይህን ኢሜይል የሚጠቀም የVaultara መለያ የለም",
+  "incorrectPassword": "የተሳሳተ ይለፍ ቃል",
+  "emailLabel": "ኢሜይል",
+  "passwordLabel": "ይለፍ ቃል",
+  "signIn": "ግባ",
+  "categoryPersonalIdentification": "የግል መታወቂያ",
+  "categoryDrivingAndVehicles": "መንዳት እና ተሽከርካሪዎች",
+  "categoryTravelAndImmigration": "ጉዞ እና ኢሚግሬሽን",
+  "categoryBankingAndCards": "ባንክና ካርዶች",
+  "categoryInsuranceAndCover": "ኢንሹራንስ እና መዳፍ",
+  "categoryHealthAndMedical": "ጤና እና ሕክምና",
+  "categoryWorkAndProfessional": "ስራ እና ሙያ",
+  "categoryPropertyAndHousing": "ንብረት እና መኖሪያ",
+  "categoryHouseholdAndUtilities": "ቤት እና አገልግሎቶች",
+
+  "subcategoryPassports": "ፓስፖርቶች",
+  "subcategoryIdCards": "መታወቂያ ካርዶች",
+  "subcategoryResidencePermits": "የመኖሪያ ፈቃዶች",
+
+  "subcategoryDrivingLicences": "የመንዳት ፈቃዶች",
+  "subcategoryVehicleRegistrations": "የተሽከርካሪ ምዝገባዎች",
+  "subcategoryRoadworthyCertificates": "የመንገድ ብቃት ማረጋገጫዎች",
+  "subcategoryVehicleInspectionCertificates": "የተሽከርካሪ ምርመራ ማረጋገጫዎች",
+
+  "subcategoryVisas": "ቪዛዎች",
+  "subcategoryStudyPermits": "የትምህርት ፈቃዶች",
+  "subcategoryWorkPermits": "የስራ ፈቃዶች",
+  "subcategoryTravelInsuranceDocuments": "የጉዞ ኢንሹራንስ ሰነዶች",
+
+  "subcategoryDebitAndCreditCards": "ዴቢት እና ክሬዲት ካርዶች",
+  "subcategoryStoreCards": "የሱቅ ካርዶች",
+  "subcategoryFuelCards": "የነዳጅ ካርዶች",
+
+  "subcategoryVehicleInsurances": "የተሽከርካሪ ኢንሹራንስ",
+  "subcategoryPropertyInsurances": "የንብረት ኢንሹራንስ",
+  "subcategoryLifeInsurances": "የሕይወት ኢንሹራንስ",
+  "subcategoryHealthInsurances": "የጤና ኢንሹራንስ",
+  "subcategoryTravelInsurances": "የጉዞ ኢንሹራንስ",
+
+  "subcategoryMedicalPrescriptions": "የሕክምና መመሪያዎች",
+  "subcategoryOpticalPrescriptions": "የዓይን መመሪያዎች",
+  "subcategoryMedicalCertificates": "የሕክምና ማረጋገጫዎች",
+
+  "subcategoryProfessionalLicences": "የሙያ ፈቃዶች",
+  "subcategoryProfessionalRegistrations": "የሙያ ምዝገባዎች",
+  "subcategoryIndustryRegistrations": "የኢንዱስትሪ ምዝገባዎች",
+  "subcategoryWorkAccessCards": "የስራ መግቢያ ካርዶች",
+
+  "subcategoryLeaseAgreements": "የኪራይ ስምምነቶች",
+  "subcategoryAccessCardsAndTags": "መግቢያ ካርዶች እና መለያዎች",
+  "subcategoryParkingPermits": "የመኪና ማቆሚያ ፈቃዶች",
+  "subcategorySecurityAccessPermits": "የደህንነት መግቢያ ፈቃዶች",
+
+  "subcategoryElectricityAccounts": "የኤሌክትሪክ መለያዎች",
+  "subcategoryWaterAccounts": "የውሃ መለያዎች",
+  "subcategoryInternetContracts": "የኢንተርኔት ውልዎች",
+  "subcategorySecurityServiceContracts": "የደህንነት አገልግሎት ውልዎች",
+   "searchCategories": "ምድቦችን ፈልግ",
+  "filterAll": "ሁሉም",
+  "filterPreset": "ቅድመ ዝግጅት",
+  "filterCustom": "ብጁ",
+  "addCategoryTitle": "ምድብ ጨምር",
+  "customLabel": "ብጁ",
+  "subcategoriesLabel": "ንዑስ ምድቦች",
+  "itemsLabel": "ንጥሎች",
+  "itemsExpiring": "{count} ንጥሎች በ{days} ቀናት ውስጥ ይያዙ",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "የተጣበቁ አስፈላጊዎች",
+  "pinnedHint": "ብዙ ጊዜ የምትከፍታቸውን ምድቦች ከላይ እንዲቆዩ አጣብቅ።",
+  "noCategoriesFound": "ምድቦች አልተገኙም",
+   "searchGroups": "ቡድኖችን ፈልግ",
+  "addGroupTitle": "ቡድን ጨምር",
+  "basicPlanGroupInfo": "በመሠረታዊ እቅድ ላይ ነዎት።\nበዚህ ምድብ ውስጥ ቀድሞ የተዘጋጀ ቡድኖችን ማየት ይችላሉ።\nየግል ቡድኖችን ለመፍጠር ወደ Premium ያሻሽሉ።",
+  "groupDeleted": "ቡድን ተሰርዟል",
+  "undo": "መመለስ",
+  "groupStats": "{items} ንጥሎች • {expiring} በ {days} ቀናት ውስጥ ይያዙ",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "በዚህ ቡድን ውስጥ ንጥሎችን ለመጨመር እና ለመከታተል ይንኩ።",
+    "itemsInGroup": "በዚህ ቡድን ውስጥ ያሉ ነገሮች",
+  "itemsInGroupHint": "እያንዳንዱን አስፈላጊ ነገር ከመጨረሻ ቀኑ ጋር ተከታትለህ በጊዜው እንዲያድስ አድርግ።",
+  "searchItems": "ነገሮችን ፈልግ",
+  "filterAll": "ሁሉም",
+  "filterExpiringWithin": "በ{days} ቀናት ውስጥ የሚያበቃ",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "ያበቃ",
+  "addItem": "ነገር ጨምር",
+  "noItemsYet": "እስካሁን ነገር የለም።",
+
+  "statusExpired": "ያበቃ",
+  "statusExpiresToday": "ዛሬ ያበቃል",
+  "statusExpiresInOneDay": "በ1 ቀን ያበቃል",
+  "statusExpiresInDays": "በ{days} ቀናት ያበቃል",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "ተገቢ",
+
+  "deleteCategoryTitle": "ምድብ ሰርዝ",
+  "deleteCategoryMessage": "ምድቡን \"{name}\" ማጥፋት ትፈልጋለህ?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "ቡድን ሰርዝ",
+  "deleteGroupMessage": "ቡድኑን \"{name}\" ማጥፋት ትፈልጋለህ?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "ነገር ሰርዝ",
+  "deleteItemMessage": "\"{name}\" ማጥፋት ትፈልጋለህ?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "ሰርዝ",
+  "delete": "አጥፋ",
+  "homeWelcomeTitle": "እንኳን ደህና መጡ",
+
+  "homeWelcomeFirstTitle": "እንኳን ደህና መጡ፣ {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "እንኳን በደህና ተመለሱ፣ {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara አስፈላጊ የማብቂያ ቀኖችን እንዳትረሱ ለመከታተል ይረዳዎታል።",
+
+  "homeWelcomeSubtitleFirst":
+    "እዚህ መሆንዎ ደስ ይላል። Vaultara አስፈላጊ ቀኖችንና መዝገቦችን በአንድ ደህና ቦታ በመያዝ እንዲደርሱ ይረዳዎታል።",
+
+  "homeWelcomeSubtitleBack":
+    "እንደገና ማየትዎ ደስ ይላል። Vaultara አስፈላጊ ቀኖችንና መዝገቦችን ለመመልከት ሲፈልጉ እዚህ ነው።",
+    "insightEmptyTitle": "ምንም ነገር አልተጨመረም",
+  "insightEmptyBody": "አስፈላጊ ቀኖችን መከታተል በጀመርህ ጊዜ Vaultara ይረዳሃል።",
+
+  "insightExpiresTodayTitle": "\"{name}\" ዛሬ ይያልቃል",
+  "insightExpiresTodayBody": "አሁን መመርመር ጠቃሚ ሊሆን ይችላል።",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" ነገ ይያልቃል",
+  "insightExpiresTomorrowBody": "ዛሬ መመርመር ተጠቃሚ ሊሆን ይችላል።",
+
+  "insightExpiresSoonTitle": "\"{name}\" በ {date} ይያልቃል",
+  "insightExpiresSoonBody": "ቀድሞ መቆጣጠር ጭንቀትን ያነሳል።",
+
+  "insightNextExpiryTitle": "ቀጣይ የሚያልቀው \"{name}\" በ {date}",
+  "insightNextExpiryBody": "አሁን ምንም እርምጃ አያስፈልግም።",
+
+  "insightClusteredTitle": "ብዙ ነገሮች በ {month} ዙሪያ ይያልቃሉ",
+  "insightClusteredBody": "እነሱን በአንድነት መመርመር ጊዜ ይቆጥባል።",
+
+  "insightTopCategoryTitle": "አብዛኛዎቹ ነገሮች በ {category}",
+  "insightTopCategoryBody": "ይህን ክፍል መመርመር ትልቅ ተጽእኖ ያሳያል።",
+
+  "insightStableTitle": "ሁኔታው የተረጋጋ ነው",
+  "insightStableBody": "አሁን የሚያስጨንቁ ቀኖች የሉም።",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "ሁሉም እቃዎች",
+"summaryAllCaption": "በVaultara ውስጥ ተከታትለዋል",
+"summarySoonTitle": "በቅርቡ የሚያበቃ",
+"summarySoonCaption": "በ30 ቀናት ውስጥ",
+"summaryWeekTitle": "በዚህ ሳምንት",
+"summaryWeekCaption": "በ7 ቀናት ውስጥ ያበቃ",
+"summaryExpiredTitle": "አልፏል",
+"summaryExpiredCaption": "የማብቂያ ቀን አልፏል",
+"stabilityStableTitle": "ሁሉም ነገር የተረጋጋ ይመስላል",
+"stabilityStableBody": "መዝገቦችህ ምንም የአሁን ወይም የሚጨምር አደጋ እንዳልተገኘ ያሳያሉ።",
+
+"stabilityDecliningTitle": "መረጋጋት እየቀነሰ ነው",
+"stabilityDecliningBody": "አንዳንድ ነገሮች አስቀድሞ አብቅተዋል እና ተጨማሪዎች ወደ የአብቃት ቀናቸው እየቀረቡ ናቸው።",
+
+"stabilityWeakenedTitle": "መረጋጋት ተዳክመዋል",
+"stabilityWeakenedBody": "የተበቁ መዝገቦች አሉ እና አጠቃላይ ታማኝነትን ያሳነሳሉ።",
+
+"stabilityPressureTitle": "ግፊት እየጨመረ ነው",
+"stabilityPressureBody": "መረጋጋትን ለመጠበቅ ብዙ መዝገቦች በቅርቡ ትኩረት ይፈልጋሉ።",
+
+"editorNotes": "ማስታወሻዎች",
+"notesHint": "ማስታወሻ አስገባ",
+"editorReminderTitle": "አስታዋሽ",
+"editorReminderNone": "አስታዋሽ የለም",
+"editorReminderOnExpiry": "በሚያበቃበት ቀን",
+"editorReminder7Days": "ከማብቂያ 7 ቀናት በፊት",
+"editorReminder30Days": "ከማብቂያ 30 ቀናት በፊት",
+"editorReminderCustom": "ብጁ",
+"daysBeforeExpiry": "ቀናት ከማብቂያ በፊት",
+"reminderStage0Title": "የማብቂያ ማስታወሻ",
+"reminderStage0Body": "{firstName}፣ {itemName} በ{days} ቀናት ውስጥ ይያዛል።",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "ተከታታይ ማስታወሻ",
+"reminderStage1Body": "{firstName}፣ {itemName} እስካሁን አልተዘምነም።",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "ማብቂያ ቀን ቀርቧል",
+"reminderStage2Body": "{itemName} የማብቂያ ቀን ቀርቧል።",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "የመጨረሻ ማስታወሻ",
+"reminderFinalBody": "{firstName}፣ {itemName}ን እባክዎ አሁን ያዘምኑ።",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "የሽፋን ሚዛን",
+"coverageAllRepresented": "መዝገቦችዎ በሁሉም ምድቦች ውስጥ ንጥሎችን ያካትታሉ።",
+"coverageMissingNamed": "{count} ምድቦች ውስጥ መዝገቦች አልተገኙም፡ {names}።",
+"coverageMissingSummary": "በ{count} ምድቦች ውስጥ ምንም መዝገቦች አልጨመርክም፣ {names} እና ሌሎች {remaining} ን ጨምሮ።",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "በይለፍ ቃል ይግቡ",
+"signInWithBiometrics": "በባዮሜትሪክ ይግቡ",
+"enableBiometricsTitle": "ባዮሜትሪክ ጥበቃን አንቃ",
+"enableBiometricsBody": "Vaultaraን ለመጠበቅ የጣት አሻራ ወይም ፊት መለያ ይጠቀሙ።",
+"enableBiometricsReason": "ለVaultara ባዮሜትሪክ መክፈቻን አንቃ።",
+"notNow": "አሁን አይደለም",
+"useBiometrics": "ባዮሜትሪክ ይጠቀሙ",
+ "recordsCalendarIntro":
+    "የሚያበቁ ቀኖችን እንዴት መመልከት እንደሚፈልጉ ይምረጡ።\n\n• ከዛሬ ጀምሮ ስንት ቀናት ወደፊት መመልከት እንደሚፈልጉ ያስገቡ።\n• ወይም ከካሌንዳር ቀን ይምረጡ።\n\nVaultara በዚያ ቀን የሚያበቁ መዝገቦችን ያሳያል።",
+
+  "showingRecordsRelative": "{time} ውስጥ የሚያበቁ መዝገቦችን እያሳየ",
+  "@showingRecordsRelative": { "placeholders": { "time": { "type": "String" } } },
+
+  "showingRecordsExact": "በተመረጠው ቀን የሚያበቁ መዝገቦችን እያሳየ",
+  "noRecordsOnDate": "በዚያ ቀን የሚያበቁ መዝገቦች የሉም።",
+
+  "recordEditorAddTitle": "መዝገብ ጨምር",
+  "recordEditorEditTitle": "መዝገብ አርትዕ",
+
+  "editorRecordName": "የመዝገብ ስም",
+  "editorRecordNameHint": "የመዝገብ ስም አስገባ",
+  "recordEditorErrorName": "የመዝገብ ስም ያስፈልጋል",
+  "@recordsExpiring": {
+    "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+  },
+
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupTapHint": "በዚህ ቡድን ውስጥ መዝገቦችን ለመጨመር እና ለመከታተል ይንኩ።",
+
+  "recordsInGroup": "በዚህ ቡድን ውስጥ ያሉ መዝገቦች",
+  "recordsInGroupHint":
+    "እያንዳንዱን አስፈላጊ መዝገብ ከመያዣ ቀኑ ጋር ተከታትሉ።",
+
+  "searchRecords": "መዝገቦችን ፈልግ",
+  "addRecord": "መዝገብ ጨምር",
+  "noRecordsYet": "እስካሁን መዝገቦች የሉም።",
+
+  "deleteRecordTitle": "መዝገብ ሰርዝ",
+
+  "recordsInsightClusteredTitle": "ብዙ መዝገቦች በ{month} ዙሪያ ይያበቃሉ",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "recordsInsightTopCategoryTitle":
+    "አብዛኛው መዝገቦችዎ በ{category} ውስጥ ተደርገዋል",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "summaryAllRecordsTitle": "ሁሉም መዝገቦች",
+
+  "recordsStabilityDecliningBody":
+    "አንዳንድ መዝገቦች ተያበቁ እና ተጨማሪዎች በቅርቡ ይያበቃሉ።",
+
+  "recordsCoverageAllRepresented":
+    "መዝገቦችዎ ሁሉንም ምድቦች ያካትታሉ።",
+
+  "recordReminderStage0Body":
+    "{firstName}፣ {recordName} በ{days} ቀናት ውስጥ ይያበቃል።",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body":
+    "{firstName}፣ {recordName} እስካሁን አልተዘመነም።",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body":
+    "{recordName} የሚያበቃበት ቀን ቀርቦታል።",
+  "@recordReminderStage2Body": {
+    "placeholders": { "recordName": { "type": "String" } }
+  },
+
+  "recordReminderFinalBody":
+    "{firstName}፣ እባክዎ {recordName} አሁን ያዘምኑ።",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+  "noGroupFound": "እስካሁን ቡድኖች የሉም",
+"recordsExpiring": "{count, plural, one {1 መዝገብ በ {days} ቀናት ውስጥ ይያዛል} other {{count} መዝገቦች በ {days} ቀናት ውስጥ ይያዛሉ}}",
+"recordsGroupStats": "{records, plural, one {1 መዝገብ} other {{records} መዝገቦች}} • {expiring} በ {days} ቀናት ውስጥ",
+"groupLabel": "{count, plural, one {{count} ቡድን} other {{count} ቡድኖች}}",
+"recordsLabel": "{count, plural, one {{count} መዝገብ} other {{count} መዝገቦች}}",
+"forgotPassword": "የይለፍ ቃል ረስተዋል?",
+  "forgotPasswordTitle": "የይለፍ ቃል መቀየር",
+  "forgotPasswordBody": "የኢሜይል አድራሻዎን ያስገቡ፤ የይለፍ ቃል ለመቀየር አገናኝ እንልካለን።",
+  "sendResetLink": "የመቀየር አገናኝ ላክ",
+  "passwordResetEmailSent": "የይለፍ ቃል መቀየሪያ ኢሜይል ተልኳል።",
+  "verifyEmailToContinue": "እባክዎ ከመግባትዎ በፊት የኢሜይል አድራሻዎን ያረጋግጡ",
+  "changeEmailTitle": "የኢሜይል አድራሻ ቀይር",
+"newEmailHint": "አዲሱን ኢሜይልዎን ያስገቡ",
+"sendVerificationEmail": "የማረጋገጫ ኢሜይል ላክ",
+"deleteAccountTitle": "መለያ ሰርዝ",
+"deleteAccountWarning": "ይህ እርምጃ መለያዎን እና ሁሉንም የተቀመጡ መረጃዎች በቋሚነት ይሰርዛል።\nመመለስ አይቻልም።",
+"deleteAccountConfirm": "መለያን በቋሚነት ሰርዝ",
+"supportTitle": "ድጋፍ",
+"supportSubtitle": "እገዛ ካስፈለገዎት ወይም ጥያቄ ካለዎት ያግኙን።",
+"supportEmailSubject": "የVaultara ድጋፍ ጥያቄ",
+"supportEmailError": "የኢሜይል መተግበሪያ መክፈት አልተቻለም።",
+"passwordResetEmailFailed": "የይለፍ ቃል መቀየሪያ ኢሜይል ማስላክ አልተቻለም።",
+"loggedInPasswordResetBody": "የይለፍ ቃል መቀየሪያ አገናኝ ወደ:\n{email} እንልካለን",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "የመለያ አስተዳደር",
+  "changeEmailTitle": "ኢሜይል አድራሻ ቀይር",
+  "changeEmailSubtitle": "ከመለያዎ ጋር የተያያዘውን ኢሜይል ያዘምኑ።",
+  "changePasswordTitle": "የይለፍ ቃል ቀይር",
+  "changePasswordSubtitle": "የይለፍ ቃልዎን በደህና ለመቀየር ኢሜይል እንልካለን።",
+  "deleteAccountTitle": "መለያ ሰርዝ",
+  "deleteAccountSubtitle": "የVaultara መለያዎን በቋሚነት ይሰርዙ።",
+  "biometricAuthReason": "ወደ Vaultara መለያዎ ለመግባት ማረጋገጫ ያድርጉ",
+  "verifyEmailTitle": "ኢሜይልዎን ያረጋግጡ",
+"verifyEmailBody": "የማረጋገጫ ኢሜይል ወደ መልእክት ሳጥንዎ ልከናል። እባክዎ ክፈቱትና ኢሜይልዎን ያረጋግጡ። ከዚያ ወደዚህ ተመልሰው ይቀጥሉ።",
+"verifyEmailConfirmedButton": "ኢሜይሌን አረጋግጫለሁ",
+"verifyEmailResendButton": "የማረጋገጫ ኢሜይል እንደገና ላክ",
+"verifyEmailSending": "በመላክ ላይ...",
+"navHome": "ቤት",
+"navCategories": "ምድብ",
+"navInsights": "ግንዛቤ",
+"navCalendar": "ቀመር",
+"tutorialHomeSearch": "የምትከታተሉትን መዝገብ በፍጥነት ለማግኘት የፍለጋ አሞሌውን ይጠቀሙ።",
+"tutorialHomeFab": "የመጀመሪያዎን መዝገብ እዚህ ያክሉ።\nየሚገባበትን ቦታ ይምረጡ፣ አማራጭ ማስታወሻዎችን ያክሉ እና የማብቂያ ቀን ይምረጡ።",
+"tutorialHomeSummary": "ተጨማሪ መዝገቦችን ሲጨምሩ፣ ይህ ክፍል በቅርቡ የሚያበቁ ወይም ያበቁ ነገሮችን ለመለየት ይረዳዎታል።",
+"tutorialHomeInsight": "ይህ ብልህ እይታ ንዴቶችን እና የሚመጡ ማብቂያዎችን ያሳያል።\nድምፅ መመሪያ ለመስማት የድምፅ አዶውን መንካት ይችላሉ።",
+"tutorialHomeCoverage": "የሽፋን ሚዛን መዝገቦችዎ በሁሉም ምድቦች ላይ እንዴት እንደተከፋፈሉ ያሳያል።\nከፍተኛ ሚዛን እጥረት እንዳለመኖሩን ያመለክታል።",
+"tutorialHomeStability": "ስታቢሊቲ መዝገቦችዎ በጊዜ ላይ ምን ያህል እንደሚታመኑ ያሳያል።\nያበቁ እና በቅርቡ የሚያበቁ ነገሮች ስታቢሊቲን ሊቀንሱ ይችላሉ።",
+"tutorialCancel": "ሰርዝ",
+"tutorialNext": "ቀጣይ",
+"tutorialEnd": "ትምህርቱን ጨርስ",
+"softDeleteCategory": "ምድብ",
+"softDeleteGroup": "ቡድን",
+"softDeleteRecord": "መዝገብ",
+
+"softDeleteTitle": "{type} ወደ በቅርቡ የተሰረዙ ዝርዝር አንቀሳቅስ",
+
+"softDeleteMessage": "{type} \"{name}\" ወደ በቅርቡ የተሰረዙ ዝርዝር ይንቀሳቀሳል።\n\nበ30 ቀናት ውስጥ መመለስ ትችላለህ። ከዚያ በኋላ በቋሚነት ይሰረዛል።",
+
+"softDeleteMove": "አንቀሳቅስ",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+
+  "recentlyDeletedTitle": "በቅርቡ የተሰረዙ",
+  "categories": "ምድቦች",
+  "groups": "ቡድኖች",
+  "records": "መዝገቦች",
+  "restore": "መመለስ",
+  "deletePermanently": "ሙሉ በሙሉ ሰርዝ",
+
+  "recentlyDeletedBanner": "የተሰረዙ {type} ለ30 ቀናት እዚህ ይቆያሉ። ከዚያ በኋላ በቋሚነት ይሰረዛሉ።",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "የተሰረዙ {type} ፈልግ",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "እስካሁን የተሰረዙ {type} የሉም",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "ቡድኖቹን ለማየት እና መዝገቦችዎን ለማስተዳደር ምድብ ይንኩ።",
+  "groupsHint": "ቡድኖች በዚህ ምድብ ውስጥ መዝገቦችዎን ያደራጃሉ። ቡድን ንኩ መዝገቦቹን ለማስተዳደር።",
+  "notLoggedIn": "አልገባም",
+"recordsInsideGroupHint": "እነዚህ በዚህ ቡድን ውስጥ ያሉ መዝገቦች ናቸው።",
+"snackMovedToRecentlyDeleted": "\"{name}\" ወደ በቅርቡ የተሰረዙ ተንቀሳቅሷል",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተሰርዟል",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተዘምኗል",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ታክሏል",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተመልሷል",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "የነጻ ገደብ ደርሷል ({current}/{limit}). ተጨማሪ ለመጨመር ያሻሽሉ።",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3" },
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "ሁሉንም መዝገቦች ፈልግ",
+"globalSearchHint": "የመዝገብ ስም፣ ምድብ ወይም ቡድን ይተይቡ",
+"globalSearchNoMatches": "ምንም መዝገብ ከፍለጋዎ ጋር አይዛመድም።",
+"snackNoRecordsToSearch": "ለመፈለግ ምንም መዝገብ የለም። ጥቂት መዝገቦች ያክሉ እና Vaultara በራስ-ሰር ይመዝግባቸዋል።",
+"recoveryCentreTitle": "የመመለሻ ማዕከል",
+"recoveryCentreSubtitle": "የተሰረዙ መዝገቦችን መመለስ ወይም በቋሚነት ማጥፋት።",
+
+ "plan_premium": "ፕሪሚየም",
+"plan_free": "ነፃ",
+
+"profile_app_settings_title": "መተግበሪያ ቅንብሮች",
+
+"profile_privacy_security_title": "ግላዊነት እና ደህንነት",
+"profile_biometric_on": "ባዮሜትሪክ መቆለፊያ በዚህ መሣሪያ ላይ ተነስቷል።",
+"profile_biometric_off": "ባዮሜትሪክ መቆለፊያ ጠፍቷል።",
+
+"profile_biometric_enable_reason": "ባዮሜትሪክ መቆለፊያን ለማብራት ማንነትዎን ያረጋግጡ።",
+"profile_biometric_disable_reason": "ባዮሜትሪክ መቆለፊያን ለማጥፋት ማንነትዎን ያረጋግጡ።",
+
+"profile_account_management_title": "የመለያ አስተዳደር",
+"profile_account_management_subtitle": "ኢሜይልን፣ የይለፍ ቃልን ይቀይሩ ወይም መለያዎን ይሰርዙ።",
+
+"profile_premium_active_title": "ፕሪሚየም ተነስቷል",
+"profile_premium_upgrade_title": "ወደ ፕሪሚየም ያሻሽሉ",
+"profile_premium_active_subtitle": "የላቀ ማስታወሻዎች ተከፍተዋል።",
+"profile_premium_upgrade_subtitle": "የላቀ ማስታወሻዎችን እና ያልተገደበ አደራጅትን ይክፈቱ።",
+
+"profile_manage_cancel_hint": "በGoogle Play ላይ በማንኛውም ጊዜ ያስተዳድሩ ወይም ይሰርዙ።",
+"profile_manage_subscription_button": "ተመዝጋቢነትን አስተዳድር",
+
+"plansTitle": "ዕቅድዎን ይምረጡ",
+"plansTrialBanner": "7 ቀን ነፃ ሙከራ።\nበማንኛውም ጊዜ ይሰርዙ።",
+"plansLoading": "በመጫን ላይ…",
+"plansStartFreeTrial": "ነፃ ጀምር",
+"plansNoChargeTodayFooter": "7 ቀን ነፃ · ዛሬ ክፍያ የለም",
+
+"planFreeTitle": "ነፃ",
+"planFreeSubtitle": "ለመጀመር",
+"planPremiumMonthlyTitle": "ፕሪሚየም ወርሃዊ",
+"planPremiumYearlyTitle": "ፕሪሚየም ዓመታዊ",
+"planPerMonth": "በወር",
+"planPerYear": "በዓመት",
+
+"planBadgeCurrent": "አሁን ያለው",
+"planBadgePopular": "ተወዳጅ",
+"planBadgeBestValue": "ምርጥ እሴት",
+
+"planYouAreOnThisPlan": "አሁን በዚህ ዕቅድ ላይ ነዎት።",
+
+"planFeatureUpToRecords": "እስከ {count} መዝገቦች",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "ብጁ ምድቦች (እስከ {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "የተዘጋጁ ንዑስ ምድቦች",
+"planFeatureCloudStorage": "የክላውድ ማከማቻ",
+"planFeatureSmartExpiryInsights": "የመያዣ ቀን ትንታኔ",
+"planFeatureCoverageBalance": "የምድብ ሚዛን",
+"planFeatureRecordStabilityTracking": "የመዝገብ መረጋጋት",
+
+"planFeatureUnlimitedRecords": "ያልተገደቡ መዝገቦች",
+"planFeatureUnlimitedCategories": "ያልተገደቡ ምድቦች",
+"planFeatureCustomSubcategories": "ብጁ ንዑስ ምድቦች",
+"planFeatureMultipleRemindersPerRecord": "ብዙ ማሳወሻዎች",
+"planFeatureAdvancedReminderTiming": "የተሻሻለ ጊዜ መቆጣጠር",
+"planFeatureAutomaticFollowUps": "ራስ-ሰር ተከታታይ ማሳወሻዎች",
+
+"planFeatureEverythingInMonthly": "በወርሃዊ ያለው ሁሉ",
+"planFeatureSavePercentComparedToMonthly": "ከወርሃዊ ጋር በነጻ {percent}% ቆጥብ",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "ለረጅም ጊዜ ምርጥ እሴት",
+"editorReminderLabel": "ማስታወሻ",
+"editorReminderSelectOptional": "ማስታወሻ ይምረጡ (አማራጭ)",
+"editorReminderOnExpiry": "በመያዣ ቀን",
+"editorReminderDaysBefore": "ከመያዣ ቀን {days} ቀናት በፊት",
+"editorFreeItemsCount": "ነፃ ንጥሎች: {used}/{limit}",
+"editorExpiryPastWarning": "የመያዣ ቀኑ አልፎታል።",
+"editorExpiryTodayWarning": "ይህ ነገር ዛሬ ይያዛል።",
+"editorErrorExpiryPast": "የመያዣ ቀን በቀድሞ መሆን አይችልም።",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "የዛሬ ግንዛቤዎች",
+"tutorialBannerTitle": "ፈጣን መመሪያ",
+"tutorialBannerBody": "መፈለግ፣ መመዝገብ እና ግንዛቤዎች ምን ማለት እንደሆኑ በአንድ ደቂቃ ውስጥ ይማሩ።",
+"tutorialBannerStart": "መጀመር",
+"tutorialBannerDismiss": "አሁን አይደለም",
+"authErrorUserDisabled": "ይህ መለያ ተሰናክሏል።",
+"authErrorNetwork": "የኔትወርክ ስህተት። እባክዎ ኢንተርኔትዎን ያረጋግጡ እና ደግመው ይሞክሩ።",
+"authErrorTooManyRequests": "ብዙ ሙከራዎች ተደርገዋል። እባክዎ ቆይተው ደግመው ይሞክሩ።",
+"authErrorSignInFailed": "መግባት አልተሳካም። እባክዎ ደግመው ይሞክሩ።",
+"ok": "እሺ",
+"snackPremiumEnabled": "ፕሪሚየም ተነቅቷል",
+"snackPremiumRestored": "ፕሪሚየም ተመልሷል",
+"passwordNeedLower": "ዝቅተኛ ፊደል መያዝ አለበት",
+"passwordNeedUpper": "ከፍተኛ ፊደል መያዝ አለበት",
+"passwordNeedNumber": "ቁጥር መያዝ አለበት",
+"passwordNeedSymbol": "ምልክት መያዝ አለበት",
+"confirmIdentityTitle": "ማንነት አረጋግጥ",
+"confirm": "አረጋግጥ",
+"profile_sign_out_title": "ውጣ",
+"profile_sign_out_subtitle": "በዚህ መሣሪያ ላይ ከVaultara ውጣ",
+"profile_sign_out_confirm_title": "መውጣት ትፈልጋለህ?",
+"profile_sign_out_confirm_body": "መለያህን ለመጠቀም እንደገና መግባት ይኖርብሃል።",
+"profile_sign_out_action": "ውጣ",
+"todayInsightsAudioHint": "ድምጽ ትመርጣለህ? የድምጽ ምልክቱን ይጫኑ።",
+"category2Label": "ምድብ",
+"enable2BiometricsBody": "የጣት አሻራ መለያየትን ተጠቅመው የVaultara መለያዎን ይጠብቁ።",
+"snackNotificationsDisabled": "ማሳወቂያዎች ተሰናክለዋል። ማስታወሻዎችን ለመቀበል ያብሩ።",
+"openSettings": "ቅንብሮችን ክፈት",
+
+"reminderOnExpiryTitle": "ዛሬ ያበቃል",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "ሰላም {firstName}፣ \"{itemName}\" ዛሬ ያበቃል።",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "ነፃ ምድቦች፡ {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Shows how many free categories the user has used out of the free limit.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "ማስታወሻዎች ጨምር (አማራጭ)",
+"apply": "ተግብር",
+"smartInsightExpiresTodayHeading": "ዛሬ ያበቃል",
+"smartInsightExpiresTodaySingleBody": "{name} ዛሬ ያበቃል። እንዲቆይ አሁን እርምጃ ይውሰዱ።",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} እና 1 ሌላ ሰነድ ዛሬ ያበቃሉ።} other{{names} እና {extra} ሌሎች ሰነዶች ዛሬ ያበቃሉ።}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "ትኩረትዎን ይፈልጋል",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} በ1 ቀን ውስጥ ያበቃል ምንም ማስታወሻ የለውም። ዝርዝሮቹ አሁንም ትክክል መሆናቸውን ያረጋግጡ።} other{{name} በ{days} ቀናት ውስጥ ያበቃል ምንም ማስታወሻ የለውም። ዝርዝሮቹ አሁንም ትክክል መሆናቸውን ያረጋግጡ።}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "ብዙ እድሳቶች በቅርብ አንድ ላይ",
+"smartInsightRenewalTwinBodyTwo": "{a} እና {b} ከሶስት ሳምንታት ውስጥ እርስ በርስ ያበቃሉ። አስቀድመው ያቅዱ።",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, እና {c} ሁሉም በሶስት ሳምንታት ውስጥ ያበቃሉ። አስቀድመው ያቅዱ።",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, እና 1 ሌላ ሰነድ በሶስት ሳምንታት ውስጥ ያበቃሉ። አስቀድመው ያቅዱ።} other{{a}, {b}, እና {extra} ሌሎች ሰነዶች በሶስት ሳምንታት ውስጥ ያበቃሉ። አስቀድመው ያቅዱ።}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "ቀጣይ ስብስብ",
+"smartInsightClusterBody": "{count, plural, =1{በ{category} ውስጥ 1 ሰነድ በሚቀጥሉት ሁለት ወራት ውስጥ ያበቃል። አንድ ላይ ለማስተናገድ ያስቡበት።} other{በ{category} ውስጥ {count} ሰነዶች በሚቀጥሉት ሁለት ወራት ውስጥ ያበቃሉ። አንድ ላይ ለማስተናገድ ያስቡበት።}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ጸጥ ያለ ጊዜ ይመጣል",
+"smartInsightQuietPeriodBody": "{days, plural, =1{ለሚቀጥለው ቀን ምንም አያበቃም። ቀጣይ እድሳትዎ {firstDate} ላይ ነው።} other{ለሚቀጥሉት {days} ቀናት ምንም አያበቃም። ቀጣይ እድሳትዎ {firstDate} ላይ ነው።}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "ሁሉም ወቅታዊ ነው",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 ቀጣይ ማብቂያ በማስታወሻዎች ተሸፍኗል። ሌላ ምንም ትኩረት አያስፈልገውም።} other{{count} ቀጣይ ማብቂያዎች በማስታወሻዎች ተሸፍነዋል። ሌላ ምንም ትኩረት አያስፈልገውም።}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "ሁሉም ወቅታዊ ነው። አሁን ምንም ትኩረትዎን አያስፈልገውም።",
+"smartInsightNoRecordsHeading": "የመጀመሪያ መዝገብዎን ያክሉ",
+"smartInsightNoRecordsBody": "ሰነዶችዎን መከታተል ይጀምሩ Vaultara እዚህ ብልህ ግንዛቤዎችን ያሳያል።",
+"expiryTimelineTitle": "የማብቂያ ጊዜ መስመር",
+"expiryTimelineSubtitle": "በዚያ ወር ውስጥ የሚያበቁ መዝገቦችን ለማየት ወር ይንኩ",
+"expiryTimelineDetailCount": "{count} መዝገቦች",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "በቅርቡ",
+"summaryUpcomingCaption": "በ30 ቀናት ውስጥ",
+"summaryUrgentTitle": "አስቸኳይ",
+"summaryUrgentCaption": "በ7 ቀናት ውስጥ"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

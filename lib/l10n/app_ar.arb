@@ -18,17 +18,13 @@
   "in30Days": "بعد 30 يومًا",
 
   "inDays": "بعد {days} يوم",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "إدخال عدد الأيام مطلوب",
   "invalidDaysError": "إدخال عدد أيام صالح (0 أو أكثر) مطلوب",
 
   "showingItemsRelative": "العناصر التي تنتهي {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "العناصر التي تنتهي في التاريخ المحدد",
   "noItemsOnDate": "لا توجد عناصر تنتهي في هذا اليوم",
@@ -48,11 +44,11 @@
   "editorExpiryDate": "تاريخ الانتهاء",
   "editorExpiryDateHint": "اختر تاريخ الانتهاء",
 
-  "editorErrorCategory": "اختيار الفئة مطلوب",
-  "editorErrorGroup": "اختيار المجموعة مطلوب",
+  "editorErrorCategory": "الفئة مطلوبة",
+  "editorErrorGroup": "المجموعة مطلوبة",
   "editorErrorName": "اسم العنصر مطلوب",
-  "editorErrorExpiry": "اختيار تاريخ الانتهاء مطلوب",
-  "editorErrorExpiryPast": "يجب أن يكون التاريخ اليوم أو بعده",
+  "editorErrorExpiry": "تاريخ الانتهاء مطلوب",
+  "editorErrorExpiryPast": "يجب أن يكون التاريخ اليوم أو في المستقبل",
 
   "cancel": "إلغاء",
   "save": "حفظ",
@@ -61,53 +57,838 @@
   "unlimitedCategories": "فئات غير محدودة (Premium)",
 
   "categoryUsage": "{current} / {limit} فئات مستخدمة",
-  "@categoryUsage": {
-    "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
-    }
-  },
+  "@categoryUsage": { "placeholders": { "current": { "type": "int" }, "limit": { "type": "int" } } },
 
   "categoryNameLabel": "اسم الفئة",
   "categoryNameHint": "أدخل اسم الفئة",
 
   "categoryLimitReached":
-    "لقد وصلت إلى حد خطة Basic وهو {limit} فئات. قم بالترقية إلى Premium لإنشاء فئات غير محدودة.",
-  "@categoryLimitReached": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
-
+    "لقد وصلت إلى حد خطة Basic وهو {limit} فئات",
   "categoryLimitInfo":
-    "في خطة Basic يمكنك إنشاء ما يصل إلى {limit} فئات مخصصة.",
-  "@categoryLimitInfo": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
+    "في خطة Basic يمكنك إنشاء ما يصل إلى {limit} فئات مخصصة",
 
   "categoryErrorEmpty": "اسم الفئة مطلوب",
   "categoryErrorTooShort": "اسم الفئة قصير جدًا",
   "categoryErrorTooLong": "اسم الفئة طويل جدًا",
-  "categoryErrorSymbols": "لا يمكن أن يحتوي الاسم على رموز",
+  "categoryErrorSymbols": "لا يمكن أن يكون الاسم رموزًا فقط",
   "categoryErrorNumbers": "لا يمكن أن يحتوي الاسم على أرقام",
 
   "upgradeRequired": "الترقية مطلوبة",
   "viewPremiumBenefits": "عرض مزايا Premium",
-
   "createCategory": "إنشاء",
 
   "addGroupTitle": "إضافة مجموعة",
-
   "groupNameLabel": "المجموعة",
   "groupNameHint": "أدخل اسم المجموعة",
 
   "groupErrorEmpty": "اسم المجموعة مطلوب",
   "groupErrorTooShort": "اسم المجموعة قصير جدًا",
   "groupErrorTooLong": "اسم المجموعة طويل جدًا",
-  "groupErrorSymbols": "لا يمكن أن يحتوي الاسم على رموز",
+  "groupErrorSymbols": "لا يمكن أن يكون الاسم رموزًا فقط",
   "groupErrorNumbers": "لا يمكن أن يحتوي الاسم على أرقام",
 
-  "createGroup": "إنشاء"
+  "createGroup": "إنشاء",
+
+  "firstNameLabel": "الاسم الأول",
+  "firstNameHint": "أدخل الاسم الأول",
+  "errorFirstName": "الاسم الأول مطلوب",
+
+  "lastNameLabel": "اسم العائلة",
+  "lastNameHint": "أدخل اسم العائلة",
+  "errorLastName": "اسم العائلة مطلوب",
+
+  "emailLabel": "البريد الإلكتروني",
+  "errorEmailInvalid": "أدخل بريدًا إلكترونيًا صالحًا",
+  "errorEmailInUse": "هذا البريد الإلكتروني مرتبط بالفعل بحساب Vaultara",
+
+  "passwordLabel": "كلمة المرور",
+  "passwordHelper": "ثمانية أحرف على الأقل مع تنوع في الأنواع",
+
+  "passwordTooShort": "قصيرة جدًا",
+  "passwordTooWeak": "ضعيفة",
+  "passwordMedium": "متوسطة",
+  "passwordStrong": "قوية",
+"emailRequired": "البريد الإلكتروني مطلوب",
+"passwordRequired": "كلمة المرور مطلوبة",
+"registerPasswordHint": "أدخل كلمة المرور",
+"loginPasswordHint": "أدخل كلمة المرور الخاصة بك",
+"emailHint": "أدخل عنوان بريدك الإلكتروني",
+  "errorPasswordLength": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+  "errorPasswordWeak": "يرجى اختيار كلمة مرور أقوى",
+
+  "errorGeneric": "فشل التسجيل يرجى المحاولة مرة أخرى",
+
+  "createAccount": "إنشاء حساب",
+
+  "appName": "Vaultara",
+  "authTagline": "مركزك الشخصي لجوازات السفر والتراخيص والبطاقات وغيرها من الأساسيات المهمة",
+  "tabSignIn": "تسجيل الدخول",
+  "tabCreateAccount": "إنشاء حساب",
+  "signInFooterText": "سجّل الدخول للوصول إلى مساحتك الشخصية في Vaultara والتحكم في كل تجديد",
+  "createAccountFooterText": "أنشئ حساب Vaultara لنسخ تذكيراتك الأساسية والوصول إليها في أي وقت",
+  "emailNotFound": "بريد إلكتروني خاطئ.\nلا يوجد حساب Vaultara بهذا البريد",
+  "incorrectPassword": "كلمة المرور غير صحيحة",
+  "emailLabel": "البريد الإلكتروني",
+  "passwordLabel": "كلمة المرور",
+  "signIn": "تسجيل الدخول",
+  "categoryPersonalIdentification": "الهوية الشخصية",
+  "categoryDrivingAndVehicles": "القيادة والمركبات",
+  "categoryTravelAndImmigration": "السفر والهجرة",
+  "categoryBankingAndCards": "الخدمات المصرفية والبطاقات",
+  "categoryInsuranceAndCover": "التأمين والتغطية",
+  "categoryHealthAndMedical": "الصحة والخدمات الطبية",
+  "categoryWorkAndProfessional": "العمل والمهني",
+  "categoryPropertyAndHousing": "العقارات والسكن",
+  "categoryHouseholdAndUtilities": "المنزل والمرافق",
+
+  "subcategoryPassports": "جوازات السفر",
+  "subcategoryIdCards": "بطاقات الهوية",
+  "subcategoryResidencePermits": "تصاريح الإقامة",
+
+  "subcategoryDrivingLicences": "رخص القيادة",
+  "subcategoryVehicleRegistrations": "تسجيلات المركبات",
+  "subcategoryRoadworthyCertificates": "شهادات صلاحية الطريق",
+  "subcategoryVehicleInspectionCertificates": "شهادات فحص المركبات",
+
+  "subcategoryVisas": "التأشيرات",
+  "subcategoryStudyPermits": "تصاريح الدراسة",
+  "subcategoryWorkPermits": "تصاريح العمل",
+  "subcategoryTravelInsuranceDocuments": "وثائق تأمين السفر",
+
+  "subcategoryDebitAndCreditCards": "بطاقات الخصم والائتمان",
+  "subcategoryStoreCards": "بطاقات المتاجر",
+  "subcategoryFuelCards": "بطاقات الوقود",
+
+  "subcategoryVehicleInsurances": "تأمين المركبات",
+  "subcategoryPropertyInsurances": "تأمين الممتلكات",
+  "subcategoryLifeInsurances": "تأمين الحياة",
+  "subcategoryHealthInsurances": "التأمين الصحي",
+  "subcategoryTravelInsurances": "تأمين السفر",
+
+  "subcategoryMedicalPrescriptions": "الوصفات الطبية",
+  "subcategoryOpticalPrescriptions": "وصفات النظارات",
+  "subcategoryMedicalCertificates": "الشهادات الطبية",
+
+  "subcategoryProfessionalLicences": "التراخيص المهنية",
+  "subcategoryProfessionalRegistrations": "التسجيلات المهنية",
+  "subcategoryIndustryRegistrations": "تسجيلات الصناعة",
+  "subcategoryWorkAccessCards": "بطاقات دخول العمل",
+
+  "subcategoryLeaseAgreements": "عقود الإيجار",
+  "subcategoryAccessCardsAndTags": "بطاقات وعلامات الدخول",
+  "subcategoryParkingPermits": "تصاريح الوقوف",
+  "subcategorySecurityAccessPermits": "تصاريح الدخول الأمنية",
+
+  "subcategoryElectricityAccounts": "حسابات الكهرباء",
+  "subcategoryWaterAccounts": "حسابات المياه",
+  "subcategoryInternetContracts": "عقود الإنترنت",
+  "subcategorySecurityServiceContracts": "عقود خدمات الأمن",
+  "searchCategories": "ابحث في الفئات",
+  "filterAll": "الكل",
+  "filterPreset": "محددة مسبقًا",
+  "filterCustom": "مخصصة",
+  "addCategoryTitle": "إضافة فئة",
+  "customLabel": "مخصصة",
+  "subcategoriesLabel": "فئات فرعية",
+  "itemsLabel": "عناصر",
+  "itemsExpiring": "{count} عناصر تنتهي خلال {days} أيام",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "العناصر المثبتة",
+  "pinnedHint": "ثبّت الفئات التي تستخدمها كثيرًا لتبقى في الأعلى.",
+  "noCategoriesFound": "لم يتم العثور على فئات",
+  "searchGroups": "ابحث عن المجموعات",
+  "addGroupTitle": "إضافة مجموعة",
+  "basicPlanGroupInfo": "أنت على الخطة الأساسية.\nيمكنك عرض المجموعات المعدّة مسبقاً ضمن هذه الفئة.\nقم بالترقية إلى Premium لإنشاء مجموعاتك الخاصة.",
+  "groupDeleted": "تم حذف المجموعة",
+  "undo": "تراجع",
+  "groupStats": "{items} عناصر • {expiring} تنتهي خلال {days} أيام",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "اضغط لإضافة العناصر وتتبعها ضمن هذه المجموعة.",
+  "itemsInGroup": "العناصر في هذه المجموعة",
+  "itemsInGroupHint": "تتبع كل عنصر مهم مع تاريخ انتهائه لتجديده في الوقت المناسب.",
+  "searchItems": "البحث عن عناصر",
+  "filterAll": "الكل",
+  "filterExpiringWithin": "ينتهي خلال {days} أيام",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "منتهي",
+  "addItem": "إضافة عنصر",
+  "noItemsYet": "لا توجد عناصر بعد.",
+
+  "statusExpired": "منتهي",
+  "statusExpiresToday": "ينتهي اليوم",
+  "statusExpiresInOneDay": "ينتهي خلال يوم واحد",
+  "statusExpiresInDays": "ينتهي خلال {days} أيام",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "ساري",
+
+  "deleteCategoryTitle": "حذف الفئة",
+  "deleteCategoryMessage": "هل أنت متأكد أنك تريد حذف الفئة \"{name}\"؟",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "حذف المجموعة",
+  "deleteGroupMessage": "هل أنت متأكد أنك تريد حذف المجموعة \"{name}\"؟",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "حذف العنصر",
+  "deleteItemMessage": "هل أنت متأكد أنك تريد حذف \"{name}\"؟",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "إلغاء",
+  "delete": "حذف",
+   "homeWelcomeTitle": "مرحبًا",
+
+  "homeWelcomeFirstTitle": "مرحبًا، {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "مرحبًا بعودتك، {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "تساعدك Vaultara على تتبع تواريخ الانتهاء المهمة حتى لا يفوتك أي شيء.",
+
+  "homeWelcomeSubtitleFirst":
+    "يسعدنا وجودك هنا. تساعدك Vaultara على البقاء منظمًا من خلال الاحتفاظ بالتواريخ والسجلات المهمة في مكان آمن واحد.",
+
+  "homeWelcomeSubtitleBack":
+    "يسعدنا رؤيتك مرة أخرى. Vaultara هنا عندما ترغب في مراجعة تواريخك وسجلاتك المهمة.",
+    "insightEmptyTitle": "لم تتم إضافة أي عناصر",
+  "insightEmptyBody": "عند البدء بتتبع التواريخ المهمة، سيساعدك Vaultara على البقاء متقدماً.",
+
+  "insightExpiresTodayTitle": "\"{name}\" ينتهي اليوم",
+  "insightExpiresTodayBody": "مراجعة سريعة الآن قد تساعد في الحفاظ على الدقة.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" ينتهي غداً",
+  "insightExpiresTomorrowBody": "قد يكون من المفيد مراجعته اليوم.",
+
+  "insightExpiresSoonTitle": "\"{name}\" ينتهي في {date}",
+  "insightExpiresSoonBody": "التعامل معه مبكراً قد يقلل الضغط لاحقاً.",
+
+  "insightNextExpiryTitle": "أقرب انتهاء هو \"{name}\" في {date}",
+  "insightNextExpiryBody": "لا يوجد إجراء فوري مطلوب حالياً.",
+
+  "insightClusteredTitle": "عدة عناصر تنتهي في {month}",
+  "insightClusteredBody": "مراجعتها معاً قد يوفر الوقت.",
+
+  "insightTopCategoryTitle": "معظم العناصر ضمن {category}",
+  "insightTopCategoryBody": "البدء بهذه الفئة يعطي أفضل نتيجة.",
+
+  "insightStableTitle": "كل شيء مستقر",
+  "insightStableBody": "لا توجد تواريخ انتهاء تتطلب الانتباه حالياً.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "جميع العناصر",
+"summaryAllCaption": "تم تتبعها في Vaultara",
+"summarySoonTitle": "تنتهي قريبًا",
+"summarySoonCaption": "خلال 30 يومًا",
+"summaryWeekTitle": "هذا الأسبوع",
+"summaryWeekCaption": "تنتهي خلال 7 أيام",
+"summaryExpiredTitle": "منتهية",
+"summaryExpiredCaption": "تجاوزت تاريخ الانتهاء",
+"stabilityStableTitle": "الوضع مستقر",
+"stabilityStableBody": "لا تظهر سجلاتك أي مخاطر فورية أو متراكمة.",
+
+"stabilityDecliningTitle": "الاستقرار يتراجع",
+"stabilityDecliningBody": "انتهت صلاحية بعض العناصر، وهناك عناصر أخرى تقترب من الانتهاء.",
+
+"stabilityWeakenedTitle": "الاستقرار ضعيف",
+"stabilityWeakenedBody": "وجود سجلات منتهية الصلاحية يقلل من الموثوقية العامة.",
+
+"stabilityPressureTitle": "تزايد الضغط",
+"stabilityPressureBody": "ستحتاج عدة سجلات إلى اهتمام قريب للحفاظ على الاستقرار.",
+"editorNotes": "ملاحظات",
+"notesHint": "أدخل ملاحظات",
+"editorReminderTitle": "التذكير",
+"editorReminderNone": "بدون تذكير",
+"editorReminderOnExpiry": "في تاريخ الانتهاء",
+"editorReminder7Days": "قبل 7 أيام من الانتهاء",
+"editorReminder30Days": "قبل 30 يومًا من الانتهاء",
+"editorReminderCustom": "مخصص",
+"daysBeforeExpiry": "أيام قبل الانتهاء",
+"reminderStage0Title": "تذكير بانتهاء الصلاحية",
+"reminderStage0Body": "{firstName}، تنتهي صلاحية {itemName} خلال {days} يومًا.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "متابعة التذكير",
+"reminderStage1Body": "{firstName}، لم يتم تحديث {itemName} بعد.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "الانتهاء قريب",
+"reminderStage2Body": "تاريخ انتهاء {itemName} يقترب.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "التذكير الأخير",
+"reminderFinalBody": "{firstName}، يرجى تحديث {itemName} الآن.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "توازن التغطية",
+"coverageAllRepresented": "تتضمن سجلاتك عناصر في جميع الفئات.",
+"coverageMissingNamed": "لم يتم العثور على سجلات في {count} فئات: {names}.",
+"coverageMissingSummary": "لم تقم بإضافة أي سجلات ضمن {count} فئات، بما في ذلك {names} و{remaining} فئات أخرى.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "استخدم كلمة المرور بدلاً من ذلك",
+"signInWithBiometrics": "تسجيل الدخول باستخدام القياسات الحيوية",
+"enableBiometricsTitle": "تمكين الأمان البيومتري",
+"enableBiometricsBody": "استخدم بصمة الإصبع أو التعرف على الوجه لحماية Vaultara.",
+"enableBiometricsReason": "تمكين فتح Vaultara باستخدام القياسات الحيوية.",
+"notNow": "ليس الآن",
+"useBiometrics": "استخدام القياسات الحيوية",
+"recordsCalendarIntro":
+    "اختر كيفية استعراض تواريخ الانتهاء:\n\n• أدخل عدد الأيام من اليوم التي ترغب في التطلع إليها.\n• أو اختر تاريخًا محددًا من التقويم.\n\nسيعرض Vaultara السجلات التي تصل إلى تاريخ انتهائها في ذلك اليوم.",
+
+  "showingRecordsRelative": "عرض السجلات التي تنتهي خلال {time}",
+  "@showingRecordsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingRecordsExact": "عرض السجلات التي تنتهي في التاريخ المحدد",
+  "noRecordsOnDate": "لا توجد سجلات من المقرر أن تنتهي في ذلك اليوم.",
+
+  "recordEditorAddTitle": "إضافة سجل",
+  "recordEditorEditTitle": "تعديل سجل",
+
+  "editorRecordName": "اسم السجل",
+  "editorRecordNameHint": "أدخل اسم السجل",
+  "recordEditorErrorName": "اسم السجل مطلوب",
+
+
+
+  "@recordsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupTapHint": "اضغط لإضافة السجلات وتتبعها في هذه المجموعة.",
+
+  "recordsInGroup": "السجلات في هذه المجموعة",
+  "recordsInGroupHint":
+    "تتبع كل سجل مهم مع تاريخ انتهائه لتتمكن من تجديده في الوقت المناسب.",
+
+  "searchRecords": "بحث عن السجلات",
+  "addRecord": "إضافة سجل",
+  "noRecordsYet": "لا توجد سجلات بعد.",
+
+  "deleteRecordTitle": "حذف سجل",
+
+  "recordsInsightClusteredTitle":
+    "عدة سجلات تنتهي تقريبًا في {month}",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "recordsInsightTopCategoryTitle":
+    "معظم سجلاتك مُصنفة ضمن {category}",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "summaryAllRecordsTitle": "جميع السجلات",
+
+  "recordsStabilityDecliningBody":
+    "انتهت صلاحية بعض السجلات، وهناك المزيد يقترب من تاريخ الانتهاء.",
+
+  "recordsCoverageAllRepresented":
+    "تتضمن سجلاتك سجلات عبر جميع الفئات.",
+
+  "recordReminderStage0Body":
+    "{firstName}، سينتهي {recordName} خلال {days} أيام.",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body":
+    "{firstName}، لم يتم تحديث {recordName} بعد.",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body":
+    "تاريخ انتهاء {recordName} يقترب.",
+  "@recordReminderStage2Body": {
+    "placeholders": { "recordName": { "type": "String" } }
+  },
+
+  "recordReminderFinalBody":
+    "{firstName}، يرجى تحديث {recordName} الآن.",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+  "noGroupFound": "لا توجد مجموعات بعد",
+"recordsExpiring": "{count, plural, one {سجل واحد ينتهي خلال {days} أيام} other {{count} سجلات تنتهي خلال {days} أيام}}",
+"recordsGroupStats": "{records, plural, one {سجل واحد} other {{records} سجلات}} • {expiring} خلال {days} أيام",
+"groupLabel": "{count, plural, one {{count} مجموعة} other {{count} مجموعات}}",
+"recordsLabel": "{count, plural, one {{count} سجل} other {{count} سجلات}}",
+"forgotPassword": "هل نسيت كلمة المرور؟",
+  "forgotPasswordTitle": "إعادة تعيين كلمة المرور",
+  "forgotPasswordBody": "أدخل بريدك الإلكتروني وسنرسل لك رابطاً لإعادة تعيين كلمة المرور.",
+  "sendResetLink": "إرسال رابط إعادة التعيين",
+  "passwordResetEmailSent": "تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.",
+  "verifyEmailToContinue": "يرجى التحقق من عنوان بريدك الإلكتروني قبل تسجيل الدخول",
+  "changeEmailTitle": "تغيير عنوان البريد الإلكتروني",
+"newEmailHint": "أدخل بريدك الإلكتروني الجديد",
+"sendVerificationEmail": "إرسال رسالة تحقق",
+"deleteAccountTitle": "حذف الحساب",
+"deleteAccountWarning": "سيؤدي هذا الإجراء إلى حذف حسابك وجميع البيانات المخزنة بشكل دائم.\nلا يمكن التراجع عن هذا الإجراء.",
+"deleteAccountConfirm": "حذف الحساب نهائيًا",
+"supportTitle": "الدعم",
+"supportSubtitle": "تواصل معنا إذا كنت بحاجة إلى مساعدة أو لديك أسئلة.",
+"supportEmailSubject": "طلب دعم Vaultara",
+"supportEmailError": "تعذر فتح تطبيق البريد الإلكتروني.",
+"passwordResetEmailFailed": "تعذر إرسال بريد إعادة تعيين كلمة المرور.",
+"loggedInPasswordResetBody": "سنرسل رابط إعادة تعيين كلمة المرور إلى:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "إدارة الحساب",
+  "changeEmailTitle": "تغيير عنوان البريد الإلكتروني",
+  "changeEmailSubtitle": "حدّث البريد الإلكتروني المرتبط بحسابك.",
+  "changePasswordTitle": "تغيير كلمة المرور",
+  "changePasswordSubtitle": "سنرسل لك رابطًا عبر البريد الإلكتروني لتغيير كلمة المرور بأمان.",
+  "deleteAccountTitle": "حذف الحساب",
+  "deleteAccountSubtitle": "إزالة حساب Vaultara نهائيًا.",
+  "biometricAuthReason": "صادِق للدخول إلى حساب Vaultara الخاص بك",
+  "verifyEmailTitle": "تحقق من بريدك الإلكتروني",
+"verifyEmailBody": "لقد أرسلنا رسالة تحقق إلى بريدك الوارد. يرجى فتحها وتأكيد عنوان بريدك الإلكتروني، ثم العودة إلى هنا للمتابعة.",
+"verifyEmailConfirmedButton": "لقد قمت بالتحقق من بريدي الإلكتروني",
+"verifyEmailResendButton": "إعادة إرسال رسالة التحقق",
+"verifyEmailSending": "جارٍ الإرسال...",
+"navHome": "الرئيسية",
+"navCategories": "الفئات",
+"navInsights": "تحليلات",
+"navCalendar": "التقويم",
+"tutorialHomeSearch": "استخدم شريط البحث للعثور بسرعة على أي سجل تقوم بتتبعه.",
+"tutorialHomeFab": "أضف أول سجل لك هنا.\nاختر مكانه، وأضف ملاحظات اختيارية، وحدد تاريخ الانتهاء.",
+"tutorialHomeSummary": "مع إضافة المزيد من السجلات، يساعدك هذا القسم على ملاحظة العناصر التي تقترب من تاريخ انتهائها أو التي انتهت بالفعل.",
+"tutorialHomeInsight": "تسلط هذه الرؤية الذكية الضوء على الأنماط وتواريخ الانتهاء القادمة.\nيمكنك النقر على أيقونة السماعة لسماعها بصوت عالٍ.",
+"tutorialHomeCoverage": "يعكس توازن التغطية مدى توزيع سجلاتك عبر جميع الفئات.\nيشير التوازن الأعلى إلى وجود فجوات أقل.",
+"tutorialHomeStability": "تعكس الاستقرار مدى موثوقية سجلاتك بمرور الوقت.\nيمكن للعناصر المنتهية والقريبة من الانتهاء تقليل الاستقرار.",
+"tutorialCancel": "إلغاء",
+"tutorialNext": "التالي",
+"tutorialEnd": "إنهاء الدليل",
+"softDeleteCategory": "ምድብ",
+"softDeleteGroup": "ቡድን",
+"softDeleteRecord": "መዝገብ",
+"softDeleteTitle": "{type} ወደ በቅርቡ የተሰረዘ ይንቀሳቀስ",
+"softDeleteMessage": "{type} \"{name}\" ወደ በቅርቡ የተሰረዘ ይንቀሳቀሳል።\n\nበ30 ቀናት ውስጥ መመለስ ይችላሉ። ከዚያ በኋላ በቋሚነት ይሰረዛል።",
+"softDeleteMove": "አንቀሳቅስ",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "المحذوفة مؤخراً",
+  "categories": "الفئات",
+  "groups": "المجموعات",
+  "records": "السجلات",
+  "restore": "استعادة",
+  "deletePermanently": "حذف نهائي",
+
+  "recentlyDeletedBanner": "يتم الاحتفاظ بـ {type} المحذوفة هنا لمدة 30 يوماً ثم يتم حذفها نهائياً.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "ابحث في {type} المحذوفة",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "لا توجد {type} محذوفة بعد",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "اضغط على فئة لعرض مجموعاتها وإدارة سجلاتك.",
+"groupsHint": "تنظم المجموعات سجلاتك داخل هذه الفئة. اضغط على مجموعة لعرض السجلات وإدارتها.",
+"notLoggedIn": "لم يتم تسجيل الدخول",
+"recordsInsideGroupHint": "هذه هي السجلات داخل هذه المجموعة.",
+"snackMovedToRecentlyDeleted": "\"{name}\" ወደ በቅርቡ የተሰረዙ ተንቀሳቅሷል",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተሰርዟል",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተዘምኗል",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" በተሳካ ሁኔታ ታክሏል",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" በተሳካ ሁኔታ ተመልሷል",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "የነጻ ገደብ ደርሷል ({current}/{limit}). ተጨማሪ ለመጨመር ያሻሽሉ።",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"  },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "ابحث في جميع السجلات",
+"globalSearchHint": "اكتب اسم السجل أو الفئة أو المجموعة",
+"globalSearchNoMatches": "لا توجد سجلات تطابق بحثك.",
+"snackNoRecordsToSearch": "لا توجد سجلات للبحث. أضف بعض السجلات وسيقوم Vaultara بفهرستها تلقائيًا.",
+"recoveryCentreTitle": "مركز الاستعادة",
+"recoveryCentreSubtitle": "استعد السجلات المحذوفة أو احذفها نهائيًا.",
+
+  "plan_premium": "بريميوم",
+  "plan_free": "مجاني",
+
+  "profile_app_settings_title": "إعدادات التطبيق",
+
+  "profile_privacy_security_title": "الخصوصية والأمان",
+  "profile_biometric_on": "القفل البيومتري مفعل على هذا الجهاز.",
+  "profile_biometric_off": "القفل البيومتري غير مفعل.",
+
+  "profile_biometric_enable_reason": "أكد هويتك لتفعيل القفل البيومتري.",
+  "profile_biometric_disable_reason": "أكد هويتك لإيقاف القفل البيومتري.",
+
+  "profile_account_management_title": "إدارة الحساب",
+  "profile_account_management_subtitle": "تغيير البريد الإلكتروني أو كلمة المرور أو حذف الحساب.",
+
+  "profile_premium_active_title": "بريميوم مفعل",
+  "profile_premium_upgrade_title": "الترقية إلى بريميوم",
+  "profile_premium_active_subtitle": "تم فتح التذكيرات المتقدمة.",
+  "profile_premium_upgrade_subtitle": "افتح التذكيرات المتقدمة والتنظيم غير المحدود.",
+
+  "profile_manage_cancel_hint": "يمكنك الإدارة أو الإلغاء في أي وقت عبر Google Play.",
+  "profile_manage_subscription_button": "إدارة الاشتراك",
+  "plansTitle": "اختر خطتك",
+"plansTrialBanner": "ابدأ بتجربة مجانية لمدة 7 أيام.\nيمكنك الإلغاء في أي وقت.",
+"plansLoading": "جارٍ التحميل…",
+"plansStartFreeTrial": "ابدأ التجربة المجانية",
+"plansNoChargeTodayFooter": "تجربة 7 أيام · بدون رسوم اليوم",
+
+"planFreeTitle": "مجاني",
+"planFreeSubtitle": "للبدء",
+"planPremiumMonthlyTitle": "بريميوم شهري",
+"planPremiumYearlyTitle": "بريميوم سنوي",
+"planPerMonth": "شهريًا",
+"planPerYear": "سنويًا",
+
+"planBadgeCurrent": "الخطة الحالية",
+"planBadgePopular": "الأكثر شيوعًا",
+"planBadgeBestValue": "أفضل قيمة",
+
+"planYouAreOnThisPlan": "أنت تستخدم هذه الخطة حاليًا.",
+
+"planFeatureUpToRecords": "حتى {count} سجلات",
+"@planFeatureUpToRecords": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+
+"planFeatureCustomCategoriesUpTo": "فئات مخصصة (حتى {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+
+"planFeaturePresetSubcategories": "فئات فرعية جاهزة",
+"planFeatureCloudStorage": "تخزين سحابي",
+"planFeatureSmartExpiryInsights": "تحليلات انتهاء ذكية",
+"planFeatureCoverageBalance": "توازن التغطية",
+"planFeatureRecordStabilityTracking": "استقرار السجلات",
+
+"planFeatureUnlimitedRecords": "سجلات غير محدودة",
+"planFeatureUnlimitedCategories": "فئات غير محدودة",
+"planFeatureCustomSubcategories": "فئات فرعية مخصصة",
+"planFeatureMultipleRemindersPerRecord": "تذكيرات متعددة لكل سجل",
+"planFeatureAdvancedReminderTiming": "توقيت متقدم للتذكير",
+"planFeatureAutomaticFollowUps": "تذكيرات متابعة تلقائية",
+
+"planFeatureEverythingInMonthly": "كل ما في الشهري",
+"planFeatureSavePercentComparedToMonthly": "وفر {percent}% مقارنة بالشهري",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": {
+    "percent": { "type": "int" }
+  }
+},
+
+"planFeatureBestLongTermValue": "أفضل قيمة طويلة المدى",
+"editorReminderLabel": "تذكير",
+"editorReminderSelectOptional": "اختر تذكيرًا (اختياري)",
+"editorReminderOnExpiry": "في تاريخ الانتهاء",
+"editorReminderDaysBefore": "قبل الانتهاء بـ {days} أيام",
+"editorFreeItemsCount": "العناصر المجانية: {used}/{limit}",
+"editorExpiryPastWarning": "تاريخ الانتهاء قد مضى بالفعل.",
+"editorExpiryTodayWarning": "هذا العنصر ينتهي اليوم.",
+"editorErrorExpiryPast": "لا يمكن أن يكون تاريخ الانتهاء في الماضي.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "رؤى اليوم",
+"tutorialBannerTitle": "جولة سريعة",
+"tutorialBannerBody": "تعرّف على كيفية البحث وإضافة السجلات وفهم الإحصاءات خلال أقل من دقيقة.",
+"tutorialBannerStart": "ابدأ الشرح",
+"tutorialBannerDismiss": "ليس الآن",
+"authErrorUserDisabled": "تم تعطيل هذا الحساب.",
+"authErrorNetwork": "خطأ في الشبكة. تحقق من اتصال الإنترنت وحاول مرة أخرى.",
+"authErrorTooManyRequests": "محاولات كثيرة. يرجى المحاولة لاحقًا.",
+"authErrorSignInFailed": "فشل تسجيل الدخول. يرجى المحاولة مرة أخرى.",
+"ok": "حسنًا",
+"snackPremiumEnabled": "تم تفعيل البريميوم",
+"snackPremiumRestored": "تمت استعادة البريميوم",
+"passwordNeedLower": "يجب أن يحتوي على حرف صغير",
+"passwordNeedUpper": "يجب أن يحتوي على حرف كبير",
+"passwordNeedNumber": "يجب أن يحتوي على رقم",
+"passwordNeedSymbol": "يجب أن يحتوي على رمز",
+"confirmIdentityTitle": "تأكيد الهوية",
+"confirm": "تأكيد",
+"profile_sign_out_title": "تسجيل الخروج",
+"profile_sign_out_subtitle": "تسجيل الخروج من Vaultara على هذا الجهاز",
+"profile_sign_out_confirm_title": "هل تريد تسجيل الخروج؟",
+"profile_sign_out_confirm_body": "ستحتاج إلى تسجيل الدخول مرة أخرى للوصول إلى حسابك.",
+"profile_sign_out_action": "تسجيل الخروج",
+"todayInsightsAudioHint": "تفضل الصوت؟ استخدم أيقونة السماعة.",
+"category2Label": "الفئة",
+"enable2BiometricsBody": "استخدم بصمة الإصبع لحماية حساب Vaultara الخاص بك.",
+"snackNotificationsDisabled": "الإشعارات معطلة. قم بتفعيلها لتلقي التذكيرات.",
+"openSettings": "فتح الإعدادات",
+
+"reminderOnExpiryTitle": "تنتهي اليوم",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "مرحبًا {firstName}، ينتهي \"{itemName}\" اليوم.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "الفئات المجانية: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "يعرض عدد الفئات المجانية المستخدمة من الحد المجاني.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "أضف ملاحظات (اختياري)",
+"apply": "تطبيق",
+"smartInsightExpiresTodayHeading": "ينتهي اليوم",
+"smartInsightExpiresTodaySingleBody": "{name} ينتهي اليوم. اتخذ إجراءً الآن لإبقائه محدثاً.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ينتهي اليوم.} =1{{names} ووثيقة أخرى تنتهي اليوم.} =2{{names} ووثيقتان أخريان تنتهيان اليوم.} few{{names} و{extra} وثائق أخرى تنتهي اليوم.} many{{names} و{extra} وثيقة أخرى تنتهي اليوم.} other{{names} و{extra} وثيقة أخرى تنتهي اليوم.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "يحتاج إلى انتباهك",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} ينتهي خلال يوم واحد ولا يحتوي على تذكير. تأكد من أن التفاصيل لا تزال صحيحة.} =2{{name} ينتهي خلال يومين ولا يحتوي على تذكير. تأكد من أن التفاصيل لا تزال صحيحة.} few{{name} ينتهي خلال {days} أيام ولا يحتوي على تذكير. تأكد من أن التفاصيل لا تزال صحيحة.} many{{name} ينتهي خلال {days} يوماً ولا يحتوي على تذكير. تأكد من أن التفاصيل لا تزال صحيحة.} other{{name} ينتهي خلال {days} يوم ولا يحتوي على تذكير. تأكد من أن التفاصيل لا تزال صحيحة.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "تجديدات متعددة متقاربة",
+"smartInsightRenewalTwinBodyTwo": "{a} و{b} ينتهيان خلال ثلاثة أسابيع من بعضهما. خطط مسبقاً.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a} و{b} و{c} كلها تنتهي خلال ثلاثة أسابيع. خطط مسبقاً.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a} و{b} ووثيقة أخرى تنتهي خلال ثلاثة أسابيع. خطط مسبقاً.} =2{{a} و{b} ووثيقتان أخريان تنتهيان خلال ثلاثة أسابيع. خطط مسبقاً.} few{{a} و{b} و{extra} وثائق أخرى تنتهي خلال ثلاثة أسابيع. خطط مسبقاً.} many{{a} و{b} و{extra} وثيقة أخرى تنتهي خلال ثلاثة أسابيع. خطط مسبقاً.} other{{a} و{b} و{extra} وثيقة أخرى تنتهي خلال ثلاثة أسابيع. خطط مسبقاً.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "مجموعة قادمة",
+"smartInsightClusterBody": "{count, plural, =1{وثيقة واحدة في {category} تنتهي خلال الشهرين القادمين. فكر في التعامل معها معاً.} =2{وثيقتان في {category} تنتهيان خلال الشهرين القادمين. فكر في التعامل معهما معاً.} few{{count} وثائق في {category} تنتهي خلال الشهرين القادمين. فكر في التعامل معها معاً.} many{{count} وثيقة في {category} تنتهي خلال الشهرين القادمين. فكر في التعامل معها معاً.} other{{count} وثيقة في {category} تنتهي خلال الشهرين القادمين. فكر في التعامل معها معاً.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "فترة هدوء قادمة",
+"smartInsightQuietPeriodBody": "{days, plural, =1{لا شيء ينتهي خلال اليوم القادم. تجديدك التالي في {firstDate}.} =2{لا شيء ينتهي خلال اليومين القادمين. تجديدك التالي في {firstDate}.} few{لا شيء ينتهي خلال {days} أيام قادمة. تجديدك التالي في {firstDate}.} many{لا شيء ينتهي خلال {days} يوماً قادماً. تجديدك التالي في {firstDate}.} other{لا شيء ينتهي خلال {days} يوم قادم. تجديدك التالي في {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "كل شيء محدث",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{انتهاء قادم واحد مغطى بالتذكيرات. لا شيء آخر يحتاج إلى انتباهك.} =2{انتهاءان قادمان مغطيان بالتذكيرات. لا شيء آخر يحتاج إلى انتباهك.} few{{count} انتهاءات قادمة مغطاة بالتذكيرات. لا شيء آخر يحتاج إلى انتباهك.} many{{count} انتهاء قادم مغطى بالتذكيرات. لا شيء آخر يحتاج إلى انتباهك.} other{{count} انتهاء قادم مغطى بالتذكيرات. لا شيء آخر يحتاج إلى انتباهك.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "كل شيء محدث. لا شيء يحتاج إلى انتباهك الآن.",
+"smartInsightNoRecordsHeading": "أضف سجلك الأول",
+"smartInsightNoRecordsBody": "ابدأ بتتبع وثائقك وستعرض Vaultara رؤى ذكية هنا.",
+"expiryTimelineTitle": "الجدول الزمني لانتهاء الصلاحية",
+"expiryTimelineSubtitle": "اضغط على الشهر لرؤية السجلات التي تنتهي صلاحيتها في ذلك الشهر",
+"expiryTimelineDetailCount": "{count, plural, =0{لا سجلات} =1{سجل واحد} =2{سجلان} few{{count} سجلات} many{{count} سجلاً} other{{count} سجل}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "القادمة",
+"summaryUpcomingCaption": "خلال 30 يومًا",
+"summaryUrgentTitle": "عاجلة",
+"summaryUrgentCaption": "خلال 7 أيام"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -18,17 +18,13 @@
   "in30Days": "දින 30 කින්",
 
   "inDays": "දින {days} කින්",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "දින ගණන අවශ්‍යයි",
   "invalidDaysError": "වලංගු දින ගණනක් අවශ්‍යයි (0 හෝ වැඩි)",
 
   "showingItemsRelative": "{time} කල් ඉකුත් වන අයිතම",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "තෝරාගත් දිනයේ කල් ඉකුත් වන අයිතම",
   "noItemsOnDate": "මෙම දිනයේ කල් ඉකුත් වන අයිතම නොමැත",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "වර්ග නාමය",
   "categoryNameHint": "වර්ගය ඇතුළත් කරන්න",
 
-  "categoryLimitReached":
-    "Basic සැලසුමේ සීමාවට ළඟා වී ඇත. Premium මඟින් සීමා නොමැති වර්ග ලබා දේ",
-
-  "categoryLimitInfo":
-    "Basic සැලසුම {limit} වර්ග සීමා කරයි",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Basic සැලසුමේ සීමාවට ළඟා වී ඇත",
+  "categoryLimitInfo": "Basic සැලසුම {limit} වර්ග සීමා කරයි",
 
   "categoryErrorEmpty": "වර්ග නාමය අවශ්‍යයි",
   "categoryErrorTooShort": "වර්ග නාමය කෙටි වේ",
@@ -102,5 +92,805 @@
   "groupErrorSymbols": "කණ්ඩායම් නාමය සංකේත පමණක් විය නොහැක",
   "groupErrorNumbers": "කණ්ඩායම් නාමයට අංක ඇතුළත් කළ නොහැක",
 
-  "createGroup": "සාදන්න"
+  "createGroup": "සාදන්න",
+
+  "registerTitle": "ගිණුම සාදන්න",
+
+  "firstNameLabel": "පළමු නම",
+  "firstNameHint": "පළමු නම ඇතුළත් කරන්න",
+  "errorFirstName": "මුල් නම අවශ්‍යයි",
+
+  "lastNameLabel": "අවසාන නම",
+  "lastNameHint": "අවසාන නම ඇතුළත් කරන්න",
+  "errorLastName": "අවසන් නම අවශ්‍යයි",
+
+  "emailLabel": "ඊමේල්",
+ "emailRequired": "ඔබගේ විද්‍යුත් තැපෑල අවශ්‍යයි",
+"passwordRequired": "ඔබගේ මුරපදය අවශ්‍යයි",
+"registerPasswordHint": "මුරපදය ඇතුළත් කරන්න",
+"loginPasswordHint": "ඔබගේ මුරපදය ඇතුළත් කරන්න",
+"emailHint": "ඔබගේ විද්‍යුත් තැපැල් ලිපිනය ඇතුළත් කරන්න",
+  "errorEmailInvalid": "වලංගු ඊමේල් ලිපිනයක් ඇතුළත් කරන්න",
+  "errorEmailInUse": "මෙම ඊමේල් ලිපිනය දැනටමත් Vaultara ගිණුමකට සම්බන්ධයි",
+
+  "passwordLabel": "මුරපදය",
+  "passwordHelper": "අවම වශයෙන් අක්ෂර 8ක් සහ විවිධත්වයක්",
+
+  "passwordTooShort": "කෙටි",
+  "passwordTooWeak": "දුර්වල",
+  "passwordMedium": "මධ්‍යම",
+  "passwordStrong": "ශක්තිමත්",
+  "errorPasswordLength": "මුරපදය අවම වශයෙන් අක්ෂර 8ක් විය යුතුය",
+  "errorPasswordWeak": "ශක්තිමත් මුරපදයක් තෝරන්න",
+
+  "errorGeneric": "ලියාපදිංචිය අසාර්ථකයි නැවත උත්සාහ කරන්න",
+
+  "createAccount": "ගිණුම සාදන්න",
+
+  "appName": "Vaultara",
+  "authTagline": "ඔබගේ පුද්ගලික මධ්‍යස්ථානය විදේශ ගමන් බලපත්‍ර බලපත්‍ර කාඩ්පත් සහ අනෙකුත් වැදගත් දේවල් සඳහා",
+  "tabSignIn": "ඇතුල් වන්න",
+  "tabCreateAccount": "ගිණුම සාදන්න",
+  "signInFooterText": "ඔබගේ පුද්ගලික Vaultara අවකාශයට පිවිසීමට ඇතුල් වන්න සහ සියලු නැවතීම් පාලනය කරන්න",
+  "createAccountFooterText": "Vaultara ගිණුමක් සාදා වැදගත් මතක් කිරීම් සුරකින්න සහ අවශ්‍ය විට ප්‍රවේශ වන්න",
+  "invalidEmail": "වලංගු ඊමේල් ලිපිනයක් ඇතුළත් කරන්න",
+  "emailNotFound": "වැරදි ඊමේල්.\nමෙම ඊමේල් සමඟ Vaultara ගිණුමක් නැත",
+  "incorrectPassword": "වැරදි මුරපදය",
+  "emailLabel": "ඊමේල් ලිපිනය",
+  "passwordLabel": "මුරපදය",
+  "signIn": "පිවිසෙන්න",
+  "categoryPersonalIdentification": "පුද්ගලික හඳුනාගැනීම",
+  "categoryDrivingAndVehicles": "රියදුරු හා වාහන",
+  "categoryTravelAndImmigration": "ගමන් සහ සංක්‍රමණය",
+  "categoryBankingAndCards": "බැංකු සහ කාඩ්පත්",
+  "categoryInsuranceAndCover": "විමාව සහ ආවරණය",
+  "categoryHealthAndMedical": "සෞඛ්‍ය හා වෛද්‍ය",
+  "categoryWorkAndProfessional": "වැඩ සහ වෘත්තීය",
+  "categoryPropertyAndHousing": "දේපළ සහ නිවාස",
+  "categoryHouseholdAndUtilities": "ගෘහස්ථ හා උපයෝගිතා",
+
+  "subcategoryPassports": "ගමන් බලපත්‍ර",
+  "subcategoryIdCards": "හැඳුනුම්පත්",
+  "subcategoryResidencePermits": "නේවාසික අවසර",
+
+  "subcategoryDrivingLicences": "රියදුරු බලපත්‍ර",
+  "subcategoryVehicleRegistrations": "වාහන ලියාපදිංචි කිරීම",
+  "subcategoryRoadworthyCertificates": "මාර්ග සුදුසුතා සහතික",
+  "subcategoryVehicleInspectionCertificates": "වාහන පරීක්ෂණ සහතික",
+
+  "subcategoryVisas": "වීසා",
+  "subcategoryStudyPermits": "අධ්‍යාපන අවසර",
+  "subcategoryWorkPermits": "වැඩ අවසර",
+  "subcategoryTravelInsuranceDocuments": "ගමන් විමාව ලේඛන",
+
+  "subcategoryDebitAndCreditCards": "ඩෙබිට් සහ ක්‍රෙඩිට් කාඩ්පත්",
+  "subcategoryStoreCards": "සාප්පු කාඩ්පත්",
+  "subcategoryFuelCards": "ඉන්ධන කාඩ්පත්",
+
+  "subcategoryVehicleInsurances": "වාහන විමාව",
+  "subcategoryPropertyInsurances": "දේපළ විමාව",
+  "subcategoryLifeInsurances": "ජීවිත විමාව",
+  "subcategoryHealthInsurances": "සෞඛ්‍ය විමාව",
+  "subcategoryTravelInsurances": "ගමන් විමාව",
+
+  "subcategoryMedicalPrescriptions": "වෛද්‍ය වට්ටෝරු",
+  "subcategoryOpticalPrescriptions": "දෘෂ්ටි වට්ටෝරු",
+  "subcategoryMedicalCertificates": "වෛද්‍ය සහතික",
+
+  "subcategoryProfessionalLicences": "වෘත්තීය බලපත්‍ර",
+  "subcategoryProfessionalRegistrations": "වෘත්තීය ලියාපදිංචි කිරීම්",
+  "subcategoryIndustryRegistrations": "කර්මාන්ත ලියාපදිංචි කිරීම්",
+  "subcategoryWorkAccessCards": "වැඩ ප්‍රවේශ කාඩ්පත්",
+
+  "subcategoryLeaseAgreements": "කිරීම් ගිවිසුම්",
+  "subcategoryAccessCardsAndTags": "ප්‍රවේශ කාඩ්පත් සහ ටැග්",
+  "subcategoryParkingPermits": "රථ නවතා ගැනීමේ අවසර",
+  "subcategorySecurityAccessPermits": "ආරක්ෂක ප්‍රවේශ අවසර",
+
+  "subcategoryElectricityAccounts": "විදුලි ගිණුම්",
+  "subcategoryWaterAccounts": "ජල ගිණුම්",
+  "subcategoryInternetContracts": "අන්තර්ජාල ගිවිසුම්",
+  "subcategorySecurityServiceContracts": "ආරක්ෂක සේවා ගිවිසුම්",
+  
+  "searchCategories": "ප්‍රවර්ග සොයන්න",
+  "filterAll": "සියල්ල",
+  "filterPreset": "පූර්ව නියමිත",
+  "filterCustom": "අභිරුචි",
+  "addCategoryTitle": "ප්‍රවර්ගය එක් කරන්න",
+  "customLabel": "අභිරුචි",
+  "subcategoriesLabel": "උප ප්‍රවර්ග",
+  "itemsLabel": "අයිතම",
+  "itemsExpiring": "{days} දින තුළ අයිතම {count}ක් කල් ඉකුත් වේ",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "පින් කළ ප්‍රවර්ග",
+  "pinnedHint": "ඔබ නිතර භාවිතා කරන ප්‍රවර්ග ඉහළින් තබාගැනීමට පින් කරන්න.",
+  "noCategoriesFound": "කිසිදු ප්‍රවර්ගයක් හමු නොවීය",
+   "searchGroups": "කණ්ඩායම් සොයන්න",
+  "addGroupTitle": "කණ්ඩායම එක් කරන්න",
+  "basicPlanGroupInfo": "ඔබ Basic සැලසුම භාවිතා කරයි.\nමෙම කාණ්ඩය යටතේ පෙර සැකසූ කණ්ඩායම් ඔබට දැක ගත හැක.\nඔබේම කණ්ඩායම් සෑදීමට Premium වෙත උසස් කරන්න.",
+  "groupDeleted": "කණ්ඩායම මකා දමන ලදි",
+  "undo": "ආපසු හැරවන්න",
+  "groupStats": "{items} අයිතම • {expiring} දින {days} තුළ කල් ඉකුත් වේ",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "මෙම කණ්ඩායමට අයිතම එක් කිරීමට හා නිරීක්ෂණය කිරීමට තට්ටු කරන්න.",
+  "itemsInGroup": "මෙම කණ්ඩායමේ අයිතම",
+  "itemsInGroupHint": "කල් ඉකුත් වන දිනයන් සමඟ වැදගත් අයිතම නිරීක්ෂණය කර නිසි වේලාවට යාවත්කාලීන කරන්න.",
+  "searchItems": "අයිතම සොයන්න",
+  "filterAll": "සියල්ල",
+  "filterExpiringWithin": "දින {days}කින් කල් ඉකුත් වේ",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "කල් ඉකුත් වූ",
+  "addItem": "අයිතමය එක් කරන්න",
+  "noItemsYet": "තවම අයිතම නොමැත.",
+
+  "statusExpired": "කල් ඉකුත් වී ඇත",
+  "statusExpiresToday": "අද කල් ඉකුත් වේ",
+  "statusExpiresInOneDay": "හෙට කල් ඉකුත් වේ",
+  "statusExpiresInDays": "දින {days}කින් කල් ඉකුත් වේ",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "වලංගුයි",
+
+  "deleteCategoryTitle": "කාණ්ඩය මකන්න",
+  "deleteCategoryMessage": "ඔබට \"{name}\" කාණ්ඩය මකා දැමීමට අවශ්‍යද?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "කණ්ඩායම මකන්න",
+  "deleteGroupMessage": "ඔබට \"{name}\" කණ්ඩායම මකා දැමීමට අවශ්‍යද?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "අයිතමය මකන්න",
+  "deleteItemMessage": "ඔබට \"{name}\" අයිතමය මකා දැමීමට අවශ්‍යද?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "අවලංගු කරන්න",
+  "delete": "මකන්න",
+  "homeWelcomeFirstTitle": "සාදරයෙන් පිළිගනිමු, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "නැවතත් පිළිගනිමු, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara ඔබට වැදගත් කල් ඉකුත් වන දිනයන් නිරීක්ෂණය කිරීමට උදව් කරයි, එවිට කිසිවක් නොදැනෙමින් ඉකුත් නොවෙයි.",
+
+"homeWelcomeSubtitleFirst":
+  "ඔබ මෙහි දැකීමට සතුටුයි. Vaultara වැදගත් දිනයන් සහ වාර්තා එක් ආරක්ෂිත ස්ථානයක සංවිධානය කිරීමට උදව් කරයි.",
+
+"homeWelcomeSubtitleBack":
+  "නැවතත් ඔබව දැකීමට සතුටුයි. ඔබගේ වැදගත් දිනයන් සහ වාර්තා පරීක්ෂා කිරීමට Vaultara සූදානම්.",
+   "insightEmptyTitle": "තවම කිසිවක් එකතු කර නැත",
+  "insightEmptyBody": "වැදගත් දිනයන් නිරීක්ෂණය කිරීමට ආරම්භ කළ විට Vaultara ඔබට කල් ඉකුත් වීම වලට පෙර සිටීමට උදව් කරයි.",
+
+  "insightExpiresTodayTitle": "\"{name}\" අද කල් ඉකුත් වේ",
+  "insightExpiresTodayBody": "ඉක්මන් පරීක්ෂාවක් දත්ත නිවැරදිව තබාගනී.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" හෙට කල් ඉකුත් වේ",
+  "insightExpiresTomorrowBody": "දැන් පරීක්ෂා කිරීමෙන් පසුව කාලය ඉතිරි වේ.",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} දින කල් ඉකුත් වේ",
+  "insightExpiresSoonBody": "පෙර සැලසුම් කිරීම වැඩ පහසු කරයි.",
+
+  "insightNextExpiryTitle": "ඊළඟ කල් ඉකුත් වීම \"{name}\" ({date})යි",
+  "insightNextExpiryBody": "දැනට ක්‍රියා කිරීමට අවශ්‍ය නැත.",
+
+  "insightClusteredTitle": "{month} අවට අයිතම කිහිපයක් කල් ඉකුත් වේ",
+  "insightClusteredBody": "එකට පරීක්ෂා කිරීමෙන් කාලය ඉතිරි වේ.",
+
+  "insightTopCategoryTitle": "බොහෝ අයිතම {category} යටතේ ඇත",
+  "insightTopCategoryBody": "මෙතැනින් ආරම්භ කිරීමෙන් වැඩිම ප්‍රයෝජනය ලැබේ.",
+
+  "insightStableTitle": "සියල්ල ස්ථාවරයි",
+  "insightStableBody": "දැනට අවධානය අවශ්‍ය කල් ඉකුත් වීමක් නැත.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "සාදරයෙන් පිළිගනිමු",
+  "summaryAllTitle": "සියලු අයිතම",
+"summaryAllCaption": "Vaultara තුළ නිරීක්ෂණය කරයි",
+"summarySoonTitle": "ඉක්මනින් කල් ඉකුත් වේ",
+"summarySoonCaption": "දින 30ක් තුළ",
+"summaryWeekTitle": "මෙම සතියේ",
+"summaryWeekCaption": "දින 7ක් තුළ කල් ඉකුත් වේ",
+"summaryExpiredTitle": "කල් ඉකුත් වූ",
+"summaryExpiredCaption": "කල් ඉකුත් දිනය පසු වී ඇත",
+"stabilityStableTitle": "සියල්ල ස්ථාවර ලෙස පෙනේ",
+"stabilityStableBody": "ඔබගේ பதிவுகளில் වහාම හෝ එකතු වූ අවදානම් කිසිවක් නොපෙන්වයි.",
+
+"stabilityDecliningTitle": "ස්ථාවරතාව අඩුවෙමින් පවතී",
+"stabilityDecliningBody": "කිහිපයක් කල් ඉකුත් වී ඇති අතර අනෙක්වා ඉක්මනින් ඉකුත් වීමට ඇත.",
+
+"stabilityWeakenedTitle": "ස්ථාවරතාව දුර්වල වී ඇත",
+"stabilityWeakenedBody": "කල් ඉකුත් වූ பதிவുകളുടെ පැවැත්ම සමස්ත විශ්වාසනීයතාව අඩු කරයි.",
+
+"stabilityPressureTitle": "පීඩනය වැඩි වෙමින් පවතී",
+"stabilityPressureBody": "ස්ථාවරතාව පවත්වා ගැනීමට කිහිපයක් ඉක්මනින් අවධානය අවශ්‍ය වේ.",
+"editorNotes": "සටහන්",
+"notesHint": "සටහන් ඇතුළත් කරන්න",
+"editorReminderTitle": "මතක් කිරීම",
+"editorReminderNone": "මතක් කිරීමක් නැත",
+"editorReminderOnExpiry": "කල් ඉකුත් වන දිනයේ",
+"editorReminder7Days": "කල් ඉකුත් වීමට දින 7කට පෙර",
+"editorReminder30Days": "කල් ඉකුත් වීමට දින 30කට පෙර",
+"editorReminderCustom": "අභිරුචි",
+"daysBeforeExpiry": "කල් ඉකුත් වීමට පෙර දින",
+"reminderStage0Title": "කල් ඉකුත් වීමේ මතක් කිරීම",
+"reminderStage0Body": "{firstName}, {itemName} දින {days}කින් කල් ඉකුත් වේ.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "අනුගමන මතක් කිරීම",
+"reminderStage1Body": "{firstName}, {itemName} තවම යාවත්කාලීන කර නොමැත.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "කල් ඉකුත් වීම ලඟා වෙමින්",
+"reminderStage2Body": "{itemName} සඳහා කල් ඉකුත් දිනය ලඟා වෙමින් ඇත.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "අවසන් මතක් කිරීම",
+"reminderFinalBody": "{firstName}, කරුණාකර {itemName} දැන් යාවත්කාලීන කරන්න.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "ආවරණ සමතුලිතතාව",
+"coverageAllRepresented": "ඔබගේ වාර්තා සියලු කාණ්ඩ ආවරණය කරයි.",
+"coverageMissingNamed": "{count} කාණ්ඩවල වාර්තා නොමැත: {names}.",
+"coverageMissingSummary": "ඔබ {count} වර්ගයන් යටතේ කිසිදු වාර්තාවක් එක් කර නැත, {names} සහ තවත් {remaining} ඇතුළත් වේ.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "මුරපදය භාවිත කරන්න",
+"signInWithBiometrics": "බයෝමෙට්‍රික් භාවිතයෙන් පිවිසෙන්න",
+"enableBiometricsTitle": "බයෝමෙට්‍රික් ආරක්ෂාව සක්‍රීය කරන්න",
+"enableBiometricsBody": "Vaultara ආරක්ෂා කිරීමට ඇඟිලි සලකුණු හෝ මුහුණ හඳුනාගැනීම භාවිත කරන්න.",
+"enableBiometricsReason": "Vaultara සඳහා බයෝමෙට්‍රික් අගුළු විවෘත කිරීම සක්‍රීය කරන්න.",
+"notNow": "දැන් නොවේ",
+"useBiometrics": "බයෝමෙට්‍රික් භාවිත කරන්න",
+"recordsCalendarIntro":
+  "කල් ඉකුත් වන දිනයන් ඔබට පරීක්ෂා කිරීමට අවශ්‍ය ආකාරය තෝරන්න:\n\n• අද සිට දින කීයක් ඉදිරියට බැලීමටද යන්න ඇතුළත් කරන්න.\n• නැතහොත් දින දසුනෙන් නිශ්චිත දිනයක් තෝරන්න.\n\nVaultara එම දිනයේ කල් ඉකුත් වන වාර්තා පෙන්වනු ඇත.",
+
+"showingRecordsRelative": "{time} තුළ කල් ඉකුත් වන වාර්තා පෙන්වයි",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "තෝරාගත් දිනයේ කල් ඉකුත් වන වාර්තා පෙන්වයි",
+
+"noRecordsOnDate":
+  "එම දිනයේ කල් ඉකුත් වීමට නියමිත වාර්තා නොමැත.",
+
+"recordEditorAddTitle": "වාර්තාව එක් කරන්න",
+"recordEditorEditTitle": "වාර්තාව සංස්කරණය කරන්න",
+
+"editorRecordName": "වාර්තාවේ නම",
+"editorRecordNameHint": "වාර්තාවේ නම ඇතුළත් කරන්න",
+"recordEditorErrorName": "වාර්තාවේ නම අවශ්‍ය වේ",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "මෙම කණ්ඩායමට වාර්තා එක් කිරීමට හා අනුගමනය කිරීමට තට්ටු කරන්න.",
+
+"recordsInGroup": "මෙම කණ්ඩායමේ වාර්තා",
+
+"recordsInGroupHint":
+  "සෑම වැදගත් වාර්තාවක්ම එහි කල් ඉකුත් වන දිනය සමඟ අනුගමනය කරන්න.",
+
+"searchRecords": "වාර්තා සොයන්න",
+"addRecord": "වාර්තාව එක් කරන්න",
+"noRecordsYet": "තවම වාර්තා නැත.",
+
+"deleteRecordTitle": "වාර්තාව මකන්න",
+
+"recordsInsightClusteredTitle":
+  "{month} ආසන්නයේ වාර්තා කිහිපයක් කල් ඉකුත් වේ",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "ඔබගේ බොහෝ වාර්තා {category} යටතේ එකතු වී ඇත",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "සියලු වාර්තා",
+
+"recordsStabilityDecliningBody":
+  "කිසිවක් කල් ඉකුත් වී ඇති අතර තවත් කිහිපයක් ඉදිරියේදී කල් ඉකුත් වේ.",
+
+"recordsCoverageAllRepresented":
+  "ඔබගේ වාර්තා සියලු කාණ්ඩ ආවරණය කරයි.",
+
+"recordReminderStage0Body":
+  "{firstName}, ඔබගේ {recordName} වාර්තාව දින {days} තුළ කල් ඉකුත් වේ.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, ඔබගේ {recordName} වාර්තාව තවම යාවත්කාලීන කර නොමැත.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} වාර්තාවේ කල් ඉකුත් වන දිනය ආසන්න වෙමින් පවතී.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, කරුණාකර දැන් {recordName} වාර්තාව යාවත්කාලීන කරන්න.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "තවම කණ්ඩායම් නොමැත",
+"recordsExpiring": "{count, plural, one {රෙකෝඩ් 1ක් {days} දින තුළ කල් ඉකුත් වේ} other {{count} රෙකෝඩ් {days} දින තුළ කල් ඉකුත් වේ}}",
+"recordsGroupStats": "{records, plural, one {රෙකෝඩ් 1ක්} other {{records} රෙකෝඩ්}} • {expiring} {days} දින තුළ",
+"groupLabel": "{count, plural, one {{count} කණ්ඩායම} other {{count} කණ්ඩායම්}}",
+"recordsLabel": "{count, plural, one {{count} වාර්තාව} other {{count} වාර්තා}}",
+"forgotPassword": "මුරපදය අමතකද?",
+  "forgotPasswordTitle": "මුරපදය නැවත සකසන්න",
+  "forgotPasswordBody": "ඔබගේ විද්‍යුත් තැපැල් ලිපිනය ඇතුළත් කරන්න. අපි මුරපද නැවත සකසන ලින්ක් එකක් යවමු.",
+  "sendResetLink": "ලින්ක් යවන්න",
+  "passwordResetEmailSent": "මුරපද නැවත සකසන විද්‍යුත් තැපෑල යවන්නා ලදී.",
+  "verifyEmailToContinue": "සයින් ඉන් වීමට පෙර කරුණාකර ඔබගේ ඊමේල් ලිපිනය තහවුරු කරන්න",
+  "changeEmailTitle": "ඊමේල් ලිපිනය වෙනස් කරන්න",
+"newEmailHint": "ඔබගේ නව ඊමේල් ලිපිනය ඇතුළත් කරන්න",
+"sendVerificationEmail": "සත්‍යාපන ඊමේල් යවන්න",
+"deleteAccountTitle": "ගිණුම මකන්න",
+"deleteAccountWarning": "මෙම ක්‍රියාවෙන් ඔබගේ ගිණුම සහ සියලුම සුරක්ෂිත දත්ත ස්ථිරවම මකනු ඇත.\nමෙය ආපසු ගත නොහැක.",
+"deleteAccountConfirm": "ගිණුම ස්ථිරවම මකන්න",
+"supportTitle": "සහාය",
+"supportSubtitle": "ඔබට උදව් අවශ්‍ය නම් හෝ ප්‍රශ්න තිබේ නම් අප අමතන්න.",
+"supportEmailSubject": "Vaultara සහාය ඉල්ලීම",
+"supportEmailError": "ඊමේල් යෙදුම විවෘත කළ නොහැක.",
+"passwordResetEmailFailed": "මුරපදය නැවත සකස් කිරීමේ ඊමේල් යැවිය නොහැකි විය.",
+"loggedInPasswordResetBody": "අපි මුරපදය නැවත සකස් කිරීමේ සබැඳිය යවන්නෙමු:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "ගිණුම් කළමනාකරණය",
+"changeEmailTitle": "ඊමේල් ලිපිනය වෙනස් කරන්න",
+"changeEmailSubtitle": "ඔබගේ ගිණුමට සම්බන්ධ ඊමේල් යාවත්කාලීන කරන්න.",
+"changePasswordTitle": "මුරපදය වෙනස් කරන්න",
+"changePasswordSubtitle": "මුරපදය ආරක්ෂිතව වෙනස් කිරීමට අපි ඔබට ඊමේල් සබැඳියක් යවමු.",
+"deleteAccountTitle": "ගිණුම මකන්න",
+"deleteAccountSubtitle": "ඔබගේ Vaultara ගිණුම ස්ථිරව මකන්න.",
+"biometricAuthReason": "ඔබගේ ගිණුමට ප්‍රවේශ වීමට සත්‍යාපනය කරන්න",
+"verifyEmailTitle": "ඔබගේ ඊමේල් තහවුරු කරන්න",
+"verifyEmailBody": "අපි ඔබගේ ඉන්බොක්ස් වෙත තහවුරු කිරීමේ ඊමේල් එකක් යවා ඇත. එය විවෘත කර ඔබගේ ඊමේල් ලිපිනය තහවුරු කරන්න, ඉන්පසු මෙහි නැවත පැමිණ ඉදිරියට යන්න.",
+"verifyEmailConfirmedButton": "මගේ ඊමේල් තහවුරු කළා",
+"verifyEmailResendButton": "තහවුරු කිරීමේ ඊමේල් නැවත යවන්න",
+"verifyEmailSending": "යවමින්...",
+"navHome": "මුල",
+"navCategories": "කාණ්ඩ",
+"navInsights": "විශ්ලේෂණ",
+"navCalendar": "දිනදසුන",
+"tutorialHomeSearch": "සෙවීමේ තීරුව භාවිතා කර ඕනෑම වාර්තාවක් ඉක්මනින් සොයන්න.",
+"tutorialHomeFab": "ඔබගේ පළමු වාර්තාව මෙහි එක් කරන්න.\nස්ථානය තෝරන්න, සටහන් එක් කරන්න සහ කල් ඉකුත් දිනය තෝරන්න.",
+"tutorialHomeSummary": "මෙම කොටස කල් ඉකුත් වන වාර්තා හඳුනා ගැනීමට උපකාරී වේ.",
+"tutorialHomeInsight": "මෙම බුද්ධිමත් විශ්ලේෂණය රටා පෙන්වයි.\nශබ්ද නිරූපකය ඔබට ඇසීමට ඉඩ දෙයි.",
+"tutorialHomeCoverage": "ආවරණ සමානතාව වාර්තා බෙදාහැරීම පෙන්වයි.",
+"tutorialHomeStability": "ස්ථාවරතාව වාර්තා විශ්වාසදායකත්වය පෙන්වයි.",
+"tutorialCancel": "අවලංගු කරන්න",
+"tutorialNext": "ඊළඟ",
+"tutorialEnd": "මාර්ගෝපදේශය අවසන් කරන්න",
+"softDeleteCategory": "වර්ගය",
+"softDeleteGroup": "කණ්ඩායම",
+"softDeleteRecord": "වාර්තාව",
+
+"softDeleteTitle": "{type} මෑතදී මකා දැමූ දේවල් වෙත ගෙන යන්න",
+
+"softDeleteMessage": "{type} \"{name}\" මෑතදී මකා දැමූ දේවල් වෙත ගෙන යනු ඇත.\n\nඔබට දින 30ක් තුළ නැවත ලබාගත හැක. එයට පසු ස්ථිරව මකා දමනු ඇත.",
+
+"softDeleteMove": "ගෙන යන්න",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "මෑතකදී මකන ලද",
+"categories": "ප්‍රවර්ග",
+"groups": "කණ්ඩායම්",
+"records": "වාර්තා",
+"restore": "ප්‍රතිස්ථාපනය කරන්න",
+"deletePermanently": "ස්ථිරව මකන්න",
+
+"recentlyDeletedBanner": "මකා දැමූ {type} දින 30ක් තබා ගනී.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "මකා දැමූ {type} සොයන්න",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "මකා දැමූ {type} නොමැත",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "එහි කණ්ඩායම් බැලීමට සහ ඔබගේ වාර්තා කළමනාකරණය කිරීමට කාණ්ඩයක් තට්ටු කරන්න.",
+"groupsHint": "මෙම කාණ්ඩයේ ඔබගේ වාර්තා කණ්ඩායම් විසින් සංවිධානය කරයි. වාර්තා කළමනාකරණය කිරීමට කණ්ඩායමක් තට්ටු කරන්න.",
+"notLoggedIn": "පිවිසුම් වී නොමැත",
+"recordsInsideGroupHint": "මේවා මෙම කණ්ඩායම තුළ ඇති වාර්තා වේ.",
+"snackMovedToRecentlyDeleted": "\"{name}\" මෑතදී මකාදැමූ වෙත ගෙන ගියේය",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" සාර්ථකව මකා දමා ඇත",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" සාර්ථකව යාවත්කාලීන කරන ලදී",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" සාර්ථකව එක් කරන ලදී",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" සාර්ථකව ප්‍රතිස්ථාපනය කරන ලදී",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "නොමිලේ සීමාවට ළඟා විය ({current}/{limit}). තවත් එක් කිරීමට උසස් කරන්න.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "සියලු වාර්තා සොයන්න",
+"globalSearchHint": "වාර්තා නාමය, කාණ්ඩය හෝ කණ්ඩායම ඇතුළත් කරන්න",
+"globalSearchNoMatches": "ඔබගේ සෙවීමට ගැළපෙන වාර්තා නොමැත.",
+"snackNoRecordsToSearch": "සොයීමට වාර්තා නොමැත. වාර්තා කිහිපයක් එක් කරන්න, Vaultara ඒවා ස්වයංක්‍රීයව සූචිගත කරනු ඇත.",
+"recoveryCentreTitle": "ප්‍රතිසාධන මධ්‍යස්ථානය",
+"recoveryCentreSubtitle": "ඉවත් කළ වාර්තා ප්‍රතිසාධනය කරන්න හෝ ස්ථිරව මකන්න.",
+"plan_premium": "Premium",
+"plan_free": "නොමිලේ",
+"profile_app_settings_title": "යෙදුම් සැකසුම්",
+"profile_privacy_security_title": "රහස්‍යතාවය සහ ආරක්ෂාව",
+"profile_biometric_on": "මෙම උපාංගයේ ජෛවමානික අගුල සක්‍රීයයි.",
+"profile_biometric_off": "ජෛවමානික අගුල අක්‍රීයයි.",
+"profile_biometric_enable_reason": "ජෛවමානික අගුල සක්‍රීය කිරීමට ඔබගේ හැඳුනුම තහවුරු කරන්න.",
+"profile_biometric_disable_reason": "ජෛවමානික අගුල අක්‍රීය කිරීමට ඔබගේ හැඳුනුම තහවුරු කරන්න.",
+"profile_account_management_title": "ගිණුම් කළමනාකරණය",
+"profile_account_management_subtitle": "ඊමේල්, මුරපදය වෙනස් කරන්න හෝ ගිණුම මකන්න.",
+"profile_premium_active_title": "Premium සක්‍රීයයි",
+"profile_premium_upgrade_title": "Premium වෙත යාවත්කාලීන කරන්න",
+"profile_premium_active_subtitle": "උසස් මතක් කිරීම් සක්‍රීයයි.",
+"profile_premium_upgrade_subtitle": "උසස් මතක් කිරීම් සහ සීමාවක් නැති සංවිධානය අගුළු හැරන්න.",
+"profile_manage_cancel_hint": "Google Play තුළ ඕනෑම වේලාවක කළමනාකරණය හෝ අවලංගු කරන්න.",
+"profile_manage_subscription_button": "දායකත්වය කළමනාකරණය කරන්න",
+"plansTitle": "ඔබගේ සැලසුම තෝරන්න",
+"plansTrialBanner": "දින 7ක් නොමිලේ.\nකැමති විට අවලංගු කරන්න.",
+"plansLoading": "පූරණය වෙමින්…",
+"plansStartFreeTrial": "නොමිලේ ආරම්භ කරන්න",
+"plansNoChargeTodayFooter": "දින 7ක් නොමිලේ · අද ගාස්තු නැත",
+
+"planFreeTitle": "නොමිලේ",
+"planFreeSubtitle": "ආරම්භ කිරීමට",
+"planPremiumMonthlyTitle": "ප්‍රිමියම් මාසික",
+"planPremiumYearlyTitle": "ප්‍රිමියම් වාර්ෂික",
+"planPerMonth": "මාසයකට",
+"planPerYear": "වසරකට",
+
+"planBadgeCurrent": "දැනට",
+"planBadgePopular": "ප්‍රසිද්ධ",
+"planBadgeBestValue": "හොඳම වටිනාකම",
+
+"planYouAreOnThisPlan": "ඔබ මේ සැලසුමේ සිටී.",
+
+"planFeatureUpToRecords": "ලේඛන {count} දක්වා",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "කැටගරි {count} දක්වා",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "පෙර සැකසුම් උප කැටගරි",
+"planFeatureCloudStorage": "ක්ලවුඩ් ගබඩා",
+"planFeatureSmartExpiryInsights": "කල් ඉකුත් විශ්ලේෂණය",
+"planFeatureCoverageBalance": "කැටගරි සමතුලිතතාව",
+"planFeatureRecordStabilityTracking": "දත්ත ස්ථායිතාව",
+
+"planFeatureUnlimitedRecords": "අසීමිත ලේඛන",
+"planFeatureUnlimitedCategories": "අසීමිත කැටගරි",
+"planFeatureCustomSubcategories": "අභිරුචි උප කැටගරි",
+"planFeatureMultipleRemindersPerRecord": "බහු මතක්කිරීම්",
+"planFeatureAdvancedReminderTiming": "උසස් කාල සැකසුම",
+"planFeatureAutomaticFollowUps": "ස්වයංක්‍රීය මතක්කිරීම්",
+
+"planFeatureEverythingInMonthly": "මාසික සියල්ල",
+"planFeatureSavePercentComparedToMonthly": "මාසිකයට වඩා {percent}% ඉතිරි",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "දිගු කාලීන හොඳම වටිනාකම",
+"editorReminderLabel": "මතක් කිරීම",
+"editorReminderSelectOptional": "මතක් කිරීම තෝරන්න (විකල්ප)",
+"editorReminderOnExpiry": "කල් ඉකුත් වන දිනයේ",
+"editorReminderDaysBefore": "කල් ඉකුත් වීමට දින {days}කට පෙර",
+"editorFreeItemsCount": "නොමිලේ වාර්තා: {used}/{limit}",
+"editorExpiryPastWarning": "කල් ඉකුත් දිනය දැනටමත් ගත වී ඇත.",
+"editorExpiryTodayWarning": "මෙම වාර්තාව අද කල් ඉකුත් වේ.",
+"editorErrorExpiryPast": "කල් ඉකුත් දිනය අතීතයක විය නොහැක.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+}
+,
+"todayInsightsTitle": "අදගේ අවබෝධයන්",
+"tutorialBannerTitle": "ඉක්මන් මාර්ගෝපදේශය",
+"tutorialBannerBody": "සෙවීම, වාර්තා එකතු කිරීම සහ දැනුම්කථනේ අර්ථය මිනිත්තුවක් ඇතුළත ඉගෙන ගන්න.",
+"tutorialBannerStart": "ටියුටෝරියල් ආරම්භ කරන්න",
+"tutorialBannerDismiss": "දැන් නොවේ",
+"authErrorUserDisabled": "මෙම ගිණුම අක්‍රිය කර ඇත.",
+"authErrorNetwork": "ජාල දෝෂයකි. නැවත උත්සාහ කරන්න.",
+"authErrorTooManyRequests": "ඉතා වැඩි උත්සාහ. පසුව උත්සාහ කරන්න.",
+"authErrorSignInFailed": "ඇතුල්වීම අසාර්ථකයි. නැවත උත්සාහ කරන්න.",
+"ok": "හරි",
+"snackPremiumEnabled": "ප්‍රිමියම් සක්‍රිය කර ඇත",
+"snackPremiumRestored": "ප්‍රිමියම් නැවත ලබා ඇත",
+"passwordNeedLower": "කුඩා අකුරක් අඩංගු විය යුතුය",
+"passwordNeedUpper": "විශාල අකුරක් අඩංගු විය යුතුය",
+"passwordNeedNumber": "අංකයක් අඩංගු විය යුතුය",
+"passwordNeedSymbol": "සංකේතයක් අඩංගු විය යුතුය",
+"confirmIdentityTitle": "හැඳුනුම්පත තහවුරු කරන්න",
+"confirm": "තහවුරු කරන්න",
+"profile_sign_out_title": "ඉවත් වන්න",
+"profile_sign_out_subtitle": "මෙම උපාංගයේ Vaultara වෙතින් ඉවත් වන්න",
+"profile_sign_out_confirm_title": "ඉවත් වන්නද?",
+"profile_sign_out_confirm_body": "ඔබගේ ගිණුමට ප්‍රවේශ වීමට නැවත පිවිසිය යුතුය.",
+"profile_sign_out_action": "ඉවත් වන්න",
+"todayInsightsAudioHint": "ශ්‍රව්‍යය කැමතිද? ස්පීකර් නිරූපකය භාවිතා කරන්න.",
+"category2Label": "කාණ්ඩය",
+"enable2BiometricsBody": "ඔබගේ Vaultara ගිණුම ආරක්ෂා කිරීමට ඇඟිලි සලකුණු හඳුනාගැනීම භාවිතා කරන්න.",
+"snackNotificationsDisabled": "දැනුම්දීම් අක්‍රිය කර ඇත. මතක් කිරීම් ලබා ගැනීමට ඒවා සක්‍රීය කරන්න.",
+"openSettings": "සැකසුම් විවෘත කරන්න",
+
+"reminderOnExpiryTitle": "අද කල් ඉකුත් වේ",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "හෙලෝ {firstName}, \"{itemName}\" අද කල් ඉකුත් වේ.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "නොමිලේ ප්‍රවර්ග: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "නොමිලේ සීමාවෙන් කොපමණ නොමිලේ ප්‍රවර්ග භාවිතා වී ඇතිද පෙන්වයි.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "සටහන් එක් කරන්න (විකල්ප)",
+"apply": "යෙදවන්න",
+"smartInsightExpiresTodayHeading": "අද කල් ඉකුත්වේ",
+"smartInsightExpiresTodaySingleBody": "{name} අද කල් ඉකුත්වේ. යාවත්කාලීනව තබා ගැනීමට දැන් ක්‍රියා කරන්න.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} සහ තවත් ලේඛන 1 ක් අද කල් ඉකුත්වේ.} other{{names} සහ තවත් ලේඛන {extra} ක් අද කල් ඉකුත්වේ.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "ඔබේ අවධානය අවශ්‍යයි",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} දින 1 කින් කල් ඉකුත්වේ සහ මතක් කිරීමක් සකසා නැත. විස්තර තවමත් නිවැරදිදැයි තහවුරු කරගන්න.} other{{name} දින {days} කින් කල් ඉකුත්වේ සහ මතක් කිරීමක් සකසා නැත. විස්තර තවමත් නිවැරදිදැයි තහවුරු කරගන්න.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "අලුත් කිරීම් කිහිපයක් එකට ආසන්නව",
+"smartInsightRenewalTwinBodyTwo": "{a} සහ {b} එකිනෙකා සති තුනක් තුළ කල් ඉකුත්වේ. කල්තියා සැලසුම් කරන්න.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} සහ {c} සියල්ල සති තුනක් තුළ කල් ඉකුත්වේ. කල්තියා සැලසුම් කරන්න.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} සහ තවත් ලේඛන 1 ක් සති තුනක් තුළ කල් ඉකුත්වේ. කල්තියා සැලසුම් කරන්න.} other{{a}, {b} සහ තවත් ලේඛන {extra} ක් සති තුනක් තුළ කල් ඉකුත්වේ. කල්තියා සැලසුම් කරන්න.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "ඉදිරියට කණ්ඩායමක්",
+"smartInsightClusterBody": "{count, plural, =1{{category} ප්‍රවර්ගයේ ලේඛන 1 ක් ඉදිරි මාස දෙක තුළ කල් ඉකුත්වේ. ඒවා එකට හසුරුවීම සලකා බලන්න.} other{{category} ප්‍රවර්ගයේ ලේඛන {count} ක් ඉදිරි මාස දෙක තුළ කල් ඉකුත්වේ. ඒවා එකට හසුරුවීම සලකා බලන්න.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ඉදිරියට සන්සුන් කාලයක්",
+"smartInsightQuietPeriodBody": "{days, plural, =1{ඉදිරි දින 1 තුළ කිසිවක් කල් ඉකුත් නොවේ. ඔබේ ඊළඟ අලුත් කිරීම {firstDate} දිනය.} other{ඉදිරි දින {days} තුළ කිසිවක් කල් ඉකුත් නොවේ. ඔබේ ඊළඟ අලුත් කිරීම {firstDate} දිනය.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "සියල්ල යාවත්කාලීනයි",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{ඉදිරියට පැමිණෙන කල් ඉකුත්වීම් 1 ක් මතක් කිරීම් මගින් ආවරණය කර ඇත. වෙන කිසිවකට අවධානය අවශ්‍ය නැත.} other{ඉදිරියට පැමිණෙන කල් ඉකුත්වීම් {count} ක් මතක් කිරීම් මගින් ආවරණය කර ඇත. වෙන කිසිවකට අවධානය අවශ්‍ය නැත.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "සියල්ල යාවත්කාලීනයි. දැනට කිසිවකට ඔබේ අවධානය අවශ්‍ය නැත.",
+"smartInsightNoRecordsHeading": "ඔබේ පළමු වාර්තාව එක් කරන්න",
+"smartInsightNoRecordsBody": "ඔබේ ලේඛන නිරීක්ෂණය කිරීම ආරම්භ කරන්න සහ Vaultara මෙහි ස්මාර්ට් අවබෝධයන් පෙන්වයි.",
+"expiryTimelineTitle": "කල් ඉකුත්වීමේ කාල රේඛාව",
+"expiryTimelineSubtitle": "එම මාසයේ කල් ඉකුත්වන වාර්තා බැලීමට මාසය මත තට්ටු කරන්න",
+"expiryTimelineDetailCount": "{count, plural, =1{වාර්තා 1} other{වාර්තා {count}}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "ඉදිරියට",
+"summaryUpcomingCaption": "දින 30ක් ඇතුළත",
+"summaryUrgentTitle": "හදිසි",
+"summaryUrgentCaption": "දින 7ක් ඇතුළත"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

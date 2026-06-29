@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
+import '../auth/email_verification_service.dart';
+import 'verify_email_screen.dart';
 import 'text_normaliser.dart';
+import '../app.dart' as app;
+import '../auth/register_error_mapper.dart';
+import '../auth/password_rules.dart';
+import 'shell/shell.dart';
 
-const String kBiometricsEnabledKey = 'biometricsEnabled';
+const String kIsNewUserKey = 'isNewUser';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -16,21 +22,22 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  final TextEditingController firstNameController = TextEditingController();
-  final TextEditingController lastNameController = TextEditingController();
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final firstNameController = TextEditingController();
+  final lastNameController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
-  final LocalAuthentication _localAuth = LocalAuthentication();
-  late final ScrollController _scrollController;
+  final firstNameFocus = FocusNode();
+  final lastNameFocus = FocusNode();
+  final emailFocus = FocusNode();
+  final passwordFocus = FocusNode();
 
   bool isBusy = false;
   bool isPasswordVisible = false;
   bool showPasswordStrength = false;
-  bool _showBottomGradient = false;
 
   double passwordStrength = 0.0;
-  String passwordStrengthLabel = 'Too short';
+  String passwordStrengthLabel = '';
 
   String? firstNameErrorText;
   String? lastNameErrorText;
@@ -40,9 +47,34 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
-    _scrollController.addListener(_updateScrollFade);
-    WidgetsBinding.instance.addPostFrameCallback((_) => _updateScrollFade());
+    firstNameFocus.addListener(() => setState(() {}));
+    lastNameFocus.addListener(() => setState(() {}));
+    emailFocus.addListener(() => setState(() {}));
+    passwordFocus.addListener(() => setState(() {}));
+
+    firstNameController.addListener(() {
+      if (firstNameErrorText != null) {
+        setState(() => firstNameErrorText = null);
+      }
+    });
+
+    lastNameController.addListener(() {
+      if (lastNameErrorText != null) {
+        setState(() => lastNameErrorText = null);
+      }
+    });
+
+    emailController.addListener(() {
+      if (emailErrorText != null) {
+        setState(() => emailErrorText = null);
+      }
+    });
+
+    passwordController.addListener(() {
+      if (passwordErrorText != null) {
+        setState(() => passwordErrorText = null);
+      }
+    });
   }
 
   @override
@@ -51,51 +83,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
     lastNameController.dispose();
     emailController.dispose();
     passwordController.dispose();
-    _scrollController.dispose();
+    firstNameFocus.dispose();
+    lastNameFocus.dispose();
+    emailFocus.dispose();
+    passwordFocus.dispose();
     super.dispose();
   }
 
-  void _updateScrollFade() {
-    if (!_scrollController.hasClients) return;
-    final pos = _scrollController.position;
-    final shouldShow = pos.maxScrollExtent > 0 && pos.pixels < pos.maxScrollExtent - 4;
-    if (shouldShow != _showBottomGradient) {
-      setState(() => _showBottomGradient = shouldShow);
-    }
-  }
-
   void _updatePasswordStrength(String password) {
-    double s = 0;
-    if (password.isEmpty) {
-      passwordStrengthLabel = 'Too short';
-    } else {
-      final lower = password.contains(RegExp(r'[a-z]'));
-      final upper = password.contains(RegExp(r'[A-Z]'));
-      final digit = password.contains(RegExp(r'\d'));
-      final symbol = password.contains(RegExp(r'[!@#\$%\^&\*\(\)_\+\-=\[\]\{\};:"\\|,.<>\/?]'));
-
-      int score = 0;
-      if (password.length >= 8) score++;
-      if (password.length >= 12) score++;
-      if (lower && upper) score++;
-      if (digit) score++;
-      if (symbol) score++;
-
-      s = score / 5.0;
-
-      if (password.length >= 8 && s < 0.3) {
-        passwordStrengthLabel = 'Too weak';
-      } else if (s < 0.3) {
-        passwordStrengthLabel = 'Too short';
-      } else if (s < 0.7) {
-        passwordStrengthLabel = 'Medium';
-      } else {
-        passwordStrengthLabel = 'Strong';
-      }
-    }
+    final loc = AppLocalizations.of(context)!;
+    final strength = PasswordRules.computeStrength(password, loc);
 
     setState(() {
-      passwordStrength = s;
+      passwordStrength = strength.value;
+      passwordStrengthLabel = strength.label;
       showPasswordStrength = password.isNotEmpty;
     });
   }
@@ -106,17 +107,48 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Colors.green;
   }
 
+  void _goToShell() {
+    FocusManager.instance.primaryFocus?.unfocus();
+
+    final nav = app.navigatorKey.currentState;
+    if (nav == null) return;
+
+    nav.pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const Shell()),
+      (route) => false,
+    );
+  }
+
+  Future<void> _showErrorModal(String title, String message) async {
+    if (!mounted) return;
+    final loc = AppLocalizations.of(context)!;
+
+    FocusManager.instance.primaryFocus?.unfocus();
+
+    await showDialog<void>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: Text(title),
+        content: Text(message),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(loc.ok),
+          ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _handleRegister() async {
-    final String rawFirst = firstNameController.text.trim();
-    final String rawLast = lastNameController.text.trim();
-    final String email = emailController.text.trim();
-    final String password = passwordController.text.trim();
+    final loc = AppLocalizations.of(context)!;
 
-    final String first = normaliseTitleCase(rawFirst);
-    final String last = normaliseTitleCase(rawLast);
+    FocusManager.instance.primaryFocus?.unfocus();
 
-    firstNameController.text = first;
-    lastNameController.text = last;
+    final first = normaliseTitleCase(firstNameController.text.trim());
+    final last = normaliseTitleCase(lastNameController.text.trim());
+    final email = emailController.text.trim();
+    final password = passwordController.text.trim();
 
     setState(() {
       firstNameErrorText = null;
@@ -125,259 +157,220 @@ class _RegisterScreenState extends State<RegisterScreen> {
       passwordErrorText = null;
     });
 
-    bool error = false;
-
-    if (first.isEmpty) {
-      firstNameErrorText = 'Please enter your first name.';
-      error = true;
-    }
-    if (last.isEmpty) {
-      lastNameErrorText = 'Please enter your last name.';
-      error = true;
-    }
-    if (email.isEmpty) {
-      emailErrorText = 'Please enter your email address.';
-      error = true;
-    }
-    if (password.isEmpty) {
-      passwordErrorText = 'Please choose a password.';
-      error = true;
-    }
-
-    if (error) {
-      setState(() {});
+    if (first.isEmpty || last.isEmpty || email.isEmpty || password.isEmpty) {
+      setState(() {
+        if (first.isEmpty) firstNameErrorText = loc.errorFirstName;
+        if (last.isEmpty) lastNameErrorText = loc.errorLastName;
+        if (email.isEmpty) emailErrorText = loc.emailRequired;
+        if (password.isEmpty) passwordErrorText = loc.passwordRequired;
+      });
       return;
     }
 
-    if (password.length < 8) {
-      passwordErrorText = 'Password must be at least eight characters long.';
-      setState(() {});
-      await _showErrorDialog(
-        title: 'Choose a stronger password',
-        message: 'Please use at least eight characters with a mix of letters, numbers and symbols.',
-      );
+    final passwordRuleError = PasswordRules.validatePassword(password, loc);
+    if (passwordRuleError != null) {
+      setState(() => passwordErrorText = passwordRuleError);
       return;
-    }
-
-    if (passwordStrength < 0.3 && password.isNotEmpty) {
-      final bool proceed = await _showWeakPasswordWarningDialog();
-      if (!proceed) return;
     }
 
     setState(() => isBusy = true);
 
     try {
-      final credential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final credential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
 
-      final User? user = credential.user;
+      final user = credential.user;
 
       if (user != null) {
-        final fullName = '$first $last';
         await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
           'firstName': first,
           'lastName': last,
-          'fullName': fullName,
+          'fullName': '$first $last',
           'email': email,
           'createdAt': FieldValue.serverTimestamp(),
-        });
+          'plan': 'free',
+          'isPremium': false,
+        }, SetOptions(merge: true));
+
+        await EmailVerificationService.sendVerificationEmail();
       }
+
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(kIsNewUserKey, true);
 
       if (!mounted) return;
 
-      final bool enableBio = await _showBiometricOnboardingSheet();
+      FocusManager.instance.primaryFocus?.unfocus();
 
-      if (enableBio) {
-        await _enableBiometricsForDevice();
-      }
-
-      if (!mounted) return;
-      Navigator.of(context).pushReplacementNamed('/shell');
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => VerifyEmailScreen(
+            onAuthenticated: _goToShell,
+          ),
+        ),
+      );
     } on FirebaseAuthException catch (e) {
-      String title = 'Account not created';
-      String message = 'We could not create your account. Please try again.';
-      bool showDialog = true;
+      if (!mounted) return;
 
-      if (e.code == 'email-already-in-use') {
-        emailErrorText = 'This email address is already linked to a Vaultara account.';
-        showDialog = false;
-      } else if (e.code == 'invalid-email') {
-        emailErrorText = 'Please enter a valid email address.';
-        showDialog = false;
-      } else if (e.code == 'weak-password') {
-        passwordErrorText = 'Please choose a stronger password.';
-        title = 'Weak password';
-        message = 'Please use a stronger password.';
-      }
+      final uiErr = RegisterErrorMapper.fromFirebase(loc, e);
 
-      if (showDialog) {
-        await _showErrorDialog(title: title, message: message);
+      if (uiErr.type == RegisterUiErrorType.fieldEmail) {
+        setState(() => emailErrorText = uiErr.message);
+      } else if (uiErr.type == RegisterUiErrorType.fieldPassword) {
+        setState(() => passwordErrorText = uiErr.message);
+      } else {
+        await _showErrorModal(loc.createAccount, uiErr.message);
       }
+    } catch (_) {
+      if (!mounted) return;
+      await _showErrorModal(loc.createAccount, loc.authErrorSignInFailed);
     } finally {
       if (mounted) setState(() => isBusy = false);
     }
   }
 
-  Future<void> _showErrorDialog({
-    required String title,
-    required String message,
-  }) async {
-    final s = Theme.of(context).colorScheme;
-    await showDialog<void>(
-      context: context,
-      builder: (c) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: Row(
-          children: [
-            Icon(Icons.error_outline_rounded, color: s.error),
-            const SizedBox(width: 8),
-            Text(title),
-          ],
-        ),
-        content: Text(message),
-        actions: [
-          TextButton(onPressed: () => Navigator.of(c).pop(), child: const Text('OK')),
-        ],
-      ),
-    );
-  }
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final suffix = Theme.of(context).colorScheme.onSurfaceVariant;
 
-  Future<bool> _showWeakPasswordWarningDialog() async {
-    final s = Theme.of(context).colorScheme;
-    final bool? ok = await showDialog<bool>(
-      context: context,
-      builder: (c) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: Row(
+    return GestureDetector(
+      behavior: HitTestBehavior.translucent,
+      onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+      child: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+        padding: const EdgeInsets.all(16),
+        child: Column(
           children: [
-            Icon(Icons.error_outline_rounded, color: s.error),
-            const SizedBox(width: 8),
-            const Text('Password looks weak'),
-          ],
-        ),
-        content: const Text(
-          'This password looks weak. Do you still want to use it?',
-        ),
-        actions: [
-          TextButton(onPressed: () => Navigator.of(c).pop(false), child: const Text('Choose again')),
-          FilledButton(onPressed: () => Navigator.of(c).pop(true), child: const Text('Use password')),
-        ],
-      ),
-    );
-    return ok ?? false;
-  }
-
-  Future<bool> _showBiometricOnboardingSheet() async {
-    final s = Theme.of(context).colorScheme;
-    final bool? enable = await showModalBottomSheet<bool>(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (ctx) {
-        return Padding(
-          padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                width: 42,
-                height: 4,
-                margin: const EdgeInsets.only(bottom: 12),
-                decoration: BoxDecoration(
-                  color: s.outlineVariant,
-                  borderRadius: BorderRadius.circular(999),
+            TextField(
+              controller: firstNameController,
+              focusNode: firstNameFocus,
+              textInputAction: TextInputAction.next,
+              onEditingComplete: () => FocusScope.of(context).requestFocus(
+                lastNameFocus,
+              ),
+              decoration: _inputDecoration(
+                labelText: loc.firstNameLabel,
+                hintText: loc.firstNameHint,
+                focusNode: firstNameFocus,
+                errorText: firstNameErrorText,
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: lastNameController,
+              focusNode: lastNameFocus,
+              textInputAction: TextInputAction.next,
+              onEditingComplete: () => FocusScope.of(context).requestFocus(
+                emailFocus,
+              ),
+              decoration: _inputDecoration(
+                labelText: loc.lastNameLabel,
+                hintText: loc.lastNameHint,
+                focusNode: lastNameFocus,
+                errorText: lastNameErrorText,
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: emailController,
+              focusNode: emailFocus,
+              keyboardType: TextInputType.emailAddress,
+              textInputAction: TextInputAction.next,
+              onEditingComplete: () => FocusScope.of(context).requestFocus(
+                passwordFocus,
+              ),
+              decoration: _inputDecoration(
+                labelText: loc.emailLabel,
+                hintText: loc.emailHint,
+                focusNode: emailFocus,
+                errorText: emailErrorText,
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: passwordController,
+              focusNode: passwordFocus,
+              obscureText: !isPasswordVisible,
+              onChanged: _updatePasswordStrength,
+              textInputAction: TextInputAction.done,
+              onEditingComplete: () {
+                FocusManager.instance.primaryFocus?.unfocus();
+                if (!isBusy) _handleRegister();
+              },
+              decoration: _inputDecoration(
+                labelText: loc.passwordLabel,
+                hintText: loc.registerPasswordHint,
+                focusNode: passwordFocus,
+                errorText: passwordErrorText,
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    isPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                    color: suffix,
+                  ),
+                  onPressed: () =>
+                      setState(() => isPasswordVisible = !isPasswordVisible),
                 ),
               ),
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: s.primary.withOpacity(0.14),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(Icons.lock_rounded, color: s.primary),
-                  ),
-                  const SizedBox(width: 12),
-                  const Expanded(
-                    child: Text(
-                      'Add an extra layer of protection',
-                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Text(
-                'Use fingerprint or face unlock to protect Vaultara.',
-                style: TextStyle(fontSize: 13, color: s.onSurface.withOpacity(0.85)),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'You can change this anytime in your profile.',
-                style: TextStyle(fontSize: 12, color: s.onSurfaceVariant),
-              ),
-              const SizedBox(height: 16),
+            ),
+            const SizedBox(height: 8),
+            if (showPasswordStrength)
               Row(
                 children: [
                   Expanded(
-                    child: TextButton(
-                      onPressed: () => Navigator.of(ctx).pop(false),
-                      child: const Text('Not now'),
+                    child: LinearProgressIndicator(
+                      value: passwordStrength,
+                      minHeight: 6,
+                      valueColor:
+                          AlwaysStoppedAnimation<Color>(_strengthColour()),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: FilledButton(
-                      onPressed: () => Navigator.of(ctx).pop(true),
-                      child: const Text('Use biometrics'),
+                  Text(
+                    passwordStrengthLabel,
+                    style: TextStyle(
+                      color: _strengthColour(),
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ],
               ),
-            ],
-          ),
-        );
-      },
-    );
-    return enable ?? false;
-  }
-
-  Future<void> _enableBiometricsForDevice() async {
-    final canCheck = await _localAuth.canCheckBiometrics;
-    final supported = await _localAuth.isDeviceSupported();
-
-    if (!canCheck || !supported) return;
-
-    final authed = await _localAuth.authenticate(
-      localizedReason: 'Enable biometric unlock for Vaultara.',
-      options: const AuthenticationOptions(
-        biometricOnly: true,
-        stickyAuth: false,
-        useErrorDialogs: true,
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: isBusy ? null : _handleRegister,
+                child: isBusy
+                    ? const CircularProgressIndicator(strokeWidth: 2)
+                    : Text(loc.createAccount),
+              ),
+            ),
+          ],
+        ),
       ),
     );
-
-    if (!authed) return;
-
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(kBiometricsEnabledKey, true);
   }
 
   InputDecoration _inputDecoration({
     required String labelText,
-    String? hintText,
+    required String hintText,
+    required FocusNode focusNode,
     String? errorText,
-    String? helperText,
     Widget? suffixIcon,
   }) {
     final s = Theme.of(context).colorScheme;
+
+    final baseSize = Theme.of(context).textTheme.bodyMedium?.fontSize ?? 14.0;
+    final hintSize = (baseSize - 2).clamp(10.0, 40.0);
+
     return InputDecoration(
-      labelText: labelText,
-      hintText: hintText,
+      hintText: focusNode.hasFocus ? null : hintText,
+      hintStyle: TextStyle(
+        fontSize: hintSize.toDouble(),
+        color: s.onSurfaceVariant.withOpacity(0.85),
+        fontWeight: FontWeight.w400,
+      ),
+      labelText: focusNode.hasFocus ? labelText : null,
       filled: true,
       fillColor: s.surfaceVariant.withOpacity(0.25),
       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
@@ -389,165 +382,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
         borderRadius: BorderRadius.circular(12),
         borderSide: BorderSide(color: s.primary, width: 1.6),
       ),
-      errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: s.error),
-      ),
-      focusedErrorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: s.error, width: 1.6),
-      ),
-      contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
       errorText: errorText,
-      helperText: errorText == null ? helperText : null,
       suffixIcon: suffixIcon,
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final Color strengthColor = _strengthColour();
-    final card = Theme.of(context).cardColor;
-    final suffix = Theme.of(context).colorScheme.onSurfaceVariant;
-
-    return AutofillGroup(
-      child: LayoutBuilder(
-        builder: (context, _) {
-          return Column(
-            children: [
-              Expanded(
-                child: Stack(
-                  children: [
-                    SingleChildScrollView(
-                      controller: _scrollController,
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 24),
-                      child: Column(
-                        children: [
-                          TextField(
-                            controller: firstNameController,
-                            textCapitalization: TextCapitalization.words,
-                            onChanged: (_) => setState(() => firstNameErrorText = null),
-                            decoration: _inputDecoration(
-                              labelText: 'First name',
-                              hintText: 'Enter first name',
-                              errorText: firstNameErrorText,
-                            ),
-                          ),
-                          const SizedBox(height: 12),
-                          TextField(
-                            controller: lastNameController,
-                            textCapitalization: TextCapitalization.words,
-                            onChanged: (_) => setState(() => lastNameErrorText = null),
-                            decoration: _inputDecoration(
-                              labelText: 'Last name',
-                              hintText: 'Enter last name',
-                              errorText: lastNameErrorText,
-                            ),
-                          ),
-                          const SizedBox(height: 12),
-                          TextField(
-                            controller: emailController,
-                            keyboardType: TextInputType.emailAddress,
-                            autofillHints: const [AutofillHints.email],
-                            onChanged: (_) => setState(() => emailErrorText = null),
-                            decoration: _inputDecoration(
-                              labelText: 'Email address',
-                              hintText: 'Enter email address',
-                              errorText: emailErrorText,
-                            ),
-                          ),
-                          const SizedBox(height: 12),
-                          TextField(
-                            controller: passwordController,
-                            obscureText: !isPasswordVisible,
-                            onChanged: (v) {
-                              setState(() => passwordErrorText = null);
-                              _updatePasswordStrength(v);
-                            },
-                            decoration: _inputDecoration(
-                              labelText: 'Password',
-                              hintText: 'Enter password',
-                              errorText: passwordErrorText,
-                              helperText: 'At least 8 characters with mixed types.',
-                              suffixIcon: IconButton(
-                                onPressed: () =>
-                                    setState(() => isPasswordVisible = !isPasswordVisible),
-                                icon: Icon(
-                                  isPasswordVisible
-                                      ? Icons.visibility_rounded
-                                      : Icons.visibility_off_rounded,
-                                  color: suffix,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          if (showPasswordStrength)
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(999),
-                                    child: LinearProgressIndicator(
-                                      value: passwordStrength,
-                                      minHeight: 6,
-                                      backgroundColor:
-                                          Theme.of(context).colorScheme.surfaceVariant,
-                                      valueColor: AlwaysStoppedAnimation<Color>(strengthColor),
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  passwordStrengthLabel,
-                                  style: TextStyle(color: strengthColor, fontWeight: FontWeight.w600),
-                                ),
-                              ],
-                            ),
-                          SizedBox(height: showPasswordStrength ? 16 : 24),
-                        ],
-                      ),
-                    ),
-                    if (_showBottomGradient)
-                      IgnorePointer(
-                        child: Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Container(
-                            height: 32,
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  card.withOpacity(0.0),
-                                  card.withOpacity(0.9),
-                                ],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 8),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton(
-                  onPressed: isBusy ? null : _handleRegister,
-                  child: isBusy
-                      ? const SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        )
-                      : const Text('Create account'),
-                ),
-              ),
-            ],
-          );
-        },
-      ),
+      contentPadding: const EdgeInsets.fromLTRB(14, 20, 14, 12),
     );
   }
 }

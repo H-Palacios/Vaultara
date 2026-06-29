@@ -18,17 +18,13 @@
   "in30Days": "30 maalmood kadib",
 
   "inDays": "{days} maalmood kadib",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Tirada maalmaha waa waajib",
   "invalidDaysError": "Tiro sax ah ayaa loo baahan yahay (0 ama ka badan)",
 
   "showingItemsRelative": "Waxyaabaha dhacaya {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Waxyaabaha dhacaya taariikhda la doortay",
   "noItemsOnDate": "Wax dhacaya maalintaas ma jiro",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Magaca qaybta",
   "categoryNameHint": "Geli qayb",
 
-  "categoryLimitReached":
-    "Xadka Basic waa la gaadhay. Premium wuxuu oggolaanayaa qaybo aan xad lahayn",
-
-  "categoryLimitInfo":
-    "Qorshaha Basic wuxuu oggol yahay ilaa {limit} qaybo",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Xadka Basic waa la gaadhay",
+  "categoryLimitInfo": "Qorshaha Basic wuxuu oggol yahay ilaa {limit} qaybo",
 
   "categoryErrorEmpty": "Magaca qaybta waa waajib",
   "categoryErrorTooShort": "Magaca qaybta waa gaaban",
@@ -102,5 +92,806 @@
   "groupErrorSymbols": "Magaca kooxda ma noqon karo calaamado kaliya",
   "groupErrorNumbers": "Magaca kooxda ma lahaan karo tirooyin",
 
-  "createGroup": "Abuur"
+  "createGroup": "Abuur",
+
+  "registerTitle": "Samee akoon",
+
+  "firstNameLabel": "Magaca hore",
+  "firstNameHint": "Geli magaca hore",
+  "errorFirstName": "Magaca hore waa waajib",
+
+  "lastNameLabel": "Magaca dambe",
+  "lastNameHint": "Geli magaca dambe",
+  "errorLastName": "Magaca dambe waa waajib",
+
+  "emailLabel": "Iimayl",
+  "emailRequired": "Iimaylkaaga waa loo baahan yahay",
+"passwordRequired": "Ereyga sirta ah waa loo baahan yahay",
+"registerPasswordHint": "Geli eray sir ah",
+"loginPasswordHint": "Geli eraygaaga sirta ah",
+"emailHint": "Geli cinwaanka iimaylkaaga",
+  "errorEmailInvalid": "Geli iimayl sax ah",
+  "errorEmailInUse": "Iimaylkan horay ayaa loogu isticmaalay Vaultara",
+
+  "passwordLabel": "Furaha sirta",
+  "passwordHelper": "Ugu yaraan 8 xaraf oo kala duwan",
+
+  "passwordTooShort": "Aad u gaaban",
+  "passwordTooWeak": "Daciif",
+  "passwordMedium": "Dhexdhexaad",
+  "passwordStrong": "Adag",
+
+  "errorPasswordLength": "Furaha sirta waa inuu ka kooban yahay ugu yaraan 8 xaraf",
+  "errorPasswordWeak": "Dooro furaha sirta oo xooggan",
+
+  "errorGeneric": "Diiwaangelintu way fashilantay Mar kale isku day",
+
+  "createAccount": "Samee akoon",
+
+  "appName": "Vaultara",
+  "authTagline": "Xaruntaada gaarka ah ee baasaboorrada shatiyada kaararka iyo waxyaabaha kale ee muhiimka ah",
+  "tabSignIn": "Soo gal",
+  "tabCreateAccount": "Samee akoon",
+  "signInFooterText": "Soo gal si aad u gasho booskaaga gaarka ah ee Vaultara una maamusho dhammaan cusboonaysiinta",
+  "createAccountFooterText": "Samee akoon Vaultara si aad u kaydiso xasuusin muhiim ah una gasho mar kasta oo aad u baahato",
+  "invalidEmail": "Geli cinwaan iimayl sax ah",
+  "emailNotFound": "Iimayl khaldan.\nMa jiro akoon Vaultara oo iimaylkan leh",
+  "incorrectPassword": "Furaha sirta ah waa khaldan yahay",
+  "emailLabel": "Cinwaanka iimaylka",
+  "passwordLabel": "Furaha sirta ah",
+  "signIn": "Gal",
+  "categoryPersonalIdentification": "Aqoonsiga Shakhsiyeed",
+  "categoryDrivingAndVehicles": "Wadista iyo Gaadiidka",
+  "categoryTravelAndImmigration": "Safar iyo Socdaal",
+  "categoryBankingAndCards": "Bangiyada iyo Kaararka",
+  "categoryInsuranceAndCover": "Caymis iyo Dabool",
+  "categoryHealthAndMedical": "Caafimaad iyo Daryeel",
+  "categoryWorkAndProfessional": "Shaqo iyo Xirfadeed",
+  "categoryPropertyAndHousing": "Hanti iyo Hoy",
+  "categoryHouseholdAndUtilities": "Guriga iyo Adeegyada",
+
+  "subcategoryPassports": "Baasaboorrada",
+  "subcategoryIdCards": "Kaararka Aqoonsiga",
+  "subcategoryResidencePermits": "Ogolaanshaha Deganaanshaha",
+
+  "subcategoryDrivingLicences": "Ruqsadaha Wadista",
+  "subcategoryVehicleRegistrations": "Diiwaangelinta Gaadiidka",
+  "subcategoryRoadworthyCertificates": "Shahaadooyinka U-qalmitaanka Waddo",
+  "subcategoryVehicleInspectionCertificates": "Shahaadooyinka Kormeerka Gaadiidka",
+
+  "subcategoryVisas": "Fiisooyin",
+  "subcategoryStudyPermits": "Ogolaanshaha Waxbarashada",
+  "subcategoryWorkPermits": "Ogolaanshaha Shaqada",
+  "subcategoryTravelInsuranceDocuments": "Dukumentiyada Caymiska Safarka",
+
+  "subcategoryDebitAndCreditCards": "Kaararka Debit iyo Credit",
+  "subcategoryStoreCards": "Kaararka Dukaamada",
+  "subcategoryFuelCards": "Kaararka Shidaalka",
+
+  "subcategoryVehicleInsurances": "Caymiska Gaadiidka",
+  "subcategoryPropertyInsurances": "Caymiska Hantida",
+  "subcategoryLifeInsurances": "Caymiska Nolosha",
+  "subcategoryHealthInsurances": "Caymiska Caafimaadka",
+  "subcategoryTravelInsurances": "Caymiska Safarka",
+
+  "subcategoryMedicalPrescriptions": "Qoraallada Dhakhtarka",
+  "subcategoryOpticalPrescriptions": "Qoraallada Indhaha",
+  "subcategoryMedicalCertificates": "Shahaadooyinka Caafimaadka",
+
+  "subcategoryProfessionalLicences": "Ruqsadaha Xirfadeed",
+  "subcategoryProfessionalRegistrations": "Diiwaangelinta Xirfadeed",
+  "subcategoryIndustryRegistrations": "Diiwaangelinta Warshadaha",
+  "subcategoryWorkAccessCards": "Kaararka Gelitaanka Shaqada",
+
+  "subcategoryLeaseAgreements": "Heshiisyada Kirada",
+  "subcategoryAccessCardsAndTags": "Kaararka iyo Calaamadaha Gelitaanka",
+  "subcategoryParkingPermits": "Ogolaanshaha Baarkinka",
+  "subcategorySecurityAccessPermits": "Ogolaanshaha Gelitaanka Amniga",
+
+  "subcategoryElectricityAccounts": "Xisaabaadka Korontada",
+  "subcategoryWaterAccounts": "Xisaabaadka Biyaha",
+  "subcategoryInternetContracts": "Qandaraasyada Internet-ka",
+  "subcategorySecurityServiceContracts": "Qandaraasyada Adeegyada Amniga",
+  "searchCategories": "Vyhľadať kategórie",
+  "filterAll": "Všetky",
+  "filterPreset": "Prednastavené",
+  "filterCustom": "Vlastné",
+  "addCategoryTitle": "Pridať kategóriu",
+  "customLabel": "Vlastná",
+  "subcategoriesLabel": "Podkategórie",
+  "itemsLabel": "Položky",
+  "itemsExpiring": "{count} položiek vyprší o {days} dní",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Pripnuté kategórie",
+  "pinnedHint": "Pripnite kategórie, ktoré otvárate najčastejšie, aby zostali navrchu zoznamu.",
+  "noCategoriesFound": "Nenašli sa žiadne kategórie",
+  "searchGroups": "Poišči skupine",
+  "addGroupTitle": "Dodaj skupino",
+  "basicPlanGroupInfo": "Uporabljate paket Basic.\nV tej kategoriji si lahko ogledate prednastavljene skupine.\nNadgradite na Premium za ustvarjanje lastnih skupin.",
+  "groupDeleted": "Skupina je bila izbrisana",
+  "undo": "RAZVELJAVI",
+  "groupStats": "{items} elementov • {expiring} poteče v {days} dneh",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tapnite za dodajanje in sledenje elementov v tej skupini.",
+  "itemsInGroup": "Waxyaabaha ku jira kooxdan",
+  "itemsInGroupHint": "La soco waxyaabaha muhiimka ah ee leh taariikhaha dhicitaanka si aad u cusboonaysiiso waqtigooda.",
+  "searchItems": "Raadi waxyaabo",
+  "filterAll": "Dhammaan",
+  "filterExpiringWithin": "Wuu dhacayaa {days} maalmood gudahood",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Dhacay",
+  "addItem": "Ku dar shay",
+  "noItemsYet": "Weli waxyaabo ma jiraan.",
+
+  "statusExpired": "Dhacay",
+  "statusExpiresToday": "Wuu dhacayaa maanta",
+  "statusExpiresInOneDay": "Wuu dhacayaa berri",
+  "statusExpiresInDays": "Wuu dhacayaa {days} maalmood gudahood",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Waa ansax",
+
+  "deleteCategoryTitle": "Tirtir qayb",
+  "deleteCategoryMessage": "Ma hubtaa inaad rabto inaad tirtirto qaybta \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Tirtir koox",
+  "deleteGroupMessage": "Ma hubtaa inaad rabto inaad tirtirto kooxda \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Tirtir shay",
+  "deleteItemMessage": "Ma hubtaa inaad rabto inaad tirtirto \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Ka noqosho",
+  "delete": "Tirtir",
+  "homeWelcomeFirstTitle": "Ku soo dhawoow, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Ku soo dhawoow mar kale, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara waxay kaa caawisaa inaad la socoto taariikhaha dhicitaanka muhiimka ah si aan waxba u dhaafin.",
+
+"homeWelcomeSubtitleFirst":
+  "Waan ku faraxsanahay inaan ku aragno halkan. Vaultara waxay kaa caawisaa abaabulka taariikhaha iyo diiwaannada muhiimka ah hal meel ammaan ah.",
+
+"homeWelcomeSubtitleBack":
+  "Waan ku faraxsanahay inaan ku aragno mar kale. Vaultara waa diyaar markaad rabto inaad dib u eegto taariikhahaaga iyo diiwaannadaada muhiimka ah.",
+  "insightEmptyTitle": "Weli waxba maadan darin",
+  "insightEmptyBody": "Markaad bilowdo la socodka taariikhaha muhiimka ah, Vaultara waxay kaa caawin doontaa inaad ka hormarto dhammaadka.",
+
+  "insightExpiresTodayTitle": "\"{name}\" maanta ayuu dhacayaa",
+  "insightExpiresTodayBody": "Hubin degdeg ah ayaa xogta sax ka dhigta.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" berri ayuu dhacayaa",
+  "insightExpiresTomorrowBody": "Dib u eegis hadda ah waxay badbaadin kartaa waqti dambe.",
+
+  "insightExpiresSoonTitle": "\"{name}\" wuxuu dhacayaa {date}",
+  "insightExpiresSoonBody": "Inaad hore u qabato arrinta waxay fududaynaysaa wax walba.",
+
+  "insightNextExpiryTitle": "Dhacitaanka xiga waa \"{name}\" ({date})",
+  "insightNextExpiryBody": "Hadda wax tallaabo ah looma baahna.",
+
+  "insightClusteredTitle": "Qaar ka mid ah waxyaabaha waxay dhacayaan agagaarka {month}",
+  "insightClusteredBody": "In wadajir loo eego waxay badbaadin kartaa waqti.",
+
+  "insightTopCategoryTitle": "Inta badan waxyaabaha waxay ku jiraan {category}",
+  "insightTopCategoryBody": "Halkaan ka bilaabiddu waxay leedahay saameynta ugu weyn.",
+
+  "insightStableTitle": "Wax walba waa deggan yihiin",
+  "insightStableBody": "Ma jiraan dhacitaanno degdeg ah hadda.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Ku soo dhawoow",
+  "summaryAllTitle": "Dhammaan walxaha",
+"summaryAllCaption": "Lagula socdo Vaultara",
+"summarySoonTitle": "Dhici doona dhawaan",
+"summarySoonCaption": "30 maalmood gudahood",
+"summaryWeekTitle": "Toddobaadkan",
+"summaryWeekCaption": "Waxay dhacaysaa 7 maalmood gudahood",
+"summaryExpiredTitle": "Dhacay",
+"summaryExpiredCaption": "Taariikhda dhacday way dhaaftay",
+"stabilityStableTitle": "Wax walba way deggan yihiin",
+"stabilityStableBody": "Diiwaannadaadu ma muujinayaan khatar degdeg ah ama mid urursan.",
+
+"stabilityDecliningTitle": "Degganaantu way hoos u dhacaysaa",
+"stabilityDecliningBody": "Qaar ka mid ah waxyaabaha way dhaceen, kuwo kalena way soo dhow yihiin.",
+
+"stabilityWeakenedTitle": "Degganaantu way daciiftay",
+"stabilityWeakenedBody": "Jiritaanka diiwaanno dhacay waxay yareeyaan kalsoonida guud.",
+
+"stabilityPressureTitle": "Cadaadisku wuu kordhayaa",
+"stabilityPressureBody": "Diiwaanno dhowr ah ayaa u baahan doona fiiro dhowaan si loo ilaaliyo deggenaanta.",
+"editorNotes": "Qoraallo",
+"notesHint": "Geli qoraallo",
+"editorReminderTitle": "Xusuusin",
+"editorReminderNone": "Xusuusin ma jirto",
+"editorReminderOnExpiry": "Maalinta dhicitaanka",
+"editorReminder7Days": "7 maalmood ka hor dhicitaanka",
+"editorReminder30Days": "30 maalmood ka hor dhicitaanka",
+"editorReminderCustom": "Gaar ah",
+"daysBeforeExpiry": "maalmo ka hor dhicitaanka",
+"reminderStage0Title": "Xasuusin dhicitaan",
+"reminderStage0Body": "{firstName}, {itemName} wuxuu dhacayaa {days} maalmood gudahood.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Xasuusin daba-gal",
+"reminderStage1Body": "{firstName}, {itemName} wali lama cusboonaysiin.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Dhacitaan ayaa soo dhow",
+"reminderStage2Body": "Taariikhda dhicitaanka ee {itemName} way soo dhowdahay.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Xasuusin kama dambays ah",
+"reminderFinalBody": "{firstName}, fadlan cusboonaysii {itemName} hadda.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Isku dheelitirka daboolka",
+"coverageAllRepresented": "Diiwaannadaadu waxay daboolayaan dhammaan qaybaha.",
+"coverageMissingNamed": "Wax diiwaan ah lagama helin {count} qaybood: {names}.",
+"coverageMissingSummary": "Ma aadan ku darin wax diiwaan ah {count} qaybood, oo ay ku jiraan {names} iyo {remaining} kale.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Isticmaal eray sir ah",
+"signInWithBiometrics": "Ku gal biometrics",
+"enableBiometricsTitle": "Kici amniga biometrics",
+"enableBiometricsBody": "Isticmaal faro ama aqoonsiga wejiga si aad u ilaaliso Vaultara.",
+"enableBiometricsReason": "Kici furitaanka biometrics ee Vaultara.",
+"notNow": "Hadda ma aha",
+"useBiometrics": "Isticmaal biometrics",
+"recordsCalendarIntro":
+  "Dooro sida aad u rabto inaad u eegto taariikhaha dhicitaanka:\n\n• Qor inta maalmood ee laga bilaabo maanta aad rabto inaad horay u eegto.\n• Ama dooro taariikh gaar ah oo ku jirta kalandarka.\n\nVaultara waxay muujin doontaa diiwaannada gaadhaya taariikhdooda dhicitaanka maalintaas.",
+
+"showingRecordsRelative": "Muujinaya diiwaanno dhici doona {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Muujinaya diiwaanno ku dhacaya taariikhda la doortay",
+
+"noRecordsOnDate":
+  "Ma jiro diiwaan loo dejiyay inuu dhaco maalintaas.",
+
+"recordEditorAddTitle": "Ku dar diiwaan",
+"recordEditorEditTitle": "Wax ka beddel diiwaan",
+
+"editorRecordName": "Magaca diiwaanka",
+"editorRecordNameHint": "Geli magaca diiwaanka",
+"recordEditorErrorName": "Magaca diiwaanka waa khasab",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Taabo si aad ugu darto una la socoto diiwaannada kooxdan.",
+
+"recordsInGroup": "Diiwaannada ku jira kooxdan",
+
+"recordsInGroupHint":
+  "La soco diiwaan kasta oo muhiim ah oo leh taariikhda dhicitaanka si aad waqtigeeda u cusboonaysiiso.",
+
+"searchRecords": "Raadi diiwaanno",
+"addRecord": "Ku dar diiwaan",
+"noRecordsYet": "Weli ma jiraan diiwaanno.",
+
+"deleteRecordTitle": "Tirtir diiwaan",
+
+"recordsInsightClusteredTitle":
+  "Dhowr diiwaan ayaa dhici doona agagaarka {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Inta badan diiwaannadaadu waxay ku jiraan {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Dhammaan diiwaannada",
+
+"recordsStabilityDecliningBody":
+  "Qaar ka mid ah diiwaannada ayaa hore u dhacay, kuwo kalena way soo dhow yihiin.",
+
+"recordsCoverageAllRepresented":
+  "Diiwaannadaadu waxay daboolayaan dhammaan qaybaha.",
+
+"recordReminderStage0Body":
+  "{firstName}, {recordName} ayaa dhici doona {days} maalmood gudahood.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, {recordName} weli lama cusboonaysiin.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Taariikhda dhicitaanka {recordName} way soo dhowaanaysaa.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, fadlan hadda cusboonaysii {recordName}.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Kooxo wali ma jiraan",
+"recordsExpiring": "{count, plural, one {1 diiwaan ayaa dhacaya {days} maalmood gudahood} other {{count} diiwaanno ayaa dhacaya {days} maalmood gudahood}}",
+"recordsGroupStats": "{records, plural, one {1 diiwaan} other {{records} diiwaanno}} • {expiring} {days} maalmood gudahood",
+"groupLabel": "{count, plural, one {{count} koox} other {{count} kooxo}}",
+"recordsLabel": "{count, plural, one {{count} diiwaan} other {{count} diiwaanno}}",
+"forgotPassword": "Ma illowday erayga sirta ah?",
+  "forgotPasswordTitle": "Dib u dejinta erayga sirta ah",
+  "forgotPasswordBody": "Geli cinwaanka iimaylkaaga si aan kuugu dirno xiriir dib u dejin ah.",
+  "sendResetLink": "Dir xiriirka",
+  "passwordResetEmailSent": "Iimayl dib u dejin ah ayaa la diray.",
+  "verifyEmailToContinue": "Fadlan xaqiiji cinwaanka iimaylkaaga ka hor intaadan soo gelin",
+  "changeEmailTitle": "Beddel cinwaanka iimaylka",
+"newEmailHint": "Geli iimaylkaaga cusub",
+"sendVerificationEmail": "Dir iimayl xaqiijin ah",
+"deleteAccountTitle": "Tirtir akoonka",
+"deleteAccountWarning": "Tallaabadan waxay si joogto ah u tirtiri doontaa akoonkaaga iyo dhammaan xogta la kaydiyay.\nLama soo celin karo.",
+"deleteAccountConfirm": "Si joogto ah u tirtir akoonka",
+"supportTitle": "Taageero",
+"supportSubtitle": "Nala soo xiriir haddii aad u baahan tahay caawimaad ama aad qabto su'aalo.",
+"supportEmailSubject": "Codsiga taageerada Vaultara",
+"supportEmailError": "Lama furi karo app-ka iimaylka.",
+"passwordResetEmailFailed": "Lama dirin iimaylka dib-u-dejinta erayga sirta.",
+"loggedInPasswordResetBody": "Waxaan u diri doonaa xiriir dib-u-dejin ah:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Maamulka koontada",
+"changeEmailTitle": "Beddel cinwaanka iimaylka",
+"changeEmailSubtitle": "Cusboonaysii iimaylka ku xiran koontadaada.",
+"changePasswordTitle": "Beddel erayga sirta",
+"changePasswordSubtitle": "Waxaan kuu soo diri doonaa iimayl leh xiriir si aad si ammaan ah u beddesho erayga sirta.",
+"deleteAccountTitle": "Tirtir koontada",
+"deleteAccountSubtitle": "Si joogto ah u tirtir koontadaada Vaultara.",
+"biometricAuthReason": "Xaqiiji si aad u gasho akoonkaaga",
+"verifyEmailTitle": "Xaqiiji iimaylkaaga",
+"verifyEmailBody": "Waxaan kuu dirnay iimayl xaqiijin ah sanduuqaaga fariimaha. Fur oo xaqiiji iimaylkaaga, kadibna halkan ku soo laabo si aad u sii waddo.",
+"verifyEmailConfirmedButton": "Waxaan xaqiijiyay iimaylkeyga",
+"verifyEmailResendButton": "Dib u dir iimaylka xaqiijinta",
+"verifyEmailSending": "Diraya...",
+"navHome": "Guriga",
+"navCategories": "Qaybaha",
+"navInsights": "Falanqayn",
+"navCalendar": "Kalandarka",
+"tutorialHomeSearch": "Isticmaal baarka raadinta si aad si degdeg ah u hesho diiwaan.",
+"tutorialHomeFab": "Ku dar diiwaankaaga ugu horreeya halkan.\nDooro qaybta, ku dar qoraallo, dooro taariikhda dhicista.",
+"tutorialHomeSummary": "Qaybtani waxay kaa caawinaysaa ogaanshaha diiwaannada dhowaan dhici doona.",
+"tutorialHomeInsight": "Falanqayntani waxay muujisaa qaabab.\nWaxaad taaban kartaa astaanta codka.",
+"tutorialHomeCoverage": "Isu dheelitirka daboolidda wuxuu muujinayaa qaybinta diiwaannada.",
+"tutorialHomeStability": "Deganaanshuhu wuxuu muujinayaa kalsoonida diiwaannada.",
+"tutorialCancel": "Jooji",
+"tutorialNext": "Xiga",
+"tutorialEnd": "Dhammee hagaha",
+"softDeleteCategory": "qayb",
+"softDeleteGroup": "koox",
+"softDeleteRecord": "diiwaan",
+
+"softDeleteTitle": "U rar {type} Kuwa La Tirtiray",
+
+"softDeleteMessage": "{type} \"{name}\" waxaa loo rari doonaa Kuwa La Tirtiray.\n\nWaxaad dib u soo celin kartaa 30 maalmood gudahood. Kadibna si joogto ah ayaa loo tirtiri doonaa.",
+
+"softDeleteMove": "U rar",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "La tirtiray dhawaan",
+"categories": "Qaybo",
+"groups": "Kooxo",
+"records": "Diiwaanno",
+"restore": "Soo celi",
+"deletePermanently": "Tirtir gebi ahaanba",
+
+"recentlyDeletedBanner": "{type} la tirtiray waxaa la hayaa 30 maalmood.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Raadi {type} la tirtiray",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Ma jiraan {type} la tirtiray",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Taabo qayb si aad u aragto kooxaheeda oo aad u maamusho diiwaannadaada.",
+"groupsHint": "Kooxuhu waxay abaabulaan diiwaannadaada qaybtaan. Taabo koox si aad u maamusho diiwaannada.",
+"notLoggedIn": "Ma aadan gelin",
+"recordsInsideGroupHint": "Kuwani waa diiwaannada ku jira kooxdaan.",
+"snackMovedToRecentlyDeleted": "\"{name}\" waxaa loo raray Kuwii Dhawaan La Tirtiray",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" si guul leh ayaa loo tirtiray",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" si guul leh ayaa loo cusboonaysiiyay",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" si guul leh ayaa loo daray",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" si guul leh ayaa loo soo celiyay",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Xadka bilaashka ah waa la gaadhay ({current}/{limit}). Cusboonaysii si aad wax badan ugu darto.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+   "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Raadi dhammaan diiwaannada",
+"globalSearchHint": "Ku qor magaca, qaybta ama kooxda",
+"globalSearchNoMatches": "Ma jiro diiwaan la jaanqaadaya raadintaada.",
+"snackNoRecordsToSearch": "Ma jiraan diiwaanno la raadin karo. Ku dar diiwaanno yar, Vaultara ayaana si toos ah u tixraaci doonta.",
+"recoveryCentreTitle": "Xarunta Soo Celinta",
+"recoveryCentreSubtitle": "Soo celi ama si joogto ah u tirtir diiwaannada la tirtiray.",
+"plan_premium": "Premium",
+"plan_free": "Bilaash",
+"profile_app_settings_title": "Dejinta app-ka",
+"profile_privacy_security_title": "Asturnaanta iyo amniga",
+"profile_biometric_on": "Qufulka biometric waa shidan yahay qalabkan.",
+"profile_biometric_off": "Qufulka biometric waa dansan yahay.",
+"profile_biometric_enable_reason": "Xaqiiji aqoonsigaaga si aad u shido qufulka biometric.",
+"profile_biometric_disable_reason": "Xaqiiji aqoonsigaaga si aad u danso qufulka biometric.",
+"profile_account_management_title": "Maareynta akoonka",
+"profile_account_management_subtitle": "Beddel iimaylka, erayga sirta ama tirtir akoonka.",
+"profile_premium_active_title": "Premium wuu shaqaynayaa",
+"profile_premium_upgrade_title": "U cusboonaysii Premium",
+"profile_premium_active_subtitle": "Xusuusiyeyaasha horumarsan waa la furay.",
+"profile_premium_upgrade_subtitle": "Fur xusuusiyeyaasha horumarsan iyo abaabul aan xad lahayn.",
+"profile_manage_cancel_hint": "Maamul ama jooji wakhti kasta Google Play.",
+"profile_manage_subscription_button": "Maamul rukhsadda",
+"plansTitle": "Dooro qorshahaaga",
+"plansTrialBanner": "Ku bilow 7 maalmood oo bilaash ah.\nJooji wakhti kasta.",
+"plansLoading": "Soo raranaya…",
+"plansStartFreeTrial": "Bilow bilaash",
+"plansNoChargeTodayFooter": "7 maalmood bilaash · Ma jiro lacag maanta",
+
+"planFreeTitle": "Bilaash",
+"planFreeSubtitle": "Si aad u bilowdo",
+"planPremiumMonthlyTitle": "Premium bille",
+"planPremiumYearlyTitle": "Premium sanadle",
+"planPerMonth": "bishiiba",
+"planPerYear": "sanadkii",
+
+"planBadgeCurrent": "Hadda",
+"planBadgePopular": "Caadi ah",
+"planBadgeBestValue": "Qiimaha ugu fiican",
+
+"planYouAreOnThisPlan": "Waxaad ku jirtaa qorshahan.",
+
+"planFeatureUpToRecords": "Ilaa {count} diiwaan",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Qaybo gaar ah (ilaa {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Qaybo-hoosaad diyaarsan",
+"planFeatureCloudStorage": "Kayd daruur",
+"planFeatureSmartExpiryInsights": "Falanqayn dhicitaan",
+"planFeatureCoverageBalance": "Isku dheelitir qaybo",
+"planFeatureRecordStabilityTracking": "Deganaansho xog",
+
+"planFeatureUnlimitedRecords": "Diiwaan aan xad lahayn",
+"planFeatureUnlimitedCategories": "Qaybo aan xad lahayn",
+"planFeatureCustomSubcategories": "Qaybo-hoosaad gaar ah",
+"planFeatureMultipleRemindersPerRecord": "Xusuusin badan",
+"planFeatureAdvancedReminderTiming": "Waqti xusuusin sare",
+"planFeatureAutomaticFollowUps": "Xusuusin toos ah",
+
+"planFeatureEverythingInMonthly": "Dhammaan bil kasta",
+"planFeatureSavePercentComparedToMonthly": "Keydi {percent}% marka loo eego bille",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Qiimaha ugu fiican muddada dheer",
+"editorReminderLabel": "Xasuusin",
+"editorReminderSelectOptional": "Dooro xasuusin (ikhtiyaar)",
+"editorReminderOnExpiry": "Maalinta uu dhacayo",
+"editorReminderDaysBefore": "{days} maalmood ka hor dhicista",
+"editorFreeItemsCount": "Diiwaanno bilaash ah: {used}/{limit}",
+"editorExpiryPastWarning": "Taariikhda dhicistu horey ayay u dhaaftay.",
+"editorExpiryTodayWarning": "Diiwaankani maanta ayuu dhacayaa.",
+"editorErrorExpiryPast": "Taariikhda dhicistu ma noqon karto mid hore.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Fahamka maanta",
+"tutorialBannerTitle": "Hagitaan degdeg ah",
+"tutorialBannerBody": "Baro halka aad ka raadin karto, sida loo daro diiwaanno, iyo waxa ay insights ka dhigan yihiin hal daqiiqo gudahood.",
+"tutorialBannerStart": "Bilow casharka",
+"tutorialBannerDismiss": "Hadda ma aha",
+"authErrorUserDisabled": "Akoontigan waa la naafoobay.",
+"authErrorNetwork": "Cilad shabakad. Isku day mar kale.",
+"authErrorTooManyRequests": "Isku dayo badan. Isku day mar dambe.",
+"authErrorSignInFailed": "Gelitaanka wuu fashilmay. Isku day mar kale.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium waa la hawlgeliyay",
+"snackPremiumRestored": "Premium waa la soo celiyay",
+"passwordNeedLower": "Waa inuu lahaadaa xaraf yar",
+"passwordNeedUpper": "Waa inuu lahaadaa xaraf weyn",
+"passwordNeedNumber": "Waa inuu lahaadaa lambar",
+"passwordNeedSymbol": "Waa inuu lahaadaa astaan",
+"confirmIdentityTitle": "Xaqiiji aqoonsiga",
+"confirm": "Xaqiiji",
+"profile_sign_out_title": "Ka bax",
+"profile_sign_out_subtitle": "Ka bax Vaultara qalabkan",
+"profile_sign_out_confirm_title": "Ma ka baxaysaa?",
+"profile_sign_out_confirm_body": "Waxaad u baahan doontaa inaad mar kale gasho si aad u gasho akoonkaaga.",
+"profile_sign_out_action": "Ka bax",
+"todayInsightsAudioHint": "Ma doorbidaysaa cod? Isticmaal astaanta ku hadalka.",
+"category2Label": "Qayb",
+"enable2BiometricsBody": "Isticmaal aqoonsiga faraha si aad u ilaaliso akoonkaaga Vaultara.",
+"snackNotificationsDisabled": "Ogeysiisyada waa dansan yihiin. Daar si aad u hesho xusuusin.",
+"openSettings": "Fur dejinta",
+
+"reminderOnExpiryTitle": "Wuxuu dhacayaa maanta",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Salaan {firstName}, \"{itemName}\" wuxuu dhacayaa maanta.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Qaybo bilaash ah: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Waxay muujisaa inta qaybo bilaash ah ee la isticmaalay marka la barbar dhigo xadka bilaashka ah.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ku dar qoraallo (ikhtiyaari)",
+"apply": "Dalbo",
+"smartInsightExpiresTodayHeading": "Dhammaaday Maanta",
+"smartInsightExpiresTodaySingleBody": "{name} wuxuu dhammaanayaa maanta. Hadda tallaabo qaad si aad u sii hayso casriyeysan.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} iyo 1 dukumeenti kale ayaa dhammaanaya maanta.} other{{names} iyo {extra} dukumeenti kale ayaa dhammaanaya maanta.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Wuxuu U Baahan Yahay Fiiro Gaar Ah",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} wuxuu dhammaanayaa 1 maalin gudaheed lamana dejin xasuusin. Hubi in faahfaahintu ay weli sax tahay.} other{{name} wuxuu dhammaanayaa {days} maalmood gudahood lamana dejin xasuusin. Hubi in faahfaahintu ay weli sax tahay.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Cusbooneysiimo Badan Oo U Dhow",
+"smartInsightRenewalTwinBodyTwo": "{a} iyo {b} waxay dhammaanayaan saddex toddobaad oo midba midka kale ka soocan yahay. Hore u qorshee.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, iyo {c} dhamaantood waxay dhammaanayaan saddex toddobaad gudahood. Hore u qorshee.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, iyo 1 dukumeenti kale waxay dhammaanayaan saddex toddobaad gudahood. Hore u qorshee.} other{{a}, {b}, iyo {extra} dukumeenti kale waxay dhammaanayaan saddex toddobaad gudahood. Hore u qorshee.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Koox Soo Socota",
+"smartInsightClusterBody": "{count, plural, =1{1 dukumeenti oo {category} ah ayaa dhammaanaya labadii bilood ee soo socda. Tixgeli inaad si wadajir ah u maamulayso.} other{{count} dukumeenti oo {category} ah ayaa dhammaanaya labadii bilood ee soo socda. Tixgeli inaad si wadajir ah u maamulayso.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Xilli Aamus Ah Oo Soo Socda",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Wax dhamaanaya ma jiraan 1 maalin ee soo socda. Cusbooneysiintaada xigta waa {firstDate}.} other{Wax dhamaanaya ma jiraan {days} maalmood ee soo socda. Cusbooneysiintaada xigta waa {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Dhammaan Way Casriyeysan Yihiin",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 dhammaad oo soo socda ayaa daboolan xasuusin. Wax kale ma jiraan oo u baahan fiirinta.} other{{count} dhammaadyo soo socda ayaa daboolan xasuusin. Wax kale ma jiraan oo u baahan fiirinta.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Dhammaan way casriyeysan yihiin. Hadda wax aan u baahan fiirintaada ma jiraan.",
+"smartInsightNoRecordsHeading": "Ku Dar Diiwaankaaga Kowaad",
+"smartInsightNoRecordsBody": "Bilow inaad la socoto dukumeentiyadaada Vaultarana wuxuu halkan ku tusi doonaa aragtiyo caqli leh.",
+"expiryTimelineTitle": "Jadwalka dhammaadka",
+"expiryTimelineSubtitle": "Taabo bil si aad u aragto diiwaanada dhamaada bishaas",
+"expiryTimelineDetailCount": "{count, plural, =1{1 diiwaan} other{{count} diiwaan}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Soo socda",
+"summaryUpcomingCaption": "Gudaha 30 maalmood",
+"summaryUrgentTitle": "Degdeg ah",
+"summaryUrgentCaption": "Gudaha 7 maalmood"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

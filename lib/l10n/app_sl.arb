@@ -18,17 +18,13 @@
   "in30Days": "Čez 30 dni",
 
   "inDays": "čez {days} dni",
-  "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
+  "@inDays": { "placeholders": { "days": { "type": "int" } } },
 
   "enterDaysError": "Število dni je obvezno",
   "invalidDaysError": "Vnesite veljavno število dni (0 ali več)",
 
   "showingItemsRelative": "Elementi potečejo {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
+  "@showingItemsRelative": { "placeholders": { "time": { "type": "String" } } },
 
   "showingItemsExact": "Elementi potečejo na izbrani datum",
   "noItemsOnDate": "Na ta dan ne poteče noben element",
@@ -71,14 +67,8 @@
   "categoryNameLabel": "Ime kategorije",
   "categoryNameHint": "Vnesite kategorijo",
 
-  "categoryLimitReached":
-    "Dosežena je omejitev paketa Basic. Premium omogoča neomejene kategorije",
-
-  "categoryLimitInfo":
-    "Paket Basic omogoča do {limit} kategorij",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
+  "categoryLimitReached": "Dosežena je omejitev paketa Basic",
+  "categoryLimitInfo": "Paket Basic omogoča do {limit} kategorij",
 
   "categoryErrorEmpty": "Ime kategorije je obvezno",
   "categoryErrorTooShort": "Ime kategorije je prekratko",
@@ -102,5 +92,803 @@
   "groupErrorSymbols": "Ime skupine ne sme vsebovati samo simbolov",
   "groupErrorNumbers": "Ime skupine ne sme vsebovati številk",
 
-  "createGroup": "Ustvari"
+  "createGroup": "Ustvari",
+
+  "registerTitle": "Ustvari račun",
+
+  "firstNameLabel": "Ime",
+  "firstNameHint": "Vnesite ime",
+  "errorFirstName": "Ime je obvezno",
+
+  "lastNameLabel": "Priimek",
+  "lastNameHint": "Vnesite priimek",
+  "errorLastName": "Priimek je obvezen",
+
+  "emailLabel": "E-pošta",
+  "errorEmailInvalid": "Vnesite veljaven e-poštni naslov",
+  "errorEmailInUse": "Ta e-pošta je že povezana z računom Vaultara",
+
+  "passwordLabel": "Geslo",
+"emailRequired": "Vaš e-poštni naslov je obvezen",
+"passwordRequired": "Vaše geslo je obvezno",
+"registerPasswordHint": "Vnesite geslo",
+"loginPasswordHint": "Vnesite svoje geslo",
+"emailHint": "Vnesite svoj e-poštni naslov",
+  "passwordHelper": "Vsaj 8 znakov z raznolikostjo",
+
+  "passwordTooShort": "Prekratko",
+  "passwordTooWeak": "Šibko",
+  "passwordMedium": "Srednje",
+  "passwordStrong": "Močno",
+
+  "errorPasswordLength": "Geslo mora imeti vsaj 8 znakov",
+  "errorPasswordWeak": "Izberite močnejše geslo",
+
+  "errorGeneric": "Registracija ni uspela Poskusite znova",
+
+  "createAccount": "Ustvari račun",
+
+  "appName": "Vaultara",
+  "authTagline": "Vaše osebno središče za potne liste dovoljenja kartice in druge pomembne dokumente",
+  "tabSignIn": "Prijava",
+  "tabCreateAccount": "Ustvari račun",
+  "signInFooterText": "Prijavite se za dostop do svojega osebnega prostora Vaultara in imejte vse podaljšanja pod nadzorom",
+  "createAccountFooterText": "Ustvarite račun Vaultara za shranjevanje pomembnih opomnikov in dostop kadar koli",
+  "emailNotFound": "Napačen e-poštni naslov.\nZa ta e-poštni naslov ne obstaja račun Vaultara",
+  "incorrectPassword": "Napačno geslo",
+  "emailLabel": "E-poštni naslov",
+  "passwordLabel": "Geslo",
+  "signIn": "Prijava",
+   "categoryPersonalIdentification": "Osebna Identifikacija",
+  "categoryDrivingAndVehicles": "Vožnja in Vozila",
+  "categoryTravelAndImmigration": "Potovanja in Priseljevanje",
+  "categoryBankingAndCards": "Bančništvo in Kartice",
+  "categoryInsuranceAndCover": "Zavarovanja in Kritje",
+  "categoryHealthAndMedical": "Zdravje in Medicina",
+  "categoryWorkAndProfessional": "Delo in Poklicno",
+  "categoryPropertyAndHousing": "Lastnina in Stanovanje",
+  "categoryHouseholdAndUtilities": "Gospodinjstvo in Storitve",
+
+  "subcategoryPassports": "Potni listi",
+  "subcategoryIdCards": "Osebne izkaznice",
+  "subcategoryResidencePermits": "Dovoljenja za bivanje",
+
+  "subcategoryDrivingLicences": "Vozniška dovoljenja",
+  "subcategoryVehicleRegistrations": "Registracije vozil",
+  "subcategoryRoadworthyCertificates": "Tehnični certifikati",
+  "subcategoryVehicleInspectionCertificates": "Certifikati pregleda vozila",
+
+  "subcategoryVisas": "Vizumi",
+  "subcategoryStudyPermits": "Dovoljenja za študij",
+  "subcategoryWorkPermits": "Delovna dovoljenja",
+  "subcategoryTravelInsuranceDocuments": "Dokumenti potovalnega zavarovanja",
+
+  "subcategoryDebitAndCreditCards": "Debetne in kreditne kartice",
+  "subcategoryStoreCards": "Trgovske kartice",
+  "subcategoryFuelCards": "Kartice za gorivo",
+
+  "subcategoryVehicleInsurances": "Zavarovanja vozil",
+  "subcategoryPropertyInsurances": "Zavarovanja nepremičnin",
+  "subcategoryLifeInsurances": "Življenjska zavarovanja",
+  "subcategoryHealthInsurances": "Zdravstvena zavarovanja",
+  "subcategoryTravelInsurances": "Potovalna zavarovanja",
+
+  "subcategoryMedicalPrescriptions": "Zdravniški recepti",
+  "subcategoryOpticalPrescriptions": "Optični recepti",
+  "subcategoryMedicalCertificates": "Zdravniška potrdila",
+
+  "subcategoryProfessionalLicences": "Poklicne licence",
+  "subcategoryProfessionalRegistrations": "Poklicne registracije",
+  "subcategoryIndustryRegistrations": "Industrijske registracije",
+  "subcategoryWorkAccessCards": "Kartice za dostop do dela",
+
+  "subcategoryLeaseAgreements": "Najemne pogodbe",
+  "subcategoryAccessCardsAndTags": "Dostopne kartice in oznake",
+  "subcategoryParkingPermits": "Parkirna dovoljenja",
+  "subcategorySecurityAccessPermits": "Varnostna dostopna dovoljenja",
+
+  "subcategoryElectricityAccounts": "Električni računi",
+  "subcategoryWaterAccounts": "Vodni računi",
+  "subcategoryInternetContracts": "Internetne pogodbe",
+  "subcategorySecurityServiceContracts": "Pogodbe varnostnih storitev",
+  "searchCategories": "Vyhľadať kategórie",
+  "filterAll": "Všetky",
+  "filterPreset": "Prednastavené",
+  "filterCustom": "Vlastné",
+  "addCategoryTitle": "Pridať kategóriu",
+  "customLabel": "Vlastná",
+  "subcategoriesLabel": "Podkategórie",
+  "itemsLabel": "Položky",
+  "itemsExpiring": "{count} položiek vyprší o {days} dní",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Pripnuté kategórie",
+  "pinnedHint": "Pripnite kategórie, ktoré otvárate najčastejšie, aby zostali navrchu zoznamu.",
+  "noCategoriesFound": "Nenašli sa žiadne kategórie",
+  "searchGroups": "Poišči skupine",
+  "addGroupTitle": "Dodaj skupino",
+  "basicPlanGroupInfo": "Uporabljate paket Basic.\nV tej kategoriji si lahko ogledate prednastavljene skupine.\nNadgradite na Premium za ustvarjanje lastnih skupin.",
+  "groupDeleted": "Skupina je bila izbrisana",
+  "undo": "RAZVELJAVI",
+  "groupStats": "{items} elementov • {expiring} poteče v {days} dneh",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tapnite za dodajanje in sledenje elementov v tej skupini.",
+   "itemsInGroup": "Elementi v tej skupini",
+  "itemsInGroupHint": "Spremljajte pomembne elemente z datumi poteka za pravočasno obnovo.",
+  "searchItems": "Išči elemente",
+  "filterAll": "Vsi",
+  "filterExpiringWithin": "Poteče čez {days} dni",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Pretečeni",
+  "addItem": "Dodaj element",
+  "noItemsYet": "Ni še elementov.",
+
+  "statusExpired": "Pretečeno",
+  "statusExpiresToday": "Poteče danes",
+  "statusExpiresInOneDay": "Poteče jutri",
+  "statusExpiresInDays": "Poteče čez {days} dni",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Veljavno",
+
+  "deleteCategoryTitle": "Izbriši kategorijo",
+  "deleteCategoryMessage": "Ali ste prepričani, da želite izbrisati kategorijo \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Izbriši skupino",
+  "deleteGroupMessage": "Ali ste prepričani, da želite izbrisati skupino \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Izbriši element",
+  "deleteItemMessage": "Ali ste prepričani, da želite izbrisati \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Prekliči",
+  "delete": "Izbriši",
+  "homeWelcomeFirstTitle": "Dobrodošli, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Dobrodošli nazaj, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara vam pomaga spremljati pomembne datume poteka, da nič ne ostane spregledano.",
+
+"homeWelcomeSubtitleFirst":
+  "Veseli nas, da ste tukaj. Vaultara vam pomaga organizirati pomembne datume in zapise na enem varnem mestu.",
+
+"homeWelcomeSubtitleBack":
+  "Lepo vas je spet videti. Vaultara je pripravljena, kadar koli želite pregledati svoje pomembne datume in zapise.",
+  "insightEmptyTitle": "Še niste dodali ničesar",
+  "insightEmptyBody": "Ko začnete spremljati pomembne datume, vam bo Vaultara pomagala ostati korak pred poteki.",
+
+  "insightExpiresTodayTitle": "\"{name}\" poteče danes",
+  "insightExpiresTodayBody": "Hiter pregled pomaga ohranjati točne podatke.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" poteče jutri",
+  "insightExpiresTomorrowBody": "Pregled zdaj vam lahko prihrani čas pozneje.",
+
+  "insightExpiresSoonTitle": "\"{name}\" poteče {date}",
+  "insightExpiresSoonBody": "Zgodnje urejanje naredi stvari lažje.",
+
+  "insightNextExpiryTitle": "Naslednji potek je \"{name}\" ({date})",
+  "insightNextExpiryBody": "Trenutno ni potrebna nobena akcija.",
+
+  "insightClusteredTitle": "Več elementov poteče okoli {month}",
+  "insightClusteredBody": "Skupen pregled lahko prihrani čas.",
+
+  "insightTopCategoryTitle": "Večina elementov je v kategoriji {category}",
+  "insightTopCategoryBody": "Začetek tukaj prinese največji učinek.",
+
+  "insightStableTitle": "Vse je stabilno",
+  "insightStableBody": "Trenutno ni nujnih potekov.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Dobrodošli",
+  "summaryAllTitle": "Vsi elementi",
+"summaryAllCaption": "Spremljano v Vaultara",
+"summarySoonTitle": "Kmalu poteče",
+"summarySoonCaption": "V 30 dneh",
+"summaryWeekTitle": "Ta teden",
+"summaryWeekCaption": "Poteče čez 7 dni",
+"summaryExpiredTitle": "Poteklo",
+"summaryExpiredCaption": "Datum veljavnosti je potekel",
+"stabilityStableTitle": "Vse deluje stabilno",
+"stabilityStableBody": "Vaši zapisi ne kažejo takojšnjih ali nakopičenih tveganj.",
+
+"stabilityDecliningTitle": "Stabilnost upada",
+"stabilityDecliningBody": "Nekateri vnosi so potekli, drugi pa se bližajo poteku.",
+
+"stabilityWeakenedTitle": "Stabilnost je oslabljena",
+"stabilityWeakenedBody": "Prisotnost poteklih zapisov zmanjšuje splošno zanesljivost.",
+
+"stabilityPressureTitle": "Pritisk narašča",
+"stabilityPressureBody": "Za ohranitev stabilnosti bo kmalu potrebna pozornost več zapisom.",
+"editorNotes": "Opombe",
+"notesHint": "Vnesite opombe",
+"editorReminderTitle": "Opomnik",
+"editorReminderNone": "Brez opomnika",
+"editorReminderOnExpiry": "Na datum poteka",
+"editorReminder7Days": "7 dni pred potekom",
+"editorReminder30Days": "30 dni pred potekom",
+"editorReminderCustom": "Po meri",
+"daysBeforeExpiry": "dni pred potekom",
+"reminderStage0Title": "Opomnik za potek",
+"reminderStage0Body": "{firstName}, {itemName} poteče čez {days} dni.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Nadaljnji opomnik",
+"reminderStage1Body": "{firstName}, {itemName} še ni bil posodobljen.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Potek se približuje",
+"reminderStage2Body": "Datum poteka za {itemName} se približuje.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Zadnji opomnik",
+"reminderFinalBody": "{firstName}, posodobite {itemName} zdaj.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Ravnovesje pokritosti",
+"coverageAllRepresented": "Vaši zapisi vključujejo vse kategorije.",
+"coverageMissingNamed": "Ni zapisov v {count} kategorijah: {names}.",
+"coverageMissingSummary": "Niste dodali nobenega zapisa v {count} kategorijah, vključno z {names} in še {remaining} drugimi.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Uporabi geslo",
+"signInWithBiometrics": "Prijava z biometrijo",
+"enableBiometricsTitle": "Omogoči biometrično varnost",
+"enableBiometricsBody": "Uporabite prstni odtis ali prepoznavanje obraza za zaščito Vaultara.",
+"enableBiometricsReason": "Omogoči biometrično odklepanje za Vaultara.",
+"notNow": "Ne zdaj",
+"useBiometrics": "Uporabi biometrijo",
+"recordsCalendarIntro":
+  "Izberite, kako želite pregledovati datume veljavnosti:\n\n• Vnesite, koliko dni od danes želite pogledati naprej.\n• Ali izberite določen datum v koledarju.\n\nVaultara bo prikazala, kateri zapisi potečejo na ta dan.",
+
+"showingRecordsRelative": "Prikaz zapisov, ki potečejo {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Prikaz zapisov, ki potečejo na izbrani datum",
+
+"noRecordsOnDate":
+  "Za ta dan ni nastavljenih zapisov za potek.",
+
+"recordEditorAddTitle": "Dodaj zapis",
+"recordEditorEditTitle": "Uredi zapis",
+
+"editorRecordName": "Ime zapisa",
+"editorRecordNameHint": "Vnesite ime zapisa",
+"recordEditorErrorName": "Ime zapisa je obvezno",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Tapnite za dodajanje in spremljanje zapisov v tej skupini.",
+
+"recordsInGroup": "Zapisi v tej skupini",
+
+"recordsInGroupHint":
+  "Spremljajte vsak pomemben zapis z datumom poteka, da ga pravočasno obnovite.",
+
+"searchRecords": "Išči zapise",
+"addRecord": "Dodaj zapis",
+"noRecordsYet": "Zaenkrat še ni zapisov.",
+
+"deleteRecordTitle": "Izbriši zapis",
+
+"recordsInsightClusteredTitle":
+  "Več zapisov poteče okoli meseca {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Večina vaših zapisov je razvrščena v {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Vsi zapisi",
+
+"recordsStabilityDecliningBody":
+  "Nekateri zapisi so že potekli, drugi pa bodo kmalu potekli.",
+
+"recordsCoverageAllRepresented":
+  "Vaši zapisi pokrivajo vse kategorije.",
+
+"recordReminderStage0Body":
+  "{firstName}, vaš zapis {recordName} poteče čez {days} dni.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, vaš zapis {recordName} še ni bil posodobljen.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Datum poteka zapisa {recordName} se približuje.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, prosimo posodobite zapis {recordName} zdaj.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Še ni skupin",
+"recordsExpiring": "{count, plural, one {1 zapis poteče čez {days} dni} other {{count} zapisi potečejo čez {days} dni}}",
+"recordsGroupStats": "{records, plural, one {1 zapis} other {{records} zapisi}} • {expiring} čez {days} dni",
+"groupLabel": "{count, plural, one {{count} skupina} other {{count} skupine}}",
+"recordsLabel": "{count, plural, one {{count} zapis} other {{count} zapisi}}",
+"forgotPassword": "Ste pozabili geslo?",
+  "forgotPasswordTitle": "Ponastavitev gesla",
+  "forgotPasswordBody": "Vnesite svoj e-poštni naslov in poslali vam bomo povezavo za ponastavitev gesla.",
+  "sendResetLink": "Pošlji povezavo",
+  "passwordResetEmailSent": "E-pošta za ponastavitev gesla je bila poslana.",
+  "verifyEmailToContinue": "Pred prijavo potrdite svoj e-poštni naslov",
+  "changeEmailTitle": "Spremeni e-poštni naslov",
+"newEmailHint": "Vnesite svoj novi e-poštni naslov",
+"sendVerificationEmail": "Pošlji potrditveni email",
+"deleteAccountTitle": "Izbriši račun",
+"deleteAccountWarning": "To dejanje bo trajno izbrisalo vaš račun in vse shranjene podatke.\nTega dejanja ni mogoče razveljaviti.",
+"deleteAccountConfirm": "Trajno izbriši račun",
+"supportTitle": "Podpora",
+"supportSubtitle": "Stopite v stik z nami, če potrebujete pomoč ali imate vprašanja.",
+"supportEmailSubject": "Zahteva za podporo Vaultara",
+"supportEmailError": "Ni mogoče odpreti e-poštne aplikacije.",
+"passwordResetEmailFailed": "Pošiljanje e-pošte za ponastavitev gesla ni uspelo.",
+"loggedInPasswordResetBody": "Poslali bomo povezavo za ponastavitev gesla na:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Upravljanje računa",
+"changeEmailTitle": "Spremeni e-poštni naslov",
+"changeEmailSubtitle": "Posodobite e-pošto, povezano z vašim računom.",
+"changePasswordTitle": "Spremeni geslo",
+"changePasswordSubtitle": "Poslali vam bomo e-poštno povezavo za varno spremembo gesla.",
+"deleteAccountTitle": "Izbriši račun",
+"deleteAccountSubtitle": "Trajno izbrišite svoj račun Vaultara.",
+"biometricAuthReason": "Preverite identiteto za dostop do računa",
+"verifyEmailTitle": "Potrdite svoj e-poštni naslov",
+"verifyEmailBody": "Poslali smo potrditveno e-pošto v vaš nabiralnik. Odprite jo in potrdite svoj naslov, nato se vrnite sem za nadaljevanje.",
+"verifyEmailConfirmedButton": "Potrdil sem svoj e-poštni naslov",
+"verifyEmailResendButton": "Ponovno pošlji potrditveno e-pošto",
+"verifyEmailSending": "Pošiljanje...",
+"navHome": "Domov",
+"navCategories": "Kategorije",
+"navInsights": "Vpogled",
+"navCalendar": "Koledar",
+"tutorialHomeSearch": "Uporabite iskalno vrstico za hitro iskanje zapisa.",
+"tutorialHomeFab": "Dodajte svoj prvi zapis tukaj.\nIzberite kategorijo, dodajte opombe in datum poteka.",
+"tutorialHomeSummary": "Ta razdelek pomaga prepoznati zapise blizu poteka.",
+"tutorialHomeInsight": "Ta pametna analiza prikazuje vzorce.\nDotaknite se ikone zvočnika za poslušanje.",
+"tutorialHomeCoverage": "Ravnovesje pokritosti prikazuje razporeditev zapisov.",
+"tutorialHomeStability": "Stabilnost prikazuje zanesljivost zapisov.",
+"tutorialCancel": "Prekliči",
+"tutorialNext": "Naprej",
+"tutorialEnd": "Končaj vodič",
+"softDeleteCategory": "kategorija",
+"softDeleteGroup": "skupina",
+"softDeleteRecord": "zapis",
+
+"softDeleteTitle": "Premakni {type} v Nedavno izbrisano",
+
+"softDeleteMessage": "{type} \"{name}\" bo premaknjen v Nedavno izbrisano.\n\nObnovite ga lahko v 30 dneh. Nato bo trajno odstranjen.",
+
+"softDeleteMove": "Premakni",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+"recentlyDeletedTitle": "Nedavno izbrisano",
+"categories": "Kategorije",
+"groups": "Skupine",
+"records": "Zapisi",
+"restore": "Obnovi",
+"deletePermanently": "Trajno izbriši",
+
+"recentlyDeletedBanner": "Izbrisani {type} se hranijo 30 dni.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Poišči izbrisane {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Ni izbrisanih {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Dotaknite se kategorije, da si ogledate njene skupine in upravljate svoje zapise.",
+"groupsHint": "Skupine organizirajo vaše zapise v tej kategoriji. Dotaknite se skupine za upravljanje zapisov.",
+"notLoggedIn": "Niste prijavljeni",
+"recordsInsideGroupHint": "To so zapisi v tej skupini.",
+"snackMovedToRecentlyDeleted": "\"{name}\" premaknjeno v Nedavno izbrisano",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" je bilo uspešno izbrisano",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" je bilo uspešno posodobljeno",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" je bilo uspešno dodano",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" je bilo uspešno obnovljeno",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Dosežena je brezplačna omejitev ({current}/{limit}). Nadgradite za dodajanje več.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+     "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Išči vse zapise",
+"globalSearchHint": "Vnesite ime, kategorijo ali skupino",
+"globalSearchNoMatches": "Noben zapis ne ustreza vašemu iskanju.",
+"snackNoRecordsToSearch": "Ni zapisov za iskanje. Dodajte nekaj zapisov in Vaultara jih bo samodejno indeksirala.",
+"recoveryCentreTitle": "Center za obnovitev",
+"recoveryCentreSubtitle": "Obnovite ali trajno izbrišite odstranjene zapise.",
+"plan_premium": "Premium",
+"plan_free": "Brezplačno",
+"profile_app_settings_title": "Nastavitve aplikacije",
+"profile_privacy_security_title": "Zasebnost in varnost",
+"profile_biometric_on": "Biometrično zaklepanje je aktivno na tej napravi.",
+"profile_biometric_off": "Biometrično zaklepanje je izklopljeno.",
+"profile_biometric_enable_reason": "Potrdite identiteto za vklop biometričnega zaklepanja.",
+"profile_biometric_disable_reason": "Potrdite identiteto za izklop biometričnega zaklepanja.",
+"profile_account_management_title": "Upravljanje računa",
+"profile_account_management_subtitle": "Spremenite e-pošto, geslo ali izbrišite račun.",
+"profile_premium_active_title": "Premium aktiven",
+"profile_premium_upgrade_title": "Nadgradite na Premium",
+"profile_premium_active_subtitle": "Napredni opomniki so odklenjeni.",
+"profile_premium_upgrade_subtitle": "Odklenite napredne opomnike in neomejeno organizacijo.",
+"profile_manage_cancel_hint": "Upravljajte ali prekličite kadar koli v Google Play.",
+"profile_manage_subscription_button": "Upravljanje naročnine",
+"plansTitle": "Izberite paket",
+"plansTrialBanner": "Začnite s 7-dnevnim preizkusom.\nKadarkoli prekličete.",
+"plansLoading": "Nalaganje…",
+"plansStartFreeTrial": "Začni brezplačno",
+"plansNoChargeTodayFooter": "7 dni brezplačno · Danes brez plačila",
+
+"planFreeTitle": "Brezplačno",
+"planFreeSubtitle": "Za začetek",
+"planPremiumMonthlyTitle": "Premium mesečni",
+"planPremiumYearlyTitle": "Premium letni",
+"planPerMonth": "na mesec",
+"planPerYear": "na leto",
+
+"planBadgeCurrent": "Trenutni",
+"planBadgePopular": "Priljubljen",
+"planBadgeBestValue": "Najboljša izbira",
+
+"planYouAreOnThisPlan": "Uporabljate ta paket.",
+
+"planFeatureUpToRecords": "Do {count} zapisov",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Lastne kategorije (do {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Vnaprej določene podkategorije",
+"planFeatureCloudStorage": "Shranjevanje v oblaku",
+"planFeatureSmartExpiryInsights": "Analiza poteka",
+"planFeatureCoverageBalance": "Ravnovesje kategorij",
+"planFeatureRecordStabilityTracking": "Stabilnost podatkov",
+
+"planFeatureUnlimitedRecords": "Neomejeni zapisi",
+"planFeatureUnlimitedCategories": "Neomejene kategorije",
+"planFeatureCustomSubcategories": "Lastne podkategorije",
+"planFeatureMultipleRemindersPerRecord": "Več opomnikov",
+"planFeatureAdvancedReminderTiming": "Napredno časovno nastavljanje",
+"planFeatureAutomaticFollowUps": "Samodejni opomniki",
+
+"planFeatureEverythingInMonthly": "Vse iz mesečnega",
+"planFeatureSavePercentComparedToMonthly": "Prihranite {percent}% proti mesečnemu",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Najboljša dolgoročna vrednost",
+"editorReminderLabel": "Opomnik",
+"editorReminderSelectOptional": "Izberite opomnik (neobvezno)",
+"editorReminderOnExpiry": "Na dan poteka",
+"editorReminderDaysBefore": "{days} dni pred potekom",
+"editorFreeItemsCount": "Brezplačni zapisi: {used}/{limit}",
+"editorExpiryPastWarning": "Datum poteka je že mimo.",
+"editorExpiryTodayWarning": "Ta zapis poteče danes.",
+"editorErrorExpiryPast": "Datum poteka ne sme biti v preteklosti.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Današnji vpogledi",
+"tutorialBannerTitle": "Hiter ogled",
+"tutorialBannerBody": "Naučite se, kje iskati, kako dodajati zapise in kaj pomenijo vpogledi v manj kot minuti.",
+"tutorialBannerStart": "Začni vodič",
+"tutorialBannerDismiss": "Ne zdaj",
+"authErrorUserDisabled": "Ta račun je bil onemogočen.",
+"authErrorNetwork": "Napaka omrežja. Poskusite znova.",
+"authErrorTooManyRequests": "Preveč poskusov. Poskusite kasneje.",
+"authErrorSignInFailed": "Prijava ni uspela. Poskusite znova.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium omogočen",
+"snackPremiumRestored": "Premium obnovljen",
+"passwordNeedLower": "Vsebovati mora malo črko",
+"passwordNeedUpper": "Vsebovati mora veliko črko",
+"passwordNeedNumber": "Vsebovati mora številko",
+"passwordNeedSymbol": "Vsebovati mora simbol",
+"confirmIdentityTitle": "Potrdi identiteto",
+"confirm": "Potrdi",
+"profile_sign_out_title": "Odjava",
+"profile_sign_out_subtitle": "Odjava iz Vaultara na tej napravi",
+"profile_sign_out_confirm_title": "Se želite odjaviti?",
+"profile_sign_out_confirm_body": "Za dostop do računa se boste morali znova prijaviti.",
+"profile_sign_out_action": "Odjava",
+"todayInsightsAudioHint": "Raje poslušaš? Uporabi ikono zvočnika.",
+"category2Label": "Kategorija",
+"enable2BiometricsBody": "Uporabi prepoznavanje prstnega odtisa za zaščito svojega računa Vaultara.",
+"snackNotificationsDisabled": "Obvestila so onemogočena. Vklopite jih za prejem opomnikov.",
+"openSettings": "Odpri nastavitve",
+
+"reminderOnExpiryTitle": "Poteče danes",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Živjo {firstName}, \"{itemName}\" poteče danes.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Brezplačne kategorije: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Prikaže, koliko brezplačnih kategorij je uporabljenih od brezplačne omejitve.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Dodaj opombe (neobvezno)",
+"apply": "Uporabi",
+"smartInsightExpiresTodayHeading": "Poteče Danes",
+"smartInsightExpiresTodaySingleBody": "{name} poteče danes. Ukrepajte zdaj, da ga ohranite posodobljenega.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} in še 1 dokument potečeta danes.} two{{names} in še {extra} dokumenta potečejo danes.} few{{names} in še {extra} dokumenti potečejo danes.} other{{names} in še {extra} dokumentov poteče danes.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Zahteva Vašo Pozornost",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} poteče čez 1 dan in nima nastavljenega opomnika. Preverite, ali so podatki še vedno pravilni.} two{{name} poteče čez {days} dneva in nima nastavljenega opomnika. Preverite, ali so podatki še vedno pravilni.} few{{name} poteče čez {days} dni in nima nastavljenega opomnika. Preverite, ali so podatki še vedno pravilni.} other{{name} poteče čez {days} dni in nima nastavljenega opomnika. Preverite, ali so podatki še vedno pravilni.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Več Obnovitev Blizu Skupaj",
+"smartInsightRenewalTwinBodyTwo": "{a} in {b} potekata v treh tednih eden od drugega. Načrtujte vnaprej.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} in {c} vsi potečejo v treh tednih. Načrtujte vnaprej.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} in še 1 dokument potečejo v treh tednih. Načrtujte vnaprej.} two{{a}, {b} in še {extra} dokumenta potečejo v treh tednih. Načrtujte vnaprej.} few{{a}, {b} in še {extra} dokumenti potečejo v treh tednih. Načrtujte vnaprej.} other{{a}, {b} in še {extra} dokumentov poteče v treh tednih. Načrtujte vnaprej.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Prihajajoča Skupina",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument v kategoriji {category} poteče v naslednjih dveh mesecih. Razmislite o skupnem reševanju.} two{{count} dokumenta v kategoriji {category} potečeta v naslednjih dveh mesecih. Razmislite o skupnem reševanju.} few{{count} dokumenti v kategoriji {category} potečejo v naslednjih dveh mesecih. Razmislite o skupnem reševanju.} other{{count} dokumentov v kategoriji {category} poteče v naslednjih dveh mesecih. Razmislite o skupnem reševanju.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Mirno Obdobje Pred Vami",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Naslednji 1 dan ne poteče nič. Vaša naslednja obnova je {firstDate}.} two{Naslednja {days} dneva ne poteče nič. Vaša naslednja obnova je {firstDate}.} few{Naslednje {days} dni ne poteče nič. Vaša naslednja obnova je {firstDate}.} other{Naslednjih {days} dni ne poteče nič. Vaša naslednja obnova je {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Vse Je Posodobljeno",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 prihajajoči potek je pokrit z opomniki. Nič drugega ne zahteva vaše pozornosti.} two{{count} prihajajoča poteka sta pokrita z opomniki. Nič drugega ne zahteva vaše pozornosti.} few{{count} prihajajoči poteki so pokriti z opomniki. Nič drugega ne zahteva vaše pozornosti.} other{{count} prihajajočih potekov je pokritih z opomniki. Nič drugega ne zahteva vaše pozornosti.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Vse je posodobljeno. Trenutno nič ne zahteva vaše pozornosti.",
+"smartInsightNoRecordsHeading": "Dodajte Svoj Prvi Zapis",
+"smartInsightNoRecordsBody": "Začnite slediti svojim dokumentom in Vaultara bo tukaj prikazal pametne vpoglede.",
+"expiryTimelineTitle": "Časovnica poteka",
+"expiryTimelineSubtitle": "Tapnite mesec, da vidite zapise, ki potečejo v tem mesecu",
+"expiryTimelineDetailCount": "{count, plural, =1{1 zapis} two{{count} zapisa} few{{count} zapisi} other{{count} zapisov}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Prihajajoči",
+"summaryUpcomingCaption": "V 30 dneh",
+"summaryUrgentTitle": "Nujno",
+"summaryUrgentCaption": "V 7 dneh"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

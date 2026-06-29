@@ -1,0 +1,880 @@
+{
+  "@@locale": "kk",
+  "expiryCalendarTitle": "Мерзім күнтізбесі",
+
+"calendarIntro": "Мерзімдерді қалай көргіңіз келетінін таңдаңыз:\n\n• Бүгіннен бастап қанша күн алға қарағыңыз келетінін енгізіңіз.\n• Немесе күнтізбеден нақты күнді таңдаңыз.\n\nVaultara сол күні мерзімі аяқталатын элементтерді көрсетеді.",
+
+"daysFromTodayLabel": "Бүгіннен бастап күндер",
+"daysFromTodayHint": "Мысалы 0, 1, 7, 30",
+
+"apply": "Қолдану",
+"pickDateOnCalendar": "Күнтізбеден күнді таңдау",
+
+"today": "Бүгін",
+"tomorrow": "Ертең",
+"in7Days": "7 күннен кейін",
+"in30Days": "30 күннен кейін",
+
+"inDays": "{days} күннен кейін",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Күндер санын енгізіңіз.",
+"invalidDaysError": "Дұрыс күндер санын енгізіңіз (0 немесе одан жоғары).",
+
+"showingItemsRelative": "{time} мерзімі аяқталатын элементтер көрсетілуде",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Таңдалған күні мерзімі аяқталатын элементтер көрсетілуде",
+"noItemsOnDate": "Бұл күні мерзімі аяқталатын элемент жоқ.",
+
+"editorAddTitle": "Элемент қосу",
+"editorEditTitle": "Элементті өңдеу",
+
+"editorCategory": "Санат",
+"editorCategoryHint": "Санатты таңдаңыз",
+
+"editorGroup": "Топ",
+"editorGroupHint": "Топты таңдаңыз",
+
+"editorItemName": "Элемент атауы",
+"editorItemNameHint": "Элемент атауын енгізіңіз",
+
+"editorExpiryDate": "Мерзімі",
+"editorExpiryDateHint": "Мерзімін таңдаңыз",
+
+"editorErrorCategory": "Санатты таңдаңыз",
+"editorErrorGroup": "Топты таңдаңыз",
+"editorErrorName": "Элемент атауы міндетті",
+"editorErrorExpiry": "Мерзімін таңдаңыз",
+"editorErrorExpiryPast": "Мерзімі бүгін немесе болашақ күн болуы керек",
+"cancel": "Болдырмау",
+"save": "Сақтау",
+
+"addCategoryTitle": "Санат қосу",
+"unlimitedCategories": "Шексіз санаттар (Premium)",
+
+"categoryUsage": "{current} / {limit} санат пайдаланылды",
+
+"categoryNameLabel": "Санат",
+"categoryNameHint": "Санатты енгізіңіз",
+
+"categoryLimitReached": "Basic жоспары бойынша {limit} санат шегіне жеттіңіз. Premium-ға жаңартыңыз.",
+
+"categoryLimitInfo": "Basic жоспарында {limit} санатқа дейін жасауға болады.",
+
+"categoryErrorEmpty": "Санат міндетті",
+"categoryErrorTooShort": "Санат тым қысқа",
+"categoryErrorTooLong": "Санат тым ұзын",
+"categoryErrorSymbols": "Санат тек таңбалардан тұра алмайды",
+"categoryErrorNumbers": "Санат тек сандардан тұра алмайды",
+
+"upgradeRequired": "Жаңарту қажет",
+"viewPremiumBenefits": "Premium артықшылықтарын көру",
+"createCategory": "Жасау",
+
+"addGroupTitle": "Топ қосу",
+"groupNameLabel": "Топ",
+"groupNameHint": "Топты енгізіңіз",
+
+"groupErrorEmpty": "Топ міндетті",
+"groupErrorTooShort": "Топ тым қысқа",
+"groupErrorTooLong": "Топ тым ұзын",
+"groupErrorSymbols": "Топ таңбаларды қамти алмайды",
+"groupErrorNumbers": "Топ сандарды қамти алмайды",
+"createGroup": "Жасау",
+
+"firstNameLabel": "Аты",
+"firstNameHint": "Атын енгізіңіз",
+
+"lastNameLabel": "Тегі",
+"lastNameHint": "Тегін енгізіңіз",
+
+"emailLabel": "Электрондық пошта",
+"loginPasswordHint": "Құпиясөзіңізді енгізіңіз",
+"registerPasswordHint": "Құпиясөз енгізіңіз",
+"passwordHelper": "Кемінде 8 таңба, әртүрлі түрлерімен",
+
+"passwordTooShort": "Тым қысқа",
+"passwordTooWeak": "Тым әлсіз",
+"passwordMedium": "Орташа",
+"passwordStrong": "Күшті",
+
+"errorFirstName": "Аты міндетті",
+"errorLastName": "Тегі міндетті",
+"errorEmailInvalid": "Дұрыс электрондық пошта мекенжайын енгізіңіз",
+"errorEmailInUse": "Бұл электрондық пошта мекенжайы әлдеқашан\nVaultara аккаунтымен байланыстырылған",
+"errorPasswordLength": "Құпиясөз кемінде сегіз таңбадан тұруы керек",
+"errorPasswordWeak": "Күштірек құпиясөз енгізіңіз",
+"errorGeneric": "Тіркелу сәтсіз аяқталды. Қайталап көріңіз",
+
+"createAccount": "Аккаунт жасау",
+"appName": "Vaultara",
+"authTagline": "Паспорттар, лицензиялар, карталар және басқа да маңызды құжаттар үшін жеке хабыңыз",
+"tabSignIn": "Кіру",
+"tabCreateAccount": "Аккаунт жасау",
+"signInFooterText": "Жеке Vaultara кеңістігіңізге кіру үшін кіріңіз және барлық жаңартуларды бақылауда ұстаңыз",
+"createAccountFooterText": "Маңызды ескертпелеріңізді сақтап қою және қажет болғанда қол жеткізу үшін Vaultara аккаунтын жасаңыз",
+
+"emailRequired": "Электрондық пошта мекенжайы міндетті",
+"passwordRequired": "Құпиясөз міндетті",
+"emailNotFound": "Қате электрондық пошта. Бұл электрондық поштамен\nVaultara аккаунты жоқ",
+"incorrectPassword": "Құпиясөз қате",
+
+"emailLabel": "Электрондық пошта мекенжайы",
+"emailHint": "Электрондық поштаны енгізіңіз",
+"passwordLabel": "Құпиясөз",
+"signIn": "Кіру",
+
+"categoryPersonalIdentification": "Жеке сәйкестендіру",
+"categoryDrivingAndVehicles": "Жүргізу және көліктер",
+"categoryTravelAndImmigration": "Саяхат және иммиграция",
+"categoryBankingAndCards": "Банк және карталар",
+"categoryInsuranceAndCover": "Сақтандыру және қорғау",
+"categoryHealthAndMedical": "Денсаулық және медицина",
+"categoryWorkAndProfessional": "Жұмыс және кәсіби",
+"categoryPropertyAndHousing": "Мүлік және тұрғын үй",
+"categoryHouseholdAndUtilities": "Үй шаруашылығы және коммуналдық қызметтер",
+
+"subcategoryPassports": "Паспорттар",
+"subcategoryIdCards": "Жеке куәліктер",
+"subcategoryResidencePermits": "Тұруға рұқсаттар",
+
+"subcategoryDrivingLicences": "Жүргізуші куәліктері",
+"subcategoryVehicleRegistrations": "Көлікті тіркеу құжаттары",
+"subcategoryRoadworthyCertificates": "Жарамдылық сертификаттары",
+"subcategoryVehicleInspectionCertificates": "Көлік тексеру сертификаттары",
+
+"subcategoryVisas": "Визалар",
+"subcategoryStudyPermits": "Оқуға рұқсаттар",
+"subcategoryWorkPermits": "Жұмысқа рұқсаттар",
+"subcategoryTravelInsuranceDocuments": "Саяхат сақтандыру құжаттары",
+
+"subcategoryDebitAndCreditCards": "Дебет және кредит карталары",
+"subcategoryStoreCards": "Дүкен карталары",
+"subcategoryFuelCards": "Жанармай карталары",
+"subcategoryVehicleInsurances": "Көлік сақтандырулары",
+"subcategoryPropertyInsurances": "Мүлік сақтандырулары",
+"subcategoryLifeInsurances": "Өмірді сақтандыру",
+"subcategoryHealthInsurances": "Денсаулық сақтандыруы",
+"subcategoryTravelInsurances": "Саяхат сақтандыруы",
+
+"subcategoryMedicalPrescriptions": "Медициналық рецепттер",
+"subcategoryOpticalPrescriptions": "Көзілдірік рецепттері",
+"subcategoryMedicalCertificates": "Медициналық анықтамалар",
+
+"subcategoryProfessionalLicences": "Кәсіби лицензиялар",
+"subcategoryProfessionalRegistrations": "Кәсіби тіркеулер",
+"subcategoryIndustryRegistrations": "Салалық тіркеулер",
+"subcategoryWorkAccessCards": "Жұмысқа кіру карталары",
+
+"subcategoryLeaseAgreements": "Жалдау келісімдері",
+"subcategoryAccessCardsAndTags": "Кіру карталары мен тегтер",
+"subcategoryParkingPermits": "Тұрақ рұқсаттары",
+"subcategorySecurityAccessPermits": "Қауіпсіздік рұқсаттары",
+
+"subcategoryElectricityAccounts": "Электр есепшоттары",
+"subcategoryWaterAccounts": "Су есепшоттары",
+"subcategoryInternetContracts": "Интернет келісімдері",
+"subcategorySecurityServiceContracts": "Қауіпсіздік қызметі келісімдері",
+
+"searchCategories": "Санаттарды іздеу",
+"filterAll": "Барлығы",
+"filterPreset": "Алдын ала орнатылған",
+"filterCustom": "Арнайы",
+"addCategoryTitle": "Санат қосу",
+"customLabel": "Арнайы",
+"subcategoriesLabel": "ішкі санаттар",
+"itemsLabel": "элементтер",
+
+"itemsExpiring": "{days} күнде {count} элементтің мерзімі бітеді",
+
+"pinnedEssentials": "Бекітілген маңыздылар",
+"pinnedHint": "Жиі ашатын санаттарды бекітіңіз.",
+"noCategoriesFound": "Санаттар табылмады",
+
+"searchGroups": "Топтарды іздеу",
+"addGroupTitle": "Топ қосу",
+
+"basicPlanGroupInfo": "Сіз Basic жоспардасыз.\nАлдын ала орнатылған топтарды көре аласыз.\nPremium-ға жаңартып, өз топтарыңызды жасаңыз.",
+
+"groupDeleted": "Топ жойылды",
+"undo": "БОЛДЫРМАУ",
+
+"groupTapHint": "Осы топқа элементтер қосу үшін түртіңіз.",
+"itemsInGroup": "Осы топтағы элементтер",
+"itemsInGroupHint": "Әр элементті жарамдылық мерзімімен қадағалаңыз.",
+"searchItems": "Элементтерді іздеу",
+"filterExpiringWithin": "{days} күн ішінде мерзімі бітетіндер",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Мерзімі өткен",
+"addItem": "Элемент қосу",
+"noItemsYet": "Әзірге элементтер жоқ.",
+
+"statusExpired": "Мерзімі өткен",
+"statusExpiresToday": "Бүгін мерзімі бітеді",
+"statusExpiresInOneDay": "1 күнде мерзімі бітеді",
+"statusExpiresInDays": "{days} күнде мерзімі бітеді",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Жарамды",
+
+"deleteCategoryTitle": "Санатты жою",
+"deleteCategoryMessage": "\"{name}\" санатын жойғыңыз келе ме?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Топты жою",
+"deleteGroupMessage": "\"{name}\" тобын жойғыңыз келе ме?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Элементті жою",
+"deleteItemMessage": "\"{name}\" жойғыңыз келе ме?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Бас тарту",
+"delete": "Жою",
+
+"homeWelcomeTitle": "Қош келдіңіз",
+
+"homeWelcomeFirstTitle": "Қош келдіңіз, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Қайта қош келдіңіз, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Барлығы",
+"homeWelcomeSubtitleGeneric": "Vaultara маңызды мерзімдерді бақылауға көмектеседі, ештеңе байқалмай мерзімі өтпейді.",
+
+"homeWelcomeSubtitleFirst": "Сізді көргенімізге қуаныштымыз. Vaultara маңызды күндер мен жазбаларды бір қауіпсіз жерде сақтауға көмектеседі.",
+
+"homeWelcomeSubtitleBack": "Қайта көргенімізге қуаныштымыз. Vaultara маңызды күндерді қарау үшін әрқашан дайын.",
+
+"insightEmptyTitle": "Әзірге ештеңе қосылмады",
+"insightEmptyBody": "Мерзімдерді бақылай бастаңыз, Vaultara сізді алда ұстауға көмектеседі.",
+
+"insightExpiresTodayTitle": "\"{name}\" бүгін мерзімі бітеді",
+"insightExpiresTodayBody": "Қазір тексеру деректерді дәл сақтайды.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" ертең мерзімі бітеді",
+"insightExpiresTomorrowBody": "Бүгін тексеру кейін уақыт үнемдейді.",
+
+"insightExpiresSoonTitle": "\"{name}\" {date} күні бітеді",
+"insightExpiresSoonBody": "Ертерек қарау жеңілдетеді.",
+
+"insightNextExpiryTitle": "Келесі мерзім — \"{name}\" {date}",
+"insightNextExpiryBody": "Қазір әрекет қажет емес, бірақ есте ұстаған жөн.",
+
+"insightClusteredTitle": "{month} айында бірнеше жазба аяқталады",
+"insightClusteredBody": "Бірге қарау уақыт үнемдейді.",
+
+"insightTopCategoryTitle": "Жазбалардың көбі {category} санатында",
+"insightTopCategoryBody": "Осы бөлім ең үлкен әсер береді.",
+
+"insightStableTitle": "Барлығы тұрақты",
+"insightStableBody": "Қазір назар аударатын мерзімдер жоқ.",
+
+"summaryAllTitle": "Барлық жазбалар",
+"summaryAllCaption": "Vaultara жүйесінде",
+"summarySoonTitle": "Жақында аяқталады",
+"summarySoonCaption": "30 күн ішінде",
+"summaryWeekTitle": "Осы апта",
+"summaryWeekCaption": "7 күнде аяқталады",
+"summaryExpiredTitle": "Аяқталған",
+"summaryExpiredCaption": "Мерзімі өткен",
+
+"stabilityStableTitle": "Тұрақтылық сақталған",
+"stabilityStableBody": "Жедел қауіптер жоқ.",
+
+"stabilityDecliningTitle": "Тұрақтылық төмендеуде",
+"stabilityDecliningBody": "Кейбір жазбалар аяқталды, басқалары жақындап қалды.",
+
+"stabilityWeakenedTitle": "Тұрақтылық әлсіреді",
+"stabilityWeakenedBody": "Аяқталған жазбалар сенімділікті төмендетеді.",
+
+"stabilityPressureTitle": "Қысым артуда",
+"stabilityPressureBody": "Бірнеше жазба жақында назар талап етеді.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Ескертпелер",
+"notesHint": "Ескертпелерді енгізіңіз",
+"editorReminderTitle": "Еске салу",
+"editorReminderNone": "Еске салу жоқ",
+"editorReminderOnExpiry": "Мерзімі біткен күні",
+"editorReminder7Days": "7 күн бұрын",
+"editorReminder30Days": "30 күн бұрын",
+"editorReminderCustom": "Таңдамалы",
+"daysBeforeExpiry": "мерзімге дейін күн",
+
+"reminderStage0Title": "Мерзім туралы еске салу",
+"reminderStage0Body": "{firstName}, сіздің {itemName} {days} күннен кейін аяқталады.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Еске салуды жалғастыру",
+"reminderStage1Body": "{firstName}, {itemName} әлі жаңартылған жоқ.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Мерзім жақындап қалды",
+"reminderStage2Body": "{itemName} мерзімі жақындап келеді.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Соңғы еске салу",
+"reminderFinalBody": "{firstName}, {itemName} қазір жаңартыңыз.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Қамту теңгерімі",
+"coverageAllRepresented": "Жазбаларыңыз барлық санаттарды қамтиды.",
+"coverageMissingNamed": "{count} санатта жазбалар жоқ: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "{count} санатта жазбалар жоқ, оның ішінде {names} және тағы {remaining} басқа.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Құпиясөзді пайдалану",
+"signInWithBiometrics": "Биометриямен кіру",
+"enableBiometricsTitle": "Биометриялық қауіпсіздікті қосу",
+"enableBiometricsBody": "Vaultara-ны қорғау үшін саусақ ізі немесе бет тануды пайдаланыңыз.",
+"enableBiometricsReason": "Vaultara үшін биометриялық ашуды қосу.",
+"notNow": "Қазір емес",
+"useBiometrics": "Биометрияны пайдалану",
+
+"recordsCalendarIntro": "Мерзімдерді қалай қарағыңыз келетінін таңдаңыз:\n\n• Қанша күн алға қарағыңыз келетінін енгізіңіз.\n• Немесе күнтізбеден нақты күнді таңдаңыз.\n\nVaultara сол күні мерзімі аяқталатын жазбаларды көрсетеді.",
+
+"showingRecordsRelative": "{time} мерзімі аяқталатын жазбалар көрсетілуде",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Таңдалған күні мерзімі аяқталатын жазбалар көрсетілуде",
+
+"noRecordsOnDate": "Бұл күні мерзімі аяқталатын жазбалар жоқ.",
+
+"recordEditorAddTitle": "Жазба қосу",
+"recordEditorEditTitle": "Жазбаны өңдеу",
+
+"editorRecordName": "Жазба атауы",
+"editorRecordNameHint": "Жазба атауын енгізіңіз",
+"recordEditorErrorName": "Жазба атауы міндетті",
+
+"recordsGroupTapHint": "Бұл топта жазбаларды қосу және бақылау үшін түртіңіз.",
+
+"recordsInGroup": "Осы топтағы жазбалар",
+
+"recordsInGroupHint": "Әрбір маңызды жазбаны оның мерзімімен бірге бақылаңыз.",
+
+"searchRecords": "Жазбаларды іздеу",
+
+"addRecord": "Жазба қосу",
+
+"noRecordsYet": "Әзірге жазбалар жоқ.",
+"deleteRecordTitle": "Жазбаны жою",
+
+"recordsInsightClusteredTitle": "Бірнеше жазба {month} айында аяқталады",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Жазбаларыңыздың көбі {category} санатында",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Барлық жазбалар",
+
+"recordsStabilityDecliningBody": "Кейбір жазбалардың мерзімі өтіп кетті, ал басқалары жақында аяқталады.",
+
+"recordsCoverageAllRepresented": "Жазбаларыңыз барлық санаттарды қамтиды.",
+
+"recordReminderStage0Body": "{firstName}, сіздің {recordName} {days} күннен кейін аяқталады.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, сіздің {recordName} әлі жаңартылған жоқ.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName} мерзімі жақындап келеді.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, {recordName} қазір жаңартыңыз.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Әзірге топтар жоқ",
+
+"recordsExpiring": "{count, plural, one {1 жазба {days} күннен кейін аяқталады} other {{count} жазба {days} күннен кейін аяқталады}}",
+
+"recordsGroupStats": "{records, plural, one {1 жазба} other {{records} жазба}} • {expiring} {days} күн ішінде аяқталады",
+
+"groupLabel": "{count, plural, one {{count} топ} other {{count} топ}}",
+
+"recordsLabel": "{count, plural, one {{count} жазба} other {{count} жазба}}",
+
+"forgotPassword": "Құпиясөзді ұмыттыңыз ба?",
+"forgotPasswordTitle": "Құпиясөзді қалпына келтіру",
+"forgotPasswordBody": "Электрондық поштаңызды енгізіңіз, біз сізге қалпына келтіру сілтемесін жібереміз.",
+"sendResetLink": "Қалпына келтіру сілтемесін жіберу",
+"passwordResetEmailSent": "Құпиясөзді қалпына келтіру хаты жіберілді.",
+"verifyEmailToContinue": "Кіру үшін электрондық поштаңызды растаңыз",
+
+"changeEmailTitle": "Электрондық поштаны өзгерту",
+"newEmailHint": "Жаңа электрондық поштаны енгізіңіз",
+"sendVerificationEmail": "Растау хатын жіберу",
+
+"deleteAccountTitle": "Тіркелгіні жою",
+"deleteAccountWarning": "Бұл әрекет тіркелгіңізді және барлық деректерді біржола жояды.\nБұл қайтарылмайды.",
+"deleteAccountConfirm": "Тіркелгіні біржола жою",
+
+"supportTitle": "Қолдау",
+"supportSubtitle": "Көмек қажет болса немесе сұрақтарыңыз болса, бізге хабарласыңыз.",
+"supportEmailSubject": "Vaultara қолдау сұрауы",
+"supportEmailError": "Электрондық пошта қолданбасын ашу мүмкін болмады.",
+
+"passwordResetEmailFailed": "Құпиясөзді қалпына келтіру хатын жіберу мүмкін болмады.",
+
+"loggedInPasswordResetBody": "Құпиясөзді қалпына келтіру сілтемесін мына мекенжайға жібереміз:\n{email}",
+
+"accountManagementTitle": "Тіркелгіні басқару",
+"changeEmailSubtitle": "Тіркелгіңізге байланысты электрондық поштаны жаңартыңыз.",
+"changePasswordTitle": "Құпиясөзді өзгерту",
+"changePasswordSubtitle": "Қауіпсіз өзгерту үшін сізге сілтеме жібереміз.",
+
+"deleteAccountSubtitle": "Vaultara тіркелгісін біржола жою.",
+
+"biometricAuthReason": "Vaultara тіркелгісіне кіру үшін аутентификация.",
+
+"verifyEmailTitle": "Электрондық поштаны растау",
+"verifyEmailBody": "Растау хаты жіберілді. Ашып, мекенжайды растаңыз, содан кейін осында қайта оралыңыз.",
+"verifyEmailConfirmedButton": "Электрондық поштаны растадым",
+"verifyEmailResendButton": "Растау хатын қайта жіберу",
+"verifyEmailSending": "Жіберілуде...",
+
+"navHome": "Басты",
+"navCategories": "Санат",
+"navInsights": "Талдау",
+"navCalendar": "Күнтізбе",
+
+"tutorialCancel": "Бас тарту",
+"tutorialNext": "Келесі",
+"tutorialEnd": "Нұсқаулықты аяқтау",
+
+"softDeleteCategory": "Санат",
+"softDeleteGroup": "Топ",
+"softDeleteRecord": "Жазба",
+
+"softDeleteTitle": "{type} Жуырда жойылғандарға жылжыту",
+"softDeleteMessage": "{type} \"{name}\" Жуырда жойылғандарға жылжытылады.\n\nОны 30 күн ішінде қалпына келтіруге болады. Одан кейін біржола жойылады.",
+"softDeleteMove": "Жылжыту",
+"@recordsExpiring": { "description": "Мерзімі аяқталатын жазбалар саны", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "Топ статистикасы", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "Топтар саны", "placeholders": { "count": { "type": "num"} } },
+"@recordsLabel": { "description": "Жазбалар саны", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "Құпиясөзді қалпына келтіру хатын жібереді", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "Уақытша жою тақырыбы", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "Уақытша жою түсіндірмесі", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "Жақында жойылғандар",
+"categories": "Санаттар",
+"groups": "Топтар",
+"records": "Жазбалар",
+"restore": "Қалпына келтіру",
+"deletePermanently": "Біржола жою",
+
+"recentlyDeletedBanner": "Жойылған {type} элементтері біржола жойылғанға дейін 30 күн сақталады.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Жойылған {type} іздеу",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Әзірге жойылған {type} жоқ",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Санатты түртіп, оның топтарын көріп, жазбаларды басқарыңыз.",
+"groupsHint": "Топтар бұл санаттағы жазбаларды ұйымдастырады. Топты түртіп, жазбаларды басқарыңыз.",
+"notLoggedIn": "Кіру орындалмаған",
+
+"recordsInsideGroupHint": "Бұл — осы топтағы жазбалар.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" Жақында жойылғандарға ауыстырылды",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Төлқұжат"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" сәтті жойылды",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Жүргізуші куәлігі"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" сәтті жаңартылды",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Виза"} } },
+
+"snackAddedSuccessfully": "\"{name}\" сәтті қосылды",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Сақтандыру"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" сәтті қалпына келтірілді",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Төлқұжат"} } },
+
+"snackFreeLimitReached": "Тегін шектеу жетті ({current}/{limit}). Көбірек қосу үшін жаңартыңыз.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Барлық жазбаларды іздеу",
+"globalSearchHint": "Жазба атауын, санатты немесе топты енгізіңіз",
+"globalSearchNoMatches": "Іздеуіңізге сәйкес жазбалар табылмады.",
+"snackNoRecordsToSearch": "Іздеу үшін жазбалар жоқ. Бірнеше жазба қосыңыз, Vaultara оларды автоматты түрде индекстейді.",
+
+"recoveryCentreTitle": "Қалпына келтіру орталығы",
+"recoveryCentreSubtitle": "Жойылған жазбаларды қалпына келтіріңіз немесе біржола жойыңыз.",
+
+"plan_premium": "Премиум",
+"plan_free": "Тегін",
+
+"profile_app_settings_title": "Қолданба баптаулары",
+"profile_privacy_security_title": "Құпиялылық және қауіпсіздік",
+"profile_biometric_on": "Биометриялық құлып осы құрылғыда қосулы.",
+"profile_biometric_off": "Биометриялық құлып өшірулі.",
+"profile_biometric_enable_reason": "Биометриялық құлыпты қосу үшін жеке басыңызды растаңыз.",
+"profile_biometric_disable_reason": "Биометриялық құлыпты өшіру үшін жеке басыңызды растаңыз.",
+"profile_account_management_title": "Тіркелгіні басқару",
+"profile_premium_active_title": "Premium белсенді",
+"profile_premium_upgrade_title": "Premium-ға жаңарту",
+"profile_premium_active_subtitle": "Кеңейтілген ескертпелер ашылды.",
+"profile_premium_upgrade_subtitle": "Кеңейтілген ескертпелер мен шексіз ұйымдастыруды ашыңыз.",
+"profile_manage_cancel_hint": "Google Play арқылы кез келген уақытта басқаруға немесе бас тартуға болады.",
+"profile_manage_subscription_button": "Жазылымды басқару",
+"plansTitle": "Жоспарды таңдаңыз",
+"plansTrialBanner": "7 күндік тегін сынақпен бастаңыз.\nКез келген уақытта бас тартыңыз.",
+"plansLoading": "Жүктелуде…",
+"plansStartFreeTrial": "Тегін сынақты бастау",
+"plansNoChargeTodayFooter": "7 күн тегін · Бүгін төлем жоқ",
+
+"planFreeTitle": "Тегін",
+"planFreeSubtitle": "Бастау үшін",
+"planPremiumMonthlyTitle": "Premium айлық",
+"planPremiumYearlyTitle": "Premium жылдық",
+"planPerMonth": "айына",
+"planPerYear": "жылына",
+
+"planBadgeCurrent": "Ағымдағы жоспар",
+"planBadgePopular": "Танымал",
+"planBadgeBestValue": "Ең тиімді",
+
+"planYouAreOnThisPlan": "Сіз қазір осы жоспардасыз.",
+
+"planFeatureUpToRecords": "{count} жазбаға дейін",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Теңшелетін санаттар ({count}-ке дейін)",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Алдын ала орнатылған ішкі санаттар",
+"planFeatureCloudStorage": "Бұлтты сақтау",
+"planFeatureSmartExpiryInsights": "Ақылды мерзім ескертпелері",
+"planFeatureCoverageBalance": "Қамту теңгерімі",
+"planFeatureRecordStabilityTracking": "Жазбалардың тұрақтылығын бақылау",
+
+"planFeatureUnlimitedRecords": "Шексіз жазбалар",
+"planFeatureUnlimitedCategories": "Шексіз санаттар",
+"planFeatureCustomSubcategories": "Теңшелетін ішкі санаттар",
+"planFeatureMultipleRemindersPerRecord": "Бірнеше ескертпе",
+"planFeatureAdvancedReminderTiming": "Кеңейтілген уақыттау",
+"planFeatureAutomaticFollowUps": "Автоматты еске салулар",
+
+"planFeatureEverythingInMonthly": "Айлық жоспардағы барлығы",
+"planFeatureSavePercentComparedToMonthly": "Айлықпен салыстырғанда {percent}% үнемдеңіз",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Ұзақ мерзімді ең тиімді таңдау",
+
+"editorReminderLabel": "Еске салу",
+"editorReminderSelectOptional": "Еске салуды таңдаңыз (міндетті емес)",
+"editorReminderOnExpiry": "Мерзімі өткен күні",
+"editorReminderDaysBefore": "Мерзімге {days} күн қалғанда",
+"editorFreeItemsCount": "Тегін элементтер: {used}/{limit}",
+"editorExpiryPastWarning": "Жарамдылық мерзімі өтіп кеткен.",
+"editorExpiryTodayWarning": "Бұл жазбаның мерзімі бүгін бітеді.",
+"editorErrorExpiryPast": "Жарамдылық мерзімі өткен күн болмауы тиіс.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Бүгінгі шолу",
+"tutorialBannerTitle": "Жылдам шолу",
+"tutorialBannerBody": "Бір минутта қайдан іздеу, қалай жазба қосу және шолулар нені білдіретінін біліңіз.",
+"tutorialBannerStart": "Оқулықты бастау",
+"tutorialBannerDismiss": "Қазір емес",
+"authErrorUserDisabled": "Бұл есептік жазба өшірілген.",
+"authErrorNetwork": "Желі қатесі. Интернетті тексеріп, қайта көріңіз.",
+"authErrorTooManyRequests": "Тым көп әрекет. Кейінірек қайталап көріңіз.",
+"authErrorSignInFailed": "Кіру сәтсіз аяқталды. Қайта көріңіз.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium қосылды",
+"snackPremiumRestored": "Premium қалпына келтірілді",
+"passwordNeedLower": "Кіші әріп болуы керек",
+"passwordNeedUpper": "Үлкен әріп болуы керек",
+"passwordNeedNumber": "Сан болуы керек",
+"passwordNeedSymbol": "Таңба болуы керек",
+"editorFreeItemsCount": "Тегін элементтер: {used}/{limit}",
+"editorExpiryPastWarning": "Жарамдылық мерзімі өтіп кеткен.",
+"editorExpiryTodayWarning": "Бұл жазбаның мерзімі бүгін бітеді.",
+"editorErrorExpiryPast": "Жарамдылық мерзімі өткен күн болмауы тиіс.",
+"todayInsightsTitle": "Бүгінгі шолу",
+"tutorialBannerTitle": "Жылдам шолу",
+"tutorialBannerBody": "Бір минутта қайдан іздеу, қалай жазба қосу және шолулар нені білдіретінін біліңіз.",
+"tutorialBannerStart": "Нұсқаулықты бастау",
+"tutorialBannerDismiss": "Қазір емес",
+"authErrorUserDisabled": "Бұл есептік жазба өшірілген.",
+"authErrorNetwork": "Желі қатесі. Интернетті тексеріп, қайта көріңіз.",
+"authErrorTooManyRequests": "Тым көп әрекет. Кейінірек қайта көріңіз.",
+"authErrorSignInFailed": "Кіру сәтсіз аяқталды. Қайта көріңіз.",
+"ok": "Жарайды",
+"tutorialHomeSearch": "Бақылап жүрген жазбаларды тез табу үшін іздеу жолағын пайдаланыңыз.",
+"tutorialHomeFab": "Мұнда алғашқы жазбаңызды қосыңыз.\nОрнын таңдаңыз, ескертпелер қосыңыз және жарамдылық мерзімін белгілеңіз.",
+"tutorialHomeSummary": "Жазбалар көбейген сайын бұл бөлім жақында аяқталатындарын көрсетеді.",
+"tutorialHomeInsight": "Бұл ақылды шолу үлгілер мен жақындап қалған мерзімдерді көрсетеді.",
+"tutorialHomeCoverage": "Қамту тепе-теңдігі жазбалардың барлық санаттарға таралуын көрсетеді.",
+"tutorialHomeStability": "Тұрақтылық жазбалардың уақыт өте сенімділігін көрсетеді.",
+"profile_account_management_subtitle": "Электрондық поштаны, құпиясөзді өзгерту немесе аккаунтты жою.",
+"confirmIdentityTitle": "Жеке басын растау",
+"confirm": "Растау",
+"profile_sign_out_title": "Шығу",
+"profile_sign_out_subtitle": "Осы құрылғыда Vaultara-дан шығу",
+"profile_sign_out_confirm_title": "Шығасыз ба?",
+"profile_sign_out_confirm_body": "Есептік жазбаға кіру үшін қайта кіру қажет болады.",
+"profile_sign_out_action": "Шығу",
+"todayInsightsAudioHint": "Аудио қалайсыз ба? Дыбыс белгішесін пайдаланыңыз.",
+"category2Label": "Санат",
+"enable2BiometricsBody": "Vaultara есептік жазбаңызды қорғау үшін саусақ ізі тануды қолданыңыз.",
+"snackNotificationsDisabled": "Хабарландырулар өшірулі. Еске салғыштарды алу үшін қосыңыз.",
+"openSettings": "Параметрлерді ашу",
+
+"reminderOnExpiryTitle": "Бүгін аяқталады",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Сәлем {firstName}, \"{itemName}\" бүгін аяқталады.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Тегін санаттар: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Тегін шектеуден қанша тегін санат пайдаланылғанын көрсетеді.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Ескертпелер қосу (міндетті емес)",
+"apply": "Қолдану",
+"smartInsightExpiresTodayHeading": "Бүгін мерзімі аяқталады",
+"smartInsightExpiresTodaySingleBody": "{name} құжатының мерзімі бүгін аяқталады. Оны өзекті күйде сақтау үшін қазір әрекет етіңіз.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} және тағы {extra} құжаттың мерзімі бүгін аяқталады.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Назар аударуды қажет етеді",
+"smartInsightSilentRiskBody": "{name} құжатының мерзімі {days} күннен кейін аяқталады және еске салғыш орнатылмаған. Мәліметтердің әлі де дұрыс екеніне көз жеткізіңіз.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Бірнеше жақын жаңарту",
+"smartInsightRenewalTwinBodyTwo": "{a} және {b} құжаттарының мерзімі үш апта ішінде аяқталады. Алдын ала жоспарлаңыз.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} және {c} құжаттарының мерзімі үш апта ішінде аяқталады. Алдын ала жоспарлаңыз.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} және тағы {extra} құжаттың мерзімі үш апта ішінде аяқталады. Алдын ала жоспарлаңыз.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Алдағы топ",
+"smartInsightClusterBody": "{category} санатындағы {count} құжаттың мерзімі келесі екі айда аяқталады. Оларды бірге жаңартуды қарастырыңыз.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Алда тыныш кезең",
+"smartInsightQuietPeriodBody": "Келесі {days} күн ішінде ештеңенің мерзімі аяқталмайды. Келесі жаңарту күні — {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Барлығы жаңартылған",
+"smartInsightAllCaughtUpBody": "Алдағы {count} мерзімнің барлығына еске салғыш қойылған. Қазіргі уақытта назарыңызды қажет ететін ештеңе жоқ.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Барлығы жаңартылған. Қазіргі уақытта назарыңызды қажет ететін ештеңе жоқ.",
+"smartInsightNoRecordsHeading": "Алғашқы жазбаңызды қосыңыз",
+"smartInsightNoRecordsBody": "Құжаттарыңызды қадағалауды бастаңыз, сонда Vaultara мұнда ақылды ұсыныстарды көрсетеді.",
+"expiryTimelineTitle": "Аяқталу уақыт шкаласы",
+"expiryTimelineSubtitle": "Сол айда аяқталатын жазбаларды көру үшін айды басыңыз",
+"expiryTimelineDetailCount": "{count, plural, =1{1 жазба} other{{count} жазба}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Алдағы",
+"summaryUpcomingCaption": "Келесі 30 күн ішінде",
+"summaryUrgentTitle": "Шұғыл",
+"summaryUrgentCaption": "Келесі 7 күн ішінде"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

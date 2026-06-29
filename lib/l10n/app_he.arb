@@ -83,7 +83,7 @@
   "categoryErrorEmpty": "שם קטגוריה נדרש",
   "categoryErrorTooShort": "שם הקטגוריה קצר מדי",
   "categoryErrorTooLong": "שם הקטגוריה ארוך מדי",
-  "categoryErrorSymbols": "שם הקטגוריה לא יכול להכיל רק סמלים",
+  "categoryErrorSymbols": "שם הקטגוריה לא יכול להכיל סמלים",
   "categoryErrorNumbers": "שם הקטגוריה לא יכול להכיל מספרים",
 
   "upgradeRequired": "נדרש שדרוג",
@@ -101,5 +101,791 @@
   "groupErrorSymbols": "שם הקבוצה לא יכול להכיל סמלים",
   "groupErrorNumbers": "שם הקבוצה לא יכול להכיל מספרים",
 
-  "createGroup": "צור"
+  "createGroup": "צור",
+
+  "registerTitle": "יצירת חשבון",
+
+  "firstNameLabel": "שם פרטי",
+  "firstNameHint": "הזן שם פרטי",
+  "errorFirstName": "שם פרטי נדרש",
+
+  "lastNameLabel": "שם משפחה",
+  "lastNameHint": "הזן שם משפחה",
+  "errorLastName": "שם משפחה נדרש",
+
+  "emailLabel": "דוא\"ל",
+  "errorEmailInvalid": "הזן כתובת דוא\"ל תקינה.",
+  "errorEmailInUse": "כתובת דוא\"ל זו כבר משויכת לחשבון Vaultara.",
+
+  "passwordLabel": "סיסמה",
+  "passwordHelper": "לפחות 8 תווים עם סוגים שונים.",
+
+  "passwordTooShort": "קצר מדי",
+  "passwordTooWeak": "חלש מדי",
+  "passwordMedium": "בינוני",
+  "passwordStrong": "חזק",
+
+  "errorPasswordLength": "הסיסמה חייבת להכיל לפחות 8 תווים.",
+  "errorPasswordWeak": "בחר סיסמה חזקה יותר.",
+
+  "errorGeneric": "ההרשמה נכשלה. נסה שוב.",
+
+  "createAccount": "צור חשבון",
+  "appName": "Vaultara",
+"authTagline": "המרכז האישי שלך לדרכונים רישיונות כרטיסים ודברים חשובים אחרים",
+"tabSignIn": "התחברות",
+"tabCreateAccount": "יצירת חשבון",
+"signInFooterText": "התחבר כדי לגשת למרחב האישי שלך ב Vaultara ולשמור על שליטה בכל חידוש",
+"createAccountFooterText": "צור חשבון Vaultara כדי לגבות תזכורות חשובות ולגשת אליהן בכל עת",
+  "emailNotFound": "אימייל שגוי.\nלא קיים חשבון Vaultara עם אימייל זה",
+  "incorrectPassword": "סיסמה שגויה",
+  "emailLabel": "דוא״ל",
+  "passwordLabel": "סיסמה",
+ "emailRequired": "כתובת האימייל שלך נדרשת",
+"passwordRequired": "הסיסמה שלך נדרשת",
+"registerPasswordHint": "הזן סיסמה",
+"loginPasswordHint": "הזן את הסיסמה שלך",
+"emailHint": "הזן את כתובת האימייל שלך",
+  "signIn": "התחברות",
+  "categoryPersonalIdentification": "זיהוי אישי",
+  "categoryDrivingAndVehicles": "נהיגה וכלי רכב",
+  "categoryTravelAndImmigration": "נסיעות והגירה",
+  "categoryBankingAndCards": "בנקאות וכרטיסים",
+  "categoryInsuranceAndCover": "ביטוח וכיסוי",
+  "categoryHealthAndMedical": "בריאות ורפואה",
+  "categoryWorkAndProfessional": "עבודה ומקצוע",
+  "categoryPropertyAndHousing": "נדל״ן ודיור",
+  "categoryHouseholdAndUtilities": "משק בית ושירותים",
+
+  "subcategoryPassports": "דרכונים",
+  "subcategoryIdCards": "תעודות זהות",
+  "subcategoryResidencePermits": "אישורי שהייה",
+
+  "subcategoryDrivingLicences": "רישיונות נהיגה",
+  "subcategoryVehicleRegistrations": "רישום כלי רכב",
+  "subcategoryRoadworthyCertificates": "אישורי כשירות",
+  "subcategoryVehicleInspectionCertificates": "אישורי בדיקת רכב",
+
+  "subcategoryVisas": "אשרות",
+  "subcategoryStudyPermits": "אישורי לימודים",
+  "subcategoryWorkPermits": "אישורי עבודה",
+  "subcategoryTravelInsuranceDocuments": "מסמכי ביטוח נסיעות",
+
+  "subcategoryDebitAndCreditCards": "כרטיסי חיוב ואשראי",
+  "subcategoryStoreCards": "כרטיסי חנויות",
+  "subcategoryFuelCards": "כרטיסי דלק",
+
+  "subcategoryVehicleInsurances": "ביטוחי רכב",
+  "subcategoryPropertyInsurances": "ביטוחי נכסים",
+  "subcategoryLifeInsurances": "ביטוחי חיים",
+  "subcategoryHealthInsurances": "ביטוחי בריאות",
+  "subcategoryTravelInsurances": "ביטוחי נסיעות",
+
+  "subcategoryMedicalPrescriptions": "מרשמים רפואיים",
+  "subcategoryOpticalPrescriptions": "מרשמי אופטיקה",
+  "subcategoryMedicalCertificates": "אישורים רפואיים",
+
+  "subcategoryProfessionalLicences": "רישיונות מקצועיים",
+  "subcategoryProfessionalRegistrations": "רישומים מקצועיים",
+  "subcategoryIndustryRegistrations": "רישומי תעשייה",
+  "subcategoryWorkAccessCards": "כרטיסי גישה לעבודה",
+
+  "subcategoryLeaseAgreements": "הסכמי שכירות",
+  "subcategoryAccessCardsAndTags": "כרטיסי ותגי גישה",
+  "subcategoryParkingPermits": "אישורי חניה",
+  "subcategorySecurityAccessPermits": "אישורי גישה ביטחוניים",
+
+  "subcategoryElectricityAccounts": "חשבונות חשמל",
+  "subcategoryWaterAccounts": "חשבונות מים",
+  "subcategoryInternetContracts": "חוזי אינטרנט",
+  "subcategorySecurityServiceContracts": "חוזי שירותי אבטחה",
+   "searchCategories": "חיפוש קטגוריות",
+  "filterAll": "הכול",
+  "filterPreset": "מוגדרות מראש",
+  "filterCustom": "מותאמות אישית",
+  "addCategoryTitle": "הוסף קטגוריה",
+  "customLabel": "מותאמת אישית",
+  "subcategoriesLabel": "תתי־קטגוריות",
+  "itemsLabel": "פריטים",
+  "itemsExpiring": "{count} פריטים יפוגו בעוד {days} ימים",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "פריטים מוצמדים",
+  "pinnedHint": "הצמד קטגוריות שאתה פותח לעיתים קרובות כדי שישארו בראש הרשימה.",
+  "noCategoriesFound": "לא נמצאו קטגוריות",
+  "searchGroups": "חיפוש קבוצות",
+  "addGroupTitle": "הוסף קבוצה",
+  "basicPlanGroupInfo": "אתה משתמש בתוכנית הבסיסית.\nניתן לצפות בקבוצות המוגדרות מראש בקטגוריה זו.\nשדרג ל-Premium כדי ליצור קבוצות משלך.",
+  "groupDeleted": "הקבוצה נמחקה",
+  "undo": "בטל",
+  "groupStats": "{items} פריטים • {expiring} יפוגו בתוך {days} ימים",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "הקש כדי להוסיף ולעקוב אחר פריטים בקבוצה זו.",
+   "itemsInGroup": "פריטים בקבוצה זו",
+  "itemsInGroupHint": "עקוב אחר כל פריט חשוב עם תאריך התפוגה שלו כדי לחדש בזמן.",
+  "searchItems": "חפש פריטים",
+  "filterAll": "הכול",
+  "filterExpiringWithin": "פג תוקף בתוך {days} ימים",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "פג תוקף",
+  "addItem": "הוסף פריט",
+  "noItemsYet": "אין פריטים עדיין.",
+
+  "statusExpired": "פג תוקף",
+  "statusExpiresToday": "פג תוקף היום",
+  "statusExpiresInOneDay": "פג תוקף בעוד יום אחד",
+  "statusExpiresInDays": "פג תוקף בעוד {days} ימים",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "בתוקף",
+
+  "deleteCategoryTitle": "מחק קטגוריה",
+  "deleteCategoryMessage": "האם אתה בטוח שברצונך למחוק את הקטגוריה \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "מחק קבוצה",
+  "deleteGroupMessage": "האם אתה בטוח שברצונך למחוק את הקבוצה \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "מחק פריט",
+  "deleteItemMessage": "האם אתה בטוח שברצונך למחוק את \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "ביטול",
+  "delete": "מחק",
+  "homeWelcomeTitle": "ברוכים הבאים",
+
+  "homeWelcomeFirstTitle": "ברוכים הבאים, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "ברוך שובך, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara עוזרת לך לעקוב אחר תאריכי תפוגה חשובים כדי ששום דבר לא יישכח.",
+
+  "homeWelcomeSubtitleFirst":
+    "שמחים לראות אותך כאן. Vaultara עוזרת לך להישאר מאורגן על ידי שמירת תאריכים ורשומות חשובות במקום בטוח אחד.",
+
+  "homeWelcomeSubtitleBack":
+    "שמחים לראות אותך שוב. Vaultara כאן בכל פעם שתרצה לבדוק את התאריכים והרשומות החשובות שלך.",
+     "insightEmptyTitle": "עדיין לא הוספת דבר",
+  "insightEmptyBody": "כשתתחיל לעקוב אחרי תאריכים חשובים, Vaultara תעזור לך להקדים פקיעות.",
+
+  "insightExpiresTodayTitle": "\"{name}\" פג היום",
+  "insightExpiresTodayBody": "בדיקה קצרה יכולה לשמור על הדיוק.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" פג מחר",
+  "insightExpiresTomorrowBody": "בדיקה עכשיו עשויה לחסוך זמן אחר כך.",
+
+  "insightExpiresSoonTitle": "\"{name}\" פג ב־{date}",
+  "insightExpiresSoonBody": "טיפול מוקדם הופך את הדברים לפשוטים יותר.",
+
+  "insightNextExpiryTitle": "הפקיעה הבאה היא \"{name}\" ב־{date}",
+  "insightNextExpiryBody": "אין צורך בפעולה כרגע.",
+
+  "insightClusteredTitle": "מספר פריטים פגים סביב {month}",
+  "insightClusteredBody": "בדיקה משותפת יכולה לחסוך זמן.",
+
+  "insightTopCategoryTitle": "רוב הפריטים נמצאים בקטגוריה {category}",
+  "insightTopCategoryBody": "זה המקום עם ההשפעה הגדולה ביותר.",
+
+  "insightStableTitle": "הכול יציב",
+  "insightStableBody": "אין פקיעות קרובות שדורשות תשומת לב.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "כל הפריטים",
+"summaryAllCaption": "במעקב ב-Vaultara",
+"summarySoonTitle": "עומד לפוג",
+"summarySoonCaption": "בתוך 30 יום",
+"summaryWeekTitle": "השבוע",
+"summaryWeekCaption": "יפוג תוך 7 ימים",
+"summaryExpiredTitle": "פג תוקף",
+"summaryExpiredCaption": "תאריך התוקף עבר",
+"stabilityStableTitle": "הכול נראה יציב",
+"stabilityStableBody": "הרשומות שלך אינן מציגות סיכונים מיידיים או מצטברים.",
+
+"stabilityDecliningTitle": "היציבות נחלשת",
+"stabilityDecliningBody": "חלק מהפריטים פגו ואחרים מתקרבים לפקיעה.",
+
+"stabilityWeakenedTitle": "יציבות מוחלשת",
+"stabilityWeakenedBody": "נוכחות של רשומות שפגו מפחיתה את האמינות הכללית.",
+
+"stabilityPressureTitle": "הלחץ גובר",
+"stabilityPressureBody": "מספר רשומות ידרשו תשומת לב בקרוב כדי לשמור על יציבות.",
+"editorNotes": "הערות",
+"notesHint": "הזן הערות",
+"editorReminderTitle": "תזכורת",
+"editorReminderNone": "ללא תזכורת",
+"editorReminderOnExpiry": "בתאריך התפוגה",
+"editorReminder7Days": "7 ימים לפני התפוגה",
+"editorReminder30Days": "30 ימים לפני התפוגה",
+"editorReminderCustom": "מותאם אישית",
+"daysBeforeExpiry": "ימים לפני התפוגה",
+"reminderStage0Title": "תזכורת תפוגה",
+"reminderStage0Body": "{firstName}, תוקף {itemName} יפוג בעוד {days} ימים.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "תזכורת מעקב",
+"reminderStage1Body": "{firstName}, {itemName} עדיין לא עודכן.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "התפוגה מתקרבת",
+"reminderStage2Body": "תאריך התפוגה של {itemName} מתקרב.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "תזכורת אחרונה",
+"reminderFinalBody": "{firstName}, אנא עדכן את {itemName} כעת.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "איזון כיסוי",
+"coverageAllRepresented": "הרשומות שלך כוללות פריטים בכל הקטגוריות.",
+"coverageMissingNamed": "לא נמצאו רשומות ב־{count} קטגוריות: {names}.",
+"coverageMissingSummary": "לא הוספת אף רשומה תחת {count} קטגוריות, כולל {names} ועוד {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "השתמש בסיסמה",
+"signInWithBiometrics": "התחברות באמצעות ביומטריה",
+"enableBiometricsTitle": "הפעלת אבטחה ביומטרית",
+"enableBiometricsBody": "השתמש בטביעת אצבע או זיהוי פנים כדי להגן על Vaultara.",
+"enableBiometricsReason": "הפעלת פתיחה ביומטרית עבור Vaultara.",
+"notNow": "לא עכשיו",
+"useBiometrics": "השתמש בביומטריה",
+"recordsCalendarIntro":
+  "בחר כיצד ברצונך לבדוק את תאריכי התפוגה:\n\n• הזן כמה ימים מהיום תרצה להסתכל קדימה.\n• או בחר תאריך מסוים בלוח השנה.\n\nVaultara תציג אילו רשומות מגיעות לתאריך התפוגה שלהן באותו יום.",
+
+"showingRecordsRelative": "מוצגות רשומות שפגות תוך {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "מוצגות רשומות שפגות בתאריך שנבחר",
+"noRecordsOnDate": "אין רשומות המוגדרות לפוג בתאריך זה.",
+
+"recordEditorAddTitle": "הוסף רשומה",
+"recordEditorEditTitle": "ערוך רשומה",
+
+"editorRecordName": "שם הרשומה",
+"editorRecordNameHint": "הזן שם רשומה",
+"recordEditorErrorName": "שם הרשומה נדרש",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "הקש כדי להוסיף ולעקוב אחר רשומות בקבוצה זו.",
+
+"recordsInGroup": "רשומות בקבוצה זו",
+"recordsInGroupHint":
+  "עקוב אחר כל רשומה חשובה עם תאריך התפוגה שלה כדי לחדש אותה בזמן.",
+
+"searchRecords": "חפש רשומות",
+"addRecord": "הוסף רשומה",
+"noRecordsYet": "אין רשומות עדיין.",
+
+"deleteRecordTitle": "מחק רשומה",
+
+"recordsInsightClusteredTitle":
+  "מספר רשומות פגות סביב {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "רוב הרשומות שלך משויכות לקטגוריה {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "כל הרשומות",
+
+"recordsStabilityDecliningBody":
+  "חלק מהרשומות כבר פגו ואחרות מתקרבות לתפוגה.",
+
+"recordsCoverageAllRepresented":
+  "הרשומות שלך מכסות את כל הקטגוריות.",
+
+"recordReminderStage0Body":
+  "{firstName}, הרשומה שלך {recordName} תפוג בעוד {days} ימים.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, הרשומה שלך {recordName} טרם עודכנה.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "תאריך התפוגה של {recordName} מתקרב.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, אנא עדכן את {recordName} כעת.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "עדיין אין קבוצות",
+"recordsExpiring": "{count, plural, one {רשומה אחת פגה בעוד {days} ימים} other {{count} רשומות פגות בעוד {days} ימים}}",
+"recordsGroupStats": "{records, plural, one {רשומה אחת} other {{records} רשומות}} • {expiring} בתוך {days} ימים",
+"groupLabel": "{count, plural, one {{count} קבוצה} other {{count} קבוצות}}",
+"recordsLabel": "{count, plural, one {{count} רשומה} other {{count} רשומות}}",
+"forgotPassword": "שכחת סיסמה?",
+  "forgotPasswordTitle": "איפוס סיסמה",
+  "forgotPasswordBody": "הזן את כתובת הדוא״ל שלך ונשלח לך קישור לאיפוס הסיסמה.",
+  "sendResetLink": "שלח קישור",
+  "passwordResetEmailSent": "נשלח אליך אימייל לאיפוס הסיסמה.",
+  "verifyEmailToContinue": "אנא אמת את כתובת האימייל שלך לפני ההתחברות",
+  "changeEmailTitle": "שינוי כתובת אימייל",
+"newEmailHint": "הזן את כתובת האימייל החדשה שלך",
+"sendVerificationEmail": "שלח אימייל אימות",
+"deleteAccountTitle": "מחיקת חשבון",
+"deleteAccountWarning": "פעולה זו תמחק לצמיתות את החשבון שלך ואת כל הנתונים השמורים.\nלא ניתן לבטל פעולה זו.",
+"deleteAccountConfirm": "מחיקת חשבון לצמיתות",
+"supportTitle": "תמיכה",
+"supportSubtitle": "צור קשר אם אתה זקוק לעזרה או שיש לך שאלות.",
+"supportEmailSubject": "בקשת תמיכה של Vaultara",
+"supportEmailError": "לא ניתן לפתוח את אפליקציית האימייל.",
+"passwordResetEmailFailed": "לא ניתן לשלוח אימייל לאיפוס סיסמה.",
+"loggedInPasswordResetBody": "נשלח קישור לאיפוס סיסמה אל:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "ניהול חשבון",
+"changeEmailTitle": "שינוי כתובת אימייל",
+"changeEmailSubtitle": "עדכן את כתובת האימייל המשויכת לחשבון שלך.",
+"changePasswordTitle": "שינוי סיסמה",
+"changePasswordSubtitle": "נשלח אליך קישור בדוא״ל לשינוי הסיסמה בצורה מאובטחת.",
+"deleteAccountTitle": "מחיקת חשבון",
+"deleteAccountSubtitle": "מחיקה לצמיתות של חשבון Vaultara שלך.",
+"biometricAuthReason": "אמת את זהותך כדי לגשת לחשבון Vaultara שלך",
+"verifyEmailTitle": "אמת את כתובת הדוא\"ל שלך",
+"verifyEmailBody": "שלחנו הודעת אימות לתיבת הדואר שלך. פתח אותה ואמת את כתובת הדוא\"ל, ולאחר מכן חזור לכאן כדי להמשיך.",
+"verifyEmailConfirmedButton": "אימתתי את כתובת הדוא\"ל שלי",
+"verifyEmailResendButton": "שלח שוב אימייל אימות",
+"verifyEmailSending": "שולח...",
+"navHome": "בית",
+"navCategories": "קטגוריות",
+"navInsights": "תובנות",
+"navCalendar": "יומן",
+"tutorialHomeSearch": "השתמש בשורת החיפוש כדי למצוא במהירות כל רשומה שאתה עוקב אחריה.",
+"tutorialHomeFab": "הוסף את הרשומה הראשונה שלך כאן.\nבחר לאן היא שייכת, הוסף הערות אופציונליות ובחר תאריך תפוגה.",
+"tutorialHomeSummary": "ככל שתוסיף יותר רשומות, חלק זה יעזור לך לזהות פריטים שמתקרבים לתפוגה.",
+"tutorialHomeInsight": "תובנה חכמה זו מדגישה דפוסים ותאריכי תפוגה קרובים.\nניתן להקיש על סמל הרמקול כדי לשמוע אותה.",
+"tutorialHomeCoverage": "מאזן הכיסוי מציג עד כמה הרשומות שלך מחולקות באופן שווה.\nמאזן גבוה יותר מצביע על פחות פערים.",
+"tutorialHomeStability": "היציבות משקפת עד כמה הרשומות שלך אמינות לאורך זמן.\nפריטים שפג תוקפם או קרובים לכך יכולים להפחית יציבות.",
+"tutorialCancel": "ביטול",
+"tutorialNext": "הבא",
+"tutorialEnd": "סיים הדרכה",
+"softDeleteCategory": "קטגוריה",
+"softDeleteGroup": "קבוצה",
+"softDeleteRecord": "רשומה",
+"softDeleteTitle": "העבר {type} לנמחק לאחרונה",
+"softDeleteMessage": "{type} \"{name}\" יועבר לנמחק לאחרונה.\n\nניתן לשחזר תוך 30 יום. לאחר מכן יימחק לצמיתות.",
+"softDeleteMove": "העבר",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "נמחקו לאחרונה",
+  "categories": "קטגוריות",
+  "groups": "קבוצות",
+  "records": "רשומות",
+  "restore": "שחזור",
+  "deletePermanently": "מחיקה לצמיתות",
+
+  "recentlyDeletedBanner": "פריטי {type} שנמחקו נשמרים ל־30 יום.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "חפש {type} שנמחקו",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "אין {type} שנמחקו",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "הקש על קטגוריה כדי לראות את הקבוצות ולנהל את הרשומות שלך.",
+  "groupsHint": "קבוצות מארגנות את הרשומות שלך בקטגוריה זו. הקש על קבוצה כדי לנהל רשומות.",
+  "notLoggedIn": "לא מחובר",
+"recordsInsideGroupHint": "אלו הרשומות בתוך הקבוצה הזו.",
+"snackMovedToRecentlyDeleted": "\"{name}\" הועבר אל נמחקו לאחרונה",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" נמחק בהצלחה",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" עודכן בהצלחה",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" נוסף בהצלחה",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" שוחזר בהצלחה",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "הגעת למגבלה החינמית ({current}/{limit}). שדרג כדי להוסיף עוד.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "חפש בכל הרשומות",
+"globalSearchHint": "הקלד שם רשומה, קטגוריה או קבוצה",
+"globalSearchNoMatches": "אין רשומות התואמות לחיפוש שלך.",
+"snackNoRecordsToSearch": "אין רשומות לחיפוש. הוסף כמה רשומות ו-Vaultara תאנדקס אותן באופן אוטומטי.",
+"recoveryCentreTitle": "מרכז שחזור",
+"recoveryCentreSubtitle": "שחזר או מחק לצמיתות רשומות שנמחקו.",
+"plan_premium": "פרימיום",
+"plan_free": "חינמי",
+"profile_app_settings_title": "הגדרות האפליקציה",
+"profile_privacy_security_title": "פרטיות ואבטחה",
+"profile_biometric_on": "הנעילה הביומטרית פעילה במכשיר זה.",
+"profile_biometric_off": "הנעילה הביומטרית אינה פעילה.",
+"profile_biometric_enable_reason": "אמת את זהותך כדי להפעיל את הנעילה הביומטרית.",
+"profile_biometric_disable_reason": "אמת את זהותך כדי לכבות את הנעילה הביומטרית.",
+"profile_account_management_title": "ניהול חשבון",
+"profile_account_management_subtitle": "שנה אימייל, סיסמה או מחק את החשבון.",
+"profile_premium_active_title": "פרימיום פעיל",
+"profile_premium_upgrade_title": "שדרג לפרימיום",
+"profile_premium_active_subtitle": "תזכורות מתקדמות הופעלו.",
+"profile_premium_upgrade_subtitle": "פתח תזכורות מתקדמות וארגון ללא הגבלה.",
+"profile_manage_cancel_hint": "ניתן לנהל או לבטל בכל עת דרך Google Play.",
+"profile_manage_subscription_button": "ניהול המנוי",
+"plansTitle": "בחר את התוכנית שלך",
+"plansTrialBanner": "התחל ניסיון חינם ל-7 ימים.\nבטל בכל עת.",
+"plansLoading": "טוען…",
+"plansStartFreeTrial": "התחל ניסיון חינם",
+"plansNoChargeTodayFooter": "7 ימים חינם · ללא חיוב היום",
+
+"planFreeTitle": "חינם",
+"planFreeSubtitle": "להתחלה",
+"planPremiumMonthlyTitle": "פרימיום חודשי",
+"planPremiumYearlyTitle": "פרימיום שנתי",
+"planPerMonth": "לחודש",
+"planPerYear": "לשנה",
+
+"planBadgeCurrent": "תוכנית נוכחית",
+"planBadgePopular": "פופולרי",
+"planBadgeBestValue": "הערך הטוב ביותר",
+
+"planYouAreOnThisPlan": "אתה כבר בתוכנית זו.",
+
+"planFeatureUpToRecords": "עד {count} רשומות",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "קטגוריות מותאמות (עד {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "תת-קטגוריות מוגדרות מראש",
+"planFeatureCloudStorage": "אחסון בענן",
+"planFeatureSmartExpiryInsights": "תובנות תפוגה חכמות",
+"planFeatureCoverageBalance": "איזון כיסוי",
+"planFeatureRecordStabilityTracking": "יציבות רשומות",
+
+"planFeatureUnlimitedRecords": "רשומות ללא הגבלה",
+"planFeatureUnlimitedCategories": "קטגוריות ללא הגבלה",
+"planFeatureCustomSubcategories": "תת-קטגוריות מותאמות",
+"planFeatureMultipleRemindersPerRecord": "מספר תזכורות",
+"planFeatureAdvancedReminderTiming": "תזמון מתקדם",
+"planFeatureAutomaticFollowUps": "תזכורות אוטומטיות",
+
+"planFeatureEverythingInMonthly": "הכול בחודשי",
+"planFeatureSavePercentComparedToMonthly": "חסוך {percent}% לעומת חודשי",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "הערך הטוב ביותר לטווח ארוך",
+"editorReminderLabel": "תזכורת",
+"editorReminderSelectOptional": "בחר תזכורת (אופציונלי)",
+"editorReminderOnExpiry": "ביום התפוגה",
+"editorReminderDaysBefore": "{days} ימים לפני התפוגה",
+"editorFreeItemsCount": "רשומות חינמיות: {used}/{limit}",
+"editorExpiryPastWarning": "תאריך התפוגה כבר עבר.",
+"editorExpiryTodayWarning": "הרשומה הזו פגה היום.",
+"editorErrorExpiryPast": "תאריך התפוגה לא יכול להיות בעבר.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "התובנות של היום",
+"tutorialBannerTitle": "סיור מהיר",
+"tutorialBannerBody": "למדו כיצד לחפש, להוסיף רשומות ולהבין תובנות בפחות מדקה.",
+"tutorialBannerStart": "התחל הדרכה",
+"tutorialBannerDismiss": "לא עכשיו",
+"authErrorUserDisabled": "החשבון הזה הושבת.",
+"authErrorNetwork": "שגיאת רשת. נסה שוב.",
+"authErrorTooManyRequests": "יותר מדי ניסיונות. נסה מאוחר יותר.",
+"authErrorSignInFailed": "ההתחברות נכשלה. נסה שוב.",
+"ok": "אישור",
+"snackPremiumEnabled": "פרימיום הופעל",
+"snackPremiumRestored": "פרימיום שוחזר",
+"passwordNeedLower": "חייב להכיל אות קטנה",
+"passwordNeedUpper": "חייב להכיל אות גדולה",
+"passwordNeedNumber": "חייב להכיל מספר",
+"passwordNeedSymbol": "חייב להכיל סימן",
+"confirmIdentityTitle": "אימות זהות",
+"confirm": "אשר",
+"profile_sign_out_title": "התנתקות",
+"profile_sign_out_subtitle": "התנתקות מ-Vaultara במכשיר זה",
+"profile_sign_out_confirm_title": "להתנתק?",
+"profile_sign_out_confirm_body": "יהיה עליך להתחבר שוב כדי לגשת לחשבון שלך.",
+"profile_sign_out_action": "התנתקות",
+"todayInsightsAudioHint": "מעדיף שמע? השתמש בסמל הרמקול.",
+"category2Label": "קטגוריה",
+"enable2BiometricsBody": "השתמש בזיהוי טביעת אצבע כדי להגן על חשבון Vaultara שלך.",
+"snackNotificationsDisabled": "ההתראות מושבתות. הפעל אותן כדי לקבל תזכורות.",
+"openSettings": "פתיחת הגדרות",
+
+"reminderOnExpiryTitle": "פג היום",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "היי {firstName}, \"{itemName}\" פג היום.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "קטגוריות חינמיות: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "מציג כמה קטגוריות חינמיות נוצלו מתוך המגבלה החינמית.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "הוספת הערות (אופציונלי)",
+"apply": "החל",
+"smartInsightExpiresTodayHeading": "פג תוקף היום",
+"smartInsightExpiresTodaySingleBody": "{name} פג תוקפו היום. פעל עכשיו כדי לשמור אותו מעודכן.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ועוד מסמך 1 פג תוקפם היום.} =2{{names} ועוד 2 מסמכים פג תוקפם היום.} many{{names} ועוד {extra} מסמכים פג תוקפם היום.} other{{names} ועוד {extra} מסמכים פג תוקפם היום.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "דורש את תשומת ליבך",
+"smartInsightSilentRiskBody": "{days, plural, =1{תוקף {name} פג בעוד יום 1 ואין תזכורת מוגדרת. ודא שהפרטים עדיין נכונים.} =2{תוקף {name} פג בעוד יומיים ואין תזכורת מוגדרת. ודא שהפרטים עדיין נכונים.} many{תוקף {name} פג בעוד {days} ימים ואין תזכורת מוגדרת. ודא שהפרטים עדיין נכונים.} other{תוקף {name} פג בעוד {days} ימים ואין תזכורת מוגדרת. ודא שהפרטים עדיין נכונים.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "מספר חידושים סמוכים",
+"smartInsightRenewalTwinBodyTwo": "תוקף {a} ו-{b} פג בתוך שלושה שבועות זה מזה. תכנן מראש.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "תוקף {a}, {b} ו-{c} פג בתוך שלושה שבועות. תכנן מראש.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{תוקף {a}, {b} ועוד מסמך 1 פג בתוך שלושה שבועות. תכנן מראש.} =2{תוקף {a}, {b} ועוד 2 מסמכים פג בתוך שלושה שבועות. תכנן מראש.} many{תוקף {a}, {b} ועוד {extra} מסמכים פג בתוך שלושה שבועות. תכנן מראש.} other{תוקף {a}, {b} ועוד {extra} מסמכים פג בתוך שלושה שבועות. תכנן מראש.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "אשכול קרוב",
+"smartInsightClusterBody": "{count, plural, =1{תוקף מסמך 1 בקטגוריה {category} פג בחודשיים הקרובים. שקול לטפל בהם יחד.} =2{תוקף 2 מסמכים בקטגוריה {category} פג בחודשיים הקרובים. שקול לטפל בהם יחד.} many{תוקף {count} מסמכים בקטגוריה {category} פג בחודשיים הקרובים. שקול לטפל בהם יחד.} other{תוקף {count} מסמכים בקטגוריה {category} פג בחודשיים הקרובים. שקול לטפל בהם יחד.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "תקופה רגועה לפניך",
+"smartInsightQuietPeriodBody": "{days, plural, =1{שום דבר לא פג בתוקף ביום הקרוב. החידוש הבא שלך הוא ב-{firstDate}.} =2{שום דבר לא פג בתוקף ביומיים הקרובים. החידוש הבא שלך הוא ב-{firstDate}.} many{שום דבר לא פג בתוקף ב-{days} הימים הקרובים. החידוש הבא שלך הוא ב-{firstDate}.} other{שום דבר לא פג בתוקף ב-{days} הימים הקרובים. החידוש הבא שלך הוא ב-{firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "הכל מעודכן",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{תפוגה קרובה 1 מכוסה בתזכורות. שום דבר אחר לא דורש את תשומת ליבך.} =2{2 תפוגות קרובות מכוסות בתזכורות. שום דבר אחר לא דורש את תשומת ליבך.} many{{count} תפוגות קרובות מכוסות בתזכורות. שום דבר אחר לא דורש את תשומת ליבך.} other{{count} תפוגות קרובות מכוסות בתזכורות. שום דבר אחר לא דורש את תשומת ליבך.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "הכל מעודכן. שום דבר לא דורש את תשומת ליבך כרגע.",
+"smartInsightNoRecordsHeading": "הוסף את הרשומה הראשונה שלך",
+"smartInsightNoRecordsBody": "התחל לעקוב אחר המסמכים שלך ו-Vaultara יציג כאן תובנות חכמות.",
+"expiryTimelineTitle": "ציר זמן של תפוגה",
+"expiryTimelineSubtitle": "הקש על חודש כדי לראות את הרשומות שפג תוקפן באותו חודש",
+"expiryTimelineDetailCount": "{count, plural, =1{רשומה אחת} =2{2 רשומות} many{{count} רשומות} other{{count} רשומות}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "בקרוב",
+"summaryUpcomingCaption": "במהלך 30 הימים הקרובים",
+"summaryUrgentTitle": "דחוף",
+"summaryUrgentCaption": "במהלך 7 הימים הקרובים"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

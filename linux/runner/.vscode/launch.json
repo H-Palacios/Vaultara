@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Debug",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=DEBUG_FORCE_PREMIUM=true"
+      ]
+    }
+  ]
+}

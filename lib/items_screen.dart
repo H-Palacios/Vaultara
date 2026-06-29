@@ -1,93 +1,190 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/services/item_lifecycle_manager.dart';
+import 'package:vaultara/services/reminder_scheduler.dart';
+import 'package:vaultara/day_clock.dart';
 
 import 'category_item.dart';
 import 'item_editor_sheet.dart';
-import 'item_repository.dart';
+import 'package:vaultara/item_repository.dart';
 import 'tracked_item.dart';
+import 'document_hierarchy.dart';
+import 'confirm_soft_delete_dialog.dart';
+import 'action_feedback_snackbar.dart';
+import 'item_filter_bar.dart';
+import 'item_notes_viewer.dart';
+import 'item_card.dart';
+import 'item_status_colours.dart';
+import 'package:vaultara/screens/profile/recovery_centre/recently_deleted_screen.dart';
+import 'home/home_header_loader.dart';
+
+const String kUserFirstNameKey = 'userFirstName';
 
 class ItemsScreen extends StatefulWidget {
   final CategoryItem category;
   final String subcategoryName;
   final bool isPremium;
+  final String? initialQuery;
 
   const ItemsScreen({
     super.key,
     required this.category,
     required this.subcategoryName,
     required this.isPremium,
+    this.initialQuery,
   });
 
   @override
   State<ItemsScreen> createState() => _ItemsScreenState();
 }
 
-enum ItemFilterMode {
-  all,
-  expiringSoon,
-  expired,
-}
-
 class _ItemsScreenState extends State<ItemsScreen> {
   final TextEditingController _searchController = TextEditingController();
   ItemFilterMode _filterMode = ItemFilterMode.all;
 
+  String _userFirstName = '';
+  String? _openItemId;
+
+  void _onDayChanged() {
+    if (!mounted) return;
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    final q = (widget.initialQuery ?? '').trim();
+
+    if (q.toLowerCase().startsWith('open:')) {
+      final payload = q.substring(5);
+      final parts = payload.split('|');
+      _openItemId = parts.isNotEmpty ? parts[0].trim() : null;
+      final name = parts.length > 1 ? parts.sublist(1).join('|').trim() : '';
+      if (name.isNotEmpty) {
+        _searchController.text = name;
+      }
+    } else if (q.isNotEmpty) {
+      _searchController.text = q;
+    }
+
+    DayClock.init();
+    DayClock.day.addListener(_onDayChanged);
+
+    _loadFirstName();
+  }
+
+  Future<void> _loadFirstName() async {
+    final prefs = await SharedPreferences.getInstance();
+    final name = (prefs.getString(kUserFirstNameKey) ?? '').trim();
+    if (!mounted) return;
+    setState(() => _userFirstName = name);
+  }
+
   @override
   void dispose() {
+    DayClock.day.removeListener(_onDayChanged);
     _searchController.dispose();
     super.dispose();
   }
 
+  Future<void> _openNotificationSettings() async {
+    final uri = Uri.parse('app-settings:');
+    await launchUrl(uri);
+  }
+
   int _daysLeft(DateTime expiry) {
-    return expiry.difference(DateTime.now()).inDays;
+    final today = DayClock.day.value;
+    final exp = DateUtils.dateOnly(expiry);
+    return exp.difference(today).inDays;
   }
 
-  String _statusLabel(int daysLeft) {
-    if (daysLeft < 0) return 'Expired';
-    if (daysLeft == 0) return 'Expires today';
-    if (daysLeft == 1) return 'Expires in 1 day';
-    if (daysLeft <= ItemRepository.expiringThresholdDays) {
-      return 'Expires in $daysLeft days';
+  String _statusLabel(AppLocalizations loc, int daysLeft) {
+    if (daysLeft < 0) return loc.statusExpired;
+    if (daysLeft == 0) return loc.statusExpiresToday;
+    if (daysLeft == 1) return loc.statusExpiresInOneDay;
+    if (daysLeft <= ItemLifecycleManager.expiringThresholdDays) {
+      return loc.statusExpiresInDays(daysLeft);
     }
-    return 'Valid';
+    return loc.statusValid;
   }
 
-  Color _statusColour(ColorScheme scheme, int daysLeft) {
-    if (daysLeft < 0) return Colors.red;
-    if (daysLeft <= ItemRepository.expiringThresholdDays) return Colors.orange;
-    return Colors.green;
+  Color _statusColour(int daysLeft) {
+    return ItemStatusColors.fromDaysLeft(daysLeft);
   }
 
   void _openAddItemSheet() {
+    if (!ItemRepository.canAddItem(isPremium: widget.isPremium)) {
+      final current = widget.isPremium
+          ? ItemRepository.totalItemsAll()
+          : ItemRepository.createdItemsCount();
+      final limit = ItemRepository.limitForPlan(isPremium: widget.isPremium);
+      ActionFeedbackSnackbar.showLimitReached(
+        context,
+        current: current,
+        limit: limit,
+      );
+      return;
+    }
+
     showItemEditorSheet(
       context: context,
       mode: ItemEditorMode.scoped,
       isPremium: widget.isPremium,
-      categoryLabel: widget.category.label,
-      subcategoryName: widget.subcategoryName,
-      onSave: (ItemDraft draft) async {
-        final TrackedItem item = TrackedItem(
+      categoryKey: widget.category.key,
+      subcategoryKey: widget.subcategoryName,
+      onSave: (draft) async {
+        final baseId = DateTime.now().millisecondsSinceEpoch;
+
+        final item = TrackedItem(
+          id: null,
           name: draft.name,
-          expiryDate: draft.expiryDate,
+          expiryDate: DateUtils.dateOnly(draft.expiryDate),
+          categoryKey: draft.categoryKey,
           categoryLabel: draft.categoryLabel,
           subcategoryName: draft.subcategoryName,
           notes: draft.notes,
+          reminderBaseId: baseId % 2147483647,
+          reminderOffsetDays: draft.reminderOffsetDays,
+          isDeleted: false,
         );
 
-        final bool added = await ItemRepository.addItem(
+        final ok = await ItemRepository.addItem(
           item,
           isPremium: widget.isPremium,
         );
 
-        if (!added) {
+        if (!ok) {
           if (!mounted) return;
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(
-                'Free plan limit reached. Upgrade to Premium to add more items.',
-              ),
-            ),
+          final current = widget.isPremium
+              ? ItemRepository.totalItemsAll()
+              : ItemRepository.createdItemsCount();
+          final limit = ItemRepository.limitForPlan(isPremium: widget.isPremium);
+          ActionFeedbackSnackbar.showLimitReached(
+            context,
+            current: current,
+            limit: limit,
           );
           return;
+        }
+
+        final loc = AppLocalizations.of(context)!;
+        final scheduled = await ReminderScheduler.tryScheduleForItem(
+          loc: loc,
+          item: item,
+          firstName: _userFirstName,
+        );
+
+        if (!mounted) return;
+
+        if (!scheduled && item.reminderOffsetDays != null) {
+          ActionFeedbackSnackbar.showNotificationsDisabled(
+            context,
+            onOpenSettings: _openNotificationSettings,
+          );
         }
 
         setState(() {});
@@ -100,359 +197,326 @@ class _ItemsScreenState extends State<ItemsScreen> {
       context: context,
       mode: ItemEditorMode.scoped,
       isPremium: widget.isPremium,
-      categoryLabel: widget.category.label,
-      subcategoryName: widget.subcategoryName,
       initialDraft: ItemDraft(
         name: item.name,
         expiryDate: item.expiryDate,
+        categoryKey: item.categoryKey,
         categoryLabel: item.categoryLabel,
         subcategoryName: item.subcategoryName,
         notes: item.notes,
+        reminderOffsetDays: item.reminderOffsetDays,
       ),
-      onSave: (ItemDraft draft) async {
-        final TrackedItem updated = TrackedItem(
-          id: item.id,
-          name: draft.name,
-          expiryDate: draft.expiryDate,
-          categoryLabel: draft.categoryLabel,
-          subcategoryName: draft.subcategoryName,
+      onSave: (draft) async {
+        final updated = item.copyWith(
+          expiryDate: DateUtils.dateOnly(draft.expiryDate),
           notes: draft.notes,
+          reminderOffsetDays: draft.reminderOffsetDays,
         );
 
         await ItemRepository.updateItem(item, updated);
+        if (!mounted) return;
+
+        final loc = AppLocalizations.of(context)!;
+        final scheduled = await ReminderScheduler.tryScheduleForItem(
+          loc: loc,
+          item: updated,
+          firstName: _userFirstName,
+        );
+
+        if (!mounted) return;
+
+        if (!scheduled && updated.reminderOffsetDays != null) {
+          ActionFeedbackSnackbar.showNotificationsDisabled(
+            context,
+            onOpenSettings: _openNotificationSettings,
+          );
+        }
+
+        ActionFeedbackSnackbar.showUpdated(context, updated.name);
         setState(() {});
       },
     );
   }
 
-  void _deleteItem(TrackedItem item) {
-    ItemRepository.deleteItem(item);
+  Future<void> _deleteItem(TrackedItem item) async {
+    debugPrint('DELETE TAP: ${item.name}');
+    debugPrint('ITEM ID: ${item.id}');
+    debugPrint('IS DELETED BEFORE: ${item.isDeleted}');
+
+    final confirmed = await ConfirmSoftDeleteDialog.show(
+      context,
+      type: SoftDeleteTarget.item,
+      name: item.name,
+    );
+
+    debugPrint('DELETE CONFIRMED: $confirmed');
+
+    if (!confirmed) return;
+
+    await ItemRepository.softDeleteItem(item);
+
+    debugPrint('DELETE CALLED IN REPO');
+
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showDeleted(context, item.name);
+
     setState(() {});
+  }
+
+  Future<void> _openRecentlyDeletedRecords() async {
+    final changed = await Navigator.push<bool>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const RecentlyDeletedScreen(initialTabIndex: 2),
+      ),
+    );
+    if (changed == true) {
+      if (!mounted) return;
+      await HomeHeaderLoader.clearCache();
+      setState(() {});
+    }
+  }
+
+  bool _matchesQuery(TrackedItem item, String q) {
+    final query = q.trim().toLowerCase();
+    if (query.isEmpty) return true;
+
+    final bool exact = query.startsWith('exact:');
+    final String target = exact ? query.substring(6).trim() : query;
+
+    final String name = item.name.trim().toLowerCase();
+    final String notes = (item.notes ?? '').toLowerCase();
+
+    if (exact) {
+      return name == target;
+    }
+
+    final String haystack = '$name $notes';
+    return haystack.contains(target);
   }
 
   @override
   Widget build(BuildContext context) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-    final String query = _searchController.text.trim().toLowerCase();
-    final int threshold = ItemRepository.expiringThresholdDays;
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final rawQuery = _searchController.text;
+    final threshold = ItemLifecycleManager.expiringThresholdDays;
 
-    List<TrackedItem> items = ItemRepository.getItemsForGroup(
-      widget.category.label,
-      widget.subcategoryName,
+    const double maxContentWidth = 720;
+
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      return Center(child: Text(loc.notLoggedIn));
+    }
+
+    final bool hideInfoBanner =
+        rawQuery.trim().toLowerCase().startsWith('exact:');
+
+    final searchBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(999),
     );
 
-    List<TrackedItem> filtered = items.where((TrackedItem item) {
-      final String haystack =
-          '${item.name} ${item.notes ?? ''}'.toLowerCase();
-      return haystack.contains(query);
-    }).toList();
-
-    filtered = filtered.where((TrackedItem item) {
-      final int daysLeft = _daysLeft(item.expiryDate);
-      switch (_filterMode) {
-        case ItemFilterMode.expiringSoon:
-          return daysLeft >= 0 && daysLeft <= threshold;
-        case ItemFilterMode.expired:
-          return daysLeft < 0;
-        case ItemFilterMode.all:
-        default:
-          return true;
-      }
-    }).toList();
-
-    filtered.sort(
-      (TrackedItem a, TrackedItem b) =>
-          a.expiryDate.compareTo(b.expiryDate),
+    final double edgePad = (MediaQuery.of(context).size.width * 0.05).clamp(
+      16.0,
+      40.0,
     );
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.subcategoryName),
+        leadingWidth: 56 + edgePad,
+        leading: Padding(
+          padding: EdgeInsets.only(left: edgePad),
+          child: const BackButton(),
+        ),
+        titleSpacing: 0,
+        title: Text(
+          DocumentHierarchy.subcategoryLabel(
+            context,
+            widget.subcategoryName,
+          ),
+          style: const TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 18,
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: edgePad),
+            child: IconButton(
+              tooltip: loc.recentlyDeletedTitle,
+              icon: const Icon(Icons.restore_from_trash_rounded),
+              onPressed: _openRecentlyDeletedRecords,
+            ),
+          ),
+        ],
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Header (UNCHANGED)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-              child: Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: scheme.primary.withOpacity(0.06),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(6),
-                      decoration: BoxDecoration(
-                        color: scheme.primary.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Icon(
-                        Icons.event_available_rounded,
-                        size: 20,
-                        color: scheme.primary,
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    const Expanded(
+      body: StreamBuilder<QuerySnapshot>(
+        stream: FirebaseFirestore.instance
+            .collection('users/${user.uid}/items')
+            .where('categoryKey', isEqualTo: widget.category.key)
+            .where('subcategoryName', isEqualTo: widget.subcategoryName)
+            .snapshots(),
+        builder: (context, snapshot) {
+          if (!snapshot.hasData) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          List<TrackedItem> items = snapshot.data!.docs
+              .map((d) {
+                debugPrint('STREAM DOC ID: ${d.id}');
+                debugPrint('STREAM DATA: ${d.data()}');
+                return TrackedItem.fromMap(
+                  d.id,
+                  d.data() as Map<String, dynamic>,
+                );
+              })
+              .where((i) => i.isDeleted != true)
+              .toList();
+
+          if (_openItemId != null && _openItemId!.isNotEmpty) {
+            items = items.where((i) => i.id == _openItemId).toList();
+          }
+
+          List<TrackedItem> filtered = items.where((item) {
+            return _matchesQuery(item, rawQuery);
+          }).toList();
+
+          filtered = filtered.where((item) {
+            final daysLeft = _daysLeft(item.expiryDate);
+            switch (_filterMode) {
+              case ItemFilterMode.expiringSoon:
+                return daysLeft >= 0 && daysLeft <= threshold;
+              case ItemFilterMode.expired:
+                return daysLeft < 0;
+              case ItemFilterMode.all:
+                return true;
+            }
+          }).toList();
+
+          filtered.sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
+
+          return SafeArea(
+            child: Column(
+              children: [
+                Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: edgePad),
+                    child: ConstrainedBox(
+                      constraints:
+                          const BoxConstraints(maxWidth: maxContentWidth),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Items in this group',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800,
+                          if (!hideInfoBanner)
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 12, 0, 6),
+                              child: Container(
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: scheme.primary.withOpacity(0.08),
+                                  borderRadius: BorderRadius.circular(14),
+                                  border: Border.all(
+                                    color: scheme.primary.withOpacity(0.25),
+                                  ),
+                                ),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Icon(
+                                      Icons.info_outline_rounded,
+                                      color: scheme.primary,
+                                      size: 20,
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Expanded(
+                                      child: Text(
+                                        loc.recordsInsideGroupHint,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color:
+                                              scheme.onSurface.withOpacity(0.8),
+                                          height: 1.4,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 6, 0, 4),
+                            child: TextField(
+                              controller: _searchController,
+                              onChanged: (_) => setState(() {}),
+                              decoration: InputDecoration(
+                                hintText: loc.searchRecords,
+                                prefixIcon: const Icon(Icons.search_rounded),
+                                border: searchBorder,
+                                enabledBorder: searchBorder,
+                                focusedBorder: searchBorder,
+                                isDense: true,
+                              ),
                             ),
                           ),
-                          SizedBox(height: 4),
-                          Text(
-                            'Track each important item with its expiry date so you can renew it on time.',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 8, 0, 4),
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: FilledButton.icon(
+                                onPressed: _openAddItemSheet,
+                                icon: const Icon(Icons.add_rounded, size: 16),
+                                label: Text(loc.addRecord),
+                              ),
                             ),
                           ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
+                            child: ItemFilterBar(
+                              filterMode: _filterMode,
+                              onChanged: (mode) =>
+                                  setState(() => _filterMode = mode),
+                            ),
+                          ),
+                          const SizedBox(height: 6),
                         ],
                       ),
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
+                Expanded(
+                  child: Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: edgePad),
+                      child: ConstrainedBox(
+                        constraints:
+                            const BoxConstraints(maxWidth: maxContentWidth),
+                        child: filtered.isEmpty
+                            ? Center(child: Text(loc.noRecordsYet))
+                            : ListView.builder(
+                                padding: const EdgeInsets.fromLTRB(0, 16, 0, 16),
+                                itemCount: filtered.length,
+                                itemBuilder: (_, index) {
+                                  final item = filtered[index];
+                                  final daysLeft = _daysLeft(item.expiryDate);
+                                  final statusColour = _statusColour(daysLeft);
 
-            // Search (UNCHANGED)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-              child: TextField(
-                controller: _searchController,
-                onChanged: (_) => setState(() {}),
-                decoration: const InputDecoration(
-                  hintText: 'Search items',
-                  prefixIcon: Icon(Icons.search_rounded),
-                  border: OutlineInputBorder(),
-                  isDense: true,
-                ),
-              ),
-            ),
-
-            // Filters + Add button (ONLY overflow fix)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
-              child: Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(999),
-                      border: Border.all(
-                        color: scheme.outline.withOpacity(0.4),
+                                  return ItemCard(
+                                    item: item,
+                                    daysLeft: daysLeft,
+                                    statusColour: statusColour,
+                                    statusLabel: _statusLabel(loc, daysLeft),
+                                    onEdit: () => _openEditItemSheet(item),
+                                    onDelete: () => _deleteItem(item),
+                                  );
+                                },
+                              ),
                       ),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        _ItemFilterChip(
-                          label: 'All',
-                          selected: _filterMode == ItemFilterMode.all,
-                          onTap: () {
-                            setState(() {
-                              _filterMode = ItemFilterMode.all;
-                            });
-                          },
-                        ),
-                        _ItemFilterChip(
-                          label: 'Expiring within $threshold days',
-                          selected:
-                              _filterMode == ItemFilterMode.expiringSoon,
-                          onTap: () {
-                            setState(() {
-                              _filterMode = ItemFilterMode.expiringSoon;
-                            });
-                          },
-                        ),
-                        _ItemFilterChip(
-                          label: 'Expired',
-                          selected:
-                              _filterMode == ItemFilterMode.expired,
-                          onTap: () {
-                            setState(() {
-                              _filterMode = ItemFilterMode.expired;
-                            });
-                          },
-                        ),
-                      ],
                     ),
                   ),
-                  const Spacer(),
-                  FilledButton.icon(
-                    onPressed: _openAddItemSheet,
-                    icon: const Icon(Icons.add_rounded, size: 18),
-                    label: const Text('Add item'),
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 8,
-                      ),
-                      textStyle: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      minimumSize: Size.zero,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-
-            const SizedBox(height: 4),
-            Expanded(
-              child: filtered.isEmpty
-                  ? const Center(
-                      child: Text('No items yet.'),
-                    )
-                  : ListView.builder(
-                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                      itemCount: filtered.length,
-                      itemBuilder: (context, index) {
-                        final TrackedItem item = filtered[index];
-                        final int daysLeft = _daysLeft(item.expiryDate);
-                        final String statusText =
-                            _statusLabel(daysLeft);
-                        final Color statusColour =
-                            _statusColour(scheme, daysLeft);
-
-                        return Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: Column(
-                              crossAxisAlignment:
-                                  CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.all(6),
-                                      decoration: BoxDecoration(
-                                        color: scheme.primary
-                                            .withOpacity(0.08),
-                                        borderRadius:
-                                            BorderRadius.circular(12),
-                                      ),
-                                      child: Icon(
-                                        Icons.description_rounded, 
-                                        size: 18,
-                                        color: scheme.primary,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 8),
-                                    Expanded(
-                                      child: Text(
-                                        item.name,
-                                        maxLines: 1,
-                                        overflow:
-                                            TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w800,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 6),
-                                Row(
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 10,
-                                        vertical: 4,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: statusColour
-                                            .withOpacity(0.15),
-                                        borderRadius:
-                                            BorderRadius.circular(999),
-                                      ),
-                                      child: Text(
-                                        statusText,
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          fontWeight:
-                                              FontWeight.w700,
-                                          color: statusColour,
-                                        ),
-                                      ),
-                                    ),
-                                    const Spacer(),
-                                    IconButton(
-                                      icon: const Icon(
-                                          Icons.edit_rounded),
-                                      onPressed: () =>
-                                          _openEditItemSheet(item),
-                                    ),
-                                    IconButton(
-                                      icon: const Icon(
-                                          Icons.delete_outline_rounded),
-                                      onPressed: () =>
-                                          _deleteItem(item),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _ItemFilterChip extends StatelessWidget {
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _ItemFilterChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-    return InkWell(
-      borderRadius: BorderRadius.circular(999),
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(999),
-          color: selected
-              ? scheme.primary.withOpacity(0.1)
-              : Colors.transparent,
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            color: selected ? scheme.primary : scheme.onSurfaceVariant,
-          ),
-        ),
+          );
+        },
       ),
     );
   }

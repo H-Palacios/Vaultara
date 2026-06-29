@@ -1,0 +1,843 @@
+{
+  "@@locale": "ru",
+  "expiryCalendarTitle": "Календарь срока годности",
+
+"calendarIntro": "Выберите, как вы хотите просматривать сроки годности:\n\n• Введите, на сколько дней вперёд вы хотите посмотреть.\n• Или выберите точную дату в календаре.\n\nVaultara покажет, какие элементы достигают срока годности в этот день.",
+
+"daysFromTodayLabel": "Дней от сегодня",
+"daysFromTodayHint": "Например 0, 1, 7, 30",
+
+"apply": "Применить",
+"pickDateOnCalendar": "Выберите дату в календаре",
+
+"today": "Сегодня",
+"tomorrow": "Завтра",
+"in7Days": "Через 7 дней",
+"in30Days": "Через 30 дней",
+
+"inDays": "через {days} дней",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Введите количество дней.",
+"invalidDaysError": "Введите корректное количество дней (0 или больше).",
+
+"showingItemsRelative": "Показаны элементы, срок годности которых истекает {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Показаны элементы, срок годности которых истекает в выбранную дату",
+"noItemsOnDate": "На эту дату нет элементов с истекающим сроком годности.",
+
+"editorAddTitle": "Добавить элемент",
+"editorEditTitle": "Редактировать элемент",
+
+"editorCategory": "Категория",
+"editorCategoryHint": "Выберите категорию",
+
+"editorGroup": "Группа",
+"editorGroupHint": "Выберите группу",
+
+"editorItemName": "Название элемента",
+"editorItemNameHint": "Введите название элемента",
+
+"editorExpiryDate": "Срок годности",
+"editorExpiryDateHint": "Выберите срок годности",
+
+"editorErrorCategory": "Выберите категорию",
+"editorErrorGroup": "Выберите группу",
+"editorErrorName": "Название элемента обязательно",
+"editorErrorExpiry": "Выберите срок годности",
+"editorErrorExpiryPast": "Срок годности должен быть сегодня или в будущем",
+"cancel": "Отмена",
+"save": "Сохранить",
+
+"addCategoryTitle": "Добавить категорию",
+"unlimitedCategories": "Неограниченные категории (Premium)",
+
+"categoryUsage": "Использовано {current} / {limit} категорий",
+
+"categoryNameLabel": "Категория",
+"categoryNameHint": "Введите категорию",
+
+"categoryLimitReached": "Вы достигли лимита {limit} категорий в плане Basic. Обновитесь до Premium.",
+
+"categoryLimitInfo": "В плане Basic можно создать до {limit} категорий.",
+
+"categoryErrorEmpty": "Категория обязательна",
+"categoryErrorTooShort": "Категория слишком короткая",
+"categoryErrorTooLong": "Категория слишком длинная",
+"categoryErrorSymbols": "не может состоять только из символов",
+"categoryErrorNumbers": "не может состоять только из чисел",
+
+"upgradeRequired": "Требуется обновление",
+"viewPremiumBenefits": "Посмотреть преимущества Premium",
+"createCategory": "Создать",
+
+"addGroupTitle": "Добавить группу",
+"groupNameLabel": "Группа",
+"groupNameHint": "Введите группу",
+
+"groupErrorEmpty": "Группа обязательна",
+"groupErrorTooShort": "Группа слишком короткая",
+"groupErrorTooLong": "Группа слишком длинная",
+"groupErrorSymbols": "не может содержать символы",
+"groupErrorNumbers": "не может содержать числа",
+"createGroup": "Создать",
+
+"firstNameLabel": "Имя",
+"firstNameHint": "Введите имя",
+
+"lastNameLabel": "Фамилия",
+"lastNameHint": "Введите фамилию",
+
+"emailLabel": "Электронная почта",
+"loginPasswordHint": "Введите свой пароль",
+"registerPasswordHint": "Введите пароль",
+"passwordHelper": "Не менее 8 символов разных типов",
+
+"passwordTooShort": "Слишком короткий",
+"passwordTooWeak": "Слишком слабый",
+"passwordMedium": "Средний",
+"passwordStrong": "Надёжный",
+
+"errorFirstName": "Имя обязательно",
+"errorLastName": "Фамилия обязательна",
+"errorEmailInvalid": "Введите корректный адрес электронной почты",
+"errorEmailInUse": "Этот адрес электронной почты уже\nсвязан с аккаунтом Vaultara",
+"errorPasswordLength": "Пароль должен содержать не менее восьми символов",
+"errorPasswordWeak": "Введите более надёжный пароль",
+"errorGeneric": "Регистрация не удалась. Пожалуйста, попробуйте снова",
+
+"createAccount": "Создать аккаунт",
+"appName": "Vaultara",
+"authTagline": "Ваш личный центр для паспортов, удостоверений, карт и других важных вещей",
+"tabSignIn": "Войти",
+"tabCreateAccount": "Создать аккаунт",
+"signInFooterText": "Войдите, чтобы получить доступ к своему пространству Vaultara и контролировать все обновления",
+"createAccountFooterText": "Создайте аккаунт Vaultara, чтобы сохранять важные напоминания и получать к ним доступ в любое время",
+
+"emailRequired": "Адрес электронной почты обязателен",
+"passwordRequired": "Пароль обязателен",
+"emailNotFound": "Неверный адрес электронной почты. Нет\nаккаунта Vaultara с этим адресом",
+"incorrectPassword": "Неверный пароль",
+
+"emailLabel": "Адрес электронной почты",
+"emailHint": "Введите адрес электронной почты",
+"passwordLabel": "Пароль",
+"signIn": "Войти",
+
+"categoryPersonalIdentification": "Личная идентификация",
+"categoryDrivingAndVehicles": "Вождение и транспорт",
+"categoryTravelAndImmigration": "Путешествия и иммиграция",
+"categoryBankingAndCards": "Банковские услуги и карты",
+"categoryInsuranceAndCover": "Страхование и защита",
+"categoryHealthAndMedical": "Здоровье и медицина",
+"categoryWorkAndProfessional": "Работа и профессиональная деятельность",
+"categoryPropertyAndHousing": "Недвижимость и жильё",
+"categoryHouseholdAndUtilities": "Дом и коммунальные услуги",
+
+"subcategoryPassports": "Паспорта",
+"subcategoryIdCards": "Удостоверения личности",
+"subcategoryResidencePermits": "Виды на жительство",
+
+"subcategoryDrivingLicences": "Водительские удостоверения",
+"subcategoryVehicleRegistrations": "Регистрация транспортных средств",
+"subcategoryRoadworthyCertificates": "Сертификаты пригодности",
+"subcategoryVehicleInspectionCertificates": "Сертификаты техосмотра",
+
+"subcategoryVisas": "Визы",
+"subcategoryStudyPermits": "Разрешения на обучение",
+"subcategoryWorkPermits": "Разрешения на работу",
+"subcategoryTravelInsuranceDocuments": "Документы туристического страхования",
+
+"subcategoryDebitAndCreditCards": "Дебетовые и кредитные карты",
+"subcategoryStoreCards": "Карты магазинов",
+"subcategoryFuelCards": "Топливные карты",
+"subcategoryVehicleInsurances": "Страхование транспорта",
+"subcategoryPropertyInsurances": "Страхование имущества",
+"subcategoryLifeInsurances": "Страхование жизни",
+"subcategoryHealthInsurances": "Медицинское страхование",
+"subcategoryTravelInsurances": "Страхование путешествий",
+
+"subcategoryMedicalPrescriptions": "Медицинские рецепты",
+"subcategoryOpticalPrescriptions": "Рецепты на очки",
+"subcategoryMedicalCertificates": "Медицинские справки",
+
+"subcategoryProfessionalLicences": "Профессиональные лицензии",
+"subcategoryProfessionalRegistrations": "Профессиональные регистрации",
+"subcategoryIndustryRegistrations": "Отраслевые регистрации",
+"subcategoryWorkAccessCards": "Карты доступа к работе",
+
+"subcategoryLeaseAgreements": "Договоры аренды",
+"subcategoryAccessCardsAndTags": "Карты и метки доступа",
+"subcategoryParkingPermits": "Разрешения на парковку",
+"subcategorySecurityAccessPermits": "Разрешения службы безопасности",
+
+"subcategoryElectricityAccounts": "Счета за электроэнергию",
+"subcategoryWaterAccounts": "Счета за воду",
+"subcategoryInternetContracts": "Интернет-контракты",
+"subcategorySecurityServiceContracts": "Контракты охранных служб",
+
+"searchCategories": "Поиск категорий",
+"filterAll": "Все",
+"filterPreset": "Предустановленные",
+"filterCustom": "Пользовательские",
+"addCategoryTitle": "Добавить категорию",
+"customLabel": "Пользовательская",
+"subcategoriesLabel": "подкатегории",
+"itemsLabel": "элементы",
+
+"itemsExpiring": "{count} элементов истекают через {days} дней",
+
+"pinnedEssentials": "Закреплённые важные",
+"pinnedHint": "Закрепите часто используемые категории, чтобы они были сверху списка.",
+"noCategoriesFound": "Категории не найдены",
+
+"searchGroups": "Поиск групп",
+"addGroupTitle": "Добавить группу",
+
+"basicPlanGroupInfo": "Вы используете план Basic.\nМожно просматривать предустановленные группы.\nОбновитесь до Premium, чтобы создавать свои группы.",
+
+"groupDeleted": "Группа удалена",
+"undo": "ОТМЕНА",
+
+"groupTapHint": "Нажмите, чтобы добавить и отслеживать элементы в этой группе.",
+"itemsInGroup": "Элементы в этой группе",
+"itemsInGroupHint": "Отслеживайте каждый важный элемент с датой окончания.",
+"searchItems": "Поиск элементов",
+"filterExpiringWithin": "Истекают в течение {days} дней",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Истекшие",
+"addItem": "Добавить элемент",
+"noItemsYet": "Пока нет элементов.",
+
+"statusExpired": "Истекло",
+"statusExpiresToday": "Истекает сегодня",
+"statusExpiresInOneDay": "Истекает через 1 день",
+"statusExpiresInDays": "Истекает через {days} дней",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Действительно",
+
+"deleteCategoryTitle": "Удалить категорию",
+"deleteCategoryMessage": "Вы уверены, что хотите удалить категорию \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Удалить группу",
+"deleteGroupMessage": "Вы уверены, что хотите удалить группу \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Удалить элемент",
+"deleteItemMessage": "Вы уверены, что хотите удалить \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Отмена",
+"delete": "Удалить",
+
+"homeWelcomeTitle": "Добро пожаловать",
+
+"homeWelcomeFirstTitle": "Добро пожаловать, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "С возвращением, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Все",
+"homeWelcomeSubtitleGeneric": "Vaultara помогает отслеживать важные даты, чтобы ничего не истекло незаметно.",
+
+"homeWelcomeSubtitleFirst": "Рады видеть вас здесь. Vaultara помогает хранить важные даты и записи в одном безопасном месте.",
+
+"homeWelcomeSubtitleBack": "Рады видеть вас снова. Vaultara всегда рядом для просмотра ваших важных дат.",
+
+"insightEmptyTitle": "Пока ничего не добавлено",
+"insightEmptyBody": "Начните отслеживать даты, и Vaultara поможет вам быть на шаг впереди.",
+
+"insightExpiresTodayTitle": "\"{name}\" истекает сегодня",
+"insightExpiresTodayBody": "Быстрая проверка поможет сохранить точность.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" истекает завтра",
+"insightExpiresTomorrowBody": "Просмотр сегодня сэкономит время позже.",
+
+"insightExpiresSoonTitle": "\"{name}\" истекает {date}",
+"insightExpiresSoonBody": "Раннее внимание делает процесс спокойнее.",
+
+"insightNextExpiryTitle": "Следующий срок — \"{name}\" {date}",
+"insightNextExpiryBody": "Действий пока не требуется, но стоит помнить.",
+
+"insightClusteredTitle": "Несколько записей истекают в {month}",
+"insightClusteredBody": "Совместный просмотр сэкономит время.",
+
+"insightTopCategoryTitle": "Большинство записей в категории {category}",
+"insightTopCategoryBody": "Этот раздел дает наибольший эффект.",
+
+"insightStableTitle": "Всё выглядит стабильно",
+"insightStableBody": "Нет сроков, требующих внимания.",
+
+"summaryAllTitle": "Все записи",
+"summaryAllCaption": "Отслеживаются в Vaultara",
+"summarySoonTitle": "Скоро истекают",
+"summarySoonCaption": "В течение 30 дней",
+"summaryWeekTitle": "На этой неделе",
+"summaryWeekCaption": "Истекают через 7 дней",
+"summaryExpiredTitle": "Истекшие",
+"summaryExpiredCaption": "После даты истечения",
+
+"stabilityStableTitle": "Стабильность сохранена",
+"stabilityStableBody": "Нет накопленных рисков.",
+
+"stabilityDecliningTitle": "Стабильность снижается",
+"stabilityDecliningBody": "Некоторые записи уже истекли, другие приближаются.",
+
+"stabilityWeakenedTitle": "Стабильность ослабла",
+"stabilityWeakenedBody": "Истекшие записи снижают надежность.",
+
+"stabilityPressureTitle": "Давление растет",
+"stabilityPressureBody": "Несколько записей скоро потребуют внимания.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Заметки",
+"notesHint": "Введите заметки",
+"editorReminderTitle": "Напоминание",
+"editorReminderNone": "Без напоминания",
+"editorReminderOnExpiry": "В день окончания",
+"editorReminder7Days": "За 7 дней",
+"editorReminder30Days": "За 30 дней",
+"editorReminderCustom": "Пользовательское",
+"daysBeforeExpiry": "дней до окончания",
+
+"reminderStage0Title": "Напоминание об окончании",
+"reminderStage0Body": "{firstName}, срок действия {itemName} истекает через {days} дней.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Повторное напоминание",
+"reminderStage1Body": "{firstName}, {itemName} ещё не обновлён.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Срок подходит",
+"reminderStage2Body": "Срок действия {itemName} подходит к концу.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Последнее напоминание",
+"reminderFinalBody": "{firstName}, пожалуйста обновите {itemName} сейчас.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Баланс охвата",
+"coverageAllRepresented": "Ваши записи охватывают все категории.",
+"coverageMissingNamed": "Нет записей в {count} категориях: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Вы не добавили записи в {count} категориях, включая {names} и ещё {remaining}.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Использовать пароль",
+"signInWithBiometrics": "Войти с помощью биометрии",
+"enableBiometricsTitle": "Включить биометрическую защиту",
+"enableBiometricsBody": "Используйте отпечаток пальца или распознавание лица для защиты Vaultara.",
+"enableBiometricsReason": "Включить биометрическую разблокировку для Vaultara.",
+"notNow": "Не сейчас",
+"useBiometrics": "Использовать биометрию",
+
+"recordsCalendarIntro": "Выберите, как вы хотите просматривать сроки действия:\n\n• Укажите, на сколько дней вперёд хотите посмотреть.\n• Или выберите точную дату в календаре.\n\nVaultara покажет, какие записи истекают в этот день.",
+
+"showingRecordsRelative": "Показаны записи, которые истекают {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Показаны записи, которые истекают в выбранную дату",
+
+"noRecordsOnDate": "В этот день нет записей с истекающим сроком.",
+
+"recordEditorAddTitle": "Добавить запись",
+"recordEditorEditTitle": "Редактировать запись",
+
+"editorRecordName": "Название записи",
+"editorRecordNameHint": "Введите название записи",
+"recordEditorErrorName": "Название записи обязательно",
+
+"recordsGroupTapHint": "Нажмите, чтобы добавить и отслеживать записи в этой группе.",
+
+"recordsInGroup": "Записи в этой группе",
+
+"recordsInGroupHint": "Отслеживайте каждую важную запись по дате окончания.",
+
+"searchRecords": "Поиск записей",
+
+"addRecord": "Добавить запись",
+
+"noRecordsYet": "Записей пока нет.",
+"deleteRecordTitle": "Удалить запись",
+
+"recordsInsightClusteredTitle": "Несколько записей истекают около {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Большинство ваших записей находится в категории {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Все записи",
+
+"recordsStabilityDecliningBody": "Некоторые записи уже истекли, а другие скоро истекут.",
+
+"recordsCoverageAllRepresented": "Ваши записи охватывают все категории.",
+
+"recordReminderStage0Body": "{firstName}, срок действия {recordName} истекает через {days} дней.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, {recordName} ещё не обновлён.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "Срок действия {recordName} подходит к концу.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, пожалуйста обновите {recordName} сейчас.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Групп пока нет",
+
+"recordsExpiring": "{count, plural, one {1 запись истекает через {days} дней} other {{count} записей истекают через {days} дней}}",
+
+"recordsGroupStats": "{records, plural, one {1 запись} other {{records} записей}} • {expiring} истекают в течение {days} дней",
+
+"groupLabel": "{count, plural, one {{count} группа} other {{count} группы}}",
+
+"recordsLabel": "{count, plural, one {{count} запись} other {{count} записей}}",
+
+"forgotPassword": "Забыли пароль?",
+"forgotPasswordTitle": "Сброс пароля",
+"forgotPasswordBody": "Введите адрес электронной почты, и мы отправим вам ссылку для сброса пароля.",
+"sendResetLink": "Отправить ссылку",
+"passwordResetEmailSent": "Письмо для сброса пароля отправлено.",
+"verifyEmailToContinue": "Подтвердите адрес электронной почты перед входом",
+
+"changeEmailTitle": "Изменить электронную почту",
+"newEmailHint": "Введите новый адрес электронной почты",
+"sendVerificationEmail": "Отправить письмо подтверждения",
+
+"deleteAccountTitle": "Удалить аккаунт",
+"deleteAccountWarning": "Это действие навсегда удалит ваш аккаунт и все данные.\nЕго нельзя отменить.",
+"deleteAccountConfirm": "Удалить аккаунт навсегда",
+
+"supportTitle": "Поддержка",
+"supportSubtitle": "Свяжитесь с нами, если вам нужна помощь.",
+"supportEmailSubject": "Запрос в поддержку Vaultara",
+"supportEmailError": "Не удалось открыть почтовое приложение.",
+
+"passwordResetEmailFailed": "Не удалось отправить письмо для сброса пароля.",
+
+"loggedInPasswordResetBody": "Мы отправим ссылку для сброса пароля на:\n{email}",
+
+"accountManagementTitle": "Управление аккаунтом",
+"changeEmailSubtitle": "Обновите электронную почту, связанную с аккаунтом.",
+"changePasswordTitle": "Изменить пароль",
+"changePasswordSubtitle": "Мы отправим ссылку для безопасного изменения.",
+
+"deleteAccountSubtitle": "Навсегда удалить аккаунт Vaultara.",
+
+"biometricAuthReason": "Пройдите аутентификацию для доступа к аккаунту Vaultara.",
+
+"verifyEmailTitle": "Подтвердите электронную почту",
+"verifyEmailBody": "Мы отправили письмо для подтверждения. Откройте его и подтвердите адрес, затем вернитесь сюда.",
+"verifyEmailConfirmedButton": "Я подтвердил электронную почту",
+"verifyEmailResendButton": "Отправить письмо повторно",
+"verifyEmailSending": "Отправка...",
+
+"navHome": "Главная",
+"navCategories": "Категории",
+"navInsights": "Анализ",
+"navCalendar": "Календарь",
+
+"tutorialCancel": "Отмена",
+"tutorialNext": "Далее",
+"tutorialEnd": "Завершить обучение",
+
+"softDeleteCategory": "Категория",
+"softDeleteGroup": "Группа",
+"softDeleteRecord": "Запись",
+
+"softDeleteTitle": "Переместить {type} в Недавно удалённые",
+"softDeleteMessage": "{type} \"{name}\" будет перемещён в Недавно удалённые.\n\nВы сможете восстановить его в течение 30 дней. После этого он будет удалён навсегда.",
+"softDeleteMove": "Переместить",
+"recentlyDeletedTitle": "Недавно удалённые",
+"categories": "Категории",
+"groups": "Группы",
+"records": "Записи",
+"restore": "Восстановить",
+"deletePermanently": "Удалить навсегда",
+
+"recentlyDeletedBanner": "Удалённые {type} хранятся здесь 30 дней перед окончательным удалением.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Поиск удалённых {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Пока нет удалённых {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Нажмите на категорию, чтобы увидеть группы и управлять записями.",
+"groupsHint": "Группы организуют записи в этой категории. Нажмите на группу для управления.",
+"notLoggedIn": "Вы не вошли в систему",
+
+"recordsInsideGroupHint": "Это записи в этой группе.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" перемещён в Недавно удалённые",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" успешно удалён",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Водительские права"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" успешно обновлён",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Виза"} } },
+
+"snackAddedSuccessfully": "\"{name}\" успешно добавлен",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Страховка"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" успешно восстановлен",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackFreeLimitReached": "Достигнут бесплатный лимит ({current}/{limit}). Обновитесь, чтобы добавить больше.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Поиск по всем записям",
+"globalSearchHint": "Введите название записи, категорию или группу",
+"globalSearchNoMatches": "Нет записей, соответствующих поиску.",
+"snackNoRecordsToSearch": "Нет записей для поиска. Добавьте несколько записей, и Vaultara автоматически их проиндексирует.",
+
+"recoveryCentreTitle": "Центр восстановления",
+"recoveryCentreSubtitle": "Восстановите или навсегда удалите удалённые записи.",
+
+"plan_premium": "Премиум",
+"plan_free": "Бесплатный",
+
+"profile_app_settings_title": "Настройки приложения",
+"profile_privacy_security_title": "Конфиденциальность и безопасность",
+"profile_biometric_on": "Биометрическая блокировка включена на этом устройстве.",
+"profile_biometric_off": "Биометрическая блокировка выключена.",
+"profile_biometric_enable_reason": "Подтвердите личность, чтобы включить биометрическую блокировку.",
+"profile_biometric_disable_reason": "Подтвердите личность, чтобы выключить биометрическую блокировку.",
+"profile_account_management_title": "Управление аккаунтом",
+"profile_premium_active_title": "Premium активен",
+"profile_premium_upgrade_title": "Обновить до Premium",
+"profile_premium_active_subtitle": "Расширенные напоминания разблокированы.",
+"profile_premium_upgrade_subtitle": "Разблокируйте расширенные напоминания и неограниченную организацию.",
+"profile_manage_cancel_hint": "Управляйте или отменяйте в любое время через Google Play.",
+"profile_manage_subscription_button": "Управление подпиской",
+"plansTitle": "Выберите план",
+"plansTrialBanner": "Начните с 7-дневного бесплатного пробного периода.\nОтменить можно в любое время.",
+"plansLoading": "Загрузка…",
+"plansStartFreeTrial": "Начать бесплатный пробный период",
+"plansNoChargeTodayFooter": "7 дней бесплатно · Сегодня без оплаты",
+
+"planFreeTitle": "Бесплатный",
+"planFreeSubtitle": "Для начала",
+"planPremiumMonthlyTitle": "Premium ежемесячно",
+"planPremiumYearlyTitle": "Premium ежегодно",
+"planPerMonth": "в месяц",
+"planPerYear": "в год",
+
+"planBadgeCurrent": "Текущий план",
+"planBadgePopular": "Популярный",
+"planBadgeBestValue": "Лучшее предложение",
+
+"planYouAreOnThisPlan": "Вы уже на этом плане.",
+
+"planFeatureUpToRecords": "До {count} записей",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Пользовательские категории (до {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Предустановленные подкатегории",
+"planFeatureCloudStorage": "Облачное хранилище",
+"planFeatureSmartExpiryInsights": "Умные напоминания о сроках",
+"planFeatureCoverageBalance": "Баланс покрытия",
+"planFeatureRecordStabilityTracking": "Отслеживание стабильности записей",
+
+"planFeatureUnlimitedRecords": "Неограниченные записи",
+"planFeatureUnlimitedCategories": "Неограниченные категории",
+"planFeatureCustomSubcategories": "Пользовательские подкатегории",
+"planFeatureMultipleRemindersPerRecord": "Несколько напоминаний",
+"planFeatureAdvancedReminderTiming": "Расширенная настройка времени",
+"planFeatureAutomaticFollowUps": "Автоматические напоминания",
+
+"planFeatureEverythingInMonthly": "Всё из месячного плана",
+"planFeatureSavePercentComparedToMonthly": "Сэкономьте {percent}% по сравнению с месячным",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Лучшее долгосрочное предложение",
+
+"editorReminderLabel": "Напоминание",
+"editorReminderSelectOptional": "Выберите напоминание (необязательно)",
+"editorReminderOnExpiry": "В день окончания срока",
+"editorReminderDaysBefore": "За {days} дней до окончания",
+"editorFreeItemsCount": "Бесплатные элементы: {used}/{limit}",
+"editorExpiryPastWarning": "Срок действия уже истёк.",
+"editorExpiryTodayWarning": "Этот запись истекает сегодня.",
+"editorErrorExpiryPast": "Срок действия не может быть в прошлом.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Сегодняшние обзоры",
+"tutorialBannerTitle": "Быстрый обзор",
+"tutorialBannerBody": "За минуту узнайте, где искать, как добавлять записи и что означают обзоры.",
+"tutorialBannerStart": "Начать обзор",
+"tutorialBannerDismiss": "Не сейчас",
+"authErrorUserDisabled": "Эта учётная запись отключена.",
+"authErrorNetwork": "Ошибка сети. Проверьте интернет и попробуйте снова.",
+"authErrorTooManyRequests": "Слишком много попыток. Пожалуйста, попробуйте позже.",
+"authErrorSignInFailed": "Не удалось войти. Пожалуйста, попробуйте снова.",
+"ok": "ОК",
+"snackPremiumEnabled": "Premium включён",
+"snackPremiumRestored": "Premium восстановлен",
+"passwordNeedLower": "Должна быть строчная буква",
+"passwordNeedUpper": "Должна быть заглавная буква",
+"passwordNeedNumber": "Должна быть цифра",
+"passwordNeedSymbol": "Должен быть символ",
+"editorFreeItemsCount": "Бесплатные элементы: {used}/{limit}",
+"editorExpiryPastWarning": "Срок действия уже истёк.",
+"editorExpiryTodayWarning": "Этот запись истекает сегодня.",
+"editorErrorExpiryPast": "Срок действия не может быть в прошлом.",
+"todayInsightsTitle": "Сегодняшние обзоры",
+"tutorialBannerTitle": "Быстрый обзор",
+"tutorialBannerBody": "За минуту узнайте, где искать, как добавлять записи и что означают обзоры.",
+"tutorialHomeSearch": "Используйте поиск, чтобы быстро найти любой отслеживаемый запись.",
+"tutorialHomeFab": "Добавьте свою первую запись здесь.\nВыберите категорию, добавьте заметки и дату окончания.",
+"tutorialHomeSummary": "С ростом числа записей этот раздел поможет заметить приближающиеся сроки.",
+"tutorialHomeInsight": "Этот умный обзор показывает закономерности и приближающиеся сроки.",
+"tutorialHomeCoverage": "Баланс покрытия показывает распределение записей по категориям.",
+"tutorialHomeStability": "Стабильность отражает надёжность записей со временем.",
+"profile_account_management_subtitle": "Изменить email, пароль или удалить аккаунт.",
+"confirmIdentityTitle": "Подтвердить личность",
+"confirm": "Подтвердить",
+"profile_sign_out_title": "Выйти",
+"profile_sign_out_subtitle": "Выйти из Vaultara на этом устройстве",
+"profile_sign_out_confirm_title": "Выйти?",
+"profile_sign_out_confirm_body": "Чтобы получить доступ к аккаунту, вам нужно будет войти снова.",
+"profile_sign_out_action": "Выйти",
+"todayInsightsAudioHint": "Предпочитаете аудио? Используйте значок динамика.",
+"category2Label": "Категория",
+"enable2BiometricsBody": "Используйте распознавание отпечатка пальца, чтобы защитить ваш аккаунт Vaultara.",
+"snackNotificationsDisabled": "Уведомления отключены. Включите их, чтобы получать напоминания.",
+"openSettings": "Открыть настройки",
+
+"reminderOnExpiryTitle": "Истекает сегодня",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Привет {firstName}, \"{itemName}\" истекает сегодня.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Бесплатные категории: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Показывает, сколько бесплатных категорий использовано из бесплатного лимита.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Добавить заметки (необязательно)",
+"apply": "Применить",
+"smartInsightExpiresTodayHeading": "Истекает Сегодня",
+"smartInsightExpiresTodaySingleBody": "{name} истекает сегодня. Действуйте сейчас, чтобы поддерживать его актуальность.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} и ещё 1 документ истекают сегодня.} few{{names} и ещё {extra} документа истекают сегодня.} many{{names} и ещё {extra} документов истекают сегодня.} other{{names} и ещё {extra} документа истекают сегодня.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Требует Вашего Внимания",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} истекает через 1 день и напоминание не установлено. Подтвердите, что детали всё ещё верны.} few{{name} истекает через {days} дня и напоминание не установлено. Подтвердите, что детали всё ещё верны.} many{{name} истекает через {days} дней и напоминание не установлено. Подтвердите, что детали всё ещё верны.} other{{name} истекает через {days} дня и напоминание не установлено. Подтвердите, что детали всё ещё верны.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Несколько Обновлений Подряд",
+"smartInsightRenewalTwinBodyTwo": "{a} и {b} истекают в течение трёх недель друг от друга. Планируйте заранее.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} и {c} все истекают в течение трёх недель. Планируйте заранее.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} и ещё 1 документ истекают в течение трёх недель. Планируйте заранее.} few{{a}, {b} и ещё {extra} документа истекают в течение трёх недель. Планируйте заранее.} many{{a}, {b} и ещё {extra} документов истекают в течение трёх недель. Планируйте заранее.} other{{a}, {b} и ещё {extra} документа истекают в течение трёх недель. Планируйте заранее.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Предстоящая Группа",
+"smartInsightClusterBody": "{count, plural, =1{1 документ в {category} истекает в течение следующих двух месяцев. Рассмотрите возможность их совместной обработки.} few{{count} документа в {category} истекают в течение следующих двух месяцев. Рассмотрите возможность их совместной обработки.} many{{count} документов в {category} истекают в течение следующих двух месяцев. Рассмотрите возможность их совместной обработки.} other{{count} документа в {category} истекают в течение следующих двух месяцев. Рассмотрите возможность их совместной обработки.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Спокойный Период Впереди",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Ничего не истекает в следующий 1 день. Ваше следующее обновление {firstDate}.} few{Ничего не истекает в следующие {days} дня. Ваше следующее обновление {firstDate}.} many{Ничего не истекает в следующие {days} дней. Ваше следующее обновление {firstDate}.} other{Ничего не истекает в следующие {days} дня. Ваше следующее обновление {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Всё Актуально",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 предстоящий срок покрыт напоминаниями. Ничто другое не требует вашего внимания.} few{{count} предстоящих срока покрыты напоминаниями. Ничто другое не требует вашего внимания.} many{{count} предстоящих сроков покрыты напоминаниями. Ничто другое не требует вашего внимания.} other{{count} предстоящего срока покрыты напоминаниями. Ничто другое не требует вашего внимания.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Всё актуально. Ничто не требует вашего внимания прямо сейчас.",
+"smartInsightNoRecordsHeading": "Добавьте Свою Первую Запись",
+"smartInsightNoRecordsBody": "Начните отслеживать свои документы, и Vaultara будет отображать здесь умные подсказки.",
+"expiryTimelineTitle": "Временная шкала истечения",
+"expiryTimelineSubtitle": "Коснитесь месяца, чтобы увидеть записи, истекающие в этом месяце",
+"expiryTimelineDetailCount": "{count, plural, =1{1 запись} few{{count} записи} many{{count} записей} other{{count} записи}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Предстоящие",
+"summaryUpcomingCaption": "В течение 30 дней",
+"summaryUrgentTitle": "Срочно",
+"summaryUrgentCaption": "В течение 7 дней"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -3,8 +3,7 @@
 
   "expiryCalendarTitle": "Son kullanma takvimi",
 
-  "calendarIntro":
-    "Son kullanma tarihlerini nasıl görmek istediğinizi seçin:\n\n• Bugünden itibaren kaç gün bakmak istediğinizi girin.\n• Veya takvimden belirli bir tarih seçin.\n\nVaultara o gün süresi dolan öğeleri gösterir.",
+  "calendarIntro": "Son kullanma tarihlerini nasıl görmek istediğinizi seçin:\n\n• Bugünden itibaren kaç gün ileriye bakmak istediğinizi girin.\n• Veya takvimden kesin bir tarih seçin.\n\nVaultara o gün son kullanma tarihine ulaşan öğeleri gösterir.",
 
   "daysFromTodayLabel": "Bugünden itibaren gün",
   "daysFromTodayHint": "Örneğin 0, 1, 7, 30",
@@ -19,19 +18,23 @@
 
   "inDays": "{days} gün içinde",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
-  "enterDaysError": "Gün sayısı gerekli",
-  "invalidDaysError": "Geçerli bir sayı girin (0 veya daha fazla)",
+  "enterDaysError": "Gün sayısı girin.",
+  "invalidDaysError": "Geçerli bir gün sayısı girin (0 veya daha fazla).",
 
-  "showingItemsRelative": "{time} süresi dolan öğeler",
+  "showingItemsRelative": "{time} süresi dolacak öğeler gösteriliyor",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "Seçilen tarihte süresi dolan öğeler",
-  "noItemsOnDate": "Bu tarihte süresi dolan öğe yok",
+  "showingItemsExact": "Seçilen tarihte süresi dolacak öğeler gösteriliyor",
+  "noItemsOnDate": "Bu tarihte süresi dolacak öğe yok.",
 
   "editorAddTitle": "Öğe ekle",
   "editorEditTitle": "Öğeyi düzenle",
@@ -40,19 +43,19 @@
   "editorCategoryHint": "Kategori seç",
 
   "editorGroup": "Grup",
-  "editorGroupHint": "Bu kategoride grup seç",
+  "editorGroupHint": "Bu kategori altında grup seç",
 
   "editorItemName": "Öğe adı",
-  "editorItemNameHint": "Öğe adını gir",
+  "editorItemNameHint": "Öğe adını girin",
 
   "editorExpiryDate": "Son kullanma tarihi",
-  "editorExpiryDateHint": "Tarih seç",
+  "editorExpiryDateHint": "Son kullanma tarihini seç",
 
-  "editorErrorCategory": "Kategori gerekli",
-  "editorErrorGroup": "Grup gerekli",
-  "editorErrorName": "Öğe adı gerekli",
-  "editorErrorExpiry": "Tarih gerekli",
-  "editorErrorExpiryPast": "Tarih bugün veya gelecekte olmalı",
+  "editorErrorCategory": "Kategori seçin",
+  "editorErrorGroup": "Grup seçin",
+  "editorErrorName": "Öğe adı gereklidir",
+  "editorErrorExpiry": "Son kullanma tarihi seçin",
+  "editorErrorExpiryPast": "Son kullanma tarihi bugün veya gelecekte olmalıdır",
 
   "cancel": "İptal",
   "save": "Kaydet",
@@ -60,7 +63,7 @@
   "addCategoryTitle": "Kategori ekle",
   "unlimitedCategories": "Sınırsız kategoriler (Premium)",
 
-  "categoryUsage": "{current} / {limit} kategori kullanıldı",
+  "categoryUsage": "{current} / {limit} kullanılan kategori",
   "@categoryUsage": {
     "placeholders": {
       "current": { "type": "int" },
@@ -71,36 +74,824 @@
   "categoryNameLabel": "Kategori adı",
   "categoryNameHint": "Kategori gir",
 
-  "categoryLimitReached":
-    "Basic plan sınırına ulaşıldı. Premium sınırsız kategori sağlar",
-
-  "categoryLimitInfo":
-    "Basic plan en fazla {limit} kategoriye izin verir",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+  "categoryLimitReached": "Basic planın {limit} kategori sınırına ulaştınız. Sınırsız kategori için Premium'a yükseltin.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
-  "categoryErrorEmpty": "Kategori adı gerekli",
+  "categoryLimitInfo": "Basic planda en fazla {limit} özel kategori oluşturabilirsiniz.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Kategori adı gereklidir",
   "categoryErrorTooShort": "Kategori adı çok kısa",
   "categoryErrorTooLong": "Kategori adı çok uzun",
-  "categoryErrorSymbols": "Ad yalnızca sembollerden oluşamaz",
-  "categoryErrorNumbers": "Ad sayı içeremez",
+  "categoryErrorSymbols": "Kategori adı yalnızca sembollerden oluşamaz",
+  "categoryErrorNumbers": "Kategori adı sayı içeremez",
 
   "upgradeRequired": "Yükseltme gerekli",
   "viewPremiumBenefits": "Premium avantajlarını gör",
-
   "createCategory": "Oluştur",
 
   "addGroupTitle": "Grup ekle",
-
   "groupNameLabel": "Grup",
-  "groupNameHint": "Grup gir",
+  "groupNameHint": "Grup girin",
 
-  "groupErrorEmpty": "Grup adı gerekli",
+  "groupErrorEmpty": "Grup adı gereklidir",
   "groupErrorTooShort": "Grup adı çok kısa",
   "groupErrorTooLong": "Grup adı çok uzun",
-  "groupErrorSymbols": "Ad yalnızca sembollerden oluşamaz",
-  "groupErrorNumbers": "Ad sayı içeremez",
+  "groupErrorSymbols": "Grup adı sembol içeremez",
+  "groupErrorNumbers": "Grup adı sayı içeremez",
+  "createGroup": "Oluştur",
 
-  "createGroup": "Oluştur"
+  "firstNameLabel": "Ad",
+  "firstNameHint": "Ad girin",
+
+  "lastNameLabel": "Soyad",
+  "lastNameHint": "Soyad girin",
+
+  "emailLabel": "E-posta adresi",
+
+  "passwordLabel": "Şifre",
+  "passwordHelper": "En az 8 karakter ve farklı türler",
+
+  "passwordTooShort": "Çok kısa",
+  "passwordTooWeak": "Zayıf",
+  "passwordMedium": "Orta",
+  "passwordStrong": "Güçlü",
+
+  "errorFirstName": "Ad gereklidir",
+  "errorLastName": "Soyad gereklidir",
+  "errorEmailInvalid": "Geçerli bir e-posta adresi girin",
+  "errorEmailInUse": "Bu e-posta adresi zaten\nbir Vaultara hesabına bağlı",
+  "errorPasswordLength": "Şifre en az sekiz karakter uzunluğunda olmalıdır",
+  "errorPasswordWeak": "Daha güçlü bir şifre girin",
+  "errorGeneric": "Kayıt başarısız oldu. Lütfen tekrar deneyin",
+
+  "createAccount": "Hesap oluştur",
+  "appName": "Vaultara",
+  "authTagline": "Pasaportlar, lisanslar, kartlar ve diğer önemli belgeler için kişisel merkeziniz",
+  "tabSignIn": "Giriş yap",
+  "tabCreateAccount": "Hesap oluştur",
+  "signInFooterText": "Kişisel Vaultara alanınıza erişmek ve tüm yenilemeleri kontrol altında tutmak için giriş yapın",
+  "createAccountFooterText": "Önemli hatırlatmalarınızı yedeklemek ve istediğiniz zaman erişmek için Vaultara hesabınızı oluşturun",
+  "emailNotFound": "Yanlış e-posta.\nBu e-posta ile bir Vaultara hesabı yok",
+  "incorrectPassword": "Yanlış şifre",
+  "emailLabel": "E-posta adresi",
+  "passwordLabel": "Şifre",
+"emailRequired": "E-posta adresiniz gereklidir",
+"passwordRequired": "Şifreniz gereklidir",
+"registerPasswordHint": "Şifre girin",
+"loginPasswordHint": "Şifrenizi girin",
+"emailHint": "E-posta adresinizi girin",
+  "signIn": "Giriş yap",
+  "categoryPersonalIdentification": "Kişisel Kimlik",
+  "categoryDrivingAndVehicles": "Sürüş ve Araçlar",
+  "categoryTravelAndImmigration": "Seyahat ve Göç",
+  "categoryBankingAndCards": "Bankacılık ve Kartlar",
+  "categoryInsuranceAndCover": "Sigorta ve Teminat",
+  "categoryHealthAndMedical": "Sağlık ve Tıbbi",
+  "categoryWorkAndProfessional": "İş ve Profesyonel",
+  "categoryPropertyAndHousing": "Mülk ve Konut",
+  "categoryHouseholdAndUtilities": "Ev ve Hizmetler",
+
+  "subcategoryPassports": "Pasaportlar",
+  "subcategoryIdCards": "Kimlik Kartları",
+  "subcategoryResidencePermits": "Oturma İzinleri",
+
+  "subcategoryDrivingLicences": "Sürücü Belgeleri",
+  "subcategoryVehicleRegistrations": "Araç Kayıtları",
+  "subcategoryRoadworthyCertificates": "Yola Uygunluk Belgeleri",
+  "subcategoryVehicleInspectionCertificates": "Araç Muayene Belgeleri",
+
+  "subcategoryVisas": "Vizeler",
+  "subcategoryStudyPermits": "Öğrenim İzinleri",
+  "subcategoryWorkPermits": "Çalışma İzinleri",
+  "subcategoryTravelInsuranceDocuments": "Seyahat Sigortası Belgeleri",
+
+  "subcategoryDebitAndCreditCards": "Banka ve Kredi Kartları",
+  "subcategoryStoreCards": "Mağaza Kartları",
+  "subcategoryFuelCards": "Yakıt Kartları",
+
+  "subcategoryVehicleInsurances": "Araç Sigortaları",
+  "subcategoryPropertyInsurances": "Mülk Sigortaları",
+  "subcategoryLifeInsurances": "Hayat Sigortaları",
+  "subcategoryHealthInsurances": "Sağlık Sigortaları",
+  "subcategoryTravelInsurances": "Seyahat Sigortaları",
+
+  "subcategoryMedicalPrescriptions": "Tıbbi Reçeteler",
+  "subcategoryOpticalPrescriptions": "Göz Reçeteleri",
+  "subcategoryMedicalCertificates": "Tıbbi Belgeler",
+
+  "subcategoryProfessionalLicences": "Profesyonel Lisanslar",
+  "subcategoryProfessionalRegistrations": "Profesyonel Kayıtlar",
+  "subcategoryIndustryRegistrations": "Sektör Kayıtları",
+  "subcategoryWorkAccessCards": "İş Erişim Kartları",
+
+  "subcategoryLeaseAgreements": "Kira Sözleşmeleri",
+  "subcategoryAccessCardsAndTags": "Erişim Kartları ve Etiketler",
+  "subcategoryParkingPermits": "Park İzinleri",
+  "subcategorySecurityAccessPermits": "Güvenlik Erişim İzinleri",
+
+  "subcategoryElectricityAccounts": "Elektrik Hesapları",
+  "subcategoryWaterAccounts": "Su Hesapları",
+  "subcategoryInternetContracts": "İnternet Sözleşmeleri",
+  "subcategorySecurityServiceContracts": "Güvenlik Hizmeti Sözleşmeleri",
+  "searchCategories": "Kategorileri ara",
+  "filterAll": "Tümü",
+  "filterPreset": "Ön ayarlı",
+  "filterCustom": "Özel",
+  "addCategoryTitle": "Kategori ekle",
+  "customLabel": "Özel",
+  "subcategoriesLabel": "Alt kategoriler",
+  "itemsLabel": "Öğeler",
+  "itemsExpiring": "{count} öğe {days} gün içinde sona erecek",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Sabitlenmiş kategoriler",
+  "pinnedHint": "Sık açtığınız kategorileri listenin en üstünde kalmaları için sabitleyin.",
+  "noCategoriesFound": "Kategori bulunamadı",
+  "searchGroups": "Grupları ara",
+  "addGroupTitle": "Grup ekle",
+  "basicPlanGroupInfo": "Basic planı kullanıyorsunuz.\nBu kategori altında önceden ayarlanmış grupları görüntüleyebilirsiniz.\nKendi gruplarınızı oluşturmak için Premium’a yükseltin.",
+  "groupDeleted": "Grup silindi",
+  "undo": "GERİ AL",
+  "groupStats": "{items} öğe • {expiring} öğe {days} gün içinde sona eriyor",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Bu gruptaki öğeleri eklemek ve takip etmek için dokunun.",
+  "itemsInGroup": "Bu gruptaki öğeler",
+  "itemsInGroupHint": "Önemli öğeleri son kullanma tarihleriyle takip ederek zamanında yenileyin.",
+  "searchItems": "Öğeleri ara",
+  "filterAll": "Tümü",
+  "filterExpiringWithin": "{days} gün içinde sona erecek",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Süresi dolmuş",
+  "addItem": "Öğe ekle",
+  "noItemsYet": "Henüz öğe yok.",
+
+  "statusExpired": "Süresi dolmuş",
+  "statusExpiresToday": "Bugün sona eriyor",
+  "statusExpiresInOneDay": "Yarın sona eriyor",
+  "statusExpiresInDays": "{days} gün içinde sona eriyor",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Geçerli",
+
+  "deleteCategoryTitle": "Kategori sil",
+  "deleteCategoryMessage": "\"{name}\" kategorisini silmek istediğinize emin misiniz?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Grubu sil",
+  "deleteGroupMessage": "\"{name}\" grubunu silmek istediğinize emin misiniz?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Öğeyi sil",
+  "deleteItemMessage": "\"{name}\" öğesini silmek istediğinize emin misiniz?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "İptal",
+  "delete": "Sil",
+  "homeWelcomeFirstTitle": "Hoş geldiniz, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Tekrar hoş geldiniz, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara, önemli son kullanma tarihlerini takip etmenize yardımcı olur, böylece hiçbir şey gözden kaçmaz.",
+
+"homeWelcomeSubtitleFirst":
+  "Burada olmanızdan memnuniyet duyuyoruz. Vaultara, önemli tarihleri ve kayıtları tek bir güvenli yerde düzenlemenize yardımcı olur.",
+
+"homeWelcomeSubtitleBack":
+  "Sizi tekrar görmek güzel. Vaultara, önemli tarihlerinizi ve kayıtlarınızı gözden geçirmek istediğinizde her zaman hazırdır.",
+  "insightEmptyTitle": "Henüz hiçbir şey eklemediniz",
+  "insightEmptyBody": "Önemli tarihleri takip etmeye başladığınızda Vaultara süreleri kaçırmamanıza yardımcı olur.",
+
+  "insightExpiresTodayTitle": "\"{name}\" bugün sona eriyor",
+  "insightExpiresTodayBody": "Kısa bir kontrol bilgileri doğru tutar.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" yarın sona eriyor",
+  "insightExpiresTomorrowBody": "Şimdi gözden geçirmek daha sonra zaman kazandırabilir.",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} tarihinde sona eriyor",
+  "insightExpiresSoonBody": "Erken ilgilenmek işleri kolaylaştırır.",
+
+  "insightNextExpiryTitle": "Bir sonraki bitiş \"{name}\" ({date})",
+  "insightNextExpiryBody": "Şu anda herhangi bir işlem gerekmez.",
+
+  "insightClusteredTitle": "{month} civarında birden fazla öğe sona eriyor",
+  "insightClusteredBody": "Birlikte gözden geçirmek zaman kazandırabilir.",
+
+  "insightTopCategoryTitle": "Öğelerin çoğu {category} altında",
+  "insightTopCategoryBody": "Buradan başlamak en büyük etkiyi sağlar.",
+
+  "insightStableTitle": "Her şey şu anda stabil",
+  "insightStableBody": "Acil bir bitiş tarihi yok.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Hoş geldiniz",
+  "summaryAllTitle": "Tüm öğeler",
+"summaryAllCaption": "Vaultara’da izleniyor",
+"summarySoonTitle": "Yakında sona erecek",
+"summarySoonCaption": "30 gün içinde",
+"summaryWeekTitle": "Bu hafta",
+"summaryWeekCaption": "7 gün içinde sona erer",
+"summaryExpiredTitle": "Süresi dolmuş",
+"summaryExpiredCaption": "Son kullanma tarihi geçti",
+"stabilityStableTitle": "Her şey istikrarlı görünüyor",
+"stabilityStableBody": "Kayıtlarınız acil veya birikmiş riskler göstermiyor.",
+
+"stabilityDecliningTitle": "İstikrar azalıyor",
+"stabilityDecliningBody": "Bazı öğelerin süresi dolmuş, diğerleri sona yaklaşıyor.",
+
+"stabilityWeakenedTitle": "İstikrar zayıfladı",
+"stabilityWeakenedBody": "Süresi dolmuş kayıtların varlığı genel güvenilirliği azaltır.",
+
+"stabilityPressureTitle": "Baskı artıyor",
+"stabilityPressureBody": "İstikrarı korumak için bazı kayıtlar yakında dikkat gerektirecek.",
+"editorNotes": "Notlar",
+"notesHint": "Not girin",
+"editorReminderTitle": "Hatırlatıcı",
+"editorReminderNone": "Hatırlatıcı yok",
+"editorReminderOnExpiry": "Son kullanma tarihinde",
+"editorReminder7Days": "Son kullanmadan 7 gün önce",
+"editorReminder30Days": "Son kullanmadan 30 gün önce",
+"editorReminderCustom": "Özel",
+"daysBeforeExpiry": "son kullanmadan önce gün",
+"reminderStage0Title": "Son kullanma hatırlatıcısı",
+"reminderStage0Body": "{firstName}, {itemName} {days} gün içinde sona erecek.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Takip hatırlatıcısı",
+"reminderStage1Body": "{firstName}, {itemName} henüz güncellenmedi.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Son kullanma yaklaşıyor",
+"reminderStage2Body": "{itemName} için son kullanma tarihi yaklaşıyor.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Son hatırlatma",
+"reminderFinalBody": "{firstName}, lütfen {itemName} şimdi güncelleyin.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Kapsama dengesi",
+"coverageAllRepresented": "Kayıtlarınız tüm kategorilerde öğeler içeriyor.",
+"coverageMissingNamed": "{count} kategoride kayıt bulunamadı: {names}.",
+"coverageMissingSummary": "{count} kategoride hiçbir kayıt eklemediniz, {names} ve diğer {remaining} dahil.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Şifre kullan",
+"signInWithBiometrics": "Biyometri ile giriş yap",
+"enableBiometricsTitle": "Biyometrik güvenliği etkinleştir",
+"enableBiometricsBody": "Vaultara’yı korumak için parmak izi veya yüz tanıma kullanın.",
+"enableBiometricsReason": "Vaultara için biyometrik kilit açmayı etkinleştir.",
+"notNow": "Şimdi değil",
+"useBiometrics": "Biyometri kullan",
+"recordsCalendarIntro":
+  "Son kullanma tarihlerinizi nasıl incelemek istediğinizi seçin:\n\n• Bugünden itibaren kaç gün ileriye bakmak istediğinizi yazın\n• Veya takvimden belirli bir tarih seçin\n\nVaultara, o gün süresi dolan kayıtları gösterecektir",
+
+"showingRecordsRelative": "{time} içinde süresi dolan kayıtlar gösteriliyor",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Seçilen tarihte süresi dolan kayıtlar gösteriliyor",
+
+"noRecordsOnDate":
+  "O gün için süresi dolacak kayıt yok",
+
+"recordEditorAddTitle": "Kayıt ekle",
+"recordEditorEditTitle": "Kaydı düzenle",
+
+"editorRecordName": "Kayıt adı",
+"editorRecordNameHint": "Kayıt adını girin",
+"recordEditorErrorName": "Kayıt adı zorunludur",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Bu gruptaki kayıtları eklemek ve takip etmek için dokunun",
+
+"recordsInGroup": "Bu gruptaki kayıtlar",
+
+"recordsInGroupHint":
+  "Her önemli kaydı son kullanma tarihiyle takip ederek zamanında güncelleyin",
+
+"searchRecords": "Kayıtları ara",
+"addRecord": "Kayıt ekle",
+"noRecordsYet": "Henüz kayıt yok",
+
+"deleteRecordTitle": "Kaydı sil",
+
+"recordsInsightClusteredTitle":
+  "{month} civarında birden fazla kayıt sona eriyor",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Kayıtlarınızın çoğu {category} altında gruplanmış",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Tüm kayıtlar",
+
+"recordsStabilityDecliningBody":
+  "Bazı kayıtların süresi doldu ve yakında daha fazlası dolacak",
+
+"recordsCoverageAllRepresented":
+  "Kayıtlarınız tüm kategorileri kapsıyor",
+
+"recordReminderStage0Body":
+  "{firstName}, {recordName} kaydınızın süresi {days} gün içinde dolacak",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, {recordName} kaydınız henüz güncellenmedi",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} kaydının son kullanma tarihi yaklaşıyor",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, lütfen şimdi {recordName} kaydını güncelleyin",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Henüz grup yok",
+"recordsExpiring": "{count, plural, one {1 kayıt {days} gün içinde sona eriyor} other {{count} kayıt {days} gün içinde sona eriyor}}",
+"recordsGroupStats": "{records, plural, one {1 kayıt} other {{records} kayıt}} • {expiring} {days} gün içinde",
+"groupLabel": "{count, plural, one {{count} grup} other {{count} grup}}",
+"recordsLabel": "{count, plural, one {{count} kayıt} other {{count} kayıtlar}}",
+"forgotPassword": "Şifrenizi mi unuttunuz?",
+  "forgotPasswordTitle": "Şifre sıfırlama",
+  "forgotPasswordBody": "E-posta adresinizi girin, şifre sıfırlama bağlantısı göndereceğiz.",
+  "sendResetLink": "Bağlantıyı gönder",
+  "passwordResetEmailSent": "Şifre sıfırlama e-postası gönderildi.",
+  "verifyEmailToContinue": "Giriş yapmadan önce lütfen e-posta adresinizi doğrulayın",
+  "changeEmailTitle": "E-posta adresini değiştir",
+"newEmailHint": "Yeni e-posta adresinizi girin",
+"sendVerificationEmail": "Doğrulama e-postası gönder",
+"deleteAccountTitle": "Hesabı sil",
+"deleteAccountWarning": "Bu işlem hesabınızı ve tüm kayıtlı verileri kalıcı olarak silecektir.\nBu işlem geri alınamaz.",
+"deleteAccountConfirm": "Hesabı kalıcı olarak sil",
+"supportTitle": "Destek",
+"supportSubtitle": "Yardıma ihtiyacınız varsa veya sorularınız varsa bizimle iletişime geçin.",
+"supportEmailSubject": "Vaultara Destek Talebi",
+"supportEmailError": "E-posta uygulaması açılamıyor.",
+"passwordResetEmailFailed": "Şifre sıfırlama e-postası gönderilemedi.",
+"loggedInPasswordResetBody": "Şifre sıfırlama bağlantısını şuraya göndereceğiz:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Hesap yönetimi",
+"changeEmailTitle": "E-posta adresini değiştir",
+"changeEmailSubtitle": "Hesabınıza bağlı e-posta adresini güncelleyin.",
+"changePasswordTitle": "Şifreyi değiştir",
+"changePasswordSubtitle": "Şifrenizi güvenli bir şekilde değiştirmek için size bir e-posta bağlantısı göndereceğiz.",
+"deleteAccountTitle": "Hesabı sil",
+"deleteAccountSubtitle": "Vaultara hesabınızı kalıcı olarak silin.",
+"biometricAuthReason": "Hesabınıza erişmek için kimliğinizi doğrulayın",
+"verifyEmailTitle": "E-postanızı doğrulayın",
+"verifyEmailBody": "Gelen kutunuza bir doğrulama e-postası gönderdik. Açın ve e-posta adresinizi doğrulayın, ardından devam etmek için buraya dönün.",
+"verifyEmailConfirmedButton": "E-postamı doğruladım",
+"verifyEmailResendButton": "Doğrulama e-postasını yeniden gönder",
+"verifyEmailSending": "Gönderiliyor...",
+"navHome": "Ana",
+"navCategories": "Kategori",
+"navInsights": "Analiz",
+"navCalendar": "Takvim",
+"tutorialHomeSearch": "Herhangi bir kaydı hızlıca bulmak için arama çubuğunu kullanın.",
+"tutorialHomeFab": "İlk kaydınızı buraya ekleyin.\nKategori seçin, not ekleyin ve bitiş tarihi belirleyin.",
+"tutorialHomeSummary": "Bu bölüm yaklaşan bitişleri gösterir.",
+"tutorialHomeInsight": "Bu akıllı analiz desenleri gösterir.\nHoparlör simgesine dokunabilirsiniz.",
+"tutorialHomeCoverage": "Kapsama dengesi kayıt dağılımını gösterir.",
+"tutorialHomeStability": "Kararlılık kayıt güvenilirliğini gösterir.",
+"tutorialCancel": "İptal",
+"tutorialNext": "İleri",
+"tutorialEnd": "Eğitimi bitir",
+"softDeleteCategory": "kategori",
+"softDeleteGroup": "grup",
+"softDeleteRecord": "kayıt",
+
+"softDeleteTitle": "{type} öğesini Son Silinenlere Taşı",
+
+"softDeleteMessage": "{type} \"{name}\" Son Silinenlere taşınacaktır.\n\n30 gün içinde geri yükleyebilirsiniz. Daha sonra kalıcı olarak silinir.",
+
+"softDeleteMove": "Taşı",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Son silinenler",
+"categories": "Kategoriler",
+"groups": "Gruplar",
+"records": "Kayıtlar",
+"restore": "Geri yükle",
+"deletePermanently": "Kalıcı olarak sil",
+
+"recentlyDeletedBanner": "Silinen {type} 30 gün boyunca saklanır.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Silinen {type} ara",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Silinen {type} yok",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Gruplarını görmek ve kayıtlarını yönetmek için bir kategoriye dokunun.",
+"groupsHint": "Gruplar bu kategoride kayıtlarınızı düzenler. Kayıtları yönetmek için bir gruba dokunun.",
+"notLoggedIn": "Giriş yapılmadı",
+"recordsInsideGroupHint": "Bunlar bu grubun içindeki kayıtlardır.",
+"snackMovedToRecentlyDeleted": "\"{name}\" Son Silinenler'e taşındı",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" başarıyla silindi",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" başarıyla güncellendi",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" başarıyla eklendi",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" başarıyla geri yüklendi",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Ücretsiz limite ulaşıldı ({current}/{limit}). Daha fazla eklemek için yükseltin.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+   "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Tüm kayıtları ara",
+"globalSearchHint": "Kayıt adı, kategori veya grup girin",
+"globalSearchNoMatches": "Aramanızla eşleşen kayıt yok.",
+"snackNoRecordsToSearch": "Aranacak kayıt yok. Birkaç kayıt ekleyin, Vaultara bunları otomatik olarak dizine ekleyecektir.",
+"recoveryCentreTitle": "Kurtarma Merkezi",
+"recoveryCentreSubtitle": "Kaldırılan kayıtları geri yükleyin veya kalıcı olarak silin.",
+"plan_premium": "Premium",
+"plan_free": "Ücretsiz",
+"profile_app_settings_title": "Uygulama ayarları",
+"profile_privacy_security_title": "Gizlilik ve güvenlik",
+"profile_biometric_on": "Biyometrik kilit bu cihazda etkin.",
+"profile_biometric_off": "Biyometrik kilit devre dışı.",
+"profile_biometric_enable_reason": "Biyometrik kilidi etkinleştirmek için kimliğinizi doğrulayın.",
+"profile_biometric_disable_reason": "Biyometrik kilidi devre dışı bırakmak için kimliğinizi doğrulayın.",
+"profile_account_management_title": "Hesap yönetimi",
+"profile_account_management_subtitle": "E-posta, şifre değiştirin veya hesabı silin.",
+"profile_premium_active_title": "Premium aktif",
+"profile_premium_upgrade_title": "Premium’a yükselt",
+"profile_premium_active_subtitle": "Gelişmiş hatırlatıcılar açıldı.",
+"profile_premium_upgrade_subtitle": "Gelişmiş hatırlatıcıları ve sınırsız düzenlemeyi açın.",
+"profile_manage_cancel_hint": "Google Play üzerinden istediğiniz zaman yönetin veya iptal edin.",
+"profile_manage_subscription_button": "Aboneliği yönet",
+"plansTitle": "Planınızı seçin",
+"plansTrialBanner": "7 gün ücretsiz.\nİstediğiniz zaman iptal edin.",
+"plansLoading": "Yükleniyor…",
+"plansStartFreeTrial": "Ücretsiz başla",
+"plansNoChargeTodayFooter": "7 gün ücretsiz · Bugün ücret yok",
+
+"planFreeTitle": "Ücretsiz",
+"planFreeSubtitle": "Başlamak için",
+"planPremiumMonthlyTitle": "Premium Aylık",
+"planPremiumYearlyTitle": "Premium Yıllık",
+"planPerMonth": "aylık",
+"planPerYear": "yıllık",
+
+"planBadgeCurrent": "Mevcut",
+"planBadgePopular": "Popüler",
+"planBadgeBestValue": "En iyi değer",
+
+"planYouAreOnThisPlan": "Bu plandaysınız.",
+
+"planFeatureUpToRecords": "{count} kayda kadar",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Özel kategoriler ({count} kadar)",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Hazır alt kategoriler",
+"planFeatureCloudStorage": "Bulut depolama",
+"planFeatureSmartExpiryInsights": "Akıllı son kullanma analizi",
+"planFeatureCoverageBalance": "Kategori dengesi",
+"planFeatureRecordStabilityTracking": "Kayıt istikrarı",
+
+"planFeatureUnlimitedRecords": "Sınırsız kayıt",
+"planFeatureUnlimitedCategories": "Sınırsız kategori",
+"planFeatureCustomSubcategories": "Özel alt kategoriler",
+"planFeatureMultipleRemindersPerRecord": "Birden fazla hatırlatma",
+"planFeatureAdvancedReminderTiming": "Gelişmiş zamanlama",
+"planFeatureAutomaticFollowUps": "Otomatik takip",
+
+"planFeatureEverythingInMonthly": "Aylıktaki her şey",
+"planFeatureSavePercentComparedToMonthly": "Aylığa göre %{percent} tasarruf",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Uzun vadede en iyi değer",
+"editorReminderLabel": "Hatırlatıcı",
+"editorReminderSelectOptional": "Hatırlatıcı seçin (isteğe bağlı)",
+"editorReminderOnExpiry": "Son kullanma gününde",
+"editorReminderDaysBefore": "Son kullanmadan {days} gün önce",
+"editorFreeItemsCount": "Ücretsiz kayıtlar: {used}/{limit}",
+"editorExpiryPastWarning": "Son kullanma tarihi zaten geçti.",
+"editorExpiryTodayWarning": "Bu kayıt bugün sona eriyor.",
+"editorErrorExpiryPast": "Son kullanma tarihi geçmiş olamaz.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Bugünün içgörüleri",
+"tutorialBannerTitle": "Hızlı tur",
+"tutorialBannerBody": "Nerede arama yapacağınızı, kayıt eklemeyi ve içgörülerin ne anlama geldiğini bir dakikadan kısa sürede öğrenin.",
+"tutorialBannerStart": "Eğitimi başlat",
+"tutorialBannerDismiss": "Şimdi değil",
+"authErrorUserDisabled": "Bu hesap devre dışı bırakıldı.",
+"authErrorNetwork": "Ağ hatası. Tekrar deneyin.",
+"authErrorTooManyRequests": "Çok fazla deneme. Daha sonra deneyin.",
+"authErrorSignInFailed": "Giriş başarısız oldu. Tekrar deneyin.",
+"ok": "Tamam",
+"snackPremiumEnabled": "Premium etkinleştirildi",
+"snackPremiumRestored": "Premium geri yüklendi",
+"passwordNeedLower": "Küçük harf içermelidir",
+"passwordNeedUpper": "Büyük harf içermelidir",
+"passwordNeedNumber": "Rakam içermelidir",
+"passwordNeedSymbol": "Sembol içermelidir",
+"confirmIdentityTitle": "Kimliği doğrula",
+"confirm": "Doğrula",
+"profile_sign_out_title": "Çıkış yap",
+"profile_sign_out_subtitle": "Bu cihazda Vaultara'dan çıkış yap",
+"profile_sign_out_confirm_title": "Çıkış yapılsın mı?",
+"profile_sign_out_confirm_body": "Hesabınıza erişmek için tekrar giriş yapmanız gerekecek.",
+"profile_sign_out_action": "Çıkış yap",
+"todayInsightsAudioHint": "Sesi mi tercih ediyorsun? Hoparlör simgesini kullan.",
+"category2Label": "Kategori",
+"enable2BiometricsBody": "Vaultara hesabını korumak için parmak izi tanımayı kullan.",
+"snackNotificationsDisabled": "Bildirimler kapalı. Hatırlatıcı almak için açın.",
+"openSettings": "Ayarları aç",
+
+"reminderOnExpiryTitle": "Bugün sona eriyor",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Merhaba {firstName}, \"{itemName}\" bugün sona eriyor.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Ücretsiz kategoriler: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Ücretsiz limitten kaç ücretsiz kategori kullanıldığını gösterir.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Not ekle (isteğe bağlı)",
+"apply": "Uygula",
+"smartInsightExpiresTodayHeading": "Bugün Sona Eriyor",
+"smartInsightExpiresTodaySingleBody": "{name} bugün sona eriyor. Güncel tutmak için şimdi harekete geçin.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ve 1 başka belge bugün sona eriyor.} other{{names} ve {extra} başka belge bugün sona eriyor.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Dikkatinizi Gerektirir",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} 1 gün içinde sona eriyor ve hatırlatıcı ayarlanmamış. Detayların hâlâ doğru olduğunu doğrulayın.} other{{name} {days} gün içinde sona eriyor ve hatırlatıcı ayarlanmamış. Detayların hâlâ doğru olduğunu doğrulayın.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Yakın Tarihli Birden Fazla Yenileme",
+"smartInsightRenewalTwinBodyTwo": "{a} ve {b} birbirinden üç hafta içinde sona eriyor. Önceden plan yapın.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} ve {c} hepsi üç hafta içinde sona eriyor. Önceden plan yapın.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} ve 1 başka belge üç hafta içinde sona eriyor. Önceden plan yapın.} other{{a}, {b} ve {extra} başka belge üç hafta içinde sona eriyor. Önceden plan yapın.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Yaklaşan Grup",
+"smartInsightClusterBody": "{count, plural, =1{{category} kategorisinde 1 belge önümüzdeki iki ay içinde sona eriyor. Birlikte ele almayı düşünün.} other{{category} kategorisinde {count} belge önümüzdeki iki ay içinde sona eriyor. Birlikte ele almayı düşünün.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Önünüzde Sakin Bir Dönem",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Önümüzdeki 1 gün içinde hiçbir şey sona ermiyor. Bir sonraki yenilemeniz {firstDate} tarihinde.} other{Önümüzdeki {days} gün içinde hiçbir şey sona ermiyor. Bir sonraki yenilemeniz {firstDate} tarihinde.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Her Şey Güncel",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 yaklaşan sona erme hatırlatıcılarla kapsanıyor. Başka hiçbir şey dikkatinizi gerektirmiyor.} other{{count} yaklaşan sona erme hatırlatıcılarla kapsanıyor. Başka hiçbir şey dikkatinizi gerektirmiyor.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Her şey güncel. Şu anda hiçbir şey dikkatinizi gerektirmiyor.",
+"smartInsightNoRecordsHeading": "İlk Kaydınızı Ekleyin",
+"smartInsightNoRecordsBody": "Belgelerinizi takip etmeye başlayın ve Vaultara burada akıllı içgörüler gösterecek.",
+"expiryTimelineTitle": "Bitiş zaman çizelgesi",
+"expiryTimelineSubtitle": "O ay sona eren kayıtları görmek için bir aya dokunun",
+"expiryTimelineDetailCount": "{count, plural, =1{1 kayıt} other{{count} kayıt}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Yaklaşan",
+"summaryUpcomingCaption": "30 gün içinde",
+"summaryUrgentTitle": "Acil",
+"summaryUrgentCaption": "7 gün içinde"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

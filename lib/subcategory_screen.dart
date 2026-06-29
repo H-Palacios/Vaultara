@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'category_item.dart';
 import 'items_screen.dart';
-import 'item_repository.dart';
-import 'subcategory_repository.dart';
+import 'package:vaultara/subcategory_repository.dart';
 import 'add_subcategory_sheet.dart';
+import 'document_hierarchy.dart';
+
+import 'subcategory_filter_chips.dart';
+import 'subcategory_card.dart';
+import 'action_feedback_snackbar.dart';
+import 'confirm_soft_delete_dialog.dart';
+import 'package:vaultara/screens/profile/recovery_centre/recently_deleted_screen.dart';
+
+import 'subcategory_search_bar.dart';
 
 enum SubcategoryFilterMode {
   all,
@@ -27,96 +36,82 @@ class SubcategoryScreen extends StatefulWidget {
 }
 
 class _SubcategoryScreenState extends State<SubcategoryScreen> {
-  final TextEditingController _searchController = TextEditingController();
-
   SubcategoryFilterMode _filterMode = SubcategoryFilterMode.all;
+
+  final TextEditingController _searchController = TextEditingController();
 
   List<String> get _subcategories => widget.category.subcategories;
 
-  String? _recentlyDeletedName;
-  int? _recentlyDeletedIndex;
+  final ScrollController _scrollController = ScrollController();
 
   @override
   void initState() {
     super.initState();
-    _loadSubcategories();
-  }
-
-  Future<void> _loadSubcategories() async {
-    await SubcategoryRepository.loadForCurrentUser();
-    final List<String> stored =
-        SubcategoryRepository.getForCategory(widget.category.label);
-
-    setState(() {
-      for (final s in stored) {
-        if (!_subcategories.contains(s)) {
-          _subcategories.add(s);
-        }
-      }
-    });
+    _syncFromRepo();
   }
 
   @override
   void dispose() {
+    _scrollController.dispose();
     _searchController.dispose();
     super.dispose();
   }
 
-  void _deleteSubcategory(String name) async {
-    final int index = _subcategories.indexOf(name);
-    if (index == -1) return;
+  Future<void> _syncFromRepo({bool forceReload = false}) async {
+    await SubcategoryRepository.loadForCurrentUser(forceReload: forceReload);
 
-    final bool isSuggested =
-        widget.category.builtInSubcategories.contains(name);
-    if (isSuggested) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Pre-set groups cannot be deleted. You can add your own custom ones.',
-          ),
-        ),
-      );
-      return;
-    }
+    final builtIns = widget.category.builtInSubcategories.toList();
+    final custom = SubcategoryRepository.getForCategory(widget.category.key);
 
-    setState(() {
-      _subcategories.removeAt(index);
-    });
+    final customSorted = custom.toList()
+      ..sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
 
-    await SubcategoryRepository.deleteSubcategory(
-      categoryLabel: widget.category.label,
-      name: name,
+    final merged = <String>[
+      ...builtIns,
+      ...customSorted,
+    ];
+
+    widget.category.subcategories
+      ..clear()
+      ..addAll(merged);
+
+    if (!mounted) return;
+    setState(() {});
+  }
+
+  String _displayLabel(String key) {
+    final isBuiltIn = widget.category.builtInSubcategories.contains(key);
+    if (isBuiltIn) return DocumentHierarchy.subcategoryLabel(context, key);
+
+    final label =
+        SubcategoryRepository.labelForCategoryKey(widget.category.key, key);
+    return (label ?? key);
+  }
+
+  Future<void> _deleteCustomGroup(String key) async {
+    final label =
+        SubcategoryRepository.labelForCategoryKey(widget.category.key, key) ??
+            key;
+
+    final confirmed = await ConfirmSoftDeleteDialog.show(
+      context,
+      type: SoftDeleteTarget.subcategory,
+      name: label,
     );
 
-    _recentlyDeletedName = name;
-    _recentlyDeletedIndex = index;
+    if (!confirmed) return;
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Group "$name" deleted'),
-        action: SnackBarAction(
-          label: 'UNDO',
-          onPressed: () async {
-            if (_recentlyDeletedName != null &&
-                _recentlyDeletedIndex != null) {
-              setState(() {
-                final int safeIndex =
-                    _recentlyDeletedIndex!.clamp(0, _subcategories.length);
-                _subcategories.insert(
-                  safeIndex,
-                  _recentlyDeletedName!,
-                );
-              });
+    setState(() => _subcategories.remove(key));
 
-              await SubcategoryRepository.addSubcategory(
-                categoryLabel: widget.category.label,
-                name: _recentlyDeletedName!,
-              );
-            }
-          },
-        ),
-      ),
+    await SubcategoryRepository.softDeleteSubcategory(
+      categoryKey: widget.category.key,
+      name: label,
     );
+
+    await _syncFromRepo(forceReload: true);
+
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showDeleted(context, label);
   }
 
   void _openAddSubcategorySheet() {
@@ -124,330 +119,285 @@ class _SubcategoryScreenState extends State<SubcategoryScreen> {
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
-      builder: (_) {
-        return AddSubcategorySheet(
-          onCreate: (String name) async {
-            setState(() {
-              _subcategories.add(name);
-            });
+      builder: (_) => AddSubcategorySheet(
+        onCreate: (key) async {
+          setState(() => _subcategories.add(key));
 
-            await SubcategoryRepository.addSubcategory(
-              categoryLabel: widget.category.label,
-              name: name,
-            );
-          },
-        );
-      },
+          final label =
+              SubcategoryRepository.labelForCategoryKey(widget.category.key, key) ??
+                  key;
+
+          await SubcategoryRepository.addSubcategory(
+            categoryKey: widget.category.key,
+            name: label,
+          );
+
+          await _syncFromRepo(forceReload: true);
+
+          if (!mounted) return;
+          ActionFeedbackSnackbar.showAdded(context, label);
+        },
+      ),
     );
+  }
+
+  Future<void> _openRecentlyDeleted() async {
+    final changed = await Navigator.push<bool>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const RecentlyDeletedScreen(initialTabIndex: 1),
+      ),
+    );
+
+    if (changed == true) {
+      await _syncFromRepo(forceReload: true);
+    }
+  }
+
+  bool _matchesQuery(String subcategoryKey, String q) {
+    final query = q.trim().toLowerCase();
+    if (query.isEmpty) return true;
+
+    final label = _displayLabel(subcategoryKey).toLowerCase();
+    final key = subcategoryKey.toLowerCase();
+
+    return label.contains(query) || key.contains(query);
+  }
+
+  double _responsiveMaxWidth(BuildContext context) {
+    final w = MediaQuery.of(context).size.width;
+    if (w >= 1100) return 820;
+    if (w >= 900) return 760;
+    if (w >= 720) return 640;
+    return 560;
   }
 
   @override
   Widget build(BuildContext context) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
 
-    final String query = _searchController.text.trim().toLowerCase();
-
-    List<String> filtered = List<String>.from(_subcategories);
-
-    if (query.isNotEmpty) {
-      filtered = filtered
-          .where((String s) => s.toLowerCase().contains(query))
-          .toList();
-    }
-
+    List<String> filtered = List.from(_subcategories);
     filtered = switch (_filterMode) {
-      SubcategoryFilterMode.suggestedOnly => filtered
-          .where(
-            (String s) =>
-                widget.category.builtInSubcategories.contains(s),
-          )
-          .toList(),
-      SubcategoryFilterMode.customOnly => filtered
-          .where(
-            (String s) =>
-                !widget.category.builtInSubcategories.contains(s),
-          )
-          .toList(),
-      SubcategoryFilterMode.all => filtered,
+      SubcategoryFilterMode.suggestedOnly =>
+        filtered.where(widget.category.builtInSubcategories.contains).toList(),
+      SubcategoryFilterMode.customOnly =>
+        filtered
+            .where((s) => !widget.category.builtInSubcategories.contains(s))
+            .toList(),
+      _ => filtered,
     };
+    final searchQuery = _searchController.text;
+    filtered = filtered.where((k) => _matchesQuery(k, searchQuery)).toList();
 
-    filtered.sort(
-      (String a, String b) => a.toLowerCase().compareTo(b.toLowerCase()),
-    );
-
-    final int threshold = ItemRepository.expiringThresholdDays;
+    final double maxContentWidth = _responsiveMaxWidth(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.category.label),
-      ),
-      body: SafeArea(
-        child: Column(
+        leadingWidth: 56,
+        leading: const BackButton(),
+        titleSpacing: 0,
+        title: Row(
           children: [
-            if (!widget.isPremium)
-              Container(
-                margin: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: scheme.primary.withOpacity(0.06),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Text(
-                  'You are on the Basic plan.\n'
-                  'You can view the pre-set groups under this category.\n'
-                  'Upgrade to Premium to create your own groups and add more structure.',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-              child: TextField(
-                controller: _searchController,
-                onChanged: (_) => setState(() {}),
-                decoration: const InputDecoration(
-                  hintText: 'Search groups',
-                  prefixIcon: Icon(Icons.search_rounded),
-                  border: OutlineInputBorder(),
-                  isDense: true,
-                ),
-              ),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(999),
-                      border: Border.all(
-                        color: scheme.outline.withOpacity(0.4),
-                      ),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        _SubcategoryFilterChip(
-                          label: 'All',
-                          selected: _filterMode ==
-                              SubcategoryFilterMode.all,
-                          onTap: () {
-                            setState(() {
-                              _filterMode =
-                                  SubcategoryFilterMode.all;
-                            });
-                          },
-                        ),
-                        _SubcategoryFilterChip(
-                          label: 'Pre-set',
-                          selected: _filterMode ==
-                              SubcategoryFilterMode.suggestedOnly,
-                          onTap: () {
-                            setState(() {
-                              _filterMode =
-                                  SubcategoryFilterMode.suggestedOnly;
-                            });
-                          },
-                        ),
-                        _SubcategoryFilterChip(
-                          label: 'Custom',
-                          selected: _filterMode ==
-                              SubcategoryFilterMode.customOnly,
-                          onTap: () {
-                            setState(() {
-                              _filterMode =
-                                  SubcategoryFilterMode.customOnly;
-                            });
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                  if (widget.isPremium)
-                    FilledButton.icon(
-                      onPressed: _openAddSubcategorySheet,
-                      icon: const Icon(Icons.add_rounded, size: 18),
-                      label: const Text('Add group'),
-                      style: FilledButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 8,
-                        ),
-                        textStyle: const TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                ],
-              ),
-            ),
-
-            const SizedBox(height: 4),
-
+            Icon(widget.category.icon),
+            const SizedBox(width: 10),
             Expanded(
-              child: ListView.builder(
-                padding:
-                    const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                itemCount: filtered.length,
-                itemBuilder: (context, index) {
-                  final String name = filtered[index];
-                  final bool isSuggested =
-                      widget.category.builtInSubcategories
-                          .contains(name);
-
-                  final int totalItems =
-                      ItemRepository.totalItemsForGroup(
-                    widget.category.label,
-                    name,
-                  );
-
-                  final int expiringSoon =
-                      ItemRepository.expiringSoonForGroup(
-                    widget.category.label,
-                    name,
-                  );
-
-                  return Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(14),
-                      onTap: () {
-                        Navigator.of(context)
-                            .push(
-                          MaterialPageRoute<void>(
-                            builder: (_) => ItemsScreen(
-                              category: widget.category,
-                              subcategoryName: name,
-                              isPremium: widget.isPremium,
-                            ),
-                          ),
-                        )
-                            .then((_) => setState(() {}));
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  padding:
-                                      const EdgeInsets.all(6),
-                                  decoration: BoxDecoration(
-                                    color: scheme.primary
-                                        .withOpacity(0.08),
-                                    borderRadius:
-                                        BorderRadius.circular(12),
-                                  ),
-                                  child: Icon(
-                                    Icons.folder_rounded,
-                                    size: 20,
-                                    color: scheme.primary,
-                                  ),
-                                ),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Text(
-                                    name,
-                                    maxLines: 1,
-                                    overflow:
-                                        TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  ),
-                                ),
-                                if (widget.isPremium &&
-                                    !isSuggested)
-                                  IconButton(
-                                    icon: const Icon(Icons
-                                        .delete_outline_rounded),
-                                    onPressed: () =>
-                                        _deleteSubcategory(name),
-                                  ),
-                              ],
-                            ),
-                            const SizedBox(height: 6),
-                            Text(
-                              '$totalItems items • '
-                              '$expiringSoon expiring within $threshold days',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
-                                color: scheme.onSurfaceVariant,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Tap to add and track items in this group.',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
-                                color: scheme.onSurfaceVariant,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  );
-                },
+              child: Text(
+                widget.category.label,
+                maxLines: 1,
+                overflow: TextOverflow.visible,
+                softWrap: false,
+                style: const TextStyle(fontWeight: FontWeight.w700),
               ),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _SubcategoryFilterChip extends StatelessWidget {
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _SubcategoryFilterChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final ColorScheme scheme = Theme.of(context).colorScheme;
-    return InkWell(
-      borderRadius: BorderRadius.circular(999),
-      onTap: onTap,
-      child: Container(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(999),
-          color: selected
-              ? scheme.primary.withOpacity(0.1)
-              : Colors.transparent,
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            color: selected
-                ? scheme.primary
-                : scheme.onSurfaceVariant,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 24),
+            child: IconButton(
+              tooltip: loc.recentlyDeletedTitle,
+              icon: const Icon(Icons.restore_from_trash_rounded),
+              onPressed: _openRecentlyDeleted,
+            ),
           ),
+        ],
+      ),
+      body: Scrollbar(
+        controller: _scrollController,
+        thumbVisibility: true,
+        child: CustomScrollView(
+          controller: _scrollController,
+          physics: const BouncingScrollPhysics(),
+          slivers: [
+            SliverToBoxAdapter(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: maxContentWidth,
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxWidth: maxContentWidth,
+                            ),
+                            child: Container(
+                              padding: const EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color: scheme.primary.withOpacity(0.08),
+                                borderRadius: BorderRadius.circular(14),
+                                border: Border.all(
+                                  color: scheme.primary.withOpacity(0.25),
+                                ),
+                              ),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.info_outline_rounded,
+                                    color: scheme.primary,
+                                    size: 20,
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(
+                                    child: Text(
+                                      loc.groupsHint,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: scheme.onSurface.withOpacity(0.8),
+                                        height: 1.4,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 6, 16, 4),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxWidth: maxContentWidth,
+                            ),
+                            child: SubcategorySearchBar(
+                              controller: _searchController,
+                              onChanged: (_) => setState(() {}),
+                            ),
+                          ),
+                        ),
+                      ),
+                      if (widget.isPremium)
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 6, 16, 4),
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(
+                                maxWidth: maxContentWidth,
+                              ),
+                              child: FilledButton.icon(
+                                onPressed: _openAddSubcategorySheet,
+                                icon: const Icon(Icons.add_rounded),
+                                label: Text(loc.addGroupTitle),
+                              ),
+                            ),
+                          ),
+                        ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxWidth: maxContentWidth,
+                            ),
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: SubcategoryFilterChips(
+                                filterMode: _filterMode,
+                                onChanged: (mode) =>
+                                    setState(() => _filterMode = mode),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            if (filtered.isEmpty)
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Center(
+                  child: Text(
+                    loc.noGroupFound,
+                    style: const TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                ),
+              )
+            else
+              SliverToBoxAdapter(
+                child: Center(
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: maxContentWidth,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        children: List.generate(filtered.length, (index) {
+                          final key = filtered[index];
+                          final isBuiltIn =
+                              widget.category.builtInSubcategories.contains(
+                            key,
+                          );
+
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: SubcategoryCard(
+                              subcategoryKey: key,
+                              subcategoryLabel: _displayLabel(key),
+                              categoryKey: widget.category.key,
+                              isPremium: widget.isPremium,
+                              isBuiltIn: isBuiltIn,
+                              onOpen: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => ItemsScreen(
+                                      category: widget.category,
+                                      subcategoryName: key,
+                                      isPremium: widget.isPremium,
+                                    ),
+                                  ),
+                                );
+                              },
+                              onDelete: (widget.isPremium && !isBuiltIn)
+                                  ? () => _deleteCustomGroup(key)
+                                  : null,
+                            ),
+                          );
+                        }),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            const SliverToBoxAdapter(
+              child: SizedBox(height: 24),
+            ),
+          ],
         ),
       ),
     );
