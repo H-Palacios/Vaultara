@@ -1,0 +1,881 @@
+{
+  "@@locale": "ka",
+  "expiryCalendarTitle": "ვადის გასვლის კალენდარი",
+
+"calendarIntro": "აირჩიეთ, როგორ გსურთ ვადის გასვლების ნახვა:\n\n• ჩაწერეთ, რამდენი დღით წინ გსურთ გადახედვა.\n• ან აირჩიეთ ზუსტი თარიღი კალენდარში.\n\nVaultara გაჩვენებთ, რომელი ნივთები აღწევს ვადის გასვლას იმ დღეს.",
+
+"daysFromTodayLabel": "დღეები დღევანდელი დღიდან",
+"daysFromTodayHint": "მაგალითად 0, 1, 7, 30",
+
+"apply": "გამოყენება",
+"pickDateOnCalendar": "აირჩიეთ თარიღი კალენდარში",
+
+"today": "დღეს",
+"tomorrow": "ხვალ",
+"in7Days": "7 დღეში",
+"in30Days": "30 დღეში",
+
+"inDays": "{days} დღეში",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "შეიყვანეთ დღეების რაოდენობა.",
+"invalidDaysError": "შეიყვანეთ სწორი დღეების რაოდენობა (0 ან მეტი).",
+
+"showingItemsRelative": "ნაჩვენებია ნივთები, რომლებიც იწურება {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "ნაჩვენებია ნივთები, რომლებიც იწურება არჩეულ თარიღზე",
+"noItemsOnDate": "იმ დღეს არცერთი ნივთი არ იწურება.",
+
+"editorAddTitle": "ნივთის დამატება",
+"editorEditTitle": "ნივთის რედაქტირება",
+
+"editorCategory": "კატეგორია",
+"editorCategoryHint": "აირჩიეთ კატეგორია",
+
+"editorGroup": "ჯგუფი",
+"editorGroupHint": "აირჩიეთ ჯგუფი",
+
+"editorItemName": "ნივთის სახელი",
+"editorItemNameHint": "შეიყვანეთ ნივთის სახელი",
+
+"editorExpiryDate": "ვადის გასვლის თარიღი",
+"editorExpiryDateHint": "აირჩიეთ ვადა",
+
+"editorErrorCategory": "აირჩიეთ კატეგორია",
+"editorErrorGroup": "აირჩიეთ ჯგუფი",
+"editorErrorName": "ნივთის სახელი სავალდებულოა",
+"editorErrorExpiry": "აირჩიეთ ვადის გასვლის თარიღი",
+"editorErrorExpiryPast": "ვადის გასვლის თარიღი უნდა იყოს დღეს ან მომავალი თარიღი",
+"cancel": "გაუქმება",
+"save": "შენახვა",
+
+"addCategoryTitle": "კატეგორიის დამატება",
+"unlimitedCategories": "შეუზღუდავი კატეგორიები (Premium)",
+
+"categoryUsage": "გამოყენებულია {current} / {limit} კატეგორია",
+
+"categoryNameLabel": "კატეგორია",
+"categoryNameHint": "შეიყვანეთ კატეგორია",
+
+"categoryLimitReached": "თქვენ მიაღწიეთ Basic გეგმის {limit} კატეგორიის ლიმიტს. განაახლეთ Premium-ზე.",
+
+"categoryLimitInfo": "Basic გეგმაში შეგიძლიათ შექმნათ მაქსიმუმ {limit} კატეგორია.",
+
+"categoryErrorEmpty": "კატეგორია სავალდებულოა",
+"categoryErrorTooShort": "ძალიან მოკლეა",
+"categoryErrorTooLong": "ძალიან გრძელია",
+"categoryErrorSymbols": "არ შეიძლება იყოს მხოლოდ სიმბოლოები",
+"categoryErrorNumbers": "არ შეიძლება იყოს მხოლოდ ციფრები",
+
+"upgradeRequired": "განახლება საჭიროა",
+"viewPremiumBenefits": "Premium უპირატესობების ნახვა",
+"createCategory": "შექმნა",
+
+"addGroupTitle": "ჯგუფის დამატება",
+"groupNameLabel": "ჯგუფი",
+"groupNameHint": "შეიყვანეთ ჯგუფი",
+
+"groupErrorEmpty": "ჯგუფი სავალდებულოა",
+"groupErrorTooShort": "ძალიან მოკლეა",
+"groupErrorTooLong": "ძალიან გრძელია",
+"groupErrorSymbols": "არ შეიძლება შეიცავდეს სიმბოლოებს",
+"groupErrorNumbers": "არ შეიძლება შეიცავდეს ციფრებს",
+"createGroup": "შექმნა",
+
+"firstNameLabel": "სახელი",
+"firstNameHint": "შეიყვანეთ სახელი",
+
+"lastNameLabel": "გვარი",
+"lastNameHint": "შეიყვანეთ გვარი",
+
+"emailLabel": "ელფოსტა",
+"loginPasswordHint": "შეიყვანეთ პაროლი",
+"registerPasswordHint": "შეიყვანეთ პაროლი",
+"passwordHelper": "მინიმუმ 8 სიმბოლო სხვადასხვა ტიპით",
+
+"passwordTooShort": "ძალიან მოკლე",
+"passwordTooWeak": "ძალიან სუსტი",
+"passwordMedium": "საშუალო",
+"passwordStrong": "ძლიერი",
+
+"errorFirstName": "სახელი სავალდებულოა",
+"errorLastName": "გვარი სავალდებულოა",
+"errorEmailInvalid": "შეიყვანეთ სწორი ელფოსტა",
+"errorEmailInUse": "ეს ელფოსტა უკვე\nდაკავშირებულია Vaultara ანგარიშთან",
+"errorPasswordLength": "პაროლი უნდა იყოს მინიმუმ რვა სიმბოლო",
+"errorPasswordWeak": "შეიყვანეთ უფრო ძლიერი პაროლი",
+"errorGeneric": "რეგისტრაცია ვერ მოხერხდა. სცადეთ ხელახლა",
+
+"createAccount": "ანგარიშის შექმნა",
+"appName": "Vaultara",
+"authTagline": "თქვენი პირადი ჰაბი პასპორტებისთვის, ლიცენზიებისთვის, ბარათებისთვის და სხვა აუცილებელი დოკუმენტებისთვის",
+"tabSignIn": "შესვლა",
+"tabCreateAccount": "ანგარიშის შექმნა",
+"signInFooterText": "შედით და მართეთ ყველა განახლება მარტივად",
+"createAccountFooterText": "შექმენით Vaultara ანგარიში და მიიღეთ წვდომა ნებისმიერ დროს",
+
+"emailRequired": "ელფოსტა სავალდებულოა",
+"passwordRequired": "პაროლი სავალდებულოა",
+"emailNotFound": "არასწორი ელფოსტა. ამ მისამართით\nVaultara ანგარიში არ არსებობს",
+"incorrectPassword": "არასწორი პაროლი",
+
+"emailLabel": "ელფოსტა",
+"emailHint": "შეიყვანეთ ელფოსტა",
+"passwordLabel": "პაროლი",
+"signIn": "შესვლა",
+
+"categoryPersonalIdentification": "პირადი იდენტიფიკაცია",
+"categoryDrivingAndVehicles": "მართვა და ტრანსპორტი",
+"categoryTravelAndImmigration": "მოგზაურობა და იმიგრაცია",
+"categoryBankingAndCards": "ბანკი და ბარათები",
+"categoryInsuranceAndCover": "დაზღვევა და დაცვა",
+"categoryHealthAndMedical": "ჯანმრთელობა და მედიცინა",
+"categoryWorkAndProfessional": "სამუშაო და პროფესიული",
+"categoryPropertyAndHousing": "ქონება და საცხოვრებელი",
+"categoryHouseholdAndUtilities": "საყოფაცხოვრებო და კომუნალური",
+
+"subcategoryPassports": "პასპორტები",
+"subcategoryIdCards": "პირადობის ბარათები",
+"subcategoryResidencePermits": "ბინადრობის ნებართვები",
+
+"subcategoryDrivingLicences": "მართვის მოწმობები",
+"subcategoryVehicleRegistrations": "ტრანსპორტის რეგისტრაცია",
+"subcategoryRoadworthyCertificates": "ტექნიკური სერტიფიკატები",
+"subcategoryVehicleInspectionCertificates": "შემოწმების სერტიფიკატები",
+
+"subcategoryVisas": "ვიზები",
+"subcategoryStudyPermits": "სასწავლო ნებართვები",
+"subcategoryWorkPermits": "სამუშაო ნებართვები",
+"subcategoryTravelInsuranceDocuments": "სამგზავრო დაზღვევის დოკუმენტები",
+
+"subcategoryDebitAndCreditCards": "დებეტ და საკრედიტო ბარათები",
+"subcategoryStoreCards": "მაღაზიის ბარათები",
+"subcategoryFuelCards": "საწვავის ბარათები",
+"subcategoryVehicleInsurances": "ავტომობილის დაზღვევები",
+"subcategoryPropertyInsurances": "ქონების დაზღვევები",
+"subcategoryLifeInsurances": "სიცოცხლის დაზღვევები",
+"subcategoryHealthInsurances": "ჯანმრთელობის დაზღვევები",
+"subcategoryTravelInsurances": "სამოგზაურო დაზღვევები",
+
+"subcategoryMedicalPrescriptions": "სამედიცინო რეცეპტები",
+"subcategoryOpticalPrescriptions": "ოპტიკური რეცეპტები",
+"subcategoryMedicalCertificates": "სამედიცინო ცნობები",
+
+"subcategoryProfessionalLicences": "პროფესიული ლიცენზიები",
+"subcategoryProfessionalRegistrations": "პროფესიული რეგისტრაციები",
+"subcategoryIndustryRegistrations": "ინდუსტრიული რეგისტრაციები",
+"subcategoryWorkAccessCards": "სამუშაო დაშვების ბარათები",
+
+"subcategoryLeaseAgreements": "იჯარის ხელშეკრულებები",
+"subcategoryAccessCardsAndTags": "წვდომის ბარათები და თეგები",
+"subcategoryParkingPermits": "პარკირების ნებართვები",
+"subcategorySecurityAccessPermits": "უსაფრთხოების დაშვების ნებართვები",
+
+"subcategoryElectricityAccounts": "ელექტროენერგიის ანგარიშები",
+"subcategoryWaterAccounts": "წყლის ანგარიშები",
+"subcategoryInternetContracts": "ინტერნეტ ხელშეკრულებები",
+"subcategorySecurityServiceContracts": "უსაფრთხოების სერვისის ხელშეკრულებები",
+
+"searchCategories": "კატეგორიების ძიება",
+"filterAll": "ყველა",
+"filterPreset": "წინასწარ დაყენებული",
+"filterCustom": "მორგებული",
+"addCategoryTitle": "კატეგორიის დამატება",
+"customLabel": "მორგებული",
+"subcategoriesLabel": "ქვეკატეგორიები",
+"itemsLabel": "ელემენტები",
+
+"itemsExpiring": "{count} ელემენტი ვადის გასვლას მიაღწევს {days} დღეში",
+
+"pinnedEssentials": "დამაგრებული მნიშვნელოვანი",
+"pinnedHint": "დაამაგრეთ ყველაზე ხშირად გამოყენებული კატეგორიები.",
+"noCategoriesFound": "კატეგორიები ვერ მოიძებნა",
+
+"searchGroups": "ჯგუფების ძიება",
+"addGroupTitle": "ჯგუფის დამატება",
+
+"basicPlanGroupInfo": "თქვენ ხართ Basic გეგმაზე.\nშეგიძლიათ ნახოთ წინასწარ დაყენებული ჯგუფები.\nგანაახლეთ Premium-ზე საკუთარი ჯგუფების შესაქმნელად.",
+
+"groupDeleted": "ჯგუფი წაიშალა",
+"undo": "გაუქმება",
+
+"groupTapHint": "დააჭირეთ ელემენტების დასამატებლად და სათვალთვალოდ.",
+"itemsInGroup": "ამ ჯგუფის ელემენტები",
+"itemsInGroupHint": "თითოეული ელემენტი აკონტროლეთ ვადის თარიღით.",
+"searchItems": "ელემენტების ძიება",
+"filterExpiringWithin": "ვადის გასვლა {days} დღეში",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "ვადაგასული",
+"addItem": "ელემენტის დამატება",
+"noItemsYet": "ელემენტები ჯერ არ არის.",
+
+"statusExpired": "ვადაგასული",
+"statusExpiresToday": "დღეს იწურება",
+"statusExpiresInOneDay": "იწურება 1 დღეში",
+"statusExpiresInDays": "იწურება {days} დღეში",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "მოქმედი",
+
+"deleteCategoryTitle": "კატეგორიის წაშლა",
+"deleteCategoryMessage": "დარწმუნებული ხართ, რომ გსურთ წაშალოთ კატეგორია \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "ჯგუფის წაშლა",
+"deleteGroupMessage": "დარწმუნებული ხართ, რომ გსურთ წაშალოთ ჯგუფი \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "ელემენტის წაშლა",
+"deleteItemMessage": "დარწმუნებული ხართ, რომ გსურთ წაშალოთ \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "გაუქმება",
+"delete": "წაშლა",
+
+"homeWelcomeTitle": "კეთილი იყოს თქვენი მობრძანება",
+
+"homeWelcomeFirstTitle": "კეთილი იყოს თქვენი მობრძანება, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "კეთილი დაბრუნება, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "ყველა",
+"homeWelcomeSubtitleGeneric": "Vaultara გეხმარებათ მნიშვნელოვანი ვადების კონტროლში, რათა არაფერი ვადის გასვლის გარეშე დარჩეს შეუმჩნევლად.",
+
+"homeWelcomeSubtitleFirst": "სასიამოვნოა თქვენი ნახვა. Vaultara ინახავს მნიშვნელოვან თარიღებს და ჩანაწერებს ერთ უსაფრთხო ადგილას.",
+
+"homeWelcomeSubtitleBack": "სასიამოვნოა თქვენი დაბრუნება. Vaultara ყოველთვის მზადაა თქვენი მნიშვნელოვანი მონაცემებისთვის.",
+
+"insightEmptyTitle": "ჯერ არაფერი დამატებულა",
+"insightEmptyBody": "როგორც კი დაიწყებთ თარიღების კონტროლს, Vaultara დაგეხმარებათ წინ ყოფნაში.",
+
+"insightExpiresTodayTitle": "\"{name}\" დღეს იწურება",
+"insightExpiresTodayBody": "სწრაფი შემოწმება ინარჩუნებს სიზუსტეს.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" ხვალ იწურება",
+"insightExpiresTomorrowBody": "დღეს შემოწმება მომავალში დროს დაგიზოგავთ.",
+
+"insightExpiresSoonTitle": "\"{name}\" იწურება {date}",
+"insightExpiresSoonBody": "ადრეული ყურადღება ამარტივებს პროცესს.",
+
+"insightNextExpiryTitle": "შემდეგი ვადა არის \"{name}\" {date}",
+"insightNextExpiryBody": "ჯერ მოქმედება არ არის საჭირო, მაგრამ გახსენება სასარგებლოა.",
+
+"insightClusteredTitle": "რამდენიმე ელემენტი იწურება {month}",
+"insightClusteredBody": "ერთად გადახედვა დროს დაზოგავს.",
+
+"insightTopCategoryTitle": "ელემენტების უმეტესობა არის {category}",
+"insightTopCategoryBody": "ამ ნაწილის გადახედვა იძლევა ყველაზე დიდ ეფექტს.",
+
+"insightStableTitle": "ყველაფერი სტაბილურია",
+"insightStableBody": "ამ ეტაპზე ყურადღება საჭირო არ არის.",
+
+"summaryAllTitle": "ყველა ელემენტი",
+"summaryAllCaption": "Vaultara-ში კონტროლდება",
+"summarySoonTitle": "მალე იწურება",
+"summarySoonCaption": "30 დღეში",
+"summaryWeekTitle": "ამ კვირაში",
+"summaryWeekCaption": "7 დღეში იწურება",
+"summaryExpiredTitle": "ვადაგასული",
+"summaryExpiredCaption": "ვადის გასვლის შემდეგ",
+
+"stabilityStableTitle": "სტაბილურობა შენარჩუნებულია",
+"stabilityStableBody": "მყისიერი რისკები არ არსებობს.",
+
+"stabilityDecliningTitle": "სტაბილურობა იკლებს",
+"stabilityDecliningBody": "ზოგი ელემენტი უკვე ვადაგასულია, სხვები ახლოვდება.",
+
+"stabilityWeakenedTitle": "სტაბილურობა შესუსტებულია",
+"stabilityWeakenedBody": "ვადაგასული ჩანაწერები ამცირებს სანდოობას.",
+
+"stabilityPressureTitle": "ზეწოლა იზრდება",
+"stabilityPressureBody": "რამდენიმე ჩანაწერი მალე ყურადღებას მოითხოვს.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "შენიშვნები",
+"notesHint": "შეიყვანეთ შენიშვნები",
+"editorReminderTitle": "შეხსენება",
+"editorReminderNone": "შეხსენება არ არის",
+"editorReminderOnExpiry": "ვადის ამოწურვის დღეს",
+"editorReminder7Days": "7 დღით ადრე",
+"editorReminder30Days": "30 დღით ადრე",
+"editorReminderCustom": "მორგებული",
+"daysBeforeExpiry": "დღე ვადამდე",
+
+"reminderStage0Title": "ვადის შეხსენება",
+"reminderStage0Body": "{firstName}, თქვენი {itemName} იწურება {days} დღეში.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "შეხსენების გაგრძელება",
+"reminderStage1Body": "{firstName}, {itemName} ჯერ არ განახლდა.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "ვადა ახლოვდება",
+"reminderStage2Body": "{itemName}-ის ვადა ახლოვდება.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "საბოლოო შეხსენება",
+"reminderFinalBody": "{firstName}, გთხოვთ განაახლოთ {itemName} ახლა.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "დაფარვის ბალანსი",
+"coverageAllRepresented": "თქვენი ჩანაწერები მოიცავს ყველა კატეგორიას.",
+"coverageMissingNamed": "{count} კატეგორიაში ჩანაწერები არ მოიძებნა: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "თქვენ არ დაგიმატებიათ ჩანაწერები {count} კატეგორიაში, მათ შორის {names} და კიდევ {remaining} სხვა.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "გამოიყენეთ პაროლი",
+"signInWithBiometrics": "შესვლა ბიომეტრიული ავთენტიფიკაციით",
+"enableBiometricsTitle": "ბიომეტრიული დაცვის ჩართვა",
+"enableBiometricsBody": "გამოიყენეთ თითის ანაბეჭდი ან სახის ამოცნობა Vaultara-ს დასაცავად.",
+"enableBiometricsReason": "Vaultara-სთვის ბიომეტრიული განბლოკვის ჩართვა.",
+"notNow": "ახლა არა",
+"useBiometrics": "ბიომეტრიის გამოყენება",
+
+"recordsCalendarIntro": "აირჩიეთ, როგორ გსურთ ვადების ნახვა:\n\n• მიუთითეთ რამდენი დღით წინ გსურთ ნახვა.\n• ან აირჩიეთ ზუსტი თარიღი კალენდრიდან.\n\nVaultara აჩვენებს, რომელი ჩანაწერები იწურება იმ დღეს.",
+
+"showingRecordsRelative": "ნაჩვენებია ჩანაწერები, რომლებიც იწურება {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "ნაჩვენებია ჩანაწერები, რომლებიც იწურება არჩეულ თარიღზე",
+
+"noRecordsOnDate": "ამ დღეს ვადის ამოწურვის ჩანაწერები არ არის.",
+
+"recordEditorAddTitle": "ჩანაწერის დამატება",
+"recordEditorEditTitle": "ჩანაწერის რედაქტირება",
+
+"editorRecordName": "ჩანაწერის სახელი",
+"editorRecordNameHint": "შეიყვანეთ ჩანაწერის სახელი",
+"recordEditorErrorName": "ჩანაწერის სახელი სავალდებულოა",
+
+"recordsGroupTapHint": "დააჭირეთ ამ ჯგუფში ჩანაწერების დასამატებლად და დასაკვირვებლად.",
+
+"recordsInGroup": "ჩანაწერები ამ ჯგუფში",
+
+"recordsInGroupHint": "თვალყური ადევნეთ თითოეულ მნიშვნელოვან ჩანაწერს მისი ვადის მიხედვით.",
+
+"searchRecords": "ჩანაწერების ძებნა",
+
+"addRecord": "ჩანაწერის დამატება",
+
+"noRecordsYet": "ჩანაწერები ჯერ არ არის.",
+"deleteRecordTitle": "ჩანაწერის წაშლა",
+
+"recordsInsightClusteredTitle": "რამდენიმე ჩანაწერი იწურება დაახლოებით {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "თქვენი ჩანაწერების უმეტესობა არის {category} კატეგორიაში",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "ყველა ჩანაწერი",
+
+"recordsStabilityDecliningBody": "ზოგი ჩანაწერი უკვე ვადაგასულია, ხოლო სხვები მალე იწურება.",
+
+"recordsCoverageAllRepresented": "თქვენი ჩანაწერები მოიცავს ყველა კატეგორიას.",
+
+"recordReminderStage0Body": "{firstName}, თქვენი {recordName} იწურება {days} დღეში.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, თქვენი {recordName} ჯერ არ არის განახლებული.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName}-ის ვადა ახლოვდება.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, გთხოვთ განაახლოთ {recordName} ახლა.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "ჯგუფები ჯერ არ არის",
+
+"recordsExpiring": "{count, plural, one {1 ჩანაწერი იწურება {days} დღეში} other {{count} ჩანაწერი იწურება {days} დღეში}}",
+
+"recordsGroupStats": "{records, plural, one {1 ჩანაწერი} other {{records} ჩანაწერი}} • {expiring} იწურება {days} დღეში",
+
+"groupLabel": "{count, plural, one {{count} ჯგუფი} other {{count} ჯგუფი}}",
+
+"recordsLabel": "{count, plural, one {{count} ჩანაწერი} other {{count} ჩანაწერი}}",
+
+"forgotPassword": "დაგავიწყდათ პაროლი?",
+"forgotPasswordTitle": "პაროლის აღდგენა",
+"forgotPasswordBody": "შეიყვანეთ თქვენი ელფოსტა და გამოგიგზავნით პაროლის აღდგენის ბმულს.",
+"sendResetLink": "აღდგენის ბმულის გაგზავნა",
+"passwordResetEmailSent": "პაროლის აღდგენის ელფოსტა გაგზავნილია.",
+"verifyEmailToContinue": "გთხოვთ დაადასტუროთ ელფოსტა შესვლამდე",
+
+"changeEmailTitle": "ელფოსტის შეცვლა",
+"newEmailHint": "შეიყვანეთ ახალი ელფოსტა",
+"sendVerificationEmail": "დადასტურების ელფოსტის გაგზავნა",
+
+"deleteAccountTitle": "ანგარიშის წაშლა",
+"deleteAccountWarning": "ეს ქმედება სამუდამოდ წაშლის თქვენს ანგარიშსა და ყველა მონაცემს.\nამის გაუქმება შეუძლებელია.",
+"deleteAccountConfirm": "ანგარიშის სამუდამოდ წაშლა",
+
+"supportTitle": "მხარდაჭერა",
+"supportSubtitle": "დაგვიკავშირდით, თუ დახმარება გჭირდებათ ან გაქვთ კითხვები.",
+"supportEmailSubject": "Vaultara მხარდაჭერის მოთხოვნა",
+"supportEmailError": "ელფოსტის აპის გახსნა ვერ მოხერხდა.",
+
+"passwordResetEmailFailed": "პაროლის აღდგენის ელფოსტის გაგზავნა ვერ მოხერხდა.",
+
+"loggedInPasswordResetBody": "პაროლის აღდგენის ბმულს გავაგზავნით შემდეგ მისამართზე:\n{email}",
+
+"accountManagementTitle": "ანგარიშის მართვა",
+"changeEmailSubtitle": "განაახლეთ თქვენს ანგარიშთან დაკავშირებული ელფოსტა.",
+"changePasswordTitle": "პაროლის შეცვლა",
+"changePasswordSubtitle": "გამოგიგზავნით ბმულს პაროლის უსაფრთხოდ შეცვლისთვის.",
+
+"deleteAccountSubtitle": "Vaultara ანგარიშის სამუდამოდ წაშლა.",
+
+"biometricAuthReason": "ავტორიზაცია Vaultara ანგარიშზე წვდომისთვის.",
+
+"verifyEmailTitle": "დაადასტურეთ ელფოსტა",
+"verifyEmailBody": "თქვენს ელფოსტაზე გამოგზავნილია დადასტურების წერილი. გახსენით და დაადასტურეთ მისამართი, შემდეგ დაბრუნდით აქ.",
+"verifyEmailConfirmedButton": "დავადასტურე ელფოსტა",
+"verifyEmailResendButton": "დადასტურების ელფოსტის ხელახლა გაგზავნა",
+"verifyEmailSending": "იგზავნება...",
+
+"navHome": "მთავარი",
+"navCategories": "კატეგორია",
+"navInsights": "ანალიზი",
+"navCalendar": "კალენდარი",
+
+"tutorialCancel": "გაუქმება",
+"tutorialNext": "შემდეგი",
+"tutorialEnd": "გაკვეთილის დასრულება",
+
+"softDeleteCategory": "კატეგორია",
+"softDeleteGroup": "ჯგუფი",
+"softDeleteRecord": "ჩანაწერი",
+
+"softDeleteTitle": "{type}-ის გადატანა ახლახან წაშლილებში",
+"softDeleteMessage": "{type} \"{name}\" გადაინაცვლებს ახლახან წაშლილებში.\n\nთქვენ შეგიძლიათ მისი აღდგენა 30 დღის განმავლობაში. ამის შემდეგ ის სამუდამოდ წაიშლება.",
+"softDeleteMove": "გადატანა",
+"@recordsExpiring": { "description": "აჩვენებს რამდენი ჩანაწერი იწურება", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "ჯგუფის სტატისტიკა", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "ჯგუფების რაოდენობა", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "ჩანაწერების რაოდენობა", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "აცნობებს პაროლის აღდგენის ელფოსტის გაგზავნას", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "დროებითი წაშლის სათაური", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "დროებითი წაშლის ახსნა", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "ბოლოდროინდელად წაშლილი",
+"categories": "კატეგორიები",
+"groups": "ჯგუფები",
+"records": "ჩანაწერები",
+"restore": "აღდგენა",
+"deletePermanently": "სამუდამოდ წაშლა",
+
+"recentlyDeletedBanner": "წაშლილი {type} ინახება აქ 30 დღის განმავლობაში საბოლოო წაშლამდე.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "წაშლილი {type}-ის ძებნა",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "ჯერ არ არის წაშლილი {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "დააჭირეთ კატეგორიას ჯგუფების სანახავად და ჩანაწერების სამართავად.",
+"groupsHint": "ჯგუფები ალაგებს ჩანაწერებს ამ კატეგორიაში. დააჭირეთ ჯგუფს სამართავად.",
+"notLoggedIn": "შესული არ ხართ",
+
+"recordsInsideGroupHint": "ეს არის ამ ჯგუფის ჩანაწერები.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" გადატანილია ბოლოდროინდელად წაშლილებში",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"პასპორტი"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" წარმატებით წაიშალა",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"მართვის მოწმობა"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" წარმატებით განახლდა",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"ვიზა"} } },
+
+"snackAddedSuccessfully": "\"{name}\" წარმატებით დაემატა",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"დაზღვევა"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" წარმატებით აღდგა",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"პასპორტი"} } },
+
+"snackFreeLimitReached": "უფასო ლიმიტი მიღწეულია ({current}/{limit}). განაახლეთ მეტის დასამატებლად.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "ყველა ჩანაწერის ძიება",
+"globalSearchHint": "შეიყვანეთ ჩანაწერის სახელი, კატეგორია ან ჯგუფი",
+"globalSearchNoMatches": "თქვენს ძიებას შესაბამისი ჩანაწერები არ მოიძებნა.",
+"snackNoRecordsToSearch": "ძიებისთვის ჩანაწერები არ არის. დაამატეთ რამდენიმე ჩანაწერი და Vaultara ავტომატურად დააინდექსებს მათ.",
+
+"recoveryCentreTitle": "აღდგენის ცენტრი",
+"recoveryCentreSubtitle": "აღადგინეთ ან სამუდამოდ წაშალეთ წაშლილი ჩანაწერები.",
+
+"plan_premium": "პრემიუმი",
+"plan_free": "უფასო",
+
+"profile_app_settings_title": "აპის პარამეტრები",
+"profile_privacy_security_title": "კონფიდენციალურობა და უსაფრთხოება",
+"profile_biometric_on": "ბიომეტრიული დაბლოკვა ჩართულია.",
+"profile_biometric_off": "ბიომეტრიული დაბლოკვა გამორთულია.",
+"profile_biometric_enable_reason": "დაადასტურეთ პირადობა ბიომეტრიული დაბლოკვის ჩასართავად.",
+"profile_biometric_disable_reason": "დაადასტურეთ პირადობა ბიომეტრიული დაბლოკვის გამოსართავად.",
+"profile_account_management_title": "ანგარიშის მართვა",
+"profile_premium_active_title": "პრემიუმი აქტიურია",
+"profile_premium_upgrade_title": "განახლება პრემიუმზე",
+"profile_premium_active_subtitle": "გაუმჯობესებული შეხსენებები ჩართულია.",
+"profile_premium_upgrade_subtitle": "გახსენით გაუმჯობესებული შეხსენებები და შეუზღუდავი ორგანიზება.",
+"profile_manage_cancel_hint": "მართეთ ან გააუქმეთ ნებისმიერ დროს Google Play-ში.",
+"profile_manage_subscription_button": "გამოწერის მართვა",
+"plansTitle": "აირჩიეთ გეგმა",
+"plansTrialBanner": "დაიწყეთ 7-დღიანი უფასო საცდელი პერიოდით.\nგააუქმეთ ნებისმიერ დროს.",
+"plansLoading": "იტვირთება…",
+"plansStartFreeTrial": "უფასო საცდელის დაწყება",
+"plansNoChargeTodayFooter": "7 დღე უფასოდ · დღეს არ დაიბეგრება",
+
+"planFreeTitle": "უფასო",
+"planFreeSubtitle": "დასაწყისისთვის",
+"planPremiumMonthlyTitle": "პრემიუმი თვიურად",
+"planPremiumYearlyTitle": "პრემიუმი წლიურად",
+"planPerMonth": "თვეში",
+"planPerYear": "წელიწადში",
+
+"planBadgeCurrent": "მიმდინარე გეგმა",
+"planBadgePopular": "პოპულარული",
+"planBadgeBestValue": "საუკეთესო ღირებულება",
+
+"planYouAreOnThisPlan": "თქვენ უკვე ამ გეგმაზე ხართ.",
+
+"planFeatureUpToRecords": "მაქსიმუმ {count} ჩანაწერი",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "მორგებული კატეგორიები (მაქს. {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "წინასწარ დაყენებული ქვეკატეგორიები",
+"planFeatureCloudStorage": "ღრუბლოვანი საცავი",
+"planFeatureSmartExpiryInsights": "ჭკვიანი ვადის შეტყობინებები",
+"planFeatureCoverageBalance": "დაფარვის ბალანსი",
+"planFeatureRecordStabilityTracking": "ჩანაწერების სტაბილურობის თვალყურის დევნება",
+
+"planFeatureUnlimitedRecords": "შეუზღუდავი ჩანაწერები",
+"planFeatureUnlimitedCategories": "შეუზღუდავი კატეგორიები",
+"planFeatureCustomSubcategories": "მორგებული ქვეკატეგორიები",
+"planFeatureMultipleRemindersPerRecord": "რამდენიმე შეხსენება",
+"planFeatureAdvancedReminderTiming": "გაუმჯობესებული დროის მართვა",
+"planFeatureAutomaticFollowUps": "ავტომატური შემდგომი შეხსენებები",
+
+"planFeatureEverythingInMonthly": "ყველაფერი თვიურ გეგმაში",
+"planFeatureSavePercentComparedToMonthly": "დაზოგეთ {percent}% თვიურთან შედარებით",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "საუკეთესო გრძელვადიანი ღირებულება",
+
+"editorReminderLabel": "შეხსენება",
+"editorReminderSelectOptional": "აირჩიეთ შეხსენება (სურვილისამებრ)",
+"editorReminderOnExpiry": "ვადის დღეს",
+"editorReminderDaysBefore": "{days} დღით ადრე ვადამდე",
+"editorFreeItemsCount": "უფასო ელემენტები: {used}/{limit}",
+"editorExpiryPastWarning": "ვადის გასვლის თარიღი უკვე გასულია.",
+"editorExpiryTodayWarning": "ეს ჩანაწერი დღეს იწურება.",
+"editorErrorExpiryPast": "ვადის თარიღი წარსულში ვერ იქნება.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "დღევანდელი მიმოხილვა",
+"tutorialBannerTitle": "სწრაფი ტური",
+"tutorialBannerBody": "ერთ წუთში გაიგებთ სად მოძებნოთ, როგორ დაამატოთ ჩანაწერები და რას ნიშნავს მიმოხილვები.",
+"tutorialBannerStart": "ტურის დაწყება",
+"tutorialBannerDismiss": "ახლა არა",
+"authErrorUserDisabled": "ეს ანგარიში გათიშულია.",
+"authErrorNetwork": "ქსელის შეცდომა. შეამოწმეთ ინტერნეტი და სცადეთ ისევ.",
+"authErrorTooManyRequests": "ძალიან ბევრი მცდელობა. გთხოვთ, სცადეთ მოგვიანებით.",
+"authErrorSignInFailed": "შესვლა ვერ მოხერხდა. გთხოვთ, სცადეთ თავიდან.",
+"ok": "კარგი",
+"snackPremiumEnabled": "Premium გააქტიურდა",
+"snackPremiumRestored": "Premium აღდგა",
+"passwordNeedLower": "უნდა შეიცავდეს პატარა ასოს",
+"passwordNeedUpper": "უნდა შეიცავდეს დიდ ასოს",
+"passwordNeedNumber": "უნდა შეიცავდეს ციფრს",
+"passwordNeedSymbol": "უნდა შეიცავდეს სიმბოლოს",
+"editorFreeItemsCount": "უფასო ელემენტები: {used}/{limit}",
+"editorExpiryPastWarning": "ვადის გასვლის თარიღი უკვე გასულია.",
+"editorExpiryTodayWarning": "ეს ჩანაწერი დღეს იწურება.",
+"editorErrorExpiryPast": "ვადის თარიღი წარსულში ვერ იქნება.",
+"todayInsightsTitle": "დღევანდელი მიმოხილვა",
+"tutorialBannerTitle": "სწრაფი ტური",
+"tutorialBannerBody": "ერთ წუთში გაიგებთ სად მოძებნოთ, როგორ დაამატოთ ჩანაწერები და რას ნიშნავს მიმოხილვები.",
+"tutorialBannerStart": "გაკვეთილის დაწყება",
+"tutorialBannerDismiss": "ახლა არა",
+"authErrorUserDisabled": "ეს ანგარიში გამორთულია.",
+"authErrorNetwork": "ქსელის შეცდომა. შეამოწმეთ ინტერნეტი და სცადეთ თავიდან.",
+"authErrorTooManyRequests": "ძალიან ბევრი მცდელობა. სცადეთ მოგვიანებით.",
+"authErrorSignInFailed": "შესვლა ვერ მოხერხდა. სცადეთ ხელახლა.",
+"ok": "კარგი",
+"tutorialHomeSearch": "გამოიყენეთ საძიებო ველი, რათა სწრაფად იპოვოთ ნებისმიერი ჩანაწერი.",
+"tutorialHomeFab": "აქ დაამატეთ თქვენი პირველი ჩანაწერი.\nაირჩიეთ მდებარეობა, დაამატეთ შენიშვნები და აირჩიეთ ვადის თარიღი.",
+"tutorialHomeSummary": "მეტი ჩანაწერის დამატებით ეს განყოფილება დაგეხმარებათ მოახლოებული ვადების დანახვაში.",
+"tutorialHomeInsight": "ეს ჭკვიანი ხედვა აჩვენებს შაბლონებს და მოახლოებულ ვადებს.",
+"tutorialHomeCoverage": "დაფარვის ბალანსი აჩვენებს ჩანაწერების განაწილებას კატეგორიებში.",
+"tutorialHomeStability": "სტაბილურობა აჩვენებს ჩანაწერების სანდოობას დროთა განმავლობაში.",
+"profile_account_management_subtitle": "ელფოსტის, პაროლის შეცვლა ან ანგარიშის წაშლა.",
+"confirmIdentityTitle": "იდენტობის დადასტურება",
+"confirm": "დადასტურება",
+"profile_sign_out_title": "გამოსვლა",
+"profile_sign_out_subtitle": "Vaultara-დან გამოსვლა ამ მოწყობილობაზე",
+"profile_sign_out_confirm_title": "გამოხვიდე?",
+"profile_sign_out_confirm_body": "ანგარიშზე წვდომისთვის ხელახლა უნდა შეხვიდე.",
+"profile_sign_out_action": "გამოსვლა",
+"todayInsightsAudioHint": "გირჩევნიათ აუდიო? გამოიყენეთ დინამიკის ხატულა.",
+"category2Label": "კატეგორია",
+"enable2BiometricsBody": "გამოიყენეთ თითის ანაბეჭდის ამოცნობა Vaultara ანგარიშის დასაცავად.",
+"snackNotificationsDisabled": "შეტყობინებები გამორთულია. ჩართეთ ისინი შეხსენებების მისაღებად.",
+"openSettings": "პარამეტრების გახსნა",
+
+"reminderOnExpiryTitle": "ვადა იწურება დღეს",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "გამარჯობა {firstName}, \"{itemName}\" ვადა იწურება დღეს.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "უფასო კატეგორიები: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "აჩვენებს რამდენი უფასო კატეგორიაა გამოყენებული უფასო ლიმიტიდან.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "შენიშვნების დამატება (არასავალდებულო)",
+"apply": "გამოყენება",
+"smartInsightExpiresTodayHeading": "ვადა დღეს იწურება",
+"smartInsightExpiresTodaySingleBody": "{name}-ს ვადა დღეს ეწურება. იმოქმედეთ ახლავე, რათა განახლებული დარჩეს.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} და კიდევ {extra} დოკუმენტს ვადა დღეს ეწურება.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "თქვენს ყურადღებას საჭიროებს",
+"smartInsightSilentRiskBody": "{name}-ს ვადა {days} დღეში ეწურება და შეხსენება დაყენებული არ არის. დარწმუნდით, რომ ინფორმაცია ჯერ კიდევ სწორია.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "რამდენიმე ახლო განახლება",
+"smartInsightRenewalTwinBodyTwo": "{a} და {b}-ს ვადა სამი კვირის ფარგლებში ეწურება. დაგეგმეთ წინასწარ.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} და {c}-ს ვადა სამ კვირაში ეწურება. დაგეგმეთ წინასწარ.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} და კიდევ {extra} დოკუმენტს ვადა სამი კვირის განმავლობაში ეწურება. დაგეგმეთ წინასწარ.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "მომავალი ჯგუფი",
+"smartInsightClusterBody": "{category} კატეგორიაში {count} დოკუმენტს ვადა მომდევნო ორ თვეში ეწურება. განიხილეთ მათი ერთად განახლება.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "მშვიდი პერიოდი წინ",
+"smartInsightQuietPeriodBody": "მომდევნო {days} დღის განმავლობაში არაფერი იწურება. შემდეგი განახლებაა {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "ყველაფერი განახლებულია",
+"smartInsightAllCaughtUpBody": "ყველა {count} მომავალი ვადა შეხსენებით არის დაფარული. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "ყველაფერი განახლებულია. ამჟამად არაფერი საჭიროებს თქვენს ყურადღებას.",
+"smartInsightNoRecordsHeading": "დაამატეთ თქვენი პირველი ჩანაწერი",
+"smartInsightNoRecordsBody": "დაიწყეთ თქვენი დოკუმენტების თვალყურის დევნება და Vaultara აქ ჭკვიანურ ინფორმაციას გაჩვენებთ.",
+"expiryTimelineTitle": "ვადის ამოწურვის ვადები",
+"expiryTimelineSubtitle": "შეეხეთ თვეს, რომ ნახოთ ჩანაწერები, რომელთა ვადა იწურება იმ თვეში",
+"expiryTimelineDetailCount": "{count, plural, =1{1 ჩანაწერი} other{{count} ჩანაწერი}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "მომავალი",
+"summaryUpcomingCaption": "მომდევნო 30 დღეში",
+"summaryUrgentTitle": "სასწრაფო",
+"summaryUrgentCaption": "მომდევნო 7 დღეში"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

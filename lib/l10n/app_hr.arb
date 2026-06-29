@@ -101,5 +101,788 @@
   "groupErrorSymbols": "Naziv grupe ne može sadržavati simbole",
   "groupErrorNumbers": "Naziv grupe ne može sadržavati brojeve",
 
-  "createGroup": "Kreiraj"
+  "createGroup": "Kreiraj",
+
+
+  "registerTitle": "Kreiraj račun",
+
+  "firstNameLabel": "Ime",
+  "firstNameHint": "Unesite ime",
+  "errorFirstName": "Ime je obavezno.",
+
+  "lastNameLabel": "Prezime",
+  "lastNameHint": "Unesite prezime",
+  "errorLastName": "Prezime je obavezno.",
+
+  "emailLabel": "E-mail",
+  "errorEmailInvalid": "Unesite valjanu e-mail adresu.",
+  "errorEmailInUse": "Ova e-mail adresa je već povezana s Vaultara računom.",
+
+  "passwordLabel": "Lozinka",
+  "passwordHelper": "Najmanje 8 znakova s različitim vrstama.",
+
+  "passwordTooShort": "Prekratka",
+  "passwordTooWeak": "Preslaba",
+  "passwordMedium": "Srednja",
+  "passwordStrong": "Jaka",
+
+  "errorPasswordLength": "Lozinka mora imati najmanje 8 znakova.",
+  "errorPasswordWeak": "Odaberite jaču lozinku.",
+
+  "errorGeneric": "Registracija nije uspjela. Pokušajte ponovno.",
+
+  "createAccount": "Kreiraj račun",
+  "appName": "Vaultara",
+"authTagline": "Vaše osobno središte za putovnice dozvole kartice i druge važne stavke",
+"tabSignIn": "Prijava",
+"tabCreateAccount": "Izradi račun",
+"signInFooterText": "Prijavite se kako biste pristupili svom osobnom Vaultara prostoru i imali kontrolu nad svakom obnovom",
+"createAccountFooterText": "Izradite Vaultara račun za sigurnosnu pohranu važnih podsjetnika i pristup njima kad god zatreba",
+"emailRequired": "Vaša e-pošta je obavezna",
+"passwordRequired": "Vaša lozinka je obavezna",
+"registerPasswordHint": "Unesite lozinku",
+"loginPasswordHint": "Unesite svoju lozinku",
+"emailHint": "Unesite svoju e-mail adresu",
+  "emailNotFound": "Pogrešan email.\nNe postoji Vaultara račun s ovom email adresom",
+  "incorrectPassword": "Pogrešna lozinka",
+  "emailLabel": "Email adresa",
+  "passwordLabel": "Lozinka",
+  "signIn": "Prijava",
+  "categoryPersonalIdentification": "Osobna identifikacija",
+  "categoryDrivingAndVehicles": "Vožnja i vozila",
+  "categoryTravelAndImmigration": "Putovanja i imigracija",
+  "categoryBankingAndCards": "Bankarstvo i kartice",
+  "categoryInsuranceAndCover": "Osiguranje i pokriće",
+  "categoryHealthAndMedical": "Zdravlje i medicina",
+  "categoryWorkAndProfessional": "Rad i profesionalno",
+  "categoryPropertyAndHousing": "Nekretnine i stanovanje",
+  "categoryHouseholdAndUtilities": "Kućanstvo i usluge",
+
+  "subcategoryPassports": "Putovnice",
+  "subcategoryIdCards": "Osobne iskaznice",
+  "subcategoryResidencePermits": "Boravišne dozvole",
+
+  "subcategoryDrivingLicences": "Vozačke dozvole",
+  "subcategoryVehicleRegistrations": "Registracije vozila",
+  "subcategoryRoadworthyCertificates": "Potvrde o tehničkoj ispravnosti",
+  "subcategoryVehicleInspectionCertificates": "Potvrde o pregledu vozila",
+
+  "subcategoryVisas": "Vize",
+  "subcategoryStudyPermits": "Dozvole za studij",
+  "subcategoryWorkPermits": "Radne dozvole",
+  "subcategoryTravelInsuranceDocuments": "Dokumenti putnog osiguranja",
+
+  "subcategoryDebitAndCreditCards": "Debitne i kreditne kartice",
+  "subcategoryStoreCards": "Trgovačke kartice",
+  "subcategoryFuelCards": "Kartice za gorivo",
+
+  "subcategoryVehicleInsurances": "Osiguranje vozila",
+  "subcategoryPropertyInsurances": "Osiguranje imovine",
+  "subcategoryLifeInsurances": "Životna osiguranja",
+  "subcategoryHealthInsurances": "Zdravstvena osiguranja",
+  "subcategoryTravelInsurances": "Putna osiguranja",
+
+  "subcategoryMedicalPrescriptions": "Medicinski recepti",
+  "subcategoryOpticalPrescriptions": "Optički recepti",
+  "subcategoryMedicalCertificates": "Medicinske potvrde",
+
+  "subcategoryProfessionalLicences": "Profesionalne licence",
+  "subcategoryProfessionalRegistrations": "Profesionalne registracije",
+  "subcategoryIndustryRegistrations": "Industrijske registracije",
+  "subcategoryWorkAccessCards": "Kartice za pristup radu",
+
+  "subcategoryLeaseAgreements": "Ugovori o najmu",
+  "subcategoryAccessCardsAndTags": "Kartice i oznake za pristup",
+  "subcategoryParkingPermits": "Parkirne dozvole",
+  "subcategorySecurityAccessPermits": "Sigurnosne pristupne dozvole",
+
+  "subcategoryElectricityAccounts": "Računi za električnu energiju",
+  "subcategoryWaterAccounts": "Računi za vodu",
+  "subcategoryInternetContracts": "Internetski ugovori",
+  "subcategorySecurityServiceContracts": "Ugovori o sigurnosnim uslugama",
+  "searchCategories": "Pretraži kategorije",
+  "filterAll": "Sve",
+  "filterPreset": "Zadano",
+  "filterCustom": "Prilagođeno",
+  "addCategoryTitle": "Dodaj kategoriju",
+  "customLabel": "Prilagođeno",
+  "subcategoriesLabel": "potkategorije",
+  "itemsLabel": "stavke",
+  "itemsExpiring": "{count} stavki istječe za {days} dana",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Prikvačene stavke",
+  "pinnedHint": "Prikvači kategorije koje najčešće otvaraš kako bi ostale na vrhu.",
+  "noCategoriesFound": "Nema pronađenih kategorija",
+   "searchGroups": "Pretraži grupe",
+  "addGroupTitle": "Dodaj grupu",
+  "basicPlanGroupInfo": "Koristite Basic plan.\nMožete pregledavati unaprijed postavljene grupe u ovoj kategoriji.\nNadogradite na Premium kako biste stvorili vlastite grupe.",
+  "groupDeleted": "Grupa je obrisana",
+  "undo": "PONIŠTI",
+  "groupStats": "{items} stavki • {expiring} istječe za {days} dana",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Dodirnite za dodavanje i praćenje stavki u ovoj grupi.",
+  "itemsInGroup": "Stavke u ovoj skupini",
+  "itemsInGroupHint": "Pratite svaku važnu stavku s datumom isteka kako biste je na vrijeme obnovili.",
+  "searchItems": "Pretraži stavke",
+  "filterAll": "Sve",
+  "filterExpiringWithin": "Istječe za {days} dana",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Isteklo",
+  "addItem": "Dodaj stavku",
+  "noItemsYet": "Još nema stavki.",
+
+  "statusExpired": "Isteklo",
+  "statusExpiresToday": "Istječe danas",
+  "statusExpiresInOneDay": "Istječe za 1 dan",
+  "statusExpiresInDays": "Istječe za {days} dana",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Važeće",
+
+  "deleteCategoryTitle": "Izbriši kategoriju",
+  "deleteCategoryMessage": "Jeste li sigurni da želite izbrisati kategoriju \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Izbriši grupu",
+  "deleteGroupMessage": "Jeste li sigurni da želite izbrisati grupu \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Izbriši stavku",
+  "deleteItemMessage": "Jeste li sigurni da želite izbrisati \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Odustani",
+  "delete": "Izbriši",
+  "homeWelcomeTitle": "Dobrodošli",
+
+  "homeWelcomeFirstTitle": "Dobrodošli, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Dobrodošli natrag, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara vam pomaže pratiti važne datume isteka kako ništa ne bi promaknulo.",
+
+  "homeWelcomeSubtitleFirst":
+    "Drago nam je što ste ovdje. Vaultara vam pomaže ostati organizirani čuvanjem važnih datuma i zapisa na jednom sigurnom mjestu.",
+
+  "homeWelcomeSubtitleBack":
+    "Dobrodošli natrag. Vaultara je ovdje kad god želite pregledati svoje važne datume i zapise.",
+    "insightEmptyTitle": "Još ništa nije dodano",
+  "insightEmptyBody": "Kada počnete pratiti važne datume, Vaultara će vam pomoći da ostanete ispred isteka.",
+
+  "insightExpiresTodayTitle": "\"{name}\" istječe danas",
+  "insightExpiresTodayBody": "Brza provjera može pomoći da sve ostane ažurno.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" istječe sutra",
+  "insightExpiresTomorrowBody": "Pregled sada može uštedjeti vrijeme kasnije.",
+
+  "insightExpiresSoonTitle": "\"{name}\" istječe {date}",
+  "insightExpiresSoonBody": "Rješavanje unaprijed čini stvari jednostavnijima.",
+
+  "insightNextExpiryTitle": "Sljedeći istek je \"{name}\" ({date})",
+  "insightNextExpiryBody": "Trenutno nije potrebna nikakva akcija.",
+
+  "insightClusteredTitle": "Više stavki istječe oko {month}",
+  "insightClusteredBody": "Zajednički pregled može uštedjeti vrijeme.",
+
+  "insightTopCategoryTitle": "Većina stavki nalazi se u {category}",
+  "insightTopCategoryBody": "Ovdje pregled donosi najveći učinak.",
+
+  "insightStableTitle": "Sve je stabilno",
+  "insightStableBody": "Nema nadolazećih isteka koji zahtijevaju pažnju.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Sve stavke",
+"summaryAllCaption": "Praćeno u Vaultari",
+"summarySoonTitle": "Uskoro istječe",
+"summarySoonCaption": "Unutar 30 dana",
+"summaryWeekTitle": "Ovaj tjedan",
+"summaryWeekCaption": "Istječe za 7 dana",
+"summaryExpiredTitle": "Isteklo",
+"summaryExpiredCaption": "Rok važenja je prošao",
+"stabilityStableTitle": "Sve izgleda stabilno",
+"stabilityStableBody": "Vaši zapisi ne pokazuju neposredne niti kumulativne rizike.",
+
+"stabilityDecliningTitle": "Stabilnost opada",
+"stabilityDecliningBody": "Neki zapisi su istekli, a drugi se približavaju isteku.",
+
+"stabilityWeakenedTitle": "Stabilnost oslabljena",
+"stabilityWeakenedBody": "Prisutnost isteklih zapisa smanjuje ukupnu pouzdanost.",
+
+"stabilityPressureTitle": "Pritisak raste",
+"stabilityPressureBody": "Neki zapisi uskoro će zahtijevati pažnju kako bi se održala stabilnost.",
+"editorNotes": "Bilješke",
+"notesHint": "Unesite bilješke",
+"editorReminderTitle": "Podsjetnik",
+"editorReminderNone": "Bez podsjetnika",
+"editorReminderOnExpiry": "Na datum isteka",
+"editorReminder7Days": "7 dana prije isteka",
+"editorReminder30Days": "30 dana prije isteka",
+"editorReminderCustom": "Prilagođeno",
+"daysBeforeExpiry": "dana prije isteka",
+"reminderStage0Title": "Podsjetnik isteka",
+"reminderStage0Body": "{firstName}, {itemName} istječe za {days} dana.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Naknadni podsjetnik",
+"reminderStage1Body": "{firstName}, {itemName} još nije ažuriran.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Istek se približava",
+"reminderStage2Body": "Datum isteka za {itemName} se približava.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Završni podsjetnik",
+"reminderFinalBody": "{firstName}, molimo ažurirajte {itemName} sada.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Ravnoteža pokrivenosti",
+"coverageAllRepresented": "Vaši zapisi uključuju stavke u svim kategorijama.",
+"coverageMissingNamed": "Nisu pronađeni zapisi u {count} kategorija: {names}.",
+"coverageMissingSummary": "Niste dodali nijedan zapis u {count} kategorija, uključujući {names} i još {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Koristi lozinku",
+"signInWithBiometrics": "Prijava pomoću biometrije",
+"enableBiometricsTitle": "Omogući biometrijsku sigurnost",
+"enableBiometricsBody": "Koristi otisak prsta ili prepoznavanje lica za zaštitu Vaultare.",
+"enableBiometricsReason": "Omogući biometrijsko otključavanje za Vaultaru.",
+"notNow": "Ne sada",
+"useBiometrics": "Koristi biometriju",
+"recordsCalendarIntro":
+  "Odaberite kako želite pregledavati datume isteka:\n\n• Unesite koliko dana unaprijed želite pogledati.\n• Ili odaberite određeni datum na kalendaru.\n\nVaultara će prikazati koji zapisi dosežu datum isteka tog dana.",
+
+"showingRecordsRelative": "Prikazuju se zapisi koji istječu za {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Prikazuju se zapisi koji istječu na odabrani datum",
+"noRecordsOnDate": "Nema zapisa postavljenih da isteknu tog dana.",
+
+"recordEditorAddTitle": "Dodaj zapis",
+"recordEditorEditTitle": "Uredi zapis",
+
+"editorRecordName": "Naziv zapisa",
+"editorRecordNameHint": "Unesite naziv zapisa",
+"recordEditorErrorName": "Naziv zapisa je obavezan",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Dodirnite za dodavanje i praćenje zapisa u ovoj grupi.",
+
+"recordsInGroup": "Zapisi u ovoj grupi",
+"recordsInGroupHint":
+  "Pratite svaki važan zapis s datumom isteka kako biste ga obnovili na vrijeme.",
+
+"searchRecords": "Pretraži zapise",
+"addRecord": "Dodaj zapis",
+"noRecordsYet": "Još nema zapisa.",
+
+"deleteRecordTitle": "Izbriši zapis",
+
+"recordsInsightClusteredTitle":
+  "Više zapisa istječe oko {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Većina vaših zapisa nalazi se u kategoriji {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Svi zapisi",
+
+"recordsStabilityDecliningBody":
+  "Neki zapisi su već istekli, a drugi se uskoro približavaju isteku.",
+
+"recordsCoverageAllRepresented":
+  "Vaši zapisi pokrivaju sve kategorije.",
+
+"recordReminderStage0Body":
+  "{firstName}, vaš {recordName} istječe za {days} dana.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, vaš {recordName} još nije ažuriran.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Datum isteka za {recordName} se približava.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, molimo ažurirajte {recordName} sada.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Još nema grupa",
+"recordsExpiring": "{count, plural, one {1 zapis istječe za {days} dana} other {{count} zapisa istječu za {days} dana}}",
+"recordsGroupStats": "{records, plural, one {1 zapis} other {{records} zapisa}} • {expiring} za {days} dana",
+"groupLabel": "{count, plural, one {{count} grupa} other {{count} grupe}}",
+"recordsLabel": "{count, plural, one {{count} zapis} other {{count} zapisa}}",
+"forgotPassword": "Zaboravili ste lozinku?",
+  "forgotPasswordTitle": "Resetiranje lozinke",
+  "forgotPasswordBody": "Unesite svoju email adresu i poslat ćemo vam poveznicu za reset lozinke.",
+  "sendResetLink": "Pošalji poveznicu",
+  "passwordResetEmailSent": "Email za resetiranje lozinke je poslan.",
+  "verifyEmailToContinue": "Molimo potvrdite svoju adresu e-pošte prije prijave",
+  "changeEmailTitle": "Promjena email adrese",
+"newEmailHint": "Unesite svoju novu email adresu",
+"sendVerificationEmail": "Pošalji verifikacijski email",
+"deleteAccountTitle": "Izbriši račun",
+"deleteAccountWarning": "Ova radnja trajno briše vaš račun i sve pohranjene podatke.\nNije moguće poništiti.",
+"deleteAccountConfirm": "Trajno izbriši račun",
+"supportTitle": "Podrška",
+"supportSubtitle": "Kontaktirajte nas ako vam je potrebna pomoć ili imate pitanja.",
+"supportEmailSubject": "Vaultara zahtjev za podršku",
+"supportEmailError": "Nije moguće otvoriti aplikaciju za e-poštu.",
+"passwordResetEmailFailed": "Nije moguće poslati e-mail za reset lozinke.",
+"loggedInPasswordResetBody": "Poslat ćemo poveznicu za reset lozinke na:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Upravljanje računom",
+"changeEmailTitle": "Promijeni email adresu",
+"changeEmailSubtitle": "Ažuriraj email povezan s tvojim računom.",
+"changePasswordTitle": "Promijeni lozinku",
+"changePasswordSubtitle": "Poslat ćemo ti link putem e-pošte za sigurnu promjenu lozinke.",
+"deleteAccountTitle": "Izbriši račun",
+"deleteAccountSubtitle": "Trajno ukloni svoj Vaultara račun.",
+"biometricAuthReason": "Autentificirajte se za pristup svom Vaultara računu",
+"verifyEmailTitle": "Potvrdite svoju e-poštu",
+"verifyEmailBody": "Poslali smo e-poruku za potvrdu u vašu pristiglu poštu. Otvorite je i potvrdite svoju adresu, zatim se vratite ovdje za nastavak.",
+"verifyEmailConfirmedButton": "Potvrdio sam svoju e-poštu",
+"verifyEmailResendButton": "Ponovno pošalji potvrdu e-pošte",
+"verifyEmailSending": "Slanje...",
+"navHome": "Početna",
+"navCategories": "Kategorije",
+"navInsights": "Uvidi",
+"navCalendar": "Kalendar",
+"tutorialHomeSearch": "Koristite traku za pretraživanje kako biste brzo pronašli bilo koji zapis koji pratite.",
+"tutorialHomeFab": "Dodajte svoj prvi zapis ovdje.\nOdaberite gdje pripada, dodajte opcionalne bilješke i odaberite datum isteka.",
+"tutorialHomeSummary": "Kako dodajete više zapisa, ovaj odjeljak pomaže vam prepoznati zapise blizu isteka.",
+"tutorialHomeInsight": "Ovaj pametni uvid ističe obrasce i nadolazeće isteke.\nMožete dodirnuti ikonu zvučnika da biste ga poslušali.",
+"tutorialHomeCoverage": "Ravnoteža pokrivenosti pokazuje koliko su zapisi ravnomjerno raspoređeni.\nVeća ravnoteža znači manje praznina.",
+"tutorialHomeStability": "Stabilnost pokazuje koliko su vaši zapisi pouzdani tijekom vremena.\nIstekli i nadolazeći zapisi mogu smanjiti stabilnost.",
+"tutorialCancel": "Odustani",
+"tutorialNext": "Dalje",
+"tutorialEnd": "Završi vodič",
+"softDeleteCategory": "Kategorija",
+"softDeleteGroup": "Grupa",
+"softDeleteRecord": "Zapis",
+"softDeleteTitle": "Premjesti {type} u Nedavno obrisano",
+"softDeleteMessage": "{type} \"{name}\" bit će premješten u Nedavno obrisano.\n\nMožete ga vratiti unutar 30 dana. Nakon toga bit će trajno obrisan.",
+"softDeleteMove": "Premjesti",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+ "recentlyDeletedTitle": "Nedavno izbrisano",
+  "categories": "Kategorije",
+  "groups": "Grupe",
+  "records": "Zapisi",
+  "restore": "Vrati",
+  "deletePermanently": "Trajno izbriši",
+
+  "recentlyDeletedBanner": "Izbrisani {type} čuvaju se 30 dana.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Pretraži izbrisane {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Nema izbrisanih {type}",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Dodirnite kategoriju kako biste vidjeli njezine grupe i upravljali svojim zapisima.",
+  "groupsHint": "Grupe organiziraju vaše zapise u ovoj kategoriji. Dodirnite grupu za upravljanje zapisima.",
+  "notLoggedIn": "Niste prijavljeni",
+"recordsInsideGroupHint": "Ovo su zapisi unutar ove grupe.",
+"snackMovedToRecentlyDeleted": "\"{name}\" premješteno u Nedavno obrisano",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" uspješno obrisano",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" uspješno ažurirano",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" uspješno dodano",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" uspješno vraćeno",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Dosegnuto je besplatno ograničenje ({current}/{limit}). Nadogradite za više.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Pretraži sve zapise",
+"globalSearchHint": "Upišite naziv zapisa, kategoriju ili grupu",
+"globalSearchNoMatches": "Nijedan zapis ne odgovara vašem pretraživanju.",
+"snackNoRecordsToSearch": "Nema zapisa za pretraživanje. Dodajte nekoliko zapisa i Vaultara će ih automatski indeksirati.",
+"recoveryCentreTitle": "Centar za oporavak",
+"recoveryCentreSubtitle": "Vratite ili trajno izbrišite uklonjene zapise.",
+"plan_premium": "Premium",
+"plan_free": "Besplatno",
+"profile_app_settings_title": "Postavke aplikacije",
+"profile_privacy_security_title": "Privatnost i sigurnost",
+"profile_biometric_on": "Biometrijsko zaključavanje je uključeno na ovom uređaju.",
+"profile_biometric_off": "Biometrijsko zaključavanje je isključeno.",
+"profile_biometric_enable_reason": "Potvrdite identitet kako biste uključili biometrijsko zaključavanje.",
+"profile_biometric_disable_reason": "Potvrdite identitet kako biste isključili biometrijsko zaključavanje.",
+"profile_account_management_title": "Upravljanje računom",
+"profile_account_management_subtitle": "Promijenite e-poštu, lozinku ili izbrišite račun.",
+"profile_premium_active_title": "Premium je aktivan",
+"profile_premium_upgrade_title": "Nadogradite na Premium",
+"profile_premium_active_subtitle": "Napredni podsjetnici su otključani.",
+"profile_premium_upgrade_subtitle": "Otključajte napredne podsjetnike i neograničenu organizaciju.",
+"profile_manage_cancel_hint": "Upravljajte ili otkažite u bilo kojem trenutku na Google Playu.",
+"profile_manage_subscription_button": "Upravljanje pretplatom",
+"plansTitle": "Odaberite svoj plan",
+"plansTrialBanner": "Započnite 7-dnevno besplatno probno razdoblje.\nOtkažite bilo kada.",
+"plansLoading": "Učitavanje…",
+"plansStartFreeTrial": "Započni besplatno",
+"plansNoChargeTodayFooter": "7 dana besplatno · Danas bez naplate",
+
+"planFreeTitle": "Besplatno",
+"planFreeSubtitle": "Za početak",
+"planPremiumMonthlyTitle": "Premium mjesečno",
+"planPremiumYearlyTitle": "Premium godišnje",
+"planPerMonth": "mjesečno",
+"planPerYear": "godišnje",
+
+"planBadgeCurrent": "Trenutni plan",
+"planBadgePopular": "Popularno",
+"planBadgeBestValue": "Najbolja vrijednost",
+
+"planYouAreOnThisPlan": "Već koristite ovaj plan.",
+
+"planFeatureUpToRecords": "Do {count} zapisa",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Prilagođene kategorije (do {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Unaprijed postavljene podkategorije",
+"planFeatureCloudStorage": "Pohrana u oblaku",
+"planFeatureSmartExpiryInsights": "Pametni uvidi isteka",
+"planFeatureCoverageBalance": "Ravnoteža pokrivenosti",
+"planFeatureRecordStabilityTracking": "Stabilnost zapisa",
+
+"planFeatureUnlimitedRecords": "Neograničeni zapisi",
+"planFeatureUnlimitedCategories": "Neograničene kategorije",
+"planFeatureCustomSubcategories": "Prilagođene podkategorije",
+"planFeatureMultipleRemindersPerRecord": "Više podsjetnika",
+"planFeatureAdvancedReminderTiming": "Napredno vrijeme podsjetnika",
+"planFeatureAutomaticFollowUps": "Automatski podsjetnici",
+
+"planFeatureEverythingInMonthly": "Sve iz mjesečnog",
+"planFeatureSavePercentComparedToMonthly": "Uštedite {percent}% u odnosu na mjesečno",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Najbolja dugoročna vrijednost",
+"editorReminderLabel": "Podsjetnik",
+"editorReminderSelectOptional": "Odaberite podsjetnik (neobavezno)",
+"editorReminderOnExpiry": "Na dan isteka",
+"editorReminderDaysBefore": "{days} dana prije isteka",
+"editorFreeItemsCount": "Besplatni zapisi: {used}/{limit}",
+"editorExpiryPastWarning": "Datum isteka je već prošao.",
+"editorExpiryTodayWarning": "Ovaj zapis istječe danas.",
+"editorErrorExpiryPast": "Datum isteka ne može biti u prošlosti.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Današnji uvidi",
+"tutorialBannerTitle": "Brzi vodič",
+"tutorialBannerBody": "Saznajte kako pretraživati, dodavati zapise i razumjeti uvide u manje od minute.",
+"tutorialBannerStart": "Pokreni vodič",
+"tutorialBannerDismiss": "Ne sada",
+"authErrorUserDisabled": "Ovaj račun je onemogućen.",
+"authErrorNetwork": "Greška mreže. Pokušajte ponovno.",
+"authErrorTooManyRequests": "Previše pokušaja. Pokušajte kasnije.",
+"authErrorSignInFailed": "Prijava nije uspjela. Pokušajte ponovno.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium je omogućen",
+"snackPremiumRestored": "Premium je vraćen",
+"passwordNeedLower": "Mora sadržavati malo slovo",
+"passwordNeedUpper": "Mora sadržavati veliko slovo",
+"passwordNeedNumber": "Mora sadržavati broj",
+"passwordNeedSymbol": "Mora sadržavati simbol",
+"confirmIdentityTitle": "Potvrdite identitet",
+"confirm": "Potvrdi",
+"profile_sign_out_title": "Odjava",
+"profile_sign_out_subtitle": "Odjava iz Vaultare na ovom uređaju",
+"profile_sign_out_confirm_title": "Odjaviti se?",
+"profile_sign_out_confirm_body": "Morat ćete se ponovno prijaviti kako biste pristupili računu.",
+"profile_sign_out_action": "Odjava",
+"todayInsightsAudioHint": "Preferirate zvuk? Koristite ikonu zvučnika.",
+"category2Label": "Kategorija",
+"enable2BiometricsBody": "Koristite prepoznavanje otiska prsta za zaštitu Vaultara računa.",
+"snackNotificationsDisabled": "Obavijesti su onemogućene. Uključite ih za primanje podsjetnika.",
+"openSettings": "Otvori postavke",
+
+"reminderOnExpiryTitle": "Istječe danas",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Bok {firstName}, \"{itemName}\" istječe danas.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Besplatne kategorije: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Prikazuje koliko je besplatnih kategorija iskorišteno od besplatnog ograničenja.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Dodaj bilješke (opcionalno)",
+"apply": "Primijeni",
+"smartInsightExpiresTodayHeading": "Ističe Danas",
+"smartInsightExpiresTodaySingleBody": "{name} ističe danas. Djelujte sada kako biste ga održali ažurnim.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} i još 1 dokument ističu danas.} few{{names} i još {extra} dokumenta ističu danas.} other{{names} i još {extra} dokumenata ističe danas.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Zahtijeva Vašu Pažnju",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} ističe za 1 dan i nema postavljen podsjetnik. Provjerite jesu li detalji još uvijek točni.} few{{name} ističe za {days} dana i nema postavljen podsjetnik. Provjerite jesu li detalji još uvijek točni.} other{{name} ističe za {days} dana i nema postavljen podsjetnik. Provjerite jesu li detalji još uvijek točni.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Više Obnova Blizu Zajedno",
+"smartInsightRenewalTwinBodyTwo": "{a} i {b} ističu u roku od tri tjedna jedan od drugog. Planirajte unaprijed.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} i {c} svi ističu u roku od tri tjedna. Planirajte unaprijed.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} i još 1 dokument ističu u roku od tri tjedna. Planirajte unaprijed.} few{{a}, {b} i još {extra} dokumenta ističu u roku od tri tjedna. Planirajte unaprijed.} other{{a}, {b} i još {extra} dokumenata ističe u roku od tri tjedna. Planirajte unaprijed.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Nadolazeća Skupina",
+"smartInsightClusterBody": "{count, plural, =1{1 dokument u kategoriji {category} ističe u sljedeća dva mjeseca. Razmislite o zajedničkom rješavanju.} few{{count} dokumenta u kategoriji {category} ističu u sljedeća dva mjeseca. Razmislite o zajedničkom rješavanju.} other{{count} dokumenata u kategoriji {category} ističe u sljedeća dva mjeseca. Razmislite o zajedničkom rješavanju.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Mirno Razdoblje Pred Vama",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Ništa ne ističe sljedeći 1 dan. Vaša sljedeća obnova je {firstDate}.} few{Ništa ne ističe sljedeća {days} dana. Vaša sljedeća obnova je {firstDate}.} other{Ništa ne ističe sljedećih {days} dana. Vaša sljedeća obnova je {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Sve Je Ažurno",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 nadolazeći istek je pokriven podsjetnicima. Ništa drugo ne zahtijeva vašu pažnju.} few{{count} nadolazeća isteka su pokrivena podsjetnicima. Ništa drugo ne zahtijeva vašu pažnju.} other{{count} nadolazećih isteka je pokriveno podsjetnicima. Ništa drugo ne zahtijeva vašu pažnju.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Sve je ažurno. Ništa ne zahtijeva vašu pažnju trenutno.",
+"smartInsightNoRecordsHeading": "Dodajte Svoj Prvi Zapis",
+"smartInsightNoRecordsBody": "Počnite pratiti svoje dokumente i Vaultara će ovdje prikazati pametne uvide.",
+"expiryTimelineTitle": "Vremenska crta isteka",
+"expiryTimelineSubtitle": "Dodirnite mjesec da vidite zapise koji ističu u tom mjesecu",
+"expiryTimelineDetailCount": "{count, plural, =1{1 zapis} few{{count} zapisa} other{{count} zapisa}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Nadolazeće",
+"summaryUpcomingCaption": "Unutar 30 dana",
+"summaryUrgentTitle": "Hitno",
+"summaryUrgentCaption": "Unutar 7 dana"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

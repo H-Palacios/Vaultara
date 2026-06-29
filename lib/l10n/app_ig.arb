@@ -101,5 +101,811 @@
   "groupErrorSymbols": "Aha otu apụghị ịbụ akara",
   "groupErrorNumbers": "Aha otu apụghị ịnwe ọnụọgụ",
 
-  "createGroup": "Mepụta"
+  "createGroup": "Mepụta",
+
+  "registerTitle": "Mepụta akaụntụ",
+
+  "firstNameLabel": "Aha mbụ",
+  "firstNameHint": "Tinye aha mbụ",
+  "errorFirstName": "Aha mbụ dị mkpa",
+
+  "lastNameLabel": "Aha ikpeazụ",
+  "lastNameHint": "Tinye aha ikpeazụ",
+  "errorLastName": "Aha ikpeazụ dị mkpa",
+
+  "emailLabel": "Email",
+
+  "errorEmailInvalid": "Tinye email ziri ezi.",
+  "errorEmailInUse": "Email a ejirila akaụntụ Vaultara.",
+
+  "passwordLabel": "Okwuntughe",
+  "passwordHelper": "Opekempe mkpụrụedemede 8 na ụdị dị iche iche.",
+
+  "passwordTooShort": "Dị mkpụmkpụ",
+  "passwordTooWeak": "Dị adịghị ike",
+  "passwordMedium": "Etiti",
+  "passwordStrong": "Siri ike",
+"emailRequired": "Achọrọ email gị",
+"passwordRequired": "Achọrọ paswọọdụ gị",
+"registerPasswordHint": "Tinye paswọọdụ",
+"loginPasswordHint": "Tinye paswọọdụ gị",
+"emailHint": "Tinye adreesị email gị",
+  "errorPasswordLength": "Okwuntughe ga-enwe opekata mpe mkpụrụedemede 8.",
+  "errorPasswordWeak": "Họrọ okwuntughe ka siri ike.",
+
+  "errorGeneric": "Ndebanye aha adaala. Gbalịa ọzọ.",
+
+  "createAccount": "Mepụta akaụntụ",
+  "appName": "Vaultara",
+"authTagline": "Ebe onwe gị maka paspọtụ laịsịn kaadị na ihe ndị ọzọ dị mkpa",
+"tabSignIn": "Banye",
+"tabCreateAccount": "Mepụta akaụntụ",
+"signInFooterText": "Banye iji nweta ohere Vaultara nke gị ma debe mmeghari niile n'okpuru njikwa",
+"createAccountFooterText": "Mepụta akaụntụ Vaultara iji chekwaa ncheta dị mkpa ma nweta ha oge ọ bụla ịchọrọ",
+  "emailNotFound": "Email ezighi ezi.\nEnweghị akaụntụ Vaultara jiri email a",
+  "incorrectPassword": "Paswọọdụ ezighi ezi",
+  "emailLabel": "Adreesị email",
+  "passwordLabel": "Paswọọdụ",
+  "signIn": "Banye",
+  "categoryPersonalIdentification": "Njirimara onwe",
+  "categoryDrivingAndVehicles": "Ịnya ụgbọala na ụgbọ njem",
+  "categoryTravelAndImmigration": "Njem na mbata mba ọzọ",
+  "categoryBankingAndCards": "Ụlọ akụ na kaadị",
+  "categoryInsuranceAndCover": "Inshọransị na mkpuchi",
+  "categoryHealthAndMedical": "Ahụike na ọgwụ",
+  "categoryWorkAndProfessional": "Ọrụ na ọkachamara",
+  "categoryPropertyAndHousing": "Akụrụngwa na ebe obibi",
+  "categoryHouseholdAndUtilities": "Ezinụlọ na ọrụ",
+
+  "subcategoryPassports": "Paspọtụ",
+  "subcategoryIdCards": "Kaadị njirimara",
+  "subcategoryResidencePermits": "Ikikere ibi",
+
+  "subcategoryDrivingLicences": "Ikikere ịnya ụgbọala",
+  "subcategoryVehicleRegistrations": "Ndebanye ụgbọala",
+  "subcategoryRoadworthyCertificates": "Asambodo ogo okporo ụzọ",
+  "subcategoryVehicleInspectionCertificates": "Asambodo nyocha ụgbọala",
+
+  "subcategoryVisas": "Vịsa",
+  "subcategoryStudyPermits": "Ikikere ọmụmụ",
+  "subcategoryWorkPermits": "Ikikere ọrụ",
+  "subcategoryTravelInsuranceDocuments": "Akwụkwọ inshọransị njem",
+
+  "subcategoryDebitAndCreditCards": "Kaadị debit na kredit",
+  "subcategoryStoreCards": "Kaadị ụlọ ahịa",
+  "subcategoryFuelCards": "Kaadị mmanụ",
+
+  "subcategoryVehicleInsurances": "Inshọransị ụgbọala",
+  "subcategoryPropertyInsurances": "Inshọransị akụrụngwa",
+  "subcategoryLifeInsurances": "Inshọransị ndụ",
+  "subcategoryHealthInsurances": "Inshọransị ahụike",
+  "subcategoryTravelInsurances": "Inshọransị njem",
+
+  "subcategoryMedicalPrescriptions": "Ntụziaka ọgwụ",
+  "subcategoryOpticalPrescriptions": "Ntụziaka anya",
+  "subcategoryMedicalCertificates": "Asambodo ọgwụ",
+
+  "subcategoryProfessionalLicences": "Ikikere ọkachamara",
+  "subcategoryProfessionalRegistrations": "Ndebanye ọkachamara",
+  "subcategoryIndustryRegistrations": "Ndebanye ụlọ ọrụ",
+  "subcategoryWorkAccessCards": "Kaadị nnweta ọrụ",
+
+  "subcategoryLeaseAgreements": "Nkwekọrịta mgbazinye",
+  "subcategoryAccessCardsAndTags": "Kaadị na taịgụ nnweta",
+  "subcategoryParkingPermits": "Ikikere nkwụsị ụgbọala",
+  "subcategorySecurityAccessPermits": "Ikikere nnweta nchekwa",
+
+  "subcategoryElectricityAccounts": "Akaụntụ ọkụ eletrik",
+  "subcategoryWaterAccounts": "Akaụntụ mmiri",
+  "subcategoryInternetContracts": "Nkwekọrịta ịntanetị",
+  "subcategorySecurityServiceContracts": "Nkwekọrịta ọrụ nchekwa",
+  "searchCategories": "Chọọ ngalaba",
+  "filterAll": "Niile",
+  "filterPreset": "Ndị edobere",
+  "filterCustom": "Nkeonwe",
+  "addCategoryTitle": "Tinye ngalaba",
+  "customLabel": "Nkeonwe",
+  "subcategoriesLabel": "ngalaba nta",
+  "itemsLabel": "ihe",
+  "itemsExpiring": "Ihe {count} ga-agwụ n'ime ụbọchị {days}",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Ngalaba edobere n'elu",
+  "pinnedHint": "Debe ngalaba ị na-emeghekarị ka ha nọrọ n'elu ndepụta.",
+  "noCategoriesFound": "Achọtaghị ngalaba ọ bụla",
+  "searchGroups": "Chọọ otu",
+  "addGroupTitle": "Tinye otu",
+  "basicPlanGroupInfo": "Ị na-eji Basic plan.\nỊ nwere ike ịhụ otu edobere n'okpuru ngalaba a.\nMee ka ọ bụrụ Premium iji mepụta otu nke gị.",
+  "groupDeleted": "E wepụrụ otu",
+  "undo": "WEGHACHI",
+  "groupStats": "Ihe {items} • {expiring} ga-agwụ n'ime ụbọchị {days}",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Pịa ka itinye ma soro ihe dị na otu a.",
+  "itemsInGroup": "Ihe dị n’otu a",
+  "itemsInGroupHint": "Debe ihe dị mkpa niile na ụbọchị ngwụcha ha ka i wee megharịa ha n’oge.",
+  "searchItems": "Chọọ ihe",
+  "filterAll": "Ha niile",
+  "filterExpiringWithin": "Na-agwụ n’ime ụbọchị {days}",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Agwụla",
+  "addItem": "Tinye ihe",
+  "noItemsYet": "Enweghị ihe ọ bụla ugbu a.",
+
+  "statusExpired": "Agwụla",
+  "statusExpiresToday": "Na-agwụ taa",
+  "statusExpiresInOneDay": "Na-agwụ echi",
+  "statusExpiresInDays": "Na-agwụ n’ime ụbọchị {days}",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Ka dị irè",
+
+  "deleteCategoryTitle": "Hichapụ udi",
+  "deleteCategoryMessage": "Ị ji n'aka na ịchọrọ ihichapụ udi \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Hichapụ otu",
+  "deleteGroupMessage": "Ị ji n'aka na ịchọrọ ihichapụ otu \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Hichapụ ihe",
+  "deleteItemMessage": "Ị ji n'aka na ịchọrọ ihichapụ \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Kagbuo",
+  "delete": "Hichapụ",
+  "homeWelcomeFirstTitle": "Nnọọ, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Nnọọ ọzọ, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara na-enyere gị soro ụbọchị ngwụcha dị mkpa ka ihe ghara ịgafe n’enweghị ịma.",
+
+"homeWelcomeSubtitleFirst":
+  "Ọ dị mma ịnọ ebe a. Vaultara na-enyere gị hazie ụbọchị na ndekọ dị mkpa n’otu ebe dị nchebe.",
+
+"homeWelcomeSubtitleBack":
+  "Ọ dị mma ịhụ gị ọzọ. Vaultara dị njikere mgbe ịchọrọ ịlele ụbọchị na ndekọ gị.",
+  "insightEmptyTitle": "Ị tinyebeghị ihe ọ bụla",
+  "insightEmptyBody": "Mgbe ị malitere ileba ụbọchị dị mkpa anya, Vaultara ga-enyere gị ịga n’ihu mmebi.",
+
+  "insightExpiresTodayTitle": "\"{name}\" ga-agwụ taa",
+  "insightExpiresTodayBody": "Nlele ngwa ngwa nwere ike ime ka ihe dị mma.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" ga-agwụ echi",
+  "insightExpiresTomorrowBody": "Ilele ya ugbu a nwere ike chekwaa oge.",
+
+  "insightExpiresSoonTitle": "\"{name}\" ga-agwụ na {date}",
+  "insightExpiresSoonBody": "Ime ya tupu oge eruo na-eme ka ihe dị mfe.",
+
+  "insightNextExpiryTitle": "Ihe ga-agwụ ọzọ bụ \"{name}\" na {date}",
+  "insightNextExpiryBody": "Enweghị ihe achọrọ ime ugbu a.",
+
+  "insightClusteredTitle": "Ọtụtụ ihe ga-agwụ gburugburu {month}",
+  "insightClusteredBody": "Ilele ha ọnụ nwere ike chekwaa oge.",
+
+  "insightTopCategoryTitle": "Ọtụtụ ihe dị na {category}",
+  "insightTopCategoryBody": "Ịmalite ebe a na-enye nnukwu uru.",
+
+  "insightStableTitle": "Ihe niile kwụsiri ike",
+  "insightStableBody": "Enweghị mmebi dị nso chọrọ nlebara anya.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Nnọọ",
+  "summaryAllTitle": "Ihe niile",
+"summaryAllCaption": "A na-enyocha ha na Vaultara",
+"summarySoonTitle": "Ga-agwụ n’oge na-adịghị anya",
+"summarySoonCaption": "N'ime ụbọchị 30",
+"summaryWeekTitle": "N’izu a",
+"summaryWeekCaption": "Ga-agwụ n’ime ụbọchị 7",
+"summaryExpiredTitle": "Agwụla",
+"summaryExpiredCaption": "Ụbọchị ngwụcha agafeela",
+"stabilityStableTitle": "Ihe niile dị mma",
+"stabilityStableBody": "Ndekọ gị egosighi ihe ize ndụ ozugbo ma ọ bụ nke na-arịba ama.",
+
+"stabilityDecliningTitle": "Nkwụsi ike na-ebelata",
+"stabilityDecliningBody": "Ụfọdụ ihe agwụla oge ha, ebe ndị ọzọ na-eru nso n’ịkwụsị.",
+
+"stabilityWeakenedTitle": "Nkwụsi ike adịghị ike",
+"stabilityWeakenedBody": "Inwe ndekọ ndị agwụla oge na-ebelata ntụkwasị obi n’ozuzu.",
+
+"stabilityPressureTitle": "Mgbali na-abawanye",
+"stabilityPressureBody": "Ụfọdụ ndekọ ga-achọ nlebara anya n’oge na-adịghị anya iji chekwaa nkwụsi ike.",
+"editorNotes": "Ndetu",
+"notesHint": "Tinye ndetu",
+"editorReminderTitle": "Ncheta",
+"editorReminderNone": "Enweghị ncheta",
+"editorReminderOnExpiry": "N'ụbọchị ngwụcha",
+"editorReminder7Days": "Ụbọchị 7 tupu ngwụcha",
+"editorReminder30Days": "Ụbọchị 30 tupu ngwụcha",
+"editorReminderCustom": "Ahaziri",
+"daysBeforeExpiry": "ụbọchị tupu ngwụcha",
+"reminderStage0Title": "Ncheta ngwụcha",
+"reminderStage0Body": "{firstName}, {itemName} ga-agwụ n’ime ụbọchị {days}.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Ncheta nsonye",
+"reminderStage1Body": "{firstName}, emelitebeghị {itemName} ka.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Ngwụcha na-abịa nso",
+"reminderStage2Body": "Ụbọchị ngwụcha {itemName} na-abịa nso.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Ncheta ikpeazụ",
+"reminderFinalBody": "{firstName}, biko melite {itemName} ugbu a.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Ntụle mkpuchi",
+"coverageAllRepresented": "Ndekọ gị gụnyere ihe nʼime ngalaba niile.",
+"coverageMissingNamed": "Enweghị ndekọ nʼime ngalaba {count}: {names}.",
+"coverageMissingSummary": "I tinyebeghị ndekọ ọ bụla n’ime ụdị {count}, gụnyere {names} na {remaining} ndị ọzọ.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Jiri paswọọdụ",
+"signInWithBiometrics": "Banye site na biometrics",
+"enableBiometricsTitle": "Mee ka nchekwa biometrics rụọ ọrụ",
+"enableBiometricsBody": "Jiri mkpịsị aka ma ọ bụ nghọta ihu chebe Vaultara.",
+"enableBiometricsReason": "Mee ka mmeghe biometrics rụọ ọrụ maka Vaultara.",
+"notNow": "Ọ bụghị ugbu a",
+"useBiometrics": "Jiri biometrics",
+"recordsCalendarIntro":
+  "Họrọ otu ị ga-esi nyochaa ụbọchị mmebi:\n\n• Tinye ọnụọgụ ụbọchị site taa gaa n’ihu.\n• Ma ọ bụ họrọ otu ụbọchị n’akpa kalenda.\n\nVaultara ga-egosi ndekọ ndị ga-eru ụbọchị mmebi n’ụbọchị ahụ.",
+
+"showingRecordsRelative": "Na-egosi ndekọ ga-emebi mgbe {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Na-egosi ndekọ ga-emebi n’ụbọchị ahọpụtara",
+"noRecordsOnDate": "Enweghị ndekọ e debere ka o mebie n’ụbọchị ahụ.",
+
+"recordEditorAddTitle": "Tinye ndekọ",
+"recordEditorEditTitle": "Dezie ndekọ",
+
+"editorRecordName": "Aha ndekọ",
+"editorRecordNameHint": "Tinye aha ndekọ",
+"recordEditorErrorName": "Aha ndekọ dị mkpa",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Pịa iji tinye ma soro ndekọ dị na otu a.",
+
+"recordsInGroup": "Ndekọ dị na otu a",
+"recordsInGroupHint":
+  "Soro ndekọ dị mkpa ọ bụla na ụbọchị mmebi ya ka i wee mee mmelite n’oge.",
+
+"searchRecords": "Chọọ ndekọ",
+"addRecord": "Tinye ndekọ",
+"noRecordsYet": "Enweghị ndekọ ka ọ dị.",
+
+"deleteRecordTitle": "Hichapụ ndekọ",
+
+"recordsInsightClusteredTitle":
+  "Ọtụtụ ndekọ na-emebi n’akụkụ {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Ọtụtụ ndekọ gị dị n’ime {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Ndekọ niile",
+
+"recordsStabilityDecliningBody":
+  "Ụfọdụ ndekọ emebiela ma ndị ọzọ na-abịarukwu mmebi nso.",
+
+"recordsCoverageAllRepresented":
+  "Ndekọ gị dị na kategori niile.",
+
+"recordReminderStage0Body":
+  "{firstName}, ndekọ gị {recordName} ga-emebi n’ime {days} ụbọchị.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, a ka emelabeghị ndekọ gị {recordName}.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Ụbọchị mmebi {recordName} na-abịa nso.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, biko melite {recordName} ugbu a.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Enwebeghị otu ọ bụla",
+"recordsExpiring": "{count, plural, one {rekọọdụ 1 ga-agwụ n’ime ụbọchị {days}} other {{count} rekọọdụ ga-agwụ n’ime ụbọchị {days}}}",
+"recordsGroupStats": "{records, plural, one {rekọọdụ 1} other {{records} rekọọdụ}} • {expiring} n’ime ụbọchị {days}",
+"groupLabel": "{count, plural, one {{count} otu} other {{count} otu}}",
+"recordsLabel": "{count, plural, one {{count} ndekọ} other {{count} ndekọ}}",
+ "forgotPassword": "Chefuru paswọọdụ?",
+  "forgotPasswordTitle": "Tọọgharịa paswọọdụ",
+  "forgotPasswordBody": "Tinye adreesị email gị ka anyị zitere gị njikọ ịtọgharịa paswọọdụ.",
+  "sendResetLink": "Zipu njikọ",
+  "passwordResetEmailSent": "E zitere email maka ịtọgharịa paswọọdụ.",
+  "verifyEmailToContinue": "Biko kwado adreesị email gị tupu ịbanye",
+  "changeEmailTitle": "Gbanwee adreesị email",
+"newEmailHint": "Tinye email ọhụrụ gị",
+"sendVerificationEmail": "Zipu email nkwenye",
+"deleteAccountTitle": "Hichapụ akaụntụ",
+"deleteAccountWarning": "Omume a ga-ehichapụ akaụntụ gị na data niile echekwara kpamkpam.\nA gaghị enwe ike iweghachi ya.",
+"deleteAccountConfirm": "Hichapụ akaụntụ kpamkpam",
+"supportTitle": "Nkwado",
+"supportSubtitle": "Kpọtụrụ anyị ma ọ bụrụ na ịchọrọ enyemaka ma ọ bụ nwee ajụjụ.",
+"supportEmailSubject": "Arịrịọ nkwado Vaultara",
+"supportEmailError": "Enweghị ike imeghe ngwa email.",
+"passwordResetEmailFailed": "Enweghị ike izipu email nrụgharị paswọọdụ.",
+"loggedInPasswordResetBody": "Anyị ga-eziga njikọ nrụgharị paswọọdụ na:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" } }},
+  "accountManagementTitle": "Njikwa Akaụntụ",
+"changeEmailTitle": "Gbanwee adreesị email",
+"changeEmailSubtitle": "Melite email jikọtara na akaụntụ gị.",
+"changePasswordTitle": "Gbanwee paswọọdụ",
+"changePasswordSubtitle": "Anyị ga-eziga gị email nwere njikọ iji gbanwee paswọọdụ gị n’ụzọ dị nchebe.",
+"deleteAccountTitle": "Hichapụ akaụntụ",
+"deleteAccountSubtitle": "Hichapụ akaụntụ Vaultara gị kpamkpam.",
+"biometricAuthReason": "Kwenye ka akaụntụ gị",
+"verifyEmailTitle": "Kwenye email gị",
+"verifyEmailBody": "Anyị ezipụla email nkwenye na igbe ozi gị. Biko mepee ya ma kwadoo adreesị email gị, wee laghachi ebe a ka ịga n’ihu.",
+"verifyEmailConfirmedButton": "Ekwenyela m email m",
+"verifyEmailResendButton": "Zipụ email nkwenye ọzọ",
+"verifyEmailSending": "Na-eziga...",
+"navHome": "Ụlọ",
+"navCategories": "Ụdị",
+"navInsights": "Nghọta",
+"navCalendar": "Kalịnda",
+"tutorialHomeSearch": "Jiri ogwe ọchụchọ chọta ngwa ngwa ndekọ ọ bụla ị na-esochi.",
+"tutorialHomeFab": "Tinye ndekọ mbụ gị ebe a.\nHọrọ ebe ọ dị, tinye ndetu nhọrọ, ma họrọ ụbọchị mmebi.",
+"tutorialHomeSummary": "Ka ị na-etinye ndekọ ndị ọzọ, ngalaba a na-enyere gị aka ịhụ ihe na-eru ma ọ bụ gafere mmebi.",
+"tutorialHomeInsight": "Nghọta amamihe a na-egosi usoro na mmebi na-abịa.\nỊ nwere ike pịa akara okwu ka ị nụ ya.",
+"tutorialHomeCoverage": "Nha mkpuchi na-egosi otú ndekọ gị si kesaa.\nNha ka elu na-egosi oghere ole na ole.",
+"tutorialHomeStability": "Nkwụsi ike na-egosi etu ndekọ gị si bụrụ ntụkwasị obi n'oge.\nIhe mebiri emebi na nke na-abịa nwere ike belata nkwụsi ike.",
+"tutorialCancel": "Kagbuo",
+"tutorialNext": "Ọzọ",
+"tutorialEnd": "Kwụsị nkuzi",
+"softDeleteCategory": "Udi",
+"softDeleteGroup": "Otu",
+"softDeleteRecord": "Ndekọ",
+"softDeleteTitle": "Bugharịa {type} gaa Recently Deleted",
+"softDeleteMessage": "A ga-ebuga {type} \"{name}\" gaa Recently Deleted.\n\nỊ nwere ike iweghachi ya n'ime ụbọchị 30. Mgbe nke ahụ gasịrị, a ga-ewepu ya kpamkpam.",
+"softDeleteMove": "Bugharịa",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "E wepụrụ n'oge na-adịbeghị anya",
+  "categories": "Ngalaba",
+  "groups": "Otu",
+  "records": "Ndekọ",
+  "restore": "Weghachi",
+  "deletePermanently": "Hichapụ kpamkpam",
+
+  "recentlyDeletedBanner": "A na-edebe {type} e wepụrụ ruo ụbọchị 30.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Chọọ {type} e wepụrụ",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Enweghị {type} e wepụrụ",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "Pịa otu ngalaba ka ịhụ ìgwè ya ma jikwaa ndekọ gị.",
+"groupsHint": "Otu na-ahazi ndekọ gị n’ime ngalaba a. Kpọọ otu iji jikwaa ndekọ.",
+"notLoggedIn": "Ị bataghị",
+"recordsInsideGroupHint": "Ndị a bụ ndekọ dị n'ime otu a.",
+"snackMovedToRecentlyDeleted": "Ebufere \"{name}\" gaa N'oge na-adịbeghị anya ehichapụ",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "Ehichapụla \"{name}\" nke ọma",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "Emelitere \"{name}\" nke ọma",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "Agbakwunyela \"{name}\" nke ọma",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "Eweghachitere \"{name}\" nke ọma",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Erutela oke efu ({current}/{limit}). Mee nkwalite iji tinye ọzọ.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Chọọ ndekọ niile",
+"globalSearchHint": "Tinye aha ndekọ, ngalaba ma ọ bụ otu",
+"globalSearchNoMatches": "Enweghị ndekọ kwekọrọ na ọchụchọ gị.",
+"snackNoRecordsToSearch": "Enweghị ndekọ a ga-achọ. Tinye ndekọ ole na ole, Vaultara ga-edekọ ha na-akpaghị aka.",
+"recoveryCentreTitle": "Ebe Nweghachi",
+"recoveryCentreSubtitle": "Weghachite ma ọ bụ hichapụ ndekọ ndị ewepụrụ kpamkpam.",
+"plan_premium": "Premium",
+"plan_free": "N’efu",
+"profile_app_settings_title": "Ntọala ngwa",
+"profile_privacy_security_title": "Nzuzo na nchekwa",
+"profile_biometric_on": "Akpọghe biometric dị n’ọrụ na ngwaọrụ a.",
+"profile_biometric_off": "Akpọghe biometric adịghị n’ọrụ.",
+"profile_biometric_enable_reason": "Kwenye njirimara gị iji mee ka akpọghe biometric rụọ ọrụ.",
+"profile_biometric_disable_reason": "Kwenye njirimara gị iji gbanyụọ akpọghe biometric.",
+"profile_account_management_title": "Njikwa akaụntụ",
+"profile_account_management_subtitle": "Gbanwee email, paswọọdụ ma ọ bụ hichapụ akaụntụ.",
+"profile_premium_active_title": "Premium na-arụ ọrụ",
+"profile_premium_upgrade_title": "Gaa Premium",
+"profile_premium_active_subtitle": "E meghere ncheta dị elu.",
+"profile_premium_upgrade_subtitle": "Meghee ncheta dị elu na nhazi na-enweghị oke.",
+"profile_manage_cancel_hint": "Jikwaa ma ọ bụ kagbuo n’oge ọ bụla na Google Play.",
+"profile_manage_subscription_button": "Jikwaa ndebanye aha",
+"plansTitle": "Họrọ atụmatụ gị",
+"plansTrialBanner": "Malite nnwale ụbọchị 7 n'efu.\nKwụsị oge ọ bụla.",
+"plansLoading": "Na-ebudata…",
+"plansStartFreeTrial": "Malite n'efu",
+"plansNoChargeTodayFooter": "Ụbọchị 7 n'efu · Enweghị ụgwọ taa",
+
+"planFreeTitle": "N'efu",
+"planFreeSubtitle": "Maka mmalite",
+"planPremiumMonthlyTitle": "Premium kwa ọnwa",
+"planPremiumYearlyTitle": "Premium kwa afọ",
+"planPerMonth": "kwa ọnwa",
+"planPerYear": "kwa afọ",
+
+"planBadgeCurrent": "Atụmatụ ugbu a",
+"planBadgePopular": "A ma ama",
+"planBadgeBestValue": "Uru kacha mma",
+
+"planYouAreOnThisPlan": "Ị nọ na atụmatụ a.",
+
+"planFeatureUpToRecords": "Rikọọd ruru {count}",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Ụdị omenala (ruo {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Obere ụdị edoziri",
+"planFeatureCloudStorage": "Nchekwa igwe ojii",
+"planFeatureSmartExpiryInsights": "Amamihe mmechi oge",
+"planFeatureCoverageBalance": "Nhazi mkpuchi",
+"planFeatureRecordStabilityTracking": "Nkwụsi ike rikọọd",
+
+"planFeatureUnlimitedRecords": "Rikọọd na-enweghị oke",
+"planFeatureUnlimitedCategories": "Ụdị na-enweghị oke",
+"planFeatureCustomSubcategories": "Obere ụdị omenala",
+"planFeatureMultipleRemindersPerRecord": "Ọtụtụ ncheta",
+"planFeatureAdvancedReminderTiming": "Oge ncheta dị elu",
+"planFeatureAutomaticFollowUps": "Ncheta akpaaka",
+
+"planFeatureEverythingInMonthly": "Ihe niile dị na kwa ọnwa",
+"planFeatureSavePercentComparedToMonthly": "Chekwaa {percent}% ma e jiri ya tụnyere kwa ọnwa",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Uru kacha mma ogologo oge",
+"editorReminderLabel": "Ncheta",
+"editorReminderSelectOptional": "Họrọ ncheta (nhọpụta)",
+"editorReminderOnExpiry": "N'ụbọchị ngwụcha",
+"editorReminderDaysBefore": "{days} ụbọchị tupu ngwụcha",
+"editorFreeItemsCount": "Ndekọ efu: {used}/{limit}",
+"editorExpiryPastWarning": "Ụbọchị ngwụcha agafeela.",
+"editorExpiryTodayWarning": "Ndekọ a ga-agwụ taa.",
+"editorErrorExpiryPast": "Ụbọchị ngwụcha agaghị abụ n’oge gara aga.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Nghọta nke taa",
+"tutorialBannerTitle": "Nduzi ngwa ngwa",
+"tutorialBannerBody": "Mụta ebe ị ga-achọ, otu esi tinye ndekọ na nghọta ha n’otu nkeji.",
+"tutorialBannerStart": "Malite nkuzi",
+"tutorialBannerDismiss": "Ọ bụghị ugbu a",
+"authErrorUserDisabled": "E mechiela akaụntụ a.",
+"authErrorNetwork": "Nsogbu netwọk. Gbalịa ọzọ.",
+"authErrorTooManyRequests": "Nnwale buru ibu. Gbalịa mgbe e mesịrị.",
+"authErrorSignInFailed": "Nbanye dara. Gbalịa ọzọ.",
+"ok": "OK",
+"snackPremiumEnabled": "A kwadoro Premium",
+"snackPremiumRestored": "E weghachiri Premium",
+"passwordNeedLower": "Ga-enwe mkpụrụedemede nta",
+"passwordNeedUpper": "Ga-enwe mkpụrụedemede ukwu",
+"passwordNeedNumber": "Ga-enwe ọnụọgụ",
+"passwordNeedSymbol": "Ga-enwe akara",
+"confirmIdentityTitle": "Kwado njirimara",
+"confirm": "Kwado",
+"profile_sign_out_title": "Pụọ",
+"profile_sign_out_subtitle": "Pụọ na Vaultara na ngwaọrụ a",
+"profile_sign_out_confirm_title": "Ị ga-apụ?",
+"profile_sign_out_confirm_body": "Ị ga-abanye ọzọ iji nweta akaụntụ gị.",
+"profile_sign_out_action": "Pụọ",
+"todayInsightsAudioHint": "Họrọ audio? Jiri akara olu.",
+"category2Label": "Otu",
+"enable2BiometricsBody": "Jiri mkpịsị aka chekwaa akaụntụ Vaultara gị.",
+"snackNotificationsDisabled": "A gbanyụrụ ọkwa ngosi. Gbanwuo ha ka ị nweta ncheta.",
+"openSettings": "Mepee ntọala",
+
+"reminderOnExpiryTitle": "Na-agwụ taa",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Ndewo {firstName}, \"{itemName}\" na-agwụ taa.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Ụdị n’efu: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Na-egosi ọnụ ọgụgụ ụdị n’efu ejirila n’ime oke n’efu.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Tinye ndetu (nhọrọ)",
+"apply": "Tinye",
+"smartInsightExpiresTodayHeading": "Na-agwụ Taa",
+"smartInsightExpiresTodaySingleBody": "{name} na-agwụ taa. Mee ihe ugbu a ka ọ bụrụ nke ọhụrụ.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} na akwụkwọ {extra} ọzọ na-agwụ taa.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Ọ Chọrọ Nlebara Anya Gị",
+"smartInsightSilentRiskBody": "{name} ga-agwụ n'ime ụbọchị {days} ma enweghị ncheta etinyere. Lelee na nkọwa ya ka ziri ezi.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Ọtụtụ Mmeghari Dị Nso",
+"smartInsightRenewalTwinBodyTwo": "{a} na {b} ga-agwụ n'ime izu atọ. Mee atụmatụ tupu oge eruo.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, na {c} ga-agwụ n'ime izu atọ. Mee atụmatụ tupu oge eruo.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b}, na akwụkwọ {extra} ọzọ ga-agwụ n'ime izu atọ. Mee atụmatụ tupu oge eruo.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Otu Na-abịa",
+"smartInsightClusterBody": "Akwụkwọ {count} n'ụdị {category} ga-agwụ n'ime ọnwa abụọ na-abịa.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Oge Jụụ Dị N'ihu",
+"smartInsightQuietPeriodBody": "Ọ dịghị ihe ga-agwụ n'ime ụbọchị {days} na-abịa. Mmeghari ọzọ bụ {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Ihe Nile Dị N'usoro",
+"smartInsightAllCaughtUpBody": "Mmebi oge {count} niile nwere ncheta. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Ihe niile dị n'usoro. Ọ dịghị ihe chọrọ nlebara anya gị ugbu a.",
+"smartInsightNoRecordsHeading": "Tinye Ndekọ Mbụ Gị",
+"smartInsightNoRecordsBody": "Malite ịdekọ akwụkwọ gị, Vaultara ga-egosi nghọta ndị nwere ọgụgụ isi ebe a.",
+"expiryTimelineTitle": "Usoro oge ngwụcha",
+"expiryTimelineSubtitle": "Pịa ọnwa iji hụ ndekọ ndị na-akwụsị n'ọnwa ahụ",
+"expiryTimelineDetailCount": "{count, plural, =1{Ndekọ 1} other{Ndekọ {count}}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Na-abịa",
+"summaryUpcomingCaption": "N'ime ụbọchị 30",
+"summaryUrgentTitle": "Ngwa Ngwa",
+"summaryUrgentCaption": "N'ime ụbọchị 7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

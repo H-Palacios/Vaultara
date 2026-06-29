@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoryItem {
+  final String key; 
   final String label;
   final IconData? icon;
   final List<String> subcategories;
@@ -8,6 +9,7 @@ class CategoryItem {
   final Set<String> builtInSubcategories;
 
   CategoryItem({
+    required this.key, 
     required this.label,
     this.icon,
     List<String>? subcategories,
@@ -18,3 +20,4 @@ class CategoryItem {
             builtInSubcategories ?? Set<String>.from(subcategories ?? <String>[]),
         subSubcategories = subSubcategories ?? <String, List<String>>{};
 }
+

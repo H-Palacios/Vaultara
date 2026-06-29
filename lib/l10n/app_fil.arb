@@ -103,5 +103,797 @@
   "groupErrorSymbols": "Hindi maaaring may simbolo ang pangalan",
   "groupErrorNumbers": "Hindi maaaring may numero ang pangalan",
 
-  "createGroup": "Gumawa"
+  "createGroup": "Gumawa",
+
+
+  "registerTitle": "Gumawa ng account",
+
+  "firstNameLabel": "Pangalan",
+  "firstNameHint": "Ilagay ang pangalan",
+  "errorFirstName": "Kailangan ang pangalan",
+
+  "lastNameLabel": "Apelyido",
+  "lastNameHint": "Ilagay ang apelyido",
+  "errorLastName": "Kailangan ang apelyido",
+
+  "emailLabel": "Email",
+  "errorEmailInvalid": "Maglagay ng wastong email.",
+  "errorEmailInUse": "Ang email na ito ay naka-link na sa isang Vaultara account.",
+
+  "passwordLabel": "Password",
+  "passwordHelper": "Hindi bababa sa 8 karakter na may halo-halong uri.",
+
+  "passwordTooShort": "Masyadong maikli",
+  "passwordTooWeak": "Masyadong mahina",
+  "passwordMedium": "Katamtaman",
+  "passwordStrong": "Malakas",
+  "errorPasswordLength": "Ang password ay dapat may hindi bababa sa 8 karakter.",
+  "errorPasswordWeak": "Pumili ng mas malakas na password.",
+
+  "errorGeneric": "Hindi nagtagumpay ang pagrehistro. Subukan muli.",
+
+  "createAccount": "Gumawa ng account",
+  "appName": "Vaultara",
+"authTagline": "Ang iyong personal na sentro para sa mga pasaporte, lisensya, card at iba pang mahahalagang bagay",
+"tabSignIn": "Mag sign in",
+"tabCreateAccount": "Gumawa ng account",
+"signInFooterText": "Mag sign in upang ma access ang iyong personal na Vaultara space at mapanatiling kontrolado ang bawat renewal",
+"createAccountFooterText": "Gumawa ng Vaultara account upang ma backup ang iyong mahahalagang paalala at ma access ang mga ito anumang oras",
+  "emailNotFound": "Maling email.\nWalang Vaultara account na may ganitong email",
+  "incorrectPassword": "Maling password",
+  "emailLabel": "Email address",
+  "emailRequired": "Kailangan ang iyong email",
+"passwordRequired": "Kailangan ang iyong password",
+"registerPasswordHint": "Ilagay ang password",
+"loginPasswordHint": "Ilagay ang iyong password",
+"emailHint": "Ilagay ang iyong email address",
+  "passwordLabel": "Password",
+  "signIn": "Mag-sign in",
+"categoryPersonalIdentification": "Personal na Pagkakakilanlan",
+  "categoryDrivingAndVehicles": "Pagmamaneho at mga Sasakyan",
+  "categoryTravelAndImmigration": "Paglalakbay at Imigrasyon",
+  "categoryBankingAndCards": "Pagbabangko at mga Card",
+  "categoryInsuranceAndCover": "Seguro at Proteksyon",
+  "categoryHealthAndMedical": "Kalusugan at Medikal",
+  "categoryWorkAndProfessional": "Trabaho at Propesyonal",
+  "categoryPropertyAndHousing": "Ari-arian at Pabahay",
+  "categoryHouseholdAndUtilities": "Sambahayan at mga Serbisyo",
+
+  "subcategoryPassports": "Mga Pasaporte",
+  "subcategoryIdCards": "Mga ID Card",
+  "subcategoryResidencePermits": "Mga Permit sa Paninirahan",
+
+  "subcategoryDrivingLicences": "Mga Lisensya sa Pagmamaneho",
+  "subcategoryVehicleRegistrations": "Mga Rehistro ng Sasakyan",
+  "subcategoryRoadworthyCertificates": "Mga Sertipiko ng Kaligtasan ng Sasakyan",
+  "subcategoryVehicleInspectionCertificates": "Mga Sertipiko ng Inspeksyon ng Sasakyan",
+
+  "subcategoryVisas": "Mga Visa",
+  "subcategoryStudyPermits": "Mga Permit sa Pag-aaral",
+  "subcategoryWorkPermits": "Mga Permit sa Trabaho",
+  "subcategoryTravelInsuranceDocuments": "Mga Dokumento ng Seguro sa Paglalakbay",
+
+  "subcategoryDebitAndCreditCards": "Mga Debit at Credit Card",
+  "subcategoryStoreCards": "Mga Store Card",
+  "subcategoryFuelCards": "Mga Fuel Card",
+
+  "subcategoryVehicleInsurances": "Mga Seguro ng Sasakyan",
+  "subcategoryPropertyInsurances": "Mga Seguro ng Ari-arian",
+  "subcategoryLifeInsurances": "Mga Seguro sa Buhay",
+  "subcategoryHealthInsurances": "Mga Seguro sa Kalusugan",
+  "subcategoryTravelInsurances": "Mga Seguro sa Paglalakbay",
+
+  "subcategoryMedicalPrescriptions": "Mga Reseta Medikal",
+  "subcategoryOpticalPrescriptions": "Mga Reseta sa Mata",
+  "subcategoryMedicalCertificates": "Mga Sertipikong Medikal",
+
+  "subcategoryProfessionalLicences": "Mga Propesyonal na Lisensya",
+  "subcategoryProfessionalRegistrations": "Mga Propesyonal na Rehistrasyon",
+  "subcategoryIndustryRegistrations": "Mga Rehistrasyon sa Industriya",
+  "subcategoryWorkAccessCards": "Mga Access Card sa Trabaho",
+
+  "subcategoryLeaseAgreements": "Mga Kasunduan sa Pag-upa",
+  "subcategoryAccessCardsAndTags": "Mga Access Card at Tag",
+  "subcategoryParkingPermits": "Mga Permit sa Paradahan",
+  "subcategorySecurityAccessPermits": "Mga Permit sa Access sa Seguridad",
+
+  "subcategoryElectricityAccounts": "Mga Account sa Kuryente",
+  "subcategoryWaterAccounts": "Mga Account sa Tubig",
+  "subcategoryInternetContracts": "Mga Kontrata sa Internet",
+  "subcategorySecurityServiceContracts": "Mga Kontrata ng Serbisyo sa Seguridad",
+  "searchCategories": "Maghanap ng mga kategorya",
+  "filterAll": "Lahat",
+  "filterPreset": "Naka-preset",
+  "filterCustom": "Custom",
+  "addCategoryTitle": "Magdagdag ng kategorya",
+  "customLabel": "Custom",
+  "subcategoriesLabel": "mga subcategory",
+  "itemsLabel": "mga item",
+  "itemsExpiring": "{count} item na mag-e-expire sa loob ng {days} araw",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Mga naka-pin na mahalaga",
+  "pinnedHint": "I-pin ang mga kategoryang madalas mong binubuksan upang manatili sila sa itaas.",
+  "noCategoriesFound": "Walang nakitang mga kategorya",
+  "searchGroups": "Maghanap ng mga grupo",
+  "addGroupTitle": "Magdagdag ng grupo",
+  "basicPlanGroupInfo": "Ikaw ay nasa Basic plan.\nMaaari mong tingnan ang mga pre-set na grupo sa kategoryang ito.\nMag-upgrade sa Premium upang makagawa ng sarili mong mga grupo.",
+  "groupDeleted": "Na-delete ang grupo",
+  "undo": "I-UNDO",
+  "groupStats": "{items} item • {expiring} mag-e-expire sa loob ng {days} araw",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "I-tap upang magdagdag at subaybayan ang mga item sa grupong ito.",
+  "itemsInGroup": "Mga item sa grupong ito",
+  "itemsInGroupHint": "Subaybayan ang bawat mahalagang item kasama ang petsa ng pag-expire upang ma-renew ito sa tamang oras.",
+  "searchItems": "Maghanap ng mga item",
+  "filterAll": "Lahat",
+  "filterExpiringWithin": "Mag-e-expire sa loob ng {days} araw",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Nag-expire na",
+  "addItem": "Magdagdag ng item",
+  "noItemsYet": "Wala pang mga item.",
+
+  "statusExpired": "Nag-expire na",
+  "statusExpiresToday": "Mag-e-expire ngayon",
+  "statusExpiresInOneDay": "Mag-e-expire sa loob ng 1 araw",
+  "statusExpiresInDays": "Mag-e-expire sa loob ng {days} araw",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Balido",
+
+  "deleteCategoryTitle": "Tanggalin ang kategorya",
+  "deleteCategoryMessage": "Sigurado ka bang nais mong tanggalin ang kategoryang \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Tanggalin ang grupo",
+  "deleteGroupMessage": "Sigurado ka bang nais mong tanggalin ang grupong \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Tanggalin ang item",
+  "deleteItemMessage": "Sigurado ka bang nais mong tanggalin ang \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Kanselahin",
+  "delete": "Tanggalin",
+  "homeWelcomeTitle": "Maligayang pagdating",
+
+  "homeWelcomeFirstTitle": "Maligayang pagdating, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Maligayang pagbabalik, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Tinutulungan ka ng Vaultara na subaybayan ang mahahalagang petsa ng pag-expire upang walang makaligtaan.",
+
+  "homeWelcomeSubtitleFirst":
+    "Masaya kaming makita ka dito. Tinutulungan ka ng Vaultara na manatiling organisado sa pamamagitan ng pag-iingat ng mahahalagang petsa at tala sa isang ligtas na lugar.",
+
+  "homeWelcomeSubtitleBack":
+    "Masaya kaming makita kang muli. Nandito ang Vaultara anumang oras na nais mong suriin ang iyong mahahalagang petsa at tala.",
+    "insightEmptyTitle": "Wala ka pang nadagdag",
+  "insightEmptyBody": "Kapag nagsimula kang mag-track ng mahahalagang petsa, tutulungan ka ng Vaultara na manatiling handa.",
+
+  "insightExpiresTodayTitle": "\"{name}\" ay mag-e-expire ngayon",
+  "insightExpiresTodayBody": "Isang mabilis na pag-check ay makakatulong panatilihing tama ang detalye.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" ay mag-e-expire bukas",
+  "insightExpiresTomorrowBody": "Ang pag-review ngayon ay makakatipid ng oras sa susunod.",
+
+  "insightExpiresSoonTitle": "\"{name}\" ay mag-e-expire sa {date}",
+  "insightExpiresSoonBody": "Mas maagang pag-asikaso ay mas nakakagaan ng pakiramdam.",
+
+  "insightNextExpiryTitle": "Ang susunod na expiry ay \"{name}\" sa {date}",
+  "insightNextExpiryBody": "Wala pang kailangang gawin sa ngayon.",
+
+  "insightClusteredTitle": "Maraming item ang mag-e-expire sa {month}",
+  "insightClusteredBody": "Ang sabayang pag-review ay makakatipid ng oras.",
+
+  "insightTopCategoryTitle": "Karamihan ng item ay nasa {category}",
+  "insightTopCategoryBody": "Dito ka makakakuha ng pinakamalaking benepisyo sa pag-aayos.",
+
+  "insightStableTitle": "Maayos ang lahat",
+  "insightStableBody": "Walang paparating na expiry na nangangailangan ng aksyon.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "Lahat ng item",
+"summaryAllCaption": "Sinusubaybayan sa Vaultara",
+"summarySoonTitle": "Malapit nang mag-expire",
+"summarySoonCaption": "Sa loob ng 30 araw",
+"summaryWeekTitle": "Ngayong linggo",
+"summaryWeekCaption": "Mag-e-expire sa loob ng 7 araw",
+"summaryExpiredTitle": "Expired",
+"summaryExpiredCaption": "Lampas na sa petsa ng expiration",
+"stabilityStableTitle": "Mukhang matatag ang lahat",
+"stabilityStableBody": "Walang ipinapakitang agarang o naiipong panganib ang iyong mga tala.",
+
+"stabilityDecliningTitle": "Humihina ang katatagan",
+"stabilityDecliningBody": "May ilang item na nag-expire na at may paparating pang iba.",
+
+"stabilityWeakenedTitle": "Humina ang katatagan",
+"stabilityWeakenedBody": "Ang pagkakaroon ng mga expired na tala ay nagpapababa ng pangkalahatang pagiging maaasahan.",
+
+"stabilityPressureTitle": "Tumataas ang presyon",
+"stabilityPressureBody": "May ilang tala na mangangailangan ng pansin sa lalong madaling panahon upang mapanatili ang katatagan.",
+"editorNotes": "Mga Tala",
+"notesHint": "Ilagay ng tala",
+"editorReminderTitle": "Paalala",
+"editorReminderNone": "Walang paalala",
+"editorReminderOnExpiry": "Sa petsa ng pag-expire",
+"editorReminder7Days": "7 araw bago mag-expire",
+"editorReminder30Days": "30 araw bago mag-expire",
+"editorReminderCustom": "Pasadya",
+"daysBeforeExpiry": "araw bago mag-expire",
+"reminderStage0Title": "Paalala sa pag-expire",
+"reminderStage0Body": "{firstName}, mag-e-expire ang {itemName} sa loob ng {days} araw.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Follow-up na paalala",
+"reminderStage1Body": "{firstName}, hindi pa naa-update ang {itemName}.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Papalapit ang pag-expire",
+"reminderStage2Body": "Papalapit na ang expiration ng {itemName}.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Huling paalala",
+"reminderFinalBody": "{firstName}, pakia-update ang {itemName} ngayon.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Balanse ng saklaw",
+"coverageAllRepresented": "May mga item ang iyong mga tala sa lahat ng kategorya.",
+"coverageMissingNamed": "Walang natagpuang tala sa {count} kategorya: {names}.",
+"coverageMissingSummary": "Wala kang nadagdag na anumang rekord sa {count} kategorya, kabilang ang {names} at {remaining} pang iba.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Gumamit ng password",
+"signInWithBiometrics": "Mag-sign in gamit ang biometrics",
+"enableBiometricsTitle": "I-enable ang biometric security",
+"enableBiometricsBody": "Gumamit ng fingerprint o face recognition para protektahan ang Vaultara.",
+"enableBiometricsReason": "I-enable ang biometric unlock para sa Vaultara.",
+"notNow": "Hindi ngayon",
+"useBiometrics": "Gumamit ng biometrics",
+"recordsCalendarIntro":
+  "Piliin kung paano mo nais tingnan ang mga petsa ng pag-expire:\n\n• I-type kung ilang araw mula ngayon ang nais mong tingnan.\n• O pumili ng eksaktong petsa sa kalendaryo.\n\nIpapakita ng Vaultara kung aling mga rekord ang mag-e-expire sa araw na iyon.",
+
+"showingRecordsRelative": "Ipinapakita ang mga rekord na mag-e-expire {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "Ipinapakita ang mga rekord na mag-e-expire sa napiling petsa",
+
+"noRecordsOnDate":
+  "Walang mga rekord na nakatakdang mag-expire sa araw na iyon.",
+
+"recordEditorAddTitle": "Magdagdag ng rekord",
+"recordEditorEditTitle": "I-edit ang rekord",
+
+"editorRecordName": "Pangalan ng rekord",
+"editorRecordNameHint": "Ilagay ang pangalan ng rekord",
+"recordEditorErrorName": "Kinakailangan ang pangalan ng rekord",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "I-tap upang magdagdag at subaybayan ang mga rekord sa grupong ito.",
+
+"recordsInGroup": "Mga rekord sa grupong ito",
+
+"recordsInGroupHint":
+  "Subaybayan ang bawat mahalagang rekord kasama ang petsa ng pag-expire upang ma-update ito sa tamang oras.",
+
+"searchRecords": "Maghanap ng mga rekord",
+"addRecord": "Magdagdag ng rekord",
+"noRecordsYet": "Wala pang mga rekord.",
+
+"deleteRecordTitle": "Tanggalin ang rekord",
+
+"recordsInsightClusteredTitle":
+  "Maraming rekord ang mag-e-expire sa paligid ng {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Karamihan sa iyong mga rekord ay nasa ilalim ng {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Lahat ng rekord",
+
+"recordsStabilityDecliningBody":
+  "May ilang rekord na nag-expire na at may paparating pang iba.",
+
+"recordsCoverageAllRepresented":
+  "Ang iyong mga rekord ay saklaw ang lahat ng kategorya.",
+
+"recordReminderStage0Body":
+  "{firstName}, ang iyong {recordName} ay mag-e-expire sa loob ng {days} araw.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, hindi pa na-a-update ang iyong {recordName}.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Papalapit na ang petsa ng pag-expire ng {recordName}.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, pakipag-update na ang {recordName} ngayon.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Wala pang mga grupo",
+"recordsExpiring": "{count, plural, one {1 rekord na mag-e-expire sa {days} araw} other {{count} rekord na mag-e-expire sa {days} araw}}",
+"recordsGroupStats": "{records, plural, one {1 rekord} other {{records} rekord}} • {expiring} sa loob ng {days} araw",
+"groupLabel": "{count, plural, one {{count} grupo} other {{count} grupo}}",
+"recordsLabel": "{count, plural, one {{count} tala} other {{count} mga tala}}",
+"forgotPassword": "Nakalimutan ang password?",
+  "forgotPasswordTitle": "I-reset ang password",
+  "forgotPasswordBody": "Ilagay ang iyong email address at magpapadala kami ng link para i-reset ang iyong password.",
+  "sendResetLink": "Ipadala ang link",
+  "passwordResetEmailSent": "Naipadala na ang email para sa pag-reset ng password.",
+  "verifyEmailToContinue": "Pakiberipika muna ang iyong email address bago mag-sign in",
+  "changeEmailTitle": "Baguhin ang email address",
+"newEmailHint": "Ilagay ang iyong bagong email",
+"sendVerificationEmail": "Ipadala ang verification email",
+"deleteAccountTitle": "Tanggalin ang account",
+"deleteAccountWarning": "Aalisin ng aksyong ito ang iyong account at lahat ng naka-save na data nang tuluyan.\nHindi na ito maibabalik.",
+"deleteAccountConfirm": "Permanenteng tanggalin ang account",
+"supportTitle": "Suporta",
+"supportSubtitle": "Makipag-ugnayan sa amin kung kailangan mo ng tulong o may mga tanong.",
+"supportEmailSubject": "Kahilingan ng Suporta ng Vaultara",
+"supportEmailError": "Hindi mabuksan ang email app.",
+"passwordResetEmailFailed": "Hindi maipadala ang email para sa pag-reset ng password.",
+"loggedInPasswordResetBody": "Magpapadala kami ng link para sa pag-reset ng password sa:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Pamamahala ng Account",
+"changeEmailTitle": "Baguhin ang email address",
+"changeEmailSubtitle": "I-update ang email na naka-link sa iyong account.",
+"changePasswordTitle": "Baguhin ang password",
+"changePasswordSubtitle": "Magpapadala kami ng email na may link upang ligtas mong mapalitan ang password.",
+"deleteAccountTitle": "Tanggalin ang account",
+"deleteAccountSubtitle": "Permanenteng alisin ang iyong Vaultara account.",
+"verifyEmailTitle": "I-verify ang iyong email",
+"verifyEmailBody": "Nagpadala kami ng verification email sa iyong inbox. Buksan ito at kumpirmahin ang iyong email address, pagkatapos ay bumalik dito upang magpatuloy.",
+"verifyEmailConfirmedButton": "Na-verify ko na ang aking email",
+"verifyEmailResendButton": "Ipadala muli ang verification email",
+"verifyEmailSending": "Ipinapadala...",
+"biometricAuthReason": "Magpatunay upang ma-access ang iyong account",
+"navHome": "Home",
+"navCategories": "Kategorya",
+"navInsights": "Insights",
+"navCalendar": "Kalendaryo",
+"tutorialHomeSearch": "Gamitin ang search bar para mabilis na mahanap ang anumang rekord na sinusubaybayan mo.",
+"tutorialHomeFab": "Idagdag ang iyong unang rekord dito.\nPiliin kung saan ito kabilang, magdagdag ng opsyonal na tala, at pumili ng petsa ng pag-expire.",
+"tutorialHomeSummary": "Habang nagdadagdag ka ng mga rekord, tinutulungan ka ng bahaging ito na makita ang mga papalapit o lumampas na sa petsa.",
+"tutorialHomeInsight": "Ipinapakita ng matalinong insight na ito ang mga pattern at paparating na pag-expire.\nMaaari mong pindutin ang icon ng speaker upang pakinggan ito.",
+"tutorialHomeCoverage": "Ipinapakita ng coverage balance kung gaano kapantay ang pagkakahati ng iyong mga rekord.\nMas mataas na balanse ay nangangahulugang mas kaunting kakulangan.",
+"tutorialHomeStability": "Ipinapakita ng stability kung gaano kaaasahan ang iyong mga rekord sa paglipas ng panahon.\nAng mga expired at paparating na rekord ay maaaring magpababa ng stability.",
+"tutorialCancel": "Kanselahin",
+"tutorialNext": "Susunod",
+"tutorialEnd": "Tapusin ang tutorial",
+"softDeleteCategory": "Kategorya",
+"softDeleteGroup": "Grupo",
+"softDeleteRecord": "Rekord",
+"softDeleteTitle": "Ilipat ang {type} sa Kamakailang Tinanggal",
+"softDeleteMessage": "Ang {type} \"{name}\" ay ililipat sa Kamakailang Tinanggal.\n\nMaaari mo itong ibalik sa loob ng 30 araw. Pagkatapos ay permanenteng matatanggal.",
+"softDeleteMove": "Ilipat",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Kamakailang tinanggal",
+  "categories": "Mga kategorya",
+  "groups": "Mga grupo",
+  "records": "Mga tala",
+  "restore": "Ibalik",
+  "deletePermanently": "Permanenteng tanggalin",
+
+  "recentlyDeletedBanner": "Ang mga tinanggal na {type} ay itinatago sa loob ng 30 araw.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Hanapin ang tinanggal na {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Wala pang tinanggal na {type}",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "I-tap ang kategorya para makita ang mga grupo nito at pamahalaan ang iyong mga tala.",
+  "groupsHint": "Inaayos ng mga grupo ang iyong mga rekord sa kategoryang ito. I-tap ang grupo upang pamahalaan ang mga rekord.",
+  "notLoggedIn": "Hindi naka-log in",
+"recordsInsideGroupHint": "Ito ang mga record sa loob ng grupong ito.",
+"snackMovedToRecentlyDeleted": "\"{name}\" inilipat sa Kamakailang Tinanggal",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" matagumpay na natanggal",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" matagumpay na na-update",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" matagumpay na naidagdag",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" matagumpay na naibalik",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Naabot na ang libreng limit ({current}/{limit}). Mag-upgrade para makapagdagdag pa.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "Hanapin ang lahat ng tala",
+"globalSearchHint": "I-type ang pangalan, kategorya o grupo",
+"globalSearchNoMatches": "Walang talang tumutugma sa iyong paghahanap.",
+"snackNoRecordsToSearch": "Walang mga tala para hanapin. Magdagdag ng ilang tala at awtomatikong iindeks ng Vaultara ang mga ito.",
+"recoveryCentreTitle": "Sentro ng Pagbawi",
+"recoveryCentreSubtitle": "Ibalik o permanenteng tanggalin ang mga inalis na rekord.",
+"plan_premium": "Premium",
+"plan_free": "Libre",
+"profile_app_settings_title": "Mga setting ng app",
+"profile_privacy_security_title": "Privacy at seguridad",
+"profile_biometric_on": "Naka-on ang biometric lock sa device na ito.",
+"profile_biometric_off": "Naka-off ang biometric lock.",
+"profile_biometric_enable_reason": "Kumpirmahin ang iyong pagkakakilanlan upang i-on ang biometric lock.",
+"profile_biometric_disable_reason": "Kumpirmahin ang iyong pagkakakilanlan upang i-off ang biometric lock.",
+"profile_account_management_title": "Pamamahala ng account",
+"profile_account_management_subtitle": "Baguhin ang email, password, o tanggalin ang account.",
+"profile_premium_active_title": "Aktibo ang Premium",
+"profile_premium_upgrade_title": "Mag-upgrade sa Premium",
+"profile_premium_active_subtitle": "Naka-unlock ang mga advanced na paalala.",
+"profile_premium_upgrade_subtitle": "I-unlock ang mga advanced na paalala at walang limitasyong organisasyon.",
+"profile_manage_cancel_hint": "Pamahalaan o kanselahin anumang oras sa Google Play.",
+"profile_manage_subscription_button": "Pamahalaan ang subscription",
+"plansTitle": "Pumili ng plano",
+"plansTrialBanner": "Magsimula sa 7-araw na libreng trial.\nMaaaring kanselahin anumang oras.",
+"plansLoading": "Naglo-load…",
+"plansStartFreeTrial": "Simulan nang libre",
+"plansNoChargeTodayFooter": "7 araw libre · Walang bayad ngayon",
+
+"planFreeTitle": "Libre",
+"planFreeSubtitle": "Para magsimula",
+"planPremiumMonthlyTitle": "Premium buwanan",
+"planPremiumYearlyTitle": "Premium taun-taon",
+"planPerMonth": "buwan-buwan",
+"planPerYear": "taon-taon",
+
+"planBadgeCurrent": "Kasalukuyang plano",
+"planBadgePopular": "Sikat",
+"planBadgeBestValue": "Pinakamahusay",
+
+"planYouAreOnThisPlan": "Ito ang kasalukuyan mong plano.",
+
+"planFeatureUpToRecords": "Hanggang {count} tala",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Custom na kategorya (hanggang {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Preset na subcategory",
+"planFeatureCloudStorage": "Cloud storage",
+"planFeatureSmartExpiryInsights": "Smart expiry insights",
+"planFeatureCoverageBalance": "Balanse ng kategorya",
+"planFeatureRecordStabilityTracking": "Stability ng tala",
+
+"planFeatureUnlimitedRecords": "Walang limit na tala",
+"planFeatureUnlimitedCategories": "Walang limit na kategorya",
+"planFeatureCustomSubcategories": "Custom na subcategory",
+"planFeatureMultipleRemindersPerRecord": "Maraming paalala",
+"planFeatureAdvancedReminderTiming": "Advanced na timing",
+"planFeatureAutomaticFollowUps": "Automatic follow-ups",
+
+"planFeatureEverythingInMonthly": "Lahat ng nasa buwanan",
+"planFeatureSavePercentComparedToMonthly": "Makatipid ng {percent}% kumpara sa buwanan",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Pinakamainam sa pangmatagalan",
+"editorReminderLabel": "Paalala",
+"editorReminderSelectOptional": "Pumili ng paalala (opsyonal)",
+"editorReminderOnExpiry": "Sa araw ng pag-expire",
+"editorReminderDaysBefore": "{days} araw bago mag-expire",
+"editorFreeItemsCount": "Libreng tala: {used}/{limit}",
+"editorExpiryPastWarning": "Lumipas na ang petsa ng pag-expire.",
+"editorExpiryTodayWarning": "Mag-e-expire ang record na ito ngayon.",
+"editorErrorExpiryPast": "Hindi puwedeng nasa nakaraan ang petsa ng pag-expire.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Mga pananaw ngayong araw",
+"tutorialBannerTitle": "Mabilis na gabay",
+"tutorialBannerBody": "Matutunan kung saan maghanap, paano magdagdag ng tala, at ano ang ibig sabihin ng insights sa loob ng isang minuto.",
+"tutorialBannerStart": "Simulan ang tutorial",
+"tutorialBannerDismiss": "Hindi muna",
+"authErrorUserDisabled": "Hindi pinagana ang account na ito.",
+"authErrorNetwork": "Error sa network. Subukan muli.",
+"authErrorTooManyRequests": "Masyadong maraming pagsubok. Subukan mamaya.",
+"authErrorSignInFailed": "Nabigo ang pag-sign in. Subukan muli.",
+"ok": "OK",
+"snackPremiumEnabled": "Na-activate ang Premium",
+"snackPremiumRestored": "Naibalik ang Premium",
+"passwordNeedLower": "Dapat may maliit na titik",
+"passwordNeedUpper": "Dapat may malaking titik",
+"passwordNeedNumber": "Dapat may numero",
+"passwordNeedSymbol": "Dapat may simbolo",
+"confirmIdentityTitle": "Kumpirmahin ang pagkakakilanlan",
+"confirm": "Kumpirmahin",
+"profile_sign_out_title": "Mag-sign out",
+"profile_sign_out_subtitle": "Mag-sign out sa Vaultara sa device na ito",
+"profile_sign_out_confirm_title": "Mag-sign out?",
+"profile_sign_out_confirm_body": "Kailangan mong mag-sign in muli para ma-access ang iyong account.",
+"profile_sign_out_action": "Mag-sign out",
+"todayInsightsAudioHint": "Mas gusto ang audio? Gamitin ang speaker icon.",
+"category2Label": "Kategorya",
+"enable2BiometricsBody": "Gamitin ang fingerprint upang protektahan ang iyong Vaultara account.",
+"snackNotificationsDisabled": "Naka-off ang mga notification. I-on ang mga ito para makatanggap ng mga paalala.",
+"openSettings": "Buksan ang mga setting",
+
+"reminderOnExpiryTitle": "Mag-e-expire ngayon",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hi {firstName}, mag-e-expire ngayon ang \"{itemName}\".",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Libreng kategorya: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Ipinapakita kung ilang libreng kategorya ang nagamit mula sa libreng limit.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Magdagdag ng tala (opsyonal)",
+"apply": "Ilapat",
+"smartInsightExpiresTodayHeading": "Mag-eexpire Ngayon",
+"smartInsightExpiresTodaySingleBody": "Mag-eexpire ang {name} ngayon. Kumilos na para mapanatili itong updated.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} at 1 iba pang dokumento ay mag-eexpire ngayon.} other{{names} at {extra} iba pang dokumento ay mag-eexpire ngayon.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Kailangan Ng Iyong Pansin",
+"smartInsightSilentRiskBody": "{days, plural, =1{Mag-eexpire ang {name} sa loob ng 1 araw at walang nakatakdang paalala. Siguraduhing tama pa rin ang mga detalye.} other{Mag-eexpire ang {name} sa loob ng {days} araw at walang nakatakdang paalala. Siguraduhing tama pa rin ang mga detalye.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Maraming Pag-renew Na Magkalapit",
+"smartInsightRenewalTwinBodyTwo": "Mag-eexpire ang {a} at {b} sa loob ng tatlong linggo sa isa't isa. Magplano nang maaga.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "Mag-eexpire ang {a}, {b}, at {c} lahat sa loob ng tatlong linggo. Magplano nang maaga.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{Mag-eexpire ang {a}, {b}, at 1 iba pang dokumento sa loob ng tatlong linggo. Magplano nang maaga.} other{Mag-eexpire ang {a}, {b}, at {extra} iba pang dokumento sa loob ng tatlong linggo. Magplano nang maaga.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Paparating Na Grupo",
+"smartInsightClusterBody": "{count, plural, =1{1 dokumento sa {category} ay mag-eexpire sa susunod na dalawang buwan. Isaalang-alang na pangasiwaan ang mga ito nang magkasama.} other{{count} dokumento sa {category} ay mag-eexpire sa susunod na dalawang buwan. Isaalang-alang na pangasiwaan ang mga ito nang magkasama.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Tahimik Na Panahon Sa Hinaharap",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Walang mag-eexpire sa susunod na 1 araw. Ang susunod mong pag-renew ay sa {firstDate}.} other{Walang mag-eexpire sa susunod na {days} araw. Ang susunod mong pag-renew ay sa {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Lahat Updated",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 paparating na pag-expire ay sakop ng mga paalala. Wala nang iba pang nangangailangan ng iyong pansin.} other{{count} paparating na pag-expire ay sakop ng mga paalala. Wala nang iba pang nangangailangan ng iyong pansin.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Lahat updated. Walang nangangailangan ng iyong pansin ngayon.",
+"smartInsightNoRecordsHeading": "Idagdag Ang Iyong Unang Record",
+"smartInsightNoRecordsBody": "Simulang subaybayan ang iyong mga dokumento at magpapakita ang Vaultara ng matatalinong insight dito.",
+"expiryTimelineTitle": "Timeline ng pag-expire",
+"expiryTimelineSubtitle": "I-tap ang isang buwan para makita ang mga record na mag-eexpire sa buwang iyon",
+"expiryTimelineDetailCount": "{count, plural, =1{1 record} other{{count} record}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Nalalapit",
+"summaryUpcomingCaption": "Sa loob ng 30 araw",
+"summaryUrgentTitle": "Agarang Asikasuhin",
+"summaryUrgentCaption": "Sa loob ng 7 araw"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

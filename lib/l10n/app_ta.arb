@@ -3,14 +3,13 @@
 
   "expiryCalendarTitle": "காலாவதி நாட்காட்டி",
 
-  "calendarIntro":
-    "காலாவதிகளை பார்க்கும் முறையைத் தேர்ந்தெடுக்கவும்:\n\n• இன்று முதல் நாட்களின் எண்ணிக்கையை உள்ளிடவும்.\n• அல்லது நாட்காட்டியில் இருந்து ஒரு குறிப்பிட்ட தேதியைத் தேர்ந்தெடுக்கவும்.\n\nVaultara அந்த நாளில் காலாவதியாகும் பொருட்களை காட்டுகிறது.",
+  "calendarIntro": "காலாவதிகளை பார்க்கும் முறையைத் தேர்ந்தெடுக்கவும்:\n\n• இன்று முதல் எத்தனை நாட்கள் முன்னோக்கி பார்க்க விரும்புகிறீர்கள் என்பதை உள்ளிடவும்.\n• அல்லது நாட்காட்டியில் இருந்து ஒரு துல்லியமான தேதியைத் தேர்ந்தெடுக்கவும்.\n\nVaultara அந்த நாளில் காலாவதியாகும் பொருட்களை காட்டும்.",
 
   "daysFromTodayLabel": "இன்றிலிருந்து நாட்கள்",
-  "daysFromTodayHint": "உதாரணம் 0, 1, 7, 30",
+  "daysFromTodayHint": "உதாரணமாக 0, 1, 7, 30",
 
   "apply": "பயன்படுத்து",
-  "pickDateOnCalendar": "நாட்காட்டியில் தேதி தேர்வு செய்",
+  "pickDateOnCalendar": "நாட்காட்டியில் தேதியைத் தேர்ந்தெடு",
 
   "today": "இன்று",
   "tomorrow": "நாளை",
@@ -19,40 +18,44 @@
 
   "inDays": "{days} நாட்களில்",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
+    "placeholders": {
+      "days": { "type": "int" }
+    }
   },
 
-  "enterDaysError": "நாட்களின் எண்ணிக்கை அவசியம்",
-  "invalidDaysError": "சரியான நாட்களின் எண்ணிக்கையை உள்ளிடவும் (0 அல்லது அதற்கு மேல்)",
+  "enterDaysError": "நாட்களின் எண்ணிக்கையை உள்ளிடவும்.",
+  "invalidDaysError": "சரியான நாட்களின் எண்ணிக்கையை உள்ளிடவும் (0 அல்லது அதற்கு மேல்).",
 
-  "showingItemsRelative": "{time} காலாவதியாகும் பொருட்கள்",
+  "showingItemsRelative": "{time} காலாவதியாகும் பொருட்களை காட்டுகிறது",
   "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": { "type": "String" }
+    }
   },
 
-  "showingItemsExact": "தேர்ந்தெடுக்கப்பட்ட தேதியில் காலாவதியாகும் பொருட்கள்",
-  "noItemsOnDate": "இந்த நாளில் காலாவதியாகும் பொருட்கள் இல்லை",
+  "showingItemsExact": "தேர்ந்தெடுக்கப்பட்ட தேதியில் காலாவதியாகும் பொருட்களை காட்டுகிறது",
+  "noItemsOnDate": "அந்த நாளில் காலாவதியாகும் பொருட்கள் எதுவும் இல்லை.",
 
   "editorAddTitle": "உருப்படியை சேர்க்கவும்",
   "editorEditTitle": "உருப்படியை திருத்தவும்",
 
   "editorCategory": "வகை",
-  "editorCategoryHint": "ஒரு வகையைத் தேர்ந்தெடுக்கவும்",
+  "editorCategoryHint": "வகையைத் தேர்வு",
 
   "editorGroup": "குழு",
-  "editorGroupHint": "இந்த வகையில் ஒரு குழுவைத் தேர்ந்தெடுக்கவும்",
+  "editorGroupHint": "குழுவைத் தேர்வு",
 
   "editorItemName": "உருப்படியின் பெயர்",
-  "editorItemNameHint": "உருப்படியின் பெயரை உள்ளிடவும்",
+  "editorItemNameHint": "உருப்படி பெயரை இடுக",
 
   "editorExpiryDate": "காலாவதி தேதி",
-  "editorExpiryDateHint": "காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்",
+  "editorExpiryDateHint": "காலாவதி தேதி தேர்வு",
 
   "editorErrorCategory": "வகை அவசியம்",
   "editorErrorGroup": "குழு அவசியம்",
   "editorErrorName": "உருப்படியின் பெயர் அவசியம்",
-  "editorErrorExpiry": "தேதி அவசியம்",
-  "editorErrorExpiryPast": "தேதி இன்று அல்லது எதிர்காலமாக இருக்க வேண்டும்",
+  "editorErrorExpiry": "காலாவதி தேதி அவசியம்",
+  "editorErrorExpiryPast": "காலாவதி தேதி எதிர்காலம்",
 
   "cancel": "ரத்து",
   "save": "சேமி",
@@ -69,38 +72,828 @@
   },
 
   "categoryNameLabel": "வகையின் பெயர்",
-  "categoryNameHint": "வகையை உள்ளிடவும்",
+  "categoryNameHint": "வகையை இடுக",
 
-  "categoryLimitReached":
-    "Basic திட்ட வரம்பு அடைந்தது. Premium வரம்பற்ற வகைகளை அனுமதிக்கும்",
-
-  "categoryLimitInfo":
-    "Basic திட்டம் {limit} வகைகள் வரை அனுமதிக்கும்",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
+  "categoryLimitReached": "நீங்கள் Basic திட்டத்தின் {limit} வகைகள் வரம்பை அடைந்துள்ளீர்கள். Premium-க்கு மேம்படுத்தவும்.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
   },
 
-  "categoryErrorEmpty": "வகையின் பெயர் அவசியம்",
-  "categoryErrorTooShort": "வகையின் பெயர் மிகவும் குறுகியது",
-  "categoryErrorTooLong": "வகையின் பெயர் மிகவும் நீளமானது",
-  "categoryErrorSymbols": "பெயர் சின்னங்களால் மட்டும் இருக்க முடியாது",
-  "categoryErrorNumbers": "பெயரில் எண்கள் இருக்க முடியாது",
+  "categoryLimitInfo": "Basic திட்டத்தில் அதிகபட்சம் {limit} வகைகள் உருவாக்கலாம்.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "வகை அவசியம்",
+  "categoryErrorTooShort": "வகை பெயர் குறுகியது",
+  "categoryErrorTooLong": "வகை பெயர் நீளமானது",
+  "categoryErrorSymbols": "வகை பெயர் சின்னங்கள் மட்டும் ஆக முடியாது",
+  "categoryErrorNumbers": "வகை பெயரில் எண்கள் இல்லை",
 
   "upgradeRequired": "மேம்படுத்தல் தேவை",
   "viewPremiumBenefits": "Premium நன்மைகளை காண்க",
-
   "createCategory": "உருவாக்கு",
 
   "addGroupTitle": "குழுவை சேர்க்கவும்",
-
   "groupNameLabel": "குழு",
-  "groupNameHint": "குழுவை உள்ளிடவும்",
+"groupNameHint": "குழுவை இடுக",
 
-  "groupErrorEmpty": "குழு பெயர் அவசியம்",
-  "groupErrorTooShort": "குழு பெயர் மிகவும் குறுகியது",
-  "groupErrorTooLong": "குழு பெயர் மிகவும் நீளமானது",
-  "groupErrorSymbols": "குழு பெயர் சின்னங்களால் மட்டும் இருக்க முடியாது",
-  "groupErrorNumbers": "குழு பெயரில் எண்கள் இருக்க முடியாது",
+"groupErrorEmpty": "குழு அவசியம்",
+"groupErrorTooShort": "குழு பெயர் குறுகியது",
+"groupErrorTooLong": "குழு பெயர் நீளமானது",
+"groupErrorSymbols": "குழு பெயர் சின்னங்கள் மட்டும் இல்லை",
+"groupErrorNumbers": "குழு பெயரில் எண்கள் இல்லை",
 
-  "createGroup": "உருவாக்கு"
+  "createGroup": "உருவாக்கு",
+
+  "firstNameLabel": "முதல் பெயர்",
+  "firstNameHint": "முதல் பெயரை இடுக",
+
+  "lastNameLabel": "கடைசி பெயர்",
+  "lastNameHint": "கடைசி பெயரை இடுக",
+
+  "emailLabel": "மின்னஞ்சல் முகவரி",
+
+  "passwordLabel": "கடவுச்சொல்",
+
+  "passwordHelper": "குறைந்தது 8 எழுத்துகள் மற்றும் கலவை",
+
+  "passwordTooShort": "மிகக் குறுகியது",
+  "passwordTooWeak": "பலவீனம்",
+  "passwordMedium": "மிதமானது",
+  "passwordStrong": "வலுவானது",
+
+  "errorFirstName": "முதல் பெயர் அவசியம்",
+  "errorLastName": "கடைசி பெயர் அவசியம்",
+  "errorEmailInvalid": "சரியான மின்னஞ்சலை இடுக",
+  "errorEmailInUse": "இந்த மின்னஞ்சல் ஏற்கனவே\nVaultara கணக்குடன் இணைக்கப்பட்டுள்ளது",
+  "errorPasswordLength": "கடவுச்சொல் 8 எழுத்துகள் குறைந்தது",
+  "errorPasswordWeak": "வலுவான கடவுச்சொல்லை உள்ளிடவும்",
+  "errorGeneric": "பதிவு தோல்வி. மீண்டும் முயற்சிக்கவும்",
+
+  "createAccount": "கணக்கை உருவாக்கு",
+  "appName": "Vaultara",
+  "authTagline": "பாஸ்போர்ட், உரிமங்கள், கார்டுகள் மற்றும் முக்கிய ஆவணங்களுக்கான உங்கள் தனிப்பட்ட மையம்",
+  "tabSignIn": "உள்நுழை",
+  "tabCreateAccount": "கணக்கை உருவாக்கு",
+  "signInFooterText": "உங்கள் Vaultara இடத்தை அணுக உள்நுழைந்து அனைத்து புதுப்பிப்புகளையும் கட்டுப்படுத்துங்கள்",
+  "createAccountFooterText": "உங்கள் முக்கிய நினைவூட்டல்களை பாதுகாக்க Vaultara கணக்கை உருவாக்குங்கள்",
+  "emailNotFound": "தவறான மின்னஞ்சல்.\nஇந்த மின்னஞ்சலுடன் Vaultara கணக்கு இல்லை",
+  "incorrectPassword": "தவறான கடவுச்சொல்",
+  "emailLabel": "மின்னஞ்சல் முகவரி",
+
+  "passwordLabel": "கடவுச்சொல்",
+"emailRequired": "உங்கள் மின்னஞ்சல் தேவை",
+"passwordRequired": "கடவுச்சொல் அவசியம்",
+"registerPasswordHint": "கடவுச்சொல் இடுக",
+"loginPasswordHint": "கடவுச்சொல் இடுக",
+"emailHint": "மின்னஞ்சல் இடுக",
+  "signIn": "உள்நுழை",
+  "categoryPersonalIdentification": "தனிப்பட்ட அடையாளம்",
+  "categoryDrivingAndVehicles": "வாகனம் மற்றும் ஓட்டுநர்",
+  "categoryTravelAndImmigration": "பயணம் மற்றும் குடிவரவு",
+  "categoryBankingAndCards": "வங்கி மற்றும் அட்டைகள்",
+  "categoryInsuranceAndCover": "காப்பீடு மற்றும் பாதுகாப்பு",
+  "categoryHealthAndMedical": "ஆரோக்கியம் மற்றும் மருத்துவம்",
+  "categoryWorkAndProfessional": "வேலை மற்றும் தொழில்முறை",
+  "categoryPropertyAndHousing": "சொத்து மற்றும் வீடமைப்பு",
+  "categoryHouseholdAndUtilities": "வீட்டு மற்றும் பயன்பாடுகள்",
+
+  "subcategoryPassports": "கடவுச்சீட்டுகள்",
+  "subcategoryIdCards": "அடையாள அட்டைகள்",
+  "subcategoryResidencePermits": "வசிப்பு அனுமதிகள்",
+
+  "subcategoryDrivingLicences": "ஓட்டுநர் உரிமங்கள்",
+  "subcategoryVehicleRegistrations": "வாகன பதிவு",
+  "subcategoryRoadworthyCertificates": "சாலை தகுதி சான்றிதழ்கள்",
+  "subcategoryVehicleInspectionCertificates": "வாகன ஆய்வு சான்றிதழ்கள்",
+
+  "subcategoryVisas": "விசாக்கள்",
+  "subcategoryStudyPermits": "படிப்பு அனுமதிகள்",
+  "subcategoryWorkPermits": "வேலை அனுமதிகள்",
+  "subcategoryTravelInsuranceDocuments": "பயண காப்பீட்டு ஆவணங்கள்",
+
+  "subcategoryDebitAndCreditCards": "டெபிட் மற்றும் கிரெடிட் அட்டைகள்",
+  "subcategoryStoreCards": "கடை அட்டைகள்",
+  "subcategoryFuelCards": "எரிபொருள் அட்டைகள்",
+
+  "subcategoryVehicleInsurances": "வாகன காப்பீடுகள்",
+  "subcategoryPropertyInsurances": "சொத்து காப்பீடுகள்",
+  "subcategoryLifeInsurances": "உயிர் காப்பீடுகள்",
+  "subcategoryHealthInsurances": "ஆரோக்கிய காப்பீடுகள்",
+  "subcategoryTravelInsurances": "பயண காப்பீடுகள்",
+
+  "subcategoryMedicalPrescriptions": "மருத்துவ மருந்துச் சீட்டுகள்",
+  "subcategoryOpticalPrescriptions": "கண் மருந்துச் சீட்டுகள்",
+  "subcategoryMedicalCertificates": "மருத்துவ சான்றிதழ்கள்",
+
+  "subcategoryProfessionalLicences": "தொழில்முறை உரிமங்கள்",
+  "subcategoryProfessionalRegistrations": "தொழில்முறை பதிவு",
+  "subcategoryIndustryRegistrations": "தொழில் பதிவு",
+  "subcategoryWorkAccessCards": "வேலை அணுகல் அட்டைகள்",
+
+  "subcategoryLeaseAgreements": "வாடகை ஒப்பந்தங்கள்",
+  "subcategoryAccessCardsAndTags": "அணுகல் அட்டைகள் மற்றும் குறிச்சொற்கள்",
+  "subcategoryParkingPermits": "நிறுத்த அனுமதிகள்",
+  "subcategorySecurityAccessPermits": "பாதுகாப்பு அணுகல் அனுமதிகள்",
+
+  "subcategoryElectricityAccounts": "மின்சார கணக்குகள்",
+  "subcategoryWaterAccounts": "தண்ணீர் கணக்குகள்",
+  "subcategoryInternetContracts": "இணைய ஒப்பந்தங்கள்",
+  "subcategorySecurityServiceContracts": "பாதுகாப்பு சேவை ஒப்பந்தங்கள்",
+  "searchCategories": "வகைகளைத் தேடுங்கள்",
+  "filterAll": "அனைத்தும்",
+  "filterPreset": "முன் தேர்வு",
+  "filterCustom": "தனிப்பயன்",
+  "addCategoryTitle": "வகையைச் சேர்க்கவும்",
+  "customLabel": "தனிப்பயன்",
+  "subcategoriesLabel": "துணை வகைகள்",
+  "itemsLabel": "உருப்படிகள்",
+  "itemsExpiring": "{days} நாட்களில் {count} உருப்படிகள் காலாவதியாகும்",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "பதிக்கப்பட்ட வகைகள்",
+  "pinnedHint": "நீங்கள் அடிக்கடி திறக்கும் வகைகளை மேலே வைத்திருக்க பதியுங்கள்.",
+  "noCategoriesFound": "எந்த வகைகளும் காணப்படவில்லை",
+  "searchGroups": "குழுக்களை தேடுங்கள்",
+  "addGroupTitle": "குழுவைச் சேர்க்கவும்",
+  "basicPlanGroupInfo": "நீங்கள் Basic திட்டத்தில் உள்ளீர்கள்.\nஇந்த பிரிவின் கீழ் முன் அமைக்கப்பட்ட குழுக்களை பார்க்கலாம்.\nஉங்கள் சொந்த குழுக்களை உருவாக்க Premium-க்கு மேம்படுத்துங்கள்.",
+  "groupDeleted": "குழு நீக்கப்பட்டது",
+  "undo": "மீட்டமை",
+  "groupStats": "{items} உருப்படிகள் • {expiring} {days} நாட்களில் காலாவதியாகும்",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "இந்த குழுவில் உருப்படிகளை சேர்த்து கண்காணிக்க தட்டவும்.",
+  "itemsInGroup": "இந்த குழுவில் உள்ள உருப்படிகள்",
+  "itemsInGroupHint": "முக்கியமான உருப்படிகளை காலாவதி தேதிகளுடன் கண்காணித்து, நேரத்தில் புதுப்பிக்கலாம்.",
+  "searchItems": "உருப்படிகளைத் தேடுங்கள்",
+  "filterAll": "அனைத்தும்",
+  "filterExpiringWithin": "{days} நாளில் காலாவதி",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "காலாவதி",
+  "addItem": "உருப்படி சேர்க்க",
+  "noItemsYet": "இன்னும் எந்த உருப்படியும் இல்லை.",
+
+  "statusExpired": "காலாவதியானது",
+  "statusExpiresToday": "இன்று காலாவதியாகும்",
+  "statusExpiresInOneDay": "நாளை காலாவதியாகும்",
+  "statusExpiresInDays": "{days} நாட்களில் காலாவதியாகும்",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "செல்லுபடியாகும்",
+
+  "deleteCategoryTitle": "வகையை நீக்கு",
+  "deleteCategoryMessage": "\"{name}\" என்ற வகையை நீக்க விரும்புகிறீர்களா?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "குழுவை நீக்கு",
+  "deleteGroupMessage": "\"{name}\" என்ற குழுவை நீக்க விரும்புகிறீர்களா?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "உருப்படியை நீக்கு",
+  "deleteItemMessage": "\"{name}\" என்பதை நீக்க விரும்புகிறீர்களா?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "ரத்து",
+  "delete": "நீக்கு",
+  "homeWelcomeFirstTitle": "வரவேற்கிறோம், {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "மீண்டும் வரவேற்கிறோம், {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara முக்கியமான காலாவதி தேதிகளை கண்காணிக்க உதவுகிறது, இதனால் எதுவும் கவனத்திற்கு தவறாது.",
+
+"homeWelcomeSubtitleFirst":
+  "உங்களை இங்கே காண மகிழ்ச்சி. Vaultara முக்கியமான தேதிகளையும் பதிவுகளையும் ஒரு பாதுகாப்பான இடத்தில் ஒழுங்குபடுத்த உதவுகிறது.",
+
+"homeWelcomeSubtitleBack":
+  "மீண்டும் உங்களை காண மகிழ்ச்சி. உங்கள் முக்கியமான தேதிகளையும் பதிவுகளையும் பார்வையிட Vaultara எப்போதும் தயாராக உள்ளது.",
+  "insightEmptyTitle": "நீங்கள் இன்னும் எதையும் சேர்க்கவில்லை",
+  "insightEmptyBody": "முக்கிய தேதிகளை கண்காணிக்கத் தொடங்கினால், Vaultara காலாவதிக்கு முன் உங்களைத் தயாராக வைத்திருக்கும்.",
+
+  "insightExpiresTodayTitle": "\"{name}\" இன்று காலாவதியாகிறது",
+  "insightExpiresTodayBody": "ஒரு விரைவு சரிபார்ப்பு தகவலை துல்லியமாக வைத்திருக்கும்.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" நாளை காலாவதியாகிறது",
+  "insightExpiresTomorrowBody": "இப்போது சரிபார்ப்பது பின்னர் நேரத்தைச் சேமிக்கும்.",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} அன்று காலாவதியாகிறது",
+  "insightExpiresSoonBody": "முன்கூட்டியே கவனிப்பது விஷயங்களை எளிதாக்கும்.",
+
+  "insightNextExpiryTitle": "அடுத்த காலாவதி \"{name}\" ({date})",
+  "insightNextExpiryBody": "தற்போது எந்த நடவடிக்கையும் தேவையில்லை.",
+
+  "insightClusteredTitle": "{month} மாதத்தில் பல உருப்படிகள் காலாவதியாகின்றன",
+  "insightClusteredBody": "அவற்றை ஒன்றாக பரிசீலிப்பது நேரத்தைச் சேமிக்கும்.",
+
+  "insightTopCategoryTitle": "பெரும்பாலான உருப்படிகள் {category} இல் உள்ளன",
+  "insightTopCategoryBody": "இங்கே தொடங்குவது அதிக பயனை தரும்.",
+
+  "insightStableTitle": "எல்லாம் நிலையாக உள்ளது",
+  "insightStableBody": "உடனடி கவனம் தேவைப்படும் காலாவதிகள் இல்லை.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "வரவேற்கிறோம்",
+  "summaryAllTitle": "அனைத்து உருப்படிகள்",
+"summaryAllCaption": "Vaultara இல் கண்காணிக்கப்படுகிறது",
+"summarySoonTitle": "விரைவில் காலாவதியாகும்",
+"summarySoonCaption": "30 நாட்களுக்குள்",
+"summaryWeekTitle": "இந்த வாரம்",
+"summaryWeekCaption": "7 நாட்களில் காலாவதியாகும்",
+"summaryExpiredTitle": "காலாவதியானது",
+"summaryExpiredCaption": "காலாவதி தேதி கடந்துவிட்டது",
+"stabilityStableTitle": "எல்லாம் நிலைத்திருக்கிறது",
+"stabilityStableBody": "உங்கள் பதிவுகளில் உடனடி அல்லது சேர்க்கப்பட்ட அபாயங்கள் இல்லை.",
+
+"stabilityDecliningTitle": "நிலைத்தன்மை குறைந்து வருகிறது",
+"stabilityDecliningBody": "சில உருப்படிகள் காலாவதியானவை, மற்றவை விரைவில் காலாவதியாகும்.",
+
+"stabilityWeakenedTitle": "நிலைத்தன்மை பலவீனமடைந்துள்ளது",
+"stabilityWeakenedBody": "காலாவதியான பதிவுகள் மொத்த நம்பகத்தன்மையை குறைக்கின்றன.",
+
+"stabilityPressureTitle": "அழுத்தம் அதிகரிக்கிறது",
+"stabilityPressureBody": "நிலைத்தன்மையை பராமரிக்க சில பதிவுகள் விரைவில் கவனத்தை தேவைப்படும்.",
+"editorNotes": "குறிப்புகள்",
+"notesHint": "குறிப்புகளை உள்ளிடவும்",
+"editorReminderTitle": "நினைவூட்டல்",
+"editorReminderNone": "நினைவூட்டல் இல்லை",
+"editorReminderOnExpiry": "காலாவதி நாளில்",
+"editorReminder7Days": "காலாவதிக்கு 7 நாட்களுக்கு முன்",
+"editorReminder30Days": "காலாவதிக்கு 30 நாட்களுக்கு முன்",
+"editorReminderCustom": "தனிப்பயன்",
+"daysBeforeExpiry": "காலாவதிக்கு முன் நாட்கள்",
+"reminderStage0Title": "காலாவதி நினைவூட்டல்",
+"reminderStage0Body": "{firstName}, {itemName} {days} நாட்களில் காலாவதியாகும்.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "தொடர்ச்சி நினைவூட்டல்",
+"reminderStage1Body": "{firstName}, {itemName} இன்னும் புதுப்பிக்கப்படவில்லை.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "காலாவதி நெருங்குகிறது",
+"reminderStage2Body": "{itemName} இற்கான காலாவதி தேதி நெருங்குகிறது.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "இறுதி நினைவூட்டல்",
+"reminderFinalBody": "{firstName}, தயவுசெய்து {itemName} இப்போது புதுப்பிக்கவும்.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "கவர் சமநிலை",
+"coverageAllRepresented": "உங்கள் பதிவுகள் அனைத்து வகைகளிலும் உருப்படிகளை கொண்டுள்ளது.",
+"coverageMissingNamed": "{count} வகைகளில் எந்த பதிவும் இல்லை: {names}.",
+"coverageMissingSummary": "{count} வகைகளில் எந்த பதிவையும் நீங்கள் சேர்க்கவில்லை, இதில் {names} மற்றும் மற்ற {remaining} உட்படுகின்றன.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "கடவுச்சொல்லைப் பயன்படுத்தவும்",
+"signInWithBiometrics": "பயோமெட்ரிக்ஸ் மூலம் உள்நுழையவும்",
+"enableBiometricsTitle": "பயோமெட்ரிக் பாதுகாப்பை இயக்கு",
+"enableBiometricsBody": "Vaultara-வை பாதுகாக்க கைரேகை அல்லது முக அடையாளத்தை பயன்படுத்தவும்.",
+"enableBiometricsReason": "Vaultara-க்கு பயோமெட்ரிக் திறப்பை இயக்கு.",
+"notNow": "இப்போது இல்லை",
+"useBiometrics": "பயோமெட்ரிக்ஸ் பயன்படுத்தவும்",
+"recordsCalendarIntro":
+  "உங்கள் காலாவதி தேதிகளை எவ்வாறு பார்வையிட விரும்புகிறீர்கள் என்பதைத் தேர்வு செய்யுங்கள்:\n\n• இன்று முதல் எத்தனை நாட்கள் முன்னோக்கி பார்க்க விரும்புகிறீர்கள் என்பதை உள்ளிடுங்கள்.\n• அல்லது நாட்காட்டியில் ஒரு குறிப்பிட்ட தேதியைத் தேர்வு செய்யுங்கள்.\n\nஅந்த நாளில் எந்த பதிவுகள் காலாவதியாகின்றன என்பதை Vaultara காட்டும்.",
+
+"showingRecordsRelative": "{time} காலத்தில் காலாவதியாகும் பதிவுகள் காட்டப்படுகின்றன",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact":
+  "தேர்ந்தெடுக்கப்பட்ட தேதியில் காலாவதியாகும் பதிவுகள் காட்டப்படுகின்றன",
+
+"noRecordsOnDate":
+  "அந்த நாளில் காலாவதியாக எந்த பதிவுகளும் அமைக்கப்படவில்லை.",
+
+"recordEditorAddTitle": "பதிவை சேர்க்கவும்",
+"recordEditorEditTitle": "பதிவை திருத்தவும்",
+
+"editorRecordName": "பதிவு பெயர்",
+"editorRecordNameHint": "பதிவு பெயரை உள்ளிடுங்கள்",
+"recordEditorErrorName": "பதிவு பெயர் அவசியம்",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "இந்த குழுவில் பதிவுகளை சேர்க்கவும் மற்றும் கண்காணிக்கவும் தட்டுங்கள்.",
+
+"recordsInGroup": "இந்த குழுவில் உள்ள பதிவுகள்",
+
+"recordsInGroupHint":
+  "ஒவ்வொரு முக்கிய பதிவையும் அதன் காலாவதி தேதியுடன் கண்காணித்து நேரத்தில் புதுப்பிக்கவும்.",
+
+"searchRecords": "பதிவுகளை தேடு",
+"addRecord": "பதிவு சேர்க்க",
+"noRecordsYet": "இதுவரை பதிவுகள் இல்லை.",
+
+"deleteRecordTitle": "பதிவை நீக்கு",
+
+"recordsInsightClusteredTitle":
+  "{month} மாதத்தில் பல பதிவுகள் காலாவதியாகின்றன",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "உங்கள் பதிவுகளில் பெரும்பாலானவை {category} கீழ் உள்ளன",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "அனைத்து பதிவுகள்",
+
+"recordsStabilityDecliningBody":
+  "சில பதிவுகள் ஏற்கனவே காலாவதியானவை மற்றும் மேலும் சில விரைவில் காலாவதியாகும்.",
+
+"recordsCoverageAllRepresented":
+  "உங்கள் பதிவுகள் அனைத்து வகைகளையும் உள்ளடக்கியவை.",
+
+"recordReminderStage0Body":
+  "{firstName}, உங்கள் பதிவு {recordName} {days} நாட்களில் காலாவதியாகும்.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, உங்கள் பதிவு {recordName} இன்னும் புதுப்பிக்கப்படவில்லை.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName} பதிவின் காலாவதி தேதி அருகில் வருகிறது.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, தயவுசெய்து இப்போது {recordName} பதிவை புதுப்பிக்கவும்.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "இன்னும் குழுக்கள் இல்லை",
+"recordsExpiring": "{count, plural, one {1 பதிவு {days} நாட்களில் காலாவதியாகும்} other {{count} பதிவுகள் {days} நாட்களில் காலாவதியாகும்}}",
+"recordsGroupStats": "{records, plural, one {1 பதிவு} other {{records} பதிவுகள்}} • {expiring} {days} நாட்களில்",
+"groupLabel": "{count, plural, one {{count} குழு} other {{count} குழுக்கள்}}",
+"recordsLabel": "{count, plural, one {{count} பதிவு} other {{count} பதிவுகள்}}",
+"forgotPassword": "పాస్‌వర్డ్ మర్చిపోయారా?",
+  "forgotPasswordTitle": "పాస్‌వర్డ్ రీసెట్",
+  "forgotPasswordBody": "మీ ఇమెయిల్ చిరునామాను నమోదు చేయండి, మేము రీసెట్ లింక్‌ను పంపుతాము.",
+  "sendResetLink": "లింక్ పంపండి",
+  "passwordResetEmailSent": "పాస్‌వర్డ్ రీసెట్ ఇమెయిల్ పంపబడింది.",
+  "verifyEmailToContinue": "உள்நுழைவதற்கு முன் உங்கள் மின்னஞ்சல் முகவரியை சரிபார்க்கவும்",
+  "changeEmailTitle": "மின்னஞ்சல் முகவரியை மாற்றவும்",
+"newEmailHint": "உங்கள் புதிய மின்னஞ்சலை உள்ளிடவும்",
+"sendVerificationEmail": "சரிபார்ப்பு மின்னஞ்சலை அனுப்பவும்",
+"deleteAccountTitle": "கணக்கை நீக்கு",
+"deleteAccountWarning": "இந்த நடவடிக்கை உங்கள் கணக்கும் சேமிக்கப்பட்ட அனைத்து தரவுகளையும் நிரந்தரமாக நீக்கும்.\nஇதனை மீட்டெடுக்க முடியாது.",
+"deleteAccountConfirm": "கணக்கை நிரந்தரமாக நீக்கு",
+"supportTitle": "ஆதரவு",
+"supportSubtitle": "உங்களுக்கு உதவி தேவைப்பட்டால் அல்லது கேள்விகள்\nஇருந்தால் எங்களை தொடர்பு கொள்ளுங்கள்.",
+"supportEmailSubject": "Vaultara ஆதரவு கோரிக்கை",
+"supportEmailError": "மின்னஞ்சல் பயன்பாட்டை திறக்க முடியவில்லை.",
+"passwordResetEmailFailed": "கடவுச்சொல் மீட்டமைப்பு மின்னஞ்சலை அனுப்ப முடியவில்லை.",
+"loggedInPasswordResetBody": "கடவுச்சொல் மீட்டமைப்பு இணைப்பை அனுப்புவோம்:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "கணக்கு மேலாண்மை",
+"changeEmailTitle": "மின்னஞ்சல் முகவரியை மாற்றவும்",
+"changeEmailSubtitle": "உங்கள் கணக்குடன் இணைக்கப்பட்ட மின்னஞ்சலை புதுப்பிக்கவும்.",
+"changePasswordTitle": "கடவுச்சொல்லை மாற்றவும்",
+"changePasswordSubtitle": "கடவுச்சொல்லை பாதுகாப்பாக மாற்ற மின்னஞ்சல் இணைப்பை அனுப்புவோம்.",
+"deleteAccountTitle": "கணக்கை நீக்கு",
+"deleteAccountSubtitle": "உங்கள் Vaultara கணக்கை நிரந்தரமாக நீக்கவும்.",
+"biometricAuthReason": "உங்கள் கணக்கை அணுக அங்கீகரிக்கவும்",
+"verifyEmailTitle": "உங்கள் மின்னஞ்சலை சரிபார்க்கவும்",
+"verifyEmailBody": "உங்கள் இன்பாக்ஸிற்கு சரிபார்ப்பு மின்னஞ்சல் அனுப்பியுள்ளோம். தயவுசெய்து அதை திறந்து உங்கள் மின்னஞ்சல் முகவரியை உறுதிப்படுத்துங்கள், பின்னர் இங்கே திரும்பி தொடருங்கள்.",
+"verifyEmailConfirmedButton": "நான் என் மின்னஞ்சலை உறுதிப்படுத்திவிட்டேன்",
+"verifyEmailResendButton": "சரிபார்ப்பு மின்னஞ்சலை மீண்டும் அனுப்பவும்",
+"verifyEmailSending": "அனுப்பப்படுகிறது...",
+"navHome": "முகப்பு",
+"navCategories": "பிரிவுகள்",
+"navInsights": "பகுப்பு",
+"navCalendar": "நாட்காட்டி",
+"tutorialHomeSearch": "நீங்கள் கண்காணிக்கும் எந்த பதிவையும் விரைவாக கண்டுபிடிக்க தேடல் பட்டையை பயன்படுத்துங்கள்.",
+"tutorialHomeFab": "இங்கே உங்கள் முதல் பதிவை சேருங்கள்.\nஅது எங்கு சேர்ந்தது என்பதை தேர்ந்தெடுத்து, விருப்பமான குறிப்புகளை சேர்த்து, காலாவதி தேதியை தேர்வு செய்யுங்கள்.",
+"tutorialHomeSummary": "நீங்கள் அதிக பதிவுகளை சேர்க்கும்போது, காலாவதிக்கு அருகிலுள்ள அல்லது காலாவதியான பதிவுகளை கண்டறிய இந்த பகுதி உதவும்.",
+"tutorialHomeInsight": "இந்த புத்திசாலி பார்வை மாதிரிகளையும் வரவிருக்கும் காலாவதிகளையும் காட்டுகிறது.\nஆடியோ வழிகாட்டலுக்கு விரும்பினால், ஸ்பீக்கர் ஐகானை தட்டலாம்.",
+"tutorialHomeCoverage": "கவரேஜ் சமநிலை உங்கள் பதிவுகள் எல்லா வகைகளிலும் எவ்வளவு சமமாக பகிரப்பட்டுள்ளன என்பதை காட்டுகிறது.\nஉயர் சமநிலை குறைவான இடைவெளிகளை குறிக்கிறது.",
+"tutorialHomeStability": "ஸ்டேபிலிட்டி உங்கள் பதிவுகள் காலப்போக்கில் எவ்வளவு நம்பகமாக உள்ளன என்பதை காட்டுகிறது.\nகாலாவதியான மற்றும் வரவிருக்கும் காலாவதிகள் ஸ்டேபிலிட்டியை குறைக்கலாம்.",
+"tutorialCancel": "ரத்து செய்",
+"tutorialNext": "அடுத்தது",
+"tutorialEnd": "டுடோரியல் முடி",
+"softDeleteCategory": "வகை",
+"softDeleteGroup": "குழு",
+"softDeleteRecord": "பதிவு",
+
+"softDeleteTitle": "{type} ஐ சமீபத்தில் நீக்கப்பட்டவற்றிற்கு நகர்த்தவும்",
+
+"softDeleteMessage": "{type} \"{name}\" சமீபத்தில் நீக்கப்பட்டவற்றிற்கு நகர்த்தப்படும்.\n\n30 நாட்களுக்குள் மீட்டெடுக்கலாம். அதன் பிறகு நிரந்தரமாக நீக்கப்படும்.",
+
+"softDeleteMove": "நகர்த்து",
+
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "சமீபத்தில் நீக்கப்பட்டது",
+"categories": "வகைகள்",
+"groups": "குழுக்கள்",
+"records": "பதிவுகள்",
+"restore": "மீட்டெடு",
+"deletePermanently": "நிரந்தரமாக நீக்கு",
+
+"recentlyDeletedBanner": "நீக்கப்பட்ட {type} 30 நாட்கள் சேமிக்கப்படும்.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "நீக்கப்பட்ட {type} தேடுக",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "நீக்கப்பட்ட {type} இல்லை",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+"categoriesHint": "அதன் குழுக்களை பார்க்கவும் உங்கள் பதிவுகளை நிர்வகிக்கவும் ஒரு வகையைத் தட்டவும்.",
+"groupsHint": "இந்த வகையில் உங்கள் பதிவுகளை குழுக்கள் ஒழுங்குபடுத்துகின்றன. பதிவுகளை நிர்வகிக்க குழுவைத் தட்டவும்.",
+"notLoggedIn": "உள்நுழையவில்லை",
+"recordsInsideGroupHint": "இவை இந்த குழுவுக்குள் உள்ள பதிவுகள்.",
+"snackMovedToRecentlyDeleted": "\"{name}\" சமீபத்தில் நீக்கப்பட்டவற்றிற்கு நகர்த்தப்பட்டது",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" வெற்றிகரமாக நீக்கப்பட்டது",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" வெற்றிகரமாக புதுப்பிக்கப்பட்டது",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" வெற்றிகரமாக சேர்க்கப்பட்டது",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" வெற்றிகரமாக மீட்டெடுக்கப்பட்டது",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "இலவச வரம்பு அடைந்தது ({current}/{limit}). மேலும் சேர்க்க மேம்படுத்துங்கள்.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "அனைத்து பதிவுகளையும் தேடுங்கள்",
+"globalSearchHint": "பதிவு பெயர், வகை அல்லது குழுவை உள்ளிடவும்",
+"globalSearchNoMatches": "உங்கள் தேடலுக்கு பொருந்தும் பதிவுகள் இல்லை.",
+"snackNoRecordsToSearch": "தேடுவதற்கு எந்த பதிவுகளும் இல்லை. சில பதிவுகளைச் சேர்க்கவும், Vaultara அவற்றை தானாகவே குறியிடும்.",
+"recoveryCentreTitle": "மீட்பு மையம்",
+"recoveryCentreSubtitle": "அகற்றப்பட்ட பதிவுகளை மீட்டமைக்கவும் அல்லது நிரந்தரமாக நீக்கவும்.",
+"plan_premium": "ப்ரீமியம்",
+"plan_free": "இலவசம்",
+"profile_app_settings_title": "செயலி அமைப்புகள்",
+"profile_privacy_security_title": "தனியுரிமை மற்றும் பாதுகாப்பு",
+"profile_biometric_on": "இந்த சாதனத்தில் பயோமெட்ரிக் பூட்டு இயக்கத்தில் உள்ளது.",
+"profile_biometric_off": "பயோமெட்ரிக் பூட்டு முடக்கப்பட்டுள்ளது.",
+"profile_biometric_enable_reason": "பயோமெட்ரிக் பூட்டை இயக்க உங்கள் அடையாளத்தை உறுதிப்படுத்தவும்.",
+"profile_biometric_disable_reason": "பயோமெட்ரிக் பூட்டை முடக்க உங்கள் அடையாளத்தை உறுதிப்படுத்தவும்.",
+"profile_account_management_title": "கணக்கு மேலாண்மை",
+"profile_account_management_subtitle": "மின்னஞ்சல், கடவுச்சொல்லை மாற்றவும் அல்லது கணக்கை நீக்கவும்.",
+"profile_premium_active_title": "ப்ரீமியம் செயலில் உள்ளது",
+"profile_premium_upgrade_title": "ப்ரீமியத்திற்கு மேம்படுத்தவும்",
+"profile_premium_active_subtitle": "மேம்பட்ட நினைவூட்டல்கள் திறக்கப்பட்டுள்ளன.",
+"profile_premium_upgrade_subtitle": "மேம்பட்ட நினைவூட்டல்கள் மற்றும் வரம்பற்ற அமைப்பை திறக்கவும்.",
+"profile_manage_cancel_hint": "Google Play இல் எப்போது வேண்டுமானாலும் நிர்வகிக்க அல்லது ரத்து செய்யலாம்.",
+"profile_manage_subscription_button": "சந்தாவை நிர்வகிக்கவும்",
+"plansTitle": "உங்கள் திட்டத்தை தேர்வு செய்யவும்",
+"plansTrialBanner": "7 நாள் இலவசம்.\nஎப்போது வேண்டுமானாலும் நிறுத்தலாம்.",
+"plansLoading": "ஏற்றுகிறது…",
+"plansStartFreeTrial": "இலவசமாக தொடங்கு",
+"plansNoChargeTodayFooter": "7 நாள் இலவசம் · இன்று கட்டணம் இல்லை",
+
+"planFreeTitle": "இலவசம்",
+"planFreeSubtitle": "தொடங்க",
+"planPremiumMonthlyTitle": "பிரீமியம் மாதம்",
+"planPremiumYearlyTitle": "பிரீமியம் ஆண்டு",
+"planPerMonth": "மாதத்திற்கு",
+"planPerYear": "ஆண்டிற்கு",
+
+"planBadgeCurrent": "நடப்பு",
+"planBadgePopular": "பிரபலமானது",
+"planBadgeBestValue": "சிறந்த மதிப்பு",
+
+"planYouAreOnThisPlan": "இந்த திட்டத்தில் உள்ளீர்கள்.",
+
+"planFeatureUpToRecords": "{count} பதிவுகள் வரை",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "தனிப்பயன் வகைகள் ({count} வரை)",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "முன் அமைக்கப்பட்ட துணைவகைகள்",
+"planFeatureCloudStorage": "மேக சேமிப்பு",
+"planFeatureSmartExpiryInsights": "காலாவதி பகுப்பாய்வு",
+"planFeatureCoverageBalance": "வகை சமநிலை",
+"planFeatureRecordStabilityTracking": "பதிவு நிலைத்தன்மை",
+
+"planFeatureUnlimitedRecords": "வரம்பற்ற பதிவுகள்",
+"planFeatureUnlimitedCategories": "வரம்பற்ற வகைகள்",
+"planFeatureCustomSubcategories": "தனிப்பயன் துணைவகைகள்",
+"planFeatureMultipleRemindersPerRecord": "பல நினைவூட்டல்கள்",
+"planFeatureAdvancedReminderTiming": "மேம்பட்ட நேர அமைப்பு",
+"planFeatureAutomaticFollowUps": "தானியங்கி நினைவூட்டல்கள்",
+
+"planFeatureEverythingInMonthly": "மாத திட்டத்தின் அனைத்தும்",
+"planFeatureSavePercentComparedToMonthly": "மாதத்தை விட {percent}% சேமிப்பு",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "நீண்டகால சிறந்த மதிப்பு",
+"editorReminderLabel": "நினைவூட்டல்",
+"editorReminderSelectOptional": "நினைவூட்டலை தேர்ந்தெடுக்கவும் (விருப்பம்)",
+"editorReminderOnExpiry": "காலாவதியான நாளில்",
+"editorReminderDaysBefore": "காலாவதிக்கு {days} நாட்களுக்கு முன்",
+"editorFreeItemsCount": "இலவச பதிவுகள்: {used}/{limit}",
+"editorExpiryPastWarning": "காலாவதி தேதி ஏற்கனவே கடந்துவிட்டது.",
+"editorExpiryTodayWarning": "இந்த பதிவு இன்று காலாவதியாகிறது.",
+"editorErrorExpiryPast": "காலாவதி தேதி கடந்ததாக இருக்க முடியாது.",
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "இன்றைய தகவல்",
+"tutorialBannerTitle": "விரைவு வழிகாட்டி",
+"tutorialBannerBody": "தேடுவது, பதிவுகள் சேர்ப்பது, இன்சைட்ஸ் அர்த்தம்—ஒரு நிமிடத்தில் அறிக.",
+"tutorialBannerStart": "டுடோரியல் தொடங்கு",
+"tutorialBannerDismiss": "இப்போது வேண்டாம்",
+"authErrorUserDisabled": "இந்த கணக்கு முடக்கப்பட்டுள்ளது.",
+"authErrorNetwork": "நெட்வொர்க் பிழை. மீண்டும் முயற்சிக்கவும்.",
+"authErrorTooManyRequests": "அதிக முயற்சிகள். பிறகு முயற்சிக்கவும்.",
+"authErrorSignInFailed": "உள்நுழைவு தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.",
+"ok": "சரி",
+"snackPremiumEnabled": "பிரீமியம் செயல்படுத்தப்பட்டது",
+"snackPremiumRestored": "பிரீமியம் மீட்டெடுக்கப்பட்டது",
+"passwordNeedLower": "சிறிய எழுத்து இருக்க வேண்டும்",
+"passwordNeedUpper": "பெரிய எழுத்து இருக்க வேண்டும்",
+"passwordNeedNumber": "எண் இருக்க வேண்டும்",
+"passwordNeedSymbol": "சின்னம் இருக்க வேண்டும்",
+"confirmIdentityTitle": "அடையாளத்தை உறுதிப்படுத்து",
+"confirm": "உறுதிப்படுத்து",
+"profile_sign_out_title": "வெளியேறு",
+"profile_sign_out_subtitle": "இந்த சாதனத்தில் Vaultara இலிருந்து வெளியேறு",
+"profile_sign_out_confirm_title": "வெளியேற வேண்டுமா?",
+"profile_sign_out_confirm_body": "உங்கள் கணக்கை அணுக மீண்டும் உள்நுழைய வேண்டும்.",
+"profile_sign_out_action": "வெளியேறு",
+"todayInsightsAudioHint": "ஆடியோ விருப்பமா? ஸ்பீக்கர் ஐகானை பயன்படுத்துங்கள்.",
+"category2Label": "வகை",
+"enable2BiometricsBody": "உங்கள் Vaultara கணக்கை பாதுகாக்க விரல் ரேகை அடையாளத்தை பயன்படுத்துங்கள்.",
+"snackNotificationsDisabled": "அறிவிப்புகள் முடக்கப்பட்டுள்ளன. நினைவூட்டல்களைப் பெற அவற்றை இயக்கவும்.",
+"openSettings": "அமைப்புகளைத் திறக்கவும்",
+
+"reminderOnExpiryTitle": "இன்று காலாவதியாகிறது",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "வணக்கம் {firstName}, \"{itemName}\" இன்று காலாவதியாகிறது.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "இலவச வகைகள்: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "இலவச வரம்பில் இருந்து எத்தனை இலவச வகைகள் பயன்படுத்தப்பட்டுள்ளன என்பதை காட்டுகிறது.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "குறிப்புகளைச் சேர்க்கவும் (விருப்பம்)",
+"apply": "பயன்படுத்து",
+"smartInsightExpiresTodayHeading": "இன்று காலாவதியாகிறது",
+"smartInsightExpiresTodaySingleBody": "{name} இன்று காலாவதியாகிறது. அதை புதுப்பித்து வைத்திருக்க இப்போது நடவடிக்கை எடுக்கவும்.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} மற்றும் 1 மற்ற ஆவணம் இன்று காலாவதியாகிறது.} other{{names} மற்றும் {extra} மற்ற ஆவணங்கள் இன்று காலாவதியாகின்றன.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "உங்கள் கவனம் தேவை",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} 1 நாளில் காலாவதியாகிறது மற்றும் நினைவூட்டல் அமைக்கப்படவில்லை. விவரங்கள் இன்னும் சரியாக இருக்கிறதா என உறுதிப்படுத்தவும்.} other{{name} {days} நாட்களில் காலாவதியாகிறது மற்றும் நினைவூட்டல் அமைக்கப்படவில்லை. விவரங்கள் இன்னும் சரியாக இருக்கிறதா என உறுதிப்படுத்தவும்.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "பல புதுப்பித்தல்கள் நெருக்கமாக",
+"smartInsightRenewalTwinBodyTwo": "{a} மற்றும் {b} ஒருவருக்கொருவர் மூன்று வாரங்களுக்குள் காலாவதியாகின்றன. முன்கூட்டியே திட்டமிடுங்கள்.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, மற்றும் {c} அனைத்தும் மூன்று வாரங்களுக்குள் காலாவதியாகின்றன. முன்கூட்டியே திட்டமிடுங்கள்.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, மற்றும் 1 மற்ற ஆவணம் மூன்று வாரங்களுக்குள் காலாவதியாகின்றன. முன்கூட்டியே திட்டமிடுங்கள்.} other{{a}, {b}, மற்றும் {extra} மற்ற ஆவணங்கள் மூன்று வாரங்களுக்குள் காலாவதியாகின்றன. முன்கூட்டியே திட்டமிடுங்கள்.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "வரவிருக்கும் குழு",
+"smartInsightClusterBody": "{count, plural, =1{{category} இல் 1 ஆவணம் அடுத்த இரண்டு மாதங்களில் காலாவதியாகிறது. அவற்றை ஒன்றாக கையாள்வதை பரிசீலியுங்கள்.} other{{category} இல் {count} ஆவணங்கள் அடுத்த இரண்டு மாதங்களில் காலாவதியாகின்றன. அவற்றை ஒன்றாக கையாள்வதை பரிசீலியுங்கள்.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "அமைதியான காலம் முன்னால்",
+"smartInsightQuietPeriodBody": "{days, plural, =1{அடுத்த 1 நாளுக்கு எதுவும் காலாவதியாகாது. உங்கள் அடுத்த புதுப்பித்தல் {firstDate} ஆகும்.} other{அடுத்த {days} நாட்களுக்கு எதுவும் காலாவதியாகாது. உங்கள் அடுத்த புதுப்பித்தல் {firstDate} ஆகும்.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "எல்லாம் புதுப்பிக்கப்பட்டுள்ளது",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 வரவிருக்கும் காலாவதி நினைவூட்டல்களால் உள்ளடக்கப்பட்டுள்ளது. வேறு எதுவும் உங்கள் கவனத்தை தேவைப்படுத்தவில்லை.} other{{count} வரவிருக்கும் காலாவதிகள் நினைவூட்டல்களால் உள்ளடக்கப்பட்டுள்ளன. வேறு எதுவும் உங்கள் கவனத்தை தேவைப்படுத்தவில்லை.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "எல்லாம் புதுப்பிக்கப்பட்டுள்ளது. தற்போது எதுவும் உங்கள் கவனத்தை தேவைப்படுத்தவில்லை.",
+"smartInsightNoRecordsHeading": "உங்கள் முதல் பதிவை சேர்க்கவும்",
+"smartInsightNoRecordsBody": "உங்கள் ஆவணங்களை கண்காணிக்க தொடங்குங்கள் மற்றும் Vaultara இங்கே ஸ்மார்ட் நுண்ணறிவுகளை காண்பிக்கும்.",
+"expiryTimelineTitle": "காலாவதி காலவரிசை",
+"expiryTimelineSubtitle": "அந்த மாதத்தில் காலாவதியாகும் பதிவுகளைப் பார்க்க மாதத்தைத் தட்டவும்",
+"expiryTimelineDetailCount": "{count, plural, =1{1 பதிவு} other{{count} பதிவுகள்}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "வரவிருக்கும்",
+"summaryUpcomingCaption": "30 நாட்களுக்குள்",
+"summaryUrgentTitle": "அவசரம்",
+"summaryUrgentCaption": "7 நாட்களுக்குள்"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

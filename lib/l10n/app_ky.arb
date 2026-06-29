@@ -1,0 +1,862 @@
+{
+  "@@locale": "ky",
+  "expiryCalendarTitle": "Мөөнөт календары",
+
+"calendarIntro": "Мөөнөттөрдү кантип көргүңүз келгенин тандаңыз:\n\n• Бүгүнкү күндөн канча күн алдыга көргүңүз келгенин жазыңыз.\n• Же болбосо календарды так күндү тандаңыз.\n\nVaultara ошол күнү мөөнөтү бүткөн нерселерди көрсөтөт.",
+
+"daysFromTodayLabel": "Бүгүнтөн баштап күндөр",
+"daysFromTodayHint": "Мисалы 0, 1, 7, 30",
+
+"apply": "Колдонуу",
+"pickDateOnCalendar": "Календардан күн тандоо",
+
+"today": "Бүгүн",
+"tomorrow": "Эртең",
+"in7Days": "7 күндөн кийин",
+"in30Days": "30 күндөн кийин",
+
+"inDays": "{days} күндөн кийин",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Күндөрдүн санын жазыңыз.",
+"invalidDaysError": "Туура күндөрдүн санын жазыңыз (0 же андан жогору).",
+
+"showingItemsRelative": "{time} мөөнөтү бүткөн нерселер көрсөтүлүүдө",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Тандалган күнү мөөнөтү бүткөн нерселер көрсөтүлүүдө",
+"noItemsOnDate": "Бул күнү мөөнөтү бүткөн нерсе жок.",
+
+"editorAddTitle": "Нерсе кошуу",
+"editorEditTitle": "Нерсени түзөтүү",
+
+"editorCategory": "Категория",
+"editorCategoryHint": "Категорияны тандаңыз",
+
+"editorGroup": "Топ",
+"editorGroupHint": "Топту тандаңыз",
+
+"editorItemName": "Нерсенин аты",
+"editorItemNameHint": "Нерсенин атын жазыңыз",
+
+"editorExpiryDate": "Мөөнөт күнү",
+"editorExpiryDateHint": "Мөөнөт күнүн тандаңыз",
+
+"editorErrorCategory": "Категорияны тандаңыз",
+"editorErrorGroup": "Топту тандаңыз",
+"editorErrorName": "Нерсенин аты милдеттүү",
+"editorErrorExpiry": "Мөөнөт күнүн тандаңыз",
+"editorErrorExpiryPast": "Мөөнөт күнү бүгүн же келечектеги күн болушу керек",
+"cancel": "Жокко чыгаруу",
+"save": "Сактоо",
+
+"addCategoryTitle": "Категория кошуу",
+"unlimitedCategories": "Чексиз категориялар (Premium)",
+
+"categoryUsage": "{current} / {limit} категория колдонулду",
+
+"categoryNameLabel": "Категория",
+"categoryNameHint": "Категорияны жазыңыз",
+
+"categoryLimitReached": "Basic планындагы {limit} категория чегине жеттиңиз. Premium'га өтүңүз.",
+
+"categoryLimitInfo": "Basic планында {limit} категорияга чейин түзө аласыз.",
+
+"categoryErrorEmpty": "Категория милдеттүү",
+"categoryErrorTooShort": "өтө кыска",
+"categoryErrorTooLong": "өтө узун",
+"categoryErrorSymbols": "гана турбашы керек",
+"categoryErrorNumbers": "сандардан гана турбашы керек",
+
+"upgradeRequired": "Жаңыртуу керек",
+"viewPremiumBenefits": "Premium артыкчылыктарын көрүү",
+"createCategory": "Түзүү",
+
+"addGroupTitle": "Топ кошуу",
+"groupNameLabel": "Топ",
+"groupNameHint": "Топту жазыңыз",
+
+"groupErrorEmpty": "Топ милдеттүү",
+"groupErrorTooShort": "Топ өтө кыска",
+"groupErrorTooLong": "Топ өтө узун",
+"groupErrorSymbols": "символдорду камтыбайт",
+"groupErrorNumbers": "сандарды камтыбайт",
+"createGroup": "Түзүү",
+
+"firstNameLabel": "Аты",
+"firstNameHint": "Атын жазыңыз",
+
+"lastNameLabel": "Фамилиясы",
+"lastNameHint": "Фамилиясын жазыңыз",
+
+"emailLabel": "Электрондук почта",
+"loginPasswordHint": "Сырсөзүңүздү жазыңыз",
+"registerPasswordHint": "Сырсөздү жазыңыз",
+"passwordHelper": "Жок дегенде 8 белги, ар түрдүү типтер менен",
+
+"passwordTooShort": "Өтө кыска",
+"passwordTooWeak": "Өтө алсыз",
+"passwordMedium": "Орточо",
+"passwordStrong": "Күчтүү",
+
+"errorFirstName": "Аты милдеттүү",
+"errorLastName": "Фамилиясы милдеттүү",
+"errorEmailInvalid": "Туура электрондук почта дарегин жазыңыз",
+"errorEmailInUse": "Бул электрондук почта дареги буга чейин\nVaultara аккаунтуна байланыштырылган",
+"errorPasswordLength": "Сырсөз кеминде сегиз белгиден турушу керек",
+"errorPasswordWeak": "Күчтүүрөөк сырсөз жазыңыз",
+"errorGeneric": "Катталуу ишке ашкан жок. Кайра аракет кылыңыз",
+
+"createAccount": "Аккаунт түзүү",
+"appName": "Vaultara",
+"authTagline": "Паспорттор, лицензиялар, карталар жана башка маанилүү документтер үчүн жеке борборуңуз",
+"tabSignIn": "Кирүү",
+"tabCreateAccount": "Аккаунт түзүү",
+"signInFooterText": "Жеке Vaultara мейкиндигиңизге кирип, бардык жаңыртууларды көзөмөлдөңүз",
+"createAccountFooterText": "Маанилүү эскертмелерди сактоо жана керек болгондо жетүү үчүн Vaultara аккаунтуңузду түзүңүз",
+
+"emailRequired": "Электрондук почта дареги милдеттүү",
+"passwordRequired": "Сырсөз милдеттүү",
+"emailNotFound": "Туура эмес электрондук почта. Бул дарек менен\nVaultara аккаунту жок",
+"incorrectPassword": "Туура эмес сырсөз",
+
+"emailLabel": "Электрондук почта дареги",
+"emailHint": "Электрондук почтаны жазыңыз",
+"passwordLabel": "Сырсөз",
+"signIn": "Кирүү",
+
+"categoryPersonalIdentification": "Жеке идентификация",
+"categoryDrivingAndVehicles": "Айдоо жана унаалар",
+"categoryTravelAndImmigration": "Саякат жана иммиграция",
+"categoryBankingAndCards": "Банк жана карталар",
+"categoryInsuranceAndCover": "Камсыздандыруу жана коргоо",
+"categoryHealthAndMedical": "Ден соолук жана медицина",
+"categoryWorkAndProfessional": "Иш жана кесиптик",
+"categoryPropertyAndHousing": "Мүлк жана турак жай",
+"categoryHouseholdAndUtilities": "Үй-тиричилик жана коммуналдык кызматтар",
+
+"subcategoryPassports": "Паспорттор",
+"subcategoryIdCards": "Жеке күбөлүктөр",
+"subcategoryResidencePermits": "Жашоого уруксаттар",
+
+"subcategoryDrivingLicences": "Айдоочулук күбөлүктөр",
+"subcategoryVehicleRegistrations": "Унааны каттоо",
+"subcategoryRoadworthyCertificates": "Техникалык жарактуулук күбөлүктөрү",
+"subcategoryVehicleInspectionCertificates": "Унаа текшерүү күбөлүктөрү",
+
+"subcategoryVisas": "Визалар",
+"subcategoryStudyPermits": "Окууга уруксаттар",
+"subcategoryWorkPermits": "Иштөөгө уруксаттар",
+"subcategoryTravelInsuranceDocuments": "Саякат камсыздандыруу документтери",
+
+"subcategoryDebitAndCreditCards": "Дебет жана кредит карталар",
+"subcategoryStoreCards": "Дүкөн карталары",
+"subcategoryFuelCards": "Күйүүчү май карталары",
+"subcategoryVehicleInsurances": "Унаа камсыздандыруулары",
+"subcategoryPropertyInsurances": "Мүлк камсыздандыруулары",
+"subcategoryLifeInsurances": "Өмүрдү камсыздандыруу",
+"subcategoryHealthInsurances": "Ден соолук камсыздандыруусу",
+"subcategoryTravelInsurances": "Саякат камсыздандыруусу",
+
+"subcategoryMedicalPrescriptions": "Медициналык рецепттер",
+"subcategoryOpticalPrescriptions": "Көз айнек рецепттери",
+"subcategoryMedicalCertificates": "Медициналык справкалар",
+
+"subcategoryProfessionalLicences": "Кесиптик лицензиялар",
+"subcategoryProfessionalRegistrations": "Кесиптик каттоолор",
+"subcategoryIndustryRegistrations": "Тармактык каттоолор",
+"subcategoryWorkAccessCards": "Жумушка кирүү карталары",
+
+"subcategoryLeaseAgreements": "Ижара келишимдери",
+"subcategoryAccessCardsAndTags": "Кирүү карталары жана тэгдер",
+"subcategoryParkingPermits": "Токтотмо уруксаттары",
+"subcategorySecurityAccessPermits": "Коопсуздук уруксаттары",
+
+"subcategoryElectricityAccounts": "Электр эсептери",
+"subcategoryWaterAccounts": "Суу эсептери",
+"subcategoryInternetContracts": "Интернет келишимдери",
+"subcategorySecurityServiceContracts": "Коопсуздук кызмат келишимдери",
+
+"searchCategories": "Категорияларды издөө",
+"filterAll": "Баары",
+"filterPreset": "Алдын ала коюлган",
+"filterCustom": "Жеке",
+"addCategoryTitle": "Категория кошуу",
+"customLabel": "Жеке",
+"subcategoriesLabel": "подкатегориялар",
+"itemsLabel": "элементтер",
+
+"itemsExpiring": "{count} элемент {days} күндөн кийин мөөнөтү бүтөт",
+
+"pinnedEssentials": "Белгиленген маанилүүлөр",
+"pinnedHint": "Көбүнчө колдонгон категорияларды белгилеңиз.",
+"noCategoriesFound": "Категориялар табылган жок",
+
+"searchGroups": "Топторду издөө",
+"addGroupTitle": "Топ кошуу",
+
+"basicPlanGroupInfo": "Сиз Basic планындасыз.\nАлдын ала коюлган топторду көрө аласыз.\nPremium'га өтүп, өз топторуңузду түзүңүз.",
+
+"groupDeleted": "Топ өчүрүлдү",
+"undo": "ЖОККО ЧЫГАРУУ",
+
+"groupTapHint": "Бул топко элементтерди кошуу үчүн таптаңыз.",
+"itemsInGroup": "Бул топтогу элементтер",
+"itemsInGroupHint": "Ар бир элементти мөөнөтү менен көзөмөлдөңүз.",
+"searchItems": "Элементтерди издөө",
+"filterExpiringWithin": "{days} күндүн ичинде мөөнөтү бүтөт",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Мөөнөтү бүткөн",
+"addItem": "Элемент кошуу",
+"noItemsYet": "Азырынча элемент жок.",
+
+"statusExpired": "Мөөнөтү бүткөн",
+"statusExpiresToday": "Бүгүн мөөнөтү бүтөт",
+"statusExpiresInOneDay": "1 күндө мөөнөтү бүтөт",
+"statusExpiresInDays": "{days} күндө мөөнөтү бүтөт",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Жарактуу",
+
+"deleteCategoryTitle": "Категорияны өчүрүү",
+"deleteCategoryMessage": "\"{name}\" категориясын өчүргүңүз келеби?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Топту өчүрүү",
+"deleteGroupMessage": "\"{name}\" тобун өчүргүңүз келеби?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Элементти өчүрүү",
+"deleteItemMessage": "\"{name}\" өчүрүлсүнбү?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Жокко чыгаруу",
+"delete": "Өчүрүү",
+
+"homeWelcomeTitle": "Кош келиңиз",
+
+"homeWelcomeFirstTitle": "Кош келиңиз, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Кайра кош келиңиз, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Баары",
+"homeWelcomeSubtitleGeneric": "Vaultara маанилүү мөөнөттөрдү көзөмөлдөөгө жардам берет, эч нерсе байкалбай өтүп кетпеши үчүн.",
+
+"homeWelcomeSubtitleFirst": "Сизди бул жерде көргөнүбүзгө кубанычтабыз. Vaultara маанилүү күндөрдү жана жазууларды бир коопсуз жерде сактайт.",
+
+"homeWelcomeSubtitleBack": "Сизди кайра көргөнүбүзгө кубанычтабыз. Vaultara ар дайым сиздин маанилүү маалыматтарыңыз үчүн даяр.",
+
+"insightEmptyTitle": "Азырынча эч нерсе кошулган жок",
+"insightEmptyBody": "Күндөрдү көзөмөлдөй баштаңыз, Vaultara сизге алдыда болууга жардам берет.",
+
+"insightExpiresTodayTitle": "\"{name}\" бүгүн мөөнөтү бүтөт",
+"insightExpiresTodayBody": "Тез текшерүү тактыкты сактайт.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" эртең мөөнөтү бүтөт",
+"insightExpiresTomorrowBody": "Бүгүн текшерүү кийин убакытты үнөмдөйт.",
+
+"insightExpiresSoonTitle": "\"{name}\" {date} күнү мөөнөтү бүтөт",
+"insightExpiresSoonBody": "Эрте көңүл буруу ишти жеңилдетет.",
+
+"insightNextExpiryTitle": "Кийинки мөөнөт — \"{name}\" {date}",
+"insightNextExpiryBody": "Азыр аракет талап кылынбайт, бирок эстеп коюу жакшы.",
+
+"insightClusteredTitle": "{month} айында бир нече жазуу бүтөт",
+"insightClusteredBody": "Бирге карап чыгуу убакытты үнөмдөйт.",
+
+"insightTopCategoryTitle": "Жазуулардын көбү {category} бөлүмүндө",
+"insightTopCategoryBody": "Бул бөлүмдү карап чыгуу эң чоң пайда берет.",
+
+"insightStableTitle": "Баары туруктуу көрүнөт",
+"insightStableBody": "Азыр көңүл бурууну талап кылган мөөнөттөр жок.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Эскертмелер",
+"notesHint": "Эскертмелерди киргизиңиз",
+"editorReminderTitle": "Эскертүү",
+"editorReminderNone": "Эскертүү жок",
+"editorReminderOnExpiry": "Мөөнөтү бүткөн күнү",
+"editorReminder7Days": "7 күн мурун",
+"editorReminder30Days": "30 күн мурун",
+"editorReminderCustom": "Тандалма",
+"daysBeforeExpiry": "мөөнөткө чейин күн",
+
+"reminderStage0Title": "Мөөнөт эскертүүсү",
+"reminderStage0Body": "{firstName}, сиздин {itemName} {days} күндөн кийин бүтөт.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Эскертүүнү улантуу",
+"reminderStage1Body": "{firstName}, {itemName} али жаңыртылган жок.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Мөөнөт жакындап калды",
+"reminderStage2Body": "{itemName} мөөнөтү жакындап калды.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Акыркы эскертүү",
+"reminderFinalBody": "{firstName}, {itemName} азыр жаңыртыңыз.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Камтуу балансы",
+"coverageAllRepresented": "Жазууларыңыз бардык категорияларды камтыйт.",
+"coverageMissingNamed": "{count} категорияда жазуу жок: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "{count} категорияда жазуу жок, анын ичинде {names} жана дагы {remaining} башка.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Сырсөздү колдонуу",
+"signInWithBiometrics": "Биометрика менен кирүү",
+"enableBiometricsTitle": "Биометрикалык коопсуздукту иштетүү",
+"enableBiometricsBody": "Vaultara-ны коргоо үчүн манжа изин же бет таанууну колдонуңуз.",
+"enableBiometricsReason": "Vaultara үчүн биометрикалык ачуу функциясын иштетүү.",
+"notNow": "Азыр эмес",
+"useBiometrics": "Биометриканы колдонуу",
+
+"recordsCalendarIntro": "Мөөнөттөрдү кантип көргүңүз келерин тандаңыз:\n\n• Канча күн алдыга карагыңыз келерин жазыңыз.\n• Же календардан так күндү тандаңыз.\n\nVaultara ошол күнү мөөнөтү бүтө турган жазууларды көрсөтөт.",
+
+"showingRecordsRelative": "{time} мөөнөтү бүткөн жазуулар көрсөтүлүүдө",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Тандалган күнү мөөнөтү бүткөн жазуулар көрсөтүлүүдө",
+
+"noRecordsOnDate": "Бул күнү мөөнөтү бүткөн жазуулар жок.",
+
+"recordEditorAddTitle": "Жазуу кошуу",
+"recordEditorEditTitle": "Жазууну өзгөртүү",
+
+"editorRecordName": "Жазуунун аталышы",
+"editorRecordNameHint": "Жазуунун атын киргизиңиз",
+"recordEditorErrorName": "Жазуунун аты милдеттүү",
+
+"recordsGroupTapHint": "Бул топко жазууларды кошуу жана көзөмөлдөө үчүн басыңыз.",
+
+"recordsInGroup": "Бул топтогу жазуулар",
+
+"recordsInGroupHint": "Ар бир маанилүү жазууну анын мөөнөтү менен көзөмөлдөңүз.",
+
+"searchRecords": "Жазууларды издөө",
+
+"addRecord": "Жазуу кошуу",
+
+"noRecordsYet": "Азырынча жазуулар жок.",
+"deleteRecordTitle": "Жазууну өчүрүү",
+
+"recordsInsightClusteredTitle": "Бир нече жазуу {month} айында бүтөт",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Жазууларыңыздын көбү {category} категориясында",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Бардык жазуулар",
+
+"recordsStabilityDecliningBody": "Айрым жазуулардын мөөнөтү өттү, ал эми башкалары жакында бүтөт.",
+
+"recordsCoverageAllRepresented": "Жазууларыңыз бардык категорияларды камтыйт.",
+
+"recordReminderStage0Body": "{firstName}, сиздин {recordName} {days} күндөн кийин бүтөт.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, сиздин {recordName} али жаңыртылган жок.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName} мөөнөтү жакындап калды.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, {recordName} азыр жаңыртыңыз.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Азырынча топтор жок",
+
+"recordsExpiring": "{count, plural, one {1 жазуу {days} күндөн кийин бүтөт} other {{count} жазуу {days} күндөн кийин бүтөт}}",
+
+"recordsGroupStats": "{records, plural, one {1 жазуу} other {{records} жазуу}} • {expiring} {days} күн ичинде бүтөт",
+
+"groupLabel": "{count, plural, one {{count} топ} other {{count} топ}}",
+
+"recordsLabel": "{count, plural, one {{count} жазуу} other {{count} жазуу}}",
+
+"forgotPassword": "Сырсөздү унуттуңузбу?",
+"forgotPasswordTitle": "Сырсөздү калыбына келтирүү",
+"forgotPasswordBody": "Эл. почтаңызды киргизиңиз, биз сизге калыбына келтирүү шилтемесин жөнөтөбүз.",
+"sendResetLink": "Калыбына келтирүү шилтемесин жөнөтүү",
+"passwordResetEmailSent": "Сырсөздү калыбына келтирүү каты жөнөтүлдү.",
+"verifyEmailToContinue": "Кирүүдөн мурун эл. почтаңызды ырастаңыз",
+
+"changeEmailTitle": "Эл. почтаны өзгөртүү",
+"newEmailHint": "Жаңы эл. почтаны киргизиңиз",
+"sendVerificationEmail": "Ырастоо катын жөнөтүү",
+
+"deleteAccountTitle": "Каттоо эсебин өчүрүү",
+"deleteAccountWarning": "Бул аракет каттоо эсебиңизди жана бардык маалыматтарды түбөлүк өчүрөт.\nАны кайтаруу мүмкүн эмес.",
+"deleteAccountConfirm": "Каттоо эсебин түбөлүк өчүрүү",
+
+"supportTitle": "Колдоо",
+"supportSubtitle": "Жардам керек болсо же суроолоруңуз болсо, биз менен байланышыңыз.",
+"supportEmailSubject": "Vaultara колдоо суроосу",
+"supportEmailError": "Эл. почта колдонмосун ачуу мүмкүн болгон жок.",
+
+"passwordResetEmailFailed": "Сырсөздү калыбына келтирүү катын жөнөтүү мүмкүн болгон жок.",
+
+"loggedInPasswordResetBody": "Сырсөздү калыбына келтирүү шилтемеси төмөнкү дарекке жөнөтүлөт:\n{email}",
+
+"accountManagementTitle": "Каттоо эсебин башкаруу",
+"changeEmailSubtitle": "Каттоо эсебиңизге байланышкан эл. почтаны жаңыртыңыз.",
+"changePasswordTitle": "Сырсөздү өзгөртүү",
+"changePasswordSubtitle": "Коопсуз өзгөртүү үчүн шилтеме жөнөтөбүз.",
+
+"deleteAccountSubtitle": "Vaultara каттоо эсебин түбөлүк өчүрүү.",
+
+"biometricAuthReason": "Vaultara каттоо эсебине кирүү үчүн аутентификация.",
+
+"verifyEmailTitle": "Эл. почтаны ырастаңыз",
+"verifyEmailBody": "Сизге ырастоо каты жөнөтүлдү. Аны ачып, даректи ырастаңыз, андан кийин бул жерге кайтып келиңиз.",
+"verifyEmailConfirmedButton": "Эл. почтаны ырастадым",
+"verifyEmailResendButton": "Ырастоо катын кайра жөнөтүү",
+"verifyEmailSending": "Жөнөтүлүүдө...",
+"navHome": "Башкы",
+"navCategories": "Бөлүм",
+"navInsights": "Талдоо",
+"navCalendar": "Жылнаама",
+
+"tutorialCancel": "Жокко чыгаруу",
+"tutorialNext": "Кийинки",
+"tutorialEnd": "Окутууну аяктоо",
+
+"softDeleteCategory": "Категория",
+"softDeleteGroup": "Топ",
+"softDeleteRecord": "Жазуу",
+
+"softDeleteTitle": "{type} Жакында өчүрүлгөндөргө жылдыруу",
+"softDeleteMessage": "{type} \"{name}\" Жакында өчүрүлгөндөргө жылдырылат.\n\nАны 30 күн ичинде калыбына келтирсе болот. Андан кийин түбөлүк өчүрүлөт.",
+"softDeleteMove": "Жылдыруу",
+"@recordsExpiring": { "description": "Мөөнөтү бүтүп жаткан жазуулар саны", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "Топ статистикасы", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "Топтордун саны", "placeholders": { "count": { "type": "num"} } },
+"@recordsLabel": { "description": "Жазуулардын саны", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "Сырсөздү калыбына келтирүү каты жөнөтүлөрүн билдирет", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "Убактылуу өчүрүү аталышы", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "Убактылуу өчүрүү түшүндүрмөсү", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "Жакында өчүрүлгөндөр",
+"categories": "Категориялар",
+"groups": "Топтор",
+"records": "Жазуулар",
+"restore": "Калыбына келтирүү",
+"deletePermanently": "Түбөлүк өчүрүү",
+
+"recentlyDeletedBanner": "Өчүрүлгөн {type} элементтери түбөлүк өчүрүлгөнгө чейин 30 күн сакталат.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Өчүрүлгөн {type} издөө",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Азырынча өчүрүлгөн {type} жок",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Категорияны таптап, анын топторун көрүп, жазууларды башкарыңыз.",
+"groupsHint": "Топтор бул категориядагы жазууларды иреттейт. Топту таптап, жазууларды башкарыңыз.",
+"notLoggedIn": "Кирген жоксуз",
+
+"recordsInsideGroupHint": "Бул — ушул топтогу жазуулар.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" Жакында өчүрүлгөндөргө көчүрүлдү",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" ийгиликтүү өчүрүлдү",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Айдоочулук күбөлүк"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" ийгиликтүү жаңыртылды",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Виза"} } },
+
+"snackAddedSuccessfully": "\"{name}\" ийгиликтүү кошулду",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Камсыздандыруу"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" ийгиликтүү калыбына келтирилди",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Паспорт"} } },
+
+"snackFreeLimitReached": "Акысыз чектөө жетти ({current}/{limit}). Көбүрөөк кошуу үчүн жаңыртыңыз.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Бардык жазууларды издөө",
+"globalSearchHint": "Жазуунун атын, категорияны же топту киргизиңиз",
+"globalSearchNoMatches": "Издөөгө ылайык келген жазуулар табылган жок.",
+"snackNoRecordsToSearch": "Издөө үчүн жазуулар жок. Бир нече жазуу кошсоңуз, Vaultara аларды автоматтык түрдө индекстейт.",
+
+"recoveryCentreTitle": "Калыбына келтирүү борбору",
+"recoveryCentreSubtitle": "Өчүрүлгөн жазууларды калыбына келтириңиз же түбөлүк өчүрүңүз.",
+
+"plan_premium": "Премиум",
+"plan_free": "Акысыз",
+
+"profile_app_settings_title": "Колдонмо жөндөөлөрү",
+"profile_privacy_security_title": "Купуялуулук жана коопсуздук",
+"profile_biometric_on": "Бул түзмөктө биометрикалык кулпу күйгүзүлгөн.",
+"profile_biometric_off": "Бул түзмөктө биометрикалык кулпу өчүрүлгөн.",
+"profile_biometric_enable_reason": "Биометрикалык кулпуну күйгүзүү үчүн өздүгүңүздү тастыктаңыз.",
+"profile_biometric_disable_reason": "Биометрикалык кулпуну өчүрүү үчүн өздүгүңүздү тастыктаңыз.",
+"profile_account_management_title": "Каттоо эсебин башкаруу",
+"profile_premium_active_title": "Premium активдүү",
+"profile_premium_upgrade_title": "Premiumга жаңыртуу",
+"profile_premium_active_subtitle": "Өркүндөтүлгөн эскертмелер ачылды.",
+"profile_premium_upgrade_subtitle": "Өркүндөтүлгөн эскертмелерди жана чексиз уюштурууну ачыңыз.",
+"profile_manage_cancel_hint": "Google Play аркылуу каалаган убакта башкарууга же жокко чыгарууга болот.",
+"profile_manage_subscription_button": "Жазылууну башкаруу",
+"plansTitle": "Планды тандаңыз",
+"plansTrialBanner": "7 күндүк акысыз сыноо менен баштаңыз.\nКаалаган убакта токтотуңуз.",
+"plansLoading": "Жүктөлүүдө…",
+"plansStartFreeTrial": "Акысыз сыноону баштоо",
+"plansNoChargeTodayFooter": "7 күн акысыз · Бүгүн төлөм жок",
+
+"planFreeTitle": "Акысыз",
+"planFreeSubtitle": "Баштоо үчүн",
+"planPremiumMonthlyTitle": "Premium айлык",
+"planPremiumYearlyTitle": "Premium жылдык",
+"planPerMonth": "айына",
+"planPerYear": "жылына",
+
+"planBadgeCurrent": "Учурдагы план",
+"planBadgePopular": "Популярдуу",
+"planBadgeBestValue": "Эң жакшы баа",
+
+"planYouAreOnThisPlan": "Сиз бул пландасыз.",
+
+"planFeatureUpToRecords": "{count} жазмага чейин",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Ыңгайлаштырылган категориялар ({count}-ке чейин)",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Даяр субкатегориялар",
+"planFeatureCloudStorage": "Булут сактагыч",
+"planFeatureSmartExpiryInsights": "Акылдуу мөөнөт эскертмелери",
+"planFeatureCoverageBalance": "Камтуу тең салмактуулугу",
+"planFeatureRecordStabilityTracking": "Жазмалардын туруктуулугун көзөмөлдөө",
+
+"planFeatureUnlimitedRecords": "Чексиз жазмалар",
+"planFeatureUnlimitedCategories": "Чексиз категориялар",
+"planFeatureCustomSubcategories": "Ыңгайлаштырылган субкатегориялар",
+"planFeatureMultipleRemindersPerRecord": "Бир нече эскертме",
+"planFeatureAdvancedReminderTiming": "Өркүндөтүлгөн убакыттоо",
+"planFeatureAutomaticFollowUps": "Автоматтык эскертмелер",
+
+"planFeatureEverythingInMonthly": "Айлык пландагы бардыгы",
+"planFeatureSavePercentComparedToMonthly": "Айлыкка салыштырмалуу {percent}% үнөмдөңүз",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Эң жакшы узак мөөнөттүү баа",
+
+"editorReminderLabel": "Эскертме",
+"editorReminderSelectOptional": "Эскертмени тандаңыз (милдеттүү эмес)",
+"editorReminderOnExpiry": "Мөөнөт күнү",
+"editorReminderDaysBefore": "Мөөнөткө {days} күн калганда",
+"editorFreeItemsCount": "Акысыз элементтер: {used}/{limit}",
+"editorExpiryPastWarning": "Мөөнөтү өтүп кеткен.",
+"editorExpiryTodayWarning": "Бул жазманын мөөнөтү бүгүн бүтөт.",
+"editorErrorExpiryPast": "Мөөнөт өткөн күн болбошу керек.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Бүгүнкү жыйынтыктар",
+"tutorialBannerTitle": "Ыкчам таанышуу",
+"tutorialBannerBody": "Бир мүнөттө кайдан издөө, кантип жазма кошуу жана жыйынтыктар эмнени билдирерин билиңиз.",
+"tutorialBannerStart": "Таанышуу баштоо",
+"tutorialBannerDismiss": "Азыр эмес",
+"authErrorUserDisabled": "Бул эсеп өчүрүлгөн.",
+"authErrorNetwork": "Тармак катасы. Интернетти текшерип, кайра аракет кылыңыз.",
+"authErrorTooManyRequests": "Өтө көп аракет. Кийинчерээк кайра көрүңүз.",
+"authErrorSignInFailed": "Кирүү ишке ашкан жок. Кайра аракет кылыңыз.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium иштетилди",
+"snackPremiumRestored": "Premium калыбына келтирилди",
+"passwordNeedLower": "Кичине тамга болушу керек",
+"passwordNeedUpper": "Чоң тамга болушу керек",
+"passwordNeedNumber": "Сан болушу керек",
+"passwordNeedSymbol": "Белги болушу керек",
+"summaryAllTitle": "Бардык элементтер",
+"summaryAllCaption": "Vaultara ичинде көзөмөлдөнөт",
+"summarySoonTitle": "Жакында мөөнөтү бүтөт",
+"summarySoonCaption": "30 күндүн ичинде",
+"summaryWeekTitle": "Ушул жумада",
+"summaryWeekCaption": "7 күндө мөөнөтү бүтөт",
+"summaryExpiredTitle": "Мөөнөтү бүткөн",
+"summaryExpiredCaption": "Мөөнөтү өтүп кеткен",
+
+"stabilityStableTitle": "Баары туруктуу көрүнөт",
+"stabilityStableBody": "Жазууларыңызда жакынкы же топтолуп жаткан тобокелдиктер жок.",
+"stabilityDecliningTitle": "Туруктуулук төмөндөп жатат",
+"stabilityDecliningBody": "Айрым элементтердин мөөнөтү өттү, дагы бир нечеси жакында бүтөт.",
+"stabilityWeakenedTitle": "Туруктуулук алсырады",
+"stabilityWeakenedBody": "Мөөнөтү өтүп кеткен жазуулар бар, бул жалпы ишенимдүүлүктү төмөндөтөт.",
+"stabilityPressureTitle": "Басым күчөп жатат",
+"stabilityPressureBody": "Туруктуулукту сактоо үчүн бир нече жазууга жакында көңүл буруу керек.",
+
+"tutorialHomeSearch": "Издөө тилкесин колдонуп, көзөмөлдөп жаткан каалаган жазууну бат табыңыз.",
+"tutorialHomeFab": "Биринчи жазууңузду ушул жерден кошуңуз.\nКайсы жерге таандык экенин тандап, кааласаңыз эскертме кошуп, мөөнөт күнүн белгилеңиз.",
+"tutorialHomeSummary": "Көбүрөөк жазуу кошкондо, бул бөлүм мөөнөтү жакындаган же өтүп кеткендерди бат байкоого жардам берет.",
+"tutorialHomeInsight": "Бул акылдуу түшүнүк үлгүлөрдү жана жакындап жаткан мөөнөттөрдү көрсөтөт.\nКааласаңыз, үн аркылуу угуу үчүн динамик белгисин таптасаңыз болот.",
+"tutorialHomeCoverage": "Камтуу балансы жазууларыңыздын бардык категорияларга канчалык тең бөлүштүрүлгөнүн көрсөтөт.\nЖогорку баланс — көзөмөлдөөгү боштуктар азыраак дегенди билдирет.",
+"tutorialHomeStability": "Туруктуулук жазууларыңыз убакыт өтүшү менен канчалык ишенимдүү экенин көрсөтөт.\nМөөнөтү өтүп кеткен жана жакында бүтө турган жазуулар жалпы туруктуулукту төмөндөтүшү мүмкүн.",
+
+"profile_account_management_subtitle": "Эл. почтаны, сырсөздү өзгөртүңүз же аккаунтуңузду өчүрүңүз.",
+"confirmIdentityTitle": "Өздүгүн тастыктоо",
+"confirm": "Тастыктоо",
+"profile_sign_out_title": "Чыгуу",
+"profile_sign_out_subtitle": "Бул түзмөктө Vaultara'дан чыгуу",
+"profile_sign_out_confirm_title": "Чыгасызбы?",
+"profile_sign_out_confirm_body": "Каттоо эсебиңизге кирүү үчүн кайра киришиңиз керек болот.",
+"profile_sign_out_action": "Чыгуу",
+"todayInsightsAudioHint": "Үн каалайсызбы? Динамик белгисин колдонуңуз.",
+"category2Label": "Категория",
+"enable2BiometricsBody": "Vaultara аккаунтуңузду коргоо үчүн манжа изин колдонуңуз.",
+"snackNotificationsDisabled": "Билдирмелер өчүрүлгөн. Эскертмелерди алуу үчүн күйгүзүңүз.",
+"openSettings": "Орнотууларды ачуу",
+
+"reminderOnExpiryTitle": "Бүгүн бүтөт",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Салам {firstName}, \"{itemName}\" бүгүн бүтөт.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Акысыз категориялар: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Акысыз лимиттен канча акысыз категория колдонулганын көрсөтөт.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Эскертмелерди кошуу (милдеттүү эмес)",
+"apply": "Колдонуу",
+"smartInsightExpiresTodayHeading": "Бүгүн мөөнөтү аяктайт",
+"smartInsightExpiresTodaySingleBody": "{name} бүгүн мөөнөтү аяктайт. Аны актуалдуу сактоо үчүн азыр аракет кылыңыз.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} жана дагы {extra} документ бүгүн мөөнөтү аяктайт.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Көңүл бурууну талап кылат",
+"smartInsightSilentRiskBody": "{name} документинин мөөнөтү {days} күндөн кийин аяктайт жана эскертме коюлган эмес. Маалыматтар дагы эле туура экенин текшериңиз.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Бир нече жакын жаңыртуу",
+"smartInsightRenewalTwinBodyTwo": "{a} жана {b} үч жуманын ичинде мөөнөтү аяктайт. Алдын ала пландаңыз.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} жана {c} үч жуманын ичинде мөөнөтү аяктайт. Алдын ала пландаңыз.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} жана дагы {extra} документ үч жуманын ичинде мөөнөтү аяктайт. Алдын ала пландаңыз.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Жакында боло турган топ",
+"smartInsightClusterBody": "{category} категориясындагы {count} документ кийинки эки айда мөөнөтү аяктайт. Аларды чогуу жаңыртууну ойлонуп көрүңүз.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Алдыда тынч мезгил",
+"smartInsightQuietPeriodBody": "Кийинки {days} күн ичинде эч нерсенин мөөнөтү аяктабайт. Кийинки жаңыртуу күнү — {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Баары жаңыртылган",
+"smartInsightAllCaughtUpBody": "Алдыдагы {count} мөөнөт үчүн эскертмелер коюлган. Учурда көңүл бурууну талап кылган эч нерсе жок.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Баары жаңыртылган. Учурда көңүл бурууну талап кылган эч нерсе жок.",
+"smartInsightNoRecordsHeading": "Биринчи жазууңузду кошуңуз",
+"smartInsightNoRecordsBody": "Документтериңизди көзөмөлдөй баштаңыз, Vaultara бул жерде акылдуу сунуштарды көрсөтөт.",
+"expiryTimelineTitle": "Аякташ убакыт шкаласы",
+"expiryTimelineSubtitle": "Ошол айда аяктоочу жазууларды көрүү үчүн айды басыңыз",
+"expiryTimelineDetailCount": "{count, plural, =1{1 жазуу} other{{count} жазуу}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Алдыдагы",
+"summaryUpcomingCaption": "30 күн ичинде",
+"summaryUrgentTitle": "Шашылыш",
+"summaryUrgentCaption": "7 күн ичинде"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

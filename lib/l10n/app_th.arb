@@ -1,0 +1,874 @@
+{
+  "@@locale": "th",
+  "expiryCalendarTitle": "ปฏิทินวันหมดอายุ",
+
+"calendarIntro": "เลือกวิธีที่คุณต้องการดูวันหมดอายุ:\n\n• พิมพ์จำนวนวันจากวันนี้ที่ต้องการดู\n• หรือเลือกวันที่จากปฏิทิน\n\nVaultara จะแสดงรายการที่หมดอายุในวันนั้น",
+
+"daysFromTodayLabel": "จำนวนวันจากวันนี้",
+"daysFromTodayHint": "เช่น 0, 1, 7, 30",
+
+"apply": "ใช้",
+"pickDateOnCalendar": "เลือกวันที่ในปฏิทิน",
+
+"today": "วันนี้",
+"tomorrow": "พรุ่งนี้",
+"in7Days": "ใน 7 วัน",
+"in30Days": "ใน 30 วัน",
+
+"inDays": "ใน {days} วัน",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "กรุณากรอกจำนวนวัน",
+"invalidDaysError": "กรุณากรอกจำนวนวันที่ถูกต้อง (0 หรือมากกว่า)",
+
+"showingItemsRelative": "แสดงรายการที่หมดอายุ {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "แสดงรายการที่หมดอายุในวันที่เลือก",
+"noItemsOnDate": "ไม่มีรายการใดหมดอายุในวันนั้น",
+
+"editorAddTitle": "เพิ่มรายการ",
+"editorEditTitle": "แก้ไขรายการ",
+
+"editorCategory": "หมวดหมู่",
+"editorCategoryHint": "เลือกหมวดหมู่",
+
+"editorGroup": "กลุ่ม",
+"editorGroupHint": "เลือกกลุ่มในหมวดหมู่นี้",
+
+"editorItemName": "ชื่อรายการ",
+"editorItemNameHint": "กรอกชื่อรายการ",
+
+"editorExpiryDate": "วันหมดอายุ",
+"editorExpiryDateHint": "เลือกวันหมดอายุ",
+
+"editorErrorCategory": "กรุณาเลือกหมวดหมู่",
+"editorErrorGroup": "กรุณาเลือกกลุ่ม",
+"editorErrorName": "ต้องระบุชื่อรายการ",
+"editorErrorExpiry": "กรุณาเลือกวันหมดอายุ",
+"editorErrorExpiryPast": "วันหมดอายุต้องเป็นวันนี้หรือในอนาคต",
+"cancel": "ยกเลิก",
+"save": "บันทึก",
+
+"addCategoryTitle": "เพิ่มหมวดหมู่",
+"unlimitedCategories": "หมวดหมู่ไม่จำกัด (Premium)",
+
+"categoryUsage": "ใช้แล้ว {current} / {limit} หมวดหมู่",
+
+"categoryNameLabel": "หมวดหมู่",
+"categoryNameHint": "กรอกหมวดหมู่",
+
+"categoryLimitReached": "คุณถึงขีดจำกัด {limit} หมวดหมู่ของแผน Basic แล้ว อัปเกรดเป็น Premium",
+
+"categoryLimitInfo": "แผน Basic สร้างได้สูงสุด {limit} หมวดหมู่",
+
+"categoryErrorEmpty": "ต้องระบุหมวดหมู่",
+"categoryErrorTooShort": "หมวดหมู่สั้นเกินไป",
+"categoryErrorTooLong": "หมวดหมู่ยาวเกินไป",
+"categoryErrorSymbols": "ไม่สามารถเป็นสัญลักษณ์ล้วนได้",
+"categoryErrorNumbers": "ไม่สามารถเป็นตัวเลขล้วนได้",
+
+"upgradeRequired": "ต้องอัปเกรด",
+"viewPremiumBenefits": "ดูสิทธิประโยชน์ Premium",
+"createCategory": "สร้าง",
+
+"addGroupTitle": "เพิ่มกลุ่ม",
+"groupNameLabel": "กลุ่ม",
+"groupNameHint": "กรอกกลุ่ม",
+
+"groupErrorEmpty": "ต้องระบุกลุ่ม",
+"groupErrorTooShort": "กลุ่มสั้นเกินไป",
+"groupErrorTooLong": "กลุ่มยาวเกินไป",
+"groupErrorSymbols": "ไม่สามารถมีสัญลักษณ์ได้",
+"groupErrorNumbers": "ไม่สามารถมีตัวเลขได้",
+"createGroup": "สร้าง",
+
+"firstNameLabel": "ชื่อ",
+"firstNameHint": "กรอกชื่อ",
+
+"lastNameLabel": "นามสกุล",
+"lastNameHint": "กรอกนามสกุล",
+
+"emailLabel": "อีเมล",
+"loginPasswordHint": "กรอกรหัสผ่านของคุณ",
+"registerPasswordHint": "กรอกรหัสผ่าน",
+"passwordHelper": "อย่างน้อย 8 ตัวอักษร และใช้หลายประเภท",
+
+"passwordTooShort": "สั้นเกินไป",
+"passwordTooWeak": "อ่อนเกินไป",
+"passwordMedium": "ปานกลาง",
+"passwordStrong": "แข็งแรง",
+
+"errorFirstName": "ต้องระบุชื่อ",
+"errorLastName": "ต้องระบุนามสกุล",
+"errorEmailInvalid": "กรุณากรอกอีเมลที่ถูกต้อง",
+"errorEmailInUse": "อีเมลนี้ถูก\nเชื่อมโยงกับบัญชี Vaultara แล้ว",
+"errorPasswordLength": "รหัสผ่านต้องมีอย่างน้อยแปดตัวอักษร",
+"errorPasswordWeak": "กรุณากรอกรหัสผ่านที่แข็งแรงขึ้น",
+"errorGeneric": "การลงทะเบียนล้มเหลว กรุณาลองอีกครั้ง",
+
+"createAccount": "สร้างบัญชี",
+"appName": "Vaultara",
+"authTagline": "ศูนย์กลางส่วนตัวสำหรับพาสปอร์ต ใบอนุญาต บัตร และสิ่งสำคัญอื่น ๆ ของคุณ",
+"tabSignIn": "เข้าสู่ระบบ",
+"tabCreateAccount": "สร้างบัญชี",
+"signInFooterText": "เข้าสู่ระบบเพื่อเข้าถึงพื้นที่ Vaultara ของคุณและควบคุมการต่ออายุทั้งหมด",
+"createAccountFooterText": "สร้างบัญชี Vaultara เพื่อสำรองการแจ้งเตือนสำคัญและเข้าถึงได้ทุกเมื่อ",
+
+"emailRequired": "ต้องระบุอีเมล",
+"passwordRequired": "ต้องระบุรหัสผ่าน",
+"emailNotFound": "อีเมลไม่ถูกต้อง ไม่มี\nบัญชี Vaultara ที่ใช้อีเมลนี้",
+"incorrectPassword": "รหัสผ่านไม่ถูกต้อง",
+
+"emailLabel": "อีเมล",
+"emailHint": "กรอกอีเมล",
+"passwordLabel": "รหัสผ่าน",
+"signIn": "เข้าสู่ระบบ",
+
+"categoryPersonalIdentification": "การระบุตัวตนส่วนบุคคล",
+"categoryDrivingAndVehicles": "การขับขี่และยานพาหนะ",
+"categoryTravelAndImmigration": "การเดินทางและการย้ายถิ่น",
+"categoryBankingAndCards": "ธนาคารและบัตร",
+"categoryInsuranceAndCover": "ประกันและความคุ้มครอง",
+"categoryHealthAndMedical": "สุขภาพและการแพทย์",
+"categoryWorkAndProfessional": "งานและวิชาชีพ",
+"categoryPropertyAndHousing": "ทรัพย์สินและที่อยู่อาศัย",
+"categoryHouseholdAndUtilities": "ครัวเรือนและสาธารณูปโภค",
+
+"subcategoryPassports": "พาสปอร์ต",
+"subcategoryIdCards": "บัตรประจำตัว",
+"subcategoryResidencePermits": "ใบอนุญาตพำนัก",
+
+"subcategoryDrivingLicences": "ใบขับขี่",
+"subcategoryVehicleRegistrations": "ทะเบียนรถ",
+"subcategoryRoadworthyCertificates": "ใบรับรองสภาพรถ",
+"subcategoryVehicleInspectionCertificates": "ใบรับรองการตรวจสภาพรถ",
+
+"subcategoryVisas": "วีซ่า",
+"subcategoryStudyPermits": "ใบอนุญาตศึกษา",
+"subcategoryWorkPermits": "ใบอนุญาตทำงาน",
+"subcategoryTravelInsuranceDocuments": "เอกสารประกันการเดินทาง",
+
+"subcategoryDebitAndCreditCards": "บัตรเดบิตและเครดิต",
+"subcategoryStoreCards": "บัตรร้านค้า",
+"subcategoryFuelCards": "บัตรน้ำมัน",
+"subcategoryVehicleInsurances": "ประกันยานพาหนะ",
+"subcategoryPropertyInsurances": "ประกันทรัพย์สิน",
+"subcategoryLifeInsurances": "ประกันชีวิต",
+"subcategoryHealthInsurances": "ประกันสุขภาพ",
+"subcategoryTravelInsurances": "ประกันการเดินทาง",
+
+"subcategoryMedicalPrescriptions": "ใบสั่งยา",
+"subcategoryOpticalPrescriptions": "ใบสั่งแว่น",
+"subcategoryMedicalCertificates": "ใบรับรองแพทย์",
+
+"subcategoryProfessionalLicences": "ใบอนุญาตวิชาชีพ",
+"subcategoryProfessionalRegistrations": "การลงทะเบียนวิชาชีพ",
+"subcategoryIndustryRegistrations": "การลงทะเบียนอุตสาหกรรม",
+"subcategoryWorkAccessCards": "บัตรผ่านการทำงาน",
+
+"subcategoryLeaseAgreements": "สัญญาเช่า",
+"subcategoryAccessCardsAndTags": "บัตรและแท็กการเข้าใช้งาน",
+"subcategoryParkingPermits": "ใบอนุญาตจอดรถ",
+"subcategorySecurityAccessPermits": "ใบอนุญาตเข้าพื้นที่รักษาความปลอดภัย",
+
+"subcategoryElectricityAccounts": "บัญชีค่าไฟฟ้า",
+"subcategoryWaterAccounts": "บัญชีค่าน้ำ",
+"subcategoryInternetContracts": "สัญญาอินเทอร์เน็ต",
+"subcategorySecurityServiceContracts": "สัญญาบริการรักษาความปลอดภัย",
+
+"searchCategories": "ค้นหาหมวดหมู่",
+"filterAll": "ทั้งหมด",
+"filterPreset": "ตั้งไว้ล่วงหน้า",
+"filterCustom": "กำหนดเอง",
+"addCategoryTitle": "เพิ่มหมวดหมู่",
+"customLabel": "กำหนดเอง",
+"subcategoriesLabel": "หมวดย่อย",
+"itemsLabel": "รายการ",
+
+"itemsExpiring": "{count} รายการจะหมดอายุใน {days} วัน",
+
+"pinnedEssentials": "รายการที่ปักหมุด",
+"pinnedHint": "ปักหมุดหมวดหมู่ที่คุณใช้บ่อยเพื่อให้อยู่ด้านบนของรายการ",
+"noCategoriesFound": "ไม่พบหมวดหมู่",
+
+"searchGroups": "ค้นหากลุ่ม",
+"addGroupTitle": "เพิ่มกลุ่ม",
+
+"basicPlanGroupInfo": "คุณอยู่ในแผน Basic\nสามารถดูกลุ่มที่ตั้งไว้ล่วงหน้าได้\nอัปเกรดเป็น Premium เพื่อสร้างกลุ่มของคุณเอง",
+
+"groupDeleted": "ลบกลุ่มแล้ว",
+"undo": "เลิกทำ",
+
+"groupTapHint": "แตะเพื่อเพิ่มและติดตามรายการในกลุ่มนี้",
+"itemsInGroup": "รายการในกลุ่มนี้",
+"itemsInGroupHint": "ติดตามรายการสำคัญแต่ละรายการพร้อมวันหมดอายุ",
+"searchItems": "ค้นหารายการ",
+"filterExpiringWithin": "หมดอายุภายใน {days} วัน",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "หมดอายุแล้ว",
+"addItem": "เพิ่มรายการ",
+"noItemsYet": "ยังไม่มีรายการ",
+
+"statusExpired": "หมดอายุแล้ว",
+"statusExpiresToday": "หมดอายุวันนี้",
+"statusExpiresInOneDay": "หมดอายุใน 1 วัน",
+"statusExpiresInDays": "หมดอายุใน {days} วัน",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "ยังใช้ได้",
+
+"deleteCategoryTitle": "ลบหมวดหมู่",
+"deleteCategoryMessage": "คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่ \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "ลบกลุ่ม",
+"deleteGroupMessage": "คุณแน่ใจหรือไม่ว่าต้องการลบกลุ่ม \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "ลบรายการ",
+"deleteItemMessage": "คุณแน่ใจหรือไม่ว่าต้องการลบ \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "ยกเลิก",
+"delete": "ลบ",
+
+"homeWelcomeTitle": "ยินดีต้อนรับ",
+
+"homeWelcomeFirstTitle": "ยินดีต้อนรับ, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "ยินดีต้อนรับกลับ, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "ทั้งหมด",
+"homeWelcomeSubtitleGeneric": "Vaultara ช่วยให้คุณติดตามวันหมดอายุสำคัญ เพื่อไม่ให้สิ่งใดหมดอายุโดยไม่รู้ตัว",
+
+"homeWelcomeSubtitleFirst": "ยินดีที่ได้พบคุณ Vaultara ช่วยให้คุณจัดระเบียบวันสำคัญและเอกสารไว้ในที่ปลอดภัยแห่งเดียว",
+
+"homeWelcomeSubtitleBack": "ดีใจที่ได้พบคุณอีกครั้ง Vaultara พร้อมช่วยคุณตรวจสอบวันสำคัญและเอกสารเสมอ",
+
+"insightEmptyTitle": "ยังไม่มีรายการ",
+"insightEmptyBody": "เมื่อคุณเริ่มติดตามวันสำคัญ Vaultara จะช่วยให้คุณนำหน้ากำหนดเวลา",
+
+"insightExpiresTodayTitle": "\"{name}\" หมดอายุวันนี้",
+"insightExpiresTodayBody": "ตรวจสอบตอนนี้ช่วยให้ข้อมูลถูกต้อง",
+
+"insightExpiresTomorrowTitle": "\"{name}\" หมดอายุพรุ่งนี้",
+"insightExpiresTomorrowBody": "ตรวจสอบวันนี้ช่วยประหยัดเวลาในภายหลัง",
+
+"insightExpiresSoonTitle": "\"{name}\" หมดอายุวันที่ {date}",
+"insightExpiresSoonBody": "จัดการล่วงหน้าจะทำให้สบายขึ้น",
+
+"insightNextExpiryTitle": "รายการถัดไปคือ \"{name}\" วันที่ {date}",
+"insightNextExpiryBody": "ยังไม่ต้องดำเนินการ แต่ควรจำไว้",
+
+"insightClusteredTitle": "หลายรายการหมดอายุช่วง {month}",
+"insightClusteredBody": "ตรวจพร้อมกันช่วยประหยัดเวลา",
+
+"insightTopCategoryTitle": "รายการส่วนใหญ่อยู่ใน {category}",
+"insightTopCategoryBody": "ตรวจหมวดนี้ให้ผลดีที่สุด",
+
+"insightStableTitle": "ทุกอย่างดูปกติ",
+"insightStableBody": "ไม่มีรายการที่ต้องกังวลตอนนี้",
+
+"summaryAllTitle": "รายการทั้งหมด",
+"summaryAllCaption": "ติดตามใน Vaultara",
+"summarySoonTitle": "ใกล้หมดอายุ",
+"summarySoonCaption": "ภายใน 30 วัน",
+"summaryWeekTitle": "สัปดาห์นี้",
+"summaryWeekCaption": "หมดอายุใน 7 วัน",
+"summaryExpiredTitle": "หมดอายุแล้ว",
+"summaryExpiredCaption": "เลยวันหมดอายุ",
+
+"stabilityStableTitle": "ทุกอย่างดูเสถียร",
+"stabilityStableBody": "ไม่มีความเสี่ยงเร่งด่วน",
+
+"stabilityDecliningTitle": "เสถียรภาพลดลง",
+"stabilityDecliningBody": "บางรายการหมดอายุแล้ว และบางรายการใกล้หมด",
+
+"stabilityWeakenedTitle": "เสถียรภาพอ่อนลง",
+"stabilityWeakenedBody": "มีรายการหมดอายุซึ่งลดความน่าเชื่อถือ",
+
+"stabilityPressureTitle": "แรงกดดันเพิ่มขึ้น",
+"stabilityPressureBody": "หลายรายการต้องได้รับการดูแลเร็ว ๆ นี้",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "บันทึก",
+"notesHint": "กรอกบันทึก",
+"editorReminderTitle": "การแจ้งเตือน",
+"editorReminderNone": "ไม่มีการแจ้งเตือน",
+"editorReminderOnExpiry": "ในวันหมดอายุ",
+"editorReminder7Days": "ก่อน 7 วัน",
+"editorReminder30Days": "ก่อน 30 วัน",
+"editorReminderCustom": "กำหนดเอง",
+"daysBeforeExpiry": "วันก่อนหมดอายุ",
+
+"reminderStage0Title": "การแจ้งเตือนวันหมดอายุ",
+"reminderStage0Body": "{firstName}, {itemName} ของคุณจะหมดอายุในอีก {days} วัน",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "การติดตามการแจ้งเตือน",
+"reminderStage1Body": "{firstName}, {itemName} ยังไม่ได้รับการอัปเดต",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "ใกล้ถึงวันหมดอายุ",
+"reminderStage2Body": "วันหมดอายุของ {itemName} กำลังใกล้เข้ามา",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "การแจ้งเตือนครั้งสุดท้าย",
+"reminderFinalBody": "{firstName}, กรุณาอัปเดต {itemName} ตอนนี้",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "สมดุลความครอบคลุม",
+"coverageAllRepresented": "บันทึกของคุณครอบคลุมทุกหมวดหมู่",
+"coverageMissingNamed": "ไม่พบบันทึกใน {count} หมวดหมู่: {names}",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "คุณยังไม่ได้เพิ่มบันทึกใน {count} หมวดหมู่ รวมถึง {names} และอีก {remaining} หมวดหมู่",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "ใช้รหัสผ่านแทน",
+"signInWithBiometrics": "ลงชื่อเข้าใช้ด้วยไบโอเมตริกส์",
+"enableBiometricsTitle": "เปิดใช้งานความปลอดภัยแบบไบโอเมตริกส์",
+"enableBiometricsBody": "ใช้ลายนิ้วมือหรือการจดจำใบหน้าเพื่อปกป้อง Vaultara",
+"enableBiometricsReason": "เปิดใช้งานการปลดล็อกด้วยไบโอเมตริกส์สำหรับ Vaultara",
+"notNow": "ไม่ใช่ตอนนี้",
+"useBiometrics": "ใช้ไบโอเมตริกส์",
+
+"recordsCalendarIntro": "เลือกวิธีที่คุณต้องการดูวันหมดอายุ:\n\n• พิมพ์จำนวนวันนับจากวันนี้ที่ต้องการดู\n• หรือเลือกวันที่จากปฏิทินโดยตรง\n\nVaultara จะแสดงรายการที่หมดอายุในวันนั้น",
+
+"showingRecordsRelative": "กำลังแสดงรายการที่หมดอายุ {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "กำลังแสดงรายการที่หมดอายุในวันที่เลือก",
+
+"noRecordsOnDate": "ไม่มีรายการใดหมดอายุในวันนั้น",
+
+"recordEditorAddTitle": "เพิ่มรายการ",
+"recordEditorEditTitle": "แก้ไขรายการ",
+
+"editorRecordName": "ชื่อรายการ",
+"editorRecordNameHint": "กรอกชื่อรายการ",
+"recordEditorErrorName": "จำเป็นต้องระบุชื่อรายการ",
+
+"recordsGroupTapHint": "แตะเพื่อเพิ่มและติดตามรายการในกลุ่มนี้",
+
+"recordsInGroup": "รายการในกลุ่มนี้",
+
+"recordsInGroupHint": "ติดตามรายการสำคัญแต่ละรายการพร้อมวันหมดอายุ",
+
+"searchRecords": "ค้นหารายการ",
+
+"addRecord": "เพิ่มรายการ",
+
+"noRecordsYet": "ยังไม่มีรายการ",
+"deleteRecordTitle": "ลบรายการ",
+
+"recordsInsightClusteredTitle": "มีหลายรายการที่หมดอายุใกล้ช่วง {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "รายการส่วนใหญ่ของคุณอยู่ในหมวด {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "รายการทั้งหมด",
+
+"recordsStabilityDecliningBody": "บางรายการหมดอายุแล้ว และอีกหลายรายการกำลังจะหมดอายุในเร็ว ๆ นี้",
+
+"recordsCoverageAllRepresented": "รายการของคุณครอบคลุมทุกหมวดหมู่",
+
+"recordReminderStage0Body": "{firstName}, {recordName} ของคุณจะหมดอายุในอีก {days} วัน",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, {recordName} ของคุณยังไม่ได้รับการอัปเดต",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "วันหมดอายุของ {recordName} กำลังใกล้เข้ามา",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, กรุณาอัปเดต {recordName} ตอนนี้",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "ยังไม่มีกลุ่ม",
+
+"recordsExpiring": "{count, plural, one {มี 1 รายการจะหมดอายุในอีก {days} วัน} other {มี {count} รายการจะหมดอายุในอีก {days} วัน}}",
+
+"recordsGroupStats": "{records, plural, one {1 รายการ} other {{records} รายการ}} • {expiring} รายการจะหมดอายุใน {days} วัน",
+
+"groupLabel": "{count, plural, one {{count} กลุ่ม} other {{count} กลุ่ม}}",
+
+"recordsLabel": "{count, plural, one {{count} รายการ} other {{count} รายการ}}",
+
+"forgotPassword": "ลืมรหัสผ่านใช่ไหม?",
+"forgotPasswordTitle": "รีเซ็ตรหัสผ่าน",
+"forgotPasswordBody": "กรอกอีเมลของคุณ แล้วเราจะส่งลิงก์สำหรับรีเซ็ตรหัสผ่านให้",
+"sendResetLink": "ส่งลิงก์รีเซ็ต",
+"passwordResetEmailSent": "ส่งอีเมลรีเซ็ตรหัสผ่านแล้ว",
+"verifyEmailToContinue": "กรุณายืนยันอีเมลก่อนเข้าสู่ระบบ",
+
+"changeEmailTitle": "เปลี่ยนอีเมล",
+"newEmailHint": "กรอกอีเมลใหม่",
+"sendVerificationEmail": "ส่งอีเมลยืนยัน",
+
+"deleteAccountTitle": "ลบบัญชี",
+"deleteAccountWarning": "การดำเนินการนี้จะลบบัญชีและข้อมูลทั้งหมดอย่างถาวร\nไม่สามารถย้อนกลับได้",
+"deleteAccountConfirm": "ลบบัญชีถาวร",
+
+"supportTitle": "ฝ่ายสนับสนุน",
+"supportSubtitle": "ติดต่อเราหากต้องการความช่วยเหลือหรือมีคำถาม",
+"supportEmailSubject": "คำขอสนับสนุน Vaultara",
+"supportEmailError": "ไม่สามารถเปิดแอปอีเมลได้",
+
+"passwordResetEmailFailed": "ไม่สามารถส่งอีเมลรีเซ็ตรหัสผ่านได้",
+
+"loggedInPasswordResetBody": "เราจะส่งลิงก์รีเซ็ตรหัสผ่านไปที่:\n{email}",
+
+"accountManagementTitle": "การจัดการบัญชี",
+"changeEmailSubtitle": "อัปเดตอีเมลที่เชื่อมโยงกับบัญชีของคุณ",
+"changePasswordTitle": "เปลี่ยนรหัสผ่าน",
+"changePasswordSubtitle": "เราจะส่งลิงก์เพื่อเปลี่ยนรหัสผ่านอย่างปลอดภัย",
+
+"deleteAccountSubtitle": "ลบบัญชี Vaultara อย่างถาวร",
+
+"biometricAuthReason": "ยืนยันตัวตนเพื่อเข้าถึงบัญชี Vaultara",
+
+"verifyEmailTitle": "ยืนยันอีเมล",
+"verifyEmailBody": "เราได้ส่งอีเมลยืนยันไปยังกล่องจดหมายของคุณแล้ว กรุณาเปิดและยืนยันอีเมล จากนั้นกลับมาที่นี่เพื่อดำเนินการต่อ",
+"verifyEmailConfirmedButton": "ฉันยืนยันอีเมลแล้ว",
+"verifyEmailResendButton": "ส่งอีเมลยืนยันอีกครั้ง",
+"verifyEmailSending": "กำลังส่ง...",
+
+"navHome": "หน้าหลัก",
+"navCategories": "หมวด",
+"navInsights": "วิเคราะห์",
+"navCalendar": "ปฏิทิน",
+
+"tutorialCancel": "ยกเลิก",
+"tutorialNext": "ถัดไป",
+"tutorialEnd": "จบการสอน",
+
+"softDeleteCategory": "หมวดหมู่",
+"softDeleteGroup": "กลุ่ม",
+"softDeleteRecord": "รายการ",
+
+"softDeleteTitle": "ย้าย {type} ไปยังถังลบล่าสุด",
+"softDeleteMessage": "{type} \"{name}\" จะถูกย้ายไปยังถังลบล่าสุด\n\nคุณสามารถกู้คืนได้ภายใน 30 วัน หลังจากนั้นจะถูกลบถาวร",
+"softDeleteMove": "ย้าย",
+"@recordsExpiring": { "description": "แสดงจำนวนรายการที่กำลังจะหมดอายุ", "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } } },
+"@recordsGroupStats": { "description": "สถิติของกลุ่ม", "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } } },
+"@groupLabel": { "description": "จำนวนกลุ่ม", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "จำนวนรายการ", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": { "description": "แจ้งการส่งอีเมลรีเซ็ตรหัสผ่าน", "placeholders": { "email": { "type": "String" } } },
+"@softDeleteTitle": { "description": "หัวข้อการลบชั่วคราว", "placeholders": { "type": { "type": "Object" } } },
+"@softDeleteMessage": { "description": "อธิบายการลบชั่วคราว", "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } } },
+"recentlyDeletedTitle": "ลบล่าสุด",
+"categories": "หมวดหมู่",
+"groups": "กลุ่ม",
+"records": "บันทึก",
+"restore": "กู้คืน",
+"deletePermanently": "ลบถาวร",
+
+"recentlyDeletedBanner": "{type} ที่ถูกลบจะถูกเก็บไว้ที่นี่เป็นเวลา 30 วันก่อนถูกลบถาวร",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "ค้นหา {type} ที่ถูกลบ",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "ยังไม่มี {type} ที่ถูกลบ",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "แตะหมวดหมู่เพื่อดูหมวดหมู่ย่อยและจัดการบันทึกของคุณ",
+"groupsHint": "กลุ่มช่วยจัดระเบียบบันทึกในหมวดหมู่นี้ แตะกลุ่มเพื่อดูและจัดการบันทึก",
+"notLoggedIn": "ยังไม่ได้เข้าสู่ระบบ",
+"recordsInsideGroupHint": "นี่คือบันทึกในกลุ่มนี้",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" ถูกย้ายไปยังลบล่าสุด",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "พาสปอร์ต" } }
+},
+
+"snackDeletedSuccessfully": "\"{name}\" ถูกลบเรียบร้อยแล้ว",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "ใบขับขี่" } }
+},
+
+"snackUpdatedSuccessfully": "\"{name}\" อัปเดตเรียบร้อยแล้ว",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "วีซ่า" } }
+},
+
+"snackAddedSuccessfully": "\"{name}\" เพิ่มเรียบร้อยแล้ว",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "ประกันภัย" } }
+},
+
+"snackRestoredSuccessfully": "\"{name}\" กู้คืนเรียบร้อยแล้ว",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "พาสปอร์ต" } }
+},
+
+"snackFreeLimitReached": "ถึงขีดจำกัดฟรีแล้ว ({current}/{limit}) อัปเกรดเพื่อเพิ่มได้อีก",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+
+"globalSearchTitle": "ค้นหาทุกบันทึก",
+"globalSearchHint": "พิมพ์ชื่อบันทึก หมวดหมู่ หรือกลุ่ม",
+"globalSearchNoMatches": "ไม่มีบันทึกที่ตรงกับการค้นหา",
+"snackNoRecordsToSearch": "ไม่มีบันทึกให้ค้นหา เพิ่มบันทึกสักเล็กน้อยแล้ว Vaultara จะจัดทำดัชนีให้อัตโนมัติ",
+
+"recoveryCentreTitle": "ศูนย์กู้คืน",
+"recoveryCentreSubtitle": "กู้คืนหรือลบถาวรบันทึกที่ถูกลบ",
+
+"plan_premium": "พรีเมียม",
+"plan_free": "ฟรี",
+
+"profile_app_settings_title": "การตั้งค่าแอป",
+"profile_privacy_security_title": "ความเป็นส่วนตัวและความปลอดภัย",
+"profile_biometric_on": "เปิดการล็อกด้วยไบโอเมตริกบนอุปกรณ์นี้แล้ว",
+"profile_biometric_off": "ปิดการล็อกด้วยไบโอเมตริกแล้ว",
+"profile_biometric_enable_reason": "ยืนยันตัวตนเพื่อเปิดใช้งานการล็อกด้วยไบโอเมตริก",
+"profile_biometric_disable_reason": "ยืนยันตัวตนเพื่อปิดการล็อกด้วยไบโอเมตริก",
+"profile_account_management_title": "การจัดการบัญชี",
+"profile_premium_active_title": "Premium เปิดใช้งานแล้ว",
+"profile_premium_upgrade_title": "อัปเกรดเป็น Premium",
+"profile_premium_active_subtitle": "ปลดล็อกการแจ้งเตือนขั้นสูงแล้ว",
+"profile_premium_upgrade_subtitle": "ปลดล็อกการแจ้งเตือนขั้นสูงและการจัดการแบบไม่จำกัด",
+"profile_manage_cancel_hint": "จัดการหรือยกเลิกได้ตลอดเวลาผ่าน Google Play",
+"profile_manage_subscription_button": "จัดการการสมัครสมาชิก",
+"plansTitle": "เลือกแผน",
+"plansTrialBanner": "เริ่มต้นด้วยการทดลองใช้งานฟรี 7 วัน\nยกเลิกได้ทุกเมื่อ",
+"plansLoading": "กำลังโหลด…",
+"plansStartFreeTrial": "เริ่มทดลองใช้งานฟรี",
+"plansNoChargeTodayFooter": "ฟรี 7 วัน · วันนี้ไม่เสียค่าใช้จ่าย",
+
+"planFreeTitle": "ฟรี",
+"planFreeSubtitle": "สำหรับการเริ่มต้น",
+"planPremiumMonthlyTitle": "Premium รายเดือน",
+"planPremiumYearlyTitle": "Premium รายปี",
+"planPerMonth": "ต่อเดือน",
+"planPerYear": "ต่อปี",
+
+"planBadgeCurrent": "แผนปัจจุบัน",
+"planBadgePopular": "ยอดนิยม",
+"planBadgeBestValue": "คุ้มค่าที่สุด",
+
+"planYouAreOnThisPlan": "คุณอยู่ในแผนนี้แล้ว",
+
+"planFeatureUpToRecords": "สูงสุด {count} รายการ",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "หมวดหมู่กำหนดเอง (สูงสุด {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "หมวดหมู่ย่อยที่ตั้งไว้ล่วงหน้า",
+"planFeatureCloudStorage": "พื้นที่จัดเก็บบนคลาวด์",
+"planFeatureSmartExpiryInsights": "การแจ้งเตือนวันหมดอายุอัจฉริยะ",
+"planFeatureCoverageBalance": "สมดุลความครอบคลุม",
+"planFeatureRecordStabilityTracking": "การติดตามความเสถียรของรายการ",
+
+"planFeatureUnlimitedRecords": "รายการไม่จำกัด",
+"planFeatureUnlimitedCategories": "หมวดหมู่ไม่จำกัด",
+"planFeatureCustomSubcategories": "หมวดหมู่ย่อยกำหนดเอง",
+"planFeatureMultipleRemindersPerRecord": "การแจ้งเตือนหลายรายการ",
+"planFeatureAdvancedReminderTiming": "การตั้งเวลาแบบขั้นสูง",
+"planFeatureAutomaticFollowUps": "การติดตามอัตโนมัติ",
+
+"planFeatureEverythingInMonthly": "ทุกอย่างในแผนรายเดือน",
+"planFeatureSavePercentComparedToMonthly": "ประหยัด {percent}% เมื่อเทียบกับรายเดือน",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "คุ้มค่าระยะยาวที่สุด",
+
+"editorReminderLabel": "การแจ้งเตือน",
+"editorReminderSelectOptional": "เลือกการแจ้งเตือน (ไม่บังคับ)",
+"editorReminderOnExpiry": "ในวันหมดอายุ",
+"editorReminderDaysBefore": "ก่อนหมดอายุ {days} วัน",
+"editorFreeItemsCount": "รายการฟรี: {used}/{limit}",
+"editorExpiryPastWarning": "วันหมดอายุผ่านไปแล้ว",
+"editorExpiryTodayWarning": "รายการนี้หมดอายุวันนี้",
+"editorErrorExpiryPast": "วันหมดอายุไม่สามารถอยู่ในอดีตได้",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "ข้อมูลวันนี้",
+"tutorialBannerTitle": "ทัวร์ด่วน",
+"tutorialBannerBody": "เรียนรู้วิธีค้นหา เพิ่มรายการ และความหมายของข้อมูลภายในหนึ่งนาที",
+"tutorialBannerStart": "เริ่มทัวร์",
+"tutorialBannerDismiss": "ไม่ใช่ตอนนี้",
+"authErrorUserDisabled": "บัญชีนี้ถูกปิดใช้งาน",
+"authErrorNetwork": "เกิดข้อผิดพลาดของเครือข่าย กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองอีกครั้ง",
+"authErrorTooManyRequests": "พยายามมากเกินไป กรุณาลองใหม่ภายหลัง",
+"authErrorSignInFailed": "เข้าสู่ระบบไม่สำเร็จ กรุณาลองใหม่",
+"ok": "ตกลง",
+"snackPremiumEnabled": "เปิดใช้งาน Premium แล้ว",
+"snackPremiumRestored": "กู้คืน Premium แล้ว",
+"passwordNeedLower": "ต้องมีตัวอักษรพิมพ์เล็ก",
+"passwordNeedUpper": "ต้องมีตัวอักษรพิมพ์ใหญ่",
+"passwordNeedNumber": "ต้องมีตัวเลข",
+"passwordNeedSymbol": "ต้องมีสัญลักษณ์",
+"editorFreeItemsCount": "รายการฟรี: {used}/{limit}",
+"editorExpiryPastWarning": "วันหมดอายุผ่านไปแล้ว",
+"editorExpiryTodayWarning": "รายการนี้หมดอายุวันนี้",
+"editorErrorExpiryPast": "วันหมดอายุไม่สามารถอยู่ในอดีตได้",
+"todayInsightsTitle": "ข้อมูลวันนี้",
+"tutorialBannerTitle": "ทัวร์ด่วน",
+"tutorialBannerBody": "เรียนรู้วิธีค้นหา เพิ่มรายการ และความหมายของข้อมูลภายในหนึ่งนาที",
+"tutorialBannerStart": "เริ่มบทแนะนำ",
+"tutorialBannerDismiss": "ไม่ใช่ตอนนี้",
+"authErrorUserDisabled": "บัญชีนี้ถูกปิดใช้งาน",
+"authErrorNetwork": "เกิดข้อผิดพลาดของเครือข่าย กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองอีกครั้ง",
+"authErrorTooManyRequests": "พยายามมากเกินไป กรุณาลองใหม่ภายหลัง",
+"authErrorSignInFailed": "เข้าสู่ระบบไม่สำเร็จ กรุณาลองใหม่",
+"ok": "ตกลง",
+"tutorialHomeSearch": "ใช้แถบค้นหาเพื่อค้นหารายการที่คุณติดตามได้อย่างรวดเร็ว",
+"tutorialHomeFab": "เพิ่มรายการแรกของคุณที่นี่\nเลือกหมวดหมู่ เพิ่มบันทึก และเลือกวันหมดอายุ",
+"tutorialHomeSummary": "เมื่อคุณเพิ่มรายการมากขึ้น ส่วนนี้จะช่วยให้เห็นรายการที่ใกล้หมดอายุ",
+"tutorialHomeInsight": "ข้อมูลอัจฉริยะนี้แสดงรูปแบบและวันหมดอายุที่ใกล้เข้ามา",
+"tutorialHomeCoverage": "ความสมดุลของความครอบคลุมแสดงการกระจายของรายการในหมวดหมู่ต่าง ๆ",
+"tutorialHomeStability": "ความเสถียรแสดงความน่าเชื่อถือของรายการตามเวลา",
+"profile_account_management_subtitle": "เปลี่ยนอีเมล รหัสผ่าน หรือ ลบบัญชี",
+"confirmIdentityTitle": "ยืนยันตัวตน",
+"confirm": "ยืนยัน",
+"profile_sign_out_title": "ออกจากระบบ",
+"profile_sign_out_subtitle": "ออกจาก Vaultara บนอุปกรณ์นี้",
+"profile_sign_out_confirm_title": "ออกจากระบบหรือไม่?",
+"profile_sign_out_confirm_body": "คุณจะต้องเข้าสู่ระบบอีกครั้งเพื่อเข้าถึงบัญชีของคุณ",
+"profile_sign_out_action": "ออกจากระบบ",
+"todayInsightsAudioHint": "ชอบฟังมากกว่าไหม? ใช้ไอคอนลำโพง",
+"category2Label": "หมวดหมู่",
+"enable2BiometricsBody": "ใช้การยืนยันด้วยลายนิ้วมือเพื่อปกป้องบัญชี Vaultara ของคุณ",
+"snackNotificationsDisabled": "การแจ้งเตือนถูกปิดอยู่ เปิดเพื่อรับการแจ้งเตือน",
+"openSettings": "เปิดการตั้งค่า",
+
+"reminderOnExpiryTitle": "หมดอายุวันนี้",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "สวัสดี {firstName}, \"{itemName}\" หมดอายุวันนี้",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "หมวดหมู่ฟรี: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "แสดงจำนวนหมวดหมู่ฟรีที่ใช้ไปจากขีดจำกัดฟรี",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "เพิ่มบันทึก (ไม่บังคับ)",
+"apply": "ใช้",
+"smartInsightExpiresTodayHeading": "หมดอายุวันนี้",
+"smartInsightExpiresTodaySingleBody": "{name} หมดอายุวันนี้ ดำเนินการตอนนี้เพื่อให้ทันสมัย",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{names} และเอกสารอีก {extra} ฉบับหมดอายุวันนี้",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "ต้องการความสนใจของคุณ",
+"smartInsightSilentRiskBody": "{name} จะหมดอายุใน {days} วัน และไม่มีการตั้งค่าการเตือน โปรดยืนยันว่ารายละเอียดยังถูกต้อง",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "การต่ออายุหลายรายการใกล้กัน",
+"smartInsightRenewalTwinBodyTwo": "{a} และ {b} จะหมดอายุภายในสามสัปดาห์จากกันและกัน วางแผนล่วงหน้า",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} และ {c} ทั้งหมดจะหมดอายุภายในสามสัปดาห์ วางแผนล่วงหน้า",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{a}, {b} และเอกสารอีก {extra} ฉบับจะหมดอายุภายในสามสัปดาห์ วางแผนล่วงหน้า",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "กลุ่มที่กำลังจะมาถึง",
+"smartInsightClusterBody": "เอกสาร {count} ฉบับใน {category} จะหมดอายุภายในสองเดือนข้างหน้า พิจารณาจัดการพร้อมกัน",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "ช่วงเงียบสงบข้างหน้า",
+"smartInsightQuietPeriodBody": "ไม่มีอะไรหมดอายุใน {days} วันข้างหน้า การต่ออายุครั้งต่อไปของคุณคือ {firstDate}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "ทันสมัยทั้งหมด",
+"smartInsightAllCaughtUpBody": "การหมดอายุที่กำลังจะมาถึง {count} รายการได้รับการครอบคลุมโดยการเตือน ไม่มีอะไรอื่นที่ต้องการความสนใจของคุณ",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "ทันสมัยทั้งหมด ไม่มีอะไรต้องการความสนใจของคุณในขณะนี้",
+"smartInsightNoRecordsHeading": "เพิ่มบันทึกแรกของคุณ",
+"smartInsightNoRecordsBody": "เริ่มติดตามเอกสารของคุณ และ Vaultara จะแสดงข้อมูลเชิงลึกอัจฉริยะที่นี่",
+"expiryTimelineTitle": "ไทม์ไลน์การหมดอายุ",
+"expiryTimelineSubtitle": "แตะเดือนเพื่อดูบันทึกที่หมดอายุในเดือนนั้น",
+"expiryTimelineDetailCount": "{count} บันทึก",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "กำลังจะมาถึง",
+"summaryUpcomingCaption": "ภายใน 30 วัน",
+"summaryUrgentTitle": "ด่วน",
+"summaryUrgentCaption": "ภายใน 7 วัน"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

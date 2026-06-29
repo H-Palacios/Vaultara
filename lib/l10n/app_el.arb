@@ -1,0 +1,938 @@
+{
+  "@@locale": "el",
+
+    "expiryCalendarTitle": "Ημερολόγιο λήξεων",
+
+  "calendarIntro":
+    "Επιλέξτε πώς θέλετε να εξερευνήσετε τις λήξεις σας:\n\n• Πληκτρολογήστε πόσες ημέρες από σήμερα θέλετε να δείτε.\n• Ή επιλέξτε μια συγκεκριμένη ημερομηνία στο ημερολόγιο.\n\nΤο Vaultara θα σας δείξει ποια αντικείμενα φτάνουν στην ημερομηνία λήξης τους εκείνη την ημέρα.",
+
+  "daysFromTodayLabel": "Ημέρες από σήμερα",
+  "daysFromTodayHint": "Για παράδειγμα 0, 1, 7, 30",
+
+  "apply": "Εφαρμογή",
+  "pickDateOnCalendar": "Επιλέξτε ημερομηνία στο ημερολόγιο",
+
+  "today": "Σήμερα",
+  "tomorrow": "Αύριο",
+  "in7Days": "Σε 7 ημέρες",
+  "in30Days": "Σε 30 ημέρες",
+
+  "inDays": "σε {days} ημέρες",
+  "@inDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "enterDaysError": "Εισαγάγετε αριθμό ημερών.",
+  "invalidDaysError": "Εισαγάγετε έγκυρο αριθμό ημερών (0 ή μεγαλύτερο).",
+
+  "showingItemsRelative": "Εμφάνιση αντικειμένων που λήγουν {time}",
+  "@showingItemsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingItemsExact": "Εμφάνιση αντικειμένων που λήγουν στην επιλεγμένη ημερομηνία",
+  "noItemsOnDate": "Δεν υπάρχουν αντικείμενα που έχουν οριστεί να λήγουν εκείνη την ημέρα.",
+
+  "editorAddTitle": "Προσθήκη αντικειμένου",
+  "editorEditTitle": "Επεξεργασία αντικειμένου",
+
+  "editorCategory": "Κατηγορία",
+  "editorCategoryHint": "Επιλέξτε κατηγορία",
+
+  "editorGroup": "Ομάδα",
+  "editorGroupHint": "Επιλέξτε ομάδα μέσα σε αυτή την κατηγορία",
+
+  "editorItemName": "Όνομα αντικειμένου",
+  "editorItemNameHint": "Εισαγάγετε όνομα αντικειμένου",
+
+  "editorExpiryDate": "Ημερομηνία λήξης",
+  "editorExpiryDateHint": "Επιλέξτε ημερομηνία λήξης",
+
+  "editorErrorCategory": "Επιλέξτε κατηγορία",
+  "editorErrorGroup": "Επιλέξτε ομάδα",
+  "editorErrorName": "Το όνομα του αντικειμένου είναι υποχρεωτικό",
+  "editorErrorExpiry": "Επιλέξτε ημερομηνία λήξης",
+  "editorErrorExpiryPast": "Η ημερομηνία λήξης πρέπει να είναι σήμερα ή σε μελλοντική ημερομηνία",
+
+  "cancel": "Ακύρωση",
+  "save": "Αποθήκευση",
+
+  "addCategoryTitle": "Προσθήκη κατηγορίας",
+  "unlimitedCategories": "Απεριόριστες κατηγορίες (Premium)",
+
+  "categoryUsage": "{current} / {limit} κατηγορίες χρησιμοποιούνται",
+  "@categoryUsage": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryNameLabel": "Όνομα κατηγορίας",
+  "categoryNameHint": "Εισαγάγετε κατηγορία",
+
+  "categoryLimitReached":
+    "Έχετε φτάσει το όριο του Basic πλάνου των {limit} κατηγοριών. Αναβαθμίστε σε Premium για να δημιουργήσετε απεριόριστες προσαρμοσμένες κατηγορίες.",
+  "@categoryLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryLimitInfo":
+    "Στο Basic πλάνο μπορείτε να δημιουργήσετε έως {limit} προσαρμοσμένες κατηγορίες.",
+  "@categoryLimitInfo": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+
+  "categoryErrorEmpty": "Το όνομα κατηγορίας είναι υποχρεωτικό",
+  "categoryErrorTooShort": "Το όνομα κατηγορίας είναι πολύ μικρό",
+  "categoryErrorTooLong": "Το όνομα κατηγορίας είναι πολύ μεγάλο",
+  "categoryErrorSymbols": "Το όνομα κατηγορίας δεν μπορεί να περιέχει μόνο σύμβολα",
+  "categoryErrorNumbers": "Το όνομα κατηγορίας δεν μπορεί να περιέχει αριθμούς",
+
+  "upgradeRequired": "Απαιτείται αναβάθμιση",
+  "viewPremiumBenefits": "Δείτε τα οφέλη Premium",
+  "createCategory": "Δημιουργία",
+
+  "addGroupTitle": "Προσθήκη ομάδας",
+  "groupNameLabel": "Ομάδα",
+  "groupNameHint": "Εισαγάγετε ομάδα",
+
+  "groupErrorEmpty": "Το όνομα ομάδας είναι υποχρεωτικό",
+  "groupErrorTooShort": "Το όνομα ομάδας είναι πολύ μικρό",
+  "groupErrorTooLong": "Το όνομα ομάδας είναι πολύ μεγάλο",
+  "groupErrorSymbols": "Το όνομα ομάδας δεν μπορεί να περιέχει σύμβολα",
+  "groupErrorNumbers": "Το όνομα ομάδας δεν μπορεί να περιέχει αριθμούς",
+  "createGroup": "Δημιουργία",
+
+  "firstNameLabel": "Όνομα",
+  "firstNameHint": "Εισαγάγετε όνομα",
+
+  "lastNameLabel": "Επώνυμο",
+  "lastNameHint": "Εισαγάγετε επώνυμο",
+
+  "emailLabel": "Διεύθυνση email",
+
+  "loginPasswordHint": "Εισαγάγετε τον κωδικό σας",
+  "registerPasswordHint": "Εισαγάγετε κωδικό",
+  "passwordHelper": "Τουλάχιστον 8 χαρακτήρες με συνδυασμό τύπων",
+
+  "passwordTooShort": "Πολύ μικρός",
+  "passwordTooWeak": "Πολύ αδύναμος",
+  "passwordMedium": "Μέτριος",
+  "passwordStrong": "Ισχυρός",
+
+  "errorFirstName": "Το όνομα είναι υποχρεωτικό",
+  "errorLastName": "Το επώνυμο είναι υποχρεωτικό",
+  "errorEmailInvalid": "Εισαγάγετε έγκυρη διεύθυνση email",
+  "errorEmailInUse": "Αυτή η διεύθυνση email είναι ήδη\nσυνδεδεμένη με λογαριασμό Vaultara",
+  "errorPasswordLength": "Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες",
+  "errorPasswordWeak": "Εισαγάγετε πιο ισχυρό κωδικό",
+  "errorGeneric": "Η εγγραφή απέτυχε. Παρακαλώ δοκιμάστε ξανά",
+
+  "createAccount": "Δημιουργία λογαριασμού",
+  "appName": "Vaultara",
+
+  "authTagline": "Ο προσωπικός σας κόμβος για διαβατήρια, άδειες, κάρτες και άλλα σημαντικά έγγραφα",
+  "tabSignIn": "Σύνδεση",
+  "tabCreateAccount": "Δημιουργία λογαριασμού",
+
+  "signInFooterText": "Συνδεθείτε για να αποκτήσετε πρόσβαση στον προσωπικό σας χώρο Vaultara και να έχετε κάθε ανανέωση υπό έλεγχο",
+  "createAccountFooterText": "Δημιουργήστε τον λογαριασμό σας στο Vaultara για να αποθηκεύετε τις βασικές υπενθυμίσεις σας και να τις βρίσκετε όποτε τις χρειάζεστε",
+
+  "emailRequired": "Η διεύθυνση email σας είναι υποχρεωτική",
+  "passwordRequired": "Ο κωδικός σας είναι υποχρεωτικός",
+
+  "emailNotFound": "Λάθος email. Δεν υπάρχει\nλογαριασμός Vaultara με αυτό το email",
+  "incorrectPassword": "Λάθος κωδικός",
+
+  "emailLabel": "Διεύθυνση email",
+  "emailHint": "Εισαγάγετε το email σας",
+  "passwordLabel": "Κωδικός",
+  "signIn": "Σύνδεση",
+
+  "categoryPersonalIdentification": "Προσωπική ταυτοποίηση",
+  "categoryDrivingAndVehicles": "Οδήγηση και οχήματα",
+  "categoryTravelAndImmigration": "Ταξίδια και μετανάστευση",
+  "categoryBankingAndCards": "Τραπεζικά και κάρτες",
+  "categoryInsuranceAndCover": "Ασφάλιση και κάλυψη",
+  "categoryHealthAndMedical": "Υγεία και ιατρικά",
+  "categoryWorkAndProfessional": "Εργασία και επαγγελματικά",
+  "categoryPropertyAndHousing": "Ακίνητα και κατοικία",
+  "categoryHouseholdAndUtilities": "Νοικοκυριό και κοινής ωφέλειας",
+
+  "subcategoryPassports": "Διαβατήρια",
+  "subcategoryIdCards": "Δελτία ταυτότητας",
+  "subcategoryResidencePermits": "Άδειες διαμονής",
+
+  "subcategoryDrivingLicences": "Άδειες οδήγησης",
+  "subcategoryVehicleRegistrations": "Άδειες κυκλοφορίας",
+  "subcategoryRoadworthyCertificates": "Πιστοποιητικά καταλληλότητας",
+  "subcategoryVehicleInspectionCertificates": "Πιστοποιητικά τεχνικού ελέγχου",
+
+  "subcategoryVisas": "Βίζες",
+  "subcategoryStudyPermits": "Άδειες σπουδών",
+  "subcategoryWorkPermits": "Άδειες εργασίας",
+  "subcategoryTravelInsuranceDocuments": "Έγγραφα ταξιδιωτικής ασφάλισης",
+
+  "subcategoryDebitAndCreditCards": "Χρεωστικές και πιστωτικές κάρτες",
+  "subcategoryStoreCards": "Κάρτες καταστημάτων",
+  "subcategoryFuelCards": "Κάρτες καυσίμων",
+
+  "subcategoryVehicleInsurances": "Ασφάλειες οχημάτων",
+  "subcategoryPropertyInsurances": "Ασφάλειες ακινήτων",
+  "subcategoryLifeInsurances": "Ασφάλειες ζωής",
+  "subcategoryHealthInsurances": "Ασφάλειες υγείας",
+  "subcategoryTravelInsurances": "Ταξιδιωτικές ασφάλειες",
+
+  "subcategoryMedicalPrescriptions": "Ιατρικές συνταγές",
+  "subcategoryOpticalPrescriptions": "Οπτικές συνταγές",
+  "subcategoryMedicalCertificates": "Ιατρικά πιστοποιητικά",
+
+  "subcategoryProfessionalLicences": "Επαγγελματικές άδειες",
+  "subcategoryProfessionalRegistrations": "Επαγγελματικές εγγραφές",
+  "subcategoryIndustryRegistrations": "Εγγραφές κλάδου",
+  "subcategoryWorkAccessCards": "Κάρτες πρόσβασης εργασίας",
+
+  "subcategoryLeaseAgreements": "Συμβάσεις μίσθωσης",
+  "subcategoryAccessCardsAndTags": "Κάρτες πρόσβασης και tags",
+  "subcategoryParkingPermits": "Άδειες στάθμευσης",
+  "subcategorySecurityAccessPermits": "Άδειες πρόσβασης ασφαλείας",
+"subcategoryElectricityAccounts": "Λογαριασμοί ηλεκτρικού ρεύματος",
+"subcategoryWaterAccounts": "Λογαριασμοί νερού",
+"subcategoryInternetContracts": "Συμβόλαια internet",
+"subcategorySecurityServiceContracts": "Συμβόλαια υπηρεσιών ασφαλείας",
+
+"searchCategories": "Αναζήτηση κατηγοριών",
+"filterAll": "Όλα",
+"filterPreset": "Προκαθορισμένα",
+"filterCustom": "Προσαρμοσμένα",
+"addCategoryTitle": "Προσθήκη κατηγορίας",
+"customLabel": "Προσαρμοσμένο",
+"subcategoriesLabel": "υποκατηγορίες",
+"itemsLabel": "αντικείμενα",
+
+"itemsExpiring": "{count} αντικείμενα που λήγουν σε {days} ημέρες",
+"@itemsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"pinnedEssentials": "Καρφιτσωμένα βασικά",
+"pinnedHint": "Καρφιτσώστε τις κατηγορίες που ανοίγετε πιο συχνά ώστε να μένουν στην κορυφή της λίστας σας.",
+"noCategoriesFound": "Δεν βρέθηκαν κατηγορίες",
+
+"searchGroups": "Αναζήτηση ομάδων",
+"addGroupTitle": "Προσθήκη ομάδας",
+
+"basicPlanGroupInfo": "Είστε στο Basic πλάνο.\nΜπορείτε να δείτε τις προκαθορισμένες ομάδες κάτω από αυτή την κατηγορία.\nΑναβαθμίστε σε Premium για να δημιουργήσετε τις δικές σας ομάδες.",
+"groupDeleted": "Η ομάδα διαγράφηκε",
+"undo": "ΑΝΑΙΡΕΣΗ",
+
+"@groupStats": {
+  "placeholders": {
+    "items": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"groupTapHint": "Πατήστε για να προσθέσετε και να παρακολουθείτε αντικείμενα σε αυτή την ομάδα.",
+"itemsInGroup": "Αντικείμενα σε αυτή την ομάδα",
+"itemsInGroupHint": "Παρακολουθήστε κάθε σημαντικό αντικείμενο με την ημερομηνία λήξης του, ώστε να το ανανεώνετε έγκαιρα.",
+
+"searchItems": "Αναζήτηση αντικειμένων",
+
+"filterAll": "Όλα",
+"filterExpiringWithin": "Λήγουν μέσα σε {days} ημέρες",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"filterExpired": "Έχουν λήξει",
+"addItem": "Προσθήκη αντικειμένου",
+"noItemsYet": "Δεν υπάρχουν αντικείμενα ακόμα.",
+
+"statusExpired": "Έχει λήξει",
+"statusExpiresToday": "Λήγει σήμερα",
+"statusExpiresInOneDay": "Λήγει σε 1 ημέρα",
+"statusExpiresInDays": "Λήγει σε {days} ημέρες",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Έγκυρο",
+
+"deleteCategoryTitle": "Διαγραφή κατηγορίας",
+"deleteCategoryMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την κατηγορία \"{name}\";",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Διαγραφή ομάδας",
+"deleteGroupMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα \"{name}\";",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Διαγραφή αντικειμένου",
+"deleteItemMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"{name}\";",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Ακύρωση",
+"delete": "Διαγραφή",
+
+"homeWelcomeTitle": "Καλώς ήρθατε",
+
+"homeWelcomeFirstTitle": "Καλώς ήρθατε, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Καλώς ήρθατε ξανά, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Το Vaultara σας βοηθά να παρακολουθείτε σημαντικές ημερομηνίες λήξης, ώστε τίποτα να μη λήγει «σιωπηλά».",
+
+"homeWelcomeSubtitleFirst":
+  "Χαιρόμαστε που είστε εδώ. Το Vaultara σας βοηθά να μένετε οργανωμένοι, κρατώντας σημαντικές ημερομηνίες και εγγραφές σε ένα ασφαλές μέρος.",
+
+"homeWelcomeSubtitleBack":
+  "Χαιρόμαστε που σας βλέπουμε ξανά. Το Vaultara είναι εδώ όποτε θέλετε να ελέγξετε τις σημαντικές ημερομηνίες και τις εγγραφές σας.",
+
+"insightEmptyTitle": "Δεν προστέθηκε τίποτα ακόμα",
+"insightEmptyBody": "Μόλις αρχίσετε να παρακολουθείτε σημαντικές ημερομηνίες, το Vaultara θα σας βοηθά να προλαβαίνετε τις λήξεις.",
+
+"insightExpiresTodayTitle": "\"{name}\" λήγει σήμερα",
+"insightExpiresTodayBody": "Ένας γρήγορος έλεγχος τώρα μπορεί να κρατήσει τα πάντα ακριβή.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" λήγει αύριο",
+"insightExpiresTomorrowBody": "Αν το ελέγξετε σήμερα, μπορεί να κερδίσετε χρόνο αργότερα.",
+
+"insightExpiresSoonTitle": "\"{name}\" λήγει στις {date}",
+"insightExpiresSoonBody": "Αν το χειριστείτε νωρίς, όλα θα είναι πιο ήρεμα.",
+
+"insightNextExpiryTitle": "Η επόμενη λήξη σας είναι το \"{name}\" στις {date}",
+"insightNextExpiryBody": "Δεν χρειάζεται ενέργεια ακόμη, αλλά είναι καλό να το έχετε στο νου σας.",
+
+"insightClusteredTitle": "Πολλά αντικείμενα λήγουν γύρω στον {month}",
+"insightClusteredBody": "Αν τα ελέγξετε μαζί, μπορεί να γλιτώσετε χρόνο και να μειώσετε τις υπενθυμίσεις.",
+
+"insightTopCategoryTitle": "Τα περισσότερα αντικείμενά σας ανήκουν στην κατηγορία {category}",
+"insightTopCategoryBody": "Ο έλεγχος αυτής της περιοχής έχει τη μεγαλύτερη οργανωτική επίδραση.",
+
+"insightStableTitle": "Όλα φαίνονται σταθερά",
+"insightStableBody": "Δεν υπάρχουν επερχόμενες λήξεις που χρειάζονται προσοχή αυτή τη στιγμή.",
+
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+
+"summaryAllTitle": "Όλα τα αντικείμενα",
+"summaryAllCaption": "Παρακολουθούνται στο Vaultara",
+"summarySoonTitle": "Λήγουν σύντομα",
+"summarySoonCaption": "Μέσα σε 30 ημέρες",
+"summaryWeekTitle": "Αυτή την εβδομάδα",
+"summaryWeekCaption": "Λήγει σε 7 ημέρες",
+"summaryExpiredTitle": "Έχουν λήξει",
+"summaryExpiredCaption": "Μετά την ημερομηνία λήξης",
+
+"stabilityStableTitle": "Όλα φαίνονται σταθερά",
+"stabilityStableBody": "Οι εγγραφές σας δεν δείχνουν άμεσους ή συσσωρευόμενους κινδύνους.",
+
+"stabilityDecliningTitle": "Η σταθερότητα μειώνεται",
+"stabilityDecliningBody": "Κάποια αντικείμενα έχουν περάσει τη λήξη τους και άλλα πλησιάζουν σύντομα.",
+
+"stabilityWeakenedTitle": "Η σταθερότητα έχει αποδυναμωθεί",
+"stabilityWeakenedBody": "Υπάρχουν ληγμένες εγγραφές, μειώνοντας τη συνολική αξιοπιστία.",
+
+"stabilityPressureTitle": "Η πίεση αυξάνεται",
+"stabilityPressureBody": "Αρκετές εγγραφές θα χρειαστούν προσοχή σύντομα για να διατηρηθεί η σταθερότητα.",
+
+"editorNotes": "Σημειώσεις",
+"notesHint": "Εισαγάγετε σημειώσεις",
+
+"editorReminderTitle": "Υπενθύμιση",
+"editorReminderNone": "Χωρίς υπενθύμιση",
+"editorReminderOnExpiry": "Την ημέρα λήξης",
+"editorReminder7Days": "7 ημέρες πριν από τη λήξη",
+"editorReminder30Days": "30 ημέρες πριν από τη λήξη",
+"editorReminderCustom": "Προσαρμοσμένη",
+
+"daysBeforeExpiry": "ημέρες πριν από τη λήξη",
+
+"reminderStage0Title": "Υπενθύμιση λήξης",
+"reminderStage0Body": "{firstName}, το {itemName} λήγει σε {days} ημέρες.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Υπενθύμιση παρακολούθησης",
+"reminderStage1Body": "{firstName}, το {itemName} δεν έχει ενημερωθεί ακόμη.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Η λήξη πλησιάζει",
+"reminderStage2Body": "Η ημερομηνία λήξης για το {itemName} πλησιάζει.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+"reminderFinalTitle": "Τελική υπενθύμιση",
+"reminderFinalBody": "{firstName}, παρακαλώ ενημερώστε το {itemName} τώρα.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Ισορροπία κάλυψης",
+"coverageAllRepresented": "Οι εγγραφές σας περιλαμβάνουν αντικείμενα σε όλες τις κατηγορίες.",
+"coverageMissingNamed": "Δεν βρέθηκαν εγγραφές σε {count} κατηγορίες: {names}.",
+"coverageMissingSummary": "Δεν έχετε προσθέσει εγγραφές σε {count} κατηγορίες, συμπεριλαμβανομένων των {names} και άλλων {remaining}.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+
+"usePasswordInstead": "Χρήση κωδικού αντί για βιομετρικά",
+"signInWithBiometrics": "Σύνδεση με βιομετρικά",
+"enableBiometricsTitle": "Ενεργοποίηση βιομετρικής ασφάλειας",
+"enableBiometricsBody": "Χρησιμοποιήστε δακτυλικό αποτύπωμα ή αναγνώριση προσώπου για να προστατεύσετε το Vaultara.",
+"enableBiometricsReason": "Ενεργοποίηση βιομετρικού ξεκλειδώματος για το Vaultara.",
+"notNow": "Όχι τώρα",
+"useBiometrics": "Χρήση βιομετρικών",
+
+"recordsCalendarIntro":
+  "Επιλέξτε πώς θέλετε να εξερευνήσετε τις λήξεις σας:\n\n• Πληκτρολογήστε πόσες ημέρες από σήμερα θέλετε να δείτε.\n• Ή επιλέξτε μια συγκεκριμένη ημερομηνία στο ημερολόγιο.\n\nΤο Vaultara θα σας δείξει ποιες εγγραφές φτάνουν στην ημερομηνία λήξης τους εκείνη την ημέρα.",
+
+"showingRecordsRelative": "Εμφάνιση εγγραφών που λήγουν {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Εμφάνιση εγγραφών που λήγουν στην επιλεγμένη ημερομηνία",
+
+"noRecordsOnDate": "Δεν υπάρχουν εγγραφές που έχουν οριστεί να λήγουν εκείνη την ημέρα.",
+
+"recordEditorAddTitle": "Προσθήκη εγγραφής",
+"recordEditorEditTitle": "Επεξεργασία εγγραφής",
+
+"editorRecordName": "Όνομα εγγραφής",
+"editorRecordNameHint": "Εισαγάγετε όνομα εγγραφής",
+"recordEditorErrorName": "Το όνομα εγγραφής είναι υποχρεωτικό",
+
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint": "Πατήστε για να προσθέσετε και να παρακολουθείτε εγγραφές σε αυτή την ομάδα.",
+
+"recordsInGroup": "Εγγραφές σε αυτή την ομάδα",
+
+"recordsInGroupHint":
+  "Παρακολουθήστε κάθε σημαντική εγγραφή με την ημερομηνία λήξης της, ώστε να την ανανεώνετε έγκαιρα.",
+
+"searchRecords": "Αναζήτηση εγγραφών",
+
+"addRecord": "Προσθήκη εγγραφής",
+
+"noRecordsYet": "Δεν υπάρχουν εγγραφές ακόμα.",
+
+"deleteRecordTitle": "Διαγραφή εγγραφής",
+
+"recordsInsightClusteredTitle":
+  "Πολλές εγγραφές λήγουν γύρω στον {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Οι περισσότερες εγγραφές σας ανήκουν στην κατηγορία {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Όλες οι εγγραφές",
+
+"recordsStabilityDecliningBody":
+  "Κάποιες εγγραφές έχουν περάσει τη λήξη τους και άλλες πλησιάζουν σύντομα.",
+
+"recordsCoverageAllRepresented":
+  "Οι εγγραφές σας περιλαμβάνουν εγγραφές σε όλες τις κατηγορίες.",
+
+"recordReminderStage0Body":
+  "{firstName}, η εγγραφή σας {recordName} λήγει σε {days} ημέρες.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, η εγγραφή σας {recordName} δεν έχει ενημερωθεί ακόμη.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Η ημερομηνία λήξης για την εγγραφή {recordName} πλησιάζει.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, παρακαλώ ενημερώστε την εγγραφή {recordName} τώρα.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"noGroupFound": "Δεν υπάρχουν ομάδες ακόμα",
+
+"recordsExpiring": "{count, plural, one {1 εγγραφή που λήγει σε {days} ημέρες} other {{count} εγγραφές που λήγουν σε {days} ημέρες}}",
+"recordsGroupStats": "{records, plural, one {1 εγγραφή} other {{records} εγγραφές}} • {expiring} λήγουν μέσα σε {days} ημέρες",
+"groupLabel": "{count, plural, one {{count} ομάδα} other {{count} ομάδες}}",
+"recordsLabel": "{count, plural, one {{count} εγγραφή} other {{count} εγγραφές}}",
+
+"forgotPassword": "Ξεχάσατε τον κωδικό;",
+"forgotPasswordTitle": "Επαναφορά κωδικού",
+"forgotPasswordBody": "Εισαγάγετε τη διεύθυνση email σας και θα σας στείλουμε έναν σύνδεσμο για επαναφορά κωδικού.",
+"sendResetLink": "Αποστολή συνδέσμου επαναφοράς",
+"passwordResetEmailSent": "Στάλθηκε email επαναφοράς κωδικού.",
+"verifyEmailToContinue": "Παρακαλώ επαληθεύστε τη διεύθυνση email σας πριν συνδεθείτε",
+
+"changeEmailTitle": "Αλλαγή διεύθυνσης email",
+"newEmailHint": "Εισαγάγετε το νέο σας email",
+"sendVerificationEmail": "Αποστολή email επαλήθευσης",
+
+"deleteAccountTitle": "Διαγραφή λογαριασμού",
+"deleteAccountWarning": "Αυτή η ενέργεια θα διαγράψει οριστικά τον λογαριασμό σας και όλα τα αποθηκευμένα δεδομένα.\nΔεν μπορεί να αναιρεθεί.",
+"deleteAccountConfirm": "Οριστική διαγραφή λογαριασμού",
+
+"supportTitle": "Υποστήριξη",
+"supportSubtitle": "Επικοινωνήστε μαζί μας αν χρειάζεστε βοήθεια ή έχετε απορίες.",
+"supportEmailSubject": "Αίτημα υποστήριξης Vaultara",
+"supportEmailError": "Δεν ήταν δυνατή η ανοίξη της εφαρμογής email.",
+"passwordResetEmailFailed": "Δεν ήταν δυνατή η αποστολή email επαναφοράς κωδικού.",
+
+"loggedInPasswordResetBody": "Θα στείλουμε σύνδεσμο επαναφοράς κωδικού στο:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Ενημερώνει τον χρήστη ότι θα σταλεί email επαναφοράς κωδικού",
+  "placeholders": { "email": { "type": "String" } }
+},
+
+"accountManagementTitle": "Διαχείριση λογαριασμού",
+"changeEmailTitle": "Αλλαγή διεύθυνσης email",
+"changeEmailSubtitle": "Ενημερώστε το email που είναι συνδεδεμένο με τον λογαριασμό σας.",
+"changePasswordTitle": "Αλλαγή κωδικού",
+"changePasswordSubtitle": "Θα σας στείλουμε με email έναν σύνδεσμο για ασφαλή αλλαγή κωδικού.",
+"deleteAccountTitle": "Διαγραφή λογαριασμού",
+"deleteAccountSubtitle": "Κατάργηση του λογαριασμού Vaultara οριστικά.",
+
+"biometricAuthReason": "Ταυτοποιηθείτε για πρόσβαση στον λογαριασμό Vaultara.",
+
+"verifyEmailTitle": "Επαλήθευση email",
+"verifyEmailBody": "Σας στείλαμε ένα email επαλήθευσης στα εισερχόμενά σας. Ανοίξτε το και επιβεβαιώστε τη διεύθυνση email σας. Έπειτα, επιστρέψτε εδώ για να συνεχίσετε.",
+"verifyEmailConfirmedButton": "Έχω επαληθεύσει το email μου",
+"verifyEmailResendButton": "Επαναποστολή email επαλήθευσης",
+"verifyEmailSending": "Αποστολή...",
+
+"navHome": "Αρχική",
+"navCategories": "Κατηγορίες",
+"navInsights": "Στατιστικά",
+"navCalendar": "Ημερολόγιο",
+
+
+"tutorialHomeSearch": "Χρησιμοποιήστε τη γραμμή αναζήτησης για να βρείτε γρήγορα οποιαδήποτε εγγραφή παρακολουθείτε.",
+"tutorialHomeFab": "Προσθέστε την πρώτη σας εγγραφή εδώ.\nΕπιλέξτε πού ανήκει, προσθέστε προαιρετικές σημειώσεις και επιλέξτε ημερομηνία λήξης.",
+"tutorialHomeSummary": "Καθώς προσθέτετε περισσότερες εγγραφές, αυτή η ενότητα σας βοηθά να εντοπίζετε όσα πλησιάζουν ή έχουν περάσει τη λήξη τους.",
+"tutorialHomeInsight": "Αυτή η έξυπνη ένδειξη αναδεικνύει μοτίβα και επερχόμενες λήξεις.\nΜπορείτε να πατήσετε το εικονίδιο του ηχείου για να ακουστεί σε ανάγνωση, αν προτιμάτε ηχητική καθοδήγηση.",
+"tutorialHomeCoverage": "Η Ισορροπία Κάλυψης δείχνει πόσο ομοιόμορφα κατανέμονται οι εγγραφές σας σε όλες τις κατηγορίες.\nΥψηλότερη τιμή σημαίνει λιγότερα κενά στην παρακολούθησή σας.",
+"tutorialHomeStability": "Η Σταθερότητα δείχνει πόσο αξιόπιστες είναι οι εγγραφές σας με την πάροδο του χρόνου.\nΛηγμένα στοιχεία και επερχόμενες λήξεις μπορούν να μειώσουν τη συνολική σταθερότητα.",
+
+"tutorialCancel": "Ακύρωση",
+"tutorialNext": "Επόμενο",
+"tutorialEnd": "Τέλος περιήγησης",
+
+"softDeleteCategory": "Κατηγορία",
+"softDeleteGroup": "Ομάδα",
+"softDeleteRecord": "Εγγραφή",
+
+"softDeleteTitle": "Μετακίνηση {type} στα Πρόσφατα διαγραμμένα",
+"softDeleteMessage": "Το/Η {type} \"{name}\" θα μετακινηθεί στα Πρόσφατα διαγραμμένα.\n\nΜπορείτε να το επαναφέρετε μέσα σε 30 ημέρες. Μετά από αυτό, θα διαγραφεί οριστικά.",
+"softDeleteMove": "Μετακίνηση",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+"recentlyDeletedTitle": "Πρόσφατα διαγραμμένα",
+"categories": "Κατηγορίες",
+"groups": "Ομάδες",
+"records": "Εγγραφές",
+"restore": "Επαναφορά",
+"deletePermanently": "Οριστική διαγραφή",
+
+"recentlyDeletedBanner": "Τα διαγραμμένα {type} διατηρούνται εδώ για 30 ημέρες πριν αφαιρεθούν οριστικά.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Αναζήτηση διαγραμμένων {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Δεν υπάρχουν διαγραμμένα {type} ακόμα",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Πατήστε μια κατηγορία για να δείτε τις ομάδες της και να διαχειριστείτε τις εγγραφές σας.",
+"groupsHint": "Οι ομάδες οργανώνουν τις εγγραφές σας μέσα σε αυτή την κατηγορία. Πατήστε μια ομάδα για να δείτε και να διαχειριστείτε τις εγγραφές της.",
+"notLoggedIn": "Δεν έχετε συνδεθεί",
+
+"recordsInsideGroupHint": "Αυτές είναι οι εγγραφές μέσα σε αυτή την ομάδα.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" μετακινήθηκε στα Πρόσφατα διαγραμμένα",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar όταν ένα αντικείμενο μετακινείται στα πρόσφατα διαγραμμένα",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+
+"snackDeletedSuccessfully": "\"{name}\" διαγράφηκε με επιτυχία",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar όταν ένα αντικείμενο διαγράφεται οριστικά",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+
+"snackUpdatedSuccessfully": "\"{name}\" ενημερώθηκε με επιτυχία",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar όταν ένα αντικείμενο ενημερώνεται",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+
+"snackAddedSuccessfully": "\"{name}\" προστέθηκε με επιτυχία",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar όταν ένα αντικείμενο προστίθεται",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+
+"snackRestoredSuccessfully": "\"{name}\" επαναφέρθηκε με επιτυχία",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar όταν ένα αντικείμενο επαναφέρεται από τα πρόσφατα διαγραμμένα",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+
+"snackFreeLimitReached": "Φτάσατε το όριο του δωρεάν πλάνου ({current}/{limit}). Αναβαθμίστε για να προσθέσετε περισσότερα.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar όταν έχει φτάσει το όριο του δωρεάν πλάνου",
+  "placeholders": {
+    "current": { "type": "int", "example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+
+"globalSearchTitle": "Αναζήτηση σε όλες τις εγγραφές",
+"globalSearchHint": "Πληκτρολογήστε όνομα εγγραφής, κατηγορία ή ομάδα",
+"globalSearchNoMatches": "Καμία εγγραφή δεν ταιριάζει με την αναζήτησή σας.",
+"snackNoRecordsToSearch": "Δεν υπάρχουν εγγραφές για αναζήτηση. Προσθέστε μερικές εγγραφές και το Vaultara θα τις ευρετηριάσει αυτόματα.",
+
+"recoveryCentreTitle": "Κέντρο ανάκτησης",
+"recoveryCentreSubtitle": "Επαναφέρετε ή διαγράψτε οριστικά τις αφαιρεμένες εγγραφές.",
+
+"plan_premium": "Premium",
+"plan_free": "Δωρεάν",
+
+"profile_app_settings_title": "Ρυθμίσεις εφαρμογής",
+"profile_privacy_security_title": "Απόρρητο και ασφάλεια",
+
+"profile_biometric_on": "Το βιομετρικό κλείδωμα είναι ενεργό σε αυτή τη συσκευή.",
+"profile_biometric_off": "Το βιομετρικό κλείδωμα είναι ανενεργό.",
+"profile_biometric_enable_reason": "Επιβεβαιώστε την ταυτότητά σας για να ενεργοποιήσετε το βιομετρικό κλείδωμα.",
+"profile_biometric_disable_reason": "Επιβεβαιώστε την ταυτότητά σας για να απενεργοποιήσετε το βιομετρικό κλείδωμα.",
+
+"profile_account_management_title": "Διαχείριση λογαριασμού",
+"profile_account_management_subtitle": "Αλλάξτε email, κωδικό ή διαγράψτε τον λογαριασμό σας.",
+
+"profile_premium_active_title": "Το Premium είναι ενεργό",
+"profile_premium_upgrade_title": "Αναβάθμιση σε Premium",
+"profile_premium_active_subtitle": "Οι προηγμένες υπενθυμίσεις είναι διαθέσιμες.",
+"profile_premium_upgrade_subtitle": "Ξεκλειδώστε προηγμένες υπενθυμίσεις και απεριόριστη οργάνωση.",
+
+"profile_manage_cancel_hint": "Διαχείριση ή ακύρωση οποιαδήποτε στιγμή στο Google Play.",
+"profile_manage_subscription_button": "Διαχείριση συνδρομής",
+
+"plansTitle": "Επιλέξτε πλάνο",
+"plansTrialBanner": "Ξεκινήστε με 7ήμερη δωρεάν δοκιμή.\nΑκυρώστε οποιαδήποτε στιγμή.",
+"plansLoading": "Φόρτωση…",
+"plansStartFreeTrial": "Έναρξη δωρεάν δοκιμής",
+"plansNoChargeTodayFooter": "7 ημέρες δωρεάν · Χωρίς χρέωση σήμερα",
+
+"planFreeTitle": "Δωρεάν",
+"planFreeSubtitle": "Για να ξεκινήσετε",
+"planPremiumMonthlyTitle": "Premium Μηνιαίο",
+"planPremiumYearlyTitle": "Premium Ετήσιο",
+"planPerMonth": "τον μήνα",
+"planPerYear": "τον χρόνο",
+
+"planBadgeCurrent": "Τρέχον πλάνο",
+"planBadgePopular": "Δημοφιλές",
+"planBadgeBestValue": "Καλύτερη αξία",
+
+"planYouAreOnThisPlan": "Είστε ήδη σε αυτό το πλάνο.",
+
+"planFeatureUpToRecords": "Έως {count} εγγραφές",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Προσαρμοσμένες κατηγορίες (έως {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Προκαθορισμένες υποκατηγορίες",
+"planFeatureCloudStorage": "Αποθήκευση στο cloud",
+"planFeatureSmartExpiryInsights": "Έξυπνες πληροφορίες λήξεων",
+"planFeatureCoverageBalance": "Ισορροπία κάλυψης",
+"planFeatureRecordStabilityTracking": "Παρακολούθηση σταθερότητας εγγραφών",
+
+"planFeatureUnlimitedRecords": "Απεριόριστες εγγραφές",
+"planFeatureUnlimitedCategories": "Απεριόριστες κατηγορίες",
+"planFeatureCustomSubcategories": "Προσαρμοσμένες υποκατηγορίες",
+"planFeatureMultipleRemindersPerRecord": "Πολλαπλές υπενθυμίσεις",
+"planFeatureAdvancedReminderTiming": "Προηγμένος χρονισμός",
+"planFeatureAutomaticFollowUps": "Αυτόματες υπενθυμίσεις παρακολούθησης",
+
+"planFeatureEverythingInMonthly": "Όλα όσα περιλαμβάνει το Μηνιαίο",
+"planFeatureSavePercentComparedToMonthly": "Εξοικονομήστε {percent}% σε σύγκριση με το μηνιαίο",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Καλύτερη αξία μακροπρόθεσμα",
+
+"editorReminderLabel": "Υπενθύμιση",
+"editorReminderSelectOptional": "Επιλέξτε υπενθύμιση (προαιρετικό)",
+"editorReminderOnExpiry": "Την ημέρα λήξης",
+"editorReminderDaysBefore": "{days} ημέρες πριν από τη λήξη",
+"editorFreeItemsCount": "Δωρεάν αντικείμενα: {used}/{limit}",
+"editorExpiryPastWarning": "Η ημερομηνία λήξης έχει ήδη περάσει.",
+"editorExpiryTodayWarning": "Αυτή η εγγραφή λήγει σήμερα.",
+"editorErrorExpiryPast": "Η ημερομηνία λήξης δεν μπορεί να είναι στο παρελθόν.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Σημερινές πληροφορίες",
+"tutorialBannerTitle": "Γρήγορη περιήγηση",
+"tutorialBannerBody": "Μάθετε πού να αναζητάτε, πώς να προσθέτετε εγγραφές και τι σημαίνουν οι πληροφορίες σε λιγότερο από ένα λεπτό.",
+"tutorialBannerStart": "Έναρξη περιήγησης",
+"tutorialBannerDismiss": "Όχι τώρα",
+
+"authErrorUserDisabled": "Αυτός ο λογαριασμός έχει απενεργοποιηθεί.",
+"authErrorNetwork": "Σφάλμα δικτύου. Ελέγξτε το internet και δοκιμάστε ξανά.",
+"authErrorTooManyRequests": "Πάρα πολλές προσπάθειες. Παρακαλώ δοκιμάστε αργότερα.",
+"authErrorSignInFailed": "Η σύνδεση απέτυχε. Παρακαλώ δοκιμάστε ξανά.",
+
+"ok": "OK",
+
+"snackPremiumEnabled": "Το Premium ενεργοποιήθηκε",
+"snackPremiumRestored": "Το Premium επαναφέρθηκε",
+
+"passwordNeedLower": "Πρέπει να περιέχει πεζό γράμμα",
+"passwordNeedUpper": "Πρέπει να περιέχει κεφαλαίο γράμμα",
+"passwordNeedNumber": "Πρέπει να περιέχει αριθμό",
+"passwordNeedSymbol": "Πρέπει να περιέχει σύμβολο",
+
+"confirmIdentityTitle": "Επιβεβαίωση ταυτότητας",
+"confirm": "Επιβεβαίωση",
+
+"profile_sign_out_title": "Αποσύνδεση",
+"profile_sign_out_subtitle": "Αποσυνδεθείτε από το Vaultara σε αυτή τη συσκευή",
+"profile_sign_out_confirm_title": "Αποσύνδεση;",
+"profile_sign_out_confirm_body": "Θα χρειαστεί να συνδεθείτε ξανά για να αποκτήσετε πρόσβαση στον λογαριασμό σας.",
+"profile_sign_out_action": "Αποσύνδεση",
+
+"todayInsightsAudioHint": "Προτιμάτε ήχο; Χρησιμοποιήστε το εικονίδιο του ηχείου.",
+
+"category2Label": "Κατηγορία",
+"enable2BiometricsBody": "Χρησιμοποιήστε αναγνώριση δακτυλικού αποτυπώματος για να προστατεύσετε τον λογαριασμό σας στο Vaultara.",
+
+"snackNotificationsDisabled": "Οι ειδοποιήσεις είναι απενεργοποιημένες. Ενεργοποιήστε τις για να λαμβάνετε υπενθυμίσεις.",
+"openSettings": "Άνοιγμα ρυθμίσεων",
+
+"reminderOnExpiryTitle": "Λήγει σήμερα",
+"@reminderOnExpiryTitle": {
+  "description": "Τίτλος ειδοποίησης που εμφανίζεται την ημέρα λήξης ενός αντικειμένου"
+},
+
+"reminderOnExpiryBody": "Γεια σου {firstName}, το \"{itemName}\" λήγει σήμερα.",
+"@reminderOnExpiryBody": {
+  "description": "Κείμενο ειδοποίησης την ημέρα λήξης, με προσφώνηση του χρήστη με το μικρό του όνομα",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"freeCategoriesProgress": "Δωρεάν κατηγορίες: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Δείχνει πόσες δωρεάν κατηγορίες έχει χρησιμοποιήσει ο χρήστης από το όριο του δωρεάν πλάνου.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"addNotesHint": "Προσθήκη σημειώσεων (προαιρετικό)",
+"apply": "Εφαρμογή",
+"smartInsightExpiresTodayHeading": "Λήγει Σήμερα",
+"smartInsightExpiresTodaySingleBody": "Το {name} λήγει σήμερα. Ενεργήστε τώρα για να το διατηρήσετε ενημερωμένο.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{Τα {names} και 1 ακόμη έγγραφο λήγουν σήμερα.} other{Τα {names} και {extra} ακόμη έγγραφα λήγουν σήμερα.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Χρειάζεται Την Προσοχή Σας",
+"smartInsightSilentRiskBody": "{days, plural, =1{Το {name} λήγει σε 1 ημέρα και δεν έχει υπενθύμιση. Βεβαιωθείτε ότι οι λεπτομέρειες είναι ακόμη σωστές.} other{Το {name} λήγει σε {days} ημέρες και δεν έχει υπενθύμιση. Βεβαιωθείτε ότι οι λεπτομέρειες είναι ακόμη σωστές.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Πολλαπλές Ανανεώσεις Κοντά",
+"smartInsightRenewalTwinBodyTwo": "Τα {a} και {b} λήγουν εντός τριών εβδομάδων μεταξύ τους. Σχεδιάστε εκ των προτέρων.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "Τα {a}, {b} και {c} λήγουν όλα εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{Τα {a}, {b} και 1 ακόμη έγγραφο λήγουν εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.} other{Τα {a}, {b} και {extra} ακόμη έγγραφα λήγουν εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Επερχόμενη Ομάδα",
+"smartInsightClusterBody": "{count, plural, =1{1 έγγραφο στην κατηγορία {category} λήγει εντός των επόμενων δύο μηνών. Σκεφτείτε να τα διαχειριστείτε μαζί.} other{{count} έγγραφα στην κατηγορία {category} λήγουν εντός των επόμενων δύο μηνών. Σκεφτείτε να τα διαχειριστείτε μαζί.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Ήρεμη Περίοδος Μπροστά",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Τίποτα δεν λήγει την επόμενη 1 ημέρα. Η επόμενη ανανέωσή σας είναι στις {firstDate}.} other{Τίποτα δεν λήγει τις επόμενες {days} ημέρες. Η επόμενη ανανέωσή σας είναι στις {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Όλα Ενημερωμένα",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 επερχόμενη λήξη καλύπτεται από υπενθυμίσεις. Τίποτα άλλο δεν χρειάζεται την προσοχή σας.} other{{count} επερχόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν χρειάζεται την προσοχή σας.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Όλα ενημερωμένα. Τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή.",
+"smartInsightNoRecordsHeading": "Προσθέστε Την Πρώτη Σας Εγγραφή",
+"smartInsightNoRecordsBody": "Ξεκινήστε να παρακολουθείτε τα έγγραφά σας και το Vaultara θα εμφανίζει εδώ έξυπνες πληροφορίες.",
+"expiryTimelineTitle": "Χρονοδιάγραμμα λήξης",
+"expiryTimelineSubtitle": "Πατήστε έναν μήνα για να δείτε τα αρχεία που λήγουν σε αυτόν τον μήνα",
+"expiryTimelineDetailCount": "{count, plural, =1{1 αρχείο} other{{count} αρχεία}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Επερχόμενα",
+"summaryUpcomingCaption": "Εντός 30 ημερών",
+"summaryUrgentTitle": "Επείγον",
+"summaryUrgentCaption": "Εντός 7 ημερών"
+
+
+}

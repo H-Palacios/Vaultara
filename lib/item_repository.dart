@@ -1,166 +1,248 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'tracked_item.dart';
-import 'service/reminder_scheduler.dart';
+import 'document_hierarchy.dart';
+import 'services/reminder_scheduler.dart';
+import 'package:vaultara/category_repository.dart';
+import 'home/home_header_loader.dart';
+
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 class ItemRepository {
-  static final Map<String, Map<String, List<TrackedItem>>> _store =
-      <String, Map<String, List<TrackedItem>>>{};
+  static final Map<String, Map<String, List<TrackedItem>>> _store = {};
 
-  static const int expiringThresholdDays = 30;
   static const int freeItemLimit = 5;
 
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static final FirebaseAuth _auth = FirebaseAuth.instance;
 
   static bool _hasLoadedForUser = false;
+  static String? _loadedUserId;
 
-  static String _itemsCollectionPath(String uid) => 'users/$uid/items';
+  static int _createdItemsCount = 0;
+
+  static String _itemsPath(String uid) => 'users/$uid/items';
+
+  static Map<String, Map<String, List<TrackedItem>>> get storeSnapshot => _store;
+
+  static int totalItemsAll() => _totalItemsAll();
+
+  static int limitForPlan({required bool isPremium}) =>
+      isPremium ? 999999 : freeItemLimit;
+
+  static int createdItemsCount() => _createdItemsCount;
+
+  static Future<void> _invalidateHomeHeader() async {
+    try {
+      await HomeHeaderLoader.clearCache();
+    } catch (_) {}
+  }
+
+  static Future<AppLocalizations?> _loc() async {
+    final context = navigatorKey.currentContext;
+    if (context == null) return null;
+    return AppLocalizations.of(context);
+  }
+
+  static String _firstName() => _auth.currentUser?.displayName ?? '';
+
+  static Future<void> _applyReminderForItem(TrackedItem item) async {
+    final loc = await _loc();
+    if (loc == null) return;
+
+    await ReminderScheduler.cancelSeries(item.reminderBaseId);
+
+    final days = item.reminderOffsetDays;
+    if (days == null) return;
+    if (days < 0) return;
+
+    await ReminderScheduler.scheduleReminderSeries(
+      loc: loc,
+      baseNotificationId: item.reminderBaseId,
+      expiryDate: item.expiryDate,
+      initialOffsetDays: days,
+      firstName: _firstName(),
+      itemName: item.name,
+    );
+  }
 
   static Future<void> loadForCurrentUser() async {
-    final User? user = _auth.currentUser;
+    final user = _auth.currentUser;
+
+    debugPrint('ItemRepository.loadForCurrentUser() user=${user?.uid}');
+
     if (user == null) {
       clearForSignOut();
       return;
     }
 
-    if (_hasLoadedForUser) return;
-
-    final QuerySnapshot<Map<String, dynamic>> snapshot =
-        await _firestore.collection(_itemsCollectionPath(user.uid)).get();
+    if (_hasLoadedForUser && _loadedUserId == user.uid) {
+      debugPrint('ItemRepository.loadForCurrentUser() already loaded, skipping');
+      return;
+    }
 
     _store.clear();
 
-    for (final QueryDocumentSnapshot<Map<String, dynamic>> doc
-        in snapshot.docs) {
-      final TrackedItem item = TrackedItem.fromMap(doc.id, doc.data());
-      _addToMemory(item);
+    await CategoryRepository.loadForCurrentUser();
+
+    final userDoc = await _firestore.collection('users').doc(user.uid).get();
+    final data = userDoc.data();
+    final raw = data?['createdItemsCount'];
+    _createdItemsCount = raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
+
+    debugPrint('createdItemsCount=$_createdItemsCount');
+
+    final snap = await _firestore.collection(_itemsPath(user.uid)).get();
+    debugPrint('items fetched=${snap.docs.length}');
+
+    for (final doc in snap.docs) {
+      final item = TrackedItem.fromMap(doc.id, doc.data());
+
+      debugPrint(
+        'LOAD item id=${item.id} name="${item.name}" '
+        'isDeleted=${item.isDeleted} deletedAt=${item.deletedAt}',
+      );
+
+      if (item.isDeleted == true) continue;
+      _add(item);
     }
+
+    await _resyncAllReminders();
 
     _hasLoadedForUser = true;
+    _loadedUserId = user.uid;
+
+    debugPrint('ItemRepository.loadForCurrentUser() DONE');
   }
 
-  static void _addToMemory(TrackedItem item) {
-    final Map<String, List<TrackedItem>> byGroup =
-        _store.putIfAbsent(
-      item.categoryLabel,
-      () => <String, List<TrackedItem>>{},
-    );
-
-    final List<TrackedItem> itemsForGroup =
-        byGroup.putIfAbsent(item.subcategoryName, () => <TrackedItem>[]);
-
-    itemsForGroup.add(item);
-  }
-
-  static List<TrackedItem> getAllItemsFlat() {
-    final List<TrackedItem> result = <TrackedItem>[];
-    for (final Map<String, List<TrackedItem>> byGroup in _store.values) {
-      for (final List<TrackedItem> list in byGroup.values) {
-        result.addAll(list);
+  static Future<void> _resyncAllReminders() async {
+    for (final byCategory in _store.values) {
+      for (final list in byCategory.values) {
+        for (final item in list) {
+          await _applyReminderForItem(item);
+        }
       }
     }
-    return result;
   }
 
-  static List<TrackedItem> getItemsForGroup(
-    String categoryLabel,
-    String subcategoryName,
-  ) {
-    final Map<String, List<TrackedItem>>? byGroup = _store[categoryLabel];
-    if (byGroup == null) return <TrackedItem>[];
+  static void _add(TrackedItem item) {
+    String categoryKey = item.categoryKey;
 
-    final List<TrackedItem>? items = byGroup[subcategoryName];
-    if (items == null) return <TrackedItem>[];
+    if (!DocumentHierarchy.categoryKeys.contains(categoryKey)) {
+      final userCategories = CategoryRepository.getAll();
+      final match = userCategories.where((c) => c.key == categoryKey).toList();
 
-    return items;
+      if (match.isEmpty) {
+        categoryKey = _resolveCategoryKeyFromLabel(item.categoryLabel);
+      }
+    }
+
+    if (categoryKey.isEmpty) {
+      debugPrint(
+        'ADD SKIP: empty categoryKey '
+        '(itemId=${item.id} name="${item.name}" categoryLabel="${item.categoryLabel}")',
+      );
+      return;
+    }
+
+    final byCategory = _store.putIfAbsent(categoryKey, () => {});
+    final byGroup = byCategory.putIfAbsent(item.subcategoryName, () => []);
+
+    if (!byGroup.any((e) => e.id == item.id)) {
+      byGroup.add(item);
+      debugPrint(
+        'ADD OK: itemId=${item.id} name="${item.name}" '
+        'categoryKey=$categoryKey group="${item.subcategoryName}"',
+      );
+    } else {
+      debugPrint('ADD SKIP: duplicate itemId=${item.id}');
+    }
   }
 
-  static bool canAddItem({required bool isPremium}) {
-    if (isPremium) return true;
-    return totalItemsAll() < freeItemLimit;
+  static void _remove(TrackedItem item) {
+    debugPrint(
+      'REMOVE: itemId=${item.id} name="${item.name}" '
+      'categoryKey=${item.categoryKey} group="${item.subcategoryName}"',
+    );
+
+    final byCategory = _store[item.categoryKey];
+    if (byCategory != null) {
+      byCategory[item.subcategoryName]?.removeWhere((e) => e.id == item.id);
+    }
   }
 
-  static bool isFreeLimitReached() {
-    return totalItemsAll() >= freeItemLimit;
+  static String _resolveCategoryKeyFromLabel(String label) {
+    for (final key in DocumentHierarchy.categoryKeys) {
+      if (DocumentHierarchy.categoryLabelFromKey(key).toLowerCase() ==
+          label.toLowerCase()) {
+        return key;
+      }
+    }
+
+    final userCategories = CategoryRepository.getAll();
+    for (final c in userCategories) {
+      if (c.label.toLowerCase() == label.toLowerCase()) {
+        return c.key;
+      }
+    }
+
+    return '';
   }
 
-  static bool isNearFreeLimit() {
-    return totalItemsAll() == freeItemLimit - 1;
-  }
-
-  static List<int> _buildReminderOffsets({
-    required int selectedOffset,
-    required bool isPremium,
-  }) {
-    if (!isPremium) {
-      return <int>[selectedOffset];
-    }
-
-    if (selectedOffset >= 60) {
-      return <int>[selectedOffset, 30, 14, 7, 1, 0];
-    }
-
-    if (selectedOffset >= 30) {
-      return <int>[selectedOffset, 14, 7, 1, 0];
-    }
-
-    if (selectedOffset >= 14) {
-      return <int>[selectedOffset, 7, 1, 0];
-    }
-
-    if (selectedOffset >= 7) {
-      return <int>[selectedOffset, 1, 0];
-    }
-
-    if (selectedOffset >= 1) {
-      return <int>[selectedOffset, 0];
-    }
-
-    return <int>[0];
+  static Future<void> _ensureUserDocExists(String uid) async {
+    final ref = _firestore.collection('users').doc(uid);
+    await _firestore.runTransaction((tx) async {
+      final snap = await tx.get(ref);
+      if (!snap.exists) {
+        tx.set(ref, {'createdItemsCount': 0}, SetOptions(merge: true));
+      } else {
+        final data = snap.data() as Map<String, dynamic>;
+        if (!data.containsKey('createdItemsCount')) {
+          tx.set(ref, {'createdItemsCount': 0}, SetOptions(merge: true));
+        }
+      }
+    });
   }
 
   static Future<bool> addItem(
     TrackedItem item, {
     required bool isPremium,
-    int? reminderOffsetDays,
   }) async {
+    debugPrint('ADD ITEM start name="${item.name}" id=${item.id}');
+
     if (!canAddItem(isPremium: isPremium)) {
+      debugPrint('ADD ITEM blocked by limit');
       return false;
     }
 
-    _addToMemory(item);
+    _add(item);
 
-    final User? user = _auth.currentUser;
+    final user = _auth.currentUser;
     if (user != null) {
-      final DocumentReference<Map<String, dynamic>> docRef =
-          await _firestore
-              .collection(_itemsCollectionPath(user.uid))
-              .add(item.toMap());
+      await _ensureUserDocExists(user.uid);
 
-      item.id = docRef.id;
-    }
+      final ref =
+          await _firestore.collection(_itemsPath(user.uid)).add(item.toMap());
+      item.id = ref.id;
 
-    if (reminderOffsetDays != null && item.id != null) {
-      final String firstName =
-          (_auth.currentUser?.displayName ?? 'Hi').split(' ').first;
+      debugPrint('ADD ITEM firestore id=${item.id}');
 
-      final List<int> offsets = _buildReminderOffsets(
-        selectedOffset: reminderOffsetDays,
-        isPremium: isPremium,
-      );
+      if (!isPremium) {
+        _createdItemsCount++;
 
-      for (final int offset in offsets) {
-        await ReminderScheduler.scheduleReminder(
-          notificationId: item.id.hashCode + offset,
-          expiryDate: item.expiryDate,
-          offsetDays: offset,
-          firstName: firstName,
-          itemName: item.name,
-        );
+        await _firestore.collection('users').doc(user.uid).set({
+          'createdItemsCount': _createdItemsCount,
+        }, SetOptions(merge: true));
       }
     }
+
+    Future(() async {
+      await _applyReminderForItem(item);
+      await _invalidateHomeHeader();
+    });
 
     return true;
   }
@@ -169,131 +251,124 @@ class ItemRepository {
     TrackedItem oldItem,
     TrackedItem updated,
   ) async {
-    final Map<String, List<TrackedItem>>? byGroup =
-        _store[oldItem.categoryLabel];
+    final bool reminderChanged =
+        oldItem.reminderOffsetDays != updated.reminderOffsetDays ||
+            oldItem.expiryDate != updated.expiryDate ||
+            oldItem.name != updated.name ||
+            oldItem.reminderBaseId != updated.reminderBaseId;
 
-    if (byGroup != null) {
-      final List<TrackedItem>? list =
-          byGroup[oldItem.subcategoryName];
-      if (list != null) {
-        final int index = list.indexOf(oldItem);
-        if (index != -1) {
-          list[index] = updated;
-        }
-      }
-    }
-
-    final User? user = _auth.currentUser;
-    if (user == null || oldItem.id == null) return;
-
-    await _firestore
-        .collection(_itemsCollectionPath(user.uid))
-        .doc(oldItem.id)
-        .update(updated.toMap());
-  }
-
-  static Future<void> deleteItem(TrackedItem item) async {
-    final Map<String, List<TrackedItem>>? byGroup =
-        _store[item.categoryLabel];
-
-    byGroup?[item.subcategoryName]?.remove(item);
-
-    final User? user = _auth.currentUser;
-    if (user == null || item.id == null) return;
-
-    await _firestore
-        .collection(_itemsCollectionPath(user.uid))
-        .doc(item.id)
-        .delete();
-  }
-
-  static int totalItemsForCategory(String categoryLabel) {
-    final Map<String, List<TrackedItem>>? byGroup = _store[categoryLabel];
-    if (byGroup == null) return 0;
-
-    return byGroup.values.fold<int>(
-      0,
-      (int sum, List<TrackedItem> list) => sum + list.length,
+    debugPrint(
+      'UPDATE start id=${updated.id} name="${updated.name}" reminderChanged=$reminderChanged',
     );
-  }
 
-  static int expiringSoonForCategory(String categoryLabel) {
-    final Map<String, List<TrackedItem>>? byGroup = _store[categoryLabel];
-    if (byGroup == null) return 0;
+    _remove(oldItem);
+    _add(updated);
 
-    int count = 0;
-    final DateTime now = DateTime.now();
-
-    for (final List<TrackedItem> items in byGroup.values) {
-      for (final TrackedItem item in items) {
-        final int daysLeft = item.expiryDate.difference(now).inDays;
-        if (daysLeft >= 0 && daysLeft <= expiringThresholdDays) {
-          count++;
-        }
-      }
+    final user = _auth.currentUser;
+    if (user != null && updated.id != null) {
+      await _firestore.collection(_itemsPath(user.uid)).doc(updated.id).update({
+        ...updated.toMap(),
+        'lastRenewedAt': Timestamp.now(),
+      });
     }
 
-    return count;
-  }
-
-  static int totalItemsForGroup(
-    String categoryLabel,
-    String subcategoryName,
-  ) {
-    return getItemsForGroup(categoryLabel, subcategoryName).length;
-  }
-
-  static int expiringSoonForGroup(
-    String categoryLabel,
-    String subcategoryName,
-  ) {
-    final List<TrackedItem> items =
-        getItemsForGroup(categoryLabel, subcategoryName);
-
-    int count = 0;
-    final DateTime now = DateTime.now();
-
-    for (final TrackedItem item in items) {
-      final int daysLeft = item.expiryDate.difference(now).inDays;
-      if (daysLeft >= 0 && daysLeft <= expiringThresholdDays) {
-        count++;
-      }
+    if (reminderChanged) {
+      await _applyReminderForItem(updated);
     }
 
-    return count;
+    await _invalidateHomeHeader();
   }
 
-  static int totalItemsAll() => getAllItemsFlat().length;
+  static Future<void> softDeleteItem(TrackedItem item) async {
+    debugPrint(
+      'SOFT DELETE start itemId=${item.id} name="${item.name}" '
+      'categoryKey=${item.categoryKey} group="${item.subcategoryName}"',
+    );
 
-  static int expiredItemsAll() {
-    final DateTime now = DateTime.now();
-    int count = 0;
+    await ReminderScheduler.cancelSeries(item.reminderBaseId);
 
-    for (final TrackedItem item in getAllItemsFlat()) {
-      if (item.expiryDate.isBefore(now)) {
-        count++;
-      }
+    // IMPORTANT: this removes it from the in-memory store immediately,
+    // so it disappears from the current ItemsScreen list straight away.
+    _remove(item);
+
+    final user = _auth.currentUser;
+    if (user == null || item.id == null) {
+      debugPrint('SOFT DELETE abort: user null or item.id null');
+      return;
     }
 
-    return count;
+    await _firestore.collection(_itemsPath(user.uid)).doc(item.id).update({
+      'isDeleted': true,
+      'deletedAt': Timestamp.now(),
+    });
+
+    debugPrint('SOFT DELETE firestore updated itemId=${item.id}');
+
+    await _invalidateHomeHeader();
   }
 
-  static int expiringSoonAll() {
-    final DateTime now = DateTime.now();
-    int count = 0;
+  static Future<void> restoreItem(TrackedItem item) async {
+    debugPrint('RESTORE start itemId=${item.id} name="${item.name}"');
 
-    for (final TrackedItem item in getAllItemsFlat()) {
-      final int daysLeft = item.expiryDate.difference(now).inDays;
-      if (daysLeft >= 0 && daysLeft <= expiringThresholdDays) {
-        count++;
-      }
+    final user = _auth.currentUser;
+    if (user != null && item.id != null) {
+      await _firestore.collection(_itemsPath(user.uid)).doc(item.id).update({
+        'isDeleted': false,
+        'deletedAt': null,
+      });
     }
 
-    return count;
+    final restored = item.copyWith();
+    _add(restored);
+
+    await _applyReminderForItem(restored);
+    await _invalidateHomeHeader();
+  }
+
+  static Future<void> permanentlyDeleteItem(TrackedItem item) async {
+    debugPrint('PERMA DELETE start itemId=${item.id} name="${item.name}"');
+
+    await ReminderScheduler.cancelSeries(item.reminderBaseId);
+
+    final user = _auth.currentUser;
+    if (user != null && item.id != null) {
+      await _firestore.collection(_itemsPath(user.uid)).doc(item.id).delete();
+    }
+
+    await _invalidateHomeHeader();
+  }
+
+  static bool canAddItem({required bool isPremium}) {
+    if (isPremium) return true;
+    return _createdItemsCount < freeItemLimit;
+  }
+
+  static int _totalItemsAll() {
+    int total = 0;
+    for (final byCategory in _store.values) {
+      for (final list in byCategory.values) {
+        total += list.length;
+      }
+    }
+    return total;
   }
 
   static void clearForSignOut() {
+    debugPrint('ItemRepository.clearForSignOut()');
+
+    for (final byCategory in _store.values) {
+      for (final list in byCategory.values) {
+        for (final item in list) {
+          ReminderScheduler.cancelSeries(item.reminderBaseId);
+        }
+      }
+    }
+
     _store.clear();
     _hasLoadedForUser = false;
+    _loadedUserId = null;
+    _createdItemsCount = 0;
+
+    HomeHeaderLoader.clearCache();
   }
 }

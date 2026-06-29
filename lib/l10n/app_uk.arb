@@ -1,0 +1,888 @@
+{
+  "@@locale": "uk",
+  "expiryCalendarTitle": "Календар терміну придатності",
+
+"calendarIntro": "Оберіть, як ви хочете переглядати терміни придатності:\n\n• Введіть, на скільки днів від сьогодні ви хочете заглянути вперед.\n• Або виберіть точну дату в календарі.\n\nVaultara покаже, які елементи досягають терміну придатності в цей день.",
+
+"daysFromTodayLabel": "Днів від сьогодні",
+"daysFromTodayHint": "Наприклад 0, 1, 7, 30",
+
+"apply": "Застосувати",
+"pickDateOnCalendar": "Виберіть дату в календарі",
+
+"today": "Сьогодні",
+"tomorrow": "Завтра",
+"in7Days": "Через 7 днів",
+"in30Days": "Через 30 днів",
+
+"inDays": "через {days} днів",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Введіть кількість днів.",
+"invalidDaysError": "Введіть коректну кількість днів (0 або більше).",
+
+"showingItemsRelative": "Показано елементи, термін придатності яких закінчується {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Показано елементи, термін придатності яких закінчується у вибрану дату",
+"noItemsOnDate": "На цей день немає елементів, термін придатності яких закінчується.",
+
+"editorAddTitle": "Додати елемент",
+"editorEditTitle": "Редагувати елемент",
+
+"editorCategory": "Категорія",
+"editorCategoryHint": "Виберіть категорію",
+
+"editorGroup": "Група",
+"editorGroupHint": "Виберіть групу",
+
+"editorItemName": "Назва елемента",
+"editorItemNameHint": "Введіть назву елемента",
+
+"editorExpiryDate": "Термін придатності",
+"editorExpiryDateHint": "Виберіть термін придатності",
+
+"editorErrorCategory": "Виберіть категорію",
+"editorErrorGroup": "Виберіть групу",
+"editorErrorName": "Назва елемента є обов’язковою",
+"editorErrorExpiry": "Виберіть термін придатності",
+"editorErrorExpiryPast": "Термін придатності має бути сьогодні або в майбутньому",
+"cancel": "Скасувати",
+"save": "Зберегти",
+
+"addCategoryTitle": "Додати категорію",
+"unlimitedCategories": "Необмежені категорії (Premium)",
+
+"categoryUsage": "Використано {current} / {limit} категорій",
+
+"categoryNameLabel": "Категорія",
+"categoryNameHint": "Введіть категорію",
+
+"categoryLimitReached": "Ви досягли ліміту {limit} категорій у Basic плані. Оновіться до Premium.",
+
+"categoryLimitInfo": "У Basic плані можна створити до {limit} категорій.",
+
+"categoryErrorEmpty": "Категорія обов’язкова",
+"categoryErrorTooShort": "Категорія занадто коротка",
+"categoryErrorTooLong": "Категорія занадто довга",
+"categoryErrorSymbols": "не може містити лише символи",
+"categoryErrorNumbers": "Не може містити лише цифри",
+
+"upgradeRequired": "Потрібне оновлення",
+"viewPremiumBenefits": "Переглянути переваги Premium",
+"createCategory": "Створити",
+
+"addGroupTitle": "Додати групу",
+"groupNameLabel": "Група",
+"groupNameHint": "Введіть групу",
+
+"groupErrorEmpty": "Група обов’язкова",
+"groupErrorTooShort": "Група занадто коротка",
+"groupErrorTooLong": "Група занадто довга",
+"groupErrorSymbols": "не може містити символи",
+"groupErrorNumbers": "не може містити цифри",
+"createGroup": "Створити",
+
+"firstNameLabel": "Ім’я",
+"firstNameHint": "Введіть ім’я",
+
+"lastNameLabel": "Прізвище",
+"lastNameHint": "Введіть прізвище",
+
+"emailLabel": "Електронна адреса",
+"loginPasswordHint": "Введіть свій пароль",
+"registerPasswordHint": "Введіть пароль",
+"passwordHelper": "Щонайменше 8 символів різних типів",
+
+"passwordTooShort": "Занадто короткий",
+"passwordTooWeak": "Занадто слабкий",
+"passwordMedium": "Середній",
+"passwordStrong": "Сильний",
+
+"errorFirstName": "Ім’я обов’язкове",
+"errorLastName": "Прізвище обов’язкове",
+"errorEmailInvalid": "Введіть дійсну електронну адресу",
+"errorEmailInUse": "Ця електронна адреса вже\nпов’язана з обліковим записом Vaultara",
+"errorPasswordLength": "Пароль повинен містити щонайменше вісім символів",
+"errorPasswordWeak": "Введіть надійніший пароль",
+"errorGeneric": "Реєстрація не вдалася. Спробуйте ще раз",
+
+"createAccount": "Створити обліковий запис",
+"appName": "Vaultara",
+"authTagline": "Ваш персональний центр для паспортів, посвідчень, карток та інших важливих речей",
+"tabSignIn": "Увійти",
+"tabCreateAccount": "Створити обліковий запис",
+"signInFooterText": "Увійдіть, щоб отримати доступ до свого простору Vaultara та контролювати всі оновлення",
+"createAccountFooterText": "Створіть обліковий запис Vaultara, щоб зберігати важливі нагадування та мати до них доступ у будь-який час",
+
+"emailRequired": "Електронна адреса обов’язкова",
+"passwordRequired": "Пароль обов’язковий",
+"emailNotFound": "Неправильна електронна адреса. Немає\nоблікового запису Vaultara з цією адресою",
+"incorrectPassword": "Неправильний пароль",
+
+"emailLabel": "Електронна адреса",
+"emailHint": "Введіть електронну адресу",
+"passwordLabel": "Пароль",
+"signIn": "Увійти",
+
+"categoryPersonalIdentification": "Особиста ідентифікація",
+"categoryDrivingAndVehicles": "Водіння та транспорт",
+"categoryTravelAndImmigration": "Подорожі та імміграція",
+"categoryBankingAndCards": "Банківські послуги та картки",
+"categoryInsuranceAndCover": "Страхування та покриття",
+"categoryHealthAndMedical": "Здоров’я та медицина",
+"categoryWorkAndProfessional": "Робота та професійна діяльність",
+"categoryPropertyAndHousing": "Нерухомість та житло",
+"categoryHouseholdAndUtilities": "Домогосподарство та комунальні послуги",
+
+"subcategoryPassports": "Паспорти",
+"subcategoryIdCards": "Посвідчення особи",
+"subcategoryResidencePermits": "Дозволи на проживання",
+
+"subcategoryDrivingLicences": "Водійські посвідчення",
+"subcategoryVehicleRegistrations": "Реєстрація транспортних засобів",
+"subcategoryRoadworthyCertificates": "Сертифікати придатності",
+"subcategoryVehicleInspectionCertificates": "Сертифікати технічного огляду",
+
+"subcategoryVisas": "Візи",
+"subcategoryStudyPermits": "Дозволи на навчання",
+"subcategoryWorkPermits": "Дозволи на роботу",
+"subcategoryTravelInsuranceDocuments": "Документи туристичного страхування",
+
+"subcategoryDebitAndCreditCards": "Дебетові та кредитні картки",
+"subcategoryStoreCards": "Картки магазинів",
+"subcategoryFuelCards": "Паливні картки",
+"subcategoryVehicleInsurances": "Страхування транспортних засобів",
+"subcategoryPropertyInsurances": "Страхування майна",
+"subcategoryLifeInsurances": "Страхування життя",
+"subcategoryHealthInsurances": "Медичне страхування",
+"subcategoryTravelInsurances": "Туристичне страхування",
+
+"subcategoryMedicalPrescriptions": "Медичні рецепти",
+"subcategoryOpticalPrescriptions": "Рецепти на окуляри",
+"subcategoryMedicalCertificates": "Медичні довідки",
+
+"subcategoryProfessionalLicences": "Професійні ліцензії",
+"subcategoryProfessionalRegistrations": "Професійні реєстрації",
+"subcategoryIndustryRegistrations": "Галузеві реєстрації",
+"subcategoryWorkAccessCards": "Картки доступу до роботи",
+
+"subcategoryLeaseAgreements": "Договори оренди",
+"subcategoryAccessCardsAndTags": "Картки та мітки доступу",
+"subcategoryParkingPermits": "Паркувальні дозволи",
+"subcategorySecurityAccessPermits": "Дозволи безпеки",
+
+"subcategoryElectricityAccounts": "Рахунки за електроенергію",
+"subcategoryWaterAccounts": "Рахунки за воду",
+"subcategoryInternetContracts": "Інтернет-контракти",
+"subcategorySecurityServiceContracts": "Контракти служби безпеки",
+
+"searchCategories": "Пошук категорій",
+"filterAll": "Усі",
+"filterPreset": "Попередньо встановлені",
+"filterCustom": "Користувацькі",
+"addCategoryTitle": "Додати категорію",
+"customLabel": "Користувацька",
+"subcategoriesLabel": "підкатегорії",
+"itemsLabel": "елементи",
+
+"itemsExpiring": "{count} елементів закінчуються через {days} днів",
+
+"pinnedEssentials": "Закріплені важливі",
+"pinnedHint": "Закріпіть категорії, які ви відкриваєте найчастіше.",
+"noCategoriesFound": "Категорії не знайдено",
+
+"searchGroups": "Пошук груп",
+"addGroupTitle": "Додати групу",
+
+"basicPlanGroupInfo": "Ви користуєтесь планом Basic.\nВи можете переглянути попередньо встановлені групи.\nОновіться до Premium, щоб створювати власні групи.",
+
+"groupDeleted": "Групу видалено",
+"undo": "СКАСУВАТИ",
+
+"groupTapHint": "Торкніться, щоб додати та відстежувати елементи в цій групі.",
+"itemsInGroup": "Елементи в цій групі",
+"itemsInGroupHint": "Відстежуйте кожен важливий елемент з датою закінчення.",
+"searchItems": "Пошук елементів",
+"filterExpiringWithin": "Закінчується протягом {days} днів",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Прострочені",
+"addItem": "Додати елемент",
+"noItemsYet": "Елементів поки немає.",
+
+"statusExpired": "Прострочено",
+"statusExpiresToday": "Закінчується сьогодні",
+"statusExpiresInOneDay": "Закінчується через 1 день",
+"statusExpiresInDays": "Закінчується через {days} днів",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Дійсне",
+
+"deleteCategoryTitle": "Видалити категорію",
+"deleteCategoryMessage": "Ви впевнені, що хочете видалити категорію \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Видалити групу",
+"deleteGroupMessage": "Ви впевнені, що хочете видалити групу \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Видалити елемент",
+"deleteItemMessage": "Ви впевнені, що хочете видалити \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Скасувати",
+"delete": "Видалити",
+
+"homeWelcomeTitle": "Ласкаво просимо",
+
+"homeWelcomeFirstTitle": "Ласкаво просимо, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "З поверненням, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Усі",
+"homeWelcomeSubtitleGeneric": "Vaultara допомагає відстежувати важливі дати, щоб нічого не закінчилось непомітно.",
+
+"homeWelcomeSubtitleFirst": "Раді бачити вас тут. Vaultara допомагає зберігати важливі дати та записи в одному безпечному місці.",
+
+"homeWelcomeSubtitleBack": "Раді бачити вас знову. Vaultara завжди поруч для перегляду ваших важливих дат.",
+
+"insightEmptyTitle": "Поки що нічого не додано",
+"insightEmptyBody": "Почніть відстежувати дати, і Vaultara допоможе вам бути на крок попереду.",
+
+"insightExpiresTodayTitle": "\"{name}\" закінчується сьогодні",
+"insightExpiresTodayBody": "Швидка перевірка допоможе зберегти точність.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" закінчується завтра",
+"insightExpiresTomorrowBody": "Перегляд сьогодні заощадить час пізніше.",
+
+"insightExpiresSoonTitle": "\"{name}\" закінчується {date}",
+"insightExpiresSoonBody": "Ранній перегляд зменшує напругу.",
+
+"insightNextExpiryTitle": "Наступний термін — \"{name}\" {date}",
+"insightNextExpiryBody": "Поки що дій не потрібно, але варто памʼятати.",
+
+"insightClusteredTitle": "Кілька записів закінчуються у {month}",
+"insightClusteredBody": "Спільний перегляд заощадить час.",
+
+"insightTopCategoryTitle": "Більшість записів у {category}",
+"insightTopCategoryBody": "Цей розділ дає найбільший ефект.",
+
+"insightStableTitle": "Усе виглядає стабільно",
+"insightStableBody": "Немає термінів, що потребують уваги.",
+
+"summaryAllTitle": "Усі записи",
+"summaryAllCaption": "Відстежено у Vaultara",
+"summarySoonTitle": "Скоро закінчуються",
+"summarySoonCaption": "Протягом 30 днів",
+"summaryWeekTitle": "Цього тижня",
+"summaryWeekCaption": "Закінчуються за 7 днів",
+"summaryExpiredTitle": "Прострочені",
+"summaryExpiredCaption": "Після дати закінчення",
+
+"stabilityStableTitle": "Стабільність збережена",
+"stabilityStableBody": "Немає накопичених ризиків.",
+
+"stabilityDecliningTitle": "Стабільність знижується",
+"stabilityDecliningBody": "Деякі записи прострочені, інші наближаються.",
+
+"stabilityWeakenedTitle": "Стабільність ослабла",
+"stabilityWeakenedBody": "Прострочені записи знижують надійність.",
+
+"stabilityPressureTitle": "Тиск зростає",
+"stabilityPressureBody": "Декілька записів потребують уваги найближчим часом.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Нотатки",
+"notesHint": "Введіть нотатки",
+"editorReminderTitle": "Нагадування",
+"editorReminderNone": "Без нагадування",
+"editorReminderOnExpiry": "У день закінчення",
+"editorReminder7Days": "За 7 днів",
+"editorReminder30Days": "За 30 днів",
+"editorReminderCustom": "Користувацьке",
+"daysBeforeExpiry": "днів до закінчення",
+
+"reminderStage0Title": "Нагадування про закінчення",
+"reminderStage0Body": "{firstName}, термін дії {itemName} закінчується через {days} днів.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Повторне нагадування",
+"reminderStage1Body": "{firstName}, {itemName} ще не оновлено.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Термін наближається",
+"reminderStage2Body": "Термін дії {itemName} наближається.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Останнє нагадування",
+"reminderFinalBody": "{firstName}, будь ласка оновіть {itemName} зараз.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Баланс покриття",
+"coverageAllRepresented": "Ваші записи охоплюють усі категорії.",
+"coverageMissingNamed": "Немає записів у {count} категоріях: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Ви не додали записи у {count} категоріях, включно з {names} та ще {remaining}.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Використати пароль",
+"signInWithBiometrics": "Увійти за допомогою біометрії",
+"enableBiometricsTitle": "Увімкнути біометричний захист",
+"enableBiometricsBody": "Використовуйте відбиток пальця або розпізнавання обличчя для захисту Vaultara.",
+"enableBiometricsReason": "Увімкнути біометричне розблокування для Vaultara.",
+"notNow": "Не зараз",
+"useBiometrics": "Використовувати біометрію",
+
+"recordsCalendarIntro": "Оберіть, як ви хочете переглядати терміни дії:\n\n• Вкажіть, на скільки днів уперед ви хочете подивитися.\n• Або виберіть точну дату в календарі.\n\nVaultara покаже, які записи закінчуються в цей день.",
+
+"showingRecordsRelative": "Показано записи, що закінчуються {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Показано записи, що закінчуються у вибрану дату",
+
+"noRecordsOnDate": "У цей день немає записів із закінченням терміну дії.",
+
+"recordEditorAddTitle": "Додати запис",
+"recordEditorEditTitle": "Редагувати запис",
+
+"editorRecordName": "Назва запису",
+"editorRecordNameHint": "Введіть назву запису",
+"recordEditorErrorName": "Назва запису є обовʼязковою",
+
+"recordsGroupTapHint": "Торкніться, щоб додати та відстежувати записи в цій групі.",
+
+"recordsInGroup": "Записи в цій групі",
+
+"recordsInGroupHint": "Відстежуйте кожен важливий запис за датою завершення.",
+
+"searchRecords": "Пошук записів",
+
+"addRecord": "Додати запис",
+
+"noRecordsYet": "Записів поки немає.",
+"deleteRecordTitle": "Видалити запис",
+
+"recordsInsightClusteredTitle": "Кілька записів закінчуються приблизно у {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Більшість ваших записів у категорії {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Усі записи",
+
+"recordsStabilityDecliningBody": "Деякі записи вже втратили чинність, а інші скоро втратять.",
+
+"recordsCoverageAllRepresented": "Ваші записи охоплюють усі категорії.",
+
+"recordReminderStage0Body": "{firstName}, ваш {recordName} закінчується через {days} днів.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, ваш {recordName} ще не оновлено.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "Дата закінчення для {recordName} наближається.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, будь ласка оновіть {recordName} зараз.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Груп поки немає",
+
+"recordsExpiring": "{count, plural, one {1 запис закінчується через {days} днів} other {{count} записи закінчуються через {days} днів}}",
+
+"recordsGroupStats": "{records, plural, one {1 запис} other {{records} записи}} • {expiring} закінчуються протягом {days} днів",
+
+"groupLabel": "{count, plural, one {{count} група} other {{count} групи}}",
+
+"recordsLabel": "{count, plural, one {{count} запис} other {{count} записи}}",
+
+"forgotPassword": "Забули пароль?",
+"forgotPasswordTitle": "Скидання пароля",
+"forgotPasswordBody": "Введіть адресу електронної пошти, і ми надішлемо вам посилання для скидання пароля.",
+"sendResetLink": "Надіслати посилання",
+"passwordResetEmailSent": "Лист для скидання пароля надіслано.",
+"verifyEmailToContinue": "Підтвердьте електронну пошту перед входом",
+
+"changeEmailTitle": "Змінити електронну пошту",
+"newEmailHint": "Введіть нову електронну пошту",
+"sendVerificationEmail": "Надіслати лист підтвердження",
+
+"deleteAccountTitle": "Видалити акаунт",
+"deleteAccountWarning": "Ця дія назавжди видалить ваш акаунт і всі дані.\nЇї неможливо скасувати.",
+"deleteAccountConfirm": "Видалити акаунт назавжди",
+
+"supportTitle": "Підтримка",
+"supportSubtitle": "Звʼяжіться з нами, якщо вам потрібна допомога.",
+"supportEmailSubject": "Запит до підтримки Vaultara",
+"supportEmailError": "Не вдалося відкрити поштовий застосунок.",
+
+"passwordResetEmailFailed": "Не вдалося надіслати лист для скидання пароля.",
+
+"loggedInPasswordResetBody": "Ми надішлемо посилання для скидання пароля на:\n{email}",
+
+"accountManagementTitle": "Керування акаунтом",
+"changeEmailSubtitle": "Оновіть електронну пошту, повʼязану з акаунтом.",
+"changePasswordTitle": "Змінити пароль",
+"changePasswordSubtitle": "Ми надішлемо посилання для безпечної зміни.",
+
+"deleteAccountSubtitle": "Назавжди видалити акаунт Vaultara.",
+
+"biometricAuthReason": "Пройдіть автентифікацію для доступу до акаунта Vaultara.",
+
+"verifyEmailTitle": "Підтвердьте електронну пошту",
+"verifyEmailBody": "Ми надіслали лист підтвердження. Відкрийте його та підтвердьте адресу, після чого поверніться сюди.",
+"verifyEmailConfirmedButton": "Я підтвердив електронну пошту",
+"verifyEmailResendButton": "Надіслати лист повторно",
+"verifyEmailSending": "Надсилання...",
+
+"navHome": "Головна",
+"navCategories": "Категорії",
+"navInsights": "Аналіз",
+"navCalendar": "Календар",
+
+
+"tutorialCancel": "Скасувати",
+"tutorialNext": "Далі",
+"tutorialEnd": "Завершити навчання",
+
+"softDeleteCategory": "Категорія",
+"softDeleteGroup": "Група",
+"softDeleteRecord": "Запис",
+
+"softDeleteTitle": "Перемістити {type} до Нещодавно видалених",
+"softDeleteMessage": "{type} \"{name}\" буде переміщено до Нещодавно видалених.\n\nВи зможете відновити його протягом 30 днів. Після цього він буде видалений назавжди.",
+"softDeleteMove": "Перемістити",
+"@recordsExpiring": {
+  "description": "Показує кількість записів, що скоро закінчуються",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Статистика групи",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Кількість груп", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Кількість записів", "placeholders": { "count": { "type": "num"} } },
+"@loggedInPasswordResetBody": {
+  "description": "Повідомляє про надсилання листа для скидання пароля",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "Заголовок підтвердження тимчасового видалення",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "Пояснює дію тимчасового видалення",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "Нещодавно видалені",
+"categories": "Категорії",
+"groups": "Групи",
+"records": "Записи",
+"restore": "Відновити",
+"deletePermanently": "Видалити назавжди",
+
+"recentlyDeletedBanner": "Видалені {type} зберігаються тут 30 днів перед остаточним видаленням.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Пошук видалених {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Поки що немає видалених {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Натисніть категорію, щоб переглянути її групи та керувати записами.",
+"groupsHint": "Групи впорядковують ваші записи в цій категорії. Натисніть групу, щоб переглянути та керувати записами.",
+"notLoggedIn": "Не виконано вхід",
+"recordsInsideGroupHint": "Це записи в цій групі.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" переміщено в Нещодавно видалені",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Паспорт" } }
+},
+
+"snackDeletedSuccessfully": "\"{name}\" успішно видалено",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Водійське посвідчення" } }
+},
+
+"snackUpdatedSuccessfully": "\"{name}\" успішно оновлено",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Віза" } }
+},
+
+"snackAddedSuccessfully": "\"{name}\" успішно додано",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Страхування" } }
+},
+
+"snackRestoredSuccessfully": "\"{name}\" успішно відновлено",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Паспорт" } }
+},
+
+"snackFreeLimitReached": "Досягнуто безкоштовного ліміту ({current}/{limit}). Оновіться, щоб додати більше.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int", "example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+
+"globalSearchTitle": "Пошук по всіх записах",
+"globalSearchHint": "Введіть назву запису, категорію або групу",
+"globalSearchNoMatches": "Жоден запис не відповідає вашому пошуку.",
+"snackNoRecordsToSearch": "Немає записів для пошуку. Додайте кілька записів, і Vaultara автоматично їх проіндексує.",
+"recoveryCentreTitle": "Центр відновлення",
+"recoveryCentreSubtitle": "Відновлюйте або остаточно видаляйте вилучені записи.",
+"plan_premium": "Преміум",
+"plan_free": "Безкоштовний",
+"profile_app_settings_title": "Налаштування застосунку",
+"profile_privacy_security_title": "Конфіденційність і безпека",
+"profile_biometric_on": "Біометричне блокування увімкнено на цьому пристрої.",
+"profile_biometric_off": "Біометричне блокування вимкнено.",
+"profile_biometric_enable_reason": "Підтвердьте свою особу, щоб увімкнути біометричне блокування.",
+"profile_biometric_disable_reason": "Підтвердьте свою особу, щоб вимкнути біометричне блокування.",
+"profile_account_management_title": "Керування обліковим записом",
+"profile_premium_active_title": "Premium активний",
+"profile_premium_upgrade_title": "Оновити до Premium",
+"profile_premium_active_subtitle": "Розширені нагадування розблоковано.",
+"profile_premium_upgrade_subtitle": "Розблокуйте розширені нагадування та необмежену організацію.",
+"profile_manage_cancel_hint": "Керуйте або скасовуйте будь-коли через Google Play.",
+"profile_manage_subscription_button": "Керувати підпискою",
+"plansTitle": "Оберіть план",
+"plansTrialBanner": "Почніть із 7-денного безкоштовного пробного періоду.\nСкасуйте будь-коли.",
+"plansLoading": "Завантаження…",
+"plansStartFreeTrial": "Почати безкоштовний пробний період",
+"plansNoChargeTodayFooter": "7 днів безкоштовно · Сьогодні без оплати",
+
+"planFreeTitle": "Безкоштовний",
+"planFreeSubtitle": "Для початку",
+"planPremiumMonthlyTitle": "Premium щомісяця",
+"planPremiumYearlyTitle": "Premium щорічно",
+"planPerMonth": "на місяць",
+"planPerYear": "на рік",
+
+"planBadgeCurrent": "Поточний план",
+"planBadgePopular": "Популярний",
+"planBadgeBestValue": "Найкраща пропозиція",
+
+"planYouAreOnThisPlan": "Ви вже користуєтесь цим планом.",
+
+"planFeatureUpToRecords": "До {count} записів",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Користувацькі категорії (до {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Попередньо встановлені підкатегорії",
+"planFeatureCloudStorage": "Хмарне сховище",
+"planFeatureSmartExpiryInsights": "Розумні нагадування про терміни",
+"planFeatureCoverageBalance": "Баланс покриття",
+"planFeatureRecordStabilityTracking": "Відстеження стабільності записів",
+
+"planFeatureUnlimitedRecords": "Необмежені записи",
+"planFeatureUnlimitedCategories": "Необмежені категорії",
+"planFeatureCustomSubcategories": "Користувацькі підкатегорії",
+"planFeatureMultipleRemindersPerRecord": "Кілька нагадувань",
+"planFeatureAdvancedReminderTiming": "Розширене налаштування часу",
+"planFeatureAutomaticFollowUps": "Автоматичні нагадування",
+
+"planFeatureEverythingInMonthly": "Усе з місячного плану",
+"planFeatureSavePercentComparedToMonthly": "Заощадьте {percent}% порівняно з місячним",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Найкраща довгострокова вигода",
+
+"editorReminderLabel": "Нагадування",
+"editorReminderSelectOptional": "Оберіть нагадування (необов’язково)",
+"editorReminderOnExpiry": "У день закінчення терміну",
+"editorReminderDaysBefore": "За {days} днів до закінчення",
+"editorFreeItemsCount": "Безкоштовні елементи: {used}/{limit}",
+"editorExpiryPastWarning": "Термін дії вже минув.",
+"editorExpiryTodayWarning": "Цей запис закінчується сьогодні.",
+"editorErrorExpiryPast": "Термін дії не може бути в минулому.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Сьогоднішні огляди",
+"tutorialBannerTitle": "Швидкий огляд",
+"tutorialBannerBody": "За хвилину дізнайтесь, де шукати, як додавати записи та що означають огляди.",
+"tutorialBannerStart": "Почати огляд",
+"tutorialBannerDismiss": "Не зараз",
+"authErrorUserDisabled": "Цей обліковий запис вимкнено.",
+"authErrorNetwork": "Помилка мережі. Перевірте інтернет і спробуйте знову.",
+"authErrorTooManyRequests": "Забагато спроб. Спробуйте пізніше.",
+"authErrorSignInFailed": "Не вдалося увійти. Спробуйте ще раз.",
+"ok": "Добре",
+"snackPremiumEnabled": "Premium увімкнено",
+"snackPremiumRestored": "Premium відновлено",
+"passwordNeedLower": "Потрібна мала літера",
+"passwordNeedUpper": "Потрібна велика літера",
+"passwordNeedNumber": "Потрібна цифра",
+"passwordNeedSymbol": "Потрібен символ",
+"editorFreeItemsCount": "Безкоштовні елементи: {used}/{limit}",
+"editorExpiryPastWarning": "Термін дії вже минув.",
+"editorExpiryTodayWarning": "Цей запис закінчується сьогодні.",
+"editorErrorExpiryPast": "Термін дії не може бути в минулому.",
+"todayInsightsTitle": "Сьогоднішні огляди",
+"tutorialBannerTitle": "Швидкий огляд",
+"tutorialBannerBody": "За хвилину дізнайтесь, де шукати, як додавати записи та що означають огляди.",
+"tutorialBannerStart": "Почати навчання",
+"tutorialBannerDismiss": "Не зараз",
+"authErrorUserDisabled": "Цей обліковий запис вимкнено.",
+"authErrorNetwork": "Помилка мережі. Перевірте інтернет і спробуйте знову.",
+"authErrorTooManyRequests": "Забагато спроб. Спробуйте пізніше.",
+"authErrorSignInFailed": "Не вдалося увійти. Спробуйте ще раз.",
+"ok": "OK",
+"tutorialHomeSearch": "Використовуйте пошук, щоб швидко знайти будь-який запис.",
+"tutorialHomeFab": "Додайте свій перший запис тут.\nОберіть категорію, додайте нотатки та дату завершення.",
+"tutorialHomeSummary": "Зі збільшенням кількості записів цей розділ допоможе помітити терміни.",
+"tutorialHomeInsight": "Це розумне спостереження показує закономірності та наближення термінів.",
+"tutorialHomeCoverage": "Баланс покриття показує розподіл записів по категоріях.",
+"tutorialHomeStability": "Стабільність відображає надійність записів з часом.",
+"profile_account_management_subtitle": "Змінити email, пароль або видалити акаунт.",
+"confirmIdentityTitle": "Підтвердити особу",
+"confirm": "Підтвердити",
+"profile_sign_out_title": "Вийти",
+"profile_sign_out_subtitle": "Вийти з Vaultara на цьому пристрої",
+"profile_sign_out_confirm_title": "Вийти?",
+"profile_sign_out_confirm_body": "Щоб отримати доступ до облікового запису, вам потрібно буде увійти знову.",
+"profile_sign_out_action": "Вийти",
+"todayInsightsAudioHint": "Надаєте перевагу аудіо? Використайте значок динаміка.",
+"category2Label": "Категорія",
+"enable2BiometricsBody": "Використовуйте розпізнавання відбитка пальця, щоб захистити ваш обліковий запис Vaultara.",
+"snackNotificationsDisabled": "Сповіщення вимкнено. Увімкніть їх, щоб отримувати нагадування.",
+"openSettings": "Відкрити налаштування",
+
+"reminderOnExpiryTitle": "Закінчується сьогодні",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Привіт {firstName}, \"{itemName}\" закінчується сьогодні.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Безкоштовні категорії: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Показує, скільки безкоштовних категорій використано з безкоштовного ліміту.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Додати нотатки (необов’язково)",
+"apply": "Застосувати",
+"smartInsightExpiresTodayHeading": "Закінчується Сьогодні",
+"smartInsightExpiresTodaySingleBody": "{name} закінчується сьогодні. Дійте зараз, щоб підтримувати його актуальність.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} та ще 1 документ закінчуються сьогодні.} few{{names} та ще {extra} документи закінчуються сьогодні.} many{{names} та ще {extra} документів закінчуються сьогодні.} other{{names} та ще {extra} документа закінчуються сьогодні.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Потребує Вашої Уваги",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} закінчується через 1 день і нагадування не встановлено. Підтвердіть, що деталі все ще правильні.} few{{name} закінчується через {days} дні і нагадування не встановлено. Підтвердіть, що деталі все ще правильні.} many{{name} закінчується через {days} днів і нагадування не встановлено. Підтвердіть, що деталі все ще правильні.} other{{name} закінчується через {days} дня і нагадування не встановлено. Підтвердіть, що деталі все ще правильні.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Декілька Оновлень Поряд",
+"smartInsightRenewalTwinBodyTwo": "{a} і {b} закінчуються протягом трьох тижнів один від одного. Плануйте заздалегідь.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} і {c} всі закінчуються протягом трьох тижнів. Плануйте заздалегідь.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} та ще 1 документ закінчуються протягом трьох тижнів. Плануйте заздалегідь.} few{{a}, {b} та ще {extra} документи закінчуються протягом трьох тижнів. Плануйте заздалегідь.} many{{a}, {b} та ще {extra} документів закінчуються протягом трьох тижнів. Плануйте заздалегідь.} other{{a}, {b} та ще {extra} документа закінчуються протягом трьох тижнів. Плануйте заздалегідь.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Майбутня Група",
+"smartInsightClusterBody": "{count, plural, =1{1 документ у {category} закінчується протягом наступних двох місяців. Розгляньте можливість обробити їх разом.} few{{count} документи у {category} закінчуються протягом наступних двох місяців. Розгляньте можливість обробити їх разом.} many{{count} документів у {category} закінчуються протягом наступних двох місяців. Розгляньте можливість обробити їх разом.} other{{count} документа у {category} закінчуються протягом наступних двох місяців. Розгляньте можливість обробити їх разом.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Спокійний Період Попереду",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Протягом наступного 1 дня нічого не закінчується. Ваше наступне оновлення {firstDate}.} few{Протягом наступних {days} днів нічого не закінчується. Ваше наступне оновлення {firstDate}.} many{Протягом наступних {days} днів нічого не закінчується. Ваше наступне оновлення {firstDate}.} other{Протягом наступних {days} дня нічого не закінчується. Ваше наступне оновлення {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Все Актуально",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 майбутнє закінчення покрите нагадуваннями. Більше нічого не потребує вашої уваги.} few{{count} майбутні закінчення покриті нагадуваннями. Більше нічого не потребує вашої уваги.} many{{count} майбутніх закінчень покриті нагадуваннями. Більше нічого не потребує вашої уваги.} other{{count} майбутнього закінчення покриті нагадуваннями. Більше нічого не потребує вашої уваги.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Все актуально. Зараз нічого не потребує вашої уваги.",
+"smartInsightNoRecordsHeading": "Додайте Свій Перший Запис",
+"smartInsightNoRecordsBody": "Почніть відстежувати свої документи, і Vaultara відображатиме тут розумні аналітичні дані.",
+"expiryTimelineTitle": "Хронологія закінчення",
+"expiryTimelineSubtitle": "Натисніть місяць, щоб побачити записи, які закінчуються в цьому місяці",
+"expiryTimelineDetailCount": "{count, plural, =1{1 запис} few{{count} записи} many{{count} записів} other{{count} запису}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Майбутні",
+"summaryUpcomingCaption": "Протягом 30 днів",
+"summaryUrgentTitle": "Терміново",
+"summaryUrgentCaption": "Протягом 7 днів"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

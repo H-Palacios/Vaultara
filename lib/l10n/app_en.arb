@@ -35,9 +35,7 @@
   },
 
   "showingItemsExact": "Showing items that expire on the selected date",
-
-  "noItemsOnDate":
-    "No items are set to reach their expiry date on that day.",
+  "noItemsOnDate": "No items are set to reach their expiry date on that day.",
 
   "editorAddTitle": "Add item",
   "editorEditTitle": "Edit item",
@@ -64,7 +62,6 @@
   "save": "Save",
 
   "addCategoryTitle": "Add category",
-
   "unlimitedCategories": "Unlimited categories (Premium)",
 
   "categoryUsage": "{current} / {limit} categories used",
@@ -102,8 +99,8 @@
 
   "upgradeRequired": "Upgrade required",
   "viewPremiumBenefits": "View Premium benefits",
-
   "createCategory": "Create",
+
   "addGroupTitle": "Add group",
   "groupNameLabel": "Group",
   "groupNameHint": "Enter group",
@@ -113,6 +110,833 @@
   "groupErrorTooLong": "Group name is too long",
   "groupErrorSymbols": "Group name cannot contain symbols",
   "groupErrorNumbers": "Group name cannot contain numbers",
-  "createGroup": "Create"
+  "createGroup": "Create",
+  "firstNameLabel": "First name",
+  "firstNameHint": "Enter first name",
+
+  "lastNameLabel": "Last name",
+  "lastNameHint": "Enter last name",
+
+  "emailLabel": "Email address",
+
+"loginPasswordHint": "Enter your password",
+"registerPasswordHint": "Enter password",
+  "passwordHelper": "At least 8 characters with mixed types",
+
+  "passwordTooShort": "Too short",
+  "passwordTooWeak": "Too weak",
+  "passwordMedium": "Medium",
+  "passwordStrong": "Strong",
+
+  "errorFirstName": "First name is required",
+  "errorLastName": "Last name is required",
+  "errorEmailInvalid": "Enter a valid email address",
+  "errorEmailInUse": "This email address is already\nlinked to a Vaultara account",
+  "errorPasswordLength": "Password must be at least eight characters long",
+  "errorPasswordWeak": "Enter a stronger password",
+  "errorGeneric": "Registration failed. Please try again",
+
+  "createAccount": "Create account",
+  "appName": "Vaultara",
+"authTagline": "Your personal hub for passports, licences, cards and other important essentials",
+"tabSignIn": "Sign in",
+"tabCreateAccount": "Create account",
+"signInFooterText": "Sign in to access your personal Vaultara space and keep every renewal under control",
+"createAccountFooterText": "Create your Vaultara account to back up your essential reminders and reach them whenever you need them",
+"emailRequired": "Your email address is required",
+  "passwordRequired": "Your password is required",
+  "emailNotFound": "Wrong email. There is no\nVaultara account with this email",
+  "incorrectPassword": "Incorrect password",
+  "emailLabel": "Email address",
+  "emailHint": "Enter your email",
+  "passwordLabel": "Password",
+  "signIn": "Sign in",
+ "categoryPersonalIdentification": "Personal identification",
+  "categoryDrivingAndVehicles": "Driving and Vehicles",
+  "categoryTravelAndImmigration": "Travel and Immigration",
+  "categoryBankingAndCards": "Banking and Cards",
+  "categoryInsuranceAndCover": "Insurance and Cover",
+  "categoryHealthAndMedical": "Health and Medical",
+  "categoryWorkAndProfessional": "Work and Professional",
+  "categoryPropertyAndHousing": "Property and Housing",
+  "categoryHouseholdAndUtilities": "Household and Utilities",
+
+  "subcategoryPassports": "Passports",
+  "subcategoryIdCards": "ID Cards",
+  "subcategoryResidencePermits": "Residence Permits",
+
+  "subcategoryDrivingLicences": "Driving Licences",
+  "subcategoryVehicleRegistrations": "Vehicle Registrations",
+  "subcategoryRoadworthyCertificates": "Roadworthy Certificates",
+  "subcategoryVehicleInspectionCertificates": "Vehicle Inspection Certificates",
+
+  "subcategoryVisas": "Visas",
+  "subcategoryStudyPermits": "Study Permits",
+  "subcategoryWorkPermits": "Work Permits",
+  "subcategoryTravelInsuranceDocuments": "Travel Insurance Documents",
+
+  "subcategoryDebitAndCreditCards": "Debit and Credit Cards",
+  "subcategoryStoreCards": "Store Cards",
+  "subcategoryFuelCards": "Fuel Cards",
+
+  "subcategoryVehicleInsurances": "Vehicle Insurances",
+  "subcategoryPropertyInsurances": "Property Insurances",
+  "subcategoryLifeInsurances": "Life Insurances",
+  "subcategoryHealthInsurances": "Health insurances",
+  "subcategoryTravelInsurances": "Travel insurances",
+
+  "subcategoryMedicalPrescriptions": "Medical prescriptions",
+  "subcategoryOpticalPrescriptions": "Optical prescriptions",
+  "subcategoryMedicalCertificates": "Medical certificates",
+
+  "subcategoryProfessionalLicences": "Professional licences",
+  "subcategoryProfessionalRegistrations": "Professional registrations",
+  "subcategoryIndustryRegistrations": "Industry registrations",
+  "subcategoryWorkAccessCards": "Work access cards",
+
+  "subcategoryLeaseAgreements": "Lease agreements",
+  "subcategoryAccessCardsAndTags": "Access cards and tags",
+  "subcategoryParkingPermits": "Parking permits",
+  "subcategorySecurityAccessPermits": "Security access permits",
+
+  "subcategoryElectricityAccounts": "Electricity accounts",
+  "subcategoryWaterAccounts": "Water accounts",
+  "subcategoryInternetContracts": "Internet contracts",
+  "subcategorySecurityServiceContracts": "Security service contracts",
+   "searchCategories": "Search categories",
+  "filterAll": "All",
+  "filterPreset": "Pre-set",
+  "filterCustom": "Custom",
+  "addCategoryTitle": "Add category",
+  "customLabel": "Custom",
+  "subcategoriesLabel": "subcategories",
+  "itemsLabel": "items",
+  "itemsExpiring": "{count} items expiring in {days} days",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Pinned essentials",
+  "pinnedHint": "Pin the categories you open most so they stay at the top of your list.",
+  "noCategoriesFound": "No categories found",
+   "searchGroups": "Search groups",
+  "addGroupTitle": "Add group",
+  "basicPlanGroupInfo": "You are on the Basic plan.\nYou can view the pre-set groups under this category.\nUpgrade to Premium to create your own groups.",
+  "groupDeleted": "Group deleted",
+  "undo": "UNDO",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Tap to add and track items in this group.",
+  "itemsInGroup": "Items in this group",
+  "itemsInGroupHint": "Track each important item with its expiry date so you can renew it on time.",
+  "searchItems": "Search items",
+  "filterAll": "All",
+  "filterExpiringWithin": "Expiring within {days} days",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Expired",
+  "addItem": "Add item",
+  "noItemsYet": "No items yet.",
+
+  "statusExpired": "Expired",
+  "statusExpiresToday": "Expires today",
+  "statusExpiresInOneDay": "Expires in 1 day",
+  "statusExpiresInDays": "Expires in {days} days",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Valid",
+
+  "deleteCategoryTitle": "Delete category",
+  "deleteCategoryMessage": "Are you sure you want to delete the category \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Delete group",
+  "deleteGroupMessage": "Are you sure you want to delete the group \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Delete item",
+  "deleteItemMessage": "Are you sure you want to delete \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Cancel",
+  "delete": "Delete",
+   "homeWelcomeTitle": "Welcome",
+
+  "homeWelcomeFirstTitle": "Welcome, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "Welcome back, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara helps you keep track of important expiry dates so nothing quietly goes out of date.",
+
+  "homeWelcomeSubtitleFirst":
+    "It is great to have you here. Vaultara helps you stay organised by keeping important dates and records in one secure place.",
+
+  "homeWelcomeSubtitleBack":
+    "It is good to see you again. Vaultara is here whenever you want to review your important dates and records.",
+    "insightEmptyTitle": "Nothing added yet",
+  "insightEmptyBody": "Once you start tracking important dates, Vaultara will help you stay ahead of expiries.",
+
+  "insightExpiresTodayTitle": "\"{name}\" expires today",
+  "insightExpiresTodayBody": "A quick check now can help keep everything accurate.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" expires tomorrow",
+  "insightExpiresTomorrowBody": "Reviewing it today could save time later.",
+
+  "insightExpiresSoonTitle": "\"{name}\" expires on {date}",
+  "insightExpiresSoonBody": "Handling it early can make things feel more relaxed.",
+
+  "insightNextExpiryTitle": "Your next expiry is \"{name}\" on {date}",
+  "insightNextExpiryBody": "Nothing needs action yet, but it’s good to keep it in mind.",
+
+  "insightClusteredTitle": "Several items expire around {month}",
+  "insightClusteredBody": "Reviewing them together could save time and reduce reminders.",
+
+  "insightTopCategoryTitle": "Most of your items are grouped under {category}",
+  "insightTopCategoryBody": "Reviewing this area gives you the biggest organisational impact.",
+
+  "insightStableTitle": "Everything looks stable",
+  "insightStableBody": "There are no upcoming expiries that need attention right now.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "All items",
+"summaryAllCaption": "Tracked in Vaultara",
+"summarySoonTitle": "Expiring soon",
+"summarySoonCaption": "Within 30 days",
+"summaryWeekTitle": "This week",
+"summaryWeekCaption": "Expires in 7 days",
+"summaryExpiredTitle": "Expired",
+"summaryExpiredCaption": "Past expiry date",
+"stabilityStableTitle": "Everything looks stable",
+"stabilityStableBody": "Your records show no immediate or accumulating risks.",
+
+"stabilityDecliningTitle": "Stability trending downward",
+"stabilityDecliningBody": "Some items have passed their expiry, and more are approaching soon.",
+
+"stabilityWeakenedTitle": "Stability weakened",
+"stabilityWeakenedBody": "Expired records are present, reducing overall reliability.",
+
+"stabilityPressureTitle": "Pressure building",
+"stabilityPressureBody": "Several records will require attention soon to maintain stability.",
+"editorNotes": "Notes",
+"notesHint": "Enter notes",
+"editorReminderTitle": "Reminder",
+"editorReminderNone": "No reminder",
+"editorReminderOnExpiry": "On expiry date",
+"editorReminder7Days": "7 days before expiry",
+"editorReminder30Days": "30 days before expiry",
+"editorReminderCustom": "Custom",
+"daysBeforeExpiry": "days before expiry",
+"reminderStage0Title": "Expiry reminder",
+"reminderStage0Body": "{firstName}, your {itemName} expires in {days} days.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Reminder follow-up",
+"reminderStage1Body": "{firstName}, your {itemName} has not been updated yet.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Expiry approaching",
+"reminderStage2Body": "The expiry date for {itemName} is getting closer.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Final reminder",
+"reminderFinalBody": "{firstName}, please update {itemName} now.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Coverage balance",
+"coverageAllRepresented": "Your records include items across all categories.",
+"coverageMissingNamed": "No records found in {count} categories: {names}.",
+"coverageMissingSummary": "You have not added any records under {count} categories, including {names} and {remaining} others.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Use password instead",
+"signInWithBiometrics": "Sign in with biometrics",
+"enableBiometricsTitle": "Enable biometric security",
+"enableBiometricsBody": "Use fingerprint or face recognition to protect Vaultara.",
+"enableBiometricsReason": "Enable biometric unlock for Vaultara.",
+"notNow": "Not now",
+"useBiometrics": "Use biometrics",
+"recordsCalendarIntro":
+    "Choose how you want to explore your expiries:\n\n• Type how many days from today you want to look ahead.\n• Or pick an exact calendar date.\n\nVaultara will show which records reach their expiry date on that day.",
+
+  "showingRecordsRelative": "Showing records that expire {time}",
+  "@showingRecordsRelative": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+
+  "showingRecordsExact": "Showing records that expire on the selected date",
+
+  "noRecordsOnDate": "No records are set to reach their expiry date on that day.",
+
+  "recordEditorAddTitle": "Add record",
+  "recordEditorEditTitle": "Edit record",
+
+  "editorRecordName": "Record name",
+  "editorRecordNameHint": "Enter record name",
+  "recordEditorErrorName": "Record name is required",
+
+  "@recordsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupTapHint": "Tap to add and track records in this group.",
+
+  "recordsInGroup": "Records in this group",
+
+  "recordsInGroupHint":
+    "Track each important record with its expiry date so you can renew it on time.",
+
+  "searchRecords": "Search records",
+
+  "addRecord": "Add record",
+
+  "noRecordsYet": "No records yet.",
+
+  "deleteRecordTitle": "Delete record",
+
+  "recordsInsightClusteredTitle":
+    "Several records expire around {month}",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": {
+      "month": { "type": "String" }
+    }
+  },
+
+  "recordsInsightTopCategoryTitle":
+    "Most of your records are grouped under {category}",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": {
+      "category": { "type": "String" }
+    }
+  },
+
+  "summaryAllRecordsTitle": "All records",
+
+  "recordsStabilityDecliningBody":
+    "Some records have passed their expiry, and more are approaching soon.",
+
+  "recordsCoverageAllRepresented":
+    "Your records include records across all categories.",
+
+  "recordReminderStage0Body":
+    "{firstName}, your {recordName} expires in {days} days.",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body":
+    "{firstName}, your {recordName} has not been updated yet.",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body":
+    "The expiry date for {recordName} is getting closer.",
+  "@recordReminderStage2Body": {
+    "placeholders": {
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderFinalBody":
+    "{firstName}, please update {recordName} now.",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+  "noGroupFound": "No groups yet",
+"recordsExpiring": "{count, plural, one {1 record expiring in {days} days} other {{count} records expiring in {days} days}}",
+"recordsGroupStats": "{records, plural, one {1 record} other {{records} records}} • {expiring} expiring within {days} days",
+"groupLabel": "{count, plural, one {{count} group} other {{count} groups}}",
+"recordsLabel": "{count, plural, one {{count} record} other {{count} records}}",
+"forgotPassword": "Forgot password?",
+  "forgotPasswordTitle": "Reset password",
+  "forgotPasswordBody": "Enter your email address and we will send you a link to reset your password.",
+  "sendResetLink": "Send reset link",
+  "passwordResetEmailSent": "A password reset email has been sent.",
+  "verifyEmailToContinue": "Please verify your email address before signing in",
+  "changeEmailTitle": "Change email address",
+"newEmailHint": "Enter your new email",
+"sendVerificationEmail": "Send verification email",
+"deleteAccountTitle": "Delete account",
+"deleteAccountWarning": "This action will permanently delete your account and all stored data.\nThis cannot be undone.",
+"deleteAccountConfirm": "Delete account permanently",
+"supportTitle": "Support",
+"supportSubtitle": "Contact us if you need help or have questions.",
+"supportEmailSubject": "Vaultara Support Request",
+"supportEmailError": "Unable to open email app.",
+"passwordResetEmailFailed": "Unable to send password reset email.",
+"loggedInPasswordResetBody": "We will send a password reset link to:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Account management",
+  "changeEmailTitle": "Change email address",
+  "changeEmailSubtitle": "Update the email linked to your account.",
+  "changePasswordTitle": "Change password",
+  "changePasswordSubtitle": "We will email you a link to securely change your password.",
+  "deleteAccountTitle": "Delete account",
+  "deleteAccountSubtitle": "Permanently remove your Vaultara account.",
+  "biometricAuthReason": "Authenticate to access your Vaultara account.",
+  "verifyEmailTitle": "Verify your email",
+"verifyEmailBody": "We have sent a verification email to your inbox. Please open it and confirm your email address. After that, return here to continue.",
+"verifyEmailConfirmedButton": "I have verified my email",
+"verifyEmailResendButton": "Resend verification email",
+"verifyEmailSending": "Sending...",
+"navHome": "Home",
+"navCategories": "Categories",
+"navInsights": "Insights",
+"navCalendar": "Calendar",
+"tutorialHomeSearch": "Use the search bar to quickly find any record you are tracking.",
+"tutorialHomeFab": "Add your first record here.\nChoose where it belongs, add optional notes, and select an expiry date.",
+"tutorialHomeSummary": "As you add more records, this section helps you spot items that are nearing or past their expiry.",
+"tutorialHomeInsight": "This smart insight highlights patterns and upcoming expiries.\nYou can tap the speaker icon to hear it read aloud if you prefer audio guidance.",
+"tutorialHomeCoverage": "Coverage Balance reflects how evenly your records are distributed across all categories.\nA higher balance indicates fewer gaps in your tracking.",
+"tutorialHomeStability": "Stability reflects how reliable your records are over time.\nExpired items and upcoming expiries can reduce overall stability.",
+"tutorialCancel": "Cancel",
+"tutorialNext": "Next",
+"tutorialEnd": "End tutorial",
+"softDeleteCategory": "Category",
+"softDeleteGroup": "Group",
+"softDeleteRecord": "Record",
+"softDeleteTitle": "Move {type} to Recently Deleted",
+"softDeleteMessage": "The {type} \"{name}\" will be moved to Recently Deleted.\n\nYou can restore it within 30 days. After that, it will be permanently removed.",
+"softDeleteMove": "Move",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+
+  "recentlyDeletedTitle": "Recently Deleted",
+  "categories": "Categories",
+  "groups": "Groups",
+  "records": "Records",
+  "restore": "Restore",
+  "deletePermanently": "Delete permanently",
+
+  "recentlyDeletedBanner": "Deleted {type} are kept here for 30 days before being permanently removed.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Search deleted {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "No deleted {type} yet",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Tap a category to view its groups and manage your records.",
+  "groupsHint": "Groups organise your records inside this category. Tap a group to view and manage its records.",
+  "notLoggedIn": "Not logged in",
+"recordsInsideGroupHint": "These are the records inside this group.",
+"snackMovedToRecentlyDeleted": "\"{name}\" moved to Recently Deleted",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" deleted successfully",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" updated successfully",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" added successfully",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" restored successfully",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Free limit reached ({current}/{limit}). Upgrade to add more.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Search all records",
+"globalSearchHint": "Type record name, category or group",
+"globalSearchNoMatches": "No records match your search.",
+"snackNoRecordsToSearch": "There are no records to search. Add a few records and Vaultara will index them automatically.",
+"recoveryCentreTitle": "Recovery Centre",
+"recoveryCentreSubtitle": "Restore or permanently delete removed records.",
+"plan_premium": "Premium",
+"plan_free": "Free",
+"profile_app_settings_title": "App settings",
+"profile_privacy_security_title": "Privacy and security",
+"profile_biometric_on": "Biometric lock is on for this device.",
+"profile_biometric_off": "Biometric lock is off.",
+"profile_biometric_enable_reason": "Confirm your identity to enable biometric lock.",
+"profile_biometric_disable_reason": "Confirm your identity to disable biometric lock.",
+"profile_account_management_title": "Account management",
+"profile_account_management_subtitle": "Change email, password, or delete your account.",
+"profile_premium_active_title": "Premium is active",
+"profile_premium_upgrade_title": "Upgrade to Premium",
+"profile_premium_active_subtitle": "Advanced reminders unlocked.",
+"profile_premium_upgrade_subtitle": "Unlock advanced reminders and unlimited organisation.",
+"profile_manage_cancel_hint": "Manage or cancel anytime in Google Play.",
+"profile_manage_subscription_button": "Manage subscription",
+"plansTitle": "Choose your plan",
+"plansTrialBanner": "Start with a 7-day free trial.\nCancel anytime.",
+"plansLoading": "Loading…",
+"plansStartFreeTrial": "Start free trial",
+"plansNoChargeTodayFooter": "7 days free · No charge today",
+
+"planFreeTitle": "Free",
+"planFreeSubtitle": "For getting started",
+"planPremiumMonthlyTitle": "Premium Monthly",
+"planPremiumYearlyTitle": "Premium Yearly",
+"planPerMonth": "per month",
+"planPerYear": "per year",
+
+"planBadgeCurrent": "Current plan",
+"planBadgePopular": "Popular",
+"planBadgeBestValue": "Best value",
+
+"planYouAreOnThisPlan": "You are already on this plan.",
+
+"planFeatureUpToRecords": "Up to {count} records",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Custom categories (up to {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Preset subcategories",
+"planFeatureCloudStorage": "Cloud storage",
+"planFeatureSmartExpiryInsights": "Smart expiry insights",
+"planFeatureCoverageBalance": "Coverage balance",
+"planFeatureRecordStabilityTracking": "Record stability tracking",
+
+"planFeatureUnlimitedRecords": "Unlimited records",
+"planFeatureUnlimitedCategories": "Unlimited categories",
+"planFeatureCustomSubcategories": "Custom subcategories",
+"planFeatureMultipleRemindersPerRecord": "Multiple reminders",
+"planFeatureAdvancedReminderTiming": "Advanced timing",
+"planFeatureAutomaticFollowUps": "Automatic follow-ups",
+
+"planFeatureEverythingInMonthly": "Everything in Monthly",
+"planFeatureSavePercentComparedToMonthly": "Save {percent}% compared to monthly",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Best long-term value",
+"editorReminderLabel": "Reminder",
+"editorReminderSelectOptional": "Select a reminder (optional)",
+"editorReminderOnExpiry": "On expiry date",
+"editorReminderDaysBefore": "{days} days before expiry",
+"editorFreeItemsCount": "Free items: {used}/{limit}",
+"editorExpiryPastWarning": "The expiry date has already passed.",
+"editorExpiryTodayWarning": "This record expires today.",
+"editorErrorExpiryPast": "The expiry date cannot be in the past.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "Today’s Insights",
+"tutorialBannerTitle": "Quick tour",
+"tutorialBannerBody": "Learn where to search, how to add records, and what insights mean in under a minute.",
+"tutorialBannerStart": "Start tutorial",
+"tutorialBannerDismiss": "Not now",
+"authErrorUserDisabled": "This account has been disabled.",
+"authErrorNetwork": "Network error. Check your internet and try again.",
+"authErrorTooManyRequests": "Too many attempts. Please try again later.",
+"authErrorSignInFailed": "Sign in failed. Please try again.",
+"ok": "OK",
+"snackPremiumEnabled": "Premium enabled",
+"snackPremiumRestored": "Premium restored",
+"passwordNeedLower": "Must contain a lowercase letter",
+"passwordNeedUpper": "Must contain an uppercase letter",
+"passwordNeedNumber": "Must contain a number",
+"passwordNeedSymbol": "Must contain a symbol",
+"confirmIdentityTitle": "Confirm identity",
+"confirm": "Confirm",
+"profile_sign_out_title": "Sign out",
+"profile_sign_out_subtitle": "Sign out of Vaultara on this device",
+"profile_sign_out_confirm_title": "Sign out?",
+"profile_sign_out_confirm_body": "You will need to sign in again to access your account.",
+"profile_sign_out_action": "Sign out",
+"todayInsightsAudioHint": "Prefer audio? Use the speaker icon.",
+"category2Label": "Category",
+"enable2BiometricsBody": "Use fingerprint recognition to protect your Vaultara account.",
+"snackNotificationsDisabled": "Notifications are disabled. Turn them on to receive reminders.",
+"openSettings": "Open settings",
+
+"reminderOnExpiryTitle": "Expires today",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hi {firstName}, \"{itemName}\" expires today.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Free categories: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Shows how many free categories the user has used out of the free limit.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Add notes (optional)",
+"apply": "Apply",
+"smartInsightExpiresTodayHeading": "Expires Today",
+"smartInsightExpiresTodaySingleBody": "{name} expires today. Take action now to keep it up to date.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} and 1 more document expire today.} other{{names} and {extra} more documents expire today.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+
+"smartInsightSilentRiskHeading": "Needs Your Attention",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} expires in 1 day and doesn't have a reminder set. Make sure its details are still accurate.} other{{name} expires in {days} days and doesn't have a reminder set. Make sure its details are still accurate.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"smartInsightRenewalTwinHeading": "Multiple Renewals Close Together",
+
+"smartInsightRenewalTwinBodyTwo": "{a} and {b} expire within three weeks of each other. Plan ahead.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, and {c} all expire within three weeks. Plan ahead.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, and 1 more document expire within three weeks. Plan ahead.} other{{a}, {b}, and {extra} more documents expire within three weeks. Plan ahead.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+
+"smartInsightClusterHeading": "Upcoming Cluster",
+
+"smartInsightClusterBody": "{count, plural, =1{1 document in the {category} category expires within the next two months. Consider handling it together with your other renewals.} other{{count} documents in the {category} category expire within the next two months. Consider handling them together.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+
+"smartInsightQuietPeriodHeading": "Quiet Period Ahead",
+
+"smartInsightQuietPeriodBody": "{days, plural, =1{Nothing expires in the next day. Your next renewal is on {firstDate}.} other{Nothing expires in the next {days} days. Your next renewal is on {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+
+"smartInsightAllCaughtUpHeading": "Everything Is Covered",
+
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 upcoming expiration is covered by a reminder. Nothing else needs your attention.} other{{count} upcoming expirations are covered by reminders. Nothing else needs your attention.}}",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+
+"smartInsightAllCaughtUpNoUpcomingBody": "Everything is up to date. Nothing needs your attention right now.",
+
+"smartInsightNoRecordsHeading": "Add Your First Record",
+"smartInsightNoRecordsBody": "Start tracking your documents, and Vaultara will show smart insights here.",
+"expiryTimelineTitle": "Expiry timeline",
+"expiryTimelineSubtitle": "Tap a month to see the records expiring that month",
+"expiryTimelineDetailCount": "{count, plural, =1{1 record} other{{count} records}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Upcoming",
+"summaryUpcomingCaption": "Within 30 days",
+"summaryUrgentTitle": "Urgent",
+"summaryUrgentCaption": "Within 7 days"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

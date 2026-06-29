@@ -105,5 +105,817 @@
   "groupErrorSymbols": "শুধু চিহ্ন ব্যবহার করা যাবে না",
   "groupErrorNumbers": "সংখ্যা ব্যবহার করা যাবে না",
 
-  "createGroup": "তৈরি"
+  "createGroup": "তৈরি",
+  "registerTitle": "অ্যাকাউন্ট তৈরি করুন",
+
+  "firstNameLabel": "নাম",
+  "firstNameHint": "নাম লিখুন",
+  "errorFirstName": "প্রথম নাম প্রয়োজন",
+
+  "lastNameLabel": "পদবি",
+  "lastNameHint": "পদবি লিখুন",
+  "errorLastName": "শেষ নাম প্রয়োজন",
+  "emailLabel": "ইমেইল",
+  "errorEmailInvalid": "সঠিক ইমেইল লিখুন।",
+  "errorEmailInUse": "এই ইমেইল ইতিমধ্যে Vaultara অ্যাকাউন্টের সাথে যুক্ত।",
+
+  "passwordLabel": "পাসওয়ার্ড",
+  "passwordHelper": "কমপক্ষে ৮টি অক্ষর, বিভিন্ন ধরনের সমন্বয়।",
+"emailRequired": "আপনার ইমেইল প্রয়োজন",
+"passwordRequired": "আপনার পাসওয়ার্ড প্রয়োজন",
+"registerPasswordHint": "পাসওয়ার্ড লিখুন",
+"loginPasswordHint": "আপনার পাসওয়ার্ড লিখুন",
+"emailHint": "আপনার ইমেইল ঠিকানা লিখুন",
+
+  "passwordTooShort": "খুব ছোট",
+  "passwordTooWeak": "খুব দুর্বল",
+  "passwordMedium": "মাঝারি",
+  "passwordStrong": "শক্তিশালী",
+  "errorPasswordLength": "পাসওয়ার্ডে কমপক্ষে ৮টি অক্ষর থাকতে হবে।",
+  "errorPasswordWeak": "আরও শক্তিশালী পাসওয়ার্ড বেছে নিন।",
+
+  "errorGeneric": "রেজিস্ট্রেশন ব্যর্থ হয়েছে। আবার চেষ্টা করুন।",
+
+  "createAccount": "অ্যাকাউন্ট তৈরি করুন",
+  "appName": "Vaultara",
+  "authTagline": "পাসপোর্ট, লাইসেন্স, কার্ড এবং অন্যান্য গুরুত্বপূর্ণ প্রয়োজনের জন্য আপনার ব্যক্তিগত কেন্দ্র",
+  "tabSignIn": "সাইন ইন",
+  "tabCreateAccount": "অ্যাকাউন্ট তৈরি করুন",
+  "signInFooterText": "আপনার ব্যক্তিগত Vaultara স্পেসে প্রবেশ করতে এবং প্রতিটি নবায়ন নিয়ন্ত্রণে রাখতে সাইন ইন করুন",
+  "createAccountFooterText": "আপনার প্রয়োজনীয় রিমাইন্ডার সংরক্ষণ করতে এবং যেকোনো সময় অ্যাক্সেস করতে Vaultara অ্যাকাউন্ট তৈরি করুন",
+
+  "emailNotFound": "ভুল ইমেইল।\nএই ইমেইলে কোনো Vaultara অ্যাকাউন্ট নেই",
+  "incorrectPassword": "ভুল পাসওয়ার্ড",
+  "emailLabel": "ইমেইল",
+  "passwordLabel": "পাসওয়ার্ড",
+  "signIn": "সাইন ইন",
+  "categoryPersonalIdentification": "ব্যক্তিগত পরিচয়",
+  "categoryDrivingAndVehicles": "ড্রাইভিং এবং যানবাহন",
+  "categoryTravelAndImmigration": "ভ্রমণ এবং অভিবাসন",
+  "categoryBankingAndCards": "ব্যাংকিং এবং কার্ড",
+  "categoryInsuranceAndCover": "বীমা এবং কভারেজ",
+  "categoryHealthAndMedical": "স্বাস্থ্য এবং চিকিৎসা",
+  "categoryWorkAndProfessional": "কর্মজীবন এবং পেশাগত",
+  "categoryPropertyAndHousing": "সম্পত্তি এবং আবাসন",
+  "categoryHouseholdAndUtilities": "গৃহস্থালি এবং ইউটিলিটি",
+
+  "subcategoryPassports": "পাসপোর্ট",
+  "subcategoryIdCards": "পরিচয়পত্র",
+  "subcategoryResidencePermits": "আবাসিক অনুমতিপত্র",
+
+  "subcategoryDrivingLicences": "ড্রাইভিং লাইসেন্স",
+  "subcategoryVehicleRegistrations": "যানবাহন নিবন্ধন",
+  "subcategoryRoadworthyCertificates": "রোডওয়ার্থি সনদ",
+  "subcategoryVehicleInspectionCertificates": "যানবাহন পরিদর্শন সনদ",
+
+  "subcategoryVisas": "ভিসা",
+  "subcategoryStudyPermits": "শিক্ষা অনুমতিপত্র",
+  "subcategoryWorkPermits": "কর্ম অনুমতিপত্র",
+  "subcategoryTravelInsuranceDocuments": "ভ্রমণ বীমা নথি",
+
+  "subcategoryDebitAndCreditCards": "ডেবিট ও ক্রেডিট কার্ড",
+  "subcategoryStoreCards": "স্টোর কার্ড",
+  "subcategoryFuelCards": "জ্বালানি কার্ড",
+
+  "subcategoryVehicleInsurances": "যানবাহন বীমা",
+  "subcategoryPropertyInsurances": "সম্পত্তি বীমা",
+  "subcategoryLifeInsurances": "জীবন বীমা",
+  "subcategoryHealthInsurances": "স্বাস্থ্য বীমা",
+  "subcategoryTravelInsurances": "ভ্রমণ বীমা",
+
+  "subcategoryMedicalPrescriptions": "চিকিৎসা প্রেসক্রিপশন",
+  "subcategoryOpticalPrescriptions": "চশমার প্রেসক্রিপশন",
+  "subcategoryMedicalCertificates": "চিকিৎসা সনদ",
+
+  "subcategoryProfessionalLicences": "পেশাগত লাইসেন্স",
+  "subcategoryProfessionalRegistrations": "পেশাগত নিবন্ধন",
+  "subcategoryIndustryRegistrations": "শিল্প নিবন্ধন",
+  "subcategoryWorkAccessCards": "কর্মস্থল প্রবেশ কার্ড",
+
+  "subcategoryLeaseAgreements": "ইজারা চুক্তি",
+  "subcategoryAccessCardsAndTags": "প্রবেশ কার্ড ও ট্যাগ",
+  "subcategoryParkingPermits": "পার্কিং অনুমতিপত্র",
+  "subcategorySecurityAccessPermits": "নিরাপত্তা প্রবেশ অনুমতিপত্র",
+
+  "subcategoryElectricityAccounts": "বিদ্যুৎ হিসাব",
+  "subcategoryWaterAccounts": "পানি হিসাব",
+  "subcategoryInternetContracts": "ইন্টারনেট চুক্তি",
+  "subcategorySecurityServiceContracts": "নিরাপত্তা সেবা চুক্তি",
+   "searchCategories": "বিভাগ অনুসন্ধান করুন",
+  "filterAll": "সব",
+  "filterPreset": "পূর্বনির্ধারিত",
+  "filterCustom": "কাস্টম",
+  "addCategoryTitle": "বিভাগ যোগ করুন",
+  "customLabel": "কাস্টম",
+  "subcategoriesLabel": "উপবিভাগ",
+  "itemsLabel": "আইটেম",
+  "itemsExpiring": "{count}টি আইটেম {days} দিনের মধ্যে মেয়াদ শেষ হবে",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "পিন করা গুরুত্বপূর্ণ বিষয়",
+  "pinnedHint": "আপনি যেসব বিভাগ বেশি ব্যবহার করেন সেগুলো উপরে রাখতে পিন করুন।",
+  "noCategoriesFound": "কোনো বিভাগ পাওয়া যায়নি",
+  "searchGroups": "গ্রুপ অনুসন্ধান করুন",
+  "addGroupTitle": "গ্রুপ যোগ করুন",
+  "basicPlanGroupInfo": "আপনি বেসিক প্ল্যানে আছেন।\nএই ক্যাটাগরির প্রি-সেট গ্রুপগুলো দেখতে পারবেন।\nনিজস্ব গ্রুপ তৈরি করতে প্রিমিয়ামে আপগ্রেড করুন।",
+  "groupDeleted": "গ্রুপ মুছে ফেলা হয়েছে",
+  "undo": "পূর্বাবস্থা",
+  "groupStats": "{items} টি আইটেম • {expiring} টি {days} দিনের মধ্যে মেয়াদ শেষ হবে",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "এই গ্রুপে আইটেম যোগ ও ট্র্যাক করতে ট্যাপ করুন।",
+  "itemsInGroup": "এই গ্রুপের আইটেমসমূহ",
+  "itemsInGroupHint": "প্রতিটি গুরুত্বপূর্ণ আইটেমের মেয়াদ শেষ হওয়ার তারিখ ট্র্যাক করুন যাতে সময়মতো নবায়ন করা যায়।",
+  "searchItems": "আইটেম অনুসন্ধান করুন",
+  "filterAll": "সব",
+  "filterExpiringWithin": "{days} দিনের মধ্যে মেয়াদ শেষ হবে",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "মেয়াদ শেষ",
+  "addItem": "আইটেম যোগ করুন",
+  "noItemsYet": "এখনো কোনো আইটেম নেই।",
+
+  "statusExpired": "মেয়াদ শেষ",
+  "statusExpiresToday": "আজ মেয়াদ শেষ হবে",
+  "statusExpiresInOneDay": "১ দিনের মধ্যে মেয়াদ শেষ হবে",
+  "statusExpiresInDays": "{days} দিনের মধ্যে মেয়াদ শেষ হবে",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "বৈধ",
+
+  "deleteCategoryTitle": "ক্যাটাগরি মুছুন",
+  "deleteCategoryMessage": "আপনি কি নিশ্চিতভাবে \"{name}\" ক্যাটাগরিটি মুছতে চান?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "গ্রুপ মুছুন",
+  "deleteGroupMessage": "আপনি কি নিশ্চিতভাবে \"{name}\" গ্রুপটি মুছতে চান?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "আইটেম মুছুন",
+  "deleteItemMessage": "আপনি কি নিশ্চিতভাবে \"{name}\" আইটেমটি মুছতে চান?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "বাতিল",
+  "delete": "মুছুন",
+  "homeWelcomeTitle": "স্বাগতম",
+
+  "homeWelcomeFirstTitle": "স্বাগতম, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeBackTitle": "আবার স্বাগতম, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "homeWelcomeSubtitleGeneric":
+    "Vaultara আপনাকে গুরুত্বপূর্ণ মেয়াদ শেষ হওয়ার তারিখগুলি অনুসরণ করতে সাহায্য করে যাতে কিছুই অজানা না থাকে।",
+
+  "homeWelcomeSubtitleFirst":
+    "আপনাকে এখানে পেয়ে ভালো লাগছে। Vaultara গুরুত্বপূর্ণ তারিখ ও নথি এক নিরাপদ জায়গায় রেখে আপনাকে সংগঠিত থাকতে সাহায্য করে।",
+
+  "homeWelcomeSubtitleBack":
+    "আবার আপনাকে দেখে ভালো লাগছে। Vaultara এখানে রয়েছে যখনই আপনি আপনার গুরুত্বপূর্ণ তারিখ ও নথি পর্যালোচনা করতে চান।",
+    "insightEmptyTitle": "এখনো কিছু যোগ করা হয়নি",
+  "insightEmptyBody": "গুরুত্বপূর্ণ তারিখগুলো যোগ করা শুরু করলে Vaultara আপনাকে মেয়াদ শেষ হওয়ার আগে সচেতন থাকতে সাহায্য করবে।",
+
+  "insightExpiresTodayTitle": "\"{name}\" আজ মেয়াদ শেষ হচ্ছে",
+  "insightExpiresTodayBody": "এখন একটু দেখে নিলে তথ্যগুলো সঠিক রাখা সহজ হবে।",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" আগামীকাল মেয়াদ শেষ হবে",
+  "insightExpiresTomorrowBody": "আজই একবার দেখে নিলে পরে সময় বাঁচতে পারে।",
+
+  "insightExpiresSoonTitle": "\"{name}\" {date} তারিখে মেয়াদ শেষ হবে",
+  "insightExpiresSoonBody": "আগে থেকে দেখলে কাজগুলো আরও স্বস্তিতে করা যায়।",
+
+  "insightNextExpiryTitle": "পরবর্তী মেয়াদ শেষ হবে \"{name}\" — {date}",
+  "insightNextExpiryBody": "এখনই কোনো কাজ প্রয়োজন নেই, শুধু মনে রাখলেই যথেষ্ট।",
+
+  "insightClusteredTitle": "{month} মাসে একাধিক মেয়াদ শেষ হচ্ছে",
+  "insightClusteredBody": "একসাথে এগুলো পর্যালোচনা করলে সময় বাঁচতে পারে।",
+
+  "insightTopCategoryTitle": "বেশিরভাগ আইটেম রয়েছে {category} বিভাগে",
+  "insightTopCategoryBody": "এই জায়গা থেকে শুরু করলে সবচেয়ে বেশি উপকার পাবেন।",
+
+  "insightStableTitle": "সবকিছু স্থিতিশীল রয়েছে",
+  "insightStableBody": "এই মুহূর্তে কোনো জরুরি মেয়াদ শেষ হওয়ার বিষয় নেই।",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightNextExpiryTitle": {
+    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "summaryAllTitle": "সমস্ত আইটেম",
+"summaryAllCaption": "Vaultara-তে ট্র্যাক করা",
+"summarySoonTitle": "শীঘ্রই মেয়াদ শেষ",
+"summarySoonCaption": "৩০ দিনের মধ্যে",
+"summaryWeekTitle": "এই সপ্তাহে",
+"summaryWeekCaption": "৭ দিনের মধ্যে শেষ হবে",
+"summaryExpiredTitle": "মেয়াদ শেষ",
+"summaryExpiredCaption": "মেয়াদ শেষ হয়ে গেছে",
+"stabilityStableTitle": "সবকিছু স্থিতিশীল",
+"stabilityStableBody": "আপনার রেকর্ডে কোনো তাৎক্ষণিক বা ক্রমবর্ধমান ঝুঁকি নেই।",
+
+"stabilityDecliningTitle": "স্থিতিশীলতা হ্রাস পাচ্ছে",
+"stabilityDecliningBody": "কিছু আইটেমের মেয়াদ শেষ হয়েছে এবং আরও কিছু শিগগিরই শেষ হবে।",
+
+"stabilityWeakenedTitle": "স্থিতিশীলতা দুর্বল",
+"stabilityWeakenedBody": "মেয়াদোত্তীর্ণ রেকর্ড সামগ্রিক নির্ভরযোগ্যতা কমায়।",
+
+"stabilityPressureTitle": "চাপ বাড়ছে",
+"stabilityPressureBody": "স্থিতিশীলতা বজায় রাখতে কিছু রেকর্ড শিগগিরই মনোযোগ চাইবে।",
+"editorNotes": "নোট",
+"notesHint": "নোট লিখুন",
+"editorReminderTitle": "রিমাইন্ডার",
+"editorReminderNone": "কোনো রিমাইন্ডার নেই",
+"editorReminderOnExpiry": "মেয়াদ শেষের দিনে",
+"editorReminder7Days": "মেয়াদ শেষের ৭ দিন আগে",
+"editorReminder30Days": "মেয়াদ শেষের ৩০ দিন আগে",
+"editorReminderCustom": "কাস্টম",
+"daysBeforeExpiry": "মেয়াদ শেষের আগে দিন",
+"reminderStage0Title": "মেয়াদ শেষ হওয়ার স্মরণ",
+"reminderStage0Body": "{firstName}, আপনার {itemName} {days} দিনের মধ্যে মেয়াদ শেষ হবে।",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "অনুস্মারক",
+"reminderStage1Body": "{firstName}, আপনার {itemName} এখনো আপডেট করা হয়নি।",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "মেয়াদ ঘনিয়ে আসছে",
+"reminderStage2Body": "{itemName}-এর মেয়াদ শেষ হওয়ার সময় কাছে আসছে।",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "শেষ স্মরণ",
+"reminderFinalBody": "{firstName}, দয়া করে এখনই {itemName} আপডেট করুন।",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "কভারেজ ভারসাম্য",
+"coverageAllRepresented": "আপনার রেকর্ডে সব ক্যাটাগরিতে আইটেম রয়েছে।",
+"coverageMissingNamed": "{count}টি ক্যাটাগরিতে কোনো রেকর্ড পাওয়া যায়নি: {names}।",
+"coverageMissingSummary": "আপনি {count} টি ক্যাটাগরির অধীনে কোনো রেকর্ড যোগ করেননি, যার মধ্যে {names} এবং আরও {remaining} টি অন্তর্ভুক্ত।"
+,
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "পাসওয়ার্ড ব্যবহার করুন",
+"signInWithBiometrics": "বায়োমেট্রিক দিয়ে সাইন ইন করুন",
+"enableBiometricsTitle": "বায়োমেট্রিক নিরাপত্তা চালু করুন",
+"enableBiometricsBody": "Vaultara সুরক্ষিত রাখতে ফিঙ্গারপ্রিন্ট বা ফেস আইডি ব্যবহার করুন।",
+"enableBiometricsReason": "Vaultara এর জন্য বায়োমেট্রিক আনলক চালু করুন।",
+"notNow": "এখন নয়",
+"useBiometrics": "বায়োমেট্রিক ব্যবহার করুন",
+ "recordsCalendarIntro":
+    "মেয়াদ শেষ হওয়ার তারিখগুলো কীভাবে দেখতে চান তা নির্বাচন করুন:\n\n• আজ থেকে কত দিনের মধ্যে দেখতে চান তা লিখুন।\n• অথবা ক্যালেন্ডার থেকে একটি নির্দিষ্ট তারিখ নির্বাচন করুন।\n\nVaultara সেই দিনে যেসব রেকর্ডের মেয়াদ শেষ হবে সেগুলো দেখাবে।",
+
+  "showingRecordsRelative": "{time} এর মধ্যে মেয়াদ শেষ হওয়া রেকর্ড দেখানো হচ্ছে",
+  "@showingRecordsRelative": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "showingRecordsExact": "নির্বাচিত তারিখে মেয়াদ শেষ হওয়া রেকর্ড দেখানো হচ্ছে",
+  "noRecordsOnDate": "এই তারিখে মেয়াদ শেষ হওয়ার জন্য কোনো রেকর্ড নেই।",
+
+  "recordEditorAddTitle": "রেকর্ড যোগ করুন",
+  "recordEditorEditTitle": "রেকর্ড সম্পাদনা করুন",
+
+  "editorRecordName": "রেকর্ডের নাম",
+  "editorRecordNameHint": "রেকর্ডের নাম লিখুন",
+  "recordEditorErrorName": "রেকর্ডের নাম প্রয়োজন",
+
+  "@recordsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "@recordsGroupStats": {
+    "placeholders": {
+      "records": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordsGroupTapHint":
+    "এই গ্রুপে রেকর্ড যোগ ও ট্র্যাক করতে ট্যাপ করুন।",
+
+  "recordsInGroup": "এই গ্রুপের রেকর্ডসমূহ",
+  "recordsInGroupHint":
+    "প্রতিটি গুরুত্বপূর্ণ রেকর্ডের মেয়াদ শেষ হওয়ার তারিখ ট্র্যাক করুন যাতে সময়মতো নবায়ন করা যায়।",
+
+  "searchRecords": "রেকর্ড অনুসন্ধান করুন",
+  "addRecord": "রেকর্ড যোগ করুন",
+  "noRecordsYet": "এখনও কোনো রেকর্ড নেই।",
+
+  "deleteRecordTitle": "রেকর্ড মুছুন",
+
+  "recordsInsightClusteredTitle":
+    "{month} মাসের আশেপাশে একাধিক রেকর্ডের মেয়াদ শেষ হচ্ছে",
+  "@recordsInsightClusteredTitle": {
+    "placeholders": { "month": { "type": "String" } }
+  },
+
+  "recordsInsightTopCategoryTitle":
+    "আপনার বেশিরভাগ রেকর্ড {category} বিভাগে রয়েছে",
+  "@recordsInsightTopCategoryTitle": {
+    "placeholders": { "category": { "type": "String" } }
+  },
+
+  "summaryAllRecordsTitle": "সব রেকর্ড",
+
+  "recordsStabilityDecliningBody":
+    "কিছু রেকর্ডের মেয়াদ শেষ হয়েছে এবং আরও কিছু শীঘ্রই শেষ হবে।",
+
+  "recordsCoverageAllRepresented":
+    "আপনার রেকর্ডগুলো সব বিভাগের অন্তর্ভুক্ত।",
+
+  "recordReminderStage0Body":
+    "{firstName}, আপনার {recordName} {days} দিনের মধ্যে মেয়াদ শেষ হবে।",
+  "@recordReminderStage0Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" },
+      "days": { "type": "int" }
+    }
+  },
+
+  "recordReminderStage1Body":
+    "{firstName}, আপনার {recordName} এখনও আপডেট করা হয়নি।",
+  "@recordReminderStage1Body": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+
+  "recordReminderStage2Body":
+    "{recordName} এর মেয়াদ শেষ হওয়ার তারিখ কাছাকাছি।",
+  "@recordReminderStage2Body": {
+    "placeholders": { "recordName": { "type": "String" } }
+  },
+
+  "recordReminderFinalBody":
+    "{firstName}, অনুগ্রহ করে এখনই {recordName} আপডেট করুন।",
+  "@recordReminderFinalBody": {
+    "placeholders": {
+      "firstName": { "type": "String" },
+      "recordName": { "type": "String" }
+    }
+  },
+  "noGroupFound": "এখনো কোনো গ্রুপ নেই",
+"recordsExpiring": "{count, plural, one {১টি রেকর্ড {days} দিনের মধ্যে মেয়াদ শেষ হবে} other {{count}টি রেকর্ড {days} দিনের মধ্যে মেয়াদ শেষ হবে}}",
+"recordsGroupStats": "{records, plural, one {১টি রেকর্ড} other {{records}টি রেকর্ড}} • {expiring}টি {days} দিনের মধ্যে",
+"groupLabel": "{count, plural, one {{count} গ্রুপ} other {{count} গ্রুপ}}",
+"recordsLabel": "{count, plural, one {{count} রেকর্ড} other {{count} রেকর্ড}}",
+"forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+  "forgotPasswordTitle": "পাসওয়ার্ড রিসেট",
+  "forgotPasswordBody": "আপনার ইমেইল ঠিকানা লিখুন এবং আমরা পাসওয়ার্ড রিসেট লিঙ্ক পাঠাব।",
+  "sendResetLink": "রিসেট লিঙ্ক পাঠান",
+  "passwordResetEmailSent": "পাসওয়ার্ড রিসেট ইমেইল পাঠানো হয়েছে।",
+  "verifyEmailToContinue": "সাইন ইন করার আগে অনুগ্রহ করে আপনার ইমেল ঠিকানা যাচাই করুন",
+  "changeEmailTitle": "ইমেইল ঠিকানা পরিবর্তন করুন",
+"newEmailHint": "আপনার নতুন ইমেইল লিখুন",
+"sendVerificationEmail": "যাচাইকরণ ইমেইল পাঠান",
+"deleteAccountTitle": "অ্যাকাউন্ট মুছে ফেলুন",
+"deleteAccountWarning": "এই পদক্ষেপটি আপনার অ্যাকাউন্ট এবং সমস্ত সংরক্ষিত তথ্য স্থায়ীভাবে মুছে ফেলবে।\nএটি পূর্বাবস্থায় ফেরানো যাবে না।",
+"deleteAccountConfirm": "স্থায়ীভাবে অ্যাকাউন্ট মুছে ফেলুন",
+"supportTitle": "সহায়তা",
+"supportSubtitle": "আপনার সহায়তা প্রয়োজন হলে বা প্রশ্ন থাকলে আমাদের সাথে যোগাযোগ করুন।",
+"supportEmailSubject": "Vaultara সহায়তা অনুরোধ",
+"supportEmailError": "ইমেইল অ্যাপ খুলতে ব্যর্থ হয়েছে।",
+"passwordResetEmailFailed": "পাসওয়ার্ড রিসেট ইমেইল পাঠানো যায়নি।",
+"loggedInPasswordResetBody": "আমরা পাসওয়ার্ড রিসেট লিংক পাঠাবো:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "অ্যাকাউন্ট ব্যবস্থাপনা",
+  "changeEmailTitle": "ইমেইল ঠিকানা পরিবর্তন করুন",
+  "changeEmailSubtitle": "আপনার অ্যাকাউন্টের সাথে যুক্ত ইমেইল আপডেট করুন।",
+  "changePasswordTitle": "পাসওয়ার্ড পরিবর্তন করুন",
+  "changePasswordSubtitle": "আপনার পাসওয়ার্ড নিরাপদে পরিবর্তনের জন্য আমরা একটি লিঙ্ক ইমেইল করব।",
+  "deleteAccountTitle": "অ্যাকাউন্ট মুছুন",
+  "deleteAccountSubtitle": "স্থায়ীভাবে আপনার Vaultara অ্যাকাউন্ট মুছে ফেলুন।",
+  "biometricAuthReason": "আপনার Vaultara অ্যাকাউন্টে প্রবেশ করতে প্রমাণীকরণ করুন",
+  "verifyEmailTitle": "আপনার ইমেইল যাচাই করুন",
+"verifyEmailBody": "আমরা আপনার ইনবক্সে একটি যাচাইকরণ ইমেইল পাঠিয়েছি। অনুগ্রহ করে এটি খুলে আপনার ইমেইল ঠিকানা নিশ্চিত করুন। তারপর এখানে ফিরে এসে চালিয়ে যান।",
+"verifyEmailConfirmedButton": "আমি আমার ইমেইল যাচাই করেছি",
+"verifyEmailResendButton": "যাচাইকরণ ইমেইল আবার পাঠান",
+"verifyEmailSending": "পাঠানো হচ্ছে...",
+"navHome": "হোম",
+"navCategories": "ক্যাটাগরি",
+"navInsights": "ইনসাইট",
+"navCalendar": "ক্যালেন্ডার",
+"tutorialHomeSearch": "আপনি যে কোনো রেকর্ড ট্র্যাক করছেন তা দ্রুত খুঁজে পেতে সার্চ বার ব্যবহার করুন।",
+"tutorialHomeFab": "এখানে আপনার প্রথম রেকর্ড যোগ করুন।\nকোথায় থাকবে নির্বাচন করুন, ঐচ্ছিক নোট যোগ করুন এবং একটি মেয়াদ শেষের তারিখ নির্বাচন করুন।",
+"tutorialHomeSummary": "আপনি যত বেশি রেকর্ড যোগ করবেন, এই অংশটি আপনাকে মেয়াদ শেষের কাছাকাছি বা মেয়াদ শেষ হয়ে যাওয়া আইটেম শনাক্ত করতে সাহায্য করবে।",
+"tutorialHomeInsight": "এই স্মার্ট ইনসাইট প্যাটার্ন এবং আসন্ন মেয়াদ শেষের তারিখ দেখায়।\nআপনি চাইলে স্পিকার আইকনে ট্যাপ করে এটি শুনতে পারেন।",
+"tutorialHomeCoverage": "কভারেজ ব্যালান্স দেখায় আপনার রেকর্ডগুলো সব ক্যাটাগরিতে কতটা সমানভাবে বিতরণ হয়েছে।\nউচ্চ ব্যালান্স কম ঘাটতির ইঙ্গিত দেয়।",
+"tutorialHomeStability": "স্ট্যাবিলিটি সময়ের সাথে আপনার রেকর্ড কতটা নির্ভরযোগ্য তা প্রতিফলিত করে।\nমেয়াদোত্তীর্ণ এবং আসন্ন মেয়াদ শেষের আইটেম স্ট্যাবিলিটি কমাতে পারে।",
+"tutorialCancel": "বাতিল",
+"tutorialNext": "পরবর্তী",
+"tutorialEnd": "টিউটোরিয়াল শেষ করুন",
+"softDeleteCategory": "বিভাগ",
+"softDeleteGroup": "গ্রুপ",
+"softDeleteRecord": "রেকর্ড",
+
+"softDeleteTitle": "{type} সম্প্রতি মুছে ফেলা তালিকায় সরানো হচ্ছে",
+
+"softDeleteMessage": "{type} \"{name}\" সম্প্রতি মুছে ফেলা তালিকায় সরানো হবে।\n\nআপনি এটি ৩০ দিনের মধ্যে পুনরুদ্ধার করতে পারবেন। এরপর এটি স্থায়ীভাবে মুছে যাবে।",
+
+"softDeleteMove": "সরান",
+
+"@softDeleteTitle": {
+  "placeholders": {
+    "type": {}
+  }
+},
+
+"@softDeleteMessage": {
+  "placeholders": {
+    "type": {},
+    "name": {}
+  }
+},
+
+  "recentlyDeletedTitle": "সম্প্রতি মুছে ফেলা",
+  "categories": "বিভাগসমূহ",
+  "groups": "গ্রুপসমূহ",
+  "records": "রেকর্ডসমূহ",
+  "restore": "পুনরুদ্ধার",
+  "deletePermanently": "স্থায়ীভাবে মুছে ফেলুন",
+
+  "recentlyDeletedBanner": "মুছে ফেলা {type} এখানে ৩০ দিন রাখা হয়। এরপর স্থায়ীভাবে মুছে যাবে।",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "মুছে ফেলা {type} খুঁজুন",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "এখনো কোনো মুছে ফেলা {type} নেই",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "গ্রুপগুলো দেখতে এবং আপনার রেকর্ডগুলো পরিচালনা করতে একটি বিভাগে ট্যাপ করুন।",
+  "groupsHint": "গ্রুপগুলো এই বিভাগে আপনার রেকর্ডগুলো সাজায়। রেকর্ড পরিচালনা করতে গ্রুপে ট্যাপ করুন।",
+  "notLoggedIn": "লগ ইন করা নেই",
+"recordsInsideGroupHint": "এগুলো এই গ্রুপের ভেতরের রেকর্ডগুলো।",
+"snackMovedToRecentlyDeleted": "\"{name}\" সম্প্রতি মুছে ফেলা বিভাগে সরানো হয়েছে",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" সফলভাবে মুছে ফেলা হয়েছে",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" সফলভাবে আপডেট হয়েছে",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" সফলভাবে যোগ করা হয়েছে",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" সফলভাবে পুনরুদ্ধার হয়েছে",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "ফ্রি সীমা পূরণ হয়েছে ({current}/{limit}). আরও যোগ করতে আপগ্রেড করুন।",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "সব রেকর্ড অনুসন্ধান করুন",
+"globalSearchHint": "রেকর্ডের নাম, বিভাগ বা গ্রুপ লিখুন",
+"globalSearchNoMatches": "আপনার অনুসন্ধানের সাথে কোনো রেকর্ড মেলে না।",
+"snackNoRecordsToSearch": "খোঁজার জন্য কোনো রেকর্ড নেই। কয়েকটি রেকর্ড যোগ করুন এবং Vaultara স্বয়ংক্রিয়ভাবে সেগুলো ইনডেক্স করবে।",
+"recoveryCentreTitle": "পুনরুদ্ধার কেন্দ্র",
+"recoveryCentreSubtitle": "অপসারিত রেকর্ড পুনরুদ্ধার করুন বা স্থায়ীভাবে মুছে দিন।",
+
+  "plan_premium": "প্রিমিয়াম",
+  "plan_free": "ফ্রি",
+
+  "profile_app_settings_title": "অ্যাপ সেটিংস",
+
+  "profile_privacy_security_title": "গোপনীয়তা ও নিরাপত্তা",
+  "profile_biometric_on": "এই ডিভাইসে বায়োমেট্রিক লক চালু আছে।",
+  "profile_biometric_off": "বায়োমেট্রিক লক বন্ধ আছে।",
+
+  "profile_biometric_enable_reason": "বায়োমেট্রিক লক চালু করতে আপনার পরিচয় নিশ্চিত করুন।",
+  "profile_biometric_disable_reason": "বায়োমেট্রিক লক বন্ধ করতে আপনার পরিচয় নিশ্চিত করুন।",
+
+  "profile_account_management_title": "অ্যাকাউন্ট ব্যবস্থাপনা",
+  "profile_account_management_subtitle": "ইমেইল, পাসওয়ার্ড পরিবর্তন বা অ্যাকাউন্ট মুছুন।",
+
+  "profile_premium_active_title": "প্রিমিয়াম সক্রিয়",
+  "profile_premium_upgrade_title": "প্রিমিয়ামে আপগ্রেড করুন",
+  "profile_premium_active_subtitle": "উন্নত রিমাইন্ডার সক্রিয়।",
+  "profile_premium_upgrade_subtitle": "উন্নত রিমাইন্ডার ও সীমাহীন সংগঠন আনলক করুন।",
+
+  "profile_manage_cancel_hint": "Google Play থেকে যেকোনো সময় পরিচালনা বা বাতিল করুন।",
+  "profile_manage_subscription_button": "সাবস্ক্রিপশন পরিচালনা করুন",
+  "plansTitle": "আপনার পরিকল্পনা বেছে নিন",
+"plansTrialBanner": "৭ দিনের ফ্রি ট্রায়াল শুরু করুন।\nযেকোনো সময় বাতিল করুন।",
+"plansLoading": "লোড হচ্ছে…",
+"plansStartFreeTrial": "ফ্রি ট্রায়াল শুরু করুন",
+"plansNoChargeTodayFooter": "৭ দিনের ট্রায়াল · আজ কোনো চার্জ নেই",
+
+"planFreeTitle": "ফ্রি",
+"planFreeSubtitle": "শুরু করার জন্য",
+"planPremiumMonthlyTitle": "প্রিমিয়াম মাসিক",
+"planPremiumYearlyTitle": "প্রিমিয়াম বাৎসরিক",
+"planPerMonth": "প্রতি মাস",
+"planPerYear": "প্রতি বছর",
+
+"planBadgeCurrent": "বর্তমান প্ল্যান",
+"planBadgePopular": "জনপ্রিয়",
+"planBadgeBestValue": "সেরা মূল্য",
+
+"planYouAreOnThisPlan": "আপনি ইতিমধ্যেই এই প্ল্যানে আছেন।",
+
+"planFeatureUpToRecords": "{count} পর্যন্ত রেকর্ড",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "কাস্টম ক্যাটাগরি (সর্বোচ্চ {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "প্রিসেট সাবক্যাটাগরি",
+"planFeatureCloudStorage": "ক্লাউড স্টোরেজ",
+"planFeatureSmartExpiryInsights": "স্মার্ট এক্সপায়ারি ইনসাইট",
+"planFeatureCoverageBalance": "কভারেজ ব্যালান্স",
+"planFeatureRecordStabilityTracking": "রেকর্ড স্থিতিশীলতা",
+
+"planFeatureUnlimitedRecords": "আনলিমিটেড রেকর্ড",
+"planFeatureUnlimitedCategories": "আনলিমিটেড ক্যাটাগরি",
+"planFeatureCustomSubcategories": "কাস্টম সাবক্যাটাগরি",
+"planFeatureMultipleRemindersPerRecord": "একাধিক রিমাইন্ডার",
+"planFeatureAdvancedReminderTiming": "উন্নত রিমাইন্ডার টাইমিং",
+"planFeatureAutomaticFollowUps": "স্বয়ংক্রিয় ফলো-আপ",
+
+"planFeatureEverythingInMonthly": "মাসিকের সব সুবিধা",
+"planFeatureSavePercentComparedToMonthly": "মাসিকের তুলনায় {percent}% সাশ্রয়",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "দীর্ঘমেয়াদে সেরা মূল্য",
+"editorReminderLabel": "রিমাইন্ডার",
+"editorReminderSelectOptional": "রিমাইন্ডার নির্বাচন করুন (ঐচ্ছিক)",
+"editorReminderOnExpiry": "মেয়াদ শেষের দিনে",
+"editorReminderDaysBefore": "মেয়াদ শেষের {days} দিন আগে",
+"editorFreeItemsCount": "ফ্রি আইটেম: {used}/{limit}",
+"editorExpiryPastWarning": "মেয়াদ শেষের তারিখ ইতিমধ্যে পেরিয়ে গেছে।",
+"editorExpiryTodayWarning": "এই আইটেমটি আজ মেয়াদ শেষ হচ্ছে।",
+"editorErrorExpiryPast": "মেয়াদ শেষের তারিখ অতীতে হতে পারে না।",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"todayInsightsTitle": "আজকের অন্তর্দৃষ্টি",
+"tutorialBannerTitle": "দ্রুত নির্দেশনা",
+"tutorialBannerBody": "কীভাবে খুঁজবেন, রেকর্ড যোগ করবেন এবং ইনসাইট বুঝবেন — এক মিনিটেই শিখুন।",
+"tutorialBannerStart": "শুরু করুন",
+"tutorialBannerDismiss": "এখন নয়",
+"authErrorUserDisabled": "এই অ্যাকাউন্টটি নিষ্ক্রিয় করা হয়েছে।",
+"authErrorNetwork": "নেটওয়ার্ক সমস্যা। আবার চেষ্টা করুন।",
+"authErrorTooManyRequests": "অনেকবার চেষ্টা করা হয়েছে। পরে চেষ্টা করুন।",
+"authErrorSignInFailed": "সাইন ইন ব্যর্থ হয়েছে। আবার চেষ্টা করুন।",
+"ok": "ঠিক আছে",
+"snackPremiumEnabled": "প্রিমিয়াম সক্রিয় হয়েছে",
+"snackPremiumRestored": "প্রিমিয়াম পুনরুদ্ধার হয়েছে",
+"passwordNeedLower": "ছোট অক্ষর থাকতে হবে",
+"passwordNeedUpper": "বড় অক্ষর থাকতে হবে",
+"passwordNeedNumber": "সংখ্যা থাকতে হবে",
+"passwordNeedSymbol": "চিহ্ন থাকতে হবে",
+"confirmIdentityTitle": "পরিচয় নিশ্চিত করুন",
+"confirm": "নিশ্চিত করুন",
+"profile_sign_out_title": "সাইন আউট",
+"profile_sign_out_subtitle": "এই ডিভাইসে Vaultara থেকে সাইন আউট করুন",
+"profile_sign_out_confirm_title": "সাইন আউট করবেন?",
+"profile_sign_out_confirm_body": "আপনার অ্যাকাউন্টে প্রবেশ করতে আবার সাইন ইন করতে হবে।",
+"profile_sign_out_action": "সাইন আউট",
+"todayInsightsAudioHint": "অডিও পছন্দ? স্পিকার আইকন ব্যবহার করুন।",
+"category2Label": "বিভাগ",
+"enable2BiometricsBody": "আপনার Vaultara অ্যাকাউন্ট সুরক্ষিত রাখতে ফিঙ্গারপ্রিন্ট ব্যবহার করুন।",
+"snackNotificationsDisabled": "নোটিফিকেশন বন্ধ আছে। রিমাইন্ডার পেতে এটি চালু করুন।",
+"openSettings": "সেটিংস খুলুন",
+
+"reminderOnExpiryTitle": "আজ মেয়াদ শেষ",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "হাই {firstName}, \"{itemName}\" আজ মেয়াদ শেষ হচ্ছে।",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "ফ্রি ক্যাটাগরি: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "ফ্রি সীমার মধ্যে কতটি ফ্রি ক্যাটাগরি ব্যবহার হয়েছে তা দেখায়।",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "নোট যোগ করুন (ঐচ্ছিক)",
+"apply": "প্রয়োগ করুন",
+"smartInsightExpiresTodayHeading": "আজ মেয়াদ শেষ",
+"smartInsightExpiresTodaySingleBody": "{name} এর মেয়াদ আজ শেষ হচ্ছে। এটি আপ টু ডেট রাখতে এখনই ব্যবস্থা নিন।",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} এবং আরও 1টি নথির মেয়াদ আজ শেষ হচ্ছে।} other{{names} এবং আরও {extra}টি নথির মেয়াদ আজ শেষ হচ্ছে।}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "আপনার মনোযোগ প্রয়োজন",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} এর মেয়াদ 1 দিনে শেষ হবে এবং কোনো রিমাইন্ডার সেট নেই। বিবরণগুলি এখনও সঠিক কিনা নিশ্চিত করুন।} other{{name} এর মেয়াদ {days} দিনে শেষ হবে এবং কোনো রিমাইন্ডার সেট নেই। বিবরণগুলি এখনও সঠিক কিনা নিশ্চিত করুন।}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "একাধিক নবায়ন কাছাকাছি",
+"smartInsightRenewalTwinBodyTwo": "{a} এবং {b} এর মেয়াদ একে অপরের তিন সপ্তাহের মধ্যে শেষ হবে। আগে থেকেই পরিকল্পনা করুন।",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b}, এবং {c} সবগুলির মেয়াদ তিন সপ্তাহের মধ্যে শেষ হবে। আগে থেকেই পরিকল্পনা করুন।",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, এবং আরও 1টি নথির মেয়াদ তিন সপ্তাহের মধ্যে শেষ হবে। আগে থেকেই পরিকল্পনা করুন।} other{{a}, {b}, এবং আরও {extra}টি নথির মেয়াদ তিন সপ্তাহের মধ্যে শেষ হবে। আগে থেকেই পরিকল্পনা করুন।}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "আসন্ন গুচ্ছ",
+"smartInsightClusterBody": "{count, plural, =1{{category} এ 1টি নথির মেয়াদ পরবর্তী দুই মাসের মধ্যে শেষ হবে। একসাথে পরিচালনার কথা বিবেচনা করুন।} other{{category} এ {count}টি নথির মেয়াদ পরবর্তী দুই মাসের মধ্যে শেষ হবে। একসাথে পরিচালনার কথা বিবেচনা করুন।}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "শান্ত সময় আসছে",
+"smartInsightQuietPeriodBody": "{days, plural, =1{পরবর্তী 1 দিনের জন্য কিছুই মেয়াদ শেষ হচ্ছে না। আপনার পরবর্তী নবায়ন {firstDate} এ।} other{পরবর্তী {days} দিনের জন্য কিছুই মেয়াদ শেষ হচ্ছে না। আপনার পরবর্তী নবায়ন {firstDate} এ।}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "সবকিছু আপ টু ডেট",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1টি আসন্ন মেয়াদ শেষ রিমাইন্ডার দ্বারা আচ্ছাদিত। আর কিছু আপনার মনোযোগ প্রয়োজন নেই।} other{{count}টি আসন্ন মেয়াদ শেষ রিমাইন্ডার দ্বারা আচ্ছাদিত। আর কিছু আপনার মনোযোগ প্রয়োজন নেই।}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "সবকিছু আপ টু ডেট। এই মুহূর্তে কিছু আপনার মনোযোগ প্রয়োজন নেই।",
+"smartInsightNoRecordsHeading": "আপনার প্রথম রেকর্ড যোগ করুন",
+"smartInsightNoRecordsBody": "আপনার নথিগুলি ট্র্যাক করা শুরু করুন এবং Vaultara এখানে স্মার্ট অন্তর্দৃষ্টি প্রদর্শন করবে।",
+"expiryTimelineTitle": "মেয়াদ শেষের সময়রেখা",
+"expiryTimelineSubtitle": "সেই মাসে মেয়াদ শেষ হওয়া রেকর্ড দেখতে একটি মাসে ট্যাপ করুন",
+"expiryTimelineDetailCount": "{count, plural, =1{১টি রেকর্ড} other{{count}টি রেকর্ড}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "আসন্ন",
+"summaryUpcomingCaption": "৩০ দিনের মধ্যে",
+"summaryUrgentTitle": "জরুরি",
+"summaryUrgentCaption": "৭ দিনের মধ্যে"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

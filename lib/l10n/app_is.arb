@@ -101,5 +101,807 @@
   "groupErrorSymbols": "Heiti hóps má ekki vera aðeins tákn",
   "groupErrorNumbers": "Heiti hóps má ekki innihalda tölur",
 
-  "createGroup": "Búa til"
+  "createGroup": "Búa til",
+
+  "registerTitle": "Búa til reikning",
+
+  "firstNameLabel": "Fornafn",
+  "firstNameHint": "Sláðu inn fornafn",
+  "errorFirstName": "Fornafn er nauðsynlegt",
+
+  "lastNameLabel": "Eftirnafn",
+  "lastNameHint": "Sláðu inn eftirnafn",
+  "errorLastName": "Eftirnafn er nauðsynlegt.",
+
+  "emailLabel": "Netfang",
+  "errorEmailInvalid": "Sláðu inn gilt netfang.",
+  "errorEmailInUse": "Þetta netfang er þegar tengt Vaultara reikningi.",
+
+  "passwordLabel": "Lykilorð",
+  "passwordHelper": "Að minnsta kosti 8 stafir með mismunandi gerðum.",
+
+  "passwordTooShort": "Of stutt",
+  "passwordTooWeak": "Of veikt",
+  "passwordMedium": "Miðlungs",
+  "passwordStrong": "Sterkt",
+  "errorPasswordLength": "Lykilorð verður að vera að minnsta kosti 8 stafir.",
+  "errorPasswordWeak": "Veldu sterkara lykilorð.",
+
+  "errorGeneric": "Skráning mistókst. Reyndu aftur.",
+
+  "createAccount": "Búa til reikning",
+  "appName": "Vaultara",
+"authTagline": "Persónulegi miðpunkturinn þinn fyrir vegabréf leyfi kort og önnur mikilvæg atriði",
+"tabSignIn": "Skrá inn",
+"tabCreateAccount": "Búa til reikning",
+"signInFooterText": "Skráðu þig inn til að fá aðgang að persónulegu Vaultara rýminu þínu og halda öllum endurnýjunum í skefjum",
+"createAccountFooterText": "Búðu til Vaultara reikning til að taka afrit af mikilvægum áminningum og nálgast þær hvenær sem er",
+  "emailNotFound": "Rangt netfang.\nEnginn Vaultara reikningur er til með þessu netfangi",
+  "incorrectPassword": "Rangt lykilorð",
+  "emailLabel": "Netfang",
+  "passwordLabel": "Lykilorð",
+"emailRequired": "Netfangið þitt er nauðsynlegt",
+"passwordRequired": "Lykilorðið þitt er nauðsynlegt",
+"registerPasswordHint": "Sláðu inn lykilorð",
+"loginPasswordHint": "Sláðu inn lykilorðið þitt",
+"emailHint": "Sláðu inn netfangið þitt",
+  "signIn": "Skrá inn",
+  "categoryPersonalIdentification": "Persónuauðkenni",
+  "categoryDrivingAndVehicles": "Akstur og ökutæki",
+  "categoryTravelAndImmigration": "Ferðalög og innflytjendamál",
+  "categoryBankingAndCards": "Bankastarfsemi og kort",
+  "categoryInsuranceAndCover": "Tryggingar og vernd",
+  "categoryHealthAndMedical": "Heilsa og læknisfræði",
+  "categoryWorkAndProfessional": "Vinna og faglegt",
+  "categoryPropertyAndHousing": "Eignir og húsnæði",
+  "categoryHouseholdAndUtilities": "Heimili og þjónusta",
+
+  "subcategoryPassports": "Vegabréf",
+  "subcategoryIdCards": "Skilríki",
+  "subcategoryResidencePermits": "Dvalarleyfi",
+
+  "subcategoryDrivingLicences": "Ökuskírteini",
+  "subcategoryVehicleRegistrations": "Skráning ökutækja",
+  "subcategoryRoadworthyCertificates": "Ökuhæfisskírteini",
+  "subcategoryVehicleInspectionCertificates": "Ökutækjaskoðunarskírteini",
+
+  "subcategoryVisas": "Vísar",
+  "subcategoryStudyPermits": "Námsleyfi",
+  "subcategoryWorkPermits": "Atvinnuleyfi",
+  "subcategoryTravelInsuranceDocuments": "Ferðatryggingaskjöl",
+
+  "subcategoryDebitAndCreditCards": "Debet- og kreditkort",
+  "subcategoryStoreCards": "Verslunarkort",
+  "subcategoryFuelCards": "Eldsneytiskort",
+
+  "subcategoryVehicleInsurances": "Ökutækjatryggingar",
+  "subcategoryPropertyInsurances": "Eignatryggingar",
+  "subcategoryLifeInsurances": "Líftryggingar",
+  "subcategoryHealthInsurances": "Heilbrigðistryggingar",
+  "subcategoryTravelInsurances": "Ferðatryggingar",
+
+  "subcategoryMedicalPrescriptions": "Lyfseðlar",
+  "subcategoryOpticalPrescriptions": "Gleraugnaseðlar",
+  "subcategoryMedicalCertificates": "Læknisvottorð",
+
+  "subcategoryProfessionalLicences": "Fagleyfi",
+  "subcategoryProfessionalRegistrations": "Fagleg skráning",
+  "subcategoryIndustryRegistrations": "Iðnaðarskráningar",
+  "subcategoryWorkAccessCards": "Aðgangskort að vinnu",
+
+  "subcategoryLeaseAgreements": "Leigusamningar",
+  "subcategoryAccessCardsAndTags": "Aðgangskort og merki",
+  "subcategoryParkingPermits": "Bílastæðaleyfi",
+  "subcategorySecurityAccessPermits": "Öryggisaðgangsleyfi",
+
+  "subcategoryElectricityAccounts": "Rafmagnsreikningar",
+  "subcategoryWaterAccounts": "Vatnsreikningar",
+  "subcategoryInternetContracts": "Internet-samningar",
+  "subcategorySecurityServiceContracts": "Samningar um öryggisþjónustu",
+  "searchCategories": "Leita í flokkum",
+  "filterAll": "Allt",
+  "filterPreset": "Sjálfgefið",
+  "filterCustom": "Sérsniðið",
+  "addCategoryTitle": "Bæta við flokki",
+  "customLabel": "Sérsniðið",
+  "subcategoriesLabel": "undirflokkar",
+  "itemsLabel": "atriði",
+  "itemsExpiring": "{count} atriði renna út eftir {days} daga",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "Festir flokkar",
+  "pinnedHint": "Festu flokka sem þú opnar oft svo þeir haldist efst.",
+  "noCategoriesFound": "Engir flokkar fundust",
+  "searchGroups": "Leita að hópum",
+  "addGroupTitle": "Bæta við hópi",
+  "basicPlanGroupInfo": "Þú ert á Basic áskrift.\nÞú getur skoðað fyrirfram skilgreinda hópa í þessum flokki.\nUppfærðu í Premium til að búa til eigin hópa.",
+  "groupDeleted": "Hópi eytt",
+  "undo": "HÆTTA VIÐ",
+  "groupStats": "{items} atriði • {expiring} renna út eftir {days} daga",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "Pikkaðu til að bæta við og fylgjast með atriðum í þessum hópi.",
+  "itemsInGroup": "Atriði í þessum hópi",
+  "itemsInGroupHint": "Fylgstu með mikilvægum atriðum og gildistíma þeirra til að endurnýja þau á réttum tíma.",
+  "searchItems": "Leita að atriðum",
+  "filterAll": "Allt",
+  "filterExpiringWithin": "Rennur út eftir {days} daga",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "Útrunnið",
+  "addItem": "Bæta við atriði",
+  "noItemsYet": "Engin atriði enn.",
+
+  "statusExpired": "Útrunnið",
+  "statusExpiresToday": "Rennur út í dag",
+  "statusExpiresInOneDay": "Rennur út á morgun",
+  "statusExpiresInDays": "Rennur út eftir {days} daga",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "Gilt",
+
+  "deleteCategoryTitle": "Eyða flokki",
+  "deleteCategoryMessage": "Ertu viss um að þú viljir eyða flokknum \"{name}\"?",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "Eyða hópi",
+  "deleteGroupMessage": "Ertu viss um að þú viljir eyða hópnum \"{name}\"?",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "Eyða atriði",
+  "deleteItemMessage": "Ertu viss um að þú viljir eyða \"{name}\"?",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "Hætta við",
+  "delete": "Eyða",
+  "homeWelcomeFirstTitle": "Velkomin, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Velkomin aftur, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultara hjálpar þér að fylgjast með mikilvægum gildisdagsetningum svo ekkert renni út í kyrrþey.",
+
+"homeWelcomeSubtitleFirst":
+  "Gaman að hafa þig hér. Vaultara hjálpar þér að halda mikilvægum dagsetningum og skrám skipulögðum á einum öruggum stað.",
+
+"homeWelcomeSubtitleBack":
+  "Gott að sjá þig aftur. Vaultara er hér þegar þú vilt skoða mikilvægar dagsetningar og skrár.",
+  "insightEmptyTitle": "Engu hefur verið bætt við enn",
+  "insightEmptyBody": "Þegar þú byrjar að fylgjast með mikilvægum dagsetningum mun Vaultara hjálpa þér að vera á undan.",
+
+  "insightExpiresTodayTitle": "\"{name}\" rennur út í dag",
+  "insightExpiresTodayBody": "Stutt yfirferð heldur upplýsingum réttum.",
+
+  "insightExpiresTomorrowTitle": "\"{name}\" rennur út á morgun",
+  "insightExpiresTomorrowBody": "Að skoða það núna getur sparað tíma síðar.",
+
+  "insightExpiresSoonTitle": "\"{name}\" rennur út {date}",
+  "insightExpiresSoonBody": "Að taka á því fyrr gerir hlutina auðveldari.",
+
+  "insightNextExpiryTitle": "Næsta gildistími er \"{name}\" {date}",
+  "insightNextExpiryBody": "Engin aðgerð er nauðsynleg núna.",
+
+  "insightClusteredTitle": "Nokkrir hlutir renna út í kringum {month}",
+  "insightClusteredBody": "Sameiginleg yfirferð getur sparað tíma.",
+
+  "insightTopCategoryTitle": "Flestir hlutir eru í {category}",
+  "insightTopCategoryBody": "Að skoða þetta svæði hefur mest áhrif.",
+
+  "insightStableTitle": "Allt er stöðugt",
+  "insightStableBody": "Engir nálægir gildistímar sem krefjast athygli.",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "Velkomin",
+  "summaryAllTitle": "Allir hlutir",
+"summaryAllCaption": "Rakið í Vaultara",
+"summarySoonTitle": "Rennur brátt út",
+"summarySoonCaption": "Innan 30 daga",
+"summaryWeekTitle": "Í þessari viku",
+"summaryWeekCaption": "Rennur út eftir 7 daga",
+"summaryExpiredTitle": "Útrunnið",
+"summaryExpiredCaption": "Gildistími liðinn",
+"stabilityStableTitle": "Allt virðist stöðugt",
+"stabilityStableBody": "Skrár þínar sýna hvorki tafarlausar né uppsafnaðar áhættur.",
+
+"stabilityDecliningTitle": "Stöðugleiki er að minnka",
+"stabilityDecliningBody": "Sum atriði eru útrunnin og önnur nálgast fyrningardag.",
+
+"stabilityWeakenedTitle": "Stöðugleiki veikst",
+"stabilityWeakenedBody": "Tilvist útrunninna skráa dregur úr heildaráreiðanleika.",
+
+"stabilityPressureTitle": "Álag eykst",
+"stabilityPressureBody": "Nokkrar skrár munu fljótlega þurfa athygli til að viðhalda stöðugleika.",
+"editorNotes": "Athugasemdir",
+"notesHint": "Sláðu inn athugasemdir",
+"editorReminderTitle": "Áminning",
+"editorReminderNone": "Engin áminning",
+"editorReminderOnExpiry": "Á gjalddaga",
+"editorReminder7Days": "7 dögum fyrir gjalddaga",
+"editorReminder30Days": "30 dögum fyrir gjalddaga",
+"editorReminderCustom": "Sérsniðið",
+"daysBeforeExpiry": "dögum fyrir gjalddaga",
+"reminderStage0Title": "Gildistímaáminning",
+"reminderStage0Body": "{firstName}, {itemName} rennur út eftir {days} daga.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Eftirfylgniáminning",
+"reminderStage1Body": "{firstName}, {itemName} hefur ekki verið uppfært enn.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Gildistími að nálgast",
+"reminderStage2Body": "Gildistími {itemName} er að nálgast.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Lokaáminning",
+"reminderFinalBody": "{firstName}, vinsamlegast uppfærðu {itemName} núna.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "Yfirlit yfir umfang",
+"coverageAllRepresented": "Skrárnar þínar innihalda atriði í öllum flokkum.",
+"coverageMissingNamed": "Engar skrár fundust í {count} flokkum: {names}.",
+"coverageMissingSummary": "Þú hefur ekki bætt neinum færslum við í {count} flokkum, þar á meðal {names} og {remaining} öðrum.",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Nota lykilorð",
+"signInWithBiometrics": "Skrá inn með lífkennagreiningu",
+"enableBiometricsTitle": "Virkja lífkennaryggi",
+"enableBiometricsBody": "Notaðu fingrafar eða andlitsgreiningu til að vernda Vaultara.",
+"enableBiometricsReason": "Virkja lífkennaupplásun fyrir Vaultara.",
+"notNow": "Ekki núna",
+"useBiometrics": "Nota lífkennagreiningu",
+"recordsCalendarIntro":
+  "Veldu hvernig þú vilt skoða gildistímana:\n\n• Sláðu inn hversu marga daga fram í tímann þú vilt skoða.\n• Eða veldu ákveðna dagsetningu á dagatalinu.\n\nVaultara sýnir hvaða skrár renna út á þeim degi.",
+
+"showingRecordsRelative": "Sýnir skrár sem renna út eftir {time}",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "Sýnir skrár sem renna út á valinni dagsetningu",
+"noRecordsOnDate": "Engar skrár eru stilltar til að renna út á þessum degi.",
+
+"recordEditorAddTitle": "Bæta við skrá",
+"recordEditorEditTitle": "Breyta skrá",
+
+"editorRecordName": "Heiti skráar",
+"editorRecordNameHint": "Sláðu inn heiti skráar",
+"recordEditorErrorName": "Heiti skráar er nauðsynlegt",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "Pikkaðu til að bæta við og fylgjast með skrám í þessum hópi.",
+
+"recordsInGroup": "Skrár í þessum hópi",
+"recordsInGroupHint":
+  "Fylgstu með hverri mikilvægu skrá með gildistíma hennar til að endurnýja tímanlega.",
+
+"searchRecords": "Leita að skrám",
+"addRecord": "Bæta við skrá",
+"noRecordsYet": "Engar skrár enn.",
+
+"deleteRecordTitle": "Eyða skrá",
+
+"recordsInsightClusteredTitle":
+  "Nokkrar skrár renna út í kringum {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "Flestar skrár þínar eru flokkaðar undir {category}",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "Allar skrár",
+
+"recordsStabilityDecliningBody":
+  "Sumar skrár eru þegar runnar út og fleiri eru að nálgast gildistíma.",
+
+"recordsCoverageAllRepresented":
+  "Skrár þínar ná yfir alla flokka.",
+
+"recordReminderStage0Body":
+  "{firstName}, skráin þín {recordName} rennur út eftir {days} daga.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}, skráin þín {recordName} hefur ekki verið uppfærð enn.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "Gildistími {recordName} er að renna út.",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}, vinsamlegast uppfærðu {recordName} núna.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Engir hópar enn",
+"recordsExpiring": "{count, plural, one {1 skrá rennur út eftir {days} daga} other {{count} skrár renna út eftir {days} daga}}",
+"recordsGroupStats": "{records, plural, one {1 skrá} other {{records} skrár}} • {expiring} eftir {days} daga",
+"groupLabel": "{count, plural, one {{count} hópur} other {{count} hópar}}",
+"recordsLabel": "{count, plural, one {{count} skrá} other {{count} skrár}}",
+"forgotPassword": "Gleymdirðu lykilorðinu?",
+  "forgotPasswordTitle": "Endurstilla lykilorð",
+  "forgotPasswordBody": "Sláðu inn netfangið þitt og við sendum þér tengil til að endurstilla lykilorðið.",
+  "sendResetLink": "Senda tengil",
+  "passwordResetEmailSent": "Tölvupóstur til að endurstilla lykilorð hefur verið sendur.",
+  "verifyEmailToContinue": "Vinsamlegast staðfestu netfangið þitt áður en þú skráir þig inn",
+  "changeEmailTitle": "Breyta netfangi",
+"newEmailHint": "Sláðu inn nýja netfangið þitt",
+"sendVerificationEmail": "Senda staðfestingarpóst",
+"deleteAccountTitle": "Eyða reikningi",
+"deleteAccountWarning": "Þessi aðgerð mun eyða reikningnum þínum og öllum vistuðum gögnum varanlega.\nEkki er hægt að afturkalla þessa aðgerð.",
+"deleteAccountConfirm": "Eyða reikningi varanlega",
+"supportTitle": "Stuðningur",
+"supportSubtitle": "Hafðu samband ef þú þarft aðstoð eða hefur spurningar.",
+"supportEmailSubject": "Vaultara stuðningsbeiðni",
+"supportEmailError": "Ekki tókst að opna tölvupóstforrit.",
+"passwordResetEmailFailed": "Ekki tókst að senda tölvupóst fyrir endurstillingu lykilorðs.",
+"loggedInPasswordResetBody": "Við munum senda tengil til að endurstilla lykilorð á:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "Reikningsstjórnun",
+"changeEmailTitle": "Breyta netfangi",
+"changeEmailSubtitle": "Uppfærðu netfangið sem tengist reikningnum þínum.",
+"changePasswordTitle": "Breyta lykilorði",
+"changePasswordSubtitle": "Við munum senda þér tölvupóst með hlekk til að breyta lykilorðinu á öruggan hátt.",
+"deleteAccountTitle": "Eyða reikningi",
+"deleteAccountSubtitle": "Eyða Vaultara reikningnum þínum varanlega.",
+"biometricAuthReason": "Auðkenndu þig til að fá aðgang að reikningnum þínum",
+"verifyEmailTitle": "Staðfestu netfangið þitt",
+"verifyEmailBody": "Við höfum sent staðfestingarpóst í pósthólfið þitt. Opnaðu hann og staðfestu netfangið þitt, komdu síðan hingað aftur til að halda áfram.",
+"verifyEmailConfirmedButton": "Ég hef staðfest netfangið mitt",
+"verifyEmailResendButton": "Senda staðfestingarpóst aftur",
+"verifyEmailSending": "Sendi...",
+"navHome": "Heim",
+"navCategories": "Flokkar",
+"navInsights": "Innsýn",
+"navCalendar": "Dagatal",
+"tutorialHomeSearch": "Notaðu leitarstikuna til að finna fljótt hvaða skrá sem þú fylgist með.",
+"tutorialHomeFab": "Bættu fyrstu skránni þinni hér.\nVeldu hvar hún á heima, bættu við valkvæðum athugasemdum og veldu gildistíma.",
+"tutorialHomeSummary": "Þegar þú bætir við fleiri skrám hjálpar þessi hluti þér að sjá skrár sem eru að renna út.",
+"tutorialHomeInsight": "Þessi snjalla innsýn sýnir mynstur og komandi gildistíma.\nÞú getur ýtt á hátalaratákn til að hlusta.",
+"tutorialHomeCoverage": "Jafnvægi dreifingar sýnir hversu jafnt skrárnar eru dreifðar.\nHærra jafnvægi þýðir færri eyður.",
+"tutorialHomeStability": "Stöðugleiki sýnir hversu áreiðanlegar skrárnar eru með tímanum.\nÚtrunnar og komandi skrár geta dregið úr stöðugleika.",
+"tutorialCancel": "Hætta við",
+"tutorialNext": "Næsta",
+"tutorialEnd": "Ljúka leiðsögn",
+"softDeleteCategory": "Flokkur",
+"softDeleteGroup": "Hópur",
+"softDeleteRecord": "Færsla",
+"softDeleteTitle": "Færa {type} í Nýlega eytt",
+"softDeleteMessage": "{type} \"{name}\" verður fært í Nýlega eytt.\n\nÞú getur endurheimt það innan 30 daga. Eftir það verður það varanlega eytt.",
+"softDeleteMove": "Færa",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+"recentlyDeletedTitle": "Nýlega eytt",
+  "categories": "Flokkar",
+  "groups": "Hópar",
+  "records": "Skrár",
+  "restore": "Endurheimta",
+  "deletePermanently": "Eyða varanlega",
+
+  "recentlyDeletedBanner": "Eyddar {type} eru geymdar í 30 daga.",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "Leita að eyddum {type}",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "Engar eyddar {type}",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "Pikkaðu á flokk til að sjá hópa hans og stjórna færslunum þínum.",
+  "groupsHint": "Hópar skipuleggja færslur þínar í þessum flokki. Pikkaðu á hóp til að stjórna færslum.",
+  "notLoggedIn": "Ekki skráð inn",
+"recordsInsideGroupHint": "Þetta eru færslurnar í þessum hópi.",
+"snackMovedToRecentlyDeleted": "\"{name}\" flutt í Nýlega eytt",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" eytt með góðum árangri",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" uppfært með góðum árangri",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" bætt við með góðum árangri",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" endurheimt með góðum árangri",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "Ókeypis mörkum náð ({current}/{limit}). Uppfærðu til að bæta við fleiri.",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Leita í öllum færslum",
+"globalSearchHint": "Sláðu inn heiti, flokk eða hóp",
+"globalSearchNoMatches": "Engar færslur passa við leitina þína.",
+"snackNoRecordsToSearch": "Engar færslur eru til að leita í. Bættu við nokkrum færslum og Vaultara mun skrá þær sjálfkrafa.",
+"recoveryCentreTitle": "Endurheimtarmiðstöð",
+"recoveryCentreSubtitle": "Endurheimtu eða eyðu fjarlægðum færslum varanlega.",
+"plan_premium": "Premium",
+"plan_free": "Ókeypis",
+"profile_app_settings_title": "Stillingar forrits",
+"profile_privacy_security_title": "Persónuvernd og öryggi",
+"profile_biometric_on": "Líffræðileg læsing er virk á þessu tæki.",
+"profile_biometric_off": "Líffræðileg læsing er óvirk.",
+"profile_biometric_enable_reason": "Staðfestu auðkenni þitt til að virkja líffræðilega læsingu.",
+"profile_biometric_disable_reason": "Staðfestu auðkenni þitt til að slökkva á líffræðilegri læsingu.",
+"profile_account_management_title": "Reikningsstjórnun",
+"profile_account_management_subtitle": "Breyttu netfangi, lykilorði eða eyðilagðu reikninginn.",
+"profile_premium_active_title": "Premium er virkt",
+"profile_premium_upgrade_title": "Uppfæra í Premium",
+"profile_premium_active_subtitle": "Ítarlegar áminningar eru opnaðar.",
+"profile_premium_upgrade_subtitle": "Opnaðu ítarlegar áminningar og ótakmarkað skipulag.",
+"profile_manage_cancel_hint": "Stjórnaðu eða segðu upp hvenær sem er á Google Play.",
+"profile_manage_subscription_button": "Stjórna áskrift",
+"plansTitle": "Veldu áskrift",
+"plansTrialBanner": "Byrjaðu 7 daga ókeypis prufu.\nHættu hvenær sem er.",
+"plansLoading": "Hleður…",
+"plansStartFreeTrial": "Byrja ókeypis",
+"plansNoChargeTodayFooter": "7 dagar ókeypis · Engin greiðsla í dag",
+
+"planFreeTitle": "Ókeypis",
+"planFreeSubtitle": "Til að byrja",
+"planPremiumMonthlyTitle": "Premium mánaðarlega",
+"planPremiumYearlyTitle": "Premium árlega",
+"planPerMonth": "á mánuði",
+"planPerYear": "á ári",
+
+"planBadgeCurrent": "Núverandi áskrift",
+"planBadgePopular": "Vinsælt",
+"planBadgeBestValue": "Best virði",
+
+"planYouAreOnThisPlan": "Þú ert þegar á þessari áskrift.",
+
+"planFeatureUpToRecords": "Allt að {count} skrár",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "Sérsniðnir flokkar (allt að {count})",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "Forsniðnar undirflokkar",
+"planFeatureCloudStorage": "Skýjageymsla",
+"planFeatureSmartExpiryInsights": "Snjöll innsýn í gildistíma",
+"planFeatureCoverageBalance": "Jafnvægi yfirlits",
+"planFeatureRecordStabilityTracking": "Stöðugleiki skráa",
+
+"planFeatureUnlimitedRecords": "Ótakmarkaðar skrár",
+"planFeatureUnlimitedCategories": "Ótakmarkaðir flokkar",
+"planFeatureCustomSubcategories": "Sérsniðnir undirflokkar",
+"planFeatureMultipleRemindersPerRecord": "Margir áminningar",
+"planFeatureAdvancedReminderTiming": "Ítarleg tímasetning",
+"planFeatureAutomaticFollowUps": "Sjálfvirkar áminningar",
+
+"planFeatureEverythingInMonthly": "Allt í mánaðaráskrift",
+"planFeatureSavePercentComparedToMonthly": "Sparaðu {percent}% miðað við mánaðarlegt",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "Best langtímavirði",
+"editorReminderLabel": "Áminning",
+"editorReminderSelectOptional": "Veldu áminningu (valkvætt)",
+"editorReminderOnExpiry": "Á lokadegi",
+"editorReminderDaysBefore": "{days} dögum fyrir lok",
+"editorFreeItemsCount": "Ókeypis skrár: {used}/{limit}",
+"editorExpiryPastWarning": "Lokadagur er þegar liðinn.",
+"editorExpiryTodayWarning": "Þessi skrá rennur út í dag.",
+"editorErrorExpiryPast": "Lokadagur má ekki vera í fortíð.",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "Innsýn dagsins",
+"tutorialBannerTitle": "Fljót leiðsögn",
+"tutorialBannerBody": "Lærðu að leita, bæta við færslum og skilja innsýn á innan við mínútu.",
+"tutorialBannerStart": "Hefja kennslu",
+"tutorialBannerDismiss": "Ekki núna",
+"authErrorUserDisabled": "Þessi reikningur hefur verið gerður óvirkur.",
+"authErrorNetwork": "Netvilla. Reyndu aftur.",
+"authErrorTooManyRequests": "Of margar tilraunir. Reyndu síðar.",
+"authErrorSignInFailed": "Innskráning mistókst. Reyndu aftur.",
+"ok": "Í lagi",
+"snackPremiumEnabled": "Premium virkt",
+"snackPremiumRestored": "Premium endurheimt",
+"passwordNeedLower": "Verður að innihalda lítinn staf",
+"passwordNeedUpper": "Verður að innihalda stóran staf",
+"passwordNeedNumber": "Verður að innihalda tölu",
+"passwordNeedSymbol": "Verður að innihalda tákn",
+"confirmIdentityTitle": "Staðfesta auðkenni",
+"confirm": "Staðfesta",
+"profile_sign_out_title": "Skrá út",
+"profile_sign_out_subtitle": "Skrá út úr Vaultara á þessu tæki",
+"profile_sign_out_confirm_title": "Skrá út?",
+"profile_sign_out_confirm_body": "Þú þarft að skrá þig inn aftur til að fá aðgang að reikningnum þínum.",
+"profile_sign_out_action": "Skrá út",
+"todayInsightsAudioHint": "Viltu hljóð? Notaðu hátalara táknið.",
+"category2Label": "Flokkur",
+"enable2BiometricsBody": "Notaðu fingrafaragreiningu til að vernda Vaultara reikninginn þinn.",
+"snackNotificationsDisabled": "Tilkynningar eru óvirkar. Kveiktu á þeim til að fá áminningar.",
+"openSettings": "Opna stillingar",
+
+"reminderOnExpiryTitle": "Rennur út í dag",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "Hæ {firstName}, \"{itemName}\" rennur út í dag.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Ókeypis flokkar: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Sýnir hversu margir ókeypis flokkar hafa verið notaðir af ókeypis mörkum.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Bæta við athugasemdum (valfrjálst)",
+"apply": "Nota",
+"smartInsightExpiresTodayHeading": "Rennur út í dag",
+"smartInsightExpiresTodaySingleBody": "{name} rennur út í dag. Gerðu ráðstafanir núna til að halda því uppfærðu.",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} og {extra} skjöl til viðbótar renna út í dag.",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Krefst Athygli Þinnar",
+"smartInsightSilentRiskBody": "{name} rennur út eftir {days} daga og engin áminning hefur verið stillt. Gakktu úr skugga um að upplýsingarnar séu enn réttar.",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Margar Endurnýjanir Nálægt Hvor Annarri",
+"smartInsightRenewalTwinBodyTwo": "{a} og {b} renna út innan þriggja vikna hvort af öðru. Skipuleggðu fram í tímann.",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}, {b} og {c} renna öll út innan þriggja vikna. Skipuleggðu fram í tímann.",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}, {b} og {extra} skjöl til viðbótar renna út innan þriggja vikna. Skipuleggðu fram í tímann.",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Væntanlegur Hópur",
+"smartInsightClusterBody": "{count} skjöl í flokknum {category} renna út á næstu tveimur mánuðum. Íhugaðu að afgreiða þau saman.",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Rólegt Tímabil Framundan",
+"smartInsightQuietPeriodBody": "Ekkert rennur út næstu {days} daga. Næsta endurnýjun þín er {firstDate}.",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Allt Er Uppfært",
+"smartInsightAllCaughtUpBody": "Allar {count} væntanlegar fyrningar eru með áminningum. Ekkert annað krefst athygli þinnar.",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "Allt er uppfært. Ekkert krefst athygli þinnar núna.",
+"smartInsightNoRecordsHeading": "Bættu Við Fyrstu Skránni Þinni",
+"smartInsightNoRecordsBody": "Byrjaðu að fylgjast með skjölunum þínum og Vaultara mun sýna snjallar innsýnir hér.",
+"expiryTimelineTitle": "Tímalína fyrninga",
+"expiryTimelineSubtitle": "Smelltu á mánuð til að sjá færslurnar sem renna út í þeim mánuði",
+"expiryTimelineDetailCount": "{count, plural, =1{1 færsla} other{{count} færslur}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Væntanlegt",
+"summaryUpcomingCaption": "Innan 30 daga",
+"summaryUrgentTitle": "Brýnt",
+"summaryUrgentCaption": "Innan 7 daga"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

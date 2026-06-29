@@ -1,0 +1,858 @@
+{
+  "@@locale": "lt",
+  "expiryCalendarTitle": "Galiojimo kalendorius",
+
+"calendarIntro": "Pasirinkite, kaip norite peržiūrėti galiojimus:\n\n• Įveskite, kiek dienų į priekį norite matyti.\n• Arba pasirinkite tikslią datą kalendoriuje.\n\nVaultara parodys, kurie elementai baigs galioti tą dieną.",
+
+"daysFromTodayLabel": "Dienos nuo šiandien",
+"daysFromTodayHint": "Pavyzdžiui 0, 1, 7, 30",
+
+"apply": "Taikyti",
+"pickDateOnCalendar": "Pasirinkite datą kalendoriuje",
+
+"today": "Šiandien",
+"tomorrow": "Rytoj",
+"in7Days": "Po 7 dienų",
+"in30Days": "Po 30 dienų",
+
+"inDays": "po {days} dienų",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Įveskite dienų skaičių.",
+"invalidDaysError": "Įveskite tinkamą dienų skaičių (0 arba daugiau).",
+
+"showingItemsRelative": "Rodomi elementai, kurių galiojimas baigiasi {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Rodomi elementai, kurių galiojimas baigiasi pasirinktą dieną",
+"noItemsOnDate": "Tą dieną nė vienas elementas negalioja.",
+
+"editorAddTitle": "Pridėti elementą",
+"editorEditTitle": "Redaguoti elementą",
+
+"editorCategory": "Kategorija",
+"editorCategoryHint": "Pasirinkite kategoriją",
+
+"editorGroup": "Grupė",
+"editorGroupHint": "Pasirinkite grupę šioje kategorijoje",
+
+"editorItemName": "Elemento pavadinimas",
+"editorItemNameHint": "Įveskite elemento pavadinimą",
+
+"editorExpiryDate": "Galiojimo data",
+"editorExpiryDateHint": "Pasirinkite galiojimo datą",
+
+"editorErrorCategory": "Pasirinkite kategoriją",
+"editorErrorGroup": "Pasirinkite grupę",
+"editorErrorName": "Elemento pavadinimas yra privalomas",
+"editorErrorExpiry": "Pasirinkite galiojimo datą",
+"editorErrorExpiryPast": "Galiojimo data turi būti šiandien arba ateityje",
+"cancel": "Atšaukti",
+"save": "Išsaugoti",
+
+"addCategoryTitle": "Pridėti kategoriją",
+"unlimitedCategories": "Neribotos kategorijos (Premium)",
+
+"categoryUsage": "Naudojama {current} / {limit} kategorijų",
+
+"categoryNameLabel": "Kategorija",
+"categoryNameHint": "Įveskite kategoriją",
+
+"categoryLimitReached": "Pasiekėte Basic plano {limit} kategorijų ribą. Atnaujinkite į Premium.",
+
+"categoryLimitInfo": "Basic plane galite sukurti iki {limit} kategorijų.",
+
+"categoryErrorEmpty": "Kategorija privaloma",
+"categoryErrorTooShort": "Kategorija per trumpa",
+"categoryErrorTooLong": "Kategorija per ilga",
+"categoryErrorSymbols": "Kategorija negali būti tik simboliai",
+"categoryErrorNumbers": "Kategorija negali būti tik skaičiai",
+
+"upgradeRequired": "Reikalingas atnaujinimas",
+"viewPremiumBenefits": "Peržiūrėti Premium privalumus",
+"createCategory": "Sukurti",
+
+"addGroupTitle": "Pridėti grupę",
+"groupNameLabel": "Grupė",
+"groupNameHint": "Įveskite grupę",
+
+"groupErrorEmpty": "Grupė privaloma",
+"groupErrorTooShort": "Grupė per trumpa",
+"groupErrorTooLong": "Grupė per ilga",
+"groupErrorSymbols": "Grupė negali turėti simbolių",
+"groupErrorNumbers": "Grupė negali turėti skaičių",
+"createGroup": "Sukurti",
+
+"firstNameLabel": "Vardas",
+"firstNameHint": "Įveskite vardą",
+
+"lastNameLabel": "Pavardė",
+"lastNameHint": "Įveskite pavardę",
+
+"emailLabel": "El. pašto adresas",
+"loginPasswordHint": "Įveskite savo slaptažodį",
+"registerPasswordHint": "Įveskite slaptažodį",
+"passwordHelper": "Mažiausiai 8 simboliai, naudojant skirtingus tipus",
+
+"passwordTooShort": "Per trumpas",
+"passwordTooWeak": "Per silpnas",
+"passwordMedium": "Vidutinis",
+"passwordStrong": "Stiprus",
+
+"errorFirstName": "Vardas yra privalomas",
+"errorLastName": "Pavardė yra privaloma",
+"errorEmailInvalid": "Įveskite galiojantį el. pašto adresą",
+"errorEmailInUse": "Šis el. pašto adresas jau\nsusietas su Vaultara paskyra",
+"errorPasswordLength": "Slaptažodis turi būti bent aštuonių simbolių ilgio",
+"errorPasswordWeak": "Įveskite stipresnį slaptažodį",
+"errorGeneric": "Registracija nepavyko. Bandykite dar kartą",
+
+"createAccount": "Sukurti paskyrą",
+"appName": "Vaultara",
+"authTagline": "Jūsų asmeninis centras pasams, pažymėjimams, kortelėms ir kitiems svarbiems dokumentams",
+"tabSignIn": "Prisijungti",
+"tabCreateAccount": "Sukurti paskyrą",
+"signInFooterText": "Prisijunkite, kad pasiektumėte savo Vaultara erdvę ir valdytumėte visus atnaujinimus",
+"createAccountFooterText": "Sukurkite Vaultara paskyrą, kad išsaugotumėte svarbius priminimus ir pasiektumėte juos kada prireiks",
+
+"emailRequired": "El. pašto adresas yra privalomas",
+"passwordRequired": "Slaptažodis yra privalomas",
+"emailNotFound": "Neteisingas el. paštas. Nėra\nVaultara paskyros su šiuo el. paštu",
+"incorrectPassword": "Neteisingas slaptažodis",
+
+"emailLabel": "El. pašto adresas",
+"emailHint": "Įveskite el. paštą",
+"passwordLabel": "Slaptažodis",
+"signIn": "Prisijungti",
+
+"categoryPersonalIdentification": "Asmens tapatybė",
+"categoryDrivingAndVehicles": "Vairavimas ir transportas",
+"categoryTravelAndImmigration": "Kelionės ir imigracija",
+"categoryBankingAndCards": "Bankininkystė ir kortelės",
+"categoryInsuranceAndCover": "Draudimas ir apsauga",
+"categoryHealthAndMedical": "Sveikata ir medicina",
+"categoryWorkAndProfessional": "Darbas ir profesinė veikla",
+"categoryPropertyAndHousing": "Turtas ir būstas",
+"categoryHouseholdAndUtilities": "Namų ūkis ir komunalinės paslaugos",
+
+"subcategoryPassports": "Pasai",
+"subcategoryIdCards": "Asmens tapatybės kortelės",
+"subcategoryResidencePermits": "Leidimai gyventi",
+
+"subcategoryDrivingLicences": "Vairuotojo pažymėjimai",
+"subcategoryVehicleRegistrations": "Transporto registracija",
+"subcategoryRoadworthyCertificates": "Techninės būklės pažymos",
+"subcategoryVehicleInspectionCertificates": "Transporto patikros pažymos",
+
+"subcategoryVisas": "Vizos",
+"subcategoryStudyPermits": "Leidimai studijuoti",
+"subcategoryWorkPermits": "Leidimai dirbti",
+"subcategoryTravelInsuranceDocuments": "Kelionių draudimo dokumentai",
+
+"subcategoryDebitAndCreditCards": "Debeto ir kredito kortelės",
+"subcategoryStoreCards": "Parduotuvės kortelės",
+"subcategoryFuelCards": "Kuro kortelės",
+"subcategoryVehicleInsurances": "Transporto draudimai",
+"subcategoryPropertyInsurances": "Turto draudimai",
+"subcategoryLifeInsurances": "Gyvybės draudimai",
+"subcategoryHealthInsurances": "Sveikatos draudimai",
+"subcategoryTravelInsurances": "Kelionių draudimai",
+
+"subcategoryMedicalPrescriptions": "Medicininiai receptai",
+"subcategoryOpticalPrescriptions": "Optiniai receptai",
+"subcategoryMedicalCertificates": "Medicininės pažymos",
+
+"subcategoryProfessionalLicences": "Profesinės licencijos",
+"subcategoryProfessionalRegistrations": "Profesinės registracijos",
+"subcategoryIndustryRegistrations": "Pramonės registracijos",
+"subcategoryWorkAccessCards": "Darbo prieigos kortelės",
+
+"subcategoryLeaseAgreements": "Nuomos sutartys",
+"subcategoryAccessCardsAndTags": "Prieigos kortelės ir žymos",
+"subcategoryParkingPermits": "Stovėjimo leidimai",
+"subcategorySecurityAccessPermits": "Saugumo leidimai",
+
+"subcategoryElectricityAccounts": "Elektros sąskaitos",
+"subcategoryWaterAccounts": "Vandens sąskaitos",
+"subcategoryInternetContracts": "Interneto sutartys",
+"subcategorySecurityServiceContracts": "Apsaugos paslaugų sutartys",
+
+"searchCategories": "Ieškoti kategorijų",
+"filterAll": "Visos",
+"filterPreset": "Iš anksto nustatytos",
+"filterCustom": "Individualios",
+"addCategoryTitle": "Pridėti kategoriją",
+"customLabel": "Individuali",
+"subcategoriesLabel": "pakategorės",
+"itemsLabel": "elementai",
+
+"itemsExpiring": "{count} elementų baigs galioti po {days} dienų",
+
+"pinnedEssentials": "Prisegti svarbūs",
+"pinnedHint": "Prisekite dažniausiai naudojamas kategorijas.",
+"noCategoriesFound": "Kategorijų nerasta",
+
+"searchGroups": "Ieškoti grupių",
+"addGroupTitle": "Pridėti grupę",
+
+"basicPlanGroupInfo": "Naudojate Basic planą.\nGalite peržiūrėti iš anksto nustatytas grupes.\nAtnaujinkite į Premium, kad sukurtumėte savo grupes.",
+
+"groupDeleted": "Grupė ištrinta",
+"undo": "ATŠAUKTI",
+
+"groupTapHint": "Bakstelėkite, kad pridėtumėte ir sektumėte elementus.",
+"itemsInGroup": "Šios grupės elementai",
+"itemsInGroupHint": "Sekite kiekvieną svarbų elementą su galiojimo data.",
+"searchItems": "Ieškoti elementų",
+"filterExpiringWithin": "Baigia galioti per {days} d.",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Pasibaigę",
+"addItem": "Pridėti elementą",
+"noItemsYet": "Kol kas nėra elementų.",
+
+"statusExpired": "Pasibaigęs",
+"statusExpiresToday": "Baigia galioti šiandien",
+"statusExpiresInOneDay": "Baigia galioti po 1 dienos",
+"statusExpiresInDays": "Baigia galioti po {days} dienų",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Galioja",
+
+"deleteCategoryTitle": "Ištrinti kategoriją",
+"deleteCategoryMessage": "Ar tikrai norite ištrinti kategoriją \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Ištrinti grupę",
+"deleteGroupMessage": "Ar tikrai norite ištrinti grupę \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Ištrinti elementą",
+"deleteItemMessage": "Ar tikrai norite ištrinti \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Atšaukti",
+"delete": "Ištrinti",
+
+"homeWelcomeTitle": "Sveiki",
+
+"homeWelcomeFirstTitle": "Sveiki, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Sveiki sugrįžę, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Visi",
+"homeWelcomeSubtitleGeneric": "Vaultara padeda sekti svarbias galiojimo datas, kad niekas nepraeistų nepastebėta.",
+
+"homeWelcomeSubtitleFirst": "Smagu jus matyti čia. Vaultara saugo svarbias datas ir įrašus vienoje saugioje vietoje.",
+
+"homeWelcomeSubtitleBack": "Smagu jus vėl matyti. Vaultara visada pasirengusi jūsų svarbiems duomenims.",
+
+"insightEmptyTitle": "Dar nieko nepridėta",
+"insightEmptyBody": "Pradėkite sekti datas ir Vaultara padės jums būti žingsniu priekyje.",
+
+"insightExpiresTodayTitle": "\"{name}\" baigia galioti šiandien",
+"insightExpiresTodayBody": "Greita peržiūra padeda išlaikyti tikslumą.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" baigia galioti rytoj",
+"insightExpiresTomorrowBody": "Peržiūra šiandien sutaupys laiko vėliau.",
+
+"insightExpiresSoonTitle": "\"{name}\" baigia galioti {date}",
+"insightExpiresSoonBody": "Ankstyvas dėmesys palengvina procesą.",
+
+"insightNextExpiryTitle": "Kitas terminas — \"{name}\" {date}",
+"insightNextExpiryBody": "Kol kas veiksmų nereikia, bet verta prisiminti.",
+
+"insightClusteredTitle": "Keli įrašai baigia galioti {month}",
+"insightClusteredBody": "Peržiūra kartu taupo laiką.",
+
+"insightTopCategoryTitle": "Dauguma įrašų yra {category}",
+"insightTopCategoryBody": "Šios srities peržiūra duoda didžiausią naudą.",
+
+"insightStableTitle": "Viskas atrodo stabilu",
+"insightStableBody": "Nėra artimų terminų, kuriems reikėtų dėmesio.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Pastabos",
+"notesHint": "Įveskite pastabas",
+"editorReminderTitle": "Priminimas",
+"editorReminderNone": "Nėra priminimo",
+"editorReminderOnExpiry": "Galiojimo dieną",
+"editorReminder7Days": "7 dienos prieš",
+"editorReminder30Days": "30 dienų prieš",
+"editorReminderCustom": "Pasirinktinis",
+"daysBeforeExpiry": "dienos iki galiojimo",
+
+"reminderStage0Title": "Galiojimo priminimas",
+"reminderStage0Body": "{firstName}, jūsų {itemName} baigs galioti po {days} dienų.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Priminimo tęsinys",
+"reminderStage1Body": "{firstName}, {itemName} dar nebuvo atnaujintas.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Galiojimas artėja",
+"reminderStage2Body": "{itemName} galiojimo data artėja.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Paskutinis priminimas",
+"reminderFinalBody": "{firstName}, atnaujinkite {itemName} dabar.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Aprėpties balansas",
+"coverageAllRepresented": "Jūsų įrašai apima visas kategorijas.",
+"coverageMissingNamed": "Nerasta įrašų {count} kategorijose: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Jūs nepridėjote įrašų {count} kategorijose, įskaitant {names} ir dar {remaining} kitas.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Naudoti slaptažodį",
+"signInWithBiometrics": "Prisijungti naudojant biometriją",
+"enableBiometricsTitle": "Įjungti biometrinę apsaugą",
+"enableBiometricsBody": "Naudokite piršto atspaudą arba veido atpažinimą Vaultara apsaugai.",
+"enableBiometricsReason": "Įjungti biometrinį atrakinimą Vaultara.",
+"notNow": "Ne dabar",
+"useBiometrics": "Naudoti biometriją",
+
+"recordsCalendarIntro": "Pasirinkite, kaip norite peržiūrėti galiojimus:\n\n• Įveskite, kiek dienų į priekį norite žiūrėti.\n• Arba pasirinkite tikslią datą kalendoriuje.\n\nVaultara parodys, kurie įrašai tą dieną baigs galioti.",
+
+"showingRecordsRelative": "Rodomi įrašai, kurie baigia galioti {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Rodomi įrašai, kurie baigia galioti pasirinktą dieną",
+
+"noRecordsOnDate": "Tą dieną nėra įrašų, kurie baigtų galioti.",
+
+"recordEditorAddTitle": "Pridėti įrašą",
+"recordEditorEditTitle": "Redaguoti įrašą",
+
+"editorRecordName": "Įrašo pavadinimas",
+"editorRecordNameHint": "Įveskite įrašo pavadinimą",
+"recordEditorErrorName": "Įrašo pavadinimas yra privalomas",
+
+"recordsGroupTapHint": "Bakstelėkite, kad pridėtumėte ir sektumėte įrašus šioje grupėje.",
+
+"recordsInGroup": "Įrašai šioje grupėje",
+
+"recordsInGroupHint": "Sekite kiekvieną svarbų įrašą pagal jo galiojimo datą.",
+
+"searchRecords": "Ieškoti įrašų",
+
+"addRecord": "Pridėti įrašą",
+
+"noRecordsYet": "Įrašų dar nėra.",
+"deleteRecordTitle": "Ištrinti įrašą",
+
+"recordsInsightClusteredTitle": "Keli įrašai baigs galioti apie {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Dauguma jūsų įrašų yra {category} kategorijoje",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Visi įrašai",
+
+"recordsStabilityDecliningBody": "Kai kurie įrašai jau nebegalioja, o kiti netrukus baigs galioti.",
+
+"recordsCoverageAllRepresented": "Jūsų įrašai apima visas kategorijas.",
+
+"recordReminderStage0Body": "{firstName}, jūsų {recordName} baigs galioti po {days} dienų.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, jūsų {recordName} dar nebuvo atnaujintas.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName} galiojimo data artėja.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, prašome atnaujinti {recordName} dabar.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Grupių dar nėra",
+
+"recordsExpiring": "{count, plural, one {1 įrašas baigs galioti po {days} dienų} other {{count} įrašai baigs galioti po {days} dienų}}",
+
+"recordsGroupStats": "{records, plural, one {1 įrašas} other {{records} įrašai}} • {expiring} baigs galioti per {days} dienas",
+
+"groupLabel": "{count, plural, one {{count} grupė} other {{count} grupės}}",
+
+"recordsLabel": "{count, plural, one {{count} įrašas} other {{count} įrašai}}",
+
+"forgotPassword": "Pamiršote slaptažodį?",
+"forgotPasswordTitle": "Atkurti slaptažodį",
+"forgotPasswordBody": "Įveskite savo el. pašto adresą ir mes atsiųsime slaptažodžio atkūrimo nuorodą.",
+"sendResetLink": "Siųsti atkūrimo nuorodą",
+"passwordResetEmailSent": "Slaptažodžio atkūrimo laiškas išsiųstas.",
+"verifyEmailToContinue": "Prieš prisijungdami patvirtinkite savo el. paštą",
+
+"changeEmailTitle": "Keisti el. paštą",
+"newEmailHint": "Įveskite naują el. paštą",
+"sendVerificationEmail": "Siųsti patvirtinimo laišką",
+
+"deleteAccountTitle": "Ištrinti paskyrą",
+"deleteAccountWarning": "Šis veiksmas negrįžtamai ištrins jūsų paskyrą ir visus duomenis.\nJo negalima atšaukti.",
+"deleteAccountConfirm": "Ištrinti paskyrą visam laikui",
+
+"supportTitle": "Pagalba",
+"supportSubtitle": "Susisiekite su mumis, jei reikia pagalbos.",
+"supportEmailSubject": "Vaultara pagalbos užklausa",
+"supportEmailError": "Nepavyko atidaryti el. pašto programos.",
+
+"passwordResetEmailFailed": "Nepavyko išsiųsti slaptažodžio atkūrimo laiško.",
+
+"loggedInPasswordResetBody": "Slaptažodžio atkūrimo nuoroda bus išsiųsta į:\n{email}",
+
+"accountManagementTitle": "Paskyros valdymas",
+"changeEmailSubtitle": "Atnaujinkite su paskyra susietą el. paštą.",
+"changePasswordTitle": "Keisti slaptažodį",
+"changePasswordSubtitle": "Išsiųsime jums nuorodą saugiam pakeitimui.",
+
+"deleteAccountSubtitle": "Negrįžtamai pašalinti Vaultara paskyrą.",
+
+"biometricAuthReason": "Patvirtinkite tapatybę, kad pasiektumėte Vaultara paskyrą.",
+
+"verifyEmailTitle": "Patvirtinkite el. paštą",
+"verifyEmailBody": "Išsiuntėme patvirtinimo laišką. Atidarykite jį ir patvirtinkite adresą, tada grįžkite čia.",
+"verifyEmailConfirmedButton": "Patvirtinau el. paštą",
+"verifyEmailResendButton": "Siųsti patvirtinimo laišką dar kartą",
+"verifyEmailSending": "Siunčiama...",
+
+"navHome": "Pradžia",
+"navCategories": "Kategorijos",
+"navInsights": "Įžvalgos",
+"navCalendar": "Kalendorius",
+
+"tutorialCancel": "Atšaukti",
+"tutorialNext": "Kitas",
+"tutorialEnd": "Baigti mokymą",
+
+"softDeleteCategory": "Kategorija",
+"softDeleteGroup": "Grupė",
+"softDeleteRecord": "Įrašas",
+
+"softDeleteTitle": "Perkelti {type} į Neseniai ištrintus",
+"softDeleteMessage": "{type} \"{name}\" bus perkeltas į Neseniai ištrintus.\n\nGalėsite jį atkurti per 30 dienų. Po to jis bus ištrintas visam laikui.",
+"softDeleteMove": "Perkelti",
+"@recordsExpiring": {
+  "description": "Rodo, kiek įrašų baigs galioti per nurodytą dienų skaičių",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Grupės statistika: bendras įrašų skaičius ir baigiantys galioti",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Grupių skaičius", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Įrašų skaičius", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": {
+  "description": "Informuoja apie slaptažodžio atkūrimo laiško siuntimą",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "Laikino ištrynimo patvirtinimo pavadinimas",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "Paaiškina laikino ištrynimo veikimą",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "Neseniai ištrinti",
+"categories": "Kategorijos",
+"groups": "Grupės",
+"records": "Įrašai",
+"restore": "Atkurti",
+"deletePermanently": "Ištrinti visam laikui",
+
+"recentlyDeletedBanner": "Ištrinti {type} čia saugomi 30 dienų prieš galutinį pašalinimą.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Ieškoti ištrintų {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Dar nėra ištrintų {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Bakstelėkite kategoriją, kad peržiūrėtumėte jos grupes ir tvarkytumėte įrašus.",
+"groupsHint": "Grupės tvarko įrašus šioje kategorijoje. Bakstelėkite grupę, kad juos tvarkytumėte.",
+"notLoggedIn": "Neprisijungta",
+
+"recordsInsideGroupHint": "Tai šios grupės įrašai.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" perkeltas į Neseniai ištrintus",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Pasas"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" sėkmingai ištrintas",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Vairuotojo pažymėjimas"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" sėkmingai atnaujintas",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Viza"} } },
+
+"snackAddedSuccessfully": "\"{name}\" sėkmingai pridėtas",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Draudimas"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" sėkmingai atkurtas",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Pasas"} } },
+
+"snackFreeLimitReached": "Pasiektas nemokamas limitas ({current}/{limit}). Atnaujinkite, kad pridėtumėte daugiau.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Ieškoti visų įrašų",
+"globalSearchHint": "Įveskite įrašo pavadinimą, kategoriją arba grupę",
+"globalSearchNoMatches": "Nėra įrašų, atitinkančių jūsų paiešką.",
+"snackNoRecordsToSearch": "Nėra įrašų paieškai. Pridėkite kelis įrašus ir Vaultara juos automatiškai indeksuos.",
+
+"recoveryCentreTitle": "Atkūrimo centras",
+"recoveryCentreSubtitle": "Atkurkite arba visam laikui ištrinkite pašalintus įrašus.",
+
+"plan_premium": "Premium",
+"plan_free": "Nemokamas",
+
+"profile_app_settings_title": "Programėlės nustatymai",
+"profile_privacy_security_title": "Privatumas ir sauga",
+"profile_biometric_on": "Biometrinis užraktas įjungtas šiame įrenginyje.",
+"profile_biometric_off": "Biometrinis užraktas išjungtas.",
+"profile_biometric_enable_reason": "Patvirtinkite tapatybę, kad įjungtumėte biometrinį užraktą.",
+"profile_biometric_disable_reason": "Patvirtinkite tapatybę, kad išjungtumėte biometrinį užraktą.",
+"profile_account_management_title": "Paskyros valdymas",
+"profile_premium_active_title": "Premium aktyvus",
+"profile_premium_upgrade_title": "Atnaujinti į Premium",
+"profile_premium_active_subtitle": "Išplėstiniai priminimai atrakinti.",
+"profile_premium_upgrade_subtitle": "Atrakinkite išplėstinius priminimus ir neribotą tvarkymą.",
+"profile_manage_cancel_hint": "Valdykite arba atšaukite bet kada per Google Play.",
+"profile_manage_subscription_button": "Tvarkyti prenumeratą",
+"plansTitle": "Pasirinkite planą",
+"plansTrialBanner": "Pradėkite nuo 7 dienų nemokamo bandomojo laikotarpio.\nAtšaukite bet kada.",
+"plansLoading": "Įkeliama…",
+"plansStartFreeTrial": "Pradėti nemokamą bandomąjį",
+"plansNoChargeTodayFooter": "7 dienos nemokamai · Šiandien nebus mokesčio",
+
+"planFreeTitle": "Nemokamas",
+"planFreeSubtitle": "Pradžiai",
+"planPremiumMonthlyTitle": "Premium mėnesinis",
+"planPremiumYearlyTitle": "Premium metinis",
+"planPerMonth": "per mėnesį",
+"planPerYear": "per metus",
+
+"planBadgeCurrent": "Dabartinis planas",
+"planBadgePopular": "Populiarus",
+"planBadgeBestValue": "Geriausia vertė",
+
+"planYouAreOnThisPlan": "Jūs jau naudojate šį planą.",
+
+"planFeatureUpToRecords": "Iki {count} įrašų",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Pasirinktinės kategorijos (iki {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Iš anksto nustatytos subkategorijos",
+"planFeatureCloudStorage": "Debesų saugykla",
+"planFeatureSmartExpiryInsights": "Išmanūs galiojimo priminimai",
+"planFeatureCoverageBalance": "Aprėpties balansas",
+"planFeatureRecordStabilityTracking": "Įrašų stabilumo stebėjimas",
+
+"planFeatureUnlimitedRecords": "Neriboti įrašai",
+"planFeatureUnlimitedCategories": "Neribotos kategorijos",
+"planFeatureCustomSubcategories": "Pasirinktinės subkategorijos",
+"planFeatureMultipleRemindersPerRecord": "Keli priminimai",
+"planFeatureAdvancedReminderTiming": "Išplėstinis laiko nustatymas",
+"planFeatureAutomaticFollowUps": "Automatiniai priminimai",
+
+"planFeatureEverythingInMonthly": "Viskas iš mėnesinio plano",
+"planFeatureSavePercentComparedToMonthly": "Sutaupykite {percent}% palyginti su mėnesiniu",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Geriausia ilgalaikė vertė",
+
+"editorReminderLabel": "Priminimas",
+"editorReminderSelectOptional": "Pasirinkite priminimą (nebūtina)",
+"editorReminderOnExpiry": "Galiojimo dieną",
+"editorReminderDaysBefore": "{days} dienas prieš galiojimą",
+"editorFreeItemsCount": "Nemokami elementai: {used}/{limit}",
+"editorExpiryPastWarning": "Galiojimo data jau praėjo.",
+"editorExpiryTodayWarning": "Šis įrašas baigiasi šiandien.",
+"editorErrorExpiryPast": "Galiojimo data negali būti praeityje.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Šiandienos įžvalgos",
+"tutorialBannerTitle": "Greita apžvalga",
+"tutorialBannerBody": "Per minutę sužinokite, kur ieškoti, kaip pridėti įrašus ir ką reiškia įžvalgos.",
+"tutorialBannerStart": "Pradėti apžvalgą",
+"tutorialBannerDismiss": "Ne dabar",
+"authErrorUserDisabled": "Ši paskyra išjungta.",
+"authErrorNetwork": "Tinklo klaida. Patikrinkite internetą ir bandykite dar kartą.",
+"authErrorTooManyRequests": "Per daug bandymų. Bandykite vėliau.",
+"authErrorSignInFailed": "Prisijungti nepavyko. Bandykite dar kartą.",
+"ok": "Gerai",
+"snackPremiumEnabled": "Premium įjungtas",
+"snackPremiumRestored": "Premium atkurtas",
+"passwordNeedLower": "Turi būti mažoji raidė",
+"passwordNeedUpper": "Turi būti didžioji raidė",
+"passwordNeedNumber": "Turi būti skaičius",
+"passwordNeedSymbol": "Turi būti simbolis",
+"summaryAllTitle": "Visi elementai",
+"summaryAllCaption": "Sekami Vaultara",
+"summarySoonTitle": "Netrukus baigs galioti",
+"summarySoonCaption": "Per 30 dienų",
+"summaryWeekTitle": "Šią savaitę",
+"summaryWeekCaption": "Baigs galioti per 7 dienas",
+"summaryExpiredTitle": "Pasibaigę",
+"summaryExpiredCaption": "Po galiojimo datos",
+
+"stabilityStableTitle": "Viskas atrodo stabilu",
+"stabilityStableBody": "Jūsų įrašuose nėra artimų ar besikaupiančių rizikų.",
+"stabilityDecliningTitle": "Stabilumas prastėja",
+"stabilityDecliningBody": "Kai kurių elementų galiojimas jau pasibaigė, o dar daugiau netrukus baigs galioti.",
+"stabilityWeakenedTitle": "Stabilumas susilpnėjo",
+"stabilityWeakenedBody": "Yra pasibaigusių įrašų, todėl bendras patikimumas mažėja.",
+"stabilityPressureTitle": "Didėja spaudimas",
+"stabilityPressureBody": "Keliems įrašams netrukus reikės dėmesio, kad stabilumas išliktų.",
+
+"tutorialHomeSearch": "Naudokite paieškos juostą, kad greitai rastumėte bet kurį sekamą įrašą.",
+"tutorialHomeFab": "Čia pridėkite savo pirmą įrašą.\nPasirinkite, kur jis priklauso, pridėkite pastabas (nebūtina) ir nustatykite galiojimo datą.",
+"tutorialHomeSummary": "Kai pridėsite daugiau įrašų, ši skiltis padės pastebėti tuos, kurių galiojimas artėja arba jau pasibaigė.",
+"tutorialHomeInsight": "Ši išmani įžvalga parodo tendencijas ir artėjančius galiojimus.\nJei norite garso pagalbos, galite paliesti garsiakalbio piktogramą ir išklausyti.",
+"tutorialHomeCoverage": "Coverage Balance rodo, kaip tolygiai jūsų įrašai pasiskirstę per visas kategorijas.\nKuo didesnis balansas, tuo mažiau spragų stebėjime.",
+"tutorialHomeStability": "Stability rodo, kiek patikimi jūsų įrašai laikui bėgant.\nPasibaigę įrašai ir artėjantys galiojimai gali sumažinti bendrą stabilumą.",
+
+"profile_account_management_subtitle": "Keiskite el. paštą, slaptažodį arba ištrinkite paskyrą.",
+"confirmIdentityTitle": "Patvirtinti tapatybę",
+"confirm": "Patvirtinti",
+"profile_sign_out_title": "Atsijungti",
+"profile_sign_out_subtitle": "Atsijungti nuo Vaultara šiame įrenginyje",
+"profile_sign_out_confirm_title": "Atsijungti?",
+"profile_sign_out_confirm_body": "Norėdami pasiekti paskyrą, turėsite vėl prisijungti.",
+"profile_sign_out_action": "Atsijungti",
+"todayInsightsAudioHint": "Mėgsti garsą? Naudok garsiakalbio piktogramą.",
+"category2Label": "Kategorija",
+"enable2BiometricsBody": "Naudok piršto atspaudo atpažinimą, kad apsaugotum savo Vaultara paskyrą.",
+"snackNotificationsDisabled": "Pranešimai išjungti. Įjunkite juos, kad gautumėte priminimus.",
+"openSettings": "Atidaryti nustatymus",
+
+"reminderOnExpiryTitle": "Baigiasi šiandien",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Sveiki {firstName}, \"{itemName}\" baigiasi šiandien.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Nemokamos kategorijos: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Parodo, kiek nemokamų kategorijų panaudota iš nemokamo limito.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Pridėti pastabas (nebūtina)",
+"apply": "Taikyti",
+"smartInsightExpiresTodayHeading": "Baigiasi Šiandien",
+"smartInsightExpiresTodaySingleBody": "{name} galioja iki šios dienos. Veikite dabar, kad jis būtų atnaujintas.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ir dar 1 dokumento galiojimas baigiasi šiandien.} few{{names} ir dar {extra} dokumentų galiojimas baigiasi šiandien.} many{{names} ir dar {extra} dokumento galiojimas baigiasi šiandien.} other{{names} ir dar {extra} dokumentų galiojimas baigiasi šiandien.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Reikia Jūsų Dėmesio",
+"smartInsightSilentRiskBody": "{days, plural, =1{{name} galiojimas baigiasi po 1 dienos ir nėra priminimo. Patvirtinkite, kad detalės vis dar teisingos.} few{{name} galiojimas baigiasi po {days} dienų ir nėra priminimo. Patvirtinkite, kad detalės vis dar teisingos.} many{{name} galiojimas baigiasi po {days} dienos ir nėra priminimo. Patvirtinkite, kad detalės vis dar teisingos.} other{{name} galiojimas baigiasi po {days} dienų ir nėra priminimo. Patvirtinkite, kad detalės vis dar teisingos.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Keli Atnaujinimai Arti Vienas Kito",
+"smartInsightRenewalTwinBodyTwo": "{a} ir {b} galiojimas baigiasi per tris savaites vienas nuo kito. Planuokite iš anksto.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} ir {c} galiojimas baigiasi per tris savaites. Planuokite iš anksto.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} ir dar 1 dokumento galiojimas baigiasi per tris savaites. Planuokite iš anksto.} few{{a}, {b} ir dar {extra} dokumentų galiojimas baigiasi per tris savaites. Planuokite iš anksto.} many{{a}, {b} ir dar {extra} dokumento galiojimas baigiasi per tris savaites. Planuokite iš anksto.} other{{a}, {b} ir dar {extra} dokumentų galiojimas baigiasi per tris savaites. Planuokite iš anksto.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Artėjanti Grupė",
+"smartInsightClusterBody": "{count, plural, =1{1 dokumento {category} kategorijoje galiojimas baigiasi per ateinančius du mėnesius. Apsvarstykite galimybę juos tvarkyti kartu.} few{{count} dokumentų {category} kategorijoje galiojimas baigiasi per ateinančius du mėnesius. Apsvarstykite galimybę juos tvarkyti kartu.} many{{count} dokumento {category} kategorijoje galiojimas baigiasi per ateinančius du mėnesius. Apsvarstykite galimybę juos tvarkyti kartu.} other{{count} dokumentų {category} kategorijoje galiojimas baigiasi per ateinančius du mėnesius. Apsvarstykite galimybę juos tvarkyti kartu.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Ramus Laikotarpis Priekyje",
+"smartInsightQuietPeriodBody": "{days, plural, =1{Kitą 1 dieną niekas nebaigs galioti. Kitas jūsų atnaujinimas yra {firstDate}.} few{Kitas {days} dienas niekas nebaigs galioti. Kitas jūsų atnaujinimas yra {firstDate}.} many{Kitas {days} dienos niekas nebaigs galioti. Kitas jūsų atnaujinimas yra {firstDate}.} other{Kitas {days} dienų niekas nebaigs galioti. Kitas jūsų atnaujinimas yra {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Viskas Atnaujinta",
+"smartInsightAllCaughtUpBody": "{count, plural, =1{1 artėjantis galiojimo pabaiga padengtas priminimais. Niekas kitas nereikalauja jūsų dėmesio.} few{{count} artėjantys galiojimo pabaigos padengti priminimais. Niekas kitas nereikalauja jūsų dėmesio.} many{{count} artėjančio galiojimo pabaigos padengta priminimais. Niekas kitas nereikalauja jūsų dėmesio.} other{{count} artėjančių galiojimo pabaigų padengta priminimais. Niekas kitas nereikalauja jūsų dėmesio.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Viskas atnaujinta. Šiuo metu niekas nereikalauja jūsų dėmesio.",
+"smartInsightNoRecordsHeading": "Pridėkite Savo Pirmąjį Įrašą",
+"smartInsightNoRecordsBody": "Pradėkite stebėti savo dokumentus ir Vaultara čia rodys protingas įžvalgas.",
+"expiryTimelineTitle": "Galiojimo laiko juosta",
+"expiryTimelineSubtitle": "Bakstelėkite mėnesį, kad pamatytumėte įrašus, kurių galiojimas baigiasi tą mėnesį",
+"expiryTimelineDetailCount": "{count, plural, =1{1 įrašas} few{{count} įrašai} many{{count} įrašo} other{{count} įrašų}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Artėjantys",
+"summaryUpcomingCaption": "Per 30 dienų",
+"summaryUrgentTitle": "Skubu",
+"summaryUrgentCaption": "Per 7 dienas"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

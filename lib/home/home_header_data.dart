@@ -10,15 +10,18 @@ class HomeHeaderData {
   final int expiredItems;
   final int expiringThisMonth;
   final int itemsWithNotes;
-  final String? categoryWithMostItems;
+
+  final String? topCategoryKey;
 
   final DateTime? earliestExpiry;
   final DateTime? latestExpiry;
 
-  final String? highestRiskCategory;
+  final String? highestRiskCategoryKey;
   final int highestRiskItemCount;
 
   final List<ItemPreview> upcomingItems;
+
+  final Map<String, int> categoryCountsByKey;
 
   const HomeHeaderData({
     required this.fullName,
@@ -29,13 +32,24 @@ class HomeHeaderData {
     required this.expiredItems,
     required this.expiringThisMonth,
     required this.itemsWithNotes,
-    required this.categoryWithMostItems,
+    required this.topCategoryKey,
     required this.earliestExpiry,
     required this.latestExpiry,
-    required this.highestRiskCategory,
+    required this.highestRiskCategoryKey,
     required this.highestRiskItemCount,
     required this.upcomingItems,
+    required this.categoryCountsByKey,
   });
+
+  int get expiringSoon => expiringNext30Days;
+  int get expired => expiredItems;
+
+  /// Number of categories that have at least one record.
+  int get coveredCategoryCount => categoryCountsByKey.length;
+
+  /// Total number of known categories (covered + uncovered).
+  /// Update this if you track total category count elsewhere.
+  int get totalCategoryCount => categoryCountsByKey.length;
 
   factory HomeHeaderData.empty() => const HomeHeaderData(
         fullName: '',
@@ -46,13 +60,23 @@ class HomeHeaderData {
         expiredItems: 0,
         expiringThisMonth: 0,
         itemsWithNotes: 0,
-        categoryWithMostItems: null,
+        topCategoryKey: null,
         earliestExpiry: null,
         latestExpiry: null,
-        highestRiskCategory: null,
+        highestRiskCategoryKey: null,
         highestRiskItemCount: 0,
         upcomingItems: [],
+        categoryCountsByKey: {},
       );
+
+  @Deprecated('Use topCategoryKey + localize in UI')
+  String? get categoryWithMostItems => topCategoryKey;
+
+  @Deprecated('Use highestRiskCategoryKey + localize in UI')
+  String? get highestRiskCategory => highestRiskCategoryKey;
+
+  @Deprecated('Use categoryCountsByKey + localize in UI')
+  Map<String, int> get categoryCounts => categoryCountsByKey;
 }
 
 class ItemPreview {

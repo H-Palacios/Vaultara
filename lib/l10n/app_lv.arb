@@ -1,0 +1,876 @@
+{
+  "@@locale": "lv",
+  "expiryCalendarTitle": "Derīguma termiņa kalendārs",
+
+"calendarIntro": "Izvēlieties, kā vēlaties skatīt derīguma termiņus:\n\n• Ievadiet, cik dienas uz priekšu vēlaties skatīties.\n• Vai izvēlieties precīzu datumu kalendārā.\n\nVaultara parādīs, kuri vienumi beigsies šajā dienā.",
+
+"daysFromTodayLabel": "Dienas no šodienas",
+"daysFromTodayHint": "Piemēram 0, 1, 7, 30",
+
+"apply": "Lietot",
+"pickDateOnCalendar": "Izvēlieties datumu kalendārā",
+
+"today": "Šodien",
+"tomorrow": "Rīt",
+"in7Days": "Pēc 7 dienām",
+"in30Days": "Pēc 30 dienām",
+
+"inDays": "pēc {days} dienām",
+"@inDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"enterDaysError": "Ievadiet dienu skaitu.",
+"invalidDaysError": "Ievadiet derīgu dienu skaitu (0 vai vairāk).",
+
+"showingItemsRelative": "Tiek rādīti vienumi, kas beigsies {time}",
+"@showingItemsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingItemsExact": "Tiek rādīti vienumi, kas beigsies izvēlētajā datumā",
+"noItemsOnDate": "Šajā dienā neviens vienums nebeidzas.",
+
+"editorAddTitle": "Pievienot vienumu",
+"editorEditTitle": "Rediģēt vienumu",
+
+"editorCategory": "Kategorija",
+"editorCategoryHint": "Izvēlieties kategoriju",
+
+"editorGroup": "Grupa",
+"editorGroupHint": "Izvēlieties grupu šajā kategorijā",
+
+"editorItemName": "Vienuma nosaukums",
+"editorItemNameHint": "Ievadiet vienuma nosaukumu",
+
+"editorExpiryDate": "Derīguma termiņš",
+"editorExpiryDateHint": "Izvēlieties derīguma termiņu",
+
+"editorErrorCategory": "Izvēlieties kategoriju",
+"editorErrorGroup": "Izvēlieties grupu",
+"editorErrorName": "Vienuma nosaukums ir obligāts",
+"editorErrorExpiry": "Izvēlieties derīguma termiņu",
+"editorErrorExpiryPast": "Datumam jābūt šodienai vai nākotnē",
+"cancel": "Atcelt",
+"save": "Saglabāt",
+
+"addCategoryTitle": "Pievienot kategoriju",
+"unlimitedCategories": "Neierobežotas kategorijas (Premium)",
+
+"categoryUsage": "Izmantotas {current} / {limit} kategorijas",
+
+"categoryNameLabel": "Kategorija",
+"categoryNameHint": "Ievadiet kategoriju",
+
+"categoryLimitReached": "Jūs sasniedzāt Basic plāna {limit} kategoriju limitu. Jauniniet uz Premium.",
+
+"categoryLimitInfo": "Basic plānā var izveidot līdz {limit} kategorijām.",
+
+"categoryErrorEmpty": "Kategorija ir obligāta",
+"categoryErrorTooShort": "Kategorija ir pārāk īsa",
+"categoryErrorTooLong": "Kategorija ir pārāk gara",
+"categoryErrorSymbols": "Kategorija nevar būt tikai simboli",
+"categoryErrorNumbers": "Kategorija nevar būt tikai skaitļi",
+
+"upgradeRequired": "Nepieciešams jauninājums",
+"viewPremiumBenefits": "Skatīt Premium priekšrocības",
+"createCategory": "Izveidot",
+
+"addGroupTitle": "Pievienot grupu",
+"groupNameLabel": "Grupa",
+"groupNameHint": "Ievadiet grupu",
+
+"groupErrorEmpty": "Grupa ir obligāta",
+"groupErrorTooShort": "Grupa ir pārāk īsa",
+"groupErrorTooLong": "Grupa ir pārāk gara",
+"groupErrorSymbols": "Grupa nevar saturēt simbolus",
+"groupErrorNumbers": "Grupa nevar saturēt skaitļus",
+"createGroup": "Izveidot",
+
+"firstNameLabel": "Vārds",
+"firstNameHint": "Ievadiet vārdu",
+
+"lastNameLabel": "Uzvārds",
+"lastNameHint": "Ievadiet uzvārdu",
+
+"emailLabel": "E-pasta adrese",
+"loginPasswordHint": "Ievadiet savu paroli",
+"registerPasswordHint": "Ievadiet paroli",
+"passwordHelper": "Vismaz 8 rakstzīmes ar dažādiem tipiem",
+
+"passwordTooShort": "Par īsu",
+"passwordTooWeak": "Par vāju",
+"passwordMedium": "Vidējs",
+"passwordStrong": "Spēcīgs",
+
+"errorFirstName": "Vārds ir obligāts",
+"errorLastName": "Uzvārds ir obligāts",
+"errorEmailInvalid": "Ievadiet derīgu e-pasta adresi",
+"errorEmailInUse": "Šī e-pasta adrese jau\nir saistīta ar Vaultara kontu",
+"errorPasswordLength": "Parolei jābūt vismaz astoņas rakstzīmes garai",
+"errorPasswordWeak": "Ievadiet spēcīgāku paroli",
+"errorGeneric": "Reģistrācija neizdevās. Lūdzu, mēģiniet vēlreiz",
+
+"createAccount": "Izveidot kontu",
+"appName": "Vaultara",
+"authTagline": "Jūsu personīgais centrs pasēm, apliecībām, kartēm un citām svarīgām lietām",
+"tabSignIn": "Pieteikties",
+"tabCreateAccount": "Izveidot kontu",
+"signInFooterText": "Piesakieties, lai piekļūtu savai Vaultara telpai un kontrolētu visus atjaunošanas termiņus",
+"createAccountFooterText": "Izveidojiet Vaultara kontu, lai saglabātu svarīgus atgādinājumus un piekļūtu tiem, kad nepieciešams",
+
+"emailRequired": "E-pasta adrese ir obligāta",
+"passwordRequired": "Parole ir obligāta",
+"emailNotFound": "Nepareizs e-pasts. Nav\nVaultara konta ar šo e-pastu",
+"incorrectPassword": "Nepareiza parole",
+
+"emailLabel": "E-pasta adrese",
+"emailHint": "Ievadiet e-pastu",
+"passwordLabel": "Parole",
+"signIn": "Pieteikties",
+
+"categoryPersonalIdentification": "Personas identifikācija",
+"categoryDrivingAndVehicles": "Braukšana un transportlīdzekļi",
+"categoryTravelAndImmigration": "Ceļošana un imigrācija",
+"categoryBankingAndCards": "Banka un kartes",
+"categoryInsuranceAndCover": "Apdrošināšana un aizsardzība",
+"categoryHealthAndMedical": "Veselība un medicīna",
+"categoryWorkAndProfessional": "Darbs un profesionālā joma",
+"categoryPropertyAndHousing": "Īpašums un mājoklis",
+"categoryHouseholdAndUtilities": "Mājsaimniecība un komunālie pakalpojumi",
+
+"subcategoryPassports": "Pases",
+"subcategoryIdCards": "Personas apliecības",
+"subcategoryResidencePermits": "Uzturēšanās atļaujas",
+
+"subcategoryDrivingLicences": "Vadītāja apliecības",
+"subcategoryVehicleRegistrations": "Transportlīdzekļu reģistrācija",
+"subcategoryRoadworthyCertificates": "Tehniskās kārtības apliecības",
+"subcategoryVehicleInspectionCertificates": "Transportlīdzekļu pārbaudes apliecības",
+
+"subcategoryVisas": "Vīzas",
+"subcategoryStudyPermits": "Studiju atļaujas",
+"subcategoryWorkPermits": "Darba atļaujas",
+"subcategoryTravelInsuranceDocuments": "Ceļojumu apdrošināšanas dokumenti",
+
+"subcategoryDebitAndCreditCards": "Debetkartes un kredītkartes",
+"subcategoryStoreCards": "Veikalu kartes",
+"subcategoryFuelCards": "Degvielas kartes",
+"subcategoryVehicleInsurances": "Transportlīdzekļu apdrošināšana",
+"subcategoryPropertyInsurances": "Īpašuma apdrošināšana",
+"subcategoryLifeInsurances": "Dzīvības apdrošināšana",
+"subcategoryHealthInsurances": "Veselības apdrošināšana",
+"subcategoryTravelInsurances": "Ceļojumu apdrošināšana",
+
+"subcategoryMedicalPrescriptions": "Medicīniskās receptes",
+"subcategoryOpticalPrescriptions": "Optiskās receptes",
+"subcategoryMedicalCertificates": "Medicīniskās izziņas",
+
+"subcategoryProfessionalLicences": "Profesionālās licences",
+"subcategoryProfessionalRegistrations": "Profesionālās reģistrācijas",
+"subcategoryIndustryRegistrations": "Nozares reģistrācijas",
+"subcategoryWorkAccessCards": "Darba piekļuves kartes",
+
+"subcategoryLeaseAgreements": "Īres līgumi",
+"subcategoryAccessCardsAndTags": "Piekļuves kartes un birkas",
+"subcategoryParkingPermits": "Stāvvietas atļaujas",
+"subcategorySecurityAccessPermits": "Drošības piekļuves atļaujas",
+
+"subcategoryElectricityAccounts": "Elektrības rēķini",
+"subcategoryWaterAccounts": "Ūdens rēķini",
+"subcategoryInternetContracts": "Interneta līgumi",
+"subcategorySecurityServiceContracts": "Apsardzes pakalpojumu līgumi",
+
+"searchCategories": "Meklēt kategorijas",
+"filterAll": "Visas",
+"filterPreset": "Iepriekš iestatītās",
+"filterCustom": "Pielāgotās",
+"addCategoryTitle": "Pievienot kategoriju",
+"customLabel": "Pielāgota",
+"subcategoriesLabel": "apakškategorijas",
+"itemsLabel": "vienumi",
+
+"itemsExpiring": "{count} vienumi beigsies pēc {days} dienām",
+
+"pinnedEssentials": "Piespraustie svarīgie",
+"pinnedHint": "Piespraudiet biežāk izmantotās kategorijas.",
+"noCategoriesFound": "Kategorijas nav atrastas",
+
+"searchGroups": "Meklēt grupas",
+"addGroupTitle": "Pievienot grupu",
+
+"basicPlanGroupInfo": "Jūs izmantojat Basic plānu.\nVarat skatīt iepriekš iestatītās grupas.\nJauniniet uz Premium, lai izveidotu savas grupas.",
+
+"groupDeleted": "Grupa dzēsta",
+"undo": "ATSAUKT",
+
+"groupTapHint": "Pieskarieties, lai pievienotu un sekotu vienumiem.",
+"itemsInGroup": "Vienumi šajā grupā",
+"itemsInGroupHint": "Sekojiet katram vienumam ar derīguma termiņu.",
+"searchItems": "Meklēt vienumus",
+"filterExpiringWithin": "Beigsies pēc {days} dienām",
+"@filterExpiringWithin": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"filterExpired": "Beigušies",
+"addItem": "Pievienot vienumu",
+"noItemsYet": "Vēl nav vienumu.",
+
+"statusExpired": "Beidzies",
+"statusExpiresToday": "Beidzas šodien",
+"statusExpiresInOneDay": "Beidzas pēc 1 dienas",
+"statusExpiresInDays": "Beidzas pēc {days} dienām",
+"@statusExpiresInDays": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+"statusValid": "Derīgs",
+
+"deleteCategoryTitle": "Dzēst kategoriju",
+"deleteCategoryMessage": "Vai tiešām vēlaties dzēst kategoriju \"{name}\"?",
+"@deleteCategoryMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteGroupTitle": "Dzēst grupu",
+"deleteGroupMessage": "Vai tiešām vēlaties dzēst grupu \"{name}\"?",
+"@deleteGroupMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"deleteItemTitle": "Dzēst vienumu",
+"deleteItemMessage": "Vai tiešām vēlaties dzēst \"{name}\"?",
+"@deleteItemMessage": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"cancel": "Atcelt",
+"delete": "Dzēst",
+
+"homeWelcomeTitle": "Laipni lūdzam",
+
+"homeWelcomeFirstTitle": "Laipni lūdzam, {name}",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "Laipni atpakaļ, {name}",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"filterAll": "Visi",
+"homeWelcomeSubtitleGeneric": "Vaultara palīdz sekot svarīgiem derīguma termiņiem, lai nekas nebeigtos nepamanīti.",
+
+"homeWelcomeSubtitleFirst": "Prieks jūs redzēt šeit. Vaultara glabā svarīgus datumus un ierakstus vienā drošā vietā.",
+
+"homeWelcomeSubtitleBack": "Prieks jūs atkal redzēt. Vaultara vienmēr ir gatava jūsu svarīgajiem datiem.",
+
+"insightEmptyTitle": "Vēl nekas nav pievienots",
+"insightEmptyBody": "Sāciet sekot datumiem, un Vaultara palīdzēs būt soli priekšā.",
+
+"insightExpiresTodayTitle": "\"{name}\" beidzas šodien",
+"insightExpiresTodayBody": "Ātra pārbaude palīdz saglabāt precizitāti.",
+
+"insightExpiresTomorrowTitle": "\"{name}\" beidzas rīt",
+"insightExpiresTomorrowBody": "Pārbaude šodien ietaupīs laiku vēlāk.",
+
+"insightExpiresSoonTitle": "\"{name}\" beidzas {date}",
+"insightExpiresSoonBody": "Agrīna uzmanība atvieglo procesu.",
+
+"insightNextExpiryTitle": "Nākamais termiņš — \"{name}\" {date}",
+"insightNextExpiryBody": "Pašlaik rīcība nav nepieciešama, bet ir vērts atcerēties.",
+
+"insightClusteredTitle": "Vairāki ieraksti beidzas {month}",
+"insightClusteredBody": "Kopīga pārskatīšana ietaupa laiku.",
+
+"insightTopCategoryTitle": "Lielākā daļa ierakstu ir {category}",
+"insightTopCategoryBody": "Šīs sadaļas pārskatīšana dod lielāko ieguvumu.",
+
+"insightStableTitle": "Viss izskatās stabils",
+"insightStableBody": "Pašlaik nav termiņu, kam būtu jāpievērš uzmanība.",
+
+"summaryAllTitle": "Visi ieraksti",
+"summaryAllCaption": "Sekoti Vaultara",
+"summarySoonTitle": "Drīz beigsies",
+"summarySoonCaption": "30 dienu laikā",
+"summaryWeekTitle": "Šonedēļ",
+"summaryWeekCaption": "Beidzas 7 dienu laikā",
+"summaryExpiredTitle": "Beigušies",
+"summaryExpiredCaption": "Pēc derīguma termiņa",
+
+"stabilityStableTitle": "Stabilitāte saglabāta",
+"stabilityStableBody": "Nav tūlītēju risku.",
+
+"stabilityDecliningTitle": "Stabilitāte samazinās",
+"stabilityDecliningBody": "Daži ieraksti jau ir beigušies, citi tuvojas.",
+
+"stabilityWeakenedTitle": "Stabilitāte ir vājināta",
+"stabilityWeakenedBody": "Beigušies ieraksti samazina uzticamību.",
+
+"stabilityPressureTitle": "Spiediens pieaug",
+"stabilityPressureBody": "Vairākiem ierakstiem drīz būs nepieciešama uzmanība.",
+"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+"@insightExpiresSoonTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightNextExpiryTitle": {
+  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+},
+"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+"editorNotes": "Piezīmes",
+"notesHint": "Ievadiet piezīmes",
+"editorReminderTitle": "Atgādinājums",
+"editorReminderNone": "Nav atgādinājuma",
+"editorReminderOnExpiry": "Derīguma termiņa dienā",
+"editorReminder7Days": "7 dienas iepriekš",
+"editorReminder30Days": "30 dienas iepriekš",
+"editorReminderCustom": "Pielāgots",
+"daysBeforeExpiry": "dienas līdz termiņam",
+
+"reminderStage0Title": "Derīguma atgādinājums",
+"reminderStage0Body": "{firstName}, jūsu {itemName} beigsies pēc {days} dienām.",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "Atgādinājuma turpinājums",
+"reminderStage1Body": "{firstName}, {itemName} vēl nav atjaunināts.",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "Termiņš tuvojas",
+"reminderStage2Body": "{itemName} derīguma termiņš tuvojas.",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "Pēdējais atgādinājums",
+"reminderFinalBody": "{firstName}, lūdzu atjauniniet {itemName} tagad.",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"coverageBalanceTitle": "Pārklājuma līdzsvars",
+"coverageAllRepresented": "Jūsu ieraksti ietver visas kategorijas.",
+"coverageMissingNamed": "Nav ierakstu {count} kategorijās: {names}.",
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+
+"coverageMissingSummary": "Jūs neesat pievienojis ierakstus {count} kategorijās, tostarp {names} un vēl {remaining} citās.",
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "Izmantot paroli",
+"signInWithBiometrics": "Pierakstīties ar biometrisko autentifikāciju",
+"enableBiometricsTitle": "Ieslēgt biometrisko drošību",
+"enableBiometricsBody": "Izmantojiet pirkstu nospiedumu vai sejas atpazīšanu, lai aizsargātu Vaultara.",
+"enableBiometricsReason": "Ieslēgt biometrisko atbloķēšanu Vaultara.",
+"notNow": "Ne tagad",
+"useBiometrics": "Izmantot biometriju",
+
+"recordsCalendarIntro": "Izvēlieties, kā vēlaties skatīt derīguma termiņus:\n\n• Ievadiet, cik dienas uz priekšu vēlaties skatīties.\n• Vai izvēlieties precīzu datumu kalendārā.\n\nVaultara parādīs, kuri ieraksti beidzas šajā dienā.",
+
+"showingRecordsRelative": "Tiek rādīti ieraksti, kuru termiņš beidzas {time}",
+"@showingRecordsRelative": {
+  "placeholders": {
+    "time": { "type": "String" }
+  }
+},
+
+"showingRecordsExact": "Tiek rādīti ieraksti, kuru termiņš beidzas izvēlētajā dienā",
+
+"noRecordsOnDate": "Šajā dienā neviens ieraksts nebeidzas.",
+
+"recordEditorAddTitle": "Pievienot ierakstu",
+"recordEditorEditTitle": "Rediģēt ierakstu",
+
+"editorRecordName": "Ieraksta nosaukums",
+"editorRecordNameHint": "Ievadiet ieraksta nosaukumu",
+"recordEditorErrorName": "Ieraksta nosaukums ir obligāts",
+
+"recordsGroupTapHint": "Pieskarieties, lai pievienotu un sekotu ierakstiem šajā grupā.",
+
+"recordsInGroup": "Ieraksti šajā grupā",
+
+"recordsInGroupHint": "Sekojiet katram svarīgam ierakstam pēc tā derīguma termiņa.",
+
+"searchRecords": "Meklēt ierakstus",
+
+"addRecord": "Pievienot ierakstu",
+
+"noRecordsYet": "Vēl nav ierakstu.",
+"deleteRecordTitle": "Dzēst ierakstu",
+
+"recordsInsightClusteredTitle": "Vairāki ieraksti beidzas ap {month}",
+"@recordsInsightClusteredTitle": {
+  "placeholders": {
+    "month": { "type": "String" }
+  }
+},
+
+"recordsInsightTopCategoryTitle": "Lielākā daļa jūsu ierakstu ir {category} kategorijā",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": {
+    "category": { "type": "String" }
+  }
+},
+
+"summaryAllRecordsTitle": "Visi ieraksti",
+
+"recordsStabilityDecliningBody": "Daži ieraksti jau ir beigušies, bet citi drīz beigsies.",
+
+"recordsCoverageAllRepresented": "Jūsu ieraksti aptver visas kategorijas.",
+
+"recordReminderStage0Body": "{firstName}, jūsu {recordName} beigsies pēc {days} dienām.",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body": "{firstName}, jūsu {recordName} vēl nav atjaunināts.",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body": "{recordName} derīguma termiņš tuvojas.",
+"@recordReminderStage2Body": {
+  "placeholders": {
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderFinalBody": "{firstName}, lūdzu atjauniniet {recordName} tagad.",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "Grupu vēl nav",
+
+"recordsExpiring": "{count, plural, one {1 ieraksts beigsies pēc {days} dienām} other {{count} ieraksti beigsies pēc {days} dienām}}",
+
+"recordsGroupStats": "{records, plural, one {1 ieraksts} other {{records} ieraksti}} • {expiring} beigsies {days} dienu laikā",
+
+"groupLabel": "{count, plural, one {{count} grupa} other {{count} grupas}}",
+
+"recordsLabel": "{count, plural, one {{count} ieraksts} other {{count} ieraksti}}",
+
+"forgotPassword": "Aizmirsāt paroli?",
+"forgotPasswordTitle": "Atiestatīt paroli",
+"forgotPasswordBody": "Ievadiet savu e-pastu, un mēs nosūtīsim paroles atiestatīšanas saiti.",
+"sendResetLink": "Sūtīt atiestatīšanas saiti",
+"passwordResetEmailSent": "Paroles atiestatīšanas e-pasts ir nosūtīts.",
+"verifyEmailToContinue": "Pirms pierakstīšanās apstipriniet savu e-pastu",
+
+"changeEmailTitle": "Mainīt e-pastu",
+"newEmailHint": "Ievadiet jauno e-pastu",
+"sendVerificationEmail": "Sūtīt apstiprinājuma e-pastu",
+
+"deleteAccountTitle": "Dzēst kontu",
+"deleteAccountWarning": "Šī darbība neatgriezeniski dzēsīs jūsu kontu un visus datus.\nTo nevar atcelt.",
+"deleteAccountConfirm": "Dzēst kontu neatgriezeniski",
+
+"supportTitle": "Atbalsts",
+"supportSubtitle": "Sazinieties ar mums, ja nepieciešama palīdzība.",
+"supportEmailSubject": "Vaultara atbalsta pieprasījums",
+"supportEmailError": "Neizdevās atvērt e-pasta lietotni.",
+
+"passwordResetEmailFailed": "Neizdevās nosūtīt paroles atiestatīšanas e-pastu.",
+
+"loggedInPasswordResetBody": "Paroles atiestatīšanas saite tiks nosūtīta uz:\n{email}",
+
+"accountManagementTitle": "Konta pārvaldība",
+"changeEmailSubtitle": "Atjauniniet ar kontu saistīto e-pastu.",
+"changePasswordTitle": "Mainīt paroli",
+"changePasswordSubtitle": "Nosūtīsim saiti drošai paroles maiņai.",
+
+"deleteAccountSubtitle": "Neatgriezeniski dzēst Vaultara kontu.",
+
+"biometricAuthReason": "Autentificējieties, lai piekļūtu Vaultara kontam.",
+
+"verifyEmailTitle": "Apstipriniet e-pastu",
+"verifyEmailBody": "Mēs nosūtījām apstiprinājuma e-pastu. Atveriet to un apstipriniet adresi, pēc tam atgriezieties šeit.",
+"verifyEmailConfirmedButton": "E-pasts apstiprināts",
+"verifyEmailResendButton": "Nosūtīt apstiprinājuma e-pastu vēlreiz",
+"verifyEmailSending": "Sūta...",
+
+"navHome": "Sākums",
+"navCategories": "Kategorijas",
+"navInsights": "Ieskats",
+"navCalendar": "Kalendārs",
+
+"tutorialCancel": "Atcelt",
+"tutorialNext": "Tālāk",
+"tutorialEnd": "Beigt pamācību",
+
+"softDeleteCategory": "Kategorija",
+"softDeleteGroup": "Grupa",
+"softDeleteRecord": "Ieraksts",
+
+"softDeleteTitle": "Pārvietot {type} uz Nesen dzēstajiem",
+"softDeleteMessage": "{type} \"{name}\" tiks pārvietots uz Nesen dzēstajiem.\n\nTo varēs atjaunot 30 dienu laikā. Pēc tam tas tiks dzēsts neatgriezeniski.",
+"softDeleteMove": "Pārvietot",
+"@recordsExpiring": {
+  "description": "Parāda, cik ierakstu drīz beigsies derīgums",
+  "placeholders": { "count": { "type": "int" }, "days": { "type": "int" } }
+},
+"@recordsGroupStats": {
+  "description": "Grupas statistika: kopējais ierakstu skaits un derīguma beigu skaits",
+  "placeholders": { "records": { "type": "int" }, "expiring": { "type": "int" }, "days": { "type": "int" } }
+},
+"@groupLabel": { "description": "Grupu skaits", "placeholders": { "count": { "type": "num" } } },
+"@recordsLabel": { "description": "Ierakstu skaits", "placeholders": { "count": { "type": "num" } } },
+"@loggedInPasswordResetBody": {
+  "description": "Informē par paroles atiestatīšanas e-pasta nosūtīšanu",
+  "placeholders": { "email": { "type": "String" } }
+},
+"@softDeleteTitle": {
+  "description": "Pagaidu dzēšanas apstiprinājuma virsraksts",
+  "placeholders": { "type": { "type": "Object" } }
+},
+"@softDeleteMessage": {
+  "description": "Paskaidro pagaidu dzēšanas darbību",
+  "placeholders": { "type": { "type": "Object" }, "name": { "type": "Object" } }
+},
+"recentlyDeletedTitle": "Nesen dzēstie",
+"categories": "Kategorijas",
+"groups": "Grupas",
+"records": "Ieraksti",
+"restore": "Atjaunot",
+"deletePermanently": "Dzēst neatgriezeniski",
+
+"recentlyDeletedBanner": "Dzēstie {type} tiek glabāti šeit 30 dienas pirms neatgriezeniskas dzēšanas.",
+"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+"searchDeletedHint": "Meklēt dzēstos {type}",
+"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+"noDeletedItems": "Vēl nav dzēstu {type}",
+"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+
+"categoriesHint": "Pieskarieties kategorijai, lai skatītu tās grupas un pārvaldītu ierakstus.",
+"groupsHint": "Grupas organizē ierakstus šajā kategorijā. Pieskarieties grupai, lai tos pārvaldītu.",
+"notLoggedIn": "Nav pieteicies",
+
+"recordsInsideGroupHint": "Šie ir šīs grupas ieraksti.",
+
+"snackMovedToRecentlyDeleted": "\"{name}\" pārvietots uz Nesen dzēstajiem",
+"@snackMovedToRecentlyDeleted": { "placeholders": { "name": { "type": "String","example":"Pase"} } },
+
+"snackDeletedSuccessfully": "\"{name}\" veiksmīgi dzēsts",
+"@snackDeletedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Vadītāja apliecība"} } },
+
+"snackUpdatedSuccessfully": "\"{name}\" veiksmīgi atjaunināts",
+"@snackUpdatedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Vīza"} } },
+
+"snackAddedSuccessfully": "\"{name}\" veiksmīgi pievienots",
+"@snackAddedSuccessfully": { "placeholders": { "name": { "type": "String","example":"Apdrošināšana"} } },
+
+"snackRestoredSuccessfully": "\"{name}\" veiksmīgi atjaunots",
+"@snackRestoredSuccessfully": { "placeholders": { "name": { "type": "String","example":"Pase"} } },
+
+"snackFreeLimitReached": "Sasniegts bezmaksas limits ({current}/{limit}). Atjauniniet, lai pievienotu vairāk.",
+"@snackFreeLimitReached": {
+  "placeholders": {
+    "current": { "type": "int","example":"3" },
+    "limit": { "type": "int" }
+  }
+},
+"globalSearchTitle": "Visu ierakstu meklēšana",
+"globalSearchHint": "Ievadiet ieraksta nosaukumu, kategoriju vai grupu",
+"globalSearchNoMatches": "Nav ierakstu, kas atbilst jūsu meklēšanai.",
+"snackNoRecordsToSearch": "Nav ierakstu meklēšanai. Pievienojiet dažus ierakstus, un Vaultara tos automātiski indeksēs.",
+
+"recoveryCentreTitle": "Atkopšanas centrs",
+"recoveryCentreSubtitle": "Atjaunojiet vai neatgriezeniski dzēsiet noņemtos ierakstus.",
+
+"plan_premium": "Premium",
+"plan_free": "Bezmaksas",
+
+"profile_app_settings_title": "Lietotnes iestatījumi",
+"profile_privacy_security_title": "Privātums un drošība",
+"profile_biometric_on": "Biometriskā bloķēšana ir ieslēgta šajā ierīcē.",
+"profile_biometric_off": "Biometriskā bloķēšana ir izslēgta.",
+"profile_biometric_enable_reason": "Apstipriniet identitāti, lai ieslēgtu biometrisko bloķēšanu.",
+"profile_biometric_disable_reason": "Apstipriniet identitāti, lai izslēgtu biometrisko bloķēšanu.",
+"profile_account_management_title": "Konta pārvaldība",
+"profile_premium_active_title": "Premium ir aktīvs",
+"profile_premium_upgrade_title": "Jaunināt uz Premium",
+"profile_premium_active_subtitle": "Paplašinātie atgādinājumi ir aktivizēti.",
+"profile_premium_upgrade_subtitle": "Atbloķējiet paplašinātos atgādinājumus un neierobežotu organizēšanu.",
+"profile_manage_cancel_hint": "Pārvaldiet vai atceliet jebkurā laikā Google Play.",
+"profile_manage_subscription_button": "Pārvaldīt abonementu",
+"plansTitle": "Izvēlieties plānu",
+"plansTrialBanner": "Sāciet ar 7 dienu bezmaksas izmēģinājumu.\nAtceliet jebkurā laikā.",
+"plansLoading": "Notiek ielāde…",
+"plansStartFreeTrial": "Sākt bezmaksas izmēģinājumu",
+"plansNoChargeTodayFooter": "7 dienas bez maksas · Šodien nav maksas",
+
+"planFreeTitle": "Bezmaksas",
+"planFreeSubtitle": "Sākšanai",
+"planPremiumMonthlyTitle": "Premium mēneša",
+"planPremiumYearlyTitle": "Premium gada",
+"planPerMonth": "mēnesī",
+"planPerYear": "gadā",
+
+"planBadgeCurrent": "Pašreizējais plāns",
+"planBadgePopular": "Populārs",
+"planBadgeBestValue": "Labākā vērtība",
+
+"planYouAreOnThisPlan": "Jūs jau izmantojat šo plānu.",
+
+"planFeatureUpToRecords": "Līdz {count} ierakstiem",
+"@planFeatureUpToRecords": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeatureCustomCategoriesUpTo": "Pielāgotas kategorijas (līdz {count})",
+"@planFeatureCustomCategoriesUpTo": { "placeholders": { "count": { "type": "int" } } },
+
+"planFeaturePresetSubcategories": "Iepriekš iestatītas apakškategorijas",
+"planFeatureCloudStorage": "Mākoņkrātuve",
+"planFeatureSmartExpiryInsights": "Gudri derīguma atgādinājumi",
+"planFeatureCoverageBalance": "Pārklājuma līdzsvars",
+"planFeatureRecordStabilityTracking": "Ierakstu stabilitātes uzraudzība",
+
+"planFeatureUnlimitedRecords": "Neierobežoti ieraksti",
+"planFeatureUnlimitedCategories": "Neierobežotas kategorijas",
+"planFeatureCustomSubcategories": "Pielāgotas apakškategorijas",
+"planFeatureMultipleRemindersPerRecord": "Vairāki atgādinājumi",
+"planFeatureAdvancedReminderTiming": "Paplašināta laika iestatīšana",
+"planFeatureAutomaticFollowUps": "Automātiski atgādinājumi",
+
+"planFeatureEverythingInMonthly": "Viss no mēneša plāna",
+"planFeatureSavePercentComparedToMonthly": "Ietaupiet {percent}% salīdzinājumā ar mēneša",
+"@planFeatureSavePercentComparedToMonthly": { "placeholders": { "percent": { "type": "int" } } },
+
+"planFeatureBestLongTermValue": "Labākā ilgtermiņa vērtība",
+
+"editorReminderLabel": "Atgādinājums",
+"editorReminderSelectOptional": "Izvēlieties atgādinājumu (pēc izvēles)",
+"editorReminderOnExpiry": "Derīguma dienā",
+"editorReminderDaysBefore": "{days} dienas pirms derīguma",
+"editorFreeItemsCount": "Bezmaksas vienumi: {used}/{limit}",
+"editorExpiryPastWarning": "Derīguma termiņš jau ir pagājis.",
+"editorExpiryTodayWarning": "Šis ieraksts beidzas šodien.",
+"editorErrorExpiryPast": "Derīguma termiņš nevar būt pagātnē.",
+
+"@editorReminderDaysBefore": {
+  "placeholders": {
+    "days": { "type": "int" }
+  }
+},
+
+"@editorFreeItemsCount": {
+  "placeholders": {
+    "used": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+
+"todayInsightsTitle": "Šodienas ieskati",
+"tutorialBannerTitle": "Ātrais ceļvedis",
+"tutorialBannerBody": "Minūtes laikā uzziniet, kur meklēt, kā pievienot ierakstus un ko nozīmē ieskati.",
+"tutorialBannerStart": "Sākt ceļvedi",
+"tutorialBannerDismiss": "Ne tagad",
+"authErrorUserDisabled": "Šis konts ir atspējots.",
+"authErrorNetwork": "Tīkla kļūda. Pārbaudiet internetu un mēģiniet vēlreiz.",
+"authErrorTooManyRequests": "Pārāk daudz mēģinājumu. Lūdzu, mēģiniet vēlāk.",
+"authErrorSignInFailed": "Neizdevās pierakstīties. Lūdzu, mēģiniet vēlreiz.",
+"ok": "Labi",
+"snackPremiumEnabled": "Premium aktivizēts",
+"snackPremiumRestored": "Premium atjaunots",
+"passwordNeedLower": "Jāietver mazais burts",
+"passwordNeedUpper": "Jāietver lielais burts",
+"passwordNeedNumber": "Jāietver skaitlis",
+"passwordNeedSymbol": "Jāietver simbols",
+"editorFreeItemsCount": "Bezmaksas vienumi: {used}/{limit}",
+"editorExpiryPastWarning": "Derīguma termiņš jau ir pagājis.",
+"editorExpiryTodayWarning": "Šis ieraksts beidzas šodien.",
+"editorErrorExpiryPast": "Derīguma termiņš nevar būt pagātnē.",
+"todayInsightsTitle": "Šodienas ieskati",
+"tutorialBannerTitle": "Ātrais ceļvedis",
+"tutorialBannerBody": "Minūtes laikā uzziniet, kur meklēt, kā pievienot ierakstus un ko nozīmē ieskati.",
+"tutorialBannerStart": "Sākt pamācību",
+"tutorialBannerDismiss": "Ne tagad",
+"authErrorUserDisabled": "Šis konts ir deaktivizēts.",
+"authErrorNetwork": "Tīkla kļūda. Pārbaudiet internetu un mēģiniet vēlreiz.",
+"authErrorTooManyRequests": "Pārāk daudz mēģinājumu. Lūdzu, mēģiniet vēlāk.",
+"authErrorSignInFailed": "Neizdevās pierakstīties. Lūdzu, mēģiniet vēlreiz.",
+"ok": "Labi",
+"tutorialHomeSearch": "Izmantojiet meklēšanu, lai ātri atrastu jebkuru ierakstu.",
+"tutorialHomeFab": "Pievienojiet savu pirmo ierakstu šeit.\nIzvēlieties kategoriju, pievienojiet piezīmes un derīguma termiņu.",
+"tutorialHomeSummary": "Palielinoties ierakstu skaitam, šī sadaļa palīdz pamanīt termiņus.",
+"tutorialHomeInsight": "Šis viedais ieskats parāda modeļus un tuvojošos termiņus.",
+"tutorialHomeCoverage": "Pārklājuma līdzsvars parāda ierakstu sadalījumu kategorijās.",
+"tutorialHomeStability": "Stabilitāte parāda ierakstu uzticamību laika gaitā.",
+"profile_account_management_subtitle": "Mainīt e-pastu, paroli vai dzēst kontu.",
+"confirmIdentityTitle": "Apstiprināt identitāti",
+"confirm": "Apstiprināt",
+"profile_sign_out_title": "Izrakstīties",
+"profile_sign_out_subtitle": "Izrakstīties no Vaultara šajā ierīcē",
+"profile_sign_out_confirm_title": "Izrakstīties?",
+"profile_sign_out_confirm_body": "Lai piekļūtu kontam, jums būs jāpiesakās vēlreiz.",
+"profile_sign_out_action": "Izrakstīties",
+"todayInsightsAudioHint": "Vēlies audio? Izmanto skaļruņa ikonu.",
+"category2Label": "Kategorija",
+"enable2BiometricsBody": "Izmanto pirksta nospieduma atpazīšanu, lai aizsargātu savu Vaultara kontu.",
+"snackNotificationsDisabled": "Paziņojumi ir izslēgti. Ieslēdziet tos, lai saņemtu atgādinājumus.",
+"openSettings": "Atvērt iestatījumus",
+
+"reminderOnExpiryTitle": "Beidzas šodien",
+"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
+
+"reminderOnExpiryBody": "Sveiki {firstName}, \"{itemName}\" beidzas šodien.",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "Bezmaksas kategorijas: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "Rāda, cik bezmaksas kategoriju ir izmantots no bezmaksas limita.",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "Pievienot piezīmes (neobligāti)",
+"apply": "Lietot",
+"smartInsightExpiresTodayHeading": "Beidzas Šodien",
+"smartInsightExpiresTodaySingleBody": "{name} beidzas šodien. Rīkojieties tagad, lai to saglabātu atjauninātu.",
+"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
+"smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} beidzas šodien.} =1{{names} un vēl 1 dokuments beidzas šodien.} other{{names} un vēl {extra} dokumenti beidzas šodien.}}",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "Nepieciešama Jūsu Uzmanība",
+"smartInsightSilentRiskBody": "{days, plural, =0{{name} beidzas pēc 0 dienām un nav atgādinājuma. Apstipriniet, ka detaļas joprojām ir pareizas.} =1{{name} beidzas pēc 1 dienas un nav atgādinājuma. Apstipriniet, ka detaļas joprojām ir pareizas.} other{{name} beidzas pēc {days} dienām un nav atgādinājuma. Apstipriniet, ka detaļas joprojām ir pareizas.}}",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "Vairāki Atjaunojumi Tuvu Kopā",
+"smartInsightRenewalTwinBodyTwo": "{a} un {b} beidzas trīs nedēļu laikā viens no otra. Plānojiet iepriekš.",
+"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
+"smartInsightRenewalTwinBodyThree": "{a}, {b} un {c} visi beidzas trīs nedēļu laikā. Plānojiet iepriekš.",
+"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
+"smartInsightRenewalTwinBodyMany": "{extra, plural, =0{{a}, {b} un vēl 0 dokumenti beidzas trīs nedēļu laikā. Plānojiet iepriekš.} =1{{a}, {b} un vēl 1 dokuments beidzas trīs nedēļu laikā. Plānojiet iepriekš.} other{{a}, {b} un vēl {extra} dokumenti beidzas trīs nedēļu laikā. Plānojiet iepriekš.}}",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "Tuvojas Grupa",
+"smartInsightClusterBody": "{count, plural, =0{Nav dokumenti kategorijā {category} beidzas nākamo divu mēnešu laikā.} =1{1 dokuments kategorijā {category} beidzas nākamo divu mēnešu laikā. Apsveriet to apstrādāt kopā.} other{{count} dokumenti kategorijā {category} beidzas nākamo divu mēnešu laikā. Apsveriet tos apstrādāt kopā.}}",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "Mierīgs Periods Priekšā",
+"smartInsightQuietPeriodBody": "{days, plural, =0{Nākamo 0 dienu laikā nekas nebeigsies. Jūsu nākamais atjaunojums ir {firstDate}.} =1{Nākamās 1 dienas laikā nekas nebeigsies. Jūsu nākamais atjaunojums ir {firstDate}.} other{Nākamo {days} dienu laikā nekas nebeigsies. Jūsu nākamais atjaunojums ir {firstDate}.}}",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "Viss Aktuāls",
+"smartInsightAllCaughtUpBody": "{count, plural, =0{Nav tuvojošās beigas.} =1{1 tuvojošā beigas ir segta ar atgādinājumiem. Nekas cits nepieprasa jūsu uzmanību.} other{{count} tuvojošās beigas ir segtas ar atgādinājumiem. Nekas cits nepieprasa jūsu uzmanību.}}",
+"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
+"smartInsightAllCaughtUpNoUpcomingBody": "Viss aktuāls. Nekas nepieprasa jūsu uzmanību tagad.",
+"smartInsightNoRecordsHeading": "Pievienojiet Savu Pirmo Ierakstu",
+"smartInsightNoRecordsBody": "Sāciet izsekot saviem dokumentiem un Vaultara šeit parādīs gudras atziņas.",
+"expiryTimelineTitle": "Derīguma termiņa laika līnija",
+"expiryTimelineSubtitle": "Pieskarieties mēnesim, lai redzētu ierakstus, kuriem beidzas derīgums tajā mēnesī",
+"expiryTimelineDetailCount": "{count, plural, =0{ieraksta nav} =1{1 ieraksts} other{{count} ieraksti}}",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "Gaidāmi",
+"summaryUpcomingCaption": "30 dienu laikā",
+"summaryUrgentTitle": "Steidzami",
+"summaryUrgentCaption": "7 dienu laikā"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

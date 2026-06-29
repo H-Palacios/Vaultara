@@ -72,7 +72,10 @@
   "categoryNameHint": "カテゴリ名を入力",
 
   "categoryLimitReached":
-    "ベーシックプランの上限に達しました。Premium にアップグレードしてください。",
+    "ベーシックプランの上限に達しました",
+  "@categoryLimitReached": {
+    "placeholders": { "limit": { "type": "int" } }
+  },
 
   "categoryLimitInfo":
     "ベーシックプランでは最大 {limit} 件のカテゴリを作成できます",
@@ -97,5 +100,812 @@
   "groupErrorSymbols": "グループ名に記号は使用できません",
   "groupErrorNumbers": "グループ名に数字は使用できません",
 
-  "createGroup": "作成"
+  "createGroup": "作成",
+
+  "registerTitle": "アカウントを作成",
+
+  "firstNameLabel": "名",
+  "firstNameHint": "名を入力",
+  "errorFirstName": "名は必須です",
+
+  "lastNameLabel": "姓",
+  "lastNameHint": "姓を入力",
+  "errorLastName": "姓は必須です",
+
+  "emailLabel": "メールアドレス",
+  "errorEmailInvalid": "有効なメールアドレスを入力してください",
+  "errorEmailInUse":
+    "このメールアドレスは既に Vaultara アカウントに使用されています",
+
+  "passwordLabel": "パスワード",
+ "emailRequired": "メールアドレスは必須です",
+"passwordRequired": "パスワードは必須です",
+"registerPasswordHint": "パスワードを入力",
+"loginPasswordHint": "パスワードを入力してください",
+"emailHint": "メールアドレスを入力してください",
+  "passwordHelper": "8文字以上で複数の種類を含めてください",
+
+  "passwordTooShort": "短すぎます",
+  "passwordTooWeak": "弱い",
+  "passwordMedium": "普通",
+  "passwordStrong": "強い",
+
+  "errorPasswordLength": "パスワードは8文字以上必要です",
+  "errorPasswordWeak": "より強いパスワードを選択してください",
+
+  "errorGeneric": "登録に失敗しました もう一度お試しください",
+
+  "createAccount": "アカウント作成",
+
+  "appName": "Vaultara",
+  "authTagline":
+    "パスポート 免許証 カードなどの重要な情報を管理するあなた専用のハブ",
+  "tabSignIn": "サインイン",
+  "tabCreateAccount": "アカウント作成",
+  "signInFooterText":
+    "サインインして個人用の Vaultara スペースにアクセスし更新を管理しましょう",
+  "createAccountFooterText":
+    "重要なリマインダーをバックアップし必要なときにアクセスするために Vaultara アカウントを作成しましょう",
+  "emailNotFound": "無効なメールアドレスです。\nこのメールでVaultaraのアカウントは存在しません",
+  "incorrectPassword": "パスワードが間違っています",
+  "emailLabel": "メールアドレス",
+  "passwordLabel": "パスワード",
+  "signIn": "ログイン",
+  "categoryPersonalIdentification": "個人身分証明",
+  "categoryDrivingAndVehicles": "運転・車両",
+  "categoryTravelAndImmigration": "渡航・出入国",
+  "categoryBankingAndCards": "銀行・カード",
+  "categoryInsuranceAndCover": "保険・補償",
+  "categoryHealthAndMedical": "健康・医療",
+  "categoryWorkAndProfessional": "仕事・専門",
+  "categoryPropertyAndHousing": "不動産・住居",
+  "categoryHouseholdAndUtilities": "家庭・公共料金",
+
+  "subcategoryPassports": "パスポート",
+  "subcategoryIdCards": "身分証明書",
+  "subcategoryResidencePermits": "滞在許可証",
+
+  "subcategoryDrivingLicences": "運転免許証",
+  "subcategoryVehicleRegistrations": "車両登録",
+  "subcategoryRoadworthyCertificates": "車検証明書",
+  "subcategoryVehicleInspectionCertificates": "車両検査証明書",
+
+  "subcategoryVisas": "ビザ",
+  "subcategoryStudyPermits": "留学許可",
+  "subcategoryWorkPermits": "就労許可",
+  "subcategoryTravelInsuranceDocuments": "旅行保険書類",
+
+  "subcategoryDebitAndCreditCards": "デビットカード・クレジットカード",
+  "subcategoryStoreCards": "店舗カード",
+  "subcategoryFuelCards": "燃料カード",
+
+  "subcategoryVehicleInsurances": "自動車保険",
+  "subcategoryPropertyInsurances": "不動産保険",
+  "subcategoryLifeInsurances": "生命保険",
+  "subcategoryHealthInsurances": "医療保険",
+  "subcategoryTravelInsurances": "旅行保険",
+
+  "subcategoryMedicalPrescriptions": "処方箋",
+  "subcategoryOpticalPrescriptions": "眼鏡処方箋",
+  "subcategoryMedicalCertificates": "診断書",
+
+  "subcategoryProfessionalLicences": "専門資格",
+  "subcategoryProfessionalRegistrations": "専門登録",
+  "subcategoryIndustryRegistrations": "業界登録",
+  "subcategoryWorkAccessCards": "職場アクセスカード",
+
+  "subcategoryLeaseAgreements": "賃貸契約書",
+  "subcategoryAccessCardsAndTags": "アクセスカード・タグ",
+  "subcategoryParkingPermits": "駐車許可証",
+  "subcategorySecurityAccessPermits": "セキュリティアクセス許可",
+
+  "subcategoryElectricityAccounts": "電気料金口座",
+  "subcategoryWaterAccounts": "水道料金口座",
+  "subcategoryInternetContracts": "インターネット契約",
+  "subcategorySecurityServiceContracts": "警備サービス契約",
+  
+  "searchCategories": "カテゴリを検索",
+  "filterAll": "すべて",
+  "filterPreset": "既定",
+  "filterCustom": "カスタム",
+  "addCategoryTitle": "カテゴリを追加",
+  "customLabel": "カスタム",
+  "subcategoriesLabel": "サブカテゴリ",
+  "itemsLabel": "項目",
+  "itemsExpiring": "{days}日以内に期限切れの項目 {count} 件",
+  "@itemsExpiring": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "pinnedEssentials": "ピン留めされたカテゴリ",
+  "pinnedHint": "よく使用するカテゴリをピン留めして、一覧の上部に表示します。",
+  "noCategoriesFound": "カテゴリが見つかりません",
+  
+  "searchGroups": "グループを検索",
+  "addGroupTitle": "グループを追加",
+  "basicPlanGroupInfo": "現在はベーシックプランをご利用中です。\nこのカテゴリの事前設定グループを閲覧できます。\n独自のグループを作成するには、プレミアムにアップグレードしてください。",
+  "groupDeleted": "グループが削除されました",
+  "undo": "元に戻す",
+  "groupStats": "{items} 件 • {expiring} 件が {days} 日以内に期限切れ",
+  "@groupStats": {
+    "placeholders": {
+      "items": { "type": "int" },
+      "expiring": { "type": "int" },
+      "days": { "type": "int" }
+    }
+  },
+  "groupTapHint": "タップして、このグループにアイテムを追加・管理します。",
+  "itemsInGroup": "このグループのアイテム",
+  "itemsInGroupHint": "重要なアイテムと有効期限を管理し、期限内に更新できるようにします。",
+  "searchItems": "アイテムを検索",
+  "filterAll": "すべて",
+  "filterExpiringWithin": "{days}日以内に期限切れ",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "filterExpired": "期限切れ",
+  "addItem": "アイテムを追加",
+  "noItemsYet": "まだアイテムがありません。",
+
+  "statusExpired": "期限切れ",
+  "statusExpiresToday": "本日期限切れ",
+  "statusExpiresInOneDay": "明日期限切れ",
+  "statusExpiresInDays": "{days}日後に期限切れ",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "statusValid": "有効",
+
+  "deleteCategoryTitle": "カテゴリを削除",
+  "deleteCategoryMessage": "カテゴリ「{name}」を削除してもよろしいですか？",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteGroupTitle": "グループを削除",
+  "deleteGroupMessage": "グループ「{name}」を削除してもよろしいですか？",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "deleteItemTitle": "アイテムを削除",
+  "deleteItemMessage": "「{name}」を削除してもよろしいですか？",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "cancel": "キャンセル",
+  "delete": "削除",
+  "homeWelcomeFirstTitle": "{name}さん、ようこそ",
+"@homeWelcomeFirstTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeBackTitle": "{name}さん、お帰りなさい",
+"@homeWelcomeBackTitle": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+
+"homeWelcomeSubtitleGeneric":
+  "Vaultaraは重要な有効期限を管理し、見逃しを防ぎます。",
+
+"homeWelcomeSubtitleFirst":
+  "ご利用ありがとうございます。Vaultaraは重要な日付や記録を安全な場所で整理します。",
+
+"homeWelcomeSubtitleBack":
+  "またお会いできて嬉しいです。Vaultaraはいつでも重要な日付や記録を確認できます。",
+  "insightEmptyTitle": "まだ何も追加されていません",
+  "insightEmptyBody": "重要な日付を管理し始めると、Vaultara が期限を先回りしてサポートします。",
+
+  "insightExpiresTodayTitle": "「{name}」は本日が期限です",
+  "insightExpiresTodayBody": "今確認しておくと正確さを保てます。",
+
+  "insightExpiresTomorrowTitle": "「{name}」は明日が期限です",
+  "insightExpiresTomorrowBody": "今見直しておくと後で楽になります。",
+
+  "insightExpiresSoonTitle": "「{name}」は {date} に期限を迎えます",
+  "insightExpiresSoonBody": "早めに対応すると安心です。",
+
+  "insightNextExpiryTitle": "次の期限は「{name}」({date})です",
+  "insightNextExpiryBody": "今すぐの対応は不要です。",
+
+  "insightClusteredTitle": "{month} 頃に期限が集中しています",
+  "insightClusteredBody": "まとめて確認すると効率的です。",
+
+  "insightTopCategoryTitle": "最も多くの項目は {category} にあります",
+  "insightTopCategoryBody": "ここを見直すと効果的です。",
+
+  "insightStableTitle": "すべて順調です",
+  "insightStableBody": "注意が必要な期限は現在ありません。",
+
+  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
+  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
+  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
+  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
+  "homeWelcomeTitle": "ようこそ",
+  "summaryAllTitle": "すべての項目",
+"summaryAllCaption": "Vaultaraで管理中",
+"summarySoonTitle": "まもなく期限切れ",
+"summarySoonCaption": "30日以内",
+"summaryWeekTitle": "今週",
+"summaryWeekCaption": "7日以内に期限切れ",
+"summaryExpiredTitle": "期限切れ",
+"summaryExpiredCaption": "有効期限を過ぎています",
+"stabilityStableTitle": "すべて安定しています",
+"stabilityStableBody": "記録には即時的または累積的なリスクは見られません。",
+
+"stabilityDecliningTitle": "安定性が低下しています",
+"stabilityDecliningBody": "一部の項目は期限切れで、他の項目も期限が近づいています。",
+
+"stabilityWeakenedTitle": "安定性が弱まっています",
+"stabilityWeakenedBody": "期限切れの記録が全体的な信頼性を低下させています。",
+
+"stabilityPressureTitle": "負荷が高まっています",
+"stabilityPressureBody": "安定性を維持するため、複数の記録にまもなく対応が必要です。",
+"editorNotes": "メモ",
+"notesHint": "メモを入力",
+"editorReminderTitle": "リマインダー",
+"editorReminderNone": "リマインダーなし",
+"editorReminderOnExpiry": "有効期限当日",
+"editorReminder7Days": "有効期限の7日前",
+"editorReminder30Days": "有効期限の30日前",
+"editorReminderCustom": "カスタム",
+"daysBeforeExpiry": "有効期限までの日数",
+"reminderStage0Title": "有効期限のお知らせ",
+"reminderStage0Body": "{firstName}さん、{itemName}はあと{days}日で期限切れになります。",
+"@reminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"reminderStage1Title": "フォローアップ通知",
+"reminderStage1Body": "{firstName}さん、{itemName}はまだ更新されていません。",
+"@reminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderStage2Title": "期限が近づいています",
+"reminderStage2Body": "{itemName}の有効期限が近づいています。",
+"@reminderStage2Body": {
+  "placeholders": {
+    "itemName": { "type": "String" }
+  }
+},
+
+"reminderFinalTitle": "最終通知",
+"reminderFinalBody": "{firstName}さん、今すぐ{itemName}を更新してください。",
+"@reminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"coverageBalanceTitle": "カバレッジのバランス",
+"coverageAllRepresented": "すべてのカテゴリに項目が含まれています。",
+"coverageMissingNamed": "{count} 件のカテゴリに記録がありません: {names}。",
+"coverageMissingSummary": "{count} 件のカテゴリにレコードが追加されていません。{names} など、他に {remaining} 件があります。",
+
+"@coverageMissingNamed": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" }
+  }
+},
+"@coverageMissingSummary": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "names": { "type": "String" },
+    "remaining": { "type": "int" }
+  }
+},
+"usePasswordInstead": "パスワードを使用",
+"signInWithBiometrics": "生体認証でサインイン",
+"enableBiometricsTitle": "生体認証を有効にする",
+"enableBiometricsBody": "指紋または顔認証を使用して Vaultara を保護します。",
+"enableBiometricsReason": "Vaultara の生体認証ロック解除を有効にします。",
+"notNow": "後で",
+"useBiometrics": "生体認証を使用",
+"recordsCalendarIntro":
+  "有効期限の確認方法を選択してください。\n\n• 今日から何日先まで確認するか入力します。\n• またはカレンダーから特定の日付を選択します。\n\nVaultara は、その日に有効期限を迎える記録を表示します。",
+
+"showingRecordsRelative": "{time}後に期限切れになる記録を表示しています",
+"@showingRecordsRelative": {
+  "placeholders": { "time": { "type": "String" } }
+},
+
+"showingRecordsExact": "選択した日に期限切れとなる記録を表示しています",
+"noRecordsOnDate": "その日に期限切れとなる記録はありません。",
+
+"recordEditorAddTitle": "記録を追加",
+"recordEditorEditTitle": "記録を編集",
+
+"editorRecordName": "記録名",
+"editorRecordNameHint": "記録名を入力してください",
+"recordEditorErrorName": "記録名は必須です",
+"@recordsExpiring": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+"@recordsGroupStats": {
+  "placeholders": {
+    "records": { "type": "int" },
+    "expiring": { "type": "int" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordsGroupTapHint":
+  "このグループに記録を追加して管理するにはタップしてください。",
+
+"recordsInGroup": "このグループの記録",
+"recordsInGroupHint":
+  "各記録の有効期限を管理して、期限切れ前に更新できます。",
+
+"searchRecords": "記録を検索",
+"addRecord": "記録を追加",
+"noRecordsYet": "まだ記録がありません。",
+
+"deleteRecordTitle": "記録を削除",
+
+"recordsInsightClusteredTitle":
+  "{month}頃に複数の記録が期限切れになります",
+"@recordsInsightClusteredTitle": {
+  "placeholders": { "month": { "type": "String" } }
+},
+
+"recordsInsightTopCategoryTitle":
+  "最も多くの記録が{category}に含まれています",
+"@recordsInsightTopCategoryTitle": {
+  "placeholders": { "category": { "type": "String" } }
+},
+
+"summaryAllRecordsTitle": "すべての記録",
+
+"recordsStabilityDecliningBody":
+  "一部の記録はすでに期限切れで、さらに期限が近づいています。",
+
+"recordsCoverageAllRepresented":
+  "すべてのカテゴリに記録があります。",
+
+"recordReminderStage0Body":
+  "{firstName}さん、{recordName}は{days}日後に期限切れになります。",
+"@recordReminderStage0Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+
+"recordReminderStage1Body":
+  "{firstName}さん、{recordName}はまだ更新されていません。",
+"@recordReminderStage1Body": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+
+"recordReminderStage2Body":
+  "{recordName}の有効期限が近づいています。",
+"@recordReminderStage2Body": {
+  "placeholders": { "recordName": { "type": "String" } }
+},
+
+"recordReminderFinalBody":
+  "{firstName}さん、今すぐ{recordName}を更新してください。",
+"@recordReminderFinalBody": {
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "recordName": { "type": "String" }
+  }
+},
+"noGroupFound": "まだグループがありません",
+"recordsExpiring": "{count, plural, one {{days}日以内に1件の記録が期限切れ} other {{days}日以内に{count}件の記録が期限切れ}}",
+"recordsGroupStats": "{records, plural, one {1件の記録} other {{records}件の記録}} • {expiring}件が{days}日以内",
+"groupLabel": "{count, plural, one {{count} グループ} other {{count} グループ}}",
+"recordsLabel": "{count, plural, one {{count} レコード} other {{count} レコード}}",
+"forgotPassword": "パスワードを忘れましたか？",
+  "forgotPasswordTitle": "パスワードのリセット",
+  "forgotPasswordBody": "メールアドレスを入力すると、パスワードをリセットするリンクを送信します。",
+  "sendResetLink": "リンクを送信",
+  "passwordResetEmailSent": "パスワードリセット用のメールを送信しました。",
+  "verifyEmailToContinue": "サインインする前にメールアドレスを確認してください",
+  "changeEmailTitle": "メールアドレスを変更",
+"newEmailHint": "新しいメールアドレスを入力してください",
+"sendVerificationEmail": "確認メールを送信",
+"deleteAccountTitle": "アカウントを削除",
+"deleteAccountWarning": "この操作により、アカウントとすべての保存されたデータが完全に削除されます。\nこの操作は元に戻せません。",
+"deleteAccountConfirm": "アカウントを完全に削除",
+"supportTitle": "サポート",
+"supportSubtitle": "サポートが必要な場合や質問がある場合はご連絡ください。",
+"supportEmailSubject": "Vaultara サポートリクエスト",
+"supportEmailError": "メールアプリを開けません。",
+"passwordResetEmailFailed": "パスワードリセットメールを送信できませんでした。",
+"loggedInPasswordResetBody": "パスワードリセットのリンクを次の宛先に送信します:\n{email}",
+"@loggedInPasswordResetBody": {
+  "description": "Informs the user that a password reset email will be sent",
+  "placeholders": { "email": { "type": "String" }} },
+  "accountManagementTitle": "アカウント管理",
+"changeEmailTitle": "メールアドレスを変更",
+"changeEmailSubtitle": "アカウントに関連付けられたメールを更新します。",
+"changePasswordTitle": "パスワードを変更",
+"changePasswordSubtitle": "安全にパスワードを変更するためのリンクをメールで送信します。",
+"deleteAccountTitle": "アカウントを削除",
+"deleteAccountSubtitle": "Vaultaraアカウントを完全に削除します。",
+"biometricAuthReason": "アカウントにアクセスするために認証してください",
+"verifyEmailTitle": "メールアドレスを確認してください",
+"verifyEmailBody": "確認用のメールを受信トレイに送信しました。開いてメールアドレスを確認し、その後ここに戻って続行してください。",
+"verifyEmailConfirmedButton": "メールを確認しました",
+"verifyEmailResendButton": "確認メールを再送信",
+"verifyEmailSending": "送信中...",
+"navHome": "ホーム",
+"navCategories": "カテゴリ",
+"navInsights": "分析",
+"navCalendar": "カレンダー",
+"tutorialHomeSearch": "検索バーを使用して、追跡している任意の記録をすばやく見つけてください。",
+"tutorialHomeFab": "ここに最初の記録を追加します。\n所属先を選び、任意のメモを追加し、有効期限を選択してください。",
+"tutorialHomeSummary": "記録を追加するにつれて、このセクションは期限切れ間近または期限切れの項目を見つけるのに役立ちます。",
+"tutorialHomeInsight": "このスマートな分析は、パターンと今後の期限を強調表示します。\nスピーカーアイコンをタップして音声で聞くことができます。",
+"tutorialHomeCoverage": "カバレッジバランスは、記録がどれだけ均等に分布しているかを示します。\n高いバランスは、ギャップが少ないことを示します。",
+"tutorialHomeStability": "安定性は、記録が時間とともにどれだけ信頼できるかを示します。\n期限切れや期限が近い項目は安定性を低下させる可能性があります。",
+"tutorialCancel": "キャンセル",
+"tutorialNext": "次へ",
+"tutorialEnd": "チュートリアルを終了",
+"softDeleteCategory": "カテゴリ",
+"softDeleteGroup": "グループ",
+"softDeleteRecord": "記録",
+"softDeleteTitle": "{type}を最近削除した項目に移動",
+"softDeleteMessage": "{type}「{name}」は最近削除した項目に移動されます。\n\n30日以内に復元できます。その後は完全に削除されます。",
+"softDeleteMove": "移動",
+"@softDeleteTitle": { "placeholders": { "type": {} } },
+"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
+ "recentlyDeletedTitle": "最近削除された項目",
+  "categories": "カテゴリ",
+  "groups": "グループ",
+  "records": "記録",
+  "restore": "復元",
+  "deletePermanently": "完全に削除",
+
+  "recentlyDeletedBanner": "削除された {type} は30日間保存されます。",
+  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
+
+  "searchDeletedHint": "削除された {type} を検索",
+  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
+
+  "noDeletedItems": "削除された {type} はありません",
+  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
+  "categoriesHint": "カテゴリをタップしてグループを表示し、記録を管理します。",
+  "groupsHint": "グループはこのカテゴリ内で記録を整理します。グループをタップして記録を管理してください。",
+  "notLoggedIn": "ログインしていません",
+"recordsInsideGroupHint": "これはこのグループ内の記録です。",
+"snackMovedToRecentlyDeleted": "\"{name}\" を「最近削除した項目」に移動しました",
+"@snackMovedToRecentlyDeleted": {
+  "description": "Snackbar when an item is moved to recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackDeletedSuccessfully": "\"{name}\" を削除しました",
+"@snackDeletedSuccessfully": {
+  "description": "Snackbar when an item is permanently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+},
+"snackUpdatedSuccessfully": "\"{name}\" を更新しました",
+"@snackUpdatedSuccessfully": {
+  "description": "Snackbar when an item is updated",
+  "placeholders": { "name": { "type": "String", "example": "Visa" } }
+},
+"snackAddedSuccessfully": "\"{name}\" を追加しました",
+"@snackAddedSuccessfully": {
+  "description": "Snackbar when an item is added",
+  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+},
+"snackRestoredSuccessfully": "\"{name}\" を復元しました",
+"@snackRestoredSuccessfully": {
+  "description": "Snackbar when an item is restored from recently deleted",
+  "placeholders": { "name": { "type": "String", "example": "Passport" } }
+},
+"snackFreeLimitReached": "無料上限に達しました（{current}/{limit}）。さらに追加するにはアップグレードしてください。",
+"@snackFreeLimitReached": {
+  "description": "Snackbar when free plan limit is reached",
+  "placeholders": {
+    "current": { "type": "int","example": "3"},
+    "limit": { "type": "int"}
+  }
+},
+"globalSearchTitle": "すべての記録を検索",
+"globalSearchHint": "記録名、カテゴリ、またはグループを入力",
+"globalSearchNoMatches": "検索条件に一致する記録はありません。",
+"snackNoRecordsToSearch": "検索できる記録がありません。いくつか記録を追加すると、Vaultara が自動的にインデックスします。",
+"recoveryCentreTitle": "復元センター",
+"recoveryCentreSubtitle": "削除した記録を復元するか、完全に削除します。",
+"plan_premium": "プレミアム",
+"plan_free": "無料",
+"profile_app_settings_title": "アプリ設定",
+"profile_privacy_security_title": "プライバシーとセキュリティ",
+"profile_biometric_on": "このデバイスで生体認証ロックが有効です。",
+"profile_biometric_off": "生体認証ロックは無効です。",
+"profile_biometric_enable_reason": "生体認証ロックを有効にするため、本人確認を行ってください。",
+"profile_biometric_disable_reason": "生体認証ロックを無効にするため、本人確認を行ってください。",
+"profile_account_management_title": "アカウント管理",
+"profile_account_management_subtitle": "メール、パスワードの変更、またはアカウント削除。",
+"profile_premium_active_title": "プレミアム有効",
+"profile_premium_upgrade_title": "プレミアムにアップグレード",
+"profile_premium_active_subtitle": "高度なリマインダーが利用可能です。",
+"profile_premium_upgrade_subtitle": "高度なリマインダーと無制限の整理機能を利用できます。",
+"profile_manage_cancel_hint": "Google Playでいつでも管理または解約できます。",
+"profile_manage_subscription_button": "定期購入を管理",
+"plansTitle": "プランを選択",
+"plansTrialBanner": "7日間の無料トライアルを開始。\nいつでも解約できます。",
+"plansLoading": "読み込み中…",
+"plansStartFreeTrial": "無料で開始",
+"plansNoChargeTodayFooter": "7日間無料 · 本日は請求なし",
+
+"planFreeTitle": "無料",
+"planFreeSubtitle": "はじめての方に",
+"planPremiumMonthlyTitle": "プレミアム（月額）",
+"planPremiumYearlyTitle": "プレミアム（年額）",
+"planPerMonth": "月ごと",
+"planPerYear": "年ごと",
+
+"planBadgeCurrent": "現在のプラン",
+"planBadgePopular": "人気",
+"planBadgeBestValue": "最もお得",
+
+"planYouAreOnThisPlan": "このプランを利用中です。",
+
+"planFeatureUpToRecords": "最大{count}件の記録",
+"@planFeatureUpToRecords": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeatureCustomCategoriesUpTo": "カスタムカテゴリ（最大{count}）",
+"@planFeatureCustomCategoriesUpTo": {
+  "placeholders": { "count": { "type": "int" } }
+},
+
+"planFeaturePresetSubcategories": "既定のサブカテゴリ",
+"planFeatureCloudStorage": "クラウド保存",
+"planFeatureSmartExpiryInsights": "期限インサイト",
+"planFeatureCoverageBalance": "カバレッジバランス",
+"planFeatureRecordStabilityTracking": "記録の安定性",
+
+"planFeatureUnlimitedRecords": "無制限の記録",
+"planFeatureUnlimitedCategories": "無制限のカテゴリ",
+"planFeatureCustomSubcategories": "カスタムサブカテゴリ",
+"planFeatureMultipleRemindersPerRecord": "複数リマインダー",
+"planFeatureAdvancedReminderTiming": "高度な通知設定",
+"planFeatureAutomaticFollowUps": "自動フォロー通知",
+
+"planFeatureEverythingInMonthly": "月額の全機能",
+"planFeatureSavePercentComparedToMonthly": "月額より{percent}%お得",
+"@planFeatureSavePercentComparedToMonthly": {
+  "placeholders": { "percent": { "type": "int" } }
+},
+
+"planFeatureBestLongTermValue": "長期利用に最適",
+"editorReminderLabel": "リマインダー",
+"editorReminderSelectOptional": "リマインダーを選択（任意）",
+"editorReminderOnExpiry": "有効期限当日",
+"editorReminderDaysBefore": "有効期限の{days}日前",
+"editorFreeItemsCount": "無料記録: {used}/{limit}",
+"editorExpiryPastWarning": "有効期限はすでに過ぎています。",
+"editorExpiryTodayWarning": "この記録は本日が有効期限です。",
+"editorErrorExpiryPast": "有効期限は過去の日付にできません。",
+"@editorReminderDaysBefore": {
+  "description": "Reminder summary showing number of days before expiry",
+  "placeholders": {
+    "days": { "type": "int", "example": "7" }
+  }
+},
+"@editorFreeItemsCount": {
+  "description": "Shows how many free records have been used out of the allowed limit",
+  "placeholders": {
+    "used": { "type": "int", "example": "3" },
+    "limit": { "type": "int", "example": "5" }
+  }
+},
+"todayInsightsTitle": "今日のインサイト",
+"tutorialBannerTitle": "クイックガイド",
+"tutorialBannerBody": "検索方法、記録の追加、インサイトの意味を1分以内で学べます。",
+"tutorialBannerStart": "チュートリアル開始",
+"tutorialBannerDismiss": "今はしない",
+"authErrorUserDisabled": "このアカウントは無効になっています。",
+"authErrorNetwork": "ネットワークエラー。もう一度お試しください。",
+"authErrorTooManyRequests": "試行回数が多すぎます。後でもう一度お試しください。",
+"authErrorSignInFailed": "サインインに失敗しました。もう一度お試しください。",
+"ok": "OK",
+"snackPremiumEnabled": "プレミアムが有効になりました",
+"snackPremiumRestored": "プレミアムが復元されました",
+"passwordNeedLower": "小文字を含める必要があります",
+"passwordNeedUpper": "大文字を含める必要があります",
+"passwordNeedNumber": "数字を含める必要があります",
+"passwordNeedSymbol": "記号を含める必要があります",
+"confirmIdentityTitle": "本人確認",
+"confirm": "確認",
+"profile_sign_out_title": "サインアウト",
+"profile_sign_out_subtitle": "このデバイスでVaultaraからサインアウト",
+"profile_sign_out_confirm_title": "サインアウトしますか？",
+"profile_sign_out_confirm_body": "アカウントにアクセスするには再度サインインする必要があります。",
+"profile_sign_out_action": "サインアウト",
+"todayInsightsAudioHint": "音声がよろしいですか？スピーカーアイコンを使用してください。",
+"category2Label": "カテゴリー",
+"enable2BiometricsBody": "指紋認証を使用してVaultaraアカウントを保護してください。",
+"snackNotificationsDisabled": "通知は無効になっています。リマインダーを受け取るには有効にしてください。",
+"openSettings": "設定を開く",
+
+"reminderOnExpiryTitle": "本日が期限です",
+"@reminderOnExpiryTitle": {
+  "description": "Title for a notification shown on the day an item expires"
+},
+
+"reminderOnExpiryBody": "こんにちは {firstName}、\"{itemName}\" は本日が期限です。",
+"@reminderOnExpiryBody": {
+  "description": "Notification body shown on the expiry day, addressing the user by first name",
+  "placeholders": {
+    "firstName": { "type": "String" },
+    "itemName": { "type": "String" }
+  }
+},
+"freeCategoriesProgress": "無料カテゴリ: {current}/{limit}",
+"@freeCategoriesProgress": {
+  "description": "無料上限に対して使用済みの無料カテゴリ数を表示します。",
+  "placeholders": {
+    "current": { "type": "int" },
+    "limit": { "type": "int" }
+  }
+},
+"addNotesHint": "メモを追加（任意）",
+"apply": "適用",
+"smartInsightExpiresTodayHeading": "本日有効期限",
+"smartInsightExpiresTodaySingleBody": "{name} は本日有効期限を迎えます。最新の状態を保つため、今すぐ対応してください。",
+"@smartInsightExpiresTodaySingleBody": {
+  "placeholders": {
+    "name": { "type": "String" }
+  }
+},
+"smartInsightExpiresTodayMultiBody": "{names} と他 {extra} 件の書類が本日有効期限を迎えます。",
+"@smartInsightExpiresTodayMultiBody": {
+  "placeholders": {
+    "names": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightSilentRiskHeading": "注意が必要です",
+"smartInsightSilentRiskBody": "{name} はあと {days} 日で期限切れになりますが、リマインダーが設定されていません。内容が正しいか確認してください。",
+"@smartInsightSilentRiskBody": {
+  "placeholders": {
+    "name": { "type": "String" },
+    "days": { "type": "int" }
+  }
+},
+"smartInsightRenewalTwinHeading": "複数の更新が近づいています",
+"smartInsightRenewalTwinBodyTwo": "{a} と {b} は3週間以内に期限を迎えます。早めに計画しましょう。",
+"@smartInsightRenewalTwinBodyTwo": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyThree": "{a}、{b}、{c} はすべて3週間以内に期限を迎えます。早めに計画しましょう。",
+"@smartInsightRenewalTwinBodyThree": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "c": { "type": "String" }
+  }
+},
+"smartInsightRenewalTwinBodyMany": "{a}、{b} と他 {extra} 件の書類が3週間以内に期限を迎えます。早めに計画しましょう。",
+"@smartInsightRenewalTwinBodyMany": {
+  "placeholders": {
+    "a": { "type": "String" },
+    "b": { "type": "String" },
+    "extra": { "type": "int" }
+  }
+},
+"smartInsightClusterHeading": "期限が集中しています",
+"smartInsightClusterBody": "{category} カテゴリの {count} 件の書類が今後2か月以内に期限を迎えます。まとめて対応することを検討してください。",
+"@smartInsightClusterBody": {
+  "placeholders": {
+    "count": { "type": "int" },
+    "category": { "type": "String" }
+  }
+},
+"smartInsightQuietPeriodHeading": "しばらく期限はありません",
+"smartInsightQuietPeriodBody": "今後 {days} 日間は期限切れがありません。次回の更新日は {firstDate} です。",
+"@smartInsightQuietPeriodBody": {
+  "placeholders": {
+    "days": { "type": "int" },
+    "firstDate": { "type": "String" }
+  }
+},
+"smartInsightAllCaughtUpHeading": "すべて最新です",
+"smartInsightAllCaughtUpBody": "今後の {count} 件の期限にはすべてリマインダーが設定されています。他に注意が必要なものはありません。",
+"@smartInsightAllCaughtUpBody": {
+  "placeholders": {
+    "count": { "type": "int" }
+  }
+},
+"smartInsightAllCaughtUpNoUpcomingBody": "すべて最新です。現在、注意が必要なものはありません。",
+"smartInsightNoRecordsHeading": "最初の記録を追加",
+"smartInsightNoRecordsBody": "書類の管理を始めると、Vaultara がここにスマートなインサイトを表示します。",
+"expiryTimelineTitle": "有効期限タイムライン",
+"expiryTimelineSubtitle": "月をタップして、その月に期限切れになるレコードを表示",
+"expiryTimelineDetailCount": "{count}件のレコード",
+"@expiryTimelineDetailCount": {
+  "placeholders": { "count": { "type": "int" } }
+},
+"summaryUpcomingTitle": "近日中",
+"summaryUpcomingCaption": "30日以内",
+"summaryUrgentTitle": "緊急",
+"summaryUrgentCaption": "7日以内"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
