@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/security/services/security_events.dart';
 
 const String kBiometricsEnabledKey = 'biometricsEnabled';
+const String kIsNewUserKey = 'isNewUser';
 
 class BiometricOnboardingService {
   static final LocalAuthentication _auth = LocalAuthentication();
@@ -19,18 +21,20 @@ class BiometricOnboardingService {
     final alreadyEnabled = prefs.getBool(_perUserEnabledKey(uid)) ?? false;
     if (alreadyEnabled) return;
 
-    final canCheck = await _auth.canCheckBiometrics;
     final supported = await _auth.isDeviceSupported();
+    if (!supported) return;
 
-    if (!canCheck || !supported) return;
+    if (!context.mounted) return;
 
     final enable = await _showPrompt(context);
     if (!enable) return;
 
+    if (!context.mounted) return;
+
     final authenticated = await _auth.authenticate(
       localizedReason: AppLocalizations.of(context)!.enableBiometricsReason,
       options: const AuthenticationOptions(
-        biometricOnly: true,
+        biometricOnly: false,
         useErrorDialogs: true,
         stickyAuth: false,
       ),
@@ -39,6 +43,7 @@ class BiometricOnboardingService {
     if (!authenticated) return;
 
     await prefs.setBool(_perUserEnabledKey(uid), true);
+    SecurityEvents.log(SecurityEvents.appLockEnabled);
   }
 
   static Future<bool> _showPrompt(BuildContext context) async {
@@ -50,9 +55,6 @@ class BiometricOnboardingService {
       barrierDismissible: false,
       builder: (_) {
         return AlertDialog(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
           title: Column(
             children: [
               Icon(
