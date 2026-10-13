@@ -63,6 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '14180323356',
     projectId: 'vaultara-f49ab',
     storageBucket: 'vaultara-f49ab.firebasestorage.app',
+    iosClientId: '14180323356-brqpkrfbk1hg90q8cj2f7ch0h8efh2cu.apps.googleusercontent.com',
     iosBundleId: 'com.example.vaultara',
   );
+
 }
