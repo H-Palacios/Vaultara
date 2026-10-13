@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../home_screen.dart';
-import '../categories_screen.dart';
-import '../calendar_screen.dart';
-import '../screens/insights/insights_screen.dart';
+import '../features/home/view/home_screen.dart';
+import '../features/records/view/categories/categories_screen.dart';
+import 'package:vaultara/features/calendar/view/calendar_screen.dart';
+import '../features/insights/view/insights_screen.dart';
 
 import 'shell_state.dart';
 
@@ -13,17 +13,15 @@ List<Widget> buildShellPages(ShellState s) => [
         isNewUser: s.isNewUser,
         isPremium: s.isPremium,
         fabKey: s.fabKey,
-        activeTutorialStep: s.tutorialStep,
-        onTutorialStepChanged: (step) => s.setState(() => s.tutorialStep = step),
-        onSearchRectChanged: (r) => s.setState(() => s.searchRect = r),
-        onSummaryRectChanged: (r) => s.setState(() => s.summaryRect = r),
-        onUpgrade: () => s.setState(() => s.isPremium = true),
+        onUpgrade: () => s.update(() => s.isPremium = true),
       ),
       CategoriesScreen(
         key: const ValueKey('categories-screen'),
         isPremium: s.isPremium,
       ),
       InsightsScreen(
+        key: ValueKey('insights-${s.insightsTutorialMode}'),
+        isTutorialMode: s.insightsTutorialMode,
         isPremium: s.isPremium,
       ),
       CalendarScreen(
