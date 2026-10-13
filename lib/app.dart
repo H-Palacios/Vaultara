@@ -1,15 +1,33 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
+import 'dart:async';
+import 'dart:ui' show ImageFilter;
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'package:vaultara/l10n/app_localizations.dart';
 
-import 'auth_gateway_screen.dart';
-import 'verify_email_screen.dart';
-import 'reauthenticate_screen.dart';
+import 'core/analytics/analytics_service.dart';
+import 'core/data/repositories/record_repository.dart';
+import 'features/records/logic/record_lock.dart';
+import 'core/navigation/navigator_key.dart';
+import 'core/theme/app_brand.dart';
+import 'core/theme/app_themes.dart';
+import 'core/theme/theme_preference.dart';
+import 'features/auth/services/biometric_preference.dart';
+import 'features/auth/view/auth_gateway_screen.dart';
+import 'features/auth/view/reauthenticate_screen.dart';
+import 'features/auth/view/verify_email_screen.dart';
+import 'features/billing/services/entitlement_service.dart';
 import 'shell/shell.dart';
-
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+import 'core/l10n/fallback_localizations.dart';
+import 'features/platform/home_widget_sync.dart';
+import 'features/platform/privacy_screen.dart';
+import 'features/platform/sensitive_clipboard.dart';
+import 'features/security/logic/auto_lock.dart';
+import 'features/security/services/auto_lock_preference.dart';
+import 'features/security/services/session_guard.dart';
+import 'features/household/services/household_link_service.dart';
 
 class MainApp extends StatefulWidget {
   const MainApp({super.key});
@@ -19,289 +37,367 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
-  static const String _kNeedsReauthKey = 'needsReauth';
   static const String _kBackgroundAtMsKey = 'backgroundAtMs';
-  static const String _kColdStartMustReauthKey = 'coldStartMustReauth';
-  static const int _kReauthAfterMs = 30 * 60 * 1000;
+  static const Duration _authGrace = Duration(milliseconds: 1200);
+  static const Duration _restoreGrace = Duration(seconds: 6);
+
+  bool _unlocked = false;
+  final Stopwatch _awayWatch = Stopwatch();
+  bool _authSettled = false;
+  Timer? _graceTimer;
+
+  bool? _expectSession;
+  bool _graceExtended = false;
+  bool _gatewayShown = false;
+
+  Future<bool>? _bioFuture;
+  String? _bioForUid;
 
   bool _didKickReload = false;
-  bool _checkingReauth = false;
-  bool? _mustReauth;
+  String? _rememberedUid;
+  String? _reconciledUid;
 
-  bool _reauthRouteShown = false;
+  late final _analyticsObserver = AnalyticsService.observer();
+  String? _analyticsUid;
+
+  bool _logoPrecached = false;
 
   @override
   void initState() {
     super.initState();
-    debugPrint('MAIN APP: initState');
     WidgetsBinding.instance.addObserver(this);
-    _setColdStartMustReauthIfSignedIn();
-    _refreshReauthFlag();
+
+    ThemePreference.load();
+    unawaited(PrivacyScreen.load());
+    unawaited(AutoLockPreference.load());
+    HouseholdLinkService.start();
+
+    BiometricPreference.lastUid().then((uid) {
+      _expectSession = uid != null;
+    });
+
+    _graceTimer = Timer(_authGrace, _onGraceExpired);
   }
 
-  Future<void> _setColdStartMustReauthIfSignedIn() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return;
+  void _onGraceExpired() {
+    if (_authSettled || !mounted) return;
 
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_kColdStartMustReauthKey, true);
+    final waitingForRestore = FirebaseAuth.instance.currentUser == null &&
+        (_expectSession ?? true);
 
-    if (!mounted) return;
-    setState(() => _mustReauth = true);
+    if (waitingForRestore && !_graceExtended) {
+      _graceExtended = true;
+      _graceTimer = Timer(_restoreGrace, _onGraceExpired);
+      return;
+    }
+
+    setState(() => _authSettled = true);
   }
 
   @override
   void dispose() {
-    debugPrint('MAIN APP: dispose');
+    _graceTimer?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
+  void _settle() {
+    if (_authSettled) return;
+    _graceTimer?.cancel();
+    _authSettled = true;
+  }
+
+  Future<bool> _biometricsFor(String uid) {
+    if (_bioForUid != uid || _bioFuture == null) {
+      _bioForUid = uid;
+      _bioFuture = BiometricPreference.isEnabledFor(uid);
+    }
+    return _bioFuture!;
+  }
+
+  void _syncAnalyticsUser(User? user) {
+    final uid = user?.uid;
+    if (uid == _analyticsUid) return;
+    _analyticsUid = uid;
+    AnalyticsService.setUserId(null);
+  }
+
+  void _onUserSeen(String uid) {
+    _settle();
+    if (_gatewayShown) {
+      _gatewayShown = false;
+      _unlocked = true;
+    }
+
+    if (_rememberedUid != uid) {
+      _rememberedUid = uid;
+      BiometricPreference.rememberUid(uid);
+      unawaited(SessionGuard.start(uid));
+    }
+
+    if (_reconciledUid != uid) {
+      _reconciledUid = uid;
+      EntitlementService.instance.reconcileOnStartup();
+    }
+  }
+
+  void _onNoUser() {
+    if (_reconciledUid == null && _rememberedUid == null) return;
+
+    _rememberedUid = null;
+    _reconciledUid = null;
+    _unlocked = false;
+    _bioFuture = null;
+    _bioForUid = null;
+    EntitlementService.instance.resetForSignOut();
+    SessionGuard.stop();
+    unawaited(HomeWidgetSync.clear());
+  }
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    debugPrint('MAIN APP: lifecycle = $state');
+    PrivacyScreen.onLifecycle(state);
 
     if (state == AppLifecycleState.paused ||
-        state == AppLifecycleState.inactive ||
+        state == AppLifecycleState.hidden ||
         state == AppLifecycleState.detached) {
-      _markBackgroundTimeIfSignedIn();
+      RecordLock.forgetAll();
+      _markBackgroundTime();
+      return;
     }
 
     if (state == AppLifecycleState.resumed) {
-      _refreshReauthFlag();
       _didKickReload = false;
-      _reauthRouteShown = false;
+      SensitiveClipboard.onResumed();
+      _relockIfStale();
+      unawaited(RecordRepository.rollRepeatingRecords());
+      final ctx = navigatorKey.currentContext;
+      if (ctx != null && FirebaseAuth.instance.currentUser != null) {
+        unawaited(HomeWidgetSync.update(ctx));
+      }
     }
   }
 
-  Future<void> _markBackgroundTimeIfSignedIn() async {
-    final user = FirebaseAuth.instance.currentUser;
-    debugPrint('MAIN APP: _markBackgroundTimeIfSignedIn user=${user?.uid}');
-    if (user == null) return;
+  Future<void> _markBackgroundTime() async {
+    if (FirebaseAuth.instance.currentUser == null) return;
 
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(
-      _kBackgroundAtMsKey,
-      DateTime.now().millisecondsSinceEpoch,
-    );
-    debugPrint('MAIN APP: backgroundAtMs set');
-  }
+    _awayWatch
+      ..reset()
+      ..start();
 
-  Future<void> _refreshReauthFlag() async {
-    if (_checkingReauth) {
-      debugPrint('MAIN APP: _refreshReauthFlag skipped (already checking)');
-      return;
-    }
-    _checkingReauth = true;
-
-    debugPrint('MAIN APP: _refreshReauthFlag start');
     try {
       final prefs = await SharedPreferences.getInstance();
-
-      final user = FirebaseAuth.instance.currentUser;
-      if (user == null) {
-        await prefs.setBool(_kNeedsReauthKey, false);
-        await prefs.remove(_kBackgroundAtMsKey);
-        await prefs.remove(_kColdStartMustReauthKey);
-        if (!mounted) return;
-        setState(() => _mustReauth = false);
-        debugPrint('MAIN APP: no user, _mustReauth=false');
-        return;
-      }
-
-      final bool coldStartMustReauth =
-          prefs.getBool(_kColdStartMustReauthKey) ?? false;
-
-      final int? bgMs = prefs.getInt(_kBackgroundAtMsKey);
-      final int nowMs = DateTime.now().millisecondsSinceEpoch;
-
-      final bool timeBasedReauth =
-          bgMs != null && (nowMs - bgMs) >= _kReauthAfterMs;
-
-      final bool shouldReauth = coldStartMustReauth || timeBasedReauth;
-
-      await prefs.setBool(_kNeedsReauthKey, shouldReauth);
-
-      if (!mounted) return;
-      setState(() => _mustReauth = shouldReauth);
-      debugPrint('MAIN APP: _mustReauth state set = $_mustReauth');
-    } catch (e) {
-      debugPrint('MAIN APP: _refreshReauthFlag error: $e');
-    } finally {
-      _checkingReauth = false;
-      debugPrint('MAIN APP: _refreshReauthFlag end');
-    }
+      await prefs.setInt(
+        _kBackgroundAtMsKey,
+        DateTime.now().millisecondsSinceEpoch,
+      );
+    } catch (_) {}
   }
 
-  Future<void> _clearNeedsReauth() async {
-    debugPrint('MAIN APP: _clearNeedsReauth start');
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_kNeedsReauthKey, false);
-    await prefs.remove(_kBackgroundAtMsKey);
-    await prefs.remove(_kColdStartMustReauthKey);
-    debugPrint('MAIN APP: needsReauth set false');
+  Future<void> _relockIfStale() async {
+    if (!_unlocked) return;
+    if (FirebaseAuth.instance.currentUser == null) return;
+
+    if (!_awayWatch.isRunning) return;
+    final elapsed = _awayWatch.elapsedMilliseconds;
+    _awayWatch
+      ..stop()
+      ..reset();
+
+    final delay = AutoLockPreference.delay.value;
+    var stale = AutoLock.shouldLock(awayMs: elapsed, delay: delay);
+    if (!stale) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final bgMs = prefs.getInt(_kBackgroundAtMsKey);
+        if (bgMs != null) {
+          final away = DateTime.now().millisecondsSinceEpoch - bgMs;
+          stale = AutoLock.shouldLock(awayMs: away, delay: delay);
+        }
+      } catch (_) {}
+    }
+    if (!stale) return;
+
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+    var lockOn = false;
+    try {
+      lockOn = await BiometricPreference.isEnabledFor(uid);
+    } catch (_) {}
+    if (!lockOn) return;
+
+    if (!mounted) return;
+    _bioForUid = uid;
+    _bioFuture = Future<bool>.value(true);
+    setState(() => _unlocked = false);
+  }
+
+  Future<void> _onReauthConfirmed() async {
+    _awayWatch
+      ..stop()
+      ..reset();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_kBackgroundAtMsKey);
+    } catch (_) {}
+
+    if (!mounted) return;
+    setState(() => _unlocked = true);
+  }
+
+  void _onSignedInManually() {
+    _settle();
+    _gatewayShown = false;
+    if (mounted) setState(() => _unlocked = true);
   }
 
   void _kickReload(User user) {
     if (_didKickReload) return;
     _didKickReload = true;
 
-    debugPrint('MAIN APP: _kickReload scheduled for uid=${user.uid}');
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       try {
-        debugPrint('MAIN APP: user.reload() start');
         await user.reload();
-        debugPrint('MAIN APP: user.reload() done');
-      } catch (e) {
-        debugPrint('MAIN APP: user.reload() error: $e');
-      }
+      } catch (_) {}
     });
   }
 
-  void _showReauthOverlay() {
-    if (_reauthRouteShown) return;
-    _reauthRouteShown = true;
-
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      final nav = navigatorKey.currentState;
-      if (nav == null) return;
-
-      await nav.push(
-        MaterialPageRoute(
-          builder: (_) => ReauthenticateScreen(
-            onConfirmed: () async {
-              await _clearNeedsReauth();
-              if (!mounted) return;
-              setState(() => _mustReauth = false);
-            },
+  Widget _splash() => Scaffold(
+        backgroundColor: AppBrand.navy,
+        body: Center(
+          child: Image.asset(
+            AppBrand.logoAsset,
+            width: 140,
           ),
         ),
       );
 
-      _reauthRouteShown = false;
-    });
-  }
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<ThemeMode>(
+      valueListenable: ThemePreference.mode,
+      builder: (context, themeMode, _) {
+        return MaterialApp(
+          navigatorKey: navigatorKey,
+          navigatorObservers: [_analyticsObserver],
+          builder: (context, child) {
+            if (!_logoPrecached) {
+              _logoPrecached = true;
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (context.mounted) {
+                  precacheImage(AssetImage(AppBrand.logoAsset), context);
+                }
+              });
+            }
+            return Stack(
+              fit: StackFit.expand,
+              children: [
+                child!,
+                ValueListenableBuilder<bool>(
+                  valueListenable: PrivacyScreen.coverVisible,
+                  builder: (context, visible, _) =>
+                      visible ? const _PrivacyCover() : const SizedBox.shrink(),
+                ),
+              ],
+            );
+          },
+          debugShowCheckedModeBanner: false,
+          title: 'Vaultara',
+          theme: AppThemes.light(),
+          darkTheme: AppThemes.dark(),
+          themeMode: themeMode,
+          localizationsDelegates: const [
+            ...AppLocalizations.localizationsDelegates,
+            ...FallbackLocalizations.delegates,
+          ],
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: StreamBuilder<User?>(
+            stream: FirebaseAuth.instance.authStateChanges(),
+            initialData: FirebaseAuth.instance.currentUser,
+            builder: (context, snap) {
+              if (snap.hasError) {
+                return Scaffold(
+                  body: Center(
+                    child: Text(AppLocalizations.of(context)!.verifyCodeFailed),
+                  ),
+                );
+              }
 
-  // -------- LIGHT THEME --------
-  ThemeData _buildLightTheme() {
-    return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.light,
-      scaffoldBackgroundColor: const Color(0xFFF5F7FA),
-      colorScheme: const ColorScheme(
-        brightness: Brightness.light,
-        primary: Color(0xFF00AAFF),         // blue
-        onPrimary: Colors.white,
-        secondary: Color(0xFF7B2FFF),       // purple
-        onSecondary: Colors.white,
-        surface: Color(0xFFFFFFFF),         // white cards & nav
-        onSurface: Color(0xFF0A0E1A),       // dark navy text
-        background: Color(0xFFF5F7FA),      // soft off-white
-        onBackground: Color(0xFF0A0E1A),
-        error: Color(0xFFFF4D4D),
-        onError: Colors.white,
-      ),
-      bottomAppBarTheme: const BottomAppBarThemeData(
-        color: Color(0xFFFFFFFF),
-      ),
+              final user = snap.data;
+
+              _syncAnalyticsUser(user);
+
+              if (user == null) {
+                _onNoUser();
+
+                if (!_authSettled) return _splash();
+
+                _didKickReload = false;
+                _gatewayShown = true;
+                BiometricPreference.forgetUid();
+                return AuthGatewayScreen(onAuthenticated: _onSignedInManually);
+              }
+
+              _kickReload(user);
+
+              final refreshedUser = FirebaseAuth.instance.currentUser ?? user;
+
+              if (!refreshedUser.emailVerified) {
+                _settle();
+
+                if (_gatewayShown) {
+                  return AuthGatewayScreen(
+                    onAuthenticated: _onSignedInManually,
+                  );
+                }
+
+                return VerifyEmailScreen(onAuthenticated: _onSignedInManually);
+              }
+
+              _onUserSeen(user.uid);
+
+              if (_unlocked) {
+                return Shell(key: ValueKey(refreshedUser.uid));
+              }
+
+              return FutureBuilder<bool>(
+                future: _biometricsFor(refreshedUser.uid),
+                builder: (context, bioSnap) {
+                  if (bioSnap.connectionState != ConnectionState.done) {
+                    return _splash();
+                  }
+
+                  if (bioSnap.data == true) {
+                    return ReauthenticateScreen(
+                      onConfirmed: _onReauthConfirmed,
+                    );
+                  }
+
+                  return Shell(key: ValueKey(refreshedUser.uid));
+                },
+              );
+            },
+          ),
+        );
+      },
     );
   }
+}
 
-  // -------- DARK THEME --------
-  ThemeData _buildDarkTheme() {
-    return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.dark,
-      scaffoldBackgroundColor: const Color(0xFF0A0E1A),
-      colorScheme: const ColorScheme(
-        brightness: Brightness.dark,
-        primary: Color(0xFF00AAFF),         // blue
-        onPrimary: Colors.white,
-        secondary: Color(0xFF7B2FFF),       // purple
-        onSecondary: Colors.white,
-        surface: Color(0xFF141928),         // lifted card colour
-        onSurface: Color(0xFFFFFFFF),       // white text on cards
-        background: Color(0xFF0A0E1A),      // dark navy background
-        onBackground: Color(0xFFFFFFFF),
-        error: Color(0xFFFF4D4D),
-        onError: Colors.white,
-      ),
-      bottomAppBarTheme: const BottomAppBarThemeData(
-        color: Color(0xFF141928),
-      ),
-    );
-  }
+class _PrivacyCover extends StatelessWidget {
+  const _PrivacyCover();
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('MAIN APP: build');
-    return MaterialApp(
-      navigatorKey: navigatorKey,
-      debugShowCheckedModeBanner: false,
-      title: 'Vaultara',
-      theme: _buildLightTheme(),
-      darkTheme: _buildDarkTheme(),
-      themeMode: ThemeMode.light, // change to ThemeMode.system or ThemeMode.dark later
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: StreamBuilder<User?>(
-        stream: FirebaseAuth.instance.authStateChanges(),
-        initialData: FirebaseAuth.instance.currentUser,
-        builder: (context, snap) {
-          debugPrint(
-            'AUTH STREAM: connection=${snap.connectionState} user=${snap.data?.uid} error=${snap.error}',
-          );
-
-          if (snap.hasError) {
-            return Scaffold(
-              body: Center(child: Text('Auth error: ${snap.error}')),
-            );
-          }
-
-          final user = snap.data;
-
-          if (user == null) {
-            debugPrint('AUTH STREAM: user is null -> AuthGatewayScreen');
-            _didKickReload = false;
-            _reauthRouteShown = false;
-            return AuthGatewayScreen(onAuthenticated: () {});
-          }
-
-          debugPrint('AUTH STREAM: user signed in -> continue flow');
-
-          _kickReload(user);
-
-          final refreshedUser = FirebaseAuth.instance.currentUser ?? user;
-          debugPrint(
-            'AUTH FLOW: refreshedUser=${refreshedUser.uid} emailVerified=${refreshedUser.emailVerified}',
-          );
-
-          if (!refreshedUser.emailVerified) {
-            debugPrint('AUTH FLOW: email not verified -> VerifyEmailScreen');
-            return VerifyEmailScreen(onAuthenticated: () {});
-          }
-
-          final mustReauth = _mustReauth;
-
-          if (mustReauth == null) {
-            return const Scaffold(
-              body: Center(child: CircularProgressIndicator()),
-            );
-          }
-
-          if (mustReauth) {
-            return ReauthenticateScreen(
-              onConfirmed: () async {
-                await _clearNeedsReauth();
-                if (!mounted) return;
-                setState(() => _mustReauth = false);
-              },
-            );
-          }
-
-          debugPrint('AUTH FLOW: returning Shell (keyed by uid)');
-          return Shell(key: ValueKey(refreshedUser.uid));
-        },
+    return ClipRect(
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
+        child: ColoredBox(
+          color: AppBrand.navy.withValues(alpha: 0.94),
+          child: Center(
+            child: Image.asset(AppBrand.logoAsset, width: 120),
+          ),
+        ),
       ),
     );
   }
