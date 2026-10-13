@@ -1,0 +1,11 @@
+{
+  "page": "Vaultara pozivnica",
+  "title": "Pozvani ste u aplikaciju Vaultara",
+  "intro": "Vaultara prati vaša dokumenta i obaveštava vas pre nego što isteknu.",
+  "codeLabel": "Kod pozivnice vašeg prijatelja",
+  "copy": "Kopiraj kod",
+  "copied": "Kopirano",
+  "nocode": "Ovom linku nedostaje kod. Zamolite prijatelja da ga pošalje ponovo.",
+  "store": "Preuzmite na Google Play",
+  "note": "Instalirajte aplikaciju i napravite nalog. Zatim otvorite Profil, dodirnite Pozovi prijatelje i unesite kod u roku od 14 dana. Oboje dobijate jedan besplatan mesec Premiuma kada vaša e-pošta bude potvrđena i dodate prvi zapis."
+}

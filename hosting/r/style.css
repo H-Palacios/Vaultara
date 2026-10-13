@@ -1,0 +1,10 @@
+body{margin:0;font-family:sans-serif;background:#10162E;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}
+.card{padding:32px;max-width:420px}
+h1{font-size:22px;margin:0 0 8px}
+p{color:#b8c0d4;font-size:15px;line-height:1.5}
+.label{margin:24px 0 0;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.code{font-size:40px;font-weight:700;letter-spacing:10px;color:#00AAFF;margin:8px 0 16px;word-break:break-all}
+button,a.primary{display:inline-block;font-size:16px;font-weight:700;padding:14px 32px;border-radius:999px;cursor:pointer;text-decoration:none}
+a.primary{background:#00AAFF;color:#fff;border:none;margin-top:24px}
+button.secondary{background:transparent;color:#00AAFF;border:2px solid #00AAFF}
+.note{font-size:13px;margin-top:24px}

@@ -1,0 +1,11 @@
+{
+  "page": "Pozvánka do Vaultara",
+  "title": "Pozvali vás do Vaultara",
+  "intro": "Vaultara sleduje vaše dokumenty a upozorní vás, kým im vyprší platnosť.",
+  "codeLabel": "Kód pozvánky od vášho priateľa",
+  "copy": "Kopírovať kód",
+  "copied": "Skopírované",
+  "nocode": "Tomuto odkazu chýba kód. Požiadajte priateľa, aby ho poslal znova.",
+  "store": "Stiahnuť z Google Play",
+  "note": "Nainštalujte aplikáciu a vytvorte si účet. Potom otvorte Profil, ťuknite na Pozvať priateľov a do 14 dní zadajte kód. Obaja získate mesiac Premium zadarmo, keď overíte e-mail a pridáte prvý záznam."
+}

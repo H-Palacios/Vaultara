@@ -1,0 +1,11 @@
+{
+"page": "Zaproszenie do Vaultara",
+"title": "Masz zaproszenie do Vaultara",
+"intro": "Vaultara pilnuje twoich dokumentów i powiadamia cię, zanim wygasną.",
+"codeLabel": "Kod zaproszenia od znajomego",
+"copy": "Kopiuj kod",
+"copied": "Skopiowano",
+"nocode": "W tym linku brakuje kodu. Poproś znajomego, aby wysłał go jeszcze raz.",
+"store": "Pobierz w Google Play",
+"note": "Zainstaluj aplikację i utwórz konto. Potem otwórz Profil, dotknij Zaproś znajomych i wpisz kod w ciągu 14 dni. Oboje dostajecie jeden darmowy miesiąc Premium, gdy twój e-mail zostanie zweryfikowany i dodasz pierwszy rekord."
+}
