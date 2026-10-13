@@ -1,0 +1,4 @@
+enum RecordEditorMode {
+  global,
+  scoped,
+}
