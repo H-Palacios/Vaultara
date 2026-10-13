@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vaultara.app",
+      "sha256_cert_fingerprints": [
+        "25:C9:B1:9F:0F:99:2F:96:6B:96:78:C7:15:36:83:36:87:9F:8B:47:36:39:34:73:5C:B1:33:F9:F4:70:5B:F0",
+        "76:07:EE:19:B4:15:39:15:CB:3F:D5:36:2F:F9:F9:8A:E3:41:4A:44:D6:3E:60:59:4F:73:4E:EF:95:32:11:F6"
+      ]
+    }
+  }
+]
