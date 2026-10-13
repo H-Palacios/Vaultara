@@ -1,23 +1,44 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:quick_actions/quick_actions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vaultara/features/referrals/services/referral_link_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-import 'shell.dart';
-import 'shell_pages.dart';
-import 'shell_fab.dart';
+import 'package:vaultara/shell/shell.dart';
+import 'package:vaultara/shell/shell_pages.dart';
+import 'package:vaultara/shell/shell_fab.dart';
+import 'package:vaultara/shell/bottom_nav_bar.dart';
 
-import '../tutorial_overlay.dart';
-import '../bottom_nav_bar.dart';
-import '../home_screen.dart';
-import '../plan_repository.dart';
-import '../item_repository.dart';
-import '../tracked_item.dart';
-import '../services/reminder_scheduler.dart';
+import 'package:vaultara/features/home/view/home_screen.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+
+import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/features/reminders/services/notification_action_router.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
+import 'package:vaultara/features/travel/data/trip_repository.dart';
+import 'package:vaultara/features/family/logic/family_reminder_sync.dart';
+import 'package:vaultara/features/platform/home_widget_sync.dart';
+import 'package:vaultara/features/household/data/household_repository.dart';
+import 'package:vaultara/features/household/services/household_link_service.dart';
+import 'package:vaultara/features/household/view/join_household_sheet.dart';
+import 'package:vaultara/features/assistant/services/share_intake.dart';
+import 'package:vaultara/features/assistant/logic/share_intake_handler.dart';
+import 'package:vaultara/features/security/services/security_startup.dart';
 
 const String kIsNewUserKey = 'isNewUser';
 const String kUserFirstNameKey = 'userFirstName';
+const String _kShortcutAdd = 'add_record';
+const String _kShortcutScan = 'scan_record';
 
 class ShellState extends State<Shell> {
+  static ShellState? current;
+
   int index = 0;
   bool isPremium = false;
   bool isReady = false;
@@ -28,11 +49,7 @@ class ShellState extends State<Shell> {
 
   TutorialStep? tutorialStep;
 
-  Rect? searchRect;
-  Rect? summaryRect;
-  Rect? insightRect;
-  Rect? coverageRect;
-  Rect? stabilityRect;
+  bool insightsTutorialMode = false;
 
   final fabKey = GlobalKey();
   final homeKey = GlobalKey<HomeScreenState>();
@@ -41,18 +58,104 @@ class ShellState extends State<Shell> {
 
   bool get tutorialActive => tutorialStep != null;
 
+  void update(VoidCallback fn) {
+    if (mounted) setState(fn);
+  }
+
   @override
   void initState() {
     super.initState();
+    current = this;
+    PeopleRepository.start();
+    TripRepository.start();
+    FamilyReminderSync.attach();
+    ReferralLinkService.attach();
+    HouseholdRepository.start();
+    HouseholdLinkService.start();
+    HouseholdLinkService.pendingCode.addListener(_onJoinCode);
+    ShareIntake.start();
+    ShareIntake.pending.addListener(_onShared);
     _preload();
     _listenToPlan();
+    TutorialController.instance.addListener(_onTutorialChanged);
+    TutorialController.instance.register(TutorialStep.addRecordFab, fabKey);
   }
+
+  @override
+  void dispose() {
+    if (current == this) current = null;
+    ReferralLinkService.detach();
+    HouseholdLinkService.pendingCode.removeListener(_onJoinCode);
+    ShareIntake.pending.removeListener(_onShared);
+    TutorialController.instance.removeListener(_onTutorialChanged);
+    TutorialController.instance.unregister(TutorialStep.addRecordFab);
+    super.dispose();
+  }
+
+  void _onTutorialChanged() {
+    if (!mounted) return;
+    final step = TutorialController.instance.value;
+    setState(() {
+      tutorialStep = step;
+      if (step == null) insightsTutorialMode = false;
+    });
+    if (step == null) {
+      _onJoinCode();
+      _onShared();
+    }
+  }
+
+  bool _handlingShare = false;
+
+  void _onShared() {
+    if (!mounted || !isReady || tutorialActive || _handlingShare) return;
+    if (ShareIntake.pending.value == null) return;
+    _handlingShare = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      try {
+        try {
+          await RecordRepository.loadForCurrentUser();
+          await _planKnown.future.timeout(const Duration(seconds: 6));
+        } catch (_) {}
+        if (!mounted || tutorialActive) return;
+        final payload = ShareIntake.take();
+        if (payload == null) return;
+        ShareIntakeHandler.handle(context, this, payload);
+      } finally {
+        _handlingShare = false;
+      }
+    });
+  }
+
+  void _onJoinCode() {
+    if (!mounted || !isReady || tutorialActive) return;
+    if (HouseholdLinkService.pendingCode.value == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || tutorialActive) return;
+      final code = HouseholdLinkService.take();
+      if (code == null) return;
+      showJoinHouseholdSheet(context, initialCode: code);
+    });
+  }
+
+  final Completer<void> _planKnown = Completer<void>();
 
   void _listenToPlan() {
     PlanRepository.premiumStream().listen((value) {
+      if (!_planKnown.isCompleted) _planKnown.complete();
       if (!mounted) return;
       setState(() => isPremium = value);
     });
+  }
+
+  Future<void> _runShortcut(String type) async {
+    try {
+      await RecordRepository.loadForCurrentUser();
+      await _planKnown.future.timeout(const Duration(seconds: 6));
+    } catch (_) {}
+    if (!mounted || tutorialActive) return;
+    if (type == _kShortcutAdd) openAddRecord(context, this);
+    if (type == _kShortcutScan) openAddRecord(context, this, autoScan: true);
   }
 
   Future<void> _rescheduleAllRemindersOnce() async {
@@ -63,15 +166,16 @@ class ShellState extends State<Shell> {
     final firstName =
         _userFirstName.trim().isEmpty ? ' ' : _userFirstName.trim();
 
-    final snapshot = ItemRepository.storeSnapshot;
+    final snapshot = RecordRepository.storeSnapshot;
 
     for (final byCategory in snapshot.values) {
       for (final list in byCategory.values) {
-        for (final TrackedItem item in list) {
+        for (final TrackedItem record in list) {
           await ReminderScheduler.tryScheduleForItem(
             loc: loc,
-            item: item,
+            item: record,
             firstName: firstName,
+            keepSnooze: true,
           );
         }
       }
@@ -85,14 +189,39 @@ class ShellState extends State<Shell> {
 
     if (!mounted) return;
 
-    tutorialStep = null;
+    TutorialController.instance.end();
     setState(() => isReady = true);
+    NotificationActionRouter.drain();
+    unawaited(_setUpShortcuts());
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      homeKey.currentState?.refreshHeader();
+      // Renamed from refreshHeader: it reloads the whole HomeOverview, not
+      // just a header.
+      homeKey.currentState?.refreshOverview();
       if (!mounted) return;
+      _onJoinCode();
+      _onShared();
+      unawaited(HomeWidgetSync.update(context));
+      unawaited(SecurityStartup.run(context));
       await _rescheduleAllRemindersOnce();
     });
+  }
+
+  Future<void> _setUpShortcuts() async {
+    if (!mounted) return;
+    final loc = AppLocalizations.of(context)!;
+    const actions = QuickActions();
+    try {
+      await actions.initialize((type) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          unawaited(_runShortcut(type));
+        });
+      });
+      await actions.setShortcutItems(<ShortcutItem>[
+        ShortcutItem(type: _kShortcutAdd, localizedTitle: loc.addRecord),
+        ShortcutItem(type: _kShortcutScan, localizedTitle: loc.shortcutScan),
+      ]);
+    } catch (_) {}
   }
 
   void onNavTap(int i) {
@@ -100,8 +229,17 @@ class ShellState extends State<Shell> {
     setState(() => index = i);
   }
 
+  void startInsightsTutorial() {
+    setState(() {
+      insightsTutorialMode = true;
+      index = 2;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    TutorialController.instance.attachRoot(context);
+
     if (!isReady) {
       return const Scaffold(
         backgroundColor: Colors.white,
@@ -111,110 +249,19 @@ class ShellState extends State<Shell> {
 
     final primaryColour = Theme.of(context).colorScheme.primary;
 
-    return Stack(
-      children: [
-        Scaffold(
-          body: IndexedStack(
-            index: index,
-            children: buildShellPages(this),
-          ),
-          bottomNavigationBar: BottomNavBar(
-            currentIndex: index,
-            isTutorialActive: tutorialActive,
-            primaryColour: primaryColour,
-            onTap: onNavTap,
-          ),
-          floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-          floatingActionButton: buildShellFab(context, this, primaryColour),
-        ),
-        if (_shouldShowTutorial())
-          TutorialOverlay(
-            step: tutorialStep!,
-            highlightRect: _resolveTutorialRect(),
-            onNext: _advanceTutorial,
-            onCancel: () => setState(() => tutorialStep = null),
-          ),
-      ],
+    return Scaffold(
+      body: IndexedStack(
+        index: index,
+        children: buildShellPages(this),
+      ),
+      bottomNavigationBar: BottomNavBar(
+        currentIndex: index,
+        isTutorialActive: tutorialActive,
+        primaryColour: primaryColour,
+        onTap: onNavTap,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: buildShellFab(context, this, primaryColour),
     );
-  }
-
-  Rect _rectFromKey(GlobalKey key) {
-    final ctx = key.currentContext;
-    if (ctx == null) return Rect.zero;
-    final ro = ctx.findRenderObject();
-    if (ro is! RenderBox || !ro.hasSize) return Rect.zero;
-    final pos = ro.localToGlobal(Offset.zero);
-    return pos & ro.size;
-  }
-
-  Rect _resolveTutorialRect() {
-    final step = tutorialStep;
-    if (step == null) return Rect.zero;
-
-    switch (step) {
-      case TutorialStep.homeFab:
-        return _rectFromKey(fabKey);
-
-      case TutorialStep.homeSearch:
-        return searchRect ?? Rect.zero;
-
-      case TutorialStep.homeSummary:
-        return summaryRect ?? Rect.zero;
-
-      case TutorialStep.homeInsight:
-        return insightRect ?? Rect.zero;
-
-      case TutorialStep.homeCoverage:
-        return coverageRect ?? Rect.zero;
-
-      case TutorialStep.homeStability:
-        return stabilityRect ?? Rect.zero;
-    }
-  }
-
-  bool _shouldShowTutorial() {
-    if (tutorialStep == null) return false;
-
-    final r = _resolveTutorialRect();
-    if (r == Rect.zero) return false;
-
-    return true;
-  }
-
-  void _advanceTutorial() {
-    switch (tutorialStep) {
-      case TutorialStep.homeSearch:
-        setState(() => tutorialStep = TutorialStep.homeFab);
-        break;
-
-      case TutorialStep.homeFab:
-        setState(() => tutorialStep = TutorialStep.homeSummary);
-        break;
-
-      case TutorialStep.homeSummary:
-        setState(() => tutorialStep = TutorialStep.homeInsight);
-        break;
-
-      case TutorialStep.homeInsight:
-        setState(() => tutorialStep = null);
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (!mounted) return;
-          setState(() {
-            tutorialStep = TutorialStep.homeCoverage;
-          });
-        });
-        break;
-
-      case TutorialStep.homeCoverage:
-        setState(() => tutorialStep = TutorialStep.homeStability);
-        break;
-
-      case TutorialStep.homeStability:
-        setState(() => tutorialStep = null);
-        break;
-
-      default:
-        break;
-    }
   }
 }
