@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Xasuusinta guriga",
+  "escalationBodyDays": "{name} wuxuu dhacayaa {days} maalmood gudahood, cidina wali ma cusboonaysiin.",
+  "escalationBodyTomorrow": "{name} wuxuu dhacayaa berri, cidina wali ma cusboonaysiin.",
+  "escalationBodyToday": "{name} wuxuu dhacayaa maanta, cidina wali ma cusboonaysiin.",
+  "escalationBodyYesterday": "{name} wuu dhacay shalay, cidina wali ma cusboonaysiin.",
+  "escalationBodyExpired": "{name} wuu dhacay {days} maalmood ka hor, cidina wali ma cusboonaysiin.",
+  "escalationManyTitle": "Diiwaannada la wadaagay waxay u baahan yihiin cusboonaysiin",
+  "escalationManyBody": "{count} diiwaan oo la wadaagay ayaa dhawaan dhacaya ama dhacay, cidina wali ma cusboonaysiin: {names}.",
+  "namesMore": "{names} iyo {count} kale",
+  "lockedRecord": "Diiwaan xiran",
+  "lockedRecordInList": "diiwaan xiran",
+  "updateReceivedTitle": "Cusboonaysiin la helay",
+  "updateReceivedBody": "Cusboonaysiin ayaa laga helay {person} oo ku saabsan {name}. Ka eeg shaashadda Qoyska.",
+  "securityNewSignInTitle": "Gelitaan cusub oo akoonkaaga ah",
+  "securityNewSignInBody": "Akoonkaaga Vaultara waxaa laga soo galay {device}. Haddii aysan adiga ahayn, hubi iimaylkaaga.",
+  "securityNewSignInBodyNoDevice": "Akoonkaaga Vaultara waxaa laga soo galay qalab cusub. Haddii aysan adiga ahayn, hubi iimaylkaaga."
+}

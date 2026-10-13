@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Tunatarwar iyali",
+  "escalationBodyDays": "{name} zai ƙare cikin kwanaki {days} kuma har yanzu babu wanda ya sabunta shi.",
+  "escalationBodyTomorrow": "{name} zai ƙare gobe kuma har yanzu babu wanda ya sabunta shi.",
+  "escalationBodyToday": "{name} zai ƙare yau kuma har yanzu babu wanda ya sabunta shi.",
+  "escalationBodyYesterday": "{name} ya ƙare jiya kuma har yanzu babu wanda ya sabunta shi.",
+  "escalationBodyExpired": "{name} ya ƙare kwanaki {days} da suka wuce kuma har yanzu babu wanda ya sabunta shi.",
+  "escalationManyTitle": "Rikodin da aka raba suna buƙatar sabuntawa",
+  "escalationManyBody": "Rikodin da aka raba {count} za su ƙare nan ba da jimawa ba ko sun riga sun ƙare, kuma har yanzu babu wanda ya sabunta su: {names}.",
+  "namesMore": "{names} da wasu {count}",
+  "lockedRecord": "Rikodi mai kullewa",
+  "lockedRecordInList": "rikodi mai kullewa",
+  "updateReceivedTitle": "An karɓi sabuntawa",
+  "updateReceivedBody": "{person} ya aiko da sabuntawa na {name}. Duba shi a shafin Iyali.",
+  "securityNewSignInTitle": "Sabon shiga a asusunka",
+  "securityNewSignInBody": "An shiga asusunka na Vaultara a {device}. Idan ba kai ba ne, duba imel ɗinka.",
+  "securityNewSignInBodyNoDevice": "An shiga asusunka na Vaultara a sabuwar na'ura. Idan ba kai ba ne, duba imel ɗinka."
+}

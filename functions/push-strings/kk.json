@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Үй-іші еске салғышы",
+  "escalationBodyDays": "{name} мерзімі {days} күнде бітеді, бірақ оны әлі ешкім жаңартқан жоқ.",
+  "escalationBodyTomorrow": "{name} мерзімі ертең бітеді, бірақ оны әлі ешкім жаңартқан жоқ.",
+  "escalationBodyToday": "{name} мерзімі бүгін бітеді, бірақ оны әлі ешкім жаңартқан жоқ.",
+  "escalationBodyYesterday": "{name} мерзімі кеше бітті, бірақ оны әлі ешкім жаңартқан жоқ.",
+  "escalationBodyExpired": "{name} мерзімі {days} күн бұрын бітті, бірақ оны әлі ешкім жаңартқан жоқ.",
+  "escalationManyTitle": "Бөлісілген жазбаларды жаңарту керек",
+  "escalationManyBody": "{count} бөлісілген жазбаның мерзімі жақында бітеді немесе бітіп қалды, бірақ оларды әлі ешкім жаңартқан жоқ: {names}.",
+  "namesMore": "{names} және тағы {count}",
+  "lockedRecord": "Құлыпталған жазба",
+  "lockedRecordInList": "құлыпталған жазба",
+  "updateReceivedTitle": "Жаңарту алынды",
+  "updateReceivedBody": "{person} {name} үшін жаңарту жіберді. Оны Отбасы экранында қарап шығыңыз.",
+  "securityNewSignInTitle": "Тіркелгіңізге жаңа кіру",
+  "securityNewSignInBody": "Vaultara тіркелгіңізге {device} құрылғысынан кірді. Егер бұл сіз болмасаңыз, электрондық поштаңызды тексеріңіз.",
+  "securityNewSignInBodyNoDevice": "Vaultara тіркелгіңізге жаңа құрылғыдан кірді. Егер бұл сіз болмасаңыз, электрондық поштаңызды тексеріңіз."
+}

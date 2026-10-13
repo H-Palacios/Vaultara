@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Kotitalouden muistutus",
+  "escalationBodyDays": "{name} vanhenee {days} päivän kuluttua, eikä kukaan ole vielä uusinut sitä.",
+  "escalationBodyTomorrow": "{name} vanhenee huomenna, eikä kukaan ole vielä uusinut sitä.",
+  "escalationBodyToday": "{name} vanhenee tänään, eikä kukaan ole vielä uusinut sitä.",
+  "escalationBodyYesterday": "{name} vanheni eilen, eikä kukaan ole vielä uusinut sitä.",
+  "escalationBodyExpired": "{name} vanheni {days} päivää sitten, eikä kukaan ole vielä uusinut sitä.",
+  "escalationManyTitle": "Jaetut tietueet täytyy uusia",
+  "escalationManyBody": "{count} jaettua tietuetta vanhenee pian tai on jo vanhentunut, eikä kukaan ole vielä uusinut niitä: {names}.",
+  "namesMore": "{names} ja {count} muuta",
+  "lockedRecord": "Lukittu tietue",
+  "lockedRecordInList": "lukittu tietue",
+  "updateReceivedTitle": "Päivitys vastaanotettu",
+  "updateReceivedBody": "{person} lähetti päivityksen kohteelle {name}. Tarkista se Perhe-näytössä.",
+  "securityNewSignInTitle": "Uusi kirjautuminen tilillesi",
+  "securityNewSignInBody": "Vaultara-tilillesi kirjauduttiin laitteella {device}. Jos tämä et ollut sinä, tarkista sähköpostisi.",
+  "securityNewSignInBodyNoDevice": "Vaultara-tilillesi kirjauduttiin uudella laitteella. Jos tämä et ollut sinä, tarkista sähköpostisi."
+}

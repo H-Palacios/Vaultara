@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Hushållspåminnelse",
+  "escalationBodyDays": "{name} går ut om {days} dagar och ingen har förnyat den ännu.",
+  "escalationBodyTomorrow": "{name} går ut imorgon och ingen har förnyat den ännu.",
+  "escalationBodyToday": "{name} går ut idag och ingen har förnyat den ännu.",
+  "escalationBodyYesterday": "{name} gick ut igår och ingen har förnyat den ännu.",
+  "escalationBodyExpired": "{name} gick ut för {days} dagar sedan och ingen har förnyat den ännu.",
+  "escalationManyTitle": "Delade poster behöver förnyas",
+  "escalationManyBody": "{count} delade poster går snart ut eller har gått ut, och ingen har förnyat dem ännu: {names}.",
+  "namesMore": "{names} och {count} till",
+  "lockedRecord": "En låst post",
+  "lockedRecordInList": "en låst post",
+  "updateReceivedTitle": "Uppdatering mottagen",
+  "updateReceivedBody": "{person} skickade en uppdatering för {name}. Granska den på skärmen Familj.",
+  "securityNewSignInTitle": "Ny inloggning på ditt konto",
+  "securityNewSignInBody": "Någon loggade in på ditt Vaultara-konto på {device}. Om det inte var du, kolla din e-post.",
+  "securityNewSignInBodyNoDevice": "Någon loggade in på ditt Vaultara-konto på en ny enhet. Om det inte var du, kolla din e-post."
+}

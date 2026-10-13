@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Տնային տնտեսության հիշեցում",
+  "escalationBodyDays": "{name}-ի ժամկետը լրանում է {days} օրից, և դեռ ոչ ոք այն չի նորացրել։",
+  "escalationBodyTomorrow": "{name}-ի ժամկետը լրանում է վաղը, և դեռ ոչ ոք այն չի նորացրել։",
+  "escalationBodyToday": "{name}-ի ժամկետը լրանում է այսօր, և դեռ ոչ ոք այն չի նորացրել։",
+  "escalationBodyYesterday": "{name}-ի ժամկետը լրացել է երեկ, և դեռ ոչ ոք այն չի նորացրել։",
+  "escalationBodyExpired": "{name}-ի ժամկետը լրացել է {days} օր առաջ, և դեռ ոչ ոք այն չի նորացրել։",
+  "escalationManyTitle": "Ընդհանուր գրառումները նորացման կարիք ունեն",
+  "escalationManyBody": "{count} ընդհանուր գրառման ժամկետը շուտով լրանում է կամ արդեն լրացել է, և դեռ ոչ ոք դրանք չի նորացրել՝ {names}։",
+  "namesMore": "{names} և ևս {count}",
+  "lockedRecord": "Կողպված գրառում",
+  "lockedRecordInList": "կողպված գրառում",
+  "updateReceivedTitle": "Թարմացումը ստացվեց",
+  "updateReceivedBody": "{person}-ը {name}-ի համար թարմացում է ուղարկել։ Դիտեք այն Ընտանիք էկրանում։",
+  "securityNewSignInTitle": "Նոր մուտք ձեր հաշիվ",
+  "securityNewSignInBody": "Ձեր Vaultara հաշիվ մուտք են գործել {device} սարքից։ Եթե դա դուք չէիք, ստուգեք ձեր էլ. փոստը։",
+  "securityNewSignInBodyNoDevice": "Ձեր Vaultara հաշիվ մուտք են գործել նոր սարքից։ Եթե դա դուք չէիք, ստուգեք ձեր էլ. փոստը։"
+}

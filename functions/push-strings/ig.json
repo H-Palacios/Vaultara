@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Ncheta ụlọ",
+  "escalationBodyDays": "{name} ga-agwụ n’ime ụbọchị {days} ma onye ọ bụla emegharịbeghị ya.",
+  "escalationBodyTomorrow": "{name} ga-agwụ echi ma onye ọ bụla emegharịbeghị ya.",
+  "escalationBodyToday": "{name} ga-agwụ taa ma onye ọ bụla emegharịbeghị ya.",
+  "escalationBodyYesterday": "{name} gwụrụ ụnyaahụ ma onye ọ bụla emegharịbeghị ya.",
+  "escalationBodyExpired": "{name} gwụrụ ụbọchị {days} gara aga ma onye ọ bụla emegharịbeghị ya.",
+  "escalationManyTitle": "Ndekọ ekesara chọrọ mmegharị",
+  "escalationManyBody": "Ndekọ {count} ekesara na-agba nso ịgwụ ma ọ bụ gwụla, onye ọ bụla emegharịbeghị ha: {names}.",
+  "namesMore": "{names} na {count} ọzọ",
+  "lockedRecord": "Ndekọ a kpọchiri akpọchi",
+  "lockedRecordInList": "ndekọ a kpọchiri akpọchi",
+  "updateReceivedTitle": "Natara mmelite",
+  "updateReceivedBody": "{person} zipụrụ mmelite maka {name}. Lelee ya na ihuenyo Ezinụlọ.",
+  "securityNewSignInTitle": "Nbanye ọhụrụ n'akaụntụ gị",
+  "securityNewSignInBody": "Mmadụ banyere n'akaụntụ Vaultara gị na {device}. Ọ bụrụ na ọ bụghị gị, lelee email gị.",
+  "securityNewSignInBodyNoDevice": "Mmadụ banyere n'akaụntụ Vaultara gị na ngwaọrụ ọhụrụ. Ọ bụrụ na ọ bụghị gị, lelee email gị."
+}

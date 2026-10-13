@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Bîrxistina malê",
+  "escalationBodyDays": "{name} di {days} rojan de bidawî dibe û kesî hê nû nekiriye.",
+  "escalationBodyTomorrow": "{name} sibê bidawî dibe û kesî hê nû nekiriye.",
+  "escalationBodyToday": "{name} îro bidawî dibe û kesî hê nû nekiriye.",
+  "escalationBodyYesterday": "{name} duh bidawî bû û kesî hê nû nekiriye.",
+  "escalationBodyExpired": "{name} {days} roj berê bidawî bû û kesî hê nû nekiriye.",
+  "escalationManyTitle": "Tomarên parvekirî pêdivî bi nûkirinê ne",
+  "escalationManyBody": "{count} tomarên parvekirî nêzîk bidawî dibin an bidawî bûne, û kesî hê nû nekiriye: {names}.",
+  "namesMore": "{names} û {count} yên din",
+  "lockedRecord": "Tomareke kilîtkirî",
+  "lockedRecordInList": "tomareke kilîtkirî",
+  "updateReceivedTitle": "Nûvekirin hat",
+  "updateReceivedBody": "{person} ji bo {name} nûvekirinek şand. Li ser ekrana Malbat kontrol bike.",
+  "securityNewSignInTitle": "Têketineke nû li hesabê te",
+  "securityNewSignInBody": "Li ser {device} têketin li hesabê te yê Vaultara hat kirin. Heke ev ne tu bûyî, e-nameya xwe kontrol bike.",
+  "securityNewSignInBodyNoDevice": "Li ser amûreke nû têketin li hesabê te yê Vaultara hat kirin. Heke ev ne tu bûyî, e-nameya xwe kontrol bike."
+}

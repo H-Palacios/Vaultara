@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Huishoudingherinnering",
+  "escalationBodyDays": "{name} verval oor {days} dae en niemand het dit nog hernu nie.",
+  "escalationBodyTomorrow": "{name} verval môre en niemand het dit nog hernu nie.",
+  "escalationBodyToday": "{name} verval vandag en niemand het dit nog hernu nie.",
+  "escalationBodyYesterday": "{name} het gister verval en niemand het dit nog hernu nie.",
+  "escalationBodyExpired": "{name} het {days} dae gelede verval en niemand het dit nog hernu nie.",
+  "escalationManyTitle": "Gedeelde rekords moet hernu word",
+  "escalationManyBody": "{count} gedeelde rekords verval binnekort of het reeds verval, en niemand het dit nog hernu nie: {names}.",
+  "namesMore": "{names} en {count} meer",
+  "lockedRecord": "'n Gesluite rekord",
+  "lockedRecordInList": "'n gesluite rekord",
+  "updateReceivedTitle": "Opdatering ontvang",
+  "updateReceivedBody": "{person} het 'n opdatering vir {name} gestuur. Gaan dit na op die Gesin-skerm.",
+  "securityNewSignInTitle": "Nuwe aanmelding by jou rekening",
+  "securityNewSignInBody": "Daar is by jou Vaultara-rekening aangemeld op {device}. As dit nie jy was nie, gaan jou e-pos na.",
+  "securityNewSignInBodyNoDevice": "Daar is by jou Vaultara-rekening aangemeld op 'n nuwe toestel. As dit nie jy was nie, gaan jou e-pos na."
+}

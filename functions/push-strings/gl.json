@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Lembrete do fogar",
+  "escalationBodyDays": "{name} caduca en {days} días e aínda ninguén o renovou.",
+  "escalationBodyTomorrow": "{name} caduca mañá e aínda ninguén o renovou.",
+  "escalationBodyToday": "{name} caduca hoxe e aínda ninguén o renovou.",
+  "escalationBodyYesterday": "{name} caducou onte e aínda ninguén o renovou.",
+  "escalationBodyExpired": "{name} caducou hai {days} días e aínda ninguén o renovou.",
+  "escalationManyTitle": "Hai rexistros compartidos que renovar",
+  "escalationManyBody": "{count} rexistros compartidos caducan pronto ou xa caducaron, e aínda ninguén os renovou: {names}.",
+  "namesMore": "{names} e {count} máis",
+  "lockedRecord": "Un rexistro bloqueado",
+  "lockedRecordInList": "un rexistro bloqueado",
+  "updateReceivedTitle": "Actualización recibida",
+  "updateReceivedBody": "{person} enviou unha actualización de {name}. Revisaa na pantalla Familia.",
+  "securityNewSignInTitle": "Novo inicio de sesión na túa conta",
+  "securityNewSignInBody": "Iniciouse sesión na túa conta de Vaultara en {device}. Se non fuches ti, revisa o teu correo electrónico.",
+  "securityNewSignInBodyNoDevice": "Iniciouse sesión na túa conta de Vaultara nun dispositivo novo. Se non fuches ti, revisa o teu correo electrónico."
+}

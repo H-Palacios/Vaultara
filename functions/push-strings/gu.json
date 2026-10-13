@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "પરિવાર માટે રિમાઇન્ડર",
+  "escalationBodyDays": "{name} {days} દિવસમાં સમાપ્ત થાય છે અને હજી કોઈએ તેને રિન્યૂ કર્યું નથી.",
+  "escalationBodyTomorrow": "{name} આવતીકાલે સમાપ્ત થાય છે અને હજી કોઈએ તેને રિન્યૂ કર્યું નથી.",
+  "escalationBodyToday": "{name} આજે સમાપ્ત થાય છે અને હજી કોઈએ તેને રિન્યૂ કર્યું નથી.",
+  "escalationBodyYesterday": "{name} ગઈકાલે સમાપ્ત થયું અને હજી કોઈએ તેને રિન્યૂ કર્યું નથી.",
+  "escalationBodyExpired": "{name} {days} દિવસ પહેલાં સમાપ્ત થયું અને હજી કોઈએ તેને રિન્યૂ કર્યું નથી.",
+  "escalationManyTitle": "શેર કરેલા રેકોર્ડ રિન્યૂ કરવાની જરૂર છે",
+  "escalationManyBody": "{count} શેર કરેલા રેકોર્ડ ટૂંક સમયમાં સમાપ્ત થાય છે અથવા સમાપ્ત થઈ ગયા છે અને હજી કોઈએ તેમને રિન્યૂ કર્યા નથી: {names}.",
+  "namesMore": "{names} અને બીજા {count}",
+  "lockedRecord": "એક લૉક કરેલો રેકોર્ડ",
+  "lockedRecordInList": "એક લૉક કરેલો રેકોર્ડ",
+  "updateReceivedTitle": "અપડેટ મળ્યું",
+  "updateReceivedBody": "{person} એ {name} માટે અપડેટ મોકલ્યું. તેને પરિવાર સ્ક્રીન પર જુઓ.",
+  "securityNewSignInTitle": "તમારા એકાઉન્ટમાં નવું સાઇન-ઇન",
+  "securityNewSignInBody": "તમારા Vaultara એકાઉન્ટમાં {device} પર સાઇન ઇન થયું. જો આ તમે ન હતા, તો તમારો ઇમેઇલ તપાસો.",
+  "securityNewSignInBodyNoDevice": "તમારા Vaultara એકાઉન્ટમાં નવા ડિવાઇસ પર સાઇન ઇન થયું. જો આ તમે ન હતા, તો તમારો ઇમેઇલ તપાસો."
+}

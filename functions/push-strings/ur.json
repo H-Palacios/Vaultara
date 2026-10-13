@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "گھرانے کی یاد دہانی",
+  "escalationBodyDays": "{name} {days} دن میں ختم ہو رہا ہے اور ابھی تک کسی نے اس کی تجدید نہیں کی۔",
+  "escalationBodyTomorrow": "{name} کل ختم ہو رہا ہے اور ابھی تک کسی نے اس کی تجدید نہیں کی۔",
+  "escalationBodyToday": "{name} آج ختم ہو رہا ہے اور ابھی تک کسی نے اس کی تجدید نہیں کی۔",
+  "escalationBodyYesterday": "{name} کل ختم ہو گیا اور ابھی تک کسی نے اس کی تجدید نہیں کی۔",
+  "escalationBodyExpired": "{name} {days} دن پہلے ختم ہو گیا اور ابھی تک کسی نے اس کی تجدید نہیں کی۔",
+  "escalationManyTitle": "مشترکہ ریکارڈز کی تجدید ضروری ہے",
+  "escalationManyBody": "{count} مشترکہ ریکارڈز جلد ختم ہو رہے ہیں یا ختم ہو چکے ہیں اور ابھی تک کسی نے ان کی تجدید نہیں کی: {names}۔",
+  "namesMore": "{names} اور {count} مزید",
+  "lockedRecord": "ایک مقفل ریکارڈ",
+  "lockedRecordInList": "ایک مقفل ریکارڈ",
+  "updateReceivedTitle": "اپ ڈیٹ موصول ہوئی",
+  "updateReceivedBody": "{person} نے {name} کے لیے اپ ڈیٹ بھیجی ہے۔ اسے خاندان اسکرین پر دیکھیں۔",
+  "securityNewSignInTitle": "آپ کے اکاؤنٹ میں نیا سائن ان",
+  "securityNewSignInBody": "آپ کے Vaultara اکاؤنٹ میں {device} پر سائن ان کیا گیا۔ اگر یہ آپ نہیں تھے تو اپنی ای میل چیک کریں۔",
+  "securityNewSignInBodyNoDevice": "آپ کے Vaultara اکاؤنٹ میں ایک نئی ڈیوائس پر سائن ان کیا گیا۔ اگر یہ آپ نہیں تھے تو اپنی ای میل چیک کریں۔"
+}

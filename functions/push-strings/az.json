@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Ev qrupu xatırlatması",
+  "escalationBodyDays": "{name} sənədinin müddəti {days} gün sonra bitir və hələ heç kim onu uzatmayıb.",
+  "escalationBodyTomorrow": "{name} sənədinin müddəti sabah bitir və hələ heç kim onu uzatmayıb.",
+  "escalationBodyToday": "{name} sənədinin müddəti bu gün bitir və hələ heç kim onu uzatmayıb.",
+  "escalationBodyYesterday": "{name} sənədinin müddəti dünən bitib və hələ heç kim onu uzatmayıb.",
+  "escalationBodyExpired": "{name} sənədinin müddəti {days} gün əvvəl bitib və hələ heç kim onu uzatmayıb.",
+  "escalationManyTitle": "Paylaşılan sənədlərin müddəti uzadılmalıdır",
+  "escalationManyBody": "{count} paylaşılan sənədin müddəti tezliklə bitir və ya artıq bitib, hələ heç kim onları uzatmayıb: {names}.",
+  "namesMore": "{names} və daha {count} sənəd",
+  "lockedRecord": "Kilidli sənəd",
+  "lockedRecordInList": "kilidli sənəd",
+  "updateReceivedTitle": "Yeniləmə alındı",
+  "updateReceivedBody": "{person} {name} üçün yeniləmə göndərdi. Onu Ailə ekranında yoxlayın.",
+  "securityNewSignInTitle": "Hesabınıza yeni giriş",
+  "securityNewSignInBody": "Vaultara hesabınıza {device} cihazında daxil olundu. Əgər bu siz deyildinizsə, e-poçtunuzu yoxlayın.",
+  "securityNewSignInBodyNoDevice": "Vaultara hesabınıza yeni cihazda daxil olundu. Əgər bu siz deyildinizsə, e-poçtunuzu yoxlayın."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Ukumbusho wa kaya",
+  "escalationBodyDays": "{name} inaisha muda baada ya siku {days} na bado hakuna aliyeisasisha.",
+  "escalationBodyTomorrow": "{name} inaisha muda kesho na bado hakuna aliyeisasisha.",
+  "escalationBodyToday": "{name} inaisha muda leo na bado hakuna aliyeisasisha.",
+  "escalationBodyYesterday": "{name} iliisha muda jana na bado hakuna aliyeisasisha.",
+  "escalationBodyExpired": "{name} iliisha muda siku {days} zilizopita na bado hakuna aliyeisasisha.",
+  "escalationManyTitle": "Rekodi zilizoshirikiwa zinahitaji kusasishwa",
+  "escalationManyBody": "Rekodi {count} zilizoshirikiwa zinaisha muda hivi karibuni au zimeisha muda, na bado hakuna aliyezisasisha: {names}.",
+  "namesMore": "{names} na {count} zaidi",
+  "lockedRecord": "Rekodi iliyofungwa",
+  "lockedRecordInList": "rekodi iliyofungwa",
+  "updateReceivedTitle": "Usasishaji umepokelewa",
+  "updateReceivedBody": "{person} ametuma usasishaji wa {name}. Uukague kwenye skrini ya Familia.",
+  "securityNewSignInTitle": "Kuingia kupya kwenye akaunti yako",
+  "securityNewSignInBody": "Mtu ameingia kwenye akaunti yako ya Vaultara kwenye {device}. Ikiwa si wewe, angalia barua pepe yako.",
+  "securityNewSignInBodyNoDevice": "Mtu ameingia kwenye akaunti yako ya Vaultara kwenye kifaa kipya. Ikiwa si wewe, angalia barua pepe yako."
+}

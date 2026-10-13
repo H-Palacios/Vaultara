@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "የቤተሰብ አስታዋሽ",
+  "escalationBodyDays": "{name} በ{days} ቀናት ውስጥ ያበቃል እና እስካሁን ማንም አላደሰውም።",
+  "escalationBodyTomorrow": "{name} ነገ ያበቃል እና እስካሁን ማንም አላደሰውም።",
+  "escalationBodyToday": "{name} ዛሬ ያበቃል እና እስካሁን ማንም አላደሰውም።",
+  "escalationBodyYesterday": "{name} ትናንት አብቅቷል እና እስካሁን ማንም አላደሰውም።",
+  "escalationBodyExpired": "{name} ከ{days} ቀናት በፊት አብቅቷል እና እስካሁን ማንም አላደሰውም።",
+  "escalationManyTitle": "የተጋሩ መዝገቦች መታደስ አለባቸው",
+  "escalationManyBody": "{count} የተጋሩ መዝገቦች በቅርቡ ያበቃሉ ወይም አብቅተዋል፣ እና እስካሁን ማንም አላደሳቸውም፦ {names}።",
+  "namesMore": "{names} እና ተጨማሪ {count}",
+  "lockedRecord": "የተቆለፈ መዝገብ",
+  "lockedRecordInList": "የተቆለፈ መዝገብ",
+  "updateReceivedTitle": "ዝማኔ ደርሷል",
+  "updateReceivedBody": "{person} ለ{name} ዝማኔ ልከዋል። በቤተሰብ ማያ ገጽ ላይ ይገምግሙት።",
+  "securityNewSignInTitle": "ወደ መለያዎ አዲስ መግቢያ",
+  "securityNewSignInBody": "በ{device} ላይ ወደ Vaultara መለያዎ ተገብቷል። ይህ እርስዎ ካልሆኑ ኢሜይልዎን ይመልከቱ።",
+  "securityNewSignInBodyNoDevice": "በአዲስ መሣሪያ ላይ ወደ Vaultara መለያዎ ተገብቷል። ይህ እርስዎ ካልሆኑ ኢሜይልዎን ይመልከቱ።"
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Υπενθύμιση νοικοκυριού",
+  "escalationBodyDays": "Το {name} λήγει σε {days} ημέρες και κανείς δεν το έχει ανανεώσει ακόμη.",
+  "escalationBodyTomorrow": "Το {name} λήγει αύριο και κανείς δεν το έχει ανανεώσει ακόμη.",
+  "escalationBodyToday": "Το {name} λήγει σήμερα και κανείς δεν το έχει ανανεώσει ακόμη.",
+  "escalationBodyYesterday": "Το {name} έληξε χθες και κανείς δεν το έχει ανανεώσει ακόμη.",
+  "escalationBodyExpired": "Το {name} έληξε πριν από {days} ημέρες και κανείς δεν το έχει ανανεώσει ακόμη.",
+  "escalationManyTitle": "Οι κοινές εγγραφές χρειάζονται ανανέωση",
+  "escalationManyBody": "{count} κοινές εγγραφές λήγουν σύντομα ή έχουν λήξει και κανείς δεν τις έχει ανανεώσει ακόμη: {names}.",
+  "namesMore": "{names} και άλλες {count}",
+  "lockedRecord": "Μια κλειδωμένη εγγραφή",
+  "lockedRecordInList": "μια κλειδωμένη εγγραφή",
+  "updateReceivedTitle": "Λήφθηκε ενημέρωση",
+  "updateReceivedBody": "Το άτομο {person} έστειλε ενημέρωση για το {name}. Ελέγξτε την στην οθόνη Οικογένεια.",
+  "securityNewSignInTitle": "Νέα σύνδεση στον λογαριασμό σας",
+  "securityNewSignInBody": "Έγινε σύνδεση στον λογαριασμό σας στο Vaultara από {device}. Αν δεν ήσασταν εσείς, ελέγξτε το email σας.",
+  "securityNewSignInBodyNoDevice": "Έγινε σύνδεση στον λογαριασμό σας στο Vaultara από νέα συσκευή. Αν δεν ήσασταν εσείς, ελέγξτε το email σας."
+}

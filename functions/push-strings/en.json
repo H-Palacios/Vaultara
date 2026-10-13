@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Household reminder",
+  "escalationBodyDays": "{name} expires in {days} days and nobody has renewed it yet.",
+  "escalationBodyTomorrow": "{name} expires tomorrow and nobody has renewed it yet.",
+  "escalationBodyToday": "{name} expires today and nobody has renewed it yet.",
+  "escalationBodyYesterday": "{name} expired yesterday and nobody has renewed it yet.",
+  "escalationBodyExpired": "{name} expired {days} days ago and nobody has renewed it yet.",
+  "escalationManyTitle": "Shared records need renewing",
+  "escalationManyBody": "{count} shared records expire soon or have expired, and nobody has renewed them yet: {names}.",
+  "namesMore": "{names} and {count} more",
+  "lockedRecord": "A locked record",
+  "lockedRecordInList": "a locked record",
+  "updateReceivedTitle": "Update received",
+  "updateReceivedBody": "{person} sent an update for {name}. Review it on the Family screen.",
+  "securityNewSignInTitle": "New sign-in to your account",
+  "securityNewSignInBody": "Your Vaultara account was signed in to on {device}. If this was not you, check your email.",
+  "securityNewSignInBodyNoDevice": "Your Vaultara account was signed in to on a new device. If this was not you, check your email."
+}

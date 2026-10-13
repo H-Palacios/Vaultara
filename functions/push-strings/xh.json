@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Isikhumbuzo sekhaya",
+  "escalationBodyDays": "Ukuphelelwa kwe-{name}: iintsuku eziseleyo: {days}. Akukho mntu ovuselele okwangoku.",
+  "escalationBodyTomorrow": "Ukuphelelwa kwe-{name} kungomso kwaye akukho mntu ovuselele okwangoku.",
+  "escalationBodyToday": "Ukuphelelwa kwe-{name} kunamhlanje kwaye akukho mntu ovuselele okwangoku.",
+  "escalationBodyYesterday": "Ukuphelelwa kwe-{name} kwakuzolo kwaye akukho mntu ovuselele okwangoku.",
+  "escalationBodyExpired": "I-{name} iphelelwe (iintsuku ezidlulileyo: {days}) kwaye akukho mntu ovuselele okwangoku.",
+  "escalationManyTitle": "Iirekhodi ezabelanwayo kufuneka zivuselelwe",
+  "escalationManyBody": "Iirekhodi ezabelanwayo eziphelelwa kungekudala okanye eziphelelwe kwaye zingekavuselelwa (inani: {count}): {names}.",
+  "namesMore": "{names} kunye nezinye: {count}",
+  "lockedRecord": "Irekhodi etshixiweyo",
+  "lockedRecordInList": "irekhodi etshixiweyo",
+  "updateReceivedTitle": "Uhlaziyo lufunyenwe",
+  "updateReceivedBody": "U-{person} uthumele uhlaziyo lwe-{name}. Lujonge kwisikrini sikaSapho.",
+  "securityNewSignInTitle": "Ukungena okutsha kwiakhawunti yakho",
+  "securityNewSignInBody": "Kungenwe kwiakhawunti yakho ye-Vaultara ku-{device}. Ukuba ibingengowe, jonga i-imeyile yakho.",
+  "securityNewSignInBodyNoDevice": "Kungenwe kwiakhawunti yakho ye-Vaultara kwisixhobo esitsha. Ukuba ibingengowe, jonga i-imeyile yakho."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Lembrete do agregado familiar",
+  "escalationBodyDays": "{name} expira dentro de {days} dias e ninguém o renovou ainda.",
+  "escalationBodyTomorrow": "{name} expira amanhã e ninguém o renovou ainda.",
+  "escalationBodyToday": "{name} expira hoje e ninguém o renovou ainda.",
+  "escalationBodyYesterday": "{name} expirou ontem e ninguém o renovou ainda.",
+  "escalationBodyExpired": "{name} expirou há {days} dias e ninguém o renovou ainda.",
+  "escalationManyTitle": "Registos partilhados precisam de renovação",
+  "escalationManyBody": "{count} registos partilhados expiram em breve ou já expiraram, e ninguém os renovou ainda: {names}.",
+  "namesMore": "{names} e mais {count}",
+  "lockedRecord": "Um registo bloqueado",
+  "lockedRecordInList": "um registo bloqueado",
+  "updateReceivedTitle": "Atualização recebida",
+  "updateReceivedBody": "{person} enviou uma atualização para {name}. Reveja-a no ecrã Família.",
+  "securityNewSignInTitle": "Novo início de sessão na sua conta",
+  "securityNewSignInBody": "Foi iniciada sessão na sua conta Vaultara em {device}. Se não foi você, verifique o seu email.",
+  "securityNewSignInBodyNoDevice": "Foi iniciada sessão na sua conta Vaultara num novo dispositivo. Se não foi você, verifique o seu email."
+}

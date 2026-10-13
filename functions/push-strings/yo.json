@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Ìránnilétí ilé",
+  "escalationBodyDays": "{name} yóò parí ní ọjọ́ {days} kò sì sí ẹni tó tíì tún un ṣe.",
+  "escalationBodyTomorrow": "{name} yóò parí lọ́la kò sì sí ẹni tó tíì tún un ṣe.",
+  "escalationBodyToday": "{name} yóò parí lónìí kò sì sí ẹni tó tíì tún un ṣe.",
+  "escalationBodyYesterday": "{name} parí lánàá kò sì sí ẹni tó tíì tún un ṣe.",
+  "escalationBodyExpired": "{name} parí ní ọjọ́ {days} sẹ́yìn kò sì sí ẹni tó tíì tún un ṣe.",
+  "escalationManyTitle": "Àwọn igbasilẹ tí a pín nílò àtúnṣe",
+  "escalationManyBody": "Àwọn igbasilẹ tí a pín {count} ń bọ̀ wá parí tàbí wọ́n ti parí, kò sì sí ẹni tó tíì tún wọn ṣe: {names}.",
+  "namesMore": "{names} àti {count} míì",
+  "lockedRecord": "Igbasilẹ tí a tì",
+  "lockedRecordInList": "igbasilẹ tí a tì",
+  "updateReceivedTitle": "A gba àtúnṣe",
+  "updateReceivedBody": "{person} fi àtúnṣe ránṣẹ́ fún {name}. Yẹ̀ ẹ́ wò lórí ojú-ìwé Ẹbí.",
+  "securityNewSignInTitle": "Wíwọlé tuntun sí akọọlẹ rẹ",
+  "securityNewSignInBody": "Ẹnì kan wọlé sí akọọlẹ Vaultara rẹ lórí {device}. Bí kì í bá ṣe ìwọ, ṣàyẹ̀wò imeeli rẹ.",
+  "securityNewSignInBodyNoDevice": "Ẹnì kan wọlé sí akọọlẹ Vaultara rẹ lórí ẹ̀rọ tuntun. Bí kì í bá ṣe ìwọ, ṣàyẹ̀wò imeeli rẹ."
+}

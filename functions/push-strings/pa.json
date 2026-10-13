@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "ਹਾਊਸਹੋਲਡ ਰਿਮਾਈਂਡਰ",
+  "escalationBodyDays": "{name} ਦੀ ਮਿਆਦ {days} ਦਿਨਾਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਇਸ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ।",
+  "escalationBodyTomorrow": "{name} ਦੀ ਮਿਆਦ ਕੱਲ੍ਹ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਇਸ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ।",
+  "escalationBodyToday": "{name} ਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਇਸ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ।",
+  "escalationBodyYesterday": "{name} ਦੀ ਮਿਆਦ ਕੱਲ੍ਹ ਖਤਮ ਹੋ ਗਈ ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਇਸ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ।",
+  "escalationBodyExpired": "{name} ਦੀ ਮਿਆਦ {days} ਦਿਨ ਪਹਿਲਾਂ ਖਤਮ ਹੋ ਗਈ ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਇਸ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ।",
+  "escalationManyTitle": "ਸਾਂਝੇ ਰਿਕਾਰਡਾਂ ਦਾ ਨਵੀਨੀਕਰਨ ਲੋੜੀਂਦਾ ਹੈ",
+  "escalationManyBody": "{count} ਸਾਂਝੇ ਰਿਕਾਰਡਾਂ ਦੀ ਮਿਆਦ ਜਲਦੀ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਜਾਂ ਖਤਮ ਹੋ ਚੁੱਕੀ ਹੈ, ਅਤੇ ਹਾਲੇ ਤੱਕ ਕਿਸੇ ਨੇ ਉਨ੍ਹਾਂ ਦਾ ਨਵੀਨੀਕਰਨ ਨਹੀਂ ਕੀਤਾ: {names}।",
+  "namesMore": "{names} ਅਤੇ {count} ਹੋਰ",
+  "lockedRecord": "ਇੱਕ ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ",
+  "lockedRecordInList": "ਇੱਕ ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ",
+  "updateReceivedTitle": "ਅੱਪਡੇਟ ਮਿਲ ਗਿਆ",
+  "updateReceivedBody": "{person} ਨੇ {name} ਲਈ ਅੱਪਡੇਟ ਭੇਜਿਆ ਹੈ। ਇਸ ਨੂੰ ਪਰਿਵਾਰ ਸਕ੍ਰੀਨ 'ਤੇ ਦੇਖੋ।",
+  "securityNewSignInTitle": "ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਨਵਾਂ ਸਾਈਨ ਇਨ",
+  "securityNewSignInBody": "ਤੁਹਾਡੇ Vaultara ਖਾਤੇ ਵਿੱਚ {device} ਉੱਤੇ ਸਾਈਨ ਇਨ ਕੀਤਾ ਗਿਆ। ਜੇ ਇਹ ਤੁਸੀਂ ਨਹੀਂ ਸੀ, ਤਾਂ ਆਪਣੀ ਈਮੇਲ ਦੇਖੋ।",
+  "securityNewSignInBodyNoDevice": "ਤੁਹਾਡੇ Vaultara ਖਾਤੇ ਵਿੱਚ ਇੱਕ ਨਵੀਂ ਡਿਵਾਈਸ ਉੱਤੇ ਸਾਈਨ ਇਨ ਕੀਤਾ ਗਿਆ। ਜੇ ਇਹ ਤੁਸੀਂ ਨਹੀਂ ਸੀ, ਤਾਂ ਆਪਣੀ ਈਮੇਲ ਦੇਖੋ।"
+}

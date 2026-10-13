@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Påminning for hushaldet",
+  "escalationBodyDays": "{name} går ut om {days} dagar, og ingen har fornya det enno.",
+  "escalationBodyTomorrow": "{name} går ut i morgon, og ingen har fornya det enno.",
+  "escalationBodyToday": "{name} går ut i dag, og ingen har fornya det enno.",
+  "escalationBodyYesterday": "{name} gjekk ut i går, og ingen har fornya det enno.",
+  "escalationBodyExpired": "{name} gjekk ut for {days} dagar sidan, og ingen har fornya det enno.",
+  "escalationManyTitle": "Delte oppføringar må fornyast",
+  "escalationManyBody": "{count} delte oppføringar går snart ut eller har gått ut, og ingen har fornya dei enno: {names}.",
+  "namesMore": "{names} og {count} til",
+  "lockedRecord": "Ei låst oppføring",
+  "lockedRecordInList": "ei låst oppføring",
+  "updateReceivedTitle": "Oppdatering mottatt",
+  "updateReceivedBody": "{person} sende ei oppdatering for {name}. Sjekk ho på Familie-skjermen.",
+  "securityNewSignInTitle": "Ny innlogging på kontoen din",
+  "securityNewSignInBody": "Nokon logga inn på Vaultara-kontoen din på {device}. Om dette ikkje var deg, sjekk e-posten din.",
+  "securityNewSignInBodyNoDevice": "Nokon logga inn på Vaultara-kontoen din på ei ny eining. Om dette ikkje var deg, sjekk e-posten din."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Үй чарбасы үчүн эскертүү",
+  "escalationBodyDays": "{name} мөөнөтү {days} күндөн кийин бүтөт, бирок аны эч ким дагы узарткан жок.",
+  "escalationBodyTomorrow": "{name} мөөнөтү эртең бүтөт, бирок аны эч ким дагы узарткан жок.",
+  "escalationBodyToday": "{name} мөөнөтү бүгүн бүтөт, бирок аны эч ким дагы узарткан жок.",
+  "escalationBodyYesterday": "{name} мөөнөтү кечээ бүттү, бирок аны эч ким дагы узарткан жок.",
+  "escalationBodyExpired": "{name} мөөнөтү {days} күн мурун бүттү, бирок аны эч ким дагы узарткан жок.",
+  "escalationManyTitle": "Бөлүшүлгөн жазууларды узартуу керек",
+  "escalationManyBody": "{count} бөлүшүлгөн жазуунун мөөнөтү жакында бүтөт же бүттү, бирок аларды эч ким дагы узарткан жок: {names}.",
+  "namesMore": "{names} жана дагы {count}",
+  "lockedRecord": "Кулпуланган жазуу",
+  "lockedRecordInList": "кулпуланган жазуу",
+  "updateReceivedTitle": "Жаңыртуу алынды",
+  "updateReceivedBody": "{person} {name} үчүн жаңыртуу жөнөттү. Аны Үй-бүлө экранынан карап чыгыңыз.",
+  "securityNewSignInTitle": "Каттоо эсебиңизге жаңы кирүү",
+  "securityNewSignInBody": "Vaultara каттоо эсебиңизге {device} түзмөгүнөн кирилди. Эгер бул сиз болбосоңуз, электрондук почтаңызды текшериңиз.",
+  "securityNewSignInBodyNoDevice": "Vaultara каттоо эсебиңизге жаңы түзмөктөн кирилди. Эгер бул сиз болбосоңуз, электрондук почтаңызды текшериңиз."
+}

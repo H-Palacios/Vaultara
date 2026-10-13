@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Háztartási emlékeztető",
+  "escalationBodyDays": "{name} {days} nap múlva lejár, és még senki nem újította meg.",
+  "escalationBodyTomorrow": "{name} holnap lejár, és még senki nem újította meg.",
+  "escalationBodyToday": "{name} ma lejár, és még senki nem újította meg.",
+  "escalationBodyYesterday": "{name} tegnap lejárt, és még senki nem újította meg.",
+  "escalationBodyExpired": "{name} {days} napja lejárt, és még senki nem újította meg.",
+  "escalationManyTitle": "Megújításra váró közös bejegyzések",
+  "escalationManyBody": "{count} közös bejegyzés hamarosan lejár vagy már lejárt, és még senki nem újította meg őket: {names}.",
+  "namesMore": "{names} és még {count}",
+  "lockedRecord": "Egy zárolt bejegyzés",
+  "lockedRecordInList": "egy zárolt bejegyzés",
+  "updateReceivedTitle": "Frissítés érkezett",
+  "updateReceivedBody": "{person} frissítést küldött ehhez: {name}. Tekintse át a Család képernyőn.",
+  "securityNewSignInTitle": "Új bejelentkezés a fiókjába",
+  "securityNewSignInBody": "Bejelentkeztek a Vaultara-fiókjába ezen az eszközön: {device}. Ha nem Ön volt, nézze meg az emailjeit.",
+  "securityNewSignInBodyNoDevice": "Bejelentkeztek a Vaultara-fiókjába egy új eszközön. Ha nem Ön volt, nézze meg az emailjeit."
+}

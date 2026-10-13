@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Recordatorio del hogar",
+  "escalationBodyDays": "{name} vence en {days} días y nadie lo ha renovado todavía.",
+  "escalationBodyTomorrow": "{name} vence mañana y nadie lo ha renovado todavía.",
+  "escalationBodyToday": "{name} vence hoy y nadie lo ha renovado todavía.",
+  "escalationBodyYesterday": "{name} venció ayer y nadie lo ha renovado todavía.",
+  "escalationBodyExpired": "{name} venció hace {days} días y nadie lo ha renovado todavía.",
+  "escalationManyTitle": "Hay registros compartidos por renovar",
+  "escalationManyBody": "{count} registros compartidos vencen pronto o ya vencieron, y nadie los ha renovado todavía: {names}.",
+  "namesMore": "{names} y {count} más",
+  "lockedRecord": "Un registro bloqueado",
+  "lockedRecordInList": "un registro bloqueado",
+  "updateReceivedTitle": "Actualización recibida",
+  "updateReceivedBody": "{person} envió una actualización de {name}. Revísala en la pantalla Familia.",
+  "securityNewSignInTitle": "Nuevo inicio de sesión en tu cuenta",
+  "securityNewSignInBody": "Se inició sesión en tu cuenta de Vaultara en {device}. Si no fuiste tú, revisa tu correo electrónico.",
+  "securityNewSignInBodyNoDevice": "Se inició sesión en tu cuenta de Vaultara en un dispositivo nuevo. Si no fuiste tú, revisa tu correo electrónico."
+}

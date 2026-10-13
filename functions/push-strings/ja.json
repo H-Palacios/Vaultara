@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "世帯のリマインダー",
+  "escalationBodyDays": "{name}は{days}日後に期限が切れますが、まだ誰も更新していません。",
+  "escalationBodyTomorrow": "{name}は明日期限が切れますが、まだ誰も更新していません。",
+  "escalationBodyToday": "{name}は今日期限が切れますが、まだ誰も更新していません。",
+  "escalationBodyYesterday": "{name}は昨日期限が切れましたが、まだ誰も更新していません。",
+  "escalationBodyExpired": "{name}は{days}日前に期限が切れましたが、まだ誰も更新していません。",
+  "escalationManyTitle": "共有された記録の更新が必要です",
+  "escalationManyBody": "共有された記録{count}件がもうすぐ期限切れ、またはすでに期限切れですが、まだ誰も更新していません：{names}",
+  "namesMore": "{names}ほか{count}件",
+  "lockedRecord": "ロックされた記録",
+  "lockedRecordInList": "ロックされた記録",
+  "updateReceivedTitle": "更新を受信しました",
+  "updateReceivedBody": "{person}さんが{name}の更新を送信しました。家族画面で確認してください。",
+  "securityNewSignInTitle": "アカウントへの新しいサインイン",
+  "securityNewSignInBody": "{device} から Vaultara アカウントにサインインがありました。ご自身による操作でない場合は、メールを確認してください。",
+  "securityNewSignInBodyNoDevice": "新しいデバイスから Vaultara アカウントにサインインがありました。ご自身による操作でない場合は、メールを確認してください。"
+}

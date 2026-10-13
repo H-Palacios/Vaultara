@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Etxeko taldearen gogorarazlea",
+  "escalationBodyDays": "{name} {days} egun barru iraungitzen da eta oraindik inork ez du berritu.",
+  "escalationBodyTomorrow": "{name} bihar iraungitzen da eta oraindik inork ez du berritu.",
+  "escalationBodyToday": "{name} gaur iraungitzen da eta oraindik inork ez du berritu.",
+  "escalationBodyYesterday": "{name} atzo iraungi zen eta oraindik inork ez du berritu.",
+  "escalationBodyExpired": "{name} duela {days} egun iraungi zen eta oraindik inork ez du berritu.",
+  "escalationManyTitle": "Partekatutako erregistroak berritu behar dira",
+  "escalationManyBody": "Partekatutako {count} erregistro laster iraungiko dira edo iraungi dira, eta oraindik inork ez ditu berritu: {names}.",
+  "namesMore": "{names} eta beste {count}",
+  "lockedRecord": "Erregistro blokeatu bat",
+  "lockedRecordInList": "erregistro blokeatu bat",
+  "updateReceivedTitle": "Eguneratzea jaso da",
+  "updateReceivedBody": "{person} pertsonak eguneratze bat bidali du {name} erregistrorako. Berrikusi Familia pantailan.",
+  "securityNewSignInTitle": "Saio-hasiera berria zure kontuan",
+  "securityNewSignInBody": "Zure Vaultara kontuan saioa hasi da {device} gailuan. Zu izan ez bazara, begiratu zure posta elektronikoa.",
+  "securityNewSignInBodyNoDevice": "Zure Vaultara kontuan saioa hasi da gailu berri batean. Zu izan ez bazara, begiratu zure posta elektronikoa."
+}

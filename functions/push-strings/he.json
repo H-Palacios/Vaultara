@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "תזכורת למשק הבית",
+  "escalationBodyDays": "תוקף {name} יפוג בעוד {days} ימים ואף אחד עדיין לא חידש אותו.",
+  "escalationBodyTomorrow": "תוקף {name} יפוג מחר ואף אחד עדיין לא חידש אותו.",
+  "escalationBodyToday": "תוקף {name} יפוג היום ואף אחד עדיין לא חידש אותו.",
+  "escalationBodyYesterday": "תוקף {name} פג אתמול ואף אחד עדיין לא חידש אותו.",
+  "escalationBodyExpired": "תוקף {name} פג לפני {days} ימים ואף אחד עדיין לא חידש אותו.",
+  "escalationManyTitle": "רשומות משותפות דורשות חידוש",
+  "escalationManyBody": "{count} רשומות משותפות עומדות לפוג או שכבר פג תוקפן, ואף אחד עדיין לא חידש אותן: {names}.",
+  "namesMore": "{names} ועוד {count}",
+  "lockedRecord": "רשומה נעולה",
+  "lockedRecordInList": "רשומה נעולה",
+  "updateReceivedTitle": "התקבל עדכון",
+  "updateReceivedBody": "התקבל עדכון מאת {person} עבור {name}. בדוק אותו במסך משפחה.",
+  "securityNewSignInTitle": "התחברות חדשה לחשבון שלך",
+  "securityNewSignInBody": "בוצעה התחברות לחשבון Vaultara שלך מהמכשיר {device}. אם זה לא היית אתה, בדוק את הדוא״ל שלך.",
+  "securityNewSignInBodyNoDevice": "בוצעה התחברות לחשבון Vaultara שלך ממכשיר חדש. אם זה לא היית אתה, בדוק את הדוא״ל שלך."
+}

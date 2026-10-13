@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Promemoria per la famiglia",
+  "escalationBodyDays": "{name} scade tra {days} giorni e nessuno l'ha ancora rinnovato.",
+  "escalationBodyTomorrow": "{name} scade domani e nessuno l'ha ancora rinnovato.",
+  "escalationBodyToday": "{name} scade oggi e nessuno l'ha ancora rinnovato.",
+  "escalationBodyYesterday": "{name} è scaduto ieri e nessuno l'ha ancora rinnovato.",
+  "escalationBodyExpired": "{name} è scaduto {days} giorni fa e nessuno l'ha ancora rinnovato.",
+  "escalationManyTitle": "I record condivisi vanno rinnovati",
+  "escalationManyBody": "{count} record condivisi stanno per scadere o sono scaduti e nessuno li ha ancora rinnovati: {names}.",
+  "namesMore": "{names} e altri {count}",
+  "lockedRecord": "Un record bloccato",
+  "lockedRecordInList": "un record bloccato",
+  "updateReceivedTitle": "Aggiornamento ricevuto",
+  "updateReceivedBody": "{person} ha inviato un aggiornamento per {name}. Verificalo nella schermata Famiglia.",
+  "securityNewSignInTitle": "Nuovo accesso al tuo account",
+  "securityNewSignInBody": "È stato effettuato un accesso al tuo account Vaultara su {device}. Se non sei stato tu, controlla la tua email.",
+  "securityNewSignInBodyNoDevice": "È stato effettuato un accesso al tuo account Vaultara su un nuovo dispositivo. Se non sei stato tu, controlla la tua email."
+}

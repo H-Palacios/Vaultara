@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "ການເຕືອນຄົວເຮືອນ",
+  "escalationBodyDays": "{name} ຈະໝົດອາຍຸໃນ {days} ມື້ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ.",
+  "escalationBodyTomorrow": "{name} ຈະໝົດອາຍຸມື້ອື່ນ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ.",
+  "escalationBodyToday": "{name} ໝົດອາຍຸມື້ນີ້ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ.",
+  "escalationBodyYesterday": "{name} ໝົດອາຍຸມື້ວານນີ້ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ.",
+  "escalationBodyExpired": "{name} ໝົດອາຍຸເມື່ອ {days} ມື້ກ່ອນ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ.",
+  "escalationManyTitle": "ບັນທຶກທີ່ແບ່ງປັນຕ້ອງຕໍ່ອາຍຸ",
+  "escalationManyBody": "{count} ບັນທຶກທີ່ແບ່ງປັນໃກ້ໝົດອາຍຸ ຫຼື ໝົດອາຍຸແລ້ວ ແລະ ຍັງບໍ່ມີໃຜຕໍ່ອາຍຸ: {names}.",
+  "namesMore": "{names} ແລະ ອີກ {count} ລາຍການ",
+  "lockedRecord": "ບັນທຶກທີ່ລັອກ",
+  "lockedRecordInList": "ບັນທຶກທີ່ລັອກ",
+  "updateReceivedTitle": "ໄດ້ຮັບການອັບເດດແລ້ວ",
+  "updateReceivedBody": "{person} ສົ່ງການອັບເດດສຳລັບ {name}. ກວດເບິ່ງໃນໜ້າຄອບຄົວ.",
+  "securityNewSignInTitle": "ມີການເຂົ້າລະບົບໃໝ່ໃນບັນຊີຂອງທ່ານ",
+  "securityNewSignInBody": "ບັນຊີ Vaultara ຂອງທ່ານຖືກເຂົ້າລະບົບໃນ {device}. ຖ້າບໍ່ແມ່ນທ່ານ, ກວດເບິ່ງອີເມວຂອງທ່ານ.",
+  "securityNewSignInBodyNoDevice": "ບັນຊີ Vaultara ຂອງທ່ານຖືກເຂົ້າລະບົບໃນອຸປະກອນໃໝ່. ຖ້າບໍ່ແມ່ນທ່ານ, ກວດເບິ່ງອີເມວຂອງທ່ານ."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Lời nhắc cho hộ gia đình",
+  "escalationBodyDays": "{name} sẽ hết hạn sau {days} ngày và chưa có ai gia hạn.",
+  "escalationBodyTomorrow": "{name} sẽ hết hạn vào ngày mai và chưa có ai gia hạn.",
+  "escalationBodyToday": "{name} hết hạn hôm nay và chưa có ai gia hạn.",
+  "escalationBodyYesterday": "{name} đã hết hạn hôm qua và chưa có ai gia hạn.",
+  "escalationBodyExpired": "{name} đã hết hạn cách đây {days} ngày và chưa có ai gia hạn.",
+  "escalationManyTitle": "Các bản ghi chung cần gia hạn",
+  "escalationManyBody": "{count} bản ghi chung sắp hết hạn hoặc đã hết hạn và chưa có ai gia hạn: {names}.",
+  "namesMore": "{names} và {count} mục nữa",
+  "lockedRecord": "Một bản ghi bị khóa",
+  "lockedRecordInList": "một bản ghi bị khóa",
+  "updateReceivedTitle": "Đã nhận cập nhật",
+  "updateReceivedBody": "{person} đã gửi cập nhật cho {name}. Hãy xem trên màn hình Gia đình.",
+  "securityNewSignInTitle": "Lần đăng nhập mới vào tài khoản của bạn",
+  "securityNewSignInBody": "Tài khoản Vaultara của bạn đã được đăng nhập trên {device}. Nếu đó không phải là bạn, hãy kiểm tra email.",
+  "securityNewSignInBodyNoDevice": "Tài khoản Vaultara của bạn đã được đăng nhập trên một thiết bị mới. Nếu đó không phải là bạn, hãy kiểm tra email."
+}

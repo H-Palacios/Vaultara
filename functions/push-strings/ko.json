@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "가구 알림",
+  "escalationBodyDays": "{name}이(가) {days}일 후 만료되지만 아직 아무도 갱신하지 않았습니다.",
+  "escalationBodyTomorrow": "{name}이(가) 내일 만료되지만 아직 아무도 갱신하지 않았습니다.",
+  "escalationBodyToday": "{name}이(가) 오늘 만료되지만 아직 아무도 갱신하지 않았습니다.",
+  "escalationBodyYesterday": "{name}이(가) 어제 만료되었지만 아직 아무도 갱신하지 않았습니다.",
+  "escalationBodyExpired": "{name}이(가) {days}일 전에 만료되었지만 아직 아무도 갱신하지 않았습니다.",
+  "escalationManyTitle": "공유 기록을 갱신해야 합니다",
+  "escalationManyBody": "공유 기록 {count}개가 곧 만료되거나 이미 만료되었지만 아직 아무도 갱신하지 않았습니다: {names}.",
+  "namesMore": "{names} 외 {count}개",
+  "lockedRecord": "잠긴 기록",
+  "lockedRecordInList": "잠긴 기록",
+  "updateReceivedTitle": "업데이트를 받았습니다",
+  "updateReceivedBody": "{person} 님이 {name}에 대한 업데이트를 보냈습니다. 가족 화면에서 확인하세요.",
+  "securityNewSignInTitle": "계정에 새로운 로그인",
+  "securityNewSignInBody": "{device}에서 Vaultara 계정에 로그인했습니다. 본인이 아니라면 이메일을 확인하세요.",
+  "securityNewSignInBodyNoDevice": "새 기기에서 Vaultara 계정에 로그인했습니다. 본인이 아니라면 이메일을 확인하세요."
+}

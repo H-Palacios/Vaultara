@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "การเตือนของครัวเรือน",
+  "escalationBodyDays": "{name} จะหมดอายุในอีก {days} วัน และยังไม่มีใครต่ออายุ",
+  "escalationBodyTomorrow": "{name} จะหมดอายุพรุ่งนี้ และยังไม่มีใครต่ออายุ",
+  "escalationBodyToday": "{name} จะหมดอายุวันนี้ และยังไม่มีใครต่ออายุ",
+  "escalationBodyYesterday": "{name} หมดอายุเมื่อวานนี้ และยังไม่มีใครต่ออายุ",
+  "escalationBodyExpired": "{name} หมดอายุเมื่อ {days} วันก่อน และยังไม่มีใครต่ออายุ",
+  "escalationManyTitle": "รายการที่แชร์ต้องต่ออายุ",
+  "escalationManyBody": "รายการที่แชร์ {count} รายการใกล้หมดอายุหรือหมดอายุแล้ว และยังไม่มีใครต่ออายุ: {names}",
+  "namesMore": "{names} และอีก {count} รายการ",
+  "lockedRecord": "รายการที่ล็อก",
+  "lockedRecordInList": "รายการที่ล็อก",
+  "updateReceivedTitle": "ได้รับการอัปเดตแล้ว",
+  "updateReceivedBody": "{person} ส่งการอัปเดตสำหรับ {name} มา ตรวจสอบได้ที่หน้าครอบครัว",
+  "securityNewSignInTitle": "มีการเข้าสู่ระบบใหม่ในบัญชีของคุณ",
+  "securityNewSignInBody": "มีการเข้าสู่ระบบบัญชี Vaultara ของคุณบน {device} หากไม่ใช่คุณ ให้ตรวจสอบอีเมลของคุณ",
+  "securityNewSignInBodyNoDevice": "มีการเข้าสู่ระบบบัญชี Vaultara ของคุณบนอุปกรณ์ใหม่ หากไม่ใช่คุณ ให้ตรวจสอบอีเมลของคุณ"
+}

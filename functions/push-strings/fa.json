@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "یادآوری خانوار",
+  "escalationBodyDays": "{name} تا {days} روز دیگر منقضی می‌شود و هنوز کسی آن را تمدید نکرده است.",
+  "escalationBodyTomorrow": "{name} فردا منقضی می‌شود و هنوز کسی آن را تمدید نکرده است.",
+  "escalationBodyToday": "{name} امروز منقضی می‌شود و هنوز کسی آن را تمدید نکرده است.",
+  "escalationBodyYesterday": "{name} دیروز منقضی شد و هنوز کسی آن را تمدید نکرده است.",
+  "escalationBodyExpired": "{name} {days} روز پیش منقضی شد و هنوز کسی آن را تمدید نکرده است.",
+  "escalationManyTitle": "رکوردهای مشترک نیاز به تمدید دارند",
+  "escalationManyBody": "{count} رکورد مشترک به‌زودی منقضی می‌شوند یا منقضی شده‌اند و هنوز کسی آن‌ها را تمدید نکرده است: {names}.",
+  "namesMore": "{names} و {count} مورد دیگر",
+  "lockedRecord": "یک رکورد قفل‌شده",
+  "lockedRecordInList": "یک رکورد قفل‌شده",
+  "updateReceivedTitle": "به‌روزرسانی دریافت شد",
+  "updateReceivedBody": "{person} یک به‌روزرسانی برای {name} فرستاد. آن را در صفحه خانواده بررسی کنید.",
+  "securityNewSignInTitle": "ورود جدید به حساب شما",
+  "securityNewSignInBody": "به حساب Vaultara شما در {device} وارد شدند. اگر این شما نبودید، ایمیل خود را بررسی کنید.",
+  "securityNewSignInBodyNoDevice": "به حساب Vaultara شما در یک دستگاه جدید وارد شدند. اگر این شما نبودید، ایمیل خود را بررسی کنید."
+}

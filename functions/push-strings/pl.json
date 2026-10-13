@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Przypomnienie dla gospodarstwa domowego",
+  "escalationBodyDays": "{name} wygasa za {days} dni, a nikt go jeszcze nie odnowił.",
+  "escalationBodyTomorrow": "{name} wygasa jutro, a nikt go jeszcze nie odnowił.",
+  "escalationBodyToday": "{name} wygasa dzisiaj, a nikt go jeszcze nie odnowił.",
+  "escalationBodyYesterday": "{name} wygasł wczoraj, a nikt go jeszcze nie odnowił.",
+  "escalationBodyExpired": "{name} wygasł {days} dni temu, a nikt go jeszcze nie odnowił.",
+  "escalationManyTitle": "Wspólne rekordy wymagają odnowienia",
+  "escalationManyBody": "Liczba wspólnych rekordów, które wkrótce wygasną lub już wygasły, a nikt ich jeszcze nie odnowił: {count}. Rekordy: {names}.",
+  "namesMore": "{names} i jeszcze {count}",
+  "lockedRecord": "Zablokowany rekord",
+  "lockedRecordInList": "zablokowany rekord",
+  "updateReceivedTitle": "Otrzymano aktualizację",
+  "updateReceivedBody": "Aktualizacja dla: {name}, od: {person}. Sprawdź ją na ekranie Rodzina.",
+  "securityNewSignInTitle": "Nowe logowanie na twoje konto",
+  "securityNewSignInBody": "Ktoś zalogował się na twoje konto Vaultara na urządzeniu {device}. Jeśli to nie byłeś ty, sprawdź pocztę e-mail.",
+  "securityNewSignInBodyNoDevice": "Ktoś zalogował się na twoje konto Vaultara na nowym urządzeniu. Jeśli to nie byłeś ty, sprawdź pocztę e-mail."
+}

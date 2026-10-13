@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Өрхийн сануулга",
+  "escalationBodyDays": "{name} {days} өдрийн дараа дуусах бөгөөд хэн ч хараахан сунгаагүй байна.",
+  "escalationBodyTomorrow": "{name} маргааш дуусах бөгөөд хэн ч хараахан сунгаагүй байна.",
+  "escalationBodyToday": "{name} өнөөдөр дуусах бөгөөд хэн ч хараахан сунгаагүй байна.",
+  "escalationBodyYesterday": "{name} өчигдөр дууссан бөгөөд хэн ч хараахан сунгаагүй байна.",
+  "escalationBodyExpired": "{name} {days} өдрийн өмнө дууссан бөгөөд хэн ч хараахан сунгаагүй байна.",
+  "escalationManyTitle": "Хуваалцсан бичлэгүүдийг сунгах хэрэгтэй",
+  "escalationManyBody": "Хуваалцсан {count} бичлэгийн хугацаа удахгүй дуусна эсвэл дууссан бөгөөд хэн ч хараахан сунгаагүй байна: {names}.",
+  "namesMore": "{names} болон өөр {count}",
+  "lockedRecord": "Түгжигдсэн бичлэг",
+  "lockedRecordInList": "түгжигдсэн бичлэг",
+  "updateReceivedTitle": "Шинэчлэл ирлээ",
+  "updateReceivedBody": "{person} {name}-д зориулсан шинэчлэл илгээлээ. Гэр бүл дэлгэц дээр шалгана уу.",
+  "securityNewSignInTitle": "Таны бүртгэлд шинэ нэвтрэлт",
+  "securityNewSignInBody": "Таны Vaultara бүртгэлд {device} төхөөрөмжөөс нэвтэрсэн байна. Хэрэв энэ та биш байсан бол имэйлээ шалгана уу.",
+  "securityNewSignInBodyNoDevice": "Таны Vaultara бүртгэлд шинэ төхөөрөмжөөс нэвтэрсэн байна. Хэрэв энэ та биш байсан бол имэйлээ шалгана уу."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "بیرخەرەوەی ماڵ",
+  "escalationBodyDays": "{name} لە ماوەی {days} ڕۆژدا بەسەر دەچێت و هێشتا کەس نەینوێکردووەتەوە.",
+  "escalationBodyTomorrow": "{name} سبەی بەسەر دەچێت و هێشتا کەس نەینوێکردووەتەوە.",
+  "escalationBodyToday": "{name} ئەمڕۆ بەسەر دەچێت و هێشتا کەس نەینوێکردووەتەوە.",
+  "escalationBodyYesterday": "{name} دوێنێ بەسەرچوو و هێشتا کەس نەینوێکردووەتەوە.",
+  "escalationBodyExpired": "{name} {days} ڕۆژ لەوەپێش بەسەرچوو و هێشتا کەس نەینوێکردووەتەوە.",
+  "escalationManyTitle": "تۆمارە هاوبەشکراوەکان پێویستیان بە نوێکردنەوەیە",
+  "escalationManyBody": "{count} تۆماری هاوبەشکراو بەم زووانە بەسەر دەچن یان بەسەرچوون، و هێشتا کەس نەیانینوێکردووەتەوە: {names}.",
+  "namesMore": "{names} و {count}ی تر",
+  "lockedRecord": "تۆمارێکی قفڵکراو",
+  "lockedRecordInList": "تۆمارێکی قفڵکراو",
+  "updateReceivedTitle": "نوێکردنەوە وەرگیرا",
+  "updateReceivedBody": "{person} نوێکردنەوەیەکی بۆ {name} ناردووە. لە شاشەی خێزان بیپشکنە.",
+  "securityNewSignInTitle": "چوونەژوورەوەیەکی نوێ بۆ هەژمارەکەت",
+  "securityNewSignInBody": "لەسەر {device} چوونە ناو هەژماری Vaultaraـەکەتەوە. ئەگەر ئەمە تۆ نەبوویت، ئیمەیڵەکەت بپشکنە.",
+  "securityNewSignInBodyNoDevice": "لەسەر ئامێرێکی نوێ چوونە ناو هەژماری Vaultaraـەکەتەوە. ئەگەر ئەمە تۆ نەبوویت، ئیمەیڵەکەت بپشکنە."
+}
