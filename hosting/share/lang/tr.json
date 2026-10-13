@@ -1,0 +1,13 @@
+{
+  "page": "Paylaşılan Vaultara kaydı",
+  "loading": "Paylaşılan kayıt yükleniyor...",
+  "sharedWith": "Vaultara'dan sizinle paylaşıldı",
+  "expiryLabel": "Son kullanma tarihi",
+  "linkExpires": "Bu bağlantının süresi {date} tarihinde doluyor.",
+  "expiredTitle": "Bu bağlantının süresi doldu",
+  "expiredBody": "Paylaşılan bağlantılar yalnızca kısa bir süre çalışır. Gönderen kişiden yeni bir bağlantı isteyin.",
+  "errorTitle": "Bir şeyler ters gitti",
+  "errorBody": "Bu kaydı yükleyemedik. Bağlantınızı kontrol edip tekrar deneyin.",
+  "retry": "Tekrar deneyin",
+  "imageAlt": "Kaydın fotoğrafı"
+}

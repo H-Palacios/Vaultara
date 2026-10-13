@@ -1,0 +1,13 @@
+{
+  "page": "Diiwaan Vaultara oo la wadaagay",
+  "loading": "Waxaa la soo rarayaa diiwaanka la wadaagay...",
+  "sharedWith": "Lagula wadaagay Vaultara",
+  "expiryLabel": "Taariikhda dhicista",
+  "linkExpires": "Xiriirkan wuxuu dhacayaa {date}.",
+  "expiredTitle": "Xiriirkan wuu dhacay",
+  "expiredBody": "Xiriirada la wadaagay waxay shaqeeyaan muddo gaaban oo keliya. Ka codso qofkii kuu soo diray xiriir cusub.",
+  "errorTitle": "Wax baa khaldamay",
+  "errorBody": "Ma aanan soo rari karin diiwaankan. Hubi xiriirkaaga oo isku day mar kale.",
+  "retry": "Isku day mar kale",
+  "imageAlt": "Sawirka diiwaanka"
+}

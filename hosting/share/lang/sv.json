@@ -1,0 +1,13 @@
+{
+  "page": "Delad Vaultara-post",
+  "loading": "Läser in den delade posten...",
+  "sharedWith": "Delad med dig från Vaultara",
+  "expiryLabel": "Utgångsdatum",
+  "linkExpires": "Den här länken upphör att gälla {date}.",
+  "expiredTitle": "Den här länken har upphört att gälla",
+  "expiredBody": "Delade länkar fungerar bara en kort stund. Be personen som skickade den om en ny länk.",
+  "errorTitle": "Något gick fel",
+  "errorBody": "Vi kunde inte läsa in den här posten. Kontrollera din anslutning och försök igen.",
+  "retry": "Försök igen",
+  "imageAlt": "Foto av posten"
+}

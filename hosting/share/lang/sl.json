@@ -1,0 +1,13 @@
+{
+  "page": "Deljeni zapis Vaultara",
+  "loading": "Nalaganje deljenega zapisa...",
+  "sharedWith": "Deljeno z vami iz aplikacije Vaultara",
+  "expiryLabel": "Datum poteka",
+  "linkExpires": "Ta povezava poteče {date}.",
+  "expiredTitle": "Ta povezava je potekla",
+  "expiredBody": "Deljene povezave delujejo le kratek čas. Osebo, ki vam jo je poslala, prosite za novo povezavo.",
+  "errorTitle": "Prišlo je do napake",
+  "errorBody": "Tega zapisa ni bilo mogoče naložiti. Preverite povezavo in poskusite znova.",
+  "retry": "Poskusite znova",
+  "imageAlt": "Fotografija zapisa"
+}

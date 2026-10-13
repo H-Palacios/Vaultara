@@ -1,0 +1,13 @@
+{
+  "page": "Rekodi ya Vaultara iliyoshirikiwa",
+  "loading": "Inapakia rekodi iliyoshirikiwa...",
+  "sharedWith": "Imeshirikiwa nawe kutoka Vaultara",
+  "expiryLabel": "Tarehe ya kuisha muda",
+  "linkExpires": "Kiungo hiki kitaisha muda tarehe {date}.",
+  "expiredTitle": "Muda wa kiungo hiki umeisha",
+  "expiredBody": "Viungo vilivyoshirikiwa hufanya kazi kwa muda mfupi tu. Muombe aliyekutumia kiungo kipya.",
+  "errorTitle": "Hitilafu fulani imetokea",
+  "errorBody": "Hatukuweza kupakia rekodi hii. Angalia muunganisho wako kisha ujaribu tena.",
+  "retry": "Jaribu tena",
+  "imageAlt": "Picha ya rekodi"
+}

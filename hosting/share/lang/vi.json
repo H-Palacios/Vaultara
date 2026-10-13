@@ -1,0 +1,13 @@
+{
+  "page": "Bản ghi Vaultara được chia sẻ",
+  "loading": "Đang tải bản ghi được chia sẻ...",
+  "sharedWith": "Được chia sẻ với bạn từ Vaultara",
+  "expiryLabel": "Ngày hết hạn",
+  "linkExpires": "Liên kết này hết hạn vào {date}.",
+  "expiredTitle": "Liên kết này đã hết hạn",
+  "expiredBody": "Liên kết chia sẻ chỉ hoạt động trong thời gian ngắn. Hãy xin người đã gửi liên kết mới.",
+  "errorTitle": "Đã xảy ra lỗi",
+  "errorBody": "Chúng tôi không thể tải bản ghi này. Hãy kiểm tra kết nối của bạn và thử lại.",
+  "retry": "Thử lại",
+  "imageAlt": "Ảnh của bản ghi"
+}

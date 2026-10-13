@@ -1,0 +1,13 @@
+{
+  "page": "Sdílený záznam z Vaultara",
+  "loading": "Načítání sdíleného záznamu...",
+  "sharedWith": "Sdíleno s vámi z aplikace Vaultara",
+  "expiryLabel": "Datum expirace",
+  "linkExpires": "Platnost tohoto odkazu vyprší {date}.",
+  "expiredTitle": "Platnost tohoto odkazu vypršela",
+  "expiredBody": "Sdílené odkazy fungují jen krátkou dobu. Požádejte osobu, která vám ho poslala, o nový odkaz.",
+  "errorTitle": "Něco se pokazilo",
+  "errorBody": "Tento záznam se nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.",
+  "retry": "Zkusit znovu",
+  "imageAlt": "Fotografie záznamu"
+}

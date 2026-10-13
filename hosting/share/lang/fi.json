@@ -1,0 +1,13 @@
+{
+  "page": "Jaettu Vaultara-tietue",
+  "loading": "Ladataan jaettua tietuetta...",
+  "sharedWith": "Jaettu sinulle Vaultarasta",
+  "expiryLabel": "Vanhentumispäivä",
+  "linkExpires": "Tämä linkki vanhenee {date}.",
+  "expiredTitle": "Tämä linkki on vanhentunut",
+  "expiredBody": "Jaetut linkit toimivat vain lyhyen aikaa. Pyydä lähettäjältä uusi linkki.",
+  "errorTitle": "Jokin meni pieleen",
+  "errorBody": "Emme voineet ladata tätä tietuetta. Tarkista yhteytesi ja yritä uudelleen.",
+  "retry": "Yritä uudelleen",
+  "imageAlt": "Kuva tietueesta"
+}

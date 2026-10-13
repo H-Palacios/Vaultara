@@ -1,0 +1,13 @@
+{
+  "page": "共享的 Vaultara 記錄",
+  "loading": "正在載入共享的記錄...",
+  "sharedWith": "透過 Vaultara 與您共享",
+  "expiryLabel": "到期日期",
+  "linkExpires": "此連結將於 {date} 到期。",
+  "expiredTitle": "此連結已過期",
+  "expiredBody": "共享連結僅在短時間內有效。請向傳送連結的人索取新連結。",
+  "errorTitle": "發生錯誤",
+  "errorBody": "無法載入此記錄。請檢查您的網路連線，然後再試一次。",
+  "retry": "再試一次",
+  "imageAlt": "記錄的相片"
+}

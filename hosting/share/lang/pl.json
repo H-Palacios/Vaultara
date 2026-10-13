@@ -1,0 +1,13 @@
+{
+  "page": "Udostępniony rekord Vaultara",
+  "loading": "Wczytywanie udostępnionego rekordu...",
+  "sharedWith": "Udostępnione Ci z Vaultara",
+  "expiryLabel": "Data wygaśnięcia",
+  "linkExpires": "Ten link wygasa {date}.",
+  "expiredTitle": "Ten link wygasł",
+  "expiredBody": "Udostępnione linki działają tylko przez krótki czas. Poproś osobę, która go wysłała, o nowy link.",
+  "errorTitle": "Coś poszło nie tak",
+  "errorBody": "Nie udało się wczytać tego rekordu. Sprawdź połączenie i spróbuj ponownie.",
+  "retry": "Spróbuj ponownie",
+  "imageAlt": "Zdjęcie rekordu"
+}

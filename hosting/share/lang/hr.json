@@ -1,0 +1,13 @@
+{
+  "page": "Dijeljeni Vaultara zapis",
+  "loading": "Učitavanje dijeljenog zapisa...",
+  "sharedWith": "Podijeljeno s vama iz aplikacije Vaultara",
+  "expiryLabel": "Datum isteka",
+  "linkExpires": "Ova poveznica istječe {date}.",
+  "expiredTitle": "Ova poveznica je istekla",
+  "expiredBody": "Dijeljene poveznice rade samo kratko vrijeme. Zamolite osobu koja vam ju je poslala za novu poveznicu.",
+  "errorTitle": "Nešto nije u redu",
+  "errorBody": "Nismo mogli učitati ovaj zapis. Provjerite vezu i pokušajte ponovno.",
+  "retry": "Pokušajte ponovno",
+  "imageAlt": "Fotografija zapisa"
+}

@@ -1,0 +1,13 @@
+{
+  "page": "共有された Vaultara の記録",
+  "loading": "共有された記録を読み込んでいます...",
+  "sharedWith": "Vaultara から共有されました",
+  "expiryLabel": "有効期限",
+  "linkExpires": "このリンクの有効期限は {date} です。",
+  "expiredTitle": "このリンクの有効期限が切れています",
+  "expiredBody": "共有リンクは短時間しか使用できません。送信した方に新しいリンクを依頼してください。",
+  "errorTitle": "問題が発生しました",
+  "errorBody": "この記録を読み込めませんでした。接続を確認して、もう一度お試しください。",
+  "retry": "再試行",
+  "imageAlt": "記録の写真"
+}

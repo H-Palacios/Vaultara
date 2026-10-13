@@ -1,0 +1,13 @@
+{
+  "page": "Geteilter Vaultara-Eintrag",
+  "loading": "Geteilter Eintrag wird geladen...",
+  "sharedWith": "Über Vaultara mit dir geteilt",
+  "expiryLabel": "Ablaufdatum",
+  "linkExpires": "Dieser Link läuft am {date} ab.",
+  "expiredTitle": "Dieser Link ist abgelaufen",
+  "expiredBody": "Geteilte Links funktionieren nur für kurze Zeit. Bitte die Person, die ihn dir geschickt hat, um einen neuen Link.",
+  "errorTitle": "Etwas ist schiefgelaufen",
+  "errorBody": "Wir konnten diesen Eintrag nicht laden. Prüfe deine Verbindung und versuche es erneut.",
+  "retry": "Erneut versuchen",
+  "imageAlt": "Foto des Eintrags"
+}

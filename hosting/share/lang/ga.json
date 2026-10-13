@@ -1,0 +1,13 @@
+{
+  "page": "Taifead Vaultara comhroinnte",
+  "loading": "An taifead comhroinnte á lódáil...",
+  "sharedWith": "Comhroinnte leat ó Vaultara",
+  "expiryLabel": "Dáta éaga",
+  "linkExpires": "Rachaidh an nasc seo in éag ar {date}.",
+  "expiredTitle": "Tá an nasc seo imithe in éag",
+  "expiredBody": "Ní oibríonn naisc chomhroinnte ach ar feadh tamaill ghearr. Iarr nasc nua ar an duine a sheol chugat é.",
+  "errorTitle": "Tharla earráid",
+  "errorBody": "Níorbh fhéidir linn an taifead seo a lódáil. Seiceáil do nasc agus bain triail eile as.",
+  "retry": "Bain triail eile as",
+  "imageAlt": "Grianghraf den taifead"
+}

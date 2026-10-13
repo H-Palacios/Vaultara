@@ -1,0 +1,13 @@
+{
+  "page": "Deljeni Vaultara zapis",
+  "loading": "Učitavanje deljenog zapisa...",
+  "sharedWith": "Podeljeno sa vama iz aplikacije Vaultara",
+  "expiryLabel": "Datum isteka",
+  "linkExpires": "Ovaj link ističe {date}.",
+  "expiredTitle": "Ovaj link je istekao",
+  "expiredBody": "Deljeni linkovi rade samo kratko vreme. Zamolite osobu koja vam ga je poslala za novi link.",
+  "errorTitle": "Nešto nije u redu",
+  "errorBody": "Nismo mogli da učitamo ovaj zapis. Proverite vezu i pokušajte ponovo.",
+  "retry": "Pokušajte ponovo",
+  "imageAlt": "Fotografija zapisa"
+}

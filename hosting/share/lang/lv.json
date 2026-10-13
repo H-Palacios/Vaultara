@@ -1,0 +1,13 @@
+{
+  "page": "Kopīgots Vaultara ieraksts",
+  "loading": "Notiek kopīgotā ieraksta ielāde...",
+  "sharedWith": "Kopīgots ar jums no Vaultara",
+  "expiryLabel": "Derīguma termiņš",
+  "linkExpires": "Šī saite beigsies {date}.",
+  "expiredTitle": "Šīs saites derīguma termiņš ir beidzies",
+  "expiredBody": "Kopīgotās saites darbojas tikai īsu laiku. Palūdziet jaunu saiti personai, kas to nosūtīja.",
+  "errorTitle": "Radās kļūda",
+  "errorBody": "Mēs nevarējām ielādēt šo ierakstu. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
+  "retry": "Mēģināt vēlreiz",
+  "imageAlt": "Ieraksta fotoattēls"
+}

@@ -1,0 +1,13 @@
+{
+  "page": "Irekhodi ye-Vaultara ekwabelwana ngayo",
+  "loading": "Ilayisha irekhodi ekwabelwana ngayo...",
+  "sharedWith": "Kwabelwana nawe ukusuka ku-Vaultara",
+  "expiryLabel": "Umhla wokuphelelwa",
+  "linkExpires": "Eli khonkco liza kuphelelwa ngomhla we-{date}.",
+  "expiredTitle": "Eli khonkco liphelelwe lixesha",
+  "expiredBody": "Amakhonkco ekwabelwana ngawo asebenza ixesha elifutshane kuphela. Cela ikhonkco elitsha kumntu olithumeleyo.",
+  "errorTitle": "Kukho into engahambanga kakuhle",
+  "errorBody": "Asikwazanga ukulayisha le rekhodi. Jonga uqhagamshelo lwakho uze uzame kwakhona.",
+  "retry": "Zama kwakhona",
+  "imageAlt": "Ifoto yerekhodi"
+}

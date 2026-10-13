@@ -1,0 +1,13 @@
+{
+  "page": "Ibinahaging rekord ng Vaultara",
+  "loading": "Nilo-load ang ibinahaging rekord...",
+  "sharedWith": "Ibinahagi sa iyo mula sa Vaultara",
+  "expiryLabel": "Petsa ng pag-expire",
+  "linkExpires": "Mag-e-expire ang link na ito sa {date}.",
+  "expiredTitle": "Nag-expire na ang link na ito",
+  "expiredBody": "Gumagana lang nang maikling panahon ang mga ibinahaging link. Humingi ng bagong link sa taong nagpadala nito.",
+  "errorTitle": "May nangyaring mali",
+  "errorBody": "Hindi namin ma-load ang rekord na ito. Suriin ang iyong koneksyon at subukang muli.",
+  "retry": "Subukang muli",
+  "imageAlt": "Larawan ng rekord"
+}

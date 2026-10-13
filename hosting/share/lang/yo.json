@@ -1,0 +1,13 @@
+{
+  "page": "Igbasilẹ Vaultara tí a pín",
+  "loading": "À ń gbé igbasilẹ tí a pín jáde...",
+  "sharedWith": "A pín in pẹ̀lú rẹ láti Vaultara",
+  "expiryLabel": "Ọjọ ipari",
+  "linkExpires": "Ọ̀nà asopọ̀ yìí yóò parí ní {date}.",
+  "expiredTitle": "Ọ̀nà asopọ̀ yìí ti parí",
+  "expiredBody": "Àwọn ọ̀nà asopọ̀ tí a pín máa ń ṣiṣẹ́ fún ìgbà díẹ̀ nìkan. Béèrè ọ̀nà asopọ̀ tuntun lọ́wọ́ ẹni tí ó fi ránṣẹ́.",
+  "errorTitle": "Nǹkan kan ṣàṣìṣe",
+  "errorBody": "A kò lè gbé igbasilẹ yìí jáde. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.",
+  "retry": "Tún gbìyànjú",
+  "imageAlt": "Fọ́tò igbasilẹ náà"
+}

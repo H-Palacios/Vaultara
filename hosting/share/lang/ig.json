@@ -1,0 +1,13 @@
+{
+  "page": "Ndekọ Vaultara e kesara",
+  "loading": "Na-ebudata ndekọ e kesara...",
+  "sharedWith": "E kesara gị site na Vaultara",
+  "expiryLabel": "Ụbọchị ngwụcha",
+  "linkExpires": "Njikọ a ga-agwụ na {date}.",
+  "expiredTitle": "Njikọ a agwụla",
+  "expiredBody": "Njikọ e kesara na-arụ ọrụ naanị obere oge. Rịọ onye zitere ya ka o zitere gị njikọ ọhụrụ.",
+  "errorTitle": "Ihe adịghị mma mere",
+  "errorBody": "Anyị enweghị ike ibudata ndekọ a. Lelee njikọ ịntanetị gị ma nwaa ọzọ.",
+  "retry": "Nwaa ọzọ",
+  "imageAlt": "Foto nke ndekọ ahụ"
+}

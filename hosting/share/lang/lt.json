@@ -1,0 +1,13 @@
+{
+  "page": "Bendrinamas Vaultara įrašas",
+  "loading": "Įkeliamas bendrinamas įrašas...",
+  "sharedWith": "Su jumis pasidalyta iš Vaultara",
+  "expiryLabel": "Galiojimo data",
+  "linkExpires": "Ši nuoroda nustos galioti {date}.",
+  "expiredTitle": "Ši nuoroda nebegalioja",
+  "expiredBody": "Bendrinamos nuorodos veikia tik trumpai. Paprašykite jas atsiuntusio asmens naujos nuorodos.",
+  "errorTitle": "Kažkas nepavyko",
+  "errorBody": "Nepavyko įkelti šio įrašo. Patikrinkite ryšį ir bandykite dar kartą.",
+  "retry": "Bandyti dar kartą",
+  "imageAlt": "Įrašo nuotrauka"
+}

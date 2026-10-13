@@ -1,0 +1,13 @@
+{
+  "page": "Catatan Vaultara yang dibagikan",
+  "loading": "Memuat catatan yang dibagikan...",
+  "sharedWith": "Dibagikan kepada Anda dari Vaultara",
+  "expiryLabel": "Tanggal kedaluwarsa",
+  "linkExpires": "Tautan ini kedaluwarsa pada {date}.",
+  "expiredTitle": "Tautan ini sudah kedaluwarsa",
+  "expiredBody": "Tautan yang dibagikan hanya berfungsi untuk waktu singkat. Mintalah tautan baru kepada orang yang mengirimkannya.",
+  "errorTitle": "Terjadi kesalahan",
+  "errorBody": "Kami tidak dapat memuat catatan ini. Periksa koneksi Anda dan coba lagi.",
+  "retry": "Coba lagi",
+  "imageAlt": "Foto catatan"
+}

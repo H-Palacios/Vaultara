@@ -1,0 +1,13 @@
+{
+  "page": "Megosztott Vaultara-bejegyzés",
+  "loading": "A megosztott bejegyzés betöltése...",
+  "sharedWith": "Megosztva Önnel a Vaultarából",
+  "expiryLabel": "Lejárati dátum",
+  "linkExpires": "Ez a link ekkor jár le: {date}.",
+  "expiredTitle": "Ez a link lejárt",
+  "expiredBody": "A megosztott linkek csak rövid ideig működnek. Kérjen új linket attól, aki elküldte.",
+  "errorTitle": "Hiba történt",
+  "errorBody": "Nem sikerült betölteni ezt a bejegyzést. Ellenőrizze a kapcsolatát, és próbálja újra.",
+  "retry": "Próbálja újra",
+  "imageAlt": "Fotó a bejegyzésről"
+}
