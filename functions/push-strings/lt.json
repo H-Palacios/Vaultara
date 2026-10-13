@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Namų ūkio priminimas",
+  "escalationBodyDays": "Įrašas ({name}) baigs galioti po {days} d., o niekas jo dar neatnaujino.",
+  "escalationBodyTomorrow": "Įrašas ({name}) baigia galioti rytoj, o niekas jo dar neatnaujino.",
+  "escalationBodyToday": "Įrašas ({name}) baigia galioti šiandien, o niekas jo dar neatnaujino.",
+  "escalationBodyYesterday": "Įrašas ({name}) baigė galioti vakar, o niekas jo dar neatnaujino.",
+  "escalationBodyExpired": "Įrašas ({name}) baigė galioti prieš {days} d., o niekas jo dar neatnaujino.",
+  "escalationManyTitle": "Bendrus įrašus reikia atnaujinti",
+  "escalationManyBody": "Bendrų įrašų, kurie netrukus baigs galioti arba jau nebegalioja ir kurių niekas dar neatnaujino: {count}. Jie: {names}.",
+  "namesMore": "{names} ir dar {count}",
+  "lockedRecord": "Užrakintas įrašas",
+  "lockedRecordInList": "užrakintas įrašas",
+  "updateReceivedTitle": "Gautas atnaujinimas",
+  "updateReceivedBody": "Asmuo {person} atsiuntė atnaujinimą. Įrašas: {name}. Peržiūrėkite jį ekrane Šeima.",
+  "securityNewSignInTitle": "Naujas prisijungimas prie jūsų paskyros",
+  "securityNewSignInBody": "Prie jūsų Vaultara paskyros prisijungta įrenginyje {device}. Jei tai buvote ne jūs, patikrinkite el. paštą.",
+  "securityNewSignInBodyNoDevice": "Prie jūsų Vaultara paskyros prisijungta naujame įrenginyje. Jei tai buvote ne jūs, patikrinkite el. paštą."
+}

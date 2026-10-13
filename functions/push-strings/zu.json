@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Isikhumbuzo somuzi",
+  "escalationBodyDays": "Irekhodi {name} liphelelwa ezinsukwini ezi-{days} futhi akekho oselivuselele.",
+  "escalationBodyTomorrow": "Irekhodi {name} liphelelwa kusasa futhi akekho oselivuselele.",
+  "escalationBodyToday": "Irekhodi {name} liphelelwa namuhla futhi akekho oselivuselele.",
+  "escalationBodyYesterday": "Irekhodi {name} liphelelwe izolo futhi akekho oselivuselele.",
+  "escalationBodyExpired": "Irekhodi {name} liphelelwe ezinsukwini ezi-{days} ezedlule futhi akekho oselivuselele.",
+  "escalationManyTitle": "Amarekhodi abiwe adinga ukuvuselelwa",
+  "escalationManyBody": "Amarekhodi abiwe angu-{count} aphelelwa maduze noma asephelelwe futhi akekho osewavuselele: {names}.",
+  "namesMore": "{names} nokunye okungu-{count}",
+  "lockedRecord": "Irekhodi elivaliwe",
+  "lockedRecordInList": "irekhodi elivaliwe",
+  "updateReceivedTitle": "Isibuyekezo samukelwe",
+  "updateReceivedBody": "{person} uthumele isibuyekezo serekhodi {name}. Sibuyekeze esikrinini Somndeni.",
+  "securityNewSignInTitle": "Ukungena okusha ku-akhawunti yakho",
+  "securityNewSignInBody": "Kungenwe ku-akhawunti yakho ye-Vaultara ku-{device}. Uma bekungeyena wena, hlola i-imeyili yakho.",
+  "securityNewSignInBodyNoDevice": "Kungenwe ku-akhawunti yakho ye-Vaultara kudivayisi entsha. Uma bekungeyena wena, hlola i-imeyili yakho."
+}

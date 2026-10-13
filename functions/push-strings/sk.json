@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Pripomienka pre domácnosť",
+  "escalationBodyDays": "Záznam {name} vyprší o {days} d. a nikto ho ešte neobnovil.",
+  "escalationBodyTomorrow": "Záznam {name} vyprší zajtra a nikto ho ešte neobnovil.",
+  "escalationBodyToday": "Záznam {name} vyprší dnes a nikto ho ešte neobnovil.",
+  "escalationBodyYesterday": "Záznam {name} vypršal včera a nikto ho ešte neobnovil.",
+  "escalationBodyExpired": "Záznam {name} vypršal pred {days} d. a nikto ho ešte neobnovil.",
+  "escalationManyTitle": "Zdieľané záznamy treba obnoviť",
+  "escalationManyBody": "Počet zdieľaných záznamov, ktoré čoskoro vyprší alebo už vypršali a nikto ich ešte neobnovil: {count}. Sú to: {names}.",
+  "namesMore": "{names} a ďalšie ({count})",
+  "lockedRecord": "Zamknutý záznam",
+  "lockedRecordInList": "zamknutý záznam",
+  "updateReceivedTitle": "Aktualizácia prijatá",
+  "updateReceivedBody": "Osoba {person} poslala aktualizáciu. Záznam: {name}. Skontrolujte ju na obrazovke Rodina.",
+  "securityNewSignInTitle": "Nové prihlásenie do vášho účtu",
+  "securityNewSignInBody": "Do vášho účtu Vaultara sa niekto prihlásil na zariadení {device}. Ak ste to neboli vy, skontrolujte si email.",
+  "securityNewSignInBodyNoDevice": "Do vášho účtu Vaultara sa niekto prihlásil na novom zariadení. Ak ste to neboli vy, skontrolujte si email."
+}

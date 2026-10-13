@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "হাউসহোল্ড রিমাইন্ডার",
+  "escalationBodyDays": "{name}-এর মেয়াদ {days} দিনের মধ্যে শেষ হবে এবং এখনো কেউ এটি নবায়ন করেননি।",
+  "escalationBodyTomorrow": "{name}-এর মেয়াদ আগামীকাল শেষ হবে এবং এখনো কেউ এটি নবায়ন করেননি।",
+  "escalationBodyToday": "{name}-এর মেয়াদ আজ শেষ হবে এবং এখনো কেউ এটি নবায়ন করেননি।",
+  "escalationBodyYesterday": "{name}-এর মেয়াদ গতকাল শেষ হয়েছে এবং এখনো কেউ এটি নবায়ন করেননি।",
+  "escalationBodyExpired": "{name}-এর মেয়াদ {days} দিন আগে শেষ হয়েছে এবং এখনো কেউ এটি নবায়ন করেননি।",
+  "escalationManyTitle": "শেয়ার করা রেকর্ড নবায়ন করতে হবে",
+  "escalationManyBody": "{count}টি শেয়ার করা রেকর্ডের মেয়াদ শিগগির শেষ হবে বা শেষ হয়ে গেছে, এবং এখনো কেউ সেগুলো নবায়ন করেননি: {names}।",
+  "namesMore": "{names} এবং আরও {count}টি",
+  "lockedRecord": "একটি লক করা রেকর্ড",
+  "lockedRecordInList": "একটি লক করা রেকর্ড",
+  "updateReceivedTitle": "আপডেট পাওয়া গেছে",
+  "updateReceivedBody": "{person} {name}-এর জন্য একটি আপডেট পাঠিয়েছেন। পরিবার স্ক্রিনে এটি দেখুন।",
+  "securityNewSignInTitle": "আপনার অ্যাকাউন্টে নতুন সাইন ইন",
+  "securityNewSignInBody": "{device}-এ আপনার Vaultara অ্যাকাউন্টে সাইন ইন করা হয়েছে। এটি যদি আপনি না হয়ে থাকেন, তাহলে আপনার ইমেইল দেখুন।",
+  "securityNewSignInBodyNoDevice": "একটি নতুন ডিভাইসে আপনার Vaultara অ্যাকাউন্টে সাইন ইন করা হয়েছে। এটি যদি আপনি না হয়ে থাকেন, তাহলে আপনার ইমেইল দেখুন।"
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Påmindelse til husstanden",
+  "escalationBodyDays": "{name} udløber om {days} dage, og ingen har fornyet den endnu.",
+  "escalationBodyTomorrow": "{name} udløber i morgen, og ingen har fornyet den endnu.",
+  "escalationBodyToday": "{name} udløber i dag, og ingen har fornyet den endnu.",
+  "escalationBodyYesterday": "{name} udløb i går, og ingen har fornyet den endnu.",
+  "escalationBodyExpired": "{name} udløb for {days} dage siden, og ingen har fornyet den endnu.",
+  "escalationManyTitle": "Delte poster skal fornyes",
+  "escalationManyBody": "{count} delte poster udløber snart eller er udløbet, og ingen har fornyet dem endnu: {names}.",
+  "namesMore": "{names} og {count} mere",
+  "lockedRecord": "En låst post",
+  "lockedRecordInList": "en låst post",
+  "updateReceivedTitle": "Opdatering modtaget",
+  "updateReceivedBody": "{person} har sendt en opdatering til {name}. Se den på skærmen Familie.",
+  "securityNewSignInTitle": "Nyt login på din konto",
+  "securityNewSignInBody": "Der blev logget ind på din Vaultara-konto på {device}. Hvis det ikke var dig, så tjek din e-mail.",
+  "securityNewSignInBodyNoDevice": "Der blev logget ind på din Vaultara-konto på en ny enhed. Hvis det ikke var dig, så tjek din e-mail."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "हाउसहोल्ड रिमाइंडर",
+  "escalationBodyDays": "{name} ची मुदत {days} दिवसांत संपते आणि अजून कोणीही नूतनीकरण केलेले नाही.",
+  "escalationBodyTomorrow": "{name} ची मुदत उद्या संपते आणि अजून कोणीही नूतनीकरण केलेले नाही.",
+  "escalationBodyToday": "{name} ची मुदत आज संपते आणि अजून कोणीही नूतनीकरण केलेले नाही.",
+  "escalationBodyYesterday": "{name} ची मुदत काल संपली आणि अजून कोणीही नूतनीकरण केलेले नाही.",
+  "escalationBodyExpired": "{name} ची मुदत {days} दिवसांपूर्वी संपली आणि अजून कोणीही नूतनीकरण केलेले नाही.",
+  "escalationManyTitle": "शेअर केलेल्या नोंदींचे नूतनीकरण आवश्यक",
+  "escalationManyBody": "{count} शेअर केलेल्या नोंदींची मुदत लवकरच संपते किंवा संपली आहे आणि अजून कोणीही नूतनीकरण केलेले नाही: {names}.",
+  "namesMore": "{names} आणि आणखी {count}",
+  "lockedRecord": "लॉक केलेली नोंद",
+  "lockedRecordInList": "लॉक केलेली नोंद",
+  "updateReceivedTitle": "अपडेट मिळाले",
+  "updateReceivedBody": "{person} यांनी {name} साठी अपडेट पाठवले. ते कुटुंब स्क्रीनवर तपासा.",
+  "securityNewSignInTitle": "तुमच्या खात्यात नवीन साइन-इन",
+  "securityNewSignInBody": "{device} वर तुमच्या Vaultara खात्यात साइन इन करण्यात आले. हे तुम्ही नसल्यास, तुमचा ईमेल तपासा.",
+  "securityNewSignInBodyNoDevice": "नवीन डिव्हाइसवर तुमच्या Vaultara खात्यात साइन इन करण्यात आले. हे तुम्ही नसल्यास, तुमचा ईमेल तपासा."
+}

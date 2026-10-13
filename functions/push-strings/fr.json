@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Rappel du foyer",
+  "escalationBodyDays": "{name} expire dans {days} jours et personne ne l’a encore renouvelé.",
+  "escalationBodyTomorrow": "{name} expire demain et personne ne l’a encore renouvelé.",
+  "escalationBodyToday": "{name} expire aujourd’hui et personne ne l’a encore renouvelé.",
+  "escalationBodyYesterday": "{name} a expiré hier et personne ne l’a encore renouvelé.",
+  "escalationBodyExpired": "{name} a expiré il y a {days} jours et personne ne l’a encore renouvelé.",
+  "escalationManyTitle": "Des enregistrements partagés sont à renouveler",
+  "escalationManyBody": "{count} enregistrements partagés expirent bientôt ou ont expiré, et personne ne les a encore renouvelés : {names}.",
+  "namesMore": "{names} et {count} de plus",
+  "lockedRecord": "Un enregistrement verrouillé",
+  "lockedRecordInList": "un enregistrement verrouillé",
+  "updateReceivedTitle": "Mise à jour reçue",
+  "updateReceivedBody": "{person} a envoyé une mise à jour pour {name}. Vérifiez-la sur l’écran Famille.",
+  "securityNewSignInTitle": "Nouvelle connexion à votre compte",
+  "securityNewSignInBody": "Une connexion à votre compte Vaultara a eu lieu sur {device}. Si ce n'était pas vous, consultez vos e-mails.",
+  "securityNewSignInBodyNoDevice": "Une connexion à votre compte Vaultara a eu lieu sur un nouvel appareil. Si ce n'était pas vous, consultez vos e-mails."
+}

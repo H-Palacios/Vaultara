@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "ගෘහයේ මතක් කිරීම",
+  "escalationBodyDays": "{name} දින {days}කින් කල් ඉකුත් වන අතර තවම කිසිවෙකු එය අලුත් කර නැත.",
+  "escalationBodyTomorrow": "{name} හෙට කල් ඉකුත් වන අතර තවම කිසිවෙකු එය අලුත් කර නැත.",
+  "escalationBodyToday": "{name} අද කල් ඉකුත් වන අතර තවම කිසිවෙකු එය අලුත් කර නැත.",
+  "escalationBodyYesterday": "{name} ඊයේ කල් ඉකුත් වූ අතර තවම කිසිවෙකු එය අලුත් කර නැත.",
+  "escalationBodyExpired": "{name} දින {days}කට පෙර කල් ඉකුත් වූ අතර තවම කිසිවෙකු එය අලුත් කර නැත.",
+  "escalationManyTitle": "බෙදාගත් වාර්තා අලුත් කළ යුතුයි",
+  "escalationManyBody": "බෙදාගත් වාර්තා {count}ක් ඉක්මනින් කල් ඉකුත් වේ හෝ කල් ඉකුත් වී ඇත, තවම කිසිවෙකු ඒවා අලුත් කර නැත: {names}.",
+  "namesMore": "{names} සහ තවත් {count}ක්",
+  "lockedRecord": "අගුළු දමා ඇති වාර්තාවක්",
+  "lockedRecordInList": "අගුළු දමා ඇති වාර්තාවක්",
+  "updateReceivedTitle": "යාවත්කාලීනය ලැබුණා",
+  "updateReceivedBody": "{person} විසින් {name} සඳහා යාවත්කාලීනයක් එවා ඇත. එය පවුල තිරයේ පරීක්ෂා කරන්න.",
+  "securityNewSignInTitle": "ඔබේ ගිණුමට නව පිවිසීමක්",
+  "securityNewSignInBody": "{device} මත ඔබේ Vaultara ගිණුමට පිවිසී ඇත. මෙය ඔබ නොවේ නම්, ඔබේ ඊමේල් පරීක්ෂා කරන්න.",
+  "securityNewSignInBodyNoDevice": "නව උපාංගයක් මත ඔබේ Vaultara ගිණුමට පිවිසී ඇත. මෙය ඔබ නොවේ නම්, ඔබේ ඊමේල් පරීක්ෂා කරන්න."
+}

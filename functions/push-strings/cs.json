@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Připomenutí pro domácnost",
+  "escalationBodyDays": "Platnost položky {name} brzy skončí (zbývá dní: {days}) a nikdo ji zatím neobnovil.",
+  "escalationBodyTomorrow": "Platnost položky {name} končí zítra a nikdo ji zatím neobnovil.",
+  "escalationBodyToday": "Platnost položky {name} končí dnes a nikdo ji zatím neobnovil.",
+  "escalationBodyYesterday": "Platnost položky {name} skončila včera a nikdo ji zatím neobnovil.",
+  "escalationBodyExpired": "Platnost položky {name} skončila před {days} dny a nikdo ji zatím neobnovil.",
+  "escalationManyTitle": "Sdílené záznamy je třeba obnovit",
+  "escalationManyBody": "Sdílené záznamy, kterým brzy končí platnost nebo už skončila a které nikdo zatím neobnovil (počet: {count}): {names}.",
+  "namesMore": "{names} a dalších {count}",
+  "lockedRecord": "Zamčený záznam",
+  "lockedRecordInList": "zamčený záznam",
+  "updateReceivedTitle": "Aktualizace přijata",
+  "updateReceivedBody": "Osoba {person} poslala aktualizaci položky {name}. Zkontrolujte ji na obrazovce Rodina.",
+  "securityNewSignInTitle": "Nové přihlášení k vašemu účtu",
+  "securityNewSignInBody": "K vašemu účtu Vaultara se přihlásilo zařízení {device}. Pokud jste to nebyli vy, zkontrolujte e-mail.",
+  "securityNewSignInBodyNoDevice": "K vašemu účtu Vaultara se přihlásilo nové zařízení. Pokud jste to nebyli vy, zkontrolujte e-mail."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Hane hatırlatması",
+  "escalationBodyDays": "{name} {days} gün içinde sona eriyor ve henüz kimse yenilemedi.",
+  "escalationBodyTomorrow": "{name} yarın sona eriyor ve henüz kimse yenilemedi.",
+  "escalationBodyToday": "{name} bugün sona eriyor ve henüz kimse yenilemedi.",
+  "escalationBodyYesterday": "{name} dün sona erdi ve henüz kimse yenilemedi.",
+  "escalationBodyExpired": "{name} {days} gün önce sona erdi ve henüz kimse yenilemedi.",
+  "escalationManyTitle": "Paylaşılan kayıtların yenilenmesi gerekiyor",
+  "escalationManyBody": "{count} paylaşılan kaydın süresi yakında doluyor veya doldu ve henüz kimse yenilemedi: {names}.",
+  "namesMore": "{names} ve {count} tane daha",
+  "lockedRecord": "Kilitli bir kayıt",
+  "lockedRecordInList": "kilitli bir kayıt",
+  "updateReceivedTitle": "Güncelleme alındı",
+  "updateReceivedBody": "{person}, {name} için bir güncelleme gönderdi. Aile ekranından inceleyin.",
+  "securityNewSignInTitle": "Hesabınızda yeni giriş",
+  "securityNewSignInBody": "Vaultara hesabınıza {device} cihazında giriş yapıldı. Bu siz değilseniz e-postanızı kontrol edin.",
+  "securityNewSignInBodyNoDevice": "Vaultara hesabınıza yeni bir cihazda giriş yapıldı. Bu siz değilseniz e-postanızı kontrol edin."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Mājsaimniecības atgādinājums",
+  "escalationBodyDays": "{name} termiņš beidzas pēc {days} dienām, un neviens to vēl nav atjaunojis.",
+  "escalationBodyTomorrow": "{name} termiņš beidzas rīt, un neviens to vēl nav atjaunojis.",
+  "escalationBodyToday": "{name} termiņš beidzas šodien, un neviens to vēl nav atjaunojis.",
+  "escalationBodyYesterday": "{name} termiņš beidzās vakar, un neviens to vēl nav atjaunojis.",
+  "escalationBodyExpired": "{name} termiņš beidzās pirms {days} dienām, un neviens to vēl nav atjaunojis.",
+  "escalationManyTitle": "Kopīgotie ieraksti jāatjauno",
+  "escalationManyBody": "Kopīgotajiem ierakstiem (kopā {count}) drīz beigsies termiņš vai tas jau ir beidzies, un neviens tos vēl nav atjaunojis: {names}.",
+  "namesMore": "{names} un vēl {count}",
+  "lockedRecord": "Bloķēts ieraksts",
+  "lockedRecordInList": "bloķēts ieraksts",
+  "updateReceivedTitle": "Atjauninājums saņemts",
+  "updateReceivedBody": "{person} nosūtīja atjauninājumu ierakstam {name}. Pārbaudiet to ekrānā Ģimene.",
+  "securityNewSignInTitle": "Jauna pieteikšanās jūsu kontā",
+  "securityNewSignInBody": "Jūsu Vaultara kontā tika veikta pieteikšanās ierīcē {device}. Ja tas nebijāt jūs, pārbaudiet savu e-pastu.",
+  "securityNewSignInBodyNoDevice": "Jūsu Vaultara kontā tika veikta pieteikšanās jaunā ierīcē. Ja tas nebijāt jūs, pārbaudiet savu e-pastu."
+}

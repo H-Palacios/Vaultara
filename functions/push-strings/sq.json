@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Kujtesë për grupin e shtëpisë",
+  "escalationBodyDays": "{name} skadon pas {days} ditësh dhe askush nuk e ka rinovuar ende.",
+  "escalationBodyTomorrow": "{name} skadon nesër dhe askush nuk e ka rinovuar ende.",
+  "escalationBodyToday": "{name} skadon sot dhe askush nuk e ka rinovuar ende.",
+  "escalationBodyYesterday": "{name} skadoi dje dhe askush nuk e ka rinovuar ende.",
+  "escalationBodyExpired": "{name} skadoi {days} ditë më parë dhe askush nuk e ka rinovuar ende.",
+  "escalationManyTitle": "Regjistrimet e ndara kanë nevojë për rinovim",
+  "escalationManyBody": "{count} regjistrime të ndara skadojnë së shpejti ose kanë skaduar, dhe askush nuk i ka rinovuar ende: {names}.",
+  "namesMore": "{names} dhe {count} të tjera",
+  "lockedRecord": "Një regjistrim i kyçur",
+  "lockedRecordInList": "një regjistrim i kyçur",
+  "updateReceivedTitle": "Përditësimi u mor",
+  "updateReceivedBody": "{person} dërgoi një përditësim për {name}. Shqyrtojeni te ekrani Familja.",
+  "securityNewSignInTitle": "Hyrje e re në llogarinë tuaj",
+  "securityNewSignInBody": "U hyrë në llogarinë tuaj Vaultara në {device}. Nëse nuk ishit ju, kontrolloni emailin.",
+  "securityNewSignInBodyNoDevice": "U hyrë në llogarinë tuaj Vaultara në një pajisje të re. Nëse nuk ishit ju, kontrolloni emailin."
+}

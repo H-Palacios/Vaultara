@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "घरधुरीको रिमाइन्डर",
+  "escalationBodyDays": "{name} को म्याद {days} दिनमा सकिन्छ र अहिलेसम्म कसैले नवीकरण गरेको छैन।",
+  "escalationBodyTomorrow": "{name} को म्याद भोलि सकिन्छ र अहिलेसम्म कसैले नवीकरण गरेको छैन।",
+  "escalationBodyToday": "{name} को म्याद आज सकिन्छ र अहिलेसम्म कसैले नवीकरण गरेको छैन।",
+  "escalationBodyYesterday": "{name} को म्याद हिजो सकियो र अहिलेसम्म कसैले नवीकरण गरेको छैन।",
+  "escalationBodyExpired": "{name} को म्याद {days} दिन अघि सकियो र अहिलेसम्म कसैले नवीकरण गरेको छैन।",
+  "escalationManyTitle": "साझा रेकर्डहरू नवीकरण गर्नुपर्छ",
+  "escalationManyBody": "{count} साझा रेकर्डको म्याद चाँडै सकिँदै छ वा सकिसकेको छ, र अहिलेसम्म कसैले नवीकरण गरेको छैन: {names}।",
+  "namesMore": "{names} र थप {count}",
+  "lockedRecord": "लक गरिएको रेकर्ड",
+  "lockedRecordInList": "लक गरिएको रेकर्ड",
+  "updateReceivedTitle": "अद्यावधिक प्राप्त भयो",
+  "updateReceivedBody": "{person} ले {name} को अद्यावधिक पठाउनुभयो। परिवार स्क्रिनमा जाँच्नुहोस्।",
+  "securityNewSignInTitle": "तपाईंको खातामा नयाँ साइन इन",
+  "securityNewSignInBody": "{device} मा तपाईंको Vaultara खातामा साइन इन गरियो। यो तपाईं हुनुहुन्नथ्यो भने आफ्नो इमेल हेर्नुहोस्।",
+  "securityNewSignInBodyNoDevice": "नयाँ उपकरणमा तपाईंको Vaultara खातामा साइन इन गरियो। यो तपाईं हुनुहुन्नथ्यो भने आफ्नो इमेल हेर्नुहोस्।"
+}

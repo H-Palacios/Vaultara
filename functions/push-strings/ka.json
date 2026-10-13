@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "შინამეურნეობის შეხსენება",
+  "escalationBodyDays": "{name}-ის ვადა იწურება {days} დღეში და ჯერ არავის განუახლებია.",
+  "escalationBodyTomorrow": "{name}-ის ვადა ხვალ იწურება და ჯერ არავის განუახლებია.",
+  "escalationBodyToday": "{name}-ის ვადა დღეს იწურება და ჯერ არავის განუახლებია.",
+  "escalationBodyYesterday": "{name}-ის ვადა გუშინ ამოიწურა და ჯერ არავის განუახლებია.",
+  "escalationBodyExpired": "{name}-ის ვადა {days} დღის წინ ამოიწურა და ჯერ არავის განუახლებია.",
+  "escalationManyTitle": "გაზიარებული ჩანაწერები განახლებას საჭიროებს",
+  "escalationManyBody": "{count} გაზიარებულ ჩანაწერს მალე ვადა ეწურება ან უკვე გაუვიდა და ჯერ არავის განუახლებია: {names}.",
+  "namesMore": "{names} და კიდევ {count}",
+  "lockedRecord": "ჩაკეტილი ჩანაწერი",
+  "lockedRecordInList": "ჩაკეტილი ჩანაწერი",
+  "updateReceivedTitle": "განახლება მიღებულია",
+  "updateReceivedBody": "მიღებულია განახლება ჩანაწერისთვის {name}, გამომგზავნი: {person}. გადახედეთ მას ოჯახის ეკრანზე.",
+  "securityNewSignInTitle": "ახალი შესვლა თქვენს ანგარიშზე",
+  "securityNewSignInBody": "თქვენს Vaultara ანგარიშზე შევიდნენ მოწყობილობიდან {device}. თუ ეს თქვენ არ იყავით, შეამოწმეთ ელფოსტა.",
+  "securityNewSignInBodyNoDevice": "თქვენს Vaultara ანგარიშზე შევიდნენ ახალი მოწყობილობიდან. თუ ეს თქვენ არ იყავით, შეამოწმეთ ელფოსტა."
+}

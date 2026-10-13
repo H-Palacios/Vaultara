@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Herinnering voor het huishouden",
+  "escalationBodyDays": "{name} verloopt over {days} dagen en niemand heeft het nog vernieuwd.",
+  "escalationBodyTomorrow": "{name} verloopt morgen en niemand heeft het nog vernieuwd.",
+  "escalationBodyToday": "{name} verloopt vandaag en niemand heeft het nog vernieuwd.",
+  "escalationBodyYesterday": "{name} is gisteren verlopen en niemand heeft het nog vernieuwd.",
+  "escalationBodyExpired": "{name} is {days} dagen geleden verlopen en niemand heeft het nog vernieuwd.",
+  "escalationManyTitle": "Gedeelde records moeten worden vernieuwd",
+  "escalationManyBody": "{count} gedeelde records verlopen binnenkort of zijn verlopen en niemand heeft ze nog vernieuwd: {names}.",
+  "namesMore": "{names} en nog {count}",
+  "lockedRecord": "Een vergrendeld record",
+  "lockedRecordInList": "een vergrendeld record",
+  "updateReceivedTitle": "Update ontvangen",
+  "updateReceivedBody": "{person} heeft een update gestuurd voor {name}. Bekijk die op het scherm Gezin.",
+  "securityNewSignInTitle": "Nieuwe inlog op je account",
+  "securityNewSignInBody": "Er is op je Vaultara-account ingelogd op {device}. Was jij dit niet, controleer dan je e-mail.",
+  "securityNewSignInBodyNoDevice": "Er is op je Vaultara-account ingelogd op een nieuw apparaat. Was jij dit niet, controleer dan je e-mail."
+}

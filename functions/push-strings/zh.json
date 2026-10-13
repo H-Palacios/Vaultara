@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "家庭提醒",
+  "escalationBodyDays": "{name} 将在 {days} 天后到期，还没有人办理续期。",
+  "escalationBodyTomorrow": "{name} 明天到期，还没有人办理续期。",
+  "escalationBodyToday": "{name} 今天到期，还没有人办理续期。",
+  "escalationBodyYesterday": "{name} 昨天已到期，还没有人办理续期。",
+  "escalationBodyExpired": "{name} 已于 {days} 天前到期，还没有人办理续期。",
+  "escalationManyTitle": "共享记录需要续期",
+  "escalationManyBody": "有 {count} 条共享记录即将到期或已到期，还没有人办理续期：{names}。",
+  "namesMore": "{names}，以及另外 {count} 条",
+  "lockedRecord": "一条已锁定的记录",
+  "lockedRecordInList": "一条已锁定的记录",
+  "updateReceivedTitle": "收到更新",
+  "updateReceivedBody": "{person} 发来了 {name} 的更新。请在家庭页面查看。",
+  "securityNewSignInTitle": "您的账户有新的登录",
+  "securityNewSignInBody": "您的 Vaultara 账户已在 {device} 上登录。如果这不是您本人的操作，请查看您的电子邮件。",
+  "securityNewSignInBodyNoDevice": "您的 Vaultara 账户已在一台新设备上登录。如果这不是您本人的操作，请查看您的电子邮件。"
+}

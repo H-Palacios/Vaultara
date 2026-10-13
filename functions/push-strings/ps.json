@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "د کور یادونه",
+  "escalationBodyDays": "{name} په {days} ورځو کې پای ته رسیږي او تر اوسه چا نوی نه کړی.",
+  "escalationBodyTomorrow": "{name} سبا پای ته رسیږي او تر اوسه چا نوی نه کړی.",
+  "escalationBodyToday": "{name} نن پای ته رسیږي او تر اوسه چا نوی نه کړی.",
+  "escalationBodyYesterday": "{name} پرون پای ته ورسید او تر اوسه چا نوی نه کړی.",
+  "escalationBodyExpired": "{name} {days} ورځې وړاندې پای ته ورسید او تر اوسه چا نوی نه کړی.",
+  "escalationManyTitle": "شریک شوي ریکارډونه باید نوي شي",
+  "escalationManyBody": "{count} شریک شوي ریکارډونه ژر پای ته رسیږي یا پای ته رسېدلي، او تر اوسه چا نوي نه کړي: {names}.",
+  "namesMore": "{names} او نور {count}",
+  "lockedRecord": "بند شوی ریکارډ",
+  "lockedRecordInList": "بند شوی ریکارډ",
+  "updateReceivedTitle": "اپډېټ ترلاسه شو",
+  "updateReceivedBody": "{person} د {name} لپاره اپډېټ واستاوه. په کورنۍ سکرین کې یې وګورئ.",
+  "securityNewSignInTitle": "ستاسو حساب ته نوی ننوتل",
+  "securityNewSignInBody": "ستاسو د Vaultara حساب ته په {device} کې ننوتل شوي. که دا تاسو نه وئ، خپل برېښنالیک وګورئ.",
+  "securityNewSignInBodyNoDevice": "ستاسو د Vaultara حساب ته په یوه نوې وسیله کې ننوتل شوي. که دا تاسو نه وئ، خپل برېښنالیک وګورئ."
+}

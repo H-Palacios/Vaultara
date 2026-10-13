@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Meabhrúchán don líon tí",
+  "escalationBodyDays": "Éagann {name} i gceann {days} lá agus níl aon duine tar éis é a athnuachan fós.",
+  "escalationBodyTomorrow": "Éagann {name} amárach agus níl aon duine tar éis é a athnuachan fós.",
+  "escalationBodyToday": "Éagann {name} inniu agus níl aon duine tar éis é a athnuachan fós.",
+  "escalationBodyYesterday": "D’éag {name} inné agus níl aon duine tar éis é a athnuachan fós.",
+  "escalationBodyExpired": "D’éag {name} {days} lá ó shin agus níl aon duine tar éis é a athnuachan fós.",
+  "escalationManyTitle": "Is gá taifid roinnte a athnuachan",
+  "escalationManyBody": "Tá {count} taifead roinnte ag dul in éag go luath nó d’éag siad, agus níl aon duine tar éis iad a athnuachan fós: {names}.",
+  "namesMore": "{names} agus {count} eile",
+  "lockedRecord": "Taifead faoi ghlas",
+  "lockedRecordInList": "taifead faoi ghlas",
+  "updateReceivedTitle": "Nuashonrú faighte",
+  "updateReceivedBody": "Sheol {person} nuashonrú le haghaidh {name}. Athbhreithnigh é ar scáileán an Teaghlaigh.",
+  "securityNewSignInTitle": "Síniú isteach nua i do chuntas",
+  "securityNewSignInBody": "Síníodh isteach i do chuntas Vaultara ar {device}. Murab tusa a bhí ann, seiceáil do ríomhphost.",
+  "securityNewSignInBodyNoDevice": "Síníodh isteach i do chuntas Vaultara ar ghléas nua. Murab tusa a bhí ann, seiceáil do ríomhphost."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Xonadon eslatmasi",
+  "escalationBodyDays": "{name} muddati {days} kundan keyin tugaydi, lekin hali hech kim uzaytirmagan.",
+  "escalationBodyTomorrow": "{name} muddati ertaga tugaydi, lekin hali hech kim uzaytirmagan.",
+  "escalationBodyToday": "{name} muddati bugun tugaydi, lekin hali hech kim uzaytirmagan.",
+  "escalationBodyYesterday": "{name} muddati kecha tugagan, lekin hali hech kim uzaytirmagan.",
+  "escalationBodyExpired": "{name} muddati {days} kun oldin tugagan, lekin hali hech kim uzaytirmagan.",
+  "escalationManyTitle": "Umumiy yozuvlarni uzaytirish kerak",
+  "escalationManyBody": "{count} ta umumiy yozuvning muddati yaqinda tugaydi yoki tugagan, lekin hali hech kim uzaytirmagan: {names}.",
+  "namesMore": "{names} va yana {count} ta",
+  "lockedRecord": "Qulflangan yozuv",
+  "lockedRecordInList": "qulflangan yozuv",
+  "updateReceivedTitle": "Yangilanish qabul qilindi",
+  "updateReceivedBody": "{person} {name} uchun yangilanish yubordi. Uni Oila ekranida koʻrib chiqing.",
+  "securityNewSignInTitle": "Hisobingizga yangi kirish",
+  "securityNewSignInBody": "Vaultara hisobingizga {device} qurilmasida kirildi. Agar bu siz boʻlmasangiz, e-pochtangizni tekshiring.",
+  "securityNewSignInBodyNoDevice": "Vaultara hisobingizga yangi qurilmada kirildi. Agar bu siz boʻlmasangiz, e-pochtangizni tekshiring."
+}

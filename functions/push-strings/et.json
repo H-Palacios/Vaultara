@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Leibkonna meeldetuletus",
+  "escalationBodyDays": "{name} aegub {days} päeva pärast ja keegi pole seda veel uuendanud.",
+  "escalationBodyTomorrow": "{name} aegub homme ja keegi pole seda veel uuendanud.",
+  "escalationBodyToday": "{name} aegub täna ja keegi pole seda veel uuendanud.",
+  "escalationBodyYesterday": "{name} aegus eile ja keegi pole seda veel uuendanud.",
+  "escalationBodyExpired": "{name} aegus {days} päeva tagasi ja keegi pole seda veel uuendanud.",
+  "escalationManyTitle": "Jagatud kirjed vajavad uuendamist",
+  "escalationManyBody": "{count} jagatud kirjet aeguvad peagi või on aegunud ja keegi pole neid veel uuendanud: {names}.",
+  "namesMore": "{names} ja veel {count}",
+  "lockedRecord": "Lukustatud kirje",
+  "lockedRecordInList": "lukustatud kirje",
+  "updateReceivedTitle": "Uuendus saadud",
+  "updateReceivedBody": "{person} saatis uuenduse kirje {name} kohta. Vaata see üle ekraanil Pere.",
+  "securityNewSignInTitle": "Uus sisselogimine sinu kontole",
+  "securityNewSignInBody": "Sinu Vaultara kontole logiti sisse seadmest {device}. Kui see ei olnud sina, kontrolli oma e-posti.",
+  "securityNewSignInBodyNoDevice": "Sinu Vaultara kontole logiti sisse uuest seadmest. Kui see ei olnud sina, kontrolli oma e-posti."
+}

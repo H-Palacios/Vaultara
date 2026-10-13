@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Pengingat rumah tangga",
+  "escalationBodyDays": "{name} kedaluwarsa dalam {days} hari dan belum ada yang memperpanjangnya.",
+  "escalationBodyTomorrow": "{name} kedaluwarsa besok dan belum ada yang memperpanjangnya.",
+  "escalationBodyToday": "{name} kedaluwarsa hari ini dan belum ada yang memperpanjangnya.",
+  "escalationBodyYesterday": "{name} kedaluwarsa kemarin dan belum ada yang memperpanjangnya.",
+  "escalationBodyExpired": "{name} kedaluwarsa {days} hari lalu dan belum ada yang memperpanjangnya.",
+  "escalationManyTitle": "Catatan bersama perlu diperpanjang",
+  "escalationManyBody": "{count} catatan bersama segera kedaluwarsa atau sudah kedaluwarsa, dan belum ada yang memperpanjangnya: {names}.",
+  "namesMore": "{names} dan {count} lainnya",
+  "lockedRecord": "Catatan terkunci",
+  "lockedRecordInList": "catatan terkunci",
+  "updateReceivedTitle": "Pembaruan diterima",
+  "updateReceivedBody": "{person} mengirim pembaruan untuk {name}. Periksa di layar Keluarga.",
+  "securityNewSignInTitle": "Aktivitas masuk baru ke akun Anda",
+  "securityNewSignInBody": "Akun Vaultara Anda dimasuki di {device}. Jika ini bukan Anda, periksa email Anda.",
+  "securityNewSignInBodyNoDevice": "Akun Vaultara Anda dimasuki di perangkat baru. Jika ini bukan Anda, periksa email Anda."
+}

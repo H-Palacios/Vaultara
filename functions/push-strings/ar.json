@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "تذكير للأسرة",
+  "escalationBodyDays": "ستنتهي صلاحية {name} قريبًا (الأيام المتبقية: {days}) ولم يتم تجديده بعد.",
+  "escalationBodyTomorrow": "تنتهي صلاحية {name} غدًا ولم يتم تجديده بعد.",
+  "escalationBodyToday": "تنتهي صلاحية {name} اليوم ولم يتم تجديده بعد.",
+  "escalationBodyYesterday": "انتهت صلاحية {name} أمس ولم يتم تجديده بعد.",
+  "escalationBodyExpired": "انتهت صلاحية {name} ولم يتم تجديده بعد. الأيام منذ الانتهاء: {days}.",
+  "escalationManyTitle": "سجلات مشتركة تحتاج إلى تجديد",
+  "escalationManyBody": "عدد السجلات المشتركة التي تنتهي صلاحيتها قريبًا أو انتهت ولم يتم تجديدها بعد: {count}. وهي: {names}.",
+  "namesMore": "{names} و{count} أخرى",
+  "lockedRecord": "سجل مقفل",
+  "lockedRecordInList": "سجل مقفل",
+  "updateReceivedTitle": "تم استلام تحديث",
+  "updateReceivedBody": "أرسل {person} تحديثًا لـ {name}. راجعه في شاشة العائلة.",
+  "securityNewSignInTitle": "تسجيل دخول جديد إلى حسابك",
+  "securityNewSignInBody": "تم تسجيل الدخول إلى حسابك في Vaultara على {device}. إذا لم تكن أنت، فتحقق من بريدك الإلكتروني.",
+  "securityNewSignInBodyNoDevice": "تم تسجيل الدخول إلى حسابك في Vaultara على جهاز جديد. إذا لم تكن أنت، فتحقق من بريدك الإلكتروني."
+}

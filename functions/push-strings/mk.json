@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Потсетник за домаќинството",
+  "escalationBodyDays": "{name} истекува за {days} дена и сè уште никој не го обновил.",
+  "escalationBodyTomorrow": "{name} истекува утре и сè уште никој не го обновил.",
+  "escalationBodyToday": "{name} истекува денес и сè уште никој не го обновил.",
+  "escalationBodyYesterday": "{name} истече вчера и сè уште никој не го обновил.",
+  "escalationBodyExpired": "{name} истече пред {days} дена и сè уште никој не го обновил.",
+  "escalationManyTitle": "Споделените записи треба да се обноват",
+  "escalationManyBody": "{count} споделени записа наскоро истекуваат или веќе истекле и сè уште никој не ги обновил: {names}.",
+  "namesMore": "{names} и уште {count}",
+  "lockedRecord": "Заклучен запис",
+  "lockedRecordInList": "заклучен запис",
+  "updateReceivedTitle": "Ажурирањето е примено",
+  "updateReceivedBody": "{person} испрати ажурирање за {name}. Прегледајте го на екранот Семејство.",
+  "securityNewSignInTitle": "Нова најава на вашата сметка",
+  "securityNewSignInBody": "Беше извршена најава на вашата сметка на Vaultara на {device}. Ако ова не бевте вие, проверете ја вашата е-пошта.",
+  "securityNewSignInBodyNoDevice": "Беше извршена најава на вашата сметка на Vaultara на нов уред. Ако ова не бевте вие, проверете ја вашата е-пошта."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Erinnerung für den Haushalt",
+  "escalationBodyDays": "{name} läuft in {days} Tagen ab und noch niemand hat verlängert.",
+  "escalationBodyTomorrow": "{name} läuft morgen ab und noch niemand hat verlängert.",
+  "escalationBodyToday": "{name} läuft heute ab und noch niemand hat verlängert.",
+  "escalationBodyYesterday": "{name} ist gestern abgelaufen und noch niemand hat verlängert.",
+  "escalationBodyExpired": "{name} ist vor {days} Tagen abgelaufen und noch niemand hat verlängert.",
+  "escalationManyTitle": "Geteilte Einträge müssen verlängert werden",
+  "escalationManyBody": "{count} geteilte Einträge laufen bald ab oder sind abgelaufen und noch niemand hat sie verlängert: {names}.",
+  "namesMore": "{names} und {count} weitere",
+  "lockedRecord": "Ein gesperrter Eintrag",
+  "lockedRecordInList": "ein gesperrter Eintrag",
+  "updateReceivedTitle": "Update erhalten",
+  "updateReceivedBody": "{person} hat ein Update für {name} gesendet. Prüfe es auf dem Bildschirm Familie.",
+  "securityNewSignInTitle": "Neue Anmeldung bei deinem Konto",
+  "securityNewSignInBody": "Dein Vaultara-Konto wurde auf {device} angemeldet. Wenn du das nicht warst, prüfe deine E-Mails.",
+  "securityNewSignInBodyNoDevice": "Dein Vaultara-Konto wurde auf einem neuen Gerät angemeldet. Wenn du das nicht warst, prüfe deine E-Mails."
+}

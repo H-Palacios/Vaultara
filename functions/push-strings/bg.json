@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Напомняне за домакинството",
+  "escalationBodyDays": "{name} изтича след {days} дни и все още никой не го е подновил.",
+  "escalationBodyTomorrow": "{name} изтича утре и все още никой не го е подновил.",
+  "escalationBodyToday": "{name} изтича днес и все още никой не го е подновил.",
+  "escalationBodyYesterday": "{name} изтече вчера и все още никой не го е подновил.",
+  "escalationBodyExpired": "{name} изтече преди {days} дни и все още никой не го е подновил.",
+  "escalationManyTitle": "Споделените записи трябва да се подновят",
+  "escalationManyBody": "{count} споделени записа скоро изтичат или вече са изтекли и все още никой не ги е подновил: {names}.",
+  "namesMore": "{names} и още {count}",
+  "lockedRecord": "Заключен запис",
+  "lockedRecordInList": "заключен запис",
+  "updateReceivedTitle": "Получена актуализация",
+  "updateReceivedBody": "{person} изпрати актуализация за {name}. Прегледайте я на екрана Семейство.",
+  "securityNewSignInTitle": "Нов вход в акаунта ви",
+  "securityNewSignInBody": "Извършен е вход в акаунта ви във Vaultara на {device}. Ако това не сте били вие, проверете имейла си.",
+  "securityNewSignInBodyNoDevice": "Извършен е вход в акаунта ви във Vaultara на ново устройство. Ако това не сте били вие, проверете имейла си."
+}

@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Áminning fyrir heimilið",
+  "escalationBodyDays": "{name} rennur út eftir {days} daga og enginn hefur endurnýjað það.",
+  "escalationBodyTomorrow": "{name} rennur út á morgun og enginn hefur endurnýjað það.",
+  "escalationBodyToday": "{name} rennur út í dag og enginn hefur endurnýjað það.",
+  "escalationBodyYesterday": "{name} rann út í gær og enginn hefur endurnýjað það.",
+  "escalationBodyExpired": "{name} rann út fyrir {days} dögum og enginn hefur endurnýjað það.",
+  "escalationManyTitle": "Sameiginlegar færslur þarf að endurnýja",
+  "escalationManyBody": "{count} sameiginlegar færslur renna bráðum út eða eru útrunnar og enginn hefur endurnýjað þær: {names}.",
+  "namesMore": "{names} og {count} til viðbótar",
+  "lockedRecord": "Læst færsla",
+  "lockedRecordInList": "læst færsla",
+  "updateReceivedTitle": "Uppfærsla barst",
+  "updateReceivedBody": "{person} sendi uppfærslu fyrir {name}. Yfirfarðu hana á skjánum Fjölskylda.",
+  "securityNewSignInTitle": "Ný innskráning á reikninginn þinn",
+  "securityNewSignInBody": "Skráð var inn á Vaultara-reikninginn þinn á {device}. Ef þetta varst ekki þú skaltu athuga tölvupóstinn þinn.",
+  "securityNewSignInBodyNoDevice": "Skráð var inn á Vaultara-reikninginn þinn á nýju tæki. Ef þetta varst ekki þú skaltu athuga tölvupóstinn þinn."
+}

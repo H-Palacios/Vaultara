@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Напоминание для домохозяйства",
+  "escalationBodyDays": "Срок «{name}» истекает через {days} дн., а продлением никто не занялся.",
+  "escalationBodyTomorrow": "Срок «{name}» истекает завтра, а продлением никто не занялся.",
+  "escalationBodyToday": "Срок «{name}» истекает сегодня, а продлением никто не занялся.",
+  "escalationBodyYesterday": "Срок «{name}» истёк вчера, а продлением никто не занялся.",
+  "escalationBodyExpired": "Срок «{name}» истёк {days} дн. назад, а продлением никто не занялся.",
+  "escalationManyTitle": "Общие записи нужно продлить",
+  "escalationManyBody": "Срок общих записей (всего {count}) скоро истекает или уже истёк, а продлением никто не занялся: {names}.",
+  "namesMore": "{names} и ещё {count}",
+  "lockedRecord": "Заблокированная запись",
+  "lockedRecordInList": "заблокированная запись",
+  "updateReceivedTitle": "Получено обновление",
+  "updateReceivedBody": "{person} отправил(а) обновление для «{name}». Посмотрите его на экране Семья.",
+  "securityNewSignInTitle": "Новый вход в ваш аккаунт",
+  "securityNewSignInBody": "В ваш аккаунт Vaultara выполнен вход на устройстве {device}. Если это были не вы, проверьте почту.",
+  "securityNewSignInBodyNoDevice": "В ваш аккаунт Vaultara выполнен вход на новом устройстве. Если это были не вы, проверьте почту."
+}

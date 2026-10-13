@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Opomnik za gospodinjstvo",
+  "escalationBodyDays": "Zapis {name} poteče čez {days} dni, obnovil pa ga še nihče ni.",
+  "escalationBodyTomorrow": "Zapis {name} jutri poteče, obnovil pa ga še nihče ni.",
+  "escalationBodyToday": "Zapis {name} danes poteče, obnovil pa ga še nihče ni.",
+  "escalationBodyYesterday": "Zapis {name} je včeraj potekel, obnovil pa ga še nihče ni.",
+  "escalationBodyExpired": "Zapis {name} je potekel pred {days} dnevi, obnovil pa ga še nihče ni.",
+  "escalationManyTitle": "Deljene zapise je treba obnoviti",
+  "escalationManyBody": "Deljeni zapisi ({count}) kmalu potečejo ali so že potekli, obnovil pa jih še nihče ni: {names}.",
+  "namesMore": "{names} in še {count}",
+  "lockedRecord": "Zaklenjen zapis",
+  "lockedRecordInList": "zaklenjen zapis",
+  "updateReceivedTitle": "Posodobitev prejeta",
+  "updateReceivedBody": "Oseba {person} je poslala posodobitev za zapis {name}. Preglejte jo na zaslonu Družina.",
+  "securityNewSignInTitle": "Nova prijava v vaš račun",
+  "securityNewSignInBody": "V vaš račun Vaultara se je nekdo prijavil v napravi {device}. Če to niste bili vi, preverite e-pošto.",
+  "securityNewSignInBodyNoDevice": "V vaš račun Vaultara se je nekdo prijavil v novi napravi. Če to niste bili vi, preverite e-pošto."
+}

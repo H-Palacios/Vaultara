@@ -1,0 +1,91 @@
+{
+  "brand": "VAULTARA",
+  "greeting": "Hi {name},",
+  "greetingNoName": "Hi,",
+  "whenLabel": "When",
+  "deviceLabel": "Device",
+  "networkLabel": "Network",
+  "unknownDevice": "An unknown device",
+  "ifYou": "If this was you, you do not need to do anything.",
+  "ifNotYou": "If this was not you:",
+  "secureButton": "Secure my account",
+  "secureHelp": "The button opens a page where you can choose a new password. After that, open Vaultara, go to Profile > Security and privacy > Your devices and tap Sign out of all other devices.",
+  "support": "Reply to this email or contact {supportEmail}.",
+  "securityFooter": "We send this email to keep your Vaultara account safe. You cannot turn these emails off.",
+  "billingFooter": "We send this email so you always know what is happening with your Vaultara subscription.",
+  "timeUtc": "{time} UTC",
+  "timeOffset": "{time} (UTC{offset})",
+
+  "newSignInSubject": "New sign-in to your Vaultara account",
+  "newSignInHeading": "New sign-in",
+  "newSignInBody": "Your Vaultara account was just signed in to from a device we have not seen before.",
+
+  "passwordChangedSubject": "Your Vaultara password was changed",
+  "passwordChangedHeading": "Password changed",
+  "passwordChangedBody": "The password for your Vaultara account was just changed.",
+
+  "emailChangeRequestedSubject": "A request to change your Vaultara email",
+  "emailChangeRequestedHeading": "Email change requested",
+  "emailChangeRequestedBody": "A request was made to change the email on your account.",
+  "emailChangeRequestedBodyTo": "A request was made to change the email on your account to {maskedNewEmail}.",
+
+  "twoStepDisabledSubject": "Two-step verification was turned off",
+  "twoStepDisabledHeading": "Two-step verification turned off",
+  "twoStepDisabledBody": "Two-step verification was just turned off for your Vaultara account. Signing in now only needs your password.",
+
+  "sessionsRevokedSubject": "You were signed out of your other devices",
+  "sessionsRevokedHeading": "Signed out everywhere else",
+  "sessionsRevokedBody": "Your Vaultara account was just signed out on all devices except the one used to make this change.",
+
+  "planPremium": "Premium",
+  "planFamily": "Family",
+  "planBusiness": "Business",
+  "periodMonthly": "Monthly",
+  "periodYearly": "Yearly",
+  "planLabel": "Plan",
+  "periodLabel": "Billing",
+  "renewsLabel": "Renews on",
+  "accessUntilLabel": "Access until",
+  "includedPremium": "Premium includes unlimited records and categories, photo attachments, share links and advanced reminders.",
+  "includedFamily": "Family includes everything in Premium, plus shared records and reminders for your whole household.",
+  "includedBusiness": "Business includes everything in Family, plus staff reminders, update requests and compliance reports.",
+  "manageButton": "Manage subscription",
+  "receiptGoogle": "Google Play sends your official receipt with the amount charged.",
+  "receiptApple": "Apple sends your official receipt with the amount charged.",
+
+  "startedSubject": "Welcome to Vaultara {plan}",
+  "startedHeading": "Welcome to {plan}",
+  "startedBody": "Thank you for subscribing. Your {plan} plan is now active.",
+
+  "renewedSubject": "Your Vaultara {plan} plan was renewed",
+  "renewedHeading": "Plan renewed",
+  "renewedBody": "Your {plan} plan was renewed. Thank you for staying with Vaultara.",
+
+  "yearlyReminderSubject": "Your Vaultara {plan} plan renews in 7 days",
+  "yearlyReminderHeading": "Renewal coming up",
+  "yearlyReminderBody": "Your yearly {plan} plan renews on {date}. If you want to keep it, you do not need to do anything. If you want to change or cancel it, you can do that before the renewal date.",
+
+  "cancelledSubject": "Your Vaultara {plan} plan will not renew",
+  "cancelledHeading": "Auto-renew turned off",
+  "cancelledBody": "Auto-renew is now off for your {plan} plan. You keep full access until {date}. After that, your account moves to the Free plan and your records stay safe.",
+
+  "resumedSubject": "Your Vaultara {plan} plan will renew again",
+  "resumedHeading": "Auto-renew turned on",
+  "resumedBody": "Auto-renew is on again for your {plan} plan. Thank you for staying with Vaultara.",
+
+  "endedSubject": "Your Vaultara {plan} plan has ended",
+  "endedHeading": "Plan ended",
+  "endedBody": "Your {plan} plan has ended and your account is now on the Free plan. Your records are still in your account. You can subscribe again at any time from the app.",
+
+  "refundedSubject": "Your Vaultara {plan} purchase was refunded",
+  "refundedHeading": "Purchase refunded",
+  "refundedBody": "A purchase of your {plan} plan was refunded. Access that came with this purchase has ended.",
+
+  "deleteSubject": "Confirm deleting your Vaultara account",
+  "deleteHeading": "Delete your account",
+  "deleteBody": "We received a request to delete the Vaultara account that uses this email address. To continue, open the link below. You can review what will be deleted before you confirm.",
+  "deleteButton": "Review and delete",
+  "deleteExpiry": "The link works once and expires in 1 hour.",
+  "deleteNotYou": "If you did not ask for this, you can ignore this email. Your account stays exactly as it is.",
+  "deleteFooter": "We send this email because someone asked to delete the Vaultara account for this address."
+}

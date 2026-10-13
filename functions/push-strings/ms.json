@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Peringatan isi rumah",
+  "escalationBodyDays": "{name} tamat tempoh dalam {days} hari dan belum ada yang memperbaharuinya.",
+  "escalationBodyTomorrow": "{name} tamat tempoh esok dan belum ada yang memperbaharuinya.",
+  "escalationBodyToday": "{name} tamat tempoh hari ini dan belum ada yang memperbaharuinya.",
+  "escalationBodyYesterday": "{name} tamat tempoh semalam dan belum ada yang memperbaharuinya.",
+  "escalationBodyExpired": "{name} tamat tempoh {days} hari lalu dan belum ada yang memperbaharuinya.",
+  "escalationManyTitle": "Rekod dikongsi perlu diperbaharui",
+  "escalationManyBody": "{count} rekod dikongsi akan tamat tempoh tidak lama lagi atau telah tamat tempoh, dan belum ada yang memperbaharuinya: {names}.",
+  "namesMore": "{names} dan {count} lagi",
+  "lockedRecord": "Rekod yang dikunci",
+  "lockedRecordInList": "rekod yang dikunci",
+  "updateReceivedTitle": "Kemas kini diterima",
+  "updateReceivedBody": "{person} menghantar kemas kini untuk {name}. Semaknya pada skrin Keluarga.",
+  "securityNewSignInTitle": "Log masuk baharu ke akaun anda",
+  "securityNewSignInBody": "Akaun Vaultara anda telah dilog masuk pada {device}. Jika ini bukan anda, semak e-mel anda.",
+  "securityNewSignInBodyNoDevice": "Akaun Vaultara anda telah dilog masuk pada peranti baharu. Jika ini bukan anda, semak e-mel anda."
+}

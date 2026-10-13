@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "家庭空間提醒",
+  "escalationBodyDays": "{name} 將在 {days} 天後到期，但還沒有人續期。",
+  "escalationBodyTomorrow": "{name} 明天到期，但還沒有人續期。",
+  "escalationBodyToday": "{name} 今天到期，但還沒有人續期。",
+  "escalationBodyYesterday": "{name} 昨天已到期，但還沒有人續期。",
+  "escalationBodyExpired": "{name} 已在 {days} 天前到期，但還沒有人續期。",
+  "escalationManyTitle": "共用的記錄需要續期",
+  "escalationManyBody": "有 {count} 筆共用記錄即將到期或已到期，但還沒有人續期：{names}。",
+  "namesMore": "{names}，另有 {count} 筆",
+  "lockedRecord": "一筆已鎖定的記錄",
+  "lockedRecordInList": "一筆已鎖定的記錄",
+  "updateReceivedTitle": "已收到更新",
+  "updateReceivedBody": "{person} 送出了 {name} 的更新。請到「家人」畫面查看。",
+  "securityNewSignInTitle": "您的帳戶有新的登入",
+  "securityNewSignInBody": "您的 Vaultara 帳戶已在 {device} 上登入。如果這不是您本人的操作，請查看您的電子郵件。",
+  "securityNewSignInBodyNoDevice": "您的 Vaultara 帳戶已在一部新裝置上登入。如果這不是您本人的操作，請查看您的電子郵件。"
+}

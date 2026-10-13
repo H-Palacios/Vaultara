@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "ಹೌಸ್‌ಹೋಲ್ಡ್ ರಿಮೈಂಡರ್",
+  "escalationBodyDays": "{name} {days} ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯವಾಗುತ್ತದೆ ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ.",
+  "escalationBodyTomorrow": "{name} ನಾಳೆ ಮುಕ್ತಾಯವಾಗುತ್ತದೆ ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ.",
+  "escalationBodyToday": "{name} ಇಂದು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ.",
+  "escalationBodyYesterday": "{name} ನಿನ್ನೆ ಮುಕ್ತಾಯವಾಯಿತು ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ.",
+  "escalationBodyExpired": "{name} {days} ದಿನಗಳ ಹಿಂದೆ ಮುಕ್ತಾಯವಾಯಿತು ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ.",
+  "escalationManyTitle": "ಹಂಚಿದ ದಾಖಲೆಗಳನ್ನು ನವೀಕರಿಸಬೇಕಿದೆ",
+  "escalationManyBody": "{count} ಹಂಚಿದ ದಾಖಲೆಗಳು ಶೀಘ್ರದಲ್ಲಿ ಮುಕ್ತಾಯವಾಗುತ್ತವೆ ಅಥವಾ ಮುಕ್ತಾಯವಾಗಿವೆ, ಮತ್ತು ಇನ್ನೂ ಯಾರೂ ನವೀಕರಿಸಿಲ್ಲ: {names}.",
+  "namesMore": "{names} ಮತ್ತು ಇನ್ನೂ {count}",
+  "lockedRecord": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆ",
+  "lockedRecordInList": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆ",
+  "updateReceivedTitle": "ಅಪ್‌ಡೇಟ್ ಬಂದಿದೆ",
+  "updateReceivedBody": "{person} ಅವರು {name} ಗಾಗಿ ಅಪ್‌ಡೇಟ್ ಕಳುಹಿಸಿದ್ದಾರೆ. ಕುಟುಂಬ ಪರದೆಯಲ್ಲಿ ಪರಿಶೀಲಿಸಿ.",
+  "securityNewSignInTitle": "ನಿಮ್ಮ ಖಾತೆಗೆ ಹೊಸ ಸೈನ್-ಇನ್",
+  "securityNewSignInBody": "{device} ನಲ್ಲಿ ನಿಮ್ಮ Vaultara ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ. ಇದು ನೀವು ಅಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ.",
+  "securityNewSignInBodyNoDevice": "ಹೊಸ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ Vaultara ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ. ಇದು ನೀವು ಅಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ."
+}

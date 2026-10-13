@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Podsetnik za domaćinstvo",
+  "escalationBodyDays": "{name} ističe za {days} dana, a niko ga još nije obnovio.",
+  "escalationBodyTomorrow": "{name} ističe sutra, a niko ga još nije obnovio.",
+  "escalationBodyToday": "{name} ističe danas, a niko ga još nije obnovio.",
+  "escalationBodyYesterday": "{name} je isteklo juče, a niko ga još nije obnovio.",
+  "escalationBodyExpired": "{name} je isteklo pre {days} dana, a niko ga još nije obnovio.",
+  "escalationManyTitle": "Deljene zapise treba obnoviti",
+  "escalationManyBody": "Deljenih zapisa: {count}. Uskoro ističu ili su istekli, a niko ih još nije obnovio: {names}.",
+  "namesMore": "{names} i još {count}",
+  "lockedRecord": "Zaključan zapis",
+  "lockedRecordInList": "zaključan zapis",
+  "updateReceivedTitle": "Izmena primljena",
+  "updateReceivedBody": "{person} je poslao izmenu za {name}. Pregledajte je na ekranu Porodica.",
+  "securityNewSignInTitle": "Nova prijava na vaš nalog",
+  "securityNewSignInBody": "Neko se prijavio na vaš Vaultara nalog na uređaju {device}. Ako to niste bili vi, proverite email.",
+  "securityNewSignInBodyNoDevice": "Neko se prijavio na vaš Vaultara nalog na novom uređaju. Ako to niste bili vi, proverite email."
+}

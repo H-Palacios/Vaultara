@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Подсетник за домаћинство",
+  "escalationBodyDays": "{name} истиче за {days} дана, а нико га још није обновио.",
+  "escalationBodyTomorrow": "{name} истиче сутра, а нико га још није обновио.",
+  "escalationBodyToday": "{name} истиче данас, а нико га још није обновио.",
+  "escalationBodyYesterday": "{name} је истекао јуче, а нико га још није обновио.",
+  "escalationBodyExpired": "{name} је истекао пре {days} дана, а нико га још није обновио.",
+  "escalationManyTitle": "Заједничке записе треба обновити",
+  "escalationManyBody": "{count} заједничких записа ускоро истиче или је истекло, а нико их још није обновио: {names}.",
+  "namesMore": "{names} и још {count}",
+  "lockedRecord": "Закључан запис",
+  "lockedRecordInList": "закључан запис",
+  "updateReceivedTitle": "Ажурирање примљено",
+  "updateReceivedBody": "Ажурирање за {name} стигло је од особе {person}. Прегледајте га на екрану Породица.",
+  "securityNewSignInTitle": "Нова пријава на ваш налог",
+  "securityNewSignInBody": "Неко се пријавио на ваш Vaultara налог на уређају {device}. Ако то нисте били ви, проверите имејл.",
+  "securityNewSignInBodyNoDevice": "Неко се пријавио на ваш Vaultara налог на новом уређају. Ако то нисте били ви, проверите имејл."
+}

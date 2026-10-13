@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Memento pentru gospodărie",
+  "escalationBodyDays": "{name} expiră în curând (zile rămase: {days}) și nimeni nu a făcut încă reînnoirea.",
+  "escalationBodyTomorrow": "{name} expiră mâine și nimeni nu a făcut încă reînnoirea.",
+  "escalationBodyToday": "{name} expiră astăzi și nimeni nu a făcut încă reînnoirea.",
+  "escalationBodyYesterday": "{name} a expirat ieri și nimeni nu a făcut încă reînnoirea.",
+  "escalationBodyExpired": "{name} a expirat deja (zile de la expirare: {days}) și nimeni nu a făcut încă reînnoirea.",
+  "escalationManyTitle": "Înregistrările partajate trebuie reînnoite",
+  "escalationManyBody": "Număr de înregistrări partajate care expiră curând sau au expirat și nu au fost încă reînnoite: {count}. Acestea sunt: {names}.",
+  "namesMore": "{names} și încă {count}",
+  "lockedRecord": "O înregistrare blocată",
+  "lockedRecordInList": "o înregistrare blocată",
+  "updateReceivedTitle": "Actualizare primită",
+  "updateReceivedBody": "{person} a trimis o actualizare pentru {name}. Verifică-o pe ecranul Familie.",
+  "securityNewSignInTitle": "Autentificare nouă în contul tău",
+  "securityNewSignInBody": "Cineva s-a autentificat în contul tău Vaultara pe {device}. Dacă nu ai fost tu, verifică-ți emailul.",
+  "securityNewSignInBodyNoDevice": "Cineva s-a autentificat în contul tău Vaultara pe un dispozitiv nou. Dacă nu ai fost tu, verifică-ți emailul."
+}

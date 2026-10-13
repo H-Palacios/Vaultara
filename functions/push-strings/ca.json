@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Recordatori de la llar",
+  "escalationBodyDays": "{name} caduca d’aquí a {days} dies i encara ningú no l’ha renovat.",
+  "escalationBodyTomorrow": "{name} caduca demà i encara ningú no l’ha renovat.",
+  "escalationBodyToday": "{name} caduca avui i encara ningú no l’ha renovat.",
+  "escalationBodyYesterday": "{name} va caducar ahir i encara ningú no l’ha renovat.",
+  "escalationBodyExpired": "{name} va caducar fa {days} dies i encara ningú no l’ha renovat.",
+  "escalationManyTitle": "Cal renovar registres compartits",
+  "escalationManyBody": "{count} registres compartits caduquen aviat o ja han caducat, i encara ningú no els ha renovat: {names}.",
+  "namesMore": "{names} i {count} més",
+  "lockedRecord": "Un registre bloquejat",
+  "lockedRecordInList": "un registre bloquejat",
+  "updateReceivedTitle": "Actualització rebuda",
+  "updateReceivedBody": "{person} ha enviat una actualització de {name}. Revisa-la a la pantalla Família.",
+  "securityNewSignInTitle": "Nou inici de sessió al teu compte",
+  "securityNewSignInBody": "S'ha iniciat la sessió al teu compte de Vaultara a {device}. Si no has estat tu, revisa el correu.",
+  "securityNewSignInBodyNoDevice": "S'ha iniciat la sessió al teu compte de Vaultara en un dispositiu nou. Si no has estat tu, revisa el correu."
+}

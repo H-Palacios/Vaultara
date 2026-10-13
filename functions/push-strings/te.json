@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "కుటుంబానికి రిమైండర్",
+  "escalationBodyDays": "{name} గడువు {days} రోజుల్లో ముగుస్తుంది మరియు ఇంకా ఎవరూ దాన్ని పునరుద్ధరించలేదు.",
+  "escalationBodyTomorrow": "{name} గడువు రేపు ముగుస్తుంది మరియు ఇంకా ఎవరూ దాన్ని పునరుద్ధరించలేదు.",
+  "escalationBodyToday": "{name} గడువు ఈరోజు ముగుస్తుంది మరియు ఇంకా ఎవరూ దాన్ని పునరుద్ధరించలేదు.",
+  "escalationBodyYesterday": "{name} గడువు నిన్న ముగిసింది మరియు ఇంకా ఎవరూ దాన్ని పునరుద్ధరించలేదు.",
+  "escalationBodyExpired": "{name} గడువు {days} రోజుల క్రితం ముగిసింది మరియు ఇంకా ఎవరూ దాన్ని పునరుద్ధరించలేదు.",
+  "escalationManyTitle": "షేర్ చేసిన రికార్డులను పునరుద్ధరించాలి",
+  "escalationManyBody": "{count} షేర్ చేసిన రికార్డుల గడువు త్వరలో ముగుస్తుంది లేదా ముగిసింది, ఇంకా ఎవరూ వాటిని పునరుద్ధరించలేదు: {names}.",
+  "namesMore": "{names} మరియు మరో {count}",
+  "lockedRecord": "ఒక లాక్ చేసిన రికార్డు",
+  "lockedRecordInList": "ఒక లాక్ చేసిన రికార్డు",
+  "updateReceivedTitle": "అప్‌డేట్ అందింది",
+  "updateReceivedBody": "{person} {name} కోసం అప్‌డేట్ పంపారు. కుటుంబం స్క్రీన్‌లో దాన్ని సమీక్షించండి.",
+  "securityNewSignInTitle": "మీ ఖాతాలో కొత్త సైన్ ఇన్",
+  "securityNewSignInBody": "మీ Vaultara ఖాతాలో {device}లో సైన్ ఇన్ చేయబడింది. ఇది మీరు కాకపోతే, మీ ఈమెయిల్‌ను తనిఖీ చేయండి.",
+  "securityNewSignInBodyNoDevice": "మీ Vaultara ఖాతాలో కొత్త పరికరంలో సైన్ ఇన్ చేయబడింది. ఇది మీరు కాకపోతే, మీ ఈమెయిల్‌ను తనిఖీ చేయండి."
+}

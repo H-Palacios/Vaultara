@@ -1,0 +1,18 @@
+{
+  "escalationTitle": "Paalala sa sambahayan",
+  "escalationBodyDays": "Mag-e-expire ang {name} sa loob ng {days} araw at wala pang nagre-renew nito.",
+  "escalationBodyTomorrow": "Mag-e-expire ang {name} bukas at wala pang nagre-renew nito.",
+  "escalationBodyToday": "Mag-e-expire ang {name} ngayon at wala pang nagre-renew nito.",
+  "escalationBodyYesterday": "Nag-expire ang {name} kahapon at wala pang nagre-renew nito.",
+  "escalationBodyExpired": "Nag-expire ang {name} {days} araw na ang nakalipas at wala pang nagre-renew nito.",
+  "escalationManyTitle": "Kailangang i-renew ang mga ibinahaging rekord",
+  "escalationManyBody": "{count} ibinahaging rekord ang malapit nang mag-expire o nag-expire na, at wala pang nagre-renew sa mga ito: {names}.",
+  "namesMore": "{names} at {count} pa",
+  "lockedRecord": "Isang naka-lock na rekord",
+  "lockedRecordInList": "isang naka-lock na rekord",
+  "updateReceivedTitle": "Natanggap ang update",
+  "updateReceivedBody": "Nagpadala si {person} ng update para sa {name}. Suriin ito sa screen na Pamilya.",
+  "securityNewSignInTitle": "Bagong pag-sign in sa account mo",
+  "securityNewSignInBody": "May nag-sign in sa Vaultara account mo sa {device}. Kung hindi ikaw ito, tingnan ang email mo.",
+  "securityNewSignInBodyNoDevice": "May nag-sign in sa Vaultara account mo sa isang bagong device. Kung hindi ikaw ito, tingnan ang email mo."
+}
