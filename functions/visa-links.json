@@ -1,0 +1,416 @@
+{
+  "version": "2026-10-12",
+  "notes": {
+    "CN": [
+      "dual"
+    ],
+    "IN": [
+      "dual"
+    ],
+    "IR": [
+      "dual"
+    ],
+    "JP": [
+      "dual"
+    ],
+    "SG": [
+      "dual"
+    ]
+  },
+  "links": {
+    "AE": {
+      "evisa": {
+        "url": "https://smartservices.icp.gov.ae/",
+        "name": "UAE ICP Smart Services"
+      }
+    },
+    "AG": {
+      "evisa": {
+        "url": "https://evisa.immigration.gov.ag/agEvisa-app/",
+        "name": "Antigua and Barbuda eVisa"
+      }
+    },
+    "AL": {
+      "evisa": {
+        "url": "https://e-visa.al/",
+        "name": "Albania e-Visa"
+      }
+    },
+    "AM": {
+      "evisa": {
+        "url": "https://evisa.mfa.am/",
+        "name": "Armenia e-Visa (Ministry of Foreign Affairs)"
+      }
+    },
+    "AU": {
+      "evisa": {
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
+        "name": "Visitor visa (subclass 600), apply online via ImmiAccount"
+      },
+      "eta": {
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+        "name": "Electronic Travel Authority (subclass 601), apply via the AustralianETA app"
+      }
+    },
+    "AZ": {
+      "evisa": {
+        "url": "https://evisa.gov.az/en/",
+        "name": "ASAN Visa (Azerbaijan e-Visa)"
+      }
+    },
+    "BH": {
+      "evisa": {
+        "url": "https://www.evisa.gov.bh/",
+        "name": "Bahrain eVisa"
+      }
+    },
+    "BS": {
+      "evisa": {
+        "url": "https://mofa.gov.bs/evisa-online-services",
+        "name": "Bahamas eVISA Online Services (Ministry of Foreign Affairs)"
+      }
+    },
+    "BT": {
+      "evisa": {
+        "url": "https://visit.doi.gov.bt/",
+        "name": "Bhutan e-Visa (Department of Immigration)"
+      }
+    },
+    "BW": {
+      "evisa": {
+        "url": "https://evisa.gov.bw/",
+        "name": "Botswana e-Visa"
+      }
+    },
+    "CA": {
+      "eta": {
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+        "name": "Electronic Travel Authorization (eTA)"
+      }
+    },
+    "CO": {
+      "evisa": {
+        "url": "https://tramitesmre.cancilleria.gov.co/tramites/enlinea/solicitarVisa.xhtml",
+        "name": "Colombia Online Visa Application (Cancilleria)"
+      }
+    },
+    "EC": {
+      "evisa": {
+        "url": "https://serviciosdigitales.cancilleria.gob.ec/",
+        "name": "Ecuador e-VISAS (Cancilleria Servicios Digitales)"
+      }
+    },
+    "EG": {
+      "evisa": {
+        "url": "https://www.visa2egypt.gov.eg/",
+        "name": "Egypt e-Visa Portal"
+      }
+    },
+    "ET": {
+      "evisa": {
+        "url": "https://www.evisa.gov.et/",
+        "name": "Ethiopia e-Visa"
+      }
+    },
+    "GB": {
+      "eta": {
+        "url": "https://www.gov.uk/eta/apply",
+        "name": "UK Electronic Travel Authorisation (ETA)"
+      }
+    },
+    "GE": {
+      "evisa": {
+        "url": "https://www.evisa.gov.ge/GeoVisa/",
+        "name": "Georgia e-Visa portal (Ministry of Foreign Affairs)"
+      }
+    },
+    "GY": {
+      "evisa": {
+        "url": "https://eservices.iss.gov.gy/",
+        "name": "Guyana Visa Online Application Portal"
+      }
+    },
+    "HK": {
+      "evisa": {
+        "url": "https://www.immd.gov.hk/eng/evisaonline.html",
+        "name": "Hong Kong electronic visa application (Immigration Department)"
+      }
+    },
+    "ID": {
+      "evisa": {
+        "url": "https://evisa.imigrasi.go.id/",
+        "name": "Indonesia e-Visa and e-VOA (Directorate General of Immigration)"
+      }
+    },
+    "IL": {
+      "eta": {
+        "url": "https://israel-entry.piba.gov.il/",
+        "name": "ETA-IL (Population and Immigration Authority)"
+      }
+    },
+    "IN": {
+      "evisa": {
+        "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+        "name": "Indian e-Visa"
+      }
+    },
+    "JP": {
+      "evisa": {
+        "url": "https://www.evisa.mofa.go.jp/index",
+        "name": "JAPAN eVISA"
+      }
+    },
+    "KE": {
+      "eta": {
+        "url": "https://www.etakenya.go.ke/",
+        "name": "Kenya Electronic Travel Authorisation (eTA)"
+      }
+    },
+    "KG": {
+      "evisa": {
+        "url": "https://www.evisa.e-gov.kg/",
+        "name": "Kyrgyzstan e-Visa"
+      }
+    },
+    "KR": {
+      "eta": {
+        "url": "https://www.k-eta.go.kr/",
+        "name": "K-ETA (Korea Electronic Travel Authorization)"
+      },
+      "evisa": {
+        "url": "https://www.visa.go.kr/",
+        "name": "Korea Visa Portal e-Visa"
+      }
+    },
+    "KW": {
+      "evisa": {
+        "url": "https://kuwaitvisa.moi.gov.kw/",
+        "name": "Kuwait Visa (Ministry of Interior)"
+      }
+    },
+    "KZ": {
+      "evisa": {
+        "url": "https://www.vmp.gov.kz/",
+        "name": "Kazakhstan e-Visa (Visa and Migration Portal)"
+      }
+    },
+    "LK": {
+      "eta": {
+        "url": "https://www.eta.gov.lk/slvisa/",
+        "name": "Sri Lanka ETA (Department of Immigration and Emigration)"
+      }
+    },
+    "LR": {
+      "evisa": {
+        "url": "https://visaonarrival.lis.gov.lr/",
+        "name": "Liberia e-Visa on Arrival (Liberia Immigration Service)"
+      }
+    },
+    "MA": {
+      "evisa": {
+        "url": "https://www.acces-maroc.ma/",
+        "name": "Morocco eVisa (Acces Maroc)"
+      }
+    },
+    "MD": {
+      "evisa": {
+        "url": "https://www.evisa.gov.md/",
+        "name": "Moldova eVisa (Ministry of Foreign Affairs and European Integration)"
+      }
+    },
+    "MM": {
+      "evisa": {
+        "url": "https://evisa.moip.gov.mm/",
+        "name": "Myanmar eVisa (Ministry of Immigration and Population)"
+      }
+    },
+    "MN": {
+      "evisa": {
+        "url": "https://evisa.mn/",
+        "name": "Mongolia e-Visa (Immigration Agency of Mongolia)"
+      }
+    },
+    "MW": {
+      "evisa": {
+        "url": "https://evisa.gov.mw/",
+        "name": "Malawi e-Visa (Department of Immigration and Citizenship Services)"
+      }
+    },
+    "MY": {
+      "evisa": {
+        "url": "https://malaysiavisa.imi.gov.my/evisa/evisa.jsp",
+        "name": "Malaysia eVISA (Immigration Department)"
+      }
+    },
+    "MZ": {
+      "evisa": {
+        "url": "https://evisa.gov.mz/",
+        "name": "Mozambique e-Visa"
+      },
+      "eta": {
+        "url": "https://evisa.gov.mz/",
+        "name": "Mozambique Electronic Travel Authorisation (same portal)"
+      }
+    },
+    "NA": {
+      "evisa": {
+        "url": "https://eservices.mhaiss.gov.na/",
+        "name": "Namibia MHAISS eServices (e-Visa / online visa on arrival)"
+      }
+    },
+    "NG": {
+      "evisa": {
+        "url": "https://evisa.immigration.gov.ng/",
+        "name": "Nigeria e-Visa (Nigeria Immigration Service)"
+      }
+    },
+    "NZ": {
+      "eta": {
+        "url": "https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/",
+        "name": "NZeTA (New Zealand Electronic Travel Authority)"
+      }
+    },
+    "OM": {
+      "evisa": {
+        "url": "https://evisa.rop.gov.om/en/home",
+        "name": "Oman eVisa (Royal Oman Police)"
+      }
+    },
+    "PG": {
+      "evisa": {
+        "url": "https://evisa.ica.gov.pg/evisa/account/Apply",
+        "name": "Papua New Guinea eVisa (ICA)"
+      }
+    },
+    "PK": {
+      "evisa": {
+        "url": "https://visa.nadra.gov.pk/",
+        "name": "Pakistan Online Visa System (e-Visa)"
+      }
+    },
+    "QA": {
+      "evisa": {
+        "url": "https://hayya.qa/",
+        "name": "Hayya Platform (Qatar visas)"
+      },
+      "eta": {
+        "url": "https://hayya.qa/",
+        "name": "Hayya Platform (Qatar Electronic Travel Authorisation)"
+      }
+    },
+    "RU": {
+      "evisa": {
+        "url": "https://evisa.kdmid.ru/",
+        "name": "Russia unified e-Visa (MFA Consular Department)"
+      }
+    },
+    "RW": {
+      "evisa": {
+        "url": "https://irembo.gov.rw/user/citizen/service/dgie/request_a_visa",
+        "name": "Rwanda Visa Application (IremboGov, DGIE)"
+      }
+    },
+    "SA": {
+      "evisa": {
+        "url": "https://ksavisa.sa/",
+        "name": "KSA Visa unified platform (Ministry of Foreign Affairs)"
+      }
+    },
+    "SO": {
+      "evisa": {
+        "url": "https://etas.gov.so/",
+        "name": "Somalia e-Visa / ETAS"
+      }
+    },
+    "SS": {
+      "evisa": {
+        "url": "https://evisa.gov.ss/",
+        "name": "South Sudan eVisa (Government eServices Portal)"
+      }
+    },
+    "SV": {
+      "evisa": {
+        "url": "https://elsalvadorpei.migracion.gob.sv/",
+        "name": "El Salvador Permiso Especial de Ingreso (online entry permit, DGME)"
+      }
+    },
+    "TG": {
+      "evisa": {
+        "url": "https://voyage.gouv.tg/",
+        "name": "Togo National Travel Platform (e-Visa)"
+      }
+    },
+    "TH": {
+      "evisa": {
+        "url": "https://www.thaievisa.go.th/",
+        "name": "Thai e-Visa"
+      }
+    },
+    "TR": {
+      "evisa": {
+        "url": "https://www.evisa.gov.tr/",
+        "name": "Türkiye e-Visa (Ministry of Foreign Affairs)"
+      }
+    },
+    "TW": {
+      "evisa": {
+        "url": "https://visawebapp.boca.gov.tw/BOCA_EVISA/MRV04FORM",
+        "name": "Taiwan eVisa (Bureau of Consular Affairs)"
+      }
+    },
+    "TZ": {
+      "evisa": {
+        "url": "https://visa.immigration.go.tz/",
+        "name": "Tanzania Immigration Online Visa Application"
+      }
+    },
+    "UA": {
+      "evisa": {
+        "url": "https://evisa.mfa.gov.ua/",
+        "name": "Ukraine e-Visa (Ministry of Foreign Affairs)"
+      }
+    },
+    "UG": {
+      "evisa": {
+        "url": "https://visas.immigration.go.ug/",
+        "name": "Uganda Electronic Visa/Permit Application System"
+      }
+    },
+    "US": {
+      "eta": {
+        "url": "https://esta.cbp.dhs.gov/",
+        "name": "ESTA (Electronic System for Travel Authorization)"
+      }
+    },
+    "UZ": {
+      "evisa": {
+        "url": "https://e-visa.gov.uz/",
+        "name": "Uzbekistan e-Visa"
+      }
+    },
+    "VN": {
+      "evisa": {
+        "url": "https://evisa.gov.vn/e-visa/foreigners",
+        "name": "Vietnam e-Visa (Immigration Department)"
+      }
+    },
+    "ZA": {
+      "eta": {
+        "url": "https://eta.dha.gov.za/",
+        "name": "South Africa Electronic Travel Authorisation (Home Affairs)"
+      }
+    },
+    "ZM": {
+      "evisa": {
+        "url": "https://eservices.gov.zm/#/service/18",
+        "name": "Zambia e-Visa (Government eServices)"
+      }
+    },
+    "ZW": {
+      "evisa": {
+        "url": "https://www.evisa.gov.zw/index.html",
+        "name": "Zimbabwe eVisa (Department of Immigration)"
+      }
+    }
+  }
+}
