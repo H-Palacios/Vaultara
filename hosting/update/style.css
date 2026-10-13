@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#10162E;color:#fff;display:flex;align-items:flex-start;justify-content:center;min-height:100vh}
+.card{width:100%;max-width:440px;margin:32px 16px;padding:28px 22px;background:#171F3D;border-radius:22px}
+.brand{font-size:13px;font-weight:700;letter-spacing:1px;color:#00AAFF;text-align:center}
+.state{text-align:center}
+form.state{text-align:start}
+h1{font-size:22px;font-weight:800;margin:10px 0 6px;text-align:center}
+p{color:#b8c0d4;font-size:15px;line-height:1.5;margin:0 0 12px}
+.from{text-align:center}
+.doc{background:#0F1530;border:1px solid #2A3459;border-radius:14px;padding:14px 16px;margin:14px 0 20px}
+.docName{font-size:17px;font-weight:800;color:#fff;word-break:break-word}
+.docMeta{font-size:13px;color:#b8c0d4;margin-top:4px}
+.label{display:block;font-size:13px;font-weight:700;color:#dfe5f2;margin:14px 0 6px}
+input[type=date]{width:100%;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid #2A3459;background:#0F1530;color:#fff;color-scheme:dark}
+input[type=date]:focus{outline:2px solid #00AAFF;outline-offset:1px}
+.visuallyHidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.picker{display:block;border:2px dashed #2F3B66;border-radius:14px;padding:18px 14px;text-align:center;cursor:pointer;background:#0F1530}
+.picker:hover,.picker.focus{border-color:#00AAFF}
+.pickerText{display:block;font-size:15px;font-weight:700;color:#00AAFF}
+.pickerHelp{display:block;font-size:12.5px;color:#8f99b3;margin-top:4px}
+.preview{margin-top:12px;text-align:center}
+.preview img{max-width:100%;max-height:280px;border-radius:12px}
+.pdf{background:#0F1530;border:1px solid #2A3459;border-radius:12px;padding:12px;font-size:14px;color:#dfe5f2;word-break:break-all}
+.fieldError{color:#FF8A80;font-size:13px;margin:6px 0 0}
+.error{color:#FF8A80;font-size:14px;text-align:center;margin:14px 0 0}
+button.primary{display:block;width:100%;margin-top:22px;background:#00AAFF;color:#fff;border:0;border-radius:999px;font-size:16px;font-weight:700;padding:15px 20px;cursor:pointer}
+button.primary:disabled{opacity:.6;cursor:default}
+.note{font-size:12.5px;color:#8f99b3;text-align:center;margin:16px 0 0}
+.spinner{width:34px;height:34px;margin:24px auto 14px;border:4px solid #2A3459;border-top-color:#00AAFF;border-radius:50%;animation:spin 1s linear infinite}
+.tick{width:56px;height:56px;margin:18px auto 6px;border-radius:50%;background:#1E8E3E;position:relative}
+.tick::after{content:"";position:absolute;left:20px;top:12px;width:12px;height:24px;border:solid #fff;border-width:0 4px 4px 0;transform:rotate(45deg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+[hidden]{display:none!important}

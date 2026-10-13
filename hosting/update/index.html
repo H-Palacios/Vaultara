@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Vaultara</title>
+<link rel="stylesheet" href="/update/style.css">
+</head>
+<body>
+<main class="card">
+<div class="brand" id="brand">VAULTARA</div>
+<div id="loading" class="state">
+<div class="spinner" aria-hidden="true"></div>
+<p id="loadingText"></p>
+</div>
+<div id="fail" class="state" hidden>
+<h1 id="failTitle"></h1>
+<p id="failBody"></p>
+</div>
+<div id="done" class="state" hidden>
+<div class="tick" aria-hidden="true"></div>
+<h1 id="doneTitle"></h1>
+<p id="doneBody"></p>
+</div>
+<form id="form" class="state" hidden novalidate>
+<h1 id="title"></h1>
+<p id="from" class="from"></p>
+<div class="doc">
+<div class="docName" id="docName"></div>
+<div class="docMeta" id="current" hidden></div>
+</div>
+<label class="label" for="date" id="dateLabel"></label>
+<input type="date" id="date" name="date" required>
+<p class="fieldError" id="dateError" hidden></p>
+<span class="label" id="fileLabel"></span>
+<label class="picker" for="file" id="picker">
+<span class="pickerText" id="pickerText"></span>
+<span class="pickerHelp" id="fileHelp"></span>
+</label>
+<input type="file" id="file" name="file" accept="image/jpeg,image/png,application/pdf" class="visuallyHidden">
+<div class="preview" id="previewBox" hidden>
+<img id="preview" alt="" hidden>
+<div class="pdf" id="pdfName" hidden></div>
+</div>
+<p class="fieldError" id="fileError" hidden></p>
+<p class="error" id="formError" role="alert" hidden></p>
+<button type="submit" id="submit" class="primary"></button>
+<p class="note" id="privacy"></p>
+</form>
+</main>
+<script src="/update/app.js"></script>
+</body>
+</html>
