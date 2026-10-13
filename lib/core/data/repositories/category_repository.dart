@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'category_item.dart';
+import '../models/category_item.dart';
 
 class CategoryRepository {
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -205,19 +205,18 @@ class CategoryRepository {
     return Icons.category_rounded;
   }
 
-  static Future<void> _ensureUserDocExists(String uid) async {
-    final ref = _firestore.collection('users').doc(uid);
-    await _firestore.runTransaction((tx) async {
-      final snap = await tx.get(ref);
-      if (!snap.exists) {
-        tx.set(ref, {'createdCategoriesCount': 0}, SetOptions(merge: true));
-      } else {
-        final data = snap.data() as Map<String, dynamic>;
-        if (!data.containsKey('createdCategoriesCount')) {
-          tx.set(ref, {'createdCategoriesCount': 0}, SetOptions(merge: true));
-        }
-      }
-    });
+  static CategoryItem _categoryFromDoc(
+    QueryDocumentSnapshot<Map<String, dynamic>> doc,
+  ) {
+    final data = doc.data();
+    final key = data['key'] as String? ?? doc.id;
+
+    return CategoryItem(
+      key: key,
+      label: data['label'] as String? ?? key,
+      icon: _iconFromMap(data),
+      groupKeys: List<String>.from(data['subcategories'] ?? <String>[]),
+    );
   }
 
   static Future<void> loadForCurrentUser({bool force = false}) async {
@@ -241,17 +240,8 @@ class CategoryRepository {
     final snap = await _firestore.collection(_categoriesPath(user.uid)).get();
 
     for (final doc in snap.docs) {
-      final data = doc.data();
-      if (data['isDeleted'] == true) continue;
-
-      _categories.add(
-        CategoryItem(
-          key: data['key'] as String? ?? doc.id,
-          label: data['label'] as String? ?? (data['key'] as String? ?? doc.id),
-          icon: _iconFromMap(data),
-          subcategories: List<String>.from(data['subcategories'] ?? <String>[]),
-        ),
-      );
+      if (doc.data()['isDeleted'] == true) continue;
+      _categories.add(_categoryFromDoc(doc));
     }
 
     final pinnedDoc = await _firestore.doc(_pinnedPath(user.uid)).get();
@@ -265,6 +255,35 @@ class CategoryRepository {
     }
 
     _hasLoadedForUser = true;
+  }
+
+  static const int recentlyDeletedRetentionDays = 30;
+
+  static Future<List<CategoryItem>> getDeleted() async {
+    final User? user = _auth.currentUser;
+    if (user == null) return const [];
+
+    final snap = await _firestore
+        .collection(_categoriesPath(user.uid))
+        .where('isDeleted', isEqualTo: true)
+        .get();
+
+    final cutoff = DateTime.now()
+        .subtract(const Duration(days: recentlyDeletedRetentionDays));
+    final result = <CategoryItem>[];
+
+    for (final doc in snap.docs) {
+      final deletedAt = (doc.data()['deletedAt'] as Timestamp?)?.toDate();
+
+      if (deletedAt != null && deletedAt.isBefore(cutoff)) {
+        doc.reference.delete().ignore();
+        continue;
+      }
+
+      result.add(_categoryFromDoc(doc));
+    }
+
+    return result;
   }
 
   static List<CategoryItem> getAll() => List<CategoryItem>.from(_categories);
@@ -285,10 +304,10 @@ class CategoryRepository {
       _pinnedLabels.add(label);
     }
 
-    await _firestore.doc(_pinnedPath(user.uid)).set({
+    _firestore.doc(_pinnedPath(user.uid)).set({
       'labels': _pinnedLabels.toList(),
       'updatedAt': FieldValue.serverTimestamp(),
-    });
+    }).ignore();
   }
 
   static Future<bool> addCategory(
@@ -302,21 +321,18 @@ class CategoryRepository {
     final User? user = _auth.currentUser;
     if (user == null) return false;
 
-    await _ensureUserDocExists(user.uid);
-
-    if (!isPremium) {
-      _createdCategoriesCount += 1;
-      await _firestore.collection('users').doc(user.uid).set({
-        'createdCategoriesCount': _createdCategoriesCount,
-      }, SetOptions(merge: true));
+    if (!_categories.any((c) => c.key == item.key)) {
+      _categories.add(item);
     }
+
+    if (!isPremium) _createdCategoriesCount += 1;
 
     final String? iconKey = _iconKeyFromIcon(item.icon);
 
-    await _firestore.collection(_categoriesPath(user.uid)).doc(item.key).set({
+    _firestore.collection(_categoriesPath(user.uid)).doc(item.key).set({
       'key': item.key,
       'label': item.label,
-      'subcategories': item.subcategories,
+      'subcategories': item.groupKeys,
       'iconKey': iconKey,
       'iconCodePoint': item.icon?.codePoint,
       'iconFontFamily': item.icon?.fontFamily,
@@ -325,9 +341,7 @@ class CategoryRepository {
       'deletedAt': null,
       'createdAt': FieldValue.serverTimestamp(),
       'updatedAt': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true));
-
-    await loadForCurrentUser(force: true);
+    }, SetOptions(merge: true)).ignore();
 
     return true;
   }
@@ -338,30 +352,26 @@ class CategoryRepository {
     final User? user = _auth.currentUser;
     if (user == null) return;
 
-    await _firestore.collection(_categoriesPath(user.uid)).doc(categoryKey).set({
+    _firestore.collection(_categoriesPath(user.uid)).doc(categoryKey).set({
       'isDeleted': true,
       'deletedAt': FieldValue.serverTimestamp(),
       'updatedAt': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true));
-
-    await loadForCurrentUser(force: true);
+    }, SetOptions(merge: true)).ignore();
   }
 
   static Future<void> restoreCategory(CategoryItem item) async {
     final User? user = _auth.currentUser;
     if (user == null) return;
 
-    await _firestore.collection(_categoriesPath(user.uid)).doc(item.key).set({
+    _firestore.collection(_categoriesPath(user.uid)).doc(item.key).set({
       'isDeleted': false,
       'deletedAt': null,
       'updatedAt': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true));
+    }, SetOptions(merge: true)).ignore();
 
     if (!_categories.any((c) => c.key == item.key)) {
       _categories.add(item);
     }
-
-    await loadForCurrentUser(force: true);
   }
 
   static Future<void> permanentlyDeleteCategory(String categoryKey) async {
@@ -370,12 +380,11 @@ class CategoryRepository {
     final User? user = _auth.currentUser;
     if (user == null) return;
 
-    await _firestore
+    _firestore
         .collection(_categoriesPath(user.uid))
         .doc(categoryKey)
-        .delete();
-
-    await loadForCurrentUser(force: true);
+        .delete()
+        .ignore();
   }
 
   static void clearForSignOut() {
