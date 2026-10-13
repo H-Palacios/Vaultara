@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["MG5PJJ6H68.com.vaultara.app"],
+        "components": [{ "/": "/verify" }]
+      }
+    ]
+  }
+}
