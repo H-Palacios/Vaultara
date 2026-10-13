@@ -1,0 +1,11 @@
+{
+  "page": "Vaultara-invitation",
+  "title": "Du er inviteret til Vaultara",
+  "intro": "Vaultara holder styr på dine dokumenter og giver dig besked, før de udløber.",
+  "codeLabel": "Din vens invitationskode",
+  "copy": "Kopiér kode",
+  "copied": "Kopieret",
+  "nocode": "Dette link mangler sin kode. Bed din ven om at sende det igen.",
+  "store": "Hent den på Google Play",
+  "note": "Installer appen, og opret din konto. Åbn derefter Profil, tryk på Inviter venner, og indtast koden inden for 14 dage. I får begge én gratis måned med Premium, når din e-mail er bekræftet, og du har tilføjet din første post."
+}
