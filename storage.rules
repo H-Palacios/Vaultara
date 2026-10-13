@@ -1,0 +1,87 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function isVerifiedOwner(uid) {
+      return isOwner(uid) && request.auth.token.email_verified == true;
+    }
+
+    function allowedFile() {
+      return request.resource.size < 10 * 1024 * 1024
+        && (request.resource.contentType.matches('image/(jpeg|png|webp|heic|heif)')
+            || request.resource.contentType == 'application/pdf');
+    }
+
+    function encryptedFile(fileName) {
+      return fileName.matches('[A-Za-z0-9_-]{1,64}\\.enc')
+        && request.resource.size <= 10 * 1024 * 1024
+        && request.resource.contentType == 'application/octet-stream';
+    }
+
+    function recordExists(uid, recordId) {
+      let record = firestore.get(/databases/(default)/documents/users/$(uid)/records/$(recordId));
+      return record != null
+        && record.data.get('overLimit', false) != true;
+    }
+
+    match /users/{uid}/records/{recordId}/{fileName} {
+      allow read: if isOwner(uid);
+      allow delete: if isVerifiedOwner(uid);
+      allow create, update: if isVerifiedOwner(uid)
+        && ((fileName.matches('[A-Za-z0-9_-]{1,64}\\.(jpg|jpeg|png|webp|heic|pdf)')
+             && allowedFile())
+            || encryptedFile(fileName))
+        && recordExists(uid, recordId);
+    }
+
+    function householdDoc(hid) {
+      return firestore.get(/databases/(default)/documents/households/$(hid));
+    }
+
+    function isHouseholdMember(hid) {
+      let h = householdDoc(hid);
+      return request.auth != null
+        && h != null
+        && request.auth.uid in h.data.get('memberUids', []);
+    }
+
+    function canEditHousehold(hid) {
+      let h = householdDoc(hid);
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && h != null
+        && request.auth.uid in h.data.get('memberUids', [])
+        && h.data.get('tier', 'free') in ['family', 'business'];
+    }
+
+    match /households/{hid}/records/{recordId}/{fileName} {
+      allow read: if isHouseholdMember(hid);
+      allow delete: if canEditHousehold(hid);
+      allow create, update: if canEditHousehold(hid)
+        && fileName.matches('[A-Za-z0-9_-]{1,64}\\.(jpg|jpeg|png|webp|heic|pdf)')
+        && allowedFile()
+        && firestore.exists(/databases/(default)/documents/households/$(hid)/records/$(recordId));
+    }
+
+    match /users/{uid}/profile/avatar.jpg {
+      allow read: if isOwner(uid);
+      allow delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.resource.size <= 2 * 1024 * 1024
+        && request.resource.contentType == 'image/jpeg';
+    }
+
+    match /users/{uid}/updateRequests/{allPaths=**} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

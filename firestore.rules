@@ -1,0 +1,617 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function isVerifiedOwner(uid) {
+      return isOwner(uid) && request.auth.token.email_verified == true;
+    }
+
+    function profileKeys() {
+      return ['firstName', 'lastName', 'fullName', 'email', 'createdAt',
+              'updatedAt', 'recordsMigrated', 'groupsMigrated', 'companyName',
+              'avatarPath', 'avatarVersion', 'monthlySummary',
+              'preferredLanguage', 'utcOffsetMinutes', 'nationality',
+              'complianceReport', 'residence', 'consent', 'analyticsConsent',
+              'extraPassports', 'passportRecords'];
+    }
+
+    function consentOk(d) {
+      return !('consent' in d)
+        || (resource != null && resource.data.get('consent', null) == d.consent)
+        || (d.consent is map
+            && d.consent.keys().hasOnly(['terms', 'privacy', 'acceptedAt'])
+            && d.consent.keys().hasAll(['terms', 'privacy', 'acceptedAt'])
+            && d.consent.terms is string && d.consent.terms.size() > 0 && d.consent.terms.size() <= 20
+            && d.consent.privacy is string && d.consent.privacy.size() > 0 && d.consent.privacy.size() <= 20
+            && d.consent.acceptedAt == request.time);
+    }
+
+    function analyticsConsentOk(d) {
+      return !('analyticsConsent' in d) || d.analyticsConsent is bool;
+    }
+
+    function nationalityOk(d) {
+      return !('nationality' in d) || d.nationality == null
+        || (d.nationality is string && d.nationality.matches('^[A-Z]{2}$'));
+    }
+
+    function extraPassportsOk(d) {
+      return !('extraPassports' in d)
+        || (d.extraPassports is list && d.extraPassports.size() <= 2
+            && (d.extraPassports.size() < 1
+                || (d.extraPassports[0] is string
+                    && d.extraPassports[0].matches('^[A-Z]{2}$')))
+            && (d.extraPassports.size() < 2
+                || (d.extraPassports[1] is string
+                    && d.extraPassports[1].matches('^[A-Z]{2}$'))));
+    }
+
+    function passportRecordsOk(d) {
+      return !('passportRecords' in d)
+        || (d.passportRecords is map && d.passportRecords.size() <= 3);
+    }
+
+    function residenceOk(d) {
+      return !('residence' in d) || d.residence == null
+        || (d.residence is string && d.residence.matches('^[A-Z]{2}$'));
+    }
+
+    function staffEmailOk(d) {
+      return (!('email' in d) || d.email == null
+          || (d.email is string
+              && d.email.size() <= 254
+              && d.email.matches('^[^\\s@]{1,64}@[^\\s@]{1,190}[.][^\\s@]{2,63}$')))
+        && (!('emailReminders' in d) || d.emailReminders is bool);
+    }
+
+    function shortText(field, max) {
+      return !(field in request.resource.data)
+        || request.resource.data[field] == null
+        || (request.resource.data[field] is string
+            && request.resource.data[field].size() <= max);
+    }
+
+    function validProfile() {
+      return shortText('firstName', 60)
+        && shortText('lastName', 60)
+        && shortText('fullName', 121)
+        && shortText('email', 254)
+        && shortText('companyName', 80)
+        && avatarPathOk()
+        && avatarVersionOk()
+        && summaryPrefsOk()
+        && nationalityOk(request.resource.data)
+        && residenceOk(request.resource.data)
+        && extraPassportsOk(request.resource.data)
+        && passportRecordsOk(request.resource.data)
+        && consentOk(request.resource.data)
+        && analyticsConsentOk(request.resource.data);
+    }
+
+    function summaryPrefsOk() {
+      let d = request.resource.data;
+      return (!('monthlySummary' in d) || d.monthlySummary is bool)
+        && (!('complianceReport' in d) || d.complianceReport is bool)
+        && (!('preferredLanguage' in d) || d.preferredLanguage == null
+            || (d.preferredLanguage is string
+                && d.preferredLanguage.matches('^[A-Za-z]{2,3}([_-][A-Za-z0-9]{2,8}){0,3}$')
+                && d.preferredLanguage.size() <= 16))
+        && (!('utcOffsetMinutes' in d) || d.utcOffsetMinutes == null
+            || (d.utcOffsetMinutes is int
+                && d.utcOffsetMinutes >= -840
+                && d.utcOffsetMinutes <= 840));
+    }
+
+    function avatarPathOk() {
+      return !('avatarPath' in request.resource.data)
+        || request.resource.data.avatarPath == null
+        || (request.resource.data.avatarPath is string
+            && request.resource.data.avatarPath.size() <= 128
+            && request.resource.data.avatarPath
+               == 'users/' + request.auth.uid + '/profile/avatar.jpg');
+    }
+
+    function avatarVersionOk() {
+      return !('avatarVersion' in request.resource.data)
+        || request.resource.data.avatarVersion == null
+        || (request.resource.data.avatarVersion is int
+            && request.resource.data.avatarVersion >= 0
+            && request.resource.data.avatarVersion <= 9007199254740991);
+    }
+
+    function smallDoc(maxKeys) {
+      return request.resource.data.size() <= maxKeys;
+    }
+
+    function isPaidUser(uid) {
+      return get(/databases/$(database)/documents/users/$(uid)).data.get('plan', 'free')
+        in ['premium', 'family', 'business'];
+    }
+
+    function staysParked(uid) {
+      return resource.data.get('overLimit', false) != true
+        || resource.data.get('isDeleted', false) != true
+        || (request.resource.data.get('overLimit', false) == true
+            && request.resource.data.get('isDeleted', false) == true)
+        || isPaidUser(uid);
+    }
+
+    function countryOk(list, i) {
+      return list.size() <= i
+        || (list[i] is string && list[i].matches('^[A-Z]{2}$'));
+    }
+
+    function validTrip() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['name', 'departure', 'returnDate', 'driving',
+                               'needsVisa', 'travellers', 'checklist', 'updatedAt',
+                               'countries', 'passportRule', 'needsVisaManual',
+                               'visaRecords', 'arrivals', 'flights', 'passportChoice'])
+        && (!('needsVisaManual' in d) || d.needsVisaManual is bool)
+        && (!('visaRecords' in d) || (d.visaRecords is map && d.visaRecords.size() <= 40))
+        && (!('arrivals' in d) || (d.arrivals is map && d.arrivals.size() <= 6))
+        && (!('passportChoice' in d) || (d.passportChoice is map && d.passportChoice.size() <= 40))
+        && (!('flights' in d) || (d.flights is list && d.flights.size() <= 6))
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 120
+        && d.departure is timestamp && d.returnDate is timestamp
+        && d.travellers is list && d.travellers.size() <= 26
+        && d.checklist is list && d.checklist.size() <= 40
+        && (!('countries' in d) || (d.countries is list && d.countries.size() <= 5
+            && countryOk(d.countries, 0)
+            && countryOk(d.countries, 1)
+            && countryOk(d.countries, 2)
+            && countryOk(d.countries, 3)
+            && countryOk(d.countries, 4)))
+        && (!('passportRule' in d) || d.passportRule in ['six', 'three', 'stay']);
+    }
+
+    function optionalList(field, max) {
+      return !(field in request.resource.data)
+        || request.resource.data[field] == null
+        || (request.resource.data[field] is list
+            && request.resource.data[field].size() <= max);
+    }
+
+    function optionalBool(field) {
+      return !(field in request.resource.data)
+        || request.resource.data[field] == null
+        || request.resource.data[field] is bool;
+    }
+
+    function attachmentsOk(uid) {
+      let d = request.resource.data;
+      let count = d.get('attachments', null) == null ? 0 : d.attachments.size();
+      let previous = resource == null ? null : resource.data.get('attachments', null);
+      return !('attachments' in d)
+        || d.attachments == null
+        || (d.attachments is list
+            && (count <= 1
+                || (previous is list && count <= previous.size())
+                || (count <= 10 && isPaidUser(uid))));
+    }
+
+    function validRecord(uid) {
+      let d = request.resource.data;
+      return d.name is string && d.name.size() > 0 && d.name.size() <= 200
+        && shortText('notes', 4000)
+        && shortText('categoryLabel', 120)
+        && shortText('subcategoryName', 120)
+        && shortText('costCurrency', 8)
+        && shortText('holderId', 64)
+        && attachmentsOk(uid)
+        && optionalList('renewals', 50)
+        && (!('repeatMonths' in d) || d.repeatMonths == null
+            || (d.repeatMonths is int && d.repeatMonths in [1, 3, 6, 12]))
+        && (!('locked' in d) || d.locked is bool)
+        && optionalBool('inWallet')
+        && (!('leadDays' in d) || d.leadDays == null
+            || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
+    }
+
+    function householdData(hid) {
+      return get(/databases/$(database)/documents/households/$(hid)).data;
+    }
+
+    function isHouseholdMember(hid) {
+      return signedIn() && request.auth.uid in householdData(hid).get('memberUids', []);
+    }
+
+    function canEditHousehold(hid) {
+      let h = householdData(hid);
+      return signedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.uid in h.get('memberUids', [])
+        && h.get('tier', 'free') in ['family', 'business'];
+    }
+
+    function householdAttachmentOk(list, i, prefix) {
+      return list.size() <= i
+        || !(list[i] is map)
+        || (list[i].get('storagePath', '') is string
+            && list[i].get('storagePath', '').matches('^' + prefix + '[A-Za-z0-9._-]+$'));
+    }
+
+    function householdAttachmentsOk(hid, recordId) {
+      let d = request.resource.data;
+      let prefix = 'households/' + hid + '/records/' + recordId + '/';
+      return !('attachments' in d) || d.attachments == null
+        || (d.attachments is list && d.attachments.size() <= 10
+            && householdAttachmentOk(d.attachments, 0, prefix)
+            && householdAttachmentOk(d.attachments, 1, prefix)
+            && householdAttachmentOk(d.attachments, 2, prefix)
+            && householdAttachmentOk(d.attachments, 3, prefix)
+            && householdAttachmentOk(d.attachments, 4, prefix)
+            && householdAttachmentOk(d.attachments, 5, prefix)
+            && householdAttachmentOk(d.attachments, 6, prefix)
+            && householdAttachmentOk(d.attachments, 7, prefix)
+            && householdAttachmentOk(d.attachments, 8, prefix)
+            && householdAttachmentOk(d.attachments, 9, prefix));
+    }
+
+    function validHouseholdRecord(hid, recordId) {
+      let d = request.resource.data;
+      return d.name is string && d.name.size() > 0 && d.name.size() <= 200
+        && d.createdBy is string
+        && d.get('overLimit', false) == false
+        && shortText('notes', 4000)
+        && shortText('categoryLabel', 120)
+        && shortText('subcategoryName', 120)
+        && shortText('costCurrency', 8)
+        && shortText('holderId', 64)
+        && householdAttachmentsOk(hid, recordId)
+        && optionalList('renewals', 50)
+        && (!('repeatMonths' in d) || d.repeatMonths == null
+            || (d.repeatMonths is int && d.repeatMonths in [1, 3, 6, 12]))
+        && (!('locked' in d) || d.locked is bool)
+        && optionalBool('inWallet')
+        && optionalBool('isDeleted')
+        && (!('leadDays' in d) || d.leadDays == null
+            || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
+    }
+
+    function validPhotoKey(keyId) {
+      let d = request.resource.data;
+      return keyId == 'photos'
+        && d.keys().hasOnly(['version', 'alg', 'kdf', 'iterations', 'salt', 'wrappedKey', 'createdAt'])
+        && d.keys().hasAll(['version', 'alg', 'kdf', 'iterations', 'salt', 'wrappedKey'])
+        && d.version is int && d.version >= 1 && d.version <= 10
+        && d.alg is string && d.alg.size() <= 40
+        && d.kdf is string && d.kdf.size() <= 40
+        && d.iterations is int && d.iterations >= 100000 && d.iterations <= 5000000
+        && d.salt is string && d.salt.size() >= 12 && d.salt.size() <= 64
+        && d.wrappedKey is string && d.wrappedKey.size() >= 40 && d.wrappedKey.size() <= 200
+        && (!('createdAt' in d) || d.createdAt == request.time);
+    }
+
+    function validPushDevice(deviceId) {
+      let d = request.resource.data;
+      return deviceId.matches('^[A-Za-z0-9]{16,64}$')
+        && d.keys().hasOnly(['token', 'platform', 'locale', 'updatedAt'])
+        && d.keys().hasAll(['token', 'platform', 'locale', 'updatedAt'])
+        && d.token is string && d.token.size() > 0 && d.token.size() <= 1024
+        && d.platform in ['android', 'ios']
+        && d.locale is string && d.locale.size() <= 16
+        && d.locale.matches('^[A-Za-z]{2,3}([_-][A-Za-z0-9]{2,8}){0,3}$')
+        && d.updatedAt == request.time;
+    }
+
+    function sessionDeviceKeys() {
+      return ['label', 'platform', 'model', 'osVersion', 'appVersion', 'createdAt', 'lastSeenAt'];
+    }
+
+    function isSessionDeviceId(deviceId) {
+      return deviceId.matches('^[0-9a-f]{32}$');
+    }
+
+    function validSessionDevice() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(sessionDeviceKeys().concat(['signedOutAt']))
+        && d.keys().hasAll(sessionDeviceKeys())
+        && d.label is string && d.label.size() <= 60
+        && d.platform in ['android', 'ios']
+        && d.model is string && d.model.size() <= 60
+        && d.osVersion is string && d.osVersion.size() <= 30
+        && d.appVersion is string && d.appVersion.size() <= 20
+        && d.createdAt is timestamp
+        && d.lastSeenAt is timestamp;
+    }
+
+    function groupKeys() {
+      return ['categoryKey', 'groups', 'deletedGroups', 'updatedAt'];
+    }
+
+    function validGroup() {
+      let d = request.resource.data;
+      return (!('categoryKey' in d) || (d.categoryKey is string && d.categoryKey.size() <= 120))
+        && (!('groups' in d) || (d.groups is list && d.groups.size() <= 200))
+        && (!('deletedGroups' in d) || (d.deletedGroups is list && d.deletedGroups.size() <= 200));
+    }
+
+    function validPreference() {
+      return smallDoc(20) && optionalList('labels', 100);
+    }
+
+    function assistantExpiryOk(d) {
+      return d.expireAt is timestamp
+        && d.expireAt > request.time + duration.value(88, 'd')
+        && d.expireAt < request.time + duration.value(92, 'd');
+    }
+
+    function validAssistantChat() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['title', 'createdAt', 'updatedAt', 'expireAt'])
+        && d.keys().hasAll(['title', 'createdAt', 'updatedAt', 'expireAt'])
+        && d.title is string && d.title.size() > 0 && d.title.size() <= 60
+        && d.createdAt is timestamp
+        && d.updatedAt == request.time
+        && assistantExpiryOk(d);
+    }
+
+    function assistantProposalOk(list, i) {
+      return list.size() <= i
+        || (list[i] is map
+            && list[i].keys().hasOnly(['type', 'summary', 'status'])
+            && list[i].keys().hasAll(['type', 'summary', 'status'])
+            && list[i].get('type', null) is string
+            && list[i].get('type', '').size() <= 24
+            && list[i].get('summary', null) is string
+            && list[i].get('summary', '').size() <= 200
+            && list[i].get('status', '') in ['pending', 'applied', 'opened', 'cancelled']);
+    }
+
+    function assistantProposalsOk(d) {
+      return !('proposals' in d)
+        || (d.proposals is list && d.proposals.size() <= 5
+            && assistantProposalOk(d.proposals, 0)
+            && assistantProposalOk(d.proposals, 1)
+            && assistantProposalOk(d.proposals, 2)
+            && assistantProposalOk(d.proposals, 3)
+            && assistantProposalOk(d.proposals, 4));
+    }
+
+    function validAssistantMessage() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['role', 'text', 'createdAt', 'expireAt', 'proposals'])
+        && d.keys().hasAll(['role', 'text', 'createdAt', 'expireAt'])
+        && d.role in ['user', 'assistant']
+        && d.text is string && d.text.size() > 0 && d.text.size() <= 8000
+        && d.createdAt == request.time
+        && assistantExpiryOk(d)
+        && (d.role == 'assistant' || !('proposals' in d))
+        && assistantProposalsOk(d);
+    }
+
+    function legacyFreeFields() {
+      return request.resource.data.get('plan', 'free') == 'free'
+        && request.resource.data.get('isPremium', false) == false;
+    }
+
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly(profileKeys().concat(['plan', 'isPremium']))
+        && legacyFreeFields()
+        && validProfile();
+
+      allow update: if isOwner(uid)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(profileKeys())
+        && validProfile();
+
+      allow delete: if false;
+
+      match /records/{recordId} {
+        allow read: if isOwner(uid);
+        allow create: if isVerifiedOwner(uid)
+          && smallDoc(60)
+          && request.resource.data.get('overLimit', false) == false
+          && request.resource.data.get('movedFromHousehold', false) == false
+          && validRecord(uid);
+        allow update: if isVerifiedOwner(uid) && smallDoc(60) && staysParked(uid)
+          && validRecord(uid);
+        allow delete: if isVerifiedOwner(uid);
+      }
+
+      match /categories/{categoryKey} {
+        allow read: if isOwner(uid);
+        allow create: if isVerifiedOwner(uid)
+          && smallDoc(30)
+          && request.resource.data.get('isDeleted', false) == false
+          && request.resource.data.get('overLimit', false) == false;
+        allow update: if isVerifiedOwner(uid) && smallDoc(30) && staysParked(uid);
+        allow delete: if isVerifiedOwner(uid);
+      }
+
+      match /groups/{categoryKey} {
+        allow read: if isOwner(uid);
+        allow create: if isVerifiedOwner(uid) && smallDoc(30)
+          && request.resource.data.keys().hasOnly(groupKeys())
+          && validGroup();
+        allow update: if isVerifiedOwner(uid) && smallDoc(30)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(groupKeys())
+          && validGroup();
+        allow delete: if isVerifiedOwner(uid);
+      }
+
+      match /preferences/{prefId} {
+        allow read: if isOwner(uid);
+        allow create, update: if isVerifiedOwner(uid) && validPreference();
+        allow delete: if isVerifiedOwner(uid);
+      }
+
+      match /devices/{deviceId} {
+        allow read: if isOwner(uid);
+        allow create: if (isSessionDeviceId(deviceId)
+            && isOwner(uid)
+            && validSessionDevice()
+            && !('signedOutAt' in request.resource.data))
+          || (!isSessionDeviceId(deviceId) && isVerifiedOwner(uid) && validPushDevice(deviceId));
+        allow update: if (isSessionDeviceId(deviceId)
+            && isOwner(uid)
+            && validSessionDevice()
+            && request.resource.data.get('signedOutAt', null) == resource.data.get('signedOutAt', null))
+          || (!isSessionDeviceId(deviceId) && isVerifiedOwner(uid) && validPushDevice(deviceId));
+        allow delete: if isOwner(uid);
+      }
+
+      match /securityEvents/{eventId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      match /billing/{billingId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      match /people/{personId} {
+        allow read: if isOwner(uid);
+        allow delete: if isVerifiedOwner(uid);
+        allow create, update: if isVerifiedOwner(uid)
+          && (request.method == 'update' || isPaidUser(uid))
+          && request.resource.data.keys().hasOnly(['name', 'colourIndex', 'nationality',
+                                                   'email', 'emailReminders', 'residence',
+                                                   'extraPassports', 'passportRecords'])
+          && nationalityOk(request.resource.data)
+          && residenceOk(request.resource.data)
+          && extraPassportsOk(request.resource.data)
+          && passportRecordsOk(request.resource.data)
+          && staffEmailOk(request.resource.data)
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0
+          && request.resource.data.name.size() <= 40
+          && request.resource.data.colourIndex is int
+          && request.resource.data.colourIndex >= 0
+          && request.resource.data.colourIndex < 8;
+      }
+
+      match /trips/{tripId} {
+        allow read: if isOwner(uid);
+        allow delete: if isVerifiedOwner(uid);
+        allow create: if isVerifiedOwner(uid) && isPaidUser(uid) && validTrip();
+        allow update: if isVerifiedOwner(uid) && isPaidUser(uid) && validTrip();
+      }
+
+      match /items/{itemId} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if false;
+      }
+
+      match /subcategories/{docId} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if false;
+      }
+
+      match /keys/{keyId} {
+        allow read: if isOwner(uid);
+        allow delete: if isVerifiedOwner(uid);
+        allow create: if isVerifiedOwner(uid) && validPhotoKey(keyId);
+        allow update: if false;
+      }
+
+      match /assistantChats/{chatId} {
+        allow read: if isOwner(uid);
+        allow create: if isOwner(uid)
+          && validAssistantChat()
+          && request.resource.data.createdAt == request.time;
+        allow update: if isOwner(uid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['updatedAt', 'expireAt'])
+          && validAssistantChat();
+        allow delete: if isOwner(uid);
+
+        match /messages/{messageId} {
+          allow read: if isOwner(uid);
+          allow create: if isOwner(uid)
+            && existsAfter(/databases/$(database)/documents/users/$(uid)/assistantChats/$(chatId))
+            && validAssistantMessage();
+          allow update: if isOwner(uid)
+            && resource.data.role == 'assistant'
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['proposals'])
+            && assistantProposalsOk(request.resource.data);
+          allow delete: if isOwner(uid);
+        }
+      }
+
+      match /{other=**} {
+        allow read, write: if false;
+      }
+    }
+
+    match /households/{hid} {
+      allow read: if signedIn() && request.auth.uid in resource.data.get('memberUids', []);
+      allow write: if false;
+
+      match /records/{recordId} {
+        allow read: if isHouseholdMember(hid);
+        allow create: if canEditHousehold(hid)
+          && smallDoc(60)
+          && validHouseholdRecord(hid, recordId)
+          && request.resource.data.createdBy == request.auth.uid;
+        allow update: if canEditHousehold(hid)
+          && smallDoc(60)
+          && validHouseholdRecord(hid, recordId)
+          && request.resource.data.createdBy == resource.data.createdBy;
+        allow delete: if canEditHousehold(hid);
+      }
+
+      match /{other=**} {
+        allow read, write: if false;
+      }
+    }
+
+    match /invites/{code} {
+      allow read, write: if false;
+    }
+
+    match /updateRequests/{requestId} {
+      allow read, write: if false;
+    }
+
+    match /staffEmailLog/{logId} {
+      allow read, write: if false;
+    }
+
+    match /securityState/{uid} {
+      allow read, write: if false;
+    }
+
+    match /securityAlerts/{alertId} {
+      allow read, write: if false;
+    }
+
+    match /deletionTokens/{nonce} {
+      allow read, write: if false;
+    }
+
+    match /deletionRequests/{requestId} {
+      allow read, write: if false;
+    }
+
+    match /billingNotices/{noticeId} {
+      allow read, write: if false;
+    }
+
+    match /visaData/{passport} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /visaLinks/{docId} {
+      allow read: if signedIn() && docId == 'all';
+      allow write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
