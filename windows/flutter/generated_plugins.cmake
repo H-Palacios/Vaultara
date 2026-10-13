@@ -5,16 +5,22 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   app_links
   cloud_firestore
+  file_selector_windows
   firebase_auth
   firebase_core
   firebase_storage
+  flutter_secure_storage_windows
   flutter_tts
   local_auth_windows
   permission_handler_windows
+  printing
+  share_plus
+  speech_to_text_windows
   url_launcher_windows
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  jni
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)
