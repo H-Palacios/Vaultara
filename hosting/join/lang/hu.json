@@ -1,0 +1,11 @@
+{
+  "page": "Csatlakozás egy háztartáshoz a Vaultarán",
+  "title": "Csatlakozás egy háztartáshoz",
+  "intro": "Meghívták, hogy bejegyzéseket osszon meg a Vaultarán. Nyissa meg az alkalmazást a csatlakozáshoz.",
+  "open": "A Vaultara megnyitása",
+  "copy": "Kód másolása",
+  "copied": "Másolva",
+  "nocode": "Ez a meghívólink nem teljes. Kérje meg a meghívóját küldő személyt, hogy küldje el újra.",
+  "manual": "Ha az alkalmazás nem nyílik meg, lépjen a Profil, majd a Család részre, és adja meg a kódot kézzel.",
+  "store": "Vaultara letöltése a Google Playről"
+}
