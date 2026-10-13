@@ -1,0 +1,1 @@
+enum UsageSortMode { mostUsed, recentlyUsed }
