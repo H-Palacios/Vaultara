@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
-import 'package:vaultara/data/models/expiry_timeline_month.dart';
-import 'package:vaultara/data/models/expiry_timeline_record.dart';
+import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
+import 'package:vaultara/features/insights/data/models/expiry_timeline_record.dart';
+import 'package:vaultara/core/util/safe_locale.dart';
 
 /*
   A single row in the timeline list. Shows the month name (no year, the
@@ -33,7 +34,7 @@ class ExpiryTimelineMonthRow extends StatelessWidget {
     final locale = Localizations.localeOf(context).toString();
 
     /* Month name only. Year lives in the navigator header above. */
-    final monthLabel = DateFormat('MMMM', locale).format(month.month);
+    final monthLabel = DateFormat('MMMM', SafeLocale.date(locale)).format(month.month);
 
     final ratio = maxCount == 0 ? 0.0 : month.count / maxCount;
 
@@ -134,7 +135,7 @@ class _RecordTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final locale = Localizations.localeOf(context).toString();
-    final dateLabel = DateFormat('d MMM', locale).format(record.expiryDate);
+    final dateLabel = DateFormat('d MMM', SafeLocale.date(locale)).format(record.expiryDate);
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
@@ -146,7 +147,7 @@ class _RecordTile extends StatelessWidget {
             height: 4,
             margin: const EdgeInsets.only(top: 7, right: 10),
             decoration: BoxDecoration(
-              color: scheme.primary.withOpacity(0.5),
+              color: scheme.primary.withValues(alpha: 0.5),
               shape: BoxShape.circle,
             ),
           ),
