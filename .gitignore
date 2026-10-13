@@ -46,3 +46,4 @@ app.*.map.json
 *.hprof
 .firebase/
 google-services.json
+.env*
