@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Vaultara</title>
+<link rel="stylesheet" href="/delete/style.css">
+</head>
+<body>
+<main class="card">
+<div class="brand">VAULTARA</div>
+<div id="loading" class="state">
+<div class="spinner" aria-hidden="true"></div>
+<p id="loadingText"></p>
+</div>
+<div id="fail" class="state" hidden>
+<h1 id="failTitle"></h1>
+<p id="failBody"></p>
+<button type="button" id="newLink" class="secondary"></button>
+</div>
+<div id="sent" class="state" hidden>
+<div class="mail" aria-hidden="true"></div>
+<h1 id="sentTitle"></h1>
+<p id="sentBody"></p>
+</div>
+<div id="done" class="state" hidden>
+<div class="tick" aria-hidden="true"></div>
+<h1 id="doneTitle"></h1>
+<p id="doneBody"></p>
+</div>
+<form id="request" class="state" hidden novalidate>
+<h1 id="requestTitle"></h1>
+<p id="requestBody" class="center"></p>
+<label class="label" for="email" id="emailLabel"></label>
+<input type="email" id="email" name="email" autocomplete="email" inputmode="email" maxlength="254" required>
+<p class="fieldError" id="emailError" hidden></p>
+<p class="error" id="requestError" role="alert" hidden></p>
+<button type="submit" id="send" class="primary"></button>
+<p class="note"><a id="privacy" href="/privacy"></a></p>
+<section class="info">
+<h2 data-k="stepsTitle"></h2>
+<ol class="list">
+<li data-k="step1"></li>
+<li data-k="step2"></li>
+<li data-k="step3"></li>
+</ol>
+<p class="note" data-k="inApp"></p>
+<h2 data-k="reviewIntro"></h2>
+<ul class="list">
+<li data-k="item1"></li>
+<li data-k="item2"></li>
+<li data-k="item3"></li>
+<li data-k="item4"></li>
+<li data-k="item5"></li>
+</ul>
+<h2 data-k="keptTitle"></h2>
+<p data-k="keptBody"></p>
+<p class="warn" data-k="subscriptionNote"></p>
+</section>
+</form>
+<form id="review" class="state" hidden novalidate>
+<h1 id="reviewTitle"></h1>
+<p id="reviewAccount" class="center account" hidden></p>
+<p id="reviewIntro"></p>
+<ul class="list">
+<li id="item1"></li>
+<li id="item2"></li>
+<li id="item3"></li>
+<li id="item4"></li>
+<li id="item5"></li>
+</ul>
+<p class="warn" id="subscriptionNote"></p>
+<label class="check" for="confirm">
+<input type="checkbox" id="confirm" name="confirm">
+<span id="confirmCheck"></span>
+</label>
+<p class="fieldError" id="confirmError" hidden></p>
+<p class="error" id="reviewError" role="alert" hidden></p>
+<button type="submit" id="delete" class="danger"></button>
+</form>
+</main>
+<script src="/delete/app.js"></script>
+</body>
+</html>
