@@ -1,938 +1,1972 @@
 {
   "@@locale": "el",
-
-    "expiryCalendarTitle": "Ημερολόγιο λήξεων",
-
-  "calendarIntro":
-    "Επιλέξτε πώς θέλετε να εξερευνήσετε τις λήξεις σας:\n\n• Πληκτρολογήστε πόσες ημέρες από σήμερα θέλετε να δείτε.\n• Ή επιλέξτε μια συγκεκριμένη ημερομηνία στο ημερολόγιο.\n\nΤο Vaultara θα σας δείξει ποια αντικείμενα φτάνουν στην ημερομηνία λήξης τους εκείνη την ημέρα.",
-
-  "daysFromTodayLabel": "Ημέρες από σήμερα",
-  "daysFromTodayHint": "Για παράδειγμα 0, 1, 7, 30",
-
   "apply": "Εφαρμογή",
-  "pickDateOnCalendar": "Επιλέξτε ημερομηνία στο ημερολόγιο",
-
   "today": "Σήμερα",
   "tomorrow": "Αύριο",
-  "in7Days": "Σε 7 ημέρες",
-  "in30Days": "Σε 30 ημέρες",
-
   "inDays": "σε {days} ημέρες",
   "@inDays": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
-  "enterDaysError": "Εισαγάγετε αριθμό ημερών.",
-  "invalidDaysError": "Εισαγάγετε έγκυρο αριθμό ημερών (0 ή μεγαλύτερο).",
-
-  "showingItemsRelative": "Εμφάνιση αντικειμένων που λήγουν {time}",
-  "@showingItemsRelative": {
-    "placeholders": {
-      "time": { "type": "String" }
-    }
-  },
-
-  "showingItemsExact": "Εμφάνιση αντικειμένων που λήγουν στην επιλεγμένη ημερομηνία",
-  "noItemsOnDate": "Δεν υπάρχουν αντικείμενα που έχουν οριστεί να λήγουν εκείνη την ημέρα.",
-
-  "editorAddTitle": "Προσθήκη αντικειμένου",
-  "editorEditTitle": "Επεξεργασία αντικειμένου",
-
   "editorCategory": "Κατηγορία",
   "editorCategoryHint": "Επιλέξτε κατηγορία",
-
   "editorGroup": "Ομάδα",
   "editorGroupHint": "Επιλέξτε ομάδα μέσα σε αυτή την κατηγορία",
-
-  "editorItemName": "Όνομα αντικειμένου",
-  "editorItemNameHint": "Εισαγάγετε όνομα αντικειμένου",
-
   "editorExpiryDate": "Ημερομηνία λήξης",
   "editorExpiryDateHint": "Επιλέξτε ημερομηνία λήξης",
-
   "editorErrorCategory": "Επιλέξτε κατηγορία",
   "editorErrorGroup": "Επιλέξτε ομάδα",
-  "editorErrorName": "Το όνομα του αντικειμένου είναι υποχρεωτικό",
   "editorErrorExpiry": "Επιλέξτε ημερομηνία λήξης",
-  "editorErrorExpiryPast": "Η ημερομηνία λήξης πρέπει να είναι σήμερα ή σε μελλοντική ημερομηνία",
-
   "cancel": "Ακύρωση",
   "save": "Αποθήκευση",
-
   "addCategoryTitle": "Προσθήκη κατηγορίας",
-  "unlimitedCategories": "Απεριόριστες κατηγορίες (Premium)",
-
-  "categoryUsage": "{current} / {limit} κατηγορίες χρησιμοποιούνται",
-  "@categoryUsage": {
-    "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
-    }
-  },
-
-  "categoryNameLabel": "Όνομα κατηγορίας",
   "categoryNameHint": "Εισαγάγετε κατηγορία",
-
-  "categoryLimitReached":
-    "Έχετε φτάσει το όριο του Basic πλάνου των {limit} κατηγοριών. Αναβαθμίστε σε Premium για να δημιουργήσετε απεριόριστες προσαρμοσμένες κατηγορίες.",
+  "categoryLimitReached": "Έχετε φτάσει το όριο των {limit} κατηγοριών του δωρεάν προγράμματος. Αναβαθμίστε σε Premium για να δημιουργήσετε απεριόριστες προσαρμοσμένες κατηγορίες.",
   "@categoryLimitReached": {
     "placeholders": {
-      "limit": { "type": "int" }
+      "limit": {
+        "type": "int"
+      }
     }
   },
-
-  "categoryLimitInfo":
-    "Στο Basic πλάνο μπορείτε να δημιουργήσετε έως {limit} προσαρμοσμένες κατηγορίες.",
-  "@categoryLimitInfo": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
-
   "categoryErrorEmpty": "Το όνομα κατηγορίας είναι υποχρεωτικό",
   "categoryErrorTooShort": "Το όνομα κατηγορίας είναι πολύ μικρό",
   "categoryErrorTooLong": "Το όνομα κατηγορίας είναι πολύ μεγάλο",
   "categoryErrorSymbols": "Το όνομα κατηγορίας δεν μπορεί να περιέχει μόνο σύμβολα",
   "categoryErrorNumbers": "Το όνομα κατηγορίας δεν μπορεί να περιέχει αριθμούς",
-
   "upgradeRequired": "Απαιτείται αναβάθμιση",
   "viewPremiumBenefits": "Δείτε τα οφέλη Premium",
   "createCategory": "Δημιουργία",
-
   "addGroupTitle": "Προσθήκη ομάδας",
   "groupNameLabel": "Ομάδα",
   "groupNameHint": "Εισαγάγετε ομάδα",
-
   "groupErrorEmpty": "Το όνομα ομάδας είναι υποχρεωτικό",
   "groupErrorTooShort": "Το όνομα ομάδας είναι πολύ μικρό",
   "groupErrorTooLong": "Το όνομα ομάδας είναι πολύ μεγάλο",
   "groupErrorSymbols": "Το όνομα ομάδας δεν μπορεί να περιέχει σύμβολα",
   "groupErrorNumbers": "Το όνομα ομάδας δεν μπορεί να περιέχει αριθμούς",
   "createGroup": "Δημιουργία",
-
   "firstNameLabel": "Όνομα",
   "firstNameHint": "Εισαγάγετε όνομα",
-
   "lastNameLabel": "Επώνυμο",
   "lastNameHint": "Εισαγάγετε επώνυμο",
-
   "emailLabel": "Διεύθυνση email",
-
   "loginPasswordHint": "Εισαγάγετε τον κωδικό σας",
   "registerPasswordHint": "Εισαγάγετε κωδικό",
-  "passwordHelper": "Τουλάχιστον 8 χαρακτήρες με συνδυασμό τύπων",
-
-  "passwordTooShort": "Πολύ μικρός",
-  "passwordTooWeak": "Πολύ αδύναμος",
-  "passwordMedium": "Μέτριος",
-  "passwordStrong": "Ισχυρός",
-
   "errorFirstName": "Το όνομα είναι υποχρεωτικό",
   "errorLastName": "Το επώνυμο είναι υποχρεωτικό",
   "errorEmailInvalid": "Εισαγάγετε έγκυρη διεύθυνση email",
   "errorEmailInUse": "Αυτή η διεύθυνση email είναι ήδη\nσυνδεδεμένη με λογαριασμό Vaultara",
   "errorPasswordLength": "Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες",
-  "errorPasswordWeak": "Εισαγάγετε πιο ισχυρό κωδικό",
   "errorGeneric": "Η εγγραφή απέτυχε. Παρακαλώ δοκιμάστε ξανά",
-
   "createAccount": "Δημιουργία λογαριασμού",
   "appName": "Vaultara",
-
-  "authTagline": "Ο προσωπικός σας κόμβος για διαβατήρια, άδειες, κάρτες και άλλα σημαντικά έγγραφα",
+  "authTagline": "Μην χάσετε ποτέ μια ημερομηνία λήξης",
   "tabSignIn": "Σύνδεση",
-  "tabCreateAccount": "Δημιουργία λογαριασμού",
-
-  "signInFooterText": "Συνδεθείτε για να αποκτήσετε πρόσβαση στον προσωπικό σας χώρο Vaultara και να έχετε κάθε ανανέωση υπό έλεγχο",
-  "createAccountFooterText": "Δημιουργήστε τον λογαριασμό σας στο Vaultara για να αποθηκεύετε τις βασικές υπενθυμίσεις σας και να τις βρίσκετε όποτε τις χρειάζεστε",
-
   "emailRequired": "Η διεύθυνση email σας είναι υποχρεωτική",
   "passwordRequired": "Ο κωδικός σας είναι υποχρεωτικός",
-
   "emailNotFound": "Λάθος email. Δεν υπάρχει\nλογαριασμός Vaultara με αυτό το email",
   "incorrectPassword": "Λάθος κωδικός",
-
-  "emailLabel": "Διεύθυνση email",
   "emailHint": "Εισαγάγετε το email σας",
   "passwordLabel": "Κωδικός",
   "signIn": "Σύνδεση",
-
   "categoryPersonalIdentification": "Προσωπική ταυτοποίηση",
   "categoryDrivingAndVehicles": "Οδήγηση και οχήματα",
   "categoryTravelAndImmigration": "Ταξίδια και μετανάστευση",
   "categoryBankingAndCards": "Τραπεζικά και κάρτες",
   "categoryInsuranceAndCover": "Ασφάλιση και κάλυψη",
-  "categoryHealthAndMedical": "Υγεία και ιατρικά",
   "categoryWorkAndProfessional": "Εργασία και επαγγελματικά",
   "categoryPropertyAndHousing": "Ακίνητα και κατοικία",
-  "categoryHouseholdAndUtilities": "Νοικοκυριό και κοινής ωφέλειας",
-
   "subcategoryPassports": "Διαβατήρια",
   "subcategoryIdCards": "Δελτία ταυτότητας",
   "subcategoryResidencePermits": "Άδειες διαμονής",
-
   "subcategoryDrivingLicences": "Άδειες οδήγησης",
   "subcategoryVehicleRegistrations": "Άδειες κυκλοφορίας",
   "subcategoryRoadworthyCertificates": "Πιστοποιητικά καταλληλότητας",
-  "subcategoryVehicleInspectionCertificates": "Πιστοποιητικά τεχνικού ελέγχου",
-
   "subcategoryVisas": "Βίζες",
   "subcategoryStudyPermits": "Άδειες σπουδών",
   "subcategoryWorkPermits": "Άδειες εργασίας",
-  "subcategoryTravelInsuranceDocuments": "Έγγραφα ταξιδιωτικής ασφάλισης",
-
   "subcategoryDebitAndCreditCards": "Χρεωστικές και πιστωτικές κάρτες",
   "subcategoryStoreCards": "Κάρτες καταστημάτων",
-  "subcategoryFuelCards": "Κάρτες καυσίμων",
-
   "subcategoryVehicleInsurances": "Ασφάλειες οχημάτων",
   "subcategoryPropertyInsurances": "Ασφάλειες ακινήτων",
   "subcategoryLifeInsurances": "Ασφάλειες ζωής",
   "subcategoryHealthInsurances": "Ασφάλειες υγείας",
   "subcategoryTravelInsurances": "Ταξιδιωτικές ασφάλειες",
-
-  "subcategoryMedicalPrescriptions": "Ιατρικές συνταγές",
-  "subcategoryOpticalPrescriptions": "Οπτικές συνταγές",
-  "subcategoryMedicalCertificates": "Ιατρικά πιστοποιητικά",
-
   "subcategoryProfessionalLicences": "Επαγγελματικές άδειες",
-  "subcategoryProfessionalRegistrations": "Επαγγελματικές εγγραφές",
-  "subcategoryIndustryRegistrations": "Εγγραφές κλάδου",
   "subcategoryWorkAccessCards": "Κάρτες πρόσβασης εργασίας",
-
   "subcategoryLeaseAgreements": "Συμβάσεις μίσθωσης",
   "subcategoryAccessCardsAndTags": "Κάρτες πρόσβασης και tags",
-  "subcategoryParkingPermits": "Άδειες στάθμευσης",
-  "subcategorySecurityAccessPermits": "Άδειες πρόσβασης ασφαλείας",
-"subcategoryElectricityAccounts": "Λογαριασμοί ηλεκτρικού ρεύματος",
-"subcategoryWaterAccounts": "Λογαριασμοί νερού",
-"subcategoryInternetContracts": "Συμβόλαια internet",
-"subcategorySecurityServiceContracts": "Συμβόλαια υπηρεσιών ασφαλείας",
-
-"searchCategories": "Αναζήτηση κατηγοριών",
-"filterAll": "Όλα",
-"filterPreset": "Προκαθορισμένα",
-"filterCustom": "Προσαρμοσμένα",
-"addCategoryTitle": "Προσθήκη κατηγορίας",
-"customLabel": "Προσαρμοσμένο",
-"subcategoriesLabel": "υποκατηγορίες",
-"itemsLabel": "αντικείμενα",
-
-"itemsExpiring": "{count} αντικείμενα που λήγουν σε {days} ημέρες",
-"@itemsExpiring": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-
-"pinnedEssentials": "Καρφιτσωμένα βασικά",
-"pinnedHint": "Καρφιτσώστε τις κατηγορίες που ανοίγετε πιο συχνά ώστε να μένουν στην κορυφή της λίστας σας.",
-"noCategoriesFound": "Δεν βρέθηκαν κατηγορίες",
-
-"searchGroups": "Αναζήτηση ομάδων",
-"addGroupTitle": "Προσθήκη ομάδας",
-
-"basicPlanGroupInfo": "Είστε στο Basic πλάνο.\nΜπορείτε να δείτε τις προκαθορισμένες ομάδες κάτω από αυτή την κατηγορία.\nΑναβαθμίστε σε Premium για να δημιουργήσετε τις δικές σας ομάδες.",
-"groupDeleted": "Η ομάδα διαγράφηκε",
-"undo": "ΑΝΑΙΡΕΣΗ",
-
-"@groupStats": {
-  "placeholders": {
-    "items": { "type": "int" },
-    "expiring": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-
-"groupTapHint": "Πατήστε για να προσθέσετε και να παρακολουθείτε αντικείμενα σε αυτή την ομάδα.",
-"itemsInGroup": "Αντικείμενα σε αυτή την ομάδα",
-"itemsInGroupHint": "Παρακολουθήστε κάθε σημαντικό αντικείμενο με την ημερομηνία λήξης του, ώστε να το ανανεώνετε έγκαιρα.",
-
-"searchItems": "Αναζήτηση αντικειμένων",
-
-"filterAll": "Όλα",
-"filterExpiringWithin": "Λήγουν μέσα σε {days} ημέρες",
-"@filterExpiringWithin": {
-  "placeholders": {
-    "days": { "type": "int" }
-  }
-},
-
-"filterExpired": "Έχουν λήξει",
-"addItem": "Προσθήκη αντικειμένου",
-"noItemsYet": "Δεν υπάρχουν αντικείμενα ακόμα.",
-
-"statusExpired": "Έχει λήξει",
-"statusExpiresToday": "Λήγει σήμερα",
-"statusExpiresInOneDay": "Λήγει σε 1 ημέρα",
-"statusExpiresInDays": "Λήγει σε {days} ημέρες",
-"@statusExpiresInDays": {
-  "placeholders": {
-    "days": { "type": "int" }
-  }
-},
-"statusValid": "Έγκυρο",
-
-"deleteCategoryTitle": "Διαγραφή κατηγορίας",
-"deleteCategoryMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την κατηγορία \"{name}\";",
-"@deleteCategoryMessage": {
-  "placeholders": {
-    "name": { "type": "String" }
-  }
-},
-
-"deleteGroupTitle": "Διαγραφή ομάδας",
-"deleteGroupMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα \"{name}\";",
-"@deleteGroupMessage": {
-  "placeholders": {
-    "name": { "type": "String" }
-  }
-},
-
-"deleteItemTitle": "Διαγραφή αντικειμένου",
-"deleteItemMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"{name}\";",
-"@deleteItemMessage": {
-  "placeholders": {
-    "name": { "type": "String" }
-  }
-},
-
-"cancel": "Ακύρωση",
-"delete": "Διαγραφή",
-
-"homeWelcomeTitle": "Καλώς ήρθατε",
-
-"homeWelcomeFirstTitle": "Καλώς ήρθατε, {name}",
-"@homeWelcomeFirstTitle": {
-  "placeholders": {
-    "name": { "type": "String" }
-  }
-},
-
-"homeWelcomeBackTitle": "Καλώς ήρθατε ξανά, {name}",
-"@homeWelcomeBackTitle": {
-  "placeholders": {
-    "name": { "type": "String" }
-  }
-},
-
-"homeWelcomeSubtitleGeneric":
-  "Το Vaultara σας βοηθά να παρακολουθείτε σημαντικές ημερομηνίες λήξης, ώστε τίποτα να μη λήγει «σιωπηλά».",
-
-"homeWelcomeSubtitleFirst":
-  "Χαιρόμαστε που είστε εδώ. Το Vaultara σας βοηθά να μένετε οργανωμένοι, κρατώντας σημαντικές ημερομηνίες και εγγραφές σε ένα ασφαλές μέρος.",
-
-"homeWelcomeSubtitleBack":
-  "Χαιρόμαστε που σας βλέπουμε ξανά. Το Vaultara είναι εδώ όποτε θέλετε να ελέγξετε τις σημαντικές ημερομηνίες και τις εγγραφές σας.",
-
-"insightEmptyTitle": "Δεν προστέθηκε τίποτα ακόμα",
-"insightEmptyBody": "Μόλις αρχίσετε να παρακολουθείτε σημαντικές ημερομηνίες, το Vaultara θα σας βοηθά να προλαβαίνετε τις λήξεις.",
-
-"insightExpiresTodayTitle": "\"{name}\" λήγει σήμερα",
-"insightExpiresTodayBody": "Ένας γρήγορος έλεγχος τώρα μπορεί να κρατήσει τα πάντα ακριβή.",
-
-"insightExpiresTomorrowTitle": "\"{name}\" λήγει αύριο",
-"insightExpiresTomorrowBody": "Αν το ελέγξετε σήμερα, μπορεί να κερδίσετε χρόνο αργότερα.",
-
-"insightExpiresSoonTitle": "\"{name}\" λήγει στις {date}",
-"insightExpiresSoonBody": "Αν το χειριστείτε νωρίς, όλα θα είναι πιο ήρεμα.",
-
-"insightNextExpiryTitle": "Η επόμενη λήξη σας είναι το \"{name}\" στις {date}",
-"insightNextExpiryBody": "Δεν χρειάζεται ενέργεια ακόμη, αλλά είναι καλό να το έχετε στο νου σας.",
-
-"insightClusteredTitle": "Πολλά αντικείμενα λήγουν γύρω στον {month}",
-"insightClusteredBody": "Αν τα ελέγξετε μαζί, μπορεί να γλιτώσετε χρόνο και να μειώσετε τις υπενθυμίσεις.",
-
-"insightTopCategoryTitle": "Τα περισσότερα αντικείμενά σας ανήκουν στην κατηγορία {category}",
-"insightTopCategoryBody": "Ο έλεγχος αυτής της περιοχής έχει τη μεγαλύτερη οργανωτική επίδραση.",
-
-"insightStableTitle": "Όλα φαίνονται σταθερά",
-"insightStableBody": "Δεν υπάρχουν επερχόμενες λήξεις που χρειάζονται προσοχή αυτή τη στιγμή.",
-
-"@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
-"@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
-"@insightExpiresSoonTitle": {
-  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
-},
-"@insightNextExpiryTitle": {
-  "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
-},
-"@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
-"@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
-
-"summaryAllTitle": "Όλα τα αντικείμενα",
-"summaryAllCaption": "Παρακολουθούνται στο Vaultara",
-"summarySoonTitle": "Λήγουν σύντομα",
-"summarySoonCaption": "Μέσα σε 30 ημέρες",
-"summaryWeekTitle": "Αυτή την εβδομάδα",
-"summaryWeekCaption": "Λήγει σε 7 ημέρες",
-"summaryExpiredTitle": "Έχουν λήξει",
-"summaryExpiredCaption": "Μετά την ημερομηνία λήξης",
-
-"stabilityStableTitle": "Όλα φαίνονται σταθερά",
-"stabilityStableBody": "Οι εγγραφές σας δεν δείχνουν άμεσους ή συσσωρευόμενους κινδύνους.",
-
-"stabilityDecliningTitle": "Η σταθερότητα μειώνεται",
-"stabilityDecliningBody": "Κάποια αντικείμενα έχουν περάσει τη λήξη τους και άλλα πλησιάζουν σύντομα.",
-
-"stabilityWeakenedTitle": "Η σταθερότητα έχει αποδυναμωθεί",
-"stabilityWeakenedBody": "Υπάρχουν ληγμένες εγγραφές, μειώνοντας τη συνολική αξιοπιστία.",
-
-"stabilityPressureTitle": "Η πίεση αυξάνεται",
-"stabilityPressureBody": "Αρκετές εγγραφές θα χρειαστούν προσοχή σύντομα για να διατηρηθεί η σταθερότητα.",
-
-"editorNotes": "Σημειώσεις",
-"notesHint": "Εισαγάγετε σημειώσεις",
-
-"editorReminderTitle": "Υπενθύμιση",
-"editorReminderNone": "Χωρίς υπενθύμιση",
-"editorReminderOnExpiry": "Την ημέρα λήξης",
-"editorReminder7Days": "7 ημέρες πριν από τη λήξη",
-"editorReminder30Days": "30 ημέρες πριν από τη λήξη",
-"editorReminderCustom": "Προσαρμοσμένη",
-
-"daysBeforeExpiry": "ημέρες πριν από τη λήξη",
-
-"reminderStage0Title": "Υπενθύμιση λήξης",
-"reminderStage0Body": "{firstName}, το {itemName} λήγει σε {days} ημέρες.",
-"@reminderStage0Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-
-"reminderStage1Title": "Υπενθύμιση παρακολούθησης",
-"reminderStage1Body": "{firstName}, το {itemName} δεν έχει ενημερωθεί ακόμη.",
-"@reminderStage1Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-
-"reminderStage2Title": "Η λήξη πλησιάζει",
-"reminderStage2Body": "Η ημερομηνία λήξης για το {itemName} πλησιάζει.",
-"@reminderStage2Body": {
-  "placeholders": {
-    "itemName": { "type": "String" }
-  }
-},
-"reminderFinalTitle": "Τελική υπενθύμιση",
-"reminderFinalBody": "{firstName}, παρακαλώ ενημερώστε το {itemName} τώρα.",
-"@reminderFinalBody": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-
-"coverageBalanceTitle": "Ισορροπία κάλυψης",
-"coverageAllRepresented": "Οι εγγραφές σας περιλαμβάνουν αντικείμενα σε όλες τις κατηγορίες.",
-"coverageMissingNamed": "Δεν βρέθηκαν εγγραφές σε {count} κατηγορίες: {names}.",
-"coverageMissingSummary": "Δεν έχετε προσθέσει εγγραφές σε {count} κατηγορίες, συμπεριλαμβανομένων των {names} και άλλων {remaining}.",
-
-"@coverageMissingNamed": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "names": { "type": "String" }
-  }
-},
-"@coverageMissingSummary": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "names": { "type": "String" },
-    "remaining": { "type": "int" }
-  }
-},
-
-"usePasswordInstead": "Χρήση κωδικού αντί για βιομετρικά",
-"signInWithBiometrics": "Σύνδεση με βιομετρικά",
-"enableBiometricsTitle": "Ενεργοποίηση βιομετρικής ασφάλειας",
-"enableBiometricsBody": "Χρησιμοποιήστε δακτυλικό αποτύπωμα ή αναγνώριση προσώπου για να προστατεύσετε το Vaultara.",
-"enableBiometricsReason": "Ενεργοποίηση βιομετρικού ξεκλειδώματος για το Vaultara.",
-"notNow": "Όχι τώρα",
-"useBiometrics": "Χρήση βιομετρικών",
-
-"recordsCalendarIntro":
-  "Επιλέξτε πώς θέλετε να εξερευνήσετε τις λήξεις σας:\n\n• Πληκτρολογήστε πόσες ημέρες από σήμερα θέλετε να δείτε.\n• Ή επιλέξτε μια συγκεκριμένη ημερομηνία στο ημερολόγιο.\n\nΤο Vaultara θα σας δείξει ποιες εγγραφές φτάνουν στην ημερομηνία λήξης τους εκείνη την ημέρα.",
-
-"showingRecordsRelative": "Εμφάνιση εγγραφών που λήγουν {time}",
-"@showingRecordsRelative": {
-  "placeholders": {
-    "time": { "type": "String" }
-  }
-},
-
-"showingRecordsExact": "Εμφάνιση εγγραφών που λήγουν στην επιλεγμένη ημερομηνία",
-
-"noRecordsOnDate": "Δεν υπάρχουν εγγραφές που έχουν οριστεί να λήγουν εκείνη την ημέρα.",
-
-"recordEditorAddTitle": "Προσθήκη εγγραφής",
-"recordEditorEditTitle": "Επεξεργασία εγγραφής",
-
-"editorRecordName": "Όνομα εγγραφής",
-"editorRecordNameHint": "Εισαγάγετε όνομα εγγραφής",
-"recordEditorErrorName": "Το όνομα εγγραφής είναι υποχρεωτικό",
-
-"@recordsExpiring": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-"@recordsGroupStats": {
-  "placeholders": {
-    "records": { "type": "int" },
-    "expiring": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-
-"recordsGroupTapHint": "Πατήστε για να προσθέσετε και να παρακολουθείτε εγγραφές σε αυτή την ομάδα.",
-
-"recordsInGroup": "Εγγραφές σε αυτή την ομάδα",
-
-"recordsInGroupHint":
-  "Παρακολουθήστε κάθε σημαντική εγγραφή με την ημερομηνία λήξης της, ώστε να την ανανεώνετε έγκαιρα.",
-
-"searchRecords": "Αναζήτηση εγγραφών",
-
-"addRecord": "Προσθήκη εγγραφής",
-
-"noRecordsYet": "Δεν υπάρχουν εγγραφές ακόμα.",
-
-"deleteRecordTitle": "Διαγραφή εγγραφής",
-
-"recordsInsightClusteredTitle":
-  "Πολλές εγγραφές λήγουν γύρω στον {month}",
-"@recordsInsightClusteredTitle": {
-  "placeholders": {
-    "month": { "type": "String" }
-  }
-},
-
-"recordsInsightTopCategoryTitle":
-  "Οι περισσότερες εγγραφές σας ανήκουν στην κατηγορία {category}",
-"@recordsInsightTopCategoryTitle": {
-  "placeholders": {
-    "category": { "type": "String" }
-  }
-},
-
-"summaryAllRecordsTitle": "Όλες οι εγγραφές",
-
-"recordsStabilityDecliningBody":
-  "Κάποιες εγγραφές έχουν περάσει τη λήξη τους και άλλες πλησιάζουν σύντομα.",
-
-"recordsCoverageAllRepresented":
-  "Οι εγγραφές σας περιλαμβάνουν εγγραφές σε όλες τις κατηγορίες.",
-
-"recordReminderStage0Body":
-  "{firstName}, η εγγραφή σας {recordName} λήγει σε {days} ημέρες.",
-"@recordReminderStage0Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-
-"recordReminderStage1Body":
-  "{firstName}, η εγγραφή σας {recordName} δεν έχει ενημερωθεί ακόμη.",
-"@recordReminderStage1Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" }
-  }
-},
-
-"recordReminderStage2Body":
-  "Η ημερομηνία λήξης για την εγγραφή {recordName} πλησιάζει.",
-"@recordReminderStage2Body": {
-  "placeholders": {
-    "recordName": { "type": "String" }
-  }
-},
-
-"recordReminderFinalBody":
-  "{firstName}, παρακαλώ ενημερώστε την εγγραφή {recordName} τώρα.",
-"@recordReminderFinalBody": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" }
-  }
-},
-
-"noGroupFound": "Δεν υπάρχουν ομάδες ακόμα",
-
-"recordsExpiring": "{count, plural, one {1 εγγραφή που λήγει σε {days} ημέρες} other {{count} εγγραφές που λήγουν σε {days} ημέρες}}",
-"recordsGroupStats": "{records, plural, one {1 εγγραφή} other {{records} εγγραφές}} • {expiring} λήγουν μέσα σε {days} ημέρες",
-"groupLabel": "{count, plural, one {{count} ομάδα} other {{count} ομάδες}}",
-"recordsLabel": "{count, plural, one {{count} εγγραφή} other {{count} εγγραφές}}",
-
-"forgotPassword": "Ξεχάσατε τον κωδικό;",
-"forgotPasswordTitle": "Επαναφορά κωδικού",
-"forgotPasswordBody": "Εισαγάγετε τη διεύθυνση email σας και θα σας στείλουμε έναν σύνδεσμο για επαναφορά κωδικού.",
-"sendResetLink": "Αποστολή συνδέσμου επαναφοράς",
-"passwordResetEmailSent": "Στάλθηκε email επαναφοράς κωδικού.",
-"verifyEmailToContinue": "Παρακαλώ επαληθεύστε τη διεύθυνση email σας πριν συνδεθείτε",
-
-"changeEmailTitle": "Αλλαγή διεύθυνσης email",
-"newEmailHint": "Εισαγάγετε το νέο σας email",
-"sendVerificationEmail": "Αποστολή email επαλήθευσης",
-
-"deleteAccountTitle": "Διαγραφή λογαριασμού",
-"deleteAccountWarning": "Αυτή η ενέργεια θα διαγράψει οριστικά τον λογαριασμό σας και όλα τα αποθηκευμένα δεδομένα.\nΔεν μπορεί να αναιρεθεί.",
-"deleteAccountConfirm": "Οριστική διαγραφή λογαριασμού",
-
-"supportTitle": "Υποστήριξη",
-"supportSubtitle": "Επικοινωνήστε μαζί μας αν χρειάζεστε βοήθεια ή έχετε απορίες.",
-"supportEmailSubject": "Αίτημα υποστήριξης Vaultara",
-"supportEmailError": "Δεν ήταν δυνατή η ανοίξη της εφαρμογής email.",
-"passwordResetEmailFailed": "Δεν ήταν δυνατή η αποστολή email επαναφοράς κωδικού.",
-
-"loggedInPasswordResetBody": "Θα στείλουμε σύνδεσμο επαναφοράς κωδικού στο:\n{email}",
-"@loggedInPasswordResetBody": {
-  "description": "Ενημερώνει τον χρήστη ότι θα σταλεί email επαναφοράς κωδικού",
-  "placeholders": { "email": { "type": "String" } }
-},
-
-"accountManagementTitle": "Διαχείριση λογαριασμού",
-"changeEmailTitle": "Αλλαγή διεύθυνσης email",
-"changeEmailSubtitle": "Ενημερώστε το email που είναι συνδεδεμένο με τον λογαριασμό σας.",
-"changePasswordTitle": "Αλλαγή κωδικού",
-"changePasswordSubtitle": "Θα σας στείλουμε με email έναν σύνδεσμο για ασφαλή αλλαγή κωδικού.",
-"deleteAccountTitle": "Διαγραφή λογαριασμού",
-"deleteAccountSubtitle": "Κατάργηση του λογαριασμού Vaultara οριστικά.",
-
-"biometricAuthReason": "Ταυτοποιηθείτε για πρόσβαση στον λογαριασμό Vaultara.",
-
-"verifyEmailTitle": "Επαλήθευση email",
-"verifyEmailBody": "Σας στείλαμε ένα email επαλήθευσης στα εισερχόμενά σας. Ανοίξτε το και επιβεβαιώστε τη διεύθυνση email σας. Έπειτα, επιστρέψτε εδώ για να συνεχίσετε.",
-"verifyEmailConfirmedButton": "Έχω επαληθεύσει το email μου",
-"verifyEmailResendButton": "Επαναποστολή email επαλήθευσης",
-"verifyEmailSending": "Αποστολή...",
-
-"navHome": "Αρχική",
-"navCategories": "Κατηγορίες",
-"navInsights": "Στατιστικά",
-"navCalendar": "Ημερολόγιο",
-
-
-"tutorialHomeSearch": "Χρησιμοποιήστε τη γραμμή αναζήτησης για να βρείτε γρήγορα οποιαδήποτε εγγραφή παρακολουθείτε.",
-"tutorialHomeFab": "Προσθέστε την πρώτη σας εγγραφή εδώ.\nΕπιλέξτε πού ανήκει, προσθέστε προαιρετικές σημειώσεις και επιλέξτε ημερομηνία λήξης.",
-"tutorialHomeSummary": "Καθώς προσθέτετε περισσότερες εγγραφές, αυτή η ενότητα σας βοηθά να εντοπίζετε όσα πλησιάζουν ή έχουν περάσει τη λήξη τους.",
-"tutorialHomeInsight": "Αυτή η έξυπνη ένδειξη αναδεικνύει μοτίβα και επερχόμενες λήξεις.\nΜπορείτε να πατήσετε το εικονίδιο του ηχείου για να ακουστεί σε ανάγνωση, αν προτιμάτε ηχητική καθοδήγηση.",
-"tutorialHomeCoverage": "Η Ισορροπία Κάλυψης δείχνει πόσο ομοιόμορφα κατανέμονται οι εγγραφές σας σε όλες τις κατηγορίες.\nΥψηλότερη τιμή σημαίνει λιγότερα κενά στην παρακολούθησή σας.",
-"tutorialHomeStability": "Η Σταθερότητα δείχνει πόσο αξιόπιστες είναι οι εγγραφές σας με την πάροδο του χρόνου.\nΛηγμένα στοιχεία και επερχόμενες λήξεις μπορούν να μειώσουν τη συνολική σταθερότητα.",
-
-"tutorialCancel": "Ακύρωση",
-"tutorialNext": "Επόμενο",
-"tutorialEnd": "Τέλος περιήγησης",
-
-"softDeleteCategory": "Κατηγορία",
-"softDeleteGroup": "Ομάδα",
-"softDeleteRecord": "Εγγραφή",
-
-"softDeleteTitle": "Μετακίνηση {type} στα Πρόσφατα διαγραμμένα",
-"softDeleteMessage": "Το/Η {type} \"{name}\" θα μετακινηθεί στα Πρόσφατα διαγραμμένα.\n\nΜπορείτε να το επαναφέρετε μέσα σε 30 ημέρες. Μετά από αυτό, θα διαγραφεί οριστικά.",
-"softDeleteMove": "Μετακίνηση",
-"@softDeleteTitle": { "placeholders": { "type": {} } },
-"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
-
-"recentlyDeletedTitle": "Πρόσφατα διαγραμμένα",
-"categories": "Κατηγορίες",
-"groups": "Ομάδες",
-"records": "Εγγραφές",
-"restore": "Επαναφορά",
-"deletePermanently": "Οριστική διαγραφή",
-
-"recentlyDeletedBanner": "Τα διαγραμμένα {type} διατηρούνται εδώ για 30 ημέρες πριν αφαιρεθούν οριστικά.",
-"@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
-
-"searchDeletedHint": "Αναζήτηση διαγραμμένων {type}",
-"@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
-
-"noDeletedItems": "Δεν υπάρχουν διαγραμμένα {type} ακόμα",
-"@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
-
-"categoriesHint": "Πατήστε μια κατηγορία για να δείτε τις ομάδες της και να διαχειριστείτε τις εγγραφές σας.",
-"groupsHint": "Οι ομάδες οργανώνουν τις εγγραφές σας μέσα σε αυτή την κατηγορία. Πατήστε μια ομάδα για να δείτε και να διαχειριστείτε τις εγγραφές της.",
-"notLoggedIn": "Δεν έχετε συνδεθεί",
-
-"recordsInsideGroupHint": "Αυτές είναι οι εγγραφές μέσα σε αυτή την ομάδα.",
-
-"snackMovedToRecentlyDeleted": "\"{name}\" μετακινήθηκε στα Πρόσφατα διαγραμμένα",
-"@snackMovedToRecentlyDeleted": {
-  "description": "Snackbar όταν ένα αντικείμενο μετακινείται στα πρόσφατα διαγραμμένα",
-  "placeholders": { "name": { "type": "String", "example": "Passport" } }
-},
-
-"snackDeletedSuccessfully": "\"{name}\" διαγράφηκε με επιτυχία",
-"@snackDeletedSuccessfully": {
-  "description": "Snackbar όταν ένα αντικείμενο διαγράφεται οριστικά",
-  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
-},
-
-"snackUpdatedSuccessfully": "\"{name}\" ενημερώθηκε με επιτυχία",
-"@snackUpdatedSuccessfully": {
-  "description": "Snackbar όταν ένα αντικείμενο ενημερώνεται",
-  "placeholders": { "name": { "type": "String", "example": "Visa" } }
-},
-
-"snackAddedSuccessfully": "\"{name}\" προστέθηκε με επιτυχία",
-"@snackAddedSuccessfully": {
-  "description": "Snackbar όταν ένα αντικείμενο προστίθεται",
-  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
-},
-
-"snackRestoredSuccessfully": "\"{name}\" επαναφέρθηκε με επιτυχία",
-"@snackRestoredSuccessfully": {
-  "description": "Snackbar όταν ένα αντικείμενο επαναφέρεται από τα πρόσφατα διαγραμμένα",
-  "placeholders": { "name": { "type": "String", "example": "Passport" } }
-},
-
-"snackFreeLimitReached": "Φτάσατε το όριο του δωρεάν πλάνου ({current}/{limit}). Αναβαθμίστε για να προσθέσετε περισσότερα.",
-"@snackFreeLimitReached": {
-  "description": "Snackbar όταν έχει φτάσει το όριο του δωρεάν πλάνου",
-  "placeholders": {
-    "current": { "type": "int", "example": "3" },
-    "limit": { "type": "int" }
-  }
-},
-
-"globalSearchTitle": "Αναζήτηση σε όλες τις εγγραφές",
-"globalSearchHint": "Πληκτρολογήστε όνομα εγγραφής, κατηγορία ή ομάδα",
-"globalSearchNoMatches": "Καμία εγγραφή δεν ταιριάζει με την αναζήτησή σας.",
-"snackNoRecordsToSearch": "Δεν υπάρχουν εγγραφές για αναζήτηση. Προσθέστε μερικές εγγραφές και το Vaultara θα τις ευρετηριάσει αυτόματα.",
-
-"recoveryCentreTitle": "Κέντρο ανάκτησης",
-"recoveryCentreSubtitle": "Επαναφέρετε ή διαγράψτε οριστικά τις αφαιρεμένες εγγραφές.",
-
-"plan_premium": "Premium",
-"plan_free": "Δωρεάν",
-
-"profile_app_settings_title": "Ρυθμίσεις εφαρμογής",
-"profile_privacy_security_title": "Απόρρητο και ασφάλεια",
-
-"profile_biometric_on": "Το βιομετρικό κλείδωμα είναι ενεργό σε αυτή τη συσκευή.",
-"profile_biometric_off": "Το βιομετρικό κλείδωμα είναι ανενεργό.",
-"profile_biometric_enable_reason": "Επιβεβαιώστε την ταυτότητά σας για να ενεργοποιήσετε το βιομετρικό κλείδωμα.",
-"profile_biometric_disable_reason": "Επιβεβαιώστε την ταυτότητά σας για να απενεργοποιήσετε το βιομετρικό κλείδωμα.",
-
-"profile_account_management_title": "Διαχείριση λογαριασμού",
-"profile_account_management_subtitle": "Αλλάξτε email, κωδικό ή διαγράψτε τον λογαριασμό σας.",
-
-"profile_premium_active_title": "Το Premium είναι ενεργό",
-"profile_premium_upgrade_title": "Αναβάθμιση σε Premium",
-"profile_premium_active_subtitle": "Οι προηγμένες υπενθυμίσεις είναι διαθέσιμες.",
-"profile_premium_upgrade_subtitle": "Ξεκλειδώστε προηγμένες υπενθυμίσεις και απεριόριστη οργάνωση.",
-
-"profile_manage_cancel_hint": "Διαχείριση ή ακύρωση οποιαδήποτε στιγμή στο Google Play.",
-"profile_manage_subscription_button": "Διαχείριση συνδρομής",
-
-"plansTitle": "Επιλέξτε πλάνο",
-"plansTrialBanner": "Ξεκινήστε με 7ήμερη δωρεάν δοκιμή.\nΑκυρώστε οποιαδήποτε στιγμή.",
-"plansLoading": "Φόρτωση…",
-"plansStartFreeTrial": "Έναρξη δωρεάν δοκιμής",
-"plansNoChargeTodayFooter": "7 ημέρες δωρεάν · Χωρίς χρέωση σήμερα",
-
-"planFreeTitle": "Δωρεάν",
-"planFreeSubtitle": "Για να ξεκινήσετε",
-"planPremiumMonthlyTitle": "Premium Μηνιαίο",
-"planPremiumYearlyTitle": "Premium Ετήσιο",
-"planPerMonth": "τον μήνα",
-"planPerYear": "τον χρόνο",
-
-"planBadgeCurrent": "Τρέχον πλάνο",
-"planBadgePopular": "Δημοφιλές",
-"planBadgeBestValue": "Καλύτερη αξία",
-
-"planYouAreOnThisPlan": "Είστε ήδη σε αυτό το πλάνο.",
-
-"planFeatureUpToRecords": "Έως {count} εγγραφές",
-"@planFeatureUpToRecords": {
-  "placeholders": { "count": { "type": "int" } }
-},
-
-"planFeatureCustomCategoriesUpTo": "Προσαρμοσμένες κατηγορίες (έως {count})",
-"@planFeatureCustomCategoriesUpTo": {
-  "placeholders": { "count": { "type": "int" } }
-},
-
-"planFeaturePresetSubcategories": "Προκαθορισμένες υποκατηγορίες",
-"planFeatureCloudStorage": "Αποθήκευση στο cloud",
-"planFeatureSmartExpiryInsights": "Έξυπνες πληροφορίες λήξεων",
-"planFeatureCoverageBalance": "Ισορροπία κάλυψης",
-"planFeatureRecordStabilityTracking": "Παρακολούθηση σταθερότητας εγγραφών",
-
-"planFeatureUnlimitedRecords": "Απεριόριστες εγγραφές",
-"planFeatureUnlimitedCategories": "Απεριόριστες κατηγορίες",
-"planFeatureCustomSubcategories": "Προσαρμοσμένες υποκατηγορίες",
-"planFeatureMultipleRemindersPerRecord": "Πολλαπλές υπενθυμίσεις",
-"planFeatureAdvancedReminderTiming": "Προηγμένος χρονισμός",
-"planFeatureAutomaticFollowUps": "Αυτόματες υπενθυμίσεις παρακολούθησης",
-
-"planFeatureEverythingInMonthly": "Όλα όσα περιλαμβάνει το Μηνιαίο",
-"planFeatureSavePercentComparedToMonthly": "Εξοικονομήστε {percent}% σε σύγκριση με το μηνιαίο",
-"@planFeatureSavePercentComparedToMonthly": {
-  "placeholders": { "percent": { "type": "int" } }
-},
-
-"planFeatureBestLongTermValue": "Καλύτερη αξία μακροπρόθεσμα",
-
-"editorReminderLabel": "Υπενθύμιση",
-"editorReminderSelectOptional": "Επιλέξτε υπενθύμιση (προαιρετικό)",
-"editorReminderOnExpiry": "Την ημέρα λήξης",
-"editorReminderDaysBefore": "{days} ημέρες πριν από τη λήξη",
-"editorFreeItemsCount": "Δωρεάν αντικείμενα: {used}/{limit}",
-"editorExpiryPastWarning": "Η ημερομηνία λήξης έχει ήδη περάσει.",
-"editorExpiryTodayWarning": "Αυτή η εγγραφή λήγει σήμερα.",
-"editorErrorExpiryPast": "Η ημερομηνία λήξης δεν μπορεί να είναι στο παρελθόν.",
-
-"@editorReminderDaysBefore": {
-  "placeholders": {
-    "days": { "type": "int" }
-  }
-},
-
-"@editorFreeItemsCount": {
-  "placeholders": {
-    "used": { "type": "int" },
-    "limit": { "type": "int" }
-  }
-},
-
-"todayInsightsTitle": "Σημερινές πληροφορίες",
-"tutorialBannerTitle": "Γρήγορη περιήγηση",
-"tutorialBannerBody": "Μάθετε πού να αναζητάτε, πώς να προσθέτετε εγγραφές και τι σημαίνουν οι πληροφορίες σε λιγότερο από ένα λεπτό.",
-"tutorialBannerStart": "Έναρξη περιήγησης",
-"tutorialBannerDismiss": "Όχι τώρα",
-
-"authErrorUserDisabled": "Αυτός ο λογαριασμός έχει απενεργοποιηθεί.",
-"authErrorNetwork": "Σφάλμα δικτύου. Ελέγξτε το internet και δοκιμάστε ξανά.",
-"authErrorTooManyRequests": "Πάρα πολλές προσπάθειες. Παρακαλώ δοκιμάστε αργότερα.",
-"authErrorSignInFailed": "Η σύνδεση απέτυχε. Παρακαλώ δοκιμάστε ξανά.",
-
-"ok": "OK",
-
-"snackPremiumEnabled": "Το Premium ενεργοποιήθηκε",
-"snackPremiumRestored": "Το Premium επαναφέρθηκε",
-
-"passwordNeedLower": "Πρέπει να περιέχει πεζό γράμμα",
-"passwordNeedUpper": "Πρέπει να περιέχει κεφαλαίο γράμμα",
-"passwordNeedNumber": "Πρέπει να περιέχει αριθμό",
-"passwordNeedSymbol": "Πρέπει να περιέχει σύμβολο",
-
-"confirmIdentityTitle": "Επιβεβαίωση ταυτότητας",
-"confirm": "Επιβεβαίωση",
-
-"profile_sign_out_title": "Αποσύνδεση",
-"profile_sign_out_subtitle": "Αποσυνδεθείτε από το Vaultara σε αυτή τη συσκευή",
-"profile_sign_out_confirm_title": "Αποσύνδεση;",
-"profile_sign_out_confirm_body": "Θα χρειαστεί να συνδεθείτε ξανά για να αποκτήσετε πρόσβαση στον λογαριασμό σας.",
-"profile_sign_out_action": "Αποσύνδεση",
-
-"todayInsightsAudioHint": "Προτιμάτε ήχο; Χρησιμοποιήστε το εικονίδιο του ηχείου.",
-
-"category2Label": "Κατηγορία",
-"enable2BiometricsBody": "Χρησιμοποιήστε αναγνώριση δακτυλικού αποτυπώματος για να προστατεύσετε τον λογαριασμό σας στο Vaultara.",
-
-"snackNotificationsDisabled": "Οι ειδοποιήσεις είναι απενεργοποιημένες. Ενεργοποιήστε τις για να λαμβάνετε υπενθυμίσεις.",
-"openSettings": "Άνοιγμα ρυθμίσεων",
-
-"reminderOnExpiryTitle": "Λήγει σήμερα",
-"@reminderOnExpiryTitle": {
-  "description": "Τίτλος ειδοποίησης που εμφανίζεται την ημέρα λήξης ενός αντικειμένου"
-},
-
-"reminderOnExpiryBody": "Γεια σου {firstName}, το \"{itemName}\" λήγει σήμερα.",
-"@reminderOnExpiryBody": {
-  "description": "Κείμενο ειδοποίησης την ημέρα λήξης, με προσφώνηση του χρήστη με το μικρό του όνομα",
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-
-"freeCategoriesProgress": "Δωρεάν κατηγορίες: {current}/{limit}",
-"@freeCategoriesProgress": {
-  "description": "Δείχνει πόσες δωρεάν κατηγορίες έχει χρησιμοποιήσει ο χρήστης από το όριο του δωρεάν πλάνου.",
-  "placeholders": {
-    "current": { "type": "int" },
-    "limit": { "type": "int" }
-  }
-},
-
-"addNotesHint": "Προσθήκη σημειώσεων (προαιρετικό)",
-"apply": "Εφαρμογή",
-"smartInsightExpiresTodayHeading": "Λήγει Σήμερα",
-"smartInsightExpiresTodaySingleBody": "Το {name} λήγει σήμερα. Ενεργήστε τώρα για να το διατηρήσετε ενημερωμένο.",
-"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
-"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{Τα {names} και 1 ακόμη έγγραφο λήγουν σήμερα.} other{Τα {names} και {extra} ακόμη έγγραφα λήγουν σήμερα.}}",
-"@smartInsightExpiresTodayMultiBody": {
-  "placeholders": {
-    "names": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightSilentRiskHeading": "Χρειάζεται Την Προσοχή Σας",
-"smartInsightSilentRiskBody": "{days, plural, =1{Το {name} λήγει σε 1 ημέρα και δεν έχει υπενθύμιση. Βεβαιωθείτε ότι οι λεπτομέρειες είναι ακόμη σωστές.} other{Το {name} λήγει σε {days} ημέρες και δεν έχει υπενθύμιση. Βεβαιωθείτε ότι οι λεπτομέρειες είναι ακόμη σωστές.}}",
-"@smartInsightSilentRiskBody": {
-  "placeholders": {
-    "name": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-"smartInsightRenewalTwinHeading": "Πολλαπλές Ανανεώσεις Κοντά",
-"smartInsightRenewalTwinBodyTwo": "Τα {a} και {b} λήγουν εντός τριών εβδομάδων μεταξύ τους. Σχεδιάστε εκ των προτέρων.",
-"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
-"smartInsightRenewalTwinBodyThree": "Τα {a}, {b} και {c} λήγουν όλα εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.",
-"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
-"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{Τα {a}, {b} και 1 ακόμη έγγραφο λήγουν εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.} other{Τα {a}, {b} και {extra} ακόμη έγγραφα λήγουν εντός τριών εβδομάδων. Σχεδιάστε εκ των προτέρων.}}",
-"@smartInsightRenewalTwinBodyMany": {
-  "placeholders": {
-    "a": { "type": "String" },
-    "b": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightClusterHeading": "Επερχόμενη Ομάδα",
-"smartInsightClusterBody": "{count, plural, =1{1 έγγραφο στην κατηγορία {category} λήγει εντός των επόμενων δύο μηνών. Σκεφτείτε να τα διαχειριστείτε μαζί.} other{{count} έγγραφα στην κατηγορία {category} λήγουν εντός των επόμενων δύο μηνών. Σκεφτείτε να τα διαχειριστείτε μαζί.}}",
-"@smartInsightClusterBody": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "category": { "type": "String" }
-  }
-},
-"smartInsightQuietPeriodHeading": "Ήρεμη Περίοδος Μπροστά",
-"smartInsightQuietPeriodBody": "{days, plural, =1{Τίποτα δεν λήγει την επόμενη 1 ημέρα. Η επόμενη ανανέωσή σας είναι στις {firstDate}.} other{Τίποτα δεν λήγει τις επόμενες {days} ημέρες. Η επόμενη ανανέωσή σας είναι στις {firstDate}.}}",
-"@smartInsightQuietPeriodBody": {
-  "placeholders": {
-    "days": { "type": "int" },
-    "firstDate": { "type": "String" }
-  }
-},
-"smartInsightAllCaughtUpHeading": "Όλα Ενημερωμένα",
-"smartInsightAllCaughtUpBody": "{count, plural, =1{1 επερχόμενη λήξη καλύπτεται από υπενθυμίσεις. Τίποτα άλλο δεν χρειάζεται την προσοχή σας.} other{{count} επερχόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν χρειάζεται την προσοχή σας.}}",
-"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
-"smartInsightAllCaughtUpNoUpcomingBody": "Όλα ενημερωμένα. Τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή.",
-"smartInsightNoRecordsHeading": "Προσθέστε Την Πρώτη Σας Εγγραφή",
-"smartInsightNoRecordsBody": "Ξεκινήστε να παρακολουθείτε τα έγγραφά σας και το Vaultara θα εμφανίζει εδώ έξυπνες πληροφορίες.",
-"expiryTimelineTitle": "Χρονοδιάγραμμα λήξης",
-"expiryTimelineSubtitle": "Πατήστε έναν μήνα για να δείτε τα αρχεία που λήγουν σε αυτόν τον μήνα",
-"expiryTimelineDetailCount": "{count, plural, =1{1 αρχείο} other{{count} αρχεία}}",
-"@expiryTimelineDetailCount": {
-  "placeholders": { "count": { "type": "int" } }
-},
-"summaryUpcomingTitle": "Επερχόμενα",
-"summaryUpcomingCaption": "Εντός 30 ημερών",
-"summaryUrgentTitle": "Επείγον",
-"summaryUrgentCaption": "Εντός 7 ημερών"
-
-
+  "searchCategories": "Αναζήτηση κατηγοριών",
+  "filterAll": "Όλα",
+  "filterPreset": "Προκαθορισμένα",
+  "filterCustom": "Προσαρμοσμένα",
+  "noCategoriesFound": "Δεν βρέθηκαν κατηγορίες",
+  "searchGroups": "Αναζήτηση ομάδων",
+  "filterExpiringWithin": "Λήγουν μέσα σε {days} ημέρες",
+  "@filterExpiringWithin": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "filterExpired": "Έχουν λήξει",
+  "statusExpired": "Έχει λήξει",
+  "statusExpiresToday": "Λήγει σήμερα",
+  "statusExpiresInOneDay": "Λήγει σε 1 ημέρα",
+  "statusExpiresInDays": "Λήγει σε {days} ημέρες",
+  "@statusExpiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "statusValid": "Έγκυρο",
+  "deleteCategoryTitle": "Διαγραφή κατηγορίας",
+  "deleteCategoryMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την κατηγορία \"{name}\";",
+  "@deleteCategoryMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteGroupTitle": "Διαγραφή ομάδας",
+  "deleteGroupMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα \"{name}\";",
+  "@deleteGroupMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteItemMessage": "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"{name}\";",
+  "@deleteItemMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "Διαγραφή",
+  "homeWelcomeTitle": "Καλώς ήρθατε",
+  "homeWelcomeFirstTitle": "Καλώς ήρθατε, {name}",
+  "@homeWelcomeFirstTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWelcomeBackTitle": "Καλώς ήρθατε ξανά, {name}",
+  "@homeWelcomeBackTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWelcomeSubtitleGeneric": "Το Vaultara σας βοηθά να παρακολουθείτε σημαντικές ημερομηνίες λήξης, ώστε τίποτα να μη λήγει «σιωπηλά».",
+  "homeWelcomeSubtitleFirst": "Χαιρόμαστε που είστε εδώ. Το Vaultara σας βοηθά να μένετε οργανωμένοι, κρατώντας σημαντικές ημερομηνίες και εγγραφές σε ένα ασφαλές μέρος.",
+  "homeWelcomeSubtitleBack": "Χαιρόμαστε που σας βλέπουμε ξανά. Το Vaultara είναι εδώ όποτε θέλετε να ελέγξετε τις σημαντικές ημερομηνίες και τις εγγραφές σας.",
+  "summaryAllCaption": "Παρακολουθούνται στο Vaultara",
+  "summaryExpiredTitle": "Έχουν λήξει",
+  "summaryExpiredCaption": "Μετά την ημερομηνία λήξης",
+  "editorNotes": "Σημειώσεις",
+  "editorReminderNone": "Χωρίς υπενθύμιση",
+  "editorReminderOnExpiry": "Την ημέρα λήξης",
+  "enableBiometricsTitle": "Ενεργοποίηση βιομετρικής ασφάλειας",
+  "enableBiometricsReason": "Ενεργοποίηση βιομετρικού ξεκλειδώματος για το Vaultara.",
+  "notNow": "Όχι τώρα",
+  "useBiometrics": "Χρήση βιομετρικών",
+  "noRecordsOnDate": "Τίποτα δεν λήγει στις {date}",
+  "@noRecordsOnDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "editorRecordName": "Όνομα εγγραφής",
+  "editorRecordNameHint": "Εισαγάγετε όνομα εγγραφής",
+  "recordEditorErrorName": "Το όνομα εγγραφής είναι υποχρεωτικό",
+  "searchRecords": "Αναζήτηση εγγραφών",
+  "addRecord": "Προσθήκη εγγραφής",
+  "noRecordsYet": "Δεν υπάρχουν εγγραφές ακόμα.",
+  "deleteRecordTitle": "Διαγραφή εγγραφής",
+  "summaryAllRecordsTitle": "Όλες οι εγγραφές",
+  "noGroupFound": "Δεν υπάρχουν ομάδες ακόμα",
+  "groupLabel": "{count, plural, one{{count} ομάδα} other{{count} ομάδες}}",
+  "recordsLabel": "{count, plural, one{{count} εγγραφή} other{{count} εγγραφές}}",
+  "forgotPassword": "Ξεχάσατε τον κωδικό;",
+  "forgotPasswordTitle": "Επαναφορά κωδικού",
+  "forgotPasswordBody": "Εισαγάγετε τη διεύθυνση email σας και θα σας στείλουμε έναν σύνδεσμο για επαναφορά κωδικού.",
+  "sendResetLink": "Αποστολή συνδέσμου επαναφοράς",
+  "passwordResetEmailSent": "Στάλθηκε email επαναφοράς κωδικού.",
+  "verifyEmailToContinue": "Παρακαλώ επαληθεύστε τη διεύθυνση email σας πριν συνδεθείτε",
+  "changeEmailTitle": "Αλλαγή διεύθυνσης email",
+  "newEmailHint": "Εισαγάγετε το νέο σας email",
+  "sendVerificationEmail": "Αποστολή email επαλήθευσης",
+  "deleteAccountTitle": "Διαγραφή λογαριασμού",
+  "deleteAccountWarning": "Αυτή η ενέργεια θα διαγράψει οριστικά τον λογαριασμό σας και όλα τα αποθηκευμένα δεδομένα.\nΔεν μπορεί να αναιρεθεί.",
+  "deleteAccountConfirm": "Οριστική διαγραφή λογαριασμού",
+  "supportTitle": "Υποστήριξη",
+  "supportSubtitle": "Επικοινωνήστε μαζί μας αν χρειάζεστε βοήθεια ή έχετε απορίες.",
+  "supportEmailSubject": "Αίτημα υποστήριξης Vaultara",
+  "supportEmailError": "Δεν ήταν δυνατό το άνοιγμα της εφαρμογής email.",
+  "passwordResetEmailFailed": "Δεν ήταν δυνατή η αποστολή email επαναφοράς κωδικού.",
+  "loggedInPasswordResetBody": "Θα στείλουμε σύνδεσμο επαναφοράς κωδικού στο:\n{email}",
+  "@loggedInPasswordResetBody": {
+    "description": "Ενημερώνει τον χρήστη ότι θα σταλεί email επαναφοράς κωδικού",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "accountManagementTitle": "Διαχείριση λογαριασμού",
+  "changeEmailSubtitle": "Ενημερώστε το email που είναι συνδεδεμένο με τον λογαριασμό σας.",
+  "changePasswordTitle": "Αλλαγή κωδικού",
+  "changePasswordSubtitle": "Θα σας στείλουμε με email έναν σύνδεσμο για ασφαλή αλλαγή κωδικού.",
+  "deleteAccountSubtitle": "Κατάργηση του λογαριασμού Vaultara οριστικά.",
+  "biometricAuthReason": "Ταυτοποιηθείτε για πρόσβαση στον λογαριασμό Vaultara.",
+  "verifyEmailTitle": "Επαλήθευση email",
+  "verifyEmailSending": "Αποστολή...",
+  "navHome": "Αρχική",
+  "navCategories": "Κατηγορίες",
+  "navInsights": "Στατιστικά",
+  "navCalendar": "Ημερολόγιο",
+  "tutorialCancel": "Ακύρωση",
+  "softDeleteCategory": "Κατηγορία",
+  "softDeleteGroup": "Ομάδα",
+  "softDeleteRecord": "Εγγραφή",
+  "softDeleteTitle": "Μετακίνηση {type} στα Πρόσφατα διαγραμμένα",
+  "softDeleteMessage": "Το/Η {type} \"{name}\" θα μετακινηθεί στα Πρόσφατα διαγραμμένα.\n\nΜπορείτε να το επαναφέρετε μέσα σε 30 ημέρες. Μετά από αυτό, θα διαγραφεί οριστικά.",
+  "softDeleteMove": "Μετακίνηση",
+  "@softDeleteTitle": {
+    "placeholders": {
+      "type": {}
+    }
+  },
+  "@softDeleteMessage": {
+    "placeholders": {
+      "type": {},
+      "name": {}
+    }
+  },
+  "recentlyDeletedTitle": "Πρόσφατα διαγραμμένα",
+  "categories": "Κατηγορίες",
+  "groups": "Ομάδες",
+  "records": "Εγγραφές",
+  "restore": "Επαναφορά",
+  "deletePermanently": "Οριστική διαγραφή",
+  "recentlyDeletedBanner": "Τα διαγραμμένα {type} διατηρούνται εδώ για 30 ημέρες πριν αφαιρεθούν οριστικά.",
+  "@recentlyDeletedBanner": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "searchDeletedHint": "Αναζήτηση διαγραμμένων {type}",
+  "@searchDeletedHint": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "noDeletedItems": "Δεν υπάρχουν διαγραμμένα {type} ακόμα",
+  "@noDeletedItems": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "notLoggedIn": "Δεν έχετε συνδεθεί",
+  "snackMovedToRecentlyDeleted": "\"{name}\" μετακινήθηκε στα Πρόσφατα διαγραμμένα",
+  "@snackMovedToRecentlyDeleted": {
+    "description": "Snackbar όταν ένα αντικείμενο μετακινείται στα πρόσφατα διαγραμμένα",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
+  },
+  "snackDeletedSuccessfully": "\"{name}\" διαγράφηκε με επιτυχία",
+  "@snackDeletedSuccessfully": {
+    "description": "Snackbar όταν ένα αντικείμενο διαγράφεται οριστικά",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Driver License"
+      }
+    }
+  },
+  "snackUpdatedSuccessfully": "\"{name}\" ενημερώθηκε με επιτυχία",
+  "@snackUpdatedSuccessfully": {
+    "description": "Snackbar όταν ένα αντικείμενο ενημερώνεται",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Visa"
+      }
+    }
+  },
+  "snackAddedSuccessfully": "\"{name}\" προστέθηκε με επιτυχία",
+  "@snackAddedSuccessfully": {
+    "description": "Snackbar όταν ένα αντικείμενο προστίθεται",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Insurance"
+      }
+    }
+  },
+  "snackRestoredSuccessfully": "\"{name}\" επαναφέρθηκε με επιτυχία",
+  "@snackRestoredSuccessfully": {
+    "description": "Snackbar όταν ένα αντικείμενο επαναφέρεται από τα πρόσφατα διαγραμμένα",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
+  },
+  "snackFreeLimitReached": "Φτάσατε το όριο του δωρεάν πλάνου ({current}/{limit}). Αναβαθμίστε για να προσθέσετε περισσότερα.",
+  "@snackFreeLimitReached": {
+    "description": "Snackbar όταν έχει φτάσει το όριο του δωρεάν πλάνου",
+    "placeholders": {
+      "current": {
+        "type": "int",
+        "example": "3"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "globalSearchTitle": "Αναζήτηση σε όλες τις εγγραφές",
+  "globalSearchHint": "Πληκτρολογήστε όνομα εγγραφής, κατηγορία ή ομάδα",
+  "globalSearchNoMatches": "Καμία εγγραφή δεν ταιριάζει με την αναζήτησή σας.",
+  "snackNoRecordsToSearch": "Δεν υπάρχουν εγγραφές για αναζήτηση. Προσθέστε μερικές εγγραφές και το Vaultara θα τις ευρετηριάσει αυτόματα.",
+  "recoveryCentreTitle": "Κέντρο ανάκτησης",
+  "recoveryCentreSubtitle": "Επαναφέρετε ή διαγράψτε οριστικά τις αφαιρεμένες εγγραφές.",
+  "plan_premium": "Premium",
+  "plan_free": "Δωρεάν",
+  "profile_app_settings_title": "Ρυθμίσεις εφαρμογής",
+  "profileAppLockTitle": "Κλείδωμα εφαρμογής",
+  "profile_biometric_on": "Το βιομετρικό κλείδωμα είναι ενεργό σε αυτή τη συσκευή.",
+  "profile_biometric_off": "Το βιομετρικό κλείδωμα είναι ανενεργό.",
+  "profile_biometric_enable_reason": "Επιβεβαιώστε την ταυτότητά σας για να ενεργοποιήσετε το βιομετρικό κλείδωμα.",
+  "profile_biometric_disable_reason": "Επιβεβαιώστε την ταυτότητά σας για να απενεργοποιήσετε το βιομετρικό κλείδωμα.",
+  "profile_account_management_title": "Διαχείριση λογαριασμού",
+  "profile_account_management_subtitle": "Αλλάξτε email, κωδικό ή διαγράψτε τον λογαριασμό σας.",
+  "profile_premium_active_title": "Το Premium είναι ενεργό",
+  "profile_premium_upgrade_title": "Αναβάθμιση σε Premium",
+  "profile_premium_active_subtitle": "Οι προηγμένες υπενθυμίσεις είναι διαθέσιμες.",
+  "profile_premium_upgrade_subtitle": "Ξεκλειδώστε προηγμένες υπενθυμίσεις και απεριόριστη οργάνωση.",
+  "profile_manage_cancel_hint": "Διαχείριση ή ακύρωση οποιαδήποτε στιγμή στο Google Play.",
+  "profile_manage_subscription_button": "Διαχείριση συνδρομής",
+  "plansTitle": "Προγράμματα",
+  "plansLoading": "Φόρτωση…",
+  "plansStartFreeTrial": "Ξεκινήστε τη δωρεάν δοκιμή {days} ημερών",
+  "planPerMonth": "/μήνα",
+  "planPerYear": "/έτος",
+  "planBadgeCurrent": "Τρέχον πρόγραμμα",
+  "planBadgePopular": "Το πιο δημοφιλές",
+  "planFeatureUnlimitedRecords": "Απεριόριστες εγγραφές",
+  "planFeatureUnlimitedCategories": "Απεριόριστες προσαρμοσμένες κατηγορίες",
+  "planFeatureAdvancedReminderTiming": "Ορίστε ακριβώς πότε θα φτάνει η κάθε υπενθύμιση",
+  "planFeatureAutomaticFollowUps": "Επιπλέον υπενθυμίσεις που γίνονται πιο συχνές καθώς πλησιάζει η προθεσμία",
+  "editorReminderLabel": "Υπενθύμιση",
+  "editorReminderSelectOptional": "Επιλέξτε υπενθύμιση (προαιρετικό)",
+  "editorReminderDaysBefore": "{days} ημέρες πριν από τη λήξη",
+  "editorFreeItemsCount": "Δωρεάν αντικείμενα: {used}/{limit}",
+  "@editorReminderDaysBefore": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "@editorFreeItemsCount": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "authErrorUserDisabled": "Αυτός ο λογαριασμός έχει απενεργοποιηθεί.",
+  "authErrorNetwork": "Σφάλμα δικτύου. Ελέγξτε το internet και δοκιμάστε ξανά.",
+  "authErrorTooManyRequests": "Πάρα πολλές προσπάθειες. Παρακαλώ δοκιμάστε αργότερα.",
+  "authErrorSignInFailed": "Η σύνδεση απέτυχε. Παρακαλώ δοκιμάστε ξανά.",
+  "ok": "OK",
+  "snackPremiumEnabled": "Το Premium ενεργοποιήθηκε",
+  "snackPremiumRestored": "Το Premium επαναφέρθηκε",
+  "passwordNeedLower": "Πρέπει να περιέχει πεζό γράμμα",
+  "passwordNeedUpper": "Πρέπει να περιέχει κεφαλαίο γράμμα",
+  "passwordNeedNumber": "Πρέπει να περιέχει αριθμό",
+  "passwordNeedSymbol": "Πρέπει να περιέχει σύμβολο",
+  "confirmIdentityTitle": "Επιβεβαίωση ταυτότητας",
+  "confirm": "Επιβεβαίωση",
+  "profile_sign_out_title": "Αποσύνδεση",
+  "profile_sign_out_confirm_title": "Αποσύνδεση;",
+  "profile_sign_out_confirm_body": "Θα χρειαστεί να συνδεθείτε ξανά για να αποκτήσετε πρόσβαση στον λογαριασμό σας.",
+  "profile_sign_out_action": "Αποσύνδεση",
+  "todayInsightsAudioHint": "Προτιμάτε ήχο; Χρησιμοποιήστε το εικονίδιο του ηχείου.",
+  "category2Label": "Κατηγορία",
+  "enable2BiometricsBody": "Χρησιμοποιήστε αναγνώριση δακτυλικού αποτυπώματος για να προστατεύσετε τον λογαριασμό σας στο Vaultara.",
+  "snackNotificationsDisabled": "Οι ειδοποιήσεις είναι απενεργοποιημένες. Ενεργοποιήστε τις για να λαμβάνετε υπενθυμίσεις.",
+  "openSettings": "Άνοιγμα ρυθμίσεων",
+  "freeCategoriesProgress": "Δωρεάν κατηγορίες: {current}/{limit}",
+  "@freeCategoriesProgress": {
+    "description": "Δείχνει πόσες δωρεάν κατηγορίες έχει χρησιμοποιήσει ο χρήστης από το όριο του δωρεάν πλάνου.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "addNotesHint": "Προσθήκη σημειώσεων (προαιρετικό)",
+  "expiryTimelineTitle": "Χρονοδιάγραμμα λήξης",
+  "expiryTimelineSubtitle": "Πατήστε έναν μήνα για να δείτε τις εγγραφές που λήγουν σε αυτόν τον μήνα",
+  "expiryTimelineDetailCount": "{count, plural, =1{1 εγγραφή} other{{count} εγγραφές}}",
+  "@expiryTimelineDetailCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryUpcomingTitle": "Επερχόμενα",
+  "summaryUpcomingCaption": "Εντός 30 ημερών",
+  "summaryUrgentTitle": "Επείγον",
+  "summaryUrgentCaption": "Εντός 7 ημερών",
+  "profileHeaderTitle": "Προφίλ",
+  "profileTutorialsTitle": "Οδηγοί",
+  "profileTutorialsSubtitle": "Περιήγηση στους Οδηγούς Εφαρμογής",
+  "tutorialsScreenTitle": "Οδηγοί",
+  "tutorialsFullTourTitle": "Κάντε την Πλήρη Περιήγηση",
+  "tutorialsFullTourSubtitle": "Περιηγηθείτε στο Vaultara από την αρχή μέχρι το τέλος",
+  "tutorialsFullTourButton": "Αναπαραγωγή Πλήρους Περιήγησης",
+  "tutorialsIndividualHeader": "Επιμέρους Οδηγοί",
+  "tutorialsAddRecordTitle": "Προσθήκη Εγγραφών",
+  "tutorialsAddRecordSubtitle": "Αποθηκεύστε μια εγγραφή με όλες τις λεπτομέρειές της",
+  "tutorialsInsightsSubtitle": "Δείτε πώς το Vaultara αναδεικνύει επερχόμενους κινδύνους και μοτίβα",
+  "tutorialsRemindersTitle": "Ρύθμιση Υπενθυμίσεων",
+  "tutorialsRemindersSubtitle": "Λάβετε ειδοποίηση πριν λήξουν τα πράγματα",
+  "tutorialsInsightsTitle": "Κατανόηση των Πληροφοριών",
+  "tutorialNext": "Επόμενο",
+  "tutorialEnd": "Τέλος",
+  "tutorialHomeFab": "Εδώ προσθέτετε εγγραφές. Πατήστε για να εισαγάγετε όνομα, κατηγορία, ομάδα, ημερομηνία λήξης, προαιρετικές σημειώσεις και υπενθύμιση.",
+  "tutorialAddRecordCategory": "Επιλέξτε μια κατηγορία για να οργανώσετε την εγγραφή σας.",
+  "tutorialAddRecordGroup": "Επιλέξτε μια ομάδα για να ταξινομήσετε την εγγραφή σας με μεγαλύτερη ακρίβεια.",
+  "tutorialAddRecordName": "Εισαγάγετε ένα όνομα για την εγγραφή σας.",
+  "tutorialAddRecordNotes": "Προσθέστε προαιρετικές σημειώσεις για να διατηρήσετε χρήσιμες λεπτομέρειες μαζί με την εγγραφή.",
+  "tutorialAddRecordExpiry": "Επιλέξτε μια ημερομηνία λήξης. Το Vaultara θα στείλει υπενθυμίσεις πριν από αυτήν την ημερομηνία.",
+  "tutorialAddRecordSave": "Πατήστε Αποθήκευση για να προσθέσετε την εγγραφή στη λίστα σας.",
+  "tutorialSampleRecordName": "Χρεωστική Κάρτα Visa",
+  "tutorialSampleRecordNotes": "Κάρτα που λήγει σε 4728. Κύρια κάρτα δαπανών. Συνδεδεμένη με τον κύριο τρέχοντα λογαριασμό.",
+  "tutorialSetReminderField": "Ορίστε μια υπενθύμιση για να λάβετε ειδοποίηση πριν λήξει οποιαδήποτε εγγραφή. Πατήστε στο πεδίο Υπενθύμιση για να δείτε τις επιλογές.",
+  "reminderTitle": "Υπενθύμιση",
+  "reminderFreeSection": "Δωρεάν",
+  "reminderPremiumSection": "Premium",
+  "reminderNone": "Χωρίς υπενθύμιση",
+  "reminderOnExpiry": "Στη λήξη",
+  "reminderDaysBefore": "{days, plural, one{1 ημέρα πριν} other{{days} ημέρες πριν}}",
+  "reminderCustomDaysTitle": "Εισάγετε προσαρμοσμένες ημέρες",
+  "reminderCascadeTitle": "Κλιμακωτές υπενθυμίσεις",
+  "reminderCascadeSubtitle": "Λάβετε πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή",
+  "reminderPremiumRequired": "Αυτή η λειτουργία είναι διαθέσιμη για χρήστες Premium.",
+  "reminderUpgradeCta": "Αναβάθμιση σε Premium",
+  "tutorialReminderFreeSection": "Αυτές οι επιλογές υπενθύμισης είναι διαθέσιμες για όλους. Επιλέξτε μία για να λάβετε ειδοποίηση.",
+  "tutorialReminderPremiumSection": "Αυτές οι επιλογές ξεκλειδώνονται με Premium για πιο ακριβή χρονισμό πριν τη λήξη.",
+  "tutorialReminderApplyFree": "Πατήστε Εφαρμογή για να αποθηκεύσετε την επιλογή υπενθύμισης.",
+  "tutorialReminderPresets": "Επιλέξτε προκαθορισμένο χρόνο για να ειδοποιηθείτε πριν λήξει οποιαδήποτε εγγραφή.",
+  "tutorialReminderCustomDays": "Ορίστε τον δικό σας ακριβή αριθμό ημερών πριν τη λήξη.",
+  "tutorialReminderApplyPremium": "Πατήστε Εφαρμογή για να αποθηκεύσετε την επιλογή υπενθύμισης.",
+  "tutorialReminderCascadeFree": "Οι κλιμακωτές υπενθυμίσεις στέλνουν πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή. Διαθέσιμες με Premium.",
+  "tutorialReminderCascadePremium": "Οι κλιμακωτές υπενθυμίσεις στέλνουν πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή.",
+  "tutorialInsightsSmartCard": "Το Vaultara τονίζει τι χρειάζεται την προσοχή σας: εγγραφές που λήγουν σύντομα, υπενθυμίσεις που λείπουν και πολυάσχολες εβδομάδες που έρχονται.",
+  "tutorialInsightsTimeline": "Το χρονοδιάγραμμα δείχνει πότε λήγουν οι εγγραφές σας κατά τη διάρκεια του έτους, με βέλη για εναλλαγή μεταξύ ετών.",
+  "tutorialInsightsSampleRecordTwo": "Βρετανικό Διαβατήριο",
+  "tutorialInsightsSampleRecordThree": "Ασφάλιση Υγείας BUPA",
+  "tutorialAudio": "Προτιμάτε να ακούτε; Ακούστε τις πληροφορίες σας να διαβάζονται δυνατά και κάντε παύση όποτε θέλετε.",
+  "tutorialAddRecordReminderTour": "Πατήστε το πεδίο υπενθύμισης για να δείτε πώς λειτουργούν οι υπενθυμίσεις.",
+  "tutorialAddRecordReminderSolo": "Αυτό είναι το πεδίο υπενθύμισης, όπου το Vaultara μπορεί να σας ειδοποιήσει πριν λήξει η εγγραφή.",
+  "smartInsightExpiresTodayHeading": "Λήγει σήμερα",
+  "smartInsightSilentRiskHeading": "Απαιτείται η προσοχή σας",
+  "smartInsightClusterHeading": "Αρκετά στην ίδια κατηγορία",
+  "smartInsightQuietPeriodHeading": "Ακολουθεί ήσυχη περίοδος",
+  "smartInsightAllCaughtUpHeading": "Όλα είναι καλυμμένα",
+  "smartInsightNearlyAllCoveredHeading": "Σχεδόν όλα είναι καλυμμένα",
+  "smartInsightActionSetReminder": "Ορισμός υπενθύμισης",
+  "smartInsightNoRecordsHeading": "Προσθέστε την πρώτη σας εγγραφή",
+  "smartInsightNoRecordsBody": "Ξεκινήστε την παρακολούθηση των εγγραφών σας και το Vaultara θα εμφανίσει έξυπνες πληροφορίες εδώ.",
+  "smartInsightExpiresTodaySingleBody": "Το στοιχείο {name} λήγει σήμερα. Αν το έχετε ήδη ανανεώσει, ενημερώστε την ημερομηνία εδώ.",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{Τα στοιχεία {names} λήγουν σήμερα.} =1{Τα στοιχεία {names} και 1 ακόμη λήγουν σήμερα.} other{Τα στοιχεία {names} και {extra} ακόμη λήγουν σήμερα.}}",
+  "smartInsightSilentRiskBody": "{days, plural, =1{Το στοιχείο {name} λήγει αύριο και δεν έχει υπενθύμιση. Ορίστε μία για να μην το ξεχάσετε.} other{Το στοιχείο {name} λήγει στις {date} και δεν έχει υπενθύμιση. Ορίστε μία για να μην το ξεχάσετε.}}",
+  "smartInsightCloseExpiriesBodyTwo": "Το στοιχείο {a} λήγει στις {dateA} και το {b} στις {dateB}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν δύο εγγραφές είναι τόσο κοντά.",
+  "smartInsightCloseExpiriesBodyThree": "Τα στοιχεία {a}, {b} και {c} λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{Τα στοιχεία {a}, {b} και 1 ακόμη εγγραφή λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.} other{Τα στοιχεία {a}, {b} και {extra} ακόμη εγγραφές λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, =1{Τίποτα δεν λήγει την επόμενη ημέρα. Η επόμενη προθεσμία σας είναι στις {date}.} other{Τίποτα δεν λήγει τις επόμενες {days} ημέρες. Η επόμενη προθεσμία σας είναι στις {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{1 από τις εγγραφές σας στην κατηγορία {category} λήγει στις {date}. Είναι εύκολο να παραβλεφθεί.} other{{count} από τις εγγραφές σας στην κατηγορία {category} λήγουν έως τις {date}. Είναι εύκολο να ξεχάσετε μία όταν είναι ομαδοποιημένες έτσι.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 επόμενη λήξη καλύπτεται από υπενθύμιση. Τίποτα άλλο δεν απαιτεί την προσοχή σας.} other{{count} επόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν απαιτεί την προσοχή σας.}}",
+  "smartInsightAllCaughtUpNoUpcomingBody": "Όλα είναι ενημερωμένα. Δεν υπάρχει κάτι που να απαιτεί την προσοχή σας αυτή τη στιγμή.",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά 1 επόμενη εγγραφή δεν έχει ακόμη υπενθύμιση.} other{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά {count} επόμενες εγγραφές δεν έχουν ακόμη υπενθύμιση.}}",
+  "smartInsightCloseExpiriesHeading": "Λήγουν περίπου την ίδια χρονική περίοδο",
+  "plansHeadline": "Αποκτήστε την πλήρη εμπειρία του Vaultara",
+  "plansSubhead": "Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις ρυθμισμένες ακριβώς όπως θέλετε.",
+  "planFreeName": "Δωρεάν",
+  "planFreePeriod": "για πάντα",
+  "planCurrentFooter": "Βρίσκεστε σε αυτό το πρόγραμμα",
+  "planFeatureRecordsLimit": "{count} εγγραφές",
+  "@planFeatureRecordsLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeatureCategoriesLimit": "{count} προσαρμοσμένες κατηγορίες",
+  "@planFeatureCategoriesLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeaturePresetGroups": "Προκαθορισμένες ομάδες για την οργάνωση εγγραφών",
+  "planFeatureSmartInsights": "Έξυπνες αναλύσεις που επισημαίνουν τι χρειάζεται προσοχή πρώτα",
+  "planFeatureCalendar": "Ένα οπτικό ημερολόγιο για κάθε ημερομηνία λήξης",
+  "planPremiumName": "Premium",
+  "planFeatureCustomGroups": "Προσαρμοσμένες ομάδες",
+  "planFeatureMultipleReminders": "Πολλαπλές υπενθυμίσεις σε μία μόνο εγγραφή",
+  "planTrialThenMonthly": "Δωρεάν για {days} ημέρες, μετά {price}/μήνα. Ακύρωση ανά πάσα στιγμή.",
+  "@planTrialThenMonthly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "planTrialThenYearly": "Δωρεάν για {days} ημέρες, μετά {price}/έτος. Ακύρωση ανά πάσα στιγμή.",
+  "@planTrialThenYearly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@plansStartFreeTrial": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "plansRestore": "Ανάκτηση αγοράς",
+  "plansNoChargeToday": "Καμία πληρωμή τώρα. Θα λάβετε υπενθύμιση πριν λήξει η δοκιμαστική περίοδος των {days} ημερών.",
+  "@plansNoChargeToday": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planBillingMonthly": "Μηνιαία",
+  "planBillingYearly": "Ετήσια",
+  "planYearlySavePercent": "Εξοικονομήστε {percent}% σε σύγκριση με τη μηνιαία συνδρομή",
+  "@planYearlySavePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "plansTaxIncluded": "Οι τιμές περιλαμβάνουν φόρο όπου ισχύει",
+  "categoriesNoMatch": "Δεν βρέθηκαν κατηγορίες που να αντιστοιχούν στο \"{query}\"",
+  "groupsNoMatch": "Δεν βρέθηκαν ομάδες που να αντιστοιχούν στο \"{query}\"",
+  "recordsNoMatch": "Δεν βρέθηκαν εγγραφές που να αντιστοιχούν στο \"{query}\"",
+  "edit": "Επεξεργασία",
+  "reminderDaysBeforeExpiry": "ημέρες πριν από τη λήξη",
+  "reminderCascadeAddStep": "Προσθήκη υπενθύμισης",
+  "reminderCascadeRemoveStep": "Κατάργηση",
+  "reminderCascadeDuplicate": "Μια άλλη υπενθύμιση χρησιμοποιεί ήδη αυτήν την ημέρα",
+  "reminderCascadeOutOfRange": "Εισαγάγετε μεταξύ {min} και {max} ημερών",
+  "reminderCascadeStepLabel": "Υπενθύμιση {position}: {days, plural, =1{1 ημέρα} other{{days} ημέρες}} πριν",
+  "expiryTimelineNotReady": "Το χρονοδιάγραμμά σας εμφανίζεται μόλις έχετε εγγραφές που λήγουν σε μερικούς διαφορετικούς μήνες.",
+  "verifyEmailResendIn": "Αποστολή ξανά σε {seconds}δ",
+  "verifyEmailSpamHint": "Δεν είναι εκεί; Ελέγξτε τον φάκελο με τα ανεπιθύμητα (spam).",
+  "verifyEmailWrongAddress": "Λάθος διεύθυνση email;",
+  "verifyEmailDiscardTitle": "Απόρριψη αυτού του λογαριασμού;",
+  "verifyEmailDiscardBody": "Αυτός ο λογαριασμός δεν έχει επαληθευτεί. Αν αποχωρήσετε τώρα θα διαγραφεί και θα μπορείτε να εγγραφείτε ξανά με οποιαδήποτε διεύθυνση email.",
+  "verifyEmailDiscardAction": "Απόρριψη",
+  "verifyEmailKeepWaiting": "Συνέχεια αναμονής",
+  "expiringBadge": "{count, plural, =1{1 λήγει σύντομα} other{{count} λήγουν σύντομα}}",
+  "noRecordsToday": "Τίποτα δεν λήγει σήμερα",
+  "noRecordsTomorrow": "Τίποτα δεν λήγει αύριο",
+  "cascadeStepTitle": "{days, plural, =0{Το {recordName} λήγει σήμερα} =1{Το {recordName} λήγει αύριο} other{Το {recordName} λήγει σε {days} ημέρες}}",
+  "cascadeStepBody": "{days, plural, =0{{firstName}, το {recordName} λήγει σήμερα. Το ανανεώσατε ήδη; Ενημερώστε την ημερομηνία λήξης.} =1{{firstName}, το {recordName} λήγει αύριο. Ανανεώστε το τώρα για να μην λήξει.} other{{firstName}, το {recordName} λήγει στις {date}. Η πρόωρη ανανέωση σας κρατά καλυμμένους.}}",
+  "cascadeFinalStepTitle": "Τελευταία υπενθύμιση: {recordName}",
+  "cascadeFinalStepBody": "{firstName}, το {recordName} λήγει {days, plural, =1{αύριο} other{σε {days} ημέρες, στις {date}}}. Αυτή είναι η τελευταία σας υπενθύμιση, ανανεώστε το ή ενημερώστε την ημερομηνία.",
+  "notificationsTitle": "Ειδοποιήσεις",
+  "notificationsProfileEnabledSubtitle": "Οι υπενθυμίσεις φτάνουν στις {time}.",
+  "notificationsProfileDisabledSubtitle": "Οι ειδοποιήσεις είναι απενεργοποιημένες.",
+  "notificationsPermissionTitle": "Να επιτρέπονται οι ειδοποιήσεις",
+  "notificationsPermissionOnSubtitle": "Το Vaultara μπορεί να στέλνει υπενθυμίσεις λήξης σε αυτήν τη συσκευή.",
+  "notificationsPermissionOffSubtitle": "Ενεργοποιήστε το για να λαμβάνετε υπενθυμίσεις πριν λήξουν οι εγγραφές σας.",
+  "reminderTimeTitle": "Ώρα υπενθύμισης",
+  "appearanceTitle": "Εμφάνιση",
+  "themeModeSystem": "Προεπιλογή συστήματος",
+  "themeModeLight": "Φωτεινό",
+  "themeModeDark": "Σκούρο",
+  "profileAccountSectionTitle": "Λογαριασμός",
+  "profileHelpSectionTitle": "Βοήθεια",
+  "usePassword": "Χρήση κωδικού πρόσβασης",
+  "tourBannerTitle": "Νέος εδώ; Δείτε πώς λειτουργεί το Vaultara",
+  "tourBannerBody": "Μια γρήγορη περιήγηση στην προσθήκη εγγραφών, τη ρύθμιση υπενθυμίσεων και την ανάγνωση των αναλύσεών σας. Διαρκεί μόλις δύο λεπτά.",
+  "tourBannerDismiss": "Παράβλεψη",
+  "tourBannerStart": "Έναρξη περιήγησης",
+  "passwordRuleMinLength": "Τουλάχιστον {count} χαρακτήρες",
+  "passwordRuleUpper": "Ένα κεφαλαίο γράμμα",
+  "passwordRuleLower": "Ένα πεζό γράμμα",
+  "passwordRuleNumber": "Ένας αριθμός",
+  "passwordRuleSymbol": "Ένας ειδικός χαρακτήρας",
+  "tabSignUp": "Εγγραφή",
+  "verifyCodeIntro": "Εισαγάγετε τον 6ψήφιο κωδικό που στείλαμε στο",
+  "verifyCodeButton": "Επαλήθευση",
+  "resendCode": "Επαναποστολή κωδικού",
+  "verifyCodeIncomplete": "Εισαγάγετε και τα 6 ψηφία.",
+  "verifyCodeWrong": "Αυτός ο κωδικός δεν είναι σωστός. Ελέγξτε το email και δοκιμάστε ξανά.",
+  "verifyCodeExpired": "Αυτός ο κωδικός έχει λήξει. Πατήστε Επαναποστολή κωδικού για να λάβετε νέο.",
+  "verifyCodeTooManyAttempts": "Πολλές προσπάθειες. Πατήστε Επαναποστολή κωδικού για να λάβετε έναν νέο.",
+  "verifyCodeNoActive": "Κανένας ενεργός κωδικός. Πατήστε Επαναποστολή κωδικού για να λάβετε έναν.",
+  "verifyCodeFailed": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+  "openEmailApp": "Άνοιγμα εφαρμογής email",
+  "emailAppNotFound": "Δεν βρέθηκε εφαρμογή email σε αυτήν τη συσκευή.",
+  "chooseEmailApp": "Άνοιγμα με",
+  "renewAction": "Ανανέωση",
+  "renewSheetTitle": "Σήμανση ως ανανεωμένο",
+  "renewSheetNewExpiry": "Νέα ημερομηνία λήξης",
+  "renewSheetSuggestion": "Προτείνεται με βάση το πόσο διαρκεί συνήθως αυτός ο τύπος. Πατήστε την ημερομηνία για να την αλλάξετε.",
+  "renewSheetConfirm": "Αποθήκευση ανανέωσης",
+  "renewHistoryTitle": "Ιστορικό ανανεώσεων",
+  "renewHistoryEntry": "{previous} έως {next}",
+  "renewDone": "Ανανεώθηκε. Οι υπενθυμίσεις σας ακολουθούν πλέον τη νέα ημερομηνία.",
+  "notificationActionRenewed": "Ανανεώθηκε",
+  "notificationActionTomorrow": "Υπενθύμιση αύριο",
+  "snoozeTitle": "Υπενθύμιση: {recordName}",
+  "snoozeBody": "Το στοιχείο «{recordName}» λήγει στις {date}. Ανανεώστε το ή ενημερώστε την ημερομηνία του στο Vaultara.",
+  "snoozeConfirmed": "Θα σας το υπενθυμίσουμε ξανά αύριο.",
+  "costFieldLabel": "Κόστος ανανέωσης",
+  "costFieldHint": "Κόστος ανανέωσης (προαιρετικό)",
+  "costCurrencyButtonTooltip": "Αλλαγή νομίσματος",
+  "costCurrencyPickerTitle": "Επιλογή νομίσματος",
+  "costCurrencySearchHint": "Αναζήτηση, π.χ. EUR",
+  "costCurrencyNoResults": "Κανένα νόμισμα δεν ταιριάζει με την αναζήτηση.",
+  "costCardTitle": "Κόστος ανανεώσεων",
+  "costCardSubtitle": "Πόσο θα κοστίσουν οι ανανεώσεις σας τους επόμενους 12 μήνες",
+  "costCardBusiest": "Πιο ακριβός μήνας: {month} ({amount})",
+  "costCardMissing": "{count, plural, one{{count} επερχόμενη εγγραφή δεν έχει ακόμη κόστος.} other{{count} επερχόμενες εγγραφές δεν έχουν ακόμη κόστος.}}",
+  "costCardEmpty": "Προσθέστε κόστος στις εγγραφές σας για να δείτε πόσο θα κοστίσουν οι ανανεώσεις.",
+  "costCardLockedHint": "Δείτε με το Premium πόσο θα κοστίσουν οι ανανεώσεις σας τον επόμενο χρόνο.",
+  "costCardSeePremium": "Δείτε το Premium",
+  "costRenewSheetCost": "Κόστος ανανέωσης: {amount}",
+  "familyTitle": "Οικογένεια",
+  "familyIntro": "Παρακολουθήστε τις εγγραφές των ατόμων που φροντίζετε. Οι υπενθυμίσεις τους δείχνουν το όνομά τους, ώστε να ξέρετε σε ποιον ανήκει η εγγραφή.",
+  "familyMe": "Εγώ",
+  "familyRecordCount": "{count, plural, =0{Καμία εγγραφή} one{{count} εγγραφή} other{{count} εγγραφές}}",
+  "familyRename": "Μετονομασία",
+  "familyRemove": "Αφαίρεση",
+  "familyRemoveTitle": "Αφαίρεση του ατόμου {name};",
+  "familyRemoveBody": "Οι εγγραφές του ατόμου {name} παραμένουν στο Vaultara και μεταφέρονται σε εσάς.",
+  "familyRemoved": "Το άτομο {name} αφαιρέθηκε",
+  "familyAdded": "Το άτομο {name} προστέθηκε",
+  "familyAddPerson": "Προσθήκη ατόμου",
+  "familyAddTitle": "Προσθήκη ατόμου",
+  "familyRenameTitle": "Μετονομασία ατόμου",
+  "familyNameLabel": "Όνομα",
+  "familyNameHint": "Για παράδειγμα, Μαρία",
+  "familyNameRequired": "Εισαγάγετε ένα όνομα",
+  "familyLimitNote": "{count, plural, one{Έως {count} άτομο} other{Έως {count} άτομα}}",
+  "familyUpsellTitle": "Παρακολουθήστε τα έγγραφα της οικογένειάς σας",
+  "familyBenefitPremium": "Όλα όσα περιλαμβάνει το Premium",
+  "familyBenefitPeople": "{count, plural, one{Προσθέστε έως {count} άτομο} other{Προσθέστε έως {count} άτομα}}",
+  "familyBenefitOwnRecords": "Κάθε άτομο έχει τις δικές του εγγραφές και υπενθυμίσεις",
+  "familyBenefitOneSubscription": "Μία συνδρομή για όλο το νοικοκυριό",
+  "familySeePlan": "Δείτε το Οικογενειακό πρόγραμμα",
+  "familyPickerLabel": "Σε ποιον ανήκει αυτή η εγγραφή;",
+  "familyPlanName": "Οικογενειακό",
+  "familyPlanBuy": "Αποκτήστε το Οικογενειακό",
+  "familyRecordDisplayName": "{person}: {recordName}",
+  "familyProfileTileTitle": "Οικογένεια",
+  "familyProfileTileSubtitle": "Παρακολουθήστε τις εγγραφές των ατόμων που φροντίζετε",
+  "planSwitchNote": "Το Google Play αλλάζει αμέσως το πρόγραμμά σας και σας δίνει πίστωση για τον χρόνο που απομένει. Δεν χρεώνεστε ποτέ δύο φορές.",
+  "familyPlanSwitch": "Μεταβείτε στο Οικογενειακό",
+  "planSwitchToPremium": "Μεταβείτε στο Premium",
+  "purchaseOtherAccount": "Αυτή η συνδρομή είναι ήδη συνδεδεμένη με άλλον λογαριασμό Vaultara.",
+  "purchaseVerifyFailed": "Δεν μπορέσαμε ακόμη να επιβεβαιώσουμε την αγορά σας. Πατήστε «Ανάκτηση αγοράς» σε ένα λεπτό.",
+  "signInWrongDetails": "Λάθος email ή κωδικός",
+  "signUpBlocked": "Δεν μπορέσαμε να δημιουργήσουμε τον λογαριασμό σας αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.",
+  "signUpEmailNotAllowed": "Χρησιμοποιήστε μια μόνιμη διεύθυνση email. Οι υπηρεσίες προσωρινού email δεν υποστηρίζονται.",
+  "guideTitle": "Πώς να το ανανεώσετε",
+  "guideWhenToStart": "Πότε να ξεκινήσετε",
+  "guideChecklist": "Λίστα ελέγχου",
+  "guideProgress": "{done} από {total} ολοκληρώθηκαν",
+  "guideTipTitle": "Συμβουλή",
+  "guideDisclaimer": "Τα βήματα διαφέρουν ανά χώρα. Επιβεβαιώστε με τον φορέα έκδοσης.",
+  "guideMarkRenewed": "Σήμανση ως ανανεωμένο",
+  "guidePassportsWhen": "Ξεκινήστε 9 έως 12 μήνες πριν από τη λήξη. Πολλές χώρες απαιτούν ισχύ 6 μηνών για την είσοδο.",
+  "guidePassportsStep1": "Δείτε την τρέχουσα διαδικασία στον επίσημο ιστότοπο της αρχής έκδοσης",
+  "guidePassportsStep2": "Βγάλτε νέες φωτογραφίες σύμφωνα με τους επίσημους κανόνες για διαβατήρια",
+  "guidePassportsStep3": "Συμπληρώστε την αίτηση και ετοιμάστε την ταυτότητα και το τρέχον διαβατήριο",
+  "guidePassportsStep4": "Υποβάλετε την αίτηση και κρατήστε την απόδειξη ή τον αριθμό αναφοράς",
+  "guidePassportsStep5": "Κρατήστε το παλιό διαβατήριο μέχρι να σας πουν τι να το κάνετε",
+  "guidePassportsTip": "Πριν ταξιδέψετε, ελέγξτε αν οι ισχύουσες βίζες στο παλιό διαβατήριο μπορούν ακόμη να χρησιμοποιηθούν.",
+  "guideIdCardsWhen": "Ξεκινήστε 2 έως 3 μήνες πριν από τη λήξη ή νωρίτερα αν σκοπεύετε να ταξιδέψετε.",
+  "guideIdCardsStep1": "Μάθετε από την αρχή έκδοσης πώς και πού γίνεται η ανανέωση",
+  "guideIdCardsStep2": "Ετοιμάστε την τρέχουσα κάρτα και όποιο αποδεικτικό διεύθυνσης ζητηθεί",
+  "guideIdCardsStep3": "Κλείστε ραντεβού αν χρειάζεται, καθώς μπορεί να ληφθούν φωτογραφίες ή αποτυπώματα",
+  "guideIdCardsStep4": "Όταν φτάσει η νέα κάρτα, ελέγξτε ότι όλα τα στοιχεία είναι σωστά",
+  "guideIdCardsTip": "Η τράπεζα, ο εργοδότης και άλλοι ίσως χρειαστούν τα στοιχεία της νέας κάρτας.",
+  "guideResidencePermitsWhen": "Ξεκινήστε όσο νωρίτερα επιτρέπουν οι κανόνες, συχνά 3 έως 4 μήνες πριν από τη λήξη.",
+  "guideResidencePermitsStep1": "Ελέγξτε τους κανόνες και τις προθεσμίες ανανέωσης της υπηρεσίας μετανάστευσης",
+  "guideResidencePermitsStep2": "Ετοιμάστε διαβατήριο, τρέχουσα άδεια και αποδείξεις ότι πληροίτε ακόμη τις προϋποθέσεις",
+  "guideResidencePermitsStep3": "Υποβάλετε την αίτηση πριν λήξει η τρέχουσα άδεια",
+  "guideResidencePermitsStep4": "Έχετε μαζί σας την απόδειξη αίτησης μέχρι να έρθει η νέα άδεια",
+  "guideResidencePermitsTip": "Η καθυστερημένη αίτηση μπορεί να επηρεάσει το δικαίωμα παραμονής σας. Αν έχετε αμφιβολίες, ρωτήστε την υπηρεσία μετανάστευσης.",
+  "guideDrivingLicencesWhen": "Ξεκινήστε 1 έως 3 μήνες πριν από τη λήξη.",
+  "guideDrivingLicencesStep1": "Δείτε τη διαδικασία της αρμόδιας αρχής και αν γίνεται ανανέωση ηλεκτρονικά",
+  "guideDrivingLicencesStep2": "Ετοιμάστε το τρέχον δίπλωμα, την ταυτότητα και τις φωτογραφίες που χρειάζονται",
+  "guideDrivingLicencesStep3": "Κλείστε οφθαλμολογικό ή ιατρικό έλεγχο, αν απαιτείται",
+  "guideDrivingLicencesStep4": "Όσο περιμένετε, έχετε μαζί σας την προσωρινή άδεια ή την απόδειξη",
+  "guideDrivingLicencesTip": "Η οδήγηση με ληγμένο δίπλωμα μπορεί να επηρεάσει την ασφαλιστική κάλυψη. Ανανεώστε έγκαιρα.",
+  "guideVehicleRegistrationsWhen": "Ξεκινήστε περίπου 1 μήνα πριν από τη λήξη.",
+  "guideVehicleRegistrationsStep1": "Δείτε την ειδοποίηση ανανέωσης ή τον ιστότοπο της αρμόδιας αρχής οχημάτων",
+  "guideVehicleRegistrationsStep2": "Βεβαιωθείτε πρώτα ότι ο απαιτούμενος έλεγχος ή η ασφάλιση ισχύει",
+  "guideVehicleRegistrationsStep3": "Ετοιμάστε τα έγγραφα του οχήματος, την ταυτότητα και αποδεικτικό διεύθυνσης αν ζητηθεί",
+  "guideVehicleRegistrationsStep4": "Ολοκληρώστε την ανανέωση και φυλάξτε ή επιδείξτε το νέο αποδεικτικό όπως απαιτείται",
+  "guideVehicleRegistrationsTip": "Σε ορισμένα μέρη χρειάζεται έγκυρος τεχνικός έλεγχος ή έλεγχος καυσαερίων πριν την ανανέωση.",
+  "guideRoadworthyCertificatesWhen": "Κλείστε έλεγχο 2 έως 4 εβδομάδες πριν από τη λήξη ή πριν πουλήσετε το όχημα.",
+  "guideRoadworthyCertificatesStep1": "Βρείτε εγκεκριμένο κέντρο ελέγχου για τον τύπο του οχήματός σας",
+  "guideRoadworthyCertificatesStep2": "Ελέγξτε φώτα, ελαστικά, φρένα, υαλοκαθαριστήρες και καθρέφτες πριν τον έλεγχο",
+  "guideRoadworthyCertificatesStep3": "Φέρτε τα έγγραφα του οχήματος και την ταυτότητά σας στο ραντεβού",
+  "guideRoadworthyCertificatesStep4": "Αν το όχημα αποτύχει, διορθώστε τα σημεία που αναφέρονται και κλείστε επανέλεγχο",
+  "guideRoadworthyCertificatesTip": "Τα πιστοποιητικά συχνά ισχύουν για λίγο, γι' αυτό κλείστε ραντεβού κοντά στην ημέρα που το χρειάζεστε.",
+  "guideVisasWhen": "Ξεκινήστε όσο νωρίτερα επιτρέπεται. Η εξέταση μπορεί να διαρκέσει εβδομάδες ή και μήνες.",
+  "guideVisasStep1": "Ελέγξτε αν η βίζα σας μπορεί να παραταθεί ή αν χρειάζεστε νέα",
+  "guideVisasStep2": "Βεβαιωθείτε ότι το διαβατήριο θα ισχύει αρκετά για τη νέα βίζα",
+  "guideVisasStep3": "Ετοιμάστε διαβατήριο, τρέχουσα βίζα και δικαιολογητικά",
+  "guideVisasStep4": "Κάντε αίτηση μόνο μέσω επίσημων καναλιών και κρατήστε τον αριθμό αναφοράς",
+  "guideVisasTip": "Η παραμονή μετά τη λήξη της βίζας μπορεί να προκαλέσει σοβαρά προβλήματα. Αν έχετε αμφιβολίες, ζητήστε συμβουλή νωρίς.",
+  "guideStudyPermitsWhen": "Ξεκινήστε 2 έως 3 μήνες πριν από τη λήξη ή μόλις μάθετε ότι χρειάζεστε περισσότερο χρόνο.",
+  "guideStudyPermitsStep1": "Ρωτήστε το γραφείο διεθνών φοιτητών της σχολής σας για τη διαδικασία",
+  "guideStudyPermitsStep2": "Ζητήστε βεβαίωση εγγραφής και διάρκειας σπουδών",
+  "guideStudyPermitsStep3": "Ετοιμάστε διαβατήριο, τρέχουσα άδεια και αποδεικτικό πόρων αν χρειάζεται",
+  "guideStudyPermitsStep4": "Υποβάλετε πριν λήξει η άδεια και κρατήστε την απόδειξη αίτησης",
+  "guideStudyPermitsTip": "Ελέγξτε και το διαβατήριο. Μπορεί να πρέπει να ισχύει για όλη τη διάρκεια των σπουδών.",
+  "guideWorkPermitsWhen": "Ξεκινήστε 3 έως 4 μήνες πριν από τη λήξη.",
+  "guideWorkPermitsStep1": "Ενημερώστε νωρίς τον εργοδότη, καθώς ίσως χρειαστεί να στηρίξει την αίτησή σας",
+  "guideWorkPermitsStep2": "Ελέγξτε τους κανόνες της υπηρεσίας μετανάστευσης για την ανανέωση της άδειας",
+  "guideWorkPermitsStep3": "Ετοιμάστε διαβατήριο, τρέχουσα άδεια, σύμβαση και πρόσφατες μισθοδοσίες",
+  "guideWorkPermitsStep4": "Υποβάλετε πριν λήξει η άδεια και κρατήστε την απόδειξη αίτησης",
+  "guideWorkPermitsTip": "Μια νέα δουλειά μπορεί να απαιτεί νέα άδεια. Ελέγξτε πριν αποδεχτείτε μια νέα θέση.",
+  "guideVehicleInsurancesWhen": "Ξεκινήστε 3 έως 4 εβδομάδες πριν από την ημερομηνία ανανέωσης.",
+  "guideVehicleInsurancesStep1": "Διαβάστε την ειδοποίηση ανανέωσης και ελέγξτε την κάλυψη και την απαλλαγή",
+  "guideVehicleInsurancesStep2": "Ενημερώστε την ασφαλιστική για αλλαγές διεύθυνσης, οδηγών ή οχήματος",
+  "guideVehicleInsurancesStep3": "Συγκρίνετε μερικές προσφορές αν η τιμή αυξήθηκε",
+  "guideVehicleInsurancesStep4": "Βεβαιωθείτε ότι η νέα κάλυψη ξεκινά πριν λήξει η παλιά",
+  "guideVehicleInsurancesTip": "Πολλά συμβόλαια ανανεώνονται αυτόματα. Ελέγξτε το δικό σας για να μην οδηγείτε ποτέ χωρίς κάλυψη.",
+  "guidePropertyInsurancesWhen": "Ξεκινήστε 3 έως 4 εβδομάδες πριν από την ημερομηνία ανανέωσης.",
+  "guidePropertyInsurancesStep1": "Ελέγξτε ότι η ασφαλισμένη αξία του σπιτιού και των αντικειμένων είναι ακόμη σωστή",
+  "guidePropertyInsurancesStep2": "Ενημερώστε την ασφαλιστική για ανακαινίσεις, νέα τιμαλφή ή αλλαγές ασφαλείας",
+  "guidePropertyInsurancesStep3": "Συγκρίνετε προσφορές και ελέγξτε τι καλύπτεται και τι όχι",
+  "guidePropertyInsurancesStep4": "Βεβαιωθείτε ότι η νέα κάλυψη ξεκινά πριν λήξει η παλιά",
+  "guidePropertyInsurancesTip": "Κρατήστε φωτογραφίες και αποδείξεις για πολύτιμα αντικείμενα. Βοηθούν αν ποτέ κάνετε αποζημίωση.",
+  "guideLifeInsurancesWhen": "Κάντε έλεγχο 1 έως 2 μήνες πριν από την ημερομηνία ανανέωσης ή αναθεώρησης.",
+  "guideLifeInsurancesStep1": "Ελέγξτε αν το συμβόλαιο ανανεώνεται αυτόματα ή χρειάζεται ενέργεια από εσάς",
+  "guideLifeInsurancesStep2": "Αναθεωρήστε την κάλυψη μετά από αλλαγές όπως γάμος, παιδιά ή νέο σπίτι",
+  "guideLifeInsurancesStep3": "Ελέγξτε ότι οι δικαιούχοι είναι ακόμη σωστοί",
+  "guideLifeInsurancesStep4": "Μιλήστε με την ασφαλιστική ή τον σύμβουλό σας πριν ακυρώσετε ή αλλάξετε",
+  "guideLifeInsurancesTip": "Διατηρήστε την τρέχουσα κάλυψη μέχρι να επιβεβαιωθεί γραπτώς η νέα.",
+  "guideHealthInsurancesWhen": "Ξεκινήστε 1 έως 2 μήνες πριν από την ημερομηνία ανανέωσης.",
+  "guideHealthInsurancesStep1": "Διαβάστε την ειδοποίηση ανανέωσης για αλλαγές σε κάλυψη και παροχές",
+  "guideHealthInsurancesStep2": "Σκεφτείτε τη φροντίδα ή τη θεραπεία που περιμένετε τον επόμενο χρόνο",
+  "guideHealthInsurancesStep3": "Συγκρίνετε προγράμματα, μαζί με περιόδους αναμονής και εξαιρέσεις",
+  "guideHealthInsurancesStep4": "Επιβεβαιώστε την επιλογή σας πριν την προθεσμία ώστε η κάλυψη να συνεχιστεί",
+  "guideHealthInsurancesTip": "Η αλλαγή προγράμματος μπορεί να φέρει νέες περιόδους αναμονής. Ελέγξτε πριν αλλάξετε.",
+  "guideTravelInsurancesWhen": "Για ετήσια κάλυψη, ξεκινήστε 2 εβδομάδες πριν από τη λήξη. Για ένα ταξίδι, κανονίστε την όταν κάνετε κράτηση.",
+  "guideTravelInsurancesStep1": "Ελέγξτε ότι καλύπτονται οι ημερομηνίες και όλοι οι προορισμοί του ταξιδιού",
+  "guideTravelInsurancesStep2": "Ελέγξτε την ιατρική κάλυψη, την κάλυψη ακύρωσης και αποσκευών",
+  "guideTravelInsurancesStep3": "Ενημερώστε την ασφαλιστική για δραστηριότητες όπως σκι ή καταδύσεις",
+  "guideTravelInsurancesStep4": "Αποθηκεύστε το συμβόλαιο και τον αριθμό έκτακτης ανάγκης στο τηλέφωνό σας",
+  "guideTravelInsurancesTip": "Ορισμένες χώρες ζητούν απόδειξη ταξιδιωτικής ασφάλισης για την είσοδο. Ελέγξτε πριν φύγετε.",
+  "guideDebitAndCreditCardsWhen": "Ελέγξτε 4 έως 6 εβδομάδες πριν από την ημερομηνία λήξης της κάρτας.",
+  "guideDebitAndCreditCardsStep1": "Περιμένετε τη νέα κάρτα, καθώς οι τράπεζες συχνά τη στέλνουν αυτόματα",
+  "guideDebitAndCreditCardsStep2": "Επικοινωνήστε με την τράπεζα αν δεν έχει φτάσει 2 εβδομάδες πριν τη λήξη",
+  "guideDebitAndCreditCardsStep3": "Ενεργοποιήστε τη νέα κάρτα όπως σας λέει η τράπεζα",
+  "guideDebitAndCreditCardsStep4": "Αλλάξτε τα στοιχεία της κάρτας σε συνδρομές και αποθηκευμένες πληρωμές",
+  "guideDebitAndCreditCardsStep5": "Καταστρέψτε την παλιά κάρτα μόλις λειτουργήσει η νέα",
+  "guideDebitAndCreditCardsTip": "Η τράπεζα δεν θα σας ζητήσει ποτέ το PIN. Αγνοήστε κλήσεις ή μηνύματα που το ζητούν.",
+  "guideStoreCardsWhen": "Ελέγξτε περίπου 1 μήνα πριν από τη λήξη.",
+  "guideStoreCardsStep1": "Ελέγξτε αν το κατάστημα στέλνει νέα κάρτα ή τη μεταφέρει στην εφαρμογή του",
+  "guideStoreCardsStep2": "Βεβαιωθείτε ότι οι πόντοι ή το υπόλοιπο μεταφέρονται στη νέα κάρτα",
+  "guideStoreCardsStep3": "Δώστε στο κατάστημα τα τρέχοντα στοιχεία επικοινωνίας σας",
+  "guideStoreCardsStep4": "Επικοινωνήστε με το κατάστημα αν δεν έρθει τίποτα πριν τη λήξη",
+  "guideStoreCardsTip": "Εξαργυρώστε πόντους ή κουπόνια που μπορεί να λήξουν μαζί με την παλιά κάρτα.",
+  "guideProfessionalLicencesWhen": "Ξεκινήστε 2 έως 3 μήνες πριν από τη λήξη.",
+  "guideProfessionalLicencesStep1": "Ελέγξτε τις απαιτήσεις και την προθεσμία ανανέωσης του επαγγελματικού σας φορέα",
+  "guideProfessionalLicencesStep2": "Βεβαιωθείτε ότι ολοκληρώσατε τις απαιτούμενες ώρες εκπαίδευσης",
+  "guideProfessionalLicencesStep3": "Ετοιμάστε τα πιστοποιητικά και τις αποδείξεις άσκησης που ζητούνται",
+  "guideProfessionalLicencesStep4": "Υποβάλετε την ανανέωση και κρατήστε την επιβεβαίωση",
+  "guideProfessionalLicencesTip": "Καταγράφετε τις ώρες εκπαίδευσης όλο τον χρόνο, για να μη βιάζεστε στην ανανέωση.",
+  "guideWorkAccessCardsWhen": "Ξεκινήστε 2 έως 4 εβδομάδες πριν από τη λήξη.",
+  "guideWorkAccessCardsStep1": "Ρωτήστε την ομάδα ασφαλείας ή το τμήμα προσωπικού πώς ανανεώνεται η κάρτα",
+  "guideWorkAccessCardsStep2": "Ολοκληρώστε τυχόν απαιτούμενη εκπαίδευση, ελέγχους ή έντυπα",
+  "guideWorkAccessCardsStep3": "Φέρτε ταυτότητα σε περίπτωση που χρειαστεί νέα φωτογραφία ή κάρτα",
+  "guideWorkAccessCardsStep4": "Επιστρέψτε την παλιά κάρτα αν σας ζητηθεί",
+  "guideWorkAccessCardsTip": "Ορισμένοι χώροι απαιτούν ελέγχους ιστορικού που διαρκούν εβδομάδες. Ρωτήστε νωρίς.",
+  "guideLeaseAgreementsWhen": "Ξεκινήστε 2 έως 3 μήνες πριν λήξει η μίσθωση ή πριν αρχίσει η περίοδος προειδοποίησης.",
+  "guideLeaseAgreementsStep1": "Βρείτε στο μισθωτήριο την περίοδο προειδοποίησης και τους όρους ανανέωσης",
+  "guideLeaseAgreementsStep2": "Ενημερώστε γραπτώς τον ιδιοκτήτη ή τον μεσίτη αν μένετε ή φεύγετε",
+  "guideLeaseAgreementsStep3": "Διαβάστε προσεκτικά κάθε νέο μισθωτήριο, ειδικά το ενοίκιο και τη διάρκεια",
+  "guideLeaseAgreementsStep4": "Κρατήστε υπογεγραμμένα αντίγραφα του νέου μισθωτηρίου και των μηνυμάτων σας",
+  "guideLeaseAgreementsTip": "Μετακομίζετε; Τραβήξτε φωτογραφίες με ημερομηνία για να πάρετε πίσω την εγγύηση.",
+  "guideAccessCardsAndTagsWhen": "Ελέγξτε 2 έως 4 εβδομάδες πριν από τη λήξη.",
+  "guideAccessCardsAndTagsStep1": "Επικοινωνήστε με το κτίριο, το συγκρότημα, το γυμναστήριο ή τον σύλλογο που την εξέδωσε",
+  "guideAccessCardsAndTagsStep2": "Ρωτήστε τι χρειάζονται, π.χ. ταυτότητα ή απόδειξη ότι μένετε ή είστε μέλος εκεί",
+  "guideAccessCardsAndTagsStep3": "Κανονίστε την παραλαβή ή την ενεργοποίηση της νέας κάρτας ή του tag",
+  "guideAccessCardsAndTagsStep4": "Δοκιμάστε τη νέα πριν σταματήσει να λειτουργεί η παλιά",
+  "guideAccessCardsAndTagsTip": "Δηλώστε αμέσως μια χαμένη κάρτα ή ένα tag ώστε να μπλοκαριστεί.",
+  "homeWidgetTitle": "Λήγουν σύντομα",
+  "homeWidgetEmpty": "Τίποτα δεν λήγει σύντομα",
+  "recordMenuMore": "Περισσότερες επιλογές",
+  "recordMenuShareLink": "Κοινοποίηση ασφαλούς συνδέσμου",
+  "scanButtonTitle": "Φωτογραφίστε για προσθήκη",
+  "scanButtonSubtitle": "Φωτογραφίστε μια κάρτα ή ένα έγγραφο για να συμπληρωθούν τα στοιχεία",
+  "scanButtonBusy": "Ανάγνωση της φωτογραφίας σας…",
+  "scanSourceTitle": "Προσθήκη από φωτογραφία",
+  "scanSourceHint": "Βεβαιωθείτε ότι η ημερομηνία λήξης είναι καθαρή και εστιασμένη.",
+  "scanSourceCamera": "Λήψη φωτογραφίας",
+  "scanSourceGallery": "Επιλογή από τη συλλογή",
+  "scanFoundExpiryAndGroup": "Συμπληρώσαμε την ημερομηνία λήξης και την ομάδα. Ελέγξτε τις πριν την αποθήκευση.",
+  "scanFoundExpiryAndCategory": "Συμπληρώσαμε την ημερομηνία λήξης και την κατηγορία. Επιλέξτε ομάδα και ελέγξτε τα πριν την αποθήκευση.",
+  "scanFoundExpiry": "Συμπληρώσαμε την ημερομηνία λήξης. Ελέγξτε την πριν την αποθήκευση.",
+  "scanFoundGroup": "Συμπληρώσαμε την ομάδα. Προσθέστε την ημερομηνία λήξης πριν την αποθήκευση.",
+  "scanFoundCategory": "Συμπληρώσαμε την κατηγορία. Επιλέξτε ομάδα και προσθέστε την ημερομηνία λήξης.",
+  "scanFoundNumberOnly": "Προσθέσαμε τον αριθμό στις σημειώσεις σας. Συμπληρώστε τα υπόλοιπα παρακάτω.",
+  "scanFoundNothing": "Δεν μπορέσαμε να διαβάσουμε στοιχεία από αυτή τη φωτογραφία. Συμπληρώστε τα παρακάτω.",
+  "scanFoundNumberAdded": "Προσθέσαμε επίσης τον αριθμό στις σημειώσεις σας.",
+  "scanBannerDismiss": "Απόρριψη",
+  "scanNotesNumber": "Αριθμός: {number}",
+  "scanFailed": "Δεν ήταν δυνατό να ανοίξει η κάμερα ή η φωτογραφία. Ελέγξτε την πρόσβαση στην κάμερα και δοκιμάστε ξανά.",
+  "shareLinkCreating": "Δημιουργία ασφαλούς συνδέσμου...",
+  "shareLinkError": "Δεν ήταν δυνατή η δημιουργία του συνδέσμου. Δοκιμάστε ξανά.",
+  "shareLinkSubject": "{name} από το Vaultara",
+  "shareLinkMessage": "Ορίστε τα στοιχεία μου για «{name}»: {url}\nΟ σύνδεσμος λειτουργεί έως {time}.",
+  "exportNoRecords": "Δεν έχετε ακόμη εγγραφές για εξαγωγή.",
+  "exportHolderLine": "Ανήκει σε: {name}",
+  "exportSectionTitle": "Εξαγωγή",
+  "exportPdfTitle": "Εξαγωγή σε PDF",
+  "exportPdfSubtitle": "Μια εκτυπώσιμη λίστα με όλες τις εγγραφές σας",
+  "exportCalendarTitle": "Προσθήκη στο ημερολόγιο",
+  "exportCalendarSubtitle": "Προσθέστε κάθε ημερομηνία λήξης στην εφαρμογή ημερολογίου σας",
+  "calendarExportEventTitle": "Λήγει: {name}",
+  "calendarExportAlarm": "Λήγει σε μία εβδομάδα: {name}",
+  "calendarExportSubject": "Ημερομηνίες λήξης Vaultara",
+  "calendarExportError": "Δεν ήταν δυνατή η δημιουργία του αρχείου ημερολογίου. Δοκιμάστε ξανά.",
+  "pdfExportTitle": "Εγγραφές Vaultara",
+  "pdfExportGenerated": "Δημιουργήθηκε στις {date}",
+  "pdfExportCount": "{count, plural, one{{count} εγγραφή} other{{count} εγγραφές}}",
+  "pdfExportCost": "Κόστος ανανέωσης: {amount}",
+  "pdfExportBuilding": "Προετοιμασία του PDF σας...",
+  "pdfExportError": "Δεν ήταν δυνατή η δημιουργία του PDF. Δοκιμάστε ξανά.",
+  "travelTitle": "Έλεγχος ταξιδιού",
+  "travelDeparture": "Αναχώρηση",
+  "travelReturn": "Επιστροφή",
+  "travelTripLength": "{days, plural, one{Ταξίδι {days} ημέρας} other{Ταξίδι {days} ημερών}}",
+  "travelDriving": "Θα οδηγήσω",
+  "travelNeedsVisa": "Χρειάζομαι βίζα",
+  "travelWho": "Ποιος ταξιδεύει;",
+  "travelMe": "Εγώ",
+  "travelResultsTitle": "Οι εγγραφές σας για αυτό το ταξίδι",
+  "travelPassportOk": "Το διαβατήριο ισχύει",
+  "travelPassportTooShort": "Το διαβατήριο λήγει πολύ σύντομα μετά το ταξίδι",
+  "travelPassportExpiresDuringTrip": "Το διαβατήριο λήγει πριν επιστρέψετε",
+  "travelNoPassport": "Δεν έχει προστεθεί διαβατήριο",
+  "travelVisaOk": "Η βίζα καλύπτει το ταξίδι σας",
+  "travelVisaExpiresBeforeReturn": "Η βίζα λήγει πριν επιστρέψετε",
+  "travelNoVisa": "Δεν έχει προστεθεί βίζα",
+  "travelInsuranceOk": "Η ταξιδιωτική ασφάλιση καλύπτει το ταξίδι σας",
+  "travelInsuranceEndsDuringTrip": "Η ταξιδιωτική ασφάλιση λήγει πριν επιστρέψετε",
+  "travelNoInsurance": "Δεν έχει προστεθεί ταξιδιωτική ασφάλιση",
+  "travelLicenceOk": "Το δίπλωμα οδήγησης ισχύει",
+  "travelLicenceExpiresDuringTrip": "Το δίπλωμα οδήγησης λήγει πριν επιστρέψετε",
+  "travelNoLicence": "Δεν έχει προστεθεί δίπλωμα οδήγησης",
+  "travelOtherExpires": "Λήγει όσο λείπετε",
+  "travelDetailValidUntil": "Το στοιχείο {name} ισχύει έως {date}.",
+  "travelDetailPassportBuffer": "Το στοιχείο {name} λήγει στις {date}. Πολλές χώρες ζητούν ισχύ τουλάχιστον {months, plural, one{{months} μήνα} other{{months} μηνών}} μετά την επιστροφή.",
+  "travelDetailExpiresBeforeLeaving": "Το στοιχείο {name} λήγει στις {date}, πριν φύγετε.",
+  "travelDetailExpiresDuringTrip": "Το στοιχείο {name} λήγει στις {date}, {days, plural, =0{την ημέρα της αναχώρησης} one{{days} ημέρα μετά την αναχώρηση} other{{days} ημέρες μετά την αναχώρηση}}.",
+  "travelDetailNoPassport": "Προσθέστε το διαβατήριό σας για να το ελέγξει το Vaultara.",
+  "travelDetailNoVisa": "Προσθέστε τη βίζα σας για να την ελέγξει το Vaultara.",
+  "travelDetailNoInsurance": "Προσθέστε την ταξιδιωτική σας ασφάλιση για να ελέγξετε ότι καλύπτει όλο το ταξίδι.",
+  "travelDetailNoLicence": "Προσθέστε το δίπλωμα οδήγησης για να το ελέγξει το Vaultara.",
+  "travelPremiumTitle": "Ο έλεγχος ταξιδιού είναι μέρος του Premium",
+  "travelPremiumBody": "Εισαγάγετε τις ημερομηνίες του ταξιδιού και το Vaultara ελέγχει διαβατήριο, βίζα, ταξιδιωτική ασφάλιση και δίπλωμα οδήγησης, και δείχνει κάθε εγγραφή που λήγει όσο λείπετε.",
+  "travelSeePremium": "Δείτε το Premium",
+  "travelCardTitle": "Σχεδιάζετε ταξίδι;",
+  "travelCardBody": "Ελέγξτε διαβατήριο, βίζα και ασφάλιση πριν φύγετε.",
+  "travelPremiumChip": "Premium",
+  "editRecordTitle": "Επεξεργασία εγγραφής",
+  "editorMoreDetails": "Περισσότερες λεπτομέρειες",
+  "editorMoreDetailsHint": "Επανάληψη, σημειώσεις, κόστος, φωτογραφίες και άλλα",
+  "travelNewTrip": "Νέο ταξίδι",
+  "travelEditTrip": "Επεξεργασία ταξιδιού",
+  "travelPlanTrip": "Σχεδιασμός ταξιδιού",
+  "travelTripName": "Προορισμός",
+  "travelTripNameHint": "Για παράδειγμα Κρήτη ή Παρίσι",
+  "travelErrorTripName": "Εισαγάγετε προορισμό",
+  "travelErrorTravellers": "Επιλέξτε τουλάχιστον ένα άτομο",
+  "travelDateChoose": "Επιλογή ημερομηνίας",
+  "travelErrorDates": "Επιλέξτε ημερομηνία αναχώρησης και επιστροφής",
+  "travelSaveFailed": "Δεν ήταν δυνατή η αποθήκευση αυτού του ταξιδιού. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "travelNights": "Διανυκτερεύσεις: {nights}",
+  "travelDaysShort": "Ημέρες: {days}",
+  "travelAtDestination": "Ημέρες στον προορισμό: {days}",
+  "travelSectionJourney": "Το ταξίδι σας",
+  "travelFlights": "Πτήσεις",
+  "travelFlightsHint": "Προσθέστε τις πτήσεις σας για να δείτε πότε προσγειώνεστε και πόσες ημέρες μένετε εκεί.",
+  "travelFlightAdd": "Προσθήκη πτήσης",
+  "travelFlightEdit": "Στοιχεία πτήσης",
+  "travelFlightFrom": "Από",
+  "travelFlightTo": "Προς",
+  "travelFlightPlaceHint": "Πόλη ή αεροδρόμιο",
+  "travelFlightDeparts": "Αναχώρηση",
+  "travelFlightLands": "Άφιξη",
+  "travelFlightError": "Προσθέστε από πού αναχωρεί η πτήση, πού προσγειώνεται και τις δύο ημερομηνίες",
+  "travelFlightErrorOrder": "Η πτήση δεν μπορεί να προσγειωθεί πριν αναχωρήσει",
+  "travelDateLabel": "Ημερομηνία",
+  "travelTimeLabel": "Ώρα",
+  "travelTimeChoose": "Προσθήκη ώρας",
+  "travelEmptyTitle": "Δεν υπάρχουν ακόμη ταξίδια",
+  "travelEmptyBody": "Προσθέστε ένα ταξίδι και το Vaultara ελέγχει διαβατήριο, βίζα, ασφάλιση και δίπλωμα όλων σε σχέση με τις ημερομηνίες σας. Λαμβάνετε λίστα ελέγχου και υπενθύμιση πριν φύγετε.",
+  "travelUpcoming": "Επερχόμενα ταξίδια",
+  "travelPast": "Προηγούμενα ταξίδια",
+  "travelStartsIn": "{days, plural, one{Αναχώρηση σε {days} ημέρα} other{Αναχώρηση σε {days} ημέρες}}",
+  "travelLeavesToday": "Αναχώρηση σήμερα",
+  "travelLeavesTomorrow": "Αναχώρηση αύριο",
+  "travelInProgress": "Ταξίδι σε εξέλιξη",
+  "travelTripEnded": "Το ταξίδι ολοκληρώθηκε",
+  "travelAllGood": "Όλα τα έγγραφα είναι έτοιμα",
+  "travelIssues": "{count, plural, one{{count} θέμα χρειάζεται προσοχή} other{{count} θέματα χρειάζονται προσοχή}}",
+  "travelChecklistTitle": "Λίστα ελέγχου ταξιδιού",
+  "travelChecklistProgress": "{done} από {total} ολοκληρώθηκαν",
+  "travelChecklistAdd": "Προσθήκη",
+  "travelChecklistAddHint": "Προσθέστε δικό σας στοιχείο",
+  "travelItemPassportPhoto": "Φωτογραφία του διαβατηρίου σας αποθηκευμένη στο τηλέφωνο",
+  "travelItemVisa": "Βίζα ή ταξιδιωτική άδεια έτοιμη (για παράδειγμα ESTA ή eTA)",
+  "travelItemInsurance": "Ασφαλιστήριο ταξιδιωτικής ασφάλισης και αριθμός έκτακτης ανάγκης",
+  "travelItemDrivingPermit": "Διεθνές δίπλωμα οδήγησης, αν το απαιτεί η χώρα",
+  "travelItemVaccination": "Πιστοποιητικό εμβολιασμού, αν το απαιτεί η χώρα",
+  "travelItemBank": "Ενημερώστε την τράπεζά σας ότι ταξιδεύετε",
+  "travelItemEmergency": "Επαφές έκτακτης ανάγκης σημειωμένες",
+  "travelItemChargers": "Φορτιστές και αντάπτορας πρίζας",
+  "travelShareSummary": "Κοινοποίηση PDF",
+  "travelAddToCalendar": "Προσθήκη στο ημερολόγιο",
+  "travelDeleteTrip": "Διαγραφή ταξιδιού",
+  "travelDeleteTripConfirm": "Διαγραφή αυτού του ταξιδιού και της λίστας ελέγχου του; Οι εγγραφές σας μένουν ως έχουν.",
+  "travelTripTo": "Ταξίδι: {name}",
+  "travelReminderTitle": "{days, plural, one{Ταξίδι: {name} σε {days} ημέρα} other{Ταξίδι: {name} σε {days} ημέρες}}",
+  "travelReminderTitleTomorrow": "Ταξίδι: {name} αύριο",
+  "travelReminderBodyIssues": "{count, plural, one{{count} έγγραφο χρειάζεται προσοχή πριν φύγετε.} other{{count} έγγραφα χρειάζονται προσοχή πριν φύγετε.}}",
+  "travelReminderBodyOk": "Τα έγγραφά σας είναι έτοιμα. Ανοίξτε το ταξίδι σας για να ελέγξετε τη λίστα.",
+  "travelTripLimit": "Μπορείτε να αποθηκεύσετε έως {count} ταξίδια. Διαγράψτε ένα παλιό ταξίδι για να προσθέσετε νέο.",
+  "recordLockTitle": "Κλείδωμα αυτής της εγγραφής",
+  "recordLockSubtitle": "Ζητά δακτυλικό αποτύπωμα, πρόσωπο ή κλείδωμα οθόνης πριν εμφανιστούν τα στοιχεία της",
+  "recordLockReason": "Ξεκλειδώστε αυτή την εγγραφή",
+  "recordLockNoDeviceLock": "Ρυθμίστε πρώτα ένα κλείδωμα οθόνης στο τηλέφωνό σας.",
+  "repeatLabel": "Επανάληψη",
+  "repeatHelper": "Για συνδρομές. Το Vaultara μεταφέρει μόνο του την ημερομηνία μπροστά όταν περάσει.",
+  "repeatNever": "Δεν επαναλαμβάνεται",
+  "repeatEveryMonths": "{months, plural, one{Κάθε {months} μήνα} other{Κάθε {months} μήνες}}",
+  "repeatEveryMonth": "Κάθε μήνα",
+  "repeatEveryYear": "Κάθε χρόνο",
+  "dataExportTitle": "Λήψη των δεδομένων μου",
+  "dataExportSubtitle": "Αποθηκεύστε ένα αντίγραφο όλων όσων κρατάτε στο Vaultara",
+  "dataExportBuilding": "Προετοιμασία των δεδομένων σας...",
+  "dataExportError": "Δεν ήταν δυνατή η προετοιμασία των δεδομένων σας. Δοκιμάστε ξανά.",
+  "shortcutScan": "Σάρωση εγγράφου",
+  "tutorialAddRecordScan": "Φωτογραφίστε μια κάρτα ή ένα έγγραφο και το Vaultara συμπληρώνει τα στοιχεία για εσάς.",
+  "vaultTitle": "Φωτογραφίες",
+  "vaultCount": "{count} από {limit}",
+  "vaultAdd": "Προσθήκη",
+  "vaultAddPhoto": "Προσθήκη φωτογραφίας",
+  "vaultLimitShort": "Όριο",
+  "vaultTakePhoto": "Λήψη φωτογραφίας",
+  "vaultChooseFromGallery": "Επιλογή από τη συλλογή",
+  "vaultRemove": "Αφαίρεση",
+  "vaultLimitTitle": "Συμπληρώθηκε το όριο φωτογραφιών",
+  "vaultLimitFreeBody": "Το Δωρεάν πρόγραμμα σάς επιτρέπει να προσθέσετε {limit, plural, one{{limit} φωτογραφία} other{{limit} φωτογραφίες}} σε κάθε εγγραφή. Με το Premium μπορείτε να προσθέσετε έως {premiumLimit}.",
+  "vaultLimitPremiumBody": "Μπορείτε να προσθέσετε έως {limit} φωτογραφίες σε κάθε εγγραφή. Αφαιρέστε μία για να προσθέσετε άλλη.",
+  "vaultSeePremium": "Δείτε το Premium",
+  "vaultPdfShort": "PDF",
+  "vaultPdfFile": "Αρχείο PDF",
+  "vaultOpenFile": "Άνοιγμα",
+  "vaultClose": "Κλείσιμο",
+  "vaultPageIndicator": "{current} από {total}",
+  "vaultPhotosTooltip": "{count, plural, one{{count} φωτογραφία} other{{count} φωτογραφίες}}",
+  "travelReadinessTitle": "Ετοιμότητα ταξιδιού",
+  "travelReadinessBody": "Με βάση τα διαβατήρια και τις άδειες οδήγησης που έχουν αποθηκευτεί στο Vaultara. Οι περισσότερες χώρες απαιτούν να ισχύει το διαβατήριο για τουλάχιστον 6 μήνες μετά την επιστροφή σας.",
+  "travelReadyUntil": "Το διαβατήριο ισχύει για ταξίδια έως {date}",
+  "travelPassportTooShortNow": "Το διαβατήριο λήγει στις {date}. Οι περισσότερες χώρες δεν θα το δεχτούν πλέον.",
+  "travelPassportExpiredOn": "Το διαβατήριο έληξε στις {date}",
+  "travelNoPassportSaved": "Δεν έχει αποθηκευτεί διαβατήριο",
+  "travelLicenceValidUntil": "Το δίπλωμα οδήγησης ισχύει έως {date}",
+  "travelLicenceExpiredOn": "Το δίπλωμα οδήγησης έληξε στις {date}",
+  "shareIncludePhotosTitle": "Να συμπεριληφθούν φωτογραφίες;",
+  "shareIncludePhotosBody": "Όποιος έχει τον σύνδεσμο μπορεί να δει ό,τι μοιράζεστε μέχρι να λήξει ο σύνδεσμος. Οι φωτογραφίες εγγράφων δείχνουν προσωπικά στοιχεία.",
+  "shareDetailsOnly": "Μόνο στοιχεία",
+  "shareWithPhotos": "Με φωτογραφίες",
+  "sharedLinksTitle": "Σύνδεσμοι κοινοποίησης",
+  "sharedLinksSubtitle": "Δείτε τους συνδέσμους που μοιραστήκατε και σταματήστε τους",
+  "sharedLinksEmpty": "Δεν έχετε ενεργούς συνδέσμους κοινοποίησης.",
+  "sharedLinksExpires": "Ο σύνδεσμος λειτουργεί έως {date}",
+  "sharedLinksStop": "Διακοπή",
+  "sharedLinksStopped": "Ο σύνδεσμος διακόπηκε. Δεν λειτουργεί πια.",
+  "sharedLinksError": "Δεν ήταν δυνατή η φόρτωση των συνδέσμων κοινοποίησης. Δοκιμάστε ξανά.",
+  "sharedLinksUnknownRecord": "Διαγραμμένη εγγραφή",
+  "leadLabel": "Η ανανέωση διαρκεί περίπου",
+  "leadHelper": "Το Vaultara ξεκινά να σας υπενθυμίζει αρκετά νωρίς ώστε να ανανεώσετε εγκαίρως.",
+  "leadNotSet": "Δεν ξέρω",
+  "leadWeeks": "{weeks, plural, one{{weeks} εβδομάδα} other{{weeks} εβδομάδες}}",
+  "leadMonths": "{months, plural, one{{months} μήνας} other{{months} μήνες}}",
+  "walletTileTitle": "Στο πορτοφόλι μου",
+  "walletTileSubtitle": "Αν χάσετε το πορτοφόλι σας, το Vaultara δείχνει τι πρέπει να αντικαταστήσετε",
+  "startRenewingBy": "Ξεκινήστε την ανανέωση έως {date}",
+  "startRenewingNow": "Ώρα να ξεκινήσει η ανανέωση",
+  "lostWalletTitle": "Έχασα το πορτοφόλι μου",
+  "lostWalletSubtitle": "Δείτε τι είχε μέσα και τι να αντικαταστήσετε",
+  "lostWalletFirstSteps": "Κάντε πρώτα αυτά",
+  "lostWalletStepCards": "Καλέστε την τράπεζά σας για να μπλοκάρετε όποιες τραπεζικές κάρτες υπήρχαν στο πορτοφόλι.",
+  "lostWalletStepReport": "Δηλώστε την απώλεια σε αστυνομικό τμήμα και κρατήστε τον αριθμό της υπόθεσης. Πολλές υπηρεσίες τον ζητούν όταν αντικαθιστάτε ένα έγγραφο.",
+  "lostWalletStepReplace": "Δείτε τη λίστα παρακάτω και τσεκάρετε κάθε στοιχείο μόλις κάνετε αίτηση για καινούργιο.",
+  "lostWalletEmptyTitle": "Δεν έχει σημειωθεί τίποτα ακόμη",
+  "lostWalletEmptyBody": "Ανοίξτε μια εγγραφή, πατήστε Περισσότερες λεπτομέρειες και ενεργοποιήστε το Στο πορτοφόλι μου. Κάντε το για την ταυτότητά σας, το δίπλωμα και τις κάρτες που κουβαλάτε, ώστε η λίστα να είναι έτοιμη αν τη χρειαστείτε ποτέ.",
+  "lostWalletProgress": "Αντικαταστάθηκαν {done} από {total}",
+  "lostWalletStartOver": "Ξεκινήστε από την αρχή",
+  "lostWalletHowToReplace": "Πώς να το αντικαταστήσετε",
+  "lifeEventsTitle": "Γεγονότα ζωής",
+  "lifeEventsSubtitle": "Μετακομίζετε, αλλάζετε όνομα ή αγοράσατε αυτοκίνητο; Δείτε τι πρέπει να ενημερώσετε",
+  "lifeEventsIntro": "Επιλέξτε τι συμβαίνει στη ζωή σας. Το Vaultara εμφανίζει τις εγγραφές που έχετε αποθηκεύσει και που συνήθως χρειάζονται ενημέρωση εξαιτίας του.",
+  "lifeEventMoving": "Μετακομίζω",
+  "lifeEventMovingBody": "Σε αυτά συνήθως αναγράφεται η διεύθυνσή σας. Ενημερώστε το καθένα μετά τη μετακόμιση.",
+  "lifeEventName": "Αλλάζω όνομα",
+  "lifeEventNameBody": "Αυτά δείχνουν το όνομά σας. Τα περισσότερα χρειάζονται ενημέρωση μετά από γάμο ή αλλαγή ονόματος.",
+  "lifeEventCar": "Αγόρασα ή πούλησα αυτοκίνητο",
+  "lifeEventCarBody": "Μεταβιβάστε, ενημερώστε ή ακυρώστε αυτά για το αυτοκίνητο.",
+  "lifeEventJob": "Ξεκινάω ή αφήνω μια δουλειά",
+  "lifeEventJobBody": "Επιστρέψτε, ακυρώστε ή μεταφέρετε αυτά όταν αλλάζει η δουλειά σας.",
+  "lifeEventCountry": "Μετακομίζω σε άλλη χώρα",
+  "lifeEventCountryBody": "Ελέγξτε το καθένα από αυτά πριν φύγετε και ξανά αφού φτάσετε.",
+  "lifeEventNone": "Καμία από τις αποθηκευμένες εγγραφές σας δεν επηρεάζεται.",
+  "lifeEventCount": "{count, plural, one{{count} από τις εγγραφές σας} other{{count} από τις εγγραφές σας}}",
+  "lifeEventProgress": "Ενημερώθηκαν {done} από {total}",
+  "proofPackTitle": "Φάκελος αποδείξεων",
+  "proofPackSubtitle": "Βάλτε επιλεγμένες εγγραφές και τις φωτογραφίες τους σε ένα PDF",
+  "proofPackIntro": "Επιλέξτε τις εγγραφές που σας ζήτησε κάποιος, όπως εργοδότης, πρεσβεία ή ασφαλιστική. Το Vaultara τις βάζει σε ένα PDF που μπορείτε να στείλετε με email ή να ανεβάσετε.",
+  "proofPackPhotos": "Συμπερίληψη φωτογραφιών",
+  "proofPackCreate": "{count, plural, one{Δημιουργία PDF με {count} εγγραφή} other{Δημιουργία PDF με {count} εγγραφές}}",
+  "proofPackPickOne": "Επιλέξτε τουλάχιστον μία εγγραφή",
+  "proofPackPrepared": "Ετοιμάστηκε στις {date}",
+  "proofPackExpires": "Λήγει στις {date}",
+  "proofPackBuilding": "Δημιουργία του PDF σας",
+  "proofPackError": "Δεν ήταν δυνατή η δημιουργία του PDF. Δοκιμάστε ξανά.",
+  "proofPackPdfSkipped": "Αυτή η εγγραφή έχει και αρχείο PDF, το οποίο δεν περιλαμβάνεται εδώ.",
+  "smartToolsSection": "Έξυπνα εργαλεία",
+  "smartInsightExpiredHeading": "Έχει ήδη λήξει",
+  "smartInsightExpiredBody": "Το στοιχείο {name} έληξε στις {date}. Ανανεώστε το τώρα ή ενημερώστε την ημερομηνία αν το έχετε ήδη ανανεώσει.",
+  "smartInsightExpiresSoonHeading": "Λήγει αυτή την εβδομάδα",
+  "smartInsightExpiresTomorrowBody": "Το στοιχείο {name} λήγει αύριο. Ανανεώστε το σήμερα, αν μπορείτε.",
+  "smartInsightExpiresSoonBody": "{days, plural, one{Το στοιχείο {name} λήγει σε {days} ημέρα. Ανανεώστε το σύντομα για να μη λήξει.} other{Το στοιχείο {name} λήγει σε {days} ημέρες. Ανανεώστε το σύντομα για να μη λήξει.}}",
+  "smartInsightStartRenewingHeading": "Ώρα να ξεκινήσει η ανανέωση",
+  "smartInsightStartRenewingBody": "{days, plural, one{Είχατε προγραμματίσει να ξεκινήσετε την ανανέωση του {name} {days} ημέρα πριν από τη λήξη. Λήγει στις {date}, οπότε τώρα είναι η ώρα.} other{Είχατε προγραμματίσει να ξεκινήσετε την ανανέωση του {name} {days} ημέρες πριν από τη λήξη. Λήγει στις {date}, οπότε τώρα είναι η ώρα.}}",
+  "smartInsightNoReminderHeading": "Δεν έχει οριστεί υπενθύμιση",
+  "smartInsightPassportHeading": "Το διαβατήριο λήγει σύντομα",
+  "smartInsightPassportTooShortBody": "Το στοιχείο {name} λήγει στις {date}. Οι περισσότερες χώρες απαιτούν τουλάχιστον 6 μήνες ισχύος, οπότε μπορεί να μη γίνει δεκτό για ταξίδι τώρα.",
+  "smartInsightPassportSoonHeading": "Πλησιάζει η ανανέωση του διαβατηρίου",
+  "smartInsightPassportSoonBody": "Από τις {date}, το στοιχείο {name} θα έχει λιγότερους από 6 μήνες ισχύος. Πολλές χώρες δεν θα το δέχονται για ταξίδι μετά από αυτό, γι' αυτό προγραμματίστε την ανανέωση.",
+  "smartInsightTripHeading": "Το ταξίδι σας χρειάζεται προσοχή",
+  "smartInsightTripBody": "{count, plural, one{Το ταξίδι {trip} ξεκινά στις {date} και {count} πράγμα χρειάζεται διόρθωση πριν φύγετε.} other{Το ταξίδι {trip} ξεκινά στις {date} και {count} πράγματα χρειάζονται διόρθωση πριν φύγετε.}}",
+  "smartInsightActionOpenTrip": "Άνοιγμα ταξιδιού",
+  "smartInsightBusyMonthHeading": "Έρχεται ένας γεμάτος μήνας",
+  "smartInsightBusyMonthBody": "{count, plural, one{{count} εγγραφή λήγει τον μήνα {month}. Προγραμματίστε το έγκαιρα.} other{{count} εγγραφές λήγουν τον μήνα {month}. Προγραμματίστε τις μαζί ώστε καμία να μην ξεφύγει.}}",
+  "smartInsightBusyMonthCostBody": "{count, plural, one{{count} εγγραφή λήγει τον μήνα {month} και η ανανέωση κοστίζει περίπου {amount}. Προγραμματίστε το έγκαιρα.} other{{count} εγγραφές λήγουν τον μήνα {month} και η ανανέωση κοστίζει περίπου {amount}. Προγραμματίστε τις μαζί.}}",
+  "smartInsightActionSeeTimeline": "Δείτε το χρονοδιάγραμμα",
+  "smartInsightMissingRemindersHeading": "Εγγραφές χωρίς υπενθυμίσεις",
+  "smartInsightMissingReminderSingleBody": "Το στοιχείο {name} λήγει στις {date} και δεν έχει ακόμη υπενθύμιση. Προσθέστε μία για να μη σας ξεφύγει.",
+  "smartInsightMissingRemindersBody": "{count, plural, one{{count} επερχόμενη εγγραφή δεν έχει υπενθύμιση, ξεκινώντας από το {name}. Προσθέστε υπενθυμίσεις ώστε τίποτα να μη σας ξεφύγει.} other{{count} επερχόμενες εγγραφές δεν έχουν υπενθύμιση, ξεκινώντας από το {name}. Προσθέστε υπενθυμίσεις ώστε τίποτα να μη σας ξεφύγει.}}",
+  "smartInsightWalletPhotoHeading": "Αποθηκεύστε μια φωτογραφία",
+  "smartInsightWalletPhotoSingleBody": "Το στοιχείο {name} είναι στο πορτοφόλι σας αλλά δεν έχει φωτογραφία. Αν χάσετε το πορτοφόλι σας, μια φωτογραφία κάνει την αντικατάσταση πολύ πιο εύκολη.",
+  "smartInsightWalletPhotoBody": "{count, plural, one{{count} στοιχείο του πορτοφολιού δεν έχει φωτογραφία, ξεκινώντας από το {name}. Αν χάσετε το πορτοφόλι σας, οι φωτογραφίες κάνουν την αντικατάσταση πολύ πιο εύκολη.} other{{count} στοιχεία του πορτοφολιού δεν έχουν φωτογραφία, ξεκινώντας από το {name}. Αν χάσετε το πορτοφόλι σας, οι φωτογραφίες κάνουν την αντικατάσταση πολύ πιο εύκολη.}}",
+  "smartInsightActionAddPhoto": "Προσθήκη φωτογραφίας",
+  "smartInsightRenewedHeading": "Μπράβο",
+  "smartInsightRenewedBody": "Ανανεώσατε πρόσφατα το {name} και τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή. Επόμενο είναι το {next} στις {date}.",
+  "smartInsightRenewedNoNextBody": "Ανανεώσατε πρόσφατα το {name} και τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή.",
+  "smartInsightMoreHeading": "Περισσότερα προς έλεγχο",
+  "smartInsightMoreCount": "{count, plural, one{Και άλλο {count}} other{Και άλλα {count}}}",
+  "planTabIndividual": "Ατομικό",
+  "planTabBusiness": "Επαγγελματικό",
+  "planGetPremium": "Αποκτήστε το Premium",
+  "businessPlanBuy": "Αποκτήστε το Επαγγελματικό",
+  "businessPlanSwitch": "Αλλαγή σε Επαγγελματικό",
+  "planSwitchToYearly": "Αλλαγή σε ετήσια χρέωση",
+  "planSwitchToMonthly": "Αλλαγή σε μηνιαία χρέωση",
+  "planTrialDays": "{count, plural, one{{count} ημέρα} other{{count} ημέρες}}",
+  "planTrialMonths": "{count, plural, one{{count} μήνας} other{{count} μήνες}}",
+  "planTrialCta": "Δοκιμάστε δωρεάν για {length}",
+  "planTrialThen": "Δωρεάν για {length}, μετά {price}{period}. Ακύρωση ανά πάσα στιγμή.",
+  "planTrialNoCharge": "Καμία πληρωμή τώρα. Θα σας υπενθυμίσουμε πριν λήξει η δωρεάν δοκιμή.",
+  "planBilledLine": "{price}{period}. Ακύρωση ανά πάσα στιγμή.",
+  "businessBenefitFamily": "Όλα όσα περιλαμβάνει το Οικογενειακό",
+  "businessBenefitStaffVehicles": "Εγγραφές προσωπικού και οχημάτων σε ένα μέρος",
+  "businessBenefitPdf": "Εξαγωγή PDF για την ομάδα με την επωνυμία της εταιρείας σας",
+  "businessMorePeople": "Χρειάζεστε χώρο για περισσότερα άτομα; Το Επαγγελματικό σας δίνει έως {count}.",
+  "businessSeePlan": "Δείτε το Επαγγελματικό πρόγραμμα",
+  "companyNameTitle": "Επωνυμία εταιρείας",
+  "companyNameHint": "Για παράδειγμα, Bay Couriers",
+  "companyNameHelp": "Εκτυπώνεται στην κορυφή των εξαγωγών PDF",
+  "companyNameAdd": "Προσθήκη επωνυμίας εταιρείας",
+  "companyNameSaved": "Η επωνυμία εταιρείας αποθηκεύτηκε",
+  "scanFoundPassport": "Βρέθηκε διαβατήριο",
+  "scanFoundIdCard": "Βρέθηκε ταυτότητα",
+  "scanFoundLicenceDisc": "Βρέθηκε δίσκος άδειας οχήματος",
+  "scanLicenceCardNote": "Ο γραμμωτός κώδικας σε δίπλωμα οδήγησης είναι κλειδωμένος, γι' αυτό διαβάσαμε το τυπωμένο κείμενο.",
+  "scanFoundHolder": "Ορίσαμε ως κάτοχο το άτομο {name}.",
+  "scanNamePassport": "Διαβατήριο",
+  "scanNameIdCard": "Ταυτότητα",
+  "scanNameLicenceDisc": "Δίσκος άδειας {plate}",
+  "scanNotesVehicle": "Όχημα: {details}",
+  "travelActionAdd": "Προσθήκη",
+  "travelActionUpdateDate": "Ενημέρωση ημερομηνίας",
+  "travelCountryLimit": "Μπορείτε να επιλέξετε έως {count} χώρες",
+  "travelCountryNone": "Καμία χώρα δεν ταιριάζει με την αναζήτησή σας",
+  "travelCountrySearch": "Αναζήτηση χωρών",
+  "travelDestinationChoose": "Επιλέξτε πού πηγαίνετε",
+  "travelDestinationHint": "Επιλέξτε έως {count} χώρες για αυτό το ταξίδι",
+  "travelTripNameOptional": "Όνομα ταξιδιού (προαιρετικό)",
+  "travelErrorNameOrDestination": "Επιλέξτε προορισμό ή εισαγάγετε όνομα ταξιδιού",
+  "travelDetailPassportNeeds": "Το στοιχείο {name} λήγει στις {date}. Αυτό το ταξίδι απαιτεί να ισχύει έως τις {needed}.",
+  "travelReadySchengenUntil": "Εξακολουθεί να είναι εντάξει για ταξίδια στη ζώνη Σένγκεν που τελειώνουν έως τις {date}",
+  "travelFixBeforeYouGo": "{count, plural, one{{count} πράγμα προς διόρθωση πριν φύγετε} other{{count} πράγματα προς διόρθωση πριν φύγετε}}",
+  "travelDaysToGo": "{count, plural, one{{count} ημέρα ακόμη} other{{count} ημέρες ακόμη}}",
+  "travelSectionWho": "Ποιοι πάνε",
+  "travelSectionReminders": "Υπενθυμίσεις",
+  "travelRemindersBody": "Το Vaultara σας υπενθυμίζει αυτές τις ημέρες και ελέγχει ξανά τα έγγραφά σας κάθε φορά.",
+  "travelRemindersPassed": "Οι ημέρες υπενθύμισης για αυτό το ταξίδι έχουν περάσει.",
+  "travelReminderBefore": "{days, plural, one{{days} ημέρα πριν φύγετε} other{{days} ημέρες πριν φύγετε}}",
+  "travelStatusReady": "Έτοιμο",
+  "travelStatusToFix": "{count, plural, one{{count} προς διόρθωση} other{{count} προς διόρθωση}}",
+  "travelStatusToCheck": "{count, plural, one{{count} προς έλεγχο} other{{count} προς έλεγχο}}",
+  "travelRuleTitle": "Κανόνας διαβατηρίου",
+  "travelRuleSixMonths": "Διαβατήριο σε ισχύ 6 μήνες μετά την επιστροφή",
+  "travelRuleThreeMonths": "Διαβατήριο σε ισχύ 3 μήνες μετά την επιστροφή",
+  "travelRuleThreeMonthsSchengen": "Διαβατήριο σε ισχύ 3 μήνες μετά την αναχώρηση από τη ζώνη Σένγκεν",
+  "travelRuleWholeTrip": "Διαβατήριο σε ισχύ για όλο το ταξίδι",
+  "travelRuleAuto": "Αυτόματα, ανάλογα με τον προορισμό",
+  "travelRuleReasonNoDestination": "Δεν έχει επιλεγεί προορισμός, γι' αυτό το Vaultara χρησιμοποιεί 6 μήνες, που δέχονται οι περισσότερες χώρες.",
+  "travelRuleReasonFrom": "Με βάση: {places}.",
+  "travelRuleReasonChosen": "Επιλέξατε εσείς αυτόν τον κανόνα για αυτό το ταξίδι.",
+  "travelRuleEmbassy": "Ελέγξτε τους κανόνες της πρεσβείας πριν ταξιδέψετε.",
+  "travelRuleChange": "Αλλαγή κανόνα",
+  "travelItemLicence": "Το δίπλωμα οδήγησης μπήκε στις βαλίτσες",
+  "travelItemRoute": "Έλεγχος των κανόνων εισόδου για κάθε χώρα της διαδρομής σας",
+  "travelItemGroupCopies": "Αντίγραφα των διαβατηρίων όλων σε ένα κοινό μέρος",
+  "travelItemLongTrip": "Λογαριασμοί, αλληλογραφία και φυτά τακτοποιημένα όσο λείπετε",
+  "tutorialsTravelTitle": "Έλεγχος ταξιδιού",
+  "tutorialsTravelSubtitle": "Ελέγξτε τα έγγραφά σας πριν από ένα ταξίδι",
+  "tutorialsSmartToolsTitle": "Χρήση έξυπνων εργαλείων",
+  "tutorialsSmartToolsSubtitle": "Χαμένο πορτοφόλι, γεγονότα ζωής, φάκελοι αποδείξεων και σύνδεσμοι κοινοποίησης",
+  "tutorialsFamilyTitle": "Οικογένεια και άτομα",
+  "tutorialsFamilySubtitle": "Προσθέστε άτομα και επιλέξτε σε ποιον ανήκει η εγγραφή",
+  "tutorialsPlansTitle": "Επιλογή προγράμματος",
+  "tutorialsPlansSubtitle": "Συγκρίνετε προγράμματα και επιλογές χρέωσης",
+  "tutorialsCompletedLabel": "Ολοκληρώθηκε",
+  "tutorialAddRecordMoreDetails": "Οι Περισσότερες λεπτομέρειες περιέχουν τα πρόσθετα: σημειώσεις, επανάληψη, χρόνο ανανέωσης, σε ποιον ανήκει η εγγραφή, κλείδωμα, πορτοφόλι και φωτογραφίες. Ανοίξτε τες μόνο όταν τις χρειάζεστε.",
+  "tutorialAddRecordRepeat": "Η Επανάληψη μετακινεί την ημερομηνία μπροστά για συνδρομές. Η ρύθμιση Η ανανέωση διαρκεί περίπου λέει στο Vaultara πόσο χρόνο παίρνει η ανανέωση, ώστε οι υπενθυμίσεις να ξεκινούν αρκετά νωρίς.",
+  "tutorialAddRecordProtect": "Κλειδώστε μια εγγραφή ώστε να ζητά το δακτυλικό σας αποτύπωμα ή το κλείδωμα οθόνης πριν εμφανιστεί. Σημειώστε τις κάρτες ως Στο πορτοφόλι μου και προσθέστε φωτογραφίες του εγγράφου.",
+  "tutorialTravelReadiness": "Η ετοιμότητα ταξιδιού ελέγχει τα διαβατήρια και τα διπλώματα οδήγησης που έχετε αποθηκεύσει στο Vaultara, για εσάς και τα άτομα που φροντίζετε.",
+  "tutorialTravelLocked": "Με το Premium μπορείτε να σχεδιάζετε ταξίδια και να βλέπετε ποια έγγραφα πρέπει να ανανεώσει κάθε ταξιδιώτης πριν φύγει.",
+  "tutorialTravelTripCard": "Κάθε ταξίδι δείχνει πότε φεύγετε και τι χρειάζεται διόρθωση πριν φύγετε. Πατήστε ένα ταξίδι για να το ανοίξετε.",
+  "tutorialTravelPlanTrip": "Πατήστε Σχεδιασμός ταξιδιού για να προσθέσετε πού πηγαίνετε, πότε και ποιοι ταξιδεύουν.",
+  "tutorialTravelTripDocuments": "Μέσα σε ένα ταξίδι, το Vaultara ελέγχει τις εγγραφές κάθε ταξιδιώτη με βάση τις ημερομηνίες του ταξιδιού και δείχνει τι πρέπει να ανανεωθεί.",
+  "tutorialTravelTripChecklist": "Κρατήστε μια λίστα για το ταξίδι και τσεκάρετε τα στοιχεία καθώς ετοιμάζεστε.",
+  "tutorialSmartLostWallet": "Χάσατε το πορτοφόλι σας; Δείτε κάθε εγγραφή που έχετε σημειώσει ως Στο πορτοφόλι μου, ώστε να ξέρετε τι να ακυρώσετε και να αντικαταστήσετε.",
+  "tutorialSmartLifeEvents": "Μετακομίζετε, αλλάζετε όνομα ή αγοράζετε αυτοκίνητο; Τα Γεγονότα ζωής δείχνουν ποιες εγγραφές πρέπει να ενημερώσετε.",
+  "tutorialSmartProofPack": "Ο Φάκελος αποδείξεων βάζει τις εγγραφές που επιλέγετε, με τις φωτογραφίες τους, σε ένα PDF που μπορείτε να μοιραστείτε.",
+  "tutorialSmartSharedLinks": "Οι Σύνδεσμοι κοινοποίησης εμφανίζουν κάθε σύνδεσμο που έχετε μοιραστεί. Διακόψτε έναν σύνδεσμο όποτε θέλετε και δεν ανοίγει πια.",
+  "tutorialFamilyMe": "Αυτός είστε εσείς. Κάθε εγγραφή που δεν ανήκει σε άλλο άτομο μένει σε εσάς.",
+  "tutorialFamilyAddPerson": "Πατήστε Προσθήκη ατόμου για να προσθέσετε κάποιον που φροντίζετε, όπως σύντροφο, παιδί ή γονέα.",
+  "tutorialFamilyAddPersonLocked": "Με ένα Οικογενειακό ή Επαγγελματικό πρόγραμμα μπορείτε να προσθέσετε τα άτομα που φροντίζετε και να κρατάτε εδώ και τις δικές τους εγγραφές.",
+  "tutorialFamilyRecordPerson": "Όταν προσθέτετε ή επεξεργάζεστε μια εγγραφή, ανοίξτε τις Περισσότερες λεπτομέρειες και επιλέξτε σε ποιον ανήκει. Το όνομά του εμφανίζεται τότε στην εγγραφή και στις υπενθυμίσεις της.",
+  "tutorialPlansTabs": "Εναλλάξτε μεταξύ Ατομικού, Οικογενειακού και Επαγγελματικού για να δείτε τι περιλαμβάνει κάθε πρόγραμμα.",
+  "tutorialPlansBilling": "Επιλέξτε αν θα πληρώνετε μηνιαία ή ετήσια. Η ετήσια πληρωμή συνήθως κοστίζει λιγότερο.",
+  "calendarLinkTitle": "Σύνδεσμος ημερολογίου",
+  "calendarLinkTileSubtitle": "Κρατήστε τις ημερομηνίες λήξης ενημερωμένες στο ημερολόγιό σας",
+  "calendarLinkIntro": "Εγγραφείτε μία φορά στο Google Calendar, στο Apple Calendar ή στο Outlook και οι ημερομηνίες λήξης σας θα παραμένουν ενημερωμένες από μόνες τους.",
+  "calendarLinkPrivacy": "Οι σημειώσεις δεν περιλαμβάνονται ποτέ και οι κλειδωμένες εγγραφές εμφανίζονται χωρίς όνομα. Όποιος έχει τον σύνδεσμο μπορεί να δει τις ημερομηνίες σας, γι' αυτό κρατήστε τον ιδιωτικό.",
+  "calendarLinkCreate": "Δημιουργία συνδέσμου",
+  "calendarLinkCreating": "Δημιουργία του συνδέσμου σας",
+  "calendarLinkOn": "Ο σύνδεσμος ημερολογίου σας είναι ενεργός",
+  "calendarLinkCreatedOn": "Δημιουργήθηκε στις {date}",
+  "calendarLinkLastChecked": "Τελευταίος έλεγχος από ημερολόγιο: {date}",
+  "calendarLinkNotChecked": "Κανένα ημερολόγιο δεν τον έχει ελέγξει ακόμη",
+  "calendarLinkAddGoogle": "Προσθήκη στο Google Calendar",
+  "calendarLinkAddApple": "Προσθήκη στο Apple ή στο Outlook",
+  "calendarLinkCopy": "Αντιγραφή συνδέσμου",
+  "calendarLinkCopied": "Ο σύνδεσμος αντιγράφηκε",
+  "calendarLinkRotate": "Δημιουργία νέου συνδέσμου",
+  "calendarLinkRotateTitle": "Δημιουργία νέου συνδέσμου;",
+  "calendarLinkRotateBody": "Ο παλιός σύνδεσμος σταματά να λειτουργεί. Τα ημερολόγια που τον χρησιμοποιούν παύουν να ενημερώνονται μέχρι να προσθέσετε τον νέο σύνδεσμο.",
+  "calendarLinkRotated": "Ο νέος σύνδεσμος είναι έτοιμος. Προσθέστε τον ξανά στο ημερολόγιό σας.",
+  "calendarLinkTurnOff": "Απενεργοποίηση",
+  "calendarLinkTurnOffTitle": "Απενεργοποίηση του συνδέσμου ημερολογίου;",
+  "calendarLinkTurnOffBody": "Τα ημερολόγια που χρησιμοποιούν αυτόν τον σύνδεσμο παύουν να ενημερώνονται. Το ημερολόγιό σας μπορεί να αφαιρέσει τις ημερομηνίες που ήδη εμφανίζει.",
+  "calendarLinkTurnedOff": "Ο σύνδεσμος ημερολογίου απενεργοποιήθηκε",
+  "calendarLinkOtherDevice": "Αυτός ο σύνδεσμος δημιουργήθηκε σε άλλη συσκευή. Για να τον προσθέσετε σε ημερολόγιο από εδώ, δημιουργήστε νέο σύνδεσμο.",
+  "calendarLinkRefreshNote": "Τα ημερολόγια ελέγχουν για αλλαγές με δικό τους χρονοδιάγραμμα, συνήθως κάθε λίγες ώρες.",
+  "calendarLinkOpenFailed": "Καμία εφαρμογή δεν μπόρεσε να ανοίξει τον σύνδεσμο. Αντιγράψτε τον και προσθέστε τον στην εφαρμογή ημερολογίου σας.",
+  "calendarLinkError": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+  "calendarLinkTryAgain": "Δοκιμάστε ξανά",
+  "calendarLinkPremiumTitle": "Ο ζωντανός σύνδεσμος ημερολογίου είναι λειτουργία Premium",
+  "calendarLinkPremiumBody": "Αναβαθμίστε για να βλέπετε κάθε ημερομηνία λήξης στο ημερολόγιό σας, πάντα ενημερωμένη.",
+  "notificationsEmailSection": "Email",
+  "monthlySummaryTitle": "Μηνιαία σύνοψη με email",
+  "monthlySummarySubtitle": "Αποστέλλεται με email την 1η κάθε μήνα",
+  "monthlySummaryContents": "Περιλαμβάνει τι λήγει αυτόν και τον επόμενο μήνα, ό,τι έχει ήδη λήξει και το κόστος ανανέωσης για τους επόμενους 3 μήνες. Οι σημειώσεις δεν περιλαμβάνονται ποτέ.",
+  "monthlySummarySendSample": "Αποστολή δείγματος τώρα",
+  "monthlySummarySampleTo": "Το στέλνουμε στο {email}",
+  "monthlySummarySending": "Αποστολή του δείγματος",
+  "monthlySummarySampleSent": "Το δείγμα στάλθηκε στο {email}",
+  "monthlySummarySampleLimit": "Μπορείτε να στείλετε 3 δείγματα την ημέρα. Δοκιμάστε ξανά αύριο.",
+  "monthlySummarySampleError": "Δεν ήταν δυνατή η αποστολή του δείγματος. Δοκιμάστε ξανά.",
+  "monthlySummarySaveError": "Δεν ήταν δυνατή η αλλαγή της ρύθμισης της σύνοψης. Δοκιμάστε ξανά.",
+  "monthlySummaryTurnedOn": "Η μηνιαία σύνοψη είναι ενεργή. Η επόμενη φτάνει την 1η.",
+  "csvImportTileTitle": "Εισαγωγή από υπολογιστικό φύλλο",
+  "csvImportTileSubtitle": "Προσθέστε πολλές εγγραφές ταυτόχρονα από αρχείο CSV",
+  "csvImportTitle": "Εισαγωγή από υπολογιστικό φύλλο",
+  "csvImportIntroLine1": "Φέρτε εγγραφές από Excel, Google Sheets ή Numbers. Αποθηκεύστε πρώτα το φύλλο σας ως αρχείο CSV.",
+  "csvImportIntroLine2": "Θα δείτε κάθε γραμμή και μπορείτε να διορθώσετε ό,τι χρειάζεται πριν προστεθεί οτιδήποτε.",
+  "csvImportChooseFile": "Επιλογή αρχείου",
+  "csvImportGetTemplate": "Λήψη προτύπου",
+  "csvImportColumnsTitle": "Στήλες που μπορείτε να χρησιμοποιήσετε",
+  "csvImportColumnsHint": "Χρειάζονται μόνο το Όνομα και η Ημερομηνία λήξης. Η σειρά των στηλών δεν έχει σημασία.",
+  "csvImportErrorRead": "Δεν ήταν δυνατή η ανάγνωση αυτού του αρχείου. Δοκιμάστε ξανά.",
+  "csvImportErrorEmpty": "Αυτό το αρχείο δεν έχει γραμμές για εισαγωγή.",
+  "csvImportErrorNotCsv": "Αποθηκεύστε το φύλλο σας ως αρχείο CSV και μετά επιλέξτε αυτό το αρχείο.",
+  "csvImportErrorTooBig": "Αυτό το αρχείο είναι πολύ μεγάλο. Χωρίστε το σε μικρότερα αρχεία.",
+  "csvImportTemplateError": "Δεν ήταν δυνατή η δημιουργία του προτύπου. Δοκιμάστε ξανά.",
+  "csvImportTemplateExampleOne": "Το διαβατήριό μου",
+  "csvImportTemplateExampleTwo": "Ασφάλεια αυτοκινήτου",
+  "csvImportTemplateNote": "Πληρώνεται κάθε χρόνο",
+  "csvImportFieldName": "Όνομα",
+  "csvImportFieldPerson": "Άτομο",
+  "csvImportFieldCost": "Κόστος",
+  "csvImportFieldCurrency": "Νόμισμα",
+  "csvImportFieldReminder": "Ημέρες υπενθύμισης",
+  "csvImportMapTitle": "Αντιστοιχίστε τις στήλες",
+  "csvImportMapIntro": "Αντιστοιχίσαμε ό,τι μπορέσαμε. Ελέγξτε κάθε πεδίο και αλλάξτε ό,τι φαίνεται λάθος.",
+  "csvImportHasHeader": "Η πρώτη γραμμή έχει ονόματα στηλών",
+  "csvImportNotInFile": "Δεν υπάρχει στο αρχείο μου",
+  "csvImportColumnNumber": "Στήλη {number}",
+  "csvImportExample": "Παράδειγμα: {value}",
+  "csvImportRequired": "Απαραίτητο",
+  "csvImportMapNeedRequired": "Επιλέξτε τις στήλες για το Όνομα και την Ημερομηνία λήξης για να συνεχίσετε.",
+  "csvImportContinue": "Συνέχεια",
+  "csvImportPreviewTitle": "Ελέγξτε τις εγγραφές σας",
+  "csvImportRowsCount": "{count, plural, one{{count} γραμμή} other{{count} γραμμές}}",
+  "csvImportReadyCount": "{count} έτοιμες",
+  "csvImportSkippedCount": "{count} παραλείφθηκαν",
+  "csvImportNeedsCategoryCount": "{count, plural, one{{count} χρειάζεται κατηγορία} other{{count} χρειάζονται κατηγορία}}",
+  "csvImportDateOrderTitle": "Πώς γράφονται οι ημερομηνίες σας;",
+  "csvImportDateOrderAmbiguous": "Ορισμένες ημερομηνίες, όπως η 03/04/2027, μπορούν να διαβαστούν με δύο τρόπους. Επιλέξτε αυτόν που ταιριάζει με το φύλλο σας.",
+  "csvImportDayFirst": "Πρώτα η ημέρα (31/12)",
+  "csvImportMonthFirst": "Πρώτα ο μήνας (12/31)",
+  "csvImportFallbackTitle": "{count, plural, one{{count} γραμμή δεν ταιριάζει με καμία κατηγορία} other{{count} γραμμές δεν ταιριάζουν με καμία κατηγορία}}",
+  "csvImportFallbackHint": "Επιλέξτε πού θα μπουν. Αν το αφήσετε κενό, θα παραλειφθούν.",
+  "csvImportFallbackSkip": "Παράλειψη αυτών των γραμμών",
+  "csvImportDefaultReminderTitle": "Υπενθύμιση για γραμμές που δεν έχουν",
+  "csvImportFilterAll": "Όλες",
+  "csvImportFilterReady": "Έτοιμες",
+  "csvImportFilterSkipped": "Παραλείφθηκαν",
+  "csvImportCapped": "Χρησιμοποιούνται μόνο οι πρώτες {count} γραμμές. Χωρίστε τα μεγαλύτερα αρχεία σε μέρη.",
+  "csvImportRowLine": "Γραμμή {line}",
+  "csvImportReasonNoName": "Παραλείφθηκε: δεν έχει όνομα",
+  "csvImportReasonNoDate": "Παραλείφθηκε: δεν έχει ημερομηνία λήξης",
+  "csvImportReasonBadDate": "Παραλείφθηκε: δεν ήταν δυνατή η ανάγνωση της ημερομηνίας \"{value}\"",
+  "csvImportReasonDuplicate": "Παραλείφθηκε: υπάρχει ήδη στις εγγραφές σας",
+  "csvImportReasonDuplicateInFile": "Παραλείφθηκε: ίδια με προηγούμενη γραμμή",
+  "csvImportReasonNoCategory": "Δεν υπάρχει ακόμη κατηγορία που να ταιριάζει",
+  "csvImportNotePersonNotFound": "Δεν υπάρχει άτομο με όνομα {name}, οπότε το πεδίο έμεινε κενό",
+  "csvImportNoteReminderAdjusted": "Η υπενθύμιση ορίστηκε {days} ημέρες πριν, όπως στο δωρεάν πρόγραμμα",
+  "csvImportNoteNewGroup": "Νέα ομάδα: {name}",
+  "csvImportNoteGroupNotFound": "Δεν υπάρχει ομάδα με όνομα {name}, οπότε επιλέξαμε μία για εσάς",
+  "csvImportNoteBadCost": "Δεν ήταν δυνατή η ανάγνωση του κόστους \"{value}\"",
+  "csvImportNoName": "Χωρίς όνομα",
+  "csvImportLimitNote": "{count, plural, one{Το δωρεάν πρόγραμμά σας έχει χώρο για ακόμη {count} εγγραφή.} other{Το δωρεάν πρόγραμμά σας έχει χώρο για ακόμη {count} εγγραφές.}}",
+  "csvImportLimitFull": "Το δωρεάν πρόγραμμά σας είναι γεμάτο. Αναβαθμίστε για να προσθέσετε περισσότερες εγγραφές.",
+  "csvImportSeePlans": "Δείτε τα προγράμματα",
+  "csvImportButton": "{count, plural, one{Εισαγωγή {count} εγγραφής} other{Εισαγωγή {count} εγγραφών}}",
+  "csvImportNothingReady": "Δεν υπάρχει τίποτα για εισαγωγή",
+  "csvImportProgress": "Προσθήκη {done} από {total}",
+  "csvImportKeepOpen": "Κρατήστε αυτήν την οθόνη ανοιχτή μέχρι να ολοκληρωθεί.",
+  "csvImportDoneTitle": "Η εισαγωγή ολοκληρώθηκε",
+  "csvImportDoneImported": "{count, plural, one{Εισήχθη {count} εγγραφή} other{Εισήχθησαν {count} εγγραφές}}",
+  "csvImportDoneSkipped": "{count, plural, one{Παραλείφθηκε {count} γραμμή} other{Παραλείφθηκαν {count} γραμμές}}",
+  "csvImportDoneLimit": "Ορισμένες γραμμές δεν προστέθηκαν επειδή το πρόγραμμά σας είναι γεμάτο.",
+  "csvImportDone": "Τέλος",
+  "photoLockTitle": "Κρυπτογραφημένες φωτογραφίες",
+  "photoLockTileOn": "Ενεργό. Μόνο εσείς βλέπετε τις φωτογραφίες σας.",
+  "photoLockTileOff": "Ανενεργό. Κλειδώστε τις φωτογραφίες σας με ένα κλειδί που έχετε μόνο εσείς.",
+  "photoLockTileLocked": "Εισαγάγετε το κλειδί ανάκτησης για να δείτε τις φωτογραφίες σας σε αυτό το τηλέφωνο.",
+  "photoLockIntro": "Οι φωτογραφίες και τα PDF σας κλειδώνουν στο τηλέφωνό σας πριν ανέβουν. Μόνο τα τηλέφωνά σας μπορούν να τα ξεκλειδώσουν.",
+  "photoLockPointPrivate": "Το Vaultara και η Google δεν μπορούν να δουν τις φωτογραφίες σας.",
+  "photoLockPointRecovery": "Αν χάσετε το τηλέφωνό σας και το κλειδί ανάκτησης, οι φωτογραφίες σας δεν μπορούν να ανακτηθούν. Κανείς δεν μπορεί να επαναφέρει το κλειδί για εσάς.",
+  "photoLockPointShare": "Οι σύνδεσμοι κοινοποίησης δεν μπορούν να δείξουν κρυπτογραφημένες φωτογραφίες. Μπορείτε όμως να μοιραστείτε τις λεπτομέρειες της εγγραφής.",
+  "photoLockPointProofPack": "Τα πακέτα αποδεικτικών εξακολουθούν να περιλαμβάνουν τις φωτογραφίες σας όταν τα δημιουργείτε από το τηλέφωνό σας.",
+  "photoLockTurnOn": "Ενεργοποίηση κρυπτογραφημένων φωτογραφιών",
+  "photoLockStatusOn": "Οι κρυπτογραφημένες φωτογραφίες είναι ενεργές",
+  "photoLockStatusOnBody": "Οι νέες φωτογραφίες κρυπτογραφούνται σε αυτό το τηλέφωνο πριν ανέβουν.",
+  "photoLockPendingTitle": "{count, plural, one{1 φωτογραφία δεν είναι ακόμη κρυπτογραφημένη} other{{count} φωτογραφίες δεν είναι ακόμη κρυπτογραφημένες}}",
+  "photoLockPendingBody": "Οι φωτογραφίες που προσθέσατε πριν ενεργοποιήσετε αυτή τη λειτουργία αποθηκεύονται ακόμη με τον κανονικό τρόπο.",
+  "photoLockEncryptExisting": "Κρυπτογράφηση των υπαρχουσών φωτογραφιών μου",
+  "photoLockKeepOpen": "Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
+  "photoLockProgress": "{done} από {total}",
+  "photoLockEncrypting": "Κρυπτογράφηση των φωτογραφιών σας",
+  "photoLockDecrypting": "Αποκρυπτογράφηση των φωτογραφιών σας",
+  "photoLockEncryptDone": "Οι φωτογραφίες σας είναι κρυπτογραφημένες.",
+  "photoLockSomeFailed": "Ορισμένες φωτογραφίες δεν άλλαξαν. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "photoLockTurnOff": "Απενεργοποίηση κρυπτογραφημένων φωτογραφιών",
+  "photoLockTurnOffTitle": "Απενεργοποίηση κρυπτογραφημένων φωτογραφιών;",
+  "photoLockTurnOffBody": "Οι φωτογραφίες σας θα αποκρυπτογραφηθούν και θα αποθηκεύονται ξανά με τον κανονικό τρόπο, και το κλειδί ανάκτησής σας θα σταματήσει να λειτουργεί. Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
+  "photoLockTurnOffAction": "Απενεργοποίηση",
+  "photoLockTurnedOff": "Οι κρυπτογραφημένες φωτογραφίες είναι ανενεργές.",
+  "photoLockTurnedOn": "Οι κρυπτογραφημένες φωτογραφίες είναι ενεργές.",
+  "photoLockLockedTitle": "Οι φωτογραφίες σας είναι κλειδωμένες σε αυτό το τηλέφωνο",
+  "photoLockLockedBody": "Οι φωτογραφίες σας είναι κρυπτογραφημένες. Εισαγάγετε το κλειδί ανάκτησης για να τις δείτε σε αυτό το τηλέφωνο.",
+  "photoLockAddLockedBody": "Εισαγάγετε πρώτα το κλειδί ανάκτησης, ώστε να κρυπτογραφούνται και οι νέες φωτογραφίες σας.",
+  "photoLockEnterKey": "Εισαγωγή κλειδιού ανάκτησης",
+  "photoLockCheckFailed": "Δεν ήταν δυνατός ο έλεγχος των κρυπτογραφημένων φωτογραφιών σας αυτή τη στιγμή. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "photoLockRetry": "Δοκιμάστε ξανά",
+  "photoLockKeyTitle": "Το κλειδί ανάκτησής σας",
+  "photoLockSaveStep": "Αποθηκεύστε το κλειδί ανάκτησης",
+  "photoLockKeyBody": "Αυτό το κλειδί ξεκλειδώνει τις φωτογραφίες σας σε νέο τηλέφωνο. Γράψτε το ή αποθηκεύστε το σε διαχειριστή κωδικών. Θα το δείξουμε μόνο μία φορά.",
+  "photoLockKeyWarning": "Κρατήστε αυτό το κλειδί ιδιωτικό. Δεν μπορούμε να το δείξουμε ξανά ούτε να το επαναφέρουμε για εσάς.",
+  "photoLockCopy": "Αντιγραφή",
+  "photoLockSave": "Αποθήκευση ή κοινοποίηση",
+  "photoLockCopied": "Το κλειδί ανάκτησης αντιγράφηκε.",
+  "photoLockShareSubject": "Το κλειδί ανάκτησης του Vaultara",
+  "photoLockConfirmStep": "Επιβεβαιώστε ότι το αποθηκεύσατε",
+  "photoLockConfirmBody": "Πληκτρολογήστε την τελευταία ομάδα του κλειδιού σας, που φαίνεται έγχρωμη παραπάνω.",
+  "photoLockConfirmLabel": "Τελευταία ομάδα",
+  "photoLockConfirmMismatch": "Αυτό δεν ταιριάζει με την τελευταία ομάδα του κλειδιού σας.",
+  "photoLockFinish": "Ενεργοποίηση",
+  "photoLockSetupFailed": "Δεν ήταν δυνατή η ενεργοποίηση των κρυπτογραφημένων φωτογραφιών. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "photoLockAlreadyOn": "Οι κρυπτογραφημένες φωτογραφίες είναι ήδη ενεργές για τον λογαριασμό σας. Εισαγάγετε το κλειδί ανάκτησης για να τις χρησιμοποιήσετε σε αυτό το τηλέφωνο.",
+  "photoLockEncryptExistingTitle": "Κρυπτογράφηση των υπαρχουσών φωτογραφιών;",
+  "photoLockEncryptExistingBody": "{count, plural, one{Έχετε 1 φωτογραφία που δεν είναι ακόμη κρυπτογραφημένη. Μπορούμε να την κρυπτογραφήσουμε τώρα.} other{Έχετε {count} φωτογραφίες που δεν είναι ακόμη κρυπτογραφημένες. Μπορούμε να τις κρυπτογραφήσουμε τώρα.}} Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
+  "photoLockEncryptNow": "Κρυπτογράφηση τώρα",
+  "photoLockEntryBody": "Εισαγάγετε το κλειδί ανάκτησης που αποθηκεύσατε όταν ενεργοποιήσατε τις κρυπτογραφημένες φωτογραφίες. Οι παύλες και τα κενά είναι προαιρετικά.",
+  "photoLockEntryLabel": "Κλειδί ανάκτησης",
+  "photoLockEntryHint": "XXXX-XXXX-XXXX",
+  "photoLockUnlock": "Ξεκλείδωμα φωτογραφιών",
+  "photoLockUnlocked": "Οι φωτογραφίες σας είναι ξεκλείδωτες σε αυτό το τηλέφωνο.",
+  "photoLockInvalidFormat": "Αυτό δεν μοιάζει με κλειδί ανάκτησης. Ελέγξτε κάθε χαρακτήρα και δοκιμάστε ξανά.",
+  "photoLockWrongKey": "Αυτό το κλειδί ανάκτησης δεν ταιριάζει. Ελέγξτε το και δοκιμάστε ξανά.",
+  "photoLockWaitSeconds": "{seconds, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε 1 δευτερόλεπτο και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {seconds} δευτερόλεπτα και δοκιμάστε ξανά.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε 1 λεπτό και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {minutes} λεπτά και δοκιμάστε ξανά.}}",
+  "photoLockOffline": "Δεν ήταν δυνατή η επικοινωνία με το Vaultara. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "photoLockNotSetUp": "Οι κρυπτογραφημένες φωτογραφίες δεν είναι ενεργές για τον λογαριασμό σας.",
+  "photoLockUnlockFailed": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+  "photoLockLostKey": "Χάσατε το κλειδί ανάκτησης; Χωρίς αυτό, οι κρυπτογραφημένες φωτογραφίες δεν μπορούν να ανοίξουν σε νέο τηλέφωνο. Οι λεπτομέρειες των εγγραφών σας δεν επηρεάζονται.",
+  "photoLockShareTitle": "Οι φωτογραφίες μένουν ιδιωτικές",
+  "photoLockShareBody": "Αυτή η εγγραφή έχει κρυπτογραφημένες φωτογραφίες. Οι σύνδεσμοι κοινοποίησης δεν μπορούν να τις δείξουν, οπότε θα κοινοποιηθούν μόνο οι λεπτομέρειες.",
+  "householdTitle": "Νοικοκυριό",
+  "householdCreateIntro": "{count, plural, one{Προσκαλέστε {count} ακόμη λογαριασμό Vaultara στο νοικοκυριό σας.} other{Προσκαλέστε έως και {count} ακόμη λογαριασμούς Vaultara στο νοικοκυριό σας.}} Κάθε άτομο παίρνει Premium μέσω του προγράμματός σας και κρατά τις δικές του εγγραφές ιδιωτικές. Εσείς επιλέγετε ποιες εγγραφές βλέπουν όλοι.",
+  "householdJoinIntro": "Κάποιος με πρόγραμμα Οικογενειακό ή Επαγγελματικό μπορεί να σας προσκαλέσει στο νοικοκυριό του. Τότε παίρνετε Premium μέσω του προγράμματός του και μπορείτε να μοιράζεστε εγγραφές.",
+  "householdCreate": "Δημιουργία νοικοκυριού",
+  "householdCreated": "Το νοικοκυριό σας είναι έτοιμο. Προσκαλέστε κάποιον να συμμετάσχει.",
+  "householdEnterCode": "Εισαγωγή κωδικού πρόσκλησης",
+  "householdJoinTitle": "Συμμετοχή σε νοικοκυριό",
+  "householdJoinTitleNamed": "Συμμετοχή στο νοικοκυριό του ατόμου {name};",
+  "householdEnterCodeIntro": "Πληκτρολογήστε τον κωδικό από την πρόσκλησή σας. Μπορείτε επίσης να πατήσετε τον σύνδεσμο πρόσκλησης για να ανοίξει εδώ.",
+  "householdCodeLabel": "Κωδικός πρόσκλησης",
+  "householdCodeHint": "Για παράδειγμα, K7MQ2XRA",
+  "householdContinue": "Συνέχεια",
+  "householdJoinButton": "Συμμετοχή",
+  "householdJoinPointPremium": "Παίρνετε Premium μέσω του προγράμματός του, χωρίς κόστος για εσάς.",
+  "householdJoinPointPrivate": "Οι εγγραφές σας μένουν ιδιωτικές. Κανείς άλλος δεν τις βλέπει αν δεν τις μοιραστείτε.",
+  "householdJoinPointShared": "Οι εγγραφές που μοιράζονται με το νοικοκυριό μπορούν να προβληθούν και να επεξεργαστούν από όλα τα μέλη του, και όλοι λαμβάνουν τις υπενθυμίσεις τους.",
+  "householdJoinPointLeave": "Μπορείτε να αποχωρήσετε οποιαδήποτε στιγμή από την οθόνη Οικογένεια.",
+  "householdJoinedTitle": "Είστε μέσα",
+  "householdJoinedBody": "Μπήκατε στο νοικοκυριό. Το Premium είναι πλέον μέρος του λογαριασμού σας.",
+  "householdOwnSubscription": "Πληρώνετε και για τη δική σας συνδρομή. Το πρόγραμμα του νοικοκυριού σας καλύπτει πλέον, οπότε μπορείτε να την ακυρώσετε από τον λογαριασμό σας στο κατάστημα, αν θέλετε. Εμείς δεν την ακυρώνουμε ποτέ για εσάς.",
+  "householdDone": "Τέλος",
+  "householdCodeInvalid": "Αυτός ο κωδικός δεν λειτουργεί. Ελέγξτε τον και δοκιμάστε ξανά ή ζητήστε νέα πρόσκληση.",
+  "householdAlreadyInOne": "Είστε ήδη σε νοικοκυριό. Αποχωρήστε πρώτα για να μπείτε σε άλλο.",
+  "householdAlreadyMember": "Είστε ήδη σε αυτό το νοικοκυριό.",
+  "householdInviteInactive": "Το πρόγραμμα αυτού του νοικοκυριού δεν είναι ενεργό αυτή τη στιγμή, οπότε κανείς δεν μπορεί να συμμετάσχει.",
+  "householdFull": "Αυτό το νοικοκυριό είναι γεμάτο.",
+  "householdTooManyTries": "Πάρα πολλές προσπάθειες. Περιμένετε λίγο και δοκιμάστε ξανά.",
+  "householdNeedsPlan": "Χρειάζεστε πρόγραμμα Οικογενειακό ή Επαγγελματικό για να δημιουργήσετε νοικοκυριό.",
+  "householdGenericError": "Κάτι πήγε στραβά. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "householdLoadError": "Δεν ήταν δυνατή η φόρτωση του νοικοκυριού σας.",
+  "householdTryAgain": "Δοκιμάστε ξανά",
+  "householdOwnerSummary": "Διαχειρίζεστε αυτό το νοικοκυριό. Χρησιμοποιούνται {count} από {limit} θέσεις. Όλοι σε αυτό έχουν Premium μέσω του προγράμματός σας.",
+  "householdMemberSummary": "Έχετε Premium μέσω του προγράμματος του ατόμου {name}. Οι δικές σας εγγραφές μένουν ιδιωτικές αν δεν τις μοιραστείτε.",
+  "householdInactiveOwner": "Το πρόγραμμά σας δεν καλύπτει πλέον νοικοκυριό. Τα μέλη δεν έχουν Premium και οι κοινόχρηστες εγγραφές είναι μόνο για ανάγνωση μέχρι να ανανεώσετε το πρόγραμμα Οικογενειακό ή Επαγγελματικό.",
+  "householdReadOnly": "Το πρόγραμμα του νοικοκυριού δεν είναι ενεργό, οπότε οι κοινόχρηστες εγγραφές είναι προς το παρόν μόνο για ανάγνωση.",
+  "householdOwnerTag": "Κάτοχος",
+  "householdYouTag": "Εσείς",
+  "householdMemberFallback": "Μέλος",
+  "householdRemoveMember": "Αφαίρεση από το νοικοκυριό",
+  "householdRemoveTitle": "Αφαίρεση του ατόμου {name};",
+  "householdRemoveBody": "Το άτομο {name} χάνει το Premium από το πρόγραμμά σας. Οι εγγραφές που μοιράστηκε επιστρέφουν στις δικές του εγγραφές.",
+  "householdMemberRemoved": "Το άτομο {name} δεν είναι πλέον στο νοικοκυριό σας",
+  "householdPendingInvites": "Ανοιχτές προσκλήσεις",
+  "householdInviteExpires": "Ισχύει έως {date}",
+  "householdShareInvite": "Κοινοποίηση πρόσκλησης",
+  "householdRevokeInvite": "Ακύρωση πρόσκλησης",
+  "householdInviteRevoked": "Η πρόσκληση ακυρώθηκε. Ο κωδικός δεν λειτουργεί πια.",
+  "householdInvite": "Πρόσκληση κάποιου",
+  "householdInviteNote": "Κάθε πρόσκληση λειτουργεί μία φορά και για 7 ημέρες.",
+  "householdInviteSubject": "Μπείτε στο νοικοκυριό μου στο Vaultara",
+  "householdInviteMessage": "Μπείτε στο νοικοκυριό μου στο Vaultara για να παρακολουθούμε μαζί τα έγγραφά μας. Πατήστε αυτόν τον σύνδεσμο: {link}\nΉ ανοίξτε το Vaultara, πηγαίνετε στο Προφίλ, μετά στην Οικογένεια και εισαγάγετε αυτόν τον κωδικό: {code}",
+  "householdInviteCopied": "Ο σύνδεσμος πρόσκλησης αντιγράφηκε",
+  "householdSharedRecordsTitle": "Κοινόχρηστες εγγραφές",
+  "householdSharedRecordsIntro": "Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτές τις εγγραφές, και όλοι λαμβάνουν τις υπενθυμίσεις τους.",
+  "householdSharedRecordsEmpty": "Δεν έχει μοιραστεί τίποτα ακόμη. Ανοίξτε μια εγγραφή και ενεργοποιήστε το Κοινή με το νοικοκυριό.",
+  "householdSharedCount": "{count, plural, one{{count} εγγραφή} other{{count} εγγραφές}}",
+  "householdShowAllShared": "Εμφάνιση όλων των κοινόχρηστων εγγραφών",
+  "householdHowSharingWorks": "Για να μοιραστείτε μια εγγραφή, ανοίξτε την και ενεργοποιήστε το Κοινή με το νοικοκυριό. Απενεργοποιήστε το για να επιστρέψει η εγγραφή στο άτομο που την πρόσθεσε.",
+  "householdLeave": "Αποχώρηση από το νοικοκυριό",
+  "householdLeaveTitle": "Αποχώρηση από αυτό το νοικοκυριό;",
+  "householdLeaveBody": "Χάνετε το Premium από αυτό το νοικοκυριό. Οι εγγραφές που μοιραστήκατε επιστρέφουν στις δικές σας και δεν βλέπετε πια όσα μοιράζονται οι άλλοι.",
+  "householdLeft": "Αποχωρήσατε από το νοικοκυριό",
+  "householdClose": "Κλείσιμο νοικοκυριού",
+  "householdCloseTitle": "Κλείσιμο του νοικοκυριού σας;",
+  "householdCloseBody": "Όλοι αποχωρούν από το νοικοκυριό και χάνουν το Premium από το πρόγραμμά σας. Κάθε κοινόχρηστη εγγραφή επιστρέφει στο άτομο που την πρόσθεσε.",
+  "householdClosed": "Το νοικοκυριό σας έκλεισε",
+  "householdShareTitle": "Κοινή με το νοικοκυριό",
+  "householdShareOn": "Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτή την εγγραφή και λαμβάνουν τις υπενθυμίσεις της.",
+  "householdShareOff": "Μόνο εσείς βλέπετε αυτή την εγγραφή.",
+  "householdSharedBadge": "Κοινή",
+  "householdSharedTooltip": "Κοινή με το νοικοκυριό σας",
+  "householdMoveFailed": "Δεν ήταν δυνατή η αλλαγή του ποιος βλέπει αυτή την εγγραφή. Δοκιμάστε ξανά.",
+  "householdUnsharedToCreator": "Αυτή η εγγραφή επέστρεψε στο άτομο που την πρόσθεσε.",
+  "householdPlanBanner": "Έχετε Premium μέσω του νοικοκυριού σας. Δεν χρειάζεστε δική σας συνδρομή.",
+  "householdPlanIncluded": "Περιλαμβάνεται στο νοικοκυριό σας",
+  "householdPremiumTitle": "Premium μέσω του νοικοκυριού σας",
+  "householdPremiumSubtitle": "Το πρόγραμμα του νοικοκυριού σας σας καλύπτει. Αν αποχωρήσετε από το νοικοκυριό, το Premium τελειώνει.",
+  "householdProfileTileSubtitle": "Το νοικοκυριό σας και τα άτομα που φροντίζετε",
+  "profilePhotoTitle": "Φωτογραφία προφίλ",
+  "profilePhotoChange": "Αλλαγή φωτογραφίας προφίλ",
+  "profilePhotoRemove": "Αφαίρεση φωτογραφίας",
+  "profilePhotoRemoveConfirmTitle": "Αφαίρεση της φωτογραφίας σας;",
+  "profilePhotoRemoveConfirmBody": "Θα εμφανίζονται τα αρχικά σας.",
+  "profilePhotoRemoveAction": "Αφαίρεση",
+  "profilePhotoUpdated": "Η φωτογραφία σας ενημερώθηκε.",
+  "profilePhotoRemoved": "Η φωτογραφία σας αφαιρέθηκε.",
+  "profilePhotoFailed": "Δεν ήταν δυνατή η ενημέρωση της φωτογραφίας σας. Δοκιμάστε ξανά.",
+  "profilePhotoAccessDenied": "Το Vaultara χρειάζεται πρόσβαση στην κάμερα ή στις φωτογραφίες σας. Μπορείτε να την επιτρέψετε στις ρυθμίσεις του τηλεφώνου σας.",
+  "inviteFriendsTitle": "Πρόσκληση φίλων",
+  "inviteFriendsTileSubtitle": "Χαρίστε σε έναν φίλο έναν δωρεάν μήνα Premium και πάρτε κι εσείς έναν",
+  "inviteHeadline": "Χαρίστε έναν μήνα, πάρτε έναν μήνα",
+  "inviteYourCode": "Ο κωδικός πρόσκλησής σας",
+  "inviteShareButton": "Κοινοποίηση πρόσκλησης",
+  "inviteCopyButton": "Αντιγραφή κωδικού",
+  "inviteCodeCopied": "Ο κωδικός αντιγράφηκε",
+  "inviteHowTitle": "Πώς λειτουργεί",
+  "inviteStep1": "Μοιραστείτε τον κωδικό ή τον σύνδεσμό σας με έναν φίλο.",
+  "inviteStep2": "Εκείνος τον εισάγει στο Vaultara εντός 14 ημερών από την εγγραφή του.",
+  "inviteStep3": "Μόλις επαληθεύσει το email του και προσθέσει μια εγγραφή, παίρνετε και οι δύο 1 δωρεάν μήνα Premium.",
+  "inviteMonthsEarned": "{count} από {max} δωρεάν μήνες κερδίθηκαν",
+  "invitePremiumUntil": "Δωρεάν Premium έως {date}",
+  "inviteMaxReached": "Κερδίσατε το μέγιστο των δωρεάν μηνών. Ευχαριστούμε που μοιράζεστε το Vaultara.",
+  "inviteHaveCodeTitle": "Έχετε κωδικό;",
+  "inviteHaveCodeBody": "Εισαγάγετε τον κωδικό ενός φίλου πριν από τις {date} για να πάρετε τον δωρεάν μήνα σας.",
+  "inviteCodeLabel": "Κωδικός φίλου",
+  "inviteRedeemGranted": "Ο κωδικός εφαρμόστηκε. Έχετε και οι δύο έναν δωρεάν μήνα Premium.",
+  "inviteRedeemPending": "Ο κωδικός έγινε δεκτός. Προσθέστε την πρώτη σας εγγραφή για να ξεκλειδώσετε τον δωρεάν μήνα σας.",
+  "inviteRedeemDone": "Εγγραφήκατε με τον κωδικό ενός φίλου και πήρατε τον δωρεάν μήνα σας.",
+  "inviteRedeemClosed": "Οι κωδικοί μπορούν να εισαχθούν μόνο τις πρώτες 14 ημέρες μετά την εγγραφή.",
+  "inviteErrorInvalid": "Αυτός ο κωδικός δεν υπάρχει. Ελέγξτε τον και δοκιμάστε ξανά.",
+  "inviteErrorOwn": "Δεν μπορείτε να χρησιμοποιήσετε τον δικό σας κωδικό.",
+  "inviteErrorUsed": "Έχετε ήδη χρησιμοποιήσει κωδικό φίλου.",
+  "inviteErrorVerify": "Επαληθεύστε πρώτα το email σας και μετά δοκιμάστε ξανά.",
+  "inviteErrorTooMany": "Πάρα πολλές προσπάθειες. Περιμένετε λίγο και δοκιμάστε ξανά.",
+  "inviteLoadError": "Δεν ήταν δυνατή η φόρτωση των στοιχείων της πρόσκλησής σας.",
+  "inviteRetry": "Δοκιμάστε ξανά",
+  "referralShareSubject": "Ένας δωρεάν μήνας Vaultara Premium",
+  "referralShareMessage": "Χρησιμοποιώ το Vaultara για να παρακολουθώ τα σημαντικά μου έγγραφα. Μπες με τον κωδικό μου {code} και παίρνουμε και οι δύο έναν δωρεάν μήνα Premium: {link}",
+  "referralPlanNote": "Έχετε δωρεάν Premium από προσκλήσεις έως {date}.",
+  "twoStepTitle": "Σύνδεση σε δύο βήματα",
+  "twoStepTileOn": "Ενεργό. Χρησιμοποιείτε κωδικό από την εφαρμογή ελέγχου ταυτότητας",
+  "twoStepTileOff": "Προσθέστε μια εφαρμογή ελέγχου ταυτότητας για επιπλέον ασφάλεια",
+  "twoStepIntro": "Όταν είναι ενεργό, εισαγάγετε τον κωδικό πρόσβασής σας και μετά έναν 6ψήφιο κωδικό από εφαρμογή ελέγχου ταυτότητας, όπως το Google Authenticator ή το Microsoft Authenticator.",
+  "twoStepStatusOn": "Η σύνδεση σε δύο βήματα είναι ενεργή",
+  "twoStepStatusOff": "Η σύνδεση σε δύο βήματα είναι ανενεργή",
+  "twoStepSetUpButton": "Ρύθμιση εφαρμογής ελέγχου ταυτότητας",
+  "twoStepAddAnother": "Προσθήκη άλλης εφαρμογής ελέγχου ταυτότητας",
+  "twoStepMethodsTitle": "Οι εφαρμογές ελέγχου ταυτότητάς σας",
+  "twoStepDefaultName": "Εφαρμογή ελέγχου ταυτότητας",
+  "twoStepAddedOn": "Προστέθηκε στις {date}",
+  "twoStepRemoveButton": "Αφαίρεση",
+  "twoStepRemoveTitle": "Αφαίρεση εφαρμογής ελέγχου ταυτότητας;",
+  "twoStepRemoveBody": "Μετά από αυτό θα συνδέεστε μόνο με τον κωδικό πρόσβασής σας. Μπορείτε να τη ρυθμίσετε ξανά οποιαδήποτε στιγμή.",
+  "twoStepRemoveBodyOther": "Δεν θα μπορείτε πλέον να χρησιμοποιείτε αυτή την εφαρμογή για κωδικούς σύνδεσης.",
+  "twoStepRemoved": "Η εφαρμογή ελέγχου ταυτότητας αφαιρέθηκε",
+  "twoStepVerifyEmailFirst": "Επαληθεύστε το email σας πριν ενεργοποιήσετε τη σύνδεση σε δύο βήματα.",
+  "twoStepUnavailable": "Η σύνδεση σε δύο βήματα δεν είναι διαθέσιμη αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.",
+  "twoStepConfirmTitle": "Επιβεβαιώστε ότι είστε εσείς",
+  "twoStepConfirmBody": "Εισαγάγετε τον κωδικό πρόσβασής σας για να αλλάξετε τη σύνδεση σε δύο βήματα.",
+  "twoStepScanTitle": "Σαρώστε αυτόν τον κωδικό",
+  "twoStepScanBody": "Ανοίξτε την εφαρμογή ελέγχου ταυτότητας, πατήστε προσθήκη και σαρώστε αυτόν τον κωδικό με την κάμερά σας.",
+  "twoStepOpenApp": "Άνοιγμα εφαρμογής ελέγχου ταυτότητας",
+  "twoStepNoAuthApp": "Δεν βρέθηκε εφαρμογή ελέγχου ταυτότητας. Εγκαταστήστε μία και μετά σαρώστε τον κωδικό ή εισαγάγετε το κλειδί.",
+  "twoStepKeyLabel": "Δεν μπορείτε να σαρώσετε; Εισαγάγετε αυτό το κλειδί",
+  "twoStepCopyKey": "Αντιγραφή κλειδιού",
+  "twoStepKeyCopied": "Το κλειδί αντιγράφηκε",
+  "twoStepCodeLabel": "6ψήφιος κωδικός",
+  "twoStepEnterCodeBody": "Εισαγάγετε τον 6ψήφιο κωδικό που δείχνει η εφαρμογή σας για να ολοκληρώσετε.",
+  "twoStepTurnOn": "Ενεργοποίηση",
+  "twoStepEnabledBody": "Την επόμενη φορά που θα συνδεθείτε, το Vaultara θα ζητήσει κωδικό από την εφαρμογή ελέγχου ταυτότητάς σας.",
+  "twoStepDone": "Τέλος",
+  "twoStepStartAgain": "Ξεκινήστε ξανά",
+  "twoStepWrongCode": "Αυτός ο κωδικός δεν είναι σωστός. Δοκιμάστε τον πιο πρόσφατο κωδικό στην εφαρμογή σας.",
+  "twoStepCodeFormat": "Εισαγάγετε και τα 6 ψηφία.",
+  "twoStepTooMany": "Πάρα πολλές προσπάθειες. Περιμένετε λίγα λεπτά και δοκιμάστε ξανά.",
+  "twoStepExpired": "Αυτό πήρε πολύ χρόνο. Ξεκινήστε ξανά.",
+  "twoStepChallengeTitle": "Εισαγάγετε τον κωδικό σύνδεσης",
+  "twoStepChallengeBody": "Ανοίξτε την εφαρμογή ελέγχου ταυτότητας και εισαγάγετε τον 6ψήφιο κωδικό για το Vaultara.",
+  "twoStepVerifyButton": "Επαλήθευση",
+  "twoStepLostTitle": "Χάσατε την εφαρμογή ελέγχου ταυτότητας;",
+  "twoStepLostBody": "Αν δεν μπορείτε να χρησιμοποιήσετε την εφαρμογή ελέγχου ταυτότητας, επικοινωνήστε με την ομάδα υποστήριξής μας από τη διεύθυνση email του λογαριασμού σας. Θα ελέγξουμε ότι είστε εσείς και θα σας βοηθήσουμε να μπείτε ξανά.",
+  "twoStepContactSupport": "Επικοινωνία με την υποστήριξη",
+  "twoStepSupportSubject": "Βοήθεια με τη σύνδεση σε δύο βήματα",
+  "householdIncludedFamily": "Περιλαμβάνεται στο Οικογενειακό πρόγραμμα του ατόμου {owner}",
+  "householdIncludedBusiness": "Περιλαμβάνεται στο Επαγγελματικό πρόγραμμα του ατόμου {owner}",
+  "householdIncludedFamilyNoName": "Περιλαμβάνεται στο Οικογενειακό πρόγραμμα του νοικοκυριού σας",
+  "householdIncludedBusinessNoName": "Περιλαμβάνεται στο Επαγγελματικό πρόγραμμα του νοικοκυριού σας",
+  "assistantTitle": "Ρωτήστε το Vaultara",
+  "assistantTileSubtitle": "Ρωτήστε για τις εγγραφές σας με απλά λόγια",
+  "assistantIntro": "Ρωτήστε με για τις εγγραφές και τις ανανεώσεις σας. Μπορώ επίσης να ετοιμάσω νέες εγγραφές για να τις ελέγξετε.",
+  "assistantHint": "Ρωτήστε για τις εγγραφές σας",
+  "assistantSuggestionMonth": "Τι λήγει αυτόν τον μήνα;",
+  "assistantSuggestionPassport": "Πότε λήγει το διαβατήριό μου;",
+  "assistantSuggestionAdd": "Πρόσθεσε τον δίσκο άδειας του αυτοκινήτου μου που λήγει στο τέλος Μαρτίου",
+  "assistantSend": "Αποστολή",
+  "assistantSpeak": "Μιλήστε",
+  "assistantStopListening": "Διακοπή ακρόασης",
+  "assistantListening": "Ακρόαση",
+  "assistantMicUnavailable": "Η φωνητική εισαγωγή δεν είναι διαθέσιμη. Ελέγξτε ότι το Vaultara έχει άδεια χρήσης του μικροφώνου.",
+  "assistantThinking": "Έλεγχος των εγγραφών σας",
+  "assistantErrorOffline": "Είστε εκτός σύνδεσης. Συνδεθείτε στο διαδίκτυο και δοκιμάστε ξανά.",
+  "assistantErrorLimit": "Έχετε κάνει πολλές ερωτήσεις προς το παρόν. Δοκιμάστε ξανά αργότερα.",
+  "assistantErrorBusy": "Το Vaultara είναι απασχολημένο αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγο.",
+  "assistantErrorFailed": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+  "assistantRetry": "Δοκιμάστε ξανά",
+  "assistantPremiumTitle": "Το Ρωτήστε το Vaultara περιλαμβάνεται στο Premium",
+  "assistantPremiumBody": "Αναβαθμίστε για να κάνετε ερωτήσεις για τις εγγραφές σας και να προσθέτετε εγγραφές με απλά λόγια.",
+  "assistantSeePlans": "Δείτε τα προγράμματα",
+  "assistantEmptyReply": "Δεν βρήκα απάντηση. Δοκιμάστε να ρωτήσετε με άλλον τρόπο.",
+  "assistantDraftReady": "Το ετοίμασα για εσάς. Ελέγξτε το και πατήστε Επιβεβαίωση.",
+  "assistantNewChat": "Νέα συνομιλία",
+  "assistantPrivacyNote": "Οι απαντήσεις χρησιμοποιούν τεχνητή νοημοσύνη. Η ερώτησή σας και μόνο οι λεπτομέρειες εγγραφών που χρειάζονται για την απάντηση στέλνονται στον πάροχο τεχνητής νοημοσύνης μας. Οι σημειώσεις των κλειδωμένων εγγραφών δεν στέλνονται ποτέ. Τίποτα δεν αποθηκεύεται μέχρι να επιβεβαιώσετε.",
+  "assistantActionAddTitle": "Νέα εγγραφή",
+  "assistantActionUpdateTitle": "Νέα ημερομηνία λήξης",
+  "assistantActionDismiss": "Απόρριψη",
+  "assistantActionNoDate": "Χωρίς ημερομηνία λήξης ακόμη",
+  "assistantActionExpires": "Λήγει στις {date}",
+  "assistantActionChange": "Από {from} σε {to}",
+  "assistantActionFor": "Για: {person}",
+  "assistantActionOpened": "Ανοίχθηκε για να το ελέγξετε",
+  "assistantActionOpenAgain": "Άνοιγμα ξανά",
+  "assistantLockedRecord": "Κλειδωμένη εγγραφή",
+  "assistantRecordMissing": "Αυτή η εγγραφή δεν υπάρχει πλέον στο Vaultara.",
+  "describeItAction": "Περιγράψτε την",
+  "describeItTitle": "Περιγράψτε την εγγραφή σας",
+  "describeItBody": "Πείτε τι είναι, σε ποιον ανήκει και πότε λήγει. Συμπληρώνουμε τη φόρμα για να την ελέγξετε.",
+  "describeItHint": "Για παράδειγμα: ο δίσκος άδειας του αυτοκινήτου μου λήγει στο τέλος Μαρτίου",
+  "describeItFill": "Συμπλήρωση φόρμας",
+  "describeItFilled": "Συμπληρώσαμε τη φόρμα. Ελέγξτε τα στοιχεία πριν την αποθήκευση.",
+  "describeItNoResult": "Δεν καταλάβαμε. Δοκιμάστε να πείτε τι είναι και πότε λήγει.",
+  "groupSuggestionChip": "Μοιάζει με: {group}",
+  "groupSuggestionApply": "Χρήση αυτής της ομάδας",
+  "sharePdfAttached": "Επισυνάψαμε το PDF. Συμπληρώστε τα στοιχεία από αυτό.",
+  "familyEditTitle": "Επεξεργασία ατόμου",
+  "staffEmailLabel": "Email (προαιρετικό)",
+  "staffEmailHint": "Για παράδειγμα, thabo@example.com",
+  "staffEmailRemindersTitle": "Αποστολή υπενθυμίσεων με email σε αυτό το άτομο",
+  "staffEmailRemindersSubtitle": "30, 14, 7 και 1 ημέρα πριν, και την ίδια την ημέρα",
+  "staffEmailConsent": "Προσθέστε μόνο άτομα που συμφώνησαν να λαμβάνουν email από την επιχείρησή σας.",
+  "staffEmailOnBadge": "Υπενθυμίσεις με email ενεργές",
+  "complianceReportTitle": "Μηνιαία αναφορά συμμόρφωσης με email",
+  "complianceReportSubtitle": "Την 1η κάθε μήνα: ποιοι είναι εντάξει, τι λήγει σύντομα και ένα αρχείο υπολογιστικού φύλλου",
+  "complianceReportSaveError": "Δεν ήταν δυνατή η αποθήκευση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "updatesReviewTitle": "Ενημερώσεις προς έλεγχο",
+  "updatesReviewIntro": "Η ομάδα σας τις έστειλε από τον σύνδεσμο του email. Ελέγξτε το αρχείο πριν εγκρίνετε.",
+  "updatesReviewNewDate": "Νέα ημερομηνία λήξης: {date}",
+  "updatesReviewSentBy": "Στάλθηκε από {person} στις {date}",
+  "updatesApprove": "Έγκριση",
+  "updatesReject": "Απόρριψη",
+  "updatesApproved": "Το {name} ανανεώθηκε έως {date}",
+  "updatesApprovedNoFile": "Η εγγραφή ανανεώθηκε. Το αρχείο δεν προστέθηκε επειδή αυτή η εγγραφή έχει ήδη 10 αρχεία.",
+  "updatesRejected": "Η ενημέρωση απορρίφθηκε",
+  "updatesRejectTitle": "Απόρριψη αυτής της ενημέρωσης;",
+  "updatesRejectBody": "Το αρχείο διαγράφεται και η εγγραφή μένει όπως είναι. Μπορείτε να στείλετε νέο αίτημα αργότερα.",
+  "updatesActionError": "Δεν ήταν δυνατή η ολοκλήρωση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "updatesRecordMissing": "Αυτή η εγγραφή δεν υπάρχει πλέον στο Vaultara. Απορρίψτε την ενημέρωση για να την αφαιρέσετε.",
+  "updatesFileError": "Δεν ήταν δυνατή η φόρτωση του αρχείου",
+  "requestUpdateMenu": "Αίτημα ενημέρωσης",
+  "requestUpdateTitle": "Να ζητήσετε ενημέρωση από {person};",
+  "requestUpdateBody": "Στέλνουμε στη διεύθυνση {email} έναν ασφαλή σύνδεσμο. Μπορεί να στείλει τη νέα ημερομηνία λήξης και μια φωτογραφία ή PDF του ανανεωμένου εγγράφου. Ο σύνδεσμος ισχύει για 7 ημέρες και μπορεί να χρησιμοποιηθεί μία φορά.",
+  "requestUpdateSend": "Αποστολή αιτήματος",
+  "requestUpdateSending": "Αποστολή του αιτήματος",
+  "requestUpdateSent": "Το αίτημα στάλθηκε στο άτομο {person}",
+  "requestUpdateError": "Δεν ήταν δυνατή η αποστολή του αιτήματος. Δοκιμάστε ξανά.",
+  "requestUpdateLimit": "Στείλατε πολλά αιτήματα σήμερα. Δοκιμάστε ξανά αύριο.",
+  "requestUpdateNoEmail": "Προσθέστε πρώτα μια διεύθυνση email για αυτό το άτομο στην οθόνη Οικογένεια.",
+  "dailyDigestSwitchTitle": "Μία ημερήσια σύνοψη αντί για ξεχωριστές υπενθυμίσεις",
+  "dailyDigestSwitchSubtitle": "Λάβετε μία ειδοποίηση την ώρα της υπενθύμισής σας με ό,τι λήγει εκείνη την ημέρα.",
+  "dailyDigestTurnedOn": "Οι υπενθυμίσεις σας έρχονται πλέον ως μία ημερήσια σύνοψη.",
+  "dailyDigestTurnedOff": "Οι ξεχωριστές υπενθυμίσεις για κάθε εγγραφή είναι ξανά ενεργές.",
+  "dailyDigestTitle": "{count, plural, one{1 εγγραφή χρειάζεται την προσοχή σας} other{{count} εγγραφές χρειάζονται την προσοχή σας}}",
+  "dailyDigestBody": "Έρχονται: {names}.",
+  "dailyDigestBodyMore": "Έρχονται: {names} και άλλες {count}.",
+  "dailyDigestLockedRecord": "μια κλειδωμένη εγγραφή",
+  "renewReasonRepeat": "{months, plural, one{Με βάση τη ρύθμιση επανάληψης κάθε μήνα} other{Με βάση τη ρύθμιση επανάληψης κάθε {months} μήνες}}",
+  "renewReasonHistory": "{count, plural, one{Με βάση την τελευταία σας ανανέωση} other{Με βάση τις τελευταίες {count} ανανεώσεις σας}}",
+  "renewReasonTypical": "{years, plural, one{Συνήθως ισχύει για 1 έτος} other{Συνήθως ισχύει για {years} έτη}}",
+  "renewChangeHint": "Πατήστε την ημερομηνία για να την αλλάξετε.",
+  "renewPickDate": "Επιλέξτε τη νέα ημερομηνία λήξης",
+  "renewPickDateHint": "Επιλέξτε την ημερομηνία που αναγράφεται στο νέο σας έγγραφο.",
+  "renewCostJump": "Αυτό είναι {percent}% περισσότερο από την προηγούμενη φορά ({previous}).",
+  "smartInsightCostIncreaseHeading": "Το κόστος ανανέωσης αυξήθηκε",
+  "smartInsightCostIncreaseBody": "Το κόστος ανανέωσης του {name} αυξήθηκε κατά {percent}% σε σχέση με την προηγούμενη φορά.",
+  "reminderStartRenewingTitle": "Ώρα να ξεκινήσετε την ανανέωση: {recordName}",
+  "reminderStartRenewingBody": "{firstName}, ήρθε η ώρα να ξεκινήσετε την ανανέωση: {recordName}. Λήγει στις {date}, οπότε αν ξεκινήσετε τώρα έχετε άφθονο χρόνο.",
+  "renewChecklistProgress": "{done} από {total} βήματα ολοκληρώθηκαν",
+  "renewChecklistStart": "Ανοίξτε τη λίστα ελέγχου ανανέωσης",
+  "scanUpdateTitle": "Να ενημερωθεί η υπάρχουσα εγγραφή {name} με τη νέα ημερομηνία;",
+  "scanUpdateBody": "Η ημερομηνία λήξης θα αλλάξει από {from} σε {to}. Το ιστορικό ανανεώσεών σας διατηρείται.",
+  "scanAddAsNew": "Προσθήκη ως νέα",
+  "scanUpdateExisting": "Ενημέρωση",
+  "duplicateRecordTitle": "Έχει ήδη προστεθεί",
+  "duplicateRecordBody": "Έχετε ήδη την εγγραφή {name} που λήγει στις {date}.",
+  "duplicateKeepBoth": "Διατήρηση και των δύο",
+  "duplicateUpdateExisting": "Ενημέρωση υπάρχουσας",
+  "editorDefaultsHint": "Συμπληρώθηκαν οι τυπικές ρυθμίσεις για {group}. Μπορείτε να τις αλλάξετε στις Περισσότερες λεπτομέρειες.",
+  "csvImportNoteAlreadyTracked": "Έχετε ήδη εγγραφή με αυτό το όνομα, που λήγει στις {date}",
+  "visaSectionTitle": "Βίζα",
+  "visaFree": "Χωρίς βίζα",
+  "visaFreeDays": "{days, plural, one{Χωρίς βίζα για {days} ημέρα} other{Χωρίς βίζα για {days} ημέρες}}",
+  "visaOnArrival": "Βίζα κατά την άφιξη",
+  "visaEta": "Απαιτείται ETA",
+  "visaEvisa": "Απαιτείται e-Visa",
+  "visaRequired": "Απαιτείται βίζα",
+  "visaNoEntry": "Δεν επιτρέπεται η είσοδος",
+  "visaHomeCountry": "Χώρα προέλευσης",
+  "visaStayUpTo": "{days, plural, one{Παραμονή έως {days} ημέρα} other{Παραμονή έως {days} ημέρες}}",
+  "visaTripTooLong": "Το ταξίδι σας διαρκεί {tripDays} ημέρες. Είναι περισσότερες από τις {days} ημέρες που επιτρέπονται.",
+  "visaStayTooLong": "Το ταξίδι υπερβαίνει την επιτρεπόμενη παραμονή",
+  "visaApplyBy": "Κάντε αίτηση έως {date}",
+  "visaApplyNow": "Κάντε αίτηση το συντομότερο",
+  "visaAddToChecklist": "Προσθήκη στη λίστα ελέγχου",
+  "visaOnChecklist": "Στη λίστα ελέγχου σας",
+  "visaAdded": "Προστέθηκε στη λίστα ελέγχου σας",
+  "visaChecklistVisa": "Αίτηση για βίζα: {country}",
+  "visaChecklistEvisa": "Αίτηση για e-Visa: {country}",
+  "visaChecklistEta": "Αίτηση για ETA: {country}",
+  "visaCheckRules": "Έλεγχος κανόνων",
+  "visaSearchQuery": "{destination} απαιτήσεις βίζας για πολίτες της χώρας {nationality}",
+  "visaCredit": "Στοιχεία βίζας: Passport Index. Οι κανόνες αλλάζουν, επιβεβαιώστε με την πρεσβεία πριν ταξιδέψετε.",
+  "visaNotAvailable": "Οι πληροφορίες βίζας δεν είναι ακόμη διαθέσιμες",
+  "visaChecking": "Έλεγχος κανόνων βίζας",
+  "visaNoDestinations": "Προσθέστε έναν προορισμό για να δείτε τους κανόνες βίζας.",
+  "visaPassportCountry": "Διαβατήριο που εκδόθηκε από",
+  "visaPassportCountryHint": "Επιλέξτε τη χώρα που εξέδωσε το διαβατήριο. Χρησιμοποιείται για τον έλεγχο των κανόνων βίζας.",
+  "visaPassportOf": "Διαβατήριο: {country}",
+  "visaAddPassportCountry": "Προσθήκη διαβατηρίου",
+  "visaAddYourPassportCountry": "Προσθέστε το διαβατήριό σας",
+  "visaNeedsYourCountry": "Προσθέστε το διαβατήριό σας για έλεγχο βίζας.",
+  "visaNeedsCountry": "Προσθέστε το διαβατήριο του/της {name} για έλεγχο βίζας.",
+  "visaAutoNote": "Ορίστηκε από τους κανόνες βίζας για τα διαβατήριά σας. Πατήστε για αλλαγή.",
+  "visaReminderTitle": "Ώρα να κάνετε αίτηση για τις βίζες σας",
+  "visaReminderBody": "Σήμερα είναι η προτεινόμενη ημέρα για αίτηση βίζας για το ταξίδι σας {trip}. Ελέγξτε τους ακριβείς κανόνες στην πρεσβεία.",
+  "visaApplyOfficial": "Αίτηση στον επίσημο ιστότοπο",
+  "visaLeavingTitle": "Έξοδος από το Vaultara",
+  "visaLeavingBody": "Μεταβαίνετε στον επίσημο κυβερνητικό ιστότοπο της χώρας {country}:",
+  "visaLeavingNote": "Το Vaultara δεν αποτελεί μέρος αυτού του ιστότοπου και δεν χρεώνει τίποτα. Το κρατικό τέλος πληρώνεται σε εκείνον τον ιστότοπο.",
+  "visaOfficialSearchHint": "Αναζητήστε τον επίσημο κυβερνητικό ιστότοπο της χώρας {country}. Αποφύγετε ιστότοπους μεσαζόντων που χρεώνουν επιπλέον τέλη.",
+  "visaOfficialSearch": "Εύρεση επίσημου ιστότοπου",
+  "visaOfficialSearchQuery": "{country} e-Visa επίσημος κυβερνητικός ιστότοπος",
+  "visaLivesIn": "Χώρα διαμονής: {country}",
+  "visaResidenceTitle": "Χώρα όπου ζείτε",
+  "visaResidenceHint": "Χρησιμοποιείται για να βρεθεί η πρεσβεία όπου μπορείτε να κάνετε αίτηση για βίζα.",
+  "visaEmbassyApply": "Κάντε αίτηση στην πρεσβεία ή το προξενείο της χώρας {country} στη χώρα {residence}.",
+  "visaEmbassyApplyNoResidence": "Κάντε αίτηση στην πρεσβεία ή το προξενείο της χώρας {country} στη χώρα όπου ζείτε.",
+  "visaEmbassyCentreNote": "Ο ιστότοπος της πρεσβείας αναφέρει ποιο κέντρο βίζας χρησιμοποιεί, για παράδειγμα VFS Global ή TLScontact. Κάντε αίτηση μόνο μέσω του κέντρου που αναφέρεται εκεί.",
+  "visaFindEmbassy": "Εύρεση πρεσβείας",
+  "visaContactImmigration": "Ζείτε στη χώρα {country}. Επικοινωνήστε με την υπηρεσία μετανάστευσης της χώρας {country} για να ρωτήσετε για τη βίζα σας.",
+  "visaRecordName": "Βίζα: {country}",
+  "visaAddMyVisa": "Προσθήκη της βίζας μου",
+  "visaChooseSaved": "Επιλογή αποθηκευμένης βίζας",
+  "visaLinked": "Η βίζα συνδέθηκε με αυτό το ταξίδι",
+  "visaRecordValid": "Η βίζα αποθηκεύτηκε. Ισχύει έως {date}.",
+  "visaRecordExpires": "Η βίζα σας λήγει στις {date}, πριν επιστρέψετε.",
+  "visaRemoveLink": "Κατάργηση σύνδεσης",
+  "visaSummaryNeed": "{count, plural, one{{count} από {total} ταξιδιώτες χρειάζεται ακόμη βίζα} other{{count} από {total} ταξιδιώτες χρειάζονται ακόμη βίζα}}",
+  "visaSummaryEarliest": "Πρώτη προθεσμία: κάντε αίτηση έως {date}",
+  "visaSummaryAllSet": "Όλοι έχουν βίζα για αυτό το ταξίδι.",
+  "stayTitle": "Η παραμονή σας",
+  "stayDayOf": "{country}: ημέρα {used} από {allowed}",
+  "stayLeaveBy": "Αναχώρηση έως {date}",
+  "stayOver": "Η επιτρεπόμενη παραμονή σας έληξε στις {date}.",
+  "stayStrictest": "Με βάση τη συντομότερη επιτρεπόμενη παραμονή, αυτήν του ατόμου {name}.",
+  "stayStrictestYou": "Με βάση τη δική σας επιτρεπόμενη παραμονή, τη συντομότερη στην ομάδα.",
+  "staySchengenArea": "Ζώνη Σένγκεν",
+  "staySchengenNote": "{days, plural, one{Μία ενιαία παραμονή σε όλη τη ζώνη Σένγκεν: {days} ημέρα σε οποιοδήποτε διάστημα {window} ημερών.} other{Μία ενιαία παραμονή σε όλη τη ζώνη Σένγκεν: {days} ημέρες σε οποιοδήποτε διάστημα {window} ημερών.}}",
+  "stayArrivedOther": "Έφτασα σε άλλη ημέρα",
+  "stayArrivalPick": "Πότε φτάσατε;",
+  "stayReminderTitle": "{days, plural, one{{country}: απομένει {days} ημέρα παραμονής} other{{country}: απομένουν {days} ημέρες παραμονής}}",
+  "stayReminderBody": "Αναχωρήστε έως {date} για να μείνετε εντός του επιτρεπόμενου χρόνου.",
+  "travelPassportTooSoonNamed": "Το διαβατήριο του ατόμου {name} λήγει πολύ νωρίς για αυτό το ταξίδι. Ελέγξτε το πριν κάνετε κράτηση.",
+  "travelPassportTooSoonYours": "Το διαβατήριό σας λήγει πολύ νωρίς για αυτό το ταξίδι. Ελέγξτε το πριν κάνετε κράτηση.",
+  "travelPassportTooSoonSeveral": "Ορισμένα διαβατήρια λήγουν πολύ νωρίς για αυτό το ταξίδι. Ελέγξτε τα πριν κάνετε κράτηση.",
+  "secTitle": "Ασφάλεια και απόρρητο",
+  "secProfileSubtitle": "Κλείδωμα εφαρμογής, συσκευές, απόρρητο και τα δεδομένα σας",
+  "secSectionSignIn": "Σύνδεση",
+  "secSectionAppProtection": "Προστασία εφαρμογής",
+  "secSectionPrivacy": "Απόρρητο",
+  "secCheckupTitle": "Έλεγχος ασφάλειας",
+  "secCheckupScore": "{done} από {total} ολοκληρώθηκαν",
+  "secCheckupAllDone": "Ο λογαριασμός σας είναι καλά προστατευμένος.",
+  "secCheckEmail": "Η διεύθυνση email επαληθεύτηκε",
+  "secCheckTwoStep": "Η σύνδεση σε δύο βήματα είναι ενεργή",
+  "secCheckAppLock": "Το κλείδωμα εφαρμογής είναι ενεργό",
+  "secCheckPhotos": "Οι κρυπτογραφημένες φωτογραφίες είναι ενεργές",
+  "secCheckRecoveryKey": "Το κλειδί ανάκτησης αποθηκεύτηκε",
+  "secCheckPassword": "Ορίστηκε ισχυρός κωδικός",
+  "secCheckActionVerify": "Επαλήθευση",
+  "secCheckActionTurnOn": "Ενεργοποίηση",
+  "secCheckActionSetUp": "Ρύθμιση",
+  "secCheckActionChange": "Αλλαγή",
+  "secChangePasswordSubtitle": "Επιλέξτε νέο κωδικό για τον λογαριασμό σας",
+  "secCurrentPassword": "Τρέχων κωδικός",
+  "secNewPassword": "Νέος κωδικός",
+  "secConfirmPassword": "Επιβεβαίωση νέου κωδικού",
+  "secPasswordsDoNotMatch": "Οι κωδικοί δεν ταιριάζουν.",
+  "secPasswordSameAsCurrent": "Επιλέξτε κωδικό διαφορετικό από τον τρέχοντα.",
+  "secPasswordLeaked": "Αυτός ο κωδικός έχει εμφανιστεί σε γνωστή διαρροή δεδομένων. Επιλέξτε άλλον.",
+  "secPasswordChanged": "Ο κωδικός σας άλλαξε.",
+  "secStrengthHint": "Χρησιμοποιήστε 12 ή περισσότερους χαρακτήρες με γράμματα, αριθμούς και σύμβολα.",
+  "secStrengthLabel": "Ισχύς κωδικού: {level}",
+  "secStrengthWeak": "Αδύναμος",
+  "secStrengthFair": "Μέτριος",
+  "secStrengthGood": "Καλός",
+  "secStrengthStrong": "Ισχυρός",
+  "secDevicesTitle": "Οι συσκευές σας",
+  "secDevicesSubtitle": "Δείτε πού είστε συνδεδεμένοι",
+  "secDevicesIntro": "Αυτές οι συσκευές είναι συνδεδεμένες στον λογαριασμό σας. Αν δεν αναγνωρίζετε κάποια, αποσυνδέστε την και αλλάξτε τον κωδικό σας.",
+  "secDevicesEmpty": "Δεν υπάρχουν ακόμα συσκευές για εμφάνιση.",
+  "secThisDevice": "Αυτή η συσκευή",
+  "secActiveNow": "Ενεργή τώρα",
+  "secDeviceLastActive": "Τελευταία δραστηριότητα: {time}",
+  "secDeviceAppVersion": "Vaultara {version}",
+  "secUnknownDevice": "Άγνωστη συσκευή",
+  "secSignOutDeviceTitle": "Αποσύνδεση από {device};",
+  "secSignOutDeviceBody": "Το Vaultara σε εκείνη τη συσκευή θα αποσυνδεθεί την επόμενη φορά που θα συνδεθεί στο διαδίκτυο.",
+  "secDeviceSignedOut": "Η συσκευή {device} θα αποσυνδεθεί.",
+  "secSignOutOthers": "Αποσύνδεση από όλες τις άλλες συσκευές",
+  "secSignOutOthersTitle": "Αποσύνδεση από όλες τις άλλες συσκευές;",
+  "secSignOutOthersBody": "Κάθε άλλο τηλέφωνο ή tablet που είναι συνδεδεμένο στον λογαριασμό σας θα αποσυνδεθεί. Σε αυτή τη συσκευή παραμένετε συνδεδεμένοι.",
+  "secSignOutOthersConfirmBody": "Εισαγάγετε τον κωδικό σας για να αποσυνδεθείτε από τις άλλες συσκευές σας.",
+  "secSignedOutOthers": "Αποσυνδεθήκατε από όλες τις άλλες συσκευές.",
+  "secSignedOutEverywhere": "Αποσυνδεθήκατε από όλες τις συσκευές. Συνδεθείτε ξανά για να συνεχίσετε.",
+  "secSignedOutRemotely": "Αποσυνδεθήκατε από αυτή τη συσκευή μέσω άλλης συσκευής.",
+  "secHistoryTitle": "Ιστορικό ασφάλειας",
+  "secHistorySubtitle": "Πρόσφατες συνδέσεις και αλλαγές στον λογαριασμό σας",
+  "secHistoryIntro": "Συνδέσεις και αλλαγές στον λογαριασμό σας τις τελευταίες 90 ημέρες.",
+  "secHistoryEmpty": "Δεν υπάρχει τίποτα για εμφάνιση ακόμα.",
+  "secJustNow": "Μόλις τώρα",
+  "secMinutesAgo": "{count, plural, one{Πριν από 1 λεπτό} other{Πριν από {count} λεπτά}}",
+  "secHoursAgo": "{count, plural, one{Πριν από 1 ώρα} other{Πριν από {count} ώρες}}",
+  "secDaysAgo": "{count, plural, one{Πριν από 1 ημέρα} other{Πριν από {count} ημέρες}}",
+  "secEventNewSignIn": "Σύνδεση από νέα συσκευή",
+  "secEventSignIn": "Σύνδεση",
+  "secEventPasswordChanged": "Ο κωδικός άλλαξε",
+  "secEventEmailChanged": "Η διεύθυνση email άλλαξε",
+  "secEventEmailChangeRequested": "Ζητήθηκε αλλαγή διεύθυνσης email",
+  "secEventTwoStepEnabled": "Η σύνδεση σε δύο βήματα ενεργοποιήθηκε",
+  "secEventTwoStepDisabled": "Η σύνδεση σε δύο βήματα απενεργοποιήθηκε",
+  "secEventSessionsRevoked": "Αποσύνδεση από όλες τις άλλες συσκευές",
+  "secEventDeviceSignedOut": "Μια συσκευή αποσυνδέθηκε",
+  "secEventDataExported": "Έγινε λήψη των δεδομένων σας",
+  "secEventShareLinkCreated": "Δημιουργήθηκε σύνδεσμος κοινοποίησης",
+  "secEventRecoveryKeyCreated": "Δημιουργήθηκε κλειδί ανάκτησης",
+  "secEventAppLockEnabled": "Το κλείδωμα εφαρμογής ενεργοποιήθηκε",
+  "secEventAppLockDisabled": "Το κλείδωμα εφαρμογής απενεργοποιήθηκε",
+  "secEventPlanStarted": "Το πρόγραμμα ξεκίνησε",
+  "secEventPlanRenewed": "Το πρόγραμμα ανανεώθηκε",
+  "secEventPlanCancelled": "Το πρόγραμμα ακυρώθηκε",
+  "secEventPlanEnded": "Το πρόγραμμα έληξε",
+  "secEventAccountDeletionRequested": "Ζητήθηκε διαγραφή λογαριασμού",
+  "secEventOther": "Δραστηριότητα λογαριασμού",
+  "secAutoLockTitle": "Νέο κλείδωμα",
+  "secAutoLockBody": "Επιλέξτε πόση ώρα μπορεί να μείνει το Vaultara στο παρασκήνιο πριν σας ζητήσει να το ξεκλειδώσετε ξανά.",
+  "secAutoLockImmediately": "Αμέσως",
+  "secAutoLockOneMinute": "Μετά από 1 λεπτό",
+  "secAutoLockFiveMinutes": "Μετά από 5 λεπτά",
+  "secAutoLockFifteenMinutes": "Μετά από 15 λεπτά",
+  "secAutoLockNeedsAppLock": "Ενεργοποιήστε το κλείδωμα εφαρμογής για να το χρησιμοποιήσετε",
+  "secHideInRecentsTitle": "Οθόνη απορρήτου",
+  "secHideInRecentsSubtitle": "Απόκρυψη των εγγραφών σας στην προβολή πρόσφατων εφαρμογών",
+  "secBlockScreenshotsTitle": "Αποκλεισμός στιγμιότυπων οθόνης",
+  "secBlockScreenshotsSubtitle": "Σε οθόνες που δείχνουν λεπτομέρειες εγγράφων, φωτογραφίες και κλειδιά",
+  "secCopiedWillClear": "Αντιγράφηκε. Θα διαγραφεί από το πρόχειρο σε 60 δευτερόλεπτα.",
+  "secAnalyticsTitle": "Κοινοποίηση δεδομένων χρήσης",
+  "secAnalyticsSubtitle": "Ανώνυμα δεδομένα που μας βοηθούν να βελτιώσουμε το Vaultara",
+  "secAnalyticsSheetTitle": "Βοηθήστε να βελτιωθεί το Vaultara",
+  "secAnalyticsSheetBody": "Επιτρέψτε στο Vaultara να συλλέγει ανώνυμα δεδομένα χρήσης, ώστε να βλέπουμε ποιες λειτουργίες βοηθούν και να διορθώνουμε προβλήματα. Δεν συλλέγουμε ποτέ τις εγγραφές, τις φωτογραφίες ή τα έγγραφά σας. Μπορείτε να το αλλάξετε οποιαδήποτε στιγμή στην ενότητα Ασφάλεια και απόρρητο.",
+  "secAllow": "Να επιτρέπεται",
+  "secPrivacyPolicy": "Πολιτική απορρήτου",
+  "secTermsOfService": "Όροι παροχής υπηρεσιών",
+  "secOpensInBrowser": "Ανοίγει στο πρόγραμμα περιήγησης",
+  "secConsentAgree": "Αποδέχομαι τους {terms} και την {privacy}",
+  "secTermsUpdatedTitle": "Ενημερώσαμε τους Όρους και την Πολιτική απορρήτου",
+  "secTermsUpdatedBody": "Διαβάστε τους ενημερωμένους Όρους παροχής υπηρεσιών και την Πολιτική απορρήτου. Πατήστε Αποδοχή για να συνεχίσετε να χρησιμοποιείτε το Vaultara.",
+  "secAccept": "Αποδοχή",
+  "secBillingTitle": "Ιστορικό χρεώσεων",
+  "secBillingNote": "Το Google Play ή η Apple σάς στέλνει την επίσημη απόδειξη με το ποσό χρέωσης.",
+  "secBillingEmpty": "Δεν υπάρχει ακόμα δραστηριότητα χρέωσης.",
+  "secBillingStarted": "Το πρόγραμμα ξεκίνησε",
+  "secBillingRenewed": "Το πρόγραμμα ανανεώθηκε",
+  "secBillingCancelled": "Η αυτόματη ανανέωση απενεργοποιήθηκε",
+  "secBillingResumed": "Η αυτόματη ανανέωση ενεργοποιήθηκε ξανά",
+  "secBillingEnded": "Το πρόγραμμα έληξε",
+  "secBillingRefunded": "Επιστράφηκαν χρήματα",
+  "secBillingOther": "Ενημέρωση χρέωσης",
+  "secBillingRenewsOn": "Ανανεώνεται στις {date}",
+  "secBillingAccessUntil": "Πρόσβαση έως {date}",
+  "secStoreGoogle": "Google Play",
+  "secStoreApple": "App Store",
+  "assistantActionFailed": "Δεν ήταν δυνατή η αποθήκευση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "assistantActionNotPossible": "Αυτή η αλλαγή δεν είναι πλέον δυνατή. Ρωτήστε ξανά το Vaultara ή κάντε την αλλαγή μόνοι σας.",
+  "assistantActionOpensForm": "Η Επιβεβαίωση ανοίγει τη φόρμα προσθήκης εγγραφής για να την ολοκληρώσετε.",
+  "assistantCardCancelled": "Ακυρώθηκε",
+  "assistantCardDone": "Ολοκληρώθηκε",
+  "assistantCardEditTitle": "Αλλαγή εγγραφής",
+  "assistantCardNotConfirmed": "Δεν επιβεβαιώθηκε",
+  "assistantDays": "{count, plural, one{{count} ημέρα} other{{count} ημέρες}}",
+  "assistantDeleteNote": "Μεταφέρεται στο Κέντρο ανάκτησης, όπου μπορείτε να την επαναφέρετε για 30 ημέρες.",
+  "assistantFieldCountries": "Χώρες",
+  "assistantHistoryAllDeleted": "Όλες οι συνομιλίες διαγράφηκαν",
+  "assistantHistoryDeleteAll": "Διαγραφή όλων των συνομιλιών",
+  "assistantHistoryDeleteAllBody": "Όλες οι αποθηκευμένες συνομιλίες σας με το Ρωτήστε το Vaultara θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί. Οι εγγραφές σας δεν επηρεάζονται.",
+  "assistantHistoryDeleteAllTitle": "Διαγραφή όλων των συνομιλιών;",
+  "assistantHistoryDeleteBody": "Αυτή η συνομιλία θα διαγραφεί από τον λογαριασμό σας. Οι εγγραφές σας δεν επηρεάζονται.",
+  "assistantHistoryDeleteChat": "Διαγραφή συνομιλίας",
+  "assistantHistoryDeleteFailed": "Δεν ήταν δυνατή η διαγραφή της συνομιλίας. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "assistantHistoryDeleteTitle": "Διαγραφή αυτής της συνομιλίας;",
+  "assistantHistoryDeleted": "Η συνομιλία διαγράφηκε",
+  "assistantHistoryEmpty": "Δεν υπάρχουν ακόμα αποθηκευμένες συνομιλίες. Οι συνομιλίες σας με το Ρωτήστε το Vaultara θα εμφανίζονται εδώ.",
+  "assistantHistoryLoadError": "Δεν μπορέσαμε να φορτώσουμε τις συνομιλίες σας. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "assistantHistoryNote": "Οι συνομιλίες αποθηκεύονται στον λογαριασμό σας για να μπορείτε να επιστρέψετε σε αυτές. Διαγράφονται αυτόματα μετά από 90 ημέρες.",
+  "assistantHistoryTitle": "Ιστορικό συνομιλιών",
+  "assistantIntroAll": "Ρωτήστε με για τις εγγραφές σας, τα ταξίδια σας και για το πώς λειτουργεί το Vaultara. Μπορώ επίσης να ετοιμάσω νέες εγγραφές και αλλαγές για να τις ελέγξετε και να τις επιβεβαιώσετε.",
+  "assistantOpen": "Άνοιγμα",
+  "assistantPeopleLimit": "Το πρόγραμμά σας δεν έχει ελεύθερη θέση για άλλο άτομο.",
+  "assistantPersonMissing": "Αυτό το άτομο δεν υπάρχει πλέον στο Vaultara.",
+  "assistantPrivacyNoteSaved": "Οι απαντήσεις χρησιμοποιούν τεχνητή νοημοσύνη. Η ερώτησή σας και μόνο οι λεπτομέρειες εγγραφών που χρειάζονται για την απάντηση στέλνονται στον πάροχο τεχνητής νοημοσύνης μας. Τα ονόματα και οι σημειώσεις των κλειδωμένων εγγραφών δεν στέλνονται ποτέ, και οι μεγάλοι αριθμοί στις σημειώσεις αποκρύπτονται. Οι συνομιλίες αποθηκεύονται στον λογαριασμό σας για 90 ημέρες και τίποτα στις εγγραφές σας δεν αλλάζει μέχρι να επιβεβαιώσετε.",
+  "assistantRenewDateInvalid": "Η νέα ημερομηνία λήξης πρέπει να είναι μετά την τρέχουσα.",
+  "assistantSuggestionWhere": "Πού ενεργοποιώ τη σύνδεση σε δύο βήματα;",
+  "assistantTripLimit": "Έχετε τον μέγιστο αριθμό ταξιδιών. Διαγράψτε πρώτα ένα παλιό ταξίδι.",
+  "assistantTripMissing": "Αυτό το ταξίδι δεν υπάρχει πλέον στο Vaultara.",
+  "assistantValueNone": "Κανένα",
+  "assistantValueOff": "Ανενεργό",
+  "assistantValueOn": "Ενεργό",
+  "secBillingEmptyHint": "Όταν ξεκινάτε, ανανεώνετε ή ακυρώνετε ένα πρόγραμμα, θα εμφανίζεται εδώ.",
+  "secBillingLoadFailed": "Δεν ήταν δυνατή η φόρτωση του ιστορικού χρεώσεων. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "secBillingRetry": "Δοκιμάστε ξανά",
+  "planTrialStartMonths": "{count, plural, one{Ξεκινήστε τη δωρεάν δοκιμή {count} μήνα} other{Ξεκινήστε τη δωρεάν δοκιμή {count} μηνών}}",
+  "planTrialNewSubscribers": "Δωρεάν δοκιμή για νέους συνδρομητές: {length}.",
+  "planTrialThenMonthGooglePlay": "Μετά {price} τον μήνα. Ακύρωση οποιαδήποτε στιγμή στο Google Play.",
+  "planTrialThenYearGooglePlay": "Μετά {price} τον χρόνο. Ακύρωση οποιαδήποτε στιγμή στο Google Play.",
+  "planTrialThenMonthAppStore": "Μετά {price} τον μήνα. Ακύρωση οποιαδήποτε στιγμή στο App Store.",
+  "planTrialThenYearAppStore": "Μετά {price} τον χρόνο. Ακύρωση οποιαδήποτε στιγμή στο App Store.",
+  "planTrialNoChargeToday": "Δεν πληρώνετε τίποτα σήμερα. Αν ακυρώσετε πριν λήξει η δοκιμή, δεν θα χρεωθείτε.",
+  "verifyEmailLinkVerifying": "Επαλήθευση της διεύθυνσης email σας",
+  "verifyEmailSuccess": "Η διεύθυνση email σας επαληθεύτηκε.",
+  "passwordErrorSameAsCurrent": "Ο νέος κωδικός πρέπει να είναι διαφορετικός από τον τρέχοντα κωδικό σας.",
+  "passwordErrorLeaked": "Αυτός ο κωδικός έχει εμφανιστεί σε διαρροή δεδομένων, οπότε δεν είναι ασφαλής. Επιλέξτε διαφορετικό κωδικό.",
+  "passwordErrorWrongCurrent": "Ο τρέχων κωδικός σας δεν είναι σωστός. Ελέγξτε τον και δοκιμάστε ξανά.",
+  "passwordErrorCurrentRequired": "Εισαγάγετε τον τρέχοντα κωδικό σας για να επιβεβαιώσουμε ότι είστε εσείς.",
+  "passwordErrorNewRequired": "Εισαγάγετε νέο κωδικό.",
+  "passwordErrorConfirmRequired": "Πληκτρολογήστε ξανά τον νέο κωδικό σας για να τον επιβεβαιώσετε.",
+  "passwordErrorMismatch": "Οι δύο κωδικοί δεν ταιριάζουν. Πληκτρολογήστε τον ίδιο νέο κωδικό και στα δύο πεδία.",
+  "passwordErrorTooShort": "{count, plural, one{Αυτός ο κωδικός είναι πολύ σύντομος. Χρησιμοποιήστε τουλάχιστον {count} χαρακτήρα.} other{Αυτός ο κωδικός είναι πολύ σύντομος. Χρησιμοποιήστε τουλάχιστον {count} χαρακτήρες.}}",
+  "passwordErrorNeedUpper": "Αυτός ο κωδικός είναι πολύ αδύναμος επειδή δεν έχει κεφαλαίο γράμμα. Προσθέστε τουλάχιστον ένα κεφαλαίο γράμμα.",
+  "passwordErrorNeedLower": "Αυτός ο κωδικός είναι πολύ αδύναμος επειδή δεν έχει πεζό γράμμα. Προσθέστε τουλάχιστον ένα πεζό γράμμα.",
+  "passwordErrorNeedNumber": "Αυτός ο κωδικός είναι πολύ αδύναμος επειδή δεν έχει αριθμό. Προσθέστε τουλάχιστον έναν αριθμό.",
+  "passwordErrorNeedSymbol": "Αυτός ο κωδικός είναι πολύ αδύναμος επειδή δεν έχει ειδικό χαρακτήρα. Προσθέστε τουλάχιστον έναν, όπως ! ή #.",
+  "passwordErrorWeak": "{count, plural, one{Αυτός ο κωδικός είναι πολύ αδύναμος. Χρησιμοποιήστε τουλάχιστον {count} χαρακτήρα με κεφαλαίο γράμμα, πεζό γράμμα, αριθμό και ειδικό χαρακτήρα.} other{Αυτός ο κωδικός είναι πολύ αδύναμος. Χρησιμοποιήστε τουλάχιστον {count} χαρακτήρες με κεφαλαίο γράμμα, πεζό γράμμα, αριθμό και ειδικό χαρακτήρα.}}",
+  "passwordErrorRecentLogin": "Για την ασφάλειά σας, πρέπει να συνδεθείτε ξανά πριν αλλάξετε τον κωδικό σας. Αποσυνδεθείτε, συνδεθείτε και δοκιμάστε ξανά.",
+  "passwordErrorChangeFailed": "Ο κωδικός σας δεν άλλαξε επειδή κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+  "passportsTitle": "Διαβατήρια",
+  "passportAddAnother": "Προσθήκη άλλου διαβατηρίου",
+  "passportRemove": "Αφαίρεση διαβατηρίου",
+  "passportLinkRecord": "Σύνδεση με αποθηκευμένο διαβατήριο",
+  "passportChooseRecord": "Επιλέξτε αποθηκευμένο διαβατήριο",
+  "passportNoRecords": "Δεν υπάρχουν ακόμη αποθηκευμένα διαβατήρια. Προσθέστε πρώτα το διαβατήριό σας στο θησαυροφυλάκιο.",
+  "passportExpires": "Λήγει στις {date}",
+  "passportNotLinked": "Συνδέστε ένα αποθηκευμένο διαβατήριο για έλεγχο λήξης.",
+  "passportTravelOn": "Ταξίδι με το διαβατήριο {country}",
+  "passportEnterOwn": "Εισέλθετε με το διαβατήριό σας {country}. Δεν χρειάζεται βίζα.",
+  "passportChange": "Αλλαγή διαβατηρίου",
+  "passportBest": "Καλύτερη επιλογή",
+  "passportUseBest": "Χρήση της καλύτερης επιλογής",
+  "passportChooseFor": "Διαβατήριο για {country}",
+  "passportExpiredFor": "Αυτό το διαβατήριο λήγει στις {date}, πριν επιστρέψετε.",
+  "passportShortFor": "Αυτό το διαβατήριο λήγει στις {date}. Πολλές χώρες απαιτούν να ισχύει για μερικούς μήνες μετά την επιστροφή.",
+  "passportSeveralNote": "Με περισσότερα από ένα διαβατήρια, ορισμένες χώρες έχουν επιπλέον κανόνες. Ελέγξτε με την πρεσβεία πριν ταξιδέψετε.",
+  "visaNoteDual": "Η χώρα {country} δεν αναγνωρίζει τη διπλή υπηκοότητα. Ελέγξτε με την πρεσβεία πριν ταξιδέψετε.",
+  "visaNoteEmbassy": "Η χώρα {country} έχει επιπλέον κανόνες εισόδου για ορισμένα διαβατήρια. Ελέγξτε με την πρεσβεία πριν ταξιδέψετε.",
+  "visaDataUpdated": "Τα δεδομένα βίζας ενημερώθηκαν στις {date}",
+  "visaDataStale": "Τα δεδομένα βίζας ενημερώθηκαν τελευταία φορά στις {date}. Ίσως είναι παλιά.",
+  "travelFlightLandsIn": "Προσγειώνεται σε",
+  "travelFlightLandsInChoose": "Χώρα (προαιρετικό)",
+  "travelFlightLandsInHint": "Απαιτείται μόνο για ενδιάμεσες στάσεις. Χρησιμοποιείται για τον έλεγχο βίζας διέλευσης.",
+  "travelTransitNote": "Ενδιάμεση στάση σε {country}. Ελέγξτε αν χρειάζεστε βίζα διέλευσης."
 }

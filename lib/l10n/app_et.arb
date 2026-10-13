@@ -1,883 +1,2130 @@
 {
   "@@locale": "et",
-
-  "expiryCalendarTitle": "Aegumiskalender",
-
-  "calendarIntro":
-    "Vali, kuidas soovid aegumisi vaadata:\n\n• Sisesta päevade arv alates tänasest.\n• Või vali konkreetne kuupäev kalendrist.\n\nVaultara näitab esemeid, mis aeguvad sel päeval.",
-
-  "daysFromTodayLabel": "Päevi alates tänasest",
-  "daysFromTodayHint": "Näiteks 0, 1, 7, 30",
-
   "apply": "Rakenda",
-  "pickDateOnCalendar": "Vali kuupäev kalendrist",
-
   "today": "Täna",
   "tomorrow": "Homme",
-  "in7Days": "7 päeva pärast",
-  "in30Days": "30 päeva pärast",
-
   "inDays": "{days} päeva pärast",
   "@inDays": {
-    "placeholders": { "days": { "type": "int" } }
-  },
-
-  "enterDaysError": "Sisesta päevade arv",
-  "invalidDaysError": "Sisesta kehtiv arv (0 või rohkem)",
-
-  "showingItemsRelative": "Aeguvad esemed {time}",
-  "@showingItemsRelative": {
-    "placeholders": { "time": { "type": "String" } }
-  },
-
-  "showingItemsExact": "Valitud kuupäeval aeguvad esemed",
-  "noItemsOnDate": "Sellel kuupäeval ei aegu ühtegi eset",
-
-  "editorAddTitle": "Lisa ese",
-  "editorEditTitle": "Muuda eset",
-
-  "editorCategory": "Kategooria",
-  "editorCategoryHint": "Vali kategooria",
-
-  "editorGroup": "Grupp",
-  "editorGroupHint": "Vali grupp",
-
-  "editorItemName": "Eseme nimi",
-  "editorItemNameHint": "Sisesta eseme nimi",
-
-  "editorExpiryDate": "Aegumiskuupäev",
-  "editorExpiryDateHint": "Vali aegumiskuupäev",
-
-  "editorErrorCategory": "Kategooria on kohustuslik",
-  "editorErrorGroup": "Grupp on kohustuslik",
-  "editorErrorName": "Eseme nimi on kohustuslik",
-  "editorErrorExpiry": "Aegumiskuupäev on kohustuslik",
-  "editorErrorExpiryPast": "Kuupäev peab olema täna või tulevikus",
-
-  "cancel": "Tühista",
-  "save": "Salvesta",
-
-  "addCategoryTitle": "Lisa kategooria",
-  "unlimitedCategories": "Piiramatud kategooriad (Premium)",
-
-  "categoryUsage": "{current} / {limit} kasutatud kategooriat",
-  "@categoryUsage": {
     "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
-  "categoryNameLabel": "Kategooria nimi",
+  "editorCategory": "Kategooria",
+  "editorCategoryHint": "Vali kategooria",
+  "editorGroup": "Grupp",
+  "editorGroupHint": "Vali grupp",
+  "editorExpiryDate": "Aegumiskuupäev",
+  "editorExpiryDateHint": "Vali aegumiskuupäev",
+  "editorErrorCategory": "Kategooria on kohustuslik",
+  "editorErrorGroup": "Grupp on kohustuslik",
+  "editorErrorExpiry": "Aegumiskuupäev on kohustuslik",
+  "cancel": "Tühista",
+  "save": "Salvesta",
+  "addCategoryTitle": "Lisa kategooria",
   "categoryNameHint": "Sisesta kategooria",
-
-  "categoryLimitReached":
-    "Oled saavutanud Basic-plaani piiri {limit} kategooriat. Uuenda Premiumile.",
+  "categoryLimitReached": "Oled jõudnud Tasuta paketi piirini, milleks on {limit} kategooriat. Uuenda Premiumile, et luua piiramatult kohandatud kategooriaid.",
   "@categoryLimitReached": {
-    "placeholders": { "limit": { "type": "int" } }
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
   },
-
-  "categoryLimitInfo":
-    "Basic-plaan võimaldab luua kuni {limit} kohandatud kategooriat.",
-  "@categoryLimitInfo": {
-    "placeholders": { "limit": { "type": "int" } }
-  },
-
   "categoryErrorEmpty": "Kategooria nimi on kohustuslik",
   "categoryErrorTooShort": "Kategooria nimi on liiga lühike",
   "categoryErrorTooLong": "Kategooria nimi on liiga pikk",
-  "categoryErrorSymbols": "Nimi ei tohi sisaldada sümboleid",
+  "categoryErrorSymbols": "Kategooria nimi ei tohi koosneda ainult sümbolitest",
   "categoryErrorNumbers": "Nimi ei tohi sisaldada numbreid",
-
   "upgradeRequired": "Vajalik uuendus",
   "viewPremiumBenefits": "Vaata Premiumi eeliseid",
   "createCategory": "Loo",
-
   "addGroupTitle": "Lisa grupp",
   "groupNameLabel": "Grupp",
   "groupNameHint": "Sisesta grupp",
-
   "groupErrorEmpty": "Grupi nimi on kohustuslik",
   "groupErrorTooShort": "Grupi nimi on liiga lühike",
   "groupErrorTooLong": "Grupi nimi on liiga pikk",
   "groupErrorSymbols": "Nimi ei tohi sisaldada sümboleid",
   "groupErrorNumbers": "Nimi ei tohi sisaldada numbreid",
-
   "createGroup": "Loo",
-  "registerTitle": "Loo konto",
-
   "firstNameLabel": "Eesnimi",
   "firstNameHint": "Sisesta eesnimi",
   "errorFirstName": "Eesnimi on kohustuslik",
-
   "lastNameLabel": "Perekonnanimi",
   "lastNameHint": "Sisesta perekonnanimi",
   "errorLastName": "Perekonnanimi on kohustuslik",
-
-  "emailLabel": "E-post",
+  "emailLabel": "E-posti aadress",
   "errorEmailInvalid": "Sisesta kehtiv e-posti aadress.",
   "errorEmailInUse": "See e-posti aadress on juba Vaultara kontoga seotud.",
-
   "passwordLabel": "Parool",
-  "passwordHelper": "Vähemalt 8 märki, mitut tüüpi.",
-
-  "passwordTooShort": "Liiga lühike",
-  "passwordTooWeak": "Liiga nõrk",
-  "passwordMedium": "Keskmine",
-  "passwordStrong": "Tugev",
-
   "errorPasswordLength": "Parool peab olema vähemalt 8 märki.",
-  "errorPasswordWeak": "Vali tugevam parool.",
-
   "errorGeneric": "Registreerimine ebaõnnestus. Proovi uuesti.",
-
   "createAccount": "Loo konto",
   "appName": "Vaultara",
-"authTagline": "Sinu isiklik keskus passide, lubade, kaartide ja muude oluliste asjade jaoks",
-"tabSignIn": "Logi sisse",
-"tabCreateAccount": "Loo konto",
-"signInFooterText": "Logi sisse, et pääseda oma isiklikku Vaultara ruumi ja hoida kõik uuendamised kontrolli all",
-"createAccountFooterText": "Loo Vaultara konto oluliste meeldetuletuste varundamiseks ja neile igal ajal ligipääsuks",
+  "authTagline": "Ära kunagi unusta aegumiskuupäeva",
+  "tabSignIn": "Logi sisse",
   "emailNotFound": "Vale e-post.\nSelle e-postiga Vaultara kontot ei ole",
   "incorrectPassword": "Vale parool",
-  "emailLabel": "E-posti aadress",
-  "passwordLabel": "Parool",
-  "emailRequired": "Teie e-posti aadress on nõutav",
-"passwordRequired": "Teie parool on nõutav",
-"registerPasswordHint": "Sisesta parool",
-"loginPasswordHint": "Sisesta oma parool",
-"emailHint": "Sisesta oma e-posti aadress",
+  "emailRequired": "Sinu e-posti aadress on nõutav",
+  "passwordRequired": "Sinu parool on nõutav",
+  "registerPasswordHint": "Sisesta parool",
+  "loginPasswordHint": "Sisesta oma parool",
+  "emailHint": "Sisesta oma e-posti aadress",
   "signIn": "Logi sisse",
-"categoryPersonalIdentification": "Isikutuvastus",
+  "categoryPersonalIdentification": "Isikutuvastus",
   "categoryDrivingAndVehicles": "Juhtimine ja sõidukid",
   "categoryTravelAndImmigration": "Reisimine ja immigratsioon",
   "categoryBankingAndCards": "Pangandus ja kaardid",
   "categoryInsuranceAndCover": "Kindlustus ja kaitse",
-  "categoryHealthAndMedical": "Tervis ja meditsiin",
   "categoryWorkAndProfessional": "Töö ja professionaalne",
   "categoryPropertyAndHousing": "Kinnisvara ja eluasemed",
-  "categoryHouseholdAndUtilities": "Majapidamine ja teenused",
-
   "subcategoryPassports": "Passid",
   "subcategoryIdCards": "Isikutunnistused",
   "subcategoryResidencePermits": "Elamisload",
-
   "subcategoryDrivingLicences": "Juhiload",
   "subcategoryVehicleRegistrations": "Sõidukite registreerimised",
   "subcategoryRoadworthyCertificates": "Tehnilise seisukorra tunnistused",
-  "subcategoryVehicleInspectionCertificates": "Sõiduki ülevaatuse tunnistused",
-
   "subcategoryVisas": "Viisad",
   "subcategoryStudyPermits": "Õppeload",
   "subcategoryWorkPermits": "Töölubad",
-  "subcategoryTravelInsuranceDocuments": "Reisikindlustuse dokumendid",
-
   "subcategoryDebitAndCreditCards": "Deebet- ja krediitkaardid",
   "subcategoryStoreCards": "Poekaardid",
-  "subcategoryFuelCards": "Kütusekaardid",
-
   "subcategoryVehicleInsurances": "Sõidukikindlustused",
   "subcategoryPropertyInsurances": "Varakindlustused",
   "subcategoryLifeInsurances": "Elukindlustused",
   "subcategoryHealthInsurances": "Tervisekindlustused",
   "subcategoryTravelInsurances": "Reisikindlustused",
-
-  "subcategoryMedicalPrescriptions": "Meditsiinilised retseptid",
-  "subcategoryOpticalPrescriptions": "Optilised retseptid",
-  "subcategoryMedicalCertificates": "Meditsiinilised tõendid",
-
   "subcategoryProfessionalLicences": "Kutselitsentsid",
-  "subcategoryProfessionalRegistrations": "Kutselised registreeringud",
-  "subcategoryIndustryRegistrations": "Tööstuslikud registreeringud",
   "subcategoryWorkAccessCards": "Töökohapääsukaardid",
-
   "subcategoryLeaseAgreements": "Üürilepingud",
   "subcategoryAccessCardsAndTags": "Pääsukaardid ja märgised",
-  "subcategoryParkingPermits": "Parkimisload",
-  "subcategorySecurityAccessPermits": "Turvapääsuload",
-
-  "subcategoryElectricityAccounts": "Elektriarved",
-  "subcategoryWaterAccounts": "Veearved",
-  "subcategoryInternetContracts": "Interneti lepingud",
-  "subcategorySecurityServiceContracts": "Turvateenuste lepingud",
-   "searchCategories": "Otsi kategooriaid",
+  "searchCategories": "Otsi kategooriaid",
   "filterAll": "Kõik",
   "filterPreset": "Eelseadistatud",
   "filterCustom": "Kohandatud",
-  "addCategoryTitle": "Lisa kategooria",
-  "customLabel": "Kohandatud",
-  "subcategoriesLabel": "alamkategooriad",
-  "itemsLabel": "üksused",
-  "itemsExpiring": "{count} üksust aegub {days} päeva pärast",
-  "@itemsExpiring": {
-    "placeholders": {
-      "count": { "type": "int" },
-      "days": { "type": "int" }
-    }
-  },
-  "pinnedEssentials": "Kinnitatud olulised",
-  "pinnedHint": "Kinnita kategooriad, mida avad kõige sagedamini, et need jääksid ülaossa.",
   "noCategoriesFound": "Kategooriaid ei leitud",
   "searchGroups": "Otsi gruppe",
-  "addGroupTitle": "Lisa grupp",
-  "basicPlanGroupInfo": "Kasutad Põhiplaani.\nSaad vaadata selle kategooria eelmääratud gruppe.\nUuenda Premiumile, et luua oma gruppe.",
-  "groupDeleted": "Grupp kustutatud",
-  "undo": "TÜHISTA",
-  "@groupStats": {
-    "placeholders": {
-      "items": { "type": "int" },
-      "expiring": { "type": "int" },
-      "days": { "type": "int" }
-    }
-  },
-  "groupTapHint": "Puuduta, et lisada ja jälgida selle grupi elemente.",
-   "itemsInGroup": "Selle rühma üksused",
-  "itemsInGroupHint": "Jälgi iga olulist üksust koos aegumiskuupäevaga, et saaksid selle õigel ajal uuendada.",
-  "searchItems": "Otsi üksusi",
-  "filterAll": "Kõik",
   "filterExpiringWithin": "Aegub {days} päeva jooksul",
   "@filterExpiringWithin": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
   "filterExpired": "Aegunud",
-  "addItem": "Lisa üksus",
-  "noItemsYet": "Ühtegi üksust veel pole.",
-
   "statusExpired": "Aegunud",
   "statusExpiresToday": "Aegub täna",
   "statusExpiresInOneDay": "Aegub 1 päeva pärast",
   "statusExpiresInDays": "Aegub {days} päeva pärast",
   "@statusExpiresInDays": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
   "statusValid": "Kehtiv",
-
   "deleteCategoryTitle": "Kustuta kategooria",
   "deleteCategoryMessage": "Kas oled kindel, et soovid kustutada kategooria \"{name}\"?",
   "@deleteCategoryMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
-  "deleteGroupTitle": "Kustuta rühm",
-  "deleteGroupMessage": "Kas oled kindel, et soovid kustutada rühma \"{name}\"?",
+  "deleteGroupTitle": "Kustuta grupp",
+  "deleteGroupMessage": "Kas oled kindel, et soovid kustutada grupi \"{name}\"?",
   "@deleteGroupMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
-  "deleteItemTitle": "Kustuta üksus",
   "deleteItemMessage": "Kas oled kindel, et soovid kustutada \"{name}\"?",
   "@deleteItemMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
-  "cancel": "Tühista",
   "delete": "Kustuta",
   "homeWelcomeTitle": "Tere tulemast",
-
   "homeWelcomeFirstTitle": "Tere tulemast, {name}",
   "@homeWelcomeFirstTitle": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
   "homeWelcomeBackTitle": "Tere tulemast tagasi, {name}",
   "@homeWelcomeBackTitle": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
-  "homeWelcomeSubtitleGeneric":
-    "Vaultara aitab sul jälgida olulisi aegumiskuupäevi, et midagi ei jääks märkamata.",
-
-  "homeWelcomeSubtitleFirst":
-    "Meil on hea meel sind siin näha. Vaultara aitab sul püsida organiseerituna, hoides olulised kuupäevad ja kirjed ühes turvalises kohas.",
-
-  "homeWelcomeSubtitleBack":
-    "Hea meel sind jälle näha. Vaultara on siin, kui soovid oma olulisi kuupäevi ja kirjeid üle vaadata.",
-    "insightEmptyTitle": "Midagi pole veel lisatud",
-  "insightEmptyBody": "Kui hakkad tähtsaid kuupäevi jälgima, aitab Vaultara aegumistega sammu pidada.",
-
-  "insightExpiresTodayTitle": "\"{name}\" aegub täna",
-  "insightExpiresTodayBody": "Kiire kontroll aitab hoida andmed korras.",
-
-  "insightExpiresTomorrowTitle": "\"{name}\" aegub homme",
-  "insightExpiresTomorrowBody": "Täna ülevaatamine võib hiljem aega säästa.",
-
-  "insightExpiresSoonTitle": "\"{name}\" aegub {date}",
-  "insightExpiresSoonBody": "Varajane tegutsemine teeb asja lihtsamaks.",
-
-  "insightNextExpiryTitle": "Järgmine aegumine on \"{name}\" ({date})",
-  "insightNextExpiryBody": "Hetkel pole vaja midagi teha.",
-
-  "insightClusteredTitle": "Mitu kirjet aegub {month}",
-  "insightClusteredBody": "Koos ülevaatamine võib aega säästa.",
-
-  "insightTopCategoryTitle": "Enamik kirjeid kuulub kategooriasse {category}",
-  "insightTopCategoryBody": "Sealt alustades on mõju suurim.",
-
-  "insightStableTitle": "Kõik on stabiilne",
-  "insightStableBody": "Praegu pole ühtegi kiireloomulist aegumist.",
-
-  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
-  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
-  "@insightExpiresSoonTitle": {
-    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
+  "homeWelcomeSubtitleGeneric": "Vaultara aitab sul jälgida olulisi aegumiskuupäevi, et midagi ei jääks märkamata.",
+  "homeWelcomeSubtitleFirst": "Meil on hea meel sind siin näha. Vaultara aitab sul püsida organiseerituna, hoides olulised kuupäevad ja kirjed ühes turvalises kohas.",
+  "homeWelcomeSubtitleBack": "Hea meel sind jälle näha. Vaultara on siin, kui soovid oma olulisi kuupäevi ja kirjeid üle vaadata.",
+  "summaryAllCaption": "Jälgitud Vaultaras",
+  "summaryExpiredTitle": "Aegunud",
+  "summaryExpiredCaption": "Aegumiskuupäev möödas",
+  "editorNotes": "Märkmed",
+  "editorReminderNone": "Meeldetuletus puudub",
+  "editorReminderOnExpiry": "Aegumiskuupäeval",
+  "enableBiometricsTitle": "Luba biomeetriline turve",
+  "enableBiometricsReason": "Luba Vaultara biomeetriline avamine.",
+  "notNow": "Mitte praegu",
+  "useBiometrics": "Kasuta biomeetriat",
+  "noRecordsOnDate": "Miski ei aegu {date}",
+  "@noRecordsOnDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
   },
-  "@insightNextExpiryTitle": {
-    "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } }
-  },
-  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
-  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
-  "summaryAllTitle": "Kõik üksused",
-"summaryAllCaption": "Jälgitud Vaultaras",
-"summarySoonTitle": "Aegub varsti",
-"summarySoonCaption": "30 päeva jooksul",
-"summaryWeekTitle": "Sel nädalal",
-"summaryWeekCaption": "Aegub 7 päeva pärast",
-"summaryExpiredTitle": "Aegunud",
-"summaryExpiredCaption": "Aegumiskuupäev möödas",
-"stabilityStableTitle": "Todo parece estable",
-"stabilityStableBody": "Tus registros no muestran riesgos inmediatos ni acumulativos.",
-
-"stabilityDecliningTitle": "La estabilidad está disminuyendo",
-"stabilityDecliningBody": "Algunos elementos han vencido y otros se acercan a su vencimiento.",
-
-"stabilityWeakenedTitle": "Estabilidad debilitada",
-"stabilityWeakenedBody": "La presencia de registros vencidos reduce la fiabilidad general.",
-
-"stabilityPressureTitle": "La presión aumenta",
-"stabilityPressureBody": "Varios registros requerirán atención pronto para mantener la estabilidad.",
-"editorNotes": "Notas",
-"notesHint": "Introducir notas",
-"editorReminderTitle": "Meeldetuletus",
-"editorReminderNone": "Meeldetuletus puudub",
-"editorReminderOnExpiry": "Aegumiskuupäeval",
-"editorReminder7Days": "7 päeva enne aegumist",
-"editorReminder30Days": "30 päeva enne aegumist",
-"editorReminderCustom": "Kohandatud",
-"daysBeforeExpiry": "päeva enne aegumist",
-"reminderStage0Title": "Aegumisteade",
-"reminderStage0Body": "{firstName}, {itemName} aegub {days} päeva pärast.",
-"@reminderStage0Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-
-"reminderStage1Title": "Järelmeeldetuletus",
-"reminderStage1Body": "{firstName}, {itemName} pole veel uuendatud.",
-"@reminderStage1Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-
-"reminderStage2Title": "Aegumine läheneb",
-"reminderStage2Body": "{itemName} aegumiskuupäev läheneb.",
-"@reminderStage2Body": {
-  "placeholders": {
-    "itemName": { "type": "String" }
-  }
-},
-
-"reminderFinalTitle": "Viimane meeldetuletus",
-"reminderFinalBody": "{firstName}, palun uuenda {itemName} kohe.",
-"@reminderFinalBody": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-"coverageBalanceTitle": "Katvuse tasakaal",
-"coverageAllRepresented": "Teie kirjed hõlmavad kõiki kategooriaid.",
-"coverageMissingNamed": "{count} kategoorias ei leitud kirjeid: {names}.",
-"coverageMissingSummary": "Sa ei ole lisanud ühtegi kirjet {count} kategooriasse, sealhulgas {names} ja veel {remaining}.",
-
-"@coverageMissingNamed": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "names": { "type": "String" }
-  }
-},
-"@coverageMissingSummary": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "names": { "type": "String" },
-    "remaining": { "type": "int" }
-  }
-},
-"usePasswordInstead": "Kasuta parooli",
-"signInWithBiometrics": "Logi sisse biomeetriaga",
-"enableBiometricsTitle": "Luba biomeetriline turve",
-"enableBiometricsBody": "Kasuta sõrmejälge või näotuvastust Vaultara kaitsmiseks.",
-"enableBiometricsReason": "Luba Vaultara biomeetriline avamine.",
-"notNow": "Mitte praegu",
-"useBiometrics": "Kasuta biomeetriat",
-"recordsCalendarIntro":
-  "Vali, kuidas soovid oma aegumiskuupäevi vaadata:\n\n• Sisesta, mitu päeva alates tänasest soovid ette vaadata.\n• Või vali kalendrist kindel kuupäev.\n\nVaultara näitab, millised kirjed sel päeval aeguvad.",
-
-"showingRecordsRelative": "Kuvatakse kirjed, mis aeguvad {time}",
-"@showingRecordsRelative": {
-  "placeholders": { "time": { "type": "String" } }
-},
-
-"showingRecordsExact": "Kuvatakse kirjed, mis aeguvad valitud kuupäeval",
-"noRecordsOnDate": "Selleks päevaks ei ole aeguvat kirjet.",
-
-"recordEditorAddTitle": "Lisa kirje",
-"recordEditorEditTitle": "Muuda kirjet",
-
-"editorRecordName": "Kirje nimi",
-"editorRecordNameHint": "Sisesta kirje nimi",
-"recordEditorErrorName": "Kirje nimi on kohustuslik",
-
-"@recordsExpiring": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-"@recordsGroupStats": {
-  "placeholders": {
-    "records": { "type": "int" },
-    "expiring": { "type": "int" },
-    "days": { "type": "int" }
-  }
-},
-
-"recordsGroupTapHint":
-  "Puuduta, et lisada ja jälgida selle grupi kirjeid.",
-
-"recordsInGroup": "Selle grupi kirjed",
-"recordsInGroupHint":
-  "Jälgi iga olulist kirjet koos aegumiskuupäevaga, et see õigeaegselt uuendada.",
-
-"searchRecords": "Otsi kirjeid",
-"addRecord": "Lisa kirje",
-"noRecordsYet": "Kirjeid pole veel.",
-
-"deleteRecordTitle": "Kustuta kirje",
-
-"recordsInsightClusteredTitle":
-  "Mitmed kirjed aeguvad {month} paiku",
-"@recordsInsightClusteredTitle": {
-  "placeholders": { "month": { "type": "String" } }
-},
-
-"recordsInsightTopCategoryTitle":
-  "Enamik sinu kirjeid on kategoorias {category}",
-"@recordsInsightTopCategoryTitle": {
-  "placeholders": { "category": { "type": "String" } }
-},
-
-"summaryAllRecordsTitle": "Kõik kirjed",
-
-"recordsStabilityDecliningBody":
-  "Mõned kirjed on juba aegunud ja rohkem on peagi aegumas.",
-
-"recordsCoverageAllRepresented":
-  "Sinu kirjed hõlmavad kõiki kategooriaid.",
-
-"recordReminderStage0Body":
-  "{firstName}, sinu {recordName} aegub {days} päeva pärast.",
-"@recordReminderStage0Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-
-"recordReminderStage1Body":
-  "{firstName}, sinu {recordName} ei ole veel uuendatud.",
-"@recordReminderStage1Body": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" }
-  }
-},
-
-"recordReminderStage2Body":
-  "{recordName} aegumiskuupäev läheneb.",
-"@recordReminderStage2Body": {
-  "place placeholders": { "recordName": { "type": "String" } }
-},
-
-"recordReminderFinalBody":
-  "{firstName}, palun uuenda nüüd {recordName}.",
-"@recordReminderFinalBody": {
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "recordName": { "type": "String" }
-  }
-},
-"noGroupFound": "Gruppe pole veel",
-"recordsExpiring": "{count, plural, one {1 kirje aegub {days} päeva pärast} other {{count} kirjet aeguvad {days} päeva pärast}}",
-"recordsGroupStats": "{records, plural, one {1 kirje} other {{records} kirjet}} • {expiring} {days} päeva jooksul",
-"groupLabel": "{count, plural, one {{count} grupp} other {{count} gruppi}}",
-"recordsLabel": "{count, plural, one {{count} kirje} other {{count} kirjet}}",
-"forgotPassword": "Unustasid parooli?",
+  "editorRecordName": "Kirje nimi",
+  "editorRecordNameHint": "Sisesta kirje nimi",
+  "recordEditorErrorName": "Kirje nimi on kohustuslik",
+  "searchRecords": "Otsi kirjeid",
+  "addRecord": "Lisa kirje",
+  "noRecordsYet": "Kirjeid pole veel.",
+  "deleteRecordTitle": "Kustuta kirje",
+  "summaryAllRecordsTitle": "Kõik kirjed",
+  "noGroupFound": "Gruppe pole veel",
+  "groupLabel": "{count, plural, one{{count} grupp} other{{count} gruppi}}",
+  "recordsLabel": "{count, plural, one{{count} kirje} other{{count} kirjet}}",
+  "forgotPassword": "Unustasid parooli?",
   "forgotPasswordTitle": "Parooli lähtestamine",
   "forgotPasswordBody": "Sisesta oma e-posti aadress ja saadame sulle parooli lähtestamise lingi.",
   "sendResetLink": "Saada link",
   "passwordResetEmailSent": "Parooli lähtestamise e-kiri on saadetud.",
-  "verifyEmailToContinue": "Palun kinnitage oma e-posti aadress enne sisselogimist",
+  "verifyEmailToContinue": "Palun kinnita oma e-posti aadress enne sisselogimist",
   "changeEmailTitle": "Muuda e-posti aadressi",
-"newEmailHint": "Sisesta oma uus e-posti aadress",
-"sendVerificationEmail": "Saada kinnitusmeil",
-"deleteAccountTitle": "Kustuta konto",
-"deleteAccountWarning": "See toiming kustutab jäädavalt sinu konto ja kõik salvestatud andmed.\nSeda ei saa tagasi võtta.",
-"deleteAccountConfirm": "Kustuta konto jäädavalt",
-"supportTitle": "Tugi",
-"supportSubtitle": "Võtke meiega ühendust, kui vajate abi või teil on küsimusi.",
-"supportEmailSubject": "Vaultara toe taotlus",
-"supportEmailError": "E-posti rakendust ei saa avada.",
-"passwordResetEmailFailed": "Parooli lähtestamise e-kirja ei õnnestunud saata.",
-"loggedInPasswordResetBody": "Saadame parooli lähtestamise lingi aadressile:\n{email}",
-"@loggedInPasswordResetBody": {
-  "description": "Informs the user that a password reset email will be sent",
-  "placeholders": { "email": { "type": "String" }} },
+  "newEmailHint": "Sisesta oma uus e-posti aadress",
+  "sendVerificationEmail": "Saada kinnitusmeil",
+  "deleteAccountTitle": "Kustuta konto",
+  "deleteAccountWarning": "See toiming kustutab jäädavalt sinu konto ja kõik salvestatud andmed.\nSeda ei saa tagasi võtta.",
+  "deleteAccountConfirm": "Kustuta konto jäädavalt",
+  "supportTitle": "Tugi",
+  "supportSubtitle": "Võta meiega ühendust, kui vajad abi või sul on küsimusi.",
+  "supportEmailSubject": "Vaultara toe taotlus",
+  "supportEmailError": "E-posti rakendust ei saa avada.",
+  "passwordResetEmailFailed": "Parooli lähtestamise e-kirja ei õnnestunud saata.",
+  "loggedInPasswordResetBody": "Saadame parooli lähtestamise lingi aadressile:\n{email}",
+  "@loggedInPasswordResetBody": {
+    "description": "Informs the user that a password reset email will be sent",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
   "accountManagementTitle": "Konto haldamine",
-  "changeEmailTitle": "Muuda e-posti aadressi",
   "changeEmailSubtitle": "Uuenda oma kontoga seotud e-posti.",
   "changePasswordTitle": "Muuda parooli",
   "changePasswordSubtitle": "Saadame sulle e-kirja lingiga parooli turvaliseks muutmiseks.",
-  "deleteAccountTitle": "Kustuta konto",
   "deleteAccountSubtitle": "Eemalda oma Vaultara konto jäädavalt.",
-  "biometricAuthReason": "Autentige oma Vaultara kontole juurdepääsuks",
+  "biometricAuthReason": "Kinnita oma isik, et pääseda oma Vaultara kontole.",
   "verifyEmailTitle": "Kinnita oma e-post",
-"verifyEmailBody": "Saatsime kinnituskirja sinu postkasti. Ava see ja kinnita oma e-posti aadress, seejärel tule siia tagasi jätkamiseks.",
-"verifyEmailConfirmedButton": "Olen oma e-posti kinnitanud",
-"verifyEmailResendButton": "Saada kinnitusmeil uuesti",
-"verifyEmailSending": "Saatmine...",
-"navHome": "Avaleht",
-"navCategories": "Kategooriad",
-"navInsights": "Ülevaade",
-"navCalendar": "Kalender",
-"tutorialHomeSearch": "Kasuta otsinguriba, et kiiresti leida mis tahes jälgitav kirje.",
-"tutorialHomeFab": "Lisa oma esimene kirje siia.\nVali, kuhu see kuulub, lisa valikulised märkmed ja vali aegumiskuupäev.",
-"tutorialHomeSummary": "Rohkemate kirjete lisamisel aitab see osa märgata aegumisele lähenevaid või aegunud kirjeid.",
-"tutorialHomeInsight": "See nutikas ülevaade toob esile mustrid ja lähenevad aegumised.\nVõid puudutada kõlariikooni, et seda kuulata.",
-"tutorialHomeCoverage": "Katvuse tasakaal näitab, kui ühtlaselt kirjed on jaotunud.\nKõrgem tasakaal tähendab vähem lünki.",
-"tutorialHomeStability": "Stabiilsus näitab, kui usaldusväärsed on kirjed aja jooksul.\nAegunud ja lähenevad kirjed võivad stabiilsust vähendada.",
-"tutorialCancel": "Tühista",
-"tutorialNext": "Edasi",
-"tutorialEnd": "Lõpeta juhend",
-"softDeleteCategory": "Kategooria",
-"softDeleteGroup": "Grupp",
-"softDeleteRecord": "Kirje",
-"softDeleteTitle": "Teisalda {type} Hiljuti kustutatud",
-"softDeleteMessage": "{type} \"{name}\" teisaldatakse Hiljuti kustutatud.\n\nSaad selle taastada 30 päeva jooksul. Pärast seda kustutatakse see jäädavalt.",
-"softDeleteMove": "Teisalda",
-"@softDeleteTitle": { "placeholders": { "type": {} } },
-"@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
-
+  "verifyEmailSending": "Saatmine...",
+  "navHome": "Avaleht",
+  "navCategories": "Kategooriad",
+  "navInsights": "Ülevaade",
+  "navCalendar": "Kalender",
+  "tutorialCancel": "Tühista",
+  "softDeleteCategory": "Kategooria",
+  "softDeleteGroup": "Grupp",
+  "softDeleteRecord": "Kirje",
+  "softDeleteTitle": "Teisalda jaotisse Hiljuti kustutatud: {type}",
+  "softDeleteMessage": "{type} \"{name}\" teisaldatakse jaotisse Hiljuti kustutatud.\n\nSaad selle taastada 30 päeva jooksul. Pärast seda kustutatakse see jäädavalt.",
+  "softDeleteMove": "Teisalda",
+  "@softDeleteTitle": {
+    "placeholders": {
+      "type": {}
+    }
+  },
+  "@softDeleteMessage": {
+    "placeholders": {
+      "type": {},
+      "name": {}
+    }
+  },
   "recentlyDeletedTitle": "Hiljuti kustutatud",
   "categories": "Kategooriad",
   "groups": "Grupid",
   "records": "Kirjed",
   "restore": "Taasta",
   "deletePermanently": "Kustuta jäädavalt",
-
   "recentlyDeletedBanner": "Kustutatud {type} säilitatakse 30 päeva.",
-  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
-
+  "@recentlyDeletedBanner": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "searchDeletedHint": "Otsi kustutatud {type}",
-  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
-
+  "@searchDeletedHint": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "noDeletedItems": "Kustutatud {type} puuduvad",
-  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
-  "categoriesHint": "Puuduta kategooriat, et vaadata selle gruppe ja hallata oma kirjeid.",
-  "groupsHint": "Grupid korraldavad sinu kirjed selles kategoorias. Puuduta gruppi, et hallata kirjeid.",
+  "@noDeletedItems": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "notLoggedIn": "Pole sisse logitud",
-"recordsInsideGroupHint": "Need on selle grupi kirjed.",
-"snackMovedToRecentlyDeleted": "\"{name}\" teisaldati jaotisse Hiljuti kustutatud",
-"@snackMovedToRecentlyDeleted": {
-  "description": "Snackbar when an item is moved to recently deleted",
-  "placeholders": { "name": { "type": "String", "example": "Passport" } }
-},
-"snackDeletedSuccessfully": "\"{name}\" kustutati edukalt",
-"@snackDeletedSuccessfully": {
-  "description": "Snackbar when an item is permanently deleted",
-  "placeholders": { "name": { "type": "String", "example": "Driver License" } }
-},
-"snackUpdatedSuccessfully": "\"{name}\" uuendati edukalt",
-"@snackUpdatedSuccessfully": {
-  "description": "Snackbar when an item is updated",
-  "placeholders": { "name": { "type": "String", "example": "Visa" } }
-},
-"snackAddedSuccessfully": "\"{name}\" lisati edukalt",
-"@snackAddedSuccessfully": {
-  "description": "Snackbar when an item is added",
-  "placeholders": { "name": { "type": "String", "example": "Insurance" } }
-},
-"snackRestoredSuccessfully": "\"{name}\" taastati edukalt",
-"@snackRestoredSuccessfully": {
-  "description": "Snackbar when an item is restored from recently deleted",
-  "placeholders": { "name": { "type": "String", "example": "Passport" } }
-},
-"snackFreeLimitReached": "Tasuta limiit on täis ({current}/{limit}). Rohkema lisamiseks uuenda paketti.",
-"@snackFreeLimitReached": {
-  "description": "Snackbar when free plan limit is reached",
-  "placeholders": {
-    "current": { "type": "int","example": "3"},
-    "limit": { "type": "int" }
-  }
-},
-"globalSearchTitle": "Otsi kõiki kirjeid",
-"globalSearchHint": "Sisesta kirje nimi, kategooria või grupp",
-"globalSearchNoMatches": "Ükski kirje ei vasta sinu otsingule.",
-"snackNoRecordsToSearch": "Otsimiseks pole ühtegi kirjet. Lisa mõned kirjed ja Vaultara indekseerib need automaatselt.",
-"recoveryCentreTitle": "Taastekeskus",
-"recoveryCentreSubtitle": "Taasta või kustuta eemaldatud kirjed jäädavalt.",
-"plan_premium": "Premium",
-"plan_free": "Tasuta",
-"profile_app_settings_title": "Rakenduse seaded",
-"profile_privacy_security_title": "Privaatsus ja turvalisus",
-"profile_biometric_on": "Biomeetriline lukustus on selles seadmes sisse lülitatud.",
-"profile_biometric_off": "Biomeetriline lukustus on välja lülitatud.",
-"profile_biometric_enable_reason": "Kinnitage oma isik, et biomeetriline lukustus sisse lülitada.",
-"profile_biometric_disable_reason": "Kinnitage oma isik, et biomeetriline lukustus välja lülitada.",
-"profile_account_management_title": "Konto haldamine",
-"profile_account_management_subtitle": "Muuda e-posti, parooli või kustuta konto.",
-"profile_premium_active_title": "Premium on aktiivne",
-"profile_premium_upgrade_title": "Uuenda Premiumile",
-"profile_premium_active_subtitle": "Täiustatud meeldetuletused on avatud.",
-"profile_premium_upgrade_subtitle": "Ava täiustatud meeldetuletused ja piiramatu korraldus.",
-"profile_manage_cancel_hint": "Halda või tühista igal ajal Google Play’s.",
-"profile_manage_subscription_button": "Halda tellimust",
-"plansTitle": "Vali oma plaan",
-"plansTrialBanner": "Alusta 7-päevase tasuta prooviga.\nTühista igal ajal.",
-"plansLoading": "Laadimine…",
-"plansStartFreeTrial": "Alusta tasuta",
-"plansNoChargeTodayFooter": "7 päeva tasuta · Täna ei võeta tasu",
-
-"planFreeTitle": "Tasuta",
-"planFreeSubtitle": "Alustamiseks",
-"planPremiumMonthlyTitle": "Premium kuupõhine",
-"planPremiumYearlyTitle": "Premium aastane",
-"planPerMonth": "kuus",
-"planPerYear": "aastas",
-
-"planBadgeCurrent": "Praegune plaan",
-"planBadgePopular": "Populaarne",
-"planBadgeBestValue": "Parim väärtus",
-
-"planYouAreOnThisPlan": "Kasutad juba seda plaani.",
-
-"planFeatureUpToRecords": "Kuni {count} kirjet",
-"@planFeatureUpToRecords": {
-  "placeholders": { "count": { "type": "int" } }
-},
-
-"planFeatureCustomCategoriesUpTo": "Kohandatud kategooriad (kuni {count})",
-"@planFeatureCustomCategoriesUpTo": {
-  "placeholders": { "count": { "type": "int" } }
-},
-
-"planFeaturePresetSubcategories": "Eelseadistatud alamkategooriad",
-"planFeatureCloudStorage": "Pilvesalvestus",
-"planFeatureSmartExpiryInsights": "Targad aegumise ülevaated",
-"planFeatureCoverageBalance": "Katvuse tasakaal",
-"planFeatureRecordStabilityTracking": "Kirjete stabiilsus",
-
-"planFeatureUnlimitedRecords": "Piiramatu kirje",
-"planFeatureUnlimitedCategories": "Piiramatud kategooriad",
-"planFeatureCustomSubcategories": "Kohandatud alamkategooriad",
-"planFeatureMultipleRemindersPerRecord": "Mitu meeldetuletust",
-"planFeatureAdvancedReminderTiming": "Täpsem ajastus",
-"planFeatureAutomaticFollowUps": "Automaatsed meeldetuletused",
-
-"planFeatureEverythingInMonthly": "Kõik kuupaketist",
-"planFeatureSavePercentComparedToMonthly": "Säästa {percent}% võrreldes kuupaketiga",
-"@planFeatureSavePercentComparedToMonthly": {
-  "placeholders": { "percent": { "type": "int" } }
-},
-
-"planFeatureBestLongTermValue": "Parim pikaajaline väärtus",
-"editorReminderLabel": "Meeldetuletus",
-"editorReminderSelectOptional": "Vali meeldetuletus (valikuline)",
-"editorReminderOnExpiry": "Aegumiskuupäeval",
-"editorReminderDaysBefore": "{days} päeva enne aegumist",
-"editorFreeItemsCount": "Tasuta kirjed: {used}/{limit}",
-"editorExpiryPastWarning": "Aegumiskuupäev on juba möödunud.",
-"editorExpiryTodayWarning": "See kirje aegub täna.",
-"editorErrorExpiryPast": "Aegumiskuupäev ei tohi olla minevikus.",
-
-"@editorReminderDaysBefore": {
-  "placeholders": {
-    "days": { "type": "int" }
-  }
-},
-
-"@editorFreeItemsCount": {
-  "placeholders": {
-    "used": { "type": "int" },
-    "limit": { "type": "int" }
-  }
-},
-"todayInsightsTitle": "Tänased ülevaated",
-"tutorialBannerTitle": "Kiire ülevaade",
-"tutorialBannerBody": "Õpi otsima, lisama kirjeid ja mõistma ülevaateid vähem kui minutiga.",
-"tutorialBannerStart": "Alusta õpetust",
-"tutorialBannerDismiss": "Mitte praegu",
-"authErrorUserDisabled": "See konto on keelatud.",
-"authErrorNetwork": "Võrguviga. Proovi uuesti.",
-"authErrorTooManyRequests": "Liiga palju katseid. Proovi hiljem.",
-"authErrorSignInFailed": "Sisselogimine ebaõnnestus. Proovi uuesti.",
-"ok": "OK",
-"snackPremiumEnabled": "Premium aktiveeritud",
-"snackPremiumRestored": "Premium taastatud",
-"passwordNeedLower": "Peab sisaldama väiketähte",
-"passwordNeedUpper": "Peab sisaldama suurtähte",
-"passwordNeedNumber": "Peab sisaldama numbrit",
-"passwordNeedSymbol": "Peab sisaldama sümbolit",
-"confirmIdentityTitle": "Kinnita identiteet",
-"confirm": "Kinnita",
-"profile_sign_out_title": "Logi välja",
-"profile_sign_out_subtitle": "Logi Vaultarast välja selles seadmes",
-"profile_sign_out_confirm_title": "Kas logida välja?",
-"profile_sign_out_confirm_body": "Konto kasutamiseks pead uuesti sisse logima.",
-"profile_sign_out_action": "Logi välja",
-"todayInsightsAudioHint": "Eelistad heli? Kasuta kõlariikooni.",
-"category2Label": "Kategooria",
-"enable2BiometricsBody": "Kasuta sõrmejäljetuvastust oma Vaultara konto kaitsmiseks.",
-"snackNotificationsDisabled": "Teavitused on keelatud. Lülitage need meeldetuletuste saamiseks sisse.",
-"openSettings": "Ava seaded",
-
-"reminderOnExpiryTitle": "Aegub täna",
-"@reminderOnExpiryTitle": {
-  "description": "Title for a notification shown on the day an item expires"
-},
-
-"reminderOnExpiryBody": "Tere {firstName}, \"{itemName}\" aegub täna.",
-"@reminderOnExpiryBody": {
-  "description": "Notification body shown on the expiry day, addressing the user by first name",
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-"freeCategoriesProgress": "Tasuta kategooriad: {current}/{limit}",
-"@freeCategoriesProgress": {
-  "description": "Näitab, mitu tasuta kategooriat on kasutatud tasuta limiidist.",
-  "placeholders": {
-    "current": { "type": "int" },
-    "limit": { "type": "int" }
-  }
-},
-"addNotesHint": "Lisa märkmeid (valikuline)",
-"apply": "Rakenda",
-"smartInsightExpiresTodayHeading": "Aegub Täna",
-"smartInsightExpiresTodaySingleBody": "{name} aegub täna. Tegutsege nüüd, et see ajakohane hoida.",
-"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
-"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ja veel 1 dokument aeguvad täna.} other{{names} ja veel {extra} dokumenti aeguvad täna.}}",
-"@smartInsightExpiresTodayMultiBody": {
-  "placeholders": {
-    "names": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightSilentRiskHeading": "Vajab Teie Tähelepanu",
-"smartInsightSilentRiskBody": "{days, plural, =1{{name} aegub 1 päeva pärast ja meeldetuletust pole määratud. Kontrollige, kas üksikasjad on endiselt õiged.} other{{name} aegub {days} päeva pärast ja meeldetuletust pole määratud. Kontrollige, kas üksikasjad on endiselt õiged.}}",
-"@smartInsightSilentRiskBody": {
-  "placeholders": {
-    "name": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-"smartInsightRenewalTwinHeading": "Mitu Uuendust Lähestikku",
-"smartInsightRenewalTwinBodyTwo": "{a} ja {b} aeguvad kolme nädala jooksul üksteisest. Planeerige ette.",
-"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
-"smartInsightRenewalTwinBodyThree": "{a}, {b} ja {c} aeguvad kõik kolme nädala jooksul. Planeerige ette.",
-"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
-"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b} ja veel 1 dokument aeguvad kolme nädala jooksul. Planeerige ette.} other{{a}, {b} ja veel {extra} dokumenti aeguvad kolme nädala jooksul. Planeerige ette.}}",
-"@smartInsightRenewalTwinBodyMany": {
-  "placeholders": {
-    "a": { "type": "String" },
-    "b": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightClusterHeading": "Eelseisev Rühm",
-"smartInsightClusterBody": "{count, plural, =1{1 dokument kategoorias {category} aegub järgmise kahe kuu jooksul. Kaaluge nende koos käsitlemist.} other{{count} dokumenti kategoorias {category} aeguvad järgmise kahe kuu jooksul. Kaaluge nende koos käsitlemist.}}",
-"@smartInsightClusterBody": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "category": { "type": "String" }
-  }
-},
-"smartInsightQuietPeriodHeading": "Vaikne Periood Ees",
-"smartInsightQuietPeriodBody": "{days, plural, =1{Järgmise 1 päeva jooksul ei aegu midagi. Teie järgmine uuendamine on {firstDate}.} other{Järgmise {days} päeva jooksul ei aegu midagi. Teie järgmine uuendamine on {firstDate}.}}",
-"@smartInsightQuietPeriodBody": {
-  "placeholders": {
-    "days": { "type": "int" },
-    "firstDate": { "type": "String" }
-  }
-},
-"smartInsightAllCaughtUpHeading": "Kõik Ajakohane",
-"smartInsightAllCaughtUpBody": "{count, plural, =1{1 eelseisev aegumine on meeldetuletustega kaetud. Miski muu ei vaja teie tähelepanu.} other{{count} eelseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja teie tähelepanu.}}",
-"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
-"smartInsightAllCaughtUpNoUpcomingBody": "Kõik ajakohane. Praegu ei vaja miski teie tähelepanu.",
-"smartInsightNoRecordsHeading": "Lisage Oma Esimene Kirje",
-"smartInsightNoRecordsBody": "Hakake oma dokumente jälgima ja Vaultara kuvab siin nutikaid ülevaateid.",
-"expiryTimelineTitle": "Aegumise ajatelg",
-"expiryTimelineSubtitle": "Puudutage kuud, et näha selles kuus aeguvaid kirjeid",
-"expiryTimelineDetailCount": "{count, plural, =1{1 kirje} other{{count} kirjet}}",
-"@expiryTimelineDetailCount": {
-  "placeholders": { "count": { "type": "int" } }
-},
-"summaryUpcomingTitle": "Peatselt Saabuvad",
-"summaryUpcomingCaption": "30 päeva jooksul",
-"summaryUrgentTitle": "Kiireloomuline",
-"summaryUrgentCaption": "7 päeva jooksul"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  "snackMovedToRecentlyDeleted": "\"{name}\" teisaldati jaotisse Hiljuti kustutatud",
+  "@snackMovedToRecentlyDeleted": {
+    "description": "Snackbar when an item is moved to recently deleted",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
+  },
+  "snackDeletedSuccessfully": "\"{name}\" kustutati edukalt",
+  "@snackDeletedSuccessfully": {
+    "description": "Snackbar when an item is permanently deleted",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Driver License"
+      }
+    }
+  },
+  "snackUpdatedSuccessfully": "\"{name}\" uuendati edukalt",
+  "@snackUpdatedSuccessfully": {
+    "description": "Snackbar when an item is updated",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Visa"
+      }
+    }
+  },
+  "snackAddedSuccessfully": "\"{name}\" lisati edukalt",
+  "@snackAddedSuccessfully": {
+    "description": "Snackbar when an item is added",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Insurance"
+      }
+    }
+  },
+  "snackRestoredSuccessfully": "\"{name}\" taastati edukalt",
+  "@snackRestoredSuccessfully": {
+    "description": "Snackbar when an item is restored from recently deleted",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
+  },
+  "snackFreeLimitReached": "Tasuta limiit on täis ({current}/{limit}). Rohkema lisamiseks uuenda paketti.",
+  "@snackFreeLimitReached": {
+    "description": "Snackbar when free plan limit is reached",
+    "placeholders": {
+      "current": {
+        "type": "int",
+        "example": "3"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "globalSearchTitle": "Otsi kõiki kirjeid",
+  "globalSearchHint": "Sisesta kirje nimi, kategooria või grupp",
+  "globalSearchNoMatches": "Ükski kirje ei vasta sinu otsingule.",
+  "snackNoRecordsToSearch": "Otsimiseks pole ühtegi kirjet. Lisa mõned kirjed ja Vaultara indekseerib need automaatselt.",
+  "recoveryCentreTitle": "Taastekeskus",
+  "recoveryCentreSubtitle": "Taasta või kustuta eemaldatud kirjed jäädavalt.",
+  "plan_premium": "Premium",
+  "plan_free": "Tasuta",
+  "profile_app_settings_title": "Rakenduse seaded",
+  "profileAppLockTitle": "Rakenduse lukk",
+  "profile_biometric_on": "Biomeetriline lukustus on selles seadmes sisse lülitatud.",
+  "profile_biometric_off": "Biomeetriline lukustus on välja lülitatud.",
+  "profile_biometric_enable_reason": "Kinnita oma isik, et biomeetriline lukustus sisse lülitada.",
+  "profile_biometric_disable_reason": "Kinnita oma isik, et biomeetriline lukustus välja lülitada.",
+  "profile_account_management_title": "Konto haldamine",
+  "profile_account_management_subtitle": "Muuda e-posti, parooli või kustuta konto.",
+  "profile_premium_active_title": "Premium on aktiivne",
+  "profile_premium_upgrade_title": "Uuenda Premiumile",
+  "profile_premium_active_subtitle": "Täiustatud meeldetuletused on avatud.",
+  "profile_premium_upgrade_subtitle": "Ava täiustatud meeldetuletused ja piiramatu korraldus.",
+  "profile_manage_cancel_hint": "Halda või tühista igal ajal Google Play’s.",
+  "profile_manage_subscription_button": "Halda tellimust",
+  "plansTitle": "Paketid",
+  "plansLoading": "Laadimine…",
+  "plansStartFreeTrial": "Alusta {days}-päevast tasuta prooviperioodi",
+  "planPerMonth": "/kuu",
+  "planPerYear": "/aasta",
+  "planBadgeCurrent": "Praegune pakett",
+  "planBadgePopular": "Kõige populaarsem",
+  "planFeatureUnlimitedRecords": "Piiramatu arv kirjeid",
+  "planFeatureUnlimitedCategories": "Piiramatu arv kohandatud kategooriaid",
+  "planFeatureAdvancedReminderTiming": "Määra täpselt, millal iga meeldetuletus saabub",
+  "planFeatureAutomaticFollowUps": "Lisaks meeldetuletused, mis muutuvad tähtaja lähenedes sagedasemaks",
+  "editorReminderLabel": "Meeldetuletus",
+  "editorReminderSelectOptional": "Vali meeldetuletus (valikuline)",
+  "editorReminderDaysBefore": "{days} päeva enne aegumist",
+  "editorFreeItemsCount": "Tasuta kirjed: {used}/{limit}",
+  "@editorReminderDaysBefore": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "@editorFreeItemsCount": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "authErrorUserDisabled": "See konto on keelatud.",
+  "authErrorNetwork": "Võrguviga. Proovi uuesti.",
+  "authErrorTooManyRequests": "Liiga palju katseid. Proovi hiljem.",
+  "authErrorSignInFailed": "Sisselogimine ebaõnnestus. Proovi uuesti.",
+  "ok": "OK",
+  "snackPremiumEnabled": "Premium aktiveeritud",
+  "snackPremiumRestored": "Premium taastatud",
+  "passwordNeedLower": "Peab sisaldama väiketähte",
+  "passwordNeedUpper": "Peab sisaldama suurtähte",
+  "passwordNeedNumber": "Peab sisaldama numbrit",
+  "passwordNeedSymbol": "Peab sisaldama sümbolit",
+  "confirmIdentityTitle": "Kinnita identiteet",
+  "confirm": "Kinnita",
+  "profile_sign_out_title": "Logi välja",
+  "profile_sign_out_confirm_title": "Kas logida välja?",
+  "profile_sign_out_confirm_body": "Konto kasutamiseks pead uuesti sisse logima.",
+  "profile_sign_out_action": "Logi välja",
+  "todayInsightsAudioHint": "Eelistad heli? Kasuta kõlari ikooni.",
+  "category2Label": "Kategooria",
+  "enable2BiometricsBody": "Kasuta sõrmejäljetuvastust oma Vaultara konto kaitsmiseks.",
+  "snackNotificationsDisabled": "Teavitused on keelatud. Lülita need meeldetuletuste saamiseks sisse.",
+  "openSettings": "Ava seaded",
+  "freeCategoriesProgress": "Tasuta kategooriad: {current}/{limit}",
+  "@freeCategoriesProgress": {
+    "description": "Näitab, mitu tasuta kategooriat on kasutatud tasuta limiidist.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "addNotesHint": "Lisa märkmeid (valikuline)",
+  "expiryTimelineTitle": "Aegumise ajatelg",
+  "expiryTimelineSubtitle": "Puuduta kuud, et näha selles kuus aeguvaid kirjeid",
+  "expiryTimelineDetailCount": "{count, plural, =1{1 kirje} other{{count} kirjet}}",
+  "@expiryTimelineDetailCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryUpcomingTitle": "Peatselt saabuvad",
+  "summaryUpcomingCaption": "30 päeva jooksul",
+  "summaryUrgentTitle": "Kiireloomuline",
+  "summaryUrgentCaption": "7 päeva jooksul",
+  "profileHeaderTitle": "Profiil",
+  "profileTutorialsTitle": "Õpetused",
+  "profileTutorialsSubtitle": "Sirvi rakenduse õpetusi",
+  "tutorialsScreenTitle": "Õpetused",
+  "tutorialsFullTourTitle": "Tee täielik ringkäik",
+  "tutorialsFullTourSubtitle": "Tutvu Vaultaraga algusest lõpuni",
+  "tutorialsFullTourButton": "Esita täielik ringkäik",
+  "tutorialsIndividualHeader": "Üksikud õpetused",
+  "tutorialsAddRecordTitle": "Kirjete lisamine",
+  "tutorialsAddRecordSubtitle": "Salvesta kirje kõigi selle üksikasjadega",
+  "tutorialsInsightsSubtitle": "Vaata, kuidas Vaultara toob esile eesseisvad riskid ja mustrid",
+  "tutorialsRemindersTitle": "Meeldetuletuste seadistamine",
+  "tutorialsRemindersSubtitle": "Saa teavitusi enne asjade aegumist",
+  "tutorialsInsightsTitle": "Ülevaadete mõistmine",
+  "tutorialNext": "Järgmine",
+  "tutorialEnd": "Lõpeta",
+  "tutorialHomeFab": "Siin lisad kirjeid. Puuduta, et sisestada nimi, kategooria, grupp, aegumiskuupäev, valikulised märkmed ja meeldetuletus.",
+  "tutorialAddRecordCategory": "Vali kategooria oma kirje korraldamiseks.",
+  "tutorialAddRecordGroup": "Vali grupp oma kirje täpsemaks liigitamiseks.",
+  "tutorialAddRecordName": "Sisesta oma kirjele nimi.",
+  "tutorialAddRecordNotes": "Lisa valikulised märkmed, et hoida kasulikke üksikasju koos kirjega.",
+  "tutorialAddRecordExpiry": "Vali aegumiskuupäev. Vaultara saadab meeldetuletusi enne seda kuupäeva.",
+  "tutorialAddRecordSave": "Puuduta Salvesta, et lisada kirje oma nimekirja.",
+  "tutorialSampleRecordName": "Visa deebetkaart",
+  "tutorialSampleRecordNotes": "Kaart lõpeb numbriga 4728. Peamine kulutuste kaart. Seotud peamise arvelduskontoga.",
+  "tutorialSetReminderField": "Määra meeldetuletus, et saada teavitus enne mis tahes kirje aegumist. Puuduta meeldetuletuse välja, et näha valikuid.",
+  "reminderTitle": "Meeldetuletus",
+  "reminderFreeSection": "Tasuta",
+  "reminderPremiumSection": "Premium",
+  "reminderNone": "Meeldetuletust pole",
+  "reminderOnExpiry": "Aegumiskuupäeval",
+  "reminderDaysBefore": "{days, plural, one{1 päev enne} other{{days} päeva enne}}",
+  "reminderCustomDaysTitle": "Sisesta kohandatud päevad",
+  "reminderCascadeTitle": "Kaskaadmeeldetuletused",
+  "reminderCascadeSubtitle": "Saa mitu teavitust enne kirje aegumist",
+  "reminderPremiumRequired": "See funktsioon on saadaval Premium-kasutajatele.",
+  "reminderUpgradeCta": "Uuenda Premiumile",
+  "tutorialReminderFreeSection": "Need meeldetuletuste valikud on saadaval kõigile. Vali üks teavituse saamiseks.",
+  "tutorialReminderPremiumSection": "Need valikud avanevad Premium'iga täpsemaks ajastuseks enne aegumist.",
+  "tutorialReminderApplyFree": "Puuduta Rakenda, et salvestada oma meeldetuletuse valik.",
+  "tutorialReminderPresets": "Vali eelseadistatud aeg, et saada teavitus enne mis tahes kirje aegumist.",
+  "tutorialReminderCustomDays": "Määra enne aegumist oma täpne päevade arv.",
+  "tutorialReminderApplyPremium": "Puuduta Rakenda, et salvestada oma meeldetuletuse valik.",
+  "tutorialReminderCascadeFree": "Kaskaad saadab mitu teavitust enne kirje aegumist. Saadaval Premium'iga.",
+  "tutorialReminderCascadePremium": "Kaskaad saadab mitu teavitust enne kirje aegumist.",
+  "tutorialInsightsSmartCard": "Vaultara toob esile, mis vajab sinu tähelepanu: peagi aeguvad kirjed, puuduvad meeldetuletused ja tulevased hõivatud nädalad.",
+  "tutorialInsightsTimeline": "Ajatelg näitab, millal sinu kirjed aasta jooksul aeguvad, koos nooltega aastate vahel liikumiseks.",
+  "tutorialInsightsSampleRecordTwo": "Suurbritannia pass",
+  "tutorialInsightsSampleRecordThree": "BUPA tervisekindlustus",
+  "tutorialAudio": "Kas eelistad kuulata? Lase oma ülevaated valjusti ette lugeda ja peata igal ajal.",
+  "tutorialAddRecordReminderTour": "Puuduta meeldetuletuse välja, et näha, kuidas meeldetuletused töötavad.",
+  "tutorialAddRecordReminderSolo": "See on meeldetuletuse väli, kus Vaultara saab sind teavitada, enne kui kirje aegub.",
+  "smartInsightActionSetReminder": "Määra meeldetuletus",
+  "@smartInsightActionSetReminder": {
+    "description": "Action button on the Silent Risk insight that opens the record's editor to add a reminder."
+  },
+  "smartInsightNoRecordsHeading": "Lisa oma esimene kirje",
+  "@smartInsightNoRecordsHeading": {
+    "description": "Heading for the empty-state insight when the user has no records."
+  },
+  "smartInsightNoRecordsBody": "Alusta oma kirjete jälgimist ja Vaultara näitab siin nutikaid ülevaateid.",
+  "@smartInsightNoRecordsBody": {
+    "description": "Body for the empty-state insight when the user has no records."
+  },
+  "smartInsightExpiresTodayHeading": "Aegub täna",
+  "@smartInsightExpiresTodayHeading": {
+    "description": "Heading for the insight shown when one or more records expire today."
+  },
+  "smartInsightExpiresTodaySingleBody": "{name} aegub täna. Kui oled selle juba uuendanud, muuda kuupäeva siin.",
+  "@smartInsightExpiresTodaySingleBody": {
+    "description": "Body for the expires-today insight when exactly one record expires today.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} aeguvad täna.} =1{{names} ja veel 1 aeguvad täna.} other{{names} ja veel {extra} aeguvad täna.}}",
+  "@smartInsightExpiresTodayMultiBody": {
+    "description": "Body for the expires-today insight when several records expire today. {names} lists up to two names; {extra} is how many more beyond those.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      },
+      "extra": {
+        "type": "int"
+      }
+    }
+  },
+  "smartInsightSilentRiskHeading": "Vajab sinu tähelepanu",
+  "@smartInsightSilentRiskHeading": {
+    "description": "Heading for the insight shown when a record is expiring soon but has no reminder set."
+  },
+  "smartInsightSilentRiskBody": "{days, plural, =1{{name} aegub homme ja sellel pole meeldetuletust. Määra meeldetuletus, et see sul märkamata ei jääks.} other{{name} aegub {date} ja sellel pole meeldetuletust. Määra meeldetuletus, et see sul märkamata ei jääks.}}",
+  "@smartInsightSilentRiskBody": {
+    "description": "Body for the Silent Risk insight. {name} is the record, {days} is days until expiry, {date} is the formatted expiry date.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightCloseExpiriesHeading": "Aeguvad umbes samal ajal",
+  "@smartInsightCloseExpiriesHeading": {
+    "description": "Heading for the insight shown when multiple records across categories expire within a short window of each other."
+  },
+  "smartInsightCloseExpiriesBodyTwo": "{a} aegub {dateA} ja {b} {dateB}, umbes samal ajal. Kui kaks on nii lähestikku, on lihtne üht unustada.",
+  "@smartInsightCloseExpiriesBodyTwo": {
+    "description": "Body for the close-expiries insight when exactly two records are involved.",
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "dateA": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "dateB": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightCloseExpiriesBodyThree": "{a}, {b} ja {c} aeguvad kõik hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.",
+  "@smartInsightCloseExpiriesBodyThree": {
+    "description": "Body for the close-expiries insight when exactly three records are involved.",
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "c": {
+        "type": "String"
+      },
+      "lastDate": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ja veel 1 kirje aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.} other{{a}, {b} ja veel {extra} kirjet aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.}}",
+  "@smartInsightCloseExpiriesBodyMany": {
+    "description": "Body for the close-expiries insight when more than three records are involved. Uses ICU plural on {extra}.",
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "extra": {
+        "type": "int"
+      },
+      "lastDate": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightClusterHeading": "Mitu samas kategoorias",
+  "@smartInsightClusterHeading": {
+    "description": "Heading for the insight shown when three or more records in one category expire within a short window."
+  },
+  "smartInsightClusterBody": "{count, plural, =1{1 sinu kirje kategoorias {category} aegub {date}. Seda on lihtne kahe silma vahele jätta.} other{{count} sinu kirjet kategoorias {category} aegub hiljemalt {date}. Kui need on nii koos, on lihtne üht unustada.}}",
+  "@smartInsightClusterBody": {
+    "description": "Body for the cluster insight. {count} is how many records, {category} is the category label, {date} is the last expiry date in the group.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "category": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightQuietPeriodHeading": "Ees ootab vaikne periood",
+  "@smartInsightQuietPeriodHeading": {
+    "description": "Heading for the insight shown when nothing expires for a long stretch starting today."
+  },
+  "smartInsightQuietPeriodBody": "{days, plural, =1{Järgmise päeva jooksul ei aegu midagi. Järgmine aegub {date}.} other{Järgmise {days} päeva jooksul ei aegu midagi. Järgmine aegub {date}.}}",
+  "@smartInsightQuietPeriodBody": {
+    "description": "Body for the quiet-period insight. {days} is days until the next expiry, {date} is that first upcoming expiry date.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightAllCaughtUpHeading": "Kõik on kaetud",
+  "@smartInsightAllCaughtUpHeading": {
+    "description": "Heading for the all-caught-up insight when nothing needs attention and everything upcoming is covered by a reminder."
+  },
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 eesseisev aegumine on meeldetuletusega kaetud. Miski muu ei vaja sinu tähelepanu.} other{{count} eesseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja sinu tähelepanu.}}",
+  "@smartInsightAllCaughtUpBody": {
+    "description": "Body for the all-caught-up insight when there are upcoming records within 90 days and all of them have reminders.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartInsightAllCaughtUpNoUpcomingBody": "Kõik on ajakohane. Praegu ei vaja miski sinu tähelepanu.",
+  "@smartInsightAllCaughtUpNoUpcomingBody": {
+    "description": "Body used when nothing needs attention and nothing is upcoming (all-caught-up and quiet-period empty cases)."
+  },
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Praegu pole midagi kiireloomulist, kuid 1 eesseisval kirjel pole veel meeldetuletust.} other{Praegu pole midagi kiireloomulist, kuid {count} eesseisval kirjel pole veel meeldetuletust.}}",
+  "@smartInsightAllCaughtUpUnremindedBody": {
+    "description": "Body for the all-caught-up state when some upcoming records have no reminder. {count} is how many upcoming records lack a reminder.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "smartInsightNearlyAllCoveredHeading": "Peaaegu kõik on kaetud",
+  "@smartInsightNearlyAllCoveredHeading": {
+    "description": "Heading for the all-caught-up state when almost everything has a reminder set."
+  },
+  "plansHeadline": "Saa täielik Vaultara kogemus",
+  "plansSubhead": "Piiramatu arv kirjeid, sinu omad grupid ja täpselt sinu soovi järgi kohandatud meeldetuletused.",
+  "planFreeName": "Tasuta",
+  "planFreePeriod": "igavesti",
+  "planCurrentFooter": "Kasutad seda paketti",
+  "planFeatureRecordsLimit": "{count} kirjet",
+  "@planFeatureRecordsLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeatureCategoriesLimit": "{count} kohandatud kategooriat",
+  "@planFeatureCategoriesLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeaturePresetGroups": "Eelseadistatud grupid kirjete organiseerimiseks",
+  "planFeatureSmartInsights": "Nutikad ülevaated, mis tähistavad esmalt tähelepanu vajava",
+  "planFeatureCalendar": "Visuaalne kalender igast aegumiskuupäevast",
+  "planPremiumName": "Premium",
+  "planFeatureCustomGroups": "Kohandatud grupid",
+  "planFeatureMultipleReminders": "Mitu meeldetuletust ühel kirjel",
+  "planTrialThenMonthly": "Tasuta {days} päeva, seejärel {price}/kuu. Tühista igal ajal.",
+  "@planTrialThenMonthly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "planTrialThenYearly": "Tasuta {days} päeva, seejärel {price}/aasta. Tühista igal ajal.",
+  "@planTrialThenYearly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@plansStartFreeTrial": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "plansRestore": "Taasta ost",
+  "plansNoChargeToday": "Praegu maksu ei ole. Sulle tuletatakse meelde enne {days}-päevase prooviperioodi lõppu.",
+  "@plansNoChargeToday": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planBillingMonthly": "Kuumakse",
+  "planBillingYearly": "Aastamakse",
+  "planYearlySavePercent": "Säästa {percent}% võrreldes kuupõhise maksmisega",
+  "@planYearlySavePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "plansTaxIncluded": "Hinnad sisaldavad vajadusel makse",
+  "categoriesNoMatch": "Ükski kategooria ei vasta otsingule \"{query}\"",
+  "groupsNoMatch": "Ükski grupp ei vasta otsingule \"{query}\"",
+  "recordsNoMatch": "Ükski kirje ei vasta otsingule \"{query}\"",
+  "edit": "Muuda",
+  "reminderDaysBeforeExpiry": "päeva enne aegumist",
+  "reminderCascadeAddStep": "Lisa meeldetuletus",
+  "reminderCascadeRemoveStep": "Eemalda",
+  "reminderCascadeDuplicate": "Mõni muu meeldetuletus kasutab juba seda päeva",
+  "reminderCascadeOutOfRange": "Sisesta vahemikus {min} kuni {max} päeva",
+  "reminderCascadeStepLabel": "Meeldetuletus {position}: {days, plural, =1{1 päev} other{{days} päeva}} enne",
+  "expiryTimelineNotReady": "Sinu ajatelg ilmub siis, kui sul on kirjeid, mis aeguvad mõne erineva kuu jooksul.",
+  "verifyEmailResendIn": "Saada uuesti {seconds} s pärast",
+  "verifyEmailSpamHint": "Ei ole kohal? Kontrolli oma rämpsposti kausta.",
+  "verifyEmailWrongAddress": "Vale e-posti aadress?",
+  "verifyEmailDiscardTitle": "Kas loobuda sellest kontost?",
+  "verifyEmailDiscardBody": "See konto pole kinnitatud. Praegu lahkudes see eemaldatakse ja saad uuesti registreeruda mis tahes e-posti aadressiga.",
+  "verifyEmailDiscardAction": "Loobu",
+  "verifyEmailKeepWaiting": "Oota veel",
+  "expiringBadge": "{count, plural, =1{1 aegub peatselt} other{{count} aeguvad peatselt}}",
+  "noRecordsToday": "Täna ei aegu midagi",
+  "noRecordsTomorrow": "Homme ei aegu midagi",
+  "cascadeStepTitle": "{days, plural, =0{{recordName} aegub täna} =1{{recordName} aegub homme} other{{recordName} aegub {days} päeva pärast}}",
+  "cascadeStepBody": "{days, plural, =0{{firstName}, sinu {recordName} aegub täna. Kas oled seda juba uuendanud? Muuda aegumiskuupäeva.} =1{{firstName}, sinu {recordName} aegub homme. Uuenda seda kohe, et see ei aeguks.} other{{firstName}, sinu {recordName} aegub kuupäeval {date}. Enneaegne uuendamine tagab katvuse.}}",
+  "cascadeFinalStepTitle": "Viimane meeldetuletus: {recordName}",
+  "cascadeFinalStepBody": "{firstName}, sinu {recordName} aegub {days, plural, =1{homme} other{{days} päeva pärast, kuupäeval {date}}}. See on sinu viimane meeldetuletus, uuenda seda või muuda kuupäeva.",
+  "notificationsTitle": "Teavitused",
+  "notificationsProfileEnabledSubtitle": "Meeldetuletused saabuvad kell {time}.",
+  "notificationsProfileDisabledSubtitle": "Teavitused on välja lülitatud.",
+  "notificationsPermissionTitle": "Luba teavitused",
+  "notificationsPermissionOnSubtitle": "Vaultara saab selles seadmes saata aegumise meeldetuletusi.",
+  "notificationsPermissionOffSubtitle": "Lülita sisse, et saada meeldetuletusi enne kirjete aegumist.",
+  "reminderTimeTitle": "Meeldetuletuse aeg",
+  "appearanceTitle": "Välimus",
+  "themeModeSystem": "Süsteemi vaikeseade",
+  "themeModeLight": "Hele",
+  "themeModeDark": "Tume",
+  "profileAccountSectionTitle": "Konto",
+  "profileHelpSectionTitle": "Abi",
+  "usePassword": "Kasuta parooli",
+  "tourBannerTitle": "Uus siin? Vaata, kuidas Vaultara töötab",
+  "tourBannerBody": "Kiire tutvustus kirjete lisamise, meeldetuletuste seadmise ja oma ülevaadete lugemise kohta. Võtab aega vaid kaks minutit.",
+  "tourBannerDismiss": "Loobu",
+  "tourBannerStart": "Alusta tutvustust",
+  "passwordRuleMinLength": "Vähemalt {count} märki",
+  "passwordRuleUpper": "Suur täht",
+  "passwordRuleLower": "Väike täht",
+  "passwordRuleNumber": "Number",
+  "passwordRuleSymbol": "Erimärk",
+  "tabSignUp": "Registreeru",
+  "verifyCodeIntro": "Sisesta 6-kohaline kood, mille saatsime aadressile",
+  "verifyCodeButton": "Kinnita",
+  "resendCode": "Saada kood uuesti",
+  "verifyCodeIncomplete": "Sisesta kõik 6 numbrit.",
+  "verifyCodeWrong": "See kood ei ole õige. Kontrolli e-posti ja proovi uuesti.",
+  "verifyCodeExpired": "See kood on aegunud. Uue saamiseks puuduta Saada kood uuesti.",
+  "verifyCodeTooManyAttempts": "Liiga palju katseid. Värske koodi saamiseks puuduta Saada kood uuesti.",
+  "verifyCodeNoActive": "Aktiivset koodi pole. Selle saamiseks puuduta Saada kood uuesti.",
+  "verifyCodeFailed": "Midagi läks valesti. Proovi uuesti.",
+  "openEmailApp": "Ava e-posti rakendus",
+  "emailAppNotFound": "Sellest seadmest ei leitud e-posti rakendust.",
+  "chooseEmailApp": "Ava rakendusega",
+  "renewAction": "Uuenda",
+  "renewSheetTitle": "Märgi uuendatuks",
+  "renewSheetNewExpiry": "Uus aegumiskuupäev",
+  "renewSheetSuggestion": "Soovitatud selle kategooria tavapärase kehtivusaja põhjal. Puuduta kuupäeva, et seda muuta.",
+  "renewSheetConfirm": "Salvesta uuendus",
+  "renewHistoryTitle": "Uuenduste ajalugu",
+  "renewHistoryEntry": "Varem {previous}, nüüd {next}",
+  "renewDone": "Uuendatud. Sinu meeldetuletused järgivad nüüd uut kuupäeva.",
+  "notificationActionRenewed": "Uuendatud",
+  "notificationActionTomorrow": "Tuleta homme meelde",
+  "snoozeTitle": "Meeldetuletus: {recordName}",
+  "snoozeBody": "{recordName} aegub kuupäeval {date}. Uuenda seda või muuda kuupäeva rakenduses Vaultara.",
+  "snoozeConfirmed": "Tuletame sulle homme uuesti meelde.",
+  "costFieldLabel": "Uuendamise kulu",
+  "costFieldHint": "Uuendamise kulu (valikuline)",
+  "costCurrencyButtonTooltip": "Muuda valuutat",
+  "costCurrencyPickerTitle": "Vali valuuta",
+  "costCurrencySearchHint": "Otsi, nt ZAR",
+  "costCurrencyNoResults": "Otsingule ei vasta ükski valuuta.",
+  "costCardTitle": "Uuendamise kulud",
+  "costCardSubtitle": "Mida sinu uuendamised järgmise 12 kuu jooksul maksavad",
+  "costCardBusiest": "Kõige kulukam kuu: {month} ({amount})",
+  "costCardMissing": "{count, plural, one{{count} eesseisval kirjel pole veel kulu.} other{{count} eesseisval kirjel pole veel kulu.}}",
+  "costCardEmpty": "Lisa kirjetele kulud, et näha, mida uuendamised maksavad.",
+  "costCardLockedHint": "Premiumiga näed, mida sinu uuendamised järgmise aasta jooksul maksavad.",
+  "costCardSeePremium": "Vaata Premiumit",
+  "costRenewSheetCost": "Uuendamise kulu: {amount}",
+  "familyTitle": "Pere",
+  "familyIntro": "Jälgi nende inimeste kirjeid, kelle eest hoolitsed. Nende meeldetuletustes on nende nimi, et teaksid, kelle kirjega on tegu.",
+  "familyMe": "Mina",
+  "familyRecordCount": "{count, plural, =0{Kirjeid pole} one{{count} kirje} other{{count} kirjet}}",
+  "familyRename": "Nimeta ümber",
+  "familyRemove": "Eemalda",
+  "familyRemoveTitle": "Kas eemaldada {name}?",
+  "familyRemoveBody": "Isiku {name} kirjed jäävad Vaultarasse ja liiguvad sinule.",
+  "familyRemoved": "{name} eemaldati",
+  "familyAdded": "{name} lisati",
+  "familyAddPerson": "Lisa inimene",
+  "familyAddTitle": "Lisa inimene",
+  "familyRenameTitle": "Nimeta inimene ümber",
+  "familyNameLabel": "Nimi",
+  "familyNameHint": "Näiteks Mari",
+  "familyNameRequired": "Sisesta nimi",
+  "familyLimitNote": "{count, plural, one{Kuni {count} inimene} other{Kuni {count} inimest}}",
+  "familyUpsellTitle": "Jälgi oma pere dokumente",
+  "familyBenefitPremium": "Kõik, mis on Premiumis",
+  "familyBenefitPeople": "{count, plural, one{Lisa kuni {count} inimene} other{Lisa kuni {count} inimest}}",
+  "familyBenefitOwnRecords": "Igal inimesel on oma kirjed ja meeldetuletused",
+  "familyBenefitOneSubscription": "Üks tellimus kogu leibkonnale",
+  "familySeePlan": "Vaata Family paketti",
+  "familyPickerLabel": "Kelle kirje see on?",
+  "familyPlanName": "Family",
+  "familyPlanBuy": "Hangi Family",
+  "familyRecordDisplayName": "{person}: {recordName}",
+  "familyProfileTileTitle": "Pere",
+  "familyProfileTileSubtitle": "Jälgi nende inimeste kirjeid, kelle eest hoolitsed",
+  "planSwitchNote": "Google Play vahetab su paketi kohe ja annab sulle järelejäänud aja eest krediiti. Sinult ei võeta kunagi kaks korda tasu.",
+  "familyPlanSwitch": "Mine üle Family paketile",
+  "planSwitchToPremium": "Mine üle Premiumile",
+  "purchaseOtherAccount": "See tellimus on juba seotud teise Vaultara kontoga.",
+  "purchaseVerifyFailed": "Me ei saanud su ostu veel kinnitada. Puuduta minuti pärast nuppu Taasta ost.",
+  "signInWrongDetails": "Vale e-post või parool",
+  "signUpBlocked": "Me ei saanud praegu sinu kontot luua. Proovi hiljem uuesti.",
+  "signUpEmailNotAllowed": "Kasuta püsivat e-posti aadressi. Ajutisi e-posti teenuseid ei toetata.",
+  "guideTitle": "Kuidas uuendada",
+  "guideWhenToStart": "Millal alustada",
+  "guideChecklist": "Kontrollnimekiri",
+  "guideProgress": "{done}/{total} tehtud",
+  "guideTipTitle": "Nõuanne",
+  "guideDisclaimer": "Sammud erinevad riigiti. Täpsusta väljaandjalt.",
+  "guideMarkRenewed": "Märgi uuendatuks",
+  "guidePassportsWhen": "Alusta 9 kuni 12 kuud enne aegumist. Paljud riigid nõuavad sisenemisel 6 kuu kehtivust.",
+  "guidePassportsStep1": "Vaata väljaandva asutuse ametlikult veebilehelt kehtivat korda",
+  "guidePassportsStep2": "Tee uued fotod, mis vastavad ametlikele passifoto nõuetele",
+  "guidePassportsStep3": "Täida taotlus ning võta kaasa isikut tõendav dokument ja praegune pass",
+  "guidePassportsStep4": "Esita taotlus ja hoia alles kviitung või viitenumber",
+  "guidePassportsStep5": "Hoia vana pass alles, kuni sulle öeldakse, mida sellega teha",
+  "guidePassportsTip": "Enne reisimist kontrolli, kas vanas passis olevaid kehtivaid viisasid saab veel kasutada.",
+  "guideIdCardsWhen": "Alusta 2 kuni 3 kuud enne aegumist või varem, kui plaanid reisida.",
+  "guideIdCardsStep1": "Uuri kaardi välja andnud asutuselt, kuidas ja kus seda uuendada",
+  "guideIdCardsStep2": "Võta kaasa praegune kaart ja nõutud elukoha tõend",
+  "guideIdCardsStep3": "Broneeri vajadusel aeg, sest sind võidakse pildistada või sõrmejäljed võtta",
+  "guideIdCardsStep4": "Kui uus kaart saabub, kontrolli, et kõik andmed on õiged",
+  "guideIdCardsTip": "Pank, tööandja ja teised võivad vajada sinu uue kaardi andmeid.",
+  "guideResidencePermitsWhen": "Alusta nii vara, kui reeglid lubavad, sageli 3 kuni 4 kuud enne aegumist.",
+  "guideResidencePermitsStep1": "Tutvu migratsiooniasutuse uuendamise reeglite ja tähtaegadega",
+  "guideResidencePermitsStep2": "Võta kaasa pass, praegune luba ja tõend, et vastad endiselt tingimustele",
+  "guideResidencePermitsStep3": "Esita taotlus enne praeguse loa aegumist",
+  "guideResidencePermitsStep4": "Kanna taotluse esitamise tõendit kaasas, kuni uus luba saabub",
+  "guideResidencePermitsTip": "Hiline taotlemine võib mõjutada sinu õigust riiki jääda. Kahtluse korral küsi migratsiooniasutuselt.",
+  "guideDrivingLicencesWhen": "Alusta 1 kuni 3 kuud enne aegumist.",
+  "guideDrivingLicencesStep1": "Uuri loa väljaandja korda ja seda, kas saad uuendada veebis",
+  "guideDrivingLicencesStep2": "Võta kaasa praegune juhiluba, isikut tõendav dokument ja vajalikud fotod",
+  "guideDrivingLicencesStep3": "Broneeri vajadusel nägemiskontroll või tervisetõend",
+  "guideDrivingLicencesStep4": "Kanna ootamise ajal kaasas ajutist luba või kviitungit",
+  "guideDrivingLicencesTip": "Aegunud juhiloaga sõitmine võib mõjutada kindlustuskaitset. Uuenda õigel ajal.",
+  "guideVehicleRegistrationsWhen": "Alusta umbes 1 kuu enne aegumist.",
+  "guideVehicleRegistrationsStep1": "Vaata uuendamise teadet või sõidukite registreerimise asutuse veebilehte",
+  "guideVehicleRegistrationsStep2": "Veendu esmalt, et nõutud ülevaatus või kindlustus kehtib",
+  "guideVehicleRegistrationsStep3": "Võta kaasa sõiduki dokumendid, isikut tõendav dokument ja vajadusel elukoha tõend",
+  "guideVehicleRegistrationsStep4": "Vii uuendamine lõpuni ning hoia või kuva uus tõend nõuete järgi",
+  "guideVehicleRegistrationsTip": "Mõnes kohas on enne uuendamist vaja kehtivat tehnoülevaatust või heitgaaside kontrolli.",
+  "guideRoadworthyCertificatesWhen": "Broneeri ülevaatus 2 kuni 4 nädalat enne aegumist või enne sõiduki müüki.",
+  "guideRoadworthyCertificatesStep1": "Leia oma sõidukitüübile sobiv tunnustatud ülevaatuspunkt",
+  "guideRoadworthyCertificatesStep2": "Kontrolli enne ülevaatust tulesid, rehve, pidureid, klaasipuhastajaid ja peegleid",
+  "guideRoadworthyCertificatesStep3": "Võta ülevaatusele kaasa sõiduki dokumendid ja isikut tõendav dokument",
+  "guideRoadworthyCertificatesStep4": "Kui sõiduk ei läbi ülevaatust, paranda puudused ja broneeri korduvülevaatus",
+  "guideRoadworthyCertificatesTip": "Tunnistused kehtivad sageli lühikest aega, seega broneeri aeg vajaduse lähedale.",
+  "guideVisasWhen": "Alusta nii vara kui lubatud. Menetlus võib võtta nädalaid või isegi kuid.",
+  "guideVisasStep1": "Uuri, kas viisat saab pikendada või vajad uut",
+  "guideVisasStep2": "Veendu, et pass kehtib uue viisa jaoks piisavalt kaua",
+  "guideVisasStep3": "Võta kaasa pass, praegune viisa ja lisadokumendid",
+  "guideVisasStep4": "Taotle ainult ametlike kanalite kaudu ja hoia viitenumber alles",
+  "guideVisasTip": "Riiki jäämine pärast viisa aegumist võib tekitada tõsiseid probleeme. Kahtluse korral küsi nõu varakult.",
+  "guideStudyPermitsWhen": "Alusta 2 kuni 3 kuud enne aegumist või kohe, kui tead, et vajad rohkem aega.",
+  "guideStudyPermitsStep1": "Küsi oma kooli rahvusvahelisest osakonnast uuendamise korra kohta",
+  "guideStudyPermitsStep2": "Hangi kiri, mis kinnitab sinu õppimist ja õppeperioodi",
+  "guideStudyPermitsStep3": "Võta kaasa pass, praegune luba ja vajadusel rahaliste vahendite tõend",
+  "guideStudyPermitsStep4": "Esita taotlus enne praeguse loa aegumist ja hoia esitamise tõend alles",
+  "guideStudyPermitsTip": "Kontrolli ka passi. See võib pidada kehtima kogu õppeperioodi vältel.",
+  "guideWorkPermitsWhen": "Alusta 3 kuni 4 kuud enne aegumist.",
+  "guideWorkPermitsStep1": "Teavita tööandjat varakult, sest ta võib pidama sinu taotlust toetama",
+  "guideWorkPermitsStep2": "Tutvu migratsiooniasutuse reeglitega loa uuendamiseks",
+  "guideWorkPermitsStep3": "Võta kaasa pass, praegune luba, leping ja hiljutised palgalehed",
+  "guideWorkPermitsStep4": "Esita taotlus enne praeguse loa aegumist ja hoia esitamise tõend alles",
+  "guideWorkPermitsTip": "Uus töökoht võib nõuda uut luba. Kontrolli enne uue ameti vastuvõtmist.",
+  "guideVehicleInsurancesWhen": "Alusta 3 kuni 4 nädalat enne uuendamise kuupäeva.",
+  "guideVehicleInsurancesStep1": "Loe uuendamise teadet ning kontrolli kaitset ja omavastutust",
+  "guideVehicleInsurancesStep2": "Teavita kindlustusandjat aadressi, juhtide või sõiduki muutustest",
+  "guideVehicleInsurancesStep3": "Kui hind on tõusnud, võrdle mõnda pakkumist",
+  "guideVehicleInsurancesStep4": "Veendu, et uus kaitse algab enne vana lõppemist",
+  "guideVehicleInsurancesTip": "Paljud poliisid uuenevad ise. Kontrolli oma poliisi, et sa ei sõidaks kunagi ilma kaitseta.",
+  "guidePropertyInsurancesWhen": "Alusta 3 kuni 4 nädalat enne uuendamise kuupäeva.",
+  "guidePropertyInsurancesStep1": "Kontrolli, kas kodu ja vara kindlustusväärtus on endiselt õige",
+  "guidePropertyInsurancesStep2": "Teavita kindlustusandjat remondist, uutest väärisesemetest või turvamuudatustest",
+  "guidePropertyInsurancesStep3": "Võrdle pakkumisi ja kontrolli, mis on kaetud ja mis mitte",
+  "guidePropertyInsurancesStep4": "Veendu, et uus kaitse algab enne vana lõppemist",
+  "guidePropertyInsurancesTip": "Hoia väärtuslike asjade fotod ja tšekid alles. Need aitavad kahjunõude korral.",
+  "guideLifeInsurancesWhen": "Vaata üle 1 kuni 2 kuud enne uuendamise või ülevaatamise kuupäeva.",
+  "guideLifeInsurancesStep1": "Kontrolli, kas poliis uueneb ise või vajab sinult tegutsemist",
+  "guideLifeInsurancesStep2": "Vaata kaitse üle pärast muutusi, nagu abiellumine, lapsed või uus kodu",
+  "guideLifeInsurancesStep3": "Kontrolli, kas soodustatud isikud on endiselt õiged",
+  "guideLifeInsurancesStep4": "Räägi enne lõpetamist või vahetamist kindlustusandja või nõustajaga",
+  "guideLifeInsurancesTip": "Hoia praegune kaitse alles, kuni uus on kirjalikult kinnitatud.",
+  "guideHealthInsurancesWhen": "Alusta 1 kuni 2 kuud enne uuendamise kuupäeva.",
+  "guideHealthInsurancesStep1": "Loe uuendamise teatest kaitse ja hüvitiste muudatuste kohta",
+  "guideHealthInsurancesStep2": "Mõtle, millist ravi või abi eeldad järgmisel aastal",
+  "guideHealthInsurancesStep3": "Võrdle pakette, sh ooteaegu ja välistusi",
+  "guideHealthInsurancesStep4": "Kinnita oma valik enne tähtaega, et kaitse jätkuks",
+  "guideHealthInsurancesTip": "Paketi vahetamine võib tuua uued ooteajad. Kontrolli enne vahetamist.",
+  "guideTravelInsurancesWhen": "Aastase kaitse puhul alusta 2 nädalat enne aegumist. Reisi puhul korralda see broneerimisel.",
+  "guideTravelInsurancesStep1": "Kontrolli, et reisi kuupäevad ja kõik sihtkohad on kaetud",
+  "guideTravelInsurancesStep2": "Kontrolli ravikulude, tühistamise ja pagasi kaitset",
+  "guideTravelInsurancesStep3": "Teavita kindlustusandjat tegevustest, nagu suusatamine või sukeldumine",
+  "guideTravelInsurancesStep4": "Salvesta poliis ja hädaabinumber oma telefoni",
+  "guideTravelInsurancesTip": "Mõned riigid nõuavad sisenemisel reisikindlustuse tõendit. Kontrolli enne minekut.",
+  "guideDebitAndCreditCardsWhen": "Kontrolli 4 kuni 6 nädalat enne kaardile märgitud aegumiskuupäeva.",
+  "guideDebitAndCreditCardsStep1": "Oota uut kaarti, sest pangad saadavad selle sageli automaatselt",
+  "guideDebitAndCreditCardsStep2": "Võta pangaga ühendust, kui kaart pole 2 nädalat enne aegumist saabunud",
+  "guideDebitAndCreditCardsStep3": "Aktiveeri uus kaart nii, nagu pank juhendab",
+  "guideDebitAndCreditCardsStep4": "Muuda kaardiandmeid tellimustes ja salvestatud maksetes",
+  "guideDebitAndCreditCardsStep5": "Hävita vana kaart, kui uus töötab",
+  "guideDebitAndCreditCardsTip": "Pank ei küsi kunagi sinu PIN-koodi. Ära vasta kõnedele ega sõnumitele, mis seda küsivad.",
+  "guideStoreCardsWhen": "Kontrolli umbes 1 kuu enne aegumist.",
+  "guideStoreCardsStep1": "Uuri, kas pood saadab uue kaardi või viib selle oma rakendusse",
+  "guideStoreCardsStep2": "Veendu, et punktid või saldo kanduvad uuele kaardile",
+  "guideStoreCardsStep3": "Muuda oma kontaktandmeid poe juures",
+  "guideStoreCardsStep4": "Võta poega ühendust, kui enne aegumist midagi ei saabu",
+  "guideStoreCardsTip": "Kasuta ära punktid või vautšerid, mis võivad koos vana kaardiga aeguda.",
+  "guideProfessionalLicencesWhen": "Alusta 2 kuni 3 kuud enne aegumist.",
+  "guideProfessionalLicencesStep1": "Tutvu oma kutseorganisatsiooni uuendamise nõuete ja tähtajaga",
+  "guideProfessionalLicencesStep2": "Veendu, et nõutud koolitus- või õppetunnid on läbitud",
+  "guideProfessionalLicencesStep3": "Kogu kokku nõutud tunnistused ja praktika tõendid",
+  "guideProfessionalLicencesStep4": "Esita uuendamise taotlus ja hoia kinnitus alles",
+  "guideProfessionalLicencesTip": "Jälgi koolitustunde aasta jooksul, et uuendamisega ei tekiks kiiret.",
+  "guideWorkAccessCardsWhen": "Alusta 2 kuni 4 nädalat enne aegumist.",
+  "guideWorkAccessCardsStep1": "Küsi turva- või personaliosakonnalt, kuidas pääsukaarti uuendada",
+  "guideWorkAccessCardsStep2": "Läbi nõutud koolitused, kontrollid või vormid",
+  "guideWorkAccessCardsStep3": "Võta kaasa isikut tõendav dokument, kui vaja on uut fotot või kaarti",
+  "guideWorkAccessCardsStep4": "Tagasta vana kaart, kui seda palutakse",
+  "guideWorkAccessCardsTip": "Mõnes kohas on vaja taustakontrolli, mis võtab nädalaid. Küsi varakult.",
+  "guideLeaseAgreementsWhen": "Alusta 2 kuni 3 kuud enne üürilepingu lõppu või enne etteteatamisaja algust.",
+  "guideLeaseAgreementsStep1": "Vaata lepingust etteteatamisaega ja pikendamise tingimusi",
+  "guideLeaseAgreementsStep2": "Teata üürileandjale või maaklerile kirjalikult, kas jääd või lahkud",
+  "guideLeaseAgreementsStep3": "Loe uut lepingut hoolikalt, eriti üüri ja kestuse osas",
+  "guideLeaseAgreementsStep4": "Hoia alles uue lepingu allkirjastatud koopiad ja oma sõnumid",
+  "guideLeaseAgreementsTip": "Kolid välja? Tee eluruumist kuupäevaga fotod, et tagatisraha tagasi saada.",
+  "guideAccessCardsAndTagsWhen": "Kontrolli 2 kuni 4 nädalat enne aegumist.",
+  "guideAccessCardsAndTagsStep1": "Võta ühendust hoone, elurajooni, spordiklubi või klubiga, mis selle väljastas",
+  "guideAccessCardsAndTagsStep2": "Küsi, mida nad vajavad, näiteks isikut tõendavat dokumenti või tõendit, et elad või kuulud sinna",
+  "guideAccessCardsAndTagsStep3": "Lepi kokku uue kaardi või kiibi kättesaamine või aktiveerimine",
+  "guideAccessCardsAndTagsStep4": "Proovi uut enne, kui vana enam ei tööta",
+  "guideAccessCardsAndTagsTip": "Teata kadunud kaardist või kiibist kohe, et selle saaks blokeerida.",
+  "homeWidgetTitle": "Järgmisena aegub",
+  "homeWidgetEmpty": "Peagi ei aegu midagi",
+  "recordMenuMore": "Rohkem valikuid",
+  "recordMenuShareLink": "Jaga turvalist linki",
+  "scanButtonTitle": "Pildista ja lisa",
+  "scanButtonSubtitle": "Pildista kaarti või dokumenti, et see täita",
+  "scanButtonBusy": "Loen sinu fotot…",
+  "scanSourceTitle": "Lisa fotolt",
+  "scanSourceHint": "Veendu, et aegumiskuupäev on selge ja teravalt näha.",
+  "scanSourceCamera": "Tee foto",
+  "scanSourceGallery": "Vali galeriist",
+  "scanFoundExpiryAndGroup": "Täitsime aegumiskuupäeva ja grupi. Kontrolli neid enne salvestamist.",
+  "scanFoundExpiryAndCategory": "Täitsime aegumiskuupäeva ja kategooria. Vali grupp ja kontrolli andmeid enne salvestamist.",
+  "scanFoundExpiry": "Täitsime aegumiskuupäeva. Kontrolli seda enne salvestamist.",
+  "scanFoundGroup": "Täitsime grupi. Lisa enne salvestamist aegumiskuupäev.",
+  "scanFoundCategory": "Täitsime kategooria. Vali grupp ja lisa aegumiskuupäev.",
+  "scanFoundNumberOnly": "Lisasime numbri sinu märkmetesse. Täida ülejäänu allpool.",
+  "scanFoundNothing": "Me ei suutnud sellelt fotolt andmeid lugeda. Täida need allpool.",
+  "scanFoundNumberAdded": "Lisasime numbri ka sinu märkmetesse.",
+  "scanBannerDismiss": "Sulge",
+  "scanNotesNumber": "Number: {number}",
+  "scanFailed": "Kaamerat või fotot ei õnnestunud avada. Kontrolli kaamera juurdepääsu ja proovi uuesti.",
+  "shareLinkCreating": "Loon turvalist linki...",
+  "shareLinkError": "Linki ei õnnestunud luua. Proovi uuesti.",
+  "shareLinkSubject": "{name} – Vaultara",
+  "shareLinkMessage": "Siin on minu dokumendi {name} andmed: {url}\nLink kehtib kuni {time}.",
+  "exportNoRecords": "Sul pole veel ühtegi kirjet, mida eksportida.",
+  "exportHolderLine": "Kuulub: {name}",
+  "exportSectionTitle": "Eksport",
+  "exportPdfTitle": "Ekspordi PDF-ina",
+  "exportPdfSubtitle": "Prinditav nimekiri kõigist sinu kirjetest",
+  "exportCalendarTitle": "Lisa kalendrisse",
+  "exportCalendarSubtitle": "Lisa kõik aegumiskuupäevad oma kalendrirakendusse",
+  "calendarExportEventTitle": "{name} aegub",
+  "calendarExportAlarm": "{name} aegub nädala pärast",
+  "calendarExportSubject": "Vaultara aegumiskuupäevad",
+  "calendarExportError": "Kalendrifaili ei õnnestunud luua. Proovi uuesti.",
+  "pdfExportTitle": "Vaultara kirjed",
+  "pdfExportGenerated": "Loodud {date}",
+  "pdfExportCount": "{count, plural, one{{count} kirje} other{{count} kirjet}}",
+  "pdfExportCost": "Uuendamise kulu: {amount}",
+  "pdfExportBuilding": "Valmistan sinu PDF-i ette...",
+  "pdfExportError": "PDF-i ei õnnestunud luua. Proovi uuesti.",
+  "travelTitle": "Reisikontroll",
+  "travelDeparture": "Lahkumine",
+  "travelReturn": "Tagasitulek",
+  "travelTripLength": "{days, plural, one{{days}-päevane reis} other{{days}-päevane reis}}",
+  "travelDriving": "Sõidan autoga",
+  "travelNeedsVisa": "Vajan viisat",
+  "travelWho": "Kes reisib?",
+  "travelMe": "Mina",
+  "travelResultsTitle": "Sinu kirjed selle reisi jaoks",
+  "travelPassportOk": "Pass kehtib",
+  "travelPassportTooShort": "Pass aegub liiga varsti pärast reisi",
+  "travelPassportExpiresDuringTrip": "Pass aegub enne sinu tagasitulekut",
+  "travelNoPassport": "Passi pole lisatud",
+  "travelVisaOk": "Viisa katab sinu reisi",
+  "travelVisaExpiresBeforeReturn": "Viisa aegub enne sinu tagasitulekut",
+  "travelNoVisa": "Viisat pole lisatud",
+  "travelInsuranceOk": "Reisikindlustus katab sinu reisi",
+  "travelInsuranceEndsDuringTrip": "Reisikindlustus lõpeb enne sinu tagasitulekut",
+  "travelNoInsurance": "Reisikindlustust pole lisatud",
+  "travelLicenceOk": "Juhiluba kehtib",
+  "travelLicenceExpiresDuringTrip": "Juhiluba aegub enne sinu tagasitulekut",
+  "travelNoLicence": "Juhiluba pole lisatud",
+  "travelOtherExpires": "Aegub sinu reisi ajal",
+  "travelDetailValidUntil": "{name} kehtib kuni {date}.",
+  "travelDetailPassportBuffer": "{name} aegub {date}. Paljud riigid nõuavad, et pärast tagasitulekut oleks jäänud {months, plural, one{{months} kuu} other{{months} kuud}}.",
+  "travelDetailExpiresBeforeLeaving": "{name} aegub {date}, enne sinu lahkumist.",
+  "travelDetailExpiresDuringTrip": "{name} aegub {date}, {days, plural, =0{lahkumise päeval} one{{days} päev pärast reisi algust} other{{days} päeva pärast reisi algust}}.",
+  "travelDetailNoPassport": "Lisa oma pass, et Vaultara saaks seda kontrollida.",
+  "travelDetailNoVisa": "Lisa oma viisa, et Vaultara saaks seda kontrollida.",
+  "travelDetailNoInsurance": "Lisa oma reisikindlustus, et kontrollida, kas see katab kogu reisi.",
+  "travelDetailNoLicence": "Lisa oma juhiluba, et Vaultara saaks seda kontrollida.",
+  "travelPremiumTitle": "Reisikontroll on osa Premiumist",
+  "travelPremiumBody": "Sisesta reisi kuupäevad ja Vaultara kontrollib sinu passi, viisat, reisikindlustust ja juhiluba ning näitab kõiki kirjeid, mis sinu reisi ajal aeguvad.",
+  "travelSeePremium": "Vaata Premiumit",
+  "travelCardTitle": "Plaanid reisi?",
+  "travelCardBody": "Kontrolli enne minekut oma passi, viisat ja kindlustust.",
+  "travelPremiumChip": "Premium",
+  "editRecordTitle": "Muuda kirjet",
+  "editorMoreDetails": "Rohkem üksikasju",
+  "editorMoreDetailsHint": "Kordub, märkmed, kulu, fotod ja palju muud",
+  "travelNewTrip": "Uus reis",
+  "travelEditTrip": "Muuda reisi",
+  "travelPlanTrip": "Planeeri reis",
+  "travelTripName": "Sihtkoht",
+  "travelTripNameHint": "Näiteks Hispaania või Riia",
+  "travelErrorTripName": "Sisesta sihtkoht",
+  "travelErrorTravellers": "Vali vähemalt üks inimene",
+  "travelDateChoose": "Vali kuupäev",
+  "travelErrorDates": "Vali nii lahkumis- kui ka tagasipöördumiskuupäev",
+  "travelSaveFailed": "Reisi salvestamine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.",
+  "travelNights": "Ööd: {nights}",
+  "travelDaysShort": "Päevi: {days}",
+  "travelAtDestination": "Päevi sihtkohas: {days}",
+  "travelSectionJourney": "Sinu reis",
+  "travelFlights": "Lennud",
+  "travelFlightsHint": "Lisa oma lennud, et näha, millal maandud ja mitu päeva seal oled.",
+  "travelFlightAdd": "Lisa lend",
+  "travelFlightEdit": "Lennu andmed",
+  "travelFlightFrom": "Kust",
+  "travelFlightTo": "Kuhu",
+  "travelFlightPlaceHint": "Linn või lennujaam",
+  "travelFlightDeparts": "Väljumine",
+  "travelFlightLands": "Saabumine",
+  "travelFlightError": "Lisa, kust lend väljub, kuhu see maandub ja mõlemad kuupäevad",
+  "travelFlightErrorOrder": "Lend ei saa maanduda enne väljumist",
+  "travelDateLabel": "Kuupäev",
+  "travelTimeLabel": "Kellaaeg",
+  "travelTimeChoose": "Lisa kellaaeg",
+  "travelEmptyTitle": "Reise veel pole",
+  "travelEmptyBody": "Lisa reis ja Vaultara kontrollib kõigi passi, viisat, kindlustust ja juhiluba sinu kuupäevade järgi. Saad enne lahkumist kontrollnimekirja ja meeldetuletuse.",
+  "travelUpcoming": "Tulevased reisid",
+  "travelPast": "Varasemad reisid",
+  "travelStartsIn": "{days, plural, one{Lahkumine {days} päeva pärast} other{Lahkumine {days} päeva pärast}}",
+  "travelLeavesToday": "Lahkumine täna",
+  "travelLeavesTomorrow": "Lahkumine homme",
+  "travelInProgress": "Reis käib",
+  "travelTripEnded": "Reis on lõppenud",
+  "travelAllGood": "Kõik dokumendid on valmis",
+  "travelIssues": "{count, plural, one{{count} asi vajab tähelepanu} other{{count} asja vajavad tähelepanu}}",
+  "travelChecklistTitle": "Reisi kontrollnimekiri",
+  "travelChecklistProgress": "{done} / {total} tehtud",
+  "travelChecklistAdd": "Lisa",
+  "travelChecklistAddHint": "Lisa oma punkt",
+  "travelItemPassportPhoto": "Passi foto telefoni salvestatud",
+  "travelItemVisa": "Viisa või reisiluba valmis (näiteks ESTA või eTA)",
+  "travelItemInsurance": "Reisikindlustuse poliis ja hädaabinumber",
+  "travelItemDrivingPermit": "Rahvusvaheline juhiluba, kui riik seda nõuab",
+  "travelItemVaccination": "Vaktsineerimistõend, kui riik seda nõuab",
+  "travelItemBank": "Anna pangale teada, et reisid",
+  "travelItemEmergency": "Hädaabikontaktid kirja pandud",
+  "travelItemChargers": "Laadijad ja pistikuadapter",
+  "travelShareSummary": "Jaga PDF-i",
+  "travelAddToCalendar": "Lisa kalendrisse",
+  "travelDeleteTrip": "Kustuta reis",
+  "travelDeleteTripConfirm": "Kas kustutada see reis ja selle kontrollnimekiri? Sinu kirjed jäävad alles.",
+  "travelTripTo": "Reis: {name}",
+  "travelReminderTitle": "{days, plural, one{Reis: {name} {days} päeva pärast} other{Reis: {name} {days} päeva pärast}}",
+  "travelReminderTitleTomorrow": "Reis: {name} homme",
+  "travelReminderBodyIssues": "{count, plural, one{{count} dokument vajab enne lahkumist tähelepanu.} other{{count} dokumenti vajavad enne lahkumist tähelepanu.}}",
+  "travelReminderBodyOk": "Sinu dokumendid on valmis. Ava reis, et nimekiri üle vaadata.",
+  "travelTripLimit": "Saad salvestada kuni {count} reisi. Uue lisamiseks kustuta mõni vana reis.",
+  "recordLockTitle": "Lukusta see kirje",
+  "recordLockSubtitle": "Küsi enne üksikasjade näitamist sõrmejälge, nägu või ekraanilukku",
+  "recordLockReason": "Ava selle kirje lukk",
+  "recordLockNoDeviceLock": "Seadista esmalt oma telefonis ekraanilukk.",
+  "repeatLabel": "Kordub",
+  "repeatHelper": "Tellimuste jaoks. Kui kuupäev möödub, lükkab Vaultara selle ise edasi.",
+  "repeatNever": "Ei kordu",
+  "repeatEveryMonths": "{months, plural, one{Iga {months} kuu järel} other{Iga {months} kuu järel}}",
+  "repeatEveryMonth": "Iga kuu",
+  "repeatEveryYear": "Iga aasta",
+  "dataExportTitle": "Laadi minu andmed alla",
+  "dataExportSubtitle": "Salvesta koopia kõigest, mida Vaultaras hoiad",
+  "dataExportBuilding": "Valmistan sinu andmeid ette...",
+  "dataExportError": "Sinu andmeid ei õnnestunud ette valmistada. Proovi uuesti.",
+  "shortcutScan": "Skanni dokument",
+  "tutorialAddRecordScan": "Pildista kaarti või dokumenti ja Vaultara täidab andmed sinu eest.",
+  "vaultTitle": "Fotod",
+  "vaultCount": "{count}/{limit}",
+  "vaultAdd": "Lisa",
+  "vaultAddPhoto": "Lisa foto",
+  "vaultLimitShort": "Piir",
+  "vaultTakePhoto": "Tee foto",
+  "vaultChooseFromGallery": "Vali galeriist",
+  "vaultRemove": "Eemalda",
+  "vaultLimitTitle": "Fotode piir on täis",
+  "vaultLimitFreeBody": "Tasuta paketiga saad igale kirjele lisada {limit, plural, one{{limit} foto} other{{limit} fotot}}. Premiumiga saad lisada kuni {premiumLimit}.",
+  "vaultLimitPremiumBody": "Igale kirjele saad lisada kuni {limit} fotot. Teise lisamiseks eemalda üks.",
+  "vaultSeePremium": "Vaata Premiumit",
+  "vaultPdfShort": "PDF",
+  "vaultPdfFile": "PDF-fail",
+  "vaultOpenFile": "Ava",
+  "vaultClose": "Sulge",
+  "vaultPageIndicator": "{current}/{total}",
+  "vaultPhotosTooltip": "{count, plural, one{{count} foto} other{{count} fotot}}",
+  "travelReadinessTitle": "Reisivalmidus",
+  "travelReadinessBody": "Põhineb Vaultaras salvestatud passidel ja juhilubadel. Enamik riike nõuab, et passi kehtivust oleks tagasipöördumisel jäänud vähemalt 6 kuud.",
+  "travelReadyUntil": "Pass sobib reisideks kuni {date}",
+  "travelPassportTooShortNow": "Pass aegub {date}. Enamik riike ei võta seda praegu vastu.",
+  "travelPassportExpiredOn": "Pass aegus {date}",
+  "travelNoPassportSaved": "Passi pole salvestatud",
+  "travelLicenceValidUntil": "Juhiluba kehtib kuni {date}",
+  "travelLicenceExpiredOn": "Juhiluba aegus {date}",
+  "shareIncludePhotosTitle": "Kas lisada fotod?",
+  "shareIncludePhotosBody": "Igaüks, kellel on link, näeb jagatut kuni lingi aegumiseni. Dokumentide fotodel on isiklikud andmed.",
+  "shareDetailsOnly": "Ainult andmed",
+  "shareWithPhotos": "Koos fotodega",
+  "sharedLinksTitle": "Jagatud lingid",
+  "sharedLinksSubtitle": "Vaata jagatud linke ja peata need",
+  "sharedLinksEmpty": "Sul pole aktiivseid jagatud linke.",
+  "sharedLinksExpires": "Link töötab kuni {date}",
+  "sharedLinksStop": "Peata",
+  "sharedLinksStopped": "Link on peatatud. See ei tööta enam.",
+  "sharedLinksError": "Jagatud linke ei õnnestunud laadida. Proovi uuesti.",
+  "sharedLinksUnknownRecord": "Kustutatud kirje",
+  "leadLabel": "Uuendamine võtab umbes",
+  "leadHelper": "Vaultara hakkab sind varakult meelde tuletama, et jõuaksid õigel ajal uuendada.",
+  "leadNotSet": "Ei tea",
+  "leadWeeks": "{weeks, plural, one{{weeks} nädal} other{{weeks} nädalat}}",
+  "leadMonths": "{months, plural, one{{months} kuu} other{{months} kuud}}",
+  "walletTileTitle": "Minu rahakotis",
+  "walletTileSubtitle": "Kui kaotad rahakoti, näitab Vaultara, mida asendada",
+  "startRenewingBy": "Alusta uuendamist hiljemalt {date}",
+  "startRenewingNow": "On aeg uuendamist alustada",
+  "lostWalletTitle": "Kaotasin rahakoti",
+  "lostWalletSubtitle": "Vaata, mis seal oli ja mida asendada",
+  "lostWalletFirstSteps": "Tee need kõigepealt",
+  "lostWalletStepCards": "Helista pangale ja lukusta pangakaardid, mis rahakotis olid.",
+  "lostWalletStepReport": "Teata kaotusest politseile ja säilita juhtumi number. Paljud asutused küsivad seda dokumendi asendamisel.",
+  "lostWalletStepReplace": "Käi allolev loend läbi ja märgi iga asi ära, kui oled uue taotlenud.",
+  "lostWalletEmptyTitle": "Midagi pole veel märgitud",
+  "lostWalletEmptyBody": "Ava kirje, puuduta Rohkem üksikasju ja lülita sisse Minu rahakotis. Tee seda isikutunnistuse, juhiloa ja kaartide jaoks, mida kaasas kannad, et loend oleks valmis, kui seda kunagi vaja läheb.",
+  "lostWalletProgress": "Asendatud: {done} / {total}",
+  "lostWalletStartOver": "Alusta otsast",
+  "lostWalletHowToReplace": "Kuidas asendada",
+  "lifeEventsTitle": "Elusündmused",
+  "lifeEventsSubtitle": "Kolimine, uus nimi või uus auto? Vaata, mida uuendada",
+  "lifeEventsIntro": "Vali, mis sinu elus toimub. Vaultara loetleb salvestatud kirjed, mida see tavaliselt uuendada nõuab.",
+  "lifeEventMoving": "Ma kolin",
+  "lifeEventMovingBody": "Nendel on tavaliselt sinu aadress. Uuenda iga üks pärast kolimist.",
+  "lifeEventName": "Ma vahetan nime",
+  "lifeEventNameBody": "Nendel on sinu nimi. Enamik vajab uuendamist pärast abiellumist või nimevahetust.",
+  "lifeEventCar": "Ostsin või müüsin auto",
+  "lifeEventCarBody": "Anna üle, uuenda või lõpeta need auto jaoks.",
+  "lifeEventJob": "Alustan tööd või lahkun töölt",
+  "lifeEventJobBody": "Tagasta, lõpeta või vii need üle, kui töökoht muutub.",
+  "lifeEventCountry": "Kolin teise riiki",
+  "lifeEventCountryBody": "Kontrolli neid kõiki enne lahkumist ja uuesti pärast saabumist.",
+  "lifeEventNone": "See ei mõjuta ühtegi sinu salvestatud kirjet.",
+  "lifeEventCount": "{count, plural, one{{count} sinu kirje} other{{count} sinu kirjet}}",
+  "lifeEventProgress": "Uuendatud: {done} / {total}",
+  "proofPackTitle": "Tõendipakett",
+  "proofPackSubtitle": "Pane valitud kirjed ja nende fotod ühte PDF-i",
+  "proofPackIntro": "Vali kirjed, mida keegi sinult küsis, näiteks tööandja, saatkond või kindlustaja. Vaultara paneb need ühte PDF-i, mille saad e-postiga saata või üles laadida.",
+  "proofPackPhotos": "Lisa fotod",
+  "proofPackCreate": "{count, plural, one{Loo PDF {count} kirjega} other{Loo PDF {count} kirjega}}",
+  "proofPackPickOne": "Vali vähemalt üks kirje",
+  "proofPackPrepared": "Koostatud {date}",
+  "proofPackExpires": "Aegub {date}",
+  "proofPackBuilding": "PDF-i loomine",
+  "proofPackError": "PDF-i ei õnnestunud luua. Proovi uuesti.",
+  "proofPackPdfSkipped": "Sellel kirjel on ka PDF-fail, mida siia ei lisata.",
+  "smartToolsSection": "Nutikad tööriistad",
+  "smartInsightExpiredHeading": "Juba aegunud",
+  "smartInsightExpiredBody": "{name} aegus {date}. Uuenda seda kohe või muuda kuupäeva, kui oled selle juba uuendanud.",
+  "smartInsightExpiresSoonHeading": "Aegub sel nädalal",
+  "smartInsightExpiresTomorrowBody": "{name} aegub homme. Uuenda seda täna, kui saad.",
+  "smartInsightExpiresSoonBody": "{days, plural, one{{name} aegub {days} päeva pärast. Uuenda seda peagi, et see ei aeguks.} other{{name} aegub {days} päeva pärast. Uuenda seda peagi, et see ei aeguks.}}",
+  "smartInsightStartRenewingHeading": "On aeg uuendamisega alustada",
+  "smartInsightStartRenewingBody": "{days, plural, one{Plaanisid alustada kirje {name} uuendamist {days} päeva enne aegumist. See aegub {date}, nii et nüüd on õige aeg.} other{Plaanisid alustada kirje {name} uuendamist {days} päeva enne aegumist. See aegub {date}, nii et nüüd on õige aeg.}}",
+  "smartInsightNoReminderHeading": "Meeldetuletus puudub",
+  "smartInsightPassportHeading": "Pass aegub peagi",
+  "smartInsightPassportTooShortBody": "{name} aegub {date}. Enamik riike nõuab vähemalt 6 kuud kehtivust, nii et seda ei pruugita reisiks praegu vastu võtta.",
+  "smartInsightPassportSoonHeading": "Passi uuendamine läheneb",
+  "smartInsightPassportSoonBody": "Alates {date} on dokumendil {name} alla 6 kuu kehtivust. Paljud riigid ei võta seda pärast seda reisiks vastu, nii et planeeri uuendamine.",
+  "smartInsightTripHeading": "Su reis vajab tähelepanu",
+  "smartInsightTripBody": "{count, plural, one{{trip} algab {date} ja enne minekut on vaja korda teha {count} asi.} other{{trip} algab {date} ja enne minekut on vaja korda teha {count} asja.}}",
+  "smartInsightActionOpenTrip": "Ava reis",
+  "smartInsightBusyMonthHeading": "Kiire kuu on ees",
+  "smartInsightBusyMonthBody": "{count, plural, one{Kuu {month}: aegub {count} kirje. Planeeri see varakult.} other{Kuu {month}: aegub {count} kirjet. Planeeri need koos, et ükski ei jääks märkamata.}}",
+  "smartInsightBusyMonthCostBody": "{count, plural, one{Kuu {month}: aegub {count} kirje, uuendamine maksab umbes {amount}. Planeeri see varakult.} other{Kuu {month}: aegub {count} kirjet, uuendamine maksab umbes {amount}. Planeeri need koos.}}",
+  "smartInsightActionSeeTimeline": "Vaata ajatelge",
+  "smartInsightMissingRemindersHeading": "Kirjed ilma meeldetuletuseta",
+  "smartInsightMissingReminderSingleBody": "{name} aegub {date} ja sellel pole veel meeldetuletust. Lisa see, et sind ei tabaks üllatus.",
+  "smartInsightMissingRemindersBody": "{count, plural, one{{count} tulevasel kirjel puudub meeldetuletus, alustades kirjega {name}. Lisa meeldetuletused, et sind ei tabaks üllatus.} other{{count} tulevasel kirjel puudub meeldetuletus, alustades kirjega {name}. Lisa meeldetuletused, et sind ei tabaks üllatus.}}",
+  "smartInsightWalletPhotoHeading": "Salvesta foto",
+  "smartInsightWalletPhotoSingleBody": "{name} on sinu rahakotis, aga sellel pole fotot. Kui rahakott kaob, teeb foto asendamise palju lihtsamaks.",
+  "smartInsightWalletPhotoBody": "{count, plural, one{{count} rahakotis olevale esemele pole fotot, alustades esemega {name}. Kui rahakott kaob, teevad fotod asendamise palju lihtsamaks.} other{{count} rahakotis olevale esemele pole fotot, alustades esemega {name}. Kui rahakott kaob, teevad fotod asendamise palju lihtsamaks.}}",
+  "smartInsightActionAddPhoto": "Lisa foto",
+  "smartInsightRenewedHeading": "Hästi tehtud",
+  "smartInsightRenewedBody": "Uuendasid hiljuti kirje {name} ja praegu ei vaja miski tähelepanu. Järgmisena on kirje {next} kuupäeval {date}.",
+  "smartInsightRenewedNoNextBody": "Uuendasid hiljuti kirje {name} ja praegu ei vaja miski tähelepanu.",
+  "smartInsightMoreHeading": "Veel kontrollida",
+  "smartInsightMoreCount": "{count, plural, one{Lisaks veel {count}} other{Lisaks veel {count}}}",
+  "planTabIndividual": "Üksikisik",
+  "planTabBusiness": "Business",
+  "planGetPremium": "Hangi Premium",
+  "businessPlanBuy": "Hangi Business",
+  "businessPlanSwitch": "Lülitu paketile Business",
+  "planSwitchToYearly": "Lülitu aastamaksele",
+  "planSwitchToMonthly": "Lülitu kuumaksele",
+  "planTrialDays": "{count, plural, one{{count} päev} other{{count} päeva}}",
+  "planTrialMonths": "{count, plural, one{{count} kuu} other{{count} kuud}}",
+  "planTrialCta": "Proovi {length} tasuta",
+  "planTrialThen": "Tasuta {length}, seejärel {price}{period}. Tühista millal tahes.",
+  "planTrialNoCharge": "Praegu makset pole. Tuletame sulle enne tasuta prooviaja lõppu meelde.",
+  "planBilledLine": "{price}{period}. Tühista millal tahes.",
+  "businessBenefitFamily": "Kõik, mis on paketis Family",
+  "businessBenefitStaffVehicles": "Töötajate ja sõidukite kirjed ühes kohas",
+  "businessBenefitPdf": "Meeskonna PDF-eksport sinu ettevõtte nimega",
+  "businessMorePeople": "Vajad ruumi rohkematele inimestele? Business mahutab kuni {count}.",
+  "businessSeePlan": "Vaata paketti Business",
+  "companyNameTitle": "Ettevõtte nimi",
+  "companyNameHint": "Näiteks Bay Couriers",
+  "companyNameHelp": "Prinditakse sinu PDF-ide ülaossa",
+  "companyNameAdd": "Lisa ettevõtte nimi",
+  "companyNameSaved": "Ettevõtte nimi salvestatud",
+  "scanFoundPassport": "Pass leitud",
+  "scanFoundIdCard": "Isikutunnistus leitud",
+  "scanFoundLicenceDisc": "Litsentsiketas leitud",
+  "scanLicenceCardNote": "Juhiloa kaardi vöötkood on lukustatud, seega lugesime trükitud teksti.",
+  "scanFoundHolder": "Määrasime omanikuks {name}.",
+  "scanNamePassport": "Pass",
+  "scanNameIdCard": "Isikutunnistus",
+  "scanNameLicenceDisc": "Litsentsiketas {plate}",
+  "scanNotesVehicle": "Sõiduk: {details}",
+  "travelActionAdd": "Lisa",
+  "travelActionUpdateDate": "Uuenda kuupäev",
+  "travelCountryLimit": "Saad valida kuni {count} riiki",
+  "travelCountryNone": "Otsingule ei vasta ükski riik",
+  "travelCountrySearch": "Otsi riike",
+  "travelDestinationChoose": "Vali, kuhu sa lähed",
+  "travelDestinationHint": "Vali selle reisi jaoks kuni {count} riiki",
+  "travelTripNameOptional": "Reisi nimi (valikuline)",
+  "travelErrorNameOrDestination": "Vali sihtkoht või sisesta reisi nimi",
+  "travelDetailPassportNeeds": "{name} aegub {date}. See reis nõuab, et see kehtiks kuni {needed}.",
+  "travelReadySchengenUntil": "Sobib siiski Schengen-ala reisideks, mis lõpevad hiljemalt {date}",
+  "travelFixBeforeYouGo": "{count, plural, one{{count} asi tuleb enne minekut korda teha} other{{count} asja tuleb enne minekut korda teha}}",
+  "travelDaysToGo": "{count, plural, one{{count} päev minekuni} other{{count} päeva minekuni}}",
+  "travelSectionWho": "Kes läheb",
+  "travelSectionReminders": "Meeldetuletused",
+  "travelRemindersBody": "Vaultara tuletab sulle neil päevadel meelde ja kontrollib iga kord su dokumente uuesti.",
+  "travelRemindersPassed": "Selle reisi meeldetuletuspäevad on möödas.",
+  "travelReminderBefore": "{days, plural, one{{days} päev enne väljumist} other{{days} päeva enne väljumist}}",
+  "travelStatusReady": "Valmis",
+  "travelStatusToFix": "{count, plural, one{{count} parandada} other{{count} parandada}}",
+  "travelStatusToCheck": "{count, plural, one{{count} kontrollida} other{{count} kontrollida}}",
+  "travelRuleTitle": "Passi reegel",
+  "travelRuleSixMonths": "Pass kehtib 6 kuud pärast tagasitulekut",
+  "travelRuleThreeMonths": "Pass kehtib 3 kuud pärast tagasitulekut",
+  "travelRuleThreeMonthsSchengen": "Pass kehtib 3 kuud pärast Schengen-alalt lahkumist",
+  "travelRuleWholeTrip": "Pass kehtib kogu reisi vältel",
+  "travelRuleAuto": "Automaatne, sihtkoha järgi",
+  "travelRuleReasonNoDestination": "Sihtkohta pole valitud, seega kasutab Vaultara 6 kuud, mida enamik riike aktsepteerib.",
+  "travelRuleReasonFrom": "Põhineb: {places}.",
+  "travelRuleReasonChosen": "Valisid selle reegli sellele reisile.",
+  "travelRuleEmbassy": "Enne reisi kontrolli saatkonna reegleid.",
+  "travelRuleChange": "Muuda reeglit",
+  "travelItemLicence": "Juhiluba pakitud",
+  "travelItemRoute": "Sisenemisreeglid kontrollitud iga marsruudil oleva riigi kohta",
+  "travelItemGroupCopies": "Kõigi passide koopiad ühes jagatud kohas",
+  "travelItemLongTrip": "Arved, post ja taimed korda tehtud, kuni oled ära",
+  "tutorialsTravelTitle": "Reisikontroll",
+  "tutorialsTravelSubtitle": "Kontrolli dokumente enne reisi",
+  "tutorialsSmartToolsTitle": "Nutikate tööriistade kasutamine",
+  "tutorialsSmartToolsSubtitle": "Kaotatud rahakott, elusündmused, tõendipaketid ja jagatud lingid",
+  "tutorialsFamilyTitle": "Pere ja inimesed",
+  "tutorialsFamilySubtitle": "Lisa inimesi ja vali, kelle kirje see on",
+  "tutorialsPlansTitle": "Paketi valimine",
+  "tutorialsPlansSubtitle": "Võrdle pakette ja makseviise",
+  "tutorialsCompletedLabel": "Lõpetatud",
+  "tutorialAddRecordMoreDetails": "Rohkem üksikasju sisaldab lisasid: märkmed, kordus, uuendamise aeg, kelle kirje see on, lukk, rahakott ja fotod. Ava see ainult siis, kui seda vaja on.",
+  "tutorialAddRecordRepeat": "Kordub nihutab kuupäeva edasi tellimuste jaoks. Uuendamine võtab umbes ütleb Vaultarale, kui kaua uuendamine aega võtab, et meeldetuletused algaksid piisavalt vara.",
+  "tutorialAddRecordProtect": "Lukusta kirje, et enne selle näitamist küsitaks sinu sõrmejälge või ekraanilukku. Märgi kaardid valikuga Minu rahakotis ja lisa dokumendist fotosid.",
+  "tutorialTravelReadiness": "Reisivalmidus kontrollib Vaultaras salvestatud passe ja juhilube, nii sinu kui ka nende inimeste omi, kelle eest hoolitsed.",
+  "tutorialTravelLocked": "Premiumiga saad reise planeerida ja näha, milliseid dokumente iga reisija enne lahkumist uuendama peab.",
+  "tutorialTravelTripCard": "Iga reis näitab, millal lähed ja mida on enne minekut vaja korda teha. Puuduta reisi, et see avada.",
+  "tutorialTravelPlanTrip": "Puuduta valikut Planeeri reis, et lisada, kuhu lähed, millal ja kes reisib.",
+  "tutorialTravelTripDocuments": "Reisi sees kontrollib Vaultara iga reisija kirjeid reisi kuupäevade suhtes ja näitab, mida uuendada.",
+  "tutorialTravelTripChecklist": "Pea reisi jaoks kontrollnimekirja ja märgi asjad ära, kui valmistud.",
+  "tutorialSmartLostWallet": "Kaotasid rahakoti? Vaata kõiki kirjeid, mille märkisid valikuga Minu rahakotis, et teaksid, mida tühistada ja asendada.",
+  "tutorialSmartLifeEvents": "Kolid, vahetad nime või ostad auto? Elusündmused näitab, milliseid kirjeid uuendada.",
+  "tutorialSmartProofPack": "Tõendipakett paneb sinu valitud kirjed koos fotodega üheks PDF-iks, mida saad jagada.",
+  "tutorialSmartSharedLinks": "Jagatud lingid loetleb kõik lingid, mida oled jaganud. Peata link millal tahes ja see enam ei avane.",
+  "tutorialFamilyMe": "See oled sina. Iga kirje, mis ei kuulu kellelegi teisele, jääb sinu juurde.",
+  "tutorialFamilyAddPerson": "Puuduta valikut Lisa inimene, et lisada keegi, kelle eest hoolitsed, näiteks partner, laps või vanem.",
+  "tutorialFamilyAddPersonLocked": "Paketiga Family või Business saad lisada inimesi, kelle eest hoolitsed, ja hoida ka nende kirjeid siin.",
+  "tutorialFamilyRecordPerson": "Kirjet lisades või muutes ava Rohkem üksikasju ja vali, kelle kirje see on. Siis kuvatakse tema nimi kirjel ja selle meeldetuletustel.",
+  "tutorialPlansTabs": "Vaheta Üksikisiku, Family ja Business vahel, et näha, mida iga pakett sisaldab.",
+  "tutorialPlansBilling": "Vali, kas maksad kuus või aastas. Aastamaks on tavaliselt odavam.",
+  "calendarLinkTitle": "Kalendrilink",
+  "calendarLinkTileSubtitle": "Hoia aegumiskuupäevad oma kalendris ajakohased",
+  "calendarLinkIntro": "Telli see üks kord Google Calendaris, Apple Calendaris või Outlookis ja sinu aegumiskuupäevad uuenevad ise.",
+  "calendarLinkPrivacy": "Märkmeid ei lisata kunagi ning lukustatud kirjed on nähtaval ilma nimeta. Igaüks, kellel on link, näeb sinu kuupäevi, nii et hoia see privaatsena.",
+  "calendarLinkCreate": "Loo link",
+  "calendarLinkCreating": "Linki luuakse",
+  "calendarLinkOn": "Sinu kalendrilink on sees",
+  "calendarLinkCreatedOn": "Loodud {date}",
+  "calendarLinkLastChecked": "Kalender kontrollis viimati {date}",
+  "calendarLinkNotChecked": "Ükski kalender pole seda veel kontrollinud",
+  "calendarLinkAddGoogle": "Lisa Google Calendarisse",
+  "calendarLinkAddApple": "Lisa Apple või Outlook",
+  "calendarLinkCopy": "Kopeeri link",
+  "calendarLinkCopied": "Link kopeeritud",
+  "calendarLinkRotate": "Tee uus link",
+  "calendarLinkRotateTitle": "Kas teha uus link?",
+  "calendarLinkRotateBody": "Sinu vana link lakkab töötamast. Seda kasutavad kalendrid lõpetavad uuenemise, kuni lisad uue lingi.",
+  "calendarLinkRotated": "Uus link on valmis. Lisa see oma kalendrisse uuesti.",
+  "calendarLinkTurnOff": "Lülita välja",
+  "calendarLinkTurnOffTitle": "Kas lülitada kalendrilink välja?",
+  "calendarLinkTurnOffBody": "Seda linki kasutavad kalendrid lõpetavad uuenemise. Sinu kalender võib eemaldada kuupäevad, mida see juba näitab.",
+  "calendarLinkTurnedOff": "Kalendrilink on välja lülitatud",
+  "calendarLinkOtherDevice": "See link tehti teises seadmes. Selle lisamiseks siit kalendrisse tee uus link.",
+  "calendarLinkRefreshNote": "Kalendrid kontrollivad muudatusi omaenda ajakava järgi, tavaliselt iga paari tunni tagant.",
+  "calendarLinkOpenFailed": "Ükski rakendus ei saanud linki avada. Kopeeri see ja lisa oma kalendrirakenduses.",
+  "calendarLinkError": "Midagi läks valesti. Proovi uuesti.",
+  "calendarLinkTryAgain": "Proovi uuesti",
+  "calendarLinkPremiumTitle": "Live-kalendrilink on Premiumi funktsioon",
+  "calendarLinkPremiumBody": "Uuenda, et näha kõiki aegumiskuupäevi oma kalendris, alati ajakohasena.",
+  "notificationsEmailSection": "E-post",
+  "monthlySummaryTitle": "Igakuine e-posti kokkuvõte",
+  "monthlySummarySubtitle": "Saadetakse e-postiga iga kuu 1. kuupäeval",
+  "monthlySummaryContents": "Seal on kirjed, mis aeguvad sel ja järgmisel kuul, kõik juba aegunud kirjed ja uuendamiskulud järgmise 3 kuu kohta. Märkmeid ei lisata kunagi.",
+  "monthlySummarySendSample": "Saada mulle nüüd näidis",
+  "monthlySummarySampleTo": "Saadame selle aadressile {email}",
+  "monthlySummarySending": "Näidist saadetakse",
+  "monthlySummarySampleSent": "Näidis saadeti aadressile {email}",
+  "monthlySummarySampleLimit": "Saad päevas saata 3 näidist. Proovi homme uuesti.",
+  "monthlySummarySampleError": "Näidist ei õnnestunud saata. Proovi uuesti.",
+  "monthlySummarySaveError": "Kokkuvõtte seadet ei õnnestunud muuta. Proovi uuesti.",
+  "monthlySummaryTurnedOn": "Igakuine kokkuvõte on sees. Järgmine saabub 1. kuupäeval.",
+  "csvImportTileTitle": "Impordi tabelist",
+  "csvImportTileSubtitle": "Lisa korraga palju kirjeid CSV-failist",
+  "csvImportTitle": "Impordi tabelist",
+  "csvImportIntroLine1": "Too kirjed sisse Excelist, Google Sheetsist või Numbersist. Salvesta esmalt oma tabel CSV-failina.",
+  "csvImportIntroLine2": "Näed iga rida ja saad asju parandada enne, kui midagi lisatakse.",
+  "csvImportChooseFile": "Vali fail",
+  "csvImportGetTemplate": "Hangi mall",
+  "csvImportColumnsTitle": "Veerud, mida saad kasutada",
+  "csvImportColumnsHint": "Vaja on ainult nime ja aegumiskuupäeva. Veergude järjekord pole oluline.",
+  "csvImportErrorRead": "Seda faili ei õnnestunud lugeda. Proovi uuesti.",
+  "csvImportErrorEmpty": "Selles failis pole importimiseks ridu.",
+  "csvImportErrorNotCsv": "Salvesta oma tabel CSV-failina ja vali siis see fail.",
+  "csvImportErrorTooBig": "See fail on liiga suur. Jaga see väiksemateks failideks.",
+  "csvImportTemplateError": "Malli ei õnnestunud luua. Proovi uuesti.",
+  "csvImportTemplateExampleOne": "Minu pass",
+  "csvImportTemplateExampleTwo": "Autokindlustus",
+  "csvImportTemplateNote": "Makstakse igal aastal",
+  "csvImportFieldName": "Nimi",
+  "csvImportFieldPerson": "Inimene",
+  "csvImportFieldCost": "Kulu",
+  "csvImportFieldCurrency": "Valuuta",
+  "csvImportFieldReminder": "Meeldetuletuse päevad",
+  "csvImportMapTitle": "Sobita oma veerud",
+  "csvImportMapIntro": "Sobitasime, mis suutsime. Vaata iga väli üle ja muuda kõik, mis tundub vale.",
+  "csvImportHasHeader": "Esimeses reas on veergude nimed",
+  "csvImportNotInFile": "Pole minu failis",
+  "csvImportColumnNumber": "Veerg {number}",
+  "csvImportExample": "Näide: {value}",
+  "csvImportRequired": "Vajalik",
+  "csvImportMapNeedRequired": "Jätkamiseks vali veerud nime ja aegumiskuupäeva jaoks.",
+  "csvImportContinue": "Jätka",
+  "csvImportPreviewTitle": "Kontrolli oma kirjeid",
+  "csvImportRowsCount": "{count, plural, one{{count} rida} other{{count} rida}}",
+  "csvImportReadyCount": "{count} valmis",
+  "csvImportSkippedCount": "{count} vahele jäetud",
+  "csvImportNeedsCategoryCount": "{count, plural, one{{count} vajab kategooriat} other{{count} vajavad kategooriat}}",
+  "csvImportDateOrderTitle": "Kuidas on sinu kuupäevad kirjutatud?",
+  "csvImportDateOrderAmbiguous": "Mõnda kuupäeva, näiteks 03/04/2027, saab lugeda kahel viisil. Vali see, mis sobib sinu tabeliga.",
+  "csvImportDayFirst": "Esmalt päev (31/12)",
+  "csvImportMonthFirst": "Esmalt kuu (12/31)",
+  "csvImportFallbackTitle": "{count, plural, one{{count} rida ei sobi ühegi kategooriaga} other{{count} rida ei sobi ühegi kategooriaga}}",
+  "csvImportFallbackHint": "Vali, kuhu need panna. Kui jätad selle tühjaks, jäetakse need vahele.",
+  "csvImportFallbackSkip": "Jäta need read vahele",
+  "csvImportDefaultReminderTitle": "Meeldetuletus ridadele, millel seda pole",
+  "csvImportFilterAll": "Kõik",
+  "csvImportFilterReady": "Valmis",
+  "csvImportFilterSkipped": "Vahele jäetud",
+  "csvImportCapped": "Kasutatakse ainult esimest {count} rida. Jaga suuremad failid osadeks.",
+  "csvImportRowLine": "Rida {line}",
+  "csvImportReasonNoName": "Vahele jäetud: nime pole",
+  "csvImportReasonNoDate": "Vahele jäetud: aegumiskuupäeva pole",
+  "csvImportReasonBadDate": "Vahele jäetud: kuupäeva \"{value}\" ei õnnestunud lugeda",
+  "csvImportReasonDuplicate": "Vahele jäetud: see on juba sinu kirjetes",
+  "csvImportReasonDuplicateInFile": "Vahele jäetud: sama mis varasem rida",
+  "csvImportReasonNoCategory": "Sobivat kategooriat veel pole",
+  "csvImportNotePersonNotFound": "Inimest nimega {name} pole, seega jäeti see tühjaks",
+  "csvImportNoteReminderAdjusted": "Meeldetuletus on seatud {days} päeva ette, nagu tasuta paketis",
+  "csvImportNoteNewGroup": "Uus grupp: {name}",
+  "csvImportNoteGroupNotFound": "Gruppi nimega {name} pole, seega valisime sulle ühe",
+  "csvImportNoteBadCost": "Kulu \"{value}\" ei õnnestunud lugeda",
+  "csvImportNoName": "Nimi puudub",
+  "csvImportLimitNote": "{count, plural, one{Sinu tasuta paketis on ruumi veel {count} kirje jaoks.} other{Sinu tasuta paketis on ruumi veel {count} kirje jaoks.}}",
+  "csvImportLimitFull": "Sinu tasuta pakett on täis. Uuenda, et lisada rohkem kirjeid.",
+  "csvImportSeePlans": "Vaata pakette",
+  "csvImportButton": "{count, plural, one{Impordi {count} kirje} other{Impordi {count} kirjet}}",
+  "csvImportNothingReady": "Pole midagi importida",
+  "csvImportProgress": "Lisan {done} / {total}",
+  "csvImportKeepOpen": "Hoia see ekraan lahti, kuni see on valmis.",
+  "csvImportDoneTitle": "Import on valmis",
+  "csvImportDoneImported": "{count, plural, one{{count} kirje imporditud} other{{count} kirjet imporditud}}",
+  "csvImportDoneSkipped": "{count, plural, one{{count} rida jäeti vahele} other{{count} rida jäeti vahele}}",
+  "csvImportDoneLimit": "Mõnda rida ei lisatud, sest sinu pakett on täis.",
+  "csvImportDone": "Valmis",
+  "photoLockTitle": "Krüptitud fotod",
+  "photoLockTileOn": "Sees. Ainult sina näed oma fotosid.",
+  "photoLockTileOff": "Väljas. Lukusta oma fotod võtmega, mis on ainult sinu käes.",
+  "photoLockTileLocked": "Sisesta oma taastevõti, et näha fotosid sellel telefonil.",
+  "photoLockIntro": "Sinu fotod ja PDF-failid lukustatakse sinu telefonis enne üleslaadimist. Ainult sinu telefonid saavad need avada.",
+  "photoLockPointPrivate": "Vaultara ja Google ei näe sinu fotosid.",
+  "photoLockPointRecovery": "Kui kaotad oma telefoni ja taastevõtme, ei saa su fotosid taastada. Keegi ei saa võtit sinu eest lähtestada.",
+  "photoLockPointShare": "Jagatud lingid ei saa krüptitud fotosid näidata. Kirje andmeid saad siiski jagada.",
+  "photoLockPointProofPack": "Tõendipaketid sisaldavad sinu fotosid ka edaspidi, kui teed need oma telefonis.",
+  "photoLockTurnOn": "Lülita krüptitud fotod sisse",
+  "photoLockStatusOn": "Krüptitud fotod on sees",
+  "photoLockStatusOnBody": "Uued fotod krüptitakse sellel telefonil enne üleslaadimist.",
+  "photoLockPendingTitle": "{count, plural, one{1 foto pole veel krüptitud} other{{count} fotot pole veel krüptitud}}",
+  "photoLockPendingBody": "Fotod, mille lisasid enne selle sisselülitamist, on endiselt salvestatud tavalisel viisil.",
+  "photoLockEncryptExisting": "Krüpti mu olemasolevad fotod",
+  "photoLockKeepOpen": "Hoia Vaultara lahti, kuni see on valmis.",
+  "photoLockProgress": "{done} / {total}",
+  "photoLockEncrypting": "Sinu fotosid krüptitakse",
+  "photoLockDecrypting": "Sinu fotosid dekrüptitakse",
+  "photoLockEncryptDone": "Sinu fotod on krüptitud.",
+  "photoLockSomeFailed": "Mõnda fotot ei õnnestunud muuta. Kontrolli ühendust ja proovi uuesti.",
+  "photoLockTurnOff": "Lülita krüptitud fotod välja",
+  "photoLockTurnOffTitle": "Kas lülitada krüptitud fotod välja?",
+  "photoLockTurnOffBody": "Sinu fotod dekrüptitakse ja salvestatakse jälle tavalisel viisil ning sinu taastevõti lakkab töötamast. Hoia Vaultara lahti, kuni see on valmis.",
+  "photoLockTurnOffAction": "Lülita välja",
+  "photoLockTurnedOff": "Krüptitud fotod on väljas.",
+  "photoLockTurnedOn": "Krüptitud fotod on sees.",
+  "photoLockLockedTitle": "Sinu fotod on sellel telefonil lukustatud",
+  "photoLockLockedBody": "Sinu fotod on krüptitud. Sisesta oma taastevõti, et näha neid sellel telefonil.",
+  "photoLockAddLockedBody": "Sisesta esmalt oma taastevõti, et ka uued fotod saaks krüptida.",
+  "photoLockEnterKey": "Sisesta taastevõti",
+  "photoLockCheckFailed": "Sinu krüptitud fotosid ei õnnestunud praegu kontrollida. Kontrolli ühendust ja proovi uuesti.",
+  "photoLockRetry": "Proovi uuesti",
+  "photoLockKeyTitle": "Sinu taastevõti",
+  "photoLockSaveStep": "Salvesta oma taastevõti",
+  "photoLockKeyBody": "See võti avab su fotod uuel telefonil. Kirjuta see üles või salvesta paroolihaldurisse. Näitame seda ainult ühe korra.",
+  "photoLockKeyWarning": "Hoia see võti privaatsena. Me ei saa seda uuesti näidata ega sinu eest lähtestada.",
+  "photoLockCopy": "Kopeeri",
+  "photoLockSave": "Salvesta või jaga",
+  "photoLockCopied": "Taastevõti kopeeritud.",
+  "photoLockShareSubject": "Minu Vaultara taastevõti",
+  "photoLockConfirmStep": "Kinnita, et salvestasid selle",
+  "photoLockConfirmBody": "Sisesta oma võtme viimane rühm, mis on ülal värvilisena.",
+  "photoLockConfirmLabel": "Viimane rühm",
+  "photoLockConfirmMismatch": "See ei vasta sinu võtme viimasele rühmale.",
+  "photoLockFinish": "Lülita sisse",
+  "photoLockSetupFailed": "Krüptitud fotosid ei õnnestunud sisse lülitada. Kontrolli ühendust ja proovi uuesti.",
+  "photoLockAlreadyOn": "Krüptitud fotod on sinu kontol juba sees. Sisesta oma taastevõti, et kasutada neid sellel telefonil.",
+  "photoLockEncryptExistingTitle": "Kas krüptida sinu olemasolevad fotod?",
+  "photoLockEncryptExistingBody": "{count, plural, one{Sul on 1 foto, mis pole veel krüptitud. Saame selle nüüd krüptida.} other{Sul on {count} fotot, mis pole veel krüptitud. Saame need nüüd krüptida.}} Hoia Vaultara lahti, kuni see on valmis.",
+  "photoLockEncryptNow": "Krüpti nüüd",
+  "photoLockEntryBody": "Sisesta taastevõti, mille salvestasid krüptitud fotode sisselülitamisel. Sidekriipsud ja tühikud pole kohustuslikud.",
+  "photoLockEntryLabel": "Taastevõti",
+  "photoLockEntryHint": "XXXX-XXXX-XXXX",
+  "photoLockUnlock": "Ava fotod",
+  "photoLockUnlocked": "Sinu fotod on sellel telefonil avatud.",
+  "photoLockInvalidFormat": "See ei tundu olevat taastevõti. Kontrolli iga märki ja proovi uuesti.",
+  "photoLockWrongKey": "See taastevõti ei sobi. Kontrolli seda ja proovi uuesti.",
+  "photoLockWaitSeconds": "{seconds, plural, one{Liiga palju katseid. Oota 1 sekund ja proovi uuesti.} other{Liiga palju katseid. Oota {seconds} sekundit ja proovi uuesti.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Liiga palju katseid. Oota 1 minut ja proovi uuesti.} other{Liiga palju katseid. Oota {minutes} minutit ja proovi uuesti.}}",
+  "photoLockOffline": "Vaultaraga ei õnnestunud ühendust luua. Kontrolli ühendust ja proovi uuesti.",
+  "photoLockNotSetUp": "Krüptitud fotod pole sinu kontol sees.",
+  "photoLockUnlockFailed": "Midagi läks valesti. Proovi uuesti.",
+  "photoLockLostKey": "Kaotasid taastevõtme? Ilma selleta ei saa krüptitud fotosid uuel telefonil avada. Sinu kirjete andmeid see ei mõjuta.",
+  "photoLockShareTitle": "Fotod jäävad privaatseks",
+  "photoLockShareBody": "Selles kirjes on krüptitud fotosid. Jagatud lingid ei saa neid näidata, seega jagatakse ainult andmeid.",
+  "householdTitle": "Leibkond",
+  "householdCreateIntro": "{count, plural, one{Kutsu oma leibkonda veel {count} Vaultara konto.} other{Kutsu oma leibkonda kuni {count} muud Vaultara kontot.}} Igaüks saab Premiumi sinu paketi kaudu ja säilitab oma privaatsed kirjed. Sina valid, milliseid kirjeid kõik näevad.",
+  "householdJoinIntro": "Keegi, kellel on Family või Business pakett, saab sind oma leibkonda kutsuda. Siis saad Premiumi tema paketi kaudu ja te saate kirjeid omavahel jagada.",
+  "householdCreate": "Loo leibkond",
+  "householdCreated": "Sinu leibkond on valmis. Kutsu keegi liituma.",
+  "householdEnterCode": "Sisesta kutsekood",
+  "householdJoinTitle": "Liitu leibkonnaga",
+  "householdJoinTitleNamed": "Kas liituda leibkonnaga, mille omanik on {name}?",
+  "householdEnterCodeIntro": "Sisesta kood oma kutsest. Võid ka puudutada kutselinki, et see siin avada.",
+  "householdCodeLabel": "Kutsekood",
+  "householdCodeHint": "Näiteks K7MQ2XRA",
+  "householdContinue": "Jätka",
+  "householdJoinButton": "Liitu",
+  "householdJoinPointPremium": "Saad Premiumi nende paketi kaudu sinule tasuta.",
+  "householdJoinPointPrivate": "Sinu kirjed jäävad privaatseks. Keegi teine ei näe neid, kui sa neid ei jaga.",
+  "householdJoinPointShared": "Leibkonnaga jagatud kirjeid näevad ja saavad muuta kõik selle liikmed ning kõik saavad oma meeldetuletused.",
+  "householdJoinPointLeave": "Saad igal ajal lahkuda Pere ekraanilt.",
+  "householdJoinedTitle": "Oled sees",
+  "householdJoinedBody": "Liitusid leibkonnaga. Premium on nüüd osa sinu kontost.",
+  "householdOwnSubscription": "Maksad ka oma tellimuse eest. Leibkonna pakett katab sind nüüd, seega võid selle oma poekontos tühistada, kui soovid. Meie ei tühista seda kunagi sinu eest.",
+  "householdDone": "Valmis",
+  "householdCodeInvalid": "See kood ei tööta. Kontrolli seda ja proovi uuesti või palu uut kutset.",
+  "householdAlreadyInOne": "Oled juba leibkonnas. Lahku sellest esmalt, et teise liituda.",
+  "householdAlreadyMember": "Oled juba selles leibkonnas.",
+  "householdInviteInactive": "Selle leibkonna pakett pole praegu aktiivne, seega ei saa keegi liituda.",
+  "householdFull": "See leibkond on täis.",
+  "householdTooManyTries": "Liiga palju katseid. Oota veidi ja proovi uuesti.",
+  "householdNeedsPlan": "Leibkonna loomiseks on vaja Family või Business paketti.",
+  "householdGenericError": "Midagi läks valesti. Kontrolli ühendust ja proovi uuesti.",
+  "householdLoadError": "Sinu leibkonda ei õnnestunud laadida.",
+  "householdTryAgain": "Proovi uuesti",
+  "householdOwnerSummary": "Sina haldad seda leibkonda. Kasutusel on {count} kohta {limit}-st. Kõigil selles on Premium sinu paketi kaudu.",
+  "householdMemberSummary": "Sul on Premium {name} paketi kaudu. Sinu enda kirjed jäävad privaatseks, kui sa neid ei jaga.",
+  "householdInactiveOwner": "Sinu pakett ei kata enam leibkonda. Liikmetel pole Premiumi ja jagatud kirjed on kirjutuskaitstud, kuni uuendad oma Family või Business paketi.",
+  "householdReadOnly": "Leibkonna pakett pole aktiivne, seega on jagatud kirjed praegu kirjutuskaitstud.",
+  "householdOwnerTag": "Omanik",
+  "householdYouTag": "Sina",
+  "householdMemberFallback": "Liige",
+  "householdRemoveMember": "Eemalda leibkonnast",
+  "householdRemoveTitle": "Kas eemaldada {name}?",
+  "householdRemoveBody": "{name} kaotab Premiumi sinu paketist. Kirjed, mida {name} jagas, liiguvad tagasi tema enda kirjete hulka.",
+  "householdMemberRemoved": "{name} ei ole enam sinu leibkonnas",
+  "householdPendingInvites": "Avatud kutsed",
+  "householdInviteExpires": "Kehtib kuni {date}",
+  "householdShareInvite": "Jaga kutset",
+  "householdRevokeInvite": "Tühista kutse",
+  "householdInviteRevoked": "Kutse on tühistatud. Kood enam ei tööta.",
+  "householdInvite": "Kutsu keegi",
+  "householdInviteNote": "Iga kutse kehtib ühe korra ja 7 päeva.",
+  "householdInviteSubject": "Liitu minu leibkonnaga Vaultaras",
+  "householdInviteMessage": "Liitu minu leibkonnaga Vaultaras, et saaksime oma dokumente koos jälgida. Puuduta seda linki: {link}\nVõi ava Vaultara, mine Profiili, siis Pere ja sisesta see kood: {code}",
+  "householdInviteCopied": "Kutselink kopeeritud",
+  "householdSharedRecordsTitle": "Jagatud kirjed",
+  "householdSharedRecordsIntro": "Kõik sinu leibkonnas näevad ja saavad muuta neid kirjeid ning kõik saavad oma meeldetuletused.",
+  "householdSharedRecordsEmpty": "Midagi pole veel jagatud. Ava kirje ja lülita sisse Jagatud leibkonnaga.",
+  "householdSharedCount": "{count, plural, one{{count} kirje} other{{count} kirjet}}",
+  "householdShowAllShared": "Näita kõiki jagatud kirjeid",
+  "householdHowSharingWorks": "Kirje jagamiseks ava see ja lülita sisse Jagatud leibkonnaga. Lülita see välja, et kirje liiguks tagasi selle lisanud inimesele.",
+  "householdLeave": "Lahku leibkonnast",
+  "householdLeaveTitle": "Kas lahkuda sellest leibkonnast?",
+  "householdLeaveBody": "Sa kaotad selle leibkonna Premiumi. Kirjed, mida jagasid, liiguvad tagasi sinu enda kirjete hulka ja sa ei näe enam seda, mida teised jagasid.",
+  "householdLeft": "Lahkusid leibkonnast",
+  "householdClose": "Sulge leibkond",
+  "householdCloseTitle": "Kas sulgeda sinu leibkond?",
+  "householdCloseBody": "Kõik lahkuvad leibkonnast ja kaotavad Premiumi sinu paketist. Iga jagatud kirje liigub tagasi selle lisanud inimesele.",
+  "householdClosed": "Sinu leibkond on suletud",
+  "householdShareTitle": "Jagatud leibkonnaga",
+  "householdShareOn": "Kõik sinu leibkonnas näevad ja saavad muuta seda kirjet ning saavad selle meeldetuletused.",
+  "householdShareOff": "Seda kirjet näed ainult sina.",
+  "householdSharedBadge": "Jagatud",
+  "householdSharedTooltip": "Jagatud sinu leibkonnaga",
+  "householdMoveFailed": "Ei õnnestunud muuta, kes seda kirjet näeb. Proovi uuesti.",
+  "householdUnsharedToCreator": "See kirje liikus tagasi selle lisanud inimesele.",
+  "householdPlanBanner": "Sul on Premium sinu leibkonna kaudu. Sul pole vaja oma tellimust.",
+  "householdPlanIncluded": "Kaasas sinu leibkonnaga",
+  "householdPremiumTitle": "Premium sinu leibkonna kaudu",
+  "householdPremiumSubtitle": "Sind katab sinu leibkonna pakett. Kui lahkud leibkonnast, Premium lõpeb.",
+  "householdProfileTileSubtitle": "Sinu leibkond ja inimesed, kelle eest hoolitsed",
+  "profilePhotoTitle": "Profiilifoto",
+  "profilePhotoChange": "Muuda profiilifotot",
+  "profilePhotoRemove": "Eemalda foto",
+  "profilePhotoRemoveConfirmTitle": "Kas eemaldada sinu foto?",
+  "profilePhotoRemoveConfirmBody": "Selle asemel kuvatakse sinu initsiaalid.",
+  "profilePhotoRemoveAction": "Eemalda",
+  "profilePhotoUpdated": "Sinu foto on uuendatud.",
+  "profilePhotoRemoved": "Sinu foto on eemaldatud.",
+  "profilePhotoFailed": "Sinu fotot ei õnnestunud uuendada. Proovi uuesti.",
+  "profilePhotoAccessDenied": "Vaultara vajab juurdepääsu sinu kaamerale või fotodele. Saad selle lubada oma telefoni seadetes.",
+  "inviteFriendsTitle": "Kutsu sõpru",
+  "inviteFriendsTileSubtitle": "Kingi sõbrale tasuta kuu Premiumi ja saa ise ka üks",
+  "inviteHeadline": "Anna kuu, saa kuu",
+  "inviteYourCode": "Sinu kutsekood",
+  "inviteShareButton": "Jaga kutset",
+  "inviteCopyButton": "Kopeeri kood",
+  "inviteCodeCopied": "Kood kopeeritud",
+  "inviteHowTitle": "Kuidas see töötab",
+  "inviteStep1": "Jaga oma koodi või linki sõbraga.",
+  "inviteStep2": "Ta sisestab selle Vaultaras 14 päeva jooksul pärast registreerumist.",
+  "inviteStep3": "Kui ta kinnitab oma e-posti ja lisab kirje, saate mõlemad 1 tasuta kuu Premiumi.",
+  "inviteMonthsEarned": "{count} / {max} tasuta kuud teenitud",
+  "invitePremiumUntil": "Tasuta Premium kuni {date}",
+  "inviteMaxReached": "Oled teeninud maksimaalselt tasuta kuid. Aitäh, et Vaultarat jagad.",
+  "inviteHaveCodeTitle": "Kas sul on kood?",
+  "inviteHaveCodeBody": "Sisesta sõbra kood enne {date}, et saada oma tasuta kuu.",
+  "inviteCodeLabel": "Sõbra kood",
+  "inviteRedeemGranted": "Kood rakendatud. Teil mõlemal on tasuta kuu Premiumi.",
+  "inviteRedeemPending": "Kood vastu võetud. Lisa oma esimene kirje, et oma tasuta kuu avada.",
+  "inviteRedeemDone": "Liitusid sõbra koodiga ja said oma tasuta kuu.",
+  "inviteRedeemClosed": "Koode saab sisestada ainult esimese 14 päeva jooksul pärast registreerumist.",
+  "inviteErrorInvalid": "Sellist koodi pole olemas. Kontrolli seda ja proovi uuesti.",
+  "inviteErrorOwn": "Sa ei saa kasutada oma koodi.",
+  "inviteErrorUsed": "Oled juba sõbra koodi kasutanud.",
+  "inviteErrorVerify": "Kinnita esmalt oma e-post ja proovi siis uuesti.",
+  "inviteErrorTooMany": "Liiga palju katseid. Oota veidi ja proovi uuesti.",
+  "inviteLoadError": "Sinu kutse andmeid ei õnnestunud laadida.",
+  "inviteRetry": "Proovi uuesti",
+  "referralShareSubject": "Tasuta kuu Vaultara Premiumi",
+  "referralShareMessage": "Kasutan Vaultarat oma tähtsate dokumentide jälgimiseks. Liitu minu koodiga {code} ja saame mõlemad tasuta kuu Premiumi: {link}",
+  "referralPlanNote": "Sul on kutsetest tasuta Premium kuni {date}.",
+  "twoStepTitle": "Kaheastmeline sisselogimine",
+  "twoStepTileOn": "Sees. Kasutad autentimisrakenduse koodi",
+  "twoStepTileOff": "Lisa lisaturvaks autentimisrakendus",
+  "twoStepIntro": "Kui see on sees, sisestad oma parooli ja seejärel 6-kohalise koodi autentimisrakendusest, näiteks Google Authenticatorist või Microsoft Authenticatorist.",
+  "twoStepStatusOn": "Kaheastmeline sisselogimine on sees",
+  "twoStepStatusOff": "Kaheastmeline sisselogimine on väljas",
+  "twoStepSetUpButton": "Seadista autentimisrakendus",
+  "twoStepAddAnother": "Lisa veel üks autentimisrakendus",
+  "twoStepMethodsTitle": "Sinu autentimisrakendused",
+  "twoStepDefaultName": "Autentimisrakendus",
+  "twoStepAddedOn": "Lisatud {date}",
+  "twoStepRemoveButton": "Eemalda",
+  "twoStepRemoveTitle": "Kas eemaldada autentimisrakendus?",
+  "twoStepRemoveBody": "Pärast seda logid sisse ainult parooliga. Saad selle igal ajal uuesti seadistada.",
+  "twoStepRemoveBodyOther": "Sa ei saa enam seda rakendust sisselogimiskoodide jaoks kasutada.",
+  "twoStepRemoved": "Autentimisrakendus eemaldatud",
+  "twoStepVerifyEmailFirst": "Kinnita oma e-post enne kaheastmelise sisselogimise sisselülitamist.",
+  "twoStepUnavailable": "Kaheastmeline sisselogimine pole praegu saadaval. Proovi hiljem uuesti.",
+  "twoStepConfirmTitle": "Kinnita, et see oled sina",
+  "twoStepConfirmBody": "Kaheastmelise sisselogimise muutmiseks sisesta oma parool.",
+  "twoStepScanTitle": "Skänni see kood",
+  "twoStepScanBody": "Ava oma autentimisrakendus, puuduta lisamist ja skänni see kood oma kaameraga.",
+  "twoStepOpenApp": "Ava autentimisrakendus",
+  "twoStepNoAuthApp": "Autentimisrakendust ei leitud. Paigalda üks ja skänni siis kood või sisesta võti.",
+  "twoStepKeyLabel": "Ei saa skännida? Sisesta selle asemel see võti",
+  "twoStepCopyKey": "Kopeeri võti",
+  "twoStepKeyCopied": "Võti kopeeritud",
+  "twoStepCodeLabel": "6-kohaline kood",
+  "twoStepEnterCodeBody": "Lõpetamiseks sisesta 6-kohaline kood, mida sinu rakendus näitab.",
+  "twoStepTurnOn": "Lülita sisse",
+  "twoStepEnabledBody": "Järgmisel korral sisselogimisel küsib Vaultara koodi sinu autentimisrakendusest.",
+  "twoStepDone": "Valmis",
+  "twoStepStartAgain": "Alusta uuesti",
+  "twoStepWrongCode": "See kood pole õige. Proovi oma rakenduse uusimat koodi.",
+  "twoStepCodeFormat": "Sisesta kõik 6 numbrit.",
+  "twoStepTooMany": "Liiga palju katseid. Oota mõni minut ja proovi uuesti.",
+  "twoStepExpired": "See võttis liiga kaua aega. Alusta uuesti.",
+  "twoStepChallengeTitle": "Sisesta oma sisselogimiskood",
+  "twoStepChallengeBody": "Ava oma autentimisrakendus ja sisesta Vaultara 6-kohaline kood.",
+  "twoStepVerifyButton": "Kinnita",
+  "twoStepLostTitle": "Kaotasid oma autentimisrakenduse?",
+  "twoStepLostBody": "Kui sa ei saa oma autentimisrakendust kasutada, võta meie tugimeeskonnaga ühendust oma konto e-posti aadressilt. Kontrollime, et see oled sina, ja aitame sul uuesti sisse saada.",
+  "twoStepContactSupport": "Võta ühendust toega",
+  "twoStepSupportSubject": "Abi kaheastmelise sisselogimisega",
+  "householdIncludedFamily": "Sisaldub {owner} Family paketis",
+  "householdIncludedBusiness": "Sisaldub {owner} Business paketis",
+  "householdIncludedFamilyNoName": "Sisaldub sinu leibkonna Family paketis",
+  "householdIncludedBusinessNoName": "Sisaldub sinu leibkonna Business paketis",
+  "assistantTitle": "Küsi Vaultaralt",
+  "assistantTileSubtitle": "Küsi oma kirjete kohta lihtsate sõnadega",
+  "assistantIntro": "Küsi minult oma kirjete ja uuendamiste kohta. Võin ka uusi kirjeid ette valmistada, et sa need üle vaataksid.",
+  "assistantHint": "Küsi oma kirjete kohta",
+  "assistantSuggestionMonth": "Mis aegub sel kuul?",
+  "assistantSuggestionPassport": "Millal mu pass aegub?",
+  "assistantSuggestionAdd": "Lisa mu auto registreerimistunnistus, mis aegub märtsi lõpus",
+  "assistantSend": "Saada",
+  "assistantSpeak": "Räägi",
+  "assistantStopListening": "Lõpeta kuulamine",
+  "assistantListening": "Kuulan",
+  "assistantMicUnavailable": "Häälsisend ei ole saadaval. Kontrolli, kas Vaultaral on luba mikrofoni kasutada.",
+  "assistantThinking": "Kontrollin sinu kirjeid",
+  "assistantErrorOffline": "Sa oled võrguühenduseta. Ühendu internetiga ja proovi uuesti.",
+  "assistantErrorLimit": "Oled praegu küsinud palju. Proovi hiljem uuesti.",
+  "assistantErrorBusy": "Vaultara on praegu hõivatud. Proovi hetke pärast uuesti.",
+  "assistantErrorFailed": "Midagi läks valesti. Proovi uuesti.",
+  "assistantRetry": "Proovi uuesti",
+  "assistantPremiumTitle": "Küsi Vaultaralt on osa Premiumist",
+  "assistantPremiumBody": "Uuenda Premiumile, et esitada oma kirjete kohta küsimusi ja lisada kirjeid lihtsate sõnadega.",
+  "assistantSeePlans": "Vaata pakette",
+  "assistantEmptyReply": "Ma ei leidnud vastust. Proovi küsida teisiti.",
+  "assistantDraftReady": "Valmistasin selle sulle ette. Vaata üle ja puuduta Kinnita.",
+  "assistantNewChat": "Uus vestlus",
+  "assistantPrivacyNote": "Vastused kasutavad tehisintellekti. Sinu küsimus ja ainult vastamiseks vajalikud kirje andmed saadetakse meie tehisintellekti pakkujale. Lukustatud kirjete märkmeid ei saadeta kunagi. Midagi ei salvestata, enne kui sa kinnitad.",
+  "assistantActionAddTitle": "Uus kirje",
+  "assistantActionUpdateTitle": "Uus aegumiskuupäev",
+  "assistantActionDismiss": "Loobu",
+  "assistantActionNoDate": "Aegumiskuupäeva veel pole",
+  "assistantActionExpires": "Aegub {date}",
+  "assistantActionChange": "{from} asemel {to}",
+  "assistantActionFor": "Kellele: {person}",
+  "assistantActionOpened": "Avatud ülevaatamiseks",
+  "assistantActionOpenAgain": "Ava uuesti",
+  "assistantLockedRecord": "Lukustatud kirje",
+  "assistantRecordMissing": "Seda kirjet pole enam Vaultaras.",
+  "describeItAction": "Kirjelda",
+  "describeItTitle": "Kirjelda oma kirjet",
+  "describeItBody": "Ütle, mis see on, kellele see kuulub ja millal see aegub. Täidame vormi sinu eest ning sina vaatad selle üle.",
+  "describeItHint": "Näiteks: mu auto registreerimistunnistus aegub märtsi lõpus",
+  "describeItFill": "Täida vorm",
+  "describeItFilled": "Täitsime vormi. Kontrolli andmeid enne salvestamist.",
+  "describeItNoResult": "Me ei saanud sellest aru. Proovi öelda, mis see on ja millal see aegub.",
+  "groupSuggestionChip": "Tundub olevat: {group}",
+  "groupSuggestionApply": "Kasuta seda gruppi",
+  "sharePdfAttached": "Lisasime PDF-i. Palun täida andmed selle põhjal.",
+  "familyEditTitle": "Muuda inimest",
+  "staffEmailLabel": "E-post (valikuline)",
+  "staffEmailHint": "Näiteks thabo@example.com",
+  "staffEmailRemindersTitle": "Saada sellele inimesele meeldetuletusi e-postiga",
+  "staffEmailRemindersSubtitle": "30, 14, 7 ja 1 päev enne ning aegumispäeval",
+  "staffEmailConsent": "Lisa ainult inimesi, kes on nõustunud sinu ettevõttelt e-kirju saama.",
+  "staffEmailOnBadge": "E-posti meeldetuletused sees",
+  "complianceReportTitle": "Igakuine vastavusaruanne e-postiga",
+  "complianceReportSubtitle": "Iga kuu 1. päeval: kes on korras, mis peagi aegub, ja tabelifail",
+  "complianceReportSaveError": "Salvestamine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.",
+  "updatesReviewTitle": "Ülevaatamist ootavad uuendused",
+  "updatesReviewIntro": "Sinu meeskond saatis need e-kirja lingi kaudu. Kontrolli faili enne kinnitamist.",
+  "updatesReviewNewDate": "Uus aegumiskuupäev: {date}",
+  "updatesReviewSentBy": "Saatis {person}, {date}",
+  "updatesApprove": "Kiida heaks",
+  "updatesReject": "Lükka tagasi",
+  "updatesApproved": "{name} uuendatud kuni {date}",
+  "updatesApprovedNoFile": "Kirje uuendati. Faili ei lisatud, sest sellel kirjel on juba 10 faili.",
+  "updatesRejected": "Uuendus lükati tagasi",
+  "updatesRejectTitle": "Kas lükata see uuendus tagasi?",
+  "updatesRejectBody": "Fail kustutatakse ja kirje jääb samaks. Uue taotluse saad saata hiljem.",
+  "updatesActionError": "Seda ei õnnestunud lõpetada. Kontrolli ühendust ja proovi uuesti.",
+  "updatesRecordMissing": "Seda kirjet pole enam Vaultaras. Lükka uuendus tagasi, et see eemaldada.",
+  "updatesFileError": "Faili ei õnnestunud laadida",
+  "requestUpdateMenu": "Küsi uuendust",
+  "requestUpdateTitle": "Kas küsid uuendust inimeselt {person}?",
+  "requestUpdateBody": "Saadame aadressile {email} turvalise lingi. Selle kaudu saab ta saata uue aegumiskuupäeva ning uuendatud dokumendi foto või PDF-i. Link kehtib 7 päeva ja seda saab kasutada ühe korra.",
+  "requestUpdateSend": "Saada taotlus",
+  "requestUpdateSending": "Taotluse saatmine",
+  "requestUpdateSent": "Taotlus saadetud: {person}",
+  "requestUpdateError": "Taotluse saatmine ebaõnnestus. Proovi uuesti.",
+  "requestUpdateLimit": "Saatsid täna palju taotlusi. Proovi homme uuesti.",
+  "requestUpdateNoEmail": "Lisa esmalt sellele inimesele e-posti aadress ekraanil Pere.",
+  "dailyDigestSwitchTitle": "Üks päevakokkuvõte eraldi meeldetuletuste asemel",
+  "dailyDigestSwitchSubtitle": "Saa meeldetuletuse ajal üks teavitus, mis loetleb kõik, mis sel päeval aegub.",
+  "dailyDigestTurnedOn": "Sinu meeldetuletused tulevad nüüd ühe päevakokkuvõttena.",
+  "dailyDigestTurnedOff": "Iga kirje eraldi meeldetuletused on tagasi sees.",
+  "dailyDigestTitle": "{count, plural, one{1 kirje vajab sinu tähelepanu} other{{count} kirjet vajavad sinu tähelepanu}}",
+  "dailyDigestBody": "Tulemas: {names}.",
+  "dailyDigestBodyMore": "Tulemas: {names} ja veel {count}.",
+  "dailyDigestLockedRecord": "lukustatud kirje",
+  "renewReasonRepeat": "{months, plural, one{Sinu kordusseadistuse põhjal igal kuul} other{Sinu kordusseadistuse põhjal iga {months} kuu järel}}",
+  "renewReasonHistory": "{count, plural, one{Sinu viimase uuendamise põhjal} other{Sinu viimase {count} uuendamise põhjal}}",
+  "renewReasonTypical": "{years, plural, one{Kehtib tavaliselt 1 aasta} other{Kehtib tavaliselt {years} aastat}}",
+  "renewChangeHint": "Puuduta kuupäeva, et seda muuta.",
+  "renewPickDate": "Vali uus aegumiskuupäev",
+  "renewPickDateHint": "Vali kuupäev, mis on sinu uuel dokumendil.",
+  "renewCostJump": "See on {percent}% rohkem kui eelmine kord ({previous}).",
+  "smartInsightCostIncreaseHeading": "Uuendamise hind tõusis",
+  "smartInsightCostIncreaseBody": "Sinu kirje {name} uuendamise hind tõusis {percent}% võrreldes eelmise korraga.",
+  "reminderStartRenewingTitle": "On aeg alustada kirje {recordName} uuendamist",
+  "reminderStartRenewingBody": "{firstName}, on aeg alustada kirje {recordName} uuendamist. See aegub {date}, nii et kui alustad praegu, jääb piisavalt aega.",
+  "renewChecklistProgress": "Tehtud on {done} sammu {total}-st",
+  "renewChecklistStart": "Ava oma uuendamise kontrollnimekiri",
+  "scanUpdateTitle": "Kas uuendad olemasoleva kirje {name} uue kuupäevaga?",
+  "scanUpdateBody": "Aegumiskuupäev muutub: {from} asemel {to}. Sinu uuendamiste ajalugu säilib.",
+  "scanAddAsNew": "Lisa uuena",
+  "scanUpdateExisting": "Uuenda",
+  "duplicateRecordTitle": "Juba lisatud",
+  "duplicateRecordBody": "Sul on juba {name}, mis aegub {date}.",
+  "duplicateKeepBoth": "Hoia mõlemad",
+  "duplicateUpdateExisting": "Uuenda olemasolevat",
+  "editorDefaultsHint": "Täitsime grupi {group} tavapärased seaded. Saad neid muuta jaotises Rohkem üksikasju.",
+  "csvImportNoteAlreadyTracked": "Sul on juba selle nimega kirje, mis aegub {date}",
+  "visaSectionTitle": "Viisad",
+  "visaFree": "Viisavaba",
+  "visaFreeDays": "{days, plural, one{Viisavaba {days} päevaks} other{Viisavaba {days} päevaks}}",
+  "visaOnArrival": "Viisa saabumisel",
+  "visaEta": "Vaja ETA-d",
+  "visaEvisa": "Vaja e-viisat",
+  "visaRequired": "Vaja viisat",
+  "visaNoEntry": "Sissepääs keelatud",
+  "visaHomeCountry": "Kodumaa",
+  "visaStayUpTo": "{days, plural, one{Viibimine kuni {days} päev} other{Viibimine kuni {days} päeva}}",
+  "visaTripTooLong": "Sinu reis kestab {tripDays} päeva. See on pikem kui lubatud {days} päeva.",
+  "visaStayTooLong": "Reis on pikem kui lubatud viibimisaeg",
+  "visaApplyBy": "Taotle hiljemalt {date}",
+  "visaApplyNow": "Taotle esimesel võimalusel",
+  "visaAddToChecklist": "Lisa kontrollnimekirja",
+  "visaOnChecklist": "Sinu kontrollnimekirjas",
+  "visaAdded": "Lisatud sinu kontrollnimekirja",
+  "visaChecklistVisa": "Taotle {country} viisat",
+  "visaChecklistEvisa": "Taotle {country} e-viisat",
+  "visaChecklistEta": "Taotle {country} ETA-d",
+  "visaCheckRules": "Kontrolli reegleid",
+  "visaSearchQuery": "{destination} viisanõuded {nationality} passiga",
+  "visaCredit": "Viisade andmed: Passport Index. Reeglid muutuvad, kontrolli enne reisi saatkonnast.",
+  "visaNotAvailable": "Viisainfo pole veel saadaval",
+  "visaChecking": "Kontrollin viisareegleid",
+  "visaNoDestinations": "Viisareeglite nägemiseks lisa sihtkoht.",
+  "visaPassportCountry": "Passi väljastanud riik",
+  "visaPassportCountryHint": "Valige riik, mis passi välja andis. Kasutatakse viisareeglite kontrollimiseks.",
+  "visaPassportOf": "{country} pass",
+  "visaAddPassportCountry": "Lisa pass",
+  "visaAddYourPassportCountry": "Lisa oma pass",
+  "visaNeedsYourCountry": "Lisa oma pass viisade kontrollimiseks.",
+  "visaNeedsCountry": "Lisa isiku {name} pass viisade kontrollimiseks.",
+  "visaAutoNote": "Määratud sinu passide viisareeglite järgi. Puuduta muutmiseks.",
+  "visaReminderTitle": "On aeg taotleda oma viisad",
+  "visaReminderBody": "Täna on soovitatav päev, et taotleda viisat reisiks {trip}. Täpsete reeglite kohta uuri saatkonnast.",
+  "visaApplyOfficial": "Taotle ametlikul saidil",
+  "visaLeavingTitle": "Lahkud Vaultarast",
+  "visaLeavingBody": "Liigud riigi {country} ametlikule valitsuse saidile:",
+  "visaLeavingNote": "Vaultara ei ole selle saidi osa ega võta mingit tasu. Riigilõiv makstakse sellel saidil.",
+  "visaOfficialSearchHint": "Otsi riigi {country} ametlikku valitsuse saiti. Väldi vahendajate saite, mis võtavad lisatasu.",
+  "visaOfficialSearch": "Leia ametlik sait",
+  "visaOfficialSearchQuery": "{country} e-viisa ametlik valitsuse leht",
+  "visaLivesIn": "Elukohariik: {country}",
+  "visaResidenceTitle": "Riik, kus elad",
+  "visaResidenceHint": "Selle abil leitakse saatkond, kus saad viisat taotleda.",
+  "visaEmbassyApply": "Taotle riigi {country} saatkonnas või konsulaadis, mis asub riigis {residence}.",
+  "visaEmbassyApplyNoResidence": "Taotle riigi {country} saatkonnas või konsulaadis riigis, kus elad.",
+  "visaEmbassyCentreNote": "Saatkonna veebisaidil on kirjas, millist viisakeskust see kasutab, näiteks VFS Global või TLScontact. Taotle ainult seal nimetatud keskuse kaudu.",
+  "visaFindEmbassy": "Leia saatkond",
+  "visaContactImmigration": "Elad riigis {country}. Võta ühendust riigi {country} migratsiooniametiga ja küsi oma viisa kohta.",
+  "visaRecordName": "{country} viisa",
+  "visaAddMyVisa": "Lisa minu viisa",
+  "visaChooseSaved": "Vali salvestatud viisa",
+  "visaLinked": "Viisa on selle reisiga seotud",
+  "visaRecordValid": "Viisa salvestatud. Kehtib kuni {date}.",
+  "visaRecordExpires": "Sinu viisa aegub {date}, enne kui tagasi jõuad.",
+  "visaRemoveLink": "Eemalda seos",
+  "visaSummaryNeed": "{count, plural, one{{total} reisijast {count} vajab veel viisat} other{{total} reisijast {count} vajavad veel viisat}}",
+  "visaSummaryEarliest": "Esimene tähtaeg: taotle hiljemalt {date}",
+  "visaSummaryAllSet": "Kõigil on selleks reisiks viisa olemas.",
+  "stayTitle": "Sinu viibimine",
+  "stayDayOf": "{country}: {used}. päev {allowed} päevast",
+  "stayLeaveBy": "Lahku hiljemalt {date}",
+  "stayOver": "Sinu lubatud viibimisaeg lõppes {date}.",
+  "stayStrictest": "Põhineb lühimal lubatud viibimisajal, mis on inimesel {name}.",
+  "stayStrictestYou": "Põhineb sinu lubatud viibimisajal, mis on grupi lühim.",
+  "staySchengenArea": "Schengen-ala",
+  "staySchengenNote": "{days, plural, one{Üks ühine viibimine kogu Schengen-alal: {days} päev mis tahes {window} päeva jooksul.} other{Üks ühine viibimine kogu Schengen-alal: {days} päeva mis tahes {window} päeva jooksul.}}",
+  "stayArrivedOther": "Saabusin teisel päeval",
+  "stayArrivalPick": "Millal sa saabusid?",
+  "stayReminderTitle": "{days, plural, one{{country}: viibimisaega on jäänud {days} päev} other{{country}: viibimisaega on jäänud {days} päeva}}",
+  "stayReminderBody": "Lahku hiljemalt {date}, et püsida lubatud aja piires.",
+  "travelPassportTooSoonNamed": "Inimese {name} pass aegub selle reisi jaoks liiga vara. Kontrolli seda enne broneerimist.",
+  "travelPassportTooSoonYours": "Sinu pass aegub selle reisi jaoks liiga vara. Kontrolli seda enne broneerimist.",
+  "travelPassportTooSoonSeveral": "Mõned passid aeguvad selle reisi jaoks liiga vara. Kontrolli neid enne broneerimist.",
+  "secTitle": "Turvalisus ja privaatsus",
+  "secProfileSubtitle": "Rakenduse lukk, seadmed, privaatsus ja sinu andmed",
+  "secSectionSignIn": "Sisselogimine",
+  "secSectionAppProtection": "Rakenduse kaitse",
+  "secSectionPrivacy": "Privaatsus",
+  "secCheckupTitle": "Turvakontroll",
+  "secCheckupScore": "{done}/{total} tehtud",
+  "secCheckupAllDone": "Sinu konto on hästi kaitstud.",
+  "secCheckEmail": "E-posti aadress on kinnitatud",
+  "secCheckTwoStep": "Kaheastmeline sisselogimine on sees",
+  "secCheckAppLock": "Rakenduse lukk on sees",
+  "secCheckPhotos": "Krüptitud fotod on sees",
+  "secCheckRecoveryKey": "Taastevõti on salvestatud",
+  "secCheckPassword": "Tugev parool on määratud",
+  "secCheckActionVerify": "Kinnita",
+  "secCheckActionTurnOn": "Lülita sisse",
+  "secCheckActionSetUp": "Seadista",
+  "secCheckActionChange": "Muuda",
+  "secChangePasswordSubtitle": "Vali oma kontole uus parool",
+  "secCurrentPassword": "Praegune parool",
+  "secNewPassword": "Uus parool",
+  "secConfirmPassword": "Kinnita uus parool",
+  "secPasswordsDoNotMatch": "Paroolid ei ühti.",
+  "secPasswordSameAsCurrent": "Vali parool, mis erineb praegusest.",
+  "secPasswordLeaked": "See parool on ilmunud teadaolevas andmelekkes. Vali mõni muu.",
+  "secPasswordChanged": "Sinu parool on muudetud.",
+  "secStrengthHint": "Kasuta vähemalt 12 märki, milles on segamini tähti, numbreid ja sümboleid.",
+  "secStrengthLabel": "Parooli tugevus: {level}",
+  "secStrengthWeak": "Nõrk",
+  "secStrengthFair": "Rahuldav",
+  "secStrengthGood": "Hea",
+  "secStrengthStrong": "Tugev",
+  "secDevicesTitle": "Sinu seadmed",
+  "secDevicesSubtitle": "Vaata, kus oled sisse logitud",
+  "secDevicesIntro": "Need seadmed on sinu kontole sisse logitud. Kui sa mõnda ei tunne, logi see välja ja muuda oma parooli.",
+  "secDevicesEmpty": "Seadmeid pole veel näidata.",
+  "secThisDevice": "See seade",
+  "secActiveNow": "Praegu aktiivne",
+  "secDeviceLastActive": "Viimati aktiivne: {time}",
+  "secDeviceAppVersion": "Vaultara {version}",
+  "secUnknownDevice": "Tundmatu seade",
+  "secSignOutDeviceTitle": "Kas logida välja seadmest {device}?",
+  "secSignOutDeviceBody": "Vaultara logitakse selles seadmes välja järgmisel korral, kui see internetiga ühendub.",
+  "secDeviceSignedOut": "Seade {device} logitakse välja.",
+  "secSignOutOthers": "Logi välja kõigist teistest seadmetest",
+  "secSignOutOthersTitle": "Kas logida välja kõigist teistest seadmetest?",
+  "secSignOutOthersBody": "Kõik teised sinu kontole sisse logitud telefonid ja tahvelarvutid logitakse välja. Selles seadmes jääd sisse logituks.",
+  "secSignOutOthersConfirmBody": "Sisesta parool, et oma teistest seadmetest välja logida.",
+  "secSignedOutOthers": "Oled kõigist teistest seadmetest välja logitud.",
+  "secSignedOutEverywhere": "Sind logiti välja kõigist seadmetest. Jätkamiseks logi uuesti sisse.",
+  "secSignedOutRemotely": "Sind logiti sellest seadmest välja teise seadme kaudu.",
+  "secHistoryTitle": "Turvaajalugu",
+  "secHistorySubtitle": "Hiljutised sisselogimised ja muudatused sinu kontol",
+  "secHistoryIntro": "Sinu konto sisselogimised ja muudatused viimase 90 päeva jooksul.",
+  "secHistoryEmpty": "Veel pole midagi näidata.",
+  "secJustNow": "Just praegu",
+  "secMinutesAgo": "{count, plural, one{1 minut tagasi} other{{count} minutit tagasi}}",
+  "secHoursAgo": "{count, plural, one{1 tund tagasi} other{{count} tundi tagasi}}",
+  "secDaysAgo": "{count, plural, one{1 päev tagasi} other{{count} päeva tagasi}}",
+  "secEventNewSignIn": "Uus seade logis sisse",
+  "secEventSignIn": "Sisse logitud",
+  "secEventPasswordChanged": "Parool muudetud",
+  "secEventEmailChanged": "E-posti aadress muudetud",
+  "secEventEmailChangeRequested": "E-posti aadressi muutmist taotleti",
+  "secEventTwoStepEnabled": "Kaheastmeline sisselogimine lülitati sisse",
+  "secEventTwoStepDisabled": "Kaheastmeline sisselogimine lülitati välja",
+  "secEventSessionsRevoked": "Välja logitud kõigist teistest seadmetest",
+  "secEventDeviceSignedOut": "Üks seade logiti välja",
+  "secEventDataExported": "Sinu andmed laaditi alla",
+  "secEventShareLinkCreated": "Jagamislink loodud",
+  "secEventRecoveryKeyCreated": "Taastevõti loodud",
+  "secEventAppLockEnabled": "Rakenduse lukk lülitati sisse",
+  "secEventAppLockDisabled": "Rakenduse lukk lülitati välja",
+  "secEventPlanStarted": "Pakett algas",
+  "secEventPlanRenewed": "Pakett uuendati",
+  "secEventPlanCancelled": "Pakett tühistati",
+  "secEventPlanEnded": "Pakett lõppes",
+  "secEventAccountDeletionRequested": "Konto kustutamist taotleti",
+  "secEventOther": "Konto tegevus",
+  "secAutoLockTitle": "Lukusta uuesti",
+  "secAutoLockBody": "Vali, kui kaua võib Vaultara taustal olla, enne kui see palub sul uuesti avada.",
+  "secAutoLockImmediately": "Kohe",
+  "secAutoLockOneMinute": "1 minuti pärast",
+  "secAutoLockFiveMinutes": "5 minuti pärast",
+  "secAutoLockFifteenMinutes": "15 minuti pärast",
+  "secAutoLockNeedsAppLock": "Selle kasutamiseks lülita rakenduse lukk sisse",
+  "secHideInRecentsTitle": "Privaatsusekraan",
+  "secHideInRecentsSubtitle": "Peida oma kirjed hiljutiste rakenduste vaates",
+  "secBlockScreenshotsTitle": "Blokeeri ekraanipildid",
+  "secBlockScreenshotsSubtitle": "Ekraanidel, mis näitavad dokumentide andmeid, fotosid ja võtmeid",
+  "secCopiedWillClear": "Kopeeritud. See kustutatakse lõikelaualt 60 sekundi pärast.",
+  "secAnalyticsTitle": "Jaga kasutusandmeid",
+  "secAnalyticsSubtitle": "Anonüümsed andmed, mis aitavad meil Vaultarat paremaks teha",
+  "secAnalyticsSheetTitle": "Aita Vaultarat paremaks teha",
+  "secAnalyticsSheetBody": "Luba Vaultaral koguda anonüümseid kasutusandmeid, et näeksime, millised funktsioonid aitavad, ja saaksime vigu parandada. Me ei kogu kunagi sinu kirjeid, fotosid ega dokumente. Saad seda igal ajal muuta jaotises Turvalisus ja privaatsus.",
+  "secAllow": "Luba",
+  "secPrivacyPolicy": "Privaatsuspoliitika",
+  "secTermsOfService": "Kasutustingimused",
+  "secOpensInBrowser": "Avaneb sinu brauseris",
+  "secConsentAgree": "Nõustun dokumentidega {terms} ja {privacy}",
+  "secTermsUpdatedTitle": "Uuendasime oma tingimusi ja privaatsuspoliitikat",
+  "secTermsUpdatedBody": "Loe uuendatud kasutustingimused ja privaatsuspoliitika läbi. Vaultara kasutamise jätkamiseks puuduta Nõustu.",
+  "secAccept": "Nõustu",
+  "secBillingTitle": "Arveldusajalugu",
+  "secBillingNote": "Google Play või Apple saadab sulle ametliku kviitungi koos makstud summaga.",
+  "secBillingEmpty": "Arveldustegevust veel pole.",
+  "secBillingStarted": "Pakett algas",
+  "secBillingRenewed": "Pakett uuendati",
+  "secBillingCancelled": "Automaatne uuendamine lülitati välja",
+  "secBillingResumed": "Automaatne uuendamine lülitati uuesti sisse",
+  "secBillingEnded": "Pakett lõppes",
+  "secBillingRefunded": "Raha tagastatud",
+  "secBillingOther": "Arvelduse uuendus",
+  "secBillingRenewsOn": "Uueneb {date}",
+  "secBillingAccessUntil": "Juurdepääs kuni {date}",
+  "secStoreGoogle": "Google Play",
+  "secStoreApple": "App Store",
+  "assistantActionFailed": "Seda ei õnnestunud salvestada. Kontrolli ühendust ja proovi uuesti.",
+  "assistantActionNotPossible": "See muudatus pole enam võimalik. Küsi Vaultaralt uuesti või tee muudatus ise.",
+  "assistantActionOpensForm": "Kinnita avab kirje lisamise vormi, et saaksid selle lõpetada.",
+  "assistantCardCancelled": "Tühistatud",
+  "assistantCardDone": "Valmis",
+  "assistantCardEditTitle": "Muuda kirjet",
+  "assistantCardNotConfirmed": "Kinnitamata",
+  "assistantDays": "{count, plural, one{{count} päev} other{{count} päeva}}",
+  "assistantDeleteNote": "See liigub taastekeskusesse, kus saad selle 30 päeva jooksul taastada.",
+  "assistantFieldCountries": "Riigid",
+  "assistantHistoryAllDeleted": "Kõik vestlused on kustutatud",
+  "assistantHistoryDeleteAll": "Kustuta kõik vestlused",
+  "assistantHistoryDeleteAllBody": "Kõik sinu salvestatud vestlused funktsiooniga Küsi Vaultaralt kustutatakse. Seda ei saa tagasi võtta. Sinu kirjeid see ei mõjuta.",
+  "assistantHistoryDeleteAllTitle": "Kas kustutada kõik vestlused?",
+  "assistantHistoryDeleteBody": "See vestlus kustutatakse sinu kontolt. Sinu kirjeid see ei mõjuta.",
+  "assistantHistoryDeleteChat": "Kustuta vestlus",
+  "assistantHistoryDeleteFailed": "Vestlust ei õnnestunud kustutada. Kontrolli ühendust ja proovi uuesti.",
+  "assistantHistoryDeleteTitle": "Kas kustutada see vestlus?",
+  "assistantHistoryDeleted": "Vestlus on kustutatud",
+  "assistantHistoryEmpty": "Salvestatud vestlusi veel pole. Sinu vestlused funktsiooniga Küsi Vaultaralt ilmuvad siia.",
+  "assistantHistoryLoadError": "Me ei saanud sinu vestlusi laadida. Kontrolli ühendust ja proovi uuesti.",
+  "assistantHistoryNote": "Vestlused salvestatakse sinu kontole, et saaksid nende juurde tagasi tulla. Need kustutatakse automaatselt 90 päeva pärast.",
+  "assistantHistoryTitle": "Vestluste ajalugu",
+  "assistantIntroAll": "Küsi minult oma kirjete, reiside ja Vaultara toimimise kohta. Võin ka uusi kirjeid ja muudatusi ette valmistada, et sa need üle vaataksid ja kinnitaksid.",
+  "assistantOpen": "Ava",
+  "assistantPeopleLimit": "Sinu paketis pole vaba kohta veel ühe inimese jaoks.",
+  "assistantPersonMissing": "Seda inimest pole enam Vaultaras.",
+  "assistantPrivacyNoteSaved": "Vastused kasutavad tehisintellekti. Sinu küsimus ja ainult vastamiseks vajalikud kirje andmed saadetakse meie tehisintellekti pakkujale. Lukustatud kirjete nimesid ja märkmeid ei saadeta kunagi ning pikad numbrid märkmetes peidetakse. Vestlused salvestatakse sinu kontole 90 päevaks ja sinu kirjetes ei muutu midagi enne, kui sa kinnitad.",
+  "assistantRenewDateInvalid": "Uus aegumiskuupäev peab olema praegusest hilisem.",
+  "assistantSuggestionWhere": "Kust ma lülitan sisse kaheastmelise sisselogimise?",
+  "assistantTripLimit": "Sul on lubatud maksimaalne arv reise. Kustuta enne mõni vana reis.",
+  "assistantTripMissing": "Seda reisi pole enam Vaultaras.",
+  "assistantValueNone": "Puudub",
+  "assistantValueOff": "Väljas",
+  "assistantValueOn": "Sees",
+  "secBillingEmptyHint": "Kui alustad, uuendad või tühistad paketi, näed seda siin.",
+  "secBillingLoadFailed": "Sinu arveldusajalugu ei õnnestunud laadida. Kontrolli ühendust ja proovi uuesti.",
+  "secBillingRetry": "Proovi uuesti",
+  "planTrialStartMonths": "{count, plural, one{Alusta {count}-kuulist tasuta prooviperioodi} other{Alusta {count}-kuulist tasuta prooviperioodi}}",
+  "planTrialNewSubscribers": "Tasuta prooviperiood uutele tellijatele: {length}.",
+  "planTrialThenMonthGooglePlay": "Seejärel {price} kuus. Tühista igal ajal Google Plays.",
+  "planTrialThenYearGooglePlay": "Seejärel {price} aastas. Tühista igal ajal Google Plays.",
+  "planTrialThenMonthAppStore": "Seejärel {price} kuus. Tühista igal ajal App Store’is.",
+  "planTrialThenYearAppStore": "Seejärel {price} aastas. Tühista igal ajal App Store’is.",
+  "planTrialNoChargeToday": "Täna sa midagi ei maksa. Kui tühistad enne prooviperioodi lõppu, sinult tasu ei võeta.",
+  "verifyEmailLinkVerifying": "Sinu e-posti aadressi kinnitamine",
+  "verifyEmailSuccess": "Sinu e-posti aadress on kinnitatud.",
+  "passwordErrorSameAsCurrent": "Uus parool peab erinema sinu praegusest paroolist.",
+  "passwordErrorLeaked": "See parool on ilmunud andmelekkes, seega ei ole see turvaline. Vali mõni muu parool.",
+  "passwordErrorWrongCurrent": "Sinu praegune parool ei ole õige. Kontrolli seda ja proovi uuesti.",
+  "passwordErrorCurrentRequired": "Sisesta oma praegune parool, et saaksime kinnitada, et see oled sina.",
+  "passwordErrorNewRequired": "Sisesta uus parool.",
+  "passwordErrorConfirmRequired": "Kinnitamiseks sisesta oma uus parool uuesti.",
+  "passwordErrorMismatch": "Need kaks parooli ei ühti. Sisesta mõlemale väljale sama uus parool.",
+  "passwordErrorTooShort": "{count, plural, one{See parool on liiga lühike. Kasuta vähemalt {count} märki.} other{See parool on liiga lühike. Kasuta vähemalt {count} märki.}}",
+  "passwordErrorNeedUpper": "See parool on liiga nõrk, sest selles ei ole suurtähte. Lisa vähemalt üks suurtäht.",
+  "passwordErrorNeedLower": "See parool on liiga nõrk, sest selles ei ole väiketähte. Lisa vähemalt üks väiketäht.",
+  "passwordErrorNeedNumber": "See parool on liiga nõrk, sest selles ei ole numbrit. Lisa vähemalt üks number.",
+  "passwordErrorNeedSymbol": "See parool on liiga nõrk, sest selles ei ole erimärki. Lisa vähemalt üks, näiteks ! või #.",
+  "passwordErrorWeak": "{count, plural, one{See parool on liiga nõrk. Kasuta vähemalt {count} märki, sealhulgas suurtähte, väiketähte, numbrit ja erimärki.} other{See parool on liiga nõrk. Kasuta vähemalt {count} märki, sealhulgas suurtähte, väiketähte, numbrit ja erimärki.}}",
+  "passwordErrorRecentLogin": "Sinu turvalisuse huvides pead enne parooli muutmist uuesti sisse logima. Logi välja, logi sisse ja proovi uuesti.",
+  "passwordErrorChangeFailed": "Sinu parooli ei muudetud, sest midagi läks valesti. Proovi uuesti.",
+  "passportsTitle": "Passid",
+  "passportAddAnother": "Lisa veel üks pass",
+  "passportRemove": "Eemalda pass",
+  "passportLinkRecord": "Seo salvestatud passiga",
+  "passportChooseRecord": "Vali salvestatud pass",
+  "passportNoRecords": "Salvestatud passe veel pole. Lisa pass kõigepealt hoidlasse.",
+  "passportExpires": "Aegub {date}",
+  "passportNotLinked": "Seo salvestatud pass, et kontrollida selle kehtivust.",
+  "passportTravelOn": "Reisi riigi {country} passiga",
+  "passportEnterOwn": "Sisene oma riigi {country} passiga. Viisat pole vaja.",
+  "passportChange": "Muuda passi",
+  "passportBest": "Parim valik",
+  "passportUseBest": "Kasuta parimat valikut",
+  "passportChooseFor": "Pass riigile {country}",
+  "passportExpiredFor": "See pass aegub {date}, enne sinu tagasitulekut.",
+  "passportShortFor": "See pass aegub {date}. Paljud riigid tahavad, et see kehtiks veel mõne kuu pärast tagasitulekut.",
+  "passportSeveralNote": "Mitme passi korral on mõnes riigis lisareeglid. Küsi enne reisi saatkonnast.",
+  "visaNoteDual": "{country} ei tunnista topeltkodakondsust. Küsi enne reisi saatkonnast.",
+  "visaNoteEmbassy": "Riigil {country} on mõne passi jaoks lisaeeskirjad. Küsi enne reisi saatkonnast.",
+  "visaDataUpdated": "Viisaandmed uuendatud {date}",
+  "visaDataStale": "Viisaandmeid uuendati viimati {date}. Need võivad olla aegunud.",
+  "travelFlightLandsIn": "Maandub riigis",
+  "travelFlightLandsInChoose": "Riik (valikuline)",
+  "travelFlightLandsInHint": "Vajalik ainult vahemaandumiste jaoks. Kasutatakse transiitviisade kontrollimiseks.",
+  "travelTransitNote": "Vahemaandumine riigis {country}. Kontrolli, kas vajad transiitviisat."
 }
-  
-

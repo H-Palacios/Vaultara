@@ -1,102 +1,45 @@
 {
   "@@locale": "pa",
-  "expiryCalendarTitle": "ਮਿਆਦ ਕੈਲੰਡਰ",
-
-  "calendarIntro": "ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਮਿਆਦਾਂ ਕਿਵੇਂ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ:\n\n• ਲਿਖੋ ਕਿ ਅੱਜ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਅੱਗੇ ਵੇਖਣਾ ਹੈ।\n• ਜਾਂ ਕੈਲੰਡਰ ਤੋਂ ਕੋਈ ਖਾਸ ਤਾਰੀਖ ਚੁਣੋ।\n\nVaultara ਉਸ ਦਿਨ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੀਆਂ ਚੀਜ਼ਾਂ ਦਿਖਾਵੇਗਾ।",
-
-  "daysFromTodayLabel": "ਅੱਜ ਤੋਂ ਦਿਨ",
-  "daysFromTodayHint": "ਜਿਵੇਂ 0, 1, 7, 30",
-
   "apply": "ਲਾਗੂ ਕਰੋ",
-  "pickDateOnCalendar": "ਕੈਲੰਡਰ ਤੋਂ ਤਾਰੀਖ ਚੁਣੋ",
-
   "today": "ਅੱਜ",
   "tomorrow": "ਕੱਲ੍ਹ",
-  "in7Days": "7 ਦਿਨਾਂ ਵਿੱਚ",
-  "in30Days": "30 ਦਿਨਾਂ ਵਿੱਚ",
-
   "inDays": "{days} ਦਿਨਾਂ ਵਿੱਚ",
   "@inDays": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
-  "enterDaysError": "ਕਿਰਪਾ ਕਰਕੇ ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ ਦਰਜ ਕਰੋ।",
-  "invalidDaysError": "ਸਹੀ ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ ਦਰਜ ਕਰੋ (0 ਜਾਂ ਵੱਧ)।",
-
-  "showingItemsRelative": "ਉਹ ਚੀਜ਼ਾਂ ਦਿਖਾਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ ਜੋ {time} ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਕਰਨਗੀਆਂ",
-  "@showingItemsRelative": {
-    "placeholders": {
-      "time": { "type": "String" }
-    }
-  },
-
-  "showingItemsExact": "ਚੁਣੀ ਤਾਰੀਖ ‘ਤੇ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੀਆਂ ਚੀਜ਼ਾਂ ਦਿਖਾਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ",
-  "noItemsOnDate": "ਇਸ ਦਿਨ ਲਈ ਕੋਈ ਚੀਜ਼ ਮਿਆਦ ਖਤਮ ਹੋਣ ਲਈ ਨਿਰਧਾਰਿਤ ਨਹੀਂ ਹੈ।",
-
-  "editorAddTitle": "ਚੀਜ਼ ਜੋੜੋ",
-  "editorEditTitle": "ਚੀਜ਼ ਸੋਧੋ",
-
   "editorCategory": "ਸ਼੍ਰੇਣੀ",
   "editorCategoryHint": "ਸ਼੍ਰੇਣੀ ਚੁਣੋ",
-
   "editorGroup": "ਗਰੁੱਪ",
   "editorGroupHint": "ਇਸ ਸ਼੍ਰੇਣੀ ਹੇਠਾਂ ਗਰੁੱਪ ਚੁਣੋ",
-
-  "editorItemName": "ਚੀਜ਼ ਦਾ ਨਾਮ",
-  "editorItemNameHint": "ਚੀਜ਼ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ",
-
   "editorExpiryDate": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ",
   "editorExpiryDateHint": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਚੁਣੋ",
-
   "editorErrorCategory": "ਸ਼੍ਰੇਣੀ ਚੁਣੋ",
   "editorErrorGroup": "ਗਰੁੱਪ ਚੁਣੋ",
-  "editorErrorName": "ਚੀਜ਼ ਦਾ ਨਾਮ ਲਾਜ਼ਮੀ ਹੈ",
   "editorErrorExpiry": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਚੁਣੋ",
-  "editorErrorExpiryPast": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਅੱਜ ਜਾਂ ਭਵਿੱਖ ਦੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ",
-
   "cancel": "ਰੱਦ ਕਰੋ",
   "save": "ਸੰਭਾਲੋ",
-
   "addCategoryTitle": "ਸ਼੍ਰੇਣੀ ਜੋੜੋ",
-  "unlimitedCategories": "ਅਸੀਮਿਤ ਸ਼੍ਰੇਣੀਆਂ (ਪ੍ਰੀਮੀਅਮ)",
-
-  "categoryUsage": "{current} / {limit} ਸ਼੍ਰੇਣੀਆਂ ਵਰਤੀਆਂ ਜਾ ਚੁੱਕੀਆਂ ਹਨ",
-  "@categoryUsage": {
-    "placeholders": {
-      "current": { "type": "int" },
-      "limit": { "type": "int" }
-    }
-  },
-
-  "categoryNameLabel": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ",
   "categoryNameHint": "ਸ਼੍ਰੇਣੀ ਦਰਜ ਕਰੋ",
-
-  "categoryLimitReached": "ਤੁਸੀਂ ਬੇਸਿਕ ਪਲਾਨ ਵਿੱਚ {limit} ਸ਼੍ਰੇਣੀਆਂ ਦੀ ਹੱਦ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਅਸੀਮਿਤ ਸ਼੍ਰੇਣੀਆਂ ਲਈ ਪ੍ਰੀਮੀਅਮ ‘ਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
+  "categoryLimitReached": "ਤੁਸੀਂ ਮੁਫ਼ਤ ਪਲਾਨ ਦੀ {limit} ਸ਼੍ਰੇਣੀਆਂ ਦੀ ਹੱਦ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਅਸੀਮਤ ਕਸਟਮ ਸ਼੍ਰੇਣੀਆਂ ਬਣਾਉਣ ਲਈ ਪ੍ਰੀਮੀਅਮ ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
   "@categoryLimitReached": {
     "placeholders": {
-      "limit": { "type": "int" }
+      "limit": {
+        "type": "int"
+      }
     }
   },
-
-  "categoryLimitInfo": "ਬੇਸਿਕ ਪਲਾਨ ਵਿੱਚ ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ {limit} ਸ਼੍ਰੇਣੀਆਂ ਬਣਾ ਸਕਦੇ ਹੋ।",
-  "@categoryLimitInfo": {
-    "placeholders": {
-      "limit": { "type": "int" }
-    }
-  },
-
   "categoryErrorEmpty": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਲਾਜ਼ਮੀ ਹੈ",
   "categoryErrorTooShort": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਹੁਤ ਛੋਟਾ ਹੈ",
   "categoryErrorTooLong": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਹੁਤ ਲੰਮਾ ਹੈ",
   "categoryErrorSymbols": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਸਿਰਫ਼ ਚਿੰਨ੍ਹਾਂ ‘ਤੇ ਅਧਾਰਿਤ ਨਹੀਂ ਹੋ ਸਕਦਾ",
   "categoryErrorNumbers": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਸਿਰਫ਼ ਅੰਕਾਂ ‘ਤੇ ਅਧਾਰਿਤ ਨਹੀਂ ਹੋ ਸਕਦਾ",
-
   "upgradeRequired": "ਅੱਪਗ੍ਰੇਡ ਲਾਜ਼ਮੀ ਹੈ",
   "viewPremiumBenefits": "ਪ੍ਰੀਮੀਅਮ ਫਾਇਦੇ ਵੇਖੋ",
   "createCategory": "ਬਣਾਓ",
-
   "addGroupTitle": "ਗਰੁੱਪ ਜੋੜੋ",
   "groupNameLabel": "ਗਰੁੱਪ",
   "groupNameHint": "ਗਰੁੱਪ ਦਰਜ ਕਰੋ",
@@ -106,40 +49,23 @@
   "groupErrorSymbols": "ਗਰੁੱਪ ਦੇ ਨਾਮ ਵਿੱਚ ਚਿੰਨ੍ਹ ਨਹੀਂ ਹੋ ਸਕਦੇ",
   "groupErrorNumbers": "ਗਰੁੱਪ ਦੇ ਨਾਮ ਵਿੱਚ ਅੰਕ ਨਹੀਂ ਹੋ ਸਕਦੇ",
   "createGroup": "ਬਣਾਓ",
-
   "firstNameLabel": "ਪਹਿਲਾ ਨਾਮ",
   "firstNameHint": "ਪਹਿਲਾ ਨਾਮ ਦਰਜ ਕਰੋ",
-
   "lastNameLabel": "ਆਖਰੀ ਨਾਮ",
   "lastNameHint": "ਆਖਰੀ ਨਾਮ ਦਰਜ ਕਰੋ",
-
   "emailLabel": "ਈਮੇਲ ਪਤਾ",
-
   "loginPasswordHint": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
   "registerPasswordHint": "ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
-  "passwordHelper": "ਘੱਟੋ-ਘੱਟ 8 ਅੱਖਰ, ਵੱਖ-ਵੱਖ ਕਿਸਮਾਂ ਨਾਲ",
-
-  "passwordTooShort": "ਬਹੁਤ ਛੋਟਾ",
-  "passwordTooWeak": "ਬਹੁਤ ਕਮਜ਼ੋਰ",
-  "passwordMedium": "ਦਰਮਿਆਨਾ",
-  "passwordStrong": "ਮਜ਼ਬੂਤ",
-
   "errorFirstName": "ਪਹਿਲਾ ਨਾਮ ਲਾਜ਼ਮੀ ਹੈ",
   "errorLastName": "ਆਖਰੀ ਨਾਮ ਲਾਜ਼ਮੀ ਹੈ",
   "errorEmailInvalid": "ਸਹੀ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ",
   "errorEmailInUse": "ਇਹ ਈਮੇਲ ਪਤਾ ਪਹਿਲਾਂ ਹੀ\nVaultara ਖਾਤੇ ਨਾਲ ਜੁੜਿਆ ਹੋਇਆ ਹੈ",
   "errorPasswordLength": "ਪਾਸਵਰਡ ਘੱਟੋ-ਘੱਟ 8 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
-  "errorPasswordWeak": "ਹੋਰ ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
   "errorGeneric": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਸਫਲ ਰਹੀ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
-
   "createAccount": "ਖਾਤਾ ਬਣਾਓ",
   "appName": "Vaultara",
-  "authTagline": "ਪਾਸਪੋਰਟ, ਲਾਇਸੈਂਸ, ਕਾਰਡਾਂ ਅਤੇ ਹੋਰ ਮਹੱਤਵਪੂਰਨ ਦਸਤਾਵੇਜ਼ਾਂ ਲਈ ਤੁਹਾਡਾ ਨਿੱਜੀ ਕੇਂਦਰ",
+  "authTagline": "ਮਿਆਦ ਲੰਘਣ ਦੀ ਤਾਰੀਖ ਕਦੇ ਵੀ ਨਾ ਖੁੰਝਾਓ",
   "tabSignIn": "ਸਾਈਨ ਇਨ",
-  "tabCreateAccount": "ਖਾਤਾ ਬਣਾਓ",
-  "signInFooterText": "ਆਪਣੇ ਨਿੱਜੀ Vaultara ਖਾਤੇ ਤੱਕ ਪਹੁੰਚ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ ਅਤੇ ਸਾਰੀਆਂ ਨਵੀਨੀਕਰਨਾਂ ਨੂੰ ਕੰਟਰੋਲ ਵਿੱਚ ਰੱਖੋ",
-  "createAccountFooterText": "ਮਹੱਤਵਪੂਰਨ ਯਾਦ ਦਿਵਾਣੀਆਂ ਸੰਭਾਲਣ ਅਤੇ ਜਦੋਂ ਚਾਹੋ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ Vaultara ਖਾਤਾ ਬਣਾਓ",
-
   "emailRequired": "ਤੁਹਾਡਾ ਈਮੇਲ ਪਤਾ ਲਾਜ਼ਮੀ ਹੈ",
   "passwordRequired": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਲਾਜ਼ਮੀ ਹੈ",
   "emailNotFound": "ਗਲਤ ਈਮੇਲ। ਇਸ ਈਮੇਲ ਨਾਲ\nਕੋਈ Vaultara ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ",
@@ -147,757 +73,1900 @@
   "emailHint": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
   "passwordLabel": "ਪਾਸਵਰਡ",
   "signIn": "ਸਾਈਨ ਇਨ",
-
   "categoryPersonalIdentification": "ਨਿੱਜੀ ਪਛਾਣ",
   "categoryDrivingAndVehicles": "ਡਰਾਈਵਿੰਗ ਅਤੇ ਵਾਹਨ",
   "categoryTravelAndImmigration": "ਯਾਤਰਾ ਅਤੇ ਇਮੀਗ੍ਰੇਸ਼ਨ",
   "categoryBankingAndCards": "ਬੈਂਕਿੰਗ ਅਤੇ ਕਾਰਡ",
   "categoryInsuranceAndCover": "ਇੰਸ਼ੋਰੈਂਸ ਅਤੇ ਕਵਰ",
-  "categoryHealthAndMedical": "ਸਿਹਤ ਅਤੇ ਮੈਡੀਕਲ",
   "categoryWorkAndProfessional": "ਕੰਮ ਅਤੇ ਪੇਸ਼ੇਵਰ",
   "categoryPropertyAndHousing": "ਜਾਇਦਾਦ ਅਤੇ ਰਹਾਇਸ਼",
-  "categoryHouseholdAndUtilities": "ਘਰੇਲੂ ਅਤੇ ਯੂਟਿਲਿਟੀਜ਼",
-
   "subcategoryPassports": "ਪਾਸਪੋਰਟ",
   "subcategoryIdCards": "ਪਛਾਣ ਕਾਰਡ",
   "subcategoryResidencePermits": "ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ",
-
   "subcategoryDrivingLicences": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ",
   "subcategoryVehicleRegistrations": "ਵਾਹਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
   "subcategoryRoadworthyCertificates": "ਰੋਡਵਰਥੀ ਸਰਟੀਫਿਕੇਟ",
-  "subcategoryVehicleInspectionCertificates": "ਵਾਹਨ ਇੰਸਪੈਕਸ਼ਨ ਸਰਟੀਫਿਕੇਟ",
-
   "subcategoryVisas": "ਵੀਜ਼ੇ",
   "subcategoryStudyPermits": "ਸਟਡੀ ਪਰਮਿਟ",
   "subcategoryWorkPermits": "ਵਰਕ ਪਰਮਿਟ",
-  "subcategoryTravelInsuranceDocuments": "ਟ੍ਰੈਵਲ ਇੰਸ਼ੋਰੈਂਸ ਦਸਤਾਵੇਜ਼",
-
   "subcategoryDebitAndCreditCards": "ਡੈਬਿਟ ਅਤੇ ਕਰੈਡਿਟ ਕਾਰਡ",
   "subcategoryStoreCards": "ਸਟੋਰ ਕਾਰਡ",
-  "subcategoryFuelCards": "ਫਿਊਲ ਕਾਰਡ",
-
   "subcategoryVehicleInsurances": "ਵਾਹਨ ਇੰਸ਼ੋਰੈਂਸ",
   "subcategoryPropertyInsurances": "ਜਾਇਦਾਦ ਇੰਸ਼ੋਰੈਂਸ",
   "subcategoryLifeInsurances": "ਲਾਈਫ ਇੰਸ਼ੋਰੈਂਸ",
   "subcategoryHealthInsurances": "ਹੈਲਥ ਇੰਸ਼ੋਰੈਂਸ",
   "subcategoryTravelInsurances": "ਟ੍ਰੈਵਲ ਇੰਸ਼ੋਰੈਂਸ",
-
-  "subcategoryMedicalPrescriptions": "ਮੈਡੀਕਲ ਪ੍ਰਿਸਕ੍ਰਿਪਸ਼ਨ",
-  "subcategoryOpticalPrescriptions": "ਨਜ਼ਰ ਵਾਲੇ ਪ੍ਰਿਸਕ੍ਰਿਪਸ਼ਨ",
-  "subcategoryMedicalCertificates": "ਮੈਡੀਕਲ ਸਰਟੀਫਿਕੇਟ",
-
   "subcategoryProfessionalLicences": "ਪੇਸ਼ੇਵਰ ਲਾਇਸੈਂਸ",
-  "subcategoryProfessionalRegistrations": "ਪੇਸ਼ੇਵਰ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
-  "subcategoryIndustryRegistrations": "ਉਦਯੋਗ ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
   "subcategoryWorkAccessCards": "ਕੰਮ ਲਈ ਐਕਸੈੱਸ ਕਾਰਡ",
-
   "subcategoryLeaseAgreements": "ਕਿਰਾਏ ਦੇ ਸਮਝੌਤੇ",
   "subcategoryAccessCardsAndTags": "ਐਕਸੈੱਸ ਕਾਰਡ ਅਤੇ ਟੈਗ",
-  "subcategoryParkingPermits": "ਪਾਰਕਿੰਗ ਪਰਮਿਟ",
-  "subcategorySecurityAccessPermits": "ਸੁਰੱਖਿਆ ਐਕਸੈੱਸ ਪਰਮਿਟ",
-
-  "subcategoryElectricityAccounts": "ਬਿਜਲੀ ਦੇ ਖਾਤੇ",
-  "subcategoryWaterAccounts": "ਪਾਣੀ ਦੇ ਖਾਤੇ",
-  "subcategoryInternetContracts": "ਇੰਟਰਨੈੱਟ ਕਾਂਟ੍ਰੈਕਟ",
-  "subcategorySecurityServiceContracts": "ਸੁਰੱਖਿਆ ਸੇਵਾ ਕਾਂਟ੍ਰੈਕਟ",
-
   "searchCategories": "ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਖੋਜੋ",
   "filterAll": "ਸਭ",
   "filterPreset": "ਪਹਿਲਾਂ ਤੋਂ ਨਿਰਧਾਰਤ",
   "filterCustom": "ਕਸਟਮ",
-  "customLabel": "ਕਸਟਮ",
-  "subcategoriesLabel": "ਉਪ-ਸ਼੍ਰੇਣੀਆਂ",
-  "itemsLabel": "ਚੀਜ਼ਾਂ",
-
-  "itemsExpiring": "{count} ਚੀਜ਼ਾਂ {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਕਰਨਗੀਆਂ",
-  "@itemsExpiring": {
-    "placeholders": {
-      "count": { "type": "int" },
-      "days": { "type": "int" }
-    }
-  },
-
-  "pinnedEssentials": "ਪਿੰਨ ਕੀਤੀਆਂ ਲੋੜੀਂਦੀਆਂ ਚੀਜ਼ਾਂ",
-  "pinnedHint": "ਜਿਨ੍ਹਾਂ ਸ਼੍ਰੇਣੀਆਂ ਨੂੰ ਤੁਸੀਂ ਵੱਧ ਵਰਤਦੇ ਹੋ ਉਹਨਾਂ ਨੂੰ ਪਿੰਨ ਕਰੋ ਤਾਂ ਜੋ ਉਹ ਸੂਚੀ ਵਿੱਚ ਉੱਤੇ ਰਹਿਣ।",
   "noCategoriesFound": "ਕੋਈ ਸ਼੍ਰੇਣੀ ਨਹੀਂ ਮਿਲੀ",
-
   "searchGroups": "ਗਰੁੱਪਾਂ ਵਿੱਚ ਖੋਜੋ",
-
-  "basicPlanGroupInfo": "ਤੁਸੀਂ ਬੇਸਿਕ ਪਲਾਨ ‘ਤੇ ਹੋ।\nਤੁਸੀਂ ਇਸ ਸ਼੍ਰੇਣੀ ਹੇਠਾਂ ਮੌਜੂਦਾ ਗਰੁੱਪ ਵੇਖ ਸਕਦੇ ਹੋ।\nਆਪਣੇ ਗਰੁੱਪ ਬਣਾਉਣ ਲਈ ਪ੍ਰੀਮੀਅਮ ‘ਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
-
-  "groupDeleted": "ਗਰੁੱਪ ਮਿਟਾਇਆ ਗਿਆ",
-  "undo": "ਵਾਪਸ ਕਰੋ",
-
-  "groupTapHint": "ਇਸ ਗਰੁੱਪ ਵਿੱਚ ਚੀਜ਼ਾਂ ਜੋੜਨ ਅਤੇ ਟ੍ਰੈਕ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।",
-  "itemsInGroup": "ਇਸ ਗਰੁੱਪ ਦੀਆਂ ਚੀਜ਼ਾਂ",
-  "itemsInGroupHint": "ਹਰ ਮਹੱਤਵਪੂਰਨ ਚੀਜ਼ ਨੂੰ ਉਸਦੀ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨਾਲ ਸੰਭਾਲੋ ਤਾਂ ਜੋ ਸਮੇਂ ‘ਤੇ ਨਵੀਨੀਕਰਨ ਹੋ ਸਕੇ।",
-
-  "searchItems": "ਚੀਜ਼ਾਂ ਖੋਜੋ",
-
   "filterExpiringWithin": "{days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੀਆਂ",
   "@filterExpiringWithin": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
   "filterExpired": "ਮਿਆਦ ਖਤਮ",
-  "addItem": "ਚੀਜ਼ ਜੋੜੋ",
-  "noItemsYet": "ਹੁਣ ਤੱਕ ਕੋਈ ਚੀਜ਼ ਨਹੀਂ।",
-
   "statusExpired": "ਮਿਆਦ ਖਤਮ",
   "statusExpiresToday": "ਅੱਜ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ",
   "statusExpiresInOneDay": "1 ਦਿਨ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋਵੇਗੀ",
   "statusExpiresInDays": "{days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋਵੇਗੀ",
   "@statusExpiresInDays": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
   "statusValid": "ਵੈਧ",
-
   "deleteCategoryTitle": "ਸ਼੍ਰੇਣੀ ਮਿਟਾਓ",
   "deleteCategoryMessage": "ਕੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਸ਼੍ਰੇਣੀ \"{name}\" ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "@deleteCategoryMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
   "deleteGroupTitle": "ਗਰੁੱਪ ਮਿਟਾਓ",
   "deleteGroupMessage": "ਕੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਗਰੁੱਪ \"{name}\" ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "@deleteGroupMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
-  "deleteItemTitle": "ਚੀਜ਼ ਮਿਟਾਓ",
   "deleteItemMessage": "ਕੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ \"{name}\" ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "@deleteItemMessage": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
   "delete": "ਮਿਟਾਓ",
-
   "homeWelcomeTitle": "ਜੀ ਆਇਆਂ ਨੂੰ",
-
   "homeWelcomeFirstTitle": "ਜੀ ਆਇਆਂ ਨੂੰ, {name}",
   "@homeWelcomeFirstTitle": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
   "homeWelcomeBackTitle": "ਦੁਬਾਰਾ ਜੀ ਆਇਆਂ ਨੂੰ, {name}",
   "@homeWelcomeBackTitle": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
-
   "homeWelcomeSubtitleGeneric": "Vaultara ਤੁਹਾਨੂੰ ਮਹੱਤਵਪੂਰਨ ਮਿਆਦ ਦੀਆਂ ਤਾਰੀਖਾਂ ‘ਤੇ ਨਜ਼ਰ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਕੁਝ ਵੀ ਚੁੱਪਚਾਪ ਮਿਆਦ ਪਾਰ ਨਾ ਹੋ ਜਾਵੇ।",
   "homeWelcomeSubtitleFirst": "ਤੁਹਾਨੂੰ ਇੱਥੇ ਵੇਖ ਕੇ ਖੁਸ਼ੀ ਹੋਈ। Vaultara ਤੁਹਾਡੀਆਂ ਮਹੱਤਵਪੂਰਨ ਤਾਰੀਖਾਂ ਅਤੇ ਰਿਕਾਰਡ ਇੱਕ ਸੁਰੱਖਿਅਤ ਥਾਂ ‘ਤੇ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
   "homeWelcomeSubtitleBack": "ਤੁਹਾਨੂੰ ਫਿਰ ਮਿਲ ਕੇ ਚੰਗਾ ਲੱਗਿਆ। Vaultara ਹਮੇਸ਼ਾਂ ਇੱਥੇ ਹੈ ਜਦੋਂ ਵੀ ਤੁਸੀਂ ਆਪਣੇ ਮਹੱਤਵਪੂਰਨ ਰਿਕਾਰਡ ਵੇਖਣਾ ਚਾਹੋ।",
-
-  "insightEmptyTitle": "ਹੁਣ ਤੱਕ ਕੁਝ ਨਹੀਂ ਜੋੜਿਆ",
-  "insightEmptyBody": "ਜਦੋਂ ਤੁਸੀਂ ਮਹੱਤਵਪੂਰਨ ਤਾਰੀਖਾਂ ਟ੍ਰੈਕ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋਗੇ, Vaultara ਤੁਹਾਨੂੰ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਤਿਆਰ ਰੱਖੇਗਾ।",
-
-  "insightExpiresTodayTitle": "\"{name}\" ਅੱਜ ਮਿਆਦ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ",
-  "insightExpiresTodayBody": "ਹੁਣੇ ਇੱਕ ਛੋਟੀ ਜਿਹੀ ਜਾਂਚ ਸਭ ਕੁਝ ਸਹੀ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦੀ ਹੈ।",
-
-  "insightExpiresTomorrowTitle": "\"{name}\" ਕੱਲ੍ਹ ਮਿਆਦ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ",
-  "insightExpiresTomorrowBody": "ਅੱਜ ਸਮੀਖਿਆ ਕਰਨਾ ਬਾਅਦ ਵਿੱਚ ਸਮਾਂ ਬਚਾ ਸਕਦਾ ਹੈ।",
-
-  "insightExpiresSoonTitle": "\"{name}\" {date} ਨੂੰ ਮਿਆਦ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ",
-  "insightExpiresSoonBody": "ਜਲਦੀ ਨਿਪਟਾ ਲੈਣਾ ਕੰਮ ਆਸਾਨ ਕਰ ਸਕਦਾ ਹੈ।",
-
-  "insightNextExpiryTitle": "ਤੁਹਾਡੀ ਅਗਲੀ ਮਿਆਦ \"{name}\" {date} ਨੂੰ ਹੈ",
-  "insightNextExpiryBody": "ਹੁਣੇ ਕੋਈ ਕਾਰਵਾਈ ਦੀ ਲੋੜ ਨਹੀਂ, ਪਰ ਯਾਦ ਰੱਖਣਾ ਚੰਗਾ ਹੈ।",
-
-  "insightClusteredTitle": "{month} ਦੇ ਆਸ-ਪਾਸ ਕਈ ਚੀਜ਼ਾਂ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ",
-  "insightClusteredBody": "ਉਹਨਾਂ ਨੂੰ ਇਕੱਠੇ ਵੇਖਣ ਨਾਲ ਸਮਾਂ ਬਚ ਸਕਦਾ ਹੈ ਅਤੇ ਯਾਦ ਦਿਵਾਣੀਆਂ ਘੱਟ ਹੋ ਸਕਦੀਆਂ ਹਨ।",
-
-  "insightTopCategoryTitle": "ਤੁਹਾਡੀਆਂ ਜ਼ਿਆਦਾਤਰ ਚੀਜ਼ਾਂ {category} ਵਿੱਚ ਹਨ",
-  "insightTopCategoryBody": "ਇਸ ਹਿੱਸੇ ਦੀ ਸਮੀਖਿਆ ਕਰਨ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਸੰਗਠਨਕ ਲਾਭ ਮਿਲਦਾ ਹੈ।",
-
-  "insightStableTitle": "ਸਭ ਕੁਝ ਸਥਿਰ ਲੱਗ ਰਿਹਾ ਹੈ",
-  "insightStableBody": "ਇਸ ਵੇਲੇ ਕੋਈ ਨੇੜਲੀ ਮਿਆਦ ਨਹੀਂ ਜਿਸ ‘ਤੇ ਧਿਆਨ ਦੀ ਲੋੜ ਹੋਵੇ।",
-
-  "@insightExpiresTodayTitle": { "placeholders": { "name": { "type": "String" } } },
-  "@insightExpiresTomorrowTitle": { "placeholders": { "name": { "type": "String" } } },
-  "@insightExpiresSoonTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
-  "@insightNextExpiryTitle": { "placeholders": { "name": { "type": "String" }, "date": { "type": "String" } } },
-  "@insightClusteredTitle": { "placeholders": { "month": { "type": "String" } } },
-  "@insightTopCategoryTitle": { "placeholders": { "category": { "type": "String" } } },
-
-  "summaryAllTitle": "ਸਭ ਚੀਜ਼ਾਂ",
   "summaryAllCaption": "Vaultara ਵਿੱਚ ਸੰਭਾਲੀਆਂ",
-
-  "summarySoonTitle": "ਜਲਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੀਆਂ",
-  "summarySoonCaption": "30 ਦਿਨਾਂ ਦੇ ਅੰਦਰ",
-
-  "summaryWeekTitle": "ਇਸ ਹਫ਼ਤੇ",
-  "summaryWeekCaption": "7 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ",
-
   "summaryExpiredTitle": "ਮਿਆਦ ਖਤਮ",
   "summaryExpiredCaption": "ਮਿਆਦ ਲੰਘ ਚੁੱਕੀ",
-
-  "stabilityStableTitle": "ਸਭ ਕੁਝ ਸਥਿਰ ਲੱਗ ਰਿਹਾ ਹੈ",
-  "stabilityStableBody": "ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਤੁਰੰਤ ਜਾਂ ਵੱਧ ਰਹੇ ਖਤਰੇ ਨਹੀਂ ਹਨ।",
-
-  "stabilityDecliningTitle": "ਸਥਿਰਤਾ ਘਟ ਰਹੀ ਹੈ",
-  "stabilityDecliningBody": "ਕੁਝ ਚੀਜ਼ਾਂ ਦੀ ਮਿਆਦ ਲੰਘ ਚੁੱਕੀ ਹੈ ਅਤੇ ਹੋਰ ਜਲਦੀ ਮਿਆਦ ਖਤਮ ਕਰਨਗੀਆਂ।",
-
-  "stabilityWeakenedTitle": "ਸਥਿਰਤਾ ਕਮਜ਼ੋਰ ਹੋ ਗਈ ਹੈ",
-  "stabilityWeakenedBody": "ਮਿਆਦ ਖਤਮ ਰਿਕਾਰਡ ਮੌਜੂਦ ਹਨ ਜੋ ਕੁੱਲ ਭਰੋਸੇਯੋਗਤਾ ਘਟਾਉਂਦੇ ਹਨ।",
-
-  "stabilityPressureTitle": "ਦਬਾਅ ਵੱਧ ਰਿਹਾ ਹੈ",
-  "stabilityPressureBody": "ਸਥਿਰਤਾ ਬਣਾਈ ਰੱਖਣ ਲਈ ਜਲਦੀ ਕਈ ਰਿਕਾਰਡਾਂ ‘ਤੇ ਧਿਆਨ ਦੀ ਲੋੜ ਹੋਵੇਗੀ।",
-
   "editorNotes": "ਨੋਟਸ",
-  "notesHint": "ਨੋਟਸ ਦਰਜ ਕਰੋ",
-
-  "editorReminderTitle": "ਯਾਦ ਦਿਵਾਣੀ",
-  "editorReminderNone": "ਕੋਈ ਯਾਦ ਦਿਵਾਣੀ ਨਹੀਂ",
+  "editorReminderNone": "ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ",
   "editorReminderOnExpiry": "ਮਿਆਦ ਵਾਲੇ ਦਿਨ",
-  "editorReminder7Days": "ਮਿਆਦ ਤੋਂ 7 ਦਿਨ ਪਹਿਲਾਂ",
-  "editorReminder30Days": "ਮਿਆਦ ਤੋਂ 30 ਦਿਨ ਪਹਿਲਾਂ",
-  "editorReminderCustom": "ਕਸਟਮ",
-
-  "daysBeforeExpiry": "ਮਿਆਦ ਤੋਂ ਪਹਿਲਾਂ ਦਿਨ",
-
-  "reminderStage0Title": "ਮਿਆਦ ਦੀ ਯਾਦ ਦਿਵਾਣੀ",
-  "reminderStage0Body": "{firstName}, ਤੁਹਾਡੀ {itemName} {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ।",
-  "@reminderStage0Body": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "itemName": { "type": "String" },
-      "days": { "type": "int" }
-    }
-  },
-
-  "reminderStage1Title": "ਫਾਲੋ-ਅਪ ਯਾਦ ਦਿਵਾਣੀ",
-  "reminderStage1Body": "{firstName}, ਤੁਹਾਡੀ {itemName} ਹਾਲੇ ਤੱਕ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਈ।",
-  "@reminderStage1Body": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "itemName": { "type": "String" }
-    }
-  },
-
-  "reminderStage2Title": "ਮਿਆਦ ਨੇੜੇ ਹੈ",
-  "reminderStage2Body": "{itemName} ਦੀ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨੇੜੇ ਆ ਰਹੀ ਹੈ।",
-  "@reminderStage2Body": {
-    "placeholders": {
-      "itemName": { "type": "String" }
-    }
-  },
-
-  "reminderFinalTitle": "ਆਖਰੀ ਯਾਦ ਦਿਵਾਣੀ",
-  "reminderFinalBody": "{firstName}, ਕਿਰਪਾ ਕਰਕੇ ਹੁਣ {itemName} ਅੱਪਡੇਟ ਕਰੋ।",
-  "@reminderFinalBody": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "itemName": { "type": "String" }
-    }
-  },
-
-  "coverageBalanceTitle": "ਕਵਰੇਜ ਸੰਤੁਲਨ",
-  "coverageAllRepresented": "ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਸਭ ਸ਼੍ਰੇਣੀਆਂ ਦੀਆਂ ਚੀਜ਼ਾਂ ਸ਼ਾਮਲ ਹਨ।",
-
-  "coverageMissingNamed": "{count} ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ: {names}.",
-  "coverageMissingSummary": "ਤੁਸੀਂ {count} ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ ਜੋੜਿਆ, ਜਿਨ੍ਹਾਂ ਵਿੱਚ {names} ਅਤੇ {remaining} ਹੋਰ ਸ਼ਾਮਲ ਹਨ।",
-
-  "@coverageMissingNamed": {
-    "placeholders": {
-      "count": { "type": "int" },
-      "names": { "type": "String" }
-    }
-  },
-  "@coverageMissingSummary": {
-    "placeholders": {
-      "count": { "type": "int" },
-      "names": { "type": "String" },
-      "remaining": { "type": "int" }
-    }
-  },
-
-  "usePasswordInstead": "ਪਾਸਵਰਡ ਵਰਤੋ",
-  "signInWithBiometrics": "ਬਾਇਓਮੇਟ੍ਰਿਕਸ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ",
-
   "enableBiometricsTitle": "ਬਾਇਓਮੇਟ੍ਰਿਕ ਸੁਰੱਖਿਆ ਚਾਲੂ ਕਰੋ",
-  "enableBiometricsBody": "Vaultara ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫਿੰਗਰਪ੍ਰਿੰਟ ਜਾਂ ਚਿਹਰਾ ਪਛਾਣ ਵਰਤੋ।",
   "enableBiometricsReason": "Vaultara ਲਈ ਬਾਇਓਮੇਟ੍ਰਿਕ ਅਨਲੌਕ ਚਾਲੂ ਕਰੋ।",
-
   "notNow": "ਹੁਣ ਨਹੀਂ",
-  "useBiometrics": "ਬਾਇਓਮੇਟ੍ਰਿਕਸ ਵਰਤੋ",
-
-  "recordsCalendarIntro": "ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਮਿਆਦਾਂ ਕਿਵੇਂ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ:\n\n• ਲਿਖੋ ਕਿ ਅੱਜ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਅੱਗੇ ਵੇਖਣਾ ਹੈ।\n• ਜਾਂ ਕੈਲੰਡਰ ਤੋਂ ਕੋਈ ਖਾਸ ਤਾਰੀਖ ਚੁਣੋ।\n\nVaultara ਉਸ ਦਿਨ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ ਦਿਖਾਵੇਗਾ।",
-
-  "showingRecordsRelative": "ਉਹ ਰਿਕਾਰਡ ਦਿਖਾਏ ਜਾ ਰਹੇ ਹਨ ਜੋ {time} ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਕਰਨਗੇ",
-  "@showingRecordsRelative": {
+  "useBiometrics": "ਬਾਇਓਮੈਟ੍ਰਿਕਸ ਵਰਤੋ",
+  "noRecordsOnDate": "{date} ਨੂੰ ਕੁਝ ਵੀ ਖਤਮ ਨਹੀਂ ਹੁੰਦਾ",
+  "@noRecordsOnDate": {
     "placeholders": {
-      "time": { "type": "String" }
+      "date": {
+        "type": "String"
+      }
     }
   },
-
-  "showingRecordsExact": "ਚੁਣੀ ਤਾਰੀਖ ‘ਤੇ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ ਦਿਖਾਏ ਜਾ ਰਹੇ ਹਨ",
-  "noRecordsOnDate": "ਇਸ ਦਿਨ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਮਿਆਦ ਖਤਮ ਹੋਣ ਲਈ ਨਿਰਧਾਰਿਤ ਨਹੀਂ ਹੈ।",
-
-  "recordEditorAddTitle": "ਰਿਕਾਰਡ ਜੋੜੋ",
-  "recordEditorEditTitle": "ਰਿਕਾਰਡ ਸੋਧੋ",
-
   "editorRecordName": "ਰਿਕਾਰਡ ਦਾ ਨਾਮ",
   "editorRecordNameHint": "ਰਿਕਾਰਡ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ",
   "recordEditorErrorName": "ਰਿਕਾਰਡ ਦਾ ਨਾਮ ਲਾਜ਼ਮੀ ਹੈ",
-
-  "@recordsExpiring": {
-    "placeholders": {
-      "count": { "type": "int" },
-      "days": { "type": "int" }
-    }
-  },
-
-  "@recordsGroupStats": {
-    "placeholders": {
-      "records": { "type": "int" },
-      "expiring": { "type": "int" },
-      "days": { "type": "int" }
-    }
-  },
-
-  "recordsGroupTapHint": "ਇਸ ਗਰੁੱਪ ਵਿੱਚ ਰਿਕਾਰਡ ਜੋੜਨ ਅਤੇ ਟ੍ਰੈਕ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।",
-  "recordsInGroup": "ਇਸ ਗਰੁੱਪ ਦੇ ਰਿਕਾਰਡ",
-  "recordsInGroupHint": "ਹਰ ਮਹੱਤਵਪੂਰਨ ਰਿਕਾਰਡ ਨੂੰ ਉਸਦੀ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨਾਲ ਸੰਭਾਲੋ ਤਾਂ ਜੋ ਸਮੇਂ ‘ਤੇ ਨਵੀਨੀਕਰਨ ਹੋ ਸਕੇ।",
-
   "searchRecords": "ਰਿਕਾਰਡ ਖੋਜੋ",
   "addRecord": "ਰਿਕਾਰਡ ਜੋੜੋ",
   "noRecordsYet": "ਹੁਣ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ।",
-
   "deleteRecordTitle": "ਰਿਕਾਰਡ ਮਿਟਾਓ",
-
-  "recordsInsightClusteredTitle": "{month} ਦੇ ਆਸ-ਪਾਸ ਕਈ ਰਿਕਾਰਡ ਮਿਆਦ ਖਤਮ ਕਰ ਰਹੇ ਹਨ",
-  "@recordsInsightClusteredTitle": {
-    "placeholders": {
-      "month": { "type": "String" }
-    }
-  },
-
-  "recordsInsightTopCategoryTitle": "ਤੁਹਾਡੇ ਜ਼ਿਆਦਾਤਰ ਰਿਕਾਰਡ {category} ਵਿੱਚ ਹਨ",
-  "@recordsInsightTopCategoryTitle": {
-    "placeholders": {
-      "category": { "type": "String" }
-    }
-  },
-
   "summaryAllRecordsTitle": "ਸਭ ਰਿਕਾਰਡ",
-
-  "recordsStabilityDecliningBody": "ਕੁਝ ਰਿਕਾਰਡਾਂ ਦੀ ਮਿਆਦ ਲੰਘ ਚੁੱਕੀ ਹੈ ਅਤੇ ਹੋਰ ਜਲਦੀ ਮਿਆਦ ਖਤਮ ਕਰਨਗੇ।",
-  "recordsCoverageAllRepresented": "ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਸਭ ਸ਼੍ਰੇਣੀਆਂ ਨੂੰ ਕਵਰ ਕਰਦੇ ਹਨ।",
-
-  "recordReminderStage0Body": "{firstName}, ਤੁਹਾਡਾ {recordName} {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ।",
-  "@recordReminderStage0Body": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "recordName": { "type": "String" },
-      "days": { "type": "int" }
-    }
-  },
-
-  "recordReminderStage1Body": "{firstName}, ਤੁਹਾਡਾ {recordName} ਹਾਲੇ ਤੱਕ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ।",
-  "@recordReminderStage1Body": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "recordName": { "type": "String" }
-    }
-  },
-
-  "recordReminderStage2Body": "{recordName} ਦੀ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨੇੜੇ ਆ ਰਹੀ ਹੈ।",
-  "@recordReminderStage2Body": {
-    "placeholders": {
-      "recordName": { "type": "String" }
-    }
-  },
-
-  "recordReminderFinalBody": "{firstName}, ਕਿਰਪਾ ਕਰਕੇ ਹੁਣ {recordName} ਅੱਪਡੇਟ ਕਰੋ।",
-  "@recordReminderFinalBody": {
-    "placeholders": {
-      "firstName": { "type": "String" },
-      "recordName": { "type": "String" }
-    }
-  },
-
   "noGroupFound": "ਹੁਣ ਤੱਕ ਕੋਈ ਗਰੁੱਪ ਨਹੀਂ",
-
-  "recordsExpiring": "{count, plural, one {1 ਰਿਕਾਰਡ {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ} other {{count} ਰਿਕਾਰਡ {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੇ ਹਨ}}",
-  "recordsGroupStats": "{records, plural, one {1 ਰਿਕਾਰਡ} other {{records} ਰਿਕਾਰਡ}} • {expiring} {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖਤਮ ਹੋਣਗੇ",
-
-  "groupLabel": "{count, plural, one {{count} ਗਰੁੱਪ} other {{count} ਗਰੁੱਪ}}",
-  "recordsLabel": "{count, plural, one {{count} ਰਿਕਾਰਡ} other {{count} ਰਿਕਾਰਡ}}",
-
+  "groupLabel": "{count, plural, one{{count} ਗਰੁੱਪ} other{{count} ਗਰੁੱਪ}}",
+  "recordsLabel": "{count, plural, one{{count} ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
   "forgotPassword": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?",
   "forgotPasswordTitle": "ਪਾਸਵਰਡ ਰੀਸੈਟ ਕਰੋ",
   "forgotPasswordBody": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ ਅਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਪਾਸਵਰਡ ਰੀਸੈਟ ਕਰਨ ਲਈ ਲਿੰਕ ਭੇਜਾਂਗੇ।",
   "sendResetLink": "ਰੀਸੈਟ ਲਿੰਕ ਭੇਜੋ",
   "passwordResetEmailSent": "ਪਾਸਵਰਡ ਰੀਸੈਟ ਈਮੇਲ ਭੇਜ ਦਿੱਤੀ ਗਈ ਹੈ।",
   "verifyEmailToContinue": "ਸਾਈਨ ਇਨ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਈਮੇਲ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
-
   "changeEmailTitle": "ਈਮੇਲ ਬਦਲੋ",
   "newEmailHint": "ਨਵੀਂ ਈਮੇਲ ਦਰਜ ਕਰੋ",
   "sendVerificationEmail": "ਪੁਸ਼ਟੀਕਰਨ ਈਮੇਲ ਭੇਜੋ",
-
   "deleteAccountTitle": "ਖਾਤਾ ਮਿਟਾਓ",
   "deleteAccountWarning": "ਇਹ ਕਾਰਵਾਈ ਤੁਹਾਡਾ ਖਾਤਾ ਅਤੇ ਸਾਰਾ ਸੇਵ ਕੀਤਾ ਡਾਟਾ ਸਦਾ ਲਈ ਮਿਟਾ ਦੇਵੇਗੀ।\nਇਹ ਵਾਪਸ ਨਹੀਂ ਹੋ ਸਕਦਾ।",
   "deleteAccountConfirm": "ਖਾਤਾ ਸਦਾ ਲਈ ਮਿਟਾਓ",
-
   "supportTitle": "ਸਹਾਇਤਾ",
   "supportSubtitle": "ਮਦਦ ਜਾਂ ਸਵਾਲਾਂ ਲਈ ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।",
   "supportEmailSubject": "Vaultara ਸਹਾਇਤਾ ਬੇਨਤੀ",
   "supportEmailError": "ਈਮੇਲ ਐਪ ਨਹੀਂ ਖੁੱਲ ਸਕੀ।",
-
   "passwordResetEmailFailed": "ਪਾਸਵਰਡ ਰੀਸੈਟ ਈਮੇਲ ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ।",
-
   "loggedInPasswordResetBody": "ਅਸੀਂ ਪਾਸਵਰਡ ਰੀਸੈਟ ਲਿੰਕ ਇਸ ਈਮੇਲ ‘ਤੇ ਭੇਜਾਂਗੇ:\n{email}",
   "@loggedInPasswordResetBody": {
     "description": "Informs the user that a password reset email will be sent",
-    "placeholders": { "email": { "type": "String" } }
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
   },
-
   "accountManagementTitle": "ਖਾਤਾ ਪ੍ਰਬੰਧਨ",
   "changeEmailSubtitle": "ਆਪਣੇ ਖਾਤੇ ਨਾਲ ਜੁੜੀ ਈਮੇਲ ਅੱਪਡੇਟ ਕਰੋ।",
   "changePasswordTitle": "ਪਾਸਵਰਡ ਬਦਲੋ",
   "changePasswordSubtitle": "ਅਸੀਂ ਸੁਰੱਖਿਅਤ ਤਰੀਕੇ ਨਾਲ ਪਾਸਵਰਡ ਬਦਲਣ ਲਈ ਲਿੰਕ ਭੇਜਾਂਗੇ।",
   "deleteAccountSubtitle": "ਆਪਣਾ Vaultara ਖਾਤਾ ਸਦਾ ਲਈ ਮਿਟਾਓ।",
-
   "biometricAuthReason": "Vaultara ਖਾਤੇ ਤੱਕ ਪਹੁੰਚ ਲਈ ਪੁਸ਼ਟੀ ਕਰੋ।",
-
   "verifyEmailTitle": "ਈਮੇਲ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
-  "verifyEmailBody": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਪੁਸ਼ਟੀਕਰਨ ਈਮੇਲ ਭੇਜੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਖੋਲ੍ਹੋ ਅਤੇ ਈਮੇਲ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ, ਫਿਰ ਇੱਥੇ ਵਾਪਸ ਆਓ।",
-  "verifyEmailConfirmedButton": "ਮੈਂ ਈਮੇਲ ਦੀ ਪੁਸ਼ਟੀ ਕਰ ਲਈ ਹੈ",
-  "verifyEmailResendButton": "ਪੁਸ਼ਟੀਕਰਨ ਈਮੇਲ ਮੁੜ ਭੇਜੋ",
   "verifyEmailSending": "ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
-
-"navHome": "ਘਰ",
-"navCategories": "ਸ਼੍ਰੇਣੀਆਂ",
-"navInsights": "ਜਾਣਕਾਰੀ",
-"navCalendar": "ਕੈਲੰਡਰ",
-
-  "tutorialHomeSearch": "ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ਨੂੰ ਜਲਦੀ ਲੱਭਣ ਲਈ ਸਰਚ ਬਾਰ ਵਰਤੋ।",
-  "tutorialHomeFab": "ਇੱਥੇ ਆਪਣਾ ਪਹਿਲਾ ਰਿਕਾਰਡ ਜੋੜੋ।\nਥਾਂ ਚੁਣੋ, ਨੋਟਸ ਜੋੜੋ ਅਤੇ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਚੁਣੋ।",
-  "tutorialHomeSummary": "ਜਿਵੇਂ-ਜਿਵੇਂ ਤੁਸੀਂ ਹੋਰ ਰਿਕਾਰਡ ਜੋੜੋਗੇ, ਇਹ ਹਿੱਸਾ ਨੇੜੇ ਜਾਂ ਮਿਆਦ ਖਤਮ ਹੋਈਆਂ ਚੀਜ਼ਾਂ ਦਿਖਾਵੇਗਾ।",
-  "tutorialHomeInsight": "ਇਹ ਸਮਾਰਟ ਬਸਿਰਤਾਂ ਪੈਟਰਨ ਅਤੇ ਆਉਣ ਵਾਲੀਆਂ ਮਿਆਦਾਂ ਦਿਖਾਉਂਦੀਆਂ ਹਨ।\nਜੇ ਚਾਹੋ ਤਾਂ ਸਪੀਕਰ ਆਇਕਨ ‘ਤੇ ਟੈਪ ਕਰ ਕੇ ਸੁਣ ਵੀ ਸਕਦੇ ਹੋ।",
-  "tutorialHomeCoverage": "ਕਵਰੇਜ ਸੰਤੁਲਨ ਦਿਖਾਂਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਕਿੰਨੇ ਸਮਾਨ ਵੰਡੇ ਹੋਏ ਹਨ।\nਵੱਧ ਸੰਤੁਲਨ ਘੱਟ ਖਾਲੀ ਥਾਵਾਂ ਦਰਸਾਉਂਦਾ ਹੈ।",
-  "tutorialHomeStability": "ਸਥਿਰਤਾ ਸਮੇਂ ਨਾਲ ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਦੀ ਭਰੋਸੇਯੋਗਤਾ ਦਿਖਾਂਦੀ ਹੈ।\nਮਿਆਦ ਖਤਮ ਅਤੇ ਨੇੜੇ ਆ ਰਹੀਆਂ ਚੀਜ਼ਾਂ ਸਥਿਰਤਾ ਘਟਾ ਸਕਦੀਆਂ ਹਨ।",
-
+  "navHome": "ਘਰ",
+  "navCategories": "ਸ਼੍ਰੇਣੀਆਂ",
+  "navInsights": "ਜਾਣਕਾਰੀ",
+  "navCalendar": "ਕੈਲੰਡਰ",
   "tutorialCancel": "ਰੱਦ ਕਰੋ",
-  "tutorialNext": "ਅਗਲਾ",
-  "tutorialEnd": "ਟਿਊਟੋਰਿਯਲ ਸਮਾਪਤ ਕਰੋ",
-
   "softDeleteCategory": "ਸ਼੍ਰੇਣੀ",
   "softDeleteGroup": "ਗਰੁੱਪ",
   "softDeleteRecord": "ਰਿਕਾਰਡ",
-
   "softDeleteTitle": "{type} ਨੂੰ ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਹੋਏ ਵਿੱਚ ਭੇਜੋ",
   "softDeleteMessage": "{type} \"{name}\" ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਹੋਏ ਵਿੱਚ ਭੇਜ ਦਿੱਤਾ ਜਾਵੇਗਾ।\n\nਤੁਸੀਂ ਇਸਨੂੰ 30 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਮੁੜ ਬਹਾਲ ਕਰ ਸਕਦੇ ਹੋ, ਉਸ ਤੋਂ ਬਾਅਦ ਇਹ ਸਦਾ ਲਈ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।",
   "softDeleteMove": "ਭੇਜੋ",
-
-  "@softDeleteTitle": { "placeholders": { "type": {} } },
-  "@softDeleteMessage": { "placeholders": { "type": {}, "name": {} } },
-
+  "@softDeleteTitle": {
+    "placeholders": {
+      "type": {}
+    }
+  },
+  "@softDeleteMessage": {
+    "placeholders": {
+      "type": {},
+      "name": {}
+    }
+  },
   "recentlyDeletedTitle": "ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਹੋਏ",
   "categories": "ਸ਼੍ਰੇਣੀਆਂ",
   "groups": "ਗਰੁੱਪ",
   "records": "ਰਿਕਾਰਡ",
-
   "restore": "ਬਹਾਲ ਕਰੋ",
   "deletePermanently": "ਸਦਾ ਲਈ ਮਿਟਾਓ",
-
   "recentlyDeletedBanner": "ਮਿਟਾਏ ਹੋਏ {type} ਇੱਥੇ 30 ਦਿਨਾਂ ਲਈ ਰੱਖੇ ਜਾਂਦੇ ਹਨ, ਉਸ ਤੋਂ ਬਾਅਦ ਸਦਾ ਲਈ ਹਟਾ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ।",
-  "@recentlyDeletedBanner": { "placeholders": { "type": { "type": "String" } } },
-
+  "@recentlyDeletedBanner": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "searchDeletedHint": "ਮਿਟਾਏ ਹੋਏ {type} ਖੋਜੋ",
-  "@searchDeletedHint": { "placeholders": { "type": { "type": "String" } } },
-
+  "@searchDeletedHint": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "noDeletedItems": "ਹੁਣ ਤੱਕ ਕੋਈ ਮਿਟਾਇਆ ਹੋਇਆ {type} ਨਹੀਂ",
-  "@noDeletedItems": { "placeholders": { "type": { "type": "String" } } },
-
-  "categoriesHint": "ਕਿਸੇ ਸ਼੍ਰੇਣੀ ‘ਤੇ ਟੈਪ ਕਰੋ ਤਾਂ ਜੋ ਉਸਦੇ ਗਰੁੱਪ ਅਤੇ ਰਿਕਾਰਡ ਵੇਖ ਸਕੋ।",
-  "groupsHint": "ਗਰੁੱਪ ਇਸ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਰਿਕਾਰਡਾਂ ਨੂੰ ਸੁਧਾਰੇ ਨਾਲ ਰੱਖਦੇ ਹਨ। ਗਰੁੱਪ ‘ਤੇ ਟੈਪ ਕਰੋ।",
-
+  "@noDeletedItems": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
   "notLoggedIn": "ਲੌਗ ਇਨ ਨਹੀਂ ਹੋ",
-
-  "recordsInsideGroupHint": "ਇਹ ਇਸ ਗਰੁੱਪ ਦੇ ਅੰਦਰ ਮੌਜੂਦ ਰਿਕਾਰਡ ਹਨ।",
-
   "snackMovedToRecentlyDeleted": "\"{name}\" ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਹੋਏ ਵਿੱਚ ਭੇਜ ਦਿੱਤਾ ਗਿਆ",
   "@snackMovedToRecentlyDeleted": {
     "description": "Snackbar when an item is moved to recently deleted",
-    "placeholders": { "name": { "type": "String", "example": "Passport" } }
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
   },
-
   "snackDeletedSuccessfully": "\"{name}\" ਸਫਲਤਾਪੂਰਵਕ ਮਿਟਾਇਆ ਗਿਆ",
   "@snackDeletedSuccessfully": {
     "description": "Snackbar when an item is permanently deleted",
-    "placeholders": { "name": { "type": "String", "example": "Driver License" } }
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Driver License"
+      }
+    }
   },
-
   "snackUpdatedSuccessfully": "\"{name}\" ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ",
   "@snackUpdatedSuccessfully": {
     "description": "Snackbar when an item is updated",
-    "placeholders": { "name": { "type": "String", "example": "Visa" } }
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Visa"
+      }
+    }
   },
-
   "snackAddedSuccessfully": "\"{name}\" ਸਫਲਤਾਪੂਰਵਕ ਜੋੜਿਆ ਗਿਆ",
   "@snackAddedSuccessfully": {
     "description": "Snackbar when an item is added",
-    "placeholders": { "name": { "type": "String", "example": "Insurance" } }
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Insurance"
+      }
+    }
   },
-
   "snackRestoredSuccessfully": "\"{name}\" ਸਫਲਤਾਪੂਰਵਕ ਬਹਾਲ ਕੀਤਾ ਗਿਆ",
   "@snackRestoredSuccessfully": {
     "description": "Snackbar when an item is restored from recently deleted",
-    "placeholders": { "name": { "type": "String", "example": "Passport" } }
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Passport"
+      }
+    }
   },
-
   "snackFreeLimitReached": "ਮੁਫ਼ਤ ਹੱਦ ਪੂਰੀ ਹੋ ਗਈ ਹੈ ({current}/{limit}). ਹੋਰ ਜੋੜਣ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
   "@snackFreeLimitReached": {
     "description": "Snackbar when free plan limit is reached",
     "placeholders": {
-      "current": { "type": "int", "example": "3" },
-      "limit": { "type": "int" }
+      "current": {
+        "type": "int",
+        "example": "3"
+      },
+      "limit": {
+        "type": "int"
+      }
     }
   },
-
   "globalSearchTitle": "ਸਭ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਖੋਜੋ",
   "globalSearchHint": "ਰਿਕਾਰਡ ਦਾ ਨਾਮ, ਸ਼੍ਰੇਣੀ ਜਾਂ ਗਰੁੱਪ ਲਿਖੋ",
   "globalSearchNoMatches": "ਤੁਹਾਡੀ ਖੋਜ ਨਾਲ ਕੋਈ ਰਿਕਾਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।",
   "snackNoRecordsToSearch": "ਖੋਜ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਮੌਜੂਦ ਨਹੀਂ। ਕੁਝ ਰਿਕਾਰਡ ਜੋੜੋ ਅਤੇ Vaultara ਉਹਨਾਂ ਨੂੰ ਆਪਣੇ ਆਪ ਇੰਡੈਕਸ ਕਰ ਦੇਵੇਗਾ।",
-
   "recoveryCentreTitle": "ਰੀਕਵਰੀ ਸੈਂਟਰ",
   "recoveryCentreSubtitle": "ਮਿਟਾਏ ਹੋਏ ਰਿਕਾਰਡ ਬਹਾਲ ਕਰੋ ਜਾਂ ਸਦਾ ਲਈ ਮਿਟਾਓ।",
-
   "plan_premium": "ਪ੍ਰੀਮੀਅਮ",
   "plan_free": "ਮੁਫ਼ਤ",
-
   "profile_app_settings_title": "ਐਪ ਸੈਟਿੰਗਜ਼",
-  "profile_privacy_security_title": "ਪਰਾਈਵੇਸੀ ਅਤੇ ਸੁਰੱਖਿਆ",
-
+  "profileAppLockTitle": "ਐਪ ਲੌਕ",
   "profile_biometric_on": "ਇਸ ਡਿਵਾਈਸ ‘ਤੇ ਬਾਇਓਮੇਟ੍ਰਿਕ ਲੌਕ ਚਾਲੂ ਹੈ।",
   "profile_biometric_off": "ਬਾਇਓਮੇਟ੍ਰਿਕ ਲੌਕ ਬੰਦ ਹੈ।",
-
   "profile_biometric_enable_reason": "ਬਾਇਓਮੇਟ੍ਰਿਕ ਲੌਕ ਚਾਲੂ ਕਰਨ ਲਈ ਆਪਣੀ ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।",
   "profile_biometric_disable_reason": "ਬਾਇਓਮੇਟ੍ਰਿਕ ਲੌਕ ਬੰਦ ਕਰਨ ਲਈ ਆਪਣੀ ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।",
-
   "profile_account_management_title": "ਖਾਤਾ ਪ੍ਰਬੰਧਨ",
   "profile_account_management_subtitle": "ਈਮੇਲ/ਪਾਸਵਰਡ ਬਦਲੋ ਜਾਂ ਖਾਤਾ ਮਿਟਾਓ।",
-
   "profile_premium_active_title": "ਪ੍ਰੀਮੀਅਮ ਚਾਲੂ ਹੈ",
   "profile_premium_upgrade_title": "ਪ੍ਰੀਮੀਅਮ ‘ਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ",
-
-  "profile_premium_active_subtitle": "ਐਡਵਾਂਸਡ ਯਾਦ ਦਿਵਾਣੀਆਂ ਚਾਲੂ ਹੋ ਚੁੱਕੀਆਂ ਹਨ।",
-  "profile_premium_upgrade_subtitle": "ਐਡਵਾਂਸਡ ਯਾਦ ਦਿਵਾਣੀਆਂ ਅਤੇ ਅਸੀਮਿਤ ਸੰਗਠਨ ਖੋਲ੍ਹੋ।",
-
+  "profile_premium_active_subtitle": "ਐਡਵਾਂਸਡ ਰਿਮਾਈਂਡਰ ਚਾਲੂ ਹੋ ਚੁੱਕੇ ਹਨ।",
+  "profile_premium_upgrade_subtitle": "ਐਡਵਾਂਸਡ ਰਿਮਾਈਂਡਰ ਅਤੇ ਅਸੀਮਿਤ ਸੰਗਠਨ ਖੋਲ੍ਹੋ।",
   "profile_manage_cancel_hint": "Google Play ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਮੈਨੇਜ ਜਾਂ ਰੱਦ ਕਰੋ।",
   "profile_manage_subscription_button": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਮੈਨੇਜ ਕਰੋ",
-
-  "plansTitle": "ਆਪਣਾ ਪਲਾਨ ਚੁਣੋ",
-  "plansTrialBanner": "7 ਦਿਨਾਂ ਦੀ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ।\nਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।",
+  "plansTitle": "ਪਲਾਨ",
   "plansLoading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
-  "plansStartFreeTrial": "ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ",
-  "plansNoChargeTodayFooter": "7 ਦਿਨ ਮੁਫ਼ਤ · ਅੱਜ ਕੋਈ ਚਾਰਜ ਨਹੀਂ",
-
-  "planFreeTitle": "ਮੁਫ਼ਤ",
-  "planFreeSubtitle": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ",
-
-  "planPremiumMonthlyTitle": "ਪ੍ਰੀਮੀਅਮ ਮਹੀਨਾਵਾਰ",
-  "planPremiumYearlyTitle": "ਪ੍ਰੀਮੀਅਮ ਸਾਲਾਨਾ",
-
-  "planPerMonth": "ਪ੍ਰਤੀ ਮਹੀਨਾ",
-  "planPerYear": "ਪ੍ਰਤੀ ਸਾਲ",
-
+  "plansStartFreeTrial": "{days}-ਦਿਨਾਂ ਦਾ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ",
+  "planPerMonth": "/ਮਹੀਨਾ",
+  "planPerYear": "/ਸਾਲ",
   "planBadgeCurrent": "ਮੌਜੂਦਾ ਪਲਾਨ",
-  "planBadgePopular": "ਮਸ਼ਹੂਰ",
-  "planBadgeBestValue": "ਸਭ ਤੋਂ ਵਧੀਆ ਕੀਮਤ",
-
-  "planYouAreOnThisPlan": "ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਇਸ ਪਲਾਨ ‘ਤੇ ਹੋ।",
-
-  "planFeatureUpToRecords": "{count} ਤੱਕ ਰਿਕਾਰਡ",
-  "@planFeatureUpToRecords": {
-    "placeholders": { "count": { "type": "int" } }
-  },
-
-  "planFeatureCustomCategoriesUpTo": "ਕਸਟਮ ਸ਼੍ਰੇਣੀਆਂ (ਵੱਧ ਤੋਂ ਵੱਧ {count})",
-  "@planFeatureCustomCategoriesUpTo": {
-    "placeholders": { "count": { "type": "int" } }
-  },
-
-  "planFeaturePresetSubcategories": "ਪਹਿਲਾਂ ਤੋਂ ਨਿਰਧਾਰਤ ਉਪ-ਸ਼੍ਰੇਣੀਆਂ",
-  "planFeatureCloudStorage": "ਕਲਾਉਡ ਸਟੋਰੇਜ",
-  "planFeatureSmartExpiryInsights": "ਸਮਾਰਟ ਮਿਆਦ ਬਸਿਰਤਾਂ",
-  "planFeatureCoverageBalance": "ਕਵਰੇਜ ਸੰਤੁਲਨ",
-  "planFeatureRecordStabilityTracking": "ਰਿਕਾਰਡ ਸਥਿਰਤਾ ਟ੍ਰੈਕਿੰਗ",
-
-  "planFeatureUnlimitedRecords": "ਅਸੀਮਿਤ ਰਿਕਾਰਡ",
-  "planFeatureUnlimitedCategories": "ਅਸੀਮਿਤ ਸ਼੍ਰੇਣੀਆਂ",
-  "planFeatureCustomSubcategories": "ਕਸਟਮ ਉਪ-ਸ਼੍ਰੇਣੀਆਂ",
-  "planFeatureMultipleRemindersPerRecord": "ਕਈ ਯਾਦ ਦਿਵਾਣੀਆਂ",
-  "planFeatureAdvancedReminderTiming": "ਐਡਵਾਂਸਡ ਟਾਈਮਿੰਗ",
-  "planFeatureAutomaticFollowUps": "ਆਟੋਮੈਟਿਕ ਫਾਲੋ-ਅਪ",
-
-  "planFeatureEverythingInMonthly": "ਮਹੀਨਾਵਾਰ ਵਿੱਚ ਸਭ ਕੁਝ ਸ਼ਾਮਲ",
-
-  "planFeatureSavePercentComparedToMonthly": "ਮਹੀਨਾਵਾਰ ਦੇ ਮੁਕਾਬਲੇ {percent}% ਬਚਤ ਕਰੋ",
-  "@planFeatureSavePercentComparedToMonthly": {
-    "placeholders": { "percent": { "type": "int" } }
-  },
-
-  "planFeatureBestLongTermValue": "ਲੰਬੇ ਸਮੇਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਮੁੱਲ",
-
-  "editorReminderLabel": "ਯਾਦ ਦਿਵਾਣੀ",
-  "editorReminderSelectOptional": "ਯਾਦ ਦਿਵਾਣੀ ਚੁਣੋ (ਇੱਛਿਕ)",
+  "planBadgePopular": "ਸਭ ਤੋਂ ਪ੍ਰਸਿੱਧ",
+  "planFeatureUnlimitedRecords": "ਅਸੀਮਤ ਰਿਕਾਰਡ",
+  "planFeatureUnlimitedCategories": "ਅਸੀਮਤ ਕਸਟਮ ਸ਼੍ਰੇਣੀਆਂ",
+  "planFeatureAdvancedReminderTiming": "ਤੈਅ ਕਰੋ ਕਿ ਹਰ ਰਿਮਾਈਂਡਰ ਠੀਕ ਕਦੋਂ ਪਹੁੰਚੇਗਾ",
+  "planFeatureAutomaticFollowUps": "ਇਸਦੇ ਨਾਲ ਹੀ ਅਜਿਹੇ ਰਿਮਾਈਂਡਰ ਜੋ ਡੈੱਡਲਾਈਨ ਨੇੜੇ ਆਉਣ 'ਤੇ ਹੋਰ ਵਾਰ-ਵਾਰ ਆਉਂਦੇ ਹਨ",
+  "editorReminderLabel": "ਰਿਮਾਈਂਡਰ",
+  "editorReminderSelectOptional": "ਰਿਮਾਈਂਡਰ ਚੁਣੋ (ਇੱਛਿਕ)",
   "editorReminderDaysBefore": "ਮਿਆਦ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ",
   "editorFreeItemsCount": "ਮੁਫ਼ਤ ਚੀਜ਼ਾਂ: {used}/{limit}",
-
-  "editorExpiryPastWarning": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਪਹਿਲਾਂ ਹੀ ਲੰਘ ਚੁੱਕੀ ਹੈ।",
-  "editorExpiryTodayWarning": "ਇਹ ਰਿਕਾਰਡ ਅੱਜ ਮਿਆਦ ਖਤਮ ਕਰ ਰਿਹਾ ਹੈ।",
-  "editorErrorExpiryPast": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਪਿਛਲੇ ਸਮੇਂ ਦੀ ਨਹੀਂ ਹੋ ਸਕਦੀ।",
-
   "@editorReminderDaysBefore": {
-    "placeholders": { "days": { "type": "int" } }
-  },
-
-  "@editorFreeItemsCount": {
     "placeholders": {
-      "used": { "type": "int" },
-      "limit": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
-
-  "todayInsightsTitle": "ਅੱਜ ਦੀਆਂ ਬਸਿਰਤਾਂ",
-
-  "tutorialBannerTitle": "ਝੱਟੀ ਜਾਣ-ਪਛਾਣ",
-  "tutorialBannerBody": "ਇੱਕ ਮਿੰਟ ਤੋਂ ਘੱਟ ਸਮੇਂ ਵਿੱਚ ਜਾਣੋ ਕਿ ਕਿੱਥੇ ਖੋਜਣਾ ਹੈ, ਰਿਕਾਰਡ ਕਿਵੇਂ ਜੋੜਨਾ ਹੈ, ਅਤੇ ਬਸਿਰਤਾਂ ਦਾ ਕੀ ਮਤਲਬ ਹੈ।",
-  "tutorialBannerStart": "ਟਿਊਟੋਰਿਯਲ ਸ਼ੁਰੂ ਕਰੋ",
-  "tutorialBannerDismiss": "ਹੁਣ ਨਹੀਂ",
-
+  "@editorFreeItemsCount": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
   "authErrorUserDisabled": "ਇਹ ਖਾਤਾ ਅਯੋਗ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
   "authErrorNetwork": "ਨੈੱਟਵਰਕ ਗਲਤੀ। ਇੰਟਰਨੈੱਟ ਚੈੱਕ ਕਰੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "authErrorTooManyRequests": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਚੁੱਕੀਆਂ ਹਨ। ਬਾਅਦ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "authErrorSignInFailed": "ਸਾਈਨ ਇਨ ਅਸਫਲ ਰਿਹਾ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
-
   "ok": "ਠੀਕ ਹੈ",
-
   "snackPremiumEnabled": "ਪ੍ਰੀਮੀਅਮ ਚਾਲੂ ਹੋ ਗਿਆ",
   "snackPremiumRestored": "ਪ੍ਰੀਮੀਅਮ ਬਹਾਲ ਹੋ ਗਿਆ",
-
   "passwordNeedLower": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਛੋਟਾ ਅੱਖਰ ਲਾਜ਼ਮੀ ਹੈ",
   "passwordNeedUpper": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵੱਡਾ ਅੱਖਰ ਲਾਜ਼ਮੀ ਹੈ",
   "passwordNeedNumber": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਅੰਕ ਲਾਜ਼ਮੀ ਹੈ",
   "passwordNeedSymbol": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਚਿੰਨ੍ਹ ਲਾਜ਼ਮੀ ਹੈ",
-
   "confirmIdentityTitle": "ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
   "confirm": "ਪੁਸ਼ਟੀ ਕਰੋ",
-
   "profile_sign_out_title": "ਸਾਈਨ ਆਉਟ",
-  "profile_sign_out_subtitle": "ਇਸ ਡਿਵਾਈਸ ‘ਤੇ Vaultara ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰੋ",
-
   "profile_sign_out_confirm_title": "ਸਾਈਨ ਆਉਟ ਕਰੀਏ?",
   "profile_sign_out_confirm_body": "ਖਾਤੇ ਤੱਕ ਮੁੜ ਪਹੁੰਚ ਲਈ ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਸਾਈਨ ਇਨ ਕਰਨਾ ਪਵੇਗਾ।",
   "profile_sign_out_action": "ਸਾਈਨ ਆਉਟ ਕਰੋ",
-
   "todayInsightsAudioHint": "ਆਡੀਓ ਪਸੰਦ ਹੈ? ਸਪੀਕਰ ਆਇਕਨ ਵਰਤੋ।",
   "category2Label": "ਸ਼੍ਰੇਣੀ",
   "enable2BiometricsBody": "ਆਪਣਾ Vaultara ਖਾਤਾ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਫਿੰਗਰਪ੍ਰਿੰਟ ਪਛਾਣ ਵਰਤੋ।",
-  "snackNotificationsDisabled": "ਨੋਟੀਫਿਕੇਸ਼ਨ ਬੰਦ ਹਨ। ਯਾਦ ਦਿਵਾਉਣ ਲਈ ਇਹਨਾਂ ਨੂੰ ਚਾਲੂ ਕਰੋ।",
-"openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
-
-"reminderOnExpiryTitle": "ਅੱਜ ਸਮਾਪਤ ਹੁੰਦਾ ਹੈ",
-"@reminderOnExpiryTitle": { "description": "Title for a notification shown on the day an item expires" },
-
-"reminderOnExpiryBody": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ {firstName}, \"{itemName}\" ਅੱਜ ਸਮਾਪਤ ਹੁੰਦਾ ਹੈ।",
-"@reminderOnExpiryBody": {
-  "description": "Notification body shown on the expiry day, addressing the user by first name",
-  "placeholders": {
-    "firstName": { "type": "String" },
-    "itemName": { "type": "String" }
-  }
-},
-"freeCategoriesProgress": "ਮੁਫ਼ਤ ਸ਼੍ਰੇਣੀਆਂ: {current}/{limit}",
-"@freeCategoriesProgress": {
-  "description": "ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਮੁਫ਼ਤ ਸੀਮਾ ਵਿੱਚੋਂ ਕਿੰਨੀ ਮੁਫ਼ਤ ਸ਼੍ਰੇਣੀਆਂ ਵਰਤੀਆਂ ਗਈਆਂ ਹਨ।",
-  "placeholders": {
-    "current": { "type": "int" },
-    "limit": { "type": "int" }
-  }
-},
-"addNotesHint": "ਨੋਟ ਸ਼ਾਮਲ ਕਰੋ (ਵਿਕਲਪਿਕ)",
-"apply": "ਲਾਗੂ ਕਰੋ",
-"smartInsightExpiresTodayHeading": "ਅੱਜ ਮਿਆਦ ਖਤਮ",
-"smartInsightExpiresTodaySingleBody": "{name} ਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸ ਨੂੰ ਅੱਪ ਟੂ ਡੇਟ ਰੱਖਣ ਲਈ ਹੁਣੇ ਕਾਰਵਾਈ ਕਰੋ।",
-"@smartInsightExpiresTodaySingleBody": { "placeholders": { "name": { "type": "String" } } },
-"smartInsightExpiresTodayMultiBody": "{extra, plural, =1{{names} ਅਤੇ 1 ਹੋਰ ਦਸਤਾਵੇਜ਼ ਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੋ ਰਹੀ ਹੈ।} other{{names} ਅਤੇ {extra} ਹੋਰ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੋ ਰਹੀ ਹੈ।}}",
-"@smartInsightExpiresTodayMultiBody": {
-  "placeholders": {
-    "names": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightSilentRiskHeading": "ਤੁਹਾਡਾ ਧਿਆਨ ਲੋੜੀਂਦਾ ਹੈ",
-"smartInsightSilentRiskBody": "{days, plural, =1{{name} ਦੀ ਮਿਆਦ 1 ਦਿਨ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਕੋਈ ਯਾਦ-ਪੱਤਰ ਸੈੱਟ ਨਹੀਂ ਹੈ। ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਵੇਰਵੇ ਅਜੇ ਵੀ ਸਹੀ ਹਨ।} other{{name} ਦੀ ਮਿਆਦ {days} ਦਿਨਾਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਕੋਈ ਯਾਦ-ਪੱਤਰ ਸੈੱਟ ਨਹੀਂ ਹੈ। ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਵੇਰਵੇ ਅਜੇ ਵੀ ਸਹੀ ਹਨ।}}",
-"@smartInsightSilentRiskBody": {
-  "placeholders": {
-    "name": { "type": "String" },
-    "days": { "type": "int" }
-  }
-},
-"smartInsightRenewalTwinHeading": "ਇਕੱਠੇ ਕਈ ਨਵੀਨੀਕਰਨ",
-"smartInsightRenewalTwinBodyTwo": "{a} ਅਤੇ {b} ਇੱਕ ਦੂਜੇ ਤੋਂ ਤਿੰਨ ਹਫ਼ਤਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੇ ਹਨ। ਪਹਿਲਾਂ ਤੋਂ ਯੋਜਨਾ ਬਣਾਓ।",
-"@smartInsightRenewalTwinBodyTwo": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" } } },
-"smartInsightRenewalTwinBodyThree": "{a}, {b}, ਅਤੇ {c} ਸਾਰੇ ਤਿੰਨ ਹਫ਼ਤਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੇ ਹਨ। ਪਹਿਲਾਂ ਤੋਂ ਯੋਜਨਾ ਬਣਾਓ।",
-"@smartInsightRenewalTwinBodyThree": { "placeholders": { "a": { "type": "String" }, "b": { "type": "String" }, "c": { "type": "String" } } },
-"smartInsightRenewalTwinBodyMany": "{extra, plural, =1{{a}, {b}, ਅਤੇ 1 ਹੋਰ ਦਸਤਾਵੇਜ਼ ਤਿੰਨ ਹਫ਼ਤਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੇ ਹਨ। ਪਹਿਲਾਂ ਤੋਂ ਯੋਜਨਾ ਬਣਾਓ।} other{{a}, {b}, ਅਤੇ {extra} ਹੋਰ ਦਸਤਾਵੇਜ਼ ਤਿੰਨ ਹਫ਼ਤਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੇ ਹਨ। ਪਹਿਲਾਂ ਤੋਂ ਯੋਜਨਾ ਬਣਾਓ।}}",
-"@smartInsightRenewalTwinBodyMany": {
-  "placeholders": {
-    "a": { "type": "String" },
-    "b": { "type": "String" },
-    "extra": { "type": "int" }
-  }
-},
-"smartInsightClusterHeading": "ਆਉਣ ਵਾਲਾ ਸਮੂਹ",
-"smartInsightClusterBody": "{count, plural, =1{{category} ਵਿੱਚ 1 ਦਸਤਾਵੇਜ਼ ਦੀ ਮਿਆਦ ਅਗਲੇ ਦੋ ਮਹੀਨਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਹਨਾਂ ਨੂੰ ਇਕੱਠੇ ਸੰਭਾਲਣ ਬਾਰੇ ਵਿਚਾਰ ਕਰੋ।} other{{category} ਵਿੱਚ {count} ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਮਿਆਦ ਅਗਲੇ ਦੋ ਮਹੀਨਿਆਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਹਨਾਂ ਨੂੰ ਇਕੱਠੇ ਸੰਭਾਲਣ ਬਾਰੇ ਵਿਚਾਰ ਕਰੋ।}}",
-"@smartInsightClusterBody": {
-  "placeholders": {
-    "count": { "type": "int" },
-    "category": { "type": "String" }
-  }
-},
-"smartInsightQuietPeriodHeading": "ਅੱਗੇ ਸ਼ਾਂਤ ਸਮਾਂ",
-"smartInsightQuietPeriodBody": "{days, plural, =1{ਅਗਲੇ 1 ਦਿਨ ਵਿੱਚ ਕੁਝ ਵੀ ਖਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ। ਤੁਹਾਡਾ ਅਗਲਾ ਨਵੀਨੀਕਰਨ {firstDate} ਨੂੰ ਹੈ।} other{ਅਗਲੇ {days} ਦਿਨਾਂ ਵਿੱਚ ਕੁਝ ਵੀ ਖਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ। ਤੁਹਾਡਾ ਅਗਲਾ ਨਵੀਨੀਕਰਨ {firstDate} ਨੂੰ ਹੈ।}}",
-"@smartInsightQuietPeriodBody": {
-  "placeholders": {
-    "days": { "type": "int" },
-    "firstDate": { "type": "String" }
-  }
-},
-"smartInsightAllCaughtUpHeading": "ਸਭ ਕੁਝ ਅੱਪ ਟੂ ਡੇਟ",
-"smartInsightAllCaughtUpBody": "{count, plural, =1{1 ਆਉਣ ਵਾਲੀ ਮਿਆਦ ਖਤਮ ਯਾਦ-ਪੱਤਰਾਂ ਦੁਆਰਾ ਕਵਰ ਕੀਤੀ ਗਈ ਹੈ। ਹੋਰ ਕੁਝ ਵੀ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।} other{{count} ਆਉਣ ਵਾਲੀਆਂ ਮਿਆਦਾਂ ਯਾਦ-ਪੱਤਰਾਂ ਦੁਆਰਾ ਕਵਰ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ। ਹੋਰ ਕੁਝ ਵੀ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।}}",
-"@smartInsightAllCaughtUpBody": { "placeholders": { "count": { "type": "int" } } },
-"smartInsightAllCaughtUpNoUpcomingBody": "ਸਭ ਕੁਝ ਅੱਪ ਟੂ ਡੇਟ। ਇਸ ਸਮੇਂ ਕੁਝ ਵੀ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
-"smartInsightNoRecordsHeading": "ਆਪਣਾ ਪਹਿਲਾ ਰਿਕਾਰਡ ਜੋੜੋ",
-"smartInsightNoRecordsBody": "ਆਪਣੇ ਦਸਤਾਵੇਜ਼ਾਂ ਨੂੰ ਟਰੈਕ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ Vaultara ਇੱਥੇ ਸਮਾਰਟ ਸੂਝ-ਬੂਝ ਦਿਖਾਏਗਾ।",
-"expiryTimelineTitle": "ਮਿਆਦ ਖਤਮ ਟਾਈਮਲਾਈਨ",
-"expiryTimelineSubtitle": "ਉਸ ਮਹੀਨੇ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ ਦੇਖਣ ਲਈ ਮਹੀਨੇ ਤੇ ਟੈਪ ਕਰੋ",
-"expiryTimelineDetailCount": "{count, plural, =1{1 ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
-"@expiryTimelineDetailCount": {
-  "placeholders": { "count": { "type": "int" } }
-},
-"summaryUpcomingTitle": "ਆਉਣ ਵਾਲੇ",
-"summaryUpcomingCaption": "30 ਦਿਨਾਂ ਵਿੱਚ",
-"summaryUrgentTitle": "ਜ਼ਰੂਰੀ",
-"summaryUrgentCaption": "7 ਦਿਨਾਂ ਵਿੱਚ"
-
-
+  "snackNotificationsDisabled": "ਨੋਟੀਫਿਕੇਸ਼ਨ ਬੰਦ ਹਨ। ਰਿਮਾਈਂਡਰ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇਹਨਾਂ ਨੂੰ ਚਾਲੂ ਕਰੋ।",
+  "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
+  "freeCategoriesProgress": "ਮੁਫ਼ਤ ਸ਼੍ਰੇਣੀਆਂ: {current}/{limit}",
+  "@freeCategoriesProgress": {
+    "description": "ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਮੁਫ਼ਤ ਸੀਮਾ ਵਿੱਚੋਂ ਕਿੰਨੀ ਮੁਫ਼ਤ ਸ਼੍ਰੇਣੀਆਂ ਵਰਤੀਆਂ ਗਈਆਂ ਹਨ।",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "addNotesHint": "ਨੋਟ ਸ਼ਾਮਲ ਕਰੋ (ਵਿਕਲਪਿਕ)",
+  "expiryTimelineTitle": "ਮਿਆਦ ਖਤਮ ਟਾਈਮਲਾਈਨ",
+  "expiryTimelineSubtitle": "ਉਸ ਮਹੀਨੇ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ ਦੇਖਣ ਲਈ ਮਹੀਨੇ ਤੇ ਟੈਪ ਕਰੋ",
+  "expiryTimelineDetailCount": "{count, plural, =1{1 ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
+  "@expiryTimelineDetailCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryUpcomingTitle": "ਆਉਣ ਵਾਲੇ",
+  "summaryUpcomingCaption": "30 ਦਿਨਾਂ ਵਿੱਚ",
+  "summaryUrgentTitle": "ਜ਼ਰੂਰੀ",
+  "summaryUrgentCaption": "7 ਦਿਨਾਂ ਵਿੱਚ",
+  "profileHeaderTitle": "ਪ੍ਰੋਫਾਈਲ",
+  "profileTutorialsTitle": "ਟਿਊਟੋਰਿਅਲ",
+  "profileTutorialsSubtitle": "ਐਪ ਟਿਊਟੋਰਿਅਲ ਬ੍ਰਾਊਜ਼ ਕਰੋ",
+  "tutorialsScreenTitle": "ਟਿਊਟੋਰਿਅਲ",
+  "tutorialsFullTourTitle": "ਪੂਰੀ ਟੂਰ ਲਓ",
+  "tutorialsFullTourSubtitle": "Vaultara ਨੂੰ ਸ਼ੁਰੂ ਤੋਂ ਅੰਤ ਤੱਕ ਜਾਣੋ",
+  "tutorialsFullTourButton": "ਪੂਰੀ ਟੂਰ ਚਲਾਓ",
+  "tutorialsIndividualHeader": "ਵਿਅਕਤੀਗਤ ਟਿਊਟੋਰਿਅਲ",
+  "tutorialsAddRecordTitle": "ਰਿਕਾਰਡ ਜੋੜਨਾ",
+  "tutorialsAddRecordSubtitle": "ਸਾਰੇ ਵੇਰਵਿਆਂ ਦੇ ਨਾਲ ਇੱਕ ਰਿਕਾਰਡ ਸੰਭਾਲੋ",
+  "tutorialsInsightsSubtitle": "ਦੇਖੋ ਕਿ Vaultara ਆਉਣ ਵਾਲੇ ਜੋਖਮਾਂ ਅਤੇ ਪੈਟਰਨਾਂ ਨੂੰ ਕਿਵੇਂ ਉਜਾਗਰ ਕਰਦਾ ਹੈ",
+  "tutorialsRemindersTitle": "ਰਿਮਾਈਂਡਰ ਸੈੱਟ ਕਰਨਾ",
+  "tutorialsRemindersSubtitle": "ਚੀਜ਼ਾਂ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਿਤ ਹੋਵੋ",
+  "tutorialsInsightsTitle": "ਇਨਸਾਈਟਸ ਨੂੰ ਸਮਝਣਾ",
+  "tutorialNext": "ਅਗਲਾ",
+  "tutorialEnd": "ਸਮਾਪਤ",
+  "tutorialHomeFab": "ਇੱਥੇ ਤੁਸੀਂ ਰਿਕਾਰਡ ਸ਼ਾਮਲ ਕਰਦੇ ਹੋ। ਨਾਮ, ਸ਼੍ਰੇਣੀ, ਗਰੁੱਪ, ਮਿਆਦ ਦੀ ਤਾਰੀਖ, ਵਿਕਲਪਿਕ ਨੋਟਸ ਅਤੇ ਰਿਮਾਈਂਡਰ ਦਰਜ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।",
+  "tutorialAddRecordCategory": "ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰਨ ਲਈ ਇੱਕ ਸ਼੍ਰੇਣੀ ਚੁਣੋ।",
+  "tutorialAddRecordGroup": "ਆਪਣੇ ਰਿਕਾਰਡ ਨੂੰ ਵਧੇਰੇ ਸਟੀਕਤਾ ਨਾਲ ਸ਼੍ਰੇਣੀਬੱਧ ਕਰਨ ਲਈ ਇੱਕ ਗਰੁੱਪ ਚੁਣੋ।",
+  "tutorialAddRecordName": "ਆਪਣੇ ਰਿਕਾਰਡ ਲਈ ਇੱਕ ਨਾਮ ਦਰਜ ਕਰੋ।",
+  "tutorialAddRecordNotes": "ਰਿਕਾਰਡ ਦੇ ਨਾਲ ਲਾਭਦਾਇਕ ਵੇਰਵੇ ਰੱਖਣ ਲਈ ਵਿਕਲਪਿਕ ਨੋਟਸ ਸ਼ਾਮਲ ਕਰੋ।",
+  "tutorialAddRecordExpiry": "ਇੱਕ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਚੁਣੋ। Vaultara ਇਸ ਤਾਰੀਖ ਤੋਂ ਪਹਿਲਾਂ ਰਿਮਾਈਂਡਰ ਭੇਜੇਗਾ।",
+  "tutorialAddRecordSave": "ਆਪਣੀ ਸੂਚੀ ਵਿੱਚ ਰਿਕਾਰਡ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਸੇਵ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialSampleRecordName": "ਵੀਜ਼ਾ ਡੈਬਿਟ ਕਾਰਡ",
+  "tutorialSampleRecordNotes": "4728 ਨਾਲ ਖਤਮ ਹੋਣ ਵਾਲਾ ਕਾਰਡ। ਮੁੱਖ ਖਰਚੇ ਦਾ ਕਾਰਡ। ਮੁੱਖ ਚਾਲੂ ਖਾਤੇ ਨਾਲ ਜੋੜਿਆ ਗਿਆ।",
+  "tutorialSetReminderField": "ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਰਿਮਾਈਂਡਰ ਸੈੱਟ ਕਰੋ। ਵਿਕਲਪ ਵੇਖਣ ਲਈ ਰਿਮਾਈਂਡਰ ਫੀਲਡ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "reminderTitle": "ਰਿਮਾਈਂਡਰ",
+  "reminderFreeSection": "ਮੁਫ਼ਤ",
+  "reminderPremiumSection": "ਪ੍ਰੀਮੀਅਮ",
+  "reminderNone": "ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ",
+  "reminderOnExpiry": "ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਮਿਤੀ ਨੂੰ",
+  "reminderDaysBefore": "{days, plural, one{1 ਦਿਨ ਪਹਿਲਾਂ} other{{days} ਦਿਨ ਪਹਿਲਾਂ}}",
+  "reminderCustomDaysTitle": "ਕਸਟਮ ਦਿਨ ਦਰਜ ਕਰੋ",
+  "reminderCascadeTitle": "ਕੈਸਕੇਡ ਰਿਮਾਈਂਡਰ",
+  "reminderCascadeSubtitle": "ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋ",
+  "reminderPremiumRequired": "ਇਹ ਵਿਸ਼ੇਸ਼ਤਾ ਪ੍ਰੀਮੀਅਮ ਉਪਭੋਗਤਾਵਾਂ ਲਈ ਉਪਲਬਧ ਹੈ।",
+  "reminderUpgradeCta": "ਪ੍ਰੀਮੀਅਮ ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ",
+  "tutorialReminderFreeSection": "ਇਹ ਰਿਮਾਈਂਡਰ ਵਿਕਲਪ ਸਾਰਿਆਂ ਲਈ ਉਪਲਬਧ ਹਨ। ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਚੁਣੋ।",
+  "tutorialReminderPremiumSection": "ਇਹ ਵਿਕਲਪ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਵਧੇਰੇ ਸਹੀ ਸਮੇਂ ਲਈ ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਅਨਲੌਕ ਹੁੰਦੇ ਹਨ।",
+  "tutorialReminderApplyFree": "ਆਪਣੀ ਰਿਮਾਈਂਡਰ ਚੋਣ ਸੰਭਾਲਣ ਲਈ ਲਾਗੂ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialReminderPresets": "ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਿਤ ਕੀਤੇ ਜਾਣ ਲਈ ਇੱਕ ਪ੍ਰੀਸੈੱਟ ਸਮਾਂ ਚੁਣੋ।",
+  "tutorialReminderCustomDays": "ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਸਹੀ ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ ਸੈੱਟ ਕਰੋ।",
+  "tutorialReminderApplyPremium": "ਆਪਣੀ ਰਿਮਾਈਂਡਰ ਚੋਣ ਸੰਭਾਲਣ ਲਈ ਲਾਗੂ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialReminderCascadeFree": "ਕੈਸਕੇਡ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਭੇਜਦਾ ਹੈ। ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਉਪਲਬਧ।",
+  "tutorialReminderCascadePremium": "ਕੈਸਕੇਡ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਭੇਜਦਾ ਹੈ।",
+  "tutorialInsightsSmartCard": "Vaultara ਉਹ ਚੀਜ਼ਾਂ ਹਾਈਲਾਈਟ ਕਰਦਾ ਹੈ ਜਿਨ੍ਹਾਂ 'ਤੇ ਤੁਹਾਡਾ ਧਿਆਨ ਚਾਹੀਦਾ ਹੈ: ਜਲਦੀ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ, ਗੁੰਮ ਰਿਮਾਈਂਡਰ, ਅਤੇ ਆ ਰਹੇ ਵਿਅਸਤ ਹਫ਼ਤੇ।",
+  "tutorialInsightsTimeline": "ਟਾਈਮਲਾਈਨ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਸਾਲ ਦੌਰਾਨ ਕਦੋਂ ਖਤਮ ਹੁੰਦੇ ਹਨ, ਸਾਲਾਂ ਵਿਚਕਾਰ ਬਦਲਣ ਲਈ ਤੀਰਾਂ ਨਾਲ।",
+  "tutorialInsightsSampleRecordTwo": "ਬ੍ਰਿਟਿਸ਼ ਪਾਸਪੋਰਟ",
+  "tutorialInsightsSampleRecordThree": "BUPA ਸਿਹਤ ਬੀਮਾ",
+  "tutorialAudio": "ਸੁਣਨਾ ਪਸੰਦ ਹੈ? ਆਪਣੀਆਂ ਜਾਣਕਾਰੀਆਂ ਉੱਚੀ ਆਵਾਜ਼ ਵਿੱਚ ਪੜ੍ਹਵਾਓ, ਅਤੇ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੋਕੋ।",
+  "tutorialAddRecordReminderTour": "ਰਿਮਾਈਂਡਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ ਇਹ ਵੇਖਣ ਲਈ ਰਿਮਾਈਂਡਰ ਖੇਤਰ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialAddRecordReminderSolo": "ਇਹ ਰਿਮਾਈਂਡਰ ਖੇਤਰ ਹੈ, ਜਿੱਥੇ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Vaultara ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰ ਸਕਦਾ ਹੈ।",
+  "smartInsightExpiresTodayHeading": "ਅੱਜ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ",
+  "smartInsightSilentRiskHeading": "ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਹੈ",
+  "smartInsightClusterHeading": "ਇੱਕੋ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਕਈ ਰਿਕਾਰਡ",
+  "smartInsightQuietPeriodHeading": "ਅੱਗੇ ਸ਼ਾਂਤ ਸਮਾਂ ਹੈ",
+  "smartInsightAllCaughtUpHeading": "ਸਭ ਕੁਝ ਸੁਰੱਖਿਅਤ ਹੈ",
+  "smartInsightNearlyAllCoveredHeading": "ਲਗਭਗ ਸਭ ਕੁਝ ਸੁਰੱਖਿਅਤ ਹੈ",
+  "smartInsightActionSetReminder": "ਰਿਮਾਈਂਡਰ ਲਗਾਓ",
+  "smartInsightNoRecordsHeading": "ਆਪਣਾ ਪਹਿਲਾ ਰਿਕਾਰਡ ਜੋੜੋ",
+  "smartInsightNoRecordsBody": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ, Vaultara ਇੱਥੇ ਸਮਾਰਟ ਜਾਣਕਾਰੀ ਦਿਖਾਏਗਾ।",
+  "smartInsightExpiresTodaySingleBody": "{name} ਅੱਜ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ। ਜੇਕਰ ਤੁਸੀਂ ਇਸਨੂੰ ਪਹਿਲਾਂ ਹੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰ ਲਿਆ ਹੈ, ਤਾਂ ਇੱਥੇ ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ।",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ਅੱਜ ਖਤਮ ਹੋ ਰਹੇ ਹਨ।} =1{{names} ਅਤੇ 1 ਹੋਰ ਅੱਜ ਖਤਮ ਹੋ ਰਹੇ ਹਨ।} other{{names} ਅਤੇ {extra} ਹੋਰ ਅੱਜ ਖਤਮ ਹੋ ਰਹੇ ਹਨ।}}",
+  "smartInsightSilentRiskBody": "{days, plural, =1{{name} ਕੱਲ੍ਹ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ ਅਤੇ ਇਸਦਾ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ। ਇੱਕ ਰਿਮਾਈਂਡਰ ਲਗਾਓ ਤਾਂ ਜੋ ਤੁਸੀਂ ਇਸਨੂੰ ਭੁੱਲ ਨਾ ਜਾਓ।} other{{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਇਸਦਾ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ। ਇੱਕ ਰਿਮਾਈਂਡਰ ਲਗਾਓ ਤਾਂ ਜੋ ਤੁਸੀਂ ਇਸਨੂੰ ਭੁੱਲ ਨਾ ਜਾਓ।}}",
+  "smartInsightCloseExpiriesBodyTwo": "{a} ਦੀ ਮਿਆਦ {dateA} ਨੂੰ ਅਤੇ {b} ਦੀ {dateB} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ, ਜੋ ਕਿ ਲਗਭਗ ਇੱਕੋ ਸਮਾਂ ਹੈ। ਜਦੋਂ ਦੋ ਰਿਕਾਰਡ ਇੰਨੇ ਨੇੜੇ ਹੋਣ ਤਾਂ ਇੱਕ ਨੂੰ ਭੁੱਲਣਾ ਆਸਾਨ ਹੁੰਦਾ ਹੈ।",
+  "smartInsightCloseExpiriesBodyThree": "{a}, {b} ਅਤੇ {c} ਸਭ {lastDate} ਤੱਕ ਖਤਮ ਹੋ ਰਹੇ ਹਨ, ਜੋ ਕਿ ਲਗਭਗ ਇੱਕੋ ਸਮਾਂ ਹੈ। ਜਦੋਂ ਕਈ ਰਿਕਾਰਡ ਇੰਨੇ ਨੇੜੇ ਹੋਣ ਤਾਂ ਇੱਕ ਨੂੰ ਭੁੱਲਣਾ ਆਸਾਨ ਹੁੰਦਾ ਹੈ।",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ਅਤੇ 1 ਹੋਰ ਰਿਕਾਰਡ {lastDate} ਤੱਕ ਖਤਮ ਹੋ ਰਹੇ ਹਨ, ਜੋ ਕਿ ਲਗਭਗ ਇੱਕੋ ਸਮਾਂ ਹੈ। ਜਦੋਂ ਕਈ ਰਿਕਾਰਡ ਇੰਨੇ ਨੇੜੇ ਹੋਣ ਤਾਂ ਇੱਕ ਨੂੰ ਭੁੱਲਣਾ ਆਸਾਨ ਹੁੰਦਾ ਹੈ।} other{{a}, {b} ਅਤੇ {extra} ਹੋਰ ਰਿਕਾਰਡ {lastDate} ਤੱਕ ਖਤਮ ਹੋ ਰਹੇ ਹਨ, ਜੋ ਕਿ ਲਗਭਗ ਇੱਕੋ ਸਮਾਂ ਹੈ। ਜਦੋਂ ਕਈ ਰਿਕਾਰਡ ਇੰਨੇ ਨੇੜੇ ਹੋਣ ਤਾਂ ਇੱਕ ਨੂੰ ਭੁੱਲਣਾ ਆਸਾਨ ਹੁੰਦਾ ਹੈ।}}",
+  "smartInsightQuietPeriodBody": "{days, plural, =1{ਅਗਲੇ ਇੱਕ ਦਿਨ ਵਿੱਚ ਕੁਝ ਵੀ ਖਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ। ਤੁਹਾਡਾ ਅਗਲਾ ਰਿਕਾਰਡ {date} ਨੂੰ ਹੈ।} other{ਅਗਲੇ {days} ਦਿਨਾਂ ਵਿੱਚ ਕੁਝ ਵੀ ਖਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ। ਤੁਹਾਡਾ ਅਗਲਾ ਰਿਕਾਰਡ {date} ਨੂੰ ਹੈ।}}",
+  "smartInsightClusterBody": "{count, plural, =1{ਤੁਹਾਡਾ {category} ਦਾ 1 ਰਿਕਾਰਡ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ। ਇਸਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰਨਾ ਆਸਾਨ ਹੈ।} other{ਤੁਹਾਡੇ {category} ਦੇ {count} ਰਿਕਾਰਡ {date} ਤੱਕ ਖਤਮ ਹੋ ਰਹੇ ਹਨ। ਜਦੋਂ ਰਿਕਾਰਡ ਇਸ ਤਰ੍ਹਾਂ ਇਕੱਠੇ ਹੋਣ ਤਾਂ ਇੱਕ ਨੂੰ ਭੁੱਲਣਾ ਆਸਾਨ ਹੁੰਦਾ ਹੈ।}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{ਆਉਣ ਵਾਲਾ 1 ਰਿਕਾਰਡ ਰਿਮਾਈਂਡਰ ਨਾਲ ਕਵਰ ਹੈ। ਕਿਸੇ ਹੋਰ ਚੀਜ਼ 'ਤੇ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।} other{ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡ ਰਿਮਾਈਂਡਰਾਂ ਨਾਲ ਕਵਰ ਹਨ। ਕਿਸੇ ਹੋਰ ਚੀਜ਼ 'ਤੇ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।}}",
+  "smartInsightAllCaughtUpNoUpcomingBody": "ਸਭ ਕੁਝ ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ। ਇਸ ਸਮੇਂ ਕਿਸੇ ਵੀ ਚੀਜ਼ 'ਤੇ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ਇਸ ਸਮੇਂ ਕੁਝ ਵੀ ਜ਼ਰੂਰੀ ਨਹੀਂ ਹੈ, ਪਰ ਆਉਣ ਵਾਲੇ 1 ਰਿਕਾਰਡ ਦਾ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ।} other{ਇਸ ਸਮੇਂ ਕੁਝ ਵੀ ਜ਼ਰੂਰੀ ਨਹੀਂ ਹੈ, ਪਰ ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡਾਂ ਦਾ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ।}}",
+  "smartInsightCloseExpiriesHeading": "ਲਗਭਗ ਇੱਕੋ ਸਮੇਂ ਖਤਮ ਹੋ ਰਹੇ ਹਨ",
+  "plansHeadline": "ਪੂਰਾ Vaultara ਪ੍ਰਾਪਤ ਕਰੋ",
+  "plansSubhead": "ਅਸੀਮਤ ਰਿਕਾਰਡ, ਤੁਹਾਡੇ ਆਪਣੇ ਗਰੁੱਪ, ਅਤੇ ਰਿਮਾਈਂਡਰ ਬਿਲਕੁਲ ਉਸੇ ਤਰ੍ਹਾਂ ਟਿਊਨ ਕੀਤੇ ਗਏ ਹਨ ਜਿਵੇਂ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ।",
+  "planFreeName": "ਮੁਫ਼ਤ",
+  "planFreePeriod": "ਹਮੇਸ਼ਾ ਲਈ",
+  "planCurrentFooter": "ਤੁਸੀਂ ਇਸ ਪਲਾਨ 'ਤੇ ਹੋ",
+  "planFeatureRecordsLimit": "{count} ਰਿਕਾਰਡ",
+  "@planFeatureRecordsLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeatureCategoriesLimit": "{count} ਕਸਟਮ ਸ਼੍ਰੇਣੀਆਂ",
+  "@planFeatureCategoriesLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planFeaturePresetGroups": "ਰਿਕਾਰਡਾਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰਨ ਲਈ ਪਹਿਲਾਂ ਤੋਂ ਨਿਰਧਾਰਤ ਗਰੁੱਪ",
+  "planFeatureSmartInsights": "ਸਮਾਰਟ ਇਨਸਾਈਟਸ ਜੋ ਦੱਸਦੇ ਹਨ ਕਿ ਕਿਸ ਚੀਜ਼ 'ਤੇ ਪਹਿਲਾਂ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ",
+  "planFeatureCalendar": "ਹਰ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਦਾ ਇੱਕ ਵਿਜ਼ੂਅਲ ਕੈਲੰਡਰ",
+  "planPremiumName": "Premium",
+  "planFeatureCustomGroups": "ਕਸਟਮ ਗਰੁੱਪ",
+  "planFeatureMultipleReminders": "ਇੱਕ ਸਿੰਗਲ ਰਿਕਾਰਡ 'ਤੇ ਕਈ ਰਿਮਾਈਂਡਰ",
+  "planTrialThenMonthly": "{days} ਦਿਨਾਂ ਲਈ ਮੁਫ਼ਤ, ਫਿਰ {price}/ਮਹੀਨਾ। ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰੋ।",
+  "@planTrialThenMonthly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "planTrialThenYearly": "{days} ਦਿਨਾਂ ਲਈ ਮੁਫ਼ਤ, ਫਿਰ {price}/ਸਾਲ। ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰੋ।",
+  "@planTrialThenYearly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@plansStartFreeTrial": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "plansRestore": "ਖਰੀਦ ਰੀਸਟੋਰ ਕਰੋ",
+  "plansNoChargeToday": "ਅਜੇ ਕੋਈ ਭੁਗਤਾਨ ਨਹੀਂ। ਤੁਹਾਡਾ {days}-ਦਿਨਾਂ ਦਾ ਟ੍ਰਾਇਲ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਵਾਇਆ ਜਾਵੇਗਾ।",
+  "@plansNoChargeToday": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planBillingMonthly": "ਮਾਸਿਕ",
+  "planBillingYearly": "ਸਾਲਾਨਾ",
+  "planYearlySavePercent": "ਮਾਸਿਕ ਭੁਗਤਾਨ ਦੀ ਤੁਲਨਾ ਵਿੱਚ {percent}% ਬਚਾਓ",
+  "@planYearlySavePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "plansTaxIncluded": "ਜਿੱਥੇ ਲਾਗੂ ਹੋਵੇ, ਕੀਮਤਾਂ ਵਿੱਚ ਟੈਕਸ ਸ਼ਾਮਲ ਹੈ",
+  "categoriesNoMatch": "\"{query}\" ਨਾਲ ਮੇਲ ਖਾਂਦੀ ਕੋਈ ਸ਼੍ਰੇਣੀ ਨਹੀਂ ਹੈ",
+  "groupsNoMatch": "\"{query}\" ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਕੋਈ ਗਰੁੱਪ ਨਹੀਂ ਹੈ",
+  "recordsNoMatch": "\"{query}\" ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ ਹੈ",
+  "edit": "ਸੋਧੋ",
+  "reminderDaysBeforeExpiry": "ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਦਿਨ ਪਹਿਲਾਂ",
+  "reminderCascadeAddStep": "ਰਿਮਾਈਂਡਰ ਜੋੜੋ",
+  "reminderCascadeRemoveStep": "ਹਟਾਓ",
+  "reminderCascadeDuplicate": "ਕੋਈ ਹੋਰ ਰਿਮਾਈਂਡਰ ਪਹਿਲਾਂ ਹੀ ਇਸ ਦਿਨ ਦੀ ਵਰਤੋਂ ਕਰ ਰਿਹਾ ਹੈ",
+  "reminderCascadeOutOfRange": "{min} ਅਤੇ {max} ਦਿਨਾਂ ਦੇ ਵਿਚਕਾਰ ਦਰਜ ਕਰੋ",
+  "reminderCascadeStepLabel": "ਰਿਮਾਈਂਡਰ {position}: {days, plural, one{{days} ਦਿਨ} other{{days} ਦਿਨ}} ਪਹਿਲਾਂ",
+  "expiryTimelineNotReady": "ਤੁਹਾਡੀ ਟਾਈਮਲਾਈਨ ਉਦੋਂ ਦਿਖਾਈ ਦੇਵੇਗੀ ਜਦੋਂ ਤੁਹਾਡੇ ਕੋਲ ਕੁਝ ਵੱਖ-ਵੱਖ ਮਹੀਨਿਆਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਣ ਵਾਲੇ ਰਿਕਾਰਡ ਹੋਣਗੇ।",
+  "verifyEmailResendIn": "{seconds} ਸਕਿੰਟ ਵਿੱਚ ਦੁਬਾਰਾ ਭੇਜੋ",
+  "verifyEmailSpamHint": "ਉੱਥੇ ਨਹੀਂ ਹੈ? ਆਪਣਾ ਸਪੈਮ ਜਾਂ ਜੰਕ ਫੋਲਡਰ ਚੈੱਕ ਕਰੋ।",
+  "verifyEmailWrongAddress": "ਗਲਤ ਈਮੇਲ ਪਤਾ?",
+  "verifyEmailDiscardTitle": "ਇਸ ਅਕਾਊਂਟ ਨੂੰ ਰੱਦ ਕਰਨਾ ਹੈ?",
+  "verifyEmailDiscardBody": "ਇਹ ਅਕਾਊਂਟ ਵੈਰੀਫਾਈਡ ਨਹੀਂ ਹੈ। ਹੁਣੇ ਛੱਡਣ 'ਤੇ ਇਹ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਅਤੇ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਈਮੇਲ ਪਤੇ ਨਾਲ ਦੁਬਾਰਾ ਸਾਈਨ ਅੱਪ ਕਰ ਸਕਦੇ ਹੋ।",
+  "verifyEmailDiscardAction": "ਰੱਦ ਕਰੋ",
+  "verifyEmailKeepWaiting": "ਉਡੀਕ ਕਰਦੇ ਰਹੋ",
+  "expiringBadge": "{count, plural, =1{1 ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ} other{{count} ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ}}",
+  "noRecordsToday": "ਅੱਜ ਕੁਝ ਵੀ ਮਿਆਦ ਪੁੱਗਣ ਵਾਲਾ ਨਹੀਂ ਹੈ",
+  "noRecordsTomorrow": "ਕੱਲ੍ਹ ਕੁਝ ਵੀ ਮਿਆਦ ਪੁੱਗਣ ਵਾਲਾ ਨਹੀਂ ਹੈ",
+  "cascadeStepTitle": "{days, plural, =0{{recordName} ਅੱਜ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ} =1{{recordName} ਕੱਲ੍ਹ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ} other{{recordName} {days} ਦਿਨਾਂ ਵਿੱਚ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ}}",
+  "cascadeStepBody": "{days, plural, =0{{firstName}, ਤੁਹਾਡਾ {recordName} ਅੱਜ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸਨੂੰ ਪਹਿਲਾਂ ਹੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰ ਲਿਆ ਹੈ? ਇਸਦੀ ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ।} =1{{firstName}, ਤੁਹਾਡਾ {recordName} ਕੱਲ੍ਹ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ। ਇਸਨੂੰ ਹੁਣੇ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ ਤਾਂ ਜੋ ਇਹ ਰੱਦ ਨਾ ਹੋਵੇ।} other{{firstName}, ਤੁਹਾਡਾ {recordName} {date} ਨੂੰ ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ। ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਨਵੀਨੀਕਰਨ ਕਰਨ ਨਾਲ ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਰਹਿੰਦੇ ਹੋ।}}",
+  "cascadeFinalStepTitle": "ਆਖਰੀ ਰਿਮਾਈਂਡਰ: {recordName}",
+  "cascadeFinalStepBody": "{firstName}, ਤੁਹਾਡਾ {recordName} {days, plural, =1{ਕੱਲ੍ਹ} other{{days} ਦਿਨਾਂ ਵਿੱਚ, {date} ਨੂੰ}} ਸਮਾਪਤ ਹੋ ਰਿਹਾ ਹੈ। ਇਹ ਤੁਹਾਡਾ ਆਖਰੀ ਰਿਮਾਈਂਡਰ ਹੈ, ਇਸਨੂੰ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ ਜਾਂ ਇਸਦੀ ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ।",
+  "notificationsTitle": "ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ",
+  "notificationsProfileEnabledSubtitle": "ਰਿਮਾਈਂਡਰ {time} ਵਜੇ ਆਉਣਗੇ।",
+  "notificationsProfileDisabledSubtitle": "ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ ਬੰਦ ਹਨ।",
+  "notificationsPermissionTitle": "ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ",
+  "notificationsPermissionOnSubtitle": "Vaultara ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਮਿਆਦ ਖਤਮ ਹੋਣ ਦੇ ਰਿਮਾਈਂਡਰ ਭੇਜ ਸਕਦਾ ਹੈ।",
+  "notificationsPermissionOffSubtitle": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਰਿਮਾਈਂਡਰ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਚਾਲੂ ਕਰੋ।",
+  "reminderTimeTitle": "ਰਿਮਾਈਂਡਰ ਦਾ ਸਮਾਂ",
+  "appearanceTitle": "ਦਿੱਖ",
+  "themeModeSystem": "ਸਿਸਟਮ ਡਿਫੌਲਟ",
+  "themeModeLight": "ਹਲਕਾ",
+  "themeModeDark": "ਗੂੜ੍ਹਾ",
+  "profileAccountSectionTitle": "ਖਾਤਾ",
+  "profileHelpSectionTitle": "ਮਦਦ",
+  "usePassword": "ਪਾਸਵਰਡ ਵਰਤੋ",
+  "tourBannerTitle": "ਇੱਥੇ ਨਵੇਂ ਹੋ? ਦੇਖੋ Vaultara ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
+  "tourBannerBody": "ਰਿਕਾਰਡ ਜੋੜਨ, ਰਿਮਾਈਂਡਰ ਸੈੱਟ ਕਰਨ ਅਤੇ ਆਪਣੇ ਵਿਸ਼ਲੇਸ਼ਣ ਦੇਖਣ ਦੀ ਇੱਕ ਤੇਜ਼ ਗਾਈਡ। ਇਸ ਵਿੱਚ ਸਿਰਫ਼ ਦੋ ਮਿੰਟ ਲੱਗਦੇ ਹਨ।",
+  "tourBannerDismiss": "ਰੱਦ ਕਰੋ",
+  "tourBannerStart": "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ",
+  "passwordRuleMinLength": "ਘੱਟੋ-ਘੱਟ {count} ਅੱਖਰ",
+  "passwordRuleUpper": "ਇੱਕ ਵੱਡਾ ਅੱਖਰ",
+  "passwordRuleLower": "ਇੱਕ ਛੋਟਾ ਅੱਖਰ",
+  "passwordRuleNumber": "ਇੱਕ ਨੰਬਰ",
+  "passwordRuleSymbol": "ਇੱਕ ਖਾਸ ਅੱਖਰ",
+  "tabSignUp": "ਸਾਈਨ ਅੱਪ ਕਰੋ",
+  "verifyCodeIntro": "6-ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਰਜ ਕਰੋ ਜੋ ਅਸੀਂ ਇੱਥੇ ਭੇਜਿਆ ਹੈ:",
+  "verifyCodeButton": "ਤਸਦੀਕ ਕਰੋ",
+  "resendCode": "ਕੋਡ ਮੁੜ ਭੇਜੋ",
+  "verifyCodeIncomplete": "ਸਾਰੇ 6 ਅੰਕ ਦਰਜ ਕਰੋ।",
+  "verifyCodeWrong": "ਉਹ ਕੋਡ ਸਹੀ ਨਹੀਂ ਹੈ। ਈਮੇਲ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "verifyCodeExpired": "ਉਸ ਕੋਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਨਵਾਂ ਕੋਡ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ 'ਕੋਡ ਮੁੜ ਭੇਜੋ' 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "verifyCodeTooManyAttempts": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ। ਨਵਾਂ ਕੋਡ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ 'ਕੋਡ ਮੁੜ ਭੇਜੋ' 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "verifyCodeNoActive": "ਕੋਈ ਸਰਗਰਮ ਕੋਡ ਨਹੀਂ ਹੈ। ਕੋਡ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ 'ਕੋਡ ਮੁੜ ਭੇਜੋ' 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "verifyCodeFailed": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "openEmailApp": "ਈਮੇਲ ਐਪ ਖੋਲ੍ਹੋ",
+  "emailAppNotFound": "ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਕੋਈ ਈਮੇਲ ਐਪ ਨਹੀਂ ਮਿਲੀ।",
+  "chooseEmailApp": "ਇਸ ਨਾਲ ਖੋਲ੍ਹੋ",
+  "renewAction": "ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ",
+  "renewSheetTitle": "ਨਵੀਨੀਕ੍ਰਿਤ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਗਾਓ",
+  "renewSheetNewExpiry": "ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ",
+  "renewSheetSuggestion": "ਇਸ ਕਿਸਮ ਦੀ ਵੈਧਤਾ ਆਮ ਤੌਰ 'ਤੇ ਜਿੰਨੀ ਦੇਰ ਰਹਿੰਦੀ ਹੈ, ਉਸ ਦੇ ਆਧਾਰ 'ਤੇ ਸੁਝਾਇਆ ਗਿਆ। ਬਦਲਣ ਲਈ ਤਾਰੀਖ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "renewSheetConfirm": "ਨਵੀਨੀਕਰਨ ਸੰਭਾਲੋ",
+  "renewHistoryTitle": "ਨਵੀਨੀਕਰਨ ਇਤਿਹਾਸ",
+  "renewHistoryEntry": "{previous} ਤੋਂ {next}",
+  "renewDone": "ਨਵੀਨੀਕ੍ਰਿਤ ਹੋ ਗਿਆ। ਤੁਹਾਡੇ ਰਿਮਾਈਂਡਰ ਹੁਣ ਨਵੀਂ ਤਾਰੀਖ ਅਨੁਸਾਰ ਆਉਣਗੇ।",
+  "notificationActionRenewed": "ਨਵੀਨੀਕ੍ਰਿਤ ਹੋ ਗਿਆ",
+  "notificationActionTomorrow": "ਕੱਲ੍ਹ ਯਾਦ ਦਿਵਾਓ",
+  "snoozeTitle": "ਰਿਮਾਈਂਡਰ: {recordName}",
+  "snoozeBody": "{recordName} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸਨੂੰ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ ਜਾਂ Vaultara ਵਿੱਚ ਇਸਦੀ ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ।",
+  "snoozeConfirmed": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਕੱਲ੍ਹ ਦੁਬਾਰਾ ਯਾਦ ਦਿਵਾਵਾਂਗੇ।",
+  "costFieldLabel": "ਨਵੀਨੀਕਰਨ ਦੀ ਲਾਗਤ",
+  "costFieldHint": "ਨਵੀਨੀਕਰਨ ਦੀ ਲਾਗਤ (ਵਿਕਲਪਿਕ)",
+  "costCurrencyButtonTooltip": "ਮੁਦਰਾ ਬਦਲੋ",
+  "costCurrencyPickerTitle": "ਮੁਦਰਾ ਚੁਣੋ",
+  "costCurrencySearchHint": "ਖੋਜੋ, ਜਿਵੇਂ INR",
+  "costCurrencyNoResults": "ਇਸ ਖੋਜ ਨਾਲ ਕੋਈ ਮੁਦਰਾ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।",
+  "costCardTitle": "ਨਵੀਨੀਕਰਨ ਦੀਆਂ ਲਾਗਤਾਂ",
+  "costCardSubtitle": "ਅਗਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਤੁਹਾਡੇ ਨਵੀਨੀਕਰਨਾਂ 'ਤੇ ਕਿੰਨਾ ਖਰਚਾ ਆਵੇਗਾ",
+  "costCardBusiest": "ਸਭ ਤੋਂ ਵੱਧ ਖਰਚੇ ਵਾਲਾ ਮਹੀਨਾ: {month} ({amount})",
+  "costCardMissing": "{count, plural, one{ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡ ਦੀ ਲਾਗਤ ਅਜੇ ਨਹੀਂ ਜੋੜੀ ਗਈ।} other{ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡਾਂ ਦੀ ਲਾਗਤ ਅਜੇ ਨਹੀਂ ਜੋੜੀ ਗਈ।}}",
+  "costCardEmpty": "ਨਵੀਨੀਕਰਨ ਦਾ ਖਰਚਾ ਦੇਖਣ ਲਈ ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਲਾਗਤ ਜੋੜੋ।",
+  "costCardLockedHint": "ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਦੇਖੋ ਕਿ ਅਗਲੇ ਸਾਲ ਤੁਹਾਡੇ ਨਵੀਨੀਕਰਨਾਂ 'ਤੇ ਕਿੰਨਾ ਖਰਚਾ ਆਵੇਗਾ।",
+  "costCardSeePremium": "ਪ੍ਰੀਮੀਅਮ ਦੇਖੋ",
+  "costRenewSheetCost": "ਨਵੀਨੀਕਰਨ ਦੀ ਲਾਗਤ: {amount}",
+  "familyTitle": "ਪਰਿਵਾਰ",
+  "familyIntro": "ਜਿਨ੍ਹਾਂ ਲੋਕਾਂ ਦੀ ਤੁਸੀਂ ਦੇਖਭਾਲ ਕਰਦੇ ਹੋ, ਉਨ੍ਹਾਂ ਦੇ ਰਿਕਾਰਡਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ। ਉਨ੍ਹਾਂ ਦੇ ਰਿਮਾਈਂਡਰਾਂ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਦਿਖਦਾ ਹੈ, ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਪਤਾ ਰਹੇ ਕਿ ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ।",
+  "familyMe": "ਮੈਂ",
+  "familyRecordCount": "{count, plural, =0{ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ} one{{count} ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
+  "familyRename": "ਨਾਮ ਬਦਲੋ",
+  "familyRemove": "ਹਟਾਓ",
+  "familyRemoveTitle": "ਕੀ {name} ਨੂੰ ਹਟਾਉਣਾ ਹੈ?",
+  "familyRemoveBody": "{name} ਦੇ ਰਿਕਾਰਡ Vaultara ਵਿੱਚ ਰਹਿਣਗੇ ਅਤੇ ਤੁਹਾਡੇ ਕੋਲ ਆ ਜਾਣਗੇ।",
+  "familyRemoved": "{name} ਨੂੰ ਹਟਾਇਆ ਗਿਆ",
+  "familyAdded": "{name} ਨੂੰ ਜੋੜਿਆ ਗਿਆ",
+  "familyAddPerson": "ਵਿਅਕਤੀ ਜੋੜੋ",
+  "familyAddTitle": "ਵਿਅਕਤੀ ਜੋੜੋ",
+  "familyRenameTitle": "ਵਿਅਕਤੀ ਦਾ ਨਾਮ ਬਦਲੋ",
+  "familyNameLabel": "ਨਾਮ",
+  "familyNameHint": "ਉਦਾਹਰਨ ਲਈ, ਹਰਪ੍ਰੀਤ",
+  "familyNameRequired": "ਨਾਮ ਦਰਜ ਕਰੋ",
+  "familyLimitNote": "{count, plural, one{ਵੱਧ ਤੋਂ ਵੱਧ {count} ਵਿਅਕਤੀ} other{ਵੱਧ ਤੋਂ ਵੱਧ {count} ਲੋਕ}}",
+  "familyUpsellTitle": "ਆਪਣੇ ਪਰਿਵਾਰ ਦੇ ਦਸਤਾਵੇਜ਼ਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ",
+  "familyBenefitPremium": "ਪ੍ਰੀਮੀਅਮ ਦੀ ਹਰ ਸਹੂਲਤ",
+  "familyBenefitPeople": "{count, plural, one{{count} ਤੱਕ ਵਿਅਕਤੀ ਜੋੜੋ} other{{count} ਤੱਕ ਲੋਕ ਜੋੜੋ}}",
+  "familyBenefitOwnRecords": "ਹਰ ਵਿਅਕਤੀ ਦੇ ਆਪਣੇ ਰਿਕਾਰਡ ਅਤੇ ਰਿਮਾਈਂਡਰ",
+  "familyBenefitOneSubscription": "ਪੂਰੇ ਘਰ ਲਈ ਇੱਕ ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+  "familySeePlan": "ਪਰਿਵਾਰ ਪਲਾਨ ਦੇਖੋ",
+  "familyPickerLabel": "ਇਹ ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ?",
+  "familyPlanName": "ਪਰਿਵਾਰ",
+  "familyPlanBuy": "ਪਰਿਵਾਰ ਪਲਾਨ ਲਓ",
+  "familyRecordDisplayName": "{person}: {recordName}",
+  "familyProfileTileTitle": "ਪਰਿਵਾਰ",
+  "familyProfileTileSubtitle": "ਜਿਨ੍ਹਾਂ ਲੋਕਾਂ ਦੀ ਤੁਸੀਂ ਦੇਖਭਾਲ ਕਰਦੇ ਹੋ, ਉਨ੍ਹਾਂ ਦੇ ਰਿਕਾਰਡਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ",
+  "planSwitchNote": "Google Play ਤੁਹਾਡਾ ਪਲਾਨ ਤੁਰੰਤ ਬਦਲ ਦਿੰਦਾ ਹੈ ਅਤੇ ਬਾਕੀ ਸਮੇਂ ਲਈ ਤੁਹਾਨੂੰ ਕ੍ਰੈਡਿਟ ਦਿੰਦਾ ਹੈ। ਤੁਹਾਡੇ ਤੋਂ ਕਦੇ ਵੀ ਦੋ ਵਾਰ ਪੈਸੇ ਨਹੀਂ ਲਏ ਜਾਂਦੇ।",
+  "familyPlanSwitch": "ਪਰਿਵਾਰ ਪਲਾਨ ’ਤੇ ਸਵਿੱਚ ਕਰੋ",
+  "planSwitchToPremium": "Premium ’ਤੇ ਸਵਿੱਚ ਕਰੋ",
+  "purchaseOtherAccount": "ਇਹ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਹੋਰ Vaultara ਖਾਤੇ ਨਾਲ ਜੁੜੀ ਹੋਈ ਹੈ।",
+  "purchaseVerifyFailed": "ਅਸੀਂ ਹਾਲੇ ਤੁਹਾਡੀ ਖਰੀਦ ਦੀ ਪੁਸ਼ਟੀ ਨਹੀਂ ਕਰ ਸਕੇ। ਇੱਕ ਮਿੰਟ ਬਾਅਦ “ਖਰੀਦ ਰੀਸਟੋਰ ਕਰੋ” ’ਤੇ ਟੈਪ ਕਰੋ।",
+  "signInWrongDetails": "ਗਲਤ ਈਮੇਲ ਜਾਂ ਪਾਸਵਰਡ",
+  "signUpBlocked": "ਅਸੀਂ ਇਸ ਵੇਲੇ ਤੁਹਾਡਾ ਖਾਤਾ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "signUpEmailNotAllowed": "ਕੋਈ ਸਥਾਈ ਈਮੇਲ ਪਤਾ ਵਰਤੋ। ਅਸਥਾਈ ਈਮੇਲ ਸੇਵਾਵਾਂ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ।",
+  "guideTitle": "ਨਵੀਨੀਕਰਨ ਕਿਵੇਂ ਕਰੀਏ",
+  "guideWhenToStart": "ਕਦੋਂ ਸ਼ੁਰੂ ਕਰੀਏ",
+  "guideChecklist": "ਚੈੱਕਲਿਸਟ",
+  "guideProgress": "{total} ਵਿੱਚੋਂ {done} ਪੂਰੇ",
+  "guideTipTitle": "ਸੁਝਾਅ",
+  "guideDisclaimer": "ਕਦਮ ਦੇਸ਼ ਮੁਤਾਬਕ ਵੱਖਰੇ ਹੁੰਦੇ ਹਨ। ਜਾਰੀ ਕਰਨ ਵਾਲੇ ਤੋਂ ਪੁਸ਼ਟੀ ਕਰੋ।",
+  "guideMarkRenewed": "ਨਵੀਨੀਕ੍ਰਿਤ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਗਾਓ",
+  "guidePassportsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 9 ਤੋਂ 12 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ। ਕਈ ਦੇਸ਼ਾਂ ਵਿੱਚ ਦਾਖਲੇ ਲਈ 6 ਮਹੀਨੇ ਦੀ ਵੈਧਤਾ ਲੋੜੀਂਦੀ ਹੈ।",
+  "guidePassportsStep1": "ਮੌਜੂਦਾ ਪ੍ਰਕਿਰਿਆ ਲਈ ਜਾਰੀ ਕਰਨ ਵਾਲੀ ਅਥਾਰਟੀ ਦੀ ਅਧਿਕਾਰਤ ਵੈੱਬਸਾਈਟ ਦੇਖੋ",
+  "guidePassportsStep2": "ਅਧਿਕਾਰਤ ਪਾਸਪੋਰਟ ਫ਼ੋਟੋ ਨਿਯਮਾਂ ਮੁਤਾਬਕ ਨਵੀਆਂ ਫ਼ੋਟੋਆਂ ਖਿਚਵਾਓ",
+  "guidePassportsStep3": "ਅਰਜ਼ੀ ਭਰੋ ਅਤੇ ਆਪਣਾ ਪਛਾਣ ਪੱਤਰ ਅਤੇ ਮੌਜੂਦਾ ਪਾਸਪੋਰਟ ਇਕੱਠੇ ਕਰੋ",
+  "guidePassportsStep4": "ਅਰਜ਼ੀ ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਰਸੀਦ ਜਾਂ ਹਵਾਲਾ ਨੰਬਰ ਸੰਭਾਲ ਕੇ ਰੱਖੋ",
+  "guidePassportsStep5": "ਪੁਰਾਣਾ ਪਾਸਪੋਰਟ ਉਦੋਂ ਤੱਕ ਰੱਖੋ ਜਦੋਂ ਤੱਕ ਤੁਹਾਨੂੰ ਨਾ ਦੱਸਿਆ ਜਾਵੇ ਕਿ ਉਸਦਾ ਕੀ ਕਰਨਾ ਹੈ",
+  "guidePassportsTip": "ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ ਕਿ ਪੁਰਾਣੇ ਪਾਸਪੋਰਟ ਵਿਚਲੇ ਵੈਧ ਵੀਜ਼ੇ ਅਜੇ ਵੀ ਵਰਤੇ ਜਾ ਸਕਦੇ ਹਨ।",
+  "guideIdCardsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 3 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ, ਜਾਂ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਹੋਵੇ ਤਾਂ ਹੋਰ ਪਹਿਲਾਂ।",
+  "guideIdCardsStep1": "ਕਾਰਡ ਜਾਰੀ ਕਰਨ ਵਾਲੀ ਅਥਾਰਟੀ ਤੋਂ ਪਤਾ ਕਰੋ ਕਿ ਨਵੀਨੀਕਰਨ ਕਿਵੇਂ ਅਤੇ ਕਿੱਥੇ ਹੋਵੇਗਾ",
+  "guideIdCardsStep2": "ਮੌਜੂਦਾ ਕਾਰਡ ਅਤੇ ਮੰਗਿਆ ਗਿਆ ਪਤੇ ਦਾ ਸਬੂਤ ਇਕੱਠਾ ਕਰੋ",
+  "guideIdCardsStep3": "ਲੋੜ ਹੋਵੇ ਤਾਂ ਮੁਲਾਕਾਤ ਬੁੱਕ ਕਰੋ, ਕਿਉਂਕਿ ਫ਼ੋਟੋ ਜਾਂ ਉਂਗਲਾਂ ਦੇ ਨਿਸ਼ਾਨ ਲਏ ਜਾ ਸਕਦੇ ਹਨ",
+  "guideIdCardsStep4": "ਨਵਾਂ ਕਾਰਡ ਆਉਣ 'ਤੇ ਜਾਂਚੋ ਕਿ ਸਾਰੇ ਵੇਰਵੇ ਸਹੀ ਹਨ",
+  "guideIdCardsTip": "ਨਵਾਂ ਕਾਰਡ ਆਉਣ 'ਤੇ ਤੁਹਾਡੇ ਬੈਂਕ, ਮਾਲਕ ਅਤੇ ਹੋਰਾਂ ਨੂੰ ਉਸਦੇ ਵੇਰਵਿਆਂ ਦੀ ਲੋੜ ਪੈ ਸਕਦੀ ਹੈ।",
+  "guideResidencePermitsWhen": "ਨਿਯਮ ਜਿੰਨੀ ਜਲਦੀ ਇਜਾਜ਼ਤ ਦੇਣ, ਉਨੀ ਜਲਦੀ ਸ਼ੁਰੂ ਕਰੋ, ਅਕਸਰ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 3 ਤੋਂ 4 ਮਹੀਨੇ ਪਹਿਲਾਂ।",
+  "guideResidencePermitsStep1": "ਇਮੀਗ੍ਰੇਸ਼ਨ ਅਥਾਰਟੀ ਦੇ ਨਵੀਨੀਕਰਨ ਨਿਯਮ ਅਤੇ ਆਖਰੀ ਤਾਰੀਖਾਂ ਦੇਖੋ",
+  "guideResidencePermitsStep2": "ਪਾਸਪੋਰਟ, ਮੌਜੂਦਾ ਪਰਮਿਟ ਅਤੇ ਅਜੇ ਵੀ ਯੋਗ ਹੋਣ ਦਾ ਸਬੂਤ ਇਕੱਠਾ ਕਰੋ",
+  "guideResidencePermitsStep3": "ਮੌਜੂਦਾ ਪਰਮਿਟ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਅਰਜ਼ੀ ਜਮ੍ਹਾਂ ਕਰੋ",
+  "guideResidencePermitsStep4": "ਨਵਾਂ ਪਰਮਿਟ ਆਉਣ ਤੱਕ ਅਰਜ਼ੀ ਦਾ ਸਬੂਤ ਆਪਣੇ ਕੋਲ ਰੱਖੋ",
+  "guideResidencePermitsTip": "ਦੇਰ ਨਾਲ ਅਰਜ਼ੀ ਦੇਣ ਨਾਲ ਤੁਹਾਡੇ ਰਹਿਣ ਦੇ ਹੱਕ 'ਤੇ ਅਸਰ ਪੈ ਸਕਦਾ ਹੈ। ਸ਼ੱਕ ਹੋਵੇ ਤਾਂ ਇਮੀਗ੍ਰੇਸ਼ਨ ਅਥਾਰਟੀ ਤੋਂ ਪੁੱਛੋ।",
+  "guideDrivingLicencesWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 1 ਤੋਂ 3 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideDrivingLicencesStep1": "ਲਾਇਸੈਂਸ ਅਥਾਰਟੀ ਦੀ ਪ੍ਰਕਿਰਿਆ ਦੇਖੋ ਅਤੇ ਪਤਾ ਕਰੋ ਕਿ ਕੀ ਔਨਲਾਈਨ ਨਵੀਨੀਕਰਨ ਹੋ ਸਕਦਾ ਹੈ",
+  "guideDrivingLicencesStep2": "ਮੌਜੂਦਾ ਲਾਇਸੈਂਸ, ਪਛਾਣ ਪੱਤਰ ਅਤੇ ਲੋੜੀਂਦੀਆਂ ਫ਼ੋਟੋਆਂ ਇਕੱਠੀਆਂ ਕਰੋ",
+  "guideDrivingLicencesStep3": "ਲੋੜ ਹੋਵੇ ਤਾਂ ਅੱਖਾਂ ਦੀ ਜਾਂਚ ਜਾਂ ਮੈਡੀਕਲ ਜਾਂਚ ਬੁੱਕ ਕਰੋ",
+  "guideDrivingLicencesStep4": "ਉਡੀਕ ਦੌਰਾਨ ਆਰਜ਼ੀ ਲਾਇਸੈਂਸ ਜਾਂ ਰਸੀਦ ਆਪਣੇ ਕੋਲ ਰੱਖੋ",
+  "guideDrivingLicencesTip": "ਮਿਆਦ ਪੁੱਗੇ ਲਾਇਸੈਂਸ ਨਾਲ ਗੱਡੀ ਚਲਾਉਣ ਨਾਲ ਬੀਮਾ ਕਵਰ 'ਤੇ ਅਸਰ ਪੈ ਸਕਦਾ ਹੈ। ਸਮੇਂ ਸਿਰ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ।",
+  "guideVehicleRegistrationsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਲਗਭਗ 1 ਮਹੀਨਾ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideVehicleRegistrationsStep1": "ਨਵੀਨੀਕਰਨ ਨੋਟਿਸ ਜਾਂ ਵਾਹਨ ਲਾਇਸੈਂਸ ਅਥਾਰਟੀ ਦੀ ਵੈੱਬਸਾਈਟ ਦੇਖੋ",
+  "guideVehicleRegistrationsStep2": "ਪਹਿਲਾਂ ਪੱਕਾ ਕਰੋ ਕਿ ਲੋੜੀਂਦੀ ਜਾਂਚ ਜਾਂ ਬੀਮਾ ਵੈਧ ਹੈ",
+  "guideVehicleRegistrationsStep3": "ਵਾਹਨ ਦੇ ਕਾਗਜ਼, ਪਛਾਣ ਪੱਤਰ ਅਤੇ ਮੰਗਿਆ ਜਾਵੇ ਤਾਂ ਪਤੇ ਦਾ ਸਬੂਤ ਇਕੱਠਾ ਕਰੋ",
+  "guideVehicleRegistrationsStep4": "ਨਵੀਨੀਕਰਨ ਪੂਰਾ ਕਰੋ ਅਤੇ ਨਵਾਂ ਸਬੂਤ ਨਿਯਮ ਮੁਤਾਬਕ ਰੱਖੋ ਜਾਂ ਲਗਾਓ",
+  "guideVehicleRegistrationsTip": "ਕੁਝ ਥਾਵਾਂ 'ਤੇ ਨਵੀਨੀਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਵੈਧ ਫਿਟਨੈਸ ਜਾਂ ਪ੍ਰਦੂਸ਼ਣ ਜਾਂਚ ਲੋੜੀਂਦੀ ਹੈ।",
+  "guideRoadworthyCertificatesWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 4 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਜਾਂ ਵਾਹਨ ਵੇਚਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚ ਬੁੱਕ ਕਰੋ।",
+  "guideRoadworthyCertificatesStep1": "ਆਪਣੇ ਵਾਹਨ ਦੀ ਕਿਸਮ ਲਈ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਜਾਂਚ ਕੇਂਦਰ ਲੱਭੋ",
+  "guideRoadworthyCertificatesStep2": "ਜਾਂਚ ਤੋਂ ਪਹਿਲਾਂ ਲਾਈਟਾਂ, ਟਾਇਰ, ਬ੍ਰੇਕ, ਵਾਈਪਰ ਅਤੇ ਸ਼ੀਸ਼ੇ ਜਾਂਚੋ",
+  "guideRoadworthyCertificatesStep3": "ਮੁਲਾਕਾਤ 'ਤੇ ਵਾਹਨ ਦੇ ਕਾਗਜ਼ ਅਤੇ ਪਛਾਣ ਪੱਤਰ ਨਾਲ ਲਿਆਓ",
+  "guideRoadworthyCertificatesStep4": "ਵਾਹਨ ਫੇਲ੍ਹ ਹੋਵੇ ਤਾਂ ਦੱਸੀਆਂ ਕਮੀਆਂ ਠੀਕ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਜਾਂਚ ਬੁੱਕ ਕਰੋ",
+  "guideRoadworthyCertificatesTip": "ਸਰਟੀਫਿਕੇਟ ਅਕਸਰ ਥੋੜ੍ਹੇ ਸਮੇਂ ਲਈ ਵੈਧ ਹੁੰਦੇ ਹਨ, ਇਸ ਲਈ ਲੋੜ ਦੇ ਸਮੇਂ ਦੇ ਨੇੜੇ ਬੁੱਕ ਕਰੋ।",
+  "guideVisasWhen": "ਜਿੰਨੀ ਜਲਦੀ ਇਜਾਜ਼ਤ ਹੋਵੇ, ਸ਼ੁਰੂ ਕਰੋ। ਪ੍ਰਕਿਰਿਆ ਵਿੱਚ ਹਫ਼ਤੇ ਜਾਂ ਮਹੀਨੇ ਵੀ ਲੱਗ ਸਕਦੇ ਹਨ।",
+  "guideVisasStep1": "ਜਾਂਚੋ ਕਿ ਵੀਜ਼ਾ ਵਧਾਇਆ ਜਾ ਸਕਦਾ ਹੈ ਜਾਂ ਨਵਾਂ ਲੈਣਾ ਪਵੇਗਾ",
+  "guideVisasStep2": "ਪੱਕਾ ਕਰੋ ਕਿ ਨਵੇਂ ਵੀਜ਼ੇ ਲਈ ਪਾਸਪੋਰਟ ਕਾਫ਼ੀ ਸਮੇਂ ਤੱਕ ਵੈਧ ਰਹੇਗਾ",
+  "guideVisasStep3": "ਪਾਸਪੋਰਟ, ਮੌਜੂਦਾ ਵੀਜ਼ਾ ਅਤੇ ਸਹਾਇਕ ਦਸਤਾਵੇਜ਼ ਇਕੱਠੇ ਕਰੋ",
+  "guideVisasStep4": "ਸਿਰਫ਼ ਅਧਿਕਾਰਤ ਤਰੀਕਿਆਂ ਰਾਹੀਂ ਅਰਜ਼ੀ ਦਿਓ ਅਤੇ ਹਵਾਲਾ ਨੰਬਰ ਸੰਭਾਲ ਕੇ ਰੱਖੋ",
+  "guideVisasTip": "ਵੀਜ਼ੇ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਰੁਕਣ ਨਾਲ ਗੰਭੀਰ ਸਮੱਸਿਆਵਾਂ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਸ਼ੱਕ ਹੋਵੇ ਤਾਂ ਜਲਦੀ ਸਲਾਹ ਲਓ।",
+  "guideStudyPermitsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 3 ਮਹੀਨੇ ਪਹਿਲਾਂ, ਜਾਂ ਹੋਰ ਸਮੇਂ ਦੀ ਲੋੜ ਪਤਾ ਲੱਗਦੇ ਹੀ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideStudyPermitsStep1": "ਨਵੀਨੀਕਰਨ ਪ੍ਰਕਿਰਿਆ ਬਾਰੇ ਆਪਣੀ ਸੰਸਥਾ ਦੇ ਅੰਤਰਰਾਸ਼ਟਰੀ ਦਫ਼ਤਰ ਤੋਂ ਪੁੱਛੋ",
+  "guideStudyPermitsStep2": "ਦਾਖਲੇ ਅਤੇ ਪੜ੍ਹਾਈ ਦੀ ਮਿਆਦ ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਪੱਤਰ ਲਓ",
+  "guideStudyPermitsStep3": "ਪਾਸਪੋਰਟ, ਮੌਜੂਦਾ ਪਰਮਿਟ ਅਤੇ ਲੋੜ ਹੋਵੇ ਤਾਂ ਫੰਡਾਂ ਦਾ ਸਬੂਤ ਇਕੱਠਾ ਕਰੋ",
+  "guideStudyPermitsStep4": "ਮੌਜੂਦਾ ਪਰਮਿਟ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਅਰਜ਼ੀ ਦਾ ਸਬੂਤ ਰੱਖੋ",
+  "guideStudyPermitsTip": "ਆਪਣਾ ਪਾਸਪੋਰਟ ਵੀ ਜਾਂਚੋ। ਹੋ ਸਕਦਾ ਹੈ ਉਸਨੂੰ ਪੂਰੀ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਵੈਧ ਰਹਿਣਾ ਪਵੇ।",
+  "guideWorkPermitsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 3 ਤੋਂ 4 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideWorkPermitsStep1": "ਆਪਣੇ ਮਾਲਕ ਨੂੰ ਜਲਦੀ ਦੱਸੋ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਤੁਹਾਡੀ ਅਰਜ਼ੀ ਦਾ ਸਮਰਥਨ ਕਰਨਾ ਪੈ ਸਕਦਾ ਹੈ",
+  "guideWorkPermitsStep2": "ਪਰਮਿਟ ਦੇ ਨਵੀਨੀਕਰਨ ਲਈ ਇਮੀਗ੍ਰੇਸ਼ਨ ਅਥਾਰਟੀ ਦੇ ਨਿਯਮ ਦੇਖੋ",
+  "guideWorkPermitsStep3": "ਪਾਸਪੋਰਟ, ਮੌਜੂਦਾ ਪਰਮਿਟ, ਇਕਰਾਰਨਾਮਾ ਅਤੇ ਹਾਲੀਆ ਤਨਖਾਹ ਪਰਚੀਆਂ ਇਕੱਠੀਆਂ ਕਰੋ",
+  "guideWorkPermitsStep4": "ਮੌਜੂਦਾ ਪਰਮਿਟ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਅਰਜ਼ੀ ਦਾ ਸਬੂਤ ਰੱਖੋ",
+  "guideWorkPermitsTip": "ਨਵੀਂ ਨੌਕਰੀ ਲਈ ਨਵਾਂ ਪਰਮਿਟ ਲੱਗ ਸਕਦਾ ਹੈ। ਨਵੀਂ ਭੂਮਿਕਾ ਸਵੀਕਾਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideVehicleInsurancesWhen": "ਨਵੀਨੀਕਰਨ ਦੀ ਤਾਰੀਖ ਤੋਂ 3 ਤੋਂ 4 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideVehicleInsurancesStep1": "ਨਵੀਨੀਕਰਨ ਨੋਟਿਸ ਪੜ੍ਹੋ ਅਤੇ ਕਵਰ ਅਤੇ ਕਟੌਤੀਯੋਗ ਰਕਮ ਜਾਂਚੋ",
+  "guideVehicleInsurancesStep2": "ਪਤੇ, ਡਰਾਈਵਰਾਂ ਜਾਂ ਵਾਹਨ ਵਿੱਚ ਬਦਲਾਅ ਬਾਰੇ ਬੀਮਾ ਕੰਪਨੀ ਨੂੰ ਦੱਸੋ",
+  "guideVehicleInsurancesStep3": "ਕੀਮਤ ਵਧੀ ਹੋਵੇ ਤਾਂ ਕੁਝ ਕੋਟੇਸ਼ਨਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ",
+  "guideVehicleInsurancesStep4": "ਪੱਕਾ ਕਰੋ ਕਿ ਨਵਾਂ ਕਵਰ ਪੁਰਾਣੇ ਦੇ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੋਵੇ",
+  "guideVehicleInsurancesTip": "ਕਈ ਪਾਲਿਸੀਆਂ ਆਪਣੇ ਆਪ ਨਵੀਨੀਕ੍ਰਿਤ ਹੁੰਦੀਆਂ ਹਨ। ਆਪਣੀ ਜਾਂਚੋ, ਤਾਂ ਜੋ ਕਦੇ ਬਿਨਾਂ ਕਵਰ ਗੱਡੀ ਨਾ ਚਲਾਓ।",
+  "guidePropertyInsurancesWhen": "ਨਵੀਨੀਕਰਨ ਦੀ ਤਾਰੀਖ ਤੋਂ 3 ਤੋਂ 4 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guidePropertyInsurancesStep1": "ਜਾਂਚੋ ਕਿ ਘਰ ਅਤੇ ਸਾਮਾਨ ਦਾ ਬੀਮਿਤ ਮੁੱਲ ਅਜੇ ਵੀ ਸਹੀ ਹੈ",
+  "guidePropertyInsurancesStep2": "ਮੁਰੰਮਤ, ਨਵੀਆਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਜਾਂ ਸੁਰੱਖਿਆ ਬਦਲਾਅ ਬਾਰੇ ਬੀਮਾ ਕੰਪਨੀ ਨੂੰ ਦੱਸੋ",
+  "guidePropertyInsurancesStep3": "ਕੋਟੇਸ਼ਨਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ ਅਤੇ ਦੇਖੋ ਕਿ ਕੀ ਕਵਰ ਹੈ ਅਤੇ ਕੀ ਨਹੀਂ",
+  "guidePropertyInsurancesStep4": "ਪੱਕਾ ਕਰੋ ਕਿ ਨਵਾਂ ਕਵਰ ਪੁਰਾਣੇ ਦੇ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੋਵੇ",
+  "guidePropertyInsurancesTip": "ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਅਤੇ ਰਸੀਦਾਂ ਰੱਖੋ। ਕਲੇਮ ਕਰਨ ਵੇਲੇ ਇਹ ਕੰਮ ਆਉਂਦੀਆਂ ਹਨ।",
+  "guideLifeInsurancesWhen": "ਨਵੀਨੀਕਰਨ ਜਾਂ ਸਮੀਖਿਆ ਦੀ ਤਾਰੀਖ ਤੋਂ 1 ਤੋਂ 2 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸਮੀਖਿਆ ਕਰੋ।",
+  "guideLifeInsurancesStep1": "ਜਾਂਚੋ ਕਿ ਪਾਲਿਸੀ ਆਪਣੇ ਆਪ ਨਵੀਨੀਕ੍ਰਿਤ ਹੁੰਦੀ ਹੈ ਜਾਂ ਤੁਹਾਨੂੰ ਕੁਝ ਕਰਨਾ ਪਵੇਗਾ",
+  "guideLifeInsurancesStep2": "ਵਿਆਹ, ਬੱਚਿਆਂ ਜਾਂ ਨਵੇਂ ਘਰ ਵਰਗੇ ਬਦਲਾਅ ਤੋਂ ਬਾਅਦ ਕਵਰ ਦੀ ਸਮੀਖਿਆ ਕਰੋ",
+  "guideLifeInsurancesStep3": "ਜਾਂਚੋ ਕਿ ਲਾਭਪਾਤਰੀ ਅਜੇ ਵੀ ਸਹੀ ਹਨ",
+  "guideLifeInsurancesStep4": "ਰੱਦ ਕਰਨ ਜਾਂ ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਬੀਮਾ ਕੰਪਨੀ ਜਾਂ ਸਲਾਹਕਾਰ ਨਾਲ ਗੱਲ ਕਰੋ",
+  "guideLifeInsurancesTip": "ਨਵਾਂ ਕਵਰ ਲਿਖਤੀ ਰੂਪ ਵਿੱਚ ਪੱਕਾ ਹੋਣ ਤੱਕ ਮੌਜੂਦਾ ਕਵਰ ਬਣਾਈ ਰੱਖੋ।",
+  "guideHealthInsurancesWhen": "ਨਵੀਨੀਕਰਨ ਦੀ ਤਾਰੀਖ ਤੋਂ 1 ਤੋਂ 2 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideHealthInsurancesStep1": "ਕਵਰ ਅਤੇ ਲਾਭਾਂ ਵਿੱਚ ਬਦਲਾਅ ਲਈ ਨਵੀਨੀਕਰਨ ਨੋਟਿਸ ਪੜ੍ਹੋ",
+  "guideHealthInsurancesStep2": "ਸੋਚੋ ਕਿ ਅਗਲੇ ਸਾਲ ਤੁਹਾਨੂੰ ਕਿਹੜੀ ਦੇਖਭਾਲ ਜਾਂ ਇਲਾਜ ਦੀ ਲੋੜ ਪੈ ਸਕਦੀ ਹੈ",
+  "guideHealthInsurancesStep3": "ਉਡੀਕ ਮਿਆਦਾਂ ਅਤੇ ਛੋਟਾਂ ਸਮੇਤ ਪਲਾਨਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ",
+  "guideHealthInsurancesStep4": "ਆਖਰੀ ਤਾਰੀਖ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਚੋਣ ਪੱਕੀ ਕਰੋ, ਤਾਂ ਜੋ ਕਵਰ ਜਾਰੀ ਰਹੇ",
+  "guideHealthInsurancesTip": "ਪਲਾਨ ਬਦਲਣ ਨਾਲ ਨਵੀਆਂ ਉਡੀਕ ਮਿਆਦਾਂ ਲੱਗ ਸਕਦੀਆਂ ਹਨ। ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideTravelInsurancesWhen": "ਸਾਲਾਨਾ ਕਵਰ ਲਈ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ। ਕਿਸੇ ਯਾਤਰਾ ਲਈ ਬੁਕਿੰਗ ਵੇਲੇ ਲਓ।",
+  "guideTravelInsurancesStep1": "ਜਾਂਚੋ ਕਿ ਯਾਤਰਾ ਦੀਆਂ ਤਾਰੀਖਾਂ ਅਤੇ ਸਾਰੀਆਂ ਮੰਜ਼ਿਲਾਂ ਕਵਰ ਹਨ",
+  "guideTravelInsurancesStep2": "ਮੈਡੀਕਲ, ਰੱਦ ਕਰਨ ਅਤੇ ਸਾਮਾਨ ਦਾ ਕਵਰ ਜਾਂਚੋ",
+  "guideTravelInsurancesStep3": "ਸਕੀਇੰਗ ਜਾਂ ਡਾਈਵਿੰਗ ਵਰਗੀਆਂ ਗਤੀਵਿਧੀਆਂ ਬਾਰੇ ਬੀਮਾ ਕੰਪਨੀ ਨੂੰ ਦੱਸੋ",
+  "guideTravelInsurancesStep4": "ਪਾਲਿਸੀ ਅਤੇ ਐਮਰਜੈਂਸੀ ਨੰਬਰ ਆਪਣੇ ਫ਼ੋਨ ਵਿੱਚ ਸੰਭਾਲੋ",
+  "guideTravelInsurancesTip": "ਕੁਝ ਦੇਸ਼ ਦਾਖਲੇ ਲਈ ਯਾਤਰਾ ਬੀਮੇ ਦਾ ਸਬੂਤ ਮੰਗਦੇ ਹਨ। ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideDebitAndCreditCardsWhen": "ਕਾਰਡ 'ਤੇ ਲਿਖੀ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਤੋਂ 4 ਤੋਂ 6 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideDebitAndCreditCardsStep1": "ਨਵੇਂ ਕਾਰਡ ਦਾ ਧਿਆਨ ਰੱਖੋ, ਕਿਉਂਕਿ ਬੈਂਕ ਅਕਸਰ ਇਹ ਆਪਣੇ ਆਪ ਭੇਜਦੇ ਹਨ",
+  "guideDebitAndCreditCardsStep2": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਤੱਕ ਕਾਰਡ ਨਾ ਆਵੇ ਤਾਂ ਬੈਂਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "guideDebitAndCreditCardsStep3": "ਨਵਾਂ ਕਾਰਡ ਬੈਂਕ ਦੇ ਦੱਸੇ ਤਰੀਕੇ ਨਾਲ ਚਾਲੂ ਕਰੋ",
+  "guideDebitAndCreditCardsStep4": "ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਅਤੇ ਸੰਭਾਲੇ ਭੁਗਤਾਨਾਂ ਵਿੱਚ ਕਾਰਡ ਦੇ ਵੇਰਵੇ ਅੱਪਡੇਟ ਕਰੋ",
+  "guideDebitAndCreditCardsStep5": "ਨਵਾਂ ਕਾਰਡ ਚੱਲਣ ਲੱਗੇ ਤਾਂ ਪੁਰਾਣਾ ਕਾਰਡ ਨਸ਼ਟ ਕਰ ਦਿਓ",
+  "guideDebitAndCreditCardsTip": "ਤੁਹਾਡਾ ਬੈਂਕ ਕਦੇ ਵੀ ਤੁਹਾਡਾ PIN ਨਹੀਂ ਮੰਗੇਗਾ। ਅਜਿਹਾ ਮੰਗਣ ਵਾਲੀਆਂ ਕਾਲਾਂ ਜਾਂ ਸੁਨੇਹਿਆਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ।",
+  "guideStoreCardsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਲਗਭਗ 1 ਮਹੀਨਾ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideStoreCardsStep1": "ਜਾਂਚੋ ਕਿ ਸਟੋਰ ਨਵਾਂ ਕਾਰਡ ਭੇਜਦਾ ਹੈ ਜਾਂ ਇਸਨੂੰ ਆਪਣੀ ਐਪ ਵਿੱਚ ਲੈ ਜਾਂਦਾ ਹੈ",
+  "guideStoreCardsStep2": "ਪੱਕਾ ਕਰੋ ਕਿ ਤੁਹਾਡੇ ਪੁਆਇੰਟ ਜਾਂ ਬਕਾਇਆ ਨਵੇਂ ਕਾਰਡ ਵਿੱਚ ਆ ਜਾਣ",
+  "guideStoreCardsStep3": "ਸਟੋਰ ਕੋਲ ਆਪਣੇ ਸੰਪਰਕ ਵੇਰਵੇ ਅੱਪਡੇਟ ਕਰੋ",
+  "guideStoreCardsStep4": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਕੁਝ ਨਾ ਆਵੇ ਤਾਂ ਸਟੋਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "guideStoreCardsTip": "ਪੁਰਾਣੇ ਕਾਰਡ ਨਾਲ ਖਤਮ ਹੋ ਸਕਣ ਵਾਲੇ ਪੁਆਇੰਟ ਜਾਂ ਵਾਊਚਰ ਵਰਤ ਲਓ।",
+  "guideProfessionalLicencesWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 3 ਮਹੀਨੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideProfessionalLicencesStep1": "ਆਪਣੀ ਪੇਸ਼ੇਵਰ ਸੰਸਥਾ ਦੀਆਂ ਨਵੀਨੀਕਰਨ ਸ਼ਰਤਾਂ ਅਤੇ ਆਖਰੀ ਤਾਰੀਖ ਦੇਖੋ",
+  "guideProfessionalLicencesStep2": "ਪੱਕਾ ਕਰੋ ਕਿ ਲੋੜੀਂਦੇ ਸਿਖਲਾਈ ਜਾਂ ਸਿੱਖਿਆ ਦੇ ਘੰਟੇ ਪੂਰੇ ਹਨ",
+  "guideProfessionalLicencesStep3": "ਮੰਗੇ ਗਏ ਸਰਟੀਫਿਕੇਟ ਅਤੇ ਪ੍ਰੈਕਟਿਸ ਦਾ ਸਬੂਤ ਇਕੱਠਾ ਕਰੋ",
+  "guideProfessionalLicencesStep4": "ਨਵੀਨੀਕਰਨ ਜਮ੍ਹਾਂ ਕਰੋ ਅਤੇ ਪੁਸ਼ਟੀ ਸੰਭਾਲ ਕੇ ਰੱਖੋ",
+  "guideProfessionalLicencesTip": "ਸਾਲ ਭਰ ਸਿਖਲਾਈ ਦੇ ਘੰਟਿਆਂ ਦਾ ਹਿਸਾਬ ਰੱਖੋ, ਤਾਂ ਜੋ ਨਵੀਨੀਕਰਨ ਵੇਲੇ ਕਾਹਲੀ ਨਾ ਹੋਵੇ।",
+  "guideWorkAccessCardsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 4 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideWorkAccessCardsStep1": "ਐਕਸੈੱਸ ਕਾਰਡ ਦੇ ਨਵੀਨੀਕਰਨ ਬਾਰੇ ਸੁਰੱਖਿਆ ਜਾਂ HR ਟੀਮ ਤੋਂ ਪੁੱਛੋ",
+  "guideWorkAccessCardsStep2": "ਲੋੜੀਂਦੀ ਸਿਖਲਾਈ, ਜਾਂਚਾਂ ਜਾਂ ਫ਼ਾਰਮ ਪੂਰੇ ਕਰੋ",
+  "guideWorkAccessCardsStep3": "ਨਵੀਂ ਫ਼ੋਟੋ ਜਾਂ ਕਾਰਡ ਦੀ ਲੋੜ ਪੈਣ ਦੀ ਸੂਰਤ ਵਿੱਚ ਪਛਾਣ ਪੱਤਰ ਨਾਲ ਲਿਆਓ",
+  "guideWorkAccessCardsStep4": "ਕਿਹਾ ਜਾਵੇ ਤਾਂ ਪੁਰਾਣਾ ਕਾਰਡ ਵਾਪਸ ਕਰੋ",
+  "guideWorkAccessCardsTip": "ਕੁਝ ਥਾਵਾਂ 'ਤੇ ਪਿਛੋਕੜ ਦੀ ਜਾਂਚ ਵਿੱਚ ਹਫ਼ਤੇ ਲੱਗਦੇ ਹਨ। ਜਲਦੀ ਪੁੱਛੋ।",
+  "guideLeaseAgreementsWhen": "ਲੀਜ਼ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 3 ਮਹੀਨੇ ਪਹਿਲਾਂ, ਜਾਂ ਨੋਟਿਸ ਮਿਆਦ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "guideLeaseAgreementsStep1": "ਆਪਣੀ ਲੀਜ਼ ਵਿੱਚ ਨੋਟਿਸ ਮਿਆਦ ਅਤੇ ਨਵੀਨੀਕਰਨ ਦੀਆਂ ਸ਼ਰਤਾਂ ਦੇਖੋ",
+  "guideLeaseAgreementsStep2": "ਮਕਾਨ ਮਾਲਕ ਜਾਂ ਏਜੰਟ ਨੂੰ ਲਿਖਤੀ ਰੂਪ ਵਿੱਚ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਰਹੋਗੇ ਜਾਂ ਜਾਓਗੇ",
+  "guideLeaseAgreementsStep3": "ਨਵੀਂ ਲੀਜ਼ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹੋ, ਖਾਸ ਕਰਕੇ ਕਿਰਾਇਆ ਅਤੇ ਮਿਆਦ",
+  "guideLeaseAgreementsStep4": "ਨਵੀਂ ਲੀਜ਼ ਦੀਆਂ ਦਸਤਖਤ ਕੀਤੀਆਂ ਕਾਪੀਆਂ ਅਤੇ ਆਪਣੇ ਸੁਨੇਹੇ ਸੰਭਾਲ ਕੇ ਰੱਖੋ",
+  "guideLeaseAgreementsTip": "ਘਰ ਛੱਡ ਰਹੇ ਹੋ? ਸਕਿਓਰਿਟੀ ਵਾਪਸ ਲੈਣ ਲਈ ਜਗ੍ਹਾ ਦੀਆਂ ਤਾਰੀਖ ਵਾਲੀਆਂ ਫ਼ੋਟੋਆਂ ਲਓ।",
+  "guideAccessCardsAndTagsWhen": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 2 ਤੋਂ 4 ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "guideAccessCardsAndTagsStep1": "ਇਸਨੂੰ ਜਾਰੀ ਕਰਨ ਵਾਲੀ ਇਮਾਰਤ, ਸੁਸਾਇਟੀ, ਜਿਮ ਜਾਂ ਕਲੱਬ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "guideAccessCardsAndTagsStep2": "ਪੁੱਛੋ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਕੀ ਚਾਹੀਦਾ ਹੈ, ਜਿਵੇਂ ਪਛਾਣ ਪੱਤਰ ਜਾਂ ਉੱਥੇ ਰਹਿਣ ਜਾਂ ਮੈਂਬਰ ਹੋਣ ਦਾ ਸਬੂਤ",
+  "guideAccessCardsAndTagsStep3": "ਨਵਾਂ ਕਾਰਡ ਜਾਂ ਟੈਗ ਲੈਣ ਜਾਂ ਚਾਲੂ ਕਰਨ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ",
+  "guideAccessCardsAndTagsStep4": "ਪੁਰਾਣਾ ਬੰਦ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਨਵਾਂ ਪਰਖ ਲਓ",
+  "guideAccessCardsAndTagsTip": "ਗੁੰਮ ਹੋਇਆ ਕਾਰਡ ਜਾਂ ਟੈਗ ਤੁਰੰਤ ਰਿਪੋਰਟ ਕਰੋ, ਤਾਂ ਜੋ ਉਸਨੂੰ ਬਲੌਕ ਕੀਤਾ ਜਾ ਸਕੇ।",
+  "homeWidgetTitle": "ਜਲਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਵਾਲੇ",
+  "homeWidgetEmpty": "ਜਲਦੀ ਕਿਸੇ ਦੀ ਮਿਆਦ ਖਤਮ ਨਹੀਂ ਹੋ ਰਹੀ",
+  "recordMenuMore": "ਹੋਰ ਵਿਕਲਪ",
+  "recordMenuShareLink": "ਸੁਰੱਖਿਅਤ ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ",
+  "scanButtonTitle": "ਫ਼ੋਟੋ ਖਿੱਚ ਕੇ ਜੋੜੋ",
+  "scanButtonSubtitle": "ਇਸਨੂੰ ਭਰਨ ਲਈ ਕਿਸੇ ਕਾਰਡ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਦੀ ਫ਼ੋਟੋ ਲਓ",
+  "scanButtonBusy": "ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਪੜ੍ਹੀ ਜਾ ਰਹੀ ਹੈ…",
+  "scanSourceTitle": "ਫ਼ੋਟੋ ਤੋਂ ਜੋੜੋ",
+  "scanSourceHint": "ਪੱਕਾ ਕਰੋ ਕਿ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਸਾਫ਼ ਅਤੇ ਫੋਕਸ ਵਿੱਚ ਹੋਵੇ।",
+  "scanSourceCamera": "ਫ਼ੋਟੋ ਲਓ",
+  "scanSourceGallery": "ਗੈਲਰੀ ਵਿੱਚੋਂ ਚੁਣੋ",
+  "scanFoundExpiryAndGroup": "ਅਸੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਅਤੇ ਗਰੁੱਪ ਭਰ ਦਿੱਤੇ ਹਨ। ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਇਨ੍ਹਾਂ ਨੂੰ ਜਾਂਚੋ।",
+  "scanFoundExpiryAndCategory": "ਅਸੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਅਤੇ ਸ਼੍ਰੇਣੀ ਭਰ ਦਿੱਤੀ ਹੈ। ਗਰੁੱਪ ਚੁਣੋ, ਫਿਰ ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ।",
+  "scanFoundExpiry": "ਅਸੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਭਰ ਦਿੱਤੀ ਹੈ। ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਇਸਨੂੰ ਜਾਂਚੋ।",
+  "scanFoundGroup": "ਅਸੀਂ ਗਰੁੱਪ ਭਰ ਦਿੱਤਾ ਹੈ। ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਜੋੜੋ।",
+  "scanFoundCategory": "ਅਸੀਂ ਸ਼੍ਰੇਣੀ ਭਰ ਦਿੱਤੀ ਹੈ। ਗਰੁੱਪ ਚੁਣੋ ਅਤੇ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਜੋੜੋ।",
+  "scanFoundNumberOnly": "ਅਸੀਂ ਨੰਬਰ ਤੁਹਾਡੇ ਨੋਟਸ ਵਿੱਚ ਜੋੜ ਦਿੱਤਾ ਹੈ। ਬਾਕੀ ਹੇਠਾਂ ਭਰੋ।",
+  "scanFoundNothing": "ਅਸੀਂ ਇਸ ਫ਼ੋਟੋ ਤੋਂ ਵੇਰਵੇ ਨਹੀਂ ਪੜ੍ਹ ਸਕੇ। ਉਨ੍ਹਾਂ ਨੂੰ ਹੇਠਾਂ ਭਰੋ।",
+  "scanFoundNumberAdded": "ਅਸੀਂ ਨੰਬਰ ਵੀ ਤੁਹਾਡੇ ਨੋਟਸ ਵਿੱਚ ਜੋੜ ਦਿੱਤਾ ਹੈ।",
+  "scanBannerDismiss": "ਬੰਦ ਕਰੋ",
+  "scanNotesNumber": "ਨੰਬਰ: {number}",
+  "scanFailed": "ਅਸੀਂ ਕੈਮਰਾ ਜਾਂ ਫ਼ੋਟੋ ਨਹੀਂ ਖੋਲ੍ਹ ਸਕੇ। ਕੈਮਰਾ ਐਕਸੈੱਸ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "shareLinkCreating": "ਸੁਰੱਖਿਅਤ ਲਿੰਕ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+  "shareLinkError": "ਅਸੀਂ ਲਿੰਕ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "shareLinkSubject": "Vaultara ਤੋਂ {name}",
+  "shareLinkMessage": "ਇਹ ਮੇਰੇ {name} ਦੇ ਵੇਰਵੇ ਹਨ: {url}\nਇਹ ਲਿੰਕ {time} ਤੱਕ ਕੰਮ ਕਰੇਗਾ।",
+  "exportNoRecords": "ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ ਨਿਰਯਾਤ ਕਰਨ ਲਈ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ ਹੈ।",
+  "exportHolderLine": "{name} ਦਾ",
+  "exportSectionTitle": "ਨਿਰਯਾਤ",
+  "exportPdfTitle": "PDF ਵਜੋਂ ਨਿਰਯਾਤ ਕਰੋ",
+  "exportPdfSubtitle": "ਤੁਹਾਡੇ ਸਾਰੇ ਰਿਕਾਰਡਾਂ ਦੀ ਪ੍ਰਿੰਟ ਕਰਨਯੋਗ ਸੂਚੀ",
+  "exportCalendarTitle": "ਕੈਲੰਡਰ ਵਿੱਚ ਜੋੜੋ",
+  "exportCalendarSubtitle": "ਹਰ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਆਪਣੀ ਕੈਲੰਡਰ ਐਪ ਵਿੱਚ ਜੋੜੋ",
+  "calendarExportEventTitle": "{name} ਦੀ ਮਿਆਦ ਖਤਮ",
+  "calendarExportAlarm": "{name} ਦੀ ਮਿਆਦ ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ ਖਤਮ ਹੋਵੇਗੀ",
+  "calendarExportSubject": "Vaultara ਮਿਆਦ ਦੀਆਂ ਤਾਰੀਖਾਂ",
+  "calendarExportError": "ਅਸੀਂ ਕੈਲੰਡਰ ਫ਼ਾਈਲ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "pdfExportTitle": "Vaultara ਰਿਕਾਰਡ",
+  "pdfExportGenerated": "{date} ਨੂੰ ਬਣਾਇਆ ਗਿਆ",
+  "pdfExportCount": "{count, plural, one{{count} ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
+  "pdfExportCost": "ਨਵੀਨੀਕਰਨ ਦੀ ਲਾਗਤ: {amount}",
+  "pdfExportBuilding": "ਤੁਹਾਡੀ PDF ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ...",
+  "pdfExportError": "ਅਸੀਂ PDF ਨਹੀਂ ਬਣਾ ਸਕੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "travelTitle": "ਯਾਤਰਾ ਜਾਂਚ",
+  "travelDeparture": "ਰਵਾਨਗੀ",
+  "travelReturn": "ਵਾਪਸੀ",
+  "travelTripLength": "{days, plural, one{{days} ਦਿਨ ਦੀ ਯਾਤਰਾ} other{{days} ਦਿਨਾਂ ਦੀ ਯਾਤਰਾ}}",
+  "travelDriving": "ਮੈਂ ਗੱਡੀ ਚਲਾਉਣੀ ਹੈ",
+  "travelNeedsVisa": "ਮੈਨੂੰ ਵੀਜ਼ਾ ਚਾਹੀਦਾ ਹੈ",
+  "travelWho": "ਕੌਣ ਯਾਤਰਾ ਕਰ ਰਿਹਾ ਹੈ?",
+  "travelMe": "ਮੈਂ",
+  "travelResultsTitle": "ਇਸ ਯਾਤਰਾ ਲਈ ਤੁਹਾਡੇ ਰਿਕਾਰਡ",
+  "travelPassportOk": "ਪਾਸਪੋਰਟ ਵੈਧ ਹੈ",
+  "travelPassportTooShort": "ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਯਾਤਰਾ ਤੋਂ ਬਹੁਤ ਜਲਦੀ ਬਾਅਦ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelPassportExpiresDuringTrip": "ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਤੁਹਾਡੀ ਵਾਪਸੀ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelNoPassport": "ਕੋਈ ਪਾਸਪੋਰਟ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ",
+  "travelVisaOk": "ਵੀਜ਼ਾ ਤੁਹਾਡੀ ਯਾਤਰਾ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ",
+  "travelVisaExpiresBeforeReturn": "ਵੀਜ਼ੇ ਦੀ ਮਿਆਦ ਤੁਹਾਡੀ ਵਾਪਸੀ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelNoVisa": "ਕੋਈ ਵੀਜ਼ਾ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ",
+  "travelInsuranceOk": "ਯਾਤਰਾ ਬੀਮਾ ਤੁਹਾਡੀ ਯਾਤਰਾ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ",
+  "travelInsuranceEndsDuringTrip": "ਯਾਤਰਾ ਬੀਮਾ ਤੁਹਾਡੀ ਵਾਪਸੀ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦਾ ਹੈ",
+  "travelNoInsurance": "ਕੋਈ ਯਾਤਰਾ ਬੀਮਾ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ",
+  "travelLicenceOk": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਵੈਧ ਹੈ",
+  "travelLicenceExpiresDuringTrip": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਦੀ ਮਿਆਦ ਤੁਹਾਡੀ ਵਾਪਸੀ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelNoLicence": "ਕੋਈ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ",
+  "travelOtherExpires": "ਤੁਹਾਡੇ ਬਾਹਰ ਹੁੰਦਿਆਂ ਮਿਆਦ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelDetailValidUntil": "{name} {date} ਤੱਕ ਵੈਧ ਹੈ।",
+  "travelDetailPassportBuffer": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ। ਕਈ ਦੇਸ਼ ਵਾਪਸੀ ਤੋਂ ਬਾਅਦ {months, plural, one{{months} ਮਹੀਨੇ} other{{months} ਮਹੀਨਿਆਂ}} ਦੀ ਵੈਧਤਾ ਚਾਹੁੰਦੇ ਹਨ।",
+  "travelDetailExpiresBeforeLeaving": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ, ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ।",
+  "travelDetailExpiresDuringTrip": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, {days, plural, =0{ਜਿਸ ਦਿਨ ਤੁਸੀਂ ਰਵਾਨਾ ਹੋਵੋਗੇ} one{ਯਾਤਰਾ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਬਾਅਦ} other{ਯਾਤਰਾ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਬਾਅਦ}}।",
+  "travelDetailNoPassport": "ਆਪਣਾ ਪਾਸਪੋਰਟ ਜੋੜੋ ਤਾਂ ਜੋ Vaultara ਇਸਨੂੰ ਜਾਂਚ ਸਕੇ।",
+  "travelDetailNoVisa": "ਆਪਣਾ ਵੀਜ਼ਾ ਜੋੜੋ ਤਾਂ ਜੋ Vaultara ਇਸਨੂੰ ਜਾਂਚ ਸਕੇ।",
+  "travelDetailNoInsurance": "ਇਹ ਜਾਂਚਣ ਲਈ ਆਪਣਾ ਯਾਤਰਾ ਬੀਮਾ ਜੋੜੋ ਕਿ ਇਹ ਪੂਰੀ ਯਾਤਰਾ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ।",
+  "travelDetailNoLicence": "ਆਪਣਾ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਜੋੜੋ ਤਾਂ ਜੋ Vaultara ਇਸਨੂੰ ਜਾਂਚ ਸਕੇ।",
+  "travelPremiumTitle": "ਯਾਤਰਾ ਜਾਂਚ ਪ੍ਰੀਮੀਅਮ ਦਾ ਹਿੱਸਾ ਹੈ",
+  "travelPremiumBody": "ਆਪਣੀ ਯਾਤਰਾ ਦੀਆਂ ਤਾਰੀਖਾਂ ਦਰਜ ਕਰੋ ਅਤੇ Vaultara ਤੁਹਾਡਾ ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ, ਯਾਤਰਾ ਬੀਮਾ ਅਤੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਜਾਂਚੇਗਾ, ਨਾਲ ਹੀ ਉਹ ਰਿਕਾਰਡ ਦਿਖਾਏਗਾ ਜਿਨ੍ਹਾਂ ਦੀ ਮਿਆਦ ਤੁਹਾਡੇ ਬਾਹਰ ਹੁੰਦਿਆਂ ਖਤਮ ਹੋਵੇਗੀ।",
+  "travelSeePremium": "ਪ੍ਰੀਮੀਅਮ ਦੇਖੋ",
+  "travelCardTitle": "ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ?",
+  "travelCardBody": "ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣਾ ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਬੀਮਾ ਜਾਂਚੋ।",
+  "travelPremiumChip": "ਪ੍ਰੀਮੀਅਮ",
+  "editRecordTitle": "ਰਿਕਾਰਡ ਸੋਧੋ",
+  "editorMoreDetails": "ਹੋਰ ਵੇਰਵੇ",
+  "editorMoreDetailsHint": "ਦੁਹਰਾਓ, ਨੋਟਸ, ਲਾਗਤ, ਫ਼ੋਟੋਆਂ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ",
+  "travelNewTrip": "ਨਵੀਂ ਯਾਤਰਾ",
+  "travelEditTrip": "ਯਾਤਰਾ ਸੋਧੋ",
+  "travelPlanTrip": "ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾਓ",
+  "travelTripName": "ਮੰਜ਼ਿਲ",
+  "travelTripNameHint": "ਉਦਾਹਰਨ ਲਈ ਦੁਬਈ ਜਾਂ ਕੈਨੇਡਾ",
+  "travelErrorTripName": "ਮੰਜ਼ਿਲ ਦਰਜ ਕਰੋ",
+  "travelErrorTravellers": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਅਕਤੀ ਚੁਣੋ",
+  "travelDateChoose": "ਤਾਰੀਖ਼ ਚੁਣੋ",
+  "travelErrorDates": "ਰਵਾਨਗੀ ਅਤੇ ਵਾਪਸੀ ਦੋਵੇਂ ਤਾਰੀਖ਼ਾਂ ਚੁਣੋ",
+  "travelSaveFailed": "ਇਹ ਯਾਤਰਾ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੋ ਸਕੀ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "travelNights": "ਰਾਤਾਂ: {nights}",
+  "travelDaysShort": "ਦਿਨ: {days}",
+  "travelAtDestination": "ਮੰਜ਼ਿਲ 'ਤੇ ਦਿਨ: {days}",
+  "travelSectionJourney": "ਤੁਹਾਡੀ ਯਾਤਰਾ",
+  "travelFlights": "ਉਡਾਣਾਂ",
+  "travelFlightsHint": "ਤੁਸੀਂ ਕਦੋਂ ਉਤਰੋਗੇ ਅਤੇ ਉੱਥੇ ਕਿੰਨੇ ਦਿਨ ਰਹੋਗੇ ਇਹ ਵੇਖਣ ਲਈ ਆਪਣੀਆਂ ਉਡਾਣਾਂ ਸ਼ਾਮਲ ਕਰੋ।",
+  "travelFlightAdd": "ਉਡਾਣ ਸ਼ਾਮਲ ਕਰੋ",
+  "travelFlightEdit": "ਉਡਾਣ ਦੇ ਵੇਰਵੇ",
+  "travelFlightFrom": "ਕਿੱਥੋਂ",
+  "travelFlightTo": "ਕਿੱਥੇ",
+  "travelFlightPlaceHint": "ਸ਼ਹਿਰ ਜਾਂ ਹਵਾਈ ਅੱਡਾ",
+  "travelFlightDeparts": "ਰਵਾਨਗੀ",
+  "travelFlightLands": "ਉਤਰਨਾ",
+  "travelFlightError": "ਦੱਸੋ ਕਿ ਉਡਾਣ ਕਿੱਥੋਂ ਚੱਲਦੀ ਹੈ, ਕਿੱਥੇ ਉਤਰਦੀ ਹੈ ਅਤੇ ਦੋਵੇਂ ਤਾਰੀਖਾਂ ਸ਼ਾਮਲ ਕਰੋ",
+  "travelFlightErrorOrder": "ਉਡਾਣ ਚੱਲਣ ਤੋਂ ਪਹਿਲਾਂ ਨਹੀਂ ਉਤਰ ਸਕਦੀ",
+  "travelDateLabel": "ਤਾਰੀਖ਼",
+  "travelTimeLabel": "ਸਮਾਂ",
+  "travelTimeChoose": "ਸਮਾਂ ਸ਼ਾਮਲ ਕਰੋ",
+  "travelEmptyTitle": "ਹਾਲੇ ਕੋਈ ਯਾਤਰਾ ਨਹੀਂ",
+  "travelEmptyBody": "ਯਾਤਰਾ ਜੋੜੋ ਅਤੇ Vaultara ਹਰ ਕਿਸੇ ਦਾ ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ, ਬੀਮਾ ਅਤੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਤੁਹਾਡੀਆਂ ਤਾਰੀਖਾਂ ਨਾਲ ਜਾਂਚੇਗਾ। ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਚੈੱਕਲਿਸਟ ਅਤੇ ਯਾਦ-ਦਹਾਨੀ ਮਿਲੇਗੀ।",
+  "travelUpcoming": "ਆਉਣ ਵਾਲੀਆਂ ਯਾਤਰਾਵਾਂ",
+  "travelPast": "ਪਿਛਲੀਆਂ ਯਾਤਰਾਵਾਂ",
+  "travelStartsIn": "{days, plural, one{{days} ਦਿਨ ਵਿੱਚ ਰਵਾਨਗੀ} other{{days} ਦਿਨਾਂ ਵਿੱਚ ਰਵਾਨਗੀ}}",
+  "travelLeavesToday": "ਅੱਜ ਰਵਾਨਗੀ",
+  "travelLeavesTomorrow": "ਕੱਲ੍ਹ ਰਵਾਨਗੀ",
+  "travelInProgress": "ਯਾਤਰਾ ਜਾਰੀ ਹੈ",
+  "travelTripEnded": "ਯਾਤਰਾ ਖਤਮ ਹੋਈ",
+  "travelAllGood": "ਸਾਰੇ ਦਸਤਾਵੇਜ਼ ਤਿਆਰ ਹਨ",
+  "travelIssues": "{count, plural, one{{count} ਚੀਜ਼ ਵੱਲ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ} other{{count} ਚੀਜ਼ਾਂ ਵੱਲ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ}}",
+  "travelChecklistTitle": "ਯਾਤਰਾ ਚੈੱਕਲਿਸਟ",
+  "travelChecklistProgress": "{total} ਵਿੱਚੋਂ {done} ਹੋ ਗਏ",
+  "travelChecklistAdd": "ਜੋੜੋ",
+  "travelChecklistAddHint": "ਆਪਣੀ ਆਈਟਮ ਜੋੜੋ",
+  "travelItemPassportPhoto": "ਪਾਸਪੋਰਟ ਦੀ ਫ਼ੋਟੋ ਫ਼ੋਨ ਵਿੱਚ ਸੰਭਾਲੀ ਹੋਈ",
+  "travelItemVisa": "ਵੀਜ਼ਾ ਜਾਂ ਯਾਤਰਾ ਇਜਾਜ਼ਤ ਤਿਆਰ (ਉਦਾਹਰਨ ਲਈ ESTA ਜਾਂ eTA)",
+  "travelItemInsurance": "ਯਾਤਰਾ ਬੀਮਾ ਪਾਲਿਸੀ ਅਤੇ ਐਮਰਜੈਂਸੀ ਨੰਬਰ",
+  "travelItemDrivingPermit": "ਅੰਤਰਰਾਸ਼ਟਰੀ ਡਰਾਈਵਿੰਗ ਪਰਮਿਟ, ਜੇ ਦੇਸ਼ ਨੂੰ ਲੋੜ ਹੋਵੇ",
+  "travelItemVaccination": "ਟੀਕਾਕਰਨ ਸਰਟੀਫਿਕੇਟ, ਜੇ ਦੇਸ਼ ਨੂੰ ਲੋੜ ਹੋਵੇ",
+  "travelItemBank": "ਆਪਣੇ ਬੈਂਕ ਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਯਾਤਰਾ ਕਰ ਰਹੇ ਹੋ",
+  "travelItemEmergency": "ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ ਲਿਖ ਕੇ ਰੱਖੇ",
+  "travelItemChargers": "ਚਾਰਜਰ ਅਤੇ ਪਲੱਗ ਅਡੈਪਟਰ",
+  "travelShareSummary": "PDF ਸਾਂਝਾ ਕਰੋ",
+  "travelAddToCalendar": "ਕੈਲੰਡਰ ਵਿੱਚ ਜੋੜੋ",
+  "travelDeleteTrip": "ਯਾਤਰਾ ਮਿਟਾਓ",
+  "travelDeleteTripConfirm": "ਕੀ ਇਹ ਯਾਤਰਾ ਅਤੇ ਇਸਦੀ ਚੈੱਕਲਿਸਟ ਮਿਟਾਉਣੀ ਹੈ? ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਜਿਵੇਂ ਹਨ ਉਵੇਂ ਹੀ ਰਹਿਣਗੇ।",
+  "travelTripTo": "{name} ਦੀ ਯਾਤਰਾ",
+  "travelReminderTitle": "{days, plural, one{{days} ਦਿਨ ਵਿੱਚ {name} ਦੀ ਯਾਤਰਾ} other{{days} ਦਿਨਾਂ ਵਿੱਚ {name} ਦੀ ਯਾਤਰਾ}}",
+  "travelReminderTitleTomorrow": "ਕੱਲ੍ਹ {name} ਦੀ ਯਾਤਰਾ",
+  "travelReminderBodyIssues": "{count, plural, one{ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ {count} ਦਸਤਾਵੇਜ਼ ਵੱਲ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ।} other{ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ {count} ਦਸਤਾਵੇਜ਼ਾਂ ਵੱਲ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ।}}",
+  "travelReminderBodyOk": "ਤੁਹਾਡੇ ਦਸਤਾਵੇਜ਼ ਤਿਆਰ ਹਨ। ਸੂਚੀ ਜਾਂਚਣ ਲਈ ਆਪਣੀ ਯਾਤਰਾ ਖੋਲ੍ਹੋ।",
+  "travelTripLimit": "ਤੁਸੀਂ {count} ਯਾਤਰਾਵਾਂ ਤੱਕ ਸੰਭਾਲ ਸਕਦੇ ਹੋ। ਨਵੀਂ ਜੋੜਨ ਲਈ ਕੋਈ ਪੁਰਾਣੀ ਯਾਤਰਾ ਮਿਟਾਓ।",
+  "recordLockTitle": "ਇਸ ਰਿਕਾਰਡ ਨੂੰ ਲੌਕ ਕਰੋ",
+  "recordLockSubtitle": "ਵੇਰਵੇ ਦਿਖਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਫਿੰਗਰਪ੍ਰਿੰਟ, ਚਿਹਰਾ ਜਾਂ ਸਕ੍ਰੀਨ ਲੌਕ ਮੰਗੋ",
+  "recordLockReason": "ਇਸ ਰਿਕਾਰਡ ਨੂੰ ਅਨਲੌਕ ਕਰੋ",
+  "recordLockNoDeviceLock": "ਪਹਿਲਾਂ ਆਪਣੇ ਫ਼ੋਨ 'ਤੇ ਸਕ੍ਰੀਨ ਲੌਕ ਸੈੱਟ ਕਰੋ।",
+  "repeatLabel": "ਦੁਹਰਾਓ",
+  "repeatHelper": "ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਲਈ। ਤਾਰੀਖ ਲੰਘ ਜਾਣ 'ਤੇ Vaultara ਇਸਨੂੰ ਆਪਣੇ ਆਪ ਅੱਗੇ ਕਰ ਦਿੰਦਾ ਹੈ।",
+  "repeatNever": "ਦੁਹਰਾਇਆ ਨਹੀਂ ਜਾਂਦਾ",
+  "repeatEveryMonths": "{months, plural, one{ਹਰ {months} ਮਹੀਨੇ ਬਾਅਦ} other{ਹਰ {months} ਮਹੀਨਿਆਂ ਬਾਅਦ}}",
+  "repeatEveryMonth": "ਹਰ ਮਹੀਨੇ",
+  "repeatEveryYear": "ਹਰ ਸਾਲ",
+  "dataExportTitle": "ਮੇਰਾ ਡਾਟਾ ਡਾਊਨਲੋਡ ਕਰੋ",
+  "dataExportSubtitle": "Vaultara ਵਿੱਚ ਰੱਖੀ ਹਰ ਚੀਜ਼ ਦੀ ਕਾਪੀ ਸੇਵ ਕਰੋ",
+  "dataExportBuilding": "ਤੁਹਾਡਾ ਡਾਟਾ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+  "dataExportError": "ਅਸੀਂ ਤੁਹਾਡਾ ਡਾਟਾ ਤਿਆਰ ਨਹੀਂ ਕਰ ਸਕੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "shortcutScan": "ਦਸਤਾਵੇਜ਼ ਸਕੈਨ ਕਰੋ",
+  "tutorialAddRecordScan": "ਕਿਸੇ ਕਾਰਡ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਦੀ ਫ਼ੋਟੋ ਲਓ ਅਤੇ Vaultara ਤੁਹਾਡੇ ਲਈ ਵੇਰਵੇ ਭਰ ਦੇਵੇਗਾ।",
+  "vaultTitle": "ਫ਼ੋਟੋਆਂ",
+  "vaultCount": "{limit} ਵਿੱਚੋਂ {count}",
+  "vaultAdd": "ਜੋੜੋ",
+  "vaultAddPhoto": "ਫ਼ੋਟੋ ਜੋੜੋ",
+  "vaultLimitShort": "ਹੱਦ",
+  "vaultTakePhoto": "ਫ਼ੋਟੋ ਲਓ",
+  "vaultChooseFromGallery": "ਗੈਲਰੀ ਵਿੱਚੋਂ ਚੁਣੋ",
+  "vaultRemove": "ਹਟਾਓ",
+  "vaultLimitTitle": "ਫ਼ੋਟੋਆਂ ਦੀ ਹੱਦ ਪੂਰੀ ਹੋ ਗਈ",
+  "vaultLimitFreeBody": "ਮੁਫ਼ਤ ਪਲਾਨ ਵਿੱਚ ਤੁਸੀਂ ਹਰ ਰਿਕਾਰਡ ਵਿੱਚ {limit, plural, one{{limit} ਫ਼ੋਟੋ} other{{limit} ਫ਼ੋਟੋਆਂ}} ਜੋੜ ਸਕਦੇ ਹੋ। ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਤੁਸੀਂ {premiumLimit} ਤੱਕ ਜੋੜ ਸਕਦੇ ਹੋ।",
+  "vaultLimitPremiumBody": "ਤੁਸੀਂ ਹਰ ਰਿਕਾਰਡ ਵਿੱਚ {limit} ਫ਼ੋਟੋਆਂ ਤੱਕ ਜੋੜ ਸਕਦੇ ਹੋ। ਹੋਰ ਜੋੜਨ ਲਈ ਇੱਕ ਹਟਾਓ।",
+  "vaultSeePremium": "ਪ੍ਰੀਮੀਅਮ ਦੇਖੋ",
+  "vaultPdfShort": "PDF",
+  "vaultPdfFile": "PDF ਫ਼ਾਈਲ",
+  "vaultOpenFile": "ਖੋਲ੍ਹੋ",
+  "vaultClose": "ਬੰਦ ਕਰੋ",
+  "vaultPageIndicator": "{total} ਵਿੱਚੋਂ {current}",
+  "vaultPhotosTooltip": "{count, plural, one{{count} ਫ਼ੋਟੋ} other{{count} ਫ਼ੋਟੋਆਂ}}",
+  "travelReadinessTitle": "ਯਾਤਰਾ ਦੀ ਤਿਆਰੀ",
+  "travelReadinessBody": "Vaultara ਵਿੱਚ ਸੰਭਾਲੇ ਪਾਸਪੋਰਟਾਂ ਅਤੇ ਲਾਇਸੈਂਸਾਂ ਦੇ ਆਧਾਰ ‘ਤੇ। ਜ਼ਿਆਦਾਤਰ ਦੇਸ਼ ਚਾਹੁੰਦੇ ਹਨ ਕਿ ਤੁਹਾਡੇ ਮੁੜਨ ਸਮੇਂ ਪਾਸਪੋਰਟ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ 6 ਮਹੀਨੇ ਬਾਕੀ ਹੋਣ।",
+  "travelReadyUntil": "ਪਾਸਪੋਰਟ {date} ਤੱਕ ਯਾਤਰਾਵਾਂ ਲਈ ਵੈਧ ਹੈ",
+  "travelPassportTooShortNow": "ਪਾਸਪੋਰਟ {date} ਨੂੰ ਖ਼ਤਮ ਹੋ ਰਿਹਾ ਹੈ। ਜ਼ਿਆਦਾਤਰ ਦੇਸ਼ ਹੁਣ ਇਸਨੂੰ ਸਵੀਕਾਰ ਨਹੀਂ ਕਰਨਗੇ।",
+  "travelPassportExpiredOn": "ਪਾਸਪੋਰਟ {date} ਨੂੰ ਖ਼ਤਮ ਹੋ ਗਿਆ",
+  "travelNoPassportSaved": "ਕੋਈ ਪਾਸਪੋਰਟ ਸੰਭਾਲਿਆ ਨਹੀਂ ਗਿਆ",
+  "travelLicenceValidUntil": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ {date} ਤੱਕ ਵੈਧ ਹੈ",
+  "travelLicenceExpiredOn": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ {date} ਨੂੰ ਖ਼ਤਮ ਹੋ ਗਿਆ",
+  "shareIncludePhotosTitle": "ਕੀ ਫ਼ੋਟੋਆਂ ਸ਼ਾਮਲ ਕਰਨੀਆਂ ਹਨ?",
+  "shareIncludePhotosBody": "ਲਿੰਕ ਵਾਲਾ ਕੋਈ ਵੀ ਵਿਅਕਤੀ, ਲਿੰਕ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੱਕ, ਤੁਹਾਡਾ ਸਾਂਝਾ ਕੀਤਾ ਦੇਖ ਸਕਦਾ ਹੈ। ਦਸਤਾਵੇਜ਼ਾਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਵਿੱਚ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਦਿਖਦੀ ਹੈ।",
+  "shareDetailsOnly": "ਸਿਰਫ਼ ਵੇਰਵੇ",
+  "shareWithPhotos": "ਫ਼ੋਟੋਆਂ ਸਮੇਤ",
+  "sharedLinksTitle": "ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ",
+  "sharedLinksSubtitle": "ਆਪਣੇ ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ ਦੇਖੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਰੋਕੋ",
+  "sharedLinksEmpty": "ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਚਾਲੂ ਸਾਂਝਾ ਲਿੰਕ ਨਹੀਂ ਹੈ।",
+  "sharedLinksExpires": "ਲਿੰਕ {date} ਤੱਕ ਕੰਮ ਕਰੇਗਾ",
+  "sharedLinksStop": "ਰੋਕੋ",
+  "sharedLinksStopped": "ਲਿੰਕ ਰੋਕ ਦਿੱਤਾ ਗਿਆ। ਇਹ ਹੁਣ ਕੰਮ ਨਹੀਂ ਕਰਦਾ।",
+  "sharedLinksError": "ਤੁਹਾਡੇ ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "sharedLinksUnknownRecord": "ਹਟਾਇਆ ਗਿਆ ਰਿਕਾਰਡ",
+  "leadLabel": "ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਲੱਗਣ ਵਾਲਾ ਸਮਾਂ",
+  "leadHelper": "Vaultara ਤੁਹਾਨੂੰ ਇੰਨੀ ਜਲਦੀ ਯਾਦ ਕਰਾਉਣਾ ਸ਼ੁਰੂ ਕਰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਸਮੇਂ ਸਿਰ ਨਵੀਨੀਕਰਨ ਕਰ ਸਕੋ।",
+  "leadNotSet": "ਪਤਾ ਨਹੀਂ",
+  "leadWeeks": "{weeks, plural, one{{weeks} ਹਫ਼ਤਾ} other{{weeks} ਹਫ਼ਤੇ}}",
+  "leadMonths": "{months, plural, one{{months} ਮਹੀਨਾ} other{{months} ਮਹੀਨੇ}}",
+  "walletTileTitle": "ਮੇਰੇ ਬਟੂਏ ਵਿੱਚ",
+  "walletTileSubtitle": "ਜੇ ਤੁਹਾਡਾ ਬਟੂਆ ਗੁਆਚ ਜਾਵੇ, ਤਾਂ Vaultara ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਕੀ ਬਦਲਵਾਉਣਾ ਹੈ",
+  "startRenewingBy": "{date} ਤੱਕ ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰੋ",
+  "startRenewingNow": "ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਸਮਾਂ",
+  "lostWalletTitle": "ਮੇਰਾ ਬਟੂਆ ਗੁਆਚ ਗਿਆ",
+  "lostWalletSubtitle": "ਦੇਖੋ ਉਸ ਵਿੱਚ ਕੀ ਸੀ ਅਤੇ ਕੀ ਬਦਲਵਾਉਣਾ ਹੈ",
+  "lostWalletFirstSteps": "ਪਹਿਲਾਂ ਇਹ ਕਰੋ",
+  "lostWalletStepCards": "ਬਟੂਏ ਵਿੱਚ ਰੱਖੇ ਬੈਂਕ ਕਾਰਡ ਬਲੌਕ ਕਰਵਾਉਣ ਲਈ ਆਪਣੇ ਬੈਂਕ ਨੂੰ ਫ਼ੋਨ ਕਰੋ।",
+  "lostWalletStepReport": "ਥਾਣੇ ਵਿੱਚ ਗੁੰਮ ਹੋਣ ਦੀ ਰਿਪੋਰਟ ਦਰਜ ਕਰਾਓ ਅਤੇ ਕੇਸ ਨੰਬਰ ਸੰਭਾਲ ਕੇ ਰੱਖੋ। ਕਈ ਦਫ਼ਤਰ ਦਸਤਾਵੇਜ਼ ਬਦਲਵਾਉਣ ਵੇਲੇ ਇਹ ਮੰਗਦੇ ਹਨ।",
+  "lostWalletStepReplace": "ਹੇਠਾਂ ਦਿੱਤੀ ਸੂਚੀ ਅਨੁਸਾਰ ਕੰਮ ਕਰੋ ਅਤੇ ਨਵੇਂ ਲਈ ਅਰਜ਼ੀ ਦੇਣ ਤੋਂ ਬਾਅਦ ਹਰ ਚੀਜ਼ ‘ਤੇ ਨਿਸ਼ਾਨ ਲਗਾਓ।",
+  "lostWalletEmptyTitle": "ਅਜੇ ਕੁਝ ਵੀ ਚਿੰਨ੍ਹਿਤ ਨਹੀਂ ਹੈ",
+  "lostWalletEmptyBody": "ਕੋਈ ਰਿਕਾਰਡ ਖੋਲ੍ਹੋ, “ਹੋਰ ਵੇਰਵੇ” ‘ਤੇ ਟੈਪ ਕਰੋ ਅਤੇ “ਮੇਰੇ ਬਟੂਏ ਵਿੱਚ” ਚਾਲੂ ਕਰੋ। ਆਪਣੇ ਪਛਾਣ ਪੱਤਰ, ਲਾਇਸੈਂਸ ਅਤੇ ਜੋ ਵੀ ਕਾਰਡ ਤੁਸੀਂ ਰੱਖਦੇ ਹੋ, ਉਹਨਾਂ ਲਈ ਇਹ ਕਰੋ, ਤਾਂ ਜੋ ਲੋੜ ਪੈਣ ‘ਤੇ ਇਹ ਸੂਚੀ ਤਿਆਰ ਰਹੇ।",
+  "lostWalletProgress": "{total} ਵਿੱਚੋਂ {done} ਬਦਲੇ ਗਏ",
+  "lostWalletStartOver": "ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ",
+  "lostWalletHowToReplace": "ਇਸਨੂੰ ਕਿਵੇਂ ਬਦਲਵਾਉਣਾ ਹੈ",
+  "lifeEventsTitle": "ਜ਼ਿੰਦਗੀ ਦੀਆਂ ਘਟਨਾਵਾਂ",
+  "lifeEventsSubtitle": "ਘਰ ਬਦਲਣਾ, ਨਵਾਂ ਨਾਮ ਜਾਂ ਨਵੀਂ ਕਾਰ? ਦੇਖੋ ਕੀ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ",
+  "lifeEventsIntro": "ਚੁਣੋ ਕਿ ਤੁਹਾਡੀ ਜ਼ਿੰਦਗੀ ਵਿੱਚ ਕੀ ਹੋ ਰਿਹਾ ਹੈ। Vaultara ਤੁਹਾਡੇ ਸੰਭਾਲੇ ਉਹ ਰਿਕਾਰਡ ਦੱਸਦਾ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ ਇਸ ਕਾਰਨ ਆਮ ਤੌਰ ‘ਤੇ ਅੱਪਡੇਟ ਕਰਨਾ ਪੈਂਦਾ ਹੈ।",
+  "lifeEventMoving": "ਮੇਰਾ ਘਰ ਬਦਲ ਰਿਹਾ ਹੈ",
+  "lifeEventMovingBody": "ਇਹਨਾਂ ਉੱਤੇ ਆਮ ਤੌਰ ‘ਤੇ ਤੁਹਾਡਾ ਪਤਾ ਹੁੰਦਾ ਹੈ। ਘਰ ਬਦਲਣ ਤੋਂ ਬਾਅਦ ਹਰ ਇੱਕ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ।",
+  "lifeEventName": "ਮੇਰਾ ਨਾਮ ਬਦਲ ਰਿਹਾ ਹੈ",
+  "lifeEventNameBody": "ਇਹਨਾਂ ਉੱਤੇ ਤੁਹਾਡਾ ਨਾਮ ਹੁੰਦਾ ਹੈ। ਜ਼ਿਆਦਾਤਰ ਨੂੰ ਵਿਆਹ ਜਾਂ ਨਾਮ ਬਦਲਣ ਤੋਂ ਬਾਅਦ ਅੱਪਡੇਟ ਕਰਨਾ ਪੈਂਦਾ ਹੈ।",
+  "lifeEventCar": "ਮੈਂ ਕਾਰ ਖਰੀਦੀ ਜਾਂ ਵੇਚੀ ਹੈ",
+  "lifeEventCarBody": "ਕਾਰ ਲਈ ਇਹਨਾਂ ਨੂੰ ਤਬਦੀਲ ਕਰੋ, ਅੱਪਡੇਟ ਕਰੋ ਜਾਂ ਰੱਦ ਕਰੋ।",
+  "lifeEventJob": "ਮੇਰੀ ਨੌਕਰੀ ਸ਼ੁਰੂ ਹੋ ਰਹੀ ਹੈ ਜਾਂ ਛੁੱਟ ਰਹੀ ਹੈ",
+  "lifeEventJobBody": "ਨੌਕਰੀ ਬਦਲਣ ਵੇਲੇ ਇਹਨਾਂ ਨੂੰ ਵਾਪਸ ਕਰੋ, ਰੱਦ ਕਰੋ ਜਾਂ ਤਬਦੀਲ ਕਰੋ।",
+  "lifeEventCountry": "ਮੇਰਾ ਕਿਸੇ ਹੋਰ ਦੇਸ਼ ਵਿੱਚ ਜਾਣਾ ਤੈਅ ਹੈ",
+  "lifeEventCountryBody": "ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਇੱਕ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਪਹੁੰਚਣ ਤੋਂ ਬਾਅਦ ਦੁਬਾਰਾ ਕਰੋ।",
+  "lifeEventNone": "ਤੁਹਾਡੇ ਸੰਭਾਲੇ ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ‘ਤੇ ਇਸਦਾ ਅਸਰ ਨਹੀਂ ਪੈਂਦਾ।",
+  "lifeEventCount": "{count, plural, one{ਤੁਹਾਡਾ {count} ਰਿਕਾਰਡ} other{ਤੁਹਾਡੇ {count} ਰਿਕਾਰਡ}}",
+  "lifeEventProgress": "{total} ਵਿੱਚੋਂ {done} ਅੱਪਡੇਟ ਹੋਏ",
+  "proofPackTitle": "ਸਬੂਤ ਪੈਕ",
+  "proofPackSubtitle": "ਚੁਣੇ ਹੋਏ ਰਿਕਾਰਡ ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਇੱਕ PDF ਵਿੱਚ ਪਾਓ",
+  "proofPackIntro": "ਉਹ ਰਿਕਾਰਡ ਚੁਣੋ ਜੋ ਕਿਸੇ ਨੇ ਤੁਹਾਡੇ ਤੋਂ ਮੰਗੇ ਹਨ, ਜਿਵੇਂ ਮਾਲਕ, ਦੂਤਾਵਾਸ ਜਾਂ ਬੀਮਾ ਕੰਪਨੀ। Vaultara ਉਹਨਾਂ ਨੂੰ ਇੱਕ PDF ਵਿੱਚ ਪਾ ਦਿੰਦਾ ਹੈ ਜੋ ਤੁਸੀਂ ਈਮੇਲ ਕਰ ਸਕਦੇ ਹੋ ਜਾਂ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹੋ।",
+  "proofPackPhotos": "ਫ਼ੋਟੋਆਂ ਸ਼ਾਮਲ ਕਰੋ",
+  "proofPackCreate": "{count, plural, one{{count} ਰਿਕਾਰਡ ਨਾਲ PDF ਬਣਾਓ} other{{count} ਰਿਕਾਰਡਾਂ ਨਾਲ PDF ਬਣਾਓ}}",
+  "proofPackPickOne": "ਘੱਟੋ-ਘੱਟ ਇੱਕ ਰਿਕਾਰਡ ਚੁਣੋ",
+  "proofPackPrepared": "{date} ਨੂੰ ਤਿਆਰ ਕੀਤਾ ਗਿਆ",
+  "proofPackExpires": "{date} ਨੂੰ ਮਿਆਦ ਖ਼ਤਮ",
+  "proofPackBuilding": "ਤੁਹਾਡਾ PDF ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ",
+  "proofPackError": "PDF ਨਹੀਂ ਬਣਾਇਆ ਜਾ ਸਕਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "proofPackPdfSkipped": "ਇਸ ਰਿਕਾਰਡ ਵਿੱਚ ਇੱਕ PDF ਫ਼ਾਈਲ ਵੀ ਹੈ, ਜੋ ਇੱਥੇ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ।",
+  "smartToolsSection": "ਸਮਾਰਟ ਟੂਲ",
+  "smartInsightExpiredHeading": "ਮਿਆਦ ਪਹਿਲਾਂ ਹੀ ਖਤਮ ਹੋ ਚੁੱਕੀ ਹੈ",
+  "smartInsightExpiredBody": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਗਈ। ਇਸਨੂੰ ਹੁਣੇ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ, ਜਾਂ ਜੇ ਤੁਸੀਂ ਇਸਨੂੰ ਪਹਿਲਾਂ ਹੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰ ਚੁੱਕੇ ਹੋ ਤਾਂ ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ।",
+  "smartInsightExpiresSoonHeading": "ਇਸ ਹਫ਼ਤੇ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ",
+  "smartInsightExpiresTomorrowBody": "{name} ਦੀ ਮਿਆਦ ਕੱਲ੍ਹ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਜੇ ਹੋ ਸਕੇ ਤਾਂ ਇਸਨੂੰ ਅੱਜ ਹੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ।",
+  "smartInsightExpiresSoonBody": "{days, plural, one{{name} ਦੀ ਮਿਆਦ {days} ਦਿਨ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸਨੂੰ ਜਲਦੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ ਤਾਂ ਜੋ ਇਹ ਖਤਮ ਨਾ ਹੋਵੇ।} other{{name} ਦੀ ਮਿਆਦ {days} ਦਿਨਾਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸਨੂੰ ਜਲਦੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰੋ ਤਾਂ ਜੋ ਇਹ ਖਤਮ ਨਾ ਹੋਵੇ।}}",
+  "smartInsightStartRenewingHeading": "ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਸਮਾਂ",
+  "smartInsightStartRenewingBody": "{days, plural, one{ਤੁਸੀਂ {name} ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦੀ ਯੋਜਨਾ ਬਣਾਈ ਸੀ। ਇਸਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ ਹੁਣ ਸਮਾਂ ਆ ਗਿਆ ਹੈ।} other{ਤੁਸੀਂ {name} ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦੀ ਯੋਜਨਾ ਬਣਾਈ ਸੀ। ਇਸਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ ਹੁਣ ਸਮਾਂ ਆ ਗਿਆ ਹੈ।}}",
+  "smartInsightNoReminderHeading": "ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਲਗਾਇਆ",
+  "smartInsightPassportHeading": "ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਬਹੁਤ ਨੇੜੇ ਹੈ",
+  "smartInsightPassportTooShortBody": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਜ਼ਿਆਦਾਤਰ ਦੇਸ਼ ਘੱਟੋ-ਘੱਟ 6 ਮਹੀਨੇ ਬਾਕੀ ਹੋਣ ਦੀ ਮੰਗ ਕਰਦੇ ਹਨ, ਇਸ ਲਈ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਹੁਣ ਇਹ ਯਾਤਰਾ ਲਈ ਮਨਜ਼ੂਰ ਨਾ ਹੋਵੇ।",
+  "smartInsightPassportSoonHeading": "ਪਾਸਪੋਰਟ ਦਾ ਨਵੀਨੀਕਰਨ ਨੇੜੇ ਆ ਰਿਹਾ ਹੈ",
+  "smartInsightPassportSoonBody": "{date} ਤੋਂ {name} ਦੀ ਮਿਆਦ 6 ਮਹੀਨਿਆਂ ਤੋਂ ਘੱਟ ਬਾਕੀ ਰਹਿ ਜਾਵੇਗੀ। ਉਸ ਤੋਂ ਬਾਅਦ ਕਈ ਦੇਸ਼ ਇਸਨੂੰ ਯਾਤਰਾ ਲਈ ਮਨਜ਼ੂਰ ਨਹੀਂ ਕਰਨਗੇ, ਇਸ ਲਈ ਆਪਣੇ ਨਵੀਨੀਕਰਨ ਦੀ ਯੋਜਨਾ ਬਣਾਓ।",
+  "smartInsightTripHeading": "ਤੁਹਾਡੀ ਯਾਤਰਾ ਵੱਲ ਧਿਆਨ ਦੀ ਲੋੜ ਹੈ",
+  "smartInsightTripBody": "{count, plural, one{{trip} {date} ਨੂੰ ਰਵਾਨਾ ਹੁੰਦੀ ਹੈ, ਅਤੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ {count} ਚੀਜ਼ ਠੀਕ ਕਰਨੀ ਹੈ।} other{{trip} {date} ਨੂੰ ਰਵਾਨਾ ਹੁੰਦੀ ਹੈ, ਅਤੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ {count} ਚੀਜ਼ਾਂ ਠੀਕ ਕਰਨੀਆਂ ਹਨ।}}",
+  "smartInsightActionOpenTrip": "ਯਾਤਰਾ ਖੋਲ੍ਹੋ",
+  "smartInsightBusyMonthHeading": "ਆਉਣ ਵਾਲਾ ਮਹੀਨਾ ਰੁਝੇਵਿਆਂ ਭਰਿਆ ਹੈ",
+  "smartInsightBusyMonthBody": "{count, plural, one{{month} ਵਿੱਚ {count} ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸਦੀ ਯੋਜਨਾ ਪਹਿਲਾਂ ਹੀ ਬਣਾਓ।} other{{month} ਵਿੱਚ {count} ਰਿਕਾਰਡਾਂ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਨ੍ਹਾਂ ਦੀ ਯੋਜਨਾ ਇਕੱਠੇ ਬਣਾਓ ਤਾਂ ਜੋ ਕੋਈ ਵੀ ਨਾ ਛੁੱਟੇ।}}",
+  "smartInsightBusyMonthCostBody": "{count, plural, one{{month} ਵਿੱਚ {count} ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ, ਜਿਸਦੇ ਨਵੀਨੀਕਰਨ ਉੱਤੇ ਲਗਭਗ {amount} ਖਰਚ ਆਵੇਗਾ। ਇਸਦੀ ਯੋਜਨਾ ਪਹਿਲਾਂ ਹੀ ਬਣਾਓ।} other{{month} ਵਿੱਚ {count} ਰਿਕਾਰਡਾਂ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ, ਜਿਨ੍ਹਾਂ ਦੇ ਨਵੀਨੀਕਰਨ ਉੱਤੇ ਲਗਭਗ {amount} ਖਰਚ ਆਵੇਗਾ। ਇਨ੍ਹਾਂ ਦੀ ਯੋਜਨਾ ਇਕੱਠੇ ਬਣਾਓ।}}",
+  "smartInsightActionSeeTimeline": "ਟਾਈਮਲਾਈਨ ਵੇਖੋ",
+  "smartInsightMissingRemindersHeading": "ਬਿਨਾਂ ਰਿਮਾਈਂਡਰ ਵਾਲੇ ਰਿਕਾਰਡ",
+  "smartInsightMissingReminderSingleBody": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ ਅਤੇ ਇਸਦਾ ਅਜੇ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ। ਇੱਕ ਜੋੜੋ ਤਾਂ ਜੋ ਇਹ ਤੁਹਾਡੇ ਤੋਂ ਛੁੱਟ ਨਾ ਜਾਵੇ।",
+  "smartInsightMissingRemindersBody": "{count, plural, one{{name} ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ, ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡ ਦਾ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ। ਰਿਮਾਈਂਡਰ ਜੋੜੋ ਤਾਂ ਜੋ ਕੁਝ ਵੀ ਨਾ ਛੁੱਟੇ।} other{{name} ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ, ਆਉਣ ਵਾਲੇ {count} ਰਿਕਾਰਡਾਂ ਦਾ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਹੈ। ਰਿਮਾਈਂਡਰ ਜੋੜੋ ਤਾਂ ਜੋ ਕੁਝ ਵੀ ਨਾ ਛੁੱਟੇ।}}",
+  "smartInsightWalletPhotoHeading": "ਫ਼ੋਟੋ ਸੰਭਾਲੋ",
+  "smartInsightWalletPhotoSingleBody": "{name} ਤੁਹਾਡੇ ਬਟੂਏ ਵਿੱਚ ਹੈ ਪਰ ਇਸਦੀ ਕੋਈ ਫ਼ੋਟੋ ਨਹੀਂ ਹੈ। ਜੇ ਤੁਹਾਡਾ ਬਟੂਆ ਗੁਆਚ ਜਾਵੇ, ਤਾਂ ਫ਼ੋਟੋ ਹੋਣ ਨਾਲ ਇਸਨੂੰ ਬਦਲਵਾਉਣਾ ਬਹੁਤ ਸੌਖਾ ਹੋ ਜਾਂਦਾ ਹੈ।",
+  "smartInsightWalletPhotoBody": "{count, plural, one{{name} ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ, ਤੁਹਾਡੇ ਬਟੂਏ ਦੀ {count} ਚੀਜ਼ ਦੀ ਕੋਈ ਫ਼ੋਟੋ ਨਹੀਂ ਹੈ। ਜੇ ਤੁਹਾਡਾ ਬਟੂਆ ਗੁਆਚ ਜਾਵੇ, ਤਾਂ ਫ਼ੋਟੋਆਂ ਹੋਣ ਨਾਲ ਚੀਜ਼ਾਂ ਬਦਲਵਾਉਣਾ ਬਹੁਤ ਸੌਖਾ ਹੋ ਜਾਂਦਾ ਹੈ।} other{{name} ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ, ਤੁਹਾਡੇ ਬਟੂਏ ਦੀਆਂ {count} ਚੀਜ਼ਾਂ ਦੀ ਕੋਈ ਫ਼ੋਟੋ ਨਹੀਂ ਹੈ। ਜੇ ਤੁਹਾਡਾ ਬਟੂਆ ਗੁਆਚ ਜਾਵੇ, ਤਾਂ ਫ਼ੋਟੋਆਂ ਹੋਣ ਨਾਲ ਚੀਜ਼ਾਂ ਬਦਲਵਾਉਣਾ ਬਹੁਤ ਸੌਖਾ ਹੋ ਜਾਂਦਾ ਹੈ।}}",
+  "smartInsightActionAddPhoto": "ਫ਼ੋਟੋ ਜੋੜੋ",
+  "smartInsightRenewedHeading": "ਬਹੁਤ ਵਧੀਆ",
+  "smartInsightRenewedBody": "ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ {name} ਨਵੀਨੀਕ੍ਰਿਤ ਕੀਤਾ ਹੈ, ਅਤੇ ਹੁਣ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਵੱਲ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ। ਅਗਲਾ {date} ਨੂੰ {next} ਹੈ।",
+  "smartInsightRenewedNoNextBody": "ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ {name} ਨਵੀਨੀਕ੍ਰਿਤ ਕੀਤਾ ਹੈ, ਅਤੇ ਹੁਣ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਵੱਲ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
+  "smartInsightMoreHeading": "ਜਾਂਚਣ ਲਈ ਹੋਰ ਚੀਜ਼ਾਂ",
+  "smartInsightMoreCount": "{count, plural, one{ਇਸ ਤੋਂ ਇਲਾਵਾ {count} ਹੋਰ} other{ਇਸ ਤੋਂ ਇਲਾਵਾ {count} ਹੋਰ}}",
+  "planTabIndividual": "ਵਿਅਕਤੀਗਤ",
+  "planTabBusiness": "ਬਿਜ਼ਨਸ",
+  "planGetPremium": "Premium ਲਓ",
+  "businessPlanBuy": "ਬਿਜ਼ਨਸ ਪਲਾਨ ਲਓ",
+  "businessPlanSwitch": "ਬਿਜ਼ਨਸ ਪਲਾਨ ਉੱਤੇ ਜਾਓ",
+  "planSwitchToYearly": "ਸਾਲਾਨਾ ਉੱਤੇ ਜਾਓ",
+  "planSwitchToMonthly": "ਮਾਸਿਕ ਉੱਤੇ ਜਾਓ",
+  "planTrialDays": "{count, plural, one{{count} ਦਿਨ} other{{count} ਦਿਨ}}",
+  "planTrialMonths": "{count, plural, one{{count} ਮਹੀਨਾ} other{{count} ਮਹੀਨੇ}}",
+  "planTrialCta": "{length} ਮੁਫ਼ਤ ਅਜ਼ਮਾਓ",
+  "planTrialThen": "{length} ਲਈ ਮੁਫ਼ਤ, ਫਿਰ {price}{period}। ਕਦੇ ਵੀ ਰੱਦ ਕਰੋ।",
+  "planTrialNoCharge": "ਹੁਣ ਕੋਈ ਭੁਗਤਾਨ ਨਹੀਂ। ਤੁਹਾਡੀ ਮੁਫ਼ਤ ਅਜ਼ਮਾਇਸ਼ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਵਾਇਆ ਜਾਵੇਗਾ।",
+  "planBilledLine": "{price}{period}। ਕਦੇ ਵੀ ਰੱਦ ਕਰੋ।",
+  "businessBenefitFamily": "ਪਰਿਵਾਰ ਦੀ ਹਰ ਸਹੂਲਤ",
+  "businessBenefitStaffVehicles": "ਸਟਾਫ਼ ਅਤੇ ਵਾਹਨਾਂ ਦੇ ਰਿਕਾਰਡ ਇੱਕ ਥਾਂ ਉੱਤੇ",
+  "businessBenefitPdf": "ਤੁਹਾਡੀ ਕੰਪਨੀ ਦੇ ਨਾਮ ਨਾਲ ਟੀਮ PDF ਐਕਸਪੋਰਟ",
+  "businessMorePeople": "ਹੋਰ ਲੋਕਾਂ ਲਈ ਥਾਂ ਚਾਹੀਦੀ ਹੈ? ਬਿਜ਼ਨਸ ਤੁਹਾਨੂੰ {count} ਤੱਕ ਦਿੰਦਾ ਹੈ।",
+  "businessSeePlan": "ਬਿਜ਼ਨਸ ਪਲਾਨ ਵੇਖੋ",
+  "companyNameTitle": "ਕੰਪਨੀ ਦਾ ਨਾਮ",
+  "companyNameHint": "ਉਦਾਹਰਨ ਲਈ, Bay Couriers",
+  "companyNameHelp": "ਤੁਹਾਡੇ PDF ਐਕਸਪੋਰਟ ਦੇ ਉੱਪਰ ਛਪਦਾ ਹੈ",
+  "companyNameAdd": "ਕੰਪਨੀ ਦਾ ਨਾਮ ਜੋੜੋ",
+  "companyNameSaved": "ਕੰਪਨੀ ਦਾ ਨਾਮ ਸੰਭਾਲਿਆ ਗਿਆ",
+  "scanFoundPassport": "ਪਾਸਪੋਰਟ ਮਿਲਿਆ",
+  "scanFoundIdCard": "ਪਛਾਣ ਕਾਰਡ ਮਿਲਿਆ",
+  "scanFoundLicenceDisc": "ਲਾਇਸੈਂਸ ਡਿਸਕ ਮਿਲੀ",
+  "scanLicenceCardNote": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਕਾਰਡ ਦਾ ਬਾਰਕੋਡ ਲੌਕ ਹੁੰਦਾ ਹੈ, ਇਸ ਲਈ ਅਸੀਂ ਛਪਿਆ ਹੋਇਆ ਟੈਕਸਟ ਪੜ੍ਹਿਆ।",
+  "scanFoundHolder": "ਅਸੀਂ ਧਾਰਕ ਨੂੰ {name} ਸੈੱਟ ਕੀਤਾ ਹੈ।",
+  "scanNamePassport": "ਪਾਸਪੋਰਟ",
+  "scanNameIdCard": "ਪਛਾਣ ਕਾਰਡ",
+  "scanNameLicenceDisc": "ਲਾਇਸੈਂਸ ਡਿਸਕ {plate}",
+  "scanNotesVehicle": "ਵਾਹਨ: {details}",
+  "travelActionAdd": "ਜੋੜੋ",
+  "travelActionUpdateDate": "ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰੋ",
+  "travelCountryLimit": "ਤੁਸੀਂ {count} ਦੇਸ਼ਾਂ ਤੱਕ ਚੁਣ ਸਕਦੇ ਹੋ",
+  "travelCountryNone": "ਤੁਹਾਡੀ ਖੋਜ ਨਾਲ ਕੋਈ ਦੇਸ਼ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ",
+  "travelCountrySearch": "ਦੇਸ਼ ਖੋਜੋ",
+  "travelDestinationChoose": "ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਜਾ ਰਹੇ ਹੋ",
+  "travelDestinationHint": "ਇਸ ਯਾਤਰਾ ਲਈ {count} ਦੇਸ਼ਾਂ ਤੱਕ ਚੁਣੋ",
+  "travelTripNameOptional": "ਯਾਤਰਾ ਦਾ ਨਾਮ (ਵਿਕਲਪਿਕ)",
+  "travelErrorNameOrDestination": "ਮੰਜ਼ਿਲ ਚੁਣੋ ਜਾਂ ਯਾਤਰਾ ਦਾ ਨਾਮ ਦਾਖਲ ਕਰੋ",
+  "travelDetailPassportNeeds": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੋ ਰਹੀ ਹੈ। ਇਸ ਯਾਤਰਾ ਲਈ ਇਸਦਾ {needed} ਤੱਕ ਵੈਧ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ।",
+  "travelReadySchengenUntil": "{date} ਤੱਕ ਖਤਮ ਹੋਣ ਵਾਲੀਆਂ ਸ਼ੈਂਗੇਨ ਖੇਤਰ ਦੀਆਂ ਯਾਤਰਾਵਾਂ ਲਈ ਅਜੇ ਵੀ ਠੀਕ ਹੈ",
+  "travelFixBeforeYouGo": "{count, plural, one{ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਠੀਕ ਕਰਨ ਲਈ {count} ਚੀਜ਼} other{ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਠੀਕ ਕਰਨ ਲਈ {count} ਚੀਜ਼ਾਂ}}",
+  "travelDaysToGo": "{count, plural, one{{count} ਦਿਨ ਬਾਕੀ} other{{count} ਦਿਨ ਬਾਕੀ}}",
+  "travelSectionWho": "ਕੌਣ ਜਾ ਰਿਹਾ ਹੈ",
+  "travelSectionReminders": "ਰਿਮਾਈਂਡਰ",
+  "travelRemindersBody": "Vaultara ਇਨ੍ਹਾਂ ਦਿਨਾਂ ਵਿੱਚ ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਵਾਉਂਦਾ ਹੈ ਅਤੇ ਹਰ ਵਾਰ ਤੁਹਾਡੇ ਦਸਤਾਵੇਜ਼ ਦੁਬਾਰਾ ਜਾਂਚਦਾ ਹੈ।",
+  "travelRemindersPassed": "ਇਸ ਯਾਤਰਾ ਦੇ ਰਿਮਾਈਂਡਰ ਦੇ ਦਿਨ ਲੰਘ ਚੁੱਕੇ ਹਨ।",
+  "travelReminderBefore": "{days, plural, one{ਰਵਾਨਾ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ} other{ਰਵਾਨਾ ਹੋਣ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ}}",
+  "travelStatusReady": "ਤਿਆਰ",
+  "travelStatusToFix": "{count, plural, one{{count} ਠੀਕ ਕਰਨਾ ਹੈ} other{{count} ਠੀਕ ਕਰਨੇ ਹਨ}}",
+  "travelStatusToCheck": "{count, plural, one{{count} ਜਾਂਚਣਾ ਹੈ} other{{count} ਜਾਂਚਣੇ ਹਨ}}",
+  "travelRuleTitle": "ਪਾਸਪੋਰਟ ਦਾ ਨਿਯਮ",
+  "travelRuleSixMonths": "ਵਾਪਸੀ ਤੋਂ 6 ਮਹੀਨੇ ਬਾਅਦ ਤੱਕ ਪਾਸਪੋਰਟ ਵੈਧ",
+  "travelRuleThreeMonths": "ਵਾਪਸੀ ਤੋਂ 3 ਮਹੀਨੇ ਬਾਅਦ ਤੱਕ ਪਾਸਪੋਰਟ ਵੈਧ",
+  "travelRuleThreeMonthsSchengen": "ਸ਼ੈਂਗੇਨ ਖੇਤਰ ਛੱਡਣ ਤੋਂ 3 ਮਹੀਨੇ ਬਾਅਦ ਤੱਕ ਪਾਸਪੋਰਟ ਵੈਧ",
+  "travelRuleWholeTrip": "ਪੂਰੀ ਯਾਤਰਾ ਲਈ ਪਾਸਪੋਰਟ ਵੈਧ",
+  "travelRuleAuto": "ਆਪਣੇ-ਆਪ, ਮੰਜ਼ਿਲ ਦੇ ਆਧਾਰ ਉੱਤੇ",
+  "travelRuleReasonNoDestination": "ਕੋਈ ਮੰਜ਼ਿਲ ਨਹੀਂ ਚੁਣੀ ਗਈ, ਇਸ ਲਈ Vaultara 6 ਮਹੀਨੇ ਵਰਤਦਾ ਹੈ, ਜੋ ਜ਼ਿਆਦਾਤਰ ਦੇਸ਼ ਮੰਨਦੇ ਹਨ।",
+  "travelRuleReasonFrom": "{places} ਦੇ ਆਧਾਰ ਉੱਤੇ।",
+  "travelRuleReasonChosen": "ਤੁਸੀਂ ਇਸ ਯਾਤਰਾ ਲਈ ਇਹ ਨਿਯਮ ਚੁਣਿਆ ਹੈ।",
+  "travelRuleEmbassy": "ਸਫ਼ਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਦੂਤਾਵਾਸ ਦੇ ਨਿਯਮ ਜਾਂਚੋ।",
+  "travelRuleChange": "ਨਿਯਮ ਬਦਲੋ",
+  "travelItemLicence": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਪੈਕ ਕੀਤਾ",
+  "travelItemRoute": "ਤੁਹਾਡੇ ਰਸਤੇ ਦੇ ਹਰ ਦੇਸ਼ ਲਈ ਦਾਖਲੇ ਦੇ ਨਿਯਮ ਜਾਂਚੇ ਗਏ",
+  "travelItemGroupCopies": "ਹਰ ਕਿਸੇ ਦੇ ਪਾਸਪੋਰਟਾਂ ਦੀਆਂ ਕਾਪੀਆਂ ਇੱਕ ਸਾਂਝੀ ਥਾਂ ਉੱਤੇ",
+  "travelItemLongTrip": "ਤੁਹਾਡੇ ਬਾਹਰ ਹੋਣ ਦੌਰਾਨ ਬਿੱਲ, ਡਾਕ ਅਤੇ ਪੌਦਿਆਂ ਦਾ ਪ੍ਰਬੰਧ ਹੋ ਗਿਆ",
+  "tutorialsTravelTitle": "ਯਾਤਰਾ ਜਾਂਚ",
+  "tutorialsTravelSubtitle": "ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਜਾਂਚੋ",
+  "tutorialsSmartToolsTitle": "ਸਮਾਰਟ ਟੂਲ ਵਰਤਣਾ",
+  "tutorialsSmartToolsSubtitle": "ਗੁਆਚਿਆ ਬਟੂਆ, ਜ਼ਿੰਦਗੀ ਦੀਆਂ ਘਟਨਾਵਾਂ, ਸਬੂਤ ਪੈਕ ਅਤੇ ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ",
+  "tutorialsFamilyTitle": "ਪਰਿਵਾਰ ਅਤੇ ਲੋਕ",
+  "tutorialsFamilySubtitle": "ਲੋਕਾਂ ਨੂੰ ਜੋੜੋ ਅਤੇ ਚੁਣੋ ਕਿ ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ",
+  "tutorialsPlansTitle": "ਪਲਾਨ ਚੁਣਨਾ",
+  "tutorialsPlansSubtitle": "ਪਲਾਨ ਅਤੇ ਬਿਲਿੰਗ ਵਿਕਲਪਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ",
+  "tutorialsCompletedLabel": "ਪੂਰਾ ਹੋਇਆ",
+  "tutorialAddRecordMoreDetails": "“ਹੋਰ ਵੇਰਵੇ” ਵਿੱਚ ਵਾਧੂ ਚੀਜ਼ਾਂ ਹਨ: ਨੋਟਸ, ਦੁਹਰਾਓ, ਨਵੀਨੀਕਰਨ ਦਾ ਸਮਾਂ, ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ, ਲੌਕ, ਬਟੂਆ ਅਤੇ ਫ਼ੋਟੋਆਂ। ਇਸਨੂੰ ਉਦੋਂ ਹੀ ਖੋਲ੍ਹੋ ਜਦੋਂ ਲੋੜ ਹੋਵੇ।",
+  "tutorialAddRecordRepeat": "“ਦੁਹਰਾਓ” ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਲਈ ਤਾਰੀਖ ਨੂੰ ਅੱਗੇ ਵਧਾ ਦਿੰਦਾ ਹੈ। “ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਲੱਗਣ ਵਾਲਾ ਸਮਾਂ” Vaultara ਨੂੰ ਦੱਸਦਾ ਹੈ ਕਿ ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਕਿੰਨਾ ਸਮਾਂ ਲੱਗਦਾ ਹੈ, ਤਾਂ ਜੋ ਰਿਮਾਈਂਡਰ ਕਾਫ਼ੀ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੋਣ।",
+  "tutorialAddRecordProtect": "ਕਿਸੇ ਰਿਕਾਰਡ ਨੂੰ ਵਿਖਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਡੀ ਫਿੰਗਰਪ੍ਰਿੰਟ ਜਾਂ ਸਕ੍ਰੀਨ ਲੌਕ ਮੰਗਣ ਲਈ ਉਸਨੂੰ ਲੌਕ ਕਰੋ। ਕਾਰਡਾਂ ਨੂੰ “ਮੇਰੇ ਬਟੂਏ ਵਿੱਚ” ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਕਰੋ, ਅਤੇ ਦਸਤਾਵੇਜ਼ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਜੋੜੋ।",
+  "tutorialTravelReadiness": "ਯਾਤਰਾ ਦੀ ਤਿਆਰੀ Vaultara ਵਿੱਚ ਸੰਭਾਲੇ ਪਾਸਪੋਰਟਾਂ ਅਤੇ ਲਾਇਸੈਂਸਾਂ ਨੂੰ ਤੁਹਾਡੇ ਅਤੇ ਤੁਹਾਡੇ ਵੱਲੋਂ ਸੰਭਾਲੇ ਜਾਂਦੇ ਲੋਕਾਂ ਲਈ ਜਾਂਚਦੀ ਹੈ।",
+  "tutorialTravelLocked": "Premium ਨਾਲ ਤੁਸੀਂ ਯਾਤਰਾਵਾਂ ਦੀ ਯੋਜਨਾ ਬਣਾ ਸਕਦੇ ਹੋ ਅਤੇ ਵੇਖ ਸਕਦੇ ਹੋ ਕਿ ਰਵਾਨਾ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਯਾਤਰੀ ਨੂੰ ਕਿਹੜੇ ਦਸਤਾਵੇਜ਼ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰਨੇ ਹਨ।",
+  "tutorialTravelTripCard": "ਹਰ ਯਾਤਰਾ ਵਿੱਚ ਦਿਖਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਦੋਂ ਰਵਾਨਾ ਹੋ ਰਹੇ ਹੋ ਅਤੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਠੀਕ ਕਰਨਾ ਹੈ। ਖੋਲ੍ਹਣ ਲਈ ਯਾਤਰਾ ਉੱਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialTravelPlanTrip": "ਇਹ ਜੋੜਨ ਲਈ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਜਾ ਰਹੇ ਹੋ, ਕਦੋਂ, ਅਤੇ ਕੌਣ ਸਫ਼ਰ ਕਰ ਰਿਹਾ ਹੈ, “ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾਓ” ਉੱਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialTravelTripDocuments": "ਯਾਤਰਾ ਦੇ ਅੰਦਰ, Vaultara ਹਰ ਯਾਤਰੀ ਦੇ ਰਿਕਾਰਡਾਂ ਨੂੰ ਯਾਤਰਾ ਦੀਆਂ ਤਾਰੀਖਾਂ ਨਾਲ ਮਿਲਾ ਕੇ ਜਾਂਚਦਾ ਹੈ ਅਤੇ ਦੱਸਦਾ ਹੈ ਕਿ ਕੀ ਨਵੀਨੀਕ੍ਰਿਤ ਕਰਨਾ ਹੈ।",
+  "tutorialTravelTripChecklist": "ਯਾਤਰਾ ਲਈ ਇੱਕ ਚੈੱਕਲਿਸਟ ਰੱਖੋ ਅਤੇ ਤਿਆਰੀ ਕਰਦਿਆਂ ਚੀਜ਼ਾਂ ਉੱਤੇ ਨਿਸ਼ਾਨ ਲਗਾਉਂਦੇ ਜਾਓ।",
+  "tutorialSmartLostWallet": "ਬਟੂਆ ਗੁਆਚ ਗਿਆ? “ਮੇਰੇ ਬਟੂਏ ਵਿੱਚ” ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਸਾਰੇ ਰਿਕਾਰਡ ਵੇਖੋ, ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਪਤਾ ਲੱਗੇ ਕਿ ਕੀ ਰੱਦ ਕਰਵਾਉਣਾ ਅਤੇ ਬਦਲਵਾਉਣਾ ਹੈ।",
+  "tutorialSmartLifeEvents": "ਘਰ ਬਦਲ ਰਹੇ ਹੋ, ਨਾਮ ਬਦਲ ਰਹੇ ਹੋ ਜਾਂ ਕਾਰ ਖਰੀਦ ਰਹੇ ਹੋ? “ਜ਼ਿੰਦਗੀ ਦੀਆਂ ਘਟਨਾਵਾਂ” ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਕਿਹੜੇ ਰਿਕਾਰਡ ਅੱਪਡੇਟ ਕਰਨੇ ਹਨ।",
+  "tutorialSmartProofPack": "“ਸਬੂਤ ਪੈਕ” ਤੁਹਾਡੇ ਚੁਣੇ ਹੋਏ ਰਿਕਾਰਡਾਂ ਨੂੰ ਉਨ੍ਹਾਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਸਮੇਤ ਇੱਕ PDF ਵਿੱਚ ਰੱਖਦਾ ਹੈ, ਜੋ ਤੁਸੀਂ ਸਾਂਝਾ ਕਰ ਸਕਦੇ ਹੋ।",
+  "tutorialSmartSharedLinks": "“ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ” ਤੁਹਾਡੇ ਸਾਂਝੇ ਕੀਤੇ ਹਰ ਲਿੰਕ ਦੀ ਸੂਚੀ ਦਿੰਦਾ ਹੈ। ਕਿਸੇ ਵੀ ਸਮੇਂ ਲਿੰਕ ਨੂੰ ਰੋਕੋ ਅਤੇ ਉਹ ਹੋਰ ਨਹੀਂ ਖੁੱਲ੍ਹੇਗਾ।",
+  "tutorialFamilyMe": "ਇਹ ਤੁਸੀਂ ਹੋ। ਕੋਈ ਵੀ ਰਿਕਾਰਡ ਜੋ ਕਿਸੇ ਹੋਰ ਦਾ ਨਹੀਂ ਹੈ, ਤੁਹਾਡੇ ਕੋਲ ਹੀ ਰਹਿੰਦਾ ਹੈ।",
+  "tutorialFamilyAddPerson": "ਕਿਸੇ ਅਜਿਹੇ ਨੂੰ ਜੋੜਨ ਲਈ ਜਿਸਦੀ ਤੁਸੀਂ ਦੇਖਭਾਲ ਕਰਦੇ ਹੋ, ਜਿਵੇਂ ਸਾਥੀ, ਬੱਚਾ ਜਾਂ ਮਾਤਾ-ਪਿਤਾ, “ਵਿਅਕਤੀ ਜੋੜੋ” ਉੱਤੇ ਟੈਪ ਕਰੋ।",
+  "tutorialFamilyAddPersonLocked": "ਪਰਿਵਾਰ ਜਾਂ ਬਿਜ਼ਨਸ ਪਲਾਨ ਨਾਲ ਤੁਸੀਂ ਉਹ ਲੋਕ ਜੋੜ ਸਕਦੇ ਹੋ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਦੇਖਭਾਲ ਕਰਦੇ ਹੋ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਰਿਕਾਰਡ ਵੀ ਇੱਥੇ ਰੱਖ ਸਕਦੇ ਹੋ।",
+  "tutorialFamilyRecordPerson": "ਜਦੋਂ ਤੁਸੀਂ ਕੋਈ ਰਿਕਾਰਡ ਜੋੜਦੇ ਜਾਂ ਸੋਧਦੇ ਹੋ, “ਹੋਰ ਵੇਰਵੇ” ਖੋਲ੍ਹੋ ਅਤੇ ਚੁਣੋ ਕਿ ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ। ਫਿਰ ਉਨ੍ਹਾਂ ਦਾ ਨਾਮ ਰਿਕਾਰਡ ਅਤੇ ਉਸਦੇ ਰਿਮਾਈਂਡਰਾਂ ਉੱਤੇ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।",
+  "tutorialPlansTabs": "ਹਰ ਪਲਾਨ ਵਿੱਚ ਕੀ ਸ਼ਾਮਲ ਹੈ ਇਹ ਵੇਖਣ ਲਈ ਵਿਅਕਤੀਗਤ, ਪਰਿਵਾਰ ਅਤੇ ਬਿਜ਼ਨਸ ਵਿਚਕਾਰ ਬਦਲੋ।",
+  "tutorialPlansBilling": "ਮਾਸਿਕ ਜਾਂ ਸਾਲਾਨਾ ਭੁਗਤਾਨ ਕਰਨਾ ਚੁਣੋ। ਸਾਲਾਨਾ ਭੁਗਤਾਨ ਕਰਨ ਨਾਲ ਆਮ ਤੌਰ ਉੱਤੇ ਘੱਟ ਖਰਚ ਆਉਂਦਾ ਹੈ।",
+  "calendarLinkTitle": "ਕੈਲੰਡਰ ਲਿੰਕ",
+  "calendarLinkTileSubtitle": "ਆਪਣੀਆਂ ਮਿਆਦ ਦੀਆਂ ਤਾਰੀਖਾਂ ਕੈਲੰਡਰ ਵਿੱਚ ਅੱਪ ਟੂ ਡੇਟ ਰੱਖੋ",
+  "calendarLinkIntro": "Google Calendar, Apple Calendar ਜਾਂ Outlook ਵਿੱਚ ਇੱਕ ਵਾਰ ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ, ਫਿਰ ਤੁਹਾਡੀਆਂ ਮਿਆਦ ਦੀਆਂ ਤਾਰੀਖਾਂ ਆਪਣੇ ਆਪ ਅੱਪ ਟੂ ਡੇਟ ਰਹਿਣਗੀਆਂ।",
+  "calendarLinkPrivacy": "ਨੋਟਸ ਕਦੇ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦੇ ਅਤੇ ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡ ਬਿਨਾਂ ਨਾਮ ਦੇ ਦਿਖਦੇ ਹਨ। ਲਿੰਕ ਵਾਲਾ ਕੋਈ ਵੀ ਤੁਹਾਡੀਆਂ ਤਾਰੀਖਾਂ ਦੇਖ ਸਕਦਾ ਹੈ, ਇਸ ਲਈ ਇਸਨੂੰ ਨਿੱਜੀ ਰੱਖੋ।",
+  "calendarLinkCreate": "ਲਿੰਕ ਬਣਾਓ",
+  "calendarLinkCreating": "ਤੁਹਾਡਾ ਲਿੰਕ ਬਣ ਰਿਹਾ ਹੈ",
+  "calendarLinkOn": "ਤੁਹਾਡਾ ਕੈਲੰਡਰ ਲਿੰਕ ਚਾਲੂ ਹੈ",
+  "calendarLinkCreatedOn": "ਬਣਾਇਆ ਗਿਆ: {date}",
+  "calendarLinkLastChecked": "ਕੈਲੰਡਰ ਨੇ ਆਖਰੀ ਵਾਰ ਦੇਖਿਆ: {date}",
+  "calendarLinkNotChecked": "ਹੁਣ ਤੱਕ ਕਿਸੇ ਕੈਲੰਡਰ ਨੇ ਇਸਨੂੰ ਨਹੀਂ ਦੇਖਿਆ",
+  "calendarLinkAddGoogle": "Google Calendar ਵਿੱਚ ਜੋੜੋ",
+  "calendarLinkAddApple": "Apple ਜਾਂ Outlook ਵਿੱਚ ਜੋੜੋ",
+  "calendarLinkCopy": "ਲਿੰਕ ਕਾਪੀ ਕਰੋ",
+  "calendarLinkCopied": "ਲਿੰਕ ਕਾਪੀ ਹੋ ਗਿਆ",
+  "calendarLinkRotate": "ਨਵਾਂ ਲਿੰਕ ਬਣਾਓ",
+  "calendarLinkRotateTitle": "ਨਵਾਂ ਲਿੰਕ ਬਣਾਉਣਾ ਹੈ?",
+  "calendarLinkRotateBody": "ਤੁਹਾਡਾ ਪੁਰਾਣਾ ਲਿੰਕ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦੇਵੇਗਾ। ਇਸਨੂੰ ਵਰਤਣ ਵਾਲੇ ਕੈਲੰਡਰ ਉਦੋਂ ਤੱਕ ਅੱਪਡੇਟ ਹੋਣੇ ਬੰਦ ਰਹਿਣਗੇ ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਨਵਾਂ ਲਿੰਕ ਨਹੀਂ ਜੋੜਦੇ।",
+  "calendarLinkRotated": "ਨਵਾਂ ਲਿੰਕ ਤਿਆਰ ਹੈ। ਇਸਨੂੰ ਆਪਣੇ ਕੈਲੰਡਰ ਵਿੱਚ ਦੁਬਾਰਾ ਜੋੜੋ।",
+  "calendarLinkTurnOff": "ਬੰਦ ਕਰੋ",
+  "calendarLinkTurnOffTitle": "ਆਪਣਾ ਕੈਲੰਡਰ ਲਿੰਕ ਬੰਦ ਕਰਨਾ ਹੈ?",
+  "calendarLinkTurnOffBody": "ਇਸ ਲਿੰਕ ਨੂੰ ਵਰਤਣ ਵਾਲੇ ਕੈਲੰਡਰ ਅੱਪਡੇਟ ਹੋਣੇ ਬੰਦ ਹੋ ਜਾਣਗੇ। ਤੁਹਾਡਾ ਕੈਲੰਡਰ ਉਹ ਤਾਰੀਖਾਂ ਹਟਾ ਸਕਦਾ ਹੈ ਜੋ ਉਹ ਪਹਿਲਾਂ ਹੀ ਦਿਖਾ ਰਿਹਾ ਹੈ।",
+  "calendarLinkTurnedOff": "ਕੈਲੰਡਰ ਲਿੰਕ ਬੰਦ ਹੋ ਗਿਆ",
+  "calendarLinkOtherDevice": "ਇਹ ਲਿੰਕ ਕਿਸੇ ਹੋਰ ਡਿਵਾਈਸ ਉੱਤੇ ਬਣਾਇਆ ਗਿਆ ਸੀ। ਇੱਥੋਂ ਇਸਨੂੰ ਕੈਲੰਡਰ ਵਿੱਚ ਜੋੜਨ ਲਈ ਨਵਾਂ ਲਿੰਕ ਬਣਾਓ।",
+  "calendarLinkRefreshNote": "ਕੈਲੰਡਰ ਆਪਣੇ ਸਮੇਂ ਅਨੁਸਾਰ ਬਦਲਾਅ ਜਾਂਚਦੇ ਹਨ, ਆਮ ਤੌਰ ਉੱਤੇ ਹਰ ਕੁਝ ਘੰਟਿਆਂ ਬਾਅਦ।",
+  "calendarLinkOpenFailed": "ਕੋਈ ਵੀ ਐਪ ਲਿੰਕ ਨਹੀਂ ਖੋਲ੍ਹ ਸਕੀ। ਇਸਨੂੰ ਕਾਪੀ ਕਰੋ ਅਤੇ ਆਪਣੀ ਕੈਲੰਡਰ ਐਪ ਵਿੱਚ ਜੋੜੋ।",
+  "calendarLinkError": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "calendarLinkTryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "calendarLinkPremiumTitle": "ਲਾਈਵ ਕੈਲੰਡਰ ਲਿੰਕ ਇੱਕ ਪ੍ਰੀਮੀਅਮ ਸਹੂਲਤ ਹੈ",
+  "calendarLinkPremiumBody": "ਹਰ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਹਮੇਸ਼ਾ ਅੱਪ ਟੂ ਡੇਟ ਆਪਣੇ ਕੈਲੰਡਰ ਵਿੱਚ ਦੇਖਣ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
+  "notificationsEmailSection": "ਈਮੇਲ",
+  "monthlySummaryTitle": "ਮਹੀਨਾਵਾਰ ਈਮੇਲ ਸਾਰ",
+  "monthlySummarySubtitle": "ਹਰ ਮਹੀਨੇ ਦੀ 1 ਤਾਰੀਖ ਨੂੰ ਈਮੇਲ ਰਾਹੀਂ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ",
+  "monthlySummaryContents": "ਇਸ ਵਿੱਚ ਇਸ ਮਹੀਨੇ ਅਤੇ ਅਗਲੇ ਮਹੀਨੇ ਕੀ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ, ਕੀ ਪਹਿਲਾਂ ਹੀ ਖਤਮ ਹੋ ਚੁੱਕਾ ਹੈ ਅਤੇ ਅਗਲੇ 3 ਮਹੀਨਿਆਂ ਦੀ ਨਵਿਆਉਣ ਦੀ ਲਾਗਤ ਦੱਸੀ ਜਾਂਦੀ ਹੈ। ਨੋਟਸ ਕਦੇ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦੇ।",
+  "monthlySummarySendSample": "ਹੁਣੇ ਮੈਨੂੰ ਨਮੂਨਾ ਭੇਜੋ",
+  "monthlySummarySampleTo": "ਅਸੀਂ ਇਸਨੂੰ {email} ਉੱਤੇ ਭੇਜਦੇ ਹਾਂ",
+  "monthlySummarySending": "ਤੁਹਾਡਾ ਨਮੂਨਾ ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ",
+  "monthlySummarySampleSent": "ਨਮੂਨਾ {email} ਉੱਤੇ ਭੇਜ ਦਿੱਤਾ ਗਿਆ",
+  "monthlySummarySampleLimit": "ਤੁਸੀਂ ਇੱਕ ਦਿਨ ਵਿੱਚ 3 ਨਮੂਨੇ ਭੇਜ ਸਕਦੇ ਹੋ। ਕਿਰਪਾ ਕਰਕੇ ਕੱਲ੍ਹ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "monthlySummarySampleError": "ਨਮੂਨਾ ਨਹੀਂ ਭੇਜਿਆ ਜਾ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "monthlySummarySaveError": "ਸਾਰ ਦੀ ਸੈਟਿੰਗ ਨਹੀਂ ਬਦਲੀ ਜਾ ਸਕੀ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "monthlySummaryTurnedOn": "ਮਹੀਨਾਵਾਰ ਸਾਰ ਚਾਲੂ ਹੈ। ਅਗਲਾ 1 ਤਾਰੀਖ ਨੂੰ ਆਵੇਗਾ।",
+  "csvImportTileTitle": "ਸਪ੍ਰੈੱਡਸ਼ੀਟ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ",
+  "csvImportTileSubtitle": "CSV ਫ਼ਾਈਲ ਤੋਂ ਇੱਕੋ ਵਾਰ ਵਿੱਚ ਕਈ ਰਿਕਾਰਡ ਜੋੜੋ",
+  "csvImportTitle": "ਸਪ੍ਰੈੱਡਸ਼ੀਟ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ",
+  "csvImportIntroLine1": "Excel, Google Sheets ਜਾਂ Numbers ਤੋਂ ਰਿਕਾਰਡ ਲਿਆਓ। ਪਹਿਲਾਂ ਆਪਣੀ ਸ਼ੀਟ ਨੂੰ CSV ਫ਼ਾਈਲ ਵਜੋਂ ਸੰਭਾਲੋ।",
+  "csvImportIntroLine2": "ਕੁਝ ਵੀ ਜੁੜਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਹਰ ਕਤਾਰ ਦੇਖ ਸਕੋਗੇ ਅਤੇ ਲੋੜ ਹੋਵੇ ਤਾਂ ਠੀਕ ਕਰ ਸਕੋਗੇ।",
+  "csvImportChooseFile": "ਫ਼ਾਈਲ ਚੁਣੋ",
+  "csvImportGetTemplate": "ਟੈਂਪਲੇਟ ਲਵੋ",
+  "csvImportColumnsTitle": "ਵਰਤੇ ਜਾ ਸਕਣ ਵਾਲੇ ਕਾਲਮ",
+  "csvImportColumnsHint": "ਸਿਰਫ਼ ਨਾਮ ਅਤੇ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਜ਼ਰੂਰੀ ਹਨ। ਕਾਲਮਾਂ ਦੀ ਤਰਤੀਬ ਮਾਇਨੇ ਨਹੀਂ ਰੱਖਦੀ।",
+  "csvImportErrorRead": "ਅਸੀਂ ਉਹ ਫ਼ਾਈਲ ਨਹੀਂ ਪੜ੍ਹ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "csvImportErrorEmpty": "ਉਸ ਫ਼ਾਈਲ ਵਿੱਚ ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਕੋਈ ਕਤਾਰ ਨਹੀਂ ਹੈ।",
+  "csvImportErrorNotCsv": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਸ਼ੀਟ ਨੂੰ CSV ਫ਼ਾਈਲ ਵਜੋਂ ਸੰਭਾਲੋ, ਫਿਰ ਉਹ ਫ਼ਾਈਲ ਚੁਣੋ।",
+  "csvImportErrorTooBig": "ਉਹ ਫ਼ਾਈਲ ਬਹੁਤ ਵੱਡੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਛੋਟੀਆਂ ਫ਼ਾਈਲਾਂ ਵਿੱਚ ਵੰਡੋ।",
+  "csvImportTemplateError": "ਅਸੀਂ ਟੈਂਪਲੇਟ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "csvImportTemplateExampleOne": "ਮੇਰਾ ਪਾਸਪੋਰਟ",
+  "csvImportTemplateExampleTwo": "ਕਾਰ ਬੀਮਾ",
+  "csvImportTemplateNote": "ਹਰ ਸਾਲ ਭਰਿਆ ਜਾਂਦਾ ਹੈ",
+  "csvImportFieldName": "ਨਾਮ",
+  "csvImportFieldPerson": "ਵਿਅਕਤੀ",
+  "csvImportFieldCost": "ਲਾਗਤ",
+  "csvImportFieldCurrency": "ਮੁਦਰਾ",
+  "csvImportFieldReminder": "ਰਿਮਾਈਂਡਰ ਦੇ ਦਿਨ",
+  "csvImportMapTitle": "ਆਪਣੇ ਕਾਲਮ ਮਿਲਾਓ",
+  "csvImportMapIntro": "ਅਸੀਂ ਜਿੰਨਾ ਹੋ ਸਕਿਆ ਮਿਲਾ ਦਿੱਤਾ ਹੈ। ਹਰ ਖੇਤਰ ਜਾਂਚੋ ਅਤੇ ਜੋ ਗਲਤ ਲੱਗੇ ਉਸਨੂੰ ਬਦਲੋ।",
+  "csvImportHasHeader": "ਪਹਿਲੀ ਕਤਾਰ ਵਿੱਚ ਕਾਲਮਾਂ ਦੇ ਨਾਮ ਹਨ",
+  "csvImportNotInFile": "ਮੇਰੀ ਫ਼ਾਈਲ ਵਿੱਚ ਨਹੀਂ ਹੈ",
+  "csvImportColumnNumber": "ਕਾਲਮ {number}",
+  "csvImportExample": "ਉਦਾਹਰਨ: {value}",
+  "csvImportRequired": "ਲੋੜੀਂਦਾ",
+  "csvImportMapNeedRequired": "ਅੱਗੇ ਵਧਣ ਲਈ ਨਾਮ ਅਤੇ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਦੇ ਕਾਲਮ ਚੁਣੋ।",
+  "csvImportContinue": "ਅੱਗੇ ਵਧੋ",
+  "csvImportPreviewTitle": "ਆਪਣੇ ਰਿਕਾਰਡ ਜਾਂਚੋ",
+  "csvImportRowsCount": "{count, plural, one{{count} ਕਤਾਰ} other{{count} ਕਤਾਰਾਂ}}",
+  "csvImportReadyCount": "{count} ਤਿਆਰ",
+  "csvImportSkippedCount": "{count} ਛੱਡੀਆਂ ਗਈਆਂ",
+  "csvImportNeedsCategoryCount": "{count, plural, one{{count} ਨੂੰ ਸ਼੍ਰੇਣੀ ਚਾਹੀਦੀ ਹੈ} other{{count} ਨੂੰ ਸ਼੍ਰੇਣੀ ਚਾਹੀਦੀ ਹੈ}}",
+  "csvImportDateOrderTitle": "ਤੁਹਾਡੀਆਂ ਤਾਰੀਖਾਂ ਕਿਵੇਂ ਲਿਖੀਆਂ ਹਨ?",
+  "csvImportDateOrderAmbiguous": "ਕੁਝ ਤਾਰੀਖਾਂ, ਜਿਵੇਂ 03/04/2027, ਦੋ ਤਰੀਕਿਆਂ ਨਾਲ ਪੜ੍ਹੀਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ। ਉਹ ਚੁਣੋ ਜੋ ਤੁਹਾਡੀ ਸ਼ੀਟ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੋਵੇ।",
+  "csvImportDayFirst": "ਪਹਿਲਾਂ ਦਿਨ (31/12)",
+  "csvImportMonthFirst": "ਪਹਿਲਾਂ ਮਹੀਨਾ (12/31)",
+  "csvImportFallbackTitle": "{count, plural, one{{count} ਕਤਾਰ ਕਿਸੇ ਸ਼੍ਰੇਣੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ} other{{count} ਕਤਾਰਾਂ ਕਿਸੇ ਸ਼੍ਰੇਣੀ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀਆਂ}}",
+  "csvImportFallbackHint": "ਚੁਣੋ ਕਿ ਇਨ੍ਹਾਂ ਨੂੰ ਕਿੱਥੇ ਰੱਖਣਾ ਹੈ। ਖਾਲੀ ਛੱਡਣ ਉੱਤੇ ਇਹ ਛੱਡ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ।",
+  "csvImportFallbackSkip": "ਇਹ ਕਤਾਰਾਂ ਛੱਡੋ",
+  "csvImportDefaultReminderTitle": "ਬਿਨਾਂ ਰਿਮਾਈਂਡਰ ਵਾਲੀਆਂ ਕਤਾਰਾਂ ਲਈ ਰਿਮਾਈਂਡਰ",
+  "csvImportFilterAll": "ਸਭ",
+  "csvImportFilterReady": "ਤਿਆਰ",
+  "csvImportFilterSkipped": "ਛੱਡੀਆਂ ਗਈਆਂ",
+  "csvImportCapped": "ਸਿਰਫ਼ ਪਹਿਲੀਆਂ {count} ਕਤਾਰਾਂ ਵਰਤੀਆਂ ਗਈਆਂ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਵੱਡੀਆਂ ਫ਼ਾਈਲਾਂ ਨੂੰ ਹਿੱਸਿਆਂ ਵਿੱਚ ਵੰਡੋ।",
+  "csvImportRowLine": "ਕਤਾਰ {line}",
+  "csvImportReasonNoName": "ਛੱਡੀ ਗਈ: ਨਾਮ ਨਹੀਂ ਹੈ",
+  "csvImportReasonNoDate": "ਛੱਡੀ ਗਈ: ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨਹੀਂ ਹੈ",
+  "csvImportReasonBadDate": "ਛੱਡੀ ਗਈ: ਅਸੀਂ ਤਾਰੀਖ \"{value}\" ਨਹੀਂ ਪੜ੍ਹ ਸਕੇ",
+  "csvImportReasonDuplicate": "ਛੱਡੀ ਗਈ: ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਹੈ",
+  "csvImportReasonDuplicateInFile": "ਛੱਡੀ ਗਈ: ਪਹਿਲਾਂ ਵਾਲੀ ਕਿਸੇ ਕਤਾਰ ਵਰਗੀ ਹੀ ਹੈ",
+  "csvImportReasonNoCategory": "ਅਜੇ ਤੱਕ ਕੋਈ ਮਿਲਦੀ ਸ਼੍ਰੇਣੀ ਨਹੀਂ ਹੈ",
+  "csvImportNotePersonNotFound": "{name} ਨਾਮ ਦਾ ਕੋਈ ਵਿਅਕਤੀ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਇਸਨੂੰ ਖਾਲੀ ਛੱਡਿਆ ਗਿਆ",
+  "csvImportNoteReminderAdjusted": "ਮੁਫ਼ਤ ਪਲਾਨ ਵਾਂਗ ਰਿਮਾਈਂਡਰ {days} ਦਿਨ ਪਹਿਲਾਂ ਦਾ ਰੱਖਿਆ ਗਿਆ",
+  "csvImportNoteNewGroup": "ਨਵਾਂ ਗਰੁੱਪ: {name}",
+  "csvImportNoteGroupNotFound": "{name} ਨਾਮ ਦਾ ਕੋਈ ਗਰੁੱਪ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਇੱਕ ਚੁਣ ਦਿੱਤਾ",
+  "csvImportNoteBadCost": "ਅਸੀਂ ਲਾਗਤ \"{value}\" ਨਹੀਂ ਪੜ੍ਹ ਸਕੇ",
+  "csvImportNoName": "ਕੋਈ ਨਾਮ ਨਹੀਂ",
+  "csvImportLimitNote": "{count, plural, one{ਤੁਹਾਡੇ ਮੁਫ਼ਤ ਪਲਾਨ ਵਿੱਚ ਹੋਰ {count} ਰਿਕਾਰਡ ਲਈ ਥਾਂ ਹੈ।} other{ਤੁਹਾਡੇ ਮੁਫ਼ਤ ਪਲਾਨ ਵਿੱਚ ਹੋਰ {count} ਰਿਕਾਰਡਾਂ ਲਈ ਥਾਂ ਹੈ।}}",
+  "csvImportLimitFull": "ਤੁਹਾਡਾ ਮੁਫ਼ਤ ਪਲਾਨ ਭਰ ਗਿਆ ਹੈ। ਹੋਰ ਰਿਕਾਰਡ ਜੋੜਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
+  "csvImportSeePlans": "ਪਲਾਨ ਦੇਖੋ",
+  "csvImportButton": "{count, plural, one{{count} ਰਿਕਾਰਡ ਇੰਪੋਰਟ ਕਰੋ} other{{count} ਰਿਕਾਰਡ ਇੰਪੋਰਟ ਕਰੋ}}",
+  "csvImportNothingReady": "ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ",
+  "csvImportProgress": "{total} ਵਿੱਚੋਂ {done} ਜੋੜੇ ਜਾ ਰਹੇ ਹਨ",
+  "csvImportKeepOpen": "ਕਿਰਪਾ ਕਰਕੇ ਪੂਰਾ ਹੋਣ ਤੱਕ ਇਹ ਸਕ੍ਰੀਨ ਖੁੱਲ੍ਹੀ ਰੱਖੋ।",
+  "csvImportDoneTitle": "ਇੰਪੋਰਟ ਪੂਰਾ ਹੋਇਆ",
+  "csvImportDoneImported": "{count, plural, one{{count} ਰਿਕਾਰਡ ਇੰਪੋਰਟ ਹੋਇਆ} other{{count} ਰਿਕਾਰਡ ਇੰਪੋਰਟ ਹੋਏ}}",
+  "csvImportDoneSkipped": "{count, plural, one{{count} ਕਤਾਰ ਛੱਡੀ ਗਈ} other{{count} ਕਤਾਰਾਂ ਛੱਡੀਆਂ ਗਈਆਂ}}",
+  "csvImportDoneLimit": "ਤੁਹਾਡਾ ਪਲਾਨ ਭਰ ਜਾਣ ਕਾਰਨ ਕੁਝ ਕਤਾਰਾਂ ਨਹੀਂ ਜੋੜੀਆਂ ਗਈਆਂ।",
+  "csvImportDone": "ਹੋ ਗਿਆ",
+  "photoLockTitle": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ",
+  "photoLockTileOn": "ਚਾਲੂ। ਸਿਰਫ਼ ਤੁਸੀਂ ਆਪਣੀਆਂ ਫ਼ੋਟੋਆਂ ਦੇਖ ਸਕਦੇ ਹੋ।",
+  "photoLockTileOff": "ਬੰਦ। ਆਪਣੀਆਂ ਫ਼ੋਟੋਆਂ ਨੂੰ ਅਜਿਹੀ ਕੁੰਜੀ ਨਾਲ ਲਾਕ ਕਰੋ ਜੋ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਕੋਲ ਹੋਵੇ।",
+  "photoLockTileLocked": "ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਆਪਣੀਆਂ ਫ਼ੋਟੋਆਂ ਦੇਖਣ ਲਈ ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ।",
+  "photoLockIntro": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਅਤੇ PDF ਅੱਪਲੋਡ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਡੇ ਫ਼ੋਨ ਉੱਤੇ ਹੀ ਲਾਕ ਹੋ ਜਾਂਦੀਆਂ ਹਨ। ਇਨ੍ਹਾਂ ਨੂੰ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਫ਼ੋਨ ਅਨਲਾਕ ਕਰ ਸਕਦੇ ਹਨ।",
+  "photoLockPointPrivate": "Vaultara ਅਤੇ Google ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਨਹੀਂ ਦੇਖ ਸਕਦੇ।",
+  "photoLockPointRecovery": "ਜੇ ਤੁਹਾਡਾ ਫ਼ੋਨ ਅਤੇ ਰਿਕਵਰੀ ਕੁੰਜੀ ਦੋਵੇਂ ਗੁਆਚ ਜਾਣ, ਤਾਂ ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਵਾਪਸ ਨਹੀਂ ਮਿਲ ਸਕਦੀਆਂ। ਕੋਈ ਵੀ ਤੁਹਾਡੇ ਲਈ ਕੁੰਜੀ ਰੀਸੈੱਟ ਨਹੀਂ ਕਰ ਸਕਦਾ।",
+  "photoLockPointShare": "ਸਾਂਝੇ ਕਰਨ ਵਾਲੇ ਲਿੰਕ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਨਹੀਂ ਦਿਖਾ ਸਕਦੇ। ਤੁਸੀਂ ਫਿਰ ਵੀ ਰਿਕਾਰਡ ਦੇ ਵੇਰਵੇ ਸਾਂਝੇ ਕਰ ਸਕਦੇ ਹੋ।",
+  "photoLockPointProofPack": "ਜਦੋਂ ਤੁਸੀਂ ਫ਼ੋਨ ਉੱਤੇ ਪ੍ਰੂਫ਼ ਪੈਕ ਬਣਾਉਂਦੇ ਹੋ, ਤਾਂ ਉਨ੍ਹਾਂ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਫਿਰ ਵੀ ਸ਼ਾਮਲ ਹੁੰਦੀਆਂ ਹਨ।",
+  "photoLockTurnOn": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਕਰੋ",
+  "photoLockStatusOn": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਹਨ",
+  "photoLockStatusOnBody": "ਨਵੀਆਂ ਫ਼ੋਟੋਆਂ ਅੱਪਲੋਡ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਐਨਕ੍ਰਿਪਟ ਹੁੰਦੀਆਂ ਹਨ।",
+  "photoLockPendingTitle": "{count, plural, one{{count} ਫ਼ੋਟੋ ਅਜੇ ਐਨਕ੍ਰਿਪਟ ਨਹੀਂ ਹੋਈ} other{{count} ਫ਼ੋਟੋਆਂ ਅਜੇ ਐਨਕ੍ਰਿਪਟ ਨਹੀਂ ਹੋਈਆਂ}}",
+  "photoLockPendingBody": "ਇਸਨੂੰ ਚਾਲੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਜੋ ਫ਼ੋਟੋਆਂ ਜੋੜੀਆਂ ਸਨ, ਉਹ ਅਜੇ ਆਮ ਤਰੀਕੇ ਨਾਲ ਰੱਖੀਆਂ ਹੋਈਆਂ ਹਨ।",
+  "photoLockEncryptExisting": "ਮੇਰੀਆਂ ਮੌਜੂਦਾ ਫ਼ੋਟੋਆਂ ਐਨਕ੍ਰਿਪਟ ਕਰੋ",
+  "photoLockKeepOpen": "ਇਹ ਪੂਰਾ ਹੋਣ ਤੱਕ Vaultara ਖੁੱਲ੍ਹੀ ਰੱਖੋ।",
+  "photoLockProgress": "{total} ਵਿੱਚੋਂ {done}",
+  "photoLockEncrypting": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਐਨਕ੍ਰਿਪਟ ਹੋ ਰਹੀਆਂ ਹਨ",
+  "photoLockDecrypting": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਡੀਕ੍ਰਿਪਟ ਹੋ ਰਹੀਆਂ ਹਨ",
+  "photoLockEncryptDone": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਐਨਕ੍ਰਿਪਟ ਹੋ ਗਈਆਂ ਹਨ।",
+  "photoLockSomeFailed": "ਕੁਝ ਫ਼ੋਟੋਆਂ ਬਦਲੀਆਂ ਨਹੀਂ ਜਾ ਸਕੀਆਂ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockTurnOff": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਬੰਦ ਕਰੋ",
+  "photoLockTurnOffTitle": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਬੰਦ ਕਰਨੀਆਂ ਹਨ?",
+  "photoLockTurnOffBody": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਡੀਕ੍ਰਿਪਟ ਹੋ ਕੇ ਦੁਬਾਰਾ ਆਮ ਤਰੀਕੇ ਨਾਲ ਰੱਖੀਆਂ ਜਾਣਗੀਆਂ, ਅਤੇ ਤੁਹਾਡੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦੇਵੇਗੀ। ਇਹ ਪੂਰਾ ਹੋਣ ਤੱਕ Vaultara ਖੁੱਲ੍ਹੀ ਰੱਖੋ।",
+  "photoLockTurnOffAction": "ਬੰਦ ਕਰੋ",
+  "photoLockTurnedOff": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਬੰਦ ਹਨ।",
+  "photoLockTurnedOn": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਹਨ।",
+  "photoLockLockedTitle": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਲਾਕ ਹਨ",
+  "photoLockLockedBody": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਹੋਈਆਂ ਹਨ। ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਦੇਖਣ ਲਈ ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ।",
+  "photoLockAddLockedBody": "ਪਹਿਲਾਂ ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ, ਤਾਂ ਜੋ ਤੁਹਾਡੀਆਂ ਨਵੀਆਂ ਫ਼ੋਟੋਆਂ ਵੀ ਐਨਕ੍ਰਿਪਟ ਹੋ ਸਕਣ।",
+  "photoLockEnterKey": "ਰਿਕਵਰੀ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ",
+  "photoLockCheckFailed": "ਅਸੀਂ ਹੁਣ ਤੁਹਾਡੀਆਂ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕਰ ਸਕੇ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockRetry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "photoLockKeyTitle": "ਤੁਹਾਡੀ ਰਿਕਵਰੀ ਕੁੰਜੀ",
+  "photoLockSaveStep": "ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਸੰਭਾਲੋ",
+  "photoLockKeyBody": "ਇਹ ਕੁੰਜੀ ਨਵੇਂ ਫ਼ੋਨ ਉੱਤੇ ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਅਨਲਾਕ ਕਰਦੀ ਹੈ। ਇਸਨੂੰ ਲਿਖ ਲਓ ਜਾਂ ਪਾਸਵਰਡ ਮੈਨੇਜਰ ਵਿੱਚ ਸੰਭਾਲ ਲਓ। ਅਸੀਂ ਇਸਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਦਿਖਾਵਾਂਗੇ।",
+  "photoLockKeyWarning": "ਇਸ ਕੁੰਜੀ ਨੂੰ ਨਿੱਜੀ ਰੱਖੋ। ਅਸੀਂ ਇਸਨੂੰ ਦੁਬਾਰਾ ਨਹੀਂ ਦਿਖਾ ਸਕਦੇ ਅਤੇ ਨਾ ਹੀ ਤੁਹਾਡੇ ਲਈ ਰੀਸੈੱਟ ਕਰ ਸਕਦੇ ਹਾਂ।",
+  "photoLockCopy": "ਕਾਪੀ ਕਰੋ",
+  "photoLockSave": "ਸੰਭਾਲੋ ਜਾਂ ਸਾਂਝਾ ਕਰੋ",
+  "photoLockCopied": "ਰਿਕਵਰੀ ਕੁੰਜੀ ਕਾਪੀ ਹੋ ਗਈ।",
+  "photoLockShareSubject": "ਮੇਰੀ Vaultara ਰਿਕਵਰੀ ਕੁੰਜੀ",
+  "photoLockConfirmStep": "ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਇਸਨੂੰ ਸੰਭਾਲ ਲਿਆ ਹੈ",
+  "photoLockConfirmBody": "ਆਪਣੀ ਕੁੰਜੀ ਦਾ ਆਖਰੀ ਗਰੁੱਪ ਲਿਖੋ, ਜੋ ਉੱਪਰ ਰੰਗ ਵਿੱਚ ਦਿਖਾਇਆ ਗਿਆ ਹੈ।",
+  "photoLockConfirmLabel": "ਆਖਰੀ ਗਰੁੱਪ",
+  "photoLockConfirmMismatch": "ਇਹ ਤੁਹਾਡੀ ਕੁੰਜੀ ਦੇ ਆਖਰੀ ਗਰੁੱਪ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।",
+  "photoLockFinish": "ਚਾਲੂ ਕਰੋ",
+  "photoLockSetupFailed": "ਅਸੀਂ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਨਹੀਂ ਕਰ ਸਕੇ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockAlreadyOn": "ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਪਹਿਲਾਂ ਹੀ ਚਾਲੂ ਹਨ। ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਵਰਤਣ ਲਈ ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ।",
+  "photoLockEncryptExistingTitle": "ਆਪਣੀਆਂ ਮੌਜੂਦਾ ਫ਼ੋਟੋਆਂ ਐਨਕ੍ਰਿਪਟ ਕਰਨੀਆਂ ਹਨ?",
+  "photoLockEncryptExistingBody": "{count, plural, one{ਤੁਹਾਡੀ {count} ਫ਼ੋਟੋ ਅਜੇ ਐਨਕ੍ਰਿਪਟ ਨਹੀਂ ਹੋਈ। ਅਸੀਂ ਇਸਨੂੰ ਹੁਣ ਐਨਕ੍ਰਿਪਟ ਕਰ ਸਕਦੇ ਹਾਂ।} other{ਤੁਹਾਡੀਆਂ {count} ਫ਼ੋਟੋਆਂ ਅਜੇ ਐਨਕ੍ਰਿਪਟ ਨਹੀਂ ਹੋਈਆਂ। ਅਸੀਂ ਇਨ੍ਹਾਂ ਨੂੰ ਹੁਣ ਐਨਕ੍ਰਿਪਟ ਕਰ ਸਕਦੇ ਹਾਂ।}} ਇਹ ਪੂਰਾ ਹੋਣ ਤੱਕ Vaultara ਖੁੱਲ੍ਹੀ ਰੱਖੋ।",
+  "photoLockEncryptNow": "ਹੁਣੇ ਐਨਕ੍ਰਿਪਟ ਕਰੋ",
+  "photoLockEntryBody": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਕਰਨ ਵੇਲੇ ਤੁਸੀਂ ਜੋ ਰਿਕਵਰੀ ਕੁੰਜੀ ਸੰਭਾਲੀ ਸੀ, ਉਹ ਦਾਖਲ ਕਰੋ। ਡੈਸ਼ ਅਤੇ ਖਾਲੀ ਥਾਂ ਲਾਜ਼ਮੀ ਨਹੀਂ ਹਨ।",
+  "photoLockEntryLabel": "ਰਿਕਵਰੀ ਕੁੰਜੀ",
+  "photoLockEntryHint": "XXXX-XXXX-XXXX",
+  "photoLockUnlock": "ਫ਼ੋਟੋਆਂ ਅਨਲਾਕ ਕਰੋ",
+  "photoLockUnlocked": "ਤੁਹਾਡੀਆਂ ਫ਼ੋਟੋਆਂ ਇਸ ਫ਼ੋਨ ਉੱਤੇ ਅਨਲਾਕ ਹੋ ਗਈਆਂ ਹਨ।",
+  "photoLockInvalidFormat": "ਇਹ ਰਿਕਵਰੀ ਕੁੰਜੀ ਵਰਗੀ ਨਹੀਂ ਲੱਗਦੀ। ਹਰ ਅੱਖਰ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockWrongKey": "ਇਹ ਰਿਕਵਰੀ ਕੁੰਜੀ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਇਸਨੂੰ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockWaitSeconds": "{seconds, plural, one{ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ {seconds} ਸਕਿੰਟ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।} other{ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ {seconds} ਸਕਿੰਟ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ {minutes} ਮਿੰਟ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।} other{ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ {minutes} ਮਿੰਟ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।}}",
+  "photoLockOffline": "ਅਸੀਂ Vaultara ਤੱਕ ਨਹੀਂ ਪਹੁੰਚ ਸਕੇ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockNotSetUp": "ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਨਹੀਂ ਹਨ।",
+  "photoLockUnlockFailed": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "photoLockLostKey": "ਰਿਕਵਰੀ ਕੁੰਜੀ ਗੁਆਚ ਗਈ? ਇਸ ਤੋਂ ਬਿਨਾਂ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਨਵੇਂ ਫ਼ੋਨ ਉੱਤੇ ਨਹੀਂ ਖੁੱਲ੍ਹ ਸਕਦੀਆਂ। ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਦੇ ਵੇਰਵਿਆਂ ਉੱਤੇ ਇਸਦਾ ਅਸਰ ਨਹੀਂ ਪੈਂਦਾ।",
+  "photoLockShareTitle": "ਫ਼ੋਟੋਆਂ ਨਿੱਜੀ ਰਹਿੰਦੀਆਂ ਹਨ",
+  "photoLockShareBody": "ਇਸ ਰਿਕਾਰਡ ਵਿੱਚ ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਹਨ। ਸਾਂਝੇ ਕਰਨ ਵਾਲੇ ਲਿੰਕ ਇਨ੍ਹਾਂ ਨੂੰ ਨਹੀਂ ਦਿਖਾ ਸਕਦੇ, ਇਸ ਲਈ ਸਿਰਫ਼ ਵੇਰਵੇ ਸਾਂਝੇ ਕੀਤੇ ਜਾਣਗੇ।",
+  "householdTitle": "ਹਾਊਸਹੋਲਡ",
+  "householdCreateIntro": "{count, plural, one{ਆਪਣੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹੋਰ {count} Vaultara ਖਾਤੇ ਨੂੰ ਸੱਦਾ ਦਿਓ।} other{ਆਪਣੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹੋਰ {count} ਤੱਕ Vaultara ਖਾਤਿਆਂ ਨੂੰ ਸੱਦਾ ਦਿਓ।}} ਹਰ ਵਿਅਕਤੀ ਨੂੰ ਤੁਹਾਡੇ ਪਲਾਨ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ ਅਤੇ ਉਸਦੇ ਆਪਣੇ ਰਿਕਾਰਡ ਨਿੱਜੀ ਰਹਿੰਦੇ ਹਨ। ਕਿਹੜੇ ਰਿਕਾਰਡ ਸਭ ਦੇਖ ਸਕਣ, ਇਹ ਤੁਸੀਂ ਤੈਅ ਕਰਦੇ ਹੋ।",
+  "householdJoinIntro": "ਪਰਿਵਾਰ ਜਾਂ ਬਿਜ਼ਨਸ ਪਲਾਨ ਵਾਲਾ ਕੋਈ ਵਿਅਕਤੀ ਤੁਹਾਨੂੰ ਆਪਣੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਸੱਦਾ ਦੇ ਸਕਦਾ ਹੈ। ਫਿਰ ਤੁਹਾਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਪਲਾਨ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ, ਅਤੇ ਤੁਸੀਂ ਇੱਕ ਦੂਜੇ ਨਾਲ ਰਿਕਾਰਡ ਸਾਂਝੇ ਕਰ ਸਕਦੇ ਹੋ।",
+  "householdCreate": "ਹਾਊਸਹੋਲਡ ਬਣਾਓ",
+  "householdCreated": "ਤੁਹਾਡਾ ਹਾਊਸਹੋਲਡ ਤਿਆਰ ਹੈ। ਕਿਸੇ ਨੂੰ ਜੁੜਨ ਲਈ ਸੱਦਾ ਦਿਓ।",
+  "householdEnterCode": "ਸੱਦਾ ਕੋਡ ਦਾਖਲ ਕਰੋ",
+  "householdJoinTitle": "ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜੋ",
+  "householdJoinTitleNamed": "{name} ਦੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜਨਾ ਹੈ?",
+  "householdEnterCodeIntro": "ਆਪਣੇ ਸੱਦੇ ਦਾ ਕੋਡ ਲਿਖੋ। ਤੁਸੀਂ ਸੱਦਾ ਲਿੰਕ ਉੱਤੇ ਟੈਪ ਕਰਕੇ ਵੀ ਇਸਨੂੰ ਇੱਥੇ ਖੋਲ੍ਹ ਸਕਦੇ ਹੋ।",
+  "householdCodeLabel": "ਸੱਦਾ ਕੋਡ",
+  "householdCodeHint": "ਉਦਾਹਰਨ ਲਈ, K7MQ2XRA",
+  "householdContinue": "ਅੱਗੇ ਵਧੋ",
+  "householdJoinButton": "ਜੁੜੋ",
+  "householdJoinPointPremium": "ਤੁਹਾਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਪਲਾਨ ਰਾਹੀਂ ਬਿਨਾਂ ਕਿਸੇ ਖਰਚੇ ਦੇ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ।",
+  "householdJoinPointPrivate": "ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਨਿੱਜੀ ਰਹਿੰਦੇ ਹਨ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਸਾਂਝੇ ਨਹੀਂ ਕਰਦੇ, ਕੋਈ ਹੋਰ ਉਨ੍ਹਾਂ ਨੂੰ ਨਹੀਂ ਦੇਖਦਾ।",
+  "householdJoinPointShared": "ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ ਉਸ ਵਿੱਚ ਹਰ ਕੋਈ ਦੇਖ ਅਤੇ ਬਦਲ ਸਕਦਾ ਹੈ, ਅਤੇ ਸਭ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਰਿਮਾਈਂਡਰ ਮਿਲਦੇ ਹਨ।",
+  "householdJoinPointLeave": "ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਪਰਿਵਾਰ ਸਕ੍ਰੀਨ ਤੋਂ ਛੱਡ ਸਕਦੇ ਹੋ।",
+  "householdJoinedTitle": "ਤੁਸੀਂ ਜੁੜ ਗਏ ਹੋ",
+  "householdJoinedBody": "ਤੁਸੀਂ ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜ ਗਏ ਹੋ। ਪ੍ਰੀਮੀਅਮ ਹੁਣ ਤੁਹਾਡੇ ਖਾਤੇ ਦਾ ਹਿੱਸਾ ਹੈ।",
+  "householdOwnSubscription": "ਤੁਸੀਂ ਆਪਣੀ ਖੁਦ ਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਲਈ ਵੀ ਭੁਗਤਾਨ ਕਰ ਰਹੇ ਹੋ। ਹਾਊਸਹੋਲਡ ਪਲਾਨ ਹੁਣ ਤੁਹਾਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ ਤੁਸੀਂ ਚਾਹੋ ਤਾਂ ਆਪਣੇ ਸਟੋਰ ਖਾਤੇ ਵਿੱਚ ਇਸਨੂੰ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ। ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਇਸਨੂੰ ਕਦੇ ਰੱਦ ਨਹੀਂ ਕਰਦੇ।",
+  "householdDone": "ਹੋ ਗਿਆ",
+  "householdCodeInvalid": "ਇਹ ਕੋਡ ਕੰਮ ਨਹੀਂ ਕਰਦਾ। ਇਸਨੂੰ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਜਾਂ ਨਵਾਂ ਸੱਦਾ ਮੰਗੋ।",
+  "householdAlreadyInOne": "ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹੋ। ਦੂਜੇ ਨਾਲ ਜੁੜਨ ਲਈ ਪਹਿਲਾਂ ਇਸਨੂੰ ਛੱਡੋ।",
+  "householdAlreadyMember": "ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਇਸ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹੋ।",
+  "householdInviteInactive": "ਇਸ ਹਾਊਸਹੋਲਡ ਦਾ ਪਲਾਨ ਹੁਣ ਸਰਗਰਮ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਕੋਈ ਵੀ ਇਸ ਨਾਲ ਜੁੜ ਨਹੀਂ ਸਕਦਾ।",
+  "householdFull": "ਇਹ ਹਾਊਸਹੋਲਡ ਭਰਿਆ ਹੋਇਆ ਹੈ।",
+  "householdTooManyTries": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਥੋੜ੍ਹੀ ਦੇਰ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "householdNeedsPlan": "ਹਾਊਸਹੋਲਡ ਬਣਾਉਣ ਲਈ ਤੁਹਾਡੇ ਕੋਲ ਪਰਿਵਾਰ ਜਾਂ ਬਿਜ਼ਨਸ ਪਲਾਨ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
+  "householdGenericError": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "householdLoadError": "ਅਸੀਂ ਤੁਹਾਡਾ ਹਾਊਸਹੋਲਡ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇ।",
+  "householdTryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "householdOwnerSummary": "ਤੁਸੀਂ ਇਸ ਹਾਊਸਹੋਲਡ ਨੂੰ ਸੰਭਾਲਦੇ ਹੋ। {limit} ਵਿੱਚੋਂ {count} ਥਾਵਾਂ ਵਰਤੀਆਂ ਗਈਆਂ ਹਨ। ਇਸ ਵਿੱਚ ਹਰ ਕਿਸੇ ਨੂੰ ਤੁਹਾਡੇ ਪਲਾਨ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ।",
+  "householdMemberSummary": "ਤੁਹਾਨੂੰ {name} ਦੇ ਪਲਾਨ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਸਾਂਝੇ ਨਹੀਂ ਕਰਦੇ, ਤੁਹਾਡੇ ਆਪਣੇ ਰਿਕਾਰਡ ਨਿੱਜੀ ਰਹਿੰਦੇ ਹਨ।",
+  "householdInactiveOwner": "ਤੁਹਾਡਾ ਪਲਾਨ ਹੁਣ ਹਾਊਸਹੋਲਡ ਨੂੰ ਕਵਰ ਨਹੀਂ ਕਰਦਾ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਆਪਣਾ ਪਰਿਵਾਰ ਜਾਂ ਬਿਜ਼ਨਸ ਪਲਾਨ ਨਵਿਆਉਂਦੇ ਨਹੀਂ, ਮੈਂਬਰਾਂ ਕੋਲ ਪ੍ਰੀਮੀਅਮ ਨਹੀਂ ਹੋਵੇਗਾ ਅਤੇ ਸਾਂਝੇ ਰਿਕਾਰਡ ਸਿਰਫ਼ ਪੜ੍ਹਨ ਲਈ ਹੋਣਗੇ।",
+  "householdReadOnly": "ਹਾਊਸਹੋਲਡ ਪਲਾਨ ਸਰਗਰਮ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਸਾਂਝੇ ਰਿਕਾਰਡ ਹੁਣ ਲਈ ਸਿਰਫ਼ ਪੜ੍ਹਨ ਲਈ ਹਨ।",
+  "householdOwnerTag": "ਮਾਲਕ",
+  "householdYouTag": "ਤੁਸੀਂ",
+  "householdMemberFallback": "ਮੈਂਬਰ",
+  "householdRemoveMember": "ਹਾਊਸਹੋਲਡ ਵਿੱਚੋਂ ਹਟਾਓ",
+  "householdRemoveTitle": "{name} ਨੂੰ ਹਟਾਉਣਾ ਹੈ?",
+  "householdRemoveBody": "{name} ਤੁਹਾਡੇ ਪਲਾਨ ਤੋਂ ਪ੍ਰੀਮੀਅਮ ਗੁਆ ਦਿੰਦਾ ਹੈ। {name} ਨੇ ਜੋ ਰਿਕਾਰਡ ਸਾਂਝੇ ਕੀਤੇ ਸਨ, ਉਹ ਉਸਦੇ ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਵਾਪਸ ਚਲੇ ਜਾਂਦੇ ਹਨ।",
+  "householdMemberRemoved": "{name} ਹੁਣ ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਨਹੀਂ ਹੈ",
+  "householdPendingInvites": "ਖੁੱਲ੍ਹੇ ਸੱਦੇ",
+  "householdInviteExpires": "{date} ਤੱਕ ਕੰਮ ਕਰਦਾ ਹੈ",
+  "householdShareInvite": "ਸੱਦਾ ਸਾਂਝਾ ਕਰੋ",
+  "householdRevokeInvite": "ਸੱਦਾ ਰੱਦ ਕਰੋ",
+  "householdInviteRevoked": "ਸੱਦਾ ਰੱਦ ਹੋ ਗਿਆ। ਕੋਡ ਹੁਣ ਕੰਮ ਨਹੀਂ ਕਰਦਾ।",
+  "householdInvite": "ਕਿਸੇ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+  "householdInviteNote": "ਹਰ ਸੱਦਾ ਇੱਕ ਵਾਰ ਅਤੇ 7 ਦਿਨਾਂ ਲਈ ਕੰਮ ਕਰਦਾ ਹੈ।",
+  "householdInviteSubject": "Vaultara ਉੱਤੇ ਮੇਰੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜੋ",
+  "householdInviteMessage": "Vaultara ਉੱਤੇ ਮੇਰੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜੋ, ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਇਕੱਠੇ ਸੰਭਾਲ ਸਕੀਏ। ਇਸ ਲਿੰਕ ਉੱਤੇ ਟੈਪ ਕਰੋ: {link}\nਜਾਂ Vaultara ਖੋਲ੍ਹੋ, ਪ੍ਰੋਫਾਈਲ ਵਿੱਚ ਜਾਓ, ਫਿਰ ਪਰਿਵਾਰ ਵਿੱਚ ਜਾਓ ਅਤੇ ਇਹ ਕੋਡ ਦਾਖਲ ਕਰੋ: {code}",
+  "householdInviteCopied": "ਸੱਦਾ ਲਿੰਕ ਕਾਪੀ ਹੋ ਗਿਆ",
+  "householdSharedRecordsTitle": "ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ",
+  "householdSharedRecordsIntro": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹਰ ਕੋਈ ਇਹ ਰਿਕਾਰਡ ਦੇਖ ਅਤੇ ਬਦਲ ਸਕਦਾ ਹੈ, ਅਤੇ ਸਭ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਰਿਮਾਈਂਡਰ ਮਿਲਦੇ ਹਨ।",
+  "householdSharedRecordsEmpty": "ਅਜੇ ਕੁਝ ਵੀ ਸਾਂਝਾ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। ਕੋਈ ਰਿਕਾਰਡ ਖੋਲ੍ਹੋ ਅਤੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝਾ ਚਾਲੂ ਕਰੋ।",
+  "householdSharedCount": "{count, plural, one{{count} ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
+  "householdShowAllShared": "ਸਾਰੇ ਸਾਂਝੇ ਰਿਕਾਰਡ ਦਿਖਾਓ",
+  "householdHowSharingWorks": "ਕੋਈ ਰਿਕਾਰਡ ਸਾਂਝਾ ਕਰਨ ਲਈ ਉਸਨੂੰ ਖੋਲ੍ਹੋ ਅਤੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝਾ ਚਾਲੂ ਕਰੋ। ਇਸਨੂੰ ਬੰਦ ਕਰਨ ਉੱਤੇ ਰਿਕਾਰਡ ਉਸ ਵਿਅਕਤੀ ਕੋਲ ਵਾਪਸ ਚਲਾ ਜਾਂਦਾ ਹੈ ਜਿਸਨੇ ਇਸਨੂੰ ਜੋੜਿਆ ਸੀ।",
+  "householdLeave": "ਹਾਊਸਹੋਲਡ ਛੱਡੋ",
+  "householdLeaveTitle": "ਇਹ ਹਾਊਸਹੋਲਡ ਛੱਡਣਾ ਹੈ?",
+  "householdLeaveBody": "ਤੁਸੀਂ ਇਸ ਹਾਊਸਹੋਲਡ ਤੋਂ ਮਿਲਣ ਵਾਲਾ ਪ੍ਰੀਮੀਅਮ ਗੁਆ ਦਿੰਦੇ ਹੋ। ਤੁਹਾਡੇ ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ ਤੁਹਾਡੇ ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਵਾਪਸ ਆ ਜਾਂਦੇ ਹਨ, ਅਤੇ ਦੂਜਿਆਂ ਦੇ ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ ਤੁਹਾਨੂੰ ਦਿਖਣੇ ਬੰਦ ਹੋ ਜਾਂਦੇ ਹਨ।",
+  "householdLeft": "ਤੁਸੀਂ ਹਾਊਸਹੋਲਡ ਛੱਡ ਦਿੱਤਾ",
+  "householdClose": "ਹਾਊਸਹੋਲਡ ਬੰਦ ਕਰੋ",
+  "householdCloseTitle": "ਆਪਣਾ ਹਾਊਸਹੋਲਡ ਬੰਦ ਕਰਨਾ ਹੈ?",
+  "householdCloseBody": "ਹਰ ਕੋਈ ਹਾਊਸਹੋਲਡ ਛੱਡ ਦਿੰਦਾ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਪਲਾਨ ਤੋਂ ਪ੍ਰੀਮੀਅਮ ਗੁਆ ਦਿੰਦਾ ਹੈ। ਹਰ ਸਾਂਝਾ ਰਿਕਾਰਡ ਉਸ ਵਿਅਕਤੀ ਕੋਲ ਵਾਪਸ ਚਲਾ ਜਾਂਦਾ ਹੈ ਜਿਸਨੇ ਇਸਨੂੰ ਜੋੜਿਆ ਸੀ।",
+  "householdClosed": "ਤੁਹਾਡਾ ਹਾਊਸਹੋਲਡ ਬੰਦ ਹੋ ਗਿਆ",
+  "householdShareTitle": "ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝਾ",
+  "householdShareOn": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹਰ ਕੋਈ ਇਹ ਰਿਕਾਰਡ ਦੇਖ ਅਤੇ ਬਦਲ ਸਕਦਾ ਹੈ ਅਤੇ ਇਸਦੇ ਰਿਮਾਈਂਡਰ ਪਾਉਂਦਾ ਹੈ।",
+  "householdShareOff": "ਇਹ ਰਿਕਾਰਡ ਸਿਰਫ਼ ਤੁਸੀਂ ਦੇਖ ਸਕਦੇ ਹੋ।",
+  "householdSharedBadge": "ਸਾਂਝਾ",
+  "householdSharedTooltip": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝਾ",
+  "householdMoveFailed": "ਅਸੀਂ ਇਹ ਨਹੀਂ ਬਦਲ ਸਕੇ ਕਿ ਇਹ ਰਿਕਾਰਡ ਕੌਣ ਦੇਖ ਸਕਦਾ ਹੈ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "householdUnsharedToCreator": "ਇਹ ਰਿਕਾਰਡ ਉਸ ਵਿਅਕਤੀ ਕੋਲ ਵਾਪਸ ਚਲਾ ਗਿਆ ਜਿਸਨੇ ਇਸਨੂੰ ਜੋੜਿਆ ਸੀ।",
+  "householdPlanBanner": "ਤੁਹਾਨੂੰ ਆਪਣੇ ਹਾਊਸਹੋਲਡ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਆਪਣੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
+  "householdPlanIncluded": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਸ਼ਾਮਲ",
+  "householdPremiumTitle": "ਹਾਊਸਹੋਲਡ ਰਾਹੀਂ ਪ੍ਰੀਮੀਅਮ",
+  "householdPremiumSubtitle": "ਤੁਹਾਡਾ ਹਾਊਸਹੋਲਡ ਪਲਾਨ ਤੁਹਾਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ। ਹਾਊਸਹੋਲਡ ਛੱਡਣ ਉੱਤੇ ਪ੍ਰੀਮੀਅਮ ਖਤਮ ਹੋ ਜਾਂਦਾ ਹੈ।",
+  "householdProfileTileSubtitle": "ਤੁਹਾਡਾ ਹਾਊਸਹੋਲਡ ਅਤੇ ਉਹ ਲੋਕ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਦੇਖਭਾਲ ਕਰਦੇ ਹੋ",
+  "profilePhotoTitle": "ਪ੍ਰੋਫਾਈਲ ਫ਼ੋਟੋ",
+  "profilePhotoChange": "ਪ੍ਰੋਫਾਈਲ ਫ਼ੋਟੋ ਬਦਲੋ",
+  "profilePhotoRemove": "ਫ਼ੋਟੋ ਹਟਾਓ",
+  "profilePhotoRemoveConfirmTitle": "ਆਪਣੀ ਫ਼ੋਟੋ ਹਟਾਉਣੀ ਹੈ?",
+  "profilePhotoRemoveConfirmBody": "ਇਸਦੀ ਥਾਂ ਤੁਹਾਡੇ ਨਾਮ ਦੇ ਪਹਿਲੇ ਅੱਖਰ ਦਿਖਣਗੇ।",
+  "profilePhotoRemoveAction": "ਹਟਾਓ",
+  "profilePhotoUpdated": "ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਅੱਪਡੇਟ ਹੋ ਗਈ।",
+  "profilePhotoRemoved": "ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਹਟਾ ਦਿੱਤੀ ਗਈ।",
+  "profilePhotoFailed": "ਅਸੀਂ ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਅੱਪਡੇਟ ਨਹੀਂ ਕਰ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "profilePhotoAccessDenied": "Vaultara ਨੂੰ ਤੁਹਾਡੇ ਕੈਮਰੇ ਜਾਂ ਫ਼ੋਟੋਆਂ ਦੀ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ। ਤੁਸੀਂ ਇਹ ਆਪਣੇ ਫ਼ੋਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਦੇ ਸਕਦੇ ਹੋ।",
+  "inviteFriendsTitle": "ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+  "inviteFriendsTileSubtitle": "ਦੋਸਤ ਨੂੰ ਇੱਕ ਮਹੀਨੇ ਦਾ ਮੁਫ਼ਤ ਪ੍ਰੀਮੀਅਮ ਦਿਓ ਅਤੇ ਖੁਦ ਵੀ ਪਾਓ",
+  "inviteHeadline": "ਇੱਕ ਮਹੀਨਾ ਦਿਓ, ਇੱਕ ਮਹੀਨਾ ਪਾਓ",
+  "inviteYourCode": "ਤੁਹਾਡਾ ਸੱਦਾ ਕੋਡ",
+  "inviteShareButton": "ਸੱਦਾ ਸਾਂਝਾ ਕਰੋ",
+  "inviteCopyButton": "ਕੋਡ ਕਾਪੀ ਕਰੋ",
+  "inviteCodeCopied": "ਕੋਡ ਕਾਪੀ ਹੋ ਗਿਆ",
+  "inviteHowTitle": "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
+  "inviteStep1": "ਆਪਣਾ ਕੋਡ ਜਾਂ ਲਿੰਕ ਕਿਸੇ ਦੋਸਤ ਨਾਲ ਸਾਂਝਾ ਕਰੋ।",
+  "inviteStep2": "ਉਹ ਸਾਈਨ ਅੱਪ ਕਰਨ ਦੇ 14 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਇਸਨੂੰ Vaultara ਵਿੱਚ ਦਾਖਲ ਕਰਦੇ ਹਨ।",
+  "inviteStep3": "ਜਦੋਂ ਉਹ ਆਪਣੀ ਈਮੇਲ ਦੀ ਤਸਦੀਕ ਕਰ ਕੇ ਇੱਕ ਰਿਕਾਰਡ ਜੋੜ ਲੈਂਦੇ ਹਨ, ਤਾਂ ਤੁਹਾਨੂੰ ਦੋਵਾਂ ਨੂੰ 1 ਮਹੀਨੇ ਦਾ ਮੁਫ਼ਤ ਪ੍ਰੀਮੀਅਮ ਮਿਲਦਾ ਹੈ।",
+  "inviteMonthsEarned": "{max} ਵਿੱਚੋਂ {count} ਮੁਫ਼ਤ ਮਹੀਨੇ ਕਮਾਏ",
+  "invitePremiumUntil": "{date} ਤੱਕ ਮੁਫ਼ਤ ਪ੍ਰੀਮੀਅਮ",
+  "inviteMaxReached": "ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ ਮੁਫ਼ਤ ਮਹੀਨੇ ਕਮਾ ਲਏ ਹਨ। Vaultara ਸਾਂਝਾ ਕਰਨ ਲਈ ਧੰਨਵਾਦ।",
+  "inviteHaveCodeTitle": "ਕੋਈ ਕੋਡ ਹੈ?",
+  "inviteHaveCodeBody": "ਆਪਣਾ ਮੁਫ਼ਤ ਮਹੀਨਾ ਪਾਉਣ ਲਈ {date} ਤੋਂ ਪਹਿਲਾਂ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਦਾਖਲ ਕਰੋ।",
+  "inviteCodeLabel": "ਦੋਸਤ ਦਾ ਕੋਡ",
+  "inviteRedeemGranted": "ਕੋਡ ਲਾਗੂ ਹੋ ਗਿਆ। ਤੁਹਾਡੇ ਦੋਵਾਂ ਕੋਲ ਇੱਕ ਮਹੀਨੇ ਦਾ ਮੁਫ਼ਤ ਪ੍ਰੀਮੀਅਮ ਹੈ।",
+  "inviteRedeemPending": "ਕੋਡ ਮਨਜ਼ੂਰ ਹੋ ਗਿਆ। ਆਪਣਾ ਮੁਫ਼ਤ ਮਹੀਨਾ ਪਾਉਣ ਲਈ ਪਹਿਲਾ ਰਿਕਾਰਡ ਜੋੜੋ।",
+  "inviteRedeemDone": "ਤੁਸੀਂ ਦੋਸਤ ਦੇ ਕੋਡ ਨਾਲ ਜੁੜੇ ਅਤੇ ਤੁਹਾਨੂੰ ਆਪਣਾ ਮੁਫ਼ਤ ਮਹੀਨਾ ਮਿਲ ਗਿਆ।",
+  "inviteRedeemClosed": "ਕੋਡ ਸਿਰਫ਼ ਸਾਈਨ ਅੱਪ ਕਰਨ ਤੋਂ ਬਾਅਦ ਦੇ ਪਹਿਲੇ 14 ਦਿਨਾਂ ਵਿੱਚ ਦਾਖਲ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ।",
+  "inviteErrorInvalid": "ਇਹ ਕੋਡ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਇਸਨੂੰ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "inviteErrorOwn": "ਤੁਸੀਂ ਆਪਣਾ ਖੁਦ ਦਾ ਕੋਡ ਨਹੀਂ ਵਰਤ ਸਕਦੇ।",
+  "inviteErrorUsed": "ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਦੋਸਤ ਦਾ ਕੋਡ ਵਰਤ ਚੁੱਕੇ ਹੋ।",
+  "inviteErrorVerify": "ਪਹਿਲਾਂ ਆਪਣੀ ਈਮੇਲ ਦੀ ਤਸਦੀਕ ਕਰੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "inviteErrorTooMany": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹੀ ਦੇਰ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "inviteLoadError": "ਅਸੀਂ ਤੁਹਾਡੇ ਸੱਦੇ ਦੇ ਵੇਰਵੇ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇ।",
+  "inviteRetry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "referralShareSubject": "Vaultara ਪ੍ਰੀਮੀਅਮ ਦਾ ਇੱਕ ਮੁਫ਼ਤ ਮਹੀਨਾ",
+  "referralShareMessage": "ਮੈਂ ਆਪਣੇ ਜ਼ਰੂਰੀ ਦਸਤਾਵੇਜ਼ਾਂ ਦਾ ਹਿਸਾਬ ਰੱਖਣ ਲਈ Vaultara ਵਰਤਦਾ ਹਾਂ। ਮੇਰੇ ਕੋਡ {code} ਨਾਲ ਜੁੜੋ ਅਤੇ ਸਾਨੂੰ ਦੋਵਾਂ ਨੂੰ ਪ੍ਰੀਮੀਅਮ ਦਾ ਇੱਕ ਮੁਫ਼ਤ ਮਹੀਨਾ ਮਿਲੇਗਾ: {link}",
+  "referralPlanNote": "ਸੱਦਿਆਂ ਕਾਰਨ ਤੁਹਾਡੇ ਕੋਲ {date} ਤੱਕ ਮੁਫ਼ਤ ਪ੍ਰੀਮੀਅਮ ਹੈ।",
+  "twoStepTitle": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ",
+  "twoStepTileOn": "ਚਾਲੂ। ਤੁਸੀਂ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਦਾ ਕੋਡ ਵਰਤਦੇ ਹੋ",
+  "twoStepTileOff": "ਵਾਧੂ ਸੁਰੱਖਿਆ ਲਈ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਜੋੜੋ",
+  "twoStepIntro": "ਇਹ ਚਾਲੂ ਹੋਣ ਉੱਤੇ ਤੁਸੀਂ ਆਪਣਾ ਪਾਸਵਰਡ ਅਤੇ ਫਿਰ Google Authenticator ਜਾਂ Microsoft Authenticator ਵਰਗੀ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਤੋਂ 6 ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਾਖਲ ਕਰਦੇ ਹੋ।",
+  "twoStepStatusOn": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਚਾਲੂ ਹੈ",
+  "twoStepStatusOff": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਬੰਦ ਹੈ",
+  "twoStepSetUpButton": "ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਸੈੱਟ ਕਰੋ",
+  "twoStepAddAnother": "ਇੱਕ ਹੋਰ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਜੋੜੋ",
+  "twoStepMethodsTitle": "ਤੁਹਾਡੀਆਂ ਔਥੈਂਟੀਕੇਟਰ ਐਪਾਂ",
+  "twoStepDefaultName": "ਔਥੈਂਟੀਕੇਟਰ ਐਪ",
+  "twoStepAddedOn": "ਜੋੜੀ ਗਈ: {date}",
+  "twoStepRemoveButton": "ਹਟਾਓ",
+  "twoStepRemoveTitle": "ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਹਟਾਉਣੀ ਹੈ?",
+  "twoStepRemoveBody": "ਇਸ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਸਿਰਫ਼ ਆਪਣੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋਗੇ। ਤੁਸੀਂ ਇਸਨੂੰ ਕਿਸੇ ਵੀ ਸਮੇਂ ਦੁਬਾਰਾ ਸੈੱਟ ਕਰ ਸਕਦੇ ਹੋ।",
+  "twoStepRemoveBodyOther": "ਤੁਸੀਂ ਸਾਈਨ ਇਨ ਕੋਡਾਂ ਲਈ ਇਸ ਐਪ ਨੂੰ ਹੁਣ ਨਹੀਂ ਵਰਤ ਸਕੋਗੇ।",
+  "twoStepRemoved": "ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਹਟਾ ਦਿੱਤੀ ਗਈ",
+  "twoStepVerifyEmailFirst": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਚਾਲੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਈਮੇਲ ਦੀ ਤਸਦੀਕ ਕਰੋ।",
+  "twoStepUnavailable": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "twoStepConfirmTitle": "ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੋ",
+  "twoStepConfirmBody": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਬਦਲਣ ਲਈ ਆਪਣਾ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰੋ।",
+  "twoStepScanTitle": "ਇਹ ਕੋਡ ਸਕੈਨ ਕਰੋ",
+  "twoStepScanBody": "ਆਪਣੀ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਖੋਲ੍ਹੋ, ਜੋੜੋ ਉੱਤੇ ਟੈਪ ਕਰੋ ਅਤੇ ਆਪਣੇ ਕੈਮਰੇ ਨਾਲ ਇਹ ਕੋਡ ਸਕੈਨ ਕਰੋ।",
+  "twoStepOpenApp": "ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਖੋਲ੍ਹੋ",
+  "twoStepNoAuthApp": "ਕੋਈ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਨਹੀਂ ਮਿਲੀ। ਇੱਕ ਇੰਸਟਾਲ ਕਰੋ, ਫਿਰ ਕੋਡ ਸਕੈਨ ਕਰੋ ਜਾਂ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ।",
+  "twoStepKeyLabel": "ਸਕੈਨ ਨਹੀਂ ਹੋ ਰਿਹਾ? ਇਸਦੀ ਥਾਂ ਇਹ ਕੁੰਜੀ ਦਾਖਲ ਕਰੋ",
+  "twoStepCopyKey": "ਕੁੰਜੀ ਕਾਪੀ ਕਰੋ",
+  "twoStepKeyCopied": "ਕੁੰਜੀ ਕਾਪੀ ਹੋ ਗਈ",
+  "twoStepCodeLabel": "6 ਅੰਕਾਂ ਦਾ ਕੋਡ",
+  "twoStepEnterCodeBody": "ਪੂਰਾ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਐਪ ਵਿੱਚ ਦਿਖ ਰਿਹਾ 6 ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਾਖਲ ਕਰੋ।",
+  "twoStepTurnOn": "ਚਾਲੂ ਕਰੋ",
+  "twoStepEnabledBody": "ਅਗਲੀ ਵਾਰ ਸਾਈਨ ਇਨ ਕਰਨ ਉੱਤੇ Vaultara ਤੁਹਾਡੀ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਦਾ ਕੋਡ ਮੰਗੇਗੀ।",
+  "twoStepDone": "ਹੋ ਗਿਆ",
+  "twoStepStartAgain": "ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ",
+  "twoStepWrongCode": "ਇਹ ਕੋਡ ਸਹੀ ਨਹੀਂ ਹੈ। ਆਪਣੀ ਐਪ ਦਾ ਸਭ ਤੋਂ ਨਵਾਂ ਕੋਡ ਅਜ਼ਮਾਓ।",
+  "twoStepCodeFormat": "ਸਾਰੇ 6 ਅੰਕ ਦਾਖਲ ਕਰੋ।",
+  "twoStepTooMany": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। ਕੁਝ ਮਿੰਟ ਰੁਕੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "twoStepExpired": "ਇਸ ਵਿੱਚ ਬਹੁਤ ਸਮਾਂ ਲੱਗ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ।",
+  "twoStepChallengeTitle": "ਆਪਣਾ ਸਾਈਨ ਇਨ ਕੋਡ ਦਾਖਲ ਕਰੋ",
+  "twoStepChallengeBody": "ਆਪਣੀ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਖੋਲ੍ਹੋ ਅਤੇ Vaultara ਦਾ 6 ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਾਖਲ ਕਰੋ।",
+  "twoStepVerifyButton": "ਤਸਦੀਕ ਕਰੋ",
+  "twoStepLostTitle": "ਔਥੈਂਟੀਕੇਟਰ ਗੁਆਚ ਗਿਆ?",
+  "twoStepLostBody": "ਜੇ ਤੁਸੀਂ ਆਪਣੀ ਔਥੈਂਟੀਕੇਟਰ ਐਪ ਨਹੀਂ ਵਰਤ ਸਕਦੇ, ਤਾਂ ਆਪਣੇ ਖਾਤੇ ਦੇ ਈਮੇਲ ਪਤੇ ਤੋਂ ਸਾਡੀ ਸਹਾਇਤਾ ਟੀਮ ਨਾਲ ਸੰਪਰਕ ਕਰੋ। ਅਸੀਂ ਜਾਂਚਾਂਗੇ ਕਿ ਇਹ ਤੁਸੀਂ ਹੀ ਹੋ ਅਤੇ ਤੁਹਾਨੂੰ ਵਾਪਸ ਅੰਦਰ ਆਉਣ ਵਿੱਚ ਮਦਦ ਕਰਾਂਗੇ।",
+  "twoStepContactSupport": "ਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "twoStepSupportSubject": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਬਾਰੇ ਮਦਦ",
+  "householdIncludedFamily": "{owner} ਦੇ ਪਰਿਵਾਰ ਪਲਾਨ ਵਿੱਚ ਸ਼ਾਮਲ",
+  "householdIncludedBusiness": "{owner} ਦੇ ਬਿਜ਼ਨਸ ਪਲਾਨ ਵਿੱਚ ਸ਼ਾਮਲ",
+  "householdIncludedFamilyNoName": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਦੇ ਪਰਿਵਾਰ ਪਲਾਨ ਵਿੱਚ ਸ਼ਾਮਲ",
+  "householdIncludedBusinessNoName": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਦੇ ਬਿਜ਼ਨਸ ਪਲਾਨ ਵਿੱਚ ਸ਼ਾਮਲ",
+  "assistantTitle": "Vaultara ਨੂੰ ਪੁੱਛੋ",
+  "assistantTileSubtitle": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਆਮ ਸ਼ਬਦਾਂ ਵਿੱਚ ਪੁੱਛੋ",
+  "assistantIntro": "ਮੈਨੂੰ ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਅਤੇ ਨਵੀਨੀਕਰਨ ਬਾਰੇ ਪੁੱਛੋ। ਮੈਂ ਤੁਹਾਡੇ ਜਾਂਚਣ ਲਈ ਨਵੇਂ ਰਿਕਾਰਡ ਵੀ ਤਿਆਰ ਕਰ ਸਕਦਾ ਹਾਂ।",
+  "assistantHint": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਪੁੱਛੋ",
+  "assistantSuggestionMonth": "ਇਸ ਮਹੀਨੇ ਕੀ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ?",
+  "assistantSuggestionPassport": "ਮੇਰੇ ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਕਦੋਂ ਖਤਮ ਹੋਵੇਗੀ?",
+  "assistantSuggestionAdd": "ਮੇਰਾ ਕਾਰ ਲਾਇਸੰਸ ਜੋੜੋ ਜਿਸ ਦੀ ਮਿਆਦ ਮਾਰਚ ਦੇ ਅੰਤ ਵਿੱਚ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "assistantSend": "ਭੇਜੋ",
+  "assistantSpeak": "ਬੋਲੋ",
+  "assistantStopListening": "ਸੁਣਨਾ ਬੰਦ ਕਰੋ",
+  "assistantListening": "ਸੁਣ ਰਿਹਾ ਹਾਂ",
+  "assistantMicUnavailable": "ਆਵਾਜ਼ ਰਾਹੀਂ ਇਨਪੁੱਟ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਜਾਂਚ ਕਰੋ ਕਿ Vaultara ਨੂੰ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।",
+  "assistantThinking": "ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਜਾਂਚੇ ਜਾ ਰਹੇ ਹਨ",
+  "assistantErrorOffline": "ਤੁਸੀਂ ਆਫ਼ਲਾਈਨ ਹੋ। ਇੰਟਰਨੈੱਟ ਨਾਲ ਜੁੜੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantErrorLimit": "ਤੁਸੀਂ ਹੁਣ ਲਈ ਬਹੁਤ ਸਵਾਲ ਪੁੱਛ ਲਏ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantErrorBusy": "Vaultara ਹੁਣ ਰੁੱਝਿਆ ਹੋਇਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹੀ ਦੇਰ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantErrorFailed": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantRetry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "assistantPremiumTitle": "Vaultara ਨੂੰ ਪੁੱਛੋ ਪ੍ਰੀਮੀਅਮ ਦਾ ਹਿੱਸਾ ਹੈ",
+  "assistantPremiumBody": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਸਵਾਲ ਪੁੱਛਣ ਅਤੇ ਆਮ ਸ਼ਬਦਾਂ ਵਿੱਚ ਰਿਕਾਰਡ ਜੋੜਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
+  "assistantSeePlans": "ਪਲਾਨ ਦੇਖੋ",
+  "assistantEmptyReply": "ਮੈਨੂੰ ਜਵਾਬ ਨਹੀਂ ਮਿਲਿਆ। ਕਿਸੇ ਹੋਰ ਤਰੀਕੇ ਨਾਲ ਪੁੱਛ ਕੇ ਦੇਖੋ।",
+  "assistantDraftReady": "ਮੈਂ ਇਹ ਤੁਹਾਡੇ ਲਈ ਤਿਆਰ ਕੀਤਾ ਹੈ। ਇਸ ਨੂੰ ਜਾਂਚੋ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "assistantNewChat": "ਨਵੀਂ ਚੈਟ",
+  "assistantPrivacyNote": "ਜਵਾਬ AI ਨਾਲ ਬਣਦੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਅਤੇ ਜਵਾਬ ਦੇਣ ਲਈ ਲੋੜੀਂਦੇ ਰਿਕਾਰਡ ਦੇ ਵੇਰਵੇ ਹੀ ਸਾਡੇ AI ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜੇ ਜਾਂਦੇ ਹਨ। ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡਾਂ ਦੇ ਨੋਟ ਕਦੇ ਨਹੀਂ ਭੇਜੇ ਜਾਂਦੇ। ਤੁਹਾਡੇ ਪੁਸ਼ਟੀ ਕਰਨ ਤੱਕ ਕੁਝ ਵੀ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾਂਦਾ।",
+  "assistantActionAddTitle": "ਨਵਾਂ ਰਿਕਾਰਡ",
+  "assistantActionUpdateTitle": "ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ",
+  "assistantActionDismiss": "ਹਟਾਓ",
+  "assistantActionNoDate": "ਹਾਲੇ ਕੋਈ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨਹੀਂ",
+  "assistantActionExpires": "ਮਿਆਦ ਖਤਮ: {date}",
+  "assistantActionChange": "{from} ਤੋਂ {to}",
+  "assistantActionFor": "{person} ਲਈ",
+  "assistantActionOpened": "ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਲਈ ਖੋਲ੍ਹਿਆ ਗਿਆ",
+  "assistantActionOpenAgain": "ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ",
+  "assistantLockedRecord": "ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ",
+  "assistantRecordMissing": "ਇਹ ਰਿਕਾਰਡ ਹੁਣ Vaultara ਵਿੱਚ ਨਹੀਂ ਹੈ।",
+  "describeItAction": "ਦੱਸ ਕੇ ਜੋੜੋ",
+  "describeItTitle": "ਆਪਣੇ ਰਿਕਾਰਡ ਬਾਰੇ ਦੱਸੋ",
+  "describeItBody": "ਦੱਸੋ ਕਿ ਇਹ ਕੀ ਹੈ, ਕਿਸ ਦਾ ਹੈ ਅਤੇ ਇਸ ਦੀ ਮਿਆਦ ਕਦੋਂ ਖਤਮ ਹੁੰਦੀ ਹੈ। ਅਸੀਂ ਫਾਰਮ ਭਰ ਦਿੰਦੇ ਹਾਂ, ਤੁਸੀਂ ਉਸ ਨੂੰ ਜਾਂਚ ਲਓ।",
+  "describeItHint": "ਉਦਾਹਰਣ ਲਈ: ਮੇਰੀ ਕਾਰ ਦੀ ਲਾਇਸੰਸ ਡਿਸਕ ਦੀ ਮਿਆਦ ਮਾਰਚ ਦੇ ਅੰਤ ਵਿੱਚ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "describeItFill": "ਫਾਰਮ ਭਰੋ",
+  "describeItFilled": "ਅਸੀਂ ਫਾਰਮ ਭਰ ਦਿੱਤਾ ਹੈ। ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਜਾਂਚ ਲਓ।",
+  "describeItNoResult": "ਅਸੀਂ ਇਹ ਸਮਝ ਨਹੀਂ ਸਕੇ। ਦੱਸੋ ਕਿ ਇਹ ਕੀ ਹੈ ਅਤੇ ਇਸ ਦੀ ਮਿਆਦ ਕਦੋਂ ਖਤਮ ਹੁੰਦੀ ਹੈ।",
+  "groupSuggestionChip": "ਸ਼ਾਇਦ: {group}",
+  "groupSuggestionApply": "ਇਹ ਗਰੁੱਪ ਵਰਤੋ",
+  "sharePdfAttached": "ਅਸੀਂ PDF ਜੋੜ ਦਿੱਤੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਉਸ ਵਿੱਚੋਂ ਵੇਰਵੇ ਭਰੋ।",
+  "familyEditTitle": "ਵਿਅਕਤੀ ਸੰਪਾਦਿਤ ਕਰੋ",
+  "staffEmailLabel": "ਈਮੇਲ (ਵਿਕਲਪਿਕ)",
+  "staffEmailHint": "ਉਦਾਹਰਣ ਲਈ: thabo@example.com",
+  "staffEmailRemindersTitle": "ਇਸ ਵਿਅਕਤੀ ਨੂੰ ਈਮੇਲ ਨਾਲ ਰਿਮਾਈਂਡਰ ਭੇਜੋ",
+  "staffEmailRemindersSubtitle": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ 30, 14, 7 ਅਤੇ 1 ਦਿਨ ਪਹਿਲਾਂ, ਅਤੇ ਉਸੇ ਦਿਨ",
+  "staffEmailConsent": "ਸਿਰਫ਼ ਉਹੀ ਲੋਕ ਜੋੜੋ ਜਿਨ੍ਹਾਂ ਨੇ ਤੁਹਾਡੇ ਬਿਜ਼ਨਸ ਤੋਂ ਈਮੇਲ ਲੈਣ ਲਈ ਸਹਿਮਤੀ ਦਿੱਤੀ ਹੈ।",
+  "staffEmailOnBadge": "ਈਮੇਲ ਰਿਮਾਈਂਡਰ ਚਾਲੂ",
+  "complianceReportTitle": "ਈਮੇਲ ਰਾਹੀਂ ਮਹੀਨਾਵਾਰ ਪਾਲਣਾ ਰਿਪੋਰਟ",
+  "complianceReportSubtitle": "ਹਰ ਮਹੀਨੇ ਦੀ 1 ਤਾਰੀਖ ਨੂੰ: ਕੌਣ ਅੱਪ ਟੂ ਡੇਟ ਹੈ, ਕੀ ਜਲਦੀ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ, ਅਤੇ ਇੱਕ ਸਪ੍ਰੈੱਡਸ਼ੀਟ ਫਾਈਲ",
+  "complianceReportSaveError": "ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "updatesReviewTitle": "ਜਾਂਚਣ ਲਈ ਅੱਪਡੇਟ",
+  "updatesReviewIntro": "ਤੁਹਾਡੀ ਟੀਮ ਨੇ ਇਹ ਈਮੇਲ ਲਿੰਕ ਤੋਂ ਭੇਜੇ ਹਨ। ਮਨਜ਼ੂਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਫਾਈਲ ਜਾਂਚ ਲਓ।",
+  "updatesReviewNewDate": "ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ: {date}",
+  "updatesReviewSentBy": "{person} ਨੇ {date} ਨੂੰ ਭੇਜਿਆ",
+  "updatesApprove": "ਮਨਜ਼ੂਰ ਕਰੋ",
+  "updatesReject": "ਰੱਦ ਕਰੋ",
+  "updatesApproved": "{name} ਨੂੰ {date} ਤੱਕ ਨਵੀਨੀਕ੍ਰਿਤ ਕੀਤਾ ਗਿਆ",
+  "updatesApprovedNoFile": "ਰਿਕਾਰਡ ਨਵੀਨੀਕ੍ਰਿਤ ਹੋ ਗਿਆ। ਫਾਈਲ ਨਹੀਂ ਜੋੜੀ ਗਈ ਕਿਉਂਕਿ ਇਸ ਰਿਕਾਰਡ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ 10 ਫਾਈਲਾਂ ਹਨ।",
+  "updatesRejected": "ਅੱਪਡੇਟ ਰੱਦ ਕੀਤਾ ਗਿਆ",
+  "updatesRejectTitle": "ਇਹ ਅੱਪਡੇਟ ਰੱਦ ਕਰਨਾ ਹੈ?",
+  "updatesRejectBody": "ਫਾਈਲ ਮਿਟਾ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਰਿਕਾਰਡ ਜਿਵੇਂ ਹੈ ਉਵੇਂ ਹੀ ਰਹਿੰਦਾ ਹੈ। ਤੁਸੀਂ ਬਾਅਦ ਵਿੱਚ ਨਵੀਂ ਬੇਨਤੀ ਭੇਜ ਸਕਦੇ ਹੋ।",
+  "updatesActionError": "ਇਹ ਪੂਰਾ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "updatesRecordMissing": "ਇਹ ਰਿਕਾਰਡ ਹੁਣ Vaultara ਵਿੱਚ ਨਹੀਂ ਹੈ। ਇਸ ਨੂੰ ਹਟਾਉਣ ਲਈ ਅੱਪਡੇਟ ਰੱਦ ਕਰੋ।",
+  "updatesFileError": "ਫਾਈਲ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀ",
+  "requestUpdateMenu": "ਅੱਪਡੇਟ ਮੰਗੋ",
+  "requestUpdateTitle": "{person} ਤੋਂ ਅੱਪਡੇਟ ਮੰਗਣਾ ਹੈ?",
+  "requestUpdateBody": "ਅਸੀਂ {email} ਨੂੰ ਇੱਕ ਸੁਰੱਖਿਅਤ ਲਿੰਕ ਈਮੇਲ ਕਰਦੇ ਹਾਂ। ਉਹ ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਅਤੇ ਨਵੀਨੀਕ੍ਰਿਤ ਦਸਤਾਵੇਜ਼ ਦੀ ਫ਼ੋਟੋ ਜਾਂ PDF ਭੇਜ ਸਕਦੇ ਹਨ। ਲਿੰਕ 7 ਦਿਨ ਚੱਲਦਾ ਹੈ ਅਤੇ ਇੱਕ ਵਾਰ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
+  "requestUpdateSend": "ਬੇਨਤੀ ਭੇਜੋ",
+  "requestUpdateSending": "ਬੇਨਤੀ ਭੇਜੀ ਜਾ ਰਹੀ ਹੈ",
+  "requestUpdateSent": "ਬੇਨਤੀ {person} ਨੂੰ ਭੇਜ ਦਿੱਤੀ ਗਈ",
+  "requestUpdateError": "ਬੇਨਤੀ ਨਹੀਂ ਭੇਜੀ ਜਾ ਸਕੀ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "requestUpdateLimit": "ਤੁਸੀਂ ਅੱਜ ਬਹੁਤ ਬੇਨਤੀਆਂ ਭੇਜ ਦਿੱਤੀਆਂ ਹਨ। ਕੱਲ੍ਹ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "requestUpdateNoEmail": "ਪਹਿਲਾਂ ਪਰਿਵਾਰ ਸਕ੍ਰੀਨ 'ਤੇ ਇਸ ਵਿਅਕਤੀ ਦਾ ਈਮੇਲ ਪਤਾ ਜੋੜੋ।",
+  "dailyDigestSwitchTitle": "ਵੱਖਰੇ ਰਿਮਾਈਂਡਰਾਂ ਦੀ ਥਾਂ ਇੱਕ ਰੋਜ਼ਾਨਾ ਸਾਰ",
+  "dailyDigestSwitchSubtitle": "ਆਪਣੇ ਰਿਮਾਈਂਡਰ ਦੇ ਸਮੇਂ 'ਤੇ ਇੱਕ ਨੋਟੀਫਿਕੇਸ਼ਨ ਪਾਓ, ਜਿਸ ਵਿੱਚ ਉਸ ਦਿਨ ਦੀਆਂ ਸਾਰੀਆਂ ਚੀਜ਼ਾਂ ਹੋਣ।",
+  "dailyDigestTurnedOn": "ਤੁਹਾਡੇ ਰਿਮਾਈਂਡਰ ਹੁਣ ਇੱਕ ਰੋਜ਼ਾਨਾ ਸਾਰ ਵਜੋਂ ਆਉਣਗੇ।",
+  "dailyDigestTurnedOff": "ਹਰ ਰਿਕਾਰਡ ਦੇ ਵੱਖਰੇ ਰਿਮਾਈਂਡਰ ਦੁਬਾਰਾ ਚਾਲੂ ਹੋ ਗਏ ਹਨ।",
+  "dailyDigestTitle": "{count, plural, one{1 ਰਿਕਾਰਡ ਵੱਲ ਤੁਹਾਡਾ ਧਿਆਨ ਚਾਹੀਦਾ ਹੈ} other{{count} ਰਿਕਾਰਡਾਂ ਵੱਲ ਤੁਹਾਡਾ ਧਿਆਨ ਚਾਹੀਦਾ ਹੈ}}",
+  "dailyDigestBody": "ਆਉਣ ਵਾਲੇ: {names}।",
+  "dailyDigestBodyMore": "ਆਉਣ ਵਾਲੇ: {names} ਅਤੇ {count} ਹੋਰ।",
+  "dailyDigestLockedRecord": "ਇੱਕ ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ",
+  "renewReasonRepeat": "{months, plural, one{ਤੁਹਾਡੀ ਦੁਹਰਾਓ ਸੈਟਿੰਗ ਅਨੁਸਾਰ, ਹਰ ਮਹੀਨੇ} other{ਤੁਹਾਡੀ ਦੁਹਰਾਓ ਸੈਟਿੰਗ ਅਨੁਸਾਰ, ਹਰ {months} ਮਹੀਨਿਆਂ ਬਾਅਦ}}",
+  "renewReasonHistory": "{count, plural, one{ਤੁਹਾਡੇ ਪਿਛਲੇ ਨਵੀਨੀਕਰਨ ਦੇ ਆਧਾਰ 'ਤੇ} other{ਤੁਹਾਡੇ ਪਿਛਲੇ {count} ਨਵੀਨੀਕਰਨਾਂ ਦੇ ਆਧਾਰ 'ਤੇ}}",
+  "renewReasonTypical": "{years, plural, one{ਆਮ ਤੌਰ 'ਤੇ 1 ਸਾਲ ਲਈ ਵੈਧ} other{ਆਮ ਤੌਰ 'ਤੇ {years} ਸਾਲਾਂ ਲਈ ਵੈਧ}}",
+  "renewChangeHint": "ਬਦਲਣ ਲਈ ਤਾਰੀਖ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "renewPickDate": "ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਚੁਣੋ",
+  "renewPickDateHint": "ਉਹ ਤਾਰੀਖ ਚੁਣੋ ਜੋ ਤੁਹਾਡੇ ਨਵੇਂ ਦਸਤਾਵੇਜ਼ 'ਤੇ ਦਿੱਤੀ ਹੈ।",
+  "renewCostJump": "ਇਹ ਪਿਛਲੀ ਵਾਰ ({previous}) ਨਾਲੋਂ {percent}% ਵੱਧ ਹੈ।",
+  "smartInsightCostIncreaseHeading": "ਨਵੀਨੀਕਰਨ ਦਾ ਖਰਚਾ ਵਧ ਗਿਆ",
+  "smartInsightCostIncreaseBody": "ਤੁਹਾਡੇ {name} ਦੇ ਨਵੀਨੀਕਰਨ ਦਾ ਖਰਚਾ ਪਿਛਲੀ ਵਾਰ ਦੇ ਮੁਕਾਬਲੇ {percent}% ਵਧ ਗਿਆ।",
+  "reminderStartRenewingTitle": "{recordName} ਦਾ ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਸਮਾਂ",
+  "reminderStartRenewingBody": "{firstName}, ਤੁਹਾਡੇ {recordName} ਦਾ ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਸਮਾਂ ਹੋ ਗਿਆ ਹੈ। ਇਸ ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ ਹੁਣ ਸ਼ੁਰੂ ਕਰਨ ਨਾਲ ਤੁਹਾਨੂੰ ਕਾਫ਼ੀ ਸਮਾਂ ਮਿਲਦਾ ਹੈ।",
+  "renewChecklistProgress": "{total} ਵਿੱਚੋਂ {done} ਕਦਮ ਪੂਰੇ",
+  "renewChecklistStart": "ਆਪਣੀ ਨਵੀਨੀਕਰਨ ਚੈੱਕਲਿਸਟ ਖੋਲ੍ਹੋ",
+  "scanUpdateTitle": "ਆਪਣੇ ਮੌਜੂਦਾ {name} ਨੂੰ ਨਵੀਂ ਤਾਰੀਖ ਨਾਲ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ?",
+  "scanUpdateBody": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ {from} ਤੋਂ ਬਦਲ ਕੇ {to} ਹੋ ਜਾਵੇਗੀ। ਤੁਹਾਡਾ ਨਵੀਨੀਕਰਨ ਇਤਿਹਾਸ ਬਣਿਆ ਰਹੇਗਾ।",
+  "scanAddAsNew": "ਨਵੇਂ ਵਜੋਂ ਜੋੜੋ",
+  "scanUpdateExisting": "ਅੱਪਡੇਟ ਕਰੋ",
+  "duplicateRecordTitle": "ਪਹਿਲਾਂ ਹੀ ਜੋੜਿਆ ਹੋਇਆ ਹੈ",
+  "duplicateRecordBody": "ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ {name} ਹੈ, ਜਿਸ ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ।",
+  "duplicateKeepBoth": "ਦੋਵੇਂ ਰੱਖੋ",
+  "duplicateUpdateExisting": "ਮੌਜੂਦਾ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ",
+  "editorDefaultsHint": "{group} ਲਈ ਆਮ ਸੈਟਿੰਗਾਂ ਭਰ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ। ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਹੋਰ ਵੇਰਵੇ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ।",
+  "csvImportNoteAlreadyTracked": "ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਨਾਮ ਦਾ ਰਿਕਾਰਡ ਪਹਿਲਾਂ ਹੀ ਹੈ, ਜਿਸ ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "visaSectionTitle": "ਵੀਜ਼ੇ",
+  "visaFree": "ਵੀਜ਼ਾ-ਮੁਕਤ",
+  "visaFreeDays": "{days, plural, one{{days} ਦਿਨ ਲਈ ਵੀਜ਼ਾ-ਮੁਕਤ} other{{days} ਦਿਨਾਂ ਲਈ ਵੀਜ਼ਾ-ਮੁਕਤ}}",
+  "visaOnArrival": "ਪਹੁੰਚਣ 'ਤੇ ਵੀਜ਼ਾ",
+  "visaEta": "ETA ਲੋੜੀਂਦਾ",
+  "visaEvisa": "ਈ-ਵੀਜ਼ਾ ਲੋੜੀਂਦਾ",
+  "visaRequired": "ਵੀਜ਼ਾ ਲੋੜੀਂਦਾ",
+  "visaNoEntry": "ਦਾਖਲੇ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ",
+  "visaHomeCountry": "ਆਪਣਾ ਦੇਸ਼",
+  "visaStayUpTo": "{days, plural, one{{days} ਦਿਨ ਤੱਕ ਠਹਿਰ ਸਕਦੇ ਹੋ} other{{days} ਦਿਨਾਂ ਤੱਕ ਠਹਿਰ ਸਕਦੇ ਹੋ}}",
+  "visaTripTooLong": "ਤੁਹਾਡੀ ਯਾਤਰਾ {tripDays} ਦਿਨਾਂ ਦੀ ਹੈ। ਇਹ ਇਜਾਜ਼ਤ ਵਾਲੇ {days} ਦਿਨਾਂ ਤੋਂ ਲੰਬੀ ਹੈ।",
+  "visaStayTooLong": "ਯਾਤਰਾ ਇਜਾਜ਼ਤ ਵਾਲੀ ਠਹਿਰ ਤੋਂ ਲੰਬੀ ਹੈ",
+  "visaApplyBy": "{date} ਤੱਕ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaApplyNow": "ਜਿੰਨੀ ਜਲਦੀ ਹੋ ਸਕੇ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaAddToChecklist": "ਚੈੱਕਲਿਸਟ ਵਿੱਚ ਜੋੜੋ",
+  "visaOnChecklist": "ਤੁਹਾਡੀ ਚੈੱਕਲਿਸਟ ਵਿੱਚ ਹੈ",
+  "visaAdded": "ਤੁਹਾਡੀ ਚੈੱਕਲਿਸਟ ਵਿੱਚ ਜੋੜਿਆ ਗਿਆ",
+  "visaChecklistVisa": "{country} ਵੀਜ਼ੇ ਲਈ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaChecklistEvisa": "{country} ਈ-ਵੀਜ਼ੇ ਲਈ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaChecklistEta": "{country} ETA ਲਈ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaCheckRules": "ਨਿਯਮ ਦੇਖੋ",
+  "visaSearchQuery": "{nationality} ਨਾਗਰਿਕਾਂ ਲਈ {destination} ਵੀਜ਼ਾ ਲੋੜਾਂ",
+  "visaCredit": "ਵੀਜ਼ਾ ਡੇਟਾ: Passport Index। ਨਿਯਮ ਬਦਲਦੇ ਰਹਿੰਦੇ ਹਨ, ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਦੂਤਾਵਾਸ ਤੋਂ ਪੁਸ਼ਟੀ ਕਰੋ।",
+  "visaNotAvailable": "ਵੀਜ਼ਾ ਜਾਣਕਾਰੀ ਹਾਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+  "visaChecking": "ਵੀਜ਼ਾ ਨਿਯਮ ਜਾਂਚੇ ਜਾ ਰਹੇ ਹਨ",
+  "visaNoDestinations": "ਵੀਜ਼ਾ ਨਿਯਮ ਦੇਖਣ ਲਈ ਕੋਈ ਮੰਜ਼ਿਲ ਜੋੜੋ।",
+  "visaPassportCountry": "ਪਾਸਪੋਰਟ ਜਾਰੀ ਕਰਨ ਵਾਲਾ ਦੇਸ਼",
+  "visaPassportCountryHint": "ਪਾਸਪੋਰਟ ਜਾਰੀ ਕਰਨ ਵਾਲਾ ਦੇਸ਼ ਚੁਣੋ। ਵੀਜ਼ਾ ਨਿਯਮ ਜਾਂਚਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+  "visaPassportOf": "{country} ਦਾ ਪਾਸਪੋਰਟ",
+  "visaAddPassportCountry": "ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ",
+  "visaAddYourPassportCountry": "ਆਪਣਾ ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ",
+  "visaNeedsYourCountry": "ਵੀਜ਼ਾ ਜਾਂਚਣ ਲਈ ਆਪਣਾ ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ।",
+  "visaNeedsCountry": "ਵੀਜ਼ਾ ਜਾਂਚਣ ਲਈ {name} ਦਾ ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ।",
+  "visaAutoNote": "ਤੁਹਾਡੇ ਪਾਸਪੋਰਟਾਂ ਦੇ ਵੀਜ਼ਾ ਨਿਯਮਾਂ ਤੋਂ ਸੈੱਟ ਕੀਤਾ ਗਿਆ। ਬਦਲਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "visaReminderTitle": "ਵੀਜ਼ਿਆਂ ਲਈ ਅਰਜ਼ੀ ਦੇਣ ਦਾ ਸਮਾਂ",
+  "visaReminderBody": "ਤੁਹਾਡੀ ਯਾਤਰਾ {trip} ਲਈ ਅਰਜ਼ੀ ਦੇਣ ਦਾ ਸੁਝਾਇਆ ਦਿਨ ਅੱਜ ਹੈ। ਸਹੀ ਨਿਯਮਾਂ ਲਈ ਦੂਤਾਵਾਸ ਤੋਂ ਪੁੱਛੋ।",
+  "visaApplyOfficial": "ਅਧਿਕਾਰਤ ਸਾਈਟ ਤੇ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaLeavingTitle": "Vaultara ਤੋਂ ਬਾਹਰ ਜਾ ਰਹੇ ਹੋ",
+  "visaLeavingBody": "ਤੁਸੀਂ {country} ਦੀ ਅਧਿਕਾਰਤ ਸਰਕਾਰੀ ਸਾਈਟ ਤੇ ਜਾ ਰਹੇ ਹੋ:",
+  "visaLeavingNote": "Vaultara ਇਸ ਸਾਈਟ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਹੈ ਅਤੇ ਕੋਈ ਪੈਸਾ ਨਹੀਂ ਲੈਂਦਾ। ਸਰਕਾਰੀ ਫੀਸ ਉਸੇ ਸਾਈਟ ਤੇ ਭਰੀ ਜਾਂਦੀ ਹੈ।",
+  "visaOfficialSearchHint": "{country} ਦੀ ਅਧਿਕਾਰਤ ਸਰਕਾਰੀ ਸਾਈਟ ਲੱਭੋ। ਵਾਧੂ ਫੀਸ ਲੈਣ ਵਾਲੀਆਂ ਏਜੰਟ ਸਾਈਟਾਂ ਤੋਂ ਬਚੋ।",
+  "visaOfficialSearch": "ਅਧਿਕਾਰਤ ਸਾਈਟ ਲੱਭੋ",
+  "visaOfficialSearchQuery": "{country} ਅਧਿਕਾਰਤ ਈ-ਵੀਜ਼ਾ ਸਰਕਾਰੀ ਵੈੱਬਸਾਈਟ",
+  "visaLivesIn": "{country} ਵਿੱਚ ਰਹਿੰਦੇ ਹਨ",
+  "visaResidenceTitle": "ਤੁਸੀਂ ਜਿਸ ਦੇਸ਼ ਵਿੱਚ ਰਹਿੰਦੇ ਹੋ",
+  "visaResidenceHint": "ਉਹ ਦੂਤਾਵਾਸ ਲੱਭਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਵੀਜ਼ੇ ਲਈ ਅਰਜ਼ੀ ਦੇ ਸਕਦੇ ਹੋ।",
+  "visaEmbassyApply": "{residence} ਵਿੱਚ {country} ਦੇ ਦੂਤਾਵਾਸ ਜਾਂ ਕੌਂਸਲਖਾਨੇ ਵਿੱਚ ਅਰਜ਼ੀ ਦਿਓ।",
+  "visaEmbassyApplyNoResidence": "ਜਿਸ ਦੇਸ਼ ਵਿੱਚ ਤੁਸੀਂ ਰਹਿੰਦੇ ਹੋ, ਉੱਥੇ {country} ਦੇ ਦੂਤਾਵਾਸ ਜਾਂ ਕੌਂਸਲਖਾਨੇ ਵਿੱਚ ਅਰਜ਼ੀ ਦਿਓ।",
+  "visaEmbassyCentreNote": "ਦੂਤਾਵਾਸ ਦੀ ਵੈੱਬਸਾਈਟ ਤੇ ਉਸ ਵੀਜ਼ਾ ਕੇਂਦਰ ਦਾ ਨਾਮ ਹੁੰਦਾ ਹੈ ਜੋ ਉਹ ਵਰਤਦਾ ਹੈ, ਜਿਵੇਂ VFS Global ਜਾਂ TLScontact। ਸਿਰਫ਼ ਉੱਥੇ ਦੱਸੇ ਕੇਂਦਰ ਰਾਹੀਂ ਹੀ ਅਰਜ਼ੀ ਦਿਓ।",
+  "visaFindEmbassy": "ਦੂਤਾਵਾਸ ਲੱਭੋ",
+  "visaContactImmigration": "ਤੁਸੀਂ {country} ਵਿੱਚ ਰਹਿੰਦੇ ਹੋ। ਆਪਣੇ ਵੀਜ਼ੇ ਬਾਰੇ ਪੁੱਛਣ ਲਈ {country} ਦੇ ਇਮੀਗ੍ਰੇਸ਼ਨ ਦਫ਼ਤਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।",
+  "visaRecordName": "{country} ਲਈ ਵੀਜ਼ਾ",
+  "visaAddMyVisa": "ਮੇਰਾ ਵੀਜ਼ਾ ਜੋੜੋ",
+  "visaChooseSaved": "ਸੇਵ ਕੀਤਾ ਵੀਜ਼ਾ ਚੁਣੋ",
+  "visaLinked": "ਵੀਜ਼ਾ ਇਸ ਯਾਤਰਾ ਨਾਲ ਜੋੜਿਆ ਗਿਆ",
+  "visaRecordValid": "ਵੀਜ਼ਾ ਸੇਵ ਹੋ ਗਿਆ। {date} ਤੱਕ ਵੈਧ।",
+  "visaRecordExpires": "ਤੁਹਾਡੇ ਵੀਜ਼ੇ ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, ਤੁਹਾਡੀ ਵਾਪਸੀ ਤੋਂ ਪਹਿਲਾਂ।",
+  "visaRemoveLink": "ਲਿੰਕ ਹਟਾਓ",
+  "visaSummaryNeed": "{count, plural, one{{total} ਯਾਤਰੀਆਂ ਵਿੱਚੋਂ {count} ਨੂੰ ਅਜੇ ਵੀ ਵੀਜ਼ਾ ਚਾਹੀਦਾ ਹੈ} other{{total} ਯਾਤਰੀਆਂ ਵਿੱਚੋਂ {count} ਨੂੰ ਅਜੇ ਵੀ ਵੀਜ਼ਾ ਚਾਹੀਦਾ ਹੈ}}",
+  "visaSummaryEarliest": "ਸਭ ਤੋਂ ਪਹਿਲਾਂ: {date} ਤੱਕ ਅਰਜ਼ੀ ਦਿਓ",
+  "visaSummaryAllSet": "ਇਸ ਯਾਤਰਾ ਲਈ ਸਾਰਿਆਂ ਕੋਲ ਵੀਜ਼ਾ ਹੈ।",
+  "stayTitle": "ਤੁਹਾਡਾ ਠਹਿਰਾਅ",
+  "stayDayOf": "{country} ਵਿੱਚ {allowed} ਵਿੱਚੋਂ ਦਿਨ {used}",
+  "stayLeaveBy": "{date} ਤੱਕ ਚਲੇ ਜਾਓ",
+  "stayOver": "ਤੁਹਾਡਾ ਇਜਾਜ਼ਤ ਵਾਲਾ ਠਹਿਰਾਅ {date} ਨੂੰ ਖਤਮ ਹੋ ਗਿਆ।",
+  "stayStrictest": "ਸਭ ਤੋਂ ਛੋਟੇ ਇਜਾਜ਼ਤ ਵਾਲੇ ਠਹਿਰਾਅ ਤੇ ਅਧਾਰਤ, {name} ਲਈ।",
+  "stayStrictestYou": "ਤੁਹਾਡੇ ਇਜਾਜ਼ਤ ਵਾਲੇ ਠਹਿਰਾਅ ਤੇ ਅਧਾਰਤ, ਜੋ ਸਮੂਹ ਵਿੱਚ ਸਭ ਤੋਂ ਛੋਟਾ ਹੈ।",
+  "staySchengenArea": "ਸ਼ੈਂਗੇਨ ਖੇਤਰ",
+  "staySchengenNote": "{days, plural, one{ਪੂਰੇ ਸ਼ੈਂਗੇਨ ਖੇਤਰ ਵਿੱਚ ਇੱਕੋ ਠਹਿਰਾਅ: ਕਿਸੇ ਵੀ {window} ਦਿਨਾਂ ਵਿੱਚ {days} ਦਿਨ।} other{ਪੂਰੇ ਸ਼ੈਂਗੇਨ ਖੇਤਰ ਵਿੱਚ ਇੱਕੋ ਠਹਿਰਾਅ: ਕਿਸੇ ਵੀ {window} ਦਿਨਾਂ ਵਿੱਚ {days} ਦਿਨ।}}",
+  "stayArrivedOther": "ਮੇਰੇ ਪਹੁੰਚਣ ਦਾ ਦਿਨ ਵੱਖਰਾ ਸੀ",
+  "stayArrivalPick": "ਤੁਸੀਂ ਕਦੋਂ ਪਹੁੰਚੇ?",
+  "stayReminderTitle": "{days, plural, one{{country} ਵਿੱਚ ਤੁਹਾਡੇ ਠਹਿਰਾਅ ਦਾ {days} ਦਿਨ ਬਾਕੀ} other{{country} ਵਿੱਚ ਤੁਹਾਡੇ ਠਹਿਰਾਅ ਦੇ {days} ਦਿਨ ਬਾਕੀ}}",
+  "stayReminderBody": "ਆਪਣੇ ਇਜਾਜ਼ਤ ਵਾਲੇ ਸਮੇਂ ਦੇ ਅੰਦਰ ਰਹਿਣ ਲਈ {date} ਤੱਕ ਚਲੇ ਜਾਓ।",
+  "travelPassportTooSoonNamed": "{name} ਦੇ ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਇਸ ਯਾਤਰਾ ਲਈ ਬਹੁਤ ਜਲਦੀ ਖਤਮ ਹੁੰਦੀ ਹੈ। ਬੁੱਕ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇਸਨੂੰ ਜਾਂਚੋ।",
+  "travelPassportTooSoonYours": "ਤੁਹਾਡੇ ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਇਸ ਯਾਤਰਾ ਲਈ ਬਹੁਤ ਜਲਦੀ ਖਤਮ ਹੁੰਦੀ ਹੈ। ਬੁੱਕ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇਸਨੂੰ ਜਾਂਚੋ।",
+  "travelPassportTooSoonSeveral": "ਕੁਝ ਪਾਸਪੋਰਟਾਂ ਦੀ ਮਿਆਦ ਇਸ ਯਾਤਰਾ ਲਈ ਬਹੁਤ ਜਲਦੀ ਖਤਮ ਹੁੰਦੀ ਹੈ। ਬੁੱਕ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇਨ੍ਹਾਂ ਨੂੰ ਜਾਂਚੋ।",
+  "secTitle": "ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ",
+  "secProfileSubtitle": "ਐਪ ਲੌਕ, ਡਿਵਾਈਸਾਂ, ਪਰਦੇਦਾਰੀ ਅਤੇ ਤੁਹਾਡਾ ਡਾਟਾ",
+  "secSectionSignIn": "ਸਾਈਨ ਇਨ",
+  "secSectionAppProtection": "ਐਪ ਸੁਰੱਖਿਆ",
+  "secSectionPrivacy": "ਪਰਦੇਦਾਰੀ",
+  "secCheckupTitle": "ਸੁਰੱਖਿਆ ਜਾਂਚ",
+  "secCheckupScore": "{total} ਵਿੱਚੋਂ {done} ਪੂਰੇ",
+  "secCheckupAllDone": "ਤੁਹਾਡਾ ਖਾਤਾ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸੁਰੱਖਿਅਤ ਹੈ।",
+  "secCheckEmail": "ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਹੋ ਗਈ",
+  "secCheckTwoStep": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਚਾਲੂ ਹੈ",
+  "secCheckAppLock": "ਐਪ ਲੌਕ ਚਾਲੂ ਹੈ",
+  "secCheckPhotos": "ਐਨਕ੍ਰਿਪਟ ਕੀਤੀਆਂ ਫ਼ੋਟੋਆਂ ਚਾਲੂ ਹਨ",
+  "secCheckRecoveryKey": "ਰਿਕਵਰੀ ਕੁੰਜੀ ਸੰਭਾਲੀ ਗਈ",
+  "secCheckPassword": "ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਸੈੱਟ ਹੈ",
+  "secCheckActionVerify": "ਤਸਦੀਕ ਕਰੋ",
+  "secCheckActionTurnOn": "ਚਾਲੂ ਕਰੋ",
+  "secCheckActionSetUp": "ਸੈੱਟ ਕਰੋ",
+  "secCheckActionChange": "ਬਦਲੋ",
+  "secChangePasswordSubtitle": "ਆਪਣੇ ਖਾਤੇ ਲਈ ਨਵਾਂ ਪਾਸਵਰਡ ਚੁਣੋ",
+  "secCurrentPassword": "ਮੌਜੂਦਾ ਪਾਸਵਰਡ",
+  "secNewPassword": "ਨਵਾਂ ਪਾਸਵਰਡ",
+  "secConfirmPassword": "ਨਵੇਂ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+  "secPasswordsDoNotMatch": "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ।",
+  "secPasswordSameAsCurrent": "ਅਜਿਹਾ ਪਾਸਵਰਡ ਚੁਣੋ ਜੋ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਤੋਂ ਵੱਖਰਾ ਹੋਵੇ।",
+  "secPasswordLeaked": "ਇਹ ਪਾਸਵਰਡ ਇੱਕ ਜਾਣੇ-ਪਛਾਣੇ ਡਾਟਾ ਲੀਕ ਵਿੱਚ ਸਾਹਮਣੇ ਆਇਆ ਹੈ। ਕੋਈ ਹੋਰ ਪਾਸਵਰਡ ਚੁਣੋ।",
+  "secPasswordChanged": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
+  "secStrengthHint": "ਅੱਖਰਾਂ, ਅੰਕਾਂ ਅਤੇ ਚਿੰਨ੍ਹਾਂ ਨੂੰ ਮਿਲਾ ਕੇ 12 ਜਾਂ ਵੱਧ ਅੱਖਰ ਵਰਤੋ।",
+  "secStrengthLabel": "ਪਾਸਵਰਡ ਦੀ ਮਜ਼ਬੂਤੀ: {level}",
+  "secStrengthWeak": "ਕਮਜ਼ੋਰ",
+  "secStrengthFair": "ਠੀਕ-ਠਾਕ",
+  "secStrengthGood": "ਚੰਗਾ",
+  "secStrengthStrong": "ਮਜ਼ਬੂਤ",
+  "secDevicesTitle": "ਤੁਹਾਡੀਆਂ ਡਿਵਾਈਸਾਂ",
+  "secDevicesSubtitle": "ਦੇਖੋ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਸਾਈਨ ਇਨ ਹੋ",
+  "secDevicesIntro": "ਇਹ ਡਿਵਾਈਸਾਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ ਇਨ ਹਨ। ਜੇ ਤੁਸੀਂ ਕਿਸੇ ਨੂੰ ਨਹੀਂ ਪਛਾਣਦੇ, ਤਾਂ ਉਸਨੂੰ ਸਾਈਨ ਆਉਟ ਕਰੋ ਅਤੇ ਆਪਣਾ ਪਾਸਵਰਡ ਬਦਲੋ।",
+  "secDevicesEmpty": "ਅਜੇ ਦਿਖਾਉਣ ਲਈ ਕੋਈ ਡਿਵਾਈਸ ਨਹੀਂ ਹੈ।",
+  "secThisDevice": "ਇਹ ਡਿਵਾਈਸ",
+  "secActiveNow": "ਹੁਣ ਕਿਰਿਆਸ਼ੀਲ",
+  "secDeviceLastActive": "ਆਖਰੀ ਵਾਰ ਕਿਰਿਆਸ਼ੀਲ: {time}",
+  "secDeviceAppVersion": "Vaultara {version}",
+  "secUnknownDevice": "ਅਣਜਾਣ ਡਿਵਾਈਸ",
+  "secSignOutDeviceTitle": "ਕੀ {device} ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰਨਾ ਹੈ?",
+  "secSignOutDeviceBody": "ਉਸ ਡਿਵਾਈਸ ਉੱਤੇ Vaultara ਅਗਲੀ ਵਾਰ ਇੰਟਰਨੈੱਟ ਨਾਲ ਜੁੜਨ ਉੱਤੇ ਸਾਈਨ ਆਉਟ ਹੋ ਜਾਵੇਗੀ।",
+  "secDeviceSignedOut": "{device} ਸਾਈਨ ਆਉਟ ਹੋ ਜਾਵੇਗੀ।",
+  "secSignOutOthers": "ਬਾਕੀ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰੋ",
+  "secSignOutOthersTitle": "ਕੀ ਬਾਕੀ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰਨਾ ਹੈ?",
+  "secSignOutOthersBody": "ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ ਇਨ ਹਰ ਦੂਜਾ ਫ਼ੋਨ ਜਾਂ ਟੈਬਲੈੱਟ ਸਾਈਨ ਆਉਟ ਹੋ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸਾਈਨ ਇਨ ਰਹੋਗੇ।",
+  "secSignOutOthersConfirmBody": "ਆਪਣੀਆਂ ਹੋਰ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰਨ ਲਈ ਆਪਣਾ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰੋ।",
+  "secSignedOutOthers": "ਤੁਸੀਂ ਬਾਕੀ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਹੋ ਗਏ ਹੋ।",
+  "secSignedOutEverywhere": "ਤੁਹਾਨੂੰ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰ ਦਿੱਤਾ ਗਿਆ। ਜਾਰੀ ਰੱਖਣ ਲਈ ਦੁਬਾਰਾ ਸਾਈਨ ਇਨ ਕਰੋ।",
+  "secSignedOutRemotely": "ਤੁਹਾਨੂੰ ਕਿਸੇ ਹੋਰ ਡਿਵਾਈਸ ਤੋਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸਾਈਨ ਆਉਟ ਕੀਤਾ ਗਿਆ।",
+  "secHistoryTitle": "ਸੁਰੱਖਿਆ ਇਤਿਹਾਸ",
+  "secHistorySubtitle": "ਹਾਲੀਆ ਸਾਈਨ ਇਨ ਅਤੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਬਦਲਾਅ",
+  "secHistoryIntro": "ਪਿਛਲੇ 90 ਦਿਨਾਂ ਦੇ ਸਾਈਨ ਇਨ ਅਤੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਬਦਲਾਅ।",
+  "secHistoryEmpty": "ਅਜੇ ਦਿਖਾਉਣ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ।",
+  "secJustNow": "ਹੁਣੇ ਹੁਣੇ",
+  "secMinutesAgo": "{count, plural, one{{count} ਮਿੰਟ ਪਹਿਲਾਂ} other{{count} ਮਿੰਟ ਪਹਿਲਾਂ}}",
+  "secHoursAgo": "{count, plural, one{{count} ਘੰਟਾ ਪਹਿਲਾਂ} other{{count} ਘੰਟੇ ਪਹਿਲਾਂ}}",
+  "secDaysAgo": "{count, plural, one{{count} ਦਿਨ ਪਹਿਲਾਂ} other{{count} ਦਿਨ ਪਹਿਲਾਂ}}",
+  "secEventNewSignIn": "ਨਵੀਂ ਡਿਵਾਈਸ ਤੋਂ ਸਾਈਨ ਇਨ",
+  "secEventSignIn": "ਸਾਈਨ ਇਨ ਕੀਤਾ",
+  "secEventPasswordChanged": "ਪਾਸਵਰਡ ਬਦਲਿਆ ਗਿਆ",
+  "secEventEmailChanged": "ਈਮੇਲ ਪਤਾ ਬਦਲਿਆ ਗਿਆ",
+  "secEventEmailChangeRequested": "ਈਮੇਲ ਪਤਾ ਬਦਲਣ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਗਈ",
+  "secEventTwoStepEnabled": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਚਾਲੂ ਕੀਤਾ ਗਿਆ",
+  "secEventTwoStepDisabled": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਬੰਦ ਕੀਤਾ ਗਿਆ",
+  "secEventSessionsRevoked": "ਬਾਕੀ ਸਾਰੀਆਂ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕੀਤਾ",
+  "secEventDeviceSignedOut": "ਇੱਕ ਡਿਵਾਈਸ ਸਾਈਨ ਆਉਟ ਕੀਤੀ ਗਈ",
+  "secEventDataExported": "ਤੁਹਾਡਾ ਡਾਟਾ ਡਾਊਨਲੋਡ ਕੀਤਾ ਗਿਆ",
+  "secEventShareLinkCreated": "ਸਾਂਝਾ ਕਰਨ ਵਾਲਾ ਲਿੰਕ ਬਣਾਇਆ ਗਿਆ",
+  "secEventRecoveryKeyCreated": "ਰਿਕਵਰੀ ਕੁੰਜੀ ਬਣਾਈ ਗਈ",
+  "secEventAppLockEnabled": "ਐਪ ਲੌਕ ਚਾਲੂ ਕੀਤਾ ਗਿਆ",
+  "secEventAppLockDisabled": "ਐਪ ਲੌਕ ਬੰਦ ਕੀਤਾ ਗਿਆ",
+  "secEventPlanStarted": "ਪਲਾਨ ਸ਼ੁਰੂ ਹੋਇਆ",
+  "secEventPlanRenewed": "ਪਲਾਨ ਰੀਨਿਊ ਹੋਇਆ",
+  "secEventPlanCancelled": "ਪਲਾਨ ਰੱਦ ਕੀਤਾ ਗਿਆ",
+  "secEventPlanEnded": "ਪਲਾਨ ਖਤਮ ਹੋਇਆ",
+  "secEventAccountDeletionRequested": "ਖਾਤਾ ਮਿਟਾਉਣ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਗਈ",
+  "secEventOther": "ਖਾਤੇ ਦੀ ਗਤੀਵਿਧੀ",
+  "secAutoLockTitle": "ਦੁਬਾਰਾ ਲੌਕ ਕਰੋ",
+  "secAutoLockBody": "ਚੁਣੋ ਕਿ Vaultara ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਅਨਲਾਕ ਕਰਨ ਲਈ ਕਹਿਣ ਤੋਂ ਪਹਿਲਾਂ ਕਿੰਨੀ ਦੇਰ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਰਹਿ ਸਕਦੀ ਹੈ।",
+  "secAutoLockImmediately": "ਤੁਰੰਤ",
+  "secAutoLockOneMinute": "1 ਮਿੰਟ ਬਾਅਦ",
+  "secAutoLockFiveMinutes": "5 ਮਿੰਟ ਬਾਅਦ",
+  "secAutoLockFifteenMinutes": "15 ਮਿੰਟ ਬਾਅਦ",
+  "secAutoLockNeedsAppLock": "ਇਸਨੂੰ ਵਰਤਣ ਲਈ ਐਪ ਲੌਕ ਚਾਲੂ ਕਰੋ",
+  "secHideInRecentsTitle": "ਪਰਦੇਦਾਰੀ ਸਕ੍ਰੀਨ",
+  "secHideInRecentsSubtitle": "ਹਾਲੀਆ ਐਪਾਂ ਵਾਲੇ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਆਪਣੇ ਰਿਕਾਰਡ ਲੁਕਾਓ",
+  "secBlockScreenshotsTitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਰੋਕੋ",
+  "secBlockScreenshotsSubtitle": "ਉਹਨਾਂ ਸਕ੍ਰੀਨਾਂ ਉੱਤੇ ਜੋ ਦਸਤਾਵੇਜ਼ ਦੇ ਵੇਰਵੇ, ਫ਼ੋਟੋਆਂ ਅਤੇ ਕੁੰਜੀਆਂ ਦਿਖਾਉਂਦੀਆਂ ਹਨ",
+  "secCopiedWillClear": "ਕਾਪੀ ਹੋ ਗਿਆ। ਇਹ 60 ਸਕਿੰਟਾਂ ਵਿੱਚ ਕਲਿੱਪਬੋਰਡ ਤੋਂ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।",
+  "secAnalyticsTitle": "ਵਰਤੋਂ ਡਾਟਾ ਸਾਂਝਾ ਕਰੋ",
+  "secAnalyticsSubtitle": "ਗੁਮਨਾਮ ਡਾਟਾ ਜੋ Vaultara ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਦਦ ਕਰਦਾ ਹੈ",
+  "secAnalyticsSheetTitle": "Vaultara ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ",
+  "secAnalyticsSheetBody": "Vaultara ਨੂੰ ਗੁਮਨਾਮ ਵਰਤੋਂ ਡਾਟਾ ਇਕੱਠਾ ਕਰਨ ਦਿਓ ਤਾਂ ਜੋ ਅਸੀਂ ਦੇਖ ਸਕੀਏ ਕਿ ਕਿਹੜੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਮਦਦ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਸਮੱਸਿਆਵਾਂ ਠੀਕ ਕਰ ਸਕੀਏ। ਅਸੀਂ ਤੁਹਾਡੇ ਰਿਕਾਰਡ, ਫ਼ੋਟੋਆਂ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਕਦੇ ਇਕੱਠੇ ਨਹੀਂ ਕਰਦੇ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਜਾ ਕੇ ਇਸਨੂੰ ਕਿਸੇ ਵੀ ਸਮੇਂ ਬਦਲ ਸਕਦੇ ਹੋ।",
+  "secAllow": "ਇਜਾਜ਼ਤ ਦਿਓ",
+  "secPrivacyPolicy": "ਪਰਦੇਦਾਰੀ ਨੀਤੀ",
+  "secTermsOfService": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+  "secOpensInBrowser": "ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ",
+  "secConsentAgree": "ਮੈਂ {terms} ਅਤੇ {privacy} ਨਾਲ ਸਹਿਮਤ ਹਾਂ",
+  "secTermsUpdatedTitle": "ਅਸੀਂ ਆਪਣੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਪਰਦੇਦਾਰੀ ਨੀਤੀ ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਹੈ",
+  "secTermsUpdatedBody": "ਕਿਰਪਾ ਕਰਕੇ ਅੱਪਡੇਟ ਕੀਤੀਆਂ ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਪਰਦੇਦਾਰੀ ਨੀਤੀ ਪੜ੍ਹੋ। Vaultara ਵਰਤਦੇ ਰਹਿਣ ਲਈ ਸਵੀਕਾਰ ਕਰੋ ਉੱਤੇ ਟੈਪ ਕਰੋ।",
+  "secAccept": "ਸਵੀਕਾਰ ਕਰੋ",
+  "secBillingTitle": "ਬਿਲਿੰਗ ਇਤਿਹਾਸ",
+  "secBillingNote": "Google Play ਜਾਂ Apple ਵਸੂਲੀ ਗਈ ਰਕਮ ਸਮੇਤ ਤੁਹਾਡੀ ਅਧਿਕਾਰਤ ਰਸੀਦ ਭੇਜਦਾ ਹੈ।",
+  "secBillingEmpty": "ਅਜੇ ਕੋਈ ਬਿਲਿੰਗ ਗਤੀਵਿਧੀ ਨਹੀਂ ਹੈ।",
+  "secBillingStarted": "ਪਲਾਨ ਸ਼ੁਰੂ ਹੋਇਆ",
+  "secBillingRenewed": "ਪਲਾਨ ਰੀਨਿਊ ਹੋਇਆ",
+  "secBillingCancelled": "ਆਟੋ-ਰੀਨਿਊ ਬੰਦ ਕੀਤਾ ਗਿਆ",
+  "secBillingResumed": "ਆਟੋ-ਰੀਨਿਊ ਮੁੜ ਚਾਲੂ ਕੀਤਾ ਗਿਆ",
+  "secBillingEnded": "ਪਲਾਨ ਖਤਮ ਹੋਇਆ",
+  "secBillingRefunded": "ਰਿਫੰਡ ਕੀਤਾ ਗਿਆ",
+  "secBillingOther": "ਬਿਲਿੰਗ ਅੱਪਡੇਟ",
+  "secBillingRenewsOn": "{date} ਨੂੰ ਰੀਨਿਊ ਹੋਵੇਗਾ",
+  "secBillingAccessUntil": "{date} ਤੱਕ ਪਹੁੰਚ",
+  "secStoreGoogle": "Google Play",
+  "secStoreApple": "App Store",
+  "assistantActionFailed": "ਇਹ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantActionNotPossible": "ਇਹ ਬਦਲਾਅ ਹੁਣ ਸੰਭਵ ਨਹੀਂ ਹੈ। Vaultara ਨੂੰ ਦੁਬਾਰਾ ਪੁੱਛੋ ਜਾਂ ਬਦਲਾਅ ਆਪ ਕਰੋ।",
+  "assistantActionOpensForm": "ਪੁਸ਼ਟੀ ਕਰੋ ਦਬਾਉਣ ਨਾਲ ਰਿਕਾਰਡ ਜੋੜਨ ਵਾਲਾ ਫਾਰਮ ਖੁੱਲ੍ਹਦਾ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਇਸਨੂੰ ਪੂਰਾ ਕਰ ਸਕੋ।",
+  "assistantCardCancelled": "ਰੱਦ ਕੀਤਾ",
+  "assistantCardDone": "ਹੋ ਗਿਆ",
+  "assistantCardEditTitle": "ਰਿਕਾਰਡ ਬਦਲੋ",
+  "assistantCardNotConfirmed": "ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੋਈ",
+  "assistantDays": "{count, plural, one{{count} ਦਿਨ} other{{count} ਦਿਨ}}",
+  "assistantDeleteNote": "ਇਹ ਰੀਕਵਰੀ ਸੈਂਟਰ ਵਿੱਚ ਚਲਾ ਜਾਂਦਾ ਹੈ, ਜਿੱਥੋਂ ਤੁਸੀਂ ਇਸਨੂੰ 30 ਦਿਨਾਂ ਤੱਕ ਮੁੜ ਬਹਾਲ ਕਰ ਸਕਦੇ ਹੋ।",
+  "assistantFieldCountries": "ਦੇਸ਼",
+  "assistantHistoryAllDeleted": "ਸਾਰੀਆਂ ਚੈਟਾਂ ਮਿਟਾ ਦਿੱਤੀਆਂ",
+  "assistantHistoryDeleteAll": "ਸਾਰੀਆਂ ਚੈਟਾਂ ਮਿਟਾਓ",
+  "assistantHistoryDeleteAllBody": "Vaultara ਨੂੰ ਪੁੱਛੋ ਨਾਲ ਤੁਹਾਡੀਆਂ ਸਾਰੀਆਂ ਸੰਭਾਲੀਆਂ ਚੈਟਾਂ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਉੱਤੇ ਕੋਈ ਅਸਰ ਨਹੀਂ ਪੈਂਦਾ।",
+  "assistantHistoryDeleteAllTitle": "ਕੀ ਸਾਰੀਆਂ ਚੈਟਾਂ ਮਿਟਾਉਣੀਆਂ ਹਨ?",
+  "assistantHistoryDeleteBody": "ਇਹ ਚੈਟ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚੋਂ ਮਿਟਾ ਦਿੱਤੀ ਜਾਵੇਗੀ। ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਉੱਤੇ ਕੋਈ ਅਸਰ ਨਹੀਂ ਪੈਂਦਾ।",
+  "assistantHistoryDeleteChat": "ਚੈਟ ਮਿਟਾਓ",
+  "assistantHistoryDeleteFailed": "ਚੈਟ ਮਿਟਾਈ ਨਹੀਂ ਜਾ ਸਕੀ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantHistoryDeleteTitle": "ਕੀ ਇਹ ਚੈਟ ਮਿਟਾਉਣੀ ਹੈ?",
+  "assistantHistoryDeleted": "ਚੈਟ ਮਿਟਾ ਦਿੱਤੀ",
+  "assistantHistoryEmpty": "ਅਜੇ ਕੋਈ ਸੰਭਾਲੀ ਚੈਟ ਨਹੀਂ ਹੈ। Vaultara ਨੂੰ ਪੁੱਛੋ ਨਾਲ ਤੁਹਾਡੀਆਂ ਚੈਟਾਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।",
+  "assistantHistoryLoadError": "ਅਸੀਂ ਤੁਹਾਡੀਆਂ ਚੈਟਾਂ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantHistoryNote": "ਚੈਟਾਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੰਭਾਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਤਾਂ ਜੋ ਤੁਸੀਂ ਉਹਨਾਂ ਉੱਤੇ ਵਾਪਸ ਆ ਸਕੋ। 90 ਦਿਨਾਂ ਬਾਅਦ ਇਹ ਆਪਣੇ ਆਪ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ।",
+  "assistantHistoryTitle": "ਚੈਟ ਇਤਿਹਾਸ",
+  "assistantIntroAll": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ, ਯਾਤਰਾਵਾਂ ਅਤੇ Vaultara ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ, ਇਸ ਬਾਰੇ ਮੈਨੂੰ ਪੁੱਛੋ। ਮੈਂ ਨਵੇਂ ਰਿਕਾਰਡ ਅਤੇ ਬਦਲਾਅ ਵੀ ਤਿਆਰ ਕਰ ਸਕਦਾ ਹਾਂ, ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ ਜਾਂਚ ਕੇ ਪੁਸ਼ਟੀ ਕਰੋ।",
+  "assistantOpen": "ਖੋਲ੍ਹੋ",
+  "assistantPeopleLimit": "ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ ਇੱਕ ਹੋਰ ਵਿਅਕਤੀ ਲਈ ਖਾਲੀ ਥਾਂ ਨਹੀਂ ਹੈ।",
+  "assistantPersonMissing": "ਇਹ ਵਿਅਕਤੀ ਹੁਣ Vaultara ਵਿੱਚ ਨਹੀਂ ਹੈ।",
+  "assistantPrivacyNoteSaved": "ਜਵਾਬ AI ਨਾਲ ਬਣਦੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਅਤੇ ਜਵਾਬ ਦੇਣ ਲਈ ਲੋੜੀਂਦੇ ਰਿਕਾਰਡ ਦੇ ਵੇਰਵੇ ਹੀ ਸਾਡੇ AI ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜੇ ਜਾਂਦੇ ਹਨ। ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡਾਂ ਦੇ ਨਾਮ ਅਤੇ ਨੋਟ ਕਦੇ ਨਹੀਂ ਭੇਜੇ ਜਾਂਦੇ, ਅਤੇ ਨੋਟਾਂ ਵਿੱਚ ਲੰਬੇ ਨੰਬਰ ਲੁਕਾਏ ਜਾਂਦੇ ਹਨ। ਚੈਟਾਂ 90 ਦਿਨਾਂ ਲਈ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੰਭਾਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ, ਅਤੇ ਤੁਹਾਡੇ ਪੁਸ਼ਟੀ ਕਰਨ ਤੱਕ ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਕੁਝ ਨਹੀਂ ਬਦਲਦਾ।",
+  "assistantRenewDateInvalid": "ਨਵੀਂ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਮੌਜੂਦਾ ਤਾਰੀਖ ਤੋਂ ਬਾਅਦ ਦੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।",
+  "assistantSuggestionWhere": "ਦੋ-ਕਦਮ ਸਾਈਨ ਇਨ ਕਿੱਥੋਂ ਚਾਲੂ ਕਰਾਂ?",
+  "assistantTripLimit": "ਤੁਹਾਡੇ ਕੋਲ ਵੱਧ ਤੋਂ ਵੱਧ ਮਨਜ਼ੂਰ ਯਾਤਰਾਵਾਂ ਹਨ। ਪਹਿਲਾਂ ਕੋਈ ਪੁਰਾਣੀ ਯਾਤਰਾ ਮਿਟਾਓ।",
+  "assistantTripMissing": "ਇਹ ਯਾਤਰਾ ਹੁਣ Vaultara ਵਿੱਚ ਨਹੀਂ ਹੈ।",
+  "assistantValueNone": "ਕੋਈ ਨਹੀਂ",
+  "assistantValueOff": "ਬੰਦ",
+  "assistantValueOn": "ਚਾਲੂ",
+  "secBillingEmptyHint": "ਜਦੋਂ ਤੁਸੀਂ ਕੋਈ ਪਲਾਨ ਸ਼ੁਰੂ, ਨਵਿਆਉਂਦੇ ਜਾਂ ਰੱਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਉਹ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗਾ।",
+  "secBillingLoadFailed": "ਤੁਹਾਡਾ ਬਿਲਿੰਗ ਇਤਿਹਾਸ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "secBillingRetry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "planTrialStartMonths": "{count, plural, one{{count}-ਮਹੀਨੇ ਦਾ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ} other{{count}-ਮਹੀਨਿਆਂ ਦਾ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ}}",
+  "planTrialNewSubscribers": "ਨਵੇਂ ਸਬਸਕ੍ਰਾਈਬਰਾਂ ਲਈ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ: {length}।",
+  "planTrialThenMonthGooglePlay": "ਫਿਰ {price} ਪ੍ਰਤੀ ਮਹੀਨਾ। Google Play ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।",
+  "planTrialThenYearGooglePlay": "ਫਿਰ {price} ਪ੍ਰਤੀ ਸਾਲ। Google Play ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।",
+  "planTrialThenMonthAppStore": "ਫਿਰ {price} ਪ੍ਰਤੀ ਮਹੀਨਾ। App Store ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।",
+  "planTrialThenYearAppStore": "ਫਿਰ {price} ਪ੍ਰਤੀ ਸਾਲ। App Store ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੱਦ ਕਰੋ।",
+  "planTrialNoChargeToday": "ਅੱਜ ਤੁਸੀਂ ਕੁਝ ਵੀ ਨਹੀਂ ਭਰਦੇ। ਜੇ ਤੁਸੀਂ ਟ੍ਰਾਇਲ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਰੱਦ ਕਰ ਦਿੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਡੇ ਤੋਂ ਪੈਸੇ ਨਹੀਂ ਲਏ ਜਾਣਗੇ।",
+  "verifyEmailLinkVerifying": "ਤੁਹਾਡੇ ਈਮੇਲ ਪਤੇ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ",
+  "verifyEmailSuccess": "ਤੁਹਾਡੇ ਈਮੇਲ ਪਤੇ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਗਈ ਹੈ।",
+  "passwordErrorSameAsCurrent": "ਤੁਹਾਡਾ ਨਵਾਂ ਪਾਸਵਰਡ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਤੋਂ ਵੱਖਰਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।",
+  "passwordErrorLeaked": "ਇਹ ਪਾਸਵਰਡ ਇੱਕ ਡਾਟਾ ਲੀਕ ਵਿੱਚ ਸਾਹਮਣੇ ਆਇਆ ਹੈ, ਇਸ ਲਈ ਇਹ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ। ਕੋਈ ਹੋਰ ਪਾਸਵਰਡ ਚੁਣੋ।",
+  "passwordErrorWrongCurrent": "ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਸਹੀ ਨਹੀਂ ਹੈ। ਇਸਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "passwordErrorCurrentRequired": "ਆਪਣਾ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ ਤਾਂ ਜੋ ਅਸੀਂ ਪੁਸ਼ਟੀ ਕਰ ਸਕੀਏ ਕਿ ਇਹ ਤੁਸੀਂ ਹੀ ਹੋ।",
+  "passwordErrorNewRequired": "ਨਵਾਂ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ।",
+  "passwordErrorConfirmRequired": "ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਆਪਣਾ ਨਵਾਂ ਪਾਸਵਰਡ ਦੁਬਾਰਾ ਟਾਈਪ ਕਰੋ।",
+  "passwordErrorMismatch": "ਦੋਵੇਂ ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ। ਦੋਵਾਂ ਖਾਨਿਆਂ ਵਿੱਚ ਇੱਕੋ ਨਵਾਂ ਪਾਸਵਰਡ ਟਾਈਪ ਕਰੋ।",
+  "passwordErrorTooShort": "{count, plural, one{ਇਹ ਪਾਸਵਰਡ ਬਹੁਤ ਛੋਟਾ ਹੈ। ਘੱਟੋ-ਘੱਟ {count} ਅੱਖਰ ਵਰਤੋ।} other{ਇਹ ਪਾਸਵਰਡ ਬਹੁਤ ਛੋਟਾ ਹੈ। ਘੱਟੋ-ਘੱਟ {count} ਅੱਖਰ ਵਰਤੋ।}}",
+  "passwordErrorNeedUpper": "ਇਸ ਪਾਸਵਰਡ ਵਿੱਚ ਕੋਈ ਵੱਡਾ ਅੱਖਰ ਨਾ ਹੋਣ ਕਰਕੇ ਇਹ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵੱਡਾ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰੋ।",
+  "passwordErrorNeedLower": "ਇਸ ਪਾਸਵਰਡ ਵਿੱਚ ਕੋਈ ਛੋਟਾ ਅੱਖਰ ਨਾ ਹੋਣ ਕਰਕੇ ਇਹ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਘੱਟੋ-ਘੱਟ ਇੱਕ ਛੋਟਾ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰੋ।",
+  "passwordErrorNeedNumber": "ਇਸ ਪਾਸਵਰਡ ਵਿੱਚ ਕੋਈ ਨੰਬਰ ਨਾ ਹੋਣ ਕਰਕੇ ਇਹ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਘੱਟੋ-ਘੱਟ ਇੱਕ ਨੰਬਰ ਸ਼ਾਮਲ ਕਰੋ।",
+  "passwordErrorNeedSymbol": "ਇਸ ਪਾਸਵਰਡ ਵਿੱਚ ਕੋਈ ਖਾਸ ਅੱਖਰ ਨਾ ਹੋਣ ਕਰਕੇ ਇਹ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਘੱਟੋ-ਘੱਟ ਇੱਕ ਸ਼ਾਮਲ ਕਰੋ, ਜਿਵੇਂ ! ਜਾਂ #।",
+  "passwordErrorWeak": "{count, plural, one{ਇਹ ਪਾਸਵਰਡ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਵੱਡੇ ਅੱਖਰ, ਛੋਟੇ ਅੱਖਰ, ਨੰਬਰ ਅਤੇ ਖਾਸ ਅੱਖਰ ਸਮੇਤ ਘੱਟੋ-ਘੱਟ {count} ਅੱਖਰ ਵਰਤੋ।} other{ਇਹ ਪਾਸਵਰਡ ਬਹੁਤ ਕਮਜ਼ੋਰ ਹੈ। ਵੱਡੇ ਅੱਖਰ, ਛੋਟੇ ਅੱਖਰ, ਨੰਬਰ ਅਤੇ ਖਾਸ ਅੱਖਰ ਸਮੇਤ ਘੱਟੋ-ਘੱਟ {count} ਅੱਖਰ ਵਰਤੋ।}}",
+  "passwordErrorRecentLogin": "ਤੁਹਾਡੀ ਸੁਰੱਖਿਆ ਲਈ, ਪਾਸਵਰਡ ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਸਾਈਨ ਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਸਾਈਨ ਆਊਟ ਕਰੋ, ਸਾਈਨ ਇਨ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "passwordErrorChangeFailed": "ਕੁਝ ਗਲਤ ਹੋਣ ਕਰਕੇ ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਨਹੀਂ ਬਦਲਿਆ ਗਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "passportsTitle": "ਪਾਸਪੋਰਟ",
+  "passportAddAnother": "ਇੱਕ ਹੋਰ ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ",
+  "passportRemove": "ਪਾਸਪੋਰਟ ਹਟਾਓ",
+  "passportLinkRecord": "ਸੰਭਾਲੇ ਪਾਸਪੋਰਟ ਨਾਲ ਜੋੜੋ",
+  "passportChooseRecord": "ਸੰਭਾਲਿਆ ਪਾਸਪੋਰਟ ਚੁਣੋ",
+  "passportNoRecords": "ਹਾਲੇ ਕੋਈ ਸੰਭਾਲਿਆ ਪਾਸਪੋਰਟ ਨਹੀਂ ਹੈ। ਪਹਿਲਾਂ ਆਪਣਾ ਪਾਸਪੋਰਟ ਵਾਲਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ।",
+  "passportExpires": "{date} ਨੂੰ ਖ਼ਤਮ ਹੋਵੇਗਾ",
+  "passportNotLinked": "ਮਿਆਦ ਜਾਂਚਣ ਲਈ ਸੰਭਾਲਿਆ ਪਾਸਪੋਰਟ ਜੋੜੋ।",
+  "passportTravelOn": "{country} ਦੇ ਪਾਸਪੋਰਟ ਨਾਲ ਯਾਤਰਾ ਕਰੋ",
+  "passportEnterOwn": "ਆਪਣੇ {country} ਪਾਸਪੋਰਟ ਨਾਲ ਦਾਖ਼ਲ ਹੋਵੋ। ਵੀਜ਼ੇ ਦੀ ਲੋੜ ਨਹੀਂ।",
+  "passportChange": "ਪਾਸਪੋਰਟ ਬਦਲੋ",
+  "passportBest": "ਸਭ ਤੋਂ ਵਧੀਆ ਵਿਕਲਪ",
+  "passportUseBest": "ਸਭ ਤੋਂ ਵਧੀਆ ਵਿਕਲਪ ਵਰਤੋ",
+  "passportChooseFor": "{country} ਲਈ ਪਾਸਪੋਰਟ",
+  "passportExpiredFor": "ਇਹ ਪਾਸਪੋਰਟ ਤੁਹਾਡੇ ਵਾਪਸ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ {date} ਨੂੰ ਖ਼ਤਮ ਹੋ ਜਾਵੇਗਾ।",
+  "passportShortFor": "ਇਹ ਪਾਸਪੋਰਟ {date} ਨੂੰ ਖ਼ਤਮ ਹੋ ਜਾਵੇਗਾ। ਕਈ ਦੇਸ਼ ਚਾਹੁੰਦੇ ਹਨ ਕਿ ਵਾਪਸੀ ਤੋਂ ਬਾਅਦ ਵੀ ਕੁਝ ਮਹੀਨੇ ਇਹ ਵੈਧ ਰਹੇ।",
+  "passportSeveralNote": "ਇੱਕ ਤੋਂ ਵੱਧ ਪਾਸਪੋਰਟ ਹੋਣ ਤੇ ਕੁਝ ਦੇਸ਼ਾਂ ਦੇ ਵਾਧੂ ਨਿਯਮ ਹੁੰਦੇ ਹਨ। ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਦੂਤਾਵਾਸ ਤੋਂ ਪੁੱਛੋ।",
+  "visaNoteDual": "{country} ਦੋਹਰੀ ਨਾਗਰਿਕਤਾ ਨੂੰ ਨਹੀਂ ਮੰਨਦਾ। ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਦੂਤਾਵਾਸ ਤੋਂ ਪੁੱਛੋ।",
+  "visaNoteEmbassy": "ਕੁਝ ਪਾਸਪੋਰਟਾਂ ਲਈ {country} ਦੇ ਦਾਖ਼ਲੇ ਦੇ ਵਾਧੂ ਨਿਯਮ ਹਨ। ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਦੂਤਾਵਾਸ ਤੋਂ ਪੁੱਛੋ।",
+  "visaDataUpdated": "ਵੀਜ਼ਾ ਡੇਟਾ {date} ਨੂੰ ਅੱਪਡੇਟ ਹੋਇਆ",
+  "visaDataStale": "ਵੀਜ਼ਾ ਡੇਟਾ ਆਖ਼ਰੀ ਵਾਰ {date} ਨੂੰ ਅੱਪਡੇਟ ਹੋਇਆ। ਇਹ ਪੁਰਾਣਾ ਹੋ ਸਕਦਾ ਹੈ।",
+  "travelFlightLandsIn": "ਉਤਰਦੀ ਹੈ",
+  "travelFlightLandsInChoose": "ਦੇਸ਼ (ਵਿਕਲਪਿਕ)",
+  "travelFlightLandsInHint": "ਸਿਰਫ਼ ਸਟਾਪਓਵਰ ਲਈ ਲੋੜੀਂਦਾ। ਟ੍ਰਾਂਜ਼ਿਟ ਵੀਜ਼ਾ ਜਾਂਚਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+  "travelTransitNote": "{country} ਵਿੱਚ ਸਟਾਪਓਵਰ। ਜਾਂਚੋ ਕਿ ਕੀ ਤੁਹਾਨੂੰ ਟ੍ਰਾਂਜ਼ਿਟ ਵੀਜ਼ਾ ਚਾਹੀਦਾ ਹੈ।"
 }
