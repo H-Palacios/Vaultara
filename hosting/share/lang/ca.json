@@ -1,0 +1,13 @@
+{
+  "page": "Registre compartit de Vaultara",
+  "loading": "S'està carregant el registre compartit...",
+  "sharedWith": "Compartit amb tu des de Vaultara",
+  "expiryLabel": "Data de caducitat",
+  "linkExpires": "Aquest enllaç caduca el {date}.",
+  "expiredTitle": "Aquest enllaç ha caducat",
+  "expiredBody": "Els enllaços compartits només funcionen durant poc temps. Demana un enllaç nou a la persona que te l'ha enviat.",
+  "errorTitle": "Alguna cosa no ha anat bé",
+  "errorBody": "No hem pogut carregar aquest registre. Comprova la connexió i torna-ho a provar.",
+  "retry": "Torna-ho a provar",
+  "imageAlt": "Foto del registre"
+}

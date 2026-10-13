@@ -1,0 +1,13 @@
+{
+  "page": "Deild Vaultara-færsla",
+  "loading": "Hleður deildri færslu...",
+  "sharedWith": "Deilt með þér úr Vaultara",
+  "expiryLabel": "Gildistími",
+  "linkExpires": "Þessi tengill rennur út {date}.",
+  "expiredTitle": "Þessi tengill er útrunninn",
+  "expiredBody": "Deildir tenglar virka aðeins í stuttan tíma. Biddu þann sem sendi hann um nýjan tengil.",
+  "errorTitle": "Eitthvað fór úrskeiðis",
+  "errorBody": "Við gátum ekki hlaðið þessari færslu. Athugaðu tenginguna þína og reyndu aftur.",
+  "retry": "Reyna aftur",
+  "imageAlt": "Mynd af færslunni"
+}

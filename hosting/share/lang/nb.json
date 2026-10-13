@@ -1,0 +1,13 @@
+{
+  "page": "Delt Vaultara-oppføring",
+  "loading": "Laster inn den delte oppføringen...",
+  "sharedWith": "Delt med deg fra Vaultara",
+  "expiryLabel": "Utløpsdato",
+  "linkExpires": "Denne lenken utløper {date}.",
+  "expiredTitle": "Denne lenken har utløpt",
+  "expiredBody": "Delte lenker virker bare en kort stund. Be personen som sendte den, om en ny lenke.",
+  "errorTitle": "Noe gikk galt",
+  "errorBody": "Vi kunne ikke laste inn denne oppføringen. Sjekk tilkoblingen din og prøv igjen.",
+  "retry": "Prøv igjen",
+  "imageAlt": "Bilde av oppføringen"
+}

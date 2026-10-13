@@ -1,0 +1,13 @@
+{
+  "page": "Tomara Vaultara ya parvekirî",
+  "loading": "Tomara parvekirî tê barkirin...",
+  "sharedWith": "Ji Vaultara bi te re hat parvekirin",
+  "expiryLabel": "Dîroka bidawîbûnê",
+  "linkExpires": "Ev girêdan di {date} de bi dawî dibe.",
+  "expiredTitle": "Dema vê girêdanê derbas bûye",
+  "expiredBody": "Girêdanên parvekirî tenê ji bo demeke kurt dixebitin. Ji kesê ku ew şandiye girêdaneke nû bixwaze.",
+  "errorTitle": "Tiştek xelet çû",
+  "errorBody": "Me nekarî vê tomarê bar bikin. Girêdana xwe kontrol bike û dîsa biceribîne.",
+  "retry": "Dîsa biceribîne",
+  "imageAlt": "Wêneyê tomarê"
+}

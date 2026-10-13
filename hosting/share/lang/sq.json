@@ -1,0 +1,13 @@
+{
+  "page": "Regjistrim i ndarë nga Vaultara",
+  "loading": "Po ngarkohet regjistrimi i ndarë...",
+  "sharedWith": "U nda me ju nga Vaultara",
+  "expiryLabel": "Data e skadimit",
+  "linkExpires": "Kjo lidhje skadon më {date}.",
+  "expiredTitle": "Kjo lidhje ka skaduar",
+  "expiredBody": "Lidhjet e ndara funksionojnë vetëm për një kohë të shkurtër. Kërkojini personit që jua dërgoi një lidhje të re.",
+  "errorTitle": "Diçka shkoi keq",
+  "errorBody": "Nuk mundëm ta ngarkonim këtë regjistrim. Kontrolloni lidhjen tuaj dhe provoni përsëri.",
+  "retry": "Provo përsëri",
+  "imageAlt": "Foto e regjistrimit"
+}

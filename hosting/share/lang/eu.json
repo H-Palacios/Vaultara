@@ -1,0 +1,13 @@
+{
+  "page": "Partekatutako Vaultara erregistroa",
+  "loading": "Partekatutako erregistroa kargatzen...",
+  "sharedWith": "Vaultara-tik zurekin partekatua",
+  "expiryLabel": "Iraungitze-data",
+  "linkExpires": "Esteka hau {date} egunean iraungiko da.",
+  "expiredTitle": "Esteka hau iraungi da",
+  "expiredBody": "Partekatutako estekek denbora laburrez bakarrik funtzionatzen dute. Eskatu esteka berri bat bidali zizun pertsonari.",
+  "errorTitle": "Zerbait gaizki joan da",
+  "errorBody": "Ezin izan dugu erregistro hau kargatu. Egiaztatu zure konexioa eta saiatu berriro.",
+  "retry": "Saiatu berriro",
+  "imageAlt": "Erregistroaren argazkia"
+}

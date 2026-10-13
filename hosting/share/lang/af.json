@@ -1,0 +1,13 @@
+{
+  "page": "Gedeelde Vaultara-rekord",
+  "loading": "Laai tans die gedeelde rekord...",
+  "sharedWith": "Met jou gedeel vanaf Vaultara",
+  "expiryLabel": "Vervaldatum",
+  "linkExpires": "Hierdie skakel verval op {date}.",
+  "expiredTitle": "Hierdie skakel het verval",
+  "expiredBody": "Gedeelde skakels werk net vir 'n kort tydjie. Vra die persoon wat dit gestuur het vir 'n nuwe skakel.",
+  "errorTitle": "Iets het verkeerd geloop",
+  "errorBody": "Ons kon nie hierdie rekord laai nie. Gaan jou verbinding na en probeer weer.",
+  "retry": "Probeer weer",
+  "imageAlt": "Foto van die rekord"
+}

@@ -1,0 +1,13 @@
+{
+  "page": "Rikodin Vaultara da aka raba",
+  "loading": "Ana loda rikodin da aka raba...",
+  "sharedWith": "An raba maka daga Vaultara",
+  "expiryLabel": "Ranar karewa",
+  "linkExpires": "Wannan hanyar haɗi za ta ƙare a ranar {date}.",
+  "expiredTitle": "Wannan hanyar haɗi ta ƙare",
+  "expiredBody": "Hanyoyin haɗi da aka raba suna aiki na ɗan lokaci kaɗan kawai. Ka nemi sabuwar hanyar haɗi daga wanda ya aiko maka.",
+  "errorTitle": "Wani abu ya faru ba daidai ba",
+  "errorBody": "Ba mu iya loda wannan rikodin ba. Ka duba haɗin intanet ɗinka ka sake gwadawa.",
+  "retry": "Sake gwadawa",
+  "imageAlt": "Hoton rikodin"
+}

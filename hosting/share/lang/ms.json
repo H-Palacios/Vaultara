@@ -1,0 +1,13 @@
+{
+  "page": "Rekod Vaultara yang dikongsi",
+  "loading": "Memuatkan rekod yang dikongsi...",
+  "sharedWith": "Dikongsi dengan anda daripada Vaultara",
+  "expiryLabel": "Tarikh tamat tempoh",
+  "linkExpires": "Pautan ini tamat tempoh pada {date}.",
+  "expiredTitle": "Pautan ini telah tamat tempoh",
+  "expiredBody": "Pautan yang dikongsi hanya berfungsi untuk masa yang singkat. Minta pautan baharu daripada orang yang menghantarnya.",
+  "errorTitle": "Sesuatu tidak kena",
+  "errorBody": "Kami tidak dapat memuatkan rekod ini. Semak sambungan anda dan cuba lagi.",
+  "retry": "Cuba lagi",
+  "imageAlt": "Foto rekod"
+}

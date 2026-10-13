@@ -1,0 +1,13 @@
+{
+  "page": "Paylaşılmış Vaultara sənədi",
+  "loading": "Paylaşılmış sənəd yüklənir...",
+  "sharedWith": "Vaultara-dan sizinlə paylaşılıb",
+  "expiryLabel": "Bitmə tarixi",
+  "linkExpires": "Bu keçidin müddəti {date} tarixində bitir.",
+  "expiredTitle": "Bu keçidin müddəti bitib",
+  "expiredBody": "Paylaşılmış keçidlər yalnız qısa müddət işləyir. Onu göndərən şəxsdən yeni keçid istəyin.",
+  "errorTitle": "Nəsə səhv getdi",
+  "errorBody": "Bu sənədi yükləyə bilmədik. Bağlantınızı yoxlayın və yenidən cəhd edin.",
+  "retry": "Yenidən cəhd edin",
+  "imageAlt": "Sənədin fotosu"
+}

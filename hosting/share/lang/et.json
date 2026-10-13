@@ -1,0 +1,13 @@
+{
+  "page": "Jagatud Vaultara kirje",
+  "loading": "Jagatud kirje laadimine...",
+  "sharedWith": "Sinuga jagatud Vaultarast",
+  "expiryLabel": "Aegumiskuupäev",
+  "linkExpires": "See link aegub {date}.",
+  "expiredTitle": "See link on aegunud",
+  "expiredBody": "Jagatud lingid toimivad ainult lühikest aega. Palu saatjalt uus link.",
+  "errorTitle": "Midagi läks valesti",
+  "errorBody": "Me ei saanud seda kirjet laadida. Kontrolli oma ühendust ja proovi uuesti.",
+  "retry": "Proovi uuesti",
+  "imageAlt": "Kirje foto"
+}

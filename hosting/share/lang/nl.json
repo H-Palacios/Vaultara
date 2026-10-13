@@ -1,0 +1,13 @@
+{
+  "page": "Gedeeld Vaultara-record",
+  "loading": "Het gedeelde record wordt geladen...",
+  "sharedWith": "Met je gedeeld vanuit Vaultara",
+  "expiryLabel": "Vervaldatum",
+  "linkExpires": "Deze link verloopt op {date}.",
+  "expiredTitle": "Deze link is verlopen",
+  "expiredBody": "Gedeelde links werken maar korte tijd. Vraag de persoon die hem stuurde om een nieuwe link.",
+  "errorTitle": "Er is iets misgegaan",
+  "errorBody": "We konden dit record niet laden. Controleer je verbinding en probeer het opnieuw.",
+  "retry": "Opnieuw proberen",
+  "imageAlt": "Foto van het record"
+}

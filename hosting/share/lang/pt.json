@@ -1,0 +1,13 @@
+{
+  "page": "Registo Vaultara partilhado",
+  "loading": "A carregar o registo partilhado...",
+  "sharedWith": "Partilhado consigo a partir do Vaultara",
+  "expiryLabel": "Data de expiração",
+  "linkExpires": "Esta ligação expira a {date}.",
+  "expiredTitle": "Esta ligação expirou",
+  "expiredBody": "As ligações partilhadas só funcionam durante pouco tempo. Peça uma nova ligação à pessoa que a enviou.",
+  "errorTitle": "Algo correu mal",
+  "errorBody": "Não foi possível carregar este registo. Verifique a sua ligação e tente novamente.",
+  "retry": "Tentar novamente",
+  "imageAlt": "Foto do registo"
+}

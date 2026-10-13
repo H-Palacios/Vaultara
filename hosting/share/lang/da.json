@@ -1,0 +1,13 @@
+{
+  "page": "Delt Vaultara-post",
+  "loading": "Indlæser den delte post...",
+  "sharedWith": "Delt med dig fra Vaultara",
+  "expiryLabel": "Udløbsdato",
+  "linkExpires": "Dette link udløber den {date}.",
+  "expiredTitle": "Dette link er udløbet",
+  "expiredBody": "Delte links virker kun i kort tid. Bed den person, der sendte det, om et nyt link.",
+  "errorTitle": "Noget gik galt",
+  "errorBody": "Vi kunne ikke indlæse denne post. Tjek din forbindelse, og prøv igen.",
+  "retry": "Prøv igen",
+  "imageAlt": "Foto af posten"
+}

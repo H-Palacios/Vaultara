@@ -1,0 +1,13 @@
+{
+  "page": "Înregistrare Vaultara partajată",
+  "loading": "Se încarcă înregistrarea partajată...",
+  "sharedWith": "Partajat cu tine din Vaultara",
+  "expiryLabel": "Data expirării",
+  "linkExpires": "Acest link expiră pe {date}.",
+  "expiredTitle": "Acest link a expirat",
+  "expiredBody": "Linkurile partajate funcționează doar pentru scurt timp. Cere un link nou persoanei care ți l-a trimis.",
+  "errorTitle": "Ceva nu a mers bine",
+  "errorBody": "Nu am putut încărca această înregistrare. Verifică-ți conexiunea și încearcă din nou.",
+  "retry": "Încearcă din nou",
+  "imageAlt": "Fotografia înregistrării"
+}

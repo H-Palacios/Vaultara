@@ -1,0 +1,13 @@
+{
+  "page": "Registro compartido de Vaultara",
+  "loading": "Cargando el registro compartido...",
+  "sharedWith": "Compartido contigo desde Vaultara",
+  "expiryLabel": "Fecha de vencimiento",
+  "linkExpires": "Este enlace caduca el {date}.",
+  "expiredTitle": "Este enlace ha caducado",
+  "expiredBody": "Los enlaces compartidos solo funcionan durante poco tiempo. Pide un enlace nuevo a la persona que te lo envió.",
+  "errorTitle": "Algo salió mal",
+  "errorBody": "No pudimos cargar este registro. Comprueba tu conexión e inténtalo de nuevo.",
+  "retry": "Intentar de nuevo",
+  "imageAlt": "Foto del registro"
+}

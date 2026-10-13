@@ -1,0 +1,13 @@
+{
+  "page": "Ulashilgan Vaultara yozuvi",
+  "loading": "Ulashilgan yozuv yuklanmoqda...",
+  "sharedWith": "Vaultara orqali siz bilan ulashildi",
+  "expiryLabel": "Tugash sanasi",
+  "linkExpires": "Bu havolaning muddati {date} kuni tugaydi.",
+  "expiredTitle": "Bu havolaning muddati tugagan",
+  "expiredBody": "Ulashilgan havolalar faqat qisqa vaqt ishlaydi. Uni yuborgan odamdan yangi havola soʻrang.",
+  "errorTitle": "Nimadir xato ketdi",
+  "errorBody": "Bu yozuvni yuklay olmadik. Ulanishingizni tekshiring va qayta urinib koʻring.",
+  "retry": "Qayta urinish",
+  "imageAlt": "Yozuv surati"
+}

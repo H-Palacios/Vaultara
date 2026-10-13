@@ -1,0 +1,13 @@
+{
+  "page": "Record Vaultara condiviso",
+  "loading": "Caricamento del record condiviso...",
+  "sharedWith": "Condiviso con te da Vaultara",
+  "expiryLabel": "Data di scadenza",
+  "linkExpires": "Questo link scade il {date}.",
+  "expiredTitle": "Questo link è scaduto",
+  "expiredBody": "I link condivisi funzionano solo per poco tempo. Chiedi un nuovo link alla persona che te l'ha inviato.",
+  "errorTitle": "Si è verificato un problema",
+  "errorBody": "Non è stato possibile caricare questo record. Controlla la connessione e riprova.",
+  "retry": "Riprova",
+  "imageAlt": "Foto del record"
+}

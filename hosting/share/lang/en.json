@@ -1,0 +1,13 @@
+{
+  "page": "Shared Vaultara record",
+  "loading": "Loading the shared record...",
+  "sharedWith": "Shared with you from Vaultara",
+  "expiryLabel": "Expiry date",
+  "linkExpires": "This link expires on {date}.",
+  "expiredTitle": "This link has expired",
+  "expiredBody": "Shared links only work for a short time. Ask the person who sent it for a new link.",
+  "errorTitle": "Something went wrong",
+  "errorBody": "We could not load this record. Check your connection and try again.",
+  "retry": "Try again",
+  "imageAlt": "Photo of the record"
+}

@@ -1,0 +1,13 @@
+{
+  "page": "Enregistrement Vaultara partagé",
+  "loading": "Chargement de l’enregistrement partagé...",
+  "sharedWith": "Partagé avec vous depuis Vaultara",
+  "expiryLabel": "Date d’expiration",
+  "linkExpires": "Ce lien expire le {date}.",
+  "expiredTitle": "Ce lien a expiré",
+  "expiredBody": "Les liens partagés ne fonctionnent que pendant peu de temps. Demandez un nouveau lien à la personne qui vous l’a envoyé.",
+  "errorTitle": "Une erreur s’est produite",
+  "errorBody": "Nous n’avons pas pu charger cet enregistrement. Vérifiez votre connexion et réessayez.",
+  "retry": "Réessayer",
+  "imageAlt": "Photo de l’enregistrement"
+}

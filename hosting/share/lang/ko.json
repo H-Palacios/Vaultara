@@ -1,0 +1,13 @@
+{
+  "page": "공유된 Vaultara 기록",
+  "loading": "공유된 기록을 불러오는 중...",
+  "sharedWith": "Vaultara에서 공유된 항목",
+  "expiryLabel": "만료 날짜",
+  "linkExpires": "이 링크는 {date}에 만료됩니다.",
+  "expiredTitle": "이 링크가 만료되었습니다",
+  "expiredBody": "공유 링크는 짧은 시간 동안만 작동합니다. 링크를 보낸 사람에게 새 링크를 요청하세요.",
+  "errorTitle": "문제가 발생했습니다",
+  "errorBody": "이 기록을 불러올 수 없습니다. 연결 상태를 확인하고 다시 시도하세요.",
+  "retry": "다시 시도",
+  "imageAlt": "기록 사진"
+}

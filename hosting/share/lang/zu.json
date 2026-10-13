@@ -1,0 +1,13 @@
+{
+  "page": "Irekhodi le-Vaultara elabelwe",
+  "loading": "Ilayisha irekhodi elabelwe...",
+  "sharedWith": "Kwabelwane nawe kusuka ku-Vaultara",
+  "expiryLabel": "Usuku lokuphelelwa",
+  "linkExpires": "Lesi sixhumanisi siphelelwa yisikhathi ngo-{date}.",
+  "expiredTitle": "Lesi sixhumanisi siphelelwe yisikhathi",
+  "expiredBody": "Izixhumanisi ezabelwe zisebenza isikhathi esifushane kuphela. Cela isixhumanisi esisha kumuntu osithumelile.",
+  "errorTitle": "Kukhona okungahambanga kahle",
+  "errorBody": "Asikwazanga ukulayisha leli rekhodi. Hlola uxhumano lwakho bese uzama futhi.",
+  "retry": "Zama futhi",
+  "imageAlt": "Isithombe serekhodi"
+}
