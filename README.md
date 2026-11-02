@@ -1,13 +1,238 @@
-# vaultara
+# Vaultara
 
-A new Flutter project.
+**Never miss an expiry date**
 
-## Getting Started
+Vaultara is a mobile app that tracks when your important records expire and reminds you to renew them in time. Passports, ID cards, driving licences, vehicle licence discs, insurance, bank cards, permits, visas and anything else with an expiry date can live in one place, for you, your family or your business.
 
-This project is a starting point for a Flutter application.
+Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, South Africa.
 
-A few resources to get you started if this is your first Flutter project:
+![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue)
+![Flutter](https://img.shields.io/badge/Flutter-Dart%203-02569B?logo=flutter)
+![Firebase](https://img.shields.io/badge/backend-Firebase-FFCA28?logo=firebase)
+![Languages](https://img.shields.io/badge/languages-86-purple)
+![Status](https://img.shields.io/badge/status-internal%20testing-orange)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
+## Table of contents
+
+- [Features](#features)
+- [Plans](#plans)
+- [Security and privacy](#security-and-privacy)
+- [Tech stack](#tech-stack)
+- [Project structure](#project-structure)
+- [Localisation](#localisation)
+- [Roadmap](#roadmap)
+- [Licence](#licence)
+
+---
+
+## Features
+
+### Records and organisation
+- **Categories, groups and records.** Records sit inside groups, and groups sit inside categories. Seven preset categories with 20 preset groups cover the common documents, and users can add their own.
+- **Snap to add.** Scan a card, passport or document with the camera and Vaultara fills in the expiry date, group and document number. Bank card numbers are masked.
+- **Passport MRZ scanning.** Reads the machine-readable zone on the passport photo page for the expiry date, name and country with very few mistakes.
+- **Licence disc scanning.** Reads the barcode on a South African vehicle licence disc to fill in the plate number and expiry date.
+- **Repeating records.** Subscriptions and policies that renew on their own move their date forward each month or year automatically.
+- **Spreadsheet import.** Bring records over from Excel or another app with a CSV file, with automatic date detection.
+- **Global search** across categories, groups and records.
+- **Recovery Centre.** Deleted categories, groups and records can be restored for 30 days.
+
+### Reminders
+- **Reminder cascade.** Several notifications before a record expires, at times the user chooses.
+- **Custom reminder time.** Pick the hour reminders arrive each day.
+- **Notification actions.** "Renewed" and "Remind me tomorrow" work straight from the notification without opening the app.
+- **Push notifications** through Firebase Cloud Messaging, plus an optional single daily summary.
+- **Monthly email summary** of what expires this month.
+
+### Renewing
+- **One-tap renew.** Suggests the new expiry date from the document type's normal validity and keeps a renewal history.
+- **Renewal guides.** A practical checklist for every preset type, worded to work in any country.
+- **Renewal costs.** Add a cost to each record and see the 12-month total and the busiest month in Insights.
+
+### Insights and calendar
+- **Smart Insights.** Highlights what needs attention first, such as records expiring today, records with no reminder, and records expiring around the same time. Each insight has an action button, and a speaker button reads insights aloud.
+- **Category coverage chart.** An interactive pie chart of where your records sit.
+- **Expiry timeline.** When your records expire across the year.
+- **Calendar.** A month view with expiry dots, a day list, and quick day chips.
+- **Calendar export and live calendar link.** Add expiries to Google Calendar, or subscribe to a feed that updates by itself.
+
+### Documents
+- **Document vault.** Attach photos and PDFs to a record, stored privately in Firebase Storage.
+- **Secure share links.** Share one record and its photo with a link that expires after 24 hours.
+- **PDF export** of every record as one tidy document.
+- **Download my data.** Export everything in one tap.
+
+### Travel check
+- Pick a trip, dates, destination and one or more travellers, including people who do not use Vaultara.
+- Checks the passport is valid six months past the return date.
+- **Automatic visa check** using the Passport Index dataset, refreshed weekly by a Cloud Function, with links to official e-visa and ETA sites and an embassy finder fallback.
+- Flags travel insurance, driving licence and anything that expires while you are away.
+
+### Family and household
+- **Family profiles.** Track records for a partner, children and parents. Reminders say whose document it is.
+- **Shared household.** Family and Business owners invite others with a code or link. Members sign in with their own account, see the same records and get the same reminders.
+
+### Business
+- Track staff certificates, vehicle licences, permits and fleet insurance.
+- Staff email reminders, a monthly compliance report, and a "Request an update" link for staff.
+
+### Ask Vaultara
+- An AI assistant powered by the Claude API, available on paid plans.
+- Chat or speak, with answers drawn from your own records.
+- Can add records from plain words, but always asks before saving anything.
+- Share photos, PDFs and text into Vaultara from other apps.
+- Chat history is kept for 90 days and can be deleted at any time.
+
+### Experience
+- **Guided tours.** Separate tutorials for adding a record, setting reminders and Insights, or the full tour in one go. A "Take the tour" banner appears for new users.
+- **Home screen widget** showing the next three records to expire.
+- **Long-press shortcuts** on the app icon for "Add record" and "Scan a document".
+- **Light, dark and system themes.**
+- **86 languages.**
+- **Referrals.** Give a friend a free month of Premium and get one yourself.
+
+---
+
+## Plans
+
+| | Free | Premium | Family | Business |
+|---|---|---|---|---|
+| Records | 10 | Unlimited | Unlimited | Unlimited |
+| Custom categories | 3 | Unlimited | Unlimited | Unlimited |
+| Custom groups | | ✓ | ✓ | ✓ |
+| Multiple reminders and cascade | | ✓ | ✓ | ✓ |
+| Smart Insights and calendar | ✓ | ✓ | ✓ | ✓ |
+| Photos per record | 1 | Up to 10 | Up to 10 | Up to 10 |
+| Travel check | | ✓ | ✓ | ✓ |
+| Ask Vaultara | | ✓ | ✓ | ✓ |
+| Extra people | | | 5 | 25 |
+| Staff reminders and compliance report | | | | ✓ |
+
+Every paid plan comes monthly or yearly, with a 7-day free trial. Prices are read live from Google Play and the App Store. Users can switch between plans in one tap.
+
+---
+
+## Security and privacy
+
+- **App lock** using the phone's own fingerprint, face or screen lock, with the password as a backup. Locks again after 5 minutes away.
+- **Hide in recent apps** when App lock is on.
+- **Lock sensitive records** behind an extra check even when the app is open.
+- **Optional end-to-end encrypted photos.** Photos are encrypted on the phone with AES-GCM before upload, with a recovery key only the user holds. Not even Vorkalis can see them.
+- **Two-step sign-in** with an authenticator app.
+- **Email verification by 6-digit code**, with a deep-link button that opens the app directly.
+- **Server-side purchase verification** with the Google Play Developer API and the App Store Server API, so plans cannot be faked on the device.
+- **Firebase App Check**, rate limiting and owner-only Firestore and Storage rules.
+- **Account enumeration closed** on sign-in and password reset.
+- **Security history** of sign-ins and a device list, kept for 90 days.
+- **Account deletion** in the app or on the web, which removes all Firestore data and Storage files.
+- Built with POPIA and GDPR in mind. Document scanning runs on the device with Google ML Kit.
+
+---
+
+## Tech stack
+
+| Area | Technology |
+|---|---|
+| App | Flutter, Dart |
+| Auth | Firebase Authentication, local_auth |
+| Database | Cloud Firestore with offline persistence |
+| Files | Firebase Storage |
+| Server | Cloud Functions for Firebase (Node.js) |
+| Notifications | flutter_local_notifications, Firebase Cloud Messaging |
+| Scanning | Google ML Kit text recognition and barcode scanning |
+| Payments | in_app_purchase (Google Play Billing, StoreKit) |
+| Encryption | cryptography, flutter_secure_storage |
+| AI | Claude API (Anthropic) |
+| Analytics | Firebase Analytics |
+| Email | SMTP through Namecheap Private Email |
+| Web pages | Firebase Hosting (verify link fallback, share pages, delete account page) |
+| Localisation | Flutter gen-l10n, ARB files, Crowdin |
+
+---
+
+## Project structure
+
+The app uses a feature-first layout. Anything used by more than one feature lives in `core`.
+
+```
+lib/
+├── core/
+│   ├── analytics/
+│   ├── data/
+│   │   ├── models/
+│   │   └── repositories/      # RecordRepository, CategoryRepository, GroupRepository
+│   ├── search/                # TextSearch
+│   ├── services/
+│   ├── theme/                 # AppBrand, AppThemes, AppInputDecorations
+│   └── view/widgets/          # ScreenHeader, SettingsTile, SearchField, ...
+├── features/
+│   ├── auth/
+│   ├── billing/
+│   ├── calendar/
+│   ├── insights/
+│   ├── profile/
+│   ├── records/               # categories, groups and records
+│   ├── security/
+│   ├── sharing/
+│   ├── travel/
+│   ├── tutorials/
+│   └── vault/
+├── l10n/                      # app_<locale>.arb
+├── app.dart
+└── main.dart
+
+functions/                     # Cloud Functions
+hosting/                       # Firebase Hosting pages
+```
+
+Each feature follows the same shape:
+
+```
+features/<name>/
+├── data/       # enums, models, repositories
+├── logic/      # pure Dart, no widgets
+├── services/
+└── view/       # screens and widgets
+```
+
+---
+
+## Localisation
+
+Vaultara ships in 86 languages. English (`app_en.arb`) is the source.
+
+- UI text uses no contractions.
+- "Vaultara", "Premium" and "Free" are kept in Latin letters.
+- Plurals follow each language's CLDR rules.
+- "Renew" (get a new document) and "update" (change the date in the app) are always different words.
+
+After changing any ARB file, run:
+
+```bash
+flutter gen-l10n
+```
+
+---
+
+## Roadmap
+
+- [x] Clean-up and bug fixes
+- [x] Snap to add, document vault and one-tap renew
+- [x] Family, Business, shared household and Ask Vaultara
+- [ ] Publish to Google Play
+- [ ] iOS home screen widget (built in Xcode)
+- [ ] Publish to the App Store
+
+---
+
+## Licence
+
+Copyright © 2026 Vorkalis (Pty) Ltd. All rights reserved.
+
+This code is proprietary. It may not be copied, changed or shared without written permission.
+
+## Contact
+
+Support: support@vorkalis.com
