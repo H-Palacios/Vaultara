@@ -1519,7 +1519,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get costCardTitle => 'Mga gastos sa pag-renew';
 
   @override
-  String get costCardSubtitle => 'Magkano ang gagastusin mo sa pag-renew sa susunod na 12 buwan';
+  String get costCardSubtitle => 'Magkano ang mga renewal mo, buwan-buwan';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Kailangan ng Atensyon ang Biyahe Mo';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Aalis ang $trip sa $date, at $count bagay ang kailangang ayusin bago ka umalis.',
-      one: 'Aalis ang $trip sa $date, at $count bagay ang kailangang ayusin bago ka umalis.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Buksan ang Biyahe';
@@ -6204,4 +6193,97 @@ class AppLocalizationsFil extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Stopover sa $country. Suriin kung kailangan mo ng transit visa.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Pera';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Ipinapakita ang mga kabuuan sa $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Mga exchange rate';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Ang mga halaga sa ibang pera ay kino-convert sa $currency gamit ang pang-araw-araw na exchange rate. Pinapanatili ng bawat record ang halaga at pera na inilagay mo.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Na-update ang mga rate noong $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Walang exchange rate para sa $currencies. Hiwalay na ipinapakita ang mga halagang ito.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: aalis ka sa $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Ang mga petsa ng flight ay dapat nasa pagitan ng $start at $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Nag-o-overlap ang flight na ito sa ibang flight. Dapat magkakasunod ang mga flight.';
+
+  @override
+  String get travelFlightsOutsideDates => 'May mga flight na nasa labas ng mga petsa ng biyahe mo. Baguhin ang mga petsa o i-edit ang mga flight na iyon.';
+
+  @override
+  String get loadErrorBody => 'Hindi ito na-load. Tingnan ang iyong koneksyon at subukan muli.';
+
+  @override
+  String get tryAgain => 'Subukan muli';
+
+  @override
+  String get discardChangesTitle => 'I-discard ang iyong mga pagbabago?';
+
+  @override
+  String get discardChangesBody => 'May mga hindi pa nase-save na pagbabago ka. Kapag umalis ka ngayon, mawawala ang mga ito.';
+
+  @override
+  String get discardChangesKeep => 'Ituloy ang pag-edit';
+
+  @override
+  String get discardChangesDiscard => 'I-discard';
+
+  @override
+  String get offlineBanner => 'Offline. Magsi-sync ang mga pagbabago kapag nakakonekta ka ulit.';
+
+  @override
+  String get reminderHelpTitle => 'Hindi dumarating ang mga paalala?';
+
+  @override
+  String get reminderHelpSubtitle => 'Ayusin ang mga setting ng baterya na humaharang sa mga paalala';
+
+  @override
+  String get reminderHelpBody => 'Hinihinto ng ilang telepono ang mga app sa background para makatipid ng baterya, na maaaring magpaantala o humarang sa mga paalala. Payagan ang Vaultara na tumakbo nang walang limitasyon sa baterya, at tiyaking naka-on ang mga notification sa mga setting ng app.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Buksan ang mga setting ng baterya';
+
+  @override
+  String get reminderHelpOpenApp => 'Buksan ang mga setting ng app';
+
+  @override
+  String get showPassword => 'Ipakita ang password';
+
+  @override
+  String get hidePassword => 'Itago ang password';
+
+  @override
+  String get pinCategory => 'I-pin sa itaas';
+
+  @override
+  String get unpinCategory => 'I-unpin';
+
+  @override
+  String get clearSearch => 'I-clear ang paghahanap';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get costCardTitle => 'የእድሳት ወጪዎች';
 
   @override
-  String get costCardSubtitle => 'በሚቀጥሉት 12 ወራት እድሳቶችዎ የሚያስወጡት ወጪ';
+  String get costCardSubtitle => 'እድሳቶችዎ በየወሩ ምን ያህል ያስከፍላሉ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ጉዞዎ ትኩረት ይፈልጋል';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip በ$date ይነሳል፣ ከመሄድዎ በፊት $count ነገሮች መስተካከል አለባቸው።',
-      one: '$trip በ$date ይነሳል፣ ከመሄድዎ በፊት $count ነገር መስተካከል አለበት።',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ጉዞውን ክፈት';
@@ -6204,4 +6193,97 @@ class AppLocalizationsAm extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'በ$country ማረፊያ። የመሸጋገሪያ ቪዛ ያስፈልግዎ እንደሆነ ያረጋግጡ።';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ምንዛሬ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'ጠቅላላዎች በ$currency ይታያሉ';
+  }
+
+  @override
+  String get costRatesTitle => 'የምንዛሬ ተመኖች';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'በሌሎች ምንዛሬዎች ያሉ መጠኖች በየቀኑ የምንዛሬ ተመን ወደ $currency ይቀየራሉ። እያንዳንዱ መዝገብ ያስገቡትን መጠን እና ምንዛሬ ይይዛል።';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'ተመኖች የተዘመኑት $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'ለ$currencies የምንዛሬ ተመን የለም። እነዚህ መጠኖች ለየብቻ ይታያሉ።';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip፦ በ$date ይነሳሉ።';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'የበረራ ቀናት በ$start እና $end መካከል መሆን አለባቸው።';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ይህ በረራ ከሌላ በረራ ጋር ይደራረባል። በረራዎች በቅደም ተከተል መከተል አለባቸው።';
+
+  @override
+  String get travelFlightsOutsideDates => 'አንዳንድ በረራዎች ከጉዞ ቀናትዎ ውጭ ናቸው። ቀናቱን ይቀይሩ ወይም እነዚያን በረራዎች ያርሙ።';
+
+  @override
+  String get loadErrorBody => 'ይህን መጫን አልተቻለም። ግንኙነትዎን ያረጋግጡ እና እንደገና ይሞክሩ።';
+
+  @override
+  String get tryAgain => 'እንደገና ሞክር';
+
+  @override
+  String get discardChangesTitle => 'ለውጦችዎ ይጣሉ?';
+
+  @override
+  String get discardChangesBody => 'ያልተቀመጡ ለውጦች አሉዎት። አሁን ከወጡ ይጠፋሉ።';
+
+  @override
+  String get discardChangesKeep => 'ማርትዕዎን ይቀጥሉ';
+
+  @override
+  String get discardChangesDiscard => 'አስወግድ';
+
+  @override
+  String get offlineBanner => 'ከመስመር ውጭ። ሲገናኙ ለውጦች ይመሳሰላሉ።';
+
+  @override
+  String get reminderHelpTitle => 'አስታዋሾች አይደርሱም?';
+
+  @override
+  String get reminderHelpSubtitle => 'አስታዋሾችን የሚያግዱ የባትሪ ቅንብሮችን ያስተካክሉ';
+
+  @override
+  String get reminderHelpBody => 'አንዳንድ ስልኮች ባትሪ ለመቆጠብ መተግበሪያዎችን ከበስተጀርባ ያቆማሉ፣ ይህም አስታዋሾችን ሊያዘገይ ወይም ሊያግድ ይችላል። Vaultara ያለ ባትሪ ገደብ እንዲሰራ ይፍቀዱ፣ እንዲሁም በመተግበሪያ ቅንብሮች ውስጥ ማሳወቂያዎች መብራታቸውን ያረጋግጡ።';
+
+  @override
+  String get reminderHelpOpenBattery => 'የባትሪ ቅንብሮችን ክፈት';
+
+  @override
+  String get reminderHelpOpenApp => 'የመተግበሪያ ቅንብሮችን ክፈት';
+
+  @override
+  String get showPassword => 'የይለፍ ቃል አሳይ';
+
+  @override
+  String get hidePassword => 'የይለፍ ቃል ደብቅ';
+
+  @override
+  String get pinCategory => 'ከላይ ሰካ';
+
+  @override
+  String get unpinCategory => 'ንቀል';
+
+  @override
+  String get clearSearch => 'ፍለጋን አጽዳ';
 }

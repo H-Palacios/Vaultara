@@ -1519,7 +1519,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get costCardTitle => 'განახლების ხარჯები';
 
   @override
-  String get costCardSubtitle => 'რა დაგიჯდებათ განახლებები მომდევნო 12 თვეში';
+  String get costCardSubtitle => 'რამდენი ჯდება თქვენი განახლებები თვეების მიხედვით';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'თქვენი მოგზაურობა ყურადღებას საჭიროებს';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip გამგზავრება $date-ს არის და წასვლამდე $count საკითხი უნდა მოგვარდეს.',
-      one: '$trip გამგზავრება $date-ს არის და წასვლამდე $count საკითხი უნდა მოგვარდეს.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'მოგზაურობის გახსნა';
@@ -6204,4 +6193,97 @@ class AppLocalizationsKa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'გადაჯდომა $country-ში. შეამოწმეთ, გჭირდებათ თუ არა სატრანზიტო ვიზა.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ვალუტა';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'ჯამები ნაჩვენებია ვალუტით: $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'გაცვლითი კურსები';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'სხვა ვალუტებში თანხები გადაიყვანება $currency-ში ყოველდღიური კურსით. თითოეული ჩანაწერი ინახავს თქვენ მიერ შეყვანილ თანხას და ვალუტას.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'კურსები განახლდა: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies-ისთვის გაცვლითი კურსი არ არის. ეს თანხები ცალკე ჩანს.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: მგზავრობას იწყებთ $date-ს.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'ფრენის თარიღები უნდა იყოს $start-სა და $end-ს შორის.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ეს ფრენა სხვა ფრენას ემთხვევა. ფრენები თანმიმდევრობით უნდა მოსდევდეს ერთმანეთს.';
+
+  @override
+  String get travelFlightsOutsideDates => 'ზოგი ფრენა თქვენი მოგზაურობის თარიღებს გარეთაა. შეცვალეთ თარიღები ან დაარედაქტირეთ ეს ფრენები.';
+
+  @override
+  String get loadErrorBody => 'ვერ ჩაიტვირთა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+
+  @override
+  String get tryAgain => 'ხელახლა ცდა';
+
+  @override
+  String get discardChangesTitle => 'გსურთ ცვლილებების გაუქმება?';
+
+  @override
+  String get discardChangesBody => 'გაქვთ შეუნახავი ცვლილებები. ახლა თუ გახვალთ, ისინი დაიკარგება.';
+
+  @override
+  String get discardChangesKeep => 'რედაქტირების გაგრძელება';
+
+  @override
+  String get discardChangesDiscard => 'გაუქმება';
+
+  @override
+  String get offlineBanner => 'ოფლაინ. ცვლილებები სინქრონიზდება, როცა კავშირი აღდგება.';
+
+  @override
+  String get reminderHelpTitle => 'შეხსენებები არ მოდის?';
+
+  @override
+  String get reminderHelpSubtitle => 'გაასწორეთ ბატარეის პარამეტრები, რომლებიც შეხსენებებს ბლოკავს';
+
+  @override
+  String get reminderHelpBody => 'ზოგი ტელეფონი ბატარეის დასაზოგად ფონურ აპებს აჩერებს, რამაც შეიძლება შეხსენებები დააგვიანოს ან დაბლოკოს. ნება დართეთ Vaultara-ს იმუშაოს ბატარეის შეზღუდვის გარეშე და დარწმუნდით, რომ შეტყობინებები ჩართულია აპის პარამეტრებში.';
+
+  @override
+  String get reminderHelpOpenBattery => 'ბატარეის პარამეტრების გახსნა';
+
+  @override
+  String get reminderHelpOpenApp => 'აპის პარამეტრების გახსნა';
+
+  @override
+  String get showPassword => 'პაროლის ჩვენება';
+
+  @override
+  String get hidePassword => 'პაროლის დამალვა';
+
+  @override
+  String get pinCategory => 'ზემოთ ჩამაგრება';
+
+  @override
+  String get unpinCategory => 'ჩამაგრების მოხსნა';
+
+  @override
+  String get clearSearch => 'ძიების გასუფთავება';
 }

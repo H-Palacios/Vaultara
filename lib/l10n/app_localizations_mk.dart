@@ -1519,7 +1519,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get costCardTitle => 'Трошоци за обновување';
 
   @override
-  String get costCardSubtitle => 'Колку ќе ве чинат обновувањата во следните 12 месеци';
+  String get costCardSubtitle => 'Колку чинат вашите обновувања, месец по месец';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Вашето патување бара внимание';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip почнува на $date, а пред заминување треба да се средат $count нешта.',
-      one: '$trip почнува на $date, а пред заминување треба да се среди $count нешто.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Отвори патување';
@@ -6204,4 +6193,97 @@ class AppLocalizationsMk extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Прекачување во $country. Проверете дали ви треба транзитна виза.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Валута';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Вкупните износи се прикажуваат во $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Девизни курсеви';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Износите во други валути се претвораат во $currency според дневните курсеви. Секој запис го чува износот и валутата што сте ги внеле.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Курсевите се ажурирани на $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Нема курс за $currencies. Овие износи се прикажуваат одделно.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: заминувате на $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Датумите на летовите мора да бидат помеѓу $start и $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Овој лет се преклопува со друг лет. Летовите мора да следат еден по друг по ред.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Некои летови се надвор од датумите на вашето патување. Променете ги датумите или уредете ги тие летови.';
+
+  @override
+  String get loadErrorBody => 'Не успеавме да го вчитаме ова. Проверете ја врската и обидете се повторно.';
+
+  @override
+  String get tryAgain => 'Обиди се повторно';
+
+  @override
+  String get discardChangesTitle => 'Да се отфрлат ли промените?';
+
+  @override
+  String get discardChangesBody => 'Имате незачувани промени. Ако излезете сега, ќе бидат изгубени.';
+
+  @override
+  String get discardChangesKeep => 'Продолжи со уредување';
+
+  @override
+  String get discardChangesDiscard => 'Отфрли';
+
+  @override
+  String get offlineBanner => 'Без интернет. Промените ќе се синхронизираат кога повторно ќе се поврзете.';
+
+  @override
+  String get reminderHelpTitle => 'Потсетниците не пристигнуваат?';
+
+  @override
+  String get reminderHelpSubtitle => 'Поправете ги поставките за батеријата што ги блокираат потсетниците';
+
+  @override
+  String get reminderHelpBody => 'Некои телефони ги запираат апликациите во заднина за да штедат батерија, што може да ги одложи или блокира потсетниците. Дозволете Vaultara да работи без ограничувања на батеријата и проверете дали известувањата се вклучени во поставките на апликацијата.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Отвори ги поставките за батеријата';
+
+  @override
+  String get reminderHelpOpenApp => 'Отвори ги поставките на апликацијата';
+
+  @override
+  String get showPassword => 'Прикажи лозинка';
+
+  @override
+  String get hidePassword => 'Сокриј лозинка';
+
+  @override
+  String get pinCategory => 'Закачи горе';
+
+  @override
+  String get unpinCategory => 'Откачи';
+
+  @override
+  String get clearSearch => 'Исчисти пребарување';
 }

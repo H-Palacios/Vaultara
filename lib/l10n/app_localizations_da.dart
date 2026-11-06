@@ -1519,7 +1519,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get costCardTitle => 'Fornyelsesomkostninger';
 
   @override
-  String get costCardSubtitle => 'Hvad dine fornyelser koster de næste 12 måneder';
+  String get costCardSubtitle => 'Hvad dine fornyelser koster, måned for måned';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Din rejse kræver opmærksomhed';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip afgår den $date, og $count ting skal ordnes, før du rejser.',
-      one: '$trip afgår den $date, og $count ting skal ordnes, før du rejser.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Åbn rejse';
@@ -6204,4 +6193,97 @@ class AppLocalizationsDa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Mellemlanding i $country. Tjek, om du har brug for et transitvisum.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totaler vises i $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Valutakurser';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Beløb i andre valutaer omregnes til $currency med daglige valutakurser. Hver post beholder det beløb og den valuta, du har indtastet.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurser opdateret $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Ingen valutakurs for $currencies. Disse beløb vises separat.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: du rejser den $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Flydatoer skal ligge mellem $start og $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Denne flyvning overlapper en anden flyvning. Flyvninger skal følge efter hinanden i rækkefølge.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Nogle flyvninger ligger uden for dine rejsedatoer. Ret datoerne, eller redigér de flyvninger.';
+
+  @override
+  String get loadErrorBody => 'Vi kunne ikke indlæse dette. Tjek din forbindelse, og prøv igen.';
+
+  @override
+  String get tryAgain => 'Prøv igen';
+
+  @override
+  String get discardChangesTitle => 'Vil du kassere dine ændringer?';
+
+  @override
+  String get discardChangesBody => 'Du har ændringer, der ikke er gemt. Hvis du forlader siden nu, går de tabt.';
+
+  @override
+  String get discardChangesKeep => 'Fortsæt redigering';
+
+  @override
+  String get discardChangesDiscard => 'Kassér';
+
+  @override
+  String get offlineBanner => 'Offline. Ændringer synkroniseres, når du får forbindelse igen.';
+
+  @override
+  String get reminderHelpTitle => 'Kommer påmindelserne ikke frem?';
+
+  @override
+  String get reminderHelpSubtitle => 'Ret batteriindstillinger, der blokerer påmindelser';
+
+  @override
+  String get reminderHelpBody => 'Nogle telefoner stopper apps i baggrunden for at spare batteri, hvilket kan forsinke eller blokere påmindelser. Giv Vaultara lov til at køre uden batteribegrænsninger, og sørg for, at notifikationer er slået til i appens indstillinger.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Åbn batteriindstillinger';
+
+  @override
+  String get reminderHelpOpenApp => 'Åbn appindstillinger';
+
+  @override
+  String get showPassword => 'Vis adgangskode';
+
+  @override
+  String get hidePassword => 'Skjul adgangskode';
+
+  @override
+  String get pinCategory => 'Fastgør øverst';
+
+  @override
+  String get unpinCategory => 'Frigør';
+
+  @override
+  String get clearSearch => 'Ryd søgning';
 }

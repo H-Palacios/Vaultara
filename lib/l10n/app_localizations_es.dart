@@ -1519,7 +1519,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get costCardTitle => 'Costos de renovación';
 
   @override
-  String get costCardSubtitle => 'Lo que te costarán las renovaciones en los próximos 12 meses';
+  String get costCardSubtitle => 'Lo que cuestan tus renovaciones, mes a mes';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3084,17 +3084,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Tu viaje necesita atención';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip sale el $date, y hay $count cosas por arreglar antes de irte.',
-      one: '$trip sale el $date, y hay $count cosa por arreglar antes de irte.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Abrir viaje';
@@ -6228,4 +6217,97 @@ class AppLocalizationsEs extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Escala en $country. Comprueba si necesitas un visado de tránsito.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Moneda';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Los totales se muestran en $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tipos de cambio';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Los importes en otras monedas se convierten a $currency con tipos de cambio diarios. Cada registro conserva el importe y la moneda que introdujiste.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tipos actualizados el $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'No hay tipo de cambio para $currencies. Estos importes se muestran aparte.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: sales el $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Las fechas de los vuelos deben estar entre el $start y el $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Este vuelo se solapa con otro vuelo. Los vuelos deben seguirse en orden.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Algunos vuelos están fuera de las fechas del viaje. Cambia las fechas o edita esos vuelos.';
+
+  @override
+  String get loadErrorBody => 'No se pudo cargar. Comprueba tu conexión e inténtalo de nuevo.';
+
+  @override
+  String get tryAgain => 'Reintentar';
+
+  @override
+  String get discardChangesTitle => '¿Descartar los cambios?';
+
+  @override
+  String get discardChangesBody => 'Tienes cambios sin guardar. Si sales ahora, se perderán.';
+
+  @override
+  String get discardChangesKeep => 'Seguir editando';
+
+  @override
+  String get discardChangesDiscard => 'Descartar';
+
+  @override
+  String get offlineBanner => 'Sin conexión. Los cambios se sincronizarán cuando vuelvas a conectarte.';
+
+  @override
+  String get reminderHelpTitle => '¿No te llegan los recordatorios?';
+
+  @override
+  String get reminderHelpSubtitle => 'Corrige los ajustes de batería que bloquean los recordatorios';
+
+  @override
+  String get reminderHelpBody => 'Algunos teléfonos detienen las aplicaciones en segundo plano para ahorrar batería, lo que puede retrasar o bloquear los recordatorios. Permite que Vaultara funcione sin restricciones de batería y comprueba que las notificaciones estén activadas en los ajustes de la aplicación.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Abrir ajustes de batería';
+
+  @override
+  String get reminderHelpOpenApp => 'Abrir ajustes de la aplicación';
+
+  @override
+  String get showPassword => 'Mostrar contraseña';
+
+  @override
+  String get hidePassword => 'Ocultar contraseña';
+
+  @override
+  String get pinCategory => 'Fijar arriba';
+
+  @override
+  String get unpinCategory => 'Dejar de fijar';
+
+  @override
+  String get clearSearch => 'Borrar búsqueda';
 }

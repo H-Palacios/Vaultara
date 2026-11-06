@@ -1519,7 +1519,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get costCardTitle => 'Iye owó isọdọtun';
 
   @override
-  String get costCardSubtitle => 'Iye tí sísọ àwọn igbasilẹ rẹ di tuntun yóò ná ọ ní oṣù 12 tó ń bọ̀';
+  String get costCardSubtitle => 'Iye owó àtúnṣe rẹ, oṣù kọ̀ọ̀kan';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3060,16 +3060,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Ìrìn àjò rẹ nílò àkíyèsí';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip máa jáde ní $date, àwọn nǹkan $count sì nílò àtúnṣe kí o tó lọ.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Ṣí ìrìn àjò';
@@ -6153,4 +6143,97 @@ class AppLocalizationsYo extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Ìdúró ní $country. Ṣàyẹ̀wò bóyá o nílò físà ìkọjá.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Owó';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'A fi àpapọ̀ hàn ní $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Iye pàṣípààrọ̀ owó';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'A máa ń yí iye owó tó wà ní àwọn owó mìíràn padà sí $currency pẹ̀lú iye pàṣípààrọ̀ ojoojúmọ́. Àkọsílẹ̀ kọ̀ọ̀kan máa ń pa iye àti owó tí o fi sí mọ́.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'A ṣe ìmúdójúìwọ̀n iye ní $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Kò sí iye pàṣípààrọ̀ fún $currencies. A fi àwọn iye wọ̀nyí hàn lọ́tọ̀.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: o máa lọ ní $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Àwọn ọjọ́ ọkọ̀ òfurufú gbọ́dọ̀ wà láàrín $start àti $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ọkọ̀ òfurufú yìí ń bá òmíràn kọlù. Àwọn ọkọ̀ òfurufú gbọ́dọ̀ tẹ̀lé ara wọn ní ìtẹ̀léra.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Àwọn ọkọ̀ òfurufú kan wà lóde àwọn ọjọ́ ìrìnàjò rẹ. Yí àwọn ọjọ́ padà tàbí ṣàtúnṣe àwọn ọkọ̀ òfurufú wọ̀nyẹn.';
+
+  @override
+  String get loadErrorBody => 'A kò lè gbé èyí wọlé. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.';
+
+  @override
+  String get tryAgain => 'Tún gbìyànjú';
+
+  @override
+  String get discardChangesTitle => 'Fi àwọn àyípadà rẹ sílẹ̀?';
+
+  @override
+  String get discardChangesBody => 'O ní àwọn àyípadà tí a kò tíì fipamọ́. Tí o bá jáde báyìí, wọn yóò sọnù.';
+
+  @override
+  String get discardChangesKeep => 'Tẹ̀síwájú láti ṣàtúnṣe';
+
+  @override
+  String get discardChangesDiscard => 'Fi sílẹ̀';
+
+  @override
+  String get offlineBanner => 'Kò sí íńtánẹ́ẹ̀tì. Àwọn àyípadà yóò mú ara wọn bá ara wọn mu nígbà tí o bá tún sopọ̀.';
+
+  @override
+  String get reminderHelpTitle => 'Àwọn ìrántí kò dé?';
+
+  @override
+  String get reminderHelpSubtitle => 'Ṣe àtúnṣe àwọn ètò bátìrì tí ó ń dí ìrántí lọ́wọ́';
+
+  @override
+  String get reminderHelpBody => 'Àwọn fóònù kan ń dá àwọn ohun èlò dúró ní ẹ̀yìn láti fi bátìrì pamọ́, èyí tí ó lè fa ìrántí falẹ̀ tàbí dí i lọ́wọ́. Jẹ́ kí Vaultara ṣiṣẹ́ láìsí ààlà bátìrì, kí o sì rí i dájú pé a ti tan àwọn ìkìlọ̀ nínú àwọn ètò ohun èlò náà.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Ṣí àwọn ètò bátìrì';
+
+  @override
+  String get reminderHelpOpenApp => 'Ṣí àwọn ètò ohun èlò';
+
+  @override
+  String get showPassword => 'Fi ọ̀rọ̀ìpamọ́ hàn';
+
+  @override
+  String get hidePassword => 'Fi ọ̀rọ̀ìpamọ́ pamọ́';
+
+  @override
+  String get pinCategory => 'Dì mọ́ òkè';
+
+  @override
+  String get unpinCategory => 'Yọ ìdìmọ́ kúrò';
+
+  @override
+  String get clearSearch => 'Pa àwárí rẹ́';
 }

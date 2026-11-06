@@ -1521,7 +1521,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get costCardTitle => 'Atjaunošanas izmaksas';
 
   @override
-  String get costCardSubtitle => 'Cik jums izmaksās atjaunošana nākamajos 12 mēnešos';
+  String get costCardSubtitle => 'Cik maksā jūsu atjaunojumi, mēnesi pa mēnesim';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3090,18 +3090,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Jūsu ceļojumam vajadzīga uzmanība';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip izbrauc $date, un pirms došanās ceļā jānokārto $count lietas.',
-      one: '$trip izbrauc $date, un pirms došanās ceļā jānokārto $count lieta.',
-      zero: '$trip izbrauc $date, un pirms došanās ceļā jānokārto $count lietu.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Atvērt ceļojumu';
@@ -6267,4 +6255,97 @@ class AppLocalizationsLv extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Starpnosēšanās valstī $country. Pārbaudiet, vai nepieciešama tranzīta vīza.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valūta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Kopsummas tiek rādītas valūtā $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Valūtu kursi';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Summas citās valūtās tiek pārrēķinātas uz $currency pēc dienas kursiem. Katrs ieraksts saglabā jūsu ievadīto summu un valūtu.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kursi atjaunināti $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Valūtai $currencies nav kursa. Šīs summas tiek rādītas atsevišķi.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: jūs dodaties ceļā $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Lidojumu datumiem jābūt starp $start un $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Šis lidojums pārklājas ar citu lidojumu. Lidojumiem jāseko cits citam pēc kārtas.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Daži lidojumi ir ārpus jūsu ceļojuma datumiem. Mainiet datumus vai rediģējiet šos lidojumus.';
+
+  @override
+  String get loadErrorBody => 'Neizdevās ielādēt. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+
+  @override
+  String get tryAgain => 'Mēģināt vēlreiz';
+
+  @override
+  String get discardChangesTitle => 'Atmest izmaiņas?';
+
+  @override
+  String get discardChangesBody => 'Jums ir nesaglabātas izmaiņas. Ja izejat tagad, tās tiks zaudētas.';
+
+  @override
+  String get discardChangesKeep => 'Turpināt rediģēšanu';
+
+  @override
+  String get discardChangesDiscard => 'Atmest';
+
+  @override
+  String get offlineBanner => 'Bezsaistē. Izmaiņas tiks sinhronizētas, kad atkal izveidosiet savienojumu.';
+
+  @override
+  String get reminderHelpTitle => 'Atgādinājumi nesasniedz?';
+
+  @override
+  String get reminderHelpSubtitle => 'Labojiet akumulatora iestatījumus, kas bloķē atgādinājumus';
+
+  @override
+  String get reminderHelpBody => 'Daži tālruņi aptur lietotnes fonā, lai taupītu akumulatoru, un tas var aizkavēt vai bloķēt atgādinājumus. Atļaujiet lietotnei Vaultara darboties bez akumulatora ierobežojumiem un pārliecinieties, ka paziņojumi ir ieslēgti lietotnes iestatījumos.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Atvērt akumulatora iestatījumus';
+
+  @override
+  String get reminderHelpOpenApp => 'Atvērt lietotnes iestatījumus';
+
+  @override
+  String get showPassword => 'Rādīt paroli';
+
+  @override
+  String get hidePassword => 'Slēpt paroli';
+
+  @override
+  String get pinCategory => 'Piespraust augšā';
+
+  @override
+  String get unpinCategory => 'Atspraust';
+
+  @override
+  String get clearSearch => 'Notīrīt meklēšanu';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get costCardTitle => 'Berritze-kostuak';
 
   @override
-  String get costCardSubtitle => 'Zenbat kostatuko zaizkizun berritzeak hurrengo 12 hilabeteetan';
+  String get costCardSubtitle => 'Zure berritzeek zenbat balio duten, hilabetez hilabete';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Zure bidaiak arreta behar du';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip bidaia $date(e)an hasten da, eta joan aurretik $count gauza konpondu behar dira.',
-      one: '$trip bidaia $date(e)an hasten da, eta joan aurretik $count gauza konpondu behar da.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Ireki bidaia';
@@ -6204,4 +6193,97 @@ class AppLocalizationsEu extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Eskala $country(e)n. Egiaztatu igaroaldi-bisa behar duzun.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Moneta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Guztizkoak $currency monetan erakusten dira';
+  }
+
+  @override
+  String get costRatesTitle => 'Truke-tasak';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Beste monetetako zenbatekoak $currency monetara bihurtzen dira eguneroko truke-tasekin. Erregistro bakoitzak sartutako zenbatekoa eta moneta gordetzen ditu.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tasak eguneratuta: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies monetarako ez dago truke-tasarik. Zenbateko hauek bereizita erakusten dira.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: $date(e)an irteten zara.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Hegaldien datak $start eta $end artean egon behar dute.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Hegaldi hau beste hegaldi batekin gainjartzen da. Hegaldiek ordenan jarraitu behar diote elkarri.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Hegaldi batzuk zure bidaiaren datetatik kanpo daude. Aldatu datak edo editatu hegaldi horiek.';
+
+  @override
+  String get loadErrorBody => 'Ezin izan da kargatu. Egiaztatu konexioa eta saiatu berriro.';
+
+  @override
+  String get tryAgain => 'Saiatu berriro';
+
+  @override
+  String get discardChangesTitle => 'Aldaketak baztertu nahi dituzu?';
+
+  @override
+  String get discardChangesBody => 'Gorde gabeko aldaketak dituzu. Orain irtetzen bazara, galdu egingo dira.';
+
+  @override
+  String get discardChangesKeep => 'Jarraitu editatzen';
+
+  @override
+  String get discardChangesDiscard => 'Baztertu';
+
+  @override
+  String get offlineBanner => 'Lineaz kanpo. Aldaketak sinkronizatuko dira berriro konektatzen zarenean.';
+
+  @override
+  String get reminderHelpTitle => 'Gogorarazpenak ez dira iristen?';
+
+  @override
+  String get reminderHelpSubtitle => 'Konpondu gogorarazpenak blokeatzen dituzten bateria-ezarpenak';
+
+  @override
+  String get reminderHelpBody => 'Telefono batzuek atzeko planoko aplikazioak gelditzen dituzte bateria aurrezteko, eta horrek gogorarazpenak atzeratu edo blokeatu ditzake. Utzi Vaultara bateria-mugarik gabe exekutatzen eta ziurtatu jakinarazpenak aktibatuta daudela aplikazioaren ezarpenetan.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Ireki bateria-ezarpenak';
+
+  @override
+  String get reminderHelpOpenApp => 'Ireki aplikazioaren ezarpenak';
+
+  @override
+  String get showPassword => 'Erakutsi pasahitza';
+
+  @override
+  String get hidePassword => 'Ezkutatu pasahitza';
+
+  @override
+  String get pinCategory => 'Finkatu goian';
+
+  @override
+  String get unpinCategory => 'Desfinkatu';
+
+  @override
+  String get clearSearch => 'Garbitu bilaketa';
 }

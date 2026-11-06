@@ -1518,7 +1518,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get costCardTitle => 'Kos pembaharuan';
 
   @override
-  String get costCardSubtitle => 'Kos pembaharuan anda dalam 12 bulan akan datang';
+  String get costCardSubtitle => 'Kos pembaharuan anda, bulan demi bulan';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3059,16 +3059,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Perjalanan Anda Perlukan Perhatian';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip bertolak pada $date, dan $count perkara perlu dibetulkan sebelum anda pergi.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Buka Perjalanan';
@@ -6152,4 +6142,97 @@ class AppLocalizationsMs extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Persinggahan di $country. Semak sama ada anda memerlukan visa transit.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Mata wang';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Jumlah dipaparkan dalam $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Kadar pertukaran';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Jumlah dalam mata wang lain ditukar kepada $currency dengan kadar pertukaran harian. Setiap rekod menyimpan jumlah dan mata wang yang anda masukkan.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kadar dikemas kini $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Tiada kadar pertukaran untuk $currencies. Jumlah ini dipaparkan secara berasingan.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: anda bertolak pada $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Tarikh penerbangan mesti antara $start dengan $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Penerbangan ini bertindih dengan penerbangan lain. Penerbangan mesti berturutan.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Sesetengah penerbangan berada di luar tarikh perjalanan anda. Tukar tarikh atau edit penerbangan tersebut.';
+
+  @override
+  String get loadErrorBody => 'Tidak dapat memuatkan ini. Semak sambungan anda dan cuba lagi.';
+
+  @override
+  String get tryAgain => 'Cuba lagi';
+
+  @override
+  String get discardChangesTitle => 'Buang perubahan anda?';
+
+  @override
+  String get discardChangesBody => 'Anda mempunyai perubahan yang belum disimpan. Jika anda keluar sekarang, perubahan itu akan hilang.';
+
+  @override
+  String get discardChangesKeep => 'Teruskan mengedit';
+
+  @override
+  String get discardChangesDiscard => 'Buang';
+
+  @override
+  String get offlineBanner => 'Luar talian. Perubahan akan disegerakkan apabila anda bersambung semula.';
+
+  @override
+  String get reminderHelpTitle => 'Peringatan tidak sampai?';
+
+  @override
+  String get reminderHelpSubtitle => 'Betulkan tetapan bateri yang menyekat peringatan';
+
+  @override
+  String get reminderHelpBody => 'Sesetengah telefon menghentikan aplikasi di latar belakang untuk menjimatkan bateri, yang boleh melewatkan atau menyekat peringatan. Benarkan Vaultara berjalan tanpa had bateri, dan pastikan pemberitahuan dihidupkan dalam tetapan aplikasi.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Buka tetapan bateri';
+
+  @override
+  String get reminderHelpOpenApp => 'Buka tetapan aplikasi';
+
+  @override
+  String get showPassword => 'Tunjukkan kata laluan';
+
+  @override
+  String get hidePassword => 'Sembunyikan kata laluan';
+
+  @override
+  String get pinCategory => 'Semat di atas';
+
+  @override
+  String get unpinCategory => 'Nyahsemat';
+
+  @override
+  String get clearSearch => 'Kosongkan carian';
 }

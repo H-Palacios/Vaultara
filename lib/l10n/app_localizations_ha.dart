@@ -1519,7 +1519,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get costCardTitle => 'Kuɗaɗen sabuntawa';
 
   @override
-  String get costCardSubtitle => 'Abin da sabuntawarka za ta ci a cikin watanni 12 masu zuwa';
+  String get costCardSubtitle => 'Nawa sabuntawarka ke kashewa, wata zuwa wata';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Tafiyarka tana buƙatar kulawa';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip zai tashi a $date, kuma abubuwa $count suna buƙatar gyara kafin ka tafi.',
-      one: '$trip zai tashi a $date, kuma abu $count yana buƙatar gyara kafin ka tafi.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Buɗe tafiya';
@@ -6204,4 +6193,97 @@ class AppLocalizationsHa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Tsayawa a $country. Duba ko kana buƙatar bizar wucewa.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Kuɗi';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Ana nuna jimillar a $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Farashin musayar kuɗi';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Ana canja adadin da ke cikin wasu kuɗaɗe zuwa $currency da farashin musayar na yau da kullum. Kowane rubutu yana ajiye adadin da kuɗin da ka shigar.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'An sabunta farashi a $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Babu farashin musayar na $currencies. Ana nuna waɗannan adadin daban.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: za ka tashi a ranar $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Dole ne ranakun jirgi su kasance tsakanin $start da $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Wannan jirgin ya yi karo da wani jirgi. Dole ne jirage su biyo juna bisa tsari.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Wasu jirage suna waje da ranakun tafiyarka. Canja ranakun ko gyara waɗannan jiragen.';
+
+  @override
+  String get loadErrorBody => 'Ba a iya loda wannan ba. Duba haɗinka sannan ka sake gwadawa.';
+
+  @override
+  String get tryAgain => 'Sake gwadawa';
+
+  @override
+  String get discardChangesTitle => 'A watsar da canje-canjenka?';
+
+  @override
+  String get discardChangesBody => 'Kana da canje-canjen da ba a adana ba. Idan ka fita yanzu, za su ɓace.';
+
+  @override
+  String get discardChangesKeep => 'Ci gaba da gyara';
+
+  @override
+  String get discardChangesDiscard => 'Watsar';
+
+  @override
+  String get offlineBanner => 'Babu intanet. Za a daidaita canje-canje idan ka sake haɗawa.';
+
+  @override
+  String get reminderHelpTitle => 'Tunatarwa ba sa isowa?';
+
+  @override
+  String get reminderHelpSubtitle => 'Gyara saitunan baturi da ke toshe tunatarwa';
+
+  @override
+  String get reminderHelpBody => 'Wasu wayoyi suna dakatar da manhajoji a bango don adana baturi, wanda zai iya jinkirta ko toshe tunatarwa. Bar Vaultara ta yi aiki ba tare da iyakar baturi ba, kuma ka tabbatar an kunna sanarwa a saitunan manhajar.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Buɗe saitunan baturi';
+
+  @override
+  String get reminderHelpOpenApp => 'Buɗe saitunan manhaja';
+
+  @override
+  String get showPassword => 'Nuna kalmar sirri';
+
+  @override
+  String get hidePassword => 'Ɓoye kalmar sirri';
+
+  @override
+  String get pinCategory => 'Maƙala a sama';
+
+  @override
+  String get unpinCategory => 'Cire maƙala';
+
+  @override
+  String get clearSearch => 'Share bincike';
 }

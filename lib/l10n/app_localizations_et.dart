@@ -1519,7 +1519,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get costCardTitle => 'Uuendamise kulud';
 
   @override
-  String get costCardSubtitle => 'Mida sinu uuendamised järgmise 12 kuu jooksul maksavad';
+  String get costCardSubtitle => 'Mis teie uuendused kuude kaupa maksavad';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Su reis vajab tähelepanu';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip algab $date ja enne minekut on vaja korda teha $count asja.',
-      one: '$trip algab $date ja enne minekut on vaja korda teha $count asi.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Ava reis';
@@ -6204,4 +6193,97 @@ class AppLocalizationsEt extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Vahemaandumine riigis $country. Kontrolli, kas vajad transiitviisat.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Kogusummad kuvatakse valuutas $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Vahetuskursid';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Muudes valuutades summad teisendatakse valuutasse $currency päevakursside alusel. Iga kirje säilitab sisestatud summa ja valuuta.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kursid uuendatud $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Valuutal $currencies puudub vahetuskurss. Need summad kuvatakse eraldi.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: sõidate $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Lennukuupäevad peavad jääma vahemikku $start kuni $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'See lend kattub teise lennuga. Lennud peavad järgnema üksteisele õiges järjekorras.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Mõned lennud jäävad reisi kuupäevadest välja. Muutke kuupäevi või muutke neid lende.';
+
+  @override
+  String get loadErrorBody => 'Seda ei õnnestunud laadida. Kontrollige ühendust ja proovige uuesti.';
+
+  @override
+  String get tryAgain => 'Proovi uuesti';
+
+  @override
+  String get discardChangesTitle => 'Kas loobuda muudatustest?';
+
+  @override
+  String get discardChangesBody => 'Teil on salvestamata muudatusi. Kui lahkute praegu, lähevad need kaotsi.';
+
+  @override
+  String get discardChangesKeep => 'Jätka muutmist';
+
+  @override
+  String get discardChangesDiscard => 'Loobu';
+
+  @override
+  String get offlineBanner => 'Võrguühendus puudub. Muudatused sünkroonitakse, kui ühendus taastub.';
+
+  @override
+  String get reminderHelpTitle => 'Meeldetuletused ei jõua kohale?';
+
+  @override
+  String get reminderHelpSubtitle => 'Parandage akuseaded, mis meeldetuletusi blokeerivad';
+
+  @override
+  String get reminderHelpBody => 'Mõned telefonid peatavad rakendused taustal, et akut säästa, mis võib meeldetuletusi hilistada või blokeerida. Lubage Vaultaral töötada ilma akupiiranguteta ja veenduge, et teavitused on rakenduse seadetes sisse lülitatud.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Ava akuseaded';
+
+  @override
+  String get reminderHelpOpenApp => 'Ava rakenduse seaded';
+
+  @override
+  String get showPassword => 'Näita parooli';
+
+  @override
+  String get hidePassword => 'Peida parool';
+
+  @override
+  String get pinCategory => 'Kinnita üles';
+
+  @override
+  String get unpinCategory => 'Eemalda kinnitus';
+
+  @override
+  String get clearSearch => 'Tühjenda otsing';
 }

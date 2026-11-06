@@ -1522,7 +1522,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get costCardTitle => 'Costais athnuachana';
 
   @override
-  String get costCardSubtitle => 'Cad a chosnóidh d\'athnuachain sna 12 mhí atá romhainn';
+  String get costCardSubtitle => 'Cad a chosnaíonn d’athnuachaintí, mí ar mhí';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3135,20 +3135,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Teastaíonn aird ar do thuras';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Fágann $trip ar $date, agus tá $count rud le ceartú sula bhfágann tú.',
-      many: 'Fágann $trip ar $date, agus tá $count rud le ceartú sula bhfágann tú.',
-      few: 'Fágann $trip ar $date, agus tá $count rud le ceartú sula bhfágann tú.',
-      two: 'Fágann $trip ar $date, agus tá $count rud le ceartú sula bhfágann tú.',
-      one: 'Fágann $trip ar $date, agus tá $count rud le ceartú sula bhfágann tú.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Oscail an turas';
@@ -6388,4 +6374,97 @@ class AppLocalizationsGa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Stad-ionad i $country. Seiceáil an bhfuil víosa idirthurais de dhíth ort.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Airgeadra';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Taispeántar na hiomláin in $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Rátaí malairte';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Aistrítear suimeanna in airgeadraí eile go $currency le rátaí malairte laethúla. Coinníonn gach taifead an tsuim agus an t-airgeadra a chuir tú isteach.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Rátaí nuashonraithe ar $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Níl ráta malairte ar fáil do $currencies. Taispeántar na suimeanna seo ar leithligh.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: imíonn tú ar $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Caithfidh dátaí na n-eitleán a bheith idir $start agus $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Forluíonn an eitilt seo eitilt eile. Caithfidh eitiltí teacht ar a chéile in ord.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Tá roinnt eitiltí lasmuigh de dhátaí do thurais. Athraigh na dátaí nó cuir na heitiltí sin in eagar.';
+
+  @override
+  String get loadErrorBody => 'Níorbh fhéidir é seo a luchtú. Seiceáil do cheangal agus bain triail eile as.';
+
+  @override
+  String get tryAgain => 'Bain triail eile as';
+
+  @override
+  String get discardChangesTitle => 'An bhfuil tú ag iarraidh d’athruithe a scriosadh?';
+
+  @override
+  String get discardChangesBody => 'Tá athruithe gan sábháil agat. Má fhágann tú anois, caillfear iad.';
+
+  @override
+  String get discardChangesKeep => 'Lean ort ag eagarthóireacht';
+
+  @override
+  String get discardChangesDiscard => 'Scrios';
+
+  @override
+  String get offlineBanner => 'As líne. Sioncrónófar na hathruithe nuair a athcheanglóidh tú.';
+
+  @override
+  String get reminderHelpTitle => 'Nach bhfuil na meabhrúcháin ag teacht?';
+
+  @override
+  String get reminderHelpSubtitle => 'Réitigh socruithe na ceallraí atá ag cur bac ar mheabhrúcháin';
+
+  @override
+  String get reminderHelpBody => 'Cuireann roinnt fón stop le haipeanna sa chúlra chun ceallra a shábháil, rud a d’fhéadfadh meabhrúcháin a mhoilliú nó a bhlocáil. Lig do Vaultara rith gan teorainn ceallraí, agus cinntigh go bhfuil fógraí casta air i socruithe na haipe.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Oscail socruithe na ceallraí';
+
+  @override
+  String get reminderHelpOpenApp => 'Oscail socruithe na haipe';
+
+  @override
+  String get showPassword => 'Taispeáin an focal faire';
+
+  @override
+  String get hidePassword => 'Folaigh an focal faire';
+
+  @override
+  String get pinCategory => 'Bioráin ag an mbarr';
+
+  @override
+  String get unpinCategory => 'Bain an bhioráin';
+
+  @override
+  String get clearSearch => 'Glan an cuardach';
 }

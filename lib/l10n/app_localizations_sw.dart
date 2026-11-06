@@ -1519,7 +1519,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get costCardTitle => 'Gharama za kuhuisha';
 
   @override
-  String get costCardSubtitle => 'Kuhuisha kutagharimu kiasi gani katika miezi 12 ijayo';
+  String get costCardSubtitle => 'Gharama za marejesho yako, mwezi kwa mwezi';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Safari yako inahitaji uangalizi';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip inaondoka tarehe $date, na mambo $count yanahitaji kurekebishwa kabla hujaondoka.',
-      one: '$trip inaondoka tarehe $date, na jambo $count linahitaji kurekebishwa kabla hujaondoka.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Fungua safari';
@@ -6204,4 +6193,97 @@ class AppLocalizationsSw extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Kituo cha kati nchini $country. Kagua kama unahitaji visa ya kupita.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Sarafu';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Jumla zinaonyeshwa kwa $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Viwango vya ubadilishaji';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Kiasi katika sarafu nyingine hubadilishwa kuwa $currency kwa viwango vya kila siku vya ubadilishaji. Kila rekodi huhifadhi kiasi na sarafu uliyoingiza.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Viwango vilisasishwa $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Hakuna kiwango cha ubadilishaji cha $currencies. Kiasi hiki kinaonyeshwa tofauti.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: unaondoka tarehe $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Tarehe za safari za ndege lazima ziwe kati ya $start na $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Safari hii ya ndege inagongana na safari nyingine. Safari za ndege lazima zifuatane kwa mpangilio.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Baadhi ya safari za ndege ziko nje ya tarehe za safari yako. Badilisha tarehe au hariri safari hizo.';
+
+  @override
+  String get loadErrorBody => 'Hatukuweza kupakia hili. Angalia muunganisho wako kisha ujaribu tena.';
+
+  @override
+  String get tryAgain => 'Jaribu tena';
+
+  @override
+  String get discardChangesTitle => 'Tupa mabadiliko yako?';
+
+  @override
+  String get discardChangesBody => 'Una mabadiliko ambayo hayajahifadhiwa. Ukiondoka sasa, yatapotea.';
+
+  @override
+  String get discardChangesKeep => 'Endelea kuhariri';
+
+  @override
+  String get discardChangesDiscard => 'Tupa';
+
+  @override
+  String get offlineBanner => 'Nje ya mtandao. Mabadiliko yatasawazishwa utakapounganishwa tena.';
+
+  @override
+  String get reminderHelpTitle => 'Vikumbusho havifiki?';
+
+  @override
+  String get reminderHelpSubtitle => 'Rekebisha mipangilio ya betri inayozuia vikumbusho';
+
+  @override
+  String get reminderHelpBody => 'Baadhi ya simu husimamisha programu zilizo chinichini ili kuokoa betri, jambo linaloweza kuchelewesha au kuzuia vikumbusho. Ruhusu Vaultara ifanye kazi bila vikwazo vya betri, na hakikisha arifa zimewashwa kwenye mipangilio ya programu.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Fungua mipangilio ya betri';
+
+  @override
+  String get reminderHelpOpenApp => 'Fungua mipangilio ya programu';
+
+  @override
+  String get showPassword => 'Onyesha nenosiri';
+
+  @override
+  String get hidePassword => 'Ficha nenosiri';
+
+  @override
+  String get pinCategory => 'Bandika juu';
+
+  @override
+  String get unpinCategory => 'Ondoa kubandika';
+
+  @override
+  String get clearSearch => 'Futa utafutaji';
 }

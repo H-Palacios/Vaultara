@@ -1519,7 +1519,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get costCardTitle => 'Müddət uzatma xərcləri';
 
   @override
-  String get costCardSubtitle => 'Növbəti 12 ayda müddət uzatmalarının sizə neçəyə başa gələcəyi';
+  String get costCardSubtitle => 'Yenilənmələrinizin aylıq xərci';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Səfəriniz diqqət tələb edir';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip səfəri $date tarixində başlayır və getməzdən əvvəl $count məsələ həll edilməlidir.',
-      one: '$trip səfəri $date tarixində başlayır və getməzdən əvvəl $count məsələ həll edilməlidir.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Səfəri aç';
@@ -6204,4 +6193,97 @@ class AppLocalizationsAz extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country ölkəsində aralıq dayanacaq. Tranzit vizasının lazım olub-olmadığını yoxlayın.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valyuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Cəmlər $currency ilə göstərilir';
+  }
+
+  @override
+  String get costRatesTitle => 'Mübadilə məzənnələri';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Digər valyutalardakı məbləğlər gündəlik məzənnə ilə $currency valyutasına çevrilir. Hər qeyd sizin daxil etdiyiniz məbləği və valyutanı saxlayır.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Məzənnələr yenilənib: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies üçün məzənnə yoxdur. Bu məbləğlər ayrıca göstərilir.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: $date tarixində yola düşürsünüz.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Uçuş tarixləri $start ilə $end arasında olmalıdır.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Bu uçuş başqa uçuşla üst-üstə düşür. Uçuşlar ardıcıllıqla getməlidir.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Bəzi uçuşlar səfər tarixlərinizdən kənardadır. Tarixləri dəyişin və ya həmin uçuşları redaktə edin.';
+
+  @override
+  String get loadErrorBody => 'Bunu yükləmək mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+
+  @override
+  String get tryAgain => 'Yenidən cəhd edin';
+
+  @override
+  String get discardChangesTitle => 'Dəyişikliklər ləğv edilsin?';
+
+  @override
+  String get discardChangesBody => 'Saxlanmamış dəyişiklikləriniz var. İndi çıxsanız, itəcək.';
+
+  @override
+  String get discardChangesKeep => 'Redaktəyə davam et';
+
+  @override
+  String get discardChangesDiscard => 'Ləğv et';
+
+  @override
+  String get offlineBanner => 'Oflayn. Dəyişikliklər yenidən qoşulduqda sinxronlaşacaq.';
+
+  @override
+  String get reminderHelpTitle => 'Xatırlatmalar gəlmir?';
+
+  @override
+  String get reminderHelpSubtitle => 'Xatırlatmaları bloklayan batareya ayarlarını düzəldin';
+
+  @override
+  String get reminderHelpBody => 'Bəzi telefonlar batareyaya qənaət üçün tətbiqləri arxa fonda dayandırır, bu da xatırlatmaları gecikdirə və ya blok edə bilər. Vaultara tətbiqinin batareya məhdudiyyəti olmadan işləməsinə icazə verin və tətbiq ayarlarında bildirişlərin aktiv olduğundan əmin olun.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Batareya ayarlarını aç';
+
+  @override
+  String get reminderHelpOpenApp => 'Tətbiq ayarlarını aç';
+
+  @override
+  String get showPassword => 'Parolu göstər';
+
+  @override
+  String get hidePassword => 'Parolu gizlət';
+
+  @override
+  String get pinCategory => 'Yuxarıya sancaqla';
+
+  @override
+  String get unpinCategory => 'Sancağı götür';
+
+  @override
+  String get clearSearch => 'Axtarışı təmizlə';
 }

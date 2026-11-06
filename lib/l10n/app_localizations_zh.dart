@@ -1518,7 +1518,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get costCardTitle => '续期费用';
 
   @override
-  String get costCardSubtitle => '未来 12 个月的续期费用';
+  String get costCardSubtitle => '按月显示你的续期费用';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3059,16 +3059,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => '你的行程需要处理';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip 将于 $date 出发，出发前有 $count 件事需要处理。',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => '打开行程';
@@ -6152,6 +6142,99 @@ class AppLocalizationsZh extends AppLocalizations {
   String travelTransitNote(String country) {
     return '在$country转机。请确认是否需要过境签证。';
   }
+
+  @override
+  String get currencyDisplayTitle => '货币';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return '合计以$currency显示';
+  }
+
+  @override
+  String get costRatesTitle => '汇率';
+
+  @override
+  String costRatesBody(String currency) {
+    return '其他货币的金额会按每日汇率换算为$currency。每条记录都会保留你输入的金额和货币。';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return '汇率更新于$date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '没有$currencies的汇率。这些金额单独显示。';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip：你将于$date出发。';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return '航班日期必须在$start至$end之间。';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => '此航班与另一个航班重叠。航班必须按顺序依次排列。';
+
+  @override
+  String get travelFlightsOutsideDates => '部分航班不在你的行程日期内。请更改日期或编辑这些航班。';
+
+  @override
+  String get loadErrorBody => '无法加载。请检查网络连接后重试。';
+
+  @override
+  String get tryAgain => '重试';
+
+  @override
+  String get discardChangesTitle => '放弃更改？';
+
+  @override
+  String get discardChangesBody => '你有尚未保存的更改。现在离开，这些更改将会丢失。';
+
+  @override
+  String get discardChangesKeep => '继续编辑';
+
+  @override
+  String get discardChangesDiscard => '放弃';
+
+  @override
+  String get offlineBanner => '已离线。重新连接后，更改将会同步。';
+
+  @override
+  String get reminderHelpTitle => '收不到提醒？';
+
+  @override
+  String get reminderHelpSubtitle => '修复会拦截提醒的电池设置';
+
+  @override
+  String get reminderHelpBody => '部分手机会为了省电而停止后台应用，这可能导致提醒延迟或被拦截。请允许 Vaultara 不受电池限制运行，并确认应用设置中已开启通知。';
+
+  @override
+  String get reminderHelpOpenBattery => '打开电池设置';
+
+  @override
+  String get reminderHelpOpenApp => '打开应用设置';
+
+  @override
+  String get showPassword => '显示密码';
+
+  @override
+  String get hidePassword => '隐藏密码';
+
+  @override
+  String get pinCategory => '置顶';
+
+  @override
+  String get unpinCategory => '取消置顶';
+
+  @override
+  String get clearSearch => '清除搜索';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -7656,7 +7739,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get costCardTitle => '续期费用';
 
   @override
-  String get costCardSubtitle => '未来 12 个月的续期费用';
+  String get costCardSubtitle => '按月显示你的续期费用';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -9197,16 +9280,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get smartInsightTripHeading => '您的行程需要留意';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip 将于 $date 出发，出发前有 $count 项需要处理。',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => '打开行程';
@@ -12290,6 +12363,99 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String travelTransitNote(String country) {
     return '在$country转机。请确认是否需要过境签证。';
   }
+
+  @override
+  String get currencyDisplayTitle => '货币';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return '合计以$currency显示';
+  }
+
+  @override
+  String get costRatesTitle => '汇率';
+
+  @override
+  String costRatesBody(String currency) {
+    return '其他货币的金额会按每日汇率换算为$currency。每条记录都会保留你输入的金额和货币。';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return '汇率更新于$date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '没有$currencies的汇率。这些金额单独显示。';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip：你将于$date出发。';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return '航班日期必须在$start至$end之间。';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => '此航班与另一个航班重叠。航班必须按顺序依次排列。';
+
+  @override
+  String get travelFlightsOutsideDates => '部分航班不在你的行程日期内。请更改日期或编辑这些航班。';
+
+  @override
+  String get loadErrorBody => '无法加载。请检查网络连接后重试。';
+
+  @override
+  String get tryAgain => '重试';
+
+  @override
+  String get discardChangesTitle => '放弃更改？';
+
+  @override
+  String get discardChangesBody => '你有尚未保存的更改。现在离开，这些更改将会丢失。';
+
+  @override
+  String get discardChangesKeep => '继续编辑';
+
+  @override
+  String get discardChangesDiscard => '放弃';
+
+  @override
+  String get offlineBanner => '已离线。重新连接后，更改将会同步。';
+
+  @override
+  String get reminderHelpTitle => '收不到提醒？';
+
+  @override
+  String get reminderHelpSubtitle => '修复会拦截提醒的电池设置';
+
+  @override
+  String get reminderHelpBody => '部分手机会为了省电而停止后台应用，这可能导致提醒延迟或被拦截。请允许 Vaultara 不受电池限制运行，并确认应用设置中已开启通知。';
+
+  @override
+  String get reminderHelpOpenBattery => '打开电池设置';
+
+  @override
+  String get reminderHelpOpenApp => '打开应用设置';
+
+  @override
+  String get showPassword => '显示密码';
+
+  @override
+  String get hidePassword => '隐藏密码';
+
+  @override
+  String get pinCategory => '置顶';
+
+  @override
+  String get unpinCategory => '取消置顶';
+
+  @override
+  String get clearSearch => '清除搜索';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -13794,7 +13960,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get costCardTitle => '續期費用';
 
   @override
-  String get costCardSubtitle => '未來 12 個月的續期將花費多少';
+  String get costCardSubtitle => '依月份顯示你的續期費用';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -15335,16 +15501,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get smartInsightTripHeading => '您的旅程需要留意';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip 將於 $date 出發，出發前還有 $count 件事需要處理。',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => '開啟旅程';
@@ -18428,4 +18584,97 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String travelTransitNote(String country) {
     return '在$country轉機。請確認是否需要過境簽證。';
   }
+
+  @override
+  String get currencyDisplayTitle => '貨幣';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return '合計以$currency顯示';
+  }
+
+  @override
+  String get costRatesTitle => '匯率';
+
+  @override
+  String costRatesBody(String currency) {
+    return '其他貨幣的金額會依每日匯率換算為$currency。每筆記錄都會保留你輸入的金額與貨幣。';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return '匯率更新於$date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '沒有$currencies的匯率。這些金額會分開顯示。';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip：你將於$date出發。';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return '航班日期必須在$start至$end之間。';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => '此航班與另一個航班重疊。航班必須依順序接續。';
+
+  @override
+  String get travelFlightsOutsideDates => '部分航班不在你的行程日期內。請變更日期或編輯這些航班。';
+
+  @override
+  String get loadErrorBody => '無法載入。請檢查網路連線後再試一次。';
+
+  @override
+  String get tryAgain => '重試';
+
+  @override
+  String get discardChangesTitle => '捨棄變更？';
+
+  @override
+  String get discardChangesBody => '你有尚未儲存的變更。現在離開，這些變更將會遺失。';
+
+  @override
+  String get discardChangesKeep => '繼續編輯';
+
+  @override
+  String get discardChangesDiscard => '捨棄';
+
+  @override
+  String get offlineBanner => '已離線。重新連線後，變更會同步。';
+
+  @override
+  String get reminderHelpTitle => '收不到提醒？';
+
+  @override
+  String get reminderHelpSubtitle => '修正會攔截提醒的電池設定';
+
+  @override
+  String get reminderHelpBody => '部分手機為了省電會停止背景應用程式，這可能導致提醒延遲或被攔截。請允許 Vaultara 不受電池限制執行，並確認應用程式設定中已開啟通知。';
+
+  @override
+  String get reminderHelpOpenBattery => '開啟電池設定';
+
+  @override
+  String get reminderHelpOpenApp => '開啟應用程式設定';
+
+  @override
+  String get showPassword => '顯示密碼';
+
+  @override
+  String get hidePassword => '隱藏密碼';
+
+  @override
+  String get pinCategory => '置頂';
+
+  @override
+  String get unpinCategory => '取消置頂';
+
+  @override
+  String get clearSearch => '清除搜尋';
 }

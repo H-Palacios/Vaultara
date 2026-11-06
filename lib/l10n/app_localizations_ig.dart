@@ -1519,7 +1519,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get costCardTitle => 'Ego imegharị';
 
   @override
-  String get costCardSubtitle => 'Ego imegharị gị ga-efu n\'ime ọnwa 12 na-abịa';
+  String get costCardSubtitle => 'Ọnụ ahịa ngbanwe gị, ọnwa site n’ọnwa';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3060,16 +3060,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Njem Gị Chọrọ Ntinye Uche';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip na-apụ na $date, ihe $count chọrọ idozi tupu ị pụọ.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Meghee Njem';
@@ -6153,4 +6143,97 @@ class AppLocalizationsIg extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Ịkwụsị na $country. Lelee ma ị chọrọ visa ịgafe.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Ego';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'A na-egosi ngụkọta n’ime $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Ọnụego mgbanwe ego';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'A na-agbanwe ọnụọgụ dị n’ego ndị ọzọ gaa $currency site n’ọnụego mgbanwe kwa ụbọchị. Ndekọ ọ bụla na-edebe ọnụọgụ na ego ị tinyere.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'E mepụtara ọnụego na $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Enweghị ọnụego mgbanwe maka $currencies. A na-egosi ọnụọgụ ndị a iche.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: ị ga-aga na $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Ụbọchị ụgbọ elu ga-adị n’etiti $start na $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ụgbọ elu a na-agbakọ na ụgbọ elu ọzọ. Ụgbọ elu kwesịrị ịgbaso ibe ya n’usoro.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Ụfọdụ ụgbọ elu dị n’èzí ụbọchị njem gị. Gbanwee ụbọchị ma ọ bụ dezie ụgbọ elu ndị ahụ.';
+
+  @override
+  String get loadErrorBody => 'Enweghị ike ibu nke a. Lelee njikọ gị ma gbalịa ọzọ.';
+
+  @override
+  String get tryAgain => 'Nwaa ọzọ';
+
+  @override
+  String get discardChangesTitle => 'Tụfuo mgbanwe gị?';
+
+  @override
+  String get discardChangesBody => 'Ị nwere mgbanwe ndị echekwabeghị. Ọ bụrụ na ị pụọ ugbu a, ha ga-efu.';
+
+  @override
+  String get discardChangesKeep => 'Gaa n’ihu na-edezi';
+
+  @override
+  String get discardChangesDiscard => 'Tụfuo';
+
+  @override
+  String get offlineBanner => 'Ọ dịghị n’ịntanet. A ga-emekọrịta mgbanwe mgbe i jikọtara ọzọ.';
+
+  @override
+  String get reminderHelpTitle => 'Ncheta anaghị abata?';
+
+  @override
+  String get reminderHelpSubtitle => 'Dozie ntọala batrị na-egbochi ncheta';
+
+  @override
+  String get reminderHelpBody => 'Ụfọdụ ekwentị na-akwụsị ngwa n’azụ iji chekwaa batrị, nke nwere ike igbu oge ma ọ bụ gbochie ncheta. Kwere ka Vaultara rụọ ọrụ na-enweghị oke batrị, ma jide n’aka na e gbanyere ọkwa n’ntọala ngwa.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Meghee ntọala batrị';
+
+  @override
+  String get reminderHelpOpenApp => 'Meghee ntọala ngwa';
+
+  @override
+  String get showPassword => 'Gosi okwuntughe';
+
+  @override
+  String get hidePassword => 'Zoo okwuntughe';
+
+  @override
+  String get pinCategory => 'Kpọchie n’elu';
+
+  @override
+  String get unpinCategory => 'Wepụ nkpọchi';
+
+  @override
+  String get clearSearch => 'Hichapụ ọchụchọ';
 }

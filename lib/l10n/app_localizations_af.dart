@@ -1519,7 +1519,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get costCardTitle => 'Hernuwingskoste';
 
   @override
-  String get costCardSubtitle => 'Wat jou hernuwings in die volgende 12 maande gaan kos';
+  String get costCardSubtitle => 'Wat jou hernuwings per maand kos';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Jou reis het aandag nodig';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip vertrek op $date, en $count dinge moet reggemaak word voor jy gaan.',
-      one: '$trip vertrek op $date, en $count ding moet reggemaak word voor jy gaan.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Maak reis oop';
@@ -6204,4 +6193,97 @@ class AppLocalizationsAf extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Tussenstop in $country. Gaan na of jy ’n deurreisvisum nodig het.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Geldeenheid';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totale word in $currency gewys';
+  }
+
+  @override
+  String get costRatesTitle => 'Wisselkoerse';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Bedrae in ander geldeenhede word met daaglikse wisselkoerse na $currency omgeskakel. Elke rekord hou die bedrag en geldeenheid wat jy ingevoer het.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Koerse opgedateer $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Geen wisselkoers vir $currencies. Hierdie bedrae word apart gewys.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: jy vertrek op $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Vlugdatums moet tussen $start en $end wees.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Hierdie vlug oorvleuel met ’n ander vlug. Vlugte moet in volgorde op mekaar volg.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Sommige vlugte is buite jou reisdatums. Verander die datums of wysig daardie vlugte.';
+
+  @override
+  String get loadErrorBody => 'Ons kon dit nie laai nie. Kontroleer jou verbinding en probeer weer.';
+
+  @override
+  String get tryAgain => 'Probeer weer';
+
+  @override
+  String get discardChangesTitle => 'Gooi jou veranderinge weg?';
+
+  @override
+  String get discardChangesBody => 'Jy het onbewaarde veranderinge. As jy nou weggaan, sal dit verlore gaan.';
+
+  @override
+  String get discardChangesKeep => 'Gaan voort met wysig';
+
+  @override
+  String get discardChangesDiscard => 'Gooi weg';
+
+  @override
+  String get offlineBanner => 'Vanlyn. Veranderinge sinkroniseer wanneer jy weer koppel.';
+
+  @override
+  String get reminderHelpTitle => 'Kom herinneringe nie aan nie?';
+
+  @override
+  String get reminderHelpSubtitle => 'Herstel batteryinstellings wat herinneringe blokkeer';
+
+  @override
+  String get reminderHelpBody => 'Sommige fone stop programme in die agtergrond om battery te spaar, wat herinneringe kan vertraag of blokkeer. Laat Vaultara toe om sonder batteryperke te werk, en maak seker kennisgewings is in die programinstellings aangeskakel.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Maak batteryinstellings oop';
+
+  @override
+  String get reminderHelpOpenApp => 'Maak programinstellings oop';
+
+  @override
+  String get showPassword => 'Wys wagwoord';
+
+  @override
+  String get hidePassword => 'Versteek wagwoord';
+
+  @override
+  String get pinCategory => 'Speld bo vas';
+
+  @override
+  String get unpinCategory => 'Maak los';
+
+  @override
+  String get clearSearch => 'Maak soektog skoon';
 }

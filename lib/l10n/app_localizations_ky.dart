@@ -1519,7 +1519,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get costCardTitle => 'Жаңылоо чыгымдары';
 
   @override
-  String get costCardSubtitle => 'Кийинки 12 айда жаңылоолор канча турат';
+  String get costCardSubtitle => 'Жаңыртууларыңыздын айлык баасы';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Сапарыңыз көңүл бурууну талап кылат';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date күнү жөнөйт, жөнөөрдөн мурун $count нерсени оңдоо керек.',
-      one: '$trip $date күнү жөнөйт, жөнөөрдөн мурун $count нерсени оңдоо керек.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Сапарды ачуу';
@@ -6204,4 +6193,97 @@ class AppLocalizationsKy extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country өлкөсүндө аралык токтоо. Транзиттик виза керекпи, текшериңиз.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Валюта';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Жалпы суммалар $currency менен көрсөтүлөт';
+  }
+
+  @override
+  String get costRatesTitle => 'Валюта курстары';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Башка валюталардагы суммалар күнүмдүк курс боюнча $currency валютасына которулат. Ар бир жазуу сиз киргизген сумманы жана валютаны сактайт.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Курстар жаңыртылды: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies үчүн курс жок. Бул суммалар өзүнчө көрсөтүлөт.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: сиз $date күнү жөнөйсүз.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Рейс күндөрү $start менен $end ортосунда болушу керек.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Бул рейс башка рейс менен дал келет. Рейстер ирети менен бири-биринен кийин болушу керек.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Айрым рейстер саякат күндөрүнөн тышкары. Күндөрдү өзгөртүңүз же ошол рейстерди оңдоңуз.';
+
+  @override
+  String get loadErrorBody => 'Муну жүктөө мүмкүн болгон жок. Туташууңузду текшерип, кайра аракет кылыңыз.';
+
+  @override
+  String get tryAgain => 'Кайра аракет кылуу';
+
+  @override
+  String get discardChangesTitle => 'Өзгөртүүлөр жокко чыгарылсынбы?';
+
+  @override
+  String get discardChangesBody => 'Сакталбаган өзгөртүүлөр бар. Азыр чыксаңыз, алар жоголот.';
+
+  @override
+  String get discardChangesKeep => 'Түзөтүүнү улантуу';
+
+  @override
+  String get discardChangesDiscard => 'Жокко чыгаруу';
+
+  @override
+  String get offlineBanner => 'Тармакта эмес. Кайра туташканда өзгөртүүлөр шайкештирилет.';
+
+  @override
+  String get reminderHelpTitle => 'Эскертмелер келбей жатабы?';
+
+  @override
+  String get reminderHelpSubtitle => 'Эскертмелерди тоскон батарея жөндөөлөрүн оңдоңуз';
+
+  @override
+  String get reminderHelpBody => 'Кээ бир телефондор батареяны үнөмдөө үчүн фондогу колдонмолорду токтотот, бул эскертмелерди кечиктириши же бөгөттөшү мүмкүн. Vaultara колдонмосуна батарея чектөөсүз иштөөгө уруксат бериңиз жана колдонмонун жөндөөлөрүндө билдирмелер күйүк экенин текшериңиз.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Батарея жөндөөлөрүн ачуу';
+
+  @override
+  String get reminderHelpOpenApp => 'Колдонмонун жөндөөлөрүн ачуу';
+
+  @override
+  String get showPassword => 'Сырсөздү көрсөтүү';
+
+  @override
+  String get hidePassword => 'Сырсөздү жашыруу';
+
+  @override
+  String get pinCategory => 'Жогоруга кадоо';
+
+  @override
+  String get unpinCategory => 'Кадоону алып салуу';
+
+  @override
+  String get clearSearch => 'Издөөнү тазалоо';
 }

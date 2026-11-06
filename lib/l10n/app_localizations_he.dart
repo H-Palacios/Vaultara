@@ -1528,7 +1528,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get costCardTitle => 'עלויות חידוש';
 
   @override
-  String get costCardSubtitle => 'כמה יעלו החידושים שלך ב־12 החודשים הקרובים';
+  String get costCardSubtitle => 'כמה עולים החידושים שלכם, חודש אחר חודש';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3111,17 +3111,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'הנסיעה שלך דורשת תשומת לב';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'הנסיעה $trip יוצאת ב־$date, ויש $count דברים שצריך לתקן לפני היציאה.',
-      one: 'הנסיעה $trip יוצאת ב־$date, ויש $count דבר שצריך לתקן לפני היציאה.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'פתח נסיעה';
@@ -6256,4 +6245,97 @@ class AppLocalizationsHe extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'עצירה ב$country. בדקו אם אתם צריכים ויזת מעבר.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'מטבע';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'הסכומים מוצגים ב$currency';
+  }
+
+  @override
+  String get costRatesTitle => 'שערי חליפין';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'סכומים במטבעות אחרים מומרים ל$currency לפי שערי חליפין יומיים. כל רשומה שומרת את הסכום והמטבע שהזנת.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'השערים עודכנו ב-$date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'אין שער חליפין עבור $currencies. הסכומים האלה מוצגים בנפרד.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: אתם יוצאים ב-$date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'תאריכי הטיסות חייבים להיות בין $start ל-$end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'טיסה זו חופפת לטיסה אחרת. טיסות חייבות לבוא בזו אחר זו לפי הסדר.';
+
+  @override
+  String get travelFlightsOutsideDates => 'חלק מהטיסות מחוץ לתאריכי הנסיעה שלכם. שנו את התאריכים או ערכו את הטיסות האלה.';
+
+  @override
+  String get loadErrorBody => 'לא ניתן היה לטעון זאת. בדוק את החיבור ונסה שוב.';
+
+  @override
+  String get tryAgain => 'נסה שוב';
+
+  @override
+  String get discardChangesTitle => 'לבטל את השינויים?';
+
+  @override
+  String get discardChangesBody => 'יש לך שינויים שלא נשמרו. אם תצא עכשיו, הם יאבדו.';
+
+  @override
+  String get discardChangesKeep => 'המשך עריכה';
+
+  @override
+  String get discardChangesDiscard => 'בטל שינויים';
+
+  @override
+  String get offlineBanner => 'אין חיבור. השינויים יסתנכרנו כשתתחבר מחדש.';
+
+  @override
+  String get reminderHelpTitle => 'התזכורות לא מגיעות?';
+
+  @override
+  String get reminderHelpSubtitle => 'תקן הגדרות סוללה שחוסמות תזכורות';
+
+  @override
+  String get reminderHelpBody => 'חלק מהטלפונים עוצרים אפליקציות ברקע כדי לחסוך בסוללה, ודבר זה עלול לעכב או לחסום תזכורות. אפשר ל-Vaultara לפעול ללא הגבלות סוללה, וודא שההתראות מופעלות בהגדרות האפליקציה.';
+
+  @override
+  String get reminderHelpOpenBattery => 'פתח הגדרות סוללה';
+
+  @override
+  String get reminderHelpOpenApp => 'פתח הגדרות אפליקציה';
+
+  @override
+  String get showPassword => 'הצג סיסמה';
+
+  @override
+  String get hidePassword => 'הסתר סיסמה';
+
+  @override
+  String get pinCategory => 'הצמד למעלה';
+
+  @override
+  String get unpinCategory => 'בטל הצמדה';
+
+  @override
+  String get clearSearch => 'נקה חיפוש';
 }

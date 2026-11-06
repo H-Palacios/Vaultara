@@ -1519,7 +1519,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get costCardTitle => 'تجدید کی لاگتیں';
 
   @override
-  String get costCardSubtitle => 'اگلے 12 مہینوں میں آپ کی تجدیدات پر کتنا خرچ آئے گا';
+  String get costCardSubtitle => 'آپ کی تجدیدوں کا ماہ بہ ماہ خرچ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'آپ کے سفر پر توجہ درکار ہے';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip کی روانگی $date کو ہے، اور جانے سے پہلے $count چیزیں ٹھیک کرنا باقی ہیں۔',
-      one: '$trip کی روانگی $date کو ہے، اور جانے سے پہلے $count چیز ٹھیک کرنا باقی ہے۔',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'سفر کھولیں';
@@ -6204,4 +6193,97 @@ class AppLocalizationsUr extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country میں درمیانی قیام۔ چیک کریں کہ آپ کو ٹرانزٹ ویزا چاہیے یا نہیں۔';
   }
+
+  @override
+  String get currencyDisplayTitle => 'کرنسی';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'کل رقم $currency میں دکھائی جاتی ہے';
+  }
+
+  @override
+  String get costRatesTitle => 'زرِ مبادلہ کی شرحیں';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'دوسری کرنسیوں کی رقوم روزانہ شرحِ مبادلہ کے مطابق $currency میں تبدیل کی جاتی ہیں۔ ہر ریکارڈ آپ کی درج کردہ رقم اور کرنسی محفوظ رکھتا ہے۔';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'شرحیں اپ ڈیٹ ہوئیں $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies کے لیے شرحِ مبادلہ دستیاب نہیں۔ یہ رقوم الگ دکھائی گئی ہیں۔';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: آپ $date کو روانہ ہوتے ہیں۔';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'پروازوں کی تاریخیں $start اور $end کے درمیان ہونی چاہئیں۔';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'یہ پرواز کسی دوسری پرواز سے ٹکراتی ہے۔ پروازیں ترتیب سے ایک کے بعد ایک ہونی چاہئیں۔';
+
+  @override
+  String get travelFlightsOutsideDates => 'کچھ پروازیں آپ کے سفر کی تاریخوں سے باہر ہیں۔ تاریخیں بدلیں یا ان پروازوں میں ترمیم کریں۔';
+
+  @override
+  String get loadErrorBody => 'یہ لوڈ نہیں ہو سکا۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔';
+
+  @override
+  String get tryAgain => 'دوبارہ کوشش کریں';
+
+  @override
+  String get discardChangesTitle => 'تبدیلیاں رد کریں؟';
+
+  @override
+  String get discardChangesBody => 'آپ کی کچھ تبدیلیاں محفوظ نہیں ہوئیں۔ ابھی باہر نکلیں گے تو وہ ضائع ہو جائیں گی۔';
+
+  @override
+  String get discardChangesKeep => 'ترمیم جاری رکھیں';
+
+  @override
+  String get discardChangesDiscard => 'رد کریں';
+
+  @override
+  String get offlineBanner => 'آف لائن۔ دوبارہ جڑنے پر تبدیلیاں سنک ہو جائیں گی۔';
+
+  @override
+  String get reminderHelpTitle => 'یاد دہانیاں نہیں پہنچ رہیں؟';
+
+  @override
+  String get reminderHelpSubtitle => 'یاد دہانیاں روکنے والی بیٹری سیٹنگز درست کریں';
+
+  @override
+  String get reminderHelpBody => 'کچھ فون بیٹری بچانے کے لیے پس منظر میں ایپس کو روک دیتے ہیں، جس سے یاد دہانیاں دیر سے آ سکتی ہیں یا رک سکتی ہیں۔ Vaultara کو بیٹری کی پابندی کے بغیر چلنے دیں اور یقینی بنائیں کہ ایپ سیٹنگز میں اطلاعات آن ہیں۔';
+
+  @override
+  String get reminderHelpOpenBattery => 'بیٹری سیٹنگز کھولیں';
+
+  @override
+  String get reminderHelpOpenApp => 'ایپ سیٹنگز کھولیں';
+
+  @override
+  String get showPassword => 'پاس ورڈ دکھائیں';
+
+  @override
+  String get hidePassword => 'پاس ورڈ چھپائیں';
+
+  @override
+  String get pinCategory => 'اوپر پن کریں';
+
+  @override
+  String get unpinCategory => 'پن ہٹائیں';
+
+  @override
+  String get clearSearch => 'تلاش صاف کریں';
 }

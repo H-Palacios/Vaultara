@@ -1519,7 +1519,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get costCardTitle => 'Endurnýjunarkostnaður';
 
   @override
-  String get costCardSubtitle => 'Hvað endurnýjanir kosta þig næstu 12 mánuði';
+  String get costCardSubtitle => 'Hvað endurnýjanir þínar kosta, mánuð fyrir mánuð';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Ferðin þín þarfnast athygli';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip fer $date og $count atriði þarf að laga áður en þú ferð.',
-      one: '$trip fer $date og $count atriði þarf að laga áður en þú ferð.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Opna ferð';
@@ -6204,4 +6193,97 @@ class AppLocalizationsIs extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Millilending í $country. Athugaðu hvort þú þarft umferðaráritun.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Gjaldmiðill';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Heildartölur eru sýndar í $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Gengi';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Upphæðir í öðrum gjaldmiðlum eru umreiknaðar í $currency á dagsgengi. Hver færsla heldur upphæðinni og gjaldmiðlinum sem þú slóst inn.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Gengi uppfært $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Ekkert gengi fyrir $currencies. Þessar upphæðir eru sýndar sér.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: þú leggur af stað $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Flugdagsetningar verða að vera á milli $start og $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Þetta flug skarast við annað flug. Flug verða að fylgja hvert öðru í röð.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Sum flug eru utan ferðadagsetninga þinna. Breyttu dagsetningunum eða breyttu þessum flugum.';
+
+  @override
+  String get loadErrorBody => 'Ekki tókst að hlaða þessu. Athugaðu tenginguna og reyndu aftur.';
+
+  @override
+  String get tryAgain => 'Reyna aftur';
+
+  @override
+  String get discardChangesTitle => 'Hætta við breytingarnar?';
+
+  @override
+  String get discardChangesBody => 'Þú ert með óvistaðar breytingar. Ef þú ferð núna glatast þær.';
+
+  @override
+  String get discardChangesKeep => 'Halda áfram að breyta';
+
+  @override
+  String get discardChangesDiscard => 'Henda';
+
+  @override
+  String get offlineBanner => 'Án nettengingar. Breytingar samstillast þegar þú tengist aftur.';
+
+  @override
+  String get reminderHelpTitle => 'Berast áminningar ekki?';
+
+  @override
+  String get reminderHelpSubtitle => 'Lagaðu rafhlöðustillingar sem hindra áminningar';
+
+  @override
+  String get reminderHelpBody => 'Sumir símar stöðva forrit í bakgrunni til að spara rafhlöðu, sem getur seinkað eða hindrað áminningar. Leyfðu Vaultara að keyra án rafhlöðutakmarkana og gakktu úr skugga um að tilkynningar séu kveiktar í stillingum forritsins.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Opna rafhlöðustillingar';
+
+  @override
+  String get reminderHelpOpenApp => 'Opna stillingar forrits';
+
+  @override
+  String get showPassword => 'Sýna lykilorð';
+
+  @override
+  String get hidePassword => 'Fela lykilorð';
+
+  @override
+  String get pinCategory => 'Festa efst';
+
+  @override
+  String get unpinCategory => 'Losa';
+
+  @override
+  String get clearSearch => 'Hreinsa leit';
 }

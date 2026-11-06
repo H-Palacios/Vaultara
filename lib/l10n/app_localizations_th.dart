@@ -1506,7 +1506,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get costCardTitle => 'ค่าต่ออายุ';
 
   @override
-  String get costCardSubtitle => 'ค่าใช้จ่ายในการต่ออายุของคุณใน 12 เดือนข้างหน้า';
+  String get costCardSubtitle => 'ค่าใช้จ่ายในการต่ออายุของคุณรายเดือน';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3047,16 +3047,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ทริปของคุณต้องการความสนใจ';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip ออกเดินทางวันที่ $date และมี $count เรื่องที่ต้องแก้ไขก่อนไป',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'เปิดทริป';
@@ -6140,4 +6130,97 @@ class AppLocalizationsTh extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'แวะพักที่ $country ตรวจสอบว่าคุณต้องใช้วีซ่าผ่านแดนหรือไม่';
   }
+
+  @override
+  String get currencyDisplayTitle => 'สกุลเงิน';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'แสดงยอดรวมเป็น $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'อัตราแลกเปลี่ยน';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'จำนวนเงินในสกุลอื่นจะแปลงเป็น $currency ด้วยอัตราแลกเปลี่ยนรายวัน แต่ละรายการยังเก็บจำนวนและสกุลเงินที่คุณกรอกไว้';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'อัปเดตอัตราเมื่อ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'ไม่มีอัตราแลกเปลี่ยนสำหรับ $currencies จำนวนเหล่านี้แสดงแยกต่างหาก';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: คุณออกเดินทางวันที่ $date';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'วันที่เที่ยวบินต้องอยู่ระหว่าง $start ถึง $end';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'เที่ยวบินนี้ทับซ้อนกับเที่ยวบินอื่น เที่ยวบินต้องต่อกันตามลำดับ';
+
+  @override
+  String get travelFlightsOutsideDates => 'เที่ยวบินบางเที่ยวอยู่นอกวันที่เดินทางของคุณ เปลี่ยนวันที่หรือแก้ไขเที่ยวบินเหล่านั้น';
+
+  @override
+  String get loadErrorBody => 'โหลดสิ่งนี้ไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+
+  @override
+  String get tryAgain => 'ลองอีกครั้ง';
+
+  @override
+  String get discardChangesTitle => 'ละทิ้งการเปลี่ยนแปลงหรือไม่';
+
+  @override
+  String get discardChangesBody => 'คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก หากออกตอนนี้ การเปลี่ยนแปลงจะหายไป';
+
+  @override
+  String get discardChangesKeep => 'แก้ไขต่อ';
+
+  @override
+  String get discardChangesDiscard => 'ละทิ้ง';
+
+  @override
+  String get offlineBanner => 'ออฟไลน์ การเปลี่ยนแปลงจะซิงก์เมื่อคุณเชื่อมต่ออีกครั้ง';
+
+  @override
+  String get reminderHelpTitle => 'การเตือนไม่มาใช่ไหม';
+
+  @override
+  String get reminderHelpSubtitle => 'แก้การตั้งค่าแบตเตอรี่ที่บล็อกการเตือน';
+
+  @override
+  String get reminderHelpBody => 'โทรศัพท์บางรุ่นหยุดแอปที่ทำงานเบื้องหลังเพื่อประหยัดแบตเตอรี่ ซึ่งอาจทำให้การเตือนล่าช้าหรือถูกบล็อก อนุญาตให้ Vaultara ทำงานโดยไม่มีข้อจำกัดแบตเตอรี่ และตรวจสอบว่าเปิดการแจ้งเตือนไว้ในการตั้งค่าแอป';
+
+  @override
+  String get reminderHelpOpenBattery => 'เปิดการตั้งค่าแบตเตอรี่';
+
+  @override
+  String get reminderHelpOpenApp => 'เปิดการตั้งค่าแอป';
+
+  @override
+  String get showPassword => 'แสดงรหัสผ่าน';
+
+  @override
+  String get hidePassword => 'ซ่อนรหัสผ่าน';
+
+  @override
+  String get pinCategory => 'ปักหมุดไว้ด้านบน';
+
+  @override
+  String get unpinCategory => 'เลิกปักหมุด';
+
+  @override
+  String get clearSearch => 'ล้างการค้นหา';
 }

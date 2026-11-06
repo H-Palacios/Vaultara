@@ -1519,7 +1519,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get costCardTitle => 'Kharashyada cusboonaysiinta';
 
   @override
-  String get costCardSubtitle => 'Inta ay cusboonaysiintaadu ku kici doonaan 12-ka bilood ee soo socda';
+  String get costCardSubtitle => 'Waxa cusboonaysiintaadu ku kacayso, bil bil';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3068,17 +3068,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Safarkaagu wuxuu u baahan yahay indho';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip wuu baxayaa $date, waxaana jira $count arrimood oo la hagaajinayo ka hor intaadan tegin.',
-      one: '$trip wuu baxayaa $date, waxaana jira $count arrin oo la hagaajinayo ka hor intaadan tegin.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Fur safarka';
@@ -6203,4 +6192,97 @@ class AppLocalizationsSo extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Joogsi dhexe oo ku yaal $country. Hubi inaad u baahan tahay fiiso gudbis.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Lacagta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Wadarta waxaa lagu muujiyaa $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Sicirka sarrifka';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Lacagaha ku jira lacago kale waxaa loo beddelaa $currency iyadoo la isticmaalayo sicirka sarrifka maalinlaha ah. Diiwaan kasta wuxuu hayaa qaddarka iyo lacagta aad gelisay.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Sicirrada waa la cusboonaysiiyay $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Sicir sarrif looma hayo $currencies. Qaddarradan waxaa loo muujiyaa si gooni ah.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: waxaad bixi doontaa $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Taariikhda duulimaadyadu waa inay u dhaxeeyaan $start iyo $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Duulimaadkan wuxuu isku dhacayaa duulimaad kale. Duulimaadyadu waa inay isku xigaan si hagaagsan.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Qaar ka mid ah duulimaadyada ayaa ka baxsan taariikhda safarkaaga. Beddel taariikhaha ama wax ka beddel duulimaadyadaas.';
+
+  @override
+  String get loadErrorBody => 'Lama soo rari karo tan. Hubi xiriirkaaga oo isku day mar kale.';
+
+  @override
+  String get tryAgain => 'Isku day mar kale';
+
+  @override
+  String get discardChangesTitle => 'Ma tuuraysaa isbeddelladaada?';
+
+  @override
+  String get discardChangesBody => 'Waxaad leedahay isbeddello aan la keydin. Haddii aad hadda baxdo, way luntaan.';
+
+  @override
+  String get discardChangesKeep => 'Sii wad tafatirka';
+
+  @override
+  String get discardChangesDiscard => 'Tuur';
+
+  @override
+  String get offlineBanner => 'Khadka ma saaran. Isbeddellada waa la isku xiri doonaa marka aad mar kale ku xidhanto.';
+
+  @override
+  String get reminderHelpTitle => 'Xasuusinuhu ma yimaaddaan?';
+
+  @override
+  String get reminderHelpSubtitle => 'Hagaaji dejinta batarida ee xannibaysa xasuusinta';
+
+  @override
+  String get reminderHelpBody => 'Taleefannada qaar waxay joojiyaan abka asalka ah si ay batarida u badbaadiyaan, taasoo dib u dhigi karta ama xannibi karta xasuusinta. U ogolow Vaultara inay shaqeyso iyadoo aan xaddidaad batari lahayn, oo hubi in ogeysiisyadu shidan yihiin dejinta abka.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Fur dejinta batarida';
+
+  @override
+  String get reminderHelpOpenApp => 'Fur dejinta abka';
+
+  @override
+  String get showPassword => 'Tus erayga sirta ah';
+
+  @override
+  String get hidePassword => 'Qari erayga sirta ah';
+
+  @override
+  String get pinCategory => 'Sare ku xidh';
+
+  @override
+  String get unpinCategory => 'Ka saar xidhka';
+
+  @override
+  String get clearSearch => 'Nadiifi raadinta';
 }

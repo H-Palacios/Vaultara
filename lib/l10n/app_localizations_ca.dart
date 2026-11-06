@@ -1519,7 +1519,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get costCardTitle => 'Costos de renovació';
 
   @override
-  String get costCardSubtitle => 'El que et costaran les renovacions els pròxims 12 mesos';
+  String get costCardSubtitle => 'Què costen les teves renovacions, mes a mes';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'El teu viatge necessita atenció';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip surt el $date, i hi ha $count coses per arreglar abans de marxar.',
-      one: '$trip surt el $date, i hi ha $count cosa per arreglar abans de marxar.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Obre el viatge';
@@ -6204,4 +6193,97 @@ class AppLocalizationsCa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Escala a $country. Comprova si necessites un visat de trànsit.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Moneda';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Els totals es mostren en $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tipus de canvi';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Els imports en altres monedes es converteixen a $currency amb tipus de canvi diaris. Cada registre conserva l’import i la moneda que has introduït.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tipus actualitzats el $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'No hi ha tipus de canvi per a $currencies. Aquests imports es mostren a part.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: marxes el $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Les dates dels vols han d’estar entre el $start i el $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Aquest vol se superposa amb un altre vol. Els vols han de seguir-se en ordre.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Alguns vols són fora de les dates del viatge. Canvia les dates o edita aquests vols.';
+
+  @override
+  String get loadErrorBody => 'No s’ha pogut carregar. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String get tryAgain => 'Torna-ho a provar';
+
+  @override
+  String get discardChangesTitle => 'Vols descartar els canvis?';
+
+  @override
+  String get discardChangesBody => 'Tens canvis sense desar. Si surts ara, es perdran.';
+
+  @override
+  String get discardChangesKeep => 'Continua editant';
+
+  @override
+  String get discardChangesDiscard => 'Descarta';
+
+  @override
+  String get offlineBanner => 'Sense connexió. Els canvis se sincronitzaran quan et tornis a connectar.';
+
+  @override
+  String get reminderHelpTitle => 'No et arriben els recordatoris?';
+
+  @override
+  String get reminderHelpSubtitle => 'Soluciona la configuració de la bateria que bloqueja els recordatoris';
+
+  @override
+  String get reminderHelpBody => 'Alguns telèfons aturen les aplicacions en segon pla per estalviar bateria, cosa que pot retardar o bloquejar els recordatoris. Permet que Vaultara funcioni sense límits de bateria i comprova que les notificacions estiguin activades a la configuració de l’aplicació.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Obre la configuració de la bateria';
+
+  @override
+  String get reminderHelpOpenApp => 'Obre la configuració de l’aplicació';
+
+  @override
+  String get showPassword => 'Mostra la contrasenya';
+
+  @override
+  String get hidePassword => 'Amaga la contrasenya';
+
+  @override
+  String get pinCategory => 'Fixa a la part superior';
+
+  @override
+  String get unpinCategory => 'Deixa de fixar';
+
+  @override
+  String get clearSearch => 'Esborra la cerca';
 }

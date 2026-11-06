@@ -1526,7 +1526,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get costCardTitle => 'Troškovi obnove';
 
   @override
-  String get costCardSubtitle => 'Koliko će vas obnove stajati u sljedećih 12 mjeseci';
+  String get costCardSubtitle => 'Koliko vas koštaju obnove, mjesec po mjesec';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3097,18 +3097,6 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Vaše putovanje treba pažnju';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip kreće $date, a prije polaska treba riješiti $count stvari.',
-      few: '$trip kreće $date, a prije polaska treba riješiti $count stvari.',
-      one: '$trip kreće $date, a prije polaska treba riješiti $count stvar.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Otvori putovanje';
@@ -6270,4 +6258,97 @@ class AppLocalizationsHr extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Presjedanje u zemlji $country. Provjerite trebate li tranzitnu vizu.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Ukupni iznosi prikazuju se u $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tečajevi';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Iznosi u drugim valutama pretvaraju se u $currency prema dnevnim tečajevima. Svaki zapis zadržava iznos i valutu koje ste unijeli.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tečajevi ažurirani $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Nema tečaja za $currencies. Ovi iznosi prikazuju se zasebno.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: putujete $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Datumi leta moraju biti između $start i $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ovaj let se preklapa s drugim letom. Letovi moraju slijediti jedan drugi redom.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Neki letovi su izvan datuma vašeg putovanja. Promijenite datume ili uredite te letove.';
+
+  @override
+  String get loadErrorBody => 'Nije bilo moguće učitati ovo. Provjerite vezu i pokušajte ponovno.';
+
+  @override
+  String get tryAgain => 'Pokušaj ponovno';
+
+  @override
+  String get discardChangesTitle => 'Odbaciti promjene?';
+
+  @override
+  String get discardChangesBody => 'Imate nespremljenih promjena. Ako sada izađete, bit će izgubljene.';
+
+  @override
+  String get discardChangesKeep => 'Nastavi uređivanje';
+
+  @override
+  String get discardChangesDiscard => 'Odbaci';
+
+  @override
+  String get offlineBanner => 'Niste na mreži. Promjene će se sinkronizirati kad se ponovno povežete.';
+
+  @override
+  String get reminderHelpTitle => 'Podsjetnici ne stižu?';
+
+  @override
+  String get reminderHelpSubtitle => 'Popravite postavke baterije koje blokiraju podsjetnike';
+
+  @override
+  String get reminderHelpBody => 'Neki telefoni zaustavljaju aplikacije u pozadini radi uštede baterije, što može odgoditi ili blokirati podsjetnike. Dopustite aplikaciji Vaultara rad bez ograničenja baterije i provjerite jesu li obavijesti uključene u postavkama aplikacije.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Otvori postavke baterije';
+
+  @override
+  String get reminderHelpOpenApp => 'Otvori postavke aplikacije';
+
+  @override
+  String get showPassword => 'Prikaži zaporku';
+
+  @override
+  String get hidePassword => 'Sakrij zaporku';
+
+  @override
+  String get pinCategory => 'Prikvači na vrh';
+
+  @override
+  String get unpinCategory => 'Otkvači';
+
+  @override
+  String get clearSearch => 'Očisti pretraživanje';
 }

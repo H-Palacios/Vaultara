@@ -1519,7 +1519,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get costCardTitle => 'Κόστος ανανεώσεων';
 
   @override
-  String get costCardSubtitle => 'Πόσο θα κοστίσουν οι ανανεώσεις σας τους επόμενους 12 μήνες';
+  String get costCardSubtitle => 'Πόσο κοστίζουν οι ανανεώσεις σας, μήνα με μήνα';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Το ταξίδι σας χρειάζεται προσοχή';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Το ταξίδι $trip ξεκινά στις $date και $count πράγματα χρειάζονται διόρθωση πριν φύγετε.',
-      one: 'Το ταξίδι $trip ξεκινά στις $date και $count πράγμα χρειάζεται διόρθωση πριν φύγετε.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Άνοιγμα ταξιδιού';
@@ -6204,4 +6193,97 @@ class AppLocalizationsEl extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Ενδιάμεση στάση σε $country. Ελέγξτε αν χρειάζεστε βίζα διέλευσης.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Νόμισμα';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Τα σύνολα εμφανίζονται σε $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Ισοτιμίες';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Τα ποσά σε άλλα νομίσματα μετατρέπονται σε $currency με ημερήσιες ισοτιμίες. Κάθε εγγραφή διατηρεί το ποσό και το νόμισμα που εισαγάγατε.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Οι ισοτιμίες ενημερώθηκαν στις $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Δεν υπάρχει ισοτιμία για $currencies. Αυτά τα ποσά εμφανίζονται χωριστά.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: φεύγετε στις $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Οι ημερομηνίες των πτήσεων πρέπει να είναι μεταξύ $start και $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Αυτή η πτήση επικαλύπτεται με άλλη πτήση. Οι πτήσεις πρέπει να ακολουθούν η μία την άλλη με σειρά.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Ορισμένες πτήσεις είναι εκτός των ημερομηνιών του ταξιδιού σας. Αλλάξτε τις ημερομηνίες ή επεξεργαστείτε αυτές τις πτήσεις.';
+
+  @override
+  String get loadErrorBody => 'Δεν ήταν δυνατή η φόρτωση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+
+  @override
+  String get tryAgain => 'Δοκιμάστε ξανά';
+
+  @override
+  String get discardChangesTitle => 'Απόρριψη αλλαγών;';
+
+  @override
+  String get discardChangesBody => 'Έχετε μη αποθηκευμένες αλλαγές. Αν φύγετε τώρα, θα χαθούν.';
+
+  @override
+  String get discardChangesKeep => 'Συνέχεια επεξεργασίας';
+
+  @override
+  String get discardChangesDiscard => 'Απόρριψη';
+
+  @override
+  String get offlineBanner => 'Εκτός σύνδεσης. Οι αλλαγές θα συγχρονιστούν όταν επανασυνδεθείτε.';
+
+  @override
+  String get reminderHelpTitle => 'Δεν φτάνουν οι υπενθυμίσεις;';
+
+  @override
+  String get reminderHelpSubtitle => 'Διορθώστε τις ρυθμίσεις μπαταρίας που μπλοκάρουν τις υπενθυμίσεις';
+
+  @override
+  String get reminderHelpBody => 'Ορισμένα τηλέφωνα σταματούν τις εφαρμογές στο παρασκήνιο για εξοικονόμηση μπαταρίας, κάτι που μπορεί να καθυστερήσει ή να μπλοκάρει τις υπενθυμίσεις. Επιτρέψτε στο Vaultara να λειτουργεί χωρίς περιορισμούς μπαταρίας και βεβαιωθείτε ότι οι ειδοποιήσεις είναι ενεργοποιημένες στις ρυθμίσεις της εφαρμογής.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Άνοιγμα ρυθμίσεων μπαταρίας';
+
+  @override
+  String get reminderHelpOpenApp => 'Άνοιγμα ρυθμίσεων εφαρμογής';
+
+  @override
+  String get showPassword => 'Εμφάνιση κωδικού';
+
+  @override
+  String get hidePassword => 'Απόκρυψη κωδικού';
+
+  @override
+  String get pinCategory => 'Καρφίτσωμα στην κορυφή';
+
+  @override
+  String get unpinCategory => 'Ξεκαρφίτσωμα';
+
+  @override
+  String get clearSearch => 'Εκκαθάριση αναζήτησης';
 }

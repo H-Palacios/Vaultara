@@ -1531,7 +1531,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get costCardTitle => 'Atnaujinimo kainos';
 
   @override
-  String get costCardSubtitle => 'Kiek kainuos atnaujinimai per ateinančius 12 mėnesių';
+  String get costCardSubtitle => 'Kiek kainuoja jūsų atnaujinimai, mėnuo po mėnesio';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3123,19 +3123,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Jūsų kelionei reikia dėmesio';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip išvyksta $date, ir prieš kelionę reikia sutvarkyti $count dalykų.',
-      many: '$trip išvyksta $date, ir prieš kelionę reikia sutvarkyti $count dalyko.',
-      few: '$trip išvyksta $date, ir prieš kelionę reikia sutvarkyti $count dalykus.',
-      one: '$trip išvyksta $date, ir prieš kelionę reikia sutvarkyti $count dalyką.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Atidaryti kelionę';
@@ -6342,4 +6329,97 @@ class AppLocalizationsLt extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Tarpinis sustojimas šalyje $country. Patikrinkite, ar reikia tranzito vizos.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valiuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Sumos rodomos valiuta $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Valiutų kursai';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Sumos kitomis valiutomis konvertuojamos į $currency pagal dienos kursus. Kiekvienas įrašas išsaugo jūsų įvestą sumą ir valiutą.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kursai atnaujinti $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Valiutai $currencies kurso nėra. Šios sumos rodomos atskirai.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: išvykstate $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Skrydžių datos turi būti tarp $start ir $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Šis skrydis kertasi su kitu skrydžiu. Skrydžiai turi sekti vienas po kito iš eilės.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Kai kurie skrydžiai yra už jūsų kelionės datų ribų. Pakeiskite datas arba redaguokite tuos skrydžius.';
+
+  @override
+  String get loadErrorBody => 'Nepavyko įkelti. Patikrinkite ryšį ir bandykite dar kartą.';
+
+  @override
+  String get tryAgain => 'Bandyti dar kartą';
+
+  @override
+  String get discardChangesTitle => 'Atmesti pakeitimus?';
+
+  @override
+  String get discardChangesBody => 'Turite neišsaugotų pakeitimų. Jei išeisite dabar, jie bus prarasti.';
+
+  @override
+  String get discardChangesKeep => 'Tęsti redagavimą';
+
+  @override
+  String get discardChangesDiscard => 'Atmesti';
+
+  @override
+  String get offlineBanner => 'Neprisijungta. Pakeitimai bus sinchronizuoti vėl prisijungus.';
+
+  @override
+  String get reminderHelpTitle => 'Priminimai neateina?';
+
+  @override
+  String get reminderHelpSubtitle => 'Pataisykite akumuliatoriaus nustatymus, blokuojančius priminimus';
+
+  @override
+  String get reminderHelpBody => 'Kai kurie telefonai sustabdo programas fone, kad taupytų akumuliatorių, todėl priminimai gali vėluoti arba būti užblokuoti. Leiskite „Vaultara“ veikti be akumuliatoriaus apribojimų ir įsitikinkite, kad pranešimai įjungti programos nustatymuose.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Atidaryti akumuliatoriaus nustatymus';
+
+  @override
+  String get reminderHelpOpenApp => 'Atidaryti programos nustatymus';
+
+  @override
+  String get showPassword => 'Rodyti slaptažodį';
+
+  @override
+  String get hidePassword => 'Slėpti slaptažodį';
+
+  @override
+  String get pinCategory => 'Prisegti viršuje';
+
+  @override
+  String get unpinCategory => 'Atsegti';
+
+  @override
+  String get clearSearch => 'Išvalyti paiešką';
 }

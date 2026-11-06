@@ -1519,7 +1519,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get costCardTitle => 'Kostot e rinovimit';
 
   @override
-  String get costCardSubtitle => 'Sa do t\'ju kushtojnë rinovimet në 12 muajt e ardhshëm';
+  String get costCardSubtitle => 'Sa kushtojnë rinovimet e tua, muaj pas muaji';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Udhëtimi juaj kërkon vëmendje';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip niset më $date dhe $count gjëra duhen rregulluar para nisjes.',
-      one: '$trip niset më $date dhe $count gjë duhet rregulluar para nisjes.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Hap udhëtimin';
@@ -6204,4 +6193,97 @@ class AppLocalizationsSq extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Ndalesë në $country. Kontrollo nëse të duhet vizë tranziti.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Monedha';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totalet shfaqen në $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Kurset e këmbimit';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Shumat në monedha të tjera konvertohen në $currency me kurse ditore këmbimi. Çdo regjistrim ruan shumën dhe monedhën që keni futur.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurset u përditësuan më $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Nuk ka kurs këmbimi për $currencies. Këto shuma shfaqen veçmas.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: nisesh më $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Datat e fluturimeve duhet të jenë midis $start dhe $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ky fluturim mbivendoset me një fluturim tjetër. Fluturimet duhet të ndjekin njëri-tjetrin me radhë.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Disa fluturime janë jashtë datave të udhëtimit tënd. Ndrysho datat ose redakto ato fluturime.';
+
+  @override
+  String get loadErrorBody => 'Nuk u ngarkua dot. Kontrolloni lidhjen dhe provoni përsëri.';
+
+  @override
+  String get tryAgain => 'Provo përsëri';
+
+  @override
+  String get discardChangesTitle => 'Të hidhen poshtë ndryshimet?';
+
+  @override
+  String get discardChangesBody => 'Keni ndryshime të paruajtura. Nëse dilni tani, do të humbin.';
+
+  @override
+  String get discardChangesKeep => 'Vazhdo redaktimin';
+
+  @override
+  String get discardChangesDiscard => 'Hidh poshtë';
+
+  @override
+  String get offlineBanner => 'Jashtë linje. Ndryshimet do të sinkronizohen kur të lidheni përsëri.';
+
+  @override
+  String get reminderHelpTitle => 'Kujtesat nuk po vijnë?';
+
+  @override
+  String get reminderHelpSubtitle => 'Rregulloni cilësimet e baterisë që bllokojnë kujtesat';
+
+  @override
+  String get reminderHelpBody => 'Disa telefona i ndalojnë aplikacionet në sfond për të kursyer baterinë, gjë që mund t’i vonojë ose t’i bllokojë kujtesat. Lejoni Vaultara të funksionojë pa kufizime baterie dhe sigurohuni që njoftimet janë të aktivizuara te cilësimet e aplikacionit.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Hap cilësimet e baterisë';
+
+  @override
+  String get reminderHelpOpenApp => 'Hap cilësimet e aplikacionit';
+
+  @override
+  String get showPassword => 'Shfaq fjalëkalimin';
+
+  @override
+  String get hidePassword => 'Fshih fjalëkalimin';
+
+  @override
+  String get pinCategory => 'Gozhdo lart';
+
+  @override
+  String get unpinCategory => 'Hiq gozhdimin';
+
+  @override
+  String get clearSearch => 'Pastro kërkimin';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get costCardTitle => 'අලුත් කිරීමේ වියදම්';
 
   @override
-  String get costCardSubtitle => 'ඉදිරි මාස 12 තුළ ඔබේ අලුත් කිරීම්වලට යන වියදම';
+  String get costCardSubtitle => 'ඔබේ අලුත් කිරීම්වල මාසික පිරිවැය';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3068,17 +3068,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ඔබේ ගමනට අවධානය අවශ්‍යයි';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date දින පිටත් වන අතර, යාමට පෙර නිවැරදි කළ යුතු දේවල් $count ක් ඇත.',
-      one: '$trip $date දින පිටත් වන අතර, යාමට පෙර නිවැරදි කළ යුතු දෙයක් $count ක් ඇත.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ගමන විවෘත කරන්න';
@@ -6203,4 +6192,97 @@ class AppLocalizationsSi extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country හි නැවතුමක්. සංක්‍රමණ වීසාවක් අවශ්‍යදැයි පරීක්ෂා කරන්න.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'මුදල් වර්ගය';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'එකතු $currency වලින් පෙන්වයි';
+  }
+
+  @override
+  String get costRatesTitle => 'විනිමය අනුපාත';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'වෙනත් මුදල් වර්ගවල මුදල් දෛනික විනිමය අනුපාතවලින් $currency වලට පරිවර්තනය වේ. සෑම වාර්තාවක්ම ඔබ ඇතුළු කළ මුදල සහ මුදල් වර්ගය තබා ගනී.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'අනුපාත යාවත්කාලීන කළේ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies සඳහා විනිමය අනුපාතයක් නැත. මෙම මුදල් වෙන වෙනම පෙන්වයි.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: ඔබ $date දින පිටත් වේ.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'ගුවන් ගමන් දින $start සහ $end අතර විය යුතුය.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'මෙම ගුවන් ගමන වෙනත් ගුවන් ගමනක් සමඟ අතිච්ඡාදනය වේ. ගුවන් ගමන් අනුපිළිවෙළට එකින් එක පැමිණිය යුතුය.';
+
+  @override
+  String get travelFlightsOutsideDates => 'සමහර ගුවන් ගමන් ඔබේ සංචාර දිනවලින් පිටත ඇත. දින වෙනස් කරන්න හෝ එම ගුවන් ගමන් සංස්කරණය කරන්න.';
+
+  @override
+  String get loadErrorBody => 'මෙය පූරණය කළ නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get tryAgain => 'නැවත උත්සාහ කරන්න';
+
+  @override
+  String get discardChangesTitle => 'ඔබේ වෙනස්කම් ඉවත දමන්නද?';
+
+  @override
+  String get discardChangesBody => 'ඔබට සුරකින්නේ නැති වෙනස්කම් ඇත. දැන් පිටවුවහොත් ඒවා අහිමි වේ.';
+
+  @override
+  String get discardChangesKeep => 'සංස්කරණය දිගටම කරන්න';
+
+  @override
+  String get discardChangesDiscard => 'ඉවත දමන්න';
+
+  @override
+  String get offlineBanner => 'නොබැඳි. ඔබ නැවත සම්බන්ධ වූ විට වෙනස්කම් සමමුහුර්ත වේ.';
+
+  @override
+  String get reminderHelpTitle => 'සිහිකැඳවීම් ලැබෙන්නේ නැද්ද?';
+
+  @override
+  String get reminderHelpSubtitle => 'සිහිකැඳවීම් අවහිර කරන බැටරි සැකසුම් නිවැරදි කරන්න';
+
+  @override
+  String get reminderHelpBody => 'සමහර දුරකථන බැටරිය ඉතිරි කිරීමට පසුබිමේ යෙදුම් නවත්වයි, එමඟින් සිහිකැඳවීම් ප්‍රමාද විය හැකිය හෝ අවහිර විය හැකිය. Vaultara බැටරි සීමා නොමැතිව ධාවනය වීමට ඉඩ දෙන්න, සහ යෙදුම් සැකසුම්වල දැනුම්දීම් සක්‍රිය බව තහවුරු කරන්න.';
+
+  @override
+  String get reminderHelpOpenBattery => 'බැටරි සැකසුම් විවෘත කරන්න';
+
+  @override
+  String get reminderHelpOpenApp => 'යෙදුම් සැකසුම් විවෘත කරන්න';
+
+  @override
+  String get showPassword => 'මුරපදය පෙන්වන්න';
+
+  @override
+  String get hidePassword => 'මුරපදය සඟවන්න';
+
+  @override
+  String get pinCategory => 'ඉහළට පින් කරන්න';
+
+  @override
+  String get unpinCategory => 'පින් ඉවත් කරන්න';
+
+  @override
+  String get clearSearch => 'සෙවුම හිස් කරන්න';
 }

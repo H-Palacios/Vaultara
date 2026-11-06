@@ -1525,7 +1525,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get costCardTitle => 'Ceny obnovení';
 
   @override
-  String get costCardSubtitle => 'Koľko vás budú stáť obnovenia v najbližších 12 mesiacoch';
+  String get costCardSubtitle => 'Koľko vás stoja obnovy, mesiac po mesiaci';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3117,19 +3117,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Vaša cesta si vyžaduje pozornosť';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip: odchod $date. Pred odchodom treba vybaviť: $count vecí.',
-      many: '$trip: odchod $date. Pred odchodom treba vybaviť: $count veci.',
-      few: '$trip: odchod $date. Pred odchodom treba vybaviť: $count veci.',
-      one: '$trip: odchod $date. Pred odchodom treba vybaviť: $count vec.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Otvoriť cestu';
@@ -6330,4 +6317,97 @@ class AppLocalizationsSk extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Prestup v krajine $country. Skontrolujte, či potrebujete tranzitné vízum.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Mena';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Súčty sa zobrazujú v mene $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Výmenné kurzy';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Sumy v iných menách sa prepočítavajú na $currency podľa denných kurzov. Každý záznam uchováva sumu a menu, ktoré ste zadali.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurzy aktualizované $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Pre $currencies nie je kurz k dispozícii. Tieto sumy sa zobrazujú zvlášť.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: odchádzate $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Dátumy letov musia byť medzi $start a $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Tento let sa prekrýva s iným letom. Lety musia na seba nadväzovať po poradí.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Niektoré lety sú mimo dátumov vašej cesty. Zmeňte dátumy alebo tieto lety upravte.';
+
+  @override
+  String get loadErrorBody => 'Toto sa nepodarilo načítať. Skontrolujte pripojenie a skúste to znova.';
+
+  @override
+  String get tryAgain => 'Skúsiť znova';
+
+  @override
+  String get discardChangesTitle => 'Zahodiť zmeny?';
+
+  @override
+  String get discardChangesBody => 'Máte neuložené zmeny. Ak teraz odídete, stratia sa.';
+
+  @override
+  String get discardChangesKeep => 'Pokračovať v úpravách';
+
+  @override
+  String get discardChangesDiscard => 'Zahodiť';
+
+  @override
+  String get offlineBanner => 'Offline. Zmeny sa synchronizujú po opätovnom pripojení.';
+
+  @override
+  String get reminderHelpTitle => 'Pripomenutia nechodia?';
+
+  @override
+  String get reminderHelpSubtitle => 'Opravte nastavenia batérie, ktoré pripomenutia blokujú';
+
+  @override
+  String get reminderHelpBody => 'Niektoré telefóny zastavujú aplikácie na pozadí kvôli šetreniu batérie, čo môže pripomenutia oneskoriť alebo zablokovať. Povoľte aplikácii Vaultara bežať bez obmedzení batérie a overte, či sú v nastaveniach aplikácie zapnuté upozornenia.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Otvoriť nastavenia batérie';
+
+  @override
+  String get reminderHelpOpenApp => 'Otvoriť nastavenia aplikácie';
+
+  @override
+  String get showPassword => 'Zobraziť heslo';
+
+  @override
+  String get hidePassword => 'Skryť heslo';
+
+  @override
+  String get pinCategory => 'Pripnúť hore';
+
+  @override
+  String get unpinCategory => 'Odopnúť';
+
+  @override
+  String get clearSearch => 'Vymazať hľadanie';
 }

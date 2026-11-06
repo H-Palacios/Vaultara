@@ -1518,7 +1518,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get costCardTitle => 'Chi phí gia hạn';
 
   @override
-  String get costCardSubtitle => 'Chi phí gia hạn của bạn trong 12 tháng tới';
+  String get costCardSubtitle => 'Chi phí gia hạn của bạn theo từng tháng';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3059,16 +3059,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Chuyến đi của bạn cần chú ý';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip khởi hành vào $date, và có $count việc cần sửa trước khi bạn đi.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Mở chuyến đi';
@@ -6152,4 +6142,97 @@ class AppLocalizationsVi extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Dừng chuyển tiếp tại $country. Hãy kiểm tra xem bạn có cần visa quá cảnh không.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Tiền tệ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Tổng được hiển thị bằng $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tỷ giá hối đoái';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Số tiền bằng đơn vị khác được quy đổi sang $currency theo tỷ giá hằng ngày. Mỗi bản ghi giữ nguyên số tiền và đơn vị tiền tệ bạn đã nhập.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tỷ giá cập nhật ngày $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Không có tỷ giá cho $currencies. Các khoản này được hiển thị riêng.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: bạn khởi hành vào $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Ngày của chuyến bay phải nằm trong khoảng từ $start đến $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Chuyến bay này trùng với một chuyến bay khác. Các chuyến bay phải nối tiếp nhau theo thứ tự.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Một số chuyến bay nằm ngoài ngày đi của bạn. Hãy đổi ngày hoặc chỉnh sửa các chuyến bay đó.';
+
+  @override
+  String get loadErrorBody => 'Không thể tải nội dung này. Hãy kiểm tra kết nối và thử lại.';
+
+  @override
+  String get tryAgain => 'Thử lại';
+
+  @override
+  String get discardChangesTitle => 'Bỏ các thay đổi?';
+
+  @override
+  String get discardChangesBody => 'Bạn có thay đổi chưa lưu. Nếu thoát bây giờ, chúng sẽ bị mất.';
+
+  @override
+  String get discardChangesKeep => 'Tiếp tục chỉnh sửa';
+
+  @override
+  String get discardChangesDiscard => 'Bỏ';
+
+  @override
+  String get offlineBanner => 'Ngoại tuyến. Các thay đổi sẽ được đồng bộ khi bạn kết nối lại.';
+
+  @override
+  String get reminderHelpTitle => 'Lời nhắc không đến?';
+
+  @override
+  String get reminderHelpSubtitle => 'Sửa cài đặt pin đang chặn lời nhắc';
+
+  @override
+  String get reminderHelpBody => 'Một số điện thoại dừng ứng dụng chạy nền để tiết kiệm pin, điều này có thể làm lời nhắc đến muộn hoặc bị chặn. Hãy cho phép Vaultara chạy không giới hạn pin và đảm bảo thông báo đã bật trong cài đặt ứng dụng.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Mở cài đặt pin';
+
+  @override
+  String get reminderHelpOpenApp => 'Mở cài đặt ứng dụng';
+
+  @override
+  String get showPassword => 'Hiện mật khẩu';
+
+  @override
+  String get hidePassword => 'Ẩn mật khẩu';
+
+  @override
+  String get pinCategory => 'Ghim lên đầu';
+
+  @override
+  String get unpinCategory => 'Bỏ ghim';
+
+  @override
+  String get clearSearch => 'Xóa tìm kiếm';
 }
