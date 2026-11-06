@@ -472,9 +472,7 @@ class _InsightsScreenState extends State<InsightsScreen>
           child: ExpiryTimelineCard(
             result: timeline,
             onOpenRecord: widget.isTutorialMode ? null : _openTimelineRecord,
-            upcomingRecords: widget.isTutorialMode
-                ? null
-                : RecordRepository.allActive(),
+            upcomingRecords: widget.isTutorialMode ? null : records,
           ),
         ),
         const SizedBox(height: 16),
@@ -482,8 +480,9 @@ class _InsightsScreenState extends State<InsightsScreen>
           PremiumBuilder(
             initial: widget.isPremium,
             builder: (context, isPremium) => RenewalCostsCard(
-              key: ValueKey('renewal-costs-$_dataVersion'),
+              key: ValueKey('renewal-costs-$_dataVersion-${person ?? ''}'),
               isPremium: isPremium,
+              records: records,
             ),
           ),
           const SizedBox(height: 16),

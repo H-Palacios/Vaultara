@@ -4,6 +4,7 @@ import 'dart:ui' show ImageFilter;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/core/view/widgets/year_navigator.dart';
@@ -19,7 +20,11 @@ import 'package:vaultara/l10n/app_localizations.dart';
 class RenewalCostsCard extends StatefulWidget {
   final bool isPremium;
 
-  const RenewalCostsCard({super.key, required this.isPremium});
+  /// The records to add up, already narrowed by the person filter on
+  /// Insights. Null uses every record.
+  final List<TrackedItem>? records;
+
+  const RenewalCostsCard({super.key, required this.isPremium, this.records});
 
   @override
   State<RenewalCostsCard> createState() => _RenewalCostsCardState();
@@ -51,7 +56,7 @@ class _RenewalCostsCardState extends State<RenewalCostsCard> {
       return const _CostsShell(child: _LockedBody());
     }
 
-    final records = RecordRepository.allActive();
+    final records = widget.records ?? RecordRepository.allActive();
     final years = CostForecast.years(records);
     var year = _year ?? DateTime.now().year;
     if (year < years.first) year = years.first;
