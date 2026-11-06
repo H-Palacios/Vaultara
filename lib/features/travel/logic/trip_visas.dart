@@ -92,7 +92,7 @@ class TripVisas {
         any = true;
         if (hasValid(trip, r.holderId, d.country)) continue;
         open = true;
-        final day = VisaCheck.applyBy(trip.start, d.status!);
+        final day = d.applyBy(trip.start);
         if (earliest == null || day.isBefore(earliest)) earliest = day;
       }
       if (open) needing++;
