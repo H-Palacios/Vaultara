@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -262,7 +263,9 @@ class PhotoMigration {
         cached,
         cached.copyWith(attachments: next),
       );
-    } catch (_) {}
+    } catch (error, stack) {
+      ErrorReporter.record(error, stack, 'photo_migration_update');
+    }
   }
 
   static Future<bool?> _resolve(String uid, _JournalEntry entry) async {
