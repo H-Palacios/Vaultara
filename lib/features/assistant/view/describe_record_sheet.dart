@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
+import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
@@ -10,7 +11,7 @@ Future<AssistantAction?> showDescribeRecordSheet(BuildContext context) {
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
-    showDragHandle: true,
+    enableDrag: false,
     builder: (_) => const _DescribeRecordSheet(),
   );
 }
@@ -133,12 +134,19 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
 
   @override
   Widget build(BuildContext context) {
+    return UnsavedChangesGuard(
+      isDirty: () => !_busy && _controller.text.trim().isNotEmpty,
+      child: _buildForm(context),
+    );
+  }
+
+  Widget _buildForm(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
 
     return SingleChildScrollView(
-      padding: EdgeInsets.fromLTRB(16, 0, 16, 12 + bottomInset),
+      padding: EdgeInsets.fromLTRB(16, 18, 16, 12 + bottomInset),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -196,7 +204,7 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: _busy ? null : () => Navigator.of(context).pop(),
+                  onPressed: _busy ? null : () => Navigator.of(context).maybePop(),
                   child: Text(loc.cancel),
                 ),
               ),

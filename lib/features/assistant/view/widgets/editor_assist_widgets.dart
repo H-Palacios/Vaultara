@@ -110,7 +110,6 @@ class AssistHintRow extends StatelessWidget {
           ),
           IconButton(
             tooltip: loc.assistantActionDismiss,
-            visualDensity: VisualDensity.compact,
             onPressed: onDismiss,
             icon: Icon(
               Icons.close_rounded,
