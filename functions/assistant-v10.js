@@ -13,6 +13,7 @@ const MAX_HISTORY = 20;
 const MAX_COST_ITEMS = 15;
 const DELETED_KEEP_DAYS = 30;
 const DAY_MS = 24 * 60 * 60 * 1000;
+const typo = require("./typo");
 
 const PRESET_CATEGORIES = [
   "personal_identification",
@@ -136,22 +137,25 @@ module.exports = function makeV10(h) {
     const wanted = norm(value);
     if (!wanted) return null;
     const list = await categories(ctx);
-    return (
+    const exact =
       list.find((c) => c.key === str(value)) ||
       list.find((c) => norm(c.name) === wanted) ||
-      list.find((c) => norm(readable(c.key)) === wanted) ||
-      null
-    );
+      list.find((c) => norm(readable(c.key)) === wanted);
+    if (exact) return exact;
+    // Typing mistakes, only when one category is clearly meant.
+    const near = typo.best(value, list, (c) => [c.name, readable(c.key)], { min: 0.8 });
+    return near && !near.ambiguous ? near.item : null;
   }
 
   function findGroup(category, value) {
     const wanted = norm(value);
     if (!wanted) return null;
-    return (
+    const exact =
       category.groups.find((g) => g.key && g.key === str(value)) ||
-      category.groups.find((g) => norm(g.name) === wanted) ||
-      null
-    );
+      category.groups.find((g) => norm(g.name) === wanted);
+    if (exact) return exact;
+    const near = typo.best(value, category.groups, (g) => g.name, { min: 0.8 });
+    return near && !near.ambiguous ? near.item : null;
   }
 
   function nameTaken(list, name) {

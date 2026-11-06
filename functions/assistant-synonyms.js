@@ -170,6 +170,33 @@ function aliasMatches(query) {
   return { groups, categories };
 }
 
+// The preset groups and categories a phrase points at when a known name is
+// in it with typing mistakes: "drivng licnse", "pasprot", "reisepas". Only
+// alias words of 4 or more letters are matched loosely; "id" or "mot" must
+// be typed exactly, because short words are too easy to confuse.
+function typoAliasMatches(query) {
+  const typo = require("./typo");
+  const text = clean(query);
+  const groups = new Set();
+  const categories = new Set();
+  if (!text) return { groups, categories };
+  const scan = (table, out) => {
+    for (const [key, aliases] of table) {
+      for (const alias of aliases) {
+        if (!/[a-z]/.test(alias)) continue;
+        if (!alias.split(" ").some((w) => w.length >= 4)) continue;
+        if (typo.containsScore(text, alias) >= 0.8) {
+          out.add(key);
+          break;
+        }
+      }
+    }
+  };
+  scan(GROUP_TABLE, groups);
+  scan(CATEGORY_TABLE, categories);
+  return { groups, categories };
+}
+
 // "license" and "licence" are the same word. Spelling variants are folded so
 // a record named "Driver's License" is found by "licence" too.
 const SPELLING = [
@@ -188,4 +215,4 @@ function fold(value) {
   return text;
 }
 
-module.exports = { aliasMatches, fold, clean, GROUP_ALIASES, CATEGORY_ALIASES };
+module.exports = { aliasMatches, typoAliasMatches, fold, clean, GROUP_ALIASES, CATEGORY_ALIASES };

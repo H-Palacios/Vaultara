@@ -6,7 +6,8 @@ const Anthropic = require("@anthropic-ai/sdk");
 const { admin, ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 const { isPaid } = require("./plans");
 const { cleanLanguage, userLanguage, userOffset, dayNumber, todayNumber, dayToDate } = require("./expiry-data");
-const { aliasMatches, fold } = require("./assistant-synonyms");
+const { aliasMatches, typoAliasMatches, fold } = require("./assistant-synonyms");
+const typo = require("./typo");
 
 const ANTHROPIC_API_KEY = defineSecret("ANTHROPIC_API_KEY");
 
@@ -1064,6 +1065,10 @@ class UserData {
     if (first) return { person: first };
     const partial = people.find((p) => norm(p.name).includes(wanted) || wanted.includes(norm(p.name)));
     if (partial) return { person: partial };
+    // Typing mistakes in a name: "Smaantha" for Samantha. Only a clear
+    // single match counts; two close names mean asking the user.
+    const near = typo.best(wanted, people, (p) => [p.name, norm(p.name).split(" ")[0]], { min: 0.75 });
+    if (near && !near.ambiguous) return { person: near.item };
     return { unknown: true };
   }
 }
@@ -1071,7 +1076,9 @@ class UserData {
 // Matches a search phrase against a record's group, category and name.
 // Other spellings and languages are understood through the synonym tables,
 // so "license", "Reisepass" or "permis de conduire" find the right group.
-function groupMatches(record, query) {
+// With fuzzy, typing mistakes are allowed too ("pasprot", "drivng licnse",
+// "netflx"); list_records only does that when nothing matched as typed.
+function groupMatches(record, query, { fuzzy = false } = {}) {
   const wanted = stem(fold(query));
   if (!wanted) return true;
   const fields = [record.group, record.categoryKey, record.categoryLabel, record.name];
@@ -1082,7 +1089,12 @@ function groupMatches(record, query) {
   if (direct) return true;
   const { groups, categories } = aliasMatches(query);
   if (groups.size) return groups.has(record.group);
-  return categories.size > 0 && categories.has(record.categoryKey);
+  if (categories.size) return categories.has(record.categoryKey);
+  if (!fuzzy) return false;
+  const near = typoAliasMatches(query);
+  if (near.groups.has(record.group) || near.categories.has(record.categoryKey)) return true;
+  const own = [record.name, String(record.group || "").replace(/_/g, " ")].join(" ");
+  return typo.phraseScore(query, own) >= 0.72 || typo.phraseScore(query, record.categoryLabel) >= 0.72;
 }
 
 function resolveGroup(value, groups = GROUPS) {
@@ -1097,6 +1109,18 @@ function resolveGroup(value, groups = GROUPS) {
   const aliased = [...aliasMatches(text).groups].filter((k) => groups[k]);
   if (aliased.length === 1) {
     const groupKey = aliased[0];
+    return { groupKey, categoryKey: groups[groupKey], group: text };
+  }
+  // Typing mistakes: "pasprot" or "drivng licnse". Only a clear single
+  // match is used, never a guess between two.
+  const near = [...typoAliasMatches(text).groups].filter((k) => groups[k]);
+  if (near.length === 1) {
+    const groupKey = near[0];
+    return { groupKey, categoryKey: groups[groupKey], group: text };
+  }
+  const closest = typo.best(text, Object.keys(groups), (k) => k.replace(/_/g, " "), { min: 0.8 });
+  if (closest && !closest.ambiguous) {
+    const groupKey = closest.item;
     return { groupKey, categoryKey: groups[groupKey], group: text };
   }
   return { groupKey: null, categoryKey: null, group: text };
@@ -1283,8 +1307,15 @@ async function listRecords(ctx, input) {
     if (match.unknown) return { error: "No person with that name. Call list_people to see the names." };
     records = records.filter((r) => !r.locked && (match.me ? !r.holderId : r.holderId === match.person.id));
   }
+  let closeSpelling = false;
   if (str(input?.group)) {
-    records = records.filter((r) => !r.locked && groupMatches(r, input.group));
+    const open = records.filter((r) => !r.locked);
+    let found = open.filter((r) => groupMatches(r, input.group));
+    if (!found.length) {
+      found = open.filter((r) => groupMatches(r, input.group, { fuzzy: true }));
+      closeSpelling = found.length > 0;
+    }
+    records = found;
   }
   if (status === "expired") {
     records = records.filter((r) => r.day < ctx.today);
@@ -1298,7 +1329,11 @@ async function listRecords(ctx, input) {
   const shown = records.slice(0, MAX_RESULTS);
   const views = [];
   for (const record of shown) views.push(await ctx.view(record));
-  return { total: records.length, returned: views.length, records: views };
+  const out = { total: records.length, returned: views.length, records: views };
+  if (closeSpelling) {
+    out.note = "Nothing matched these words exactly, so these are the closest matches, allowing for typing mistakes. If you show them, say in a few words what you took the user's words to mean.";
+  }
+  return out;
 }
 
 async function getRecord(ctx, input) {
@@ -1918,6 +1953,9 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
     "Long numbers in notes are shown as [number hidden]. Do not ask for them or try to guess them.",
     "Interpret phrases like \"end of March\" as the last day of the next such month that is not in the past.",
     "Do not give legal, immigration or financial advice. For rules about visas, permits or renewals, suggest checking the official government or issuer website.",
+    "Typing mistakes: users type fast on a phone and voice typing mishears words, so read through typos, missing or swapped letters, words run together or split apart, slang, text-speak and mixed languages, as a careful person would. \"pasprot\", \"drivng licnse\" and \"past port\" mean passport and driving licence. Never comment on spelling and never ask the user to retype.",
+    "When you look something up, pass the user's own words; the tools allow for typing mistakes. When a tool says it matched by close spelling, or you read a word as something else and it matters for the answer, say so in a few words, for example: I took pasprot as passport.",
+    "If a misspelled word could mean two different records or people, do not guess: ask which one in one short question and call suggest_replies with the options, when that tool is available.",
   ];
   if (v2) {
     lines.push(
