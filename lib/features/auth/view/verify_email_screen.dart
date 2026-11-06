@@ -580,7 +580,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
                           loc.verifyEmailSpamHint,
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 11.5,
+                            fontSize: 12,
                             color: Colors.white.withValues(alpha: 0.55),
                           ),
                         ),
