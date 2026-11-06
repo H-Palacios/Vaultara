@@ -21,21 +21,7 @@ class PersonAvatar extends StatelessWidget {
     final p = person;
 
     if (p == null) {
-      final fallback = Container(
-        width: size,
-        height: size,
-        decoration: BoxDecoration(
-          color: scheme.primary.withValues(alpha: 0.14),
-          shape: BoxShape.circle,
-        ),
-        alignment: Alignment.center,
-        child: Icon(
-          Icons.person_rounded,
-          size: size * 0.55,
-          color: scheme.primary,
-        ),
-      );
-      return MyAvatar(size: size, fallback: fallback);
+      return MyAvatar(size: size, fallback: InitialsAvatar(size: size));
     }
 
     return Container(

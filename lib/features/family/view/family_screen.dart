@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:vaultara/core/data/models/person.dart';
+import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
@@ -381,7 +382,7 @@ class _PersonRow extends StatelessWidget {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
-                              fontSize: 11.5,
+                              fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color: scheme.primary,
                             ),
@@ -668,7 +669,7 @@ Future<_PersonInput?> _showNameSheet(
   return showModalBottomSheet<_PersonInput>(
     context: context,
     isScrollControlled: true,
-    showDragHandle: true,
+    enableDrag: false,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
@@ -724,6 +725,17 @@ class _NameSheetState extends State<_NameSheet> {
     _emailFocus.addListener(_onFocusChanged);
     _reminders =
         widget.initialEmail == null ? true : widget.initialReminders;
+    _initialSignature = _signature();
+  }
+
+  late final String _initialSignature;
+
+  String _signature() {
+    return <Object?>[
+      _controller.text.trim(),
+      _emailController.text.trim(),
+      _reminders,
+    ].join('|');
   }
 
   @override
@@ -778,12 +790,19 @@ class _NameSheetState extends State<_NameSheet> {
 
   @override
   Widget build(BuildContext context) {
+    return UnsavedChangesGuard(
+      isDirty: () => _signature() != _initialSignature,
+      child: _buildForm(context),
+    );
+  }
+
+  Widget _buildForm(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
     final scheme = Theme.of(context).colorScheme;
 
     return SingleChildScrollView(
-      padding: EdgeInsets.fromLTRB(16, 0, 16, 16 + bottomInset),
+      padding: EdgeInsets.fromLTRB(16, 18, 16, 16 + bottomInset),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -923,7 +942,7 @@ class _NameSheetState extends State<_NameSheet> {
           Row(
             children: [
               TextButton(
-                onPressed: () => Navigator.of(context).pop(),
+                onPressed: () => Navigator.of(context).maybePop(),
                 child: Text(loc.cancel),
               ),
               const Spacer(),
