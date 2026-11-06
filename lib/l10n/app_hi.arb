@@ -1999,5 +1999,19 @@
   "hidePassword": "पासवर्ड छिपाएं",
   "pinCategory": "ऊपर पिन करें",
   "unpinCategory": "पिन हटाएं",
-  "clearSearch": "खोज साफ़ करें"
+  "clearSearch": "खोज साफ़ करें",
+  "tripPurposeTitle": "यात्रा का कारण",
+  "tripPurposeHoliday": "छुट्टी",
+  "tripPurposeFamily": "परिवार या दोस्तों से मिलना",
+  "tripPurposeBusiness": "व्यापार",
+  "tripPurposeStudy": "पढ़ाई",
+  "tripPurposeWork": "काम",
+  "visaPurposeStudyNeeded": "आमतौर पर स्टूडेंट वीज़ा ज़रूरी",
+  "visaPurposeWorkNeeded": "आमतौर पर वर्क वीज़ा ज़रूरी",
+  "visaPurposeStudyNote": "विज़िटर नियमों में पढ़ाई शामिल नहीं है। आमतौर पर आपको स्टूडेंट वीज़ा या परमिट चाहिए। आधिकारिक नियम देखें और जल्दी आवेदन करें।",
+  "visaPurposeWorkNote": "विज़िटर नियमों में काम शामिल नहीं है, चाहे वेतन वाला हो या बिना वेतन का। आमतौर पर आपको वर्क वीज़ा या परमिट चाहिए। आधिकारिक नियम देखें और जल्दी आवेदन करें।",
+  "visaBusinessNote": "मीटिंग जैसी छोटी व्यापारिक यात्राओं की अक्सर विज़िटर नियमों में अनुमति होती है, लेकिन वेतन वाले काम की नहीं। आधिकारिक नियम देखें।",
+  "visaVisitorRules": "विज़िटर नियम: {status}",
+  "visaOfficialRules": "आधिकारिक नियम",
+  "visaLeavingRulesNote": "Vaultara इस साइट का हिस्सा नहीं है। अगर यह साइट Vaultara से अलग कुछ कहती है, तो इस साइट का पालन करें।"
 }

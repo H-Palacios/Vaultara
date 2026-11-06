@@ -1987,5 +1987,19 @@
   "hidePassword": "Ascunde parola",
   "pinCategory": "Fixează sus",
   "unpinCategory": "Anulează fixarea",
-  "clearSearch": "Șterge căutarea"
+  "clearSearch": "Șterge căutarea",
+  "tripPurposeTitle": "Motivul călătoriei",
+  "tripPurposeHoliday": "Vacanță",
+  "tripPurposeFamily": "Vizită la familie sau prieteni",
+  "tripPurposeBusiness": "Afaceri",
+  "tripPurposeStudy": "Studii",
+  "tripPurposeWork": "Muncă",
+  "visaPurposeStudyNeeded": "De obicei e nevoie de viză de studii",
+  "visaPurposeWorkNeeded": "De obicei e nevoie de viză de muncă",
+  "visaPurposeStudyNote": "Regulile pentru vizitatori nu acoperă studiile. De obicei ai nevoie de o viză sau un permis de studii. Verifică regulile oficiale și aplică din timp.",
+  "visaPurposeWorkNote": "Regulile pentru vizitatori nu acoperă munca, plătită sau neplătită. De obicei ai nevoie de o viză sau un permis de muncă. Verifică regulile oficiale și aplică din timp.",
+  "visaBusinessNote": "Vizitele scurte de afaceri, cum ar fi întâlnirile, sunt adesea permise conform regulilor pentru vizitatori, dar munca plătită nu. Verifică regulile oficiale.",
+  "visaVisitorRules": "Reguli pentru vizitatori: {status}",
+  "visaOfficialRules": "Reguli oficiale",
+  "visaLeavingRulesNote": "Vaultara nu face parte din acest site. Dacă acest site spune altceva decât Vaultara, urmează acest site."
 }

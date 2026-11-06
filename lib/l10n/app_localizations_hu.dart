@@ -6286,4 +6286,48 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get clearSearch => 'Keresés törlése';
+
+  @override
+  String get tripPurposeTitle => 'Az utazás célja';
+
+  @override
+  String get tripPurposeHoliday => 'Nyaralás';
+
+  @override
+  String get tripPurposeFamily => 'Család vagy barátok meglátogatása';
+
+  @override
+  String get tripPurposeBusiness => 'Üzleti út';
+
+  @override
+  String get tripPurposeStudy => 'Tanulás';
+
+  @override
+  String get tripPurposeWork => 'Munka';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Általában tanulói vízum szükséges';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Általában munkavízum szükséges';
+
+  @override
+  String get visaPurposeStudyNote => 'A látogatói szabályok nem vonatkoznak tanulásra. Általában tanulói vízumra vagy engedélyre van szükség. Nézze meg a hivatalos szabályokat, és időben adja be a kérelmet.';
+
+  @override
+  String get visaPurposeWorkNote => 'A látogatói szabályok nem vonatkoznak munkára, sem fizetettre, sem fizetés nélkülire. Általában munkavízumra vagy munkavállalási engedélyre van szükség. Nézze meg a hivatalos szabályokat, és időben adja be a kérelmet.';
+
+  @override
+  String get visaBusinessNote => 'A rövid üzleti utak, például megbeszélések, a látogatói szabályok szerint gyakran engedélyezettek, a fizetett munka viszont nem. Nézze meg a hivatalos szabályokat.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Látogatói szabályok: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Hivatalos szabályok';
+
+  @override
+  String get visaLeavingRulesNote => 'A Vaultara nem része ennek az oldalnak. Ha az oldal mást mond, mint a Vaultara, kövesse az oldalt.';
 }

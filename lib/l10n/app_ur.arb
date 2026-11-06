@@ -1987,5 +1987,19 @@
   "hidePassword": "پاس ورڈ چھپائیں",
   "pinCategory": "اوپر پن کریں",
   "unpinCategory": "پن ہٹائیں",
-  "clearSearch": "تلاش صاف کریں"
+  "clearSearch": "تلاش صاف کریں",
+  "tripPurposeTitle": "سفر کی وجہ",
+  "tripPurposeHoliday": "چھٹی",
+  "tripPurposeFamily": "خاندان یا دوستوں سے ملاقات",
+  "tripPurposeBusiness": "کاروبار",
+  "tripPurposeStudy": "تعلیم",
+  "tripPurposeWork": "ملازمت",
+  "visaPurposeStudyNeeded": "عام طور پر اسٹوڈنٹ ویزا درکار ہے",
+  "visaPurposeWorkNeeded": "عام طور پر ورک ویزا درکار ہے",
+  "visaPurposeStudyNote": "وزیٹر قواعد تعلیم پر لاگو نہیں ہوتے۔ عام طور پر آپ کو اسٹوڈنٹ ویزا یا اجازت نامہ درکار ہوتا ہے۔ سرکاری قواعد دیکھیں اور جلد درخواست دیں۔",
+  "visaPurposeWorkNote": "وزیٹر قواعد کام پر لاگو نہیں ہوتے، چاہے معاوضے والا ہو یا بغیر معاوضے کے۔ عام طور پر آپ کو ورک ویزا یا اجازت نامہ درکار ہوتا ہے۔ سرکاری قواعد دیکھیں اور جلد درخواست دیں۔",
+  "visaBusinessNote": "میٹنگ جیسے مختصر کاروباری دوروں کی وزیٹر قواعد کے تحت اکثر اجازت ہوتی ہے، لیکن معاوضے والے کام کی نہیں۔ سرکاری قواعد دیکھیں۔",
+  "visaVisitorRules": "وزیٹر قواعد: {status}",
+  "visaOfficialRules": "سرکاری قواعد",
+  "visaLeavingRulesNote": "Vaultara اس سائٹ کا حصہ نہیں ہے۔ اگر یہ سائٹ Vaultara سے مختلف بات کہتی ہے تو اس سائٹ کی پیروی کریں۔"
 }

@@ -1999,5 +1999,19 @@
   "hidePassword": "Ɓoye kalmar sirri",
   "pinCategory": "Maƙala a sama",
   "unpinCategory": "Cire maƙala",
-  "clearSearch": "Share bincike"
+  "clearSearch": "Share bincike",
+  "tripPurposeTitle": "Dalilin tafiya",
+  "tripPurposeHoliday": "Hutu",
+  "tripPurposeFamily": "Ziyartar iyali ko abokai",
+  "tripPurposeBusiness": "Kasuwanci",
+  "tripPurposeStudy": "Karatu",
+  "tripPurposeWork": "Aiki",
+  "visaPurposeStudyNeeded": "Yawanci ana buƙatar bizar karatu",
+  "visaPurposeWorkNeeded": "Yawanci ana buƙatar bizar aiki",
+  "visaPurposeStudyNote": "Ƙa'idojin baƙi ba su shafi karatu ba. Yawanci kana buƙatar bizar karatu ko izini. Duba ƙa'idojin hukuma kuma ka nema da wuri.",
+  "visaPurposeWorkNote": "Ƙa'idojin baƙi ba su shafi aiki ba, na biya ko ba na biya ba. Yawanci kana buƙatar bizar aiki ko izini. Duba ƙa'idojin hukuma kuma ka nema da wuri.",
+  "visaBusinessNote": "Gajerun ziyarar kasuwanci kamar taro galibi ana ba da izini a ƙarƙashin ƙa'idojin baƙi, amma ba aikin biya ba. Duba ƙa'idojin hukuma.",
+  "visaVisitorRules": "Ƙa'idojin baƙi: {status}",
+  "visaOfficialRules": "Ƙa'idojin hukuma",
+  "visaLeavingRulesNote": "Vaultara ba ɓangare na wannan shafin ba ne. Idan wannan shafin ya faɗi wani abu daban da Vaultara, bi wannan shafin."
 }

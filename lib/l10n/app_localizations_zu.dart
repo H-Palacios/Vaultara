@@ -6286,4 +6286,48 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get clearSearch => 'Cisha ukusesha';
+
+  @override
+  String get tripPurposeTitle => 'Isizathu sohambo';
+
+  @override
+  String get tripPurposeHoliday => 'Iholide';
+
+  @override
+  String get tripPurposeFamily => 'Ukuvakashela umndeni noma abangane';
+
+  @override
+  String get tripPurposeBusiness => 'Ibhizinisi';
+
+  @override
+  String get tripPurposeStudy => 'Ukufunda';
+
+  @override
+  String get tripPurposeWork => 'Umsebenzi';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Ngokuvamile kudingeka i-visa yokufunda';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Ngokuvamile kudingeka i-visa yokusebenza';
+
+  @override
+  String get visaPurposeStudyNote => 'Imithetho yezivakashi ayibandakanyi ukufunda. Ngokuvamile udinga i-visa noma imvume yokufunda. Hlola imithetho esemthethweni bese ufaka isicelo kusenesikhathi.';
+
+  @override
+  String get visaPurposeWorkNote => 'Imithetho yezivakashi ayibandakanyi ukusebenza, noma kukhokhelwa noma kungakhokhelwa. Ngokuvamile udinga i-visa noma imvume yokusebenza. Hlola imithetho esemthethweni bese ufaka isicelo kusenesikhathi.';
+
+  @override
+  String get visaBusinessNote => 'Ukuvakasha kwebhizinisi okufushane njengemihlangano kuvame ukuvunyelwa ngaphansi kwemithetho yezivakashi, kodwa umsebenzi okhokhelwayo awuvunyelwa. Hlola imithetho esemthethweni.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Imithetho yezivakashi: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Imithetho esemthethweni';
+
+  @override
+  String get visaLeavingRulesNote => 'I-Vaultara ayiyona ingxenye yale sayithi. Uma le sayithi isho okuhlukile ku-Vaultara, landela le sayithi.';
 }

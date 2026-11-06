@@ -6286,4 +6286,48 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get clearSearch => 'Maak soektog skoon';
+
+  @override
+  String get tripPurposeTitle => 'Rede vir die reis';
+
+  @override
+  String get tripPurposeHoliday => 'Vakansie';
+
+  @override
+  String get tripPurposeFamily => 'Besoek familie of vriende';
+
+  @override
+  String get tripPurposeBusiness => 'Besigheid';
+
+  @override
+  String get tripPurposeStudy => 'Studie';
+
+  @override
+  String get tripPurposeWork => 'Werk';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Studievisum gewoonlik nodig';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Werkvisum gewoonlik nodig';
+
+  @override
+  String get visaPurposeStudyNote => 'Besoekersreëls dek nie studie nie. Jy het gewoonlik \'n studievisum of -permit nodig. Kyk na die amptelike reëls en doen vroeg aansoek.';
+
+  @override
+  String get visaPurposeWorkNote => 'Besoekersreëls dek nie werk nie, betaal of onbetaal. Jy het gewoonlik \'n werkvisum of -permit nodig. Kyk na die amptelike reëls en doen vroeg aansoek.';
+
+  @override
+  String get visaBusinessNote => 'Kort sakebesoeke soos vergaderings word dikwels onder besoekersreëls toegelaat, maar betaalde werk nie. Kyk na die amptelike reëls.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Besoekersreëls: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Amptelike reëls';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara is nie deel van hierdie webwerf nie. As hierdie webwerf iets anders as Vaultara sê, volg hierdie webwerf.';
 }

@@ -6416,4 +6416,48 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get clearSearch => 'Smazat hledání';
+
+  @override
+  String get tripPurposeTitle => 'Důvod cesty';
+
+  @override
+  String get tripPurposeHoliday => 'Dovolená';
+
+  @override
+  String get tripPurposeFamily => 'Návštěva rodiny nebo přátel';
+
+  @override
+  String get tripPurposeBusiness => 'Služební cesta';
+
+  @override
+  String get tripPurposeStudy => 'Studium';
+
+  @override
+  String get tripPurposeWork => 'Práce';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Obvykle je nutné studijní vízum';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Obvykle je nutné pracovní vízum';
+
+  @override
+  String get visaPurposeStudyNote => 'Pravidla pro návštěvníky se nevztahují na studium. Obvykle potřebujete studijní vízum nebo povolení. Zkontrolujte oficiální pravidla a požádejte včas.';
+
+  @override
+  String get visaPurposeWorkNote => 'Pravidla pro návštěvníky se nevztahují na práci, placenou ani neplacenou. Obvykle potřebujete pracovní vízum nebo povolení. Zkontrolujte oficiální pravidla a požádejte včas.';
+
+  @override
+  String get visaBusinessNote => 'Krátké služební cesty, například kvůli schůzkám, pravidla pro návštěvníky často povolují, placenou práci však ne. Zkontrolujte oficiální pravidla.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Pravidla pro návštěvníky: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Oficiální pravidla';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara není součástí tohoto webu. Pokud tento web uvádí něco jiného než Vaultara, řiďte se tímto webem.';
 }

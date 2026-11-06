@@ -1992,5 +1992,19 @@
   "hidePassword": "Zoo okwuntughe",
   "pinCategory": "Kpọchie n’elu",
   "unpinCategory": "Wepụ nkpọchi",
-  "clearSearch": "Hichapụ ọchụchọ"
+  "clearSearch": "Hichapụ ọchụchọ",
+  "tripPurposeTitle": "Ihe kpatara njem",
+  "tripPurposeHoliday": "Ezumike",
+  "tripPurposeFamily": "Ịga leta ezinụlọ ma ọ bụ ndị enyi",
+  "tripPurposeBusiness": "Azụmahịa",
+  "tripPurposeStudy": "Ọmụmụ ihe",
+  "tripPurposeWork": "Ọrụ",
+  "visaPurposeStudyNeeded": "Ọ na-adịkarị mkpa vịsa ụmụ akwụkwọ",
+  "visaPurposeWorkNeeded": "Ọ na-adịkarị mkpa vịsa ọrụ",
+  "visaPurposeStudyNote": "Iwu ndị ọbịa anaghị ekpuchi ọmụmụ ihe. Ọ na-adịkarị mkpa ka i nwee vịsa ma ọ bụ ikike ụmụ akwụkwọ. Lelee iwu gọọmentị ma tinye akwụkwọ n'oge.",
+  "visaPurposeWorkNote": "Iwu ndị ọbịa anaghị ekpuchi ọrụ, nke a na-akwụ ụgwọ ma ọ bụ nke a naghị akwụ. Ọ na-adịkarị mkpa ka i nwee vịsa ma ọ bụ ikike ọrụ. Lelee iwu gọọmentị ma tinye akwụkwọ n'oge.",
+  "visaBusinessNote": "Njem azụmahịa dị mkpụmkpụ dịka nzukọ na-adịkarị ekwe n'okpuru iwu ndị ọbịa, mana ọrụ a na-akwụ ụgwọ adịghị. Lelee iwu gọọmentị.",
+  "visaVisitorRules": "Iwu ndị ọbịa: {status}",
+  "visaOfficialRules": "Iwu gọọmentị",
+  "visaLeavingRulesNote": "Vaultara abụghị akụkụ nke saịtị a. Ọ bụrụ na saịtị a kwuru ihe dị iche na Vaultara, soro saịtị a."
 }

@@ -1980,5 +1980,19 @@
   "hidePassword": "隱藏密碼",
   "pinCategory": "置頂",
   "unpinCategory": "取消置頂",
-  "clearSearch": "清除搜尋"
+  "clearSearch": "清除搜尋",
+  "tripPurposeTitle": "旅行目的",
+  "tripPurposeHoliday": "度假",
+  "tripPurposeFamily": "探親訪友",
+  "tripPurposeBusiness": "商務",
+  "tripPurposeStudy": "留學",
+  "tripPurposeWork": "工作",
+  "visaPurposeStudyNeeded": "通常需要學生簽證",
+  "visaPurposeWorkNeeded": "通常需要工作簽證",
+  "visaPurposeStudyNote": "訪客規定不適用於就學。通常需要學生簽證或許可。請查看官方規定並盡早申請。",
+  "visaPurposeWorkNote": "訪客規定不適用於工作，無論是否有報酬。通常需要工作簽證或許可。請查看官方規定並盡早申請。",
+  "visaBusinessNote": "開會等短期商務拜訪通常可依訪客規定進行，但有報酬的工作不行。請查看官方規定。",
+  "visaVisitorRules": "訪客規定：{status}",
+  "visaOfficialRules": "官方規定",
+  "visaLeavingRulesNote": "Vaultara 不屬於此網站。如果此網站的說法與 Vaultara 不同，請以此網站為準。"
 }

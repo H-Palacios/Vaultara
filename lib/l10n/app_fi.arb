@@ -2005,5 +2005,19 @@
   "hidePassword": "Piilota salasana",
   "pinCategory": "Kiinnitä ylös",
   "unpinCategory": "Poista kiinnitys",
-  "clearSearch": "Tyhjennä haku"
+  "clearSearch": "Tyhjennä haku",
+  "tripPurposeTitle": "Matkan syy",
+  "tripPurposeHoliday": "Loma",
+  "tripPurposeFamily": "Perheen tai ystävien luona vierailu",
+  "tripPurposeBusiness": "Työmatka",
+  "tripPurposeStudy": "Opiskelu",
+  "tripPurposeWork": "Työ",
+  "visaPurposeStudyNeeded": "Opiskeluviisumi yleensä tarvitaan",
+  "visaPurposeWorkNeeded": "Työviisumi yleensä tarvitaan",
+  "visaPurposeStudyNote": "Vierailijoiden säännöt eivät koske opiskelua. Tarvitset yleensä opiskeluviisumin tai -luvan. Tarkista viralliset säännöt ja hae ajoissa.",
+  "visaPurposeWorkNote": "Vierailijoiden säännöt eivät koske työntekoa, palkallista tai palkatonta. Tarvitset yleensä työviisumin tai -luvan. Tarkista viralliset säännöt ja hae ajoissa.",
+  "visaBusinessNote": "Lyhyet työmatkat, kuten kokoukset, ovat vierailijoiden säännöillä usein sallittuja, mutta palkallinen työ ei. Tarkista viralliset säännöt.",
+  "visaVisitorRules": "Vierailijoiden säännöt: {status}",
+  "visaOfficialRules": "Viralliset säännöt",
+  "visaLeavingRulesNote": "Vaultara ei ole osa tätä sivustoa. Jos sivusto sanoo jotain muuta kuin Vaultara, noudata sivustoa."
 }

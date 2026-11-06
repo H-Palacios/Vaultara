@@ -6286,4 +6286,48 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get clearSearch => 'I-clear ang paghahanap';
+
+  @override
+  String get tripPurposeTitle => 'Dahilan ng biyahe';
+
+  @override
+  String get tripPurposeHoliday => 'Bakasyon';
+
+  @override
+  String get tripPurposeFamily => 'Pagbisita sa pamilya o kaibigan';
+
+  @override
+  String get tripPurposeBusiness => 'Negosyo';
+
+  @override
+  String get tripPurposeStudy => 'Pag-aaral';
+
+  @override
+  String get tripPurposeWork => 'Trabaho';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Karaniwang kailangan ng student visa';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Karaniwang kailangan ng work visa';
+
+  @override
+  String get visaPurposeStudyNote => 'Hindi saklaw ng mga patakaran para sa bisita ang pag-aaral. Karaniwang kailangan mo ng student visa o permit. Tingnan ang mga opisyal na patakaran at mag-apply nang maaga.';
+
+  @override
+  String get visaPurposeWorkNote => 'Hindi saklaw ng mga patakaran para sa bisita ang pagtatrabaho, may bayad man o wala. Karaniwang kailangan mo ng work visa o permit. Tingnan ang mga opisyal na patakaran at mag-apply nang maaga.';
+
+  @override
+  String get visaBusinessNote => 'Madalas pinapayagan sa mga patakaran para sa bisita ang maiikling business trip gaya ng mga pulong, pero hindi ang trabahong may bayad. Tingnan ang mga opisyal na patakaran.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Mga patakaran para sa bisita: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Mga opisyal na patakaran';
+
+  @override
+  String get visaLeavingRulesNote => 'Hindi bahagi ng site na ito ang Vaultara. Kung iba ang sinasabi ng site na ito kaysa sa Vaultara, sundin ang site na ito.';
 }

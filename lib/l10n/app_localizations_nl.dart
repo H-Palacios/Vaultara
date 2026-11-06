@@ -6286,4 +6286,48 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get clearSearch => 'Zoekopdracht wissen';
+
+  @override
+  String get tripPurposeTitle => 'Reden van de reis';
+
+  @override
+  String get tripPurposeHoliday => 'Vakantie';
+
+  @override
+  String get tripPurposeFamily => 'Familie of vrienden bezoeken';
+
+  @override
+  String get tripPurposeBusiness => 'Zakelijk';
+
+  @override
+  String get tripPurposeStudy => 'Studie';
+
+  @override
+  String get tripPurposeWork => 'Werk';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Meestal studievisum nodig';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Meestal werkvisum nodig';
+
+  @override
+  String get visaPurposeStudyNote => 'De regels voor bezoekers gelden niet voor studie. Je hebt meestal een studievisum of verblijfsvergunning voor studie nodig. Bekijk de officiële regels en vraag op tijd aan.';
+
+  @override
+  String get visaPurposeWorkNote => 'De regels voor bezoekers gelden niet voor werk, betaald of onbetaald. Je hebt meestal een werkvisum of werkvergunning nodig. Bekijk de officiële regels en vraag op tijd aan.';
+
+  @override
+  String get visaBusinessNote => 'Korte zakenreizen, zoals vergaderingen, zijn met de regels voor bezoekers vaak toegestaan, maar betaald werk niet. Bekijk de officiële regels.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Regels voor bezoekers: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Officiële regels';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara hoort niet bij deze site. Als deze site iets anders zegt dan Vaultara, volg dan deze site.';
 }

@@ -1987,5 +1987,19 @@
   "hidePassword": "비밀번호 숨기기",
   "pinCategory": "맨 위에 고정",
   "unpinCategory": "고정 해제",
-  "clearSearch": "검색어 지우기"
+  "clearSearch": "검색어 지우기",
+  "tripPurposeTitle": "여행 목적",
+  "tripPurposeHoliday": "휴가",
+  "tripPurposeFamily": "가족 또는 친구 방문",
+  "tripPurposeBusiness": "출장",
+  "tripPurposeStudy": "유학",
+  "tripPurposeWork": "취업",
+  "visaPurposeStudyNeeded": "보통 유학 비자 필요",
+  "visaPurposeWorkNeeded": "보통 취업 비자 필요",
+  "visaPurposeStudyNote": "방문자 규정은 유학에 적용되지 않습니다. 보통 유학 비자나 허가가 필요합니다. 공식 규정을 확인하고 일찍 신청하세요.",
+  "visaPurposeWorkNote": "방문자 규정은 유급이든 무급이든 취업에 적용되지 않습니다. 보통 취업 비자나 허가가 필요합니다. 공식 규정을 확인하고 일찍 신청하세요.",
+  "visaBusinessNote": "회의 같은 짧은 출장은 방문자 규정으로 허용되는 경우가 많지만, 유급 근무는 허용되지 않습니다. 공식 규정을 확인하세요.",
+  "visaVisitorRules": "방문자 규정: {status}",
+  "visaOfficialRules": "공식 규정",
+  "visaLeavingRulesNote": "Vaultara는 이 사이트와 관련이 없습니다. 이 사이트의 내용이 Vaultara와 다르면 이 사이트를 따르세요."
 }

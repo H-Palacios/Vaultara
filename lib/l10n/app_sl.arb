@@ -1987,5 +1987,19 @@
   "hidePassword": "Skrij geslo",
   "pinCategory": "Pripni na vrh",
   "unpinCategory": "Odpni",
-  "clearSearch": "Počisti iskanje"
+  "clearSearch": "Počisti iskanje",
+  "tripPurposeTitle": "Razlog za potovanje",
+  "tripPurposeHoliday": "Počitnice",
+  "tripPurposeFamily": "Obisk družine ali prijateljev",
+  "tripPurposeBusiness": "Poslovno",
+  "tripPurposeStudy": "Študij",
+  "tripPurposeWork": "Delo",
+  "visaPurposeStudyNeeded": "Običajno je potreben študijski vizum",
+  "visaPurposeWorkNeeded": "Običajno je potreben delovni vizum",
+  "visaPurposeStudyNote": "Pravila za obiskovalce ne veljajo za študij. Običajno potrebuješ študijski vizum ali dovoljenje. Preveri uradna pravila in zaprosi pravočasno.",
+  "visaPurposeWorkNote": "Pravila za obiskovalce ne veljajo za delo, plačano ali neplačano. Običajno potrebuješ delovni vizum ali dovoljenje. Preveri uradna pravila in zaprosi pravočasno.",
+  "visaBusinessNote": "Kratki poslovni obiski, na primer sestanki, so po pravilih za obiskovalce pogosto dovoljeni, plačano delo pa ne. Preveri uradna pravila.",
+  "visaVisitorRules": "Pravila za obiskovalce: {status}",
+  "visaOfficialRules": "Uradna pravila",
+  "visaLeavingRulesNote": "Vaultara ni del tega spletnega mesta. Če to spletno mesto pravi kaj drugega kot Vaultara, upoštevaj to spletno mesto."
 }

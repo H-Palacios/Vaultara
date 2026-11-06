@@ -1992,5 +1992,19 @@
   "hidePassword": "Sakrij zaporku",
   "pinCategory": "Prikvači na vrh",
   "unpinCategory": "Otkvači",
-  "clearSearch": "Očisti pretraživanje"
+  "clearSearch": "Očisti pretraživanje",
+  "tripPurposeTitle": "Razlog putovanja",
+  "tripPurposeHoliday": "Odmor",
+  "tripPurposeFamily": "Posjet obitelji ili prijateljima",
+  "tripPurposeBusiness": "Poslovno",
+  "tripPurposeStudy": "Studij",
+  "tripPurposeWork": "Rad",
+  "visaPurposeStudyNeeded": "Obično je potrebna studentska viza",
+  "visaPurposeWorkNeeded": "Obično je potrebna radna viza",
+  "visaPurposeStudyNote": "Pravila za posjetitelje ne obuhvaćaju studij. Obično ti treba studentska viza ili dozvola. Provjeri službena pravila i podnesi zahtjev na vrijeme.",
+  "visaPurposeWorkNote": "Pravila za posjetitelje ne obuhvaćaju rad, plaćeni ni neplaćeni. Obično ti treba radna viza ili dozvola. Provjeri službena pravila i podnesi zahtjev na vrijeme.",
+  "visaBusinessNote": "Kratki poslovni posjeti, poput sastanaka, često su dopušteni po pravilima za posjetitelje, ali plaćeni rad nije. Provjeri službena pravila.",
+  "visaVisitorRules": "Pravila za posjetitelje: {status}",
+  "visaOfficialRules": "Službena pravila",
+  "visaLeavingRulesNote": "Vaultara nije dio ove stranice. Ako ova stranica kaže nešto drugačije od Vaultare, slijedi ovu stranicu."
 }

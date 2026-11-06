@@ -1992,5 +1992,19 @@
   "hidePassword": "Sembunyikan kata sandi",
   "pinCategory": "Sematkan di atas",
   "unpinCategory": "Lepas sematan",
-  "clearSearch": "Hapus pencarian"
+  "clearSearch": "Hapus pencarian",
+  "tripPurposeTitle": "Alasan perjalanan",
+  "tripPurposeHoliday": "Liburan",
+  "tripPurposeFamily": "Mengunjungi keluarga atau teman",
+  "tripPurposeBusiness": "Bisnis",
+  "tripPurposeStudy": "Studi",
+  "tripPurposeWork": "Kerja",
+  "visaPurposeStudyNeeded": "Biasanya perlu visa pelajar",
+  "visaPurposeWorkNeeded": "Biasanya perlu visa kerja",
+  "visaPurposeStudyNote": "Aturan pengunjung tidak mencakup studi. Biasanya Anda perlu visa atau izin pelajar. Cek aturan resmi dan ajukan lebih awal.",
+  "visaPurposeWorkNote": "Aturan pengunjung tidak mencakup bekerja, baik dibayar maupun tidak. Biasanya Anda perlu visa atau izin kerja. Cek aturan resmi dan ajukan lebih awal.",
+  "visaBusinessNote": "Kunjungan bisnis singkat seperti rapat sering diizinkan dengan aturan pengunjung, tetapi kerja berbayar tidak. Cek aturan resmi.",
+  "visaVisitorRules": "Aturan pengunjung: {status}",
+  "visaOfficialRules": "Aturan resmi",
+  "visaLeavingRulesNote": "Vaultara bukan bagian dari situs ini. Jika situs ini menyatakan hal yang berbeda dari Vaultara, ikuti situs ini."
 }

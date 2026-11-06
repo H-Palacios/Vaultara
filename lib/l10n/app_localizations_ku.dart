@@ -6286,4 +6286,48 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get clearSearch => 'Lêgerînê paqij bike';
+
+  @override
+  String get tripPurposeTitle => 'Sedema rêwîtiyê';
+
+  @override
+  String get tripPurposeHoliday => 'Betlane';
+
+  @override
+  String get tripPurposeFamily => 'Serdana malbat an hevalan';
+
+  @override
+  String get tripPurposeBusiness => 'Bazirganî';
+
+  @override
+  String get tripPurposeStudy => 'Xwendin';
+
+  @override
+  String get tripPurposeWork => 'Kar';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Bi gelemperî vîzeya xwendinê lazim e';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Bi gelemperî vîzeya karê lazim e';
+
+  @override
+  String get visaPurposeStudyNote => 'Rêzikên mêvanan xwendinê nagirin. Bi gelemperî vîzeya an destûra xwendinê lazim e. Rêzikên fermî kontrol bike û zû serlêdanê bike.';
+
+  @override
+  String get visaPurposeWorkNote => 'Rêzikên mêvanan karê nagirin, bi mûçe be an bê mûçe. Bi gelemperî vîzeya an destûra karê lazim e. Rêzikên fermî kontrol bike û zû serlêdanê bike.';
+
+  @override
+  String get visaBusinessNote => 'Serdanên bazirganî yên kurt ên wekî civînan bi rêzikên mêvanan pir caran destûr in, lê karê bi mûçe ne. Rêzikên fermî kontrol bike.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Rêzikên mêvanan: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Rêzikên fermî';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ne beşek ji vê malperê ye. Heke ev malper tiştekî cuda ji Vaultara bêje, li pey vê malperê here.';
 }

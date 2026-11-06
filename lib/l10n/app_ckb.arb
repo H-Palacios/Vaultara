@@ -1987,5 +1987,19 @@
   "hidePassword": "پاسۆرد بشارەوە",
   "pinCategory": "لە سەرەوە جێگیر بکە",
   "unpinCategory": "جێگیرکردن لابە",
-  "clearSearch": "گەڕان پاک بکەرەوە"
+  "clearSearch": "گەڕان پاک بکەرەوە",
+  "tripPurposeTitle": "هۆی گەشتەکە",
+  "tripPurposeHoliday": "پشوو",
+  "tripPurposeFamily": "سەردانی خێزان یان هاوڕێیان",
+  "tripPurposeBusiness": "بازرگانی",
+  "tripPurposeStudy": "خوێندن",
+  "tripPurposeWork": "کار",
+  "visaPurposeStudyNeeded": "زۆرجار ڤیزای خوێندن پێویستە",
+  "visaPurposeWorkNeeded": "زۆرجار ڤیزای کار پێویستە",
+  "visaPurposeStudyNote": "یاساکانی سەردانکەران خوێندن ناگرنەوە. زۆرجار ڤیزا یان مۆڵەتی خوێندنت پێویستە. یاسا فەرمییەکان بپشکنە و زوو داوا بکە.",
+  "visaPurposeWorkNote": "یاساکانی سەردانکەران کار ناگرنەوە، بە مووچە بێت یان بێ مووچە. زۆرجار ڤیزا یان مۆڵەتی کارت پێویستە. یاسا فەرمییەکان بپشکنە و زوو داوا بکە.",
+  "visaBusinessNote": "سەردانە کورتە بازرگانییەکانی وەک کۆبوونەوە زۆرجار بە یاساکانی سەردانکەران ڕێگەپێدراون، بەڵام کاری بە مووچە نا. یاسا فەرمییەکان بپشکنە.",
+  "visaVisitorRules": "یاساکانی سەردانکەران: {status}",
+  "visaOfficialRules": "یاسا فەرمییەکان",
+  "visaLeavingRulesNote": "Vaultara بەشێک نییە لەم ماڵپەڕە. ئەگەر ئەم ماڵپەڕە شتێکی جیاواز لە Vaultara بڵێت، ئەم ماڵپەڕە پەیڕەو بکە."
 }

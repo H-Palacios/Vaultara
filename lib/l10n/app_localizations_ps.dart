@@ -6286,4 +6286,48 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get clearSearch => 'لټون پاک کړئ';
+
+  @override
+  String get tripPurposeTitle => 'د سفر لامل';
+
+  @override
+  String get tripPurposeHoliday => 'رخصتي';
+
+  @override
+  String get tripPurposeFamily => 'د کورنۍ یا ملګرو لیدنه';
+
+  @override
+  String get tripPurposeBusiness => 'سوداګري';
+
+  @override
+  String get tripPurposeStudy => 'زده کړه';
+
+  @override
+  String get tripPurposeWork => 'کار';
+
+  @override
+  String get visaPurposeStudyNeeded => 'معمولاً د زده کړې ویزه اړینه ده';
+
+  @override
+  String get visaPurposeWorkNeeded => 'معمولاً د کار ویزه اړینه ده';
+
+  @override
+  String get visaPurposeStudyNote => 'د لیدونکو قواعد زده کړه نه رانغاړي. معمولاً تاسو د زده کړې ویزې یا اجازې ته اړتیا لرئ. رسمي قواعد وګورئ او ژر غوښتنه وکړئ.';
+
+  @override
+  String get visaPurposeWorkNote => 'د لیدونکو قواعد کار نه رانغاړي، که په معاش وي که بې معاشه. معمولاً تاسو د کار ویزې یا اجازې ته اړتیا لرئ. رسمي قواعد وګورئ او ژر غوښتنه وکړئ.';
+
+  @override
+  String get visaBusinessNote => 'لنډ سوداګریز سفرونه لکه غونډې ډیری وخت د لیدونکو د قواعدو له مخې اجازه لري، خو په معاش کار نه. رسمي قواعد وګورئ.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'د لیدونکو قواعد: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'رسمي قواعد';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara د دې ویب پاڼې برخه نه ده. که دا ویب پاڼه له Vaultara سره توپیر لرونکې خبره کوي، د دې ویب پاڼې پیروي وکړئ.';
 }

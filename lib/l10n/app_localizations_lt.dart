@@ -6422,4 +6422,48 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get clearSearch => 'Išvalyti paiešką';
+
+  @override
+  String get tripPurposeTitle => 'Kelionės tikslas';
+
+  @override
+  String get tripPurposeHoliday => 'Atostogos';
+
+  @override
+  String get tripPurposeFamily => 'Šeimos ar draugų lankymas';
+
+  @override
+  String get tripPurposeBusiness => 'Verslas';
+
+  @override
+  String get tripPurposeStudy => 'Studijos';
+
+  @override
+  String get tripPurposeWork => 'Darbas';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Paprastai reikia studijų vizos';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Paprastai reikia darbo vizos';
+
+  @override
+  String get visaPurposeStudyNote => 'Lankytojų taisyklės netaikomos studijoms. Paprastai reikia studijų vizos ar leidimo. Patikrinkite oficialias taisykles ir kreipkitės anksti.';
+
+  @override
+  String get visaPurposeWorkNote => 'Lankytojų taisyklės netaikomos darbui, mokamam ar nemokamam. Paprastai reikia darbo vizos ar leidimo. Patikrinkite oficialias taisykles ir kreipkitės anksti.';
+
+  @override
+  String get visaBusinessNote => 'Trumpi verslo vizitai, pavyzdžiui, susitikimai, pagal lankytojų taisykles dažnai leidžiami, bet apmokamas darbas ne. Patikrinkite oficialias taisykles.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Lankytojų taisyklės: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Oficialios taisyklės';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara nėra šios svetainės dalis. Jei ši svetainė nurodo ką nors kita nei Vaultara, vadovaukitės šia svetaine.';
 }

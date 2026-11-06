@@ -1737,5 +1737,19 @@
   "hidePassword": "Parolni yashirish",
   "pinCategory": "Tepaga mahkamlash",
   "unpinCategory": "Mahkamlashni olib tashlash",
-  "clearSearch": "Qidiruvni tozalash"
+  "clearSearch": "Qidiruvni tozalash",
+  "tripPurposeTitle": "Safar sababi",
+  "tripPurposeHoliday": "Dam olish",
+  "tripPurposeFamily": "Oila yoki do‘stlarni ko‘rish",
+  "tripPurposeBusiness": "Biznes",
+  "tripPurposeStudy": "O‘qish",
+  "tripPurposeWork": "Ish",
+  "visaPurposeStudyNeeded": "Odatda talaba vizasi kerak",
+  "visaPurposeWorkNeeded": "Odatda ish vizasi kerak",
+  "visaPurposeStudyNote": "Tashrif buyuruvchilar qoidalari o‘qishni qamramaydi. Odatda talaba vizasi yoki ruxsatnomasi kerak. Rasmiy qoidalarni tekshiring va erta ariza bering.",
+  "visaPurposeWorkNote": "Tashrif buyuruvchilar qoidalari haq to‘lanadigan yoki to‘lanmaydigan ishni qamramaydi. Odatda ish vizasi yoki ruxsatnomasi kerak. Rasmiy qoidalarni tekshiring va erta ariza bering.",
+  "visaBusinessNote": "Uchrashuvlar kabi qisqa biznes tashriflariga tashrif buyuruvchilar qoidalari ko‘pincha ruxsat beradi, lekin haq to‘lanadigan ishga emas. Rasmiy qoidalarni tekshiring.",
+  "visaVisitorRules": "Tashrif buyuruvchilar qoidalari: {status}",
+  "visaOfficialRules": "Rasmiy qoidalar",
+  "visaLeavingRulesNote": "Vaultara bu saytning bir qismi emas. Agar bu sayt Vaultaradan boshqacha narsa aytsa, ushbu saytga amal qiling."
 }

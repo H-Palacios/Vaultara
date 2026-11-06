@@ -1999,5 +1999,19 @@
   "hidePassword": "Folaigh an focal faire",
   "pinCategory": "Bioráin ag an mbarr",
   "unpinCategory": "Bain an bhioráin",
-  "clearSearch": "Glan an cuardach"
+  "clearSearch": "Glan an cuardach",
+  "tripPurposeTitle": "Cúis an turais",
+  "tripPurposeHoliday": "Saoire",
+  "tripPurposeFamily": "Cuairt ar mhuintir nó ar chairde",
+  "tripPurposeBusiness": "Gnó",
+  "tripPurposeStudy": "Staidéar",
+  "tripPurposeWork": "Obair",
+  "visaPurposeStudyNeeded": "Víosa staidéir de dhíth de ghnáth",
+  "visaPurposeWorkNeeded": "Víosa oibre de dhíth de ghnáth",
+  "visaPurposeStudyNote": "Ní chlúdaíonn na rialacha do chuairteoirí staidéar. De ghnáth bíonn víosa nó cead staidéir de dhíth ort. Seiceáil na rialacha oifigiúla agus déan iarratas go luath.",
+  "visaPurposeWorkNote": "Ní chlúdaíonn na rialacha do chuairteoirí obair, íoctha nó gan íoc. De ghnáth bíonn víosa nó cead oibre de dhíth ort. Seiceáil na rialacha oifigiúla agus déan iarratas go luath.",
+  "visaBusinessNote": "Is minic a cheadaítear cuairteanna gearra gnó, mar chruinnithe, faoi na rialacha do chuairteoirí, ach ní cheadaítear obair íoctha. Seiceáil na rialacha oifigiúla.",
+  "visaVisitorRules": "Rialacha do chuairteoirí: {status}",
+  "visaOfficialRules": "Rialacha oifigiúla",
+  "visaLeavingRulesNote": "Níl Vaultara mar chuid den suíomh seo. Má deir an suíomh seo rud éigin difriúil ó Vaultara, lean an suíomh seo."
 }

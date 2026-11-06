@@ -6485,4 +6485,48 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get clearSearch => 'مسح البحث';
+
+  @override
+  String get tripPurposeTitle => 'سبب الرحلة';
+
+  @override
+  String get tripPurposeHoliday => 'عطلة';
+
+  @override
+  String get tripPurposeFamily => 'زيارة العائلة أو الأصدقاء';
+
+  @override
+  String get tripPurposeBusiness => 'أعمال';
+
+  @override
+  String get tripPurposeStudy => 'دراسة';
+
+  @override
+  String get tripPurposeWork => 'عمل';
+
+  @override
+  String get visaPurposeStudyNeeded => 'تأشيرة دراسة مطلوبة عادةً';
+
+  @override
+  String get visaPurposeWorkNeeded => 'تأشيرة عمل مطلوبة عادةً';
+
+  @override
+  String get visaPurposeStudyNote => 'قواعد الزوار لا تشمل الدراسة. تحتاج عادةً إلى تأشيرة أو تصريح دراسة. تحقق من القواعد الرسمية وقدّم طلبك مبكرًا.';
+
+  @override
+  String get visaPurposeWorkNote => 'قواعد الزوار لا تشمل العمل، سواء كان مدفوع الأجر أم لا. تحتاج عادةً إلى تأشيرة أو تصريح عمل. تحقق من القواعد الرسمية وقدّم طلبك مبكرًا.';
+
+  @override
+  String get visaBusinessNote => 'الزيارات القصيرة للأعمال مثل الاجتماعات مسموح بها غالبًا بموجب قواعد الزوار، لكن العمل المدفوع الأجر غير مسموح. تحقق من القواعد الرسمية.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'قواعد الزوار: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'القواعد الرسمية';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ليس جزءًا من هذا الموقع. إذا قال هذا الموقع شيئًا مختلفًا عن Vaultara، فاتبع هذا الموقع.';
 }

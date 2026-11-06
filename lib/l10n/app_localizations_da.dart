@@ -6286,4 +6286,48 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get clearSearch => 'Ryd søgning';
+
+  @override
+  String get tripPurposeTitle => 'Formål med rejsen';
+
+  @override
+  String get tripPurposeHoliday => 'Ferie';
+
+  @override
+  String get tripPurposeFamily => 'Besøg hos familie eller venner';
+
+  @override
+  String get tripPurposeBusiness => 'Forretning';
+
+  @override
+  String get tripPurposeStudy => 'Studier';
+
+  @override
+  String get tripPurposeWork => 'Arbejde';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Studievisum kræves normalt';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Arbejdsvisum kræves normalt';
+
+  @override
+  String get visaPurposeStudyNote => 'Reglerne for besøgende dækker ikke studier. Du skal normalt have et studievisum eller en studietilladelse. Tjek de officielle regler, og søg i god tid.';
+
+  @override
+  String get visaPurposeWorkNote => 'Reglerne for besøgende dækker ikke arbejde, hverken lønnet eller ulønnet. Du skal normalt have et arbejdsvisum eller en arbejdstilladelse. Tjek de officielle regler, og søg i god tid.';
+
+  @override
+  String get visaBusinessNote => 'Korte forretningsbesøg som møder er ofte tilladt efter reglerne for besøgende, men lønnet arbejde er ikke. Tjek de officielle regler.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Regler for besøgende: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Officielle regler';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara er ikke en del af dette websted. Hvis webstedet siger noget andet end Vaultara, så følg webstedet.';
 }

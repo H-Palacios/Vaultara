@@ -2018,5 +2018,19 @@
   "hidePassword": "Passwort ausblenden",
   "pinCategory": "Oben anheften",
   "unpinCategory": "Lösen",
-  "clearSearch": "Suche löschen"
+  "clearSearch": "Suche löschen",
+  "tripPurposeTitle": "Reisegrund",
+  "tripPurposeHoliday": "Urlaub",
+  "tripPurposeFamily": "Familie oder Freunde besuchen",
+  "tripPurposeBusiness": "Geschäftlich",
+  "tripPurposeStudy": "Studium",
+  "tripPurposeWork": "Arbeit",
+  "visaPurposeStudyNeeded": "Meist Studienvisum nötig",
+  "visaPurposeWorkNeeded": "Meist Arbeitsvisum nötig",
+  "visaPurposeStudyNote": "Die Regeln für Besucher gelten nicht für ein Studium. Meist brauchst du ein Studienvisum oder eine Aufenthaltserlaubnis zum Studium. Prüfe die offiziellen Regeln und beantrage früh.",
+  "visaPurposeWorkNote": "Die Regeln für Besucher gelten nicht für Arbeit, ob bezahlt oder unbezahlt. Meist brauchst du ein Arbeitsvisum oder eine Arbeitserlaubnis. Prüfe die offiziellen Regeln und beantrage früh.",
+  "visaBusinessNote": "Kurze Geschäftsreisen, etwa für Meetings, sind mit den Regeln für Besucher oft erlaubt, bezahlte Arbeit aber nicht. Prüfe die offiziellen Regeln.",
+  "visaVisitorRules": "Regeln für Besucher: {status}",
+  "visaOfficialRules": "Offizielle Regeln",
+  "visaLeavingRulesNote": "Vaultara gehört nicht zu dieser Website. Wenn diese Website etwas anderes sagt als Vaultara, richte dich nach dieser Website."
 }

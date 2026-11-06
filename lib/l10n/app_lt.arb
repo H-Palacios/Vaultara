@@ -2005,5 +2005,19 @@
   "hidePassword": "Slėpti slaptažodį",
   "pinCategory": "Prisegti viršuje",
   "unpinCategory": "Atsegti",
-  "clearSearch": "Išvalyti paiešką"
+  "clearSearch": "Išvalyti paiešką",
+  "tripPurposeTitle": "Kelionės tikslas",
+  "tripPurposeHoliday": "Atostogos",
+  "tripPurposeFamily": "Šeimos ar draugų lankymas",
+  "tripPurposeBusiness": "Verslas",
+  "tripPurposeStudy": "Studijos",
+  "tripPurposeWork": "Darbas",
+  "visaPurposeStudyNeeded": "Paprastai reikia studijų vizos",
+  "visaPurposeWorkNeeded": "Paprastai reikia darbo vizos",
+  "visaPurposeStudyNote": "Lankytojų taisyklės netaikomos studijoms. Paprastai reikia studijų vizos ar leidimo. Patikrinkite oficialias taisykles ir kreipkitės anksti.",
+  "visaPurposeWorkNote": "Lankytojų taisyklės netaikomos darbui, mokamam ar nemokamam. Paprastai reikia darbo vizos ar leidimo. Patikrinkite oficialias taisykles ir kreipkitės anksti.",
+  "visaBusinessNote": "Trumpi verslo vizitai, pavyzdžiui, susitikimai, pagal lankytojų taisykles dažnai leidžiami, bet apmokamas darbas ne. Patikrinkite oficialias taisykles.",
+  "visaVisitorRules": "Lankytojų taisyklės: {status}",
+  "visaOfficialRules": "Oficialios taisyklės",
+  "visaLeavingRulesNote": "Vaultara nėra šios svetainės dalis. Jei ši svetainė nurodo ką nors kita nei Vaultara, vadovaukitės šia svetaine."
 }

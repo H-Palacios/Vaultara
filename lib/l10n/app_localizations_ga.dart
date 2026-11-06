@@ -6467,4 +6467,48 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get clearSearch => 'Glan an cuardach';
+
+  @override
+  String get tripPurposeTitle => 'Cúis an turais';
+
+  @override
+  String get tripPurposeHoliday => 'Saoire';
+
+  @override
+  String get tripPurposeFamily => 'Cuairt ar mhuintir nó ar chairde';
+
+  @override
+  String get tripPurposeBusiness => 'Gnó';
+
+  @override
+  String get tripPurposeStudy => 'Staidéar';
+
+  @override
+  String get tripPurposeWork => 'Obair';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Víosa staidéir de dhíth de ghnáth';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Víosa oibre de dhíth de ghnáth';
+
+  @override
+  String get visaPurposeStudyNote => 'Ní chlúdaíonn na rialacha do chuairteoirí staidéar. De ghnáth bíonn víosa nó cead staidéir de dhíth ort. Seiceáil na rialacha oifigiúla agus déan iarratas go luath.';
+
+  @override
+  String get visaPurposeWorkNote => 'Ní chlúdaíonn na rialacha do chuairteoirí obair, íoctha nó gan íoc. De ghnáth bíonn víosa nó cead oibre de dhíth ort. Seiceáil na rialacha oifigiúla agus déan iarratas go luath.';
+
+  @override
+  String get visaBusinessNote => 'Is minic a cheadaítear cuairteanna gearra gnó, mar chruinnithe, faoi na rialacha do chuairteoirí, ach ní cheadaítear obair íoctha. Seiceáil na rialacha oifigiúla.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Rialacha do chuairteoirí: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Rialacha oifigiúla';
+
+  @override
+  String get visaLeavingRulesNote => 'Níl Vaultara mar chuid den suíomh seo. Má deir an suíomh seo rud éigin difriúil ó Vaultara, lean an suíomh seo.';
 }

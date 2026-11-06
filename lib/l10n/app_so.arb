@@ -1987,5 +1987,19 @@
   "hidePassword": "Qari erayga sirta ah",
   "pinCategory": "Sare ku xidh",
   "unpinCategory": "Ka saar xidhka",
-  "clearSearch": "Nadiifi raadinta"
+  "clearSearch": "Nadiifi raadinta",
+  "tripPurposeTitle": "Sababta safarka",
+  "tripPurposeHoliday": "Fasax",
+  "tripPurposeFamily": "Booqasho qoys ama saaxiibo",
+  "tripPurposeBusiness": "Ganacsi",
+  "tripPurposeStudy": "Waxbarasho",
+  "tripPurposeWork": "Shaqo",
+  "visaPurposeStudyNeeded": "Badanaa waxaa loo baahan yahay fiisaha waxbarashada",
+  "visaPurposeWorkNeeded": "Badanaa waxaa loo baahan yahay fiisaha shaqada",
+  "visaPurposeStudyNote": "Xeerarka booqdayaasha ma daboolaan waxbarashada. Badanaa waxaad u baahan tahay fiiso ama ogolaansho waxbarasho. Hubi xeerarka rasmiga ah oo codso goor hore.",
+  "visaPurposeWorkNote": "Xeerarka booqdayaasha ma daboolaan shaqada, mid lagu mushahar qaato iyo mid aan lagu qaadan. Badanaa waxaad u baahan tahay fiiso ama ogolaansho shaqo. Hubi xeerarka rasmiga ah oo codso goor hore.",
+  "visaBusinessNote": "Booqashooyinka gaagaaban ee ganacsiga sida shirarka badanaa waa la oggol yahay xeerarka booqdayaasha, laakiin shaqada mushaharka leh maaha. Hubi xeerarka rasmiga ah.",
+  "visaVisitorRules": "Xeerarka booqdayaasha: {status}",
+  "visaOfficialRules": "Xeerarka rasmiga ah",
+  "visaLeavingRulesNote": "Vaultara qayb kama aha boggan. Haddii boggani wax ka duwan Vaultara sheego, raac boggan."
 }

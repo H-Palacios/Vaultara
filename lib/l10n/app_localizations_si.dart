@@ -6285,4 +6285,48 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get clearSearch => 'සෙවුම හිස් කරන්න';
+
+  @override
+  String get tripPurposeTitle => 'ගමනේ හේතුව';
+
+  @override
+  String get tripPurposeHoliday => 'නිවාඩුව';
+
+  @override
+  String get tripPurposeFamily => 'පවුලේ අය හෝ මිතුරන් බැලීම';
+
+  @override
+  String get tripPurposeBusiness => 'ව්‍යාපාර';
+
+  @override
+  String get tripPurposeStudy => 'අධ්‍යාපනය';
+
+  @override
+  String get tripPurposeWork => 'රැකියාව';
+
+  @override
+  String get visaPurposeStudyNeeded => 'සාමාන්‍යයෙන් ශිෂ්‍ය වීසා අවශ්‍යයි';
+
+  @override
+  String get visaPurposeWorkNeeded => 'සාමාන්‍යයෙන් රැකියා වීසා අවශ්‍යයි';
+
+  @override
+  String get visaPurposeStudyNote => 'අමුත්තන් සඳහා වන නීති අධ්‍යාපනයට අදාළ නොවේ. සාමාන්‍යයෙන් ඔබට ශිෂ්‍ය වීසා හෝ අවසරයක් අවශ්‍යයි. නිල නීති පරීක්ෂා කර කලින් අයදුම් කරන්න.';
+
+  @override
+  String get visaPurposeWorkNote => 'අමුත්තන් සඳහා වන නීති වැටුප් සහිත හෝ රහිත රැකියාවට අදාළ නොවේ. සාමාන්‍යයෙන් ඔබට රැකියා වීසා හෝ අවසරයක් අවශ්‍යයි. නිල නීති පරීක්ෂා කර කලින් අයදුම් කරන්න.';
+
+  @override
+  String get visaBusinessNote => 'රැස්වීම් වැනි කෙටි ව්‍යාපාරික සංචාර සඳහා අමුත්තන් සඳහා වන නීති යටතේ බොහෝ විට අවසර ඇත, නමුත් වැටුප් සහිත රැකියාවට නැත. නිල නීති පරීක්ෂා කරන්න.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'අමුත්තන් සඳහා වන නීති: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'නිල නීති';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara මෙම අඩවියේ කොටසක් නොවේ. මෙම අඩවිය Vaultara ට වඩා වෙනස් දෙයක් කියන්නේ නම්, මෙම අඩවිය අනුගමනය කරන්න.';
 }

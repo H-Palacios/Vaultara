@@ -6301,4 +6301,48 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get clearSearch => 'Clear search';
+
+  @override
+  String get tripPurposeTitle => 'Reason for the trip';
+
+  @override
+  String get tripPurposeHoliday => 'Holiday';
+
+  @override
+  String get tripPurposeFamily => 'Visiting family or friends';
+
+  @override
+  String get tripPurposeBusiness => 'Business';
+
+  @override
+  String get tripPurposeStudy => 'Study';
+
+  @override
+  String get tripPurposeWork => 'Work';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Study visa usually needed';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Work visa usually needed';
+
+  @override
+  String get visaPurposeStudyNote => 'Visitor rules do not cover studying. You usually need a study visa or permit. Check the official rules and apply early.';
+
+  @override
+  String get visaPurposeWorkNote => 'Visitor rules do not cover working, paid or unpaid. You usually need a work visa or permit. Check the official rules and apply early.';
+
+  @override
+  String get visaBusinessNote => 'Short business visits such as meetings are often allowed on visitor rules, but paid work is not. Check the official rules.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Visitor rules: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Official rules';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara is not part of this site. If this site says something different from Vaultara, follow this site.';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get clearSearch => 'Esborra la cerca';
+
+  @override
+  String get tripPurposeTitle => 'Motiu del viatge';
+
+  @override
+  String get tripPurposeHoliday => 'Vacances';
+
+  @override
+  String get tripPurposeFamily => 'Visitar família o amics';
+
+  @override
+  String get tripPurposeBusiness => 'Negocis';
+
+  @override
+  String get tripPurposeStudy => 'Estudis';
+
+  @override
+  String get tripPurposeWork => 'Feina';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Normalment cal visat d\'estudis';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Normalment cal visat de treball';
+
+  @override
+  String get visaPurposeStudyNote => 'Les normes per a visitants no cobreixen els estudis. Normalment necessites un visat o permís d\'estudis. Consulta les normes oficials i sol·licita\'l amb temps.';
+
+  @override
+  String get visaPurposeWorkNote => 'Les normes per a visitants no cobreixen la feina, remunerada o no. Normalment necessites un visat o permís de treball. Consulta les normes oficials i sol·licita\'l amb temps.';
+
+  @override
+  String get visaBusinessNote => 'Les visites curtes de negocis, com ara reunions, sovint es permeten amb les normes per a visitants, però la feina remunerada no. Consulta les normes oficials.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Normes per a visitants: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Normes oficials';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara no forma part d\'aquest lloc. Si aquest lloc diu una cosa diferent de Vaultara, segueix aquest lloc.';
 }

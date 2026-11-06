@@ -2001,5 +2001,19 @@
   "hidePassword": "Fshih fjalëkalimin",
   "pinCategory": "Gozhdo lart",
   "unpinCategory": "Hiq gozhdimin",
-  "clearSearch": "Pastro kërkimin"
+  "clearSearch": "Pastro kërkimin",
+  "tripPurposeTitle": "Arsyeja e udhëtimit",
+  "tripPurposeHoliday": "Pushime",
+  "tripPurposeFamily": "Vizitë te familja ose miqtë",
+  "tripPurposeBusiness": "Biznes",
+  "tripPurposeStudy": "Studime",
+  "tripPurposeWork": "Punë",
+  "visaPurposeStudyNeeded": "Zakonisht nevojitet vizë studimi",
+  "visaPurposeWorkNeeded": "Zakonisht nevojitet vizë pune",
+  "visaPurposeStudyNote": "Rregullat për vizitorët nuk përfshijnë studimet. Zakonisht të duhet vizë ose leje studimi. Shiko rregullat zyrtare dhe apliko herët.",
+  "visaPurposeWorkNote": "Rregullat për vizitorët nuk përfshijnë punën, të paguar ose jo. Zakonisht të duhet vizë ose leje pune. Shiko rregullat zyrtare dhe apliko herët.",
+  "visaBusinessNote": "Vizitat e shkurtra biznesi, si takimet, shpesh lejohen sipas rregullave për vizitorët, por puna e paguar jo. Shiko rregullat zyrtare.",
+  "visaVisitorRules": "Rregullat për vizitorët: {status}",
+  "visaOfficialRules": "Rregullat zyrtare",
+  "visaLeavingRulesNote": "Vaultara nuk është pjesë e kësaj faqeje. Nëse kjo faqe thotë diçka ndryshe nga Vaultara, ndiq këtë faqe."
 }

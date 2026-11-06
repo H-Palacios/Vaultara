@@ -6286,4 +6286,48 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get clearSearch => 'ፍለጋን አጽዳ';
+
+  @override
+  String get tripPurposeTitle => 'የጉዞው ምክንያት';
+
+  @override
+  String get tripPurposeHoliday => 'የዕረፍት ጊዜ';
+
+  @override
+  String get tripPurposeFamily => 'ቤተሰብ ወይም ጓደኞችን መጎብኘት';
+
+  @override
+  String get tripPurposeBusiness => 'ንግድ';
+
+  @override
+  String get tripPurposeStudy => 'ትምህርት';
+
+  @override
+  String get tripPurposeWork => 'ሥራ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'ብዙውን ጊዜ የትምህርት ቪዛ ያስፈልጋል';
+
+  @override
+  String get visaPurposeWorkNeeded => 'ብዙውን ጊዜ የሥራ ቪዛ ያስፈልጋል';
+
+  @override
+  String get visaPurposeStudyNote => 'የጎብኚዎች ደንቦች ትምህርትን አይሸፍኑም። ብዙውን ጊዜ የትምህርት ቪዛ ወይም ፈቃድ ያስፈልግዎታል። ኦፊሴላዊ ደንቦቹን ይመልከቱ እና ቀደም ብለው ያመልክቱ።';
+
+  @override
+  String get visaPurposeWorkNote => 'የጎብኚዎች ደንቦች ሥራን አይሸፍኑም፣ የሚከፈልም ሆነ የማይከፈል። ብዙውን ጊዜ የሥራ ቪዛ ወይም ፈቃድ ያስፈልግዎታል። ኦፊሴላዊ ደንቦቹን ይመልከቱ እና ቀደም ብለው ያመልክቱ።';
+
+  @override
+  String get visaBusinessNote => 'እንደ ስብሰባ ያሉ አጭር የንግድ ጉብኝቶች ብዙውን ጊዜ በጎብኚዎች ደንቦች ይፈቀዳሉ፣ የሚከፈልበት ሥራ ግን አይፈቀድም። ኦፊሴላዊ ደንቦቹን ይመልከቱ።';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'የጎብኚዎች ደንቦች፦ $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ኦፊሴላዊ ደንቦች';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara የዚህ ድረ-ገጽ አካል አይደለም። ይህ ድረ-ገጽ ከVaultara የተለየ ነገር ከተናገረ፣ ይህንን ድረ-ገጽ ይከተሉ።';
 }

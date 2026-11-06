@@ -1987,5 +1987,19 @@
   "hidePassword": "Şîfreyê veşêre",
   "pinCategory": "Li jor bi pîne bike",
   "unpinCategory": "Pînê rake",
-  "clearSearch": "Lêgerînê paqij bike"
+  "clearSearch": "Lêgerînê paqij bike",
+  "tripPurposeTitle": "Sedema rêwîtiyê",
+  "tripPurposeHoliday": "Betlane",
+  "tripPurposeFamily": "Serdana malbat an hevalan",
+  "tripPurposeBusiness": "Bazirganî",
+  "tripPurposeStudy": "Xwendin",
+  "tripPurposeWork": "Kar",
+  "visaPurposeStudyNeeded": "Bi gelemperî vîzeya xwendinê lazim e",
+  "visaPurposeWorkNeeded": "Bi gelemperî vîzeya karê lazim e",
+  "visaPurposeStudyNote": "Rêzikên mêvanan xwendinê nagirin. Bi gelemperî vîzeya an destûra xwendinê lazim e. Rêzikên fermî kontrol bike û zû serlêdanê bike.",
+  "visaPurposeWorkNote": "Rêzikên mêvanan karê nagirin, bi mûçe be an bê mûçe. Bi gelemperî vîzeya an destûra karê lazim e. Rêzikên fermî kontrol bike û zû serlêdanê bike.",
+  "visaBusinessNote": "Serdanên bazirganî yên kurt ên wekî civînan bi rêzikên mêvanan pir caran destûr in, lê karê bi mûçe ne. Rêzikên fermî kontrol bike.",
+  "visaVisitorRules": "Rêzikên mêvanan: {status}",
+  "visaOfficialRules": "Rêzikên fermî",
+  "visaLeavingRulesNote": "Vaultara ne beşek ji vê malperê ye. Heke ev malper tiştekî cuda ji Vaultara bêje, li pey vê malperê here."
 }

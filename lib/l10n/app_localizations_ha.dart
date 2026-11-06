@@ -6286,4 +6286,48 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get clearSearch => 'Share bincike';
+
+  @override
+  String get tripPurposeTitle => 'Dalilin tafiya';
+
+  @override
+  String get tripPurposeHoliday => 'Hutu';
+
+  @override
+  String get tripPurposeFamily => 'Ziyartar iyali ko abokai';
+
+  @override
+  String get tripPurposeBusiness => 'Kasuwanci';
+
+  @override
+  String get tripPurposeStudy => 'Karatu';
+
+  @override
+  String get tripPurposeWork => 'Aiki';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Yawanci ana buƙatar bizar karatu';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Yawanci ana buƙatar bizar aiki';
+
+  @override
+  String get visaPurposeStudyNote => 'Ƙa\'idojin baƙi ba su shafi karatu ba. Yawanci kana buƙatar bizar karatu ko izini. Duba ƙa\'idojin hukuma kuma ka nema da wuri.';
+
+  @override
+  String get visaPurposeWorkNote => 'Ƙa\'idojin baƙi ba su shafi aiki ba, na biya ko ba na biya ba. Yawanci kana buƙatar bizar aiki ko izini. Duba ƙa\'idojin hukuma kuma ka nema da wuri.';
+
+  @override
+  String get visaBusinessNote => 'Gajerun ziyarar kasuwanci kamar taro galibi ana ba da izini a ƙarƙashin ƙa\'idojin baƙi, amma ba aikin biya ba. Duba ƙa\'idojin hukuma.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Ƙa\'idojin baƙi: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Ƙa\'idojin hukuma';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ba ɓangare na wannan shafin ba ne. Idan wannan shafin ya faɗi wani abu daban da Vaultara, bi wannan shafin.';
 }

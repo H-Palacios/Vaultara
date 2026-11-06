@@ -1992,5 +1992,19 @@
   "hidePassword": "הסתר סיסמה",
   "pinCategory": "הצמד למעלה",
   "unpinCategory": "בטל הצמדה",
-  "clearSearch": "נקה חיפוש"
+  "clearSearch": "נקה חיפוש",
+  "tripPurposeTitle": "סיבת הנסיעה",
+  "tripPurposeHoliday": "חופשה",
+  "tripPurposeFamily": "ביקור משפחה או חברים",
+  "tripPurposeBusiness": "עסקים",
+  "tripPurposeStudy": "לימודים",
+  "tripPurposeWork": "עבודה",
+  "visaPurposeStudyNeeded": "בדרך כלל נדרשת ויזת סטודנט",
+  "visaPurposeWorkNeeded": "בדרך כלל נדרשת ויזת עבודה",
+  "visaPurposeStudyNote": "כללי המבקרים אינם חלים על לימודים. בדרך כלל צריך ויזת סטודנט או היתר לימודים. בדוק את הכללים הרשמיים והגש בקשה מוקדם.",
+  "visaPurposeWorkNote": "כללי המבקרים אינם חלים על עבודה, בתשלום או בלי תשלום. בדרך כלל צריך ויזת עבודה או היתר עבודה. בדוק את הכללים הרשמיים והגש בקשה מוקדם.",
+  "visaBusinessNote": "ביקורי עסקים קצרים, כמו פגישות, מותרים לרוב לפי כללי המבקרים, אבל עבודה בתשלום לא. בדוק את הכללים הרשמיים.",
+  "visaVisitorRules": "כללי מבקרים: {status}",
+  "visaOfficialRules": "כללים רשמיים",
+  "visaLeavingRulesNote": "Vaultara אינה חלק מהאתר הזה. אם האתר הזה אומר משהו שונה מ-Vaultara, פעל לפי האתר הזה."
 }

@@ -1987,5 +1987,19 @@
   "hidePassword": "Parolayı gizle",
   "pinCategory": "En üste sabitle",
   "unpinCategory": "Sabitlemeyi kaldır",
-  "clearSearch": "Aramayı temizle"
+  "clearSearch": "Aramayı temizle",
+  "tripPurposeTitle": "Seyahat nedeni",
+  "tripPurposeHoliday": "Tatil",
+  "tripPurposeFamily": "Aile veya arkadaş ziyareti",
+  "tripPurposeBusiness": "İş seyahati",
+  "tripPurposeStudy": "Eğitim",
+  "tripPurposeWork": "Çalışma",
+  "visaPurposeStudyNeeded": "Genellikle öğrenci vizesi gerekir",
+  "visaPurposeWorkNeeded": "Genellikle çalışma vizesi gerekir",
+  "visaPurposeStudyNote": "Ziyaretçi kuralları eğitimi kapsamaz. Genellikle öğrenci vizesi veya izni gerekir. Resmi kuralları kontrol et ve erkenden başvur.",
+  "visaPurposeWorkNote": "Ziyaretçi kuralları ücretli ya da ücretsiz çalışmayı kapsamaz. Genellikle çalışma vizesi veya izni gerekir. Resmi kuralları kontrol et ve erkenden başvur.",
+  "visaBusinessNote": "Toplantı gibi kısa iş ziyaretlerine ziyaretçi kurallarıyla çoğu zaman izin verilir, ancak ücretli çalışmaya verilmez. Resmi kuralları kontrol et.",
+  "visaVisitorRules": "Ziyaretçi kuralları: {status}",
+  "visaOfficialRules": "Resmi kurallar",
+  "visaLeavingRulesNote": "Vaultara bu sitenin bir parçası değildir. Bu site Vaultara'dan farklı bir şey söylüyorsa bu siteye uy."
 }

@@ -6338,4 +6338,48 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get clearSearch => 'נקה חיפוש';
+
+  @override
+  String get tripPurposeTitle => 'סיבת הנסיעה';
+
+  @override
+  String get tripPurposeHoliday => 'חופשה';
+
+  @override
+  String get tripPurposeFamily => 'ביקור משפחה או חברים';
+
+  @override
+  String get tripPurposeBusiness => 'עסקים';
+
+  @override
+  String get tripPurposeStudy => 'לימודים';
+
+  @override
+  String get tripPurposeWork => 'עבודה';
+
+  @override
+  String get visaPurposeStudyNeeded => 'בדרך כלל נדרשת ויזת סטודנט';
+
+  @override
+  String get visaPurposeWorkNeeded => 'בדרך כלל נדרשת ויזת עבודה';
+
+  @override
+  String get visaPurposeStudyNote => 'כללי המבקרים אינם חלים על לימודים. בדרך כלל צריך ויזת סטודנט או היתר לימודים. בדוק את הכללים הרשמיים והגש בקשה מוקדם.';
+
+  @override
+  String get visaPurposeWorkNote => 'כללי המבקרים אינם חלים על עבודה, בתשלום או בלי תשלום. בדרך כלל צריך ויזת עבודה או היתר עבודה. בדוק את הכללים הרשמיים והגש בקשה מוקדם.';
+
+  @override
+  String get visaBusinessNote => 'ביקורי עסקים קצרים, כמו פגישות, מותרים לרוב לפי כללי המבקרים, אבל עבודה בתשלום לא. בדוק את הכללים הרשמיים.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'כללי מבקרים: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'כללים רשמיים';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara אינה חלק מהאתר הזה. אם האתר הזה אומר משהו שונה מ-Vaultara, פעל לפי האתר הזה.';
 }

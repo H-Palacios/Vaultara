@@ -6236,4 +6236,48 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get clearSearch => 'Hichapụ ọchụchọ';
+
+  @override
+  String get tripPurposeTitle => 'Ihe kpatara njem';
+
+  @override
+  String get tripPurposeHoliday => 'Ezumike';
+
+  @override
+  String get tripPurposeFamily => 'Ịga leta ezinụlọ ma ọ bụ ndị enyi';
+
+  @override
+  String get tripPurposeBusiness => 'Azụmahịa';
+
+  @override
+  String get tripPurposeStudy => 'Ọmụmụ ihe';
+
+  @override
+  String get tripPurposeWork => 'Ọrụ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Ọ na-adịkarị mkpa vịsa ụmụ akwụkwọ';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Ọ na-adịkarị mkpa vịsa ọrụ';
+
+  @override
+  String get visaPurposeStudyNote => 'Iwu ndị ọbịa anaghị ekpuchi ọmụmụ ihe. Ọ na-adịkarị mkpa ka i nwee vịsa ma ọ bụ ikike ụmụ akwụkwọ. Lelee iwu gọọmentị ma tinye akwụkwọ n\'oge.';
+
+  @override
+  String get visaPurposeWorkNote => 'Iwu ndị ọbịa anaghị ekpuchi ọrụ, nke a na-akwụ ụgwọ ma ọ bụ nke a naghị akwụ. Ọ na-adịkarị mkpa ka i nwee vịsa ma ọ bụ ikike ọrụ. Lelee iwu gọọmentị ma tinye akwụkwọ n\'oge.';
+
+  @override
+  String get visaBusinessNote => 'Njem azụmahịa dị mkpụmkpụ dịka nzukọ na-adịkarị ekwe n\'okpuru iwu ndị ọbịa, mana ọrụ a na-akwụ ụgwọ adịghị. Lelee iwu gọọmentị.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Iwu ndị ọbịa: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Iwu gọọmentị';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara abụghị akụkụ nke saịtị a. Ọ bụrụ na saịtị a kwuru ihe dị iche na Vaultara, soro saịtị a.';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get clearSearch => 'Tøm søk';
+
+  @override
+  String get tripPurposeTitle => 'Føremål med reisa';
+
+  @override
+  String get tripPurposeHoliday => 'Ferie';
+
+  @override
+  String get tripPurposeFamily => 'Besøkje familie eller vener';
+
+  @override
+  String get tripPurposeBusiness => 'Forretningsreise';
+
+  @override
+  String get tripPurposeStudy => 'Studium';
+
+  @override
+  String get tripPurposeWork => 'Arbeid';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Studievisum krevst vanlegvis';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Arbeidsvisum krevst vanlegvis';
+
+  @override
+  String get visaPurposeStudyNote => 'Reglane for besøkjande gjeld ikkje studium. Du treng vanlegvis eit studievisum eller eit studieløyve. Sjekk dei offisielle reglane og søk i god tid.';
+
+  @override
+  String get visaPurposeWorkNote => 'Reglane for besøkjande gjeld ikkje arbeid, verken betalt eller ubetalt. Du treng vanlegvis eit arbeidsvisum eller eit arbeidsløyve. Sjekk dei offisielle reglane og søk i god tid.';
+
+  @override
+  String get visaBusinessNote => 'Korte forretningsreiser, som møte, er ofte tillatne etter reglane for besøkjande, men betalt arbeid er ikkje det. Sjekk dei offisielle reglane.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Reglar for besøkjande: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Offisielle reglar';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara er ikkje ein del av denne nettstaden. Viss nettstaden seier noko anna enn Vaultara, følg nettstaden.';
 }

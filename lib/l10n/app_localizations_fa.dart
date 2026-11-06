@@ -6286,4 +6286,48 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get clearSearch => 'پاک کردن جستجو';
+
+  @override
+  String get tripPurposeTitle => 'دلیل سفر';
+
+  @override
+  String get tripPurposeHoliday => 'تعطیلات';
+
+  @override
+  String get tripPurposeFamily => 'دیدار با خانواده یا دوستان';
+
+  @override
+  String get tripPurposeBusiness => 'تجاری';
+
+  @override
+  String get tripPurposeStudy => 'تحصیل';
+
+  @override
+  String get tripPurposeWork => 'کار';
+
+  @override
+  String get visaPurposeStudyNeeded => 'معمولاً ویزای تحصیلی لازم است';
+
+  @override
+  String get visaPurposeWorkNeeded => 'معمولاً ویزای کار لازم است';
+
+  @override
+  String get visaPurposeStudyNote => 'قوانین بازدیدکنندگان شامل تحصیل نمی‌شود. معمولاً به ویزا یا مجوز تحصیلی نیاز دارید. قوانین رسمی را بررسی کنید و زود درخواست دهید.';
+
+  @override
+  String get visaPurposeWorkNote => 'قوانین بازدیدکنندگان شامل کار، با دستمزد یا بدون دستمزد، نمی‌شود. معمولاً به ویزا یا مجوز کار نیاز دارید. قوانین رسمی را بررسی کنید و زود درخواست دهید.';
+
+  @override
+  String get visaBusinessNote => 'سفرهای کاری کوتاه مانند جلسات اغلب با قوانین بازدیدکنندگان مجاز است، اما کار با دستمزد مجاز نیست. قوانین رسمی را بررسی کنید.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'قوانین بازدیدکنندگان: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'قوانین رسمی';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara بخشی از این سایت نیست. اگر این سایت چیزی متفاوت از Vaultara می‌گوید، از این سایت پیروی کنید.';
 }

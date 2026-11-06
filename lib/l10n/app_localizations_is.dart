@@ -6286,4 +6286,48 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get clearSearch => 'Hreinsa leit';
+
+  @override
+  String get tripPurposeTitle => 'Tilgangur ferðar';
+
+  @override
+  String get tripPurposeHoliday => 'Frí';
+
+  @override
+  String get tripPurposeFamily => 'Heimsókn til fjölskyldu eða vina';
+
+  @override
+  String get tripPurposeBusiness => 'Viðskipti';
+
+  @override
+  String get tripPurposeStudy => 'Nám';
+
+  @override
+  String get tripPurposeWork => 'Vinna';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Námsmannaáritun yfirleitt nauðsynleg';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Atvinnuáritun yfirleitt nauðsynleg';
+
+  @override
+  String get visaPurposeStudyNote => 'Reglur fyrir gesti ná ekki yfir nám. Yfirleitt þarftu námsmannaáritun eða dvalarleyfi vegna náms. Skoðaðu opinberu reglurnar og sæktu um tímanlega.';
+
+  @override
+  String get visaPurposeWorkNote => 'Reglur fyrir gesti ná ekki yfir vinnu, launaða eða ólaunaða. Yfirleitt þarftu atvinnuáritun eða atvinnuleyfi. Skoðaðu opinberu reglurnar og sæktu um tímanlega.';
+
+  @override
+  String get visaBusinessNote => 'Stuttar viðskiptaferðir, eins og fundir, eru oft leyfðar samkvæmt reglum fyrir gesti, en launuð vinna ekki. Skoðaðu opinberu reglurnar.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Reglur fyrir gesti: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Opinberar reglur';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara er ekki hluti af þessari síðu. Ef þessi síða segir eitthvað annað en Vaultara skaltu fylgja síðunni.';
 }

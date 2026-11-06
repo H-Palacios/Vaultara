@@ -2005,5 +2005,19 @@
   "hidePassword": "Jelszó elrejtése",
   "pinCategory": "Kitűzés felülre",
   "unpinCategory": "Kitűzés megszüntetése",
-  "clearSearch": "Keresés törlése"
+  "clearSearch": "Keresés törlése",
+  "tripPurposeTitle": "Az utazás célja",
+  "tripPurposeHoliday": "Nyaralás",
+  "tripPurposeFamily": "Család vagy barátok meglátogatása",
+  "tripPurposeBusiness": "Üzleti út",
+  "tripPurposeStudy": "Tanulás",
+  "tripPurposeWork": "Munka",
+  "visaPurposeStudyNeeded": "Általában tanulói vízum szükséges",
+  "visaPurposeWorkNeeded": "Általában munkavízum szükséges",
+  "visaPurposeStudyNote": "A látogatói szabályok nem vonatkoznak tanulásra. Általában tanulói vízumra vagy engedélyre van szükség. Nézze meg a hivatalos szabályokat, és időben adja be a kérelmet.",
+  "visaPurposeWorkNote": "A látogatói szabályok nem vonatkoznak munkára, sem fizetettre, sem fizetés nélkülire. Általában munkavízumra vagy munkavállalási engedélyre van szükség. Nézze meg a hivatalos szabályokat, és időben adja be a kérelmet.",
+  "visaBusinessNote": "A rövid üzleti utak, például megbeszélések, a látogatói szabályok szerint gyakran engedélyezettek, a fizetett munka viszont nem. Nézze meg a hivatalos szabályokat.",
+  "visaVisitorRules": "Látogatói szabályok: {status}",
+  "visaOfficialRules": "Hivatalos szabályok",
+  "visaLeavingRulesNote": "A Vaultara nem része ennek az oldalnak. Ha az oldal mást mond, mint a Vaultara, kövesse az oldalt."
 }

@@ -6285,4 +6285,48 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get clearSearch => 'Nadiifi raadinta';
+
+  @override
+  String get tripPurposeTitle => 'Sababta safarka';
+
+  @override
+  String get tripPurposeHoliday => 'Fasax';
+
+  @override
+  String get tripPurposeFamily => 'Booqasho qoys ama saaxiibo';
+
+  @override
+  String get tripPurposeBusiness => 'Ganacsi';
+
+  @override
+  String get tripPurposeStudy => 'Waxbarasho';
+
+  @override
+  String get tripPurposeWork => 'Shaqo';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Badanaa waxaa loo baahan yahay fiisaha waxbarashada';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Badanaa waxaa loo baahan yahay fiisaha shaqada';
+
+  @override
+  String get visaPurposeStudyNote => 'Xeerarka booqdayaasha ma daboolaan waxbarashada. Badanaa waxaad u baahan tahay fiiso ama ogolaansho waxbarasho. Hubi xeerarka rasmiga ah oo codso goor hore.';
+
+  @override
+  String get visaPurposeWorkNote => 'Xeerarka booqdayaasha ma daboolaan shaqada, mid lagu mushahar qaato iyo mid aan lagu qaadan. Badanaa waxaad u baahan tahay fiiso ama ogolaansho shaqo. Hubi xeerarka rasmiga ah oo codso goor hore.';
+
+  @override
+  String get visaBusinessNote => 'Booqashooyinka gaagaaban ee ganacsiga sida shirarka badanaa waa la oggol yahay xeerarka booqdayaasha, laakiin shaqada mushaharka leh maaha. Hubi xeerarka rasmiga ah.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Xeerarka booqdayaasha: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Xeerarka rasmiga ah';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara qayb kama aha boggan. Haddii boggani wax ka duwan Vaultara sheego, raac boggan.';
 }

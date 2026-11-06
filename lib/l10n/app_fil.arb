@@ -1999,5 +1999,19 @@
   "hidePassword": "Itago ang password",
   "pinCategory": "I-pin sa itaas",
   "unpinCategory": "I-unpin",
-  "clearSearch": "I-clear ang paghahanap"
+  "clearSearch": "I-clear ang paghahanap",
+  "tripPurposeTitle": "Dahilan ng biyahe",
+  "tripPurposeHoliday": "Bakasyon",
+  "tripPurposeFamily": "Pagbisita sa pamilya o kaibigan",
+  "tripPurposeBusiness": "Negosyo",
+  "tripPurposeStudy": "Pag-aaral",
+  "tripPurposeWork": "Trabaho",
+  "visaPurposeStudyNeeded": "Karaniwang kailangan ng student visa",
+  "visaPurposeWorkNeeded": "Karaniwang kailangan ng work visa",
+  "visaPurposeStudyNote": "Hindi saklaw ng mga patakaran para sa bisita ang pag-aaral. Karaniwang kailangan mo ng student visa o permit. Tingnan ang mga opisyal na patakaran at mag-apply nang maaga.",
+  "visaPurposeWorkNote": "Hindi saklaw ng mga patakaran para sa bisita ang pagtatrabaho, may bayad man o wala. Karaniwang kailangan mo ng work visa o permit. Tingnan ang mga opisyal na patakaran at mag-apply nang maaga.",
+  "visaBusinessNote": "Madalas pinapayagan sa mga patakaran para sa bisita ang maiikling business trip gaya ng mga pulong, pero hindi ang trabahong may bayad. Tingnan ang mga opisyal na patakaran.",
+  "visaVisitorRules": "Mga patakaran para sa bisita: {status}",
+  "visaOfficialRules": "Mga opisyal na patakaran",
+  "visaLeavingRulesNote": "Hindi bahagi ng site na ito ang Vaultara. Kung iba ang sinasabi ng site na ito kaysa sa Vaultara, sundin ang site na ito."
 }

@@ -6352,4 +6352,48 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get clearSearch => 'Očisti pretragu';
+
+  @override
+  String get tripPurposeTitle => 'Razlog putovanja';
+
+  @override
+  String get tripPurposeHoliday => 'Odmor';
+
+  @override
+  String get tripPurposeFamily => 'Posjeta porodici ili prijateljima';
+
+  @override
+  String get tripPurposeBusiness => 'Poslovno';
+
+  @override
+  String get tripPurposeStudy => 'Studij';
+
+  @override
+  String get tripPurposeWork => 'Rad';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Obično je potrebna studentska viza';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Obično je potrebna radna viza';
+
+  @override
+  String get visaPurposeStudyNote => 'Pravila za posjetioce ne obuhvataju studij. Obično ti je potrebna studentska viza ili dozvola. Provjeri zvanična pravila i apliciraj na vrijeme.';
+
+  @override
+  String get visaPurposeWorkNote => 'Pravila za posjetioce ne obuhvataju rad, plaćeni ni neplaćeni. Obično ti je potrebna radna viza ili dozvola. Provjeri zvanična pravila i apliciraj na vrijeme.';
+
+  @override
+  String get visaBusinessNote => 'Kratke poslovne posjete, poput sastanaka, često su dozvoljene po pravilima za posjetioce, ali plaćeni rad nije. Provjeri zvanična pravila.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Pravila za posjetioce: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Zvanična pravila';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara nije dio ove stranice. Ako ova stranica kaže nešto drugačije od Vaultare, slijedi ovu stranicu.';
 }

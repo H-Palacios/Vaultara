@@ -1980,5 +1980,19 @@
   "hidePassword": "Dölj lösenord",
   "pinCategory": "Fäst högst upp",
   "unpinCategory": "Lossa",
-  "clearSearch": "Rensa sökning"
+  "clearSearch": "Rensa sökning",
+  "tripPurposeTitle": "Syfte med resan",
+  "tripPurposeHoliday": "Semester",
+  "tripPurposeFamily": "Besöka familj eller vänner",
+  "tripPurposeBusiness": "Affärsresa",
+  "tripPurposeStudy": "Studier",
+  "tripPurposeWork": "Arbete",
+  "visaPurposeStudyNeeded": "Studievisum krävs oftast",
+  "visaPurposeWorkNeeded": "Arbetsvisum krävs oftast",
+  "visaPurposeStudyNote": "Reglerna för besökare gäller inte studier. Du behöver oftast ett studievisum eller uppehållstillstånd för studier. Kolla de officiella reglerna och ansök i god tid.",
+  "visaPurposeWorkNote": "Reglerna för besökare gäller inte arbete, betalt eller obetalt. Du behöver oftast ett arbetsvisum eller arbetstillstånd. Kolla de officiella reglerna och ansök i god tid.",
+  "visaBusinessNote": "Korta affärsresor, till exempel möten, är ofta tillåtna enligt reglerna för besökare, men betalt arbete är det inte. Kolla de officiella reglerna.",
+  "visaVisitorRules": "Regler för besökare: {status}",
+  "visaOfficialRules": "Officiella regler",
+  "visaLeavingRulesNote": "Vaultara är inte en del av den här webbplatsen. Om webbplatsen säger något annat än Vaultara ska du följa webbplatsen."
 }

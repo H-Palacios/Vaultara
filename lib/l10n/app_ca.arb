@@ -2018,5 +2018,19 @@
   "hidePassword": "Amaga la contrasenya",
   "pinCategory": "Fixa a la part superior",
   "unpinCategory": "Deixa de fixar",
-  "clearSearch": "Esborra la cerca"
+  "clearSearch": "Esborra la cerca",
+  "tripPurposeTitle": "Motiu del viatge",
+  "tripPurposeHoliday": "Vacances",
+  "tripPurposeFamily": "Visitar família o amics",
+  "tripPurposeBusiness": "Negocis",
+  "tripPurposeStudy": "Estudis",
+  "tripPurposeWork": "Feina",
+  "visaPurposeStudyNeeded": "Normalment cal visat d'estudis",
+  "visaPurposeWorkNeeded": "Normalment cal visat de treball",
+  "visaPurposeStudyNote": "Les normes per a visitants no cobreixen els estudis. Normalment necessites un visat o permís d'estudis. Consulta les normes oficials i sol·licita'l amb temps.",
+  "visaPurposeWorkNote": "Les normes per a visitants no cobreixen la feina, remunerada o no. Normalment necessites un visat o permís de treball. Consulta les normes oficials i sol·licita'l amb temps.",
+  "visaBusinessNote": "Les visites curtes de negocis, com ara reunions, sovint es permeten amb les normes per a visitants, però la feina remunerada no. Consulta les normes oficials.",
+  "visaVisitorRules": "Normes per a visitants: {status}",
+  "visaOfficialRules": "Normes oficials",
+  "visaLeavingRulesNote": "Vaultara no forma part d'aquest lloc. Si aquest lloc diu una cosa diferent de Vaultara, segueix aquest lloc."
 }

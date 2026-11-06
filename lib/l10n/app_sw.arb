@@ -1987,5 +1987,19 @@
   "hidePassword": "Ficha nenosiri",
   "pinCategory": "Bandika juu",
   "unpinCategory": "Ondoa kubandika",
-  "clearSearch": "Futa utafutaji"
+  "clearSearch": "Futa utafutaji",
+  "tripPurposeTitle": "Sababu ya safari",
+  "tripPurposeHoliday": "Likizo",
+  "tripPurposeFamily": "Kutembelea familia au marafiki",
+  "tripPurposeBusiness": "Biashara",
+  "tripPurposeStudy": "Masomo",
+  "tripPurposeWork": "Kazi",
+  "visaPurposeStudyNeeded": "Kwa kawaida viza ya masomo inahitajika",
+  "visaPurposeWorkNeeded": "Kwa kawaida viza ya kazi inahitajika",
+  "visaPurposeStudyNote": "Masharti ya wageni hayahusu masomo. Kwa kawaida unahitaji viza au kibali cha masomo. Angalia masharti rasmi na utume ombi mapema.",
+  "visaPurposeWorkNote": "Masharti ya wageni hayahusu kazi, iwe ya kulipwa au la. Kwa kawaida unahitaji viza au kibali cha kazi. Angalia masharti rasmi na utume ombi mapema.",
+  "visaBusinessNote": "Ziara fupi za biashara kama mikutano mara nyingi huruhusiwa chini ya masharti ya wageni, lakini kazi ya kulipwa hairuhusiwi. Angalia masharti rasmi.",
+  "visaVisitorRules": "Masharti ya wageni: {status}",
+  "visaOfficialRules": "Masharti rasmi",
+  "visaLeavingRulesNote": "Vaultara si sehemu ya tovuti hii. Ikiwa tovuti hii inasema kitu tofauti na Vaultara, fuata tovuti hii."
 }

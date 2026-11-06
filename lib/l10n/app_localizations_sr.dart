@@ -6354,6 +6354,50 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get clearSearch => 'Обриши претрагу';
+
+  @override
+  String get tripPurposeTitle => 'Разлог путовања';
+
+  @override
+  String get tripPurposeHoliday => 'Одмор';
+
+  @override
+  String get tripPurposeFamily => 'Посета породици или пријатељима';
+
+  @override
+  String get tripPurposeBusiness => 'Пословно';
+
+  @override
+  String get tripPurposeStudy => 'Студије';
+
+  @override
+  String get tripPurposeWork => 'Рад';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Обично је потребна студентска виза';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Обично је потребна радна виза';
+
+  @override
+  String get visaPurposeStudyNote => 'Правила за посетиоце не обухватају студије. Обично ти је потребна студентска виза или дозвола. Провери званична правила и поднеси захтев на време.';
+
+  @override
+  String get visaPurposeWorkNote => 'Правила за посетиоце не обухватају рад, плаћен или неплаћен. Обично ти је потребна радна виза или дозвола. Провери званична правила и поднеси захтев на време.';
+
+  @override
+  String get visaBusinessNote => 'Кратке пословне посете, попут састанака, често су дозвољене по правилима за посетиоце, али плаћени рад није. Провери званична правила.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Правила за посетиоце: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Званична правила';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara није део овог сајта. Ако овај сајт каже нешто другачије од Vaultare, прати овај сајт.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -12705,6 +12749,50 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get clearSearch => 'Обриши претрагу';
+
+  @override
+  String get tripPurposeTitle => 'Разлог путовања';
+
+  @override
+  String get tripPurposeHoliday => 'Одмор';
+
+  @override
+  String get tripPurposeFamily => 'Посета породици или пријатељима';
+
+  @override
+  String get tripPurposeBusiness => 'Пословно';
+
+  @override
+  String get tripPurposeStudy => 'Студије';
+
+  @override
+  String get tripPurposeWork => 'Рад';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Обично је потребна студентска виза';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Обично је потребна радна виза';
+
+  @override
+  String get visaPurposeStudyNote => 'Правила за посетиоце не обухватају студије. Обично ти је потребна студентска виза или дозвола. Провери званична правила и поднеси захтев на време.';
+
+  @override
+  String get visaPurposeWorkNote => 'Правила за посетиоце не обухватају рад, плаћен или неплаћен. Обично ти је потребна радна виза или дозвола. Провери званична правила и поднеси захтев на време.';
+
+  @override
+  String get visaBusinessNote => 'Кратке пословне посете, попут састанака, често су дозвољене по правилима за посетиоце, али плаћени рад није. Провери званична правила.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Правила за посетиоце: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Званична правила';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara није део овог сајта. Ако овај сајт каже нешто другачије од Vaultare, прати овај сајт.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -19052,4 +19140,48 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get clearSearch => 'Obriši pretragu';
+
+  @override
+  String get tripPurposeTitle => 'Razlog putovanja';
+
+  @override
+  String get tripPurposeHoliday => 'Odmor';
+
+  @override
+  String get tripPurposeFamily => 'Poseta porodici ili prijateljima';
+
+  @override
+  String get tripPurposeBusiness => 'Poslovno';
+
+  @override
+  String get tripPurposeStudy => 'Studije';
+
+  @override
+  String get tripPurposeWork => 'Rad';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Obično je potrebna studentska viza';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Obično je potrebna radna viza';
+
+  @override
+  String get visaPurposeStudyNote => 'Pravila za posetioce ne obuhvataju studije. Obično ti je potrebna studentska viza ili dozvola. Proveri zvanična pravila i podnesi zahtev na vreme.';
+
+  @override
+  String get visaPurposeWorkNote => 'Pravila za posetioce ne obuhvataju rad, plaćen ili neplaćen. Obično ti je potrebna radna viza ili dozvola. Proveri zvanična pravila i podnesi zahtev na vreme.';
+
+  @override
+  String get visaBusinessNote => 'Kratke poslovne posete, poput sastanaka, često su dozvoljene po pravilima za posetioce, ali plaćeni rad nije. Proveri zvanična pravila.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Pravila za posetioce: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Zvanična pravila';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara nije deo ovog sajta. Ako ovaj sajt kaže nešto drugačije od Vaultare, prati ovaj sajt.';
 }

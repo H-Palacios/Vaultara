@@ -6286,4 +6286,48 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get clearSearch => 'ძიების გასუფთავება';
+
+  @override
+  String get tripPurposeTitle => 'მოგზაურობის მიზეზი';
+
+  @override
+  String get tripPurposeHoliday => 'დასვენება';
+
+  @override
+  String get tripPurposeFamily => 'ოჯახის ან მეგობრების მონახულება';
+
+  @override
+  String get tripPurposeBusiness => 'ბიზნესი';
+
+  @override
+  String get tripPurposeStudy => 'სწავლა';
+
+  @override
+  String get tripPurposeWork => 'სამუშაო';
+
+  @override
+  String get visaPurposeStudyNeeded => 'ჩვეულებრივ საჭიროა სასწავლო ვიზა';
+
+  @override
+  String get visaPurposeWorkNeeded => 'ჩვეულებრივ საჭიროა სამუშაო ვიზა';
+
+  @override
+  String get visaPurposeStudyNote => 'სტუმრების წესები სწავლას არ მოიცავს. ჩვეულებრივ საჭიროა სასწავლო ვიზა ან ნებართვა. შეამოწმეთ ოფიციალური წესები და განაცხადი ადრე შეიტანეთ.';
+
+  @override
+  String get visaPurposeWorkNote => 'სტუმრების წესები სამუშაოს არ მოიცავს, ანაზღაურებადს თუ უანაზღაუროს. ჩვეულებრივ საჭიროა სამუშაო ვიზა ან ნებართვა. შეამოწმეთ ოფიციალური წესები და განაცხადი ადრე შეიტანეთ.';
+
+  @override
+  String get visaBusinessNote => 'მოკლე საქმიანი ვიზიტები, მაგალითად შეხვედრები, სტუმრების წესებით ხშირად დაშვებულია, ანაზღაურებადი სამუშაო კი არა. შეამოწმეთ ოფიციალური წესები.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'სტუმრების წესები: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ოფიციალური წესები';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ამ საიტის ნაწილი არ არის. თუ ეს საიტი Vaultara-სგან განსხვავებულს ამბობს, მიჰყევით ამ საიტს.';
 }
