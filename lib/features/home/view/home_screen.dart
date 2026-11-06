@@ -169,13 +169,9 @@ class HomeScreenState extends State<HomeScreen>
               IconButton(
                 tooltip: loc.profileHeaderTitle,
                 onPressed: _openProfile,
-                icon: MyAvatar(
-                  size: 30,
-                  fallback: Icon(
-                    Icons.person_rounded,
-                    color: scheme.primary,
-                    size: 28,
-                  ),
+                icon: const MyAvatar(
+                  size: 32,
+                  fallback: InitialsAvatar(size: 32),
                 ),
               ),
             ],
