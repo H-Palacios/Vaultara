@@ -16,6 +16,12 @@ class TrackedItem {
   final DateTime? lastRenewedAt;
   final List<RenewalEntry> renewals;
   final String? holderId;
+
+  /// The person's name and colour, saved on shared records so every member
+  /// sees whose it is: [holderId] points into the People list of the member
+  /// who chose it, which other members do not have.
+  final String? holderName;
+  final int? holderColour;
   final double? renewalCost;
   final String? costCurrency;
   final List<RecordAttachment> attachments;
@@ -58,6 +64,8 @@ class TrackedItem {
     this.lastRenewedAt,
     this.renewals = const <RenewalEntry>[],
     this.holderId,
+    this.holderName,
+    this.holderColour,
     this.renewalCost,
     this.costCurrency,
     this.attachments = const <RecordAttachment>[],
@@ -92,6 +100,8 @@ class TrackedItem {
     DateTime? lastRenewedAt,
     List<RenewalEntry>? renewals,
     String? holderId,
+    String? holderName,
+    int? holderColour,
     bool clearHolder = false,
     double? renewalCost,
     String? costCurrency,
@@ -138,6 +148,8 @@ class TrackedItem {
       lastRenewedAt: lastRenewedAt ?? this.lastRenewedAt,
       renewals: renewals ?? this.renewals,
       holderId: clearHolder ? null : (holderId ?? this.holderId),
+      holderName: clearHolder ? null : (holderName ?? this.holderName),
+      holderColour: clearHolder ? null : (holderColour ?? this.holderColour),
       renewalCost: clearCost ? null : (renewalCost ?? this.renewalCost),
       costCurrency: clearCost ? null : (costCurrency ?? this.costCurrency),
       attachments: attachments ?? this.attachments,
@@ -172,6 +184,8 @@ class TrackedItem {
           : null,
       'renewals': renewals.map((e) => e.toMap()).toList(),
       'holderId': holderId,
+      if (holderName != null) 'holderName': holderName,
+      if (holderColour != null) 'holderColour': holderColour,
       'renewalCost': renewalCost,
       'costCurrency': costCurrency,
       'attachments': attachments.map((e) => e.toMap()).toList(),
@@ -267,6 +281,12 @@ class TrackedItem {
       lastRenewedAt: renewed,
       renewals: RenewalEntry.listFrom(map['renewals']),
       holderId: map['holderId'] as String?,
+      holderName: map['holderName'] is String
+          ? (map['holderName'] as String).trim()
+          : null,
+      holderColour: map['holderColour'] is num
+          ? (map['holderColour'] as num).toInt()
+          : null,
       renewalCost: (map['renewalCost'] as num?)?.toDouble(),
       costCurrency: map['costCurrency'] as String?,
       attachments: RecordAttachment.listFrom(map['attachments']),

@@ -334,6 +334,9 @@ service cloud.firestore {
         && shortText('subcategoryName', 120)
         && shortText('costCurrency', 8)
         && shortText('holderId', 64)
+        && shortText('holderName', 60)
+        && (!('holderColour' in d) || d.holderColour == null
+            || (d.holderColour is int && d.holderColour >= 0 && d.holderColour <= 31))
         && householdAttachmentsOk(hid, recordId)
         && optionalList('renewals', 50)
         && (!('repeatMonths' in d) || d.repeatMonths == null
@@ -411,9 +414,9 @@ service cloud.firestore {
       // done and hints hold tutorial ids, for preferences/tutorials. pins
       // holds pinned category keys, for preferences/pinnedCategories.
       // snoozed holds insights put off with Later, for preferences/insights.
-      // afterExpiry, weekly, household and updates are on/off choices, for
-      // preferences/notifications; the push functions read household and
-      // updates before sending. reminderSound and urgentSound are the sound
+      // afterExpiry, weekly, household, updates and sharedOnlyMine are on/off
+      // choices, for preferences/notifications; the push functions read
+      // household, updates and sharedOnlyMine before sending. reminderSound and urgentSound are the sound
       // keys picked for reminders.
       return smallDoc(20)
         && optionalList('labels', 100)
@@ -425,6 +428,7 @@ service cloud.firestore {
         && optionalBool('weekly')
         && optionalBool('household')
         && optionalBool('updates')
+        && optionalBool('sharedOnlyMine')
         && optionalSoundKey('reminderSound')
         && optionalSoundKey('urgentSound');
     }
