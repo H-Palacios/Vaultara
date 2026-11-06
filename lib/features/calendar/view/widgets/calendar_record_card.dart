@@ -161,7 +161,7 @@ class _Chip extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 color: foreground,
-                fontSize: 11,
+                fontSize: 12,
                 fontWeight: FontWeight.w700,
               ),
             ),

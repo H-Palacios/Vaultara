@@ -71,9 +71,9 @@ class MonthCalendarGrid extends StatelessWidget {
           Row(
             children: [
               IconButton(
+                tooltip: MaterialLocalizations.of(context).previousMonthTooltip,
                 onPressed: onPreviousMonth,
                 icon: const Icon(Icons.chevron_left_rounded, size: 28),
-                visualDensity: VisualDensity.compact,
                 splashRadius: 22,
               ),
               Expanded(
@@ -88,9 +88,9 @@ class MonthCalendarGrid extends StatelessWidget {
                 ),
               ),
               IconButton(
+                tooltip: MaterialLocalizations.of(context).nextMonthTooltip,
                 onPressed: onNextMonth,
                 icon: const Icon(Icons.chevron_right_rounded, size: 28),
-                visualDensity: VisualDensity.compact,
                 splashRadius: 22,
               ),
             ],
@@ -139,13 +139,22 @@ class MonthCalendarGrid extends StatelessWidget {
               final dateKey =
                   DateTime(dayDate.year, dayDate.month, dayDate.day);
 
-              return _DayCell(
-                day: dayDate,
-                isInCurrentMonth: dayDate.month == month.month,
-                isToday: dateKey == today,
-                isSelected: selectedDay != null && dateKey == selectedDay,
-                count: countsByDay[dateKey] ?? 0,
+              final isSelectedDay =
+                  selectedDay != null && dateKey == selectedDay;
+              return Semantics(
+                button: true,
+                selected: isSelectedDay,
+                label: MaterialLocalizations.of(context).formatFullDate(dayDate),
+                excludeSemantics: true,
                 onTap: () => onDayTap(dayDate),
+                child: _DayCell(
+                  day: dayDate,
+                  isInCurrentMonth: dayDate.month == month.month,
+                  isToday: dateKey == today,
+                  isSelected: isSelectedDay,
+                  count: countsByDay[dateKey] ?? 0,
+                  onTap: () => onDayTap(dayDate),
+                ),
               );
             },
           ),
