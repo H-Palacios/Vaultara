@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-12",
+  "version": "2026-11-06c",
   "notes": {
     "CN": [
       "dual"
@@ -18,28 +18,74 @@
     ]
   },
   "links": {
+    "AD": {
+      "rules": {
+        "url": "https://www.govern.ad/ca/tematiques/immigracio",
+        "name": "Government of Andorra: Immigration"
+      }
+    },
     "AE": {
       "evisa": {
         "url": "https://smartservices.icp.gov.ae/",
         "name": "UAE ICP Smart Services"
+      },
+      "rules": {
+        "url": "https://u.ae/en/information-and-services/visa-and-emirates-id",
+        "name": "UAE Government portal: Visa and Emirates ID"
+      }
+    },
+    "AF": {
+      "rules": {
+        "url": "https://mfa.gov.af/en/visit-visa",
+        "name": "Afghanistan Ministry of Foreign Affairs: Visit visa"
       }
     },
     "AG": {
       "evisa": {
         "url": "https://evisa.immigration.gov.ag/agEvisa-app/",
         "name": "Antigua and Barbuda eVisa"
+      },
+      "rules": {
+        "url": "https://immigration.gov.ag/",
+        "name": "Antigua and Barbuda Immigration Department"
       }
     },
     "AL": {
       "evisa": {
         "url": "https://e-visa.al/",
         "name": "Albania e-Visa"
+      },
+      "rules": {
+        "url": "https://punetejashtme.gov.al/",
+        "name": "Albanian Ministry for Europe and Foreign Affairs"
       }
     },
     "AM": {
       "evisa": {
         "url": "https://evisa.mfa.am/",
         "name": "Armenia e-Visa (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://www.mfa.am/en/visa/",
+        "name": "Armenian Ministry of Foreign Affairs: Visa"
+      }
+    },
+    "AO": {
+      "rules": {
+        "url": "https://www.sme.gov.ao/ao/",
+        "name": "Angola Migration and Foreigners Service (SME)"
+      }
+    },
+    "AR": {
+      "rules": {
+        "url": "https://www.argentina.gob.ar/migraciones/residencias",
+        "name": "Argentina National Directorate of Migration"
+      }
+    },
+    "AT": {
+      "rules": {
+        "url": "https://www.migration.gv.at/en/",
+        "name": "Austrian Government: Migration"
       }
     },
     "AU": {
@@ -50,126 +96,588 @@
       "eta": {
         "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
         "name": "Electronic Travel Authority (subclass 601), apply via the AustralianETA app"
+      },
+      "rules": {
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+        "name": "Australian Home Affairs: Visa Finder"
+      }
+    },
+    "AW": {
+      "rules": {
+        "url": "https://www.netherlandsworldwide.nl/caribbean-visa/visa-needed-caribbean",
+        "name": "Netherlands Worldwide: Visa for the Caribbean parts of the Kingdom"
       }
     },
     "AZ": {
       "evisa": {
         "url": "https://evisa.gov.az/en/",
         "name": "ASAN Visa (Azerbaijan e-Visa)"
+      },
+      "rules": {
+        "url": "https://www.migration.gov.az/en",
+        "name": "Azerbaijan State Migration Service"
+      }
+    },
+    "BA": {
+      "rules": {
+        "url": "https://sps.gov.ba/en/information-for-foreigners/stay-of-aliens-in-bih/",
+        "name": "Bosnia and Herzegovina Service for Foreigners' Affairs"
+      }
+    },
+    "BB": {
+      "rules": {
+        "url": "https://www.immigration.gov.bb/",
+        "name": "Barbados Immigration Department"
+      }
+    },
+    "BD": {
+      "rules": {
+        "url": "https://www.visa.gov.bd/",
+        "name": "Bangladesh Government: Visa"
+      }
+    },
+    "BE": {
+      "rules": {
+        "url": "https://dofi.ibz.be/en",
+        "name": "Belgian Immigration Office"
+      }
+    },
+    "BF": {
+      "rules": {
+        "url": "https://applicant.visaburkina.bf/",
+        "name": "Burkina Faso Government: e-Visa"
+      }
+    },
+    "BG": {
+      "rules": {
+        "url": "https://www.mvr.bg/migration/en",
+        "name": "Bulgarian Ministry of Interior: Migration Directorate"
       }
     },
     "BH": {
       "evisa": {
         "url": "https://www.evisa.gov.bh/",
         "name": "Bahrain eVisa"
+      },
+      "rules": {
+        "url": "https://www.npra.gov.bh/en",
+        "name": "Bahrain Nationality, Passports and Residence Affairs"
+      }
+    },
+    "BI": {
+      "rules": {
+        "url": "https://migration.gov.bi/",
+        "name": "Burundi Migration Office"
+      }
+    },
+    "BJ": {
+      "rules": {
+        "url": "https://evisa.gouv.bj/",
+        "name": "Government of Benin: e-Visa"
+      }
+    },
+    "BM": {
+      "rules": {
+        "url": "https://www.gov.bm/department/immigration",
+        "name": "Government of Bermuda: Immigration"
+      }
+    },
+    "BN": {
+      "rules": {
+        "url": "https://www.immigration.gov.bn/en/",
+        "name": "Brunei Immigration and National Registration Department"
+      }
+    },
+    "BO": {
+      "rules": {
+        "url": "https://migracion.gob.bo/",
+        "name": "Bolivia General Directorate of Migration"
+      }
+    },
+    "BR": {
+      "rules": {
+        "url": "https://www.gov.br/mre/en/subjects/visas",
+        "name": "Brazil Ministry of Foreign Affairs: Visas"
       }
     },
     "BS": {
       "evisa": {
         "url": "https://mofa.gov.bs/evisa-online-services",
         "name": "Bahamas eVISA Online Services (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://www.immigration.gov.bs/",
+        "name": "Bahamas Department of Immigration"
       }
     },
     "BT": {
       "evisa": {
         "url": "https://visit.doi.gov.bt/",
         "name": "Bhutan e-Visa (Department of Immigration)"
+      },
+      "rules": {
+        "url": "https://immi.gov.bt/home/",
+        "name": "Bhutan Department of Immigration"
       }
     },
     "BW": {
       "evisa": {
         "url": "https://evisa.gov.bw/",
         "name": "Botswana e-Visa"
+      },
+      "rules": {
+        "url": "https://www.gov.bw/visa-applications/visa-application-visitors-visa",
+        "name": "Government of Botswana: Visitor's visa"
+      }
+    },
+    "BY": {
+      "rules": {
+        "url": "https://mfa.gov.by/en/visa/",
+        "name": "Belarus Ministry of Foreign Affairs: Visa"
+      }
+    },
+    "BZ": {
+      "rules": {
+        "url": "https://immigration.gov.bz/",
+        "name": "Belize Immigration and Nationality Department"
       }
     },
     "CA": {
       "eta": {
         "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
         "name": "Electronic Travel Authorization (eTA)"
+      },
+      "rules": {
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+        "name": "Immigration, Refugees and Citizenship Canada"
+      }
+    },
+    "CD": {
+      "rules": {
+        "url": "https://evisa.gouv.cd/",
+        "name": "DR Congo eVisa (Direction Generale de Migration)"
+      }
+    },
+    "CH": {
+      "rules": {
+        "url": "https://www.sem.admin.ch/sem/en/home.html",
+        "name": "Swiss State Secretariat for Migration"
+      }
+    },
+    "CI": {
+      "rules": {
+        "url": "https://www.servicepublic.gouv.ci/accueil/demarcheparticulier/1/44/1",
+        "name": "Côte d'Ivoire public service portal: Entry"
+      }
+    },
+    "CL": {
+      "rules": {
+        "url": "https://serviciomigraciones.cl/en/home/",
+        "name": "Chile National Migration Service"
+      }
+    },
+    "CM": {
+      "rules": {
+        "url": "https://www.evisacam.cm/",
+        "name": "Cameroon Ministry of External Relations: e-Visa"
+      }
+    },
+    "CN": {
+      "rules": {
+        "url": "https://en.nia.gov.cn/",
+        "name": "China National Immigration Administration"
       }
     },
     "CO": {
       "evisa": {
         "url": "https://tramitesmre.cancilleria.gov.co/tramites/enlinea/solicitarVisa.xhtml",
         "name": "Colombia Online Visa Application (Cancilleria)"
+      },
+      "rules": {
+        "url": "https://www.cancilleria.gov.co/tramites_servicios/visa",
+        "name": "Colombian Ministry of Foreign Affairs: Visa"
+      }
+    },
+    "CR": {
+      "rules": {
+        "url": "https://migracion.go.cr/",
+        "name": "Costa Rica General Directorate of Migration"
+      }
+    },
+    "CU": {
+      "rules": {
+        "url": "https://evisacuba.cu/en/inicio",
+        "name": "Cuban Ministry of Foreign Affairs: e-Visa"
+      }
+    },
+    "CV": {
+      "rules": {
+        "url": "https://www.gov.cv/en/pedir-visto",
+        "name": "Government of Cabo Verde: Visa"
+      }
+    },
+    "CW": {
+      "rules": {
+        "url": "https://www.netherlandsworldwide.nl/caribbean-visa/visa-needed-caribbean",
+        "name": "Netherlands Worldwide: Visa for the Caribbean parts of the Kingdom"
+      }
+    },
+    "CY": {
+      "rules": {
+        "url": "https://www.gov.cy/mip-md/en/",
+        "name": "Cyprus Civil Registry and Migration Department"
+      }
+    },
+    "CZ": {
+      "rules": {
+        "url": "https://ipc.gov.cz/en/",
+        "name": "Czech Ministry of the Interior: Foreigners"
+      }
+    },
+    "DE": {
+      "rules": {
+        "url": "https://www.auswaertiges-amt.de/en/einreiseundaufenthalt/visabestimmungen-node",
+        "name": "German Federal Foreign Office: Visa regulations"
+      }
+    },
+    "DJ": {
+      "rules": {
+        "url": "https://www.evisa.gouv.dj/",
+        "name": "Djibouti Government: e-Visa"
+      }
+    },
+    "DK": {
+      "rules": {
+        "url": "https://www.nyidanmark.dk/en-GB",
+        "name": "New to Denmark (Danish Immigration Service)"
+      }
+    },
+    "DM": {
+      "rules": {
+        "url": "https://dominica.gov.dm/services/passports-and-travel-documents-non-nationals/do-i-need-a-visa-to-enter-into-dominica",
+        "name": "Government of Dominica: Do I need a visa?"
+      }
+    },
+    "DO": {
+      "rules": {
+        "url": "https://migracion.gob.do/",
+        "name": "Dominican Republic General Directorate of Migration"
+      }
+    },
+    "DZ": {
+      "rules": {
+        "url": "https://www.mfa.gov.dz/",
+        "name": "Algerian Ministry of Foreign Affairs"
       }
     },
     "EC": {
       "evisa": {
         "url": "https://serviciosdigitales.cancilleria.gob.ec/",
         "name": "Ecuador e-VISAS (Cancilleria Servicios Digitales)"
+      },
+      "rules": {
+        "url": "https://www.cancilleria.gob.ec/",
+        "name": "Ecuador Ministry of Foreign Affairs"
+      }
+    },
+    "EE": {
+      "rules": {
+        "url": "https://www.politsei.ee/en",
+        "name": "Estonian Police and Border Guard Board"
       }
     },
     "EG": {
       "evisa": {
         "url": "https://www.visa2egypt.gov.eg/",
         "name": "Egypt e-Visa Portal"
+      },
+      "rules": {
+        "url": "https://www.visa2egypt.gov.eg/",
+        "name": "Egypt Government: Visa"
+      }
+    },
+    "ER": {
+      "rules": {
+        "url": "https://us.embassyeritrea.org/?p=3560",
+        "name": "Embassy of Eritrea (USA): Visa"
+      }
+    },
+    "ES": {
+      "rules": {
+        "url": "https://www.inclusion.gob.es/web/migraciones/vivir-en-espana",
+        "name": "Spanish Government: Living in Spain (migration)"
       }
     },
     "ET": {
       "evisa": {
         "url": "https://www.evisa.gov.et/",
         "name": "Ethiopia e-Visa"
+      },
+      "rules": {
+        "url": "https://www.evisa.gov.et/",
+        "name": "Ethiopia Immigration and Citizenship Service"
+      }
+    },
+    "FI": {
+      "rules": {
+        "url": "https://migri.fi/en",
+        "name": "Finnish Immigration Service"
+      }
+    },
+    "FJ": {
+      "rules": {
+        "url": "https://www.immigration.gov.fj/",
+        "name": "Fiji Immigration Department"
+      }
+    },
+    "FO": {
+      "rules": {
+        "url": "https://www.utlendingastovan.fo/en/",
+        "name": "Faroe Islands Immigration Office"
+      }
+    },
+    "FR": {
+      "rules": {
+        "url": "https://france-visas.gouv.fr/en/visa-wizard",
+        "name": "France-Visas: Visa wizard"
+      }
+    },
+    "GA": {
+      "rules": {
+        "url": "https://evisa.dgdi.ga/",
+        "name": "Gabon General Directorate of Documentation and Immigration"
       }
     },
     "GB": {
       "eta": {
         "url": "https://www.gov.uk/eta/apply",
         "name": "UK Electronic Travel Authorisation (ETA)"
+      },
+      "rules": {
+        "url": "https://www.gov.uk/check-uk-visa",
+        "name": "GOV.UK: Check if you need a UK visa"
+      }
+    },
+    "GD": {
+      "rules": {
+        "url": "https://gndembassyprc.mofa.gov.gd/who-needs-a-visa/",
+        "name": "Grenada Ministry of Foreign Affairs: Who needs a visa"
       }
     },
     "GE": {
       "evisa": {
         "url": "https://www.evisa.gov.ge/GeoVisa/",
         "name": "Georgia e-Visa portal (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://www.geoconsul.gov.ge/",
+        "name": "Georgian Ministry of Foreign Affairs: Consular"
+      }
+    },
+    "GH": {
+      "rules": {
+        "url": "https://www.gis.gov.gh/",
+        "name": "Ghana Immigration Service"
+      }
+    },
+    "GI": {
+      "rules": {
+        "url": "https://www.gibraltar.gov.gi/department-of-immigration-and-home-affairs/visas-and-immigration",
+        "name": "HM Government of Gibraltar: Visas and immigration"
+      }
+    },
+    "GL": {
+      "rules": {
+        "url": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/The-Faroe-Islands-and-Greenland",
+        "name": "New to Denmark: Greenland"
+      }
+    },
+    "GM": {
+      "rules": {
+        "url": "https://gid.gov.gm/",
+        "name": "Gambia Immigration Department"
+      }
+    },
+    "GN": {
+      "rules": {
+        "url": "https://www.paf.gov.gn/visa",
+        "name": "Guinea Border Police (PAF): eVisa"
+      }
+    },
+    "GR": {
+      "rules": {
+        "url": "https://migration.gov.gr/en/",
+        "name": "Greek Ministry of Migration and Asylum"
+      }
+    },
+    "GT": {
+      "rules": {
+        "url": "https://igm.gob.gt/",
+        "name": "Guatemala Institute of Migration"
+      }
+    },
+    "GU": {
+      "rules": {
+        "url": "https://travel.state.gov/content/travel/en/us-visas.html",
+        "name": "U.S. Department of State: U.S. Visas"
       }
     },
     "GY": {
       "evisa": {
         "url": "https://eservices.iss.gov.gy/",
         "name": "Guyana Visa Online Application Portal"
+      },
+      "rules": {
+        "url": "https://eservices.iss.gov.gy/",
+        "name": "Guyana Immigration Support Services"
       }
     },
     "HK": {
       "evisa": {
         "url": "https://www.immd.gov.hk/eng/evisaonline.html",
         "name": "Hong Kong electronic visa application (Immigration Department)"
+      },
+      "rules": {
+        "url": "https://www.immd.gov.hk/eng/",
+        "name": "Hong Kong Immigration Department"
+      }
+    },
+    "HN": {
+      "rules": {
+        "url": "https://inm.gob.hn/extranjeria.html",
+        "name": "Honduras National Institute of Migration"
+      }
+    },
+    "HR": {
+      "rules": {
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-third-country-nationals/281661",
+        "name": "Croatian Ministry of the Interior: Foreigners"
+      }
+    },
+    "HU": {
+      "rules": {
+        "url": "https://oif.gov.hu/",
+        "name": "Hungarian National Directorate-General for Aliens Policing"
       }
     },
     "ID": {
       "evisa": {
         "url": "https://evisa.imigrasi.go.id/",
         "name": "Indonesia e-Visa and e-VOA (Directorate General of Immigration)"
+      },
+      "rules": {
+        "url": "https://www.imigrasi.go.id/",
+        "name": "Indonesia Directorate General of Immigration"
+      }
+    },
+    "IE": {
+      "rules": {
+        "url": "https://www.irishimmigration.ie/",
+        "name": "Irish Immigration Service Delivery"
       }
     },
     "IL": {
       "eta": {
         "url": "https://israel-entry.piba.gov.il/",
         "name": "ETA-IL (Population and Immigration Authority)"
+      },
+      "rules": {
+        "url": "https://www.gov.il/en/departments/population_and_immigration_authority/govil-landing-page",
+        "name": "Israel Population and Immigration Authority"
       }
     },
     "IN": {
       "evisa": {
         "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
         "name": "Indian e-Visa"
+      },
+      "rules": {
+        "url": "https://indianvisaonline.gov.in/visa/visa-category.html",
+        "name": "Government of India: Visa categories"
+      }
+    },
+    "IQ": {
+      "rules": {
+        "url": "https://eservice.evisa.iq/",
+        "name": "Iraq eVisa (Ministry of Interior)"
+      }
+    },
+    "IR": {
+      "rules": {
+        "url": "https://evisa.mfa.ir/en/",
+        "name": "Iran Ministry of Foreign Affairs: e-Visa"
+      }
+    },
+    "IS": {
+      "rules": {
+        "url": "https://utl.is/",
+        "name": "Icelandic Directorate of Immigration"
+      }
+    },
+    "IT": {
+      "rules": {
+        "url": "https://vistoperitalia.esteri.it/home/en",
+        "name": "Italian Foreign Ministry: Visa for Italy"
+      }
+    },
+    "JM": {
+      "rules": {
+        "url": "https://www.pica.gov.jm/",
+        "name": "Jamaica Passport, Immigration and Citizenship Agency"
+      }
+    },
+    "JO": {
+      "rules": {
+        "url": "https://moi.gov.jo/Default/En",
+        "name": "Jordan Ministry of Interior"
       }
     },
     "JP": {
       "evisa": {
         "url": "https://www.evisa.mofa.go.jp/index",
         "name": "JAPAN eVISA"
+      },
+      "rules": {
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/index.html",
+        "name": "Ministry of Foreign Affairs of Japan: Visa"
       }
     },
     "KE": {
       "eta": {
         "url": "https://www.etakenya.go.ke/",
         "name": "Kenya Electronic Travel Authorisation (eTA)"
+      },
+      "rules": {
+        "url": "https://immigration.go.ke/",
+        "name": "Kenya Department of Immigration Services"
       }
     },
     "KG": {
       "evisa": {
         "url": "https://www.evisa.e-gov.kg/",
         "name": "Kyrgyzstan e-Visa"
+      },
+      "rules": {
+        "url": "https://www.evisa.e-gov.kg/",
+        "name": "Kyrgyz Republic: e-Visa"
+      }
+    },
+    "KH": {
+      "rules": {
+        "url": "https://www.immigration.gov.kh/",
+        "name": "Cambodia General Department of Immigration"
+      }
+    },
+    "KI": {
+      "rules": {
+        "url": "https://www.mfa.gov.ki/visa/",
+        "name": "Kiribati Ministry of Foreign Affairs and Immigration: Visa"
+      }
+    },
+    "KN": {
+      "rules": {
+        "url": "https://www.knatravelform.kn/",
+        "name": "St Kitts and Nevis eTA and entry form (government portal)"
       }
     },
     "KR": {
@@ -180,66 +688,242 @@
       "evisa": {
         "url": "https://www.visa.go.kr/",
         "name": "Korea Visa Portal e-Visa"
+      },
+      "rules": {
+        "url": "https://www.visa.go.kr/",
+        "name": "Korea Visa Portal"
       }
     },
     "KW": {
       "evisa": {
         "url": "https://kuwaitvisa.moi.gov.kw/",
         "name": "Kuwait Visa (Ministry of Interior)"
+      },
+      "rules": {
+        "url": "https://www.moi.gov.kw/main/eservices/residence?culture=en",
+        "name": "Kuwait Ministry of Interior: Residence"
+      }
+    },
+    "KY": {
+      "rules": {
+        "url": "https://www.worc.ky/",
+        "name": "Cayman Islands WORC (Workforce and Residency)"
       }
     },
     "KZ": {
       "evisa": {
         "url": "https://www.vmp.gov.kz/",
         "name": "Kazakhstan e-Visa (Visa and Migration Portal)"
+      },
+      "rules": {
+        "url": "https://egov.kz/cms/en/categories/for_foreigners",
+        "name": "Kazakhstan eGov: For foreigners"
+      }
+    },
+    "LA": {
+      "rules": {
+        "url": "https://laoevisa.gov.la/",
+        "name": "Lao PDR Government: e-Visa"
+      }
+    },
+    "LB": {
+      "rules": {
+        "url": "https://www.general-security.gov.lb/en",
+        "name": "Lebanon General Directorate of General Security"
+      }
+    },
+    "LC": {
+      "rules": {
+        "url": "https://externalaffairs.govt.lc/services/apply-for-saint-lucia-non-immigrant-visa",
+        "name": "Saint Lucia Government: Non-immigrant visa"
+      }
+    },
+    "LI": {
+      "rules": {
+        "url": "https://www.llv.li/en/national-administration/migration-and-passport-office",
+        "name": "Liechtenstein Migration and Passport Office"
       }
     },
     "LK": {
       "eta": {
         "url": "https://www.eta.gov.lk/slvisa/",
         "name": "Sri Lanka ETA (Department of Immigration and Emigration)"
+      },
+      "rules": {
+        "url": "https://www.immigration.gov.lk/",
+        "name": "Sri Lanka Department of Immigration and Emigration"
       }
     },
     "LR": {
       "evisa": {
         "url": "https://visaonarrival.lis.gov.lr/",
         "name": "Liberia e-Visa on Arrival (Liberia Immigration Service)"
+      },
+      "rules": {
+        "url": "https://www.lis.gov.lr/",
+        "name": "Liberia Immigration Service"
+      }
+    },
+    "LS": {
+      "rules": {
+        "url": "https://www.homeaffairs.gov.ls/do-i-need-a-visa/",
+        "name": "Lesotho Ministry of Home Affairs: Do I need a visa?"
+      }
+    },
+    "LT": {
+      "rules": {
+        "url": "https://www.migracija.lt/en/",
+        "name": "Lithuanian Migration Department"
+      }
+    },
+    "LU": {
+      "rules": {
+        "url": "https://guichet.public.lu/en/citoyens/immigration.html",
+        "name": "Luxembourg Guichet.lu: Immigration"
+      }
+    },
+    "LV": {
+      "rules": {
+        "url": "https://www.pmlp.gov.lv/en",
+        "name": "Latvian Office of Citizenship and Migration Affairs"
+      }
+    },
+    "LY": {
+      "rules": {
+        "url": "https://evisa.gov.ly/",
+        "name": "Libya eVisa"
       }
     },
     "MA": {
       "evisa": {
         "url": "https://www.acces-maroc.ma/",
         "name": "Morocco eVisa (Acces Maroc)"
+      },
+      "rules": {
+        "url": "https://www.acces-maroc.ma/",
+        "name": "Morocco Government: e-Visa"
+      }
+    },
+    "MC": {
+      "rules": {
+        "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency",
+        "name": "Monaco Government: Residency"
       }
     },
     "MD": {
       "evisa": {
         "url": "https://www.evisa.gov.md/",
         "name": "Moldova eVisa (Ministry of Foreign Affairs and European Integration)"
+      },
+      "rules": {
+        "url": "https://igm.gov.md/en",
+        "name": "Moldova General Inspectorate for Migration"
+      }
+    },
+    "ME": {
+      "rules": {
+        "url": "https://www.gov.me/en/article/visas-and-visa-regime",
+        "name": "Government of Montenegro: Visas and visa regime"
+      }
+    },
+    "MG": {
+      "rules": {
+        "url": "https://www.evisamada.gov.mg/",
+        "name": "Madagascar Government: e-Visa"
+      }
+    },
+    "MH": {
+      "rules": {
+        "url": "https://www.rmiembassyus.org/consular",
+        "name": "Embassy of the Marshall Islands (USA): Consular and visas"
+      }
+    },
+    "MK": {
+      "rules": {
+        "url": "https://mfa.gov.mk/en-GB/konzularni-uslugi/vidovi-vizi-za-vlez-vo-rsm",
+        "name": "North Macedonia Ministry of Foreign Affairs: Visas"
+      }
+    },
+    "ML": {
+      "rules": {
+        "url": "https://diplomatiemdc.gouv.ml/",
+        "name": "Mali Ministry of Foreign Affairs: eVisa"
       }
     },
     "MM": {
       "evisa": {
         "url": "https://evisa.moip.gov.mm/",
         "name": "Myanmar eVisa (Ministry of Immigration and Population)"
+      },
+      "rules": {
+        "url": "https://evisa.moip.gov.mm/",
+        "name": "Myanmar Ministry of Immigration: e-Visa"
       }
     },
     "MN": {
       "evisa": {
         "url": "https://evisa.mn/",
         "name": "Mongolia e-Visa (Immigration Agency of Mongolia)"
+      },
+      "rules": {
+        "url": "https://immigration.gov.mn/en/",
+        "name": "Mongolia Immigration Agency"
+      }
+    },
+    "MO": {
+      "rules": {
+        "url": "https://www.fsm.gov.mo/psp/",
+        "name": "Macao Public Security Police: Immigration"
+      }
+    },
+    "MR": {
+      "rules": {
+        "url": "https://anrpts.gov.mr/",
+        "name": "Mauritania ANRPTS: eVisa"
+      }
+    },
+    "MT": {
+      "rules": {
+        "url": "https://identita.gov.mt/working-residing-in-malta/",
+        "name": "Identità Malta: Working and residing in Malta"
+      }
+    },
+    "MU": {
+      "rules": {
+        "url": "https://passport.govmu.org/",
+        "name": "Mauritius Passport and Immigration Office"
+      }
+    },
+    "MV": {
+      "rules": {
+        "url": "https://www.immigration.gov.mv/",
+        "name": "Maldives Immigration"
       }
     },
     "MW": {
       "evisa": {
         "url": "https://evisa.gov.mw/",
         "name": "Malawi e-Visa (Department of Immigration and Citizenship Services)"
+      },
+      "rules": {
+        "url": "https://www.immigration.gov.mw/",
+        "name": "Malawi Department of Immigration"
+      }
+    },
+    "MX": {
+      "rules": {
+        "url": "https://www.gob.mx/inm",
+        "name": "Mexico National Institute of Migration"
       }
     },
     "MY": {
       "evisa": {
         "url": "https://malaysiavisa.imi.gov.my/evisa/evisa.jsp",
         "name": "Malaysia eVISA (Immigration Department)"
+      },
+      "rules": {
+        "url": "https://www.imi.gov.my/?lang=en",
+        "name": "Immigration Department of Malaysia"
       }
     },
     "MZ": {
@@ -250,42 +934,160 @@
       "eta": {
         "url": "https://evisa.gov.mz/",
         "name": "Mozambique Electronic Travel Authorisation (same portal)"
+      },
+      "rules": {
+        "url": "https://evisa.gov.mz/",
+        "name": "Mozambique Government: e-Visa"
       }
     },
     "NA": {
       "evisa": {
         "url": "https://eservices.mhaiss.gov.na/",
         "name": "Namibia MHAISS eServices (e-Visa / online visa on arrival)"
+      },
+      "rules": {
+        "url": "https://mha.gov.na/",
+        "name": "Namibia Ministry of Home Affairs and Immigration"
+      }
+    },
+    "NC": {
+      "rules": {
+        "url": "https://france-visas.gouv.fr/en/",
+        "name": "France-Visas"
+      }
+    },
+    "NE": {
+      "rules": {
+        "url": "https://diplomatie.gouv.ne/index.php/services-aux-usagers/entree-au-niger",
+        "name": "Niger Ministry of Foreign Affairs: Entry"
       }
     },
     "NG": {
       "evisa": {
         "url": "https://evisa.immigration.gov.ng/",
         "name": "Nigeria e-Visa (Nigeria Immigration Service)"
+      },
+      "rules": {
+        "url": "https://immigration.gov.ng/",
+        "name": "Nigeria Immigration Service"
+      }
+    },
+    "NI": {
+      "rules": {
+        "url": "https://www.migob.gob.ni/",
+        "name": "Nicaragua General Directorate of Migration"
+      }
+    },
+    "NL": {
+      "rules": {
+        "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands",
+        "name": "Netherlands Worldwide: Visa for the Netherlands"
+      }
+    },
+    "NO": {
+      "rules": {
+        "url": "https://www.udi.no/en/",
+        "name": "Norwegian Directorate of Immigration"
+      }
+    },
+    "NP": {
+      "rules": {
+        "url": "https://www.immigration.gov.np/",
+        "name": "Nepal Department of Immigration"
+      }
+    },
+    "NR": {
+      "rules": {
+        "url": "https://justice.gov.nr/immigration-division",
+        "name": "Nauru Department of Justice: Immigration"
       }
     },
     "NZ": {
       "eta": {
         "url": "https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/",
         "name": "NZeTA (New Zealand Electronic Travel Authority)"
+      },
+      "rules": {
+        "url": "https://www.immigration.govt.nz/",
+        "name": "Immigration New Zealand"
       }
     },
     "OM": {
       "evisa": {
         "url": "https://evisa.rop.gov.om/en/home",
         "name": "Oman eVisa (Royal Oman Police)"
+      },
+      "rules": {
+        "url": "https://www.rop.gov.om/",
+        "name": "Royal Oman Police"
+      }
+    },
+    "PA": {
+      "rules": {
+        "url": "https://www.migracion.gob.pa/",
+        "name": "Panama National Migration Service"
+      }
+    },
+    "PE": {
+      "rules": {
+        "url": "https://www.gob.pe/migraciones",
+        "name": "Peru National Superintendency of Migration"
+      }
+    },
+    "PF": {
+      "rules": {
+        "url": "https://france-visas.gouv.fr/en/",
+        "name": "France-Visas"
       }
     },
     "PG": {
       "evisa": {
         "url": "https://evisa.ica.gov.pg/evisa/account/Apply",
         "name": "Papua New Guinea eVisa (ICA)"
+      },
+      "rules": {
+        "url": "https://ica.gov.pg/",
+        "name": "Papua New Guinea Immigration and Citizenship Authority"
+      }
+    },
+    "PH": {
+      "rules": {
+        "url": "https://immigration.gov.ph/",
+        "name": "Philippine Bureau of Immigration"
       }
     },
     "PK": {
       "evisa": {
         "url": "https://visa.nadra.gov.pk/",
         "name": "Pakistan Online Visa System (e-Visa)"
+      },
+      "rules": {
+        "url": "https://visa.nadra.gov.pk/",
+        "name": "Pakistan Government: Visa"
+      }
+    },
+    "PL": {
+      "rules": {
+        "url": "https://www.gov.pl/web/udsc-en",
+        "name": "Polish Office for Foreigners"
+      }
+    },
+    "PR": {
+      "rules": {
+        "url": "https://travel.state.gov/content/travel/en/us-visas.html",
+        "name": "U.S. Department of State: U.S. Visas"
+      }
+    },
+    "PT": {
+      "rules": {
+        "url": "https://vistos.mne.gov.pt/en/",
+        "name": "Portuguese Foreign Ministry: Visas"
+      }
+    },
+    "PY": {
+      "rules": {
+        "url": "https://www.migraciones.gov.py/",
+        "name": "Paraguay General Directorate of Migration"
       }
     },
     "QA": {
@@ -296,120 +1098,380 @@
       "eta": {
         "url": "https://hayya.qa/",
         "name": "Hayya Platform (Qatar Electronic Travel Authorisation)"
+      },
+      "rules": {
+        "url": "https://hukoomi.gov.qa/en",
+        "name": "Qatar Government portal (Hukoomi)"
+      }
+    },
+    "RE": {
+      "rules": {
+        "url": "https://france-visas.gouv.fr/en/",
+        "name": "France-Visas"
+      }
+    },
+    "RO": {
+      "rules": {
+        "url": "https://igi.mai.gov.ro/en/",
+        "name": "Romanian General Inspectorate for Immigration"
+      }
+    },
+    "RS": {
+      "rules": {
+        "url": "https://welcometoserbia.gov.rs/",
+        "name": "Government of Serbia: Welcome to Serbia"
       }
     },
     "RU": {
       "evisa": {
         "url": "https://evisa.kdmid.ru/",
         "name": "Russia unified e-Visa (MFA Consular Department)"
+      },
+      "rules": {
+        "url": "https://evisa.kdmid.ru/",
+        "name": "Russian Ministry of Foreign Affairs: e-Visa"
       }
     },
     "RW": {
       "evisa": {
         "url": "https://irembo.gov.rw/user/citizen/service/dgie/request_a_visa",
         "name": "Rwanda Visa Application (IremboGov, DGIE)"
+      },
+      "rules": {
+        "url": "https://www.migration.gov.rw/",
+        "name": "Rwanda Directorate General of Immigration and Emigration"
       }
     },
     "SA": {
       "evisa": {
         "url": "https://ksavisa.sa/",
         "name": "KSA Visa unified platform (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://visa.mofa.gov.sa/",
+        "name": "Saudi Ministry of Foreign Affairs: Visa"
+      }
+    },
+    "SB": {
+      "rules": {
+        "url": "https://immigration.gov.sb/visas/",
+        "name": "Solomon Islands Immigration: Visas"
+      }
+    },
+    "SC": {
+      "rules": {
+        "url": "https://www.ics.gov.sc/",
+        "name": "Seychelles Immigration and Civil Status"
+      }
+    },
+    "SD": {
+      "rules": {
+        "url": "https://eservice.passport.gov.sd/aliens/home",
+        "name": "Sudan Ministry of Interior: Entry permits for foreigners"
+      }
+    },
+    "SE": {
+      "rules": {
+        "url": "https://www.migrationsverket.se/English.html",
+        "name": "Swedish Migration Agency"
+      }
+    },
+    "SG": {
+      "rules": {
+        "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements",
+        "name": "Singapore ICA: Visa requirements"
+      }
+    },
+    "SI": {
+      "rules": {
+        "url": "https://www.gov.si/en/topics/entry-and-residence/",
+        "name": "Government of Slovenia: Entry and residence"
+      }
+    },
+    "SK": {
+      "rules": {
+        "url": "https://www.minv.sk/?information-foreigners=",
+        "name": "Slovak Ministry of Interior: Foreigners"
+      }
+    },
+    "SL": {
+      "rules": {
+        "url": "https://slid.gov.sl/",
+        "name": "Sierra Leone Immigration Department"
+      }
+    },
+    "SM": {
+      "rules": {
+        "url": "https://www.esteri.sm/pub1/EsteriSM/en/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html",
+        "name": "San Marino Foreign Affairs: Stay and residence"
+      }
+    },
+    "SN": {
+      "rules": {
+        "url": "https://interieur.gouv.sn/",
+        "name": "Senegal Ministry of the Interior"
       }
     },
     "SO": {
       "evisa": {
         "url": "https://etas.gov.so/",
         "name": "Somalia e-Visa / ETAS"
+      },
+      "rules": {
+        "url": "https://immigration.gov.so/",
+        "name": "Somalia Immigration and Naturalization Agency"
+      }
+    },
+    "SR": {
+      "rules": {
+        "url": "https://gov.sr/wp-content/uploads/2024/12/2024.03.27-Announcement-Entry-Fee-Adjustment.pdf",
+        "name": "Government of Suriname: Entry fee announcement"
       }
     },
     "SS": {
       "evisa": {
         "url": "https://evisa.gov.ss/",
         "name": "South Sudan eVisa (Government eServices Portal)"
+      },
+      "rules": {
+        "url": "https://www.evisa.gov.ss/",
+        "name": "South Sudan Government: e-Visa"
+      }
+    },
+    "ST": {
+      "rules": {
+        "url": "https://www.smf.st/",
+        "name": "Sao Tome and Principe Migration and Border Service (SMF)"
       }
     },
     "SV": {
       "evisa": {
         "url": "https://elsalvadorpei.migracion.gob.sv/",
         "name": "El Salvador Permiso Especial de Ingreso (online entry permit, DGME)"
+      },
+      "rules": {
+        "url": "https://www.migracion.gob.sv/",
+        "name": "El Salvador General Directorate of Migration"
+      }
+    },
+    "SZ": {
+      "rules": {
+        "url": "https://www.gov.sz/index.php/ministries-departments/ministry-of-home-affairs",
+        "name": "Eswatini Ministry of Home Affairs"
+      }
+    },
+    "TD": {
+      "rules": {
+        "url": "https://evisa.td/",
+        "name": "Chad eVisa (Ministry of Public Security and Immigration)"
       }
     },
     "TG": {
       "evisa": {
         "url": "https://voyage.gouv.tg/",
         "name": "Togo National Travel Platform (e-Visa)"
+      },
+      "rules": {
+        "url": "https://voyage.gouv.tg/",
+        "name": "Togo Government: Travel"
       }
     },
     "TH": {
       "evisa": {
         "url": "https://www.thaievisa.go.th/",
         "name": "Thai e-Visa"
+      },
+      "rules": {
+        "url": "https://www.thaievisa.go.th/",
+        "name": "Thailand Ministry of Foreign Affairs: e-Visa"
+      }
+    },
+    "TJ": {
+      "rules": {
+        "url": "https://www.evisa.tj/",
+        "name": "Tajikistan Government: e-Visa"
+      }
+    },
+    "TL": {
+      "rules": {
+        "url": "https://migracao.gov.tl/",
+        "name": "Timor-Leste Immigration Service"
+      }
+    },
+    "TM": {
+      "rules": {
+        "url": "https://migration.gov.tm/en/",
+        "name": "Turkmenistan State Migration Service"
+      }
+    },
+    "TN": {
+      "rules": {
+        "url": "https://services.interieur.gov.tn/",
+        "name": "Tunisia Ministry of the Interior"
+      }
+    },
+    "TO": {
+      "rules": {
+        "url": "https://www.revenue.gov.to/immigration-and-general-services",
+        "name": "Tonga Immigration"
       }
     },
     "TR": {
       "evisa": {
         "url": "https://www.evisa.gov.tr/",
         "name": "Türkiye e-Visa (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://en.goc.gov.tr/",
+        "name": "Turkish Presidency of Migration Management"
+      }
+    },
+    "TT": {
+      "rules": {
+        "url": "https://nationalsecurity.gov.tt/divisions/immigrationdivision/",
+        "name": "Trinidad and Tobago Immigration Division"
       }
     },
     "TW": {
       "evisa": {
         "url": "https://visawebapp.boca.gov.tw/BOCA_EVISA/MRV04FORM",
         "name": "Taiwan eVisa (Bureau of Consular Affairs)"
+      },
+      "rules": {
+        "url": "https://www.immigration.gov.tw/5475/",
+        "name": "Taiwan National Immigration Agency"
       }
     },
     "TZ": {
       "evisa": {
         "url": "https://visa.immigration.go.tz/",
         "name": "Tanzania Immigration Online Visa Application"
+      },
+      "rules": {
+        "url": "https://www.immigration.go.tz/",
+        "name": "Tanzania Immigration Services"
       }
     },
     "UA": {
       "evisa": {
         "url": "https://evisa.mfa.gov.ua/",
         "name": "Ukraine e-Visa (Ministry of Foreign Affairs)"
+      },
+      "rules": {
+        "url": "https://dmsu.gov.ua/en-home.html",
+        "name": "State Migration Service of Ukraine"
       }
     },
     "UG": {
       "evisa": {
         "url": "https://visas.immigration.go.ug/",
         "name": "Uganda Electronic Visa/Permit Application System"
+      },
+      "rules": {
+        "url": "https://www.immigration.go.ug/",
+        "name": "Uganda Directorate of Citizenship and Immigration"
       }
     },
     "US": {
       "eta": {
         "url": "https://esta.cbp.dhs.gov/",
         "name": "ESTA (Electronic System for Travel Authorization)"
+      },
+      "rules": {
+        "url": "https://travel.state.gov/content/travel/en/us-visas.html",
+        "name": "U.S. Department of State: U.S. Visas"
+      }
+    },
+    "UY": {
+      "rules": {
+        "url": "https://www.gub.uy/ministerio-interior/direccion-nacional-migracion/",
+        "name": "Uruguay National Directorate of Migration"
       }
     },
     "UZ": {
       "evisa": {
         "url": "https://e-visa.gov.uz/",
         "name": "Uzbekistan e-Visa"
+      },
+      "rules": {
+        "url": "https://my.gov.uz/en/for-foreigners",
+        "name": "Uzbekistan Government services: For foreigners"
+      }
+    },
+    "VA": {
+      "rules": {
+        "url": "https://vistoperitalia.esteri.it/home/en",
+        "name": "Italian Foreign Ministry: Visa for Italy (entry to Vatican City is through Italy)"
+      }
+    },
+    "VC": {
+      "rules": {
+        "url": "https://security.gov.vc/security/",
+        "name": "Saint Vincent and the Grenadines Ministry of National Security"
+      }
+    },
+    "VE": {
+      "rules": {
+        "url": "https://www.saime.gob.ve/",
+        "name": "Venezuela SAIME"
       }
     },
     "VN": {
       "evisa": {
         "url": "https://evisa.gov.vn/e-visa/foreigners",
         "name": "Vietnam e-Visa (Immigration Department)"
+      },
+      "rules": {
+        "url": "https://immigration.gov.vn/",
+        "name": "Vietnam Immigration Department"
+      }
+    },
+    "VU": {
+      "rules": {
+        "url": "https://immigration.gov.vu/",
+        "name": "Vanuatu Immigration and Passport Services"
+      }
+    },
+    "WS": {
+      "rules": {
+        "url": "https://www.samoaimmigration.gov.ws/",
+        "name": "Samoa Immigration"
+      }
+    },
+    "XK": {
+      "rules": {
+        "url": "https://mpb.rks-gov.net/",
+        "name": "Kosovo Ministry of Internal Affairs"
       }
     },
     "ZA": {
       "eta": {
         "url": "https://eta.dha.gov.za/",
         "name": "South Africa Electronic Travel Authorisation (Home Affairs)"
+      },
+      "rules": {
+        "url": "https://www.dha.gov.za/index.php/immigration-services",
+        "name": "South Africa Department of Home Affairs: Immigration services"
       }
     },
     "ZM": {
       "evisa": {
         "url": "https://eservices.gov.zm/#/service/18",
         "name": "Zambia e-Visa (Government eServices)"
+      },
+      "rules": {
+        "url": "https://www.zambiaimmigration.gov.zm/",
+        "name": "Zambia Department of Immigration"
       }
     },
     "ZW": {
       "evisa": {
         "url": "https://www.evisa.gov.zw/index.html",
         "name": "Zimbabwe eVisa (Department of Immigration)"
+      },
+      "rules": {
+        "url": "https://www.zimimmigration.gov.zw/",
+        "name": "Zimbabwe Department of Immigration"
       }
     }
   }
