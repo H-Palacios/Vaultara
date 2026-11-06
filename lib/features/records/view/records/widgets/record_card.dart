@@ -12,6 +12,8 @@ import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
+import 'package:vaultara/features/household/logic/record_owner.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 enum _RecordMenuAction {
   edit,
@@ -43,6 +45,9 @@ class RecordCard extends StatelessWidget {
   final VoidCallback? onLongPress;
   final VoidCallback? onToggleSelect;
 
+  /// Off on the Shared records screen, where every card is shared.
+  final bool showSharedBadge;
+
   const RecordCard({
     super.key,
     required this.record,
@@ -59,6 +64,7 @@ class RecordCard extends StatelessWidget {
     this.selected = false,
     this.onLongPress,
     this.onToggleSelect,
+    this.showSharedBadge = true,
   });
 
   void _onMenuSelected(_RecordMenuAction action) {
@@ -165,14 +171,11 @@ class RecordCard extends StatelessWidget {
                         ),
                       ),
                     ],
-                    if (record.isShared) ...[
+                    if (record.isShared && showSharedBadge) ...[
                       const SizedBox(width: 6),
                       const SharedBadge(),
                     ],
-                    if (record.holderId != null) ...[
-                      const SizedBox(width: 8),
-                      PersonChip(holderId: record.holderId),
-                    ],
+                    RecordOwnerChip(record: record),
                   ],
                 ),
                 const SizedBox(height: 4),
@@ -180,6 +183,7 @@ class RecordCard extends StatelessWidget {
                   date: record.expiryDate,
                   repeatMonths: record.repeatMonths,
                 ),
+                _RecentChangeLine(record: record),
                 if (_startBy(record) != null) ...[
                   const SizedBox(height: 6),
                   _StartByLine(date: _startBy(record)!),
@@ -464,6 +468,51 @@ class _ChecklistProgressLineState extends State<_ChecklistProgressLine> {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// "Changed by Mia yesterday" on a shared record someone else changed in
+/// the last 7 days, so a change is noticed without opening every record.
+class _RecentChangeLine extends StatelessWidget {
+  final TrackedItem record;
+
+  const _RecentChangeLine({required this.record});
+
+  @override
+  Widget build(BuildContext context) {
+    if (!record.isShared) return const SizedBox.shrink();
+    final days = RecordOwner.recentChangeDays(
+      record,
+      me: FirebaseAuth.instance.currentUser?.uid,
+      now: DateTime.now(),
+    );
+    if (days == null) return const SizedBox.shrink();
+    final loc = AppLocalizations.of(context)!;
+    final muted = Theme.of(context).colorScheme.onSurfaceVariant;
+    return FutureBuilder<Map<String, String>>(
+      future: HouseholdRepository.memberNames(),
+      builder: (context, snapshot) {
+        final name = snapshot.data?[record.updatedBy]?.trim() ?? '';
+        final who = name.isEmpty ? loc.recordUnknownMember : name;
+        return Padding(
+          padding: const EdgeInsets.only(top: 6),
+          child: Row(
+            children: [
+              Icon(Icons.history_rounded, size: 14, color: muted),
+              const SizedBox(width: 6),
+              Flexible(
+                child: Text(
+                  loc.recordChangedRecently(days, who),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(fontSize: 12.5, color: muted),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

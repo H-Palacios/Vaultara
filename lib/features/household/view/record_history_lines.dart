@@ -9,7 +9,14 @@ import 'package:vaultara/l10n/app_localizations.dart';
 class RecordHistoryLines extends StatelessWidget {
   final TrackedItem record;
 
-  const RecordHistoryLines({super.key, required this.record});
+  /// Centred under a title, as at the top of the record sheet.
+  final bool centred;
+
+  const RecordHistoryLines({
+    super.key,
+    required this.record,
+    this.centred = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -55,8 +62,12 @@ class RecordHistoryLines extends StatelessWidget {
         if (lines.isEmpty) return const SizedBox.shrink();
 
         return Padding(
-          padding: const EdgeInsets.only(top: 12),
+          padding: EdgeInsets.only(top: centred ? 6 : 12),
           child: Row(
+            mainAxisSize: centred ? MainAxisSize.min : MainAxisSize.max,
+            mainAxisAlignment: centred
+                ? MainAxisAlignment.center
+                : MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Icon(
@@ -65,9 +76,10 @@ class RecordHistoryLines extends StatelessWidget {
                 color: scheme.onSurfaceVariant,
               ),
               const SizedBox(width: 6),
-              Expanded(
+              Flexible(
                 child: Text(
                   lines.join('\n'),
+                  textAlign: centred ? TextAlign.center : TextAlign.start,
                   style: TextStyle(
                     fontSize: 12.5,
                     height: 1.4,

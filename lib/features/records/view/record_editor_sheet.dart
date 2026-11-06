@@ -1747,13 +1747,25 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
               children: [
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
-                  child: Text(
-                    isEditMode ? loc.editRecordTitle : loc.addRecord,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800,
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        isEditMode ? loc.editRecordTitle : loc.addRecord,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      if (widget.editedRecord != null)
+                        Center(
+                          child: RecordHistoryLines(
+                            record: widget.editedRecord!,
+                            centred: true,
+                          ),
+                        ),
+                    ],
                   ),
                 ),
                 Divider(height: 1, color: scheme.outlineVariant),
@@ -1928,8 +1940,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                             ),
                           ),
                         ),
-                        if (widget.editedRecord != null)
-                          RecordHistoryLines(record: widget.editedRecord!),
                       ],
                     ),
                   ),
