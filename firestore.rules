@@ -605,6 +605,11 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    match /fx/{docId} {
+      allow read: if signedIn() && docId == 'latest';
+      allow write: if false;
+    }
+
     match /visaLinks/{docId} {
       allow read: if signedIn() && docId == 'all';
       allow write: if false;
