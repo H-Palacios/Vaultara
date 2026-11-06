@@ -2018,5 +2018,19 @@
   "hidePassword": "Skjul adgangskode",
   "pinCategory": "Fastgør øverst",
   "unpinCategory": "Frigør",
-  "clearSearch": "Ryd søgning"
+  "clearSearch": "Ryd søgning",
+  "tripPurposeTitle": "Formål med rejsen",
+  "tripPurposeHoliday": "Ferie",
+  "tripPurposeFamily": "Besøg hos familie eller venner",
+  "tripPurposeBusiness": "Forretning",
+  "tripPurposeStudy": "Studier",
+  "tripPurposeWork": "Arbejde",
+  "visaPurposeStudyNeeded": "Studievisum kræves normalt",
+  "visaPurposeWorkNeeded": "Arbejdsvisum kræves normalt",
+  "visaPurposeStudyNote": "Reglerne for besøgende dækker ikke studier. Du skal normalt have et studievisum eller en studietilladelse. Tjek de officielle regler, og søg i god tid.",
+  "visaPurposeWorkNote": "Reglerne for besøgende dækker ikke arbejde, hverken lønnet eller ulønnet. Du skal normalt have et arbejdsvisum eller en arbejdstilladelse. Tjek de officielle regler, og søg i god tid.",
+  "visaBusinessNote": "Korte forretningsbesøg som møder er ofte tilladt efter reglerne for besøgende, men lønnet arbejde er ikke. Tjek de officielle regler.",
+  "visaVisitorRules": "Regler for besøgende: {status}",
+  "visaOfficialRules": "Officielle regler",
+  "visaLeavingRulesNote": "Vaultara er ikke en del af dette websted. Hvis webstedet siger noget andet end Vaultara, så følg webstedet."
 }

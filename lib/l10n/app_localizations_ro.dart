@@ -6357,4 +6357,48 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get clearSearch => 'Șterge căutarea';
+
+  @override
+  String get tripPurposeTitle => 'Motivul călătoriei';
+
+  @override
+  String get tripPurposeHoliday => 'Vacanță';
+
+  @override
+  String get tripPurposeFamily => 'Vizită la familie sau prieteni';
+
+  @override
+  String get tripPurposeBusiness => 'Afaceri';
+
+  @override
+  String get tripPurposeStudy => 'Studii';
+
+  @override
+  String get tripPurposeWork => 'Muncă';
+
+  @override
+  String get visaPurposeStudyNeeded => 'De obicei e nevoie de viză de studii';
+
+  @override
+  String get visaPurposeWorkNeeded => 'De obicei e nevoie de viză de muncă';
+
+  @override
+  String get visaPurposeStudyNote => 'Regulile pentru vizitatori nu acoperă studiile. De obicei ai nevoie de o viză sau un permis de studii. Verifică regulile oficiale și aplică din timp.';
+
+  @override
+  String get visaPurposeWorkNote => 'Regulile pentru vizitatori nu acoperă munca, plătită sau neplătită. De obicei ai nevoie de o viză sau un permis de muncă. Verifică regulile oficiale și aplică din timp.';
+
+  @override
+  String get visaBusinessNote => 'Vizitele scurte de afaceri, cum ar fi întâlnirile, sunt adesea permise conform regulilor pentru vizitatori, dar munca plătită nu. Verifică regulile oficiale.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Reguli pentru vizitatori: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Reguli oficiale';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara nu face parte din acest site. Dacă acest site spune altceva decât Vaultara, urmează acest site.';
 }

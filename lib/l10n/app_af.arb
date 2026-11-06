@@ -2025,5 +2025,19 @@
   "hidePassword": "Versteek wagwoord",
   "pinCategory": "Speld bo vas",
   "unpinCategory": "Maak los",
-  "clearSearch": "Maak soektog skoon"
+  "clearSearch": "Maak soektog skoon",
+  "tripPurposeTitle": "Rede vir die reis",
+  "tripPurposeHoliday": "Vakansie",
+  "tripPurposeFamily": "Besoek familie of vriende",
+  "tripPurposeBusiness": "Besigheid",
+  "tripPurposeStudy": "Studie",
+  "tripPurposeWork": "Werk",
+  "visaPurposeStudyNeeded": "Studievisum gewoonlik nodig",
+  "visaPurposeWorkNeeded": "Werkvisum gewoonlik nodig",
+  "visaPurposeStudyNote": "Besoekersreëls dek nie studie nie. Jy het gewoonlik 'n studievisum of -permit nodig. Kyk na die amptelike reëls en doen vroeg aansoek.",
+  "visaPurposeWorkNote": "Besoekersreëls dek nie werk nie, betaal of onbetaal. Jy het gewoonlik 'n werkvisum of -permit nodig. Kyk na die amptelike reëls en doen vroeg aansoek.",
+  "visaBusinessNote": "Kort sakebesoeke soos vergaderings word dikwels onder besoekersreëls toegelaat, maar betaalde werk nie. Kyk na die amptelike reëls.",
+  "visaVisitorRules": "Besoekersreëls: {status}",
+  "visaOfficialRules": "Amptelike reëls",
+  "visaLeavingRulesNote": "Vaultara is nie deel van hierdie webwerf nie. As hierdie webwerf iets anders as Vaultara sê, volg hierdie webwerf."
 }

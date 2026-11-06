@@ -6286,4 +6286,48 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get clearSearch => 'Издөөнү тазалоо';
+
+  @override
+  String get tripPurposeTitle => 'Сапардын себеби';
+
+  @override
+  String get tripPurposeHoliday => 'Эс алуу';
+
+  @override
+  String get tripPurposeFamily => 'Үй-бүлөгө же досторго баруу';
+
+  @override
+  String get tripPurposeBusiness => 'Иш сапары';
+
+  @override
+  String get tripPurposeStudy => 'Окуу';
+
+  @override
+  String get tripPurposeWork => 'Жумуш';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Адатта окуу визасы керек';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Адатта жумуш визасы керек';
+
+  @override
+  String get visaPurposeStudyNote => 'Келүүчүлөрдүн эрежелери окууну камтыбайт. Адатта окуу визасы же уруксаты керек. Расмий эрежелерди текшерип, эртерээк кайрылыңыз.';
+
+  @override
+  String get visaPurposeWorkNote => 'Келүүчүлөрдүн эрежелери акы төлөнүүчү же төлөнбөгөн жумушту камтыбайт. Адатта жумуш визасы же уруксаты керек. Расмий эрежелерди текшерип, эртерээк кайрылыңыз.';
+
+  @override
+  String get visaBusinessNote => 'Жолугушуу сыяктуу кыска иш сапарларына келүүчүлөрдүн эрежелери көбүнчө уруксат берет, бирок акы төлөнүүчү жумушка уруксат жок. Расмий эрежелерди текшериңиз.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Келүүчүлөрдүн эрежелери: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Расмий эрежелер';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara бул сайттын бөлүгү эмес. Эгер бул сайт Vaultara\'дан башкача айтса, ушул сайтты ээрчиңиз.';
 }

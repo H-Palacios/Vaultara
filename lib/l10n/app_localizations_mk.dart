@@ -6286,4 +6286,48 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get clearSearch => 'Исчисти пребарување';
+
+  @override
+  String get tripPurposeTitle => 'Причина за патувањето';
+
+  @override
+  String get tripPurposeHoliday => 'Одмор';
+
+  @override
+  String get tripPurposeFamily => 'Посета на семејство или пријатели';
+
+  @override
+  String get tripPurposeBusiness => 'Деловно';
+
+  @override
+  String get tripPurposeStudy => 'Студии';
+
+  @override
+  String get tripPurposeWork => 'Работа';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Обично е потребна студентска виза';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Обично е потребна работна виза';
+
+  @override
+  String get visaPurposeStudyNote => 'Правилата за посетители не опфаќаат студии. Обично ти треба студентска виза или дозвола. Провери ги официјалните правила и аплицирај навреме.';
+
+  @override
+  String get visaPurposeWorkNote => 'Правилата за посетители не опфаќаат работа, платена или неплатена. Обично ти треба работна виза или дозвола. Провери ги официјалните правила и аплицирај навреме.';
+
+  @override
+  String get visaBusinessNote => 'Кратките деловни посети, како состаноци, често се дозволени според правилата за посетители, но платената работа не е. Провери ги официјалните правила.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Правила за посетители: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Официјални правила';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara не е дел од оваа страница. Ако оваа страница вели нешто различно од Vaultara, следи ја оваа страница.';
 }

@@ -2025,5 +2025,19 @@
   "hidePassword": "የይለፍ ቃል ደብቅ",
   "pinCategory": "ከላይ ሰካ",
   "unpinCategory": "ንቀል",
-  "clearSearch": "ፍለጋን አጽዳ"
+  "clearSearch": "ፍለጋን አጽዳ",
+  "tripPurposeTitle": "የጉዞው ምክንያት",
+  "tripPurposeHoliday": "የዕረፍት ጊዜ",
+  "tripPurposeFamily": "ቤተሰብ ወይም ጓደኞችን መጎብኘት",
+  "tripPurposeBusiness": "ንግድ",
+  "tripPurposeStudy": "ትምህርት",
+  "tripPurposeWork": "ሥራ",
+  "visaPurposeStudyNeeded": "ብዙውን ጊዜ የትምህርት ቪዛ ያስፈልጋል",
+  "visaPurposeWorkNeeded": "ብዙውን ጊዜ የሥራ ቪዛ ያስፈልጋል",
+  "visaPurposeStudyNote": "የጎብኚዎች ደንቦች ትምህርትን አይሸፍኑም። ብዙውን ጊዜ የትምህርት ቪዛ ወይም ፈቃድ ያስፈልግዎታል። ኦፊሴላዊ ደንቦቹን ይመልከቱ እና ቀደም ብለው ያመልክቱ።",
+  "visaPurposeWorkNote": "የጎብኚዎች ደንቦች ሥራን አይሸፍኑም፣ የሚከፈልም ሆነ የማይከፈል። ብዙውን ጊዜ የሥራ ቪዛ ወይም ፈቃድ ያስፈልግዎታል። ኦፊሴላዊ ደንቦቹን ይመልከቱ እና ቀደም ብለው ያመልክቱ።",
+  "visaBusinessNote": "እንደ ስብሰባ ያሉ አጭር የንግድ ጉብኝቶች ብዙውን ጊዜ በጎብኚዎች ደንቦች ይፈቀዳሉ፣ የሚከፈልበት ሥራ ግን አይፈቀድም። ኦፊሴላዊ ደንቦቹን ይመልከቱ።",
+  "visaVisitorRules": "የጎብኚዎች ደንቦች፦ {status}",
+  "visaOfficialRules": "ኦፊሴላዊ ደንቦች",
+  "visaLeavingRulesNote": "Vaultara የዚህ ድረ-ገጽ አካል አይደለም። ይህ ድረ-ገጽ ከVaultara የተለየ ነገር ከተናገረ፣ ይህንን ድረ-ገጽ ይከተሉ።"
 }

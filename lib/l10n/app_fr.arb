@@ -1999,5 +1999,19 @@
   "hidePassword": "Masquer le mot de passe",
   "pinCategory": "Épingler en haut",
   "unpinCategory": "Désépingler",
-  "clearSearch": "Effacer la recherche"
+  "clearSearch": "Effacer la recherche",
+  "tripPurposeTitle": "Motif du voyage",
+  "tripPurposeHoliday": "Vacances",
+  "tripPurposeFamily": "Visite à la famille ou à des amis",
+  "tripPurposeBusiness": "Affaires",
+  "tripPurposeStudy": "Études",
+  "tripPurposeWork": "Travail",
+  "visaPurposeStudyNeeded": "Visa étudiant généralement requis",
+  "visaPurposeWorkNeeded": "Visa de travail généralement requis",
+  "visaPurposeStudyNote": "Les règles pour les visiteurs ne couvrent pas les études. Il vous faut généralement un visa ou un permis d'études. Vérifiez les règles officielles et faites votre demande tôt.",
+  "visaPurposeWorkNote": "Les règles pour les visiteurs ne couvrent pas le travail, rémunéré ou non. Il vous faut généralement un visa ou un permis de travail. Vérifiez les règles officielles et faites votre demande tôt.",
+  "visaBusinessNote": "Les courts voyages d'affaires, comme des réunions, sont souvent autorisés avec les règles pour les visiteurs, mais pas le travail rémunéré. Vérifiez les règles officielles.",
+  "visaVisitorRules": "Règles pour les visiteurs : {status}",
+  "visaOfficialRules": "Règles officielles",
+  "visaLeavingRulesNote": "Vaultara ne fait pas partie de ce site. Si ce site dit autre chose que Vaultara, suivez ce site."
 }

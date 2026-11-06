@@ -7667,5 +7667,66 @@
   "hidePassword": "Hide password",
   "pinCategory": "Pin to top",
   "unpinCategory": "Unpin",
-  "clearSearch": "Clear search"
+  "clearSearch": "Clear search",
+  "tripPurposeTitle": "Reason for the trip",
+  "@tripPurposeTitle": {
+    "description": "Label above the reason-for-travel chips in the trip form."
+  },
+  "tripPurposeHoliday": "Holiday",
+  "@tripPurposeHoliday": {
+    "description": "Trip reason or visa purpose text."
+  },
+  "tripPurposeFamily": "Visiting family or friends",
+  "@tripPurposeFamily": {
+    "description": "Trip reason chip. Keep short."
+  },
+  "tripPurposeBusiness": "Business",
+  "@tripPurposeBusiness": {
+    "description": "Trip reason or visa purpose text."
+  },
+  "tripPurposeStudy": "Study",
+  "@tripPurposeStudy": {
+    "description": "Trip reason or visa purpose text."
+  },
+  "tripPurposeWork": "Work",
+  "@tripPurposeWork": {
+    "description": "Trip reason or visa purpose text."
+  },
+  "visaPurposeStudyNeeded": "Study visa usually needed",
+  "@visaPurposeStudyNeeded": {
+    "description": "Pill on a destination when the trip is for study. 'usually' matters: the app cannot be sure."
+  },
+  "visaPurposeWorkNeeded": "Work visa usually needed",
+  "@visaPurposeWorkNeeded": {
+    "description": "Pill on a destination when the trip is for work. 'usually' matters: the app cannot be sure."
+  },
+  "visaPurposeStudyNote": "Visitor rules do not cover studying. You usually need a study visa or permit. Check the official rules and apply early.",
+  "@visaPurposeStudyNote": {
+    "description": "Warning shown for study trips. Visitor rules = the tourist or short-visit visa result."
+  },
+  "visaPurposeWorkNote": "Visitor rules do not cover working, paid or unpaid. You usually need a work visa or permit. Check the official rules and apply early.",
+  "@visaPurposeWorkNote": {
+    "description": "Warning shown for work trips."
+  },
+  "visaBusinessNote": "Short business visits such as meetings are often allowed on visitor rules, but paid work is not. Check the official rules.",
+  "@visaBusinessNote": {
+    "description": "Caution shown for business trips."
+  },
+  "visaVisitorRules": "Visitor rules: {status}",
+  "@visaVisitorRules": {
+    "description": "Shows the tourist visa result for reference on study or work trips. {status} is an already translated label such as 'Visa free for 90 days'.",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "visaOfficialRules": "Official rules",
+  "@visaOfficialRules": {
+    "description": "Button that opens the destination government's own visa rules page."
+  },
+  "visaLeavingRulesNote": "Vaultara is not part of this site. If this site says something different from Vaultara, follow this site.",
+  "@visaLeavingRulesNote": {
+    "description": "Shown before opening a government visa rules page."
+  }
 }

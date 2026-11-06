@@ -1987,5 +1987,19 @@
   "hidePassword": "Skjul passord",
   "pinCategory": "Fest øvst",
   "unpinCategory": "Løys",
-  "clearSearch": "Tøm søk"
+  "clearSearch": "Tøm søk",
+  "tripPurposeTitle": "Føremål med reisa",
+  "tripPurposeHoliday": "Ferie",
+  "tripPurposeFamily": "Besøkje familie eller vener",
+  "tripPurposeBusiness": "Forretningsreise",
+  "tripPurposeStudy": "Studium",
+  "tripPurposeWork": "Arbeid",
+  "visaPurposeStudyNeeded": "Studievisum krevst vanlegvis",
+  "visaPurposeWorkNeeded": "Arbeidsvisum krevst vanlegvis",
+  "visaPurposeStudyNote": "Reglane for besøkjande gjeld ikkje studium. Du treng vanlegvis eit studievisum eller eit studieløyve. Sjekk dei offisielle reglane og søk i god tid.",
+  "visaPurposeWorkNote": "Reglane for besøkjande gjeld ikkje arbeid, verken betalt eller ubetalt. Du treng vanlegvis eit arbeidsvisum eller eit arbeidsløyve. Sjekk dei offisielle reglane og søk i god tid.",
+  "visaBusinessNote": "Korte forretningsreiser, som møte, er ofte tillatne etter reglane for besøkjande, men betalt arbeid er ikkje det. Sjekk dei offisielle reglane.",
+  "visaVisitorRules": "Reglar for besøkjande: {status}",
+  "visaOfficialRules": "Offisielle reglar",
+  "visaLeavingRulesNote": "Vaultara er ikkje ein del av denne nettstaden. Viss nettstaden seier noko anna enn Vaultara, følg nettstaden."
 }

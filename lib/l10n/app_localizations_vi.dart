@@ -6235,4 +6235,48 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get clearSearch => 'Xóa tìm kiếm';
+
+  @override
+  String get tripPurposeTitle => 'Lý do chuyến đi';
+
+  @override
+  String get tripPurposeHoliday => 'Nghỉ dưỡng';
+
+  @override
+  String get tripPurposeFamily => 'Thăm gia đình hoặc bạn bè';
+
+  @override
+  String get tripPurposeBusiness => 'Công tác';
+
+  @override
+  String get tripPurposeStudy => 'Du học';
+
+  @override
+  String get tripPurposeWork => 'Làm việc';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Thường cần thị thực du học';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Thường cần thị thực lao động';
+
+  @override
+  String get visaPurposeStudyNote => 'Quy định cho khách thăm không áp dụng cho việc học. Bạn thường cần thị thực hoặc giấy phép du học. Hãy xem quy định chính thức và nộp đơn sớm.';
+
+  @override
+  String get visaPurposeWorkNote => 'Quy định cho khách thăm không áp dụng cho việc làm, dù có lương hay không. Bạn thường cần thị thực hoặc giấy phép lao động. Hãy xem quy định chính thức và nộp đơn sớm.';
+
+  @override
+  String get visaBusinessNote => 'Các chuyến công tác ngắn như họp thường được phép theo quy định cho khách thăm, nhưng làm việc có lương thì không. Hãy xem quy định chính thức.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Quy định cho khách thăm: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Quy định chính thức';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara không thuộc trang web này. Nếu trang web này nói khác với Vaultara, hãy làm theo trang web này.';
 }

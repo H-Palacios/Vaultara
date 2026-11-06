@@ -1987,5 +1987,19 @@
   "hidePassword": "Wachtwoord verbergen",
   "pinCategory": "Bovenaan vastzetten",
   "unpinCategory": "Losmaken",
-  "clearSearch": "Zoekopdracht wissen"
+  "clearSearch": "Zoekopdracht wissen",
+  "tripPurposeTitle": "Reden van de reis",
+  "tripPurposeHoliday": "Vakantie",
+  "tripPurposeFamily": "Familie of vrienden bezoeken",
+  "tripPurposeBusiness": "Zakelijk",
+  "tripPurposeStudy": "Studie",
+  "tripPurposeWork": "Werk",
+  "visaPurposeStudyNeeded": "Meestal studievisum nodig",
+  "visaPurposeWorkNeeded": "Meestal werkvisum nodig",
+  "visaPurposeStudyNote": "De regels voor bezoekers gelden niet voor studie. Je hebt meestal een studievisum of verblijfsvergunning voor studie nodig. Bekijk de officiële regels en vraag op tijd aan.",
+  "visaPurposeWorkNote": "De regels voor bezoekers gelden niet voor werk, betaald of onbetaald. Je hebt meestal een werkvisum of werkvergunning nodig. Bekijk de officiële regels en vraag op tijd aan.",
+  "visaBusinessNote": "Korte zakenreizen, zoals vergaderingen, zijn met de regels voor bezoekers vaak toegestaan, maar betaald werk niet. Bekijk de officiële regels.",
+  "visaVisitorRules": "Regels voor bezoekers: {status}",
+  "visaOfficialRules": "Officiële regels",
+  "visaLeavingRulesNote": "Vaultara hoort niet bij deze site. Als deze site iets anders zegt dan Vaultara, volg dan deze site."
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get clearSearch => 'Մաքրել որոնումը';
+
+  @override
+  String get tripPurposeTitle => 'Ճամփորդության պատճառը';
+
+  @override
+  String get tripPurposeHoliday => 'Արձակուրդ';
+
+  @override
+  String get tripPurposeFamily => 'Ընտանիքի կամ ընկերների այց';
+
+  @override
+  String get tripPurposeBusiness => 'Գործնական';
+
+  @override
+  String get tripPurposeStudy => 'Ուսում';
+
+  @override
+  String get tripPurposeWork => 'Աշխատանք';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Սովորաբար պահանջվում է ուսանողական վիզա';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Սովորաբար պահանջվում է աշխատանքային վիզա';
+
+  @override
+  String get visaPurposeStudyNote => 'Այցելուների կանոնները չեն ներառում ուսումը։ Սովորաբար անհրաժեշտ է ուսանողական վիզա կամ թույլտվություն։ Ստուգեք պաշտոնական կանոնները և դիմեք շուտ։';
+
+  @override
+  String get visaPurposeWorkNote => 'Այցելուների կանոնները չեն ներառում աշխատանքը՝ վճարովի թե անվճար։ Սովորաբար անհրաժեշտ է աշխատանքային վիզա կամ թույլտվություն։ Ստուգեք պաշտոնական կանոնները և դիմեք շուտ։';
+
+  @override
+  String get visaBusinessNote => 'Կարճ գործնական այցերը, օրինակ՝ հանդիպումները, հաճախ թույլատրվում են այցելուների կանոններով, բայց վճարովի աշխատանքը՝ ոչ։ Ստուգեք պաշտոնական կանոնները։';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Այցելուների կանոններ՝ $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Պաշտոնական կանոններ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara-ն այս կայքի մաս չէ։ Եթե այս կայքը այլ բան է ասում, քան Vaultara-ն, հետևեք այս կայքին։';
 }

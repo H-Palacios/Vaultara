@@ -6235,4 +6235,48 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get clearSearch => 'ລຶບການຄົ້ນຫາ';
+
+  @override
+  String get tripPurposeTitle => 'ເຫດຜົນຂອງການເດີນທາງ';
+
+  @override
+  String get tripPurposeHoliday => 'ພັກຜ່ອນ';
+
+  @override
+  String get tripPurposeFamily => 'ຢ້ຽມຢາມຄອບຄົວ ຫຼື ໝູ່ເພື່ອນ';
+
+  @override
+  String get tripPurposeBusiness => 'ທຸລະກິດ';
+
+  @override
+  String get tripPurposeStudy => 'ການສຶກສາ';
+
+  @override
+  String get tripPurposeWork => 'ການເຮັດວຽກ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'ໂດຍທົ່ວໄປຕ້ອງມີວີຊາການສຶກສາ';
+
+  @override
+  String get visaPurposeWorkNeeded => 'ໂດຍທົ່ວໄປຕ້ອງມີວີຊາເຮັດວຽກ';
+
+  @override
+  String get visaPurposeStudyNote => 'ກົດລະບຽບສຳລັບຜູ້ມາຢ້ຽມຢາມບໍ່ຄອບຄຸມການສຶກສາ. ໂດຍທົ່ວໄປທ່ານຕ້ອງມີວີຊາ ຫຼື ໃບອະນຸຍາດການສຶກສາ. ກວດກົດລະບຽບທາງການ ແລະ ຍື່ນຄຳຮ້ອງແຕ່ເນີ້ນໆ.';
+
+  @override
+  String get visaPurposeWorkNote => 'ກົດລະບຽບສຳລັບຜູ້ມາຢ້ຽມຢາມບໍ່ຄອບຄຸມການເຮັດວຽກ ບໍ່ວ່າຈະມີຄ່າຈ້າງ ຫຼື ບໍ່ມີ. ໂດຍທົ່ວໄປທ່ານຕ້ອງມີວີຊາ ຫຼື ໃບອະນຸຍາດເຮັດວຽກ. ກວດກົດລະບຽບທາງການ ແລະ ຍື່ນຄຳຮ້ອງແຕ່ເນີ້ນໆ.';
+
+  @override
+  String get visaBusinessNote => 'ການເດີນທາງທຸລະກິດໄລຍະສັ້ນ ເຊັ່ນ ການປະຊຸມ ມັກໄດ້ຮັບອະນຸຍາດຕາມກົດລະບຽບສຳລັບຜູ້ມາຢ້ຽມຢາມ ແຕ່ການເຮັດວຽກທີ່ມີຄ່າຈ້າງບໍ່ໄດ້. ກວດກົດລະບຽບທາງການ.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'ກົດລະບຽບສຳລັບຜູ້ມາຢ້ຽມຢາມ: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ກົດລະບຽບທາງການ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ບໍ່ແມ່ນສ່ວນໜຶ່ງຂອງເວັບໄຊນີ້. ຖ້າເວັບໄຊນີ້ບອກສິ່ງທີ່ແຕກຕ່າງຈາກ Vaultara, ໃຫ້ເຮັດຕາມເວັບໄຊນີ້.';
 }

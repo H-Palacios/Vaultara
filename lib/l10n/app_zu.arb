@@ -1979,5 +1979,19 @@
   "hidePassword": "Fihla iphasiwedi",
   "pinCategory": "Phina ngaphezulu",
   "unpinCategory": "Susa ukuphina",
-  "clearSearch": "Cisha ukusesha"
+  "clearSearch": "Cisha ukusesha",
+  "tripPurposeTitle": "Isizathu sohambo",
+  "tripPurposeHoliday": "Iholide",
+  "tripPurposeFamily": "Ukuvakashela umndeni noma abangane",
+  "tripPurposeBusiness": "Ibhizinisi",
+  "tripPurposeStudy": "Ukufunda",
+  "tripPurposeWork": "Umsebenzi",
+  "visaPurposeStudyNeeded": "Ngokuvamile kudingeka i-visa yokufunda",
+  "visaPurposeWorkNeeded": "Ngokuvamile kudingeka i-visa yokusebenza",
+  "visaPurposeStudyNote": "Imithetho yezivakashi ayibandakanyi ukufunda. Ngokuvamile udinga i-visa noma imvume yokufunda. Hlola imithetho esemthethweni bese ufaka isicelo kusenesikhathi.",
+  "visaPurposeWorkNote": "Imithetho yezivakashi ayibandakanyi ukusebenza, noma kukhokhelwa noma kungakhokhelwa. Ngokuvamile udinga i-visa noma imvume yokusebenza. Hlola imithetho esemthethweni bese ufaka isicelo kusenesikhathi.",
+  "visaBusinessNote": "Ukuvakasha kwebhizinisi okufushane njengemihlangano kuvame ukuvunyelwa ngaphansi kwemithetho yezivakashi, kodwa umsebenzi okhokhelwayo awuvunyelwa. Hlola imithetho esemthethweni.",
+  "visaVisitorRules": "Imithetho yezivakashi: {status}",
+  "visaOfficialRules": "Imithetho esemthethweni",
+  "visaLeavingRulesNote": "I-Vaultara ayiyona ingxenye yale sayithi. Uma le sayithi isho okuhlukile ku-Vaultara, landela le sayithi."
 }

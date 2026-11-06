@@ -2018,5 +2018,19 @@
   "hidePassword": "পাসওয়ার্ড লুকান",
   "pinCategory": "উপরে পিন করুন",
   "unpinCategory": "পিন সরান",
-  "clearSearch": "অনুসন্ধান মুছুন"
+  "clearSearch": "অনুসন্ধান মুছুন",
+  "tripPurposeTitle": "ভ্রমণের কারণ",
+  "tripPurposeHoliday": "ছুটি",
+  "tripPurposeFamily": "পরিবার বা বন্ধুদের সাথে দেখা",
+  "tripPurposeBusiness": "ব্যবসা",
+  "tripPurposeStudy": "পড়াশোনা",
+  "tripPurposeWork": "কাজ",
+  "visaPurposeStudyNeeded": "সাধারণত স্টুডেন্ট ভিসা দরকার",
+  "visaPurposeWorkNeeded": "সাধারণত ওয়ার্ক ভিসা দরকার",
+  "visaPurposeStudyNote": "ভ্রমণকারীদের নিয়মে পড়াশোনা অন্তর্ভুক্ত নয়। সাধারণত স্টুডেন্ট ভিসা বা অনুমতি দরকার। অফিসিয়াল নিয়ম দেখুন এবং আগেভাগে আবেদন করুন।",
+  "visaPurposeWorkNote": "ভ্রমণকারীদের নিয়মে কাজ অন্তর্ভুক্ত নয়, বেতনসহ হোক বা না হোক। সাধারণত ওয়ার্ক ভিসা বা অনুমতি দরকার। অফিসিয়াল নিয়ম দেখুন এবং আগেভাগে আবেদন করুন।",
+  "visaBusinessNote": "মিটিংয়ের মতো ছোট ব্যবসায়িক সফর প্রায়ই ভ্রমণকারীদের নিয়মে অনুমোদিত, কিন্তু বেতনভুক্ত কাজ নয়। অফিসিয়াল নিয়ম দেখুন।",
+  "visaVisitorRules": "ভ্রমণকারীদের নিয়ম: {status}",
+  "visaOfficialRules": "অফিসিয়াল নিয়ম",
+  "visaLeavingRulesNote": "Vaultara এই সাইটের অংশ নয়। এই সাইট যদি Vaultara থেকে ভিন্ন কিছু বলে, তাহলে এই সাইট অনুসরণ করুন।"
 }

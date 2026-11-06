@@ -6286,4 +6286,48 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get clearSearch => 'Tühjenda otsing';
+
+  @override
+  String get tripPurposeTitle => 'Reisi põhjus';
+
+  @override
+  String get tripPurposeHoliday => 'Puhkus';
+
+  @override
+  String get tripPurposeFamily => 'Pere või sõprade külastus';
+
+  @override
+  String get tripPurposeBusiness => 'Äri';
+
+  @override
+  String get tripPurposeStudy => 'Õpingud';
+
+  @override
+  String get tripPurposeWork => 'Töö';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Tavaliselt on vaja õppeviisat';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Tavaliselt on vaja tööviisat';
+
+  @override
+  String get visaPurposeStudyNote => 'Külastajate reeglid ei kehti õppimise kohta. Tavaliselt on vaja õppeviisat või -luba. Kontrolli ametlikke reegleid ja taotle varakult.';
+
+  @override
+  String get visaPurposeWorkNote => 'Külastajate reeglid ei kehti töötamise kohta, olgu see tasuline või tasuta. Tavaliselt on vaja tööviisat või -luba. Kontrolli ametlikke reegleid ja taotle varakult.';
+
+  @override
+  String get visaBusinessNote => 'Lühikesed ärireisid, näiteks koosolekud, on külastajate reeglite järgi sageli lubatud, kuid tasuline töö mitte. Kontrolli ametlikke reegleid.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Külastajate reeglid: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Ametlikud reeglid';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ei ole selle saidi osa. Kui see sait ütleb midagi muud kui Vaultara, järgi seda saiti.';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get clearSearch => 'खोज साफ़ करें';
+
+  @override
+  String get tripPurposeTitle => 'यात्रा का कारण';
+
+  @override
+  String get tripPurposeHoliday => 'छुट्टी';
+
+  @override
+  String get tripPurposeFamily => 'परिवार या दोस्तों से मिलना';
+
+  @override
+  String get tripPurposeBusiness => 'व्यापार';
+
+  @override
+  String get tripPurposeStudy => 'पढ़ाई';
+
+  @override
+  String get tripPurposeWork => 'काम';
+
+  @override
+  String get visaPurposeStudyNeeded => 'आमतौर पर स्टूडेंट वीज़ा ज़रूरी';
+
+  @override
+  String get visaPurposeWorkNeeded => 'आमतौर पर वर्क वीज़ा ज़रूरी';
+
+  @override
+  String get visaPurposeStudyNote => 'विज़िटर नियमों में पढ़ाई शामिल नहीं है। आमतौर पर आपको स्टूडेंट वीज़ा या परमिट चाहिए। आधिकारिक नियम देखें और जल्दी आवेदन करें।';
+
+  @override
+  String get visaPurposeWorkNote => 'विज़िटर नियमों में काम शामिल नहीं है, चाहे वेतन वाला हो या बिना वेतन का। आमतौर पर आपको वर्क वीज़ा या परमिट चाहिए। आधिकारिक नियम देखें और जल्दी आवेदन करें।';
+
+  @override
+  String get visaBusinessNote => 'मीटिंग जैसी छोटी व्यापारिक यात्राओं की अक्सर विज़िटर नियमों में अनुमति होती है, लेकिन वेतन वाले काम की नहीं। आधिकारिक नियम देखें।';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'विज़िटर नियम: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'आधिकारिक नियम';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara इस साइट का हिस्सा नहीं है। अगर यह साइट Vaultara से अलग कुछ कहती है, तो इस साइट का पालन करें।';
 }

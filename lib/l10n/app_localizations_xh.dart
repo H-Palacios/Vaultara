@@ -6286,4 +6286,48 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get clearSearch => 'Cima ukukhangela';
+
+  @override
+  String get tripPurposeTitle => 'Isizathu sohambo';
+
+  @override
+  String get tripPurposeHoliday => 'Iholide';
+
+  @override
+  String get tripPurposeFamily => 'Ukutyelela usapho okanye abahlobo';
+
+  @override
+  String get tripPurposeBusiness => 'Ishishini';
+
+  @override
+  String get tripPurposeStudy => 'Izifundo';
+
+  @override
+  String get tripPurposeWork => 'Umsebenzi';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Ngokuqhelekileyo kufuneka ivisa yokufunda';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Ngokuqhelekileyo kufuneka ivisa yokusebenza';
+
+  @override
+  String get visaPurposeStudyNote => 'Imithetho yeendwendwe ayibandakanyi ukufunda. Ngokuqhelekileyo ufuna ivisa okanye imvume yokufunda. Jonga imithetho esemthethweni kwaye ufake isicelo kwangethuba.';
+
+  @override
+  String get visaPurposeWorkNote => 'Imithetho yeendwendwe ayibandakanyi ukusebenza, nokuba kuhlawulwa okanye akuhlawulwa. Ngokuqhelekileyo ufuna ivisa okanye imvume yokusebenza. Jonga imithetho esemthethweni kwaye ufake isicelo kwangethuba.';
+
+  @override
+  String get visaBusinessNote => 'Utyelelo olufutshane lweshishini njengeentlanganiso ludla ngokuvunyelwa phantsi kwemithetho yeendwendwe, kodwa umsebenzi ohlawulwayo awuvunyelwa. Jonga imithetho esemthethweni.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Imithetho yeendwendwe: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Imithetho esemthethweni';
+
+  @override
+  String get visaLeavingRulesNote => 'IVaultara ayiyonxalenye yale sayithi. Ukuba le sayithi ithetha into eyahlukileyo kuVaultara, landela le sayithi.';
 }

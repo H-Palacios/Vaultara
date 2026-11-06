@@ -1999,5 +1999,19 @@
   "hidePassword": "Ocultar contrasinal",
   "pinCategory": "Fixar arriba",
   "unpinCategory": "Desfixar",
-  "clearSearch": "Borrar a busca"
+  "clearSearch": "Borrar a busca",
+  "tripPurposeTitle": "Motivo da viaxe",
+  "tripPurposeHoliday": "Vacacións",
+  "tripPurposeFamily": "Visitar familia ou amizades",
+  "tripPurposeBusiness": "Negocios",
+  "tripPurposeStudy": "Estudos",
+  "tripPurposeWork": "Traballo",
+  "visaPurposeStudyNeeded": "Normalmente precísase visado de estudos",
+  "visaPurposeWorkNeeded": "Normalmente precísase visado de traballo",
+  "visaPurposeStudyNote": "As normas para visitantes non cobren os estudos. Normalmente precisas un visado ou permiso de estudos. Consulta as normas oficiais e solicítao con tempo.",
+  "visaPurposeWorkNote": "As normas para visitantes non cobren o traballo, remunerado ou non. Normalmente precisas un visado ou permiso de traballo. Consulta as normas oficiais e solicítao con tempo.",
+  "visaBusinessNote": "As visitas curtas de negocios, como reunións, adoitan estar permitidas coas normas para visitantes, pero o traballo remunerado non. Consulta as normas oficiais.",
+  "visaVisitorRules": "Normas para visitantes: {status}",
+  "visaOfficialRules": "Normas oficiais",
+  "visaLeavingRulesNote": "Vaultara non forma parte deste sitio. Se este sitio di algo distinto de Vaultara, segue este sitio."
 }

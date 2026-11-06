@@ -6286,4 +6286,48 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get clearSearch => 'Tyhjennä haku';
+
+  @override
+  String get tripPurposeTitle => 'Matkan syy';
+
+  @override
+  String get tripPurposeHoliday => 'Loma';
+
+  @override
+  String get tripPurposeFamily => 'Perheen tai ystävien luona vierailu';
+
+  @override
+  String get tripPurposeBusiness => 'Työmatka';
+
+  @override
+  String get tripPurposeStudy => 'Opiskelu';
+
+  @override
+  String get tripPurposeWork => 'Työ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Opiskeluviisumi yleensä tarvitaan';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Työviisumi yleensä tarvitaan';
+
+  @override
+  String get visaPurposeStudyNote => 'Vierailijoiden säännöt eivät koske opiskelua. Tarvitset yleensä opiskeluviisumin tai -luvan. Tarkista viralliset säännöt ja hae ajoissa.';
+
+  @override
+  String get visaPurposeWorkNote => 'Vierailijoiden säännöt eivät koske työntekoa, palkallista tai palkatonta. Tarvitset yleensä työviisumin tai -luvan. Tarkista viralliset säännöt ja hae ajoissa.';
+
+  @override
+  String get visaBusinessNote => 'Lyhyet työmatkat, kuten kokoukset, ovat vierailijoiden säännöillä usein sallittuja, mutta palkallinen työ ei. Tarkista viralliset säännöt.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Vierailijoiden säännöt: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Viralliset säännöt';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ei ole osa tätä sivustoa. Jos sivusto sanoo jotain muuta kuin Vaultara, noudata sivustoa.';
 }

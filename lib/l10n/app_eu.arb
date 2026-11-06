@@ -2001,5 +2001,19 @@
   "hidePassword": "Ezkutatu pasahitza",
   "pinCategory": "Finkatu goian",
   "unpinCategory": "Desfinkatu",
-  "clearSearch": "Garbitu bilaketa"
+  "clearSearch": "Garbitu bilaketa",
+  "tripPurposeTitle": "Bidaiaren arrazoia",
+  "tripPurposeHoliday": "Oporrak",
+  "tripPurposeFamily": "Familia edo lagunak bisitatzea",
+  "tripPurposeBusiness": "Negozioak",
+  "tripPurposeStudy": "Ikasketak",
+  "tripPurposeWork": "Lana",
+  "visaPurposeStudyNeeded": "Normalean ikasketa-bisa behar da",
+  "visaPurposeWorkNeeded": "Normalean lan-bisa behar da",
+  "visaPurposeStudyNote": "Bisitarientzako arauek ez dituzte ikasketak barne hartzen. Normalean ikasketa-bisa edo -baimena behar duzu. Begiratu arau ofizialak eta eskatu garaiz.",
+  "visaPurposeWorkNote": "Bisitarientzako arauek ez dute lana barne hartzen, ordaindua izan ala ez. Normalean lan-bisa edo -baimena behar duzu. Begiratu arau ofizialak eta eskatu garaiz.",
+  "visaBusinessNote": "Negozio-bisita laburrak, bilerak adibidez, askotan baimenduta daude bisitarientzako arauekin, baina lan ordaindua ez. Begiratu arau ofizialak.",
+  "visaVisitorRules": "Bisitarientzako arauak: {status}",
+  "visaOfficialRules": "Arau ofizialak",
+  "visaLeavingRulesNote": "Vaultara ez da gune honen parte. Gune honek Vaultarak ez bezalako zerbait esaten badu, jarraitu gune honi."
 }

@@ -6236,4 +6236,48 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get clearSearch => 'Pa àwárí rẹ́';
+
+  @override
+  String get tripPurposeTitle => 'Ìdí ìrìnàjò';
+
+  @override
+  String get tripPurposeHoliday => 'Ìsinmi';
+
+  @override
+  String get tripPurposeFamily => 'Láti bẹ ẹbí tàbí ọ̀rẹ́ wò';
+
+  @override
+  String get tripPurposeBusiness => 'Ìṣòwò';
+
+  @override
+  String get tripPurposeStudy => 'Ẹ̀kọ́';
+
+  @override
+  String get tripPurposeWork => 'Iṣẹ́';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Ó sábà máa ń nílò fisa akẹ́kọ̀ọ́';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Ó sábà máa ń nílò fisa iṣẹ́';
+
+  @override
+  String get visaPurposeStudyNote => 'Àwọn òfin àlejò kò bo ẹ̀kọ́. O sábà máa ń nílò fisa tàbí ìwé àṣẹ akẹ́kọ̀ọ́. Ṣàyẹ̀wò àwọn òfin ìjọba kí o sì béèrè ní kùtùkùtù.';
+
+  @override
+  String get visaPurposeWorkNote => 'Àwọn òfin àlejò kò bo iṣẹ́, yálà wọ́n ń sanwó tàbí wọn kò sanwó. O sábà máa ń nílò fisa tàbí ìwé àṣẹ iṣẹ́. Ṣàyẹ̀wò àwọn òfin ìjọba kí o sì béèrè ní kùtùkùtù.';
+
+  @override
+  String get visaBusinessNote => 'Àwọn ìrìnàjò ìṣòwò kúkúrú bí ìpàdé sábà máa ń jẹ́ àyè lábẹ́ àwọn òfin àlejò, ṣùgbọ́n iṣẹ́ tí wọ́n ń sanwó fún kò jẹ́. Ṣàyẹ̀wò àwọn òfin ìjọba.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Àwọn òfin àlejò: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Àwọn òfin ìjọba';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara kì í ṣe apá kan ojú-òpó yìí. Tí ojú-òpó yìí bá sọ nǹkan tó yàtọ̀ sí Vaultara, tẹ̀lé ojú-òpó yìí.';
 }

@@ -2005,5 +2005,19 @@
   "hidePassword": "Slēpt paroli",
   "pinCategory": "Piespraust augšā",
   "unpinCategory": "Atspraust",
-  "clearSearch": "Notīrīt meklēšanu"
+  "clearSearch": "Notīrīt meklēšanu",
+  "tripPurposeTitle": "Ceļojuma iemesls",
+  "tripPurposeHoliday": "Atvaļinājums",
+  "tripPurposeFamily": "Ģimenes vai draugu apciemošana",
+  "tripPurposeBusiness": "Darījumu brauciens",
+  "tripPurposeStudy": "Studijas",
+  "tripPurposeWork": "Darbs",
+  "visaPurposeStudyNeeded": "Parasti nepieciešama studiju vīza",
+  "visaPurposeWorkNeeded": "Parasti nepieciešama darba vīza",
+  "visaPurposeStudyNote": "Apmeklētāju noteikumi neattiecas uz studijām. Parasti nepieciešama studiju vīza vai atļauja. Pārbaudiet oficiālos noteikumus un piesakieties laikus.",
+  "visaPurposeWorkNote": "Apmeklētāju noteikumi neattiecas uz darbu, ne apmaksātu, ne neapmaksātu. Parasti nepieciešama darba vīza vai atļauja. Pārbaudiet oficiālos noteikumus un piesakieties laikus.",
+  "visaBusinessNote": "Īsi darījumu braucieni, piemēram, sanāksmes, saskaņā ar apmeklētāju noteikumiem bieži ir atļauti, bet apmaksāts darbs nav. Pārbaudiet oficiālos noteikumus.",
+  "visaVisitorRules": "Apmeklētāju noteikumi: {status}",
+  "visaOfficialRules": "Oficiālie noteikumi",
+  "visaLeavingRulesNote": "Vaultara nav šīs vietnes daļa. Ja šī vietne saka ko citu nekā Vaultara, ievērojiet šo vietni."
 }

@@ -6223,4 +6223,48 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get clearSearch => '検索をクリア';
+
+  @override
+  String get tripPurposeTitle => '旅行の目的';
+
+  @override
+  String get tripPurposeHoliday => '休暇';
+
+  @override
+  String get tripPurposeFamily => '家族や友人の訪問';
+
+  @override
+  String get tripPurposeBusiness => 'ビジネス';
+
+  @override
+  String get tripPurposeStudy => '留学';
+
+  @override
+  String get tripPurposeWork => '就労';
+
+  @override
+  String get visaPurposeStudyNeeded => '通常は留学ビザが必要';
+
+  @override
+  String get visaPurposeWorkNeeded => '通常は就労ビザが必要';
+
+  @override
+  String get visaPurposeStudyNote => '訪問者向けの規則は留学には適用されません。通常は留学ビザまたは許可が必要です。公式の規則を確認し、早めに申請してください。';
+
+  @override
+  String get visaPurposeWorkNote => '訪問者向けの規則は、有償・無償を問わず就労には適用されません。通常は就労ビザまたは許可が必要です。公式の規則を確認し、早めに申請してください。';
+
+  @override
+  String get visaBusinessNote => '会議などの短期の商用訪問は訪問者向けの規則で認められることが多いですが、報酬を伴う仕事は認められません。公式の規則を確認してください。';
+
+  @override
+  String visaVisitorRules(String status) {
+    return '訪問者向けの規則：$status';
+  }
+
+  @override
+  String get visaOfficialRules => '公式の規則';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultaraはこのサイトの一部ではありません。このサイトの内容がVaultaraと異なる場合は、このサイトに従ってください。';
 }

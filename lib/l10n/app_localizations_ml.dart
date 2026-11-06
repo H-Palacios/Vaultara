@@ -6286,4 +6286,48 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get clearSearch => 'തിരയൽ മായ്ക്കുക';
+
+  @override
+  String get tripPurposeTitle => 'യാത്രയുടെ കാരണം';
+
+  @override
+  String get tripPurposeHoliday => 'അവധി';
+
+  @override
+  String get tripPurposeFamily => 'കുടുംബത്തെയോ സുഹൃത്തുക്കളെയോ സന്ദർശിക്കൽ';
+
+  @override
+  String get tripPurposeBusiness => 'ബിസിനസ്';
+
+  @override
+  String get tripPurposeStudy => 'പഠനം';
+
+  @override
+  String get tripPurposeWork => 'ജോലി';
+
+  @override
+  String get visaPurposeStudyNeeded => 'സാധാരണയായി സ്റ്റുഡന്റ് വിസ ആവശ്യമാണ്';
+
+  @override
+  String get visaPurposeWorkNeeded => 'സാധാരണയായി വർക്ക് വിസ ആവശ്യമാണ്';
+
+  @override
+  String get visaPurposeStudyNote => 'സന്ദർശക നിയമങ്ങൾ പഠനത്തിന് ബാധകമല്ല. സാധാരണയായി നിങ്ങൾക്ക് സ്റ്റുഡന്റ് വിസയോ പെർമിറ്റോ വേണം. ഔദ്യോഗിക നിയമങ്ങൾ പരിശോധിച്ച് നേരത്തേ അപേക്ഷിക്കുക.';
+
+  @override
+  String get visaPurposeWorkNote => 'ശമ്പളമുള്ളതോ ഇല്ലാത്തതോ ആയ ജോലിക്ക് സന്ദർശക നിയമങ്ങൾ ബാധകമല്ല. സാധാരണയായി നിങ്ങൾക്ക് വർക്ക് വിസയോ പെർമിറ്റോ വേണം. ഔദ്യോഗിക നിയമങ്ങൾ പരിശോധിച്ച് നേരത്തേ അപേക്ഷിക്കുക.';
+
+  @override
+  String get visaBusinessNote => 'മീറ്റിംഗുകൾ പോലുള്ള ചെറിയ ബിസിനസ് സന്ദർശനങ്ങൾ സന്ദർശക നിയമങ്ങളിൽ പലപ്പോഴും അനുവദനീയമാണ്, എന്നാൽ ശമ്പളമുള്ള ജോലി അനുവദനീയമല്ല. ഔദ്യോഗിക നിയമങ്ങൾ പരിശോധിക്കുക.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'സന്ദർശക നിയമങ്ങൾ: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ഔദ്യോഗിക നിയമങ്ങൾ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ഈ സൈറ്റിന്റെ ഭാഗമല്ല. ഈ സൈറ്റ് Vaultara-യിൽ നിന്ന് വ്യത്യസ്തമായി എന്തെങ്കിലും പറഞ്ഞാൽ, ഈ സൈറ്റ് പിന്തുടരുക.';
 }

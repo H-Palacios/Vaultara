@@ -6418,4 +6418,48 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get clearSearch => 'Počisti iskanje';
+
+  @override
+  String get tripPurposeTitle => 'Razlog za potovanje';
+
+  @override
+  String get tripPurposeHoliday => 'Počitnice';
+
+  @override
+  String get tripPurposeFamily => 'Obisk družine ali prijateljev';
+
+  @override
+  String get tripPurposeBusiness => 'Poslovno';
+
+  @override
+  String get tripPurposeStudy => 'Študij';
+
+  @override
+  String get tripPurposeWork => 'Delo';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Običajno je potreben študijski vizum';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Običajno je potreben delovni vizum';
+
+  @override
+  String get visaPurposeStudyNote => 'Pravila za obiskovalce ne veljajo za študij. Običajno potrebuješ študijski vizum ali dovoljenje. Preveri uradna pravila in zaprosi pravočasno.';
+
+  @override
+  String get visaPurposeWorkNote => 'Pravila za obiskovalce ne veljajo za delo, plačano ali neplačano. Običajno potrebuješ delovni vizum ali dovoljenje. Preveri uradna pravila in zaprosi pravočasno.';
+
+  @override
+  String get visaBusinessNote => 'Kratki poslovni obiski, na primer sestanki, so po pravilih za obiskovalce pogosto dovoljeni, plačano delo pa ne. Preveri uradna pravila.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Pravila za obiskovalce: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Uradna pravila';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ni del tega spletnega mesta. Če to spletno mesto pravi kaj drugega kot Vaultara, upoštevaj to spletno mesto.';
 }

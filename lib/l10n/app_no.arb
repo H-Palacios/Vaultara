@@ -1994,5 +1994,19 @@
   "hidePassword": "Skjul passord",
   "pinCategory": "Fest øverst",
   "unpinCategory": "Løsne",
-  "clearSearch": "Tøm søk"
+  "clearSearch": "Tøm søk",
+  "tripPurposeTitle": "Formål med reisen",
+  "tripPurposeHoliday": "Ferie",
+  "tripPurposeFamily": "Besøke familie eller venner",
+  "tripPurposeBusiness": "Forretningsreise",
+  "tripPurposeStudy": "Studier",
+  "tripPurposeWork": "Arbeid",
+  "visaPurposeStudyNeeded": "Studievisum kreves vanligvis",
+  "visaPurposeWorkNeeded": "Arbeidsvisum kreves vanligvis",
+  "visaPurposeStudyNote": "Reglene for besøkende gjelder ikke studier. Du trenger vanligvis et studievisum eller en studietillatelse. Sjekk de offisielle reglene og søk i god tid.",
+  "visaPurposeWorkNote": "Reglene for besøkende gjelder ikke arbeid, verken betalt eller ubetalt. Du trenger vanligvis et arbeidsvisum eller en arbeidstillatelse. Sjekk de offisielle reglene og søk i god tid.",
+  "visaBusinessNote": "Korte forretningsreiser, som møter, er ofte tillatt etter reglene for besøkende, men betalt arbeid er ikke det. Sjekk de offisielle reglene.",
+  "visaVisitorRules": "Regler for besøkende: {status}",
+  "visaOfficialRules": "Offisielle regler",
+  "visaLeavingRulesNote": "Vaultara er ikke en del av dette nettstedet. Hvis nettstedet sier noe annet enn Vaultara, følg nettstedet."
 }

@@ -6285,4 +6285,48 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get clearSearch => 'Rensa sökning';
+
+  @override
+  String get tripPurposeTitle => 'Syfte med resan';
+
+  @override
+  String get tripPurposeHoliday => 'Semester';
+
+  @override
+  String get tripPurposeFamily => 'Besöka familj eller vänner';
+
+  @override
+  String get tripPurposeBusiness => 'Affärsresa';
+
+  @override
+  String get tripPurposeStudy => 'Studier';
+
+  @override
+  String get tripPurposeWork => 'Arbete';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Studievisum krävs oftast';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Arbetsvisum krävs oftast';
+
+  @override
+  String get visaPurposeStudyNote => 'Reglerna för besökare gäller inte studier. Du behöver oftast ett studievisum eller uppehållstillstånd för studier. Kolla de officiella reglerna och ansök i god tid.';
+
+  @override
+  String get visaPurposeWorkNote => 'Reglerna för besökare gäller inte arbete, betalt eller obetalt. Du behöver oftast ett arbetsvisum eller arbetstillstånd. Kolla de officiella reglerna och ansök i god tid.';
+
+  @override
+  String get visaBusinessNote => 'Korta affärsresor, till exempel möten, är ofta tillåtna enligt reglerna för besökare, men betalt arbete är det inte. Kolla de officiella reglerna.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Regler för besökare: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Officiella regler';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara är inte en del av den här webbplatsen. Om webbplatsen säger något annat än Vaultara ska du följa webbplatsen.';
 }

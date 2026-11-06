@@ -1987,5 +1987,19 @@
   "hidePassword": "Sembunyikan kata laluan",
   "pinCategory": "Semat di atas",
   "unpinCategory": "Nyahsemat",
-  "clearSearch": "Kosongkan carian"
+  "clearSearch": "Kosongkan carian",
+  "tripPurposeTitle": "Sebab perjalanan",
+  "tripPurposeHoliday": "Percutian",
+  "tripPurposeFamily": "Melawat keluarga atau rakan",
+  "tripPurposeBusiness": "Perniagaan",
+  "tripPurposeStudy": "Belajar",
+  "tripPurposeWork": "Kerja",
+  "visaPurposeStudyNeeded": "Biasanya perlu visa pelajar",
+  "visaPurposeWorkNeeded": "Biasanya perlu visa kerja",
+  "visaPurposeStudyNote": "Peraturan pelawat tidak meliputi belajar. Biasanya anda perlu visa atau permit pelajar. Semak peraturan rasmi dan mohon awal.",
+  "visaPurposeWorkNote": "Peraturan pelawat tidak meliputi kerja, sama ada bergaji atau tidak. Biasanya anda perlu visa atau permit kerja. Semak peraturan rasmi dan mohon awal.",
+  "visaBusinessNote": "Lawatan perniagaan singkat seperti mesyuarat sering dibenarkan di bawah peraturan pelawat, tetapi kerja bergaji tidak. Semak peraturan rasmi.",
+  "visaVisitorRules": "Peraturan pelawat: {status}",
+  "visaOfficialRules": "Peraturan rasmi",
+  "visaLeavingRulesNote": "Vaultara bukan sebahagian daripada laman ini. Jika laman ini menyatakan sesuatu yang berbeza daripada Vaultara, ikut laman ini."
 }

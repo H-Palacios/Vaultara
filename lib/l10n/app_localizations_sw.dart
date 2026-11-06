@@ -6286,4 +6286,48 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get clearSearch => 'Futa utafutaji';
+
+  @override
+  String get tripPurposeTitle => 'Sababu ya safari';
+
+  @override
+  String get tripPurposeHoliday => 'Likizo';
+
+  @override
+  String get tripPurposeFamily => 'Kutembelea familia au marafiki';
+
+  @override
+  String get tripPurposeBusiness => 'Biashara';
+
+  @override
+  String get tripPurposeStudy => 'Masomo';
+
+  @override
+  String get tripPurposeWork => 'Kazi';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Kwa kawaida viza ya masomo inahitajika';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Kwa kawaida viza ya kazi inahitajika';
+
+  @override
+  String get visaPurposeStudyNote => 'Masharti ya wageni hayahusu masomo. Kwa kawaida unahitaji viza au kibali cha masomo. Angalia masharti rasmi na utume ombi mapema.';
+
+  @override
+  String get visaPurposeWorkNote => 'Masharti ya wageni hayahusu kazi, iwe ya kulipwa au la. Kwa kawaida unahitaji viza au kibali cha kazi. Angalia masharti rasmi na utume ombi mapema.';
+
+  @override
+  String get visaBusinessNote => 'Ziara fupi za biashara kama mikutano mara nyingi huruhusiwa chini ya masharti ya wageni, lakini kazi ya kulipwa hairuhusiwi. Angalia masharti rasmi.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Masharti ya wageni: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Masharti rasmi';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara si sehemu ya tovuti hii. Ikiwa tovuti hii inasema kitu tofauti na Vaultara, fuata tovuti hii.';
 }

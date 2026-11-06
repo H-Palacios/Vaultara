@@ -1992,5 +1992,19 @@
   "hidePassword": "Fela lykilorð",
   "pinCategory": "Festa efst",
   "unpinCategory": "Losa",
-  "clearSearch": "Hreinsa leit"
+  "clearSearch": "Hreinsa leit",
+  "tripPurposeTitle": "Tilgangur ferðar",
+  "tripPurposeHoliday": "Frí",
+  "tripPurposeFamily": "Heimsókn til fjölskyldu eða vina",
+  "tripPurposeBusiness": "Viðskipti",
+  "tripPurposeStudy": "Nám",
+  "tripPurposeWork": "Vinna",
+  "visaPurposeStudyNeeded": "Námsmannaáritun yfirleitt nauðsynleg",
+  "visaPurposeWorkNeeded": "Atvinnuáritun yfirleitt nauðsynleg",
+  "visaPurposeStudyNote": "Reglur fyrir gesti ná ekki yfir nám. Yfirleitt þarftu námsmannaáritun eða dvalarleyfi vegna náms. Skoðaðu opinberu reglurnar og sæktu um tímanlega.",
+  "visaPurposeWorkNote": "Reglur fyrir gesti ná ekki yfir vinnu, launaða eða ólaunaða. Yfirleitt þarftu atvinnuáritun eða atvinnuleyfi. Skoðaðu opinberu reglurnar og sæktu um tímanlega.",
+  "visaBusinessNote": "Stuttar viðskiptaferðir, eins og fundir, eru oft leyfðar samkvæmt reglum fyrir gesti, en launuð vinna ekki. Skoðaðu opinberu reglurnar.",
+  "visaVisitorRules": "Reglur fyrir gesti: {status}",
+  "visaOfficialRules": "Opinberar reglur",
+  "visaLeavingRulesNote": "Vaultara er ekki hluti af þessari síðu. Ef þessi síða segir eitthvað annað en Vaultara skaltu fylgja síðunni."
 }

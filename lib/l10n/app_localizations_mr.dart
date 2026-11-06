@@ -6286,4 +6286,48 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get clearSearch => 'शोध साफ करा';
+
+  @override
+  String get tripPurposeTitle => 'प्रवासाचे कारण';
+
+  @override
+  String get tripPurposeHoliday => 'सुट्टी';
+
+  @override
+  String get tripPurposeFamily => 'कुटुंब किंवा मित्रांना भेट';
+
+  @override
+  String get tripPurposeBusiness => 'व्यवसाय';
+
+  @override
+  String get tripPurposeStudy => 'शिक्षण';
+
+  @override
+  String get tripPurposeWork => 'नोकरी';
+
+  @override
+  String get visaPurposeStudyNeeded => 'सहसा विद्यार्थी व्हिसा आवश्यक';
+
+  @override
+  String get visaPurposeWorkNeeded => 'सहसा वर्क व्हिसा आवश्यक';
+
+  @override
+  String get visaPurposeStudyNote => 'भेट देणाऱ्यांचे नियम शिक्षणाला लागू होत नाहीत. सहसा तुम्हाला विद्यार्थी व्हिसा किंवा परवानगी लागते. अधिकृत नियम तपासा आणि लवकर अर्ज करा.';
+
+  @override
+  String get visaPurposeWorkNote => 'भेट देणाऱ्यांचे नियम पगारी किंवा बिनपगारी कामाला लागू होत नाहीत. सहसा तुम्हाला वर्क व्हिसा किंवा परवानगी लागते. अधिकृत नियम तपासा आणि लवकर अर्ज करा.';
+
+  @override
+  String get visaBusinessNote => 'बैठकीसारख्या छोट्या व्यावसायिक भेटींना भेट देणाऱ्यांच्या नियमांनुसार अनेकदा परवानगी असते, पण पगारी कामाला नाही. अधिकृत नियम तपासा.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'भेट देणाऱ्यांचे नियम: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'अधिकृत नियम';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara या साइटचा भाग नाही. ही साइट Vaultara पेक्षा वेगळे काही सांगत असल्यास, या साइटचे पालन करा.';
 }
