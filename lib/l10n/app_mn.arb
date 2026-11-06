@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Бичиг баримтуудаа хамтдаа хянахын тулд Vaultara дээр миний өрхөд нэгдээрэй. Энэ холбоос дээр дарна уу: {link}\nЭсвэл Vaultara-г нээгээд Профайл, дараа нь Гэр бүл рүү орж энэ кодыг оруулна уу: {code}",
   "householdInviteCopied": "Урилгын холбоосыг хууллаа",
   "householdSharedRecordsTitle": "Хуваалцсан бичлэгүүд",
-  "householdSharedRecordsIntro": "Таны өрхийн хүн бүр эдгээр бичлэгийг харж, засварлаж чадна, мөн хүн бүр сануулгаа авна.",
+  "householdSharedRecordsIntro": "Таны өрхийн хүн бүр эдгээр бичлэгийг харж, засварлаж, сануулгыг нь авч болно.",
   "householdSharedRecordsEmpty": "Одоогоор юу ч хуваалцаагүй байна. Бичлэг нээгээд Өрхтэй хуваалцсан-ыг асаана уу.",
   "householdSharedCount": "{count, plural, one{{count} бичлэг} other{{count} бичлэг}}",
   "householdShowAllShared": "Хуваалцсан бүх бичлэгийг харуулах",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Буруу эсвэл төөрөгдүүлсэн",
   "assistantReportOther": "Өөр зүйл",
   "assistantReportThanks": "Баярлалаа. Бид энэ хариултыг шалгана.",
-  "groupsNoRecordsSection": "Одоогоор бичлэг алга"
+  "groupsNoRecordsSection": "Одоогоор бичлэг алга",
+  "recordChangedRecently": "{days, plural, =0{Өнөөдөр {name} өөрчилсөн} =1{Өчигдөр {name} өөрчилсөн} other{{days} өдрийн өмнө {name} өөрчилсөн}}",
+  "notifSharedOnlyMineTitle": "Зөвхөн миний нэмсэн бичлэг",
+  "notifSharedOnlyMineSubtitle": "Зөвхөн миний нэмсэн хуваалцсан бичлэгийн талаар сануул. Бусдын нэмсэн бичлэг апп-д харагдсаар байна."
 }

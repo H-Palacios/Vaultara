@@ -4418,7 +4418,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Udostępnione rekordy';
 
   @override
-  String get householdSharedRecordsIntro => 'Wszyscy w twoim gospodarstwie domowym mogą widzieć i edytować te rekordy, a każdy dostaje swoje przypomnienia.';
+  String get householdSharedRecordsIntro => 'Wszyscy w twoim gospodarstwie domowym mogą widzieć i edytować te rekordy oraz mogą dostawać ich przypomnienia.';
 
   @override
   String get householdSharedRecordsEmpty => 'Nic jeszcze nie jest udostępnione. Otwórz rekord i włącz Udostępnione gospodarstwu domowemu.';
@@ -9220,4 +9220,30 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Brak rekordów';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Zmienione przez $name $daysString dni temu',
+      many: 'Zmienione przez $name $daysString dni temu',
+      few: 'Zmienione przez $name $daysString dni temu',
+      one: 'Zmienione przez $name wczoraj',
+      zero: 'Zmienione przez $name dzisiaj',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Tylko rekordy dodane przeze mnie';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Przypominaj mi tylko o udostępnionych rekordach, które dodałem. Rekordy dodane przez innych nadal widać w aplikacji.';
 }

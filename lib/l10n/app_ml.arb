@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "നമ്മുടെ രേഖകൾ ഒരുമിച്ച് ട്രാക്ക് ചെയ്യാൻ Vaultara-യിൽ എന്റെ ഹൗസ്ഹോൾഡിൽ ചേരൂ. ഈ ലിങ്കിൽ ടാപ്പ് ചെയ്യുക: {link}\nഅല്ലെങ്കിൽ Vaultara തുറന്ന് പ്രൊഫൈലിൽ പോയി, പിന്നെ കുടുംബത്തിൽ പോയി ഈ കോഡ് നൽകുക: {code}",
   "householdInviteCopied": "ക്ഷണ ലിങ്ക് പകർത്തി",
   "householdSharedRecordsTitle": "പങ്കിട്ട റെക്കോർഡുകൾ",
-  "householdSharedRecordsIntro": "നിങ്ങളുടെ ഹൗസ്ഹോൾഡിലെ എല്ലാവർക്കും ഈ റെക്കോർഡുകൾ കാണാനും എഡിറ്റ് ചെയ്യാനും കഴിയും, എല്ലാവർക്കും അവയുടെ റിമൈൻഡറുകൾ ലഭിക്കും.",
+  "householdSharedRecordsIntro": "നിങ്ങളുടെ ഹൗസ്ഹോൾഡിലെ എല്ലാവർക്കും ഈ റെക്കോർഡുകൾ കാണാനും എഡിറ്റ് ചെയ്യാനും കഴിയും, അവയുടെ റിമൈൻഡറുകൾ നേടാനും കഴിയും.",
   "householdSharedRecordsEmpty": "ഇതുവരെ ഒന്നും പങ്കിട്ടിട്ടില്ല. ഒരു റെക്കോർഡ് തുറന്ന് ഹൗസ്ഹോൾഡുമായി പങ്കിട്ടത് ഓണാക്കുക.",
   "householdSharedCount": "{count, plural, one{{count} റെക്കോർഡ്} other{{count} റെക്കോർഡുകൾ}}",
   "householdShowAllShared": "പങ്കിട്ട എല്ലാ റെക്കോർഡുകളും കാണിക്കുക",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "തെറ്റോ തെറ്റിദ്ധരിപ്പിക്കുന്നതോ",
   "assistantReportOther": "മറ്റെന്തെങ്കിലും",
   "assistantReportThanks": "നന്ദി. ഞങ്ങൾ ഈ ഉത്തരം പരിശോധിക്കും.",
-  "groupsNoRecordsSection": "ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല"
+  "groupsNoRecordsSection": "ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല",
+  "recordChangedRecently": "{days, plural, =0{ഇന്ന് {name} മാറ്റി} =1{ഇന്നലെ {name} മാറ്റി} other{{days} ദിവസം മുമ്പ് {name} മാറ്റി}}",
+  "notifSharedOnlyMineTitle": "ഞാൻ ചേർത്ത റെക്കോർഡുകൾ മാത്രം",
+  "notifSharedOnlyMineSubtitle": "ഞാൻ ചേർത്ത പങ്കിട്ട റെക്കോർഡുകളെക്കുറിച്ച് മാത്രം ഓർമ്മിപ്പിക്കുക. മറ്റുള്ളവർ ചേർത്തവ ആപ്പിൽ തുടർന്നും കാണും."
 }

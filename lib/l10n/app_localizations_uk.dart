@@ -4411,7 +4411,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Спільні записи';
 
   @override
-  String get householdSharedRecordsIntro => 'Усі у вашому домогосподарстві можуть бачити й редагувати ці записи, і всі отримують нагадування про них.';
+  String get householdSharedRecordsIntro => 'Усі у вашому домогосподарстві можуть бачити й редагувати ці записи, а також отримувати нагадування про них.';
 
   @override
   String get householdSharedRecordsEmpty => 'Поки нічим не поділилися. Відкрийте запис і ввімкніть «Спільний доступ для домогосподарства».';
@@ -9215,4 +9215,30 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Записів поки немає';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Змінено: $name, $daysString дня тому',
+      many: 'Змінено: $name, $daysString днів тому',
+      few: 'Змінено: $name, $daysString дні тому',
+      one: 'Змінено: $name, учора',
+      zero: 'Змінено: $name, сьогодні',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Лише додані мною';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Нагадувати лише про спільні записи, які додав я. Записи, додані іншими, і далі видно в застосунку.';
 }

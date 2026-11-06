@@ -4408,7 +4408,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Sdílené záznamy';
 
   @override
-  String get householdSharedRecordsIntro => 'Každý ve vaší domácnosti může tyto záznamy vidět a upravovat a každý dostává jejich připomenutí.';
+  String get householdSharedRecordsIntro => 'Každý ve vaší domácnosti může tyto záznamy vidět a upravovat a může dostávat jejich připomenutí.';
 
   @override
   String get householdSharedRecordsEmpty => 'Zatím se nic nesdílí. Otevřete záznam a zapněte Sdíleno s domácností.';
@@ -9201,4 +9201,30 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Zatím žádné záznamy';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Před $daysString dny změnil(a) $name',
+      many: 'Před $daysString dny změnil(a) $name',
+      few: 'Před $daysString dny změnil(a) $name',
+      one: 'Včera změnil(a) $name',
+      zero: 'Dnes změnil(a) $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Jen záznamy, které jsem přidal(a)';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Připomínej mi jen sdílené záznamy, které jsem přidal(a). Záznamy ostatních se v aplikaci dál zobrazují.';
 }

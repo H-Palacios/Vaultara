@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Dołącz do mojego gospodarstwa domowego w aplikacji Vaultara, żebyśmy razem pilnowali naszych dokumentów. Dotknij tego linku: {link}\nAlbo otwórz aplikację Vaultara, wejdź w Profil, potem w Rodzina i wpisz ten kod: {code}",
   "householdInviteCopied": "Link do zaproszenia skopiowany",
   "householdSharedRecordsTitle": "Udostępnione rekordy",
-  "householdSharedRecordsIntro": "Wszyscy w twoim gospodarstwie domowym mogą widzieć i edytować te rekordy, a każdy dostaje swoje przypomnienia.",
+  "householdSharedRecordsIntro": "Wszyscy w twoim gospodarstwie domowym mogą widzieć i edytować te rekordy oraz mogą dostawać ich przypomnienia.",
   "householdSharedRecordsEmpty": "Nic jeszcze nie jest udostępnione. Otwórz rekord i włącz Udostępnione gospodarstwu domowemu.",
   "householdSharedCount": "{count, plural, one{{count} rekord} few{{count} rekordy} many{{count} rekordów} other{{count} rekordu}}",
   "householdShowAllShared": "Pokaż wszystkie udostępnione rekordy",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Błędna lub wprowadzająca w błąd",
   "assistantReportOther": "Coś innego",
   "assistantReportThanks": "Dziękujemy. Sprawdzimy tę odpowiedź.",
-  "groupsNoRecordsSection": "Brak rekordów"
+  "groupsNoRecordsSection": "Brak rekordów",
+  "recordChangedRecently": "{days, plural, =0{Zmienione przez {name} dzisiaj} =1{Zmienione przez {name} wczoraj} few{Zmienione przez {name} {days} dni temu} many{Zmienione przez {name} {days} dni temu} other{Zmienione przez {name} {days} dni temu}}",
+  "notifSharedOnlyMineTitle": "Tylko rekordy dodane przeze mnie",
+  "notifSharedOnlyMineSubtitle": "Przypominaj mi tylko o udostępnionych rekordach, które dodałem. Rekordy dodane przez innych nadal widać w aplikacji."
 }

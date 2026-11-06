@@ -4315,7 +4315,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Enregistrements partagés';
 
   @override
-  String get householdSharedRecordsIntro => 'Tous les membres de votre foyer peuvent voir et modifier ces enregistrements, et chacun reçoit les rappels.';
+  String get householdSharedRecordsIntro => 'Tous les membres de votre foyer peuvent voir et modifier ces enregistrements, et peuvent recevoir leurs rappels.';
 
   @override
   String get householdSharedRecordsEmpty => 'Rien n\'est encore partagé. Ouvrez un enregistrement et activez Partagé avec le foyer.';
@@ -9061,4 +9061,28 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Aucun enregistrement pour le moment';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Modifié par $name il y a $daysString jours',
+      one: 'Modifié par $name hier',
+      zero: 'Modifié par $name aujourd\'hui',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Seulement ceux que j\'ai ajoutés';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Me rappeler uniquement les enregistrements partagés que j\'ai ajoutés. Ceux ajoutés par les autres restent visibles dans l\'app.';
 }

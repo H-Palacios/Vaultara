@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "Hujjatlarimizni birga kuzatib borish uchun Vaultara’da mening xonadonimga qoʻshiling. Mana bu havolaga bosing: {link}\nYoki Vaultara’ni oching, Profil, keyin Oila boʻlimiga oʻting va mana bu kodni kiriting: {code}",
   "householdInviteCopied": "Taklif havolasi nusxalandi",
   "householdSharedRecordsTitle": "Ulashilgan yozuvlar",
-  "householdSharedRecordsIntro": "Xonadoningizdagi hamma bu yozuvlarni koʻra oladi va tahrirlay oladi, hamma ularning eslatmalarini oladi.",
+  "householdSharedRecordsIntro": "Xonadoningizdagi hamma bu yozuvlarni koʻra va tahrirlay oladi, ularning eslatmalarini ham olishi mumkin.",
   "householdSharedRecordsEmpty": "Hali hech narsa ulashilmagan. Yozuvni oching va Xonadon bilan ulashilgan ni yoqing.",
   "householdSharedCount": "{count, plural, one{{count} ta yozuv} other{{count} ta yozuv}}",
   "householdShowAllShared": "Barcha ulashilgan yozuvlarni koʻrsatish",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "Notoʻgʻri yoki chalgʻituvchi",
   "assistantReportOther": "Boshqa narsa",
   "assistantReportThanks": "Rahmat. Bu javobni tekshiramiz.",
-  "groupsNoRecordsSection": "Hozircha yozuvlar yoʻq"
+  "groupsNoRecordsSection": "Hozircha yozuvlar yoʻq",
+  "recordChangedRecently": "{days, plural, =0{Bugun {name} oʻzgartirdi} =1{Kecha {name} oʻzgartirdi} other{{days} kun oldin {name} oʻzgartirdi}}",
+  "notifSharedOnlyMineTitle": "Faqat men qoʻshgan yozuvlar",
+  "notifSharedOnlyMineSubtitle": "Faqat men qoʻshgan umumiy yozuvlar haqida eslat. Boshqalar qoʻshgan yozuvlar ilovada koʻrinib turadi."
 }

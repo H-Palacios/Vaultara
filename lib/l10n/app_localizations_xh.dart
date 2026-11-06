@@ -4310,7 +4310,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Iirekhodi ezabelwene';
 
   @override
-  String get householdSharedRecordsIntro => 'Wonke umntu osekhayeni lakho unokubona aze aguqule ezi rekhodi, kwaye wonke umntu ufumana izikhumbuzo zazo.';
+  String get householdSharedRecordsIntro => 'Wonke umntu osekhayeni lakho unokubona aze aguqule ezi rekhodi, kwaye unokufumana izikhumbuzo zazo.';
 
   @override
   String get householdSharedRecordsEmpty => 'Akukho nto yabelwanayo okwangoku. Vula irekhodi uze uvule u-Yabelwene nekhaya.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Akukabikho zirekhodi';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Itshintshwe ngu-$name kwiintsuku ezi-$daysString ezidlulileyo',
+      one: 'Itshintshwe ngu-$name izolo',
+      zero: 'Itshintshwe ngu-$name namhlanje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Iirekhodi endizongezileyo kuphela';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Ndikhumbuze kuphela ngeerekhodi ekwabelwana ngazo endizongezileyo. Iirekhodi ezongezwe ngabanye zisabonakala kwi-app.';
 }

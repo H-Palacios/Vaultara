@@ -1458,7 +1458,7 @@
   "householdInviteMessage": "Bashkohuni me grupin tim të shtëpisë në Vaultara, që t'i ndjekim dokumentet tona së bashku. Prekni këtë lidhje: {link}\nOse hapni Vaultara, shkoni te Profili, pastaj te Familja dhe shkruani këtë kod: {code}",
   "householdInviteCopied": "Lidhja e ftesës u kopjua",
   "householdSharedRecordsTitle": "Regjistrimet e ndara",
-  "householdSharedRecordsIntro": "Të gjithë në grupin tuaj të shtëpisë mund t'i shohin dhe t'i ndryshojnë këto regjistrime, dhe të gjithë marrin kujtesat e tyre.",
+  "householdSharedRecordsIntro": "Të gjithë në grupin tuaj të shtëpisë mund t'i shohin dhe t'i ndryshojnë këto regjistrime, dhe mund të marrin kujtesat e tyre.",
   "householdSharedRecordsEmpty": "Ende nuk është ndarë asgjë. Hapni një regjistrim dhe aktivizoni Ndarë me grupin e shtëpisë.",
   "householdSharedCount": "{count, plural, one{{count} regjistrim} other{{count} regjistrime}}",
   "householdShowAllShared": "Shfaq të gjitha regjistrimet e ndara",
@@ -3452,5 +3452,8 @@
   "assistantReportWrong": "E gabuar ose mashtruese",
   "assistantReportOther": "Diçka tjetër",
   "assistantReportThanks": "Faleminderit. Do ta shqyrtojmë këtë përgjigje.",
-  "groupsNoRecordsSection": "Ende asnjë regjistrim"
+  "groupsNoRecordsSection": "Ende asnjë regjistrim",
+  "recordChangedRecently": "{days, plural, =0{Ndryshuar nga {name} sot} =1{Ndryshuar nga {name} dje} other{Ndryshuar nga {name} {days} ditë më parë}}",
+  "notifSharedOnlyMineTitle": "Vetëm regjistrimet që shtova unë",
+  "notifSharedOnlyMineSubtitle": "Më kujto vetëm për regjistrimet e ndara që shtova unë. Regjistrimet e të tjerëve shfaqen ende në aplikacion."
 }

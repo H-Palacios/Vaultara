@@ -4310,7 +4310,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get householdSharedRecordsTitle => 'شریک شوي ریکارډونه';
 
   @override
-  String get householdSharedRecordsIntro => 'ستاسو په کور کې هر څوک دا ریکارډونه لیدلی او سمولی شي، او هر څوک خپلې یادونې ترلاسه کوي.';
+  String get householdSharedRecordsIntro => 'ستاسو په کور کې هر څوک دا ریکارډونه لیدلی او سمولی شي، او د هغو یادونې ترلاسه کولی شي.';
 
   @override
   String get householdSharedRecordsEmpty => 'تر اوسه څه شریک شوي نه دي. یو ریکارډ خلاص کړئ او له کور سره شریک فعال کړئ.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'تر اوسه هېڅ ریکارډ نشته';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString ورځې مخکې د $name لخوا بدل شو',
+      one: 'پرون د $name لخوا بدل شو',
+      zero: 'نن د $name لخوا بدل شو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'یوازې هغه ریکارډونه چې ما اضافه کړي';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'یوازې د هغو شریکو ریکارډونو یادونه راکړه چې ما اضافه کړي. د نورو اضافه شوي ریکارډونه لا هم په اپ کې ښکاري.';
 }

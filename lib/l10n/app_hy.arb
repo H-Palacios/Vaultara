@@ -1458,7 +1458,7 @@
   "householdInviteMessage": "Միացեք իմ տնային տնտեսությանը Vaultara-ում, որպեսզի միասին հետևենք մեր փաստաթղթերին։ Հպեք այս հղմանը՝ {link}\nԿամ բացեք Vaultara-ն, անցեք Պրոֆիլ, ապա Ընտանիք և մուտքագրեք այս կոդը՝ {code}",
   "householdInviteCopied": "Հրավերի հղումը պատճենվեց",
   "householdSharedRecordsTitle": "Կիսված գրառումներ",
-  "householdSharedRecordsIntro": "Ձեր տնային տնտեսության բոլոր անդամները կարող են տեսնել և խմբագրել այս գրառումները, և բոլորը ստանում են հիշեցումները։",
+  "householdSharedRecordsIntro": "Ձեր տնային տնտեսության բոլոր անդամները կարող են տեսնել և խմբագրել այս գրառումները, և կարող են ստանալ դրանց հիշեցումները։",
   "householdSharedRecordsEmpty": "Դեռ ոչինչ կիսված չէ։ Բացեք գրառում և միացրեք Կիսված է տնային տնտեսության հետ։",
   "householdSharedCount": "{count, plural, one{{count} գրառում} other{{count} գրառում}}",
   "householdShowAllShared": "Ցուցադրել բոլոր կիսված գրառումները",
@@ -3452,5 +3452,8 @@
   "assistantReportWrong": "Սխալ կամ մոլորեցնող",
   "assistantReportOther": "Այլ բան",
   "assistantReportThanks": "Շնորհակալություն։ Մենք կստուգենք այս պատասխանը։",
-  "groupsNoRecordsSection": "Դեռ գրառումներ չկան։"
+  "groupsNoRecordsSection": "Դեռ գրառումներ չկան։",
+  "recordChangedRecently": "{days, plural, =0{Փոխել է {name}-ը այսօր} =1{Փոխել է {name}-ը երեկ} other{Փոխել է {name}-ը {days} օր առաջ}}",
+  "notifSharedOnlyMineTitle": "Միայն իմ ավելացրած գրառումները",
+  "notifSharedOnlyMineSubtitle": "Հիշեցրու ինձ միայն իմ ավելացրած ընդհանուր գրառումների մասին։ Ուրիշների ավելացրածները դեռ երևում են հավելվածում։"
 }

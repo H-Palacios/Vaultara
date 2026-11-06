@@ -4310,7 +4310,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Partekatutako erregistroak';
 
   @override
-  String get householdSharedRecordsIntro => 'Zure etxeko taldeko guztiek ikusi eta edita ditzakete erregistro hauek, eta guztiek jasotzen dituzte haien gogorarazleak.';
+  String get householdSharedRecordsIntro => 'Zure etxeko taldeko guztiek ikusi eta edita ditzakete erregistro hauek, eta haien gogorarazleak jaso ditzakete.';
 
   @override
   String get householdSharedRecordsEmpty => 'Oraindik ez da ezer partekatu. Ireki erregistro bat eta aktibatu Etxeko taldearekin partekatuta.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Oraindik ez dago erregistrorik';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name(e)k aldatua duela $daysString egun',
+      one: '$name(e)k aldatua atzo',
+      zero: '$name(e)k aldatua gaur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Nik gehitutako erregistroak soilik';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Gogorarazi nik gehitutako erregistro partekatuak soilik. Besteek gehitutakoak aplikazioan ikusten jarraitzen dute.';
 }

@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Prisijunkite prie mano namų ūkio Vaultara, kad kartu sektume savo dokumentus. Palieskite šią nuorodą: {link}\nArba atidarykite Vaultara, eikite į Profilis, tada Šeima ir įveskite šį kodą: {code}",
   "householdInviteCopied": "Kvietimo nuoroda nukopijuota",
   "householdSharedRecordsTitle": "Bendrinami įrašai",
-  "householdSharedRecordsIntro": "Visi jūsų namų ūkio nariai gali matyti ir redaguoti šiuos įrašus, ir visi gauna priminimus.",
+  "householdSharedRecordsIntro": "Visi jūsų namų ūkio nariai gali matyti ir redaguoti šiuos įrašus ir gali gauti jų priminimus.",
   "householdSharedRecordsEmpty": "Kol kas niekuo nesidalijama. Atidarykite įrašą ir įjunkite Bendrinama su namų ūkiu.",
   "householdSharedCount": "{count, plural, one{{count} įrašas} few{{count} įrašai} many{{count} įrašo} other{{count} įrašų}}",
   "householdShowAllShared": "Rodyti visus bendrinamus įrašus",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Klaidingas ar klaidinantis",
   "assistantReportOther": "Kita",
   "assistantReportThanks": "Ačiū. Peržiūrėsime šį atsakymą.",
-  "groupsNoRecordsSection": "Įrašų dar nėra"
+  "groupsNoRecordsSection": "Įrašų dar nėra",
+  "recordChangedRecently": "{days, plural, =0{{name} pakeitė šiandien} =1{{name} pakeitė vakar} few{{name} pakeitė prieš {days} dienas} many{{name} pakeitė prieš {days} dienos} other{{name} pakeitė prieš {days} dienų}}",
+  "notifSharedOnlyMineTitle": "Tik mano pridėti įrašai",
+  "notifSharedOnlyMineSubtitle": "Priminti tik apie bendrinamus įrašus, kuriuos pridėjau. Kitų pridėti įrašai vis tiek rodomi programėlėje."
 }

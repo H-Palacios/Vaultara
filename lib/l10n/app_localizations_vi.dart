@@ -4276,7 +4276,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Bản ghi chia sẻ';
 
   @override
-  String get householdSharedRecordsIntro => 'Mọi người trong hộ gia đình đều xem và sửa được các bản ghi này, và ai cũng nhận được lời nhắc.';
+  String get householdSharedRecordsIntro => 'Mọi người trong hộ gia đình đều xem và sửa được các bản ghi này, và có thể nhận lời nhắc của chúng.';
 
   @override
   String get householdSharedRecordsEmpty => 'Chưa có gì được chia sẻ. Hãy mở một bản ghi và bật Chia sẻ với hộ gia đình.';
@@ -8983,4 +8983,28 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Chưa có bản ghi nào';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name đã thay đổi $daysString ngày trước',
+      one: '$name đã thay đổi hôm qua',
+      zero: '$name đã thay đổi hôm nay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Chỉ bản ghi tôi đã thêm';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Chỉ nhắc tôi về các bản ghi chung do tôi thêm. Bản ghi do người khác thêm vẫn hiện trong ứng dụng.';
 }

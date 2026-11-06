@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "加入我在 Vaultara 的家庭组，我们一起管理证件和文件。点按此链接：{link}\n或者打开 Vaultara，依次进入“个人资料”和“家庭”，输入此代码：{code}",
   "householdInviteCopied": "邀请链接已复制",
   "householdSharedRecordsTitle": "共享记录",
-  "householdSharedRecordsIntro": "家庭组内所有人都可以查看和编辑这些记录，并且所有人都会收到提醒。",
+  "householdSharedRecordsIntro": "家庭组中的每个人都可以查看和编辑这些记录，也可以收到它们的提醒。",
   "householdSharedRecordsEmpty": "还没有共享的内容。打开一条记录，并开启“与家庭组共享”。",
   "householdSharedCount": "{count, plural, other{{count} 条记录}}",
   "householdShowAllShared": "显示所有共享记录",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "错误或误导",
   "assistantReportOther": "其他",
   "assistantReportThanks": "谢谢。我们会审核此回答。",
-  "groupsNoRecordsSection": "暂无记录"
+  "groupsNoRecordsSection": "暂无记录",
+  "recordChangedRecently": "{days, plural, =0{{name} 今天修改} =1{{name} 昨天修改} other{{name} {days} 天前修改}}",
+  "notifSharedOnlyMineTitle": "仅我添加的记录",
+  "notifSharedOnlyMineSubtitle": "只提醒我自己添加的共享记录。其他人添加的记录仍会显示在应用中。"
 }

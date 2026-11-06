@@ -4276,7 +4276,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get householdSharedRecordsTitle => '共享记录';
 
   @override
-  String get householdSharedRecordsIntro => '家庭组中的每个人都可以查看和编辑这些记录，并都会收到提醒。';
+  String get householdSharedRecordsIntro => '家庭组中的每个人都可以查看和编辑这些记录，也可以收到它们的提醒。';
 
   @override
   String get householdSharedRecordsEmpty => '还没有共享任何内容。打开一条记录，然后开启与家庭组共享。';
@@ -8983,6 +8983,30 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => '暂无记录';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name $daysString 天前修改',
+      one: '$name 昨天修改',
+      zero: '$name 今天修改',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => '仅我添加的记录';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => '只提醒我自己添加的共享记录。其他人添加的记录仍会显示在应用中。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13245,7 +13269,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get householdSharedRecordsTitle => '共享记录';
 
   @override
-  String get householdSharedRecordsIntro => '家庭组内所有人都可以查看和编辑这些记录，并且所有人都会收到提醒。';
+  String get householdSharedRecordsIntro => '家庭组中的每个人都可以查看和编辑这些记录，也可以收到它们的提醒。';
 
   @override
   String get householdSharedRecordsEmpty => '还没有共享的内容。打开一条记录，并开启“与家庭组共享”。';
@@ -17952,6 +17976,30 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get groupsNoRecordsSection => '暂无记录';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name $daysString 天前修改',
+      one: '$name 昨天修改',
+      zero: '$name 今天修改',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => '仅我添加的记录';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => '只提醒我自己添加的共享记录。其他人添加的记录仍会显示在应用中。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -22214,7 +22262,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get householdSharedRecordsTitle => '已分享的記錄';
 
   @override
-  String get householdSharedRecordsIntro => '您家庭空間內的每個人都能查看和編輯這些記錄，也都會收到提醒。';
+  String get householdSharedRecordsIntro => '您家庭空間內的每個人都能查看和編輯這些記錄，也能收到它們的提醒。';
 
   @override
   String get householdSharedRecordsEmpty => '尚未分享任何內容。請開啟一筆記錄，並開啟「與家庭空間分享」。';
@@ -26921,4 +26969,28 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get groupsNoRecordsSection => '尚無記錄';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name $daysString 天前修改',
+      one: '$name 昨天修改',
+      zero: '$name 今天修改',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => '僅限我新增的記錄';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => '只提醒我自己新增的共用記錄。其他人新增的記錄仍會顯示在應用程式中。';
 }

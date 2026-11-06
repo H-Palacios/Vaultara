@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Vaultara पर मेरे हाउसहोल्ड से जुड़ें, ताकि हम अपने दस्तावेज़ साथ मिलकर संभाल सकें। इस लिंक पर टैप करें: {link}\nया Vaultara खोलें, प्रोफ़ाइल में जाएँ, फिर परिवार में जाएँ और यह कोड दर्ज करें: {code}",
   "householdInviteCopied": "आमंत्रण लिंक कॉपी हो गया",
   "householdSharedRecordsTitle": "साझा रिकॉर्ड",
-  "householdSharedRecordsIntro": "आपके हाउसहोल्ड में हर कोई ये रिकॉर्ड देख और बदल सकता है, और सभी को उनके रिमाइंडर मिलते हैं।",
+  "householdSharedRecordsIntro": "आपके हाउसहोल्ड में हर कोई ये रिकॉर्ड देख और बदल सकता है, और उनके रिमाइंडर पा सकता है।",
   "householdSharedRecordsEmpty": "अभी कुछ भी साझा नहीं है। कोई रिकॉर्ड खोलें और हाउसहोल्ड के साथ साझा चालू करें।",
   "householdSharedCount": "{count, plural, one{{count} रिकॉर्ड} other{{count} रिकॉर्ड}}",
   "householdShowAllShared": "सभी साझा रिकॉर्ड दिखाएँ",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "गलत या भ्रामक",
   "assistantReportOther": "कुछ और",
   "assistantReportThanks": "धन्यवाद। हम इस जवाब की समीक्षा करेंगे।",
-  "groupsNoRecordsSection": "अभी कोई रिकॉर्ड नहीं है"
+  "groupsNoRecordsSection": "अभी कोई रिकॉर्ड नहीं है",
+  "recordChangedRecently": "{days, plural, =0{आज {name} ने बदला} =1{कल {name} ने बदला} other{{days} दिन पहले {name} ने बदला}}",
+  "notifSharedOnlyMineTitle": "सिर्फ़ मेरे जोड़े रिकॉर्ड",
+  "notifSharedOnlyMineSubtitle": "मुझे सिर्फ़ उन शेयर किए गए रिकॉर्ड की याद दिलाएं जो मैंने जोड़े। दूसरों के जोड़े रिकॉर्ड ऐप में दिखते रहेंगे।"
 }

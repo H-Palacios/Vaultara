@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "Bergabunglah ke rumah tangga saya di Vaultara agar kita dapat memantau dokumen kita bersama. Ketuk tautan ini: {link}\nAtau buka Vaultara, masuk ke Profil, lalu Keluarga, dan masukkan kode ini: {code}",
   "householdInviteCopied": "Tautan undangan disalin",
   "householdSharedRecordsTitle": "Catatan bersama",
-  "householdSharedRecordsIntro": "Semua orang di rumah tangga Anda dapat melihat dan mengedit catatan ini, dan semua orang mendapat pengingatnya.",
+  "householdSharedRecordsIntro": "Semua orang di rumah tangga Anda dapat melihat dan mengedit catatan ini, dan bisa mendapat pengingatnya.",
   "householdSharedRecordsEmpty": "Belum ada yang dibagikan. Buka sebuah catatan dan aktifkan Dibagikan ke rumah tangga.",
   "householdSharedCount": "{count, plural, other{{count} catatan}}",
   "householdShowAllShared": "Tampilkan semua catatan bersama",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "Salah atau menyesatkan",
   "assistantReportOther": "Hal lain",
   "assistantReportThanks": "Terima kasih. Kami akan meninjau jawaban ini.",
-  "groupsNoRecordsSection": "Belum ada catatan"
+  "groupsNoRecordsSection": "Belum ada catatan",
+  "recordChangedRecently": "{days, plural, =0{Diubah oleh {name} hari ini} =1{Diubah oleh {name} kemarin} other{Diubah oleh {name} {days} hari lalu}}",
+  "notifSharedOnlyMineTitle": "Hanya catatan yang saya tambahkan",
+  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang catatan bersama yang saya tambahkan. Catatan yang ditambahkan orang lain tetap terlihat di aplikasi."
 }

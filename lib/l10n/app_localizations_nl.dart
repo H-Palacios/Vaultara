@@ -4310,7 +4310,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Gedeelde records';
 
   @override
-  String get householdSharedRecordsIntro => 'Iedereen in je huishouden kan deze records bekijken en bewerken, en iedereen krijgt de herinneringen.';
+  String get householdSharedRecordsIntro => 'Iedereen in je huishouden kan deze records bekijken en bewerken, en kan de herinneringen ervan krijgen.';
 
   @override
   String get householdSharedRecordsEmpty => 'Er is nog niets gedeeld. Open een record en zet Gedeeld met huishouden aan.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Nog geen records';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString dagen geleden gewijzigd door $name',
+      one: 'Gisteren gewijzigd door $name',
+      zero: 'Vandaag gewijzigd door $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Alleen records die ik heb toegevoegd';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Herinner me alleen aan gedeelde records die ik heb toegevoegd. Records van anderen blijven zichtbaar in de app.';
 }

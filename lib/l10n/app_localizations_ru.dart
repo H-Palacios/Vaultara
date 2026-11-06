@@ -4413,7 +4413,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Общие записи';
 
   @override
-  String get householdSharedRecordsIntro => 'Все в вашем домохозяйстве могут видеть и изменять эти записи, и все получают напоминания.';
+  String get householdSharedRecordsIntro => 'Все в вашем домохозяйстве могут видеть и изменять эти записи, а также получать по ним напоминания.';
 
   @override
   String get householdSharedRecordsEmpty => 'Пока ничего не передано в общий доступ. Откройте запись и включите «Общая для домохозяйства».';
@@ -9221,4 +9221,30 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Записей пока нет';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Изменено: $name, $daysString дня назад',
+      many: 'Изменено: $name, $daysString дней назад',
+      few: 'Изменено: $name, $daysString дня назад',
+      one: 'Изменено: $name, вчера',
+      zero: 'Изменено: $name, сегодня',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Только добавленные мной';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Напоминать только об общих записях, которые добавил я. Записи, добавленные другими, по-прежнему видны в приложении.';
 }

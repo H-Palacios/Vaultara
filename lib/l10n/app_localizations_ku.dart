@@ -4310,7 +4310,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Tomarên parvekirî';
 
   @override
-  String get householdSharedRecordsIntro => 'Her kesê di mala te de dikare van tomaran bibîne û biguherîne, û her kes bîrxistinên wan distîne.';
+  String get householdSharedRecordsIntro => 'Her kesê di mala te de dikare van tomaran bibîne û biguherîne, û dikare bîrxistinên wan bistîne.';
 
   @override
   String get householdSharedRecordsEmpty => 'Hêj tiştek nehatiye parvekirin. Tomarekê veke û Bi malê re parvekirî çalak bike.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Hîn tu tomar tune ne';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString roj berê ji aliyê $name ve hat guhertin',
+      one: 'Doh ji aliyê $name ve hat guhertin',
+      zero: 'Îro ji aliyê $name ve hat guhertin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Tenê tomarên ku min zêde kirine';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Tenê ji bo tomarên hevpar ên ku min zêde kirine bîra min bîne. Tomarên ku yên din zêde kirine hîn di sepanê de xuya dibin.';
 }

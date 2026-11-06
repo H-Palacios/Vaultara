@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Doe mee met mijn huishouden op Vaultara, zodat we samen onze documenten bijhouden. Tik op deze link: {link}\nOf open Vaultara, ga naar Profiel, dan Gezin, en voer deze code in: {code}",
   "householdInviteCopied": "Uitnodigingslink gekopieerd",
   "householdSharedRecordsTitle": "Gedeelde records",
-  "householdSharedRecordsIntro": "Iedereen in je huishouden kan deze records bekijken en bewerken, en iedereen krijgt de herinneringen.",
+  "householdSharedRecordsIntro": "Iedereen in je huishouden kan deze records bekijken en bewerken, en kan de herinneringen ervan krijgen.",
   "householdSharedRecordsEmpty": "Er is nog niets gedeeld. Open een record en zet Gedeeld met huishouden aan.",
   "householdSharedCount": "{count, plural, one{{count} record} other{{count} records}}",
   "householdShowAllShared": "Alle gedeelde records tonen",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Onjuist of misleidend",
   "assistantReportOther": "Iets anders",
   "assistantReportThanks": "Bedankt. We bekijken dit antwoord.",
-  "groupsNoRecordsSection": "Nog geen records"
+  "groupsNoRecordsSection": "Nog geen records",
+  "recordChangedRecently": "{days, plural, =0{Vandaag gewijzigd door {name}} =1{Gisteren gewijzigd door {name}} other{{days} dagen geleden gewijzigd door {name}}}",
+  "notifSharedOnlyMineTitle": "Alleen records die ik heb toegevoegd",
+  "notifSharedOnlyMineSubtitle": "Herinner me alleen aan gedeelde records die ik heb toegevoegd. Records van anderen blijven zichtbaar in de app."
 }

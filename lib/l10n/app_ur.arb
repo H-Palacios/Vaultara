@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Vaultara پر میرے گھرانے میں شامل ہوں تاکہ ہم اپنی دستاویزات مل کر سنبھال سکیں۔ اس لنک پر ٹیپ کریں: {link}\nیا Vaultara کھولیں، پروفائل میں جائیں، پھر خاندان میں، اور یہ کوڈ درج کریں: {code}",
   "householdInviteCopied": "دعوتی لنک کاپی ہو گیا",
   "householdSharedRecordsTitle": "شیئر کیے گئے ریکارڈ",
-  "householdSharedRecordsIntro": "آپ کے گھرانے میں سب لوگ یہ ریکارڈ دیکھ اور ایڈٹ کر سکتے ہیں، اور سب کو ان کی یاد دہانیاں ملتی ہیں۔",
+  "householdSharedRecordsIntro": "آپ کے گھرانے میں سب لوگ یہ ریکارڈ دیکھ اور ایڈٹ کر سکتے ہیں، اور ان کی یاد دہانیاں لے سکتے ہیں۔",
   "householdSharedRecordsEmpty": "ابھی کچھ شیئر نہیں کیا گیا۔ کوئی ریکارڈ کھولیں اور گھرانے کے ساتھ شیئر کیا گیا آن کریں۔",
   "householdSharedCount": "{count, plural, one{{count} ریکارڈ} other{{count} ریکارڈ}}",
   "householdShowAllShared": "شیئر کیے گئے تمام ریکارڈ دکھائیں",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "غلط یا گمراہ کن",
   "assistantReportOther": "کچھ اور",
   "assistantReportThanks": "شکریہ۔ ہم اس جواب کا جائزہ لیں گے۔",
-  "groupsNoRecordsSection": "ابھی تک کوئی ریکارڈ نہیں ہے"
+  "groupsNoRecordsSection": "ابھی تک کوئی ریکارڈ نہیں ہے",
+  "recordChangedRecently": "{days, plural, =0{آج {name} نے بدلا} =1{کل {name} نے بدلا} other{{days} دن پہلے {name} نے بدلا}}",
+  "notifSharedOnlyMineTitle": "صرف میرے شامل کیے ریکارڈ",
+  "notifSharedOnlyMineSubtitle": "مجھے صرف ان شیئر کیے گئے ریکارڈ کی یاد دلائیں جو میں نے شامل کیے۔ دوسروں کے شامل کیے ریکارڈ ایپ میں نظر آتے رہیں گے۔"
 }

@@ -4276,7 +4276,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get householdSharedRecordsTitle => 'ບັນທຶກທີ່ແບ່ງປັນ';
 
   @override
-  String get householdSharedRecordsIntro => 'ທຸກຄົນໃນຄົວເຮືອນຂອງທ່ານເຫັນ ແລະ ແກ້ໄຂບັນທຶກເຫຼົ່ານີ້ໄດ້, ແລະ ທຸກຄົນໄດ້ຮັບການເຕືອນຂອງມັນ';
+  String get householdSharedRecordsIntro => 'ທຸກຄົນໃນຄົວເຮືອນຂອງທ່ານເຫັນ ແລະ ແກ້ໄຂບັນທຶກເຫຼົ່ານີ້ໄດ້ ແລະ ສາມາດຮັບການເຕືອນຂອງມັນໄດ້';
 
   @override
   String get householdSharedRecordsEmpty => 'ຍັງບໍ່ໄດ້ແບ່ງປັນຫຍັງເທື່ອ. ເປີດບັນທຶກແລ້ວເປີດ ແບ່ງປັນກັບຄົວເຮືອນ';
@@ -8983,4 +8983,28 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ຍັງບໍ່ມີບັນທຶກ';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name ປ່ຽນ $daysString ມື້ກ່ອນ',
+      one: '$name ປ່ຽນມື້ວານນີ້',
+      zero: '$name ປ່ຽນມື້ນີ້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'ສະເພາະບັນທຶກທີ່ຂ້ອຍເພີ່ມ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'ເຕືອນຂ້ອຍສະເພາະບັນທຶກທີ່ແບ່ງປັນທີ່ຂ້ອຍເພີ່ມ. ບັນທຶກທີ່ຄົນອື່ນເພີ່ມຍັງສະແດງໃນແອັບ.';
 }

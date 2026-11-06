@@ -1461,7 +1461,7 @@
   "householdInviteMessage": "เข้าร่วมครัวเรือนของฉันบน Vaultara เพื่อจะได้ติดตามเอกสารของเราด้วยกัน แตะลิงก์นี้: {link}\nหรือเปิด Vaultara ไปที่โปรไฟล์ แล้วไปที่ครอบครัว และใส่รหัสนี้: {code}",
   "householdInviteCopied": "คัดลอกลิงก์คำเชิญแล้ว",
   "householdSharedRecordsTitle": "รายการที่แชร์",
-  "householdSharedRecordsIntro": "ทุกคนในครัวเรือนของคุณดูและแก้ไขรายการเหล่านี้ได้ และทุกคนจะได้รับการเตือนของรายการเหล่านี้",
+  "householdSharedRecordsIntro": "ทุกคนในครัวเรือนของคุณดูและแก้ไขรายการเหล่านี้ได้ และรับการเตือนของรายการเหล่านี้ได้",
   "householdSharedRecordsEmpty": "ยังไม่มีอะไรถูกแชร์ เปิดรายการแล้วเปิด แชร์กับครัวเรือน",
   "householdSharedCount": "{count, plural, other{{count} รายการ}}",
   "householdShowAllShared": "แสดงรายการที่แชร์ทั้งหมด",
@@ -3455,5 +3455,8 @@
   "assistantReportWrong": "ผิดหรือทำให้เข้าใจผิด",
   "assistantReportOther": "อื่น ๆ",
   "assistantReportThanks": "ขอบคุณ เราจะตรวจสอบคำตอบนี้",
-  "groupsNoRecordsSection": "ยังไม่มีรายการ"
+  "groupsNoRecordsSection": "ยังไม่มีรายการ",
+  "recordChangedRecently": "{days, plural, =0{{name} เปลี่ยนวันนี้} =1{{name} เปลี่ยนเมื่อวาน} other{{name} เปลี่ยนเมื่อ {days} วันก่อน}}",
+  "notifSharedOnlyMineTitle": "เฉพาะรายการที่ฉันเพิ่ม",
+  "notifSharedOnlyMineSubtitle": "เตือนฉันเฉพาะรายการที่แชร์ซึ่งฉันเพิ่มเอง รายการที่คนอื่นเพิ่มยังแสดงในแอป"
 }

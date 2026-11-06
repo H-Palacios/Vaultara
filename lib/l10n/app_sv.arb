@@ -1437,7 +1437,7 @@
   "householdInviteMessage": "Gå med i mitt hushåll i Vaultara så att vi kan hålla koll på våra dokument tillsammans. Tryck på den här länken: {link}\nEller öppna Vaultara, gå till Profil, sedan Familj, och ange den här koden: {code}",
   "householdInviteCopied": "Inbjudningslänken kopierad",
   "householdSharedRecordsTitle": "Delade poster",
-  "householdSharedRecordsIntro": "Alla i ditt hushåll kan se och redigera de här posterna, och alla får sina påminnelser.",
+  "householdSharedRecordsIntro": "Alla i ditt hushåll kan se och redigera de här posterna och kan få deras påminnelser.",
   "householdSharedRecordsEmpty": "Inget är delat ännu. Öppna en post och slå på Delad med hushållet.",
   "householdSharedCount": "{count, plural, one{{count} post} other{{count} poster}}",
   "householdShowAllShared": "Visa alla delade poster",
@@ -3431,5 +3431,8 @@
   "assistantReportWrong": "Fel eller vilseledande",
   "assistantReportOther": "Något annat",
   "assistantReportThanks": "Tack. Vi granskar det här svaret.",
-  "groupsNoRecordsSection": "Inga poster ännu"
+  "groupsNoRecordsSection": "Inga poster ännu",
+  "recordChangedRecently": "{days, plural, =0{Ändrad av {name} i dag} =1{Ändrad av {name} i går} other{Ändrad av {name} för {days} dagar sedan}}",
+  "notifSharedOnlyMineTitle": "Bara poster jag har lagt till",
+  "notifSharedOnlyMineSubtitle": "Påminn mig bara om delade poster som jag har lagt till. Poster som andra har lagt till visas fortfarande i appen."
 }

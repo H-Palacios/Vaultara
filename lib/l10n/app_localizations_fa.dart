@@ -4310,7 +4310,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'رکوردهای مشترک';
 
   @override
-  String get householdSharedRecordsIntro => 'همه اعضای خانوار شما می‌توانند این رکوردها را ببینند و ویرایش کنند و همه یادآوری‌های آن‌ها را می‌گیرند.';
+  String get householdSharedRecordsIntro => 'همه اعضای خانوار شما می‌توانند این رکوردها را ببینند و ویرایش کنند و می‌توانند یادآوری‌های آن‌ها را بگیرند.';
 
   @override
   String get householdSharedRecordsEmpty => 'هنوز چیزی به اشتراک گذاشته نشده است. یک رکورد را باز کنید و گزینه به‌اشتراک‌گذاشته با خانوار را روشن کنید.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'هنوز رکوردی وجود ندارد';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString روز پیش توسط $name تغییر کرد',
+      one: 'دیروز توسط $name تغییر کرد',
+      zero: 'امروز توسط $name تغییر کرد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'فقط رکوردهایی که من افزودم';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'فقط برای رکوردهای مشترکی که خودم افزوده‌ام یادآوری بفرست. رکوردهایی که دیگران افزوده‌اند همچنان در برنامه دیده می‌شوند.';
 }

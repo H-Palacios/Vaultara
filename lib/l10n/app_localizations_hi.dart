@@ -4310,7 +4310,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get householdSharedRecordsTitle => 'साझा रिकॉर्ड';
 
   @override
-  String get householdSharedRecordsIntro => 'आपके हाउसहोल्ड में हर कोई ये रिकॉर्ड देख और बदल सकता है, और सभी को उनके रिमाइंडर मिलते हैं।';
+  String get householdSharedRecordsIntro => 'आपके हाउसहोल्ड में हर कोई ये रिकॉर्ड देख और बदल सकता है, और उनके रिमाइंडर पा सकता है।';
 
   @override
   String get householdSharedRecordsEmpty => 'अभी कुछ भी साझा नहीं है। कोई रिकॉर्ड खोलें और हाउसहोल्ड के साथ साझा चालू करें।';
@@ -9046,4 +9046,28 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'अभी कोई रिकॉर्ड नहीं है';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString दिन पहले $name ने बदला',
+      one: 'कल $name ने बदला',
+      zero: 'आज $name ने बदला',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'सिर्फ़ मेरे जोड़े रिकॉर्ड';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'मुझे सिर्फ़ उन शेयर किए गए रिकॉर्ड की याद दिलाएं जो मैंने जोड़े। दूसरों के जोड़े रिकॉर्ड ऐप में दिखते रहेंगे।';
 }

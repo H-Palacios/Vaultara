@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Junte-se ao meu agregado familiar no Vaultara para controlarmos os nossos documentos em conjunto. Toque neste link: {link}\nOu abra o Vaultara, vá a Perfil, depois a Família, e introduza este código: {code}",
   "householdInviteCopied": "Link do convite copiado",
   "householdSharedRecordsTitle": "Registos partilhados",
-  "householdSharedRecordsIntro": "Todos no seu agregado familiar podem ver e editar estes registos, e todos recebem os respetivos lembretes.",
+  "householdSharedRecordsIntro": "Todos no seu agregado familiar podem ver e editar estes registos, e podem receber os respetivos lembretes.",
   "householdSharedRecordsEmpty": "Ainda não há nada partilhado. Abra um registo e ative Partilhado com o agregado familiar.",
   "householdSharedCount": "{count, plural, one{{count} registo} other{{count} registos}}",
   "householdShowAllShared": "Mostrar todos os registos partilhados",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Errada ou enganosa",
   "assistantReportOther": "Outra coisa",
   "assistantReportThanks": "Obrigado. Vamos rever esta resposta.",
-  "groupsNoRecordsSection": "Ainda não existem registos"
+  "groupsNoRecordsSection": "Ainda não existem registos",
+  "recordChangedRecently": "{days, plural, =0{Alterado por {name} hoje} =1{Alterado por {name} ontem} other{Alterado por {name} há {days} dias}}",
+  "notifSharedOnlyMineTitle": "Só os registos que adicionei",
+  "notifSharedOnlyMineSubtitle": "Lembrar-me só dos registos partilhados que adicionei. Os registos adicionados por outros continuam visíveis na app."
 }

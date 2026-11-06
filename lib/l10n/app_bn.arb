@@ -1475,7 +1475,7 @@
   "householdInviteMessage": "Vaultara-য় আমার হাউসহোল্ডে যোগ দিন, যাতে আমরা একসাথে আমাদের নথিপত্রের হিসাব রাখতে পারি। এই লিংকে ট্যাপ করুন: {link}\nঅথবা Vaultara খুলে প্রোফাইল, তারপর পরিবার-এ গিয়ে এই কোডটি লিখুন: {code}",
   "householdInviteCopied": "আমন্ত্রণ লিংক কপি হয়েছে",
   "householdSharedRecordsTitle": "শেয়ার করা রেকর্ড",
-  "householdSharedRecordsIntro": "আপনার হাউসহোল্ডের সবাই এই রেকর্ডগুলো দেখতে ও সম্পাদনা করতে পারেন, এবং সবাই সেগুলোর রিমাইন্ডার পান।",
+  "householdSharedRecordsIntro": "আপনার হাউসহোল্ডের সবাই এই রেকর্ডগুলো দেখতে ও সম্পাদনা করতে পারেন, এবং সেগুলোর রিমাইন্ডার পেতে পারেন।",
   "householdSharedRecordsEmpty": "এখনও কিছু শেয়ার করা হয়নি। একটি রেকর্ড খুলে হাউসহোল্ডের সঙ্গে শেয়ার চালু করুন।",
   "householdSharedCount": "{count, plural, one{{count}টি রেকর্ড} other{{count}টি রেকর্ড}}",
   "householdShowAllShared": "শেয়ার করা সব রেকর্ড দেখুন",
@@ -3469,5 +3469,8 @@
   "assistantReportWrong": "ভুল বা বিভ্রান্তিকর",
   "assistantReportOther": "অন্য কিছু",
   "assistantReportThanks": "ধন্যবাদ। আমরা এই উত্তরটি পর্যালোচনা করব।",
-  "groupsNoRecordsSection": "এখনও কোনো রেকর্ড নেই"
+  "groupsNoRecordsSection": "এখনও কোনো রেকর্ড নেই",
+  "recordChangedRecently": "{days, plural, =0{আজ {name} পরিবর্তন করেছেন} =1{গতকাল {name} পরিবর্তন করেছেন} other{{days} দিন আগে {name} পরিবর্তন করেছেন}}",
+  "notifSharedOnlyMineTitle": "শুধু আমার যোগ করা রেকর্ড",
+  "notifSharedOnlyMineSubtitle": "শুধু আমার যোগ করা শেয়ার করা রেকর্ডের রিমাইন্ডার দিন। অন্যদের যোগ করা রেকর্ড অ্যাপে দেখা যাবে।"
 }

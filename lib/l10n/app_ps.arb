@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "په Vaultara کې زما له کور سره یوځای شئ ترڅو خپل سندونه یوځای وساتو. دا لینک ټک کړئ: {link}\nیا Vaultara خلاص کړئ، پروفایل ته لاړ شئ، بیا کورنۍ ته، او دا کوډ ولیکئ: {code}",
   "householdInviteCopied": "د بلنې لینک کاپي شو",
   "householdSharedRecordsTitle": "شریک شوي ریکارډونه",
-  "householdSharedRecordsIntro": "ستاسو په کور کې هر څوک دا ریکارډونه لیدلی او سمولی شي، او هر څوک خپلې یادونې ترلاسه کوي.",
+  "householdSharedRecordsIntro": "ستاسو په کور کې هر څوک دا ریکارډونه لیدلی او سمولی شي، او د هغو یادونې ترلاسه کولی شي.",
   "householdSharedRecordsEmpty": "تر اوسه څه شریک شوي نه دي. یو ریکارډ خلاص کړئ او له کور سره شریک فعال کړئ.",
   "householdSharedCount": "{count, plural, one{{count} ریکارډ} other{{count} ریکارډونه}}",
   "householdShowAllShared": "ټول شریک شوي ریکارډونه وښایاست",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "غلط یا ګمراه کوونکی",
   "assistantReportOther": "بل څه",
   "assistantReportThanks": "مننه. موږ به دا ځواب وګورو.",
-  "groupsNoRecordsSection": "تر اوسه هېڅ ریکارډ نشته"
+  "groupsNoRecordsSection": "تر اوسه هېڅ ریکارډ نشته",
+  "recordChangedRecently": "{days, plural, =0{نن د {name} لخوا بدل شو} =1{پرون د {name} لخوا بدل شو} other{{days} ورځې مخکې د {name} لخوا بدل شو}}",
+  "notifSharedOnlyMineTitle": "یوازې هغه ریکارډونه چې ما اضافه کړي",
+  "notifSharedOnlyMineSubtitle": "یوازې د هغو شریکو ریکارډونو یادونه راکړه چې ما اضافه کړي. د نورو اضافه شوي ریکارډونه لا هم په اپ کې ښکاري."
 }

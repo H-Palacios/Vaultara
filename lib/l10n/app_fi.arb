@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Liity kotitalouteeni Vaultarassa, niin voimme seurata asiakirjojamme yhdessä. Napauta tätä linkkiä: {link}\nTai avaa Vaultara, siirry kohtaan Profiili, sitten Perhe ja anna tämä koodi: {code}",
   "householdInviteCopied": "Kutsulinkki kopioitu",
   "householdSharedRecordsTitle": "Jaetut tietueet",
-  "householdSharedRecordsIntro": "Kaikki kotitaloutesi jäsenet näkevät ja voivat muokata näitä tietueita, ja kaikki saavat niiden muistutukset.",
+  "householdSharedRecordsIntro": "Kaikki kotitaloutesi jäsenet näkevät ja voivat muokata näitä tietueita, ja he voivat saada niiden muistutukset.",
   "householdSharedRecordsEmpty": "Mitään ei ole vielä jaettu. Avaa tietue ja ota käyttöön Jaettu kotitalouden kanssa.",
   "householdSharedCount": "{count, plural, one{{count} tietue} other{{count} tietuetta}}",
   "householdShowAllShared": "Näytä kaikki jaetut tietueet",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Väärä tai harhaanjohtava",
   "assistantReportOther": "Jotain muuta",
   "assistantReportThanks": "Kiitos. Tarkistamme tämän vastauksen.",
-  "groupsNoRecordsSection": "Ei vielä tietueita"
+  "groupsNoRecordsSection": "Ei vielä tietueita",
+  "recordChangedRecently": "{days, plural, =0{{name} muutti tänään} =1{{name} muutti eilen} other{{name} muutti {days} päivää sitten}}",
+  "notifSharedOnlyMineTitle": "Vain lisäämäni tietueet",
+  "notifSharedOnlyMineSubtitle": "Muistuta minua vain lisäämistäni jaetuista tietueista. Muiden lisäämät tietueet näkyvät edelleen sovelluksessa."
 }

@@ -1475,7 +1475,7 @@
   "householdInviteMessage": "Deltag i min husstand på Vaultara, så vi kan holde styr på vores dokumenter sammen. Tryk på dette link: {link}\nEller åbn Vaultara, gå til Profil, derefter Familie, og indtast denne kode: {code}",
   "householdInviteCopied": "Invitationslink kopieret",
   "householdSharedRecordsTitle": "Delte poster",
-  "householdSharedRecordsIntro": "Alle i din husstand kan se og redigere disse poster, og alle får deres påmindelser.",
+  "householdSharedRecordsIntro": "Alle i din husstand kan se og redigere disse poster og kan få deres påmindelser.",
   "householdSharedRecordsEmpty": "Intet er delt endnu. Åbn en post, og slå Delt med husstand til.",
   "householdSharedCount": "{count, plural, one{{count} post} other{{count} poster}}",
   "householdShowAllShared": "Vis alle delte poster",
@@ -3469,5 +3469,8 @@
   "assistantReportWrong": "Forkert eller vildledende",
   "assistantReportOther": "Noget andet",
   "assistantReportThanks": "Tak. Vi gennemgår dette svar.",
-  "groupsNoRecordsSection": "Ingen poster endnu"
+  "groupsNoRecordsSection": "Ingen poster endnu",
+  "recordChangedRecently": "{days, plural, =0{Ændret af {name} i dag} =1{Ændret af {name} i går} other{Ændret af {name} for {days} dage siden}}",
+  "notifSharedOnlyMineTitle": "Kun poster, jeg har tilføjet",
+  "notifSharedOnlyMineSubtitle": "Mind mig kun om delte poster, jeg har tilføjet. Poster, som andre har tilføjet, vises stadig i appen."
 }

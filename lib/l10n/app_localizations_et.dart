@@ -4310,7 +4310,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Jagatud kirjed';
 
   @override
-  String get householdSharedRecordsIntro => 'Kõik sinu leibkonnas näevad ja saavad muuta neid kirjeid ning kõik saavad oma meeldetuletused.';
+  String get householdSharedRecordsIntro => 'Kõik sinu leibkonnas näevad ja saavad muuta neid kirjeid ning saavad nende meeldetuletusi.';
 
   @override
   String get householdSharedRecordsEmpty => 'Midagi pole veel jagatud. Ava kirje ja lülita sisse Jagatud leibkonnaga.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Kirjeid pole veel';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name muutis $daysString päeva tagasi',
+      one: '$name muutis eile',
+      zero: '$name muutis täna',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Ainult minu lisatud kirjed';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Tuleta mulle meelde ainult minu lisatud jagatud kirjeid. Teiste lisatud kirjed on rakenduses endiselt näha.';
 }

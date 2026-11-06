@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "Banye n'ụlọ m na Vaultara ka anyị so lekọta akwụkwọ anyị ọnụ. Pịa njikọ a: {link}\nMa ọ bụ mepee Vaultara, gaa na Profaịlụ, wee Ezinụlọ, ma tinye koodu a: {code}",
   "householdInviteCopied": "Edetuola njikọ ọkpọkpọ",
   "householdSharedRecordsTitle": "Ndekọ ekesara",
-  "householdSharedRecordsIntro": "Onye ọ bụla nọ n'ụlọ gị nwere ike ịhụ ma dezie ndekọ ndị a, onye ọ bụla na-enwetakwa ihe ncheta ha.",
+  "householdSharedRecordsIntro": "Onye ọ bụla nọ n'ụlọ gị nwere ike ịhụ ma dezie ndekọ ndị a, ma nwee ike ịnata ihe ncheta ha.",
   "householdSharedRecordsEmpty": "Enwebeghị ihe e kesara. Mepee ndekọ wee meghee Kesaa na ụlọ.",
   "householdSharedCount": "{count, plural, other{Ndekọ {count}}}",
   "householdShowAllShared": "Gosi ndekọ niile e kesara",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "Ezighi ezi ma ọ bụ na-eduhie eduhie",
   "assistantReportOther": "Ihe ọzọ",
   "assistantReportThanks": "Daalụ. Anyị ga-enyocha azịza a.",
-  "groupsNoRecordsSection": "Enweghị ndekọ ka ọ dị"
+  "groupsNoRecordsSection": "Enweghị ndekọ ka ọ dị",
+  "recordChangedRecently": "{days, plural, =0{{name} gbanwere ya taa} =1{{name} gbanwere ya ụnyaahụ} other{{name} gbanwere ya ụbọchị {days} gara aga}}",
+  "notifSharedOnlyMineTitle": "Naanị ndekọ m tinyere",
+  "notifSharedOnlyMineSubtitle": "Chetara m naanị maka ndekọ ekekọrịta m tinyere. Ndekọ ndị ọzọ tinyere ka na-egosi n'ime ngwa ahụ."
 }

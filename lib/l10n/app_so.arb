@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Ku soo biir gurigayga Vaultara si aan dukumentiyadayada wada la socono. Taabo link-gan: {link}\nAma fur Vaultara, tag Bogga shakhsiga, kadibna Qoyska, oo geli koodkan: {code}",
   "householdInviteCopied": "Link-ga casuumaadda waa la koobiyeeyay",
   "householdSharedRecordsTitle": "Diiwaannada la wadaagay",
-  "householdSharedRecordsIntro": "Qof kasta oo gurigaaga ku jira wuu arki karaa oo wax ka beddeli karaa diiwaannadan, qof walbana wuxuu helaa xasuusintooda.",
+  "householdSharedRecordsIntro": "Qof kasta oo gurigaaga ku jira wuu arki karaa oo wax ka beddeli karaa diiwaannadan, wuxuuna heli karaa xasuusintooda.",
   "householdSharedRecordsEmpty": "Wali waxba lama wadaagin. Fur diiwaan oo shid La wadaagay guriga.",
   "householdSharedCount": "{count, plural, one{{count} diiwaan} other{{count} diiwaan}}",
   "householdShowAllShared": "Tus dhammaan diiwaannada la wadaagay",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Khalad ama marin habaabin ah",
   "assistantReportOther": "Wax kale",
   "assistantReportThanks": "Mahadsanid. Waan eegi doonnaa jawaabtan.",
-  "groupsNoRecordsSection": "Weli ma jiraan diiwaanno"
+  "groupsNoRecordsSection": "Weli ma jiraan diiwaanno",
+  "recordChangedRecently": "{days, plural, =0{{name} ayaa beddelay maanta} =1{{name} ayaa beddelay shalay} other{{name} ayaa beddelay {days} maalmood ka hor}}",
+  "notifSharedOnlyMineTitle": "Kaliya diiwaannada aan ku daray",
+  "notifSharedOnlyMineSubtitle": "I xasuusi kaliya diiwaannada la wadaago ee aan ku daray. Diiwaannada dadka kale ku dareen weli waxay ka muuqdaan app-ka."
 }

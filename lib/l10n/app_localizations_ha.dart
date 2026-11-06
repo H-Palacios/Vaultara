@@ -4310,7 +4310,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Rikodin da aka raba';
 
   @override
-  String get householdSharedRecordsIntro => 'Duk wanda ke cikin gidanka zai iya ganin waɗannan rikodin ya gyara su, kuma kowa yana samun tunatarwarsa.';
+  String get householdSharedRecordsIntro => 'Duk wanda ke cikin gidanka zai iya ganin waɗannan rikodin ya gyara su, kuma zai iya samun tunatarwarsu.';
 
   @override
   String get householdSharedRecordsEmpty => 'Ba a raba komai ba tukuna. Buɗe rikodi ka kunna Raba da gida.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Babu rikodi tukuna';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name ya canza kwanaki $daysString da suka wuce',
+      one: '$name ya canza jiya',
+      zero: '$name ya canza yau',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Rikodin da na ƙara kawai';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Ka tuna min rikodin da aka raba waɗanda na ƙara kawai. Rikodin da wasu suka ƙara suna nan a cikin manhajar.';
 }

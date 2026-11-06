@@ -4310,7 +4310,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Geteilte Einträge';
 
   @override
-  String get householdSharedRecordsIntro => 'Alle in deinem Haushalt können diese Einträge sehen und bearbeiten, und alle erhalten ihre Erinnerungen.';
+  String get householdSharedRecordsIntro => 'Alle in deinem Haushalt können diese Einträge sehen und bearbeiten und ihre Erinnerungen erhalten.';
 
   @override
   String get householdSharedRecordsEmpty => 'Noch nichts ist geteilt. Öffne einen Eintrag und schalte Mit Haushalt geteilt ein.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Noch keine Einträge';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Vor $daysString Tagen von $name geändert',
+      one: 'Gestern von $name geändert',
+      zero: 'Heute von $name geändert',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Nur Einträge, die ich hinzugefügt habe';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Erinnere mich nur an geteilte Einträge, die ich hinzugefügt habe. Einträge von anderen bleiben in der App sichtbar.';
 }

@@ -4310,7 +4310,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Споделени записи';
 
   @override
-  String get householdSharedRecordsIntro => 'Всички във вашето домакинство могат да виждат и редактират тези записи, и всички получават напомнянията си.';
+  String get householdSharedRecordsIntro => 'Всички във вашето домакинство могат да виждат и редактират тези записи и могат да получават напомнянията им.';
 
   @override
   String get householdSharedRecordsEmpty => 'Още нищо не е споделено. Отворете запис и включете Споделено с домакинството.';
@@ -9047,4 +9047,28 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Все още няма записи';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Променено от $name преди $daysString дни',
+      one: 'Променено от $name вчера',
+      zero: 'Променено от $name днес',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Само записите, които добавих';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Напомняй ми само за споделените записи, които съм добавил. Записите на другите остават видими в приложението.';
 }

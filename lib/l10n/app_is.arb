@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "Vertu með á heimilinu mínu í Vaultara svo við getum haldið utan um skjölin okkar saman. Ýttu á þennan tengil: {link}\nEða opnaðu Vaultara, farðu í Prófíll, svo Fjölskylda, og sláðu inn þennan kóða: {code}",
   "householdInviteCopied": "Boðstengill afritaður",
   "householdSharedRecordsTitle": "Sameiginlegar færslur",
-  "householdSharedRecordsIntro": "Allir á heimilinu þínu geta séð og breytt þessum færslum og allir fá áminningar þeirra.",
+  "householdSharedRecordsIntro": "Allir á heimilinu þínu geta séð og breytt þessum færslum og geta fengið áminningar þeirra.",
   "householdSharedRecordsEmpty": "Engu er deilt enn. Opnaðu færslu og kveiktu á Deilt með heimili.",
   "householdSharedCount": "{count, plural, one{{count} færsla} other{{count} færslur}}",
   "householdShowAllShared": "Sýna allar sameiginlegar færslur",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "Rangt eða villandi",
   "assistantReportOther": "Eitthvað annað",
   "assistantReportThanks": "Takk fyrir. Við förum yfir þetta svar.",
-  "groupsNoRecordsSection": "Engar færslur enn"
+  "groupsNoRecordsSection": "Engar færslur enn",
+  "recordChangedRecently": "{days, plural, =0{{name} breytti í dag} =1{{name} breytti í gær} other{{name} breytti fyrir {days} dögum}}",
+  "notifSharedOnlyMineTitle": "Aðeins færslur sem ég bætti við",
+  "notifSharedOnlyMineSubtitle": "Minntu mig aðeins á sameiginlegar færslur sem ég bætti við. Færslur annarra sjást áfram í forritinu."
 }

@@ -4352,7 +4352,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Podijeljeni zapisi';
 
   @override
-  String get householdSharedRecordsIntro => 'Svi u vašem kućanstvu mogu vidjeti i uređivati ove zapise, i svi dobivaju svoje podsjetnike.';
+  String get householdSharedRecordsIntro => 'Svi u vašem kućanstvu mogu vidjeti i uređivati ove zapise i mogu dobivati njihove podsjetnike.';
 
   @override
   String get householdSharedRecordsEmpty => 'Još ništa nije podijeljeno. Otvorite zapis i uključite Podijeljeno s kućanstvom.';
@@ -9122,4 +9122,29 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Još nema zapisa';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name izmijenio/la prije $daysString dana',
+      few: '$name izmijenio/la prije $daysString dana',
+      one: '$name izmijenio/la jučer',
+      zero: '$name izmijenio/la danas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Samo zapisi koje sam dodao/la';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Podsjeti me samo na dijeljene zapise koje sam dodao/la. Zapisi koje su dodali drugi i dalje se vide u aplikaciji.';
 }

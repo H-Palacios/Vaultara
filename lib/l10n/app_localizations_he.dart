@@ -4346,7 +4346,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get householdSharedRecordsTitle => 'רשומות משותפות';
 
   @override
-  String get householdSharedRecordsIntro => 'כל מי שבמשק הבית שלך יכול לראות ולערוך את הרשומות האלה, וכולם מקבלים את התזכורות שלהן.';
+  String get householdSharedRecordsIntro => 'כל מי שבמשק הבית שלך יכול לראות ולערוך את הרשומות האלה, ויכול לקבל את התזכורות שלהן.';
 
   @override
   String get householdSharedRecordsEmpty => 'עדיין שום דבר לא משותף. פתח רשומה והפעל שיתוף עם משק הבית.';
@@ -9104,4 +9104,29 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'אין רשומות עדיין';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'שונה על ידי $name לפני $daysString ימים',
+      two: 'שונה על ידי $name לפני יומיים',
+      one: 'שונה על ידי $name אתמול',
+      zero: 'שונה על ידי $name היום',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'רק רשומות שהוספתי';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'להזכיר לי רק על רשומות משותפות שהוספתי. רשומות שאחרים הוסיפו עדיין מופיעות באפליקציה.';
 }

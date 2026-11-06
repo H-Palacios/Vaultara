@@ -4310,7 +4310,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get householdSharedRecordsTitle => 'షేర్ చేసిన రికార్డులు';
 
   @override
-  String get householdSharedRecordsIntro => 'మీ హౌస్‌హోల్డ్‌లోని ప్రతి ఒక్కరూ ఈ రికార్డులను చూడగలరు, సవరించగలరు, మరియు అందరికీ వాటి రిమైండర్‌లు వస్తాయి.';
+  String get householdSharedRecordsIntro => 'మీ హౌస్‌హోల్డ్‌లోని ప్రతి ఒక్కరూ ఈ రికార్డులను చూడగలరు, సవరించగలరు, మరియు వాటి రిమైండర్‌లను పొందగలరు.';
 
   @override
   String get householdSharedRecordsEmpty => 'ఇంకా ఏదీ షేర్ చేయలేదు. ఒక రికార్డును తెరిచి హౌస్‌హోల్డ్‌తో షేర్ చేయడాన్ని ఆన్ చేయండి.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ఇంకా రికార్డులు లేవు';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString రోజుల క్రితం $name మార్చారు',
+      one: 'నిన్న $name మార్చారు',
+      zero: 'ఈరోజు $name మార్చారు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'నేను జోడించిన రికార్డులు మాత్రమే';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'నేను జోడించిన షేర్ చేసిన రికార్డుల గురించి మాత్రమే గుర్తు చేయండి. ఇతరులు జోడించిన రికార్డులు యాప్‌లో కనిపిస్తూనే ఉంటాయి.';
 }

@@ -4274,7 +4274,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get householdSharedRecordsTitle => 'မျှဝေထားသော မှတ်တမ်းများ';
 
   @override
-  String get householdSharedRecordsIntro => 'သင့်အိမ်ထောင်စုရှိ လူတိုင်း ဤမှတ်တမ်းများကို မြင်ရပြီး တည်းဖြတ်နိုင်သည်၊ လူတိုင်း ၎င်းတို့၏ သတိပေးချက်များ ရသည်။';
+  String get householdSharedRecordsIntro => 'သင့်အိမ်ထောင်စုရှိ လူတိုင်း ဤမှတ်တမ်းများကို မြင်ရပြီး တည်းဖြတ်နိုင်ကာ ၎င်းတို့၏ သတိပေးချက်များကို ရယူနိုင်သည်။';
 
   @override
   String get householdSharedRecordsEmpty => 'မျှဝေထားသည် မရှိသေးပါ။ မှတ်တမ်းတစ်ခုကို ဖွင့်ပြီး အိမ်ထောင်စုနှင့် မျှဝေထားသည် ကို ဖွင့်ပါ။';
@@ -8981,4 +8981,28 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'မှတ်တမ်း မရှိသေးပါ။';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString ရက်က $name ပြောင်းခဲ့သည်',
+      one: 'မနေ့က $name ပြောင်းခဲ့သည်',
+      zero: 'ယနေ့ $name ပြောင်းခဲ့သည်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'ကျွန်ုပ်ထည့်ထားသော မှတ်တမ်းများသာ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'ကျွန်ုပ်ထည့်ထားသော မျှဝေမှတ်တမ်းများအတွက်သာ သတိပေးပါ။ အခြားသူများထည့်ထားသော မှတ်တမ်းများ အက်ပ်တွင် ဆက်ပြနေမည်။';
 }

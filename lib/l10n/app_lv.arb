@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Pievienojieties manai mājsaimniecībai Vaultara, lai mēs kopā sekotu saviem dokumentiem. Pieskarieties šai saitei: {link}\nVai atveriet Vaultara, dodieties uz Profils, tad Ģimene un ievadiet šo kodu: {code}",
   "householdInviteCopied": "Ielūguma saite nokopēta",
   "householdSharedRecordsTitle": "Kopīgotie ieraksti",
-  "householdSharedRecordsIntro": "Visi jūsu mājsaimniecības dalībnieki var redzēt un rediģēt šos ierakstus, un visi saņem atgādinājumus.",
+  "householdSharedRecordsIntro": "Visi jūsu mājsaimniecības dalībnieki var redzēt un rediģēt šos ierakstus un var saņemt to atgādinājumus.",
   "householdSharedRecordsEmpty": "Vēl nekas nav kopīgots. Atveriet ierakstu un ieslēdziet Kopīgots ar mājsaimniecību.",
   "householdSharedCount": "{count, plural, zero{{count} ieraksti} one{{count} ieraksts} other{{count} ieraksti}}",
   "householdShowAllShared": "Rādīt visus kopīgotos ierakstus",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Nepareizs vai maldinošs",
   "assistantReportOther": "Kas cits",
   "assistantReportThanks": "Paldies. Mēs pārskatīsim šo atbildi.",
-  "groupsNoRecordsSection": "Vēl nav ierakstu"
+  "groupsNoRecordsSection": "Vēl nav ierakstu",
+  "recordChangedRecently": "{days, plural, =0{{name} mainīja šodien} =1{{name} mainīja vakar} zero{{name} mainīja pirms {days} dienām} one{{name} mainīja pirms {days} dienas} other{{name} mainīja pirms {days} dienām}}",
+  "notifSharedOnlyMineTitle": "Tikai manis pievienotie ieraksti",
+  "notifSharedOnlyMineSubtitle": "Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē."
 }

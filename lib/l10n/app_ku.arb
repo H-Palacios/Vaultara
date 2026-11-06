@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Tevlî mala min a li Vaultara bibe da ku em belgeyên xwe bi hev re bişopînin. Li vê girêdanê bixe: {link}\nAn Vaultara veke, here Profîl, paşê Malbat, û vê kodê têkevîne: {code}",
   "householdInviteCopied": "Girêdana vexwendinê hat kopîkirin",
   "householdSharedRecordsTitle": "Tomarên parvekirî",
-  "householdSharedRecordsIntro": "Her kesê di mala te de dikare van tomaran bibîne û biguherîne, û her kes bîrxistinên wan distîne.",
+  "householdSharedRecordsIntro": "Her kesê di mala te de dikare van tomaran bibîne û biguherîne, û dikare bîrxistinên wan bistîne.",
   "householdSharedRecordsEmpty": "Hêj tiştek nehatiye parvekirin. Tomarekê veke û Bi malê re parvekirî çalak bike.",
   "householdSharedCount": "{count, plural, one{{count} tomar} other{{count} tomar}}",
   "householdShowAllShared": "Hemû tomarên parvekirî nîşan bide",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Şaş an şaşker",
   "assistantReportOther": "Tiştekî din",
   "assistantReportThanks": "Spas. Em ê vê bersivê kontrol bikin.",
-  "groupsNoRecordsSection": "Hîn tu tomar tune ne"
+  "groupsNoRecordsSection": "Hîn tu tomar tune ne",
+  "recordChangedRecently": "{days, plural, =0{Îro ji aliyê {name} ve hat guhertin} =1{Doh ji aliyê {name} ve hat guhertin} other{{days} roj berê ji aliyê {name} ve hat guhertin}}",
+  "notifSharedOnlyMineTitle": "Tenê tomarên ku min zêde kirine",
+  "notifSharedOnlyMineSubtitle": "Tenê ji bo tomarên hevpar ên ku min zêde kirine bîra min bîne. Tomarên ku yên din zêde kirine hîn di sepanê de xuya dibin."
 }

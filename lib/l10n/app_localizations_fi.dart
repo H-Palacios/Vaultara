@@ -4310,7 +4310,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Jaetut tietueet';
 
   @override
-  String get householdSharedRecordsIntro => 'Kaikki kotitaloutesi jäsenet näkevät ja voivat muokata näitä tietueita, ja kaikki saavat niiden muistutukset.';
+  String get householdSharedRecordsIntro => 'Kaikki kotitaloutesi jäsenet näkevät ja voivat muokata näitä tietueita, ja he voivat saada niiden muistutukset.';
 
   @override
   String get householdSharedRecordsEmpty => 'Mitään ei ole vielä jaettu. Avaa tietue ja ota käyttöön Jaettu kotitalouden kanssa.';
@@ -9050,4 +9050,28 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Ei vielä tietueita';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name muutti $daysString päivää sitten',
+      one: '$name muutti eilen',
+      zero: '$name muutti tänään',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Vain lisäämäni tietueet';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Muistuta minua vain lisäämistäni jaetuista tietueista. Muiden lisäämät tietueet näkyvät edelleen sovelluksessa.';
 }

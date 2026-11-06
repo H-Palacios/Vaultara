@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Joyina ikhaya lam kwiVaultara ukuze silandelele amaxwebhu ethu kunye. Cofa eli khonkco: {link}\nOkanye vula iVaultara, uye kwiProfayile, emva koko kuUsapho, uze ufake le khowudi: {code}",
   "householdInviteCopied": "Ikhonkco lesimemo likopishiwe",
   "householdSharedRecordsTitle": "Iirekhodi ezabelwene",
-  "householdSharedRecordsIntro": "Wonke umntu osekhayeni lakho unokubona aze aguqule ezi rekhodi, kwaye wonke umntu ufumana izikhumbuzo zazo.",
+  "householdSharedRecordsIntro": "Wonke umntu osekhayeni lakho unokubona aze aguqule ezi rekhodi, kwaye unokufumana izikhumbuzo zazo.",
   "householdSharedRecordsEmpty": "Akukho nto yabelwanayo okwangoku. Vula irekhodi uze uvule u-Yabelwene nekhaya.",
   "householdSharedCount": "{count, plural, one{Irekhodi e-{count}} other{Iirekhodi ezi-{count}}}",
   "householdShowAllShared": "Bonisa zonke iirekhodi ezabelwene",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Ayichanekanga okanye iyalahlekisa",
   "assistantReportOther": "Enye into",
   "assistantReportThanks": "Enkosi. Siza kuyihlola le mpendulo.",
-  "groupsNoRecordsSection": "Akukabikho zirekhodi"
+  "groupsNoRecordsSection": "Akukabikho zirekhodi",
+  "recordChangedRecently": "{days, plural, =0{Itshintshwe ngu-{name} namhlanje} =1{Itshintshwe ngu-{name} izolo} other{Itshintshwe ngu-{name} kwiintsuku ezi-{days} ezidlulileyo}}",
+  "notifSharedOnlyMineTitle": "Iirekhodi endizongezileyo kuphela",
+  "notifSharedOnlyMineSubtitle": "Ndikhumbuze kuphela ngeerekhodi ekwabelwana ngazo endizongezileyo. Iirekhodi ezongezwe ngabanye zisabonakala kwi-app."
 }

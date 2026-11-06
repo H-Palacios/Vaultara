@@ -4264,7 +4264,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get householdSharedRecordsTitle => '共有された記録';
 
   @override
-  String get householdSharedRecordsIntro => '世帯の全員がこれらの記録を見たり編集したりでき、全員にリマインダーが届きます。';
+  String get householdSharedRecordsIntro => '世帯の全員がこれらの記録を見たり編集したりでき、リマインダーを受け取ることもできます。';
 
   @override
   String get householdSharedRecordsEmpty => 'まだ何も共有されていません。記録を開いて、「世帯と共有」をオンにしてください。';
@@ -8971,4 +8971,28 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'まだ記録がありません';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString日前に $name が変更',
+      one: '昨日 $name が変更',
+      zero: '今日 $name が変更',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => '自分が追加した記録のみ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => '自分が追加した共有記録だけリマインドします。ほかの人が追加した記録もアプリには表示されます。';
 }

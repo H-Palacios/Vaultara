@@ -1475,7 +1475,7 @@
   "householdInviteMessage": "Uneix-te a la meva llar a Vaultara per fer el seguiment dels nostres documents junts. Toca aquest enllaç: {link}\nO obre Vaultara, ves a Perfil, després a Família i introdueix aquest codi: {code}",
   "householdInviteCopied": "Enllaç d’invitació copiat",
   "householdSharedRecordsTitle": "Registres compartits",
-  "householdSharedRecordsIntro": "Tothom a la teva llar pot veure i editar aquests registres, i tothom rep els seus recordatoris.",
+  "householdSharedRecordsIntro": "Tothom a la teva llar pot veure i editar aquests registres, i en pot rebre els recordatoris.",
   "householdSharedRecordsEmpty": "Encara no s’ha compartit res. Obre un registre i activa Compartit amb la llar.",
   "householdSharedCount": "{count, plural, one{{count} registre} other{{count} registres}}",
   "householdShowAllShared": "Mostra tots els registres compartits",
@@ -3469,5 +3469,8 @@
   "assistantReportWrong": "Incorrecte o enganyós",
   "assistantReportOther": "Una altra cosa",
   "assistantReportThanks": "Gràcies. Revisarem aquesta resposta.",
-  "groupsNoRecordsSection": "Encara no hi ha registres"
+  "groupsNoRecordsSection": "Encara no hi ha registres",
+  "recordChangedRecently": "{days, plural, =0{Canviat per {name} avui} =1{Canviat per {name} ahir} other{Canviat per {name} fa {days} dies}}",
+  "notifSharedOnlyMineTitle": "Només els registres que he afegit",
+  "notifSharedOnlyMineSubtitle": "Recorda'm només els registres compartits que he afegit. Els que han afegit altres es continuen veient a l'app."
 }

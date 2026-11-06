@@ -1458,7 +1458,7 @@
   "householdInviteMessage": "Sartu Vaultarako nire etxeko taldean, gure dokumentuen jarraipena elkarrekin egiteko. Sakatu esteka hau: {link}\nEdo ireki Vaultara, joan Profilera, gero Familiara, eta idatzi kode hau: {code}",
   "householdInviteCopied": "Gonbidapen-esteka kopiatu da",
   "householdSharedRecordsTitle": "Partekatutako erregistroak",
-  "householdSharedRecordsIntro": "Zure etxeko taldeko guztiek ikusi eta edita ditzakete erregistro hauek, eta guztiek jasotzen dituzte haien gogorarazleak.",
+  "householdSharedRecordsIntro": "Zure etxeko taldeko guztiek ikusi eta edita ditzakete erregistro hauek, eta haien gogorarazleak jaso ditzakete.",
   "householdSharedRecordsEmpty": "Oraindik ez da ezer partekatu. Ireki erregistro bat eta aktibatu Etxeko taldearekin partekatuta.",
   "householdSharedCount": "{count, plural, one{{count} erregistro} other{{count} erregistro}}",
   "householdShowAllShared": "Erakutsi partekatutako erregistro guztiak",
@@ -3452,5 +3452,8 @@
   "assistantReportWrong": "Okerra edo engainagarria",
   "assistantReportOther": "Beste zerbait",
   "assistantReportThanks": "Eskerrik asko. Erantzun hau berrikusiko dugu.",
-  "groupsNoRecordsSection": "Oraindik ez dago erregistrorik"
+  "groupsNoRecordsSection": "Oraindik ez dago erregistrorik",
+  "recordChangedRecently": "{days, plural, =0{{name}(e)k aldatua gaur} =1{{name}(e)k aldatua atzo} other{{name}(e)k aldatua duela {days} egun}}",
+  "notifSharedOnlyMineTitle": "Nik gehitutako erregistroak soilik",
+  "notifSharedOnlyMineSubtitle": "Gogorarazi nik gehitutako erregistro partekatuak soilik. Besteek gehitutakoak aplikazioan ikusten jarraitzen dute."
 }

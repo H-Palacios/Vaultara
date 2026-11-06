@@ -4310,7 +4310,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Regjistrimet e ndara';
 
   @override
-  String get householdSharedRecordsIntro => 'Të gjithë në grupin tuaj të shtëpisë mund t\'i shohin dhe t\'i ndryshojnë këto regjistrime, dhe të gjithë marrin kujtesat e tyre.';
+  String get householdSharedRecordsIntro => 'Të gjithë në grupin tuaj të shtëpisë mund t\'i shohin dhe t\'i ndryshojnë këto regjistrime, dhe mund të marrin kujtesat e tyre.';
 
   @override
   String get householdSharedRecordsEmpty => 'Ende nuk është ndarë asgjë. Hapni një regjistrim dhe aktivizoni Ndarë me grupin e shtëpisë.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Ende asnjë regjistrim';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Ndryshuar nga $name $daysString ditë më parë',
+      one: 'Ndryshuar nga $name dje',
+      zero: 'Ndryshuar nga $name sot',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Vetëm regjistrimet që shtova unë';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Më kujto vetëm për regjistrimet e ndara që shtova unë. Regjistrimet e të tjerëve shfaqen ende në aplikacion.';
 }

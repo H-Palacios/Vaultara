@@ -1461,7 +1461,7 @@
   "householdInviteMessage": "మన డాక్యుమెంట్‌లను కలిసి ట్రాక్ చేయడానికి Vaultaraలో నా హౌస్‌హోల్డ్‌లో చేరండి. ఈ లింక్‌ను ట్యాప్ చేయండి: {link}\nలేదా Vaultara తెరిచి, ప్రొఫైల్‌కు వెళ్లి, ఆపై కుటుంబంలో ఈ కోడ్‌ను నమోదు చేయండి: {code}",
   "householdInviteCopied": "ఆహ్వాన లింక్ కాపీ అయింది",
   "householdSharedRecordsTitle": "షేర్ చేసిన రికార్డులు",
-  "householdSharedRecordsIntro": "మీ హౌస్‌హోల్డ్‌లోని ప్రతి ఒక్కరూ ఈ రికార్డులను చూడగలరు, సవరించగలరు, మరియు అందరికీ వాటి రిమైండర్‌లు వస్తాయి.",
+  "householdSharedRecordsIntro": "మీ హౌస్‌హోల్డ్‌లోని ప్రతి ఒక్కరూ ఈ రికార్డులను చూడగలరు, సవరించగలరు, మరియు వాటి రిమైండర్‌లను పొందగలరు.",
   "householdSharedRecordsEmpty": "ఇంకా ఏదీ షేర్ చేయలేదు. ఒక రికార్డును తెరిచి హౌస్‌హోల్డ్‌తో షేర్ చేయడాన్ని ఆన్ చేయండి.",
   "householdSharedCount": "{count, plural, one{{count} రికార్డు} other{{count} రికార్డులు}}",
   "householdShowAllShared": "షేర్ చేసిన అన్ని రికార్డులను చూపండి",
@@ -3455,5 +3455,8 @@
   "assistantReportWrong": "తప్పు లేదా తప్పుదారి పట్టించేది",
   "assistantReportOther": "ఇంకేదైనా",
   "assistantReportThanks": "ధన్యవాదాలు. మేము ఈ సమాధానాన్ని సమీక్షిస్తాము.",
-  "groupsNoRecordsSection": "ఇంకా రికార్డులు లేవు"
+  "groupsNoRecordsSection": "ఇంకా రికార్డులు లేవు",
+  "recordChangedRecently": "{days, plural, =0{ఈరోజు {name} మార్చారు} =1{నిన్న {name} మార్చారు} other{{days} రోజుల క్రితం {name} మార్చారు}}",
+  "notifSharedOnlyMineTitle": "నేను జోడించిన రికార్డులు మాత్రమే",
+  "notifSharedOnlyMineSubtitle": "నేను జోడించిన షేర్ చేసిన రికార్డుల గురించి మాత్రమే గుర్తు చేయండి. ఇతరులు జోడించిన రికార్డులు యాప్‌లో కనిపిస్తూనే ఉంటాయి."
 }

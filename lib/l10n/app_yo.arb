@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Darapọ̀ mọ́ ilé mi lórí Vaultara kí a lè jọ máa tọ́pinpin àwọn ìwé wa. Tẹ ọ̀nà asopọ̀ yìí: {link}\nTàbí ṣí Vaultara, lọ sí Profaili, lẹ́yìn náà Ẹbí, kí o sì tẹ kóòdù yìí: {code}",
   "householdInviteCopied": "A ti daakọ ọ̀nà asopọ̀ ìpè",
   "householdSharedRecordsTitle": "Àwọn igbasilẹ tí a pín",
-  "householdSharedRecordsIntro": "Gbogbo ènìyàn tó wà nínú ilé rẹ lè rí àti ṣàtúnṣe àwọn igbasilẹ wọ̀nyí, gbogbo wọn sì ń gba àwọn ìránnilétí wọn.",
+  "householdSharedRecordsIntro": "Gbogbo ènìyàn tó wà nínú ilé rẹ lè rí àti ṣàtúnṣe àwọn igbasilẹ wọ̀nyí, wọ́n sì lè gba àwọn ìránnilétí wọn.",
   "householdSharedRecordsEmpty": "Kò tíì sí ohun tí a pín. Ṣí igbasilẹ kan kí o sì tan Pínpín pẹ̀lú ilé.",
   "householdSharedCount": "{count, plural, other{Igbasilẹ {count}}}",
   "householdShowAllShared": "Fi gbogbo àwọn igbasilẹ tí a pín hàn",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Ó ṣàṣìṣe tàbí ó ń ṣini lọ́nà",
   "assistantReportOther": "Nǹkan mìíràn",
   "assistantReportThanks": "A dúpẹ́. A máa ṣàyẹ̀wò ìdáhùn yìí.",
-  "groupsNoRecordsSection": "Ko si awọn igbasilẹ sibẹsibẹ"
+  "groupsNoRecordsSection": "Ko si awọn igbasilẹ sibẹsibẹ",
+  "recordChangedRecently": "{days, plural, =0{{name} yí i padà lónìí} =1{{name} yí i padà lánàá} other{{name} yí i padà ní ọjọ́ {days} sẹ́yìn}}",
+  "notifSharedOnlyMineTitle": "Àwọn igbasilẹ tí mo fi kún nìkan",
+  "notifSharedOnlyMineSubtitle": "Rán mi létí nípa àwọn igbasilẹ tí a pín tí mo fi kún nìkan. Àwọn igbasilẹ tí àwọn mìíràn fi kún ṣì ń hàn nínú áàpù."
 }

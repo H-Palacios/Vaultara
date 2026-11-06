@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "हामी सँगै कागजातहरू ट्र्याक गर्न Vaultara मा मेरो घरधुरीमा सामेल हुनुहोस्। यो लिङ्कमा ट्याप गर्नुहोस्: {link}\nवा Vaultara खोल्नुहोस्, प्रोफाइल, त्यसपछि परिवारमा जानुहोस्, र यो कोड हाल्नुहोस्: {code}",
   "householdInviteCopied": "आमन्त्रण लिङ्क कपी भयो",
   "householdSharedRecordsTitle": "सेयर गरिएका रेकर्डहरू",
-  "householdSharedRecordsIntro": "तपाईंको घरधुरीमा भएका सबैले यी रेकर्डहरू हेर्न र सम्पादन गर्न सक्छन्, र सबैले तिनका रिमाइन्डर पाउँछन्।",
+  "householdSharedRecordsIntro": "तपाईंको घरधुरीमा भएका सबैले यी रेकर्डहरू हेर्न र सम्पादन गर्न सक्छन्, र तिनका रिमाइन्डर पाउन सक्छन्।",
   "householdSharedRecordsEmpty": "अहिलेसम्म केही सेयर गरिएको छैन। रेकर्ड खोल्नुहोस् र घरधुरीसँग सेयर गरिएको चालु गर्नुहोस्।",
   "householdSharedCount": "{count, plural, one{{count} रेकर्ड} other{{count} रेकर्ड}}",
   "householdShowAllShared": "सेयर गरिएका सबै रेकर्ड देखाउनुहोस्",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "गलत वा भ्रामक",
   "assistantReportOther": "अरू केही",
   "assistantReportThanks": "धन्यवाद। हामी यो उत्तर समीक्षा गर्नेछौं।",
-  "groupsNoRecordsSection": "अहिलेसम्म कुनै रेकर्ड छैन"
+  "groupsNoRecordsSection": "अहिलेसम्म कुनै रेकर्ड छैन",
+  "recordChangedRecently": "{days, plural, =0{आज {name} ले बदल्नुभयो} =1{हिजो {name} ले बदल्नुभयो} other{{days} दिनअघि {name} ले बदल्नुभयो}}",
+  "notifSharedOnlyMineTitle": "मैले थपेका रेकर्ड मात्र",
+  "notifSharedOnlyMineSubtitle": "मैले थपेका साझा रेकर्डको मात्र सम्झना गराउनुहोस्। अरूले थपेका रेकर्ड एपमा देखिइरहन्छन्।"
 }

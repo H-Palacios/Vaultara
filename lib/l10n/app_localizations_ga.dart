@@ -4440,7 +4440,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Taifid roinnte';
 
   @override
-  String get householdSharedRecordsIntro => 'Is féidir le gach duine i do líon tí na taifid seo a fheiceáil agus a chur in eagar, agus faigheann gach duine a gcuid meabhrúchán.';
+  String get householdSharedRecordsIntro => 'Is féidir le gach duine i do líon tí na taifid seo a fheiceáil agus a chur in eagar, agus is féidir leo a gcuid meabhrúchán a fháil.';
 
   @override
   String get householdSharedRecordsEmpty => 'Níl aon rud roinnte go fóill. Oscail taifead agus cuir Roinnte leis an líon tí ar siúl.';
@@ -9248,4 +9248,31 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Níl aon taifid ann fós';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Athraithe ag $name $daysString lá ó shin',
+      many: 'Athraithe ag $name $daysString lá ó shin',
+      few: 'Athraithe ag $name $daysString lá ó shin',
+      two: 'Athraithe ag $name $daysString lá ó shin',
+      one: 'Athraithe ag $name inné',
+      zero: 'Athraithe ag $name inniu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Na taifid a chuir mé leis amháin';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Cuir i gcuimhne dom na taifid roinnte a chuir mé féin leis amháin. Feictear taifid daoine eile san aip fós.';
 }

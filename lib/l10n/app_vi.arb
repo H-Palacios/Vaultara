@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Hãy tham gia hộ gia đình của tôi trên Vaultara để chúng ta cùng theo dõi giấy tờ. Chạm vào liên kết này: {link}\nHoặc mở Vaultara, vào Hồ sơ, rồi Gia đình, và nhập mã này: {code}",
   "householdInviteCopied": "Đã sao chép liên kết mời",
   "householdSharedRecordsTitle": "Bản ghi chia sẻ",
-  "householdSharedRecordsIntro": "Mọi người trong hộ gia đình đều xem và sửa được các bản ghi này, và ai cũng nhận được lời nhắc.",
+  "householdSharedRecordsIntro": "Mọi người trong hộ gia đình đều xem và sửa được các bản ghi này, và có thể nhận lời nhắc của chúng.",
   "householdSharedRecordsEmpty": "Chưa có gì được chia sẻ. Hãy mở một bản ghi và bật Chia sẻ với hộ gia đình.",
   "householdSharedCount": "{count, plural, other{{count} bản ghi}}",
   "householdShowAllShared": "Hiện tất cả bản ghi chia sẻ",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Sai hoặc gây hiểu lầm",
   "assistantReportOther": "Lý do khác",
   "assistantReportThanks": "Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này.",
-  "groupsNoRecordsSection": "Chưa có bản ghi nào"
+  "groupsNoRecordsSection": "Chưa có bản ghi nào",
+  "recordChangedRecently": "{days, plural, =0{{name} đã thay đổi hôm nay} =1{{name} đã thay đổi hôm qua} other{{name} đã thay đổi {days} ngày trước}}",
+  "notifSharedOnlyMineTitle": "Chỉ bản ghi tôi đã thêm",
+  "notifSharedOnlyMineSubtitle": "Chỉ nhắc tôi về các bản ghi chung do tôi thêm. Bản ghi do người khác thêm vẫn hiện trong ứng dụng."
 }

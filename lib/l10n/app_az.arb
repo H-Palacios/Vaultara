@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "Sənədlərimizi birlikdə izləmək üçün Vaultara-da ev qrupuma qoşulun. Bu keçidə toxunun: {link}\nVə ya Vaultara-nı açın, Profil, sonra Ailə bölməsinə keçin və bu kodu daxil edin: {code}",
   "householdInviteCopied": "Dəvət keçidi kopyalandı",
   "householdSharedRecordsTitle": "Paylaşılan sənədlər",
-  "householdSharedRecordsIntro": "Ev qrupunuzdakı hər kəs bu sənədləri görə və redaktə edə bilər, hər kəs onların xatırlatmalarını alır.",
+  "householdSharedRecordsIntro": "Ev qrupunuzdakı hər kəs bu sənədləri görə və redaktə edə bilər, onların xatırlatmalarını da ala bilər.",
   "householdSharedRecordsEmpty": "Hələ heç nə paylaşılmayıb. Sənədi açın və Ev qrupu ilə paylaşılır seçimini aktiv edin.",
   "householdSharedCount": "{count, plural, one{{count} sənəd} other{{count} sənəd}}",
   "householdShowAllShared": "Bütün paylaşılan sənədləri göstər",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "Səhv və ya çaşdırıcı",
   "assistantReportOther": "Başqa bir şey",
   "assistantReportThanks": "Təşəkkür edirik. Bu cavabı yoxlayacağıq.",
-  "groupsNoRecordsSection": "Hələ sənəd yoxdur"
+  "groupsNoRecordsSection": "Hələ sənəd yoxdur",
+  "recordChangedRecently": "{days, plural, =0{Bu gün {name} dəyişdi} =1{Dünən {name} dəyişdi} other{{days} gün əvvəl {name} dəyişdi}}",
+  "notifSharedOnlyMineTitle": "Yalnız əlavə etdiyim sənədlər",
+  "notifSharedOnlyMineSubtitle": "Yalnız əlavə etdiyim paylaşılan sənədlər barədə xatırlat. Başqalarının əlavə etdiyi sənədlər tətbiqdə görünməyə davam edir."
 }

@@ -4276,7 +4276,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Rekod dikongsi';
 
   @override
-  String get householdSharedRecordsIntro => 'Semua orang dalam isi rumah anda boleh melihat dan menyunting rekod ini, dan semua orang mendapat peringatannya.';
+  String get householdSharedRecordsIntro => 'Semua orang dalam isi rumah anda boleh melihat dan menyunting rekod ini, dan boleh mendapat peringatannya.';
 
   @override
   String get householdSharedRecordsEmpty => 'Belum ada apa-apa yang dikongsi. Buka satu rekod dan hidupkan Dikongsi dengan isi rumah.';
@@ -8983,4 +8983,28 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Tiada rekod lagi';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Diubah oleh $name $daysString hari lalu',
+      one: 'Diubah oleh $name semalam',
+      zero: 'Diubah oleh $name hari ini',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Hanya rekod yang saya tambah';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Ingatkan saya hanya tentang rekod kongsi yang saya tambah. Rekod yang ditambah orang lain masih dipaparkan dalam apl.';
 }

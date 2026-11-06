@@ -1451,7 +1451,7 @@
   "householdInviteMessage": "Μπείτε στο νοικοκυριό μου στο Vaultara για να παρακολουθούμε μαζί τα έγγραφά μας. Πατήστε αυτόν τον σύνδεσμο: {link}\nΉ ανοίξτε το Vaultara, πηγαίνετε στο Προφίλ, μετά στην Οικογένεια και εισαγάγετε αυτόν τον κωδικό: {code}",
   "householdInviteCopied": "Ο σύνδεσμος πρόσκλησης αντιγράφηκε",
   "householdSharedRecordsTitle": "Κοινόχρηστες εγγραφές",
-  "householdSharedRecordsIntro": "Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτές τις εγγραφές, και όλοι λαμβάνουν τις υπενθυμίσεις τους.",
+  "householdSharedRecordsIntro": "Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτές τις εγγραφές και μπορούν να λαμβάνουν τις υπενθυμίσεις τους.",
   "householdSharedRecordsEmpty": "Δεν έχει μοιραστεί τίποτα ακόμη. Ανοίξτε μια εγγραφή και ενεργοποιήστε το Κοινή με το νοικοκυριό.",
   "householdSharedCount": "{count, plural, one{{count} εγγραφή} other{{count} εγγραφές}}",
   "householdShowAllShared": "Εμφάνιση όλων των κοινόχρηστων εγγραφών",
@@ -3445,5 +3445,8 @@
   "assistantReportWrong": "Λάθος ή παραπλανητικό",
   "assistantReportOther": "Κάτι άλλο",
   "assistantReportThanks": "Ευχαριστούμε. Θα ελέγξουμε αυτή την απάντηση.",
-  "groupsNoRecordsSection": "Δεν υπάρχουν εγγραφές ακόμα"
+  "groupsNoRecordsSection": "Δεν υπάρχουν εγγραφές ακόμα",
+  "recordChangedRecently": "{days, plural, =0{Άλλαξε από {name} σήμερα} =1{Άλλαξε από {name} χθες} other{Άλλαξε από {name} πριν από {days} ημέρες}}",
+  "notifSharedOnlyMineTitle": "Μόνο εγγραφές που πρόσθεσα",
+  "notifSharedOnlyMineSubtitle": "Υπενθύμισέ μου μόνο τις κοινόχρηστες εγγραφές που πρόσθεσα. Οι εγγραφές των άλλων εξακολουθούν να εμφανίζονται στην εφαρμογή."
 }

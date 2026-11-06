@@ -4310,7 +4310,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get householdSharedRecordsTitle => 'শেয়ার করা রেকর্ড';
 
   @override
-  String get householdSharedRecordsIntro => 'আপনার হাউসহোল্ডের সবাই এই রেকর্ডগুলো দেখতে ও সম্পাদনা করতে পারেন, এবং সবাই সেগুলোর রিমাইন্ডার পান।';
+  String get householdSharedRecordsIntro => 'আপনার হাউসহোল্ডের সবাই এই রেকর্ডগুলো দেখতে ও সম্পাদনা করতে পারেন, এবং সেগুলোর রিমাইন্ডার পেতে পারেন।';
 
   @override
   String get householdSharedRecordsEmpty => 'এখনও কিছু শেয়ার করা হয়নি। একটি রেকর্ড খুলে হাউসহোল্ডের সঙ্গে শেয়ার চালু করুন।';
@@ -9046,4 +9046,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'এখনও কোনো রেকর্ড নেই';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString দিন আগে $name পরিবর্তন করেছেন',
+      one: 'গতকাল $name পরিবর্তন করেছেন',
+      zero: 'আজ $name পরিবর্তন করেছেন',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'শুধু আমার যোগ করা রেকর্ড';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'শুধু আমার যোগ করা শেয়ার করা রেকর্ডের রিমাইন্ডার দিন। অন্যদের যোগ করা রেকর্ড অ্যাপে দেখা যাবে।';
 }

@@ -4310,7 +4310,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Rekodi zilizoshirikiwa';
 
   @override
-  String get householdSharedRecordsIntro => 'Kila mtu kwenye kaya yako anaweza kuona na kuhariri rekodi hizi, na kila mtu anapata vikumbusho vyake.';
+  String get householdSharedRecordsIntro => 'Kila mtu kwenye kaya yako anaweza kuona na kuhariri rekodi hizi, na anaweza kupata vikumbusho vyake.';
 
   @override
   String get householdSharedRecordsEmpty => 'Bado hakuna kilichoshirikiwa. Fungua rekodi na uwashe Imeshirikiwa na kaya.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Bado hakuna rekodi';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Ilibadilishwa na $name siku $daysString zilizopita',
+      one: 'Ilibadilishwa na $name jana',
+      zero: 'Ilibadilishwa na $name leo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Rekodi nilizoongeza tu';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Nikumbushe tu kuhusu rekodi zinazoshirikiwa nilizoongeza. Rekodi walizoongeza wengine bado zinaonekana kwenye programu.';
 }

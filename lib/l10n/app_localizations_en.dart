@@ -4325,7 +4325,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Shared records';
 
   @override
-  String get householdSharedRecordsIntro => 'Everyone in your household can see and edit these records, and everyone gets their reminders.';
+  String get householdSharedRecordsIntro => 'Everyone in your household can see and edit these records, and can get their reminders.';
 
   @override
   String get householdSharedRecordsEmpty => 'Nothing is shared yet. Open a record and turn on Shared with household.';
@@ -9066,4 +9066,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'No records yet';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Changed by $name $daysString days ago',
+      one: 'Changed by $name yesterday',
+      zero: 'Changed by $name today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Only records I added';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Remind me only about shared records I added. Records others added still show in the app.';
 }

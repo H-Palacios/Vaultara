@@ -4310,7 +4310,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Rexistros compartidos';
 
   @override
-  String get householdSharedRecordsIntro => 'Todos os do teu fogar poden ver e editar estes rexistros, e todos reciben os seus lembretes.';
+  String get householdSharedRecordsIntro => 'Todos os do teu fogar poden ver e editar estes rexistros, e poden recibir os seus lembretes.';
 
   @override
   String get householdSharedRecordsEmpty => 'Aínda non se compartiu nada. Abre un rexistro e activa Compartido co fogar.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Aínda non hai rexistros';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Cambiado por $name hai $daysString días',
+      one: 'Cambiado por $name onte',
+      zero: 'Cambiado por $name hoxe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Só os rexistros que engadín';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Lembrarme só os rexistros compartidos que engadín. Os que engadiron outros seguen aparecendo na app.';
 }

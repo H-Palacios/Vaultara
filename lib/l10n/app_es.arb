@@ -1451,7 +1451,7 @@
   "householdInviteMessage": "Únete a mi hogar en Vaultara para llevar juntos el control de nuestros documentos. Toca este enlace: {link}\nO abre Vaultara, ve a Perfil, luego a Familia, e introduce este código: {code}",
   "householdInviteCopied": "Enlace de invitación copiado",
   "householdSharedRecordsTitle": "Registros compartidos",
-  "householdSharedRecordsIntro": "Todos los miembros de tu hogar pueden ver y editar estos registros, y todos reciben sus recordatorios.",
+  "householdSharedRecordsIntro": "Todos los miembros de tu hogar pueden ver y editar estos registros, y pueden recibir sus recordatorios.",
   "householdSharedRecordsEmpty": "Todavía no hay nada compartido. Abre un registro y activa Compartido con el hogar.",
   "householdSharedCount": "{count, plural, one{{count} registro} other{{count} registros}}",
   "householdShowAllShared": "Mostrar todos los registros compartidos",
@@ -3445,5 +3445,8 @@
   "assistantReportWrong": "Incorrecta o engañosa",
   "assistantReportOther": "Otra cosa",
   "assistantReportThanks": "Gracias. Revisaremos esta respuesta.",
-  "groupsNoRecordsSection": "Aún no hay registros"
+  "groupsNoRecordsSection": "Aún no hay registros",
+  "recordChangedRecently": "{days, plural, =0{Cambiado por {name} hoy} =1{Cambiado por {name} ayer} other{Cambiado por {name} hace {days} días}}",
+  "notifSharedOnlyMineTitle": "Solo los registros que añadí",
+  "notifSharedOnlyMineSubtitle": "Recordarme solo los registros compartidos que añadí. Los que añadieron otros siguen apareciendo en la app."
 }

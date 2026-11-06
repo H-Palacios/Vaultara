@@ -1482,7 +1482,7 @@
   "householdInviteMessage": "انضم إلى أسرتي في Vaultara لنتابع مستنداتنا معًا. انقر على هذا الرابط: {link}\nأو افتح Vaultara، وانتقل إلى الملف الشخصي ثم العائلة، وأدخل هذا الرمز: {code}",
   "householdInviteCopied": "تم نسخ رابط الدعوة",
   "householdSharedRecordsTitle": "السجلات المشتركة",
-  "householdSharedRecordsIntro": "يستطيع كل أفراد أسرتك رؤية هذه السجلات وتعديلها، ويتلقى الجميع تذكيراتها.",
+  "householdSharedRecordsIntro": "يستطيع كل أفراد أسرتك رؤية هذه السجلات وتعديلها، ويمكنهم تلقي تذكيراتها.",
   "householdSharedRecordsEmpty": "لا شيء مشترك بعد. افتح سجلًا وفعّل مشاركة مع الأسرة.",
   "householdSharedCount": "{count, plural, zero{{count} سجل} one{{count} سجل} two{{count} سجلان} few{{count} سجلات} many{{count} سجلًا} other{{count} سجل}}",
   "householdShowAllShared": "عرض كل السجلات المشتركة",
@@ -3476,5 +3476,8 @@
   "assistantReportWrong": "خاطئ أو مضلل",
   "assistantReportOther": "شيء آخر",
   "assistantReportThanks": "شكرًا لك. سنراجع هذه الإجابة.",
-  "groupsNoRecordsSection": "لا توجد سجلات بعد"
+  "groupsNoRecordsSection": "لا توجد سجلات بعد",
+  "recordChangedRecently": "{days, plural, =0{غيّره {name} اليوم} =1{غيّره {name} أمس} two{غيّره {name} قبل يومين} few{غيّره {name} قبل {days} أيام} many{غيّره {name} قبل {days} يومًا} other{غيّره {name} قبل {days} يوم}}",
+  "notifSharedOnlyMineTitle": "السجلات التي أضفتها فقط",
+  "notifSharedOnlyMineSubtitle": "ذكّرني فقط بالسجلات المشتركة التي أضفتها. تظل السجلات التي أضافها الآخرون ظاهرة في التطبيق."
 }

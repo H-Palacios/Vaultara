@@ -4310,7 +4310,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Κοινόχρηστες εγγραφές';
 
   @override
-  String get householdSharedRecordsIntro => 'Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτές τις εγγραφές, και όλοι λαμβάνουν τις υπενθυμίσεις τους.';
+  String get householdSharedRecordsIntro => 'Όλοι στο νοικοκυριό σας μπορούν να βλέπουν και να επεξεργάζονται αυτές τις εγγραφές και μπορούν να λαμβάνουν τις υπενθυμίσεις τους.';
 
   @override
   String get householdSharedRecordsEmpty => 'Δεν έχει μοιραστεί τίποτα ακόμη. Ανοίξτε μια εγγραφή και ενεργοποιήστε το Κοινή με το νοικοκυριό.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Δεν υπάρχουν εγγραφές ακόμα';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Άλλαξε από $name πριν από $daysString ημέρες',
+      one: 'Άλλαξε από $name χθες',
+      zero: 'Άλλαξε από $name σήμερα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Μόνο εγγραφές που πρόσθεσα';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Υπενθύμισέ μου μόνο τις κοινόχρηστες εγγραφές που πρόσθεσα. Οι εγγραφές των άλλων εξακολουθούν να εμφανίζονται στην εφαρμογή.';
 }

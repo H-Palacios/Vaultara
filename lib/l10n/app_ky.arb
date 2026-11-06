@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Документтерибизди чогуу көзөмөлдөө үчүн менин Vaultara'дагы үй чарбама кошулуңуз. Бул шилтемени басыңыз: {link}\nЖе Vaultara'ны ачып, Профиль, андан кийин Үй-бүлө бөлүмүнө өтүп, бул кодду киргизиңиз: {code}",
   "householdInviteCopied": "Чакыруу шилтемеси көчүрүлдү",
   "householdSharedRecordsTitle": "Бөлүшүлгөн жазуулар",
-  "householdSharedRecordsIntro": "Үй чарбаңыздагы баары бул жазууларды көрүп, оңдой алат жана баары эскертүүлөрүн алат.",
+  "householdSharedRecordsIntro": "Үй чарбаңыздагы баары бул жазууларды көрүп, оңдой алат жана алардын эскертүүлөрүн ала алат.",
   "householdSharedRecordsEmpty": "Азырынча эч нерсе бөлүшүлө элек. Жазууну ачып, Үй чарбасы менен бөлүшүүнү күйгүзүңүз.",
   "householdSharedCount": "{count, plural, one{{count} жазуу} other{{count} жазуу}}",
   "householdShowAllShared": "Бардык бөлүшүлгөн жазууларды көрсөтүү",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Туура эмес же адаштыруучу",
   "assistantReportOther": "Башка нерсе",
   "assistantReportThanks": "Рахмат. Бул жоопту текшеребиз.",
-  "groupsNoRecordsSection": "Азырынча жазуулар жок"
+  "groupsNoRecordsSection": "Азырынча жазуулар жок",
+  "recordChangedRecently": "{days, plural, =0{Бүгүн {name} өзгөрттү} =1{Кечээ {name} өзгөрттү} other{{days} күн мурун {name} өзгөрттү}}",
+  "notifSharedOnlyMineTitle": "Мен кошкон жазуулар гана",
+  "notifSharedOnlyMineSubtitle": "Мен кошкон жалпы жазуулар жөнүндө гана эскерт. Башкалар кошкон жазуулар колдонмодо көрүнө берет."
 }

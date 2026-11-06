@@ -4310,7 +4310,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Paylaşılan kayıtlar';
 
   @override
-  String get householdSharedRecordsIntro => 'Hanenizdeki herkes bu kayıtları görebilir ve düzenleyebilir, herkes de hatırlatmalarını alır.';
+  String get householdSharedRecordsIntro => 'Hanenizdeki herkes bu kayıtları görebilir ve düzenleyebilir, hatırlatmalarını da alabilir.';
 
   @override
   String get householdSharedRecordsEmpty => 'Henüz hiçbir şey paylaşılmadı. Bir kaydı açın ve Haneyle paylaşıldı seçeneğini açın.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Henüz kayıt yok';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString gün önce $name değiştirdi',
+      one: 'Dün $name değiştirdi',
+      zero: 'Bugün $name değiştirdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Yalnızca eklediğim kayıtlar';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Yalnızca eklediğim paylaşılan kayıtlar için hatırlat. Başkalarının eklediği kayıtlar uygulamada görünmeye devam eder.';
 }

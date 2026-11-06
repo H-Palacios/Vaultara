@@ -4309,7 +4309,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get householdSharedRecordsTitle => 'බෙදාගත් වාර්තා';
 
   @override
-  String get householdSharedRecordsIntro => 'ඔබේ ගෘහයේ සියලු දෙනාට මෙම වාර්තා දැකිය හා සංස්කරණය කළ හැකි අතර, සියලු දෙනාට ඒවායේ මතක් කිරීම් ලැබේ.';
+  String get householdSharedRecordsIntro => 'ඔබේ ගෘහයේ සියලු දෙනාට මෙම වාර්තා දැකිය හා සංස්කරණය කළ හැකි අතර, ඒවායේ මතක් කිරීම් ලබා ගත හැක.';
 
   @override
   String get householdSharedRecordsEmpty => 'තවමත් කිසිවක් බෙදා ගෙන නැත. වාර්තාවක් විවෘත කර ගෘහය සමඟ බෙදා ගැනීම සක්‍රිය කරන්න.';
@@ -9045,4 +9045,28 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'තවම වාර්තා නැත';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'දින $daysStringකට පෙර $name වෙනස් කළා',
+      one: 'ඊයේ $name වෙනස් කළා',
+      zero: 'අද $name වෙනස් කළා',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'මා එක් කළ වාර්තා පමණි';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'මා එක් කළ බෙදාගත් වාර්තා ගැන පමණක් මතක් කරන්න. අන් අය එක් කළ වාර්තා තවමත් යෙදුමේ පෙන්වයි.';
 }

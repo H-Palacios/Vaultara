@@ -1475,7 +1475,7 @@
   "householdInviteMessage": "Tritt meinem Haushalt auf Vaultara bei, damit wir unsere Dokumente gemeinsam im Blick behalten. Tippe auf diesen Link: {link}\nOder öffne Vaultara, gehe zu Profil, dann Familie, und gib diesen Code ein: {code}",
   "householdInviteCopied": "Einladungslink kopiert",
   "householdSharedRecordsTitle": "Geteilte Einträge",
-  "householdSharedRecordsIntro": "Alle in deinem Haushalt können diese Einträge sehen und bearbeiten, und alle erhalten ihre Erinnerungen.",
+  "householdSharedRecordsIntro": "Alle in deinem Haushalt können diese Einträge sehen und bearbeiten und ihre Erinnerungen erhalten.",
   "householdSharedRecordsEmpty": "Noch nichts ist geteilt. Öffne einen Eintrag und schalte Mit Haushalt geteilt ein.",
   "householdSharedCount": "{count, plural, one{{count} Eintrag} other{{count} Einträge}}",
   "householdShowAllShared": "Alle geteilten Einträge anzeigen",
@@ -3469,5 +3469,8 @@
   "assistantReportWrong": "Falsch oder irreführend",
   "assistantReportOther": "Etwas anderes",
   "assistantReportThanks": "Danke. Wir prüfen diese Antwort.",
-  "groupsNoRecordsSection": "Noch keine Einträge"
+  "groupsNoRecordsSection": "Noch keine Einträge",
+  "recordChangedRecently": "{days, plural, =0{Heute von {name} geändert} =1{Gestern von {name} geändert} other{Vor {days} Tagen von {name} geändert}}",
+  "notifSharedOnlyMineTitle": "Nur Einträge, die ich hinzugefügt habe",
+  "notifSharedOnlyMineSubtitle": "Erinnere mich nur an geteilte Einträge, die ich hinzugefügt habe. Einträge von anderen bleiben in der App sichtbar."
 }

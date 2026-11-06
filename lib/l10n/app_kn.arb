@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "ನಮ್ಮ ದಾಖಲೆಗಳನ್ನು ಒಟ್ಟಿಗೆ ಗಮನಿಸಲು Vaultara ನಲ್ಲಿ ನನ್ನ ಹೌಸ್‌ಹೋಲ್ಡ್‌ಗೆ ಸೇರಿ. ಈ ಲಿಂಕ್ ಟ್ಯಾಪ್ ಮಾಡಿ: {link}\nಅಥವಾ Vaultara ತೆರೆದು, ಪ್ರೊಫೈಲ್, ನಂತರ ಕುಟುಂಬಕ್ಕೆ ಹೋಗಿ, ಈ ಕೋಡ್ ನಮೂದಿಸಿ: {code}",
   "householdInviteCopied": "ಆಹ್ವಾನ ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ",
   "householdSharedRecordsTitle": "ಹಂಚಿದ ದಾಖಲೆಗಳು",
-  "householdSharedRecordsIntro": "ನಿಮ್ಮ ಹೌಸ್‌ಹೋಲ್ಡ್‌ನಲ್ಲಿರುವ ಎಲ್ಲರೂ ಈ ದಾಖಲೆಗಳನ್ನು ನೋಡಬಹುದು ಮತ್ತು ಸಂಪಾದಿಸಬಹುದು, ಮತ್ತು ಎಲ್ಲರಿಗೂ ಅವುಗಳ ರಿಮೈಂಡರ್‌ಗಳು ಬರುತ್ತವೆ.",
+  "householdSharedRecordsIntro": "ನಿಮ್ಮ ಹೌಸ್‌ಹೋಲ್ಡ್‌ನಲ್ಲಿರುವ ಎಲ್ಲರೂ ಈ ದಾಖಲೆಗಳನ್ನು ನೋಡಬಹುದು ಮತ್ತು ಸಂಪಾದಿಸಬಹುದು, ಮತ್ತು ಅವುಗಳ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಪಡೆಯಬಹುದು.",
   "householdSharedRecordsEmpty": "ಇನ್ನೂ ಏನನ್ನೂ ಹಂಚಿಕೊಂಡಿಲ್ಲ. ಒಂದು ದಾಖಲೆಯನ್ನು ತೆರೆದು ಹೌಸ್‌ಹೋಲ್ಡ್‌ನೊಂದಿಗೆ ಹಂಚಲಾಗಿದೆ ಅನ್ನು ಆನ್ ಮಾಡಿ.",
   "householdSharedCount": "{count, plural, one{{count} ದಾಖಲೆ} other{{count} ದಾಖಲೆಗಳು}}",
   "householdShowAllShared": "ಎಲ್ಲಾ ಹಂಚಿದ ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಿ",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "ತಪ್ಪು ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ",
   "assistantReportOther": "ಬೇರೆ ಏನಾದರೂ",
   "assistantReportThanks": "ಧನ್ಯವಾದಗಳು. ನಾವು ಈ ಉತ್ತರವನ್ನು ಪರಿಶೀಲಿಸುತ್ತೇವೆ.",
-  "groupsNoRecordsSection": "ಇನ್ನೂ ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ"
+  "groupsNoRecordsSection": "ಇನ್ನೂ ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ",
+  "recordChangedRecently": "{days, plural, =0{ಇಂದು {name} ಬದಲಾಯಿಸಿದ್ದಾರೆ} =1{ನಿನ್ನೆ {name} ಬದಲಾಯಿಸಿದ್ದಾರೆ} other{{days} ದಿನಗಳ ಹಿಂದೆ {name} ಬದಲಾಯಿಸಿದ್ದಾರೆ}}",
+  "notifSharedOnlyMineTitle": "ನಾನು ಸೇರಿಸಿದ ದಾಖಲೆಗಳು ಮಾತ್ರ",
+  "notifSharedOnlyMineSubtitle": "ನಾನು ಸೇರಿಸಿದ ಹಂಚಿಕೊಂಡ ದಾಖಲೆಗಳ ಬಗ್ಗೆ ಮಾತ್ರ ನೆನಪಿಸಿ. ಇತರರು ಸೇರಿಸಿದ ದಾಖಲೆಗಳು ಆ್ಯಪ್‌ನಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ."
 }

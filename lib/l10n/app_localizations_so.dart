@@ -4309,7 +4309,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Diiwaannada la wadaagay';
 
   @override
-  String get householdSharedRecordsIntro => 'Qof kasta oo gurigaaga ku jira wuu arki karaa oo wax ka beddeli karaa diiwaannadan, qof walbana wuxuu helaa xasuusintooda.';
+  String get householdSharedRecordsIntro => 'Qof kasta oo gurigaaga ku jira wuu arki karaa oo wax ka beddeli karaa diiwaannadan, wuxuuna heli karaa xasuusintooda.';
 
   @override
   String get householdSharedRecordsEmpty => 'Wali waxba lama wadaagin. Fur diiwaan oo shid La wadaagay guriga.';
@@ -9045,4 +9045,28 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Weli ma jiraan diiwaanno';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name ayaa beddelay $daysString maalmood ka hor',
+      one: '$name ayaa beddelay shalay',
+      zero: '$name ayaa beddelay maanta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Kaliya diiwaannada aan ku daray';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'I xasuusi kaliya diiwaannada la wadaago ee aan ku daray. Diiwaannada dadka kale ku dareen weli waxay ka muuqdaan app-ka.';
 }

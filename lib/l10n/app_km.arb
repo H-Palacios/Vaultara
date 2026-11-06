@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "ចូលរួមក្រុមគ្រួសាររបស់ខ្ញុំនៅលើ Vaultara ដើម្បីឱ្យយើងតាមដានឯកសាររបស់យើងជាមួយគ្នា។ សូមចុចតំណនេះ៖ {link}\nឬបើក Vaultara ចូលទៅកម្រងព័ត៌មាន បន្ទាប់មកគ្រួសារ ហើយបញ្ចូលកូដនេះ៖ {code}",
   "householdInviteCopied": "បានចម្លងតំណអញ្ជើញ",
   "householdSharedRecordsTitle": "កំណត់ត្រាដែលបានចែករំលែក",
-  "householdSharedRecordsIntro": "អ្នករាល់គ្នាក្នុងក្រុមគ្រួសាររបស់អ្នកអាចមើល និងកែសម្រួលកំណត់ត្រាទាំងនេះ ហើយអ្នករាល់គ្នាទទួលបានការរំលឹករបស់ពួកគេ។",
+  "householdSharedRecordsIntro": "អ្នករាល់គ្នាក្នុងក្រុមគ្រួសាររបស់អ្នកអាចមើល និងកែសម្រួលកំណត់ត្រាទាំងនេះ ហើយអាចទទួលបានការរំលឹករបស់វា។",
   "householdSharedRecordsEmpty": "មិនទាន់មានអ្វីត្រូវបានចែករំលែកនៅឡើយទេ។ សូមបើកកំណត់ត្រាមួយ ហើយបើកចែករំលែកជាមួយក្រុមគ្រួសារ។",
   "householdSharedCount": "{count, plural, other{កំណត់ត្រា {count}}}",
   "householdShowAllShared": "បង្ហាញកំណត់ត្រាដែលបានចែករំលែកទាំងអស់",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "ខុស ឬបំភាន់",
   "assistantReportOther": "អ្វីផ្សេងទៀត",
   "assistantReportThanks": "សូមអរគុណ។ យើងនឹងពិនិត្យចម្លើយនេះ។",
-  "groupsNoRecordsSection": "មិនទាន់មានកំណត់ត្រានៅឡើយទេ។"
+  "groupsNoRecordsSection": "មិនទាន់មានកំណត់ត្រានៅឡើយទេ។",
+  "recordChangedRecently": "{days, plural, =0{បានកែដោយ {name} ថ្ងៃនេះ} =1{បានកែដោយ {name} ម្សិលមិញ} other{បានកែដោយ {name} {days} ថ្ងៃមុន}}",
+  "notifSharedOnlyMineTitle": "តែកំណត់ត្រាដែលខ្ញុំបានបន្ថែម",
+  "notifSharedOnlyMineSubtitle": "រំលឹកខ្ញុំតែអំពីកំណត់ត្រាដែលបានចែករំលែកដែលខ្ញុំបានបន្ថែម។ កំណត់ត្រាដែលអ្នកផ្សេងបានបន្ថែមនៅតែបង្ហាញក្នុងកម្មវិធី។"
 }

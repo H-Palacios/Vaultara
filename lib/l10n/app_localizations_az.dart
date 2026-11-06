@@ -4310,7 +4310,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Paylaşılan sənədlər';
 
   @override
-  String get householdSharedRecordsIntro => 'Ev qrupunuzdakı hər kəs bu sənədləri görə və redaktə edə bilər, hər kəs onların xatırlatmalarını alır.';
+  String get householdSharedRecordsIntro => 'Ev qrupunuzdakı hər kəs bu sənədləri görə və redaktə edə bilər, onların xatırlatmalarını da ala bilər.';
 
   @override
   String get householdSharedRecordsEmpty => 'Hələ heç nə paylaşılmayıb. Sənədi açın və Ev qrupu ilə paylaşılır seçimini aktiv edin.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Hələ sənəd yoxdur';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString gün əvvəl $name dəyişdi',
+      one: 'Dünən $name dəyişdi',
+      zero: 'Bu gün $name dəyişdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Yalnız əlavə etdiyim sənədlər';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Yalnız əlavə etdiyim paylaşılan sənədlər barədə xatırlat. Başqalarının əlavə etdiyi sənədlər tətbiqdə görünməyə davam edir.';
 }

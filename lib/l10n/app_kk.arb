@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Құжаттарымызды бірге бақылау үшін Vaultara-дағы менің үй-ішіме қосылыңыз. Мына сілтемені басыңыз: {link}\nНемесе Vaultara қолданбасын ашып, Профиль, одан кейін Отбасы бөліміне өтіп, мына кодты енгізіңіз: {code}",
   "householdInviteCopied": "Шақыру сілтемесі көшірілді",
   "householdSharedRecordsTitle": "Бөлісілген жазбалар",
-  "householdSharedRecordsIntro": "Үй-іңіздегі барлығы осы жазбаларды көре және өңдей алады, және барлығы олардың еске салғыштарын алады.",
+  "householdSharedRecordsIntro": "Үйіңіздегі барлығы осы жазбаларды көре және өңдей алады және олардың еске салғыштарын ала алады.",
   "householdSharedRecordsEmpty": "Әлі ештеңе бөлісілген жоқ. Жазбаны ашып, Үй-ішімен бөлісу параметрін қосыңыз.",
   "householdSharedCount": "{count, plural, one{{count} жазба} other{{count} жазба}}",
   "householdShowAllShared": "Барлық бөлісілген жазбаларды көрсету",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Қате немесе адастыратын",
   "assistantReportOther": "Басқа нәрсе",
   "assistantReportThanks": "Рахмет. Бұл жауапты тексереміз.",
-  "groupsNoRecordsSection": "Әзірге жазбалар жоқ"
+  "groupsNoRecordsSection": "Әзірге жазбалар жоқ",
+  "recordChangedRecently": "{days, plural, =0{Бүгін {name} өзгертті} =1{Кеше {name} өзгертті} other{{days} күн бұрын {name} өзгертті}}",
+  "notifSharedOnlyMineTitle": "Тек мен қосқан жазбалар",
+  "notifSharedOnlyMineSubtitle": "Тек мен қосқан ортақ жазбалар туралы еске сал. Басқалар қосқан жазбалар қолданбада көрінеді."
 }

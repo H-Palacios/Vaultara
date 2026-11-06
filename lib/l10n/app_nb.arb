@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Bli med i husstanden min på Vaultara, så kan vi holde oversikt over dokumentene våre sammen. Trykk på denne lenken: {link}\nEller åpne Vaultara, gå til Profil, deretter Familie, og skriv inn denne koden: {code}",
   "householdInviteCopied": "Invitasjonslenke kopiert",
   "householdSharedRecordsTitle": "Delte oppføringer",
-  "householdSharedRecordsIntro": "Alle i husstanden din kan se og redigere disse oppføringene, og alle får påminnelsene.",
+  "householdSharedRecordsIntro": "Alle i husstanden din kan se og redigere disse oppføringene, og kan få påminnelsene deres.",
   "householdSharedRecordsEmpty": "Ingenting er delt ennå. Åpne en oppføring og slå på Delt med husstanden.",
   "householdSharedCount": "{count, plural, one{{count} oppføring} other{{count} oppføringer}}",
   "householdShowAllShared": "Vis alle delte oppføringer",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Feil eller villedende",
   "assistantReportOther": "Noe annet",
   "assistantReportThanks": "Takk. Vi går gjennom dette svaret.",
-  "groupsNoRecordsSection": "Ingen oppføringer ennå"
+  "groupsNoRecordsSection": "Ingen oppføringer ennå",
+  "recordChangedRecently": "{days, plural, =0{Endret av {name} i dag} =1{Endret av {name} i går} other{Endret av {name} for {days} dager siden}}",
+  "notifSharedOnlyMineTitle": "Bare oppføringer jeg la til",
+  "notifSharedOnlyMineSubtitle": "Minn meg bare på delte oppføringer jeg la til. Oppføringer andre la til, vises fortsatt i appen."
 }

@@ -294,6 +294,12 @@ class ReminderScheduler {
   /// The reminders a record still has to come, in date order.
   static List<PlannedReminder> planFor(TrackedItem item, {DateTime? today}) {
     if (item.isDeleted) return const <PlannedReminder>[];
+    if (NotificationPrefs.skipsShared(
+      isShared: item.isShared,
+      createdBy: item.createdBy,
+    )) {
+      return const <PlannedReminder>[];
+    }
     final start = seriesOffset(item.reminderOffsetDays, item.leadDays);
     if (start == null) return const <PlannedReminder>[];
     final steps = seriesSteps(item.reminderOffsetDays, item.leadDays);

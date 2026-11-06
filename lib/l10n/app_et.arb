@@ -1609,7 +1609,7 @@
   "householdInviteMessage": "Liitu minu leibkonnaga Vaultaras, et saaksime oma dokumente koos jälgida. Puuduta seda linki: {link}\nVõi ava Vaultara, mine Profiili, siis Pere ja sisesta see kood: {code}",
   "householdInviteCopied": "Kutselink kopeeritud",
   "householdSharedRecordsTitle": "Jagatud kirjed",
-  "householdSharedRecordsIntro": "Kõik sinu leibkonnas näevad ja saavad muuta neid kirjeid ning kõik saavad oma meeldetuletused.",
+  "householdSharedRecordsIntro": "Kõik sinu leibkonnas näevad ja saavad muuta neid kirjeid ning saavad nende meeldetuletusi.",
   "householdSharedRecordsEmpty": "Midagi pole veel jagatud. Ava kirje ja lülita sisse Jagatud leibkonnaga.",
   "householdSharedCount": "{count, plural, one{{count} kirje} other{{count} kirjet}}",
   "householdShowAllShared": "Näita kõiki jagatud kirjeid",
@@ -3603,5 +3603,8 @@
   "assistantReportWrong": "Vale või eksitav",
   "assistantReportOther": "Midagi muud",
   "assistantReportThanks": "Aitäh. Vaatame selle vastuse üle.",
-  "groupsNoRecordsSection": "Kirjeid pole veel"
+  "groupsNoRecordsSection": "Kirjeid pole veel",
+  "recordChangedRecently": "{days, plural, =0{{name} muutis täna} =1{{name} muutis eile} other{{name} muutis {days} päeva tagasi}}",
+  "notifSharedOnlyMineTitle": "Ainult minu lisatud kirjed",
+  "notifSharedOnlyMineSubtitle": "Tuleta mulle meelde ainult minu lisatud jagatud kirjeid. Teiste lisatud kirjed on rakenduses endiselt näha."
 }

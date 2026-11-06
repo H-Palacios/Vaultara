@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "הצטרף למשק הבית שלי ב-Vaultara כדי שנעקוב אחרי המסמכים שלנו ביחד. לחץ על הקישור הזה: {link}\nאו פתח את Vaultara, עבור אל פרופיל, אחר כך משפחה והזן את הקוד הזה: {code}",
   "householdInviteCopied": "קישור ההזמנה הועתק",
   "householdSharedRecordsTitle": "רשומות משותפות",
-  "householdSharedRecordsIntro": "כל מי שבמשק הבית שלך יכול לראות ולערוך את הרשומות האלה, וכולם מקבלים את התזכורות שלהן.",
+  "householdSharedRecordsIntro": "כל מי שבמשק הבית שלך יכול לראות ולערוך את הרשומות האלה, ויכול לקבל את התזכורות שלהן.",
   "householdSharedRecordsEmpty": "עדיין שום דבר לא משותף. פתח רשומה והפעל שיתוף עם משק הבית.",
   "householdSharedCount": "{count, plural, one{רשומה אחת} other{{count} רשומות}}",
   "householdShowAllShared": "הצגת כל הרשומות המשותפות",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "שגוי או מטעה",
   "assistantReportOther": "משהו אחר",
   "assistantReportThanks": "תודה. נבדוק את התשובה הזו.",
-  "groupsNoRecordsSection": "אין רשומות עדיין"
+  "groupsNoRecordsSection": "אין רשומות עדיין",
+  "recordChangedRecently": "{days, plural, =0{שונה על ידי {name} היום} =1{שונה על ידי {name} אתמול} two{שונה על ידי {name} לפני יומיים} other{שונה על ידי {name} לפני {days} ימים}}",
+  "notifSharedOnlyMineTitle": "רק רשומות שהוספתי",
+  "notifSharedOnlyMineSubtitle": "להזכיר לי רק על רשומות משותפות שהוספתי. רשומות שאחרים הוסיפו עדיין מופיעות באפליקציה."
 }

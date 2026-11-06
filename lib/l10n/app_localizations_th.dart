@@ -4264,7 +4264,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get householdSharedRecordsTitle => 'รายการที่แชร์';
 
   @override
-  String get householdSharedRecordsIntro => 'ทุกคนในครัวเรือนของคุณดูและแก้ไขรายการเหล่านี้ได้ และทุกคนจะได้รับการเตือนของรายการเหล่านี้';
+  String get householdSharedRecordsIntro => 'ทุกคนในครัวเรือนของคุณดูและแก้ไขรายการเหล่านี้ได้ และรับการเตือนของรายการเหล่านี้ได้';
 
   @override
   String get householdSharedRecordsEmpty => 'ยังไม่มีอะไรถูกแชร์ เปิดรายการแล้วเปิด แชร์กับครัวเรือน';
@@ -8971,4 +8971,28 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ยังไม่มีรายการ';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name เปลี่ยนเมื่อ $daysString วันก่อน',
+      one: '$name เปลี่ยนเมื่อวาน',
+      zero: '$name เปลี่ยนวันนี้',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'เฉพาะรายการที่ฉันเพิ่ม';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'เตือนฉันเฉพาะรายการที่แชร์ซึ่งฉันเพิ่มเอง รายการที่คนอื่นเพิ่มยังแสดงในแอป';
 }

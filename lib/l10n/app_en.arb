@@ -4920,7 +4920,7 @@
   "@householdSharedRecordsTitle": {
     "description": "Title of the shared records screen and tile"
   },
-  "householdSharedRecordsIntro": "Everyone in your household can see and edit these records, and everyone gets their reminders.",
+  "householdSharedRecordsIntro": "Everyone in your household can see and edit these records, and can get their reminders.",
   "@householdSharedRecordsIntro": {
     "description": "Intro on the shared records screen"
   },
@@ -11180,5 +11180,26 @@
   "groupsNoRecordsSection": "No records yet",
   "@groupsNoRecordsSection": {
     "description": "Heading above the groups in a category that have no records yet."
+  },
+  "recordChangedRecently": "{days, plural, =0{Changed by {name} today} =1{Changed by {name} yesterday} other{Changed by {name} {days} days ago}}",
+  "@recordChangedRecently": {
+    "description": "Line on a shared record card when another household member changed it in the last 7 days. days = days since the change (0 today, 1 yesterday), name = their first name.",
+    "placeholders": {
+      "days": {
+        "type": "num",
+        "format": "compact"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifSharedOnlyMineTitle": "Only records I added",
+  "@notifSharedOnlyMineTitle": {
+    "description": "Switch in Notification settings, Household section: remind me only about shared records I added."
+  },
+  "notifSharedOnlyMineSubtitle": "Remind me only about shared records I added. Records others added still show in the app.",
+  "@notifSharedOnlyMineSubtitle": {
+    "description": "Explains the Only records I added switch in Notification settings."
   }
 }

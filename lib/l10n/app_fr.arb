@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Rejoignez mon foyer sur Vaultara pour que nous suivions nos documents ensemble. Appuyez sur ce lien : {link}\nOu ouvrez Vaultara, allez dans Profil, puis Famille, et saisissez ce code : {code}",
   "householdInviteCopied": "Lien d'invitation copié",
   "householdSharedRecordsTitle": "Enregistrements partagés",
-  "householdSharedRecordsIntro": "Tous les membres de votre foyer peuvent voir et modifier ces enregistrements, et chacun reçoit les rappels.",
+  "householdSharedRecordsIntro": "Tous les membres de votre foyer peuvent voir et modifier ces enregistrements, et peuvent recevoir leurs rappels.",
   "householdSharedRecordsEmpty": "Rien n'est encore partagé. Ouvrez un enregistrement et activez Partagé avec le foyer.",
   "householdSharedCount": "{count, plural, one{{count} enregistrement} other{{count} enregistrements}}",
   "householdShowAllShared": "Afficher tous les enregistrements partagés",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "Fausse ou trompeuse",
   "assistantReportOther": "Autre chose",
   "assistantReportThanks": "Merci. Nous examinerons cette réponse.",
-  "groupsNoRecordsSection": "Aucun enregistrement pour le moment"
+  "groupsNoRecordsSection": "Aucun enregistrement pour le moment",
+  "recordChangedRecently": "{days, plural, =0{Modifié par {name} aujourd'hui} =1{Modifié par {name} hier} other{Modifié par {name} il y a {days} jours}}",
+  "notifSharedOnlyMineTitle": "Seulement ceux que j'ai ajoutés",
+  "notifSharedOnlyMineSubtitle": "Me rappeler uniquement les enregistrements partagés que j'ai ajoutés. Ceux ajoutés par les autres restent visibles dans l'app."
 }

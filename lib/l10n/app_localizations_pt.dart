@@ -4311,7 +4311,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Registos partilhados';
 
   @override
-  String get householdSharedRecordsIntro => 'Todos no seu agregado familiar podem ver e editar estes registos, e todos recebem os respetivos lembretes.';
+  String get householdSharedRecordsIntro => 'Todos no seu agregado familiar podem ver e editar estes registos, e podem receber os respetivos lembretes.';
 
   @override
   String get householdSharedRecordsEmpty => 'Ainda não há nada partilhado. Abra um registo e ative Partilhado com o agregado familiar.';
@@ -9052,4 +9052,28 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Ainda não existem registos';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Alterado por $name há $daysString dias',
+      one: 'Alterado por $name ontem',
+      zero: 'Alterado por $name hoje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Só os registos que adicionei';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Lembrar-me só dos registos partilhados que adicionei. Os registos adicionados por outros continuam visíveis na app.';
 }

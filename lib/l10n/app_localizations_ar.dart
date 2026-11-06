@@ -4438,7 +4438,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'السجلات المشتركة';
 
   @override
-  String get householdSharedRecordsIntro => 'يستطيع كل أفراد أسرتك رؤية هذه السجلات وتعديلها، ويتلقى الجميع تذكيراتها.';
+  String get householdSharedRecordsIntro => 'يستطيع كل أفراد أسرتك رؤية هذه السجلات وتعديلها، ويمكنهم تلقي تذكيراتها.';
 
   @override
   String get householdSharedRecordsEmpty => 'لا شيء مشترك بعد. افتح سجلًا وفعّل مشاركة مع الأسرة.';
@@ -9289,4 +9289,31 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'لا توجد سجلات بعد';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'غيّره $name قبل $daysString يوم',
+      many: 'غيّره $name قبل $daysString يومًا',
+      few: 'غيّره $name قبل $daysString أيام',
+      two: 'غيّره $name قبل يومين',
+      one: 'غيّره $name أمس',
+      zero: 'غيّره $name اليوم',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'السجلات التي أضفتها فقط';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'ذكّرني فقط بالسجلات المشتركة التي أضفتها. تظل السجلات التي أضافها الآخرون ظاهرة في التطبيق.';
 }

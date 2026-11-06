@@ -4310,7 +4310,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Registres compartits';
 
   @override
-  String get householdSharedRecordsIntro => 'Tothom a la teva llar pot veure i editar aquests registres, i tothom rep els seus recordatoris.';
+  String get householdSharedRecordsIntro => 'Tothom a la teva llar pot veure i editar aquests registres, i en pot rebre els recordatoris.';
 
   @override
   String get householdSharedRecordsEmpty => 'Encara no s’ha compartit res. Obre un registre i activa Compartit amb la llar.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Encara no hi ha registres';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Canviat per $name fa $daysString dies',
+      one: 'Canviat per $name ahir',
+      zero: 'Canviat per $name avui',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Només els registres que he afegit';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Recorda\'m només els registres compartits que he afegit. Els que han afegit altres es continuen veient a l\'app.';
 }

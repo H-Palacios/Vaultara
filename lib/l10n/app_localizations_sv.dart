@@ -4309,7 +4309,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Delade poster';
 
   @override
-  String get householdSharedRecordsIntro => 'Alla i ditt hushåll kan se och redigera de här posterna, och alla får sina påminnelser.';
+  String get householdSharedRecordsIntro => 'Alla i ditt hushåll kan se och redigera de här posterna och kan få deras påminnelser.';
 
   @override
   String get householdSharedRecordsEmpty => 'Inget är delat ännu. Öppna en post och slå på Delad med hushållet.';
@@ -9050,4 +9050,28 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Inga poster ännu';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Ändrad av $name för $daysString dagar sedan',
+      one: 'Ändrad av $name i går',
+      zero: 'Ändrad av $name i dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Bara poster jag har lagt till';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Påminn mig bara om delade poster som jag har lagt till. Poster som andra har lagt till visas fortfarande i appen.';
 }

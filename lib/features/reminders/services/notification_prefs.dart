@@ -17,7 +17,11 @@ enum NotificationKind {
   household('household', true),
 
   /// Pushes when someone sends an update that was asked for.
-  updates('updates', true);
+  updates('updates', true),
+
+  /// Reminders only for the shared records you added yourself. Records
+  /// other members added still show in the app, without reminding you.
+  sharedOnlyMine('sharedOnlyMine', false);
 
   const NotificationKind(this.field, this.byDefault);
 
@@ -47,6 +51,15 @@ class NotificationPrefs {
 
   /// The current choice, or its default before [load] has run.
   static bool get(NotificationKind kind) => _values[kind] ?? kind.byDefault;
+
+  /// True when a shared record should not remind this person, because they
+  /// chose reminders only for the shared records they added.
+  static bool skipsShared({required bool isShared, String? createdBy}) {
+    if (!isShared || createdBy == null) return false;
+    if (!get(NotificationKind.sharedOnlyMine)) return false;
+    final uid = _uid();
+    return uid != null && createdBy != uid;
+  }
 
   /// Reads the choices saved on the phone, then the account's copy.
   static Future<void> load() async {

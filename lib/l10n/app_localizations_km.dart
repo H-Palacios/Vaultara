@@ -4274,7 +4274,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get householdSharedRecordsTitle => 'កំណត់ត្រាដែលបានចែករំលែក';
 
   @override
-  String get householdSharedRecordsIntro => 'អ្នករាល់គ្នាក្នុងក្រុមគ្រួសាររបស់អ្នកអាចមើល និងកែសម្រួលកំណត់ត្រាទាំងនេះ ហើយអ្នករាល់គ្នាទទួលបានការរំលឹករបស់ពួកគេ។';
+  String get householdSharedRecordsIntro => 'អ្នករាល់គ្នាក្នុងក្រុមគ្រួសាររបស់អ្នកអាចមើល និងកែសម្រួលកំណត់ត្រាទាំងនេះ ហើយអាចទទួលបានការរំលឹករបស់វា។';
 
   @override
   String get householdSharedRecordsEmpty => 'មិនទាន់មានអ្វីត្រូវបានចែករំលែកនៅឡើយទេ។ សូមបើកកំណត់ត្រាមួយ ហើយបើកចែករំលែកជាមួយក្រុមគ្រួសារ។';
@@ -8981,4 +8981,28 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'មិនទាន់មានកំណត់ត្រានៅឡើយទេ។';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'បានកែដោយ $name $daysString ថ្ងៃមុន',
+      one: 'បានកែដោយ $name ម្សិលមិញ',
+      zero: 'បានកែដោយ $name ថ្ងៃនេះ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'តែកំណត់ត្រាដែលខ្ញុំបានបន្ថែម';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'រំលឹកខ្ញុំតែអំពីកំណត់ត្រាដែលបានចែករំលែកដែលខ្ញុំបានបន្ថែម។ កំណត់ត្រាដែលអ្នកផ្សេងបានបន្ថែមនៅតែបង្ហាញក្នុងកម្មវិធី។';
 }

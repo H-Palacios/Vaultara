@@ -4310,7 +4310,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Ulashilgan yozuvlar';
 
   @override
-  String get householdSharedRecordsIntro => 'Xonadoningizdagi hamma bu yozuvlarni koʻra oladi va tahrirlay oladi, hamma ularning eslatmalarini oladi.';
+  String get householdSharedRecordsIntro => 'Xonadoningizdagi hamma bu yozuvlarni koʻra va tahrirlay oladi, ularning eslatmalarini ham olishi mumkin.';
 
   @override
   String get householdSharedRecordsEmpty => 'Hali hech narsa ulashilmagan. Yozuvni oching va Xonadon bilan ulashilgan ni yoqing.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Hozircha yozuvlar yoʻq';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString kun oldin $name oʻzgartirdi',
+      one: 'Kecha $name oʻzgartirdi',
+      zero: 'Bugun $name oʻzgartirdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Faqat men qoʻshgan yozuvlar';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Faqat men qoʻshgan umumiy yozuvlar haqida eslat. Boshqalar qoʻshgan yozuvlar ilovada koʻrinib turadi.';
 }

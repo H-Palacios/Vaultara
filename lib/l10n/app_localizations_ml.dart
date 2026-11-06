@@ -4310,7 +4310,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'പങ്കിട്ട റെക്കോർഡുകൾ';
 
   @override
-  String get householdSharedRecordsIntro => 'നിങ്ങളുടെ ഹൗസ്ഹോൾഡിലെ എല്ലാവർക്കും ഈ റെക്കോർഡുകൾ കാണാനും എഡിറ്റ് ചെയ്യാനും കഴിയും, എല്ലാവർക്കും അവയുടെ റിമൈൻഡറുകൾ ലഭിക്കും.';
+  String get householdSharedRecordsIntro => 'നിങ്ങളുടെ ഹൗസ്ഹോൾഡിലെ എല്ലാവർക്കും ഈ റെക്കോർഡുകൾ കാണാനും എഡിറ്റ് ചെയ്യാനും കഴിയും, അവയുടെ റിമൈൻഡറുകൾ നേടാനും കഴിയും.';
 
   @override
   String get householdSharedRecordsEmpty => 'ഇതുവരെ ഒന്നും പങ്കിട്ടിട്ടില്ല. ഒരു റെക്കോർഡ് തുറന്ന് ഹൗസ്ഹോൾഡുമായി പങ്കിട്ടത് ഓണാക്കുക.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString ദിവസം മുമ്പ് $name മാറ്റി',
+      one: 'ഇന്നലെ $name മാറ്റി',
+      zero: 'ഇന്ന് $name മാറ്റി',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'ഞാൻ ചേർത്ത റെക്കോർഡുകൾ മാത്രം';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'ഞാൻ ചേർത്ത പങ്കിട്ട റെക്കോർഡുകളെക്കുറിച്ച് മാത്രം ഓർമ്മിപ്പിക്കുക. മറ്റുള്ളവർ ചേർത്തവ ആപ്പിൽ തുടർന്നും കാണും.';
 }

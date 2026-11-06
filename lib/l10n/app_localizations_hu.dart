@@ -4310,7 +4310,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Megosztott bejegyzések';
 
   @override
-  String get householdSharedRecordsIntro => 'A háztartása minden tagja láthatja és szerkesztheti ezeket a bejegyzéseket, és mindenki megkapja az emlékeztetőiket.';
+  String get householdSharedRecordsIntro => 'A háztartása minden tagja láthatja és szerkesztheti ezeket a bejegyzéseket, és megkaphatja az emlékeztetőiket.';
 
   @override
   String get householdSharedRecordsEmpty => 'Még semmi sincs megosztva. Nyisson meg egy bejegyzést, és kapcsolja be a Megosztva a háztartással lehetőséget.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Még nincsenek bejegyzések';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name módosította $daysString napja',
+      one: '$name módosította tegnap',
+      zero: '$name módosította ma',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Csak az általam hozzáadottak';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Csak az általam hozzáadott megosztott bejegyzésekről emlékeztessen. A mások által hozzáadottak továbbra is látszanak az appban.';
 }

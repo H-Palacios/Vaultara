@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "Csatlakozzon a háztartásomhoz a Vaultarán, hogy együtt tartsuk nyilván a dokumentumainkat. Koppintson erre a linkre: {link}\nVagy nyissa meg a Vaultarát, lépjen a Profil, majd a Család részre, és adja meg ezt a kódot: {code}",
   "householdInviteCopied": "Meghívólink másolva",
   "householdSharedRecordsTitle": "Megosztott bejegyzések",
-  "householdSharedRecordsIntro": "A háztartása minden tagja láthatja és szerkesztheti ezeket a bejegyzéseket, és mindenki megkapja az emlékeztetőiket.",
+  "householdSharedRecordsIntro": "A háztartása minden tagja láthatja és szerkesztheti ezeket a bejegyzéseket, és megkaphatja az emlékeztetőiket.",
   "householdSharedRecordsEmpty": "Még semmi sincs megosztva. Nyisson meg egy bejegyzést, és kapcsolja be a Megosztva a háztartással lehetőséget.",
   "householdSharedCount": "{count, plural, one{{count} bejegyzés} other{{count} bejegyzés}}",
   "householdShowAllShared": "Az összes megosztott bejegyzés megjelenítése",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "Hibás vagy félrevezető",
   "assistantReportOther": "Valami más",
   "assistantReportThanks": "Köszönjük. Ellenőrizni fogjuk ezt a választ.",
-  "groupsNoRecordsSection": "Még nincsenek bejegyzések"
+  "groupsNoRecordsSection": "Még nincsenek bejegyzések",
+  "recordChangedRecently": "{days, plural, =0{{name} módosította ma} =1{{name} módosította tegnap} other{{name} módosította {days} napja}}",
+  "notifSharedOnlyMineTitle": "Csak az általam hozzáadottak",
+  "notifSharedOnlyMineSubtitle": "Csak az általam hozzáadott megosztott bejegyzésekről emlékeztessen. A mások által hozzáadottak továbbra is látszanak az appban."
 }

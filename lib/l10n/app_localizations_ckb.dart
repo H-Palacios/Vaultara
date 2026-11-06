@@ -4310,7 +4310,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get householdSharedRecordsTitle => 'تۆمارە هاوبەشکراوەکان';
 
   @override
-  String get householdSharedRecordsIntro => 'هەموو ئەندامانی ماڵەکەت دەتوانن ئەم تۆمارانە ببینن و دەستکاریان بکەن، و هەمووان بیرخەرەوەکانیان دەگەنێ.';
+  String get householdSharedRecordsIntro => 'هەموو ئەندامانی ماڵەکەت دەتوانن ئەم تۆمارانە ببینن و دەستکاریان بکەن، و دەتوانن بیرخەرەوەکانیان وەربگرن.';
 
   @override
   String get householdSharedRecordsEmpty => 'هێشتا هیچ شتێک هاوبەش نەکراوە. تۆمارێک بکەرەوە و هاوبەشکراو لەگەڵ ماڵ چالاک بکە.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'هێشتا هیچ تۆمارێک نییە';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString ڕۆژ لەمەوبەر لەلایەن $name گۆڕدرا',
+      one: 'دوێنێ لەلایەن $name گۆڕدرا',
+      zero: 'ئەمڕۆ لەلایەن $name گۆڕدرا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'تەنها ئەو تۆمارانەی من زیادم کردوون';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'تەنها بۆ ئەو تۆمارە هاوبەشانەی من زیادم کردوون بیرم بخەرەوە. تۆمارەکانی ئەوانی تر هێشتا لە ئەپەکەدا دەردەکەون.';
 }

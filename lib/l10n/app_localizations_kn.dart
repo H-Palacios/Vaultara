@@ -4310,7 +4310,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get householdSharedRecordsTitle => 'ಹಂಚಿದ ದಾಖಲೆಗಳು';
 
   @override
-  String get householdSharedRecordsIntro => 'ನಿಮ್ಮ ಹೌಸ್‌ಹೋಲ್ಡ್‌ನಲ್ಲಿರುವ ಎಲ್ಲರೂ ಈ ದಾಖಲೆಗಳನ್ನು ನೋಡಬಹುದು ಮತ್ತು ಸಂಪಾದಿಸಬಹುದು, ಮತ್ತು ಎಲ್ಲರಿಗೂ ಅವುಗಳ ರಿಮೈಂಡರ್‌ಗಳು ಬರುತ್ತವೆ.';
+  String get householdSharedRecordsIntro => 'ನಿಮ್ಮ ಹೌಸ್‌ಹೋಲ್ಡ್‌ನಲ್ಲಿರುವ ಎಲ್ಲರೂ ಈ ದಾಖಲೆಗಳನ್ನು ನೋಡಬಹುದು ಮತ್ತು ಸಂಪಾದಿಸಬಹುದು, ಮತ್ತು ಅವುಗಳ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಪಡೆಯಬಹುದು.';
 
   @override
   String get householdSharedRecordsEmpty => 'ಇನ್ನೂ ಏನನ್ನೂ ಹಂಚಿಕೊಂಡಿಲ್ಲ. ಒಂದು ದಾಖಲೆಯನ್ನು ತೆರೆದು ಹೌಸ್‌ಹೋಲ್ಡ್‌ನೊಂದಿಗೆ ಹಂಚಲಾಗಿದೆ ಅನ್ನು ಆನ್ ಮಾಡಿ.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ಇನ್ನೂ ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString ದಿನಗಳ ಹಿಂದೆ $name ಬದಲಾಯಿಸಿದ್ದಾರೆ',
+      one: 'ನಿನ್ನೆ $name ಬದಲಾಯಿಸಿದ್ದಾರೆ',
+      zero: 'ಇಂದು $name ಬದಲಾಯಿಸಿದ್ದಾರೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'ನಾನು ಸೇರಿಸಿದ ದಾಖಲೆಗಳು ಮಾತ್ರ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'ನಾನು ಸೇರಿಸಿದ ಹಂಚಿಕೊಂಡ ದಾಖಲೆಗಳ ಬಗ್ಗೆ ಮಾತ್ರ ನೆನಪಿಸಿ. ಇತರರು ಸೇರಿಸಿದ ದಾಖಲೆಗಳು ಆ್ಯಪ್‌ನಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.';
 }

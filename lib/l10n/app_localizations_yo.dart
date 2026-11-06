@@ -4277,7 +4277,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Àwọn igbasilẹ tí a pín';
 
   @override
-  String get householdSharedRecordsIntro => 'Gbogbo ènìyàn tó wà nínú ilé rẹ lè rí àti ṣàtúnṣe àwọn igbasilẹ wọ̀nyí, gbogbo wọn sì ń gba àwọn ìránnilétí wọn.';
+  String get householdSharedRecordsIntro => 'Gbogbo ènìyàn tó wà nínú ilé rẹ lè rí àti ṣàtúnṣe àwọn igbasilẹ wọ̀nyí, wọ́n sì lè gba àwọn ìránnilétí wọn.';
 
   @override
   String get householdSharedRecordsEmpty => 'Kò tíì sí ohun tí a pín. Ṣí igbasilẹ kan kí o sì tan Pínpín pẹ̀lú ilé.';
@@ -8994,4 +8994,28 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Ko si awọn igbasilẹ sibẹsibẹ';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name yí i padà ní ọjọ́ $daysString sẹ́yìn',
+      one: '$name yí i padà lánàá',
+      zero: '$name yí i padà lónìí',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Àwọn igbasilẹ tí mo fi kún nìkan';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Rán mi létí nípa àwọn igbasilẹ tí a pín tí mo fi kún nìkan. Àwọn igbasilẹ tí àwọn mìíràn fi kún ṣì ń hàn nínú áàpù.';
 }

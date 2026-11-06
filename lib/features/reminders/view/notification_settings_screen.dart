@@ -163,6 +163,7 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     await NotificationPrefs.set(kind, value);
     switch (kind) {
       case NotificationKind.afterExpiry:
+      case NotificationKind.sharedOnlyMine:
         unawaited(RecordRepository.resyncAllReminders());
       case NotificationKind.weekly:
       case NotificationKind.household:
@@ -450,6 +451,14 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                         icon: Icons.groups_rounded,
                         title: t.notifHouseholdTitle,
                         subtitle: t.notifHouseholdSubtitle,
+                      ),
+                      const SizedBox(height: 12),
+                      _kindTile(
+                        context,
+                        NotificationKind.sharedOnlyMine,
+                        icon: Icons.person_rounded,
+                        title: t.notifSharedOnlyMineTitle,
+                        subtitle: t.notifSharedOnlyMineSubtitle,
                       ),
                     ],
                   ),

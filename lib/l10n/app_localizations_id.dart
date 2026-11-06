@@ -4271,7 +4271,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Catatan bersama';
 
   @override
-  String get householdSharedRecordsIntro => 'Semua orang di rumah tangga Anda dapat melihat dan mengedit catatan ini, dan semua orang mendapat pengingatnya.';
+  String get householdSharedRecordsIntro => 'Semua orang di rumah tangga Anda dapat melihat dan mengedit catatan ini, dan bisa mendapat pengingatnya.';
 
   @override
   String get householdSharedRecordsEmpty => 'Belum ada yang dibagikan. Buka sebuah catatan dan aktifkan Dibagikan ke rumah tangga.';
@@ -8978,4 +8978,28 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Belum ada catatan';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Diubah oleh $name $daysString hari lalu',
+      one: 'Diubah oleh $name kemarin',
+      zero: 'Diubah oleh $name hari ini',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Hanya catatan yang saya tambahkan';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Ingatkan saya hanya tentang catatan bersama yang saya tambahkan. Catatan yang ditambahkan orang lain tetap terlihat di aplikasi.';
 }

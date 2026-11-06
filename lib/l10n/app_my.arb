@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "ကျွန်ုပ်တို့၏ စာရွက်စာတမ်းများကို အတူ စောင့်ကြည့်နိုင်ရန် Vaultara တွင် ကျွန်ုပ်၏ အိမ်ထောင်စုသို့ ဝင်ပါ။ ဤလင့်ခ်ကို နှိပ်ပါ: {link}\nသို့မဟုတ် Vaultara ကို ဖွင့်ပြီး ပရိုဖိုင်၊ ထို့နောက် မိသားစုသို့ သွားကာ ဤကုဒ်ကို ထည့်ပါ: {code}",
   "householdInviteCopied": "ဖိတ်ကြားလင့်ခ် ကူးပြီး",
   "householdSharedRecordsTitle": "မျှဝေထားသော မှတ်တမ်းများ",
-  "householdSharedRecordsIntro": "သင့်အိမ်ထောင်စုရှိ လူတိုင်း ဤမှတ်တမ်းများကို မြင်ရပြီး တည်းဖြတ်နိုင်သည်၊ လူတိုင်း ၎င်းတို့၏ သတိပေးချက်များ ရသည်။",
+  "householdSharedRecordsIntro": "သင့်အိမ်ထောင်စုရှိ လူတိုင်း ဤမှတ်တမ်းများကို မြင်ရပြီး တည်းဖြတ်နိုင်ကာ ၎င်းတို့၏ သတိပေးချက်များကို ရယူနိုင်သည်။",
   "householdSharedRecordsEmpty": "မျှဝေထားသည် မရှိသေးပါ။ မှတ်တမ်းတစ်ခုကို ဖွင့်ပြီး အိမ်ထောင်စုနှင့် မျှဝေထားသည် ကို ဖွင့်ပါ။",
   "householdSharedCount": "{count, plural, other{မှတ်တမ်း {count} ခု}}",
   "householdShowAllShared": "မျှဝေထားသော မှတ်တမ်းအားလုံး ပြရန်",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "မှားယွင်းသော သို့မဟုတ် လွဲမှားစေသော",
   "assistantReportOther": "အခြားအရာ",
   "assistantReportThanks": "ကျေးဇူးတင်ပါသည်။ ဤအဖြေကို ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။",
-  "groupsNoRecordsSection": "မှတ်တမ်း မရှိသေးပါ။"
+  "groupsNoRecordsSection": "မှတ်တမ်း မရှိသေးပါ။",
+  "recordChangedRecently": "{days, plural, =0{ယနေ့ {name} ပြောင်းခဲ့သည်} =1{မနေ့က {name} ပြောင်းခဲ့သည်} other{{days} ရက်က {name} ပြောင်းခဲ့သည်}}",
+  "notifSharedOnlyMineTitle": "ကျွန်ုပ်ထည့်ထားသော မှတ်တမ်းများသာ",
+  "notifSharedOnlyMineSubtitle": "ကျွန်ုပ်ထည့်ထားသော မျှဝေမှတ်တမ်းများအတွက်သာ သတိပေးပါ။ အခြားသူများထည့်ထားသော မှတ်တမ်းများ အက်ပ်တွင် ဆက်ပြနေမည်။"
 }

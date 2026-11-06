@@ -4309,7 +4309,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Хуваалцсан бичлэгүүд';
 
   @override
-  String get householdSharedRecordsIntro => 'Таны өрхийн хүн бүр эдгээр бичлэгийг харж, засварлаж чадна, мөн хүн бүр сануулгаа авна.';
+  String get householdSharedRecordsIntro => 'Таны өрхийн хүн бүр эдгээр бичлэгийг харж, засварлаж, сануулгыг нь авч болно.';
 
   @override
   String get householdSharedRecordsEmpty => 'Одоогоор юу ч хуваалцаагүй байна. Бичлэг нээгээд Өрхтэй хуваалцсан-ыг асаана уу.';
@@ -9036,4 +9036,28 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Одоогоор бичлэг алга';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString өдрийн өмнө $name өөрчилсөн',
+      one: 'Өчигдөр $name өөрчилсөн',
+      zero: 'Өнөөдөр $name өөрчилсөн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Зөвхөн миний нэмсэн бичлэг';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Зөвхөн миний нэмсэн хуваалцсан бичлэгийн талаар сануул. Бусдын нэмсэн бичлэг апп-д харагдсаар байна.';
 }

@@ -4404,7 +4404,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Deljeni zapisi';
 
   @override
-  String get householdSharedRecordsIntro => 'Vsi v vašem gospodinjstvu lahko vidijo in urejajo te zapise, vsi pa prejemajo tudi opomnike.';
+  String get householdSharedRecordsIntro => 'Vsi v vašem gospodinjstvu lahko vidijo in urejajo te zapise ter lahko prejemajo njihove opomnike.';
 
   @override
   String get householdSharedRecordsEmpty => 'Nič še ni deljeno. Odprite zapis in vklopite Deljeno z gospodinjstvom.';
@@ -9206,4 +9206,30 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Zaenkrat še ni zapisov';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Pred $daysString dnevi spremenil(a) $name',
+      few: 'Pred $daysString dnevi spremenil(a) $name',
+      two: 'Pred $daysString dnevoma spremenil(a) $name',
+      one: 'Včeraj spremenil(a) $name',
+      zero: 'Danes spremenil(a) $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Samo zapisi, ki sem jih dodal(a)';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Opomni me samo na deljene zapise, ki sem jih dodal(a). Zapisi drugih so v aplikaciji še vedno vidni.';
 }

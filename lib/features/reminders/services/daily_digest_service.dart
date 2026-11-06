@@ -21,6 +21,7 @@ import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
 import 'package:vaultara/features/reminders/view/reminder_sound_names.dart';
 import 'package:vaultara/features/reminders/services/push_router.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
+import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -134,6 +135,12 @@ class DailyDigestService {
     final out = <int, List<TrackedItem>>{};
     for (final record in records) {
       if (record.isDeleted) continue;
+      if (NotificationPrefs.skipsShared(
+        isShared: record.isShared,
+        createdBy: record.createdBy,
+      )) {
+        continue;
+      }
       final start = ReminderScheduler.seriesOffset(
         record.reminderOffsetDays,
         record.leadDays,

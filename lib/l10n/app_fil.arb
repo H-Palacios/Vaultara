@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Sumali sa sambahayan ko sa Vaultara para masubaybayan natin nang magkasama ang mga dokumento natin. I-tap ang link na ito: {link}\nO buksan ang Vaultara, pumunta sa Profile, tapos Pamilya, at ilagay ang code na ito: {code}",
   "householdInviteCopied": "Nakopya ang link ng imbitasyon",
   "householdSharedRecordsTitle": "Mga ibinahaging rekord",
-  "householdSharedRecordsIntro": "Makikita at maeedit ng lahat sa sambahayan mo ang mga rekord na ito, at nakukuha ng lahat ang mga paalala.",
+  "householdSharedRecordsIntro": "Makikita at maeedit ng lahat sa sambahayan mo ang mga rekord na ito, at puwede nilang makuha ang mga paalala.",
   "householdSharedRecordsEmpty": "Wala pang naibabahagi. Magbukas ng rekord at i-on ang Ibinahagi sa sambahayan.",
   "householdSharedCount": "{count, plural, one{{count} rekord} other{{count} rekord}}",
   "householdShowAllShared": "Ipakita ang lahat ng ibinahaging rekord",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "Mali o nakalilinlang",
   "assistantReportOther": "Iba pa",
   "assistantReportThanks": "Salamat. Susuriin namin ang sagot na ito.",
-  "groupsNoRecordsSection": "Wala pang mga rekord"
+  "groupsNoRecordsSection": "Wala pang mga rekord",
+  "recordChangedRecently": "{days, plural, =0{Binago ni {name} ngayon} =1{Binago ni {name} kahapon} other{Binago ni {name} {days} araw na ang nakalipas}}",
+  "notifSharedOnlyMineTitle": "Mga rekord na idinagdag ko lang",
+  "notifSharedOnlyMineSubtitle": "Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba."
 }

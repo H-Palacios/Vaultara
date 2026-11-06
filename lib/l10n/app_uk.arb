@@ -1461,7 +1461,7 @@
   "householdInviteMessage": "Приєднуйтеся до мого домогосподарства у Vaultara, щоб ми разом стежили за своїми документами. Торкніться цього посилання: {link}\nАбо відкрийте Vaultara, перейдіть до розділу «Профіль», потім «Сім'я» та введіть цей код: {code}",
   "householdInviteCopied": "Посилання із запрошення скопійовано",
   "householdSharedRecordsTitle": "Спільні записи",
-  "householdSharedRecordsIntro": "Усі у вашому домогосподарстві можуть бачити й редагувати ці записи, і всі отримують нагадування про них.",
+  "householdSharedRecordsIntro": "Усі у вашому домогосподарстві можуть бачити й редагувати ці записи, а також отримувати нагадування про них.",
   "householdSharedRecordsEmpty": "Поки нічим не поділилися. Відкрийте запис і ввімкніть «Спільний доступ для домогосподарства».",
   "householdSharedCount": "{count, plural, one{{count} запис} few{{count} записи} many{{count} записів} other{{count} запису}}",
   "householdShowAllShared": "Показати всі спільні записи",
@@ -3455,5 +3455,8 @@
   "assistantReportWrong": "Неправильна або оманлива",
   "assistantReportOther": "Інше",
   "assistantReportThanks": "Дякуємо. Ми перевіримо цю відповідь.",
-  "groupsNoRecordsSection": "Записів поки немає"
+  "groupsNoRecordsSection": "Записів поки немає",
+  "recordChangedRecently": "{days, plural, =0{Змінено: {name}, сьогодні} =1{Змінено: {name}, учора} few{Змінено: {name}, {days} дні тому} many{Змінено: {name}, {days} днів тому} other{Змінено: {name}, {days} дня тому}}",
+  "notifSharedOnlyMineTitle": "Лише додані мною",
+  "notifSharedOnlyMineSubtitle": "Нагадувати лише про спільні записи, які додав я. Записи, додані іншими, і далі видно в застосунку."
 }

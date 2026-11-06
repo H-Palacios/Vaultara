@@ -7426,7 +7426,7 @@ abstract class AppLocalizations {
   /// Intro on the shared records screen
   ///
   /// In en, this message translates to:
-  /// **'Everyone in your household can see and edit these records, and everyone gets their reminders.'**
+  /// **'Everyone in your household can see and edit these records, and can get their reminders.'**
   String get householdSharedRecordsIntro;
 
   /// Empty state of the shared records screen
@@ -15432,6 +15432,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No records yet'**
   String get groupsNoRecordsSection;
+
+  /// Line on a shared record card when another household member changed it in the last 7 days. days = days since the change (0 today, 1 yesterday), name = their first name.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =0{Changed by {name} today} =1{Changed by {name} yesterday} other{Changed by {name} {days} days ago}}'**
+  String recordChangedRecently(num days, String name);
+
+  /// Switch in Notification settings, Household section: remind me only about shared records I added.
+  ///
+  /// In en, this message translates to:
+  /// **'Only records I added'**
+  String get notifSharedOnlyMineTitle;
+
+  /// Explains the Only records I added switch in Notification settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me only about shared records I added. Records others added still show in the app.'**
+  String get notifSharedOnlyMineSubtitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

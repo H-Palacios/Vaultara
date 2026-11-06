@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Únete ao meu fogar en Vaultara para levar xuntos o control dos nosos documentos. Toca esta ligazón: {link}\nOu abre Vaultara, vai a Perfil, despois Familia, e escribe este código: {code}",
   "householdInviteCopied": "Ligazón do convite copiada",
   "householdSharedRecordsTitle": "Rexistros compartidos",
-  "householdSharedRecordsIntro": "Todos os do teu fogar poden ver e editar estes rexistros, e todos reciben os seus lembretes.",
+  "householdSharedRecordsIntro": "Todos os do teu fogar poden ver e editar estes rexistros, e poden recibir os seus lembretes.",
   "householdSharedRecordsEmpty": "Aínda non se compartiu nada. Abre un rexistro e activa Compartido co fogar.",
   "householdSharedCount": "{count, plural, one{{count} rexistro} other{{count} rexistros}}",
   "householdShowAllShared": "Amosar todos os rexistros compartidos",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "Incorrecta ou enganosa",
   "assistantReportOther": "Outra cousa",
   "assistantReportThanks": "Grazas. Revisaremos esta resposta.",
-  "groupsNoRecordsSection": "Aínda non hai rexistros"
+  "groupsNoRecordsSection": "Aínda non hai rexistros",
+  "recordChangedRecently": "{days, plural, =0{Cambiado por {name} hoxe} =1{Cambiado por {name} onte} other{Cambiado por {name} hai {days} días}}",
+  "notifSharedOnlyMineTitle": "Só os rexistros que engadín",
+  "notifSharedOnlyMineSubtitle": "Lembrarme só os rexistros compartidos que engadín. Os que engadiron outros seguen aparecendo na app."
 }

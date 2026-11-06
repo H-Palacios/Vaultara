@@ -4310,7 +4310,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'გაზიარებული ჩანაწერები';
 
   @override
-  String get householdSharedRecordsIntro => 'თქვენი შინამეურნეობის ყველა წევრი ხედავს და ცვლის ამ ჩანაწერებს, და ყველა იღებს მათ შეხსენებებს.';
+  String get householdSharedRecordsIntro => 'თქვენი შინამეურნეობის ყველა წევრი ხედავს და ცვლის ამ ჩანაწერებს და შეუძლია მათი შეხსენებების მიღება.';
 
   @override
   String get householdSharedRecordsEmpty => 'ჯერ არაფერია გაზიარებული. გახსენით ჩანაწერი და ჩართეთ შინამეურნეობასთან გაზიარებული.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ჩანაწერები ჯერ არ არის';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString დღის წინ შეცვალა $name',
+      one: 'გუშინ შეცვალა $name',
+      zero: 'დღეს შეცვალა $name',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'მხოლოდ ჩემ მიერ დამატებული';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'შემახსენე მხოლოდ ჩემ მიერ დამატებული საერთო ჩანაწერები. სხვების დამატებული ჩანაწერები აპში მაინც ჩანს.';
 }

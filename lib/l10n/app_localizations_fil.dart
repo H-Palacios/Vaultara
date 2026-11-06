@@ -4308,7 +4308,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Mga ibinahaging rekord';
 
   @override
-  String get householdSharedRecordsIntro => 'Makikita at maeedit ng lahat sa sambahayan mo ang mga rekord na ito, at nakukuha ng lahat ang mga paalala.';
+  String get householdSharedRecordsIntro => 'Makikita at maeedit ng lahat sa sambahayan mo ang mga rekord na ito, at puwede nilang makuha ang mga paalala.';
 
   @override
   String get householdSharedRecordsEmpty => 'Wala pang naibabahagi. Magbukas ng rekord at i-on ang Ibinahagi sa sambahayan.';
@@ -9041,4 +9041,28 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Wala pang mga rekord';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Binago ni $name $daysString araw na ang nakalipas',
+      one: 'Binago ni $name kahapon',
+      zero: 'Binago ni $name ngayon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Mga rekord na idinagdag ko lang';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba.';
 }

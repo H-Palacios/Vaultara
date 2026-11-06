@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Alătură-te gospodăriei mele pe Vaultara ca să ne urmărim documentele împreună. Atinge acest link: {link}\nSau deschide Vaultara, mergi la Profil, apoi la Familie și introdu acest cod: {code}",
   "householdInviteCopied": "Linkul invitației a fost copiat",
   "householdSharedRecordsTitle": "Înregistrări partajate",
-  "householdSharedRecordsIntro": "Toți membrii gospodăriei tale pot vedea și edita aceste înregistrări, iar toți primesc memento-urile.",
+  "householdSharedRecordsIntro": "Toți membrii gospodăriei tale pot vedea și edita aceste înregistrări și pot primi memento-urile lor.",
   "householdSharedRecordsEmpty": "Încă nu e nimic partajat. Deschide o înregistrare și activează Partajat cu gospodăria.",
   "householdSharedCount": "{count, plural, one{{count} înregistrare} few{{count} înregistrări} other{{count} de înregistrări}}",
   "householdShowAllShared": "Arată toate înregistrările partajate",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Greșit sau înșelător",
   "assistantReportOther": "Altceva",
   "assistantReportThanks": "Mulțumim. Vom verifica acest răspuns.",
-  "groupsNoRecordsSection": "Nu există încă înregistrări"
+  "groupsNoRecordsSection": "Nu există încă înregistrări",
+  "recordChangedRecently": "{days, plural, =0{Modificat de {name} azi} =1{Modificat de {name} ieri} few{Modificat de {name} acum {days} zile} other{Modificat de {name} acum {days} zile}}",
+  "notifSharedOnlyMineTitle": "Doar înregistrările adăugate de mine",
+  "notifSharedOnlyMineSubtitle": "Amintește-mi doar de înregistrările partajate pe care le-am adăugat. Cele adăugate de alții rămân vizibile în aplicație."
 }

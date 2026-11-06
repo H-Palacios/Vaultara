@@ -4310,7 +4310,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get householdSharedRecordsTitle => 'የተጋሩ መዝገቦች';
 
   @override
-  String get householdSharedRecordsIntro => 'በየቤት ቡድንዎ ውስጥ ያሉ ሁሉ እነዚህን መዝገቦች ማየትና ማርትዕ ይችላሉ፤ ሁሉም አስታዋሾቻቸውን ያገኛሉ።';
+  String get householdSharedRecordsIntro => 'በየቤት ቡድንዎ ውስጥ ያሉ ሁሉ እነዚህን መዝገቦች ማየትና ማርትዕ ይችላሉ፤ አስታዋሾቻቸውንም ማግኘት ይችላሉ።';
 
   @override
   String get householdSharedRecordsEmpty => 'እስካሁን ምንም አልተጋራም። መዝገብ ከፍተው ከየቤት ቡድን ጋር ማጋራትን ያብሩ።';
@@ -9046,4 +9046,28 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ገና ምንም መዝገቦች የሉም';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ከ$daysString ቀናት በፊት በ$name ተቀይሯል',
+      one: 'ትናንት በ$name ተቀይሯል',
+      zero: 'ዛሬ በ$name ተቀይሯል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'እኔ ያከልኳቸው መዝገቦች ብቻ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'እኔ ያከልኳቸውን የተጋሩ መዝገቦች ብቻ አስታውሰኝ። ሌሎች ያከሏቸው መዝገቦች አሁንም በመተግበሪያው ውስጥ ይታያሉ።';
 }

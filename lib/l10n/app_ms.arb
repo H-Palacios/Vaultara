@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Sertai isi rumah saya di Vaultara supaya kita dapat menjejaki dokumen kita bersama. Ketik pautan ini: {link}\nAtau buka Vaultara, pergi ke Profil, kemudian Keluarga, dan masukkan kod ini: {code}",
   "householdInviteCopied": "Pautan jemputan disalin",
   "householdSharedRecordsTitle": "Rekod dikongsi",
-  "householdSharedRecordsIntro": "Semua orang dalam isi rumah anda boleh melihat dan menyunting rekod ini, dan semua orang mendapat peringatannya.",
+  "householdSharedRecordsIntro": "Semua orang dalam isi rumah anda boleh melihat dan menyunting rekod ini, dan boleh mendapat peringatannya.",
   "householdSharedRecordsEmpty": "Belum ada apa-apa yang dikongsi. Buka satu rekod dan hidupkan Dikongsi dengan isi rumah.",
   "householdSharedCount": "{count, plural, other{{count} rekod}}",
   "householdShowAllShared": "Tunjukkan semua rekod dikongsi",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Salah atau mengelirukan",
   "assistantReportOther": "Lain-lain",
   "assistantReportThanks": "Terima kasih. Kami akan menyemak jawapan ini.",
-  "groupsNoRecordsSection": "Tiada rekod lagi"
+  "groupsNoRecordsSection": "Tiada rekod lagi",
+  "recordChangedRecently": "{days, plural, =0{Diubah oleh {name} hari ini} =1{Diubah oleh {name} semalam} other{Diubah oleh {name} {days} hari lalu}}",
+  "notifSharedOnlyMineTitle": "Hanya rekod yang saya tambah",
+  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang rekod kongsi yang saya tambah. Rekod yang ditambah orang lain masih dipaparkan dalam apl."
 }

@@ -1482,7 +1482,7 @@
   "householdInviteMessage": "ሰነዶቻችንን አብረን ለመከታተል በVaultara ላይ የእኔን የቤት ቡድን ይቀላቀሉ። ይህን ሊንክ ይንኩ፦ {link}\nወይም Vaultara ን ከፍተው ወደ መገለጫ፣ ከዚያ ቤተሰብ ይሂዱ እና ይህን ኮድ ያስገቡ፦ {code}",
   "householdInviteCopied": "የግብዣ ሊንክ ተቀድቷል",
   "householdSharedRecordsTitle": "የተጋሩ መዝገቦች",
-  "householdSharedRecordsIntro": "በየቤት ቡድንዎ ውስጥ ያሉ ሁሉ እነዚህን መዝገቦች ማየትና ማርትዕ ይችላሉ፤ ሁሉም አስታዋሾቻቸውን ያገኛሉ።",
+  "householdSharedRecordsIntro": "በየቤት ቡድንዎ ውስጥ ያሉ ሁሉ እነዚህን መዝገቦች ማየትና ማርትዕ ይችላሉ፤ አስታዋሾቻቸውንም ማግኘት ይችላሉ።",
   "householdSharedRecordsEmpty": "እስካሁን ምንም አልተጋራም። መዝገብ ከፍተው ከየቤት ቡድን ጋር ማጋራትን ያብሩ።",
   "householdSharedCount": "{count, plural, one{{count} መዝገብ} other{{count} መዝገቦች}}",
   "householdShowAllShared": "ሁሉንም የተጋሩ መዝገቦች አሳይ",
@@ -3476,5 +3476,8 @@
   "assistantReportWrong": "የተሳሳተ ወይም አሳሳች",
   "assistantReportOther": "ሌላ ነገር",
   "assistantReportThanks": "እናመሰግናለን። ይህን መልስ እንገመግማለን።",
-  "groupsNoRecordsSection": "ገና ምንም መዝገቦች የሉም"
+  "groupsNoRecordsSection": "ገና ምንም መዝገቦች የሉም",
+  "recordChangedRecently": "{days, plural, =0{ዛሬ በ{name} ተቀይሯል} =1{ትናንት በ{name} ተቀይሯል} other{ከ{days} ቀናት በፊት በ{name} ተቀይሯል}}",
+  "notifSharedOnlyMineTitle": "እኔ ያከልኳቸው መዝገቦች ብቻ",
+  "notifSharedOnlyMineSubtitle": "እኔ ያከልኳቸውን የተጋሩ መዝገቦች ብቻ አስታውሰኝ። ሌሎች ያከሏቸው መዝገቦች አሁንም በመተግበሪያው ውስጥ ይታያሉ።"
 }

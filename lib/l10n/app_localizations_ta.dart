@@ -4310,7 +4310,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get householdSharedRecordsTitle => 'பகிரப்பட்ட பதிவுகள்';
 
   @override
-  String get householdSharedRecordsIntro => 'உங்கள் இல்லத்திலுள்ள அனைவரும் இந்தப் பதிவுகளைப் பார்க்கவும் திருத்தவும் முடியும், அனைவருக்கும் அவற்றின் நினைவூட்டல்கள் வரும்.';
+  String get householdSharedRecordsIntro => 'உங்கள் இல்லத்திலுள்ள அனைவரும் இந்தப் பதிவுகளைப் பார்க்கவும் திருத்தவும் முடியும், அவற்றின் நினைவூட்டல்களைப் பெறவும் முடியும்.';
 
   @override
   String get householdSharedRecordsEmpty => 'இன்னும் எதுவும் பகிரப்படவில்லை. ஒரு பதிவைத் திறந்து இல்லத்துடன் பகிர் என்பதை இயக்குங்கள்.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'இதுவரை பதிவுகள் இல்லை';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString நாட்களுக்கு முன் $name மாற்றினார்',
+      one: 'நேற்று $name மாற்றினார்',
+      zero: 'இன்று $name மாற்றினார்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'நான் சேர்த்த பதிவுகள் மட்டும்';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'நான் சேர்த்த பகிரப்பட்ட பதிவுகளைப் பற்றி மட்டும் நினைவூட்டு. மற்றவர்கள் சேர்த்த பதிவுகள் ஆப்பில் தொடர்ந்து தெரியும்.';
 }

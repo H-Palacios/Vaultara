@@ -1462,7 +1462,7 @@
   "householdInviteMessage": "გაწევრიანდით ჩემს შინამეურნეობაში Vaultara-ზე, რომ ჩვენი დოკუმენტები ერთად ვადევნოთ თვალი. დააჭირეთ ამ ბმულს: {link}\nან გახსენით Vaultara, გადადით პროფილში, შემდეგ ოჯახში და შეიყვანეთ ეს კოდი: {code}",
   "householdInviteCopied": "მოწვევის ბმული დაკოპირდა",
   "householdSharedRecordsTitle": "გაზიარებული ჩანაწერები",
-  "householdSharedRecordsIntro": "თქვენი შინამეურნეობის ყველა წევრი ხედავს და ცვლის ამ ჩანაწერებს, და ყველა იღებს მათ შეხსენებებს.",
+  "householdSharedRecordsIntro": "თქვენი შინამეურნეობის ყველა წევრი ხედავს და ცვლის ამ ჩანაწერებს და შეუძლია მათი შეხსენებების მიღება.",
   "householdSharedRecordsEmpty": "ჯერ არაფერია გაზიარებული. გახსენით ჩანაწერი და ჩართეთ შინამეურნეობასთან გაზიარებული.",
   "householdSharedCount": "{count, plural, one{{count} ჩანაწერი} other{{count} ჩანაწერი}}",
   "householdShowAllShared": "ყველა გაზიარებული ჩანაწერის ჩვენება",
@@ -3456,5 +3456,8 @@
   "assistantReportWrong": "არასწორი ან შეცდომაში შემყვანი",
   "assistantReportOther": "სხვა რამ",
   "assistantReportThanks": "გმადლობთ. ჩვენ გადავამოწმებთ ამ პასუხს.",
-  "groupsNoRecordsSection": "ჩანაწერები ჯერ არ არის"
+  "groupsNoRecordsSection": "ჩანაწერები ჯერ არ არის",
+  "recordChangedRecently": "{days, plural, =0{დღეს შეცვალა {name}} =1{გუშინ შეცვალა {name}} other{{days} დღის წინ შეცვალა {name}}}",
+  "notifSharedOnlyMineTitle": "მხოლოდ ჩემ მიერ დამატებული",
+  "notifSharedOnlyMineSubtitle": "შემახსენე მხოლოდ ჩემ მიერ დამატებული საერთო ჩანაწერები. სხვების დამატებული ჩანაწერები აპში მაინც ჩანს."
 }

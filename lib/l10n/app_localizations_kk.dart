@@ -4310,7 +4310,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Бөлісілген жазбалар';
 
   @override
-  String get householdSharedRecordsIntro => 'Үй-іңіздегі барлығы осы жазбаларды көре және өңдей алады, және барлығы олардың еске салғыштарын алады.';
+  String get householdSharedRecordsIntro => 'Үйіңіздегі барлығы осы жазбаларды көре және өңдей алады және олардың еске салғыштарын ала алады.';
 
   @override
   String get householdSharedRecordsEmpty => 'Әлі ештеңе бөлісілген жоқ. Жазбаны ашып, Үй-ішімен бөлісу параметрін қосыңыз.';
@@ -9046,4 +9046,28 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Әзірге жазбалар жоқ';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString күн бұрын $name өзгертті',
+      one: 'Кеше $name өзгертті',
+      zero: 'Бүгін $name өзгертті',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Тек мен қосқан жазбалар';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Тек мен қосқан ортақ жазбалар туралы еске сал. Басқалар қосқан жазбалар қолданбада көрінеді.';
 }

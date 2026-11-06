@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "Присъединете се към моето домакинство във Vaultara, за да следим документите си заедно. Докоснете тази връзка: {link}\nИли отворете Vaultara, отидете в Профил, после Семейство и въведете този код: {code}",
   "householdInviteCopied": "Връзката за покана е копирана",
   "householdSharedRecordsTitle": "Споделени записи",
-  "householdSharedRecordsIntro": "Всички във вашето домакинство могат да виждат и редактират тези записи, и всички получават напомнянията си.",
+  "householdSharedRecordsIntro": "Всички във вашето домакинство могат да виждат и редактират тези записи и могат да получават напомнянията им.",
   "householdSharedRecordsEmpty": "Още нищо не е споделено. Отворете запис и включете Споделено с домакинството.",
   "householdSharedCount": "{count, plural, one{{count} запис} other{{count} записа}}",
   "householdShowAllShared": "Показване на всички споделени записи",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "Грешно или подвеждащо",
   "assistantReportOther": "Нещо друго",
   "assistantReportThanks": "Благодарим ви. Ще прегледаме този отговор.",
-  "groupsNoRecordsSection": "Все още няма записи"
+  "groupsNoRecordsSection": "Все още няма записи",
+  "recordChangedRecently": "{days, plural, =0{Променено от {name} днес} =1{Променено от {name} вчера} other{Променено от {name} преди {days} дни}}",
+  "notifSharedOnlyMineTitle": "Само записите, които добавих",
+  "notifSharedOnlyMineSubtitle": "Напомняй ми само за споделените записи, които съм добавил. Записите на другите остават видими в приложението."
 }

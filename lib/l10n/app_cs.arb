@@ -1475,7 +1475,7 @@
   "householdInviteMessage": "Připojte se k mé domácnosti ve Vaultara, abychom mohli společně sledovat své dokumenty. Klepněte na tento odkaz: {link}\nNebo otevřete Vaultara, přejděte na Profil, pak na Rodina a zadejte tento kód: {code}",
   "householdInviteCopied": "Odkaz na pozvánku zkopírován",
   "householdSharedRecordsTitle": "Sdílené záznamy",
-  "householdSharedRecordsIntro": "Každý ve vaší domácnosti může tyto záznamy vidět a upravovat a každý dostává jejich připomenutí.",
+  "householdSharedRecordsIntro": "Každý ve vaší domácnosti může tyto záznamy vidět a upravovat a může dostávat jejich připomenutí.",
   "householdSharedRecordsEmpty": "Zatím se nic nesdílí. Otevřete záznam a zapněte Sdíleno s domácností.",
   "householdSharedCount": "{count, plural, one{{count} záznam} few{{count} záznamy} many{{count} záznamu} other{{count} záznamů}}",
   "householdShowAllShared": "Zobrazit všechny sdílené záznamy",
@@ -3469,5 +3469,8 @@
   "assistantReportWrong": "Nesprávné nebo zavádějící",
   "assistantReportOther": "Něco jiného",
   "assistantReportThanks": "Děkujeme. Tuto odpověď zkontrolujeme.",
-  "groupsNoRecordsSection": "Zatím žádné záznamy"
+  "groupsNoRecordsSection": "Zatím žádné záznamy",
+  "recordChangedRecently": "{days, plural, =0{Dnes změnil(a) {name}} =1{Včera změnil(a) {name}} few{Před {days} dny změnil(a) {name}} many{Před {days} dny změnil(a) {name}} other{Před {days} dny změnil(a) {name}}}",
+  "notifSharedOnlyMineTitle": "Jen záznamy, které jsem přidal(a)",
+  "notifSharedOnlyMineSubtitle": "Připomínej mi jen sdílené záznamy, které jsem přidal(a). Záznamy ostatních se v aplikaci dál zobrazují."
 }

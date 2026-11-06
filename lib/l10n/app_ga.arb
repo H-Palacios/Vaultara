@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Bí páirteach i mo líon tí ar Vaultara ionas gur féidir linn súil a choinneáil ar ár ndoiciméid le chéile. Tapáil an nasc seo: {link}\nNó oscail Vaultara, téigh go Próifíl, ansin Teaghlach, agus cuir isteach an cód seo: {code}",
   "householdInviteCopied": "Nasc cuiridh cóipeáilte",
   "householdSharedRecordsTitle": "Taifid roinnte",
-  "householdSharedRecordsIntro": "Is féidir le gach duine i do líon tí na taifid seo a fheiceáil agus a chur in eagar, agus faigheann gach duine a gcuid meabhrúchán.",
+  "householdSharedRecordsIntro": "Is féidir le gach duine i do líon tí na taifid seo a fheiceáil agus a chur in eagar, agus is féidir leo a gcuid meabhrúchán a fháil.",
   "householdSharedRecordsEmpty": "Níl aon rud roinnte go fóill. Oscail taifead agus cuir Roinnte leis an líon tí ar siúl.",
   "householdSharedCount": "{count, plural, one{{count} taifead} two{{count} thaifead} few{{count} thaifead} many{{count} dtaifead} other{{count} taifead}}",
   "householdShowAllShared": "Taispeáin gach taifead roinnte",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "Mícheart nó míthreorach",
   "assistantReportOther": "Rud éigin eile",
   "assistantReportThanks": "Go raibh maith agat. Déanfaimid athbhreithniú ar an bhfreagra seo.",
-  "groupsNoRecordsSection": "Níl aon taifid ann fós"
+  "groupsNoRecordsSection": "Níl aon taifid ann fós",
+  "recordChangedRecently": "{days, plural, =0{Athraithe ag {name} inniu} =1{Athraithe ag {name} inné} two{Athraithe ag {name} {days} lá ó shin} few{Athraithe ag {name} {days} lá ó shin} many{Athraithe ag {name} {days} lá ó shin} other{Athraithe ag {name} {days} lá ó shin}}",
+  "notifSharedOnlyMineTitle": "Na taifid a chuir mé leis amháin",
+  "notifSharedOnlyMineSubtitle": "Cuir i gcuimhne dom na taifid roinnte a chuir mé féin leis amháin. Feictear taifid daoine eile san aip fós."
 }

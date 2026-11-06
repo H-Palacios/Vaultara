@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "Vaultara પર મારા હાઉસહોલ્ડમાં જોડાઓ, જેથી આપણે સાથે મળીને આપણા દસ્તાવેજો પર નજર રાખી શકીએ. આ લિંક પર ટૅપ કરો: {link}\nઅથવા Vaultara ખોલો, પ્રોફાઇલ પર જાઓ, પછી પરિવાર, અને આ કોડ દાખલ કરો: {code}",
   "householdInviteCopied": "આમંત્રણ લિંક કૉપિ થઈ",
   "householdSharedRecordsTitle": "શેર કરેલા રેકોર્ડ",
-  "householdSharedRecordsIntro": "તમારા હાઉસહોલ્ડમાંના દરેક જણ આ રેકોર્ડ જોઈ અને સંપાદિત કરી શકે છે, અને બધાને તેમના રિમાઇન્ડર મળે છે.",
+  "householdSharedRecordsIntro": "તમારા હાઉસહોલ્ડમાંના દરેક જણ આ રેકોર્ડ જોઈ અને સંપાદિત કરી શકે છે, અને તેમના રિમાઇન્ડર મેળવી શકે છે.",
   "householdSharedRecordsEmpty": "હજી કંઈ શેર થયું નથી. રેકોર્ડ ખોલો અને હાઉસહોલ્ડ સાથે શેર ચાલુ કરો.",
   "householdSharedCount": "{count, plural, one{{count} રેકોર્ડ} other{{count} રેકોર્ડ}}",
   "householdShowAllShared": "બધા શેર કરેલા રેકોર્ડ બતાવો",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "ખોટું અથવા ગેરમાર્ગે દોરનારું",
   "assistantReportOther": "બીજું કંઈક",
   "assistantReportThanks": "આભાર. અમે આ જવાબની સમીક્ષા કરીશું.",
-  "groupsNoRecordsSection": "હજુ સુધી કોઈ રેકોર્ડ નથી"
+  "groupsNoRecordsSection": "હજુ સુધી કોઈ રેકોર્ડ નથી",
+  "recordChangedRecently": "{days, plural, =0{આજે {name} દ્વારા બદલ્યું} =1{ગઈકાલે {name} દ્વારા બદલ્યું} other{{days} દિવસ પહેલાં {name} દ્વારા બદલ્યું}}",
+  "notifSharedOnlyMineTitle": "ફક્ત મેં ઉમેરેલા રેકોર્ડ",
+  "notifSharedOnlyMineSubtitle": "મેં ઉમેરેલા શેર કરેલા રેકોર્ડ માટે જ મને યાદ અપાવો. બીજાએ ઉમેરેલા રેકોર્ડ ઍપમાં દેખાતા રહેશે."
 }

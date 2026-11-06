@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "به خانوار من در Vaultara بپیوندید تا اسناد خود را با هم پیگیری کنیم. روی این پیوند بزنید: {link}\nیا Vaultara را باز کنید، به نمایه و سپس خانواده بروید و این کد را وارد کنید: {code}",
   "householdInviteCopied": "پیوند دعوت کپی شد",
   "householdSharedRecordsTitle": "رکوردهای مشترک",
-  "householdSharedRecordsIntro": "همه اعضای خانوار شما می‌توانند این رکوردها را ببینند و ویرایش کنند و همه یادآوری‌های آن‌ها را می‌گیرند.",
+  "householdSharedRecordsIntro": "همه اعضای خانوار شما می‌توانند این رکوردها را ببینند و ویرایش کنند و می‌توانند یادآوری‌های آن‌ها را بگیرند.",
   "householdSharedRecordsEmpty": "هنوز چیزی به اشتراک گذاشته نشده است. یک رکورد را باز کنید و گزینه به‌اشتراک‌گذاشته با خانوار را روشن کنید.",
   "householdSharedCount": "{count, plural, one{{count} رکورد} other{{count} رکورد}}",
   "householdShowAllShared": "نمایش همه رکوردهای مشترک",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "نادرست یا گمراه‌کننده",
   "assistantReportOther": "چیز دیگر",
   "assistantReportThanks": "سپاسگزاریم. این پاسخ را بررسی می‌کنیم.",
-  "groupsNoRecordsSection": "هنوز رکوردی وجود ندارد"
+  "groupsNoRecordsSection": "هنوز رکوردی وجود ندارد",
+  "recordChangedRecently": "{days, plural, =0{امروز توسط {name} تغییر کرد} =1{دیروز توسط {name} تغییر کرد} other{{days} روز پیش توسط {name} تغییر کرد}}",
+  "notifSharedOnlyMineTitle": "فقط رکوردهایی که من افزودم",
+  "notifSharedOnlyMineSubtitle": "فقط برای رکوردهای مشترکی که خودم افزوده‌ام یادآوری بفرست. رکوردهایی که دیگران افزوده‌اند همچنان در برنامه دیده می‌شوند."
 }

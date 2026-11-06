@@ -4405,7 +4405,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Bendrinami įrašai';
 
   @override
-  String get householdSharedRecordsIntro => 'Visi jūsų namų ūkio nariai gali matyti ir redaguoti šiuos įrašus, ir visi gauna priminimus.';
+  String get householdSharedRecordsIntro => 'Visi jūsų namų ūkio nariai gali matyti ir redaguoti šiuos įrašus ir gali gauti jų priminimus.';
 
   @override
   String get householdSharedRecordsEmpty => 'Kol kas niekuo nesidalijama. Atidarykite įrašą ir įjunkite Bendrinama su namų ūkiu.';
@@ -9197,4 +9197,30 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Įrašų dar nėra';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name pakeitė prieš $daysString dienų',
+      many: '$name pakeitė prieš $daysString dienos',
+      few: '$name pakeitė prieš $daysString dienas',
+      one: '$name pakeitė vakar',
+      zero: '$name pakeitė šiandien',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Tik mano pridėti įrašai';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Priminti tik apie bendrinamus įrašus, kuriuos pridėjau. Kitų pridėti įrašai vis tiek rodomi programėlėje.';
 }

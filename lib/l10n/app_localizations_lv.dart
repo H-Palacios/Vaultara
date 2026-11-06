@@ -4353,7 +4353,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Kopīgotie ieraksti';
 
   @override
-  String get householdSharedRecordsIntro => 'Visi jūsu mājsaimniecības dalībnieki var redzēt un rediģēt šos ierakstus, un visi saņem atgādinājumus.';
+  String get householdSharedRecordsIntro => 'Visi jūsu mājsaimniecības dalībnieki var redzēt un rediģēt šos ierakstus un var saņemt to atgādinājumus.';
 
   @override
   String get householdSharedRecordsEmpty => 'Vēl nekas nav kopīgots. Atveriet ierakstu un ieslēdziet Kopīgots ar mājsaimniecību.';
@@ -9117,4 +9117,28 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Vēl nav ierakstu';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name mainīja pirms $daysString dienām',
+      one: '$name mainīja pirms $daysString dienas',
+      zero: '$name mainīja pirms $daysString dienām',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Tikai manis pievienotie ieraksti';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē.';
 }

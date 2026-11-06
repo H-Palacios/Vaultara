@@ -1194,7 +1194,7 @@
   "householdInviteMessage": "आपली कागदपत्रे एकत्र सांभाळण्यासाठी Vaultara वर माझ्या हाउसहोल्डमध्ये सामील व्हा. या लिंकवर टॅप करा: {link}\nकिंवा Vaultara उघडा, प्रोफाइल, मग कुटुंब येथे जा आणि हा कोड टाका: {code}",
   "householdInviteCopied": "आमंत्रण लिंक कॉपी केली",
   "householdSharedRecordsTitle": "शेअर केलेल्या नोंदी",
-  "householdSharedRecordsIntro": "तुमच्या हाउसहोल्डमधील प्रत्येकजण या नोंदी पाहू आणि संपादित करू शकतो, आणि प्रत्येकाला त्यांचे रिमाइंडर मिळतात.",
+  "householdSharedRecordsIntro": "तुमच्या हाउसहोल्डमधील प्रत्येकजण या नोंदी पाहू आणि संपादित करू शकतो, आणि त्यांचे रिमाइंडर मिळवू शकतो.",
   "householdSharedRecordsEmpty": "अजून काहीही शेअर केलेले नाही. एखादी नोंद उघडा आणि हाउसहोल्डसोबत शेअर केले सुरू करा.",
   "householdSharedCount": "{count, plural, one{{count} नोंद} other{{count} नोंदी}}",
   "householdShowAllShared": "सर्व शेअर केलेल्या नोंदी दाखवा",
@@ -3188,5 +3188,8 @@
   "assistantReportWrong": "चुकीचे किंवा दिशाभूल करणारे",
   "assistantReportOther": "दुसरे काहीतरी",
   "assistantReportThanks": "धन्यवाद. आम्ही हे उत्तर तपासू.",
-  "groupsNoRecordsSection": "अद्याप कोणत्याही नोंदी नाहीत"
+  "groupsNoRecordsSection": "अद्याप कोणत्याही नोंदी नाहीत",
+  "recordChangedRecently": "{days, plural, =0{आज {name} यांनी बदलले} =1{काल {name} यांनी बदलले} other{{days} दिवसांपूर्वी {name} यांनी बदलले}}",
+  "notifSharedOnlyMineTitle": "फक्त मी जोडलेल्या नोंदी",
+  "notifSharedOnlyMineSubtitle": "मी जोडलेल्या शेअर केलेल्या नोंदींचीच आठवण करून द्या. इतरांनी जोडलेल्या नोंदी ॲपमध्ये दिसत राहतील."
 }

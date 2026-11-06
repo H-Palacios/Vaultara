@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "Unisciti al mio nucleo familiare su Vaultara, così teniamo traccia dei nostri documenti insieme. Tocca questo link: {link}\nOppure apri Vaultara, vai su Profilo, poi Famiglia, e inserisci questo codice: {code}",
   "householdInviteCopied": "Link di invito copiato",
   "householdSharedRecordsTitle": "Record condivisi",
-  "householdSharedRecordsIntro": "Tutti i membri del tuo nucleo familiare possono vedere e modificare questi record, e tutti ricevono i promemoria.",
+  "householdSharedRecordsIntro": "Tutti i membri del tuo nucleo familiare possono vedere e modificare questi record, e possono riceverne i promemoria.",
   "householdSharedRecordsEmpty": "Non c'è ancora nulla di condiviso. Apri un record e attiva Condiviso con il nucleo familiare.",
   "householdSharedCount": "{count, plural, one{{count} record} other{{count} record}}",
   "householdShowAllShared": "Mostra tutti i record condivisi",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "Errata o fuorviante",
   "assistantReportOther": "Altro",
   "assistantReportThanks": "Grazie. Esamineremo questa risposta.",
-  "groupsNoRecordsSection": "Nessun record presente"
+  "groupsNoRecordsSection": "Nessun record presente",
+  "recordChangedRecently": "{days, plural, =0{Modificato da {name} oggi} =1{Modificato da {name} ieri} other{Modificato da {name} {days} giorni fa}}",
+  "notifSharedOnlyMineTitle": "Solo i record che ho aggiunto",
+  "notifSharedOnlyMineSubtitle": "Ricordami solo i record condivisi che ho aggiunto. Quelli aggiunti dagli altri restano visibili nell'app."
 }

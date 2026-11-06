@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "Shiga gidana a Vaultara don mu riƙa bibiyar takardunmu tare. Taɓa wannan hanyar haɗin: {link}\nKo ka buɗe Vaultara, je Bayanan martaba, sannan Iyali, ka shigar da wannan lambar: {code}",
   "householdInviteCopied": "An kwafi hanyar haɗin gayyata",
   "householdSharedRecordsTitle": "Rikodin da aka raba",
-  "householdSharedRecordsIntro": "Duk wanda ke cikin gidanka zai iya ganin waɗannan rikodin ya gyara su, kuma kowa yana samun tunatarwarsa.",
+  "householdSharedRecordsIntro": "Duk wanda ke cikin gidanka zai iya ganin waɗannan rikodin ya gyara su, kuma zai iya samun tunatarwarsu.",
   "householdSharedRecordsEmpty": "Ba a raba komai ba tukuna. Buɗe rikodi ka kunna Raba da gida.",
   "householdSharedCount": "{count, plural, one{rikodi {count}} other{rikodi {count}}}",
   "householdShowAllShared": "Nuna duk rikodin da aka raba",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "Ba daidai ba ko mai ɓatarwa",
   "assistantReportOther": "Wani abu dabam",
   "assistantReportThanks": "Na gode. Za mu duba wannan amsa.",
-  "groupsNoRecordsSection": "Babu rikodi tukuna"
+  "groupsNoRecordsSection": "Babu rikodi tukuna",
+  "recordChangedRecently": "{days, plural, =0{{name} ya canza yau} =1{{name} ya canza jiya} other{{name} ya canza kwanaki {days} da suka wuce}}",
+  "notifSharedOnlyMineTitle": "Rikodin da na ƙara kawai",
+  "notifSharedOnlyMineSubtitle": "Ka tuna min rikodin da aka raba waɗanda na ƙara kawai. Rikodin da wasu suka ƙara suna nan a cikin manhajar."
 }

@@ -4310,7 +4310,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'شیئر کیے گئے ریکارڈ';
 
   @override
-  String get householdSharedRecordsIntro => 'آپ کے گھرانے میں سب لوگ یہ ریکارڈ دیکھ اور ایڈٹ کر سکتے ہیں، اور سب کو ان کی یاد دہانیاں ملتی ہیں۔';
+  String get householdSharedRecordsIntro => 'آپ کے گھرانے میں سب لوگ یہ ریکارڈ دیکھ اور ایڈٹ کر سکتے ہیں، اور ان کی یاد دہانیاں لے سکتے ہیں۔';
 
   @override
   String get householdSharedRecordsEmpty => 'ابھی کچھ شیئر نہیں کیا گیا۔ کوئی ریکارڈ کھولیں اور گھرانے کے ساتھ شیئر کیا گیا آن کریں۔';
@@ -9046,4 +9046,28 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'ابھی تک کوئی ریکارڈ نہیں ہے';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString دن پہلے $name نے بدلا',
+      one: 'کل $name نے بدلا',
+      zero: 'آج $name نے بدلا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'صرف میرے شامل کیے ریکارڈ';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'مجھے صرف ان شیئر کیے گئے ریکارڈ کی یاد دلائیں جو میں نے شامل کیے۔ دوسروں کے شامل کیے ریکارڈ ایپ میں نظر آتے رہیں گے۔';
 }

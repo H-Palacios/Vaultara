@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Belgelerimizi birlikte takip edebilmemiz için Vaultara uygulamasındaki hanemize katılın. Şu bağlantıya dokunun: {link}\nYa da Vaultara uygulamasını açın, Profil, ardından Aile bölümüne gidin ve şu kodu girin: {code}",
   "householdInviteCopied": "Davet bağlantısı kopyalandı",
   "householdSharedRecordsTitle": "Paylaşılan kayıtlar",
-  "householdSharedRecordsIntro": "Hanenizdeki herkes bu kayıtları görebilir ve düzenleyebilir, herkes de hatırlatmalarını alır.",
+  "householdSharedRecordsIntro": "Hanenizdeki herkes bu kayıtları görebilir ve düzenleyebilir, hatırlatmalarını da alabilir.",
   "householdSharedRecordsEmpty": "Henüz hiçbir şey paylaşılmadı. Bir kaydı açın ve Haneyle paylaşıldı seçeneğini açın.",
   "householdSharedCount": "{count, plural, one{{count} kayıt} other{{count} kayıt}}",
   "householdShowAllShared": "Tüm paylaşılan kayıtları göster",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Yanlış veya yanıltıcı",
   "assistantReportOther": "Başka bir şey",
   "assistantReportThanks": "Teşekkürler. Bu yanıtı inceleyeceğiz.",
-  "groupsNoRecordsSection": "Henüz kayıt yok"
+  "groupsNoRecordsSection": "Henüz kayıt yok",
+  "recordChangedRecently": "{days, plural, =0{Bugün {name} değiştirdi} =1{Dün {name} değiştirdi} other{{days} gün önce {name} değiştirdi}}",
+  "notifSharedOnlyMineTitle": "Yalnızca eklediğim kayıtlar",
+  "notifSharedOnlyMineSubtitle": "Yalnızca eklediğim paylaşılan kayıtlar için hatırlat. Başkalarının eklediği kayıtlar uygulamada görünmeye devam eder."
 }

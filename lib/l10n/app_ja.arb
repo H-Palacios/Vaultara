@@ -1456,7 +1456,7 @@
   "householdInviteMessage": "書類を一緒に管理するため、Vaultara で私の世帯に参加してください。このリンクをタップしてください: {link}\nまたは Vaultara を開き、プロフィール、ファミリーの順に進んで、このコードを入力してください: {code}",
   "householdInviteCopied": "招待リンクをコピーしました",
   "householdSharedRecordsTitle": "共有された記録",
-  "householdSharedRecordsIntro": "世帯の全員がこれらの記録を見たり編集したりでき、全員にリマインダーが届きます。",
+  "householdSharedRecordsIntro": "世帯の全員がこれらの記録を見たり編集したりでき、リマインダーを受け取ることもできます。",
   "householdSharedRecordsEmpty": "まだ何も共有されていません。記録を開いて、「世帯と共有」をオンにしてください。",
   "householdSharedCount": "{count, plural, other{{count}件の記録}}",
   "householdShowAllShared": "共有された記録をすべて表示",
@@ -3450,5 +3450,8 @@
   "assistantReportWrong": "間違っている、または誤解を招く",
   "assistantReportOther": "その他",
   "assistantReportThanks": "ありがとうございます。この回答を確認します。",
-  "groupsNoRecordsSection": "まだ記録がありません"
+  "groupsNoRecordsSection": "まだ記録がありません",
+  "recordChangedRecently": "{days, plural, =0{今日 {name} が変更} =1{昨日 {name} が変更} other{{days}日前に {name} が変更}}",
+  "notifSharedOnlyMineTitle": "自分が追加した記録のみ",
+  "notifSharedOnlyMineSubtitle": "自分が追加した共有記録だけリマインドします。ほかの人が追加した記録もアプリには表示されます。"
 }

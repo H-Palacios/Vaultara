@@ -4357,7 +4357,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Подељени записи';
 
   @override
-  String get householdSharedRecordsIntro => 'Сви у вашем домаћинству могу видети и уређивати ове записе, и сви добијају своје подсетнике.';
+  String get householdSharedRecordsIntro => 'Сви у вашем домаћинству могу да виде и мењају ове записе, и могу да добијају њихове подсетнике.';
 
   @override
   String get householdSharedRecordsEmpty => 'Још ништа није подељено. Отворите запис и укључите Подељено са домаћинством.';
@@ -9127,6 +9127,31 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Још нема записа';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name изменио/ла пре $daysString дана',
+      few: '$name изменио/ла пре $daysString дана',
+      one: '$name изменио/ла јуче',
+      zero: '$name изменио/ла данас',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Само записи које сам додао/ла';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Подсећај ме само на дељене записе које сам додао/ла. Записи које су додали други и даље се виде у апликацији.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -13481,7 +13506,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get householdSharedRecordsTitle => 'Подељени записи';
 
   @override
-  String get householdSharedRecordsIntro => 'Сви у вашем домаћинству могу да виде и мењају ове записе, и сви добијају њихове подсетнике.';
+  String get householdSharedRecordsIntro => 'Сви у вашем домаћинству могу да виде и мењају ове записе, и могу да добијају њихове подсетнике.';
 
   @override
   String get householdSharedRecordsEmpty => 'Још ништа није подељено. Отворите запис и укључите Подељено са домаћинством.';
@@ -18251,6 +18276,31 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get groupsNoRecordsSection => 'Још нема записа';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name изменио/ла пре $daysString дана',
+      few: '$name изменио/ла пре $daysString дана',
+      one: '$name изменио/ла јуче',
+      zero: '$name изменио/ла данас',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Само записи које сам додао/ла';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Подсећај ме само на дељене записе које сам додао/ла. Записи које су додали други и даље се виде у апликацији.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -22601,7 +22651,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get householdSharedRecordsTitle => 'Podeljeni zapisi';
 
   @override
-  String get householdSharedRecordsIntro => 'Svi u vašem domaćinstvu mogu da vide i menjaju ove zapise, i svi dobijaju njihove podsetnike.';
+  String get householdSharedRecordsIntro => 'Svi u vašem domaćinstvu mogu da vide i menjaju ove zapise, i mogu da dobijaju njihove podsetnike.';
 
   @override
   String get householdSharedRecordsEmpty => 'Još ništa nije podeljeno. Otvorite zapis i uključite Podeljeno sa domaćinstvom.';
@@ -27371,4 +27421,29 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get groupsNoRecordsSection => 'Još nema zapisa';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name izmenio/la pre $daysString dana',
+      few: '$name izmenio/la pre $daysString dana',
+      one: '$name izmenio/la juče',
+      zero: '$name izmenio/la danas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Samo zapisi koje sam dodao/la';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Podsećaj me samo na deljene zapise koje sam dodao/la. Zapisi koje su dodali drugi i dalje se vide u aplikaciji.';
 }

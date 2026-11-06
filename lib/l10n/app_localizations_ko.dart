@@ -4276,7 +4276,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get householdSharedRecordsTitle => '공유 기록';
 
   @override
-  String get householdSharedRecordsIntro => '가구 구성원 모두가 이 기록을 보고 수정할 수 있으며, 모두에게 알림이 갑니다.';
+  String get householdSharedRecordsIntro => '가구 구성원 모두가 이 기록을 보고 수정할 수 있으며, 알림도 받을 수 있습니다.';
 
   @override
   String get householdSharedRecordsEmpty => '아직 공유한 기록이 없습니다. 기록을 열고 가구와 공유를 켜세요.';
@@ -8983,4 +8983,28 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => '아직 기록이 없습니다';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString일 전 $name님이 변경',
+      one: '어제 $name님이 변경',
+      zero: '오늘 $name님이 변경',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => '내가 추가한 기록만';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => '내가 추가한 공유 기록만 알림을 받습니다. 다른 사람이 추가한 기록도 앱에는 계속 표시됩니다.';
 }

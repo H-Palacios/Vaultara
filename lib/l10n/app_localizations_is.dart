@@ -4309,7 +4309,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Sameiginlegar færslur';
 
   @override
-  String get householdSharedRecordsIntro => 'Allir á heimilinu þínu geta séð og breytt þessum færslum og allir fá áminningar þeirra.';
+  String get householdSharedRecordsIntro => 'Allir á heimilinu þínu geta séð og breytt þessum færslum og geta fengið áminningar þeirra.';
 
   @override
   String get householdSharedRecordsEmpty => 'Engu er deilt enn. Opnaðu færslu og kveiktu á Deilt með heimili.';
@@ -9045,4 +9045,28 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Engar færslur enn';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name breytti fyrir $daysString dögum',
+      one: '$name breytti í gær',
+      zero: '$name breytti í dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Aðeins færslur sem ég bætti við';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Minntu mig aðeins á sameiginlegar færslur sem ég bætti við. Færslur annarra sjást áfram í forritinu.';
 }

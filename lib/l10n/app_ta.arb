@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "நம் ஆவணங்களை ஒன்றாகக் கண்காணிக்க Vaultara இல் என் இல்லத்தில் சேருங்கள். இந்த இணைப்பைத் தட்டுங்கள்: {link}\nஅல்லது Vaultara ஐத் திறந்து, சுயவிவரம், பிறகு குடும்பம் என்பதற்குச் சென்று, இந்தக் குறியீட்டை உள்ளிடுங்கள்: {code}",
   "householdInviteCopied": "அழைப்பு இணைப்பு நகலெடுக்கப்பட்டது",
   "householdSharedRecordsTitle": "பகிரப்பட்ட பதிவுகள்",
-  "householdSharedRecordsIntro": "உங்கள் இல்லத்திலுள்ள அனைவரும் இந்தப் பதிவுகளைப் பார்க்கவும் திருத்தவும் முடியும், அனைவருக்கும் அவற்றின் நினைவூட்டல்கள் வரும்.",
+  "householdSharedRecordsIntro": "உங்கள் இல்லத்திலுள்ள அனைவரும் இந்தப் பதிவுகளைப் பார்க்கவும் திருத்தவும் முடியும், அவற்றின் நினைவூட்டல்களைப் பெறவும் முடியும்.",
   "householdSharedRecordsEmpty": "இன்னும் எதுவும் பகிரப்படவில்லை. ஒரு பதிவைத் திறந்து இல்லத்துடன் பகிர் என்பதை இயக்குங்கள்.",
   "householdSharedCount": "{count, plural, one{{count} பதிவு} other{{count} பதிவுகள்}}",
   "householdShowAllShared": "பகிரப்பட்ட அனைத்துப் பதிவுகளையும் காட்டு",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "தவறானது அல்லது தவறாக வழிநடத்துவது",
   "assistantReportOther": "வேறு ஏதாவது",
   "assistantReportThanks": "நன்றி. இந்தப் பதிலை மதிப்பாய்வு செய்வோம்.",
-  "groupsNoRecordsSection": "இதுவரை பதிவுகள் இல்லை"
+  "groupsNoRecordsSection": "இதுவரை பதிவுகள் இல்லை",
+  "recordChangedRecently": "{days, plural, =0{இன்று {name} மாற்றினார்} =1{நேற்று {name} மாற்றினார்} other{{days} நாட்களுக்கு முன் {name} மாற்றினார்}}",
+  "notifSharedOnlyMineTitle": "நான் சேர்த்த பதிவுகள் மட்டும்",
+  "notifSharedOnlyMineSubtitle": "நான் சேர்த்த பகிரப்பட்ட பதிவுகளைப் பற்றி மட்டும் நினைவூட்டு. மற்றவர்கள் சேர்த்த பதிவுகள் ஆப்பில் தொடர்ந்து தெரியும்."
 }

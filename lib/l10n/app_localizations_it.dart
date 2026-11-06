@@ -4314,7 +4314,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Record condivisi';
 
   @override
-  String get householdSharedRecordsIntro => 'Tutti i membri del tuo nucleo familiare possono vedere e modificare questi record, e tutti ricevono i promemoria.';
+  String get householdSharedRecordsIntro => 'Tutti i membri del tuo nucleo familiare possono vedere e modificare questi record, e possono riceverne i promemoria.';
 
   @override
   String get householdSharedRecordsEmpty => 'Non c\'è ancora nulla di condiviso. Apri un record e attiva Condiviso con il nucleo familiare.';
@@ -9058,4 +9058,28 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Nessun record presente';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Modificato da $name $daysString giorni fa',
+      one: 'Modificato da $name ieri',
+      zero: 'Modificato da $name oggi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Solo i record che ho aggiunto';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Ricordami solo i record condivisi che ho aggiunto. Quelli aggiunti dagli altri restano visibili nell\'app.';
 }

@@ -1451,7 +1451,7 @@
   "householdInviteMessage": "Vaultara ਉੱਤੇ ਮੇਰੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਜੁੜੋ, ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਇਕੱਠੇ ਸੰਭਾਲ ਸਕੀਏ। ਇਸ ਲਿੰਕ ਉੱਤੇ ਟੈਪ ਕਰੋ: {link}\nਜਾਂ Vaultara ਖੋਲ੍ਹੋ, ਪ੍ਰੋਫਾਈਲ ਵਿੱਚ ਜਾਓ, ਫਿਰ ਪਰਿਵਾਰ ਵਿੱਚ ਜਾਓ ਅਤੇ ਇਹ ਕੋਡ ਦਾਖਲ ਕਰੋ: {code}",
   "householdInviteCopied": "ਸੱਦਾ ਲਿੰਕ ਕਾਪੀ ਹੋ ਗਿਆ",
   "householdSharedRecordsTitle": "ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ",
-  "householdSharedRecordsIntro": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹਰ ਕੋਈ ਇਹ ਰਿਕਾਰਡ ਦੇਖ ਅਤੇ ਬਦਲ ਸਕਦਾ ਹੈ, ਅਤੇ ਸਭ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਰਿਮਾਈਂਡਰ ਮਿਲਦੇ ਹਨ।",
+  "householdSharedRecordsIntro": "ਤੁਹਾਡੇ ਹਾਊਸਹੋਲਡ ਵਿੱਚ ਹਰ ਕੋਈ ਇਹ ਰਿਕਾਰਡ ਦੇਖ ਅਤੇ ਬਦਲ ਸਕਦਾ ਹੈ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਰਿਮਾਈਂਡਰ ਲੈ ਸਕਦਾ ਹੈ।",
   "householdSharedRecordsEmpty": "ਅਜੇ ਕੁਝ ਵੀ ਸਾਂਝਾ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। ਕੋਈ ਰਿਕਾਰਡ ਖੋਲ੍ਹੋ ਅਤੇ ਹਾਊਸਹੋਲਡ ਨਾਲ ਸਾਂਝਾ ਚਾਲੂ ਕਰੋ।",
   "householdSharedCount": "{count, plural, one{{count} ਰਿਕਾਰਡ} other{{count} ਰਿਕਾਰਡ}}",
   "householdShowAllShared": "ਸਾਰੇ ਸਾਂਝੇ ਰਿਕਾਰਡ ਦਿਖਾਓ",
@@ -3445,5 +3445,8 @@
   "assistantReportWrong": "ਗਲਤ ਜਾਂ ਗੁਮਰਾਹਕੁੰਨ",
   "assistantReportOther": "ਕੁਝ ਹੋਰ",
   "assistantReportThanks": "ਧੰਨਵਾਦ। ਅਸੀਂ ਇਸ ਜਵਾਬ ਦੀ ਸਮੀਖਿਆ ਕਰਾਂਗੇ।",
-  "groupsNoRecordsSection": "ਹੁਣ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ"
+  "groupsNoRecordsSection": "ਹੁਣ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ",
+  "recordChangedRecently": "{days, plural, =0{ਅੱਜ {name} ਨੇ ਬਦਲਿਆ} =1{ਕੱਲ੍ਹ {name} ਨੇ ਬਦਲਿਆ} other{{days} ਦਿਨ ਪਹਿਲਾਂ {name} ਨੇ ਬਦਲਿਆ}}",
+  "notifSharedOnlyMineTitle": "ਸਿਰਫ਼ ਮੇਰੇ ਜੋੜੇ ਰਿਕਾਰਡ",
+  "notifSharedOnlyMineSubtitle": "ਮੈਨੂੰ ਸਿਰਫ਼ ਮੇਰੇ ਜੋੜੇ ਸਾਂਝੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਯਾਦ ਕਰਵਾਓ। ਦੂਜਿਆਂ ਦੇ ਜੋੜੇ ਰਿਕਾਰਡ ਐਪ ਵਿੱਚ ਦਿਸਦੇ ਰਹਿਣਗੇ।"
 }

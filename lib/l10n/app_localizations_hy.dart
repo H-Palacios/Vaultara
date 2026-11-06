@@ -4310,7 +4310,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Կիսված գրառումներ';
 
   @override
-  String get householdSharedRecordsIntro => 'Ձեր տնային տնտեսության բոլոր անդամները կարող են տեսնել և խմբագրել այս գրառումները, և բոլորը ստանում են հիշեցումները։';
+  String get householdSharedRecordsIntro => 'Ձեր տնային տնտեսության բոլոր անդամները կարող են տեսնել և խմբագրել այս գրառումները, և կարող են ստանալ դրանց հիշեցումները։';
 
   @override
   String get householdSharedRecordsEmpty => 'Դեռ ոչինչ կիսված չէ։ Բացեք գրառում և միացրեք Կիսված է տնային տնտեսության հետ։';
@@ -9046,4 +9046,28 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Դեռ գրառումներ չկան։';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Փոխել է $name-ը $daysString օր առաջ',
+      one: 'Փոխել է $name-ը երեկ',
+      zero: 'Փոխել է $name-ը այսօր',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Միայն իմ ավելացրած գրառումները';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Հիշեցրու ինձ միայն իմ ավելացրած ընդհանուր գրառումների մասին։ Ուրիշների ավելացրածները դեռ երևում են հավելվածում։';
 }

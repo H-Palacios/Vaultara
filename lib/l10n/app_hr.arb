@@ -1449,7 +1449,7 @@
   "householdInviteMessage": "Pridružite se mom kućanstvu u aplikaciji Vaultara da zajedno pratimo naše dokumente. Dodirnite ovu poveznicu: {link}\nIli otvorite aplikaciju Vaultara, idite na Profil, zatim Obitelj, i unesite ovaj kod: {code}",
   "householdInviteCopied": "Poveznica poziva je kopirana",
   "householdSharedRecordsTitle": "Podijeljeni zapisi",
-  "householdSharedRecordsIntro": "Svi u vašem kućanstvu mogu vidjeti i uređivati ove zapise, i svi dobivaju svoje podsjetnike.",
+  "householdSharedRecordsIntro": "Svi u vašem kućanstvu mogu vidjeti i uređivati ove zapise i mogu dobivati njihove podsjetnike.",
   "householdSharedRecordsEmpty": "Još ništa nije podijeljeno. Otvorite zapis i uključite Podijeljeno s kućanstvom.",
   "householdSharedCount": "{count, plural, one{{count} zapis} few{{count} zapisa} other{{count} zapisa}}",
   "householdShowAllShared": "Prikaži sve podijeljene zapise",
@@ -3443,5 +3443,8 @@
   "assistantReportWrong": "Pogrešno ili obmanjujuće",
   "assistantReportOther": "Nešto drugo",
   "assistantReportThanks": "Hvala vam. Provjerit ćemo ovaj odgovor.",
-  "groupsNoRecordsSection": "Još nema zapisa"
+  "groupsNoRecordsSection": "Još nema zapisa",
+  "recordChangedRecently": "{days, plural, =0{{name} izmijenio/la danas} =1{{name} izmijenio/la jučer} few{{name} izmijenio/la prije {days} dana} other{{name} izmijenio/la prije {days} dana}}",
+  "notifSharedOnlyMineTitle": "Samo zapisi koje sam dodao/la",
+  "notifSharedOnlyMineSubtitle": "Podsjeti me samo na dijeljene zapise koje sam dodao/la. Zapisi koje su dodali drugi i dalje se vide u aplikaciji."
 }

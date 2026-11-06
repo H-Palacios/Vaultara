@@ -4360,7 +4360,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Înregistrări partajate';
 
   @override
-  String get householdSharedRecordsIntro => 'Toți membrii gospodăriei tale pot vedea și edita aceste înregistrări, iar toți primesc memento-urile.';
+  String get householdSharedRecordsIntro => 'Toți membrii gospodăriei tale pot vedea și edita aceste înregistrări și pot primi memento-urile lor.';
 
   @override
   String get householdSharedRecordsEmpty => 'Încă nu e nimic partajat. Deschide o înregistrare și activează Partajat cu gospodăria.';
@@ -9129,4 +9129,29 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Nu există încă înregistrări';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Modificat de $name acum $daysString zile',
+      few: 'Modificat de $name acum $daysString zile',
+      one: 'Modificat de $name ieri',
+      zero: 'Modificat de $name azi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Doar înregistrările adăugate de mine';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Amintește-mi doar de înregistrările partajate pe care le-am adăugat. Cele adăugate de alții rămân vizibile în aplicație.';
 }

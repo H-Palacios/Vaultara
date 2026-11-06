@@ -4310,7 +4310,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Delte oppføringar';
 
   @override
-  String get householdSharedRecordsIntro => 'Alle i hushaldet ditt kan sjå og redigere desse oppføringane, og alle får påminningane sine.';
+  String get householdSharedRecordsIntro => 'Alle i hushaldet ditt kan sjå og redigere desse oppføringane, og kan få påminningane deira.';
 
   @override
   String get householdSharedRecordsEmpty => 'Ingenting er delt enno. Opne ei oppføring og slå på Delt med hushaldet.';
@@ -9051,4 +9051,28 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Ingen oppføringar enno';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Endra av $name for $daysString dagar sidan',
+      one: 'Endra av $name i går',
+      zero: 'Endra av $name i dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Berre oppføringar eg la til';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Minn meg berre på delte oppføringar eg la til. Oppføringar andre la til, blir framleis viste i appen.';
 }

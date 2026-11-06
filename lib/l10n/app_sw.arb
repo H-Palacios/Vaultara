@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "Jiunge na kaya yangu kwenye Vaultara ili tufuatilie hati zetu pamoja. Gusa kiungo hiki: {link}\nAu fungua Vaultara, nenda kwenye Wasifu, kisha Familia, na uweke msimbo huu: {code}",
   "householdInviteCopied": "Kiungo cha mwaliko kimenakiliwa",
   "householdSharedRecordsTitle": "Rekodi zilizoshirikiwa",
-  "householdSharedRecordsIntro": "Kila mtu kwenye kaya yako anaweza kuona na kuhariri rekodi hizi, na kila mtu anapata vikumbusho vyake.",
+  "householdSharedRecordsIntro": "Kila mtu kwenye kaya yako anaweza kuona na kuhariri rekodi hizi, na anaweza kupata vikumbusho vyake.",
   "householdSharedRecordsEmpty": "Bado hakuna kilichoshirikiwa. Fungua rekodi na uwashe Imeshirikiwa na kaya.",
   "householdSharedCount": "{count, plural, one{Rekodi {count}} other{Rekodi {count}}}",
   "householdShowAllShared": "Onyesha rekodi zote zilizoshirikiwa",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "Si sahihi au ya kupotosha",
   "assistantReportOther": "Kitu kingine",
   "assistantReportThanks": "Asante. Tutakagua jibu hili.",
-  "groupsNoRecordsSection": "Bado hakuna rekodi"
+  "groupsNoRecordsSection": "Bado hakuna rekodi",
+  "recordChangedRecently": "{days, plural, =0{Ilibadilishwa na {name} leo} =1{Ilibadilishwa na {name} jana} other{Ilibadilishwa na {name} siku {days} zilizopita}}",
+  "notifSharedOnlyMineTitle": "Rekodi nilizoongeza tu",
+  "notifSharedOnlyMineSubtitle": "Nikumbushe tu kuhusu rekodi zinazoshirikiwa nilizoongeza. Rekodi walizoongeza wengine bado zinaonekana kwenye programu."
 }

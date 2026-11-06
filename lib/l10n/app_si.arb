@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "අපේ ලේඛන එකට නිරීක්ෂණය කිරීමට Vaultara හි මගේ ගෘහයට සම්බන්ධ වන්න. මෙම සබැඳිය තට්ටු කරන්න: {link}\nනැතහොත් Vaultara විවෘත කර, පැතිකඩ, ඉන්පසු පවුල වෙත ගොස්, මෙම කේතය ඇතුළත් කරන්න: {code}",
   "householdInviteCopied": "ආරාධනා සබැඳිය පිටපත් කළා",
   "householdSharedRecordsTitle": "බෙදාගත් වාර්තා",
-  "householdSharedRecordsIntro": "ඔබේ ගෘහයේ සියලු දෙනාට මෙම වාර්තා දැකිය හා සංස්කරණය කළ හැකි අතර, සියලු දෙනාට ඒවායේ මතක් කිරීම් ලැබේ.",
+  "householdSharedRecordsIntro": "ඔබේ ගෘහයේ සියලු දෙනාට මෙම වාර්තා දැකිය හා සංස්කරණය කළ හැකි අතර, ඒවායේ මතක් කිරීම් ලබා ගත හැක.",
   "householdSharedRecordsEmpty": "තවමත් කිසිවක් බෙදා ගෙන නැත. වාර්තාවක් විවෘත කර ගෘහය සමඟ බෙදා ගැනීම සක්‍රිය කරන්න.",
   "householdSharedCount": "{count, plural, one{වාර්තා {count}ක්} other{වාර්තා {count}ක්}}",
   "householdShowAllShared": "බෙදාගත් සියලු වාර්තා පෙන්වන්න",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "වැරදි හෝ නොමඟ යවන",
   "assistantReportOther": "වෙනත් දෙයක්",
   "assistantReportThanks": "ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු.",
-  "groupsNoRecordsSection": "තවම වාර්තා නැත"
+  "groupsNoRecordsSection": "තවම වාර්තා නැත",
+  "recordChangedRecently": "{days, plural, =0{අද {name} වෙනස් කළා} =1{ඊයේ {name} වෙනස් කළා} other{දින {days}කට පෙර {name} වෙනස් කළා}}",
+  "notifSharedOnlyMineTitle": "මා එක් කළ වාර්තා පමණි",
+  "notifSharedOnlyMineSubtitle": "මා එක් කළ බෙදාගත් වාර්තා ගැන පමණක් මතක් කරන්න. අන් අය එක් කළ වාර්තා තවමත් යෙදුමේ පෙන්වයි."
 }

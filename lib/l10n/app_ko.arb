@@ -1444,7 +1444,7 @@
   "householdInviteMessage": "서류를 함께 관리할 수 있도록 Vaultara에서 내 가구에 참여하세요. 이 링크를 누르세요: {link}\nVaultara를 열고 프로필, 가족 순서로 이동해 이 코드를 입력해도 됩니다: {code}",
   "householdInviteCopied": "초대 링크를 복사했습니다",
   "householdSharedRecordsTitle": "공유 기록",
-  "householdSharedRecordsIntro": "가구 구성원 모두가 이 기록을 보고 수정할 수 있으며, 모두에게 알림이 갑니다.",
+  "householdSharedRecordsIntro": "가구 구성원 모두가 이 기록을 보고 수정할 수 있으며, 알림도 받을 수 있습니다.",
   "householdSharedRecordsEmpty": "아직 공유한 기록이 없습니다. 기록을 열고 가구와 공유를 켜세요.",
   "householdSharedCount": "{count, plural, other{기록 {count}개}}",
   "householdShowAllShared": "공유 기록 모두 보기",
@@ -3438,5 +3438,8 @@
   "assistantReportWrong": "틀리거나 오해의 소지가 있음",
   "assistantReportOther": "기타",
   "assistantReportThanks": "감사합니다. 이 답변을 검토하겠습니다.",
-  "groupsNoRecordsSection": "아직 기록이 없습니다"
+  "groupsNoRecordsSection": "아직 기록이 없습니다",
+  "recordChangedRecently": "{days, plural, =0{오늘 {name}님이 변경} =1{어제 {name}님이 변경} other{{days}일 전 {name}님이 변경}}",
+  "notifSharedOnlyMineTitle": "내가 추가한 기록만",
+  "notifSharedOnlyMineSubtitle": "내가 추가한 공유 기록만 알림을 받습니다. 다른 사람이 추가한 기록도 앱에는 계속 표시됩니다."
 }

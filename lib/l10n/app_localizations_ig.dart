@@ -4277,7 +4277,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get householdSharedRecordsTitle => 'Ndekọ ekesara';
 
   @override
-  String get householdSharedRecordsIntro => 'Onye ọ bụla nọ n\'ụlọ gị nwere ike ịhụ ma dezie ndekọ ndị a, onye ọ bụla na-enwetakwa ihe ncheta ha.';
+  String get householdSharedRecordsIntro => 'Onye ọ bụla nọ n\'ụlọ gị nwere ike ịhụ ma dezie ndekọ ndị a, ma nwee ike ịnata ihe ncheta ha.';
 
   @override
   String get householdSharedRecordsEmpty => 'Enwebeghị ihe e kesara. Mepee ndekọ wee meghee Kesaa na ụlọ.';
@@ -8994,4 +8994,28 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get groupsNoRecordsSection => 'Enweghị ndekọ ka ọ dị';
+
+  @override
+  String recordChangedRecently(num days, String name) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
+      locale: localeName,
+      
+    );
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$name gbanwere ya ụbọchị $daysString gara aga',
+      one: '$name gbanwere ya ụnyaahụ',
+      zero: '$name gbanwere ya taa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifSharedOnlyMineTitle => 'Naanị ndekọ m tinyere';
+
+  @override
+  String get notifSharedOnlyMineSubtitle => 'Chetara m naanị maka ndekọ ekekọrịta m tinyere. Ndekọ ndị ọzọ tinyere ka na-egosi n\'ime ngwa ahụ.';
 }
