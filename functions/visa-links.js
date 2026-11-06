@@ -29,14 +29,53 @@ const MAX_REDIRECTS = 5;
 const CODE = /^[A-Z]{2}$/;
 const HOSTNAME = /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:[a-z]{2,63}|xn--[a-z0-9-]{1,59})$/;
 const EMAIL = /^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,63}$/;
-const KINDS = new Set(["evisa", "eta"]);
+const KINDS = new Set(["evisa", "eta", "rules"]);
 const NOTE_KINDS = new Set(["dual", "embassy"]);
 const SECOND_LEVEL = new Set(["gov", "go", "gob", "govt", "gouv", "com", "co", "ac", "org", "net", "mil", "edu"]);
 const GOVERNMENT = new Set(["gov", "go", "gob", "govt", "gouv"]);
 const FAILING = new Set([404, 410]);
 
+// Every link the app shows as "official" must be on a government domain.
+// Most governments use a second-level label such as gov.uk, gob.mx,
+// gouv.fr, go.jp, gv.at, admin.ch, gub.uy or govt.nz, or the .gov TLD.
+const GOV_SECOND_LEVEL = new Set(["gov", "gob", "gouv", "govt", "go", "gv", "gub", "admin"]);
+
+// Official sites that do not use a government suffix. Each one was checked
+// by hand against the government's own announcements. Adding a domain here
+// is a security decision: an agent or lookalike site on this list would be
+// shown to users as official.
+const OFFICIAL_HOSTS = new Set([
+  "acces-maroc.ma", "auswaertiges-amt.de", "canada.ca", "dgdi.ga", "e-gov.kg",
+  "e-visa.al", "egov.kz", "esteri.it", "esteri.sm", "evisa.iq", "evisa.mn",
+  "evisa.td", "evisa.tj", "evisacam.cm", "evisacuba.cu", "gov.sr", "govern.ad",
+  "govmu.org", "hayya.qa", "ibz.be", "irishimmigration.ie", "kdmid.ru",
+  "knatravelform.kn", "ksavisa.sa", "llv.li", "mfa.am", "mfa.ir",
+  "migracija.lt", "migrationsverket.se", "migri.fi", "minv.sk", "mvr.bg",
+  "netherlandsworldwide.nl", "nyidanmark.dk", "politsei.ee", "public.lu",
+  "rks-gov.net", "rmiembassyus.org", "serviciomigraciones.cl", "smf.st",
+  "u.ae", "udi.no", "us.embassyeritrea.org", "utl.is", "utlendingastovan.fo",
+  "visaburkina.bf", "worc.ky"
+]);
+
 function within(host, base) {
   return host === base || host.endsWith(`.${base}`);
+}
+
+function isOfficialHost(host) {
+  if (typeof host !== "string" || !HOSTNAME.test(host)) return false;
+  const labels = host.split(".");
+  if (labels[labels.length - 1] === "gov") return true;
+  if (
+    labels.length >= 3 &&
+    GOV_SECOND_LEVEL.has(labels[labels.length - 2]) &&
+    labels[labels.length - 1].length === 2
+  ) {
+    return true;
+  }
+  for (const base of OFFICIAL_HOSTS) {
+    if (within(host, base)) return true;
+  }
+  return false;
 }
 
 function registrableBase(host) {
@@ -123,6 +162,11 @@ function validateLinks(raw) {
       const url = cleanUrl(entry.url);
       if (!url) {
         logger.warn("visa links: invalid url", { country, kind });
+        skipped++;
+        continue;
+      }
+      if (!isOfficialHost(url.host)) {
+        logger.warn("visa links: not a government domain, skipped", { country, kind, host: url.host });
         skipped++;
         continue;
       }
@@ -350,9 +394,11 @@ async function refreshVisaLinks() {
 }
 
 exports.SCHEDULER_JOB = SCHEDULER_JOB;
+exports.adminEmail = adminEmail;
 exports.refreshVisaLinks = refreshVisaLinks;
 exports.validateLinks = validateLinks;
 exports.hostAllowed = hostAllowed;
+exports.isOfficialHost = isOfficialHost;
 exports.checkLink = checkLink;
 
 exports.visaLinkJob = onSchedule(

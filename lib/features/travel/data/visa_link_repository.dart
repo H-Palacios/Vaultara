@@ -162,6 +162,14 @@ class VisaLinkRepository {
     return null;
   }
 
+  /// The destination government's own page on visas and entry rules. It
+  /// covers every reason for travel, so it is offered on every destination,
+  /// free and Premium alike.
+  static VisaLink? rulesFor(String country) {
+    ensure();
+    return _links[country.toUpperCase()]?['rules'];
+  }
+
   static void _reset() {
     _generation++;
     _links = const <String, Map<String, VisaLink>>{};
