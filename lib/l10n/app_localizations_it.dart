@@ -1519,7 +1519,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get costCardTitle => 'Costi di rinnovo';
 
   @override
-  String get costCardSubtitle => 'Quanto ti costeranno i rinnovi nei prossimi 12 mesi';
+  String get costCardSubtitle => 'Quanto costano i tuoi rinnovi, mese per mese';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3073,17 +3073,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Il tuo viaggio richiede attenzione';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip parte il $date e ci sono $count cose da sistemare prima di partire.',
-      one: '$trip parte il $date e c\'è $count cosa da sistemare prima di partire.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Apri viaggio';
@@ -6211,4 +6200,97 @@ class AppLocalizationsIt extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Scalo in $country. Controlla se ti serve un visto di transito.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'I totali sono mostrati in $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tassi di cambio';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Gli importi in altre valute vengono convertiti in $currency con i tassi di cambio giornalieri. Ogni registrazione conserva l’importo e la valuta che hai inserito.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tassi aggiornati il $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Nessun tasso di cambio per $currencies. Questi importi sono mostrati separatamente.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: parti il $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Le date dei voli devono essere comprese tra il $start e il $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Questo volo si sovrappone a un altro volo. I voli devono susseguirsi in ordine.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Alcuni voli sono fuori dalle date del viaggio. Cambia le date o modifica quei voli.';
+
+  @override
+  String get loadErrorBody => 'Impossibile caricare. Controlla la connessione e riprova.';
+
+  @override
+  String get tryAgain => 'Riprova';
+
+  @override
+  String get discardChangesTitle => 'Scartare le modifiche?';
+
+  @override
+  String get discardChangesBody => 'Hai modifiche non salvate. Se esci ora, andranno perse.';
+
+  @override
+  String get discardChangesKeep => 'Continua a modificare';
+
+  @override
+  String get discardChangesDiscard => 'Scarta';
+
+  @override
+  String get offlineBanner => 'Offline. Le modifiche si sincronizzeranno alla riconnessione.';
+
+  @override
+  String get reminderHelpTitle => 'I promemoria non arrivano?';
+
+  @override
+  String get reminderHelpSubtitle => 'Correggi le impostazioni della batteria che bloccano i promemoria';
+
+  @override
+  String get reminderHelpBody => 'Alcuni telefoni interrompono le app in background per risparmiare batteria, e questo può ritardare o bloccare i promemoria. Consenti a Vaultara di funzionare senza limiti di batteria e verifica che le notifiche siano attive nelle impostazioni dell’app.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Apri impostazioni batteria';
+
+  @override
+  String get reminderHelpOpenApp => 'Apri impostazioni app';
+
+  @override
+  String get showPassword => 'Mostra password';
+
+  @override
+  String get hidePassword => 'Nascondi password';
+
+  @override
+  String get pinCategory => 'Fissa in alto';
+
+  @override
+  String get unpinCategory => 'Rimuovi dall’alto';
+
+  @override
+  String get clearSearch => 'Cancella ricerca';
 }

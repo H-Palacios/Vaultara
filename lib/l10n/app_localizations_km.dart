@@ -1516,7 +1516,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get costCardTitle => 'ថ្លៃបន្តសុពលភាព';
 
   @override
-  String get costCardSubtitle => 'ថ្លៃបន្តសុពលភាពរបស់អ្នកក្នុងរយៈពេល 12 ខែខាងមុខ';
+  String get costCardSubtitle => 'ថ្លៃបន្តសុពលភាពរបស់អ្នកតាមខែ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3057,16 +3057,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ដំណើររបស់អ្នកត្រូវការការយកចិត្តទុកដាក់';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip ចាកចេញនៅ $date ហើយមាន $count យ៉ាងដែលត្រូវកែតម្រូវមុនអ្នកចេញដំណើរ។',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'បើកដំណើរ';
@@ -6150,4 +6140,97 @@ class AppLocalizationsKm extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'ឈប់ចតនៅ $country។ ពិនិត្យមើលថាតើអ្នកត្រូវការទិដ្ឋាការឆ្លងកាត់ឬអត់។';
   }
+
+  @override
+  String get currencyDisplayTitle => 'រូបិយប័ណ្ណ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'ចំនួនសរុបត្រូវបានបង្ហាញជា $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'អត្រាប្តូរប្រាក់';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'ចំនួនទឹកប្រាក់ជារូបិយប័ណ្ណផ្សេងត្រូវបានបម្លែងទៅ $currency តាមអត្រាប្តូរប្រាក់ប្រចាំថ្ងៃ។ កំណត់ត្រានីមួយៗរក្សាទុកចំនួន និងរូបិយប័ណ្ណដែលអ្នកបានបញ្ចូល។';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'អត្រាត្រូវបានធ្វើបច្ចុប្បន្នភាពនៅ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'គ្មានអត្រាប្តូរប្រាក់សម្រាប់ $currencies។ ចំនួនទាំងនេះត្រូវបានបង្ហាញដោយឡែក។';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip៖ អ្នកចាកចេញនៅថ្ងៃទី $date។';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'កាលបរិច្ឆេទជើងហោះហើរត្រូវនៅចន្លោះ $start និង $end។';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ជើងហោះហើរនេះត្រួតគ្នាជាមួយជើងហោះហើរផ្សេង។ ជើងហោះហើរត្រូវបន្តគ្នាតាមលំដាប់។';
+
+  @override
+  String get travelFlightsOutsideDates => 'ជើងហោះហើរខ្លះនៅក្រៅកាលបរិច្ឆេទដំណើររបស់អ្នក។ ប្តូរកាលបរិច្ឆេទ ឬកែប្រែជើងហោះហើរទាំងនោះ។';
+
+  @override
+  String get loadErrorBody => 'មិនអាចផ្ទុកវាបានទេ។ សូមពិនិត្យការតភ្ជាប់របស់អ្នក ហើយព្យាយាមម្តងទៀត។';
+
+  @override
+  String get tryAgain => 'ព្យាយាមម្តងទៀត';
+
+  @override
+  String get discardChangesTitle => 'បោះបង់ការផ្លាស់ប្តូររបស់អ្នក?';
+
+  @override
+  String get discardChangesBody => 'អ្នកមានការផ្លាស់ប្តូរដែលមិនទាន់រក្សាទុក។ ប្រសិនបើអ្នកចាកចេញឥឡូវនេះ វានឹងបាត់បង់។';
+
+  @override
+  String get discardChangesKeep => 'បន្តកែសម្រួល';
+
+  @override
+  String get discardChangesDiscard => 'បោះបង់';
+
+  @override
+  String get offlineBanner => 'គ្មានអ៊ីនធឺណិត។ ការផ្លាស់ប្តូរនឹងធ្វើសមកាលកម្មនៅពេលអ្នកភ្ជាប់ឡើងវិញ។';
+
+  @override
+  String get reminderHelpTitle => 'ការរំលឹកមិនមកដល់ឬ?';
+
+  @override
+  String get reminderHelpSubtitle => 'កែការកំណត់ថ្មដែលរារាំងការរំលឹក';
+
+  @override
+  String get reminderHelpBody => 'ទូរសព្ទខ្លះបញ្ឈប់កម្មវិធីនៅផ្ទៃខាងក្រោយដើម្បីសន្សំថ្ម ដែលអាចធ្វើឱ្យការរំលឹកយឺត ឬត្រូវបានរារាំង។ អនុញ្ញាតឱ្យ Vaultara ដំណើរការដោយគ្មានការកំណត់ថ្ម ហើយត្រូវប្រាកដថាការជូនដំណឹងត្រូវបានបើកនៅក្នុងការកំណត់កម្មវិធី។';
+
+  @override
+  String get reminderHelpOpenBattery => 'បើកការកំណត់ថ្ម';
+
+  @override
+  String get reminderHelpOpenApp => 'បើកការកំណត់កម្មវិធី';
+
+  @override
+  String get showPassword => 'បង្ហាញពាក្យសម្ងាត់';
+
+  @override
+  String get hidePassword => 'លាក់ពាក្យសម្ងាត់';
+
+  @override
+  String get pinCategory => 'ខ្ទាស់នៅខាងលើ';
+
+  @override
+  String get unpinCategory => 'ដកការខ្ទាស់';
+
+  @override
+  String get clearSearch => 'សម្អាតការស្វែងរក';
 }

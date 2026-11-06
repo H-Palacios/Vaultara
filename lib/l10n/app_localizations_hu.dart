@@ -1519,7 +1519,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get costCardTitle => 'Megújítási költségek';
 
   @override
-  String get costCardSubtitle => 'Mennyibe kerülnek a megújítások a következő 12 hónapban';
+  String get costCardSubtitle => 'Mennyibe kerülnek a megújításai, hónapról hónapra';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Az utazása figyelmet igényel';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip indulása: $date, és indulás előtt $count dolgot rendbe kell tenni.',
-      one: '$trip indulása: $date, és indulás előtt $count dolgot rendbe kell tenni.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Utazás megnyitása';
@@ -6204,4 +6193,97 @@ class AppLocalizationsHu extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Átszállás itt: $country. Ellenőrizze, kell-e átutazási vízum.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Pénznem';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Az összegek itt jelennek meg: $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Árfolyamok';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'A más pénznemben megadott összegeket napi árfolyamon számoljuk át a következő pénznemre: $currency. Minden bejegyzés megőrzi az Ön által megadott összeget és pénznemet.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Árfolyamok frissítve: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Nincs árfolyam a következőhöz: $currencies. Ezek az összegek külön jelennek meg.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: $date napon indul.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'A járatok dátumának $start és $end közé kell esnie.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ez a járat átfedésben van egy másik járattal. A járatoknak sorrendben kell követniük egymást.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Néhány járat az utazás dátumain kívül esik. Módosítsa a dátumokat, vagy szerkessze ezeket a járatokat.';
+
+  @override
+  String get loadErrorBody => 'Ezt nem sikerült betölteni. Ellenőrizze a kapcsolatot, és próbálja újra.';
+
+  @override
+  String get tryAgain => 'Próbálja újra';
+
+  @override
+  String get discardChangesTitle => 'Elveti a módosításokat?';
+
+  @override
+  String get discardChangesBody => 'Mentetlen módosításai vannak. Ha most kilép, elvesznek.';
+
+  @override
+  String get discardChangesKeep => 'Szerkesztés folytatása';
+
+  @override
+  String get discardChangesDiscard => 'Elvetés';
+
+  @override
+  String get offlineBanner => 'Offline. A módosítások szinkronizálása újracsatlakozáskor történik.';
+
+  @override
+  String get reminderHelpTitle => 'Nem érkeznek meg az emlékeztetők?';
+
+  @override
+  String get reminderHelpSubtitle => 'Javítsa az emlékeztetőket blokkoló akkumulátorbeállításokat';
+
+  @override
+  String get reminderHelpBody => 'Egyes telefonok az akkumulátor kímélése érdekében leállítják a háttérben futó alkalmazásokat, ami késleltetheti vagy blokkolhatja az emlékeztetőket. Engedélyezze, hogy a Vaultara akkumulátorkorlátozás nélkül fusson, és ellenőrizze, hogy az értesítések be vannak kapcsolva az alkalmazás beállításaiban.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Akkumulátorbeállítások megnyitása';
+
+  @override
+  String get reminderHelpOpenApp => 'Alkalmazásbeállítások megnyitása';
+
+  @override
+  String get showPassword => 'Jelszó megjelenítése';
+
+  @override
+  String get hidePassword => 'Jelszó elrejtése';
+
+  @override
+  String get pinCategory => 'Kitűzés felülre';
+
+  @override
+  String get unpinCategory => 'Kitűzés megszüntetése';
+
+  @override
+  String get clearSearch => 'Keresés törlése';
 }

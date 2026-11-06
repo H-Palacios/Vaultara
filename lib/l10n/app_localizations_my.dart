@@ -1516,7 +1516,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get costCardTitle => 'သက်တမ်းတိုးစရိတ်များ';
 
   @override
-  String get costCardSubtitle => 'လာမည့် ၁၂ လအတွင်း သက်တမ်းတိုးရန် ကုန်ကျမည့် ငွေ';
+  String get costCardSubtitle => 'သင့်သက်တမ်းတိုးမှု ကုန်ကျစရိတ် လစဉ်';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3057,16 +3057,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'သင့်ခရီးကို ဂရုစိုက်ရန် လိုအပ်သည်';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip သည် $date တွင် ထွက်ခွာမည်ဖြစ်ပြီး မသွားမီ ပြင်ဆင်ရန် အရာ $count ခု ရှိသည်။',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ခရီးကို ဖွင့်ရန်';
@@ -6150,4 +6140,97 @@ class AppLocalizationsMy extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country တွင် ကြားနားရပ်ခြင်း။ ဖြတ်သန်းဗီဇာ လိုအပ်မလိုအပ် စစ်ဆေးပါ။';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ငွေကြေး';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'စုစုပေါင်းကို $currency ဖြင့် ပြထားသည်';
+  }
+
+  @override
+  String get costRatesTitle => 'ငွေလဲလှယ်နှုန်းများ';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'အခြားငွေကြေးများဖြင့် ပမာဏကို နေ့စဉ်ငွေလဲနှုန်းဖြင့် $currency သို့ ပြောင်းလဲပါသည်။ မှတ်တမ်းတစ်ခုစီသည် သင်ထည့်သွင်းသော ပမာဏနှင့် ငွေကြေးကို သိမ်းထားပါသည်။';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'နှုန်းများကို $date တွင် အပ်ဒိတ်လုပ်ထားသည်';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies အတွက် ငွေလဲနှုန်း မရှိပါ။ ဤပမာဏများကို သီးသန့်ပြထားသည်။';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: သင် $date တွင် ထွက်ခွာမည်။';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'လေယာဉ်ခရီးစဉ်ရက်စွဲများသည် $start နှင့် $end ကြားတွင် ရှိရမည်။';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ဤလေယာဉ်ခရီးစဉ်သည် အခြားခရီးစဉ်နှင့် ထပ်နေသည်။ ခရီးစဉ်များသည် အစဉ်လိုက် ဆက်ရမည်။';
+
+  @override
+  String get travelFlightsOutsideDates => 'လေယာဉ်ခရီးစဉ်အချို့သည် သင့်ခရီးစဉ်ရက်စွဲများအပြင်ဘက်တွင် ရှိသည်။ ရက်စွဲများကို ပြောင်းပါ သို့မဟုတ် ထိုခရီးစဉ်များကို ပြင်ပါ။';
+
+  @override
+  String get loadErrorBody => 'ဤအရာကို ဖွင့်၍မရပါ။ သင့်ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
+
+  @override
+  String get tryAgain => 'ထပ်စမ်းကြည့်ပါ';
+
+  @override
+  String get discardChangesTitle => 'ပြောင်းလဲမှုများကို စွန့်ပစ်မလား။';
+
+  @override
+  String get discardChangesBody => 'သင့်တွင် မသိမ်းရသေးသော ပြောင်းလဲမှုများ ရှိသည်။ ယခု ထွက်လိုက်လျှင် ၎င်းတို့ ပျောက်သွားမည်။';
+
+  @override
+  String get discardChangesKeep => 'တည်းဖြတ်ခြင်းကို ဆက်လုပ်ပါ';
+
+  @override
+  String get discardChangesDiscard => 'စွန့်ပစ်ပါ';
+
+  @override
+  String get offlineBanner => 'အော့ဖ်လိုင်း။ ပြန်ချိတ်ဆက်သောအခါ ပြောင်းလဲမှုများ ထပ်တူပြုမည်။';
+
+  @override
+  String get reminderHelpTitle => 'သတိပေးချက်များ မရောက်ဘူးလား။';
+
+  @override
+  String get reminderHelpSubtitle => 'သတိပေးချက်များကို တားဆီးနေသော ဘက်ထရီဆက်တင်များကို ပြင်ပါ';
+
+  @override
+  String get reminderHelpBody => 'ဖုန်းအချို့သည် ဘက်ထရီချွေတာရန် နောက်ခံအက်ပ်များကို ရပ်တန့်ထားပြီး သတိပေးချက်များ နောက်ကျခြင်း သို့မဟုတ် ပိတ်ဆို့ခံရခြင်း ဖြစ်နိုင်သည်။ Vaultara ကို ဘက်ထရီကန့်သတ်ချက်မရှိဘဲ အလုပ်လုပ်ခွင့်ပြုပြီး အက်ပ်ဆက်တင်များတွင် အကြောင်းကြားချက်များ ဖွင့်ထားကြောင်း သေချာစေပါ။';
+
+  @override
+  String get reminderHelpOpenBattery => 'ဘက်ထရီဆက်တင်များ ဖွင့်ပါ';
+
+  @override
+  String get reminderHelpOpenApp => 'အက်ပ်ဆက်တင်များ ဖွင့်ပါ';
+
+  @override
+  String get showPassword => 'စကားဝှက် ပြပါ';
+
+  @override
+  String get hidePassword => 'စကားဝှက် ဖျောက်ပါ';
+
+  @override
+  String get pinCategory => 'အပေါ်တွင် ပင်ထိုးပါ';
+
+  @override
+  String get unpinCategory => 'ပင်ဖြုတ်ပါ';
+
+  @override
+  String get clearSearch => 'ရှာဖွေမှု ရှင်းပါ';
 }

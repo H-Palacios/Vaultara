@@ -1519,7 +1519,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get costCardTitle => 'Verlängerungskosten';
 
   @override
-  String get costCardSubtitle => 'Was deine Verlängerungen in den nächsten 12 Monaten kosten';
+  String get costCardSubtitle => 'Was deine Verlängerungen kosten, Monat für Monat';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Deine Reise braucht Aufmerksamkeit';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip beginnt am $date, und vor der Abreise müssen noch $count Dinge geklärt werden.',
-      one: '$trip beginnt am $date, und vor der Abreise muss noch $count Sache geklärt werden.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Reise öffnen';
@@ -6204,4 +6193,97 @@ class AppLocalizationsDe extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Zwischenstopp in $country. Prüfe, ob du ein Transitvisum brauchst.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Währung';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Summen werden in $currency angezeigt';
+  }
+
+  @override
+  String get costRatesTitle => 'Wechselkurse';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Beträge in anderen Währungen werden mit tagesaktuellen Wechselkursen in $currency umgerechnet. Jeder Eintrag behält den Betrag und die Währung, die du eingegeben hast.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurse aktualisiert am $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Kein Wechselkurs für $currencies. Diese Beträge werden separat angezeigt.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: Du reist am $date ab.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Die Flugdaten müssen zwischen dem $start und dem $end liegen.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Dieser Flug überschneidet sich mit einem anderen Flug. Flüge müssen der Reihe nach aufeinander folgen.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Einige Flüge liegen außerhalb deiner Reisedaten. Ändere die Daten oder bearbeite diese Flüge.';
+
+  @override
+  String get loadErrorBody => 'Das konnte nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get tryAgain => 'Erneut versuchen';
+
+  @override
+  String get discardChangesTitle => 'Änderungen verwerfen?';
+
+  @override
+  String get discardChangesBody => 'Du hast nicht gespeicherte Änderungen. Wenn du jetzt gehst, gehen sie verloren.';
+
+  @override
+  String get discardChangesKeep => 'Weiter bearbeiten';
+
+  @override
+  String get discardChangesDiscard => 'Verwerfen';
+
+  @override
+  String get offlineBanner => 'Offline. Änderungen werden synchronisiert, sobald du wieder verbunden bist.';
+
+  @override
+  String get reminderHelpTitle => 'Erinnerungen kommen nicht an?';
+
+  @override
+  String get reminderHelpSubtitle => 'Akkueinstellungen beheben, die Erinnerungen blockieren';
+
+  @override
+  String get reminderHelpBody => 'Manche Smartphones beenden Apps im Hintergrund, um Akku zu sparen. Das kann Erinnerungen verzögern oder blockieren. Erlaube Vaultara, ohne Akkubeschränkung zu laufen, und prüfe, ob Benachrichtigungen in den App-Einstellungen aktiviert sind.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Akkueinstellungen öffnen';
+
+  @override
+  String get reminderHelpOpenApp => 'App-Einstellungen öffnen';
+
+  @override
+  String get showPassword => 'Passwort anzeigen';
+
+  @override
+  String get hidePassword => 'Passwort ausblenden';
+
+  @override
+  String get pinCategory => 'Oben anheften';
+
+  @override
+  String get unpinCategory => 'Lösen';
+
+  @override
+  String get clearSearch => 'Suche löschen';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get costCardTitle => 'د نوي کولو لګښتونه';
 
   @override
-  String get costCardSubtitle => 'ستاسو د نوي کولو لګښت په راتلونکو ۱۲ میاشتو کې';
+  String get costCardSubtitle => 'ستاسو د نوي کولو لګښت میاشت په میاشت';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ستاسو سفر پاملرنې ته اړتیا لري';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip د $date په ورځ روانېږي، او د تګ دمخه $count شیان باید سم شي.',
-      one: '$trip د $date په ورځ روانېږي، او د تګ دمخه $count شی باید سم شي.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'سفر پرانیزئ';
@@ -6204,4 +6193,97 @@ class AppLocalizationsPs extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'په $country کې منځنی درېدل. وګورئ چې ایا تاسو ته د ترانزیت ویزې اړتیا ده.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'اسعار';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'مجموعې په $currency کې ښودل کیږي';
+  }
+
+  @override
+  String get costRatesTitle => 'د تبادلې نرخونه';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'په نورو اسعارو کې مقدارونه د ورځني تبادلې نرخ سره $currency ته اړول کیږي. هر ثبت هغه مقدار او اسعار ساتي چې تاسو ورننوتي.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'نرخونه تازه شول $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'د $currencies لپاره د تبادلې نرخ نشته. دا مقدارونه جلا ښودل کیږي.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: تاسو په $date ځئ.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'د الوتنو نیټې باید د $start او $end ترمنځ وي.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'دا الوتنه له بلې الوتنې سره ګډیږي. الوتنې باید په ترتیب سره یو بل پسې راشي.';
+
+  @override
+  String get travelFlightsOutsideDates => 'ځینې الوتنې ستاسو د سفر له نیټو بهر دي. نیټې بدلې کړئ یا هغه الوتنې سمې کړئ.';
+
+  @override
+  String get loadErrorBody => 'دا نه شو بارېدلی. خپل اړیکه وګورئ او بیا هڅه وکړئ.';
+
+  @override
+  String get tryAgain => 'بیا هڅه وکړئ';
+
+  @override
+  String get discardChangesTitle => 'بدلونونه ردول غواړئ؟';
+
+  @override
+  String get discardChangesBody => 'تاسو ناساتل شوي بدلونونه لرئ. که همدا اوس ووځئ، له لاسه به ورکړل شي.';
+
+  @override
+  String get discardChangesKeep => 'سمون ته دوام ورکړئ';
+
+  @override
+  String get discardChangesDiscard => 'ردول';
+
+  @override
+  String get offlineBanner => 'آفلاین. کله چې بیا وصل شئ بدلونونه به همغږي شي.';
+
+  @override
+  String get reminderHelpTitle => 'یادونې نه رسیږي؟';
+
+  @override
+  String get reminderHelpSubtitle => 'د بیټرۍ هغه تنظیمات سم کړئ چې یادونې بندوي';
+
+  @override
+  String get reminderHelpBody => 'ځینې تلیفونونه د بیټرۍ د ساتلو لپاره په شاليد کې اپلیکېشنونه ودروي، چې کولی شي یادونې ځنډ یا بند کړي. Vaultara ته اجازه ورکړئ پرته له بیټرۍ محدودیته کار وکړي، او ډاډ ترلاسه کړئ چې د اپلیکېشن په تنظیماتو کې خبرتیاوې فعالې دي.';
+
+  @override
+  String get reminderHelpOpenBattery => 'د بیټرۍ تنظیمات پرانیزئ';
+
+  @override
+  String get reminderHelpOpenApp => 'د اپلیکېشن تنظیمات پرانیزئ';
+
+  @override
+  String get showPassword => 'پاسورډ ښکاره کړئ';
+
+  @override
+  String get hidePassword => 'پاسورډ پټ کړئ';
+
+  @override
+  String get pinCategory => 'په سر کې ټینګ کړئ';
+
+  @override
+  String get unpinCategory => 'ټینګښت لرې کړئ';
+
+  @override
+  String get clearSearch => 'لټون پاک کړئ';
 }

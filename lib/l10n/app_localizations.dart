@@ -2836,7 +2836,7 @@ abstract class AppLocalizations {
   /// Subtitle under the renewal costs card title on the Insights screen
   ///
   /// In en, this message translates to:
-  /// **'What your renewals will cost in the next 12 months'**
+  /// **'What your renewals cost, month by month'**
   String get costCardSubtitle;
 
   /// Line on the renewal costs card naming the month with the highest renewal costs; month is like 'March 2027', amount is a formatted price
@@ -5424,12 +5424,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your Trip Needs Attention'**
   String get smartInsightTripHeading;
-
-  /// Smart insight body for an upcoming saved trip with travel check problems.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, one{{trip} leaves on {date}, and {count} thing needs fixing before you go.} other{{trip} leaves on {date}, and {count} things need fixing before you go.}}'**
-  String smartInsightTripBody(String trip, String date, int count);
 
   ///
   ///
@@ -10530,6 +10524,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stopover in {country}. Check whether you need a transit visa.'**
   String travelTransitNote(String country);
+
+  /// Title of the profile tile and setting for the currency used to show totals.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get currencyDisplayTitle;
+
+  /// Subtitle of the currency tile. currency is a three letter currency code.
+  ///
+  /// In en, this message translates to:
+  /// **'Totals are shown in {currency}'**
+  String currencyDisplaySubtitle(String currency);
+
+  /// Title of the dialog that explains exchange rates.
+  ///
+  /// In en, this message translates to:
+  /// **'Exchange rates'**
+  String get costRatesTitle;
+
+  /// Explains that costs in other currencies are converted. currency is a three letter currency code.
+  ///
+  /// In en, this message translates to:
+  /// **'Amounts in other currencies are converted into {currency} with daily exchange rates. Each record keeps the amount and currency you entered.'**
+  String costRatesBody(String currency);
+
+  /// Date the exchange rates were last updated. date is a formatted date.
+  ///
+  /// In en, this message translates to:
+  /// **'Rates updated {date}'**
+  String costRatesUpdated(String date);
+
+  /// Shown when some currencies have no exchange rate. currencies is a comma separated list of currency codes.
+  ///
+  /// In en, this message translates to:
+  /// **'No exchange rate for {currencies}. These amounts are shown separately.'**
+  String costNotConverted(String currencies);
+
+  /// Shown on the trip alert in Insights. trip is the trip name and date is a long date.
+  ///
+  /// In en, this message translates to:
+  /// **'You leave for {trip} on {date}.'**
+  String smartInsightTripWhen(String trip, String date);
+
+  /// Error when a flight is outside the trip dates. start and end are formatted dates.
+  ///
+  /// In en, this message translates to:
+  /// **'Flight dates must be between {start} and {end}.'**
+  String travelFlightErrorTripDates(String start, String end);
+
+  /// Error when a flight overlaps the flight before or after it.
+  ///
+  /// In en, this message translates to:
+  /// **'This flight overlaps another flight. Flights must follow each other in order.'**
+  String get travelFlightErrorOverlap;
+
+  /// Error on the trip form when saved flights are outside the trip dates.
+  ///
+  /// In en, this message translates to:
+  /// **'Some flights are outside your trip dates. Change the dates or edit those flights.'**
+  String get travelFlightsOutsideDates;
+
+  /// No description provided for @loadErrorBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not load this. Check your connection and try again.'**
+  String get loadErrorBody;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get tryAgain;
+
+  /// No description provided for @discardChangesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard your changes?'**
+  String get discardChangesTitle;
+
+  /// No description provided for @discardChangesBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You have unsaved changes. If you leave now, they will be lost.'**
+  String get discardChangesBody;
+
+  /// No description provided for @discardChangesKeep.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep editing'**
+  String get discardChangesKeep;
+
+  /// No description provided for @discardChangesDiscard.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard'**
+  String get discardChangesDiscard;
+
+  /// No description provided for @offlineBanner.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline. Changes sync when you reconnect.'**
+  String get offlineBanner;
+
+  /// No description provided for @reminderHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders not arriving?'**
+  String get reminderHelpTitle;
+
+  /// No description provided for @reminderHelpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Fix battery settings that block reminders'**
+  String get reminderHelpSubtitle;
+
+  /// No description provided for @reminderHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Some phones stop apps in the background to save battery, which can delay or block reminders. Allow Vaultara to run without battery limits, and make sure notifications are turned on in the app settings.'**
+  String get reminderHelpBody;
+
+  /// No description provided for @reminderHelpOpenBattery.
+  ///
+  /// In en, this message translates to:
+  /// **'Open battery settings'**
+  String get reminderHelpOpenBattery;
+
+  /// No description provided for @reminderHelpOpenApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open app settings'**
+  String get reminderHelpOpenApp;
+
+  /// No description provided for @showPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get showPassword;
+
+  /// No description provided for @hidePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide password'**
+  String get hidePassword;
+
+  /// No description provided for @pinCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin to top'**
+  String get pinCategory;
+
+  /// No description provided for @unpinCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpin'**
+  String get unpinCategory;
+
+  /// No description provided for @clearSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get clearSearch;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

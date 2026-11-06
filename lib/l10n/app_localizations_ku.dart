@@ -1519,7 +1519,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get costCardTitle => 'Lêçûnên nûkirinê';
 
   @override
-  String get costCardSubtitle => 'Di 12 mehên bê de nûkirinên te dê çiqas biçin';
+  String get costCardSubtitle => 'Nûkirinên te meh bi meh çiqas dihêjin';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Rêwîtiya te pêdivî bi baldariyê heye';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip di $date de dest pê dike, û beriya çûnê $count tişt hewce dike ku werin rastkirin.',
-      one: '$trip di $date de dest pê dike, û beriya çûnê $count tişt hewce dike ku were rastkirin.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Rêwîtiyê veke';
@@ -6204,4 +6193,97 @@ class AppLocalizationsKu extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Rawestgeha navbeynê li $country. Kontrol bike ka vîzeya derbasbûnê ji te re pêwîst e an na.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Dirav';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Giştî bi $currency têne nîşandan';
+  }
+
+  @override
+  String get costRatesTitle => 'Rêjeyên guhertina diravan';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Mîqdarên bi diravên din bi rêjeyên rojane li $currency têne guhertin. Her tomar mîqdar û diravê ku te nivîsandiye diparêze.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Rêje di $date de hatin nûkirin';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Ji bo $currencies rêjeya guhertinê tune ye. Ev mîqdar bi cuda têne nîşandan.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: tu di $date de diçî.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Divê dîrokên firînê di navbera $start û $end de bin.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ev firîn bi firîneke din re hevdu digire. Divê firîn bi rêzê li pey hev werin.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Hin firîn li derveyî dîrokên rêwîtiya te ne. Dîrokan biguherîne an jî wan firînan biguherîne.';
+
+  @override
+  String get loadErrorBody => 'Nikarî vê barkirinê bike. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get tryAgain => 'Dîsa biceribîne';
+
+  @override
+  String get discardChangesTitle => 'Guhertinên xwe paşguh bikî?';
+
+  @override
+  String get discardChangesBody => 'Guhertinên te yên tomarnekirî hene. Heke tu niha derkevî, winda dibin.';
+
+  @override
+  String get discardChangesKeep => 'Edîtkirinê bidomîne';
+
+  @override
+  String get discardChangesDiscard => 'Paşguh bike';
+
+  @override
+  String get offlineBanner => 'Negirêdayî. Guhertin dê piştî ku tu dîsa girê bidî senkronîze bibin.';
+
+  @override
+  String get reminderHelpTitle => 'Bîrxistin nagihîjin?';
+
+  @override
+  String get reminderHelpSubtitle => 'Mîhengên bataryayê yên bîrxistinan asteng dikin rast bike';
+
+  @override
+  String get reminderHelpBody => 'Hin têlefon ji bo tasarufa bataryayê sepanan di paşxanê de rawestînin, ev dikare bîrxistinan dereng bixe an asteng bike. Bihêle Vaultara bê sînorê bataryayê bixebite û piştrast be ku agahdarî di mîhengên sepanê de vekirî ne.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Mîhengên bataryayê veke';
+
+  @override
+  String get reminderHelpOpenApp => 'Mîhengên sepanê veke';
+
+  @override
+  String get showPassword => 'Şîfreyê nîşan bide';
+
+  @override
+  String get hidePassword => 'Şîfreyê veşêre';
+
+  @override
+  String get pinCategory => 'Li jor bi pîne bike';
+
+  @override
+  String get unpinCategory => 'Pînê rake';
+
+  @override
+  String get clearSearch => 'Lêgerînê paqij bike';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get costCardTitle => 'Coûts de renouvellement';
 
   @override
-  String get costCardSubtitle => 'Ce que vos renouvellements coûteront dans les 12 prochains mois';
+  String get costCardSubtitle => 'Ce que coûtent vos renouvellements, mois par mois';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3074,17 +3074,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Votre voyage demande votre attention';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip part le $date, et $count points sont à régler avant votre départ.',
-      one: '$trip part le $date, et $count point est à régler avant votre départ.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Ouvrir le voyage';
@@ -6212,4 +6201,97 @@ class AppLocalizationsFr extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Escale en $country. Vérifiez si vous avez besoin d’un visa de transit.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Devise';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Les totaux sont affichés en $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Taux de change';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Les montants dans d’autres devises sont convertis en $currency avec les taux de change du jour. Chaque enregistrement conserve le montant et la devise que vous avez saisis.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Taux mis à jour le $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Aucun taux de change pour $currencies. Ces montants sont affichés séparément.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip : vous partez le $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Les dates des vols doivent être comprises entre le $start et le $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ce vol chevauche un autre vol. Les vols doivent se suivre dans l’ordre.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Certains vols sont en dehors des dates de votre voyage. Modifiez les dates ou modifiez ces vols.';
+
+  @override
+  String get loadErrorBody => 'Impossible de charger ce contenu. Vérifiez votre connexion et réessayez.';
+
+  @override
+  String get tryAgain => 'Réessayer';
+
+  @override
+  String get discardChangesTitle => 'Abandonner vos modifications ?';
+
+  @override
+  String get discardChangesBody => 'Vous avez des modifications non enregistrées. Si vous quittez maintenant, elles seront perdues.';
+
+  @override
+  String get discardChangesKeep => 'Continuer la modification';
+
+  @override
+  String get discardChangesDiscard => 'Abandonner';
+
+  @override
+  String get offlineBanner => 'Hors ligne. Les modifications se synchroniseront à la reconnexion.';
+
+  @override
+  String get reminderHelpTitle => 'Vous ne recevez pas vos rappels ?';
+
+  @override
+  String get reminderHelpSubtitle => 'Corrigez les réglages de batterie qui bloquent les rappels';
+
+  @override
+  String get reminderHelpBody => 'Certains téléphones arrêtent les applications en arrière-plan pour économiser la batterie, ce qui peut retarder ou bloquer les rappels. Autorisez Vaultara à fonctionner sans restriction de batterie et vérifiez que les notifications sont activées dans les réglages de l’application.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Ouvrir les réglages de la batterie';
+
+  @override
+  String get reminderHelpOpenApp => 'Ouvrir les réglages de l’application';
+
+  @override
+  String get showPassword => 'Afficher le mot de passe';
+
+  @override
+  String get hidePassword => 'Masquer le mot de passe';
+
+  @override
+  String get pinCategory => 'Épingler en haut';
+
+  @override
+  String get unpinCategory => 'Désépingler';
+
+  @override
+  String get clearSearch => 'Effacer la recherche';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get costCardTitle => 'Նորացման ծախսեր';
 
   @override
-  String get costCardSubtitle => 'Որքան կարժենան ձեր նորացումները առաջիկա 12 ամսում';
+  String get costCardSubtitle => 'Ձեր երկարաձգումների արժեքը ամսեցամիս';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Ձեր ճամփորդությունը ուշադրություն է պահանջում';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip-ը մեկնում է $date-ին, և մեկնելուց առաջ $count բան պետք է կարգավորել։',
-      one: '$trip-ը մեկնում է $date-ին, և մեկնելուց առաջ $count բան պետք է կարգավորել։',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Բացել ճամփորդությունը';
@@ -6204,4 +6193,97 @@ class AppLocalizationsHy extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Կանգառ $country-ում։ Ստուգեք՝ արդյոք տարանցիկ վիզա պետք է։';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Արժույթ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Ընդհանուր գումարները ցուցադրվում են $currency-ով';
+  }
+
+  @override
+  String get costRatesTitle => 'Փոխարժեքներ';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Այլ արժույթներով գումարները փոխարկվում են $currency-ի՝ օրական փոխարժեքներով։ Յուրաքանչյուր գրառում պահպանում է ձեր մուտքագրած գումարն ու արժույթը։';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Փոխարժեքները թարմացվել են՝ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies-ի համար փոխարժեք չկա։ Այս գումարները ցուցադրվում են առանձին։';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip՝ դուք մեկնում եք $date-ին։';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Չվերթների ամսաթվերը պետք է լինեն $start-ի և $end-ի միջև։';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Այս չվերթը համընկնում է մեկ այլ չվերթի հետ։ Չվերթները պետք է հաջորդեն միմյանց հերթականությամբ։';
+
+  @override
+  String get travelFlightsOutsideDates => 'Որոշ չվերթներ գտնվում են ձեր ճանապարհորդության ամսաթվերից դուրս։ Փոխեք ամսաթվերը կամ խմբագրեք այդ չվերթները։';
+
+  @override
+  String get loadErrorBody => 'Չհաջողվեց բեռնել։ Ստուգեք կապը և փորձեք նորից։';
+
+  @override
+  String get tryAgain => 'Փորձել նորից';
+
+  @override
+  String get discardChangesTitle => 'Չեղարկե՞լ փոփոխությունները';
+
+  @override
+  String get discardChangesBody => 'Դուք չպահված փոփոխություններ ունեք։ Եթե հիմա դուրս գաք, դրանք կկորչեն։';
+
+  @override
+  String get discardChangesKeep => 'Շարունակել խմբագրումը';
+
+  @override
+  String get discardChangesDiscard => 'Չեղարկել';
+
+  @override
+  String get offlineBanner => 'Անցանց։ Փոփոխությունները կհամաժամեցվեն, երբ նորից միանաք։';
+
+  @override
+  String get reminderHelpTitle => 'Հիշեցումները չե՞ն գալիս';
+
+  @override
+  String get reminderHelpSubtitle => 'Ուղղեք մարտկոցի կարգավորումները, որոնք արգելափակում են հիշեցումները';
+
+  @override
+  String get reminderHelpBody => 'Որոշ հեռախոսներ մարտկոցը խնայելու համար կանգնեցնում են հավելվածները ֆոնային ռեժիմում, ինչը կարող է ուշացնել կամ արգելափակել հիշեցումները։ Թույլ տվեք Vaultara-ին աշխատել առանց մարտկոցի սահմանափակումների և համոզվեք, որ ծանուցումները միացված են հավելվածի կարգավորումներում։';
+
+  @override
+  String get reminderHelpOpenBattery => 'Բացել մարտկոցի կարգավորումները';
+
+  @override
+  String get reminderHelpOpenApp => 'Բացել հավելվածի կարգավորումները';
+
+  @override
+  String get showPassword => 'Ցույց տալ գաղտնաբառը';
+
+  @override
+  String get hidePassword => 'Թաքցնել գաղտնաբառը';
+
+  @override
+  String get pinCategory => 'Ամրացնել վերևում';
+
+  @override
+  String get unpinCategory => 'Ապամրացնել';
+
+  @override
+  String get clearSearch => 'Մաքրել որոնումը';
 }

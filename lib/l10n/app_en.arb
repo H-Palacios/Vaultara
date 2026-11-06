@@ -1113,7 +1113,7 @@
   "@costCardTitle": {
     "description": "Title of the renewal costs card on the Insights screen"
   },
-  "costCardSubtitle": "What your renewals will cost in the next 12 months",
+  "costCardSubtitle": "What your renewals cost, month by month",
   "@costCardSubtitle": {
     "description": "Subtitle under the renewal costs card title on the Insights screen"
   },
@@ -3232,21 +3232,6 @@
   "smartInsightTripHeading": "Your Trip Needs Attention",
   "@smartInsightTripHeading": {
     "description": ""
-  },
-  "smartInsightTripBody": "{count, plural, one{{trip} leaves on {date}, and {count} thing needs fixing before you go.} other{{trip} leaves on {date}, and {count} things need fixing before you go.}}",
-  "@smartInsightTripBody": {
-    "description": "Smart insight body for an upcoming saved trip with travel check problems.",
-    "placeholders": {
-      "trip": {
-        "type": "String"
-      },
-      "date": {
-        "type": "String"
-      },
-      "count": {
-        "type": "int"
-      }
-    }
   },
   "smartInsightActionOpenTrip": "Open Trip",
   "@smartInsightActionOpenTrip": {
@@ -7589,5 +7574,98 @@
         "type": "String"
       }
     }
-  }
+  },
+  "currencyDisplayTitle": "Currency",
+  "@currencyDisplayTitle": {
+    "description": "Title of the profile tile and setting for the currency used to show totals."
+  },
+  "currencyDisplaySubtitle": "Totals are shown in {currency}",
+  "@currencyDisplaySubtitle": {
+    "description": "Subtitle of the currency tile. currency is a three letter currency code.",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "costRatesTitle": "Exchange rates",
+  "@costRatesTitle": {
+    "description": "Title of the dialog that explains exchange rates."
+  },
+  "costRatesBody": "Amounts in other currencies are converted into {currency} with daily exchange rates. Each record keeps the amount and currency you entered.",
+  "@costRatesBody": {
+    "description": "Explains that costs in other currencies are converted. currency is a three letter currency code.",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "costRatesUpdated": "Rates updated {date}",
+  "@costRatesUpdated": {
+    "description": "Date the exchange rates were last updated. date is a formatted date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "costNotConverted": "No exchange rate for {currencies}. These amounts are shown separately.",
+  "@costNotConverted": {
+    "description": "Shown when some currencies have no exchange rate. currencies is a comma separated list of currency codes.",
+    "placeholders": {
+      "currencies": {
+        "type": "String"
+      }
+    }
+  },
+  "smartInsightTripWhen": "You leave for {trip} on {date}.",
+  "@smartInsightTripWhen": {
+    "description": "Shown on the trip alert in Insights. trip is the trip name and date is a long date.",
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "travelFlightErrorTripDates": "Flight dates must be between {start} and {end}.",
+  "@travelFlightErrorTripDates": {
+    "description": "Error when a flight is outside the trip dates. start and end are formatted dates.",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "travelFlightErrorOverlap": "This flight overlaps another flight. Flights must follow each other in order.",
+  "@travelFlightErrorOverlap": {
+    "description": "Error when a flight overlaps the flight before or after it."
+  },
+  "travelFlightsOutsideDates": "Some flights are outside your trip dates. Change the dates or edit those flights.",
+  "@travelFlightsOutsideDates": {
+    "description": "Error on the trip form when saved flights are outside the trip dates."
+  },
+  "loadErrorBody": "We could not load this. Check your connection and try again.",
+  "tryAgain": "Try again",
+  "discardChangesTitle": "Discard your changes?",
+  "discardChangesBody": "You have unsaved changes. If you leave now, they will be lost.",
+  "discardChangesKeep": "Keep editing",
+  "discardChangesDiscard": "Discard",
+  "offlineBanner": "Offline. Changes sync when you reconnect.",
+  "reminderHelpTitle": "Reminders not arriving?",
+  "reminderHelpSubtitle": "Fix battery settings that block reminders",
+  "reminderHelpBody": "Some phones stop apps in the background to save battery, which can delay or block reminders. Allow Vaultara to run without battery limits, and make sure notifications are turned on in the app settings.",
+  "reminderHelpOpenBattery": "Open battery settings",
+  "reminderHelpOpenApp": "Open app settings",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password",
+  "pinCategory": "Pin to top",
+  "unpinCategory": "Unpin",
+  "clearSearch": "Clear search"
 }

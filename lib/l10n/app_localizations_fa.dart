@@ -1519,7 +1519,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get costCardTitle => 'هزینه‌های تمدید';
 
   @override
-  String get costCardSubtitle => 'هزینه تمدیدهای شما در ۱۲ ماه آینده';
+  String get costCardSubtitle => 'هزینهٔ تمدیدهای شما ماه به ماه';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'سفر شما به توجه نیاز دارد';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip در $date حرکت می‌کند و $count مورد باید پیش از رفتن رفع شود.',
-      one: '$trip در $date حرکت می‌کند و $count مورد باید پیش از رفتن رفع شود.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'باز کردن سفر';
@@ -6204,4 +6193,97 @@ class AppLocalizationsFa extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'توقف در $country. بررسی کنید که آیا به ویزای ترانزیت نیاز دارید.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ارز';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'جمع‌ها به $currency نمایش داده می‌شوند';
+  }
+
+  @override
+  String get costRatesTitle => 'نرخ تبدیل ارز';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'مبلغ‌ها به سایر ارزها با نرخ‌های روزانه به $currency تبدیل می‌شوند. هر سابقه مبلغ و ارزی را که وارد کرده‌اید نگه می‌دارد.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'نرخ‌ها به‌روزرسانی شد: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'نرخ تبدیلی برای $currencies وجود ندارد. این مبلغ‌ها جداگانه نمایش داده می‌شوند.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: در تاریخ $date حرکت می‌کنید.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'تاریخ پروازها باید بین $start و $end باشد.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'این پرواز با پرواز دیگری هم‌پوشانی دارد. پروازها باید به ترتیب پشت سر هم باشند.';
+
+  @override
+  String get travelFlightsOutsideDates => 'برخی پروازها خارج از تاریخ‌های سفر شما هستند. تاریخ‌ها را تغییر دهید یا آن پروازها را ویرایش کنید.';
+
+  @override
+  String get loadErrorBody => 'بارگذاری انجام نشد. اتصال خود را بررسی کنید و دوباره تلاش کنید.';
+
+  @override
+  String get tryAgain => 'تلاش دوباره';
+
+  @override
+  String get discardChangesTitle => 'تغییرات نادیده گرفته شود؟';
+
+  @override
+  String get discardChangesBody => 'تغییرات ذخیره‌نشده دارید. اگر اکنون خارج شوید، از بین می‌روند.';
+
+  @override
+  String get discardChangesKeep => 'ادامه ویرایش';
+
+  @override
+  String get discardChangesDiscard => 'نادیده گرفتن';
+
+  @override
+  String get offlineBanner => 'آفلاین. تغییرات پس از اتصال دوباره همگام‌سازی می‌شوند.';
+
+  @override
+  String get reminderHelpTitle => 'یادآورها نمی‌رسند؟';
+
+  @override
+  String get reminderHelpSubtitle => 'تنظیمات باتری را که یادآورها را مسدود می‌کند اصلاح کنید';
+
+  @override
+  String get reminderHelpBody => 'برخی گوشی‌ها برای صرفه‌جویی در باتری، برنامه‌ها را در پس‌زمینه متوقف می‌کنند و این ممکن است یادآورها را به تأخیر بیندازد یا مسدود کند. به Vaultara اجازه دهید بدون محدودیت باتری اجرا شود و مطمئن شوید اعلان‌ها در تنظیمات برنامه روشن هستند.';
+
+  @override
+  String get reminderHelpOpenBattery => 'باز کردن تنظیمات باتری';
+
+  @override
+  String get reminderHelpOpenApp => 'باز کردن تنظیمات برنامه';
+
+  @override
+  String get showPassword => 'نمایش گذرواژه';
+
+  @override
+  String get hidePassword => 'پنهان کردن گذرواژه';
+
+  @override
+  String get pinCategory => 'سنجاق در بالا';
+
+  @override
+  String get unpinCategory => 'برداشتن سنجاق';
+
+  @override
+  String get clearSearch => 'پاک کردن جستجو';
 }

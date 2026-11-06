@@ -1519,7 +1519,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get costCardTitle => 'नवीनीकरण लागत';
 
   @override
-  String get costCardSubtitle => 'अगले 12 महीनों में आपके नवीनीकरण पर कितना खर्च होगा';
+  String get costCardSubtitle => 'आपके नवीनीकरण का महीने-दर-महीने खर्च';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'आपकी यात्रा पर ध्यान देने की ज़रूरत है';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date को रवाना हो रही है, और जाने से पहले $count चीज़ें ठीक करनी हैं।',
-      one: '$trip $date को रवाना हो रही है, और जाने से पहले $count चीज़ ठीक करनी है।',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'यात्रा खोलें';
@@ -6204,4 +6193,97 @@ class AppLocalizationsHi extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country में स्टॉपओवर। जाँचें कि क्या आपको ट्रांज़िट वीज़ा चाहिए।';
   }
+
+  @override
+  String get currencyDisplayTitle => 'मुद्रा';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'कुल राशि $currency में दिखाई जाती है';
+  }
+
+  @override
+  String get costRatesTitle => 'विनिमय दरें';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'अन्य मुद्राओं की राशियाँ दैनिक विनिमय दरों से $currency में बदली जाती हैं। हर रिकॉर्ड में आपकी डाली हुई राशि और मुद्रा सुरक्षित रहती है।';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'दरें अपडेट हुईं $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies के लिए विनिमय दर उपलब्ध नहीं है। ये राशियाँ अलग से दिखाई गई हैं।';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: आप $date को निकलते हैं।';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'उड़ान की तारीखें $start और $end के बीच होनी चाहिए।';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'यह उड़ान किसी दूसरी उड़ान से टकराती है। उड़ानें क्रम से एक के बाद एक होनी चाहिए।';
+
+  @override
+  String get travelFlightsOutsideDates => 'कुछ उड़ानें आपकी यात्रा की तारीखों से बाहर हैं। तारीखें बदलें या उन उड़ानों को संपादित करें।';
+
+  @override
+  String get loadErrorBody => 'यह लोड नहीं हो सका। अपना कनेक्शन जांचें और फिर कोशिश करें।';
+
+  @override
+  String get tryAgain => 'फिर कोशिश करें';
+
+  @override
+  String get discardChangesTitle => 'बदलाव छोड़ दें?';
+
+  @override
+  String get discardChangesBody => 'आपके कुछ बदलाव सहेजे नहीं गए हैं। अभी बाहर निकले तो वे खो जाएंगे।';
+
+  @override
+  String get discardChangesKeep => 'संपादन जारी रखें';
+
+  @override
+  String get discardChangesDiscard => 'छोड़ दें';
+
+  @override
+  String get offlineBanner => 'ऑफ़लाइन। दोबारा कनेक्ट होने पर बदलाव सिंक हो जाएंगे।';
+
+  @override
+  String get reminderHelpTitle => 'रिमाइंडर नहीं आ रहे?';
+
+  @override
+  String get reminderHelpSubtitle => 'रिमाइंडर रोकने वाली बैटरी सेटिंग ठीक करें';
+
+  @override
+  String get reminderHelpBody => 'कुछ फ़ोन बैटरी बचाने के लिए बैकग्राउंड में ऐप बंद कर देते हैं, जिससे रिमाइंडर देर से आ सकते हैं या रुक सकते हैं। Vaultara को बैटरी सीमा के बिना चलने दें और ऐप सेटिंग में सूचनाएं चालू होने की पुष्टि करें।';
+
+  @override
+  String get reminderHelpOpenBattery => 'बैटरी सेटिंग खोलें';
+
+  @override
+  String get reminderHelpOpenApp => 'ऐप सेटिंग खोलें';
+
+  @override
+  String get showPassword => 'पासवर्ड दिखाएं';
+
+  @override
+  String get hidePassword => 'पासवर्ड छिपाएं';
+
+  @override
+  String get pinCategory => 'ऊपर पिन करें';
+
+  @override
+  String get unpinCategory => 'पिन हटाएं';
+
+  @override
+  String get clearSearch => 'खोज साफ़ करें';
 }
