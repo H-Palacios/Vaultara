@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -51,7 +52,8 @@ class NationalityRepository {
       myResidence.value = value.$2;
       myExtras.value = value.$3;
       myRecords.value = value.$4;
-    }, onError: (_) {});
+    }, onError: (Object e, StackTrace s) =>
+        ErrorReporter.record(e, s, 'nationality_listener'));
   }
 
   static bool isMe(String? holderId) =>

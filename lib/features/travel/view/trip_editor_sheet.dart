@@ -3,6 +3,7 @@ import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
@@ -23,7 +24,7 @@ Future<SavedTrip?> showTripEditorSheet(
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
-    showDragHandle: true,
+    enableDrag: false,
     builder: (_) => _TripEditorSheet(trip: trip),
   );
 }
@@ -73,6 +74,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
         trip.name == SavedTrip.defaultName(trip.countries)) {
       _name.text = '';
     }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _initialSignature = _signature();
+    });
   }
 
   Future<void> _pickCountries() async {
@@ -154,9 +158,21 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
 
   Future<void> _addFlight() async {
     FocusScope.of(context).unfocus();
+    final loc = AppLocalizations.of(context)!;
+    final departure = _departure;
+    final returnDate = _return;
+    if (departure == null || returnDate == null) {
+      setState(() => _dateError = loc.travelErrorDates);
+      return;
+    }
     final picked = await showTripFlightSheet(
       context,
-      suggestedDate: _flights.isEmpty ? _departure : (_return ?? _departure),
+      suggestedDate: _flights.isEmpty ? departure : returnDate,
+      limits: TripFlightLimits.forAdd(
+        tripStart: departure,
+        tripEnd: returnDate,
+        flights: _flights,
+      ),
     );
     if (picked == null || !mounted) return;
     setState(() {
@@ -170,6 +186,12 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     final picked = await showTripFlightSheet(
       context,
       flight: _flights[index],
+      limits: TripFlightLimits.forEdit(
+        tripStart: _departure,
+        tripEnd: _return,
+        flights: _flights,
+        index: index,
+      ),
     );
     if (picked == null || !mounted) return;
     setState(() {
@@ -185,6 +207,18 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     setState(() {
       _flights = List<TripFlight>.of(_flights)..removeAt(index);
     });
+  }
+
+  bool _flightsOutsideDates() {
+    final start = _departure;
+    final end = _return;
+    if (start == null || end == null) return false;
+    for (final flight in _flights) {
+      if (flight.departDate.isBefore(start) || flight.landDate.isAfter(end)) {
+        return true;
+      }
+    }
+    return false;
   }
 
   int? _daysAtDestination() {
@@ -359,7 +393,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       _travellerError = valid.isEmpty ? loc.travelErrorTravellers : null;
       _dateError = departure == null || returnDate == null
           ? loc.travelErrorDates
-          : null;
+          : (_flightsOutsideDates() ? loc.travelFlightsOutsideDates : null);
       _saveError = null;
     });
     if (_nameError != null ||
@@ -525,8 +559,37 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     );
   }
 
+  String? _initialSignature;
+
+  String _signature() {
+    final travellers = _travellers.toList()..sort();
+    return <Object?>[
+      _name.text.trim(),
+      _departure?.millisecondsSinceEpoch,
+      _return?.millisecondsSinceEpoch,
+      _driving,
+      _needsVisa,
+      _needsVisaManual,
+      travellers.join(','),
+      _countries.join(','),
+      _flights.length,
+      _flights
+          .map((f) => '${f.from}>${f.to}@${f.departDate.millisecondsSinceEpoch}')
+          .join(','),
+    ].join('|');
+  }
+
+  bool _isDirty() {
+    final initial = _initialSignature;
+    return !_saving && initial != null && initial != _signature();
+  }
+
   @override
   Widget build(BuildContext context) {
+    return UnsavedChangesGuard(isDirty: _isDirty, child: _buildForm(context));
+  }
+
+  Widget _buildForm(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
@@ -539,7 +602,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
 
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.only(bottom: bottomInset),
+        padding: EdgeInsets.only(top: 14, bottom: bottomInset),
         child: ConstrainedBox(
           constraints: BoxConstraints(maxHeight: maxHeight),
           child: Column(
@@ -612,7 +675,19 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           ),
                         ],
                       ),
-                      if (_dateError != null) ...[
+                      if (_dateError == null && _flightsOutsideDates()) ...[
+                        const SizedBox(height: 6),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Text(
+                            loc.travelFlightsOutsideDates,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: scheme.error,
+                            ),
+                          ),
+                        ),
+                      ] else if (_dateError != null) ...[
                         const SizedBox(height: 6),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
@@ -715,7 +790,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                   children: [
                     TextButton(
                       onPressed:
-                          _saving ? null : () => Navigator.of(context).pop(),
+                          _saving ? null : () => Navigator.of(context).maybePop(),
                       child: Text(loc.cancel),
                     ),
                     const Spacer(),

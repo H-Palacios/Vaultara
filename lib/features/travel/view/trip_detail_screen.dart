@@ -111,6 +111,11 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     final picked = await showTripFlightSheet(
       context,
       suggestedDate: trip.flights.isEmpty ? trip.start : trip.end,
+      limits: TripFlightLimits.forAdd(
+        tripStart: trip.start,
+        tripEnd: trip.end,
+        flights: trip.flights,
+      ),
     );
     if (picked == null || !mounted) return;
     final latest = TripRepository.byId(trip.id) ?? trip;
@@ -122,6 +127,12 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     final picked = await showTripFlightSheet(
       context,
       flight: trip.flights[index],
+      limits: TripFlightLimits.forEdit(
+        tripStart: trip.start,
+        tripEnd: trip.end,
+        flights: trip.flights,
+        index: index,
+      ),
     );
     if (picked == null || !mounted) return;
     final latest = TripRepository.byId(trip.id) ?? trip;
@@ -370,7 +381,7 @@ class _StatusPill extends StatelessWidget {
       child: Text(
         status.text,
         style: TextStyle(
-          fontSize: 11.5,
+          fontSize: 12,
           fontWeight: FontWeight.w700,
           color: status.colour,
         ),
@@ -563,7 +574,7 @@ class _OverviewCard extends StatelessWidget {
                                 .trim(),
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontSize: 11.5,
+                              fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color: scheme.primary,
                             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
@@ -43,25 +44,92 @@ class TripFlightText {
   }
 }
 
+class TripFlightLimits {
+  final DateTime? tripStart;
+  final DateTime? tripEnd;
+  final TripFlight? previous;
+  final TripFlight? next;
+
+  const TripFlightLimits({
+    this.tripStart,
+    this.tripEnd,
+    this.previous,
+    this.next,
+  });
+
+  factory TripFlightLimits.forAdd({
+    DateTime? tripStart,
+    DateTime? tripEnd,
+    required List<TripFlight> flights,
+  }) {
+    final sorted = List<TripFlight>.of(flights)..sort(TripFlight.compare);
+    return TripFlightLimits(
+      tripStart: tripStart,
+      tripEnd: tripEnd,
+      previous: sorted.isEmpty ? null : sorted.last,
+    );
+  }
+
+  factory TripFlightLimits.forEdit({
+    DateTime? tripStart,
+    DateTime? tripEnd,
+    required List<TripFlight> flights,
+    required int index,
+  }) {
+    return TripFlightLimits(
+      tripStart: tripStart,
+      tripEnd: tripEnd,
+      previous: index > 0 && index <= flights.length ? flights[index - 1] : null,
+      next: index >= 0 && index < flights.length - 1 ? flights[index + 1] : null,
+    );
+  }
+
+  DateTime? get earliest {
+    final fromPrevious = previous?.landDate;
+    final fromTrip = tripStart;
+    if (fromPrevious == null) return fromTrip;
+    if (fromTrip == null) return fromPrevious;
+    return fromPrevious.isAfter(fromTrip) ? fromPrevious : fromTrip;
+  }
+
+  DateTime? get latest {
+    final fromNext = next?.departDate;
+    final fromTrip = tripEnd;
+    if (fromNext == null) return fromTrip;
+    if (fromTrip == null) return fromNext;
+    return fromNext.isBefore(fromTrip) ? fromNext : fromTrip;
+  }
+}
+
 Future<TripFlight?> showTripFlightSheet(
   BuildContext context, {
   TripFlight? flight,
   DateTime? suggestedDate,
+  TripFlightLimits limits = const TripFlightLimits(),
 }) {
   return showModalBottomSheet<TripFlight>(
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
-    showDragHandle: true,
-    builder: (_) => _FlightSheet(flight: flight, suggestedDate: suggestedDate),
+    enableDrag: false,
+    builder: (_) => _FlightSheet(
+      flight: flight,
+      suggestedDate: suggestedDate,
+      limits: limits,
+    ),
   );
 }
 
 class _FlightSheet extends StatefulWidget {
   final TripFlight? flight;
   final DateTime? suggestedDate;
+  final TripFlightLimits limits;
 
-  const _FlightSheet({this.flight, this.suggestedDate});
+  const _FlightSheet({
+    this.flight,
+    this.suggestedDate,
+    this.limits = const TripFlightLimits(),
+  });
 
   @override
   State<_FlightSheet> createState() => _FlightSheetState();
@@ -83,11 +151,37 @@ class _FlightSheetState extends State<_FlightSheet> {
     final f = widget.flight;
     _from = TextEditingController(text: f?.from ?? '');
     _to = TextEditingController(text: f?.to ?? '');
-    _departDate = f?.departDate ?? widget.suggestedDate;
-    _landDate = f?.landDate ?? widget.suggestedDate;
+    final suggested = _withinLimits(widget.suggestedDate);
+    _departDate = f?.departDate ?? suggested;
+    _landDate = f?.landDate ?? suggested;
     _departTime = TripFlightText.parse(f?.departTime);
     _landTime = TripFlightText.parse(f?.landTime);
     _toCountry = f?.toCountry;
+    _initialSignature = _signature();
+  }
+
+  late final String _initialSignature;
+
+  String _signature() {
+    return <Object?>[
+      _from.text.trim(),
+      _to.text.trim(),
+      _departDate?.millisecondsSinceEpoch,
+      _landDate?.millisecondsSinceEpoch,
+      TripFlightText.encode(_departTime),
+      TripFlightText.encode(_landTime),
+      _toCountry,
+    ].join('|');
+  }
+
+  DateTime? _withinLimits(DateTime? day) {
+    if (day == null) return null;
+    final first = widget.limits.earliest;
+    final last = widget.limits.latest;
+    var result = day;
+    if (first != null && result.isBefore(first)) result = first;
+    if (last != null && result.isAfter(last)) result = last;
+    return result;
   }
 
   @override
@@ -99,16 +193,22 @@ class _FlightSheetState extends State<_FlightSheet> {
 
   Future<DateTime?> _pickDate(DateTime? current, {DateTime? notBefore}) async {
     final today = Dates.only(DateTime.now());
-    var initial = current ?? widget.suggestedDate ?? today;
-    if (notBefore != null && initial.isBefore(notBefore)) initial = notBefore;
-    var first = notBefore ?? today;
-    if (initial.isBefore(first)) first = initial;
-    final last = DateTime(today.year + 6, 12, 31);
+    final limits = widget.limits;
+    var first = limits.earliest ?? today;
+    if (limits.earliest == null && current != null && current.isBefore(first)) {
+      first = current;
+    }
+    if (notBefore != null && notBefore.isAfter(first)) first = notBefore;
+    var last = limits.latest ?? DateTime(today.year + 6, 12, 31);
+    if (last.isBefore(first)) last = first;
+    var initial = current ?? widget.suggestedDate ?? first;
+    if (initial.isBefore(first)) initial = first;
+    if (initial.isAfter(last)) initial = last;
     final picked = await showDatePicker(
       context: context,
       initialDate: initial,
       firstDate: first,
-      lastDate: last.isBefore(initial) ? initial : last,
+      lastDate: last,
     );
     return picked == null ? null : Dates.only(picked);
   }
@@ -178,14 +278,59 @@ class _FlightSheetState extends State<_FlightSheet> {
       setState(() => _error = loc.travelFlightErrorOrder);
       return;
     }
+    final departTime = TripFlightText.encode(_departTime);
+    final landTime = TripFlightText.encode(_landTime);
+    if (landDate == departDate &&
+        departTime != null &&
+        landTime != null &&
+        landTime.compareTo(departTime) <= 0) {
+      setState(() => _error = loc.travelFlightErrorOrder);
+      return;
+    }
+
+    final limits = widget.limits;
+    final tripStart = limits.tripStart;
+    final tripEnd = limits.tripEnd;
+    if ((tripStart != null && departDate.isBefore(tripStart)) ||
+        (tripEnd != null && landDate.isAfter(tripEnd))) {
+      setState(() {
+        _error = loc.travelFlightErrorTripDates(
+          tripStart == null ? '' : TravelText.date(context, tripStart),
+          tripEnd == null ? '' : TravelText.date(context, tripEnd),
+        );
+      });
+      return;
+    }
+
+    final previous = limits.previous;
+    final next = limits.next;
+    final previousLandTime = previous?.landTime;
+    final nextDepartTime = next?.departTime;
+    final beforePrevious = previous != null &&
+        (departDate.isBefore(previous.landDate) ||
+            (departDate == previous.landDate &&
+                departTime != null &&
+                previousLandTime != null &&
+                departTime.compareTo(previousLandTime) < 0));
+    final afterNext = next != null &&
+        (landDate.isAfter(next.departDate) ||
+            (landDate == next.departDate &&
+                landTime != null &&
+                nextDepartTime != null &&
+                landTime.compareTo(nextDepartTime) > 0));
+    if (beforePrevious || afterNext) {
+      setState(() => _error = loc.travelFlightErrorOverlap);
+      return;
+    }
+
     Navigator.of(context).pop(
       TripFlight(
         from: from,
         to: to,
         departDate: departDate,
-        departTime: TripFlightText.encode(_departTime),
+        departTime: departTime,
         landDate: landDate,
-        landTime: TripFlightText.encode(_landTime),
+        landTime: landTime,
         toCountry: _toCountry,
       ),
     );
@@ -279,6 +424,13 @@ class _FlightSheetState extends State<_FlightSheet> {
 
   @override
   Widget build(BuildContext context) {
+    return UnsavedChangesGuard(
+      isDirty: () => _signature() != _initialSignature,
+      child: _buildForm(context),
+    );
+  }
+
+  Widget _buildForm(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
@@ -286,7 +438,7 @@ class _FlightSheetState extends State<_FlightSheet> {
     return Padding(
       padding: EdgeInsets.only(bottom: bottomInset),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+        padding: const EdgeInsets.fromLTRB(16, 18, 16, 16),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -364,7 +516,7 @@ class _FlightSheetState extends State<_FlightSheet> {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () => Navigator.of(context).maybePop(),
                     child: Text(loc.cancel),
                   ),
                 ),
