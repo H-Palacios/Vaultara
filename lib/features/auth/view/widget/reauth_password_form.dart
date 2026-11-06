@@ -119,6 +119,7 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
             focused: _passwordFocus.hasFocus,
             errorText: _passwordError,
             suffixIcon: IconButton(
+              tooltip: _passwordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
               icon: Icon(
                 _passwordVisible
                     ? Icons.visibility_rounded

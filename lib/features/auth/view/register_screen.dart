@@ -323,6 +323,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       focused: passwordFocus.hasFocus,
                       errorText: passwordErrorText,
                       suffixIcon: IconButton(
+                        tooltip: isPasswordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
                         icon: Icon(
                           isPasswordVisible
                               ? Icons.visibility_rounded

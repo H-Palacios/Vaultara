@@ -207,6 +207,7 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
                   focused: _passwordFocus.hasFocus,
                   errorText: _passwordError,
                   suffixIcon: IconButton(
+                    tooltip: _obscurePassword ? AppLocalizations.of(context)!.showPassword : AppLocalizations.of(context)!.hidePassword,
                     icon: Icon(
                       _obscurePassword
                           ? Icons.visibility_off_rounded
