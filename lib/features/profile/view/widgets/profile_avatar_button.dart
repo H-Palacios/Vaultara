@@ -232,22 +232,7 @@ class _ProfileAvatarButtonState extends State<ProfileAvatarButton> {
     final size = widget.size;
     final badge = (size * 0.4).clamp(18.0, 24.0).toDouble();
 
-    final fallback = Container(
-      width: size,
-      height: size,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: scheme.primary.withValues(alpha: 0.15),
-      ),
-      child: Text(
-        widget.initials,
-        style: TextStyle(
-          fontWeight: FontWeight.w800,
-          color: scheme.primary,
-        ),
-      ),
-    );
+    final fallback = InitialsAvatar(size: size);
 
     final canTap = widget.enabled && !_busy;
 

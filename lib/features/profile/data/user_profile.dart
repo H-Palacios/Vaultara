@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/profile/data/avatar_repository.dart';
 
 class UserProfile {
   static const int companyNameMaxLength = 80;
@@ -16,6 +17,15 @@ class UserProfile {
   });
 
   static const empty = UserProfile(fullName: '', email: '');
+
+  /// What is known without waiting for the network: the saved name from the
+  /// last session and the email of the signed-in account.
+  static UserProfile quick() {
+    final user = FirebaseAuth.instance.currentUser;
+    final saved = AvatarRepository.knownName;
+    final name = saved.isNotEmpty ? saved : (user?.displayName ?? '').trim();
+    return UserProfile(fullName: name, email: user?.email ?? '');
+  }
 
   /// Two initials from the full name, or "?" when there is nothing to use.
   String get initials {

@@ -35,8 +35,6 @@ class MyAvatar extends StatelessWidget {
                 errorBuilder: (_, __, ___) => fallback,
               ),
             );
-          } else if (value.status == AvatarStatus.loading) {
-            child = AvatarShimmer(key: const ValueKey('shimmer'), size: size);
           } else {
             child = KeyedSubtree(
               key: const ValueKey('fallback'),
@@ -49,6 +47,43 @@ class MyAvatar extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+}
+
+/// Circle with the user's initials. Shown while a photo is loading or when
+/// there is no photo, so the avatar never flashes a generic person icon.
+class InitialsAvatar extends StatelessWidget {
+  final double size;
+
+  const InitialsAvatar({super.key, required this.size});
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return ValueListenableBuilder<String>(
+      valueListenable: AvatarRepository.initials,
+      builder: (context, value, _) {
+        return Container(
+          width: size,
+          height: size,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: scheme.primary.withValues(alpha: 0.15),
+          ),
+          child: value.isEmpty
+              ? Icon(Icons.person_rounded, size: size * 0.6, color: scheme.primary)
+              : Text(
+                  value,
+                  style: TextStyle(
+                    fontSize: size * 0.4,
+                    fontWeight: FontWeight.w800,
+                    color: scheme.primary,
+                  ),
+                ),
+        );
+      },
     );
   }
 }
