@@ -224,26 +224,31 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         if (isPremium) StayCard(trip: trip),
         _OverviewCard(trip: trip, results: results),
         const SizedBox(height: 12),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            ActionChip(
-              avatar: const Icon(Icons.edit_rounded, size: 18),
-              label: Text(loc.edit),
-              onPressed: () => showTripEditorSheet(context, trip: trip),
-            ),
-            ActionChip(
-              avatar: const Icon(Icons.picture_as_pdf_rounded, size: 18),
-              label: Text(loc.travelShareSummary),
-              onPressed: () => TripShare.sharePdf(context, trip, results),
-            ),
-            ActionChip(
-              avatar: const Icon(Icons.event_available_rounded, size: 18),
-              label: Text(loc.travelAddToCalendar),
-              onPressed: () => TripShare.addToCalendar(context, trip),
-            ),
-          ],
+        // One row, so no button is left alone on a second line. Scrolls
+        // sideways only when a long translation does not fit.
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              _ActionChip(
+                icon: Icons.edit_rounded,
+                label: loc.edit,
+                onPressed: () => showTripEditorSheet(context, trip: trip),
+              ),
+              const SizedBox(width: 8),
+              _ActionChip(
+                icon: Icons.picture_as_pdf_rounded,
+                label: loc.travelShareSummary,
+                onPressed: () => TripShare.sharePdf(context, trip, results),
+              ),
+              const SizedBox(width: 8),
+              _ActionChip(
+                icon: Icons.event_available_rounded,
+                label: loc.travelAddToCalendar,
+                onPressed: () => TripShare.addToCalendar(context, trip),
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 22),
         TravelSectionTitle(loc.travelSectionJourney, icon: Icons.route_rounded),
@@ -325,6 +330,29 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         const SizedBox(height: 16),
         _RemindersCard(trip: trip),
       ],
+    );
+  }
+}
+
+class _ActionChip extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onPressed;
+
+  const _ActionChip({
+    required this.icon,
+    required this.label,
+    required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ActionChip(
+      avatar: Icon(icon, size: 16),
+      label: Text(label),
+      labelPadding: const EdgeInsets.only(left: 2, right: 6),
+      visualDensity: VisualDensity.compact,
+      onPressed: onPressed,
     );
   }
 }
@@ -527,11 +555,6 @@ class _OverviewCard extends StatelessWidget {
                           Icons.nights_stay_rounded,
                           loc.travelNights(trip.nights),
                         ),
-                        _fact(
-                          context,
-                          Icons.calendar_month_rounded,
-                          loc.travelDaysShort(trip.lengthInDays),
-                        ),
                         if (atDestination != null)
                           _fact(
                             context,
@@ -542,7 +565,7 @@ class _OverviewCard extends StatelessWidget {
                           _fact(
                             context,
                             Icons.group_rounded,
-                            '${trip.travellers.length}',
+                            loc.travelTravellersCount(trip.travellers.length),
                           ),
                       ],
                     ),
@@ -691,10 +714,7 @@ class _JourneyCard extends StatelessWidget {
           highlight: true,
           title:
               '${flights[i].from} → ${flights[i].to}${flights[i].toCountry == null ? '' : ' ${Countries.flag(flights[i].toCountry!)}'}',
-          subtitle:
-              '${TripFlightText.when(context, flights[i].departDate, flights[i].departTime)}'
-              '  →  '
-              '${TripFlightText.when(context, flights[i].landDate, flights[i].landTime)}',
+          subtitle: TripFlightText.span(context, flights[i]),
           onTap: () => onEdit(i),
           trailing: IconButton(
             icon: const Icon(Icons.close_rounded, size: 18),

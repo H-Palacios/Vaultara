@@ -292,9 +292,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${TripFlightText.when(context, flight.departDate, flight.departTime)}'
-                        '  →  '
-                        '${TripFlightText.when(context, flight.landDate, flight.landTime)}',
+                        TripFlightText.span(context, flight),
                         style: TextStyle(
                           fontSize: 12,
                           color: scheme.onSurfaceVariant,

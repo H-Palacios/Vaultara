@@ -43,6 +43,17 @@ class TripFlightText {
     final t = time(context, raw);
     return t.isEmpty ? date : '$date, $t';
   }
+
+  /// "22 Jan 2027, 10:05 → 20:30" when the flight lands the same day, so
+  /// the date is not repeated; the full landing date when it lands later.
+  static String span(BuildContext context, TripFlight flight) {
+    final from = when(context, flight.departDate, flight.departTime);
+    if (Dates.only(flight.departDate) == Dates.only(flight.landDate)) {
+      final t = time(context, flight.landTime);
+      return t.isEmpty ? from : '$from → $t';
+    }
+    return '$from → ${when(context, flight.landDate, flight.landTime)}';
+  }
 }
 
 class TripFlightLimits {
