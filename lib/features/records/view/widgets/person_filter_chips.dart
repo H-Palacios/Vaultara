@@ -18,11 +18,16 @@ class PersonFilterChips extends StatelessWidget {
   final String? value;
   final ValueChanged<String?> onChanged;
 
+  /// Space around the row when it shows, so it does not touch what comes
+  /// next. Nothing is added when the row is hidden.
+  final EdgeInsetsGeometry padding;
+
   const PersonFilterChips({
     super.key,
     required this.records,
     required this.value,
     required this.onChanged,
+    this.padding = const EdgeInsets.only(bottom: 12),
   });
 
   /// The owners in [records]: [me] and person ids, mine first.
@@ -77,29 +82,32 @@ class PersonFilterChips extends StatelessWidget {
           );
         }
 
-        return SizedBox(
-          height: 40,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: [
-              chip(loc.filterAll, null),
-              for (final owner in list)
-                if (owner == me)
-                  chip(
-                    loc.familyMe,
-                    me,
-                    avatar: const PersonAvatar(person: null, size: 20),
-                  )
-                else
-                  chip(
-                    PeopleRepository.byId(owner)?.name ?? '',
-                    owner,
-                    avatar: PersonAvatar(
-                      person: PeopleRepository.byId(owner),
-                      size: 20,
+        return Padding(
+          padding: padding,
+          child: SizedBox(
+            height: 40,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                chip(loc.filterAll, null),
+                for (final owner in list)
+                  if (owner == me)
+                    chip(
+                      loc.familyMe,
+                      me,
+                      avatar: const PersonAvatar(person: null, size: 20),
+                    )
+                  else
+                    chip(
+                      PeopleRepository.byId(owner)?.name ?? '',
+                      owner,
+                      avatar: PersonAvatar(
+                        person: PeopleRepository.byId(owner),
+                        size: 20,
+                      ),
                     ),
-                  ),
-            ],
+              ],
+            ),
           ),
         );
       },

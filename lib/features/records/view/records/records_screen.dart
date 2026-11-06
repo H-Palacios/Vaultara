@@ -679,6 +679,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                         children: [
                                           Expanded(
                                             child: PersonFilterChips(
+                                              padding: EdgeInsets.zero,
                                               records: all,
                                               value: _person,
                                               onChanged: (value) => setState(

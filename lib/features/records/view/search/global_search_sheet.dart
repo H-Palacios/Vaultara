@@ -175,6 +175,7 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
               onChanged: (mode) => setState(() => _mode = mode),
             ),
             PersonFilterChips(
+              padding: const EdgeInsets.only(top: 8),
               records: everything,
               value: _person,
               onChanged: (value) => setState(() => _person = value),
