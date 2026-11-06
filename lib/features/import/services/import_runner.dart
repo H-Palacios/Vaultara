@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart' show DateUtils;
+import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -52,7 +53,9 @@ class ImportRunner {
       if (!createdGroups.add('$categoryKey|$label')) continue;
       try {
         await GroupRepository.addGroup(categoryKey: categoryKey, name: label);
-      } catch (_) {}
+      } catch (error, stack) {
+        ErrorReporter.record(error, stack, 'import_group');
+      }
     }
 
     final taken = <int>[
@@ -124,7 +127,9 @@ class ImportRunner {
           break;
         }
         imported++;
-      } catch (_) {}
+      } catch (error, stack) {
+        ErrorReporter.record(error, stack, 'import_record');
+      }
 
       onProgress(i + 1, total);
       await Future<void>.delayed(Duration.zero);
