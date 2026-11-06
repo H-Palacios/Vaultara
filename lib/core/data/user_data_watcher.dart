@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 
 class UserDataWatcher {
@@ -22,6 +23,8 @@ class UserDataWatcher {
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _userDocSub;
 
   Timer? _debounceTimer;
+  Timer? _retryTimer;
+  int _failures = 0;
   String? _listeningUid;
   bool _disposed = false;
 
@@ -52,28 +55,52 @@ class UserDataWatcher {
 
     final firestore = FirebaseFirestore.instance;
 
-    _recordsSub = firestore
-        .collection('users/$uid/records')
-        .snapshots()
-        .listen((_) => _schedule());
+    void onData(Object? _) {
+      _failures = 0;
+      _schedule();
+    }
 
-    _categoriesSub = firestore
-        .collection('users/$uid/categories')
-        .snapshots()
-        .listen((_) => _schedule());
+    void onError(String where, Object error, StackTrace stack) {
+      ErrorReporter.record(error, stack, where);
+      _retryLater(uid);
+    }
+
+    _recordsSub = firestore.collection('users/$uid/records').snapshots().listen(
+          onData,
+          onError: (Object e, StackTrace s) => onError('watch_records', e, s),
+        );
+
+    _categoriesSub =
+        firestore.collection('users/$uid/categories').snapshots().listen(
+              onData,
+              onError: (Object e, StackTrace s) =>
+                  onError('watch_categories', e, s),
+            );
 
     HouseholdRepository.revision.addListener(_schedule);
 
     if (watchUserDoc) {
-      _userDocSub = firestore
-          .collection('users')
-          .doc(uid)
-          .snapshots()
-          .listen((_) => _schedule());
+      _userDocSub = firestore.collection('users').doc(uid).snapshots().listen(
+            onData,
+            onError: (Object e, StackTrace s) => onError('watch_user', e, s),
+          );
     }
   }
 
+  void _retryLater(String uid) {
+    if (_disposed) return;
+    _retryTimer?.cancel();
+    final seconds = <int>[15, 30, 60, 120, 300][_failures.clamp(0, 4).toInt()];
+    _failures++;
+    _retryTimer = Timer(Duration(seconds: seconds), () {
+      if (_disposed || _listeningUid != uid) return;
+      _listeningUid = null;
+      _attachFor(uid);
+    });
+  }
+
   void _detach() {
+    _retryTimer?.cancel();
     HouseholdRepository.revision.removeListener(_schedule);
     _recordsSub?.cancel();
     _recordsSub = null;
@@ -94,6 +121,7 @@ class UserDataWatcher {
 
   void dispose() {
     _disposed = true;
+    _retryTimer?.cancel();
     _debounceTimer?.cancel();
     _authSub?.cancel();
     _authSub = null;

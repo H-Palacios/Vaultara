@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:vaultara/core/errors/error_reporter.dart';
 import 'dart:typed_data';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -282,7 +283,9 @@ class AttachmentRepository {
     _forget(storagePath);
     try {
       await FirebaseStorage.instance.ref(storagePath).delete();
-    } catch (_) {}
+    } catch (error, stack) {
+      ErrorReporter.record(error, stack, 'attachment_delete');
+    }
   }
 
   static void clearForSignOut() {

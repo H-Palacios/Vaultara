@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -38,7 +39,8 @@ class PeopleRepository {
           .toList()
         ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
       people.value = List<Person>.unmodifiable(list);
-    }, onError: (_) {});
+    }, onError: (Object e, StackTrace s) =>
+        ErrorReporter.record(e, s, 'people_listener'));
   }
 
   static void clearForSignOut() {
