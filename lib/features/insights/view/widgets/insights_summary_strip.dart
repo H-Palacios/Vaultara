@@ -45,15 +45,19 @@ class InsightsSummaryStrip extends StatelessWidget {
       ),
     ];
 
-    return Row(
-      children: [
-        for (var i = 0; i < tiles.length; i++) ...[
-          if (i > 0) const SizedBox(width: 8),
-          Expanded(
-            child: _Tile(data: tiles[i], onOpen: onOpen),
-          ),
+    // Same height for all four, even when one label takes two lines.
+    return IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (var i = 0; i < tiles.length; i++) ...[
+            if (i > 0) const SizedBox(width: 8),
+            Expanded(
+              child: _Tile(data: tiles[i], onOpen: onOpen),
+            ),
+          ],
         ],
-      ],
+      ),
     );
   }
 }
@@ -109,6 +113,7 @@ class _Tile extends StatelessWidget {
               ),
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(data.icon, size: 16, color: colour),
                 const SizedBox(height: 4),
