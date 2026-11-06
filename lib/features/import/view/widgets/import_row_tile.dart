@@ -94,7 +94,7 @@ class ImportRowTile extends StatelessWidget {
                       Text(
                         loc.csvImportRowLine(row.line),
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight: FontWeight.w600,
                           color: scheme.onSurfaceVariant,
                         ),
