@@ -15,6 +15,7 @@ import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
+import 'package:vaultara/features/travel/view/trip_purpose_picker.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 class AssistantChangeRow {
@@ -436,6 +437,10 @@ class AssistantActionPreview {
         label: loc.travelSectionWho,
         after: f.travellers(action.travellers),
       ),
+      AssistantChangeRow(
+        label: loc.tripPurposeTitle,
+        after: TripPurposeText.label(loc, action.purpose),
+      ),
       if (action.driving)
         AssistantChangeRow(label: loc.travelDriving, after: f.onOff(true)),
     ];
@@ -496,6 +501,13 @@ class AssistantActionPreview {
         label: loc.travelDriving,
         before: trip == null ? null : f.onOff(trip.driving),
         after: f.onOff(c.driving!),
+      ));
+    }
+    if (c.purpose != null) {
+      rows.add(AssistantChangeRow(
+        label: loc.tripPurposeTitle,
+        before: trip == null ? null : TripPurposeText.label(loc, trip.purpose),
+        after: TripPurposeText.label(loc, c.purpose!),
       ));
     }
     return AssistantActionPreview(

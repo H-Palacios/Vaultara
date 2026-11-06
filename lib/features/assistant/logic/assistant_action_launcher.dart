@@ -502,6 +502,7 @@ class AssistantActionLauncher {
       driving: action.driving,
       travellers: _validTravellers(action.travellers),
       countries: countries,
+      purpose: action.purpose,
     );
     final needsVisa =
         VisaCheck.autoNeedsVisa(VisaCheck.forTrip(base)) ?? false;
@@ -560,6 +561,7 @@ class AssistantActionLauncher {
           ? base.travellers
           : _validTravellers(changes.travellers!),
       driving: changes.driving,
+      purpose: changes.purpose,
     );
     if (!base.needsVisaManual) {
       final auto = VisaCheck.autoNeedsVisa(VisaCheck.forTrip(edited));

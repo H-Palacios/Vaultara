@@ -34,6 +34,8 @@ const MAX_REMINDER_DAYS = 365;
 const MAX_LEAD_DAYS = 365;
 const MAX_COST = 999999999;
 const REPEAT_OPTIONS = [1, 3, 6, 12];
+const TRIP_PURPOSES = ["holiday", "family", "business", "study", "work"];
+const DEFAULT_TRIP_PURPOSE = "holiday";
 const PEOPLE_LIMITS = { family: 5, business: 25 };
 const PAST_DAYS_ALLOWED = 3650;
 const FUTURE_DAYS_ALLOWED = 365 * 30;
@@ -323,6 +325,7 @@ const ACTION_TOOLS = [
         return_date: { type: "string", description: "YYYY-MM-DD, on or after departure." },
         travellers: { type: "array", items: { type: "string" }, description: "\"me\" and/or names from list_people. Defaults to me." },
         driving: { type: "boolean", description: "The user will drive on this trip." },
+        purpose: { type: "string", enum: TRIP_PURPOSES, description: "Why the user is travelling: holiday, family (visiting family or friends), business, study or work. Study and work trips get a different visa check, so ask when the reason is unclear and the trip could be for study or work. Defaults to holiday." },
       },
       required: ["departure", "return_date"],
     },
@@ -340,6 +343,7 @@ const ACTION_TOOLS = [
         return_date: { type: "string", description: "YYYY-MM-DD" },
         travellers: { type: "array", items: { type: "string" }, description: "Full new list: \"me\" and/or names from list_people." },
         driving: { type: "boolean" },
+        purpose: { type: "string", enum: TRIP_PURPOSES, description: "Why the user is travelling: holiday, family (visiting family or friends), business, study or work. Study and work trips get a different visa check, so ask when the reason is unclear and the trip could be for study or work." },
       },
       required: ["trip_id"],
     },
@@ -377,7 +381,7 @@ const APP_GUIDE = [
   "- Lock this record: the phone's fingerprint, face or screen lock is needed to see it. You cannot see the name or details of locked records.",
   "- Insights tab: smart insights about what needs attention, the expiry timeline by month, and renewal costs for the next 12 months (paid plans). Insights can be read aloud.",
   "- Calendar tab: expiry dates on a calendar. Profile > Export has Export as PDF (paid plans), Add to calendar, and Calendar link (a live calendar feed, paid plans).",
-  "- Travel check (paid plans): Home > \"Planning a trip?\". A trip has up to 5 destination countries, dates, travellers and whether the user drives. Vaultara checks passport validity, visas, travel insurance and driving licence, runs a visa check from each traveller's nationality and residence, and builds a trip checklist. Up to 20 trips.",
+  "- Travel check (paid plans): Home > \"Planning a trip?\". A trip has up to 5 destination countries, dates, travellers, whether the user drives and the reason for the trip (holiday, visiting family or friends, business, study or work). Visa results describe short visits; for study and work trips Vaultara warns that a study or work visa is usually needed and links to the official rules. Vaultara checks passport validity, visas, travel insurance and driving licence, runs a visa check from each traveller's nationality and residence, and builds a trip checklist. Up to 20 trips.",
   "- Family: Profile > Family. The Family plan tracks records for up to 5 people and Business for up to 25; each person has their own records and reminders. Household (Family and Business): the owner creates a household and invites people with a code or link (each invite works once, for 7 days). Members get Premium through the plan, their own records stay private, and records with Shared with household turned on can be seen and edited by everyone in it.",
   "- Smart tools in Profile: Lost my wallet (what was in it and what to replace), Life events (what to update after moving, a new name or a new car), Proof pack (paid plans: chosen records and photos in one PDF), Shared links (see and stop links; a link works for 1 to 72 hours, 24 hours by default).",
   "- Import: Profile > Import from spreadsheet (CSV file). Invite friends in Profile: both people get a free month of Premium.",
@@ -574,6 +578,7 @@ class UserData {
         countries,
         travellers,
         driving: data.driving === true,
+        purpose: TRIP_PURPOSES.includes(data.purpose) ? data.purpose : DEFAULT_TRIP_PURPOSE,
         needsVisa: data.needsVisa === true,
       });
     }
@@ -962,6 +967,7 @@ async function listTrips(ctx) {
       travellers: trip.travellers.map((t) => (t === "me" ? "me" : names.get(t) || null)).filter(Boolean),
       needs_visa: trip.needsVisa,
       driving: trip.driving,
+      purpose: trip.purpose,
       past: trip.endDay < ctx.today,
     })),
     max_trips: MAX_TRIPS,
@@ -1188,6 +1194,9 @@ async function proposeCreateTrip(ctx, input, actions) {
     if (travellers.error) return travellers;
   }
   if (has(input, "driving") && typeof input.driving !== "boolean") return { error: "driving must be true or false." };
+  if (has(input, "purpose") && !TRIP_PURPOSES.includes(input.purpose)) {
+    return { error: `purpose must be one of ${TRIP_PURPOSES.join(", ")}.` };
+  }
   const failed = pushAction(actions, {
     type: "trip_add",
     name: name || null,
@@ -1197,6 +1206,7 @@ async function proposeCreateTrip(ctx, input, actions) {
     travellers: travellers.ids,
     travellerNames: travellers.names,
     driving: input?.driving === true,
+    purpose: has(input, "purpose") ? input.purpose : DEFAULT_TRIP_PURPOSE,
   });
   if (failed) return failed;
   return draftReady();
@@ -1242,6 +1252,12 @@ async function proposeUpdateTrip(ctx, input, actions) {
   if (has(input, "driving")) {
     if (typeof input.driving !== "boolean") return { error: "driving must be true or false." };
     if (input.driving !== trip.driving) changes.driving = input.driving;
+  }
+  if (has(input, "purpose")) {
+    if (!TRIP_PURPOSES.includes(input.purpose)) {
+      return { error: `purpose must be one of ${TRIP_PURPOSES.join(", ")}.` };
+    }
+    if (input.purpose !== trip.purpose) changes.purpose = input.purpose;
   }
   if (Object.keys(changes).length === 0) return { error: "Nothing would change." };
   const failed = pushAction(actions, { type: "trip_edit", tripId: trip.id, name: trip.name, changes });
