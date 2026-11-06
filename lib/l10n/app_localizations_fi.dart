@@ -9108,4 +9108,7 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$name vanhenee $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Kuuntelu päättyi';
 }

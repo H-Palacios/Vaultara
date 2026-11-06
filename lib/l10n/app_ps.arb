@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "د سفر بیمه ستاسو له تګ مخکې پای ته رسېږي",
   "travelLicenceExpiresBeforeLeaving": "د موټر چلولو جواز ستاسو له تګ مخکې پای ته رسېږي",
   "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} په {date} پای ته رسېږي، {days, plural, =1{ستاسو له تګ 1 ورځ مخکې} other{ستاسو له تګ {days} ورځې مخکې}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} په {date} پای ته رسېږي، {days, plural, =1{ستاسو له تګ 1 ورځ مخکې} other{ستاسو له تګ {days} ورځې مخکې}}.",
+  "assistantVoiceReady": "اورېدل ودرېدل"
 }

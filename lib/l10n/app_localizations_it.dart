@@ -9116,4 +9116,7 @@ class AppLocalizationsIt extends AppLocalizations {
     );
     return '$name scade il $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Ascolto terminato';
 }

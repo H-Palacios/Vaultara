@@ -9186,4 +9186,7 @@ class AppLocalizationsBs extends AppLocalizations {
     );
     return '$name ističe $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Slušanje je zaustavljeno';
 }

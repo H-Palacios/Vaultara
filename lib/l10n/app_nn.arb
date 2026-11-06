@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reiseforsikringa sluttar før du reiser",
   "travelLicenceExpiresBeforeLeaving": "Førarkortet går ut før du reiser",
   "travelTravellersCount": "{count, plural, =1{1 reisande} other{{count} reisande}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag før du reiser} other{{days} dagar før du reiser}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag før du reiser} other{{days} dagar før du reiser}}.",
+  "assistantVoiceReady": "Lyttar ikkje lenger"
 }

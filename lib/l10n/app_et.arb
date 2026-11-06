@@ -3612,5 +3612,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reisikindlustus lõpeb enne sinu lahkumist",
   "travelLicenceExpiresBeforeLeaving": "Juhiluba aegub enne sinu lahkumist",
   "travelTravellersCount": "{count, plural, =1{1 reisija} other{{count} reisijat}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} aegub {date}, {days, plural, =1{1 päev enne sinu lahkumist} other{{days} päeva enne sinu lahkumist}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} aegub {date}, {days, plural, =1{1 päev enne sinu lahkumist} other{{days} päeva enne sinu lahkumist}}.",
+  "assistantVoiceReady": "Kuulamine lõppes"
 }

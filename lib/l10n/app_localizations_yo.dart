@@ -9053,4 +9053,7 @@ class AppLocalizationsYo extends AppLocalizations {
     );
     return '$name ń parí ní $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Mo ti dẹ́kun gbígbọ́';
 }

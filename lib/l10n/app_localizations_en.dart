@@ -9124,4 +9124,7 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$name expires $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Stopped listening';
 }

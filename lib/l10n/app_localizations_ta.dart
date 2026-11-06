@@ -9104,4 +9104,7 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$name $date அன்று காலாவதியாகும், $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'கேட்பது நிறுத்தப்பட்டது';
 }

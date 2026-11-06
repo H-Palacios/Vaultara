@@ -9104,4 +9104,7 @@ class AppLocalizationsKu extends AppLocalizations {
     );
     return '$name di $date de bidawî dibe, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Guhdarî rawestiya';
 }

@@ -9109,4 +9109,7 @@ class AppLocalizationsEu extends AppLocalizations {
     );
     return '$name $date(e)an iraungitzen da, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Entzuteari utzi diot';
 }

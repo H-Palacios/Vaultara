@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "ඔබ පිටත් වීමට පෙර ගමන් රක්ෂණය අවසන් වේ",
   "travelLicenceExpiresBeforeLeaving": "ඔබ පිටත් වීමට පෙර රියදුරු බලපත්‍රය කල් ඉකුත් වේ",
   "travelTravellersCount": "{count, plural, =1{සංචාරකයන් 1} other{සංචාරකයන් {count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} දින කල් ඉකුත් වේ, {days, plural, =1{ඔබ පිටත් වීමට දින 1කට පෙර} other{ඔබ පිටත් වීමට දින {days}කට පෙර}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} දින කල් ඉකුත් වේ, {days, plural, =1{ඔබ පිටත් වීමට දින 1කට පෙර} other{ඔබ පිටත් වීමට දින {days}කට පෙර}}.",
+  "assistantVoiceReady": "සවන් දීම නැවතුණි"
 }

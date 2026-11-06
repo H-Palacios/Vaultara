@@ -9268,4 +9268,7 @@ class AppLocalizationsSl extends AppLocalizations {
     );
     return '$name poteče $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Poslušanje ustavljeno';
 }

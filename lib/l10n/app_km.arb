@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "ធានារ៉ាប់រងការធ្វើដំណើរបញ្ចប់មុនអ្នកចេញដំណើរ",
   "travelLicenceExpiresBeforeLeaving": "ប័ណ្ណបើកបរផុតកំណត់មុនអ្នកចេញដំណើរ",
   "travelTravellersCount": "{count, plural, =1{អ្នកដំណើរ 1 នាក់} other{អ្នកដំណើរ {count} នាក់}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} ផុតកំណត់នៅ {date} {days, plural, =1{1 ថ្ងៃមុនអ្នកចេញដំណើរ} other{{days} ថ្ងៃមុនអ្នកចេញដំណើរ}}។"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ផុតកំណត់នៅ {date} {days, plural, =1{1 ថ្ងៃមុនអ្នកចេញដំណើរ} other{{days} ថ្ងៃមុនអ្នកចេញដំណើរ}}។",
+  "assistantVoiceReady": "បានឈប់ស្តាប់"
 }

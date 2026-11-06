@@ -9259,4 +9259,7 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$name galiojimas baigiasi $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Klausymas sustabdytas';
 }

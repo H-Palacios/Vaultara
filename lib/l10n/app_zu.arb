@@ -3439,5 +3439,6 @@
   "travelInsuranceEndsBeforeLeaving": "Umshwalense wohambo uphela ngaphambi kokuthi uhambe",
   "travelLicenceExpiresBeforeLeaving": "Ilayisense yokushayela iphelelwa ngaphambi kokuthi uhambe",
   "travelTravellersCount": "{count, plural, =1{Umhambi o-1} other{Abahambi abangu-{count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngo-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuthi uhambe} other{izinsuku ezingu-{days} ngaphambi kokuthi uhambe}}."
+  "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngo-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuthi uhambe} other{izinsuku ezingu-{days} ngaphambi kokuthi uhambe}}.",
+  "assistantVoiceReady": "Kumisiwe ukulalela"
 }

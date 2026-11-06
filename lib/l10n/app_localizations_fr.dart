@@ -9119,4 +9119,7 @@ class AppLocalizationsFr extends AppLocalizations {
     );
     return '$name expire le $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Écoute terminée';
 }

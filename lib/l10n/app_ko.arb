@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "출발하기 전에 여행자 보험이 끝납니다",
   "travelLicenceExpiresBeforeLeaving": "출발하기 전에 운전면허가 만료됩니다",
   "travelTravellersCount": "{count, plural, =1{여행자 1명} other{여행자 {count}명}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}은(는) {date}에 만료됩니다. {days, plural, =1{출발 1일 전입니다} other{출발 {days}일 전입니다}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name}은(는) {date}에 만료됩니다. {days, plural, =1{출발 1일 전입니다} other{출발 {days}일 전입니다}}.",
+  "assistantVoiceReady": "듣기를 멈췄습니다"
 }

@@ -9,25 +9,39 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 /// Shown in place of the text field while the user speaks: what has been
 /// heard so far, a live sound wave that follows their voice, a timer, and
-/// Cancel, Done and Send.
+/// three buttons. Nothing happens until the user taps one: pauses do not
+/// end it and nothing is sent on its own.
+///
+/// Cancel (left) throws the words away. The tick (middle) confirms them:
+/// in Ask Vaultara that sends. Edit (right) puts them in the text field to
+/// fix first, and is hidden when [onEdit] is null.
 class AssistantVoicePanel extends StatelessWidget {
   final VoiceInput voice;
 
   /// Stops and throws away what was said in this session.
   final VoidCallback onCancel;
 
-  /// Stops and keeps the words in the text field to check or edit.
-  final VoidCallback onDone;
+  /// The tick: stops and uses the words.
+  final VoidCallback onConfirm;
 
-  /// Stops and sends straight away. Hidden when null.
-  final VoidCallback? onSend;
+  /// What the tick does, read out by screen readers.
+  final String confirmLabel;
+
+  /// When true the tick needs some words first, as sending nothing makes no
+  /// sense.
+  final bool confirmNeedsWords;
+
+  /// Stops and keeps the words in the text field to check or edit.
+  final VoidCallback? onEdit;
 
   const AssistantVoicePanel({
     super.key,
     required this.voice,
     required this.onCancel,
-    required this.onDone,
-    this.onSend,
+    required this.onConfirm,
+    required this.confirmLabel,
+    this.confirmNeedsWords = false,
+    this.onEdit,
   });
 
   @override
@@ -39,21 +53,32 @@ class AssistantVoicePanel extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            const _LiveDot(),
-            const SizedBox(width: 8),
-            Text(
-              loc.assistantListening,
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w700,
-                color: scheme.primary,
+        ValueListenableBuilder<bool>(
+          valueListenable: voice.recording,
+          builder: (context, recording, _) => Row(
+            children: [
+              if (recording) const _LiveDot(),
+              if (recording) const SizedBox(width: 8),
+              Flexible(
+                child: Text(
+                  recording ? loc.assistantListening : loc.assistantVoiceReady,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w700,
+                    color: scheme.primary,
+                  ),
+                ),
               ),
-            ),
-            const Spacer(),
-            const _Clock(limit: VoiceInput.maxLength),
-          ],
+              const Spacer(),
+              _Clock(
+                key: const ValueKey<String>('clock'),
+                limit: VoiceInput.maxLength,
+                running: voice.recording,
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 8),
         ValueListenableBuilder<String>(
@@ -67,7 +92,7 @@ class AssistantVoicePanel extends StatelessWidget {
                 child: Text(
                   empty ? loc.assistantVoiceHint : words,
                   key: ValueKey<bool>(empty),
-                  maxLines: 3,
+                  maxLines: 4,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontSize: empty ? 14 : 16,
@@ -98,30 +123,35 @@ class AssistantVoicePanel extends StatelessWidget {
                 ),
               ),
             ),
-            _DoneButton(
-              level: voice.level,
-              tooltip: loc.assistantVoiceDone,
-              onPressed: () {
-                HapticFeedback.lightImpact();
-                onDone();
-              },
+            ValueListenableBuilder<String>(
+              valueListenable: voice.words,
+              builder: (context, words, _) => _DoneButton(
+                level: voice.level,
+                tooltip: confirmLabel,
+                onPressed: confirmNeedsWords && words.trim().isEmpty
+                    ? null
+                    : () {
+                        HapticFeedback.lightImpact();
+                        onConfirm();
+                      },
+              ),
             ),
             Expanded(
               child: Align(
                 alignment: AlignmentDirectional.centerEnd,
-                child: onSend == null
+                child: onEdit == null
                     ? const SizedBox.shrink()
                     : ValueListenableBuilder<String>(
                         valueListenable: voice.words,
-                        builder: (context, words, _) => FilledButton.icon(
+                        builder: (context, words, _) => TextButton.icon(
                           onPressed: words.trim().isEmpty
                               ? null
                               : () {
-                                  HapticFeedback.lightImpact();
-                                  onSend!();
+                                  HapticFeedback.selectionClick();
+                                  onEdit!();
                                 },
-                          icon: const Icon(Icons.arrow_upward_rounded, size: 18),
-                          label: Text(loc.assistantSend),
+                          icon: const Icon(Icons.edit_rounded, size: 18),
+                          label: Text(loc.edit),
                         ),
                       ),
               ),
@@ -172,7 +202,10 @@ class _LiveDotState extends State<_LiveDot>
 class _Clock extends StatefulWidget {
   final Duration limit;
 
-  const _Clock({required this.limit});
+  /// The clock stops when listening stops, so it shows how long was said.
+  final ValueListenable<bool> running;
+
+  const _Clock({super.key, required this.limit, required this.running});
 
   @override
   State<_Clock> createState() => _ClockState();
@@ -189,12 +222,18 @@ class _ClockState extends State<_Clock> with SingleTickerProviderStateMixin {
       if (elapsed.inSeconds != _elapsed.inSeconds) {
         setState(() => _elapsed = elapsed);
       }
-    })
-      ..start();
+    });
+    if (widget.running.value) _ticker.start();
+    widget.running.addListener(_onRunning);
+  }
+
+  void _onRunning() {
+    if (!widget.running.value && _ticker.isActive) _ticker.stop();
   }
 
   @override
   void dispose() {
+    widget.running.removeListener(_onRunning);
     _ticker.dispose();
     super.dispose();
   }
@@ -348,7 +387,7 @@ class _WavePainter extends CustomPainter {
 class _DoneButton extends StatelessWidget {
   final ValueListenable<double> level;
   final String tooltip;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   const _DoneButton({
     required this.level,
@@ -380,7 +419,10 @@ class _DoneButton extends StatelessWidget {
             child!,
           ],
         ),
-        child: Tooltip(
+        child: AnimatedOpacity(
+          duration: const Duration(milliseconds: 150),
+          opacity: onPressed == null ? 0.45 : 1,
+          child: Tooltip(
           message: tooltip,
           child: Material(
             color: Colors.transparent,
@@ -407,6 +449,7 @@ class _DoneButton extends StatelessWidget {
                 ),
               ),
             ),
+          ),
           ),
         ),
       ),

@@ -9104,4 +9104,7 @@ class AppLocalizationsKa extends AppLocalizations {
     );
     return '$name-ს ვადა იწურება $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'მოსმენა შეჩერდა';
 }

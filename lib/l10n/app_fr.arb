@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "L'assurance voyage prend fin avant votre départ",
   "travelLicenceExpiresBeforeLeaving": "Le permis de conduire expire avant votre départ",
   "travelTravellersCount": "{count, plural, =1{1 voyageur} other{{count} voyageurs}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} expire le {date}, {days, plural, =1{1 jour avant votre départ} other{{days} jours avant votre départ}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} expire le {date}, {days, plural, =1{1 jour avant votre départ} other{{days} jours avant votre départ}}.",
+  "assistantVoiceReady": "Écoute terminée"
 }

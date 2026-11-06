@@ -326,7 +326,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   Future<void> _send(String text, {String? prompt}) async {
     final trimmed = text.trim();
     if (trimmed.isEmpty || _busy || _loadingChat) return;
-    if (_voice.listening.value) await _voice.stop();
+    if (_voice.open.value) await _voice.finish();
     if (!mounted) return;
 
     final message = AssistantMessage(
@@ -461,10 +461,18 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     );
   }
 
+  /// The tick: the only way spoken words are sent.
   Future<void> _sendVoice() async {
-    await _voice.stop();
+    await _voice.finish();
     if (!mounted) return;
     if (_input.text.trim().isNotEmpty) _send(_input.text);
+  }
+
+  /// Puts the spoken words in the text field to fix before sending.
+  Future<void> _editVoice() async {
+    await _voice.finish();
+    if (!mounted) return;
+    _focus.requestFocus();
   }
 
   void _onVoiceProblem() {
@@ -481,8 +489,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   }
 
   Future<void> _toggleMic() async {
-    if (_voice.listening.value) {
-      await _voice.stop();
+    if (_voice.open.value) {
+      await _voice.finish();
       return;
     }
     final loc = AppLocalizations.of(context)!;
@@ -734,7 +742,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   void _newChat() {
     if (_busy) return;
-    _voice.stop();
+    _voice.cancel();
     setState(() {
       _messages.clear();
       _input.clear();
@@ -772,7 +780,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   Future<void> _loadChat(String chatId, {bool quiet = false}) async {
     final loc = AppLocalizations.of(context)!;
-    _voice.stop();
+    _voice.cancel();
     setState(() {
       _loadingChat = true;
       _messages.clear();
@@ -885,7 +893,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                   border: Border(top: BorderSide(color: scheme.outlineVariant)),
                 ),
                 child: ValueListenableBuilder<bool>(
-                  valueListenable: _voice.listening,
+                  valueListenable: _voice.open,
                   builder: (context, listening, _) => AnimatedSize(
                     duration: const Duration(milliseconds: 220),
                     curve: Curves.easeOutCubic,
@@ -899,10 +907,10 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                               key: const ValueKey<String>('voice'),
                               voice: _voice,
                               onCancel: _cancelVoice,
-                              onDone: () {
-                                _voice.stop();
-                              },
-                              onSend: _sendVoice,
+                              onConfirm: _sendVoice,
+                              confirmLabel: loc.assistantSend,
+                              confirmNeedsWords: true,
+                              onEdit: _editVoice,
                             )
                           : AssistantInputBar(
                               key: const ValueKey<String>('text'),

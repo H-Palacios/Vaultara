@@ -9104,4 +9104,7 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$name በ$date ያበቃል፣ $_temp0።';
   }
+
+  @override
+  String get assistantVoiceReady => 'ማዳመጥ ቆሟል';
 }

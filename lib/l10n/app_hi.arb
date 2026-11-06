@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "यात्रा बीमा आपकी रवानगी से पहले खत्म हो रहा है",
   "travelLicenceExpiresBeforeLeaving": "ड्राइविंग लाइसेंस आपकी रवानगी से पहले समाप्त हो रहा है",
   "travelTravellersCount": "{count, plural, =1{1 यात्री} other{{count} यात्री}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} को समाप्त हो रहा है, {days, plural, =1{आपके जाने से 1 दिन पहले} other{आपके जाने से {days} दिन पहले}}।"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} को समाप्त हो रहा है, {days, plural, =1{आपके जाने से 1 दिन पहले} other{आपके जाने से {days} दिन पहले}}।",
+  "assistantVoiceReady": "सुनना बंद हुआ"
 }

@@ -9261,4 +9261,7 @@ class AppLocalizationsSk extends AppLocalizations {
     );
     return 'Platnosť $name vyprší $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Počúvanie sa skončilo';
 }

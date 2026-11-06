@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "بیمه مسافرتی پیش از سفر تمام می‌شود",
   "travelLicenceExpiresBeforeLeaving": "گواهینامه رانندگی پیش از سفر منقضی می‌شود",
   "travelTravellersCount": "{count, plural, =1{۱ مسافر} other{{count} مسافر}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} در {date} منقضی می‌شود، {days, plural, =1{۱ روز پیش از حرکت شما} other{{days} روز پیش از حرکت شما}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} در {date} منقضی می‌شود، {days, plural, =1{۱ روز پیش از حرکت شما} other{{days} روز پیش از حرکت شما}}.",
+  "assistantVoiceReady": "شنیدن متوقف شد"
 }

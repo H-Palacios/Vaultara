@@ -9165,4 +9165,7 @@ class AppLocalizationsHe extends AppLocalizations {
     );
     return 'התוקף של $name פג ב־$date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'ההאזנה הופסקה';
 }

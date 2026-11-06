@@ -9174,4 +9174,7 @@ class AppLocalizationsLv extends AppLocalizations {
     );
     return '$name termiņš beidzas $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Klausīšanās apturēta';
 }

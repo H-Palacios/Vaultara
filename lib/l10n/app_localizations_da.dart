@@ -9109,4 +9109,7 @@ class AppLocalizationsDa extends AppLocalizations {
     );
     return '$name udløber $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Lytter ikke længere';
 }

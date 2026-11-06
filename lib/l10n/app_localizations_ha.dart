@@ -9104,4 +9104,7 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$name zai ƙare a $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'An daina saurara';
 }

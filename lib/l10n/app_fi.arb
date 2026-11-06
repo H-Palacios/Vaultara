@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Matkavakuutus päättyy ennen lähtöäsi",
   "travelLicenceExpiresBeforeLeaving": "Ajokortti vanhenee ennen lähtöäsi",
   "travelTravellersCount": "{count, plural, =1{1 matkustaja} other{{count} matkustajaa}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} vanhenee {date}, {days, plural, =1{1 päivä ennen lähtöäsi} other{{days} päivää ennen lähtöäsi}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} vanhenee {date}, {days, plural, =1{1 päivä ennen lähtöäsi} other{{days} päivää ennen lähtöäsi}}.",
+  "assistantVoiceReady": "Kuuntelu päättyi"
 }

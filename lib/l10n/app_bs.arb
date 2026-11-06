@@ -3478,5 +3478,6 @@
   "travelInsuranceEndsBeforeLeaving": "Putno osiguranje ističe prije polaska",
   "travelLicenceExpiresBeforeLeaving": "Vozačka dozvola ističe prije polaska",
   "travelTravellersCount": "{count, plural, =1{1 putnik} few{{count} putnika} other{{count} putnika}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} ističe {date}, {days, plural, =1{1 dan prije polaska} few{{days} dana prije polaska} other{{days} dana prije polaska}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ističe {date}, {days, plural, =1{1 dan prije polaska} few{{days} dana prije polaska} other{{days} dana prije polaska}}.",
+  "assistantVoiceReady": "Slušanje je zaustavljeno"
 }

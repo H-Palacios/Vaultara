@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Caymiska safarku wuu dhammaanayaa ka hor intaadan bixin",
   "travelLicenceExpiresBeforeLeaving": "Ruqsadda wadistu way dhacaysaa ka hor intaadan bixin",
   "travelTravellersCount": "{count, plural, =1{1 socotore} other{{count} socotore}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} wuu dhacayaa {date}, {days, plural, =1{1 maalin ka hor intaadan bixin} other{{days} maalmood ka hor intaadan bixin}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} wuu dhacayaa {date}, {days, plural, =1{1 maalin ka hor intaadan bixin} other{{days} maalmood ka hor intaadan bixin}}.",
+  "assistantVoiceReady": "Dhegaysiga waa la joojiyay"
 }

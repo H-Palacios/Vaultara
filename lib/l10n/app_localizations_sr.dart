@@ -9187,6 +9187,9 @@ class AppLocalizationsSr extends AppLocalizations {
     );
     return '$name истиче $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слушање је заустављено';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -18371,6 +18374,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
     );
     return '$name истиче $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слушање је заустављено';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -27551,4 +27557,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
     );
     return '$name ističe $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Slušanje je zaustavljeno';
 }

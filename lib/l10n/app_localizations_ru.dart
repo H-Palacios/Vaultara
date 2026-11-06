@@ -9283,4 +9283,7 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return 'Срок «$name» истекает $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слушание остановлено';
 }

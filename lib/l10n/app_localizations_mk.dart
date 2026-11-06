@@ -9103,4 +9103,7 @@ class AppLocalizationsMk extends AppLocalizations {
     );
     return '$name истекува на $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слушањето запре';
 }

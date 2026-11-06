@@ -9104,4 +9104,7 @@ class AppLocalizationsBn extends AppLocalizations {
     );
     return '$name-এর মেয়াদ $date তারিখে শেষ, $_temp0।';
   }
+
+  @override
+  String get assistantVoiceReady => 'শোনা বন্ধ হয়েছে';
 }

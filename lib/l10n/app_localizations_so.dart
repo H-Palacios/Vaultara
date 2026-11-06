@@ -9103,4 +9103,7 @@ class AppLocalizationsSo extends AppLocalizations {
     );
     return '$name wuu dhacayaa $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Dhegaysiga waa la joojiyay';
 }

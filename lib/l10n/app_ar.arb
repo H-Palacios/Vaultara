@@ -3485,5 +3485,6 @@
   "travelInsuranceEndsBeforeLeaving": "ينتهي تأمين السفر قبل سفرك",
   "travelLicenceExpiresBeforeLeaving": "تنتهي صلاحية رخصة القيادة قبل سفرك",
   "travelTravellersCount": "{count, plural, =1{مسافر واحد} =2{مسافران} few{{count} مسافرين} many{{count} مسافرًا} other{{count} مسافر}}",
-  "travelDetailExpiresDaysBeforeLeaving": "تنتهي صلاحية {name} في {date}، {days, plural, =1{قبل مغادرتك بيوم واحد} =2{قبل مغادرتك بيومين} few{قبل مغادرتك بـ{days} أيام} many{قبل مغادرتك بـ{days} يومًا} other{قبل مغادرتك بـ{days} يوم}}."
+  "travelDetailExpiresDaysBeforeLeaving": "تنتهي صلاحية {name} في {date}، {days, plural, =1{قبل مغادرتك بيوم واحد} =2{قبل مغادرتك بيومين} few{قبل مغادرتك بـ{days} أيام} many{قبل مغادرتك بـ{days} يومًا} other{قبل مغادرتك بـ{days} يوم}}.",
+  "assistantVoiceReady": "توقف الاستماع"
 }

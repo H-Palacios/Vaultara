@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "तुम्ही निघण्यापूर्वी प्रवास विमा संपतो",
   "travelLicenceExpiresBeforeLeaving": "तुम्ही निघण्यापूर्वी ड्रायव्हिंग लायसन्सची मुदत संपते",
   "travelTravellersCount": "{count, plural, =1{1 प्रवासी} other{{count} प्रवासी}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} ची मुदत {date} रोजी संपते, {days, plural, =1{तुम्ही निघण्याच्या 1 दिवस आधी} other{तुम्ही निघण्याच्या {days} दिवस आधी}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ची मुदत {date} रोजी संपते, {days, plural, =1{तुम्ही निघण्याच्या 1 दिवस आधी} other{तुम्ही निघण्याच्या {days} दिवस आधी}}.",
+  "assistantVoiceReady": "ऐकणे थांबले"
 }

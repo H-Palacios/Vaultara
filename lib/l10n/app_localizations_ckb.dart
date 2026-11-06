@@ -9104,4 +9104,7 @@ class AppLocalizationsCkb extends AppLocalizations {
     );
     return '$name لە $date بەسەردەچێت، $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'گوێگرتن وەستا';
 }

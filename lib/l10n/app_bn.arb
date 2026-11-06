@@ -3478,5 +3478,6 @@
   "travelInsuranceEndsBeforeLeaving": "যাত্রার আগেই ভ্রমণ বীমা শেষ হচ্ছে",
   "travelLicenceExpiresBeforeLeaving": "যাত্রার আগেই ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হচ্ছে",
   "travelTravellersCount": "{count, plural, =1{১ জন যাত্রী} other{{count} জন যাত্রী}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}-এর মেয়াদ {date} তারিখে শেষ, {days, plural, =1{আপনার যাত্রার ১ দিন আগে} other{আপনার যাত্রার {days} দিন আগে}}।"
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-এর মেয়াদ {date} তারিখে শেষ, {days, plural, =1{আপনার যাত্রার ১ দিন আগে} other{আপনার যাত্রার {days} দিন আগে}}।",
+  "assistantVoiceReady": "শোনা বন্ধ হয়েছে"
 }

@@ -9104,4 +9104,7 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$name-ի ժամկետը լրանում է $date-ին՝ $_temp0։';
   }
+
+  @override
+  String get assistantVoiceReady => 'Լսելը դադարեց';
 }

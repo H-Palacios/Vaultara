@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Явахаас өмнө аяллын даатгал дуусна",
   "travelLicenceExpiresBeforeLeaving": "Явахаас өмнө жолооны үнэмлэхний хугацаа дуусна",
   "travelTravellersCount": "{count, plural, =1{1 аялагч} other{{count} аялагч}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}-ийн хугацаа {date} өдөр дуусна, {days, plural, =1{таныг явахаас 1 хоногийн өмнө} other{таныг явахаас {days} хоногийн өмнө}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ийн хугацаа {date} өдөр дуусна, {days, plural, =1{таныг явахаас 1 хоногийн өмнө} other{таныг явахаас {days} хоногийн өмнө}}.",
+  "assistantVoiceReady": "Сонсохоо зогсоосон"
 }

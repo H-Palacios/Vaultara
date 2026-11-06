@@ -3452,5 +3452,6 @@
   "travelInsuranceEndsBeforeLeaving": "L'assicurazione di viaggio finisce prima della partenza",
   "travelLicenceExpiresBeforeLeaving": "La patente scade prima della partenza",
   "travelTravellersCount": "{count, plural, =1{1 viaggiatore} other{{count} viaggiatori}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} scade il {date}, {days, plural, =1{1 giorno prima della partenza} other{{days} giorni prima della partenza}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} scade il {date}, {days, plural, =1{1 giorno prima della partenza} other{{days} giorni prima della partenza}}.",
+  "assistantVoiceReady": "Ascolto terminato"
 }

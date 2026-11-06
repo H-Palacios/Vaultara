@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Kelionių draudimas baigiasi prieš išvykimą",
   "travelLicenceExpiresBeforeLeaving": "Vairuotojo pažymėjimo galiojimas baigiasi prieš išvykimą",
   "travelTravellersCount": "{count, plural, =1{1 keliautojas} few{{count} keliautojai} many{{count} keliautojo} other{{count} keliautojų}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} galiojimas baigiasi {date}, {days, plural, =1{likus 1 dienai iki išvykimo} few{likus {days} dienoms iki išvykimo} many{likus {days} dienos iki išvykimo} other{likus {days} dienų iki išvykimo}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} galiojimas baigiasi {date}, {days, plural, =1{likus 1 dienai iki išvykimo} few{likus {days} dienoms iki išvykimo} many{likus {days} dienos iki išvykimo} other{likus {days} dienų iki išvykimo}}.",
+  "assistantVoiceReady": "Klausymas sustabdytas"
 }

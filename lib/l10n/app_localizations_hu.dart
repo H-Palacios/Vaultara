@@ -9104,4 +9104,7 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return 'A(z) $name lejár: $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'A hallgatás leállt';
 }

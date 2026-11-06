@@ -9109,4 +9109,7 @@ class AppLocalizationsCa extends AppLocalizations {
     );
     return '$name caduca el $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Ja no escolto';
 }

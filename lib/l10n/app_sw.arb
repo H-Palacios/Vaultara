@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Bima ya safari inaisha kabla hujaondoka",
   "travelLicenceExpiresBeforeLeaving": "Leseni ya kuendesha inaisha muda kabla hujaondoka",
   "travelTravellersCount": "{count, plural, =1{Msafiri 1} other{Wasafiri {count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} inaisha muda {date}, {days, plural, =1{siku 1 kabla hujaondoka} other{siku {days} kabla hujaondoka}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} inaisha muda {date}, {days, plural, =1{siku 1 kabla hujaondoka} other{siku {days} kabla hujaondoka}}.",
+  "assistantVoiceReady": "Kusikiliza kumesimama"
 }

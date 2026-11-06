@@ -9105,4 +9105,7 @@ class AppLocalizationsBg extends AppLocalizations {
     );
     return '„$name“ изтича на $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слушането спря';
 }

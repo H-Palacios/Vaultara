@@ -3478,5 +3478,6 @@
   "travelInsuranceEndsBeforeLeaving": "L'assegurança de viatge acaba abans que marxis",
   "travelLicenceExpiresBeforeLeaving": "El permís de conduir caduca abans que marxis",
   "travelTravellersCount": "{count, plural, =1{1 viatger} other{{count} viatgers}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} caduca el {date}, {days, plural, =1{1 dia abans que marxis} other{{days} dies abans que marxis}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} caduca el {date}, {days, plural, =1{1 dia abans que marxis} other{{days} dies abans que marxis}}.",
+  "assistantVoiceReady": "Ja no escolto"
 }

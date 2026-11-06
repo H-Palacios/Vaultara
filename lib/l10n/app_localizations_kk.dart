@@ -9104,4 +9104,7 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$name мерзімі $date бітеді, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Тыңдау тоқтады';
 }

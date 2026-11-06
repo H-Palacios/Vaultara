@@ -9104,4 +9104,7 @@ class AppLocalizationsZu extends AppLocalizations {
     );
     return 'I-$name iphelelwa ngo-$date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Kumisiwe ukulalela';
 }

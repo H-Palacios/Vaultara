@@ -3464,5 +3464,6 @@
   "travelInsuranceEndsBeforeLeaving": "Туристичне страхування закінчується до вашого від'їзду",
   "travelLicenceExpiresBeforeLeaving": "Водійське посвідчення закінчується до вашого від'їзду",
   "travelTravellersCount": "{count, plural, =1{1 мандрівник} few{{count} мандрівники} many{{count} мандрівників} other{{count} мандрівника}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Термін дії {name} закінчується {date}, {days, plural, =1{за 1 день до від'їзду} few{за {days} дні до від'їзду} many{за {days} днів до від'їзду} other{за {days} дня до від'їзду}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Термін дії {name} закінчується {date}, {days, plural, =1{за 1 день до від'їзду} few{за {days} дні до від'їзду} many{за {days} днів до від'їзду} other{за {days} дня до від'їзду}}.",
+  "assistantVoiceReady": "Слухання зупинено"
 }

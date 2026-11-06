@@ -9042,4 +9042,7 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$name은(는) $date에 만료됩니다. $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => '듣기를 멈췄습니다';
 }

@@ -3461,5 +3461,6 @@
   "travelInsuranceEndsBeforeLeaving": "Ճամփորդական ապահովագրությունն ավարտվում է մեկնելուց առաջ",
   "travelLicenceExpiresBeforeLeaving": "Վարորդական իրավունքի ժամկետը լրանում է մեկնելուց առաջ",
   "travelTravellersCount": "{count, plural, =1{1 ճանապարհորդ} other{{count} ճանապարհորդ}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}-ի ժամկետը լրանում է {date}-ին՝ {days, plural, =1{մեկնելուց 1 օր առաջ} other{մեկնելուց {days} օր առաջ}}։"
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ի ժամկետը լրանում է {date}-ին՝ {days, plural, =1{մեկնելուց 1 օր առաջ} other{մեկնելուց {days} օր առաջ}}։",
+  "assistantVoiceReady": "Լսելը դադարեց"
 }

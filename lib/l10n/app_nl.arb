@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reisverzekering eindigt voor je vertrek",
   "travelLicenceExpiresBeforeLeaving": "Rijbewijs verloopt voor je vertrek",
   "travelTravellersCount": "{count, plural, =1{1 reiziger} other{{count} reizigers}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} verloopt op {date}, {days, plural, =1{1 dag voor je vertrek} other{{days} dagen voor je vertrek}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} verloopt op {date}, {days, plural, =1{1 dag voor je vertrek} other{{days} dagen voor je vertrek}}.",
+  "assistantVoiceReady": "Luisteren gestopt"
 }

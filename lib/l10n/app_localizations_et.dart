@@ -9109,4 +9109,7 @@ class AppLocalizationsEt extends AppLocalizations {
     );
     return '$name aegub $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Kuulamine lõppes';
 }

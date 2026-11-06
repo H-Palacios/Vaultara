@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "Sayohat sugʻurtasi jo‘nashingizdan oldin tugaydi",
   "travelLicenceExpiresBeforeLeaving": "Haydovchilik guvohnomasi muddati jo‘nashingizdan oldin tugaydi",
   "travelTravellersCount": "{count, plural, =1{1 sayohatchi} other{{count} sayohatchi}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} muddati {date} kuni tugaydi, {days, plural, =1{joʻnashingizdan 1 kun oldin} other{joʻnashingizdan {days} kun oldin}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} muddati {date} kuni tugaydi, {days, plural, =1{joʻnashingizdan 1 kun oldin} other{joʻnashingizdan {days} kun oldin}}.",
+  "assistantVoiceReady": "Tinglash to‘xtadi"
 }

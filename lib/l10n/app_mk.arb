@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Патничкото осигурување завршува пред да заминете",
   "travelLicenceExpiresBeforeLeaving": "Возачката дозвола истекува пред да заминете",
   "travelTravellersCount": "{count, plural, =1{1 патник} other{{count} патници}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} истекува на {date}, {days, plural, =1{1 ден пред да заминете} other{{days} дена пред да заминете}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} истекува на {date}, {days, plural, =1{1 ден пред да заминете} other{{days} дена пред да заминете}}.",
+  "assistantVoiceReady": "Слушањето запре"
 }

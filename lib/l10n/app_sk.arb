@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Cestovné poistenie skončí pred odchodom",
   "travelLicenceExpiresBeforeLeaving": "Platnosť vodičského preukazu vyprší pred odchodom",
   "travelTravellersCount": "{count, plural, =1{1 cestujúci} few{{count} cestujúci} many{{count} cestujúcich} other{{count} cestujúcich}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Platnosť {name} vyprší {date}, {days, plural, =1{1 deň pred odchodom} few{{days} dni pred odchodom} many{{days} dňa pred odchodom} other{{days} dní pred odchodom}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Platnosť {name} vyprší {date}, {days, plural, =1{1 deň pred odchodom} few{{days} dni pred odchodom} many{{days} dňa pred odchodom} other{{days} dní pred odchodom}}.",
+  "assistantVoiceReady": "Počúvanie sa skončilo"
 }

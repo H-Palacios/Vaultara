@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "Inshorar tafiya za ta ƙare kafin ka tafi",
   "travelLicenceExpiresBeforeLeaving": "Lasin tuƙi zai ƙare kafin ka tafi",
   "travelTravellersCount": "{count, plural, =1{Matafiyi 1} other{Matafiya {count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} zai ƙare a {date}, {days, plural, =1{kwana 1 kafin ka tashi} other{kwanaki {days} kafin ka tashi}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} zai ƙare a {date}, {days, plural, =1{kwana 1 kafin ka tashi} other{kwanaki {days} kafin ka tashi}}.",
+  "assistantVoiceReady": "An daina saurara"
 }

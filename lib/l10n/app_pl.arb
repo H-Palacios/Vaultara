@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Ubezpieczenie podróżne kończy się przed wyjazdem",
   "travelLicenceExpiresBeforeLeaving": "Prawo jazdy wygasa przed wyjazdem",
   "travelTravellersCount": "{count, plural, =1{1 podróżny} few{{count} podróżnych} many{{count} podróżnych} other{{count} podróżnych}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} wygasa {date}, {days, plural, =1{1 dzień przed wyjazdem} few{{days} dni przed wyjazdem} many{{days} dni przed wyjazdem} other{{days} dnia przed wyjazdem}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} wygasa {date}, {days, plural, =1{1 dzień przed wyjazdem} few{{days} dni przed wyjazdem} many{{days} dni przed wyjazdem} other{{days} dnia przed wyjazdem}}.",
+  "assistantVoiceReady": "Słuchanie zatrzymane"
 }

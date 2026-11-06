@@ -3454,5 +3454,6 @@
   "travelInsuranceEndsBeforeLeaving": "Η ταξιδιωτική ασφάλιση λήγει πριν φύγετε",
   "travelLicenceExpiresBeforeLeaving": "Το δίπλωμα οδήγησης λήγει πριν φύγετε",
   "travelTravellersCount": "{count, plural, =1{1 ταξιδιώτης} other{{count} ταξιδιώτες}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Το στοιχείο {name} λήγει στις {date}, {days, plural, =1{1 ημέρα πριν φύγετε} other{{days} ημέρες πριν φύγετε}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Το στοιχείο {name} λήγει στις {date}, {days, plural, =1{1 ημέρα πριν φύγετε} other{{days} ημέρες πριν φύγετε}}.",
+  "assistantVoiceReady": "Η ακρόαση σταμάτησε"
 }

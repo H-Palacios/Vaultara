@@ -3464,5 +3464,6 @@
   "travelInsuranceEndsBeforeLeaving": "మీరు బయలుదేరేలోపు ప్రయాణ బీమా ముగుస్తుంది",
   "travelLicenceExpiresBeforeLeaving": "మీరు బయలుదేరేలోపు డ్రైవింగ్ లైసెన్స్ గడువు ముగుస్తుంది",
   "travelTravellersCount": "{count, plural, =1{1 ప్రయాణికుడు} other{{count} ప్రయాణికులు}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} గడువు {date}న ముగుస్తుంది, {days, plural, =1{మీరు బయలుదేరడానికి 1 రోజు ముందు} other{మీరు బయలుదేరడానికి {days} రోజుల ముందు}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} గడువు {date}న ముగుస్తుంది, {days, plural, =1{మీరు బయలుదేరడానికి 1 రోజు ముందు} other{మీరు బయలుదేరడానికి {days} రోజుల ముందు}}.",
+  "assistantVoiceReady": "వినడం ఆగిపోయింది"
 }

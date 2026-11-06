@@ -9104,4 +9104,7 @@ class AppLocalizationsHi extends AppLocalizations {
     );
     return '$name $date को समाप्त हो रहा है, $_temp0।';
   }
+
+  @override
+  String get assistantVoiceReady => 'सुनना बंद हुआ';
 }

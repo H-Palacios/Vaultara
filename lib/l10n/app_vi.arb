@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Bảo hiểm du lịch kết thúc trước khi bạn khởi hành",
   "travelLicenceExpiresBeforeLeaving": "Bằng lái xe hết hạn trước khi bạn khởi hành",
   "travelTravellersCount": "{count, plural, =1{1 người đi} other{{count} người đi}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} hết hạn vào {date}, {days, plural, =1{1 ngày trước khi bạn đi} other{{days} ngày trước khi bạn đi}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} hết hạn vào {date}, {days, plural, =1{1 ngày trước khi bạn đi} other{{days} ngày trước khi bạn đi}}.",
+  "assistantVoiceReady": "Đã dừng nghe"
 }

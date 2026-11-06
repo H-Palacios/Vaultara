@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Ìdánilójú ìrìn àjò ń parí kí o tó lọ",
   "travelLicenceExpiresBeforeLeaving": "Ìwé-aṣẹ awakọ̀ ń parí kí o tó lọ",
   "travelTravellersCount": "{count, plural, =1{Arìnrìn-àjò 1} other{Arìnrìn-àjò {count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} ń parí ní {date}, {days, plural, =1{ọjọ́ 1 kí o tó lọ} other{ọjọ́ {days} kí o tó lọ}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ń parí ní {date}, {days, plural, =1{ọjọ́ 1 kí o tó lọ} other{ọjọ́ {days} kí o tó lọ}}.",
+  "assistantVoiceReady": "Mo ti dẹ́kun gbígbọ́"
 }

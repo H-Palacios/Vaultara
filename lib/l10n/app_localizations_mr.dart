@@ -9104,4 +9104,7 @@ class AppLocalizationsMr extends AppLocalizations {
     );
     return '$name ची मुदत $date रोजी संपते, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'ऐकणे थांबले';
 }

@@ -9040,4 +9040,7 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$name သည် $date တွင် သက်တမ်းကုန်မည်၊ $_temp0။';
   }
+
+  @override
+  String get assistantVoiceReady => 'နားထောင်ခြင်း ရပ်ပြီ';
 }

@@ -3478,5 +3478,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reiseversicherung endet vor deiner Abreise",
   "travelLicenceExpiresBeforeLeaving": "Führerschein läuft vor deiner Abreise ab",
   "travelTravellersCount": "{count, plural, =1{1 Reisender} other{{count} Reisende}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} läuft am {date} ab, {days, plural, =1{1 Tag vor deiner Abreise} other{{days} Tage vor deiner Abreise}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} läuft am {date} ab, {days, plural, =1{1 Tag vor deiner Abreise} other{{days} Tage vor deiner Abreise}}.",
+  "assistantVoiceReady": "Zuhören beendet"
 }

@@ -15486,6 +15486,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{name} expires {date}, {days, plural, =1{1 day before you leave} other{{days} days before you leave}}.'**
   String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days);
+
+  /// Voice panel heading after listening stopped at the time limit; the words wait for the user to tap the tick, Edit or Cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Stopped listening'**
+  String get assistantVoiceReady;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

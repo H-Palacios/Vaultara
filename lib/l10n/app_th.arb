@@ -3464,5 +3464,6 @@
   "travelInsuranceEndsBeforeLeaving": "ประกันการเดินทางสิ้นสุดก่อนคุณออกเดินทาง",
   "travelLicenceExpiresBeforeLeaving": "ใบขับขี่หมดอายุก่อนคุณออกเดินทาง",
   "travelTravellersCount": "{count, plural, =1{ผู้เดินทาง 1 คน} other{ผู้เดินทาง {count} คน}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} หมดอายุ {date} {days, plural, =1{1 วันก่อนคุณออกเดินทาง} other{{days} วันก่อนคุณออกเดินทาง}}"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} หมดอายุ {date} {days, plural, =1{1 วันก่อนคุณออกเดินทาง} other{{days} วันก่อนคุณออกเดินทาง}}",
+  "assistantVoiceReady": "หยุดฟังแล้ว"
 }

@@ -9104,4 +9104,7 @@ class AppLocalizationsUz extends AppLocalizations {
     );
     return '$name muddati $date kuni tugaydi, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Tinglash to‘xtadi';
 }

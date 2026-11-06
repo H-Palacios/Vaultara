@@ -9104,4 +9104,7 @@ class AppLocalizationsTr extends AppLocalizations {
     );
     return '$name süresi $date tarihinde, $_temp0 doluyor.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Dinleme durdu';
 }

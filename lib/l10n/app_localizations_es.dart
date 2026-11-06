@@ -9133,4 +9133,7 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$name vence el $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Ya no escucho';
 }

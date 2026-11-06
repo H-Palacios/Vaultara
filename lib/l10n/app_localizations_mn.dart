@@ -9094,4 +9094,7 @@ class AppLocalizationsMn extends AppLocalizations {
     );
     return '$name-ийн хугацаа $date өдөр дуусна, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Сонсохоо зогсоосон';
 }

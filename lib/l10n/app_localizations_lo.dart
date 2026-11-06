@@ -9042,4 +9042,7 @@ class AppLocalizationsLo extends AppLocalizations {
     );
     return '$name ໝົດອາຍຸ $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'ຢຸດຟັງແລ້ວ';
 }

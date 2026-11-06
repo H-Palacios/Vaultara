@@ -9030,4 +9030,7 @@ class AppLocalizationsJa extends AppLocalizations {
     );
     return '$nameの有効期限は$dateで、$_temp0です。';
   }
+
+  @override
+  String get assistantVoiceReady => '聞き取りを停止しました';
 }

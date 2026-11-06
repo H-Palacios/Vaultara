@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Az utasbiztosítás véget ér, mielőtt elindul",
   "travelLicenceExpiresBeforeLeaving": "A jogosítvány lejár, mielőtt elindul",
   "travelTravellersCount": "{count, plural, =1{1 utazó} other{{count} utazó}}",
-  "travelDetailExpiresDaysBeforeLeaving": "A(z) {name} lejár: {date}, {days, plural, =1{1 nappal az indulás előtt} other{{days} nappal az indulás előtt}}."
+  "travelDetailExpiresDaysBeforeLeaving": "A(z) {name} lejár: {date}, {days, plural, =1{1 nappal az indulás előtt} other{{days} nappal az indulás előtt}}.",
+  "assistantVoiceReady": "A hallgatás leállt"
 }

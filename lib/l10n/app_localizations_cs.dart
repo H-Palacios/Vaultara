@@ -9263,4 +9263,7 @@ class AppLocalizationsCs extends AppLocalizations {
     );
     return 'Platnost položky $name vyprší $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Poslech skončil';
 }

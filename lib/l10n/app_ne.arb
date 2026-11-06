@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "तपाईं जानुअघि यात्रा बीमा सकिन्छ",
   "travelLicenceExpiresBeforeLeaving": "तपाईं जानुअघि सवारी चालक अनुमति पत्रको म्याद सकिन्छ",
   "travelTravellersCount": "{count, plural, =1{1 यात्री} other{{count} यात्री}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =1{तपाईं जानुभन्दा 1 दिनअघि} other{तपाईं जानुभन्दा {days} दिनअघि}}।"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =1{तपाईं जानुभन्दा 1 दिनअघि} other{तपाईं जानुभन्दा {days} दिनअघि}}।",
+  "assistantVoiceReady": "सुन्न रोकियो"
 }

@@ -62,8 +62,8 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
   }
 
   Future<void> _toggleMic() async {
-    if (_voice.listening.value) {
-      await _voice.stop();
+    if (_voice.open.value) {
+      await _voice.finish();
       return;
     }
     HapticFeedback.mediumImpact();
@@ -106,7 +106,7 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
   Future<void> _submit() async {
     final text = _controller.text.trim();
     if (text.isEmpty || _busy) return;
-    if (_voice.listening.value) await _voice.stop();
+    if (_voice.open.value) await _voice.finish();
     if (!mounted) return;
     final loc = AppLocalizations.of(context)!;
     FocusScope.of(context).unfocus();
@@ -182,7 +182,7 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
           ),
           const SizedBox(height: 14),
           ValueListenableBuilder<bool>(
-            valueListenable: _voice.listening,
+            valueListenable: _voice.open,
             builder: (context, listening, _) => TextField(
               controller: _controller,
               autofocus: true,
@@ -214,7 +214,7 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
             ),
           ),
           ValueListenableBuilder<bool>(
-            valueListenable: _voice.listening,
+            valueListenable: _voice.open,
             builder: (context, listening, _) => AnimatedSize(
               duration: const Duration(milliseconds: 220),
               curve: Curves.easeOutCubic,
@@ -224,9 +224,10 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
                       child: AssistantVoicePanel(
                         voice: _voice,
                         onCancel: _cancelVoice,
-                        onDone: () {
-                          _voice.stop();
+                        onConfirm: () {
+                          _voice.finish();
                         },
+                        confirmLabel: loc.assistantVoiceDone,
                       ),
                     )
                   : const SizedBox(width: double.infinity),

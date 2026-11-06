@@ -3461,5 +3461,6 @@
   "travelInsuranceEndsBeforeLeaving": "Bidaia-asegurua irten aurretik amaitzen da",
   "travelLicenceExpiresBeforeLeaving": "Gidabaimena irten aurretik iraungitzen da",
   "travelTravellersCount": "{count, plural, =1{Bidaiari 1} other{{count} bidaiari}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}(e)an iraungitzen da, {days, plural, =1{joan baino egun 1 lehenago} other{joan baino {days} egun lehenago}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}(e)an iraungitzen da, {days, plural, =1{joan baino egun 1 lehenago} other{joan baino {days} egun lehenago}}.",
+  "assistantVoiceReady": "Entzuteari utzi diot"
 }

@@ -3452,5 +3452,6 @@
   "travelInsuranceEndsBeforeLeaving": "Ferðatryggingin rennur út áður en þú leggur af stað",
   "travelLicenceExpiresBeforeLeaving": "Ökuskírteinið rennur út áður en þú leggur af stað",
   "travelTravellersCount": "{count, plural, =1{1 ferðalangur} other{{count} ferðalangar}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} rennur út {date}, {days, plural, =1{1 degi áður en þú leggur af stað} other{{days} dögum áður en þú leggur af stað}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} rennur út {date}, {days, plural, =1{1 degi áður en þú leggur af stað} other{{days} dögum áður en þú leggur af stað}}.",
+  "assistantVoiceReady": "Hlustun lokið"
 }

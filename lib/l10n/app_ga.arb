@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "Críochnaíonn an t-árachas taistil sula n-imeoidh tú",
   "travelLicenceExpiresBeforeLeaving": "Éagann an ceadúnas tiomána sula n-imeoidh tú",
   "travelTravellersCount": "{count, plural, =1{1 taistealaí} other{{count} taistealaí}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Éagann {name} ar {date}, {days, plural, =1{lá amháin sula n-imíonn tú} other{{days} lá sula n-imíonn tú}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Éagann {name} ar {date}, {days, plural, =1{lá amháin sula n-imíonn tú} other{{days} lá sula n-imíonn tú}}.",
+  "assistantVoiceReady": "Stopadh ag éisteacht"
 }

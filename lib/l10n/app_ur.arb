@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "سفری انشورنس روانگی سے پہلے ختم ہو رہی ہے",
   "travelLicenceExpiresBeforeLeaving": "ڈرائیونگ لائسنس روانگی سے پہلے ختم ہو رہا ہے",
   "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} کی میعاد {date} کو ختم ہو رہی ہے، {days, plural, =1{آپ کی روانگی سے 1 دن پہلے} other{آپ کی روانگی سے {days} دن پہلے}}۔"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} کی میعاد {date} کو ختم ہو رہی ہے، {days, plural, =1{آپ کی روانگی سے 1 دن پہلے} other{آپ کی روانگی سے {days} دن پہلے}}۔",
+  "assistantVoiceReady": "سننا رک گیا"
 }

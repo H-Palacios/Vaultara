@@ -9104,4 +9104,7 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$name په $date پای ته رسېږي، $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'اورېدل ودرېدل';
 }

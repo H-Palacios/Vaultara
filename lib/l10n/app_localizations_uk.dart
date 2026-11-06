@@ -9277,4 +9277,7 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return 'Термін дії $name закінчується $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Слухання зупинено';
 }

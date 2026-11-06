@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "ನೀವು ಹೊರಡುವ ಮೊದಲು ಪ್ರಯಾಣ ವಿಮೆ ಮುಗಿಯುತ್ತದೆ",
   "travelLicenceExpiresBeforeLeaving": "ನೀವು ಹೊರಡುವ ಮೊದಲು ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ",
   "travelTravellersCount": "{count, plural, =1{1 ಪ್ರಯಾಣಿಕ} other{{count} ಪ್ರಯಾಣಿಕರು}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, {days, plural, =1{ನೀವು ಹೊರಡುವ 1 ದಿನ ಮೊದಲು} other{ನೀವು ಹೊರಡುವ {days} ದಿನ ಮೊದಲು}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, {days, plural, =1{ನೀವು ಹೊರಡುವ 1 ದಿನ ಮೊದಲು} other{ನೀವು ಹೊರಡುವ {days} ದಿನ ಮೊದಲು}}.",
+  "assistantVoiceReady": "ಆಲಿಸುವುದು ನಿಂತಿದೆ"
 }

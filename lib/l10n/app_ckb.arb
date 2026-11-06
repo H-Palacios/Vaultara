@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "بیمەی گەشت پێش ڕۆیشتنت کۆتایی دێت",
   "travelLicenceExpiresBeforeLeaving": "مۆڵەتی شۆفێری پێش ڕۆیشتنت بەسەردەچێت",
   "travelTravellersCount": "{count, plural, =1{1 گەشتیار} other{{count} گەشتیار}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} لە {date} بەسەردەچێت، {days, plural, =1{1 ڕۆژ پێش ڕۆیشتنت} other{{days} ڕۆژ پێش ڕۆیشتنت}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} لە {date} بەسەردەچێت، {days, plural, =1{1 ڕۆژ پێش ڕۆیشتنت} other{{days} ڕۆژ پێش ڕۆیشتنت}}.",
+  "assistantVoiceReady": "گوێگرتن وەستا"
 }

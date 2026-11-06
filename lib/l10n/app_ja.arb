@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "出発前に旅行保険が終了します",
   "travelLicenceExpiresBeforeLeaving": "出発前に運転免許証の期限が切れます",
   "travelTravellersCount": "{count, plural, =1{旅行者 1 人} other{旅行者 {count} 人}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}の有効期限は{date}で、{days, plural, =1{出発の1日前}other{出発の{days}日前}}です。"
+  "travelDetailExpiresDaysBeforeLeaving": "{name}の有効期限は{date}で、{days, plural, =1{出発の1日前}other{出発の{days}日前}}です。",
+  "assistantVoiceReady": "聞き取りを停止しました"
 }

@@ -9189,4 +9189,7 @@ class AppLocalizationsRo extends AppLocalizations {
     );
     return '$name expiră pe $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Ascultarea s-a oprit';
 }

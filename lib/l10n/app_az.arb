@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "Səyahət sığortası yola düşməzdən əvvəl bitir",
   "travelLicenceExpiresBeforeLeaving": "Sürücülük vəsiqəsinin müddəti yola düşməzdən əvvəl bitir",
   "travelTravellersCount": "{count, plural, =1{1 səyahətçi} other{{count} səyahətçi}}",
-  "travelDetailExpiresDaysBeforeLeaving": "“{name}” sənədinin müddəti {date} tarixində, {days, plural, =1{yola düşməzdən 1 gün əvvəl} other{yola düşməzdən {days} gün əvvəl}} bitir."
+  "travelDetailExpiresDaysBeforeLeaving": "“{name}” sənədinin müddəti {date} tarixində, {days, plural, =1{yola düşməzdən 1 gün əvvəl} other{yola düşməzdən {days} gün əvvəl}} bitir.",
+  "assistantVoiceReady": "Dinləmə dayandı"
 }

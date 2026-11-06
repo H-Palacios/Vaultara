@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Insurans perjalanan tamat sebelum anda berlepas",
   "travelLicenceExpiresBeforeLeaving": "Lesen memandu tamat tempoh sebelum anda berlepas",
   "travelTravellersCount": "{count, plural, =1{1 pengembara} other{{count} pengembara}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} tamat tempoh pada {date}, {days, plural, =1{1 hari sebelum anda bertolak} other{{days} hari sebelum anda bertolak}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} tamat tempoh pada {date}, {days, plural, =1{1 hari sebelum anda bertolak} other{{days} hari sebelum anda bertolak}}.",
+  "assistantVoiceReady": "Berhenti mendengar"
 }

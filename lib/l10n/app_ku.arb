@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Sîgorteya rêwîtiyê berî çûyîna te diqede",
   "travelLicenceExpiresBeforeLeaving": "Ehlîyeta ajotinê berî çûyîna te bidawî dibe",
   "travelTravellersCount": "{count, plural, =1{1 rêwî} other{{count} rêwî}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} di {date} de bidawî dibe, {days, plural, =1{1 roj berî çûyîna te} other{{days} roj berî çûyîna te}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} di {date} de bidawî dibe, {days, plural, =1{1 roj berî çûyîna te} other{{days} roj berî çûyîna te}}.",
+  "assistantVoiceReady": "Guhdarî rawestiya"
 }

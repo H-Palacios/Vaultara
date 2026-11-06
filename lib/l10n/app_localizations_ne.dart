@@ -9104,4 +9104,7 @@ class AppLocalizationsNe extends AppLocalizations {
     );
     return '$name को म्याद $date मा सकिन्छ, $_temp0।';
   }
+
+  @override
+  String get assistantVoiceReady => 'सुन्न रोकियो';
 }

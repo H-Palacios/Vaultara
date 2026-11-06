@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "ປະກັນການເດີນທາງສິ້ນສຸດກ່ອນທ່ານອອກເດີນທາງ",
   "travelLicenceExpiresBeforeLeaving": "ໃບຂັບຂີ່ໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ",
   "travelTravellersCount": "{count, plural, =1{ຜູ້ເດີນທາງ 1 ຄົນ} other{ຜູ້ເດີນທາງ {count} ຄົນ}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} ໝົດອາຍຸ {date}, {days, plural, =1{1 ມື້ກ່ອນທ່ານອອກເດີນທາງ} other{{days} ມື້ກ່ອນທ່ານອອກເດີນທາງ}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ໝົດອາຍຸ {date}, {days, plural, =1{1 ມື້ກ່ອນທ່ານອອກເດີນທາງ} other{{days} ມື້ກ່ອນທ່ານອອກເດີນທາງ}}.",
+  "assistantVoiceReady": "ຢຸດຟັງແລ້ວ"
 }

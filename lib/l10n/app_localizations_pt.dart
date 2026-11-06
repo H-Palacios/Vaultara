@@ -9110,4 +9110,7 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$name expira a $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Deixei de ouvir';
 }

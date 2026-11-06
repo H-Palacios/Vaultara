@@ -9357,4 +9357,7 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return 'تنتهي صلاحية $name في $date، $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'توقف الاستماع';
 }

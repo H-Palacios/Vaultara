@@ -3452,5 +3452,6 @@
   "travelInsuranceEndsBeforeLeaving": "Asuransi perjalanan berakhir sebelum Anda berangkat",
   "travelLicenceExpiresBeforeLeaving": "SIM kedaluwarsa sebelum Anda berangkat",
   "travelTravellersCount": "{count, plural, =1{1 pelancong} other{{count} pelancong}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} kedaluwarsa {date}, {days, plural, =1{1 hari sebelum Anda berangkat} other{{days} hari sebelum Anda berangkat}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} kedaluwarsa {date}, {days, plural, =1{1 hari sebelum Anda berangkat} other{{days} hari sebelum Anda berangkat}}.",
+  "assistantVoiceReady": "Berhenti mendengarkan"
 }

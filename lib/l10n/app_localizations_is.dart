@@ -9103,4 +9103,7 @@ class AppLocalizationsIs extends AppLocalizations {
     );
     return '$name rennur út $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Hlustun lokið';
 }

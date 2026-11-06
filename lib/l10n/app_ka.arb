@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "სამოგზაურო დაზღვევა გამგზავრებამდე მთავრდება",
   "travelLicenceExpiresBeforeLeaving": "მართვის მოწმობის ვადა გამგზავრებამდე იწურება",
   "travelTravellersCount": "{count, plural, =1{1 მოგზაური} other{{count} მოგზაური}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name}-ს ვადა იწურება {date}, {days, plural, =1{გამგზავრებამდე 1 დღით ადრე} other{გამგზავრებამდე {days} დღით ადრე}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ს ვადა იწურება {date}, {days, plural, =1{გამგზავრებამდე 1 დღით ადრე} other{გამგზავრებამდე {days} დღით ადრე}}.",
+  "assistantVoiceReady": "მოსმენა შეჩერდა"
 }

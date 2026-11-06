@@ -9306,4 +9306,7 @@ class AppLocalizationsGa extends AppLocalizations {
     );
     return 'Éagann $name ar $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Stopadh ag éisteacht';
 }

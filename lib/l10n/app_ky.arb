@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Саякат камсыздандыруусу жолго чыкканга чейин бүтөт",
   "travelLicenceExpiresBeforeLeaving": "Айдоочулук күбөлүктүн мөөнөтү жолго чыкканга чейин бүтөт",
   "travelTravellersCount": "{count, plural, =1{1 саякатчы} other{{count} саякатчы}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} мөөнөтү {date} бүтөт, {days, plural, =1{жөнөгөнгө 1 күн калганда} other{жөнөгөнгө {days} күн калганда}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} мөөнөтү {date} бүтөт, {days, plural, =1{жөнөгөнгө 1 күн калганда} other{жөнөгөнгө {days} күн калганда}}.",
+  "assistantVoiceReady": "Угуу токтоду"
 }

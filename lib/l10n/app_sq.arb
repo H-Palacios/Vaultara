@@ -3461,5 +3461,6 @@
   "travelInsuranceEndsBeforeLeaving": "Sigurimi i udhëtimit mbaron para se të nisheni",
   "travelLicenceExpiresBeforeLeaving": "Patenta skadon para se të nisheni",
   "travelTravellersCount": "{count, plural, =1{1 udhëtar} other{{count} udhëtarë}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} skadon më {date}, {days, plural, =1{1 ditë para nisjes} other{{days} ditë para nisjes}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} skadon më {date}, {days, plural, =1{1 ditë para nisjes} other{{days} ditë para nisjes}}.",
+  "assistantVoiceReady": "Dëgjimi u ndal"
 }

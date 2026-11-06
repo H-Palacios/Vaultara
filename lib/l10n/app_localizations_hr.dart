@@ -9182,4 +9182,7 @@ class AppLocalizationsHr extends AppLocalizations {
     );
     return '$name istječe $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Slušanje je zaustavljeno';
 }

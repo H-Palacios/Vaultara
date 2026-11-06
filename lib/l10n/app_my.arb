@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "သင်ခရီးမထွက်မီ ခရီးသွားအာမခံ ပြီးဆုံးမည်",
   "travelLicenceExpiresBeforeLeaving": "သင်ခရီးမထွက်မီ ယာဉ်မောင်းလိုင်စင် သက်တမ်းကုန်မည်",
   "travelTravellersCount": "{count, plural, =1{ခရီးသည် 1 ဦး} other{ခရီးသည် {count} ဦး}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =1{သင်မထွက်ခွာမီ 1 ရက်} other{သင်မထွက်ခွာမီ {days} ရက်}}။"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =1{သင်မထွက်ခွာမီ 1 ရက်} other{သင်မထွက်ခွာမီ {days} ရက်}}။",
+  "assistantVoiceReady": "နားထောင်ခြင်း ရပ်ပြီ"
 }

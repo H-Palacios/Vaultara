@@ -9037,4 +9037,7 @@ class AppLocalizationsId extends AppLocalizations {
     );
     return '$name kedaluwarsa $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Berhenti mendengarkan';
 }

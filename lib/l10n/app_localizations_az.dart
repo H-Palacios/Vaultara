@@ -9104,4 +9104,7 @@ class AppLocalizationsAz extends AppLocalizations {
     );
     return '“$name” sənədinin müddəti $date tarixində, $_temp0 bitir.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Dinləmə dayandı';
 }

@@ -3485,5 +3485,6 @@
   "travelInsuranceEndsBeforeLeaving": "የጉዞ ኢንሹራንሱ ከመሄድዎ በፊት ያበቃል",
   "travelLicenceExpiresBeforeLeaving": "መንጃ ፈቃዱ ከመሄድዎ በፊት ያበቃል",
   "travelTravellersCount": "{count, plural, =1{1 ተጓዥ} other{{count} ተጓዦች}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} በ{date} ያበቃል፣ {days, plural, =1{ከመነሳትዎ 1 ቀን በፊት} other{ከመነሳትዎ {days} ቀናት በፊት}}።"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} በ{date} ያበቃል፣ {days, plural, =1{ከመነሳትዎ 1 ቀን በፊት} other{ከመነሳትዎ {days} ቀናት በፊት}}።",
+  "assistantVoiceReady": "ማዳመጥ ቆሟል"
 }

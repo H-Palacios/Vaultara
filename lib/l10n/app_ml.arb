@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "യാത്ര പുറപ്പെടും മുമ്പ് യാത്രാ ഇൻഷുറൻസ് അവസാനിക്കും",
   "travelLicenceExpiresBeforeLeaving": "യാത്ര പുറപ്പെടും മുമ്പ് ഡ്രൈവിംഗ് ലൈസൻസ് കാലഹരണപ്പെടും",
   "travelTravellersCount": "{count, plural, =1{1 യാത്രക്കാരൻ} other{{count} യാത്രക്കാർ}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}-ന് കാലഹരണപ്പെടും, {days, plural, =1{നിങ്ങൾ പുറപ്പെടുന്നതിന് 1 ദിവസം മുമ്പ്} other{നിങ്ങൾ പുറപ്പെടുന്നതിന് {days} ദിവസം മുമ്പ്}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}-ന് കാലഹരണപ്പെടും, {days, plural, =1{നിങ്ങൾ പുറപ്പെടുന്നതിന് 1 ദിവസം മുമ്പ്} other{നിങ്ങൾ പുറപ്പെടുന്നതിന് {days} ദിവസം മുമ്പ്}}.",
+  "assistantVoiceReady": "കേൾക്കുന്നത് നിർത്തി"
 }

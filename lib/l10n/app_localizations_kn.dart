@@ -9104,4 +9104,7 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$name $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'ಆಲಿಸುವುದು ನಿಂತಿದೆ';
 }

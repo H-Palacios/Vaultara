@@ -3478,5 +3478,6 @@
   "travelInsuranceEndsBeforeLeaving": "Rejseforsikringen slutter, før du rejser",
   "travelLicenceExpiresBeforeLeaving": "Kørekortet udløber, før du rejser",
   "travelTravellersCount": "{count, plural, =1{1 rejsende} other{{count} rejsende}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} udløber {date}, {days, plural, =1{1 dag før du rejser} other{{days} dage før du rejser}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} udløber {date}, {days, plural, =1{1 dag før du rejser} other{{days} dage før du rejser}}.",
+  "assistantVoiceReady": "Lytter ikke længere"
 }

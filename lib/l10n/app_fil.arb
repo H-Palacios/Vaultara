@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "Matatapos ang travel insurance bago ka umalis",
   "travelLicenceExpiresBeforeLeaving": "Mag-e-expire ang lisensya sa pagmamaneho bago ka umalis",
   "travelTravellersCount": "{count, plural, =1{1 biyahero} other{{count} biyahero}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Mag-e-expire ang {name} sa {date}, {days, plural, =1{1 araw bago ka umalis} other{{days} araw bago ka umalis}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Mag-e-expire ang {name} sa {date}, {days, plural, =1{1 araw bago ka umalis} other{{days} araw bago ka umalis}}.",
+  "assistantVoiceReady": "Huminto na ang pakikinig"
 }

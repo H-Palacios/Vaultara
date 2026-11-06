@@ -9104,4 +9104,7 @@ class AppLocalizationsUr extends AppLocalizations {
     );
     return '$name کی میعاد $date کو ختم ہو رہی ہے، $_temp0۔';
   }
+
+  @override
+  String get assistantVoiceReady => 'سننا رک گیا';
 }

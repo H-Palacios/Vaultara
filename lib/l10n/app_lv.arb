@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Ceļojuma apdrošināšana beidzas pirms izbraukšanas",
   "travelLicenceExpiresBeforeLeaving": "Vadītāja apliecības termiņš beidzas pirms izbraukšanas",
   "travelTravellersCount": "{count, plural, =1{1 ceļotājs} other{{count} ceļotāji}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} termiņš beidzas {date}, {days, plural, =1{1 dienu pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} termiņš beidzas {date}, {days, plural, =1{1 dienu pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}.",
+  "assistantVoiceReady": "Klausīšanās apturēta"
 }

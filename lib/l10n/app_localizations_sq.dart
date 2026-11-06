@@ -9109,4 +9109,7 @@ class AppLocalizationsSq extends AppLocalizations {
     );
     return '$name skadon më $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Dëgjimi u ndal';
 }

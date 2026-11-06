@@ -9030,4 +9030,7 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$name หมดอายุ $date $_temp0';
   }
+
+  @override
+  String get assistantVoiceReady => 'หยุดฟังแล้ว';
 }

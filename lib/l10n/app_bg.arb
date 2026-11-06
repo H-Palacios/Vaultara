@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "Пътническата застраховка приключва преди заминаването ви",
   "travelLicenceExpiresBeforeLeaving": "Шофьорската книжка изтича преди заминаването ви",
   "travelTravellersCount": "{count, plural, =1{1 пътуващ} other{{count} пътуващи}}",
-  "travelDetailExpiresDaysBeforeLeaving": "„{name}“ изтича на {date}, {days, plural, =1{1 ден преди да заминете} other{{days} дни преди да заминете}}."
+  "travelDetailExpiresDaysBeforeLeaving": "„{name}“ изтича на {date}, {days, plural, =1{1 ден преди да заминете} other{{days} дни преди да заминете}}.",
+  "assistantVoiceReady": "Слушането спря"
 }

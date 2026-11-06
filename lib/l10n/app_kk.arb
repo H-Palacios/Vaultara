@@ -3465,5 +3465,6 @@
   "travelInsuranceEndsBeforeLeaving": "Саяхат сақтандыруы жолға шыққаныңызша аяқталады",
   "travelLicenceExpiresBeforeLeaving": "Жүргізуші куәлігінің мерзімі жолға шыққаныңызша бітеді",
   "travelTravellersCount": "{count, plural, =1{1 саяхатшы} other{{count} саяхатшы}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} мерзімі {date} бітеді, {days, plural, =1{жолға шығудан 1 күн бұрын} other{жолға шығудан {days} күн бұрын}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} мерзімі {date} бітеді, {days, plural, =1{жолға шығудан 1 күн бұрын} other{жолға шығудан {days} күн бұрын}}.",
+  "assistantVoiceReady": "Тыңдау тоқтады"
 }

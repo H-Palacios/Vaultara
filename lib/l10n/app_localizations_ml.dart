@@ -9104,4 +9104,7 @@ class AppLocalizationsMl extends AppLocalizations {
     );
     return '$name $date-ന് കാലഹരണപ്പെടും, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'കേൾക്കുന്നത് നിർത്തി';
 }

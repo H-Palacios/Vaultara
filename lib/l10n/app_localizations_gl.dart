@@ -9109,4 +9109,7 @@ class AppLocalizationsGl extends AppLocalizations {
     );
     return '$name caduca o $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Xa non escoito';
 }

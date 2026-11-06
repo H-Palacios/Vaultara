@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "நீங்கள் புறப்படும் முன் பயணக் காப்பீடு முடிவடையும்",
   "travelLicenceExpiresBeforeLeaving": "நீங்கள் புறப்படும் முன் ஓட்டுநர் உரிமம் காலாவதியாகும்",
   "travelTravellersCount": "{count, plural, =1{1 பயணி} other{{count} பயணிகள்}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} அன்று காலாவதியாகும், {days, plural, =1{நீங்கள் புறப்படுவதற்கு 1 நாள் முன்பு} other{நீங்கள் புறப்படுவதற்கு {days} நாட்கள் முன்பு}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} அன்று காலாவதியாகும், {days, plural, =1{நீங்கள் புறப்படுவதற்கு 1 நாள் முன்பு} other{நீங்கள் புறப்படுவதற்கு {days} நாட்கள் முன்பு}}.",
+  "assistantVoiceReady": "கேட்பது நிறுத்தப்பட்டது"
 }

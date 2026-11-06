@@ -3440,5 +3440,6 @@
   "travelInsuranceEndsBeforeLeaving": "旅遊保險在您出發前結束",
   "travelLicenceExpiresBeforeLeaving": "駕駛執照在您出發前到期",
   "travelTravellersCount": "{count, plural, =1{1 位旅客} other{{count} 位旅客}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} 將於 {date} 到期，{days, plural, =1{比您出發早 1 天} other{比您出發早 {days} 天}}。"
+  "travelDetailExpiresDaysBeforeLeaving": "{name} 將於 {date} 到期，{days, plural, =1{比您出發早 1 天} other{比您出發早 {days} 天}}。",
+  "assistantVoiceReady": "已停止聆聽"
 }

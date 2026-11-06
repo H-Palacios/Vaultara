@@ -3422,5 +3422,6 @@
   "travelInsuranceEndsBeforeLeaving": "Страховка заканчивается до вашего отъезда",
   "travelLicenceExpiresBeforeLeaving": "Водительское удостоверение истекает до отъезда",
   "travelTravellersCount": "{count, plural, =1{1 путешественник} few{{count} путешественника} many{{count} путешественников} other{{count} путешественника}}",
-  "travelDetailExpiresDaysBeforeLeaving": "Срок «{name}» истекает {date}, {days, plural, =1{за 1 день до отъезда} few{за {days} дня до отъезда} many{за {days} дней до отъезда} other{за {days} дня до отъезда}}."
+  "travelDetailExpiresDaysBeforeLeaving": "Срок «{name}» истекает {date}, {days, plural, =1{за 1 день до отъезда} few{за {days} дня до отъезда} many{за {days} дней до отъезда} other{за {days} дня до отъезда}}.",
+  "assistantVoiceReady": "Слушание остановлено"
 }

@@ -9042,4 +9042,7 @@ class AppLocalizationsMs extends AppLocalizations {
     );
     return '$name tamat tempoh pada $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Berhenti mendengar';
 }

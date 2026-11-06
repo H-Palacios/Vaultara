@@ -3452,5 +3452,6 @@
   "travelInsuranceEndsBeforeLeaving": "ביטוח הנסיעות מסתיים לפני שתצא לדרך",
   "travelLicenceExpiresBeforeLeaving": "תוקף רישיון הנהיגה פג לפני שתצא לדרך",
   "travelTravellersCount": "{count, plural, =1{נוסע אחד} =2{2 נוסעים} other{{count} נוסעים}}",
-  "travelDetailExpiresDaysBeforeLeaving": "התוקף של {name} פג ב־{date}, {days, plural, =1{יום אחד לפני היציאה} =2{יומיים לפני היציאה} other{{days} ימים לפני היציאה}}."
+  "travelDetailExpiresDaysBeforeLeaving": "התוקף של {name} פג ב־{date}, {days, plural, =1{יום אחד לפני היציאה} =2{יומיים לפני היציאה} other{{days} ימים לפני היציאה}}.",
+  "assistantVoiceReady": "ההאזנה הופסקה"
 }

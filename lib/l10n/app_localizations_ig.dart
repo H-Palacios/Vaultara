@@ -9053,4 +9053,7 @@ class AppLocalizationsIg extends AppLocalizations {
     );
     return '$name na-agwụ na $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Akwụsịla ige ntị';
 }

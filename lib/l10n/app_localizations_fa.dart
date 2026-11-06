@@ -9104,4 +9104,7 @@ class AppLocalizationsFa extends AppLocalizations {
     );
     return '$name در $date منقضی می‌شود، $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'شنیدن متوقف شد';
 }

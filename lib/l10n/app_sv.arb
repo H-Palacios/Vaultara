@@ -3440,5 +3440,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reseförsäkringen upphör innan du reser",
   "travelLicenceExpiresBeforeLeaving": "Körkortet går ut innan du reser",
   "travelTravellersCount": "{count, plural, =1{1 resenär} other{{count} resenärer}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag innan du reser} other{{days} dagar innan du reser}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag innan du reser} other{{days} dagar innan du reser}}.",
+  "assistantVoiceReady": "Lyssnar inte längre"
 }

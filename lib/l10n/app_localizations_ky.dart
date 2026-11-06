@@ -9104,4 +9104,7 @@ class AppLocalizationsKy extends AppLocalizations {
     );
     return '$name мөөнөтү $date бүтөт, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Угуу токтоду';
 }

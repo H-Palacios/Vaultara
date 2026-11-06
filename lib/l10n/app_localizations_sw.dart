@@ -9104,4 +9104,7 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$name inaisha muda $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Kusikiliza kumesimama';
 }

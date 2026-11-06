@@ -9282,4 +9282,7 @@ class AppLocalizationsPl extends AppLocalizations {
     );
     return '$name wygasa $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Słuchanie zatrzymane';
 }

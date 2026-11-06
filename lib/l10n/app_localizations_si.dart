@@ -9103,4 +9103,7 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$name $date දින කල් ඉකුත් වේ, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'සවන් දීම නැවතුණි';
 }

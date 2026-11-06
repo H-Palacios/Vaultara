@@ -9104,4 +9104,7 @@ class AppLocalizationsPa extends AppLocalizations {
     );
     return '$name ਦੀ ਮਿਆਦ $date ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, $_temp0।';
   }
+
+  @override
+  String get assistantVoiceReady => 'ਸੁਣਨਾ ਬੰਦ ਹੋ ਗਿਆ';
 }

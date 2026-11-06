@@ -3459,5 +3459,6 @@
   "travelInsuranceEndsBeforeLeaving": "O seguro de viaxe remata antes de que marches",
   "travelLicenceExpiresBeforeLeaving": "A licenza de condución caduca antes de que marches",
   "travelTravellersCount": "{count, plural, =1{1 viaxeiro} other{{count} viaxeiros}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} caduca o {date}, {days, plural, =1{1 día antes de que saias} other{{days} días antes de que saias}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} caduca o {date}, {days, plural, =1{1 día antes de que saias} other{{days} días antes de que saias}}.",
+  "assistantVoiceReady": "Xa non escoito"
 }

@@ -9040,4 +9040,7 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$name ផុតកំណត់នៅ $date $_temp0។';
   }
+
+  @override
+  String get assistantVoiceReady => 'បានឈប់ស្តាប់';
 }

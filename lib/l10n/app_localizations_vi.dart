@@ -9042,4 +9042,7 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$name hết hạn vào $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Đã dừng nghe';
 }

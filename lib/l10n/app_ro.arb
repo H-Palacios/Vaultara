@@ -3447,5 +3447,6 @@
   "travelInsuranceEndsBeforeLeaving": "Asigurarea de călătorie se încheie înainte să pleci",
   "travelLicenceExpiresBeforeLeaving": "Permisul de conducere expiră înainte să pleci",
   "travelTravellersCount": "{count, plural, =1{1 călător} few{{count} călători} other{{count} de călători}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} expiră pe {date}, {days, plural, =1{cu 1 zi înainte de plecare} few{cu {days} zile înainte de plecare} other{cu {days} de zile înainte de plecare}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} expiră pe {date}, {days, plural, =1{cu 1 zi înainte de plecare} few{cu {days} zile înainte de plecare} other{cu {days} de zile înainte de plecare}}.",
+  "assistantVoiceReady": "Ascultarea s-a oprit"
 }

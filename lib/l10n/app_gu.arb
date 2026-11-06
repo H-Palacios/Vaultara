@@ -3197,5 +3197,6 @@
   "travelInsuranceEndsBeforeLeaving": "તમે નીકળો તે પહેલાં મુસાફરી વીમો પૂરો થાય છે",
   "travelLicenceExpiresBeforeLeaving": "તમે નીકળો તે પહેલાં ડ્રાઇવિંગ લાઇસન્સ સમાપ્ત થાય છે",
   "travelTravellersCount": "{count, plural, =1{1 મુસાફર} other{{count} મુસાફરો}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}ના રોજ સમાપ્ત થાય છે, {days, plural, =1{તમે જાઓ તેના 1 દિવસ પહેલાં} other{તમે જાઓ તેના {days} દિવસ પહેલાં}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}ના રોજ સમાપ્ત થાય છે, {days, plural, =1{તમે જાઓ તેના 1 દિવસ પહેલાં} other{તમે જાઓ તેના {days} દિવસ પહેલાં}}.",
+  "assistantVoiceReady": "સાંભળવાનું બંધ થયું"
 }

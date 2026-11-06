@@ -9109,4 +9109,7 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return 'Το στοιχείο $name λήγει στις $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Η ακρόαση σταμάτησε';
 }

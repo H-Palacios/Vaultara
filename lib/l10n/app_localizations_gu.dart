@@ -9104,4 +9104,7 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$name $dateના રોજ સમાપ્ત થાય છે, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'સાંભળવાનું બંધ થયું';
 }

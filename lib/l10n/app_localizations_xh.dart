@@ -9104,4 +9104,7 @@ class AppLocalizationsXh extends AppLocalizations {
     );
     return 'I-$name iphelelwa ngomhla we-$date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Kuyekiwe ukumamela';
 }

@@ -9104,4 +9104,7 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$name గడువు $dateన ముగుస్తుంది, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'వినడం ఆగిపోయింది';
 }

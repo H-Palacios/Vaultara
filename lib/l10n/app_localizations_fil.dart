@@ -9099,4 +9099,7 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return 'Mag-e-expire ang $name sa $date, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Huminto na ang pakikinig';
 }

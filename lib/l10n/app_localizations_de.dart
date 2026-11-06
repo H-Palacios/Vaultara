@@ -9109,4 +9109,7 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$name läuft am $date ab, $_temp0.';
   }
+
+  @override
+  String get assistantVoiceReady => 'Zuhören beendet';
 }

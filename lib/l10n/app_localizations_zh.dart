@@ -9042,6 +9042,9 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$name 于 $date 到期，$_temp0。';
   }
+
+  @override
+  String get assistantVoiceReady => '已停止聆听';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18070,6 +18073,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
     );
     return '$name 于 $date 到期，$_temp0。';
   }
+
+  @override
+  String get assistantVoiceReady => '已停止聆听';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -27098,4 +27104,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
     );
     return '$name 將於 $date 到期，$_temp0。';
   }
+
+  @override
+  String get assistantVoiceReady => '已停止聆聽';
 }

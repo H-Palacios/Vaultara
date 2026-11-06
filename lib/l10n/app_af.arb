@@ -3485,5 +3485,6 @@
   "travelInsuranceEndsBeforeLeaving": "Reisversekering eindig voordat jy vertrek",
   "travelLicenceExpiresBeforeLeaving": "Rybewys verval voordat jy vertrek",
   "travelTravellersCount": "{count, plural, =1{1 reisiger} other{{count} reisigers}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} verval op {date}, {days, plural, =1{1 dag voordat jy vertrek} other{{days} dae voordat jy vertrek}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} verval op {date}, {days, plural, =1{1 dag voordat jy vertrek} other{{days} dae voordat jy vertrek}}.",
+  "assistantVoiceReady": "Luister nie meer nie"
 }

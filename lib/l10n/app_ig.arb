@@ -3452,5 +3452,6 @@
   "travelInsuranceEndsBeforeLeaving": "Inshọransị njem na-akwụsị tupu ị pụọ",
   "travelLicenceExpiresBeforeLeaving": "Ikikere ịnya ụgbọala na-agwụ tupu ị pụọ",
   "travelTravellersCount": "{count, plural, =1{Onye njem 1} other{Ndị njem {count}}}",
-  "travelDetailExpiresDaysBeforeLeaving": "{name} na-agwụ na {date}, {days, plural, =1{ụbọchị 1 tupu ị pụọ} other{ụbọchị {days} tupu ị pụọ}}."
+  "travelDetailExpiresDaysBeforeLeaving": "{name} na-agwụ na {date}, {days, plural, =1{ụbọchị 1 tupu ị pụọ} other{ụbọchị {days} tupu ị pụọ}}.",
+  "assistantVoiceReady": "Akwụsịla ige ntị"
 }
