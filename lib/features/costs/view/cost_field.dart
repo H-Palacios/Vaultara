@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:vaultara/features/costs/data/display_currency.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -147,6 +150,8 @@ class CostField extends StatefulWidget {
   };
 
   static String defaultCurrency(Locale locale) {
+    final chosen = DisplayCurrency.current();
+    if (chosen != null) return chosen;
     final country = (locale.countryCode ?? '').toUpperCase();
     if (country.isNotEmpty) {
       if (_euroCountries.contains(country)) return 'EUR';
@@ -187,6 +192,7 @@ class _CostFieldState extends State<CostField> {
     super.initState();
     _controller = TextEditingController();
     _focus.addListener(_onFocusChanged);
+    unawaited(DisplayCurrency.load());
   }
 
   @override
@@ -250,7 +256,7 @@ class _CostFieldState extends State<CostField> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (_) => _CurrencyPickerSheet(selected: widget.currency),
+      builder: (_) => CurrencyPickerSheet(selected: widget.currency),
     );
     if (!mounted || picked == null) return;
     widget.onChanged(CostField.parse(_controller.text), picked);
@@ -335,16 +341,37 @@ class _CostFieldState extends State<CostField> {
   }
 }
 
-class _CurrencyPickerSheet extends StatefulWidget {
-  final String selected;
-
-  const _CurrencyPickerSheet({required this.selected});
-
-  @override
-  State<_CurrencyPickerSheet> createState() => _CurrencyPickerSheetState();
+Future<String?> showCurrencyPicker(
+  BuildContext context, {
+  required String selected,
+  Iterable<String>? available,
+}) {
+  return showModalBottomSheet<String>(
+    context: context,
+    isScrollControlled: true,
+    showDragHandle: true,
+    useSafeArea: true,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (_) => CurrencyPickerSheet(
+      selected: selected,
+      available: available == null ? null : available.toSet(),
+    ),
+  );
 }
 
-class _CurrencyPickerSheetState extends State<_CurrencyPickerSheet> {
+class CurrencyPickerSheet extends StatefulWidget {
+  final String selected;
+  final Set<String>? available;
+
+  const CurrencyPickerSheet({super.key, required this.selected, this.available});
+
+  @override
+  State<CurrencyPickerSheet> createState() => _CurrencyPickerSheetState();
+}
+
+class _CurrencyPickerSheetState extends State<CurrencyPickerSheet> {
   static final RegExp _isoCode = RegExp(r'^[A-Z]{3}$');
 
   final TextEditingController _search = TextEditingController();
@@ -358,11 +385,23 @@ class _CurrencyPickerSheetState extends State<_CurrencyPickerSheet> {
 
   List<String> _codes(BuildContext context) {
     final selected = widget.selected.toUpperCase();
+    final available = widget.available;
+    final List<String> listed;
+    if (available == null) {
+      listed = CostField.commonCurrencies;
+    } else {
+      final common = CostField.commonCurrencies
+          .where(available.contains)
+          .toList();
+      final rest = available
+          .where((code) => !common.contains(code))
+          .toList()
+        ..sort();
+      listed = <String>[...common, ...rest];
+    }
     final base = <String>[
-      if (_isoCode.hasMatch(selected) &&
-          !CostField.commonCurrencies.contains(selected))
-        selected,
-      ...CostField.commonCurrencies,
+      if (_isoCode.hasMatch(selected) && !listed.contains(selected)) selected,
+      ...listed,
     ];
 
     final query = _query.trim().toUpperCase();

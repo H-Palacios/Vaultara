@@ -1,5 +1,6 @@
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/features/costs/data/fx_rates.dart';
 
 class MonthCost {
   final DateTime month;
@@ -12,6 +13,32 @@ class MonthCost {
   bool get isEmpty => byCurrency.isEmpty;
 }
 
+class ConvertedCosts {
+  final String currency;
+  final double total;
+  final List<double> monthTotals;
+  final int busiestIndex;
+  final Map<String, double> converted;
+  final Map<String, double> unconverted;
+  final Map<String, double> factors;
+  final FxRates rates;
+
+  const ConvertedCosts({
+    required this.currency,
+    required this.total,
+    required this.monthTotals,
+    required this.busiestIndex,
+    required this.converted,
+    required this.unconverted,
+    required this.factors,
+    required this.rates,
+  });
+
+  bool get hasConverted => converted.isNotEmpty;
+
+  bool get usedRates => factors.keys.any((code) => code != currency);
+}
+
 class CostForecast {
   final Map<String, double> totalByCurrency;
   final List<MonthCost> months;
@@ -19,6 +46,9 @@ class CostForecast {
   final int recordsWithCost;
   final int recordsWithoutCost;
   final String? mainCurrency;
+  final int year;
+  final int mutedBefore;
+  final int busiestFrom;
 
   const CostForecast({
     required this.totalByCurrency,
@@ -27,6 +57,9 @@ class CostForecast {
     required this.recordsWithCost,
     required this.recordsWithoutCost,
     required this.mainCurrency,
+    required this.year,
+    required this.mutedBefore,
+    required this.busiestFrom,
   });
 
   bool get hasCosts => recordsWithCost > 0;
@@ -41,6 +74,53 @@ class CostForecast {
       return a.compareTo(b);
     });
     return list;
+  }
+
+  ConvertedCosts convertTo(String target, FxRates rates) {
+    final to = target.trim().toUpperCase();
+    final factors = <String, double>{};
+    final converted = <String, double>{};
+    final unconverted = <String, double>{};
+
+    for (final entry in totalByCurrency.entries) {
+      final code = entry.key;
+      final factor = code == to ? 1.0 : rates.rate(code, to);
+      if (factor == null) {
+        unconverted[code] = entry.value;
+      } else {
+        factors[code] = factor;
+        converted[code] = entry.value;
+      }
+    }
+
+    double sum(Map<String, double> amounts) {
+      var total = 0.0;
+      factors.forEach((code, factor) {
+        total += (amounts[code] ?? 0.0) * factor;
+      });
+      return total;
+    }
+
+    final monthTotals = <double>[for (final m in months) sum(m.byCurrency)];
+    var busiestIndex = -1;
+    var best = 0.0;
+    for (var i = busiestFrom; i < monthTotals.length; i++) {
+      if (monthTotals[i] > best) {
+        best = monthTotals[i];
+        busiestIndex = i;
+      }
+    }
+
+    return ConvertedCosts(
+      currency: to,
+      total: sum(totalByCurrency),
+      monthTotals: List<double>.unmodifiable(monthTotals),
+      busiestIndex: busiestIndex,
+      converted: Map<String, double>.unmodifiable(converted),
+      unconverted: Map<String, double>.unmodifiable(unconverted),
+      factors: Map<String, double>.unmodifiable(factors),
+      rates: rates,
+    );
   }
 
   static const int monthCount = 12;
@@ -59,10 +139,27 @@ class CostForecast {
         normaliseCurrency(record.costCurrency) != null;
   }
 
-  static CostForecast build(List<TrackedItem> records, {DateTime? now}) {
+  static List<int> years(List<TrackedItem> records, {DateTime? now}) {
+    final thisYear = (now ?? DateTime.now()).year;
+    var low = thisYear;
+    var high = thisYear;
+    for (final record in records) {
+      if (record.isDeleted || !hasCost(record)) continue;
+      final y = record.expiryDate.year;
+      if (y < low) low = y;
+      if (y > high) high = y;
+    }
+    if (low < thisYear - 5) low = thisYear - 5;
+    if (high > thisYear + 10) high = thisYear + 10;
+    return <int>[for (var y = low; y <= high; y++) y];
+  }
+
+  static CostForecast forYear(
+    List<TrackedItem> records,
+    int year, {
+    DateTime? now,
+  }) {
     final today = Dates.only(now ?? DateTime.now());
-    final firstMonth = DateTime(today.year, today.month);
-    final endExclusive = DateTime(today.year, today.month + monthCount);
 
     final List<Map<String, double>> buckets = List.generate(
       monthCount,
@@ -76,21 +173,17 @@ class CostForecast {
     for (final record in records) {
       if (record.isDeleted) continue;
       final expiry = Dates.only(record.expiryDate);
-      if (expiry.isBefore(today) || !expiry.isBefore(endExclusive)) continue;
+      if (expiry.year != year) continue;
 
       if (!hasCost(record)) {
-        withoutCost++;
+        if (!expiry.isBefore(today)) withoutCost++;
         continue;
       }
 
       withCost++;
       final currency = normaliseCurrency(record.costCurrency)!;
       final amount = record.renewalCost!;
-      final index = (expiry.year - firstMonth.year) * 12 +
-          (expiry.month - firstMonth.month);
-      if (index < 0 || index >= monthCount) continue;
-
-      final bucket = buckets[index];
+      final bucket = buckets[expiry.month - 1];
       bucket[currency] = (bucket[currency] ?? 0.0) + amount;
       totals[currency] = (totals[currency] ?? 0.0) + amount;
       usage[currency] = (usage[currency] ?? 0) + 1;
@@ -99,10 +192,15 @@ class CostForecast {
     final months = <MonthCost>[
       for (int i = 0; i < monthCount; i++)
         MonthCost(
-          month: DateTime(firstMonth.year, firstMonth.month + i),
+          month: DateTime(year, i + 1),
           byCurrency: Map<String, double>.unmodifiable(buckets[i]),
         ),
     ];
+
+    final busiestFrom = year == today.year ? today.month - 1 : 0;
+    final mutedBefore = year < today.year
+        ? monthCount
+        : (year == today.year ? today.month - 1 : 0);
 
     String? main;
     for (final currency in usage.keys) {
@@ -126,11 +224,11 @@ class CostForecast {
 
     MonthCost? busiest;
     if (main != null) {
-      for (final month in months) {
-        final value = month.totalFor(main);
+      for (var i = busiestFrom; i < months.length; i++) {
+        final value = months[i].totalFor(main);
         if (value <= 0) continue;
         if (busiest == null || value > busiest.totalFor(main)) {
-          busiest = month;
+          busiest = months[i];
         }
       }
     }
@@ -142,6 +240,9 @@ class CostForecast {
       recordsWithCost: withCost,
       recordsWithoutCost: withoutCost,
       mainCurrency: main,
+      year: year,
+      mutedBefore: mutedBefore,
+      busiestFrom: busiestFrom,
     );
   }
 }
