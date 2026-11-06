@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 
 class SearchField extends StatelessWidget {
   final TextEditingController? controller;
@@ -44,6 +45,7 @@ class SearchField extends StatelessWidget {
         prefixIcon: const Icon(Icons.search_rounded),
         suffixIcon: hasText && onChanged != null
             ? IconButton(
+                tooltip: AppLocalizations.of(context)!.clearSearch,
                 icon: const Icon(Icons.close_rounded, size: 18),
                 onPressed: () {
                   controller?.clear();
