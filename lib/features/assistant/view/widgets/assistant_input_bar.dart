@@ -55,6 +55,16 @@ class AssistantInputBar extends StatelessWidget {
                     null,
                 textInputAction: TextInputAction.send,
                 textCapitalization: TextCapitalization.sentences,
+                autocorrect: true,
+                enableSuggestions: true,
+                // The phone's own spell checker underlines typos before
+                // sending. Only where the phone has one (Android and iOS).
+                spellCheckConfiguration: WidgetsBinding
+                        .instance
+                        .platformDispatcher
+                        .nativeSpellCheckServiceDefined
+                    ? const SpellCheckConfiguration()
+                    : null,
                 onSubmitted: (_) {
                   if (canSend) onSend();
                 },
