@@ -198,7 +198,7 @@ class RecordCard extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                   color: fg,
-                                  fontSize: 11,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
