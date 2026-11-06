@@ -357,11 +357,8 @@ class SmartInsightService {
           SmartInsight(
             kind: SmartInsightKind.tripProblem,
             heading: loc.smartInsightTripHeading,
-            body: loc.smartInsightTripBody(
-              trip.name,
-              formatDateLong(trip.start),
-              problems,
-            ),
+            body: '${loc.smartInsightTripWhen(trip.name, formatDateLong(trip.start))} '
+                '${loc.travelFixBeforeYouGo(problems)}',
             icon: Icons.luggage_rounded,
             priority: 0,
             actionLabel: loc.smartInsightActionOpenTrip,

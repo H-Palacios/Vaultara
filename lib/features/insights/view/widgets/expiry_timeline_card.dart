@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:vaultara/core/view/widgets/year_navigator.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_result.dart';
@@ -78,11 +79,14 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _YearNavigator(
+                YearNavigator(
                   year: year,
-                  previousYear: previousYear,
-                  nextYear: nextYear,
-                  onChanged: _controller.selectYear,
+                  onPrevious: previousYear == null
+                      ? null
+                      : () => _controller.selectYear(previousYear),
+                  onNext: nextYear == null
+                      ? null
+                      : () => _controller.selectYear(nextYear),
                 ),
                 const SizedBox(height: 6),
                 _TimelineMonthList(
@@ -137,7 +141,7 @@ class _TimelineShell extends StatelessWidget {
                       Text(
                         loc.expiryTimelineSubtitle,
                         style: TextStyle(
-                          fontSize: 11.5,
+                          fontSize: 12,
                           fontWeight: FontWeight.w500,
                           color: scheme.onSurfaceVariant,
                         ),
@@ -152,62 +156,6 @@ class _TimelineShell extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-/// Previous / next year arrows either side of the current year.
-class _YearNavigator extends StatelessWidget {
-  final int year;
-  final int? previousYear;
-  final int? nextYear;
-  final ValueChanged<int> onChanged;
-
-  const _YearNavigator({
-    required this.year,
-    required this.previousYear,
-    required this.nextYear,
-    required this.onChanged,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-
-    Color arrowColour(int? target) => target != null
-        ? scheme.primary
-        : scheme.onSurfaceVariant.withValues(alpha: 0.3);
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        IconButton(
-          onPressed:
-              previousYear == null ? null : () => onChanged(previousYear!),
-          icon: Icon(
-            Icons.chevron_left_rounded,
-            size: 28,
-            color: arrowColour(previousYear),
-          ),
-        ),
-        const SizedBox(width: 16),
-        Text(
-          '$year',
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w800,
-          ),
-        ),
-        const SizedBox(width: 16),
-        IconButton(
-          onPressed: nextYear == null ? null : () => onChanged(nextYear!),
-          icon: Icon(
-            Icons.chevron_right_rounded,
-            size: 28,
-            color: arrowColour(nextYear),
-          ),
-        ),
-      ],
     );
   }
 }

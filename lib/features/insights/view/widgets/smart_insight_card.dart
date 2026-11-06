@@ -58,7 +58,7 @@ class SmartInsightCard extends StatelessWidget {
                 child: Text(
                   loc.todayInsightsAudioHint,
                   style: TextStyle(
-                    fontSize: 11.5,
+                    fontSize: 12,
                     fontWeight: FontWeight.w600,
                     color: scheme.onSurfaceVariant,
                   ),
@@ -97,7 +97,7 @@ class SmartInsightCard extends StatelessWidget {
             Text(
               loc.smartInsightMoreHeading,
               style: TextStyle(
-                fontSize: 11.5,
+                fontSize: 12,
                 fontWeight: FontWeight.w700,
                 color: scheme.onSurfaceVariant,
               ),
@@ -111,7 +111,7 @@ class SmartInsightCard extends StatelessWidget {
                 child: Text(
                   loc.smartInsightMoreCount(hidden),
                   style: TextStyle(
-                    fontSize: 11.5,
+                    fontSize: 12,
                     fontWeight: FontWeight.w600,
                     color: scheme.onSurfaceVariant,
                   ),
