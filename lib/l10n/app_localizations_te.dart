@@ -1519,7 +1519,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get costCardTitle => 'పునరుద్ధరణ ఖర్చులు';
 
   @override
-  String get costCardSubtitle => 'రాబోయే 12 నెలల్లో మీ పునరుద్ధరణలకు అయ్యే ఖర్చు';
+  String get costCardSubtitle => 'మీ పునరుద్ధరణల నెలవారీ ఖర్చు';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'మీ ట్రిప్‌కు శ్రద్ధ అవసరం';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date న బయలుదేరుతుంది, వెళ్లే ముందు $count విషయాలు సరిచేయాలి.',
-      one: '$trip $date న బయలుదేరుతుంది, వెళ్లే ముందు $count విషయం సరిచేయాలి.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ట్రిప్ తెరవండి';
@@ -6204,4 +6193,97 @@ class AppLocalizationsTe extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country లో స్టాప్‌ఓవర్. ట్రాన్సిట్ వీసా అవసరమా అని తనిఖీ చేయండి.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'కరెన్సీ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'మొత్తాలు $currency లో చూపబడతాయి';
+  }
+
+  @override
+  String get costRatesTitle => 'మారకం రేట్లు';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'ఇతర కరెన్సీలలోని మొత్తాలు రోజువారీ మారకం రేట్లతో $currency కి మార్చబడతాయి. ప్రతి రికార్డు మీరు నమోదు చేసిన మొత్తం మరియు కరెన్సీని ఉంచుతుంది.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'రేట్లు నవీకరించబడ్డాయి $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies కి మారకం రేటు లేదు. ఈ మొత్తాలు విడిగా చూపబడతాయి.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: మీరు $date న బయలుదేరుతారు.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'విమాన తేదీలు $start మరియు $end మధ్య ఉండాలి.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ఈ విమానం మరొక విమానంతో అతివ్యాప్తి చెందుతోంది. విమానాలు వరుసగా ఒకదాని తర్వాత ఒకటి ఉండాలి.';
+
+  @override
+  String get travelFlightsOutsideDates => 'కొన్ని విమానాలు మీ ప్రయాణ తేదీల వెలుపల ఉన్నాయి. తేదీలను మార్చండి లేదా ఆ విమానాలను సవరించండి.';
+
+  @override
+  String get loadErrorBody => 'దీన్ని లోడ్ చేయలేకపోయాము. మీ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get tryAgain => 'మళ్లీ ప్రయత్నించండి';
+
+  @override
+  String get discardChangesTitle => 'మార్పులను రద్దు చేయాలా?';
+
+  @override
+  String get discardChangesBody => 'మీకు సేవ్ చేయని మార్పులు ఉన్నాయి. ఇప్పుడు వెళ్లిపోతే అవి కోల్పోతారు.';
+
+  @override
+  String get discardChangesKeep => 'సవరణ కొనసాగించండి';
+
+  @override
+  String get discardChangesDiscard => 'రద్దు చేయి';
+
+  @override
+  String get offlineBanner => 'ఆఫ్‌లైన్. మీరు మళ్లీ కనెక్ట్ అయినప్పుడు మార్పులు సింక్ అవుతాయి.';
+
+  @override
+  String get reminderHelpTitle => 'రిమైండర్లు రావడం లేదా?';
+
+  @override
+  String get reminderHelpSubtitle => 'రిమైండర్లను అడ్డుకునే బ్యాటరీ సెట్టింగ్‌లను సరిచేయండి';
+
+  @override
+  String get reminderHelpBody => 'కొన్ని ఫోన్లు బ్యాటరీ ఆదా చేయడానికి బ్యాక్‌గ్రౌండ్‌లోని యాప్‌లను ఆపేస్తాయి, దీని వల్ల రిమైండర్లు ఆలస్యం కావచ్చు లేదా ఆగిపోవచ్చు. బ్యాటరీ పరిమితులు లేకుండా Vaultara నడవడానికి అనుమతించండి, యాప్ సెట్టింగ్‌లలో నోటిఫికేషన్‌లు ఆన్‌లో ఉన్నాయని నిర్ధారించుకోండి.';
+
+  @override
+  String get reminderHelpOpenBattery => 'బ్యాటరీ సెట్టింగ్‌లను తెరవండి';
+
+  @override
+  String get reminderHelpOpenApp => 'యాప్ సెట్టింగ్‌లను తెరవండి';
+
+  @override
+  String get showPassword => 'పాస్‌వర్డ్ చూపించు';
+
+  @override
+  String get hidePassword => 'పాస్‌వర్డ్ దాచు';
+
+  @override
+  String get pinCategory => 'పైన పిన్ చేయి';
+
+  @override
+  String get unpinCategory => 'పిన్ తీసివేయి';
+
+  @override
+  String get clearSearch => 'శోధనను తొలగించు';
 }

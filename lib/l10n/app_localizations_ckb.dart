@@ -1519,7 +1519,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get costCardTitle => 'تێچووی نوێکردنەوەکان';
 
   @override
-  String get costCardSubtitle => 'نوێکردنەوەکانت لە 12 مانگی داهاتوودا چەندت تێدەچێت';
+  String get costCardSubtitle => 'نرخی نوێکردنەوەکانت مانگ بە مانگ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'گەشتەکەت پێویستی بە سەرنج هەیە';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip لە $date دەست پێدەکات، و $count شت هەیە پێش ڕۆیشتن دەبێت چاک بکرێن.',
-      one: '$trip لە $date دەست پێدەکات، و $count شت هەیە پێش ڕۆیشتن دەبێت چاک بکرێت.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'کردنەوەی گەشت';
@@ -6204,4 +6193,97 @@ class AppLocalizationsCkb extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'وەستان لە $country. بپشکنە ئایا ڤیزای تێپەڕینت پێویستە.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'دراو';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'کۆی گشتی بە $currency پیشان دەدرێت';
+  }
+
+  @override
+  String get costRatesTitle => 'نرخی ئاڵوگۆڕ';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'بڕە بە دراوی تر بە نرخی ئاڵوگۆڕی ڕۆژانە دەگۆڕدرێن بۆ $currency. هەر تۆمارێک ئەو بڕە و دراوەی تۆ نووسیوتە دەپارێزێت.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'نرخەکان نوێکرانەوە لە $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'نرخی ئاڵوگۆڕ بۆ $currencies نییە. ئەم بڕانە جیا پیشان دەدرێن.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: لە $date دەڕۆیت.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'بەرواری فڕینەکان دەبێت لە نێوان $start و $end بێت.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ئەم فڕینە لەگەڵ فڕینێکی تر تێکەڵ دەبێت. فڕینەکان دەبێت بەپێی ڕیز بەدوای یەکدا بێن.';
+
+  @override
+  String get travelFlightsOutsideDates => 'هەندێک فڕین لە دەرەوەی بەرواری گەشتەکەتن. بەروارەکان بگۆڕە یان ئەو فڕینانە دەستکاری بکە.';
+
+  @override
+  String get loadErrorBody => 'نەتوانرا ئەمە بار بکرێت. پەیوەندییەکەت بپشکنە و دووبارە هەوڵبدەرەوە.';
+
+  @override
+  String get tryAgain => 'دووبارە هەوڵبدەرەوە';
+
+  @override
+  String get discardChangesTitle => 'گۆڕانکارییەکان فڕێ بدرێن؟';
+
+  @override
+  String get discardChangesBody => 'گۆڕانکاری پاشەکەوتنەکراوت هەیە. ئەگەر ئێستا بڕۆیت، لەدەست دەچن.';
+
+  @override
+  String get discardChangesKeep => 'بەردەوامبە لە دەستکاریکردن';
+
+  @override
+  String get discardChangesDiscard => 'فڕێدان';
+
+  @override
+  String get offlineBanner => 'ئۆفلاین. گۆڕانکارییەکان کاتێک دووبارە پەیوەندی دەکەیتەوە هاوکات دەکرێن.';
+
+  @override
+  String get reminderHelpTitle => 'بیرخستنەوەکان ناگەن؟';
+
+  @override
+  String get reminderHelpSubtitle => 'ڕێکخستنەکانی باتری چاک بکە کە بیرخستنەوەکان دەوەستێنن';
+
+  @override
+  String get reminderHelpBody => 'هەندێک مۆبایل بۆ پاشەکەوتکردنی باتری بەرنامەکان لە پشتەوە دەوەستێنن، ئەمەش دەکرێت بیرخستنەوەکان دوابخات یان بیانوەستێنێت. ڕێگە بە Vaultara بدە بەبێ سنووری باتری کار بکات و دڵنیابە ئاگادارکردنەوەکان لە ڕێکخستنەکانی بەرنامە چالاکن.';
+
+  @override
+  String get reminderHelpOpenBattery => 'کردنەوەی ڕێکخستنەکانی باتری';
+
+  @override
+  String get reminderHelpOpenApp => 'کردنەوەی ڕێکخستنەکانی بەرنامە';
+
+  @override
+  String get showPassword => 'پاسۆرد نیشان بدە';
+
+  @override
+  String get hidePassword => 'پاسۆرد بشارەوە';
+
+  @override
+  String get pinCategory => 'لە سەرەوە جێگیر بکە';
+
+  @override
+  String get unpinCategory => 'جێگیرکردن لابە';
+
+  @override
+  String get clearSearch => 'گەڕان پاک بکەرەوە';
 }

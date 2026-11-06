@@ -1518,7 +1518,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get costCardTitle => 'ຄ່າຕໍ່ອາຍຸ';
 
   @override
-  String get costCardSubtitle => 'ຄ່າໃຊ້ຈ່າຍໃນການຕໍ່ອາຍຸຂອງທ່ານໃນ 12 ເດືອນຂ້າງໜ້າ';
+  String get costCardSubtitle => 'ຄ່າຕໍ່ອາຍຸຂອງທ່ານແຕ່ລະເດືອນ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3059,16 +3059,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ການເດີນທາງຂອງທ່ານຕ້ອງການຄວາມເອົາໃຈໃສ່';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip ອອກເດີນທາງວັນທີ $date ແລະ ມີ $count ຢ່າງທີ່ຕ້ອງແກ້ໄຂກ່ອນທ່ານໄປ.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ເປີດການເດີນທາງ';
@@ -6152,4 +6142,97 @@ class AppLocalizationsLo extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'ແວະພັກທີ່ $country. ກວດວ່າທ່ານຕ້ອງການວີຊາຜ່ານແດນຫຼືບໍ່.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ສະກຸນເງິນ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'ຍອດລວມສະແດງເປັນ $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'ອັດຕາແລກປ່ຽນ';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'ຈຳນວນເງິນໃນສະກຸນອື່ນຖືກແປງເປັນ $currency ດ້ວຍອັດຕາແລກປ່ຽນລາຍວັນ. ແຕ່ລະບັນທຶກເກັບຈຳນວນ ແລະ ສະກຸນເງິນທີ່ທ່ານປ້ອນໄວ້.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'ອັດຕາອັບເດດເມື່ອ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'ບໍ່ມີອັດຕາແລກປ່ຽນສຳລັບ $currencies. ຈຳນວນເຫຼົ່ານີ້ສະແດງແຍກຕ່າງຫາກ.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: ທ່ານອອກເດີນທາງວັນທີ $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'ວັນທີຖ້ຽວບິນຕ້ອງຢູ່ລະຫວ່າງ $start ແລະ $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ຖ້ຽວບິນນີ້ຊ້ອນກັບຖ້ຽວບິນອື່ນ. ຖ້ຽວບິນຕ້ອງຕໍ່ກັນຕາມລຳດັບ.';
+
+  @override
+  String get travelFlightsOutsideDates => 'ບາງຖ້ຽວບິນຢູ່ນອກວັນທີເດີນທາງຂອງທ່ານ. ປ່ຽນວັນທີ ຫຼື ແກ້ໄຂຖ້ຽວບິນເຫຼົ່ານັ້ນ.';
+
+  @override
+  String get loadErrorBody => 'ບໍ່ສາມາດໂຫຼດສິ່ງນີ້ໄດ້. ກວດເບິ່ງການເຊື່ອມຕໍ່ຂອງທ່ານ ແລ້ວລອງໃໝ່.';
+
+  @override
+  String get tryAgain => 'ລອງໃໝ່';
+
+  @override
+  String get discardChangesTitle => 'ຍົກເລີກການປ່ຽນແປງຂອງທ່ານບໍ?';
+
+  @override
+  String get discardChangesBody => 'ທ່ານມີການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ. ຖ້າອອກດຽວນີ້ ມັນຈະຫາຍໄປ.';
+
+  @override
+  String get discardChangesKeep => 'ແກ້ໄຂຕໍ່';
+
+  @override
+  String get discardChangesDiscard => 'ຍົກເລີກ';
+
+  @override
+  String get offlineBanner => 'ອອບລາຍ. ການປ່ຽນແປງຈະຊິງຄ໌ເມື່ອທ່ານເຊື່ອມຕໍ່ອີກຄັ້ງ.';
+
+  @override
+  String get reminderHelpTitle => 'ການເຕືອນບໍ່ມາຮອດບໍ?';
+
+  @override
+  String get reminderHelpSubtitle => 'ແກ້ການຕັ້ງຄ່າແບັດເຕີຣີທີ່ຂັດຂວາງການເຕືອນ';
+
+  @override
+  String get reminderHelpBody => 'ໂທລະສັບບາງລຸ້ນຢຸດແອັບໃນພື້ນຫຼັງເພື່ອປະຫຍັດແບັດເຕີຣີ ເຊິ່ງອາດເຮັດໃຫ້ການເຕືອນຊ້າ ຫຼື ຖືກບລັອກ. ອະນຸຍາດໃຫ້ Vaultara ເຮັດວຽກໂດຍບໍ່ມີຂໍ້ຈຳກັດແບັດເຕີຣີ ແລະ ກວດໃຫ້ແນ່ໃຈວ່າເປີດການແຈ້ງເຕືອນໃນການຕັ້ງຄ່າແອັບແລ້ວ.';
+
+  @override
+  String get reminderHelpOpenBattery => 'ເປີດການຕັ້ງຄ່າແບັດເຕີຣີ';
+
+  @override
+  String get reminderHelpOpenApp => 'ເປີດການຕັ້ງຄ່າແອັບ';
+
+  @override
+  String get showPassword => 'ສະແດງລະຫັດຜ່ານ';
+
+  @override
+  String get hidePassword => 'ເຊື່ອງລະຫັດຜ່ານ';
+
+  @override
+  String get pinCategory => 'ປັກໝຸດຢູ່ເທິງ';
+
+  @override
+  String get unpinCategory => 'ຖອນໝຸດ';
+
+  @override
+  String get clearSearch => 'ລຶບການຄົ້ນຫາ';
 }

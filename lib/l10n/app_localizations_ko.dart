@@ -1518,7 +1518,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get costCardTitle => '갱신 비용';
 
   @override
-  String get costCardSubtitle => '향후 12개월 동안 예상되는 갱신 비용';
+  String get costCardSubtitle => '갱신 비용을 월별로 보여 줍니다';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3059,16 +3059,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => '여행에 확인이 필요합니다';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip 출발일은 $date이며, 출발 전에 해결할 항목이 $count개 있습니다.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => '여행 열기';
@@ -6152,4 +6142,97 @@ class AppLocalizationsKo extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country 경유. 경유 비자가 필요한지 확인하세요.';
   }
+
+  @override
+  String get currencyDisplayTitle => '통화';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return '합계는 $currency로 표시됩니다';
+  }
+
+  @override
+  String get costRatesTitle => '환율';
+
+  @override
+  String costRatesBody(String currency) {
+    return '다른 통화의 금액은 일일 환율로 $currency로 환산됩니다. 각 기록에는 입력한 금액과 통화가 그대로 저장됩니다.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return '환율 업데이트: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies의 환율이 없습니다. 이 금액은 따로 표시됩니다.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: $date에 출발합니다.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return '항공편 날짜는 $start부터 $end 사이여야 합니다.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => '이 항공편이 다른 항공편과 겹칩니다. 항공편은 순서대로 이어져야 합니다.';
+
+  @override
+  String get travelFlightsOutsideDates => '일부 항공편이 여행 날짜 밖에 있습니다. 날짜를 바꾸거나 해당 항공편을 수정하세요.';
+
+  @override
+  String get loadErrorBody => '불러오지 못했습니다. 연결을 확인하고 다시 시도하세요.';
+
+  @override
+  String get tryAgain => '다시 시도';
+
+  @override
+  String get discardChangesTitle => '변경 사항을 취소할까요?';
+
+  @override
+  String get discardChangesBody => '저장되지 않은 변경 사항이 있습니다. 지금 나가면 사라집니다.';
+
+  @override
+  String get discardChangesKeep => '계속 편집';
+
+  @override
+  String get discardChangesDiscard => '취소';
+
+  @override
+  String get offlineBanner => '오프라인입니다. 다시 연결되면 변경 사항이 동기화됩니다.';
+
+  @override
+  String get reminderHelpTitle => '알림이 오지 않나요?';
+
+  @override
+  String get reminderHelpSubtitle => '알림을 막는 배터리 설정 고치기';
+
+  @override
+  String get reminderHelpBody => '일부 휴대전화는 배터리를 아끼기 위해 백그라운드 앱을 중지하며, 이 때문에 알림이 늦어지거나 차단될 수 있습니다. Vaultara가 배터리 제한 없이 실행되도록 허용하고, 앱 설정에서 알림이 켜져 있는지 확인하세요.';
+
+  @override
+  String get reminderHelpOpenBattery => '배터리 설정 열기';
+
+  @override
+  String get reminderHelpOpenApp => '앱 설정 열기';
+
+  @override
+  String get showPassword => '비밀번호 표시';
+
+  @override
+  String get hidePassword => '비밀번호 숨기기';
+
+  @override
+  String get pinCategory => '맨 위에 고정';
+
+  @override
+  String get unpinCategory => '고정 해제';
+
+  @override
+  String get clearSearch => '검색어 지우기';
 }

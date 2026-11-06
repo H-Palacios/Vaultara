@@ -1519,7 +1519,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get costCardTitle => 'Uusimisten hinnat';
 
   @override
-  String get costCardSubtitle => 'Mitä uusimiset maksavat seuraavien 12 kuukauden aikana';
+  String get costCardSubtitle => 'Mitä uusintasi maksavat kuukausi kuukaudelta';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Matkasi vaatii huomiota';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip: lähtö $date, ja $count asiaa pitää korjata ennen lähtöä.',
-      one: '$trip: lähtö $date, ja $count asia pitää korjata ennen lähtöä.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Avaa matka';
@@ -6204,4 +6193,97 @@ class AppLocalizationsFi extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Välilasku maassa $country. Tarkista, tarvitsetko kauttakulkuviisumin.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuutta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Summat näytetään valuutassa $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Valuuttakurssit';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Muissa valuutoissa olevat summat muunnetaan valuuttaan $currency päivittäisillä kursseilla. Jokainen tietue säilyttää antamasi summan ja valuutan.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurssit päivitetty $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Valuutalle $currencies ei ole kurssia. Nämä summat näytetään erikseen.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: lähdet $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Lentojen päivämäärien on oltava välillä $start–$end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Tämä lento menee päällekkäin toisen lennon kanssa. Lentojen on seurattava toisiaan järjestyksessä.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Jotkin lennot ovat matkasi päivämäärien ulkopuolella. Muuta päivämääriä tai muokkaa näitä lentoja.';
+
+  @override
+  String get loadErrorBody => 'Tätä ei voitu ladata. Tarkista yhteytesi ja yritä uudelleen.';
+
+  @override
+  String get tryAgain => 'Yritä uudelleen';
+
+  @override
+  String get discardChangesTitle => 'Hylätäänkö muutokset?';
+
+  @override
+  String get discardChangesBody => 'Sinulla on tallentamattomia muutoksia. Jos poistut nyt, ne menetetään.';
+
+  @override
+  String get discardChangesKeep => 'Jatka muokkausta';
+
+  @override
+  String get discardChangesDiscard => 'Hylkää';
+
+  @override
+  String get offlineBanner => 'Ei yhteyttä. Muutokset synkronoidaan, kun yhteys palaa.';
+
+  @override
+  String get reminderHelpTitle => 'Eivätkö muistutukset saavu perille?';
+
+  @override
+  String get reminderHelpSubtitle => 'Korjaa akkuasetukset, jotka estävät muistutukset';
+
+  @override
+  String get reminderHelpBody => 'Jotkin puhelimet pysäyttävät taustasovelluksia akun säästämiseksi, mikä voi viivästyttää tai estää muistutuksia. Salli Vaultaran toimia ilman akkurajoituksia ja varmista, että ilmoitukset ovat päällä sovelluksen asetuksissa.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Avaa akkuasetukset';
+
+  @override
+  String get reminderHelpOpenApp => 'Avaa sovelluksen asetukset';
+
+  @override
+  String get showPassword => 'Näytä salasana';
+
+  @override
+  String get hidePassword => 'Piilota salasana';
+
+  @override
+  String get pinCategory => 'Kiinnitä ylös';
+
+  @override
+  String get unpinCategory => 'Poista kiinnitys';
+
+  @override
+  String get clearSearch => 'Tyhjennä haku';
 }

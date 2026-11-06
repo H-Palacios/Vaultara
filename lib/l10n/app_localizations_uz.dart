@@ -1519,7 +1519,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get costCardTitle => 'Uzaytirish xarajatlari';
 
   @override
-  String get costCardSubtitle => 'Keyingi 12 oyda uzaytirishlar sizga qanchaga tushadi';
+  String get costCardSubtitle => 'Yangilanishlaringizning oylik narxi';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Sayohatingiz eʼtibor talab qiladi';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip sayohati $date kuni boshlanadi va joʻnashdan oldin $count ta narsani tuzatish kerak.',
-      one: '$trip sayohati $date kuni boshlanadi va joʻnashdan oldin $count ta narsani tuzatish kerak.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Sayohatni ochish';
@@ -6204,4 +6193,97 @@ class AppLocalizationsUz extends AppLocalizations {
   String travelTransitNote(String country) {
     return '${country}da oraliq to‘xtash. Tranzit viza kerakligini tekshiring.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valyuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Jami summalar $currency da ko‘rsatiladi';
+  }
+
+  @override
+  String get costRatesTitle => 'Valyuta kurslari';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Boshqa valyutalardagi summalar kunlik kurs bo‘yicha $currency ga o‘tkaziladi. Har bir yozuv siz kiritgan summa va valyutani saqlaydi.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurslar yangilandi: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies uchun kurs yo‘q. Bu summalar alohida ko‘rsatiladi.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: siz $date kuni yo‘lga chiqasiz.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Reys sanalari $start va $end oralig‘ida bo‘lishi kerak.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Bu reys boshqa reys bilan to‘qnashadi. Reyslar ketma-ket tartibda kelishi kerak.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Ba’zi reyslar sayohat sanalaringizdan tashqarida. Sanalarni o‘zgartiring yoki o‘sha reyslarni tahrirlang.';
+
+  @override
+  String get loadErrorBody => 'Buni yuklab bo‘lmadi. Ulanishni tekshiring va qayta urinib ko‘ring.';
+
+  @override
+  String get tryAgain => 'Qayta urinish';
+
+  @override
+  String get discardChangesTitle => 'O‘zgarishlar bekor qilinsinmi?';
+
+  @override
+  String get discardChangesBody => 'Sizda saqlanmagan o‘zgarishlar bor. Hozir chiqsangiz, ular yo‘qoladi.';
+
+  @override
+  String get discardChangesKeep => 'Tahrirlashni davom ettirish';
+
+  @override
+  String get discardChangesDiscard => 'Bekor qilish';
+
+  @override
+  String get offlineBanner => 'Oflayn. Qayta ulanganingizda o‘zgarishlar sinxronlanadi.';
+
+  @override
+  String get reminderHelpTitle => 'Eslatmalar kelmayaptimi?';
+
+  @override
+  String get reminderHelpSubtitle => 'Eslatmalarni to‘sadigan batareya sozlamalarini tuzating';
+
+  @override
+  String get reminderHelpBody => 'Ba’zi telefonlar batareyani tejash uchun fondagi ilovalarni to‘xtatadi, bu eslatmalarni kechiktirishi yoki to‘sib qo‘yishi mumkin. Vaultara ilovasiga batareya cheklovlarisiz ishlashga ruxsat bering va ilova sozlamalarida bildirishnomalar yoqilganini tekshiring.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Batareya sozlamalarini ochish';
+
+  @override
+  String get reminderHelpOpenApp => 'Ilova sozlamalarini ochish';
+
+  @override
+  String get showPassword => 'Parolni ko‘rsatish';
+
+  @override
+  String get hidePassword => 'Parolni yashirish';
+
+  @override
+  String get pinCategory => 'Tepaga mahkamlash';
+
+  @override
+  String get unpinCategory => 'Mahkamlashni olib tashlash';
+
+  @override
+  String get clearSearch => 'Qidiruvni tozalash';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get costCardTitle => 'Yenileme ücretleri';
 
   @override
-  String get costCardSubtitle => 'Önümüzdeki 12 ayda yenilemelerinizin maliyeti';
+  String get costCardSubtitle => 'Yenilemelerinizin aylık maliyeti';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Seyahatiniz ilgi bekliyor';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date tarihinde başlıyor ve yola çıkmadan önce düzeltilmesi gereken $count şey var.',
-      one: '$trip $date tarihinde başlıyor ve yola çıkmadan önce düzeltilmesi gereken $count şey var.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Seyahati aç';
@@ -6204,4 +6193,97 @@ class AppLocalizationsTr extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country ülkesinde aktarma. Transit vizeye ihtiyacınız olup olmadığını kontrol edin.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Para birimi';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Toplamlar $currency olarak gösterilir';
+  }
+
+  @override
+  String get costRatesTitle => 'Döviz kurları';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Diğer para birimlerindeki tutarlar günlük döviz kurlarıyla $currency birimine çevrilir. Her kayıt, girdiğiniz tutarı ve para birimini korur.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kurlar $date tarihinde güncellendi';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies için döviz kuru yok. Bu tutarlar ayrı gösterilir.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: $date tarihinde yola çıkıyorsunuz.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Uçuş tarihleri $start ile $end arasında olmalıdır.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Bu uçuş başka bir uçuşla çakışıyor. Uçuşlar sırayla birbirini izlemelidir.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Bazı uçuşlar seyahat tarihlerinizin dışında. Tarihleri değiştirin veya bu uçuşları düzenleyin.';
+
+  @override
+  String get loadErrorBody => 'Bu yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.';
+
+  @override
+  String get tryAgain => 'Tekrar dene';
+
+  @override
+  String get discardChangesTitle => 'Değişiklikler silinsin mi?';
+
+  @override
+  String get discardChangesBody => 'Kaydedilmemiş değişiklikleriniz var. Şimdi çıkarsanız kaybolacaklar.';
+
+  @override
+  String get discardChangesKeep => 'Düzenlemeye devam et';
+
+  @override
+  String get discardChangesDiscard => 'Sil';
+
+  @override
+  String get offlineBanner => 'Çevrimdışı. Değişiklikler yeniden bağlandığınızda eşitlenecek.';
+
+  @override
+  String get reminderHelpTitle => 'Hatırlatmalar gelmiyor mu?';
+
+  @override
+  String get reminderHelpSubtitle => 'Hatırlatmaları engelleyen pil ayarlarını düzeltin';
+
+  @override
+  String get reminderHelpBody => 'Bazı telefonlar pil tasarrufu için arka plandaki uygulamaları durdurur; bu da hatırlatmaları geciktirebilir veya engelleyebilir. Vaultara’nın pil kısıtlaması olmadan çalışmasına izin verin ve uygulama ayarlarında bildirimlerin açık olduğundan emin olun.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Pil ayarlarını aç';
+
+  @override
+  String get reminderHelpOpenApp => 'Uygulama ayarlarını aç';
+
+  @override
+  String get showPassword => 'Parolayı göster';
+
+  @override
+  String get hidePassword => 'Parolayı gizle';
+
+  @override
+  String get pinCategory => 'En üste sabitle';
+
+  @override
+  String get unpinCategory => 'Sabitlemeyi kaldır';
+
+  @override
+  String get clearSearch => 'Aramayı temizle';
 }

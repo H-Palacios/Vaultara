@@ -1519,7 +1519,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get costCardTitle => 'Vernieuwingskosten';
 
   @override
-  String get costCardSubtitle => 'Wat je vernieuwingen de komende 12 maanden kosten';
+  String get costCardSubtitle => 'Wat je verlengingen kosten, maand per maand';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Je reis heeft aandacht nodig';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip vertrekt op $date, en er moeten $count dingen geregeld worden voordat je gaat.',
-      one: '$trip vertrekt op $date, en er moet $count ding geregeld worden voordat je gaat.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Reis openen';
@@ -6204,4 +6193,97 @@ class AppLocalizationsNl extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Tussenstop in $country. Controleer of je een transitvisum nodig hebt.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totalen worden getoond in $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Wisselkoersen';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Bedragen in andere valuta worden omgerekend naar $currency met dagelijkse wisselkoersen. Elk item bewaart het bedrag en de valuta die je hebt ingevoerd.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Koersen bijgewerkt op $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Geen wisselkoers voor $currencies. Deze bedragen worden apart getoond.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: je vertrekt op $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'De vluchtdata moeten tussen $start en $end liggen.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Deze vlucht overlapt met een andere vlucht. Vluchten moeten elkaar op volgorde opvolgen.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Sommige vluchten vallen buiten je reisdata. Pas de data aan of bewerk die vluchten.';
+
+  @override
+  String get loadErrorBody => 'Dit kon niet worden geladen. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
+  String get tryAgain => 'Opnieuw proberen';
+
+  @override
+  String get discardChangesTitle => 'Wijzigingen verwerpen?';
+
+  @override
+  String get discardChangesBody => 'Je hebt niet-opgeslagen wijzigingen. Als je nu weggaat, gaan ze verloren.';
+
+  @override
+  String get discardChangesKeep => 'Verder bewerken';
+
+  @override
+  String get discardChangesDiscard => 'Verwerpen';
+
+  @override
+  String get offlineBanner => 'Offline. Wijzigingen worden gesynchroniseerd zodra je weer verbinding hebt.';
+
+  @override
+  String get reminderHelpTitle => 'Komen herinneringen niet aan?';
+
+  @override
+  String get reminderHelpSubtitle => 'Herstel batterij-instellingen die herinneringen blokkeren';
+
+  @override
+  String get reminderHelpBody => 'Sommige telefoons stoppen apps op de achtergrond om batterij te besparen, waardoor herinneringen kunnen vertragen of worden geblokkeerd. Sta toe dat Vaultara zonder batterijbeperkingen draait en controleer of meldingen aanstaan in de app-instellingen.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Batterij-instellingen openen';
+
+  @override
+  String get reminderHelpOpenApp => 'App-instellingen openen';
+
+  @override
+  String get showPassword => 'Wachtwoord tonen';
+
+  @override
+  String get hidePassword => 'Wachtwoord verbergen';
+
+  @override
+  String get pinCategory => 'Bovenaan vastzetten';
+
+  @override
+  String get unpinCategory => 'Losmaken';
+
+  @override
+  String get clearSearch => 'Zoekopdracht wissen';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get costCardTitle => 'Iindleko zokuvuselela';
 
   @override
-  String get costCardSubtitle => 'Oko kuza kubiza ukuvuselela kwakho kwiinyanga ezili-12 ezizayo';
+  String get costCardSubtitle => 'Iindleko zokuhlaziya kwakho, inyanga nenyanga';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Uhambo Lwakho Lufuna Ingqwalasela';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Uhambo $trip luhamba ngomhla we-$date, kwaye izinto ezi-$count zifuna ukulungiswa ngaphambi kokuba uhambe.',
-      one: 'Uhambo $trip luhamba ngomhla we-$date, kwaye into e-$count ifuna ukulungiswa ngaphambi kokuba uhambe.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Vula Uhambo';
@@ -6204,4 +6193,97 @@ class AppLocalizationsXh extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Ukumisa e-$country. Khangela ukuba ufuna ivisa yokudlula na.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Imali';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Iintlobo zonke zibonisiwe nge-$currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Amazinga olutshintshiselwano';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Imali kwezinye iimali iguqulelwa kwi-$currency ngamazinga olutshintshiselwano amihla ngamihla. Irekhodi ngalinye ligcina isixa nemali oyifakileyo.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Amazinga aphuculwe $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Akukho zinga lokutshintshiselana le-$currencies. Ezi ntlobo zibonisiwe ngokwahlukeneyo.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: uhamba ngomhla we-$date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Imihla yeenqwelomafu kufuneka ibe phakathi kwe-$start ne-$end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Le nqwelomafu idibana nenye inqwelomafu. Iinqwelomafu kufuneka zilandelane ngokulandelelana.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Ezinye iinqwelomafu zingaphandle kwemihla yohambo lwakho. Tshintsha imihla okanye hlela ezo nqwelomafu.';
+
+  @override
+  String get loadErrorBody => 'Ayikwazanga ukulayishwa. Khangela uthungelwano lwakho uphinde uzame kwakhona.';
+
+  @override
+  String get tryAgain => 'Zama kwakhona';
+
+  @override
+  String get discardChangesTitle => 'Lahla utshintsho lwakho?';
+
+  @override
+  String get discardChangesBody => 'Unotshintsho olungasindisiwe. Ukuba uphuma ngoku, luya kulahleka.';
+
+  @override
+  String get discardChangesKeep => 'Qhubeka uhlela';
+
+  @override
+  String get discardChangesDiscard => 'Lahla';
+
+  @override
+  String get offlineBanner => 'Akunalwalamano. Utshintsho luya kuvumelanisa xa uqhagamshela kwakhona.';
+
+  @override
+  String get reminderHelpTitle => 'Izikhumbuzo aziphumeleli?';
+
+  @override
+  String get reminderHelpSubtitle => 'Lungisa useto lwebhetri olubhlokayo izikhumbuzo';
+
+  @override
+  String get reminderHelpBody => 'Ezinye iifowuni ziyayeka usetyenziso olukwingasemva ukonga ibhetri, nto leyo enokubambezela okanye ibhloke izikhumbuzo. Vumela iVaultara ibaleke ngaphandle kwezithintelo zebhetri, uze uqinisekise ukuba izaziso zivuliwe kwiisetingi zesicelo.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Vula iisetingi zebhetri';
+
+  @override
+  String get reminderHelpOpenApp => 'Vula iisetingi zesicelo';
+
+  @override
+  String get showPassword => 'Bonisa igama lokugqitha';
+
+  @override
+  String get hidePassword => 'Fihla igama lokugqitha';
+
+  @override
+  String get pinCategory => 'Ncamathelisa phezulu';
+
+  @override
+  String get unpinCategory => 'Susa ukuncamathelisa';
+
+  @override
+  String get clearSearch => 'Cima ukukhangela';
 }

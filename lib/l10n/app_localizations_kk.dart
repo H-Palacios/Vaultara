@@ -1519,7 +1519,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get costCardTitle => 'Жаңарту шығындары';
 
   @override
-  String get costCardSubtitle => 'Алдағы 12 айда жаңартулар қанша тұрады';
+  String get costCardSubtitle => 'Жаңартуларыңыздың айлық құны';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Сапарыңызға назар аудару керек';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip сапары $date күні басталады, шығар алдында $count нәрсені түзету керек.',
-      one: '$trip сапары $date күні басталады, шығар алдында $count нәрсені түзету керек.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Сапарды ашу';
@@ -6204,4 +6193,97 @@ class AppLocalizationsKk extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country елінде аралық аялдама. Транзиттік виза қажет пе, тексеріңіз.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Валюта';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Жиынтықтар $currency валютасында көрсетіледі';
+  }
+
+  @override
+  String get costRatesTitle => 'Валюта бағамдары';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Басқа валютадағы сомалар күнделікті бағаммен $currency валютасына ауыстырылады. Әр жазба сіз енгізген сома мен валютаны сақтайды.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Бағамдар жаңартылды: $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies үшін бағам жоқ. Бұл сомалар бөлек көрсетіледі.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: сіз $date күні шығасыз.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Рейс күндері $start мен $end аралығында болуы керек.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Бұл рейс басқа рейспен қабаттасады. Рейстер ретімен бірінен кейін бірі жүруі керек.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Кейбір рейстер сапар күндерінен тыс. Күндерді өзгертіңіз немесе сол рейстерді өңдеңіз.';
+
+  @override
+  String get loadErrorBody => 'Мұны жүктеу мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
+
+  @override
+  String get tryAgain => 'Қайталау';
+
+  @override
+  String get discardChangesTitle => 'Өзгерістер жойылсын ба?';
+
+  @override
+  String get discardChangesBody => 'Сақталмаған өзгерістер бар. Қазір шықсаңыз, олар жоғалады.';
+
+  @override
+  String get discardChangesKeep => 'Өңдеуді жалғастыру';
+
+  @override
+  String get discardChangesDiscard => 'Жою';
+
+  @override
+  String get offlineBanner => 'Желіден тыс. Қайта қосылғанда өзгерістер синхрондалады.';
+
+  @override
+  String get reminderHelpTitle => 'Ескертулер келмей ме?';
+
+  @override
+  String get reminderHelpSubtitle => 'Ескертулерді бөгейтін батарея параметрлерін түзетіңіз';
+
+  @override
+  String get reminderHelpBody => 'Кейбір телефондар батареяны үнемдеу үшін фондағы қолданбаларды тоқтатады, бұл ескертулерді кешіктіруі немесе бөгеуі мүмкін. Vaultara қолданбасына батарея шектеуінсіз жұмыс істеуге рұқсат беріңіз және қолданба параметрлерінде хабарландырулар қосулы екеніне көз жеткізіңіз.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Батарея параметрлерін ашу';
+
+  @override
+  String get reminderHelpOpenApp => 'Қолданба параметрлерін ашу';
+
+  @override
+  String get showPassword => 'Құпиясөзді көрсету';
+
+  @override
+  String get hidePassword => 'Құпиясөзді жасыру';
+
+  @override
+  String get pinCategory => 'Жоғарыға бекіту';
+
+  @override
+  String get unpinCategory => 'Бекітуді алып тастау';
+
+  @override
+  String get clearSearch => 'Іздеуді тазалау';
 }

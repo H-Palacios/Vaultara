@@ -1551,7 +1551,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get costCardTitle => 'Koszty odnowień';
 
   @override
-  String get costCardSubtitle => 'Ile kosztować będą Twoje odnowienia w ciągu najbliższych 12 miesięcy';
+  String get costCardSubtitle => 'Ile kosztują Twoje odnowienia, miesiąc po miesiącu';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3143,19 +3143,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Twoja podróż wymaga uwagi';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip: wyjazd $date. Przed wyjazdem do załatwienia: $count rzeczy.',
-      many: '$trip: wyjazd $date. Przed wyjazdem do załatwienia: $count rzeczy.',
-      few: '$trip: wyjazd $date. Przed wyjazdem do załatwienia: $count rzeczy.',
-      one: '$trip: wyjazd $date. Przed wyjazdem do załatwienia: $count rzecz.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Otwórz podróż';
@@ -6356,4 +6343,97 @@ class AppLocalizationsPl extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Przesiadka w kraju $country. Sprawdź, czy potrzebujesz wizy tranzytowej.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Waluta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Sumy są wyświetlane w $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Kursy walut';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Kwoty w innych walutach są przeliczane na $currency według dziennych kursów. Każdy rekord zachowuje wpisaną przez Ciebie kwotę i walutę.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Kursy zaktualizowano $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Brak kursu dla $currencies. Te kwoty są pokazane osobno.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: wyjeżdżasz $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Daty lotów muszą mieścić się między $start a $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ten lot nakłada się na inny lot. Loty muszą następować po sobie w kolejności.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Niektóre loty wypadają poza datami podróży. Zmień daty lub edytuj te loty.';
+
+  @override
+  String get loadErrorBody => 'Nie udało się tego wczytać. Sprawdź połączenie i spróbuj ponownie.';
+
+  @override
+  String get tryAgain => 'Spróbuj ponownie';
+
+  @override
+  String get discardChangesTitle => 'Odrzucić zmiany?';
+
+  @override
+  String get discardChangesBody => 'Masz niezapisane zmiany. Jeśli wyjdziesz teraz, zostaną utracone.';
+
+  @override
+  String get discardChangesKeep => 'Kontynuuj edycję';
+
+  @override
+  String get discardChangesDiscard => 'Odrzuć';
+
+  @override
+  String get offlineBanner => 'Tryb offline. Zmiany zsynchronizują się po ponownym połączeniu.';
+
+  @override
+  String get reminderHelpTitle => 'Przypomnienia nie docierają?';
+
+  @override
+  String get reminderHelpSubtitle => 'Napraw ustawienia baterii blokujące przypomnienia';
+
+  @override
+  String get reminderHelpBody => 'Niektóre telefony zatrzymują aplikacje w tle, aby oszczędzać baterię, co może opóźniać lub blokować przypomnienia. Zezwól aplikacji Vaultara na działanie bez ograniczeń baterii i sprawdź, czy powiadomienia są włączone w ustawieniach aplikacji.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Otwórz ustawienia baterii';
+
+  @override
+  String get reminderHelpOpenApp => 'Otwórz ustawienia aplikacji';
+
+  @override
+  String get showPassword => 'Pokaż hasło';
+
+  @override
+  String get hidePassword => 'Ukryj hasło';
+
+  @override
+  String get pinCategory => 'Przypnij na górze';
+
+  @override
+  String get unpinCategory => 'Odepnij';
+
+  @override
+  String get clearSearch => 'Wyczyść wyszukiwanie';
 }

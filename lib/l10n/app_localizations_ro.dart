@@ -1528,7 +1528,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get costCardTitle => 'Costuri de reînnoire';
 
   @override
-  String get costCardSubtitle => 'Cât te vor costa reînnoirile în următoarele 12 luni';
+  String get costCardSubtitle => 'Cât te costă reînnoirile, lună de lună';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3099,18 +3099,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Călătoria ta are nevoie de atenție';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip pleacă pe $date, iar $count de lucruri trebuie rezolvate înainte să pleci.',
-      few: '$trip pleacă pe $date, iar $count lucruri trebuie rezolvate înainte să pleci.',
-      one: '$trip pleacă pe $date, iar $count lucru trebuie rezolvat înainte să pleci.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Deschide călătoria';
@@ -6276,4 +6264,97 @@ class AppLocalizationsRo extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Escală în $country. Verifică dacă ai nevoie de viză de tranzit.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Monedă';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totalurile sunt afișate în $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Cursuri valutare';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Sumele în alte monede sunt convertite în $currency cu cursuri valutare zilnice. Fiecare înregistrare păstrează suma și moneda introduse de tine.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Cursuri actualizate la $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Nu există curs valutar pentru $currencies. Aceste sume sunt afișate separat.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: pleci pe $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Datele zborurilor trebuie să fie între $start și $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Acest zbor se suprapune cu alt zbor. Zborurile trebuie să urmeze unul după altul în ordine.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Unele zboruri sunt în afara datelor călătoriei. Schimbă datele sau editează acele zboruri.';
+
+  @override
+  String get loadErrorBody => 'Nu am putut încărca acest conținut. Verifică conexiunea și încearcă din nou.';
+
+  @override
+  String get tryAgain => 'Încearcă din nou';
+
+  @override
+  String get discardChangesTitle => 'Renunți la modificări?';
+
+  @override
+  String get discardChangesBody => 'Ai modificări nesalvate. Dacă ieși acum, vor fi pierdute.';
+
+  @override
+  String get discardChangesKeep => 'Continuă editarea';
+
+  @override
+  String get discardChangesDiscard => 'Renunță';
+
+  @override
+  String get offlineBanner => 'Offline. Modificările se vor sincroniza când te reconectezi.';
+
+  @override
+  String get reminderHelpTitle => 'Nu primești mementourile?';
+
+  @override
+  String get reminderHelpSubtitle => 'Remediază setările bateriei care blochează mementourile';
+
+  @override
+  String get reminderHelpBody => 'Unele telefoane opresc aplicațiile din fundal pentru a economisi bateria, ceea ce poate întârzia sau bloca mementourile. Permite aplicației Vaultara să ruleze fără restricții de baterie și verifică dacă notificările sunt activate în setările aplicației.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Deschide setările bateriei';
+
+  @override
+  String get reminderHelpOpenApp => 'Deschide setările aplicației';
+
+  @override
+  String get showPassword => 'Afișează parola';
+
+  @override
+  String get hidePassword => 'Ascunde parola';
+
+  @override
+  String get pinCategory => 'Fixează sus';
+
+  @override
+  String get unpinCategory => 'Anulează fixarea';
+
+  @override
+  String get clearSearch => 'Șterge căutarea';
 }

@@ -1527,7 +1527,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get costCardTitle => 'Stroški obnov';
 
   @override
-  String get costCardSubtitle => 'Koliko vas bodo stale obnove v naslednjih 12 mesecih';
+  String get costCardSubtitle => 'Koliko vas stanejo podaljšanja, mesec za mesecem';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3119,19 +3119,6 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Vaše potovanje potrebuje pozornost';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Potovanje $trip se začne $date, pred odhodom pa je treba urediti $count stvari.',
-      few: 'Potovanje $trip se začne $date, pred odhodom pa je treba urediti $count stvari.',
-      two: 'Potovanje $trip se začne $date, pred odhodom pa je treba urediti $count stvari.',
-      one: 'Potovanje $trip se začne $date, pred odhodom pa je treba urediti $count stvar.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Odpri potovanje';
@@ -6338,4 +6325,97 @@ class AppLocalizationsSl extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Prestop v državi $country. Preverite, ali potrebujete tranzitni vizum.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Valuta';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Vsote so prikazane v valuti $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Menjalni tečaji';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Zneski v drugih valutah se pretvorijo v $currency po dnevnih tečajih. Vsak zapis ohrani znesek in valuto, ki ste ju vnesli.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tečaji posodobljeni $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Za $currencies tečaj ni na voljo. Ti zneski so prikazani ločeno.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: odpotujete $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Datumi letov morajo biti med $start in $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Ta let se prekriva z drugim letom. Leti morajo slediti drug drugemu po vrstnem redu.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Nekateri leti so zunaj datumov vašega potovanja. Spremenite datume ali uredite te lete.';
+
+  @override
+  String get loadErrorBody => 'Tega ni bilo mogoče naložiti. Preverite povezavo in poskusite znova.';
+
+  @override
+  String get tryAgain => 'Poskusi znova';
+
+  @override
+  String get discardChangesTitle => 'Zavrzi spremembe?';
+
+  @override
+  String get discardChangesBody => 'Imate neshranjene spremembe. Če zdaj odidete, bodo izgubljene.';
+
+  @override
+  String get discardChangesKeep => 'Nadaljuj z urejanjem';
+
+  @override
+  String get discardChangesDiscard => 'Zavrzi';
+
+  @override
+  String get offlineBanner => 'Brez povezave. Spremembe se bodo sinhronizirale, ko se znova povežete.';
+
+  @override
+  String get reminderHelpTitle => 'Opomniki ne prispejo?';
+
+  @override
+  String get reminderHelpSubtitle => 'Popravite nastavitve baterije, ki blokirajo opomnike';
+
+  @override
+  String get reminderHelpBody => 'Nekateri telefoni zaustavijo aplikacije v ozadju, da prihranijo baterijo, kar lahko zakasni ali blokira opomnike. Dovolite, da Vaultara deluje brez omejitev baterije, in preverite, ali so obvestila vklopljena v nastavitvah aplikacije.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Odpri nastavitve baterije';
+
+  @override
+  String get reminderHelpOpenApp => 'Odpri nastavitve aplikacije';
+
+  @override
+  String get showPassword => 'Pokaži geslo';
+
+  @override
+  String get hidePassword => 'Skrij geslo';
+
+  @override
+  String get pinCategory => 'Pripni na vrh';
+
+  @override
+  String get unpinCategory => 'Odpni';
+
+  @override
+  String get clearSearch => 'Počisti iskanje';
 }

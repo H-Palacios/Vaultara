@@ -1519,7 +1519,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get costCardTitle => 'ನವೀಕರಣ ವೆಚ್ಚಗಳು';
 
   @override
-  String get costCardSubtitle => 'ಮುಂದಿನ 12 ತಿಂಗಳಲ್ಲಿ ನಿಮ್ಮ ನವೀಕರಣಗಳಿಗೆ ಎಷ್ಟು ವೆಚ್ಚವಾಗುತ್ತದೆ';
+  String get costCardSubtitle => 'ನಿಮ್ಮ ನವೀಕರಣಗಳ ತಿಂಗಳ ವೆಚ್ಚ';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'ನಿಮ್ಮ ಪ್ರಯಾಣಕ್ಕೆ ಗಮನ ಬೇಕಿದೆ';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip $date ರಂದು ಹೊರಡುತ್ತದೆ, ಮತ್ತು ನೀವು ಹೋಗುವ ಮೊದಲು $count ವಿಷಯಗಳನ್ನು ಸರಿಪಡಿಸಬೇಕು.',
-      one: '$trip $date ರಂದು ಹೊರಡುತ್ತದೆ, ಮತ್ತು ನೀವು ಹೋಗುವ ಮೊದಲು $count ವಿಷಯವನ್ನು ಸರಿಪಡಿಸಬೇಕು.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'ಪ್ರಯಾಣ ತೆರೆಯಿರಿ';
@@ -6204,4 +6193,97 @@ class AppLocalizationsKn extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country ನಲ್ಲಿ ಸ್ಟಾಪ್‌ಓವರ್. ಟ್ರಾನ್ಸಿಟ್ ವೀಸಾ ಬೇಕೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'ಕರೆನ್ಸಿ';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು $currency ನಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ';
+  }
+
+  @override
+  String get costRatesTitle => 'ವಿನಿಮಯ ದರಗಳು';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'ಇತರ ಕರೆನ್ಸಿಗಳ ಮೊತ್ತಗಳನ್ನು ದೈನಂದಿನ ವಿನಿಮಯ ದರದಲ್ಲಿ $currency ಗೆ ಪರಿವರ್ತಿಸಲಾಗುತ್ತದೆ. ಪ್ರತಿ ದಾಖಲೆಯು ನೀವು ನಮೂದಿಸಿದ ಮೊತ್ತ ಮತ್ತು ಕರೆನ್ಸಿಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'ದರಗಳನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies ಗೆ ವಿನಿಮಯ ದರ ಲಭ್ಯವಿಲ್ಲ. ಈ ಮೊತ್ತಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ತೋರಿಸಲಾಗಿದೆ.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: ನೀವು $date ರಂದು ಹೊರಡುತ್ತೀರಿ.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'ವಿಮಾನ ದಿನಾಂಕಗಳು $start ಮತ್ತು $end ನಡುವೆ ಇರಬೇಕು.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'ಈ ವಿಮಾನವು ಬೇರೊಂದು ವಿಮಾನದೊಂದಿಗೆ ಅತಿಕ್ರಮಿಸುತ್ತದೆ. ವಿಮಾನಗಳು ಕ್ರಮವಾಗಿ ಒಂದರ ನಂತರ ಒಂದು ಬರಬೇಕು.';
+
+  @override
+  String get travelFlightsOutsideDates => 'ಕೆಲವು ವಿಮಾನಗಳು ನಿಮ್ಮ ಪ್ರವಾಸದ ದಿನಾಂಕಗಳ ಹೊರಗಿವೆ. ದಿನಾಂಕಗಳನ್ನು ಬದಲಿಸಿ ಅಥವಾ ಆ ವಿಮಾನಗಳನ್ನು ಸಂಪಾದಿಸಿ.';
+
+  @override
+  String get loadErrorBody => 'ಇದನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get tryAgain => 'ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ';
+
+  @override
+  String get discardChangesTitle => 'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಬೇಕೇ?';
+
+  @override
+  String get discardChangesBody => 'ನಿಮ್ಮಲ್ಲಿ ಉಳಿಸದ ಬದಲಾವಣೆಗಳಿವೆ. ಈಗ ಹೊರಟರೆ ಅವು ಕಳೆದುಹೋಗುತ್ತವೆ.';
+
+  @override
+  String get discardChangesKeep => 'ಸಂಪಾದನೆ ಮುಂದುವರಿಸಿ';
+
+  @override
+  String get discardChangesDiscard => 'ತ್ಯಜಿಸಿ';
+
+  @override
+  String get offlineBanner => 'ಆಫ್‌ಲೈನ್. ನೀವು ಮತ್ತೆ ಸಂಪರ್ಕಿಸಿದಾಗ ಬದಲಾವಣೆಗಳು ಸಿಂಕ್ ಆಗುತ್ತವೆ.';
+
+  @override
+  String get reminderHelpTitle => 'ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತಿಲ್ಲವೇ?';
+
+  @override
+  String get reminderHelpSubtitle => 'ಜ್ಞಾಪನೆಗಳನ್ನು ತಡೆಯುವ ಬ್ಯಾಟರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸರಿಪಡಿಸಿ';
+
+  @override
+  String get reminderHelpBody => 'ಕೆಲವು ಫೋನ್‌ಗಳು ಬ್ಯಾಟರಿ ಉಳಿಸಲು ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಆ್ಯಪ್‌ಗಳನ್ನು ನಿಲ್ಲಿಸುತ್ತವೆ, ಇದರಿಂದ ಜ್ಞಾಪನೆಗಳು ತಡವಾಗಬಹುದು ಅಥವಾ ತಡೆಯಲ್ಪಡಬಹುದು. Vaultara ಅನ್ನು ಬ್ಯಾಟರಿ ಮಿತಿಯಿಲ್ಲದೆ ಚಲಿಸಲು ಅನುಮತಿಸಿ, ಮತ್ತು ಆ್ಯಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಅಧಿಸೂಚನೆಗಳು ಆನ್ ಆಗಿವೆ ಎಂದು ಖಚಿತಪಡಿಸಿ.';
+
+  @override
+  String get reminderHelpOpenBattery => 'ಬ್ಯಾಟರಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ';
+
+  @override
+  String get reminderHelpOpenApp => 'ಆ್ಯಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ';
+
+  @override
+  String get showPassword => 'ಪಾಸ್‌ವರ್ಡ್ ತೋರಿಸಿ';
+
+  @override
+  String get hidePassword => 'ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ';
+
+  @override
+  String get pinCategory => 'ಮೇಲೆ ಪಿನ್ ಮಾಡಿ';
+
+  @override
+  String get unpinCategory => 'ಪಿನ್ ತೆಗೆಯಿರಿ';
+
+  @override
+  String get clearSearch => 'ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ';
 }

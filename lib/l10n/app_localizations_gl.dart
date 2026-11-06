@@ -1519,7 +1519,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get costCardTitle => 'Custos de renovación';
 
   @override
-  String get costCardSubtitle => 'O que custarán as túas renovacións nos próximos 12 meses';
+  String get costCardSubtitle => 'O que custan as túas renovacións, mes a mes';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'A túa viaxe precisa atención';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'A viaxe $trip sae o $date, e hai $count cousas que arranxar antes de ir.',
-      one: 'A viaxe $trip sae o $date, e hai $count cousa que arranxar antes de ir.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Abrir viaxe';
@@ -6204,4 +6193,97 @@ class AppLocalizationsGl extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Escala en $country. Comproba se necesitas un visado de tránsito.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Moeda';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Os totais móstranse en $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Tipos de cambio';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Os importes noutras moedas convértense a $currency con tipos de cambio diarios. Cada rexistro conserva o importe e a moeda que introduciches.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Tipos actualizados o $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'Non hai tipo de cambio para $currencies. Estes importes móstranse á parte.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: sales o $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'As datas dos voos deben estar entre o $start e o $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'Este voo solápase con outro voo. Os voos deben seguirse en orde.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Algúns voos están fóra das datas da viaxe. Cambia as datas ou edita eses voos.';
+
+  @override
+  String get loadErrorBody => 'Non se puido cargar. Comproba a conexión e téntao de novo.';
+
+  @override
+  String get tryAgain => 'Tentar de novo';
+
+  @override
+  String get discardChangesTitle => 'Descartar os cambios?';
+
+  @override
+  String get discardChangesBody => 'Tes cambios sen gardar. Se saes agora, perderanse.';
+
+  @override
+  String get discardChangesKeep => 'Seguir editando';
+
+  @override
+  String get discardChangesDiscard => 'Descartar';
+
+  @override
+  String get offlineBanner => 'Sen conexión. Os cambios sincronizaranse cando te volvas conectar.';
+
+  @override
+  String get reminderHelpTitle => 'Non che chegan os recordatorios?';
+
+  @override
+  String get reminderHelpSubtitle => 'Soluciona os axustes de batería que bloquean os recordatorios';
+
+  @override
+  String get reminderHelpBody => 'Algúns teléfonos detén as aplicacións en segundo plano para aforrar batería, o que pode atrasar ou bloquear os recordatorios. Permite que Vaultara funcione sen restricións de batería e comproba que as notificacións están activadas nos axustes da aplicación.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Abrir axustes da batería';
+
+  @override
+  String get reminderHelpOpenApp => 'Abrir axustes da aplicación';
+
+  @override
+  String get showPassword => 'Amosar contrasinal';
+
+  @override
+  String get hidePassword => 'Ocultar contrasinal';
+
+  @override
+  String get pinCategory => 'Fixar arriba';
+
+  @override
+  String get unpinCategory => 'Desfixar';
+
+  @override
+  String get clearSearch => 'Borrar a busca';
 }

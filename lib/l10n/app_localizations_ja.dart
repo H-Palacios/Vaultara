@@ -1506,7 +1506,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get costCardTitle => '更新費用';
 
   @override
-  String get costCardSubtitle => '今後12か月の更新にかかる費用';
+  String get costCardSubtitle => '更新にかかる費用を月ごとに表示';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3047,16 +3047,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => '旅行に対応が必要です';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$tripは$dateに出発します。出発前に直す項目が$count件あります。',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => '旅行を開く';
@@ -6140,4 +6130,97 @@ class AppLocalizationsJa extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$countryで乗り継ぎ。通過ビザが必要か確認してください。';
   }
+
+  @override
+  String get currencyDisplayTitle => '通貨';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return '合計は$currencyで表示されます';
+  }
+
+  @override
+  String get costRatesTitle => '為替レート';
+
+  @override
+  String costRatesBody(String currency) {
+    return '他の通貨の金額は、毎日の為替レートで$currencyに換算されます。各記録には、入力した金額と通貨がそのまま保存されます。';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'レート更新日：$date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currenciesの為替レートはありません。これらの金額は別に表示されます。';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip：$dateに出発します。';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'フライトの日付は$startから$endの間にしてください。';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'このフライトは別のフライトと重なっています。フライトは順番に続く必要があります。';
+
+  @override
+  String get travelFlightsOutsideDates => '旅行の日程外のフライトがあります。日程を変更するか、そのフライトを編集してください。';
+
+  @override
+  String get loadErrorBody => '読み込めませんでした。接続を確認して、もう一度お試しください。';
+
+  @override
+  String get tryAgain => '再試行';
+
+  @override
+  String get discardChangesTitle => '変更を破棄しますか？';
+
+  @override
+  String get discardChangesBody => '保存されていない変更があります。今退出すると失われます。';
+
+  @override
+  String get discardChangesKeep => '編集を続ける';
+
+  @override
+  String get discardChangesDiscard => '破棄';
+
+  @override
+  String get offlineBanner => 'オフラインです。再接続すると変更が同期されます。';
+
+  @override
+  String get reminderHelpTitle => 'リマインダーが届きませんか？';
+
+  @override
+  String get reminderHelpSubtitle => 'リマインダーを妨げるバッテリー設定を修正';
+
+  @override
+  String get reminderHelpBody => '一部のスマートフォンは、バッテリーを節約するためにバックグラウンドのアプリを停止し、リマインダーが遅れたり届かなくなったりすることがあります。Vaultaraをバッテリー制限なしで動作させ、アプリの設定で通知がオンになっていることを確認してください。';
+
+  @override
+  String get reminderHelpOpenBattery => 'バッテリー設定を開く';
+
+  @override
+  String get reminderHelpOpenApp => 'アプリの設定を開く';
+
+  @override
+  String get showPassword => 'パスワードを表示';
+
+  @override
+  String get hidePassword => 'パスワードを非表示';
+
+  @override
+  String get pinCategory => '先頭に固定';
+
+  @override
+  String get unpinCategory => '固定を解除';
+
+  @override
+  String get clearSearch => '検索をクリア';
 }

@@ -1519,7 +1519,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get costCardTitle => 'Renewal costs';
 
   @override
-  String get costCardSubtitle => 'What your renewals will cost in the next 12 months';
+  String get costCardSubtitle => 'What your renewals cost, month by month';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3084,17 +3084,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'Your Trip Needs Attention';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip leaves on $date, and $count things need fixing before you go.',
-      one: '$trip leaves on $date, and $count thing needs fixing before you go.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'Open Trip';
@@ -6219,4 +6208,97 @@ class AppLocalizationsEn extends AppLocalizations {
   String travelTransitNote(String country) {
     return 'Stopover in $country. Check whether you need a transit visa.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'Currency';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'Totals are shown in $currency';
+  }
+
+  @override
+  String get costRatesTitle => 'Exchange rates';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'Amounts in other currencies are converted into $currency with daily exchange rates. Each record keeps the amount and currency you entered.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'Rates updated $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return 'No exchange rate for $currencies. These amounts are shown separately.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return 'You leave for $trip on $date.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'Flight dates must be between $start and $end.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'This flight overlaps another flight. Flights must follow each other in order.';
+
+  @override
+  String get travelFlightsOutsideDates => 'Some flights are outside your trip dates. Change the dates or edit those flights.';
+
+  @override
+  String get loadErrorBody => 'We could not load this. Check your connection and try again.';
+
+  @override
+  String get tryAgain => 'Try again';
+
+  @override
+  String get discardChangesTitle => 'Discard your changes?';
+
+  @override
+  String get discardChangesBody => 'You have unsaved changes. If you leave now, they will be lost.';
+
+  @override
+  String get discardChangesKeep => 'Keep editing';
+
+  @override
+  String get discardChangesDiscard => 'Discard';
+
+  @override
+  String get offlineBanner => 'Offline. Changes sync when you reconnect.';
+
+  @override
+  String get reminderHelpTitle => 'Reminders not arriving?';
+
+  @override
+  String get reminderHelpSubtitle => 'Fix battery settings that block reminders';
+
+  @override
+  String get reminderHelpBody => 'Some phones stop apps in the background to save battery, which can delay or block reminders. Allow Vaultara to run without battery limits, and make sure notifications are turned on in the app settings.';
+
+  @override
+  String get reminderHelpOpenBattery => 'Open battery settings';
+
+  @override
+  String get reminderHelpOpenApp => 'Open app settings';
+
+  @override
+  String get showPassword => 'Show password';
+
+  @override
+  String get hidePassword => 'Hide password';
+
+  @override
+  String get pinCategory => 'Pin to top';
+
+  @override
+  String get unpinCategory => 'Unpin';
+
+  @override
+  String get clearSearch => 'Clear search';
 }

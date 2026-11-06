@@ -1519,7 +1519,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get costCardTitle => 'புதுப்பித்தல் செலவுகள்';
 
   @override
-  String get costCardSubtitle => 'அடுத்த 12 மாதங்களில் உங்கள் புதுப்பித்தல்களுக்கு ஆகும் செலவு';
+  String get costCardSubtitle => 'உங்கள் புதுப்பிப்புகளுக்கான மாதவாரி செலவு';
 
   @override
   String costCardBusiest(String month, String amount) {
@@ -3069,17 +3069,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get smartInsightTripHeading => 'உங்கள் பயணத்துக்குக் கவனம் தேவை';
-
-  @override
-  String smartInsightTripBody(String trip, String date, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$trip பயணம் $date அன்று புறப்படுகிறது, செல்வதற்கு முன் $count விஷயங்களைச் சரிசெய்ய வேண்டும்.',
-      one: '$trip பயணம் $date அன்று புறப்படுகிறது, செல்வதற்கு முன் $count விஷயத்தைச் சரிசெய்ய வேண்டும்.',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get smartInsightActionOpenTrip => 'பயணத்தைத் திற';
@@ -6204,4 +6193,97 @@ class AppLocalizationsTa extends AppLocalizations {
   String travelTransitNote(String country) {
     return '$country இல் இடைநிறுத்தம். போக்குவரத்து விசா தேவையா என்று சரிபார்க்கவும்.';
   }
+
+  @override
+  String get currencyDisplayTitle => 'நாணயம்';
+
+  @override
+  String currencyDisplaySubtitle(String currency) {
+    return 'மொத்தங்கள் $currency இல் காட்டப்படுகின்றன';
+  }
+
+  @override
+  String get costRatesTitle => 'நாணய மாற்று விகிதங்கள்';
+
+  @override
+  String costRatesBody(String currency) {
+    return 'பிற நாணயங்களில் உள்ள தொகைகள் தினசரி மாற்று விகிதத்தில் $currency ஆக மாற்றப்படுகின்றன. ஒவ்வொரு பதிவும் நீங்கள் உள்ளிட்ட தொகையையும் நாணயத்தையும் வைத்திருக்கும்.';
+  }
+
+  @override
+  String costRatesUpdated(String date) {
+    return 'விகிதங்கள் புதுப்பிக்கப்பட்டவை $date';
+  }
+
+  @override
+  String costNotConverted(String currencies) {
+    return '$currencies க்கு மாற்று விகிதம் இல்லை. இந்தத் தொகைகள் தனியாகக் காட்டப்படுகின்றன.';
+  }
+
+  @override
+  String smartInsightTripWhen(String trip, String date) {
+    return '$trip: நீங்கள் $date அன்று புறப்படுகிறீர்கள்.';
+  }
+
+  @override
+  String travelFlightErrorTripDates(String start, String end) {
+    return 'விமான தேதிகள் $start மற்றும் $end இடையே இருக்க வேண்டும்.';
+  }
+
+  @override
+  String get travelFlightErrorOverlap => 'இந்த விமானம் மற்றொரு விமானத்துடன் ஒன்றோடொன்று மேலெழுகிறது. விமானங்கள் வரிசையாக ஒன்றன்பின் ஒன்றாக இருக்க வேண்டும்.';
+
+  @override
+  String get travelFlightsOutsideDates => 'சில விமானங்கள் உங்கள் பயண தேதிகளுக்கு வெளியே உள்ளன. தேதிகளை மாற்றவும் அல்லது அந்த விமானங்களைத் திருத்தவும்.';
+
+  @override
+  String get loadErrorBody => 'இதை ஏற்ற முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.';
+
+  @override
+  String get tryAgain => 'மீண்டும் முயல்க';
+
+  @override
+  String get discardChangesTitle => 'மாற்றங்களை நிராகரிக்கவா?';
+
+  @override
+  String get discardChangesBody => 'சேமிக்கப்படாத மாற்றங்கள் உங்களிடம் உள்ளன. இப்போது வெளியேறினால் அவை இழக்கப்படும்.';
+
+  @override
+  String get discardChangesKeep => 'திருத்துவதைத் தொடரவும்';
+
+  @override
+  String get discardChangesDiscard => 'நிராகரி';
+
+  @override
+  String get offlineBanner => 'ஆஃப்லைன். மீண்டும் இணைந்ததும் மாற்றங்கள் ஒத்திசைக்கப்படும்.';
+
+  @override
+  String get reminderHelpTitle => 'நினைவூட்டல்கள் வரவில்லையா?';
+
+  @override
+  String get reminderHelpSubtitle => 'நினைவூட்டல்களைத் தடுக்கும் பேட்டரி அமைப்புகளைச் சரிசெய்யவும்';
+
+  @override
+  String get reminderHelpBody => 'சில ஃபோன்கள் பேட்டரியைச் சேமிக்க பின்னணியில் உள்ள செயலிகளை நிறுத்துகின்றன, இதனால் நினைவூட்டல்கள் தாமதமாகலாம் அல்லது தடுக்கப்படலாம். பேட்டரி வரம்பு இல்லாமல் Vaultara இயங்க அனுமதிக்கவும், செயலி அமைப்புகளில் அறிவிப்புகள் இயக்கத்தில் உள்ளதை உறுதிசெய்யவும்.';
+
+  @override
+  String get reminderHelpOpenBattery => 'பேட்டரி அமைப்புகளைத் திற';
+
+  @override
+  String get reminderHelpOpenApp => 'செயலி அமைப்புகளைத் திற';
+
+  @override
+  String get showPassword => 'கடவுச்சொல்லைக் காட்டு';
+
+  @override
+  String get hidePassword => 'கடவுச்சொல்லை மறை';
+
+  @override
+  String get pinCategory => 'மேலே பின் செய்';
+
+  @override
+  String get unpinCategory => 'பின்னை நீக்கு';
+
+  @override
+  String get clearSearch => 'தேடலை அழி';
 }
