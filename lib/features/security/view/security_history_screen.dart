@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import 'package:vaultara/core/errors/error_reporter.dart';
+import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/security/logic/relative_time.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -83,6 +85,23 @@ class _SecurityHistoryScreenState extends State<SecurityHistoryScreen> {
     }
   }
 
+  void _retry() {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+    setState(() {
+      _stream = ErrorReporter.watch(
+        FirebaseFirestore.instance
+            .collection('users')
+            .doc(uid)
+            .collection('securityEvents')
+            .orderBy('at', descending: true)
+            .limit(100)
+            .snapshots(),
+        'security_history',
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -104,7 +123,7 @@ class _SecurityHistoryScreenState extends State<SecurityHistoryScreen> {
                       stream: stream,
                       builder: (context, snap) {
                         if (snap.hasError) {
-                          return _CentredText(text: loc.verifyCodeFailed);
+                          return LoadErrorView(onRetry: _retry);
                         }
                         if (!snap.hasData) {
                           return const Center(

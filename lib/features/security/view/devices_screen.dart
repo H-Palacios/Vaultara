@@ -12,6 +12,8 @@ import 'package:vaultara/features/security/services/device_registry.dart';
 import 'package:vaultara/features/security/services/security_events.dart';
 import 'package:vaultara/features/security/services/session_guard.dart';
 import 'package:vaultara/features/security/services/strong_password_flag.dart';
+import 'package:vaultara/core/errors/error_reporter.dart';
+import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 class DevicesScreen extends StatefulWidget {
@@ -34,6 +36,14 @@ class _DevicesScreenState extends State<DevicesScreen> {
     if (uid != null) _stream = DeviceRegistry.watch(uid);
     DeviceRegistry.deviceId().then((id) {
       if (mounted) setState(() => _thisId = id);
+    });
+  }
+
+  void _retryLoad() {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+    setState(() {
+      _stream = ErrorReporter.watch(DeviceRegistry.watch(uid), 'devices_stream');
     });
   }
 
@@ -241,7 +251,7 @@ class _DevicesScreenState extends State<DevicesScreen> {
                       stream: stream,
                       builder: (context, snap) {
                         if (snap.hasError) {
-                          return _Message(text: loc.verifyCodeFailed);
+                          return LoadErrorView(onRetry: _retryLoad);
                         }
                         if (!snap.hasData) {
                           return const Center(
@@ -400,7 +410,7 @@ class _DeviceCard extends StatelessWidget {
                         child: Text(
                           loc.secThisDevice,
                           style: TextStyle(
-                            fontSize: 11.5,
+                            fontSize: 12,
                             fontWeight: FontWeight.w800,
                             color: scheme.primary,
                           ),
