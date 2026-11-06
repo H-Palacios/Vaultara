@@ -25,7 +25,7 @@ class ReminderSectionHeader extends StatelessWidget {
           Text(
             label.toUpperCase(),
             style: TextStyle(
-              fontSize: 11,
+              fontSize: 12,
               fontWeight: FontWeight.w700,
               letterSpacing: 0.8,
               color: scheme.onSurfaceVariant,

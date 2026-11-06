@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -14,6 +15,7 @@ import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
 
 import '../services/daily_digest_service.dart';
+import 'reminder_help_sheet.dart';
 import '../services/monthly_summary_service.dart';
 import '../services/push_service.dart';
 import '../services/reminder_scheduler.dart';
@@ -262,6 +264,15 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                   ? null
                   : () => _setDigest(!_digestOn),
             ),
+            if (Platform.isAndroid) ...[
+              const SizedBox(height: 12),
+              SettingsTile(
+                icon: Icons.battery_alert_rounded,
+                title: t.reminderHelpTitle,
+                subtitle: t.reminderHelpSubtitle,
+                onTap: () => showReminderHelpSheet(context),
+              ),
+            ],
             const SizedBox(height: 24),
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
