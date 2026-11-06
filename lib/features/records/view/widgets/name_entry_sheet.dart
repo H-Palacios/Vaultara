@@ -232,7 +232,7 @@ class _LimitCard extends StatelessWidget {
             Text(
               limit.limitReachedText,
               style: TextStyle(
-                fontSize: 11,
+                fontSize: 12,
                 fontWeight: FontWeight.w600,
                 color: scheme.error,
               ),

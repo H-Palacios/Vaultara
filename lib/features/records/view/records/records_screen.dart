@@ -1,3 +1,5 @@
+import 'package:vaultara/core/errors/error_reporter.dart';
+import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -279,12 +281,20 @@ class _RecordsScreenState extends State<RecordsScreen> {
                 valueListenable: HouseholdRepository.revision,
                 builder: (context, _, __) =>
                     StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-                stream: _stream ??= FirebaseFirestore.instance
-                    .collection('users/${user.uid}/records')
-                    .where('categoryKey', isEqualTo: widget.category.key)
-                    .where('subcategoryName', isEqualTo: widget.groupKey)
-                    .snapshots(),
+                stream: _stream ??= ErrorReporter.watch(
+                  FirebaseFirestore.instance
+                      .collection('users/${user.uid}/records')
+                      .where('categoryKey', isEqualTo: widget.category.key)
+                      .where('subcategoryName', isEqualTo: widget.groupKey)
+                      .snapshots(),
+                  'records_stream',
+                ),
                 builder: (context, snapshot) {
+                  if (snapshot.hasError && !snapshot.hasData) {
+                    return LoadErrorView(
+                      onRetry: () => setState(() => _stream = null),
+                    );
+                  }
                   if (!snapshot.hasData) {
                     return const Center(child: CircularProgressIndicator());
                   }

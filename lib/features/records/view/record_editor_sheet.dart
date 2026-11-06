@@ -53,6 +53,7 @@ import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/view/household_share_tile.dart';
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
+import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/assistant/logic/group_suggester.dart';
 import 'package:vaultara/features/assistant/view/describe_record_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/editor_assist_widgets.dart';
@@ -85,8 +86,8 @@ Future<void> showRecordEditorSheet({
     isScrollControlled: true,
     useSafeArea: true,
     isDismissible: !isAnyTutorialMode,
-    enableDrag: !isAnyTutorialMode,
-    showDragHandle: true,
+    enableDrag: false,
+    showDragHandle: false,
     builder: (sheetContext) {
       return _RecordEditorSheet(
         mode: mode,
@@ -311,6 +312,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     if (isReminderTutorialMode) {
       _registerReminderTutorialKeys();
     }
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _initialSignature = _signature();
+    });
 
     nameFocus.addListener(_onFocusChanged);
     notesFocus.addListener(_onFocusChanged);
@@ -1341,8 +1346,44 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     Navigator.pop(context);
   }
 
+  String? _initialSignature;
+
+  String _signature() {
+    return <Object?>[
+      nameController.text.trim(),
+      notesController.text.trim(),
+      expiryDate?.millisecondsSinceEpoch,
+      selectedCategoryKey,
+      selectedSubcategory,
+      reminderOffsetDays,
+      holderId,
+      renewalCost,
+      costCurrency,
+      attachments.map((a) => a.id).join(','),
+      newAttachmentPaths.join(','),
+      repeatMonths,
+      locked,
+      inWallet,
+      leadDays,
+      shared,
+    ].join('|');
+  }
+
+  bool _isDirty() {
+    final initial = _initialSignature;
+    return initial != null && initial != _signature();
+  }
+
   @override
   Widget build(BuildContext context) {
+    return UnsavedChangesGuard(
+      enabled: !isAnyTutorialMode,
+      isDirty: _isDirty,
+      child: _buildEditor(context),
+    );
+  }
+
+  Widget _buildEditor(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
     final scheme = Theme.of(context).colorScheme;
@@ -1517,7 +1558,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+                  padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
                   child: Text(
                     isEditMode ? loc.editRecordTitle : loc.addRecord,
                     textAlign: TextAlign.center,

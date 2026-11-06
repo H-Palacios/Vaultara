@@ -52,7 +52,7 @@ class GroupCard extends StatelessWidget {
                     Text(
                       loc.recordsLabel(recordCount),
                       style: TextStyle(
-                        fontSize: 11.5,
+                        fontSize: 12,
                         color: scheme.onSurfaceVariant,
                       ),
                     ),
@@ -106,7 +106,7 @@ class _ExpiringBadge extends StatelessWidget {
       child: Text(
         loc.expiringBadge(count),
         style: TextStyle(
-          fontSize: 11,
+          fontSize: 12,
           fontWeight: FontWeight.w800,
           color: scheme.primary,
         ),

@@ -82,6 +82,7 @@ class _RecentlyDeletedScreenState extends State<RecentlyDeletedScreen>
         appBar: AppBar(
           title: Text(loc.recentlyDeletedTitle),
           leading: IconButton(
+            tooltip: MaterialLocalizations.of(context).backButtonTooltip,
             icon: const Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, _controller.didChange),
           ),

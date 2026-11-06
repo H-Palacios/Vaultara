@@ -54,7 +54,6 @@ class CategoryCard extends StatelessWidget {
                   if (isCustom && onDelete != null)
                     IconButton(
                       tooltip: loc.delete,
-                      visualDensity: VisualDensity.compact,
                       icon: Icon(
                         Icons.delete_outline_rounded,
                         size: 18,
@@ -63,7 +62,7 @@ class CategoryCard extends StatelessWidget {
                       onPressed: onDelete,
                     ),
                   IconButton(
-                    visualDensity: VisualDensity.compact,
+                    tooltip: isPinned ? AppLocalizations.of(context)!.unpinCategory : AppLocalizations.of(context)!.pinCategory,
                     icon: Icon(
                       isPinned
                           ? Icons.push_pin_rounded
@@ -94,7 +93,7 @@ class CategoryCard extends StatelessWidget {
               Text(
                 loc.recordsLabel(totalRecords),
                 style: TextStyle(
-                  fontSize: 11.5,
+                  fontSize: 12,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
@@ -138,7 +137,7 @@ class _ExpiringBadge extends StatelessWidget {
       child: Text(
         loc.expiringBadge(count),
         style: TextStyle(
-          fontSize: 11,
+          fontSize: 12,
           fontWeight: FontWeight.w800,
           color: scheme.primary,
         ),

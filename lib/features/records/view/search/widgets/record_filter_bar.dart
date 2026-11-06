@@ -64,7 +64,7 @@ class RecordFilterBar extends StatelessWidget {
           child: Text(
             label,
             style: TextStyle(
-              fontSize: 11,
+              fontSize: 12,
               fontWeight: FontWeight.w700,
               color: selected ? scheme.primary : scheme.onSurfaceVariant,
             ),
