@@ -294,6 +294,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         focused: passwordFocus.hasFocus,
                         errorText: passError,
                         suffixIcon: IconButton(
+                          tooltip: isPasswordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
                           icon: Icon(
                             isPasswordVisible
                                 ? Icons.visibility_rounded

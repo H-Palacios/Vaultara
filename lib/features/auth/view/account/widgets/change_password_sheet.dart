@@ -218,6 +218,7 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
 
   Widget _visibilityButton(bool visible, VoidCallback onPressed) {
     return IconButton(
+      tooltip: visible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
       icon: Icon(
         visible ? Icons.visibility_rounded : Icons.visibility_off_rounded,
       ),
