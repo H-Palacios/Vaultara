@@ -1,4 +1,5 @@
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
+import 'package:vaultara/features/travel/data/trip_purpose.dart';
 
 enum AssistantActionType {
   add,
@@ -112,6 +113,7 @@ class AssistantTripChanges {
   final DateTime? returnDate;
   final List<String>? travellers;
   final bool? driving;
+  final TripPurpose? purpose;
 
   const AssistantTripChanges({
     this.name,
@@ -120,6 +122,7 @@ class AssistantTripChanges {
     this.returnDate,
     this.travellers,
     this.driving,
+    this.purpose,
   });
 
   bool get isEmpty =>
@@ -128,7 +131,8 @@ class AssistantTripChanges {
       departure == null &&
       returnDate == null &&
       travellers == null &&
-      driving == null;
+      driving == null &&
+      purpose == null;
 
   static AssistantTripChanges? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -139,6 +143,7 @@ class AssistantTripChanges {
       returnDate: AssistantAction.date(raw['returnDate']),
       travellers: AssistantAction.ids(raw['travellers']),
       driving: raw['driving'] is bool ? raw['driving'] as bool : null,
+      purpose: TripPurposes.tryParse(raw['purpose']),
     );
     return changes.isEmpty ? null : changes;
   }
@@ -201,6 +206,7 @@ class AssistantAction {
   final DateTime? returnDate;
   final List<String> travellers;
   final bool driving;
+  final TripPurpose purpose;
   final AssistantTripChanges? tripChanges;
   final String? screen;
   final String? targetId;
@@ -237,6 +243,7 @@ class AssistantAction {
     this.returnDate,
     this.travellers = const <String>[],
     this.driving = false,
+    this.purpose = TripPurposes.fallback,
     this.tripChanges,
     this.screen,
     this.targetId,
@@ -473,6 +480,7 @@ class AssistantAction {
       returnDate: returnDate,
       travellers: ids(raw['travellers']) ?? const <String>[me],
       driving: raw['driving'] == true,
+      purpose: TripPurposes.fromStorage(raw['purpose']),
     );
   }
 
