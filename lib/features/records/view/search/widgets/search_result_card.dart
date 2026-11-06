@@ -64,7 +64,7 @@ class SearchResultCard extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: 12,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
@@ -84,7 +84,7 @@ class SearchResultCard extends StatelessWidget {
                     Text(
                       status.label,
                       style: TextStyle(
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                         color: status.colour,
                       ),
