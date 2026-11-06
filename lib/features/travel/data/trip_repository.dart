@@ -262,7 +262,12 @@ class TripRepository {
     SavedTrip trip,
     bool? auto,
   ) async {
-    if (auto == null || trip.needsVisaManual || trip.needsVisa == auto) return;
+    // Background syncs may only switch the visa reminder ON. Turning it off
+    // would remove a reminder because of data the user has not checked, so
+    // that only happens when the user saves the trip themselves.
+    if (auto == null || !auto || trip.needsVisaManual || trip.needsVisa) {
+      return;
+    }
     if (!_visaSyncAttempts.add('${trip.id}|$auto')) return;
     final edited = trip.copyWith(needsVisa: auto);
     final items = TripChecklist.update(loc, before: trip, after: edited);

@@ -3,6 +3,7 @@ import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
+import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/features/travel/data/visa_data.dart';
 
 enum VisaLookup { noNationality, loading, unavailable, ready }
@@ -33,6 +34,7 @@ class DestinationVisa {
   final bool chosenByUser;
   final PassportValidity validity;
   final DateTime? passportExpiry;
+  final TripPurpose purpose;
 
   const DestinationVisa({
     required this.country,
@@ -44,13 +46,35 @@ class DestinationVisa {
     this.chosenByUser = false,
     this.validity = PassportValidity.unknown,
     this.passportExpiry,
+    this.purpose = TripPurposes.fallback,
   });
 
+  /// The visitor result, exactly as the data says.
   VisaStatus? get status => requirement?.status;
+
+  /// True when the trip is for study or work and the visitor result cannot
+  /// be the answer. The traveller usually needs a separate visa or permit.
+  bool get purposeVisa {
+    final s = status;
+    if (s == null || citizen) return false;
+    if (s == VisaStatus.home || s == VisaStatus.none) return false;
+    return TripPurposes.needsOwnVisa(purpose);
+  }
+
+  /// The status used for summaries, sorting and checklists. A study or work
+  /// trip counts as "visa needed" whatever the visitor result says.
+  VisaStatus? get effectiveStatus =>
+      purposeVisa ? VisaStatus.required : status;
+
+  DateTime applyBy(DateTime departure) => VisaCheck.applyBy(
+        departure,
+        effectiveStatus ?? VisaStatus.required,
+        purpose: purpose,
+      );
 
   int? get allowedDays {
     final req = requirement;
-    if (req == null || req.days == null) return null;
+    if (req == null || req.days == null || purposeVisa) return null;
     switch (req.status) {
       case VisaStatus.free:
       case VisaStatus.arrival:
@@ -70,7 +94,7 @@ class DestinationVisa {
   }
 
   bool get needsApplication {
-    final s = status;
+    final s = effectiveStatus;
     return s != null && VisaCheck.needsApplication(s);
   }
 }
@@ -115,7 +139,12 @@ class VisaCheck {
       status == VisaStatus.evisa ||
       status == VisaStatus.required;
 
-  static int leadWeeks(VisaStatus status) {
+  static int leadWeeks(VisaStatus status, {TripPurpose? purpose}) {
+    if (purpose != null &&
+        TripPurposes.needsOwnVisa(purpose) &&
+        needsApplication(status)) {
+      return TripPurposes.ownVisaLeadWeeks;
+    }
     switch (status) {
       case VisaStatus.required:
       case VisaStatus.evisa:
@@ -130,8 +159,12 @@ class VisaCheck {
     }
   }
 
-  static DateTime applyBy(DateTime departure, VisaStatus status) {
-    final days = leadWeeks(status) * 7;
+  static DateTime applyBy(
+    DateTime departure,
+    VisaStatus status, {
+    TripPurpose? purpose,
+  }) {
+    final days = leadWeeks(status, purpose: purpose) * 7;
     return DateTime(departure.year, departure.month, departure.day - days);
   }
 
@@ -208,8 +241,10 @@ class VisaCheck {
     List<String> passports,
     Map<String, VisaTable?> tables, {
     int? tripDays,
+    bool applyPurpose = true,
   }) {
     final days = tripDays ?? trip.lengthInDays;
+    final purpose = applyPurpose ? trip.purpose : TripPurposes.fallback;
     final own = passports.contains(country) ? country : null;
     if (own != null) {
       final check = _validity(trip, holderId, own);
@@ -229,6 +264,7 @@ class VisaCheck {
         citizen: true,
         validity: check.validity,
         passportExpiry: check.expiry,
+        purpose: purpose,
       );
     }
 
@@ -273,6 +309,7 @@ class VisaCheck {
       chosenByUser: byUser,
       validity: best.validity,
       passportExpiry: best.expiry,
+      purpose: purpose,
     );
   }
 
@@ -281,6 +318,7 @@ class VisaCheck {
     String key, {
     List<String>? countries,
     int? tripDays,
+    bool applyPurpose = true,
   }) {
     final holderId = key == SavedTrip.me ? null : key;
     final passports = NationalityRepository.passportsOf(holderId);
@@ -327,6 +365,7 @@ class VisaCheck {
             passports,
             tables,
             tripDays: tripDays,
+            applyPurpose: applyPurpose,
           ),
       ],
     );
@@ -351,6 +390,8 @@ class VisaCheck {
       holderId ?? SavedTrip.me,
       countries: stops,
       tripDays: 1,
+      // A stopover is a transit, not the purpose of the trip.
+      applyPurpose: false,
     );
     if (result.state != VisaLookup.ready) return const <DestinationVisa>[];
     return [
@@ -391,7 +432,7 @@ class VisaCheck {
   static VisaStatus? worst(List<TravellerVisa> results) {
     VisaStatus? out;
     for (final d in _known(results)) {
-      final s = d.status!;
+      final s = d.effectiveStatus!;
       if (out == null || rank(s) > rank(out)) out = s;
     }
     return out;
@@ -403,7 +444,9 @@ class VisaCheck {
   ) {
     final out = <String>[];
     for (final d in _known(results)) {
-      if (d.status == status && !out.contains(d.country)) out.add(d.country);
+      if (d.effectiveStatus == status && !out.contains(d.country)) {
+        out.add(d.country);
+      }
     }
     return out;
   }
@@ -434,7 +477,7 @@ class VisaCheck {
   static DateTime? applyByForItem(SavedTrip trip, TripChecklistItem item) {
     final parsed = parseItem(item);
     if (parsed == null) return null;
-    return applyBy(trip.start, parsed.status);
+    return applyBy(trip.start, parsed.status, purpose: trip.purpose);
   }
 
   static TripChecklistItem? itemFor(SavedTrip trip, String country) {
@@ -457,7 +500,7 @@ class VisaCheck {
     VisaStatus? out;
     for (final d in _known(results)) {
       if (d.country != country || !d.needsApplication) continue;
-      final s = d.status!;
+      final s = d.effectiveStatus!;
       if (out == null || rank(s) > rank(out)) out = s;
     }
     return out;
