@@ -152,7 +152,6 @@ class ScanFoundBanner extends StatelessWidget {
           IconButton(
             onPressed: onDismiss,
             tooltip: loc.scanBannerDismiss,
-            visualDensity: VisualDensity.compact,
             icon: Icon(
               Icons.close_rounded,
               size: 18,
