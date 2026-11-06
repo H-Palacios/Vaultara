@@ -1,3 +1,7 @@
+import 'dart:math' as math;
+
+import 'package:flutter/foundation.dart';
+
 class TextSearch {
   const TextSearch._();
 
@@ -170,34 +174,103 @@ class TextSearch {
 
   /// True when [a] and [b] are at most [max] edits apart, also allowing [a]
   /// to match the start of a longer [b] ("passp" and "passport").
+  ///
+  /// Edits are weighted by how people mistype on a phone: two letters
+  /// swapped ("pasprot") or a key next to the right one ("oassport") count
+  /// as half a mistake, and a doubled or missing double letter ("passsport")
+  /// as less than that.
   static bool _within(String a, String b, int max) {
     if (b.length > a.length + max) {
       b = b.substring(0, a.length + max);
     }
     if ((a.length - b.length).abs() > max) return false;
-    var previous = List<int>.generate(b.length + 1, (i) => i);
-    for (var i = 1; i <= a.length; i++) {
-      final current = List<int>.filled(b.length + 1, 0);
-      current[0] = i;
-      var rowMin = current[0];
-      for (var j = 1; j <= b.length; j++) {
-        final cost = a.codeUnitAt(i - 1) == b.codeUnitAt(j - 1) ? 0 : 1;
-        current[j] = [
-          previous[j] + 1,
-          current[j - 1] + 1,
-          previous[j - 1] + cost,
-        ].reduce((x, y) => x < y ? x : y);
-        if (current[j] < rowMin) rowMin = current[j];
+    return distance(a, b, prefix: true) <= max;
+  }
+
+  /// Weighted edit distance between [a] and [b]. With [prefix], [a] may
+  /// also match the start of [b].
+  @visibleForTesting
+  static double distance(String a, String b, {bool prefix = false}) {
+    final n = a.length;
+    final m = b.length;
+    double indel(String word, int i) {
+      final c = word[i];
+      final repeat = (i > 0 && word[i - 1] == c) ||
+          (i + 1 < word.length && word[i + 1] == c);
+      return repeat ? 0.3 : 1;
+    }
+
+    final d = List<List<double>>.generate(
+      n + 1,
+      (_) => List<double>.filled(m + 1, 0),
+    );
+    for (var i = 1; i <= n; i++) {
+      d[i][0] = d[i - 1][0] + indel(a, i - 1);
+    }
+    for (var j = 1; j <= m; j++) {
+      d[0][j] = d[0][j - 1] + indel(b, j - 1);
+    }
+    for (var i = 1; i <= n; i++) {
+      for (var j = 1; j <= m; j++) {
+        var best = math.min(
+          d[i - 1][j] + indel(a, i - 1),
+          d[i][j - 1] + indel(b, j - 1),
+        );
+        best = math.min(
+          best,
+          d[i - 1][j - 1] + _substitution(a[i - 1], b[j - 1]),
+        );
+        if (i > 1 &&
+            j > 1 &&
+            a[i - 1] == b[j - 2] &&
+            a[i - 2] == b[j - 1] &&
+            a[i - 1] != a[i - 2]) {
+          best = math.min(best, d[i - 2][j - 2] + 0.5);
+        }
+        d[i][j] = best;
       }
-      if (rowMin > max) return false;
-      previous = current;
     }
-    var best = previous[b.length];
-    // Prefix match: the best distance to any start of b.
-    for (final v in previous) {
-      if (v < best) best = v;
+    if (!prefix) return d[n][m];
+    var best = d[n][m];
+    for (var j = 0; j <= m; j++) {
+      if (d[n][j] < best) best = d[n][j];
     }
-    return best <= max;
+    return best;
+  }
+
+  static const List<String> _keyboardRows = <String>[
+    '1234567890',
+    'qwertyuiop',
+    'asdfghjkl',
+    'zxcvbnm',
+  ];
+
+  static final Map<String, Set<String>> _neighbours = () {
+    final at = <String, List<double>>{};
+    for (var r = 0; r < _keyboardRows.length; r++) {
+      final row = _keyboardRows[r];
+      for (var c = 0; c < row.length; c++) {
+        at[row[c]] = <double>[r.toDouble(), c + r * 0.5];
+      }
+    }
+    final out = <String, Set<String>>{};
+    at.forEach((key, pos) {
+      final set = <String>{};
+      at.forEach((other, p) {
+        if (other == key) return;
+        if ((pos[0] - p[0]).abs() <= 1 && (pos[1] - p[1]).abs() <= 1.01) {
+          set.add(other);
+        }
+      });
+      out[key] = set;
+    });
+    return out;
+  }();
+
+  static double _substitution(String x, String y) {
+    if (x == y) return 0;
+    if (_neighbours[x]?.contains(y) ?? false) return 0.5;
+    return 1;
   }
 }
 
