@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
+import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/features/travel/logic/passport_rules.dart';
 
 class TripChecklistItem {
@@ -144,6 +145,7 @@ class SavedTrip {
   final Map<String, DateTime> arrivals;
   final List<TripFlight> flights;
   final Map<String, String> passportChoice;
+  final TripPurpose purpose;
 
   const SavedTrip({
     required this.id,
@@ -161,6 +163,7 @@ class SavedTrip {
     this.arrivals = const <String, DateTime>{},
     this.flights = const <TripFlight>[],
     this.passportChoice = const <String, String>{},
+    this.purpose = TripPurposes.fallback,
   });
 
   static String visaKey(String traveller, String country) =>
@@ -220,6 +223,7 @@ class SavedTrip {
     Map<String, DateTime>? arrivals,
     List<TripFlight>? flights,
     Map<String, String>? passportChoice,
+    TripPurpose? purpose,
   }) {
     return withId(
       id,
@@ -238,6 +242,7 @@ class SavedTrip {
       arrivals: arrivals,
       flights: flights,
       passportChoice: passportChoice,
+      purpose: purpose,
     );
   }
 
@@ -258,6 +263,7 @@ class SavedTrip {
     Map<String, DateTime>? arrivals,
     List<TripFlight>? flights,
     Map<String, String>? passportChoice,
+    TripPurpose? purpose,
   }) {
     return SavedTrip(
       id: newId,
@@ -277,6 +283,7 @@ class SavedTrip {
       arrivals: arrivals ?? this.arrivals,
       flights: flights ?? this.flights,
       passportChoice: passportChoice ?? this.passportChoice,
+      purpose: purpose ?? this.purpose,
     );
   }
 
@@ -347,6 +354,7 @@ class SavedTrip {
         'driving': driving,
         'needsVisa': needsVisa,
         'needsVisaManual': needsVisaManual,
+        'purpose': TripPurposes.storageKey(purpose),
         'travellers': travellers,
         'checklist': checklist.map((i) => i.toMap()).toList(),
         'countries': countries.take(Countries.maxPerTrip).toList(),
@@ -459,6 +467,7 @@ class SavedTrip {
       arrivals: _arrivalsFrom(map['arrivals']),
       flights: _flightsFrom(map['flights']),
       passportChoice: _passportChoiceFrom(map['passportChoice']),
+      purpose: TripPurposes.fromStorage(map['purpose']),
     );
   }
 }

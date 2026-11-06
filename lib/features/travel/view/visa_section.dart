@@ -14,6 +14,7 @@ import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
+import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/data/visa_data.dart';
 import 'package:vaultara/features/travel/data/visa_link_repository.dart';
@@ -134,6 +135,17 @@ class VisaText {
     return loc.visaApplyBy(TravelText.date(context, day));
   }
 
+  /// Pill text when a study or work trip needs its own visa.
+  static String purposeLabel(AppLocalizations loc, TripPurpose purpose) =>
+      purpose == TripPurpose.work
+          ? loc.visaPurposeWorkNeeded
+          : loc.visaPurposeStudyNeeded;
+
+  static String purposeNote(AppLocalizations loc, TripPurpose purpose) =>
+      purpose == TripPurpose.work
+          ? loc.visaPurposeWorkNote
+          : loc.visaPurposeStudyNote;
+
   static String passportOf(AppLocalizations loc, String code) =>
       loc.visaPassportOf(place(code));
 
@@ -246,14 +258,15 @@ class VisaActions {
   static Future<void> openOfficial(
     BuildContext context,
     String country,
-    VisaLink link,
-  ) async {
+    VisaLink link, {
+    bool rules = false,
+  }) async {
     final go = await showModalBottomSheet<bool>(
       context: context,
       showDragHandle: true,
       useSafeArea: true,
       isScrollControlled: true,
-      builder: (_) => _LeavingSheet(country: country, link: link),
+      builder: (_) => _LeavingSheet(country: country, link: link, rules: rules),
     );
     if (go != true || !context.mounted) return;
     await _launch(context, link.uri);
@@ -435,8 +448,11 @@ class VisaSection extends StatelessWidget {
 
   void _syncNeedsVisa(BuildContext context, List<TravellerVisa> results) {
     if (!isPremium || trip.needsVisaManual) return;
+    // Only ever switch the visa reminder on from here. Switching it off
+    // because the data says "visa free" would remove a reminder the user may
+    // still need, so that is left to the user when they edit the trip.
     final auto = VisaCheck.autoNeedsVisa(results);
-    if (auto == null || auto == trip.needsVisa) return;
+    if (auto == null || !auto || trip.needsVisa) return;
     final key = '${trip.id}|$auto';
     if (TripRepository.visaSyncAttempted(trip.id, auto)) return;
     if (!_scheduled.add(key)) return;
@@ -447,6 +463,20 @@ class VisaSection extends StatelessWidget {
       if (latest == null) return;
       TripRepository.syncNeedsVisa(loc, latest, auto);
     });
+  }
+
+  /// True when every destination we have an answer for is the traveller's
+  /// own country, so a study or work warning would not apply.
+  static bool _onlyHome(List<TravellerVisa> results) {
+    var any = false;
+    for (final r in results) {
+      if (r.state != VisaLookup.ready) return false;
+      for (final d in r.destinations) {
+        any = true;
+        if (!d.citizen) return false;
+      }
+    }
+    return any;
   }
 
   Widget? _summary(
@@ -533,56 +563,60 @@ class VisaSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
               ],
+            if (trip.countries.isNotEmpty &&
+                TripPurposes.fit(trip.purpose) != PurposeFit.covered &&
+                !_onlyHome(results)) ...[
+              _PurposeBanner(purpose: trip.purpose),
+              const SizedBox(height: 8),
+            ],
             Builder(builder: (context) {
               final synced = VisaRepository.syncedAt;
               final stale = synced != null &&
                   DateTime.now().difference(synced).inDays > 90;
               final when =
                   synced == null ? null : TravelText.date(context, synced);
-              return Row(
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 4),
-                      child: when == null
-                          ? const SizedBox.shrink()
-                          : Text(
-                              stale
-                                  ? loc.visaDataStale(when)
-                                  : loc.visaDataUpdated(when),
-                              style: TextStyle(
-                                fontSize: 12,
-                                height: 1.3,
-                                color: stale
-                                    ? TravelText.warningColour
-                                    : scheme.onSurfaceVariant,
-                              ),
-                            ),
-                    ),
-                  ),
-                  IconButton(
-                    tooltip: loc.visaCheckRules,
-                    icon: Icon(
-                      Icons.info_outline_rounded,
-                      size: 20,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                    onPressed: () => showDialog<void>(
-                      context: context,
-                      builder: (dialogContext) => AlertDialog(
-                        content:
-                            SingleChildScrollView(child: Text(loc.visaCredit)),
-                        actions: [
-                          TextButton(
-                            onPressed: () => Navigator.of(dialogContext).pop(),
-                            child: Text(MaterialLocalizations.of(dialogContext)
-                                .okButtonLabel),
+              final small = TextStyle(
+                fontSize: 11.5,
+                height: 1.35,
+                color: scheme.onSurfaceVariant,
+              );
+              return Padding(
+                padding: const EdgeInsets.fromLTRB(4, 2, 4, 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 1),
+                          child: Icon(
+                            Icons.info_outline_rounded,
+                            size: 14,
+                            color: scheme.onSurfaceVariant,
                           ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(width: 6),
+                        Expanded(child: Text(loc.visaCredit, style: small)),
+                      ],
                     ),
-                  ),
-                ],
+                    if (when != null) ...[
+                      const SizedBox(height: 4),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Text(
+                          stale
+                              ? loc.visaDataStale(when)
+                              : loc.visaDataUpdated(when),
+                          style: small.copyWith(
+                            color: stale ? TravelText.warningColour : null,
+                            fontWeight: stale ? FontWeight.w600 : null,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
               );
             }),
           ],
@@ -916,12 +950,20 @@ class _DestinationTile extends StatelessWidget {
     final country = destination.country;
     final countryName = Countries.name(country);
     final status = req?.status;
+    final purposeVisa = destination.purposeVisa;
     final colour = status == null
         ? scheme.onSurfaceVariant
-        : VisaText.colour(context, status);
+        : purposeVisa
+            ? TravelText.warningColour
+            : VisaText.colour(context, status);
     final needsApplication = destination.needsApplication;
-    final online = status == VisaStatus.evisa || status == VisaStatus.eta;
-    final embassy = status == VisaStatus.required;
+    // The e-visa and ETA links are for visitor stays, so they are not offered
+    // on study or work trips.
+    final online = !purposeVisa &&
+        (status == VisaStatus.evisa || status == VisaStatus.eta);
+    final embassy = status == VisaStatus.required || purposeVisa;
+    final rulesLink =
+        destination.citizen ? null : VisaLinkRepository.rulesFor(country);
 
     final link = isPremium && online
         ? VisaLinkRepository.linkFor(country, status!)
@@ -942,6 +984,11 @@ class _DestinationTile extends StatelessWidget {
     if (req == null) {
       lines.add((loc.visaNotAvailable, null));
     } else {
+      // The banner above the results explains the purpose once. Each tile
+      // only keeps the visitor result visible for reference.
+      if (purposeVisa) {
+        lines.add((loc.visaVisitorRules(VisaText.label(loc, req)), null));
+      }
       final allowed = destination.allowedDays;
       if (allowed != null && status != VisaStatus.free) {
         lines.add((loc.visaStayUpTo(allowed), null));
@@ -953,7 +1000,7 @@ class _DestinationTile extends StatelessWidget {
         ));
       }
       if (needsApplication && visaRecord == null) {
-        final day = VisaCheck.applyBy(trip.start, status!);
+        final day = destination.applyBy(trip.start);
         lines.add((VisaText.applyBy(context, loc, day), null));
       }
       if (isPremium && online && link == null && visaRecord == null) {
@@ -1010,11 +1057,20 @@ class _DestinationTile extends StatelessWidget {
         !onChecklist &&
         trip.checklist.length < SavedTrip.maxChecklist &&
         !isPast;
-    final showRules = req == null ||
-        status == VisaStatus.none ||
-        (!isPremium && needsApplication);
     final showOfficialSearch =
         isPremium && online && link == null && visaRecord == null;
+    // Every destination gets a way to check the rules, free and Premium.
+    // The government page is preferred; a search is the fallback for
+    // countries that do not have one on file yet.
+    final showRules =
+        !destination.citizen && rulesLink == null && !showOfficialSearch;
+    // Without an official page the button opens a web search, where agent
+    // sites often sit at the top. Warn before that when it matters.
+    if (showRules &&
+        visaRecord == null &&
+        (req == null || needsApplication || status == VisaStatus.none)) {
+      lines.add((loc.visaOfficialSearchHint(countryName), null));
+    }
     final showEmbassy =
         isPremium && embassy && !livesThere && visaRecord == null;
     final showApply = visaRecord == null && !isPast;
@@ -1060,8 +1116,12 @@ class _DestinationTile extends StatelessWidget {
                     if (req != null) ...[
                       const SizedBox(height: 4),
                       _VisaPill(
-                        text: VisaText.label(loc, req),
-                        icon: VisaText.icon(req.status),
+                        text: purposeVisa
+                            ? VisaText.purposeLabel(loc, destination.purpose)
+                            : VisaText.label(loc, req),
+                        icon: purposeVisa
+                            ? Icons.approval_rounded
+                            : VisaText.icon(req.status),
                         colour: colour,
                       ),
                     ],
@@ -1124,6 +1184,20 @@ class _DestinationTile extends StatelessWidget {
                   ),
                   icon: const Icon(Icons.swap_horiz_rounded, size: 18),
                   label: Text(loc.passportChange),
+                  style: TextButton.styleFrom(
+                    visualDensity: VisualDensity.compact,
+                  ),
+                ),
+              if (rulesLink != null)
+                TextButton.icon(
+                  onPressed: () => VisaActions.openOfficial(
+                    context,
+                    country,
+                    rulesLink,
+                    rules: true,
+                  ),
+                  icon: const Icon(Icons.gavel_rounded, size: 18),
+                  label: Text(loc.visaOfficialRules),
                   style: TextButton.styleFrom(
                     visualDensity: VisualDensity.compact,
                   ),
@@ -1310,8 +1384,13 @@ class _TransitTile extends StatelessWidget {
 class _LeavingSheet extends StatelessWidget {
   final String country;
   final VisaLink link;
+  final bool rules;
 
-  const _LeavingSheet({required this.country, required this.link});
+  const _LeavingSheet({
+    required this.country,
+    required this.link,
+    this.rules = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1363,7 +1442,7 @@ class _LeavingSheet extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(
-              loc.visaLeavingNote,
+              rules ? loc.visaLeavingRulesNote : loc.visaLeavingNote,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 12.5,
@@ -1456,6 +1535,50 @@ class _SavedVisaSheet extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _PurposeBanner extends StatelessWidget {
+  final TripPurpose purpose;
+
+  const _PurposeBanner({required this.purpose});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final separate = TripPurposes.needsOwnVisa(purpose);
+    const colour = TravelText.warningColour;
+    return Container(
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+      decoration: BoxDecoration(
+        color: colour.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            separate ? Icons.school_rounded : Icons.work_outline_rounded,
+            size: 18,
+            color: colour,
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              separate
+                  ? VisaText.purposeNote(loc, purpose)
+                  : loc.visaBusinessNote,
+              style: TextStyle(
+                fontSize: 12.5,
+                height: 1.35,
+                fontWeight: FontWeight.w600,
+                color: colour,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

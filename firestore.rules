@@ -155,7 +155,11 @@ service cloud.firestore {
       return d.keys().hasOnly(['name', 'departure', 'returnDate', 'driving',
                                'needsVisa', 'travellers', 'checklist', 'updatedAt',
                                'countries', 'passportRule', 'needsVisaManual',
-                               'visaRecords', 'arrivals', 'flights', 'passportChoice'])
+                               'visaRecords', 'arrivals', 'flights', 'passportChoice',
+                               'purpose'])
+        && (!('purpose' in d) || d.purpose in ['holiday', 'family', 'business', 'study', 'work'])
+        && (!('driving' in d) || d.driving is bool)
+        && (!('needsVisa' in d) || d.needsVisa is bool)
         && (!('needsVisaManual' in d) || d.needsVisaManual is bool)
         && (!('visaRecords' in d) || (d.visaRecords is map && d.visaRecords.size() <= 40))
         && (!('arrivals' in d) || (d.arrivals is map && d.arrivals.size() <= 6))

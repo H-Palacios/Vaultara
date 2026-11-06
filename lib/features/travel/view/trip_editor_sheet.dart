@@ -7,12 +7,14 @@ import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
+import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/logic/trip_checklist.dart';
 import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/features/travel/view/trip_flight_sheet.dart';
+import 'package:vaultara/features/travel/view/trip_purpose_picker.dart';
 import 'package:vaultara/features/travel/view/visa_section.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -45,6 +47,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
   late bool _driving;
   late bool _needsVisa;
   late bool _needsVisaManual;
+  late TripPurpose _purpose;
   late Set<String> _travellers;
   late List<String> _countries;
   late List<TripFlight> _flights;
@@ -66,6 +69,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     _driving = trip?.driving ?? false;
     _needsVisa = trip?.needsVisa ?? false;
     _needsVisaManual = trip?.needsVisaManual ?? false;
+    _purpose = trip?.purpose ?? TripPurposes.fallback;
     _travellers = {...(trip?.travellers ?? const <String>[SavedTrip.me])};
     _countries = List<String>.of(trip?.countries ?? const <String>[]);
     _flights = List<TripFlight>.of(trip?.flights ?? const <TripFlight>[]);
@@ -359,6 +363,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       returnDate: returnDate,
       travellers: _travellers.toList(),
       countries: _countries,
+      purpose: _purpose,
     );
   }
 
@@ -421,6 +426,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           travellers: valid,
           countries: _countries,
           flights: _flights,
+          purpose: _purpose,
         );
         saved = await TripRepository.addChecked(
           draft.copyWith(checklist: TripChecklist.build(loc, draft)),
@@ -436,6 +442,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           travellers: valid,
           countries: _countries,
           flights: _flights,
+          purpose: _purpose,
         );
         saved = edited.copyWith(
           checklist: TripChecklist.update(loc, before: base, after: edited),
@@ -721,6 +728,11 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                         valueListenable: PeopleRepository.people,
                         builder: (context, people, _) =>
                             _who(loc, scheme, people),
+                      ),
+                      const SizedBox(height: 16),
+                      TripPurposePicker(
+                        value: _purpose,
+                        onChanged: (p) => setState(() => _purpose = p),
                       ),
                       const SizedBox(height: 16),
                       ListenableBuilder(
