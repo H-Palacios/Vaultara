@@ -68,6 +68,7 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - Pick a trip, dates, destination and one or more travellers, including people who do not use Vaultara.
 - Checks the passport is valid six months past the return date.
 - **Automatic visa check** using the Passport Index dataset, refreshed weekly by a Cloud Function, with links to official e-visa and ETA sites and an embassy finder fallback.
+- **Purpose-aware visa results**: each trip has a reason (holiday, family, business, study, work). Study and work trips never show a visitor result as the answer, business trips carry a caution, and 198 of the 211 destinations link to the government's own visa rules page (the rest fall back to a search with a warning about agent sites). Official links are only accepted on government domains or a short hand-checked list, enforced by `visaLinkJob`.
 - Flags travel insurance, driving licence and anything that expires while you are away.
 
 ### Family and household
