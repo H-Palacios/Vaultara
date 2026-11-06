@@ -115,8 +115,17 @@ class VisaRepository {
           .collection(collection)
           .doc(metaId)
           .get();
-      final value = snap.data()?['updatedAt'];
-      if (value is Timestamp) found = value.toDate();
+      // Prefer the date the source itself was last changed. Our own write
+      // time only says when Vaultara copied it, which can make old data look
+      // fresh.
+      final data = snap.data();
+      final source = data?['sourceDate'];
+      final written = data?['updatedAt'];
+      if (source is Timestamp) {
+        found = source.toDate();
+      } else if (written is Timestamp) {
+        found = written.toDate();
+      }
     } catch (_) {
       found = null;
     }
