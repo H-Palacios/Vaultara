@@ -2018,5 +2018,19 @@
   "hidePassword": "Skrýt heslo",
   "pinCategory": "Připnout nahoru",
   "unpinCategory": "Odepnout",
-  "clearSearch": "Smazat hledání"
+  "clearSearch": "Smazat hledání",
+  "tripPurposeTitle": "Důvod cesty",
+  "tripPurposeHoliday": "Dovolená",
+  "tripPurposeFamily": "Návštěva rodiny nebo přátel",
+  "tripPurposeBusiness": "Služební cesta",
+  "tripPurposeStudy": "Studium",
+  "tripPurposeWork": "Práce",
+  "visaPurposeStudyNeeded": "Obvykle je nutné studijní vízum",
+  "visaPurposeWorkNeeded": "Obvykle je nutné pracovní vízum",
+  "visaPurposeStudyNote": "Pravidla pro návštěvníky se nevztahují na studium. Obvykle potřebujete studijní vízum nebo povolení. Zkontrolujte oficiální pravidla a požádejte včas.",
+  "visaPurposeWorkNote": "Pravidla pro návštěvníky se nevztahují na práci, placenou ani neplacenou. Obvykle potřebujete pracovní vízum nebo povolení. Zkontrolujte oficiální pravidla a požádejte včas.",
+  "visaBusinessNote": "Krátké služební cesty, například kvůli schůzkám, pravidla pro návštěvníky často povolují, placenou práci však ne. Zkontrolujte oficiální pravidla.",
+  "visaVisitorRules": "Pravidla pro návštěvníky: {status}",
+  "visaOfficialRules": "Oficiální pravidla",
+  "visaLeavingRulesNote": "Vaultara není součástí tohoto webu. Pokud tento web uvádí něco jiného než Vaultara, řiďte se tímto webem."
 }

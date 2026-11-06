@@ -6233,4 +6233,48 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get clearSearch => 'ရှာဖွေမှု ရှင်းပါ';
+
+  @override
+  String get tripPurposeTitle => 'ခရီးသွားရသည့် အကြောင်းရင်း';
+
+  @override
+  String get tripPurposeHoliday => 'အားလပ်ရက်';
+
+  @override
+  String get tripPurposeFamily => 'မိသားစု သို့မဟုတ် သူငယ်ချင်းများထံ လည်ပတ်ခြင်း';
+
+  @override
+  String get tripPurposeBusiness => 'စီးပွားရေး';
+
+  @override
+  String get tripPurposeStudy => 'ပညာသင်ခြင်း';
+
+  @override
+  String get tripPurposeWork => 'အလုပ်';
+
+  @override
+  String get visaPurposeStudyNeeded => 'များသောအားဖြင့် ကျောင်းသားဗီဇာ လိုအပ်သည်';
+
+  @override
+  String get visaPurposeWorkNeeded => 'များသောအားဖြင့် အလုပ်ဗီဇာ လိုအပ်သည်';
+
+  @override
+  String get visaPurposeStudyNote => 'ဧည့်သည်စည်းမျဉ်းများတွင် ပညာသင်ခြင်း မပါဝင်ပါ။ များသောအားဖြင့် ကျောင်းသားဗီဇာ သို့မဟုတ် ခွင့်ပြုချက် လိုအပ်သည်။ တရားဝင်စည်းမျဉ်းများကို စစ်ဆေးပြီး စောစော လျှောက်ထားပါ။';
+
+  @override
+  String get visaPurposeWorkNote => 'ဧည့်သည်စည်းမျဉ်းများတွင် လစာရသည်ဖြစ်စေ မရသည်ဖြစ်စေ အလုပ်လုပ်ခြင်း မပါဝင်ပါ။ များသောအားဖြင့် အလုပ်ဗီဇာ သို့မဟုတ် ခွင့်ပြုချက် လိုအပ်သည်။ တရားဝင်စည်းမျဉ်းများကို စစ်ဆေးပြီး စောစော လျှောက်ထားပါ။';
+
+  @override
+  String get visaBusinessNote => 'အစည်းအဝေးကဲ့သို့ တိုတောင်းသော စီးပွားရေးခရီးများကို ဧည့်သည်စည်းမျဉ်းဖြင့် မကြာခဏ ခွင့်ပြုသော်လည်း လစာရသော အလုပ်ကို ခွင့်မပြုပါ။ တရားဝင်စည်းမျဉ်းများကို စစ်ဆေးပါ။';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'ဧည့်သည်စည်းမျဉ်း- $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'တရားဝင်စည်းမျဉ်းများ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara သည် ဤဆိုက်၏ အစိတ်အပိုင်း မဟုတ်ပါ။ ဤဆိုက်က Vaultara နှင့် မတူသည်ကို ပြောပါက ဤဆိုက်ကို လိုက်နာပါ။';
 }

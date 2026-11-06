@@ -6233,4 +6233,48 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get clearSearch => 'សម្អាតការស្វែងរក';
+
+  @override
+  String get tripPurposeTitle => 'មូលហេតុនៃការធ្វើដំណើរ';
+
+  @override
+  String get tripPurposeHoliday => 'វិស្សមកាល';
+
+  @override
+  String get tripPurposeFamily => 'ទៅលេងគ្រួសារ ឬមិត្តភក្តិ';
+
+  @override
+  String get tripPurposeBusiness => 'អាជីវកម្ម';
+
+  @override
+  String get tripPurposeStudy => 'ការសិក្សា';
+
+  @override
+  String get tripPurposeWork => 'ការងារ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'ជាធម្មតាត្រូវការទិដ្ឋាការសិក្សា';
+
+  @override
+  String get visaPurposeWorkNeeded => 'ជាធម្មតាត្រូវការទិដ្ឋាការការងារ';
+
+  @override
+  String get visaPurposeStudyNote => 'ច្បាប់សម្រាប់អ្នកទស្សនាមិនគ្របដណ្ដប់ការសិក្សាទេ។ ជាធម្មតាអ្នកត្រូវការទិដ្ឋាការ ឬលិខិតអនុញ្ញាតសិក្សា។ សូមពិនិត្យច្បាប់ផ្លូវការ ហើយដាក់ពាក្យឱ្យបានឆាប់។';
+
+  @override
+  String get visaPurposeWorkNote => 'ច្បាប់សម្រាប់អ្នកទស្សនាមិនគ្របដណ្ដប់ការងារទេ ទោះមានប្រាក់ឈ្នួល ឬគ្មាន។ ជាធម្មតាអ្នកត្រូវការទិដ្ឋាការ ឬលិខិតអនុញ្ញាតការងារ។ សូមពិនិត្យច្បាប់ផ្លូវការ ហើយដាក់ពាក្យឱ្យបានឆាប់។';
+
+  @override
+  String get visaBusinessNote => 'ដំណើរអាជីវកម្មខ្លីៗ ដូចជាការប្រជុំ ជារឿយៗត្រូវបានអនុញ្ញាតតាមច្បាប់សម្រាប់អ្នកទស្សនា ប៉ុន្តែការងារមានប្រាក់ឈ្នួលមិនត្រូវបានអនុញ្ញាតទេ។ សូមពិនិត្យច្បាប់ផ្លូវការ។';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'ច្បាប់សម្រាប់អ្នកទស្សនា៖ $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ច្បាប់ផ្លូវការ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara មិនមែនជាផ្នែកមួយនៃគេហទំព័រនេះទេ។ ប្រសិនបើគេហទំព័រនេះនិយាយខុសពី Vaultara សូមធ្វើតាមគេហទំព័រនេះ។';
 }

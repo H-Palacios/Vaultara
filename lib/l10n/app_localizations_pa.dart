@@ -6286,4 +6286,48 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get clearSearch => 'ਖੋਜ ਸਾਫ਼ ਕਰੋ';
+
+  @override
+  String get tripPurposeTitle => 'ਯਾਤਰਾ ਦਾ ਕਾਰਨ';
+
+  @override
+  String get tripPurposeHoliday => 'ਛੁੱਟੀ';
+
+  @override
+  String get tripPurposeFamily => 'ਪਰਿਵਾਰ ਜਾਂ ਦੋਸਤਾਂ ਨੂੰ ਮਿਲਣਾ';
+
+  @override
+  String get tripPurposeBusiness => 'ਕਾਰੋਬਾਰ';
+
+  @override
+  String get tripPurposeStudy => 'ਪੜ੍ਹਾਈ';
+
+  @override
+  String get tripPurposeWork => 'ਕੰਮ';
+
+  @override
+  String get visaPurposeStudyNeeded => 'ਆਮ ਤੌਰ ਤੇ ਸਟੂਡੈਂਟ ਵੀਜ਼ਾ ਲੋੜੀਂਦਾ';
+
+  @override
+  String get visaPurposeWorkNeeded => 'ਆਮ ਤੌਰ ਤੇ ਵਰਕ ਵੀਜ਼ਾ ਲੋੜੀਂਦਾ';
+
+  @override
+  String get visaPurposeStudyNote => 'ਵਿਜ਼ਿਟਰ ਨਿਯਮ ਪੜ੍ਹਾਈ ਉੱਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦੇ। ਆਮ ਤੌਰ ਤੇ ਤੁਹਾਨੂੰ ਸਟੂਡੈਂਟ ਵੀਜ਼ਾ ਜਾਂ ਪਰਮਿਟ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। ਅਧਿਕਾਰਤ ਨਿਯਮ ਦੇਖੋ ਅਤੇ ਜਲਦੀ ਅਰਜ਼ੀ ਦਿਓ।';
+
+  @override
+  String get visaPurposeWorkNote => 'ਵਿਜ਼ਿਟਰ ਨਿਯਮ ਤਨਖਾਹ ਵਾਲੇ ਜਾਂ ਬਿਨਾਂ ਤਨਖਾਹ ਵਾਲੇ ਕੰਮ ਉੱਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦੇ। ਆਮ ਤੌਰ ਤੇ ਤੁਹਾਨੂੰ ਵਰਕ ਵੀਜ਼ਾ ਜਾਂ ਪਰਮਿਟ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ। ਅਧਿਕਾਰਤ ਨਿਯਮ ਦੇਖੋ ਅਤੇ ਜਲਦੀ ਅਰਜ਼ੀ ਦਿਓ।';
+
+  @override
+  String get visaBusinessNote => 'ਮੀਟਿੰਗਾਂ ਵਰਗੀਆਂ ਛੋਟੀਆਂ ਕਾਰੋਬਾਰੀ ਮੁਲਾਕਾਤਾਂ ਦੀ ਵਿਜ਼ਿਟਰ ਨਿਯਮਾਂ ਹੇਠ ਅਕਸਰ ਇਜਾਜ਼ਤ ਹੁੰਦੀ ਹੈ, ਪਰ ਤਨਖਾਹ ਵਾਲੇ ਕੰਮ ਦੀ ਨਹੀਂ। ਅਧਿਕਾਰਤ ਨਿਯਮ ਦੇਖੋ।';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'ਵਿਜ਼ਿਟਰ ਨਿਯਮ: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'ਅਧਿਕਾਰਤ ਨਿਯਮ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ਇਸ ਸਾਈਟ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਹੈ। ਜੇ ਇਹ ਸਾਈਟ Vaultara ਤੋਂ ਵੱਖਰੀ ਗੱਲ ਕਹਿੰਦੀ ਹੈ, ਤਾਂ ਇਸ ਸਾਈਟ ਦੀ ਪਾਲਣਾ ਕਰੋ।';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get clearSearch => 'تلاش صاف کریں';
+
+  @override
+  String get tripPurposeTitle => 'سفر کی وجہ';
+
+  @override
+  String get tripPurposeHoliday => 'چھٹی';
+
+  @override
+  String get tripPurposeFamily => 'خاندان یا دوستوں سے ملاقات';
+
+  @override
+  String get tripPurposeBusiness => 'کاروبار';
+
+  @override
+  String get tripPurposeStudy => 'تعلیم';
+
+  @override
+  String get tripPurposeWork => 'ملازمت';
+
+  @override
+  String get visaPurposeStudyNeeded => 'عام طور پر اسٹوڈنٹ ویزا درکار ہے';
+
+  @override
+  String get visaPurposeWorkNeeded => 'عام طور پر ورک ویزا درکار ہے';
+
+  @override
+  String get visaPurposeStudyNote => 'وزیٹر قواعد تعلیم پر لاگو نہیں ہوتے۔ عام طور پر آپ کو اسٹوڈنٹ ویزا یا اجازت نامہ درکار ہوتا ہے۔ سرکاری قواعد دیکھیں اور جلد درخواست دیں۔';
+
+  @override
+  String get visaPurposeWorkNote => 'وزیٹر قواعد کام پر لاگو نہیں ہوتے، چاہے معاوضے والا ہو یا بغیر معاوضے کے۔ عام طور پر آپ کو ورک ویزا یا اجازت نامہ درکار ہوتا ہے۔ سرکاری قواعد دیکھیں اور جلد درخواست دیں۔';
+
+  @override
+  String get visaBusinessNote => 'میٹنگ جیسے مختصر کاروباری دوروں کی وزیٹر قواعد کے تحت اکثر اجازت ہوتی ہے، لیکن معاوضے والے کام کی نہیں۔ سرکاری قواعد دیکھیں۔';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'وزیٹر قواعد: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'سرکاری قواعد';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara اس سائٹ کا حصہ نہیں ہے۔ اگر یہ سائٹ Vaultara سے مختلف بات کہتی ہے تو اس سائٹ کی پیروی کریں۔';
 }

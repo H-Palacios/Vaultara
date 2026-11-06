@@ -6276,4 +6276,48 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get clearSearch => 'Хайлтыг цэвэрлэх';
+
+  @override
+  String get tripPurposeTitle => 'Аяллын шалтгаан';
+
+  @override
+  String get tripPurposeHoliday => 'Амралт';
+
+  @override
+  String get tripPurposeFamily => 'Гэр бүл эсвэл найз нөхдөө эргэх';
+
+  @override
+  String get tripPurposeBusiness => 'Бизнес';
+
+  @override
+  String get tripPurposeStudy => 'Сургалт';
+
+  @override
+  String get tripPurposeWork => 'Ажил';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Ихэвчлэн оюутны виз хэрэгтэй';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Ихэвчлэн ажлын виз хэрэгтэй';
+
+  @override
+  String get visaPurposeStudyNote => 'Зочдын дүрэм сургалтад хамаарахгүй. Ихэвчлэн оюутны виз эсвэл зөвшөөрөл хэрэгтэй. Албан ёсны дүрмийг шалгаад эрт хүсэлт гаргаарай.';
+
+  @override
+  String get visaPurposeWorkNote => 'Зочдын дүрэм цалинтай болон цалингүй ажилд хамаарахгүй. Ихэвчлэн ажлын виз эсвэл зөвшөөрөл хэрэгтэй. Албан ёсны дүрмийг шалгаад эрт хүсэлт гаргаарай.';
+
+  @override
+  String get visaBusinessNote => 'Уулзалт зэрэг богино хугацааны бизнес айлчлалыг зочдын дүрмээр ихэвчлэн зөвшөөрдөг ч цалинтай ажлыг зөвшөөрдөггүй. Албан ёсны дүрмийг шалгаарай.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Зочдын дүрэм: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Албан ёсны дүрэм';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara энэ сайтын нэг хэсэг биш. Хэрэв энэ сайт Vaultara-аас өөр зүйл хэлж байвал энэ сайтыг дагаарай.';
 }

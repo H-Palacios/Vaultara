@@ -6230,4 +6230,48 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get clearSearch => 'Hapus pencarian';
+
+  @override
+  String get tripPurposeTitle => 'Alasan perjalanan';
+
+  @override
+  String get tripPurposeHoliday => 'Liburan';
+
+  @override
+  String get tripPurposeFamily => 'Mengunjungi keluarga atau teman';
+
+  @override
+  String get tripPurposeBusiness => 'Bisnis';
+
+  @override
+  String get tripPurposeStudy => 'Studi';
+
+  @override
+  String get tripPurposeWork => 'Kerja';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Biasanya perlu visa pelajar';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Biasanya perlu visa kerja';
+
+  @override
+  String get visaPurposeStudyNote => 'Aturan pengunjung tidak mencakup studi. Biasanya Anda perlu visa atau izin pelajar. Cek aturan resmi dan ajukan lebih awal.';
+
+  @override
+  String get visaPurposeWorkNote => 'Aturan pengunjung tidak mencakup bekerja, baik dibayar maupun tidak. Biasanya Anda perlu visa atau izin kerja. Cek aturan resmi dan ajukan lebih awal.';
+
+  @override
+  String get visaBusinessNote => 'Kunjungan bisnis singkat seperti rapat sering diizinkan dengan aturan pengunjung, tetapi kerja berbayar tidak. Cek aturan resmi.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Aturan pengunjung: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Aturan resmi';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara bukan bagian dari situs ini. Jika situs ini menyatakan hal yang berbeda dari Vaultara, ikuti situs ini.';
 }

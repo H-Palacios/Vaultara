@@ -6294,4 +6294,48 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get clearSearch => 'Effacer la recherche';
+
+  @override
+  String get tripPurposeTitle => 'Motif du voyage';
+
+  @override
+  String get tripPurposeHoliday => 'Vacances';
+
+  @override
+  String get tripPurposeFamily => 'Visite à la famille ou à des amis';
+
+  @override
+  String get tripPurposeBusiness => 'Affaires';
+
+  @override
+  String get tripPurposeStudy => 'Études';
+
+  @override
+  String get tripPurposeWork => 'Travail';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Visa étudiant généralement requis';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Visa de travail généralement requis';
+
+  @override
+  String get visaPurposeStudyNote => 'Les règles pour les visiteurs ne couvrent pas les études. Il vous faut généralement un visa ou un permis d\'études. Vérifiez les règles officielles et faites votre demande tôt.';
+
+  @override
+  String get visaPurposeWorkNote => 'Les règles pour les visiteurs ne couvrent pas le travail, rémunéré ou non. Il vous faut généralement un visa ou un permis de travail. Vérifiez les règles officielles et faites votre demande tôt.';
+
+  @override
+  String get visaBusinessNote => 'Les courts voyages d\'affaires, comme des réunions, sont souvent autorisés avec les règles pour les visiteurs, mais pas le travail rémunéré. Vérifiez les règles officielles.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Règles pour les visiteurs : $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Règles officielles';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ne fait pas partie de ce site. Si ce site dit autre chose que Vaultara, suivez ce site.';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get clearSearch => 'Qidiruvni tozalash';
+
+  @override
+  String get tripPurposeTitle => 'Safar sababi';
+
+  @override
+  String get tripPurposeHoliday => 'Dam olish';
+
+  @override
+  String get tripPurposeFamily => 'Oila yoki do‘stlarni ko‘rish';
+
+  @override
+  String get tripPurposeBusiness => 'Biznes';
+
+  @override
+  String get tripPurposeStudy => 'O‘qish';
+
+  @override
+  String get tripPurposeWork => 'Ish';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Odatda talaba vizasi kerak';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Odatda ish vizasi kerak';
+
+  @override
+  String get visaPurposeStudyNote => 'Tashrif buyuruvchilar qoidalari o‘qishni qamramaydi. Odatda talaba vizasi yoki ruxsatnomasi kerak. Rasmiy qoidalarni tekshiring va erta ariza bering.';
+
+  @override
+  String get visaPurposeWorkNote => 'Tashrif buyuruvchilar qoidalari haq to‘lanadigan yoki to‘lanmaydigan ishni qamramaydi. Odatda ish vizasi yoki ruxsatnomasi kerak. Rasmiy qoidalarni tekshiring va erta ariza bering.';
+
+  @override
+  String get visaBusinessNote => 'Uchrashuvlar kabi qisqa biznes tashriflariga tashrif buyuruvchilar qoidalari ko‘pincha ruxsat beradi, lekin haq to‘lanadigan ishga emas. Rasmiy qoidalarni tekshiring.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Tashrif buyuruvchilar qoidalari: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Rasmiy qoidalar';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara bu saytning bir qismi emas. Agar bu sayt Vaultaradan boshqacha narsa aytsa, ushbu saytga amal qiling.';
 }

@@ -1987,5 +1987,19 @@
   "hidePassword": "Skryť heslo",
   "pinCategory": "Pripnúť hore",
   "unpinCategory": "Odopnúť",
-  "clearSearch": "Vymazať hľadanie"
+  "clearSearch": "Vymazať hľadanie",
+  "tripPurposeTitle": "Dôvod cesty",
+  "tripPurposeHoliday": "Dovolenka",
+  "tripPurposeFamily": "Návšteva rodiny alebo priateľov",
+  "tripPurposeBusiness": "Služobná cesta",
+  "tripPurposeStudy": "Štúdium",
+  "tripPurposeWork": "Práca",
+  "visaPurposeStudyNeeded": "Zvyčajne je potrebné študentské vízum",
+  "visaPurposeWorkNeeded": "Zvyčajne je potrebné pracovné vízum",
+  "visaPurposeStudyNote": "Pravidlá pre návštevníkov sa nevzťahujú na štúdium. Zvyčajne potrebujete študentské vízum alebo povolenie. Skontrolujte oficiálne pravidlá a požiadajte včas.",
+  "visaPurposeWorkNote": "Pravidlá pre návštevníkov sa nevzťahujú na prácu, platenú ani neplatenú. Zvyčajne potrebujete pracovné vízum alebo povolenie. Skontrolujte oficiálne pravidlá a požiadajte včas.",
+  "visaBusinessNote": "Krátke služobné cesty, napríklad kvôli stretnutiam, pravidlá pre návštevníkov často povoľujú, platenú prácu však nie. Skontrolujte oficiálne pravidlá.",
+  "visaVisitorRules": "Pravidlá pre návštevníkov: {status}",
+  "visaOfficialRules": "Oficiálne pravidlá",
+  "visaLeavingRulesNote": "Vaultara nie je súčasťou tejto stránky. Ak táto stránka uvádza niečo iné ako Vaultara, riaďte sa touto stránkou."
 }

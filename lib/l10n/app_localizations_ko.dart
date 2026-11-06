@@ -6235,4 +6235,48 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get clearSearch => '검색어 지우기';
+
+  @override
+  String get tripPurposeTitle => '여행 목적';
+
+  @override
+  String get tripPurposeHoliday => '휴가';
+
+  @override
+  String get tripPurposeFamily => '가족 또는 친구 방문';
+
+  @override
+  String get tripPurposeBusiness => '출장';
+
+  @override
+  String get tripPurposeStudy => '유학';
+
+  @override
+  String get tripPurposeWork => '취업';
+
+  @override
+  String get visaPurposeStudyNeeded => '보통 유학 비자 필요';
+
+  @override
+  String get visaPurposeWorkNeeded => '보통 취업 비자 필요';
+
+  @override
+  String get visaPurposeStudyNote => '방문자 규정은 유학에 적용되지 않습니다. 보통 유학 비자나 허가가 필요합니다. 공식 규정을 확인하고 일찍 신청하세요.';
+
+  @override
+  String get visaPurposeWorkNote => '방문자 규정은 유급이든 무급이든 취업에 적용되지 않습니다. 보통 취업 비자나 허가가 필요합니다. 공식 규정을 확인하고 일찍 신청하세요.';
+
+  @override
+  String get visaBusinessNote => '회의 같은 짧은 출장은 방문자 규정으로 허용되는 경우가 많지만, 유급 근무는 허용되지 않습니다. 공식 규정을 확인하세요.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return '방문자 규정: $status';
+  }
+
+  @override
+  String get visaOfficialRules => '공식 규정';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara는 이 사이트와 관련이 없습니다. 이 사이트의 내용이 Vaultara와 다르면 이 사이트를 따르세요.';
 }

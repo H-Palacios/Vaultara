@@ -6286,4 +6286,48 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get clearSearch => 'தேடலை அழி';
+
+  @override
+  String get tripPurposeTitle => 'பயணத்தின் காரணம்';
+
+  @override
+  String get tripPurposeHoliday => 'விடுமுறை';
+
+  @override
+  String get tripPurposeFamily => 'குடும்பம் அல்லது நண்பர்களைச் சந்திப்பது';
+
+  @override
+  String get tripPurposeBusiness => 'வணிகம்';
+
+  @override
+  String get tripPurposeStudy => 'படிப்பு';
+
+  @override
+  String get tripPurposeWork => 'வேலை';
+
+  @override
+  String get visaPurposeStudyNeeded => 'பொதுவாக மாணவர் விசா தேவை';
+
+  @override
+  String get visaPurposeWorkNeeded => 'பொதுவாக வேலை விசா தேவை';
+
+  @override
+  String get visaPurposeStudyNote => 'பார்வையாளர் விதிகள் படிப்புக்குப் பொருந்தாது. பொதுவாக மாணவர் விசா அல்லது அனுமதி தேவை. அதிகாரப்பூர்வ விதிகளைப் பார்த்து முன்கூட்டியே விண்ணப்பியுங்கள்.';
+
+  @override
+  String get visaPurposeWorkNote => 'பார்வையாளர் விதிகள் ஊதியம் உள்ள அல்லது இல்லாத வேலைக்குப் பொருந்தாது. பொதுவாக வேலை விசா அல்லது அனுமதி தேவை. அதிகாரப்பூர்வ விதிகளைப் பார்த்து முன்கூட்டியே விண்ணப்பியுங்கள்.';
+
+  @override
+  String get visaBusinessNote => 'கூட்டங்கள் போன்ற குறுகிய வணிகப் பயணங்கள் பார்வையாளர் விதிகளின் கீழ் பெரும்பாலும் அனுமதிக்கப்படுகின்றன, ஆனால் ஊதிய வேலை அனுமதிக்கப்படுவதில்லை. அதிகாரப்பூர்வ விதிகளைப் பாருங்கள்.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'பார்வையாளர் விதிகள்: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'அதிகாரப்பூர்வ விதிகள்';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara இந்தத் தளத்தின் பகுதி அல்ல. இந்தத் தளம் Vaultara-வை விட வேறுபட்டதைச் சொன்னால், இந்தத் தளத்தைப் பின்பற்றுங்கள்.';
 }

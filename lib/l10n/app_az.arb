@@ -1737,5 +1737,19 @@
   "hidePassword": "Parolu gizlət",
   "pinCategory": "Yuxarıya sancaqla",
   "unpinCategory": "Sancağı götür",
-  "clearSearch": "Axtarışı təmizlə"
+  "clearSearch": "Axtarışı təmizlə",
+  "tripPurposeTitle": "Səfərin səbəbi",
+  "tripPurposeHoliday": "Tətil",
+  "tripPurposeFamily": "Ailə və ya dostları ziyarət",
+  "tripPurposeBusiness": "İşgüzar",
+  "tripPurposeStudy": "Təhsil",
+  "tripPurposeWork": "İş",
+  "visaPurposeStudyNeeded": "Adətən təhsil vizası lazımdır",
+  "visaPurposeWorkNeeded": "Adətən iş vizası lazımdır",
+  "visaPurposeStudyNote": "Ziyarətçi qaydaları təhsili əhatə etmir. Adətən təhsil vizası və ya icazəsi lazımdır. Rəsmi qaydalara bax və tez müraciət et.",
+  "visaPurposeWorkNote": "Ziyarətçi qaydaları ödənişli və ya ödənişsiz işi əhatə etmir. Adətən iş vizası və ya icazəsi lazımdır. Rəsmi qaydalara bax və tez müraciət et.",
+  "visaBusinessNote": "Görüşlər kimi qısa işgüzar səfərlərə ziyarətçi qaydaları ilə tez-tez icazə verilir, amma ödənişli işə yox. Rəsmi qaydalara bax.",
+  "visaVisitorRules": "Ziyarətçi qaydaları: {status}",
+  "visaOfficialRules": "Rəsmi qaydalar",
+  "visaLeavingRulesNote": "Vaultara bu saytın bir hissəsi deyil. Bu sayt Vaultara-dan fərqli bir şey deyirsə, bu sayta əməl et."
 }

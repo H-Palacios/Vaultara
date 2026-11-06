@@ -6348,4 +6348,48 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get clearSearch => 'Notīrīt meklēšanu';
+
+  @override
+  String get tripPurposeTitle => 'Ceļojuma iemesls';
+
+  @override
+  String get tripPurposeHoliday => 'Atvaļinājums';
+
+  @override
+  String get tripPurposeFamily => 'Ģimenes vai draugu apciemošana';
+
+  @override
+  String get tripPurposeBusiness => 'Darījumu brauciens';
+
+  @override
+  String get tripPurposeStudy => 'Studijas';
+
+  @override
+  String get tripPurposeWork => 'Darbs';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Parasti nepieciešama studiju vīza';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Parasti nepieciešama darba vīza';
+
+  @override
+  String get visaPurposeStudyNote => 'Apmeklētāju noteikumi neattiecas uz studijām. Parasti nepieciešama studiju vīza vai atļauja. Pārbaudiet oficiālos noteikumus un piesakieties laikus.';
+
+  @override
+  String get visaPurposeWorkNote => 'Apmeklētāju noteikumi neattiecas uz darbu, ne apmaksātu, ne neapmaksātu. Parasti nepieciešama darba vīza vai atļauja. Pārbaudiet oficiālos noteikumus un piesakieties laikus.';
+
+  @override
+  String get visaBusinessNote => 'Īsi darījumu braucieni, piemēram, sanāksmes, saskaņā ar apmeklētāju noteikumiem bieži ir atļauti, bet apmaksāts darbs nav. Pārbaudiet oficiālos noteikumus.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Apmeklētāju noteikumi: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Oficiālie noteikumi';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara nav šīs vietnes daļa. Ja šī vietne saka ko citu nekā Vaultara, ievērojiet šo vietni.';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get clearSearch => 'Εκκαθάριση αναζήτησης';
+
+  @override
+  String get tripPurposeTitle => 'Λόγος ταξιδιού';
+
+  @override
+  String get tripPurposeHoliday => 'Διακοπές';
+
+  @override
+  String get tripPurposeFamily => 'Επίσκεψη σε οικογένεια ή φίλους';
+
+  @override
+  String get tripPurposeBusiness => 'Επαγγελματικό';
+
+  @override
+  String get tripPurposeStudy => 'Σπουδές';
+
+  @override
+  String get tripPurposeWork => 'Εργασία';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Συνήθως απαιτείται φοιτητική βίζα';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Συνήθως απαιτείται βίζα εργασίας';
+
+  @override
+  String get visaPurposeStudyNote => 'Οι κανόνες για επισκέπτες δεν καλύπτουν σπουδές. Συνήθως χρειάζεστε φοιτητική βίζα ή άδεια. Ελέγξτε τους επίσημους κανόνες και κάντε αίτηση νωρίς.';
+
+  @override
+  String get visaPurposeWorkNote => 'Οι κανόνες για επισκέπτες δεν καλύπτουν εργασία, αμειβόμενη ή μη. Συνήθως χρειάζεστε βίζα ή άδεια εργασίας. Ελέγξτε τους επίσημους κανόνες και κάντε αίτηση νωρίς.';
+
+  @override
+  String get visaBusinessNote => 'Σύντομα επαγγελματικά ταξίδια, όπως συναντήσεις, συχνά επιτρέπονται με τους κανόνες για επισκέπτες, αλλά η αμειβόμενη εργασία όχι. Ελέγξτε τους επίσημους κανόνες.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Κανόνες για επισκέπτες: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Επίσημοι κανόνες';
+
+  @override
+  String get visaLeavingRulesNote => 'Το Vaultara δεν είναι μέρος αυτού του ιστότοπου. Αν ο ιστότοπος λέει κάτι διαφορετικό από το Vaultara, ακολουθήστε τον ιστότοπο.';
 }

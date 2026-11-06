@@ -2152,5 +2152,19 @@
   "hidePassword": "Peida parool",
   "pinCategory": "Kinnita üles",
   "unpinCategory": "Eemalda kinnitus",
-  "clearSearch": "Tühjenda otsing"
+  "clearSearch": "Tühjenda otsing",
+  "tripPurposeTitle": "Reisi põhjus",
+  "tripPurposeHoliday": "Puhkus",
+  "tripPurposeFamily": "Pere või sõprade külastus",
+  "tripPurposeBusiness": "Äri",
+  "tripPurposeStudy": "Õpingud",
+  "tripPurposeWork": "Töö",
+  "visaPurposeStudyNeeded": "Tavaliselt on vaja õppeviisat",
+  "visaPurposeWorkNeeded": "Tavaliselt on vaja tööviisat",
+  "visaPurposeStudyNote": "Külastajate reeglid ei kehti õppimise kohta. Tavaliselt on vaja õppeviisat või -luba. Kontrolli ametlikke reegleid ja taotle varakult.",
+  "visaPurposeWorkNote": "Külastajate reeglid ei kehti töötamise kohta, olgu see tasuline või tasuta. Tavaliselt on vaja tööviisat või -luba. Kontrolli ametlikke reegleid ja taotle varakult.",
+  "visaBusinessNote": "Lühikesed ärireisid, näiteks koosolekud, on külastajate reeglite järgi sageli lubatud, kuid tasuline töö mitte. Kontrolli ametlikke reegleid.",
+  "visaVisitorRules": "Külastajate reeglid: {status}",
+  "visaOfficialRules": "Ametlikud reeglid",
+  "visaLeavingRulesNote": "Vaultara ei ole selle saidi osa. Kui see sait ütleb midagi muud kui Vaultara, järgi seda saiti."
 }

@@ -10686,6 +10686,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Clear search'**
   String get clearSearch;
+
+  /// Label above the reason-for-travel chips in the trip form.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason for the trip'**
+  String get tripPurposeTitle;
+
+  /// Trip reason or visa purpose text.
+  ///
+  /// In en, this message translates to:
+  /// **'Holiday'**
+  String get tripPurposeHoliday;
+
+  /// Trip reason chip. Keep short.
+  ///
+  /// In en, this message translates to:
+  /// **'Visiting family or friends'**
+  String get tripPurposeFamily;
+
+  /// Trip reason or visa purpose text.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get tripPurposeBusiness;
+
+  /// Trip reason or visa purpose text.
+  ///
+  /// In en, this message translates to:
+  /// **'Study'**
+  String get tripPurposeStudy;
+
+  /// Trip reason or visa purpose text.
+  ///
+  /// In en, this message translates to:
+  /// **'Work'**
+  String get tripPurposeWork;
+
+  /// Pill on a destination when the trip is for study. 'usually' matters: the app cannot be sure.
+  ///
+  /// In en, this message translates to:
+  /// **'Study visa usually needed'**
+  String get visaPurposeStudyNeeded;
+
+  /// Pill on a destination when the trip is for work. 'usually' matters: the app cannot be sure.
+  ///
+  /// In en, this message translates to:
+  /// **'Work visa usually needed'**
+  String get visaPurposeWorkNeeded;
+
+  /// Warning shown for study trips. Visitor rules = the tourist or short-visit visa result.
+  ///
+  /// In en, this message translates to:
+  /// **'Visitor rules do not cover studying. You usually need a study visa or permit. Check the official rules and apply early.'**
+  String get visaPurposeStudyNote;
+
+  /// Warning shown for work trips.
+  ///
+  /// In en, this message translates to:
+  /// **'Visitor rules do not cover working, paid or unpaid. You usually need a work visa or permit. Check the official rules and apply early.'**
+  String get visaPurposeWorkNote;
+
+  /// Caution shown for business trips.
+  ///
+  /// In en, this message translates to:
+  /// **'Short business visits such as meetings are often allowed on visitor rules, but paid work is not. Check the official rules.'**
+  String get visaBusinessNote;
+
+  /// Shows the tourist visa result for reference on study or work trips. {status} is an already translated label such as 'Visa free for 90 days'.
+  ///
+  /// In en, this message translates to:
+  /// **'Visitor rules: {status}'**
+  String visaVisitorRules(String status);
+
+  /// Button that opens the destination government's own visa rules page.
+  ///
+  /// In en, this message translates to:
+  /// **'Official rules'**
+  String get visaOfficialRules;
+
+  /// Shown before opening a government visa rules page.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara is not part of this site. If this site says something different from Vaultara, follow this site.'**
+  String get visaLeavingRulesNote;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

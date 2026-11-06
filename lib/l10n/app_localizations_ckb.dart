@@ -6286,4 +6286,48 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get clearSearch => 'گەڕان پاک بکەرەوە';
+
+  @override
+  String get tripPurposeTitle => 'هۆی گەشتەکە';
+
+  @override
+  String get tripPurposeHoliday => 'پشوو';
+
+  @override
+  String get tripPurposeFamily => 'سەردانی خێزان یان هاوڕێیان';
+
+  @override
+  String get tripPurposeBusiness => 'بازرگانی';
+
+  @override
+  String get tripPurposeStudy => 'خوێندن';
+
+  @override
+  String get tripPurposeWork => 'کار';
+
+  @override
+  String get visaPurposeStudyNeeded => 'زۆرجار ڤیزای خوێندن پێویستە';
+
+  @override
+  String get visaPurposeWorkNeeded => 'زۆرجار ڤیزای کار پێویستە';
+
+  @override
+  String get visaPurposeStudyNote => 'یاساکانی سەردانکەران خوێندن ناگرنەوە. زۆرجار ڤیزا یان مۆڵەتی خوێندنت پێویستە. یاسا فەرمییەکان بپشکنە و زوو داوا بکە.';
+
+  @override
+  String get visaPurposeWorkNote => 'یاساکانی سەردانکەران کار ناگرنەوە، بە مووچە بێت یان بێ مووچە. زۆرجار ڤیزا یان مۆڵەتی کارت پێویستە. یاسا فەرمییەکان بپشکنە و زوو داوا بکە.';
+
+  @override
+  String get visaBusinessNote => 'سەردانە کورتە بازرگانییەکانی وەک کۆبوونەوە زۆرجار بە یاساکانی سەردانکەران ڕێگەپێدراون، بەڵام کاری بە مووچە نا. یاسا فەرمییەکان بپشکنە.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'یاساکانی سەردانکەران: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'یاسا فەرمییەکان';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara بەشێک نییە لەم ماڵپەڕە. ئەگەر ئەم ماڵپەڕە شتێکی جیاواز لە Vaultara بڵێت، ئەم ماڵپەڕە پەیڕەو بکە.';
 }

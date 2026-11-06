@@ -6286,4 +6286,48 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get clearSearch => 'Garbitu bilaketa';
+
+  @override
+  String get tripPurposeTitle => 'Bidaiaren arrazoia';
+
+  @override
+  String get tripPurposeHoliday => 'Oporrak';
+
+  @override
+  String get tripPurposeFamily => 'Familia edo lagunak bisitatzea';
+
+  @override
+  String get tripPurposeBusiness => 'Negozioak';
+
+  @override
+  String get tripPurposeStudy => 'Ikasketak';
+
+  @override
+  String get tripPurposeWork => 'Lana';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Normalean ikasketa-bisa behar da';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Normalean lan-bisa behar da';
+
+  @override
+  String get visaPurposeStudyNote => 'Bisitarientzako arauek ez dituzte ikasketak barne hartzen. Normalean ikasketa-bisa edo -baimena behar duzu. Begiratu arau ofizialak eta eskatu garaiz.';
+
+  @override
+  String get visaPurposeWorkNote => 'Bisitarientzako arauek ez dute lana barne hartzen, ordaindua izan ala ez. Normalean lan-bisa edo -baimena behar duzu. Begiratu arau ofizialak eta eskatu garaiz.';
+
+  @override
+  String get visaBusinessNote => 'Negozio-bisita laburrak, bilerak adibidez, askotan baimenduta daude bisitarientzako arauekin, baina lan ordaindua ez. Begiratu arau ofizialak.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Bisitarientzako arauak: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Arau ofizialak';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ez da gune honen parte. Gune honek Vaultarak ez bezalako zerbait esaten badu, jarraitu gune honi.';
 }

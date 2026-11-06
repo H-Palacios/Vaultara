@@ -2025,5 +2025,19 @@
   "hidePassword": "إخفاء كلمة المرور",
   "pinCategory": "تثبيت في الأعلى",
   "unpinCategory": "إلغاء التثبيت",
-  "clearSearch": "مسح البحث"
+  "clearSearch": "مسح البحث",
+  "tripPurposeTitle": "سبب الرحلة",
+  "tripPurposeHoliday": "عطلة",
+  "tripPurposeFamily": "زيارة العائلة أو الأصدقاء",
+  "tripPurposeBusiness": "أعمال",
+  "tripPurposeStudy": "دراسة",
+  "tripPurposeWork": "عمل",
+  "visaPurposeStudyNeeded": "تأشيرة دراسة مطلوبة عادةً",
+  "visaPurposeWorkNeeded": "تأشيرة عمل مطلوبة عادةً",
+  "visaPurposeStudyNote": "قواعد الزوار لا تشمل الدراسة. تحتاج عادةً إلى تأشيرة أو تصريح دراسة. تحقق من القواعد الرسمية وقدّم طلبك مبكرًا.",
+  "visaPurposeWorkNote": "قواعد الزوار لا تشمل العمل، سواء كان مدفوع الأجر أم لا. تحتاج عادةً إلى تأشيرة أو تصريح عمل. تحقق من القواعد الرسمية وقدّم طلبك مبكرًا.",
+  "visaBusinessNote": "الزيارات القصيرة للأعمال مثل الاجتماعات مسموح بها غالبًا بموجب قواعد الزوار، لكن العمل المدفوع الأجر غير مسموح. تحقق من القواعد الرسمية.",
+  "visaVisitorRules": "قواعد الزوار: {status}",
+  "visaOfficialRules": "القواعد الرسمية",
+  "visaLeavingRulesNote": "Vaultara ليس جزءًا من هذا الموقع. إذا قال هذا الموقع شيئًا مختلفًا عن Vaultara، فاتبع هذا الموقع."
 }

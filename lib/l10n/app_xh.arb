@@ -1987,5 +1987,19 @@
   "hidePassword": "Fihla igama lokugqitha",
   "pinCategory": "Ncamathelisa phezulu",
   "unpinCategory": "Susa ukuncamathelisa",
-  "clearSearch": "Cima ukukhangela"
+  "clearSearch": "Cima ukukhangela",
+  "tripPurposeTitle": "Isizathu sohambo",
+  "tripPurposeHoliday": "Iholide",
+  "tripPurposeFamily": "Ukutyelela usapho okanye abahlobo",
+  "tripPurposeBusiness": "Ishishini",
+  "tripPurposeStudy": "Izifundo",
+  "tripPurposeWork": "Umsebenzi",
+  "visaPurposeStudyNeeded": "Ngokuqhelekileyo kufuneka ivisa yokufunda",
+  "visaPurposeWorkNeeded": "Ngokuqhelekileyo kufuneka ivisa yokusebenza",
+  "visaPurposeStudyNote": "Imithetho yeendwendwe ayibandakanyi ukufunda. Ngokuqhelekileyo ufuna ivisa okanye imvume yokufunda. Jonga imithetho esemthethweni kwaye ufake isicelo kwangethuba.",
+  "visaPurposeWorkNote": "Imithetho yeendwendwe ayibandakanyi ukusebenza, nokuba kuhlawulwa okanye akuhlawulwa. Ngokuqhelekileyo ufuna ivisa okanye imvume yokusebenza. Jonga imithetho esemthethweni kwaye ufake isicelo kwangethuba.",
+  "visaBusinessNote": "Utyelelo olufutshane lweshishini njengeentlanganiso ludla ngokuvunyelwa phantsi kwemithetho yeendwendwe, kodwa umsebenzi ohlawulwayo awuvunyelwa. Jonga imithetho esemthethweni.",
+  "visaVisitorRules": "Imithetho yeendwendwe: {status}",
+  "visaOfficialRules": "Imithetho esemthethweni",
+  "visaLeavingRulesNote": "IVaultara ayiyonxalenye yale sayithi. Ukuba le sayithi ithetha into eyahlukileyo kuVaultara, landela le sayithi."
 }

@@ -6235,6 +6235,50 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get clearSearch => '清除搜索';
+
+  @override
+  String get tripPurposeTitle => '出行目的';
+
+  @override
+  String get tripPurposeHoliday => '度假';
+
+  @override
+  String get tripPurposeFamily => '探亲访友';
+
+  @override
+  String get tripPurposeBusiness => '商务';
+
+  @override
+  String get tripPurposeStudy => '留学';
+
+  @override
+  String get tripPurposeWork => '工作';
+
+  @override
+  String get visaPurposeStudyNeeded => '通常需要学生签证';
+
+  @override
+  String get visaPurposeWorkNeeded => '通常需要工作签证';
+
+  @override
+  String get visaPurposeStudyNote => '访客规定不适用于学习。通常需要学生签证或许可。请查看官方规定并尽早申请。';
+
+  @override
+  String get visaPurposeWorkNote => '访客规定不适用于工作，无论是否有报酬。通常需要工作签证或许可。请查看官方规定并尽早申请。';
+
+  @override
+  String get visaBusinessNote => '开会等短期商务访问通常可按访客规定进行，但有报酬的工作不行。请查看官方规定。';
+
+  @override
+  String visaVisitorRules(String status) {
+    return '访客规定：$status';
+  }
+
+  @override
+  String get visaOfficialRules => '官方规定';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara 不属于此网站。如果此网站的说法与 Vaultara 不同，请以此网站为准。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -12456,6 +12500,50 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get clearSearch => '清除搜索';
+
+  @override
+  String get tripPurposeTitle => '出行目的';
+
+  @override
+  String get tripPurposeHoliday => '度假';
+
+  @override
+  String get tripPurposeFamily => '探亲访友';
+
+  @override
+  String get tripPurposeBusiness => '商务';
+
+  @override
+  String get tripPurposeStudy => '留学';
+
+  @override
+  String get tripPurposeWork => '工作';
+
+  @override
+  String get visaPurposeStudyNeeded => '通常需要学生签证';
+
+  @override
+  String get visaPurposeWorkNeeded => '通常需要工作签证';
+
+  @override
+  String get visaPurposeStudyNote => '访客规定不适用于学习。通常需要学生签证或许可。请查看官方规定并尽早申请。';
+
+  @override
+  String get visaPurposeWorkNote => '访客规定不适用于工作，无论是否有报酬。通常需要工作签证或许可。请查看官方规定并尽早申请。';
+
+  @override
+  String get visaBusinessNote => '开会等短期商务访问通常可按访客规定进行，但有报酬的工作不行。请查看官方规定。';
+
+  @override
+  String visaVisitorRules(String status) {
+    return '访客规定：$status';
+  }
+
+  @override
+  String get visaOfficialRules => '官方规定';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara 不属于此网站。如果此网站的说法与 Vaultara 不同，请以此网站为准。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -18677,4 +18765,48 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get clearSearch => '清除搜尋';
+
+  @override
+  String get tripPurposeTitle => '旅行目的';
+
+  @override
+  String get tripPurposeHoliday => '度假';
+
+  @override
+  String get tripPurposeFamily => '探親訪友';
+
+  @override
+  String get tripPurposeBusiness => '商務';
+
+  @override
+  String get tripPurposeStudy => '留學';
+
+  @override
+  String get tripPurposeWork => '工作';
+
+  @override
+  String get visaPurposeStudyNeeded => '通常需要學生簽證';
+
+  @override
+  String get visaPurposeWorkNeeded => '通常需要工作簽證';
+
+  @override
+  String get visaPurposeStudyNote => '訪客規定不適用於就學。通常需要學生簽證或許可。請查看官方規定並盡早申請。';
+
+  @override
+  String get visaPurposeWorkNote => '訪客規定不適用於工作，無論是否有報酬。通常需要工作簽證或許可。請查看官方規定並盡早申請。';
+
+  @override
+  String get visaBusinessNote => '開會等短期商務拜訪通常可依訪客規定進行，但有報酬的工作不行。請查看官方規定。';
+
+  @override
+  String visaVisitorRules(String status) {
+    return '訪客規定：$status';
+  }
+
+  @override
+  String get visaOfficialRules => '官方規定';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara 不屬於此網站。如果此網站的說法與 Vaultara 不同，請以此網站為準。';
 }

@@ -1987,5 +1987,19 @@
   "hidePassword": "隐藏密码",
   "pinCategory": "置顶",
   "unpinCategory": "取消置顶",
-  "clearSearch": "清除搜索"
+  "clearSearch": "清除搜索",
+  "tripPurposeTitle": "出行目的",
+  "tripPurposeHoliday": "度假",
+  "tripPurposeFamily": "探亲访友",
+  "tripPurposeBusiness": "商务",
+  "tripPurposeStudy": "留学",
+  "tripPurposeWork": "工作",
+  "visaPurposeStudyNeeded": "通常需要学生签证",
+  "visaPurposeWorkNeeded": "通常需要工作签证",
+  "visaPurposeStudyNote": "访客规定不适用于学习。通常需要学生签证或许可。请查看官方规定并尽早申请。",
+  "visaPurposeWorkNote": "访客规定不适用于工作，无论是否有报酬。通常需要工作签证或许可。请查看官方规定并尽早申请。",
+  "visaBusinessNote": "开会等短期商务访问通常可按访客规定进行，但有报酬的工作不行。请查看官方规定。",
+  "visaVisitorRules": "访客规定：{status}",
+  "visaOfficialRules": "官方规定",
+  "visaLeavingRulesNote": "Vaultara 不属于此网站。如果此网站的说法与 Vaultara 不同，请以此网站为准。"
 }

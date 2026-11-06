@@ -6286,4 +6286,48 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get clearSearch => 'Aramayı temizle';
+
+  @override
+  String get tripPurposeTitle => 'Seyahat nedeni';
+
+  @override
+  String get tripPurposeHoliday => 'Tatil';
+
+  @override
+  String get tripPurposeFamily => 'Aile veya arkadaş ziyareti';
+
+  @override
+  String get tripPurposeBusiness => 'İş seyahati';
+
+  @override
+  String get tripPurposeStudy => 'Eğitim';
+
+  @override
+  String get tripPurposeWork => 'Çalışma';
+
+  @override
+  String get visaPurposeStudyNeeded => 'Genellikle öğrenci vizesi gerekir';
+
+  @override
+  String get visaPurposeWorkNeeded => 'Genellikle çalışma vizesi gerekir';
+
+  @override
+  String get visaPurposeStudyNote => 'Ziyaretçi kuralları eğitimi kapsamaz. Genellikle öğrenci vizesi veya izni gerekir. Resmi kuralları kontrol et ve erkenden başvur.';
+
+  @override
+  String get visaPurposeWorkNote => 'Ziyaretçi kuralları ücretli ya da ücretsiz çalışmayı kapsamaz. Genellikle çalışma vizesi veya izni gerekir. Resmi kuralları kontrol et ve erkenden başvur.';
+
+  @override
+  String get visaBusinessNote => 'Toplantı gibi kısa iş ziyaretlerine ziyaretçi kurallarıyla çoğu zaman izin verilir, ancak ücretli çalışmaya verilmez. Resmi kuralları kontrol et.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'Ziyaretçi kuralları: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'Resmi kurallar';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara bu sitenin bir parçası değildir. Bu site Vaultara\'dan farklı bir şey söylüyorsa bu siteye uy.';
 }

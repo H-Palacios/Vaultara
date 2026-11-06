@@ -6223,4 +6223,48 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get clearSearch => 'ล้างการค้นหา';
+
+  @override
+  String get tripPurposeTitle => 'เหตุผลในการเดินทาง';
+
+  @override
+  String get tripPurposeHoliday => 'พักผ่อน';
+
+  @override
+  String get tripPurposeFamily => 'เยี่ยมครอบครัวหรือเพื่อน';
+
+  @override
+  String get tripPurposeBusiness => 'ธุรกิจ';
+
+  @override
+  String get tripPurposeStudy => 'ศึกษาต่อ';
+
+  @override
+  String get tripPurposeWork => 'ทำงาน';
+
+  @override
+  String get visaPurposeStudyNeeded => 'โดยปกติต้องมีวีซ่านักเรียน';
+
+  @override
+  String get visaPurposeWorkNeeded => 'โดยปกติต้องมีวีซ่าทำงาน';
+
+  @override
+  String get visaPurposeStudyNote => 'กฎสำหรับผู้มาเยือนไม่ครอบคลุมการศึกษา โดยปกติคุณต้องมีวีซ่าหรือใบอนุญาตสำหรับการศึกษา ตรวจสอบกฎอย่างเป็นทางการและยื่นขอแต่เนิ่นๆ';
+
+  @override
+  String get visaPurposeWorkNote => 'กฎสำหรับผู้มาเยือนไม่ครอบคลุมการทำงาน ไม่ว่าจะได้รับค่าจ้างหรือไม่ โดยปกติคุณต้องมีวีซ่าทำงานหรือใบอนุญาตทำงาน ตรวจสอบกฎอย่างเป็นทางการและยื่นขอแต่เนิ่นๆ';
+
+  @override
+  String get visaBusinessNote => 'การเดินทางธุรกิจระยะสั้น เช่น การประชุม มักได้รับอนุญาตตามกฎสำหรับผู้มาเยือน แต่การทำงานที่ได้รับค่าจ้างไม่ได้รับอนุญาต ตรวจสอบกฎอย่างเป็นทางการ';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'กฎสำหรับผู้มาเยือน: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'กฎอย่างเป็นทางการ';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ไม่ได้เป็นส่วนหนึ่งของเว็บไซต์นี้ หากเว็บไซต์นี้ระบุต่างจาก Vaultara ให้ทำตามเว็บไซต์นี้';
 }

@@ -6286,4 +6286,48 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get clearSearch => 'శోధనను తొలగించు';
+
+  @override
+  String get tripPurposeTitle => 'ప్రయాణ కారణం';
+
+  @override
+  String get tripPurposeHoliday => 'సెలవు';
+
+  @override
+  String get tripPurposeFamily => 'కుటుంబం లేదా స్నేహితులను కలవడం';
+
+  @override
+  String get tripPurposeBusiness => 'వ్యాపారం';
+
+  @override
+  String get tripPurposeStudy => 'చదువు';
+
+  @override
+  String get tripPurposeWork => 'ఉద్యోగం';
+
+  @override
+  String get visaPurposeStudyNeeded => 'సాధారణంగా స్టూడెంట్ వీసా అవసరం';
+
+  @override
+  String get visaPurposeWorkNeeded => 'సాధారణంగా వర్క్ వీసా అవసరం';
+
+  @override
+  String get visaPurposeStudyNote => 'సందర్శకుల నియమాలు చదువుకు వర్తించవు. సాధారణంగా మీకు స్టూడెంట్ వీసా లేదా అనుమతి అవసరం. అధికారిక నియమాలు తనిఖీ చేసి ముందుగానే దరఖాస్తు చేయండి.';
+
+  @override
+  String get visaPurposeWorkNote => 'సందర్శకుల నియమాలు జీతం ఉన్న లేదా లేని పనికి వర్తించవు. సాధారణంగా మీకు వర్క్ వీసా లేదా అనుమతి అవసరం. అధికారిక నియమాలు తనిఖీ చేసి ముందుగానే దరఖాస్తు చేయండి.';
+
+  @override
+  String get visaBusinessNote => 'సమావేశాల వంటి చిన్న వ్యాపార సందర్శనలకు సందర్శకుల నియమాల కింద తరచుగా అనుమతి ఉంటుంది, కానీ జీతం ఉన్న పనికి కాదు. అధికారిక నియమాలు తనిఖీ చేయండి.';
+
+  @override
+  String visaVisitorRules(String status) {
+    return 'సందర్శకుల నియమాలు: $status';
+  }
+
+  @override
+  String get visaOfficialRules => 'అధికారిక నియమాలు';
+
+  @override
+  String get visaLeavingRulesNote => 'Vaultara ఈ సైట్‌లో భాగం కాదు. ఈ సైట్ Vaultara కంటే భిన్నంగా ఏదైనా చెబితే, ఈ సైట్‌ను అనుసరించండి.';
 }
