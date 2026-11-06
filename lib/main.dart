@@ -8,6 +8,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:vaultara/features/household/services/shared_reminder_sync.dart';
 import 'core/analytics/analytics_service.dart';
 import 'features/security/services/analytics_consent.dart';
 import 'app.dart';
@@ -46,6 +48,8 @@ Future<void> _initAppServices() async {
 
   AnalyticsService.observer();
 
+  FirebaseMessaging.onBackgroundMessage(vaultaraBackgroundPush);
+  await SharedReminderSync.prime();
   await ReminderScheduler.init();
   unawaited(PushService.start());
 }

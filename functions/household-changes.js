@@ -2,7 +2,7 @@ const { onDocumentWritten } = require("firebase-functions/v2/firestore");
 const logger = require("firebase-functions/logger");
 
 const { admin } = require("./shared");
-const { sendToUser } = require("./push");
+const { sendToUser, sendDataToUser } = require("./push");
 const { displayNameFor } = require("./household");
 
 const QUIET_MS = 10 * 60 * 1000;
@@ -34,6 +34,31 @@ function kindOf(before, after) {
   return null;
 }
 
+// Fields the reminders on each phone are planned from. When one changes,
+// the other members' phones are woken to plan that record's reminders again.
+const REMINDER_FIELDS = [
+  "name", "expiryDate", "reminderOffsetDays", "leadDays", "repeatMonths",
+  "isDeleted", "holderName",
+];
+
+function sameValue(a, b) {
+  const am = millisOf(a);
+  const bm = millisOf(b);
+  if (am !== null || bm !== null) return am === bm;
+  return JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
+}
+
+function remindersChanged(before, after) {
+  if (!before && !after) return false;
+  if (!before || !after) return true;
+  return REMINDER_FIELDS.some((field) => !sameValue(before[field], after[field]));
+}
+
+function syncActorOf(before, after) {
+  const uid = after ? (before ? after.updatedBy : after.createdBy) : null;
+  return typeof uid === "string" && UID_PATTERN.test(uid) ? uid : null;
+}
+
 function actorOf(kind, after) {
   const uid = kind === "added" ? after.createdBy : after.updatedBy;
   return typeof uid === "string" && UID_PATTERN.test(uid) ? uid : null;
@@ -61,9 +86,8 @@ exports.onSharedRecordChanged = onDocumentWritten(
     const before = event.data?.before?.exists ? event.data.before.data() : null;
     const after = event.data?.after?.exists ? event.data.after.data() : null;
     const kind = kindOf(before, after);
-    if (!kind) return;
-    const actor = actorOf(kind, after);
-    if (!actor) return;
+    const sync = remindersChanged(before, after);
+    if (!kind && !sync) return;
 
     const { hid, recordId } = event.params;
     const db = admin.firestore();
@@ -73,6 +97,21 @@ exports.onSharedRecordChanged = onDocumentWritten(
     const members = Array.isArray(house.memberUids)
       ? house.memberUids.filter((m) => typeof m === "string" && UID_PATTERN.test(m))
       : [];
+
+    if (sync) {
+      const changer = syncActorOf(before, after);
+      for (const uid of members.filter((m) => m !== changer)) {
+        try {
+          await sendDataToUser(uid, { type: "shared-sync", recordId, householdId: hid });
+        } catch (err) {
+          logger.error("shared reminder sync push failed", { message: err?.message });
+        }
+      }
+    }
+
+    if (!kind) return;
+    const actor = actorOf(kind, after);
+    if (!actor) return;
     const recipients = members.filter((m) => m !== actor);
     if (recipients.length === 0) return;
 
@@ -102,4 +141,4 @@ exports.onSharedRecordChanged = onDocumentWritten(
   },
 );
 
-exports._internal = { kindOf, actorOf };
+exports._internal = { kindOf, actorOf, remindersChanged, syncActorOf };

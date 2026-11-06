@@ -235,6 +235,94 @@ async function sendToUser(uid, message = {}, options = {}) {
   return result;
 }
 
+// A silent push that wakes the app so it can bring its own reminders up to
+// date. It shows nothing, so it is sent whatever the person chose in
+// Notifications. Apple only allows it at low priority, as a background push.
+function buildDataMessage(tokens, data) {
+  return {
+    tokens,
+    data,
+    android: { priority: "high" },
+    apns: {
+      headers: { "apns-push-type": "background", "apns-priority": "5" },
+      payload: { aps: { "content-available": 1 } },
+    },
+  };
+}
+
+async function sendDataToUser(uid, data = {}) {
+  const result = { sent: 0, failed: 0, removed: 0 };
+  if (typeof uid !== "string" || !UID_PATTERN.test(uid)) return result;
+  const cleanedData = cleanData(data);
+  if (!cleanedData.type) return result;
+
+  const snap = await admin.firestore().collection("users").doc(uid).collection("devices").get();
+  const now = Date.now();
+  const entries = [];
+  const seen = new Set();
+  for (const doc of snap.docs) {
+    const device = doc.data() || {};
+    const token = typeof device.token === "string" ? device.token.trim() : "";
+    const updatedAt = millisOf(device.updatedAt);
+    if (!token || token.length > MAX_TOKEN_LENGTH || seen.has(token)) continue;
+    if (updatedAt !== null && now - updatedAt > DEVICE_STALE_MS) continue;
+    seen.add(token);
+    entries.push({ token, ref: doc.ref });
+  }
+
+  const invalid = [];
+  for (let i = 0; i < entries.length; i += MAX_TOKENS_PER_CALL) {
+    const chunk = entries.slice(i, i + MAX_TOKENS_PER_CALL);
+    let response;
+    try {
+      response = await admin.messaging().sendEachForMulticast(
+        buildDataMessage(chunk.map((e) => e.token), cleanedData),
+      );
+    } catch (err) {
+      logger.error("data push send failed", { message: err?.message });
+      result.failed += chunk.length;
+      continue;
+    }
+    response.responses.forEach((item, index) => {
+      if (item.success) {
+        result.sent++;
+        return;
+      }
+      result.failed++;
+      if (INVALID_TOKEN_CODES.has(item.error?.code)) invalid.push(chunk[index].ref);
+    });
+  }
+
+  if (invalid.length > 0) {
+    const batch = admin.firestore().batch();
+    for (const ref of invalid) batch.delete(ref);
+    await batch
+      .commit()
+      .then(() => {
+        result.removed = invalid.length;
+      })
+      .catch((err) => logger.warn("push token cleanup failed", { message: err?.message }));
+  }
+  return result;
+}
+
+// Members who chose reminders only for the shared records they added.
+async function onlyMineMembers(db, members) {
+  const out = new Set();
+  if (members.length === 0) return out;
+  try {
+    const refs = members.map((uid) =>
+      db.collection("users").doc(uid).collection("preferences").doc("notifications"));
+    const snaps = await db.getAll(...refs);
+    snaps.forEach((snap, index) => {
+      if (snap.exists && snap.get("sharedOnlyMine") === true) out.add(members[index]);
+    });
+  } catch (err) {
+    logger.warn("shared reminder preference check failed", { message: err?.message });
+  }
+  return out;
+}
+
 function membersOf(house) {
   return Array.isArray(house?.memberUids)
     ? house.memberUids.filter((m) => typeof m === "string" && UID_PATTERN.test(m))
@@ -279,7 +367,10 @@ async function escalateHousehold(houseDoc, now) {
   ]);
 
   const escalations = new Map(escalationsSnap.docs.map((d) => [d.id, d.data() || {}]));
-  const offsets = await memberOffsets(db, members);
+  const [offsets, onlyMine] = await Promise.all([
+    memberOffsets(db, members),
+    onlyMineMembers(db, members),
+  ]);
   const ownerOffset = offsets.get(house.ownerUid) ?? 0;
 
   const writes = [];
@@ -326,7 +417,7 @@ async function escalateHousehold(houseDoc, now) {
     const lastAt = millisOf(prev?.lastEscalatedAt);
     if (lastAt !== null && now - lastAt < REPEAT_MS - REPEAT_SLACK_MS) continue;
 
-    const recipients = members.filter((m) => m !== creator);
+    const recipients = members.filter((m) => m !== creator && !onlyMine.has(m));
     if (recipients.length === 0) continue;
 
     writes.push([ref, {
@@ -435,3 +526,4 @@ exports.householdEscalationJob = onSchedule(
 );
 
 exports.sendToUser = sendToUser;
+exports.sendDataToUser = sendDataToUser;

@@ -22,6 +22,8 @@ import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:vaultara/features/tools/services/life_plan_reminders.dart';
 import 'package:vaultara/features/travel/services/trip_reminders.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
+import 'package:vaultara/features/household/services/shared_reminder_sync.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/features/reminders/logic/reminder_budget.dart';
@@ -125,8 +127,26 @@ class RecordRepository {
 
   static Map<String, dynamic> _writeMap(TrackedItem record) {
     final map = record.toMap();
-    if (record.isShared) map.remove('reminderBaseId');
+    if (record.isShared) {
+      map.remove('reminderBaseId');
+      map.addAll(_holderFields(record));
+    }
     return map;
+  }
+
+  /// The person's name and colour for a shared record, so members who do not
+  /// have that person in their People list still see whose it is. A person
+  /// this phone does not know keeps the name already saved.
+  static Map<String, dynamic> _holderFields(TrackedItem record) {
+    final holderId = record.holderId;
+    if (holderId == null) {
+      return <String, dynamic>{'holderName': null, 'holderColour': null};
+    }
+    final person = PeopleRepository.byId(holderId);
+    return <String, dynamic>{
+      'holderName': person?.name ?? record.holderName,
+      'holderColour': person?.colourIndex ?? record.holderColour,
+    };
   }
 
   static bool canEdit(TrackedItem record) =>
@@ -180,6 +200,11 @@ class RecordRepository {
     final existing = _sharedBaseIds[id];
     if (existing != null) return existing;
     final taken = <int>{..._privateBaseIds(), ..._sharedBaseIds.values};
+    final saved = SharedReminderSync.known(id);
+    if (saved != null && !_clashes(saved, taken)) {
+      _sharedBaseIds[id] = saved;
+      return saved;
+    }
     var candidate = _wrapBase(seed);
     var tries = 0;
     while (_clashes(candidate, taken) && tries < 64) {
@@ -187,6 +212,7 @@ class RecordRepository {
       tries++;
     }
     _sharedBaseIds[id] = candidate;
+    SharedReminderSync.remember(id, candidate);
     return candidate;
   }
 
@@ -268,7 +294,30 @@ class RecordRepository {
       final local = _localShared(raw);
       _add(local);
       if (local.id != null) _sharedSignatures[local.id!] = _signature(local);
+      _saveHolderName(local);
     }
+  }
+
+  static final Set<String> _holderSaved = <String>{};
+
+  /// Shared records from before the person's name was kept on the record
+  /// only point at a person in this phone's People list. The phone that has
+  /// that person saves the name, so every member sees whose record it is.
+  /// Not stamped as a change, because nothing about the record changed.
+  static void _saveHolderName(TrackedItem record) {
+    final id = record.id;
+    final hid = record.householdId;
+    final holderId = record.holderId;
+    if (id == null || hid == null || holderId == null) return;
+    if (record.holderName != null || _holderSaved.contains(id)) return;
+    if (!HouseholdRepository.canEditShared) return;
+    if (PeopleRepository.byId(holderId) == null) return;
+    _holderSaved.add(id);
+    _firestore
+        .collection('households/$hid/records')
+        .doc(id)
+        .update(_holderFields(record))
+        .ignore();
   }
 
   static String _movedPath(String path, String from, String to) =>
@@ -364,6 +413,14 @@ class RecordRepository {
       ),
     );
     _sharedBaseIds.remove(id);
+    SharedReminderSync.forget(id);
+    if (moved.holderId != null) {
+      _firestore
+          .collection('households/$hid/records')
+          .doc(id)
+          .update(_stamped(moved, _holderFields(moved)))
+          .ignore();
+    }
     HouseholdRepository.putOptimistic(moved);
     final local = _localShared(moved);
     _add(local);
@@ -869,6 +926,7 @@ class RecordRepository {
       record.id = ref.id;
       ref.set(<String, dynamic>{
         ...record.toMap(),
+        ..._holderFields(record),
         'createdBy': user.uid,
         'createdAt': FieldValue.serverTimestamp(),
       }).ignore();
@@ -1000,7 +1058,13 @@ class RecordRepository {
       if (canEdit(record)) {
         _docFor(
           record,
-        )?.update(_stamped(record, {'holderId': null})).ignore();
+        )?.update(
+          _stamped(record, {
+            'holderId': null,
+            if (record.isShared) 'holderName': null,
+            if (record.isShared) 'holderColour': null,
+          }),
+        ).ignore();
       }
     }
   }
