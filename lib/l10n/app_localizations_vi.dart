@@ -3074,7 +3074,8 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Còn thêm $count mục',
+      other: 'Sẽ hiện thêm $count mục khi bạn xử lý xong các mục này',
+      one: 'Sẽ hiện thêm 1 mục khi bạn xử lý xong các mục này',
     );
     return '$_temp0';
   }
@@ -9007,4 +9008,38 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Chỉ nhắc tôi về các bản ghi chung do tôi thêm. Bản ghi do người khác thêm vẫn hiện trong ứng dụng.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Hộ chiếu hết hạn trước khi bạn khởi hành';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Thị thực hết hạn trước khi bạn khởi hành';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Bảo hiểm du lịch kết thúc trước khi bạn khởi hành';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Bằng lái xe hết hạn trước khi bạn khởi hành';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count người đi',
+      one: '1 người đi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ngày trước khi bạn đi',
+      one: '1 ngày trước khi bạn đi',
+    );
+    return '$name hết hạn vào $date, $_temp0.';
+  }
 }

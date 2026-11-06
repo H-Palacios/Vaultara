@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Anda baru memperbaharui {name}, dan tiada apa yang perlu diberi perhatian sekarang. Seterusnya ialah {next} pada {date}.",
   "smartInsightRenewedNoNextBody": "Anda baru memperbaharui {name}, dan tiada apa yang perlu diberi perhatian sekarang.",
   "smartInsightMoreHeading": "Lagi perkara untuk disemak",
-  "smartInsightMoreCount": "{count, plural, other{Tambah {count} lagi}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 lagi muncul apabila anda selesaikan ini} other{{count} lagi muncul apabila anda selesaikan ini}}",
   "planTabIndividual": "Individu",
   "planTabBusiness": "Perniagaan",
   "planGetPremium": "Dapatkan Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Tiada rekod lagi",
   "recordChangedRecently": "{days, plural, =0{Diubah oleh {name} hari ini} =1{Diubah oleh {name} semalam} other{Diubah oleh {name} {days} hari lalu}}",
   "notifSharedOnlyMineTitle": "Hanya rekod yang saya tambah",
-  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang rekod kongsi yang saya tambah. Rekod yang ditambah orang lain masih dipaparkan dalam apl."
+  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang rekod kongsi yang saya tambah. Rekod yang ditambah orang lain masih dipaparkan dalam apl.",
+  "travelPassportExpiresBeforeLeaving": "Pasport tamat tempoh sebelum anda berlepas",
+  "travelVisaExpiresBeforeLeaving": "Visa tamat tempoh sebelum anda berlepas",
+  "travelInsuranceEndsBeforeLeaving": "Insurans perjalanan tamat sebelum anda berlepas",
+  "travelLicenceExpiresBeforeLeaving": "Lesen memandu tamat tempoh sebelum anda berlepas",
+  "travelTravellersCount": "{count, plural, =1{1 pengembara} other{{count} pengembara}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} tamat tempoh pada {date}, {days, plural, =1{1 hari sebelum anda bertolak} other{{days} hari sebelum anda bertolak}}."
 }

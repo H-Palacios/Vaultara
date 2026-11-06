@@ -3111,9 +3111,8 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Vēl $count',
-      one: 'Vēl $count',
-      zero: 'Vēl $count',
+      other: 'Vēl $count parādīsies, kad tiksiet galā ar šiem',
+      one: 'Vēl 1 parādīsies, kad tiksiet galā ar šiem',
     );
     return '$_temp0';
   }
@@ -9141,4 +9140,38 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pases termiņš beidzas pirms izbraukšanas';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Vīzas termiņš beidzas pirms izbraukšanas';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Ceļojuma apdrošināšana beidzas pirms izbraukšanas';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Vadītāja apliecības termiņš beidzas pirms izbraukšanas';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ceļotāji',
+      one: '1 ceļotājs',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dienas pirms izbraukšanas',
+      one: '1 dienu pirms izbraukšanas',
+    );
+    return '$name termiņš beidzas $date, $_temp0.';
+  }
 }

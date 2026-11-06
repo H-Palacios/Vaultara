@@ -3088,8 +3088,8 @@ class AppLocalizationsCkb extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'لەگەڵ $count دانەی تر',
-      one: 'لەگەڵ $count دانەی تر',
+      other: '$count دانەی تر دەردەکەون کاتێک ئەمانە تەواو دەکەیت',
+      one: '1 دانەی تر دەردەکەوێت کاتێک ئەمانە تەواو دەکەیت',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'تەنها بۆ ئەو تۆمارە هاوبەشانەی من زیادم کردوون بیرم بخەرەوە. تۆمارەکانی ئەوانی تر هێشتا لە ئەپەکەدا دەردەکەون.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'پاسپۆرت پێش ڕۆیشتنت بەسەردەچێت';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ڤیزا پێش ڕۆیشتنت بەسەردەچێت';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'بیمەی گەشت پێش ڕۆیشتنت کۆتایی دێت';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'مۆڵەتی شۆفێری پێش ڕۆیشتنت بەسەردەچێت';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count گەشتیار',
+      one: '1 گەشتیار',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ڕۆژ پێش ڕۆیشتنت',
+      one: '1 ڕۆژ پێش ڕۆیشتنت',
+    );
+    return '$name لە $date بەسەردەچێت، $_temp0.';
+  }
 }

@@ -1131,7 +1131,7 @@
   "smartInsightRenewedBody": "మీరు ఇటీవల {name} ను పునరుద్ధరించారు, ఇప్పుడు మీ శ్రద్ధ అవసరమైనది ఏదీ లేదు. తర్వాతది {date} న {next}.",
   "smartInsightRenewedNoNextBody": "మీరు ఇటీవల {name} ను పునరుద్ధరించారు, ఇప్పుడు మీ శ్రద్ధ అవసరమైనది ఏదీ లేదు.",
   "smartInsightMoreHeading": "తనిఖీ చేయాల్సినవి ఇంకా ఉన్నాయి",
-  "smartInsightMoreCount": "{count, plural, one{ఇంకా {count}} other{ఇంకా {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{వీటిని పూర్తి చేస్తే ఇంకా 1 కనిపిస్తుంది} other{వీటిని పూర్తి చేస్తే ఇంకా {count} కనిపిస్తాయి}}",
   "planTabIndividual": "వ్యక్తిగత",
   "planTabBusiness": "వ్యాపారం",
   "planGetPremium": "Premium పొందండి",
@@ -3458,5 +3458,11 @@
   "groupsNoRecordsSection": "ఇంకా రికార్డులు లేవు",
   "recordChangedRecently": "{days, plural, =0{ఈరోజు {name} మార్చారు} =1{నిన్న {name} మార్చారు} other{{days} రోజుల క్రితం {name} మార్చారు}}",
   "notifSharedOnlyMineTitle": "నేను జోడించిన రికార్డులు మాత్రమే",
-  "notifSharedOnlyMineSubtitle": "నేను జోడించిన షేర్ చేసిన రికార్డుల గురించి మాత్రమే గుర్తు చేయండి. ఇతరులు జోడించిన రికార్డులు యాప్‌లో కనిపిస్తూనే ఉంటాయి."
+  "notifSharedOnlyMineSubtitle": "నేను జోడించిన షేర్ చేసిన రికార్డుల గురించి మాత్రమే గుర్తు చేయండి. ఇతరులు జోడించిన రికార్డులు యాప్‌లో కనిపిస్తూనే ఉంటాయి.",
+  "travelPassportExpiresBeforeLeaving": "మీరు బయలుదేరేలోపు పాస్‌పోర్ట్ గడువు ముగుస్తుంది",
+  "travelVisaExpiresBeforeLeaving": "మీరు బయలుదేరేలోపు వీసా గడువు ముగుస్తుంది",
+  "travelInsuranceEndsBeforeLeaving": "మీరు బయలుదేరేలోపు ప్రయాణ బీమా ముగుస్తుంది",
+  "travelLicenceExpiresBeforeLeaving": "మీరు బయలుదేరేలోపు డ్రైవింగ్ లైసెన్స్ గడువు ముగుస్తుంది",
+  "travelTravellersCount": "{count, plural, =1{1 ప్రయాణికుడు} other{{count} ప్రయాణికులు}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} గడువు {date}న ముగుస్తుంది, {days, plural, =1{మీరు బయలుదేరడానికి 1 రోజు ముందు} other{మీరు బయలుదేరడానికి {days} రోజుల ముందు}}."
 }

@@ -1128,7 +1128,7 @@
   "smartInsightRenewedBody": "Վերջերս նորացրել եք {name}-ը, և հիմա ոչինչ ուշադրություն չի պահանջում։ Հաջորդը {next}-ն է՝ {date}-ին։",
   "smartInsightRenewedNoNextBody": "Վերջերս նորացրել եք {name}-ը, և հիմա ոչինչ ուշադրություն չի պահանջում։",
   "smartInsightMoreHeading": "Ստուգելու ավելի շատ բաներ",
-  "smartInsightMoreCount": "{count, plural, one{Եվս {count}} other{Եվս {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Եվս 1-ը կհայտնվի, երբ սրանք լուծեք} other{Եվս {count}-ը կհայտնվեն, երբ սրանք լուծեք}}",
   "planTabIndividual": "Անհատական",
   "planTabBusiness": "Բիզնես",
   "planGetPremium": "Ձեռք բերել Premium",
@@ -3455,5 +3455,11 @@
   "groupsNoRecordsSection": "Դեռ գրառումներ չկան։",
   "recordChangedRecently": "{days, plural, =0{Փոխել է {name}-ը այսօր} =1{Փոխել է {name}-ը երեկ} other{Փոխել է {name}-ը {days} օր առաջ}}",
   "notifSharedOnlyMineTitle": "Միայն իմ ավելացրած գրառումները",
-  "notifSharedOnlyMineSubtitle": "Հիշեցրու ինձ միայն իմ ավելացրած ընդհանուր գրառումների մասին։ Ուրիշների ավելացրածները դեռ երևում են հավելվածում։"
+  "notifSharedOnlyMineSubtitle": "Հիշեցրու ինձ միայն իմ ավելացրած ընդհանուր գրառումների մասին։ Ուրիշների ավելացրածները դեռ երևում են հավելվածում։",
+  "travelPassportExpiresBeforeLeaving": "Անձնագրի ժամկետը լրանում է մեկնելուց առաջ",
+  "travelVisaExpiresBeforeLeaving": "Վիզայի ժամկետը լրանում է մեկնելուց առաջ",
+  "travelInsuranceEndsBeforeLeaving": "Ճամփորդական ապահովագրությունն ավարտվում է մեկնելուց առաջ",
+  "travelLicenceExpiresBeforeLeaving": "Վարորդական իրավունքի ժամկետը լրանում է մեկնելուց առաջ",
+  "travelTravellersCount": "{count, plural, =1{1 ճանապարհորդ} other{{count} ճանապարհորդ}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ի ժամկետը լրանում է {date}-ին՝ {days, plural, =1{մեկնելուց 1 օր առաջ} other{մեկնելուց {days} օր առաջ}}։"
 }

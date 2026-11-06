@@ -1128,7 +1128,7 @@
   "smartInsightRenewedBody": "{name} duela gutxi berritu zenuen, eta ez dago orain arreta behar duen ezer. Hurrengoa {next} da, {date}(e)an.",
   "smartInsightRenewedNoNextBody": "{name} duela gutxi berritu zenuen, eta ez dago orain arreta behar duen ezer.",
   "smartInsightMoreHeading": "Egiaztatzeko gauza gehiago",
-  "smartInsightMoreCount": "{count, plural, one{{count} gehiago} other{{count} gehiago}}",
+  "smartInsightMoreCount": "{count, plural, =1{Beste 1 agertuko da hauek konpontzean} other{Beste {count} agertuko dira hauek konpontzean}}",
   "planTabIndividual": "Banakakoa",
   "planTabBusiness": "Enpresa",
   "planGetPremium": "Lortu Premium",
@@ -3455,5 +3455,11 @@
   "groupsNoRecordsSection": "Oraindik ez dago erregistrorik",
   "recordChangedRecently": "{days, plural, =0{{name}(e)k aldatua gaur} =1{{name}(e)k aldatua atzo} other{{name}(e)k aldatua duela {days} egun}}",
   "notifSharedOnlyMineTitle": "Nik gehitutako erregistroak soilik",
-  "notifSharedOnlyMineSubtitle": "Gogorarazi nik gehitutako erregistro partekatuak soilik. Besteek gehitutakoak aplikazioan ikusten jarraitzen dute."
+  "notifSharedOnlyMineSubtitle": "Gogorarazi nik gehitutako erregistro partekatuak soilik. Besteek gehitutakoak aplikazioan ikusten jarraitzen dute.",
+  "travelPassportExpiresBeforeLeaving": "Pasaportea irten aurretik iraungitzen da",
+  "travelVisaExpiresBeforeLeaving": "Bisa irten aurretik iraungitzen da",
+  "travelInsuranceEndsBeforeLeaving": "Bidaia-asegurua irten aurretik amaitzen da",
+  "travelLicenceExpiresBeforeLeaving": "Gidabaimena irten aurretik iraungitzen da",
+  "travelTravellersCount": "{count, plural, =1{Bidaiari 1} other{{count} bidaiari}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}(e)an iraungitzen da, {days, plural, =1{joan baino egun 1 lehenago} other{joan baino {days} egun lehenago}}."
 }

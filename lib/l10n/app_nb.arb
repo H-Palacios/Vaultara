@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Du fornyet {name} nylig, og ingenting trenger oppmerksomhet akkurat nå. Neste er {next}, som utløper {date}.",
   "smartInsightRenewedNoNextBody": "Du fornyet {name} nylig, og ingenting trenger oppmerksomhet akkurat nå.",
   "smartInsightMoreHeading": "Flere ting å sjekke",
-  "smartInsightMoreCount": "{count, plural, one{Pluss {count} til} other{Pluss {count} til}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 til vises når du har ordnet disse} other{{count} til vises når du har ordnet disse}}",
   "planTabIndividual": "Enkeltperson",
   "planTabBusiness": "Bedrift",
   "planGetPremium": "Skaff deg Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Ingen oppføringer ennå",
   "recordChangedRecently": "{days, plural, =0{Endret av {name} i dag} =1{Endret av {name} i går} other{Endret av {name} for {days} dager siden}}",
   "notifSharedOnlyMineTitle": "Bare oppføringer jeg la til",
-  "notifSharedOnlyMineSubtitle": "Minn meg bare på delte oppføringer jeg la til. Oppføringer andre la til, vises fortsatt i appen."
+  "notifSharedOnlyMineSubtitle": "Minn meg bare på delte oppføringer jeg la til. Oppføringer andre la til, vises fortsatt i appen.",
+  "travelPassportExpiresBeforeLeaving": "Passet utløper før du reiser",
+  "travelVisaExpiresBeforeLeaving": "Visumet utløper før du reiser",
+  "travelInsuranceEndsBeforeLeaving": "Reiseforsikringen slutter før du reiser",
+  "travelLicenceExpiresBeforeLeaving": "Førerkortet utløper før du reiser",
+  "travelTravellersCount": "{count, plural, =1{1 reisende} other{{count} reisende}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} utløper {date}, {days, plural, =1{1 dag før du reiser} other{{days} dager før du reiser}}."
 }

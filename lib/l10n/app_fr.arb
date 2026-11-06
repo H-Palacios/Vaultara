@@ -1126,7 +1126,7 @@
   "smartInsightRenewedBody": "Vous avez renouvelé {name} récemment, et rien ne demande votre attention pour le moment. Le prochain est {next}, le {date}.",
   "smartInsightRenewedNoNextBody": "Vous avez renouvelé {name} récemment, et rien ne demande votre attention pour le moment.",
   "smartInsightMoreHeading": "Autres points à vérifier",
-  "smartInsightMoreCount": "{count, plural, one{Et {count} autre} other{Et {count} autres}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 autre s'affichera quand vous aurez réglé ceux-ci} other{{count} autres s'afficheront quand vous aurez réglé ceux-ci}}",
   "planTabIndividual": "Individuel",
   "planTabBusiness": "Entreprise",
   "planGetPremium": "Obtenir Premium",
@@ -3453,5 +3453,11 @@
   "groupsNoRecordsSection": "Aucun enregistrement pour le moment",
   "recordChangedRecently": "{days, plural, =0{Modifié par {name} aujourd'hui} =1{Modifié par {name} hier} other{Modifié par {name} il y a {days} jours}}",
   "notifSharedOnlyMineTitle": "Seulement ceux que j'ai ajoutés",
-  "notifSharedOnlyMineSubtitle": "Me rappeler uniquement les enregistrements partagés que j'ai ajoutés. Ceux ajoutés par les autres restent visibles dans l'app."
+  "notifSharedOnlyMineSubtitle": "Me rappeler uniquement les enregistrements partagés que j'ai ajoutés. Ceux ajoutés par les autres restent visibles dans l'app.",
+  "travelPassportExpiresBeforeLeaving": "Le passeport expire avant votre départ",
+  "travelVisaExpiresBeforeLeaving": "Le visa expire avant votre départ",
+  "travelInsuranceEndsBeforeLeaving": "L'assurance voyage prend fin avant votre départ",
+  "travelLicenceExpiresBeforeLeaving": "Le permis de conduire expire avant votre départ",
+  "travelTravellersCount": "{count, plural, =1{1 voyageur} other{{count} voyageurs}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} expire le {date}, {days, plural, =1{1 jour avant votre départ} other{{days} jours avant votre départ}}."
 }

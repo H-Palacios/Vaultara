@@ -3087,8 +3087,8 @@ class AppLocalizationsIs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Auk þess $count til viðbótar',
-      one: 'Auk þess $count til viðbótar',
+      other: '$count í viðbót birtast þegar þú klárar þessi',
+      one: '1 í viðbót birtist þegar þú klárar þessi',
     );
     return '$_temp0';
   }
@@ -9069,4 +9069,38 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Minntu mig aðeins á sameiginlegar færslur sem ég bætti við. Færslur annarra sjást áfram í forritinu.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Vegabréfið rennur út áður en þú leggur af stað';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Vegabréfsáritunin rennur út áður en þú leggur af stað';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Ferðatryggingin rennur út áður en þú leggur af stað';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ökuskírteinið rennur út áður en þú leggur af stað';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ferðalangar',
+      one: '1 ferðalangur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dögum áður en þú leggur af stað',
+      one: '1 degi áður en þú leggur af stað',
+    );
+    return '$name rennur út $date, $_temp0.';
+  }
 }

@@ -1152,7 +1152,7 @@
   "smartInsightRenewedBody": "جدّدت {name} مؤخرًا، ولا شيء يحتاج إلى انتباهك الآن. التالي هو {next} في {date}.",
   "smartInsightRenewedNoNextBody": "جدّدت {name} مؤخرًا، ولا شيء يحتاج إلى انتباهك الآن.",
   "smartInsightMoreHeading": "أمور أخرى للتحقق منها",
-  "smartInsightMoreCount": "{count, plural, other{و{count} أخرى}}",
+  "smartInsightMoreCount": "{count, plural, =1{سيظهر عنصر آخر عند إنهاء هذه} other{ستظهر {count} عناصر أخرى عند إنهاء هذه}}",
   "planTabIndividual": "فردي",
   "planTabBusiness": "الأعمال",
   "planGetPremium": "احصل على Premium",
@@ -3479,5 +3479,11 @@
   "groupsNoRecordsSection": "لا توجد سجلات بعد",
   "recordChangedRecently": "{days, plural, =0{غيّره {name} اليوم} =1{غيّره {name} أمس} two{غيّره {name} قبل يومين} few{غيّره {name} قبل {days} أيام} many{غيّره {name} قبل {days} يومًا} other{غيّره {name} قبل {days} يوم}}",
   "notifSharedOnlyMineTitle": "السجلات التي أضفتها فقط",
-  "notifSharedOnlyMineSubtitle": "ذكّرني فقط بالسجلات المشتركة التي أضفتها. تظل السجلات التي أضافها الآخرون ظاهرة في التطبيق."
+  "notifSharedOnlyMineSubtitle": "ذكّرني فقط بالسجلات المشتركة التي أضفتها. تظل السجلات التي أضافها الآخرون ظاهرة في التطبيق.",
+  "travelPassportExpiresBeforeLeaving": "تنتهي صلاحية جواز السفر قبل سفرك",
+  "travelVisaExpiresBeforeLeaving": "تنتهي صلاحية التأشيرة قبل سفرك",
+  "travelInsuranceEndsBeforeLeaving": "ينتهي تأمين السفر قبل سفرك",
+  "travelLicenceExpiresBeforeLeaving": "تنتهي صلاحية رخصة القيادة قبل سفرك",
+  "travelTravellersCount": "{count, plural, =1{مسافر واحد} =2{مسافران} few{{count} مسافرين} many{{count} مسافرًا} other{{count} مسافر}}",
+  "travelDetailExpiresDaysBeforeLeaving": "تنتهي صلاحية {name} في {date}، {days, plural, =1{قبل مغادرتك بيوم واحد} =2{قبل مغادرتك بيومين} few{قبل مغادرتك بـ{days} أيام} many{قبل مغادرتك بـ{days} يومًا} other{قبل مغادرتك بـ{days} يوم}}."
 }

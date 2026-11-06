@@ -1145,7 +1145,7 @@
   "smartInsightRenewedBody": "{name} jste nedávno obnovili a teď nic nevyžaduje vaši pozornost. Další na řadě je {next}, {date}.",
   "smartInsightRenewedNoNextBody": "{name} jste nedávno obnovili a teď nic nevyžaduje vaši pozornost.",
   "smartInsightMoreHeading": "Další věci ke kontrole",
-  "smartInsightMoreCount": "{count, plural, one{Ještě {count}} few{Ještě {count}} many{Ještě {count}} other{Ještě {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Další 1 se ukáže, až vyřešíte tyto} other{Další {count} se ukážou, až vyřešíte tyto}}",
   "planTabIndividual": "Jednotlivec",
   "planTabBusiness": "Business",
   "planGetPremium": "Získat Premium",
@@ -3472,5 +3472,11 @@
   "groupsNoRecordsSection": "Zatím žádné záznamy",
   "recordChangedRecently": "{days, plural, =0{Dnes změnil(a) {name}} =1{Včera změnil(a) {name}} few{Před {days} dny změnil(a) {name}} many{Před {days} dny změnil(a) {name}} other{Před {days} dny změnil(a) {name}}}",
   "notifSharedOnlyMineTitle": "Jen záznamy, které jsem přidal(a)",
-  "notifSharedOnlyMineSubtitle": "Připomínej mi jen sdílené záznamy, které jsem přidal(a). Záznamy ostatních se v aplikaci dál zobrazují."
+  "notifSharedOnlyMineSubtitle": "Připomínej mi jen sdílené záznamy, které jsem přidal(a). Záznamy ostatních se v aplikaci dál zobrazují.",
+  "travelPassportExpiresBeforeLeaving": "Pas vyprší před vaším odjezdem",
+  "travelVisaExpiresBeforeLeaving": "Vízum vyprší před vaším odjezdem",
+  "travelInsuranceEndsBeforeLeaving": "Cestovní pojištění skončí před vaším odjezdem",
+  "travelLicenceExpiresBeforeLeaving": "Řidičský průkaz vyprší před vaším odjezdem",
+  "travelTravellersCount": "{count, plural, =1{1 cestující} few{{count} cestující} many{{count} cestujících} other{{count} cestujících}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Platnost položky {name} vyprší {date}, {days, plural, =1{1 den před odjezdem} few{{days} dny před odjezdem} many{{days} dne před odjezdem} other{{days} dní před odjezdem}}."
 }

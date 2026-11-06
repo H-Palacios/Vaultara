@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Uusit äskettäin kohteen {name}, eikä mikään vaadi huomiotasi juuri nyt. Seuraavana on {next} {date}.",
   "smartInsightRenewedNoNextBody": "Uusit äskettäin kohteen {name}, eikä mikään vaadi huomiotasi juuri nyt.",
   "smartInsightMoreHeading": "Lisää tarkistettavaa",
-  "smartInsightMoreCount": "{count, plural, one{Lisäksi {count} muu} other{Lisäksi {count} muuta}}",
+  "smartInsightMoreCount": "{count, plural, =1{Vielä 1 näkyy, kun hoidat nämä} other{Vielä {count} näkyy, kun hoidat nämä}}",
   "planTabIndividual": "Yksittäinen",
   "planTabBusiness": "Business",
   "planGetPremium": "Hanki Premium",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Ei vielä tietueita",
   "recordChangedRecently": "{days, plural, =0{{name} muutti tänään} =1{{name} muutti eilen} other{{name} muutti {days} päivää sitten}}",
   "notifSharedOnlyMineTitle": "Vain lisäämäni tietueet",
-  "notifSharedOnlyMineSubtitle": "Muistuta minua vain lisäämistäni jaetuista tietueista. Muiden lisäämät tietueet näkyvät edelleen sovelluksessa."
+  "notifSharedOnlyMineSubtitle": "Muistuta minua vain lisäämistäni jaetuista tietueista. Muiden lisäämät tietueet näkyvät edelleen sovelluksessa.",
+  "travelPassportExpiresBeforeLeaving": "Passi vanhenee ennen lähtöäsi",
+  "travelVisaExpiresBeforeLeaving": "Viisumi vanhenee ennen lähtöäsi",
+  "travelInsuranceEndsBeforeLeaving": "Matkavakuutus päättyy ennen lähtöäsi",
+  "travelLicenceExpiresBeforeLeaving": "Ajokortti vanhenee ennen lähtöäsi",
+  "travelTravellersCount": "{count, plural, =1{1 matkustaja} other{{count} matkustajaa}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} vanhenee {date}, {days, plural, =1{1 päivä ennen lähtöäsi} other{{days} päivää ennen lähtöäsi}}."
 }

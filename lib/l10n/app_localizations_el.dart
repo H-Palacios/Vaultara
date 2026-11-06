@@ -3088,8 +3088,8 @@ class AppLocalizationsEl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Και άλλα $count',
-      one: 'Και άλλο $count',
+      other: 'Άλλα $count θα εμφανιστούν όταν ολοκληρώσετε αυτά',
+      one: 'Άλλο 1 θα εμφανιστεί όταν ολοκληρώσετε αυτά',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Υπενθύμισέ μου μόνο τις κοινόχρηστες εγγραφές που πρόσθεσα. Οι εγγραφές των άλλων εξακολουθούν να εμφανίζονται στην εφαρμογή.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Το διαβατήριο λήγει πριν φύγετε';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Η βίζα λήγει πριν φύγετε';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Η ταξιδιωτική ασφάλιση λήγει πριν φύγετε';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Το δίπλωμα οδήγησης λήγει πριν φύγετε';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ταξιδιώτες',
+      one: '1 ταξιδιώτης',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ημέρες πριν φύγετε',
+      one: '1 ημέρα πριν φύγετε',
+    );
+    return 'Το στοιχείο $name λήγει στις $date, $_temp0.';
+  }
 }

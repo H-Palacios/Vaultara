@@ -3103,8 +3103,8 @@ class AppLocalizationsEn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Plus $count more',
-      one: 'Plus $count more',
+      other: '$count more will show as you clear these',
+      one: '1 more will show as you clear these',
     );
     return '$_temp0';
   }
@@ -9090,4 +9090,38 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Remind me only about shared records I added. Records others added still show in the app.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Passport expires before you leave';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Visa expires before you leave';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Travel insurance ends before you leave';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Driving licence expires before you leave';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count travellers',
+      one: '1 traveller',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days before you leave',
+      one: '1 day before you leave',
+    );
+    return '$name expires $date, $_temp0.';
+  }
 }

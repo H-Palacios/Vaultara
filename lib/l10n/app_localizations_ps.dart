@@ -3088,8 +3088,8 @@ class AppLocalizationsPs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count نور',
-      one: '$count نور',
+      other: 'کله چې دا بشپړ کړئ، $count نور ښکاري',
+      one: 'کله چې دا بشپړ کړئ، 1 نور ښکاري',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'یوازې د هغو شریکو ریکارډونو یادونه راکړه چې ما اضافه کړي. د نورو اضافه شوي ریکارډونه لا هم په اپ کې ښکاري.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'پاسپورټ ستاسو له تګ مخکې پای ته رسېږي';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ویزه ستاسو له تګ مخکې پای ته رسېږي';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'د سفر بیمه ستاسو له تګ مخکې پای ته رسېږي';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'د موټر چلولو جواز ستاسو له تګ مخکې پای ته رسېږي';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مسافر',
+      one: '1 مسافر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ستاسو له تګ $days ورځې مخکې',
+      one: 'ستاسو له تګ 1 ورځ مخکې',
+    );
+    return '$name په $date پای ته رسېږي، $_temp0.';
+  }
 }

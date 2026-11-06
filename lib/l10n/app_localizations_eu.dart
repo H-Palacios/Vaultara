@@ -3088,8 +3088,8 @@ class AppLocalizationsEu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count gehiago',
-      one: '$count gehiago',
+      other: 'Beste $count agertuko dira hauek konpontzean',
+      one: 'Beste 1 agertuko da hauek konpontzean',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Gogorarazi nik gehitutako erregistro partekatuak soilik. Besteek gehitutakoak aplikazioan ikusten jarraitzen dute.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pasaportea irten aurretik iraungitzen da';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Bisa irten aurretik iraungitzen da';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Bidaia-asegurua irten aurretik amaitzen da';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Gidabaimena irten aurretik iraungitzen da';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bidaiari',
+      one: 'Bidaiari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'joan baino $days egun lehenago',
+      one: 'joan baino egun 1 lehenago',
+    );
+    return '$name $date(e)an iraungitzen da, $_temp0.';
+  }
 }

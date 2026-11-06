@@ -3088,8 +3088,8 @@ class AppLocalizationsKa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'კიდევ $count',
-      one: 'კიდევ $count',
+      other: 'ამათ მოგვარების შემდეგ კიდევ $count გამოჩნდება',
+      one: 'ამათ მოგვარების შემდეგ კიდევ 1 გამოჩნდება',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'შემახსენე მხოლოდ ჩემ მიერ დამატებული საერთო ჩანაწერები. სხვების დამატებული ჩანაწერები აპში მაინც ჩანს.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'პასპორტის ვადა გამგზავრებამდე იწურება';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ვიზის ვადა გამგზავრებამდე იწურება';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'სამოგზაურო დაზღვევა გამგზავრებამდე მთავრდება';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'მართვის მოწმობის ვადა გამგზავრებამდე იწურება';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count მოგზაური',
+      one: '1 მოგზაური',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'გამგზავრებამდე $days დღით ადრე',
+      one: 'გამგზავრებამდე 1 დღით ადრე',
+    );
+    return '$name-ს ვადა იწურება $date, $_temp0.';
+  }
 }

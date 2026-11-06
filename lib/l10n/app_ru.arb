@@ -1089,7 +1089,7 @@
   "smartInsightRenewedBody": "Вы недавно продлили {name}, и сейчас ничего не требует вашего внимания. Следующее: {next}, {date}.",
   "smartInsightRenewedNoNextBody": "Вы недавно продлили {name}, и сейчас ничего не требует вашего внимания.",
   "smartInsightMoreHeading": "Ещё нужно проверить",
-  "smartInsightMoreCount": "{count, plural, one{Ещё {count}} few{Ещё {count}} many{Ещё {count}} other{Ещё {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Ещё 1 появится, когда вы решите эти} other{Ещё {count} появятся, когда вы решите эти}}",
   "planTabIndividual": "Индивидуальный",
   "planTabBusiness": "Бизнес",
   "planGetPremium": "Получить Premium",
@@ -3416,5 +3416,11 @@
   "groupsNoRecordsSection": "Записей пока нет",
   "recordChangedRecently": "{days, plural, =0{Изменено: {name}, сегодня} =1{Изменено: {name}, вчера} few{Изменено: {name}, {days} дня назад} many{Изменено: {name}, {days} дней назад} other{Изменено: {name}, {days} дня назад}}",
   "notifSharedOnlyMineTitle": "Только добавленные мной",
-  "notifSharedOnlyMineSubtitle": "Напоминать только об общих записях, которые добавил я. Записи, добавленные другими, по-прежнему видны в приложении."
+  "notifSharedOnlyMineSubtitle": "Напоминать только об общих записях, которые добавил я. Записи, добавленные другими, по-прежнему видны в приложении.",
+  "travelPassportExpiresBeforeLeaving": "Паспорт истекает до вашего отъезда",
+  "travelVisaExpiresBeforeLeaving": "Виза истекает до вашего отъезда",
+  "travelInsuranceEndsBeforeLeaving": "Страховка заканчивается до вашего отъезда",
+  "travelLicenceExpiresBeforeLeaving": "Водительское удостоверение истекает до отъезда",
+  "travelTravellersCount": "{count, plural, =1{1 путешественник} few{{count} путешественника} many{{count} путешественников} other{{count} путешественника}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Срок «{name}» истекает {date}, {days, plural, =1{за 1 день до отъезда} few{за {days} дня до отъезда} many{за {days} дней до отъезда} other{за {days} дня до отъезда}}."
 }

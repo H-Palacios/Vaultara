@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Та саяхан {name}-ийг сунгасан бөгөөд одоогоор анхаарах зүйл алга. Дараагийнх нь {date}-нд {next}.",
   "smartInsightRenewedNoNextBody": "Та саяхан {name}-ийг сунгасан бөгөөд одоогоор анхаарах зүйл алга.",
   "smartInsightMoreHeading": "Шалгах өөр зүйлс",
-  "smartInsightMoreCount": "{count, plural, one{Мөн {count}} other{Мөн {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Эдгээрийг шийдвэл дахиад 1 гарч ирнэ} other{Эдгээрийг шийдвэл дахиад {count} гарч ирнэ}}",
   "planTabIndividual": "Хувь хүн",
   "planTabBusiness": "Бизнес",
   "planGetPremium": "Premium авах",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Одоогоор бичлэг алга",
   "recordChangedRecently": "{days, plural, =0{Өнөөдөр {name} өөрчилсөн} =1{Өчигдөр {name} өөрчилсөн} other{{days} өдрийн өмнө {name} өөрчилсөн}}",
   "notifSharedOnlyMineTitle": "Зөвхөн миний нэмсэн бичлэг",
-  "notifSharedOnlyMineSubtitle": "Зөвхөн миний нэмсэн хуваалцсан бичлэгийн талаар сануул. Бусдын нэмсэн бичлэг апп-д харагдсаар байна."
+  "notifSharedOnlyMineSubtitle": "Зөвхөн миний нэмсэн хуваалцсан бичлэгийн талаар сануул. Бусдын нэмсэн бичлэг апп-д харагдсаар байна.",
+  "travelPassportExpiresBeforeLeaving": "Явахаас өмнө паспортын хугацаа дуусна",
+  "travelVisaExpiresBeforeLeaving": "Явахаас өмнө визний хугацаа дуусна",
+  "travelInsuranceEndsBeforeLeaving": "Явахаас өмнө аяллын даатгал дуусна",
+  "travelLicenceExpiresBeforeLeaving": "Явахаас өмнө жолооны үнэмлэхний хугацаа дуусна",
+  "travelTravellersCount": "{count, plural, =1{1 аялагч} other{{count} аялагч}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ийн хугацаа {date} өдөр дуусна, {days, plural, =1{таныг явахаас 1 хоногийн өмнө} other{таныг явахаас {days} хоногийн өмнө}}."
 }

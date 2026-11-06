@@ -1126,7 +1126,7 @@
   "smartInsightRenewedBody": "D'athnuaigh tú {name} le déanaí, agus níl aon rud ag teastáil d'aird faoi láthair. Is é {next} an chéad rud eile, ar {date}.",
   "smartInsightRenewedNoNextBody": "D'athnuaigh tú {name} le déanaí, agus níl aon rud ag teastáil d'aird faoi láthair.",
   "smartInsightMoreHeading": "Tuilleadh le seiceáil",
-  "smartInsightMoreCount": "{count, plural, one{Móide {count} eile} two{Móide {count} eile} few{Móide {count} eile} many{Móide {count} eile} other{Móide {count} eile}}",
+  "smartInsightMoreCount": "{count, plural, =1{Taispeánfar 1 eile nuair a dhéanann tú iad seo} other{Taispeánfar {count} eile nuair a dhéanann tú iad seo}}",
   "planTabIndividual": "Aonair",
   "planTabBusiness": "Gnó",
   "planGetPremium": "Faigh Premium",
@@ -3453,5 +3453,11 @@
   "groupsNoRecordsSection": "Níl aon taifid ann fós",
   "recordChangedRecently": "{days, plural, =0{Athraithe ag {name} inniu} =1{Athraithe ag {name} inné} two{Athraithe ag {name} {days} lá ó shin} few{Athraithe ag {name} {days} lá ó shin} many{Athraithe ag {name} {days} lá ó shin} other{Athraithe ag {name} {days} lá ó shin}}",
   "notifSharedOnlyMineTitle": "Na taifid a chuir mé leis amháin",
-  "notifSharedOnlyMineSubtitle": "Cuir i gcuimhne dom na taifid roinnte a chuir mé féin leis amháin. Feictear taifid daoine eile san aip fós."
+  "notifSharedOnlyMineSubtitle": "Cuir i gcuimhne dom na taifid roinnte a chuir mé féin leis amháin. Feictear taifid daoine eile san aip fós.",
+  "travelPassportExpiresBeforeLeaving": "Éagann an pas sula n-imeoidh tú",
+  "travelVisaExpiresBeforeLeaving": "Éagann an víosa sula n-imeoidh tú",
+  "travelInsuranceEndsBeforeLeaving": "Críochnaíonn an t-árachas taistil sula n-imeoidh tú",
+  "travelLicenceExpiresBeforeLeaving": "Éagann an ceadúnas tiomána sula n-imeoidh tú",
+  "travelTravellersCount": "{count, plural, =1{1 taistealaí} other{{count} taistealaí}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Éagann {name} ar {date}, {days, plural, =1{lá amháin sula n-imíonn tú} other{{days} lá sula n-imíonn tú}}."
 }

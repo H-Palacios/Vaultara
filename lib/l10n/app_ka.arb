@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "{name} ცოტა ხნის წინ განაახლეთ და ახლა არაფერი საჭიროებს თქვენს ყურადღებას. შემდეგი არის {next}, {date}-ს.",
   "smartInsightRenewedNoNextBody": "{name} ცოტა ხნის წინ განაახლეთ და ახლა არაფერი საჭიროებს თქვენს ყურადღებას.",
   "smartInsightMoreHeading": "კიდევ შესამოწმებელი",
-  "smartInsightMoreCount": "{count, plural, one{კიდევ {count}} other{კიდევ {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{ამათ მოგვარების შემდეგ კიდევ 1 გამოჩნდება} other{ამათ მოგვარების შემდეგ კიდევ {count} გამოჩნდება}}",
   "planTabIndividual": "ინდივიდუალური",
   "planTabBusiness": "ბიზნესი",
   "planGetPremium": "Premium-ის შეძენა",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "ჩანაწერები ჯერ არ არის",
   "recordChangedRecently": "{days, plural, =0{დღეს შეცვალა {name}} =1{გუშინ შეცვალა {name}} other{{days} დღის წინ შეცვალა {name}}}",
   "notifSharedOnlyMineTitle": "მხოლოდ ჩემ მიერ დამატებული",
-  "notifSharedOnlyMineSubtitle": "შემახსენე მხოლოდ ჩემ მიერ დამატებული საერთო ჩანაწერები. სხვების დამატებული ჩანაწერები აპში მაინც ჩანს."
+  "notifSharedOnlyMineSubtitle": "შემახსენე მხოლოდ ჩემ მიერ დამატებული საერთო ჩანაწერები. სხვების დამატებული ჩანაწერები აპში მაინც ჩანს.",
+  "travelPassportExpiresBeforeLeaving": "პასპორტის ვადა გამგზავრებამდე იწურება",
+  "travelVisaExpiresBeforeLeaving": "ვიზის ვადა გამგზავრებამდე იწურება",
+  "travelInsuranceEndsBeforeLeaving": "სამოგზაურო დაზღვევა გამგზავრებამდე მთავრდება",
+  "travelLicenceExpiresBeforeLeaving": "მართვის მოწმობის ვადა გამგზავრებამდე იწურება",
+  "travelTravellersCount": "{count, plural, =1{1 მოგზაური} other{{count} მოგზაური}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name}-ს ვადა იწურება {date}, {days, plural, =1{გამგზავრებამდე 1 დღით ადრე} other{გამგზავრებამდე {days} დღით ადრე}}."
 }

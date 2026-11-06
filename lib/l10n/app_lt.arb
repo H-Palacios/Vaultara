@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Neseniai atnaujinote {name}, ir šiuo metu nieko nereikia daryti. Kitas yra {next}, {date}.",
   "smartInsightRenewedNoNextBody": "Neseniai atnaujinote {name}, ir šiuo metu nieko nereikia daryti.",
   "smartInsightMoreHeading": "Daugiau ką patikrinti",
-  "smartInsightMoreCount": "{count, plural, one{Dar {count}} few{Dar {count}} many{Dar {count}} other{Dar {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Dar 1 pasirodys, kai sutvarkysite šiuos} other{Dar {count} pasirodys, kai sutvarkysite šiuos}}",
   "planTabIndividual": "Asmeninis",
   "planTabBusiness": "Verslo",
   "planGetPremium": "Gauti Premium",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Įrašų dar nėra",
   "recordChangedRecently": "{days, plural, =0{{name} pakeitė šiandien} =1{{name} pakeitė vakar} few{{name} pakeitė prieš {days} dienas} many{{name} pakeitė prieš {days} dienos} other{{name} pakeitė prieš {days} dienų}}",
   "notifSharedOnlyMineTitle": "Tik mano pridėti įrašai",
-  "notifSharedOnlyMineSubtitle": "Priminti tik apie bendrinamus įrašus, kuriuos pridėjau. Kitų pridėti įrašai vis tiek rodomi programėlėje."
+  "notifSharedOnlyMineSubtitle": "Priminti tik apie bendrinamus įrašus, kuriuos pridėjau. Kitų pridėti įrašai vis tiek rodomi programėlėje.",
+  "travelPassportExpiresBeforeLeaving": "Paso galiojimas baigiasi prieš išvykimą",
+  "travelVisaExpiresBeforeLeaving": "Vizos galiojimas baigiasi prieš išvykimą",
+  "travelInsuranceEndsBeforeLeaving": "Kelionių draudimas baigiasi prieš išvykimą",
+  "travelLicenceExpiresBeforeLeaving": "Vairuotojo pažymėjimo galiojimas baigiasi prieš išvykimą",
+  "travelTravellersCount": "{count, plural, =1{1 keliautojas} few{{count} keliautojai} many{{count} keliautojo} other{{count} keliautojų}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} galiojimas baigiasi {date}, {days, plural, =1{likus 1 dienai iki išvykimo} few{likus {days} dienoms iki išvykimo} many{likus {days} dienos iki išvykimo} other{likus {days} dienų iki išvykimo}}."
 }

@@ -1279,7 +1279,7 @@
   "smartInsightRenewedBody": "Uuendasid hiljuti kirje {name} ja praegu ei vaja miski tähelepanu. Järgmisena on kirje {next} kuupäeval {date}.",
   "smartInsightRenewedNoNextBody": "Uuendasid hiljuti kirje {name} ja praegu ei vaja miski tähelepanu.",
   "smartInsightMoreHeading": "Veel kontrollida",
-  "smartInsightMoreCount": "{count, plural, one{Lisaks veel {count}} other{Lisaks veel {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Veel 1 ilmub, kui need on tehtud} other{Veel {count} ilmub, kui need on tehtud}}",
   "planTabIndividual": "Üksikisik",
   "planTabBusiness": "Business",
   "planGetPremium": "Hangi Premium",
@@ -3606,5 +3606,11 @@
   "groupsNoRecordsSection": "Kirjeid pole veel",
   "recordChangedRecently": "{days, plural, =0{{name} muutis täna} =1{{name} muutis eile} other{{name} muutis {days} päeva tagasi}}",
   "notifSharedOnlyMineTitle": "Ainult minu lisatud kirjed",
-  "notifSharedOnlyMineSubtitle": "Tuleta mulle meelde ainult minu lisatud jagatud kirjeid. Teiste lisatud kirjed on rakenduses endiselt näha."
+  "notifSharedOnlyMineSubtitle": "Tuleta mulle meelde ainult minu lisatud jagatud kirjeid. Teiste lisatud kirjed on rakenduses endiselt näha.",
+  "travelPassportExpiresBeforeLeaving": "Pass aegub enne sinu lahkumist",
+  "travelVisaExpiresBeforeLeaving": "Viisa aegub enne sinu lahkumist",
+  "travelInsuranceEndsBeforeLeaving": "Reisikindlustus lõpeb enne sinu lahkumist",
+  "travelLicenceExpiresBeforeLeaving": "Juhiluba aegub enne sinu lahkumist",
+  "travelTravellersCount": "{count, plural, =1{1 reisija} other{{count} reisijat}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} aegub {date}, {days, plural, =1{1 päev enne sinu lahkumist} other{{days} päeva enne sinu lahkumist}}."
 }

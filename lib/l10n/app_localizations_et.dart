@@ -3088,8 +3088,8 @@ class AppLocalizationsEt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Lisaks veel $count',
-      one: 'Lisaks veel $count',
+      other: 'Veel $count ilmub, kui need on tehtud',
+      one: 'Veel 1 ilmub, kui need on tehtud',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Tuleta mulle meelde ainult minu lisatud jagatud kirjeid. Teiste lisatud kirjed on rakenduses endiselt näha.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pass aegub enne sinu lahkumist';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viisa aegub enne sinu lahkumist';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Reisikindlustus lõpeb enne sinu lahkumist';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Juhiluba aegub enne sinu lahkumist';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reisijat',
+      one: '1 reisija',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days päeva enne sinu lahkumist',
+      one: '1 päev enne sinu lahkumist',
+    );
+    return '$name aegub $date, $_temp0.';
+  }
 }

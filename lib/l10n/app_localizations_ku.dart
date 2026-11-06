@@ -3088,8 +3088,8 @@ class AppLocalizationsKu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count yên din',
-      one: '$count yên din',
+      other: 'Dema van çareser bikî, $count yên din xuya dibin',
+      one: 'Dema van çareser bikî, 1 din xuya dibe',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Tenê ji bo tomarên hevpar ên ku min zêde kirine bîra min bîne. Tomarên ku yên din zêde kirine hîn di sepanê de xuya dibin.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pasaport berî çûyîna te bidawî dibe';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Vîze berî çûyîna te bidawî dibe';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Sîgorteya rêwîtiyê berî çûyîna te diqede';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ehlîyeta ajotinê berî çûyîna te bidawî dibe';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rêwî',
+      one: '1 rêwî',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days roj berî çûyîna te',
+      one: '1 roj berî çûyîna te',
+    );
+    return '$name di $date de bidawî dibe, $_temp0.';
+  }
 }

@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "तपाईंले हालै {name} नवीकरण गर्नुभयो, र अहिले ध्यान दिनुपर्ने केही छैन। अर्को {date} मा {next} हो।",
   "smartInsightRenewedNoNextBody": "तपाईंले हालै {name} नवीकरण गर्नुभयो, र अहिले ध्यान दिनुपर्ने केही छैन।",
   "smartInsightMoreHeading": "जाँच्नुपर्ने थप कुराहरू",
-  "smartInsightMoreCount": "{count, plural, one{थप {count}} other{थप {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{यी सकेपछि थप 1 देखिन्छ} other{यी सकेपछि थप {count} देखिन्छन्}}",
   "planTabIndividual": "व्यक्तिगत",
   "planTabBusiness": "व्यवसाय",
   "planGetPremium": "प्रिमियम लिनुहोस्",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "अहिलेसम्म कुनै रेकर्ड छैन",
   "recordChangedRecently": "{days, plural, =0{आज {name} ले बदल्नुभयो} =1{हिजो {name} ले बदल्नुभयो} other{{days} दिनअघि {name} ले बदल्नुभयो}}",
   "notifSharedOnlyMineTitle": "मैले थपेका रेकर्ड मात्र",
-  "notifSharedOnlyMineSubtitle": "मैले थपेका साझा रेकर्डको मात्र सम्झना गराउनुहोस्। अरूले थपेका रेकर्ड एपमा देखिइरहन्छन्।"
+  "notifSharedOnlyMineSubtitle": "मैले थपेका साझा रेकर्डको मात्र सम्झना गराउनुहोस्। अरूले थपेका रेकर्ड एपमा देखिइरहन्छन्।",
+  "travelPassportExpiresBeforeLeaving": "तपाईं जानुअघि पासपोर्टको म्याद सकिन्छ",
+  "travelVisaExpiresBeforeLeaving": "तपाईं जानुअघि भिसाको म्याद सकिन्छ",
+  "travelInsuranceEndsBeforeLeaving": "तपाईं जानुअघि यात्रा बीमा सकिन्छ",
+  "travelLicenceExpiresBeforeLeaving": "तपाईं जानुअघि सवारी चालक अनुमति पत्रको म्याद सकिन्छ",
+  "travelTravellersCount": "{count, plural, =1{1 यात्री} other{{count} यात्री}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =1{तपाईं जानुभन्दा 1 दिनअघि} other{तपाईं जानुभन्दा {days} दिनअघि}}।"
 }

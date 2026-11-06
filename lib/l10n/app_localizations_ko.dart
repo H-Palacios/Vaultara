@@ -3074,7 +3074,8 @@ class AppLocalizationsKo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '외 $count개 더',
+      other: '이것들을 처리하면 $count개가 더 표시됩니다',
+      one: '이것들을 처리하면 1개가 더 표시됩니다',
     );
     return '$_temp0';
   }
@@ -9007,4 +9008,38 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => '내가 추가한 공유 기록만 알림을 받습니다. 다른 사람이 추가한 기록도 앱에는 계속 표시됩니다.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => '출발하기 전에 여권이 만료됩니다';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => '출발하기 전에 비자가 만료됩니다';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => '출발하기 전에 여행자 보험이 끝납니다';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => '출발하기 전에 운전면허가 만료됩니다';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '여행자 $count명',
+      one: '여행자 1명',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '출발 $days일 전입니다',
+      one: '출발 1일 전입니다',
+    );
+    return '$name은(는) $date에 만료됩니다. $_temp0.';
+  }
 }

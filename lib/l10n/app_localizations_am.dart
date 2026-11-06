@@ -3088,8 +3088,8 @@ class AppLocalizationsAm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'በተጨማሪ $count ተጨማሪ',
-      one: 'በተጨማሪ $count ተጨማሪ',
+      other: 'እነዚህን ሲጨርሱ $count ተጨማሪ ይታያሉ',
+      one: 'እነዚህን ሲጨርሱ 1 ተጨማሪ ይታያል',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'እኔ ያከልኳቸውን የተጋሩ መዝገቦች ብቻ አስታውሰኝ። ሌሎች ያከሏቸው መዝገቦች አሁንም በመተግበሪያው ውስጥ ይታያሉ።';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'ፓስፖርቱ ከመሄድዎ በፊት ያበቃል';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ቪዛው ከመሄድዎ በፊት ያበቃል';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'የጉዞ ኢንሹራንሱ ከመሄድዎ በፊት ያበቃል';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'መንጃ ፈቃዱ ከመሄድዎ በፊት ያበቃል';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተጓዦች',
+      one: '1 ተጓዥ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ከመነሳትዎ $days ቀናት በፊት',
+      one: 'ከመነሳትዎ 1 ቀን በፊት',
+    );
+    return '$name በ$date ያበቃል፣ $_temp0።';
+  }
 }

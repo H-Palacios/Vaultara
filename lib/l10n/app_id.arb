@@ -1119,7 +1119,7 @@
   "smartInsightRenewedBody": "Anda baru saja memperpanjang {name}, dan tidak ada yang perlu perhatian Anda saat ini. Berikutnya adalah {next} pada {date}.",
   "smartInsightRenewedNoNextBody": "Anda baru saja memperpanjang {name}, dan tidak ada yang perlu perhatian Anda saat ini.",
   "smartInsightMoreHeading": "Hal lain untuk dicek",
-  "smartInsightMoreCount": "{count, plural, other{Ditambah {count} lagi}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 lagi muncul setelah Anda menyelesaikan ini} other{{count} lagi muncul setelah Anda menyelesaikan ini}}",
   "planTabIndividual": "Perorangan",
   "planTabBusiness": "Bisnis",
   "planGetPremium": "Dapatkan Premium",
@@ -3446,5 +3446,11 @@
   "groupsNoRecordsSection": "Belum ada catatan",
   "recordChangedRecently": "{days, plural, =0{Diubah oleh {name} hari ini} =1{Diubah oleh {name} kemarin} other{Diubah oleh {name} {days} hari lalu}}",
   "notifSharedOnlyMineTitle": "Hanya catatan yang saya tambahkan",
-  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang catatan bersama yang saya tambahkan. Catatan yang ditambahkan orang lain tetap terlihat di aplikasi."
+  "notifSharedOnlyMineSubtitle": "Ingatkan saya hanya tentang catatan bersama yang saya tambahkan. Catatan yang ditambahkan orang lain tetap terlihat di aplikasi.",
+  "travelPassportExpiresBeforeLeaving": "Paspor kedaluwarsa sebelum Anda berangkat",
+  "travelVisaExpiresBeforeLeaving": "Visa kedaluwarsa sebelum Anda berangkat",
+  "travelInsuranceEndsBeforeLeaving": "Asuransi perjalanan berakhir sebelum Anda berangkat",
+  "travelLicenceExpiresBeforeLeaving": "SIM kedaluwarsa sebelum Anda berangkat",
+  "travelTravellersCount": "{count, plural, =1{1 pelancong} other{{count} pelancong}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} kedaluwarsa {date}, {days, plural, =1{1 hari sebelum Anda berangkat} other{{days} hari sebelum Anda berangkat}}."
 }

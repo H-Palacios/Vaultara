@@ -1131,7 +1131,7 @@
   "smartInsightRenewedBody": "คุณเพิ่งต่ออายุ {name} และตอนนี้ไม่มีอะไรที่ต้องดูแล รายการถัดไปคือ {next} ในวันที่ {date}",
   "smartInsightRenewedNoNextBody": "คุณเพิ่งต่ออายุ {name} และตอนนี้ไม่มีอะไรที่ต้องดูแล",
   "smartInsightMoreHeading": "สิ่งอื่นที่ควรตรวจสอบ",
-  "smartInsightMoreCount": "{count, plural, other{อีก {count} รายการ}}",
+  "smartInsightMoreCount": "{count, plural, =1{จะแสดงอีก 1 รายการเมื่อคุณจัดการรายการเหล่านี้} other{จะแสดงอีก {count} รายการเมื่อคุณจัดการรายการเหล่านี้}}",
   "planTabIndividual": "รายบุคคล",
   "planTabBusiness": "ธุรกิจ",
   "planGetPremium": "สมัคร Premium",
@@ -3458,5 +3458,11 @@
   "groupsNoRecordsSection": "ยังไม่มีรายการ",
   "recordChangedRecently": "{days, plural, =0{{name} เปลี่ยนวันนี้} =1{{name} เปลี่ยนเมื่อวาน} other{{name} เปลี่ยนเมื่อ {days} วันก่อน}}",
   "notifSharedOnlyMineTitle": "เฉพาะรายการที่ฉันเพิ่ม",
-  "notifSharedOnlyMineSubtitle": "เตือนฉันเฉพาะรายการที่แชร์ซึ่งฉันเพิ่มเอง รายการที่คนอื่นเพิ่มยังแสดงในแอป"
+  "notifSharedOnlyMineSubtitle": "เตือนฉันเฉพาะรายการที่แชร์ซึ่งฉันเพิ่มเอง รายการที่คนอื่นเพิ่มยังแสดงในแอป",
+  "travelPassportExpiresBeforeLeaving": "พาสปอร์ตหมดอายุก่อนคุณออกเดินทาง",
+  "travelVisaExpiresBeforeLeaving": "วีซ่าหมดอายุก่อนคุณออกเดินทาง",
+  "travelInsuranceEndsBeforeLeaving": "ประกันการเดินทางสิ้นสุดก่อนคุณออกเดินทาง",
+  "travelLicenceExpiresBeforeLeaving": "ใบขับขี่หมดอายุก่อนคุณออกเดินทาง",
+  "travelTravellersCount": "{count, plural, =1{ผู้เดินทาง 1 คน} other{ผู้เดินทาง {count} คน}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} หมดอายุ {date} {days, plural, =1{1 วันก่อนคุณออกเดินทาง} other{{days} วันก่อนคุณออกเดินทาง}}"
 }

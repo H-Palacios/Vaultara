@@ -3088,8 +3088,8 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Még $count',
-      one: 'Még $count',
+      other: 'Még $count megjelenik, ha ezeket elintézi',
+      one: 'Még 1 megjelenik, ha ezeket elintézi',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Csak az általam hozzáadott megosztott bejegyzésekről emlékeztessen. A mások által hozzáadottak továbbra is látszanak az appban.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Az útlevél lejár, mielőtt elindul';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'A vízum lejár, mielőtt elindul';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Az utasbiztosítás véget ér, mielőtt elindul';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'A jogosítvány lejár, mielőtt elindul';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count utazó',
+      one: '1 utazó',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nappal az indulás előtt',
+      one: '1 nappal az indulás előtt',
+    );
+    return 'A(z) $name lejár: $date, $_temp0.';
+  }
 }

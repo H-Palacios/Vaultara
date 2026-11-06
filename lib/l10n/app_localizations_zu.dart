@@ -3088,8 +3088,8 @@ class AppLocalizationsZu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Kanye nezinye ezingu-$count',
-      one: 'Kanye nenye e-$count',
+      other: 'Ezinye ezingu-$count zizovela uma uqeda lezi',
+      one: 'Enye engu-1 izovela uma uqeda lezi',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Ngikhumbuze kuphela ngamarekhodi abelwanayo engiwengezile. Amarekhodi engezwe abanye asabonakala ku-app.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Iphasipoti iphelelwa ngaphambi kokuthi uhambe';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'I-visa iphelelwa ngaphambi kokuthi uhambe';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Umshwalense wohambo uphela ngaphambi kokuthi uhambe';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ilayisense yokushayela iphelelwa ngaphambi kokuthi uhambe';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Abahambi abangu-$count',
+      one: 'Umhambi o-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'izinsuku ezingu-$days ngaphambi kokuthi uhambe',
+      one: 'usuku olu-1 ngaphambi kokuthi uhambe',
+    );
+    return 'I-$name iphelelwa ngo-$date, $_temp0.';
+  }
 }

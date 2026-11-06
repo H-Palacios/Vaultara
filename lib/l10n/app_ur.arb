@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "آپ نے حال ہی میں {name} کی تجدید کی ہے، اور اس وقت کسی چیز پر آپ کی توجہ درکار نہیں۔ اگلا {next} ہے، {date} کو۔",
   "smartInsightRenewedNoNextBody": "آپ نے حال ہی میں {name} کی تجدید کی ہے، اور اس وقت کسی چیز پر آپ کی توجہ درکار نہیں۔",
   "smartInsightMoreHeading": "جانچنے کے لیے مزید چیزیں",
-  "smartInsightMoreCount": "{count, plural, one{مزید {count}} other{مزید {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{انہیں نمٹانے پر 1 اور دکھائی دے گا} other{انہیں نمٹانے پر {count} اور دکھائی دیں گے}}",
   "planTabIndividual": "انفرادی",
   "planTabBusiness": "کاروبار",
   "planGetPremium": "Premium لیں",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "ابھی تک کوئی ریکارڈ نہیں ہے",
   "recordChangedRecently": "{days, plural, =0{آج {name} نے بدلا} =1{کل {name} نے بدلا} other{{days} دن پہلے {name} نے بدلا}}",
   "notifSharedOnlyMineTitle": "صرف میرے شامل کیے ریکارڈ",
-  "notifSharedOnlyMineSubtitle": "مجھے صرف ان شیئر کیے گئے ریکارڈ کی یاد دلائیں جو میں نے شامل کیے۔ دوسروں کے شامل کیے ریکارڈ ایپ میں نظر آتے رہیں گے۔"
+  "notifSharedOnlyMineSubtitle": "مجھے صرف ان شیئر کیے گئے ریکارڈ کی یاد دلائیں جو میں نے شامل کیے۔ دوسروں کے شامل کیے ریکارڈ ایپ میں نظر آتے رہیں گے۔",
+  "travelPassportExpiresBeforeLeaving": "پاسپورٹ روانگی سے پہلے ختم ہو رہا ہے",
+  "travelVisaExpiresBeforeLeaving": "ویزا روانگی سے پہلے ختم ہو رہا ہے",
+  "travelInsuranceEndsBeforeLeaving": "سفری انشورنس روانگی سے پہلے ختم ہو رہی ہے",
+  "travelLicenceExpiresBeforeLeaving": "ڈرائیونگ لائسنس روانگی سے پہلے ختم ہو رہا ہے",
+  "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} کی میعاد {date} کو ختم ہو رہی ہے، {days, plural, =1{آپ کی روانگی سے 1 دن پہلے} other{آپ کی روانگی سے {days} دن پہلے}}۔"
 }

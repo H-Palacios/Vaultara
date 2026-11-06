@@ -1152,7 +1152,7 @@
   "smartInsightRenewedBody": "በቅርቡ {name}ን አድሰዋል፣ እና አሁን ትኩረትዎን የሚፈልግ ምንም ነገር የለም። ቀጣዩ በ{date} {next} ነው።",
   "smartInsightRenewedNoNextBody": "በቅርቡ {name}ን አድሰዋል፣ እና አሁን ትኩረትዎን የሚፈልግ ምንም ነገር የለም።",
   "smartInsightMoreHeading": "ሊመለከቷቸው የሚገቡ ተጨማሪ ነገሮች",
-  "smartInsightMoreCount": "{count, plural, one{በተጨማሪ {count} ተጨማሪ} other{በተጨማሪ {count} ተጨማሪ}}",
+  "smartInsightMoreCount": "{count, plural, =1{እነዚህን ሲጨርሱ 1 ተጨማሪ ይታያል} other{እነዚህን ሲጨርሱ {count} ተጨማሪ ይታያሉ}}",
   "planTabIndividual": "ግለሰብ",
   "planTabBusiness": "ንግድ",
   "planGetPremium": "Premium ያግኙ",
@@ -3479,5 +3479,11 @@
   "groupsNoRecordsSection": "ገና ምንም መዝገቦች የሉም",
   "recordChangedRecently": "{days, plural, =0{ዛሬ በ{name} ተቀይሯል} =1{ትናንት በ{name} ተቀይሯል} other{ከ{days} ቀናት በፊት በ{name} ተቀይሯል}}",
   "notifSharedOnlyMineTitle": "እኔ ያከልኳቸው መዝገቦች ብቻ",
-  "notifSharedOnlyMineSubtitle": "እኔ ያከልኳቸውን የተጋሩ መዝገቦች ብቻ አስታውሰኝ። ሌሎች ያከሏቸው መዝገቦች አሁንም በመተግበሪያው ውስጥ ይታያሉ።"
+  "notifSharedOnlyMineSubtitle": "እኔ ያከልኳቸውን የተጋሩ መዝገቦች ብቻ አስታውሰኝ። ሌሎች ያከሏቸው መዝገቦች አሁንም በመተግበሪያው ውስጥ ይታያሉ።",
+  "travelPassportExpiresBeforeLeaving": "ፓስፖርቱ ከመሄድዎ በፊት ያበቃል",
+  "travelVisaExpiresBeforeLeaving": "ቪዛው ከመሄድዎ በፊት ያበቃል",
+  "travelInsuranceEndsBeforeLeaving": "የጉዞ ኢንሹራንሱ ከመሄድዎ በፊት ያበቃል",
+  "travelLicenceExpiresBeforeLeaving": "መንጃ ፈቃዱ ከመሄድዎ በፊት ያበቃል",
+  "travelTravellersCount": "{count, plural, =1{1 ተጓዥ} other{{count} ተጓዦች}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} በ{date} ያበቃል፣ {days, plural, =1{ከመነሳትዎ 1 ቀን በፊት} other{ከመነሳትዎ {days} ቀናት በፊት}}።"
 }

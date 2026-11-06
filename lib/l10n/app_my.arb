@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "သင် မကြာသေးမီက {name} ကို သက်တမ်းတိုးခဲ့ပြီး ယခုအချိန်တွင် ဂရုစိုက်ရန် မည်သည့်အရာမျှ မရှိပါ။ နောက်တစ်ခုမှာ {date} တွင် {next} ဖြစ်သည်။",
   "smartInsightRenewedNoNextBody": "သင် မကြာသေးမီက {name} ကို သက်တမ်းတိုးခဲ့ပြီး ယခုအချိန်တွင် ဂရုစိုက်ရန် မည်သည့်အရာမျှ မရှိပါ။",
   "smartInsightMoreHeading": "စစ်ဆေးရန် နောက်ထပ်အရာများ",
-  "smartInsightMoreCount": "{count, plural, other{နောက်ထပ် {count} ခု}}",
+  "smartInsightMoreCount": "{count, plural, =1{ဤအရာများကို ဖြေရှင်းပြီးလျှင် နောက်ထပ် 1 ခု ပေါ်လာမည်} other{ဤအရာများကို ဖြေရှင်းပြီးလျှင် နောက်ထပ် {count} ခု ပေါ်လာမည်}}",
   "planTabIndividual": "တစ်ဦးချင်း",
   "planTabBusiness": "စီးပွားရေး",
   "planGetPremium": "Premium ရယူရန်",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "မှတ်တမ်း မရှိသေးပါ။",
   "recordChangedRecently": "{days, plural, =0{ယနေ့ {name} ပြောင်းခဲ့သည်} =1{မနေ့က {name} ပြောင်းခဲ့သည်} other{{days} ရက်က {name} ပြောင်းခဲ့သည်}}",
   "notifSharedOnlyMineTitle": "ကျွန်ုပ်ထည့်ထားသော မှတ်တမ်းများသာ",
-  "notifSharedOnlyMineSubtitle": "ကျွန်ုပ်ထည့်ထားသော မျှဝေမှတ်တမ်းများအတွက်သာ သတိပေးပါ။ အခြားသူများထည့်ထားသော မှတ်တမ်းများ အက်ပ်တွင် ဆက်ပြနေမည်။"
+  "notifSharedOnlyMineSubtitle": "ကျွန်ုပ်ထည့်ထားသော မျှဝေမှတ်တမ်းများအတွက်သာ သတိပေးပါ။ အခြားသူများထည့်ထားသော မှတ်တမ်းများ အက်ပ်တွင် ဆက်ပြနေမည်။",
+  "travelPassportExpiresBeforeLeaving": "သင်ခရီးမထွက်မီ နိုင်ငံကူးလက်မှတ် သက်တမ်းကုန်မည်",
+  "travelVisaExpiresBeforeLeaving": "သင်ခရီးမထွက်မီ ဗီဇာ သက်တမ်းကုန်မည်",
+  "travelInsuranceEndsBeforeLeaving": "သင်ခရီးမထွက်မီ ခရီးသွားအာမခံ ပြီးဆုံးမည်",
+  "travelLicenceExpiresBeforeLeaving": "သင်ခရီးမထွက်မီ ယာဉ်မောင်းလိုင်စင် သက်တမ်းကုန်မည်",
+  "travelTravellersCount": "{count, plural, =1{ခရီးသည် 1 ဦး} other{ခရီးသည် {count} ဦး}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =1{သင်မထွက်ခွာမီ 1 ရက်} other{သင်မထွက်ခွာမီ {days} ရက်}}။"
 }

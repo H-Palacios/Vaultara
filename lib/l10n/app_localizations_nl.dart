@@ -3088,8 +3088,8 @@ class AppLocalizationsNl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Nog $count andere',
-      one: 'Nog $count andere',
+      other: 'Er verschijnen nog $count als je deze hebt afgehandeld',
+      one: 'Er verschijnt nog 1 als je deze hebt afgehandeld',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Herinner me alleen aan gedeelde records die ik heb toegevoegd. Records van anderen blijven zichtbaar in de app.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Paspoort verloopt voor je vertrek';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Visum verloopt voor je vertrek';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Reisverzekering eindigt voor je vertrek';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Rijbewijs verloopt voor je vertrek';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reizigers',
+      one: '1 reiziger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dagen voor je vertrek',
+      one: '1 dag voor je vertrek',
+    );
+    return '$name verloopt op $date, $_temp0.';
+  }
 }

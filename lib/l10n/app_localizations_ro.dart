@@ -3118,9 +3118,8 @@ class AppLocalizationsRo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Încă $count',
-      few: 'Încă $count',
-      one: 'Încă $count',
+      other: 'Încă $count apar după ce le rezolvi pe acestea',
+      one: 'Încă 1 apare după ce le rezolvi pe acestea',
     );
     return '$_temp0';
   }
@@ -9154,4 +9153,40 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Amintește-mi doar de înregistrările partajate pe care le-am adăugat. Cele adăugate de alții rămân vizibile în aplicație.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pașaportul expiră înainte să pleci';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viza expiră înainte să pleci';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Asigurarea de călătorie se încheie înainte să pleci';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Permisul de conducere expiră înainte să pleci';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de călători',
+      few: '$count călători',
+      one: '1 călător',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'cu $days de zile înainte de plecare',
+      few: 'cu $days zile înainte de plecare',
+      one: 'cu 1 zi înainte de plecare',
+    );
+    return '$name expiră pe $date, $_temp0.';
+  }
 }

@@ -3069,7 +3069,8 @@ class AppLocalizationsId extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ditambah $count lagi',
+      other: '$count lagi muncul setelah Anda menyelesaikan ini',
+      one: '1 lagi muncul setelah Anda menyelesaikan ini',
     );
     return '$_temp0';
   }
@@ -9002,4 +9003,38 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Ingatkan saya hanya tentang catatan bersama yang saya tambahkan. Catatan yang ditambahkan orang lain tetap terlihat di aplikasi.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Paspor kedaluwarsa sebelum Anda berangkat';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Visa kedaluwarsa sebelum Anda berangkat';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Asuransi perjalanan berakhir sebelum Anda berangkat';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'SIM kedaluwarsa sebelum Anda berangkat';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pelancong',
+      one: '1 pelancong',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days hari sebelum Anda berangkat',
+      one: '1 hari sebelum Anda berangkat',
+    );
+    return '$name kedaluwarsa $date, $_temp0.';
+  }
 }

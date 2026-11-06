@@ -3074,7 +3074,8 @@ class AppLocalizationsZh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '另外还有 $count 项',
+      other: '处理完这些后，还会显示 $count 项',
+      one: '处理完这些后，还会显示 1 项',
     );
     return '$_temp0';
   }
@@ -9007,6 +9008,40 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => '只提醒我自己添加的共享记录。其他人添加的记录仍会显示在应用中。';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => '护照在您出发前到期';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => '签证在您出发前到期';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => '旅行保险在您出发前结束';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => '驾驶执照在您出发前到期';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位旅客',
+      one: '1 位旅客',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '比您出发早 $days 天',
+      one: '比您出发早 1 天',
+    );
+    return '$name 于 $date 到期，$_temp0。';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -12067,7 +12102,8 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '另有 $count 项',
+      other: '处理完这些后，还会显示 $count 项',
+      one: '处理完这些后，还会显示 1 项',
     );
     return '$_temp0';
   }
@@ -18000,6 +18036,40 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get notifSharedOnlyMineSubtitle => '只提醒我自己添加的共享记录。其他人添加的记录仍会显示在应用中。';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => '护照在您出发前到期';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => '签证在您出发前到期';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => '旅行保险在您出发前结束';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => '驾驶执照在您出发前到期';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位旅客',
+      one: '1 位旅客',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '比您出发早 $days 天',
+      one: '比您出发早 1 天',
+    );
+    return '$name 于 $date 到期，$_temp0。';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -21060,7 +21130,8 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '另外還有 $count 項',
+      other: '處理完這些後，還會顯示 $count 項',
+      one: '處理完這些後，還會顯示 1 項',
     );
     return '$_temp0';
   }
@@ -26993,4 +27064,38 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get notifSharedOnlyMineSubtitle => '只提醒我自己新增的共用記錄。其他人新增的記錄仍會顯示在應用程式中。';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => '護照在您出發前到期';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => '簽證在您出發前到期';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => '旅遊保險在您出發前結束';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => '駕駛執照在您出發前到期';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 位旅客',
+      one: '1 位旅客',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '比您出發早 $days 天',
+      one: '比您出發早 1 天',
+    );
+    return '$name 將於 $date 到期，$_temp0。';
+  }
 }

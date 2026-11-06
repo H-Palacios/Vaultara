@@ -3283,9 +3283,9 @@
   "@smartInsightMoreHeading": {
     "description": ""
   },
-  "smartInsightMoreCount": "{count, plural, one{Plus {count} more} other{Plus {count} more}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 more will show as you clear these} other{{count} more will show as you clear these}}",
   "@smartInsightMoreCount": {
-    "description": "Shown under the More things to check list when there are more insights than shown.",
+    "description": "Under the Smart insights card when there are more insights than the card shows. They appear as the shown ones are dealt with or put off.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -11201,5 +11201,45 @@
   "notifSharedOnlyMineSubtitle": "Remind me only about shared records I added. Records others added still show in the app.",
   "@notifSharedOnlyMineSubtitle": {
     "description": "Explains the Only records I added switch in Notification settings."
+  },
+  "travelPassportExpiresBeforeLeaving": "Passport expires before you leave",
+  "@travelPassportExpiresBeforeLeaving": {
+    "description": "Travel check title when the passport runs out before the trip starts."
+  },
+  "travelVisaExpiresBeforeLeaving": "Visa expires before you leave",
+  "@travelVisaExpiresBeforeLeaving": {
+    "description": "Travel check title when the visa runs out before the trip starts."
+  },
+  "travelInsuranceEndsBeforeLeaving": "Travel insurance ends before you leave",
+  "@travelInsuranceEndsBeforeLeaving": {
+    "description": "Travel check title when the travel insurance ends before the trip starts."
+  },
+  "travelLicenceExpiresBeforeLeaving": "Driving licence expires before you leave",
+  "@travelLicenceExpiresBeforeLeaving": {
+    "description": "Travel check title when the driving licence runs out before the trip starts."
+  },
+  "travelTravellersCount": "{count, plural, =1{1 traveller} other{{count} travellers}}",
+  "@travelTravellersCount": {
+    "description": "Chip on the trip overview: how many people go on the trip.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "travelDetailExpiresDaysBeforeLeaving": "{name} expires {date}, {days, plural, =1{1 day before you leave} other{{days} days before you leave}}.",
+  "@travelDetailExpiresDaysBeforeLeaving": {
+    "description": "Travel check detail when a document runs out before the trip starts. {days} is how many days before departure it runs out.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
   }
 }

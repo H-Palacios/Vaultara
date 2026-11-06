@@ -3087,8 +3087,8 @@ class AppLocalizationsSv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Plus $count till',
-      one: 'Plus $count till',
+      other: '$count till visas när du har fixat de här',
+      one: '1 till visas när du har fixat de här',
     );
     return '$_temp0';
   }
@@ -9074,4 +9074,38 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Påminn mig bara om delade poster som jag har lagt till. Poster som andra har lagt till visas fortfarande i appen.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Passet går ut innan du reser';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Visumet går ut innan du reser';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Reseförsäkringen upphör innan du reser';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Körkortet går ut innan du reser';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count resenärer',
+      one: '1 resenär',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dagar innan du reser',
+      one: '1 dag innan du reser',
+    );
+    return '$name går ut $date, $_temp0.';
+  }
 }

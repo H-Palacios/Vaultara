@@ -3062,7 +3062,8 @@ class AppLocalizationsJa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ほか$count件',
+      other: 'これらを片付けると、あと$count件表示されます',
+      one: 'これらを片付けると、あと1件表示されます',
     );
     return '$_temp0';
   }
@@ -8995,4 +8996,38 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => '自分が追加した共有記録だけリマインドします。ほかの人が追加した記録もアプリには表示されます。';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => '出発前にパスポートの期限が切れます';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => '出発前にビザの期限が切れます';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => '出発前に旅行保険が終了します';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => '出発前に運転免許証の期限が切れます';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '旅行者 $count 人',
+      one: '旅行者 1 人',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '出発の$days日前',
+      one: '出発の1日前',
+    );
+    return '$nameの有効期限は$dateで、$_temp0です。';
+  }
 }

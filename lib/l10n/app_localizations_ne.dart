@@ -3088,8 +3088,8 @@ class AppLocalizationsNe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'थप $count',
-      one: 'थप $count',
+      other: 'यी सकेपछि थप $count देखिन्छन्',
+      one: 'यी सकेपछि थप 1 देखिन्छ',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'मैले थपेका साझा रेकर्डको मात्र सम्झना गराउनुहोस्। अरूले थपेका रेकर्ड एपमा देखिइरहन्छन्।';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'तपाईं जानुअघि पासपोर्टको म्याद सकिन्छ';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'तपाईं जानुअघि भिसाको म्याद सकिन्छ';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'तपाईं जानुअघि यात्रा बीमा सकिन्छ';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'तपाईं जानुअघि सवारी चालक अनुमति पत्रको म्याद सकिन्छ';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count यात्री',
+      one: '1 यात्री',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'तपाईं जानुभन्दा $days दिनअघि',
+      one: 'तपाईं जानुभन्दा 1 दिनअघि',
+    );
+    return '$name को म्याद $date मा सकिन्छ, $_temp0।';
+  }
 }

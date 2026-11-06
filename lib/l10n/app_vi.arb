@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Bạn vừa gia hạn {name}, và hiện không có gì cần bạn chú ý. Mục tiếp theo là {next} vào {date}.",
   "smartInsightRenewedNoNextBody": "Bạn vừa gia hạn {name}, và hiện không có gì cần bạn chú ý.",
   "smartInsightMoreHeading": "Còn những mục cần kiểm tra",
-  "smartInsightMoreCount": "{count, plural, other{Còn thêm {count} mục}}",
+  "smartInsightMoreCount": "{count, plural, =1{Sẽ hiện thêm 1 mục khi bạn xử lý xong các mục này} other{Sẽ hiện thêm {count} mục khi bạn xử lý xong các mục này}}",
   "planTabIndividual": "Cá nhân",
   "planTabBusiness": "Doanh nghiệp",
   "planGetPremium": "Nhận Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Chưa có bản ghi nào",
   "recordChangedRecently": "{days, plural, =0{{name} đã thay đổi hôm nay} =1{{name} đã thay đổi hôm qua} other{{name} đã thay đổi {days} ngày trước}}",
   "notifSharedOnlyMineTitle": "Chỉ bản ghi tôi đã thêm",
-  "notifSharedOnlyMineSubtitle": "Chỉ nhắc tôi về các bản ghi chung do tôi thêm. Bản ghi do người khác thêm vẫn hiện trong ứng dụng."
+  "notifSharedOnlyMineSubtitle": "Chỉ nhắc tôi về các bản ghi chung do tôi thêm. Bản ghi do người khác thêm vẫn hiện trong ứng dụng.",
+  "travelPassportExpiresBeforeLeaving": "Hộ chiếu hết hạn trước khi bạn khởi hành",
+  "travelVisaExpiresBeforeLeaving": "Thị thực hết hạn trước khi bạn khởi hành",
+  "travelInsuranceEndsBeforeLeaving": "Bảo hiểm du lịch kết thúc trước khi bạn khởi hành",
+  "travelLicenceExpiresBeforeLeaving": "Bằng lái xe hết hạn trước khi bạn khởi hành",
+  "travelTravellersCount": "{count, plural, =1{1 người đi} other{{count} người đi}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} hết hạn vào {date}, {days, plural, =1{1 ngày trước khi bạn đi} other{{days} ngày trước khi bạn đi}}."
 }

@@ -5443,10 +5443,10 @@ abstract class AppLocalizations {
   /// **'More things to check'**
   String get smartInsightMoreHeading;
 
-  /// Shown under the More things to check list when there are more insights than shown.
+  /// Under the Smart insights card when there are more insights than the card shows. They appear as the shown ones are dealt with or put off.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{Plus {count} more} other{Plus {count} more}}'**
+  /// **'{count, plural, =1{1 more will show as you clear these} other{{count} more will show as you clear these}}'**
   String smartInsightMoreCount(int count);
 
   /// Plans screen tab for the one-person Premium plan
@@ -15450,6 +15450,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remind me only about shared records I added. Records others added still show in the app.'**
   String get notifSharedOnlyMineSubtitle;
+
+  /// Travel check title when the passport runs out before the trip starts.
+  ///
+  /// In en, this message translates to:
+  /// **'Passport expires before you leave'**
+  String get travelPassportExpiresBeforeLeaving;
+
+  /// Travel check title when the visa runs out before the trip starts.
+  ///
+  /// In en, this message translates to:
+  /// **'Visa expires before you leave'**
+  String get travelVisaExpiresBeforeLeaving;
+
+  /// Travel check title when the travel insurance ends before the trip starts.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel insurance ends before you leave'**
+  String get travelInsuranceEndsBeforeLeaving;
+
+  /// Travel check title when the driving licence runs out before the trip starts.
+  ///
+  /// In en, this message translates to:
+  /// **'Driving licence expires before you leave'**
+  String get travelLicenceExpiresBeforeLeaving;
+
+  /// Chip on the trip overview: how many people go on the trip.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 traveller} other{{count} travellers}}'**
+  String travelTravellersCount(int count);
+
+  /// Travel check detail when a document runs out before the trip starts. {days} is how many days before departure it runs out.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} expires {date}, {days, plural, =1{1 day before you leave} other{{days} days before you leave}}.'**
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

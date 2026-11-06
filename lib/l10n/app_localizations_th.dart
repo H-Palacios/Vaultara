@@ -3062,7 +3062,8 @@ class AppLocalizationsTh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'อีก $count รายการ',
+      other: 'จะแสดงอีก $count รายการเมื่อคุณจัดการรายการเหล่านี้',
+      one: 'จะแสดงอีก 1 รายการเมื่อคุณจัดการรายการเหล่านี้',
     );
     return '$_temp0';
   }
@@ -8995,4 +8996,38 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'เตือนฉันเฉพาะรายการที่แชร์ซึ่งฉันเพิ่มเอง รายการที่คนอื่นเพิ่มยังแสดงในแอป';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'พาสปอร์ตหมดอายุก่อนคุณออกเดินทาง';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'วีซ่าหมดอายุก่อนคุณออกเดินทาง';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'ประกันการเดินทางสิ้นสุดก่อนคุณออกเดินทาง';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'ใบขับขี่หมดอายุก่อนคุณออกเดินทาง';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ผู้เดินทาง $count คน',
+      one: 'ผู้เดินทาง 1 คน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days วันก่อนคุณออกเดินทาง',
+      one: '1 วันก่อนคุณออกเดินทาง',
+    );
+    return '$name หมดอายุ $date $_temp0';
+  }
 }

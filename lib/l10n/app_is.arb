@@ -1119,7 +1119,7 @@
   "smartInsightRenewedBody": "Þú endurnýjaðir {name} nýlega og ekkert þarfnast athygli þinnar núna. Næst á dagskrá er {next} {date}.",
   "smartInsightRenewedNoNextBody": "Þú endurnýjaðir {name} nýlega og ekkert þarfnast athygli þinnar núna.",
   "smartInsightMoreHeading": "Fleira til að athuga",
-  "smartInsightMoreCount": "{count, plural, one{Auk þess {count} til viðbótar} other{Auk þess {count} til viðbótar}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 í viðbót birtist þegar þú klárar þessi} other{{count} í viðbót birtast þegar þú klárar þessi}}",
   "planTabIndividual": "Einstaklingur",
   "planTabBusiness": "Fyrirtæki",
   "planGetPremium": "Fá Premium",
@@ -3446,5 +3446,11 @@
   "groupsNoRecordsSection": "Engar færslur enn",
   "recordChangedRecently": "{days, plural, =0{{name} breytti í dag} =1{{name} breytti í gær} other{{name} breytti fyrir {days} dögum}}",
   "notifSharedOnlyMineTitle": "Aðeins færslur sem ég bætti við",
-  "notifSharedOnlyMineSubtitle": "Minntu mig aðeins á sameiginlegar færslur sem ég bætti við. Færslur annarra sjást áfram í forritinu."
+  "notifSharedOnlyMineSubtitle": "Minntu mig aðeins á sameiginlegar færslur sem ég bætti við. Færslur annarra sjást áfram í forritinu.",
+  "travelPassportExpiresBeforeLeaving": "Vegabréfið rennur út áður en þú leggur af stað",
+  "travelVisaExpiresBeforeLeaving": "Vegabréfsáritunin rennur út áður en þú leggur af stað",
+  "travelInsuranceEndsBeforeLeaving": "Ferðatryggingin rennur út áður en þú leggur af stað",
+  "travelLicenceExpiresBeforeLeaving": "Ökuskírteinið rennur út áður en þú leggur af stað",
+  "travelTravellersCount": "{count, plural, =1{1 ferðalangur} other{{count} ferðalangar}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} rennur út {date}, {days, plural, =1{1 degi áður en þú leggur af stað} other{{days} dögum áður en þú leggur af stað}}."
 }

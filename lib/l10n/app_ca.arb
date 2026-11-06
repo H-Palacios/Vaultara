@@ -1145,7 +1145,7 @@
   "smartInsightRenewedBody": "Fa poc vas renovar {name}, i ara mateix no cal que atenguis res. El següent és {next}, el {date}.",
   "smartInsightRenewedNoNextBody": "Fa poc vas renovar {name}, i ara mateix no cal que atenguis res.",
   "smartInsightMoreHeading": "Més coses per revisar",
-  "smartInsightMoreCount": "{count, plural, one{{count} més} other{{count} més}}",
+  "smartInsightMoreCount": "{count, plural, =1{N'apareixerà 1 més quan resolguis aquests} other{N'apareixeran {count} més quan resolguis aquests}}",
   "planTabIndividual": "Particular",
   "planTabBusiness": "Business",
   "planGetPremium": "Obté Premium",
@@ -3472,5 +3472,11 @@
   "groupsNoRecordsSection": "Encara no hi ha registres",
   "recordChangedRecently": "{days, plural, =0{Canviat per {name} avui} =1{Canviat per {name} ahir} other{Canviat per {name} fa {days} dies}}",
   "notifSharedOnlyMineTitle": "Només els registres que he afegit",
-  "notifSharedOnlyMineSubtitle": "Recorda'm només els registres compartits que he afegit. Els que han afegit altres es continuen veient a l'app."
+  "notifSharedOnlyMineSubtitle": "Recorda'm només els registres compartits que he afegit. Els que han afegit altres es continuen veient a l'app.",
+  "travelPassportExpiresBeforeLeaving": "El passaport caduca abans que marxis",
+  "travelVisaExpiresBeforeLeaving": "El visat caduca abans que marxis",
+  "travelInsuranceEndsBeforeLeaving": "L'assegurança de viatge acaba abans que marxis",
+  "travelLicenceExpiresBeforeLeaving": "El permís de conduir caduca abans que marxis",
+  "travelTravellersCount": "{count, plural, =1{1 viatger} other{{count} viatgers}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} caduca el {date}, {days, plural, =1{1 dia abans que marxis} other{{days} dies abans que marxis}}."
 }

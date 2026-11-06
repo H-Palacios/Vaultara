@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "بەم دواییە {name} نوێ کرایەوە، و ئێستا هیچ شتێک پێویستی بە سەرنجت نییە. دواتر {next} لە {date}.",
   "smartInsightRenewedNoNextBody": "بەم دواییە {name} نوێ کرایەوە، و ئێستا هیچ شتێک پێویستی بە سەرنجت نییە.",
   "smartInsightMoreHeading": "شتی زیاتر بۆ پشکنین",
-  "smartInsightMoreCount": "{count, plural, one{لەگەڵ {count} دانەی تر} other{لەگەڵ {count} دانەی تر}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 دانەی تر دەردەکەوێت کاتێک ئەمانە تەواو دەکەیت} other{{count} دانەی تر دەردەکەون کاتێک ئەمانە تەواو دەکەیت}}",
   "planTabIndividual": "تاکەکەسی",
   "planTabBusiness": "بازرگانی",
   "planGetPremium": "پرێمیۆم وەربگرە",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "هێشتا هیچ تۆمارێک نییە",
   "recordChangedRecently": "{days, plural, =0{ئەمڕۆ لەلایەن {name} گۆڕدرا} =1{دوێنێ لەلایەن {name} گۆڕدرا} other{{days} ڕۆژ لەمەوبەر لەلایەن {name} گۆڕدرا}}",
   "notifSharedOnlyMineTitle": "تەنها ئەو تۆمارانەی من زیادم کردوون",
-  "notifSharedOnlyMineSubtitle": "تەنها بۆ ئەو تۆمارە هاوبەشانەی من زیادم کردوون بیرم بخەرەوە. تۆمارەکانی ئەوانی تر هێشتا لە ئەپەکەدا دەردەکەون."
+  "notifSharedOnlyMineSubtitle": "تەنها بۆ ئەو تۆمارە هاوبەشانەی من زیادم کردوون بیرم بخەرەوە. تۆمارەکانی ئەوانی تر هێشتا لە ئەپەکەدا دەردەکەون.",
+  "travelPassportExpiresBeforeLeaving": "پاسپۆرت پێش ڕۆیشتنت بەسەردەچێت",
+  "travelVisaExpiresBeforeLeaving": "ڤیزا پێش ڕۆیشتنت بەسەردەچێت",
+  "travelInsuranceEndsBeforeLeaving": "بیمەی گەشت پێش ڕۆیشتنت کۆتایی دێت",
+  "travelLicenceExpiresBeforeLeaving": "مۆڵەتی شۆفێری پێش ڕۆیشتنت بەسەردەچێت",
+  "travelTravellersCount": "{count, plural, =1{1 گەشتیار} other{{count} گەشتیار}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} لە {date} بەسەردەچێت، {days, plural, =1{1 ڕۆژ پێش ڕۆیشتنت} other{{days} ڕۆژ پێش ڕۆیشتنت}}."
 }

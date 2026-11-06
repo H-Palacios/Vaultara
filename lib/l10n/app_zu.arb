@@ -1106,7 +1106,7 @@
   "smartInsightRenewedBody": "Uvuselele i-{name} muva nje, futhi akukho okudinga ukunakwa kwakho okwamanje. Okulandelayo yi-{next} ngo-{date}.",
   "smartInsightRenewedNoNextBody": "Uvuselele i-{name} muva nje, futhi akukho okudinga ukunakwa kwakho okwamanje.",
   "smartInsightMoreHeading": "Ezinye izinto zokuhlola",
-  "smartInsightMoreCount": "{count, plural, one{Kanye nenye e-{count}} other{Kanye nezinye ezingu-{count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Enye engu-1 izovela uma uqeda lezi} other{Ezinye ezingu-{count} zizovela uma uqeda lezi}}",
   "planTabIndividual": "Umuntu ngamunye",
   "planTabBusiness": "Business",
   "planGetPremium": "Thola i-Premium",
@@ -3433,5 +3433,11 @@
   "groupsNoRecordsSection": "Akukho marekhodi okwamanje",
   "recordChangedRecently": "{days, plural, =0{Kushintshwe ngu-{name} namuhla} =1{Kushintshwe ngu-{name} izolo} other{Kushintshwe ngu-{name} ezinsukwini ezi-{days} ezedlule}}",
   "notifSharedOnlyMineTitle": "Amarekhodi engiwengezile kuphela",
-  "notifSharedOnlyMineSubtitle": "Ngikhumbuze kuphela ngamarekhodi abelwanayo engiwengezile. Amarekhodi engezwe abanye asabonakala ku-app."
+  "notifSharedOnlyMineSubtitle": "Ngikhumbuze kuphela ngamarekhodi abelwanayo engiwengezile. Amarekhodi engezwe abanye asabonakala ku-app.",
+  "travelPassportExpiresBeforeLeaving": "Iphasipoti iphelelwa ngaphambi kokuthi uhambe",
+  "travelVisaExpiresBeforeLeaving": "I-visa iphelelwa ngaphambi kokuthi uhambe",
+  "travelInsuranceEndsBeforeLeaving": "Umshwalense wohambo uphela ngaphambi kokuthi uhambe",
+  "travelLicenceExpiresBeforeLeaving": "Ilayisense yokushayela iphelelwa ngaphambi kokuthi uhambe",
+  "travelTravellersCount": "{count, plural, =1{Umhambi o-1} other{Abahambi abangu-{count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngo-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuthi uhambe} other{izinsuku ezingu-{days} ngaphambi kokuthi uhambe}}."
 }

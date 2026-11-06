@@ -3088,8 +3088,8 @@ class AppLocalizationsGl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count máis',
-      one: '$count máis',
+      other: 'Aparecerán $count máis cando resolvas estes',
+      one: 'Aparecerá 1 máis cando resolvas estes',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Lembrarme só os rexistros compartidos que engadín. Os que engadiron outros seguen aparecendo na app.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'O pasaporte caduca antes de que marches';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'O visado caduca antes de que marches';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'O seguro de viaxe remata antes de que marches';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'A licenza de condución caduca antes de que marches';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count viaxeiros',
+      one: '1 viaxeiro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days días antes de que saias',
+      one: '1 día antes de que saias',
+    );
+    return '$name caduca o $date, $_temp0.';
+  }
 }

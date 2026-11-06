@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Dhawaan ayaad cusboonaysiisay {name}, hadda wax kuu baahan indho ma jiraan. Kan xiga waa {next} {date}.",
   "smartInsightRenewedNoNextBody": "Dhawaan ayaad cusboonaysiisay {name}, hadda wax kuu baahan indho ma jiraan.",
   "smartInsightMoreHeading": "Waxyaabo kale oo la hubiyo",
-  "smartInsightMoreCount": "{count, plural, one{Iyo {count} kale} other{Iyo {count} kale}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 kale ayaa soo bixi doona marka aad kuwan dhammayso} other{{count} kale ayaa soo bixi doona marka aad kuwan dhammayso}}",
   "planTabIndividual": "Shakhsi",
   "planTabBusiness": "Business",
   "planGetPremium": "Hel Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Weli ma jiraan diiwaanno",
   "recordChangedRecently": "{days, plural, =0{{name} ayaa beddelay maanta} =1{{name} ayaa beddelay shalay} other{{name} ayaa beddelay {days} maalmood ka hor}}",
   "notifSharedOnlyMineTitle": "Kaliya diiwaannada aan ku daray",
-  "notifSharedOnlyMineSubtitle": "I xasuusi kaliya diiwaannada la wadaago ee aan ku daray. Diiwaannada dadka kale ku dareen weli waxay ka muuqdaan app-ka."
+  "notifSharedOnlyMineSubtitle": "I xasuusi kaliya diiwaannada la wadaago ee aan ku daray. Diiwaannada dadka kale ku dareen weli waxay ka muuqdaan app-ka.",
+  "travelPassportExpiresBeforeLeaving": "Baasaboorku wuu dhacayaa ka hor intaadan bixin",
+  "travelVisaExpiresBeforeLeaving": "Fiisuhu wuu dhacayaa ka hor intaadan bixin",
+  "travelInsuranceEndsBeforeLeaving": "Caymiska safarku wuu dhammaanayaa ka hor intaadan bixin",
+  "travelLicenceExpiresBeforeLeaving": "Ruqsadda wadistu way dhacaysaa ka hor intaadan bixin",
+  "travelTravellersCount": "{count, plural, =1{1 socotore} other{{count} socotore}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} wuu dhacayaa {date}, {days, plural, =1{1 maalin ka hor intaadan bixin} other{{days} maalmood ka hor intaadan bixin}}."
 }

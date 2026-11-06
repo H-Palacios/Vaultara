@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Nemrég megújította ezt: {name}, és most semmi sem igényel figyelmet. Következő: {next}, ekkor: {date}.",
   "smartInsightRenewedNoNextBody": "Nemrég megújította ezt: {name}, és most semmi sem igényel figyelmet.",
   "smartInsightMoreHeading": "További ellenőrizendő dolgok",
-  "smartInsightMoreCount": "{count, plural, one{Még {count}} other{Még {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Még 1 megjelenik, ha ezeket elintézi} other{Még {count} megjelenik, ha ezeket elintézi}}",
   "planTabIndividual": "Egyéni",
   "planTabBusiness": "Üzleti",
   "planGetPremium": "Premium megszerzése",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Még nincsenek bejegyzések",
   "recordChangedRecently": "{days, plural, =0{{name} módosította ma} =1{{name} módosította tegnap} other{{name} módosította {days} napja}}",
   "notifSharedOnlyMineTitle": "Csak az általam hozzáadottak",
-  "notifSharedOnlyMineSubtitle": "Csak az általam hozzáadott megosztott bejegyzésekről emlékeztessen. A mások által hozzáadottak továbbra is látszanak az appban."
+  "notifSharedOnlyMineSubtitle": "Csak az általam hozzáadott megosztott bejegyzésekről emlékeztessen. A mások által hozzáadottak továbbra is látszanak az appban.",
+  "travelPassportExpiresBeforeLeaving": "Az útlevél lejár, mielőtt elindul",
+  "travelVisaExpiresBeforeLeaving": "A vízum lejár, mielőtt elindul",
+  "travelInsuranceEndsBeforeLeaving": "Az utasbiztosítás véget ér, mielőtt elindul",
+  "travelLicenceExpiresBeforeLeaving": "A jogosítvány lejár, mielőtt elindul",
+  "travelTravellersCount": "{count, plural, =1{1 utazó} other{{count} utazó}}",
+  "travelDetailExpiresDaysBeforeLeaving": "A(z) {name} lejár: {date}, {days, plural, =1{1 nappal az indulás előtt} other{{days} nappal az indulás előtt}}."
 }

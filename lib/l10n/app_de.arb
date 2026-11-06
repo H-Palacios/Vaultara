@@ -1145,7 +1145,7 @@
   "smartInsightRenewedBody": "Du hast {name} kürzlich verlängert, und im Moment braucht nichts deine Aufmerksamkeit. Als Nächstes steht {next} am {date} an.",
   "smartInsightRenewedNoNextBody": "Du hast {name} kürzlich verlängert, und im Moment braucht nichts deine Aufmerksamkeit.",
   "smartInsightMoreHeading": "Weitere Punkte zum Prüfen",
-  "smartInsightMoreCount": "{count, plural, one{Dazu {count} weiterer} other{Dazu {count} weitere}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 weiterer erscheint, wenn du diese erledigst} other{{count} weitere erscheinen, wenn du diese erledigst}}",
   "planTabIndividual": "Einzeln",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium holen",
@@ -3472,5 +3472,11 @@
   "groupsNoRecordsSection": "Noch keine Einträge",
   "recordChangedRecently": "{days, plural, =0{Heute von {name} geändert} =1{Gestern von {name} geändert} other{Vor {days} Tagen von {name} geändert}}",
   "notifSharedOnlyMineTitle": "Nur Einträge, die ich hinzugefügt habe",
-  "notifSharedOnlyMineSubtitle": "Erinnere mich nur an geteilte Einträge, die ich hinzugefügt habe. Einträge von anderen bleiben in der App sichtbar."
+  "notifSharedOnlyMineSubtitle": "Erinnere mich nur an geteilte Einträge, die ich hinzugefügt habe. Einträge von anderen bleiben in der App sichtbar.",
+  "travelPassportExpiresBeforeLeaving": "Reisepass läuft vor deiner Abreise ab",
+  "travelVisaExpiresBeforeLeaving": "Visum läuft vor deiner Abreise ab",
+  "travelInsuranceEndsBeforeLeaving": "Reiseversicherung endet vor deiner Abreise",
+  "travelLicenceExpiresBeforeLeaving": "Führerschein läuft vor deiner Abreise ab",
+  "travelTravellersCount": "{count, plural, =1{1 Reisender} other{{count} Reisende}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} läuft am {date} ab, {days, plural, =1{1 Tag vor deiner Abreise} other{{days} Tage vor deiner Abreise}}."
 }

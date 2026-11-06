@@ -3088,8 +3088,8 @@ class AppLocalizationsUz extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Yana $count ta',
-      one: 'Yana $count ta',
+      other: 'Bularni hal qilsangiz, yana $count ta chiqadi',
+      one: 'Bularni hal qilsangiz, yana 1 ta chiqadi',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Faqat men qoʻshgan umumiy yozuvlar haqida eslat. Boshqalar qoʻshgan yozuvlar ilovada koʻrinib turadi.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pasport muddati jo‘nashingizdan oldin tugaydi';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viza muddati jo‘nashingizdan oldin tugaydi';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Sayohat sugʻurtasi jo‘nashingizdan oldin tugaydi';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Haydovchilik guvohnomasi muddati jo‘nashingizdan oldin tugaydi';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sayohatchi',
+      one: '1 sayohatchi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'joʻnashingizdan $days kun oldin',
+      one: 'joʻnashingizdan 1 kun oldin',
+    );
+    return '$name muddati $date kuni tugaydi, $_temp0.';
+  }
 }

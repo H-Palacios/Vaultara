@@ -3075,7 +3075,8 @@ class AppLocalizationsIg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Tụkwasị $count ọzọ',
+      other: '$count ọzọ ga-apụta mgbe i mechara ndị a',
+      one: '1 ọzọ ga-apụta mgbe i mechara ndị a',
     );
     return '$_temp0';
   }
@@ -9018,4 +9019,38 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Chetara m naanị maka ndekọ ekekọrịta m tinyere. Ndekọ ndị ọzọ tinyere ka na-egosi n\'ime ngwa ahụ.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Paspọtụ na-agwụ tupu ị pụọ';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Vịsa na-agwụ tupu ị pụọ';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Inshọransị njem na-akwụsị tupu ị pụọ';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ikikere ịnya ụgbọala na-agwụ tupu ị pụọ';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ndị njem $count',
+      one: 'Onye njem 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ụbọchị $days tupu ị pụọ',
+      one: 'ụbọchị 1 tupu ị pụọ',
+    );
+    return '$name na-agwụ na $date, $_temp0.';
+  }
 }

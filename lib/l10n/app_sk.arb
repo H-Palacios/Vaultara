@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Nedávno ste obnovili záznam {name} a momentálne nič nevyžaduje vašu pozornosť. Ďalší je {next}, vyprší {date}.",
   "smartInsightRenewedNoNextBody": "Nedávno ste obnovili záznam {name} a momentálne nič nevyžaduje vašu pozornosť.",
   "smartInsightMoreHeading": "Ďalšie veci na kontrolu",
-  "smartInsightMoreCount": "{count, plural, one{A ďalších {count}} few{A ďalších {count}} many{A ďalších {count}} other{A ďalších {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Ďalší 1 sa ukáže, keď vyriešite tieto} other{Ďalšie {count} sa ukážu, keď vyriešite tieto}}",
   "planTabIndividual": "Jednotlivec",
   "planTabBusiness": "Firma",
   "planGetPremium": "Získať Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Zatiaľ žiadne záznamy",
   "recordChangedRecently": "{days, plural, =0{Dnes zmenil(a) {name}} =1{Včera zmenil(a) {name}} few{Pred {days} dňami zmenil(a) {name}} many{Pred {days} dňami zmenil(a) {name}} other{Pred {days} dňami zmenil(a) {name}}}",
   "notifSharedOnlyMineTitle": "Len záznamy, ktoré som pridal(a)",
-  "notifSharedOnlyMineSubtitle": "Pripomínaj mi len zdieľané záznamy, ktoré som pridal(a). Záznamy ostatných sa v aplikácii stále zobrazujú."
+  "notifSharedOnlyMineSubtitle": "Pripomínaj mi len zdieľané záznamy, ktoré som pridal(a). Záznamy ostatných sa v aplikácii stále zobrazujú.",
+  "travelPassportExpiresBeforeLeaving": "Platnosť pasu vyprší pred odchodom",
+  "travelVisaExpiresBeforeLeaving": "Platnosť víza vyprší pred odchodom",
+  "travelInsuranceEndsBeforeLeaving": "Cestovné poistenie skončí pred odchodom",
+  "travelLicenceExpiresBeforeLeaving": "Platnosť vodičského preukazu vyprší pred odchodom",
+  "travelTravellersCount": "{count, plural, =1{1 cestujúci} few{{count} cestujúci} many{{count} cestujúcich} other{{count} cestujúcich}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Platnosť {name} vyprší {date}, {days, plural, =1{1 deň pred odchodom} few{{days} dni pred odchodom} many{{days} dňa pred odchodom} other{{days} dní pred odchodom}}."
 }

@@ -3088,8 +3088,8 @@ class AppLocalizationsFa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count مورد دیگر',
-      one: '$count مورد دیگر',
+      other: 'با انجام این‌ها $count مورد دیگر نشان داده می‌شود',
+      one: 'با انجام این‌ها ۱ مورد دیگر نشان داده می‌شود',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'فقط برای رکوردهای مشترکی که خودم افزوده‌ام یادآوری بفرست. رکوردهایی که دیگران افزوده‌اند همچنان در برنامه دیده می‌شوند.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'گذرنامه پیش از سفر منقضی می‌شود';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ویزا پیش از سفر منقضی می‌شود';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'بیمه مسافرتی پیش از سفر تمام می‌شود';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'گواهینامه رانندگی پیش از سفر منقضی می‌شود';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مسافر',
+      one: '۱ مسافر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days روز پیش از حرکت شما',
+      one: '۱ روز پیش از حرکت شما',
+    );
+    return '$name در $date منقضی می‌شود، $_temp0.';
+  }
 }

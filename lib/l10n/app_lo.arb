@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "ທ່ານຕໍ່ອາຍຸ {name} ເມື່ອບໍ່ດົນມານີ້ ແລະ ຕອນນີ້ບໍ່ມີຫຍັງຕ້ອງການຄວາມເອົາໃຈໃສ່ຂອງທ່ານ. ອັນຕໍ່ໄປແມ່ນ {next} ໃນວັນທີ {date}.",
   "smartInsightRenewedNoNextBody": "ທ່ານຕໍ່ອາຍຸ {name} ເມື່ອບໍ່ດົນມານີ້ ແລະ ຕອນນີ້ບໍ່ມີຫຍັງຕ້ອງການຄວາມເອົາໃຈໃສ່ຂອງທ່ານ.",
   "smartInsightMoreHeading": "ສິ່ງອື່ນທີ່ຕ້ອງກວດ",
-  "smartInsightMoreCount": "{count, plural, other{ແລະ ອີກ {count} ລາຍການ}}",
+  "smartInsightMoreCount": "{count, plural, =1{ອີກ 1 ລາຍການຈະສະແດງເມື່ອທ່ານຈັດການເຫຼົ່ານີ້} other{ອີກ {count} ລາຍການຈະສະແດງເມື່ອທ່ານຈັດການເຫຼົ່ານີ້}}",
   "planTabIndividual": "ບຸກຄົນ",
   "planTabBusiness": "ທຸລະກິດ",
   "planGetPremium": "ຮັບ ພຣີເມຍມ",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "ຍັງບໍ່ມີບັນທຶກ",
   "recordChangedRecently": "{days, plural, =0{{name} ປ່ຽນມື້ນີ້} =1{{name} ປ່ຽນມື້ວານນີ້} other{{name} ປ່ຽນ {days} ມື້ກ່ອນ}}",
   "notifSharedOnlyMineTitle": "ສະເພາະບັນທຶກທີ່ຂ້ອຍເພີ່ມ",
-  "notifSharedOnlyMineSubtitle": "ເຕືອນຂ້ອຍສະເພາະບັນທຶກທີ່ແບ່ງປັນທີ່ຂ້ອຍເພີ່ມ. ບັນທຶກທີ່ຄົນອື່ນເພີ່ມຍັງສະແດງໃນແອັບ."
+  "notifSharedOnlyMineSubtitle": "ເຕືອນຂ້ອຍສະເພາະບັນທຶກທີ່ແບ່ງປັນທີ່ຂ້ອຍເພີ່ມ. ບັນທຶກທີ່ຄົນອື່ນເພີ່ມຍັງສະແດງໃນແອັບ.",
+  "travelPassportExpiresBeforeLeaving": "ພາສປອດໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ",
+  "travelVisaExpiresBeforeLeaving": "ວີຊາໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ",
+  "travelInsuranceEndsBeforeLeaving": "ປະກັນການເດີນທາງສິ້ນສຸດກ່ອນທ່ານອອກເດີນທາງ",
+  "travelLicenceExpiresBeforeLeaving": "ໃບຂັບຂີ່ໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ",
+  "travelTravellersCount": "{count, plural, =1{ຜູ້ເດີນທາງ 1 ຄົນ} other{ຜູ້ເດີນທາງ {count} ຄົນ}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ໝົດອາຍຸ {date}, {days, plural, =1{1 ມື້ກ່ອນທ່ານອອກເດີນທາງ} other{{days} ມື້ກ່ອນທ່ານອອກເດີນທາງ}}."
 }

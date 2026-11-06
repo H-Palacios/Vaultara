@@ -1107,7 +1107,7 @@
   "smartInsightRenewedBody": "Du förnyade {name} nyligen, och just nu behöver inget din uppmärksamhet. Nästa är {next} den {date}.",
   "smartInsightRenewedNoNextBody": "Du förnyade {name} nyligen, och just nu behöver inget din uppmärksamhet.",
   "smartInsightMoreHeading": "Fler saker att kolla",
-  "smartInsightMoreCount": "{count, plural, one{Plus {count} till} other{Plus {count} till}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 till visas när du har fixat de här} other{{count} till visas när du har fixat de här}}",
   "planTabIndividual": "Enskild",
   "planTabBusiness": "Företag",
   "planGetPremium": "Skaffa Premium",
@@ -3434,5 +3434,11 @@
   "groupsNoRecordsSection": "Inga poster ännu",
   "recordChangedRecently": "{days, plural, =0{Ändrad av {name} i dag} =1{Ändrad av {name} i går} other{Ändrad av {name} för {days} dagar sedan}}",
   "notifSharedOnlyMineTitle": "Bara poster jag har lagt till",
-  "notifSharedOnlyMineSubtitle": "Påminn mig bara om delade poster som jag har lagt till. Poster som andra har lagt till visas fortfarande i appen."
+  "notifSharedOnlyMineSubtitle": "Påminn mig bara om delade poster som jag har lagt till. Poster som andra har lagt till visas fortfarande i appen.",
+  "travelPassportExpiresBeforeLeaving": "Passet går ut innan du reser",
+  "travelVisaExpiresBeforeLeaving": "Visumet går ut innan du reser",
+  "travelInsuranceEndsBeforeLeaving": "Reseförsäkringen upphör innan du reser",
+  "travelLicenceExpiresBeforeLeaving": "Körkortet går ut innan du reser",
+  "travelTravellersCount": "{count, plural, =1{1 resenär} other{{count} resenärer}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag innan du reser} other{{days} dagar innan du reser}}."
 }

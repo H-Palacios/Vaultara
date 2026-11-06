@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "તમે તાજેતરમાં {name} રિન્યૂ કર્યું છે, અને હાલ કશા પર તમારા ધ્યાનની જરૂર નથી. આગળ {date}એ {next} છે.",
   "smartInsightRenewedNoNextBody": "તમે તાજેતરમાં {name} રિન્યૂ કર્યું છે, અને હાલ કશા પર તમારા ધ્યાનની જરૂર નથી.",
   "smartInsightMoreHeading": "તપાસવા માટે વધુ બાબતો",
-  "smartInsightMoreCount": "{count, plural, one{વધુ {count}} other{વધુ {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{આ પૂરા કરશો એટલે વધુ 1 દેખાશે} other{આ પૂરા કરશો એટલે વધુ {count} દેખાશે}}",
   "planTabIndividual": "વ્યક્તિગત",
   "planTabBusiness": "બિઝનેસ",
   "planGetPremium": "Premium મેળવો",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "હજુ સુધી કોઈ રેકોર્ડ નથી",
   "recordChangedRecently": "{days, plural, =0{આજે {name} દ્વારા બદલ્યું} =1{ગઈકાલે {name} દ્વારા બદલ્યું} other{{days} દિવસ પહેલાં {name} દ્વારા બદલ્યું}}",
   "notifSharedOnlyMineTitle": "ફક્ત મેં ઉમેરેલા રેકોર્ડ",
-  "notifSharedOnlyMineSubtitle": "મેં ઉમેરેલા શેર કરેલા રેકોર્ડ માટે જ મને યાદ અપાવો. બીજાએ ઉમેરેલા રેકોર્ડ ઍપમાં દેખાતા રહેશે."
+  "notifSharedOnlyMineSubtitle": "મેં ઉમેરેલા શેર કરેલા રેકોર્ડ માટે જ મને યાદ અપાવો. બીજાએ ઉમેરેલા રેકોર્ડ ઍપમાં દેખાતા રહેશે.",
+  "travelPassportExpiresBeforeLeaving": "તમે નીકળો તે પહેલાં પાસપોર્ટ સમાપ્ત થાય છે",
+  "travelVisaExpiresBeforeLeaving": "તમે નીકળો તે પહેલાં વિઝા સમાપ્ત થાય છે",
+  "travelInsuranceEndsBeforeLeaving": "તમે નીકળો તે પહેલાં મુસાફરી વીમો પૂરો થાય છે",
+  "travelLicenceExpiresBeforeLeaving": "તમે નીકળો તે પહેલાં ડ્રાઇવિંગ લાઇસન્સ સમાપ્ત થાય છે",
+  "travelTravellersCount": "{count, plural, =1{1 મુસાફર} other{{count} મુસાફરો}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date}ના રોજ સમાપ્ત થાય છે, {days, plural, =1{તમે જાઓ તેના 1 દિવસ પહેલાં} other{તમે જાઓ તેના {days} દિવસ પહેલાં}}."
 }

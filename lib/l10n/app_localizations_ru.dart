@@ -3151,10 +3151,8 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ещё $count',
-      many: 'Ещё $count',
-      few: 'Ещё $count',
-      one: 'Ещё $count',
+      other: 'Ещё $count появятся, когда вы решите эти',
+      one: 'Ещё 1 появится, когда вы решите эти',
     );
     return '$_temp0';
   }
@@ -9247,4 +9245,42 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Напоминать только об общих записях, которые добавил я. Записи, добавленные другими, по-прежнему видны в приложении.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Паспорт истекает до вашего отъезда';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Виза истекает до вашего отъезда';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Страховка заканчивается до вашего отъезда';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Водительское удостоверение истекает до отъезда';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count путешественника',
+      many: '$count путешественников',
+      few: '$count путешественника',
+      one: '1 путешественник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'за $days дня до отъезда',
+      many: 'за $days дней до отъезда',
+      few: 'за $days дня до отъезда',
+      one: 'за 1 день до отъезда',
+    );
+    return 'Срок «$name» истекает $date, $_temp0.';
+  }
 }

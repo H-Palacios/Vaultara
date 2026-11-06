@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Жакында {name} жаңыладыңыз, азыр көңүл бурууну талап кылган эч нерсе жок. Кийинкиси: {next}, {date} күнү.",
   "smartInsightRenewedNoNextBody": "Жакында {name} жаңыладыңыз, азыр көңүл бурууну талап кылган эч нерсе жок.",
   "smartInsightMoreHeading": "Дагы текшере турган нерселер",
-  "smartInsightMoreCount": "{count, plural, one{Дагы {count}} other{Дагы {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Буларды бүтүргөндө дагы 1 көрүнөт} other{Буларды бүтүргөндө дагы {count} көрүнөт}}",
   "planTabIndividual": "Жеке",
   "planTabBusiness": "Бизнес",
   "planGetPremium": "Premium алуу",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Азырынча жазуулар жок",
   "recordChangedRecently": "{days, plural, =0{Бүгүн {name} өзгөрттү} =1{Кечээ {name} өзгөрттү} other{{days} күн мурун {name} өзгөрттү}}",
   "notifSharedOnlyMineTitle": "Мен кошкон жазуулар гана",
-  "notifSharedOnlyMineSubtitle": "Мен кошкон жалпы жазуулар жөнүндө гана эскерт. Башкалар кошкон жазуулар колдонмодо көрүнө берет."
+  "notifSharedOnlyMineSubtitle": "Мен кошкон жалпы жазуулар жөнүндө гана эскерт. Башкалар кошкон жазуулар колдонмодо көрүнө берет.",
+  "travelPassportExpiresBeforeLeaving": "Паспорттун мөөнөтү жолго чыкканга чейин бүтөт",
+  "travelVisaExpiresBeforeLeaving": "Визанын мөөнөтү жолго чыкканга чейин бүтөт",
+  "travelInsuranceEndsBeforeLeaving": "Саякат камсыздандыруусу жолго чыкканга чейин бүтөт",
+  "travelLicenceExpiresBeforeLeaving": "Айдоочулук күбөлүктүн мөөнөтү жолго чыкканга чейин бүтөт",
+  "travelTravellersCount": "{count, plural, =1{1 саякатчы} other{{count} саякатчы}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} мөөнөтү {date} бүтөт, {days, plural, =1{жөнөгөнгө 1 күн калганда} other{жөнөгөнгө {days} күн калганда}}."
 }

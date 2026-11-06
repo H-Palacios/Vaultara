@@ -3072,7 +3072,8 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'နောက်ထပ် $count ခု',
+      other: 'ဤအရာများကို ဖြေရှင်းပြီးလျှင် နောက်ထပ် $count ခု ပေါ်လာမည်',
+      one: 'ဤအရာများကို ဖြေရှင်းပြီးလျှင် နောက်ထပ် 1 ခု ပေါ်လာမည်',
     );
     return '$_temp0';
   }
@@ -9005,4 +9006,38 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'ကျွန်ုပ်ထည့်ထားသော မျှဝေမှတ်တမ်းများအတွက်သာ သတိပေးပါ။ အခြားသူများထည့်ထားသော မှတ်တမ်းများ အက်ပ်တွင် ဆက်ပြနေမည်။';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'သင်ခရီးမထွက်မီ နိုင်ငံကူးလက်မှတ် သက်တမ်းကုန်မည်';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'သင်ခရီးမထွက်မီ ဗီဇာ သက်တမ်းကုန်မည်';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'သင်ခရီးမထွက်မီ ခရီးသွားအာမခံ ပြီးဆုံးမည်';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'သင်ခရီးမထွက်မီ ယာဉ်မောင်းလိုင်စင် သက်တမ်းကုန်မည်';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ခရီးသည် $count ဦး',
+      one: 'ခရီးသည် 1 ဦး',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'သင်မထွက်ခွာမီ $days ရက်',
+      one: 'သင်မထွက်ခွာမီ 1 ရက်',
+    );
+    return '$name သည် $date တွင် သက်တမ်းကုန်မည်၊ $_temp0။';
+  }
 }

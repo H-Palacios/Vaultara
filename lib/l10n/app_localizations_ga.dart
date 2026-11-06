@@ -3166,11 +3166,8 @@ class AppLocalizationsGa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Móide $count eile',
-      many: 'Móide $count eile',
-      few: 'Móide $count eile',
-      two: 'Móide $count eile',
-      one: 'Móide $count eile',
+      other: 'Taispeánfar $count eile nuair a dhéanann tú iad seo',
+      one: 'Taispeánfar 1 eile nuair a dhéanann tú iad seo',
     );
     return '$_temp0';
   }
@@ -9275,4 +9272,38 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Cuir i gcuimhne dom na taifid roinnte a chuir mé féin leis amháin. Feictear taifid daoine eile san aip fós.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Éagann an pas sula n-imeoidh tú';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Éagann an víosa sula n-imeoidh tú';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Críochnaíonn an t-árachas taistil sula n-imeoidh tú';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Éagann an ceadúnas tiomána sula n-imeoidh tú';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count taistealaí',
+      one: '1 taistealaí',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days lá sula n-imíonn tú',
+      one: 'lá amháin sula n-imíonn tú',
+    );
+    return 'Éagann $name ar $date, $_temp0.';
+  }
 }

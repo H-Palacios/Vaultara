@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "អ្នកបានបន្តសុពលភាព {name} ថ្មីៗនេះ ហើយឥឡូវនេះគ្មានអ្វីត្រូវការការយកចិត្តទុកដាក់ទេ។ បន្ទាប់គឺ {next} នៅ {date}។",
   "smartInsightRenewedNoNextBody": "អ្នកបានបន្តសុពលភាព {name} ថ្មីៗនេះ ហើយឥឡូវនេះគ្មានអ្វីត្រូវការការយកចិត្តទុកដាក់ទេ។",
   "smartInsightMoreHeading": "របស់ផ្សេងទៀតដែលត្រូវពិនិត្យ",
-  "smartInsightMoreCount": "{count, plural, other{និងបន្ថែមទៀត {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{នៅសល់ 1 ទៀតនឹងបង្ហាញពេលអ្នកដោះស្រាយទាំងនេះ} other{នៅសល់ {count} ទៀតនឹងបង្ហាញពេលអ្នកដោះស្រាយទាំងនេះ}}",
   "planTabIndividual": "បុគ្គល",
   "planTabBusiness": "អាជីវកម្ម",
   "planGetPremium": "ទទួលយក Premium",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "មិនទាន់មានកំណត់ត្រានៅឡើយទេ។",
   "recordChangedRecently": "{days, plural, =0{បានកែដោយ {name} ថ្ងៃនេះ} =1{បានកែដោយ {name} ម្សិលមិញ} other{បានកែដោយ {name} {days} ថ្ងៃមុន}}",
   "notifSharedOnlyMineTitle": "តែកំណត់ត្រាដែលខ្ញុំបានបន្ថែម",
-  "notifSharedOnlyMineSubtitle": "រំលឹកខ្ញុំតែអំពីកំណត់ត្រាដែលបានចែករំលែកដែលខ្ញុំបានបន្ថែម។ កំណត់ត្រាដែលអ្នកផ្សេងបានបន្ថែមនៅតែបង្ហាញក្នុងកម្មវិធី។"
+  "notifSharedOnlyMineSubtitle": "រំលឹកខ្ញុំតែអំពីកំណត់ត្រាដែលបានចែករំលែកដែលខ្ញុំបានបន្ថែម។ កំណត់ត្រាដែលអ្នកផ្សេងបានបន្ថែមនៅតែបង្ហាញក្នុងកម្មវិធី។",
+  "travelPassportExpiresBeforeLeaving": "លិខិតឆ្លងដែនផុតកំណត់មុនអ្នកចេញដំណើរ",
+  "travelVisaExpiresBeforeLeaving": "ទិដ្ឋាការផុតកំណត់មុនអ្នកចេញដំណើរ",
+  "travelInsuranceEndsBeforeLeaving": "ធានារ៉ាប់រងការធ្វើដំណើរបញ្ចប់មុនអ្នកចេញដំណើរ",
+  "travelLicenceExpiresBeforeLeaving": "ប័ណ្ណបើកបរផុតកំណត់មុនអ្នកចេញដំណើរ",
+  "travelTravellersCount": "{count, plural, =1{អ្នកដំណើរ 1 នាក់} other{អ្នកដំណើរ {count} នាក់}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ផុតកំណត់នៅ {date} {days, plural, =1{1 ថ្ងៃមុនអ្នកចេញដំណើរ} other{{days} ថ្ងៃមុនអ្នកចេញដំណើរ}}។"
 }

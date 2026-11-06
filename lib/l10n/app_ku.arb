@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Te vê dawiyê {name} nû kir û niha tiştek bala te nahewîne. Ya din {next} e, di {date} de.",
   "smartInsightRenewedNoNextBody": "Te vê dawiyê {name} nû kir û niha tiştek bala te nahewîne.",
   "smartInsightMoreHeading": "Tiştên din ên kontrolkirinê",
-  "smartInsightMoreCount": "{count, plural, one{{count} yên din} other{{count} yên din}}",
+  "smartInsightMoreCount": "{count, plural, =1{Dema van çareser bikî, 1 din xuya dibe} other{Dema van çareser bikî, {count} yên din xuya dibin}}",
   "planTabIndividual": "Kesane",
   "planTabBusiness": "Karsazî",
   "planGetPremium": "Premium bistîne",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Hîn tu tomar tune ne",
   "recordChangedRecently": "{days, plural, =0{Îro ji aliyê {name} ve hat guhertin} =1{Doh ji aliyê {name} ve hat guhertin} other{{days} roj berê ji aliyê {name} ve hat guhertin}}",
   "notifSharedOnlyMineTitle": "Tenê tomarên ku min zêde kirine",
-  "notifSharedOnlyMineSubtitle": "Tenê ji bo tomarên hevpar ên ku min zêde kirine bîra min bîne. Tomarên ku yên din zêde kirine hîn di sepanê de xuya dibin."
+  "notifSharedOnlyMineSubtitle": "Tenê ji bo tomarên hevpar ên ku min zêde kirine bîra min bîne. Tomarên ku yên din zêde kirine hîn di sepanê de xuya dibin.",
+  "travelPassportExpiresBeforeLeaving": "Pasaport berî çûyîna te bidawî dibe",
+  "travelVisaExpiresBeforeLeaving": "Vîze berî çûyîna te bidawî dibe",
+  "travelInsuranceEndsBeforeLeaving": "Sîgorteya rêwîtiyê berî çûyîna te diqede",
+  "travelLicenceExpiresBeforeLeaving": "Ehlîyeta ajotinê berî çûyîna te bidawî dibe",
+  "travelTravellersCount": "{count, plural, =1{1 rêwî} other{{count} rêwî}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} di {date} de bidawî dibe, {days, plural, =1{1 roj berî çûyîna te} other{{days} roj berî çûyîna te}}."
 }

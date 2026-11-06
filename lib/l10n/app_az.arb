@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "{name} üçün müddəti bu yaxınlarda uzatmısınız və hazırda diqqət tələb edən heç nə yoxdur. Növbəti: {next}, {date}.",
   "smartInsightRenewedNoNextBody": "{name} üçün müddəti bu yaxınlarda uzatmısınız və hazırda diqqət tələb edən heç nə yoxdur.",
   "smartInsightMoreHeading": "Yoxlanılacaq digər məsələlər",
-  "smartInsightMoreCount": "{count, plural, one{Daha {count} məsələ} other{Daha {count} məsələ}}",
+  "smartInsightMoreCount": "{count, plural, =1{Bunları həll etdikcə daha 1 görünəcək} other{Bunları həll etdikcə daha {count} görünəcək}}",
   "planTabIndividual": "Fərdi",
   "planTabBusiness": "Biznes",
   "planGetPremium": "Premium əldə et",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "Hələ sənəd yoxdur",
   "recordChangedRecently": "{days, plural, =0{Bu gün {name} dəyişdi} =1{Dünən {name} dəyişdi} other{{days} gün əvvəl {name} dəyişdi}}",
   "notifSharedOnlyMineTitle": "Yalnız əlavə etdiyim sənədlər",
-  "notifSharedOnlyMineSubtitle": "Yalnız əlavə etdiyim paylaşılan sənədlər barədə xatırlat. Başqalarının əlavə etdiyi sənədlər tətbiqdə görünməyə davam edir."
+  "notifSharedOnlyMineSubtitle": "Yalnız əlavə etdiyim paylaşılan sənədlər barədə xatırlat. Başqalarının əlavə etdiyi sənədlər tətbiqdə görünməyə davam edir.",
+  "travelPassportExpiresBeforeLeaving": "Pasportun müddəti yola düşməzdən əvvəl bitir",
+  "travelVisaExpiresBeforeLeaving": "Vizanın müddəti yola düşməzdən əvvəl bitir",
+  "travelInsuranceEndsBeforeLeaving": "Səyahət sığortası yola düşməzdən əvvəl bitir",
+  "travelLicenceExpiresBeforeLeaving": "Sürücülük vəsiqəsinin müddəti yola düşməzdən əvvəl bitir",
+  "travelTravellersCount": "{count, plural, =1{1 səyahətçi} other{{count} səyahətçi}}",
+  "travelDetailExpiresDaysBeforeLeaving": "“{name}” sənədinin müddəti {date} tarixində, {days, plural, =1{yola düşməzdən 1 gün əvvəl} other{yola düşməzdən {days} gün əvvəl}} bitir."
 }

@@ -3086,8 +3086,8 @@ class AppLocalizationsFil extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Dagdag pang $count',
-      one: 'Dagdag pang $count',
+      other: 'May $count pang lalabas kapag natapos mo ang mga ito',
+      one: 'May 1 pang lalabas kapag natapos mo ang mga ito',
     );
     return '$_temp0';
   }
@@ -9065,4 +9065,38 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Mag-e-expire ang passport bago ka umalis';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Mag-e-expire ang visa bago ka umalis';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Matatapos ang travel insurance bago ka umalis';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Mag-e-expire ang lisensya sa pagmamaneho bago ka umalis';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count biyahero',
+      one: '1 biyahero',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days araw bago ka umalis',
+      one: '1 araw bago ka umalis',
+    );
+    return 'Mag-e-expire ang $name sa $date, $_temp0.';
+  }
 }

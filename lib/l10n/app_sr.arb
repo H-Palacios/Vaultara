@@ -1088,7 +1088,7 @@
   "smartInsightRenewedBody": "Недавно сте обновили {name} и ништа тренутно не тражи вашу пажњу. Следеће је {next} дана {date}.",
   "smartInsightRenewedNoNextBody": "Недавно сте обновили {name} и ништа тренутно не тражи вашу пажњу.",
   "smartInsightMoreHeading": "Још ствари за проверу",
-  "smartInsightMoreCount": "{count, plural, one{Још {count}} few{Још {count}} other{Још {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Још 1 ће се приказати кад решите ове} other{Још {count} ће се приказати кад решите ове}}",
   "planTabIndividual": "Појединачни",
   "planTabBusiness": "Пословни",
   "planGetPremium": "Набави Premium",
@@ -3415,5 +3415,11 @@
   "groupsNoRecordsSection": "Још нема записа",
   "recordChangedRecently": "{days, plural, =0{{name} изменио/ла данас} =1{{name} изменио/ла јуче} few{{name} изменио/ла пре {days} дана} other{{name} изменио/ла пре {days} дана}}",
   "notifSharedOnlyMineTitle": "Само записи које сам додао/ла",
-  "notifSharedOnlyMineSubtitle": "Подсећај ме само на дељене записе које сам додао/ла. Записи које су додали други и даље се виде у апликацији."
+  "notifSharedOnlyMineSubtitle": "Подсећај ме само на дељене записе које сам додао/ла. Записи које су додали други и даље се виде у апликацији.",
+  "travelPassportExpiresBeforeLeaving": "Пасош истиче пре поласка",
+  "travelVisaExpiresBeforeLeaving": "Виза истиче пре поласка",
+  "travelInsuranceEndsBeforeLeaving": "Путно осигурање истиче пре поласка",
+  "travelLicenceExpiresBeforeLeaving": "Возачка дозвола истиче пре поласка",
+  "travelTravellersCount": "{count, plural, =1{1 путник} few{{count} путника} other{{count} путника}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} истиче {date}, {days, plural, =1{1 дан пре поласка} few{{days} дана пре поласка} other{{days} дана пре поласка}}."
 }

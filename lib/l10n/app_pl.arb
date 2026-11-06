@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Rekord {name} został niedawno odnowiony i na razie nic nie wymaga uwagi. Następny to {next}, który wygasa {date}.",
   "smartInsightRenewedNoNextBody": "Rekord {name} został niedawno odnowiony i na razie nic nie wymaga uwagi.",
   "smartInsightMoreHeading": "Więcej do sprawdzenia",
-  "smartInsightMoreCount": "{count, plural, one{Jeszcze {count}} few{Jeszcze {count}} many{Jeszcze {count}} other{Jeszcze {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Pojawi się jeszcze 1, gdy załatwisz te} other{Pojawi się jeszcze {count}, gdy załatwisz te}}",
   "planTabIndividual": "Indywidualny",
   "planTabBusiness": "Firmowy",
   "planGetPremium": "Wybierz Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Brak rekordów",
   "recordChangedRecently": "{days, plural, =0{Zmienione przez {name} dzisiaj} =1{Zmienione przez {name} wczoraj} few{Zmienione przez {name} {days} dni temu} many{Zmienione przez {name} {days} dni temu} other{Zmienione przez {name} {days} dni temu}}",
   "notifSharedOnlyMineTitle": "Tylko rekordy dodane przeze mnie",
-  "notifSharedOnlyMineSubtitle": "Przypominaj mi tylko o udostępnionych rekordach, które dodałem. Rekordy dodane przez innych nadal widać w aplikacji."
+  "notifSharedOnlyMineSubtitle": "Przypominaj mi tylko o udostępnionych rekordach, które dodałem. Rekordy dodane przez innych nadal widać w aplikacji.",
+  "travelPassportExpiresBeforeLeaving": "Paszport wygasa przed wyjazdem",
+  "travelVisaExpiresBeforeLeaving": "Wiza wygasa przed wyjazdem",
+  "travelInsuranceEndsBeforeLeaving": "Ubezpieczenie podróżne kończy się przed wyjazdem",
+  "travelLicenceExpiresBeforeLeaving": "Prawo jazdy wygasa przed wyjazdem",
+  "travelTravellersCount": "{count, plural, =1{1 podróżny} few{{count} podróżnych} many{{count} podróżnych} other{{count} podróżnych}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} wygasa {date}, {days, plural, =1{1 dzień przed wyjazdem} few{{days} dni przed wyjazdem} many{{days} dni przed wyjazdem} other{{days} dnia przed wyjazdem}}."
 }

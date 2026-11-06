@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "O sọ {name} di tuntun láìpẹ́ yìí, kò sì sí nǹkan tó nílò àkíyèsí rẹ báyìí. Èyí tó kàn ni {next} ní {date}.",
   "smartInsightRenewedNoNextBody": "O sọ {name} di tuntun láìpẹ́ yìí, kò sì sí nǹkan tó nílò àkíyèsí rẹ báyìí.",
   "smartInsightMoreHeading": "Àwọn nǹkan míì láti ṣàyẹ̀wò",
-  "smartInsightMoreCount": "{count, plural, other{Àti {count} míì}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 míì yóò hàn nígbà tí o bá parí ìwọ̀nyí} other{{count} míì yóò hàn nígbà tí o bá parí ìwọ̀nyí}}",
   "planTabIndividual": "Ẹnìkọ̀ọ̀kan",
   "planTabBusiness": "Iṣòwò",
   "planGetPremium": "Gba Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Ko si awọn igbasilẹ sibẹsibẹ",
   "recordChangedRecently": "{days, plural, =0{{name} yí i padà lónìí} =1{{name} yí i padà lánàá} other{{name} yí i padà ní ọjọ́ {days} sẹ́yìn}}",
   "notifSharedOnlyMineTitle": "Àwọn igbasilẹ tí mo fi kún nìkan",
-  "notifSharedOnlyMineSubtitle": "Rán mi létí nípa àwọn igbasilẹ tí a pín tí mo fi kún nìkan. Àwọn igbasilẹ tí àwọn mìíràn fi kún ṣì ń hàn nínú áàpù."
+  "notifSharedOnlyMineSubtitle": "Rán mi létí nípa àwọn igbasilẹ tí a pín tí mo fi kún nìkan. Àwọn igbasilẹ tí àwọn mìíràn fi kún ṣì ń hàn nínú áàpù.",
+  "travelPassportExpiresBeforeLeaving": "Ìwé irinna ń parí kí o tó lọ",
+  "travelVisaExpiresBeforeLeaving": "Fisa ń parí kí o tó lọ",
+  "travelInsuranceEndsBeforeLeaving": "Ìdánilójú ìrìn àjò ń parí kí o tó lọ",
+  "travelLicenceExpiresBeforeLeaving": "Ìwé-aṣẹ awakọ̀ ń parí kí o tó lọ",
+  "travelTravellersCount": "{count, plural, =1{Arìnrìn-àjò 1} other{Arìnrìn-àjò {count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ń parí ní {date}, {days, plural, =1{ọjọ́ 1 kí o tó lọ} other{ọjọ́ {days} kí o tó lọ}}."
 }

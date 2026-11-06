@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "Siz yaqinda {name} muddatini uzaytirdingiz va hozir hech narsa eʼtiboringizni talab qilmaydi. Keyingisi: {next}, {date}.",
   "smartInsightRenewedNoNextBody": "Siz yaqinda {name} muddatini uzaytirdingiz va hozir hech narsa eʼtiboringizni talab qilmaydi.",
   "smartInsightMoreHeading": "Tekshiriladigan yana narsalar",
-  "smartInsightMoreCount": "{count, plural, one{Yana {count} ta} other{Yana {count} ta}}",
+  "smartInsightMoreCount": "{count, plural, =1{Bularni hal qilsangiz, yana 1 ta chiqadi} other{Bularni hal qilsangiz, yana {count} ta chiqadi}}",
   "planTabIndividual": "Yakka",
   "planTabBusiness": "Business",
   "planGetPremium": "Premiumga oʻtish",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "Hozircha yozuvlar yoʻq",
   "recordChangedRecently": "{days, plural, =0{Bugun {name} oʻzgartirdi} =1{Kecha {name} oʻzgartirdi} other{{days} kun oldin {name} oʻzgartirdi}}",
   "notifSharedOnlyMineTitle": "Faqat men qoʻshgan yozuvlar",
-  "notifSharedOnlyMineSubtitle": "Faqat men qoʻshgan umumiy yozuvlar haqida eslat. Boshqalar qoʻshgan yozuvlar ilovada koʻrinib turadi."
+  "notifSharedOnlyMineSubtitle": "Faqat men qoʻshgan umumiy yozuvlar haqida eslat. Boshqalar qoʻshgan yozuvlar ilovada koʻrinib turadi.",
+  "travelPassportExpiresBeforeLeaving": "Pasport muddati jo‘nashingizdan oldin tugaydi",
+  "travelVisaExpiresBeforeLeaving": "Viza muddati jo‘nashingizdan oldin tugaydi",
+  "travelInsuranceEndsBeforeLeaving": "Sayohat sugʻurtasi jo‘nashingizdan oldin tugaydi",
+  "travelLicenceExpiresBeforeLeaving": "Haydovchilik guvohnomasi muddati jo‘nashingizdan oldin tugaydi",
+  "travelTravellersCount": "{count, plural, =1{1 sayohatchi} other{{count} sayohatchi}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} muddati {date} kuni tugaydi, {days, plural, =1{joʻnashingizdan 1 kun oldin} other{joʻnashingizdan {days} kun oldin}}."
 }

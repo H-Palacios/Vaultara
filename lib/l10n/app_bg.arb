@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "Наскоро подновихте „{name}“ и нищо не изисква вниманието ви в момента. Следва „{next}“ на {date}.",
   "smartInsightRenewedNoNextBody": "Наскоро подновихте „{name}“ и нищо не изисква вниманието ви в момента.",
   "smartInsightMoreHeading": "Още неща за проверка",
-  "smartInsightMoreCount": "{count, plural, one{Още {count}} other{Още {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Още 1 ще се покаже, като приключите тези} other{Още {count} ще се покажат, като приключите тези}}",
   "planTabIndividual": "Индивидуален",
   "planTabBusiness": "Business",
   "planGetPremium": "Вземете Premium",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "Все още няма записи",
   "recordChangedRecently": "{days, plural, =0{Променено от {name} днес} =1{Променено от {name} вчера} other{Променено от {name} преди {days} дни}}",
   "notifSharedOnlyMineTitle": "Само записите, които добавих",
-  "notifSharedOnlyMineSubtitle": "Напомняй ми само за споделените записи, които съм добавил. Записите на другите остават видими в приложението."
+  "notifSharedOnlyMineSubtitle": "Напомняй ми само за споделените записи, които съм добавил. Записите на другите остават видими в приложението.",
+  "travelPassportExpiresBeforeLeaving": "Паспортът изтича преди заминаването ви",
+  "travelVisaExpiresBeforeLeaving": "Визата изтича преди заминаването ви",
+  "travelInsuranceEndsBeforeLeaving": "Пътническата застраховка приключва преди заминаването ви",
+  "travelLicenceExpiresBeforeLeaving": "Шофьорската книжка изтича преди заминаването ви",
+  "travelTravellersCount": "{count, plural, =1{1 пътуващ} other{{count} пътуващи}}",
+  "travelDetailExpiresDaysBeforeLeaving": "„{name}“ изтича на {date}, {days, plural, =1{1 ден преди да заминете} other{{days} дни преди да заминете}}."
 }

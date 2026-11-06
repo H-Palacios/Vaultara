@@ -47,6 +47,10 @@ class TravelText {
     }
   }
 
+  /// True when the document runs out before the trip starts, so the title
+  /// says "before you leave", like the line under it.
+  static bool _early(TravelFinding f) => (f.days ?? 0) < 0;
+
   static String title(AppLocalizations loc, TravelFinding f) {
     switch (f.kind) {
       case TravelFindingKind.passportOk:
@@ -54,25 +58,33 @@ class TravelText {
       case TravelFindingKind.passportTooShort:
         return loc.travelPassportTooShort;
       case TravelFindingKind.passportExpiresDuringTrip:
-        return loc.travelPassportExpiresDuringTrip;
+        return _early(f)
+            ? loc.travelPassportExpiresBeforeLeaving
+            : loc.travelPassportExpiresDuringTrip;
       case TravelFindingKind.noPassport:
         return loc.travelNoPassport;
       case TravelFindingKind.visaOk:
         return loc.travelVisaOk;
       case TravelFindingKind.visaExpiresBeforeReturn:
-        return loc.travelVisaExpiresBeforeReturn;
+        return _early(f)
+            ? loc.travelVisaExpiresBeforeLeaving
+            : loc.travelVisaExpiresBeforeReturn;
       case TravelFindingKind.noVisa:
         return loc.travelNoVisa;
       case TravelFindingKind.insuranceOk:
         return loc.travelInsuranceOk;
       case TravelFindingKind.insuranceEndsDuringTrip:
-        return loc.travelInsuranceEndsDuringTrip;
+        return _early(f)
+            ? loc.travelInsuranceEndsBeforeLeaving
+            : loc.travelInsuranceEndsDuringTrip;
       case TravelFindingKind.noTravelInsurance:
         return loc.travelNoInsurance;
       case TravelFindingKind.licenceOk:
         return loc.travelLicenceOk;
       case TravelFindingKind.licenceExpiresDuringTrip:
-        return loc.travelLicenceExpiresDuringTrip;
+        return _early(f)
+            ? loc.travelLicenceExpiresBeforeLeaving
+            : loc.travelLicenceExpiresDuringTrip;
       case TravelFindingKind.noLicence:
         return loc.travelNoLicence;
       case TravelFindingKind.otherExpiresDuringTrip:
@@ -128,9 +140,10 @@ class TravelText {
         if (record == null) return '';
         final days = f.days ?? Dates.daysBetween(departure, record.expiryDate);
         if (days < 0) {
-          return loc.travelDetailExpiresBeforeLeaving(
+          return loc.travelDetailExpiresDaysBeforeLeaving(
             record.name,
             date(context, record.expiryDate),
+            -days,
           );
         }
         return loc.travelDetailExpiresDuringTrip(

@@ -3088,8 +3088,8 @@ class AppLocalizationsHa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Da ƙarin $count',
-      one: 'Da ƙarin $count',
+      other: 'Ƙarin $count za su bayyana idan ka gama waɗannan',
+      one: 'Ƙarin 1 zai bayyana idan ka gama waɗannan',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Ka tuna min rikodin da aka raba waɗanda na ƙara kawai. Rikodin da wasu suka ƙara suna nan a cikin manhajar.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Fasfo zai ƙare kafin ka tafi';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Biza za ta ƙare kafin ka tafi';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Inshorar tafiya za ta ƙare kafin ka tafi';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Lasin tuƙi zai ƙare kafin ka tafi';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Matafiya $count',
+      one: 'Matafiyi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'kwanaki $days kafin ka tashi',
+      one: 'kwana 1 kafin ka tashi',
+    );
+    return '$name zai ƙare a $date, $_temp0.';
+  }
 }

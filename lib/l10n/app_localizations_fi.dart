@@ -3088,8 +3088,8 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Lisäksi $count muuta',
-      one: 'Lisäksi $count muu',
+      other: 'Vielä $count näkyy, kun hoidat nämä',
+      one: 'Vielä 1 näkyy, kun hoidat nämä',
     );
     return '$_temp0';
   }
@@ -9074,4 +9074,38 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Muistuta minua vain lisäämistäni jaetuista tietueista. Muiden lisäämät tietueet näkyvät edelleen sovelluksessa.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Passi vanhenee ennen lähtöäsi';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viisumi vanhenee ennen lähtöäsi';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Matkavakuutus päättyy ennen lähtöäsi';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ajokortti vanhenee ennen lähtöäsi';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count matkustajaa',
+      one: '1 matkustaja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days päivää ennen lähtöäsi',
+      one: '1 päivä ennen lähtöäsi',
+    );
+    return '$name vanhenee $date, $_temp0.';
+  }
 }

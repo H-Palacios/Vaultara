@@ -1126,7 +1126,7 @@
   "smartInsightRenewedBody": "Kamakailan mong na-renew ang {name}, at wala nang kailangang asikasuhin ngayon. Susunod ang {next} sa {date}.",
   "smartInsightRenewedNoNextBody": "Kamakailan mong na-renew ang {name}, at wala nang kailangang asikasuhin ngayon.",
   "smartInsightMoreHeading": "Iba pang dapat tingnan",
-  "smartInsightMoreCount": "{count, plural, one{Dagdag pang {count}} other{Dagdag pang {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{May 1 pang lalabas kapag natapos mo ang mga ito} other{May {count} pang lalabas kapag natapos mo ang mga ito}}",
   "planTabIndividual": "Indibidwal",
   "planTabBusiness": "Negosyo",
   "planGetPremium": "Kunin ang Premium",
@@ -3453,5 +3453,11 @@
   "groupsNoRecordsSection": "Wala pang mga rekord",
   "recordChangedRecently": "{days, plural, =0{Binago ni {name} ngayon} =1{Binago ni {name} kahapon} other{Binago ni {name} {days} araw na ang nakalipas}}",
   "notifSharedOnlyMineTitle": "Mga rekord na idinagdag ko lang",
-  "notifSharedOnlyMineSubtitle": "Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba."
+  "notifSharedOnlyMineSubtitle": "Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba.",
+  "travelPassportExpiresBeforeLeaving": "Mag-e-expire ang passport bago ka umalis",
+  "travelVisaExpiresBeforeLeaving": "Mag-e-expire ang visa bago ka umalis",
+  "travelInsuranceEndsBeforeLeaving": "Matatapos ang travel insurance bago ka umalis",
+  "travelLicenceExpiresBeforeLeaving": "Mag-e-expire ang lisensya sa pagmamaneho bago ka umalis",
+  "travelTravellersCount": "{count, plural, =1{1 biyahero} other{{count} biyahero}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Mag-e-expire ang {name} sa {date}, {days, plural, =1{1 araw bago ka umalis} other{{days} araw bago ka umalis}}."
 }

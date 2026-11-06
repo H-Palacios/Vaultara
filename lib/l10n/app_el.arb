@@ -1121,7 +1121,7 @@
   "smartInsightRenewedBody": "Ανανεώσατε πρόσφατα το {name} και τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή. Επόμενο είναι το {next} στις {date}.",
   "smartInsightRenewedNoNextBody": "Ανανεώσατε πρόσφατα το {name} και τίποτα δεν χρειάζεται την προσοχή σας αυτή τη στιγμή.",
   "smartInsightMoreHeading": "Περισσότερα προς έλεγχο",
-  "smartInsightMoreCount": "{count, plural, one{Και άλλο {count}} other{Και άλλα {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Άλλο 1 θα εμφανιστεί όταν ολοκληρώσετε αυτά} other{Άλλα {count} θα εμφανιστούν όταν ολοκληρώσετε αυτά}}",
   "planTabIndividual": "Ατομικό",
   "planTabBusiness": "Επαγγελματικό",
   "planGetPremium": "Αποκτήστε το Premium",
@@ -3448,5 +3448,11 @@
   "groupsNoRecordsSection": "Δεν υπάρχουν εγγραφές ακόμα",
   "recordChangedRecently": "{days, plural, =0{Άλλαξε από {name} σήμερα} =1{Άλλαξε από {name} χθες} other{Άλλαξε από {name} πριν από {days} ημέρες}}",
   "notifSharedOnlyMineTitle": "Μόνο εγγραφές που πρόσθεσα",
-  "notifSharedOnlyMineSubtitle": "Υπενθύμισέ μου μόνο τις κοινόχρηστες εγγραφές που πρόσθεσα. Οι εγγραφές των άλλων εξακολουθούν να εμφανίζονται στην εφαρμογή."
+  "notifSharedOnlyMineSubtitle": "Υπενθύμισέ μου μόνο τις κοινόχρηστες εγγραφές που πρόσθεσα. Οι εγγραφές των άλλων εξακολουθούν να εμφανίζονται στην εφαρμογή.",
+  "travelPassportExpiresBeforeLeaving": "Το διαβατήριο λήγει πριν φύγετε",
+  "travelVisaExpiresBeforeLeaving": "Η βίζα λήγει πριν φύγετε",
+  "travelInsuranceEndsBeforeLeaving": "Η ταξιδιωτική ασφάλιση λήγει πριν φύγετε",
+  "travelLicenceExpiresBeforeLeaving": "Το δίπλωμα οδήγησης λήγει πριν φύγετε",
+  "travelTravellersCount": "{count, plural, =1{1 ταξιδιώτης} other{{count} ταξιδιώτες}}",
+  "travelDetailExpiresDaysBeforeLeaving": "Το στοιχείο {name} λήγει στις {date}, {days, plural, =1{1 ημέρα πριν φύγετε} other{{days} ημέρες πριν φύγετε}}."
 }

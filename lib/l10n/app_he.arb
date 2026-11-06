@@ -1119,7 +1119,7 @@
   "smartInsightRenewedBody": "חידשת לאחרונה את {name}, ושום דבר לא דורש את תשומת לבך כרגע. הבא בתור הוא {next} ב־{date}.",
   "smartInsightRenewedNoNextBody": "חידשת לאחרונה את {name}, ושום דבר לא דורש את תשומת לבך כרגע.",
   "smartInsightMoreHeading": "עוד דברים לבדוק",
-  "smartInsightMoreCount": "{count, plural, one{ועוד {count}} other{ועוד {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{עוד אחד יופיע כשתטפל באלה} other{עוד {count} יופיעו כשתטפל באלה}}",
   "planTabIndividual": "אישי",
   "planTabBusiness": "עסקי",
   "planGetPremium": "קבל Premium",
@@ -3446,5 +3446,11 @@
   "groupsNoRecordsSection": "אין רשומות עדיין",
   "recordChangedRecently": "{days, plural, =0{שונה על ידי {name} היום} =1{שונה על ידי {name} אתמול} two{שונה על ידי {name} לפני יומיים} other{שונה על ידי {name} לפני {days} ימים}}",
   "notifSharedOnlyMineTitle": "רק רשומות שהוספתי",
-  "notifSharedOnlyMineSubtitle": "להזכיר לי רק על רשומות משותפות שהוספתי. רשומות שאחרים הוסיפו עדיין מופיעות באפליקציה."
+  "notifSharedOnlyMineSubtitle": "להזכיר לי רק על רשומות משותפות שהוספתי. רשומות שאחרים הוסיפו עדיין מופיעות באפליקציה.",
+  "travelPassportExpiresBeforeLeaving": "תוקף הדרכון פג לפני שתצא לדרך",
+  "travelVisaExpiresBeforeLeaving": "תוקף האשרה פג לפני שתצא לדרך",
+  "travelInsuranceEndsBeforeLeaving": "ביטוח הנסיעות מסתיים לפני שתצא לדרך",
+  "travelLicenceExpiresBeforeLeaving": "תוקף רישיון הנהיגה פג לפני שתצא לדרך",
+  "travelTravellersCount": "{count, plural, =1{נוסע אחד} =2{2 נוסעים} other{{count} נוסעים}}",
+  "travelDetailExpiresDaysBeforeLeaving": "התוקף של {name} פג ב־{date}, {days, plural, =1{יום אחד לפני היציאה} =2{יומיים לפני היציאה} other{{days} ימים לפני היציאה}}."
 }

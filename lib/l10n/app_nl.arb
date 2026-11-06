@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Je hebt {name} onlangs vernieuwd, en er is op dit moment niets waar je aandacht aan hoeft te geven. Hierna komt {next} op {date}.",
   "smartInsightRenewedNoNextBody": "Je hebt {name} onlangs vernieuwd, en er is op dit moment niets waar je aandacht aan hoeft te geven.",
   "smartInsightMoreHeading": "Meer dingen om te controleren",
-  "smartInsightMoreCount": "{count, plural, one{Nog {count} andere} other{Nog {count} andere}}",
+  "smartInsightMoreCount": "{count, plural, =1{Er verschijnt nog 1 als je deze hebt afgehandeld} other{Er verschijnen nog {count} als je deze hebt afgehandeld}}",
   "planTabIndividual": "Individueel",
   "planTabBusiness": "Zakelijk",
   "planGetPremium": "Premium nemen",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Nog geen records",
   "recordChangedRecently": "{days, plural, =0{Vandaag gewijzigd door {name}} =1{Gisteren gewijzigd door {name}} other{{days} dagen geleden gewijzigd door {name}}}",
   "notifSharedOnlyMineTitle": "Alleen records die ik heb toegevoegd",
-  "notifSharedOnlyMineSubtitle": "Herinner me alleen aan gedeelde records die ik heb toegevoegd. Records van anderen blijven zichtbaar in de app."
+  "notifSharedOnlyMineSubtitle": "Herinner me alleen aan gedeelde records die ik heb toegevoegd. Records van anderen blijven zichtbaar in de app.",
+  "travelPassportExpiresBeforeLeaving": "Paspoort verloopt voor je vertrek",
+  "travelVisaExpiresBeforeLeaving": "Visum verloopt voor je vertrek",
+  "travelInsuranceEndsBeforeLeaving": "Reisverzekering eindigt voor je vertrek",
+  "travelLicenceExpiresBeforeLeaving": "Rijbewijs verloopt voor je vertrek",
+  "travelTravellersCount": "{count, plural, =1{1 reiziger} other{{count} reizigers}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} verloopt op {date}, {days, plural, =1{1 dag voor je vertrek} other{{days} dagen voor je vertrek}}."
 }

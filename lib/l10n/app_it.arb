@@ -1119,7 +1119,7 @@
   "smartInsightRenewedBody": "Hai rinnovato da poco {name} e per ora nulla richiede la tua attenzione. Il prossimo è {next}, il {date}.",
   "smartInsightRenewedNoNextBody": "Hai rinnovato da poco {name} e per ora nulla richiede la tua attenzione.",
   "smartInsightMoreHeading": "Altre cose da controllare",
-  "smartInsightMoreCount": "{count, plural, one{Altri {count}} other{Altri {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Ne apparirà 1 altro quando avrai sistemato questi} other{Ne appariranno altri {count} quando avrai sistemato questi}}",
   "planTabIndividual": "Individuale",
   "planTabBusiness": "Business",
   "planGetPremium": "Ottieni Premium",
@@ -3446,5 +3446,11 @@
   "groupsNoRecordsSection": "Nessun record presente",
   "recordChangedRecently": "{days, plural, =0{Modificato da {name} oggi} =1{Modificato da {name} ieri} other{Modificato da {name} {days} giorni fa}}",
   "notifSharedOnlyMineTitle": "Solo i record che ho aggiunto",
-  "notifSharedOnlyMineSubtitle": "Ricordami solo i record condivisi che ho aggiunto. Quelli aggiunti dagli altri restano visibili nell'app."
+  "notifSharedOnlyMineSubtitle": "Ricordami solo i record condivisi che ho aggiunto. Quelli aggiunti dagli altri restano visibili nell'app.",
+  "travelPassportExpiresBeforeLeaving": "Il passaporto scade prima della partenza",
+  "travelVisaExpiresBeforeLeaving": "Il visto scade prima della partenza",
+  "travelInsuranceEndsBeforeLeaving": "L'assicurazione di viaggio finisce prima della partenza",
+  "travelLicenceExpiresBeforeLeaving": "La patente scade prima della partenza",
+  "travelTravellersCount": "{count, plural, =1{1 viaggiatore} other{{count} viaggiatori}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} scade il {date}, {days, plural, =1{1 giorno prima della partenza} other{{days} giorni prima della partenza}}."
 }

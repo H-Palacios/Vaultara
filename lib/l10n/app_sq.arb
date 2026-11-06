@@ -1128,7 +1128,7 @@
   "smartInsightRenewedBody": "Rinovuat së fundmi {name} dhe asgjë nuk ka nevojë për vëmendjen tuaj tani. Më pas vjen {next}, më {date}.",
   "smartInsightRenewedNoNextBody": "Rinovuat së fundmi {name} dhe asgjë nuk ka nevojë për vëmendjen tuaj tani.",
   "smartInsightMoreHeading": "Më shumë gjëra për të kontrolluar",
-  "smartInsightMoreCount": "{count, plural, one{Edhe {count} tjetër} other{Edhe {count} të tjera}}",
+  "smartInsightMoreCount": "{count, plural, =1{Edhe 1 shfaqet kur t'i zgjidhni këto} other{Edhe {count} shfaqen kur t'i zgjidhni këto}}",
   "planTabIndividual": "Personal",
   "planTabBusiness": "Biznes",
   "planGetPremium": "Merrni Premium",
@@ -3455,5 +3455,11 @@
   "groupsNoRecordsSection": "Ende asnjë regjistrim",
   "recordChangedRecently": "{days, plural, =0{Ndryshuar nga {name} sot} =1{Ndryshuar nga {name} dje} other{Ndryshuar nga {name} {days} ditë më parë}}",
   "notifSharedOnlyMineTitle": "Vetëm regjistrimet që shtova unë",
-  "notifSharedOnlyMineSubtitle": "Më kujto vetëm për regjistrimet e ndara që shtova unë. Regjistrimet e të tjerëve shfaqen ende në aplikacion."
+  "notifSharedOnlyMineSubtitle": "Më kujto vetëm për regjistrimet e ndara që shtova unë. Regjistrimet e të tjerëve shfaqen ende në aplikacion.",
+  "travelPassportExpiresBeforeLeaving": "Pasaporta skadon para se të nisheni",
+  "travelVisaExpiresBeforeLeaving": "Viza skadon para se të nisheni",
+  "travelInsuranceEndsBeforeLeaving": "Sigurimi i udhëtimit mbaron para se të nisheni",
+  "travelLicenceExpiresBeforeLeaving": "Patenta skadon para se të nisheni",
+  "travelTravellersCount": "{count, plural, =1{1 udhëtar} other{{count} udhëtarë}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} skadon më {date}, {days, plural, =1{1 ditë para nisjes} other{{days} ditë para nisjes}}."
 }

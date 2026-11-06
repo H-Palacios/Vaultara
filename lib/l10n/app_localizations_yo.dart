@@ -3075,7 +3075,8 @@ class AppLocalizationsYo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Àti $count míì',
+      other: '$count míì yóò hàn nígbà tí o bá parí ìwọ̀nyí',
+      one: '1 míì yóò hàn nígbà tí o bá parí ìwọ̀nyí',
     );
     return '$_temp0';
   }
@@ -9018,4 +9019,38 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Rán mi létí nípa àwọn igbasilẹ tí a pín tí mo fi kún nìkan. Àwọn igbasilẹ tí àwọn mìíràn fi kún ṣì ń hàn nínú áàpù.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Ìwé irinna ń parí kí o tó lọ';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Fisa ń parí kí o tó lọ';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Ìdánilójú ìrìn àjò ń parí kí o tó lọ';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ìwé-aṣẹ awakọ̀ ń parí kí o tó lọ';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Arìnrìn-àjò $count',
+      one: 'Arìnrìn-àjò 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ọjọ́ $days kí o tó lọ',
+      one: 'ọjọ́ 1 kí o tó lọ',
+    );
+    return '$name ń parí ní $date, $_temp0.';
+  }
 }

@@ -1121,7 +1121,7 @@
   "smartInsightRenewedBody": "ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ {name} ਨਵੀਨੀਕ੍ਰਿਤ ਕੀਤਾ ਹੈ, ਅਤੇ ਹੁਣ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਵੱਲ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ। ਅਗਲਾ {date} ਨੂੰ {next} ਹੈ।",
   "smartInsightRenewedNoNextBody": "ਤੁਸੀਂ ਹਾਲ ਹੀ ਵਿੱਚ {name} ਨਵੀਨੀਕ੍ਰਿਤ ਕੀਤਾ ਹੈ, ਅਤੇ ਹੁਣ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਵੱਲ ਤੁਹਾਡੇ ਧਿਆਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।",
   "smartInsightMoreHeading": "ਜਾਂਚਣ ਲਈ ਹੋਰ ਚੀਜ਼ਾਂ",
-  "smartInsightMoreCount": "{count, plural, one{ਇਸ ਤੋਂ ਇਲਾਵਾ {count} ਹੋਰ} other{ਇਸ ਤੋਂ ਇਲਾਵਾ {count} ਹੋਰ}}",
+  "smartInsightMoreCount": "{count, plural, =1{ਇਹ ਨਿਪਟਾਉਣ ’ਤੇ 1 ਹੋਰ ਦਿਸੇਗਾ} other{ਇਹ ਨਿਪਟਾਉਣ ’ਤੇ {count} ਹੋਰ ਦਿਸਣਗੇ}}",
   "planTabIndividual": "ਵਿਅਕਤੀਗਤ",
   "planTabBusiness": "ਬਿਜ਼ਨਸ",
   "planGetPremium": "Premium ਲਓ",
@@ -3448,5 +3448,11 @@
   "groupsNoRecordsSection": "ਹੁਣ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ",
   "recordChangedRecently": "{days, plural, =0{ਅੱਜ {name} ਨੇ ਬਦਲਿਆ} =1{ਕੱਲ੍ਹ {name} ਨੇ ਬਦਲਿਆ} other{{days} ਦਿਨ ਪਹਿਲਾਂ {name} ਨੇ ਬਦਲਿਆ}}",
   "notifSharedOnlyMineTitle": "ਸਿਰਫ਼ ਮੇਰੇ ਜੋੜੇ ਰਿਕਾਰਡ",
-  "notifSharedOnlyMineSubtitle": "ਮੈਨੂੰ ਸਿਰਫ਼ ਮੇਰੇ ਜੋੜੇ ਸਾਂਝੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਯਾਦ ਕਰਵਾਓ। ਦੂਜਿਆਂ ਦੇ ਜੋੜੇ ਰਿਕਾਰਡ ਐਪ ਵਿੱਚ ਦਿਸਦੇ ਰਹਿਣਗੇ।"
+  "notifSharedOnlyMineSubtitle": "ਮੈਨੂੰ ਸਿਰਫ਼ ਮੇਰੇ ਜੋੜੇ ਸਾਂਝੇ ਰਿਕਾਰਡਾਂ ਬਾਰੇ ਯਾਦ ਕਰਵਾਓ। ਦੂਜਿਆਂ ਦੇ ਜੋੜੇ ਰਿਕਾਰਡ ਐਪ ਵਿੱਚ ਦਿਸਦੇ ਰਹਿਣਗੇ।",
+  "travelPassportExpiresBeforeLeaving": "ਪਾਸਪੋਰਟ ਦੀ ਮਿਆਦ ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelVisaExpiresBeforeLeaving": "ਵੀਜ਼ੇ ਦੀ ਮਿਆਦ ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelInsuranceEndsBeforeLeaving": "ਯਾਤਰਾ ਬੀਮਾ ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦਾ ਹੈ",
+  "travelLicenceExpiresBeforeLeaving": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਦੀ ਮਿਆਦ ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "travelTravellersCount": "{count, plural, =1{1 ਯਾਤਰੀ} other{{count} ਯਾਤਰੀ}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖਤਮ ਹੁੰਦੀ ਹੈ, {days, plural, =1{ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ 1 ਦਿਨ ਪਹਿਲਾਂ} other{ਤੁਹਾਡੇ ਜਾਣ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ}}।"
 }

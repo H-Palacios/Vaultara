@@ -3146,10 +3146,8 @@ class AppLocalizationsCs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ještě $count',
-      many: 'Ještě $count',
-      few: 'Ještě $count',
-      one: 'Ještě $count',
+      other: 'Další $count se ukážou, až vyřešíte tyto',
+      one: 'Další 1 se ukáže, až vyřešíte tyto',
     );
     return '$_temp0';
   }
@@ -9227,4 +9225,42 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Připomínej mi jen sdílené záznamy, které jsem přidal(a). Záznamy ostatních se v aplikaci dál zobrazují.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pas vyprší před vaším odjezdem';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Vízum vyprší před vaším odjezdem';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Cestovní pojištění skončí před vaším odjezdem';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Řidičský průkaz vyprší před vaším odjezdem';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cestujících',
+      many: '$count cestujících',
+      few: '$count cestující',
+      one: '1 cestující',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dní před odjezdem',
+      many: '$days dne před odjezdem',
+      few: '$days dny před odjezdem',
+      one: '1 den před odjezdem',
+    );
+    return 'Platnost položky $name vyprší $date, $_temp0.';
+  }
 }

@@ -3088,8 +3088,8 @@ class AppLocalizationsSw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Pamoja na $count zaidi',
-      one: 'Pamoja na $count zaidi',
+      other: '$count zaidi zitaonekana ukimaliza hizi',
+      one: '1 zaidi itaonekana ukimaliza hizi',
     );
     return '$_temp0';
   }
@@ -9070,4 +9070,38 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Nikumbushe tu kuhusu rekodi zinazoshirikiwa nilizoongeza. Rekodi walizoongeza wengine bado zinaonekana kwenye programu.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pasipoti inaisha muda kabla hujaondoka';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viza inaisha muda kabla hujaondoka';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Bima ya safari inaisha kabla hujaondoka';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Leseni ya kuendesha inaisha muda kabla hujaondoka';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wasafiri $count',
+      one: 'Msafiri 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'siku $days kabla hujaondoka',
+      one: 'siku 1 kabla hujaondoka',
+    );
+    return '$name inaisha muda $date, $_temp0.';
+  }
 }

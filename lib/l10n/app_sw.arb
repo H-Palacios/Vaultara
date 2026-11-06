@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Umehuisha {name} hivi karibuni, na hakuna kinachohitaji uangalizi wako sasa. Kinachofuata ni {next} tarehe {date}.",
   "smartInsightRenewedNoNextBody": "Umehuisha {name} hivi karibuni, na hakuna kinachohitaji uangalizi wako sasa.",
   "smartInsightMoreHeading": "Mambo zaidi ya kuangalia",
-  "smartInsightMoreCount": "{count, plural, one{Pamoja na {count} zaidi} other{Pamoja na {count} zaidi}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 zaidi itaonekana ukimaliza hizi} other{{count} zaidi zitaonekana ukimaliza hizi}}",
   "planTabIndividual": "Binafsi",
   "planTabBusiness": "Biashara",
   "planGetPremium": "Pata Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Bado hakuna rekodi",
   "recordChangedRecently": "{days, plural, =0{Ilibadilishwa na {name} leo} =1{Ilibadilishwa na {name} jana} other{Ilibadilishwa na {name} siku {days} zilizopita}}",
   "notifSharedOnlyMineTitle": "Rekodi nilizoongeza tu",
-  "notifSharedOnlyMineSubtitle": "Nikumbushe tu kuhusu rekodi zinazoshirikiwa nilizoongeza. Rekodi walizoongeza wengine bado zinaonekana kwenye programu."
+  "notifSharedOnlyMineSubtitle": "Nikumbushe tu kuhusu rekodi zinazoshirikiwa nilizoongeza. Rekodi walizoongeza wengine bado zinaonekana kwenye programu.",
+  "travelPassportExpiresBeforeLeaving": "Pasipoti inaisha muda kabla hujaondoka",
+  "travelVisaExpiresBeforeLeaving": "Viza inaisha muda kabla hujaondoka",
+  "travelInsuranceEndsBeforeLeaving": "Bima ya safari inaisha kabla hujaondoka",
+  "travelLicenceExpiresBeforeLeaving": "Leseni ya kuendesha inaisha muda kabla hujaondoka",
+  "travelTravellersCount": "{count, plural, =1{Msafiri 1} other{Wasafiri {count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} inaisha muda {date}, {days, plural, =1{siku 1 kabla hujaondoka} other{siku {days} kabla hujaondoka}}."
 }

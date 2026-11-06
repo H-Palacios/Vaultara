@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "சமீபத்தில் {name} ஐப் புதுப்பித்துவிட்டீர்கள், இப்போது உங்கள் கவனம் தேவைப்படும் எதுவும் இல்லை. அடுத்தது {date} அன்று {next}.",
   "smartInsightRenewedNoNextBody": "சமீபத்தில் {name} ஐப் புதுப்பித்துவிட்டீர்கள், இப்போது உங்கள் கவனம் தேவைப்படும் எதுவும் இல்லை.",
   "smartInsightMoreHeading": "சரிபார்க்க மேலும் சில",
-  "smartInsightMoreCount": "{count, plural, one{மேலும் {count}} other{மேலும் {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{இவற்றை முடித்ததும் இன்னும் 1 தெரியும்} other{இவற்றை முடித்ததும் இன்னும் {count} தெரியும்}}",
   "planTabIndividual": "தனிப்பட்ட",
   "planTabBusiness": "வணிகம்",
   "planGetPremium": "ப்ரீமியம் பெறு",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "இதுவரை பதிவுகள் இல்லை",
   "recordChangedRecently": "{days, plural, =0{இன்று {name} மாற்றினார்} =1{நேற்று {name} மாற்றினார்} other{{days} நாட்களுக்கு முன் {name} மாற்றினார்}}",
   "notifSharedOnlyMineTitle": "நான் சேர்த்த பதிவுகள் மட்டும்",
-  "notifSharedOnlyMineSubtitle": "நான் சேர்த்த பகிரப்பட்ட பதிவுகளைப் பற்றி மட்டும் நினைவூட்டு. மற்றவர்கள் சேர்த்த பதிவுகள் ஆப்பில் தொடர்ந்து தெரியும்."
+  "notifSharedOnlyMineSubtitle": "நான் சேர்த்த பகிரப்பட்ட பதிவுகளைப் பற்றி மட்டும் நினைவூட்டு. மற்றவர்கள் சேர்த்த பதிவுகள் ஆப்பில் தொடர்ந்து தெரியும்.",
+  "travelPassportExpiresBeforeLeaving": "நீங்கள் புறப்படும் முன் கடவுச்சீட்டு காலாவதியாகும்",
+  "travelVisaExpiresBeforeLeaving": "நீங்கள் புறப்படும் முன் விசா காலாவதியாகும்",
+  "travelInsuranceEndsBeforeLeaving": "நீங்கள் புறப்படும் முன் பயணக் காப்பீடு முடிவடையும்",
+  "travelLicenceExpiresBeforeLeaving": "நீங்கள் புறப்படும் முன் ஓட்டுநர் உரிமம் காலாவதியாகும்",
+  "travelTravellersCount": "{count, plural, =1{1 பயணி} other{{count} பயணிகள்}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} அன்று காலாவதியாகும், {days, plural, =1{நீங்கள் புறப்படுவதற்கு 1 நாள் முன்பு} other{நீங்கள் புறப்படுவதற்கு {days} நாட்கள் முன்பு}}."
 }

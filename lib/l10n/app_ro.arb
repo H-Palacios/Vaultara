@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Ai reînnoit recent {name}, iar acum nimic nu are nevoie de atenția ta. Urmează {next}, pe {date}.",
   "smartInsightRenewedNoNextBody": "Ai reînnoit recent {name}, iar acum nimic nu are nevoie de atenția ta.",
   "smartInsightMoreHeading": "Mai multe de verificat",
-  "smartInsightMoreCount": "{count, plural, one{Încă {count}} few{Încă {count}} other{Încă {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Încă 1 apare după ce le rezolvi pe acestea} other{Încă {count} apar după ce le rezolvi pe acestea}}",
   "planTabIndividual": "Personal",
   "planTabBusiness": "Business",
   "planGetPremium": "Treci la Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Nu există încă înregistrări",
   "recordChangedRecently": "{days, plural, =0{Modificat de {name} azi} =1{Modificat de {name} ieri} few{Modificat de {name} acum {days} zile} other{Modificat de {name} acum {days} zile}}",
   "notifSharedOnlyMineTitle": "Doar înregistrările adăugate de mine",
-  "notifSharedOnlyMineSubtitle": "Amintește-mi doar de înregistrările partajate pe care le-am adăugat. Cele adăugate de alții rămân vizibile în aplicație."
+  "notifSharedOnlyMineSubtitle": "Amintește-mi doar de înregistrările partajate pe care le-am adăugat. Cele adăugate de alții rămân vizibile în aplicație.",
+  "travelPassportExpiresBeforeLeaving": "Pașaportul expiră înainte să pleci",
+  "travelVisaExpiresBeforeLeaving": "Viza expiră înainte să pleci",
+  "travelInsuranceEndsBeforeLeaving": "Asigurarea de călătorie se încheie înainte să pleci",
+  "travelLicenceExpiresBeforeLeaving": "Permisul de conducere expiră înainte să pleci",
+  "travelTravellersCount": "{count, plural, =1{1 călător} few{{count} călători} other{{count} de călători}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} expiră pe {date}, {days, plural, =1{cu 1 zi înainte de plecare} few{cu {days} zile înainte de plecare} other{cu {days} de zile înainte de plecare}}."
 }

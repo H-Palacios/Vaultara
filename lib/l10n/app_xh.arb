@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Uvuselele irekhodi elithi {name} kutshanje, kwaye akukho nto ifuna ingqwalasela yakho ngoku. Elilandelayo ngelithi {next} ngomhla we-{date}.",
   "smartInsightRenewedNoNextBody": "Uvuselele irekhodi elithi {name} kutshanje, kwaye akukho nto ifuna ingqwalasela yakho ngoku.",
   "smartInsightMoreHeading": "Ezinye izinto ekufuneka uzijonge",
-  "smartInsightMoreCount": "{count, plural, one{Kunye nezinye ezi-{count}} other{Kunye nezinye ezi-{count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Enye e-1 iza kubonakala xa ugqiba ezi} other{Ezinye ezi-{count} ziza kubonakala xa ugqiba ezi}}",
   "planTabIndividual": "Umntu ngamnye",
   "planTabBusiness": "Ishishini",
   "planGetPremium": "Fumana i-Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Akukabikho zirekhodi",
   "recordChangedRecently": "{days, plural, =0{Itshintshwe ngu-{name} namhlanje} =1{Itshintshwe ngu-{name} izolo} other{Itshintshwe ngu-{name} kwiintsuku ezi-{days} ezidlulileyo}}",
   "notifSharedOnlyMineTitle": "Iirekhodi endizongezileyo kuphela",
-  "notifSharedOnlyMineSubtitle": "Ndikhumbuze kuphela ngeerekhodi ekwabelwana ngazo endizongezileyo. Iirekhodi ezongezwe ngabanye zisabonakala kwi-app."
+  "notifSharedOnlyMineSubtitle": "Ndikhumbuze kuphela ngeerekhodi ekwabelwana ngazo endizongezileyo. Iirekhodi ezongezwe ngabanye zisabonakala kwi-app.",
+  "travelPassportExpiresBeforeLeaving": "Ipasipoti iphelelwa ngaphambi kokuba uhambe",
+  "travelVisaExpiresBeforeLeaving": "Ivisa iphelelwa ngaphambi kokuba uhambe",
+  "travelInsuranceEndsBeforeLeaving": "I-inshurensi yohambo iphela ngaphambi kokuba uhambe",
+  "travelLicenceExpiresBeforeLeaving": "Ilayisensi yokuqhuba iphelelwa ngaphambi kokuba uhambe",
+  "travelTravellersCount": "{count, plural, =1{Umhambi o-1} other{Abahambi aba-{count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngomhla we-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuba uhambe} other{iintsuku ezi-{days} ngaphambi kokuba uhambe}}."
 }

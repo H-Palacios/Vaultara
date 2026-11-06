@@ -3088,8 +3088,8 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Edhe $count të tjera',
-      one: 'Edhe $count tjetër',
+      other: 'Edhe $count shfaqen kur t\'i zgjidhni këto',
+      one: 'Edhe 1 shfaqet kur t\'i zgjidhni këto',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Më kujto vetëm për regjistrimet e ndara që shtova unë. Regjistrimet e të tjerëve shfaqen ende në aplikacion.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Pasaporta skadon para se të nisheni';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Viza skadon para se të nisheni';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Sigurimi i udhëtimit mbaron para se të nisheni';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Patenta skadon para se të nisheni';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count udhëtarë',
+      one: '1 udhëtar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ditë para nisjes',
+      one: '1 ditë para nisjes',
+    );
+    return '$name skadon më $date, $_temp0.';
+  }
 }

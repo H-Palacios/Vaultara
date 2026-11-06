@@ -1126,7 +1126,7 @@
   "smartInsightRenewedBody": "به‌تازگی {name} را تمدید کرده‌اید و اکنون چیزی به توجه شما نیاز ندارد. مورد بعدی {next} در {date} است.",
   "smartInsightRenewedNoNextBody": "به‌تازگی {name} را تمدید کرده‌اید و اکنون چیزی به توجه شما نیاز ندارد.",
   "smartInsightMoreHeading": "موارد بیشتر برای بررسی",
-  "smartInsightMoreCount": "{count, plural, one{{count} مورد دیگر} other{{count} مورد دیگر}}",
+  "smartInsightMoreCount": "{count, plural, =1{با انجام این‌ها ۱ مورد دیگر نشان داده می‌شود} other{با انجام این‌ها {count} مورد دیگر نشان داده می‌شود}}",
   "planTabIndividual": "فردی",
   "planTabBusiness": "کسب‌وکار",
   "planGetPremium": "تهیه Premium",
@@ -3453,5 +3453,11 @@
   "groupsNoRecordsSection": "هنوز رکوردی وجود ندارد",
   "recordChangedRecently": "{days, plural, =0{امروز توسط {name} تغییر کرد} =1{دیروز توسط {name} تغییر کرد} other{{days} روز پیش توسط {name} تغییر کرد}}",
   "notifSharedOnlyMineTitle": "فقط رکوردهایی که من افزودم",
-  "notifSharedOnlyMineSubtitle": "فقط برای رکوردهای مشترکی که خودم افزوده‌ام یادآوری بفرست. رکوردهایی که دیگران افزوده‌اند همچنان در برنامه دیده می‌شوند."
+  "notifSharedOnlyMineSubtitle": "فقط برای رکوردهای مشترکی که خودم افزوده‌ام یادآوری بفرست. رکوردهایی که دیگران افزوده‌اند همچنان در برنامه دیده می‌شوند.",
+  "travelPassportExpiresBeforeLeaving": "گذرنامه پیش از سفر منقضی می‌شود",
+  "travelVisaExpiresBeforeLeaving": "ویزا پیش از سفر منقضی می‌شود",
+  "travelInsuranceEndsBeforeLeaving": "بیمه مسافرتی پیش از سفر تمام می‌شود",
+  "travelLicenceExpiresBeforeLeaving": "گواهینامه رانندگی پیش از سفر منقضی می‌شود",
+  "travelTravellersCount": "{count, plural, =1{۱ مسافر} other{{count} مسافر}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} در {date} منقضی می‌شود، {days, plural, =1{۱ روز پیش از حرکت شما} other{{days} روز پیش از حرکت شما}}."
 }

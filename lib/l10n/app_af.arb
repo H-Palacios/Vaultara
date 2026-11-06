@@ -1152,7 +1152,7 @@
   "smartInsightRenewedBody": "Jy het {name} onlangs hernu, en niks het nou jou aandag nodig nie. Volgende is {next} op {date}.",
   "smartInsightRenewedNoNextBody": "Jy het {name} onlangs hernu, en niks het nou jou aandag nodig nie.",
   "smartInsightMoreHeading": "Meer dinge om na te gaan",
-  "smartInsightMoreCount": "{count, plural, one{Plus nog {count}} other{Plus nog {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Nog 1 wys sodra jy hierdie afhandel} other{Nog {count} wys sodra jy hierdie afhandel}}",
   "planTabIndividual": "Individueel",
   "planTabBusiness": "Besigheid",
   "planGetPremium": "Kry Premium",
@@ -3479,5 +3479,11 @@
   "groupsNoRecordsSection": "Nog geen rekords nie",
   "recordChangedRecently": "{days, plural, =0{Vandag deur {name} verander} =1{Gister deur {name} verander} other{{days} dae gelede deur {name} verander}}",
   "notifSharedOnlyMineTitle": "Net rekords wat ek bygevoeg het",
-  "notifSharedOnlyMineSubtitle": "Herinner my net aan gedeelde rekords wat ek bygevoeg het. Rekords wat ander bygevoeg het, wys steeds in die app."
+  "notifSharedOnlyMineSubtitle": "Herinner my net aan gedeelde rekords wat ek bygevoeg het. Rekords wat ander bygevoeg het, wys steeds in die app.",
+  "travelPassportExpiresBeforeLeaving": "Paspoort verval voordat jy vertrek",
+  "travelVisaExpiresBeforeLeaving": "Visum verval voordat jy vertrek",
+  "travelInsuranceEndsBeforeLeaving": "Reisversekering eindig voordat jy vertrek",
+  "travelLicenceExpiresBeforeLeaving": "Rybewys verval voordat jy vertrek",
+  "travelTravellersCount": "{count, plural, =1{1 reisiger} other{{count} reisigers}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} verval op {date}, {days, plural, =1{1 dag voordat jy vertrek} other{{days} dae voordat jy vertrek}}."
 }

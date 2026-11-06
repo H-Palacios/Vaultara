@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "تاسو دا وروستیو کې {name} نوی کړ، او اوس هېڅ شی ستاسو پاملرنې ته اړتیا نلري. راتلونکی {next} دی، د {date} په ورځ.",
   "smartInsightRenewedNoNextBody": "تاسو دا وروستیو کې {name} نوی کړ، او اوس هېڅ شی ستاسو پاملرنې ته اړتیا نلري.",
   "smartInsightMoreHeading": "نور شیان چې باید وکتل شي",
-  "smartInsightMoreCount": "{count, plural, one{{count} نور} other{{count} نور}}",
+  "smartInsightMoreCount": "{count, plural, =1{کله چې دا بشپړ کړئ، 1 نور ښکاري} other{کله چې دا بشپړ کړئ، {count} نور ښکاري}}",
   "planTabIndividual": "انفرادي",
   "planTabBusiness": "سوداګري",
   "planGetPremium": "پریمیم ترلاسه کړئ",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "تر اوسه هېڅ ریکارډ نشته",
   "recordChangedRecently": "{days, plural, =0{نن د {name} لخوا بدل شو} =1{پرون د {name} لخوا بدل شو} other{{days} ورځې مخکې د {name} لخوا بدل شو}}",
   "notifSharedOnlyMineTitle": "یوازې هغه ریکارډونه چې ما اضافه کړي",
-  "notifSharedOnlyMineSubtitle": "یوازې د هغو شریکو ریکارډونو یادونه راکړه چې ما اضافه کړي. د نورو اضافه شوي ریکارډونه لا هم په اپ کې ښکاري."
+  "notifSharedOnlyMineSubtitle": "یوازې د هغو شریکو ریکارډونو یادونه راکړه چې ما اضافه کړي. د نورو اضافه شوي ریکارډونه لا هم په اپ کې ښکاري.",
+  "travelPassportExpiresBeforeLeaving": "پاسپورټ ستاسو له تګ مخکې پای ته رسېږي",
+  "travelVisaExpiresBeforeLeaving": "ویزه ستاسو له تګ مخکې پای ته رسېږي",
+  "travelInsuranceEndsBeforeLeaving": "د سفر بیمه ستاسو له تګ مخکې پای ته رسېږي",
+  "travelLicenceExpiresBeforeLeaving": "د موټر چلولو جواز ستاسو له تګ مخکې پای ته رسېږي",
+  "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} په {date} پای ته رسېږي، {days, plural, =1{ستاسو له تګ 1 ورځ مخکې} other{ستاسو له تګ {days} ورځې مخکې}}."
 }

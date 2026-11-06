@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "{name} kaydını yakın zamanda yenilediniz ve şu anda dikkat gerektiren bir şey yok. Sıradaki {next}, {date} tarihinde doluyor.",
   "smartInsightRenewedNoNextBody": "{name} kaydını yakın zamanda yenilediniz ve şu anda dikkat gerektiren bir şey yok.",
   "smartInsightMoreHeading": "Kontrol edilecek diğer şeyler",
-  "smartInsightMoreCount": "{count, plural, one{Ve {count} tane daha} other{Ve {count} tane daha}}",
+  "smartInsightMoreCount": "{count, plural, =1{Bunları hallettikçe 1 tane daha görünür} other{Bunları hallettikçe {count} tane daha görünür}}",
   "planTabIndividual": "Bireysel",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium'u al",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Henüz kayıt yok",
   "recordChangedRecently": "{days, plural, =0{Bugün {name} değiştirdi} =1{Dün {name} değiştirdi} other{{days} gün önce {name} değiştirdi}}",
   "notifSharedOnlyMineTitle": "Yalnızca eklediğim kayıtlar",
-  "notifSharedOnlyMineSubtitle": "Yalnızca eklediğim paylaşılan kayıtlar için hatırlat. Başkalarının eklediği kayıtlar uygulamada görünmeye devam eder."
+  "notifSharedOnlyMineSubtitle": "Yalnızca eklediğim paylaşılan kayıtlar için hatırlat. Başkalarının eklediği kayıtlar uygulamada görünmeye devam eder.",
+  "travelPassportExpiresBeforeLeaving": "Pasaportun süresi yola çıkmadan önce doluyor",
+  "travelVisaExpiresBeforeLeaving": "Vizenin süresi yola çıkmadan önce doluyor",
+  "travelInsuranceEndsBeforeLeaving": "Seyahat sigortası yola çıkmadan önce bitiyor",
+  "travelLicenceExpiresBeforeLeaving": "Sürücü belgesinin süresi yola çıkmadan önce doluyor",
+  "travelTravellersCount": "{count, plural, =1{1 yolcu} other{{count} yolcu}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} süresi {date} tarihinde, {days, plural, =1{yola çıkmadan 1 gün önce} other{yola çıkmadan {days} gün önce}} doluyor."
 }

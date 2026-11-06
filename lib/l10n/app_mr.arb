@@ -864,7 +864,7 @@
   "smartInsightRenewedBody": "तुम्ही नुकतेच {name} चे नूतनीकरण केले आहे, आणि सध्या तुमच्या लक्षाची गरज असलेले काहीही नाही. पुढे {date} रोजी {next} आहे.",
   "smartInsightRenewedNoNextBody": "तुम्ही नुकतेच {name} चे नूतनीकरण केले आहे, आणि सध्या तुमच्या लक्षाची गरज असलेले काहीही नाही.",
   "smartInsightMoreHeading": "तपासण्यासाठी आणखी काही गोष्टी",
-  "smartInsightMoreCount": "{count, plural, one{आणखी {count}} other{आणखी {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{हे पूर्ण केल्यावर आणखी 1 दिसेल} other{हे पूर्ण केल्यावर आणखी {count} दिसतील}}",
   "planTabIndividual": "वैयक्तिक",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium घ्या",
@@ -3191,5 +3191,11 @@
   "groupsNoRecordsSection": "अद्याप कोणत्याही नोंदी नाहीत",
   "recordChangedRecently": "{days, plural, =0{आज {name} यांनी बदलले} =1{काल {name} यांनी बदलले} other{{days} दिवसांपूर्वी {name} यांनी बदलले}}",
   "notifSharedOnlyMineTitle": "फक्त मी जोडलेल्या नोंदी",
-  "notifSharedOnlyMineSubtitle": "मी जोडलेल्या शेअर केलेल्या नोंदींचीच आठवण करून द्या. इतरांनी जोडलेल्या नोंदी ॲपमध्ये दिसत राहतील."
+  "notifSharedOnlyMineSubtitle": "मी जोडलेल्या शेअर केलेल्या नोंदींचीच आठवण करून द्या. इतरांनी जोडलेल्या नोंदी ॲपमध्ये दिसत राहतील.",
+  "travelPassportExpiresBeforeLeaving": "तुम्ही निघण्यापूर्वी पासपोर्टची मुदत संपते",
+  "travelVisaExpiresBeforeLeaving": "तुम्ही निघण्यापूर्वी व्हिसाची मुदत संपते",
+  "travelInsuranceEndsBeforeLeaving": "तुम्ही निघण्यापूर्वी प्रवास विमा संपतो",
+  "travelLicenceExpiresBeforeLeaving": "तुम्ही निघण्यापूर्वी ड्रायव्हिंग लायसन्सची मुदत संपते",
+  "travelTravellersCount": "{count, plural, =1{1 प्रवासी} other{{count} प्रवासी}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} ची मुदत {date} रोजी संपते, {days, plural, =1{तुम्ही निघण्याच्या 1 दिवस आधी} other{तुम्ही निघण्याच्या {days} दिवस आधी}}."
 }

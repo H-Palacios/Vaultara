@@ -1119,7 +1119,7 @@
   "smartInsightRenewedBody": "Imegharịrị {name} n'oge na-adịbeghị anya, ọ dịghịkwa ihe chọrọ ntinye uche gị ugbu a. Nke na-esote bụ {next} na {date}.",
   "smartInsightRenewedNoNextBody": "Imegharịrị {name} n'oge na-adịbeghị anya, ọ dịghịkwa ihe chọrọ ntinye uche gị ugbu a.",
   "smartInsightMoreHeading": "Ihe ndị ọzọ ị ga-elele",
-  "smartInsightMoreCount": "{count, plural, other{Tụkwasị {count} ọzọ}}",
+  "smartInsightMoreCount": "{count, plural, =1{1 ọzọ ga-apụta mgbe i mechara ndị a} other{{count} ọzọ ga-apụta mgbe i mechara ndị a}}",
   "planTabIndividual": "Onye otu",
   "planTabBusiness": "Azụmahịa",
   "planGetPremium": "Nweta Premium",
@@ -3446,5 +3446,11 @@
   "groupsNoRecordsSection": "Enweghị ndekọ ka ọ dị",
   "recordChangedRecently": "{days, plural, =0{{name} gbanwere ya taa} =1{{name} gbanwere ya ụnyaahụ} other{{name} gbanwere ya ụbọchị {days} gara aga}}",
   "notifSharedOnlyMineTitle": "Naanị ndekọ m tinyere",
-  "notifSharedOnlyMineSubtitle": "Chetara m naanị maka ndekọ ekekọrịta m tinyere. Ndekọ ndị ọzọ tinyere ka na-egosi n'ime ngwa ahụ."
+  "notifSharedOnlyMineSubtitle": "Chetara m naanị maka ndekọ ekekọrịta m tinyere. Ndekọ ndị ọzọ tinyere ka na-egosi n'ime ngwa ahụ.",
+  "travelPassportExpiresBeforeLeaving": "Paspọtụ na-agwụ tupu ị pụọ",
+  "travelVisaExpiresBeforeLeaving": "Vịsa na-agwụ tupu ị pụọ",
+  "travelInsuranceEndsBeforeLeaving": "Inshọransị njem na-akwụsị tupu ị pụọ",
+  "travelLicenceExpiresBeforeLeaving": "Ikikere ịnya ụgbọala na-agwụ tupu ị pụọ",
+  "travelTravellersCount": "{count, plural, =1{Onye njem 1} other{Ndị njem {count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} na-agwụ na {date}, {days, plural, =1{ụbọchị 1 tupu ị pụọ} other{ụbọchị {days} tupu ị pụọ}}."
 }

@@ -1107,7 +1107,7 @@
   "smartInsightRenewedBody": "您最近已為 {name} 續期，目前沒有需要您處理的事項。下一個是 {date} 的 {next}。",
   "smartInsightRenewedNoNextBody": "您最近已為 {name} 續期，目前沒有需要您處理的事項。",
   "smartInsightMoreHeading": "還有其他需要檢查的事項",
-  "smartInsightMoreCount": "{count, plural, other{另外還有 {count} 項}}",
+  "smartInsightMoreCount": "{count, plural, =1{處理完這些後，還會顯示 1 項} other{處理完這些後，還會顯示 {count} 項}}",
   "planTabIndividual": "個人",
   "planTabBusiness": "商務",
   "planGetPremium": "取得進階版",
@@ -3434,5 +3434,11 @@
   "groupsNoRecordsSection": "尚無記錄",
   "recordChangedRecently": "{days, plural, =0{{name} 今天修改} =1{{name} 昨天修改} other{{name} {days} 天前修改}}",
   "notifSharedOnlyMineTitle": "僅限我新增的記錄",
-  "notifSharedOnlyMineSubtitle": "只提醒我自己新增的共用記錄。其他人新增的記錄仍會顯示在應用程式中。"
+  "notifSharedOnlyMineSubtitle": "只提醒我自己新增的共用記錄。其他人新增的記錄仍會顯示在應用程式中。",
+  "travelPassportExpiresBeforeLeaving": "護照在您出發前到期",
+  "travelVisaExpiresBeforeLeaving": "簽證在您出發前到期",
+  "travelInsuranceEndsBeforeLeaving": "旅遊保險在您出發前結束",
+  "travelLicenceExpiresBeforeLeaving": "駕駛執照在您出發前到期",
+  "travelTravellersCount": "{count, plural, =1{1 位旅客} other{{count} 位旅客}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} 將於 {date} 到期，{days, plural, =1{比您出發早 1 天} other{比您出發早 {days} 天}}。"
 }

@@ -3074,7 +3074,8 @@ class AppLocalizationsLo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ແລະ ອີກ $count ລາຍການ',
+      other: 'ອີກ $count ລາຍການຈະສະແດງເມື່ອທ່ານຈັດການເຫຼົ່ານີ້',
+      one: 'ອີກ 1 ລາຍການຈະສະແດງເມື່ອທ່ານຈັດການເຫຼົ່ານີ້',
     );
     return '$_temp0';
   }
@@ -9007,4 +9008,38 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'ເຕືອນຂ້ອຍສະເພາະບັນທຶກທີ່ແບ່ງປັນທີ່ຂ້ອຍເພີ່ມ. ບັນທຶກທີ່ຄົນອື່ນເພີ່ມຍັງສະແດງໃນແອັບ.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'ພາສປອດໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'ວີຊາໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'ປະກັນການເດີນທາງສິ້ນສຸດກ່ອນທ່ານອອກເດີນທາງ';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'ໃບຂັບຂີ່ໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຜູ້ເດີນທາງ $count ຄົນ',
+      one: 'ຜູ້ເດີນທາງ 1 ຄົນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ມື້ກ່ອນທ່ານອອກເດີນທາງ',
+      one: '1 ມື້ກ່ອນທ່ານອອກເດີນທາງ',
+    );
+    return '$name ໝົດອາຍຸ $date, $_temp0.';
+  }
 }

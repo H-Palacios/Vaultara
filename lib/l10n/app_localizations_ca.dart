@@ -3088,8 +3088,8 @@ class AppLocalizationsCa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count més',
-      one: '$count més',
+      other: 'N\'apareixeran $count més quan resolguis aquests',
+      one: 'N\'apareixerà 1 més quan resolguis aquests',
     );
     return '$_temp0';
   }
@@ -9075,4 +9075,38 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'Recorda\'m només els registres compartits que he afegit. Els que han afegit altres es continuen veient a l\'app.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'El passaport caduca abans que marxis';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'El visat caduca abans que marxis';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'L\'assegurança de viatge acaba abans que marxis';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'El permís de conduir caduca abans que marxis';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count viatgers',
+      one: '1 viatger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dies abans que marxis',
+      one: '1 dia abans que marxis',
+    );
+    return '$name caduca el $date, $_temp0.';
+  }
 }

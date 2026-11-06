@@ -3087,8 +3087,8 @@ class AppLocalizationsSo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Iyo $count kale',
-      one: 'Iyo $count kale',
+      other: '$count kale ayaa soo bixi doona marka aad kuwan dhammayso',
+      one: '1 kale ayaa soo bixi doona marka aad kuwan dhammayso',
     );
     return '$_temp0';
   }
@@ -9069,4 +9069,38 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get notifSharedOnlyMineSubtitle => 'I xasuusi kaliya diiwaannada la wadaago ee aan ku daray. Diiwaannada dadka kale ku dareen weli waxay ka muuqdaan app-ka.';
+
+  @override
+  String get travelPassportExpiresBeforeLeaving => 'Baasaboorku wuu dhacayaa ka hor intaadan bixin';
+
+  @override
+  String get travelVisaExpiresBeforeLeaving => 'Fiisuhu wuu dhacayaa ka hor intaadan bixin';
+
+  @override
+  String get travelInsuranceEndsBeforeLeaving => 'Caymiska safarku wuu dhammaanayaa ka hor intaadan bixin';
+
+  @override
+  String get travelLicenceExpiresBeforeLeaving => 'Ruqsadda wadistu way dhacaysaa ka hor intaadan bixin';
+
+  @override
+  String travelTravellersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count socotore',
+      one: '1 socotore',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelDetailExpiresDaysBeforeLeaving(String name, String date, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days maalmood ka hor intaadan bixin',
+      one: '1 maalin ka hor intaadan bixin',
+    );
+    return '$name wuu dhacayaa $date, $_temp0.';
+  }
 }

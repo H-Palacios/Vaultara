@@ -1132,7 +1132,7 @@
   "smartInsightRenewedBody": "Nesen atjaunojāt {name}, un pašlaik nekas neprasa jūsu uzmanību. Nākamais ir {next} {date}.",
   "smartInsightRenewedNoNextBody": "Nesen atjaunojāt {name}, un pašlaik nekas neprasa jūsu uzmanību.",
   "smartInsightMoreHeading": "Vēl ko pārbaudīt",
-  "smartInsightMoreCount": "{count, plural, zero{Vēl {count}} one{Vēl {count}} other{Vēl {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Vēl 1 parādīsies, kad tiksiet galā ar šiem} other{Vēl {count} parādīsies, kad tiksiet galā ar šiem}}",
   "planTabIndividual": "Individuālais",
   "planTabBusiness": "Uzņēmumiem",
   "planGetPremium": "Iegūt Premium",
@@ -3459,5 +3459,11 @@
   "groupsNoRecordsSection": "Vēl nav ierakstu",
   "recordChangedRecently": "{days, plural, =0{{name} mainīja šodien} =1{{name} mainīja vakar} zero{{name} mainīja pirms {days} dienām} one{{name} mainīja pirms {days} dienas} other{{name} mainīja pirms {days} dienām}}",
   "notifSharedOnlyMineTitle": "Tikai manis pievienotie ieraksti",
-  "notifSharedOnlyMineSubtitle": "Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē."
+  "notifSharedOnlyMineSubtitle": "Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē.",
+  "travelPassportExpiresBeforeLeaving": "Pases termiņš beidzas pirms izbraukšanas",
+  "travelVisaExpiresBeforeLeaving": "Vīzas termiņš beidzas pirms izbraukšanas",
+  "travelInsuranceEndsBeforeLeaving": "Ceļojuma apdrošināšana beidzas pirms izbraukšanas",
+  "travelLicenceExpiresBeforeLeaving": "Vadītāja apliecības termiņš beidzas pirms izbraukšanas",
+  "travelTravellersCount": "{count, plural, =1{1 ceļotājs} other{{count} ceļotāji}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} termiņš beidzas {date}, {days, plural, =1{1 dienu pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}."
 }

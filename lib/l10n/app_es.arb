@@ -1121,7 +1121,7 @@
   "smartInsightRenewedBody": "Renovaste {name} hace poco, y ahora mismo nada necesita tu atención. Lo siguiente es {next}, el {date}.",
   "smartInsightRenewedNoNextBody": "Renovaste {name} hace poco, y ahora mismo nada necesita tu atención.",
   "smartInsightMoreHeading": "Más cosas por revisar",
-  "smartInsightMoreCount": "{count, plural, one{{count} más} other{{count} más}}",
+  "smartInsightMoreCount": "{count, plural, =1{Aparecerá 1 más cuando resuelvas estos} other{Aparecerán {count} más cuando resuelvas estos}}",
   "planTabIndividual": "Personal",
   "planTabBusiness": "Empresa",
   "planGetPremium": "Obtener Premium",
@@ -3448,5 +3448,11 @@
   "groupsNoRecordsSection": "Aún no hay registros",
   "recordChangedRecently": "{days, plural, =0{Cambiado por {name} hoy} =1{Cambiado por {name} ayer} other{Cambiado por {name} hace {days} días}}",
   "notifSharedOnlyMineTitle": "Solo los registros que añadí",
-  "notifSharedOnlyMineSubtitle": "Recordarme solo los registros compartidos que añadí. Los que añadieron otros siguen apareciendo en la app."
+  "notifSharedOnlyMineSubtitle": "Recordarme solo los registros compartidos que añadí. Los que añadieron otros siguen apareciendo en la app.",
+  "travelPassportExpiresBeforeLeaving": "El pasaporte vence antes de tu salida",
+  "travelVisaExpiresBeforeLeaving": "El visado vence antes de tu salida",
+  "travelInsuranceEndsBeforeLeaving": "El seguro de viaje termina antes de tu salida",
+  "travelLicenceExpiresBeforeLeaving": "La licencia de conducir vence antes de tu salida",
+  "travelTravellersCount": "{count, plural, =1{1 viajero} other{{count} viajeros}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} vence el {date}, {days, plural, =1{1 día antes de que salgas} other{{days} días antes de que salgas}}."
 }

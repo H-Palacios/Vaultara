@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "Pred kratkim ste obnovili {name} in trenutno nič ne potrebuje vaše pozornosti. Naslednje je {next}, {date}.",
   "smartInsightRenewedNoNextBody": "Pred kratkim ste obnovili {name} in trenutno nič ne potrebuje vaše pozornosti.",
   "smartInsightMoreHeading": "Še več za preveriti",
-  "smartInsightMoreCount": "{count, plural, one{Še {count}} two{Še {count}} few{Še {count}} other{Še {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Še 1 se pokaže, ko uredite te} other{Še {count} se pokaže, ko uredite te}}",
   "planTabIndividual": "Posameznik",
   "planTabBusiness": "Poslovni",
   "planGetPremium": "Pridobi Premium",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "Zaenkrat še ni zapisov",
   "recordChangedRecently": "{days, plural, =0{Danes spremenil(a) {name}} =1{Včeraj spremenil(a) {name}} two{Pred {days} dnevoma spremenil(a) {name}} few{Pred {days} dnevi spremenil(a) {name}} other{Pred {days} dnevi spremenil(a) {name}}}",
   "notifSharedOnlyMineTitle": "Samo zapisi, ki sem jih dodal(a)",
-  "notifSharedOnlyMineSubtitle": "Opomni me samo na deljene zapise, ki sem jih dodal(a). Zapisi drugih so v aplikaciji še vedno vidni."
+  "notifSharedOnlyMineSubtitle": "Opomni me samo na deljene zapise, ki sem jih dodal(a). Zapisi drugih so v aplikaciji še vedno vidni.",
+  "travelPassportExpiresBeforeLeaving": "Potni list poteče pred odhodom",
+  "travelVisaExpiresBeforeLeaving": "Vizum poteče pred odhodom",
+  "travelInsuranceEndsBeforeLeaving": "Potovalno zavarovanje se konča pred odhodom",
+  "travelLicenceExpiresBeforeLeaving": "Vozniško dovoljenje poteče pred odhodom",
+  "travelTravellersCount": "{count, plural, =1{1 popotnik} two{{count} popotnika} few{{count} popotniki} other{{count} popotnikov}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} poteče {date}, {days, plural, =1{1 dan pred vašim odhodom} two{{days} dni pred vašim odhodom} few{{days} dni pred vašim odhodom} other{{days} dni pred vašim odhodom}}."
 }

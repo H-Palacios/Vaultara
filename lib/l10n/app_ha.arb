@@ -1126,7 +1126,7 @@
   "smartInsightRenewedBody": "Ka sabunta {name} kwanan nan, kuma babu abin da ke buƙatar kulawarka a yanzu. Na gaba shi ne {next} a {date}.",
   "smartInsightRenewedNoNextBody": "Ka sabunta {name} kwanan nan, kuma babu abin da ke buƙatar kulawarka a yanzu.",
   "smartInsightMoreHeading": "Ƙarin abubuwan dubawa",
-  "smartInsightMoreCount": "{count, plural, one{Da ƙarin {count}} other{Da ƙarin {count}}}",
+  "smartInsightMoreCount": "{count, plural, =1{Ƙarin 1 zai bayyana idan ka gama waɗannan} other{Ƙarin {count} za su bayyana idan ka gama waɗannan}}",
   "planTabIndividual": "Na mutum ɗaya",
   "planTabBusiness": "Kasuwanci",
   "planGetPremium": "Samu Premium",
@@ -3453,5 +3453,11 @@
   "groupsNoRecordsSection": "Babu rikodi tukuna",
   "recordChangedRecently": "{days, plural, =0{{name} ya canza yau} =1{{name} ya canza jiya} other{{name} ya canza kwanaki {days} da suka wuce}}",
   "notifSharedOnlyMineTitle": "Rikodin da na ƙara kawai",
-  "notifSharedOnlyMineSubtitle": "Ka tuna min rikodin da aka raba waɗanda na ƙara kawai. Rikodin da wasu suka ƙara suna nan a cikin manhajar."
+  "notifSharedOnlyMineSubtitle": "Ka tuna min rikodin da aka raba waɗanda na ƙara kawai. Rikodin da wasu suka ƙara suna nan a cikin manhajar.",
+  "travelPassportExpiresBeforeLeaving": "Fasfo zai ƙare kafin ka tafi",
+  "travelVisaExpiresBeforeLeaving": "Biza za ta ƙare kafin ka tafi",
+  "travelInsuranceEndsBeforeLeaving": "Inshorar tafiya za ta ƙare kafin ka tafi",
+  "travelLicenceExpiresBeforeLeaving": "Lasin tuƙi zai ƙare kafin ka tafi",
+  "travelTravellersCount": "{count, plural, =1{Matafiyi 1} other{Matafiya {count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} zai ƙare a {date}, {days, plural, =1{kwana 1 kafin ka tashi} other{kwanaki {days} kafin ka tashi}}."
 }

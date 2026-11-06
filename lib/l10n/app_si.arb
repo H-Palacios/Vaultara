@@ -1114,7 +1114,7 @@
   "smartInsightRenewedBody": "ඔබ මෑතකදී {name} අලුත් කළා, දැන් ඔබේ අවධානය අවශ්‍ය කිසිවක් නැත. ඊළඟට {date} දින {next} ඇත.",
   "smartInsightRenewedNoNextBody": "ඔබ මෑතකදී {name} අලුත් කළා, දැන් ඔබේ අවධානය අවශ්‍ය කිසිවක් නැත.",
   "smartInsightMoreHeading": "බැලිය යුතු තවත් දේවල්",
-  "smartInsightMoreCount": "{count, plural, one{තවත් {count} ක්} other{තවත් {count} ක්}}",
+  "smartInsightMoreCount": "{count, plural, =1{මේවා අවසන් කළ විට තවත් 1ක් පෙන්වයි} other{මේවා අවසන් කළ විට තවත් {count}ක් පෙන්වයි}}",
   "planTabIndividual": "තනි පුද්ගල",
   "planTabBusiness": "ව්‍යාපාර",
   "planGetPremium": "Premium ලබා ගන්න",
@@ -3441,5 +3441,11 @@
   "groupsNoRecordsSection": "තවම වාර්තා නැත",
   "recordChangedRecently": "{days, plural, =0{අද {name} වෙනස් කළා} =1{ඊයේ {name} වෙනස් කළා} other{දින {days}කට පෙර {name} වෙනස් කළා}}",
   "notifSharedOnlyMineTitle": "මා එක් කළ වාර්තා පමණි",
-  "notifSharedOnlyMineSubtitle": "මා එක් කළ බෙදාගත් වාර්තා ගැන පමණක් මතක් කරන්න. අන් අය එක් කළ වාර්තා තවමත් යෙදුමේ පෙන්වයි."
+  "notifSharedOnlyMineSubtitle": "මා එක් කළ බෙදාගත් වාර්තා ගැන පමණක් මතක් කරන්න. අන් අය එක් කළ වාර්තා තවමත් යෙදුමේ පෙන්වයි.",
+  "travelPassportExpiresBeforeLeaving": "ඔබ පිටත් වීමට පෙර ගමන් බලපත්‍රය කල් ඉකුත් වේ",
+  "travelVisaExpiresBeforeLeaving": "ඔබ පිටත් වීමට පෙර වීසා කල් ඉකුත් වේ",
+  "travelInsuranceEndsBeforeLeaving": "ඔබ පිටත් වීමට පෙර ගමන් රක්ෂණය අවසන් වේ",
+  "travelLicenceExpiresBeforeLeaving": "ඔබ පිටත් වීමට පෙර රියදුරු බලපත්‍රය කල් ඉකුත් වේ",
+  "travelTravellersCount": "{count, plural, =1{සංචාරකයන් 1} other{සංචාරකයන් {count}}}",
+  "travelDetailExpiresDaysBeforeLeaving": "{name} {date} දින කල් ඉකුත් වේ, {days, plural, =1{ඔබ පිටත් වීමට දින 1කට පෙර} other{ඔබ පිටත් වීමට දින {days}කට පෙර}}."
 }
