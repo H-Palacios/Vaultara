@@ -75,7 +75,7 @@ class TravelCheckCard extends StatelessWidget {
                                 child: Text(
                                   loc.travelPremiumChip,
                                   style: TextStyle(
-                                    fontSize: 11,
+                                    fontSize: 12,
                                     fontWeight: FontWeight.w700,
                                     color: scheme.primary,
                                   ),
