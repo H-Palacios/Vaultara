@@ -1,4 +1,5 @@
 import 'package:vaultara/features/billing/services/subscription_service.dart';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 class EntitlementService {
   EntitlementService._();
@@ -14,7 +15,9 @@ class EntitlementService {
     try {
       await service.init();
       await service.restore();
-    } catch (_) {}
+    } catch (error, stack) {
+      ErrorReporter.record(error, stack, 'entitlement_restore');
+    }
   }
 
   void resetForSignOut() {

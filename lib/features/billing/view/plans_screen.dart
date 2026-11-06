@@ -389,7 +389,7 @@ class _PlansScreenState extends State<PlansScreen> {
       );
     } else {
       final smallStyle = TextStyle(
-        fontSize: 11,
+        fontSize: 12,
         color: scheme.onSurfaceVariant,
         height: 1.3,
       );
@@ -431,7 +431,7 @@ class _PlansScreenState extends State<PlansScreen> {
     }
 
     final hintStyle = TextStyle(
-      fontSize: 11,
+      fontSize: 12,
       fontWeight: FontWeight.w700,
       color: scheme.onSurfaceVariant,
       height: 1.3,
@@ -564,7 +564,7 @@ class _PlansScreenState extends State<PlansScreen> {
                 loc.plansTaxIncluded,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 10.5,
+                  fontSize: 12,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
@@ -885,7 +885,7 @@ class _FreePlanStrip extends StatelessWidget {
             child: Text(
               badge,
               style: TextStyle(
-                fontSize: 11,
+                fontSize: 12,
                 fontWeight: FontWeight.w700,
                 color: scheme.onSecondaryContainer,
               ),

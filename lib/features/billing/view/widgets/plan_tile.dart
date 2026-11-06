@@ -66,7 +66,7 @@ class PlanTile extends StatelessWidget {
                     child: Text(
                       badge!,
                       style: TextStyle(
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                         color: highlighted
                             ? scheme.onPrimary
