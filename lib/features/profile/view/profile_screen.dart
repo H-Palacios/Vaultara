@@ -9,7 +9,11 @@ import 'package:vaultara/core/view/widgets/settings_tile.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 
 import 'package:vaultara/features/auth/view/account/account_screen.dart';
+import 'package:vaultara/features/costs/data/display_currency.dart';
+import 'package:vaultara/features/costs/data/fx_repository.dart';
+import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/billing/view/plans_screen.dart';
+import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/profile/data/user_profile.dart';
 import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
@@ -59,7 +63,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     minute: ReminderTimeService.defaultMinute,
   );
 
-  UserProfile? _profile;
+  UserProfile? _profile = UserProfile.quick();
 
   final GlobalKey _lostWalletKey = GlobalKey();
   final GlobalKey _lifeEventsKey = GlobalKey();
@@ -74,7 +78,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ..register(TutorialStep.smartLifeEvents, _lifeEventsKey)
       ..register(TutorialStep.smartProofPack, _proofPackKey)
       ..register(TutorialStep.smartSharedLinks, _sharedLinksKey);
+    AvatarRepository.ensureStarted();
     _load();
+    DisplayCurrency.load();
+    FxRepository.ensureLoaded();
   }
 
   @override
@@ -103,6 +110,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Future<void> _openAppearance() async {
     await showThemeModeSheet(context);
     if (mounted) setState(() {});
+  }
+
+  Future<void> _openCurrency() async {
+    final current = CostField.defaultCurrency(Localizations.localeOf(context));
+    final picked = await showCurrencyPicker(
+      context,
+      selected: current,
+      available: FxRepository.rates.value?.codes,
+    );
+    if (picked == null) return;
+    await DisplayCurrency.set(picked);
   }
 
   Future<void> _openNotificationSettings() async {
@@ -222,6 +240,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
               title: t.appearanceTitle,
               subtitle: themeModeLabel(t, ThemePreference.mode.value),
               onTap: _openAppearance,
+            ),
+            const SizedBox(height: 12),
+            ValueListenableBuilder<String?>(
+              valueListenable: DisplayCurrency.chosen,
+              builder: (context, _, __) => SettingsTile(
+                icon: Icons.currency_exchange_rounded,
+                title: t.currencyDisplayTitle,
+                subtitle: t.currencyDisplaySubtitle(
+                  CostField.defaultCurrency(Localizations.localeOf(context)),
+                ),
+                onTap: _openCurrency,
+              ),
             ),
             const SizedBox(height: 24),
             _SectionHeader(text: t.profileAccountSectionTitle),

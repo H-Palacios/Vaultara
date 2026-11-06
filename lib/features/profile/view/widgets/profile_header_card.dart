@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/profile/data/user_profile.dart';
 import 'package:vaultara/features/profile/view/widgets/profile_avatar_button.dart';
 
@@ -19,6 +20,12 @@ class ProfileHeaderCard extends StatelessWidget {
     final t = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
+    final name = profile?.fullName ?? '';
+    final email = profile?.email ?? '';
+    final initials = name.isNotEmpty
+        ? profile!.initials
+        : AvatarRepository.initialsOf(name, email);
+
     final planLabel = isPremium ? t.plan_premium : t.plan_free;
     final planColor = isPremium ? scheme.primary : scheme.secondaryContainer;
     final planTextColor =
@@ -34,30 +41,30 @@ class ProfileHeaderCard extends StatelessWidget {
       child: Row(
         children: [
           ProfileAvatarButton(
-            initials: profile?.initials ?? '?',
-            enabled: profile != null,
+            initials: initials,
           ),
           const SizedBox(width: 12),
           Expanded(
-            child: profile == null
-                ? const LinearProgressIndicator()
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        profile!.fullName,
-                        style: const TextStyle(fontWeight: FontWeight.w800),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        profile!.email,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (name.isNotEmpty)
+                  Text(
+                    name,
+                    style: const TextStyle(fontWeight: FontWeight.w800),
                   ),
+                if (name.isNotEmpty && email.isNotEmpty)
+                  const SizedBox(height: 4),
+                if (email.isNotEmpty)
+                  Text(
+                    email,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -79,7 +86,7 @@ class ProfileHeaderCard extends StatelessWidget {
                 Text(
                   planLabel,
                   style: TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     color: planTextColor,
                   ),
