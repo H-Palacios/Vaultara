@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
@@ -234,7 +235,8 @@ class HouseholdRepository {
       planSource.value = source is String ? source : null;
       final hid = data?['householdId'];
       _follow(hid is String && hid.isNotEmpty ? hid : null);
-    }, onError: (_) {});
+    }, onError: (Object e, StackTrace s) =>
+        ErrorReporter.record(e, s, 'household_listener'));
   }
 
   static void _detachHousehold() {
