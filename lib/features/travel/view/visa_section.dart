@@ -551,7 +551,7 @@ class VisaSection extends StatelessWidget {
                                   ? loc.visaDataStale(when)
                                   : loc.visaDataUpdated(when),
                               style: TextStyle(
-                                fontSize: 11.5,
+                                fontSize: 12,
                                 height: 1.3,
                                 color: stale
                                     ? TravelText.warningColour
@@ -562,7 +562,6 @@ class VisaSection extends StatelessWidget {
                   ),
                   IconButton(
                     tooltip: loc.visaCheckRules,
-                    visualDensity: VisualDensity.compact,
                     icon: Icon(
                       Icons.info_outline_rounded,
                       size: 20,

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:vaultara/core/errors/error_reporter.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -55,7 +56,8 @@ class TripRepository {
         ..sort((a, b) => a.departure.compareTo(b.departure));
       trips.value = List<SavedTrip>.unmodifiable(list);
       TripReminders.refreshSoon(trips.value);
-    }, onError: (_) {});
+    }, onError: (Object e, StackTrace s) =>
+        ErrorReporter.record(e, s, 'trips_listener'));
   }
 
   static void clearForSignOut() {

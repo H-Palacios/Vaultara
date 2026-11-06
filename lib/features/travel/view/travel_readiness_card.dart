@@ -78,7 +78,7 @@ class TravelReadinessCard extends StatelessWidget {
             child: Text(
               loc.travelRuleEmbassy,
               style: TextStyle(
-                fontSize: 11.5,
+                fontSize: 12,
                 fontStyle: FontStyle.italic,
                 color: scheme.onSurfaceVariant,
               ),
