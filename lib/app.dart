@@ -11,6 +11,8 @@ import 'core/analytics/analytics_service.dart';
 import 'core/data/repositories/record_repository.dart';
 import 'features/records/logic/record_lock.dart';
 import 'core/navigation/navigator_key.dart';
+import 'core/services/connection_status.dart';
+import 'core/view/widgets/offline_banner.dart';
 import 'core/theme/app_brand.dart';
 import 'core/theme/app_themes.dart';
 import 'core/theme/theme_preference.dart';
@@ -289,16 +291,40 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
                 }
               });
             }
-            return Stack(
-              fit: StackFit.expand,
-              children: [
-                child!,
-                ValueListenableBuilder<bool>(
-                  valueListenable: PrivacyScreen.coverVisible,
-                  builder: (context, visible, _) =>
-                      visible ? const _PrivacyCover() : const SizedBox.shrink(),
+            final media = MediaQuery.of(context);
+            return MediaQuery(
+              data: media.copyWith(
+                textScaler: media.textScaler.clamp(
+                  minScaleFactor: 0.85,
+                  maxScaleFactor: 1.6,
                 ),
-              ],
+              ),
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  ValueListenableBuilder<bool>(
+                    valueListenable: ConnectionStatus.offline,
+                    builder: (context, offline, _) => Column(
+                      children: [
+                        const OfflineBanner(),
+                        Expanded(
+                          child: MediaQuery.removePadding(
+                            context: context,
+                            removeTop: offline,
+                            child: child!,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  ValueListenableBuilder<bool>(
+                    valueListenable: PrivacyScreen.coverVisible,
+                    builder: (context, visible, _) => visible
+                        ? const _PrivacyCover()
+                        : const SizedBox.shrink(),
+                  ),
+                ],
+              ),
             );
           },
           debugShowCheckedModeBanner: false,
