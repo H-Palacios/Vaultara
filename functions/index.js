@@ -73,6 +73,7 @@ exports.rejectUpdateRequest = require("./updates").rejectUpdateRequest;
 exports.purgeUpdateRequests = require("./updates").purgeUpdateRequests;
 exports.visaDataJob = require("./visa").visaDataJob;
 exports.visaLinkJob = require("./visa-links").visaLinkJob;
+exports.fxRatesJob = require("./fx-rates").fxRatesJob;
 
 const CALLABLE = { enforceAppCheck: ENFORCE_APP_CHECK };
 const CALLABLE_CONSUME = { ...CALLABLE, consumeAppCheckToken: true };
