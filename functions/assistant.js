@@ -31,6 +31,8 @@ const MAX_TRIPS = 20;
 const MAX_COUNTRIES = 5;
 const MAX_FLIGHTS = 10;
 const FLIGHT_PLACE_MAX = 40;
+const MAX_PLACES = 5;
+const PLACE_MAX = 40;
 const MAX_TRAVELLERS = 26;
 const MAX_REMINDER_DAYS = 365;
 const MAX_LEAD_DAYS = 365;
@@ -418,16 +420,37 @@ const TRIP_EXTRA_PROPERTIES = {
   },
 };
 
-function withTripExtras(tool) {
+// Cities or towns on a trip. Only clients on protocol 6 can save them.
+const TRIP_PLACES_PROPERTY = {
+  places: {
+    type: "array",
+    items: { type: "string" },
+    description:
+      "Optional cities or towns, at most 5, for example [\"Durban\"] or [\"Tokyo\", \"Osaka\"]. Always give one for a trip inside the user's home country. For changes give the full new list.",
+  },
+};
+
+function withTripExtras(tool, places = false) {
   if (tool.name !== "propose_create_trip" && tool.name !== "propose_update_trip") return tool;
   return {
     ...tool,
     input_schema: {
       ...tool.input_schema,
-      properties: { ...tool.input_schema.properties, ...TRIP_EXTRA_PROPERTIES },
+      properties: {
+        ...tool.input_schema.properties,
+        ...TRIP_EXTRA_PROPERTIES,
+        ...(places ? TRIP_PLACES_PROPERTY : {}),
+      },
     },
   };
 }
+
+const USE_LOCATION = {
+  name: "use_location",
+  description:
+    "Show a card asking the user to let Vaultara see which country they are in right now. Use it only when the phone's location was not given and knowing the current country would change the answer, for example the user says they are already travelling, or wants a trip whose dates include today. Never use it for anything else, and at most once per chat. If the user said no before, do not ask again.",
+  input_schema: { type: "object", properties: {} },
+};
 
 const SETTINGS = [
   "app_lock",
@@ -465,12 +488,21 @@ const TOOLS_V1 = [...READ_TOOLS, PROPOSE_RECORD, PROPOSE_UPDATE_LEGACY];
 const TOOLS_V2 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS];
 const TOOLS_V3 = [...TOOLS_V2, SUGGEST_REPLIES];
 const TOOLS_V4 = [...TOOLS_V2, PROPOSE_SETTING, SUGGEST_REPLIES];
-const TOOLS_V5 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS.map(withTripExtras), PROPOSE_SETTING, SUGGEST_REPLIES];
+const TOOLS_V5 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS.map((t) => withTripExtras(t)), PROPOSE_SETTING, SUGGEST_REPLIES];
+const TOOLS_V6 = [
+  ...READ_TOOLS,
+  PROPOSE_RECORD,
+  ...ACTION_TOOLS.map((t) => withTripExtras(t, true)),
+  PROPOSE_SETTING,
+  USE_LOCATION,
+  SUGGEST_REPLIES,
+];
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
 const NAMES_V4 = new Set(TOOLS_V4.map((t) => t.name));
 const NAMES_V5 = NAMES_V4;
+const NAMES_V6 = new Set(TOOLS_V6.map((t) => t.name));
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -486,12 +518,12 @@ const APP_GUIDE = [
   "- Lock this record: the phone's fingerprint, face or screen lock is needed to see it. You cannot see the name or details of locked records.",
   "- Insights tab: smart insights about what needs attention, the expiry timeline by month, and renewal costs for the next 12 months (paid plans). Insights can be read aloud.",
   "- Calendar tab: expiry dates on a calendar. Profile > Export has Export as PDF (paid plans), Add to calendar, and Calendar link (a live calendar feed, paid plans).",
-  "- Travel check (paid plans): Home > \"Planning a trip?\". A trip has up to 5 destination countries, dates, travellers, whether the user drives and the reason for the trip (holiday, visiting family or friends, business, study or work). Visa results describe short visits; for study and work trips Vaultara warns that a study or work visa is usually needed and links to the official rules. Vaultara checks passport validity, visas, travel insurance and driving licence, runs a visa check from each traveller's nationality and residence, and builds a trip checklist. Up to 20 trips.",
+  "- Travel check (paid plans): Home > \"Planning a trip?\". A trip has up to 5 destination countries, dates, travellers, whether the user drives and the reason for the trip (holiday, visiting family or friends, business, study or work). Visa results describe short visits; for study and work trips Vaultara warns that a study or work visa is usually needed and links to the official rules. Vaultara checks passport validity, visas, travel insurance and driving licence, runs a visa check from each traveller's nationality and residence, and builds a trip checklist. A trip can also have cities or towns, flights with connections, and the date the user reaches each country. Trips inside the user's home country get no visa checks and a checklist for travelling at home. Up to 20 trips.",
   "- Family: Profile > Family. The Family plan tracks records for up to 5 people and Business for up to 25; each person has their own records and reminders. Household (Family and Business): the owner creates a household and invites people with a code or link (each invite works once, for 7 days). Members get Premium through the plan, their own records stay private, and records with Shared with household turned on can be seen and edited by everyone in it.",
   "- Smart tools in Profile: Lost my wallet (what was in it and what to replace), Life events (what to update after moving, a new name or a new car), Proof pack (paid plans: chosen records and photos in one PDF), Shared links (see and stop links; a link works for 1 to 72 hours, 24 hours by default).",
   "- Import: Profile > Import from spreadsheet (CSV file). Invite friends in Profile: both people get a free month of Premium.",
   "- Plans (the plan card in Profile): Free has 10 records, 3 custom categories and the basic reminders. Premium (Individual tab) has unlimited records and custom categories, custom groups, multiple and custom reminders, Ask Vaultara, Travel check, PDF export, Proof pack, Calendar link, renewal costs, and up to 10 photos or files per record instead of 1. Family has everything in Premium for up to 5 people and a household, with one subscription. Business has everything in Family, staff and vehicle records for up to 25 people, staff email reminders and a team PDF with the company name. Billing is monthly or yearly. Free trials: Premium (Individual) and Family 7 days, Business 14 days. Billing history is on the Plans screen. Subscriptions are managed and cancelled in Google Play or the App Store.",
-  "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, and Delete account.",
+  "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, Use my location for trips (off by default: only the country is used, to tell if the user is at home or travelling, and it is not saved), and Delete account.",
   "- Delete account: Profile > Security and privacy > Delete account, or on the web at vaultara-f49ab.web.app/delete. It does not cancel a subscription; cancel that in Google Play or the App Store first.",
   "- Privacy: data is stored on Google Cloud in the United States and is not sold. Scanning happens on the phone. Ask Vaultara sends the user's messages and the record details it looks up to Anthropic to answer. Chats are saved to the account so the user can come back to them; they are deleted automatically after 90 days, and the user can delete one chat or all chats at any time in the chat history.",
   "- Help: Profile > Tutorials and Profile > Support (email support@vorkalis.com).",
@@ -627,6 +659,21 @@ async function householdFor(uid, userData) {
   return hid;
 }
 
+function countryList(value) {
+  if (!Array.isArray(value)) return [];
+  return value.map(countryCode).filter(Boolean).slice(0, 5);
+}
+
+// Passport and home country as saved in Vaultara, for the user or a person.
+function homeFields(data) {
+  const nationality = countryCode(data?.nationality);
+  return {
+    nationality,
+    otherPassports: countryList(data?.extraPassports).filter((c) => c !== nationality),
+    residence: countryCode(data?.residence),
+  };
+}
+
 class UserData {
   constructor(uid, userData) {
     this.uid = uid;
@@ -636,6 +683,10 @@ class UserData {
     this._records = null;
     this._people = null;
     this._trips = null;
+  }
+
+  get me() {
+    return homeFields(this.userData);
   }
 
   get userRef() {
@@ -651,8 +702,9 @@ class UserData {
     const snap = await this.userRef.collection("people").get();
     const people = [];
     for (const doc of snap.docs) {
-      const name = str(doc.data()?.name, PERSON_NAME_MAX);
-      if (name) people.push({ id: doc.id, name });
+      const data = doc.data() || {};
+      const name = str(data.name, PERSON_NAME_MAX);
+      if (name) people.push({ id: doc.id, name, ...homeFields(data) });
     }
     this._people = people;
     return people;
@@ -686,6 +738,9 @@ class UserData {
         purpose: TRIP_PURPOSES.includes(data.purpose) ? data.purpose : DEFAULT_TRIP_PURPOSE,
         needsVisa: data.needsVisa === true,
         flights: storedFlights(data.flights, this.offset),
+        places: Array.isArray(data.places)
+          ? data.places.map((p) => str(p, PLACE_MAX)).filter(Boolean).slice(0, MAX_PLACES)
+          : [],
         arrivals: storedArrivals(data.arrivals, this.offset),
       });
     }
@@ -1053,8 +1108,14 @@ async function getRecord(ctx, input) {
 
 async function listPeople(ctx) {
   const people = (await ctx.people()).slice(0, MAX_RESULTS);
+  const describe = (name, p) => ({
+    name,
+    passport: p.nationality,
+    other_passports: p.otherPassports,
+    lives_in: p.residence,
+  });
   return {
-    people: ["me", ...people.map((p) => p.name)],
+    people: [describe("me", ctx.me), ...people.map((p) => describe(p.name, p))],
     plan: ctx.plan,
     people_limit: PEOPLE_LIMITS[ctx.plan] || 0,
   };
@@ -1075,6 +1136,8 @@ async function listTrips(ctx) {
       needs_visa: trip.needsVisa,
       driving: trip.driving,
       purpose: trip.purpose,
+      places: trip.places,
+      underway: trip.startDay <= ctx.today && trip.endDay >= ctx.today,
       flights: trip.flights.map((f) => ({
         from: f.from,
         to: f.to,
@@ -1385,6 +1448,19 @@ function parseArrivals(value, countries, startDay, endDay) {
   return { arrivals: out };
 }
 
+function parsePlaces(value) {
+  if (!Array.isArray(value)) return { error: "places must be a list of city or town names." };
+  const out = [];
+  for (const item of value) {
+    const place = str(item);
+    if (!place) continue;
+    if (place.length > PLACE_MAX) return { error: `Each place must be at most ${PLACE_MAX} characters.` };
+    if (!out.some((p) => p.toLowerCase() === place.toLowerCase())) out.push(place);
+  }
+  if (out.length > MAX_PLACES) return { error: `A trip can have at most ${MAX_PLACES} places.` };
+  return { places: out };
+}
+
 async function proposeCreateTrip(ctx, input, actions) {
   const trips = await ctx.trips();
   if (trips.length >= MAX_TRIPS) return { error: "The user already has 20 trips, the most allowed. An old trip must be deleted first." };
@@ -1422,6 +1498,12 @@ async function proposeCreateTrip(ctx, input, actions) {
     if (parsed.error) return parsed;
     arrivals = parsed.arrivals;
   }
+  let places = [];
+  if (ctx.tripPlaces && has(input, "places") && input.places) {
+    const parsed = parsePlaces(input.places);
+    if (parsed.error) return parsed;
+    places = parsed.places;
+  }
   const failed = pushAction(actions, {
     type: "trip_add",
     name: name || null,
@@ -1433,6 +1515,7 @@ async function proposeCreateTrip(ctx, input, actions) {
     driving: input?.driving === true,
     purpose: has(input, "purpose") ? input.purpose : DEFAULT_TRIP_PURPOSE,
     ...(flights.length ? { flights } : {}),
+    ...(places.length ? { places } : {}),
     ...(Object.keys(arrivals).length ? { arrivals } : {}),
   });
   if (failed) return failed;
@@ -1498,6 +1581,11 @@ async function proposeUpdateTrip(ctx, input, actions) {
     const parsed = parseArrivals(input.arrivals, changes.countries || trip.countries, startDay, endDay);
     if (parsed.error) return parsed;
     changes.arrivals = parsed.arrivals;
+  }
+  if (ctx.tripPlaces && has(input, "places") && Array.isArray(input.places)) {
+    const parsed = parsePlaces(input.places);
+    if (parsed.error) return parsed;
+    if (parsed.places.join("|") !== trip.places.join("|")) changes.places = parsed.places;
   }
   if (Object.keys(changes).length === 0) return { error: "Nothing would change." };
   const failed = pushAction(actions, { type: "trip_edit", tripId: trip.id, name: trip.name, changes });
@@ -1587,6 +1675,16 @@ async function runTool(ctx, name, input, actions, allowed) {
         return await openScreen(ctx, input, actions);
       case "propose_setting":
         return proposeSetting(input, actions);
+      case "use_location": {
+        if (ctx.here) return { error: "The current country is already known: " + ctx.here + "." };
+        if (actions.some((a) => a.type === "location")) return { error: "The card is already shown." };
+        const failed = pushAction(actions, { type: "location" });
+        if (failed) return failed;
+        return {
+          status: "card_ready",
+          note: "The user sees a Use my location card. If they allow it, the app sends a short message and the next request includes their country. Reply in one short sentence and do not guess where they are.",
+        };
+      }
       default:
         return { error: "Unknown tool." };
     }
@@ -1596,7 +1694,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1644,6 +1742,14 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false) {
       "Flights: when the user mentions flights, add them to propose_create_trip or propose_update_trip as separate legs, with each connection as its own leg (for example Johannesburg to Dubai, then Dubai to Tokyo) and to_country set on every leg. Use the local date at arrival as land_date, so an overnight flight lands the next day. Do not ask for flights before preparing a new trip; after the trip card, offer \"Add my flights\" with suggest_replies. To add or change one flight on a saved trip, call list_trips and send the full new flights list. For trips with several countries, arrivals sets the day the user reaches a country they do not fly into."
     );
   }
+  if (v6) {
+    lines.push(
+      "Home country: each traveller's passports and the country they live in are in the dynamic facts and in list_people. A country is home for a traveller when it is one of their passports or where they live. Never say a traveller needs a visa, work permit or study permit for their home country. If they hold that country's passport, say no visa or permit is needed there. If they only live there, say they do not need a visa to be there, and for study or work trips that they should check their own permit allows it. If the passport is not saved, ask which passport they travel on before giving visa advice, and offer propose_update_person to save it.",
+      "Trips at home: a trip inside the user's home country is normal, for example Cape Town to Durban. Still prepare it, without any visa or permit talk, and give places. If the user did not say which city or town, ask for it in the same single message as anything else that is missing, and call suggest_replies with likely cities.",
+      "Already there: before preparing a trip, call list_trips. If a saved trip to that country is underway today, or its dates overlap, do not prepare a second trip. Say they are already on that trip and offer to add a city (places), change its dates, or make a separate trip, with suggest_replies.",
+      "Current location: if the dynamic facts give the phone's current country, use it only as a hint, never as certain, because it can be wrong near borders. When it is the country the user lives in, they are at home, not on a trip. When it differs from where they live and no trip there is underway, ask whether they are travelling there now; if yes, ask when they arrived and when they leave and prepare the trip with today inside it. If the user lives there now (they say so), offer propose_update_person for me with residence. Never change where the user lives without asking. If the current country is not given and it would change the answer, you may call use_location once."
+    );
+  }
   lines.push("", APP_GUIDE);
   return lines.join("\n");
 }
@@ -1653,8 +1759,9 @@ const STATIC_PROMPT_V2 = staticPrompt(true);
 const STATIC_PROMPT_V3 = staticPrompt(true, true);
 const STATIC_PROMPT_V4 = staticPrompt(true, true, true);
 const STATIC_PROMPT_V5 = staticPrompt(true, true, true, true);
+const STATIC_PROMPT_V6 = staticPrompt(true, true, true, true, true);
 
-function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1662,6 +1769,19 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false)
     `The user's app language has the code "${lang}". Always reply in that language unless the user clearly writes in another language, then use theirs.`,
     `The user's plan is ${ctx.plan}.`,
   ];
+  if (v6) {
+    const me = ctx.me;
+    const passports = [me.nationality, ...me.otherPassports].filter(Boolean);
+    dynamic.push(
+      passports.length
+        ? `The user's passports: ${passports.join(", ")}.`
+        : "The user's passport is not saved.",
+      me.residence ? `The user lives in ${me.residence}.` : "Where the user lives is not saved.",
+      ctx.here
+        ? `The phone's approximate location shows the user is in ${ctx.here} right now.`
+        : "The phone's current country is not known."
+    );
+  }
   if (intent === "propose") {
     dynamic.push(
       "The user is filling in the add record form. Call propose_record exactly once with your best guess from their text. Do not ask questions."
@@ -1670,7 +1790,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false)
   return [
     {
       type: "text",
-      text: v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -1818,6 +1938,7 @@ exports.askVaultara = onCall(
     const v3 = version >= 3 && intent === "chat";
     const v4 = version >= 4 && intent === "chat";
     const v5 = version >= 5 && intent === "chat";
+    const v6 = version >= 6 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -1842,9 +1963,11 @@ exports.askVaultara = onCall(
     const ctx = new UserData(uid, userData);
     const model = str(process.env.ANTHROPIC_MODEL) || DEFAULT_MODEL;
     ctx.tripExtras = v5;
-    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5);
-    const tools = v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    ctx.tripPlaces = v6;
+    ctx.here = v6 ? countryCode(request.data?.here) : null;
+    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6);
+    const tools = v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
