@@ -19,7 +19,7 @@
       <a href="/terms/">Terms of Service</a>
     </nav>
     <h1 id="top">Privacy Policy</h1>
-    <p class="meta"><span>Version 2026-10-11</span><span>Last updated 11 October 2026</span></p>
+    <p class="meta"><span>Version 2026-11-07</span><span>Last updated 7 November 2026</span></p>
   </div>
 </header>
 
@@ -111,7 +111,7 @@
   <li><strong>Records:</strong> for each document or record you add, its name, category, expiry date, notes and, if you choose to add them, document numbers (for example, a passport or licence number).</li>
   <li><strong>Attachments:</strong> photos and PDF files you choose to attach to a record. You can choose to encrypt photos on your device before they are uploaded (see <a href="#security">section 12</a>).</li>
   <li><strong>People in your household:</strong> the names of family or household members you add, and the records you enter for them.</li>
-  <li><strong>Trips:</strong> destinations, travel dates and travellers. For visa checks, the nationality and country of residence of each traveller.</li>
+  <li><strong>Trips:</strong> destinations, any cities or towns you add, travel dates, travellers, the reason for the trip, flights (where they leave from and land, dates and times) and the date you reach each country. For visa checks, the nationality and country of residence of each traveller.</li>
   <li><strong>Staff details (Business plan):</strong> staff names, records and the email addresses you enter so that we can send them reminders.</li>
   <li><strong>Shared links:</strong> the links you create to share a record, and what each link gives access to.</li>
   <li><strong>Messages to the Ask Vaultara assistant (paid plans):</strong> the text you type or dictate to it, and the answers it gives. These are saved to your account as chat history so that you can come back to them (see <a href="#ai-assistant">section 13</a>). You cannot send images or files to the assistant.</li>
@@ -129,7 +129,17 @@
   <li><strong>App integrity checks:</strong> Firebase App Check confirms that requests come from a genuine copy of the app on a genuine device. To do this it uses Google Play Integrity on Android and Apple App Attest on iOS, with DeviceCheck used on devices that do not support App Attest.</li>
 </ul>
 
-<h3>4.3 Information from Google Play and Apple</h3>
+<h3>4.3 Your approximate location (optional)</h3>
+<p>This is off unless you turn on <strong>Use my location for trips</strong> in Security and privacy, or allow it when Ask Vaultara asks. It lets Vaultara tell whether you are at home or travelling when you ask about trips.</p>
+<ul>
+  <li><strong>Approximate only:</strong> we ask your phone for approximate location, not precise location, and only while the app is open. Vaultara never uses your location in the background.</li>
+  <li><strong>Only the country is used:</strong> your phone turns the position into a country on the device. To do this, your phone's operating system may use its own location and geocoding services (Google on Android, Apple on iOS) under their privacy terms. Your coordinates are not sent to us.</li>
+  <li><strong>When it is sent:</strong> only the two letter country code (for example "JP") is sent, and only together with a message you send to Ask Vaultara, so that the assistant can answer (see <a href="#ai-assistant">section 13</a>).</li>
+  <li><strong>Not stored:</strong> we do not save your location or the country in your account, and we do not keep a location history. The app keeps the country in memory for up to 15 minutes so that it does not ask your phone for every message.</li>
+  <li><strong>Your choice:</strong> you can turn it off at any time in Security and privacy, or remove the permission in your phone's settings. Everything else in Vaultara works without it.</li>
+</ul>
+
+<h3>4.4 Information from Google Play and Apple</h3>
 <p>When you buy or renew a subscription, the store tells us which plan you bought, the billing period, which store you used, and the relevant dates. We keep this as your billing history. We do not receive your card number or bank details.</p>
 <p class="back-top"><a href="#top">Back to top</a></p>
 
@@ -139,6 +149,7 @@
   <li><strong>Payment card details.</strong> Google Play and Apple are the merchants of record and process all payments.</li>
   <li><strong>The contents of encrypted photos.</strong> If you use end-to-end encryption, we store only the encrypted file. We do not have the key.</li>
   <li><strong>Scan images for text recognition.</strong> Passport, ID and barcode scanning uses Google ML Kit, which runs on your phone. The camera image is processed on the device. Only the details you choose to save are stored in your account. If you also attach the photo to a record, it is uploaded like any other attachment.</li>
+  <li><strong>Precise location or location history.</strong> If you turn on Use my location for trips, only the country you are in is used, and it is not stored (see section 4.3).</li>
   <li><strong>Biometric data.</strong> If you use fingerprint or face unlock for the app lock, your phone's operating system checks it. Vaultara and Vorkalis never receive your fingerprint or face data.</li>
 </ul>
 <p class="back-top"><a href="#top">Back to top</a></p>
@@ -175,6 +186,11 @@
       <td>Run visa checks for trips using nationality, residence and destination</td>
       <td>Needed to carry out our agreement with you (s11(1)(b))</td>
       <td>Contract (Art. 6(1)(b))</td>
+    </tr>
+    <tr>
+      <td>Use the country you are in to tell whether you are at home or travelling when you ask about trips (optional, approximate location)</td>
+      <td>Your consent, given when you turn the feature on (s11(1)(a)). You can withdraw it at any time.</td>
+      <td>Consent (Art. 6(1)(a))</td>
     </tr>
     <tr>
       <td>Answer your questions in the Ask Vaultara assistant</td>
@@ -284,7 +300,7 @@
 </div>
 
 <h3>App stores</h3>
-<p>Google Play and Apple process your payments as independent businesses under their own privacy policies. They tell us about your subscription status, as described in <a href="#information-we-collect">section 4.3</a>.</p>
+<p>Google Play and Apple process your payments as independent businesses under their own privacy policies. They tell us about your subscription status, as described in <a href="#information-we-collect">section 4.4</a>.</p>
 
 <h3>Public data we use</h3>
 <p>Visa checks use a public dataset from Passport Index. We download that data; we do not send your personal information to Passport Index.</p>
@@ -394,7 +410,8 @@
 <ul>
   <li>Nothing is sent to Anthropic unless you use the assistant.</li>
   <li>When you use it, your messages in the current chat are sent to Anthropic so that it can produce an answer. If you continue a saved chat, its earlier messages are sent too. You cannot send images or files to the assistant.</li>
-  <li>To answer your question, the assistant can look up your information in Vaultara and send it to Anthropic. This can include the names, groups, categories, expiry dates, notes, renewal costs and reminder settings of your records and of records shared with your household, the names of the people you track records for, your trips (dates, countries and travellers), and which plan you have. It does not look up document numbers or attachments. For locked records, it sees only that a locked record exists and its expiry date, not its name, group or notes.</li>
+  <li>To answer your question, the assistant can look up your information in Vaultara and send it to Anthropic. This can include the names, groups, categories, expiry dates, notes, renewal costs and reminder settings of your records and of records shared with your household, the names of the people you track records for, the passport countries and country of residence you saved for yourself and for them, your trips (dates, countries, cities or towns, travellers, reason for the trip, flights and arrival dates), and which plan you have. It does not look up document numbers or attachments. For locked records, it sees only that a locked record exists and its expiry date, not its name, group or notes.</li>
+  <li>If you turned on Use my location for trips, the country your phone is in (for example "JP") is sent with each message, so that the assistant can tell whether you are at home or travelling. Your coordinates are never sent (see section 4.3).</li>
   <li>The assistant cannot save or change anything by itself. If it suggests a change, for example a new record, a new renewal cost, a deleted record, a person or a trip, nothing changes until you confirm it in the app.</li>
   <li>Your chats are saved to your account as chat history, so that you can come back to them and continue them. A saved chat holds your messages, the answers, and a short summary of each change the assistant suggested and whether you confirmed it.</li>
   <li>Saved chats are deleted automatically 90 days after their last message. You can delete any chat, or all chats, at any time in Ask Vaultara under Chat history. When you delete your account, your saved chats are deleted with it.</li>
