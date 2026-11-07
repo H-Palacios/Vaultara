@@ -17,6 +17,18 @@
   ],
   "fieldOverrides": [
     {
+      "collectionGroup": "assistantRuns",
+      "fieldPath": "expireAt",
+      "ttl": true,
+      "indexes": []
+    },
+    {
+      "collectionGroup": "assistantFeedback",
+      "fieldPath": "expireAt",
+      "ttl": true,
+      "indexes": []
+    },
+    {
       "collectionGroup": "rateLimits",
       "fieldPath": "expireAt",
       "ttl": true,
