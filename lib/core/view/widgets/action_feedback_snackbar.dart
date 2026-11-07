@@ -144,6 +144,26 @@ class ActionFeedbackSnackbar {
     _success(context, message: message, icon: icon);
   }
 
+  static void showInfoWithAction(
+    BuildContext context,
+    String message, {
+    required String actionLabel,
+    required VoidCallback onAction,
+    IconData icon = Icons.info_outline_rounded,
+  }) {
+    final scheme = Theme.of(context).colorScheme;
+    _showWithAction(
+      context,
+      message: message,
+      icon: icon,
+      background: scheme.primaryContainer,
+      textColor: scheme.onPrimaryContainer,
+      actionLabel: actionLabel,
+      onAction: onAction,
+      duration: const Duration(seconds: 6),
+    );
+  }
+
   static void _success(
     BuildContext context, {
     required String message,

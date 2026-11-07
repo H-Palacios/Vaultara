@@ -18,6 +18,8 @@ import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/platform/home_widget_sync.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
+import 'package:vaultara/features/tools/data/life_plan_repository.dart';
+import 'package:vaultara/features/tools/services/life_plan_reminders.dart';
 import 'package:vaultara/features/travel/services/trip_reminders.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
@@ -61,6 +63,7 @@ class RecordRepository {
 
   static void _refreshWidget() {
     TripReminders.refreshSoon(TripRepository.trips.value);
+    LifePlanReminders.refreshSoon(LifePlanRepository.plans.value);
     DailyDigestService.refreshSoon();
     final loc = _loc();
     if (loc == null) return;
@@ -113,6 +116,10 @@ class RecordRepository {
     }
     if (candidate + _slotSpan > TripReminders.stayIdStart &&
         candidate < TripReminders.stayIdEnd) {
+      return true;
+    }
+    if (candidate + _slotSpan > LifePlanReminders.idStart &&
+        candidate < LifePlanReminders.idEnd) {
       return true;
     }
     for (final other in taken) {

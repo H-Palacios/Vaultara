@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -8,6 +10,7 @@ import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/records/view/record_editor_sheet.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/features/tools/view/life_plan_suggestions.dart';
 import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 Widget? buildShellFab(
@@ -103,6 +106,7 @@ void openAddRecord(
       if (!context.mounted) return;
       shell.update(() => shell.index = 0);
       shell.homeKey.currentState?.refreshOverview();
+      unawaited(LifePlanSuggestions.afterRecordAdded(context, record));
     },
   );
   if (startedFromTutorial) {

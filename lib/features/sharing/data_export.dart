@@ -20,6 +20,7 @@ class DataExport {
     'groups',
     'people',
     'trips',
+    'lifePlans',
     'preferences',
   ];
 
