@@ -85,6 +85,11 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - Can add records from plain words, but always asks before saving anything.
 - Share photos, PDFs and text into Vaultara from other apps.
 - Chat history is kept for 90 days and can be deleted at any time.
+- Shows what it is doing while it works ("Checking your trips", "Preparing to delete Passport"), and the answer can be stopped at any time.
+- Asks for the missing details of a new trip in one message, with tap-to-answer buttons, and checks if you are ready for a trip: passport validity after the return date, visas, and records that expire during the trip.
+- Suggests next steps under each answer, and starter questions built from your own records and trips.
+- Several record changes come as one card that can be confirmed together. Every confirmed change can be undone.
+- Record names in answers open the record. Answers can be copied and rated, so weak answers can be found and improved.
 
 ### Experience
 - **Guided tours.** Separate tutorials for adding a record, setting reminders and Insights, or the full tour in one go. A "Take the tour" banner appears for new users.
