@@ -6578,4 +6578,37 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Shigar da murya ya tsaya. Sake gwadawa.';
+
+  @override
+  String get travelItemIdCard => 'Katin shaida, izinin zama ko lasisin tuƙi tare da kai';
+
+  @override
+  String get travelPlacesLabel => 'Birni ko gari';
+
+  @override
+  String get travelPlacesOptional => 'Birni ko gari (zaɓi)';
+
+  @override
+  String get travelPlacesHint => 'Misali Durban, ko Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Yi amfani da wurina don tafiye-tafiye';
+
+  @override
+  String get secLocationSubtitle => 'Yana nuna ko kana gida ko a tafiya idan ka tambaya game da tafiya. Ƙasar kawai ake amfani da ita kuma ba a ajiye ta.';
+
+  @override
+  String get secLocationDenied => 'Wuri a kashe yake ga Vaultara. Za ka iya ba da izini a saitunan waya.';
+
+  @override
+  String get assistantLocationTitle => 'Yi amfani da wurina';
+
+  @override
+  String get assistantLocationNote => 'Vaultara tana duba ƙasar da kake ciki kawai. Ba a aika ko ajiye ainihin wurinka.';
+
+  @override
+  String get assistantLocationShared => 'Na kunna wurina';
+
+  @override
+  String get assistantLocationOff => 'Wuri a kashe yake. Za ka iya kunna shi a Tsaro da sirri.';
 }

@@ -6527,4 +6527,37 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ìtẹ̀wọlé ohùn ti dúró. Tún gbìyànjú.';
+
+  @override
+  String get travelItemIdCard => 'Káàdì ìdánimọ̀, ìwé àṣẹ ibùgbé tàbí ìwé àṣẹ awakọ̀ pẹ̀lú rẹ';
+
+  @override
+  String get travelPlacesLabel => 'Ìlú';
+
+  @override
+  String get travelPlacesOptional => 'Ìlú (àṣàyàn)';
+
+  @override
+  String get travelPlacesHint => 'Fún àpẹẹrẹ Durban, tàbí Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Lo ipò mi fún ìrìn-àjò';
+
+  @override
+  String get secLocationSubtitle => 'Ó ń fi hàn bóyá o wà nílé tàbí lórí ìrìn-àjò nígbà tí o bá béèrè nípa ìrìn-àjò. Orílẹ̀-èdè nìkan ni a ń lò, a kò sì fi pamọ́.';
+
+  @override
+  String get secLocationDenied => 'Ipò ti pa fún Vaultara. O lè gbà á láàyè nínú ètò fóònù.';
+
+  @override
+  String get assistantLocationTitle => 'Lo ipò mi';
+
+  @override
+  String get assistantLocationNote => 'Vaultara kàn ń wo orílẹ̀-èdè tí o wà. A kò fi ipò rẹ gangan ránṣẹ́, a kò sì fi pamọ́.';
+
+  @override
+  String get assistantLocationShared => 'Mo ti tan ipò mi';
+
+  @override
+  String get assistantLocationOff => 'Ipò ti pa. O lè tàn án nínú Ààbò àti àṣírí.';
 }

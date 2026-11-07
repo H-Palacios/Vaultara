@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "Izmēģiniet: Pievieno manu pasi, tai beidzas termiņš 2031. gada maijā",
   "assistantVoiceDone": "Gatavs",
   "assistantVoiceNoSpeech": "Nekas netika sadzirdēts. Pieskarieties mikrofonam un mēģiniet vēlreiz.",
-  "assistantVoiceFailed": "Balss ievade apstājās. Mēģiniet vēlreiz."
+  "assistantVoiceFailed": "Balss ievade apstājās. Mēģiniet vēlreiz.",
+  "travelItemIdCard": "Personas apliecība, uzturēšanās atļauja vai autovadītāja apliecība līdzi",
+  "travelPlacesLabel": "Pilsēta vai ciems",
+  "travelPlacesOptional": "Pilsēta vai ciems (nav obligāti)",
+  "travelPlacesHint": "Piemēram, Durbana, vai Tokija, Osaka",
+  "secLocationTitle": "Izmantot manu atrašanās vietu ceļojumiem",
+  "secLocationSubtitle": "Rāda, vai esat mājās vai ceļojumā, kad jautājat par ceļojumiem. Tiek izmantota tikai valsts, un tā netiek saglabāta.",
+  "secLocationDenied": "Atrašanās vieta Vaultara ir izslēgta. To var atļaut tālruņa iestatījumos.",
+  "assistantLocationTitle": "Izmantot manu atrašanās vietu",
+  "assistantLocationNote": "Vaultara pārbauda tikai, kurā valstī esat. Jūsu precīzā atrašanās vieta netiek sūtīta vai saglabāta.",
+  "assistantLocationShared": "Ieslēdzu atrašanās vietu",
+  "assistantLocationOff": "Atrašanās vieta ir izslēgta. To var ieslēgt sadaļā Drošība un privātums."
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ձայնային մուտքը դադարեց։ Նորից փորձեք։';
+
+  @override
+  String get travelItemIdCard => 'Անձնագիր-ID քարտ, կացության թույլտվություն կամ վարորդական իրավունք ձեզ մոտ';
+
+  @override
+  String get travelPlacesLabel => 'Քաղաք կամ գյուղ';
+
+  @override
+  String get travelPlacesOptional => 'Քաղաք կամ գյուղ (ըստ ցանկության)';
+
+  @override
+  String get travelPlacesHint => 'Օրինակ՝ Դուրբան, կամ Տոկիո, Օսակա';
+
+  @override
+  String get secLocationTitle => 'Օգտագործել իմ գտնվելու վայրը ուղևորությունների համար';
+
+  @override
+  String get secLocationSubtitle => 'Ուղևորությունների մասին հարցնելիս ցույց է տալիս՝ տանն եք, թե ճանապարհին։ Օգտագործվում է միայն երկիրը, և այն չի պահվում։';
+
+  @override
+  String get secLocationDenied => 'Գտնվելու վայրն անջատված է Vaultara-ի համար։ Կարող եք թույլատրել հեռախոսի կարգավորումներում։';
+
+  @override
+  String get assistantLocationTitle => 'Օգտագործել իմ գտնվելու վայրը';
+
+  @override
+  String get assistantLocationNote => 'Vaultara-ն ստուգում է միայն, թե որ երկրում եք։ Ձեր ճշգրիտ վայրը չի ուղարկվում և չի պահվում։';
+
+  @override
+  String get assistantLocationShared => 'Միացրի գտնվելու վայրը';
+
+  @override
+  String get assistantLocationOff => 'Գտնվելու վայրն անջատված է։ Կարող եք միացնել Անվտանգություն և գաղտնիություն բաժնում։';
 }

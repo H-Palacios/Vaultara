@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Cuba: Tambah pasport saya, tamat pada Mei 2031",
   "assistantVoiceDone": "Selesai",
   "assistantVoiceNoSpeech": "Tiada apa-apa didengar. Ketik mikrofon dan cuba lagi.",
-  "assistantVoiceFailed": "Input suara berhenti. Cuba lagi."
+  "assistantVoiceFailed": "Input suara berhenti. Cuba lagi.",
+  "travelItemIdCard": "Kad pengenalan, permit tinggal atau lesen memandu bersama anda",
+  "travelPlacesLabel": "Bandar atau pekan",
+  "travelPlacesOptional": "Bandar atau pekan (pilihan)",
+  "travelPlacesHint": "Contohnya Durban, atau Tokyo, Osaka",
+  "secLocationTitle": "Guna lokasi saya untuk perjalanan",
+  "secLocationSubtitle": "Menunjukkan sama ada anda di rumah atau dalam perjalanan apabila bertanya tentang perjalanan. Hanya negara digunakan dan tidak disimpan.",
+  "secLocationDenied": "Lokasi dimatikan untuk Vaultara. Anda boleh membenarkannya dalam tetapan telefon.",
+  "assistantLocationTitle": "Guna lokasi saya",
+  "assistantLocationNote": "Vaultara hanya menyemak negara anda berada. Lokasi tepat anda tidak dihantar atau disimpan.",
+  "assistantLocationShared": "Saya telah menghidupkan lokasi",
+  "assistantLocationOff": "Lokasi dimatikan. Anda boleh menghidupkannya dalam Keselamatan dan privasi."
 }

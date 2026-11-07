@@ -6527,4 +6527,37 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ntinye olu kwụsịrị. Nwaa ọzọ.';
+
+  @override
+  String get travelItemIdCard => 'Kaadị njirimara, ikike obibi ma ọ bụ akwụkwọ ikike ịnya ụgbọ ala n\'aka gị';
+
+  @override
+  String get travelPlacesLabel => 'Obodo';
+
+  @override
+  String get travelPlacesOptional => 'Obodo (nhọrọ)';
+
+  @override
+  String get travelPlacesHint => 'Dịka Durban, ma ọ bụ Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Jiri ọnọdụ m maka njem';
+
+  @override
+  String get secLocationSubtitle => 'Na-egosi ma ị nọ n\'ụlọ ma ọ bụ na njem mgbe ị jụrụ maka njem. Ọ bụ naanị mba ka a na-eji, a naghị echekwa ya.';
+
+  @override
+  String get secLocationDenied => 'Ọnọdụ gbanyụrụ maka Vaultara. Ị nwere ike ikwe ya na ntọala ekwentị.';
+
+  @override
+  String get assistantLocationTitle => 'Jiri ọnọdụ m';
+
+  @override
+  String get assistantLocationNote => 'Vaultara na-elele naanị mba ị nọ. A naghị eziga ma ọ bụ chekwaa ebe ị nọ kpọmkwem.';
+
+  @override
+  String get assistantLocationShared => 'Agbanyela m ọnọdụ m';
+
+  @override
+  String get assistantLocationOff => 'Ọnọdụ gbanyụrụ. Ị nwere ike ịgbanye ya na Nchekwa na nzuzo.';
 }

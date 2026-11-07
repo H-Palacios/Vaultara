@@ -6578,4 +6578,37 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Sesli giriş durdu. Tekrar deneyin.';
+
+  @override
+  String get travelItemIdCard => 'Kimlik kartı, oturma izni veya ehliyet yanında';
+
+  @override
+  String get travelPlacesLabel => 'Şehir veya kasaba';
+
+  @override
+  String get travelPlacesOptional => 'Şehir veya kasaba (isteğe bağlı)';
+
+  @override
+  String get travelPlacesHint => 'Örneğin Durban, ya da Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Seyahatler için konumumu kullan';
+
+  @override
+  String get secLocationSubtitle => 'Seyahat hakkında sorduğunda evde mi yoksa seyahatte mi olduğunu gösterir. Yalnızca ülke kullanılır ve kaydedilmez.';
+
+  @override
+  String get secLocationDenied => 'Vaultara için konum kapalı. Telefon ayarlarından izin verebilirsin.';
+
+  @override
+  String get assistantLocationTitle => 'Konumumu kullan';
+
+  @override
+  String get assistantLocationNote => 'Vaultara yalnızca hangi ülkede olduğuna bakar. Tam konumun gönderilmez ve kaydedilmez.';
+
+  @override
+  String get assistantLocationShared => 'Konumumu açtım';
+
+  @override
+  String get assistantLocationOff => 'Konum kapalı. Güvenlik ve gizlilik bölümünden açabilirsin.';
 }

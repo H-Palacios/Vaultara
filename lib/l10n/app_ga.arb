@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "Bain triail as: Cuir mo phas leis, rachaidh sé in éag i mBealtaine 2031",
   "assistantVoiceDone": "Déanta",
   "assistantVoiceNoSpeech": "Níor chualathas aon rud. Tapáil an micreafón agus bain triail eile as.",
-  "assistantVoiceFailed": "Stop an t-ionchur gutha. Bain triail eile as."
+  "assistantVoiceFailed": "Stop an t-ionchur gutha. Bain triail eile as.",
+  "travelItemIdCard": "Cárta aitheantais, cead cónaithe nó ceadúnas tiomána agat",
+  "travelPlacesLabel": "Cathair nó baile",
+  "travelPlacesOptional": "Cathair nó baile (roghnach)",
+  "travelPlacesHint": "Mar shampla Durban, nó Tóiceo, Osaka",
+  "secLocationTitle": "Úsáid mo shuíomh do thurais",
+  "secLocationSubtitle": "Taispeánann sé an bhfuil tú sa bhaile nó ag taisteal nuair a chuireann tú ceist faoi thuras. Ní úsáidtear ach an tír agus ní shábháiltear í.",
+  "secLocationDenied": "Tá an suíomh múchta do Vaultara. Is féidir leat é a cheadú i socruithe an ghutháin.",
+  "assistantLocationTitle": "Úsáid mo shuíomh",
+  "assistantLocationNote": "Ní sheiceálann Vaultara ach cén tír ina bhfuil tú. Ní sheoltar ná ní shábháiltear do shuíomh cruinn.",
+  "assistantLocationShared": "Chas mé mo shuíomh air",
+  "assistantLocationOff": "Tá an suíomh múchta. Is féidir leat é a chasadh air i Slándáil agus príobháideacht."
 }

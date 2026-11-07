@@ -2082,5 +2082,16 @@
   "assistantVoiceHint": "ลองพูดว่า: เพิ่มพาสปอร์ตของฉัน หมดอายุพฤษภาคม 2031",
   "assistantVoiceDone": "เสร็จ",
   "assistantVoiceNoSpeech": "ไม่ได้ยินอะไรเลย แตะไมโครโฟนแล้วลองอีกครั้ง",
-  "assistantVoiceFailed": "การป้อนด้วยเสียงหยุดแล้ว ลองอีกครั้ง"
+  "assistantVoiceFailed": "การป้อนด้วยเสียงหยุดแล้ว ลองอีกครั้ง",
+  "travelItemIdCard": "บัตรประชาชน ใบอนุญาตพำนัก หรือใบขับขี่ติดตัว",
+  "travelPlacesLabel": "เมือง",
+  "travelPlacesOptional": "เมือง (ไม่บังคับ)",
+  "travelPlacesHint": "เช่น เดอร์บัน หรือ โตเกียว, โอซาก้า",
+  "secLocationTitle": "ใช้ตำแหน่งของฉันสำหรับการเดินทาง",
+  "secLocationSubtitle": "แสดงว่าคุณอยู่บ้านหรือกำลังเดินทางเมื่อถามเรื่องการเดินทาง ใช้เฉพาะประเทศและไม่บันทึก",
+  "secLocationDenied": "ตำแหน่งปิดอยู่สำหรับ Vaultara คุณอนุญาตได้ในการตั้งค่าโทรศัพท์",
+  "assistantLocationTitle": "ใช้ตำแหน่งของฉัน",
+  "assistantLocationNote": "Vaultara ตรวจดูเฉพาะว่าคุณอยู่ประเทศใด ไม่ส่งหรือบันทึกตำแหน่งที่แน่นอนของคุณ",
+  "assistantLocationShared": "ฉันเปิดตำแหน่งแล้ว",
+  "assistantLocationOff": "ตำแหน่งปิดอยู่ คุณเปิดได้ในความปลอดภัยและความเป็นส่วนตัว"
 }

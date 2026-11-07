@@ -6578,4 +6578,37 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Uingizaji wa sauti umesimama. Jaribu tena.';
+
+  @override
+  String get travelItemIdCard => 'Kitambulisho, kibali cha ukaazi au leseni ya udereva nawe';
+
+  @override
+  String get travelPlacesLabel => 'Jiji au mji';
+
+  @override
+  String get travelPlacesOptional => 'Jiji au mji (si lazima)';
+
+  @override
+  String get travelPlacesHint => 'Kwa mfano Durban, au Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Tumia mahali nilipo kwa safari';
+
+  @override
+  String get secLocationSubtitle => 'Inaonyesha kama uko nyumbani au safarini unapouliza kuhusu safari. Nchi pekee ndiyo hutumika na haihifadhiwi.';
+
+  @override
+  String get secLocationDenied => 'Mahali pamezimwa kwa Vaultara. Unaweza kuruhusu kwenye mipangilio ya simu.';
+
+  @override
+  String get assistantLocationTitle => 'Tumia mahali nilipo';
+
+  @override
+  String get assistantLocationNote => 'Vaultara hukagua tu uko nchi gani. Mahali halisi ulipo hapatumwi wala hapahifadhiwi.';
+
+  @override
+  String get assistantLocationShared => 'Nimewasha mahali nilipo';
+
+  @override
+  String get assistantLocationOff => 'Mahali pamezimwa. Unaweza kuwasha kwenye Usalama na faragha.';
 }

@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "امتحان کنید: گذرنامه‌ام را اضافه کن، مه ۲۰۳۱ منقضی می‌شود",
   "assistantVoiceDone": "تمام",
   "assistantVoiceNoSpeech": "چیزی شنیده نشد. روی میکروفون بزنید و دوباره امتحان کنید.",
-  "assistantVoiceFailed": "ورودی صوتی متوقف شد. دوباره امتحان کنید."
+  "assistantVoiceFailed": "ورودی صوتی متوقف شد. دوباره امتحان کنید.",
+  "travelItemIdCard": "کارت شناسایی، اجازهٔ اقامت یا گواهینامهٔ رانندگی همراهتان",
+  "travelPlacesLabel": "شهر یا شهرک",
+  "travelPlacesOptional": "شهر یا شهرک (اختیاری)",
+  "travelPlacesHint": "مثلاً دوربان، یا توکیو، اوساکا",
+  "secLocationTitle": "استفاده از موقعیتم برای سفرها",
+  "secLocationSubtitle": "وقتی دربارهٔ سفر می‌پرسید نشان می‌دهد در خانه‌اید یا در سفر. فقط کشور استفاده می‌شود و ذخیره نمی‌شود.",
+  "secLocationDenied": "موقعیت برای Vaultara خاموش است. می‌توانید در تنظیمات گوشی اجازه دهید.",
+  "assistantLocationTitle": "استفاده از موقعیتم",
+  "assistantLocationNote": "Vaultara فقط بررسی می‌کند در کدام کشورید. موقعیت دقیق شما ارسال یا ذخیره نمی‌شود.",
+  "assistantLocationShared": "موقعیتم را روشن کردم",
+  "assistantLocationOff": "موقعیت خاموش است. می‌توانید آن را در امنیت و حریم خصوصی روشن کنید."
 }

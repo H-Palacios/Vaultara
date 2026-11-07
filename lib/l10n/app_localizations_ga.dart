@@ -6762,4 +6762,37 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Stop an t-ionchur gutha. Bain triail eile as.';
+
+  @override
+  String get travelItemIdCard => 'Cárta aitheantais, cead cónaithe nó ceadúnas tiomána agat';
+
+  @override
+  String get travelPlacesLabel => 'Cathair nó baile';
+
+  @override
+  String get travelPlacesOptional => 'Cathair nó baile (roghnach)';
+
+  @override
+  String get travelPlacesHint => 'Mar shampla Durban, nó Tóiceo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Úsáid mo shuíomh do thurais';
+
+  @override
+  String get secLocationSubtitle => 'Taispeánann sé an bhfuil tú sa bhaile nó ag taisteal nuair a chuireann tú ceist faoi thuras. Ní úsáidtear ach an tír agus ní shábháiltear í.';
+
+  @override
+  String get secLocationDenied => 'Tá an suíomh múchta do Vaultara. Is féidir leat é a cheadú i socruithe an ghutháin.';
+
+  @override
+  String get assistantLocationTitle => 'Úsáid mo shuíomh';
+
+  @override
+  String get assistantLocationNote => 'Ní sheiceálann Vaultara ach cén tír ina bhfuil tú. Ní sheoltar ná ní shábháiltear do shuíomh cruinn.';
+
+  @override
+  String get assistantLocationShared => 'Chas mé mo shuíomh air';
+
+  @override
+  String get assistantLocationOff => 'Tá an suíomh múchta. Is féidir leat é a chasadh air i Slándáil agus príobháideacht.';
 }

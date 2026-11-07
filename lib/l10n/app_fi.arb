@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "Kokeile: Lisää passini, se vanhenee toukokuussa 2031",
   "assistantVoiceDone": "Valmis",
   "assistantVoiceNoSpeech": "Mitään ei kuulunut. Napauta mikrofonia ja yritä uudelleen.",
-  "assistantVoiceFailed": "Äänisyöte pysähtyi. Yritä uudelleen."
+  "assistantVoiceFailed": "Äänisyöte pysähtyi. Yritä uudelleen.",
+  "travelItemIdCard": "Henkilökortti, oleskelulupa tai ajokortti mukana",
+  "travelPlacesLabel": "Kaupunki tai paikkakunta",
+  "travelPlacesOptional": "Kaupunki tai paikkakunta (valinnainen)",
+  "travelPlacesHint": "Esimerkiksi Durban, tai Tokio, Osaka",
+  "secLocationTitle": "Käytä sijaintiani matkoihin",
+  "secLocationSubtitle": "Näyttää matkoista kysyessäsi, oletko kotona vai matkalla. Vain maata käytetään, eikä sitä tallenneta.",
+  "secLocationDenied": "Sijainti on pois päältä Vaultaralta. Voit sallia sen puhelimen asetuksista.",
+  "assistantLocationTitle": "Käytä sijaintiani",
+  "assistantLocationNote": "Vaultara tarkistaa vain, missä maassa olet. Tarkkaa sijaintiasi ei lähetetä eikä tallenneta.",
+  "assistantLocationShared": "Laitoin sijainnin päälle",
+  "assistantLocationOff": "Sijainti on pois päältä. Voit laittaa sen päälle kohdassa Turvallisuus ja yksityisyys."
 }

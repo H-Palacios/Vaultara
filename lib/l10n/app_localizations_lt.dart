@@ -6716,4 +6716,37 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Balso įvestis sustojo. Bandykite dar kartą.';
+
+  @override
+  String get travelItemIdCard => 'Asmens tapatybės kortelė, leidimas gyventi arba vairuotojo pažymėjimas su savimi';
+
+  @override
+  String get travelPlacesLabel => 'Miestas ar gyvenvietė';
+
+  @override
+  String get travelPlacesOptional => 'Miestas ar gyvenvietė (nebūtina)';
+
+  @override
+  String get travelPlacesHint => 'Pavyzdžiui Durbanas, arba Tokijas, Osaka';
+
+  @override
+  String get secLocationTitle => 'Naudoti mano vietą kelionėms';
+
+  @override
+  String get secLocationSubtitle => 'Rodo, ar esate namie, ar keliaujate, kai klausiate apie keliones. Naudojama tik šalis ir ji neišsaugoma.';
+
+  @override
+  String get secLocationDenied => 'Vieta Vaultara išjungta. Galite ją leisti telefono nustatymuose.';
+
+  @override
+  String get assistantLocationTitle => 'Naudoti mano vietą';
+
+  @override
+  String get assistantLocationNote => 'Vaultara tikrina tik, kurioje šalyje esate. Tiksli jūsų vieta nesiunčiama ir neišsaugoma.';
+
+  @override
+  String get assistantLocationShared => 'Įjungiau savo vietą';
+
+  @override
+  String get assistantLocationOff => 'Vieta išjungta. Galite ją įjungti skiltyje Sauga ir privatumas.';
 }

@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "آزمائیں: میرا پاسپورٹ شامل کرو، یہ مئی 2031 میں ختم ہوتا ہے",
   "assistantVoiceDone": "ہو گیا",
   "assistantVoiceNoSpeech": "کچھ سنائی نہیں دیا۔ مائیکروفون پر ٹیپ کر کے دوبارہ کوشش کریں۔",
-  "assistantVoiceFailed": "آواز سے اندراج رک گیا۔ دوبارہ کوشش کریں۔"
+  "assistantVoiceFailed": "آواز سے اندراج رک گیا۔ دوبارہ کوشش کریں۔",
+  "travelItemIdCard": "شناختی کارڈ، رہائشی اجازت نامہ یا ڈرائیونگ لائسنس ساتھ",
+  "travelPlacesLabel": "شہر یا قصبہ",
+  "travelPlacesOptional": "شہر یا قصبہ (اختیاری)",
+  "travelPlacesHint": "مثلاً ڈربن، یا ٹوکیو، اوساکا",
+  "secLocationTitle": "سفر کے لیے میرا مقام استعمال کریں",
+  "secLocationSubtitle": "سفر کے بارے میں پوچھنے پر دکھاتا ہے کہ آپ گھر پر ہیں یا سفر میں۔ صرف ملک استعمال ہوتا ہے اور محفوظ نہیں ہوتا۔",
+  "secLocationDenied": "Vaultara کے لیے مقام بند ہے۔ آپ فون کی ترتیبات میں اجازت دے سکتے ہیں۔",
+  "assistantLocationTitle": "میرا مقام استعمال کریں",
+  "assistantLocationNote": "Vaultara صرف یہ دیکھتا ہے کہ آپ کس ملک میں ہیں۔ آپ کا درست مقام نہ بھیجا جاتا ہے نہ محفوظ ہوتا ہے۔",
+  "assistantLocationShared": "میں نے اپنا مقام آن کر دیا",
+  "assistantLocationOff": "مقام بند ہے۔ آپ اسے سیکیورٹی اور رازداری میں آن کر سکتے ہیں۔"
 }

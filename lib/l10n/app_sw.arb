@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Jaribu: Ongeza pasipoti yangu, inaisha Mei 2031",
   "assistantVoiceDone": "Imekamilika",
   "assistantVoiceNoSpeech": "Hakuna kilichosikika. Gusa maikrofoni na ujaribu tena.",
-  "assistantVoiceFailed": "Uingizaji wa sauti umesimama. Jaribu tena."
+  "assistantVoiceFailed": "Uingizaji wa sauti umesimama. Jaribu tena.",
+  "travelItemIdCard": "Kitambulisho, kibali cha ukaazi au leseni ya udereva nawe",
+  "travelPlacesLabel": "Jiji au mji",
+  "travelPlacesOptional": "Jiji au mji (si lazima)",
+  "travelPlacesHint": "Kwa mfano Durban, au Tokyo, Osaka",
+  "secLocationTitle": "Tumia mahali nilipo kwa safari",
+  "secLocationSubtitle": "Inaonyesha kama uko nyumbani au safarini unapouliza kuhusu safari. Nchi pekee ndiyo hutumika na haihifadhiwi.",
+  "secLocationDenied": "Mahali pamezimwa kwa Vaultara. Unaweza kuruhusu kwenye mipangilio ya simu.",
+  "assistantLocationTitle": "Tumia mahali nilipo",
+  "assistantLocationNote": "Vaultara hukagua tu uko nchi gani. Mahali halisi ulipo hapatumwi wala hapahifadhiwi.",
+  "assistantLocationShared": "Nimewasha mahali nilipo",
+  "assistantLocationOff": "Mahali pamezimwa. Unaweza kuwasha kwenye Usalama na faragha."
 }

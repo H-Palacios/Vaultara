@@ -2103,5 +2103,16 @@
   "assistantVoiceHint": "جرّب: أضف جواز سفري، ينتهي في مايو 2031",
   "assistantVoiceDone": "تم",
   "assistantVoiceNoSpeech": "لم يُسمع شيء. اضغط على الميكروفون وحاول مرة أخرى.",
-  "assistantVoiceFailed": "توقف الإدخال الصوتي. حاول مرة أخرى."
+  "assistantVoiceFailed": "توقف الإدخال الصوتي. حاول مرة أخرى.",
+  "travelItemIdCard": "بطاقة الهوية أو تصريح الإقامة أو رخصة القيادة معك",
+  "travelPlacesLabel": "المدينة أو البلدة",
+  "travelPlacesOptional": "المدينة أو البلدة (اختياري)",
+  "travelPlacesHint": "مثل ديربان، أو طوكيو، أوساكا",
+  "secLocationTitle": "استخدام موقعي للرحلات",
+  "secLocationSubtitle": "يوضح إن كنت في بلدك أو مسافرًا عندما تسأل عن الرحلات. تُستخدم الدولة فقط ولا تُحفظ.",
+  "secLocationDenied": "الموقع متوقف لـ Vaultara. يمكنك السماح به من إعدادات الهاتف.",
+  "assistantLocationTitle": "استخدام موقعي",
+  "assistantLocationNote": "يتحقق Vaultara فقط من الدولة التي أنت فيها. لا يُرسل موقعك الدقيق ولا يُحفظ.",
+  "assistantLocationShared": "فعّلت موقعي",
+  "assistantLocationOff": "الموقع متوقف. يمكنك تفعيله من الأمان والخصوصية."
 }

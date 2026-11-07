@@ -6631,4 +6631,37 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'הקלט הקולי נעצר. נסו שוב.';
+
+  @override
+  String get travelItemIdCard => 'תעודת זהות, היתר שהייה או רישיון נהיגה עליך';
+
+  @override
+  String get travelPlacesLabel => 'עיר או יישוב';
+
+  @override
+  String get travelPlacesOptional => 'עיר או יישוב (לא חובה)';
+
+  @override
+  String get travelPlacesHint => 'למשל דרבן, או טוקיו, אוסקה';
+
+  @override
+  String get secLocationTitle => 'שימוש במיקום שלי לנסיעות';
+
+  @override
+  String get secLocationSubtitle => 'מראה אם את/ה בבית או בנסיעה כששואלים על נסיעות. רק המדינה משמשת והיא לא נשמרת.';
+
+  @override
+  String get secLocationDenied => 'המיקום כבוי עבור Vaultara. אפשר לאשר אותו בהגדרות הטלפון.';
+
+  @override
+  String get assistantLocationTitle => 'שימוש במיקום שלי';
+
+  @override
+  String get assistantLocationNote => 'Vaultara בודק רק באיזו מדינה את/ה. המיקום המדויק שלך לא נשלח ולא נשמר.';
+
+  @override
+  String get assistantLocationShared => 'הפעלתי את המיקום שלי';
+
+  @override
+  String get assistantLocationOff => 'המיקום כבוי. אפשר להפעיל אותו באבטחה ופרטיות.';
 }

@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Isku day: Ku dar baasaboorkayga, wuxuu dhacayaa May 2031",
   "assistantVoiceDone": "Dhammaatay",
   "assistantVoiceNoSpeech": "Waxba lama maqlin. Taabo makarafoonka oo mar kale isku day.",
-  "assistantVoiceFailed": "Gelinta codka way joogsatay. Mar kale isku day."
+  "assistantVoiceFailed": "Gelinta codka way joogsatay. Mar kale isku day.",
+  "travelItemIdCard": "Kaarka aqoonsiga, oggolaanshaha deganaanshaha ama liisanka darawalnimada oo kula jira",
+  "travelPlacesLabel": "Magaalo",
+  "travelPlacesOptional": "Magaalo (ikhtiyaari)",
+  "travelPlacesHint": "Tusaale Durban, ama Tokyo, Osaka",
+  "secLocationTitle": "Isticmaal goobtayda safarrada",
+  "secLocationSubtitle": "Wuxuu muujiyaa inaad guriga joogto ama safar ku jirto markaad safar wax ka weydiiso. Waddanka oo keliya ayaa la isticmaalaa lamana keydiyo.",
+  "secLocationDenied": "Goobta waa u xiran tahay Vaultara. Waxaad ku oggolaan kartaa dejinta taleefanka.",
+  "assistantLocationTitle": "Isticmaal goobtayda",
+  "assistantLocationNote": "Vaultara waxay hubisaa oo keliya waddanka aad joogto. Goobtaada saxda ah lama diro lamana keydiyo.",
+  "assistantLocationShared": "Waan shiday goobtayda",
+  "assistantLocationOff": "Goobta waa xiran tahay. Waxaad ka shidi kartaa Amniga iyo asturnaanta."
 }

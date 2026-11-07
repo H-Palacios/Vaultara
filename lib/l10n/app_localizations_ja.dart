@@ -6514,4 +6514,37 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => '音声入力が止まりました。もう一度お試しください。';
+
+  @override
+  String get travelItemIdCard => '身分証明書、在留カード、または運転免許証を携帯';
+
+  @override
+  String get travelPlacesLabel => '都市・町';
+
+  @override
+  String get travelPlacesOptional => '都市・町（任意）';
+
+  @override
+  String get travelPlacesHint => '例：ダーバン、または東京、大阪';
+
+  @override
+  String get secLocationTitle => '旅行に現在地を使う';
+
+  @override
+  String get secLocationSubtitle => '旅行について聞いたとき、自宅にいるか旅行中かを判断します。使うのは国だけで、保存されません。';
+
+  @override
+  String get secLocationDenied => 'Vaultaraの位置情報がオフです。スマートフォンの設定で許可できます。';
+
+  @override
+  String get assistantLocationTitle => '現在地を使う';
+
+  @override
+  String get assistantLocationNote => 'Vaultaraが確認するのはいる国だけです。正確な位置は送信も保存もされません。';
+
+  @override
+  String get assistantLocationShared => '位置情報をオンにしました';
+
+  @override
+  String get assistantLocationOff => '位置情報がオフです。セキュリティとプライバシーでオンにできます。';
 }

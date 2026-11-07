@@ -6578,4 +6578,37 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Spraakinvoer is gestopt. Probeer het opnieuw.';
+
+  @override
+  String get travelItemIdCard => 'ID-kaart, verblijfsvergunning of rijbewijs bij je';
+
+  @override
+  String get travelPlacesLabel => 'Stad of plaats';
+
+  @override
+  String get travelPlacesOptional => 'Stad of plaats (optioneel)';
+
+  @override
+  String get travelPlacesHint => 'Bijvoorbeeld Durban, of Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Mijn locatie gebruiken voor reizen';
+
+  @override
+  String get secLocationSubtitle => 'Laat zien of je thuis of op reis bent als je over reizen vraagt. Alleen het land wordt gebruikt en het wordt niet opgeslagen.';
+
+  @override
+  String get secLocationDenied => 'Locatie staat uit voor Vaultara. Je kunt het toestaan in de instellingen van je telefoon.';
+
+  @override
+  String get assistantLocationTitle => 'Mijn locatie gebruiken';
+
+  @override
+  String get assistantLocationNote => 'Vaultara controleert alleen in welk land je bent. Je exacte locatie wordt niet verstuurd of opgeslagen.';
+
+  @override
+  String get assistantLocationShared => 'Ik heb mijn locatie aangezet';
+
+  @override
+  String get assistantLocationOff => 'Locatie staat uit. Je kunt het aanzetten bij Beveiliging en privacy.';
 }

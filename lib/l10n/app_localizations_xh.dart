@@ -6578,4 +6578,37 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ukufaka ngelizwi kumile. Zama kwakhona.';
+
+  @override
+  String get travelItemIdCard => 'Isazisi, imvume yokuhlala okanye ilayisensi yokuqhuba nawe';
+
+  @override
+  String get travelPlacesLabel => 'Isixeko okanye idolophu';
+
+  @override
+  String get travelPlacesOptional => 'Isixeko okanye idolophu (ukhetho)';
+
+  @override
+  String get travelPlacesHint => 'Umzekelo iDurban, okanye iTokyo, iOsaka';
+
+  @override
+  String get secLocationTitle => 'Sebenzisa indawo yam kuhambo';
+
+  @override
+  String get secLocationSubtitle => 'Ibonisa ukuba usekhaya okanye usehambeni xa ubuza ngohambo. Kusetyenziswa ilizwe kuphela kwaye aligcinwa.';
+
+  @override
+  String get secLocationDenied => 'Indawo icinyiwe kwiVaultara. Ungayivumela kwiisetingi zefowuni.';
+
+  @override
+  String get assistantLocationTitle => 'Sebenzisa indawo yam';
+
+  @override
+  String get assistantLocationNote => 'IVaultara ijonga kuphela ukuba ukweliphi ilizwe. Indawo yakho echanekileyo ayithunyelwa kwaye ayigcinwa.';
+
+  @override
+  String get assistantLocationShared => 'Ndiyivulile indawo yam';
+
+  @override
+  String get assistantLocationOff => 'Indawo icinyiwe. Ungayivula kuKhuseleko nobumfihlo.';
 }

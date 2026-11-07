@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "Pabandykite: Pridėk mano pasą, jis baigiasi 2031 m. gegužę",
   "assistantVoiceDone": "Atlikta",
   "assistantVoiceNoSpeech": "Nieko nebuvo girdėti. Bakstelėkite mikrofoną ir bandykite dar kartą.",
-  "assistantVoiceFailed": "Balso įvestis sustojo. Bandykite dar kartą."
+  "assistantVoiceFailed": "Balso įvestis sustojo. Bandykite dar kartą.",
+  "travelItemIdCard": "Asmens tapatybės kortelė, leidimas gyventi arba vairuotojo pažymėjimas su savimi",
+  "travelPlacesLabel": "Miestas ar gyvenvietė",
+  "travelPlacesOptional": "Miestas ar gyvenvietė (nebūtina)",
+  "travelPlacesHint": "Pavyzdžiui Durbanas, arba Tokijas, Osaka",
+  "secLocationTitle": "Naudoti mano vietą kelionėms",
+  "secLocationSubtitle": "Rodo, ar esate namie, ar keliaujate, kai klausiate apie keliones. Naudojama tik šalis ir ji neišsaugoma.",
+  "secLocationDenied": "Vieta Vaultara išjungta. Galite ją leisti telefono nustatymuose.",
+  "assistantLocationTitle": "Naudoti mano vietą",
+  "assistantLocationNote": "Vaultara tikrina tik, kurioje šalyje esate. Tiksli jūsų vieta nesiunčiama ir neišsaugoma.",
+  "assistantLocationShared": "Įjungiau savo vietą",
+  "assistantLocationOff": "Vieta išjungta. Galite ją įjungti skiltyje Sauga ir privatumas."
 }

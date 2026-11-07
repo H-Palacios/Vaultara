@@ -2070,5 +2070,16 @@
   "assistantVoiceHint": "Prófaðu: Bættu við vegabréfinu mínu, það rennur út í maí 2031",
   "assistantVoiceDone": "Lokið",
   "assistantVoiceNoSpeech": "Ekkert heyrðist. Ýttu á hljóðnemann og reyndu aftur.",
-  "assistantVoiceFailed": "Raddinnslátturinn stöðvaðist. Reyndu aftur."
+  "assistantVoiceFailed": "Raddinnslátturinn stöðvaðist. Reyndu aftur.",
+  "travelItemIdCard": "Skilríki, dvalarleyfi eða ökuskírteini meðferðis",
+  "travelPlacesLabel": "Borg eða bær",
+  "travelPlacesOptional": "Borg eða bær (valfrjálst)",
+  "travelPlacesHint": "Til dæmis Durban, eða Tókýó, Ósaka",
+  "secLocationTitle": "Nota staðsetningu mína fyrir ferðir",
+  "secLocationSubtitle": "Sýnir hvort þú ert heima eða á ferðalagi þegar þú spyrð um ferðir. Aðeins landið er notað og það er ekki vistað.",
+  "secLocationDenied": "Staðsetning er slökkt fyrir Vaultara. Þú getur leyft hana í stillingum símans.",
+  "assistantLocationTitle": "Nota staðsetningu mína",
+  "assistantLocationNote": "Vaultara athugar aðeins í hvaða landi þú ert. Nákvæm staðsetning þín er hvorki send né vistuð.",
+  "assistantLocationShared": "Ég kveikti á staðsetningunni",
+  "assistantLocationOff": "Staðsetning er slökkt. Þú getur kveikt á henni í Öryggi og persónuvernd."
 }

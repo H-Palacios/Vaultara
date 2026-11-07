@@ -6578,4 +6578,37 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ukufaka ngezwi kumile. Zama futhi.';
+
+  @override
+  String get travelItemIdCard => 'Umazisi, imvume yokuhlala noma ilayisense yokushayela nawe';
+
+  @override
+  String get travelPlacesLabel => 'Idolobha';
+
+  @override
+  String get travelPlacesOptional => 'Idolobha (ongakukhetha)';
+
+  @override
+  String get travelPlacesHint => 'Isibonelo iDurban, noma iTokyo, iOsaka';
+
+  @override
+  String get secLocationTitle => 'Sebenzisa indawo yami ohambweni';
+
+  @override
+  String get secLocationSubtitle => 'Ikhombisa ukuthi usekhaya noma usohambweni uma ubuza ngohambo. Kusetshenziswa izwe kuphela futhi aligcinwa.';
+
+  @override
+  String get secLocationDenied => 'Indawo ivaliwe ku-Vaultara. Ungayivumela kuzilungiselelo zefoni.';
+
+  @override
+  String get assistantLocationTitle => 'Sebenzisa indawo yami';
+
+  @override
+  String get assistantLocationNote => 'I-Vaultara ibheka kuphela ukuthi ukuliphi izwe. Indawo yakho eqondile ayithunyelwa futhi ayigcinwa.';
+
+  @override
+  String get assistantLocationShared => 'Ngivule indawo yami';
+
+  @override
+  String get assistantLocationOff => 'Indawo ivaliwe. Ungayivula ku-Ukuphepha nobumfihlo.';
 }

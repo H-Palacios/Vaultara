@@ -6578,4 +6578,37 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Taleinput stoppede. Prøv igen.';
+
+  @override
+  String get travelItemIdCard => 'ID-kort, opholdstilladelse eller kørekort på dig';
+
+  @override
+  String get travelPlacesLabel => 'By';
+
+  @override
+  String get travelPlacesOptional => 'By (valgfrit)';
+
+  @override
+  String get travelPlacesHint => 'For eksempel Durban, eller Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Brug min placering til rejser';
+
+  @override
+  String get secLocationSubtitle => 'Viser, om du er hjemme eller på rejse, når du spørger om rejser. Kun landet bruges, og det gemmes ikke.';
+
+  @override
+  String get secLocationDenied => 'Placering er slået fra for Vaultara. Du kan tillade det i telefonens indstillinger.';
+
+  @override
+  String get assistantLocationTitle => 'Brug min placering';
+
+  @override
+  String get assistantLocationNote => 'Vaultara tjekker kun, hvilket land du er i. Din præcise placering sendes eller gemmes ikke.';
+
+  @override
+  String get assistantLocationShared => 'Jeg har slået min placering til';
+
+  @override
+  String get assistantLocationOff => 'Placering er slået fra. Du kan slå den til under Sikkerhed og privatliv.';
 }

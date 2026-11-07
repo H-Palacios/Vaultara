@@ -6578,4 +6578,37 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Η φωνητική εισαγωγή σταμάτησε. Δοκιμάστε ξανά.';
+
+  @override
+  String get travelItemIdCard => 'Ταυτότητα, άδεια διαμονής ή δίπλωμα οδήγησης μαζί σας';
+
+  @override
+  String get travelPlacesLabel => 'Πόλη ή χωριό';
+
+  @override
+  String get travelPlacesOptional => 'Πόλη ή χωριό (προαιρετικά)';
+
+  @override
+  String get travelPlacesHint => 'Για παράδειγμα Ντέρμπαν, ή Τόκιο, Οσάκα';
+
+  @override
+  String get secLocationTitle => 'Χρήση της τοποθεσίας μου για ταξίδια';
+
+  @override
+  String get secLocationSubtitle => 'Δείχνει αν είστε σπίτι ή ταξιδεύετε όταν ρωτάτε για ταξίδια. Χρησιμοποιείται μόνο η χώρα και δεν αποθηκεύεται.';
+
+  @override
+  String get secLocationDenied => 'Η τοποθεσία είναι απενεργοποιημένη για το Vaultara. Μπορείτε να την επιτρέψετε στις ρυθμίσεις του κινητού.';
+
+  @override
+  String get assistantLocationTitle => 'Χρήση της τοποθεσίας μου';
+
+  @override
+  String get assistantLocationNote => 'Το Vaultara ελέγχει μόνο σε ποια χώρα είστε. Η ακριβής τοποθεσία σας δεν στέλνεται ούτε αποθηκεύεται.';
+
+  @override
+  String get assistantLocationShared => 'Ενεργοποίησα την τοποθεσία μου';
+
+  @override
+  String get assistantLocationOff => 'Η τοποθεσία είναι απενεργοποιημένη. Μπορείτε να την ενεργοποιήσετε στην Ασφάλεια και απόρρητο.';
 }

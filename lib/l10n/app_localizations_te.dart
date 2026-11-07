@@ -6578,4 +6578,37 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'వాయిస్ ఇన్‌పుట్ ఆగిపోయింది. మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get travelItemIdCard => 'గుర్తింపు కార్డు, నివాస అనుమతి లేదా డ్రైవింగ్ లైసెన్స్ వెంట';
+
+  @override
+  String get travelPlacesLabel => 'నగరం లేదా పట్టణం';
+
+  @override
+  String get travelPlacesOptional => 'నగరం లేదా పట్టణం (ఐచ్ఛికం)';
+
+  @override
+  String get travelPlacesHint => 'ఉదా. డర్బన్, లేదా టోక్యో, ఒసాకా';
+
+  @override
+  String get secLocationTitle => 'ప్రయాణాలకు నా లొకేషన్ ఉపయోగించు';
+
+  @override
+  String get secLocationSubtitle => 'ప్రయాణాల గురించి అడిగినప్పుడు మీరు ఇంట్లో ఉన్నారా ప్రయాణంలో ఉన్నారా చూపిస్తుంది. దేశం మాత్రమే ఉపయోగిస్తుంది, సేవ్ చేయదు.';
+
+  @override
+  String get secLocationDenied => 'Vaultara కోసం లొకేషన్ ఆఫ్‌లో ఉంది. ఫోన్ సెట్టింగ్‌లలో అనుమతించవచ్చు.';
+
+  @override
+  String get assistantLocationTitle => 'నా లొకేషన్ ఉపయోగించు';
+
+  @override
+  String get assistantLocationNote => 'మీరు ఏ దేశంలో ఉన్నారో మాత్రమే Vaultara చూస్తుంది. మీ ఖచ్చితమైన లొకేషన్ పంపదు, సేవ్ చేయదు.';
+
+  @override
+  String get assistantLocationShared => 'నా లొకేషన్ ఆన్ చేశాను';
+
+  @override
+  String get assistantLocationOff => 'లొకేషన్ ఆఫ్‌లో ఉంది. భద్రత మరియు గోప్యతలో ఆన్ చేయవచ్చు.';
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'વૉઇસ ઇનપુટ બંધ થયું. ફરી પ્રયાસ કરો.';
+
+  @override
+  String get travelItemIdCard => 'ઓળખપત્ર, રહેઠાણ પરમિટ કે ડ્રાઇવિંગ લાઇસન્સ સાથે';
+
+  @override
+  String get travelPlacesLabel => 'શહેર કે નગર';
+
+  @override
+  String get travelPlacesOptional => 'શહેર કે નગર (વૈકલ્પિક)';
+
+  @override
+  String get travelPlacesHint => 'ઉદાહરણ તરીકે ડર્બન, કે ટોક્યો, ઓસાકા';
+
+  @override
+  String get secLocationTitle => 'પ્રવાસ માટે મારું સ્થાન વાપરો';
+
+  @override
+  String get secLocationSubtitle => 'પ્રવાસ વિશે પૂછો ત્યારે તમે ઘરે છો કે પ્રવાસમાં તે બતાવે છે. ફક્ત દેશ વપરાય છે અને સાચવાતો નથી.';
+
+  @override
+  String get secLocationDenied => 'Vaultara માટે સ્થાન બંધ છે. તમે ફોન સેટિંગ્સમાં મંજૂરી આપી શકો.';
+
+  @override
+  String get assistantLocationTitle => 'મારું સ્થાન વાપરો';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ફક્ત તમે કયા દેશમાં છો તે તપાસે છે. તમારું ચોક્કસ સ્થાન મોકલાતું કે સાચવાતું નથી.';
+
+  @override
+  String get assistantLocationShared => 'મેં મારું સ્થાન ચાલુ કર્યું';
+
+  @override
+  String get assistantLocationOff => 'સ્થાન બંધ છે. તમે સુરક્ષા અને ગોપનીયતામાં ચાલુ કરી શકો.';
 }

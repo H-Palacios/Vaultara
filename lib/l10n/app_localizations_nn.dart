@@ -6578,4 +6578,37 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Taleinndata stoppa. Prøv igjen.';
+
+  @override
+  String get travelItemIdCard => 'ID-kort, opphaldsløyve eller førarkort med deg';
+
+  @override
+  String get travelPlacesLabel => 'By eller stad';
+
+  @override
+  String get travelPlacesOptional => 'By eller stad (valfritt)';
+
+  @override
+  String get travelPlacesHint => 'Til dømes Durban, eller Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Bruk posisjonen min for reiser';
+
+  @override
+  String get secLocationSubtitle => 'Viser om du er heime eller på reise når du spør om reiser. Berre landet vert brukt, og det vert ikkje lagra.';
+
+  @override
+  String get secLocationDenied => 'Posisjon er av for Vaultara. Du kan tillate det i innstillingane på telefonen.';
+
+  @override
+  String get assistantLocationTitle => 'Bruk posisjonen min';
+
+  @override
+  String get assistantLocationNote => 'Vaultara sjekkar berre kva land du er i. Den nøyaktige posisjonen din vert ikkje send eller lagra.';
+
+  @override
+  String get assistantLocationShared => 'Eg har slått på posisjonen';
+
+  @override
+  String get assistantLocationOff => 'Posisjon er av. Du kan slå han på under Tryggleik og personvern.';
 }

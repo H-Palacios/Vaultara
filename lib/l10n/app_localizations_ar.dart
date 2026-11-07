@@ -6781,4 +6781,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'توقف الإدخال الصوتي. حاول مرة أخرى.';
+
+  @override
+  String get travelItemIdCard => 'بطاقة الهوية أو تصريح الإقامة أو رخصة القيادة معك';
+
+  @override
+  String get travelPlacesLabel => 'المدينة أو البلدة';
+
+  @override
+  String get travelPlacesOptional => 'المدينة أو البلدة (اختياري)';
+
+  @override
+  String get travelPlacesHint => 'مثل ديربان، أو طوكيو، أوساكا';
+
+  @override
+  String get secLocationTitle => 'استخدام موقعي للرحلات';
+
+  @override
+  String get secLocationSubtitle => 'يوضح إن كنت في بلدك أو مسافرًا عندما تسأل عن الرحلات. تُستخدم الدولة فقط ولا تُحفظ.';
+
+  @override
+  String get secLocationDenied => 'الموقع متوقف لـ Vaultara. يمكنك السماح به من إعدادات الهاتف.';
+
+  @override
+  String get assistantLocationTitle => 'استخدام موقعي';
+
+  @override
+  String get assistantLocationNote => 'يتحقق Vaultara فقط من الدولة التي أنت فيها. لا يُرسل موقعك الدقيق ولا يُحفظ.';
+
+  @override
+  String get assistantLocationShared => 'فعّلت موقعي';
+
+  @override
+  String get assistantLocationOff => 'الموقع متوقف. يمكنك تفعيله من الأمان والخصوصية.';
 }

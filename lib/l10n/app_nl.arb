@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Probeer: Voeg mijn paspoort toe, het verloopt in mei 2031",
   "assistantVoiceDone": "Klaar",
   "assistantVoiceNoSpeech": "Er werd niets gehoord. Tik op de microfoon en probeer het opnieuw.",
-  "assistantVoiceFailed": "Spraakinvoer is gestopt. Probeer het opnieuw."
+  "assistantVoiceFailed": "Spraakinvoer is gestopt. Probeer het opnieuw.",
+  "travelItemIdCard": "ID-kaart, verblijfsvergunning of rijbewijs bij je",
+  "travelPlacesLabel": "Stad of plaats",
+  "travelPlacesOptional": "Stad of plaats (optioneel)",
+  "travelPlacesHint": "Bijvoorbeeld Durban, of Tokio, Osaka",
+  "secLocationTitle": "Mijn locatie gebruiken voor reizen",
+  "secLocationSubtitle": "Laat zien of je thuis of op reis bent als je over reizen vraagt. Alleen het land wordt gebruikt en het wordt niet opgeslagen.",
+  "secLocationDenied": "Locatie staat uit voor Vaultara. Je kunt het toestaan in de instellingen van je telefoon.",
+  "assistantLocationTitle": "Mijn locatie gebruiken",
+  "assistantLocationNote": "Vaultara controleert alleen in welk land je bent. Je exacte locatie wordt niet verstuurd of opgeslagen.",
+  "assistantLocationShared": "Ik heb mijn locatie aangezet",
+  "assistantLocationOff": "Locatie staat uit. Je kunt het aanzetten bij Beveiliging en privacy."
 }
