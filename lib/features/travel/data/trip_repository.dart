@@ -4,6 +4,7 @@ import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/visa_data.dart';
@@ -195,8 +196,13 @@ class TripRepository {
   ) {
     final hasSpecific = items.any((i) => VisaCheck.parseItem(i) != null);
     if (!hasSpecific) return items;
-    final genericId = TripChecklist.idFor(TripChecklistKind.visa);
-    return items.where((i) => i.id != genericId || i.done).toList();
+    // The per-country item replaces the general visa or permit item.
+    final generic = <String>{
+      TripChecklist.idFor(TripChecklistKind.visa),
+      TripChecklist.idFor(TripChecklistKind.studyPermit),
+      TripChecklist.idFor(TripChecklistKind.workPermit),
+    };
+    return items.where((i) => !generic.contains(i.id) || i.done).toList();
   }
 
   static Future<bool> addVisaItem(
@@ -272,6 +278,40 @@ class TripRepository {
     final edited = trip.copyWith(needsVisa: auto);
     final items = TripChecklist.update(loc, before: trip, after: edited);
     await save(edited.copyWith(checklist: _withoutGenericVisa(items)));
+  }
+
+  static final Set<String> _purposeSeeded = <String>{};
+
+  static String _seededKey(String uid) => 'tripPurposeItems_$uid';
+
+  static bool purposeSeeded(String tripId) => _purposeSeeded.contains(tripId);
+
+  /// Trips saved before the checklist knew about the reason for the trip get
+  /// the matching items once, the first time they are opened. The trip ids
+  /// are remembered on this phone, so an item the user removes stays gone.
+  static Future<void> seedPurposeItems(
+    AppLocalizations loc,
+    SavedTrip trip,
+  ) async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null || trip.id.isEmpty) return;
+    if (!_purposeSeeded.add(trip.id)) return;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final key = _seededKey(uid);
+      final done = prefs.getStringList(key) ?? const <String>[];
+      if (done.contains(trip.id)) return;
+      final latest = byId(trip.id);
+      if (latest == null) return;
+      final items = TripChecklist.missingPurposeItems(loc, latest);
+      if (items != null) await save(latest.copyWith(checklist: items));
+      final kept = <String>[...done, trip.id];
+      final start = kept.length > 200 ? kept.length - 200 : 0;
+      await prefs.setStringList(key, kept.sublist(start));
+    } catch (error) {
+      _purposeSeeded.remove(trip.id);
+      _logWriteError(error);
+    }
   }
 
   static Future<void> removeItem(SavedTrip trip, String itemId) {

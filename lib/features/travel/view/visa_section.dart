@@ -465,6 +465,15 @@ class VisaSection extends StatelessWidget {
     });
   }
 
+  void _seedPurposeItems(BuildContext context) {
+    if (TripRepository.purposeSeeded(trip.id)) return;
+    final loc = AppLocalizations.of(context)!;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final latest = TripRepository.byId(trip.id);
+      if (latest != null) TripRepository.seedPurposeItems(loc, latest);
+    });
+  }
+
   /// True when every destination we have an answer for is the traveller's
   /// own country, so a study or work warning would not apply.
   static bool _onlyHome(List<TravellerVisa> results) {
@@ -523,6 +532,7 @@ class VisaSection extends StatelessWidget {
         final scheme = Theme.of(context).colorScheme;
         final results = VisaCheck.forTrip(trip);
         _syncNeedsVisa(context, results);
+        _seedPurposeItems(context);
         final summary =
             trip.countries.isEmpty ? null : _summary(context, loc, results);
 
@@ -566,7 +576,11 @@ class VisaSection extends StatelessWidget {
             if (trip.countries.isNotEmpty &&
                 TripPurposes.fit(trip.purpose) != PurposeFit.covered &&
                 !_onlyHome(results)) ...[
-              _PurposeBanner(purpose: trip.purpose),
+              _PurposeBanner(
+                trip: trip,
+                results: results,
+                isPremium: isPremium,
+              ),
               const SizedBox(height: 8),
             ],
             Builder(builder: (context) {
@@ -1541,16 +1555,23 @@ class _SavedVisaSheet extends StatelessWidget {
 }
 
 class _PurposeBanner extends StatelessWidget {
-  final TripPurpose purpose;
+  final SavedTrip trip;
+  final List<TravellerVisa> results;
+  final bool isPremium;
 
-  const _PurposeBanner({required this.purpose});
+  const _PurposeBanner({
+    required this.trip,
+    required this.results,
+    required this.isPremium,
+  });
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final purpose = trip.purpose;
     final separate = TripPurposes.needsOwnVisa(purpose);
     const colour = TravelText.warningColour;
-    return Container(
+    final banner = Container(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
       decoration: BoxDecoration(
         color: colour.withValues(alpha: 0.10),
@@ -1575,6 +1596,174 @@ class _PurposeBanner extends StatelessWidget {
                 height: 1.35,
                 fontWeight: FontWeight.w600,
                 color: colour,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (!separate) return banner;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        banner,
+        const SizedBox(height: 8),
+        _PermitCard(trip: trip, results: results, isPremium: isPremium),
+      ],
+    );
+  }
+}
+
+/// For study and work trips: whether each traveller has the permit saved as
+/// a record, so Vaultara can remind them before it runs out.
+class _PermitCard extends StatelessWidget {
+  final SavedTrip trip;
+  final List<TravellerVisa> results;
+  final bool isPremium;
+
+  const _PermitCard({
+    required this.trip,
+    required this.results,
+    required this.isPremium,
+  });
+
+  String get _group => trip.purpose == TripPurpose.study
+      ? 'study_permits'
+      : 'work_permits';
+
+  TrackedItem? _permitOf(String? holderId) {
+    final mine = RecordRepository.allActive()
+        .where((r) =>
+            !r.isDeleted &&
+            r.holderId == holderId &&
+            r.subcategoryName == _group)
+        .toList()
+      ..sort((a, b) => b.expiryDate.compareTo(a.expiryDate));
+    return mine.isEmpty ? null : mine.first;
+  }
+
+  Future<void> _add(BuildContext context, String? holderId) async {
+    final loc = AppLocalizations.of(context)!;
+    final country = trip.countries.isEmpty
+        ? null
+        : Countries.name(trip.countries.first);
+    final name = country == null
+        ? null
+        : trip.purpose == TripPurpose.study
+            ? loc.visaPermitRecordStudy(country)
+            : loc.visaPermitRecordWork(country);
+    await TravelActions.addRecord(
+      context,
+      group: _group,
+      holderId: holderId,
+      isPremium: isPremium,
+      prefill: RecordPrefill(
+        name: name,
+        categoryKey: TravelActions.categoryFor(_group),
+        groupKey: _group,
+        holderId: holderId,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final holders = <String?>[];
+    for (final r in results) {
+      if (!holders.contains(r.holderId)) holders.add(r.holderId);
+    }
+    if (holders.isEmpty) holders.add(null);
+    final several = holders.length > 1;
+
+    final rows = <Widget>[];
+    for (final holderId in holders) {
+      final permit = _permitOf(holderId);
+      final String status;
+      final Color tone;
+      final IconData icon;
+      if (permit == null) {
+        status = trip.purpose == TripPurpose.study
+            ? loc.visaPermitNoneStudy
+            : loc.visaPermitNoneWork;
+        tone = TravelText.warningColour;
+        icon = Icons.error_outline_rounded;
+      } else if (Dates.only(permit.expiryDate).isBefore(trip.end)) {
+        status = loc.visaPermitEndsEarly(
+          TravelText.date(context, permit.expiryDate),
+        );
+        tone = scheme.error;
+        icon = Icons.event_busy_rounded;
+      } else {
+        status = loc.visaPermitValidUntil(
+          TravelText.date(context, permit.expiryDate),
+        );
+        tone = TravelText.okColour;
+        icon = Icons.check_circle_rounded;
+      }
+      rows.add(
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: Row(
+            children: [
+              Icon(icon, size: 18, color: tone),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      if (several)
+                        TextSpan(
+                          text: '${TravelText.travellerName(loc, holderId)}: ',
+                          style: const TextStyle(fontWeight: FontWeight.w800),
+                        ),
+                      TextSpan(text: status),
+                    ],
+                  ),
+                  style: const TextStyle(fontSize: 13, height: 1.3),
+                ),
+              ),
+              if (permit == null)
+                TextButton.icon(
+                  onPressed: () => _add(context, holderId),
+                  icon: const Icon(Icons.add_rounded, size: 18),
+                  label: Text(loc.visaPermitAdd),
+                )
+              else
+                TextButton(
+                  onPressed: () => VisaActions.openVisaRecord(
+                    context,
+                    permit,
+                    isPremium: isPremium,
+                  ),
+                  child: Text(loc.edit),
+                ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Container(
+      padding: const EdgeInsets.fromLTRB(12, 8, 6, 8),
+      decoration: BoxDecoration(
+        color: scheme.surface,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: scheme.outlineVariant),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          ...rows,
+          Padding(
+            padding: const EdgeInsets.only(top: 2, right: 6),
+            child: Text(
+              loc.visaPermitHint,
+              style: TextStyle(
+                fontSize: 11.5,
+                height: 1.35,
+                color: scheme.onSurfaceVariant,
               ),
             ),
           ),
