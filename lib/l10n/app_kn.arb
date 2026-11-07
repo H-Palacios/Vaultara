@@ -700,7 +700,7 @@
   "travelAtDestination": "ಗಮ್ಯಸ್ಥಾನದಲ್ಲಿ ದಿನಗಳು: {days}",
   "travelSectionJourney": "ನಿಮ್ಮ ಪ್ರಯಾಣ",
   "travelFlights": "ವಿಮಾನಗಳು",
-  "travelFlightsHint": "ನೀವು ಯಾವಾಗ ಇಳಿಯುತ್ತೀರಿ ಮತ್ತು ಅಲ್ಲಿ ಎಷ್ಟು ದಿನ ಇರುತ್ತೀರಿ ಎಂದು ನೋಡಲು ನಿಮ್ಮ ವಿಮಾನಗಳನ್ನು ಸೇರಿಸಿ.",
+  "travelFlightsHint": "ನೀವು ಯಾವಾಗ ಇಳಿಯುತ್ತೀರಿ ಮತ್ತು ಅಲ್ಲಿ ಎಷ್ಟು ದಿನ ಇರುತ್ತೀರಿ ಎಂದು ನೋಡಲು ಸಂಪರ್ಕಗಳೂ ಸೇರಿ ಪ್ರತಿ ವಿಮಾನ ಸೇರಿಸಿ.",
   "travelFlightAdd": "ವಿಮಾನ ಸೇರಿಸಿ",
   "travelFlightEdit": "ವಿಮಾನದ ವಿವರಗಳು",
   "travelFlightFrom": "ಎಲ್ಲಿಂದ",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "ಪರ್ಮಿಟ್ ಅನ್ನು ರೆಕಾರ್ಡ್ ಆಗಿ ಉಳಿಸಿ, ಅದು ಮುಗಿಯುವ ಮೊದಲು Vaultara ನೆನಪಿಸುತ್ತದೆ.",
   "visaPermitAdd": "ಪರ್ಮಿಟ್ ಸೇರಿಸಿ",
   "visaPermitRecordStudy": "{country} ಗಾಗಿ ಸ್ಟಡಿ ಪರ್ಮಿಟ್",
-  "visaPermitRecordWork": "{country} ಗಾಗಿ ವರ್ಕ್ ಪರ್ಮಿಟ್"
+  "visaPermitRecordWork": "{country} ಗಾಗಿ ವರ್ಕ್ ಪರ್ಮಿಟ್",
+  "travelConnectionIn": "{place}ನಲ್ಲಿ ಸಂಪರ್ಕ",
+  "travelConnectionLong": "{place}ನಲ್ಲಿ ಸಂಪರ್ಕ: {duration}",
+  "travelDurationHoursMinutes": "{hours} ಗಂ {minutes} ನಿ",
+  "travelArriveIn": "{country} ತಲುಪುವುದು"
 }

@@ -2440,7 +2440,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get travelFlights => 'ගුවන් ගමන්';
 
   @override
-  String get travelFlightsHint => 'ඔබ ගොඩබසින්නේ කවදාද සහ එහි දින කීයක් සිටින්නේදැයි බැලීමට ඔබේ ගුවන් ගමන් එක් කරන්න.';
+  String get travelFlightsHint => 'ඔබ ගොඩබසින්නේ කවදාද සහ එහි දින කීයක් ගත කරනවාද බැලීමට සම්බන්ධතා ඇතුළුව සෑම ගුවන් ගමනක්ම එක් කරන්න.';
 
   @override
   String get travelFlightAdd => 'ගුවන් ගමනක් එක් කරන්න';
@@ -6544,5 +6544,25 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country රැකියා බලපත්‍රය';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place හි සම්බන්ධතාව';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place හි සම්බන්ධතාව: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return 'පැය $hours විනාඩි $minutes';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$country වෙත පැමිණීම';
   }
 }

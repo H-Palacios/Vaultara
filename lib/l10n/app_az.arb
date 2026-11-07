@@ -700,7 +700,7 @@
   "travelAtDestination": "Təyinat yerində günlər: {days}",
   "travelSectionJourney": "Səyahətiniz",
   "travelFlights": "Uçuşlar",
-  "travelFlightsHint": "Nə vaxt enəcəyinizi və orada neçə gün qalacağınızı görmək üçün uçuşlarınızı əlavə edin.",
+  "travelFlightsHint": "Nə vaxt enəcəyinizi və orada neçə gün qalacağınızı görmək üçün hər uçuşu, aktarmalar daxil, əlavə edin.",
   "travelFlightAdd": "Uçuş əlavə et",
   "travelFlightEdit": "Uçuş təfərrüatları",
   "travelFlightFrom": "Haradan",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "İcazəni qeyd kimi saxlayın, Vaultara müddəti bitməzdən əvvəl sizə xatırladacaq.",
   "visaPermitAdd": "İcazə əlavə edin",
   "visaPermitRecordStudy": "{country} üçün təhsil icazəsi",
-  "visaPermitRecordWork": "{country} üçün iş icazəsi"
+  "visaPermitRecordWork": "{country} üçün iş icazəsi",
+  "travelConnectionIn": "{place} şəhərində aktarma",
+  "travelConnectionLong": "{place} şəhərində aktarma: {duration}",
+  "travelDurationHoursMinutes": "{hours} s {minutes} dəq",
+  "travelArriveIn": "Gəliş: {country}"
 }

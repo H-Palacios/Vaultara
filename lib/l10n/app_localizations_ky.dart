@@ -2440,7 +2440,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get travelFlights => 'Учуулар';
 
   @override
-  String get travelFlightsHint => 'Качан конуп, ал жерде канча күн болоорсуңузду көрүү үчүн рейстериңизди кошуңуз.';
+  String get travelFlightsHint => 'Качан конорунузду жана ал жакта канча күн болорунузду көрүү үчүн ар бир рейсти, которулууларды кошо кошуңуз.';
 
   @override
   String get travelFlightAdd => 'Учуу кошуу';
@@ -6545,5 +6545,25 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country үчүн иш уруксаты';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Которулуу: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Которулуу: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours с $minutes мүн';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Келүү: $country';
   }
 }

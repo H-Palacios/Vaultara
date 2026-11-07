@@ -2440,7 +2440,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get travelFlights => 'Izindiza';
 
   @override
-  String get travelFlightsHint => 'Engeza izindiza zakho ukuze ubone ukuthi ufika nini nokuthi uhlala izinsuku eziningi kangakanani lapho.';
+  String get travelFlightsHint => 'Engeza indiza ngayinye, kuhlanganise nokuxhumana, ukuze ubone ukuthi uhla nini nokuthi zingaki izinsuku ozoba lapho.';
 
   @override
   String get travelFlightAdd => 'Engeza indiza';
@@ -6545,5 +6545,25 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Imvume yokusebenza ye-$country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Ukuxhumana e-$place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Ukuxhumana e-$place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours amahora $minutes imiz';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Ukufika e-$country';
   }
 }

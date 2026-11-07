@@ -950,7 +950,7 @@
   "travelAtDestination": "Dagar på reisemålet: {days}",
   "travelSectionJourney": "Reisa di",
   "travelFlights": "Flyvingar",
-  "travelFlightsHint": "Legg til flyvingane dine for å sjå når du landar og kor mange dagar du er der.",
+  "travelFlightsHint": "Legg til kvar flyging, også byte, for å sjå når du landar og kor mange dagar du er der.",
   "travelFlightAdd": "Legg til ei flyving",
   "travelFlightEdit": "Flydetaljar",
   "travelFlightFrom": "Frå",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Lagra løyvet som ei oppføring, så minner Vaultara deg på det før det går ut.",
   "visaPermitAdd": "Legg til løyve",
   "visaPermitRecordStudy": "Studieløyve for {country}",
-  "visaPermitRecordWork": "Arbeidsløyve for {country}"
+  "visaPermitRecordWork": "Arbeidsløyve for {country}",
+  "travelConnectionIn": "Byte i {place}",
+  "travelConnectionLong": "Byte i {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} t {minutes} min",
+  "travelArriveIn": "Ankomst til {country}"
 }

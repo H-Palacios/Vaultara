@@ -925,7 +925,7 @@
   "travelAtDestination": "Дней в месте назначения: {days}",
   "travelSectionJourney": "Ваша поездка",
   "travelFlights": "Перелёты",
-  "travelFlightsHint": "Добавьте перелёты, чтобы увидеть, когда вы прилетите и сколько дней там проведёте.",
+  "travelFlightsHint": "Добавьте каждый рейс, включая пересадки, чтобы видеть, когда вы прилетаете и сколько дней там проводите.",
   "travelFlightAdd": "Добавить перелёт",
   "travelFlightEdit": "Данные перелёта",
   "travelFlightFrom": "Откуда",
@@ -2032,5 +2032,9 @@
   "visaPermitHint": "Сохраните разрешение как запись, и Vaultara напомнит до окончания срока.",
   "visaPermitAdd": "Добавить разрешение",
   "visaPermitRecordStudy": "Разрешение на учёбу: {country}",
-  "visaPermitRecordWork": "Разрешение на работу: {country}"
+  "visaPermitRecordWork": "Разрешение на работу: {country}",
+  "travelConnectionIn": "Пересадка: {place}",
+  "travelConnectionLong": "Пересадка: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
+  "travelArriveIn": "Прибытие: {country}"
 }

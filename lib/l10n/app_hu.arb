@@ -968,7 +968,7 @@
   "travelAtDestination": "Napok az úti célnál: {days}",
   "travelSectionJourney": "Az utad",
   "travelFlights": "Járatok",
-  "travelFlightsHint": "Adja hozzá járatait, hogy lássa, mikor száll le, és hány napot tölt ott.",
+  "travelFlightsHint": "Add hozzá az összes járatot, az átszállásokat is, hogy lásd, mikor szállsz le és hány napot töltesz ott.",
   "travelFlightAdd": "Járat hozzáadása",
   "travelFlightEdit": "Járat adatai",
   "travelFlightFrom": "Honnan",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Mentsd el az engedélyt bejegyzésként, és a Vaultara szól, mielőtt lejár.",
   "visaPermitAdd": "Engedély hozzáadása",
   "visaPermitRecordStudy": "Tanulmányi engedély: {country}",
-  "visaPermitRecordWork": "Munkavállalási engedély: {country}"
+  "visaPermitRecordWork": "Munkavállalási engedély: {country}",
+  "travelConnectionIn": "Átszállás: {place}",
+  "travelConnectionLong": "Átszállás: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} ó {minutes} p",
+  "travelArriveIn": "Érkezés: {country}"
 }

@@ -950,7 +950,7 @@
   "travelAtDestination": "Dni w miejscu docelowym: {days}",
   "travelSectionJourney": "Twoja podróż",
   "travelFlights": "Loty",
-  "travelFlightsHint": "Dodaj swoje loty, aby zobaczyć, kiedy wylądujesz i ile dni tam spędzisz.",
+  "travelFlightsHint": "Dodaj każdy lot, także przesiadki, aby zobaczyć, kiedy lądujesz i ile dni tam spędzasz.",
   "travelFlightAdd": "Dodaj lot",
   "travelFlightEdit": "Szczegóły lotu",
   "travelFlightFrom": "Skąd",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Zapisz zezwolenie jako dokument, a Vaultara przypomni ci przed jego wygaśnięciem.",
   "visaPermitAdd": "Dodaj zezwolenie",
   "visaPermitRecordStudy": "Zezwolenie na studia: {country}",
-  "visaPermitRecordWork": "Zezwolenie na pracę: {country}"
+  "visaPermitRecordWork": "Zezwolenie na pracę: {country}",
+  "travelConnectionIn": "Przesiadka: {place}",
+  "travelConnectionLong": "Przesiadka: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} godz. {minutes} min",
+  "travelArriveIn": "Przylot: {country}"
 }

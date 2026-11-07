@@ -950,7 +950,7 @@
   "travelAtDestination": "Rojên li cihê armancê: {days}",
   "travelSectionJourney": "Rêwîtiya te",
   "travelFlights": "Firîn",
-  "travelFlightsHint": "Firînên xwe zêde bike da ku bibînî kengê dadikevî û çend rojan li wir dimînî.",
+  "travelFlightsHint": "Her firînekê, bi veguhastinan re, zêde bike da ku bibînî kengî dadikevî û çend rojan li wir î.",
   "travelFlightAdd": "Firînekê zêde bike",
   "travelFlightEdit": "Hûrgiliyên firînê",
   "travelFlightFrom": "Ji",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Destûrê wek tomar tomar bike û Vaultara berî qedandinê bîra te tîne.",
   "visaPermitAdd": "Destûr zêde bike",
   "visaPermitRecordStudy": "Destûra xwendinê ji bo {country}",
-  "visaPermitRecordWork": "Destûra kar ji bo {country}"
+  "visaPermitRecordWork": "Destûra kar ji bo {country}",
+  "travelConnectionIn": "Veguhastin li {place}",
+  "travelConnectionLong": "Veguhastin li {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} s {minutes} d",
+  "travelArriveIn": "Gihîştin: {country}"
 }

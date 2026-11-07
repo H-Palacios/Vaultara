@@ -2375,7 +2375,7 @@
   "@travelFlights": {
     "description": "Heading for the flights list in the trip form"
   },
-  "travelFlightsHint": "Add your flights to see when you land and how many days you spend there.",
+  "travelFlightsHint": "Add each flight, connections included, to see when you land and how many days you spend there.",
   "@travelFlightsHint": {
     "description": "Hint under the flights heading when no flight is added"
   },
@@ -7987,6 +7987,45 @@
   "visaPermitRecordWork": "Work permit for {country}",
   "@visaPermitRecordWork": {
     "description": "Suggested record name for a work permit. {country} is the destination.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "travelConnectionIn": "Connection in {place}",
+  "@travelConnectionIn": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "travelConnectionLong": "Connection in {place}: {duration}",
+  "@travelConnectionLong": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "@travelDurationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "travelArriveIn": "Arrive in {country}",
+  "@travelArriveIn": {
+    "description": "Arrival date label for one destination country.",
     "placeholders": {
       "country": {
         "type": "String"

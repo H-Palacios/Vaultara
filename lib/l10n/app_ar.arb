@@ -988,7 +988,7 @@
   "travelAtDestination": "الأيام في وجهتك: {days}",
   "travelSectionJourney": "رحلتك",
   "travelFlights": "الرحلات الجوية",
-  "travelFlightsHint": "أضف رحلاتك لمعرفة موعد هبوطك وعدد الأيام التي ستقضيها هناك.",
+  "travelFlightsHint": "أضف كل رحلة، بما فيها رحلات الترانزيت، لترى متى تهبط وكم يومًا تقضي هناك.",
   "travelFlightAdd": "إضافة رحلة جوية",
   "travelFlightEdit": "تفاصيل الرحلة",
   "travelFlightFrom": "من",
@@ -2095,5 +2095,9 @@
   "visaPermitHint": "احفظ التصريح كسجل وسيذكّرك Vaultara قبل انتهائه.",
   "visaPermitAdd": "إضافة تصريح",
   "visaPermitRecordStudy": "تصريح دراسة في {country}",
-  "visaPermitRecordWork": "تصريح عمل في {country}"
+  "visaPermitRecordWork": "تصريح عمل في {country}",
+  "travelConnectionIn": "توقف في {place}",
+  "travelConnectionLong": "توقف في {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} س {minutes} د",
+  "travelArriveIn": "الوصول إلى {country}"
 }

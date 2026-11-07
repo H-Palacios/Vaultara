@@ -2440,7 +2440,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get travelFlights => 'Járatok';
 
   @override
-  String get travelFlightsHint => 'Adja hozzá járatait, hogy lássa, mikor száll le, és hány napot tölt ott.';
+  String get travelFlightsHint => 'Add hozzá az összes járatot, az átszállásokat is, hogy lásd, mikor szállsz le és hány napot töltesz ott.';
 
   @override
   String get travelFlightAdd => 'Járat hozzáadása';
@@ -6545,5 +6545,25 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Munkavállalási engedély: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Átszállás: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Átszállás: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ó $minutes p';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Érkezés: $country';
   }
 }

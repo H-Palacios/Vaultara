@@ -962,7 +962,7 @@
   "travelAtDestination": "Kwanaki a inda za ka je: {days}",
   "travelSectionJourney": "Tafiyarka",
   "travelFlights": "Jiragen sama",
-  "travelFlightsHint": "Ƙara jiragenka don ganin lokacin saukarka da kwanakin da za ka yi a can.",
+  "travelFlightsHint": "Ƙara kowane jirgi, har da canje-canje, don ganin lokacin da za ka sauka da kwanakin da za ka yi a can.",
   "travelFlightAdd": "Ƙara jirgin sama",
   "travelFlightEdit": "Bayanan jirgin sama",
   "travelFlightFrom": "Daga",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "Ajiye izinin a matsayin bayani kuma Vaultara za ta tunatar da kai kafin ya ƙare.",
   "visaPermitAdd": "Ƙara izini",
   "visaPermitRecordStudy": "Izinin karatu na {country}",
-  "visaPermitRecordWork": "Izinin aiki na {country}"
+  "visaPermitRecordWork": "Izinin aiki na {country}",
+  "travelConnectionIn": "Canjin jirgi a {place}",
+  "travelConnectionLong": "Canjin jirgi a {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} a {minutes} m",
+  "travelArriveIn": "Isowa {country}"
 }

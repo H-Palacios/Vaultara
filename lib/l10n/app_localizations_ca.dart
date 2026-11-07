@@ -2440,7 +2440,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get travelFlights => 'Vols';
 
   @override
-  String get travelFlightsHint => 'Afegeix els teus vols per veure quan aterres i quants dies hi passes.';
+  String get travelFlightsHint => 'Afegeix cada vol, escales incloses, per veure quan aterres i quants dies hi passes.';
 
   @override
   String get travelFlightAdd => 'Afegeix un vol';
@@ -6545,5 +6545,25 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Permís de treball per a $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Escala a $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Escala a $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Arribada a $country';
   }
 }

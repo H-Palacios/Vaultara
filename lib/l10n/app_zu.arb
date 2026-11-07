@@ -942,7 +942,7 @@
   "travelAtDestination": "Izinsuku lapho uya khona: {days}",
   "travelSectionJourney": "Uhambo lwakho",
   "travelFlights": "Izindiza",
-  "travelFlightsHint": "Engeza izindiza zakho ukuze ubone ukuthi ufika nini nokuthi uhlala izinsuku eziningi kangakanani lapho.",
+  "travelFlightsHint": "Engeza indiza ngayinye, kuhlanganise nokuxhumana, ukuze ubone ukuthi uhla nini nokuthi zingaki izinsuku ozoba lapho.",
   "travelFlightAdd": "Engeza indiza",
   "travelFlightEdit": "Imininingwane yendiza",
   "travelFlightFrom": "Kusuka",
@@ -2049,5 +2049,9 @@
   "visaPermitHint": "Gcina imvume njengerekhodi futhi i-Vaultara izokukhumbuza ngaphambi kokuba iphelelwe.",
   "visaPermitAdd": "Engeza imvume",
   "visaPermitRecordStudy": "Imvume yokufunda ye-{country}",
-  "visaPermitRecordWork": "Imvume yokusebenza ye-{country}"
+  "visaPermitRecordWork": "Imvume yokusebenza ye-{country}",
+  "travelConnectionIn": "Ukuxhumana e-{place}",
+  "travelConnectionLong": "Ukuxhumana e-{place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} amahora {minutes} imiz",
+  "travelArriveIn": "Ukufika e-{country}"
 }

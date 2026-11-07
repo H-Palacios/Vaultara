@@ -968,7 +968,7 @@
   "travelAtDestination": "Барчу жердеги күндөр: {days}",
   "travelSectionJourney": "Сиздин сапарыңыз",
   "travelFlights": "Учуулар",
-  "travelFlightsHint": "Качан конуп, ал жерде канча күн болоорсуңузду көрүү үчүн рейстериңизди кошуңуз.",
+  "travelFlightsHint": "Качан конорунузду жана ал жакта канча күн болорунузду көрүү үчүн ар бир рейсти, которулууларды кошо кошуңуз.",
   "travelFlightAdd": "Учуу кошуу",
   "travelFlightEdit": "Учуунун маалыматы",
   "travelFlightFrom": "Кайдан",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Уруксатты жазуу катары сактаңыз, Vaultara мөөнөтү бүткөнгө чейин эскертет.",
   "visaPermitAdd": "Уруксат кошуу",
   "visaPermitRecordStudy": "{country} үчүн окуу уруксаты",
-  "visaPermitRecordWork": "{country} үчүн иш уруксаты"
+  "visaPermitRecordWork": "{country} үчүн иш уруксаты",
+  "travelConnectionIn": "Которулуу: {place}",
+  "travelConnectionLong": "Которулуу: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} с {minutes} мүн",
+  "travelArriveIn": "Келүү: {country}"
 }

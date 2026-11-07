@@ -2440,7 +2440,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get travelFlights => 'الوتنې';
 
   @override
-  String get travelFlightsHint => 'خپلې الوتنې اضافه کړئ چې وګورئ کله کېنئ او هلته څو ورځې یاست.';
+  String get travelFlightsHint => 'هره الوتنه، د نښلونو په ګډون، اضافه کړئ ترڅو وګورئ کله کښته کېږئ او څو ورځې هلته یاست.';
 
   @override
   String get travelFlightAdd => 'الوتنه اضافه کړئ';
@@ -6545,5 +6545,25 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'د $country لپاره د کار جواز';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'په $place کې نښلول';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'په $place کې نښلول: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ساعته $minutes دقیقې';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$country ته رسېدل';
   }
 }

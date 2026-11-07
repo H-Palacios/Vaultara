@@ -950,7 +950,7 @@
   "travelAtDestination": "Siku mahali unapokwenda: {days}",
   "travelSectionJourney": "Safari yako",
   "travelFlights": "Safari za ndege",
-  "travelFlightsHint": "Ongeza safari zako za ndege ili uone utakapotua na siku ngapi utakuwa huko.",
+  "travelFlightsHint": "Ongeza kila safari ya ndege, pamoja na za kuunganisha, ili uone utatua lini na siku ngapi utakaa huko.",
   "travelFlightAdd": "Ongeza safari ya ndege",
   "travelFlightEdit": "Maelezo ya safari ya ndege",
   "travelFlightFrom": "Kutoka",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Hifadhi kibali kama rekodi na Vaultara itakukumbusha kabla hakijaisha.",
   "visaPermitAdd": "Ongeza kibali",
   "visaPermitRecordStudy": "Kibali cha masomo cha {country}",
-  "visaPermitRecordWork": "Kibali cha kazi cha {country}"
+  "visaPermitRecordWork": "Kibali cha kazi cha {country}",
+  "travelConnectionIn": "Kuunganisha {place}",
+  "travelConnectionLong": "Kuunganisha {place}: {duration}",
+  "travelDurationHoursMinutes": "Saa {hours} dak {minutes}",
+  "travelArriveIn": "Kuwasili {country}"
 }

@@ -967,7 +967,7 @@
   "travelAtDestination": "วันที่อยู่ที่ปลายทาง: {days}",
   "travelSectionJourney": "การเดินทางของคุณ",
   "travelFlights": "เที่ยวบิน",
-  "travelFlightsHint": "เพิ่มเที่ยวบินของคุณเพื่อดูว่าคุณลงจอดเมื่อไรและอยู่ที่นั่นกี่วัน",
+  "travelFlightsHint": "เพิ่มทุกเที่ยวบิน รวมถึงเที่ยวบินต่อเครื่อง เพื่อดูว่าคุณลงจอดเมื่อไรและอยู่ที่นั่นกี่วัน",
   "travelFlightAdd": "เพิ่มเที่ยวบิน",
   "travelFlightEdit": "รายละเอียดเที่ยวบิน",
   "travelFlightFrom": "จาก",
@@ -2074,5 +2074,9 @@
   "visaPermitHint": "บันทึกใบอนุญาตเป็นรายการ แล้ว Vaultara จะเตือนก่อนหมดอายุ",
   "visaPermitAdd": "เพิ่มใบอนุญาต",
   "visaPermitRecordStudy": "ใบอนุญาตศึกษาสำหรับ {country}",
-  "visaPermitRecordWork": "ใบอนุญาตทำงานสำหรับ {country}"
+  "visaPermitRecordWork": "ใบอนุญาตทำงานสำหรับ {country}",
+  "travelConnectionIn": "ต่อเครื่องที่ {place}",
+  "travelConnectionLong": "ต่อเครื่องที่ {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ชม. {minutes} นาที",
+  "travelArriveIn": "ถึง{country}"
 }

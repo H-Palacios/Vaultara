@@ -950,7 +950,7 @@
   "travelAtDestination": "Iintsuku apho uya khona: {days}",
   "travelSectionJourney": "Uhambo lwakho",
   "travelFlights": "Iinqwelomoya",
-  "travelFlightsHint": "Yongeza iinqwelomoya zakho ukubona ukuba ufika nini kwaye uhlala iintsuku ezingaphi apho.",
+  "travelFlightsHint": "Yongeza inqwelo-moya nganye, kuquka uqhagamshelo, ukuze ubone ukuba uhla nini nokuba zingaphi iintsuku ukhona apho.",
   "travelFlightAdd": "Yongeza inqwelomoya",
   "travelFlightEdit": "Iinkcukacha zenqwelomoya",
   "travelFlightFrom": "Ukusuka",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Gcina imvume njengerekhodi kwaye i-Vaultara iza kukukhumbuza phambi kokuba iphelelwe.",
   "visaPermitAdd": "Yongeza imvume",
   "visaPermitRecordStudy": "Imvume yokufunda ye-{country}",
-  "visaPermitRecordWork": "Imvume yomsebenzi ye-{country}"
+  "visaPermitRecordWork": "Imvume yomsebenzi ye-{country}",
+  "travelConnectionIn": "Uqhagamshelo e-{place}",
+  "travelConnectionLong": "Uqhagamshelo e-{place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} iiyure {minutes} imiz",
+  "travelArriveIn": "Ukufika e-{country}"
 }

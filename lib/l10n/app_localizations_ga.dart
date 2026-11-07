@@ -2467,7 +2467,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get travelFlights => 'Eitiltí';
 
   @override
-  String get travelFlightsHint => 'Cuir do eitiltí leis chun a fheiceáil cathain a thuirlingíonn tú agus cé mhéad lá a chaitheann tú ann.';
+  String get travelFlightsHint => 'Cuir gach eitilt leis, naisc san áireamh, chun a fheiceáil cathain a thuirlingíonn tú agus cé mhéad lá a bheidh tú ann.';
 
   @override
   String get travelFlightAdd => 'Cuir eitilt leis';
@@ -6729,5 +6729,25 @@ class AppLocalizationsGa extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Cead oibre do $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Nasc in $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Nasc in $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours u $minutes nóim';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Teacht: $country';
   }
 }

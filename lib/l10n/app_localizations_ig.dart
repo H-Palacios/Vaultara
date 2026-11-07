@@ -2440,7 +2440,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get travelFlights => 'Ụgbọelu';
 
   @override
-  String get travelFlightsHint => 'Tinye ụgbọ elu gị ka ị hụ mgbe ị ga-ada na ụbọchị ole ị ga-anọ n’ebe ahụ.';
+  String get travelFlightsHint => 'Tinye ụgbọ elu ọ bụla, gụnyere njikọ, ka ị hụ mgbe ị ga-ada na ụbọchị ole ị ga-anọ ebe ahụ.';
 
   @override
   String get travelFlightAdd => 'Tinye ụgbọelu';
@@ -6494,5 +6494,25 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Ikike ọrụ maka $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Njikọ na $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Njikọ na $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours awa $minutes nkeji';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Ịbịarute $country';
   }
 }

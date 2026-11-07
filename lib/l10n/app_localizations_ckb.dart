@@ -2440,7 +2440,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get travelFlights => 'فڕینەکان';
 
   @override
-  String get travelFlightsHint => 'فڕینەکانت زیاد بکە بۆ بینینی کاتی نیشتنەوە و ژمارەی ڕۆژەکانی مانەوەت لەوێ.';
+  String get travelFlightsHint => 'هەموو گەشتێکی ئاسمانی، بە گواستنەوەکانیشەوە، زیاد بکە بۆ ئەوەی ببینیت کەی دادەبەزیت و چەند ڕۆژ لەوێیت.';
 
   @override
   String get travelFlightAdd => 'فڕینێک زیاد بکە';
@@ -6545,5 +6545,25 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'مۆڵەتی کار بۆ $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'گواستنەوە لە $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'گواستنەوە لە $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ک $minutes خ';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'گەیشتن بە $country';
   }
 }

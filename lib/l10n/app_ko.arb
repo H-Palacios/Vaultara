@@ -950,7 +950,7 @@
   "travelAtDestination": "현지 체류 일수: {days}",
   "travelSectionJourney": "나의 여정",
   "travelFlights": "항공편",
-  "travelFlightsHint": "항공편을 추가하면 도착 시간과 현지 체류 일수를 확인할 수 있어요.",
+  "travelFlightsHint": "경유편을 포함해 모든 항공편을 추가하면 도착일과 머무는 일수를 볼 수 있습니다.",
   "travelFlightAdd": "항공편 추가",
   "travelFlightEdit": "항공편 정보",
   "travelFlightFrom": "출발지",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "허가를 기록으로 저장하면 만료 전에 Vaultara가 알려 드립니다.",
   "visaPermitAdd": "허가 추가",
   "visaPermitRecordStudy": "{country} 학업 허가",
-  "visaPermitRecordWork": "{country} 취업 허가"
+  "visaPermitRecordWork": "{country} 취업 허가",
+  "travelConnectionIn": "{place} 경유",
+  "travelConnectionLong": "{place} 경유: {duration}",
+  "travelDurationHoursMinutes": "{hours}시간 {minutes}분",
+  "travelArriveIn": "{country} 도착"
 }

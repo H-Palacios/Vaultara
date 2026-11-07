@@ -943,7 +943,7 @@
   "travelAtDestination": "Dagar på resmålet: {days}",
   "travelSectionJourney": "Din resa",
   "travelFlights": "Flyg",
-  "travelFlightsHint": "Lägg till dina flyg för att se när du landar och hur många dagar du är där.",
+  "travelFlightsHint": "Lägg till varje flyg, även byten, för att se när du landar och hur många dagar du är där.",
   "travelFlightAdd": "Lägg till ett flyg",
   "travelFlightEdit": "Flygdetaljer",
   "travelFlightFrom": "Från",
@@ -2050,5 +2050,9 @@
   "visaPermitHint": "Spara tillståndet som en post så påminner Vaultara dig innan det går ut.",
   "visaPermitAdd": "Lägg till tillstånd",
   "visaPermitRecordStudy": "Studietillstånd för {country}",
-  "visaPermitRecordWork": "Arbetstillstånd för {country}"
+  "visaPermitRecordWork": "Arbetstillstånd för {country}",
+  "travelConnectionIn": "Byte i {place}",
+  "travelConnectionLong": "Byte i {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Ankomst till {country}"
 }

@@ -2440,7 +2440,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get travelFlights => 'Voos';
 
   @override
-  String get travelFlightsHint => 'Adicione os seus voos para ver quando aterra e quantos dias fica lá.';
+  String get travelFlightsHint => 'Adicione cada voo, escalas incluídas, para ver quando aterra e quantos dias passa lá.';
 
   @override
   String get travelFlightAdd => 'Adicionar um voo';
@@ -6546,5 +6546,25 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Autorização de trabalho para $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Escala em $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Escala em $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Chegada a $country';
   }
 }

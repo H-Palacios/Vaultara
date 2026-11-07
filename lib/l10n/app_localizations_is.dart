@@ -2440,7 +2440,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get travelFlights => 'Flug';
 
   @override
-  String get travelFlightsHint => 'Bættu við flugunum þínum til að sjá hvenær þú lendir og hve marga daga þú ert þar.';
+  String get travelFlightsHint => 'Bættu við hverju flugi, tengiflug meðtalin, til að sjá hvenær þú lendir og hve marga daga þú ert þar.';
 
   @override
   String get travelFlightAdd => 'Bæta við flugi';
@@ -6545,5 +6545,25 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Atvinnuleyfi fyrir $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Tenging í $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Tenging í $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours klst $minutes mín';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Koma til $country';
   }
 }

@@ -950,7 +950,7 @@
   "travelAtDestination": "ڕۆژەکان لە مەبەستەکەت: {days}",
   "travelSectionJourney": "گەشتەکەت",
   "travelFlights": "فڕینەکان",
-  "travelFlightsHint": "فڕینەکانت زیاد بکە بۆ بینینی کاتی نیشتنەوە و ژمارەی ڕۆژەکانی مانەوەت لەوێ.",
+  "travelFlightsHint": "هەموو گەشتێکی ئاسمانی، بە گواستنەوەکانیشەوە، زیاد بکە بۆ ئەوەی ببینیت کەی دادەبەزیت و چەند ڕۆژ لەوێیت.",
   "travelFlightAdd": "فڕینێک زیاد بکە",
   "travelFlightEdit": "وردەکاری فڕین",
   "travelFlightFrom": "لە",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "مۆڵەتەکە وەک تۆمار پاشەکەوت بکە و Vaultara پێش بەسەرچوونی بیرت دەخاتەوە.",
   "visaPermitAdd": "زیادکردنی مۆڵەت",
   "visaPermitRecordStudy": "مۆڵەتی خوێندن بۆ {country}",
-  "visaPermitRecordWork": "مۆڵەتی کار بۆ {country}"
+  "visaPermitRecordWork": "مۆڵەتی کار بۆ {country}",
+  "travelConnectionIn": "گواستنەوە لە {place}",
+  "travelConnectionLong": "گواستنەوە لە {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ک {minutes} خ",
+  "travelArriveIn": "گەیشتن بە {country}"
 }

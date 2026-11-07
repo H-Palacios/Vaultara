@@ -967,7 +967,7 @@
   "travelAtDestination": "గమ్యస్థానంలో రోజులు: {days}",
   "travelSectionJourney": "మీ ప్రయాణం",
   "travelFlights": "విమానాలు",
-  "travelFlightsHint": "మీరు ఎప్పుడు దిగుతారో, అక్కడ ఎన్ని రోజులు ఉంటారో చూడటానికి మీ విమానాలను జోడించండి.",
+  "travelFlightsHint": "మీరు ఎప్పుడు దిగుతారో, అక్కడ ఎన్ని రోజులు ఉంటారో చూడటానికి కనెక్షన్‌లతో సహా ప్రతి విమానాన్ని జోడించండి.",
   "travelFlightAdd": "విమానాన్ని జోడించండి",
   "travelFlightEdit": "విమాన వివరాలు",
   "travelFlightFrom": "ఎక్కడి నుండి",
@@ -2074,5 +2074,9 @@
   "visaPermitHint": "పర్మిట్‌ను రికార్డ్‌గా సేవ్ చేయండి, గడువు ముగిసేలోపు Vaultara గుర్తు చేస్తుంది.",
   "visaPermitAdd": "పర్మిట్ జోడించండి",
   "visaPermitRecordStudy": "{country} కోసం స్టడీ పర్మిట్",
-  "visaPermitRecordWork": "{country} కోసం వర్క్ పర్మిట్"
+  "visaPermitRecordWork": "{country} కోసం వర్క్ పర్మిట్",
+  "travelConnectionIn": "{place}లో కనెక్షన్",
+  "travelConnectionLong": "{place}లో కనెక్షన్: {duration}",
+  "travelDurationHoursMinutes": "{hours} గం {minutes} ని",
+  "travelArriveIn": "{country} చేరుకోవడం"
 }

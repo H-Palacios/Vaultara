@@ -964,7 +964,7 @@
   "travelAtDestination": "Ditë në destinacion: {days}",
   "travelSectionJourney": "Udhëtimi yt",
   "travelFlights": "Fluturime",
-  "travelFlightsHint": "Shto fluturimet e tua për të parë kur ulesh dhe sa ditë qëndron atje.",
+  "travelFlightsHint": "Shto çdo fluturim, përfshirë ndërlidhjet, për të parë kur ulesh dhe sa ditë qëndron atje.",
   "travelFlightAdd": "Shto një fluturim",
   "travelFlightEdit": "Detajet e fluturimit",
   "travelFlightFrom": "Nga",
@@ -2071,5 +2071,9 @@
   "visaPermitHint": "Ruaje lejen si regjistrim dhe Vaultara do të të kujtojë para se të skadojë.",
   "visaPermitAdd": "Shto leje",
   "visaPermitRecordStudy": "Leje studimi për {country}",
-  "visaPermitRecordWork": "Leje pune për {country}"
+  "visaPermitRecordWork": "Leje pune për {country}",
+  "travelConnectionIn": "Ndërlidhje në {place}",
+  "travelConnectionLong": "Ndërlidhje në {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} orë {minutes} min",
+  "travelArriveIn": "Mbërritja: {country}"
 }

@@ -2440,7 +2440,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get travelFlights => 'Չվերթներ';
 
   @override
-  String get travelFlightsHint => 'Ավելացրեք ձեր չվերթները՝ տեսնելու, թե երբ եք վայրէջք կատարում և քանի օր եք մնում այնտեղ։';
+  String get travelFlightsHint => 'Ավելացրեք յուրաքանչյուր թռիչք, ներառյալ տրանզիտները, որպեսզի տեսնեք, երբ եք վայրէջք կատարում և քանի օր եք մնում։';
 
   @override
   String get travelFlightAdd => 'Ավելացնել չվերթ';
@@ -6545,5 +6545,25 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Աշխատանքի թույլտվություն՝ $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Տրանզիտ՝ $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Տրանզիտ՝ $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ժ $minutes ր';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Ժամանում՝ $country';
   }
 }

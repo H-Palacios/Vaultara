@@ -968,7 +968,7 @@
   "travelAtDestination": "Денови на дестинацијата: {days}",
   "travelSectionJourney": "Вашето патување",
   "travelFlights": "Летови",
-  "travelFlightsHint": "Додајте ги вашите летови за да видите кога слетувате и колку дена сте таму.",
+  "travelFlightsHint": "Додајте го секој лет, вклучувајќи ги поврзувањата, за да видите кога слетувате и колку денови сте таму.",
   "travelFlightAdd": "Додај лет",
   "travelFlightEdit": "Детали за летот",
   "travelFlightFrom": "Од",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Зачувајте ја дозволата како запис и Vaultara ќе ве потсети пред да истече.",
   "visaPermitAdd": "Додај дозвола",
   "visaPermitRecordStudy": "Дозвола за студирање за {country}",
-  "visaPermitRecordWork": "Работна дозвола за {country}"
+  "visaPermitRecordWork": "Работна дозвола за {country}",
+  "travelConnectionIn": "Престојување во {place}",
+  "travelConnectionLong": "Престојување во {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
+  "travelArriveIn": "Пристигнување: {country}"
 }

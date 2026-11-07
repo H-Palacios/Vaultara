@@ -2440,7 +2440,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get travelFlights => 'Hegaldiak';
 
   @override
-  String get travelFlightsHint => 'Gehitu zure hegaldiak noiz lurreratzen zaren eta zenbat egun egongo zaren ikusteko.';
+  String get travelFlightsHint => 'Gehitu hegaldi bakoitza, eskalak barne, noiz lurreratzen zaren eta zenbat egun egongo zaren ikusteko.';
 
   @override
   String get travelFlightAdd => 'Gehitu hegaldi bat';
@@ -6545,5 +6545,25 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Lan-baimena: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Eskala: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Eskala: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Iristea: $country';
   }
 }

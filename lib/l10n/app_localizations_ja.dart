@@ -2427,7 +2427,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get travelFlights => 'フライト';
 
   @override
-  String get travelFlightsHint => 'フライトを追加すると、到着日と現地での滞在日数がわかります。';
+  String get travelFlightsHint => '乗り継ぎを含めてすべての便を追加すると、到着日と滞在日数がわかります。';
 
   @override
   String get travelFlightAdd => 'フライトを追加';
@@ -6481,5 +6481,25 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$countryの就労許可';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$placeで乗り継ぎ';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$placeで乗り継ぎ：$duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours時間$minutes分';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$countryに到着';
   }
 }

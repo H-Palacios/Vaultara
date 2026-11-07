@@ -950,7 +950,7 @@
   "travelAtDestination": "Zile la destinație: {days}",
   "travelSectionJourney": "Călătoria ta",
   "travelFlights": "Zboruri",
-  "travelFlightsHint": "Adaugă zborurile tale ca să vezi când aterizezi și câte zile stai acolo.",
+  "travelFlightsHint": "Adaugă fiecare zbor, inclusiv escalele, ca să vezi când aterizezi și câte zile petreci acolo.",
   "travelFlightAdd": "Adaugă un zbor",
   "travelFlightEdit": "Detaliile zborului",
   "travelFlightFrom": "De la",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Salvează permisul ca înregistrare și Vaultara îți amintește înainte să expire.",
   "visaPermitAdd": "Adaugă permis",
   "visaPermitRecordStudy": "Permis de studii pentru {country}",
-  "visaPermitRecordWork": "Permis de muncă pentru {country}"
+  "visaPermitRecordWork": "Permis de muncă pentru {country}",
+  "travelConnectionIn": "Escală în {place}",
+  "travelConnectionLong": "Escală în {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Sosire: {country}"
 }

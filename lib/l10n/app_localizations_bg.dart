@@ -2440,7 +2440,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get travelFlights => 'Полети';
 
   @override
-  String get travelFlightsHint => 'Добавете полетите си, за да видите кога кацате и колко дни прекарвате там.';
+  String get travelFlightsHint => 'Добавете всеки полет, включително прекачванията, за да видите кога кацате и колко дни сте там.';
 
   @override
   String get travelFlightAdd => 'Добави полет';
@@ -6545,5 +6545,25 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Разрешение за работа за $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Прекачване в $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Прекачване в $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ч $minutes мин';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Пристигане в $country';
   }
 }

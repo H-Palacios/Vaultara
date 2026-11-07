@@ -950,7 +950,7 @@
   "travelAtDestination": "Số ngày tại điểm đến: {days}",
   "travelSectionJourney": "Hành trình của bạn",
   "travelFlights": "Chuyến bay",
-  "travelFlightsHint": "Thêm các chuyến bay để xem bạn hạ cánh khi nào và ở đó bao nhiêu ngày.",
+  "travelFlightsHint": "Thêm từng chuyến bay, kể cả chuyến nối, để xem khi nào bạn hạ cánh và ở đó bao nhiêu ngày.",
   "travelFlightAdd": "Thêm chuyến bay",
   "travelFlightEdit": "Chi tiết chuyến bay",
   "travelFlightFrom": "Từ",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Lưu giấy phép thành hồ sơ và Vaultara sẽ nhắc bạn trước khi hết hạn.",
   "visaPermitAdd": "Thêm giấy phép",
   "visaPermitRecordStudy": "Giấy phép du học {country}",
-  "visaPermitRecordWork": "Giấy phép lao động {country}"
+  "visaPermitRecordWork": "Giấy phép lao động {country}",
+  "travelConnectionIn": "Nối chuyến tại {place}",
+  "travelConnectionLong": "Nối chuyến tại {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} giờ {minutes} phút",
+  "travelArriveIn": "Đến {country}"
 }

@@ -2465,7 +2465,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get travelFlights => 'טיסות';
 
   @override
-  String get travelFlightsHint => 'הוסיפו את הטיסות שלכם כדי לראות מתי תנחתו וכמה ימים תהיו שם.';
+  String get travelFlightsHint => 'הוסיפו כל טיסה, כולל טיסות המשך, כדי לראות מתי נוחתים וכמה ימים שוהים שם.';
 
   @override
   String get travelFlightAdd => 'הוספת טיסה';
@@ -6598,5 +6598,25 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'אישור עבודה ל$country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'קונקשן ב$place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'קונקשן ב$place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ש׳ $minutes ד׳';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'הגעה ל$country';
   }
 }

@@ -964,7 +964,7 @@
   "travelAtDestination": "Egunak helmugan: {days}",
   "travelSectionJourney": "Zure bidaia",
   "travelFlights": "Hegaldiak",
-  "travelFlightsHint": "Gehitu zure hegaldiak noiz lurreratzen zaren eta zenbat egun egongo zaren ikusteko.",
+  "travelFlightsHint": "Gehitu hegaldi bakoitza, eskalak barne, noiz lurreratzen zaren eta zenbat egun egongo zaren ikusteko.",
   "travelFlightAdd": "Gehitu hegaldi bat",
   "travelFlightEdit": "Hegaldiaren xehetasunak",
   "travelFlightFrom": "Nondik",
@@ -2071,5 +2071,9 @@
   "visaPermitHint": "Gorde baimena erregistro gisa, eta Vaultarak iraungi aurretik gogoraraziko dizu.",
   "visaPermitAdd": "Gehitu baimena",
   "visaPermitRecordStudy": "Ikasketa-baimena: {country}",
-  "visaPermitRecordWork": "Lan-baimena: {country}"
+  "visaPermitRecordWork": "Lan-baimena: {country}",
+  "travelConnectionIn": "Eskala: {place}",
+  "travelConnectionLong": "Eskala: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Iristea: {country}"
 }

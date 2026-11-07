@@ -924,7 +924,7 @@
   "travelAtDestination": "Дани на одредишту: {days}",
   "travelSectionJourney": "Ваше путовање",
   "travelFlights": "Летови",
-  "travelFlightsHint": "Додајте летове да видите када слећете и колико дана остајете тамо.",
+  "travelFlightsHint": "Додајте сваки лет, укључујући преседања, да видите када слећете и колико дана сте тамо.",
   "travelFlightAdd": "Додај лет",
   "travelFlightEdit": "Детаљи лета",
   "travelFlightFrom": "Од",
@@ -2031,5 +2031,9 @@
   "visaPermitHint": "Сачувајте дозволу као запис и Vaultara ће вас подсетити пре него што истекне.",
   "visaPermitAdd": "Додај дозволу",
   "visaPermitRecordStudy": "Дозвола за студирање за {country}",
-  "visaPermitRecordWork": "Радна дозвола за {country}"
+  "visaPermitRecordWork": "Радна дозвола за {country}",
+  "travelConnectionIn": "Преседање у {place}",
+  "travelConnectionLong": "Преседање у {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
+  "travelArriveIn": "Долазак: {country}"
 }

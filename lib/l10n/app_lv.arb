@@ -968,7 +968,7 @@
   "travelAtDestination": "Dienas galamērķī: {days}",
   "travelSectionJourney": "Jūsu ceļojums",
   "travelFlights": "Lidojumi",
-  "travelFlightsHint": "Pievienojiet savus lidojumus, lai redzētu, kad nolaidīsities un cik dienas tur būsiet.",
+  "travelFlightsHint": "Pievienojiet katru lidojumu, arī pārsēšanos, lai redzētu, kad nolaižaties un cik dienas tur pavadāt.",
   "travelFlightAdd": "Pievienot lidojumu",
   "travelFlightEdit": "Lidojuma informācija",
   "travelFlightFrom": "No",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Saglabājiet atļauju kā ierakstu, un Vaultara atgādinās pirms termiņa beigām.",
   "visaPermitAdd": "Pievienot atļauju",
   "visaPermitRecordStudy": "Studiju atļauja: {country}",
-  "visaPermitRecordWork": "Darba atļauja: {country}"
+  "visaPermitRecordWork": "Darba atļauja: {country}",
+  "travelConnectionIn": "Pārsēšanās: {place}",
+  "travelConnectionLong": "Pārsēšanās: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Ierašanās: {country}"
 }

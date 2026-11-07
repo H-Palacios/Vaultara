@@ -981,7 +981,7 @@
   "travelAtDestination": "Dies al destí: {days}",
   "travelSectionJourney": "El teu viatge",
   "travelFlights": "Vols",
-  "travelFlightsHint": "Afegeix els teus vols per veure quan aterres i quants dies hi passes.",
+  "travelFlightsHint": "Afegeix cada vol, escales incloses, per veure quan aterres i quants dies hi passes.",
   "travelFlightAdd": "Afegeix un vol",
   "travelFlightEdit": "Detalls del vol",
   "travelFlightFrom": "Des de",
@@ -2088,5 +2088,9 @@
   "visaPermitHint": "Desa el permís com a registre i Vaultara t'avisarà abans que caduqui.",
   "visaPermitAdd": "Afegeix el permís",
   "visaPermitRecordStudy": "Permís d'estudis per a {country}",
-  "visaPermitRecordWork": "Permís de treball per a {country}"
+  "visaPermitRecordWork": "Permís de treball per a {country}",
+  "travelConnectionIn": "Escala a {place}",
+  "travelConnectionLong": "Escala a {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Arribada a {country}"
 }

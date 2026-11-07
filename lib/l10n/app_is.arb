@@ -955,7 +955,7 @@
   "travelAtDestination": "Dagar á áfangastað: {days}",
   "travelSectionJourney": "Ferðin þín",
   "travelFlights": "Flug",
-  "travelFlightsHint": "Bættu við flugunum þínum til að sjá hvenær þú lendir og hve marga daga þú ert þar.",
+  "travelFlightsHint": "Bættu við hverju flugi, tengiflug meðtalin, til að sjá hvenær þú lendir og hve marga daga þú ert þar.",
   "travelFlightAdd": "Bæta við flugi",
   "travelFlightEdit": "Upplýsingar um flug",
   "travelFlightFrom": "Frá",
@@ -2062,5 +2062,9 @@
   "visaPermitHint": "Vistaðu leyfið sem færslu og Vaultara minnir þig á áður en það rennur út.",
   "visaPermitAdd": "Bæta við leyfi",
   "visaPermitRecordStudy": "Námsleyfi fyrir {country}",
-  "visaPermitRecordWork": "Atvinnuleyfi fyrir {country}"
+  "visaPermitRecordWork": "Atvinnuleyfi fyrir {country}",
+  "travelConnectionIn": "Tenging í {place}",
+  "travelConnectionLong": "Tenging í {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} klst {minutes} mín",
+  "travelArriveIn": "Koma til {country}"
 }

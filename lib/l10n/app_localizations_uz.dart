@@ -2440,7 +2440,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get travelFlights => 'Reyslar';
 
   @override
-  String get travelFlightsHint => 'Qachon qo‘nishingiz va u yerda necha kun bo‘lishingizni ko‘rish uchun reyslaringizni qo‘shing.';
+  String get travelFlightsHint => 'Qachon qo\'nishingiz va u yerda necha kun bo\'lishingizni ko\'rish uchun har bir reysni, o\'tishlar bilan qo\'shing.';
 
   @override
   String get travelFlightAdd => 'Reys qo‘shish';
@@ -6545,5 +6545,25 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country uchun ish ruxsati';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place orqali o\'tish';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place orqali o\'tish: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours s $minutes daq';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Yetib kelish: $country';
   }
 }

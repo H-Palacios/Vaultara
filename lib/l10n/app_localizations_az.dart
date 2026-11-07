@@ -2440,7 +2440,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get travelFlights => 'Uçuşlar';
 
   @override
-  String get travelFlightsHint => 'Nə vaxt enəcəyinizi və orada neçə gün qalacağınızı görmək üçün uçuşlarınızı əlavə edin.';
+  String get travelFlightsHint => 'Nə vaxt enəcəyinizi və orada neçə gün qalacağınızı görmək üçün hər uçuşu, aktarmalar daxil, əlavə edin.';
 
   @override
   String get travelFlightAdd => 'Uçuş əlavə et';
@@ -6545,5 +6545,25 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country üçün iş icazəsi';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place şəhərində aktarma';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place şəhərində aktarma: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours s $minutes dəq';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Gəliş: $country';
   }
 }

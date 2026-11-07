@@ -968,7 +968,7 @@
   "travelAtDestination": "Dienos kelionės tikslo vietoje: {days}",
   "travelSectionJourney": "Jūsų kelionė",
   "travelFlights": "Skrydžiai",
-  "travelFlightsHint": "Pridėkite skrydžius, kad pamatytumėte, kada nusileisite ir kiek dienų ten būsite.",
+  "travelFlightsHint": "Pridėkite kiekvieną skrydį, įskaitant persėdimus, kad matytumėte, kada nusileidžiate ir kiek dienų ten būsite.",
   "travelFlightAdd": "Pridėti skrydį",
   "travelFlightEdit": "Skrydžio informacija",
   "travelFlightFrom": "Iš",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Išsaugokite leidimą kaip įrašą ir Vaultara primins prieš jam baigiantis.",
   "visaPermitAdd": "Pridėti leidimą",
   "visaPermitRecordStudy": "Studijų leidimas: {country}",
-  "visaPermitRecordWork": "Darbo leidimas: {country}"
+  "visaPermitRecordWork": "Darbo leidimas: {country}",
+  "travelConnectionIn": "Persėdimas: {place}",
+  "travelConnectionLong": "Persėdimas: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} val. {minutes} min.",
+  "travelArriveIn": "Atvykimas: {country}"
 }

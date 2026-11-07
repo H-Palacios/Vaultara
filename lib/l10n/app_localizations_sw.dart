@@ -2440,7 +2440,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get travelFlights => 'Safari za ndege';
 
   @override
-  String get travelFlightsHint => 'Ongeza safari zako za ndege ili uone utakapotua na siku ngapi utakuwa huko.';
+  String get travelFlightsHint => 'Ongeza kila safari ya ndege, pamoja na za kuunganisha, ili uone utatua lini na siku ngapi utakaa huko.';
 
   @override
   String get travelFlightAdd => 'Ongeza safari ya ndege';
@@ -6545,5 +6545,25 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Kibali cha kazi cha $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Kuunganisha $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Kuunganisha $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return 'Saa $hours dak $minutes';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Kuwasili $country';
   }
 }

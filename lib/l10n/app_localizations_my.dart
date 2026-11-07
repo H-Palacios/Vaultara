@@ -2437,7 +2437,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get travelFlights => 'လေယာဉ်ခရီးစဉ်များ';
 
   @override
-  String get travelFlightsHint => 'မည်သည့်အချိန်ဆင်းသက်မည်နှင့် ထိုနေရာတွင် ရက်မည်မျှနေမည်ကိုကြည့်ရန် သင့်လေယာဉ်ခရီးစဉ်များ ထည့်ပါ။';
+  String get travelFlightsHint => 'ဆင်းသက်မည့်အချိန်နှင့် နေမည့်ရက်ကို ကြည့်ရန် လေယာဉ်ပြောင်းခြင်းအပါအဝင် ခရီးစဉ်တိုင်းကို ထည့်ပါ။';
 
   @override
   String get travelFlightAdd => 'လေယာဉ်ခရီးစဉ်ထည့်ရန်';
@@ -6491,5 +6491,25 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country အတွက် အလုပ်ခွင့်ပြုချက်';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place တွင် လေယာဉ်ပြောင်း';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place တွင် လေယာဉ်ပြောင်း- $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours နာရီ $minutes မိနစ်';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$country သို့ ရောက်ရှိ';
   }
 }

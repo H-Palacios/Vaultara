@@ -950,7 +950,7 @@
   "travelAtDestination": "Dias no destino: {days}",
   "travelSectionJourney": "A sua viagem",
   "travelFlights": "Voos",
-  "travelFlightsHint": "Adicione os seus voos para ver quando aterra e quantos dias fica lá.",
+  "travelFlightsHint": "Adicione cada voo, escalas incluídas, para ver quando aterra e quantos dias passa lá.",
   "travelFlightAdd": "Adicionar um voo",
   "travelFlightEdit": "Detalhes do voo",
   "travelFlightFrom": "De",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Guarde a autorização como registo e o Vaultara avisa antes de expirar.",
   "visaPermitAdd": "Adicionar autorização",
   "visaPermitRecordStudy": "Autorização de estudo para {country}",
-  "visaPermitRecordWork": "Autorização de trabalho para {country}"
+  "visaPermitRecordWork": "Autorização de trabalho para {country}",
+  "travelConnectionIn": "Escala em {place}",
+  "travelConnectionLong": "Escala em {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Chegada a {country}"
 }

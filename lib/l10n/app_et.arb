@@ -1115,7 +1115,7 @@
   "travelAtDestination": "Päevi sihtkohas: {days}",
   "travelSectionJourney": "Sinu reis",
   "travelFlights": "Lennud",
-  "travelFlightsHint": "Lisa oma lennud, et näha, millal maandud ja mitu päeva seal oled.",
+  "travelFlightsHint": "Lisa iga lend koos ümberistumistega, et näha, millal maandud ja mitu päeva seal oled.",
   "travelFlightAdd": "Lisa lend",
   "travelFlightEdit": "Lennu andmed",
   "travelFlightFrom": "Kust",
@@ -2222,5 +2222,9 @@
   "visaPermitHint": "Salvesta luba kirjena ja Vaultara tuletab sulle meelde enne selle aegumist.",
   "visaPermitAdd": "Lisa luba",
   "visaPermitRecordStudy": "Õppeluba riiki {country}",
-  "visaPermitRecordWork": "Tööluba riiki {country}"
+  "visaPermitRecordWork": "Tööluba riiki {country}",
+  "travelConnectionIn": "Ümberistumine: {place}",
+  "travelConnectionLong": "Ümberistumine: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Saabumine: {country}"
 }

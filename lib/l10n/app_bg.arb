@@ -700,7 +700,7 @@
   "travelAtDestination": "Дни на дестинацията: {days}",
   "travelSectionJourney": "Вашето пътуване",
   "travelFlights": "Полети",
-  "travelFlightsHint": "Добавете полетите си, за да видите кога кацате и колко дни прекарвате там.",
+  "travelFlightsHint": "Добавете всеки полет, включително прекачванията, за да видите кога кацате и колко дни сте там.",
   "travelFlightAdd": "Добави полет",
   "travelFlightEdit": "Данни за полета",
   "travelFlightFrom": "От",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "Запазете разрешението като запис и Vaultara ще ви напомни, преди да изтече.",
   "visaPermitAdd": "Добави разрешение",
   "visaPermitRecordStudy": "Разрешение за обучение за {country}",
-  "visaPermitRecordWork": "Разрешение за работа за {country}"
+  "visaPermitRecordWork": "Разрешение за работа за {country}",
+  "travelConnectionIn": "Прекачване в {place}",
+  "travelConnectionLong": "Прекачване в {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
+  "travelArriveIn": "Пристигане в {country}"
 }

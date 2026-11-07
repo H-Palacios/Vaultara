@@ -2440,7 +2440,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get travelFlights => 'Àwọn ọkọ̀ òfurufú';
 
   @override
-  String get travelFlightsHint => 'Fi àwọn ọkọ̀ òfurufú rẹ kún un láti rí ìgbà tí o máa balẹ̀ àti iye ọjọ́ tí o máa wà níbẹ̀.';
+  String get travelFlightsHint => 'Ṣàfikún ọkọ̀ òfurufú kọ̀ọ̀kan, pẹ̀lú àwọn ìsopọ̀, láti rí ìgbà tí o máa balẹ̀ àti iye ọjọ́ tí o máa lò níbẹ̀.';
 
   @override
   String get travelFlightAdd => 'Fi ọkọ̀ òfurufú kún un';
@@ -6494,5 +6494,25 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Ìyọ̀ǹda iṣẹ́ fún $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Ìsopọ̀ ní $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Ìsopọ̀ ní $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return 'Wákàtí $hours ìṣẹ́jú $minutes';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Dídé sí $country';
   }
 }

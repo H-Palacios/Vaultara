@@ -988,7 +988,7 @@
   "travelAtDestination": "መድረሻዎ ላይ የሚቆዩባቸው ቀናት፦ {days}",
   "travelSectionJourney": "ጉዞዎ",
   "travelFlights": "በረራዎች",
-  "travelFlightsHint": "መቼ እንደሚያርፉና እዚያ ስንት ቀን እንደሚቆዩ ለማየት በረራዎችዎን ያክሉ።",
+  "travelFlightsHint": "መቼ እንደሚያርፉ እና ስንት ቀን እንደሚቆዩ ለማየት እያንዳንዱን በረራ፣ ማገናኛዎችን ጨምሮ ያክሉ።",
   "travelFlightAdd": "በረራ ያክሉ",
   "travelFlightEdit": "የበረራ ዝርዝሮች",
   "travelFlightFrom": "ከ",
@@ -2095,5 +2095,9 @@
   "visaPermitHint": "ፈቃዱን እንደ መዝገብ ያስቀምጡ፣ Vaultara ከማለቁ በፊት ያስታውስዎታል።",
   "visaPermitAdd": "ፈቃድ ያክሉ",
   "visaPermitRecordStudy": "ለ{country} የትምህርት ፈቃድ",
-  "visaPermitRecordWork": "ለ{country} የሥራ ፈቃድ"
+  "visaPermitRecordWork": "ለ{country} የሥራ ፈቃድ",
+  "travelConnectionIn": "በ{place} ማገናኛ",
+  "travelConnectionLong": "በ{place} ማገናኛ፦ {duration}",
+  "travelDurationHoursMinutes": "{hours} ሰ {minutes} ደ",
+  "travelArriveIn": "ወደ {country} መድረሻ"
 }

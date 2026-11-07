@@ -964,7 +964,7 @@
   "travelAtDestination": "Օրեր նպատակակետում՝ {days}",
   "travelSectionJourney": "Ձեր ճանապարհորդությունը",
   "travelFlights": "Չվերթներ",
-  "travelFlightsHint": "Ավելացրեք ձեր չվերթները՝ տեսնելու, թե երբ եք վայրէջք կատարում և քանի օր եք մնում այնտեղ։",
+  "travelFlightsHint": "Ավելացրեք յուրաքանչյուր թռիչք, ներառյալ տրանզիտները, որպեսզի տեսնեք, երբ եք վայրէջք կատարում և քանի օր եք մնում։",
   "travelFlightAdd": "Ավելացնել չվերթ",
   "travelFlightEdit": "Չվերթի տվյալներ",
   "travelFlightFrom": "Որտեղից",
@@ -2071,5 +2071,9 @@
   "visaPermitHint": "Պահեք թույլտվությունը որպես գրառում, և Vaultara-ն կհիշեցնի մինչև ժամկետի ավարտը։",
   "visaPermitAdd": "Ավելացնել թույլտվություն",
   "visaPermitRecordStudy": "Ուսման թույլտվություն՝ {country}",
-  "visaPermitRecordWork": "Աշխատանքի թույլտվություն՝ {country}"
+  "visaPermitRecordWork": "Աշխատանքի թույլտվություն՝ {country}",
+  "travelConnectionIn": "Տրանզիտ՝ {place}",
+  "travelConnectionLong": "Տրանզիտ՝ {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} ժ {minutes} ր",
+  "travelArriveIn": "Ժամանում՝ {country}"
 }

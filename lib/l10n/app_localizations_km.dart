@@ -2437,7 +2437,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get travelFlights => 'ជើងហោះហើរ';
 
   @override
-  String get travelFlightsHint => 'បន្ថែមជើងហោះហើររបស់អ្នក ដើម្បីមើលថាពេលណាអ្នកចុះចត និងស្នាក់នៅទីនោះប៉ុន្មានថ្ងៃ។';
+  String get travelFlightsHint => 'បន្ថែមជើងហោះហើរនីមួយៗ រួមទាំងការផ្លាស់យន្តហោះ ដើម្បីមើលពេលចុះចត និងចំនួនថ្ងៃដែលអ្នកស្នាក់នៅ។';
 
   @override
   String get travelFlightAdd => 'បន្ថែមជើងហោះហើរ';
@@ -6491,5 +6491,25 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'លិខិតអនុញ្ញាតការងារសម្រាប់ $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'ផ្លាស់យន្តហោះនៅ $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'ផ្លាស់យន្តហោះនៅ $place៖ $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ម៉ោង $minutes នាទី';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'មកដល់ $country';
   }
 }

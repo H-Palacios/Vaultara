@@ -968,7 +968,7 @@
   "travelAtDestination": "Päivät kohteessa: {days}",
   "travelSectionJourney": "Matkasi",
   "travelFlights": "Lennot",
-  "travelFlightsHint": "Lisää lentosi nähdäksesi, milloin laskeudut ja montako päivää olet perillä.",
+  "travelFlightsHint": "Lisää jokainen lento, vaihdot mukaan lukien, niin näet milloin laskeudut ja montako päivää olet perillä.",
   "travelFlightAdd": "Lisää lento",
   "travelFlightEdit": "Lennon tiedot",
   "travelFlightFrom": "Mistä",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Tallenna lupa tietueeksi, niin Vaultara muistuttaa ennen sen vanhenemista.",
   "visaPermitAdd": "Lisää lupa",
   "visaPermitRecordStudy": "Opiskelulupa: {country}",
-  "visaPermitRecordWork": "Työlupa: {country}"
+  "visaPermitRecordWork": "Työlupa: {country}",
+  "travelConnectionIn": "Vaihto: {place}",
+  "travelConnectionLong": "Vaihto: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Saapuminen: {country}"
 }

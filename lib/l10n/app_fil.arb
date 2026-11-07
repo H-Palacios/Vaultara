@@ -962,7 +962,7 @@
   "travelAtDestination": "Mga araw sa destinasyon: {days}",
   "travelSectionJourney": "Ang iyong biyahe",
   "travelFlights": "Mga flight",
-  "travelFlightsHint": "Idagdag ang iyong mga flight para makita kung kailan ka lalapag at ilang araw ka roon.",
+  "travelFlightsHint": "Idagdag ang bawat flight, kasama ang mga connection, para makita kung kailan ka lalapag at ilang araw ka roon.",
   "travelFlightAdd": "Magdagdag ng flight",
   "travelFlightEdit": "Mga detalye ng flight",
   "travelFlightFrom": "Mula",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "I-save ang permit bilang record at paaalalahanan ka ng Vaultara bago ito mag-expire.",
   "visaPermitAdd": "Magdagdag ng permit",
   "visaPermitRecordStudy": "Study permit para sa {country}",
-  "visaPermitRecordWork": "Work permit para sa {country}"
+  "visaPermitRecordWork": "Work permit para sa {country}",
+  "travelConnectionIn": "Connection sa {place}",
+  "travelConnectionLong": "Connection sa {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Pagdating sa {country}"
 }

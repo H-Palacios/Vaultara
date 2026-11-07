@@ -2439,7 +2439,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get travelFlights => '항공편';
 
   @override
-  String get travelFlightsHint => '항공편을 추가하면 도착 시간과 현지 체류 일수를 확인할 수 있어요.';
+  String get travelFlightsHint => '경유편을 포함해 모든 항공편을 추가하면 도착일과 머무는 일수를 볼 수 있습니다.';
 
   @override
   String get travelFlightAdd => '항공편 추가';
@@ -6493,5 +6493,25 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country 취업 허가';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place 경유';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place 경유: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours시간 $minutes분';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$country 도착';
   }
 }

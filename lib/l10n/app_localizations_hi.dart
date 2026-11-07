@@ -2440,7 +2440,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get travelFlights => 'उड़ानें';
 
   @override
-  String get travelFlightsHint => 'अपनी उड़ानें जोड़ें ताकि पता चले कि आप कब उतरेंगे और वहाँ कितने दिन रहेंगे।';
+  String get travelFlightsHint => 'आप कब उतरेंगे और वहाँ कितने दिन रहेंगे, यह देखने के लिए कनेक्शन समेत हर फ़्लाइट जोड़ें।';
 
   @override
   String get travelFlightAdd => 'उड़ान जोड़ें';
@@ -6545,5 +6545,25 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country के लिए वर्क परमिट';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place में कनेक्शन';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place में कनेक्शन: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours घं $minutes मि';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '$country पहुँचना';
   }
 }

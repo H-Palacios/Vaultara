@@ -950,7 +950,7 @@
   "travelAtDestination": "منزل پر دن: {days}",
   "travelSectionJourney": "آپ کا سفر",
   "travelFlights": "پروازیں",
-  "travelFlightsHint": "اپنی پروازیں شامل کریں تاکہ معلوم ہو کہ آپ کب اتریں گے اور وہاں کتنے دن رہیں گے۔",
+  "travelFlightsHint": "آپ کب اتریں گے اور وہاں کتنے دن رہیں گے یہ دیکھنے کے لیے کنکشن سمیت ہر پرواز شامل کریں۔",
   "travelFlightAdd": "پرواز شامل کریں",
   "travelFlightEdit": "پرواز کی تفصیلات",
   "travelFlightFrom": "کہاں سے",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "پرمٹ کو ریکارڈ کے طور پر محفوظ کریں، ختم ہونے سے پہلے Vaultara یاد دلائے گا۔",
   "visaPermitAdd": "پرمٹ شامل کریں",
   "visaPermitRecordStudy": "{country} کے لیے اسٹڈی پرمٹ",
-  "visaPermitRecordWork": "{country} کے لیے ورک پرمٹ"
+  "visaPermitRecordWork": "{country} کے لیے ورک پرمٹ",
+  "travelConnectionIn": "{place} میں کنکشن",
+  "travelConnectionLong": "{place} میں کنکشن: {duration}",
+  "travelDurationHoursMinutes": "{hours} گھنٹے {minutes} منٹ",
+  "travelArriveIn": "{country} پہنچنا"
 }

@@ -962,7 +962,7 @@
   "travelAtDestination": "Laethanta ag an gceann scríbe: {days}",
   "travelSectionJourney": "Do thuras",
   "travelFlights": "Eitiltí",
-  "travelFlightsHint": "Cuir do eitiltí leis chun a fheiceáil cathain a thuirlingíonn tú agus cé mhéad lá a chaitheann tú ann.",
+  "travelFlightsHint": "Cuir gach eitilt leis, naisc san áireamh, chun a fheiceáil cathain a thuirlingíonn tú agus cé mhéad lá a bheidh tú ann.",
   "travelFlightAdd": "Cuir eitilt leis",
   "travelFlightEdit": "Sonraí na heitilte",
   "travelFlightFrom": "Ó",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "Sábháil an cead mar thaifead agus cuirfidh Vaultara i gcuimhne duit sula rachaidh sé in éag.",
   "visaPermitAdd": "Cuir cead leis",
   "visaPermitRecordStudy": "Cead staidéir do {country}",
-  "visaPermitRecordWork": "Cead oibre do {country}"
+  "visaPermitRecordWork": "Cead oibre do {country}",
+  "travelConnectionIn": "Nasc in {place}",
+  "travelConnectionLong": "Nasc in {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} u {minutes} nóim",
+  "travelArriveIn": "Teacht: {country}"
 }

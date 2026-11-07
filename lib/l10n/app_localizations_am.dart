@@ -2440,7 +2440,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get travelFlights => 'በረራዎች';
 
   @override
-  String get travelFlightsHint => 'መቼ እንደሚያርፉና እዚያ ስንት ቀን እንደሚቆዩ ለማየት በረራዎችዎን ያክሉ።';
+  String get travelFlightsHint => 'መቼ እንደሚያርፉ እና ስንት ቀን እንደሚቆዩ ለማየት እያንዳንዱን በረራ፣ ማገናኛዎችን ጨምሮ ያክሉ።';
 
   @override
   String get travelFlightAdd => 'በረራ ያክሉ';
@@ -6545,5 +6545,25 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'ለ$country የሥራ ፈቃድ';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'በ$place ማገናኛ';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'በ$place ማገናኛ፦ $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ሰ $minutes ደ';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'ወደ $country መድረሻ';
   }
 }

@@ -967,7 +967,7 @@
   "travelAtDestination": "Днів у місці призначення: {days}",
   "travelSectionJourney": "Ваша подорож",
   "travelFlights": "Перельоти",
-  "travelFlightsHint": "Додайте перельоти, щоб побачити, коли ви приземлитесь і скільки днів там пробудете.",
+  "travelFlightsHint": "Додайте кожен рейс, включно з пересадками, щоб бачити, коли ви прилітаєте і скільки днів там проводите.",
   "travelFlightAdd": "Додати переліт",
   "travelFlightEdit": "Дані перельоту",
   "travelFlightFrom": "Звідки",
@@ -2074,5 +2074,9 @@
   "visaPermitHint": "Збережіть дозвіл як запис, і Vaultara нагадає до завершення строку.",
   "visaPermitAdd": "Додати дозвіл",
   "visaPermitRecordStudy": "Дозвіл на навчання: {country}",
-  "visaPermitRecordWork": "Дозвіл на роботу: {country}"
+  "visaPermitRecordWork": "Дозвіл на роботу: {country}",
+  "travelConnectionIn": "Пересадка: {place}",
+  "travelConnectionLong": "Пересадка: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} год {minutes} хв",
+  "travelArriveIn": "Прибуття: {country}"
 }
