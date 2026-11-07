@@ -4754,13 +4754,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get assistantTitle => 'Питайте Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Питайте за записите си с прости думи';
+  String get assistantTileSubtitle => 'Питайте за записи, пътувания и настройки с прости думи';
 
   @override
   String get assistantIntro => 'Питайте ме за записите и подновяванията си. Мога да подготвя и нови записи, които да проверите.';
 
   @override
-  String get assistantHint => 'Питайте за записите си';
+  String get assistantHint => 'Питайте за записи, пътувания или приложението';
 
   @override
   String get assistantSuggestionMonth => 'Какво изтича този месец?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get assistantMicUnavailable => 'Гласовото въвеждане не е налично. Проверете дали Vaultara има право да използва микрофона.';
 
   @override
-  String get assistantThinking => 'Проверявам записите ви';
-
-  @override
   String get assistantErrorOffline => 'Нямате връзка с интернет. Свържете се и опитайте отново.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get assistantPremiumTitle => '„Питайте Vaultara“ е част от Premium';
 
   @override
-  String get assistantPremiumBody => 'Преминете към Premium, за да задавате въпроси за записите си и да добавяте записи с прости думи.';
+  String get assistantPremiumBody => 'Преминете към Premium, за да питате за записите, пътуванията и настройките си и да правите промени с прости думи.';
 
   @override
   String get assistantSeePlans => 'Вижте плановете';
@@ -6330,4 +6327,133 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara не е част от този сайт. Ако този сайт казва нещо различно от Vaultara, следвайте този сайт.';
+
+  @override
+  String get assistantStepThinking => 'Мисля';
+
+  @override
+  String get assistantStepSlow => 'Все още работя по това';
+
+  @override
+  String get assistantStepRecords => 'Проверявам записите ви';
+
+  @override
+  String get assistantStepTrips => 'Проверявам пътуванията ви';
+
+  @override
+  String get assistantStepPeople => 'Проверявам хората ви';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Подготвям $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Подготвям промени в $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Подготвям новата дата за $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Подготвям изтриване на $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Подготвям промяната';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Добавям $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Обновявам $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Обновявам данните ви';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Подготвям пътуването ви до $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Търся правилния екран';
+
+  @override
+  String get assistantStop => 'Спри';
+
+  @override
+  String get assistantStopped => 'Спряхте този отговор.';
+
+  @override
+  String get assistantCopy => 'Копирай';
+
+  @override
+  String get assistantCopied => 'Копирано';
+
+  @override
+  String get assistantHelpful => 'Полезно';
+
+  @override
+  String get assistantNotHelpful => 'Не е полезно';
+
+  @override
+  String get assistantFeedbackThanks => 'Благодарим за отзива';
+
+  @override
+  String get assistantUndo => 'Отмени';
+
+  @override
+  String get assistantUndoAll => 'Отмени всички';
+
+  @override
+  String get assistantUndone => 'Промяната е отменена';
+
+  @override
+  String get assistantUndoFailed => 'Това не можа да бъде отменено. Направете промяната сами.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count промени',
+      one: '$count промяна',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Потвърди всички';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Потвърди $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Помогни ми да подновя $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name е изтекъл. Какво да направя?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Готов ли съм за пътуването до $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Помогни ми да планирам пътуване';
 }

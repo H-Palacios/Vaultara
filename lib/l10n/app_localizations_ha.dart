@@ -4754,13 +4754,13 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantTitle => 'Tambayi Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Ka tambayi game da rikodinka da kalmomi masu sauƙi';
+  String get assistantTileSubtitle => 'Ka tambaya game da rikodi, tafiye-tafiye da saituna da kalmomi masu sauƙi';
 
   @override
   String get assistantIntro => 'Ka tambaye ni game da rikodinka da sabuntawa. Zan iya kuma shirya sababbin rikodi don ka duba.';
 
   @override
-  String get assistantHint => 'Tambayi game da rikodinka';
+  String get assistantHint => 'Ka tambaya game da rikodi, tafiye-tafiye ko manhajar';
 
   @override
   String get assistantSuggestionMonth => 'Me zai ƙare a wannan watan?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantMicUnavailable => 'Shigar da murya ba ya samuwa. Ka tabbatar Vaultara na da izinin amfani da makirufo.';
 
   @override
-  String get assistantThinking => 'Ana duba rikodinka';
-
-  @override
   String get assistantErrorOffline => 'Ba ka kan intanet. Haɗa da intanet ka sake gwadawa.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantPremiumTitle => 'Tambayi Vaultara na cikin Premium';
 
   @override
-  String get assistantPremiumBody => 'Haɓaka tsarinka don yin tambayoyi game da rikodinka da ƙara rikodi da kalmomi masu sauƙi.';
+  String get assistantPremiumBody => 'Haɓaka tsarinka don yin tambaya game da rikodinka, tafiye-tafiyenka da saitunanka, da yin canje-canje da kalmomi masu sauƙi.';
 
   @override
   String get assistantSeePlans => 'Duba tsare-tsare';
@@ -6330,4 +6327,133 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ba ɓangare na wannan shafin ba ne. Idan wannan shafin ya faɗi wani abu daban da Vaultara, bi wannan shafin.';
+
+  @override
+  String get assistantStepThinking => 'Ina tunani';
+
+  @override
+  String get assistantStepSlow => 'Har yanzu ina aiki a kai';
+
+  @override
+  String get assistantStepRecords => 'Ana duba rikodinka';
+
+  @override
+  String get assistantStepTrips => 'Ana duba tafiye-tafiyenka';
+
+  @override
+  String get assistantStepPeople => 'Ana duba mutanenka';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Ana shirya $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Ana shirya canje-canje ga $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Ana shirya sabuwar ranar $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Ana shirin goge $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Ana shirya canjin';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Ana ƙara $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ana sabunta $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ana sabunta bayananka';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Ana shirya tafiyarka zuwa $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Ana neman allon da ya dace';
+
+  @override
+  String get assistantStop => 'Tsaya';
+
+  @override
+  String get assistantStopped => 'Ka dakatar da wannan amsar.';
+
+  @override
+  String get assistantCopy => 'Kwafa';
+
+  @override
+  String get assistantCopied => 'An kwafa';
+
+  @override
+  String get assistantHelpful => 'Mai amfani';
+
+  @override
+  String get assistantNotHelpful => 'Ba shi da amfani';
+
+  @override
+  String get assistantFeedbackThanks => 'Mun gode da ra\'ayinka';
+
+  @override
+  String get assistantUndo => 'Soke';
+
+  @override
+  String get assistantUndoAll => 'Soke duka';
+
+  @override
+  String get assistantUndone => 'An soke canjin';
+
+  @override
+  String get assistantUndoFailed => 'Ba a iya soke wannan ba. Ka yi canjin da kanka.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Canje-canje $count',
+      one: 'Canji $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Tabbatar da duka';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Tabbatar da $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Taimaka min in sabunta $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name ya ƙare. Me zan yi?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Na shirya don tafiyata zuwa $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Taimaka min in shirya tafiya';
 }

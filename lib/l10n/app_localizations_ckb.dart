@@ -4754,13 +4754,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantTitle => 'لە Vaultara بپرسە';
 
   @override
-  String get assistantTileSubtitle => 'بە وشەی ئاسایی لەبارەی تۆمارەکانتەوە بپرسە';
+  String get assistantTileSubtitle => 'بە وشەی ئاسایی لەبارەی تۆمار، گەشت و ڕێکخستنەکانەوە بپرسە';
 
   @override
   String get assistantIntro => 'لەبارەی تۆمارەکان و نوێکردنەوەکانتەوە لێم بپرسە. دەتوانم تۆماری نوێش ئامادە بکەم بۆ ئەوەی بیپشکنیت.';
 
   @override
-  String get assistantHint => 'لەبارەی تۆمارەکانتەوە بپرسە';
+  String get assistantHint => 'لەبارەی تۆمار، گەشت یان ئەپەکەوە بپرسە';
 
   @override
   String get assistantSuggestionMonth => 'ئەم مانگە چی بەسەر دەچێت؟';
@@ -4787,9 +4787,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantMicUnavailable => 'دەنگ نووسین بەردەست نییە. بپشکنە کە Vaultara ڕێگەی پێدراوە مایکرۆفۆن بەکاربهێنێت.';
 
   @override
-  String get assistantThinking => 'تۆمارەکانت دەپشکنرێن';
-
-  @override
   String get assistantErrorOffline => 'تۆ ئۆفلاینیت. بە ئینتەرنێت ببەستەوە و دیسان هەوڵ بدەرەوە.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantPremiumTitle => 'پرسین لە Vaultara بەشێکە لە پرێمیۆم';
 
   @override
-  String get assistantPremiumBody => 'بەرزی بکەرەوە بۆ ئەوەی لەبارەی تۆمارەکانتەوە بپرسیت و بە وشەی ئاسایی تۆمار زیاد بکەیت.';
+  String get assistantPremiumBody => 'بەرزی بکەرەوە بۆ ئەوەی لەبارەی تۆمار، گەشت و ڕێکخستنەکانتەوە بپرسیت و بە وشەی ئاسایی گۆڕانکاری بکەیت.';
 
   @override
   String get assistantSeePlans => 'بینینی پلانەکان';
@@ -6330,4 +6327,133 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara بەشێک نییە لەم ماڵپەڕە. ئەگەر ئەم ماڵپەڕە شتێکی جیاواز لە Vaultara بڵێت، ئەم ماڵپەڕە پەیڕەو بکە.';
+
+  @override
+  String get assistantStepThinking => 'بیر دەکەمەوە';
+
+  @override
+  String get assistantStepSlow => 'هێشتا کاری لەسەر دەکەم';
+
+  @override
+  String get assistantStepRecords => 'تۆمارەکانت دەپشکنرێن';
+
+  @override
+  String get assistantStepTrips => 'گەشتەکانت دەپشکنرێن';
+
+  @override
+  String get assistantStepPeople => 'کەسەکانت دەپشکنرێن';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name ئامادە دەکرێت';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'گۆڕانکارییەکانی $name ئامادە دەکرێن';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'بەرواری نوێی $name ئامادە دەکرێت';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'سڕینەوەی $name ئامادە دەکرێت';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'گۆڕانکارییەکە ئامادە دەکرێت';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name زیاد دەکرێت';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name نوێ دەکرێتەوە';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'زانیارییەکانت نوێ دەکرێنەوە';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'گەشتەکەت بۆ $place ئامادە دەکرێت';
+  }
+
+  @override
+  String get assistantStepScreen => 'شاشەی گونجاو دەدۆزرێتەوە';
+
+  @override
+  String get assistantStop => 'ڕاگرتن';
+
+  @override
+  String get assistantStopped => 'ئەم وەڵامەت ڕاگرت.';
+
+  @override
+  String get assistantCopy => 'لەبەرگرتنەوە';
+
+  @override
+  String get assistantCopied => 'لەبەرگیرایەوە';
+
+  @override
+  String get assistantHelpful => 'بەسوود';
+
+  @override
+  String get assistantNotHelpful => 'بەسوود نییە';
+
+  @override
+  String get assistantFeedbackThanks => 'سوپاس بۆ ڕاکەت';
+
+  @override
+  String get assistantUndo => 'گەڕاندنەوە';
+
+  @override
+  String get assistantUndoAll => 'گەڕاندنەوەی هەموو';
+
+  @override
+  String get assistantUndone => 'گۆڕانکارییەکە گەڕێندرایەوە';
+
+  @override
+  String get assistantUndoFailed => 'ئەمە نەگەڕێندرایەوە. خۆت گۆڕانکارییەکە بکە.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count گۆڕانکاری',
+      one: '$count گۆڕانکاری',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'پشتڕاستکردنەوەی هەموو';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'پشتڕاستکردنەوەی $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'یارمەتیم بدە $name نوێ بکەمەوە';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name بەسەرچووە. چی بکەم؟';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'ئایا ئامادەم بۆ گەشتەکەم بۆ $place؟';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'یارمەتیم بدە گەشتێک پلان بکەم';
 }

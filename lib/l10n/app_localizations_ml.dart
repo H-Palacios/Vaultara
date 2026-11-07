@@ -4754,13 +4754,13 @@ class AppLocalizationsMl extends AppLocalizations {
   String get assistantTitle => 'Vaultara-യോട് ചോദിക്കുക';
 
   @override
-  String get assistantTileSubtitle => 'നിങ്ങളുടെ റെക്കോർഡുകളെക്കുറിച്ച് ലളിതമായ വാക്കുകളിൽ ചോദിക്കുക';
+  String get assistantTileSubtitle => 'റെക്കോർഡുകൾ, യാത്രകൾ, ക്രമീകരണങ്ങൾ എന്നിവയെക്കുറിച്ച് ലളിതമായ വാക്കുകളിൽ ചോദിക്കുക';
 
   @override
   String get assistantIntro => 'നിങ്ങളുടെ റെക്കോർഡുകളെയും പുതുക്കലുകളെയും കുറിച്ച് എന്നോട് ചോദിക്കുക. നിങ്ങൾക്ക് പരിശോധിക്കാൻ പുതിയ റെക്കോർഡുകളും ഞാൻ തയ്യാറാക്കി തരാം.';
 
   @override
-  String get assistantHint => 'നിങ്ങളുടെ റെക്കോർഡുകളെക്കുറിച്ച് ചോദിക്കുക';
+  String get assistantHint => 'റെക്കോർഡുകൾ, യാത്രകൾ അല്ലെങ്കിൽ ആപ്പിനെക്കുറിച്ച് ചോദിക്കുക';
 
   @override
   String get assistantSuggestionMonth => 'ഈ മാസം എന്തൊക്കെയാണ് കാലഹരണപ്പെടുന്നത്?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get assistantMicUnavailable => 'ശബ്ദ ഇൻപുട്ട് ലഭ്യമല്ല. Vaultara-യ്ക്ക് മൈക്രോഫോൺ ഉപയോഗിക്കാൻ അനുമതിയുണ്ടോ എന്ന് പരിശോധിക്കുക.';
 
   @override
-  String get assistantThinking => 'നിങ്ങളുടെ റെക്കോർഡുകൾ പരിശോധിക്കുന്നു';
-
-  @override
   String get assistantErrorOffline => 'നിങ്ങൾ ഓഫ്‌ലൈനിലാണ്. ഇന്റർനെറ്റുമായി ബന്ധിപ്പിച്ച് വീണ്ടും ശ്രമിക്കുക.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara-യോട് ചോദിക്കുക എന്നത് Premium-ന്റെ ഭാഗമാണ്';
 
   @override
-  String get assistantPremiumBody => 'നിങ്ങളുടെ റെക്കോർഡുകളെക്കുറിച്ച് ചോദ്യങ്ങൾ ചോദിക്കാനും ലളിതമായ വാക്കുകളിൽ റെക്കോർഡുകൾ ചേർക്കാനും അപ്‌ഗ്രേഡ് ചെയ്യുക.';
+  String get assistantPremiumBody => 'നിങ്ങളുടെ റെക്കോർഡുകൾ, യാത്രകൾ, ക്രമീകരണങ്ങൾ എന്നിവയെക്കുറിച്ച് ചോദിക്കാനും ലളിതമായ വാക്കുകളിൽ മാറ്റങ്ങൾ വരുത്താനും അപ്‌ഗ്രേഡ് ചെയ്യുക.';
 
   @override
   String get assistantSeePlans => 'പ്ലാനുകൾ കാണുക';
@@ -6330,4 +6327,133 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ഈ സൈറ്റിന്റെ ഭാഗമല്ല. ഈ സൈറ്റ് Vaultara-യിൽ നിന്ന് വ്യത്യസ്തമായി എന്തെങ്കിലും പറഞ്ഞാൽ, ഈ സൈറ്റ് പിന്തുടരുക.';
+
+  @override
+  String get assistantStepThinking => 'ചിന്തിക്കുന്നു';
+
+  @override
+  String get assistantStepSlow => 'ഇപ്പോഴും ചെയ്യുന്നു';
+
+  @override
+  String get assistantStepRecords => 'നിങ്ങളുടെ റെക്കോർഡുകൾ പരിശോധിക്കുന്നു';
+
+  @override
+  String get assistantStepTrips => 'നിങ്ങളുടെ യാത്രകൾ പരിശോധിക്കുന്നു';
+
+  @override
+  String get assistantStepPeople => 'നിങ്ങളുടെ ആളുകളെ പരിശോധിക്കുന്നു';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name തയ്യാറാക്കുന്നു';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name-ലെ മാറ്റങ്ങൾ തയ്യാറാക്കുന്നു';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name-നുള്ള പുതിയ തീയതി തയ്യാറാക്കുന്നു';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name ഇല്ലാതാക്കാൻ തയ്യാറാക്കുന്നു';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'മാറ്റം തയ്യാറാക്കുന്നു';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name ചേർക്കുന്നു';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name അപ്‌ഡേറ്റ് ചെയ്യുന്നു';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'നിങ്ങളുടെ വിവരങ്ങൾ അപ്‌ഡേറ്റ് ചെയ്യുന്നു';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place-ലേക്കുള്ള നിങ്ങളുടെ യാത്ര തയ്യാറാക്കുന്നു';
+  }
+
+  @override
+  String get assistantStepScreen => 'ശരിയായ സ്ക്രീൻ കണ്ടെത്തുന്നു';
+
+  @override
+  String get assistantStop => 'നിർത്തുക';
+
+  @override
+  String get assistantStopped => 'നിങ്ങൾ ഈ മറുപടി നിർത്തി.';
+
+  @override
+  String get assistantCopy => 'പകർത്തുക';
+
+  @override
+  String get assistantCopied => 'പകർത്തി';
+
+  @override
+  String get assistantHelpful => 'ഉപകാരപ്രദം';
+
+  @override
+  String get assistantNotHelpful => 'ഉപകാരപ്രദമല്ല';
+
+  @override
+  String get assistantFeedbackThanks => 'പ്രതികരണത്തിന് നന്ദി';
+
+  @override
+  String get assistantUndo => 'പഴയപടിയാക്കുക';
+
+  @override
+  String get assistantUndoAll => 'എല്ലാം പഴയപടിയാക്കുക';
+
+  @override
+  String get assistantUndone => 'മാറ്റം പഴയപടിയാക്കി';
+
+  @override
+  String get assistantUndoFailed => 'ഇത് പഴയപടിയാക്കാനായില്ല. മാറ്റം സ്വയം വരുത്തുക.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count മാറ്റങ്ങൾ',
+      one: '$count മാറ്റം',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'എല്ലാം സ്ഥിരീകരിക്കുക';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count സ്ഥിരീകരിക്കുക';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name പുതുക്കാൻ സഹായിക്കൂ';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name കാലാവധി കഴിഞ്ഞു. ഞാൻ എന്ത് ചെയ്യണം?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '$place-ലേക്കുള്ള യാത്രയ്ക്ക് ഞാൻ തയ്യാറാണോ?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'ഒരു യാത്ര പ്ലാൻ ചെയ്യാൻ സഹായിക്കൂ';
 }

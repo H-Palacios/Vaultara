@@ -4754,13 +4754,13 @@ class AppLocalizationsNn extends AppLocalizations {
   String get assistantTitle => 'Spør Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Spør om oppføringane dine med enkle ord';
+  String get assistantTileSubtitle => 'Spør om oppføringar, reiser og innstillingar med enkle ord';
 
   @override
   String get assistantIntro => 'Spør meg om oppføringane og fornyingane dine. Eg kan òg førebu nye oppføringar som du kan sjekke.';
 
   @override
-  String get assistantHint => 'Spør om oppføringane dine';
+  String get assistantHint => 'Spør om oppføringar, reiser eller appen';
 
   @override
   String get assistantSuggestionMonth => 'Kva går ut denne månaden?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsNn extends AppLocalizations {
   String get assistantMicUnavailable => 'Taleinndata er ikkje tilgjengeleg. Sjekk at Vaultara har lov til å bruke mikrofonen.';
 
   @override
-  String get assistantThinking => 'Sjekkar oppføringane dine';
-
-  @override
   String get assistantErrorOffline => 'Du er fråkopla. Kople til internett og prøv på nytt.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get assistantPremiumTitle => 'Spør Vaultara er ein del av Premium';
 
   @override
-  String get assistantPremiumBody => 'Oppgrader for å stille spørsmål om oppføringane dine og leggje til oppføringar med enkle ord.';
+  String get assistantPremiumBody => 'Oppgrader for å spørje om oppføringane, reisene og innstillingane dine og gjere endringar med enkle ord.';
 
   @override
   String get assistantSeePlans => 'Sjå abonnement';
@@ -6330,4 +6327,133 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara er ikkje ein del av denne nettstaden. Viss nettstaden seier noko anna enn Vaultara, følg nettstaden.';
+
+  @override
+  String get assistantStepThinking => 'Tenkjer';
+
+  @override
+  String get assistantStepSlow => 'Jobbar framleis med det';
+
+  @override
+  String get assistantStepRecords => 'Sjekkar oppføringane dine';
+
+  @override
+  String get assistantStepTrips => 'Sjekkar reisene dine';
+
+  @override
+  String get assistantStepPeople => 'Sjekkar personane dine';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Førebur $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Førebur endringar i $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Førebur ny dato for $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Førebur sletting av $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Førebur endringa';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Legg til $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Oppdaterer $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Oppdaterer opplysningane dine';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Førebur reisa di til $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Finn rett skjerm';
+
+  @override
+  String get assistantStop => 'Stopp';
+
+  @override
+  String get assistantStopped => 'Du stoppa dette svaret.';
+
+  @override
+  String get assistantCopy => 'Kopier';
+
+  @override
+  String get assistantCopied => 'Kopiert';
+
+  @override
+  String get assistantHelpful => 'Nyttig';
+
+  @override
+  String get assistantNotHelpful => 'Ikkje nyttig';
+
+  @override
+  String get assistantFeedbackThanks => 'Takk for tilbakemeldinga';
+
+  @override
+  String get assistantUndo => 'Angre';
+
+  @override
+  String get assistantUndoAll => 'Angre alle';
+
+  @override
+  String get assistantUndone => 'Endringa er angra';
+
+  @override
+  String get assistantUndoFailed => 'Dette kunne ikkje angrast. Gjer endringa sjølv.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count endringar',
+      one: '$count endring',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Stadfest alle';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Stadfest $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Hjelp meg å fornye $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name har gått ut. Kva gjer eg?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Er eg klar for reisa til $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Hjelp meg å planleggje ei reise';
 }

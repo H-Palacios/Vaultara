@@ -4719,13 +4719,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantTitle => 'Hỏi Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Hỏi về bản ghi của bạn bằng lời thường';
+  String get assistantTileSubtitle => 'Hỏi về bản ghi, chuyến đi và cài đặt bằng lời thường';
 
   @override
   String get assistantIntro => 'Hãy hỏi tôi về bản ghi và các lần gia hạn của bạn. Tôi cũng có thể soạn sẵn bản ghi mới để bạn kiểm tra.';
 
   @override
-  String get assistantHint => 'Hỏi về bản ghi của bạn';
+  String get assistantHint => 'Hỏi về bản ghi, chuyến đi hoặc ứng dụng';
 
   @override
   String get assistantSuggestionMonth => 'Tháng này có gì hết hạn?';
@@ -4752,9 +4752,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantMicUnavailable => 'Không thể nhập bằng giọng nói. Hãy kiểm tra xem Vaultara có được phép dùng micro không.';
 
   @override
-  String get assistantThinking => 'Đang kiểm tra bản ghi của bạn';
-
-  @override
   String get assistantErrorOffline => 'Bạn đang ngoại tuyến. Hãy kết nối internet và thử lại.';
 
   @override
@@ -4773,7 +4770,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantPremiumTitle => 'Hỏi Vaultara nằm trong gói Premium';
 
   @override
-  String get assistantPremiumBody => 'Nâng cấp để hỏi về bản ghi của bạn và thêm bản ghi bằng lời thường.';
+  String get assistantPremiumBody => 'Nâng cấp để hỏi về bản ghi, chuyến đi và cài đặt của bạn, và thay đổi bằng lời thường.';
 
   @override
   String get assistantSeePlans => 'Xem các gói';
@@ -6279,4 +6276,132 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara không thuộc trang web này. Nếu trang web này nói khác với Vaultara, hãy làm theo trang web này.';
+
+  @override
+  String get assistantStepThinking => 'Đang suy nghĩ';
+
+  @override
+  String get assistantStepSlow => 'Vẫn đang xử lý';
+
+  @override
+  String get assistantStepRecords => 'Đang kiểm tra bản ghi của bạn';
+
+  @override
+  String get assistantStepTrips => 'Đang kiểm tra chuyến đi của bạn';
+
+  @override
+  String get assistantStepPeople => 'Đang kiểm tra những người của bạn';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Đang chuẩn bị $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Đang chuẩn bị thay đổi cho $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Đang chuẩn bị ngày mới cho $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Đang chuẩn bị xóa $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Đang chuẩn bị thay đổi';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Đang thêm $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Đang cập nhật $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Đang cập nhật thông tin của bạn';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Đang chuẩn bị chuyến đi đến $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Đang tìm đúng màn hình';
+
+  @override
+  String get assistantStop => 'Dừng';
+
+  @override
+  String get assistantStopped => 'Bạn đã dừng câu trả lời này.';
+
+  @override
+  String get assistantCopy => 'Sao chép';
+
+  @override
+  String get assistantCopied => 'Đã sao chép';
+
+  @override
+  String get assistantHelpful => 'Hữu ích';
+
+  @override
+  String get assistantNotHelpful => 'Không hữu ích';
+
+  @override
+  String get assistantFeedbackThanks => 'Cảm ơn bạn đã góp ý';
+
+  @override
+  String get assistantUndo => 'Hoàn tác';
+
+  @override
+  String get assistantUndoAll => 'Hoàn tác tất cả';
+
+  @override
+  String get assistantUndone => 'Đã hoàn tác thay đổi';
+
+  @override
+  String get assistantUndoFailed => 'Không thể hoàn tác. Hãy tự thay đổi.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count thay đổi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Xác nhận tất cả';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Xác nhận $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Giúp tôi gia hạn $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name đã hết hạn. Tôi nên làm gì?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Tôi đã sẵn sàng cho chuyến đi đến $place chưa?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Giúp tôi lên kế hoạch chuyến đi';
 }

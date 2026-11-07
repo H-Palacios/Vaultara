@@ -4754,13 +4754,13 @@ class AppLocalizationsAz extends AppLocalizations {
   String get assistantTitle => 'Vaultara-dan soruş';
 
   @override
-  String get assistantTileSubtitle => 'Sənədlərinizlə bağlı sadə sözlərlə soruşun';
+  String get assistantTileSubtitle => 'Sənədlər, səfərlər və ayarlar haqqında sadə sözlərlə soruşun';
 
   @override
   String get assistantIntro => 'Sənədləriniz və müddət uzatmalar barədə məndən soruşa bilərsiniz. Yoxlamanız üçün yeni sənədlər də hazırlaya bilərəm.';
 
   @override
-  String get assistantHint => 'Sənədlərinizlə bağlı soruşun';
+  String get assistantHint => 'Sənədlər, səfərlər və ya tətbiq haqqında soruşun';
 
   @override
   String get assistantSuggestionMonth => 'Bu ay nəyin müddəti bitir?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get assistantMicUnavailable => 'Səsli daxiletmə əlçatan deyil. Vaultara-nın mikrofondan istifadə edə bildiyini yoxlayın.';
 
   @override
-  String get assistantThinking => 'Sənədləriniz yoxlanılır';
-
-  @override
   String get assistantErrorOffline => 'İnternetə qoşulmamısınız. İnternetə qoşulub yenidən cəhd edin.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara-dan soruş Premium planına daxildir';
 
   @override
-  String get assistantPremiumBody => 'Sənədlərinizlə bağlı sual vermək və sadə sözlərlə sənəd əlavə etmək üçün planınızı yüksəldin.';
+  String get assistantPremiumBody => 'Sənədləriniz, səfərləriniz və ayarlarınız haqqında soruşmaq və sadə sözlərlə dəyişiklik etmək üçün planınızı yüksəldin.';
 
   @override
   String get assistantSeePlans => 'Planlara bax';
@@ -6330,4 +6327,133 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara bu saytın bir hissəsi deyil. Bu sayt Vaultara-dan fərqli bir şey deyirsə, bu sayta əməl et.';
+
+  @override
+  String get assistantStepThinking => 'Düşünürəm';
+
+  @override
+  String get assistantStepSlow => 'Hələ üzərində işləyirəm';
+
+  @override
+  String get assistantStepRecords => 'Sənədləriniz yoxlanılır';
+
+  @override
+  String get assistantStepTrips => 'Səfərləriniz yoxlanılır';
+
+  @override
+  String get assistantStepPeople => 'Şəxsləriniz yoxlanılır';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name hazırlanır';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name üçün dəyişikliklər hazırlanır';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name üçün yeni tarix hazırlanır';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name silinməyə hazırlanır';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Dəyişiklik hazırlanır';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name əlavə edilir';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name yenilənir';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Məlumatlarınız yenilənir';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place səfəriniz hazırlanır';
+  }
+
+  @override
+  String get assistantStepScreen => 'Uyğun ekran axtarılır';
+
+  @override
+  String get assistantStop => 'Dayandır';
+
+  @override
+  String get assistantStopped => 'Bu cavabı dayandırdınız.';
+
+  @override
+  String get assistantCopy => 'Kopyala';
+
+  @override
+  String get assistantCopied => 'Kopyalandı';
+
+  @override
+  String get assistantHelpful => 'Faydalı';
+
+  @override
+  String get assistantNotHelpful => 'Faydalı deyil';
+
+  @override
+  String get assistantFeedbackThanks => 'Rəyiniz üçün təşəkkürlər';
+
+  @override
+  String get assistantUndo => 'Geri al';
+
+  @override
+  String get assistantUndoAll => 'Hamısını geri al';
+
+  @override
+  String get assistantUndone => 'Dəyişiklik geri alındı';
+
+  @override
+  String get assistantUndoFailed => 'Bunu geri almaq mümkün olmadı. Dəyişikliyi özünüz edin.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dəyişiklik',
+      one: '$count dəyişiklik',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Hamısını təsdiqlə';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count təsdiqlə';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name sənədini yeniləməyə kömək et';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name vaxtı keçib. Nə etməliyəm?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '$place səfərimə hazıramı?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Səfər planlamağa kömək et';
 }
