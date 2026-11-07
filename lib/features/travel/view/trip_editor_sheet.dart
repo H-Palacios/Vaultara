@@ -160,6 +160,17 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     });
   }
 
+  /// The first flight leaves on the departure day. After a leg that lands
+  /// somewhere that is not a destination (a connection), the next one is
+  /// usually the same or the next day; otherwise it is the flight home.
+  DateTime _suggestedFlightDate(DateTime departure, DateTime returnDate) {
+    if (_flights.isEmpty) return departure;
+    final last = _flights.last;
+    final country = last.toCountry;
+    if (country != null && !_countries.contains(country)) return last.landDate;
+    return returnDate;
+  }
+
   Future<void> _addFlight() async {
     FocusScope.of(context).unfocus();
     final loc = AppLocalizations.of(context)!;
@@ -171,7 +182,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     }
     final picked = await showTripFlightSheet(
       context,
-      suggestedDate: _flights.isEmpty ? departure : returnDate,
+      suggestedDate: _suggestedFlightDate(departure, returnDate),
       limits: TripFlightLimits.forAdd(
         tripStart: departure,
         tripEnd: returnDate,
@@ -299,6 +310,81 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     );
   }
 
+  Widget _connection(
+    AppLocalizations loc,
+    ColorScheme scheme,
+    TripFlight landed,
+    TripFlight next,
+  ) {
+    final minutes = TripFlight.layoverMinutes(landed, next);
+    final place = landed.to;
+    final text = minutes == null
+        ? loc.travelConnectionIn(place)
+        : loc.travelConnectionLong(
+            place,
+            loc.travelDurationHoursMinutes(minutes ~/ 60, minutes % 60),
+          );
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 0, 4, 8),
+      child: Row(
+        children: [
+          Icon(Icons.timelapse_rounded, size: 16, color: scheme.primary),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              text,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: scheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// "Arrive in Japan: 11 Mar 2027" for each destination a flight lands in,
+  /// when there is more than one country or a connection on the way.
+  List<Widget> _arrivalLines(AppLocalizations loc, ColorScheme scheme) {
+    final departure = _departure;
+    final returnDate = _return;
+    if (departure == null || returnDate == null || _flights.isEmpty) {
+      return const <Widget>[];
+    }
+    final draft = SavedTrip(
+      id: '',
+      name: '-',
+      departure: departure,
+      returnDate: returnDate,
+      countries: _countries,
+      flights: _flights,
+    );
+    final journeys = TripFlight.journeys(_flights);
+    final connecting = journeys.isNotEmpty && journeys.first.length > 1;
+    if (_countries.length < 2 && !connecting) return const <Widget>[];
+    final out = <Widget>[];
+    for (final country in _countries) {
+      final day = draft.landingIn(country);
+      if (day == null) continue;
+      out.add(
+        Padding(
+          padding: const EdgeInsets.only(left: 4, bottom: 4),
+          child: Text(
+            '${Countries.flag(country)} ${loc.travelArriveIn(Countries.name(country))}: ${TravelText.date(context, day)}',
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+              color: scheme.onSurface,
+            ),
+          ),
+        ),
+      );
+    }
+    return out;
+  }
+
   Widget _flightsSection(AppLocalizations loc, ColorScheme scheme) {
     final atDestination = _daysAtDestination();
     return Column(
@@ -325,8 +411,13 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           )
         else
           const SizedBox(height: 4),
-        for (var i = 0; i < _flights.length; i++)
+        for (var i = 0; i < _flights.length; i++) ...[
           _flightTile(loc, scheme, i, _flights[i]),
+          if (i + 1 < _flights.length &&
+              TripFlight.isConnection(_flights[i], _flights[i + 1]))
+            _connection(loc, scheme, _flights[i], _flights[i + 1]),
+        ],
+        ..._arrivalLines(loc, scheme),
         if (atDestination != null)
           Padding(
             padding: const EdgeInsets.only(left: 4, bottom: 8),
@@ -579,9 +670,17 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       _needsVisaManual,
       travellers.join(','),
       _countries.join(','),
-      _flights.length,
+      _purpose.name,
       _flights
-          .map((f) => '${f.from}>${f.to}@${f.departDate.millisecondsSinceEpoch}')
+          .map((f) => <Object?>[
+                f.from,
+                f.to,
+                f.toCountry,
+                f.departDate.millisecondsSinceEpoch,
+                f.departTime,
+                f.landDate.millisecondsSinceEpoch,
+                f.landTime,
+              ].join('/'))
           .join(','),
     ].join('|');
   }
@@ -634,26 +733,20 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      TextField(
-                        controller: _name,
-                        maxLength: SavedTrip.maxNameLength,
-                        textCapitalization: TextCapitalization.words,
-                        onChanged: (_) {
-                          if (_nameError != null) {
-                            setState(() => _nameError = null);
-                          }
-                        },
-                        decoration: AppInputDecorations.field(
-                          context,
-                          labelText: loc.travelTripNameOptional,
-                          hintText: _countries.isEmpty
-                              ? loc.travelTripNameOptional
-                              : SavedTrip.defaultName(_countries),
-                          hintFontSize: 14,
-                          errorText: _nameError,
-                          prefixIcon: const Icon(Icons.edit_note_rounded),
-                        ).copyWith(counterText: ''),
-                      ),
+                      _destinationField(loc, scheme),
+                      if (_nameError != null) ...[
+                        const SizedBox(height: 6),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Text(
+                            _nameError!,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: scheme.error,
+                            ),
+                          ),
+                        ),
+                      ],
                       const SizedBox(height: 12),
                       Row(
                         children: [
@@ -720,10 +813,6 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           ),
                         ),
                       ],
-                      const SizedBox(height: 14),
-                      _flightsSection(loc, scheme),
-                      const SizedBox(height: 14),
-                      _destinationField(loc, scheme),
                       ValueListenableBuilder<List<Person>>(
                         valueListenable: PeopleRepository.people,
                         builder: (context, people, _) =>
@@ -734,6 +823,8 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                         value: _purpose,
                         onChanged: (p) => setState(() => _purpose = p),
                       ),
+                      const SizedBox(height: 16),
+                      _flightsSection(loc, scheme),
                       const SizedBox(height: 16),
                       ListenableBuilder(
                         listenable: VisaText.changes,
@@ -781,6 +872,26 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                             ],
                           );
                         },
+                      ),
+                      const SizedBox(height: 16),
+                      TextField(
+                        controller: _name,
+                        maxLength: SavedTrip.maxNameLength,
+                        textCapitalization: TextCapitalization.words,
+                        onChanged: (_) {
+                          if (_nameError != null) {
+                            setState(() => _nameError = null);
+                          }
+                        },
+                        decoration: AppInputDecorations.field(
+                          context,
+                          labelText: loc.travelTripNameOptional,
+                          hintText: _countries.isEmpty
+                              ? loc.travelTripNameOptional
+                              : SavedTrip.defaultName(_countries),
+                          hintFontSize: 14,
+                          prefixIcon: const Icon(Icons.edit_note_rounded),
+                        ).copyWith(counterText: ''),
                       ),
                     ],
                   ),
