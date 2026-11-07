@@ -179,6 +179,23 @@ service cloud.firestore {
         && (!('passportRule' in d) || d.passportRule in ['six', 'three', 'stay']);
     }
 
+    function validLifePlan() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['event', 'date', 'people', 'country', 'createdAt',
+                               'finishedAt', 'statuses', 'start', 'skipped', 'updatedAt'])
+        && d.event in ['moving', 'homeBuy', 'homeSell', 'nameChange', 'marriage',
+                       'divorce', 'baby', 'car', 'job', 'studies', 'retiring',
+                       'country', 'childAdult', 'bereavement']
+        && (!('date' in d) || d.date == null || d.date is timestamp)
+        && d.people is list && d.people.size() > 0 && d.people.size() <= 26
+        && (!('country' in d) || (d.country is string && d.country.matches('^[A-Z]{2}$')))
+        && d.createdAt is timestamp
+        && (!('finishedAt' in d) || d.finishedAt == null || d.finishedAt is timestamp)
+        && d.statuses is map && d.statuses.size() <= 80
+        && d.start is map && d.start.size() <= 80
+        && d.skipped is list && d.skipped.size() <= 40;
+    }
+
     function optionalList(field, max) {
       return !(field in request.resource.data)
         || request.resource.data[field] == null
@@ -516,6 +533,12 @@ service cloud.firestore {
         allow delete: if isVerifiedOwner(uid);
         allow create: if isVerifiedOwner(uid) && isPaidUser(uid) && validTrip();
         allow update: if isVerifiedOwner(uid) && isPaidUser(uid) && validTrip();
+      }
+
+      match /lifePlans/{planId} {
+        allow read: if isOwner(uid);
+        allow delete: if isOwner(uid);
+        allow create, update: if isOwner(uid) && smallDoc(12) && validLifePlan();
       }
 
       match /items/{itemId} {
