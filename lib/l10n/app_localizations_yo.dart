@@ -4720,13 +4720,13 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantTitle => 'Béèrè Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Béèrè nípa àwọn igbasilẹ rẹ ní èdè tó rọrùn';
+  String get assistantTileSubtitle => 'Béèrè nípa àwọn igbasilẹ, ìrìn àjò àti ètò ní èdè tó rọrùn';
 
   @override
   String get assistantIntro => 'Béèrè lọ́wọ́ mi nípa àwọn igbasilẹ àti àtúnṣe rẹ. Mo tún lè ṣètò àwọn igbasilẹ tuntun fún ọ láti yẹ̀ wò.';
 
   @override
-  String get assistantHint => 'Béèrè nípa àwọn igbasilẹ rẹ';
+  String get assistantHint => 'Béèrè nípa àwọn igbasilẹ, ìrìn àjò tàbí ohun èlò náà';
 
   @override
   String get assistantSuggestionMonth => 'Kí ni yóò parí ní oṣù yìí?';
@@ -4753,9 +4753,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantMicUnavailable => 'Ìfọhùn kò sí. Ṣàyẹ̀wò pé Vaultara ní àṣẹ láti lo gbohungbohun.';
 
   @override
-  String get assistantThinking => 'Ó ń yẹ àwọn igbasilẹ rẹ wò';
-
-  @override
   String get assistantErrorOffline => 'O kò sí lórí íńtánẹ́ẹ̀tì. So pọ̀ mọ́ íńtánẹ́ẹ̀tì kí o sì gbìyànjú lẹ́ẹ̀kan sí i.';
 
   @override
@@ -4774,7 +4771,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantPremiumTitle => 'Béèrè Vaultara jẹ́ ara Premium';
 
   @override
-  String get assistantPremiumBody => 'Gòkè sí ètò tó ga jù láti béèrè ìbéèrè nípa àwọn igbasilẹ rẹ àti láti ṣafikun igbasilẹ ní èdè tó rọrùn.';
+  String get assistantPremiumBody => 'Gòkè sí ètò tó ga jù láti béèrè nípa àwọn igbasilẹ, ìrìn àjò àti ètò rẹ, kí o sì ṣe àyípadà ní èdè tó rọrùn.';
 
   @override
   String get assistantSeePlans => 'Wo àwọn ètò';
@@ -6280,4 +6277,132 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara kì í ṣe apá kan ojú-òpó yìí. Tí ojú-òpó yìí bá sọ nǹkan tó yàtọ̀ sí Vaultara, tẹ̀lé ojú-òpó yìí.';
+
+  @override
+  String get assistantStepThinking => 'Ó ń ronú';
+
+  @override
+  String get assistantStepSlow => 'Ó ṣì ń ṣiṣẹ́ lórí rẹ̀';
+
+  @override
+  String get assistantStepRecords => 'Ó ń yẹ àwọn igbasilẹ rẹ wò';
+
+  @override
+  String get assistantStepTrips => 'Ó ń yẹ àwọn ìrìn àjò rẹ wò';
+
+  @override
+  String get assistantStepPeople => 'Ó ń yẹ àwọn ènìyàn rẹ wò';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Ó ń pèsè $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Ó ń pèsè àyípadà sí $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Ó ń pèsè ọjọ́ tuntun fún $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Ó ń múra láti pa $name rẹ́';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Ó ń pèsè àyípadà náà';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Ó ń ṣàfikún $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ó ń ṣàtúnṣe $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ó ń ṣàtúnṣe àwọn àlàyé rẹ';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Ó ń pèsè ìrìn àjò rẹ sí $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Ó ń wá ojú-ìwé tó tọ́';
+
+  @override
+  String get assistantStop => 'Dúró';
+
+  @override
+  String get assistantStopped => 'O dá ìdáhùn yìí dúró.';
+
+  @override
+  String get assistantCopy => 'Ṣẹ̀dà';
+
+  @override
+  String get assistantCopied => 'A ti ṣẹ̀dà rẹ̀';
+
+  @override
+  String get assistantHelpful => 'Wúlò';
+
+  @override
+  String get assistantNotHelpful => 'Kò wúlò';
+
+  @override
+  String get assistantFeedbackThanks => 'O ṣeun fún èsì rẹ';
+
+  @override
+  String get assistantUndo => 'Yí padà';
+
+  @override
+  String get assistantUndoAll => 'Yí gbogbo rẹ̀ padà';
+
+  @override
+  String get assistantUndone => 'A ti yí àyípadà náà padà';
+
+  @override
+  String get assistantUndoFailed => 'A kò lè yí èyí padà. Ṣe àyípadà náà fúnra rẹ.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Àyípadà $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Fìdí gbogbo rẹ̀ múlẹ̀';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Fìdí $count múlẹ̀';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Ràn mí lọ́wọ́ láti sọ $name di tuntun';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name ti parí. Kí ni kí n ṣe?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Ṣé mo ti ṣetán fún ìrìn àjò mi sí $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Ràn mí lọ́wọ́ láti gbèrò ìrìn àjò';
 }

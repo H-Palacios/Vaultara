@@ -4887,13 +4887,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantTitle => 'Fiafraigh de Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Cuir ceist faoi do thaifid i bhfocail shimplí';
+  String get assistantTileSubtitle => 'Cuir ceist faoi thaifid, turais agus socruithe i bhfocail shimplí';
 
   @override
   String get assistantIntro => 'Cuir ceist orm faoi do thaifid agus d’athnuachana. Is féidir liom taifid nua a ullmhú duit freisin le seiceáil.';
 
   @override
-  String get assistantHint => 'Cuir ceist faoi do thaifid';
+  String get assistantHint => 'Cuir ceist faoi thaifid, turais nó an aip';
 
   @override
   String get assistantSuggestionMonth => 'Cad atá ag dul in éag an mhí seo?';
@@ -4920,9 +4920,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantMicUnavailable => 'Níl ionchur gutha ar fáil. Seiceáil go bhfuil cead ag Vaultara an micreafón a úsáid.';
 
   @override
-  String get assistantThinking => 'Do thaifid á seiceáil';
-
-  @override
   String get assistantErrorOffline => 'Níl tú ar líne. Ceangail leis an idirlíon agus bain triail eile as.';
 
   @override
@@ -4941,7 +4938,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantPremiumTitle => 'Tá Fiafraigh de Vaultara mar chuid de Premium';
 
   @override
-  String get assistantPremiumBody => 'Uasghrádaigh chun ceisteanna a chur faoi do thaifid agus taifid a chur leis i bhfocail shimplí.';
+  String get assistantPremiumBody => 'Uasghrádaigh chun ceisteanna a chur faoi do thaifid, do thurais agus do shocruithe agus athruithe a dhéanamh i bhfocail shimplí.';
 
   @override
   String get assistantSeePlans => 'Féach ar na pleananna';
@@ -6511,4 +6508,136 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Níl Vaultara mar chuid den suíomh seo. Má deir an suíomh seo rud éigin difriúil ó Vaultara, lean an suíomh seo.';
+
+  @override
+  String get assistantStepThinking => 'Ag smaoineamh';
+
+  @override
+  String get assistantStepSlow => 'Fós ag obair air';
+
+  @override
+  String get assistantStepRecords => 'Do thaifid á seiceáil';
+
+  @override
+  String get assistantStepTrips => 'Do thurais á seiceáil';
+
+  @override
+  String get assistantStepPeople => 'Do dhaoine á seiceáil';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name á ullmhú';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Athruithe ar $name á n-ullmhú';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'An dáta nua do $name á ullmhú';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Scriosadh $name á ullmhú';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'An t-athrú á ullmhú';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name á chur leis';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name á nuashonrú';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Do shonraí á nuashonrú';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Do thuras go $place á ullmhú';
+  }
+
+  @override
+  String get assistantStepScreen => 'An scáileán ceart á aimsiú';
+
+  @override
+  String get assistantStop => 'Stad';
+
+  @override
+  String get assistantStopped => 'Stad tú an freagra seo.';
+
+  @override
+  String get assistantCopy => 'Cóipeáil';
+
+  @override
+  String get assistantCopied => 'Cóipeáilte';
+
+  @override
+  String get assistantHelpful => 'Cabhrach';
+
+  @override
+  String get assistantNotHelpful => 'Ní cabhrach';
+
+  @override
+  String get assistantFeedbackThanks => 'Go raibh maith agat as an aiseolas';
+
+  @override
+  String get assistantUndo => 'Cealaigh';
+
+  @override
+  String get assistantUndoAll => 'Cealaigh gach rud';
+
+  @override
+  String get assistantUndone => 'Athrú cealaithe';
+
+  @override
+  String get assistantUndoFailed => 'Níorbh fhéidir é seo a chealú. Déan an t-athrú tú féin.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count athrú',
+      many: '$count n-athrú',
+      few: '$count athrú',
+      two: '$count athrú',
+      one: '$count athrú',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Deimhnigh gach rud';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Deimhnigh $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Cabhraigh liom $name a athnuachan';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'Tá $name imithe in éag. Cad a dhéanfaidh mé?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'An bhfuil mé réidh do mo thuras go $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Cabhraigh liom turas a phleanáil';
 }

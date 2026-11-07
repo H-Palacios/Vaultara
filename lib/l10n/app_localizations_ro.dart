@@ -4809,13 +4809,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantTitle => 'Întreabă Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Întreabă despre înregistrările tale pe înțelesul tuturor';
+  String get assistantTileSubtitle => 'Întreabă despre înregistrări, călătorii și setări pe înțelesul tuturor';
 
   @override
   String get assistantIntro => 'Întreabă-mă despre înregistrările și reînnoirile tale. Pot pregăti și înregistrări noi pe care să le verifici.';
 
   @override
-  String get assistantHint => 'Întreabă despre înregistrările tale';
+  String get assistantHint => 'Întreabă despre înregistrări, călătorii sau aplicație';
 
   @override
   String get assistantSuggestionMonth => 'Ce expiră luna aceasta?';
@@ -4842,9 +4842,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantMicUnavailable => 'Introducerea vocală nu este disponibilă. Verifică dacă Vaultara are voie să folosească microfonul.';
 
   @override
-  String get assistantThinking => 'Se verifică înregistrările tale';
-
-  @override
   String get assistantErrorOffline => 'Ești offline. Conectează-te la internet și încearcă din nou.';
 
   @override
@@ -4863,7 +4860,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantPremiumTitle => 'Întreabă Vaultara face parte din Premium';
 
   @override
-  String get assistantPremiumBody => 'Treci la Premium ca să pui întrebări despre înregistrările tale și să adaugi înregistrări pe înțelesul tuturor.';
+  String get assistantPremiumBody => 'Treci la Premium ca să întrebi despre înregistrările, călătoriile și setările tale și să faci modificări pe înțelesul tuturor.';
 
   @override
   String get assistantSeePlans => 'Vezi planurile';
@@ -6401,4 +6398,134 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara nu face parte din acest site. Dacă acest site spune altceva decât Vaultara, urmează acest site.';
+
+  @override
+  String get assistantStepThinking => 'Mă gândesc';
+
+  @override
+  String get assistantStepSlow => 'Încă lucrez la asta';
+
+  @override
+  String get assistantStepRecords => 'Se verifică înregistrările tale';
+
+  @override
+  String get assistantStepTrips => 'Se verifică călătoriile tale';
+
+  @override
+  String get assistantStepPeople => 'Se verifică persoanele tale';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Se pregătește $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Se pregătesc modificările pentru $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Se pregătește noua dată pentru $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Se pregătește ștergerea $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Se pregătește modificarea';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Se adaugă $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Se actualizează $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Se actualizează datele tale';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Se pregătește călătoria ta în $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Se caută ecranul potrivit';
+
+  @override
+  String get assistantStop => 'Oprește';
+
+  @override
+  String get assistantStopped => 'Ai oprit acest răspuns.';
+
+  @override
+  String get assistantCopy => 'Copiază';
+
+  @override
+  String get assistantCopied => 'Copiat';
+
+  @override
+  String get assistantHelpful => 'Util';
+
+  @override
+  String get assistantNotHelpful => 'Nu este util';
+
+  @override
+  String get assistantFeedbackThanks => 'Mulțumim pentru feedback';
+
+  @override
+  String get assistantUndo => 'Anulează';
+
+  @override
+  String get assistantUndoAll => 'Anulează tot';
+
+  @override
+  String get assistantUndone => 'Modificare anulată';
+
+  @override
+  String get assistantUndoFailed => 'Nu s-a putut anula. Fă modificarea singur.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de modificări',
+      few: '$count modificări',
+      one: '$count modificare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Confirmă tot';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Confirmă $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Ajută-mă să reînnoiesc $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name a expirat. Ce fac?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Sunt pregătit pentru călătoria în $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Ajută-mă să planific o călătorie';
 }

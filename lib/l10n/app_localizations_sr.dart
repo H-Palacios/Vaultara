@@ -4806,13 +4806,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantTitle => 'Питајте Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Питајте о својим записима обичним речима';
+  String get assistantTileSubtitle => 'Питајте о записима, путовањима и подешавањима обичним речима';
 
   @override
   String get assistantIntro => 'Питајте ме о својим записима и обновама. Могу и да припремим нове записе да их проверите.';
 
   @override
-  String get assistantHint => 'Питајте о својим записима';
+  String get assistantHint => 'Питајте о записима, путовањима или апликацији';
 
   @override
   String get assistantSuggestionMonth => 'Шта истиче овог месеца?';
@@ -4839,9 +4839,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantMicUnavailable => 'Гласовни унос није доступан. Проверите да ли Vaultara сме да користи микрофон.';
 
   @override
-  String get assistantThinking => 'Проверавам ваше записе';
-
-  @override
   String get assistantErrorOffline => 'Нисте на мрежи. Повежите се на интернет и покушајте поново.';
 
   @override
@@ -4860,7 +4857,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantPremiumTitle => 'Питајте Vaultara је део Premium пакета';
 
   @override
-  String get assistantPremiumBody => 'Надоградите да бисте постављали питања о својим записима и додавали записе обичним речима.';
+  String get assistantPremiumBody => 'Надоградите да бисте питали о својим записима, путовањима и подешавањима и правили измене обичним речима.';
 
   @override
   String get assistantSeePlans => 'Погледај пакете';
@@ -6398,6 +6395,136 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara није део овог сајта. Ако овај сајт каже нешто другачије од Vaultare, прати овај сајт.';
+
+  @override
+  String get assistantStepThinking => 'Размишљам';
+
+  @override
+  String get assistantStepSlow => 'Још радим на томе';
+
+  @override
+  String get assistantStepRecords => 'Проверавам ваше записе';
+
+  @override
+  String get assistantStepTrips => 'Проверавам ваша путовања';
+
+  @override
+  String get assistantStepPeople => 'Проверавам ваше особе';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Припремам $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Припремам измене за $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Припремам нови датум за $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Припремам брисање записа $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Припремам измену';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Додајем особу $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ажурирам $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ажурирам ваше податке';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Припремам ваше путовање у $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Тражим прави екран';
+
+  @override
+  String get assistantStop => 'Заустави';
+
+  @override
+  String get assistantStopped => 'Зауставили сте овај одговор.';
+
+  @override
+  String get assistantCopy => 'Копирај';
+
+  @override
+  String get assistantCopied => 'Копирано';
+
+  @override
+  String get assistantHelpful => 'Корисно';
+
+  @override
+  String get assistantNotHelpful => 'Није корисно';
+
+  @override
+  String get assistantFeedbackThanks => 'Хвала на повратној информацији';
+
+  @override
+  String get assistantUndo => 'Поништи';
+
+  @override
+  String get assistantUndoAll => 'Поништи све';
+
+  @override
+  String get assistantUndone => 'Измена је поништена';
+
+  @override
+  String get assistantUndoFailed => 'Ово није могло да се поништи. Направите измену сами.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count измена',
+      few: '$count измене',
+      one: '$count измена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Потврди све';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Потврди $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Помози ми да обновим $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name је истекао. Шта да радим?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Да ли сам спреман за путовање у $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Помози ми да испланирам путовање';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -11201,13 +11328,13 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantTitle => 'Питајте Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Питајте о својим записима обичним речима';
+  String get assistantTileSubtitle => 'Питајте о записима, путовањима и подешавањима обичним речима';
 
   @override
   String get assistantIntro => 'Питајте ме о својим записима и обновама. Могу и да припремим нове записе да их проверите.';
 
   @override
-  String get assistantHint => 'Питајте о својим записима';
+  String get assistantHint => 'Питајте о записима, путовањима или апликацији';
 
   @override
   String get assistantSuggestionMonth => 'Шта истиче овог месеца?';
@@ -11234,9 +11361,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantMicUnavailable => 'Гласовни унос није доступан. Проверите да ли Vaultara сме да користи микрофон.';
 
   @override
-  String get assistantThinking => 'Проверавам ваше записе';
-
-  @override
   String get assistantErrorOffline => 'Нисте на мрежи. Повежите се на интернет и покушајте поново.';
 
   @override
@@ -11255,7 +11379,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantPremiumTitle => 'Питајте Vaultara је део пакета Premium';
 
   @override
-  String get assistantPremiumBody => 'Пређите на Premium да бисте постављали питања о својим записима и додавали записе обичним речима.';
+  String get assistantPremiumBody => 'Надоградите да бисте питали о својим записима, путовањима и подешавањима и правили измене обичним речима.';
 
   @override
   String get assistantSeePlans => 'Погледај планове';
@@ -12793,6 +12917,136 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara није део овог сајта. Ако овај сајт каже нешто другачије од Vaultare, прати овај сајт.';
+
+  @override
+  String get assistantStepThinking => 'Размишљам';
+
+  @override
+  String get assistantStepSlow => 'Још радим на томе';
+
+  @override
+  String get assistantStepRecords => 'Проверавам ваше записе';
+
+  @override
+  String get assistantStepTrips => 'Проверавам ваша путовања';
+
+  @override
+  String get assistantStepPeople => 'Проверавам ваше особе';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Припремам $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Припремам измене за $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Припремам нови датум за $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Припремам брисање записа $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Припремам измену';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Додајем особу $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ажурирам $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ажурирам ваше податке';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Припремам ваше путовање у $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Тражим прави екран';
+
+  @override
+  String get assistantStop => 'Заустави';
+
+  @override
+  String get assistantStopped => 'Зауставили сте овај одговор.';
+
+  @override
+  String get assistantCopy => 'Копирај';
+
+  @override
+  String get assistantCopied => 'Копирано';
+
+  @override
+  String get assistantHelpful => 'Корисно';
+
+  @override
+  String get assistantNotHelpful => 'Није корисно';
+
+  @override
+  String get assistantFeedbackThanks => 'Хвала на повратној информацији';
+
+  @override
+  String get assistantUndo => 'Поништи';
+
+  @override
+  String get assistantUndoAll => 'Поништи све';
+
+  @override
+  String get assistantUndone => 'Измена је поништена';
+
+  @override
+  String get assistantUndoFailed => 'Ово није могло да се поништи. Направите измену сами.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count измена',
+      few: '$count измене',
+      one: '$count измена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Потврди све';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Потврди $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Помози ми да обновим $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name је истекао. Шта да радим?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Да ли сам спреман за путовање у $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Помози ми да испланирам путовање';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -17592,13 +17846,13 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantTitle => 'Pitaj Vaultaru';
 
   @override
-  String get assistantTileSubtitle => 'Pitajte o svojim zapisima jednostavnim rečima';
+  String get assistantTileSubtitle => 'Pitajte o zapisima, putovanjima i podešavanjima jednostavnim rečima';
 
   @override
   String get assistantIntro => 'Pitajte me o svojim zapisima i obnovama. Mogu i da pripremim nove zapise da ih proverite.';
 
   @override
-  String get assistantHint => 'Pitajte o svojim zapisima';
+  String get assistantHint => 'Pitajte o zapisima, putovanjima ili aplikaciji';
 
   @override
   String get assistantSuggestionMonth => 'Šta ističe ovog meseca?';
@@ -17625,9 +17879,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantMicUnavailable => 'Glasovni unos nije dostupan. Proverite da li Vaultara sme da koristi mikrofon.';
 
   @override
-  String get assistantThinking => 'Proveravam vaše zapise';
-
-  @override
   String get assistantErrorOffline => 'Niste na mreži. Povežite se na internet i pokušajte ponovo.';
 
   @override
@@ -17646,7 +17897,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantPremiumTitle => 'Pitaj Vaultaru je deo Premiuma';
 
   @override
-  String get assistantPremiumBody => 'Pređite na viši plan da postavljate pitanja o svojim zapisima i dodajete zapise jednostavnim rečima.';
+  String get assistantPremiumBody => 'Pređite na viši plan da biste pitali o svojim zapisima, putovanjima i podešavanjima i pravili izmene jednostavnim rečima.';
 
   @override
   String get assistantSeePlans => 'Pogledaj planove';
@@ -19184,4 +19435,134 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara nije deo ovog sajta. Ako ovaj sajt kaže nešto drugačije od Vaultare, prati ovaj sajt.';
+
+  @override
+  String get assistantStepThinking => 'Razmišljam';
+
+  @override
+  String get assistantStepSlow => 'Još radim na tome';
+
+  @override
+  String get assistantStepRecords => 'Proveravam vaše zapise';
+
+  @override
+  String get assistantStepTrips => 'Proveravam vaša putovanja';
+
+  @override
+  String get assistantStepPeople => 'Proveravam vaše osobe';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Pripremam $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Pripremam izmene za $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Pripremam novi datum za $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Pripremam brisanje zapisa $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Pripremam izmenu';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Dodajem osobu $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ažuriram $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ažuriram vaše podatke';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Pripremam vaše putovanje u $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Tražim pravi ekran';
+
+  @override
+  String get assistantStop => 'Zaustavi';
+
+  @override
+  String get assistantStopped => 'Zaustavili ste ovaj odgovor.';
+
+  @override
+  String get assistantCopy => 'Kopiraj';
+
+  @override
+  String get assistantCopied => 'Kopirano';
+
+  @override
+  String get assistantHelpful => 'Korisno';
+
+  @override
+  String get assistantNotHelpful => 'Nije korisno';
+
+  @override
+  String get assistantFeedbackThanks => 'Hvala na povratnoj informaciji';
+
+  @override
+  String get assistantUndo => 'Poništi';
+
+  @override
+  String get assistantUndoAll => 'Poništi sve';
+
+  @override
+  String get assistantUndone => 'Izmena je poništena';
+
+  @override
+  String get assistantUndoFailed => 'Ovo nije moglo da se poništi. Napravite izmenu sami.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count izmena',
+      few: '$count izmene',
+      one: '$count izmena',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Potvrdi sve';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Potvrdi $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Pomozi mi da obnovim $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name je istekao. Šta da radim?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Da li sam spreman za putovanje u $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Pomozi mi da isplaniram putovanje';
 }

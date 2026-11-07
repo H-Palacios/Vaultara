@@ -4720,13 +4720,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantTitle => 'Jụọ Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Jụọ banyere ndekọ gị n’okwu dị mfe';
+  String get assistantTileSubtitle => 'Jụọ banyere ndekọ, njem na ntọala n’okwu dị mfe';
 
   @override
   String get assistantIntro => 'Jụọ m banyere ndekọ gị na mmeghari ha. Enwere m ike ịkwadebe ndekọ ọhụrụ ka ị lelee.';
 
   @override
-  String get assistantHint => 'Jụọ banyere ndekọ gị';
+  String get assistantHint => 'Jụọ banyere ndekọ, njem ma ọ bụ ngwa a';
 
   @override
   String get assistantSuggestionMonth => 'Gịnị ga-agwụ n’ọnwa a?';
@@ -4753,9 +4753,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantMicUnavailable => 'Ntinye olu adịghị. Lelee na Vaultara nwere ikike iji mikrofon.';
 
   @override
-  String get assistantThinking => 'Na-enyocha ndekọ gị';
-
-  @override
   String get assistantErrorOffline => 'Ị anọghị na ịntanetị. Jikọọ na ịntanetị ma nwaa ọzọ.';
 
   @override
@@ -4774,7 +4771,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantPremiumTitle => 'Jụọ Vaultara bụ akụkụ nke Premium';
 
   @override
-  String get assistantPremiumBody => 'Bulie ọkwa ka ị jụọ ajụjụ banyere ndekọ gị ma tinye ndekọ n’okwu dị mfe.';
+  String get assistantPremiumBody => 'Bulie ọkwa ka ị jụọ banyere ndekọ gị, njem gị na ntọala gị, ma mee mgbanwe n’okwu dị mfe.';
 
   @override
   String get assistantSeePlans => 'Lee atụmatụ';
@@ -6280,4 +6277,132 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara abụghị akụkụ nke saịtị a. Ọ bụrụ na saịtị a kwuru ihe dị iche na Vaultara, soro saịtị a.';
+
+  @override
+  String get assistantStepThinking => 'Na-eche echiche';
+
+  @override
+  String get assistantStepSlow => 'Ka na-arụ ọrụ na ya';
+
+  @override
+  String get assistantStepRecords => 'Na-enyocha ndekọ gị';
+
+  @override
+  String get assistantStepTrips => 'Na-enyocha njem gị';
+
+  @override
+  String get assistantStepPeople => 'Na-enyocha ndị gị';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Na-akwado $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Na-akwado mgbanwe na $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Na-akwado ụbọchị ọhụrụ maka $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Na-akwado ihichapụ $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Na-akwado mgbanwe ahụ';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Na-agbakwunye $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Na-emelite $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Na-emelite nkọwa gị';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Na-akwado njem gị gaa $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Na-achọ ihuenyo ziri ezi';
+
+  @override
+  String get assistantStop => 'Kwụsị';
+
+  @override
+  String get assistantStopped => 'I kwụsịrị azịza a.';
+
+  @override
+  String get assistantCopy => 'Detuo';
+
+  @override
+  String get assistantCopied => 'E detuola';
+
+  @override
+  String get assistantHelpful => 'Ọ bara uru';
+
+  @override
+  String get assistantNotHelpful => 'Ọ baghị uru';
+
+  @override
+  String get assistantFeedbackThanks => 'Daalụ maka nzaghachi gị';
+
+  @override
+  String get assistantUndo => 'Gbanwee azụ';
+
+  @override
+  String get assistantUndoAll => 'Gbanwee ha niile azụ';
+
+  @override
+  String get assistantUndone => 'E gbanweghachiri mgbanwe ahụ';
+
+  @override
+  String get assistantUndoFailed => 'Enweghị ike ịgbanwe nke a azụ. Mee mgbanwe ahụ n’onwe gị.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mgbanwe $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Kwado ha niile';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Kwado $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Nyere m aka imeghari $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name agwụla. Gịnị ka m ga-eme?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Adị m njikere maka njem m gaa $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Nyere m aka hazie njem';
 }

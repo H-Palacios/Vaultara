@@ -4754,13 +4754,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantTitle => 'Vra Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Vra oor jou rekords in gewone woorde';
+  String get assistantTileSubtitle => 'Vra oor rekords, reise en instellings in gewone woorde';
 
   @override
   String get assistantIntro => 'Vra my oor jou rekords en hernuwings. Ek kan ook nuwe rekords voorberei vir jou om na te gaan.';
 
   @override
-  String get assistantHint => 'Vra oor jou rekords';
+  String get assistantHint => 'Vra oor rekords, reise of die app';
 
   @override
   String get assistantSuggestionMonth => 'Wat verval hierdie maand?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantMicUnavailable => 'Stemlesing is nie beskikbaar nie. Maak seker dat Vaultara die mikrofoon mag gebruik.';
 
   @override
-  String get assistantThinking => 'Kyk deur jou rekords';
-
-  @override
   String get assistantErrorOffline => 'Jy is aflyn. Koppel aan die internet en probeer weer.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantPremiumTitle => 'Vra Vaultara is deel van Premium';
 
   @override
-  String get assistantPremiumBody => 'Gradeer op om vrae oor jou rekords te vra en rekords in gewone woorde by te voeg.';
+  String get assistantPremiumBody => 'Gradeer op om oor jou rekords, reise en instellings te vra en veranderinge in gewone woorde te maak.';
 
   @override
   String get assistantSeePlans => 'Sien planne';
@@ -6330,4 +6327,133 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara is nie deel van hierdie webwerf nie. As hierdie webwerf iets anders as Vaultara sê, volg hierdie webwerf.';
+
+  @override
+  String get assistantStepThinking => 'Dink na';
+
+  @override
+  String get assistantStepSlow => 'Nog besig';
+
+  @override
+  String get assistantStepRecords => 'Kyk deur jou rekords';
+
+  @override
+  String get assistantStepTrips => 'Kyk deur jou reise';
+
+  @override
+  String get assistantStepPeople => 'Kyk deur jou mense';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Berei $name voor';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Berei veranderinge aan $name voor';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Berei die nuwe datum vir $name voor';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Berei voor om $name uit te vee';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Berei die verandering voor';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Voeg $name by';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Werk $name by';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Werk jou besonderhede by';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Berei jou reis na $place voor';
+  }
+
+  @override
+  String get assistantStepScreen => 'Soek die regte skerm';
+
+  @override
+  String get assistantStop => 'Stop';
+
+  @override
+  String get assistantStopped => 'Jy het hierdie antwoord gestop.';
+
+  @override
+  String get assistantCopy => 'Kopieer';
+
+  @override
+  String get assistantCopied => 'Gekopieer';
+
+  @override
+  String get assistantHelpful => 'Nuttig';
+
+  @override
+  String get assistantNotHelpful => 'Nie nuttig nie';
+
+  @override
+  String get assistantFeedbackThanks => 'Dankie vir die terugvoer';
+
+  @override
+  String get assistantUndo => 'Ontdoen';
+
+  @override
+  String get assistantUndoAll => 'Ontdoen alles';
+
+  @override
+  String get assistantUndone => 'Verandering ontdoen';
+
+  @override
+  String get assistantUndoFailed => 'Dit kon nie ontdoen word nie. Maak self die verandering.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count veranderinge',
+      one: '$count verandering',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Bevestig alles';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Bevestig $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Help my om $name te hernu';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name het verval. Wat moet ek doen?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Is ek gereed vir my reis na $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Help my om \'n reis te beplan';
 }

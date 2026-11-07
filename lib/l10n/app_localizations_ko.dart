@@ -4719,13 +4719,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantTitle => 'Vaultara에 물어보기';
 
   @override
-  String get assistantTileSubtitle => '기록에 대해 쉬운 말로 물어보세요';
+  String get assistantTileSubtitle => '기록, 여행, 설정에 대해 쉬운 말로 물어보세요';
 
   @override
   String get assistantIntro => '기록과 갱신에 대해 물어보세요. 확인할 수 있도록 새 기록을 준비해 드리기도 합니다.';
 
   @override
-  String get assistantHint => '기록에 대해 물어보세요';
+  String get assistantHint => '기록, 여행 또는 앱에 대해 물어보세요';
 
   @override
   String get assistantSuggestionMonth => '이번 달에 만료되는 것은?';
@@ -4752,9 +4752,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantMicUnavailable => '음성 입력을 사용할 수 없습니다. Vaultara가 마이크를 사용할 수 있는지 확인하세요.';
 
   @override
-  String get assistantThinking => '기록을 확인하는 중';
-
-  @override
   String get assistantErrorOffline => '오프라인 상태입니다. 인터넷에 연결한 후 다시 시도하세요.';
 
   @override
@@ -4773,7 +4770,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara에 물어보기는 프리미엄에 포함되어 있습니다';
 
   @override
-  String get assistantPremiumBody => '업그레이드하면 기록에 대해 질문하고 쉬운 말로 기록을 추가할 수 있습니다.';
+  String get assistantPremiumBody => '업그레이드하면 기록, 여행, 설정에 대해 묻고 쉬운 말로 변경할 수 있습니다.';
 
   @override
   String get assistantSeePlans => '요금제 보기';
@@ -6279,4 +6276,132 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara는 이 사이트와 관련이 없습니다. 이 사이트의 내용이 Vaultara와 다르면 이 사이트를 따르세요.';
+
+  @override
+  String get assistantStepThinking => '생각하는 중';
+
+  @override
+  String get assistantStepSlow => '아직 작업 중';
+
+  @override
+  String get assistantStepRecords => '기록을 확인하는 중';
+
+  @override
+  String get assistantStepTrips => '여행을 확인하는 중';
+
+  @override
+  String get assistantStepPeople => '등록한 사람을 확인하는 중';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name 준비 중';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name 변경 사항 준비 중';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name의 새 날짜 준비 중';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name 삭제 준비 중';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => '변경 사항 준비 중';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name 추가 중';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name 업데이트 중';
+  }
+
+  @override
+  String get assistantStepPersonMe => '내 정보 업데이트 중';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place 여행 준비 중';
+  }
+
+  @override
+  String get assistantStepScreen => '알맞은 화면을 찾는 중';
+
+  @override
+  String get assistantStop => '중지';
+
+  @override
+  String get assistantStopped => '이 답변을 중지했습니다.';
+
+  @override
+  String get assistantCopy => '복사';
+
+  @override
+  String get assistantCopied => '복사됨';
+
+  @override
+  String get assistantHelpful => '도움이 됨';
+
+  @override
+  String get assistantNotHelpful => '도움이 안 됨';
+
+  @override
+  String get assistantFeedbackThanks => '의견을 보내 주셔서 감사합니다';
+
+  @override
+  String get assistantUndo => '실행 취소';
+
+  @override
+  String get assistantUndoAll => '모두 실행 취소';
+
+  @override
+  String get assistantUndone => '변경 사항을 취소했습니다';
+
+  @override
+  String get assistantUndoFailed => '실행 취소할 수 없습니다. 직접 변경해 주세요.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '변경 $count건',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => '모두 확인';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count건 확인';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name 갱신을 도와줘';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name이(가) 만료되었어요. 어떻게 해야 하나요?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '$place 여행 준비가 됐나요?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => '여행 계획을 도와줘';
 }

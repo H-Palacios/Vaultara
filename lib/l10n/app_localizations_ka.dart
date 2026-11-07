@@ -4754,13 +4754,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantTitle => 'ჰკითხეთ Vaultara-ს';
 
   @override
-  String get assistantTileSubtitle => 'ჰკითხეთ თქვენს ჩანაწერებზე მარტივი სიტყვებით';
+  String get assistantTileSubtitle => 'ჰკითხეთ ჩანაწერებზე, მოგზაურობებზე და პარამეტრებზე მარტივი სიტყვებით';
 
   @override
   String get assistantIntro => 'ჰკითხეთ ჩემთან თქვენი ჩანაწერებისა და განახლებების შესახებ. ასევე შემიძლია ახალი ჩანაწერები მოვამზადო, რომ თქვენ შეამოწმოთ.';
 
   @override
-  String get assistantHint => 'ჰკითხეთ თქვენს ჩანაწერებზე';
+  String get assistantHint => 'ჰკითხეთ ჩანაწერებზე, მოგზაურობებზე ან აპზე';
 
   @override
   String get assistantSuggestionMonth => 'რის ვადა იწურება ამ თვეში?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantMicUnavailable => 'ხმოვანი შეყვანა მიუწვდომელია. შეამოწმეთ, აქვს თუ არა Vaultara-ს მიკროფონის გამოყენების უფლება.';
 
   @override
-  String get assistantThinking => 'ვამოწმებ თქვენს ჩანაწერებს';
-
-  @override
   String get assistantErrorOffline => 'ინტერნეტთან კავშირი არ გაქვთ. დაუკავშირდით ინტერნეტს და სცადეთ ხელახლა.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantPremiumTitle => '„ჰკითხეთ Vaultara-ს“ პრემიუმის ნაწილია';
 
   @override
-  String get assistantPremiumBody => 'გადადით პრემიუმზე, რომ ჩანაწერებზე დასვათ შეკითხვები და ჩანაწერები მარტივი სიტყვებით დაამატოთ.';
+  String get assistantPremiumBody => 'გადადით პრემიუმზე, რომ ჰკითხოთ თქვენს ჩანაწერებზე, მოგზაურობებსა და პარამეტრებზე და ცვლილებები მარტივი სიტყვებით შეიტანოთ.';
 
   @override
   String get assistantSeePlans => 'გეგმების ნახვა';
@@ -6330,4 +6327,133 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ამ საიტის ნაწილი არ არის. თუ ეს საიტი Vaultara-სგან განსხვავებულს ამბობს, მიჰყევით ამ საიტს.';
+
+  @override
+  String get assistantStepThinking => 'ვფიქრობ';
+
+  @override
+  String get assistantStepSlow => 'ჯერ კიდევ ვმუშაობ';
+
+  @override
+  String get assistantStepRecords => 'ვამოწმებ თქვენს ჩანაწერებს';
+
+  @override
+  String get assistantStepTrips => 'ვამოწმებ თქვენს მოგზაურობებს';
+
+  @override
+  String get assistantStepPeople => 'ვამოწმებ თქვენს ადამიანებს';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'ვამზადებ: $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'ვამზადებ ცვლილებებს: $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'ვამზადებ ახალ თარიღს: $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'ვამზადებ წაშლას: $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'ვამზადებ ცვლილებას';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'ვამატებ: $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'ვაახლებ: $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'ვაახლებ თქვენს მონაცემებს';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'ვამზადებ თქვენს მოგზაურობას: $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'ვეძებ სწორ ეკრანს';
+
+  @override
+  String get assistantStop => 'შეჩერება';
+
+  @override
+  String get assistantStopped => 'თქვენ შეაჩერეთ ეს პასუხი.';
+
+  @override
+  String get assistantCopy => 'კოპირება';
+
+  @override
+  String get assistantCopied => 'დაკოპირდა';
+
+  @override
+  String get assistantHelpful => 'სასარგებლოა';
+
+  @override
+  String get assistantNotHelpful => 'არ არის სასარგებლო';
+
+  @override
+  String get assistantFeedbackThanks => 'გმადლობთ გამოხმაურებისთვის';
+
+  @override
+  String get assistantUndo => 'გაუქმება';
+
+  @override
+  String get assistantUndoAll => 'ყველას გაუქმება';
+
+  @override
+  String get assistantUndone => 'ცვლილება გაუქმდა';
+
+  @override
+  String get assistantUndoFailed => 'ამის გაუქმება ვერ მოხერხდა. ცვლილება თავად შეიტანეთ.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ცვლილება',
+      one: '$count ცვლილება',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'ყველას დადასტურება';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count-ის დადასტურება';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'დამეხმარე განახლებაში: $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name-ს ვადა გაუვიდა. რა ვქნა?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'მზად ვარ მოგზაურობისთვის: $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'დამეხმარე მოგზაურობის დაგეგმვაში';
 }

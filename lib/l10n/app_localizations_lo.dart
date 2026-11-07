@@ -4719,13 +4719,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get assistantTitle => 'ຖາມ Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'ຖາມກ່ຽວກັບບັນທຶກຂອງທ່ານດ້ວຍຄຳເວົ້າງ່າຍໆ';
+  String get assistantTileSubtitle => 'ຖາມກ່ຽວກັບບັນທຶກ, ການເດີນທາງ ແລະ ການຕັ້ງຄ່າດ້ວຍຄຳເວົ້າງ່າຍໆ';
 
   @override
   String get assistantIntro => 'ຖາມຂ້ອຍກ່ຽວກັບບັນທຶກ ແລະ ການຕໍ່ອາຍຸຂອງທ່ານໄດ້. ຂ້ອຍຍັງກຽມບັນທຶກໃໝ່ໃຫ້ທ່ານກວດເບິ່ງໄດ້ນຳ.';
 
   @override
-  String get assistantHint => 'ຖາມກ່ຽວກັບບັນທຶກຂອງທ່ານ';
+  String get assistantHint => 'ຖາມກ່ຽວກັບບັນທຶກ, ການເດີນທາງ ຫຼື ແອັບ';
 
   @override
   String get assistantSuggestionMonth => 'ເດືອນນີ້ມີຫຍັງໝົດອາຍຸແດ່?';
@@ -4752,9 +4752,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get assistantMicUnavailable => 'ບໍ່ສາມາດໃຊ້ການປ້ອນດ້ວຍສຽງໄດ້. ກວດເບິ່ງວ່າ Vaultara ໄດ້ຮັບອະນຸຍາດໃຫ້ໃຊ້ໄມໂຄຣໂຟນ.';
 
   @override
-  String get assistantThinking => 'ກຳລັງກວດບັນທຶກຂອງທ່ານ';
-
-  @override
   String get assistantErrorOffline => 'ທ່ານອອບລາຍຢູ່. ເຊື່ອມຕໍ່ອິນເຕີເນັດແລ້ວລອງໃໝ່.';
 
   @override
@@ -4773,7 +4770,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get assistantPremiumTitle => 'ຖາມ Vaultara ເປັນສ່ວນໜຶ່ງຂອງ Premium';
 
   @override
-  String get assistantPremiumBody => 'ອັບເກຣດເພື່ອຖາມກ່ຽວກັບບັນທຶກຂອງທ່ານ ແລະ ເພີ່ມບັນທຶກດ້ວຍຄຳເວົ້າງ່າຍໆ.';
+  String get assistantPremiumBody => 'ອັບເກຣດເພື່ອຖາມກ່ຽວກັບບັນທຶກ, ການເດີນທາງ ແລະ ການຕັ້ງຄ່າຂອງທ່ານ ແລະ ປ່ຽນແປງດ້ວຍຄຳເວົ້າງ່າຍໆ.';
 
   @override
   String get assistantSeePlans => 'ເບິ່ງແພັກເກັດ';
@@ -6279,4 +6276,132 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ບໍ່ແມ່ນສ່ວນໜຶ່ງຂອງເວັບໄຊນີ້. ຖ້າເວັບໄຊນີ້ບອກສິ່ງທີ່ແຕກຕ່າງຈາກ Vaultara, ໃຫ້ເຮັດຕາມເວັບໄຊນີ້.';
+
+  @override
+  String get assistantStepThinking => 'ກຳລັງຄິດ';
+
+  @override
+  String get assistantStepSlow => 'ຍັງກຳລັງເຮັດຢູ່';
+
+  @override
+  String get assistantStepRecords => 'ກຳລັງກວດບັນທຶກຂອງທ່ານ';
+
+  @override
+  String get assistantStepTrips => 'ກຳລັງກວດການເດີນທາງຂອງທ່ານ';
+
+  @override
+  String get assistantStepPeople => 'ກຳລັງກວດຄົນຂອງທ່ານ';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'ກຳລັງກະກຽມ $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'ກຳລັງກະກຽມການປ່ຽນແປງ $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'ກຳລັງກະກຽມວັນທີໃໝ່ສຳລັບ $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'ກຳລັງກະກຽມລຶບ $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'ກຳລັງກະກຽມການປ່ຽນແປງ';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'ກຳລັງເພີ່ມ $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'ກຳລັງອັບເດດ $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'ກຳລັງອັບເດດຂໍ້ມູນຂອງທ່ານ';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'ກຳລັງກະກຽມການເດີນທາງຂອງທ່ານໄປ $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'ກຳລັງຊອກຫາໜ້າຈໍທີ່ຖືກຕ້ອງ';
+
+  @override
+  String get assistantStop => 'ຢຸດ';
+
+  @override
+  String get assistantStopped => 'ທ່ານໄດ້ຢຸດຄຳຕອບນີ້.';
+
+  @override
+  String get assistantCopy => 'ສຳເນົາ';
+
+  @override
+  String get assistantCopied => 'ສຳເນົາແລ້ວ';
+
+  @override
+  String get assistantHelpful => 'ມີປະໂຫຍດ';
+
+  @override
+  String get assistantNotHelpful => 'ບໍ່ມີປະໂຫຍດ';
+
+  @override
+  String get assistantFeedbackThanks => 'ຂອບໃຈສຳລັບຄຳຕິຊົມ';
+
+  @override
+  String get assistantUndo => 'ຍົກເລີກການປ່ຽນ';
+
+  @override
+  String get assistantUndoAll => 'ຍົກເລີກທັງໝົດ';
+
+  @override
+  String get assistantUndone => 'ຍົກເລີກການປ່ຽນແປງແລ້ວ';
+
+  @override
+  String get assistantUndoFailed => 'ບໍ່ສາມາດຍົກເລີກໄດ້. ກະລຸນາປ່ຽນແປງເອງ.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ການປ່ຽນແປງ $count ລາຍການ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'ຢືນຢັນທັງໝົດ';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'ຢືນຢັນ $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'ຊ່ວຍຂ້ອຍຕໍ່ອາຍຸ $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name ໝົດອາຍຸແລ້ວ. ຂ້ອຍຄວນເຮັດແນວໃດ?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'ຂ້ອຍພ້ອມສຳລັບການເດີນທາງໄປ $place ແລ້ວບໍ?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'ຊ່ວຍຂ້ອຍວາງແຜນການເດີນທາງ';
 }
