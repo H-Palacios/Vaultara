@@ -9,6 +9,7 @@ class AssistantActionCard extends StatelessWidget {
   final AssistantActionState state;
   final VoidCallback onConfirm;
   final VoidCallback onCancel;
+  final VoidCallback? onUndo;
 
   const AssistantActionCard({
     super.key,
@@ -16,6 +17,7 @@ class AssistantActionCard extends StatelessWidget {
     required this.state,
     required this.onConfirm,
     required this.onCancel,
+    this.onUndo,
   });
 
   @override
@@ -128,10 +130,10 @@ class AssistantActionCard extends StatelessWidget {
           ),
         );
       case AssistantActionState.applied:
-        return _StatusLine(
-          icon: Icons.check_circle_rounded,
-          color: scheme.primary,
+        return AssistantDoneLine(
           text: loc.assistantCardDone,
+          undoLabel: loc.assistantUndo,
+          onUndo: onUndo,
         );
       case AssistantActionState.opened:
         return Row(
@@ -160,6 +162,44 @@ class AssistantActionCard extends StatelessWidget {
           text: loc.assistantCardCancelled,
         );
     }
+  }
+}
+
+/// "Done" with an Undo button next to it while the change can still be
+/// reversed.
+class AssistantDoneLine extends StatelessWidget {
+  final String text;
+  final String undoLabel;
+  final VoidCallback? onUndo;
+
+  const AssistantDoneLine({
+    super.key,
+    required this.text,
+    required this.undoLabel,
+    this.onUndo,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    final line = _StatusLine(
+      icon: Icons.check_circle_rounded,
+      color: scheme.primary,
+      text: text,
+    );
+    if (onUndo == null) return line;
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Flexible(child: line),
+        const SizedBox(width: 8),
+        TextButton.icon(
+          onPressed: onUndo,
+          icon: const Icon(Icons.undo_rounded, size: 18),
+          label: Text(undoLabel),
+        ),
+      ],
+    );
   }
 }
 

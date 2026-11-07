@@ -30,6 +30,21 @@ import 'package:vaultara/shell/shell_state.dart';
 
 enum AssistantApplyResult { applied, opened, failed }
 
+/// Reverses one confirmed change. Returns false when it can no longer be
+/// undone, for example because the record was deleted in the meantime.
+typedef AssistantUndo = Future<bool> Function();
+
+class AssistantApplied {
+  final AssistantApplyResult result;
+  final AssistantUndo? undo;
+
+  const AssistantApplied(this.result, [this.undo]);
+}
+
+class _UndoSlot {
+  AssistantUndo? undo;
+}
+
 class AssistantActionLauncher {
   const AssistantActionLauncher._();
 
@@ -143,29 +158,61 @@ class AssistantActionLauncher {
     ShellState.current?.homeKey.currentState?.refreshOverview();
   }
 
+  static AssistantUndo _restoreRecord(TrackedItem before) {
+    return () async {
+      final id = before.id;
+      final current = id == null ? null : RecordRepository.findById(id);
+      if (current == null) return false;
+      await RecordRepository.updateRecord(current, before);
+      _refreshHome();
+      return true;
+    };
+  }
+
   static Future<AssistantApplyResult> apply(
     BuildContext context,
     AssistantAction action,
+  ) async =>
+      (await applyWithUndo(context, action)).result;
+
+  /// Applies a confirmed card and, when it worked, returns a way to put
+  /// everything back as it was.
+  static Future<AssistantApplied> applyWithUndo(
+    BuildContext context,
+    AssistantAction action,
+  ) async {
+    final slot = _UndoSlot();
+    final result = await _apply(context, action, slot);
+    return AssistantApplied(
+      result,
+      result == AssistantApplyResult.applied ? slot.undo : null,
+    );
+  }
+
+  static Future<AssistantApplyResult> _apply(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
   ) async {
     try {
       switch (action.type) {
         case AssistantActionType.add:
-          return await _add(context, action);
+          return await _add(context, action, slot);
         case AssistantActionType.update:
         case AssistantActionType.edit:
-          return await _edit(context, action);
+          return await _edit(context, action, slot);
         case AssistantActionType.renew:
-          return await _renew(context, action);
+          return await _renew(context, action, slot);
         case AssistantActionType.delete:
-          return await _delete(context, action);
+          return await _delete(context, action, slot);
         case AssistantActionType.personAdd:
-          return await _addPerson(context, action);
+          return await _addPerson(context, action, slot);
         case AssistantActionType.personEdit:
-          return await _editPerson(context, action);
+          return await _editPerson(context, action, slot);
         case AssistantActionType.tripAdd:
-          return await _addTrip(context, action);
+          return await _addTrip(context, action, slot);
         case AssistantActionType.tripEdit:
-          return await _editTrip(context, action);
+          return await _editTrip(context, action, slot);
         case AssistantActionType.open:
           return AssistantNavigator.open(context, action)
               ? AssistantApplyResult.opened
@@ -182,6 +229,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _add(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final shell = ShellState.current;
     if (shell == null) return AssistantApplyResult.failed;
@@ -214,7 +262,17 @@ class AssistantActionLauncher {
       return AssistantApplyResult.failed;
     }
     _refreshHome();
-    await _afterReminderChange(context, RecordRepository.stored(record));
+    final added = RecordRepository.stored(record);
+    slot.undo = () async {
+      final id = added.id;
+      final current = id == null ? null : RecordRepository.findById(id);
+      if (current == null) return false;
+      await RecordRepository.softDeleteRecord(current);
+      await RecordRepository.permanentlyDeleteRecord(current);
+      _refreshHome();
+      return true;
+    };
+    await _afterReminderChange(context, added);
     if (context.mounted) {
       ActionFeedbackSnackbar.showAdded(context, record.name);
     }
@@ -224,6 +282,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _edit(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final changes = action.changes;
@@ -287,6 +346,7 @@ class AssistantActionLauncher {
     );
 
     await RecordRepository.updateRecord(record, updated);
+    slot.undo = _restoreRecord(record);
     if (!context.mounted) return AssistantApplyResult.applied;
     _refreshHome();
     final remindersChanged = changes.reminderDays != null ||
@@ -303,6 +363,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _renew(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final expiry = action.expiryDate;
@@ -331,6 +392,7 @@ class AssistantActionLauncher {
     }
 
     await RecordRepository.updateRecord(record, updated);
+    slot.undo = _restoreRecord(record);
     await RenewalChecklist.clear(record.id);
     if (!context.mounted) return AssistantApplyResult.applied;
     _refreshHome();
@@ -345,10 +407,16 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _delete(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final record = await _editableRecord(context, action.recordId);
     if (record == null || !context.mounted) return AssistantApplyResult.failed;
     await RecordRepository.softDeleteRecord(record);
+    slot.undo = () async {
+      await RecordRepository.restoreRecord(record);
+      _refreshHome();
+      return true;
+    };
     if (!context.mounted) return AssistantApplyResult.applied;
     _refreshHome();
     ActionFeedbackSnackbar.showDeleted(context, record.name);
@@ -373,6 +441,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _addPerson(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final name = action.name;
@@ -396,6 +465,12 @@ class AssistantActionLauncher {
     if (residence != null) {
       await PeopleRepository.setResidence(person, residence);
     }
+    slot.undo = () async {
+      final current = PeopleRepository.byId(person.id);
+      if (current == null) return false;
+      await PeopleRepository.remove(current);
+      return true;
+    };
     if (context.mounted) {
       ActionFeedbackSnackbar.showInfo(
         context,
@@ -409,12 +484,15 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _editPerson(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final id = action.personId;
     if (id == null) return AssistantApplyResult.failed;
 
     if (id == AssistantAction.me) {
+      final nationalityBefore = NationalityRepository.mine.value;
+      final residenceBefore = NationalityRepository.myResidence.value;
       var ok = true;
       if (action.hasNationality) {
         ok = await NationalityRepository.set(
@@ -431,6 +509,23 @@ class AssistantActionLauncher {
             ok;
       }
       if (!ok && context.mounted) _info(context, loc.assistantActionFailed);
+      if (ok) {
+        slot.undo = () async {
+          var undone = true;
+          if (action.hasNationality) {
+            undone = await NationalityRepository.set(null, nationalityBefore) &&
+                undone;
+          }
+          if (action.hasResidence) {
+            undone = await NationalityRepository.setResidence(
+                  null,
+                  residenceBefore,
+                ) &&
+                undone;
+          }
+          return undone;
+        };
+      }
       return ok ? AssistantApplyResult.applied : AssistantApplyResult.failed;
     }
 
@@ -455,6 +550,20 @@ class AssistantActionLauncher {
         _knownCountry(action.residence),
       );
     }
+    slot.undo = () async {
+      final current = PeopleRepository.byId(person.id);
+      if (current == null) return false;
+      if (current.name != person.name) {
+        await PeopleRepository.rename(current, person.name);
+      }
+      if (action.hasNationality) {
+        await PeopleRepository.setNationality(current, person.nationality);
+      }
+      if (action.hasResidence) {
+        await PeopleRepository.setResidence(current, person.residence);
+      }
+      return true;
+    };
     return AssistantApplyResult.applied;
   }
 
@@ -476,6 +585,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> _addTrip(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final departure = action.departure;
@@ -514,12 +624,19 @@ class AssistantActionLauncher {
       if (context.mounted) _info(context, loc.assistantActionFailed);
       return AssistantApplyResult.failed;
     }
+    slot.undo = () async {
+      final current = TripRepository.byId(saved.id);
+      if (current == null) return false;
+      await TripRepository.remove(current);
+      return true;
+    };
     return AssistantApplyResult.applied;
   }
 
   static Future<AssistantApplyResult> _editTrip(
     BuildContext context,
     AssistantAction action,
+    _UndoSlot slot,
   ) async {
     final loc = AppLocalizations.of(context)!;
     final changes = action.tripChanges;
@@ -571,6 +688,11 @@ class AssistantActionLauncher {
       checklist: TripChecklist.update(loc, before: base, after: edited),
     );
     await TripRepository.save(saved);
+    slot.undo = () async {
+      if (TripRepository.byId(base.id) == null) return false;
+      await TripRepository.save(base);
+      return true;
+    };
     return AssistantApplyResult.applied;
   }
 }
