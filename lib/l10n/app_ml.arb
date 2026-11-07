@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "എന്റെ ലൊക്കേഷൻ ഉപയോഗിക്കുക",
   "assistantLocationNote": "നിങ്ങൾ ഏത് രാജ്യത്താണെന്ന് മാത്രമാണ് Vaultara നോക്കുന്നത്. കൃത്യമായ ലൊക്കേഷൻ അയയ്ക്കുകയോ സേവ് ചെയ്യുകയോ ഇല്ല.",
   "assistantLocationShared": "ഞാൻ എന്റെ ലൊക്കേഷൻ ഓണാക്കി",
-  "assistantLocationOff": "ലൊക്കേഷൻ ഓഫാണ്. സുരക്ഷയും സ്വകാര്യതയും എന്നതിൽ ഓണാക്കാം."
+  "assistantLocationOff": "ലൊക്കേഷൻ ഓഫാണ്. സുരക്ഷയും സ്വകാര്യതയും എന്നതിൽ ഓണാക്കാം.",
+  "assistantHistoryYesterday": "ഇന്നലെ",
+  "assistantHistoryLastWeek": "കഴിഞ്ഞ 7 ദിവസം",
+  "assistantHistoryLastMonth": "കഴിഞ്ഞ 30 ദിവസം",
+  "assistantHistoryOlder": "പഴയവ"
 }

@@ -6610,4 +6610,16 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Goobta waa xiran tahay. Waxaad ka shidi kartaa Amniga iyo asturnaanta.';
+
+  @override
+  String get assistantHistoryYesterday => 'Shalay';
+
+  @override
+  String get assistantHistoryLastWeek => '7-dii maalmood ee la soo dhaafay';
+
+  @override
+  String get assistantHistoryLastMonth => '30-kii maalmood ee la soo dhaafay';
+
+  @override
+  String get assistantHistoryOlder => 'Kuwii hore';
 }

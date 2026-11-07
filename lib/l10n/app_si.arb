@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "මගේ ස්ථානය භාවිත කරන්න",
   "assistantLocationNote": "Vaultara ඔබ සිටින රට පමණක් පරීක්ෂා කරයි. ඔබේ නිවැරදි ස්ථානය යවන්නේවත් සුරකින්නේවත් නැත.",
   "assistantLocationShared": "මම මගේ ස්ථානය ක්‍රියාත්මක කළා",
-  "assistantLocationOff": "ස්ථානය අක්‍රියයි. ආරක්ෂාව සහ පෞද්ගලිකත්වය තුළ ක්‍රියාත්මක කළ හැක."
+  "assistantLocationOff": "ස්ථානය අක්‍රියයි. ආරක්ෂාව සහ පෞද්ගලිකත්වය තුළ ක්‍රියාත්මක කළ හැක.",
+  "assistantHistoryYesterday": "ඊයේ",
+  "assistantHistoryLastWeek": "පසුගිය දින 7",
+  "assistantHistoryLastMonth": "පසුගිය දින 30",
+  "assistantHistoryOlder": "පැරණි"
 }

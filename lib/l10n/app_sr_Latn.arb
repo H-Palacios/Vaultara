@@ -2050,5 +2050,9 @@
   "assistantLocationTitle": "Koristi moju lokaciju",
   "assistantLocationNote": "Vaultara proverava samo u kojoj ste državi. Vaša tačna lokacija se ne šalje i ne čuva.",
   "assistantLocationShared": "Uključio sam lokaciju",
-  "assistantLocationOff": "Lokacija je isključena. Možete je uključiti u Bezbednost i privatnost."
+  "assistantLocationOff": "Lokacija je isključena. Možete je uključiti u Bezbednost i privatnost.",
+  "assistantHistoryYesterday": "Juče",
+  "assistantHistoryLastWeek": "Prethodnih 7 dana",
+  "assistantHistoryLastMonth": "Prethodnih 30 dana",
+  "assistantHistoryOlder": "Starije"
 }

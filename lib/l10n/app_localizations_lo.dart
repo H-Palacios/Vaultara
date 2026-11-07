@@ -6559,4 +6559,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ສະຖານທີ່ປິດຢູ່. ທ່ານສາມາດເປີດໄດ້ໃນຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວ.';
+
+  @override
+  String get assistantHistoryYesterday => 'ມື້ວານ';
+
+  @override
+  String get assistantHistoryLastWeek => '7 ມື້ຜ່ານມາ';
+
+  @override
+  String get assistantHistoryLastMonth => '30 ມື້ຜ່ານມາ';
+
+  @override
+  String get assistantHistoryOlder => 'ເກົ່າກວ່າ';
 }

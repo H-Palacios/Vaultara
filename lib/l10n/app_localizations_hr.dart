@@ -6677,4 +6677,16 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Lokacija je isključena. Možete je uključiti u Sigurnost i privatnost.';
+
+  @override
+  String get assistantHistoryYesterday => 'Jučer';
+
+  @override
+  String get assistantHistoryLastWeek => 'Prethodnih 7 dana';
+
+  @override
+  String get assistantHistoryLastMonth => 'Prethodnih 30 dana';
+
+  @override
+  String get assistantHistoryOlder => 'Starije';
 }

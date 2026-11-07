@@ -6611,4 +6611,16 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Ligging is af. Jy kan dit in Sekuriteit en privaatheid aanskakel.';
+
+  @override
+  String get assistantHistoryYesterday => 'Gister';
+
+  @override
+  String get assistantHistoryLastWeek => 'Vorige 7 dae';
+
+  @override
+  String get assistantHistoryLastMonth => 'Vorige 30 dae';
+
+  @override
+  String get assistantHistoryOlder => 'Ouer';
 }

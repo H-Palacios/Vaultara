@@ -2081,5 +2081,9 @@
   "assistantLocationTitle": "שימוש במיקום שלי",
   "assistantLocationNote": "Vaultara בודק רק באיזו מדינה את/ה. המיקום המדויק שלך לא נשלח ולא נשמר.",
   "assistantLocationShared": "הפעלתי את המיקום שלי",
-  "assistantLocationOff": "המיקום כבוי. אפשר להפעיל אותו באבטחה ופרטיות."
+  "assistantLocationOff": "המיקום כבוי. אפשר להפעיל אותו באבטחה ופרטיות.",
+  "assistantHistoryYesterday": "אתמול",
+  "assistantHistoryLastWeek": "7 הימים האחרונים",
+  "assistantHistoryLastMonth": "30 הימים האחרונים",
+  "assistantHistoryOlder": "ישנות יותר"
 }

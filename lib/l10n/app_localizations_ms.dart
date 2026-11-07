@@ -6559,4 +6559,16 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Lokasi dimatikan. Anda boleh menghidupkannya dalam Keselamatan dan privasi.';
+
+  @override
+  String get assistantHistoryYesterday => 'Semalam';
+
+  @override
+  String get assistantHistoryLastWeek => '7 hari lalu';
+
+  @override
+  String get assistantHistoryLastMonth => '30 hari lalu';
+
+  @override
+  String get assistantHistoryOlder => 'Lebih lama';
 }

@@ -6559,4 +6559,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Vị trí đang tắt. Bạn có thể bật trong Bảo mật và quyền riêng tư.';
+
+  @override
+  String get assistantHistoryYesterday => 'Hôm qua';
+
+  @override
+  String get assistantHistoryLastWeek => '7 ngày qua';
+
+  @override
+  String get assistantHistoryLastMonth => '30 ngày qua';
+
+  @override
+  String get assistantHistoryOlder => 'Cũ hơn';
 }

@@ -2068,5 +2068,9 @@
   "assistantLocationTitle": "Sebenzisa indawo yami",
   "assistantLocationNote": "I-Vaultara ibheka kuphela ukuthi ukuliphi izwe. Indawo yakho eqondile ayithunyelwa futhi ayigcinwa.",
   "assistantLocationShared": "Ngivule indawo yami",
-  "assistantLocationOff": "Indawo ivaliwe. Ungayivula ku-Ukuphepha nobumfihlo."
+  "assistantLocationOff": "Indawo ivaliwe. Ungayivula ku-Ukuphepha nobumfihlo.",
+  "assistantHistoryYesterday": "Izolo",
+  "assistantHistoryLastWeek": "Izinsuku ezi-7 ezedlule",
+  "assistantHistoryLastMonth": "Izinsuku ezingama-30 ezedlule",
+  "assistantHistoryOlder": "Ezindala"
 }

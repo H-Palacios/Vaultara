@@ -6611,4 +6611,16 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Η τοποθεσία είναι απενεργοποιημένη. Μπορείτε να την ενεργοποιήσετε στην Ασφάλεια και απόρρητο.';
+
+  @override
+  String get assistantHistoryYesterday => 'Χθες';
+
+  @override
+  String get assistantHistoryLastWeek => 'Τελευταίες 7 ημέρες';
+
+  @override
+  String get assistantHistoryLastMonth => 'Τελευταίες 30 ημέρες';
+
+  @override
+  String get assistantHistoryOlder => 'Παλαιότερες';
 }

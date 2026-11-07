@@ -6611,4 +6611,16 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get assistantHistoryYesterday => 'ਕੱਲ੍ਹ';
+
+  @override
+  String get assistantHistoryLastWeek => 'ਪਿਛਲੇ 7 ਦਿਨ';
+
+  @override
+  String get assistantHistoryLastMonth => 'ਪਿਛਲੇ 30 ਦਿਨ';
+
+  @override
+  String get assistantHistoryOlder => 'ਪੁਰਾਣੀਆਂ';
 }

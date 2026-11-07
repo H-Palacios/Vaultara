@@ -6610,4 +6610,16 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ස්ථානය අක්‍රියයි. ආරක්ෂාව සහ පෞද්ගලිකත්වය තුළ ක්‍රියාත්මක කළ හැක.';
+
+  @override
+  String get assistantHistoryYesterday => 'ඊයේ';
+
+  @override
+  String get assistantHistoryLastWeek => 'පසුගිය දින 7';
+
+  @override
+  String get assistantHistoryLastMonth => 'පසුගිය දින 30';
+
+  @override
+  String get assistantHistoryOlder => 'පැරණි';
 }

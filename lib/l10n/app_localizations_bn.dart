@@ -6611,4 +6611,16 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'অবস্থান বন্ধ। নিরাপত্তা ও গোপনীয়তায় চালু করতে পারেন।';
+
+  @override
+  String get assistantHistoryYesterday => 'গতকাল';
+
+  @override
+  String get assistantHistoryLastWeek => 'গত ৭ দিন';
+
+  @override
+  String get assistantHistoryLastMonth => 'গত ৩০ দিন';
+
+  @override
+  String get assistantHistoryOlder => 'পুরোনো';
 }

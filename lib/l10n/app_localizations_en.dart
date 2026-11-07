@@ -6626,4 +6626,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Location is off. You can turn it on in Security and privacy.';
+
+  @override
+  String get assistantHistoryYesterday => 'Yesterday';
+
+  @override
+  String get assistantHistoryLastWeek => 'Previous 7 days';
+
+  @override
+  String get assistantHistoryLastMonth => 'Previous 30 days';
+
+  @override
+  String get assistantHistoryOlder => 'Older';
 }

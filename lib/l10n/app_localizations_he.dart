@@ -6664,4 +6664,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'המיקום כבוי. אפשר להפעיל אותו באבטחה ופרטיות.';
+
+  @override
+  String get assistantHistoryYesterday => 'אתמול';
+
+  @override
+  String get assistantHistoryLastWeek => '7 הימים האחרונים';
+
+  @override
+  String get assistantHistoryLastMonth => '30 הימים האחרונים';
+
+  @override
+  String get assistantHistoryOlder => 'ישנות יותר';
 }

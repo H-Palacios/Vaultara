@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Izmantot manu atrašanās vietu",
   "assistantLocationNote": "Vaultara pārbauda tikai, kurā valstī esat. Jūsu precīzā atrašanās vieta netiek sūtīta vai saglabāta.",
   "assistantLocationShared": "Ieslēdzu atrašanās vietu",
-  "assistantLocationOff": "Atrašanās vieta ir izslēgta. To var ieslēgt sadaļā Drošība un privātums."
+  "assistantLocationOff": "Atrašanās vieta ir izslēgta. To var ieslēgt sadaļā Drošība un privātums.",
+  "assistantHistoryYesterday": "Vakar",
+  "assistantHistoryLastWeek": "Pēdējās 7 dienas",
+  "assistantHistoryLastMonth": "Pēdējās 30 dienas",
+  "assistantHistoryOlder": "Vecākas"
 }

@@ -6680,6 +6680,18 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Локација је искључена. Можете је укључити у Безбедност и приватност.';
+
+  @override
+  String get assistantHistoryYesterday => 'Јуче';
+
+  @override
+  String get assistantHistoryLastWeek => 'Претходних 7 дана';
+
+  @override
+  String get assistantHistoryLastMonth => 'Претходних 30 дана';
+
+  @override
+  String get assistantHistoryOlder => 'Старије';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -13357,6 +13369,18 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantLocationOff => 'Локација је искључена. Можете је укључити у Безбедност и приватност.';
+
+  @override
+  String get assistantHistoryYesterday => 'Јуче';
+
+  @override
+  String get assistantHistoryLastWeek => 'Претходних 7 дана';
+
+  @override
+  String get assistantHistoryLastMonth => 'Претходних 30 дана';
+
+  @override
+  String get assistantHistoryOlder => 'Старије';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -20030,4 +20054,16 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantLocationOff => 'Lokacija je isključena. Možete je uključiti u Bezbednost i privatnost.';
+
+  @override
+  String get assistantHistoryYesterday => 'Juče';
+
+  @override
+  String get assistantHistoryLastWeek => 'Prethodnih 7 dana';
+
+  @override
+  String get assistantHistoryLastMonth => 'Prethodnih 30 dana';
+
+  @override
+  String get assistantHistoryOlder => 'Starije';
 }

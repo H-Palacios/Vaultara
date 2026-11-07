@@ -2093,5 +2093,9 @@
   "assistantLocationTitle": "నా లొకేషన్ ఉపయోగించు",
   "assistantLocationNote": "మీరు ఏ దేశంలో ఉన్నారో మాత్రమే Vaultara చూస్తుంది. మీ ఖచ్చితమైన లొకేషన్ పంపదు, సేవ్ చేయదు.",
   "assistantLocationShared": "నా లొకేషన్ ఆన్ చేశాను",
-  "assistantLocationOff": "లొకేషన్ ఆఫ్‌లో ఉంది. భద్రత మరియు గోప్యతలో ఆన్ చేయవచ్చు."
+  "assistantLocationOff": "లొకేషన్ ఆఫ్‌లో ఉంది. భద్రత మరియు గోప్యతలో ఆన్ చేయవచ్చు.",
+  "assistantHistoryYesterday": "నిన్న",
+  "assistantHistoryLastWeek": "గత 7 రోజులు",
+  "assistantHistoryLastMonth": "గత 30 రోజులు",
+  "assistantHistoryOlder": "పాతవి"
 }

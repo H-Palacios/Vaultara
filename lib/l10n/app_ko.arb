@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "내 위치 사용",
   "assistantLocationNote": "Vaultara는 어느 나라에 있는지만 확인합니다. 정확한 위치는 전송하거나 저장하지 않습니다.",
   "assistantLocationShared": "위치를 켰어요",
-  "assistantLocationOff": "위치가 꺼져 있습니다. 보안 및 개인정보 보호에서 켤 수 있습니다."
+  "assistantLocationOff": "위치가 꺼져 있습니다. 보안 및 개인정보 보호에서 켤 수 있습니다.",
+  "assistantHistoryYesterday": "어제",
+  "assistantHistoryLastWeek": "지난 7일",
+  "assistantHistoryLastMonth": "지난 30일",
+  "assistantHistoryOlder": "이전"
 }

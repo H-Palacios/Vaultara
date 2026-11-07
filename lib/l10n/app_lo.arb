@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍ",
   "assistantLocationNote": "Vaultara ກວດເບິ່ງພຽງວ່າທ່ານຢູ່ປະເທດໃດ. ສະຖານທີ່ແນ່ນອນຂອງທ່ານບໍ່ຖືກສົ່ງ ຫຼື ບັນທຶກ.",
   "assistantLocationShared": "ຂ້ອຍເປີດສະຖານທີ່ແລ້ວ",
-  "assistantLocationOff": "ສະຖານທີ່ປິດຢູ່. ທ່ານສາມາດເປີດໄດ້ໃນຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວ."
+  "assistantLocationOff": "ສະຖານທີ່ປິດຢູ່. ທ່ານສາມາດເປີດໄດ້ໃນຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວ.",
+  "assistantHistoryYesterday": "ມື້ວານ",
+  "assistantHistoryLastWeek": "7 ມື້ຜ່ານມາ",
+  "assistantHistoryLastMonth": "30 ມື້ຜ່ານມາ",
+  "assistantHistoryOlder": "ເກົ່າກວ່າ"
 }

@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "Usar a miña localización",
   "assistantLocationNote": "Vaultara só comproba en que país estás. A túa localización exacta non se envía nin se garda.",
   "assistantLocationShared": "Activei a miña localización",
-  "assistantLocationOff": "A localización está desactivada. Podes activala en Seguranza e privacidade."
+  "assistantLocationOff": "A localización está desactivada. Podes activala en Seguranza e privacidade.",
+  "assistantHistoryYesterday": "Onte",
+  "assistantHistoryLastWeek": "Últimos 7 días",
+  "assistantHistoryLastMonth": "Últimos 30 días",
+  "assistantHistoryOlder": "Máis antigas"
 }

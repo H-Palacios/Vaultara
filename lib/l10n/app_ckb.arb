@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "شوێنەکەم بەکاربهێنە",
   "assistantLocationNote": "Vaultara تەنها دەبینێت لە کام وڵاتیت. شوێنی وردت نانێردرێت و پاشەکەوت ناکرێت.",
   "assistantLocationShared": "شوێنەکەمم هەڵکرد",
-  "assistantLocationOff": "شوێن کوژاوەتەوە. دەتوانیت لە ئاسایش و تایبەتمەندی هەڵیبکەیت."
+  "assistantLocationOff": "شوێن کوژاوەتەوە. دەتوانیت لە ئاسایش و تایبەتمەندی هەڵیبکەیت.",
+  "assistantHistoryYesterday": "دوێنێ",
+  "assistantHistoryLastWeek": "7 ڕۆژی ڕابردوو",
+  "assistantHistoryLastMonth": "30 ڕۆژی ڕابردوو",
+  "assistantHistoryOlder": "کۆنتر"
 }

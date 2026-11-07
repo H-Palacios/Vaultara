@@ -2107,5 +2107,9 @@
   "assistantLocationTitle": "Meinen Standort nutzen",
   "assistantLocationNote": "Vaultara prüft nur, in welchem Land du bist. Dein genauer Standort wird weder gesendet noch gespeichert.",
   "assistantLocationShared": "Ich habe meinen Standort eingeschaltet",
-  "assistantLocationOff": "Der Standort ist aus. Du kannst ihn unter Sicherheit und Datenschutz einschalten."
+  "assistantLocationOff": "Der Standort ist aus. Du kannst ihn unter Sicherheit und Datenschutz einschalten.",
+  "assistantHistoryYesterday": "Gestern",
+  "assistantHistoryLastWeek": "Letzte 7 Tage",
+  "assistantHistoryLastMonth": "Letzte 30 Tage",
+  "assistantHistoryOlder": "Älter"
 }

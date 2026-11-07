@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Käytä sijaintiani",
   "assistantLocationNote": "Vaultara tarkistaa vain, missä maassa olet. Tarkkaa sijaintiasi ei lähetetä eikä tallenneta.",
   "assistantLocationShared": "Laitoin sijainnin päälle",
-  "assistantLocationOff": "Sijainti on pois päältä. Voit laittaa sen päälle kohdassa Turvallisuus ja yksityisyys."
+  "assistantLocationOff": "Sijainti on pois päältä. Voit laittaa sen päälle kohdassa Turvallisuus ja yksityisyys.",
+  "assistantHistoryYesterday": "Eilen",
+  "assistantHistoryLastWeek": "Edelliset 7 päivää",
+  "assistantHistoryLastMonth": "Edelliset 30 päivää",
+  "assistantHistoryOlder": "Vanhemmat"
 }

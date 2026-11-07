@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "ჩემი მდებარეობის გამოყენება",
   "assistantLocationNote": "Vaultara ამოწმებს მხოლოდ, რომელ ქვეყანაში ხართ. თქვენი ზუსტი მდებარეობა არ იგზავნება და არ ინახება.",
   "assistantLocationShared": "ჩავრთე მდებარეობა",
-  "assistantLocationOff": "მდებარეობა გამორთულია. შეგიძლიათ ჩართოთ უსაფრთხოებასა და კონფიდენციალურობაში."
+  "assistantLocationOff": "მდებარეობა გამორთულია. შეგიძლიათ ჩართოთ უსაფრთხოებასა და კონფიდენციალურობაში.",
+  "assistantHistoryYesterday": "გუშინ",
+  "assistantHistoryLastWeek": "ბოლო 7 დღე",
+  "assistantHistoryLastMonth": "ბოლო 30 დღე",
+  "assistantHistoryOlder": "უფრო ძველი"
 }

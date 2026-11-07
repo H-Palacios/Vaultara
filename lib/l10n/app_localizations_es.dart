@@ -6635,4 +6635,16 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'La ubicación está desactivada. Puedes activarla en Seguridad y privacidad.';
+
+  @override
+  String get assistantHistoryYesterday => 'Ayer';
+
+  @override
+  String get assistantHistoryLastWeek => 'Últimos 7 días';
+
+  @override
+  String get assistantHistoryLastMonth => 'Últimos 30 días';
+
+  @override
+  String get assistantHistoryOlder => 'Anteriores';
 }

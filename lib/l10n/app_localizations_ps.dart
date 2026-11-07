@@ -6611,4 +6611,16 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'موقعیت بند دی. تاسو کولی شئ په امنیت او محرمیت کې یې چالان کړئ.';
+
+  @override
+  String get assistantHistoryYesterday => 'پرون';
+
+  @override
+  String get assistantHistoryLastWeek => 'تېرې 7 ورځې';
+
+  @override
+  String get assistantHistoryLastMonth => 'تېرې 30 ورځې';
+
+  @override
+  String get assistantHistoryOlder => 'زاړه';
 }

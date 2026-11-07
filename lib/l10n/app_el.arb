@@ -2083,5 +2083,9 @@
   "assistantLocationTitle": "Χρήση της τοποθεσίας μου",
   "assistantLocationNote": "Το Vaultara ελέγχει μόνο σε ποια χώρα είστε. Η ακριβής τοποθεσία σας δεν στέλνεται ούτε αποθηκεύεται.",
   "assistantLocationShared": "Ενεργοποίησα την τοποθεσία μου",
-  "assistantLocationOff": "Η τοποθεσία είναι απενεργοποιημένη. Μπορείτε να την ενεργοποιήσετε στην Ασφάλεια και απόρρητο."
+  "assistantLocationOff": "Η τοποθεσία είναι απενεργοποιημένη. Μπορείτε να την ενεργοποιήσετε στην Ασφάλεια και απόρρητο.",
+  "assistantHistoryYesterday": "Χθες",
+  "assistantHistoryLastWeek": "Τελευταίες 7 ημέρες",
+  "assistantHistoryLastMonth": "Τελευταίες 30 ημέρες",
+  "assistantHistoryOlder": "Παλαιότερες"
 }

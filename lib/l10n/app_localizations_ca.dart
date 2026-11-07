@@ -6611,4 +6611,16 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'La ubicació està desactivada. La pots activar a Seguretat i privadesa.';
+
+  @override
+  String get assistantHistoryYesterday => 'Ahir';
+
+  @override
+  String get assistantHistoryLastWeek => 'Últims 7 dies';
+
+  @override
+  String get assistantHistoryLastMonth => 'Últims 30 dies';
+
+  @override
+  String get assistantHistoryOlder => 'Més antics';
 }

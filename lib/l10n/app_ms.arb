@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Guna lokasi saya",
   "assistantLocationNote": "Vaultara hanya menyemak negara anda berada. Lokasi tepat anda tidak dihantar atau disimpan.",
   "assistantLocationShared": "Saya telah menghidupkan lokasi",
-  "assistantLocationOff": "Lokasi dimatikan. Anda boleh menghidupkannya dalam Keselamatan dan privasi."
+  "assistantLocationOff": "Lokasi dimatikan. Anda boleh menghidupkannya dalam Keselamatan dan privasi.",
+  "assistantHistoryYesterday": "Semalam",
+  "assistantHistoryLastWeek": "7 hari lalu",
+  "assistantHistoryLastMonth": "30 hari lalu",
+  "assistantHistoryOlder": "Lebih lama"
 }

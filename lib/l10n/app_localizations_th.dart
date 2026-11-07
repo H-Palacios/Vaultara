@@ -6547,4 +6547,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ตำแหน่งปิดอยู่ คุณเปิดได้ในความปลอดภัยและความเป็นส่วนตัว';
+
+  @override
+  String get assistantHistoryYesterday => 'เมื่อวาน';
+
+  @override
+  String get assistantHistoryLastWeek => '7 วันที่ผ่านมา';
+
+  @override
+  String get assistantHistoryLastMonth => '30 วันที่ผ่านมา';
+
+  @override
+  String get assistantHistoryOlder => 'เก่ากว่านี้';
 }

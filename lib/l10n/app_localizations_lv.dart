@@ -6674,4 +6674,16 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Atrašanās vieta ir izslēgta. To var ieslēgt sadaļā Drošība un privātums.';
+
+  @override
+  String get assistantHistoryYesterday => 'Vakar';
+
+  @override
+  String get assistantHistoryLastWeek => 'Pēdējās 7 dienas';
+
+  @override
+  String get assistantHistoryLastMonth => 'Pēdējās 30 dienas';
+
+  @override
+  String get assistantHistoryOlder => 'Vecākas';
 }
