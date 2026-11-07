@@ -10,7 +10,6 @@ import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
-import 'package:vaultara/features/travel/logic/passport_rules.dart';
 import 'package:vaultara/features/travel/logic/travel_check.dart';
 import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/features/travel/services/trip_reminders.dart';
@@ -192,6 +191,8 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
       cacheExtent: TutorialController.listCacheExtent,
       children: [
         ScreenHeader(

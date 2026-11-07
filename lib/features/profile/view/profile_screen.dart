@@ -207,6 +207,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+          // Kept until the Flutter version in use exports ScrollCacheExtent.
+          // ignore: deprecated_member_use
           cacheExtent: TutorialController.listCacheExtent,
           children: [
             ScreenHeader(title: t.profileHeaderTitle),
