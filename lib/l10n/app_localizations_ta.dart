@@ -2905,10 +2905,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lifeEventsTitle => 'வாழ்க்கை நிகழ்வுகள்';
 
   @override
-  String get lifeEventsSubtitle => 'வீடு மாறுதல், புதிய பெயர் அல்லது புதிய கார்? எதைப் புதுப்பிக்க வேண்டும் என்று பாருங்கள்';
+  String get lifeEventsSubtitle => 'வீடு மாற்றம், புதிய பெயர், குழந்தை அல்லது புதிய கார்? எதைப் புதுப்பிக்க வேண்டும் என்ற திட்டத்தைப் பெறுங்கள்';
 
   @override
-  String get lifeEventsIntro => 'உங்கள் வாழ்க்கையில் நடப்பதைத் தேர்ந்தெடுங்கள். அதனால் வழக்கமாகப் புதுப்பிக்க வேண்டிய, நீங்கள் சேமித்த பதிவுகளை Vaultara பட்டியலிடும்.';
+  String get lifeEventsIntro => 'என்ன நடக்கிறது என்பதைத் தேர்ந்தெடுங்கள். நீங்கள் சேமித்த பதிவுகளிலிருந்து Vaultara ஒரு திட்டத்தை உருவாக்கி, அந்த நாளுக்கு முன்னும் பின்னும் செய்ய வேண்டியதைக் காட்டி, நினைவூட்டுகிறது.';
 
   @override
   String get lifeEventMoving => 'நான் வீடு மாறுகிறேன்';
@@ -2952,11 +2952,6 @@ class AppLocalizationsTa extends AppLocalizations {
       one: 'உங்கள் $count பதிவு',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$total-இல் $done புதுப்பிக்கப்பட்டன';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'பழையவை';
+
+  @override
+  String get lifeEventHomeBuy => 'நான் வீடு வாங்குகிறேன்';
+
+  @override
+  String get lifeEventHomeBuyBody => 'குடிபுகும் முன் புதிய வீட்டுக்குக் காப்பீடு ஏற்பாடு செய்து, பின்னர் எல்லா இடங்களிலும் முகவரியைப் புதுப்பியுங்கள்.';
+
+  @override
+  String get lifeEventHomeSell => 'நான் என் வீட்டை விற்கிறேன்';
+
+  @override
+  String get lifeEventHomeSellBody => 'விற்பனை முடியும் வரை காப்பீட்டை வைத்திருங்கள், பின்னர் தேவையில்லாததை ரத்து செய்யுங்கள்.';
+
+  @override
+  String get lifeEventMarriage => 'எனக்குத் திருமணம் நடக்கிறது';
+
+  @override
+  String get lifeEventMarriageBody => 'திருமணத்திற்குப் பின் இவற்றைப் புதுப்பியுங்கள், குறிப்பாகப் பெயரை மாற்றினால் அல்லது துணையைப் பாலிசியில் சேர்த்தால்.';
+
+  @override
+  String get lifeEventDivorce => 'எனக்கு விவாகரத்து நடக்கிறது';
+
+  @override
+  String get lifeEventDivorceBody => 'ஒவ்வொன்றிலும் யார் காப்பீட்டில் உள்ளனர், யார் பெயர் உள்ளது எனப் பார்த்து, பகிர்ந்தவற்றை மூடுங்கள் அல்லது பிரியுங்கள்.';
+
+  @override
+  String get lifeEventBaby => 'எங்களுக்குக் குழந்தை பிறக்கப் போகிறது';
+
+  @override
+  String get lifeEventBabyBody => 'குழந்தையைக் காப்பீட்டில் சேர்த்து பாலிசிகளைச் சரிபாருங்கள். ஆவணங்களைக் கண்காணிக்கக் குழந்தையைக் குடும்பத்தில் சேருங்கள்.';
+
+  @override
+  String get lifeEventStudies => 'நான் படிப்பைத் தொடங்குகிறேன்';
+
+  @override
+  String get lifeEventStudiesBody => 'படிப்பு தொடங்கும் முன் உங்கள் அனுமதிகள், காப்பீடு மற்றும் மாணவர் ஆவணங்களைச் சரிபாருங்கள்.';
+
+  @override
+  String get lifeEventRetiring => 'நான் ஓய்வு பெறுகிறேன்';
+
+  @override
+  String get lifeEventRetiringBody => 'வேலைப் பொருட்களைத் திருப்பிக் கொடுத்து காப்பீட்டைச் சரிபாருங்கள், ஏனெனில் வேலை சலுகைகள் பொதுவாக முடிவடையும்.';
+
+  @override
+  String get lifeEventChildAdult => 'என் குழந்தைக்கு 16 அல்லது 18 வயதாகிறது';
+
+  @override
+  String get lifeEventChildAdultBody => 'உங்கள் குழந்தையைத் தேர்ந்தெடுங்கள். இந்த வயதில் அவர்களுக்குச் சொந்த அடையாள அட்டை, பாஸ்போர்ட், உரிமம் அல்லது காப்பீடு தேவைப்படலாம்.';
+
+  @override
+  String get lifeEventBereavement => 'என் குடும்பத்தில் ஒருவர் இறந்துவிட்டார்';
+
+  @override
+  String get lifeEventBereavementBody => 'இறந்தவரைத் தேர்ந்தெடுங்கள். அவரது பதிவுகளை ரத்து செய்ய, கோர அல்லது வேறொருவருக்கு மாற்ற வேண்டியிருக்கலாம். ஒவ்வொரு படியாகச் செய்யுங்கள்.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'முகவரிச் சான்று';
+
+  @override
+  String get lifeNeedPoliceClearance => 'காவல்துறை நன்னடத்தைச் சான்றிதழ்';
+
+  @override
+  String get lifeNeedVaccination => 'தடுப்பூசிச் சான்றிதழ்';
+
+  @override
+  String get lifeNeedStudentCard => 'மாணவர் அட்டை';
+
+  @override
+  String get lifePlanStartTitle => 'திட்டத்தைத் தொடங்கு';
+
+  @override
+  String get lifePlanStartNew => 'என்ன நடக்கிறது?';
+
+  @override
+  String get lifePlanInProgress => 'நடப்பில்';
+
+  @override
+  String get lifePlanFinishedSection => 'முடிந்தவை';
+
+  @override
+  String get lifePlanWhen => 'இது எப்போது?';
+
+  @override
+  String get lifePlanPickDate => 'தேதியைத் தேர்ந்தெடு';
+
+  @override
+  String get lifePlanNoDate => 'இன்னும் தேதி இல்லை';
+
+  @override
+  String get lifePlanWho => 'யாருக்காக?';
+
+  @override
+  String get lifePlanAddPerson => 'Vaultara அவர்களின் பதிவுகளைக் கண்டறிய முதலில் அவர்களைக் குடும்பத்தில் சேருங்கள்.';
+
+  @override
+  String get lifePlanDestination => 'எந்த நாட்டுக்குச் செல்கிறீர்கள்?';
+
+  @override
+  String get lifePlanDestinationOptional => 'நாடு (விருப்பம்)';
+
+  @override
+  String get lifePlanBefore => 'முன்';
+
+  @override
+  String get lifePlanAfter => 'பின்';
+
+  @override
+  String get lifePlanToDo => 'செய்ய வேண்டியவை';
+
+  @override
+  String get lifePlanDoneSection => 'முடிந்தது';
+
+  @override
+  String get lifePlanMayNeed => 'உங்களுக்கு இவையும் தேவைப்படலாம்';
+
+  @override
+  String get lifePlanDoUpdate => 'விவரங்களைப் புதுப்பி';
+
+  @override
+  String get lifePlanDoRenew => 'புதுப்பித்தல் செய்';
+
+  @override
+  String get lifePlanDoCancel => 'ரத்து செய் அல்லது திருப்பிக் கொடு';
+
+  @override
+  String get lifePlanDoCheck => 'இன்னும் பொருந்துகிறதா எனப் பார்';
+
+  @override
+  String get lifePlanMark => 'இவ்வாறு குறி';
+
+  @override
+  String get lifePlanStatusUpdated => 'புதுப்பிக்கப்பட்டது';
+
+  @override
+  String get lifePlanStatusRenewed => 'புதுப்பித்தல் செய்யப்பட்டது';
+
+  @override
+  String get lifePlanStatusCancelled => 'ரத்து செய்யப்பட்டது';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'தேவையில்லை';
+
+  @override
+  String get lifePlanStatusUndo => 'இன்னும் முடியவில்லை';
+
+  @override
+  String get lifePlanFlagExpires => 'இந்தத் தேதியை ஒட்டி காலாவதியாகிறது. முதலில் புதுப்பியுங்கள்.';
+
+  @override
+  String get lifePlanFlagPassport => 'இடமாற்றத்திலிருந்து 6 மாதங்களுக்குள் காலாவதியாகிறது. பல நாடுகள் அதிக காலம் கேட்பதால், புறப்படும் முன் புதுப்பியுங்கள்.';
+
+  @override
+  String get lifePlanFlagConvert => 'இடம் மாறிய பின் இதை உள்ளூர் உரிமமாக மாற்ற வேண்டியிருக்கலாம். உள்ளூர் விதிகளைப் பாருங்கள்.';
+
+  @override
+  String get lifePlanAutoChanged => 'இந்தப் பதிவு மாறியதை Vaultara கண்டது, எனவே முடிந்ததாகக் குறிக்கப்பட்டது.';
+
+  @override
+  String get lifePlanAutoAdded => 'இந்தத் திட்டத்தைத் தொடங்கிய பின் சேர்க்கப்பட்டது.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$total இல் $done முடிந்தது';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'இன்னும் $count நாட்கள்',
+      one: 'இன்னும் 1 நாள்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்கள் முன்பு',
+      one: '1 நாள் முன்பு',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'எல்லாம் முடிந்தது. திட்டத்தை முடிந்ததாகக் குறிக்கலாம்.';
+
+  @override
+  String get lifePlanFinish => 'முடிந்ததாகக் குறி';
+
+  @override
+  String get lifePlanReopen => 'மீண்டும் திற';
+
+  @override
+  String get lifePlanDelete => 'திட்டத்தை நீக்கு';
+
+  @override
+  String get lifePlanDeleteTitle => 'இந்தத் திட்டத்தை நீக்கவா?';
+
+  @override
+  String get lifePlanDeleteBody => 'திட்டம் மட்டுமே நீக்கப்படும். உங்கள் பதிவுகள் அப்படியே இருக்கும்.';
+
+  @override
+  String get lifePlanLimit => 'நடப்பில் 10 திட்டங்கள் வரை வைத்திருக்கலாம். முதலில் ஒன்றை முடியுங்கள் அல்லது நீக்குங்கள்.';
+
+  @override
+  String get lifePlanSaveError => 'திட்டத்தைச் சேமிக்க முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get lifePlanStarted => 'திட்டம் தொடங்கியது';
+
+  @override
+  String get lifePlanReminderBody => 'மீதமுள்ளதைப் பார்க்கத் திட்டத்தைத் திறங்கள்.';
+
+  @override
+  String get lifePlanReminderAfter => 'சில விஷயங்கள் இன்னும் மீதமுள்ளன. அவற்றை முடிக்கத் திட்டத்தைத் திறங்கள்.';
+
+  @override
+  String get lifePlanSuggestCar => 'கார் வாங்கினீர்களா அல்லது விற்றீர்களா? வேறு என்ன புதுப்பிக்க வேண்டும் எனப் பாருங்கள்.';
+
+  @override
+  String get lifePlanSuggestTrip => 'சிறிது காலம் அங்கு செல்கிறீர்களா?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'வேறு நாட்டுக்குச் செல்லும் திட்டத்தைத் தொடங்குங்கள். புறப்படும் முன் என்ன சரிசெய்ய வேண்டும் என Vaultara காட்டும்.';
 }

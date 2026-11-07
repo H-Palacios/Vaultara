@@ -2905,10 +2905,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lifeEventsTitle => 'Elämäntapahtumat';
 
   @override
-  String get lifeEventsSubtitle => 'Muutto, uusi nimi tai uusi auto? Katso, mitä päivitettävää on';
+  String get lifeEventsSubtitle => 'Muutto, uusi nimi, vauva tai uusi auto? Saat suunnitelman siitä, mitä päivittää';
 
   @override
-  String get lifeEventsIntro => 'Valitse, mitä elämässäsi tapahtuu. Vaultara listaa tallentamasi tietueet, jotka yleensä pitää päivittää sen vuoksi.';
+  String get lifeEventsIntro => 'Valitse, mitä tapahtuu. Vaultara tekee tallennetuista tiedoistasi suunnitelman, näyttää mitä tehdä ennen päivää ja sen jälkeen, ja muistuttaa sinua.';
 
   @override
   String get lifeEventMoving => 'Muutan';
@@ -2952,11 +2952,6 @@ class AppLocalizationsFi extends AppLocalizations {
       one: '$count tietueestasi',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done / $total päivitetty';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Vanhemmat';
+
+  @override
+  String get lifeEventHomeBuy => 'Ostan kodin';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Hanki uudelle kodille vakuutus ennen muuttoa ja päivitä sitten osoitteesi kaikkialle.';
+
+  @override
+  String get lifeEventHomeSell => 'Myyn kotini';
+
+  @override
+  String get lifeEventHomeSellBody => 'Pidä vakuutus voimassa, kunnes kauppa on lopullinen, ja irtisano sitten se, mitä et enää tarvitse.';
+
+  @override
+  String get lifeEventMarriage => 'Menen naimisiin';
+
+  @override
+  String get lifeEventMarriageBody => 'Päivitä nämä häiden jälkeen, varsinkin jos vaihdat nimesi tai lisäät puolisosi vakuutukseen.';
+
+  @override
+  String get lifeEventDivorce => 'Eroan';
+
+  @override
+  String get lifeEventDivorceBody => 'Tarkista kustakin, kuka on vakuutettu ja mainittu, ja lopeta tai jaa yhteiset asiat.';
+
+  @override
+  String get lifeEventBaby => 'Saamme vauvan';
+
+  @override
+  String get lifeEventBabyBody => 'Lisää vauva vakuutukseesi ja tarkista vakuutuksesi. Lisää vauva Perheeseen, niin voit seurata hänen asiakirjojaan.';
+
+  @override
+  String get lifeEventStudies => 'Aloitan opinnot';
+
+  @override
+  String get lifeEventStudiesBody => 'Tarkista lupasi, vakuutuksesi ja opiskelija-asiakirjasi ennen opintojen alkua.';
+
+  @override
+  String get lifeEventRetiring => 'Jään eläkkeelle';
+
+  @override
+  String get lifeEventRetiringBody => 'Palauta työtavarat ja tarkista vakuutuksesi, koska työsuhde-edut yleensä päättyvät.';
+
+  @override
+  String get lifeEventChildAdult => 'Lapseni täyttää 16 tai 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Valitse lapsesi. Tässä iässä hän tarvitsee usein oman henkilökortin, passin, ajokortin tai vakuutuksen.';
+
+  @override
+  String get lifeEventBereavement => 'Läheiseni on kuollut';
+
+  @override
+  String get lifeEventBereavementBody => 'Valitse kuollut henkilö. Hänen tietonsa voidaan joutua irtisanomaan, hakemaan korvaukseen tai siirtämään jollekulle toiselle. Etene askel kerrallaan.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Osoitetodistus';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Rikosrekisteriote';
+
+  @override
+  String get lifeNeedVaccination => 'Rokotustodistus';
+
+  @override
+  String get lifeNeedStudentCard => 'Opiskelijakortti';
+
+  @override
+  String get lifePlanStartTitle => 'Aloita suunnitelma';
+
+  @override
+  String get lifePlanStartNew => 'Mitä tapahtuu?';
+
+  @override
+  String get lifePlanInProgress => 'Käynnissä';
+
+  @override
+  String get lifePlanFinishedSection => 'Valmiit';
+
+  @override
+  String get lifePlanWhen => 'Milloin se tapahtuu?';
+
+  @override
+  String get lifePlanPickDate => 'Valitse päivä';
+
+  @override
+  String get lifePlanNoDate => 'Ei vielä päivää';
+
+  @override
+  String get lifePlanWho => 'Kenelle se on?';
+
+  @override
+  String get lifePlanAddPerson => 'Lisää henkilö ensin Perheeseen, niin Vaultara löytää hänen tietonsa.';
+
+  @override
+  String get lifePlanDestination => 'Mihin maahan muutat?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Maa (valinnainen)';
+
+  @override
+  String get lifePlanBefore => 'Ennen';
+
+  @override
+  String get lifePlanAfter => 'Jälkeen';
+
+  @override
+  String get lifePlanToDo => 'Tehtävät';
+
+  @override
+  String get lifePlanDoneSection => 'Valmis';
+
+  @override
+  String get lifePlanMayNeed => 'Saatat tarvita myös';
+
+  @override
+  String get lifePlanDoUpdate => 'Päivitä tiedot';
+
+  @override
+  String get lifePlanDoRenew => 'Uusi se';
+
+  @override
+  String get lifePlanDoCancel => 'Irtisano tai palauta';
+
+  @override
+  String get lifePlanDoCheck => 'Tarkista, että se sopii yhä';
+
+  @override
+  String get lifePlanMark => 'Merkitse';
+
+  @override
+  String get lifePlanStatusUpdated => 'Päivitetty';
+
+  @override
+  String get lifePlanStatusRenewed => 'Uusittu';
+
+  @override
+  String get lifePlanStatusCancelled => 'Irtisanottu';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ei tarvita';
+
+  @override
+  String get lifePlanStatusUndo => 'Ei vielä tehty';
+
+  @override
+  String get lifePlanFlagExpires => 'Vanhenee tämän päivän tienoilla. Uusi se ensin.';
+
+  @override
+  String get lifePlanFlagPassport => 'Vanhenee 6 kuukauden sisällä muutosta. Monet maat vaativat pidemmän voimassaolon, joten uusi se ennen lähtöä.';
+
+  @override
+  String get lifePlanFlagConvert => 'Voit joutua vaihtamaan sen paikalliseen ajokorttiin muuton jälkeen. Tarkista paikalliset säännöt.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara huomasi tämän tiedon muuttuneen, joten se on merkitty valmiiksi.';
+
+  @override
+  String get lifePlanAutoAdded => 'Lisätty tämän suunnitelman aloittamisen jälkeen.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done/$total valmiina';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count päivää jäljellä',
+      one: '1 päivä jäljellä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count päivää sitten',
+      one: '1 päivä sitten',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Kaikki on tehty. Voit merkitä suunnitelman valmiiksi.';
+
+  @override
+  String get lifePlanFinish => 'Merkitse valmiiksi';
+
+  @override
+  String get lifePlanReopen => 'Avaa uudelleen';
+
+  @override
+  String get lifePlanDelete => 'Poista suunnitelma';
+
+  @override
+  String get lifePlanDeleteTitle => 'Poistetaanko tämä suunnitelma?';
+
+  @override
+  String get lifePlanDeleteBody => 'Vain suunnitelma poistetaan. Tietosi pysyvät ennallaan.';
+
+  @override
+  String get lifePlanLimit => 'Sinulla voi olla enintään 10 käynnissä olevaa suunnitelmaa. Merkitse yksi valmiiksi tai poista se ensin.';
+
+  @override
+  String get lifePlanSaveError => 'Suunnitelmaa ei voitu tallentaa. Tarkista yhteys ja yritä uudelleen.';
+
+  @override
+  String get lifePlanStarted => 'Suunnitelma aloitettu';
+
+  @override
+  String get lifePlanReminderBody => 'Avaa suunnitelma nähdäksesi, mitä on jäljellä.';
+
+  @override
+  String get lifePlanReminderAfter => 'Jotain on vielä tekemättä. Avaa suunnitelma ja vie asiat loppuun.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ostitko tai myitkö auton? Katso, mitä muuta pitää päivittää.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Muutatko sinne joksikin aikaa?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Aloita suunnitelma muutosta toiseen maahan. Vaultara näyttää, mitä hoitaa ennen lähtöä.';
 }

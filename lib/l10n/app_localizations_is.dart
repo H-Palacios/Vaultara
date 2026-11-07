@@ -2905,10 +2905,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lifeEventsTitle => 'Lífsviðburðir';
 
   @override
-  String get lifeEventsSubtitle => 'Flytja, nýtt nafn eða nýr bíll? Sjáðu hvað þarf að uppfæra';
+  String get lifeEventsSubtitle => 'Flutningar, nýtt nafn, barn eða nýr bíll? Fáðu áætlun um hvað þarf að uppfæra';
 
   @override
-  String get lifeEventsIntro => 'Veldu hvað er að gerast í lífi þínu. Vaultara sýnir færslurnar sem þú vistaðir og þarf yfirleitt að uppfæra vegna þess.';
+  String get lifeEventsIntro => 'Veldu hvað er að gerast. Vaultara gerir áætlun úr vistuðum færslum þínum, sýnir hvað á að gera fyrir og eftir daginn og minnir þig á.';
 
   @override
   String get lifeEventMoving => 'Ég er að flytja';
@@ -2952,11 +2952,6 @@ class AppLocalizationsIs extends AppLocalizations {
       one: '$count af færslunum þínum',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Uppfært: $done af $total';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Eldri';
+
+  @override
+  String get lifeEventHomeBuy => 'Ég er að kaupa heimili';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Gakktu frá tryggingu fyrir nýja heimilið áður en þú flytur inn og uppfærðu svo heimilisfangið alls staðar.';
+
+  @override
+  String get lifeEventHomeSell => 'Ég er að selja heimilið mitt';
+
+  @override
+  String get lifeEventHomeSellBody => 'Haltu tryggingunni þar til salan er frágengin og segðu svo upp því sem þú þarft ekki lengur.';
+
+  @override
+  String get lifeEventMarriage => 'Ég er að gifta mig';
+
+  @override
+  String get lifeEventMarriageBody => 'Uppfærðu þetta eftir brúðkaupið, sérstaklega ef þú skiptir um nafn eða bætir maka við tryggingu.';
+
+  @override
+  String get lifeEventDivorce => 'Ég er að skilja';
+
+  @override
+  String get lifeEventDivorceBody => 'Athugaðu hver er tryggður og skráður á hverju og lokaðu eða skiptu því sem þið deilduð.';
+
+  @override
+  String get lifeEventBaby => 'Við eigum von á barni';
+
+  @override
+  String get lifeEventBabyBody => 'Bættu barninu við trygginguna og athugaðu tryggingarnar þínar. Bættu barninu við í Fjölskyldu til að fylgjast með skjölum þess.';
+
+  @override
+  String get lifeEventStudies => 'Ég er að hefja nám';
+
+  @override
+  String get lifeEventStudiesBody => 'Athugaðu leyfi, tryggingar og námsmannaskjöl áður en námið hefst.';
+
+  @override
+  String get lifeEventRetiring => 'Ég er að fara á eftirlaun';
+
+  @override
+  String get lifeEventRetiringBody => 'Skilaðu vinnuhlutum og athugaðu trygginguna þína, því hlunnindi frá vinnu hætta yfirleitt.';
+
+  @override
+  String get lifeEventChildAdult => 'Barnið mitt verður 16 eða 18 ára';
+
+  @override
+  String get lifeEventChildAdultBody => 'Veldu barnið þitt. Á þessum aldri þarf það oft eigið skilríki, vegabréf, ökuskírteini eða tryggingu.';
+
+  @override
+  String get lifeEventBereavement => 'Einhver í fjölskyldunni lést';
+
+  @override
+  String get lifeEventBereavementBody => 'Veldu þann sem lést. Færslum hans gæti þurft að segja upp, gera kröfu á þær eða færa þær til annars. Taktu eitt skref í einu.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Staðfesting á heimilisfangi';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Sakavottorð';
+
+  @override
+  String get lifeNeedVaccination => 'Bólusetningarvottorð';
+
+  @override
+  String get lifeNeedStudentCard => 'Nemendaskírteini';
+
+  @override
+  String get lifePlanStartTitle => 'Hefja áætlun';
+
+  @override
+  String get lifePlanStartNew => 'Hvað er að gerast?';
+
+  @override
+  String get lifePlanInProgress => 'Í gangi';
+
+  @override
+  String get lifePlanFinishedSection => 'Lokið';
+
+  @override
+  String get lifePlanWhen => 'Hvenær gerist það?';
+
+  @override
+  String get lifePlanPickDate => 'Veldu dagsetningu';
+
+  @override
+  String get lifePlanNoDate => 'Engin dagsetning enn';
+
+  @override
+  String get lifePlanWho => 'Fyrir hvern er það?';
+
+  @override
+  String get lifePlanAddPerson => 'Bættu viðkomandi fyrst við í Fjölskyldu svo Vaultara finni færslurnar.';
+
+  @override
+  String get lifePlanDestination => 'Til hvaða lands flytur þú?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Land (valfrjálst)';
+
+  @override
+  String get lifePlanBefore => 'Fyrir';
+
+  @override
+  String get lifePlanAfter => 'Eftir';
+
+  @override
+  String get lifePlanToDo => 'Á eftir að gera';
+
+  @override
+  String get lifePlanDoneSection => 'Lokið';
+
+  @override
+  String get lifePlanMayNeed => 'Þú gætir líka þurft';
+
+  @override
+  String get lifePlanDoUpdate => 'Uppfæra upplýsingarnar';
+
+  @override
+  String get lifePlanDoRenew => 'Endurnýja';
+
+  @override
+  String get lifePlanDoCancel => 'Segja upp eða skila';
+
+  @override
+  String get lifePlanDoCheck => 'Athuga hvort það hentar enn';
+
+  @override
+  String get lifePlanMark => 'Merkja sem';
+
+  @override
+  String get lifePlanStatusUpdated => 'Uppfært';
+
+  @override
+  String get lifePlanStatusRenewed => 'Endurnýjað';
+
+  @override
+  String get lifePlanStatusCancelled => 'Sagt upp';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ekki þörf';
+
+  @override
+  String get lifePlanStatusUndo => 'Ekki gert enn';
+
+  @override
+  String get lifePlanFlagExpires => 'Rennur út um þessa dagsetningu. Endurnýjaðu fyrst.';
+
+  @override
+  String get lifePlanFlagPassport => 'Rennur út innan 6 mánaða frá flutningi. Mörg lönd vilja lengri gildistíma, svo endurnýjaðu áður en þú ferð.';
+
+  @override
+  String get lifePlanFlagConvert => 'Þú gætir þurft að skipta því út fyrir innlent ökuskírteini eftir flutninginn. Athugaðu reglurnar á staðnum.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara sá að þessi færsla breyttist, svo hún er merkt sem lokið.';
+
+  @override
+  String get lifePlanAutoAdded => 'Bætt við eftir að þú hófst þessa áætlun.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done af $total lokið';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dagar eftir',
+      one: '1 dagur eftir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fyrir $count dögum',
+      one: 'Fyrir 1 degi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Allt er búið. Þú getur merkt áætlunina sem lokið.';
+
+  @override
+  String get lifePlanFinish => 'Merkja sem lokið';
+
+  @override
+  String get lifePlanReopen => 'Opna aftur';
+
+  @override
+  String get lifePlanDelete => 'Eyða áætlun';
+
+  @override
+  String get lifePlanDeleteTitle => 'Eyða þessari áætlun?';
+
+  @override
+  String get lifePlanDeleteBody => 'Aðeins áætluninni er eytt. Færslurnar þínar haldast óbreyttar.';
+
+  @override
+  String get lifePlanLimit => 'Þú getur haft allt að 10 áætlanir í gangi. Ljúktu við eða eyddu einni fyrst.';
+
+  @override
+  String get lifePlanSaveError => 'Ekki tókst að vista áætlunina. Athugaðu tenginguna og reyndu aftur.';
+
+  @override
+  String get lifePlanStarted => 'Áætlun hafin';
+
+  @override
+  String get lifePlanReminderBody => 'Opnaðu áætlunina til að sjá hvað er eftir.';
+
+  @override
+  String get lifePlanReminderAfter => 'Enn er eitthvað eftir. Opnaðu áætlunina til að klára það.';
+
+  @override
+  String get lifePlanSuggestCar => 'Keyptir þú eða seldir bíl? Sjáðu hvað fleira þarf að uppfæra.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Flytur þú þangað um tíma?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Hefðu áætlun um flutning til annars lands. Vaultara sýnir hvað þarf að ganga frá áður en þú ferð.';
 }

@@ -2905,10 +2905,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifeEventsTitle => 'Mga pagbabago sa buhay';
 
   @override
-  String get lifeEventsSubtitle => 'Lilipat ba, magpapalit ng pangalan, o bibili ng bagong kotse? Tingnan kung ano ang ia-update';
+  String get lifeEventsSubtitle => 'Lilipat, bagong pangalan, sanggol o bagong kotse? Kumuha ng plano kung ano ang dapat i-update';
 
   @override
-  String get lifeEventsIntro => 'Piliin kung ano ang nangyayari sa buhay mo. Ililista ng Vaultara ang mga na-save mong rekord na kadalasang kailangang i-update dahil dito.';
+  String get lifeEventsIntro => 'Piliin kung ano ang nangyayari. Gagawa ang Vaultara ng plano mula sa iyong mga naka-save na record, ipapakita kung ano ang gagawin bago at pagkatapos ng araw, at ipapaalala sa iyo.';
 
   @override
   String get lifeEventMoving => 'Lilipat ako ng bahay';
@@ -2952,11 +2952,6 @@ class AppLocalizationsFil extends AppLocalizations {
       one: '$count sa mga rekord mo',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done sa $total ang na-update na';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Mas luma';
+
+  @override
+  String get lifeEventHomeBuy => 'Bibili ako ng bahay';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Ayusin ang insurance ng bagong bahay bago lumipat, saka i-update ang iyong address sa lahat ng lugar.';
+
+  @override
+  String get lifeEventHomeSell => 'Ibebenta ko ang bahay ko';
+
+  @override
+  String get lifeEventHomeSellBody => 'Panatilihin ang insurance hanggang matapos ang bentahan, saka kanselahin ang hindi mo na kailangan.';
+
+  @override
+  String get lifeEventMarriage => 'Ikakasal ako';
+
+  @override
+  String get lifeEventMarriageBody => 'I-update ang mga ito pagkatapos ng kasal, lalo na kung papalitan mo ang pangalan mo o idadagdag ang partner mo sa isang polisiya.';
+
+  @override
+  String get lifeEventDivorce => 'Maghihiwalay kami';
+
+  @override
+  String get lifeEventDivorceBody => 'Tingnan kung sino ang sakop at nakapangalan sa bawat isa, at isara o hatiin ang anumang pinaghatian ninyo.';
+
+  @override
+  String get lifeEventBaby => 'Magkakaanak kami';
+
+  @override
+  String get lifeEventBabyBody => 'Idagdag ang sanggol sa iyong insurance at suriin ang mga polisiya mo. Idagdag ang sanggol sa Pamilya para masubaybayan ang mga dokumento niya.';
+
+  @override
+  String get lifeEventStudies => 'Mag-aaral ako';
+
+  @override
+  String get lifeEventStudiesBody => 'Suriin ang iyong mga permit, insurance at dokumento bilang estudyante bago magsimula ang pag-aaral.';
+
+  @override
+  String get lifeEventRetiring => 'Magreretiro ako';
+
+  @override
+  String get lifeEventRetiringBody => 'Ibalik ang mga gamit sa trabaho at suriin ang insurance mo, dahil karaniwang natatapos ang mga benepisyo sa trabaho.';
+
+  @override
+  String get lifeEventChildAdult => 'Magiging 16 o 18 na ang anak ko';
+
+  @override
+  String get lifeEventChildAdultBody => 'Piliin ang anak mo. Sa edad na ito, madalas kailangan na nila ng sariling ID, pasaporte, lisensya o insurance.';
+
+  @override
+  String get lifeEventBereavement => 'May namatay sa pamilya ko';
+
+  @override
+  String get lifeEventBereavementBody => 'Piliin ang taong namatay. Maaaring kailangang kanselahin, i-claim o ilipat sa iba ang kanyang mga record. Isa-isahin lang.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Patunay ng address';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Police clearance';
+
+  @override
+  String get lifeNeedVaccination => 'Sertipiko ng bakuna';
+
+  @override
+  String get lifeNeedStudentCard => 'Student ID';
+
+  @override
+  String get lifePlanStartTitle => 'Magsimula ng plano';
+
+  @override
+  String get lifePlanStartNew => 'Ano ang nangyayari?';
+
+  @override
+  String get lifePlanInProgress => 'Isinasagawa';
+
+  @override
+  String get lifePlanFinishedSection => 'Tapos na';
+
+  @override
+  String get lifePlanWhen => 'Kailan ito mangyayari?';
+
+  @override
+  String get lifePlanPickDate => 'Pumili ng petsa';
+
+  @override
+  String get lifePlanNoDate => 'Wala pang petsa';
+
+  @override
+  String get lifePlanWho => 'Para kanino ito?';
+
+  @override
+  String get lifePlanAddPerson => 'Idagdag muna sila sa Pamilya para mahanap ng Vaultara ang kanilang mga record.';
+
+  @override
+  String get lifePlanDestination => 'Saang bansa ka lilipat?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Bansa (opsyonal)';
+
+  @override
+  String get lifePlanBefore => 'Bago';
+
+  @override
+  String get lifePlanAfter => 'Pagkatapos';
+
+  @override
+  String get lifePlanToDo => 'Gagawin';
+
+  @override
+  String get lifePlanDoneSection => 'Tapos';
+
+  @override
+  String get lifePlanMayNeed => 'Maaaring kailangan mo rin';
+
+  @override
+  String get lifePlanDoUpdate => 'I-update ang mga detalye';
+
+  @override
+  String get lifePlanDoRenew => 'I-renew ito';
+
+  @override
+  String get lifePlanDoCancel => 'Kanselahin o ibalik ito';
+
+  @override
+  String get lifePlanDoCheck => 'Tingnan kung angkop pa';
+
+  @override
+  String get lifePlanMark => 'Markahan bilang';
+
+  @override
+  String get lifePlanStatusUpdated => 'Na-update';
+
+  @override
+  String get lifePlanStatusRenewed => 'Na-renew';
+
+  @override
+  String get lifePlanStatusCancelled => 'Nakansela';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Hindi kailangan';
+
+  @override
+  String get lifePlanStatusUndo => 'Hindi pa tapos';
+
+  @override
+  String get lifePlanFlagExpires => 'Mag-e-expire malapit sa petsang ito. I-renew muna.';
+
+  @override
+  String get lifePlanFlagPassport => 'Mag-e-expire sa loob ng 6 na buwan mula sa paglipat. Maraming bansa ang humihingi ng mas mahabang natitirang panahon, kaya i-renew bago umalis.';
+
+  @override
+  String get lifePlanFlagConvert => 'Maaaring kailangan mo itong palitan ng lokal na lisensya pagkatapos lumipat. Tingnan ang lokal na patakaran.';
+
+  @override
+  String get lifePlanAutoChanged => 'Nakita ng Vaultara na nagbago ang record na ito, kaya minarkahan itong tapos.';
+
+  @override
+  String get lifePlanAutoAdded => 'Idinagdag pagkatapos mong simulan ang planong ito.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done sa $total ang tapos';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count araw na lang',
+      one: '1 araw na lang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count araw na ang nakalipas',
+      one: '1 araw na ang nakalipas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Tapos na ang lahat. Maaari mong markahang tapos ang plano.';
+
+  @override
+  String get lifePlanFinish => 'Markahang tapos';
+
+  @override
+  String get lifePlanReopen => 'Buksan muli';
+
+  @override
+  String get lifePlanDelete => 'Burahin ang plano';
+
+  @override
+  String get lifePlanDeleteTitle => 'Burahin ang planong ito?';
+
+  @override
+  String get lifePlanDeleteBody => 'Ang plano lang ang mabubura. Mananatili ang iyong mga record.';
+
+  @override
+  String get lifePlanLimit => 'Hanggang 10 plano lang ang maaaring isinasagawa. Tapusin o burahin muna ang isa.';
+
+  @override
+  String get lifePlanSaveError => 'Hindi ma-save ang plano. Suriin ang koneksyon mo at subukang muli.';
+
+  @override
+  String get lifePlanStarted => 'Nasimulan ang plano';
+
+  @override
+  String get lifePlanReminderBody => 'Buksan ang plano para makita ang natitirang gagawin.';
+
+  @override
+  String get lifePlanReminderAfter => 'May ilang bagay pang natitira. Buksan ang plano para tapusin ang mga ito.';
+
+  @override
+  String get lifePlanSuggestCar => 'Bumili o nagbenta ng kotse? Tingnan kung ano pa ang dapat i-update.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Lilipat ka ba roon nang matagal?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Magsimula ng plano para lumipat sa ibang bansa. Ipapakita ng Vaultara ang dapat ayusin bago ka umalis.';
 }

@@ -2997,11 +2997,11 @@
   "@lifeEventsTitle": {
     "description": "Screen and settings tile title"
   },
-  "lifeEventsSubtitle": "Moving, a new name or a new car? See what to update",
+  "lifeEventsSubtitle": "Moving, a new name, a baby or a new car? Get a plan for what to update",
   "@lifeEventsSubtitle": {
     "description": "Settings tile subtitle"
   },
-  "lifeEventsIntro": "Pick what is happening in your life. Vaultara lists the records you saved that usually need updating because of it.",
+  "lifeEventsIntro": "Pick what is happening. Vaultara makes a plan from your saved records, shows what to do before and after the day, and reminds you.",
   "@lifeEventsIntro": {
     "description": "Intro text"
   },
@@ -3054,18 +3054,6 @@
     "description": "How many saved records this event affects",
     "placeholders": {
       "count": {
-        "type": "int"
-      }
-    }
-  },
-  "lifeEventProgress": "{done} of {total} updated",
-  "@lifeEventProgress": {
-    "description": "Progress, for example 2 of 5 updated",
-    "placeholders": {
-      "done": {
-        "type": "int"
-      },
-      "total": {
         "type": "int"
       }
     }
@@ -8071,5 +8059,111 @@
   "assistantHistoryOlder": "Older",
   "@assistantHistoryOlder": {
     "description": "Group heading in the Ask Vaultara chat list for chats older than 30 days."
-  }
+  },
+  "lifeEventHomeBuy": "I am buying a home",
+  "lifeEventHomeBuyBody": "Arrange cover for the new home before you move in, then update your address everywhere.",
+  "lifeEventHomeSell": "I am selling my home",
+  "lifeEventHomeSellBody": "Keep your cover until the sale is final, then cancel what you no longer need.",
+  "lifeEventMarriage": "I am getting married",
+  "lifeEventMarriageBody": "Update these after the wedding, especially if you change your name or add your partner to a policy.",
+  "lifeEventDivorce": "I am getting divorced",
+  "lifeEventDivorceBody": "Check who is covered and named on each of these, and close or split anything you shared.",
+  "lifeEventBaby": "We are having a baby",
+  "lifeEventBabyBody": "Add the baby to your cover and check your policies. Add the baby in Family to track their documents.",
+  "lifeEventStudies": "I am starting studies",
+  "lifeEventStudiesBody": "Check your permits, cover and student documents before your studies start.",
+  "lifeEventRetiring": "I am retiring",
+  "lifeEventRetiringBody": "Return work items and check your cover, because work benefits usually end.",
+  "lifeEventChildAdult": "My child is turning 16 or 18",
+  "@lifeEventChildAdult": {
+    "description": "Life event: the user's child turns 16 or 18."
+  },
+  "lifeEventChildAdultBody": "Pick your child. At this age they often need their own ID, passport, licence or cover.",
+  "lifeEventBereavement": "Someone in my family died",
+  "@lifeEventBereavement": {
+    "description": "Life event: a family member died. Keep it gentle."
+  },
+  "lifeEventBereavementBody": "Pick the person who died. Their records may need to be cancelled, claimed or moved to someone else. Take it one step at a time.",
+  "lifeNeedProofOfAddress": "Proof of address",
+  "lifeNeedPoliceClearance": "Police clearance certificate",
+  "@lifeNeedPoliceClearance": {
+    "description": "Document showing a person has no criminal record, often needed to move abroad."
+  },
+  "lifeNeedVaccination": "Vaccination certificate",
+  "lifeNeedStudentCard": "Student card",
+  "lifePlanStartTitle": "Start a plan",
+  "lifePlanStartNew": "What is happening?",
+  "lifePlanInProgress": "In progress",
+  "lifePlanFinishedSection": "Finished",
+  "lifePlanWhen": "When is it happening?",
+  "lifePlanPickDate": "Pick a date",
+  "lifePlanNoDate": "No date yet",
+  "lifePlanWho": "Who is it for?",
+  "lifePlanAddPerson": "Add them in Family first, so Vaultara can find their records.",
+  "lifePlanDestination": "Which country are you moving to?",
+  "lifePlanDestinationOptional": "Country (optional)",
+  "lifePlanBefore": "Before",
+  "lifePlanAfter": "After",
+  "lifePlanToDo": "To do",
+  "lifePlanDoneSection": "Done",
+  "lifePlanMayNeed": "You may also need",
+  "lifePlanDoUpdate": "Update the details",
+  "lifePlanDoRenew": "Renew it",
+  "lifePlanDoCancel": "Cancel or return it",
+  "lifePlanDoCheck": "Check it still fits",
+  "lifePlanMark": "Mark as",
+  "lifePlanStatusUpdated": "Updated",
+  "lifePlanStatusRenewed": "Renewed",
+  "lifePlanStatusCancelled": "Cancelled",
+  "lifePlanStatusNotNeeded": "Not needed",
+  "lifePlanStatusUndo": "Not done yet",
+  "lifePlanFlagExpires": "Expires around this date. Renew it first.",
+  "lifePlanFlagPassport": "Expires within 6 months of the move. Many countries want more time left, so renew it before you go.",
+  "lifePlanFlagConvert": "You may need to swap it for a local licence after you move. Check the local rules.",
+  "lifePlanAutoChanged": "Vaultara saw this record change, so it is marked as done.",
+  "lifePlanAutoAdded": "Added after you started this plan.",
+  "lifePlanProgress": "{done} of {total} done",
+  "@lifePlanProgress": {
+    "description": "Progress of a life event plan.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanDaysToGo": "{count, plural, =1{1 day to go} other{{count} days to go}}",
+  "@lifePlanDaysToGo": {
+    "description": "Days until the date of a life event plan.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanDaysAgo": "{count, plural, =1{1 day ago} other{{count} days ago}}",
+  "@lifePlanDaysAgo": {
+    "description": "Days since the date of a life event plan.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanAllDone": "Everything is done. You can mark the plan as finished.",
+  "lifePlanFinish": "Mark as finished",
+  "lifePlanReopen": "Open it again",
+  "lifePlanDelete": "Delete plan",
+  "lifePlanDeleteTitle": "Delete this plan?",
+  "lifePlanDeleteBody": "Only the plan is deleted. Your records stay as they are.",
+  "lifePlanLimit": "You can have up to 10 plans in progress. Finish or delete one first.",
+  "lifePlanSaveError": "The plan could not be saved. Check your connection and try again.",
+  "lifePlanStarted": "Plan started",
+  "lifePlanReminderBody": "Open the plan to see what is left to do.",
+  "lifePlanReminderAfter": "Some things are still left to do. Open the plan to finish them.",
+  "lifePlanSuggestCar": "Bought or sold a car? See what else to update.",
+  "lifePlanSuggestTrip": "Moving there for a while?",
+  "lifePlanSuggestTripBody": "Start a plan for moving to another country. Vaultara shows what to sort out before you go."
 }

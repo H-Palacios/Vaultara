@@ -2905,10 +2905,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifeEventsTitle => 'Bûyerên jiyanê';
 
   @override
-  String get lifeEventsSubtitle => 'Barkirin, navekî nû an erebeyek nû? Bibîne ka çi divê were nûkirin';
+  String get lifeEventsSubtitle => 'Barkirin, navekî nû, pitik an otomobîleke nû? Planek bistîne ka çi divê were nûkirin';
 
   @override
-  String get lifeEventsIntro => 'Hilbijêre ka di jiyana te de çi diqewime. Vaultara tomarên te yên tomarkirî yên ku bi vê yekê re bi gelemperî divê bên nûkirin lîste dike.';
+  String get lifeEventsIntro => 'Hilbijêre ka çi diqewime. Vaultara ji tomarên te yên tomarkirî planek çêdike, nîşan dide berî û piştî rojê çi bikî, û bi bîra te tîne.';
 
   @override
   String get lifeEventMoving => 'Ez diçim malek nû';
@@ -2952,11 +2952,6 @@ class AppLocalizationsKu extends AppLocalizations {
       one: '$count ji tomarên te',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done ji $total hatine nûkirin';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Kevintir';
+
+  @override
+  String get lifeEventHomeBuy => 'Ez xaniyek dikirim';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Berî ku tu bar bikî xaniyê nû sîgorte bike, paşê navnîşana xwe li her derê nû bike.';
+
+  @override
+  String get lifeEventHomeSell => 'Ez xaniyê xwe difroşim';
+
+  @override
+  String get lifeEventHomeSellBody => 'Sîgorteyê heta ku firotin biqede bihêle, paşê ya ku êdî ne hewce ye betal bike.';
+
+  @override
+  String get lifeEventMarriage => 'Ez dizewicim';
+
+  @override
+  String get lifeEventMarriageBody => 'Piştî dawetê van nû bike, nemaze heke tu navê xwe biguherînî an hevjînê xwe li polîçeyekê zêde bikî.';
+
+  @override
+  String get lifeEventDivorce => 'Ez ji hev diqetim';
+
+  @override
+  String get lifeEventDivorceBody => 'Li her yekê kontrol bike ka kî sîgortekirî û navkirî ye, û tiştên hevpar bigire an parve bike.';
+
+  @override
+  String get lifeEventBaby => 'Pitikek ji me re dibe';
+
+  @override
+  String get lifeEventBabyBody => 'Pitikê li sîgorteya xwe zêde bike û polîçeyên xwe kontrol bike. Ji bo şopandina belgeyên wê, pitikê li Malbat zêde bike.';
+
+  @override
+  String get lifeEventStudies => 'Ez dest bi xwendinê dikim';
+
+  @override
+  String get lifeEventStudiesBody => 'Berî destpêka xwendinê destûr, sîgorte û belgeyên xwendekariyê kontrol bike.';
+
+  @override
+  String get lifeEventRetiring => 'Ez teqawid dibim';
+
+  @override
+  String get lifeEventRetiringBody => 'Tiştên karê vegerîne û sîgorteya xwe kontrol bike, ji ber ku feydeyên karê bi gelemperî diqedin.';
+
+  @override
+  String get lifeEventChildAdult => 'Zarokê min dibe 16 an 18 salî';
+
+  @override
+  String get lifeEventChildAdultBody => 'Zarokê xwe hilbijêre. Di vî temenî de pir caran nasname, pasaport, ehlîyet an sîgorteya wî ya xwe hewce ye.';
+
+  @override
+  String get lifeEventBereavement => 'Kesek ji malbata min mir';
+
+  @override
+  String get lifeEventBereavementBody => 'Kesê ku mir hilbijêre. Dibe ku tomarên wî divê werin betalkirin, daxwazkirin an jî ji kesekî din re werin veguhestin. Gav bi gav biçe.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Belgeya navnîşanê';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Belgeya paqijiyê ya polîsê';
+
+  @override
+  String get lifeNeedVaccination => 'Belgeya vakslêdanê';
+
+  @override
+  String get lifeNeedStudentCard => 'Karta xwendekar';
+
+  @override
+  String get lifePlanStartTitle => 'Planekê dest pê bike';
+
+  @override
+  String get lifePlanStartNew => 'Çi diqewime?';
+
+  @override
+  String get lifePlanInProgress => 'Didome';
+
+  @override
+  String get lifePlanFinishedSection => 'Qediyayî';
+
+  @override
+  String get lifePlanWhen => 'Kengê diqewime?';
+
+  @override
+  String get lifePlanPickDate => 'Dîrokekê hilbijêre';
+
+  @override
+  String get lifePlanNoDate => 'Hîn dîrok tune';
+
+  @override
+  String get lifePlanWho => 'Ji bo kê ye?';
+
+  @override
+  String get lifePlanAddPerson => 'Pêşî wan li Malbat zêde bike da ku Vaultara tomarên wan bibîne.';
+
+  @override
+  String get lifePlanDestination => 'Tu bar dikî kîjan welatî?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Welat (vebijarkî)';
+
+  @override
+  String get lifePlanBefore => 'Berî';
+
+  @override
+  String get lifePlanAfter => 'Piştî';
+
+  @override
+  String get lifePlanToDo => 'Ji bo kirinê';
+
+  @override
+  String get lifePlanDoneSection => 'Hat kirin';
+
+  @override
+  String get lifePlanMayNeed => 'Dibe ku ev jî ji te re hewce be';
+
+  @override
+  String get lifePlanDoUpdate => 'Agahiyan nû bike';
+
+  @override
+  String get lifePlanDoRenew => 'Nû bike';
+
+  @override
+  String get lifePlanDoCancel => 'Betal bike an vegerîne';
+
+  @override
+  String get lifePlanDoCheck => 'Kontrol bike ka hîn guncaw e';
+
+  @override
+  String get lifePlanMark => 'Nîşan bike wekî';
+
+  @override
+  String get lifePlanStatusUpdated => 'Nûkirî';
+
+  @override
+  String get lifePlanStatusRenewed => 'Nûjenkirî';
+
+  @override
+  String get lifePlanStatusCancelled => 'Betalkirî';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ne hewce ye';
+
+  @override
+  String get lifePlanStatusUndo => 'Hîn nehatiye kirin';
+
+  @override
+  String get lifePlanFlagExpires => 'Li dora vê dîrokê diqede. Pêşî nû bike.';
+
+  @override
+  String get lifePlanFlagPassport => 'Di nav 6 mehan de piştî barkirinê diqede. Gelek welat demeke dirêjtir dixwazin, lewma berî çûyînê nû bike.';
+
+  @override
+  String get lifePlanFlagConvert => 'Dibe ku piştî barkirinê divê tu wê bi ehlîyeteke herêmî biguherînî. Rêgezên herêmî kontrol bike.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara dît ku ev tomar guherî, lewma wekî hatî kirin hat nîşankirin.';
+
+  @override
+  String get lifePlanAutoAdded => 'Piştî ku te ev plan dest pê kir hat zêdekirin.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done ji $total hat kirin';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count roj mane',
+      one: '$count roj maye',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count roj berê',
+      one: '$count roj berê',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Her tişt hat kirin. Tu dikarî planê wekî qediyayî nîşan bikî.';
+
+  @override
+  String get lifePlanFinish => 'Wekî qediyayî nîşan bike';
+
+  @override
+  String get lifePlanReopen => 'Dîsa veke';
+
+  @override
+  String get lifePlanDelete => 'Planê jê bibe';
+
+  @override
+  String get lifePlanDeleteTitle => 'Ev plan were jêbirin?';
+
+  @override
+  String get lifePlanDeleteBody => 'Tenê plan tê jêbirin. Tomarên te wek xwe dimînin.';
+
+  @override
+  String get lifePlanLimit => 'Tu dikarî heta 10 planên didomin hebin. Pêşî yekê biqedîne an jê bibe.';
+
+  @override
+  String get lifePlanSaveError => 'Plan nehat tomarkirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get lifePlanStarted => 'Plan dest pê kir';
+
+  @override
+  String get lifePlanReminderBody => 'Planê veke da ku bibînî çi maye.';
+
+  @override
+  String get lifePlanReminderAfter => 'Hîn tişt mane. Ji bo qedandinê planê veke.';
+
+  @override
+  String get lifePlanSuggestCar => 'Te otomobîlek kirî an firot? Binêre çi din divê were nûkirin.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Tu ji bo demekê bar dikî wir?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Planek ji bo barkirina welatekî din dest pê bike. Vaultara nîşan dide berî çûyînê çi saz bikî.';
 }

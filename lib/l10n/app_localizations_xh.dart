@@ -2905,10 +2905,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lifeEventsTitle => 'Iziganeko zobomi';
 
   @override
-  String get lifeEventsSubtitle => 'Uyatshintsha indawo, igama elitsha okanye imoto entsha? Jonga into omawuyihlaziye';
+  String get lifeEventsSubtitle => 'Ukufuduka, igama elitsha, usana okanye imoto entsha? Fumana isicwangciso sento ekufuneka uyihlaziye';
 
   @override
-  String get lifeEventsIntro => 'Khetha oko kwenzekayo ebomini bakho. IVaultara ibonisa iirekhodi ozigcinileyo ezidla ngokufuna ukuhlaziywa ngenxa yoko.';
+  String get lifeEventsIntro => 'Khetha into eyenzekayo. I-Vaultara yenza isicwangciso ngeerekhodi zakho ezigciniweyo, ibonise into ekufuneka uyenze phambi nasemva kosuku, kwaye ikukhumbuze.';
 
   @override
   String get lifeEventMoving => 'Ndiyafuduka';
@@ -2952,11 +2952,6 @@ class AppLocalizationsXh extends AppLocalizations {
       one: 'Irekhodi e-$count lakho',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Zihlaziyiwe: $done kwi-$total';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Ezindala';
+
+  @override
+  String get lifeEventHomeBuy => 'Ndithenga ikhaya';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Lungiselela i-inshorensi yekhaya elitsha phambi kokuba ungene, uze uhlaziye idilesi yakho kuyo yonke indawo.';
+
+  @override
+  String get lifeEventHomeSell => 'Ndithengisa ikhaya lam';
+
+  @override
+  String get lifeEventHomeSellBody => 'Gcina i-inshorensi yakho de intengiso igqitywe, uze urhoxise oko ungasakudingiyo.';
+
+  @override
+  String get lifeEventMarriage => 'Ndiyatshata';
+
+  @override
+  String get lifeEventMarriageBody => 'Hlaziya ezi emva komtshato, ingakumbi ukuba utshintsha igama okanye wongeza iqabane lakho kwipolisi.';
+
+  @override
+  String get lifeEventDivorce => 'Ndiyaqhawula umtshato';
+
+  @override
+  String get lifeEventDivorceBody => 'Khangela ukuba ngubani okhuselweyo nogama lakhe likuyo nganye, uze uvale okanye wahlule nantoni na ebenisabelana ngayo.';
+
+  @override
+  String get lifeEventBaby => 'Sifumana usana';
+
+  @override
+  String get lifeEventBabyBody => 'Yongeza usana kwi-inshorensi yakho uze ukhangele iipolisi zakho. Yongeza usana kwiNtsapho ukuze ulandele amaxwebhu alo.';
+
+  @override
+  String get lifeEventStudies => 'Ndiqala izifundo';
+
+  @override
+  String get lifeEventStudiesBody => 'Khangela iimvume zakho, i-inshorensi namaxwebhu omfundi phambi kokuba izifundo ziqale.';
+
+  @override
+  String get lifeEventRetiring => 'Ndiyathatha umhlala-phantsi';
+
+  @override
+  String get lifeEventRetiringBody => 'Buyisa izinto zomsebenzi uze ukhangele i-inshorensi yakho, kuba izibonelelo zomsebenzi zihlala ziphela.';
+
+  @override
+  String get lifeEventChildAdult => 'Umntwana wam uza kuba neminyaka eli-16 okanye eli-18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Khetha umntwana wakho. Kule minyaka bahlala befuna isazisi, ipaspoti, ilayisensi okanye i-inshorensi yabo.';
+
+  @override
+  String get lifeEventBereavement => 'Umntu wosapho lwam usweleke';
+
+  @override
+  String get lifeEventBereavementBody => 'Khetha umntu osweleke. Iirekhodi zakhe zinokufuna ukurhoxiswa, ukubangwa okanye ukudluliselwa komnye umntu. Thabatha inyathelo elinye ngexesha.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Ubungqina bedilesi';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Isatifikethi samapolisa';
+
+  @override
+  String get lifeNeedVaccination => 'Isatifikethi sogonyo';
+
+  @override
+  String get lifeNeedStudentCard => 'Ikhadi lomfundi';
+
+  @override
+  String get lifePlanStartTitle => 'Qala isicwangciso';
+
+  @override
+  String get lifePlanStartNew => 'Kwenzeka ntoni?';
+
+  @override
+  String get lifePlanInProgress => 'Iyaqhuba';
+
+  @override
+  String get lifePlanFinishedSection => 'Zigqityiwe';
+
+  @override
+  String get lifePlanWhen => 'Kwenzeka nini?';
+
+  @override
+  String get lifePlanPickDate => 'Khetha umhla';
+
+  @override
+  String get lifePlanNoDate => 'Akukabikho mhla';
+
+  @override
+  String get lifePlanWho => 'Ngoka bani?';
+
+  @override
+  String get lifePlanAddPerson => 'Qala ngokubongeza kwiNtsapho, ukuze i-Vaultara ifumane iirekhodi zabo.';
+
+  @override
+  String get lifePlanDestination => 'Ufudukela kweliphi ilizwe?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Ilizwe (ukhetho)';
+
+  @override
+  String get lifePlanBefore => 'Phambi';
+
+  @override
+  String get lifePlanAfter => 'Emva';
+
+  @override
+  String get lifePlanToDo => 'Ezenziwayo';
+
+  @override
+  String get lifePlanDoneSection => 'Kugqityiwe';
+
+  @override
+  String get lifePlanMayNeed => 'Usenokufuna kwakhona';
+
+  @override
+  String get lifePlanDoUpdate => 'Hlaziya iinkcukacha';
+
+  @override
+  String get lifePlanDoRenew => 'Yihlaziye ixesha';
+
+  @override
+  String get lifePlanDoCancel => 'Yirhoxise okanye uyibuyise';
+
+  @override
+  String get lifePlanDoCheck => 'Khangela ukuba isalungile';
+
+  @override
+  String get lifePlanMark => 'Phawula njenge';
+
+  @override
+  String get lifePlanStatusUpdated => 'Ihlaziyiwe';
+
+  @override
+  String get lifePlanStatusRenewed => 'Ixesha lihlaziyiwe';
+
+  @override
+  String get lifePlanStatusCancelled => 'Irhoxisiwe';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ayifuneki';
+
+  @override
+  String get lifePlanStatusUndo => 'Ayikenziwa';
+
+  @override
+  String get lifePlanFlagExpires => 'Iphelelwa ngexesha malunga nalo mhla. Qala uyihlaziye.';
+
+  @override
+  String get lifePlanFlagPassport => 'Iphelelwa ngexesha kwiinyanga ezi-6 zokufuduka. Amazwe amaninzi afuna ixesha elingakumbi, ngoko yihlaziye phambi kokuba uhambe.';
+
+  @override
+  String get lifePlanFlagConvert => 'Usenokufuna ukuyitshintshela kwilayisensi yalapho emva kokufuduka. Khangela imithetho yalapho.';
+
+  @override
+  String get lifePlanAutoChanged => 'I-Vaultara ibone le rekhodi itshintsha, ngoko iphawulwe njengegqityiweyo.';
+
+  @override
+  String get lifePlanAutoAdded => 'Yongezwe emva kokuba uqale esi sicwangciso.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done kwezi-$total zigqityiwe';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusele iintsuku ezi-$count',
+      one: 'Kusele usuku olu-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iintsuku ezi-$count ezidlulileyo',
+      one: 'Usuku olu-1 oludlulileyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Yonke into igqityiwe. Ungasiphawula isicwangciso njengesigqityiweyo.';
+
+  @override
+  String get lifePlanFinish => 'Phawula njengegqityiweyo';
+
+  @override
+  String get lifePlanReopen => 'Vula kwakhona';
+
+  @override
+  String get lifePlanDelete => 'Cima isicwangciso';
+
+  @override
+  String get lifePlanDeleteTitle => 'Sicinywe esi sicwangciso?';
+
+  @override
+  String get lifePlanDeleteBody => 'Kuza kucinywa isicwangciso kuphela. Iirekhodi zakho ziza kuhlala zinjalo.';
+
+  @override
+  String get lifePlanLimit => 'Ungaba neziqwangciso eziqhubayo ezifikelela kwi-10. Qala ugqibe okanye ucime esinye.';
+
+  @override
+  String get lifePlanSaveError => 'Isicwangciso asikwazanga ukugcinwa. Khangela unxibelelwano lwakho uze uzame kwakhona.';
+
+  @override
+  String get lifePlanStarted => 'Isicwangciso siqalisiwe';
+
+  @override
+  String get lifePlanReminderBody => 'Vula isicwangciso ukuze ubone okushiyekileyo.';
+
+  @override
+  String get lifePlanReminderAfter => 'Zisekhona izinto ezishiyekileyo. Vula isicwangciso ukuze uzigqibe.';
+
+  @override
+  String get lifePlanSuggestCar => 'Uthenge okanye uthengise imoto? Bona enye into ekufuneka uyihlaziye.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Ufudukela apho okwexeshana?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Qala isicwangciso sokufudukela kwelinye ilizwe. I-Vaultara ibonisa into ekufuneka uyilungise phambi kokuba uhambe.';
 }

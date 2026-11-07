@@ -5188,13 +5188,13 @@ abstract class AppLocalizations {
   /// Settings tile subtitle
   ///
   /// In en, this message translates to:
-  /// **'Moving, a new name or a new car? See what to update'**
+  /// **'Moving, a new name, a baby or a new car? Get a plan for what to update'**
   String get lifeEventsSubtitle;
 
   /// Intro text
   ///
   /// In en, this message translates to:
-  /// **'Pick what is happening in your life. Vaultara lists the records you saved that usually need updating because of it.'**
+  /// **'Pick what is happening. Vaultara makes a plan from your saved records, shows what to do before and after the day, and reminds you.'**
   String get lifeEventsIntro;
 
   /// Life event option, first person
@@ -5268,12 +5268,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, one{{count} of your records} other{{count} of your records}}'**
   String lifeEventCount(int count);
-
-  /// Progress, for example 2 of 5 updated
-  ///
-  /// In en, this message translates to:
-  /// **'{done} of {total} updated'**
-  String lifeEventProgress(int done, int total);
 
   /// Feature name: one PDF with chosen documents to prove things to someone. Screen and tile title
   ///
@@ -11244,6 +11238,426 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Older'**
   String get assistantHistoryOlder;
+
+  /// No description provided for @lifeEventHomeBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'I am buying a home'**
+  String get lifeEventHomeBuy;
+
+  /// No description provided for @lifeEventHomeBuyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrange cover for the new home before you move in, then update your address everywhere.'**
+  String get lifeEventHomeBuyBody;
+
+  /// No description provided for @lifeEventHomeSell.
+  ///
+  /// In en, this message translates to:
+  /// **'I am selling my home'**
+  String get lifeEventHomeSell;
+
+  /// No description provided for @lifeEventHomeSellBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep your cover until the sale is final, then cancel what you no longer need.'**
+  String get lifeEventHomeSellBody;
+
+  /// No description provided for @lifeEventMarriage.
+  ///
+  /// In en, this message translates to:
+  /// **'I am getting married'**
+  String get lifeEventMarriage;
+
+  /// No description provided for @lifeEventMarriageBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Update these after the wedding, especially if you change your name or add your partner to a policy.'**
+  String get lifeEventMarriageBody;
+
+  /// No description provided for @lifeEventDivorce.
+  ///
+  /// In en, this message translates to:
+  /// **'I am getting divorced'**
+  String get lifeEventDivorce;
+
+  /// No description provided for @lifeEventDivorceBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Check who is covered and named on each of these, and close or split anything you shared.'**
+  String get lifeEventDivorceBody;
+
+  /// No description provided for @lifeEventBaby.
+  ///
+  /// In en, this message translates to:
+  /// **'We are having a baby'**
+  String get lifeEventBaby;
+
+  /// No description provided for @lifeEventBabyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the baby to your cover and check your policies. Add the baby in Family to track their documents.'**
+  String get lifeEventBabyBody;
+
+  /// No description provided for @lifeEventStudies.
+  ///
+  /// In en, this message translates to:
+  /// **'I am starting studies'**
+  String get lifeEventStudies;
+
+  /// No description provided for @lifeEventStudiesBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your permits, cover and student documents before your studies start.'**
+  String get lifeEventStudiesBody;
+
+  /// No description provided for @lifeEventRetiring.
+  ///
+  /// In en, this message translates to:
+  /// **'I am retiring'**
+  String get lifeEventRetiring;
+
+  /// No description provided for @lifeEventRetiringBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Return work items and check your cover, because work benefits usually end.'**
+  String get lifeEventRetiringBody;
+
+  /// Life event: the user's child turns 16 or 18.
+  ///
+  /// In en, this message translates to:
+  /// **'My child is turning 16 or 18'**
+  String get lifeEventChildAdult;
+
+  /// No description provided for @lifeEventChildAdultBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick your child. At this age they often need their own ID, passport, licence or cover.'**
+  String get lifeEventChildAdultBody;
+
+  /// Life event: a family member died. Keep it gentle.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone in my family died'**
+  String get lifeEventBereavement;
+
+  /// No description provided for @lifeEventBereavementBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick the person who died. Their records may need to be cancelled, claimed or moved to someone else. Take it one step at a time.'**
+  String get lifeEventBereavementBody;
+
+  /// No description provided for @lifeNeedProofOfAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Proof of address'**
+  String get lifeNeedProofOfAddress;
+
+  /// Document showing a person has no criminal record, often needed to move abroad.
+  ///
+  /// In en, this message translates to:
+  /// **'Police clearance certificate'**
+  String get lifeNeedPoliceClearance;
+
+  /// No description provided for @lifeNeedVaccination.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaccination certificate'**
+  String get lifeNeedVaccination;
+
+  /// No description provided for @lifeNeedStudentCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Student card'**
+  String get lifeNeedStudentCard;
+
+  /// No description provided for @lifePlanStartTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a plan'**
+  String get lifePlanStartTitle;
+
+  /// No description provided for @lifePlanStartNew.
+  ///
+  /// In en, this message translates to:
+  /// **'What is happening?'**
+  String get lifePlanStartNew;
+
+  /// No description provided for @lifePlanInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get lifePlanInProgress;
+
+  /// No description provided for @lifePlanFinishedSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get lifePlanFinishedSection;
+
+  /// No description provided for @lifePlanWhen.
+  ///
+  /// In en, this message translates to:
+  /// **'When is it happening?'**
+  String get lifePlanWhen;
+
+  /// No description provided for @lifePlanPickDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a date'**
+  String get lifePlanPickDate;
+
+  /// No description provided for @lifePlanNoDate.
+  ///
+  /// In en, this message translates to:
+  /// **'No date yet'**
+  String get lifePlanNoDate;
+
+  /// No description provided for @lifePlanWho.
+  ///
+  /// In en, this message translates to:
+  /// **'Who is it for?'**
+  String get lifePlanWho;
+
+  /// No description provided for @lifePlanAddPerson.
+  ///
+  /// In en, this message translates to:
+  /// **'Add them in Family first, so Vaultara can find their records.'**
+  String get lifePlanAddPerson;
+
+  /// No description provided for @lifePlanDestination.
+  ///
+  /// In en, this message translates to:
+  /// **'Which country are you moving to?'**
+  String get lifePlanDestination;
+
+  /// No description provided for @lifePlanDestinationOptional.
+  ///
+  /// In en, this message translates to:
+  /// **'Country (optional)'**
+  String get lifePlanDestinationOptional;
+
+  /// No description provided for @lifePlanBefore.
+  ///
+  /// In en, this message translates to:
+  /// **'Before'**
+  String get lifePlanBefore;
+
+  /// No description provided for @lifePlanAfter.
+  ///
+  /// In en, this message translates to:
+  /// **'After'**
+  String get lifePlanAfter;
+
+  /// No description provided for @lifePlanToDo.
+  ///
+  /// In en, this message translates to:
+  /// **'To do'**
+  String get lifePlanToDo;
+
+  /// No description provided for @lifePlanDoneSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get lifePlanDoneSection;
+
+  /// No description provided for @lifePlanMayNeed.
+  ///
+  /// In en, this message translates to:
+  /// **'You may also need'**
+  String get lifePlanMayNeed;
+
+  /// No description provided for @lifePlanDoUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Update the details'**
+  String get lifePlanDoUpdate;
+
+  /// No description provided for @lifePlanDoRenew.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew it'**
+  String get lifePlanDoRenew;
+
+  /// No description provided for @lifePlanDoCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel or return it'**
+  String get lifePlanDoCancel;
+
+  /// No description provided for @lifePlanDoCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Check it still fits'**
+  String get lifePlanDoCheck;
+
+  /// No description provided for @lifePlanMark.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as'**
+  String get lifePlanMark;
+
+  /// No description provided for @lifePlanStatusUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Updated'**
+  String get lifePlanStatusUpdated;
+
+  /// No description provided for @lifePlanStatusRenewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewed'**
+  String get lifePlanStatusRenewed;
+
+  /// No description provided for @lifePlanStatusCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get lifePlanStatusCancelled;
+
+  /// No description provided for @lifePlanStatusNotNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Not needed'**
+  String get lifePlanStatusNotNeeded;
+
+  /// No description provided for @lifePlanStatusUndo.
+  ///
+  /// In en, this message translates to:
+  /// **'Not done yet'**
+  String get lifePlanStatusUndo;
+
+  /// No description provided for @lifePlanFlagExpires.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires around this date. Renew it first.'**
+  String get lifePlanFlagExpires;
+
+  /// No description provided for @lifePlanFlagPassport.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires within 6 months of the move. Many countries want more time left, so renew it before you go.'**
+  String get lifePlanFlagPassport;
+
+  /// No description provided for @lifePlanFlagConvert.
+  ///
+  /// In en, this message translates to:
+  /// **'You may need to swap it for a local licence after you move. Check the local rules.'**
+  String get lifePlanFlagConvert;
+
+  /// No description provided for @lifePlanAutoChanged.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara saw this record change, so it is marked as done.'**
+  String get lifePlanAutoChanged;
+
+  /// No description provided for @lifePlanAutoAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Added after you started this plan.'**
+  String get lifePlanAutoAdded;
+
+  /// Progress of a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} done'**
+  String lifePlanProgress(int done, int total);
+
+  /// Days until the date of a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day to go} other{{count} days to go}}'**
+  String lifePlanDaysToGo(int count);
+
+  /// Days since the date of a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day ago} other{{count} days ago}}'**
+  String lifePlanDaysAgo(int count);
+
+  /// No description provided for @lifePlanAllDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything is done. You can mark the plan as finished.'**
+  String get lifePlanAllDone;
+
+  /// No description provided for @lifePlanFinish.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as finished'**
+  String get lifePlanFinish;
+
+  /// No description provided for @lifePlanReopen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open it again'**
+  String get lifePlanReopen;
+
+  /// No description provided for @lifePlanDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete plan'**
+  String get lifePlanDelete;
+
+  /// No description provided for @lifePlanDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this plan?'**
+  String get lifePlanDeleteTitle;
+
+  /// No description provided for @lifePlanDeleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Only the plan is deleted. Your records stay as they are.'**
+  String get lifePlanDeleteBody;
+
+  /// No description provided for @lifePlanLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'You can have up to 10 plans in progress. Finish or delete one first.'**
+  String get lifePlanLimit;
+
+  /// No description provided for @lifePlanSaveError.
+  ///
+  /// In en, this message translates to:
+  /// **'The plan could not be saved. Check your connection and try again.'**
+  String get lifePlanSaveError;
+
+  /// No description provided for @lifePlanStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan started'**
+  String get lifePlanStarted;
+
+  /// No description provided for @lifePlanReminderBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the plan to see what is left to do.'**
+  String get lifePlanReminderBody;
+
+  /// No description provided for @lifePlanReminderAfter.
+  ///
+  /// In en, this message translates to:
+  /// **'Some things are still left to do. Open the plan to finish them.'**
+  String get lifePlanReminderAfter;
+
+  /// No description provided for @lifePlanSuggestCar.
+  ///
+  /// In en, this message translates to:
+  /// **'Bought or sold a car? See what else to update.'**
+  String get lifePlanSuggestCar;
+
+  /// No description provided for @lifePlanSuggestTrip.
+  ///
+  /// In en, this message translates to:
+  /// **'Moving there for a while?'**
+  String get lifePlanSuggestTrip;
+
+  /// No description provided for @lifePlanSuggestTripBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a plan for moving to another country. Vaultara shows what to sort out before you go.'**
+  String get lifePlanSuggestTripBody;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

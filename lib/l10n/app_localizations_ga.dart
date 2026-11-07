@@ -2959,10 +2959,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifeEventsTitle => 'Imeachtaí saoil';
 
   @override
-  String get lifeEventsSubtitle => 'Ag bogadh tí, ainm nua nó carr nua? Féach cad atá le nuashonrú';
+  String get lifeEventsSubtitle => 'Ag bogadh, ainm nua, leanbh nó carr nua? Faigh plean faoi cad atá le nuashonrú';
 
   @override
-  String get lifeEventsIntro => 'Roghnaigh cad atá ag tarlú i do shaol. Liostaíonn Vaultara na taifid shábháilte a dteastaíonn nuashonrú uathu de ghnáth mar gheall air.';
+  String get lifeEventsIntro => 'Roghnaigh cad atá ag tarlú. Déanann Vaultara plean ó do thaifid shábháilte, taispeánann sé cad atá le déanamh roimh an lá agus ina dhiaidh, agus meabhraíonn sé duit.';
 
   @override
   String get lifeEventMoving => 'Tá mé ag bogadh tí';
@@ -3009,11 +3009,6 @@ class AppLocalizationsGa extends AppLocalizations {
       one: '$count cheann de do thaifid',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done as $total nuashonraithe';
   }
 
   @override
@@ -6807,4 +6802,232 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Níos sine';
+
+  @override
+  String get lifeEventHomeBuy => 'Táim ag ceannach tí';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Socraigh árachas don teach nua sula mbogann tú isteach, ansin nuashonraigh do sheoladh i ngach áit.';
+
+  @override
+  String get lifeEventHomeSell => 'Táim ag díol mo thí';
+
+  @override
+  String get lifeEventHomeSellBody => 'Coinnigh d\'árachas go dtí go mbeidh an díolachán críochnaithe, ansin cealaigh an rud nach dteastaíonn uait a thuilleadh.';
+
+  @override
+  String get lifeEventMarriage => 'Táim ag pósadh';
+
+  @override
+  String get lifeEventMarriageBody => 'Nuashonraigh iad seo tar éis na bainise, go háirithe má athraíonn tú d\'ainm nó má chuireann tú do pháirtí le polasaí.';
+
+  @override
+  String get lifeEventDivorce => 'Táim ag colscaradh';
+
+  @override
+  String get lifeEventDivorceBody => 'Seiceáil cé atá clúdaithe agus ainmnithe ar gach ceann díobh, agus dún nó roinn aon rud a bhí agaibh le chéile.';
+
+  @override
+  String get lifeEventBaby => 'Táimid ag súil le leanbh';
+
+  @override
+  String get lifeEventBabyBody => 'Cuir an leanbh le d\'árachas agus seiceáil do pholasaithe. Cuir an leanbh le Teaghlach chun a gcáipéisí a leanúint.';
+
+  @override
+  String get lifeEventStudies => 'Táim ag tosú ar staidéar';
+
+  @override
+  String get lifeEventStudiesBody => 'Seiceáil do cheadanna, d\'árachas agus do cháipéisí mic léinn sula dtosaíonn an staidéar.';
+
+  @override
+  String get lifeEventRetiring => 'Táim ag dul ar scor';
+
+  @override
+  String get lifeEventRetiringBody => 'Tabhair earraí oibre ar ais agus seiceáil d\'árachas, mar is gnách go stopann sochair ón obair.';
+
+  @override
+  String get lifeEventChildAdult => 'Beidh mo pháiste 16 nó 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Roghnaigh do pháiste. Ag an aois seo is minic a theastaíonn a c(h)árta aitheantais, pas, ceadúnas nó árachas féin.';
+
+  @override
+  String get lifeEventBereavement => 'Fuair duine de mo theaghlach bás';
+
+  @override
+  String get lifeEventBereavementBody => 'Roghnaigh an duine a fuair bás. B\'fhéidir go gcaithfear a dtaifid a chealú, éileamh a dhéanamh orthu nó iad a aistriú chuig duine eile. Tóg céim amháin ag an am.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Cruthúnas seolta';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Teastas glanta póilíní';
+
+  @override
+  String get lifeNeedVaccination => 'Teastas vacsaínithe';
+
+  @override
+  String get lifeNeedStudentCard => 'Cárta mic léinn';
+
+  @override
+  String get lifePlanStartTitle => 'Tosaigh plean';
+
+  @override
+  String get lifePlanStartNew => 'Cad atá ag tarlú?';
+
+  @override
+  String get lifePlanInProgress => 'Ar siúl';
+
+  @override
+  String get lifePlanFinishedSection => 'Críochnaithe';
+
+  @override
+  String get lifePlanWhen => 'Cathain a tharlóidh sé?';
+
+  @override
+  String get lifePlanPickDate => 'Roghnaigh dáta';
+
+  @override
+  String get lifePlanNoDate => 'Gan dáta fós';
+
+  @override
+  String get lifePlanWho => 'Cé dó é?';
+
+  @override
+  String get lifePlanAddPerson => 'Cuir iad le Teaghlach ar dtús, ionas gur féidir le Vaultara a dtaifid a aimsiú.';
+
+  @override
+  String get lifePlanDestination => 'Cén tír a bhfuil tú ag bogadh go dtí í?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Tír (roghnach)';
+
+  @override
+  String get lifePlanBefore => 'Roimh';
+
+  @override
+  String get lifePlanAfter => 'Tar éis';
+
+  @override
+  String get lifePlanToDo => 'Le déanamh';
+
+  @override
+  String get lifePlanDoneSection => 'Déanta';
+
+  @override
+  String get lifePlanMayNeed => 'B\'fhéidir go dteastaíonn seo uait freisin';
+
+  @override
+  String get lifePlanDoUpdate => 'Nuashonraigh na sonraí';
+
+  @override
+  String get lifePlanDoRenew => 'Athnuaigh é';
+
+  @override
+  String get lifePlanDoCancel => 'Cealaigh nó tabhair ar ais é';
+
+  @override
+  String get lifePlanDoCheck => 'Seiceáil go n-oireann sé fós';
+
+  @override
+  String get lifePlanMark => 'Marcáil mar';
+
+  @override
+  String get lifePlanStatusUpdated => 'Nuashonraithe';
+
+  @override
+  String get lifePlanStatusRenewed => 'Athnuaite';
+
+  @override
+  String get lifePlanStatusCancelled => 'Cealaithe';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ní gá';
+
+  @override
+  String get lifePlanStatusUndo => 'Gan déanamh fós';
+
+  @override
+  String get lifePlanFlagExpires => 'Rachaidh sé in éag timpeall an dáta seo. Athnuaigh ar dtús é.';
+
+  @override
+  String get lifePlanFlagPassport => 'Rachaidh sé in éag laistigh de 6 mhí tar éis an bhogtha. Teastaíonn níos mó ama ó go leor tíortha, mar sin athnuaigh é sula n-imíonn tú.';
+
+  @override
+  String get lifePlanFlagConvert => 'B\'fhéidir go gcaithfidh tú é a mhalartú ar cheadúnas áitiúil tar éis duit bogadh. Seiceáil na rialacha áitiúla.';
+
+  @override
+  String get lifePlanAutoChanged => 'Chonaic Vaultara gur athraigh an taifead seo, mar sin tá sé marcáilte mar déanta.';
+
+  @override
+  String get lifePlanAutoAdded => 'Curtha leis tar éis duit an plean seo a thosú.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done as $total déanta';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lá fágtha',
+      one: '1 lá fágtha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lá ó shin',
+      one: '1 lá ó shin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Tá gach rud déanta. Is féidir leat an plean a mharcáil mar críochnaithe.';
+
+  @override
+  String get lifePlanFinish => 'Marcáil mar críochnaithe';
+
+  @override
+  String get lifePlanReopen => 'Oscail arís é';
+
+  @override
+  String get lifePlanDelete => 'Scrios an plean';
+
+  @override
+  String get lifePlanDeleteTitle => 'An bhfuil tú ag iarraidh an plean seo a scriosadh?';
+
+  @override
+  String get lifePlanDeleteBody => 'Ní scriostar ach an plean. Fanann do thaifid mar atá siad.';
+
+  @override
+  String get lifePlanLimit => 'Is féidir suas le 10 plean a bheith ar siúl agat. Críochnaigh nó scrios ceann ar dtús.';
+
+  @override
+  String get lifePlanSaveError => 'Níorbh fhéidir an plean a shábháil. Seiceáil do cheangal agus bain triail eile as.';
+
+  @override
+  String get lifePlanStarted => 'Plean tosaithe';
+
+  @override
+  String get lifePlanReminderBody => 'Oscail an plean le feiceáil cad atá fágtha.';
+
+  @override
+  String get lifePlanReminderAfter => 'Tá rudaí fós le déanamh. Oscail an plean chun iad a chríochnú.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ar cheannaigh nó ar dhíol tú carr? Féach cad eile atá le nuashonrú.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Ag bogadh ann ar feadh tamaill?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Tosaigh plean chun bogadh go tír eile. Taispeánann Vaultara cad atá le socrú sula n-imíonn tú.';
 }

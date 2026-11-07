@@ -2899,10 +2899,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lifeEventsTitle => '생활 변화';
 
   @override
-  String get lifeEventsSubtitle => '이사, 이름 변경, 새 차? 업데이트할 항목을 확인하세요';
+  String get lifeEventsSubtitle => '이사, 개명, 출산, 새 차? 무엇을 업데이트할지 계획을 받아 보세요';
 
   @override
-  String get lifeEventsIntro => '지금 생활에서 일어나는 일을 선택하세요. Vaultara가 그에 따라 보통 업데이트해야 하는 저장된 기록을 나열합니다.';
+  String get lifeEventsIntro => '지금 일어나는 일을 고르세요. Vaultara가 저장된 기록으로 계획을 만들고, 그날 전후에 할 일을 보여 주고 알려 드립니다.';
 
   @override
   String get lifeEventMoving => '이사를 합니다';
@@ -2945,11 +2945,6 @@ class AppLocalizationsKo extends AppLocalizations {
       other: '내 기록 $count개',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done/$total 업데이트됨';
   }
 
   @override
@@ -6571,4 +6566,230 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => '이전';
+
+  @override
+  String get lifeEventHomeBuy => '집을 삽니다';
+
+  @override
+  String get lifeEventHomeBuyBody => '입주 전에 새 집의 보험을 준비하고, 그다음 모든 곳에서 주소를 업데이트하세요.';
+
+  @override
+  String get lifeEventHomeSell => '집을 팝니다';
+
+  @override
+  String get lifeEventHomeSellBody => '매매가 확정될 때까지 보험을 유지하고, 그다음 더 이상 필요 없는 것을 해지하세요.';
+
+  @override
+  String get lifeEventMarriage => '결혼합니다';
+
+  @override
+  String get lifeEventMarriageBody => '결혼 후 이것들을 업데이트하세요. 특히 성을 바꾸거나 배우자를 보험에 추가하는 경우에요.';
+
+  @override
+  String get lifeEventDivorce => '이혼합니다';
+
+  @override
+  String get lifeEventDivorceBody => '각각 누가 보장 대상이고 명의자인지 확인하고, 함께 쓰던 것은 해지하거나 나누세요.';
+
+  @override
+  String get lifeEventBaby => '아기가 태어납니다';
+
+  @override
+  String get lifeEventBabyBody => '아기를 보험에 추가하고 보험 내용을 확인하세요. 서류를 관리하려면 가족에 아기를 추가하세요.';
+
+  @override
+  String get lifeEventStudies => '학업을 시작합니다';
+
+  @override
+  String get lifeEventStudiesBody => '학업이 시작되기 전에 허가증, 보험, 학생 서류를 확인하세요.';
+
+  @override
+  String get lifeEventRetiring => '은퇴합니다';
+
+  @override
+  String get lifeEventRetiringBody => '업무용 물품을 반납하고 보험을 확인하세요. 회사 복리후생은 보통 끝납니다.';
+
+  @override
+  String get lifeEventChildAdult => '자녀가 16세 또는 18세가 됩니다';
+
+  @override
+  String get lifeEventChildAdultBody => '자녀를 고르세요. 이 나이에는 본인 명의의 신분증, 여권, 면허나 보험이 필요한 경우가 많습니다.';
+
+  @override
+  String get lifeEventBereavement => '가족이 세상을 떠났습니다';
+
+  @override
+  String get lifeEventBereavementBody => '세상을 떠난 분을 고르세요. 기록을 해지하거나 청구하거나 다른 사람에게 넘겨야 할 수 있습니다. 하나씩 천천히 하세요.';
+
+  @override
+  String get lifeNeedProofOfAddress => '주소 증명';
+
+  @override
+  String get lifeNeedPoliceClearance => '범죄경력 증명서';
+
+  @override
+  String get lifeNeedVaccination => '예방접종 증명서';
+
+  @override
+  String get lifeNeedStudentCard => '학생증';
+
+  @override
+  String get lifePlanStartTitle => '계획 시작';
+
+  @override
+  String get lifePlanStartNew => '무슨 일이 있나요?';
+
+  @override
+  String get lifePlanInProgress => '진행 중';
+
+  @override
+  String get lifePlanFinishedSection => '완료됨';
+
+  @override
+  String get lifePlanWhen => '언제인가요?';
+
+  @override
+  String get lifePlanPickDate => '날짜 선택';
+
+  @override
+  String get lifePlanNoDate => '아직 날짜 없음';
+
+  @override
+  String get lifePlanWho => '누구를 위한 건가요?';
+
+  @override
+  String get lifePlanAddPerson => 'Vaultara가 기록을 찾을 수 있도록 먼저 가족에 추가하세요.';
+
+  @override
+  String get lifePlanDestination => '어느 나라로 이사하나요?';
+
+  @override
+  String get lifePlanDestinationOptional => '국가(선택)';
+
+  @override
+  String get lifePlanBefore => '전';
+
+  @override
+  String get lifePlanAfter => '후';
+
+  @override
+  String get lifePlanToDo => '할 일';
+
+  @override
+  String get lifePlanDoneSection => '완료';
+
+  @override
+  String get lifePlanMayNeed => '이것도 필요할 수 있습니다';
+
+  @override
+  String get lifePlanDoUpdate => '정보 업데이트';
+
+  @override
+  String get lifePlanDoRenew => '갱신하기';
+
+  @override
+  String get lifePlanDoCancel => '해지 또는 반납';
+
+  @override
+  String get lifePlanDoCheck => '아직 맞는지 확인';
+
+  @override
+  String get lifePlanMark => '상태 표시';
+
+  @override
+  String get lifePlanStatusUpdated => '업데이트함';
+
+  @override
+  String get lifePlanStatusRenewed => '갱신함';
+
+  @override
+  String get lifePlanStatusCancelled => '해지함';
+
+  @override
+  String get lifePlanStatusNotNeeded => '필요 없음';
+
+  @override
+  String get lifePlanStatusUndo => '아직 안 함';
+
+  @override
+  String get lifePlanFlagExpires => '이 날짜 즈음 만료됩니다. 먼저 갱신하세요.';
+
+  @override
+  String get lifePlanFlagPassport => '이사 후 6개월 이내에 만료됩니다. 많은 나라가 더 긴 잔여 기간을 요구하니 떠나기 전에 갱신하세요.';
+
+  @override
+  String get lifePlanFlagConvert => '이사 후 현지 면허로 바꿔야 할 수 있습니다. 현지 규정을 확인하세요.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara가 이 기록이 바뀐 것을 확인해 완료로 표시했습니다.';
+
+  @override
+  String get lifePlanAutoAdded => '이 계획을 시작한 뒤 추가되었습니다.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$total개 중 $done개 완료';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 남음',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 전',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => '모두 끝났습니다. 계획을 완료로 표시할 수 있습니다.';
+
+  @override
+  String get lifePlanFinish => '완료로 표시';
+
+  @override
+  String get lifePlanReopen => '다시 열기';
+
+  @override
+  String get lifePlanDelete => '계획 삭제';
+
+  @override
+  String get lifePlanDeleteTitle => '이 계획을 삭제할까요?';
+
+  @override
+  String get lifePlanDeleteBody => '계획만 삭제됩니다. 기록은 그대로 남습니다.';
+
+  @override
+  String get lifePlanLimit => '진행 중인 계획은 10개까지 가능합니다. 먼저 하나를 완료하거나 삭제하세요.';
+
+  @override
+  String get lifePlanSaveError => '계획을 저장하지 못했습니다. 연결을 확인하고 다시 시도하세요.';
+
+  @override
+  String get lifePlanStarted => '계획을 시작했습니다';
+
+  @override
+  String get lifePlanReminderBody => '남은 할 일을 보려면 계획을 여세요.';
+
+  @override
+  String get lifePlanReminderAfter => '아직 남은 일이 있습니다. 계획을 열어 마무리하세요.';
+
+  @override
+  String get lifePlanSuggestCar => '차를 사거나 팔았나요? 또 무엇을 업데이트할지 확인하세요.';
+
+  @override
+  String get lifePlanSuggestTrip => '한동안 그곳에서 지내나요?';
+
+  @override
+  String get lifePlanSuggestTripBody => '다른 나라로 이사하는 계획을 시작하세요. 떠나기 전에 처리할 일을 Vaultara가 보여 줍니다.';
 }

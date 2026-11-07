@@ -2894,10 +2894,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get lifeEventsTitle => 'Peristiwa hidup';
 
   @override
-  String get lifeEventsSubtitle => 'Pindah rumah, nama baru, atau mobil baru? Lihat apa yang perlu diperbarui';
+  String get lifeEventsSubtitle => 'Pindah rumah, nama baru, bayi, atau mobil baru? Dapatkan rencana apa yang perlu diperbarui';
 
   @override
-  String get lifeEventsIntro => 'Pilih apa yang sedang terjadi dalam hidup Anda. Vaultara menampilkan catatan tersimpan Anda yang biasanya perlu diperbarui karenanya.';
+  String get lifeEventsIntro => 'Pilih apa yang sedang terjadi. Vaultara membuat rencana dari catatan yang Anda simpan, menunjukkan apa yang perlu dilakukan sebelum dan sesudah harinya, dan mengingatkan Anda.';
 
   @override
   String get lifeEventMoving => 'Saya pindah rumah';
@@ -2940,11 +2940,6 @@ class AppLocalizationsId extends AppLocalizations {
       other: '$count catatan Anda',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done dari $total sudah diperbarui';
   }
 
   @override
@@ -6566,4 +6561,230 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Lebih lama';
+
+  @override
+  String get lifeEventHomeBuy => 'Saya membeli rumah';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Atur asuransi rumah baru sebelum pindah, lalu perbarui alamat Anda di mana saja.';
+
+  @override
+  String get lifeEventHomeSell => 'Saya menjual rumah saya';
+
+  @override
+  String get lifeEventHomeSellBody => 'Pertahankan asuransi sampai penjualan selesai, lalu batalkan yang tidak lagi Anda perlukan.';
+
+  @override
+  String get lifeEventMarriage => 'Saya akan menikah';
+
+  @override
+  String get lifeEventMarriageBody => 'Perbarui ini setelah pernikahan, terutama jika Anda mengganti nama atau menambahkan pasangan ke polis.';
+
+  @override
+  String get lifeEventDivorce => 'Saya akan bercerai';
+
+  @override
+  String get lifeEventDivorceBody => 'Periksa siapa yang ditanggung dan tercantum di masing-masing, lalu tutup atau bagi apa pun yang dimiliki bersama.';
+
+  @override
+  String get lifeEventBaby => 'Kami akan punya bayi';
+
+  @override
+  String get lifeEventBabyBody => 'Tambahkan bayi ke asuransi Anda dan periksa polis Anda. Tambahkan bayi di Keluarga untuk melacak dokumennya.';
+
+  @override
+  String get lifeEventStudies => 'Saya mulai kuliah';
+
+  @override
+  String get lifeEventStudiesBody => 'Periksa izin, asuransi, dan dokumen pelajar Anda sebelum kuliah dimulai.';
+
+  @override
+  String get lifeEventRetiring => 'Saya pensiun';
+
+  @override
+  String get lifeEventRetiringBody => 'Kembalikan barang kantor dan periksa asuransi Anda, karena tunjangan kerja biasanya berakhir.';
+
+  @override
+  String get lifeEventChildAdult => 'Anak saya akan berusia 16 atau 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Pilih anak Anda. Di usia ini mereka sering butuh KTP, paspor, SIM, atau asuransi sendiri.';
+
+  @override
+  String get lifeEventBereavement => 'Seseorang di keluarga saya meninggal';
+
+  @override
+  String get lifeEventBereavementBody => 'Pilih orang yang meninggal. Catatannya mungkin perlu dibatalkan, diklaim, atau dialihkan ke orang lain. Lakukan satu per satu.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Bukti alamat';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Surat keterangan catatan kepolisian';
+
+  @override
+  String get lifeNeedVaccination => 'Sertifikat vaksinasi';
+
+  @override
+  String get lifeNeedStudentCard => 'Kartu pelajar';
+
+  @override
+  String get lifePlanStartTitle => 'Mulai rencana';
+
+  @override
+  String get lifePlanStartNew => 'Apa yang terjadi?';
+
+  @override
+  String get lifePlanInProgress => 'Sedang berjalan';
+
+  @override
+  String get lifePlanFinishedSection => 'Selesai';
+
+  @override
+  String get lifePlanWhen => 'Kapan terjadinya?';
+
+  @override
+  String get lifePlanPickDate => 'Pilih tanggal';
+
+  @override
+  String get lifePlanNoDate => 'Belum ada tanggal';
+
+  @override
+  String get lifePlanWho => 'Untuk siapa?';
+
+  @override
+  String get lifePlanAddPerson => 'Tambahkan mereka di Keluarga dulu agar Vaultara bisa menemukan catatan mereka.';
+
+  @override
+  String get lifePlanDestination => 'Anda pindah ke negara mana?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Negara (opsional)';
+
+  @override
+  String get lifePlanBefore => 'Sebelum';
+
+  @override
+  String get lifePlanAfter => 'Sesudah';
+
+  @override
+  String get lifePlanToDo => 'Yang harus dilakukan';
+
+  @override
+  String get lifePlanDoneSection => 'Selesai';
+
+  @override
+  String get lifePlanMayNeed => 'Anda mungkin juga perlu';
+
+  @override
+  String get lifePlanDoUpdate => 'Perbarui detailnya';
+
+  @override
+  String get lifePlanDoRenew => 'Perpanjang';
+
+  @override
+  String get lifePlanDoCancel => 'Batalkan atau kembalikan';
+
+  @override
+  String get lifePlanDoCheck => 'Periksa apakah masih sesuai';
+
+  @override
+  String get lifePlanMark => 'Tandai sebagai';
+
+  @override
+  String get lifePlanStatusUpdated => 'Diperbarui';
+
+  @override
+  String get lifePlanStatusRenewed => 'Diperpanjang';
+
+  @override
+  String get lifePlanStatusCancelled => 'Dibatalkan';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Tidak perlu';
+
+  @override
+  String get lifePlanStatusUndo => 'Belum selesai';
+
+  @override
+  String get lifePlanFlagExpires => 'Habis berlaku sekitar tanggal ini. Perpanjang dulu.';
+
+  @override
+  String get lifePlanFlagPassport => 'Habis berlaku dalam 6 bulan setelah pindah. Banyak negara meminta sisa masa berlaku lebih lama, jadi perpanjang sebelum berangkat.';
+
+  @override
+  String get lifePlanFlagConvert => 'Anda mungkin perlu menukarnya dengan SIM setempat setelah pindah. Periksa aturan setempat.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara melihat catatan ini berubah, jadi ditandai selesai.';
+
+  @override
+  String get lifePlanAutoAdded => 'Ditambahkan setelah Anda memulai rencana ini.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done dari $total selesai';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lagi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Semua sudah selesai. Anda bisa menandai rencana ini selesai.';
+
+  @override
+  String get lifePlanFinish => 'Tandai selesai';
+
+  @override
+  String get lifePlanReopen => 'Buka lagi';
+
+  @override
+  String get lifePlanDelete => 'Hapus rencana';
+
+  @override
+  String get lifePlanDeleteTitle => 'Hapus rencana ini?';
+
+  @override
+  String get lifePlanDeleteBody => 'Hanya rencananya yang dihapus. Catatan Anda tetap seperti semula.';
+
+  @override
+  String get lifePlanLimit => 'Anda bisa punya hingga 10 rencana yang sedang berjalan. Selesaikan atau hapus satu dulu.';
+
+  @override
+  String get lifePlanSaveError => 'Rencana tidak dapat disimpan. Periksa koneksi Anda dan coba lagi.';
+
+  @override
+  String get lifePlanStarted => 'Rencana dimulai';
+
+  @override
+  String get lifePlanReminderBody => 'Buka rencana untuk melihat apa yang tersisa.';
+
+  @override
+  String get lifePlanReminderAfter => 'Beberapa hal masih tersisa. Buka rencana untuk menyelesaikannya.';
+
+  @override
+  String get lifePlanSuggestCar => 'Membeli atau menjual mobil? Lihat apa lagi yang perlu diperbarui.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Pindah ke sana untuk sementara?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Mulai rencana pindah ke negara lain. Vaultara menunjukkan apa yang perlu diurus sebelum berangkat.';
 }

@@ -2905,10 +2905,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifeEventsTitle => 'Matukio ya maisha';
 
   @override
-  String get lifeEventsSubtitle => 'Unahama, unabadili jina, au umenunua gari jipya? Ona cha kusasisha';
+  String get lifeEventsSubtitle => 'Kuhama, jina jipya, mtoto au gari jipya? Pata mpango wa unachopaswa kusasisha';
 
   @override
-  String get lifeEventsIntro => 'Chagua kinachoendelea katika maisha yako. Vaultara huorodhesha rekodi ulizohifadhi ambazo kwa kawaida zinahitaji kusasishwa kwa sababu hiyo.';
+  String get lifeEventsIntro => 'Chagua kinachotokea. Vaultara hutengeneza mpango kutoka kwa rekodi ulizohifadhi, huonyesha cha kufanya kabla na baada ya siku hiyo, na hukukumbusha.';
 
   @override
   String get lifeEventMoving => 'Ninahamia nyumba nyingine';
@@ -2952,11 +2952,6 @@ class AppLocalizationsSw extends AppLocalizations {
       one: 'Rekodi $count kati ya zako',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done kati ya $total vimesasishwa';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Za zamani';
+
+  @override
+  String get lifeEventHomeBuy => 'Ninanunua nyumba';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Panga bima ya nyumba mpya kabla ya kuhamia, kisha sasisha anwani yako kila mahali.';
+
+  @override
+  String get lifeEventHomeSell => 'Ninauza nyumba yangu';
+
+  @override
+  String get lifeEventHomeSellBody => 'Endelea na bima hadi mauzo yakamilike, kisha ghairi usichohitaji tena.';
+
+  @override
+  String get lifeEventMarriage => 'Ninafunga ndoa';
+
+  @override
+  String get lifeEventMarriageBody => 'Sasisha hizi baada ya harusi, hasa ukibadilisha jina au kumwongeza mwenzi wako kwenye sera.';
+
+  @override
+  String get lifeEventDivorce => 'Ninapata talaka';
+
+  @override
+  String get lifeEventDivorceBody => 'Angalia nani amelindwa na ametajwa kwenye kila moja, na funga au gawanya chochote mlichoshiriki.';
+
+  @override
+  String get lifeEventBaby => 'Tunapata mtoto';
+
+  @override
+  String get lifeEventBabyBody => 'Mwongeze mtoto kwenye bima yako na uangalie sera zako. Mwongeze mtoto kwenye Familia ili kufuatilia hati zake.';
+
+  @override
+  String get lifeEventStudies => 'Ninaanza masomo';
+
+  @override
+  String get lifeEventStudiesBody => 'Angalia vibali, bima na hati za mwanafunzi kabla masomo hayajaanza.';
+
+  @override
+  String get lifeEventRetiring => 'Ninastaafu';
+
+  @override
+  String get lifeEventRetiringBody => 'Rudisha vitu vya kazi na uangalie bima yako, kwa sababu manufaa ya kazi kwa kawaida huisha.';
+
+  @override
+  String get lifeEventChildAdult => 'Mtoto wangu anatimiza miaka 16 au 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Chagua mtoto wako. Katika umri huu mara nyingi wanahitaji kitambulisho, pasipoti, leseni au bima yao wenyewe.';
+
+  @override
+  String get lifeEventBereavement => 'Mtu katika familia yangu amefariki';
+
+  @override
+  String get lifeEventBereavementBody => 'Chagua aliyefariki. Rekodi zake huenda zikahitaji kughairiwa, kudaiwa au kuhamishiwa mtu mwingine. Chukua hatua moja baada ya nyingine.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Uthibitisho wa anwani';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Cheti cha polisi';
+
+  @override
+  String get lifeNeedVaccination => 'Cheti cha chanjo';
+
+  @override
+  String get lifeNeedStudentCard => 'Kadi ya mwanafunzi';
+
+  @override
+  String get lifePlanStartTitle => 'Anza mpango';
+
+  @override
+  String get lifePlanStartNew => 'Nini kinatokea?';
+
+  @override
+  String get lifePlanInProgress => 'Inaendelea';
+
+  @override
+  String get lifePlanFinishedSection => 'Imekamilika';
+
+  @override
+  String get lifePlanWhen => 'Itatokea lini?';
+
+  @override
+  String get lifePlanPickDate => 'Chagua tarehe';
+
+  @override
+  String get lifePlanNoDate => 'Bado hakuna tarehe';
+
+  @override
+  String get lifePlanWho => 'Ni kwa ajili ya nani?';
+
+  @override
+  String get lifePlanAddPerson => 'Waongeze kwenye Familia kwanza, ili Vaultara ipate rekodi zao.';
+
+  @override
+  String get lifePlanDestination => 'Unahamia nchi gani?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Nchi (si lazima)';
+
+  @override
+  String get lifePlanBefore => 'Kabla';
+
+  @override
+  String get lifePlanAfter => 'Baada';
+
+  @override
+  String get lifePlanToDo => 'Ya kufanya';
+
+  @override
+  String get lifePlanDoneSection => 'Imekamilika';
+
+  @override
+  String get lifePlanMayNeed => 'Huenda pia ukahitaji';
+
+  @override
+  String get lifePlanDoUpdate => 'Sasisha maelezo';
+
+  @override
+  String get lifePlanDoRenew => 'Ifanye upya';
+
+  @override
+  String get lifePlanDoCancel => 'Ghairi au irudishe';
+
+  @override
+  String get lifePlanDoCheck => 'Angalia kama bado inafaa';
+
+  @override
+  String get lifePlanMark => 'Weka alama kama';
+
+  @override
+  String get lifePlanStatusUpdated => 'Imesasishwa';
+
+  @override
+  String get lifePlanStatusRenewed => 'Imefanywa upya';
+
+  @override
+  String get lifePlanStatusCancelled => 'Imeghairiwa';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Haihitajiki';
+
+  @override
+  String get lifePlanStatusUndo => 'Bado haijafanyika';
+
+  @override
+  String get lifePlanFlagExpires => 'Inaisha karibu na tarehe hii. Ifanye upya kwanza.';
+
+  @override
+  String get lifePlanFlagPassport => 'Inaisha ndani ya miezi 6 baada ya kuhama. Nchi nyingi zinataka muda zaidi, kwa hivyo ifanye upya kabla ya kuondoka.';
+
+  @override
+  String get lifePlanFlagConvert => 'Huenda ukahitaji kuibadilisha kwa leseni ya huko baada ya kuhama. Angalia sheria za huko.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara iliona rekodi hii ikibadilika, kwa hivyo imewekwa alama kuwa imekamilika.';
+
+  @override
+  String get lifePlanAutoAdded => 'Imeongezwa baada ya kuanza mpango huu.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done kati ya $total zimekamilika';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zimebaki siku $count',
+      one: 'Imebaki siku 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Siku $count zilizopita',
+      one: 'Siku 1 iliyopita',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Kila kitu kimekamilika. Unaweza kuweka alama kuwa mpango umekamilika.';
+
+  @override
+  String get lifePlanFinish => 'Weka alama imekamilika';
+
+  @override
+  String get lifePlanReopen => 'Fungua tena';
+
+  @override
+  String get lifePlanDelete => 'Futa mpango';
+
+  @override
+  String get lifePlanDeleteTitle => 'Ufute mpango huu?';
+
+  @override
+  String get lifePlanDeleteBody => 'Mpango pekee ndio utafutwa. Rekodi zako zitabaki kama zilivyo.';
+
+  @override
+  String get lifePlanLimit => 'Unaweza kuwa na hadi mipango 10 inayoendelea. Kamilisha au futa mmoja kwanza.';
+
+  @override
+  String get lifePlanSaveError => 'Mpango haukuweza kuhifadhiwa. Angalia muunganisho wako na ujaribu tena.';
+
+  @override
+  String get lifePlanStarted => 'Mpango umeanzishwa';
+
+  @override
+  String get lifePlanReminderBody => 'Fungua mpango kuona kilichobaki.';
+
+  @override
+  String get lifePlanReminderAfter => 'Bado kuna mambo yaliyobaki. Fungua mpango ili kuyakamilisha.';
+
+  @override
+  String get lifePlanSuggestCar => 'Umenunua au umeuza gari? Angalia nini kingine cha kusasisha.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Unahamia huko kwa muda?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Anza mpango wa kuhamia nchi nyingine. Vaultara inaonyesha cha kushughulikia kabla ya kuondoka.';
 }

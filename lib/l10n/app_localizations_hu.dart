@@ -2905,10 +2905,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifeEventsTitle => 'Életesemények';
 
   @override
-  String get lifeEventsSubtitle => 'Költözés, névváltozás vagy új autó? Nézze meg, mit kell frissíteni';
+  String get lifeEventsSubtitle => 'Költözés, új név, baba vagy új autó? Kapj tervet arról, mit kell frissíteni';
 
   @override
-  String get lifeEventsIntro => 'Válassza ki, mi történik az életében. A Vaultara felsorolja azokat a mentett bejegyzéseket, amelyeket emiatt általában frissíteni kell.';
+  String get lifeEventsIntro => 'Válaszd ki, mi történik. A Vaultara a mentett tételeidből tervet készít, megmutatja, mit tegyél a nap előtt és után, és emlékeztet.';
 
   @override
   String get lifeEventMoving => 'Költözöm';
@@ -2952,11 +2952,6 @@ class AppLocalizationsHu extends AppLocalizations {
       one: '$count bejegyzése',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done / $total frissítve';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Régebbiek';
+
+  @override
+  String get lifeEventHomeBuy => 'Lakást veszek';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Köss biztosítást az új otthonra a beköltözés előtt, aztán mindenhol frissítsd a címedet.';
+
+  @override
+  String get lifeEventHomeSell => 'Eladom a lakásomat';
+
+  @override
+  String get lifeEventHomeSellBody => 'Tartsd meg a biztosítást, amíg az eladás végleges, aztán mondd fel, amire már nincs szükséged.';
+
+  @override
+  String get lifeEventMarriage => 'Megházasodom';
+
+  @override
+  String get lifeEventMarriageBody => 'Frissítsd ezeket az esküvő után, főleg ha nevet változtatsz vagy a párodat hozzáadod egy kötvényhez.';
+
+  @override
+  String get lifeEventDivorce => 'Válok';
+
+  @override
+  String get lifeEventDivorceBody => 'Mindegyiknél nézd meg, ki a biztosított és ki van megnevezve, és zárd le vagy oszd meg, ami közös volt.';
+
+  @override
+  String get lifeEventBaby => 'Babát várunk';
+
+  @override
+  String get lifeEventBabyBody => 'Add hozzá a babát a biztosításodhoz, és nézd át a kötvényeidet. Add hozzá a babát a Család részben, hogy kövesd az iratait.';
+
+  @override
+  String get lifeEventStudies => 'Tanulmányokat kezdek';
+
+  @override
+  String get lifeEventStudiesBody => 'A tanulmányok kezdete előtt ellenőrizd az engedélyeidet, a biztosításodat és a diákigazolványaidat.';
+
+  @override
+  String get lifeEventRetiring => 'Nyugdíjba megyek';
+
+  @override
+  String get lifeEventRetiringBody => 'Add vissza a munkahelyi eszközöket, és nézd át a biztosításodat, mert a munkahelyi juttatások általában megszűnnek.';
+
+  @override
+  String get lifeEventChildAdult => 'A gyerekem 16 vagy 18 éves lesz';
+
+  @override
+  String get lifeEventChildAdultBody => 'Válaszd ki a gyereked. Ebben a korban gyakran kell saját személyi, útlevél, jogosítvány vagy biztosítás.';
+
+  @override
+  String get lifeEventBereavement => 'Meghalt valaki a családomból';
+
+  @override
+  String get lifeEventBereavementBody => 'Válaszd ki az elhunytat. A tételeit lehet, hogy fel kell mondani, kárigényt kell rájuk benyújtani vagy át kell adni másnak. Haladj lépésről lépésre.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Lakcímigazolás';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Erkölcsi bizonyítvány';
+
+  @override
+  String get lifeNeedVaccination => 'Oltási igazolás';
+
+  @override
+  String get lifeNeedStudentCard => 'Diákigazolvány';
+
+  @override
+  String get lifePlanStartTitle => 'Terv indítása';
+
+  @override
+  String get lifePlanStartNew => 'Mi történik?';
+
+  @override
+  String get lifePlanInProgress => 'Folyamatban';
+
+  @override
+  String get lifePlanFinishedSection => 'Befejezett';
+
+  @override
+  String get lifePlanWhen => 'Mikor történik?';
+
+  @override
+  String get lifePlanPickDate => 'Dátum választása';
+
+  @override
+  String get lifePlanNoDate => 'Még nincs dátum';
+
+  @override
+  String get lifePlanWho => 'Kinek szól?';
+
+  @override
+  String get lifePlanAddPerson => 'Előbb add hozzá a Család részben, hogy a Vaultara megtalálja a tételeit.';
+
+  @override
+  String get lifePlanDestination => 'Melyik országba költözöl?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Ország (nem kötelező)';
+
+  @override
+  String get lifePlanBefore => 'Előtte';
+
+  @override
+  String get lifePlanAfter => 'Utána';
+
+  @override
+  String get lifePlanToDo => 'Teendő';
+
+  @override
+  String get lifePlanDoneSection => 'Kész';
+
+  @override
+  String get lifePlanMayNeed => 'Lehet, hogy erre is szükséged lesz';
+
+  @override
+  String get lifePlanDoUpdate => 'Adatok frissítése';
+
+  @override
+  String get lifePlanDoRenew => 'Megújítás';
+
+  @override
+  String get lifePlanDoCancel => 'Felmondás vagy visszaadás';
+
+  @override
+  String get lifePlanDoCheck => 'Ellenőrizd, megfelel-e még';
+
+  @override
+  String get lifePlanMark => 'Megjelölés';
+
+  @override
+  String get lifePlanStatusUpdated => 'Frissítve';
+
+  @override
+  String get lifePlanStatusRenewed => 'Megújítva';
+
+  @override
+  String get lifePlanStatusCancelled => 'Felmondva';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Nem szükséges';
+
+  @override
+  String get lifePlanStatusUndo => 'Még nincs kész';
+
+  @override
+  String get lifePlanFlagExpires => 'E dátum körül jár le. Előbb újítsd meg.';
+
+  @override
+  String get lifePlanFlagPassport => 'A költözés után 6 hónapon belül lejár. Sok ország hosszabb érvényességet kér, ezért indulás előtt újítsd meg.';
+
+  @override
+  String get lifePlanFlagConvert => 'A költözés után lehet, hogy helyi jogosítványra kell cserélned. Nézd meg a helyi szabályokat.';
+
+  @override
+  String get lifePlanAutoChanged => 'A Vaultara látta, hogy ez a tétel megváltozott, ezért késznek jelölte.';
+
+  @override
+  String get lifePlanAutoAdded => 'A terv indítása után hozzáadva.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done/$total kész';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Még $count nap',
+      one: 'Még $count nap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count napja',
+      one: '$count napja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Minden kész. Befejezettnek jelölheted a tervet.';
+
+  @override
+  String get lifePlanFinish => 'Megjelölés befejezettként';
+
+  @override
+  String get lifePlanReopen => 'Újranyitás';
+
+  @override
+  String get lifePlanDelete => 'Terv törlése';
+
+  @override
+  String get lifePlanDeleteTitle => 'Törlöd ezt a tervet?';
+
+  @override
+  String get lifePlanDeleteBody => 'Csak a terv törlődik. A tételeid változatlanok maradnak.';
+
+  @override
+  String get lifePlanLimit => 'Legfeljebb 10 folyamatban lévő terved lehet. Előbb fejezz be vagy törölj egyet.';
+
+  @override
+  String get lifePlanSaveError => 'A tervet nem sikerült menteni. Ellenőrizd a kapcsolatot, és próbáld újra.';
+
+  @override
+  String get lifePlanStarted => 'Terv elindítva';
+
+  @override
+  String get lifePlanReminderBody => 'Nyisd meg a tervet, hogy lásd, mi van még hátra.';
+
+  @override
+  String get lifePlanReminderAfter => 'Még van teendő. Nyisd meg a tervet, és fejezd be.';
+
+  @override
+  String get lifePlanSuggestCar => 'Autót vettél vagy adtál el? Nézd meg, mit kell még frissíteni.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Egy időre odaköltözöl?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Indíts tervet egy másik országba költözéshez. A Vaultara megmutatja, mit kell elintézni indulás előtt.';
 }

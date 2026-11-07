@@ -2905,10 +2905,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifeEventsTitle => 'Bizitzako gertaerak';
 
   @override
-  String get lifeEventsSubtitle => 'Etxez aldatzen, izena aldatzen edo auto berria? Ikusi zer eguneratu';
+  String get lifeEventsSubtitle => 'Etxe-aldaketa, izen berria, haurra edo auto berria? Lortu eguneratu beharrekoen plana';
 
   @override
-  String get lifeEventsIntro => 'Aukeratu zer gertatzen ari den zure bizitzan. Vaultarak horregatik normalean eguneratu beharreko gordetako erregistroak zerrendatzen ditu.';
+  String get lifeEventsIntro => 'Aukeratu zer gertatzen den. Vaultarak zure erregistroekin plan bat egiten du, egunaren aurretik eta ondoren zer egin erakusten du eta gogorarazten dizu.';
 
   @override
   String get lifeEventMoving => 'Etxez aldatzen ari naiz';
@@ -2952,11 +2952,6 @@ class AppLocalizationsEu extends AppLocalizations {
       one: 'Zure erregistroetatik $count',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$total elementutik $done eguneratuta';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Zaharragoak';
+
+  @override
+  String get lifeEventHomeBuy => 'Etxebizitza erosten ari naiz';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Hitzartu etxe berriaren asegurua bertara joan aurretik, eta gero eguneratu helbidea leku guztietan.';
+
+  @override
+  String get lifeEventHomeSell => 'Nire etxebizitza saltzen ari naiz';
+
+  @override
+  String get lifeEventHomeSellBody => 'Mantendu asegurua salmenta behin betikoa izan arte, eta gero ezeztatu behar ez duzuna.';
+
+  @override
+  String get lifeEventMarriage => 'Ezkontzen naiz';
+
+  @override
+  String get lifeEventMarriageBody => 'Eguneratu hauek ezkontzaren ondoren, batez ere izena aldatzen baduzu edo bikotekidea poliza batean gehitzen baduzu.';
+
+  @override
+  String get lifeEventDivorce => 'Dibortziatzen ari naiz';
+
+  @override
+  String get lifeEventDivorceBody => 'Egiaztatu bakoitzean nor dagoen estalita eta izendatuta, eta itxi edo banatu partekatzen zenutena.';
+
+  @override
+  String get lifeEventBaby => 'Haurra izango dugu';
+
+  @override
+  String get lifeEventBabyBody => 'Gehitu haurra zure estalduran eta berrikusi polizak. Gehitu haurra Familian bere dokumentuak jarraitzeko.';
+
+  @override
+  String get lifeEventStudies => 'Ikasketak hasten ditut';
+
+  @override
+  String get lifeEventStudiesBody => 'Egiaztatu baimenak, estaldura eta ikasle-dokumentuak ikasketak hasi aurretik.';
+
+  @override
+  String get lifeEventRetiring => 'Erretiroa hartzen dut';
+
+  @override
+  String get lifeEventRetiringBody => 'Itzuli laneko gauzak eta egiaztatu estaldura, laneko onurak normalean amaitzen direlako.';
+
+  @override
+  String get lifeEventChildAdult => 'Nire seme-alabak 16 edo 18 urte beteko ditu';
+
+  @override
+  String get lifeEventChildAdultBody => 'Aukeratu zure seme-alaba. Adin honetan askotan bere NAN, pasaporte, gidabaimen edo estaldura behar ditu.';
+
+  @override
+  String get lifeEventBereavement => 'Nire familiako norbait hil da';
+
+  @override
+  String get lifeEventBereavementBody => 'Aukeratu hil den pertsona. Agian haren erregistroak ezeztatu, erreklamatu edo beste norbaiti pasatu beharko dira. Joan urratsez urrats.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Helbide-egiaztagiria';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Zigor-aurrekarien ziurtagiria';
+
+  @override
+  String get lifeNeedVaccination => 'Txerto-ziurtagiria';
+
+  @override
+  String get lifeNeedStudentCard => 'Ikasle-txartela';
+
+  @override
+  String get lifePlanStartTitle => 'Hasi plan bat';
+
+  @override
+  String get lifePlanStartNew => 'Zer gertatzen da?';
+
+  @override
+  String get lifePlanInProgress => 'Martxan';
+
+  @override
+  String get lifePlanFinishedSection => 'Amaituak';
+
+  @override
+  String get lifePlanWhen => 'Noiz gertatzen da?';
+
+  @override
+  String get lifePlanPickDate => 'Aukeratu data';
+
+  @override
+  String get lifePlanNoDate => 'Oraindik datarik ez';
+
+  @override
+  String get lifePlanWho => 'Norentzat da?';
+
+  @override
+  String get lifePlanAddPerson => 'Gehitu pertsona hori Familian lehenik, Vaultarak bere erregistroak aurki ditzan.';
+
+  @override
+  String get lifePlanDestination => 'Zein herrialdetara zoaz bizitzera?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Herrialdea (aukerakoa)';
+
+  @override
+  String get lifePlanBefore => 'Aurretik';
+
+  @override
+  String get lifePlanAfter => 'Ondoren';
+
+  @override
+  String get lifePlanToDo => 'Egiteko';
+
+  @override
+  String get lifePlanDoneSection => 'Eginda';
+
+  @override
+  String get lifePlanMayNeed => 'Agian hau ere behar duzu';
+
+  @override
+  String get lifePlanDoUpdate => 'Eguneratu datuak';
+
+  @override
+  String get lifePlanDoRenew => 'Berritu';
+
+  @override
+  String get lifePlanDoCancel => 'Ezeztatu edo itzuli';
+
+  @override
+  String get lifePlanDoCheck => 'Egiaztatu oraindik balio duela';
+
+  @override
+  String get lifePlanMark => 'Markatu honela';
+
+  @override
+  String get lifePlanStatusUpdated => 'Eguneratuta';
+
+  @override
+  String get lifePlanStatusRenewed => 'Berrituta';
+
+  @override
+  String get lifePlanStatusCancelled => 'Ezeztatuta';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ez da behar';
+
+  @override
+  String get lifePlanStatusUndo => 'Oraindik egin gabe';
+
+  @override
+  String get lifePlanFlagExpires => 'Data honen inguruan iraungitzen da. Berritu lehenago.';
+
+  @override
+  String get lifePlanFlagPassport => 'Etxe-aldaketatik 6 hilabete baino lehen iraungitzen da. Herrialde askok balio luzeagoa eskatzen dute; berritu joan aurretik.';
+
+  @override
+  String get lifePlanFlagConvert => 'Agian tokiko gidabaimen batengatik aldatu beharko duzu joan ondoren. Egiaztatu tokiko arauak.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultarak ikusi du erregistro hau aldatu dela, eta eginda bezala markatu du.';
+
+  @override
+  String get lifePlanAutoAdded => 'Plan hau hasi ondoren gehitua.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done/$total eginda';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count egun falta dira',
+      one: 'Egun 1 falta da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Duela $count egun',
+      one: 'Duela egun 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Dena eginda dago. Plana amaitutzat markatu dezakezu.';
+
+  @override
+  String get lifePlanFinish => 'Markatu amaitutzat';
+
+  @override
+  String get lifePlanReopen => 'Ireki berriro';
+
+  @override
+  String get lifePlanDelete => 'Ezabatu plana';
+
+  @override
+  String get lifePlanDeleteTitle => 'Plan hau ezabatu?';
+
+  @override
+  String get lifePlanDeleteBody => 'Plana bakarrik ezabatzen da. Zure erregistroak dauden bezala geratzen dira.';
+
+  @override
+  String get lifePlanLimit => 'Gehienez 10 plan izan ditzakezu martxan. Amaitu edo ezabatu bat lehenik.';
+
+  @override
+  String get lifePlanSaveError => 'Ezin izan da plana gorde. Egiaztatu konexioa eta saiatu berriro.';
+
+  @override
+  String get lifePlanStarted => 'Plana hasi da';
+
+  @override
+  String get lifePlanReminderBody => 'Ireki plana zer geratzen den ikusteko.';
+
+  @override
+  String get lifePlanReminderAfter => 'Oraindik gauza batzuk falta dira. Ireki plana amaitzeko.';
+
+  @override
+  String get lifePlanSuggestCar => 'Autoa erosi edo saldu duzu? Ikusi zer gehiago eguneratu behar den.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Denbora batez bizitzera zoaz hara?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Hasi beste herrialde batera joateko plan bat. Vaultarak erakusten du zer konpondu joan aurretik.';
 }
