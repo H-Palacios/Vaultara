@@ -63,7 +63,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 5;
+  static const int protocolVersion = 6;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -80,6 +80,7 @@ class AssistantService {
     required String locale,
     bool propose = false,
     String? runId,
+    String? here,
   }) async {
     final cleaned = turns
         .where((t) => t.text.trim().isNotEmpty)
@@ -108,6 +109,7 @@ class AssistantService {
         'v': protocolVersion,
         if (propose) 'intent': 'propose',
         if (runId != null) 'runId': runId,
+        if (here != null) 'here': here,
       });
       final data = response.data;
       if (data is! Map) return const AssistantReply.failed(AssistantFailure.failed);
