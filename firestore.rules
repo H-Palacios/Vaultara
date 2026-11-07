@@ -382,6 +382,18 @@ service cloud.firestore {
             && assistantProposalOk(d.proposals, 4));
     }
 
+    function validAssistantFeedback() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['rating', 'question', 'answer', 'chatId', 'createdAt', 'expireAt'])
+        && d.keys().hasAll(['rating', 'question', 'answer', 'createdAt', 'expireAt'])
+        && d.rating in [1, -1]
+        && d.question is string && d.question.size() <= 2000
+        && d.answer is string && d.answer.size() <= 4000
+        && (!('chatId' in d) || (d.chatId is string && d.chatId.size() <= 40))
+        && d.createdAt == request.time
+        && assistantExpiryOk(d);
+    }
+
     function validAssistantMessage() {
       let d = request.resource.data;
       return d.keys().hasOnly(['role', 'text', 'createdAt', 'expireAt', 'proposals'])
@@ -520,6 +532,23 @@ service cloud.firestore {
         allow delete: if isVerifiedOwner(uid);
         allow create: if isVerifiedOwner(uid) && validPhotoKey(keyId);
         allow update: if false;
+      }
+
+      // Live progress of one Ask Vaultara answer. Written only by the
+      // askVaultara function; the user may only ask it to stop.
+      match /assistantRuns/{runId} {
+        allow read: if isOwner(uid);
+        allow update: if isOwner(uid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['cancelled'])
+          && request.resource.data.cancelled == true;
+        allow create, delete: if false;
+      }
+
+      // Thumbs up or down on an answer, so weak answers can be found.
+      match /assistantFeedback/{messageId} {
+        allow read: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validAssistantFeedback();
+        allow delete: if isOwner(uid);
       }
 
       match /assistantChats/{chatId} {
