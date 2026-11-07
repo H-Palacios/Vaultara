@@ -171,6 +171,8 @@ class SavedTrip {
   };
   static const int maxChecklist = 40;
   static const int maxNameLength = 60;
+  static const int maxPlaces = 5;
+  static const int maxPlaceLength = 40;
   static const int maxVisaRecords = 40;
   static const int maxArrivals = Countries.maxPerTrip + 1;
   static const String schengenZone = 'SCHENGEN';
@@ -194,6 +196,9 @@ class SavedTrip {
   final Map<String, String> passportChoice;
   final TripPurpose purpose;
 
+  /// Optional cities or towns, for example Durban, or Tokyo and Osaka.
+  final List<String> places;
+
   const SavedTrip({
     required this.id,
     required this.name,
@@ -211,6 +216,7 @@ class SavedTrip {
     this.flights = const <TripFlight>[],
     this.passportChoice = const <String, String>{},
     this.purpose = TripPurposes.fallback,
+    this.places = const <String>[],
   });
 
   static String visaKey(String traveller, String country) =>
@@ -286,6 +292,7 @@ class SavedTrip {
     List<TripFlight>? flights,
     Map<String, String>? passportChoice,
     TripPurpose? purpose,
+    List<String>? places,
   }) {
     return withId(
       id,
@@ -305,6 +312,7 @@ class SavedTrip {
       flights: flights,
       passportChoice: passportChoice,
       purpose: purpose,
+      places: places,
     );
   }
 
@@ -326,6 +334,7 @@ class SavedTrip {
     List<TripFlight>? flights,
     Map<String, String>? passportChoice,
     TripPurpose? purpose,
+    List<String>? places,
   }) {
     return SavedTrip(
       id: newId,
@@ -346,6 +355,7 @@ class SavedTrip {
       flights: flights ?? this.flights,
       passportChoice: passportChoice ?? this.passportChoice,
       purpose: purpose ?? this.purpose,
+      places: places ?? this.places,
     );
   }
 
@@ -417,6 +427,7 @@ class SavedTrip {
         'needsVisa': needsVisa,
         'needsVisaManual': needsVisaManual,
         'purpose': TripPurposes.storageKey(purpose),
+        if (places.isNotEmpty) 'places': places.take(maxPlaces).toList(),
         'travellers': travellers,
         'checklist': checklist.map((i) => i.toMap()).toList(),
         'countries': countries.take(Countries.maxPerTrip).toList(),
@@ -479,11 +490,51 @@ class SavedTrip {
     return out;
   }
 
-  static String defaultName(List<String> countries) {
-    final joined = Countries.names(countries);
+  /// "Japan", or "Durban, South Africa" when the trip has cities or towns.
+  static String defaultName(
+    List<String> countries, {
+    List<String> places = const <String>[],
+  }) {
+    final country = Countries.names(countries);
+    final joined = places.isEmpty
+        ? country
+        : (country.isEmpty
+            ? places.join(', ')
+            : '${places.join(', ')}, $country');
     if (joined.length <= maxNameLength) return joined;
     return joined.substring(0, maxNameLength).trimRight();
   }
+
+  /// Cleans typed or received city names: trimmed, no repeats, at most
+  /// [maxPlaces], each at most [maxPlaceLength] characters.
+  static List<String> cleanPlaces(Iterable<Object?> raw) {
+    final out = <String>[];
+    for (final item in raw) {
+      if (item is! String) continue;
+      var place = item.trim().replaceAll(RegExp(r'\s+'), ' ');
+      if (place.isEmpty) continue;
+      if (place.length > maxPlaceLength) {
+        place = place.substring(0, maxPlaceLength).trimRight();
+      }
+      if (out.any((p) => p.toLowerCase() == place.toLowerCase())) continue;
+      out.add(place);
+      if (out.length >= maxPlaces) break;
+    }
+    return out;
+  }
+
+  /// Splits "Tokyo, Osaka" typed in the trip form.
+  static List<String> placesFromText(String text) =>
+      cleanPlaces(text.split(RegExp(r'[,;\n]')));
+
+  /// The name to show and save when the user left the name empty.
+  String get autoName => defaultName(countries, places: places);
+
+  /// True when the name was made from the countries (and cities), so it can
+  /// follow them when they change.
+  bool get hasAutoName =>
+      name == autoName ||
+      (countries.isNotEmpty && name == defaultName(countries));
 
   static SavedTrip? fromMap(String id, Map<String, dynamic> map) {
     final rawCountries = map['countries'];
@@ -530,6 +581,9 @@ class SavedTrip {
       flights: _flightsFrom(map['flights']),
       passportChoice: _passportChoiceFrom(map['passportChoice']),
       purpose: TripPurposes.fromStorage(map['purpose']),
+      places: map['places'] is List
+          ? cleanPlaces(map['places'] as List)
+          : const <String>[],
     );
   }
 }
