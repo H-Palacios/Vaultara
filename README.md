@@ -77,6 +77,8 @@ samples, guidance on mobile development, and a full API reference.
 - **Purpose-aware visa results**: each trip has a reason (holiday, family, business, study, work). Study and work trips never show a visitor result as the answer, business trips carry a caution, and 198 of the 211 destinations link to the government's own visa rules page (the rest fall back to a search with a warning about agent sites). Official links are only accepted on government domains or a short hand-checked list, enforced by `visaLinkJob`.
 - **Guarded visa sync**: the weekly sync holds any update that changes an unusually large share of answers (or makes many easier), keeps the old data live, and emails the admin. `node tools/seed-visa.js --dry-run` previews a change, `--force` applies it.
 - Flags travel insurance, driving licence and anything that expires while you are away.
+- **Checklist by reason for the trip**: holiday trips ask for proof of stay and a return ticket, family visits for the host's address and invitation letter, business trips for invitation and employer letters, study trips for the permit, acceptance letter and proof of funds, and work trips for the permit and contract. Trips saved before this get the items once, the first time they are opened.
+- **Permit tracking for study and work trips**: shows whether each traveller has the permit saved as a record, warns when it runs out before the return date, and adds it in one tap so Vaultara reminds them before it expires.
 
 ### Family and household
 - **Family profiles.** Track records for a partner, children and parents. Reminders say whose document it is.
@@ -97,6 +99,8 @@ samples, guidance on mobile development, and a full API reference.
 - Suggests next steps under each answer, and starter questions built from your own records and trips.
 - Several record changes come as one card that can be confirmed together. Every confirmed change can be undone.
 - Record names in answers open the record. Answers can be copied and rated, so weak answers can be found and improved.
+- Changes settings for you after you confirm: turns on app lock, the privacy screen, screenshot blocking and notifications, turns the daily and monthly summaries on or off, and sets the reminder time. The phone still asks for a fingerprint or for permission where it normally would, and security settings can only be turned off in the app.
+- New trip and record cards show their details in two columns, and the countries label matches the number of countries.
 
 ### Experience
 - **Guided tours.** Separate tutorials for adding a record, setting reminders and Insights, or the full tour in one go. A "Take the tour" banner appears for new users.
