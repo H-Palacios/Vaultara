@@ -2066,5 +2066,9 @@
   "travelConnectionIn": "Transit di {place}",
   "travelConnectionLong": "Transit di {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} j {minutes} mnt",
-  "travelArriveIn": "Tiba di {country}"
+  "travelArriveIn": "Tiba di {country}",
+  "assistantVoiceHint": "Coba: Tambahkan paspor saya, berlaku sampai Mei 2031",
+  "assistantVoiceDone": "Selesai",
+  "assistantVoiceNoSpeech": "Tidak ada yang terdengar. Ketuk mikrofon dan coba lagi.",
+  "assistantVoiceFailed": "Input suara berhenti. Coba lagi."
 }

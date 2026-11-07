@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "Nasc in {place}",
   "travelConnectionLong": "Nasc in {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} u {minutes} nóim",
-  "travelArriveIn": "Teacht: {country}"
+  "travelArriveIn": "Teacht: {country}",
+  "assistantVoiceHint": "Bain triail as: Cuir mo phas leis, rachaidh sé in éag i mBealtaine 2031",
+  "assistantVoiceDone": "Déanta",
+  "assistantVoiceNoSpeech": "Níor chualathas aon rud. Tapáil an micreafón agus bain triail eile as.",
+  "assistantVoiceFailed": "Stop an t-ionchur gutha. Bain triail eile as."
 }

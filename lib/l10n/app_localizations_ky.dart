@@ -6566,4 +6566,16 @@ class AppLocalizationsKy extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Келүү: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Байкап көрүңүз: Паспортумду кош, мөөнөтү 2031-жылдын майында бүтөт';
+
+  @override
+  String get assistantVoiceDone => 'Даяр';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Эч нерсе угулган жок. Микрофонду басып, кайра аракет кылыңыз.';
+
+  @override
+  String get assistantVoiceFailed => 'Үн менен киргизүү токтоду. Кайра аракет кылыңыз.';
 }

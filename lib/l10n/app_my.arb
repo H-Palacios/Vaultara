@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "{place} တွင် လေယာဉ်ပြောင်း",
   "travelConnectionLong": "{place} တွင် လေယာဉ်ပြောင်း- {duration}",
   "travelDurationHoursMinutes": "{hours} နာရီ {minutes} မိနစ်",
-  "travelArriveIn": "{country} သို့ ရောက်ရှိ"
+  "travelArriveIn": "{country} သို့ ရောက်ရှိ",
+  "assistantVoiceHint": "စမ်းကြည့်ပါ- ကျွန်ုပ်၏ နိုင်ငံကူးလက်မှတ်ကို ထည့်ပါ၊ 2031 မေလတွင် သက်တမ်းကုန်မည်",
+  "assistantVoiceDone": "ပြီးပါပြီ",
+  "assistantVoiceNoSpeech": "ဘာမှ မကြားရပါ။ မိုက်ခရိုဖုန်းကို နှိပ်ပြီး ထပ်စမ်းပါ။",
+  "assistantVoiceFailed": "အသံထည့်သွင်းမှု ရပ်သွားသည်။ ထပ်စမ်းပါ။"
 }

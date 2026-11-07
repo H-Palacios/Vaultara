@@ -6704,4 +6704,16 @@ class AppLocalizationsLt extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Atvykimas: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Pabandykite: Pridėk mano pasą, jis baigiasi 2031 m. gegužę';
+
+  @override
+  String get assistantVoiceDone => 'Atlikta';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nieko nebuvo girdėti. Bakstelėkite mikrofoną ir bandykite dar kartą.';
+
+  @override
+  String get assistantVoiceFailed => 'Balso įvestis sustojo. Bandykite dar kartą.';
 }

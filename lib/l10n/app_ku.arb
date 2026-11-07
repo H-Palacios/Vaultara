@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Veguhastin li {place}",
   "travelConnectionLong": "Veguhastin li {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} s {minutes} d",
-  "travelArriveIn": "Gihîştin: {country}"
+  "travelArriveIn": "Gihîştin: {country}",
+  "assistantVoiceHint": "Biceribîne: Pasaporta min zêde bike, di Gulana 2031an de diqede",
+  "assistantVoiceDone": "Qediya",
+  "assistantVoiceNoSpeech": "Tiştek nehat bihîstin. Li mîkrofonê bitepîne û dîsa biceribîne.",
+  "assistantVoiceFailed": "Têketina dengî rawestiya. Dîsa biceribîne."
 }

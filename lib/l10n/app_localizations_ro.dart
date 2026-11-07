@@ -6638,4 +6638,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Sosire: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Încearcă: Adaugă pașaportul meu, expiră în mai 2031';
+
+  @override
+  String get assistantVoiceDone => 'Gata';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nu s-a auzit nimic. Atinge microfonul și încearcă din nou.';
+
+  @override
+  String get assistantVoiceFailed => 'Introducerea vocală s-a oprit. Încearcă din nou.';
 }

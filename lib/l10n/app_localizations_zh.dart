@@ -6514,6 +6514,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String travelArriveIn(String country) {
     return '抵达$country';
   }
+
+  @override
+  String get assistantVoiceHint => '试试说：添加我的护照，2031年5月到期';
+
+  @override
+  String get assistantVoiceDone => '完成';
+
+  @override
+  String get assistantVoiceNoSpeech => '没有听到声音。点按麦克风后再试一次。';
+
+  @override
+  String get assistantVoiceFailed => '语音输入已停止。请再试一次。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13014,6 +13026,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String travelArriveIn(String country) {
     return '抵达$country';
   }
+
+  @override
+  String get assistantVoiceHint => '试试说：添加我的护照，2031年5月到期';
+
+  @override
+  String get assistantVoiceDone => '完成';
+
+  @override
+  String get assistantVoiceNoSpeech => '没有听到声音。点按麦克风后再试一次。';
+
+  @override
+  String get assistantVoiceFailed => '语音输入已停止。请再试一次。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -19514,4 +19538,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String travelArriveIn(String country) {
     return '抵達$country';
   }
+
+  @override
+  String get assistantVoiceHint => '試試說：新增我的護照，2031年5月到期';
+
+  @override
+  String get assistantVoiceDone => '完成';
+
+  @override
+  String get assistantVoiceNoSpeech => '沒有聽到聲音。輕觸麥克風後再試一次。';
+
+  @override
+  String get assistantVoiceFailed => '語音輸入已停止。請再試一次。';
 }

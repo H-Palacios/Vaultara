@@ -2053,5 +2053,9 @@
   "travelConnectionIn": "Ukuxhumana e-{place}",
   "travelConnectionLong": "Ukuxhumana e-{place}: {duration}",
   "travelDurationHoursMinutes": "{hours} amahora {minutes} imiz",
-  "travelArriveIn": "Ukufika e-{country}"
+  "travelArriveIn": "Ukufika e-{country}",
+  "assistantVoiceHint": "Zama: Engeza iphasipoti yami, iphelelwa ngoMeyi 2031",
+  "assistantVoiceDone": "Kuqediwe",
+  "assistantVoiceNoSpeech": "Akukho okuzwakele. Thepha imakrofoni bese uzama futhi.",
+  "assistantVoiceFailed": "Ukufaka ngezwi kumile. Zama futhi."
 }

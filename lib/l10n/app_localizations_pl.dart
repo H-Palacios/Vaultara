@@ -6718,4 +6718,16 @@ class AppLocalizationsPl extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Przylot: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Spróbuj: Dodaj mój paszport, wygasa w maju 2031';
+
+  @override
+  String get assistantVoiceDone => 'Gotowe';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nic nie było słychać. Dotknij mikrofonu i spróbuj ponownie.';
+
+  @override
+  String get assistantVoiceFailed => 'Wprowadzanie głosowe zatrzymało się. Spróbuj ponownie.';
 }

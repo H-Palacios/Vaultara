@@ -6769,4 +6769,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'الوصول إلى $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'جرّب: أضف جواز سفري، ينتهي في مايو 2031';
+
+  @override
+  String get assistantVoiceDone => 'تم';
+
+  @override
+  String get assistantVoiceNoSpeech => 'لم يُسمع شيء. اضغط على الميكروفون وحاول مرة أخرى.';
+
+  @override
+  String get assistantVoiceFailed => 'توقف الإدخال الصوتي. حاول مرة أخرى.';
 }

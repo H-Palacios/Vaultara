@@ -6566,4 +6566,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country येथे पोहोचणे';
   }
+
+  @override
+  String get assistantVoiceHint => 'प्रयत्न करा: माझा पासपोर्ट जोडा, तो मे 2031 मध्ये संपतो';
+
+  @override
+  String get assistantVoiceDone => 'झाले';
+
+  @override
+  String get assistantVoiceNoSpeech => 'काहीही ऐकू आले नाही. मायक्रोफोनवर टॅप करून पुन्हा प्रयत्न करा.';
+
+  @override
+  String get assistantVoiceFailed => 'व्हॉइस इनपुट थांबले. पुन्हा प्रयत्न करा.';
 }

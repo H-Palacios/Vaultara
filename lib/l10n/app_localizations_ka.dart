@@ -6566,4 +6566,16 @@ class AppLocalizationsKa extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'ჩასვლა: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'სცადეთ: დაამატე ჩემი პასპორტი, ვადა გასდის 2031 წლის მაისში';
+
+  @override
+  String get assistantVoiceDone => 'მზადაა';
+
+  @override
+  String get assistantVoiceNoSpeech => 'არაფერი ისმოდა. შეეხეთ მიკროფონს და სცადეთ თავიდან.';
+
+  @override
+  String get assistantVoiceFailed => 'ხმოვანი შეყვანა შეჩერდა. სცადეთ თავიდან.';
 }

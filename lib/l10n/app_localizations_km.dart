@@ -6512,4 +6512,16 @@ class AppLocalizationsKm extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'មកដល់ $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'សាកល្បង៖ បន្ថែមលិខិតឆ្លងដែនរបស់ខ្ញុំ ផុតកំណត់ខែឧសភា 2031';
+
+  @override
+  String get assistantVoiceDone => 'រួចរាល់';
+
+  @override
+  String get assistantVoiceNoSpeech => 'មិនបានឮអ្វីទេ។ ចុចមីក្រូហ្វូន ហើយសាកម្ដងទៀត។';
+
+  @override
+  String get assistantVoiceFailed => 'ការបញ្ចូលសំឡេងបានឈប់។ សាកម្ដងទៀត។';
 }

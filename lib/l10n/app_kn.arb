@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "{place}ನಲ್ಲಿ ಸಂಪರ್ಕ",
   "travelConnectionLong": "{place}ನಲ್ಲಿ ಸಂಪರ್ಕ: {duration}",
   "travelDurationHoursMinutes": "{hours} ಗಂ {minutes} ನಿ",
-  "travelArriveIn": "{country} ತಲುಪುವುದು"
+  "travelArriveIn": "{country} ತಲುಪುವುದು",
+  "assistantVoiceHint": "ಪ್ರಯತ್ನಿಸಿ: ನನ್ನ ಪಾಸ್‌ಪೋರ್ಟ್ ಸೇರಿಸು, ಮೇ 2031ರಲ್ಲಿ ಮುಗಿಯುತ್ತದೆ",
+  "assistantVoiceDone": "ಮುಗಿದಿದೆ",
+  "assistantVoiceNoSpeech": "ಏನೂ ಕೇಳಿಸಲಿಲ್ಲ. ಮೈಕ್ರೊಫೋನ್ ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "assistantVoiceFailed": "ಧ್ವನಿ ಇನ್‌ಪುಟ್ ನಿಂತಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
 }

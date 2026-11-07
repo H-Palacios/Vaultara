@@ -2068,5 +2068,9 @@
   "travelConnectionIn": "Ανταπόκριση στο {place}",
   "travelConnectionLong": "Ανταπόκριση στο {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ώ {minutes} λ",
-  "travelArriveIn": "Άφιξη: {country}"
+  "travelArriveIn": "Άφιξη: {country}",
+  "assistantVoiceHint": "Δοκιμάστε: Πρόσθεσε το διαβατήριό μου, λήγει τον Μάιο του 2031",
+  "assistantVoiceDone": "Τέλος",
+  "assistantVoiceNoSpeech": "Δεν ακούστηκε τίποτα. Πατήστε το μικρόφωνο και δοκιμάστε ξανά.",
+  "assistantVoiceFailed": "Η φωνητική εισαγωγή σταμάτησε. Δοκιμάστε ξανά."
 }

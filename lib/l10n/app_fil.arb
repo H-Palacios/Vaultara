@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "Connection sa {place}",
   "travelConnectionLong": "Connection sa {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Pagdating sa {country}"
+  "travelArriveIn": "Pagdating sa {country}",
+  "assistantVoiceHint": "Subukan: Idagdag ang passport ko, mag-e-expire sa Mayo 2031",
+  "assistantVoiceDone": "Tapos na",
+  "assistantVoiceNoSpeech": "Walang narinig. I-tap ang mikropono at subukan ulit.",
+  "assistantVoiceFailed": "Huminto ang voice input. Subukan ulit."
 }

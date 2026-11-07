@@ -2054,5 +2054,9 @@
   "travelConnectionIn": "Byte i {place}",
   "travelConnectionLong": "Byte i {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Ankomst till {country}"
+  "travelArriveIn": "Ankomst till {country}",
+  "assistantVoiceHint": "Prova: Lägg till mitt pass, det går ut i maj 2031",
+  "assistantVoiceDone": "Klar",
+  "assistantVoiceNoSpeech": "Inget hördes. Tryck på mikrofonen och försök igen.",
+  "assistantVoiceFailed": "Röstinmatningen stoppades. Försök igen."
 }

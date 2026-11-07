@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "ຕໍ່ຍົນທີ່ {place}",
   "travelConnectionLong": "ຕໍ່ຍົນທີ່ {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ຊມ {minutes} ນທ",
-  "travelArriveIn": "ມາຮອດ {country}"
+  "travelArriveIn": "ມາຮອດ {country}",
+  "assistantVoiceHint": "ລອງ: ເພີ່ມໜັງສືຜ່ານແດນຂອງຂ້ອຍ, ໝົດອາຍຸເດືອນພຶດສະພາ 2031",
+  "assistantVoiceDone": "ແລ້ວໆ",
+  "assistantVoiceNoSpeech": "ບໍ່ໄດ້ຍິນຫຍັງ. ແຕະໄມໂຄຣໂຟນ ແລ້ວລອງໃໝ່.",
+  "assistantVoiceFailed": "ການປ້ອນດ້ວຍສຽງຢຸດແລ້ວ. ລອງໃໝ່."
 }

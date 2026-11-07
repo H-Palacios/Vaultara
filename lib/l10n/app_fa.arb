@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "توقف در {place}",
   "travelConnectionLong": "توقف در {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ساعت {minutes} دقیقه",
-  "travelArriveIn": "رسیدن به {country}"
+  "travelArriveIn": "رسیدن به {country}",
+  "assistantVoiceHint": "امتحان کنید: گذرنامه‌ام را اضافه کن، مه ۲۰۳۱ منقضی می‌شود",
+  "assistantVoiceDone": "تمام",
+  "assistantVoiceNoSpeech": "چیزی شنیده نشد. روی میکروفون بزنید و دوباره امتحان کنید.",
+  "assistantVoiceFailed": "ورودی صوتی متوقف شد. دوباره امتحان کنید."
 }

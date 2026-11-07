@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Transit di {place}",
   "travelConnectionLong": "Transit di {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} j {minutes} min",
-  "travelArriveIn": "Tiba di {country}"
+  "travelArriveIn": "Tiba di {country}",
+  "assistantVoiceHint": "Cuba: Tambah pasport saya, tamat pada Mei 2031",
+  "assistantVoiceDone": "Selesai",
+  "assistantVoiceNoSpeech": "Tiada apa-apa didengar. Ketik mikrofon dan cuba lagi.",
+  "assistantVoiceFailed": "Input suara berhenti. Cuba lagi."
 }

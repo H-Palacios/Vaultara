@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "在{place}转机",
   "travelConnectionLong": "在{place}转机：{duration}",
   "travelDurationHoursMinutes": "{hours}小时{minutes}分钟",
-  "travelArriveIn": "抵达{country}"
+  "travelArriveIn": "抵达{country}",
+  "assistantVoiceHint": "试试说：添加我的护照，2031年5月到期",
+  "assistantVoiceDone": "完成",
+  "assistantVoiceNoSpeech": "没有听到声音。点按麦克风后再试一次。",
+  "assistantVoiceFailed": "语音输入已停止。请再试一次。"
 }

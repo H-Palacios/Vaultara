@@ -2075,5 +2075,9 @@
   "travelConnectionIn": "Eskala: {place}",
   "travelConnectionLong": "Eskala: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Iristea: {country}"
+  "travelArriveIn": "Iristea: {country}",
+  "assistantVoiceHint": "Probatu: Gehitu nire pasaportea, 2031ko maiatzean iraungitzen da",
+  "assistantVoiceDone": "Eginda",
+  "assistantVoiceNoSpeech": "Ez da ezer entzun. Sakatu mikrofonoa eta saiatu berriro.",
+  "assistantVoiceFailed": "Ahots bidezko sarrera gelditu da. Saiatu berriro."
 }

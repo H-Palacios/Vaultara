@@ -6567,4 +6567,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Chegada a $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Experimente: Adiciona o meu passaporte, expira em maio de 2031';
+
+  @override
+  String get assistantVoiceDone => 'Concluído';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Não foi ouvido nada. Toque no microfone e tente novamente.';
+
+  @override
+  String get assistantVoiceFailed => 'A entrada de voz parou. Tente novamente.';
 }

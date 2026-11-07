@@ -2078,5 +2078,9 @@
   "travelConnectionIn": "ต่อเครื่องที่ {place}",
   "travelConnectionLong": "ต่อเครื่องที่ {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ชม. {minutes} นาที",
-  "travelArriveIn": "ถึง{country}"
+  "travelArriveIn": "ถึง{country}",
+  "assistantVoiceHint": "ลองพูดว่า: เพิ่มพาสปอร์ตของฉัน หมดอายุพฤษภาคม 2031",
+  "assistantVoiceDone": "เสร็จ",
+  "assistantVoiceNoSpeech": "ไม่ได้ยินอะไรเลย แตะไมโครโฟนแล้วลองอีกครั้ง",
+  "assistantVoiceFailed": "การป้อนด้วยเสียงหยุดแล้ว ลองอีกครั้ง"
 }

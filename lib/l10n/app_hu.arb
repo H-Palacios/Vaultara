@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Átszállás: {place}",
   "travelConnectionLong": "Átszállás: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} ó {minutes} p",
-  "travelArriveIn": "Érkezés: {country}"
+  "travelArriveIn": "Érkezés: {country}",
+  "assistantVoiceHint": "Próbáld: Add hozzá az útlevelem, 2031 májusában jár le",
+  "assistantVoiceDone": "Kész",
+  "assistantVoiceNoSpeech": "Nem hallatszott semmi. Koppints a mikrofonra, és próbáld újra.",
+  "assistantVoiceFailed": "A hangbevitel leállt. Próbáld újra."
 }

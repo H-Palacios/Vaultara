@@ -6565,4 +6565,16 @@ class AppLocalizationsSv extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ankomst till $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Prova: Lägg till mitt pass, det går ut i maj 2031';
+
+  @override
+  String get assistantVoiceDone => 'Klar';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Inget hördes. Tryck på mikrofonen och försök igen.';
+
+  @override
+  String get assistantVoiceFailed => 'Röstinmatningen stoppades. Försök igen.';
 }

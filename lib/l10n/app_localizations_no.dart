@@ -6566,4 +6566,16 @@ class AppLocalizationsNo extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ankomst til $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Prøv: Legg til passet mitt, det utløper i mai 2031';
+
+  @override
+  String get assistantVoiceDone => 'Ferdig';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ingenting ble hørt. Trykk på mikrofonen og prøv igjen.';
+
+  @override
+  String get assistantVoiceFailed => 'Taleinndata stoppet. Prøv igjen.';
 }

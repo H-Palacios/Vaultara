@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Escală în {place}",
   "travelConnectionLong": "Escală în {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Sosire: {country}"
+  "travelArriveIn": "Sosire: {country}",
+  "assistantVoiceHint": "Încearcă: Adaugă pașaportul meu, expiră în mai 2031",
+  "assistantVoiceDone": "Gata",
+  "assistantVoiceNoSpeech": "Nu s-a auzit nimic. Atinge microfonul și încearcă din nou.",
+  "assistantVoiceFailed": "Introducerea vocală s-a oprit. Încearcă din nou."
 }

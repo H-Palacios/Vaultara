@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Persėdimas: {place}",
   "travelConnectionLong": "Persėdimas: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} val. {minutes} min.",
-  "travelArriveIn": "Atvykimas: {country}"
+  "travelArriveIn": "Atvykimas: {country}",
+  "assistantVoiceHint": "Pabandykite: Pridėk mano pasą, jis baigiasi 2031 m. gegužę",
+  "assistantVoiceDone": "Atlikta",
+  "assistantVoiceNoSpeech": "Nieko nebuvo girdėti. Bakstelėkite mikrofoną ir bandykite dar kartą.",
+  "assistantVoiceFailed": "Balso įvestis sustojo. Bandykite dar kartą."
 }

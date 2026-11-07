@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "Прекачване в {place}",
   "travelConnectionLong": "Прекачване в {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
-  "travelArriveIn": "Пристигане в {country}"
+  "travelArriveIn": "Пристигане в {country}",
+  "assistantVoiceHint": "Опитайте: Добави паспорта ми, изтича през май 2031",
+  "assistantVoiceDone": "Готово",
+  "assistantVoiceNoSpeech": "Нищо не се чу. Докоснете микрофона и опитайте отново.",
+  "assistantVoiceFailed": "Гласовото въвеждане спря. Опитайте отново."
 }

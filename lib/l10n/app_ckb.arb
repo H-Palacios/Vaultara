@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "گواستنەوە لە {place}",
   "travelConnectionLong": "گواستنەوە لە {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ک {minutes} خ",
-  "travelArriveIn": "گەیشتن بە {country}"
+  "travelArriveIn": "گەیشتن بە {country}",
+  "assistantVoiceHint": "تاقی بکەوە: پاسپۆرتەکەم زیاد بکە، لە مەی 2031 بەسەردەچێت",
+  "assistantVoiceDone": "تەواو",
+  "assistantVoiceNoSpeech": "هیچ نەبیسترا. دەست لە مایکرۆفۆن بدە و دووبارە هەوڵ بدەوە.",
+  "assistantVoiceFailed": "تێخستنی دەنگ وەستا. دووبارە هەوڵ بدەوە."
 }

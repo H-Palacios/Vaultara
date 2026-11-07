@@ -6514,4 +6514,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Đến $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Thử nói: Thêm hộ chiếu của tôi, hết hạn tháng 5 năm 2031';
+
+  @override
+  String get assistantVoiceDone => 'Xong';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Không nghe thấy gì. Chạm vào micrô và thử lại.';
+
+  @override
+  String get assistantVoiceFailed => 'Nhập bằng giọng nói đã dừng. Hãy thử lại.';
 }

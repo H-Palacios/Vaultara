@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Isku-xirka {place}",
   "travelConnectionLong": "Isku-xirka {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} s {minutes} d",
-  "travelArriveIn": "Imaatinka {country}"
+  "travelArriveIn": "Imaatinka {country}",
+  "assistantVoiceHint": "Isku day: Ku dar baasaboorkayga, wuxuu dhacayaa May 2031",
+  "assistantVoiceDone": "Dhammaatay",
+  "assistantVoiceNoSpeech": "Waxba lama maqlin. Taabo makarafoonka oo mar kale isku day.",
+  "assistantVoiceFailed": "Gelinta codka way joogsatay. Mar kale isku day."
 }

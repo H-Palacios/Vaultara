@@ -6566,4 +6566,16 @@ class AppLocalizationsGl extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Chegada a $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Proba: Engade o meu pasaporte, caduca en maio de 2031';
+
+  @override
+  String get assistantVoiceDone => 'Feito';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Non se oíu nada. Toca o micrófono e téntao de novo.';
+
+  @override
+  String get assistantVoiceFailed => 'A entrada de voz detívose. Téntao de novo.';
 }

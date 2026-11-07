@@ -6566,4 +6566,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Mbërritja: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Provo: Shto pasaportën time, skadon në maj 2031';
+
+  @override
+  String get assistantVoiceDone => 'U krye';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nuk u dëgjua asgjë. Prek mikrofonin dhe provo përsëri.';
+
+  @override
+  String get assistantVoiceFailed => 'Futja me zë ndaloi. Provo përsëri.';
 }
