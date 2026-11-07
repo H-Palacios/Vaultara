@@ -6611,4 +6611,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Der Standort ist aus. Du kannst ihn unter Sicherheit und Datenschutz einschalten.';
+
+  @override
+  String get assistantHistoryYesterday => 'Gestern';
+
+  @override
+  String get assistantHistoryLastWeek => 'Letzte 7 Tage';
+
+  @override
+  String get assistantHistoryLastMonth => 'Letzte 30 Tage';
+
+  @override
+  String get assistantHistoryOlder => 'Älter';
 }

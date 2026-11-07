@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Миний байршлыг ашиглах",
   "assistantLocationNote": "Vaultara зөвхөн аль улсад байгааг шалгана. Таны яг байршлыг илгээхгүй, хадгалахгүй.",
   "assistantLocationShared": "Би байршлаа асаалаа",
-  "assistantLocationOff": "Байршил унтраалттай. Аюулгүй байдал ба нууцлалаас асааж болно."
+  "assistantLocationOff": "Байршил унтраалттай. Аюулгүй байдал ба нууцлалаас асааж болно.",
+  "assistantHistoryYesterday": "Өчигдөр",
+  "assistantHistoryLastWeek": "Сүүлийн 7 хоног",
+  "assistantHistoryLastMonth": "Сүүлийн 30 хоног",
+  "assistantHistoryOlder": "Хуучин"
 }

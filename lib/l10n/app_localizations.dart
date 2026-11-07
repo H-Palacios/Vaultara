@@ -11220,6 +11220,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Location is off. You can turn it on in Security and privacy.'**
   String get assistantLocationOff;
+
+  /// Group heading in the Ask Vaultara chat list for chats from yesterday.
+  ///
+  /// In en, this message translates to:
+  /// **'Yesterday'**
+  String get assistantHistoryYesterday;
+
+  /// Group heading in the Ask Vaultara chat list for chats from 2 to 7 days ago.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous 7 days'**
+  String get assistantHistoryLastWeek;
+
+  /// Group heading in the Ask Vaultara chat list for chats from 8 to 30 days ago.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous 30 days'**
+  String get assistantHistoryLastMonth;
+
+  /// Group heading in the Ask Vaultara chat list for chats older than 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'Older'**
+  String get assistantHistoryOlder;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

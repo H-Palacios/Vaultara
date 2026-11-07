@@ -2114,5 +2114,9 @@
   "assistantLocationTitle": "Gebruik my ligging",
   "assistantLocationNote": "Vaultara kyk net in watter land jy is. Jou presiese ligging word nie gestuur of gestoor nie.",
   "assistantLocationShared": "Ek het my ligging aangeskakel",
-  "assistantLocationOff": "Ligging is af. Jy kan dit in Sekuriteit en privaatheid aanskakel."
+  "assistantLocationOff": "Ligging is af. Jy kan dit in Sekuriteit en privaatheid aanskakel.",
+  "assistantHistoryYesterday": "Gister",
+  "assistantHistoryLastWeek": "Vorige 7 dae",
+  "assistantHistoryLastMonth": "Vorige 30 dae",
+  "assistantHistoryOlder": "Ouer"
 }

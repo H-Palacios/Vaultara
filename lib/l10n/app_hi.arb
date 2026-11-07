@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "मेरी लोकेशन इस्तेमाल करें",
   "assistantLocationNote": "Vaultara सिर्फ़ देखता है कि आप किस देश में हैं। आपकी सटीक लोकेशन न भेजी जाती है न सहेजी जाती है।",
   "assistantLocationShared": "मैंने अपनी लोकेशन चालू कर दी",
-  "assistantLocationOff": "लोकेशन बंद है। आप सुरक्षा और गोपनीयता में इसे चालू कर सकते हैं।"
+  "assistantLocationOff": "लोकेशन बंद है। आप सुरक्षा और गोपनीयता में इसे चालू कर सकते हैं।",
+  "assistantHistoryYesterday": "कल",
+  "assistantHistoryLastWeek": "पिछले 7 दिन",
+  "assistantHistoryLastMonth": "पिछले 30 दिन",
+  "assistantHistoryOlder": "पुरानी"
 }

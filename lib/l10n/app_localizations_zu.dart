@@ -6611,4 +6611,16 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Indawo ivaliwe. Ungayivula ku-Ukuphepha nobumfihlo.';
+
+  @override
+  String get assistantHistoryYesterday => 'Izolo';
+
+  @override
+  String get assistantHistoryLastWeek => 'Izinsuku ezi-7 ezedlule';
+
+  @override
+  String get assistantHistoryLastMonth => 'Izinsuku ezingama-30 ezedlule';
+
+  @override
+  String get assistantHistoryOlder => 'Ezindala';
 }

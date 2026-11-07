@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "ကျွန်ုပ်၏တည်နေရာ သုံးရန်",
   "assistantLocationNote": "Vaultara သည် သင်ရှိသည့်နိုင်ငံကိုသာ စစ်ဆေးသည်။ တိကျသောတည်နေရာကို မပို့၊ မသိမ်းပါ။",
   "assistantLocationShared": "တည်နေရာ ဖွင့်လိုက်ပါပြီ",
-  "assistantLocationOff": "တည်နေရာ ပိတ်ထားသည်။ လုံခြုံရေးနှင့် ကိုယ်ရေးကိုယ်တာတွင် ဖွင့်နိုင်သည်။"
+  "assistantLocationOff": "တည်နေရာ ပိတ်ထားသည်။ လုံခြုံရေးနှင့် ကိုယ်ရေးကိုယ်တာတွင် ဖွင့်နိုင်သည်။",
+  "assistantHistoryYesterday": "မနေ့က",
+  "assistantHistoryLastWeek": "ပြီးခဲ့သော ၇ ရက်",
+  "assistantHistoryLastMonth": "ပြီးခဲ့သော ၃၀ ရက်",
+  "assistantHistoryOlder": "ယခင်"
 }

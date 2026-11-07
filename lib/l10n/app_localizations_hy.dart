@@ -6611,4 +6611,16 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Գտնվելու վայրն անջատված է։ Կարող եք միացնել Անվտանգություն և գաղտնիություն բաժնում։';
+
+  @override
+  String get assistantHistoryYesterday => 'Երեկ';
+
+  @override
+  String get assistantHistoryLastWeek => 'Վերջին 7 օրը';
+
+  @override
+  String get assistantHistoryLastMonth => 'Վերջին 30 օրը';
+
+  @override
+  String get assistantHistoryOlder => 'Ավելի հին';
 }

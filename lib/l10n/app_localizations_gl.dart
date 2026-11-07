@@ -6611,4 +6611,16 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'A localización está desactivada. Podes activala en Seguranza e privacidade.';
+
+  @override
+  String get assistantHistoryYesterday => 'Onte';
+
+  @override
+  String get assistantHistoryLastWeek => 'Últimos 7 días';
+
+  @override
+  String get assistantHistoryLastMonth => 'Últimos 30 días';
+
+  @override
+  String get assistantHistoryOlder => 'Máis antigas';
 }

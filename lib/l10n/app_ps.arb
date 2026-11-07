@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "زما موقعیت وکاروه",
   "assistantLocationNote": "Vaultara یوازې ګوري چې په کوم هېواد کې یاست. ستاسو دقیق موقعیت نه لېږل کېږي او نه ساتل کېږي.",
   "assistantLocationShared": "ما خپل موقعیت چالان کړ",
-  "assistantLocationOff": "موقعیت بند دی. تاسو کولی شئ په امنیت او محرمیت کې یې چالان کړئ."
+  "assistantLocationOff": "موقعیت بند دی. تاسو کولی شئ په امنیت او محرمیت کې یې چالان کړئ.",
+  "assistantHistoryYesterday": "پرون",
+  "assistantHistoryLastWeek": "تېرې 7 ورځې",
+  "assistantHistoryLastMonth": "تېرې 30 ورځې",
+  "assistantHistoryOlder": "زاړه"
 }

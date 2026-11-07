@@ -6611,4 +6611,16 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Staðsetning er slökkt. Þú getur kveikt á henni í Öryggi og persónuvernd.';
+
+  @override
+  String get assistantHistoryYesterday => 'Í gær';
+
+  @override
+  String get assistantHistoryLastWeek => 'Síðustu 7 dagar';
+
+  @override
+  String get assistantHistoryLastMonth => 'Síðustu 30 dagar';
+
+  @override
+  String get assistantHistoryOlder => 'Eldri';
 }

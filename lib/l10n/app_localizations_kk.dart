@@ -6611,4 +6611,16 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Орын өшірулі. Қауіпсіздік және құпиялылық бөлімінде қоса аласыз.';
+
+  @override
+  String get assistantHistoryYesterday => 'Кеше';
+
+  @override
+  String get assistantHistoryLastWeek => 'Соңғы 7 күн';
+
+  @override
+  String get assistantHistoryLastMonth => 'Соңғы 30 күн';
+
+  @override
+  String get assistantHistoryOlder => 'Ескірек';
 }

@@ -6611,4 +6611,16 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Posisjon er av. Du kan slå han på under Tryggleik og personvern.';
+
+  @override
+  String get assistantHistoryYesterday => 'I går';
+
+  @override
+  String get assistantHistoryLastWeek => 'Siste 7 dagar';
+
+  @override
+  String get assistantHistoryLastMonth => 'Siste 30 dagar';
+
+  @override
+  String get assistantHistoryOlder => 'Eldre';
 }

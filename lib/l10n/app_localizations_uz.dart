@@ -6611,4 +6611,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Joylashuv o\'chiq. Uni Xavfsizlik va maxfiylik bo\'limida yoqishingiz mumkin.';
+
+  @override
+  String get assistantHistoryYesterday => 'Kecha';
+
+  @override
+  String get assistantHistoryLastWeek => 'Oxirgi 7 kun';
+
+  @override
+  String get assistantHistoryLastMonth => 'Oxirgi 30 kun';
+
+  @override
+  String get assistantHistoryOlder => 'Eskiroq';
 }

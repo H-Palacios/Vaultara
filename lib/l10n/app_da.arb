@@ -2107,5 +2107,9 @@
   "assistantLocationTitle": "Brug min placering",
   "assistantLocationNote": "Vaultara tjekker kun, hvilket land du er i. Din præcise placering sendes eller gemmes ikke.",
   "assistantLocationShared": "Jeg har slået min placering til",
-  "assistantLocationOff": "Placering er slået fra. Du kan slå den til under Sikkerhed og privatliv."
+  "assistantLocationOff": "Placering er slået fra. Du kan slå den til under Sikkerhed og privatliv.",
+  "assistantHistoryYesterday": "I går",
+  "assistantHistoryLastWeek": "Seneste 7 dage",
+  "assistantHistoryLastMonth": "Seneste 30 dage",
+  "assistantHistoryOlder": "Ældre"
 }

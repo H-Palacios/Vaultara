@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "Úsáid mo shuíomh",
   "assistantLocationNote": "Ní sheiceálann Vaultara ach cén tír ina bhfuil tú. Ní sheoltar ná ní shábháiltear do shuíomh cruinn.",
   "assistantLocationShared": "Chas mé mo shuíomh air",
-  "assistantLocationOff": "Tá an suíomh múchta. Is féidir leat é a chasadh air i Slándáil agus príobháideacht."
+  "assistantLocationOff": "Tá an suíomh múchta. Is féidir leat é a chasadh air i Slándáil agus príobháideacht.",
+  "assistantHistoryYesterday": "Inné",
+  "assistantHistoryLastWeek": "7 lá roimhe seo",
+  "assistantHistoryLastMonth": "30 lá roimhe seo",
+  "assistantHistoryOlder": "Níos sine"
 }

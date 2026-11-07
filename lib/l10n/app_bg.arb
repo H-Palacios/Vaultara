@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "Използвай местоположението ми",
   "assistantLocationNote": "Vaultara проверява само в коя държава сте. Точното ви местоположение не се изпраща и не се запазва.",
   "assistantLocationShared": "Включих местоположението си",
-  "assistantLocationOff": "Местоположението е изключено. Можете да го включите в Сигурност и поверителност."
+  "assistantLocationOff": "Местоположението е изключено. Можете да го включите в Сигурност и поверителност.",
+  "assistantHistoryYesterday": "Вчера",
+  "assistantHistoryLastWeek": "Последните 7 дни",
+  "assistantHistoryLastMonth": "Последните 30 дни",
+  "assistantHistoryOlder": "По-стари"
 }

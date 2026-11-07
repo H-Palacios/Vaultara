@@ -6763,4 +6763,16 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Lokalizacja jest wyłączona. Możesz ją włączyć w Bezpieczeństwo i prywatność.';
+
+  @override
+  String get assistantHistoryYesterday => 'Wczoraj';
+
+  @override
+  String get assistantHistoryLastWeek => 'Ostatnie 7 dni';
+
+  @override
+  String get assistantHistoryLastMonth => 'Ostatnie 30 dni';
+
+  @override
+  String get assistantHistoryOlder => 'Starsze';
 }

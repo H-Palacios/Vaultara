@@ -6611,4 +6611,16 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'स्थान बन्द छ। सुरक्षा र गोपनीयतामा खोल्न सक्नुहुन्छ।';
+
+  @override
+  String get assistantHistoryYesterday => 'हिजो';
+
+  @override
+  String get assistantHistoryLastWeek => 'पछिल्ला ७ दिन';
+
+  @override
+  String get assistantHistoryLastMonth => 'पछिल्ला ३० दिन';
+
+  @override
+  String get assistantHistoryOlder => 'पुराना';
 }

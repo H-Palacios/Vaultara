@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Орнымды пайдалану",
   "assistantLocationNote": "Vaultara тек қай елде екеніңізді тексереді. Нақты орныңыз жіберілмейді және сақталмайды.",
   "assistantLocationShared": "Орнымды қостым",
-  "assistantLocationOff": "Орын өшірулі. Қауіпсіздік және құпиялылық бөлімінде қоса аласыз."
+  "assistantLocationOff": "Орын өшірулі. Қауіпсіздік және құпиялылық бөлімінде қоса аласыз.",
+  "assistantHistoryYesterday": "Кеше",
+  "assistantHistoryLastWeek": "Соңғы 7 күн",
+  "assistantHistoryLastMonth": "Соңғы 30 күн",
+  "assistantHistoryOlder": "Ескірек"
 }

@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Жайгашкан жеримди колдонуу",
   "assistantLocationNote": "Vaultara кайсы өлкөдө экениңизди гана текшерет. Так жайгашкан жериңиз жөнөтүлбөйт жана сакталбайт.",
   "assistantLocationShared": "Жайгашкан жеримди күйгүздүм",
-  "assistantLocationOff": "Жайгашкан жер өчүк. Коопсуздук жана купуялуулук бөлүмүнөн күйгүзө аласыз."
+  "assistantLocationOff": "Жайгашкан жер өчүк. Коопсуздук жана купуялуулук бөлүмүнөн күйгүзө аласыз.",
+  "assistantHistoryYesterday": "Кечээ",
+  "assistantHistoryLastWeek": "Акыркы 7 күн",
+  "assistantHistoryLastMonth": "Акыркы 30 күн",
+  "assistantHistoryOlder": "Эскилери"
 }

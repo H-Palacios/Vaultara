@@ -2093,5 +2093,9 @@
   "assistantLocationTitle": "Використати моє місцезнаходження",
   "assistantLocationNote": "Vaultara перевіряє лише, в якій ви країні. Точне місцезнаходження не надсилається і не зберігається.",
   "assistantLocationShared": "Я увімкнув місцезнаходження",
-  "assistantLocationOff": "Місцезнаходження вимкнено. Його можна увімкнути в розділі Безпека і конфіденційність."
+  "assistantLocationOff": "Місцезнаходження вимкнено. Його можна увімкнути в розділі Безпека і конфіденційність.",
+  "assistantHistoryYesterday": "Учора",
+  "assistantHistoryLastWeek": "Останні 7 днів",
+  "assistantHistoryLastMonth": "Останні 30 днів",
+  "assistantHistoryOlder": "Раніше"
 }

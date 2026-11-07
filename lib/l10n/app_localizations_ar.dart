@@ -6814,4 +6814,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'الموقع متوقف. يمكنك تفعيله من الأمان والخصوصية.';
+
+  @override
+  String get assistantHistoryYesterday => 'أمس';
+
+  @override
+  String get assistantHistoryLastWeek => 'آخر 7 أيام';
+
+  @override
+  String get assistantHistoryLastMonth => 'آخر 30 يومًا';
+
+  @override
+  String get assistantHistoryOlder => 'أقدم';
 }

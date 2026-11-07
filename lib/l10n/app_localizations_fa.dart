@@ -6611,4 +6611,16 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'موقعیت خاموش است. می‌توانید آن را در امنیت و حریم خصوصی روشن کنید.';
+
+  @override
+  String get assistantHistoryYesterday => 'دیروز';
+
+  @override
+  String get assistantHistoryLastWeek => '۷ روز گذشته';
+
+  @override
+  String get assistantHistoryLastMonth => '۳۰ روز گذشته';
+
+  @override
+  String get assistantHistoryOlder => 'قدیمی‌تر';
 }

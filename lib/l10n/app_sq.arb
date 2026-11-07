@@ -2090,5 +2090,9 @@
   "assistantLocationTitle": "Përdor vendndodhjen time",
   "assistantLocationNote": "Vaultara kontrollon vetëm në cilin shtet je. Vendndodhja jote e saktë nuk dërgohet dhe nuk ruhet.",
   "assistantLocationShared": "E ndeza vendndodhjen",
-  "assistantLocationOff": "Vendndodhja është e fikur. Mund ta ndezësh te Siguria dhe privatësia."
+  "assistantLocationOff": "Vendndodhja është e fikur. Mund ta ndezësh te Siguria dhe privatësia.",
+  "assistantHistoryYesterday": "Dje",
+  "assistantHistoryLastWeek": "7 ditët e fundit",
+  "assistantHistoryLastMonth": "30 ditët e fundit",
+  "assistantHistoryOlder": "Më të vjetra"
 }

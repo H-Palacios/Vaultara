@@ -6611,4 +6611,16 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'இருப்பிடம் முடக்கப்பட்டுள்ளது. பாதுகாப்பு மற்றும் தனியுரிமையில் இயக்கலாம்.';
+
+  @override
+  String get assistantHistoryYesterday => 'நேற்று';
+
+  @override
+  String get assistantHistoryLastWeek => 'கடந்த 7 நாட்கள்';
+
+  @override
+  String get assistantHistoryLastMonth => 'கடந்த 30 நாட்கள்';
+
+  @override
+  String get assistantHistoryOlder => 'பழையவை';
 }

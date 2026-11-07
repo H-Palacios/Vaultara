@@ -6611,4 +6611,16 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'مقام بند ہے۔ آپ اسے سیکیورٹی اور رازداری میں آن کر سکتے ہیں۔';
+
+  @override
+  String get assistantHistoryYesterday => 'کل';
+
+  @override
+  String get assistantHistoryLastWeek => 'پچھلے 7 دن';
+
+  @override
+  String get assistantHistoryLastMonth => 'پچھلے 30 دن';
+
+  @override
+  String get assistantHistoryOlder => 'پرانی';
 }

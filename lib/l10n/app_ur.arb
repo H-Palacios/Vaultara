@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "میرا مقام استعمال کریں",
   "assistantLocationNote": "Vaultara صرف یہ دیکھتا ہے کہ آپ کس ملک میں ہیں۔ آپ کا درست مقام نہ بھیجا جاتا ہے نہ محفوظ ہوتا ہے۔",
   "assistantLocationShared": "میں نے اپنا مقام آن کر دیا",
-  "assistantLocationOff": "مقام بند ہے۔ آپ اسے سیکیورٹی اور رازداری میں آن کر سکتے ہیں۔"
+  "assistantLocationOff": "مقام بند ہے۔ آپ اسے سیکیورٹی اور رازداری میں آن کر سکتے ہیں۔",
+  "assistantHistoryYesterday": "کل",
+  "assistantHistoryLastWeek": "پچھلے 7 دن",
+  "assistantHistoryLastMonth": "پچھلے 30 دن",
+  "assistantHistoryOlder": "پرانی"
 }

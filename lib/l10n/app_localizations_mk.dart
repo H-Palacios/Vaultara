@@ -6611,4 +6611,16 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Локацијата е исклучена. Можете да ја вклучите во Безбедност и приватност.';
+
+  @override
+  String get assistantHistoryYesterday => 'Вчера';
+
+  @override
+  String get assistantHistoryLastWeek => 'Последните 7 дена';
+
+  @override
+  String get assistantHistoryLastMonth => 'Последните 30 дена';
+
+  @override
+  String get assistantHistoryOlder => 'Постари';
 }

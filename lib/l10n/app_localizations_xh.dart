@@ -6611,4 +6611,16 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Indawo icinyiwe. Ungayivula kuKhuseleko nobumfihlo.';
+
+  @override
+  String get assistantHistoryYesterday => 'Izolo';
+
+  @override
+  String get assistantHistoryLastWeek => 'Iintsuku ezi-7 ezidlulileyo';
+
+  @override
+  String get assistantHistoryLastMonth => 'Iintsuku ezingama-30 ezidlulileyo';
+
+  @override
+  String get assistantHistoryOlder => 'Ezindala';
 }

@@ -2093,5 +2093,9 @@
   "assistantLocationTitle": "ใช้ตำแหน่งของฉัน",
   "assistantLocationNote": "Vaultara ตรวจดูเฉพาะว่าคุณอยู่ประเทศใด ไม่ส่งหรือบันทึกตำแหน่งที่แน่นอนของคุณ",
   "assistantLocationShared": "ฉันเปิดตำแหน่งแล้ว",
-  "assistantLocationOff": "ตำแหน่งปิดอยู่ คุณเปิดได้ในความปลอดภัยและความเป็นส่วนตัว"
+  "assistantLocationOff": "ตำแหน่งปิดอยู่ คุณเปิดได้ในความปลอดภัยและความเป็นส่วนตัว",
+  "assistantHistoryYesterday": "เมื่อวาน",
+  "assistantHistoryLastWeek": "7 วันที่ผ่านมา",
+  "assistantHistoryLastMonth": "30 วันที่ผ่านมา",
+  "assistantHistoryOlder": "เก่ากว่านี้"
 }

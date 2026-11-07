@@ -6759,4 +6759,16 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Местоположение выключено. Его можно включить в разделе Безопасность и конфиденциальность.';
+
+  @override
+  String get assistantHistoryYesterday => 'Вчера';
+
+  @override
+  String get assistantHistoryLastWeek => 'Последние 7 дней';
+
+  @override
+  String get assistantHistoryLastMonth => 'Последние 30 дней';
+
+  @override
+  String get assistantHistoryOlder => 'Ранее';
 }

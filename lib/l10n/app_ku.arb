@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Cihê min bikar bîne",
   "assistantLocationNote": "Vaultara tenê kontrol dike ka tu li kîjan welatî yî. Cihê te yê rast nayê şandin û nayê tomarkirin.",
   "assistantLocationShared": "Min cihê xwe vekir",
-  "assistantLocationOff": "Cih girtî ye. Tu dikarî di Ewlehî û nepenîtiyê de veki."
+  "assistantLocationOff": "Cih girtî ye. Tu dikarî di Ewlehî û nepenîtiyê de veki.",
+  "assistantHistoryYesterday": "Duh",
+  "assistantHistoryLastWeek": "7 rojên borî",
+  "assistantHistoryLastMonth": "30 rojên borî",
+  "assistantHistoryOlder": "Kevintir"
 }

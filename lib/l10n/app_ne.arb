@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "मेरो स्थान प्रयोग गर्नुहोस्",
   "assistantLocationNote": "Vaultara ले तपाईं कुन देशमा हुनुहुन्छ मात्र जाँच्छ। तपाईंको सही स्थान पठाइँदैन वा सुरक्षित गरिँदैन।",
   "assistantLocationShared": "मैले मेरो स्थान खोलें",
-  "assistantLocationOff": "स्थान बन्द छ। सुरक्षा र गोपनीयतामा खोल्न सक्नुहुन्छ।"
+  "assistantLocationOff": "स्थान बन्द छ। सुरक्षा र गोपनीयतामा खोल्न सक्नुहुन्छ।",
+  "assistantHistoryYesterday": "हिजो",
+  "assistantHistoryLastWeek": "पछिल्ला ७ दिन",
+  "assistantHistoryLastMonth": "पछिल्ला ३० दिन",
+  "assistantHistoryOlder": "पुराना"
 }

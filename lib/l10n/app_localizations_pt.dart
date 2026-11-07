@@ -6612,4 +6612,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'A localização está desligada. Pode ligá-la em Segurança e privacidade.';
+
+  @override
+  String get assistantHistoryYesterday => 'Ontem';
+
+  @override
+  String get assistantHistoryLastWeek => 'Últimos 7 dias';
+
+  @override
+  String get assistantHistoryLastMonth => 'Últimos 30 dias';
+
+  @override
+  String get assistantHistoryOlder => 'Mais antigas';
 }

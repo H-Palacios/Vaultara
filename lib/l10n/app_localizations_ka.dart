@@ -6611,4 +6611,16 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'მდებარეობა გამორთულია. შეგიძლიათ ჩართოთ უსაფრთხოებასა და კონფიდენციალურობაში.';
+
+  @override
+  String get assistantHistoryYesterday => 'გუშინ';
+
+  @override
+  String get assistantHistoryLastWeek => 'ბოლო 7 დღე';
+
+  @override
+  String get assistantHistoryLastMonth => 'ბოლო 30 დღე';
+
+  @override
+  String get assistantHistoryOlder => 'უფრო ძველი';
 }

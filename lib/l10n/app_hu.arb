@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Helyzetem használata",
   "assistantLocationNote": "A Vaultara csak azt nézi, melyik országban vagy. A pontos helyzetedet nem küldjük el és nem mentjük.",
   "assistantLocationShared": "Bekapcsoltam a helyzetemet",
-  "assistantLocationOff": "A helymeghatározás ki van kapcsolva. A Biztonság és adatvédelem részben bekapcsolhatod."
+  "assistantLocationOff": "A helymeghatározás ki van kapcsolva. A Biztonság és adatvédelem részben bekapcsolhatod.",
+  "assistantHistoryYesterday": "Tegnap",
+  "assistantHistoryLastWeek": "Előző 7 nap",
+  "assistantHistoryLastMonth": "Előző 30 nap",
+  "assistantHistoryOlder": "Régebbiek"
 }

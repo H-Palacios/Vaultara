@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "使用我的位置",
   "assistantLocationNote": "Vaultara 只查看你所在的国家。不会发送或保存你的精确位置。",
   "assistantLocationShared": "我已开启位置",
-  "assistantLocationOff": "位置已关闭。你可以在安全与隐私中开启。"
+  "assistantLocationOff": "位置已关闭。你可以在安全与隐私中开启。",
+  "assistantHistoryYesterday": "昨天",
+  "assistantHistoryLastWeek": "过去 7 天",
+  "assistantHistoryLastMonth": "过去 30 天",
+  "assistantHistoryOlder": "更早"
 }

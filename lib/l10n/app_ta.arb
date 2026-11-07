@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "என் இருப்பிடத்தைப் பயன்படுத்து",
   "assistantLocationNote": "நீங்கள் எந்த நாட்டில் இருக்கிறீர்கள் என்பதை மட்டுமே Vaultara சரிபார்க்கும். உங்கள் துல்லியமான இருப்பிடம் அனுப்பப்படாது, சேமிக்கப்படாது.",
   "assistantLocationShared": "என் இருப்பிடத்தை இயக்கினேன்",
-  "assistantLocationOff": "இருப்பிடம் முடக்கப்பட்டுள்ளது. பாதுகாப்பு மற்றும் தனியுரிமையில் இயக்கலாம்."
+  "assistantLocationOff": "இருப்பிடம் முடக்கப்பட்டுள்ளது. பாதுகாப்பு மற்றும் தனியுரிமையில் இயக்கலாம்.",
+  "assistantHistoryYesterday": "நேற்று",
+  "assistantHistoryLastWeek": "கடந்த 7 நாட்கள்",
+  "assistantHistoryLastMonth": "கடந்த 30 நாட்கள்",
+  "assistantHistoryOlder": "பழையவை"
 }
