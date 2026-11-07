@@ -78,6 +78,8 @@ samples, guidance on mobile development, and a full API reference.
 - **Guarded visa sync**: the weekly sync holds any update that changes an unusually large share of answers (or makes many easier), keeps the old data live, and emails the admin. `node tools/seed-visa.js --dry-run` previews a change, `--force` applies it.
 - Flags travel insurance, driving licence and anything that expires while you are away.
 - **Checklist by reason for the trip**: holiday trips ask for proof of stay and a return ticket, family visits for the host's address and invitation letter, business trips for invitation and employer letters, study trips for the permit, acceptance letter and proof of funds, and work trips for the permit and contract. Trips saved before this get the items once, the first time they are opened.
+- **Flights with connections**: each leg is its own flight, connections are recognised (with the layover time when both times are known), the next leg starts where the last one landed, and the arrival date in each country comes from the flight that lands there. Up to 10 flights per trip.
+- **Trip form in a natural order**: where, when, who, why, flights, then an optional name.
 - **Permit tracking for study and work trips**: shows whether each traveller has the permit saved as a record, warns when it runs out before the return date, and adds it in one tap so Vaultara reminds them before it expires.
 
 ### Family and household
@@ -100,6 +102,7 @@ samples, guidance on mobile development, and a full API reference.
 - Several record changes come as one card that can be confirmed together. Every confirmed change can be undone.
 - Record names in answers open the record. Answers can be copied and rated, so weak answers can be found and improved.
 - Changes settings for you after you confirm: turns on app lock, the privacy screen, screenshot blocking and notifications, turns the daily and monthly summaries on or off, and sets the reminder time. The phone still asks for a fingerprint or for permission where it normally would, and security settings can only be turned off in the app.
+- Adds flights to a trip from plain words, connections included ("Johannesburg to Tokyo through Dubai on 10 March"), and the date you reach each country on trips with several countries.
 - New trip and record cards show their details in two columns, and the countries label matches the number of countries.
 
 ### Experience
