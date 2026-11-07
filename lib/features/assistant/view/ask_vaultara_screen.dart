@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -21,6 +22,7 @@ import 'package:vaultara/features/assistant/view/widgets/assistant_bubble.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_input_bar.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_linked_text.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -75,6 +77,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   void initState() {
     super.initState();
     _focus.addListener(_onFocus);
+    _voice.problem.addListener(_onVoiceProblem);
     WidgetsBinding.instance.addPostFrameCallback((_) => _prefillSharedText());
   }
 
@@ -89,6 +92,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     _run?.stop();
     _run?.dispose();
     _focus.removeListener(_onFocus);
+    _voice.problem.removeListener(_onVoiceProblem);
     _voice.dispose();
     _input.dispose();
     _focus.dispose();
@@ -308,6 +312,34 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
   }
 
+  Future<void> _cancelVoice() async {
+    await _voice.cancel();
+    if (!mounted) return;
+    _input.value = TextEditingValue(
+      text: _voiceBase,
+      selection: TextSelection.collapsed(offset: _voiceBase.length),
+    );
+  }
+
+  Future<void> _sendVoice() async {
+    await _voice.stop();
+    if (!mounted) return;
+    if (_input.text.trim().isNotEmpty) _send(_input.text);
+  }
+
+  void _onVoiceProblem() {
+    final problem = _voice.problem.value;
+    if (problem == null || !mounted) return;
+    final loc = AppLocalizations.of(context)!;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      problem == VoiceProblem.noSpeech
+          ? loc.assistantVoiceNoSpeech
+          : loc.assistantVoiceFailed,
+      icon: Icons.mic_off_rounded,
+    );
+  }
+
   Future<void> _toggleMic() async {
     if (_voice.listening.value) {
       await _voice.stop();
@@ -315,6 +347,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
     final loc = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context);
+    HapticFeedback.mediumImpact();
     _voiceBase = _input.text.trim();
     final started = await _voice.start(
       locale: locale,
@@ -651,15 +684,36 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                 ),
                 child: ValueListenableBuilder<bool>(
                   valueListenable: _voice.listening,
-                  builder: (context, listening, _) => AssistantInputBar(
-                    controller: _input,
-                    focusNode: _focus,
-                    busy: _busy || _loadingChat,
-                    listening: listening,
-                    hintText: loc.assistantHint,
-                    onSend: () => _send(_input.text),
-                    onMic: _toggleMic,
-                    onStop: _busy ? _stop : null,
+                  builder: (context, listening, _) => AnimatedSize(
+                    duration: const Duration(milliseconds: 220),
+                    curve: Curves.easeOutCubic,
+                    alignment: Alignment.bottomCenter,
+                    child: AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 220),
+                      switchInCurve: Curves.easeOutCubic,
+                      switchOutCurve: Curves.easeInCubic,
+                      child: listening
+                          ? AssistantVoicePanel(
+                              key: const ValueKey<String>('voice'),
+                              voice: _voice,
+                              onCancel: _cancelVoice,
+                              onDone: () {
+                                _voice.stop();
+                              },
+                              onSend: _sendVoice,
+                            )
+                          : AssistantInputBar(
+                              key: const ValueKey<String>('text'),
+                              controller: _input,
+                              focusNode: _focus,
+                              busy: _busy || _loadingChat,
+                              listening: listening,
+                              hintText: loc.assistantHint,
+                              onSend: () => _send(_input.text),
+                              onMic: _toggleMic,
+                              onStop: _busy ? _stop : null,
+                            ),
+                    ),
                   ),
                 ),
               ),
