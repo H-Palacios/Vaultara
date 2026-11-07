@@ -2070,5 +2070,16 @@
   "assistantVoiceHint": "Nwaa: Tinye paspọtụ m, ọ ga-agwụ na Mee 2031",
   "assistantVoiceDone": "Emechaala",
   "assistantVoiceNoSpeech": "A nụghị ihe ọ bụla. Pịa igwe okwu ma nwaa ọzọ.",
-  "assistantVoiceFailed": "Ntinye olu kwụsịrị. Nwaa ọzọ."
+  "assistantVoiceFailed": "Ntinye olu kwụsịrị. Nwaa ọzọ.",
+  "travelItemIdCard": "Kaadị njirimara, ikike obibi ma ọ bụ akwụkwọ ikike ịnya ụgbọ ala n'aka gị",
+  "travelPlacesLabel": "Obodo",
+  "travelPlacesOptional": "Obodo (nhọrọ)",
+  "travelPlacesHint": "Dịka Durban, ma ọ bụ Tokyo, Osaka",
+  "secLocationTitle": "Jiri ọnọdụ m maka njem",
+  "secLocationSubtitle": "Na-egosi ma ị nọ n'ụlọ ma ọ bụ na njem mgbe ị jụrụ maka njem. Ọ bụ naanị mba ka a na-eji, a naghị echekwa ya.",
+  "secLocationDenied": "Ọnọdụ gbanyụrụ maka Vaultara. Ị nwere ike ikwe ya na ntọala ekwentị.",
+  "assistantLocationTitle": "Jiri ọnọdụ m",
+  "assistantLocationNote": "Vaultara na-elele naanị mba ị nọ. A naghị eziga ma ọ bụ chekwaa ebe ị nọ kpọmkwem.",
+  "assistantLocationShared": "Agbanyela m ọnọdụ m",
+  "assistantLocationOff": "Ọnọdụ gbanyụrụ. Ị nwere ike ịgbanye ya na Nchekwa na nzuzo."
 }

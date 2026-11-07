@@ -6645,4 +6645,37 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Glasovni unos je zaustavljen. Pokušajte ponovo.';
+
+  @override
+  String get travelItemIdCard => 'Lična karta, boravišna dozvola ili vozačka dozvola uz vas';
+
+  @override
+  String get travelPlacesLabel => 'Grad ili mjesto';
+
+  @override
+  String get travelPlacesOptional => 'Grad ili mjesto (neobavezno)';
+
+  @override
+  String get travelPlacesHint => 'Na primjer Durban, ili Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Koristi moju lokaciju za putovanja';
+
+  @override
+  String get secLocationSubtitle => 'Pokazuje jeste li kod kuće ili na putu kada pitate o putovanjima. Koristi se samo država i ne čuva se.';
+
+  @override
+  String get secLocationDenied => 'Lokacija je isključena za Vaultaru. Možete je dozvoliti u postavkama telefona.';
+
+  @override
+  String get assistantLocationTitle => 'Koristi moju lokaciju';
+
+  @override
+  String get assistantLocationNote => 'Vaultara provjerava samo u kojoj ste državi. Vaša tačna lokacija se ne šalje i ne čuva.';
+
+  @override
+  String get assistantLocationShared => 'Uključio sam lokaciju';
+
+  @override
+  String get assistantLocationOff => 'Lokacija je isključena. Možete je uključiti u Sigurnost i privatnost.';
 }

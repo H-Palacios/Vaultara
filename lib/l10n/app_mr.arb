@@ -1815,5 +1815,16 @@
   "assistantVoiceHint": "प्रयत्न करा: माझा पासपोर्ट जोडा, तो मे 2031 मध्ये संपतो",
   "assistantVoiceDone": "झाले",
   "assistantVoiceNoSpeech": "काहीही ऐकू आले नाही. मायक्रोफोनवर टॅप करून पुन्हा प्रयत्न करा.",
-  "assistantVoiceFailed": "व्हॉइस इनपुट थांबले. पुन्हा प्रयत्न करा."
+  "assistantVoiceFailed": "व्हॉइस इनपुट थांबले. पुन्हा प्रयत्न करा.",
+  "travelItemIdCard": "ओळखपत्र, निवास परवाना किंवा ड्रायव्हिंग लायसन्स सोबत",
+  "travelPlacesLabel": "शहर किंवा गाव",
+  "travelPlacesOptional": "शहर किंवा गाव (पर्यायी)",
+  "travelPlacesHint": "उदा. डर्बन, किंवा टोकियो, ओसाका",
+  "secLocationTitle": "प्रवासासाठी माझे स्थान वापरा",
+  "secLocationSubtitle": "प्रवासाबद्दल विचारल्यावर तुम्ही घरी आहात की प्रवासात हे दाखवते. फक्त देश वापरला जातो आणि जतन होत नाही.",
+  "secLocationDenied": "Vaultara साठी स्थान बंद आहे. फोन सेटिंग्जमध्ये परवानगी देऊ शकता.",
+  "assistantLocationTitle": "माझे स्थान वापरा",
+  "assistantLocationNote": "Vaultara फक्त तुम्ही कोणत्या देशात आहात ते तपासते. तुमचे अचूक स्थान पाठवले किंवा जतन केले जात नाही.",
+  "assistantLocationShared": "मी माझे स्थान चालू केले",
+  "assistantLocationOff": "स्थान बंद आहे. सुरक्षा आणि गोपनीयतेमध्ये चालू करू शकता."
 }

@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Deneyin: Pasaportumu ekle, Mayıs 2031'de bitiyor",
   "assistantVoiceDone": "Tamam",
   "assistantVoiceNoSpeech": "Hiçbir şey duyulmadı. Mikrofona dokunup tekrar deneyin.",
-  "assistantVoiceFailed": "Sesli giriş durdu. Tekrar deneyin."
+  "assistantVoiceFailed": "Sesli giriş durdu. Tekrar deneyin.",
+  "travelItemIdCard": "Kimlik kartı, oturma izni veya ehliyet yanında",
+  "travelPlacesLabel": "Şehir veya kasaba",
+  "travelPlacesOptional": "Şehir veya kasaba (isteğe bağlı)",
+  "travelPlacesHint": "Örneğin Durban, ya da Tokyo, Osaka",
+  "secLocationTitle": "Seyahatler için konumumu kullan",
+  "secLocationSubtitle": "Seyahat hakkında sorduğunda evde mi yoksa seyahatte mi olduğunu gösterir. Yalnızca ülke kullanılır ve kaydedilmez.",
+  "secLocationDenied": "Vaultara için konum kapalı. Telefon ayarlarından izin verebilirsin.",
+  "assistantLocationTitle": "Konumumu kullan",
+  "assistantLocationNote": "Vaultara yalnızca hangi ülkede olduğuna bakar. Tam konumun gönderilmez ve kaydedilmez.",
+  "assistantLocationShared": "Konumumu açtım",
+  "assistantLocationOff": "Konum kapalı. Güvenlik ve gizlilik bölümünden açabilirsin."
 }

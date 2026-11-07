@@ -6578,4 +6578,37 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Spracheingabe wurde beendet. Versuche es noch einmal.';
+
+  @override
+  String get travelItemIdCard => 'Personalausweis, Aufenthaltstitel oder Führerschein dabei';
+
+  @override
+  String get travelPlacesLabel => 'Stadt oder Ort';
+
+  @override
+  String get travelPlacesOptional => 'Stadt oder Ort (optional)';
+
+  @override
+  String get travelPlacesHint => 'Zum Beispiel Durban, oder Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Meinen Standort für Reisen nutzen';
+
+  @override
+  String get secLocationSubtitle => 'Zeigt bei Fragen zu Reisen, ob du zu Hause oder unterwegs bist. Nur das Land wird genutzt und nicht gespeichert.';
+
+  @override
+  String get secLocationDenied => 'Der Standort ist für Vaultara aus. Du kannst ihn in den Handyeinstellungen erlauben.';
+
+  @override
+  String get assistantLocationTitle => 'Meinen Standort nutzen';
+
+  @override
+  String get assistantLocationNote => 'Vaultara prüft nur, in welchem Land du bist. Dein genauer Standort wird weder gesendet noch gespeichert.';
+
+  @override
+  String get assistantLocationShared => 'Ich habe meinen Standort eingeschaltet';
+
+  @override
+  String get assistantLocationOff => 'Der Standort ist aus. Du kannst ihn unter Sicherheit und Datenschutz einschalten.';
 }

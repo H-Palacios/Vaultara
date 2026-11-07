@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Zama: Yongeza ipaspoti yam, iphelelwa ngoMeyi 2031",
   "assistantVoiceDone": "Kugqityiwe",
   "assistantVoiceNoSpeech": "Akukho nto iviweyo. Cofa imayikrofoni uze uzame kwakhona.",
-  "assistantVoiceFailed": "Ukufaka ngelizwi kumile. Zama kwakhona."
+  "assistantVoiceFailed": "Ukufaka ngelizwi kumile. Zama kwakhona.",
+  "travelItemIdCard": "Isazisi, imvume yokuhlala okanye ilayisensi yokuqhuba nawe",
+  "travelPlacesLabel": "Isixeko okanye idolophu",
+  "travelPlacesOptional": "Isixeko okanye idolophu (ukhetho)",
+  "travelPlacesHint": "Umzekelo iDurban, okanye iTokyo, iOsaka",
+  "secLocationTitle": "Sebenzisa indawo yam kuhambo",
+  "secLocationSubtitle": "Ibonisa ukuba usekhaya okanye usehambeni xa ubuza ngohambo. Kusetyenziswa ilizwe kuphela kwaye aligcinwa.",
+  "secLocationDenied": "Indawo icinyiwe kwiVaultara. Ungayivumela kwiisetingi zefowuni.",
+  "assistantLocationTitle": "Sebenzisa indawo yam",
+  "assistantLocationNote": "IVaultara ijonga kuphela ukuba ukweliphi ilizwe. Indawo yakho echanekileyo ayithunyelwa kwaye ayigcinwa.",
+  "assistantLocationShared": "Ndiyivulile indawo yam",
+  "assistantLocationOff": "Indawo icinyiwe. Ungayivula kuKhuseleko nobumfihlo."
 }

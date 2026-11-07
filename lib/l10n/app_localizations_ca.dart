@@ -6578,4 +6578,37 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'L\'entrada de veu s\'ha aturat. Torna-ho a provar.';
+
+  @override
+  String get travelItemIdCard => 'DNI, permís de residència o carnet de conduir a sobre';
+
+  @override
+  String get travelPlacesLabel => 'Ciutat o poble';
+
+  @override
+  String get travelPlacesOptional => 'Ciutat o poble (opcional)';
+
+  @override
+  String get travelPlacesHint => 'Per exemple Durban, o Tòquio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Fes servir la meva ubicació per als viatges';
+
+  @override
+  String get secLocationSubtitle => 'Mostra si ets a casa o de viatge quan preguntes sobre viatges. Només es fa servir el país i no es desa.';
+
+  @override
+  String get secLocationDenied => 'La ubicació està desactivada per a Vaultara. La pots permetre a la configuració del telèfon.';
+
+  @override
+  String get assistantLocationTitle => 'Fes servir la meva ubicació';
+
+  @override
+  String get assistantLocationNote => 'Vaultara només comprova en quin país ets. La teva ubicació exacta no s\'envia ni es desa.';
+
+  @override
+  String get assistantLocationShared => 'He activat la ubicació';
+
+  @override
+  String get assistantLocationOff => 'La ubicació està desactivada. La pots activar a Seguretat i privadesa.';
 }

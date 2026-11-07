@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "Туршаад үзээрэй: Миний паспортыг нэм, 2031 оны 5-р сард дуусна",
   "assistantVoiceDone": "Болсон",
   "assistantVoiceNoSpeech": "Юу ч сонсогдсонгүй. Микрофон дээр дарж дахин оролдоно уу.",
-  "assistantVoiceFailed": "Дуут оролт зогслоо. Дахин оролдоно уу."
+  "assistantVoiceFailed": "Дуут оролт зогслоо. Дахин оролдоно уу.",
+  "travelItemIdCard": "Иргэний үнэмлэх, оршин суух зөвшөөрөл эсвэл жолооны үнэмлэх биедээ",
+  "travelPlacesLabel": "Хот эсвэл суурин",
+  "travelPlacesOptional": "Хот эсвэл суурин (заавал биш)",
+  "travelPlacesHint": "Жишээ нь Дурбан, эсвэл Токио, Осака",
+  "secLocationTitle": "Аялалд миний байршлыг ашиглах",
+  "secLocationSubtitle": "Аяллын талаар асуухад гэртээ эсвэл аялж байгааг харуулна. Зөвхөн улсыг ашиглах ба хадгалахгүй.",
+  "secLocationDenied": "Vaultara-д байршил унтраалттай. Утасны тохиргооноос зөвшөөрч болно.",
+  "assistantLocationTitle": "Миний байршлыг ашиглах",
+  "assistantLocationNote": "Vaultara зөвхөн аль улсад байгааг шалгана. Таны яг байршлыг илгээхгүй, хадгалахгүй.",
+  "assistantLocationShared": "Би байршлаа асаалаа",
+  "assistantLocationOff": "Байршил унтраалттай. Аюулгүй байдал ба нууцлалаас асааж болно."
 }

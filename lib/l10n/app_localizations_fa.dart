@@ -6578,4 +6578,37 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ورودی صوتی متوقف شد. دوباره امتحان کنید.';
+
+  @override
+  String get travelItemIdCard => 'کارت شناسایی، اجازهٔ اقامت یا گواهینامهٔ رانندگی همراهتان';
+
+  @override
+  String get travelPlacesLabel => 'شهر یا شهرک';
+
+  @override
+  String get travelPlacesOptional => 'شهر یا شهرک (اختیاری)';
+
+  @override
+  String get travelPlacesHint => 'مثلاً دوربان، یا توکیو، اوساکا';
+
+  @override
+  String get secLocationTitle => 'استفاده از موقعیتم برای سفرها';
+
+  @override
+  String get secLocationSubtitle => 'وقتی دربارهٔ سفر می‌پرسید نشان می‌دهد در خانه‌اید یا در سفر. فقط کشور استفاده می‌شود و ذخیره نمی‌شود.';
+
+  @override
+  String get secLocationDenied => 'موقعیت برای Vaultara خاموش است. می‌توانید در تنظیمات گوشی اجازه دهید.';
+
+  @override
+  String get assistantLocationTitle => 'استفاده از موقعیتم';
+
+  @override
+  String get assistantLocationNote => 'Vaultara فقط بررسی می‌کند در کدام کشورید. موقعیت دقیق شما ارسال یا ذخیره نمی‌شود.';
+
+  @override
+  String get assistantLocationShared => 'موقعیتم را روشن کردم';
+
+  @override
+  String get assistantLocationOff => 'موقعیت خاموش است. می‌توانید آن را در امنیت و حریم خصوصی روشن کنید.';
 }

@@ -2058,5 +2058,16 @@
   "assistantVoiceHint": "Prova: Lägg till mitt pass, det går ut i maj 2031",
   "assistantVoiceDone": "Klar",
   "assistantVoiceNoSpeech": "Inget hördes. Tryck på mikrofonen och försök igen.",
-  "assistantVoiceFailed": "Röstinmatningen stoppades. Försök igen."
+  "assistantVoiceFailed": "Röstinmatningen stoppades. Försök igen.",
+  "travelItemIdCard": "ID-kort, uppehållstillstånd eller körkort med dig",
+  "travelPlacesLabel": "Stad eller ort",
+  "travelPlacesOptional": "Stad eller ort (valfritt)",
+  "travelPlacesHint": "Till exempel Durban, eller Tokyo, Osaka",
+  "secLocationTitle": "Använd min plats för resor",
+  "secLocationSubtitle": "Visar om du är hemma eller på resa när du frågar om resor. Bara landet används och det sparas inte.",
+  "secLocationDenied": "Plats är avstängd för Vaultara. Du kan tillåta det i telefonens inställningar.",
+  "assistantLocationTitle": "Använd min plats",
+  "assistantLocationNote": "Vaultara kontrollerar bara vilket land du är i. Din exakta plats skickas eller sparas inte.",
+  "assistantLocationShared": "Jag har slagit på min plats",
+  "assistantLocationOff": "Plats är avstängd. Du kan slå på den under Säkerhet och integritet."
 }

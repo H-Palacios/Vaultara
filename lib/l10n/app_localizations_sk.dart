@@ -6704,4 +6704,37 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Hlasový vstup sa zastavil. Skúste to znova.';
+
+  @override
+  String get travelItemIdCard => 'Občiansky preukaz, povolenie na pobyt alebo vodičský preukaz pri sebe';
+
+  @override
+  String get travelPlacesLabel => 'Mesto alebo obec';
+
+  @override
+  String get travelPlacesOptional => 'Mesto alebo obec (nepovinné)';
+
+  @override
+  String get travelPlacesHint => 'Napríklad Durban, alebo Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Používať moju polohu na cesty';
+
+  @override
+  String get secLocationSubtitle => 'Ukazuje, či ste doma, alebo na cestách, keď sa pýtate na cesty. Používa sa len krajina a neukladá sa.';
+
+  @override
+  String get secLocationDenied => 'Poloha je pre Vaultaru vypnutá. Môžete ju povoliť v nastaveniach telefónu.';
+
+  @override
+  String get assistantLocationTitle => 'Použiť moju polohu';
+
+  @override
+  String get assistantLocationNote => 'Vaultara zisťuje len, v akej krajine ste. Vaša presná poloha sa neposiela ani neukladá.';
+
+  @override
+  String get assistantLocationShared => 'Zapol som polohu';
+
+  @override
+  String get assistantLocationOff => 'Poloha je vypnutá. Môžete ju zapnúť v Zabezpečení a súkromí.';
 }

@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "ລອງ: ເພີ່ມໜັງສືຜ່ານແດນຂອງຂ້ອຍ, ໝົດອາຍຸເດືອນພຶດສະພາ 2031",
   "assistantVoiceDone": "ແລ້ວໆ",
   "assistantVoiceNoSpeech": "ບໍ່ໄດ້ຍິນຫຍັງ. ແຕະໄມໂຄຣໂຟນ ແລ້ວລອງໃໝ່.",
-  "assistantVoiceFailed": "ການປ້ອນດ້ວຍສຽງຢຸດແລ້ວ. ລອງໃໝ່."
+  "assistantVoiceFailed": "ການປ້ອນດ້ວຍສຽງຢຸດແລ້ວ. ລອງໃໝ່.",
+  "travelItemIdCard": "ບັດປະຈຳຕົວ, ໃບອະນຸຍາດພັກເຊົາ ຫຼື ໃບຂັບຂີ່ຕິດຕົວ",
+  "travelPlacesLabel": "ເມືອງ",
+  "travelPlacesOptional": "ເມືອງ (ບໍ່ບັງຄັບ)",
+  "travelPlacesHint": "ຕົວຢ່າງ Durban, ຫຼື ໂຕກຽວ, ໂອຊາກາ",
+  "secLocationTitle": "ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍສຳລັບການເດີນທາງ",
+  "secLocationSubtitle": "ສະແດງວ່າທ່ານຢູ່ເຮືອນ ຫຼື ກຳລັງເດີນທາງ ເມື່ອຖາມກ່ຽວກັບການເດີນທາງ. ໃຊ້ພຽງປະເທດ ແລະ ບໍ່ບັນທຶກ.",
+  "secLocationDenied": "ສະຖານທີ່ປິດຢູ່ສຳລັບ Vaultara. ທ່ານສາມາດອະນຸຍາດໃນການຕັ້ງຄ່າໂທລະສັບ.",
+  "assistantLocationTitle": "ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍ",
+  "assistantLocationNote": "Vaultara ກວດເບິ່ງພຽງວ່າທ່ານຢູ່ປະເທດໃດ. ສະຖານທີ່ແນ່ນອນຂອງທ່ານບໍ່ຖືກສົ່ງ ຫຼື ບັນທຶກ.",
+  "assistantLocationShared": "ຂ້ອຍເປີດສະຖານທີ່ແລ້ວ",
+  "assistantLocationOff": "ສະຖານທີ່ປິດຢູ່. ທ່ານສາມາດເປີດໄດ້ໃນຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວ."
 }

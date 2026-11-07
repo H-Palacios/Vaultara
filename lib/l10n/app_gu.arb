@@ -1815,5 +1815,16 @@
   "assistantVoiceHint": "અજમાવો: મારો પાસપોર્ટ ઉમેરો, તે મે 2031માં પૂરો થાય છે",
   "assistantVoiceDone": "થઈ ગયું",
   "assistantVoiceNoSpeech": "કંઈ સંભળાયું નહીં. માઇક્રોફોન ટૅપ કરી ફરી પ્રયાસ કરો.",
-  "assistantVoiceFailed": "વૉઇસ ઇનપુટ બંધ થયું. ફરી પ્રયાસ કરો."
+  "assistantVoiceFailed": "વૉઇસ ઇનપુટ બંધ થયું. ફરી પ્રયાસ કરો.",
+  "travelItemIdCard": "ઓળખપત્ર, રહેઠાણ પરમિટ કે ડ્રાઇવિંગ લાઇસન્સ સાથે",
+  "travelPlacesLabel": "શહેર કે નગર",
+  "travelPlacesOptional": "શહેર કે નગર (વૈકલ્પિક)",
+  "travelPlacesHint": "ઉદાહરણ તરીકે ડર્બન, કે ટોક્યો, ઓસાકા",
+  "secLocationTitle": "પ્રવાસ માટે મારું સ્થાન વાપરો",
+  "secLocationSubtitle": "પ્રવાસ વિશે પૂછો ત્યારે તમે ઘરે છો કે પ્રવાસમાં તે બતાવે છે. ફક્ત દેશ વપરાય છે અને સાચવાતો નથી.",
+  "secLocationDenied": "Vaultara માટે સ્થાન બંધ છે. તમે ફોન સેટિંગ્સમાં મંજૂરી આપી શકો.",
+  "assistantLocationTitle": "મારું સ્થાન વાપરો",
+  "assistantLocationNote": "Vaultara ફક્ત તમે કયા દેશમાં છો તે તપાસે છે. તમારું ચોક્કસ સ્થાન મોકલાતું કે સાચવાતું નથી.",
+  "assistantLocationShared": "મેં મારું સ્થાન ચાલુ કર્યું",
+  "assistantLocationOff": "સ્થાન બંધ છે. તમે સુરક્ષા અને ગોપનીયતામાં ચાલુ કરી શકો."
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Äänisyöte pysähtyi. Yritä uudelleen.';
+
+  @override
+  String get travelItemIdCard => 'Henkilökortti, oleskelulupa tai ajokortti mukana';
+
+  @override
+  String get travelPlacesLabel => 'Kaupunki tai paikkakunta';
+
+  @override
+  String get travelPlacesOptional => 'Kaupunki tai paikkakunta (valinnainen)';
+
+  @override
+  String get travelPlacesHint => 'Esimerkiksi Durban, tai Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Käytä sijaintiani matkoihin';
+
+  @override
+  String get secLocationSubtitle => 'Näyttää matkoista kysyessäsi, oletko kotona vai matkalla. Vain maata käytetään, eikä sitä tallenneta.';
+
+  @override
+  String get secLocationDenied => 'Sijainti on pois päältä Vaultaralta. Voit sallia sen puhelimen asetuksista.';
+
+  @override
+  String get assistantLocationTitle => 'Käytä sijaintiani';
+
+  @override
+  String get assistantLocationNote => 'Vaultara tarkistaa vain, missä maassa olet. Tarkkaa sijaintiasi ei lähetetä eikä tallenneta.';
+
+  @override
+  String get assistantLocationShared => 'Laitoin sijainnin päälle';
+
+  @override
+  String get assistantLocationOff => 'Sijainti on pois päältä. Voit laittaa sen päälle kohdassa Turvallisuus ja yksityisyys.';
 }

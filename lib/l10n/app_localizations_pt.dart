@@ -6579,4 +6579,37 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'A entrada de voz parou. Tente novamente.';
+
+  @override
+  String get travelItemIdCard => 'Cartão de cidadão, autorização de residência ou carta de condução consigo';
+
+  @override
+  String get travelPlacesLabel => 'Cidade ou localidade';
+
+  @override
+  String get travelPlacesOptional => 'Cidade ou localidade (opcional)';
+
+  @override
+  String get travelPlacesHint => 'Por exemplo Durban, ou Tóquio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Usar a minha localização para viagens';
+
+  @override
+  String get secLocationSubtitle => 'Mostra se está em casa ou em viagem quando pergunta sobre viagens. Só o país é usado e não é guardado.';
+
+  @override
+  String get secLocationDenied => 'A localização está desligada para o Vaultara. Pode permiti-la nas definições do telemóvel.';
+
+  @override
+  String get assistantLocationTitle => 'Usar a minha localização';
+
+  @override
+  String get assistantLocationNote => 'O Vaultara só verifica em que país está. A sua localização exata não é enviada nem guardada.';
+
+  @override
+  String get assistantLocationShared => 'Liguei a minha localização';
+
+  @override
+  String get assistantLocationOff => 'A localização está desligada. Pode ligá-la em Segurança e privacidade.';
 }

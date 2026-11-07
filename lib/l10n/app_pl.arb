@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Spróbuj: Dodaj mój paszport, wygasa w maju 2031",
   "assistantVoiceDone": "Gotowe",
   "assistantVoiceNoSpeech": "Nic nie było słychać. Dotknij mikrofonu i spróbuj ponownie.",
-  "assistantVoiceFailed": "Wprowadzanie głosowe zatrzymało się. Spróbuj ponownie."
+  "assistantVoiceFailed": "Wprowadzanie głosowe zatrzymało się. Spróbuj ponownie.",
+  "travelItemIdCard": "Dowód osobisty, karta pobytu lub prawo jazdy przy sobie",
+  "travelPlacesLabel": "Miasto lub miejscowość",
+  "travelPlacesOptional": "Miasto lub miejscowość (opcjonalnie)",
+  "travelPlacesHint": "Na przykład Durban, albo Tokio, Osaka",
+  "secLocationTitle": "Używaj mojej lokalizacji do podróży",
+  "secLocationSubtitle": "Pokazuje, czy jesteś w domu, czy w podróży, gdy pytasz o podróże. Używany jest tylko kraj i nie jest zapisywany.",
+  "secLocationDenied": "Lokalizacja jest wyłączona dla Vaultara. Możesz ją zezwolić w ustawieniach telefonu.",
+  "assistantLocationTitle": "Użyj mojej lokalizacji",
+  "assistantLocationNote": "Vaultara sprawdza tylko, w jakim kraju jesteś. Twoja dokładna lokalizacja nie jest wysyłana ani zapisywana.",
+  "assistantLocationShared": "Włączyłem lokalizację",
+  "assistantLocationOff": "Lokalizacja jest wyłączona. Możesz ją włączyć w Bezpieczeństwo i prywatność."
 }

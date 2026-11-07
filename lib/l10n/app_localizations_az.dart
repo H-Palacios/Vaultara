@@ -6578,4 +6578,37 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Səsli daxiletmə dayandı. Yenidən cəhd edin.';
+
+  @override
+  String get travelItemIdCard => 'Şəxsiyyət vəsiqəsi, yaşayış icazəsi və ya sürücülük vəsiqəsi yanınızda';
+
+  @override
+  String get travelPlacesLabel => 'Şəhər və ya qəsəbə';
+
+  @override
+  String get travelPlacesOptional => 'Şəhər və ya qəsəbə (istəyə bağlı)';
+
+  @override
+  String get travelPlacesHint => 'Məsələn Durban, və ya Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Səfərlər üçün məkanımdan istifadə et';
+
+  @override
+  String get secLocationSubtitle => 'Səfərlər barədə soruşanda evdə və ya səfərdə olduğunuzu göstərir. Yalnız ölkə istifadə olunur və saxlanmır.';
+
+  @override
+  String get secLocationDenied => 'Vaultara üçün məkan söndürülüb. Telefon ayarlarında icazə verə bilərsiniz.';
+
+  @override
+  String get assistantLocationTitle => 'Məkanımdan istifadə et';
+
+  @override
+  String get assistantLocationNote => 'Vaultara yalnız hansı ölkədə olduğunuzu yoxlayır. Dəqiq məkanınız göndərilmir və saxlanmır.';
+
+  @override
+  String get assistantLocationShared => 'Məkanımı yandırdım';
+
+  @override
+  String get assistantLocationOff => 'Məkan söndürülüb. Təhlükəsizlik və məxfilik bölməsində yandıra bilərsiniz.';
 }

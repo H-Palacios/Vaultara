@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Gbìyànjú: Ṣàfikún ìwé ìrìnnà mi, ó máa parí ní May 2031",
   "assistantVoiceDone": "Ó ti parí",
   "assistantVoiceNoSpeech": "A kò gbọ́ nǹkan kan. Tẹ makirofóònù kí o sì tún gbìyànjú.",
-  "assistantVoiceFailed": "Ìtẹ̀wọlé ohùn ti dúró. Tún gbìyànjú."
+  "assistantVoiceFailed": "Ìtẹ̀wọlé ohùn ti dúró. Tún gbìyànjú.",
+  "travelItemIdCard": "Káàdì ìdánimọ̀, ìwé àṣẹ ibùgbé tàbí ìwé àṣẹ awakọ̀ pẹ̀lú rẹ",
+  "travelPlacesLabel": "Ìlú",
+  "travelPlacesOptional": "Ìlú (àṣàyàn)",
+  "travelPlacesHint": "Fún àpẹẹrẹ Durban, tàbí Tokyo, Osaka",
+  "secLocationTitle": "Lo ipò mi fún ìrìn-àjò",
+  "secLocationSubtitle": "Ó ń fi hàn bóyá o wà nílé tàbí lórí ìrìn-àjò nígbà tí o bá béèrè nípa ìrìn-àjò. Orílẹ̀-èdè nìkan ni a ń lò, a kò sì fi pamọ́.",
+  "secLocationDenied": "Ipò ti pa fún Vaultara. O lè gbà á láàyè nínú ètò fóònù.",
+  "assistantLocationTitle": "Lo ipò mi",
+  "assistantLocationNote": "Vaultara kàn ń wo orílẹ̀-èdè tí o wà. A kò fi ipò rẹ gangan ránṣẹ́, a kò sì fi pamọ́.",
+  "assistantLocationShared": "Mo ti tan ipò mi",
+  "assistantLocationOff": "Ipò ti pa. O lè tàn án nínú Ààbò àti àṣírí."
 }

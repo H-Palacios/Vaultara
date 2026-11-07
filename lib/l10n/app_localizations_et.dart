@@ -6578,4 +6578,37 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Häälsisestus peatus. Proovi uuesti.';
+
+  @override
+  String get travelItemIdCard => 'ID-kaart, elamisluba või juhiluba kaasas';
+
+  @override
+  String get travelPlacesLabel => 'Linn või asula';
+
+  @override
+  String get travelPlacesOptional => 'Linn või asula (valikuline)';
+
+  @override
+  String get travelPlacesHint => 'Näiteks Durban, või Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Kasuta reiside jaoks minu asukohta';
+
+  @override
+  String get secLocationSubtitle => 'Näitab reisidest küsides, kas oled kodus või reisil. Kasutatakse ainult riiki ja seda ei salvestata.';
+
+  @override
+  String get secLocationDenied => 'Asukoht on Vaultara jaoks väljas. Saad selle telefoni seadetes lubada.';
+
+  @override
+  String get assistantLocationTitle => 'Kasuta minu asukohta';
+
+  @override
+  String get assistantLocationNote => 'Vaultara kontrollib ainult, mis riigis sa oled. Sinu täpset asukohta ei saadeta ega salvestata.';
+
+  @override
+  String get assistantLocationShared => 'Lülitasin asukoha sisse';
+
+  @override
+  String get assistantLocationOff => 'Asukoht on väljas. Saad selle sisse lülitada jaotises Turvalisus ja privaatsus.';
 }

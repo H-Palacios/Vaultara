@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "Essayez : Ajoute mon passeport, il expire en mai 2031",
   "assistantVoiceDone": "Terminé",
   "assistantVoiceNoSpeech": "Rien n'a été entendu. Touchez le micro et réessayez.",
-  "assistantVoiceFailed": "La saisie vocale s'est arrêtée. Réessayez."
+  "assistantVoiceFailed": "La saisie vocale s'est arrêtée. Réessayez.",
+  "travelItemIdCard": "Carte d'identité, titre de séjour ou permis de conduire sur vous",
+  "travelPlacesLabel": "Ville ou localité",
+  "travelPlacesOptional": "Ville ou localité (facultatif)",
+  "travelPlacesHint": "Par exemple Durban, ou Tokyo, Osaka",
+  "secLocationTitle": "Utiliser ma position pour les voyages",
+  "secLocationSubtitle": "Indique si vous êtes chez vous ou en voyage quand vous posez une question sur un voyage. Seul le pays est utilisé et il n'est pas enregistré.",
+  "secLocationDenied": "La position est désactivée pour Vaultara. Vous pouvez l'autoriser dans les réglages du téléphone.",
+  "assistantLocationTitle": "Utiliser ma position",
+  "assistantLocationNote": "Vaultara vérifie seulement dans quel pays vous êtes. Votre position exacte n'est ni envoyée ni enregistrée.",
+  "assistantLocationShared": "J'ai activé ma position",
+  "assistantLocationOff": "La position est désactivée. Vous pouvez l'activer dans Sécurité et confidentialité."
 }

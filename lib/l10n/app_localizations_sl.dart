@@ -6712,4 +6712,37 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Glasovni vnos se je ustavil. Poskusite znova.';
+
+  @override
+  String get travelItemIdCard => 'Osebna izkaznica, dovoljenje za prebivanje ali vozniško dovoljenje s seboj';
+
+  @override
+  String get travelPlacesLabel => 'Mesto ali kraj';
+
+  @override
+  String get travelPlacesOptional => 'Mesto ali kraj (neobvezno)';
+
+  @override
+  String get travelPlacesHint => 'Na primer Durban, ali Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Uporabi mojo lokacijo za potovanja';
+
+  @override
+  String get secLocationSubtitle => 'Pokaže, ali ste doma ali na poti, ko sprašujete o potovanjih. Uporablja se le država in se ne shrani.';
+
+  @override
+  String get secLocationDenied => 'Lokacija je za Vaultaro izklopljena. Dovolite jo lahko v nastavitvah telefona.';
+
+  @override
+  String get assistantLocationTitle => 'Uporabi mojo lokacijo';
+
+  @override
+  String get assistantLocationNote => 'Vaultara preveri le, v kateri državi ste. Vaša natančna lokacija se ne pošlje in ne shrani.';
+
+  @override
+  String get assistantLocationShared => 'Vklopil sem lokacijo';
+
+  @override
+  String get assistantLocationOff => 'Lokacija je izklopljena. Vklopite jo lahko v Varnost in zasebnost.';
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Гласовниот внес запре. Обидете се повторно.';
+
+  @override
+  String get travelItemIdCard => 'Лична карта, дозвола за престој или возачка дозвола со вас';
+
+  @override
+  String get travelPlacesLabel => 'Град или место';
+
+  @override
+  String get travelPlacesOptional => 'Град или место (по избор)';
+
+  @override
+  String get travelPlacesHint => 'На пример Дурбан, или Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Користи ја мојата локација за патувања';
+
+  @override
+  String get secLocationSubtitle => 'Покажува дали сте дома или патувате кога прашувате за патувања. Се користи само државата и не се зачувува.';
+
+  @override
+  String get secLocationDenied => 'Локацијата е исклучена за Vaultara. Можете да ја дозволите во поставките на телефонот.';
+
+  @override
+  String get assistantLocationTitle => 'Користи ја мојата локација';
+
+  @override
+  String get assistantLocationNote => 'Vaultara проверува само во која држава сте. Точната локација не се испраќа и не се зачувува.';
+
+  @override
+  String get assistantLocationShared => 'Ја вклучив локацијата';
+
+  @override
+  String get assistantLocationOff => 'Локацијата е исклучена. Можете да ја вклучите во Безбедност и приватност.';
 }

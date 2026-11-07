@@ -6578,4 +6578,37 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Steminvoer het gestop. Probeer weer.';
+
+  @override
+  String get travelItemIdCard => 'ID-kaart, verblyfpermit of rybewys by jou';
+
+  @override
+  String get travelPlacesLabel => 'Stad of dorp';
+
+  @override
+  String get travelPlacesOptional => 'Stad of dorp (opsioneel)';
+
+  @override
+  String get travelPlacesHint => 'Byvoorbeeld Durban, of Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Gebruik my ligging vir reise';
+
+  @override
+  String get secLocationSubtitle => 'Wys of jy tuis is of reis wanneer jy oor reise vra. Net die land word gebruik en dit word nie gestoor nie.';
+
+  @override
+  String get secLocationDenied => 'Ligging is af vir Vaultara. Jy kan dit in jou foon se instellings toelaat.';
+
+  @override
+  String get assistantLocationTitle => 'Gebruik my ligging';
+
+  @override
+  String get assistantLocationNote => 'Vaultara kyk net in watter land jy is. Jou presiese ligging word nie gestuur of gestoor nie.';
+
+  @override
+  String get assistantLocationShared => 'Ek het my ligging aangeskakel';
+
+  @override
+  String get assistantLocationOff => 'Ligging is af. Jy kan dit in Sekuriteit en privaatheid aanskakel.';
 }

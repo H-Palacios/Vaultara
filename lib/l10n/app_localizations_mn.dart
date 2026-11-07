@@ -6568,4 +6568,37 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Дуут оролт зогслоо. Дахин оролдоно уу.';
+
+  @override
+  String get travelItemIdCard => 'Иргэний үнэмлэх, оршин суух зөвшөөрөл эсвэл жолооны үнэмлэх биедээ';
+
+  @override
+  String get travelPlacesLabel => 'Хот эсвэл суурин';
+
+  @override
+  String get travelPlacesOptional => 'Хот эсвэл суурин (заавал биш)';
+
+  @override
+  String get travelPlacesHint => 'Жишээ нь Дурбан, эсвэл Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Аялалд миний байршлыг ашиглах';
+
+  @override
+  String get secLocationSubtitle => 'Аяллын талаар асуухад гэртээ эсвэл аялж байгааг харуулна. Зөвхөн улсыг ашиглах ба хадгалахгүй.';
+
+  @override
+  String get secLocationDenied => 'Vaultara-д байршил унтраалттай. Утасны тохиргооноос зөвшөөрч болно.';
+
+  @override
+  String get assistantLocationTitle => 'Миний байршлыг ашиглах';
+
+  @override
+  String get assistantLocationNote => 'Vaultara зөвхөн аль улсад байгааг шалгана. Таны яг байршлыг илгээхгүй, хадгалахгүй.';
+
+  @override
+  String get assistantLocationShared => 'Би байршлаа асаалаа';
+
+  @override
+  String get assistantLocationOff => 'Байршил унтраалттай. Аюулгүй байдал ба нууцлалаас асааж болно.';
 }

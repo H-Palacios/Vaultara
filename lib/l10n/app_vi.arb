@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Thử nói: Thêm hộ chiếu của tôi, hết hạn tháng 5 năm 2031",
   "assistantVoiceDone": "Xong",
   "assistantVoiceNoSpeech": "Không nghe thấy gì. Chạm vào micrô và thử lại.",
-  "assistantVoiceFailed": "Nhập bằng giọng nói đã dừng. Hãy thử lại."
+  "assistantVoiceFailed": "Nhập bằng giọng nói đã dừng. Hãy thử lại.",
+  "travelItemIdCard": "CCCD, thẻ cư trú hoặc bằng lái xe mang theo",
+  "travelPlacesLabel": "Thành phố hoặc thị trấn",
+  "travelPlacesOptional": "Thành phố hoặc thị trấn (không bắt buộc)",
+  "travelPlacesHint": "Ví dụ Durban, hoặc Tokyo, Osaka",
+  "secLocationTitle": "Dùng vị trí của tôi cho chuyến đi",
+  "secLocationSubtitle": "Cho biết bạn đang ở nhà hay đang đi du lịch khi hỏi về chuyến đi. Chỉ dùng quốc gia và không lưu lại.",
+  "secLocationDenied": "Vị trí đang tắt cho Vaultara. Bạn có thể cho phép trong cài đặt điện thoại.",
+  "assistantLocationTitle": "Dùng vị trí của tôi",
+  "assistantLocationNote": "Vaultara chỉ kiểm tra bạn đang ở quốc gia nào. Vị trí chính xác của bạn không được gửi hay lưu.",
+  "assistantLocationShared": "Tôi đã bật vị trí",
+  "assistantLocationOff": "Vị trí đang tắt. Bạn có thể bật trong Bảo mật và quyền riêng tư."
 }

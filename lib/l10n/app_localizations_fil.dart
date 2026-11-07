@@ -6578,4 +6578,37 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Huminto ang voice input. Subukan ulit.';
+
+  @override
+  String get travelItemIdCard => 'ID card, residence permit o lisensya sa pagmamaneho na dala mo';
+
+  @override
+  String get travelPlacesLabel => 'Lungsod o bayan';
+
+  @override
+  String get travelPlacesOptional => 'Lungsod o bayan (opsyonal)';
+
+  @override
+  String get travelPlacesHint => 'Halimbawa Durban, o Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Gamitin ang lokasyon ko para sa mga biyahe';
+
+  @override
+  String get secLocationSubtitle => 'Ipinapakita kung nasa bahay ka o nagbibiyahe kapag nagtanong ka tungkol sa biyahe. Bansa lang ang ginagamit at hindi ito sine-save.';
+
+  @override
+  String get secLocationDenied => 'Naka-off ang lokasyon para sa Vaultara. Puwede mo itong payagan sa settings ng phone.';
+
+  @override
+  String get assistantLocationTitle => 'Gamitin ang lokasyon ko';
+
+  @override
+  String get assistantLocationNote => 'Tinitingnan lang ng Vaultara kung saang bansa ka. Hindi ipinapadala o sine-save ang eksaktong lokasyon mo.';
+
+  @override
+  String get assistantLocationShared => 'Binuksan ko ang lokasyon ko';
+
+  @override
+  String get assistantLocationOff => 'Naka-off ang lokasyon. Puwede mo itong i-on sa Seguridad at privacy.';
 }

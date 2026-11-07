@@ -6578,4 +6578,37 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Têketina dengî rawestiya. Dîsa biceribîne.';
+
+  @override
+  String get travelItemIdCard => 'Nasname, destûra niştecîhbûnê an ehliyeta ajotinê bi xwe re';
+
+  @override
+  String get travelPlacesLabel => 'Bajar an navçe';
+
+  @override
+  String get travelPlacesOptional => 'Bajar an navçe (vebijarkî)';
+
+  @override
+  String get travelPlacesHint => 'Mînak Durban, an Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Cihê min ji bo rêwîtiyan bikar bîne';
+
+  @override
+  String get secLocationSubtitle => 'Dema tu li ser rêwîtiyê dipirsî nîşan dide ka tu li malê yî an di rêwîtiyê de. Tenê welat tê bikaranîn û nayê tomarkirin.';
+
+  @override
+  String get secLocationDenied => 'Cih ji bo Vaultara girtî ye. Tu dikarî di mîhengên telefonê de destûrê bidî.';
+
+  @override
+  String get assistantLocationTitle => 'Cihê min bikar bîne';
+
+  @override
+  String get assistantLocationNote => 'Vaultara tenê kontrol dike ka tu li kîjan welatî yî. Cihê te yê rast nayê şandin û nayê tomarkirin.';
+
+  @override
+  String get assistantLocationShared => 'Min cihê xwe vekir';
+
+  @override
+  String get assistantLocationOff => 'Cih girtî ye. Tu dikarî di Ewlehî û nepenîtiyê de veki.';
 }

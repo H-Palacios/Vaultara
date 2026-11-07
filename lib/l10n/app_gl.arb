@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "Proba: Engade o meu pasaporte, caduca en maio de 2031",
   "assistantVoiceDone": "Feito",
   "assistantVoiceNoSpeech": "Non se oíu nada. Toca o micrófono e téntao de novo.",
-  "assistantVoiceFailed": "A entrada de voz detívose. Téntao de novo."
+  "assistantVoiceFailed": "A entrada de voz detívose. Téntao de novo.",
+  "travelItemIdCard": "DNI, permiso de residencia ou carné de conducir contigo",
+  "travelPlacesLabel": "Cidade ou vila",
+  "travelPlacesOptional": "Cidade ou vila (opcional)",
+  "travelPlacesHint": "Por exemplo Durban, ou Toquio, Osaka",
+  "secLocationTitle": "Usar a miña localización para viaxes",
+  "secLocationSubtitle": "Mostra se estás na casa ou de viaxe cando preguntas por viaxes. Só se usa o país e non se garda.",
+  "secLocationDenied": "A localización está desactivada para Vaultara. Podes permitila na configuración do teléfono.",
+  "assistantLocationTitle": "Usar a miña localización",
+  "assistantLocationNote": "Vaultara só comproba en que país estás. A túa localización exacta non se envía nin se garda.",
+  "assistantLocationShared": "Activei a miña localización",
+  "assistantLocationOff": "A localización está desactivada. Podes activala en Seguranza e privacidade."
 }

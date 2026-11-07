@@ -6577,4 +6577,37 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Gelinta codka way joogsatay. Mar kale isku day.';
+
+  @override
+  String get travelItemIdCard => 'Kaarka aqoonsiga, oggolaanshaha deganaanshaha ama liisanka darawalnimada oo kula jira';
+
+  @override
+  String get travelPlacesLabel => 'Magaalo';
+
+  @override
+  String get travelPlacesOptional => 'Magaalo (ikhtiyaari)';
+
+  @override
+  String get travelPlacesHint => 'Tusaale Durban, ama Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Isticmaal goobtayda safarrada';
+
+  @override
+  String get secLocationSubtitle => 'Wuxuu muujiyaa inaad guriga joogto ama safar ku jirto markaad safar wax ka weydiiso. Waddanka oo keliya ayaa la isticmaalaa lamana keydiyo.';
+
+  @override
+  String get secLocationDenied => 'Goobta waa u xiran tahay Vaultara. Waxaad ku oggolaan kartaa dejinta taleefanka.';
+
+  @override
+  String get assistantLocationTitle => 'Isticmaal goobtayda';
+
+  @override
+  String get assistantLocationNote => 'Vaultara waxay hubisaa oo keliya waddanka aad joogto. Goobtaada saxda ah lama diro lamana keydiyo.';
+
+  @override
+  String get assistantLocationShared => 'Waan shiday goobtayda';
+
+  @override
+  String get assistantLocationOff => 'Goobta waa xiran tahay. Waxaad ka shidi kartaa Amniga iyo asturnaanta.';
 }

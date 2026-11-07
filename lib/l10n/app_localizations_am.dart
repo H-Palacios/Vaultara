@@ -6578,4 +6578,37 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'የድምፅ ግቤት ቆሟል። እንደገና ይሞክሩ።';
+
+  @override
+  String get travelItemIdCard => 'መታወቂያ ካርድ፣ የመኖሪያ ፈቃድ ወይም መንጃ ፈቃድ ይዘው';
+
+  @override
+  String get travelPlacesLabel => 'ከተማ';
+
+  @override
+  String get travelPlacesOptional => 'ከተማ (አማራጭ)';
+
+  @override
+  String get travelPlacesHint => 'ለምሳሌ ደርባን፣ ወይም ቶኪዮ፣ ኦሳካ';
+
+  @override
+  String get secLocationTitle => 'ለጉዞዎች አካባቢዬን ተጠቀም';
+
+  @override
+  String get secLocationSubtitle => 'ስለ ጉዞዎች ሲጠይቁ ቤት ወይም በጉዞ ላይ መሆንዎን ያሳያል። አገሩ ብቻ ነው የሚጠቀመው፣ አይቀመጥም።';
+
+  @override
+  String get secLocationDenied => 'ለVaultara አካባቢ ጠፍቷል። በስልክዎ ቅንብሮች መፍቀድ ይችላሉ።';
+
+  @override
+  String get assistantLocationTitle => 'አካባቢዬን ተጠቀም';
+
+  @override
+  String get assistantLocationNote => 'Vaultara የትኛው አገር እንዳሉ ብቻ ያያል። ትክክለኛ አካባቢዎ አይላክም አይቀመጥም።';
+
+  @override
+  String get assistantLocationShared => 'አካባቢዬን አብርቻለሁ';
+
+  @override
+  String get assistantLocationOff => 'አካባቢ ጠፍቷል። በደህንነት እና ግላዊነት ማብራት ይችላሉ።';
 }

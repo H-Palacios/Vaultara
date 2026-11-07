@@ -2079,5 +2079,16 @@
   "assistantVoiceHint": "Probatu: Gehitu nire pasaportea, 2031ko maiatzean iraungitzen da",
   "assistantVoiceDone": "Eginda",
   "assistantVoiceNoSpeech": "Ez da ezer entzun. Sakatu mikrofonoa eta saiatu berriro.",
-  "assistantVoiceFailed": "Ahots bidezko sarrera gelditu da. Saiatu berriro."
+  "assistantVoiceFailed": "Ahots bidezko sarrera gelditu da. Saiatu berriro.",
+  "travelItemIdCard": "NANa, egoitza-baimena edo gidabaimena zurekin",
+  "travelPlacesLabel": "Hiria edo herria",
+  "travelPlacesOptional": "Hiria edo herria (aukerakoa)",
+  "travelPlacesHint": "Adibidez Durban, edo Tokio, Osaka",
+  "secLocationTitle": "Erabili nire kokapena bidaietarako",
+  "secLocationSubtitle": "Bidaiei buruz galdetzean etxean edo bidaian zauden erakusten du. Herrialdea bakarrik erabiltzen da eta ez da gordetzen.",
+  "secLocationDenied": "Kokapena desaktibatuta dago Vaultararentzat. Telefonoaren ezarpenetan baimen dezakezu.",
+  "assistantLocationTitle": "Erabili nire kokapena",
+  "assistantLocationNote": "Vaultarak zein herrialdetan zauden bakarrik egiaztatzen du. Zure kokapen zehatza ez da bidaltzen edo gordetzen.",
+  "assistantLocationShared": "Kokapena aktibatu dut",
+  "assistantLocationOff": "Kokapena desaktibatuta dago. Segurtasuna eta pribatutasuna atalean aktiba dezakezu."
 }

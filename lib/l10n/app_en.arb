@@ -8038,5 +8038,22 @@
   },
   "assistantVoiceDone": "Done",
   "assistantVoiceNoSpeech": "Nothing was heard. Tap the microphone and try again.",
-  "assistantVoiceFailed": "Voice input stopped. Try again."
+  "assistantVoiceFailed": "Voice input stopped. Try again.",
+  "travelItemIdCard": "ID card, residence permit or driving licence with you",
+  "@travelItemIdCard": {
+    "description": "Checklist item for trips inside the traveller's home country."
+  },
+  "travelPlacesLabel": "City or town",
+  "travelPlacesOptional": "City or town (optional)",
+  "travelPlacesHint": "For example Durban, or Tokyo, Osaka",
+  "secLocationTitle": "Use my location for trips",
+  "secLocationSubtitle": "Shows if you are at home or travelling when you ask about trips. Only the country is used and it is not saved.",
+  "@secLocationSubtitle": {
+    "description": "Security and privacy switch that lets Vaultara see the current country for trip answers."
+  },
+  "secLocationDenied": "Location is off for Vaultara. You can allow it in your phone settings.",
+  "assistantLocationTitle": "Use my location",
+  "assistantLocationNote": "Vaultara only checks which country you are in. Your exact location is not sent or saved.",
+  "assistantLocationShared": "I turned on my location",
+  "assistantLocationOff": "Location is off. You can turn it on in Security and privacy."
 }

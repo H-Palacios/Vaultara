@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "Probajte: Dodaj moj pasoš, ističe u maju 2031.",
   "assistantVoiceDone": "Gotovo",
   "assistantVoiceNoSpeech": "Ništa se nije čulo. Dodirnite mikrofon i pokušajte ponovo.",
-  "assistantVoiceFailed": "Glasovni unos je zaustavljen. Pokušajte ponovo."
+  "assistantVoiceFailed": "Glasovni unos je zaustavljen. Pokušajte ponovo.",
+  "travelItemIdCard": "Lična karta, boravišna dozvola ili vozačka dozvola uz vas",
+  "travelPlacesLabel": "Grad ili mjesto",
+  "travelPlacesOptional": "Grad ili mjesto (neobavezno)",
+  "travelPlacesHint": "Na primjer Durban, ili Tokio, Osaka",
+  "secLocationTitle": "Koristi moju lokaciju za putovanja",
+  "secLocationSubtitle": "Pokazuje jeste li kod kuće ili na putu kada pitate o putovanjima. Koristi se samo država i ne čuva se.",
+  "secLocationDenied": "Lokacija je isključena za Vaultaru. Možete je dozvoliti u postavkama telefona.",
+  "assistantLocationTitle": "Koristi moju lokaciju",
+  "assistantLocationNote": "Vaultara provjerava samo u kojoj ste državi. Vaša tačna lokacija se ne šalje i ne čuva.",
+  "assistantLocationShared": "Uključio sam lokaciju",
+  "assistantLocationOff": "Lokacija je isključena. Možete je uključiti u Sigurnost i privatnost."
 }

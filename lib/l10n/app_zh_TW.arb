@@ -2058,5 +2058,16 @@
   "assistantVoiceHint": "試試說：新增我的護照，2031年5月到期",
   "assistantVoiceDone": "完成",
   "assistantVoiceNoSpeech": "沒有聽到聲音。輕觸麥克風後再試一次。",
-  "assistantVoiceFailed": "語音輸入已停止。請再試一次。"
+  "assistantVoiceFailed": "語音輸入已停止。請再試一次。",
+  "travelItemIdCard": "隨身攜帶身分證、居留證或駕照",
+  "travelPlacesLabel": "城市或城鎮",
+  "travelPlacesOptional": "城市或城鎮（選填）",
+  "travelPlacesHint": "例如 德班，或 東京、大阪",
+  "secLocationTitle": "旅行時使用我的位置",
+  "secLocationSubtitle": "詢問行程時判斷你是在家還是在旅行。只使用國家，且不會儲存。",
+  "secLocationDenied": "Vaultara 的位置權限已關閉。你可以在手機設定中允許。",
+  "assistantLocationTitle": "使用我的位置",
+  "assistantLocationNote": "Vaultara 只查看你所在的國家。不會傳送或儲存你的精確位置。",
+  "assistantLocationShared": "我已開啟位置",
+  "assistantLocationOff": "位置已關閉。你可以在安全性與隱私中開啟。"
 }

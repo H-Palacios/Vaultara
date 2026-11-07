@@ -1815,5 +1815,16 @@
   "assistantVoiceHint": "Sınayın: Pasportumu əlavə et, 2031 mayında bitir",
   "assistantVoiceDone": "Hazır",
   "assistantVoiceNoSpeech": "Heç nə eşidilmədi. Mikrofona toxunub yenidən cəhd edin.",
-  "assistantVoiceFailed": "Səsli daxiletmə dayandı. Yenidən cəhd edin."
+  "assistantVoiceFailed": "Səsli daxiletmə dayandı. Yenidən cəhd edin.",
+  "travelItemIdCard": "Şəxsiyyət vəsiqəsi, yaşayış icazəsi və ya sürücülük vəsiqəsi yanınızda",
+  "travelPlacesLabel": "Şəhər və ya qəsəbə",
+  "travelPlacesOptional": "Şəhər və ya qəsəbə (istəyə bağlı)",
+  "travelPlacesHint": "Məsələn Durban, və ya Tokio, Osaka",
+  "secLocationTitle": "Səfərlər üçün məkanımdan istifadə et",
+  "secLocationSubtitle": "Səfərlər barədə soruşanda evdə və ya səfərdə olduğunuzu göstərir. Yalnız ölkə istifadə olunur və saxlanmır.",
+  "secLocationDenied": "Vaultara üçün məkan söndürülüb. Telefon ayarlarında icazə verə bilərsiniz.",
+  "assistantLocationTitle": "Məkanımdan istifadə et",
+  "assistantLocationNote": "Vaultara yalnız hansı ölkədə olduğunuzu yoxlayır. Dəqiq məkanınız göndərilmir və saxlanmır.",
+  "assistantLocationShared": "Məkanımı yandırdım",
+  "assistantLocationOff": "Məkan söndürülüb. Təhlükəsizlik və məxfilik bölməsində yandıra bilərsiniz."
 }

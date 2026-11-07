@@ -6578,4 +6578,37 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ভয়েস ইনপুট থেমে গেছে। আবার চেষ্টা করুন।';
+
+  @override
+  String get travelItemIdCard => 'পরিচয়পত্র, আবাসিক অনুমতি বা ড্রাইভিং লাইসেন্স সঙ্গে রাখুন';
+
+  @override
+  String get travelPlacesLabel => 'শহর';
+
+  @override
+  String get travelPlacesOptional => 'শহর (ঐচ্ছিক)';
+
+  @override
+  String get travelPlacesHint => 'যেমন ডারবান, বা টোকিও, ওসাকা';
+
+  @override
+  String get secLocationTitle => 'ভ্রমণের জন্য আমার অবস্থান ব্যবহার করুন';
+
+  @override
+  String get secLocationSubtitle => 'ভ্রমণ নিয়ে জিজ্ঞেস করলে আপনি বাড়িতে না ভ্রমণে তা দেখায়। শুধু দেশটি ব্যবহার হয়, সংরক্ষণ করা হয় না।';
+
+  @override
+  String get secLocationDenied => 'Vaultara-র জন্য অবস্থান বন্ধ। ফোনের সেটিংসে অনুমতি দিতে পারেন।';
+
+  @override
+  String get assistantLocationTitle => 'আমার অবস্থান ব্যবহার করুন';
+
+  @override
+  String get assistantLocationNote => 'Vaultara শুধু দেখে আপনি কোন দেশে আছেন। আপনার সঠিক অবস্থান পাঠানো বা সংরক্ষণ করা হয় না।';
+
+  @override
+  String get assistantLocationShared => 'আমি আমার অবস্থান চালু করেছি';
+
+  @override
+  String get assistantLocationOff => 'অবস্থান বন্ধ। নিরাপত্তা ও গোপনীয়তায় চালু করতে পারেন।';
 }

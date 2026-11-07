@@ -6578,4 +6578,37 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ahots bidezko sarrera gelditu da. Saiatu berriro.';
+
+  @override
+  String get travelItemIdCard => 'NANa, egoitza-baimena edo gidabaimena zurekin';
+
+  @override
+  String get travelPlacesLabel => 'Hiria edo herria';
+
+  @override
+  String get travelPlacesOptional => 'Hiria edo herria (aukerakoa)';
+
+  @override
+  String get travelPlacesHint => 'Adibidez Durban, edo Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Erabili nire kokapena bidaietarako';
+
+  @override
+  String get secLocationSubtitle => 'Bidaiei buruz galdetzean etxean edo bidaian zauden erakusten du. Herrialdea bakarrik erabiltzen da eta ez da gordetzen.';
+
+  @override
+  String get secLocationDenied => 'Kokapena desaktibatuta dago Vaultararentzat. Telefonoaren ezarpenetan baimen dezakezu.';
+
+  @override
+  String get assistantLocationTitle => 'Erabili nire kokapena';
+
+  @override
+  String get assistantLocationNote => 'Vaultarak zein herrialdetan zauden bakarrik egiaztatzen du. Zure kokapen zehatza ez da bidaltzen edo gordetzen.';
+
+  @override
+  String get assistantLocationShared => 'Kokapena aktibatu dut';
+
+  @override
+  String get assistantLocationOff => 'Kokapena desaktibatuta dago. Segurtasuna eta pribatutasuna atalean aktiba dezakezu.';
 }

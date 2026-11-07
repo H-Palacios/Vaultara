@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "Prøv: Tilføj mit pas, det udløber i maj 2031",
   "assistantVoiceDone": "Færdig",
   "assistantVoiceNoSpeech": "Der blev ikke hørt noget. Tryk på mikrofonen, og prøv igen.",
-  "assistantVoiceFailed": "Taleinput stoppede. Prøv igen."
+  "assistantVoiceFailed": "Taleinput stoppede. Prøv igen.",
+  "travelItemIdCard": "ID-kort, opholdstilladelse eller kørekort på dig",
+  "travelPlacesLabel": "By",
+  "travelPlacesOptional": "By (valgfrit)",
+  "travelPlacesHint": "For eksempel Durban, eller Tokyo, Osaka",
+  "secLocationTitle": "Brug min placering til rejser",
+  "secLocationSubtitle": "Viser, om du er hjemme eller på rejse, når du spørger om rejser. Kun landet bruges, og det gemmes ikke.",
+  "secLocationDenied": "Placering er slået fra for Vaultara. Du kan tillade det i telefonens indstillinger.",
+  "assistantLocationTitle": "Brug min placering",
+  "assistantLocationNote": "Vaultara tjekker kun, hvilket land du er i. Din præcise placering sendes eller gemmes ikke.",
+  "assistantLocationShared": "Jeg har slået min placering til",
+  "assistantLocationOff": "Placering er slået fra. Du kan slå den til under Sikkerhed og privatliv."
 }

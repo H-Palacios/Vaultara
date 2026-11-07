@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "Probier: Füge meinen Reisepass hinzu, er läuft im Mai 2031 ab",
   "assistantVoiceDone": "Fertig",
   "assistantVoiceNoSpeech": "Es wurde nichts gehört. Tippe auf das Mikrofon und versuche es noch einmal.",
-  "assistantVoiceFailed": "Spracheingabe wurde beendet. Versuche es noch einmal."
+  "assistantVoiceFailed": "Spracheingabe wurde beendet. Versuche es noch einmal.",
+  "travelItemIdCard": "Personalausweis, Aufenthaltstitel oder Führerschein dabei",
+  "travelPlacesLabel": "Stadt oder Ort",
+  "travelPlacesOptional": "Stadt oder Ort (optional)",
+  "travelPlacesHint": "Zum Beispiel Durban, oder Tokio, Osaka",
+  "secLocationTitle": "Meinen Standort für Reisen nutzen",
+  "secLocationSubtitle": "Zeigt bei Fragen zu Reisen, ob du zu Hause oder unterwegs bist. Nur das Land wird genutzt und nicht gespeichert.",
+  "secLocationDenied": "Der Standort ist für Vaultara aus. Du kannst ihn in den Handyeinstellungen erlauben.",
+  "assistantLocationTitle": "Meinen Standort nutzen",
+  "assistantLocationNote": "Vaultara prüft nur, in welchem Land du bist. Dein genauer Standort wird weder gesendet noch gespeichert.",
+  "assistantLocationShared": "Ich habe meinen Standort eingeschaltet",
+  "assistantLocationOff": "Der Standort ist aus. Du kannst ihn unter Sicherheit und Datenschutz einschalten."
 }

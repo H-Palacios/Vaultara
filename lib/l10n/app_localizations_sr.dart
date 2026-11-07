@@ -6647,6 +6647,39 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Гласовни унос је заустављен. Покушајте поново.';
+
+  @override
+  String get travelItemIdCard => 'Лична карта, боравишна дозвола или возачка дозвола код вас';
+
+  @override
+  String get travelPlacesLabel => 'Град или место';
+
+  @override
+  String get travelPlacesOptional => 'Град или место (необавезно)';
+
+  @override
+  String get travelPlacesHint => 'На пример Дурбан, или Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Користи моју локацију за путовања';
+
+  @override
+  String get secLocationSubtitle => 'Показује да ли сте код куће или на путу када питате о путовањима. Користи се само држава и не чува се.';
+
+  @override
+  String get secLocationDenied => 'Локација је искључена за Vaultara. Можете је дозволити у подешавањима телефона.';
+
+  @override
+  String get assistantLocationTitle => 'Користи моју локацију';
+
+  @override
+  String get assistantLocationNote => 'Vaultara проверава само у којој сте држави. Ваша тачна локација се не шаље и не чува.';
+
+  @override
+  String get assistantLocationShared => 'Укључио сам локацију';
+
+  @override
+  String get assistantLocationOff => 'Локација је искључена. Можете је укључити у Безбедност и приватност.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -13291,6 +13324,39 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantVoiceFailed => 'Гласовни унос је заустављен. Покушајте поново.';
+
+  @override
+  String get travelItemIdCard => 'Лична карта, боравишна дозвола или возачка дозвола код вас';
+
+  @override
+  String get travelPlacesLabel => 'Град или место';
+
+  @override
+  String get travelPlacesOptional => 'Град или место (необавезно)';
+
+  @override
+  String get travelPlacesHint => 'На пример Дурбан, или Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Користи моју локацију за путовања';
+
+  @override
+  String get secLocationSubtitle => 'Показује да ли сте код куће или на путу када питате о путовањима. Користи се само држава и не чува се.';
+
+  @override
+  String get secLocationDenied => 'Локација је искључена за Vaultara. Можете је дозволити у подешавањима телефона.';
+
+  @override
+  String get assistantLocationTitle => 'Користи моју локацију';
+
+  @override
+  String get assistantLocationNote => 'Vaultara проверава само у којој сте држави. Ваша тачна локација се не шаље и не чува.';
+
+  @override
+  String get assistantLocationShared => 'Укључио сам локацију';
+
+  @override
+  String get assistantLocationOff => 'Локација је искључена. Можете је укључити у Безбедност и приватност.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -19931,4 +19997,37 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantVoiceFailed => 'Glasovni unos je zaustavljen. Pokušajte ponovo.';
+
+  @override
+  String get travelItemIdCard => 'Lična karta, boravišna dozvola ili vozačka dozvola kod vas';
+
+  @override
+  String get travelPlacesLabel => 'Grad ili mesto';
+
+  @override
+  String get travelPlacesOptional => 'Grad ili mesto (neobavezno)';
+
+  @override
+  String get travelPlacesHint => 'Na primer Durban, ili Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Koristi moju lokaciju za putovanja';
+
+  @override
+  String get secLocationSubtitle => 'Pokazuje da li ste kod kuće ili na putu kada pitate o putovanjima. Koristi se samo država i ne čuva se.';
+
+  @override
+  String get secLocationDenied => 'Lokacija je isključena za Vaultara. Možete je dozvoliti u podešavanjima telefona.';
+
+  @override
+  String get assistantLocationTitle => 'Koristi moju lokaciju';
+
+  @override
+  String get assistantLocationNote => 'Vaultara proverava samo u kojoj ste državi. Vaša tačna lokacija se ne šalje i ne čuva.';
+
+  @override
+  String get assistantLocationShared => 'Uključio sam lokaciju';
+
+  @override
+  String get assistantLocationOff => 'Lokacija je isključena. Možete je uključiti u Bezbednost i privatnost.';
 }

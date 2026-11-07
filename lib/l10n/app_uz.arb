@@ -1815,5 +1815,16 @@
   "assistantVoiceHint": "Sinab ko'ring: Pasportimni qo'sh, muddati 2031-yil mayda tugaydi",
   "assistantVoiceDone": "Tayyor",
   "assistantVoiceNoSpeech": "Hech narsa eshitilmadi. Mikrofonga bosib, qayta urinib ko'ring.",
-  "assistantVoiceFailed": "Ovozli kiritish to'xtadi. Qayta urinib ko'ring."
+  "assistantVoiceFailed": "Ovozli kiritish to'xtadi. Qayta urinib ko'ring.",
+  "travelItemIdCard": "Shaxsiy guvohnoma, yashash ruxsatnomasi yoki haydovchilik guvohnomasi yoningizda",
+  "travelPlacesLabel": "Shahar yoki shaharcha",
+  "travelPlacesOptional": "Shahar yoki shaharcha (ixtiyoriy)",
+  "travelPlacesHint": "Masalan Durban, yoki Tokio, Osaka",
+  "secLocationTitle": "Sayohatlar uchun joylashuvimdan foydalanish",
+  "secLocationSubtitle": "Sayohat haqida so'raganingizda uydamisiz yoki sayohatdamisiz ko'rsatadi. Faqat davlat ishlatiladi va saqlanmaydi.",
+  "secLocationDenied": "Vaultara uchun joylashuv o'chiq. Telefon sozlamalarida ruxsat berishingiz mumkin.",
+  "assistantLocationTitle": "Joylashuvimdan foydalanish",
+  "assistantLocationNote": "Vaultara faqat qaysi davlatda ekaningizni tekshiradi. Aniq joylashuvingiz yuborilmaydi va saqlanmaydi.",
+  "assistantLocationShared": "Joylashuvimni yoqdim",
+  "assistantLocationOff": "Joylashuv o'chiq. Uni Xavfsizlik va maxfiylik bo'limida yoqishingiz mumkin."
 }

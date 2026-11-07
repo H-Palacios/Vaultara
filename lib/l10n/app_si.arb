@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "උත්සාහ කරන්න: මගේ ගමන් බලපත්‍රය එක් කරන්න, 2031 මැයි මාසයේ කල් ඉකුත් වේ",
   "assistantVoiceDone": "හරි",
   "assistantVoiceNoSpeech": "කිසිවක් ඇසුණේ නැත. මයික්‍රොෆෝනය තට්ටු කර නැවත උත්සාහ කරන්න.",
-  "assistantVoiceFailed": "හඬ ආදානය නතර විය. නැවත උත්සාහ කරන්න."
+  "assistantVoiceFailed": "හඬ ආදානය නතර විය. නැවත උත්සාහ කරන්න.",
+  "travelItemIdCard": "හැඳුනුම්පත, පදිංචි බලපත්‍රය හෝ රියදුරු බලපත්‍රය ළඟ",
+  "travelPlacesLabel": "නගරය",
+  "travelPlacesOptional": "නගරය (විකල්ප)",
+  "travelPlacesHint": "උදා. ඩර්බන්, හෝ ටෝකියෝ, ඔසාකා",
+  "secLocationTitle": "ගමන් සඳහා මගේ ස්ථානය භාවිත කරන්න",
+  "secLocationSubtitle": "ගමන් ගැන අසන විට ඔබ නිවසේද ගමනේද යන්න පෙන්වයි. රට පමණක් භාවිත වන අතර සුරකින්නේ නැත.",
+  "secLocationDenied": "Vaultara සඳහා ස්ථානය අක්‍රියයි. දුරකථන සැකසීම්වල ඉඩ දිය හැක.",
+  "assistantLocationTitle": "මගේ ස්ථානය භාවිත කරන්න",
+  "assistantLocationNote": "Vaultara ඔබ සිටින රට පමණක් පරීක්ෂා කරයි. ඔබේ නිවැරදි ස්ථානය යවන්නේවත් සුරකින්නේවත් නැත.",
+  "assistantLocationShared": "මම මගේ ස්ථානය ක්‍රියාත්මක කළා",
+  "assistantLocationOff": "ස්ථානය අක්‍රියයි. ආරක්ෂාව සහ පෞද්ගලිකත්වය තුළ ක්‍රියාත්මක කළ හැක."
 }

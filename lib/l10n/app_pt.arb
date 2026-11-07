@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Experimente: Adiciona o meu passaporte, expira em maio de 2031",
   "assistantVoiceDone": "Concluído",
   "assistantVoiceNoSpeech": "Não foi ouvido nada. Toque no microfone e tente novamente.",
-  "assistantVoiceFailed": "A entrada de voz parou. Tente novamente."
+  "assistantVoiceFailed": "A entrada de voz parou. Tente novamente.",
+  "travelItemIdCard": "Cartão de cidadão, autorização de residência ou carta de condução consigo",
+  "travelPlacesLabel": "Cidade ou localidade",
+  "travelPlacesOptional": "Cidade ou localidade (opcional)",
+  "travelPlacesHint": "Por exemplo Durban, ou Tóquio, Osaka",
+  "secLocationTitle": "Usar a minha localização para viagens",
+  "secLocationSubtitle": "Mostra se está em casa ou em viagem quando pergunta sobre viagens. Só o país é usado e não é guardado.",
+  "secLocationDenied": "A localização está desligada para o Vaultara. Pode permiti-la nas definições do telemóvel.",
+  "assistantLocationTitle": "Usar a minha localização",
+  "assistantLocationNote": "O Vaultara só verifica em que país está. A sua localização exata não é enviada nem guardada.",
+  "assistantLocationShared": "Liguei a minha localização",
+  "assistantLocationOff": "A localização está desligada. Pode ligá-la em Segurança e privacidade."
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Үн менен киргизүү токтоду. Кайра аракет кылыңыз.';
+
+  @override
+  String get travelItemIdCard => 'Ким күбөлүк, жашоого уруксат же айдоочулук күбөлүк жаныңызда';
+
+  @override
+  String get travelPlacesLabel => 'Шаар же кыштак';
+
+  @override
+  String get travelPlacesOptional => 'Шаар же кыштак (милдеттүү эмес)';
+
+  @override
+  String get travelPlacesHint => 'Мисалы Дурбан, же Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Саякаттар үчүн жайгашкан жеримди колдонуу';
+
+  @override
+  String get secLocationSubtitle => 'Саякат тууралуу сураганда үйдөсүзбү же саякаттасызбы көрсөтөт. Өлкө гана колдонулат жана сакталбайт.';
+
+  @override
+  String get secLocationDenied => 'Vaultara үчүн жайгашкан жер өчүк. Телефондун жөндөөлөрүнөн уруксат бере аласыз.';
+
+  @override
+  String get assistantLocationTitle => 'Жайгашкан жеримди колдонуу';
+
+  @override
+  String get assistantLocationNote => 'Vaultara кайсы өлкөдө экениңизди гана текшерет. Так жайгашкан жериңиз жөнөтүлбөйт жана сакталбайт.';
+
+  @override
+  String get assistantLocationShared => 'Жайгашкан жеримди күйгүздүм';
+
+  @override
+  String get assistantLocationOff => 'Жайгашкан жер өчүк. Коопсуздук жана купуялуулук бөлүмүнөн күйгүзө аласыз.';
 }

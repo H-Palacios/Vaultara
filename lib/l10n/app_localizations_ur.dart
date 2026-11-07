@@ -6578,4 +6578,37 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'آواز سے اندراج رک گیا۔ دوبارہ کوشش کریں۔';
+
+  @override
+  String get travelItemIdCard => 'شناختی کارڈ، رہائشی اجازت نامہ یا ڈرائیونگ لائسنس ساتھ';
+
+  @override
+  String get travelPlacesLabel => 'شہر یا قصبہ';
+
+  @override
+  String get travelPlacesOptional => 'شہر یا قصبہ (اختیاری)';
+
+  @override
+  String get travelPlacesHint => 'مثلاً ڈربن، یا ٹوکیو، اوساکا';
+
+  @override
+  String get secLocationTitle => 'سفر کے لیے میرا مقام استعمال کریں';
+
+  @override
+  String get secLocationSubtitle => 'سفر کے بارے میں پوچھنے پر دکھاتا ہے کہ آپ گھر پر ہیں یا سفر میں۔ صرف ملک استعمال ہوتا ہے اور محفوظ نہیں ہوتا۔';
+
+  @override
+  String get secLocationDenied => 'Vaultara کے لیے مقام بند ہے۔ آپ فون کی ترتیبات میں اجازت دے سکتے ہیں۔';
+
+  @override
+  String get assistantLocationTitle => 'میرا مقام استعمال کریں';
+
+  @override
+  String get assistantLocationNote => 'Vaultara صرف یہ دیکھتا ہے کہ آپ کس ملک میں ہیں۔ آپ کا درست مقام نہ بھیجا جاتا ہے نہ محفوظ ہوتا ہے۔';
+
+  @override
+  String get assistantLocationShared => 'میں نے اپنا مقام آن کر دیا';
+
+  @override
+  String get assistantLocationOff => 'مقام بند ہے۔ آپ اسے سیکیورٹی اور رازداری میں آن کر سکتے ہیں۔';
 }

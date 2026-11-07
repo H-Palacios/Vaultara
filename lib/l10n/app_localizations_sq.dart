@@ -6578,4 +6578,37 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Futja me zë ndaloi. Provo përsëri.';
+
+  @override
+  String get travelItemIdCard => 'Letërnjoftim, leje qëndrimi ose patentë me vete';
+
+  @override
+  String get travelPlacesLabel => 'Qytet ose fshat';
+
+  @override
+  String get travelPlacesOptional => 'Qytet ose fshat (opsionale)';
+
+  @override
+  String get travelPlacesHint => 'Për shembull Durban, ose Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Përdor vendndodhjen time për udhëtimet';
+
+  @override
+  String get secLocationSubtitle => 'Tregon nëse je në shtëpi apo në udhëtim kur pyet për udhëtimet. Përdoret vetëm shteti dhe nuk ruhet.';
+
+  @override
+  String get secLocationDenied => 'Vendndodhja është e fikur për Vaultara. Mund ta lejosh te cilësimet e telefonit.';
+
+  @override
+  String get assistantLocationTitle => 'Përdor vendndodhjen time';
+
+  @override
+  String get assistantLocationNote => 'Vaultara kontrollon vetëm në cilin shtet je. Vendndodhja jote e saktë nuk dërgohet dhe nuk ruhet.';
+
+  @override
+  String get assistantLocationShared => 'E ndeza vendndodhjen';
+
+  @override
+  String get assistantLocationOff => 'Vendndodhja është e fikur. Mund ta ndezësh te Siguria dhe privatësia.';
 }

@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "예: 여권 추가해 줘, 2031년 5월에 만료돼",
   "assistantVoiceDone": "완료",
   "assistantVoiceNoSpeech": "아무 소리도 들리지 않았습니다. 마이크를 탭하고 다시 시도하세요.",
-  "assistantVoiceFailed": "음성 입력이 멈췄습니다. 다시 시도하세요."
+  "assistantVoiceFailed": "음성 입력이 멈췄습니다. 다시 시도하세요.",
+  "travelItemIdCard": "신분증, 체류 허가증 또는 운전면허증 지참",
+  "travelPlacesLabel": "도시",
+  "travelPlacesOptional": "도시 (선택)",
+  "travelPlacesHint": "예: 더반, 또는 도쿄, 오사카",
+  "secLocationTitle": "여행에 내 위치 사용",
+  "secLocationSubtitle": "여행에 대해 물을 때 집에 있는지 여행 중인지 알려 줍니다. 국가만 사용하며 저장하지 않습니다.",
+  "secLocationDenied": "Vaultara의 위치가 꺼져 있습니다. 휴대폰 설정에서 허용할 수 있습니다.",
+  "assistantLocationTitle": "내 위치 사용",
+  "assistantLocationNote": "Vaultara는 어느 나라에 있는지만 확인합니다. 정확한 위치는 전송하거나 저장하지 않습니다.",
+  "assistantLocationShared": "위치를 켰어요",
+  "assistantLocationOff": "위치가 꺼져 있습니다. 보안 및 개인정보 보호에서 켤 수 있습니다."
 }

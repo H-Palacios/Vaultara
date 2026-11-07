@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "تاقی بکەوە: پاسپۆرتەکەم زیاد بکە، لە مەی 2031 بەسەردەچێت",
   "assistantVoiceDone": "تەواو",
   "assistantVoiceNoSpeech": "هیچ نەبیسترا. دەست لە مایکرۆفۆن بدە و دووبارە هەوڵ بدەوە.",
-  "assistantVoiceFailed": "تێخستنی دەنگ وەستا. دووبارە هەوڵ بدەوە."
+  "assistantVoiceFailed": "تێخستنی دەنگ وەستا. دووبارە هەوڵ بدەوە.",
+  "travelItemIdCard": "ناسنامە، مۆڵەتی نیشتەجێبوون یان مۆڵەتی شۆفێری لەگەڵت",
+  "travelPlacesLabel": "شار یان شارۆچکە",
+  "travelPlacesOptional": "شار یان شارۆچکە (ئارەزوومەندانە)",
+  "travelPlacesHint": "بۆ نموونە دەربەن، یان تۆکیۆ، ئۆساکا",
+  "secLocationTitle": "شوێنەکەم بۆ گەشتەکان بەکاربهێنە",
+  "secLocationSubtitle": "کاتێک دەربارەی گەشت دەپرسیت پیشان دەدات لە ماڵیت یان لە گەشتدایت. تەنها وڵاتەکە بەکاردێت و پاشەکەوت ناکرێت.",
+  "secLocationDenied": "شوێن بۆ Vaultara کوژاوەتەوە. دەتوانیت لە ڕێکخستنەکانی مۆبایل ڕێگەی پێبدەیت.",
+  "assistantLocationTitle": "شوێنەکەم بەکاربهێنە",
+  "assistantLocationNote": "Vaultara تەنها دەبینێت لە کام وڵاتیت. شوێنی وردت نانێردرێت و پاشەکەوت ناکرێت.",
+  "assistantLocationShared": "شوێنەکەمم هەڵکرد",
+  "assistantLocationOff": "شوێن کوژاوەتەوە. دەتوانیت لە ئاسایش و تایبەتمەندی هەڵیبکەیت."
 }

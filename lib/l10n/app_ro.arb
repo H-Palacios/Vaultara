@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Încearcă: Adaugă pașaportul meu, expiră în mai 2031",
   "assistantVoiceDone": "Gata",
   "assistantVoiceNoSpeech": "Nu s-a auzit nimic. Atinge microfonul și încearcă din nou.",
-  "assistantVoiceFailed": "Introducerea vocală s-a oprit. Încearcă din nou."
+  "assistantVoiceFailed": "Introducerea vocală s-a oprit. Încearcă din nou.",
+  "travelItemIdCard": "Buletin, permis de ședere sau permis de conducere la tine",
+  "travelPlacesLabel": "Oraș sau localitate",
+  "travelPlacesOptional": "Oraș sau localitate (opțional)",
+  "travelPlacesHint": "De exemplu Durban, sau Tokyo, Osaka",
+  "secLocationTitle": "Folosește locația mea pentru călătorii",
+  "secLocationSubtitle": "Arată dacă ești acasă sau în călătorie când întrebi despre călătorii. Se folosește doar țara și nu se salvează.",
+  "secLocationDenied": "Locația este oprită pentru Vaultara. O poți permite în setările telefonului.",
+  "assistantLocationTitle": "Folosește locația mea",
+  "assistantLocationNote": "Vaultara verifică doar în ce țară ești. Locația ta exactă nu este trimisă și nici salvată.",
+  "assistantLocationShared": "Mi-am pornit locația",
+  "assistantLocationOff": "Locația este oprită. O poți porni în Securitate și confidențialitate."
 }

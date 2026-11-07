@@ -6526,6 +6526,39 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => '语音输入已停止。请再试一次。';
+
+  @override
+  String get travelItemIdCard => '随身携带身份证、居留许可或驾照';
+
+  @override
+  String get travelPlacesLabel => '城市或城镇';
+
+  @override
+  String get travelPlacesOptional => '城市或城镇（可选）';
+
+  @override
+  String get travelPlacesHint => '例如 德班，或 东京、大阪';
+
+  @override
+  String get secLocationTitle => '出行时使用我的位置';
+
+  @override
+  String get secLocationSubtitle => '询问行程时判断你是在家还是在旅行。只使用国家，且不会保存。';
+
+  @override
+  String get secLocationDenied => 'Vaultara 的位置权限已关闭。你可以在手机设置中允许。';
+
+  @override
+  String get assistantLocationTitle => '使用我的位置';
+
+  @override
+  String get assistantLocationNote => 'Vaultara 只查看你所在的国家。不会发送或保存你的精确位置。';
+
+  @override
+  String get assistantLocationShared => '我已开启位置';
+
+  @override
+  String get assistantLocationOff => '位置已关闭。你可以在安全与隐私中开启。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13038,6 +13071,39 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantVoiceFailed => '语音输入已停止。请再试一次。';
+
+  @override
+  String get travelItemIdCard => '随身携带身份证、居留许可或驾照';
+
+  @override
+  String get travelPlacesLabel => '城市或城镇';
+
+  @override
+  String get travelPlacesOptional => '城市或城镇（可选）';
+
+  @override
+  String get travelPlacesHint => '例如 德班，或 东京、大阪';
+
+  @override
+  String get secLocationTitle => '出行时使用我的位置';
+
+  @override
+  String get secLocationSubtitle => '询问行程时判断你是在家还是在旅行。只使用国家，且不会保存。';
+
+  @override
+  String get secLocationDenied => 'Vaultara 的位置权限已关闭。你可以在手机设置中允许。';
+
+  @override
+  String get assistantLocationTitle => '使用我的位置';
+
+  @override
+  String get assistantLocationNote => 'Vaultara 只查看你所在的国家。不会发送或保存你的精确位置。';
+
+  @override
+  String get assistantLocationShared => '我已开启位置';
+
+  @override
+  String get assistantLocationOff => '位置已关闭。你可以在安全与隐私中开启。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -19550,4 +19616,37 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantVoiceFailed => '語音輸入已停止。請再試一次。';
+
+  @override
+  String get travelItemIdCard => '隨身攜帶身分證、居留證或駕照';
+
+  @override
+  String get travelPlacesLabel => '城市或城鎮';
+
+  @override
+  String get travelPlacesOptional => '城市或城鎮（選填）';
+
+  @override
+  String get travelPlacesHint => '例如 德班，或 東京、大阪';
+
+  @override
+  String get secLocationTitle => '旅行時使用我的位置';
+
+  @override
+  String get secLocationSubtitle => '詢問行程時判斷你是在家還是在旅行。只使用國家，且不會儲存。';
+
+  @override
+  String get secLocationDenied => 'Vaultara 的位置權限已關閉。你可以在手機設定中允許。';
+
+  @override
+  String get assistantLocationTitle => '使用我的位置';
+
+  @override
+  String get assistantLocationNote => 'Vaultara 只查看你所在的國家。不會傳送或儲存你的精確位置。';
+
+  @override
+  String get assistantLocationShared => '我已開啟位置';
+
+  @override
+  String get assistantLocationOff => '位置已關閉。你可以在安全性與隱私中開啟。';
 }

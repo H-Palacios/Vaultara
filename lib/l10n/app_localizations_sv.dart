@@ -6577,4 +6577,37 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Röstinmatningen stoppades. Försök igen.';
+
+  @override
+  String get travelItemIdCard => 'ID-kort, uppehållstillstånd eller körkort med dig';
+
+  @override
+  String get travelPlacesLabel => 'Stad eller ort';
+
+  @override
+  String get travelPlacesOptional => 'Stad eller ort (valfritt)';
+
+  @override
+  String get travelPlacesHint => 'Till exempel Durban, eller Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Använd min plats för resor';
+
+  @override
+  String get secLocationSubtitle => 'Visar om du är hemma eller på resa när du frågar om resor. Bara landet används och det sparas inte.';
+
+  @override
+  String get secLocationDenied => 'Plats är avstängd för Vaultara. Du kan tillåta det i telefonens inställningar.';
+
+  @override
+  String get assistantLocationTitle => 'Använd min plats';
+
+  @override
+  String get assistantLocationNote => 'Vaultara kontrollerar bara vilket land du är i. Din exakta plats skickas eller sparas inte.';
+
+  @override
+  String get assistantLocationShared => 'Jag har slagit på min plats';
+
+  @override
+  String get assistantLocationOff => 'Plats är avstängd. Du kan slå på den under Säkerhet och integritet.';
 }

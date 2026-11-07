@@ -2079,5 +2079,16 @@
   "assistantVoiceHint": "Provo: Shto pasaportën time, skadon në maj 2031",
   "assistantVoiceDone": "U krye",
   "assistantVoiceNoSpeech": "Nuk u dëgjua asgjë. Prek mikrofonin dhe provo përsëri.",
-  "assistantVoiceFailed": "Futja me zë ndaloi. Provo përsëri."
+  "assistantVoiceFailed": "Futja me zë ndaloi. Provo përsëri.",
+  "travelItemIdCard": "Letërnjoftim, leje qëndrimi ose patentë me vete",
+  "travelPlacesLabel": "Qytet ose fshat",
+  "travelPlacesOptional": "Qytet ose fshat (opsionale)",
+  "travelPlacesHint": "Për shembull Durban, ose Tokio, Osaka",
+  "secLocationTitle": "Përdor vendndodhjen time për udhëtimet",
+  "secLocationSubtitle": "Tregon nëse je në shtëpi apo në udhëtim kur pyet për udhëtimet. Përdoret vetëm shteti dhe nuk ruhet.",
+  "secLocationDenied": "Vendndodhja është e fikur për Vaultara. Mund ta lejosh te cilësimet e telefonit.",
+  "assistantLocationTitle": "Përdor vendndodhjen time",
+  "assistantLocationNote": "Vaultara kontrollon vetëm në cilin shtet je. Vendndodhja jote e saktë nuk dërgohet dhe nuk ruhet.",
+  "assistantLocationShared": "E ndeza vendndodhjen",
+  "assistantLocationOff": "Vendndodhja është e fikur. Mund ta ndezësh te Siguria dhe privatësia."
 }

@@ -2072,5 +2072,16 @@
   "assistantVoiceHint": "ਅਜ਼ਮਾਓ: ਮੇਰਾ ਪਾਸਪੋਰਟ ਜੋੜੋ, ਇਹ ਮਈ 2031 ਵਿੱਚ ਖ਼ਤਮ ਹੁੰਦਾ ਹੈ",
   "assistantVoiceDone": "ਹੋ ਗਿਆ",
   "assistantVoiceNoSpeech": "ਕੁਝ ਸੁਣਾਈ ਨਹੀਂ ਦਿੱਤਾ। ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਟੈਪ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
-  "assistantVoiceFailed": "ਆਵਾਜ਼ ਇਨਪੁੱਟ ਰੁਕ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  "assistantVoiceFailed": "ਆਵਾਜ਼ ਇਨਪੁੱਟ ਰੁਕ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "travelItemIdCard": "ਪਛਾਣ ਪੱਤਰ, ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ ਜਾਂ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨਾਲ",
+  "travelPlacesLabel": "ਸ਼ਹਿਰ ਜਾਂ ਕਸਬਾ",
+  "travelPlacesOptional": "ਸ਼ਹਿਰ ਜਾਂ ਕਸਬਾ (ਵਿਕਲਪਿਕ)",
+  "travelPlacesHint": "ਜਿਵੇਂ ਡਰਬਨ, ਜਾਂ ਟੋਕੀਓ, ਓਸਾਕਾ",
+  "secLocationTitle": "ਯਾਤਰਾਵਾਂ ਲਈ ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ",
+  "secLocationSubtitle": "ਯਾਤਰਾ ਬਾਰੇ ਪੁੱਛਣ 'ਤੇ ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਘਰ ਹੋ ਜਾਂ ਯਾਤਰਾ 'ਤੇ। ਸਿਰਫ਼ ਦੇਸ਼ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾਂਦਾ।",
+  "secLocationDenied": "Vaultara ਲਈ ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਫ਼ੋਨ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਇਜਾਜ਼ਤ ਦੇ ਸਕਦੇ ਹੋ।",
+  "assistantLocationTitle": "ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ",
+  "assistantLocationNote": "Vaultara ਸਿਰਫ਼ ਦੇਖਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਿਸ ਦੇਸ਼ ਵਿੱਚ ਹੋ। ਤੁਹਾਡਾ ਸਹੀ ਟਿਕਾਣਾ ਨਾ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ ਨਾ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ।",
+  "assistantLocationShared": "ਮੈਂ ਆਪਣਾ ਟਿਕਾਣਾ ਚਾਲੂ ਕੀਤਾ",
+  "assistantLocationOff": "ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।"
 }

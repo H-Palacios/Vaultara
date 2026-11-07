@@ -2070,5 +2070,16 @@
   "assistantVoiceHint": "נסו: הוסף את הדרכון שלי, הוא פג במאי 2031",
   "assistantVoiceDone": "סיום",
   "assistantVoiceNoSpeech": "לא נשמע כלום. הקישו על המיקרופון ונסו שוב.",
-  "assistantVoiceFailed": "הקלט הקולי נעצר. נסו שוב."
+  "assistantVoiceFailed": "הקלט הקולי נעצר. נסו שוב.",
+  "travelItemIdCard": "תעודת זהות, היתר שהייה או רישיון נהיגה עליך",
+  "travelPlacesLabel": "עיר או יישוב",
+  "travelPlacesOptional": "עיר או יישוב (לא חובה)",
+  "travelPlacesHint": "למשל דרבן, או טוקיו, אוסקה",
+  "secLocationTitle": "שימוש במיקום שלי לנסיעות",
+  "secLocationSubtitle": "מראה אם את/ה בבית או בנסיעה כששואלים על נסיעות. רק המדינה משמשת והיא לא נשמרת.",
+  "secLocationDenied": "המיקום כבוי עבור Vaultara. אפשר לאשר אותו בהגדרות הטלפון.",
+  "assistantLocationTitle": "שימוש במיקום שלי",
+  "assistantLocationNote": "Vaultara בודק רק באיזו מדינה את/ה. המיקום המדויק שלך לא נשלח ולא נשמר.",
+  "assistantLocationShared": "הפעלתי את המיקום שלי",
+  "assistantLocationOff": "המיקום כבוי. אפשר להפעיל אותו באבטחה ופרטיות."
 }

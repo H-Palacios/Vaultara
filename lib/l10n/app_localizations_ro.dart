@@ -6650,4 +6650,37 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Introducerea vocală s-a oprit. Încearcă din nou.';
+
+  @override
+  String get travelItemIdCard => 'Buletin, permis de ședere sau permis de conducere la tine';
+
+  @override
+  String get travelPlacesLabel => 'Oraș sau localitate';
+
+  @override
+  String get travelPlacesOptional => 'Oraș sau localitate (opțional)';
+
+  @override
+  String get travelPlacesHint => 'De exemplu Durban, sau Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Folosește locația mea pentru călătorii';
+
+  @override
+  String get secLocationSubtitle => 'Arată dacă ești acasă sau în călătorie când întrebi despre călătorii. Se folosește doar țara și nu se salvează.';
+
+  @override
+  String get secLocationDenied => 'Locația este oprită pentru Vaultara. O poți permite în setările telefonului.';
+
+  @override
+  String get assistantLocationTitle => 'Folosește locația mea';
+
+  @override
+  String get assistantLocationNote => 'Vaultara verifică doar în ce țară ești. Locația ta exactă nu este trimisă și nici salvată.';
+
+  @override
+  String get assistantLocationShared => 'Mi-am pornit locația';
+
+  @override
+  String get assistantLocationOff => 'Locația este oprită. O poți porni în Securitate și confidențialitate.';
 }

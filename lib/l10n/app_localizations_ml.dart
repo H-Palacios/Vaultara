@@ -6578,4 +6578,37 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ശബ്ദ ഇൻപുട്ട് നിന്നു. വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get travelItemIdCard => 'ഐഡി കാർഡ്, റസിഡൻസ് പെർമിറ്റ് അല്ലെങ്കിൽ ഡ്രൈവിംഗ് ലൈസൻസ് കൂടെ';
+
+  @override
+  String get travelPlacesLabel => 'നഗരം അല്ലെങ്കിൽ പട്ടണം';
+
+  @override
+  String get travelPlacesOptional => 'നഗരം അല്ലെങ്കിൽ പട്ടണം (ഐച്ഛികം)';
+
+  @override
+  String get travelPlacesHint => 'ഉദാ. ഡർബൻ, അല്ലെങ്കിൽ ടോക്കിയോ, ഒസാക്ക';
+
+  @override
+  String get secLocationTitle => 'യാത്രകൾക്ക് എന്റെ ലൊക്കേഷൻ ഉപയോഗിക്കുക';
+
+  @override
+  String get secLocationSubtitle => 'യാത്രകളെക്കുറിച്ച് ചോദിക്കുമ്പോൾ നിങ്ങൾ വീട്ടിലാണോ യാത്രയിലാണോ എന്ന് കാണിക്കുന്നു. രാജ്യം മാത്രം ഉപയോഗിക്കുന്നു, സേവ് ചെയ്യുന്നില്ല.';
+
+  @override
+  String get secLocationDenied => 'Vaultara-യ്ക്ക് ലൊക്കേഷൻ ഓഫാണ്. ഫോൺ ക്രമീകരണങ്ങളിൽ അനുവദിക്കാം.';
+
+  @override
+  String get assistantLocationTitle => 'എന്റെ ലൊക്കേഷൻ ഉപയോഗിക്കുക';
+
+  @override
+  String get assistantLocationNote => 'നിങ്ങൾ ഏത് രാജ്യത്താണെന്ന് മാത്രമാണ് Vaultara നോക്കുന്നത്. കൃത്യമായ ലൊക്കേഷൻ അയയ്ക്കുകയോ സേവ് ചെയ്യുകയോ ഇല്ല.';
+
+  @override
+  String get assistantLocationShared => 'ഞാൻ എന്റെ ലൊക്കേഷൻ ഓണാക്കി';
+
+  @override
+  String get assistantLocationOff => 'ലൊക്കേഷൻ ഓഫാണ്. സുരക്ഷയും സ്വകാര്യതയും എന്നതിൽ ഓണാക്കാം.';
 }

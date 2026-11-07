@@ -2072,5 +2072,16 @@
   "assistantVoiceHint": "Prøv: Legg til passet mitt, det utløper i mai 2031",
   "assistantVoiceDone": "Ferdig",
   "assistantVoiceNoSpeech": "Ingenting ble hørt. Trykk på mikrofonen og prøv igjen.",
-  "assistantVoiceFailed": "Taleinndata stoppet. Prøv igjen."
+  "assistantVoiceFailed": "Taleinndata stoppet. Prøv igjen.",
+  "travelItemIdCard": "ID-kort, oppholdstillatelse eller førerkort med deg",
+  "travelPlacesLabel": "By eller sted",
+  "travelPlacesOptional": "By eller sted (valgfritt)",
+  "travelPlacesHint": "For eksempel Durban, eller Tokyo, Osaka",
+  "secLocationTitle": "Bruk posisjonen min for reiser",
+  "secLocationSubtitle": "Viser om du er hjemme eller på reise når du spør om reiser. Bare landet brukes, og det lagres ikke.",
+  "secLocationDenied": "Posisjon er av for Vaultara. Du kan tillate det i telefonens innstillinger.",
+  "assistantLocationTitle": "Bruk posisjonen min",
+  "assistantLocationNote": "Vaultara sjekker bare hvilket land du er i. Den nøyaktige posisjonen din sendes eller lagres ikke.",
+  "assistantLocationShared": "Jeg har slått på posisjonen",
+  "assistantLocationOff": "Posisjon er av. Du kan slå den på under Sikkerhet og personvern."
 }

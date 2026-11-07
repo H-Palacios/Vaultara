@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "চেষ্টা করুন: আমার পাসপোর্ট যোগ করো, মেয়াদ শেষ মে 2031",
   "assistantVoiceDone": "হয়েছে",
   "assistantVoiceNoSpeech": "কিছু শোনা যায়নি। মাইক্রোফোনে ট্যাপ করে আবার চেষ্টা করুন।",
-  "assistantVoiceFailed": "ভয়েস ইনপুট থেমে গেছে। আবার চেষ্টা করুন।"
+  "assistantVoiceFailed": "ভয়েস ইনপুট থেমে গেছে। আবার চেষ্টা করুন।",
+  "travelItemIdCard": "পরিচয়পত্র, আবাসিক অনুমতি বা ড্রাইভিং লাইসেন্স সঙ্গে রাখুন",
+  "travelPlacesLabel": "শহর",
+  "travelPlacesOptional": "শহর (ঐচ্ছিক)",
+  "travelPlacesHint": "যেমন ডারবান, বা টোকিও, ওসাকা",
+  "secLocationTitle": "ভ্রমণের জন্য আমার অবস্থান ব্যবহার করুন",
+  "secLocationSubtitle": "ভ্রমণ নিয়ে জিজ্ঞেস করলে আপনি বাড়িতে না ভ্রমণে তা দেখায়। শুধু দেশটি ব্যবহার হয়, সংরক্ষণ করা হয় না।",
+  "secLocationDenied": "Vaultara-র জন্য অবস্থান বন্ধ। ফোনের সেটিংসে অনুমতি দিতে পারেন।",
+  "assistantLocationTitle": "আমার অবস্থান ব্যবহার করুন",
+  "assistantLocationNote": "Vaultara শুধু দেখে আপনি কোন দেশে আছেন। আপনার সঠিক অবস্থান পাঠানো বা সংরক্ষণ করা হয় না।",
+  "assistantLocationShared": "আমি আমার অবস্থান চালু করেছি",
+  "assistantLocationOff": "অবস্থান বন্ধ। নিরাপত্তা ও গোপনীয়তায় চালু করতে পারেন।"
 }

@@ -6514,4 +6514,37 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'การป้อนด้วยเสียงหยุดแล้ว ลองอีกครั้ง';
+
+  @override
+  String get travelItemIdCard => 'บัตรประชาชน ใบอนุญาตพำนัก หรือใบขับขี่ติดตัว';
+
+  @override
+  String get travelPlacesLabel => 'เมือง';
+
+  @override
+  String get travelPlacesOptional => 'เมือง (ไม่บังคับ)';
+
+  @override
+  String get travelPlacesHint => 'เช่น เดอร์บัน หรือ โตเกียว, โอซาก้า';
+
+  @override
+  String get secLocationTitle => 'ใช้ตำแหน่งของฉันสำหรับการเดินทาง';
+
+  @override
+  String get secLocationSubtitle => 'แสดงว่าคุณอยู่บ้านหรือกำลังเดินทางเมื่อถามเรื่องการเดินทาง ใช้เฉพาะประเทศและไม่บันทึก';
+
+  @override
+  String get secLocationDenied => 'ตำแหน่งปิดอยู่สำหรับ Vaultara คุณอนุญาตได้ในการตั้งค่าโทรศัพท์';
+
+  @override
+  String get assistantLocationTitle => 'ใช้ตำแหน่งของฉัน';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ตรวจดูเฉพาะว่าคุณอยู่ประเทศใด ไม่ส่งหรือบันทึกตำแหน่งที่แน่นอนของคุณ';
+
+  @override
+  String get assistantLocationShared => 'ฉันเปิดตำแหน่งแล้ว';
+
+  @override
+  String get assistantLocationOff => 'ตำแหน่งปิดอยู่ คุณเปิดได้ในความปลอดภัยและความเป็นส่วนตัว';
 }

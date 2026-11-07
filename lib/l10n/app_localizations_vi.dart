@@ -6526,4 +6526,37 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Nhập bằng giọng nói đã dừng. Hãy thử lại.';
+
+  @override
+  String get travelItemIdCard => 'CCCD, thẻ cư trú hoặc bằng lái xe mang theo';
+
+  @override
+  String get travelPlacesLabel => 'Thành phố hoặc thị trấn';
+
+  @override
+  String get travelPlacesOptional => 'Thành phố hoặc thị trấn (không bắt buộc)';
+
+  @override
+  String get travelPlacesHint => 'Ví dụ Durban, hoặc Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Dùng vị trí của tôi cho chuyến đi';
+
+  @override
+  String get secLocationSubtitle => 'Cho biết bạn đang ở nhà hay đang đi du lịch khi hỏi về chuyến đi. Chỉ dùng quốc gia và không lưu lại.';
+
+  @override
+  String get secLocationDenied => 'Vị trí đang tắt cho Vaultara. Bạn có thể cho phép trong cài đặt điện thoại.';
+
+  @override
+  String get assistantLocationTitle => 'Dùng vị trí của tôi';
+
+  @override
+  String get assistantLocationNote => 'Vaultara chỉ kiểm tra bạn đang ở quốc gia nào. Vị trí chính xác của bạn không được gửi hay lưu.';
+
+  @override
+  String get assistantLocationShared => 'Tôi đã bật vị trí';
+
+  @override
+  String get assistantLocationOff => 'Vị trí đang tắt. Bạn có thể bật trong Bảo mật và quyền riêng tư.';
 }

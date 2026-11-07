@@ -6578,4 +6578,37 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Raddinnslátturinn stöðvaðist. Reyndu aftur.';
+
+  @override
+  String get travelItemIdCard => 'Skilríki, dvalarleyfi eða ökuskírteini meðferðis';
+
+  @override
+  String get travelPlacesLabel => 'Borg eða bær';
+
+  @override
+  String get travelPlacesOptional => 'Borg eða bær (valfrjálst)';
+
+  @override
+  String get travelPlacesHint => 'Til dæmis Durban, eða Tókýó, Ósaka';
+
+  @override
+  String get secLocationTitle => 'Nota staðsetningu mína fyrir ferðir';
+
+  @override
+  String get secLocationSubtitle => 'Sýnir hvort þú ert heima eða á ferðalagi þegar þú spyrð um ferðir. Aðeins landið er notað og það er ekki vistað.';
+
+  @override
+  String get secLocationDenied => 'Staðsetning er slökkt fyrir Vaultara. Þú getur leyft hana í stillingum símans.';
+
+  @override
+  String get assistantLocationTitle => 'Nota staðsetningu mína';
+
+  @override
+  String get assistantLocationNote => 'Vaultara athugar aðeins í hvaða landi þú ert. Nákvæm staðsetning þín er hvorki send né vistuð.';
+
+  @override
+  String get assistantLocationShared => 'Ég kveikti á staðsetningunni';
+
+  @override
+  String get assistantLocationOff => 'Staðsetning er slökkt. Þú getur kveikt á henni í Öryggi og persónuvernd.';
 }

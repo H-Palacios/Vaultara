@@ -2070,5 +2070,16 @@
   "assistantVoiceHint": "Coba: Tambahkan paspor saya, berlaku sampai Mei 2031",
   "assistantVoiceDone": "Selesai",
   "assistantVoiceNoSpeech": "Tidak ada yang terdengar. Ketuk mikrofon dan coba lagi.",
-  "assistantVoiceFailed": "Input suara berhenti. Coba lagi."
+  "assistantVoiceFailed": "Input suara berhenti. Coba lagi.",
+  "travelItemIdCard": "KTP, izin tinggal atau SIM dibawa",
+  "travelPlacesLabel": "Kota",
+  "travelPlacesOptional": "Kota (opsional)",
+  "travelPlacesHint": "Misalnya Durban, atau Tokyo, Osaka",
+  "secLocationTitle": "Gunakan lokasi saya untuk perjalanan",
+  "secLocationSubtitle": "Menunjukkan apakah Anda di rumah atau bepergian saat bertanya tentang perjalanan. Hanya negara yang dipakai dan tidak disimpan.",
+  "secLocationDenied": "Lokasi mati untuk Vaultara. Anda bisa mengizinkannya di pengaturan ponsel.",
+  "assistantLocationTitle": "Gunakan lokasi saya",
+  "assistantLocationNote": "Vaultara hanya memeriksa Anda berada di negara mana. Lokasi persis Anda tidak dikirim atau disimpan.",
+  "assistantLocationShared": "Saya menyalakan lokasi",
+  "assistantLocationOff": "Lokasi mati. Anda bisa menyalakannya di Keamanan dan privasi."
 }

@@ -11154,6 +11154,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Voice input stopped. Try again.'**
   String get assistantVoiceFailed;
+
+  /// Checklist item for trips inside the traveller's home country.
+  ///
+  /// In en, this message translates to:
+  /// **'ID card, residence permit or driving licence with you'**
+  String get travelItemIdCard;
+
+  /// No description provided for @travelPlacesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'City or town'**
+  String get travelPlacesLabel;
+
+  /// No description provided for @travelPlacesOptional.
+  ///
+  /// In en, this message translates to:
+  /// **'City or town (optional)'**
+  String get travelPlacesOptional;
+
+  /// No description provided for @travelPlacesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'For example Durban, or Tokyo, Osaka'**
+  String get travelPlacesHint;
+
+  /// No description provided for @secLocationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my location for trips'**
+  String get secLocationTitle;
+
+  /// Security and privacy switch that lets Vaultara see the current country for trip answers.
+  ///
+  /// In en, this message translates to:
+  /// **'Shows if you are at home or travelling when you ask about trips. Only the country is used and it is not saved.'**
+  String get secLocationSubtitle;
+
+  /// No description provided for @secLocationDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location is off for Vaultara. You can allow it in your phone settings.'**
+  String get secLocationDenied;
+
+  /// No description provided for @assistantLocationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my location'**
+  String get assistantLocationTitle;
+
+  /// No description provided for @assistantLocationNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara only checks which country you are in. Your exact location is not sent or saved.'**
+  String get assistantLocationNote;
+
+  /// No description provided for @assistantLocationShared.
+  ///
+  /// In en, this message translates to:
+  /// **'I turned on my location'**
+  String get assistantLocationShared;
+
+  /// No description provided for @assistantLocationOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Location is off. You can turn it on in Security and privacy.'**
+  String get assistantLocationOff;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
