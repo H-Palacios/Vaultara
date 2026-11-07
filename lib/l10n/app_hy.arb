@@ -2090,5 +2090,9 @@
   "assistantLocationTitle": "Օգտագործել իմ գտնվելու վայրը",
   "assistantLocationNote": "Vaultara-ն ստուգում է միայն, թե որ երկրում եք։ Ձեր ճշգրիտ վայրը չի ուղարկվում և չի պահվում։",
   "assistantLocationShared": "Միացրի գտնվելու վայրը",
-  "assistantLocationOff": "Գտնվելու վայրն անջատված է։ Կարող եք միացնել Անվտանգություն և գաղտնիություն բաժնում։"
+  "assistantLocationOff": "Գտնվելու վայրն անջատված է։ Կարող եք միացնել Անվտանգություն և գաղտնիություն բաժնում։",
+  "assistantHistoryYesterday": "Երեկ",
+  "assistantHistoryLastWeek": "Վերջին 7 օրը",
+  "assistantHistoryLastMonth": "Վերջին 30 օրը",
+  "assistantHistoryOlder": "Ավելի հին"
 }

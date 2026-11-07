@@ -6547,4 +6547,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => '位置情報がオフです。セキュリティとプライバシーでオンにできます。';
+
+  @override
+  String get assistantHistoryYesterday => '昨日';
+
+  @override
+  String get assistantHistoryLastWeek => '過去7日間';
+
+  @override
+  String get assistantHistoryLastMonth => '過去30日間';
+
+  @override
+  String get assistantHistoryOlder => 'それ以前';
 }

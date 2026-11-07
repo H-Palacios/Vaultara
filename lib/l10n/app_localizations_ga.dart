@@ -6795,4 +6795,16 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Tá an suíomh múchta. Is féidir leat é a chasadh air i Slándáil agus príobháideacht.';
+
+  @override
+  String get assistantHistoryYesterday => 'Inné';
+
+  @override
+  String get assistantHistoryLastWeek => '7 lá roimhe seo';
+
+  @override
+  String get assistantHistoryLastMonth => '30 lá roimhe seo';
+
+  @override
+  String get assistantHistoryOlder => 'Níos sine';
 }

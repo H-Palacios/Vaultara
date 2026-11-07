@@ -6611,4 +6611,16 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Naka-off ang lokasyon. Puwede mo itong i-on sa Seguridad at privacy.';
+
+  @override
+  String get assistantHistoryYesterday => 'Kahapon';
+
+  @override
+  String get assistantHistoryLastWeek => 'Nakaraang 7 araw';
+
+  @override
+  String get assistantHistoryLastMonth => 'Nakaraang 30 araw';
+
+  @override
+  String get assistantHistoryOlder => 'Mas luma';
 }

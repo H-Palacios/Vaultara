@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Lo ipò mi",
   "assistantLocationNote": "Vaultara kàn ń wo orílẹ̀-èdè tí o wà. A kò fi ipò rẹ gangan ránṣẹ́, a kò sì fi pamọ́.",
   "assistantLocationShared": "Mo ti tan ipò mi",
-  "assistantLocationOff": "Ipò ti pa. O lè tàn án nínú Ààbò àti àṣírí."
+  "assistantLocationOff": "Ipò ti pa. O lè tàn án nínú Ààbò àti àṣírí.",
+  "assistantHistoryYesterday": "Àná",
+  "assistantHistoryLastWeek": "Ọjọ́ 7 sẹ́yìn",
+  "assistantHistoryLastMonth": "Ọjọ́ 30 sẹ́yìn",
+  "assistantHistoryOlder": "Àtijọ́"
 }

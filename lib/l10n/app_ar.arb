@@ -2114,5 +2114,9 @@
   "assistantLocationTitle": "استخدام موقعي",
   "assistantLocationNote": "يتحقق Vaultara فقط من الدولة التي أنت فيها. لا يُرسل موقعك الدقيق ولا يُحفظ.",
   "assistantLocationShared": "فعّلت موقعي",
-  "assistantLocationOff": "الموقع متوقف. يمكنك تفعيله من الأمان والخصوصية."
+  "assistantLocationOff": "الموقع متوقف. يمكنك تفعيله من الأمان والخصوصية.",
+  "assistantHistoryYesterday": "أمس",
+  "assistantHistoryLastWeek": "آخر 7 أيام",
+  "assistantHistoryLastMonth": "آخر 30 يومًا",
+  "assistantHistoryOlder": "أقدم"
 }

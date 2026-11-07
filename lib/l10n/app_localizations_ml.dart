@@ -6611,4 +6611,16 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ലൊക്കേഷൻ ഓഫാണ്. സുരക്ഷയും സ്വകാര്യതയും എന്നതിൽ ഓണാക്കാം.';
+
+  @override
+  String get assistantHistoryYesterday => 'ഇന്നലെ';
+
+  @override
+  String get assistantHistoryLastWeek => 'കഴിഞ്ഞ 7 ദിവസം';
+
+  @override
+  String get assistantHistoryLastMonth => 'കഴിഞ്ഞ 30 ദിവസം';
+
+  @override
+  String get assistantHistoryOlder => 'പഴയവ';
 }

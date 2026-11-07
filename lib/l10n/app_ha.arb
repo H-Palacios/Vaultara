@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "Yi amfani da wurina",
   "assistantLocationNote": "Vaultara tana duba ƙasar da kake ciki kawai. Ba a aika ko ajiye ainihin wurinka.",
   "assistantLocationShared": "Na kunna wurina",
-  "assistantLocationOff": "Wuri a kashe yake. Za ka iya kunna shi a Tsaro da sirri."
+  "assistantLocationOff": "Wuri a kashe yake. Za ka iya kunna shi a Tsaro da sirri.",
+  "assistantHistoryYesterday": "Jiya",
+  "assistantHistoryLastWeek": "Kwanaki 7 da suka wuce",
+  "assistantHistoryLastMonth": "Kwanaki 30 da suka wuce",
+  "assistantHistoryOlder": "Tsofaffi"
 }

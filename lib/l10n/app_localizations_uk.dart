@@ -6751,4 +6751,16 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Місцезнаходження вимкнено. Його можна увімкнути в розділі Безпека і конфіденційність.';
+
+  @override
+  String get assistantHistoryYesterday => 'Учора';
+
+  @override
+  String get assistantHistoryLastWeek => 'Останні 7 днів';
+
+  @override
+  String get assistantHistoryLastMonth => 'Останні 30 днів';
+
+  @override
+  String get assistantHistoryOlder => 'Раніше';
 }

@@ -6559,6 +6559,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantLocationOff => '位置已关闭。你可以在安全与隐私中开启。';
+
+  @override
+  String get assistantHistoryYesterday => '昨天';
+
+  @override
+  String get assistantHistoryLastWeek => '过去 7 天';
+
+  @override
+  String get assistantHistoryLastMonth => '过去 30 天';
+
+  @override
+  String get assistantHistoryOlder => '更早';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13104,6 +13116,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantLocationOff => '位置已关闭。你可以在安全与隐私中开启。';
+
+  @override
+  String get assistantHistoryYesterday => '昨天';
+
+  @override
+  String get assistantHistoryLastWeek => '过去 7 天';
+
+  @override
+  String get assistantHistoryLastMonth => '过去 30 天';
+
+  @override
+  String get assistantHistoryOlder => '更早';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -19649,4 +19673,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantLocationOff => '位置已關閉。你可以在安全性與隱私中開啟。';
+
+  @override
+  String get assistantHistoryYesterday => '昨天';
+
+  @override
+  String get assistantHistoryLastWeek => '過去 7 天';
+
+  @override
+  String get assistantHistoryLastMonth => '過去 30 天';
+
+  @override
+  String get assistantHistoryOlder => '更早';
 }

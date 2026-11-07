@@ -6611,4 +6611,16 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಭದ್ರತೆ ಮತ್ತು ಗೌಪ್ಯತೆಯಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು.';
+
+  @override
+  String get assistantHistoryYesterday => 'ನಿನ್ನೆ';
+
+  @override
+  String get assistantHistoryLastWeek => 'ಹಿಂದಿನ 7 ದಿನಗಳು';
+
+  @override
+  String get assistantHistoryLastMonth => 'ಹಿಂದಿನ 30 ದಿನಗಳು';
+
+  @override
+  String get assistantHistoryOlder => 'ಹಳೆಯವು';
 }

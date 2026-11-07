@@ -2083,5 +2083,9 @@
   "assistantLocationTitle": "Usar mi ubicación",
   "assistantLocationNote": "Vaultara solo comprueba en qué país estás. Tu ubicación exacta no se envía ni se guarda.",
   "assistantLocationShared": "He activado mi ubicación",
-  "assistantLocationOff": "La ubicación está desactivada. Puedes activarla en Seguridad y privacidad."
+  "assistantLocationOff": "La ubicación está desactivada. Puedes activarla en Seguridad y privacidad.",
+  "assistantHistoryYesterday": "Ayer",
+  "assistantHistoryLastWeek": "Últimos 7 días",
+  "assistantHistoryLastMonth": "Últimos 30 días",
+  "assistantHistoryOlder": "Anteriores"
 }

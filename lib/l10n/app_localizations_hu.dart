@@ -6611,4 +6611,16 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'A helymeghatározás ki van kapcsolva. A Biztonság és adatvédelem részben bekapcsolhatod.';
+
+  @override
+  String get assistantHistoryYesterday => 'Tegnap';
+
+  @override
+  String get assistantHistoryLastWeek => 'Előző 7 nap';
+
+  @override
+  String get assistantHistoryLastMonth => 'Előző 30 nap';
+
+  @override
+  String get assistantHistoryOlder => 'Régebbiek';
 }

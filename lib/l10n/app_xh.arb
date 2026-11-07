@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Sebenzisa indawo yam",
   "assistantLocationNote": "IVaultara ijonga kuphela ukuba ukweliphi ilizwe. Indawo yakho echanekileyo ayithunyelwa kwaye ayigcinwa.",
   "assistantLocationShared": "Ndiyivulile indawo yam",
-  "assistantLocationOff": "Indawo icinyiwe. Ungayivula kuKhuseleko nobumfihlo."
+  "assistantLocationOff": "Indawo icinyiwe. Ungayivula kuKhuseleko nobumfihlo.",
+  "assistantHistoryYesterday": "Izolo",
+  "assistantHistoryLastWeek": "Iintsuku ezi-7 ezidlulileyo",
+  "assistantHistoryLastMonth": "Iintsuku ezingama-30 ezidlulileyo",
+  "assistantHistoryOlder": "Ezindala"
 }

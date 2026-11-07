@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "استفاده از موقعیتم",
   "assistantLocationNote": "Vaultara فقط بررسی می‌کند در کدام کشورید. موقعیت دقیق شما ارسال یا ذخیره نمی‌شود.",
   "assistantLocationShared": "موقعیتم را روشن کردم",
-  "assistantLocationOff": "موقعیت خاموش است. می‌توانید آن را در امنیت و حریم خصوصی روشن کنید."
+  "assistantLocationOff": "موقعیت خاموش است. می‌توانید آن را در امنیت و حریم خصوصی روشن کنید.",
+  "assistantHistoryYesterday": "دیروز",
+  "assistantHistoryLastWeek": "۷ روز گذشته",
+  "assistantHistoryLastMonth": "۳۰ روز گذشته",
+  "assistantHistoryOlder": "قدیمی‌تر"
 }

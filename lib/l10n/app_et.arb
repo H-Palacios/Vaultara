@@ -2241,5 +2241,9 @@
   "assistantLocationTitle": "Kasuta minu asukohta",
   "assistantLocationNote": "Vaultara kontrollib ainult, mis riigis sa oled. Sinu täpset asukohta ei saadeta ega salvestata.",
   "assistantLocationShared": "Lülitasin asukoha sisse",
-  "assistantLocationOff": "Asukoht on väljas. Saad selle sisse lülitada jaotises Turvalisus ja privaatsus."
+  "assistantLocationOff": "Asukoht on väljas. Saad selle sisse lülitada jaotises Turvalisus ja privaatsus.",
+  "assistantHistoryYesterday": "Eile",
+  "assistantHistoryLastWeek": "Viimased 7 päeva",
+  "assistantHistoryLastMonth": "Viimased 30 päeva",
+  "assistantHistoryOlder": "Vanemad"
 }

@@ -6611,4 +6611,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Mahali pamezimwa. Unaweza kuwasha kwenye Usalama na faragha.';
+
+  @override
+  String get assistantHistoryYesterday => 'Jana';
+
+  @override
+  String get assistantHistoryLastWeek => 'Siku 7 zilizopita';
+
+  @override
+  String get assistantHistoryLastMonth => 'Siku 30 zilizopita';
+
+  @override
+  String get assistantHistoryOlder => 'Za zamani';
 }

@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "Joylashuvimdan foydalanish",
   "assistantLocationNote": "Vaultara faqat qaysi davlatda ekaningizni tekshiradi. Aniq joylashuvingiz yuborilmaydi va saqlanmaydi.",
   "assistantLocationShared": "Joylashuvimni yoqdim",
-  "assistantLocationOff": "Joylashuv o'chiq. Uni Xavfsizlik va maxfiylik bo'limida yoqishingiz mumkin."
+  "assistantLocationOff": "Joylashuv o'chiq. Uni Xavfsizlik va maxfiylik bo'limida yoqishingiz mumkin.",
+  "assistantHistoryYesterday": "Kecha",
+  "assistantHistoryLastWeek": "Oxirgi 7 kun",
+  "assistantHistoryLastMonth": "Oxirgi 30 kun",
+  "assistantHistoryOlder": "Eskiroq"
 }

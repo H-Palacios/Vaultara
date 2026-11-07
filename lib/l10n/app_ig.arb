@@ -2081,5 +2081,9 @@
   "assistantLocationTitle": "Jiri ọnọdụ m",
   "assistantLocationNote": "Vaultara na-elele naanị mba ị nọ. A naghị eziga ma ọ bụ chekwaa ebe ị nọ kpọmkwem.",
   "assistantLocationShared": "Agbanyela m ọnọdụ m",
-  "assistantLocationOff": "Ọnọdụ gbanyụrụ. Ị nwere ike ịgbanye ya na Nchekwa na nzuzo."
+  "assistantLocationOff": "Ọnọdụ gbanyụrụ. Ị nwere ike ịgbanye ya na Nchekwa na nzuzo.",
+  "assistantHistoryYesterday": "Ụnyaahụ",
+  "assistantHistoryLastWeek": "Ụbọchị 7 gara aga",
+  "assistantHistoryLastMonth": "Ụbọchị 30 gara aga",
+  "assistantHistoryOlder": "Ochie"
 }

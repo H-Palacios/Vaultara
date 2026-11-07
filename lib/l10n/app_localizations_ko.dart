@@ -6559,4 +6559,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantLocationOff => '위치가 꺼져 있습니다. 보안 및 개인정보 보호에서 켤 수 있습니다.';
+
+  @override
+  String get assistantHistoryYesterday => '어제';
+
+  @override
+  String get assistantHistoryLastWeek => '지난 7일';
+
+  @override
+  String get assistantHistoryLastMonth => '지난 30일';
+
+  @override
+  String get assistantHistoryOlder => '이전';
 }

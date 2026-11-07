@@ -6683,4 +6683,16 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Locația este oprită. O poți porni în Securitate și confidențialitate.';
+
+  @override
+  String get assistantHistoryYesterday => 'Ieri';
+
+  @override
+  String get assistantHistoryLastWeek => 'Ultimele 7 zile';
+
+  @override
+  String get assistantHistoryLastMonth => 'Ultimele 30 de zile';
+
+  @override
+  String get assistantHistoryOlder => 'Mai vechi';
 }

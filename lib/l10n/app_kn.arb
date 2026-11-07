@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "ನನ್ನ ಸ್ಥಳ ಬಳಸಿ",
   "assistantLocationNote": "Vaultara ನೀವು ಯಾವ ದೇಶದಲ್ಲಿದ್ದೀರಿ ಎಂಬುದನ್ನು ಮಾತ್ರ ಪರಿಶೀಲಿಸುತ್ತದೆ. ನಿಮ್ಮ ನಿಖರ ಸ್ಥಳವನ್ನು ಕಳುಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಉಳಿಸುವುದಿಲ್ಲ.",
   "assistantLocationShared": "ನಾನು ನನ್ನ ಸ್ಥಳ ಆನ್ ಮಾಡಿದ್ದೇನೆ",
-  "assistantLocationOff": "ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಭದ್ರತೆ ಮತ್ತು ಗೌಪ್ಯತೆಯಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು."
+  "assistantLocationOff": "ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಭದ್ರತೆ ಮತ್ತು ಗೌಪ್ಯತೆಯಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು.",
+  "assistantHistoryYesterday": "ನಿನ್ನೆ",
+  "assistantHistoryLastWeek": "ಹಿಂದಿನ 7 ದಿನಗಳು",
+  "assistantHistoryLastMonth": "ಹಿಂದಿನ 30 ದಿನಗಳು",
+  "assistantHistoryOlder": "ಹಳೆಯವು"
 }

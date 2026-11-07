@@ -6611,4 +6611,16 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Wuri a kashe yake. Za ka iya kunna shi a Tsaro da sirri.';
+
+  @override
+  String get assistantHistoryYesterday => 'Jiya';
+
+  @override
+  String get assistantHistoryLastWeek => 'Kwanaki 7 da suka wuce';
+
+  @override
+  String get assistantHistoryLastMonth => 'Kwanaki 30 da suka wuce';
+
+  @override
+  String get assistantHistoryOlder => 'Tsofaffi';
 }

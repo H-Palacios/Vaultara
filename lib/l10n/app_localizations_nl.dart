@@ -6611,4 +6611,16 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Locatie staat uit. Je kunt het aanzetten bij Beveiliging en privacy.';
+
+  @override
+  String get assistantHistoryYesterday => 'Gisteren';
+
+  @override
+  String get assistantHistoryLastWeek => 'Afgelopen 7 dagen';
+
+  @override
+  String get assistantHistoryLastMonth => 'Afgelopen 30 dagen';
+
+  @override
+  String get assistantHistoryOlder => 'Ouder';
 }

@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "現在地を使う",
   "assistantLocationNote": "Vaultaraが確認するのはいる国だけです。正確な位置は送信も保存もされません。",
   "assistantLocationShared": "位置情報をオンにしました",
-  "assistantLocationOff": "位置情報がオフです。セキュリティとプライバシーでオンにできます。"
+  "assistantLocationOff": "位置情報がオフです。セキュリティとプライバシーでオンにできます。",
+  "assistantHistoryYesterday": "昨日",
+  "assistantHistoryLastWeek": "過去7日間",
+  "assistantHistoryLastMonth": "過去30日間",
+  "assistantHistoryOlder": "それ以前"
 }

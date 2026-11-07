@@ -6737,4 +6737,16 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Poloha je vypnutá. Môžete ju zapnúť v Zabezpečení a súkromí.';
+
+  @override
+  String get assistantHistoryYesterday => 'Včera';
+
+  @override
+  String get assistantHistoryLastWeek => 'Posledných 7 dní';
+
+  @override
+  String get assistantHistoryLastMonth => 'Posledných 30 dní';
+
+  @override
+  String get assistantHistoryOlder => 'Staršie';
 }

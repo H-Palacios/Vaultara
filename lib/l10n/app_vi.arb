@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Dùng vị trí của tôi",
   "assistantLocationNote": "Vaultara chỉ kiểm tra bạn đang ở quốc gia nào. Vị trí chính xác của bạn không được gửi hay lưu.",
   "assistantLocationShared": "Tôi đã bật vị trí",
-  "assistantLocationOff": "Vị trí đang tắt. Bạn có thể bật trong Bảo mật và quyền riêng tư."
+  "assistantLocationOff": "Vị trí đang tắt. Bạn có thể bật trong Bảo mật và quyền riêng tư.",
+  "assistantHistoryYesterday": "Hôm qua",
+  "assistantHistoryLastWeek": "7 ngày qua",
+  "assistantHistoryLastMonth": "30 ngày qua",
+  "assistantHistoryOlder": "Cũ hơn"
 }

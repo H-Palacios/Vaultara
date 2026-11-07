@@ -6557,4 +6557,16 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'ទីតាំងត្រូវបានបិទ។ អ្នកអាចបើកវានៅក្នុងសុវត្ថិភាព និងឯកជនភាព។';
+
+  @override
+  String get assistantHistoryYesterday => 'ម្សិលមិញ';
+
+  @override
+  String get assistantHistoryLastWeek => '7 ថ្ងៃមុន';
+
+  @override
+  String get assistantHistoryLastMonth => '30 ថ្ងៃមុន';
+
+  @override
+  String get assistantHistoryOlder => 'ចាស់ជាងនេះ';
 }

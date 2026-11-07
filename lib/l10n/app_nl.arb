@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Mijn locatie gebruiken",
   "assistantLocationNote": "Vaultara controleert alleen in welk land je bent. Je exacte locatie wordt niet verstuurd of opgeslagen.",
   "assistantLocationShared": "Ik heb mijn locatie aangezet",
-  "assistantLocationOff": "Locatie staat uit. Je kunt het aanzetten bij Beveiliging en privacy."
+  "assistantLocationOff": "Locatie staat uit. Je kunt het aanzetten bij Beveiliging en privacy.",
+  "assistantHistoryYesterday": "Gisteren",
+  "assistantHistoryLastWeek": "Afgelopen 7 dagen",
+  "assistantHistoryLastMonth": "Afgelopen 30 dagen",
+  "assistantHistoryOlder": "Ouder"
 }

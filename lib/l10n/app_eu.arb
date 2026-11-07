@@ -2090,5 +2090,9 @@
   "assistantLocationTitle": "Erabili nire kokapena",
   "assistantLocationNote": "Vaultarak zein herrialdetan zauden bakarrik egiaztatzen du. Zure kokapen zehatza ez da bidaltzen edo gordetzen.",
   "assistantLocationShared": "Kokapena aktibatu dut",
-  "assistantLocationOff": "Kokapena desaktibatuta dago. Segurtasuna eta pribatutasuna atalean aktiba dezakezu."
+  "assistantLocationOff": "Kokapena desaktibatuta dago. Segurtasuna eta pribatutasuna atalean aktiba dezakezu.",
+  "assistantHistoryYesterday": "Atzo",
+  "assistantHistoryLastWeek": "Azken 7 egunak",
+  "assistantHistoryLastMonth": "Azken 30 egunak",
+  "assistantHistoryOlder": "Zaharragoak"
 }

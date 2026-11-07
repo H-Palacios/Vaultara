@@ -6611,4 +6611,16 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Placering er slået fra. Du kan slå den til under Sikkerhed og privatliv.';
+
+  @override
+  String get assistantHistoryYesterday => 'I går';
+
+  @override
+  String get assistantHistoryLastWeek => 'Seneste 7 dage';
+
+  @override
+  String get assistantHistoryLastMonth => 'Seneste 30 dage';
+
+  @override
+  String get assistantHistoryOlder => 'Ældre';
 }

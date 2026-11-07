@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Isticmaal goobtayda",
   "assistantLocationNote": "Vaultara waxay hubisaa oo keliya waddanka aad joogto. Goobtaada saxda ah lama diro lamana keydiyo.",
   "assistantLocationShared": "Waan shiday goobtayda",
-  "assistantLocationOff": "Goobta waa xiran tahay. Waxaad ka shidi kartaa Amniga iyo asturnaanta."
+  "assistantLocationOff": "Goobta waa xiran tahay. Waxaad ka shidi kartaa Amniga iyo asturnaanta.",
+  "assistantHistoryYesterday": "Shalay",
+  "assistantHistoryLastWeek": "7-dii maalmood ee la soo dhaafay",
+  "assistantHistoryLastMonth": "30-kii maalmood ee la soo dhaafay",
+  "assistantHistoryOlder": "Kuwii hore"
 }

@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Konumumu kullan",
   "assistantLocationNote": "Vaultara yalnızca hangi ülkede olduğuna bakar. Tam konumun gönderilmez ve kaydedilmez.",
   "assistantLocationShared": "Konumumu açtım",
-  "assistantLocationOff": "Konum kapalı. Güvenlik ve gizlilik bölümünden açabilirsin."
+  "assistantLocationOff": "Konum kapalı. Güvenlik ve gizlilik bölümünden açabilirsin.",
+  "assistantHistoryYesterday": "Dün",
+  "assistantHistoryLastWeek": "Son 7 gün",
+  "assistantHistoryLastMonth": "Son 30 gün",
+  "assistantHistoryOlder": "Daha eski"
 }

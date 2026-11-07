@@ -2094,5 +2094,9 @@
   "assistantLocationTitle": "Naudoti mano vietą",
   "assistantLocationNote": "Vaultara tikrina tik, kurioje šalyje esate. Tiksli jūsų vieta nesiunčiama ir neišsaugoma.",
   "assistantLocationShared": "Įjungiau savo vietą",
-  "assistantLocationOff": "Vieta išjungta. Galite ją įjungti skiltyje Sauga ir privatumas."
+  "assistantLocationOff": "Vieta išjungta. Galite ją įjungti skiltyje Sauga ir privatumas.",
+  "assistantHistoryYesterday": "Vakar",
+  "assistantHistoryLastWeek": "Paskutinės 7 dienos",
+  "assistantHistoryLastMonth": "Paskutinės 30 dienų",
+  "assistantHistoryOlder": "Senesni"
 }

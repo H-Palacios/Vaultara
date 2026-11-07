@@ -6611,4 +6611,16 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Kokapena desaktibatuta dago. Segurtasuna eta pribatutasuna atalean aktiba dezakezu.';
+
+  @override
+  String get assistantHistoryYesterday => 'Atzo';
+
+  @override
+  String get assistantHistoryLastWeek => 'Azken 7 egunak';
+
+  @override
+  String get assistantHistoryLastMonth => 'Azken 30 egunak';
+
+  @override
+  String get assistantHistoryOlder => 'Zaharragoak';
 }

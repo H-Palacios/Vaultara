@@ -6610,4 +6610,16 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Plats är avstängd. Du kan slå på den under Säkerhet och integritet.';
+
+  @override
+  String get assistantHistoryYesterday => 'I går';
+
+  @override
+  String get assistantHistoryLastWeek => 'Senaste 7 dagarna';
+
+  @override
+  String get assistantHistoryLastMonth => 'Senaste 30 dagarna';
+
+  @override
+  String get assistantHistoryOlder => 'Äldre';
 }

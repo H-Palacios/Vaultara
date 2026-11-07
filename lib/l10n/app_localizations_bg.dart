@@ -6611,4 +6611,16 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Местоположението е изключено. Можете да го включите в Сигурност и поверителност.';
+
+  @override
+  String get assistantHistoryYesterday => 'Вчера';
+
+  @override
+  String get assistantHistoryLastWeek => 'Последните 7 дни';
+
+  @override
+  String get assistantHistoryLastMonth => 'Последните 30 дни';
+
+  @override
+  String get assistantHistoryOlder => 'По-стари';
 }

@@ -6611,4 +6611,16 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Məkan söndürülüb. Təhlükəsizlik və məxfilik bölməsində yandıra bilərsiniz.';
+
+  @override
+  String get assistantHistoryYesterday => 'Dünən';
+
+  @override
+  String get assistantHistoryLastWeek => 'Son 7 gün';
+
+  @override
+  String get assistantHistoryLastMonth => 'Son 30 gün';
+
+  @override
+  String get assistantHistoryOlder => 'Daha köhnə';
 }

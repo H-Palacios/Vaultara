@@ -6619,4 +6619,16 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'La position est désactivée. Vous pouvez l\'activer dans Sécurité et confidentialité.';
+
+  @override
+  String get assistantHistoryYesterday => 'Hier';
+
+  @override
+  String get assistantHistoryLastWeek => '7 derniers jours';
+
+  @override
+  String get assistantHistoryLastMonth => '30 derniers jours';
+
+  @override
+  String get assistantHistoryOlder => 'Plus anciennes';
 }

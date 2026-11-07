@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Bruk posisjonen min",
   "assistantLocationNote": "Vaultara sjekkar berre kva land du er i. Den nøyaktige posisjonen din vert ikkje send eller lagra.",
   "assistantLocationShared": "Eg har slått på posisjonen",
-  "assistantLocationOff": "Posisjon er av. Du kan slå han på under Tryggleik og personvern."
+  "assistantLocationOff": "Posisjon er av. Du kan slå han på under Tryggleik og personvern.",
+  "assistantHistoryYesterday": "I går",
+  "assistantHistoryLastWeek": "Siste 7 dagar",
+  "assistantHistoryLastMonth": "Siste 30 dagar",
+  "assistantHistoryOlder": "Eldre"
 }

@@ -6611,4 +6611,16 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Cih girtî ye. Tu dikarî di Ewlehî û nepenîtiyê de veki.';
+
+  @override
+  String get assistantHistoryYesterday => 'Duh';
+
+  @override
+  String get assistantHistoryLastWeek => '7 rojên borî';
+
+  @override
+  String get assistantHistoryLastMonth => '30 rojên borî';
+
+  @override
+  String get assistantHistoryOlder => 'Kevintir';
 }

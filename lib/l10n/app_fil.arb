@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "Gamitin ang lokasyon ko",
   "assistantLocationNote": "Tinitingnan lang ng Vaultara kung saang bansa ka. Hindi ipinapadala o sine-save ang eksaktong lokasyon mo.",
   "assistantLocationShared": "Binuksan ko ang lokasyon ko",
-  "assistantLocationOff": "Naka-off ang lokasyon. Puwede mo itong i-on sa Seguridad at privacy."
+  "assistantLocationOff": "Naka-off ang lokasyon. Puwede mo itong i-on sa Seguridad at privacy.",
+  "assistantHistoryYesterday": "Kahapon",
+  "assistantHistoryLastWeek": "Nakaraang 7 araw",
+  "assistantHistoryLastMonth": "Nakaraang 30 araw",
+  "assistantHistoryOlder": "Mas luma"
 }

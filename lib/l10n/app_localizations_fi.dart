@@ -6611,4 +6611,16 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Sijainti on pois päältä. Voit laittaa sen päälle kohdassa Turvallisuus ja yksityisyys.';
+
+  @override
+  String get assistantHistoryYesterday => 'Eilen';
+
+  @override
+  String get assistantHistoryLastWeek => 'Edelliset 7 päivää';
+
+  @override
+  String get assistantHistoryLastMonth => 'Edelliset 30 päivää';
+
+  @override
+  String get assistantHistoryOlder => 'Vanhemmat';
 }

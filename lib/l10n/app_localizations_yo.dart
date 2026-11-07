@@ -6560,4 +6560,16 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Ipò ti pa. O lè tàn án nínú Ààbò àti àṣírí.';
+
+  @override
+  String get assistantHistoryYesterday => 'Àná';
+
+  @override
+  String get assistantHistoryLastWeek => 'Ọjọ́ 7 sẹ́yìn';
+
+  @override
+  String get assistantHistoryLastMonth => 'Ọjọ́ 30 sẹ́yìn';
+
+  @override
+  String get assistantHistoryOlder => 'Àtijọ́';
 }

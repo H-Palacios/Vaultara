@@ -6745,4 +6745,16 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Lokacija je izklopljena. Vklopite jo lahko v Varnost in zasebnost.';
+
+  @override
+  String get assistantHistoryYesterday => 'Včeraj';
+
+  @override
+  String get assistantHistoryLastWeek => 'Zadnjih 7 dni';
+
+  @override
+  String get assistantHistoryLastMonth => 'Zadnjih 30 dni';
+
+  @override
+  String get assistantHistoryOlder => 'Starejši';
 }

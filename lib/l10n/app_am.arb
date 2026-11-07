@@ -2114,5 +2114,9 @@
   "assistantLocationTitle": "አካባቢዬን ተጠቀም",
   "assistantLocationNote": "Vaultara የትኛው አገር እንዳሉ ብቻ ያያል። ትክክለኛ አካባቢዎ አይላክም አይቀመጥም።",
   "assistantLocationShared": "አካባቢዬን አብርቻለሁ",
-  "assistantLocationOff": "አካባቢ ጠፍቷል። በደህንነት እና ግላዊነት ማብራት ይችላሉ።"
+  "assistantLocationOff": "አካባቢ ጠፍቷል። በደህንነት እና ግላዊነት ማብራት ይችላሉ።",
+  "assistantHistoryYesterday": "ትናንት",
+  "assistantHistoryLastWeek": "ያለፉት 7 ቀናት",
+  "assistantHistoryLastMonth": "ያለፉት 30 ቀናት",
+  "assistantHistoryOlder": "የቆዩ"
 }

@@ -6611,4 +6611,16 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'شوێن کوژاوەتەوە. دەتوانیت لە ئاسایش و تایبەتمەندی هەڵیبکەیت.';
+
+  @override
+  String get assistantHistoryYesterday => 'دوێنێ';
+
+  @override
+  String get assistantHistoryLastWeek => '7 ڕۆژی ڕابردوو';
+
+  @override
+  String get assistantHistoryLastMonth => '30 ڕۆژی ڕابردوو';
+
+  @override
+  String get assistantHistoryOlder => 'کۆنتر';
 }

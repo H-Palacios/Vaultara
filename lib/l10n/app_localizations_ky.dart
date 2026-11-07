@@ -6611,4 +6611,16 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Жайгашкан жер өчүк. Коопсуздук жана купуялуулук бөлүмүнөн күйгүзө аласыз.';
+
+  @override
+  String get assistantHistoryYesterday => 'Кечээ';
+
+  @override
+  String get assistantHistoryLastWeek => 'Акыркы 7 күн';
+
+  @override
+  String get assistantHistoryLastMonth => 'Акыркы 30 күн';
+
+  @override
+  String get assistantHistoryOlder => 'Эскилери';
 }

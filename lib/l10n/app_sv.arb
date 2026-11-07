@@ -2069,5 +2069,9 @@
   "assistantLocationTitle": "Använd min plats",
   "assistantLocationNote": "Vaultara kontrollerar bara vilket land du är i. Din exakta plats skickas eller sparas inte.",
   "assistantLocationShared": "Jag har slagit på min plats",
-  "assistantLocationOff": "Plats är avstängd. Du kan slå på den under Säkerhet och integritet."
+  "assistantLocationOff": "Plats är avstängd. Du kan slå på den under Säkerhet och integritet.",
+  "assistantHistoryYesterday": "I går",
+  "assistantHistoryLastWeek": "Senaste 7 dagarna",
+  "assistantHistoryLastMonth": "Senaste 30 dagarna",
+  "assistantHistoryOlder": "Äldre"
 }

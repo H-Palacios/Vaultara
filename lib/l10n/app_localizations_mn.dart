@@ -6601,4 +6601,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Байршил унтраалттай. Аюулгүй байдал ба нууцлалаас асааж болно.';
+
+  @override
+  String get assistantHistoryYesterday => 'Өчигдөр';
+
+  @override
+  String get assistantHistoryLastWeek => 'Сүүлийн 7 хоног';
+
+  @override
+  String get assistantHistoryLastMonth => 'Сүүлийн 30 хоног';
+
+  @override
+  String get assistantHistoryOlder => 'Хуучин';
 }

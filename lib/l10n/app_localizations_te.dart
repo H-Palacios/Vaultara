@@ -6611,4 +6611,16 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'లొకేషన్ ఆఫ్‌లో ఉంది. భద్రత మరియు గోప్యతలో ఆన్ చేయవచ్చు.';
+
+  @override
+  String get assistantHistoryYesterday => 'నిన్న';
+
+  @override
+  String get assistantHistoryLastWeek => 'గత 7 రోజులు';
+
+  @override
+  String get assistantHistoryLastMonth => 'గత 30 రోజులు';
+
+  @override
+  String get assistantHistoryOlder => 'పాతవి';
 }

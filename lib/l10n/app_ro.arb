@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Folosește locația mea",
   "assistantLocationNote": "Vaultara verifică doar în ce țară ești. Locația ta exactă nu este trimisă și nici salvată.",
   "assistantLocationShared": "Mi-am pornit locația",
-  "assistantLocationOff": "Locația este oprită. O poți porni în Securitate și confidențialitate."
+  "assistantLocationOff": "Locația este oprită. O poți porni în Securitate și confidențialitate.",
+  "assistantHistoryYesterday": "Ieri",
+  "assistantHistoryLastWeek": "Ultimele 7 zile",
+  "assistantHistoryLastMonth": "Ultimele 30 de zile",
+  "assistantHistoryOlder": "Mai vechi"
 }

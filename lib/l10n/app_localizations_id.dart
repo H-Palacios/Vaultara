@@ -6554,4 +6554,16 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Lokasi mati. Anda bisa menyalakannya di Keamanan dan privasi.';
+
+  @override
+  String get assistantHistoryYesterday => 'Kemarin';
+
+  @override
+  String get assistantHistoryLastWeek => '7 hari terakhir';
+
+  @override
+  String get assistantHistoryLastMonth => '30 hari terakhir';
+
+  @override
+  String get assistantHistoryOlder => 'Lebih lama';
 }

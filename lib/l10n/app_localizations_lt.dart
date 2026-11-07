@@ -6749,4 +6749,16 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Vieta išjungta. Galite ją įjungti skiltyje Sauga ir privatumas.';
+
+  @override
+  String get assistantHistoryYesterday => 'Vakar';
+
+  @override
+  String get assistantHistoryLastWeek => 'Paskutinės 7 dienos';
+
+  @override
+  String get assistantHistoryLastMonth => 'Paskutinės 30 dienų';
+
+  @override
+  String get assistantHistoryOlder => 'Senesni';
 }

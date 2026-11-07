@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Usar a minha localização",
   "assistantLocationNote": "O Vaultara só verifica em que país está. A sua localização exata não é enviada nem guardada.",
   "assistantLocationShared": "Liguei a minha localização",
-  "assistantLocationOff": "A localização está desligada. Pode ligá-la em Segurança e privacidade."
+  "assistantLocationOff": "A localização está desligada. Pode ligá-la em Segurança e privacidade.",
+  "assistantHistoryYesterday": "Ontem",
+  "assistantHistoryLastWeek": "Últimos 7 dias",
+  "assistantHistoryLastMonth": "Últimos 30 dias",
+  "assistantHistoryOlder": "Mais antigas"
 }

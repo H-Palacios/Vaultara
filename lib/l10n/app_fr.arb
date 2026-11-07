@@ -2088,5 +2088,9 @@
   "assistantLocationTitle": "Utiliser ma position",
   "assistantLocationNote": "Vaultara vérifie seulement dans quel pays vous êtes. Votre position exacte n'est ni envoyée ni enregistrée.",
   "assistantLocationShared": "J'ai activé ma position",
-  "assistantLocationOff": "La position est désactivée. Vous pouvez l'activer dans Sécurité et confidentialité."
+  "assistantLocationOff": "La position est désactivée. Vous pouvez l'activer dans Sécurité et confidentialité.",
+  "assistantHistoryYesterday": "Hier",
+  "assistantHistoryLastWeek": "7 derniers jours",
+  "assistantHistoryLastMonth": "30 derniers jours",
+  "assistantHistoryOlder": "Plus anciennes"
 }

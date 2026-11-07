@@ -2081,5 +2081,9 @@
   "assistantLocationTitle": "Nota staðsetningu mína",
   "assistantLocationNote": "Vaultara athugar aðeins í hvaða landi þú ert. Nákvæm staðsetning þín er hvorki send né vistuð.",
   "assistantLocationShared": "Ég kveikti á staðsetningunni",
-  "assistantLocationOff": "Staðsetning er slökkt. Þú getur kveikt á henni í Öryggi og persónuvernd."
+  "assistantLocationOff": "Staðsetning er slökkt. Þú getur kveikt á henni í Öryggi og persónuvernd.",
+  "assistantHistoryYesterday": "Í gær",
+  "assistantHistoryLastWeek": "Síðustu 7 dagar",
+  "assistantHistoryLastMonth": "Síðustu 30 dagar",
+  "assistantHistoryOlder": "Eldri"
 }

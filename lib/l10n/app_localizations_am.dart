@@ -6611,4 +6611,16 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'አካባቢ ጠፍቷል። በደህንነት እና ግላዊነት ማብራት ይችላሉ።';
+
+  @override
+  String get assistantHistoryYesterday => 'ትናንት';
+
+  @override
+  String get assistantHistoryLastWeek => 'ያለፉት 7 ቀናት';
+
+  @override
+  String get assistantHistoryLastMonth => 'ያለፉት 30 ቀናት';
+
+  @override
+  String get assistantHistoryOlder => 'የቆዩ';
 }

@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "Məkanımdan istifadə et",
   "assistantLocationNote": "Vaultara yalnız hansı ölkədə olduğunuzu yoxlayır. Dəqiq məkanınız göndərilmir və saxlanmır.",
   "assistantLocationShared": "Məkanımı yandırdım",
-  "assistantLocationOff": "Məkan söndürülüb. Təhlükəsizlik və məxfilik bölməsində yandıra bilərsiniz."
+  "assistantLocationOff": "Məkan söndürülüb. Təhlükəsizlik və məxfilik bölməsində yandıra bilərsiniz.",
+  "assistantHistoryYesterday": "Dünən",
+  "assistantHistoryLastWeek": "Son 7 gün",
+  "assistantHistoryLastMonth": "Son 30 gün",
+  "assistantHistoryOlder": "Daha köhnə"
 }

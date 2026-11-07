@@ -6611,4 +6611,16 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Asukoht on väljas. Saad selle sisse lülitada jaotises Turvalisus ja privaatsus.';
+
+  @override
+  String get assistantHistoryYesterday => 'Eile';
+
+  @override
+  String get assistantHistoryLastWeek => 'Viimased 7 päeva';
+
+  @override
+  String get assistantHistoryLastMonth => 'Viimased 30 päeva';
+
+  @override
+  String get assistantHistoryOlder => 'Vanemad';
 }

@@ -8055,5 +8055,21 @@
   "assistantLocationTitle": "Use my location",
   "assistantLocationNote": "Vaultara only checks which country you are in. Your exact location is not sent or saved.",
   "assistantLocationShared": "I turned on my location",
-  "assistantLocationOff": "Location is off. You can turn it on in Security and privacy."
+  "assistantLocationOff": "Location is off. You can turn it on in Security and privacy.",
+  "assistantHistoryYesterday": "Yesterday",
+  "@assistantHistoryYesterday": {
+    "description": "Group heading in the Ask Vaultara chat list for chats from yesterday."
+  },
+  "assistantHistoryLastWeek": "Previous 7 days",
+  "@assistantHistoryLastWeek": {
+    "description": "Group heading in the Ask Vaultara chat list for chats from 2 to 7 days ago."
+  },
+  "assistantHistoryLastMonth": "Previous 30 days",
+  "@assistantHistoryLastMonth": {
+    "description": "Group heading in the Ask Vaultara chat list for chats from 8 to 30 days ago."
+  },
+  "assistantHistoryOlder": "Older",
+  "@assistantHistoryOlder": {
+    "description": "Group heading in the Ask Vaultara chat list for chats older than 30 days."
+  }
 }

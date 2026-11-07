@@ -6611,4 +6611,16 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Vendndodhja është e fikur. Mund ta ndezësh te Siguria dhe privatësia.';
+
+  @override
+  String get assistantHistoryYesterday => 'Dje';
+
+  @override
+  String get assistantHistoryLastWeek => '7 ditët e fundit';
+
+  @override
+  String get assistantHistoryLastMonth => '30 ditët e fundit';
+
+  @override
+  String get assistantHistoryOlder => 'Më të vjetra';
 }

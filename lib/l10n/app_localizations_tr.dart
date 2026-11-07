@@ -6611,4 +6611,16 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Konum kapalı. Güvenlik ve gizlilik bölümünden açabilirsin.';
+
+  @override
+  String get assistantHistoryYesterday => 'Dün';
+
+  @override
+  String get assistantHistoryLastWeek => 'Son 7 gün';
+
+  @override
+  String get assistantHistoryLastMonth => 'Son 30 gün';
+
+  @override
+  String get assistantHistoryOlder => 'Daha eski';
 }

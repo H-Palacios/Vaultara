@@ -1826,5 +1826,9 @@
   "assistantLocationTitle": "माझे स्थान वापरा",
   "assistantLocationNote": "Vaultara फक्त तुम्ही कोणत्या देशात आहात ते तपासते. तुमचे अचूक स्थान पाठवले किंवा जतन केले जात नाही.",
   "assistantLocationShared": "मी माझे स्थान चालू केले",
-  "assistantLocationOff": "स्थान बंद आहे. सुरक्षा आणि गोपनीयतेमध्ये चालू करू शकता."
+  "assistantLocationOff": "स्थान बंद आहे. सुरक्षा आणि गोपनीयतेमध्ये चालू करू शकता.",
+  "assistantHistoryYesterday": "काल",
+  "assistantHistoryLastWeek": "मागील 7 दिवस",
+  "assistantHistoryLastMonth": "मागील 30 दिवस",
+  "assistantHistoryOlder": "जुने"
 }

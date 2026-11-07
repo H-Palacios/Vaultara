@@ -2107,5 +2107,9 @@
   "assistantLocationTitle": "আমার অবস্থান ব্যবহার করুন",
   "assistantLocationNote": "Vaultara শুধু দেখে আপনি কোন দেশে আছেন। আপনার সঠিক অবস্থান পাঠানো বা সংরক্ষণ করা হয় না।",
   "assistantLocationShared": "আমি আমার অবস্থান চালু করেছি",
-  "assistantLocationOff": "অবস্থান বন্ধ। নিরাপত্তা ও গোপনীয়তায় চালু করতে পারেন।"
+  "assistantLocationOff": "অবস্থান বন্ধ। নিরাপত্তা ও গোপনীয়তায় চালু করতে পারেন।",
+  "assistantHistoryYesterday": "গতকাল",
+  "assistantHistoryLastWeek": "গত ৭ দিন",
+  "assistantHistoryLastMonth": "গত ৩০ দিন",
+  "assistantHistoryOlder": "পুরোনো"
 }

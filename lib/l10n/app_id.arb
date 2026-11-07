@@ -2081,5 +2081,9 @@
   "assistantLocationTitle": "Gunakan lokasi saya",
   "assistantLocationNote": "Vaultara hanya memeriksa Anda berada di negara mana. Lokasi persis Anda tidak dikirim atau disimpan.",
   "assistantLocationShared": "Saya menyalakan lokasi",
-  "assistantLocationOff": "Lokasi mati. Anda bisa menyalakannya di Keamanan dan privasi."
+  "assistantLocationOff": "Lokasi mati. Anda bisa menyalakannya di Keamanan dan privasi.",
+  "assistantHistoryYesterday": "Kemarin",
+  "assistantHistoryLastWeek": "7 hari terakhir",
+  "assistantHistoryLastMonth": "30 hari terakhir",
+  "assistantHistoryOlder": "Lebih lama"
 }

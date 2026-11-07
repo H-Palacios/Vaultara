@@ -2083,5 +2083,9 @@
   "assistantLocationTitle": "ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ",
   "assistantLocationNote": "Vaultara ਸਿਰਫ਼ ਦੇਖਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਿਸ ਦੇਸ਼ ਵਿੱਚ ਹੋ। ਤੁਹਾਡਾ ਸਹੀ ਟਿਕਾਣਾ ਨਾ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ ਨਾ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ।",
   "assistantLocationShared": "ਮੈਂ ਆਪਣਾ ਟਿਕਾਣਾ ਚਾਲੂ ਕੀਤਾ",
-  "assistantLocationOff": "ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।"
+  "assistantLocationOff": "ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।",
+  "assistantHistoryYesterday": "ਕੱਲ੍ਹ",
+  "assistantHistoryLastWeek": "ਪਿਛਲੇ 7 ਦਿਨ",
+  "assistantHistoryLastMonth": "ਪਿਛਲੇ 30 ਦਿਨ",
+  "assistantHistoryOlder": "ਪੁਰਾਣੀਆਂ"
 }

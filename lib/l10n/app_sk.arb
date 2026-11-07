@@ -2076,5 +2076,9 @@
   "assistantLocationTitle": "Použiť moju polohu",
   "assistantLocationNote": "Vaultara zisťuje len, v akej krajine ste. Vaša presná poloha sa neposiela ani neukladá.",
   "assistantLocationShared": "Zapol som polohu",
-  "assistantLocationOff": "Poloha je vypnutá. Môžete ju zapnúť v Zabezpečení a súkromí."
+  "assistantLocationOff": "Poloha je vypnutá. Môžete ju zapnúť v Zabezpečení a súkromí.",
+  "assistantHistoryYesterday": "Včera",
+  "assistantHistoryLastWeek": "Posledných 7 dní",
+  "assistantHistoryLastMonth": "Posledných 30 dní",
+  "assistantHistoryOlder": "Staršie"
 }

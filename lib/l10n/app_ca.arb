@@ -2107,5 +2107,9 @@
   "assistantLocationTitle": "Fes servir la meva ubicació",
   "assistantLocationNote": "Vaultara només comprova en quin país ets. La teva ubicació exacta no s'envia ni es desa.",
   "assistantLocationShared": "He activat la ubicació",
-  "assistantLocationOff": "La ubicació està desactivada. La pots activar a Seguretat i privadesa."
+  "assistantLocationOff": "La ubicació està desactivada. La pots activar a Seguretat i privadesa.",
+  "assistantHistoryYesterday": "Ahir",
+  "assistantHistoryLastWeek": "Últims 7 dies",
+  "assistantHistoryLastMonth": "Últims 30 dies",
+  "assistantHistoryOlder": "Més antics"
 }

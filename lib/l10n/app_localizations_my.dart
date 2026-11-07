@@ -6557,4 +6557,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'တည်နေရာ ပိတ်ထားသည်။ လုံခြုံရေးနှင့် ကိုယ်ရေးကိုယ်တာတွင် ဖွင့်နိုင်သည်။';
+
+  @override
+  String get assistantHistoryYesterday => 'မနေ့က';
+
+  @override
+  String get assistantHistoryLastWeek => 'ပြီးခဲ့သော ၇ ရက်';
+
+  @override
+  String get assistantHistoryLastMonth => 'ပြီးခဲ့သော ၃၀ ရက်';
+
+  @override
+  String get assistantHistoryOlder => 'ယခင်';
 }

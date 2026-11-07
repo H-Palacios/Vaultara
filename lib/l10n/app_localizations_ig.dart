@@ -6560,4 +6560,16 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantLocationOff => 'Ọnọdụ gbanyụrụ. Ị nwere ike ịgbanye ya na Nchekwa na nzuzo.';
+
+  @override
+  String get assistantHistoryYesterday => 'Ụnyaahụ';
+
+  @override
+  String get assistantHistoryLastWeek => 'Ụbọchị 7 gara aga';
+
+  @override
+  String get assistantHistoryLastMonth => 'Ụbọchị 30 gara aga';
+
+  @override
+  String get assistantHistoryOlder => 'Ochie';
 }
