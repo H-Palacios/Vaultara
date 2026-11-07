@@ -6578,4 +6578,37 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ხმოვანი შეყვანა შეჩერდა. სცადეთ თავიდან.';
+
+  @override
+  String get travelItemIdCard => 'პირადობის მოწმობა, ბინადრობის ნებართვა ან მართვის მოწმობა თან';
+
+  @override
+  String get travelPlacesLabel => 'ქალაქი ან დაბა';
+
+  @override
+  String get travelPlacesOptional => 'ქალაქი ან დაბა (არასავალდებულო)';
+
+  @override
+  String get travelPlacesHint => 'მაგალითად დურბანი, ან ტოკიო, ოსაკა';
+
+  @override
+  String get secLocationTitle => 'ჩემი მდებარეობის გამოყენება მოგზაურობისთვის';
+
+  @override
+  String get secLocationSubtitle => 'მოგზაურობაზე კითხვისას აჩვენებს, სახლში ხართ თუ მოგზაურობთ. გამოიყენება მხოლოდ ქვეყანა და არ ინახება.';
+
+  @override
+  String get secLocationDenied => 'მდებარეობა გამორთულია Vaultara-სთვის. შეგიძლიათ დაუშვათ ტელეფონის პარამეტრებში.';
+
+  @override
+  String get assistantLocationTitle => 'ჩემი მდებარეობის გამოყენება';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ამოწმებს მხოლოდ, რომელ ქვეყანაში ხართ. თქვენი ზუსტი მდებარეობა არ იგზავნება და არ ინახება.';
+
+  @override
+  String get assistantLocationShared => 'ჩავრთე მდებარეობა';
+
+  @override
+  String get assistantLocationOff => 'მდებარეობა გამორთულია. შეგიძლიათ ჩართოთ უსაფრთხოებასა და კონფიდენციალურობაში.';
 }

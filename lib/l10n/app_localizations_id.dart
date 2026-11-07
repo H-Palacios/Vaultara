@@ -6521,4 +6521,37 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Input suara berhenti. Coba lagi.';
+
+  @override
+  String get travelItemIdCard => 'KTP, izin tinggal atau SIM dibawa';
+
+  @override
+  String get travelPlacesLabel => 'Kota';
+
+  @override
+  String get travelPlacesOptional => 'Kota (opsional)';
+
+  @override
+  String get travelPlacesHint => 'Misalnya Durban, atau Tokyo, Osaka';
+
+  @override
+  String get secLocationTitle => 'Gunakan lokasi saya untuk perjalanan';
+
+  @override
+  String get secLocationSubtitle => 'Menunjukkan apakah Anda di rumah atau bepergian saat bertanya tentang perjalanan. Hanya negara yang dipakai dan tidak disimpan.';
+
+  @override
+  String get secLocationDenied => 'Lokasi mati untuk Vaultara. Anda bisa mengizinkannya di pengaturan ponsel.';
+
+  @override
+  String get assistantLocationTitle => 'Gunakan lokasi saya';
+
+  @override
+  String get assistantLocationNote => 'Vaultara hanya memeriksa Anda berada di negara mana. Lokasi persis Anda tidak dikirim atau disimpan.';
+
+  @override
+  String get assistantLocationShared => 'Saya menyalakan lokasi';
+
+  @override
+  String get assistantLocationOff => 'Lokasi mati. Anda bisa menyalakannya di Keamanan dan privasi.';
 }

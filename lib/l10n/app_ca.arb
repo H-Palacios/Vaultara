@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "Prova: Afegeix el meu passaport, caduca el maig del 2031",
   "assistantVoiceDone": "Fet",
   "assistantVoiceNoSpeech": "No s'ha sentit res. Toca el micròfon i torna-ho a provar.",
-  "assistantVoiceFailed": "L'entrada de veu s'ha aturat. Torna-ho a provar."
+  "assistantVoiceFailed": "L'entrada de veu s'ha aturat. Torna-ho a provar.",
+  "travelItemIdCard": "DNI, permís de residència o carnet de conduir a sobre",
+  "travelPlacesLabel": "Ciutat o poble",
+  "travelPlacesOptional": "Ciutat o poble (opcional)",
+  "travelPlacesHint": "Per exemple Durban, o Tòquio, Osaka",
+  "secLocationTitle": "Fes servir la meva ubicació per als viatges",
+  "secLocationSubtitle": "Mostra si ets a casa o de viatge quan preguntes sobre viatges. Només es fa servir el país i no es desa.",
+  "secLocationDenied": "La ubicació està desactivada per a Vaultara. La pots permetre a la configuració del telèfon.",
+  "assistantLocationTitle": "Fes servir la meva ubicació",
+  "assistantLocationNote": "Vaultara només comprova en quin país ets. La teva ubicació exacta no s'envia ni es desa.",
+  "assistantLocationShared": "He activat la ubicació",
+  "assistantLocationOff": "La ubicació està desactivada. La pots activar a Seguretat i privadesa."
 }

@@ -6577,4 +6577,37 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'හඬ ආදානය නතර විය. නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get travelItemIdCard => 'හැඳුනුම්පත, පදිංචි බලපත්‍රය හෝ රියදුරු බලපත්‍රය ළඟ';
+
+  @override
+  String get travelPlacesLabel => 'නගරය';
+
+  @override
+  String get travelPlacesOptional => 'නගරය (විකල්ප)';
+
+  @override
+  String get travelPlacesHint => 'උදා. ඩර්බන්, හෝ ටෝකියෝ, ඔසාකා';
+
+  @override
+  String get secLocationTitle => 'ගමන් සඳහා මගේ ස්ථානය භාවිත කරන්න';
+
+  @override
+  String get secLocationSubtitle => 'ගමන් ගැන අසන විට ඔබ නිවසේද ගමනේද යන්න පෙන්වයි. රට පමණක් භාවිත වන අතර සුරකින්නේ නැත.';
+
+  @override
+  String get secLocationDenied => 'Vaultara සඳහා ස්ථානය අක්‍රියයි. දුරකථන සැකසීම්වල ඉඩ දිය හැක.';
+
+  @override
+  String get assistantLocationTitle => 'මගේ ස්ථානය භාවිත කරන්න';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ඔබ සිටින රට පමණක් පරීක්ෂා කරයි. ඔබේ නිවැරදි ස්ථානය යවන්නේවත් සුරකින්නේවත් නැත.';
+
+  @override
+  String get assistantLocationShared => 'මම මගේ ස්ථානය ක්‍රියාත්මක කළා';
+
+  @override
+  String get assistantLocationOff => 'ස්ථානය අක්‍රියයි. ආරක්ෂාව සහ පෞද්ගලිකත්වය තුළ ක්‍රියාත්මක කළ හැක.';
 }

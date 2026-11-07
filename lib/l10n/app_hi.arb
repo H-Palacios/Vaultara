@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "आज़माएँ: मेरा पासपोर्ट जोड़ो, यह मई 2031 में समाप्त होता है",
   "assistantVoiceDone": "हो गया",
   "assistantVoiceNoSpeech": "कुछ सुनाई नहीं दिया। माइक्रोफ़ोन पर टैप करके फिर कोशिश करें।",
-  "assistantVoiceFailed": "वॉइस इनपुट रुक गया। फिर कोशिश करें।"
+  "assistantVoiceFailed": "वॉइस इनपुट रुक गया। फिर कोशिश करें।",
+  "travelItemIdCard": "पहचान पत्र, निवास परमिट या ड्राइविंग लाइसेंस साथ में",
+  "travelPlacesLabel": "शहर या कस्बा",
+  "travelPlacesOptional": "शहर या कस्बा (वैकल्पिक)",
+  "travelPlacesHint": "जैसे डरबन, या टोक्यो, ओसाका",
+  "secLocationTitle": "यात्राओं के लिए मेरी लोकेशन इस्तेमाल करें",
+  "secLocationSubtitle": "यात्रा के बारे में पूछने पर दिखाता है कि आप घर पर हैं या यात्रा में। सिर्फ़ देश इस्तेमाल होता है और सहेजा नहीं जाता।",
+  "secLocationDenied": "Vaultara के लिए लोकेशन बंद है। आप फ़ोन सेटिंग में अनुमति दे सकते हैं।",
+  "assistantLocationTitle": "मेरी लोकेशन इस्तेमाल करें",
+  "assistantLocationNote": "Vaultara सिर्फ़ देखता है कि आप किस देश में हैं। आपकी सटीक लोकेशन न भेजी जाती है न सहेजी जाती है।",
+  "assistantLocationShared": "मैंने अपनी लोकेशन चालू कर दी",
+  "assistantLocationOff": "लोकेशन बंद है। आप सुरक्षा और गोपनीयता में इसे चालू कर सकते हैं।"
 }

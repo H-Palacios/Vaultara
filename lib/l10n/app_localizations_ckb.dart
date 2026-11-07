@@ -6578,4 +6578,37 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'تێخستنی دەنگ وەستا. دووبارە هەوڵ بدەوە.';
+
+  @override
+  String get travelItemIdCard => 'ناسنامە، مۆڵەتی نیشتەجێبوون یان مۆڵەتی شۆفێری لەگەڵت';
+
+  @override
+  String get travelPlacesLabel => 'شار یان شارۆچکە';
+
+  @override
+  String get travelPlacesOptional => 'شار یان شارۆچکە (ئارەزوومەندانە)';
+
+  @override
+  String get travelPlacesHint => 'بۆ نموونە دەربەن، یان تۆکیۆ، ئۆساکا';
+
+  @override
+  String get secLocationTitle => 'شوێنەکەم بۆ گەشتەکان بەکاربهێنە';
+
+  @override
+  String get secLocationSubtitle => 'کاتێک دەربارەی گەشت دەپرسیت پیشان دەدات لە ماڵیت یان لە گەشتدایت. تەنها وڵاتەکە بەکاردێت و پاشەکەوت ناکرێت.';
+
+  @override
+  String get secLocationDenied => 'شوێن بۆ Vaultara کوژاوەتەوە. دەتوانیت لە ڕێکخستنەکانی مۆبایل ڕێگەی پێبدەیت.';
+
+  @override
+  String get assistantLocationTitle => 'شوێنەکەم بەکاربهێنە';
+
+  @override
+  String get assistantLocationNote => 'Vaultara تەنها دەبینێت لە کام وڵاتیت. شوێنی وردت نانێردرێت و پاشەکەوت ناکرێت.';
+
+  @override
+  String get assistantLocationShared => 'شوێنەکەمم هەڵکرد';
+
+  @override
+  String get assistantLocationOff => 'شوێن کوژاوەتەوە. دەتوانیت لە ئاسایش و تایبەتمەندی هەڵیبکەیت.';
 }

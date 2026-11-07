@@ -2070,5 +2070,16 @@
   "assistantVoiceHint": "Prova: Aggiungi il mio passaporto, scade a maggio 2031",
   "assistantVoiceDone": "Fatto",
   "assistantVoiceNoSpeech": "Non si è sentito nulla. Tocca il microfono e riprova.",
-  "assistantVoiceFailed": "L'input vocale si è interrotto. Riprova."
+  "assistantVoiceFailed": "L'input vocale si è interrotto. Riprova.",
+  "travelItemIdCard": "Carta d'identità, permesso di soggiorno o patente con te",
+  "travelPlacesLabel": "Città o paese",
+  "travelPlacesOptional": "Città o paese (facoltativo)",
+  "travelPlacesHint": "Per esempio Durban, o Tokyo, Osaka",
+  "secLocationTitle": "Usa la mia posizione per i viaggi",
+  "secLocationSubtitle": "Mostra se sei a casa o in viaggio quando chiedi dei viaggi. Viene usato solo il paese e non viene salvato.",
+  "secLocationDenied": "La posizione è disattivata per Vaultara. Puoi consentirla nelle impostazioni del telefono.",
+  "assistantLocationTitle": "Usa la mia posizione",
+  "assistantLocationNote": "Vaultara controlla solo in quale paese sei. La tua posizione esatta non viene inviata né salvata.",
+  "assistantLocationShared": "Ho attivato la posizione",
+  "assistantLocationOff": "La posizione è disattivata. Puoi attivarla in Sicurezza e privacy."
 }

@@ -6578,4 +6578,37 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Ovozli kiritish to\'xtadi. Qayta urinib ko\'ring.';
+
+  @override
+  String get travelItemIdCard => 'Shaxsiy guvohnoma, yashash ruxsatnomasi yoki haydovchilik guvohnomasi yoningizda';
+
+  @override
+  String get travelPlacesLabel => 'Shahar yoki shaharcha';
+
+  @override
+  String get travelPlacesOptional => 'Shahar yoki shaharcha (ixtiyoriy)';
+
+  @override
+  String get travelPlacesHint => 'Masalan Durban, yoki Tokio, Osaka';
+
+  @override
+  String get secLocationTitle => 'Sayohatlar uchun joylashuvimdan foydalanish';
+
+  @override
+  String get secLocationSubtitle => 'Sayohat haqida so\'raganingizda uydamisiz yoki sayohatdamisiz ko\'rsatadi. Faqat davlat ishlatiladi va saqlanmaydi.';
+
+  @override
+  String get secLocationDenied => 'Vaultara uchun joylashuv o\'chiq. Telefon sozlamalarida ruxsat berishingiz mumkin.';
+
+  @override
+  String get assistantLocationTitle => 'Joylashuvimdan foydalanish';
+
+  @override
+  String get assistantLocationNote => 'Vaultara faqat qaysi davlatda ekaningizni tekshiradi. Aniq joylashuvingiz yuborilmaydi va saqlanmaydi.';
+
+  @override
+  String get assistantLocationShared => 'Joylashuvimni yoqdim';
+
+  @override
+  String get assistantLocationOff => 'Joylashuv o\'chiq. Uni Xavfsizlik va maxfiylik bo\'limida yoqishingiz mumkin.';
 }

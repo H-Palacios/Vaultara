@@ -6578,4 +6578,37 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Дауыспен енгізу тоқтады. Қайталап көріңіз.';
+
+  @override
+  String get travelItemIdCard => 'Жеке куәлік, тұруға рұқсат не жүргізуші куәлігі қасыңызда';
+
+  @override
+  String get travelPlacesLabel => 'Қала не елді мекен';
+
+  @override
+  String get travelPlacesOptional => 'Қала не елді мекен (міндетті емес)';
+
+  @override
+  String get travelPlacesHint => 'Мысалы Дурбан, не Токио, Осака';
+
+  @override
+  String get secLocationTitle => 'Сапарлар үшін орнымды пайдалану';
+
+  @override
+  String get secLocationSubtitle => 'Сапар туралы сұрағанда үйде не сапарда екеніңізді көрсетеді. Тек ел пайдаланылады және сақталмайды.';
+
+  @override
+  String get secLocationDenied => 'Vaultara үшін орын өшірулі. Телефон баптауларында рұқсат бере аласыз.';
+
+  @override
+  String get assistantLocationTitle => 'Орнымды пайдалану';
+
+  @override
+  String get assistantLocationNote => 'Vaultara тек қай елде екеніңізді тексереді. Нақты орныңыз жіберілмейді және сақталмайды.';
+
+  @override
+  String get assistantLocationShared => 'Орнымды қостым';
+
+  @override
+  String get assistantLocationOff => 'Орын өшірулі. Қауіпсіздік және құпиялылық бөлімінде қоса аласыз.';
 }

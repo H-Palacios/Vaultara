@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Poskusite: Dodaj moj potni list, poteče maja 2031",
   "assistantVoiceDone": "Končano",
   "assistantVoiceNoSpeech": "Nič ni bilo slišati. Tapnite mikrofon in poskusite znova.",
-  "assistantVoiceFailed": "Glasovni vnos se je ustavil. Poskusite znova."
+  "assistantVoiceFailed": "Glasovni vnos se je ustavil. Poskusite znova.",
+  "travelItemIdCard": "Osebna izkaznica, dovoljenje za prebivanje ali vozniško dovoljenje s seboj",
+  "travelPlacesLabel": "Mesto ali kraj",
+  "travelPlacesOptional": "Mesto ali kraj (neobvezno)",
+  "travelPlacesHint": "Na primer Durban, ali Tokio, Osaka",
+  "secLocationTitle": "Uporabi mojo lokacijo za potovanja",
+  "secLocationSubtitle": "Pokaže, ali ste doma ali na poti, ko sprašujete o potovanjih. Uporablja se le država in se ne shrani.",
+  "secLocationDenied": "Lokacija je za Vaultaro izklopljena. Dovolite jo lahko v nastavitvah telefona.",
+  "assistantLocationTitle": "Uporabi mojo lokacijo",
+  "assistantLocationNote": "Vaultara preveri le, v kateri državi ste. Vaša natančna lokacija se ne pošlje in ne shrani.",
+  "assistantLocationShared": "Vklopil sem lokacijo",
+  "assistantLocationOff": "Lokacija je izklopljena. Vklopite jo lahko v Varnost in zasebnost."
 }

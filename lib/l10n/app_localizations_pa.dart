@@ -6578,4 +6578,37 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ਆਵਾਜ਼ ਇਨਪੁੱਟ ਰੁਕ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get travelItemIdCard => 'ਪਛਾਣ ਪੱਤਰ, ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ ਜਾਂ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨਾਲ';
+
+  @override
+  String get travelPlacesLabel => 'ਸ਼ਹਿਰ ਜਾਂ ਕਸਬਾ';
+
+  @override
+  String get travelPlacesOptional => 'ਸ਼ਹਿਰ ਜਾਂ ਕਸਬਾ (ਵਿਕਲਪਿਕ)';
+
+  @override
+  String get travelPlacesHint => 'ਜਿਵੇਂ ਡਰਬਨ, ਜਾਂ ਟੋਕੀਓ, ਓਸਾਕਾ';
+
+  @override
+  String get secLocationTitle => 'ਯਾਤਰਾਵਾਂ ਲਈ ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ';
+
+  @override
+  String get secLocationSubtitle => 'ਯਾਤਰਾ ਬਾਰੇ ਪੁੱਛਣ \'ਤੇ ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਘਰ ਹੋ ਜਾਂ ਯਾਤਰਾ \'ਤੇ। ਸਿਰਫ਼ ਦੇਸ਼ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾਂਦਾ।';
+
+  @override
+  String get secLocationDenied => 'Vaultara ਲਈ ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਫ਼ੋਨ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਇਜਾਜ਼ਤ ਦੇ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get assistantLocationTitle => 'ਮੇਰਾ ਟਿਕਾਣਾ ਵਰਤੋ';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ਸਿਰਫ਼ ਦੇਖਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਿਸ ਦੇਸ਼ ਵਿੱਚ ਹੋ। ਤੁਹਾਡਾ ਸਹੀ ਟਿਕਾਣਾ ਨਾ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ ਨਾ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ।';
+
+  @override
+  String get assistantLocationShared => 'ਮੈਂ ਆਪਣਾ ਟਿਕਾਣਾ ਚਾਲੂ ਕੀਤਾ';
+
+  @override
+  String get assistantLocationOff => 'ਟਿਕਾਣਾ ਬੰਦ ਹੈ। ਤੁਸੀਂ ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।';
 }

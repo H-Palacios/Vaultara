@@ -2057,5 +2057,16 @@
   "assistantVoiceHint": "Zama: Engeza iphasipoti yami, iphelelwa ngoMeyi 2031",
   "assistantVoiceDone": "Kuqediwe",
   "assistantVoiceNoSpeech": "Akukho okuzwakele. Thepha imakrofoni bese uzama futhi.",
-  "assistantVoiceFailed": "Ukufaka ngezwi kumile. Zama futhi."
+  "assistantVoiceFailed": "Ukufaka ngezwi kumile. Zama futhi.",
+  "travelItemIdCard": "Umazisi, imvume yokuhlala noma ilayisense yokushayela nawe",
+  "travelPlacesLabel": "Idolobha",
+  "travelPlacesOptional": "Idolobha (ongakukhetha)",
+  "travelPlacesHint": "Isibonelo iDurban, noma iTokyo, iOsaka",
+  "secLocationTitle": "Sebenzisa indawo yami ohambweni",
+  "secLocationSubtitle": "Ikhombisa ukuthi usekhaya noma usohambweni uma ubuza ngohambo. Kusetshenziswa izwe kuphela futhi aligcinwa.",
+  "secLocationDenied": "Indawo ivaliwe ku-Vaultara. Ungayivumela kuzilungiselelo zefoni.",
+  "assistantLocationTitle": "Sebenzisa indawo yami",
+  "assistantLocationNote": "I-Vaultara ibheka kuphela ukuthi ukuliphi izwe. Indawo yakho eqondile ayithunyelwa futhi ayigcinwa.",
+  "assistantLocationShared": "Ngivule indawo yami",
+  "assistantLocationOff": "Indawo ivaliwe. Ungayivula ku-Ukuphepha nobumfihlo."
 }

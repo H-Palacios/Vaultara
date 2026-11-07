@@ -6526,4 +6526,37 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ການປ້ອນດ້ວຍສຽງຢຸດແລ້ວ. ລອງໃໝ່.';
+
+  @override
+  String get travelItemIdCard => 'ບັດປະຈຳຕົວ, ໃບອະນຸຍາດພັກເຊົາ ຫຼື ໃບຂັບຂີ່ຕິດຕົວ';
+
+  @override
+  String get travelPlacesLabel => 'ເມືອງ';
+
+  @override
+  String get travelPlacesOptional => 'ເມືອງ (ບໍ່ບັງຄັບ)';
+
+  @override
+  String get travelPlacesHint => 'ຕົວຢ່າງ Durban, ຫຼື ໂຕກຽວ, ໂອຊາກາ';
+
+  @override
+  String get secLocationTitle => 'ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍສຳລັບການເດີນທາງ';
+
+  @override
+  String get secLocationSubtitle => 'ສະແດງວ່າທ່ານຢູ່ເຮືອນ ຫຼື ກຳລັງເດີນທາງ ເມື່ອຖາມກ່ຽວກັບການເດີນທາງ. ໃຊ້ພຽງປະເທດ ແລະ ບໍ່ບັນທຶກ.';
+
+  @override
+  String get secLocationDenied => 'ສະຖານທີ່ປິດຢູ່ສຳລັບ Vaultara. ທ່ານສາມາດອະນຸຍາດໃນການຕັ້ງຄ່າໂທລະສັບ.';
+
+  @override
+  String get assistantLocationTitle => 'ໃຊ້ສະຖານທີ່ຂອງຂ້ອຍ';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ກວດເບິ່ງພຽງວ່າທ່ານຢູ່ປະເທດໃດ. ສະຖານທີ່ແນ່ນອນຂອງທ່ານບໍ່ຖືກສົ່ງ ຫຼື ບັນທຶກ.';
+
+  @override
+  String get assistantLocationShared => 'ຂ້ອຍເປີດສະຖານທີ່ແລ້ວ';
+
+  @override
+  String get assistantLocationOff => 'ສະຖານທີ່ປິດຢູ່. ທ່ານສາມາດເປີດໄດ້ໃນຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວ.';
 }

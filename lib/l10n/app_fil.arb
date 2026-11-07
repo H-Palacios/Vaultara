@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "Subukan: Idagdag ang passport ko, mag-e-expire sa Mayo 2031",
   "assistantVoiceDone": "Tapos na",
   "assistantVoiceNoSpeech": "Walang narinig. I-tap ang mikropono at subukan ulit.",
-  "assistantVoiceFailed": "Huminto ang voice input. Subukan ulit."
+  "assistantVoiceFailed": "Huminto ang voice input. Subukan ulit.",
+  "travelItemIdCard": "ID card, residence permit o lisensya sa pagmamaneho na dala mo",
+  "travelPlacesLabel": "Lungsod o bayan",
+  "travelPlacesOptional": "Lungsod o bayan (opsyonal)",
+  "travelPlacesHint": "Halimbawa Durban, o Tokyo, Osaka",
+  "secLocationTitle": "Gamitin ang lokasyon ko para sa mga biyahe",
+  "secLocationSubtitle": "Ipinapakita kung nasa bahay ka o nagbibiyahe kapag nagtanong ka tungkol sa biyahe. Bansa lang ang ginagamit at hindi ito sine-save.",
+  "secLocationDenied": "Naka-off ang lokasyon para sa Vaultara. Puwede mo itong payagan sa settings ng phone.",
+  "assistantLocationTitle": "Gamitin ang lokasyon ko",
+  "assistantLocationNote": "Tinitingnan lang ng Vaultara kung saang bansa ka. Hindi ipinapadala o sine-save ang eksaktong lokasyon mo.",
+  "assistantLocationShared": "Binuksan ko ang lokasyon ko",
+  "assistantLocationOff": "Naka-off ang lokasyon. Puwede mo itong i-on sa Seguridad at privacy."
 }

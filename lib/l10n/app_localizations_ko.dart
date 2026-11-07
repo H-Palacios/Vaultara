@@ -6526,4 +6526,37 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => '음성 입력이 멈췄습니다. 다시 시도하세요.';
+
+  @override
+  String get travelItemIdCard => '신분증, 체류 허가증 또는 운전면허증 지참';
+
+  @override
+  String get travelPlacesLabel => '도시';
+
+  @override
+  String get travelPlacesOptional => '도시 (선택)';
+
+  @override
+  String get travelPlacesHint => '예: 더반, 또는 도쿄, 오사카';
+
+  @override
+  String get secLocationTitle => '여행에 내 위치 사용';
+
+  @override
+  String get secLocationSubtitle => '여행에 대해 물을 때 집에 있는지 여행 중인지 알려 줍니다. 국가만 사용하며 저장하지 않습니다.';
+
+  @override
+  String get secLocationDenied => 'Vaultara의 위치가 꺼져 있습니다. 휴대폰 설정에서 허용할 수 있습니다.';
+
+  @override
+  String get assistantLocationTitle => '내 위치 사용';
+
+  @override
+  String get assistantLocationNote => 'Vaultara는 어느 나라에 있는지만 확인합니다. 정확한 위치는 전송하거나 저장하지 않습니다.';
+
+  @override
+  String get assistantLocationShared => '위치를 켰어요';
+
+  @override
+  String get assistantLocationOff => '위치가 꺼져 있습니다. 보안 및 개인정보 보호에서 켤 수 있습니다.';
 }

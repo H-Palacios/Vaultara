@@ -2077,5 +2077,16 @@
   "assistantVoiceHint": "例：パスポートを追加して、2031年5月に期限切れ",
   "assistantVoiceDone": "完了",
   "assistantVoiceNoSpeech": "何も聞こえませんでした。マイクをタップしてもう一度お試しください。",
-  "assistantVoiceFailed": "音声入力が止まりました。もう一度お試しください。"
+  "assistantVoiceFailed": "音声入力が止まりました。もう一度お試しください。",
+  "travelItemIdCard": "身分証明書、在留カード、または運転免許証を携帯",
+  "travelPlacesLabel": "都市・町",
+  "travelPlacesOptional": "都市・町（任意）",
+  "travelPlacesHint": "例：ダーバン、または東京、大阪",
+  "secLocationTitle": "旅行に現在地を使う",
+  "secLocationSubtitle": "旅行について聞いたとき、自宅にいるか旅行中かを判断します。使うのは国だけで、保存されません。",
+  "secLocationDenied": "Vaultaraの位置情報がオフです。スマートフォンの設定で許可できます。",
+  "assistantLocationTitle": "現在地を使う",
+  "assistantLocationNote": "Vaultaraが確認するのはいる国だけです。正確な位置は送信も保存もされません。",
+  "assistantLocationShared": "位置情報をオンにしました",
+  "assistantLocationOff": "位置情報がオフです。セキュリティとプライバシーでオンにできます。"
 }

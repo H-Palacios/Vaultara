@@ -2103,5 +2103,16 @@
   "assistantVoiceHint": "Probeer: Voeg my paspoort by, dit verval in Mei 2031",
   "assistantVoiceDone": "Klaar",
   "assistantVoiceNoSpeech": "Niks is gehoor nie. Tik die mikrofoon en probeer weer.",
-  "assistantVoiceFailed": "Steminvoer het gestop. Probeer weer."
+  "assistantVoiceFailed": "Steminvoer het gestop. Probeer weer.",
+  "travelItemIdCard": "ID-kaart, verblyfpermit of rybewys by jou",
+  "travelPlacesLabel": "Stad of dorp",
+  "travelPlacesOptional": "Stad of dorp (opsioneel)",
+  "travelPlacesHint": "Byvoorbeeld Durban, of Tokio, Osaka",
+  "secLocationTitle": "Gebruik my ligging vir reise",
+  "secLocationSubtitle": "Wys of jy tuis is of reis wanneer jy oor reise vra. Net die land word gebruik en dit word nie gestoor nie.",
+  "secLocationDenied": "Ligging is af vir Vaultara. Jy kan dit in jou foon se instellings toelaat.",
+  "assistantLocationTitle": "Gebruik my ligging",
+  "assistantLocationNote": "Vaultara kyk net in watter land jy is. Jou presiese ligging word nie gestuur of gestoor nie.",
+  "assistantLocationShared": "Ek het my ligging aangeskakel",
+  "assistantLocationOff": "Ligging is af. Jy kan dit in Sekuriteit en privaatheid aanskakel."
 }

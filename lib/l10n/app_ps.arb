@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "هڅه وکړئ: زما پاسپورټ اضافه کړه، په مۍ 2031 کې پای ته رسېږي",
   "assistantVoiceDone": "بشپړ",
   "assistantVoiceNoSpeech": "هېڅ وانه ورېدل شول. مایکروفون ټک کړئ او بیا هڅه وکړئ.",
-  "assistantVoiceFailed": "غږیز داخلول ودرېدل. بیا هڅه وکړئ."
+  "assistantVoiceFailed": "غږیز داخلول ودرېدل. بیا هڅه وکړئ.",
+  "travelItemIdCard": "پېژند کارت، د اوسېدو جواز یا د موټر چلولو جواز درسره",
+  "travelPlacesLabel": "ښار یا ښارګوټی",
+  "travelPlacesOptional": "ښار یا ښارګوټی (اختیاري)",
+  "travelPlacesHint": "د بېلګې په توګه ډربن، یا توکیو، اوساکا",
+  "secLocationTitle": "د سفرونو لپاره زما موقعیت وکاروه",
+  "secLocationSubtitle": "کله چې د سفر په اړه پوښتنه کوئ ښيي چې کور کې یاست که په سفر. یوازې هېواد کارول کېږي او نه ساتل کېږي.",
+  "secLocationDenied": "د Vaultara لپاره موقعیت بند دی. تاسو کولی شئ د تلیفون په تنظیماتو کې اجازه ورکړئ.",
+  "assistantLocationTitle": "زما موقعیت وکاروه",
+  "assistantLocationNote": "Vaultara یوازې ګوري چې په کوم هېواد کې یاست. ستاسو دقیق موقعیت نه لېږل کېږي او نه ساتل کېږي.",
+  "assistantLocationShared": "ما خپل موقعیت چالان کړ",
+  "assistantLocationOff": "موقعیت بند دی. تاسو کولی شئ په امنیت او محرمیت کې یې چالان کړئ."
 }

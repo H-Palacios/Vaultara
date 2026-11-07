@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "प्रयास गर्नुहोस्: मेरो राहदानी थप, यो मे 2031 मा सकिन्छ",
   "assistantVoiceDone": "भयो",
   "assistantVoiceNoSpeech": "केही सुनिएन। माइक्रोफोन ट्याप गरेर फेरि प्रयास गर्नुहोस्।",
-  "assistantVoiceFailed": "आवाज इनपुट रोकियो। फेरि प्रयास गर्नुहोस्।"
+  "assistantVoiceFailed": "आवाज इनपुट रोकियो। फेरि प्रयास गर्नुहोस्।",
+  "travelItemIdCard": "परिचयपत्र, बसोबास अनुमति वा सवारी चालक अनुमतिपत्र साथमा",
+  "travelPlacesLabel": "सहर वा नगर",
+  "travelPlacesOptional": "सहर वा नगर (ऐच्छिक)",
+  "travelPlacesHint": "जस्तै डर्बन, वा टोकियो, ओसाका",
+  "secLocationTitle": "यात्राका लागि मेरो स्थान प्रयोग गर्नुहोस्",
+  "secLocationSubtitle": "यात्राबारे सोध्दा तपाईं घरमा हुनुहुन्छ कि यात्रामा देखाउँछ। देश मात्र प्रयोग हुन्छ र सुरक्षित गरिँदैन।",
+  "secLocationDenied": "Vaultara का लागि स्थान बन्द छ। फोन सेटिङमा अनुमति दिन सक्नुहुन्छ।",
+  "assistantLocationTitle": "मेरो स्थान प्रयोग गर्नुहोस्",
+  "assistantLocationNote": "Vaultara ले तपाईं कुन देशमा हुनुहुन्छ मात्र जाँच्छ। तपाईंको सही स्थान पठाइँदैन वा सुरक्षित गरिँदैन।",
+  "assistantLocationShared": "मैले मेरो स्थान खोलें",
+  "assistantLocationOff": "स्थान बन्द छ। सुरक्षा र गोपनीयतामा खोल्न सक्नुहुन्छ।"
 }

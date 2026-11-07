@@ -2103,5 +2103,16 @@
   "assistantVoiceHint": "ይሞክሩ፦ ፓስፖርቴን ያክሉ፣ በግንቦት 2031 ያበቃል",
   "assistantVoiceDone": "ተጠናቋል",
   "assistantVoiceNoSpeech": "ምንም አልተሰማም። ማይክሮፎኑን ነክተው እንደገና ይሞክሩ።",
-  "assistantVoiceFailed": "የድምፅ ግቤት ቆሟል። እንደገና ይሞክሩ።"
+  "assistantVoiceFailed": "የድምፅ ግቤት ቆሟል። እንደገና ይሞክሩ።",
+  "travelItemIdCard": "መታወቂያ ካርድ፣ የመኖሪያ ፈቃድ ወይም መንጃ ፈቃድ ይዘው",
+  "travelPlacesLabel": "ከተማ",
+  "travelPlacesOptional": "ከተማ (አማራጭ)",
+  "travelPlacesHint": "ለምሳሌ ደርባን፣ ወይም ቶኪዮ፣ ኦሳካ",
+  "secLocationTitle": "ለጉዞዎች አካባቢዬን ተጠቀም",
+  "secLocationSubtitle": "ስለ ጉዞዎች ሲጠይቁ ቤት ወይም በጉዞ ላይ መሆንዎን ያሳያል። አገሩ ብቻ ነው የሚጠቀመው፣ አይቀመጥም።",
+  "secLocationDenied": "ለVaultara አካባቢ ጠፍቷል። በስልክዎ ቅንብሮች መፍቀድ ይችላሉ።",
+  "assistantLocationTitle": "አካባቢዬን ተጠቀም",
+  "assistantLocationNote": "Vaultara የትኛው አገር እንዳሉ ብቻ ያያል። ትክክለኛ አካባቢዎ አይላክም አይቀመጥም።",
+  "assistantLocationShared": "አካባቢዬን አብርቻለሁ",
+  "assistantLocationOff": "አካባቢ ጠፍቷል። በደህንነት እና ግላዊነት ማብራት ይችላሉ።"
 }

@@ -6524,4 +6524,37 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ការបញ្ចូលសំឡេងបានឈប់។ សាកម្ដងទៀត។';
+
+  @override
+  String get travelItemIdCard => 'អត្តសញ្ញាណប័ណ្ណ ប័ណ្ណស្នាក់នៅ ឬប័ណ្ណបើកបរជាប់ខ្លួន';
+
+  @override
+  String get travelPlacesLabel => 'ទីក្រុង ឬក្រុង';
+
+  @override
+  String get travelPlacesOptional => 'ទីក្រុង ឬក្រុង (ស្រេចចិត្ត)';
+
+  @override
+  String get travelPlacesHint => 'ឧទាហរណ៍ Durban ឬ តូក្យូ, អូសាកា';
+
+  @override
+  String get secLocationTitle => 'ប្រើទីតាំងរបស់ខ្ញុំសម្រាប់ដំណើរ';
+
+  @override
+  String get secLocationSubtitle => 'បង្ហាញថាអ្នកនៅផ្ទះ ឬកំពុងធ្វើដំណើរ ពេលអ្នកសួរអំពីដំណើរ។ ប្រើតែប្រទេសប៉ុណ្ណោះ ហើយមិនរក្សាទុកទេ។';
+
+  @override
+  String get secLocationDenied => 'ទីតាំងត្រូវបានបិទសម្រាប់ Vaultara។ អ្នកអាចអនុញ្ញាតក្នុងការកំណត់ទូរសព្ទ។';
+
+  @override
+  String get assistantLocationTitle => 'ប្រើទីតាំងរបស់ខ្ញុំ';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ពិនិត្យតែប្រទេសដែលអ្នកនៅប៉ុណ្ណោះ។ ទីតាំងពិតប្រាកដរបស់អ្នកមិនត្រូវបានផ្ញើ ឬរក្សាទុកទេ។';
+
+  @override
+  String get assistantLocationShared => 'ខ្ញុំបានបើកទីតាំងរបស់ខ្ញុំ';
+
+  @override
+  String get assistantLocationOff => 'ទីតាំងត្រូវបានបិទ។ អ្នកអាចបើកវានៅក្នុងសុវត្ថិភាព និងឯកជនភាព។';
 }

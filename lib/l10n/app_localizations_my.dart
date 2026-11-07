@@ -6524,4 +6524,37 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'အသံထည့်သွင်းမှု ရပ်သွားသည်။ ထပ်စမ်းပါ။';
+
+  @override
+  String get travelItemIdCard => 'မှတ်ပုံတင်၊ နေထိုင်ခွင့် သို့မဟုတ် ယာဉ်မောင်းလိုင်စင် ကိုယ်နှင့်အတူ';
+
+  @override
+  String get travelPlacesLabel => 'မြို့';
+
+  @override
+  String get travelPlacesOptional => 'မြို့ (ရွေးချယ်နိုင်)';
+
+  @override
+  String get travelPlacesHint => 'ဥပမာ Durban, သို့မဟုတ် တိုကျို၊ အိုဆာကာ';
+
+  @override
+  String get secLocationTitle => 'ခရီးစဉ်များအတွက် ကျွန်ုပ်၏တည်နေရာ သုံးရန်';
+
+  @override
+  String get secLocationSubtitle => 'ခရီးအကြောင်း မေးသည့်အခါ အိမ်တွင်လား ခရီးထွက်နေလား ပြသည်။ နိုင်ငံကိုသာ သုံးပြီး မသိမ်းပါ။';
+
+  @override
+  String get secLocationDenied => 'Vaultara အတွက် တည်နေရာ ပိတ်ထားသည်။ ဖုန်းဆက်တင်တွင် ခွင့်ပြုနိုင်သည်။';
+
+  @override
+  String get assistantLocationTitle => 'ကျွန်ုပ်၏တည်နေရာ သုံးရန်';
+
+  @override
+  String get assistantLocationNote => 'Vaultara သည် သင်ရှိသည့်နိုင်ငံကိုသာ စစ်ဆေးသည်။ တိကျသောတည်နေရာကို မပို့၊ မသိမ်းပါ။';
+
+  @override
+  String get assistantLocationShared => 'တည်နေရာ ဖွင့်လိုက်ပါပြီ';
+
+  @override
+  String get assistantLocationOff => 'တည်နေရာ ပိတ်ထားသည်။ လုံခြုံရေးနှင့် ကိုယ်ရေးကိုယ်တာတွင် ဖွင့်နိုင်သည်။';
 }

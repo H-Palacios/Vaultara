@@ -6578,4 +6578,37 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'A hangbevitel leállt. Próbáld újra.';
+
+  @override
+  String get travelItemIdCard => 'Személyi igazolvány, tartózkodási engedély vagy jogosítvány nálad';
+
+  @override
+  String get travelPlacesLabel => 'Város vagy település';
+
+  @override
+  String get travelPlacesOptional => 'Város vagy település (nem kötelező)';
+
+  @override
+  String get travelPlacesHint => 'Például Durban, vagy Tokió, Oszaka';
+
+  @override
+  String get secLocationTitle => 'Helyzetem használata utazásokhoz';
+
+  @override
+  String get secLocationSubtitle => 'Utazásról kérdezve megmutatja, hogy otthon vagy-e vagy úton. Csak az ország kerül felhasználásra, és nem mentjük.';
+
+  @override
+  String get secLocationDenied => 'A helymeghatározás ki van kapcsolva a Vaultara számára. A telefon beállításaiban engedélyezheted.';
+
+  @override
+  String get assistantLocationTitle => 'Helyzetem használata';
+
+  @override
+  String get assistantLocationNote => 'A Vaultara csak azt nézi, melyik országban vagy. A pontos helyzetedet nem küldjük el és nem mentjük.';
+
+  @override
+  String get assistantLocationShared => 'Bekapcsoltam a helyzetemet';
+
+  @override
+  String get assistantLocationOff => 'A helymeghatározás ki van kapcsolva. A Biztonság és adatvédelem részben bekapcsolhatod.';
 }

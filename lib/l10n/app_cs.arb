@@ -2096,5 +2096,16 @@
   "assistantVoiceHint": "Zkuste: Přidej můj pas, platí do května 2031",
   "assistantVoiceDone": "Hotovo",
   "assistantVoiceNoSpeech": "Nic nebylo slyšet. Klepněte na mikrofon a zkuste to znovu.",
-  "assistantVoiceFailed": "Hlasové zadávání se zastavilo. Zkuste to znovu."
+  "assistantVoiceFailed": "Hlasové zadávání se zastavilo. Zkuste to znovu.",
+  "travelItemIdCard": "Občanský průkaz, povolení k pobytu nebo řidičský průkaz s sebou",
+  "travelPlacesLabel": "Město nebo obec",
+  "travelPlacesOptional": "Město nebo obec (nepovinné)",
+  "travelPlacesHint": "Například Durban, nebo Tokio, Ósaka",
+  "secLocationTitle": "Používat moji polohu pro cesty",
+  "secLocationSubtitle": "Ukazuje, jestli jste doma, nebo na cestách, když se ptáte na cesty. Používá se jen země a neukládá se.",
+  "secLocationDenied": "Poloha je pro Vaultaru vypnutá. Můžete ji povolit v nastavení telefonu.",
+  "assistantLocationTitle": "Použít moji polohu",
+  "assistantLocationNote": "Vaultara zjišťuje jen to, v jaké zemi jste. Vaše přesná poloha se neodesílá ani neukládá.",
+  "assistantLocationShared": "Zapnul jsem polohu",
+  "assistantLocationOff": "Poloha je vypnutá. Můžete ji zapnout v Zabezpečení a soukromí."
 }

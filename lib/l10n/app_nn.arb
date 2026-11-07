@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Prøv: Legg til passet mitt, det går ut i mai 2031",
   "assistantVoiceDone": "Ferdig",
   "assistantVoiceNoSpeech": "Ingenting vart høyrt. Trykk på mikrofonen og prøv igjen.",
-  "assistantVoiceFailed": "Taleinndata stoppa. Prøv igjen."
+  "assistantVoiceFailed": "Taleinndata stoppa. Prøv igjen.",
+  "travelItemIdCard": "ID-kort, opphaldsløyve eller førarkort med deg",
+  "travelPlacesLabel": "By eller stad",
+  "travelPlacesOptional": "By eller stad (valfritt)",
+  "travelPlacesHint": "Til dømes Durban, eller Tokyo, Osaka",
+  "secLocationTitle": "Bruk posisjonen min for reiser",
+  "secLocationSubtitle": "Viser om du er heime eller på reise når du spør om reiser. Berre landet vert brukt, og det vert ikkje lagra.",
+  "secLocationDenied": "Posisjon er av for Vaultara. Du kan tillate det i innstillingane på telefonen.",
+  "assistantLocationTitle": "Bruk posisjonen min",
+  "assistantLocationNote": "Vaultara sjekkar berre kva land du er i. Den nøyaktige posisjonen din vert ikkje send eller lagra.",
+  "assistantLocationShared": "Eg har slått på posisjonen",
+  "assistantLocationOff": "Posisjon er av. Du kan slå han på under Tryggleik og personvern."
 }

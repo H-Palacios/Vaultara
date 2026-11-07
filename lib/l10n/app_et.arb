@@ -2230,5 +2230,16 @@
   "assistantVoiceHint": "Proovi: Lisa minu pass, see aegub 2031. aasta mais",
   "assistantVoiceDone": "Valmis",
   "assistantVoiceNoSpeech": "Midagi ei kuuldud. Puuduta mikrofoni ja proovi uuesti.",
-  "assistantVoiceFailed": "Häälsisestus peatus. Proovi uuesti."
+  "assistantVoiceFailed": "Häälsisestus peatus. Proovi uuesti.",
+  "travelItemIdCard": "ID-kaart, elamisluba või juhiluba kaasas",
+  "travelPlacesLabel": "Linn või asula",
+  "travelPlacesOptional": "Linn või asula (valikuline)",
+  "travelPlacesHint": "Näiteks Durban, või Tokyo, Osaka",
+  "secLocationTitle": "Kasuta reiside jaoks minu asukohta",
+  "secLocationSubtitle": "Näitab reisidest küsides, kas oled kodus või reisil. Kasutatakse ainult riiki ja seda ei salvestata.",
+  "secLocationDenied": "Asukoht on Vaultara jaoks väljas. Saad selle telefoni seadetes lubada.",
+  "assistantLocationTitle": "Kasuta minu asukohta",
+  "assistantLocationNote": "Vaultara kontrollib ainult, mis riigis sa oled. Sinu täpset asukohta ei saadeta ega salvestata.",
+  "assistantLocationShared": "Lülitasin asukoha sisse",
+  "assistantLocationOff": "Asukoht on väljas. Saad selle sisse lülitada jaotises Turvalisus ja privaatsus."
 }

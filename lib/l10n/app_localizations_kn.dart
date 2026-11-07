@@ -6578,4 +6578,37 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'ಧ್ವನಿ ಇನ್‌ಪುಟ್ ನಿಂತಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get travelItemIdCard => 'ಗುರುತಿನ ಚೀಟಿ, ನಿವಾಸ ಪರವಾನಗಿ ಅಥವಾ ಚಾಲನಾ ಪರವಾನಗಿ ಜೊತೆಗೆ';
+
+  @override
+  String get travelPlacesLabel => 'ನಗರ ಅಥವಾ ಪಟ್ಟಣ';
+
+  @override
+  String get travelPlacesOptional => 'ನಗರ ಅಥವಾ ಪಟ್ಟಣ (ಐಚ್ಛಿಕ)';
+
+  @override
+  String get travelPlacesHint => 'ಉದಾಹರಣೆಗೆ ಡರ್ಬನ್, ಅಥವಾ ಟೋಕಿಯೋ, ಒಸಾಕಾ';
+
+  @override
+  String get secLocationTitle => 'ಪ್ರವಾಸಗಳಿಗೆ ನನ್ನ ಸ್ಥಳ ಬಳಸಿ';
+
+  @override
+  String get secLocationSubtitle => 'ಪ್ರವಾಸದ ಬಗ್ಗೆ ಕೇಳಿದಾಗ ನೀವು ಮನೆಯಲ್ಲಿದ್ದೀರೋ ಪ್ರವಾಸದಲ್ಲಿದ್ದೀರೋ ತೋರಿಸುತ್ತದೆ. ದೇಶವನ್ನು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ, ಉಳಿಸಲಾಗುವುದಿಲ್ಲ.';
+
+  @override
+  String get secLocationDenied => 'Vaultara ಗೆ ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಫೋನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಅನುಮತಿಸಬಹುದು.';
+
+  @override
+  String get assistantLocationTitle => 'ನನ್ನ ಸ್ಥಳ ಬಳಸಿ';
+
+  @override
+  String get assistantLocationNote => 'Vaultara ನೀವು ಯಾವ ದೇಶದಲ್ಲಿದ್ದೀರಿ ಎಂಬುದನ್ನು ಮಾತ್ರ ಪರಿಶೀಲಿಸುತ್ತದೆ. ನಿಮ್ಮ ನಿಖರ ಸ್ಥಳವನ್ನು ಕಳುಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಉಳಿಸುವುದಿಲ್ಲ.';
+
+  @override
+  String get assistantLocationShared => 'ನಾನು ನನ್ನ ಸ್ಥಳ ಆನ್ ಮಾಡಿದ್ದೇನೆ';
+
+  @override
+  String get assistantLocationOff => 'ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಭದ್ರತೆ ಮತ್ತು ಗೌಪ್ಯತೆಯಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು.';
 }

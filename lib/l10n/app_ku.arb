@@ -2065,5 +2065,16 @@
   "assistantVoiceHint": "Biceribîne: Pasaporta min zêde bike, di Gulana 2031an de diqede",
   "assistantVoiceDone": "Qediya",
   "assistantVoiceNoSpeech": "Tiştek nehat bihîstin. Li mîkrofonê bitepîne û dîsa biceribîne.",
-  "assistantVoiceFailed": "Têketina dengî rawestiya. Dîsa biceribîne."
+  "assistantVoiceFailed": "Têketina dengî rawestiya. Dîsa biceribîne.",
+  "travelItemIdCard": "Nasname, destûra niştecîhbûnê an ehliyeta ajotinê bi xwe re",
+  "travelPlacesLabel": "Bajar an navçe",
+  "travelPlacesOptional": "Bajar an navçe (vebijarkî)",
+  "travelPlacesHint": "Mînak Durban, an Tokyo, Osaka",
+  "secLocationTitle": "Cihê min ji bo rêwîtiyan bikar bîne",
+  "secLocationSubtitle": "Dema tu li ser rêwîtiyê dipirsî nîşan dide ka tu li malê yî an di rêwîtiyê de. Tenê welat tê bikaranîn û nayê tomarkirin.",
+  "secLocationDenied": "Cih ji bo Vaultara girtî ye. Tu dikarî di mîhengên telefonê de destûrê bidî.",
+  "assistantLocationTitle": "Cihê min bikar bîne",
+  "assistantLocationNote": "Vaultara tenê kontrol dike ka tu li kîjan welatî yî. Cihê te yê rast nayê şandin û nayê tomarkirin.",
+  "assistantLocationShared": "Min cihê xwe vekir",
+  "assistantLocationOff": "Cih girtî ye. Tu dikarî di Ewlehî û nepenîtiyê de veki."
 }

@@ -2083,5 +2083,16 @@
   "assistantVoiceHint": "Próbáld: Add hozzá az útlevelem, 2031 májusában jár le",
   "assistantVoiceDone": "Kész",
   "assistantVoiceNoSpeech": "Nem hallatszott semmi. Koppints a mikrofonra, és próbáld újra.",
-  "assistantVoiceFailed": "A hangbevitel leállt. Próbáld újra."
+  "assistantVoiceFailed": "A hangbevitel leállt. Próbáld újra.",
+  "travelItemIdCard": "Személyi igazolvány, tartózkodási engedély vagy jogosítvány nálad",
+  "travelPlacesLabel": "Város vagy település",
+  "travelPlacesOptional": "Város vagy település (nem kötelező)",
+  "travelPlacesHint": "Például Durban, vagy Tokió, Oszaka",
+  "secLocationTitle": "Helyzetem használata utazásokhoz",
+  "secLocationSubtitle": "Utazásról kérdezve megmutatja, hogy otthon vagy-e vagy úton. Csak az ország kerül felhasználásra, és nem mentjük.",
+  "secLocationDenied": "A helymeghatározás ki van kapcsolva a Vaultara számára. A telefon beállításaiban engedélyezheted.",
+  "assistantLocationTitle": "Helyzetem használata",
+  "assistantLocationNote": "A Vaultara csak azt nézi, melyik országban vagy. A pontos helyzetedet nem küldjük el és nem mentjük.",
+  "assistantLocationShared": "Bekapcsoltam a helyzetemet",
+  "assistantLocationOff": "A helymeghatározás ki van kapcsolva. A Biztonság és adatvédelem részben bekapcsolhatod."
 }

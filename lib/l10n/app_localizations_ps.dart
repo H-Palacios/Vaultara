@@ -6578,4 +6578,37 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'غږیز داخلول ودرېدل. بیا هڅه وکړئ.';
+
+  @override
+  String get travelItemIdCard => 'پېژند کارت، د اوسېدو جواز یا د موټر چلولو جواز درسره';
+
+  @override
+  String get travelPlacesLabel => 'ښار یا ښارګوټی';
+
+  @override
+  String get travelPlacesOptional => 'ښار یا ښارګوټی (اختیاري)';
+
+  @override
+  String get travelPlacesHint => 'د بېلګې په توګه ډربن، یا توکیو، اوساکا';
+
+  @override
+  String get secLocationTitle => 'د سفرونو لپاره زما موقعیت وکاروه';
+
+  @override
+  String get secLocationSubtitle => 'کله چې د سفر په اړه پوښتنه کوئ ښيي چې کور کې یاست که په سفر. یوازې هېواد کارول کېږي او نه ساتل کېږي.';
+
+  @override
+  String get secLocationDenied => 'د Vaultara لپاره موقعیت بند دی. تاسو کولی شئ د تلیفون په تنظیماتو کې اجازه ورکړئ.';
+
+  @override
+  String get assistantLocationTitle => 'زما موقعیت وکاروه';
+
+  @override
+  String get assistantLocationNote => 'Vaultara یوازې ګوري چې په کوم هېواد کې یاست. ستاسو دقیق موقعیت نه لېږل کېږي او نه ساتل کېږي.';
+
+  @override
+  String get assistantLocationShared => 'ما خپل موقعیت چالان کړ';
+
+  @override
+  String get assistantLocationOff => 'موقعیت بند دی. تاسو کولی شئ په امنیت او محرمیت کې یې چالان کړئ.';
 }

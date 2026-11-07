@@ -6718,4 +6718,37 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Голосове введення зупинилося. Спробуйте ще раз.';
+
+  @override
+  String get travelItemIdCard => 'Посвідчення особи, посвідка на проживання або водійське посвідчення з собою';
+
+  @override
+  String get travelPlacesLabel => 'Місто або селище';
+
+  @override
+  String get travelPlacesOptional => 'Місто або селище (необов\'язково)';
+
+  @override
+  String get travelPlacesHint => 'Наприклад Дурбан, або Токіо, Осака';
+
+  @override
+  String get secLocationTitle => 'Використовувати моє місцезнаходження для поїздок';
+
+  @override
+  String get secLocationSubtitle => 'Показує, чи ви вдома, чи в поїздці, коли ви питаєте про поїздки. Використовується лише країна, і вона не зберігається.';
+
+  @override
+  String get secLocationDenied => 'Місцезнаходження для Vaultara вимкнено. Його можна дозволити в налаштуваннях телефона.';
+
+  @override
+  String get assistantLocationTitle => 'Використати моє місцезнаходження';
+
+  @override
+  String get assistantLocationNote => 'Vaultara перевіряє лише, в якій ви країні. Точне місцезнаходження не надсилається і не зберігається.';
+
+  @override
+  String get assistantLocationShared => 'Я увімкнув місцезнаходження';
+
+  @override
+  String get assistantLocationOff => 'Місцезнаходження вимкнено. Його можна увімкнути в розділі Безпека і конфіденційність.';
 }

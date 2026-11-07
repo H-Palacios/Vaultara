@@ -6641,4 +6641,37 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'Balss ievade apstājās. Mēģiniet vēlreiz.';
+
+  @override
+  String get travelItemIdCard => 'Personas apliecība, uzturēšanās atļauja vai autovadītāja apliecība līdzi';
+
+  @override
+  String get travelPlacesLabel => 'Pilsēta vai ciems';
+
+  @override
+  String get travelPlacesOptional => 'Pilsēta vai ciems (nav obligāti)';
+
+  @override
+  String get travelPlacesHint => 'Piemēram, Durbana, vai Tokija, Osaka';
+
+  @override
+  String get secLocationTitle => 'Izmantot manu atrašanās vietu ceļojumiem';
+
+  @override
+  String get secLocationSubtitle => 'Rāda, vai esat mājās vai ceļojumā, kad jautājat par ceļojumiem. Tiek izmantota tikai valsts, un tā netiek saglabāta.';
+
+  @override
+  String get secLocationDenied => 'Atrašanās vieta Vaultara ir izslēgta. To var atļaut tālruņa iestatījumos.';
+
+  @override
+  String get assistantLocationTitle => 'Izmantot manu atrašanās vietu';
+
+  @override
+  String get assistantLocationNote => 'Vaultara pārbauda tikai, kurā valstī esat. Jūsu precīzā atrašanās vieta netiek sūtīta vai saglabāta.';
+
+  @override
+  String get assistantLocationShared => 'Ieslēdzu atrašanās vietu';
+
+  @override
+  String get assistantLocationOff => 'Atrašanās vieta ir izslēgta. To var ieslēgt sadaļā Drošība un privātums.';
 }

@@ -2072,5 +2072,16 @@
   "assistantVoiceHint": "Prueba: Añade mi pasaporte, caduca en mayo de 2031",
   "assistantVoiceDone": "Listo",
   "assistantVoiceNoSpeech": "No se ha oído nada. Toca el micrófono e inténtalo de nuevo.",
-  "assistantVoiceFailed": "La entrada de voz se ha detenido. Inténtalo de nuevo."
+  "assistantVoiceFailed": "La entrada de voz se ha detenido. Inténtalo de nuevo.",
+  "travelItemIdCard": "DNI, permiso de residencia o carné de conducir contigo",
+  "travelPlacesLabel": "Ciudad o pueblo",
+  "travelPlacesOptional": "Ciudad o pueblo (opcional)",
+  "travelPlacesHint": "Por ejemplo Durban, o Tokio, Osaka",
+  "secLocationTitle": "Usar mi ubicación para viajes",
+  "secLocationSubtitle": "Muestra si estás en casa o de viaje cuando preguntas por viajes. Solo se usa el país y no se guarda.",
+  "secLocationDenied": "La ubicación está desactivada para Vaultara. Puedes permitirla en los ajustes del teléfono.",
+  "assistantLocationTitle": "Usar mi ubicación",
+  "assistantLocationNote": "Vaultara solo comprueba en qué país estás. Tu ubicación exacta no se envía ni se guarda.",
+  "assistantLocationShared": "He activado mi ubicación",
+  "assistantLocationOff": "La ubicación está desactivada. Puedes activarla en Seguridad y privacidad."
 }

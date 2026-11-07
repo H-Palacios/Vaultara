@@ -6578,4 +6578,37 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantVoiceFailed => 'குரல் உள்ளீடு நின்றது. மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get travelItemIdCard => 'அடையாள அட்டை, வசிப்பிட அனுமதி அல்லது ஓட்டுநர் உரிமம் உடன்';
+
+  @override
+  String get travelPlacesLabel => 'நகரம் அல்லது ஊர்';
+
+  @override
+  String get travelPlacesOptional => 'நகரம் அல்லது ஊர் (விருப்பம்)';
+
+  @override
+  String get travelPlacesHint => 'எ.கா. டர்பன், அல்லது டோக்கியோ, ஒசாகா';
+
+  @override
+  String get secLocationTitle => 'பயணங்களுக்கு என் இருப்பிடத்தைப் பயன்படுத்து';
+
+  @override
+  String get secLocationSubtitle => 'பயணம் பற்றிக் கேட்கும்போது நீங்கள் வீட்டில் இருக்கிறீர்களா பயணத்தில் இருக்கிறீர்களா எனக் காட்டும். நாடு மட்டுமே பயன்படும், சேமிக்கப்படாது.';
+
+  @override
+  String get secLocationDenied => 'Vaultara-க்கு இருப்பிடம் முடக்கப்பட்டுள்ளது. தொலைபேசி அமைப்புகளில் அனுமதிக்கலாம்.';
+
+  @override
+  String get assistantLocationTitle => 'என் இருப்பிடத்தைப் பயன்படுத்து';
+
+  @override
+  String get assistantLocationNote => 'நீங்கள் எந்த நாட்டில் இருக்கிறீர்கள் என்பதை மட்டுமே Vaultara சரிபார்க்கும். உங்கள் துல்லியமான இருப்பிடம் அனுப்பப்படாது, சேமிக்கப்படாது.';
+
+  @override
+  String get assistantLocationShared => 'என் இருப்பிடத்தை இயக்கினேன்';
+
+  @override
+  String get assistantLocationOff => 'இருப்பிடம் முடக்கப்பட்டுள்ளது. பாதுகாப்பு மற்றும் தனியுரிமையில் இயக்கலாம்.';
 }
