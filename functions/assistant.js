@@ -95,6 +95,25 @@ const SCREENS = [
   "recovery_centre",
 ];
 
+// Life event plans. Only clients on protocol 7 can open them.
+const LIFE_EVENTS = [
+  "moving",
+  "homeBuy",
+  "homeSell",
+  "nameChange",
+  "marriage",
+  "divorce",
+  "baby",
+  "car",
+  "job",
+  "studies",
+  "retiring",
+  "country",
+  "childAdult",
+  "bereavement",
+];
+const SCREENS_V7 = [...SCREENS, "life_events", "life_event"];
+
 const RECORD_FIELDS = [
   "name",
   "expiryDate",
@@ -497,12 +516,32 @@ const TOOLS_V6 = [
   USE_LOCATION,
   SUGGEST_REPLIES,
 ];
+function withLifeEvents(tool) {
+  if (tool.name !== "open_screen") return tool;
+  return {
+    ...tool,
+    description:
+      tool.description +
+      " life_events opens Life events, with the plans in progress. life_event starts a plan for one life event (or opens the one in progress); give its key as id: " +
+      LIFE_EVENTS.join(", ") +
+      ".",
+    input_schema: {
+      ...tool.input_schema,
+      properties: {
+        ...tool.input_schema.properties,
+        screen: { type: "string", enum: SCREENS_V7 },
+      },
+    },
+  };
+}
+const TOOLS_V7 = TOOLS_V6.map(withLifeEvents);
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
 const NAMES_V4 = new Set(TOOLS_V4.map((t) => t.name));
 const NAMES_V5 = NAMES_V4;
 const NAMES_V6 = new Set(TOOLS_V6.map((t) => t.name));
+const NAMES_V7 = NAMES_V6;
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -528,6 +567,12 @@ const APP_GUIDE = [
   "- Privacy: data is stored on Google Cloud in the United States and is not sold. Scanning happens on the phone. Ask Vaultara sends the user's messages and the record details it looks up to Anthropic to answer. Chats are saved to the account so the user can come back to them; they are deleted automatically after 90 days, and the user can delete one chat or all chats at any time in the chat history.",
   "- Help: Profile > Tutorials and Profile > Support (email support@vorkalis.com).",
 ].join("\n");
+
+// Protocol 7 clients have life event plans.
+const APP_GUIDE_V7 = APP_GUIDE.replace(
+  "Life events (what to update after moving, a new name or a new car)",
+  "Life events (free: pick what is happening, such as moving house, a new home, a new name, marriage, divorce, a baby, a car, a job, studies, retiring, moving abroad, a child turning 16 or 18 or a death in the family, and Vaultara makes a plan with a date and the people it is for; it lists the user's records to update, renew or cancel before and after the day, flags records that expire around the date, suggests records that may be missing, marks a record as done when it changes, reminds 7 days before, on the day and 7 days after, and can share the plan as a PDF or add it to the calendar; plans in progress also show on Home)"
+);
 
 let anthropicClient = null;
 
@@ -708,6 +753,28 @@ class UserData {
     }
     this._people = people;
     return people;
+  }
+
+  async activeLifePlans() {
+    try {
+      const snap = await this.userRef.collection("lifePlans").limit(40).get();
+      const plans = [];
+      for (const doc of snap.docs) {
+        const data = doc.data() || {};
+        if (data.finishedAt) continue;
+        if (!LIFE_EVENTS.includes(data.event)) continue;
+        const date = toMillis(data.date);
+        plans.push({
+          event: data.event,
+          date: date === null ? null : isoDay(dayNumber(date, this.offset)),
+          country: typeof data.country === "string" && COUNTRY_PATTERN.test(data.country) ? data.country : null,
+        });
+      }
+      return plans.slice(0, 10);
+    } catch (err) {
+      logger.warn("life plans lookup failed", { message: err?.message });
+      return [];
+    }
   }
 
   async trips() {
@@ -1595,9 +1662,14 @@ async function proposeUpdateTrip(ctx, input, actions) {
 
 async function openScreen(ctx, input, actions) {
   const screen = str(input?.screen);
-  if (!SCREENS.includes(screen)) return { error: `screen must be one of ${SCREENS.join(", ")}.` };
+  const screens = ctx.lifePlans ? SCREENS_V7 : SCREENS;
+  if (!screens.includes(screen)) return { error: `screen must be one of ${screens.join(", ")}.` };
   const action = { type: "open", screen };
-  if (screen === "record") {
+  if (screen === "life_event") {
+    const event = str(input?.id);
+    if (!LIFE_EVENTS.includes(event)) return { error: `Give the life event key as id: ${LIFE_EVENTS.join(", ")}.` };
+    action.id = event;
+  } else if (screen === "record") {
     const record = await ctx.findRecord(input?.id);
     if (!record) return { error: "Give the record id from list_records." };
     action.id = record.id;
@@ -1694,7 +1766,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1750,7 +1822,12 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false) {
       "Current location: if the dynamic facts give the phone's current country, use it only as a hint, never as certain, because it can be wrong near borders. When it is the country the user lives in, they are at home, not on a trip. When it differs from where they live and no trip there is underway, ask whether they are travelling there now; if yes, ask when they arrived and when they leave and prepare the trip with today inside it. If the user lives there now (they say so), offer propose_update_person for me with residence. Never change where the user lives without asking. If the current country is not given and it would change the answer, you may call use_location once."
     );
   }
-  lines.push("", APP_GUIDE);
+  if (v7) {
+    lines.push(
+      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, or a death in the family), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family, be brief and kind."
+    );
+  }
+  lines.push("", v7 ? APP_GUIDE_V7 : APP_GUIDE);
   return lines.join("\n");
 }
 
@@ -1760,8 +1837,9 @@ const STATIC_PROMPT_V3 = staticPrompt(true, true);
 const STATIC_PROMPT_V4 = staticPrompt(true, true, true);
 const STATIC_PROMPT_V5 = staticPrompt(true, true, true, true);
 const STATIC_PROMPT_V6 = staticPrompt(true, true, true, true, true);
+const STATIC_PROMPT_V7 = staticPrompt(true, true, true, true, true, true);
 
-function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1782,6 +1860,19 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
         : "The phone's current country is not known."
     );
   }
+  if (v7) {
+    const plans = (ctx.lifePlanList || []).map((p) => {
+      const parts = [p.event];
+      if (p.date) parts.push(`on ${p.date}`);
+      if (p.country) parts.push(`to ${p.country}`);
+      return parts.join(" ");
+    });
+    dynamic.push(
+      plans.length
+        ? `Life event plans in progress: ${plans.join("; ")}.`
+        : "No life event plans are in progress."
+    );
+  }
   if (intent === "propose") {
     dynamic.push(
       "The user is filling in the add record form. Call propose_record exactly once with your best guess from their text. Do not ask questions."
@@ -1790,7 +1881,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -1939,6 +2030,7 @@ exports.askVaultara = onCall(
     const v4 = version >= 4 && intent === "chat";
     const v5 = version >= 5 && intent === "chat";
     const v6 = version >= 6 && intent === "chat";
+    const v7 = version >= 7 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -1965,9 +2057,11 @@ exports.askVaultara = onCall(
     ctx.tripExtras = v5;
     ctx.tripPlaces = v6;
     ctx.here = v6 ? countryCode(request.data?.here) : null;
-    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6);
-    const tools = v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    ctx.lifePlans = v7;
+    ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
+    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7);
+    const tools = v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));

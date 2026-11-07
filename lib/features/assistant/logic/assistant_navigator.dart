@@ -16,6 +16,8 @@ import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
 import 'package:vaultara/features/records/view/records/records_screen.dart';
 import 'package:vaultara/features/reminders/view/notification_settings_screen.dart';
 import 'package:vaultara/features/security/view/devices_screen.dart';
+import 'package:vaultara/features/tools/logic/life_events.dart';
+import 'package:vaultara/features/tools/view/life_events_screen.dart';
 import 'package:vaultara/features/security/view/security_history_screen.dart';
 import 'package:vaultara/features/security/view/security_privacy_screen.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
@@ -157,10 +159,18 @@ class AssistantNavigator {
       case 'recovery_centre':
         _push(context, const RecentlyDeletedScreen());
         return true;
+      case 'life_events':
+        unawaited(openLifeEvents(context));
+        return true;
+      case 'life_event':
+        unawaited(
+          openLifeEvents(context, start: LifeEvents.fromName(action.targetId)),
+        );
+        return true;
     }
     return false;
   }
 
   static bool needsTarget(String screen) =>
-      screen == 'record' || screen == 'trip';
+      screen == 'record' || screen == 'trip' || screen == 'life_event';
 }
