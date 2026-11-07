@@ -149,7 +149,11 @@ class _FlightSheetState extends State<_FlightSheet> {
   void initState() {
     super.initState();
     final f = widget.flight;
-    _from = TextEditingController(text: f?.from ?? '');
+    // A new leg usually leaves from where the previous one landed, for
+    // example the second half of a connection or the flight home.
+    _from = TextEditingController(
+      text: f?.from ?? widget.limits.previous?.to ?? '',
+    );
     _to = TextEditingController(text: f?.to ?? '');
     final suggested = _withinLimits(widget.suggestedDate);
     _departDate = f?.departDate ?? suggested;
