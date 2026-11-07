@@ -448,11 +448,26 @@ class AssistantActionPreview {
       ),
       if (action.driving)
         AssistantChangeRow(label: loc.travelDriving, after: f.onOff(true)),
+      for (final entry in action.arrivals.entries)
+        if (action.countries.contains(entry.key))
+          AssistantChangeRow(
+            label: loc.travelArriveIn(Countries.name(entry.key)),
+            after: f.date(entry.value),
+          ),
+      if (action.flights.isNotEmpty)
+        AssistantChangeRow(
+          label: loc.travelFlights,
+          after: f.flights(action.flights),
+        ),
     ];
-    final subject = action.name ??
-        (action.countries.isEmpty
-            ? ''
-            : SavedTrip.defaultName(action.countries));
+    // The countries already have their own row, so the name only shows
+    // under the title when the user gave the trip a name of its own.
+    final name = action.name;
+    final subject = name == null ||
+            (action.countries.isNotEmpty &&
+                name == SavedTrip.defaultName(action.countries))
+        ? ''
+        : name;
     return AssistantActionPreview(
       title: loc.travelNewTrip,
       icon: Icons.luggage_rounded,
@@ -515,6 +530,25 @@ class AssistantActionPreview {
         label: loc.tripPurposeTitle,
         before: trip == null ? null : TripPurposeText.label(loc, trip.purpose),
         after: TripPurposeText.label(loc, c.purpose!),
+      ));
+    }
+    final arrivals = c.arrivals;
+    if (arrivals != null) {
+      for (final entry in arrivals.entries) {
+        rows.add(AssistantChangeRow(
+          label: loc.travelArriveIn(Countries.name(entry.key)),
+          after: f.date(entry.value),
+        ));
+      }
+    }
+    final flights = c.flights;
+    if (flights != null) {
+      rows.add(AssistantChangeRow(
+        label: loc.travelFlights,
+        before: trip == null || trip.flights.isEmpty
+            ? null
+            : f.flights(trip.flights),
+        after: flights.isEmpty ? loc.assistantValueNone : f.flights(flights),
       ));
     }
     return AssistantActionPreview(
@@ -622,6 +656,19 @@ class _Formatter {
   String countries(List<String> codes) {
     if (codes.isEmpty) return loc.assistantValueNone;
     return codes.map(country).join(', ');
+  }
+
+  /// One line per journey: "Johannesburg → Dubai → Tokyo".
+  String flights(List<TripFlight> legs) {
+    final lines = <String>[];
+    for (final journey in TripFlight.journeys(legs)) {
+      final stops = <String>[journey.first.from];
+      for (final leg in journey) {
+        stops.add(leg.to);
+      }
+      lines.add('${date(journey.first.departDate)}: ${stops.join(' → ')}');
+    }
+    return lines.join('\n');
   }
 
   String travellers(List<String> ids) {
