@@ -80,8 +80,27 @@ class StayCounter {
           ? SavedTrip.schengenZone
           : country;
 
+  /// When the traveller reaches a zone: the date they set, else the day a
+  /// flight lands there, else the start of the trip.
+  static DateTime? _landing(SavedTrip trip, String zone) {
+    var anyTagged = false;
+    final sorted = List<TripFlight>.of(trip.flights)..sort(TripFlight.compare);
+    for (final flight in sorted) {
+      final country = flight.toCountry;
+      if (country == null || !trip.countries.contains(country)) continue;
+      anyTagged = true;
+      if (zoneFor(trip, country) == zone) return flight.landDate;
+    }
+    if (!anyTagged &&
+        trip.countries.isNotEmpty &&
+        zoneFor(trip, trip.countries.first) == zone) {
+      return trip.landingDay;
+    }
+    return null;
+  }
+
   static DateTime entryFor(SavedTrip trip, String zone) {
-    final stored = trip.arrivals[zone];
+    final stored = trip.arrivals[zone] ?? _landing(trip, zone);
     if (stored == null) return trip.start;
     final day = Dates.only(stored);
     if (day.isBefore(trip.start)) return trip.start;

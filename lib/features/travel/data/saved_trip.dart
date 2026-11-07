@@ -113,11 +113,58 @@ class TripFlight {
     if (byDay != 0) return byDay;
     return (a.departTime ?? '').compareTo(b.departTime ?? '');
   }
+
+  static String _place(String value) => value.trim().toLowerCase();
+
+  /// True when [next] leaves from where [previous] landed within a day, so
+  /// it is a connection on the same journey and not a new journey.
+  static bool isConnection(TripFlight previous, TripFlight next) {
+    final gap = Dates.daysBetween(previous.landDate, next.departDate);
+    if (gap < 0 || gap > 1) return false;
+    return _place(previous.to) == _place(next.from);
+  }
+
+  /// Flights grouped into journeys, for example Johannesburg to Dubai to
+  /// Tokyo going out and Tokyo to Dubai to Johannesburg coming back.
+  static List<List<TripFlight>> journeys(List<TripFlight> flights) {
+    final sorted = List<TripFlight>.of(flights)..sort(compare);
+    final out = <List<TripFlight>>[];
+    for (final flight in sorted) {
+      if (out.isNotEmpty && isConnection(out.last.last, flight)) {
+        out.last.add(flight);
+      } else {
+        out.add(<TripFlight>[flight]);
+      }
+    }
+    return out;
+  }
+
+  static DateTime? _at(DateTime day, String? time) {
+    if (time == null || !_timePattern.hasMatch(time)) return null;
+    final parts = time.split(':');
+    return DateTime(
+      day.year,
+      day.month,
+      day.day,
+      int.parse(parts[0]),
+      int.parse(parts[1]),
+    );
+  }
+
+  /// Minutes between landing and the next departure at a connection, when
+  /// both times are known. Both are local times at the same airport.
+  static int? layoverMinutes(TripFlight previous, TripFlight next) {
+    final landed = _at(previous.landDate, previous.landTime);
+    final leaves = _at(next.departDate, next.departTime);
+    if (landed == null || leaves == null) return null;
+    final minutes = leaves.difference(landed).inMinutes;
+    return minutes < 0 ? null : minutes;
+  }
 }
 
 class SavedTrip {
   static const String me = 'me';
-  static const int maxFlights = 6;
+  static const int maxFlights = 10;
   static const Set<String> _retiredItems = <String>{
     'auto-chargers',
     'auto-longTrip',
@@ -178,11 +225,26 @@ class SavedTrip {
 
   int get nights => Dates.daysBetween(start, end);
 
-  DateTime? get landingDay => flights.isEmpty ? null : flights.first.landDate;
+  /// The day the first journey reaches its final stop, so a connection on
+  /// the way does not count as arriving.
+  DateTime? get landingDay {
+    final trips = TripFlight.journeys(flights);
+    return trips.isEmpty ? null : trips.first.last.landDate;
+  }
 
   DateTime? get leavingDestinationDay {
-    if (flights.isEmpty) return null;
-    return flights.length >= 2 ? flights.last.departDate : end;
+    final trips = TripFlight.journeys(flights);
+    if (trips.isEmpty) return null;
+    return trips.length >= 2 ? trips.last.first.departDate : end;
+  }
+
+  /// The day a flight lands in [country], if one of the flights does.
+  DateTime? landingIn(String country) {
+    final sorted = List<TripFlight>.of(flights)..sort(TripFlight.compare);
+    for (final flight in sorted) {
+      if (flight.toCountry == country) return flight.landDate;
+    }
+    return null;
   }
 
   int? get daysAtDestination {
