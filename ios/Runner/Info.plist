@@ -39,6 +39,8 @@
 			<string>UIInterfaceOrientationLandscapeLeft</string>
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>Vaultara uses your approximate location only to see which country you are in when you ask about trips. Only the country is used and it is not saved.</string>
 		<key>NSFaceIDUsageDescription</key>
 		<string>Vaultara uses biometric authentication to protect your documents.</string>
 		<key>LSApplicationQueriesSchemes</key>
