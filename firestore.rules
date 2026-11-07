@@ -156,7 +156,7 @@ service cloud.firestore {
                                'needsVisa', 'travellers', 'checklist', 'updatedAt',
                                'countries', 'passportRule', 'needsVisaManual',
                                'visaRecords', 'arrivals', 'flights', 'passportChoice',
-                               'purpose'])
+                               'purpose', 'places'])
         && (!('purpose' in d) || d.purpose in ['holiday', 'family', 'business', 'study', 'work'])
         && (!('driving' in d) || d.driving is bool)
         && (!('needsVisa' in d) || d.needsVisa is bool)
@@ -165,6 +165,7 @@ service cloud.firestore {
         && (!('arrivals' in d) || (d.arrivals is map && d.arrivals.size() <= 6))
         && (!('passportChoice' in d) || (d.passportChoice is map && d.passportChoice.size() <= 40))
         && (!('flights' in d) || (d.flights is list && d.flights.size() <= 10))
+        && (!('places' in d) || (d.places is list && d.places.size() <= 5))
         && d.name is string && d.name.size() > 0 && d.name.size() <= 120
         && d.departure is timestamp && d.returnDate is timestamp
         && d.travellers is list && d.travellers.size() <= 26
