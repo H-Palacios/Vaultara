@@ -42,6 +42,7 @@ class _TripEditorSheet extends StatefulWidget {
 
 class _TripEditorSheetState extends State<_TripEditorSheet> {
   late final TextEditingController _name;
+  late final TextEditingController _places;
   DateTime? _departure;
   DateTime? _return;
   late bool _driving;
@@ -64,6 +65,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     super.initState();
     final trip = widget.trip;
     _name = TextEditingController(text: trip?.name ?? '');
+    _places = TextEditingController(
+      text: (trip?.places ?? const <String>[]).join(', '),
+    );
     _departure = trip?.start;
     _return = trip?.end;
     _driving = trip?.driving ?? false;
@@ -73,9 +77,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     _travellers = {...(trip?.travellers ?? const <String>[SavedTrip.me])};
     _countries = List<String>.of(trip?.countries ?? const <String>[]);
     _flights = List<TripFlight>.of(trip?.flights ?? const <TripFlight>[]);
-    if (trip != null &&
-        trip.countries.isNotEmpty &&
-        trip.name == SavedTrip.defaultName(trip.countries)) {
+    if (trip != null && trip.countries.isNotEmpty && trip.hasAutoName) {
       _name.text = '';
     }
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -96,6 +98,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
   @override
   void dispose() {
     _name.dispose();
+    _places.dispose();
     super.dispose();
   }
 
@@ -473,8 +476,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     final loc = AppLocalizations.of(context)!;
     final needsVisa = _effectiveNeedsVisa();
     final typed = _name.text.trim();
+    final places = SavedTrip.placesFromText(_places.text);
     final name = typed.isEmpty && _countries.isNotEmpty
-        ? SavedTrip.defaultName(_countries)
+        ? SavedTrip.defaultName(_countries, places: places)
         : typed;
     final people = PeopleRepository.people.value;
     final valid = _travellers
@@ -518,6 +522,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           countries: _countries,
           flights: _flights,
           purpose: _purpose,
+          places: places,
         );
         saved = await TripRepository.addChecked(
           draft.copyWith(checklist: TripChecklist.build(loc, draft)),
@@ -534,6 +539,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           countries: _countries,
           flights: _flights,
           purpose: _purpose,
+          places: places,
         );
         saved = edited.copyWith(
           checklist: TripChecklist.update(loc, before: base, after: edited),
@@ -670,6 +676,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       _needsVisaManual,
       travellers.join(','),
       _countries.join(','),
+      _places.text.trim(),
       _purpose.name,
       _flights
           .map((f) => <Object?>[
@@ -747,6 +754,19 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           ),
                         ),
                       ],
+                      const SizedBox(height: 10),
+                      TextField(
+                        controller: _places,
+                        textCapitalization: TextCapitalization.words,
+                        onChanged: (_) => setState(() {}),
+                        decoration: AppInputDecorations.field(
+                          context,
+                          labelText: loc.travelPlacesOptional,
+                          hintText: loc.travelPlacesHint,
+                          hintFontSize: 14,
+                          prefixIcon: const Icon(Icons.location_city_rounded),
+                        ),
+                      ),
                       const SizedBox(height: 12),
                       Row(
                         children: [
@@ -888,7 +908,11 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           labelText: loc.travelTripNameOptional,
                           hintText: _countries.isEmpty
                               ? loc.travelTripNameOptional
-                              : SavedTrip.defaultName(_countries),
+                              : SavedTrip.defaultName(
+                                  _countries,
+                                  places:
+                                      SavedTrip.placesFromText(_places.text),
+                                ),
                           hintFontSize: 14,
                           prefixIcon: const Icon(Icons.edit_note_rounded),
                         ).copyWith(counterText: ''),

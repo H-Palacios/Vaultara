@@ -1,3 +1,5 @@
+import 'package:vaultara/core/data/repositories/people_repository.dart';
+import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -23,6 +25,7 @@ enum TripChecklistKind {
   studyPermit,
   workPermit,
   workContract,
+  idCard,
 }
 
 class TripChecklist {
@@ -76,7 +79,63 @@ class TripChecklist {
     }
   }
 
+  /// Countries that are home for one traveller: every passport they hold
+  /// and the country they live in, as saved in Vaultara. The phone region
+  /// is not used, so a phone set to English (US) never makes the US home.
+  static Set<String> _homeOf(String traveller) {
+    if (NationalityRepository.isMe(traveller)) {
+      return <String>{
+        if (NationalityRepository.mine.value != null)
+          NationalityRepository.mine.value!,
+        ...NationalityRepository.myExtras.value,
+        if (NationalityRepository.myResidence.value != null)
+          NationalityRepository.myResidence.value!,
+      };
+    }
+    final person = PeopleRepository.byId(traveller);
+    if (person == null) return const <String>{};
+    return <String>{
+      if (person.nationality != null) person.nationality!,
+      ...person.extraPassports,
+      if (person.residence != null) person.residence!,
+    };
+  }
+
+  /// True when every destination is home for every traveller, for example a
+  /// South African going to Durban. No passport, visa or permit is needed.
+  static bool isDomestic(SavedTrip trip) {
+    if (trip.countries.isEmpty || trip.travellers.isEmpty) return false;
+    for (final traveller in trip.travellers) {
+      final home = _homeOf(traveller);
+      if (!trip.countries.every(home.contains)) return false;
+    }
+    return true;
+  }
+
+  static List<TripChecklistKind> _domesticPurpose(TripPurpose purpose) {
+    switch (purpose) {
+      case TripPurpose.holiday:
+        return const <TripChecklistKind>[TripChecklistKind.accommodation];
+      case TripPurpose.study:
+        return const <TripChecklistKind>[TripChecklistKind.studyAcceptance];
+      case TripPurpose.work:
+        return const <TripChecklistKind>[TripChecklistKind.workContract];
+      case TripPurpose.family:
+      case TripPurpose.business:
+        return const <TripChecklistKind>[];
+    }
+  }
+
   static List<TripChecklistKind> wanted(SavedTrip trip) {
+    if (isDomestic(trip)) {
+      return <TripChecklistKind>[
+        TripChecklistKind.idCard,
+        ..._domesticPurpose(trip.purpose),
+        TripChecklistKind.insurance,
+        if (trip.driving) TripChecklistKind.licence,
+        TripChecklistKind.emergency,
+      ];
+    }
     // A study or work permit replaces the visitor visa item, so the list
     // does not ask for two visas.
     final ownVisa = TripPurposes.needsOwnVisa(trip.purpose);
@@ -137,6 +196,8 @@ class TripChecklist {
         return loc.travelItemWorkPermit;
       case TripChecklistKind.workContract:
         return loc.travelItemWorkContract;
+      case TripChecklistKind.idCard:
+        return loc.travelItemIdCard;
     }
   }
 
@@ -180,7 +241,10 @@ class TripChecklist {
     final present = trip.checklist.map((i) => i.id).toSet();
     final items = List<TripChecklistItem>.of(trip.checklist);
     var added = false;
-    for (final kind in forPurpose(trip.purpose)) {
+    final kinds = isDomestic(trip)
+        ? _domesticPurpose(trip.purpose)
+        : forPurpose(trip.purpose);
+    for (final kind in kinds) {
       if (present.contains(idFor(kind))) continue;
       if (items.length >= SavedTrip.maxChecklist) break;
       items.add(_item(loc, kind));

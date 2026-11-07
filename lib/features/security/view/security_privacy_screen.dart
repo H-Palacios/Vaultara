@@ -26,6 +26,8 @@ import 'package:vaultara/features/security/view/encrypted_photos_tile.dart';
 import 'package:vaultara/features/security/view/security_checkup_card.dart';
 import 'package:vaultara/features/security/view/security_history_screen.dart';
 import 'package:vaultara/features/sharing/data_export.dart';
+import 'package:vaultara/features/travel/services/location_country.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 String autoLockLabel(AppLocalizations loc, AutoLockDelay delay) {
@@ -71,7 +73,24 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
 
   void _onPhotoStatus() => _loadCheckup();
 
+  Future<void> _setLocation(bool value) async {
+    if (!value) {
+      await LocationCountry.disable();
+      return;
+    }
+    if (await LocationCountry.enable() || !mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      AppLocalizations.of(context)!.secLocationDenied,
+      icon: Icons.location_off_rounded,
+    );
+    if (await LocationCountry.blockedForever()) {
+      await LocationCountry.openPhoneSettings();
+    }
+  }
+
   Future<void> _load() async {
+    unawaited(LocationCountry.load());
     final enabled = await BiometricPreference.isEnabled();
     if (!mounted) return;
     setState(() {
@@ -326,6 +345,17 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
               ],
               const SizedBox(height: 24),
               _SectionHeader(text: loc.secSectionPrivacy),
+              ValueListenableBuilder<bool>(
+                valueListenable: LocationCountry.enabled,
+                builder: (context, value, _) => SettingsTile(
+                  icon: Icons.my_location_rounded,
+                  title: loc.secLocationTitle,
+                  subtitle: loc.secLocationSubtitle,
+                  trailing: _switch(value, _setLocation),
+                  onTap: () => _setLocation(!value),
+                ),
+              ),
+              const SizedBox(height: 12),
               ValueListenableBuilder<bool>(
                 valueListenable: AnalyticsConsent.enabled,
                 builder: (context, value, _) => SettingsTile(
