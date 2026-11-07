@@ -6566,4 +6566,16 @@ class AppLocalizationsGu extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country પહોંચવું';
   }
+
+  @override
+  String get assistantVoiceHint => 'અજમાવો: મારો પાસપોર્ટ ઉમેરો, તે મે 2031માં પૂરો થાય છે';
+
+  @override
+  String get assistantVoiceDone => 'થઈ ગયું';
+
+  @override
+  String get assistantVoiceNoSpeech => 'કંઈ સંભળાયું નહીં. માઇક્રોફોન ટૅપ કરી ફરી પ્રયાસ કરો.';
+
+  @override
+  String get assistantVoiceFailed => 'વૉઇસ ઇનપુટ બંધ થયું. ફરી પ્રયાસ કરો.';
 }

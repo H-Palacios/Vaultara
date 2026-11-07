@@ -6565,4 +6565,16 @@ class AppLocalizationsSo extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Imaatinka $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Isku day: Ku dar baasaboorkayga, wuxuu dhacayaa May 2031';
+
+  @override
+  String get assistantVoiceDone => 'Dhammaatay';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Waxba lama maqlin. Taabo makarafoonka oo mar kale isku day.';
+
+  @override
+  String get assistantVoiceFailed => 'Gelinta codka way joogsatay. Mar kale isku day.';
 }

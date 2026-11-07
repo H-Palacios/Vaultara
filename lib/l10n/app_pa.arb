@@ -2068,5 +2068,9 @@
   "travelConnectionIn": "{place} ਵਿੱਚ ਕਨੈਕਸ਼ਨ",
   "travelConnectionLong": "{place} ਵਿੱਚ ਕਨੈਕਸ਼ਨ: {duration}",
   "travelDurationHoursMinutes": "{hours} ਘੰ {minutes} ਮਿੰ",
-  "travelArriveIn": "{country} ਪਹੁੰਚਣਾ"
+  "travelArriveIn": "{country} ਪਹੁੰਚਣਾ",
+  "assistantVoiceHint": "ਅਜ਼ਮਾਓ: ਮੇਰਾ ਪਾਸਪੋਰਟ ਜੋੜੋ, ਇਹ ਮਈ 2031 ਵਿੱਚ ਖ਼ਤਮ ਹੁੰਦਾ ਹੈ",
+  "assistantVoiceDone": "ਹੋ ਗਿਆ",
+  "assistantVoiceNoSpeech": "ਕੁਝ ਸੁਣਾਈ ਨਹੀਂ ਦਿੱਤਾ। ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਟੈਪ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "assistantVoiceFailed": "ਆਵਾਜ਼ ਇਨਪੁੱਟ ਰੁਕ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 }

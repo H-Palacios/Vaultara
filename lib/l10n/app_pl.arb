@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Przesiadka: {place}",
   "travelConnectionLong": "Przesiadka: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} godz. {minutes} min",
-  "travelArriveIn": "Przylot: {country}"
+  "travelArriveIn": "Przylot: {country}",
+  "assistantVoiceHint": "Spróbuj: Dodaj mój paszport, wygasa w maju 2031",
+  "assistantVoiceDone": "Gotowe",
+  "assistantVoiceNoSpeech": "Nic nie było słychać. Dotknij mikrofonu i spróbuj ponownie.",
+  "assistantVoiceFailed": "Wprowadzanie głosowe zatrzymało się. Spróbuj ponownie."
 }

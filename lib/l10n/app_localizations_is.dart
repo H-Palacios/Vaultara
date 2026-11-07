@@ -6566,4 +6566,16 @@ class AppLocalizationsIs extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Koma til $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Prófaðu: Bættu við vegabréfinu mínu, það rennur út í maí 2031';
+
+  @override
+  String get assistantVoiceDone => 'Lokið';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ekkert heyrðist. Ýttu á hljóðnemann og reyndu aftur.';
+
+  @override
+  String get assistantVoiceFailed => 'Raddinnslátturinn stöðvaðist. Reyndu aftur.';
 }

@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "ផ្លាស់យន្តហោះនៅ {place}",
   "travelConnectionLong": "ផ្លាស់យន្តហោះនៅ {place}៖ {duration}",
   "travelDurationHoursMinutes": "{hours} ម៉ោង {minutes} នាទី",
-  "travelArriveIn": "មកដល់ {country}"
+  "travelArriveIn": "មកដល់ {country}",
+  "assistantVoiceHint": "សាកល្បង៖ បន្ថែមលិខិតឆ្លងដែនរបស់ខ្ញុំ ផុតកំណត់ខែឧសភា 2031",
+  "assistantVoiceDone": "រួចរាល់",
+  "assistantVoiceNoSpeech": "មិនបានឮអ្វីទេ។ ចុចមីក្រូហ្វូន ហើយសាកម្ដងទៀត។",
+  "assistantVoiceFailed": "ការបញ្ចូលសំឡេងបានឈប់។ សាកម្ដងទៀត។"
 }

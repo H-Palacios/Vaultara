@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Pārsēšanās: {place}",
   "travelConnectionLong": "Pārsēšanās: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Ierašanās: {country}"
+  "travelArriveIn": "Ierašanās: {country}",
+  "assistantVoiceHint": "Izmēģiniet: Pievieno manu pasi, tai beidzas termiņš 2031. gada maijā",
+  "assistantVoiceDone": "Gatavs",
+  "assistantVoiceNoSpeech": "Nekas netika sadzirdēts. Pieskarieties mikrofonam un mēģiniet vēlreiz.",
+  "assistantVoiceFailed": "Balss ievade apstājās. Mēģiniet vēlreiz."
 }

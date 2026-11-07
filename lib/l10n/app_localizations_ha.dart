@@ -6566,4 +6566,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Isowa $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Gwada: Ƙara fasfo ɗina, zai ƙare a Mayu 2031';
+
+  @override
+  String get assistantVoiceDone => 'An gama';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ba a ji komai ba. Taɓa makirufo ka sake gwadawa.';
+
+  @override
+  String get assistantVoiceFailed => 'Shigar da murya ya tsaya. Sake gwadawa.';
 }

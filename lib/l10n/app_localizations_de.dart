@@ -6566,4 +6566,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ankunft: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Probier: Füge meinen Reisepass hinzu, er läuft im Mai 2031 ab';
+
+  @override
+  String get assistantVoiceDone => 'Fertig';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Es wurde nichts gehört. Tippe auf das Mikrofon und versuche es noch einmal.';
+
+  @override
+  String get assistantVoiceFailed => 'Spracheingabe wurde beendet. Versuche es noch einmal.';
 }

@@ -6514,4 +6514,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Tiba di $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Cuba: Tambah pasport saya, tamat pada Mei 2031';
+
+  @override
+  String get assistantVoiceDone => 'Selesai';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Tiada apa-apa didengar. Ketik mikrofon dan cuba lagi.';
+
+  @override
+  String get assistantVoiceFailed => 'Input suara berhenti. Cuba lagi.';
 }

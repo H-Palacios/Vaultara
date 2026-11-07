@@ -2092,5 +2092,9 @@
   "travelConnectionIn": "Skift i {place}",
   "travelConnectionLong": "Skift i {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} t {minutes} min",
-  "travelArriveIn": "Ankomst til {country}"
+  "travelArriveIn": "Ankomst til {country}",
+  "assistantVoiceHint": "Prøv: Tilføj mit pas, det udløber i maj 2031",
+  "assistantVoiceDone": "Færdig",
+  "assistantVoiceNoSpeech": "Der blev ikke hørt noget. Tryk på mikrofonen, og prøv igen.",
+  "assistantVoiceFailed": "Taleinput stoppede. Prøv igen."
 }

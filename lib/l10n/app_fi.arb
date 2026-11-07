@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Vaihto: {place}",
   "travelConnectionLong": "Vaihto: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Saapuminen: {country}"
+  "travelArriveIn": "Saapuminen: {country}",
+  "assistantVoiceHint": "Kokeile: Lisää passini, se vanhenee toukokuussa 2031",
+  "assistantVoiceDone": "Valmis",
+  "assistantVoiceNoSpeech": "Mitään ei kuulunut. Napauta mikrofonia ja yritä uudelleen.",
+  "assistantVoiceFailed": "Äänisyöte pysähtyi. Yritä uudelleen."
 }

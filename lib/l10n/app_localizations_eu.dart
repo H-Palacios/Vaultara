@@ -6566,4 +6566,16 @@ class AppLocalizationsEu extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Iristea: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Probatu: Gehitu nire pasaportea, 2031ko maiatzean iraungitzen da';
+
+  @override
+  String get assistantVoiceDone => 'Eginda';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ez da ezer entzun. Sakatu mikrofonoa eta saiatu berriro.';
+
+  @override
+  String get assistantVoiceFailed => 'Ahots bidezko sarrera gelditu da. Saiatu berriro.';
 }

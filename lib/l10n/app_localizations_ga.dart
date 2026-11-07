@@ -6750,4 +6750,16 @@ class AppLocalizationsGa extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Teacht: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Bain triail as: Cuir mo phas leis, rachaidh sé in éag i mBealtaine 2031';
+
+  @override
+  String get assistantVoiceDone => 'Déanta';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Níor chualathas aon rud. Tapáil an micreafón agus bain triail eile as.';
+
+  @override
+  String get assistantVoiceFailed => 'Stop an t-ionchur gutha. Bain triail eile as.';
 }

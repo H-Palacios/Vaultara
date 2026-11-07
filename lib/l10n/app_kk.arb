@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Ауысу: {place}",
   "travelConnectionLong": "Ауысу: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} сағ {minutes} мин",
-  "travelArriveIn": "Келу: {country}"
+  "travelArriveIn": "Келу: {country}",
+  "assistantVoiceHint": "Байқап көріңіз: Төлқұжатымды қос, мерзімі 2031 жылғы мамырда бітеді",
+  "assistantVoiceDone": "Дайын",
+  "assistantVoiceNoSpeech": "Ештеңе естілмеді. Микрофонды түртіп, қайталап көріңіз.",
+  "assistantVoiceFailed": "Дауыспен енгізу тоқтады. Қайталап көріңіз."
 }

@@ -6619,4 +6619,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'הגעה ל$country';
   }
+
+  @override
+  String get assistantVoiceHint => 'נסו: הוסף את הדרכון שלי, הוא פג במאי 2031';
+
+  @override
+  String get assistantVoiceDone => 'סיום';
+
+  @override
+  String get assistantVoiceNoSpeech => 'לא נשמע כלום. הקישו על המיקרופון ונסו שוב.';
+
+  @override
+  String get assistantVoiceFailed => 'הקלט הקולי נעצר. נסו שוב.';
 }

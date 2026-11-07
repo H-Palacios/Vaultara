@@ -6566,4 +6566,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country-এ পৌঁছানো';
   }
+
+  @override
+  String get assistantVoiceHint => 'চেষ্টা করুন: আমার পাসপোর্ট যোগ করো, মেয়াদ শেষ মে 2031';
+
+  @override
+  String get assistantVoiceDone => 'হয়েছে';
+
+  @override
+  String get assistantVoiceNoSpeech => 'কিছু শোনা যায়নি। মাইক্রোফোনে ট্যাপ করে আবার চেষ্টা করুন।';
+
+  @override
+  String get assistantVoiceFailed => 'ভয়েস ইনপুট থেমে গেছে। আবার চেষ্টা করুন।';
 }

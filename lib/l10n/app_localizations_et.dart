@@ -6566,4 +6566,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Saabumine: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Proovi: Lisa minu pass, see aegub 2031. aasta mais';
+
+  @override
+  String get assistantVoiceDone => 'Valmis';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Midagi ei kuuldud. Puuduta mikrofoni ja proovi uuesti.';
+
+  @override
+  String get assistantVoiceFailed => 'Häälsisestus peatus. Proovi uuesti.';
 }

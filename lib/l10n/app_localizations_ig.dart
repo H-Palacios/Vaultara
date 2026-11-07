@@ -6515,4 +6515,16 @@ class AppLocalizationsIg extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ịbịarute $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Nwaa: Tinye paspọtụ m, ọ ga-agwụ na Mee 2031';
+
+  @override
+  String get assistantVoiceDone => 'Emechaala';
+
+  @override
+  String get assistantVoiceNoSpeech => 'A nụghị ihe ọ bụla. Pịa igwe okwu ma nwaa ọzọ.';
+
+  @override
+  String get assistantVoiceFailed => 'Ntinye olu kwụsịrị. Nwaa ọzọ.';
 }

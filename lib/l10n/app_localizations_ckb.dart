@@ -6566,4 +6566,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'گەیشتن بە $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'تاقی بکەوە: پاسپۆرتەکەم زیاد بکە، لە مەی 2031 بەسەردەچێت';
+
+  @override
+  String get assistantVoiceDone => 'تەواو';
+
+  @override
+  String get assistantVoiceNoSpeech => 'هیچ نەبیسترا. دەست لە مایکرۆفۆن بدە و دووبارە هەوڵ بدەوە.';
+
+  @override
+  String get assistantVoiceFailed => 'تێخستنی دەنگ وەستا. دووبارە هەوڵ بدەوە.';
 }

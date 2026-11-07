@@ -6566,4 +6566,16 @@ class AppLocalizationsTa extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country வருகை';
   }
+
+  @override
+  String get assistantVoiceHint => 'முயற்சிக்கவும்: என் பாஸ்போர்ட்டைச் சேர், மே 2031இல் காலாவதியாகும்';
+
+  @override
+  String get assistantVoiceDone => 'முடிந்தது';
+
+  @override
+  String get assistantVoiceNoSpeech => 'எதுவும் கேட்கவில்லை. மைக்ரோஃபோனைத் தட்டி மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get assistantVoiceFailed => 'குரல் உள்ளீடு நின்றது. மீண்டும் முயற்சிக்கவும்.';
 }

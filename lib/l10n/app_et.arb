@@ -2226,5 +2226,9 @@
   "travelConnectionIn": "Ümberistumine: {place}",
   "travelConnectionLong": "Ümberistumine: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Saabumine: {country}"
+  "travelArriveIn": "Saabumine: {country}",
+  "assistantVoiceHint": "Proovi: Lisa minu pass, see aegub 2031. aasta mais",
+  "assistantVoiceDone": "Valmis",
+  "assistantVoiceNoSpeech": "Midagi ei kuuldud. Puuduta mikrofoni ja proovi uuesti.",
+  "assistantVoiceFailed": "Häälsisestus peatus. Proovi uuesti."
 }

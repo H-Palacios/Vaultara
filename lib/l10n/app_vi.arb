@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Nối chuyến tại {place}",
   "travelConnectionLong": "Nối chuyến tại {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} giờ {minutes} phút",
-  "travelArriveIn": "Đến {country}"
+  "travelArriveIn": "Đến {country}",
+  "assistantVoiceHint": "Thử nói: Thêm hộ chiếu của tôi, hết hạn tháng 5 năm 2031",
+  "assistantVoiceDone": "Xong",
+  "assistantVoiceNoSpeech": "Không nghe thấy gì. Chạm vào micrô và thử lại.",
+  "assistantVoiceFailed": "Nhập bằng giọng nói đã dừng. Hãy thử lại."
 }

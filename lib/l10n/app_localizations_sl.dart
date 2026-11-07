@@ -6700,4 +6700,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Prihod: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Poskusite: Dodaj moj potni list, poteče maja 2031';
+
+  @override
+  String get assistantVoiceDone => 'Končano';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nič ni bilo slišati. Tapnite mikrofon in poskusite znova.';
+
+  @override
+  String get assistantVoiceFailed => 'Glasovni vnos se je ustavil. Poskusite znova.';
 }

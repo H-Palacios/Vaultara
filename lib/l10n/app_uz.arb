@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "{place} orqali o'tish",
   "travelConnectionLong": "{place} orqali o'tish: {duration}",
   "travelDurationHoursMinutes": "{hours} s {minutes} daq",
-  "travelArriveIn": "Yetib kelish: {country}"
+  "travelArriveIn": "Yetib kelish: {country}",
+  "assistantVoiceHint": "Sinab ko'ring: Pasportimni qo'sh, muddati 2031-yil mayda tugaydi",
+  "assistantVoiceDone": "Tayyor",
+  "assistantVoiceNoSpeech": "Hech narsa eshitilmadi. Mikrofonga bosib, qayta urinib ko'ring.",
+  "assistantVoiceFailed": "Ovozli kiritish to'xtadi. Qayta urinib ko'ring."
 }

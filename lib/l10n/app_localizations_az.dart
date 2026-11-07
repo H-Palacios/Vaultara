@@ -6566,4 +6566,16 @@ class AppLocalizationsAz extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Gəliş: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Sınayın: Pasportumu əlavə et, 2031 mayında bitir';
+
+  @override
+  String get assistantVoiceDone => 'Hazır';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Heç nə eşidilmədi. Mikrofona toxunub yenidən cəhd edin.';
+
+  @override
+  String get assistantVoiceFailed => 'Səsli daxiletmə dayandı. Yenidən cəhd edin.';
 }

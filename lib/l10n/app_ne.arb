@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "{place} मा कनेक्सन",
   "travelConnectionLong": "{place} मा कनेक्सन: {duration}",
   "travelDurationHoursMinutes": "{hours} घ {minutes} मि",
-  "travelArriveIn": "{country} पुग्ने"
+  "travelArriveIn": "{country} पुग्ने",
+  "assistantVoiceHint": "प्रयास गर्नुहोस्: मेरो राहदानी थप, यो मे 2031 मा सकिन्छ",
+  "assistantVoiceDone": "भयो",
+  "assistantVoiceNoSpeech": "केही सुनिएन। माइक्रोफोन ट्याप गरेर फेरि प्रयास गर्नुहोस्।",
+  "assistantVoiceFailed": "आवाज इनपुट रोकियो। फेरि प्रयास गर्नुहोस्।"
 }

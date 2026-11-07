@@ -6566,4 +6566,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Aankomst in $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Probeer: Voeg mijn paspoort toe, het verloopt in mei 2031';
+
+  @override
+  String get assistantVoiceDone => 'Klaar';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Er werd niets gehoord. Tik op de microfoon en probeer het opnieuw.';
+
+  @override
+  String get assistantVoiceFailed => 'Spraakinvoer is gestopt. Probeer het opnieuw.';
 }

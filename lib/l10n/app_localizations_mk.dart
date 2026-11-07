@@ -6566,4 +6566,16 @@ class AppLocalizationsMk extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Пристигнување: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Пробајте: Додај го мојот пасош, истекува во мај 2031';
+
+  @override
+  String get assistantVoiceDone => 'Готово';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ништо не се слушна. Допрете го микрофонот и обидете се повторно.';
+
+  @override
+  String get assistantVoiceFailed => 'Гласовниот внес запре. Обидете се повторно.';
 }

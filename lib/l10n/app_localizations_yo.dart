@@ -6515,4 +6515,16 @@ class AppLocalizationsYo extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Dídé sí $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Gbìyànjú: Ṣàfikún ìwé ìrìnnà mi, ó máa parí ní May 2031';
+
+  @override
+  String get assistantVoiceDone => 'Ó ti parí';
+
+  @override
+  String get assistantVoiceNoSpeech => 'A kò gbọ́ nǹkan kan. Tẹ makirofóònù kí o sì tún gbìyànjú.';
+
+  @override
+  String get assistantVoiceFailed => 'Ìtẹ̀wọlé ohùn ti dúró. Tún gbìyànjú.';
 }

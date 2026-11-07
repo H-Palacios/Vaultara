@@ -6698,4 +6698,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Přílet: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Zkuste: Přidej můj pas, platí do května 2031';
+
+  @override
+  String get assistantVoiceDone => 'Hotovo';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nic nebylo slyšet. Klepněte na mikrofon a zkuste to znovu.';
+
+  @override
+  String get assistantVoiceFailed => 'Hlasové zadávání se zastavilo. Zkuste to znovu.';
 }

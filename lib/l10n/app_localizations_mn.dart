@@ -6556,4 +6556,16 @@ class AppLocalizationsMn extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ирэх: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Туршаад үзээрэй: Миний паспортыг нэм, 2031 оны 5-р сард дуусна';
+
+  @override
+  String get assistantVoiceDone => 'Болсон';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Юу ч сонсогдсонгүй. Микрофон дээр дарж дахин оролдоно уу.';
+
+  @override
+  String get assistantVoiceFailed => 'Дуут оролт зогслоо. Дахин оролдоно уу.';
 }

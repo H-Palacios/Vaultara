@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "{place}で乗り継ぎ",
   "travelConnectionLong": "{place}で乗り継ぎ：{duration}",
   "travelDurationHoursMinutes": "{hours}時間{minutes}分",
-  "travelArriveIn": "{country}に到着"
+  "travelArriveIn": "{country}に到着",
+  "assistantVoiceHint": "例：パスポートを追加して、2031年5月に期限切れ",
+  "assistantVoiceDone": "完了",
+  "assistantVoiceNoSpeech": "何も聞こえませんでした。マイクをタップしてもう一度お試しください。",
+  "assistantVoiceFailed": "音声入力が止まりました。もう一度お試しください。"
 }

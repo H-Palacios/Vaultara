@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Дамжин өнгөрөх: {place}",
   "travelConnectionLong": "Дамжин өнгөрөх: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} ц {minutes} мин",
-  "travelArriveIn": "Ирэх: {country}"
+  "travelArriveIn": "Ирэх: {country}",
+  "assistantVoiceHint": "Туршаад үзээрэй: Миний паспортыг нэм, 2031 оны 5-р сард дуусна",
+  "assistantVoiceDone": "Болсон",
+  "assistantVoiceNoSpeech": "Юу ч сонсогдсонгүй. Микрофон дээр дарж дахин оролдоно уу.",
+  "assistantVoiceFailed": "Дуут оролт зогслоо. Дахин оролдоно уу."
 }

@@ -2078,5 +2078,9 @@
   "travelConnectionIn": "{place}లో కనెక్షన్",
   "travelConnectionLong": "{place}లో కనెక్షన్: {duration}",
   "travelDurationHoursMinutes": "{hours} గం {minutes} ని",
-  "travelArriveIn": "{country} చేరుకోవడం"
+  "travelArriveIn": "{country} చేరుకోవడం",
+  "assistantVoiceHint": "ప్రయత్నించండి: నా పాస్‌పోర్ట్ జోడించు, మే 2031లో గడువు ముగుస్తుంది",
+  "assistantVoiceDone": "పూర్తయింది",
+  "assistantVoiceNoSpeech": "ఏమీ వినిపించలేదు. మైక్రోఫోన్‌ను తాకి మళ్లీ ప్రయత్నించండి.",
+  "assistantVoiceFailed": "వాయిస్ ఇన్‌పుట్ ఆగిపోయింది. మళ్లీ ప్రయత్నించండి."
 }

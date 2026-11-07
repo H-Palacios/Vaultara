@@ -6514,4 +6514,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country 도착';
   }
+
+  @override
+  String get assistantVoiceHint => '예: 여권 추가해 줘, 2031년 5월에 만료돼';
+
+  @override
+  String get assistantVoiceDone => '완료';
+
+  @override
+  String get assistantVoiceNoSpeech => '아무 소리도 들리지 않았습니다. 마이크를 탭하고 다시 시도하세요.';
+
+  @override
+  String get assistantVoiceFailed => '음성 입력이 멈췄습니다. 다시 시도하세요.';
 }

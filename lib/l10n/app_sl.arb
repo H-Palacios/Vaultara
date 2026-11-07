@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Prestop: {place}",
   "travelConnectionLong": "Prestop: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Prihod: {country}"
+  "travelArriveIn": "Prihod: {country}",
+  "assistantVoiceHint": "Poskusite: Dodaj moj potni list, poteče maja 2031",
+  "assistantVoiceDone": "Končano",
+  "assistantVoiceNoSpeech": "Nič ni bilo slišati. Tapnite mikrofon in poskusite znova.",
+  "assistantVoiceFailed": "Glasovni vnos se je ustavil. Poskusite znova."
 }

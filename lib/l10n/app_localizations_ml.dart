@@ -6566,4 +6566,16 @@ class AppLocalizationsMl extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country-ൽ എത്തുന്നു';
   }
+
+  @override
+  String get assistantVoiceHint => 'ശ്രമിക്കൂ: എന്റെ പാസ്‌പോർട്ട് ചേർക്കൂ, 2031 മേയിൽ കാലാവധി തീരും';
+
+  @override
+  String get assistantVoiceDone => 'പൂർത്തിയായി';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ഒന്നും കേട്ടില്ല. മൈക്രോഫോൺ ടാപ്പ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get assistantVoiceFailed => 'ശബ്ദ ഇൻപുട്ട് നിന്നു. വീണ്ടും ശ്രമിക്കുക.';
 }

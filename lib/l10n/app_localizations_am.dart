@@ -6566,4 +6566,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'ወደ $country መድረሻ';
   }
+
+  @override
+  String get assistantVoiceHint => 'ይሞክሩ፦ ፓስፖርቴን ያክሉ፣ በግንቦት 2031 ያበቃል';
+
+  @override
+  String get assistantVoiceDone => 'ተጠናቋል';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ምንም አልተሰማም። ማይክሮፎኑን ነክተው እንደገና ይሞክሩ።';
+
+  @override
+  String get assistantVoiceFailed => 'የድምፅ ግቤት ቆሟል። እንደገና ይሞክሩ።';
 }

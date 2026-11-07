@@ -6692,4 +6692,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Prílet: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Skúste: Pridaj môj pas, platí do mája 2031';
+
+  @override
+  String get assistantVoiceDone => 'Hotovo';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nič nebolo počuť. Ťuknite na mikrofón a skúste to znova.';
+
+  @override
+  String get assistantVoiceFailed => 'Hlasový vstup sa zastavil. Skúste to znova.';
 }

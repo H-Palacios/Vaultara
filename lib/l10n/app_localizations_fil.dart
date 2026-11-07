@@ -6566,4 +6566,16 @@ class AppLocalizationsFil extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Pagdating sa $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Subukan: Idagdag ang passport ko, mag-e-expire sa Mayo 2031';
+
+  @override
+  String get assistantVoiceDone => 'Tapos na';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Walang narinig. I-tap ang mikropono at subukan ulit.';
+
+  @override
+  String get assistantVoiceFailed => 'Huminto ang voice input. Subukan ulit.';
 }

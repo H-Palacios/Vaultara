@@ -6566,4 +6566,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country ತಲುಪುವುದು';
   }
+
+  @override
+  String get assistantVoiceHint => 'ಪ್ರಯತ್ನಿಸಿ: ನನ್ನ ಪಾಸ್‌ಪೋರ್ಟ್ ಸೇರಿಸು, ಮೇ 2031ರಲ್ಲಿ ಮುಗಿಯುತ್ತದೆ';
+
+  @override
+  String get assistantVoiceDone => 'ಮುಗಿದಿದೆ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ಏನೂ ಕೇಳಿಸಲಿಲ್ಲ. ಮೈಕ್ರೊಫೋನ್ ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get assistantVoiceFailed => 'ಧ್ವನಿ ಇನ್‌ಪುಟ್ ನಿಂತಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 }

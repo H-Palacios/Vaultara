@@ -2099,5 +2099,9 @@
   "travelConnectionIn": "በ{place} ማገናኛ",
   "travelConnectionLong": "በ{place} ማገናኛ፦ {duration}",
   "travelDurationHoursMinutes": "{hours} ሰ {minutes} ደ",
-  "travelArriveIn": "ወደ {country} መድረሻ"
+  "travelArriveIn": "ወደ {country} መድረሻ",
+  "assistantVoiceHint": "ይሞክሩ፦ ፓስፖርቴን ያክሉ፣ በግንቦት 2031 ያበቃል",
+  "assistantVoiceDone": "ተጠናቋል",
+  "assistantVoiceNoSpeech": "ምንም አልተሰማም። ማይክሮፎኑን ነክተው እንደገና ይሞክሩ።",
+  "assistantVoiceFailed": "የድምፅ ግቤት ቆሟል። እንደገና ይሞክሩ።"
 }

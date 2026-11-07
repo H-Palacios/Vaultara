@@ -6566,4 +6566,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Kuwasili $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Jaribu: Ongeza pasipoti yangu, inaisha Mei 2031';
+
+  @override
+  String get assistantVoiceDone => 'Imekamilika';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Hakuna kilichosikika. Gusa maikrofoni na ujaribu tena.';
+
+  @override
+  String get assistantVoiceFailed => 'Uingizaji wa sauti umesimama. Jaribu tena.';
 }

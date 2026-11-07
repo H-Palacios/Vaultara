@@ -6566,4 +6566,16 @@ class AppLocalizationsHy extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ժամանում՝ $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Փորձեք՝ Ավելացրու անձնագիրս, ժամկետը լրանում է 2031 թ. մայիսին';
+
+  @override
+  String get assistantVoiceDone => 'Պատրաստ է';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ոչինչ չլսվեց։ Հպեք խոսափողին և նորից փորձեք։';
+
+  @override
+  String get assistantVoiceFailed => 'Ձայնային մուտքը դադարեց։ Նորից փորձեք։';
 }

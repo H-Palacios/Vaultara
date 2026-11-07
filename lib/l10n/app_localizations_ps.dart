@@ -6566,4 +6566,16 @@ class AppLocalizationsPs extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country ته رسېدل';
   }
+
+  @override
+  String get assistantVoiceHint => 'هڅه وکړئ: زما پاسپورټ اضافه کړه، په مۍ 2031 کې پای ته رسېږي';
+
+  @override
+  String get assistantVoiceDone => 'بشپړ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'هېڅ وانه ورېدل شول. مایکروفون ټک کړئ او بیا هڅه وکړئ.';
+
+  @override
+  String get assistantVoiceFailed => 'غږیز داخلول ودرېدل. بیا هڅه وکړئ.';
 }

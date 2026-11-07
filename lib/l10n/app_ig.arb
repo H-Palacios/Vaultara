@@ -2066,5 +2066,9 @@
   "travelConnectionIn": "Njikọ na {place}",
   "travelConnectionLong": "Njikọ na {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} awa {minutes} nkeji",
-  "travelArriveIn": "Ịbịarute {country}"
+  "travelArriveIn": "Ịbịarute {country}",
+  "assistantVoiceHint": "Nwaa: Tinye paspọtụ m, ọ ga-agwụ na Mee 2031",
+  "assistantVoiceDone": "Emechaala",
+  "assistantVoiceNoSpeech": "A nụghị ihe ọ bụla. Pịa igwe okwu ma nwaa ọzọ.",
+  "assistantVoiceFailed": "Ntinye olu kwụsịrị. Nwaa ọzọ."
 }

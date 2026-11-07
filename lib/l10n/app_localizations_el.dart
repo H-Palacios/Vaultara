@@ -6566,4 +6566,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Άφιξη: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Δοκιμάστε: Πρόσθεσε το διαβατήριό μου, λήγει τον Μάιο του 2031';
+
+  @override
+  String get assistantVoiceDone => 'Τέλος';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Δεν ακούστηκε τίποτα. Πατήστε το μικρόφωνο και δοκιμάστε ξανά.';
+
+  @override
+  String get assistantVoiceFailed => 'Η φωνητική εισαγωγή σταμάτησε. Δοκιμάστε ξανά.';
 }

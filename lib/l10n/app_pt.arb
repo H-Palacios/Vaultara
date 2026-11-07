@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Escala em {place}",
   "travelConnectionLong": "Escala em {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Chegada a {country}"
+  "travelArriveIn": "Chegada a {country}",
+  "assistantVoiceHint": "Experimente: Adiciona o meu passaporte, expira em maio de 2031",
+  "assistantVoiceDone": "Concluído",
+  "assistantVoiceNoSpeech": "Não foi ouvido nada. Toque no microfone e tente novamente.",
+  "assistantVoiceFailed": "A entrada de voz parou. Tente novamente."
 }

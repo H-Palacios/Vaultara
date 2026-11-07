@@ -2066,5 +2066,9 @@
   "travelConnectionIn": "Tenging í {place}",
   "travelConnectionLong": "Tenging í {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} klst {minutes} mín",
-  "travelArriveIn": "Koma til {country}"
+  "travelArriveIn": "Koma til {country}",
+  "assistantVoiceHint": "Prófaðu: Bættu við vegabréfinu mínu, það rennur út í maí 2031",
+  "assistantVoiceDone": "Lokið",
+  "assistantVoiceNoSpeech": "Ekkert heyrðist. Ýttu á hljóðnemann og reyndu aftur.",
+  "assistantVoiceFailed": "Raddinnslátturinn stöðvaðist. Reyndu aftur."
 }

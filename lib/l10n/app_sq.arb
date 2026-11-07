@@ -2075,5 +2075,9 @@
   "travelConnectionIn": "Ndërlidhje në {place}",
   "travelConnectionLong": "Ndërlidhje në {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} orë {minutes} min",
-  "travelArriveIn": "Mbërritja: {country}"
+  "travelArriveIn": "Mbërritja: {country}",
+  "assistantVoiceHint": "Provo: Shto pasaportën time, skadon në maj 2031",
+  "assistantVoiceDone": "U krye",
+  "assistantVoiceNoSpeech": "Nuk u dëgjua asgjë. Prek mikrofonin dhe provo përsëri.",
+  "assistantVoiceFailed": "Futja me zë ndaloi. Provo përsëri."
 }

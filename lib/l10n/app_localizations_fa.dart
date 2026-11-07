@@ -6566,4 +6566,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'رسیدن به $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'امتحان کنید: گذرنامه‌ام را اضافه کن، مه ۲۰۳۱ منقضی می‌شود';
+
+  @override
+  String get assistantVoiceDone => 'تمام';
+
+  @override
+  String get assistantVoiceNoSpeech => 'چیزی شنیده نشد. روی میکروفون بزنید و دوباره امتحان کنید.';
+
+  @override
+  String get assistantVoiceFailed => 'ورودی صوتی متوقف شد. دوباره امتحان کنید.';
 }

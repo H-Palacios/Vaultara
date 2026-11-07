@@ -6566,4 +6566,16 @@ class AppLocalizationsKu extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Gihîştin: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Biceribîne: Pasaporta min zêde bike, di Gulana 2031an de diqede';
+
+  @override
+  String get assistantVoiceDone => 'Qediya';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Tiştek nehat bihîstin. Li mîkrofonê bitepîne û dîsa biceribîne.';
+
+  @override
+  String get assistantVoiceFailed => 'Têketina dengî rawestiya. Dîsa biceribîne.';
 }

@@ -2068,5 +2068,9 @@
   "travelConnectionIn": "Bytte i {place}",
   "travelConnectionLong": "Bytte i {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} t {minutes} min",
-  "travelArriveIn": "Ankomst til {country}"
+  "travelArriveIn": "Ankomst til {country}",
+  "assistantVoiceHint": "Prøv: Legg til passet mitt, det utløper i mai 2031",
+  "assistantVoiceDone": "Ferdig",
+  "assistantVoiceNoSpeech": "Ingenting ble hørt. Trykk på mikrofonen og prøv igjen.",
+  "assistantVoiceFailed": "Taleinndata stoppet. Prøv igjen."
 }

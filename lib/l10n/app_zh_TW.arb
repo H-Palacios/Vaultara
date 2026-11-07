@@ -2054,5 +2054,9 @@
   "travelConnectionIn": "在{place}轉機",
   "travelConnectionLong": "在{place}轉機：{duration}",
   "travelDurationHoursMinutes": "{hours}小時{minutes}分鐘",
-  "travelArriveIn": "抵達{country}"
+  "travelArriveIn": "抵達{country}",
+  "assistantVoiceHint": "試試說：新增我的護照，2031年5月到期",
+  "assistantVoiceDone": "完成",
+  "assistantVoiceNoSpeech": "沒有聽到聲音。輕觸麥克風後再試一次。",
+  "assistantVoiceFailed": "語音輸入已停止。請再試一次。"
 }

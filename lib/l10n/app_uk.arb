@@ -2078,5 +2078,9 @@
   "travelConnectionIn": "Пересадка: {place}",
   "travelConnectionLong": "Пересадка: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} год {minutes} хв",
-  "travelArriveIn": "Прибуття: {country}"
+  "travelArriveIn": "Прибуття: {country}",
+  "assistantVoiceHint": "Наприклад: Додай мій паспорт, він спливає в травні 2031",
+  "assistantVoiceDone": "Готово",
+  "assistantVoiceNoSpeech": "Нічого не почуто. Торкніться мікрофона і спробуйте ще раз.",
+  "assistantVoiceFailed": "Голосове введення зупинилося. Спробуйте ще раз."
 }

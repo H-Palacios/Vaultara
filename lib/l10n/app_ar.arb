@@ -2099,5 +2099,9 @@
   "travelConnectionIn": "توقف في {place}",
   "travelConnectionLong": "توقف في {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} س {minutes} د",
-  "travelArriveIn": "الوصول إلى {country}"
+  "travelArriveIn": "الوصول إلى {country}",
+  "assistantVoiceHint": "جرّب: أضف جواز سفري، ينتهي في مايو 2031",
+  "assistantVoiceDone": "تم",
+  "assistantVoiceNoSpeech": "لم يُسمع شيء. اضغط على الميكروفون وحاول مرة أخرى.",
+  "assistantVoiceFailed": "توقف الإدخال الصوتي. حاول مرة أخرى."
 }

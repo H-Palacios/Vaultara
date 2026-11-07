@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Kuunganisha {place}",
   "travelConnectionLong": "Kuunganisha {place}: {duration}",
   "travelDurationHoursMinutes": "Saa {hours} dak {minutes}",
-  "travelArriveIn": "Kuwasili {country}"
+  "travelArriveIn": "Kuwasili {country}",
+  "assistantVoiceHint": "Jaribu: Ongeza pasipoti yangu, inaisha Mei 2031",
+  "assistantVoiceDone": "Imekamilika",
+  "assistantVoiceNoSpeech": "Hakuna kilichosikika. Gusa maikrofoni na ujaribu tena.",
+  "assistantVoiceFailed": "Uingizaji wa sauti umesimama. Jaribu tena."
 }

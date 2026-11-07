@@ -11130,6 +11130,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Arrive in {country}'**
   String travelArriveIn(String country);
+
+  /// Example shown while Ask Vaultara listens and nothing has been heard yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Try: Add my passport, it expires in May 2031'**
+  String get assistantVoiceHint;
+
+  /// No description provided for @assistantVoiceDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get assistantVoiceDone;
+
+  /// No description provided for @assistantVoiceNoSpeech.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing was heard. Tap the microphone and try again.'**
+  String get assistantVoiceNoSpeech;
+
+  /// No description provided for @assistantVoiceFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice input stopped. Try again.'**
+  String get assistantVoiceFailed;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

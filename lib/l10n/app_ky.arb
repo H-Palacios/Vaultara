@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "Которулуу: {place}",
   "travelConnectionLong": "Которулуу: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} с {minutes} мүн",
-  "travelArriveIn": "Келүү: {country}"
+  "travelArriveIn": "Келүү: {country}",
+  "assistantVoiceHint": "Байкап көрүңүз: Паспортумду кош, мөөнөтү 2031-жылдын майында бүтөт",
+  "assistantVoiceDone": "Даяр",
+  "assistantVoiceNoSpeech": "Эч нерсе угулган жок. Микрофонду басып, кайра аракет кылыңыз.",
+  "assistantVoiceFailed": "Үн менен киргизүү токтоду. Кайра аракет кылыңыз."
 }

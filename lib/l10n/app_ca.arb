@@ -2092,5 +2092,9 @@
   "travelConnectionIn": "Escala a {place}",
   "travelConnectionLong": "Escala a {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Arribada a {country}"
+  "travelArriveIn": "Arribada a {country}",
+  "assistantVoiceHint": "Prova: Afegeix el meu passaport, caduca el maig del 2031",
+  "assistantVoiceDone": "Fet",
+  "assistantVoiceNoSpeech": "No s'ha sentit res. Toca el micròfon i torna-ho a provar.",
+  "assistantVoiceFailed": "L'entrada de veu s'ha aturat. Torna-ho a provar."
 }

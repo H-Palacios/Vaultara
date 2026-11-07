@@ -6502,4 +6502,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$countryに到着';
   }
+
+  @override
+  String get assistantVoiceHint => '例：パスポートを追加して、2031年5月に期限切れ';
+
+  @override
+  String get assistantVoiceDone => '完了';
+
+  @override
+  String get assistantVoiceNoSpeech => '何も聞こえませんでした。マイクをタップしてもう一度お試しください。';
+
+  @override
+  String get assistantVoiceFailed => '音声入力が止まりました。もう一度お試しください。';
 }

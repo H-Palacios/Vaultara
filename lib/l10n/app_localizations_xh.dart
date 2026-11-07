@@ -6566,4 +6566,16 @@ class AppLocalizationsXh extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Ukufika e-$country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Zama: Yongeza ipaspoti yam, iphelelwa ngoMeyi 2031';
+
+  @override
+  String get assistantVoiceDone => 'Kugqityiwe';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Akukho nto iviweyo. Cofa imayikrofoni uze uzame kwakhona.';
+
+  @override
+  String get assistantVoiceFailed => 'Ukufaka ngelizwi kumile. Zama kwakhona.';
 }
