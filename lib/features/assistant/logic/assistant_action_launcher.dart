@@ -23,6 +23,7 @@ import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
+import 'package:vaultara/features/travel/logic/stay_counter.dart';
 import 'package:vaultara/features/travel/logic/trip_checklist.dart';
 import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -607,6 +608,56 @@ class AssistantActionLauncher {
       .take(Countries.maxPerTrip)
       .toList();
 
+  /// Flights inside the trip dates, with unknown countries dropped. Null
+  /// when a flight falls outside the dates, so nothing is lost silently.
+  static List<TripFlight>? _validFlights(
+    List<TripFlight> flights,
+    DateTime start,
+    DateTime end,
+  ) {
+    final out = <TripFlight>[];
+    for (final f in flights) {
+      if (Dates.only(f.departDate).isBefore(start) ||
+          Dates.only(f.landDate).isAfter(end)) {
+        return null;
+      }
+      final country = f.toCountry;
+      out.add(country == null || Countries.byCode(country) != null
+          ? f
+          : TripFlight(
+              from: f.from,
+              to: f.to,
+              departDate: f.departDate,
+              departTime: f.departTime,
+              landDate: f.landDate,
+              landTime: f.landTime,
+            ));
+      if (out.length >= SavedTrip.maxFlights) break;
+    }
+    out.sort(TripFlight.compare);
+    return out;
+  }
+
+  /// Arrival days stored per stay zone, the way the stay card saves them.
+  static Map<String, DateTime> _zonedArrivals(
+    SavedTrip trip,
+    Map<String, DateTime> wanted,
+  ) {
+    final out = Map<String, DateTime>.of(trip.arrivals);
+    wanted.forEach((country, day) {
+      if (!trip.countries.contains(country)) return;
+      final clean = Dates.only(day);
+      if (clean.isBefore(trip.start) || clean.isAfter(trip.end)) return;
+      final zone = StayCounter.zoneFor(trip, country);
+      if (clean == trip.start) {
+        out.remove(zone);
+      } else {
+        out[zone] = clean;
+      }
+    });
+    return out;
+  }
+
   static Future<AssistantApplyResult> _addTrip(
     BuildContext context,
     AssistantAction action,
@@ -629,7 +680,16 @@ class AssistantActionLauncher {
       _info(context, loc.assistantActionNotPossible);
       return AssistantApplyResult.failed;
     }
-    final base = SavedTrip(
+    final flights = _validFlights(
+      action.flights,
+      Dates.only(departure),
+      Dates.only(returnDate),
+    );
+    if (flights == null) {
+      _info(context, loc.travelFlightsOutsideDates);
+      return AssistantApplyResult.failed;
+    }
+    final plain = SavedTrip(
       id: '',
       name: name,
       departure: Dates.only(departure),
@@ -638,6 +698,10 @@ class AssistantActionLauncher {
       travellers: _validTravellers(action.travellers),
       countries: countries,
       purpose: action.purpose,
+      flights: flights,
+    );
+    final base = plain.copyWith(
+      arrivals: _zonedArrivals(plain, action.arrivals),
     );
     final needsVisa =
         VisaCheck.autoNeedsVisa(VisaCheck.forTrip(base)) ?? false;
@@ -694,6 +758,15 @@ class AssistantActionLauncher {
       name = SavedTrip.defaultName(countries);
     }
 
+    final flights = _validFlights(
+      changes.flights ?? base.flights,
+      departure,
+      returnDate,
+    );
+    if (flights == null) {
+      _info(context, loc.travelFlightsOutsideDates);
+      return AssistantApplyResult.failed;
+    }
     var edited = base.copyWith(
       name: name,
       countries: countries,
@@ -704,7 +777,12 @@ class AssistantActionLauncher {
           : _validTravellers(changes.travellers!),
       driving: changes.driving,
       purpose: changes.purpose,
+      flights: flights,
     );
+    final arrivals = changes.arrivals;
+    if (arrivals != null) {
+      edited = edited.copyWith(arrivals: _zonedArrivals(edited, arrivals));
+    }
     if (!base.needsVisaManual) {
       final auto = VisaCheck.autoNeedsVisa(VisaCheck.forTrip(edited));
       if (auto != null) edited = edited.copyWith(needsVisa: auto);

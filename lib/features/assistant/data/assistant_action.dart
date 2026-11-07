@@ -1,4 +1,5 @@
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
+import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_purpose.dart';
 
 enum AssistantActionType {
@@ -115,6 +116,8 @@ class AssistantTripChanges {
   final List<String>? travellers;
   final bool? driving;
   final TripPurpose? purpose;
+  final List<TripFlight>? flights;
+  final Map<String, DateTime>? arrivals;
 
   const AssistantTripChanges({
     this.name,
@@ -124,6 +127,8 @@ class AssistantTripChanges {
     this.travellers,
     this.driving,
     this.purpose,
+    this.flights,
+    this.arrivals,
   });
 
   bool get isEmpty =>
@@ -133,7 +138,9 @@ class AssistantTripChanges {
       returnDate == null &&
       travellers == null &&
       driving == null &&
-      purpose == null;
+      purpose == null &&
+      flights == null &&
+      arrivals == null;
 
   static AssistantTripChanges? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -145,6 +152,10 @@ class AssistantTripChanges {
       travellers: AssistantAction.ids(raw['travellers']),
       driving: raw['driving'] is bool ? raw['driving'] as bool : null,
       purpose: TripPurposes.tryParse(raw['purpose']),
+      flights: raw.containsKey('flights')
+          ? AssistantAction.flightsOf(raw['flights'])
+          : null,
+      arrivals: AssistantAction.arrivalsOf(raw['arrivals']),
     );
     return changes.isEmpty ? null : changes;
   }
@@ -228,6 +239,8 @@ class AssistantAction {
   final List<String> travellers;
   final bool driving;
   final TripPurpose purpose;
+  final List<TripFlight> flights;
+  final Map<String, DateTime> arrivals;
   final AssistantTripChanges? tripChanges;
   final String? screen;
   final String? targetId;
@@ -268,6 +281,8 @@ class AssistantAction {
     this.travellers = const <String>[],
     this.driving = false,
     this.purpose = TripPurposes.fallback,
+    this.flights = const <TripFlight>[],
+    this.arrivals = const <String, DateTime>{},
     this.tripChanges,
     this.screen,
     this.targetId,
@@ -351,6 +366,48 @@ class AssistantAction {
       if (id != null && !out.contains(id)) out.add(id);
       if (out.length >= 26) break;
     }
+    return out.isEmpty ? null : out;
+  }
+
+  /// Flight legs from the assistant, in the shape the server sends. Legs
+  /// that cannot be read are skipped.
+  static List<TripFlight>? flightsOf(Object? value) {
+    if (value is! List) return null;
+    final out = <TripFlight>[];
+    for (final item in value) {
+      if (item is! Map) continue;
+      final from = text(item['from'], TripFlight.maxPlaceLength);
+      final to = text(item['to'], TripFlight.maxPlaceLength);
+      final depart = date(item['departDate']);
+      final land = date(item['landDate']) ?? depart;
+      if (from == null || to == null || depart == null || land == null) {
+        continue;
+      }
+      if (land.isBefore(depart)) continue;
+      out.add(TripFlight(
+        from: from,
+        to: to,
+        departDate: depart,
+        departTime: time(item['departTime']),
+        landDate: land,
+        landTime: time(item['landTime']),
+        toCountry: country(item['toCountry']),
+      ));
+      if (out.length >= SavedTrip.maxFlights) break;
+    }
+    out.sort(TripFlight.compare);
+    return out;
+  }
+
+  /// Arrival day per country code, for trips with several countries.
+  static Map<String, DateTime>? arrivalsOf(Object? value) {
+    if (value is! Map) return null;
+    final out = <String, DateTime>{};
+    value.forEach((key, raw) {
+      final code = country(key);
+      final day = date(raw);
+      if (code != null && day != null) out[code] = day;
+    });
     return out.isEmpty ? null : out;
   }
 
@@ -510,6 +567,8 @@ class AssistantAction {
       travellers: ids(raw['travellers']) ?? const <String>[me],
       driving: raw['driving'] == true,
       purpose: TripPurposes.fromStorage(raw['purpose']),
+      flights: flightsOf(raw['flights']) ?? const <TripFlight>[],
+      arrivals: arrivalsOf(raw['arrivals']) ?? const <String, DateTime>{},
     );
   }
 
