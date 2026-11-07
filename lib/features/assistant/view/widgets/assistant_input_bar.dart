@@ -12,6 +12,9 @@ class AssistantInputBar extends StatelessWidget {
   final VoidCallback onSend;
   final VoidCallback onMic;
 
+  /// Set while an answer is being worked out; turns Send into Stop.
+  final VoidCallback? onStop;
+
   const AssistantInputBar({
     super.key,
     required this.controller,
@@ -21,6 +24,7 @@ class AssistantInputBar extends StatelessWidget {
     required this.hintText,
     required this.onSend,
     required this.onMic,
+    this.onStop,
   });
 
   @override
@@ -76,11 +80,17 @@ class AssistantInputBar extends StatelessWidget {
             const SizedBox(width: 8),
             Padding(
               padding: const EdgeInsets.only(bottom: 4),
-              child: IconButton.filled(
-                tooltip: loc.assistantSend,
-                onPressed: canSend ? onSend : null,
-                icon: const Icon(Icons.arrow_upward_rounded),
-              ),
+              child: onStop != null
+                  ? IconButton.filled(
+                      tooltip: loc.assistantStop,
+                      onPressed: onStop,
+                      icon: const Icon(Icons.stop_rounded),
+                    )
+                  : IconButton.filled(
+                      tooltip: loc.assistantSend,
+                      onPressed: canSend ? onSend : null,
+                      icon: const Icon(Icons.arrow_upward_rounded),
+                    ),
             ),
           ],
         );
