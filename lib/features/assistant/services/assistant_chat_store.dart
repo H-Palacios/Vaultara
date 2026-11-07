@@ -65,6 +65,8 @@ class AssistantChatStore {
   static String summaryFrom(String text) =>
       _clip(text.replaceAll(RegExp(r'\s+'), ' '), maxSummary);
 
+  static String? get userId => FirebaseAuth.instance.currentUser?.uid;
+
   static String? newChatId() => _chats()?.doc().id;
 
   static String? newMessageId(String chatId) =>
@@ -178,6 +180,22 @@ class AssistantChatStore {
       ));
     }
     return out;
+  }
+
+  /// The chat the user wrote in last, or null when there is none.
+  static Future<AssistantChatSummary?> latest() async {
+    final chats = _chats();
+    if (chats == null) return null;
+    final snap =
+        await chats.orderBy('updatedAt', descending: true).limit(1).get();
+    if (snap.docs.isEmpty) return null;
+    final doc = snap.docs.first;
+    final title = doc.data()['title'];
+    return AssistantChatSummary(
+      id: doc.id,
+      title: title is String && title.trim().isNotEmpty ? title.trim() : '-',
+      updatedAt: _time(doc.data()['updatedAt']),
+    );
   }
 
   static Future<List<StoredChatMessage>> messages(String chatId) async {
