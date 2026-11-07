@@ -178,6 +178,8 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
 
                     return ListView(
                       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                      // Kept until the Flutter version in use exports ScrollCacheExtent.
+                      // ignore: deprecated_member_use
                       cacheExtent: TutorialController.listCacheExtent,
                       children: [
                         ScreenHeader(title: loc.travelTitle),

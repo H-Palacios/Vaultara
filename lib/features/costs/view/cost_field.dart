@@ -356,7 +356,7 @@ Future<String?> showCurrencyPicker(
     ),
     builder: (_) => CurrencyPickerSheet(
       selected: selected,
-      available: available == null ? null : available.toSet(),
+      available: available?.toSet(),
     ),
   );
 }
