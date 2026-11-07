@@ -2035,5 +2035,9 @@
   "travelConnectionIn": "Преседање у {place}",
   "travelConnectionLong": "Преседање у {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ч {minutes} мин",
-  "travelArriveIn": "Долазак: {country}"
+  "travelArriveIn": "Долазак: {country}",
+  "assistantVoiceHint": "Пробајте: Додај мој пасош, истиче у мају 2031.",
+  "assistantVoiceDone": "Готово",
+  "assistantVoiceNoSpeech": "Ништа се није чуло. Додирните микрофон и покушајте поново.",
+  "assistantVoiceFailed": "Гласовни унос је заустављен. Покушајте поново."
 }

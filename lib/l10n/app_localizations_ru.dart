@@ -6714,4 +6714,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Прибытие: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Например: Добавь мой паспорт, он истекает в мае 2031';
+
+  @override
+  String get assistantVoiceDone => 'Готово';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ничего не слышно. Нажмите на микрофон и попробуйте ещё раз.';
+
+  @override
+  String get assistantVoiceFailed => 'Голосовой ввод остановлен. Попробуйте ещё раз.';
 }

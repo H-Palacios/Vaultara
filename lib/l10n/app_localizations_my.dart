@@ -6512,4 +6512,16 @@ class AppLocalizationsMy extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country သို့ ရောက်ရှိ';
   }
+
+  @override
+  String get assistantVoiceHint => 'စမ်းကြည့်ပါ- ကျွန်ုပ်၏ နိုင်ငံကူးလက်မှတ်ကို ထည့်ပါ၊ 2031 မေလတွင် သက်တမ်းကုန်မည်';
+
+  @override
+  String get assistantVoiceDone => 'ပြီးပါပြီ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ဘာမှ မကြားရပါ။ မိုက်ခရိုဖုန်းကို နှိပ်ပြီး ထပ်စမ်းပါ။';
+
+  @override
+  String get assistantVoiceFailed => 'အသံထည့်သွင်းမှု ရပ်သွားသည်။ ထပ်စမ်းပါ။';
 }

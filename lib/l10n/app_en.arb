@@ -8031,5 +8031,12 @@
         "type": "String"
       }
     }
-  }
+  },
+  "assistantVoiceHint": "Try: Add my passport, it expires in May 2031",
+  "@assistantVoiceHint": {
+    "description": "Example shown while Ask Vaultara listens and nothing has been heard yet."
+  },
+  "assistantVoiceDone": "Done",
+  "assistantVoiceNoSpeech": "Nothing was heard. Tap the microphone and try again.",
+  "assistantVoiceFailed": "Voice input stopped. Try again."
 }

@@ -6635,6 +6635,18 @@ class AppLocalizationsSr extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Долазак: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Пробајте: Додај мој пасош, истиче у мају 2031.';
+
+  @override
+  String get assistantVoiceDone => 'Готово';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ништа се није чуло. Додирните микрофон и покушајте поново.';
+
+  @override
+  String get assistantVoiceFailed => 'Гласовни унос је заустављен. Покушајте поново.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -13267,6 +13279,18 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String travelArriveIn(String country) {
     return 'Долазак: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Пробајте: Додај мој пасош, истиче у мају 2031.';
+
+  @override
+  String get assistantVoiceDone => 'Готово';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ништа се није чуло. Додирните микрофон и покушајте поново.';
+
+  @override
+  String get assistantVoiceFailed => 'Гласовни унос је заустављен. Покушајте поново.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -19895,4 +19919,16 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String travelArriveIn(String country) {
     return 'Dolazak: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Probajte: Dodaj moj pasoš, ističe u maju 2031.';
+
+  @override
+  String get assistantVoiceDone => 'Gotovo';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ništa se nije čulo. Dodirnite mikrofon i pokušajte ponovo.';
+
+  @override
+  String get assistantVoiceFailed => 'Glasovni unos je zaustavljen. Pokušajte ponovo.';
 }

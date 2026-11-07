@@ -6566,4 +6566,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country ਪਹੁੰਚਣਾ';
   }
+
+  @override
+  String get assistantVoiceHint => 'ਅਜ਼ਮਾਓ: ਮੇਰਾ ਪਾਸਪੋਰਟ ਜੋੜੋ, ਇਹ ਮਈ 2031 ਵਿੱਚ ਖ਼ਤਮ ਹੁੰਦਾ ਹੈ';
+
+  @override
+  String get assistantVoiceDone => 'ਹੋ ਗਿਆ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ਕੁਝ ਸੁਣਾਈ ਨਹੀਂ ਦਿੱਤਾ। ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਟੈਪ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get assistantVoiceFailed => 'ਆਵਾਜ਼ ਇਨਪੁੱਟ ਰੁਕ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 }

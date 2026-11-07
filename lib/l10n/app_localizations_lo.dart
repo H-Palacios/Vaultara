@@ -6514,4 +6514,16 @@ class AppLocalizationsLo extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'ມາຮອດ $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'ລອງ: ເພີ່ມໜັງສືຜ່ານແດນຂອງຂ້ອຍ, ໝົດອາຍຸເດືອນພຶດສະພາ 2031';
+
+  @override
+  String get assistantVoiceDone => 'ແລ້ວໆ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ບໍ່ໄດ້ຍິນຫຍັງ. ແຕະໄມໂຄຣໂຟນ ແລ້ວລອງໃໝ່.';
+
+  @override
+  String get assistantVoiceFailed => 'ການປ້ອນດ້ວຍສຽງຢຸດແລ້ວ. ລອງໃໝ່.';
 }

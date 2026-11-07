@@ -2099,5 +2099,9 @@
   "travelConnectionIn": "Oorklim in {place}",
   "travelConnectionLong": "Oorklim in {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Aankoms in {country}"
+  "travelArriveIn": "Aankoms in {country}",
+  "assistantVoiceHint": "Probeer: Voeg my paspoort by, dit verval in Mei 2031",
+  "assistantVoiceDone": "Klaar",
+  "assistantVoiceNoSpeech": "Niks is gehoor nie. Tik die mikrofoon en probeer weer.",
+  "assistantVoiceFailed": "Steminvoer het gestop. Probeer weer."
 }

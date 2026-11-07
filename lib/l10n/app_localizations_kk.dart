@@ -6566,4 +6566,16 @@ class AppLocalizationsKk extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Келу: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Байқап көріңіз: Төлқұжатымды қос, мерзімі 2031 жылғы мамырда бітеді';
+
+  @override
+  String get assistantVoiceDone => 'Дайын';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Ештеңе естілмеді. Микрофонды түртіп, қайталап көріңіз.';
+
+  @override
+  String get assistantVoiceFailed => 'Дауыспен енгізу тоқтады. Қайталап көріңіз.';
 }

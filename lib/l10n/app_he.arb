@@ -2066,5 +2066,9 @@
   "travelConnectionIn": "קונקשן ב{place}",
   "travelConnectionLong": "קונקשן ב{place}: {duration}",
   "travelDurationHoursMinutes": "{hours} ש׳ {minutes} ד׳",
-  "travelArriveIn": "הגעה ל{country}"
+  "travelArriveIn": "הגעה ל{country}",
+  "assistantVoiceHint": "נסו: הוסף את הדרכון שלי, הוא פג במאי 2031",
+  "assistantVoiceDone": "סיום",
+  "assistantVoiceNoSpeech": "לא נשמע כלום. הקישו על המיקרופון ונסו שוב.",
+  "assistantVoiceFailed": "הקלט הקולי נעצר. נסו שוב."
 }

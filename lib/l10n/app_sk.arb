@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "Prestup: {place}",
   "travelConnectionLong": "Prestup: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Prílet: {country}"
+  "travelArriveIn": "Prílet: {country}",
+  "assistantVoiceHint": "Skúste: Pridaj môj pas, platí do mája 2031",
+  "assistantVoiceDone": "Hotovo",
+  "assistantVoiceNoSpeech": "Nič nebolo počuť. Ťuknite na mikrofón a skúste to znova.",
+  "assistantVoiceFailed": "Hlasový vstup sa zastavil. Skúste to znova."
 }

@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "Canjin jirgi a {place}",
   "travelConnectionLong": "Canjin jirgi a {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} a {minutes} m",
-  "travelArriveIn": "Isowa {country}"
+  "travelArriveIn": "Isowa {country}",
+  "assistantVoiceHint": "Gwada: Ƙara fasfo ɗina, zai ƙare a Mayu 2031",
+  "assistantVoiceDone": "An gama",
+  "assistantVoiceNoSpeech": "Ba a ji komai ba. Taɓa makirufo ka sake gwadawa.",
+  "assistantVoiceFailed": "Shigar da murya ya tsaya. Sake gwadawa."
 }

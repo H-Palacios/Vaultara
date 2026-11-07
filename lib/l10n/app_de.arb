@@ -2092,5 +2092,9 @@
   "travelConnectionIn": "Umstieg in {place}",
   "travelConnectionLong": "Umstieg in {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} Std. {minutes} Min.",
-  "travelArriveIn": "Ankunft: {country}"
+  "travelArriveIn": "Ankunft: {country}",
+  "assistantVoiceHint": "Probier: Füge meinen Reisepass hinzu, er läuft im Mai 2031 ab",
+  "assistantVoiceDone": "Fertig",
+  "assistantVoiceNoSpeech": "Es wurde nichts gehört. Tippe auf das Mikrofon und versuche es noch einmal.",
+  "assistantVoiceFailed": "Spracheingabe wurde beendet. Versuche es noch einmal."
 }

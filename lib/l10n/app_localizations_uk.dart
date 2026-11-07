@@ -6706,4 +6706,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Прибуття: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Наприклад: Додай мій паспорт, він спливає в травні 2031';
+
+  @override
+  String get assistantVoiceDone => 'Готово';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Нічого не почуто. Торкніться мікрофона і спробуйте ще раз.';
+
+  @override
+  String get assistantVoiceFailed => 'Голосове введення зупинилося. Спробуйте ще раз.';
 }

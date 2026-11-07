@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "{place} aktarması",
   "travelConnectionLong": "{place} aktarması: {duration}",
   "travelDurationHoursMinutes": "{hours} sa {minutes} dk",
-  "travelArriveIn": "Varış: {country}"
+  "travelArriveIn": "Varış: {country}",
+  "assistantVoiceHint": "Deneyin: Pasaportumu ekle, Mayıs 2031'de bitiyor",
+  "assistantVoiceDone": "Tamam",
+  "assistantVoiceNoSpeech": "Hiçbir şey duyulmadı. Mikrofona dokunup tekrar deneyin.",
+  "assistantVoiceFailed": "Sesli giriş durdu. Tekrar deneyin."
 }

@@ -6566,4 +6566,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Érkezés: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Próbáld: Add hozzá az útlevelem, 2031 májusában jár le';
+
+  @override
+  String get assistantVoiceDone => 'Kész';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Nem hallatszott semmi. Koppints a mikrofonra, és próbáld újra.';
+
+  @override
+  String get assistantVoiceFailed => 'A hangbevitel leállt. Próbáld újra.';
 }

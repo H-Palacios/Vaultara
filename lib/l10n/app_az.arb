@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "{place} şəhərində aktarma",
   "travelConnectionLong": "{place} şəhərində aktarma: {duration}",
   "travelDurationHoursMinutes": "{hours} s {minutes} dəq",
-  "travelArriveIn": "Gəliş: {country}"
+  "travelArriveIn": "Gəliş: {country}",
+  "assistantVoiceHint": "Sınayın: Pasportumu əlavə et, 2031 mayında bitir",
+  "assistantVoiceDone": "Hazır",
+  "assistantVoiceNoSpeech": "Heç nə eşidilmədi. Mikrofona toxunub yenidən cəhd edin.",
+  "assistantVoiceFailed": "Səsli daxiletmə dayandı. Yenidən cəhd edin."
 }

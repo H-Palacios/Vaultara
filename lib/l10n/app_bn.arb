@@ -2092,5 +2092,9 @@
   "travelConnectionIn": "{place}-এ সংযোগ",
   "travelConnectionLong": "{place}-এ সংযোগ: {duration}",
   "travelDurationHoursMinutes": "{hours} ঘ {minutes} মি",
-  "travelArriveIn": "{country}-এ পৌঁছানো"
+  "travelArriveIn": "{country}-এ পৌঁছানো",
+  "assistantVoiceHint": "চেষ্টা করুন: আমার পাসপোর্ট যোগ করো, মেয়াদ শেষ মে 2031",
+  "assistantVoiceDone": "হয়েছে",
+  "assistantVoiceNoSpeech": "কিছু শোনা যায়নি। মাইক্রোফোনে ট্যাপ করে আবার চেষ্টা করুন।",
+  "assistantVoiceFailed": "ভয়েস ইনপুট থেমে গেছে। আবার চেষ্টা করুন।"
 }

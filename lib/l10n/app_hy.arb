@@ -2075,5 +2075,9 @@
   "travelConnectionIn": "Տրանզիտ՝ {place}",
   "travelConnectionLong": "Տրանզիտ՝ {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} ժ {minutes} ր",
-  "travelArriveIn": "Ժամանում՝ {country}"
+  "travelArriveIn": "Ժամանում՝ {country}",
+  "assistantVoiceHint": "Փորձեք՝ Ավելացրու անձնագիրս, ժամկետը լրանում է 2031 թ. մայիսին",
+  "assistantVoiceDone": "Պատրաստ է",
+  "assistantVoiceNoSpeech": "Ոչինչ չլսվեց։ Հպեք խոսափողին և նորից փորձեք։",
+  "assistantVoiceFailed": "Ձայնային մուտքը դադարեց։ Նորից փորձեք։"
 }

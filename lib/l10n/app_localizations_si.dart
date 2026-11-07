@@ -6565,4 +6565,16 @@ class AppLocalizationsSi extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country වෙත පැමිණීම';
   }
+
+  @override
+  String get assistantVoiceHint => 'උත්සාහ කරන්න: මගේ ගමන් බලපත්‍රය එක් කරන්න, 2031 මැයි මාසයේ කල් ඉකුත් වේ';
+
+  @override
+  String get assistantVoiceDone => 'හරි';
+
+  @override
+  String get assistantVoiceNoSpeech => 'කිසිවක් ඇසුණේ නැත. මයික්‍රොෆෝනය තට්ටු කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get assistantVoiceFailed => 'හඬ ආදානය නතර විය. නැවත උත්සාහ කරන්න.';
 }

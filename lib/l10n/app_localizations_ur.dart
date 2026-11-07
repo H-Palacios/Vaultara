@@ -6566,4 +6566,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country پہنچنا';
   }
+
+  @override
+  String get assistantVoiceHint => 'آزمائیں: میرا پاسپورٹ شامل کرو، یہ مئی 2031 میں ختم ہوتا ہے';
+
+  @override
+  String get assistantVoiceDone => 'ہو گیا';
+
+  @override
+  String get assistantVoiceNoSpeech => 'کچھ سنائی نہیں دیا۔ مائیکروفون پر ٹیپ کر کے دوبارہ کوشش کریں۔';
+
+  @override
+  String get assistantVoiceFailed => 'آواز سے اندراج رک گیا۔ دوبارہ کوشش کریں۔';
 }

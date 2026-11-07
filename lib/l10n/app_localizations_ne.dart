@@ -6566,4 +6566,16 @@ class AppLocalizationsNe extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country पुग्ने';
   }
+
+  @override
+  String get assistantVoiceHint => 'प्रयास गर्नुहोस्: मेरो राहदानी थप, यो मे 2031 मा सकिन्छ';
+
+  @override
+  String get assistantVoiceDone => 'भयो';
+
+  @override
+  String get assistantVoiceNoSpeech => 'केही सुनिएन। माइक्रोफोन ट्याप गरेर फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String get assistantVoiceFailed => 'आवाज इनपुट रोकियो। फेरि प्रयास गर्नुहोस्।';
 }

@@ -6502,4 +6502,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'ถึง$country';
   }
+
+  @override
+  String get assistantVoiceHint => 'ลองพูดว่า: เพิ่มพาสปอร์ตของฉัน หมดอายุพฤษภาคม 2031';
+
+  @override
+  String get assistantVoiceDone => 'เสร็จ';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ไม่ได้ยินอะไรเลย แตะไมโครโฟนแล้วลองอีกครั้ง';
+
+  @override
+  String get assistantVoiceFailed => 'การป้อนด้วยเสียงหยุดแล้ว ลองอีกครั้ง';
 }

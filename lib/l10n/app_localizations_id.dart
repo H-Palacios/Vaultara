@@ -6509,4 +6509,16 @@ class AppLocalizationsId extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Tiba di $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Coba: Tambahkan paspor saya, berlaku sampai Mei 2031';
+
+  @override
+  String get assistantVoiceDone => 'Selesai';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Tidak ada yang terdengar. Ketuk mikrofon dan coba lagi.';
+
+  @override
+  String get assistantVoiceFailed => 'Input suara berhenti. Coba lagi.';
 }

@@ -6566,4 +6566,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Saapuminen: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Kokeile: Lisää passini, se vanhenee toukokuussa 2031';
+
+  @override
+  String get assistantVoiceDone => 'Valmis';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Mitään ei kuulunut. Napauta mikrofonia ja yritä uudelleen.';
+
+  @override
+  String get assistantVoiceFailed => 'Äänisyöte pysähtyi. Yritä uudelleen.';
 }

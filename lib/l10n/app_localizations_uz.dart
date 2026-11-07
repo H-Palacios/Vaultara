@@ -6566,4 +6566,16 @@ class AppLocalizationsUz extends AppLocalizations {
   String travelArriveIn(String country) {
     return 'Yetib kelish: $country';
   }
+
+  @override
+  String get assistantVoiceHint => 'Sinab ko\'ring: Pasportimni qo\'sh, muddati 2031-yil mayda tugaydi';
+
+  @override
+  String get assistantVoiceDone => 'Tayyor';
+
+  @override
+  String get assistantVoiceNoSpeech => 'Hech narsa eshitilmadi. Mikrofonga bosib, qayta urinib ko\'ring.';
+
+  @override
+  String get assistantVoiceFailed => 'Ovozli kiritish to\'xtadi. Qayta urinib ko\'ring.';
 }

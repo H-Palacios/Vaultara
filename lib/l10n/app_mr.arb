@@ -1811,5 +1811,9 @@
   "travelConnectionIn": "{place} येथे कनेक्शन",
   "travelConnectionLong": "{place} येथे कनेक्शन: {duration}",
   "travelDurationHoursMinutes": "{hours} ता {minutes} मि",
-  "travelArriveIn": "{country} येथे पोहोचणे"
+  "travelArriveIn": "{country} येथे पोहोचणे",
+  "assistantVoiceHint": "प्रयत्न करा: माझा पासपोर्ट जोडा, तो मे 2031 मध्ये संपतो",
+  "assistantVoiceDone": "झाले",
+  "assistantVoiceNoSpeech": "काहीही ऐकू आले नाही. मायक्रोफोनवर टॅप करून पुन्हा प्रयत्न करा.",
+  "assistantVoiceFailed": "व्हॉइस इनपुट थांबले. पुन्हा प्रयत्न करा."
 }

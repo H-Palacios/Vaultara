@@ -6566,4 +6566,16 @@ class AppLocalizationsTe extends AppLocalizations {
   String travelArriveIn(String country) {
     return '$country చేరుకోవడం';
   }
+
+  @override
+  String get assistantVoiceHint => 'ప్రయత్నించండి: నా పాస్‌పోర్ట్ జోడించు, మే 2031లో గడువు ముగుస్తుంది';
+
+  @override
+  String get assistantVoiceDone => 'పూర్తయింది';
+
+  @override
+  String get assistantVoiceNoSpeech => 'ఏమీ వినిపించలేదు. మైక్రోఫోన్‌ను తాకి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get assistantVoiceFailed => 'వాయిస్ ఇన్‌పుట్ ఆగిపోయింది. మళ్లీ ప్రయత్నించండి.';
 }

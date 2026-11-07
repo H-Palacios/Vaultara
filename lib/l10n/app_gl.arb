@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "Escala en {place}",
   "travelConnectionLong": "Escala en {place}: {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Chegada a {country}"
+  "travelArriveIn": "Chegada a {country}",
+  "assistantVoiceHint": "Proba: Engade o meu pasaporte, caduca en maio de 2031",
+  "assistantVoiceDone": "Feito",
+  "assistantVoiceNoSpeech": "Non se oíu nada. Toca o micrófono e téntao de novo.",
+  "assistantVoiceFailed": "A entrada de voz detívose. Téntao de novo."
 }

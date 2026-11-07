@@ -2061,5 +2061,9 @@
   "travelConnectionIn": "{place} இல் இணைப்பு",
   "travelConnectionLong": "{place} இல் இணைப்பு: {duration}",
   "travelDurationHoursMinutes": "{hours} ம {minutes} நி",
-  "travelArriveIn": "{country} வருகை"
+  "travelArriveIn": "{country} வருகை",
+  "assistantVoiceHint": "முயற்சிக்கவும்: என் பாஸ்போர்ட்டைச் சேர், மே 2031இல் காலாவதியாகும்",
+  "assistantVoiceDone": "முடிந்தது",
+  "assistantVoiceNoSpeech": "எதுவும் கேட்கவில்லை. மைக்ரோஃபோனைத் தட்டி மீண்டும் முயற்சிக்கவும்.",
+  "assistantVoiceFailed": "குரல் உள்ளீடு நின்றது. மீண்டும் முயற்சிக்கவும்."
 }

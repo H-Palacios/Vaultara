@@ -2079,5 +2079,9 @@
   "travelConnectionIn": "გადაჯდომა: {place}",
   "travelConnectionLong": "გადაჯდომა: {place}, {duration}",
   "travelDurationHoursMinutes": "{hours} სთ {minutes} წთ",
-  "travelArriveIn": "ჩასვლა: {country}"
+  "travelArriveIn": "ჩასვლა: {country}",
+  "assistantVoiceHint": "სცადეთ: დაამატე ჩემი პასპორტი, ვადა გასდის 2031 წლის მაისში",
+  "assistantVoiceDone": "მზადაა",
+  "assistantVoiceNoSpeech": "არაფერი ისმოდა. შეეხეთ მიკროფონს და სცადეთ თავიდან.",
+  "assistantVoiceFailed": "ხმოვანი შეყვანა შეჩერდა. სცადეთ თავიდან."
 }

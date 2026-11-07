@@ -2073,5 +2073,9 @@
   "travelConnectionIn": "Correspondance à {place}",
   "travelConnectionLong": "Correspondance à {place} : {duration}",
   "travelDurationHoursMinutes": "{hours} h {minutes} min",
-  "travelArriveIn": "Arrivée : {country}"
+  "travelArriveIn": "Arrivée : {country}",
+  "assistantVoiceHint": "Essayez : Ajoute mon passeport, il expire en mai 2031",
+  "assistantVoiceDone": "Terminé",
+  "assistantVoiceNoSpeech": "Rien n'a été entendu. Touchez le micro et réessayez.",
+  "assistantVoiceFailed": "La saisie vocale s'est arrêtée. Réessayez."
 }
