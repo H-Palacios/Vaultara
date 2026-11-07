@@ -41,6 +41,10 @@ const PAST_DAYS_ALLOWED = 3650;
 const FUTURE_DAYS_ALLOWED = 365 * 30;
 const LOCKED_LABEL = "Locked record";
 const DEFAULT_MODEL = "claude-haiku-4-5-20251001";
+const MAX_REPLIES = 4;
+const REPLY_MAX = 40;
+const RUN_ID_PATTERN = /^[A-Za-z0-9]{10,40}$/;
+const RUN_KEEP_MS = DAY_MS;
 
 const GROUPS = {
   passports: "personal_identification",
@@ -363,10 +367,25 @@ const ACTION_TOOLS = [
   },
 ];
 
+const SUGGEST_REPLIES = {
+  name: "suggest_replies",
+  description:
+    "Show up to 4 short buttons under your answer that the user can tap instead of typing. Use them for the answers to a question you just asked (for example the reasons for a trip, or who is travelling) and for useful next steps after an answer (for example \"Renew my passport\" or \"Remind me 30 days before\"). Write each one in the user's language, in the user's own voice, at most 40 characters. Call it in the same response as your final answer, never on its own, and at most once.",
+  input_schema: {
+    type: "object",
+    properties: {
+      replies: { type: "array", items: { type: "string" }, description: "2 to 4 short replies, each at most 40 characters." },
+    },
+    required: ["replies"],
+  },
+};
+
 const TOOLS_V1 = [...READ_TOOLS, PROPOSE_RECORD, PROPOSE_UPDATE_LEGACY];
 const TOOLS_V2 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS];
+const TOOLS_V3 = [...TOOLS_V2, SUGGEST_REPLIES];
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
+const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -1327,7 +1346,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2) {
+function staticPrompt(v2, v3 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1349,6 +1368,14 @@ function staticPrompt(v2) {
       "If a tool returns an error, fix the input or explain the problem to the user in plain words. If something cannot be done with the tools, explain how to do it in the app and offer open_screen.",
       "If the user wants to add a record but gave no expiry date, you may still call propose_record without expiry_date and tell them to pick the date."
     );
+    if (v3) {
+      lines.push(
+        "New trips: before calling propose_create_trip you need the destination, the departure and return dates, the reason for the trip and, if list_people returns anyone, who is travelling. Ask for everything that is missing in one short message, never one question at a time, and never ask for something the user already said. If the user only gives a month, ask for the dates. Never assume the reason is a holiday: if it is unclear, ask, because study and work trips need a different visa. When you ask, call suggest_replies with the likely answers, for example the five reasons (holiday, visiting family or friends, business, study, work) or \"Just me\" and \"Me and Maria\" written in the user's language.",
+        "When the user asks if they are ready for a trip: call list_trips and list_records. For each traveller check that a passport is saved and expires at least 6 months after the return date (say many countries ask for this and the official rules decide), mention when the trip needs a visa, and list records such as a driving licence, travel insurance, visa or permit that expire before the return date or are missing. Then offer to prepare the renewals or reminders and call suggest_replies with those next steps.",
+        "Several changes at once: when the user clearly means several records (for example \"renew all my car things\"), prepare one card per record, at most 5, and say they can confirm them together.",
+        "After a useful answer, call suggest_replies with 2 to 4 next steps the user is likely to want, such as renewing a record that expires soon or setting a reminder. Only suggest things you can do with your tools. Skip it when there is no clear next step."
+      );
+    }
   } else {
     lines.push(
       "To add a record, call propose_record. To change an expiry date, call propose_update. These only create drafts. Tell the user to check the card and tap Confirm. Never say a record was saved.",
@@ -1361,8 +1388,9 @@ function staticPrompt(v2) {
 
 const STATIC_PROMPT_V1 = staticPrompt(false);
 const STATIC_PROMPT_V2 = staticPrompt(true);
+const STATIC_PROMPT_V3 = staticPrompt(true, true);
 
-function systemPrompt(ctx, lang, intent, v2) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1376,7 +1404,7 @@ function systemPrompt(ctx, lang, intent, v2) {
     );
   }
   return [
-    { type: "text", text: v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1, cache_control: { type: "ephemeral" } },
+    { type: "text", text: v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1, cache_control: { type: "ephemeral" } },
     { type: "text", text: dynamic.join("\n") },
   ];
 }
@@ -1397,6 +1425,115 @@ function cleanAction(action) {
   return out;
 }
 
+function cleanReplies(input) {
+  const raw = Array.isArray(input?.replies) ? input.replies : [];
+  const out = [];
+  for (const item of raw) {
+    // Too long to fit on a button: dropped, never cut mid-word.
+    const text = str(item);
+    if (!text || text.length > REPLY_MAX) continue;
+    if (out.some((r) => r.toLowerCase() === text.toLowerCase())) continue;
+    out.push(text);
+    if (out.length >= MAX_REPLIES) break;
+  }
+  return out;
+}
+
+function shownName(record) {
+  if (!record || record.locked) return null;
+  return str(record.name, NAME_MAX) || null;
+}
+
+// What the user sees while the assistant works. Names come from the user's
+// own data; locked records never show a name.
+async function stepFor(ctx, name, input) {
+  switch (name) {
+    case "list_records":
+    case "get_record":
+      return { step: "records" };
+    case "list_trips":
+      return { step: "trips" };
+    case "list_people":
+      return { step: "people" };
+    case "propose_record":
+      return { step: "record_add", name: str(input?.name, NAME_MAX) || null };
+    case "propose_update":
+    case "propose_update_record":
+      return { step: "record_edit", name: shownName(await ctx.findRecord(input?.record_id)) };
+    case "propose_renew_record":
+      return { step: "record_renew", name: shownName(await ctx.findRecord(input?.record_id)) };
+    case "propose_delete_record":
+      return { step: "record_delete", name: shownName(await ctx.findRecord(input?.record_id)) };
+    case "propose_create_person":
+      return { step: "person_add", name: str(input?.name, PERSON_NAME_MAX) || null };
+    case "propose_update_person": {
+      const match = await ctx.matchPerson(input?.person);
+      if (match.me) return { step: "person_me" };
+      return { step: "person_edit", name: match.person ? str(match.person.name, PERSON_NAME_MAX) : null };
+    }
+    case "propose_create_trip": {
+      const countries = Array.isArray(input?.countries)
+        ? input.countries.map((c) => str(c).toUpperCase()).filter((c) => COUNTRY_PATTERN.test(c)).slice(0, MAX_COUNTRIES)
+        : [];
+      return { step: "trip_add", name: str(input?.name, TRIP_NAME_MAX) || null, countries };
+    }
+    case "propose_update_trip": {
+      const trip = await ctx.findTrip(input?.trip_id);
+      return { step: "trip_edit", name: trip ? trip.name : null };
+    }
+    case "open_screen":
+      return { step: "screen" };
+    default:
+      return null;
+  }
+}
+
+class RunProgress {
+  constructor(uid, runId) {
+    this.ref = runId
+      ? admin.firestore().collection("users").doc(uid).collection("assistantRuns").doc(runId)
+      : null;
+    this.last = "";
+  }
+
+  async show(status) {
+    if (!this.ref || !status) return;
+    const key = JSON.stringify(status);
+    if (key === this.last) return;
+    this.last = key;
+    try {
+      await this.ref.set({
+        step: status.step,
+        name: status.name || null,
+        countries: status.countries || [],
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + RUN_KEEP_MS),
+      }, { merge: true });
+    } catch (err) {
+      logger.warn("askVaultara progress write failed", { code: err?.code || null });
+    }
+  }
+
+  async cancelled() {
+    if (!this.ref) return false;
+    try {
+      const snap = await this.ref.get();
+      return snap.exists && snap.get("cancelled") === true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  async finish() {
+    if (!this.ref) return;
+    try {
+      await this.ref.delete();
+    } catch (_) {
+      // The document expires by itself.
+    }
+  }
+}
+
 exports.askVaultara = onCall(
   { ...CALLABLE, secrets: [ANTHROPIC_API_KEY], timeoutSeconds: 90, memory: "256MiB", maxInstances: 10 },
   async (request) => {
@@ -1406,7 +1543,12 @@ exports.askVaultara = onCall(
     const messages = cleanMessages(request.data?.messages);
     if (!messages) throw new HttpsError("invalid-argument", "bad-messages");
     const intent = request.data?.intent === "propose" ? "propose" : "chat";
-    const v2 = request.data?.v === 2;
+    const version = Number(request.data?.v) || 1;
+    const v2 = version >= 2;
+    const v3 = version >= 3 && intent === "chat";
+    const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
+      ? request.data.runId
+      : null;
 
     const userSnap = await admin.firestore().collection("users").doc(uid).get();
     const userData = userSnap.exists ? userSnap.data() || {} : {};
@@ -1427,9 +1569,11 @@ exports.askVaultara = onCall(
     const lang = cleanLanguage(request.data?.locale) || userLanguage(userData);
     const ctx = new UserData(uid, userData);
     const model = str(process.env.ANTHROPIC_MODEL) || DEFAULT_MODEL;
-    const system = systemPrompt(ctx, lang, intent, v2);
-    const tools = v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v2 ? NAMES_V2 : NAMES_V1;
+    const system = systemPrompt(ctx, lang, intent, v2, v3);
+    const tools = v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const progress = new RunProgress(uid, v3 ? runId : null);
+    let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
     const actions = [];
     const toolCounts = {};
@@ -1443,6 +1587,9 @@ exports.askVaultara = onCall(
     try {
       for (let i = 0; i < MAX_ITERATIONS; i++) {
         iterations = i + 1;
+        if (i > 0 && (await progress.cancelled())) {
+          throw new HttpsError("cancelled", "stopped");
+        }
         const forced = intent === "propose" && i === 0;
         const last = i === MAX_ITERATIONS - 1;
         const response = await client().messages.create({
@@ -1465,7 +1612,11 @@ exports.askVaultara = onCall(
           .trim();
         if (text) lastText = text;
 
-        const toolUses = content.filter((b) => b.type === "tool_use");
+        const allUses = content.filter((b) => b.type === "tool_use");
+        for (const use of allUses) {
+          if (use.name === "suggest_replies" && allowed.has(use.name)) replies = cleanReplies(use.input);
+        }
+        const toolUses = allUses.filter((b) => b.name !== "suggest_replies");
         if (response.stop_reason !== "tool_use" || toolUses.length === 0) {
           reply = text;
           break;
@@ -1475,6 +1626,7 @@ exports.askVaultara = onCall(
         const results = [];
         for (const use of toolUses) {
           toolCounts[use.name] = (toolCounts[use.name] || 0) + 1;
+          if (allowed.has(use.name)) await progress.show(await stepFor(ctx, use.name, use.input).catch(() => null));
           const result = await runTool(ctx, use.name, use.input, actions, allowed);
           results.push({
             type: "tool_result",
@@ -1483,11 +1635,16 @@ exports.askVaultara = onCall(
             ...(result && result.error ? { is_error: true } : {}),
           });
         }
+        for (const use of allUses) {
+          if (use.name !== "suggest_replies") continue;
+          results.push({ type: "tool_result", tool_use_id: use.id, content: JSON.stringify({ status: "shown" }) });
+        }
         conversation.push({ role: "user", content: results });
 
         if (intent === "propose" && actions.length > 0) break;
       }
     } catch (err) {
+      await progress.finish();
       if (err instanceof HttpsError) throw err;
       logger.error("askVaultara model call failed", {
         status: Number(err?.status) || null,
@@ -1498,6 +1655,7 @@ exports.askVaultara = onCall(
     }
 
     if (!reply) reply = intent === "propose" ? "" : lastText;
+    await progress.finish();
 
     logger.info("askVaultara done", {
       intent,
@@ -1505,11 +1663,16 @@ exports.askVaultara = onCall(
       iterations,
       tools: toolCounts,
       actions: actions.length,
+      replies: replies.length,
       inputTokens,
       outputTokens,
       cachedTokens,
     });
 
-    return { reply: reply.slice(0, 4000), actions: actions.map(cleanAction) };
+    return {
+      reply: reply.slice(0, 4000),
+      actions: actions.map(cleanAction),
+      ...(v3 ? { replies } : {}),
+    };
   }
 );
