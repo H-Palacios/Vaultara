@@ -5902,9 +5902,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get assistantDeleteNote => 'Kurtarma Merkezi\'ne taşınır ve orada 30 gün boyunca geri yükleyebilirsiniz.';
 
   @override
-  String get assistantFieldCountries => 'Ülkeler';
-
-  @override
   String get assistantHistoryAllDeleted => 'Tüm sohbetler silindi';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Seyahat planlamama yardım et';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ülkeler',
+      one: 'Ülke',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Bir ayarı değiştir';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonun önce parmak izi, yüz veya ekran kilidi ister.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonun bildirimlere izin vermeni ister.';
+
+  @override
+  String get assistantSettingUnavailable => 'Bu ayar bu telefonda yok.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: değişiklik gerekmiyor';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ayar hazırlanıyor';
+
+  @override
+  String get travelItemAccommodation => 'Nerede kalacağının kanıtı, örneğin rezervasyon';
+
+  @override
+  String get travelItemReturnTicket => 'Dönüş veya devam bileti';
+
+  @override
+  String get travelItemHostInvite => 'Ev sahibinin adresi ve ülke isterse davet mektubu';
+
+  @override
+  String get travelItemBusinessInvite => 'Ziyaret ettiğin şirketten davet mektubu';
+
+  @override
+  String get travelItemEmployerLetter => 'İşvereninden seyahat hakkında yazı';
+
+  @override
+  String get travelItemStudyAcceptance => 'Okulundan veya üniversitenden kabul mektubu';
+
+  @override
+  String get travelItemProofOfFunds => 'Maddi yeterlilik kanıtı, örneğin son banka dökümleri';
+
+  @override
+  String get travelItemStudyPermit => 'Öğrenci vizesi veya izni onaylandı';
+
+  @override
+  String get travelItemWorkPermit => 'Çalışma vizesi veya izni onaylandı';
+
+  @override
+  String get travelItemWorkContract => 'İmzalı iş teklifi veya iş sözleşmesi';
+
+  @override
+  String get visaPermitNoneStudy => 'Kayıtlı öğrenim izni yok';
+
+  @override
+  String get visaPermitNoneWork => 'Kayıtlı çalışma izni yok';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'İzin $date tarihine kadar geçerli';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'İzin $date tarihinde, dönüşünden önce bitiyor';
+  }
+
+  @override
+  String get visaPermitHint => 'İzni kayıt olarak sakla, Vaultara süresi dolmadan hatırlatsın.';
+
+  @override
+  String get visaPermitAdd => 'İzin ekle';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country öğrenim izni';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country çalışma izni';
+  }
 }

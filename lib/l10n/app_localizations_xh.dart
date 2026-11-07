@@ -5902,9 +5902,6 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantDeleteNote => 'Iya kwiZiko lokuBuyisela, apho ungayibuyisela kwiintsuku ezingama-30.';
 
   @override
-  String get assistantFieldCountries => 'Amazwe';
-
-  @override
   String get assistantHistoryAllDeleted => 'Zonke iincoko zicinyiwe';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Ndincede ndicwangcise uhambo';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amazwe',
+      one: 'Ilizwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Tshintsha isetingi';
+
+  @override
+  String get assistantSettingAppLockNote => 'Ifowuni yakho iza kucela umnwe, ubuso okanye isitshixo sesikrini kuqala.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Ifowuni yakho iza kukucela ukuba uvumele izaziso.';
+
+  @override
+  String get assistantSettingUnavailable => 'Le setingi ayifumaneki kule fowuni.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: akukho tshintsho lufunekayo';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ilungiselela isetingi';
+
+  @override
+  String get travelItemAccommodation => 'Ubungqina bendawo oza kuhlala kuyo, njengokubhukisha';
+
+  @override
+  String get travelItemReturnTicket => 'Itikiti lokubuya okanye lokuqhubeka';
+
+  @override
+  String get travelItemHostInvite => 'Idilesi yomamkeli wakho, nencwadi yesimemo ukuba ilizwe liyayicela';
+
+  @override
+  String get travelItemBusinessInvite => 'Incwadi yesimemo evela kwinkampani oyityelelayo';
+
+  @override
+  String get travelItemEmployerLetter => 'Incwadi evela kumqeshi wakho malunga nohambo';
+
+  @override
+  String get travelItemStudyAcceptance => 'Incwadi yokwamkelwa evela esikolweni okanye eyunivesithi';
+
+  @override
+  String get travelItemProofOfFunds => 'Ubungqina bemali, njengeengxelo zebhanki zakutshanje';
+
+  @override
+  String get travelItemStudyPermit => 'Iviza okanye imvume yokufunda ivunyiwe';
+
+  @override
+  String get travelItemWorkPermit => 'Iviza okanye imvume yomsebenzi ivunyiwe';
+
+  @override
+  String get travelItemWorkContract => 'Isithembiso somsebenzi okanye ikhontrakthi esayiniweyo';
+
+  @override
+  String get visaPermitNoneStudy => 'Akukho mvume yokufunda igciniweyo';
+
+  @override
+  String get visaPermitNoneWork => 'Akukho mvume yomsebenzi igciniweyo';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Imvume isebenza de kube ngu-$date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Imvume iphelelwa ngu-$date, phambi kokuba ubuye';
+  }
+
+  @override
+  String get visaPermitHint => 'Gcina imvume njengerekhodi kwaye i-Vaultara iza kukukhumbuza phambi kokuba iphelelwe.';
+
+  @override
+  String get visaPermitAdd => 'Yongeza imvume';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Imvume yokufunda ye-$country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Imvume yomsebenzi ye-$country';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantDeleteNote => 'A Helyreállítási központba kerül, ahol 30 napig visszaállíthatja.';
 
   @override
-  String get assistantFieldCountries => 'Országok';
-
-  @override
   String get assistantHistoryAllDeleted => 'Minden csevegés törölve';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Segíts megtervezni egy utazást';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Országok',
+      one: 'Ország',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Beállítás módosítása';
+
+  @override
+  String get assistantSettingAppLockNote => 'A telefon először ujjlenyomatot, arcot vagy képernyőzárat kér.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'A telefon megkér, hogy engedélyezd az értesítéseket.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ez a beállítás nem érhető el ezen a telefonon.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: nincs szükség változtatásra';
+  }
+
+  @override
+  String get assistantStepSetting => 'A beállítás előkészítése';
+
+  @override
+  String get travelItemAccommodation => 'Igazolás a szállásodról, például foglalás';
+
+  @override
+  String get travelItemReturnTicket => 'Visszaútra vagy továbbutazásra szóló jegy';
+
+  @override
+  String get travelItemHostInvite => 'A vendéglátód címe, és meghívólevél, ha az ország kéri';
+
+  @override
+  String get travelItemBusinessInvite => 'Meghívólevél a meglátogatott cégtől';
+
+  @override
+  String get travelItemEmployerLetter => 'A munkáltatód levele az utazásról';
+
+  @override
+  String get travelItemStudyAcceptance => 'Felvételi értesítő az iskolától vagy egyetemtől';
+
+  @override
+  String get travelItemProofOfFunds => 'Anyagi fedezet igazolása, például friss bankszámlakivonatok';
+
+  @override
+  String get travelItemStudyPermit => 'Tanulmányi vízum vagy engedély jóváhagyva';
+
+  @override
+  String get travelItemWorkPermit => 'Munkavízum vagy engedély jóváhagyva';
+
+  @override
+  String get travelItemWorkContract => 'Aláírt állásajánlat vagy munkaszerződés';
+
+  @override
+  String get visaPermitNoneStudy => 'Nincs mentett tanulmányi engedély';
+
+  @override
+  String get visaPermitNoneWork => 'Nincs mentett munkavállalási engedély';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Az engedély $date-ig érvényes';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Az engedély $date-án lejár, mielőtt hazaérsz';
+  }
+
+  @override
+  String get visaPermitHint => 'Mentsd el az engedélyt bejegyzésként, és a Vaultara szól, mielőtt lejár.';
+
+  @override
+  String get visaPermitAdd => 'Engedély hozzáadása';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Tanulmányi engedély: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Munkavállalási engedély: $country';
+  }
 }

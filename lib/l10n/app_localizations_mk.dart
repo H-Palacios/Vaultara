@@ -5902,9 +5902,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get assistantDeleteNote => 'Се преместува во Центарот за обновување, каде што можете да го вратите во рок од 30 дена.';
 
   @override
-  String get assistantFieldCountries => 'Земји';
-
-  @override
   String get assistantHistoryAllDeleted => 'Сите разговори се избришани';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Помогни ми да испланирам патување';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Земји',
+      one: 'Земја',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Промени поставка';
+
+  @override
+  String get assistantSettingAppLockNote => 'Телефонот прво ќе побара отпечаток, лице или заклучување на екранот.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Телефонот ќе побара да дозволите известувања.';
+
+  @override
+  String get assistantSettingUnavailable => 'Оваа поставка не е достапна на овој телефон.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: не е потребна промена';
+  }
+
+  @override
+  String get assistantStepSetting => 'Се подготвува поставката';
+
+  @override
+  String get travelItemAccommodation => 'Доказ каде престојувате, на пр. резервација';
+
+  @override
+  String get travelItemReturnTicket => 'Повратен или понатамошен билет';
+
+  @override
+  String get travelItemHostInvite => 'Адресата на домаќинот и покана ако земјата бара';
+
+  @override
+  String get travelItemBusinessInvite => 'Покана од компанијата што ја посетувате';
+
+  @override
+  String get travelItemEmployerLetter => 'Писмо од работодавачот за патувањето';
+
+  @override
+  String get travelItemStudyAcceptance => 'Писмо за прием од училиштето или универзитетот';
+
+  @override
+  String get travelItemProofOfFunds => 'Доказ за средства, на пр. неодамнешни банкарски изводи';
+
+  @override
+  String get travelItemStudyPermit => 'Одобрена студентска виза или дозвола';
+
+  @override
+  String get travelItemWorkPermit => 'Одобрена работна виза или дозвола';
+
+  @override
+  String get travelItemWorkContract => 'Потпишана понуда за работа или договор за работа';
+
+  @override
+  String get visaPermitNoneStudy => 'Нема зачувана дозвола за студирање';
+
+  @override
+  String get visaPermitNoneWork => 'Нема зачувана работна дозвола';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Дозволата важи до $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Дозволата истекува на $date, пред да се вратите';
+  }
+
+  @override
+  String get visaPermitHint => 'Зачувајте ја дозволата како запис и Vaultara ќе ве потсети пред да истече.';
+
+  @override
+  String get visaPermitAdd => 'Додај дозвола';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Дозвола за студирање за $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Работна дозвола за $country';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantDeleteNote => 'Berreskuratze-zentrora eramango da, eta han 30 egunez leheneratu ahal izango duzu.';
 
   @override
-  String get assistantFieldCountries => 'Herrialdeak';
-
-  @override
   String get assistantHistoryAllDeleted => 'Txat guztiak ezabatu dira';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Lagundu bidaia bat planifikatzen';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Herrialdeak',
+      one: 'Herrialdea',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Aldatu ezarpen bat';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonoak hatz-marka, aurpegia edo pantailaren blokeoa eskatuko dizu lehenik.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonoak jakinarazpenak baimentzeko eskatuko dizu.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ezarpen hau ez dago erabilgarri telefono honetan.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ez da aldaketarik behar';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ezarpena prestatzen';
+
+  @override
+  String get travelItemAccommodation => 'Non egongo zaren frogatzen duen agiria, adibidez erreserba bat';
+
+  @override
+  String get travelItemReturnTicket => 'Itzulerako edo jarraipeneko txartela';
+
+  @override
+  String get travelItemHostInvite => 'Ostalariaren helbidea, eta gonbidapen-gutuna herrialdeak eskatzen badu';
+
+  @override
+  String get travelItemBusinessInvite => 'Bisitatzen duzun enpresaren gonbidapen-gutuna';
+
+  @override
+  String get travelItemEmployerLetter => 'Zure enpresaren gutuna bidaiari buruz';
+
+  @override
+  String get travelItemStudyAcceptance => 'Ikastetxearen edo unibertsitatearen onarpen-gutuna';
+
+  @override
+  String get travelItemProofOfFunds => 'Funtsen froga, adibidez azken banku-laburpenak';
+
+  @override
+  String get travelItemStudyPermit => 'Ikasketa-bisa edo -baimena onartuta';
+
+  @override
+  String get travelItemWorkPermit => 'Lan-bisa edo -baimena onartuta';
+
+  @override
+  String get travelItemWorkContract => 'Sinatutako lan-eskaintza edo lan-kontratua';
+
+  @override
+  String get visaPermitNoneStudy => 'Ez dago ikasketa-baimenik gordeta';
+
+  @override
+  String get visaPermitNoneWork => 'Ez dago lan-baimenik gordeta';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Baimena $date arte dago indarrean';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Baimena $date(e)an iraungiko da, itzuli aurretik';
+  }
+
+  @override
+  String get visaPermitHint => 'Gorde baimena erregistro gisa, eta Vaultarak iraungi aurretik gogoraraziko dizu.';
+
+  @override
+  String get visaPermitAdd => 'Gehitu baimena';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Ikasketa-baimena: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Lan-baimena: $country';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get assistantDeleteNote => 'See liigub taastekeskusesse, kus saad selle 30 päeva jooksul taastada.';
 
   @override
-  String get assistantFieldCountries => 'Riigid';
-
-  @override
   String get assistantHistoryAllDeleted => 'Kõik vestlused on kustutatud';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Aita mul reisi planeerida';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Riigid',
+      one: 'Riik',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Muuda seadet';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefon küsib kõigepealt sõrmejälge, nägu või ekraanilukku.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefon palub sul teavitused lubada.';
+
+  @override
+  String get assistantSettingUnavailable => 'See seade pole selles telefonis saadaval.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: muutmist pole vaja';
+  }
+
+  @override
+  String get assistantStepSetting => 'Seadet valmistatakse ette';
+
+  @override
+  String get travelItemAccommodation => 'Tõend selle kohta, kus peatud, näiteks broneering';
+
+  @override
+  String get travelItemReturnTicket => 'Tagasi- või edasisõidu pilet';
+
+  @override
+  String get travelItemHostInvite => 'Võõrustaja aadress ja kutse, kui riik seda nõuab';
+
+  @override
+  String get travelItemBusinessInvite => 'Kutse ettevõttelt, mida külastad';
+
+  @override
+  String get travelItemEmployerLetter => 'Tööandja kiri reisi kohta';
+
+  @override
+  String get travelItemStudyAcceptance => 'Vastuvõtukiri koolist või ülikoolist';
+
+  @override
+  String get travelItemProofOfFunds => 'Tõend rahaliste vahendite kohta, näiteks hiljutised pangaväljavõtted';
+
+  @override
+  String get travelItemStudyPermit => 'Õppeviisa või -luba kinnitatud';
+
+  @override
+  String get travelItemWorkPermit => 'Tööviisa või -luba kinnitatud';
+
+  @override
+  String get travelItemWorkContract => 'Allkirjastatud tööpakkumine või tööleping';
+
+  @override
+  String get visaPermitNoneStudy => 'Õppeluba pole salvestatud';
+
+  @override
+  String get visaPermitNoneWork => 'Tööluba pole salvestatud';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Luba kehtib kuni $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Luba aegub $date, enne kui tagasi jõuad';
+  }
+
+  @override
+  String get visaPermitHint => 'Salvesta luba kirjena ja Vaultara tuletab sulle meelde enne selle aegumist.';
+
+  @override
+  String get visaPermitAdd => 'Lisa luba';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Õppeluba riiki $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Tööluba riiki $country';
+  }
 }

@@ -5854,9 +5854,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantDeleteNote => 'Bản ghi sẽ chuyển vào Trung tâm khôi phục, nơi bạn có thể khôi phục trong 30 ngày.';
 
   @override
-  String get assistantFieldCountries => 'Quốc gia';
-
-  @override
   String get assistantHistoryAllDeleted => 'Đã xóa tất cả cuộc trò chuyện';
 
   @override
@@ -6404,4 +6401,97 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Giúp tôi lên kế hoạch chuyến đi';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Quốc gia',
+      one: 'Quốc gia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Thay đổi cài đặt';
+
+  @override
+  String get assistantSettingAppLockNote => 'Điện thoại sẽ yêu cầu vân tay, khuôn mặt hoặc khóa màn hình trước.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Điện thoại sẽ yêu cầu bạn cho phép thông báo.';
+
+  @override
+  String get assistantSettingUnavailable => 'Cài đặt này không có trên điện thoại này.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: không cần thay đổi';
+  }
+
+  @override
+  String get assistantStepSetting => 'Đang chuẩn bị cài đặt';
+
+  @override
+  String get travelItemAccommodation => 'Bằng chứng nơi ở, ví dụ đặt phòng';
+
+  @override
+  String get travelItemReturnTicket => 'Vé khứ hồi hoặc vé đi tiếp';
+
+  @override
+  String get travelItemHostInvite => 'Địa chỉ người đón tiếp và thư mời nếu quốc gia yêu cầu';
+
+  @override
+  String get travelItemBusinessInvite => 'Thư mời từ công ty bạn đến thăm';
+
+  @override
+  String get travelItemEmployerLetter => 'Thư của nơi làm việc về chuyến đi';
+
+  @override
+  String get travelItemStudyAcceptance => 'Thư nhập học của trường hoặc đại học';
+
+  @override
+  String get travelItemProofOfFunds => 'Bằng chứng tài chính, ví dụ sao kê ngân hàng gần đây';
+
+  @override
+  String get travelItemStudyPermit => 'Thị thực hoặc giấy phép du học đã được duyệt';
+
+  @override
+  String get travelItemWorkPermit => 'Thị thực hoặc giấy phép lao động đã được duyệt';
+
+  @override
+  String get travelItemWorkContract => 'Thư mời làm việc hoặc hợp đồng lao động đã ký';
+
+  @override
+  String get visaPermitNoneStudy => 'Chưa lưu giấy phép du học';
+
+  @override
+  String get visaPermitNoneWork => 'Chưa lưu giấy phép lao động';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Giấy phép có hiệu lực đến $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Giấy phép hết hạn ngày $date, trước khi bạn về';
+  }
+
+  @override
+  String get visaPermitHint => 'Lưu giấy phép thành hồ sơ và Vaultara sẽ nhắc bạn trước khi hết hạn.';
+
+  @override
+  String get visaPermitAdd => 'Thêm giấy phép';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Giấy phép du học $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Giấy phép lao động $country';
+  }
 }

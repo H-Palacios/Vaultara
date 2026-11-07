@@ -5902,9 +5902,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantDeleteNote => 'دەگوازرێتەوە بۆ ناوەندی گەڕاندنەوە، لەوێ دەتوانیت تا ٣٠ ڕۆژ بیگەڕێنیتەوە.';
 
   @override
-  String get assistantFieldCountries => 'وڵاتان';
-
-  @override
   String get assistantHistoryAllDeleted => 'هەموو گفتوگۆکان سڕانەوە';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'یارمەتیم بدە گەشتێک پلان بکەم';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'وڵاتەکان',
+      one: 'وڵات',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'ڕێکخستنێک بگۆڕە';
+
+  @override
+  String get assistantSettingAppLockNote => 'مۆبایلەکەت سەرەتا پەنجەمۆر، ڕوو یان قفڵی شاشە داوا دەکات.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'مۆبایلەکەت داوات لێدەکات ڕێگە بە ئاگادارکردنەوەکان بدەیت.';
+
+  @override
+  String get assistantSettingUnavailable => 'ئەم ڕێکخستنە لەم مۆبایلەدا بەردەست نییە.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: پێویست بە گۆڕین ناکات';
+  }
+
+  @override
+  String get assistantStepSetting => 'ئامادەکردنی ڕێکخستنەکە';
+
+  @override
+  String get travelItemAccommodation => 'بەڵگەی شوێنی مانەوەت، وەک حجزکردنێک';
+
+  @override
+  String get travelItemReturnTicket => 'بلیتی گەڕانەوە یان بەردەوامبوون';
+
+  @override
+  String get travelItemHostInvite => 'ناونیشانی میواندارەکەت، و نامەی بانگهێشت ئەگەر وڵاتەکە داوای بکات';
+
+  @override
+  String get travelItemBusinessInvite => 'نامەی بانگهێشت لە کۆمپانیای سەردانکراو';
+
+  @override
+  String get travelItemEmployerLetter => 'نامەی خاوەنکارەکەت دەربارەی گەشتەکە';
+
+  @override
+  String get travelItemStudyAcceptance => 'نامەی وەرگرتن لە قوتابخانە یان زانکۆکەت';
+
+  @override
+  String get travelItemProofOfFunds => 'بەڵگەی پارە، وەک کەشفی بانکی دوایی';
+
+  @override
+  String get travelItemStudyPermit => 'ڤیزا یان مۆڵەتی خوێندن پەسەندکراوە';
+
+  @override
+  String get travelItemWorkPermit => 'ڤیزا یان مۆڵەتی کار پەسەندکراوە';
+
+  @override
+  String get travelItemWorkContract => 'پێشنیاری کار یان گرێبەستی کاری واژۆکراو';
+
+  @override
+  String get visaPermitNoneStudy => 'هیچ مۆڵەتی خوێندن پاشەکەوت نەکراوە';
+
+  @override
+  String get visaPermitNoneWork => 'هیچ مۆڵەتی کار پاشەکەوت نەکراوە';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'مۆڵەت تا $date بەکارە';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'مۆڵەت لە $date بەسەردەچێت، پێش گەڕانەوەت';
+  }
+
+  @override
+  String get visaPermitHint => 'مۆڵەتەکە وەک تۆمار پاشەکەوت بکە و Vaultara پێش بەسەرچوونی بیرت دەخاتەوە.';
+
+  @override
+  String get visaPermitAdd => 'زیادکردنی مۆڵەت';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'مۆڵەتی خوێندن بۆ $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'مۆڵەتی کار بۆ $country';
+  }
 }

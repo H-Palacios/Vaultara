@@ -5967,9 +5967,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantDeleteNote => 'Премешта се у Центар за опоравак, где можете да га вратите у року од 30 дана.';
 
   @override
-  String get assistantFieldCountries => 'Земље';
-
-  @override
   String get assistantHistoryAllDeleted => 'Сви разговори су обрисани';
 
   @override
@@ -6525,6 +6522,99 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Помози ми да испланирам путовање';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Земље',
+      one: 'Земља',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Промени подешавање';
+
+  @override
+  String get assistantSettingAppLockNote => 'Телефон ће прво тражити отисак прста, лице или закључавање екрана.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Телефон ће вас питати да дозволите обавештења.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ово подешавање није доступно на овом телефону.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: није потребна промена';
+  }
+
+  @override
+  String get assistantStepSetting => 'Припрема подешавања';
+
+  @override
+  String get travelItemAccommodation => 'Доказ о смештају, нпр. резервација';
+
+  @override
+  String get travelItemReturnTicket => 'Повратна или даља карта';
+
+  @override
+  String get travelItemHostInvite => 'Адреса домаћина и позивно писмо ако га земља тражи';
+
+  @override
+  String get travelItemBusinessInvite => 'Позивно писмо фирме коју посећујете';
+
+  @override
+  String get travelItemEmployerLetter => 'Писмо послодавца о путовању';
+
+  @override
+  String get travelItemStudyAcceptance => 'Писмо о упису од школе или универзитета';
+
+  @override
+  String get travelItemProofOfFunds => 'Доказ о средствима, нпр. скорашњи изводи из банке';
+
+  @override
+  String get travelItemStudyPermit => 'Одобрена студентска виза или дозвола';
+
+  @override
+  String get travelItemWorkPermit => 'Одобрена радна виза или дозвола';
+
+  @override
+  String get travelItemWorkContract => 'Потписана понуда за посао или уговор о раду';
+
+  @override
+  String get visaPermitNoneStudy => 'Нема сачуване дозволе за студирање';
+
+  @override
+  String get visaPermitNoneWork => 'Нема сачуване радне дозволе';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Дозвола важи до $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Дозвола истиче $date, пре вашег повратка';
+  }
+
+  @override
+  String get visaPermitHint => 'Сачувајте дозволу као запис и Vaultara ће вас подсетити пре него што истекне.';
+
+  @override
+  String get visaPermitAdd => 'Додај дозволу';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Дозвола за студирање за $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Радна дозвола за $country';
+  }
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -12489,9 +12579,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantDeleteNote => 'Премешта се у Центар за опоравак, где можете да га вратите у року од 30 дана.';
 
   @override
-  String get assistantFieldCountries => 'Земље';
-
-  @override
   String get assistantHistoryAllDeleted => 'Сви разговори су обрисани';
 
   @override
@@ -13047,6 +13134,99 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantSuggestPlanTrip => 'Помози ми да испланирам путовање';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Земље',
+      one: 'Земља',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Промени подешавање';
+
+  @override
+  String get assistantSettingAppLockNote => 'Телефон ће прво тражити отисак прста, лице или закључавање екрана.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Телефон ће вас питати да дозволите обавештења.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ово подешавање није доступно на овом телефону.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: није потребна промена';
+  }
+
+  @override
+  String get assistantStepSetting => 'Припрема подешавања';
+
+  @override
+  String get travelItemAccommodation => 'Доказ о смештају, нпр. резервација';
+
+  @override
+  String get travelItemReturnTicket => 'Повратна или даља карта';
+
+  @override
+  String get travelItemHostInvite => 'Адреса домаћина и позивно писмо ако га земља тражи';
+
+  @override
+  String get travelItemBusinessInvite => 'Позивно писмо фирме коју посећујете';
+
+  @override
+  String get travelItemEmployerLetter => 'Писмо послодавца о путовању';
+
+  @override
+  String get travelItemStudyAcceptance => 'Писмо о упису од школе или универзитета';
+
+  @override
+  String get travelItemProofOfFunds => 'Доказ о средствима, нпр. скорашњи изводи из банке';
+
+  @override
+  String get travelItemStudyPermit => 'Одобрена студентска виза или дозвола';
+
+  @override
+  String get travelItemWorkPermit => 'Одобрена радна виза или дозвола';
+
+  @override
+  String get travelItemWorkContract => 'Потписана понуда за посао или уговор о раду';
+
+  @override
+  String get visaPermitNoneStudy => 'Нема сачуване дозволе за студирање';
+
+  @override
+  String get visaPermitNoneWork => 'Нема сачуване радне дозволе';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Дозвола важи до $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Дозвола истиче $date, пре вашег повратка';
+  }
+
+  @override
+  String get visaPermitHint => 'Сачувајте дозволу као запис и Vaultara ће вас подсетити пре него што истекне.';
+
+  @override
+  String get visaPermitAdd => 'Додај дозволу';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Дозвола за студирање за $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Радна дозвола за $country';
+  }
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -19007,9 +19187,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantDeleteNote => 'Premešta se u Centar za oporavak, gde možete da ga vratite u roku od 30 dana.';
 
   @override
-  String get assistantFieldCountries => 'Zemlje';
-
-  @override
   String get assistantHistoryAllDeleted => 'Svi razgovori su obrisani';
 
   @override
@@ -19565,4 +19742,97 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantSuggestPlanTrip => 'Pomozi mi da isplaniram putovanje';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zemlje',
+      one: 'Zemlja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Promeni podešavanje';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefon će prvo tražiti otisak prsta, lice ili zaključavanje ekrana.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefon će vas pitati da dozvolite obaveštenja.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ovo podešavanje nije dostupno na ovom telefonu.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: nije potrebna promena';
+  }
+
+  @override
+  String get assistantStepSetting => 'Priprema podešavanja';
+
+  @override
+  String get travelItemAccommodation => 'Dokaz o smeštaju, npr. rezervacija';
+
+  @override
+  String get travelItemReturnTicket => 'Povratna ili dalja karta';
+
+  @override
+  String get travelItemHostInvite => 'Adresa domaćina i pozivno pismo ako ga zemlja traži';
+
+  @override
+  String get travelItemBusinessInvite => 'Pozivno pismo firme koju posećujete';
+
+  @override
+  String get travelItemEmployerLetter => 'Pismo poslodavca o putovanju';
+
+  @override
+  String get travelItemStudyAcceptance => 'Pismo o upisu od škole ili univerziteta';
+
+  @override
+  String get travelItemProofOfFunds => 'Dokaz o sredstvima, npr. skorašnji izvodi iz banke';
+
+  @override
+  String get travelItemStudyPermit => 'Odobrena studentska viza ili dozvola';
+
+  @override
+  String get travelItemWorkPermit => 'Odobrena radna viza ili dozvola';
+
+  @override
+  String get travelItemWorkContract => 'Potpisana ponuda za posao ili ugovor o radu';
+
+  @override
+  String get visaPermitNoneStudy => 'Nema sačuvane dozvole za studiranje';
+
+  @override
+  String get visaPermitNoneWork => 'Nema sačuvane radne dozvole';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Dozvola važi do $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Dozvola ističe $date, pre vašeg povratka';
+  }
+
+  @override
+  String get visaPermitHint => 'Sačuvajte dozvolu kao zapis i Vaultara će vas podsetiti pre nego što istekne.';
+
+  @override
+  String get visaPermitAdd => 'Dodaj dozvolu';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Dozvola za studiranje za $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Radna dozvola za $country';
+  }
 }

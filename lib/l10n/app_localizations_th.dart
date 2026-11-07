@@ -5842,9 +5842,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get assistantDeleteNote => 'รายการจะย้ายไปที่ศูนย์กู้คืน ซึ่งคุณกู้คืนได้ภายใน 30 วัน';
 
   @override
-  String get assistantFieldCountries => 'ประเทศ';
-
-  @override
   String get assistantHistoryAllDeleted => 'ลบแชตทั้งหมดแล้ว';
 
   @override
@@ -6392,4 +6389,97 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ช่วยวางแผนทริป';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ประเทศ',
+      one: 'ประเทศ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'เปลี่ยนการตั้งค่า';
+
+  @override
+  String get assistantSettingAppLockNote => 'โทรศัพท์จะขอลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอก่อน';
+
+  @override
+  String get assistantSettingNotificationsNote => 'โทรศัพท์จะขอให้คุณอนุญาตการแจ้งเตือน';
+
+  @override
+  String get assistantSettingUnavailable => 'การตั้งค่านี้ไม่มีในโทรศัพท์เครื่องนี้';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ไม่ต้องเปลี่ยน';
+  }
+
+  @override
+  String get assistantStepSetting => 'กำลังเตรียมการตั้งค่า';
+
+  @override
+  String get travelItemAccommodation => 'หลักฐานที่พัก เช่น การจอง';
+
+  @override
+  String get travelItemReturnTicket => 'ตั๋วขากลับหรือเดินทางต่อ';
+
+  @override
+  String get travelItemHostInvite => 'ที่อยู่ของเจ้าบ้าน และจดหมายเชิญหากประเทศนั้นต้องการ';
+
+  @override
+  String get travelItemBusinessInvite => 'จดหมายเชิญจากบริษัทที่คุณไปเยี่ยม';
+
+  @override
+  String get travelItemEmployerLetter => 'จดหมายจากนายจ้างเกี่ยวกับการเดินทาง';
+
+  @override
+  String get travelItemStudyAcceptance => 'จดหมายตอบรับจากโรงเรียนหรือมหาวิทยาลัย';
+
+  @override
+  String get travelItemProofOfFunds => 'หลักฐานทางการเงิน เช่น รายการเดินบัญชีล่าสุด';
+
+  @override
+  String get travelItemStudyPermit => 'วีซ่าหรือใบอนุญาตศึกษาได้รับอนุมัติแล้ว';
+
+  @override
+  String get travelItemWorkPermit => 'วีซ่าหรือใบอนุญาตทำงานได้รับอนุมัติแล้ว';
+
+  @override
+  String get travelItemWorkContract => 'ข้อเสนองานหรือสัญญาจ้างที่ลงนามแล้ว';
+
+  @override
+  String get visaPermitNoneStudy => 'ยังไม่ได้บันทึกใบอนุญาตศึกษา';
+
+  @override
+  String get visaPermitNoneWork => 'ยังไม่ได้บันทึกใบอนุญาตทำงาน';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'ใบอนุญาตใช้ได้ถึง $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'ใบอนุญาตหมดอายุ $date ก่อนคุณกลับ';
+  }
+
+  @override
+  String get visaPermitHint => 'บันทึกใบอนุญาตเป็นรายการ แล้ว Vaultara จะเตือนก่อนหมดอายุ';
+
+  @override
+  String get visaPermitAdd => 'เพิ่มใบอนุญาต';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'ใบอนุญาตศึกษาสำหรับ $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'ใบอนุญาตทำงานสำหรับ $country';
+  }
 }

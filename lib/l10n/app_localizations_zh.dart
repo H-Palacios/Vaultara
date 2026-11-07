@@ -5854,9 +5854,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantDeleteNote => '它会移至恢复中心，您可在 30 天内恢复。';
 
   @override
-  String get assistantFieldCountries => '国家/地区';
-
-  @override
   String get assistantHistoryAllDeleted => '已删除所有对话';
 
   @override
@@ -6404,6 +6401,99 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => '帮我计划行程';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '国家',
+      one: '国家',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => '更改设置';
+
+  @override
+  String get assistantSettingAppLockNote => '手机会先要求指纹、面容或屏幕锁。';
+
+  @override
+  String get assistantSettingNotificationsNote => '手机会请你允许通知。';
+
+  @override
+  String get assistantSettingUnavailable => '此设置在这部手机上不可用。';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting：无需更改';
+  }
+
+  @override
+  String get assistantStepSetting => '正在准备设置';
+
+  @override
+  String get travelItemAccommodation => '住宿证明，例如预订记录';
+
+  @override
+  String get travelItemReturnTicket => '返程或续程机票';
+
+  @override
+  String get travelItemHostInvite => '接待人的地址，以及该国要求时的邀请函';
+
+  @override
+  String get travelItemBusinessInvite => '所访问公司的邀请函';
+
+  @override
+  String get travelItemEmployerLetter => '雇主关于此次出行的信函';
+
+  @override
+  String get travelItemStudyAcceptance => '学校或大学的录取通知书';
+
+  @override
+  String get travelItemProofOfFunds => '资金证明，例如近期银行流水';
+
+  @override
+  String get travelItemStudyPermit => '学生签证或学习许可已获批';
+
+  @override
+  String get travelItemWorkPermit => '工作签证或工作许可已获批';
+
+  @override
+  String get travelItemWorkContract => '已签署的录用通知或劳动合同';
+
+  @override
+  String get visaPermitNoneStudy => '未保存学习许可';
+
+  @override
+  String get visaPermitNoneWork => '未保存工作许可';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return '许可有效期至 $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return '许可将于 $date 到期，早于你返程';
+  }
+
+  @override
+  String get visaPermitHint => '把许可保存为记录，Vaultara 会在到期前提醒你。';
+
+  @override
+  String get visaPermitAdd => '添加许可';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country学习许可';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country工作许可';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -12244,9 +12334,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantDeleteNote => '它会移至恢复中心，您可在 30 天内恢复。';
 
   @override
-  String get assistantFieldCountries => '国家/地区';
-
-  @override
   String get assistantHistoryAllDeleted => '已删除所有对话';
 
   @override
@@ -12794,6 +12881,99 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantSuggestPlanTrip => '帮我计划行程';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '国家',
+      one: '国家',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => '更改设置';
+
+  @override
+  String get assistantSettingAppLockNote => '手机会先要求指纹、面容或屏幕锁。';
+
+  @override
+  String get assistantSettingNotificationsNote => '手机会请你允许通知。';
+
+  @override
+  String get assistantSettingUnavailable => '此设置在这部手机上不可用。';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting：无需更改';
+  }
+
+  @override
+  String get assistantStepSetting => '正在准备设置';
+
+  @override
+  String get travelItemAccommodation => '住宿证明，例如预订记录';
+
+  @override
+  String get travelItemReturnTicket => '返程或续程机票';
+
+  @override
+  String get travelItemHostInvite => '接待人的地址，以及该国要求时的邀请函';
+
+  @override
+  String get travelItemBusinessInvite => '所访问公司的邀请函';
+
+  @override
+  String get travelItemEmployerLetter => '雇主关于此次出行的信函';
+
+  @override
+  String get travelItemStudyAcceptance => '学校或大学的录取通知书';
+
+  @override
+  String get travelItemProofOfFunds => '资金证明，例如近期银行流水';
+
+  @override
+  String get travelItemStudyPermit => '学生签证或学习许可已获批';
+
+  @override
+  String get travelItemWorkPermit => '工作签证或工作许可已获批';
+
+  @override
+  String get travelItemWorkContract => '已签署的录用通知或劳动合同';
+
+  @override
+  String get visaPermitNoneStudy => '未保存学习许可';
+
+  @override
+  String get visaPermitNoneWork => '未保存工作许可';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return '许可有效期至 $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return '许可将于 $date 到期，早于你返程';
+  }
+
+  @override
+  String get visaPermitHint => '把许可保存为记录，Vaultara 会在到期前提醒你。';
+
+  @override
+  String get visaPermitAdd => '添加许可';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country学习许可';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country工作许可';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -18634,9 +18814,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get assistantDeleteNote => '它會移至復原中心，您可在 30 天內復原。';
 
   @override
-  String get assistantFieldCountries => '國家/地區';
-
-  @override
   String get assistantHistoryAllDeleted => '已刪除所有對話';
 
   @override
@@ -19184,4 +19361,97 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantSuggestPlanTrip => '幫我規劃旅程';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '國家',
+      one: '國家',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => '變更設定';
+
+  @override
+  String get assistantSettingAppLockNote => '手機會先要求指紋、臉孔或螢幕鎖定。';
+
+  @override
+  String get assistantSettingNotificationsNote => '手機會請你允許通知。';
+
+  @override
+  String get assistantSettingUnavailable => '此設定在這支手機上無法使用。';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting：不需要變更';
+  }
+
+  @override
+  String get assistantStepSetting => '正在準備設定';
+
+  @override
+  String get travelItemAccommodation => '住宿證明，例如訂房紀錄';
+
+  @override
+  String get travelItemReturnTicket => '回程或續程機票';
+
+  @override
+  String get travelItemHostInvite => '接待人的地址，以及該國要求時的邀請函';
+
+  @override
+  String get travelItemBusinessInvite => '所拜訪公司的邀請函';
+
+  @override
+  String get travelItemEmployerLetter => '雇主關於此次出行的信函';
+
+  @override
+  String get travelItemStudyAcceptance => '學校或大學的錄取通知書';
+
+  @override
+  String get travelItemProofOfFunds => '資金證明，例如近期銀行對帳單';
+
+  @override
+  String get travelItemStudyPermit => '學生簽證或就學許可已核准';
+
+  @override
+  String get travelItemWorkPermit => '工作簽證或工作許可已核准';
+
+  @override
+  String get travelItemWorkContract => '已簽署的錄用通知或勞動契約';
+
+  @override
+  String get visaPermitNoneStudy => '未儲存就學許可';
+
+  @override
+  String get visaPermitNoneWork => '未儲存工作許可';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return '許可有效至 $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return '許可將於 $date 到期，早於你回程';
+  }
+
+  @override
+  String get visaPermitHint => '將許可儲存為紀錄，Vaultara 會在到期前提醒你。';
+
+  @override
+  String get visaPermitAdd => '新增許可';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country就學許可';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country工作許可';
+  }
 }

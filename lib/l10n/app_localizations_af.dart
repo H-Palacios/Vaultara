@@ -5902,9 +5902,6 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantDeleteNote => 'Dit skuif na die Herstelsentrum, waar jy dit vir 30 dae kan herstel.';
 
   @override
-  String get assistantFieldCountries => 'Lande';
-
-  @override
   String get assistantHistoryAllDeleted => 'Alle gesprekke uitgevee';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Help my om \'n reis te beplan';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lande',
+      one: 'Land',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Verander \'n instelling';
+
+  @override
+  String get assistantSettingAppLockNote => 'Jou foon vra eers vir jou vingerafdruk, gesig of skermslot.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Jou foon vra jou om kennisgewings toe te laat.';
+
+  @override
+  String get assistantSettingUnavailable => 'Hierdie instelling is nie op hierdie foon beskikbaar nie.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: geen verandering nodig nie';
+  }
+
+  @override
+  String get assistantStepSetting => 'Berei die instelling voor';
+
+  @override
+  String get travelItemAccommodation => 'Bewys van waar jy bly, soos \'n bespreking';
+
+  @override
+  String get travelItemReturnTicket => 'Retoer- of verdere kaartjie';
+
+  @override
+  String get travelItemHostInvite => 'Jou gasheer se adres, en \'n uitnodigingsbrief as die land een vra';
+
+  @override
+  String get travelItemBusinessInvite => 'Uitnodigingsbrief van die maatskappy wat jy besoek';
+
+  @override
+  String get travelItemEmployerLetter => 'Brief van jou werkgewer oor die reis';
+
+  @override
+  String get travelItemStudyAcceptance => 'Aanvaardingsbrief van jou skool of universiteit';
+
+  @override
+  String get travelItemProofOfFunds => 'Bewys van fondse, soos onlangse bankstate';
+
+  @override
+  String get travelItemStudyPermit => 'Studievisum of -permit goedgekeur';
+
+  @override
+  String get travelItemWorkPermit => 'Werkvisum of -permit goedgekeur';
+
+  @override
+  String get travelItemWorkContract => 'Getekende werksaanbod of dienskontrak';
+
+  @override
+  String get visaPermitNoneStudy => 'Geen studiepermit gestoor nie';
+
+  @override
+  String get visaPermitNoneWork => 'Geen werkpermit gestoor nie';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Permit geldig tot $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Permit verval op $date, voordat jy terugkom';
+  }
+
+  @override
+  String get visaPermitHint => 'Stoor die permit as \'n rekord en Vaultara herinner jou voordat dit verval.';
+
+  @override
+  String get visaPermitAdd => 'Voeg permit by';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studiepermit vir $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Werkpermit vir $country';
+  }
 }

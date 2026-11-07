@@ -5849,9 +5849,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get assistantDeleteNote => 'Catatan akan dipindahkan ke Pusat Pemulihan, tempat Anda bisa memulihkannya selama 30 hari.';
 
   @override
-  String get assistantFieldCountries => 'Negara';
-
-  @override
   String get assistantHistoryAllDeleted => 'Semua obrolan dihapus';
 
   @override
@@ -6399,4 +6396,97 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Bantu saya merencanakan perjalanan';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Negara',
+      one: 'Negara',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Ubah pengaturan';
+
+  @override
+  String get assistantSettingAppLockNote => 'Ponsel Anda akan meminta sidik jari, wajah, atau kunci layar terlebih dahulu.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Ponsel Anda akan meminta izin notifikasi.';
+
+  @override
+  String get assistantSettingUnavailable => 'Pengaturan ini tidak tersedia di ponsel ini.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: tidak perlu diubah';
+  }
+
+  @override
+  String get assistantStepSetting => 'Menyiapkan pengaturan';
+
+  @override
+  String get travelItemAccommodation => 'Bukti tempat Anda menginap, seperti pemesanan';
+
+  @override
+  String get travelItemReturnTicket => 'Tiket pulang atau lanjutan';
+
+  @override
+  String get travelItemHostInvite => 'Alamat tuan rumah Anda, dan surat undangan jika negara memintanya';
+
+  @override
+  String get travelItemBusinessInvite => 'Surat undangan dari perusahaan yang Anda kunjungi';
+
+  @override
+  String get travelItemEmployerLetter => 'Surat dari pemberi kerja tentang perjalanan';
+
+  @override
+  String get travelItemStudyAcceptance => 'Surat penerimaan dari sekolah atau universitas';
+
+  @override
+  String get travelItemProofOfFunds => 'Bukti dana, seperti rekening koran terbaru';
+
+  @override
+  String get travelItemStudyPermit => 'Visa atau izin belajar disetujui';
+
+  @override
+  String get travelItemWorkPermit => 'Visa atau izin kerja disetujui';
+
+  @override
+  String get travelItemWorkContract => 'Tawaran kerja atau kontrak kerja yang ditandatangani';
+
+  @override
+  String get visaPermitNoneStudy => 'Belum ada izin belajar yang disimpan';
+
+  @override
+  String get visaPermitNoneWork => 'Belum ada izin kerja yang disimpan';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Izin berlaku sampai $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Izin berakhir $date, sebelum Anda kembali';
+  }
+
+  @override
+  String get visaPermitHint => 'Simpan izin sebagai catatan dan Vaultara akan mengingatkan sebelum kedaluwarsa.';
+
+  @override
+  String get visaPermitAdd => 'Tambah izin';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Izin belajar untuk $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Izin kerja untuk $country';
+  }
 }

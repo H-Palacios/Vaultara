@@ -5902,9 +5902,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get assistantDeleteNote => 'Passa al Centre de recuperació, on el pots restaurar durant 30 dies.';
 
   @override
-  String get assistantFieldCountries => 'Països';
-
-  @override
   String get assistantHistoryAllDeleted => 'S’han suprimit tots els xats';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Ajuda\'m a planificar un viatge';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Països',
+      one: 'País',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Canvia una opció';
+
+  @override
+  String get assistantSettingAppLockNote => 'El telèfon et demanarà primer l\'empremta, la cara o el bloqueig de pantalla.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'El telèfon et demanarà que permetis les notificacions.';
+
+  @override
+  String get assistantSettingUnavailable => 'Aquesta opció no està disponible en aquest telèfon.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: no cal cap canvi';
+  }
+
+  @override
+  String get assistantStepSetting => 'Preparant l\'opció';
+
+  @override
+  String get travelItemAccommodation => 'Prova d\'on t\'allotjaràs, com una reserva';
+
+  @override
+  String get travelItemReturnTicket => 'Bitllet de tornada o de continuació';
+
+  @override
+  String get travelItemHostInvite => 'L\'adreça de l\'amfitrió i una carta d\'invitació si el país la demana';
+
+  @override
+  String get travelItemBusinessInvite => 'Carta d\'invitació de l\'empresa que visites';
+
+  @override
+  String get travelItemEmployerLetter => 'Carta de la teva empresa sobre el viatge';
+
+  @override
+  String get travelItemStudyAcceptance => 'Carta d\'admissió de l\'escola o la universitat';
+
+  @override
+  String get travelItemProofOfFunds => 'Prova de fons, com extractes bancaris recents';
+
+  @override
+  String get travelItemStudyPermit => 'Visat o permís d\'estudis aprovat';
+
+  @override
+  String get travelItemWorkPermit => 'Visat o permís de treball aprovat';
+
+  @override
+  String get travelItemWorkContract => 'Oferta de feina o contracte de treball signat';
+
+  @override
+  String get visaPermitNoneStudy => 'No hi ha cap permís d\'estudis desat';
+
+  @override
+  String get visaPermitNoneWork => 'No hi ha cap permís de treball desat';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Permís vàlid fins al $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'El permís caduca el $date, abans que tornis';
+  }
+
+  @override
+  String get visaPermitHint => 'Desa el permís com a registre i Vaultara t\'avisarà abans que caduqui.';
+
+  @override
+  String get visaPermitAdd => 'Afegeix el permís';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Permís d\'estudis per a $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Permís de treball per a $country';
+  }
 }

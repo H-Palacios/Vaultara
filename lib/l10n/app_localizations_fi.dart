@@ -5902,9 +5902,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantDeleteNote => 'Se siirtyy palautuskeskukseen, josta voit palauttaa sen 30 päivän ajan.';
 
   @override
-  String get assistantFieldCountries => 'Maat';
-
-  @override
   String get assistantHistoryAllDeleted => 'Kaikki keskustelut poistettu';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Auta minua suunnittelemaan matka';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Maat',
+      one: 'Maa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Muuta asetusta';
+
+  @override
+  String get assistantSettingAppLockNote => 'Puhelin pyytää ensin sormenjälkeä, kasvoja tai näytön lukitusta.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Puhelin pyytää sinua sallimaan ilmoitukset.';
+
+  @override
+  String get assistantSettingUnavailable => 'Tämä asetus ei ole käytettävissä tässä puhelimessa.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: muutosta ei tarvita';
+  }
+
+  @override
+  String get assistantStepSetting => 'Valmistellaan asetusta';
+
+  @override
+  String get travelItemAccommodation => 'Todiste majoituksesta, esimerkiksi varaus';
+
+  @override
+  String get travelItemReturnTicket => 'Paluu- tai jatkolippu';
+
+  @override
+  String get travelItemHostInvite => 'Isäntäsi osoite ja kutsukirje, jos maa vaatii sen';
+
+  @override
+  String get travelItemBusinessInvite => 'Kutsukirje yritykseltä, jossa vierailet';
+
+  @override
+  String get travelItemEmployerLetter => 'Työnantajan kirje matkasta';
+
+  @override
+  String get travelItemStudyAcceptance => 'Hyväksymiskirje koululta tai yliopistolta';
+
+  @override
+  String get travelItemProofOfFunds => 'Todiste varoista, esimerkiksi tuoreet tiliotteet';
+
+  @override
+  String get travelItemStudyPermit => 'Opiskeluviisumi tai -lupa hyväksytty';
+
+  @override
+  String get travelItemWorkPermit => 'Työviisumi tai -lupa hyväksytty';
+
+  @override
+  String get travelItemWorkContract => 'Allekirjoitettu työtarjous tai työsopimus';
+
+  @override
+  String get visaPermitNoneStudy => 'Opiskelulupaa ei ole tallennettu';
+
+  @override
+  String get visaPermitNoneWork => 'Työlupaa ei ole tallennettu';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Lupa voimassa $date asti';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Lupa vanhenee $date, ennen kuin palaat';
+  }
+
+  @override
+  String get visaPermitHint => 'Tallenna lupa tietueeksi, niin Vaultara muistuttaa ennen sen vanhenemista.';
+
+  @override
+  String get visaPermitAdd => 'Lisää lupa';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Opiskelulupa: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Työlupa: $country';
+  }
 }

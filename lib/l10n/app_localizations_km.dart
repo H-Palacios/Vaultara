@@ -5852,9 +5852,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get assistantDeleteNote => 'វានឹងផ្លាស់ទៅមជ្ឈមណ្ឌលស្ដារ ដែលអ្នកអាចស្ដារវាវិញបានក្នុងរយៈពេល 30 ថ្ងៃ។';
 
   @override
-  String get assistantFieldCountries => 'ប្រទេស';
-
-  @override
   String get assistantHistoryAllDeleted => 'បានលុបការជជែកទាំងអស់';
 
   @override
@@ -6402,4 +6399,97 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ជួយខ្ញុំរៀបចំផែនការដំណើរ';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ប្រទេស',
+      one: 'ប្រទេស',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'ប្ដូរការកំណត់';
+
+  @override
+  String get assistantSettingAppLockNote => 'ទូរសព្ទរបស់អ្នកនឹងសុំស្នាមម្រាមដៃ មុខ ឬការចាក់សោអេក្រង់ជាមុន។';
+
+  @override
+  String get assistantSettingNotificationsNote => 'ទូរសព្ទរបស់អ្នកនឹងសុំឱ្យអ្នកអនុញ្ញាតការជូនដំណឹង។';
+
+  @override
+  String get assistantSettingUnavailable => 'ការកំណត់នេះមិនមាននៅលើទូរសព្ទនេះទេ។';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting៖ មិនចាំបាច់ប្ដូរទេ';
+  }
+
+  @override
+  String get assistantStepSetting => 'កំពុងរៀបចំការកំណត់';
+
+  @override
+  String get travelItemAccommodation => 'ភស្តុតាងកន្លែងស្នាក់នៅ ដូចជាការកក់';
+
+  @override
+  String get travelItemReturnTicket => 'សំបុត្រត្រឡប់ ឬបន្តដំណើរ';
+
+  @override
+  String get travelItemHostInvite => 'អាសយដ្ឋានម្ចាស់ផ្ទះ និងលិខិតអញ្ជើញ ប្រសិនបើប្រទេសនោះតម្រូវ';
+
+  @override
+  String get travelItemBusinessInvite => 'លិខិតអញ្ជើញពីក្រុមហ៊ុនដែលអ្នកទៅទស្សនា';
+
+  @override
+  String get travelItemEmployerLetter => 'លិខិតពីនិយោជករបស់អ្នកអំពីដំណើរ';
+
+  @override
+  String get travelItemStudyAcceptance => 'លិខិតទទួលយកពីសាលា ឬសាកលវិទ្យាល័យ';
+
+  @override
+  String get travelItemProofOfFunds => 'ភស្តុតាងថវិកា ដូចជារបាយការណ៍ធនាគារថ្មីៗ';
+
+  @override
+  String get travelItemStudyPermit => 'ទិដ្ឋាការ ឬលិខិតអនុញ្ញាតសិក្សាត្រូវបានអនុម័ត';
+
+  @override
+  String get travelItemWorkPermit => 'ទិដ្ឋាការ ឬលិខិតអនុញ្ញាតការងារត្រូវបានអនុម័ត';
+
+  @override
+  String get travelItemWorkContract => 'សំណើការងារ ឬកិច្ចសន្យាការងារដែលបានចុះហត្ថលេខា';
+
+  @override
+  String get visaPermitNoneStudy => 'មិនទាន់រក្សាទុកលិខិតអនុញ្ញាតសិក្សាទេ';
+
+  @override
+  String get visaPermitNoneWork => 'មិនទាន់រក្សាទុកលិខិតអនុញ្ញាតការងារទេ';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'លិខិតអនុញ្ញាតមានសុពលភាពដល់ $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'លិខិតអនុញ្ញាតផុតកំណត់ $date មុនពេលអ្នកត្រឡប់មកវិញ';
+  }
+
+  @override
+  String get visaPermitHint => 'រក្សាទុកលិខិតអនុញ្ញាតជាកំណត់ត្រា ហើយ Vaultara នឹងរំលឹកអ្នកមុនពេលផុតកំណត់។';
+
+  @override
+  String get visaPermitAdd => 'បន្ថែមលិខិតអនុញ្ញាត';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'លិខិតអនុញ្ញាតសិក្សាសម្រាប់ $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'លិខិតអនុញ្ញាតការងារសម្រាប់ $country';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get assistantDeleteNote => 'ఇది రికవరీ సెంటర్‌కు వెళ్తుంది, అక్కడ 30 రోజుల వరకు మీరు దీన్ని పునరుద్ధరించవచ్చు.';
 
   @override
-  String get assistantFieldCountries => 'దేశాలు';
-
-  @override
   String get assistantHistoryAllDeleted => 'అన్ని చాట్‌లు తొలగించబడ్డాయి';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ట్రిప్ ప్లాన్ చేయడంలో సహాయం చేయి';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'దేశాలు',
+      one: 'దేశం',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'సెట్టింగ్ మార్చండి';
+
+  @override
+  String get assistantSettingAppLockNote => 'మీ ఫోన్ ముందుగా వేలిముద్ర, ముఖం లేదా స్క్రీన్ లాక్ అడుగుతుంది.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'నోటిఫికేషన్‌లను అనుమతించమని మీ ఫోన్ అడుగుతుంది.';
+
+  @override
+  String get assistantSettingUnavailable => 'ఈ సెట్టింగ్ ఈ ఫోన్‌లో అందుబాటులో లేదు.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: మార్పు అవసరం లేదు';
+  }
+
+  @override
+  String get assistantStepSetting => 'సెట్టింగ్ సిద్ధం చేస్తోంది';
+
+  @override
+  String get travelItemAccommodation => 'మీరు ఎక్కడ ఉంటారో రుజువు, ఉదా. బుకింగ్';
+
+  @override
+  String get travelItemReturnTicket => 'తిరుగు లేదా తదుపరి ప్రయాణ టికెట్';
+
+  @override
+  String get travelItemHostInvite => 'మీ ఆతిథేయుల చిరునామా, దేశం అడిగితే ఆహ్వాన లేఖ';
+
+  @override
+  String get travelItemBusinessInvite => 'మీరు సందర్శించే కంపెనీ ఆహ్వాన లేఖ';
+
+  @override
+  String get travelItemEmployerLetter => 'ప్రయాణం గురించి మీ యజమాని లేఖ';
+
+  @override
+  String get travelItemStudyAcceptance => 'పాఠశాల లేదా విశ్వవిద్యాలయం ప్రవేశ లేఖ';
+
+  @override
+  String get travelItemProofOfFunds => 'నిధుల రుజువు, ఉదా. ఇటీవలి బ్యాంక్ స్టేట్‌మెంట్‌లు';
+
+  @override
+  String get travelItemStudyPermit => 'స్టడీ వీసా లేదా పర్మిట్ ఆమోదించబడింది';
+
+  @override
+  String get travelItemWorkPermit => 'వర్క్ వీసా లేదా పర్మిట్ ఆమోదించబడింది';
+
+  @override
+  String get travelItemWorkContract => 'సంతకం చేసిన ఉద్యోగ ఆఫర్ లేదా పని ఒప్పందం';
+
+  @override
+  String get visaPermitNoneStudy => 'స్టడీ పర్మిట్ సేవ్ చేయలేదు';
+
+  @override
+  String get visaPermitNoneWork => 'వర్క్ పర్మిట్ సేవ్ చేయలేదు';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'పర్మిట్ $date వరకు చెల్లుతుంది';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'పర్మిట్ $dateన ముగుస్తుంది, మీరు తిరిగి రాకముందే';
+  }
+
+  @override
+  String get visaPermitHint => 'పర్మిట్‌ను రికార్డ్‌గా సేవ్ చేయండి, గడువు ముగిసేలోపు Vaultara గుర్తు చేస్తుంది.';
+
+  @override
+  String get visaPermitAdd => 'పర్మిట్ జోడించండి';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country కోసం స్టడీ పర్మిట్';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country కోసం వర్క్ పర్మిట్';
+  }
 }

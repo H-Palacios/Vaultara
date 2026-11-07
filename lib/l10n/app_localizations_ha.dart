@@ -5902,9 +5902,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantDeleteNote => 'Zai koma Cibiyar Mayarwa, inda za ka iya mayar da shi cikin kwanaki 30.';
 
   @override
-  String get assistantFieldCountries => 'Ƙasashe';
-
-  @override
   String get assistantHistoryAllDeleted => 'An share duk hirarraki';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Taimaka min in shirya tafiya';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ƙasashe',
+      one: 'Ƙasa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Canza saiti';
+
+  @override
+  String get assistantSettingAppLockNote => 'Wayarka za ta fara neman zanen yatsa, fuska ko makullin allo.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Wayarka za ta tambaye ka ka ba da izinin sanarwa.';
+
+  @override
+  String get assistantSettingUnavailable => 'Wannan saitin ba ya samuwa a wannan wayar.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: babu buƙatar canji';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ana shirya saitin';
+
+  @override
+  String get travelItemAccommodation => 'Shaidar inda za ka zauna, kamar ajiyar wuri';
+
+  @override
+  String get travelItemReturnTicket => 'Tikitin dawowa ko ci gaba da tafiya';
+
+  @override
+  String get travelItemHostInvite => 'Adireshin mai masaukinka, da wasiƙar gayyata idan ƙasar ta nema';
+
+  @override
+  String get travelItemBusinessInvite => 'Wasiƙar gayyata daga kamfanin da kake ziyarta';
+
+  @override
+  String get travelItemEmployerLetter => 'Wasiƙa daga mai aikinka game da tafiyar';
+
+  @override
+  String get travelItemStudyAcceptance => 'Wasiƙar karɓa daga makarantarka ko jami\'arka';
+
+  @override
+  String get travelItemProofOfFunds => 'Shaidar kuɗi, kamar bayanan banki na kwanan nan';
+
+  @override
+  String get travelItemStudyPermit => 'An amince da bizar karatu ko izini';
+
+  @override
+  String get travelItemWorkPermit => 'An amince da bizar aiki ko izini';
+
+  @override
+  String get travelItemWorkContract => 'Tayin aiki ko kwangilar aiki da aka sanya hannu';
+
+  @override
+  String get visaPermitNoneStudy => 'Babu izinin karatu da aka ajiye';
+
+  @override
+  String get visaPermitNoneWork => 'Babu izinin aiki da aka ajiye';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Izinin yana aiki har zuwa $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Izinin zai ƙare a $date, kafin ka dawo';
+  }
+
+  @override
+  String get visaPermitHint => 'Ajiye izinin a matsayin bayani kuma Vaultara za ta tunatar da kai kafin ya ƙare.';
+
+  @override
+  String get visaPermitAdd => 'Ƙara izini';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Izinin karatu na $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Izinin aiki na $country';
+  }
 }

@@ -5842,9 +5842,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get assistantDeleteNote => '復元センターに移動し、30日間は復元できます。';
 
   @override
-  String get assistantFieldCountries => '国';
-
-  @override
   String get assistantHistoryAllDeleted => 'すべてのチャットを削除しました';
 
   @override
@@ -6392,4 +6389,97 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => '旅行の計画を手伝って';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '国',
+      one: '国',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => '設定を変更';
+
+  @override
+  String get assistantSettingAppLockNote => '最初に指紋、顔、または画面ロックが求められます。';
+
+  @override
+  String get assistantSettingNotificationsNote => '通知を許可するよう求められます。';
+
+  @override
+  String get assistantSettingUnavailable => 'この設定はこの端末では使えません。';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting：変更は不要です';
+  }
+
+  @override
+  String get assistantStepSetting => '設定を準備しています';
+
+  @override
+  String get travelItemAccommodation => '宿泊先の証明（予約など）';
+
+  @override
+  String get travelItemReturnTicket => '帰りの航空券または出国用の航空券';
+
+  @override
+  String get travelItemHostInvite => '滞在先の住所と、国が求める場合は招待状';
+
+  @override
+  String get travelItemBusinessInvite => '訪問先の会社からの招待状';
+
+  @override
+  String get travelItemEmployerLetter => '出張についての勤務先からのレター';
+
+  @override
+  String get travelItemStudyAcceptance => '学校または大学の入学許可書';
+
+  @override
+  String get travelItemProofOfFunds => '資金の証明（最近の銀行明細など）';
+
+  @override
+  String get travelItemStudyPermit => '学生ビザまたは就学許可が承認済み';
+
+  @override
+  String get travelItemWorkPermit => '就労ビザまたは就労許可が承認済み';
+
+  @override
+  String get travelItemWorkContract => '署名済みの内定通知書または雇用契約書';
+
+  @override
+  String get visaPermitNoneStudy => '就学許可は保存されていません';
+
+  @override
+  String get visaPermitNoneWork => '就労許可は保存されていません';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return '許可の有効期限 $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return '許可は$dateに切れます（帰国前）';
+  }
+
+  @override
+  String get visaPermitHint => '許可を記録として保存すると、期限切れの前に Vaultara がお知らせします。';
+
+  @override
+  String get visaPermitAdd => '許可を追加';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$countryの就学許可';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$countryの就労許可';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantDeleteNote => 'ის გადავა აღდგენის ცენტრში, სადაც 30 დღის განმავლობაში შეგიძლიათ მისი აღდგენა.';
 
   @override
-  String get assistantFieldCountries => 'ქვეყნები';
-
-  @override
   String get assistantHistoryAllDeleted => 'ყველა ჩატი წაიშალა';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'დამეხმარე მოგზაურობის დაგეგმვაში';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ქვეყნები',
+      one: 'ქვეყანა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'პარამეტრის შეცვლა';
+
+  @override
+  String get assistantSettingAppLockNote => 'ტელეფონი ჯერ თითის ანაბეჭდს, სახეს ან ეკრანის დაბლოკვას მოითხოვს.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'ტელეფონი შეტყობინებების დაშვებას მოგთხოვთ.';
+
+  @override
+  String get assistantSettingUnavailable => 'ეს პარამეტრი ამ ტელეფონზე მიუწვდომელია.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ცვლილება საჭირო არ არის';
+  }
+
+  @override
+  String get assistantStepSetting => 'პარამეტრი მზადდება';
+
+  @override
+  String get travelItemAccommodation => 'საცხოვრებლის დამადასტურებელი, მაგ. ჯავშანი';
+
+  @override
+  String get travelItemReturnTicket => 'დაბრუნების ან შემდგომი მგზავრობის ბილეთი';
+
+  @override
+  String get travelItemHostInvite => 'მასპინძლის მისამართი და მოსაწვევი წერილი, თუ ქვეყანა მოითხოვს';
+
+  @override
+  String get travelItemBusinessInvite => 'მოსაწვევი წერილი კომპანიისგან, რომელსაც სტუმრობთ';
+
+  @override
+  String get travelItemEmployerLetter => 'დამსაქმებლის წერილი მოგზაურობის შესახებ';
+
+  @override
+  String get travelItemStudyAcceptance => 'მიღების წერილი სკოლიდან ან უნივერსიტეტიდან';
+
+  @override
+  String get travelItemProofOfFunds => 'სახსრების დამადასტურებელი, მაგ. ბოლო საბანკო ამონაწერები';
+
+  @override
+  String get travelItemStudyPermit => 'სასწავლო ვიზა ან ნებართვა დამტკიცებულია';
+
+  @override
+  String get travelItemWorkPermit => 'სამუშაო ვიზა ან ნებართვა დამტკიცებულია';
+
+  @override
+  String get travelItemWorkContract => 'ხელმოწერილი სამსახურის შეთავაზება ან შრომითი ხელშეკრულება';
+
+  @override
+  String get visaPermitNoneStudy => 'სასწავლო ნებართვა არ არის შენახული';
+
+  @override
+  String get visaPermitNoneWork => 'სამუშაო ნებართვა არ არის შენახული';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'ნებართვა მოქმედებს $date-მდე';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'ნებართვას ვადა გასდის $date-ს, დაბრუნებამდე';
+  }
+
+  @override
+  String get visaPermitHint => 'შეინახეთ ნებართვა ჩანაწერად და Vaultara ვადის გასვლამდე შეგახსენებთ.';
+
+  @override
+  String get visaPermitAdd => 'ნებართვის დამატება';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'სასწავლო ნებართვა: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'სამუშაო ნებართვა: $country';
+  }
 }

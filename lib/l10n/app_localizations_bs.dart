@@ -5965,9 +5965,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get assistantDeleteNote => 'Premješta se u Centar za oporavak, gdje ga možete vratiti u roku od 30 dana.';
 
   @override
-  String get assistantFieldCountries => 'Zemlje';
-
-  @override
   String get assistantHistoryAllDeleted => 'Svi razgovori su obrisani';
 
   @override
@@ -6523,4 +6520,97 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Pomozi mi da isplaniram putovanje';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Države',
+      one: 'Država',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Promijeni postavku';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefon prvo traži vaš otisak prsta, lice ili zaključavanje ekrana.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefon će vas pitati da dozvolite obavještenja.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ova postavka nije dostupna na ovom telefonu.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: nije potrebna promjena';
+  }
+
+  @override
+  String get assistantStepSetting => 'Priprema postavke';
+
+  @override
+  String get travelItemAccommodation => 'Dokaz gdje boravite, npr. rezervacija';
+
+  @override
+  String get travelItemReturnTicket => 'Povratna ili dalja karta';
+
+  @override
+  String get travelItemHostInvite => 'Adresa domaćina i pozivno pismo ako ga država traži';
+
+  @override
+  String get travelItemBusinessInvite => 'Pozivno pismo kompanije koju posjećujete';
+
+  @override
+  String get travelItemEmployerLetter => 'Pismo poslodavca o putovanju';
+
+  @override
+  String get travelItemStudyAcceptance => 'Pismo o prijemu od škole ili univerziteta';
+
+  @override
+  String get travelItemProofOfFunds => 'Dokaz o sredstvima, npr. nedavni izvodi iz banke';
+
+  @override
+  String get travelItemStudyPermit => 'Odobrena studentska viza ili dozvola';
+
+  @override
+  String get travelItemWorkPermit => 'Odobrena radna viza ili dozvola';
+
+  @override
+  String get travelItemWorkContract => 'Potpisana ponuda za posao ili ugovor o radu';
+
+  @override
+  String get visaPermitNoneStudy => 'Nema sačuvane dozvole za studiranje';
+
+  @override
+  String get visaPermitNoneWork => 'Nema sačuvane radne dozvole';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Dozvola važi do $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Dozvola ističe $date, prije vašeg povratka';
+  }
+
+  @override
+  String get visaPermitHint => 'Sačuvajte dozvolu kao zapis i Vaultara će vas podsjetiti prije isteka.';
+
+  @override
+  String get visaPermitAdd => 'Dodaj dozvolu';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Dozvola za studiranje za $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Radna dozvola za $country';
+  }
 }

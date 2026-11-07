@@ -5854,9 +5854,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantDeleteNote => '복구 센터로 이동하며, 30일 동안 복원할 수 있습니다.';
 
   @override
-  String get assistantFieldCountries => '국가';
-
-  @override
   String get assistantHistoryAllDeleted => '모든 대화를 삭제했습니다';
 
   @override
@@ -6404,4 +6401,97 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => '여행 계획을 도와줘';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '국가',
+      one: '국가',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => '설정 변경';
+
+  @override
+  String get assistantSettingAppLockNote => '휴대폰에서 먼저 지문, 얼굴 또는 화면 잠금을 요청합니다.';
+
+  @override
+  String get assistantSettingNotificationsNote => '휴대폰에서 알림을 허용하도록 요청합니다.';
+
+  @override
+  String get assistantSettingUnavailable => '이 설정은 이 휴대폰에서 사용할 수 없습니다.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: 변경할 필요 없음';
+  }
+
+  @override
+  String get assistantStepSetting => '설정 준비 중';
+
+  @override
+  String get travelItemAccommodation => '숙소 증명(예: 예약 내역)';
+
+  @override
+  String get travelItemReturnTicket => '귀국 또는 출국 항공권';
+
+  @override
+  String get travelItemHostInvite => '호스트의 주소, 그리고 국가에서 요구하면 초청장';
+
+  @override
+  String get travelItemBusinessInvite => '방문하는 회사의 초청장';
+
+  @override
+  String get travelItemEmployerLetter => '출장에 관한 회사 서신';
+
+  @override
+  String get travelItemStudyAcceptance => '학교 또는 대학교 입학 허가서';
+
+  @override
+  String get travelItemProofOfFunds => '재정 증명(예: 최근 은행 거래 내역서)';
+
+  @override
+  String get travelItemStudyPermit => '학생 비자 또는 학업 허가 승인됨';
+
+  @override
+  String get travelItemWorkPermit => '취업 비자 또는 취업 허가 승인됨';
+
+  @override
+  String get travelItemWorkContract => '서명한 채용 제안서 또는 근로 계약서';
+
+  @override
+  String get visaPermitNoneStudy => '저장된 학업 허가 없음';
+
+  @override
+  String get visaPermitNoneWork => '저장된 취업 허가 없음';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return '허가 유효 기간: $date까지';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return '허가가 귀국 전인 $date에 만료됩니다';
+  }
+
+  @override
+  String get visaPermitHint => '허가를 기록으로 저장하면 만료 전에 Vaultara가 알려 드립니다.';
+
+  @override
+  String get visaPermitAdd => '허가 추가';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country 학업 허가';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country 취업 허가';
+  }
 }

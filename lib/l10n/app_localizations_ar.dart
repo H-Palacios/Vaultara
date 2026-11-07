@@ -6089,9 +6089,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get assistantDeleteNote => 'ينتقل إلى مركز الاستعادة، حيث يمكنك استعادته خلال 30 يومًا.';
 
   @override
-  String get assistantFieldCountries => 'الدول';
-
-  @override
   String get assistantHistoryAllDeleted => 'حُذفت جميع المحادثات';
 
   @override
@@ -6659,4 +6656,97 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ساعدني في التخطيط لرحلة';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'الدول',
+      one: 'الدولة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'تغيير إعداد';
+
+  @override
+  String get assistantSettingAppLockNote => 'يطلب هاتفك أولًا بصمة إصبعك أو وجهك أو قفل الشاشة.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'يطلب منك هاتفك السماح بالإشعارات.';
+
+  @override
+  String get assistantSettingUnavailable => 'هذا الإعداد غير متوفر على هذا الهاتف.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: لا حاجة إلى تغيير';
+  }
+
+  @override
+  String get assistantStepSetting => 'جارٍ تجهيز الإعداد';
+
+  @override
+  String get travelItemAccommodation => 'إثبات مكان إقامتك، مثل حجز';
+
+  @override
+  String get travelItemReturnTicket => 'تذكرة عودة أو مغادرة لاحقة';
+
+  @override
+  String get travelItemHostInvite => 'عنوان مضيفك، وخطاب دعوة إذا طلبته الدولة';
+
+  @override
+  String get travelItemBusinessInvite => 'خطاب دعوة من الشركة التي تزورها';
+
+  @override
+  String get travelItemEmployerLetter => 'خطاب من جهة عملك عن الرحلة';
+
+  @override
+  String get travelItemStudyAcceptance => 'خطاب قبول من مدرستك أو جامعتك';
+
+  @override
+  String get travelItemProofOfFunds => 'إثبات الأموال، مثل كشوف الحساب البنكية الأخيرة';
+
+  @override
+  String get travelItemStudyPermit => 'تمت الموافقة على تأشيرة أو تصريح الدراسة';
+
+  @override
+  String get travelItemWorkPermit => 'تمت الموافقة على تأشيرة أو تصريح العمل';
+
+  @override
+  String get travelItemWorkContract => 'عرض عمل أو عقد عمل موقَّع';
+
+  @override
+  String get visaPermitNoneStudy => 'لا يوجد تصريح دراسة محفوظ';
+
+  @override
+  String get visaPermitNoneWork => 'لا يوجد تصريح عمل محفوظ';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'التصريح صالح حتى $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'ينتهي التصريح في $date، قبل عودتك';
+  }
+
+  @override
+  String get visaPermitHint => 'احفظ التصريح كسجل وسيذكّرك Vaultara قبل انتهائه.';
+
+  @override
+  String get visaPermitAdd => 'إضافة تصريح';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'تصريح دراسة في $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'تصريح عمل في $country';
+  }
 }

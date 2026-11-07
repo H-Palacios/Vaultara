@@ -5910,9 +5910,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get assistantDeleteNote => 'Il est déplacé vers le Centre de récupération, où vous pouvez le restaurer pendant 30 jours.';
 
   @override
-  String get assistantFieldCountries => 'Pays';
-
-  @override
   String get assistantHistoryAllDeleted => 'Toutes les conversations ont été supprimées';
 
   @override
@@ -6464,4 +6461,97 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Aide-moi à planifier un voyage';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pays',
+      one: 'Pays',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Modifier un réglage';
+
+  @override
+  String get assistantSettingAppLockNote => 'Votre téléphone demande d\'abord votre empreinte, votre visage ou le verrouillage de l\'écran.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Votre téléphone vous demande d\'autoriser les notifications.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ce réglage n\'est pas disponible sur ce téléphone.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting : aucun changement nécessaire';
+  }
+
+  @override
+  String get assistantStepSetting => 'Préparation du réglage';
+
+  @override
+  String get travelItemAccommodation => 'Justificatif d\'hébergement, comme une réservation';
+
+  @override
+  String get travelItemReturnTicket => 'Billet de retour ou de sortie';
+
+  @override
+  String get travelItemHostInvite => 'L\'adresse de votre hôte et une lettre d\'invitation si le pays la demande';
+
+  @override
+  String get travelItemBusinessInvite => 'Lettre d\'invitation de l\'entreprise que vous visitez';
+
+  @override
+  String get travelItemEmployerLetter => 'Lettre de votre employeur concernant le voyage';
+
+  @override
+  String get travelItemStudyAcceptance => 'Lettre d\'admission de votre école ou université';
+
+  @override
+  String get travelItemProofOfFunds => 'Justificatif de ressources, comme des relevés bancaires récents';
+
+  @override
+  String get travelItemStudyPermit => 'Visa ou permis d\'études accordé';
+
+  @override
+  String get travelItemWorkPermit => 'Visa ou permis de travail accordé';
+
+  @override
+  String get travelItemWorkContract => 'Offre d\'emploi ou contrat de travail signé';
+
+  @override
+  String get visaPermitNoneStudy => 'Aucun permis d\'études enregistré';
+
+  @override
+  String get visaPermitNoneWork => 'Aucun permis de travail enregistré';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Permis valable jusqu\'au $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Le permis expire le $date, avant votre retour';
+  }
+
+  @override
+  String get visaPermitHint => 'Enregistrez le permis comme document et Vaultara vous préviendra avant son expiration.';
+
+  @override
+  String get visaPermitAdd => 'Ajouter le permis';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Permis d\'études pour $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Permis de travail pour $country';
+  }
 }

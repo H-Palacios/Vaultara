@@ -5855,9 +5855,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantDeleteNote => 'Yóò lọ sí Ile-iṣẹ imupadabọ, níbi tí o ti lè dá a padà láàrín ọjọ́ 30.';
 
   @override
-  String get assistantFieldCountries => 'Àwọn orílẹ̀-èdè';
-
-  @override
   String get assistantHistoryAllDeleted => 'A ti pa gbogbo ìbánisọ̀rọ̀ rẹ́';
 
   @override
@@ -6405,4 +6402,97 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Ràn mí lọ́wọ́ láti gbèrò ìrìn àjò';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Àwọn orílẹ̀-èdè',
+      one: 'Orílẹ̀-èdè',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Yí ètò kan padà';
+
+  @override
+  String get assistantSettingAppLockNote => 'Fóònù rẹ yóò kọ́kọ́ béèrè ìtẹ̀ka, ojú tàbí títì ojú-ìbojú.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Fóònù rẹ yóò ní kí o gba àwọn ìfitónilétí láàyè.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ètò yìí kò sí lórí fóònù yìí.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: kò sí àyípadà tó yẹ';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ń pèsè ètò náà';
+
+  @override
+  String get travelItemAccommodation => 'Ẹ̀rí ibi tí o máa dé sí, bí ìforúkọsílẹ̀';
+
+  @override
+  String get travelItemReturnTicket => 'Tíkẹ́ẹ̀tì ìpadàbọ̀ tàbí ìtẹ̀síwájú';
+
+  @override
+  String get travelItemHostInvite => 'Àdírẹ́sì olùgbàlejò rẹ, àti lẹ́tà ìpè tí orílẹ̀-èdè bá béèrè';
+
+  @override
+  String get travelItemBusinessInvite => 'Lẹ́tà ìpè láti ilé-iṣẹ́ tí o ń bẹ̀wò';
+
+  @override
+  String get travelItemEmployerLetter => 'Lẹ́tà láti ọ̀dọ̀ agbanisíṣẹ́ rẹ nípa ìrìn-àjò náà';
+
+  @override
+  String get travelItemStudyAcceptance => 'Lẹ́tà ìgbàwọlé láti ilé-ìwé tàbí yunifásítì rẹ';
+
+  @override
+  String get travelItemProofOfFunds => 'Ẹ̀rí owó, bí àwọn ìwé àkọọ́lẹ̀ báǹkì àìpẹ́';
+
+  @override
+  String get travelItemStudyPermit => 'Físà tàbí ìyọ̀ǹda ẹ̀kọ́ ti fọwọ́sí';
+
+  @override
+  String get travelItemWorkPermit => 'Físà tàbí ìyọ̀ǹda iṣẹ́ ti fọwọ́sí';
+
+  @override
+  String get travelItemWorkContract => 'Ìfilọ̀ iṣẹ́ tàbí àdéhùn iṣẹ́ tí a fọwọ́ sí';
+
+  @override
+  String get visaPermitNoneStudy => 'Kò sí ìyọ̀ǹda ẹ̀kọ́ tí a fipamọ́';
+
+  @override
+  String get visaPermitNoneWork => 'Kò sí ìyọ̀ǹda iṣẹ́ tí a fipamọ́';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Ìyọ̀ǹda wúlò títí di $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Ìyọ̀ǹda máa parí ní $date, kí o tó padà';
+  }
+
+  @override
+  String get visaPermitHint => 'Fi ìyọ̀ǹda pamọ́ bí àkọsílẹ̀, Vaultara yóò rán ọ létí kí ó tó parí.';
+
+  @override
+  String get visaPermitAdd => 'Ṣàfikún ìyọ̀ǹda';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Ìyọ̀ǹda ẹ̀kọ́ fún $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Ìyọ̀ǹda iṣẹ́ fún $country';
+  }
 }

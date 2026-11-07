@@ -5902,9 +5902,6 @@ class AppLocalizationsGl extends AppLocalizations {
   String get assistantDeleteNote => 'Pasa ao Centro de recuperación, onde podes restauralo durante 30 días.';
 
   @override
-  String get assistantFieldCountries => 'Países';
-
-  @override
   String get assistantHistoryAllDeleted => 'Elimináronse todos os chats';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Axúdame a planificar unha viaxe';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Países',
+      one: 'País',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Cambiar un axuste';
+
+  @override
+  String get assistantSettingAppLockNote => 'O teléfono pedirache primeiro a pegada, a cara ou o bloqueo de pantalla.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'O teléfono pedirache que permitas as notificacións.';
+
+  @override
+  String get assistantSettingUnavailable => 'Este axuste non está dispoñible neste teléfono.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: non fai falla ningún cambio';
+  }
+
+  @override
+  String get assistantStepSetting => 'Preparando o axuste';
+
+  @override
+  String get travelItemAccommodation => 'Proba de onde te aloxas, como unha reserva';
+
+  @override
+  String get travelItemReturnTicket => 'Billete de volta ou de saída';
+
+  @override
+  String get travelItemHostInvite => 'O enderezo do teu anfitrión e unha carta de invitación se o país a pide';
+
+  @override
+  String get travelItemBusinessInvite => 'Carta de invitación da empresa que visitas';
+
+  @override
+  String get travelItemEmployerLetter => 'Carta da túa empresa sobre a viaxe';
+
+  @override
+  String get travelItemStudyAcceptance => 'Carta de admisión da escola ou universidade';
+
+  @override
+  String get travelItemProofOfFunds => 'Proba de fondos, como extractos bancarios recentes';
+
+  @override
+  String get travelItemStudyPermit => 'Visado ou permiso de estudos aprobado';
+
+  @override
+  String get travelItemWorkPermit => 'Visado ou permiso de traballo aprobado';
+
+  @override
+  String get travelItemWorkContract => 'Oferta de emprego ou contrato de traballo asinado';
+
+  @override
+  String get visaPermitNoneStudy => 'Non hai ningún permiso de estudos gardado';
+
+  @override
+  String get visaPermitNoneWork => 'Non hai ningún permiso de traballo gardado';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Permiso válido ata o $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'O permiso caduca o $date, antes de que volvas';
+  }
+
+  @override
+  String get visaPermitHint => 'Garda o permiso como rexistro e Vaultara avisarate antes de que caduque.';
+
+  @override
+  String get visaPermitAdd => 'Engadir permiso';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Permiso de estudos para $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Permiso de traballo para $country';
+  }
 }

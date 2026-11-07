@@ -5902,9 +5902,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get assistantDeleteNote => 'Kalon në Qendrën e Rikthimit, ku mund ta riktheni brenda 30 ditëve.';
 
   @override
-  String get assistantFieldCountries => 'Vendet';
-
-  @override
   String get assistantHistoryAllDeleted => 'Të gjitha bisedat u fshinë';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Më ndihmo të planifikoj një udhëtim';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Shtetet',
+      one: 'Shteti',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Ndrysho një cilësim';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefoni do të kërkojë fillimisht gjurmën e gishtit, fytyrën ose kyçjen e ekranit.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefoni do të të kërkojë të lejosh njoftimet.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ky cilësim nuk është i disponueshëm në këtë telefon.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: nuk nevojitet ndryshim';
+  }
+
+  @override
+  String get assistantStepSetting => 'Po përgatitet cilësimi';
+
+  @override
+  String get travelItemAccommodation => 'Dëshmi e vendit ku qëndron, p.sh. një rezervim';
+
+  @override
+  String get travelItemReturnTicket => 'Biletë kthimi ose vazhdimi';
+
+  @override
+  String get travelItemHostInvite => 'Adresa e mikpritësit dhe një letër ftese nëse shteti e kërkon';
+
+  @override
+  String get travelItemBusinessInvite => 'Letër ftese nga kompania që po viziton';
+
+  @override
+  String get travelItemEmployerLetter => 'Letër nga punëdhënësi për udhëtimin';
+
+  @override
+  String get travelItemStudyAcceptance => 'Letër pranimi nga shkolla ose universiteti';
+
+  @override
+  String get travelItemProofOfFunds => 'Dëshmi e fondeve, p.sh. pasqyra bankare të fundit';
+
+  @override
+  String get travelItemStudyPermit => 'Viza ose leja e studimit u miratua';
+
+  @override
+  String get travelItemWorkPermit => 'Viza ose leja e punës u miratua';
+
+  @override
+  String get travelItemWorkContract => 'Ofertë pune ose kontratë pune e nënshkruar';
+
+  @override
+  String get visaPermitNoneStudy => 'Nuk ka leje studimi të ruajtur';
+
+  @override
+  String get visaPermitNoneWork => 'Nuk ka leje pune të ruajtur';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Leja është e vlefshme deri më $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Leja skadon më $date, para se të kthehesh';
+  }
+
+  @override
+  String get visaPermitHint => 'Ruaje lejen si regjistrim dhe Vaultara do të të kujtojë para se të skadojë.';
+
+  @override
+  String get visaPermitAdd => 'Shto leje';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Leje studimi për $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Leje pune për $country';
+  }
 }

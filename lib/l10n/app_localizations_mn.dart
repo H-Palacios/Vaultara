@@ -5892,9 +5892,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get assistantDeleteNote => 'Энэ нь Сэргээх төв рүү шилжих бөгөөд та үүнийг 30 хоногийн дотор сэргээх боломжтой.';
 
   @override
-  String get assistantFieldCountries => 'Улсууд';
-
-  @override
   String get assistantHistoryAllDeleted => 'Бүх чатыг устгалаа';
 
   @override
@@ -6446,4 +6443,97 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Аялал төлөвлөхөд туслаач';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Улсууд',
+      one: 'Улс',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Тохиргоо өөрчлөх';
+
+  @override
+  String get assistantSettingAppLockNote => 'Утас эхлээд хурууны хээ, царай эсвэл дэлгэцийн түгжээ асууна.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Утас мэдэгдэл зөвшөөрөхийг хүснэ.';
+
+  @override
+  String get assistantSettingUnavailable => 'Энэ тохиргоо энэ утсанд байхгүй.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: өөрчлөх шаардлагагүй';
+  }
+
+  @override
+  String get assistantStepSetting => 'Тохиргоог бэлдэж байна';
+
+  @override
+  String get travelItemAccommodation => 'Байрлах газрын баталгаа, жишээ нь захиалга';
+
+  @override
+  String get travelItemReturnTicket => 'Буцах эсвэл цааш аялах тийз';
+
+  @override
+  String get travelItemHostInvite => 'Хүлээн авагчийн хаяг, улс шаардвал урилга';
+
+  @override
+  String get travelItemBusinessInvite => 'Очиж буй компанийн урилга';
+
+  @override
+  String get travelItemEmployerLetter => 'Аяллын талаар ажил олгогчийн захидал';
+
+  @override
+  String get travelItemStudyAcceptance => 'Сургууль эсвэл их сургуулийн элсэлтийн захидал';
+
+  @override
+  String get travelItemProofOfFunds => 'Мөнгөний баталгаа, жишээ нь сүүлийн үеийн банкны хуулга';
+
+  @override
+  String get travelItemStudyPermit => 'Суралцах виз эсвэл зөвшөөрөл батлагдсан';
+
+  @override
+  String get travelItemWorkPermit => 'Ажлын виз эсвэл зөвшөөрөл батлагдсан';
+
+  @override
+  String get travelItemWorkContract => 'Гарын үсэг зурсан ажлын санал эсвэл хөдөлмөрийн гэрээ';
+
+  @override
+  String get visaPermitNoneStudy => 'Суралцах зөвшөөрөл хадгалагдаагүй';
+
+  @override
+  String get visaPermitNoneWork => 'Ажлын зөвшөөрөл хадгалагдаагүй';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Зөвшөөрөл $date хүртэл хүчинтэй';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Зөвшөөрлийн хугацаа $date-нд, буцахаас өмнө дуусна';
+  }
+
+  @override
+  String get visaPermitHint => 'Зөвшөөрлийг бичлэг болгон хадгалвал Vaultara хугацаа дуусахаас өмнө сануулна.';
+
+  @override
+  String get visaPermitAdd => 'Зөвшөөрөл нэмэх';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country суралцах зөвшөөрөл';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country ажлын зөвшөөрөл';
+  }
 }
