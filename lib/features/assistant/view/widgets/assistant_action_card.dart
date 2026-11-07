@@ -20,6 +20,35 @@ class AssistantActionCard extends StatelessWidget {
     this.onUndo,
   });
 
+  /// New items with several fields show them in two columns, so the card
+  /// stays short. Changes keep one row each, with the old value crossed out.
+  bool get _grid =>
+      preview.rows.length >= 4 && preview.rows.every((r) => r.before == null);
+
+  List<Widget> _pairs(ColorScheme scheme) {
+    final out = <Widget>[
+      Divider(height: 12, color: scheme.outlineVariant.withValues(alpha: 0.6)),
+    ];
+    final rows = preview.rows;
+    for (var i = 0; i < rows.length; i += 2) {
+      out.add(
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(child: _ChangeRowView(row: rows[i])),
+            const SizedBox(width: 12),
+            Expanded(
+              child: i + 1 < rows.length
+                  ? _ChangeRowView(row: rows[i + 1])
+                  : const SizedBox.shrink(),
+            ),
+          ],
+        ),
+      );
+    }
+    return out;
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -70,7 +99,10 @@ class AssistantActionCard extends StatelessWidget {
             ),
           ],
           if (preview.rows.isNotEmpty) const SizedBox(height: 8),
-          for (final row in preview.rows) _ChangeRowView(row: row),
+          if (_grid)
+            ..._pairs(scheme)
+          else
+            for (final row in preview.rows) _ChangeRowView(row: row),
           if (preview.note != null) ...[
             const SizedBox(height: 6),
             Text(

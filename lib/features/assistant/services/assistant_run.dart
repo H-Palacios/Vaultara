@@ -31,6 +31,7 @@ class AssistantStep {
     'person_me',
     'trip_add',
     'trip_edit',
+    'setting',
     'screen',
   ];
 
