@@ -1,3 +1,4 @@
+import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -44,6 +45,7 @@ class SignOutService {
     FamilyReminderSync.detach();
     PeopleRepository.clearForSignOut();
     TripRepository.clearForSignOut();
+    LifePlanRepository.clearForSignOut();
     VisaLinkRepository.clearForSignOut();
     AttachmentRepository.clearForSignOut();
     AvatarRepository.clearForSignOut();

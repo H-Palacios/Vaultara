@@ -7,6 +7,7 @@ import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
+import 'package:vaultara/features/tools/view/life_plan_suggestions.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
@@ -216,6 +217,10 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
           ),
         ),
         const SizedBox(height: 14),
+        if (LifePlanSuggestions.tripLooksLikeMove(trip)) ...[
+          LifePlanTripCard(trip: trip),
+          const SizedBox(height: 12),
+        ],
         if (isPremium) StayCard(trip: trip),
         _OverviewCard(trip: trip, results: results),
         const SizedBox(height: 12),

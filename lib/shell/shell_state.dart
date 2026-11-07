@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:quick_actions/quick_actions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -68,6 +69,7 @@ class ShellState extends State<Shell> {
     current = this;
     PeopleRepository.start();
     TripRepository.start();
+    LifePlanRepository.start();
     FamilyReminderSync.attach();
     ReferralLinkService.attach();
     HouseholdRepository.start();

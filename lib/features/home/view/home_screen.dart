@@ -15,6 +15,7 @@ import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
 import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
 import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
+import 'package:vaultara/features/tools/view/life_plans_home_section.dart';
 import 'package:vaultara/features/travel/view/travel_check_card.dart';
 
 const String kShowTourBannerKey = 'showTourBanner';
@@ -200,6 +201,7 @@ class HomeScreenState extends State<HomeScreen>
           ),
           const SizedBox(height: 16),
           TravelCheckCard(isPremium: widget.isPremium),
+          const LifePlansHomeSection(),
         ],
       ),
     );
