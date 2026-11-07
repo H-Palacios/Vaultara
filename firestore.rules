@@ -164,7 +164,7 @@ service cloud.firestore {
         && (!('visaRecords' in d) || (d.visaRecords is map && d.visaRecords.size() <= 40))
         && (!('arrivals' in d) || (d.arrivals is map && d.arrivals.size() <= 6))
         && (!('passportChoice' in d) || (d.passportChoice is map && d.passportChoice.size() <= 40))
-        && (!('flights' in d) || (d.flights is list && d.flights.size() <= 6))
+        && (!('flights' in d) || (d.flights is list && d.flights.size() <= 10))
         && d.name is string && d.name.size() > 0 && d.name.size() <= 120
         && d.departure is timestamp && d.returnDate is timestamp
         && d.travellers is list && d.travellers.size() <= 26
