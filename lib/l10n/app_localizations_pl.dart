@@ -2971,10 +2971,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get lifeEventsTitle => 'Wydarzenia życiowe';
 
   @override
-  String get lifeEventsSubtitle => 'Przeprowadzka, nowe nazwisko lub nowy samochód? Zobacz, co zaktualizować';
+  String get lifeEventsSubtitle => 'Przeprowadzka, nowe nazwisko, dziecko albo nowe auto? Otrzymaj plan, co zaktualizować';
 
   @override
-  String get lifeEventsIntro => 'Wybierz, co dzieje się w Twoim życiu. Vaultara wyświetli zapisane rekordy, które zwykle trzeba z tego powodu zaktualizować.';
+  String get lifeEventsIntro => 'Wybierz, co się dzieje. Vaultara tworzy plan z Twoich zapisanych pozycji, pokazuje, co zrobić przed tym dniem i po nim, oraz przypomina.';
 
   @override
   String get lifeEventMoving => 'Przeprowadzam się';
@@ -3020,11 +3020,6 @@ class AppLocalizationsPl extends AppLocalizations {
       one: '$count Twój rekord',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Zaktualizowano $done z $total';
   }
 
   @override
@@ -6775,4 +6770,236 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Starsze';
+
+  @override
+  String get lifeEventHomeBuy => 'Kupuję mieszkanie lub dom';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Załatw ubezpieczenie nowego domu przed przeprowadzką, a potem wszędzie zmień adres.';
+
+  @override
+  String get lifeEventHomeSell => 'Sprzedaję mieszkanie lub dom';
+
+  @override
+  String get lifeEventHomeSellBody => 'Zachowaj ubezpieczenie do zakończenia sprzedaży, a potem anuluj to, czego już nie potrzebujesz.';
+
+  @override
+  String get lifeEventMarriage => 'Biorę ślub';
+
+  @override
+  String get lifeEventMarriageBody => 'Zaktualizuj je po ślubie, zwłaszcza jeśli zmieniasz nazwisko lub dodajesz partnera do polisy.';
+
+  @override
+  String get lifeEventDivorce => 'Rozwodzę się';
+
+  @override
+  String get lifeEventDivorceBody => 'Sprawdź, kto jest ubezpieczony i wskazany w każdej z nich, i zamknij lub podziel to, co było wspólne.';
+
+  @override
+  String get lifeEventBaby => 'Będziemy mieć dziecko';
+
+  @override
+  String get lifeEventBabyBody => 'Dodaj dziecko do ubezpieczenia i sprawdź polisy. Dodaj dziecko w sekcji Rodzina, aby śledzić jego dokumenty.';
+
+  @override
+  String get lifeEventStudies => 'Zaczynam studia';
+
+  @override
+  String get lifeEventStudiesBody => 'Sprawdź zezwolenia, ubezpieczenie i dokumenty studenckie przed rozpoczęciem studiów.';
+
+  @override
+  String get lifeEventRetiring => 'Przechodzę na emeryturę';
+
+  @override
+  String get lifeEventRetiringBody => 'Oddaj rzeczy służbowe i sprawdź ubezpieczenie, bo świadczenia z pracy zwykle się kończą.';
+
+  @override
+  String get lifeEventChildAdult => 'Moje dziecko kończy 16 lub 18 lat';
+
+  @override
+  String get lifeEventChildAdultBody => 'Wybierz dziecko. W tym wieku często potrzebuje własnego dowodu, paszportu, prawa jazdy lub ubezpieczenia.';
+
+  @override
+  String get lifeEventBereavement => 'Zmarł ktoś z mojej rodziny';
+
+  @override
+  String get lifeEventBereavementBody => 'Wybierz osobę, która zmarła. Jej pozycje być może trzeba anulować, zgłosić roszczenie lub przenieść na kogoś innego. Rób to krok po kroku.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Potwierdzenie adresu';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Zaświadczenie o niekaralności';
+
+  @override
+  String get lifeNeedVaccination => 'Świadectwo szczepienia';
+
+  @override
+  String get lifeNeedStudentCard => 'Legitymacja studencka';
+
+  @override
+  String get lifePlanStartTitle => 'Rozpocznij plan';
+
+  @override
+  String get lifePlanStartNew => 'Co się dzieje?';
+
+  @override
+  String get lifePlanInProgress => 'W toku';
+
+  @override
+  String get lifePlanFinishedSection => 'Zakończone';
+
+  @override
+  String get lifePlanWhen => 'Kiedy to nastąpi?';
+
+  @override
+  String get lifePlanPickDate => 'Wybierz datę';
+
+  @override
+  String get lifePlanNoDate => 'Jeszcze bez daty';
+
+  @override
+  String get lifePlanWho => 'Dla kogo?';
+
+  @override
+  String get lifePlanAddPerson => 'Najpierw dodaj tę osobę w sekcji Rodzina, aby Vaultara znalazła jej pozycje.';
+
+  @override
+  String get lifePlanDestination => 'Do jakiego kraju się przeprowadzasz?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Kraj (opcjonalnie)';
+
+  @override
+  String get lifePlanBefore => 'Przed';
+
+  @override
+  String get lifePlanAfter => 'Po';
+
+  @override
+  String get lifePlanToDo => 'Do zrobienia';
+
+  @override
+  String get lifePlanDoneSection => 'Zrobione';
+
+  @override
+  String get lifePlanMayNeed => 'Możesz też potrzebować';
+
+  @override
+  String get lifePlanDoUpdate => 'Zaktualizuj dane';
+
+  @override
+  String get lifePlanDoRenew => 'Odnów';
+
+  @override
+  String get lifePlanDoCancel => 'Anuluj lub zwróć';
+
+  @override
+  String get lifePlanDoCheck => 'Sprawdź, czy nadal pasuje';
+
+  @override
+  String get lifePlanMark => 'Oznacz jako';
+
+  @override
+  String get lifePlanStatusUpdated => 'Zaktualizowano';
+
+  @override
+  String get lifePlanStatusRenewed => 'Odnowiono';
+
+  @override
+  String get lifePlanStatusCancelled => 'Anulowano';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Niepotrzebne';
+
+  @override
+  String get lifePlanStatusUndo => 'Jeszcze nie zrobione';
+
+  @override
+  String get lifePlanFlagExpires => 'Wygasa około tej daty. Najpierw ją odnów.';
+
+  @override
+  String get lifePlanFlagPassport => 'Wygasa w ciągu 6 miesięcy od przeprowadzki. Wiele krajów wymaga dłuższej ważności, więc odnów go przed wyjazdem.';
+
+  @override
+  String get lifePlanFlagConvert => 'Po przeprowadzce może być konieczna wymiana na lokalne prawo jazdy. Sprawdź lokalne przepisy.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara zauważyła zmianę tej pozycji, więc jest oznaczona jako zrobiona.';
+
+  @override
+  String get lifePlanAutoAdded => 'Dodano po rozpoczęciu tego planu.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return 'Zrobiono $done z $total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zostało $count dnia',
+      many: 'Zostało $count dni',
+      few: 'Zostały $count dni',
+      one: 'Został $count dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dnia temu',
+      many: '$count dni temu',
+      few: '$count dni temu',
+      one: '$count dzień temu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Wszystko zrobione. Możesz oznaczyć plan jako zakończony.';
+
+  @override
+  String get lifePlanFinish => 'Oznacz jako zakończony';
+
+  @override
+  String get lifePlanReopen => 'Otwórz ponownie';
+
+  @override
+  String get lifePlanDelete => 'Usuń plan';
+
+  @override
+  String get lifePlanDeleteTitle => 'Usunąć ten plan?';
+
+  @override
+  String get lifePlanDeleteBody => 'Usuwany jest tylko plan. Twoje pozycje pozostają bez zmian.';
+
+  @override
+  String get lifePlanLimit => 'Możesz mieć do 10 planów w toku. Najpierw zakończ lub usuń jeden.';
+
+  @override
+  String get lifePlanSaveError => 'Nie udało się zapisać planu. Sprawdź połączenie i spróbuj ponownie.';
+
+  @override
+  String get lifePlanStarted => 'Plan rozpoczęty';
+
+  @override
+  String get lifePlanReminderBody => 'Otwórz plan, aby zobaczyć, co zostało.';
+
+  @override
+  String get lifePlanReminderAfter => 'Coś jeszcze zostało. Otwórz plan, aby to dokończyć.';
+
+  @override
+  String get lifePlanSuggestCar => 'Kupiono lub sprzedano auto? Zobacz, co jeszcze zaktualizować.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Przeprowadzasz się tam na dłużej?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Rozpocznij plan przeprowadzki do innego kraju. Vaultara pokaże, co załatwić przed wyjazdem.';
 }

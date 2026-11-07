@@ -2905,10 +2905,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lifeEventsTitle => 'Izehlakalo zempilo';
 
   @override
-  String get lifeEventsSubtitle => 'Uyathutha, ushintsha igama noma uthenge imoto entsha? Bona ukuthi yini okufanele ibuyekezwe';
+  String get lifeEventsSubtitle => 'Ukuthutha, igama elisha, ingane noma imoto entsha? Thola uhlelo lwalokho okufanele ukubuyekeze';
 
   @override
-  String get lifeEventsIntro => 'Khetha ukuthi yini eyenzeka empilweni yakho. I-Vaultara ibala amarekhodi owagcinile avame ukudinga ukubuyekezwa ngenxa yalokho.';
+  String get lifeEventsIntro => 'Khetha okwenzekayo. I-Vaultara yenza uhlelo ngamarekhodi akho alondoloziwe, ikhombise okufanele ukwenze ngaphambi nangemva kosuku, futhi ikukhumbuze.';
 
   @override
   String get lifeEventMoving => 'Ngiyathutha';
@@ -2952,11 +2952,6 @@ class AppLocalizationsZu extends AppLocalizations {
       one: '$count kumarekhodi akho',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Kubuyekezwe $done kwangu-$total';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Ezindala';
+
+  @override
+  String get lifeEventHomeBuy => 'Ngithenga ikhaya';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Hlela umshwalense wekhaya elisha ngaphambi kokuthuthela kulo, bese ubuyekeza ikheli lakho yonke indawo.';
+
+  @override
+  String get lifeEventHomeSell => 'Ngithengisa ikhaya lami';
+
+  @override
+  String get lifeEventHomeSellBody => 'Gcina umshwalense wakho kuze kuqedwe ukuthengisa, bese ukhansela lokho ongasakudingi.';
+
+  @override
+  String get lifeEventMarriage => 'Ngiyashada';
+
+  @override
+  String get lifeEventMarriageBody => 'Buyekeza lokhu ngemva komshado, ikakhulukazi uma ushintsha igama noma wengeza umlingani wakho kupholisi.';
+
+  @override
+  String get lifeEventDivorce => 'Ngiyahlukanisa';
+
+  @override
+  String get lifeEventDivorceBody => 'Hlola ukuthi ubani ovikelekile futhi ogama lakhe likukho ngakunye, bese uvala noma wehlukanise noma yini ebenabelana ngayo.';
+
+  @override
+  String get lifeEventBaby => 'Sithola ingane';
+
+  @override
+  String get lifeEventBabyBody => 'Engeza ingane kumshwalense wakho futhi uhlole amaphoyisi akho. Engeza ingane kuMndeni ukuze ulandelele amadokhumenti ayo.';
+
+  @override
+  String get lifeEventStudies => 'Ngiqala izifundo';
+
+  @override
+  String get lifeEventStudiesBody => 'Hlola izimvume zakho, umshwalense namadokhumenti omfundi ngaphambi kokuthi izifundo ziqale.';
+
+  @override
+  String get lifeEventRetiring => 'Ngiyathatha umhlalaphansi';
+
+  @override
+  String get lifeEventRetiringBody => 'Buyisela izinto zomsebenzi futhi uhlole umshwalense wakho, ngoba izinzuzo zomsebenzi zivame ukuphela.';
+
+  @override
+  String get lifeEventChildAdult => 'Ingane yami isizoba neminyaka engu-16 noma engu-18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Khetha ingane yakho. Kule minyaka bavame ukudinga umazisi, iphasipoti, ilayisense noma umshwalense wabo.';
+
+  @override
+  String get lifeEventBereavement => 'Othile emndenini wami ushonile';
+
+  @override
+  String get lifeEventBereavementBody => 'Khetha oshonile. Amarekhodi akhe angase adinge ukukhanselwa, ukufunwa noma ukudluliselwa komunye umuntu. Thatha isinyathelo esisodwa ngesikhathi.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Ubufakazi bekheli';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Isitifiketi samaphoyisa';
+
+  @override
+  String get lifeNeedVaccination => 'Isitifiketi sokugoma';
+
+  @override
+  String get lifeNeedStudentCard => 'Ikhadi lomfundi';
+
+  @override
+  String get lifePlanStartTitle => 'Qala uhlelo';
+
+  @override
+  String get lifePlanStartNew => 'Kwenzekani?';
+
+  @override
+  String get lifePlanInProgress => 'Kuyaqhubeka';
+
+  @override
+  String get lifePlanFinishedSection => 'Kuqediwe';
+
+  @override
+  String get lifePlanWhen => 'Kwenzeka nini?';
+
+  @override
+  String get lifePlanPickDate => 'Khetha usuku';
+
+  @override
+  String get lifePlanNoDate => 'Alukabi khona usuku';
+
+  @override
+  String get lifePlanWho => 'Ngekabani?';
+
+  @override
+  String get lifePlanAddPerson => 'Qala ngokubengeza kuMndeni, ukuze i-Vaultara ithole amarekhodi abo.';
+
+  @override
+  String get lifePlanDestination => 'Uthuthela kuliphi izwe?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Izwe (ongakukhetha)';
+
+  @override
+  String get lifePlanBefore => 'Ngaphambi';
+
+  @override
+  String get lifePlanAfter => 'Ngemva';
+
+  @override
+  String get lifePlanToDo => 'Okwenziwayo';
+
+  @override
+  String get lifePlanDoneSection => 'Kwenziwe';
+
+  @override
+  String get lifePlanMayNeed => 'Ungase futhi udinge';
+
+  @override
+  String get lifePlanDoUpdate => 'Buyekeza imininingwane';
+
+  @override
+  String get lifePlanDoRenew => 'Yivuselele';
+
+  @override
+  String get lifePlanDoCancel => 'Yikhansele noma uyibuyisele';
+
+  @override
+  String get lifePlanDoCheck => 'Hlola ukuthi isafaneleka';
+
+  @override
+  String get lifePlanMark => 'Maka njenge';
+
+  @override
+  String get lifePlanStatusUpdated => 'Kubuyekeziwe';
+
+  @override
+  String get lifePlanStatusRenewed => 'Kuvuselelwe';
+
+  @override
+  String get lifePlanStatusCancelled => 'Kukhanseliwe';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Akudingeki';
+
+  @override
+  String get lifePlanStatusUndo => 'Akukenziwa';
+
+  @override
+  String get lifePlanFlagExpires => 'Iphelelwa yisikhathi cishe ngalolu suku. Qala uyivuselele.';
+
+  @override
+  String get lifePlanFlagPassport => 'Iphelelwa yisikhathi kungakapheli izinyanga ezi-6 zokuthutha. Amazwe amaningi afuna isikhathi esengeziwe, ngakho yivuselele ngaphambi kokuthi uhambe.';
+
+  @override
+  String get lifePlanFlagConvert => 'Ungase udinge ukuyishintshela ilayisense yalapho ngemva kokuthutha. Hlola imithetho yalapho.';
+
+  @override
+  String get lifePlanAutoChanged => 'I-Vaultara ibone leli rekhodi lishintsha, ngakho limakwe njengeliqediwe.';
+
+  @override
+  String get lifePlanAutoAdded => 'Kwengezwe ngemva kokuqala lolu hlelo.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done kwezingu-$total kwenziwe';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusele izinsuku ezingu-$count',
+      one: 'Kusele usuku olu-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izinsuku ezingu-$count ezedlule',
+      one: 'Usuku olu-1 olwedlule',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Konke kwenziwe. Ungamaka uhlelo njengoluqediwe.';
+
+  @override
+  String get lifePlanFinish => 'Maka njengoluqediwe';
+
+  @override
+  String get lifePlanReopen => 'Vula futhi';
+
+  @override
+  String get lifePlanDelete => 'Susa uhlelo';
+
+  @override
+  String get lifePlanDeleteTitle => 'Susa lolu hlelo?';
+
+  @override
+  String get lifePlanDeleteBody => 'Kuzosuswa uhlelo kuphela. Amarekhodi akho azohlala enjalo.';
+
+  @override
+  String get lifePlanLimit => 'Ungaba nezinhlelo eziqhubekayo ezifika ku-10. Qala uqede noma ususe olulodwa.';
+
+  @override
+  String get lifePlanSaveError => 'Uhlelo alukwazanga ukulondolozwa. Hlola ukuxhumana kwakho bese uzama futhi.';
+
+  @override
+  String get lifePlanStarted => 'Uhlelo luqalile';
+
+  @override
+  String get lifePlanReminderBody => 'Vula uhlelo ukuze ubone okusele.';
+
+  @override
+  String get lifePlanReminderAfter => 'Kusekhona izinto ezisele. Vula uhlelo ukuze uziqede.';
+
+  @override
+  String get lifePlanSuggestCar => 'Uthenge noma wathengisa imoto? Bona okunye okufanele ukubuyekeze.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Uthuthela lapho isikhashana?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Qala uhlelo lokuthuthela kwelinye izwe. I-Vaultara ikhombisa okufanele ukuhlele ngaphambi kokuthi uhambe.';
 }

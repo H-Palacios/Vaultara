@@ -2905,10 +2905,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifeEventsTitle => 'Abubuwan rayuwa';
 
   @override
-  String get lifeEventsSubtitle => 'Ƙaura, sabon suna ko sabuwar mota? Duba abin da za a sabunta';
+  String get lifeEventsSubtitle => 'Ƙaura, sabon suna, jariri ko sabuwar mota? Sami tsarin abin da za a sabunta';
 
   @override
-  String get lifeEventsIntro => 'Zaɓi abin da ke faruwa a rayuwarka. Vaultara za ta lissafa rikodin da ka adana waɗanda yawanci suna buƙatar sabuntawa saboda hakan.';
+  String get lifeEventsIntro => 'Zaɓi abin da ke faruwa. Vaultara na yin tsari daga bayananka da aka adana, yana nuna abin da za a yi kafin ranar da bayanta, kuma yana tunatar da kai.';
 
   @override
   String get lifeEventMoving => 'Ina ƙaura daga gida';
@@ -2952,11 +2952,6 @@ class AppLocalizationsHa extends AppLocalizations {
       one: 'Rikodinka $count',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'An sabunta $done cikin $total';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Tsofaffi';
+
+  @override
+  String get lifeEventHomeBuy => 'Ina sayen gida';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Shirya inshorar sabon gidan kafin ka shiga, sannan ka sabunta adireshinka a ko\'ina.';
+
+  @override
+  String get lifeEventHomeSell => 'Ina sayar da gidana';
+
+  @override
+  String get lifeEventHomeSellBody => 'Ka ci gaba da inshora har sai sayarwar ta kammala, sannan ka soke abin da ba ka buƙata.';
+
+  @override
+  String get lifeEventMarriage => 'Zan yi aure';
+
+  @override
+  String get lifeEventMarriageBody => 'Ka sabunta waɗannan bayan bikin aure, musamman idan ka canza sunanka ko ka ƙara abokin aurenka a manufar inshora.';
+
+  @override
+  String get lifeEventDivorce => 'Ina rabuwa da aure';
+
+  @override
+  String get lifeEventDivorceBody => 'Ka duba wanda aka rufe kuma aka ambata a kowanne, kuma ka rufe ko ka raba abin da kuka raba.';
+
+  @override
+  String get lifeEventBaby => 'Za mu haifi jariri';
+
+  @override
+  String get lifeEventBabyBody => 'Ka ƙara jaririn a inshorarka kuma ka duba manufofinka. Ka ƙara jaririn a Iyali don bin takardunsa.';
+
+  @override
+  String get lifeEventStudies => 'Zan fara karatu';
+
+  @override
+  String get lifeEventStudiesBody => 'Ka duba izininka, inshorarka da takardun ɗalibi kafin karatunka ya fara.';
+
+  @override
+  String get lifeEventRetiring => 'Zan yi ritaya';
+
+  @override
+  String get lifeEventRetiringBody => 'Ka mayar da kayan aiki kuma ka duba inshorarka, domin fa\'idodin aiki yawanci suna ƙarewa.';
+
+  @override
+  String get lifeEventChildAdult => 'Ɗana zai cika shekara 16 ko 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Zaɓi ɗanka. A wannan shekarun sau da yawa suna buƙatar katin shaida, fasfo, lasisi ko inshora na kansu.';
+
+  @override
+  String get lifeEventBereavement => 'Wani a iyalina ya rasu';
+
+  @override
+  String get lifeEventBereavementBody => 'Zaɓi wanda ya rasu. Bayanansa na iya buƙatar a soke su, a nema, ko a mayar da su ga wani. Ka bi mataki ɗaya bayan ɗaya.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Shaidar adireshi';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Takardar shaidar \'yan sanda';
+
+  @override
+  String get lifeNeedVaccination => 'Takardar shaidar allurar rigakafi';
+
+  @override
+  String get lifeNeedStudentCard => 'Katin ɗalibi';
+
+  @override
+  String get lifePlanStartTitle => 'Fara tsari';
+
+  @override
+  String get lifePlanStartNew => 'Me ke faruwa?';
+
+  @override
+  String get lifePlanInProgress => 'Ana ci gaba';
+
+  @override
+  String get lifePlanFinishedSection => 'An gama';
+
+  @override
+  String get lifePlanWhen => 'Yaushe zai faru?';
+
+  @override
+  String get lifePlanPickDate => 'Zaɓi kwanan wata';
+
+  @override
+  String get lifePlanNoDate => 'Babu kwanan wata tukuna';
+
+  @override
+  String get lifePlanWho => 'Na wane ne?';
+
+  @override
+  String get lifePlanAddPerson => 'Ka fara ƙara su a Iyali, don Vaultara ya sami bayanansu.';
+
+  @override
+  String get lifePlanDestination => 'Wace ƙasa za ka ƙaura?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Ƙasa (zaɓi)';
+
+  @override
+  String get lifePlanBefore => 'Kafin';
+
+  @override
+  String get lifePlanAfter => 'Bayan';
+
+  @override
+  String get lifePlanToDo => 'Abin yi';
+
+  @override
+  String get lifePlanDoneSection => 'An gama';
+
+  @override
+  String get lifePlanMayNeed => 'Kana iya buƙatar';
+
+  @override
+  String get lifePlanDoUpdate => 'Sabunta bayanai';
+
+  @override
+  String get lifePlanDoRenew => 'Sabunta shi';
+
+  @override
+  String get lifePlanDoCancel => 'Soke ko mayar da shi';
+
+  @override
+  String get lifePlanDoCheck => 'Duba ko har yanzu ya dace';
+
+  @override
+  String get lifePlanMark => 'Yi alama a matsayin';
+
+  @override
+  String get lifePlanStatusUpdated => 'An sabunta';
+
+  @override
+  String get lifePlanStatusRenewed => 'An sabunta wa\'adi';
+
+  @override
+  String get lifePlanStatusCancelled => 'An soke';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ba a buƙata';
+
+  @override
+  String get lifePlanStatusUndo => 'Ba a gama ba tukuna';
+
+  @override
+  String get lifePlanFlagExpires => 'Zai ƙare kusa da wannan ranar. Ka fara sabunta shi.';
+
+  @override
+  String get lifePlanFlagPassport => 'Zai ƙare cikin watanni 6 na ƙaurar. Ƙasashe da yawa suna son ƙarin lokaci, don haka ka sabunta shi kafin ka tafi.';
+
+  @override
+  String get lifePlanFlagConvert => 'Kana iya buƙatar musanya shi da lasisin wurin bayan ka ƙaura. Duba dokokin wurin.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara ya ga wannan bayanin ya canza, don haka an yi masa alamar an gama.';
+
+  @override
+  String get lifePlanAutoAdded => 'An ƙara bayan ka fara wannan tsarin.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done cikin $total an gama';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Saura kwanaki $count',
+      one: 'Saura kwana 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kwanaki $count da suka wuce',
+      one: 'Kwana 1 da ya wuce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Komai ya kammala. Kana iya yi wa tsarin alamar an gama.';
+
+  @override
+  String get lifePlanFinish => 'Yi alamar an gama';
+
+  @override
+  String get lifePlanReopen => 'Sake buɗewa';
+
+  @override
+  String get lifePlanDelete => 'Share tsari';
+
+  @override
+  String get lifePlanDeleteTitle => 'A share wannan tsarin?';
+
+  @override
+  String get lifePlanDeleteBody => 'Tsarin kawai za a share. Bayananka za su kasance yadda suke.';
+
+  @override
+  String get lifePlanLimit => 'Kana iya samun tsare-tsare har 10 da ake ci gaba da su. Ka fara gama ko share ɗaya.';
+
+  @override
+  String get lifePlanSaveError => 'Ba a iya ajiye tsarin ba. Duba haɗinka kuma ka sake gwadawa.';
+
+  @override
+  String get lifePlanStarted => 'An fara tsari';
+
+  @override
+  String get lifePlanReminderBody => 'Buɗe tsarin don ganin abin da ya rage.';
+
+  @override
+  String get lifePlanReminderAfter => 'Akwai abubuwan da suka rage. Buɗe tsarin don kammala su.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ka saya ko ka sayar da mota? Duba me kuma za a sabunta.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Za ka ƙaura can na ɗan lokaci?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Fara tsarin ƙaura zuwa wata ƙasa. Vaultara yana nuna abin da za a shirya kafin ka tafi.';
 }

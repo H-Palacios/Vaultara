@@ -2900,10 +2900,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifeEventsTitle => 'Ihe mere n\'ọnụ ndụ';
 
   @override
-  String get lifeEventsSubtitle => 'Ị na-ahapụ ebe obibi, na-agbanwe aha ma ọ bụ zụtara ụgbọala ọhụrụ? Lee ihe ị ga-emelite';
+  String get lifeEventsSubtitle => 'Ịkwaga, aha ọhụrụ, nwa ọhụrụ ma ọ bụ ụgbọala ọhụrụ? Nweta atụmatụ maka ihe ị ga-emelite';
 
   @override
-  String get lifeEventsIntro => 'Họrọ ihe na-eme n\'ndụ gị. Vaultara ga-edepụta ndekọ ị chekwara nke na-achọkarị mmelite n\'ihi ya.';
+  String get lifeEventsIntro => 'Họrọ ihe na-eme. Vaultara na-eme atụmatụ site na ndekọ gị echekwara, na-egosi ihe ị ga-eme tupu ụbọchị ahụ na mgbe ọ gachara, ma na-echetara gị.';
 
   @override
   String get lifeEventMoving => 'Ana m kwaga ebe obibi ọhụrụ';
@@ -2946,11 +2946,6 @@ class AppLocalizationsIg extends AppLocalizations {
       other: '$count n\'ime ndekọ gị',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Emelitela $done n\'ime $total';
   }
 
   @override
@@ -6572,4 +6567,232 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Ochie';
+
+  @override
+  String get lifeEventHomeBuy => 'Ana m azụ ụlọ';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Hazie mkpuchi maka ụlọ ọhụrụ tupu ị kwaba, wee melite adreesị gị ebe niile.';
+
+  @override
+  String get lifeEventHomeSell => 'Ana m ere ụlọ m';
+
+  @override
+  String get lifeEventHomeSellBody => 'Debe mkpuchi gị ruo mgbe ire ahụ zuru oke, wee kagbuo ihe ị na-achọkwaghị.';
+
+  @override
+  String get lifeEventMarriage => 'Ana m alụ di ma ọ bụ nwunye';
+
+  @override
+  String get lifeEventMarriageBody => 'Melite ndị a mgbe agbamakwụkwọ gachara, karịsịa ma ọ bụrụ na ị gbanwere aha gị ma ọ bụ tinye onye òtù gị na amụma.';
+
+  @override
+  String get lifeEventDivorce => 'Anyị na-agba alụkwaghịm';
+
+  @override
+  String get lifeEventDivorceBody => 'Lelee onye a kpuchiri na onye aha ya dị na nke ọ bụla, ma mechie ma ọ bụ kewaa ihe ọ bụla unu nwekọrọ.';
+
+  @override
+  String get lifeEventBaby => 'Anyị na-enwe nwa';
+
+  @override
+  String get lifeEventBabyBody => 'Tinye nwa ahụ na mkpuchi gị ma lelee amụma gị. Tinye nwa ahụ na Ezinụlọ iji soro akwụkwọ ya.';
+
+  @override
+  String get lifeEventStudies => 'Ana m amalite ọmụmụ ihe';
+
+  @override
+  String get lifeEventStudiesBody => 'Lelee ikike gị, mkpuchi gị na akwụkwọ ụmụ akwụkwọ tupu ọmụmụ ihe amalite.';
+
+  @override
+  String get lifeEventRetiring => 'Ana m ala ezumike nka';
+
+  @override
+  String get lifeEventRetiringBody => 'Weghachi ihe ọrụ ma lelee mkpuchi gị, n\'ihi na uru ọrụ na-akwụsịkarị.';
+
+  @override
+  String get lifeEventChildAdult => 'Nwa m na-eru afọ 16 ma ọ bụ 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Họrọ nwa gị. N\'afọ a, ha na-achọkarị ID, paspọtụ, ikike ịnya ụgbọ ma ọ bụ mkpuchi nke ha.';
+
+  @override
+  String get lifeEventBereavement => 'Onye nọ n\'ezinụlọ m nwụrụ';
+
+  @override
+  String get lifeEventBereavementBody => 'Họrọ onye nwụrụ. Ndekọ ya nwere ike ịchọ ka a kagbuo ha, kwụọ ha ụgwọ ma ọ bụ nyefee ha onye ọzọ. Were ya otu nzọụkwụ n\'otu oge.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Ihe akaebe adreesị';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Asambodo nchọpụta ndị uwe ojii';
+
+  @override
+  String get lifeNeedVaccination => 'Asambodo ịgba ọgwụ mgbochi';
+
+  @override
+  String get lifeNeedStudentCard => 'Kaadị ụmụ akwụkwọ';
+
+  @override
+  String get lifePlanStartTitle => 'Malite atụmatụ';
+
+  @override
+  String get lifePlanStartNew => 'Gịnị na-eme?';
+
+  @override
+  String get lifePlanInProgress => 'Na-aga n\'ihu';
+
+  @override
+  String get lifePlanFinishedSection => 'Emechara';
+
+  @override
+  String get lifePlanWhen => 'Olee mgbe ọ ga-eme?';
+
+  @override
+  String get lifePlanPickDate => 'Họrọ ụbọchị';
+
+  @override
+  String get lifePlanNoDate => 'Enweghị ụbọchị ugbu a';
+
+  @override
+  String get lifePlanWho => 'Ọ bụ maka onye?';
+
+  @override
+  String get lifePlanAddPerson => 'Buru ụzọ tinye ha na Ezinụlọ, ka Vaultara wee chọta ndekọ ha.';
+
+  @override
+  String get lifePlanDestination => 'Obodo ole ka ị na-akwaga?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Obodo (nhọrọ)';
+
+  @override
+  String get lifePlanBefore => 'Tupu';
+
+  @override
+  String get lifePlanAfter => 'Mgbe';
+
+  @override
+  String get lifePlanToDo => 'Ihe a ga-eme';
+
+  @override
+  String get lifePlanDoneSection => 'Emechara';
+
+  @override
+  String get lifePlanMayNeed => 'Ị nwekwara ike ịchọ';
+
+  @override
+  String get lifePlanDoUpdate => 'Melite nkọwa';
+
+  @override
+  String get lifePlanDoRenew => 'Megharịa ya';
+
+  @override
+  String get lifePlanDoCancel => 'Kagbuo ma ọ bụ weghachi ya';
+
+  @override
+  String get lifePlanDoCheck => 'Lelee ma ọ ka dabara';
+
+  @override
+  String get lifePlanMark => 'Kaa akara dị ka';
+
+  @override
+  String get lifePlanStatusUpdated => 'Emelitere';
+
+  @override
+  String get lifePlanStatusRenewed => 'Emegharịrị';
+
+  @override
+  String get lifePlanStatusCancelled => 'Akagburu';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Achọghị';
+
+  @override
+  String get lifePlanStatusUndo => 'Emebeghị ya';
+
+  @override
+  String get lifePlanFlagExpires => 'Ọ ga-agwụ gburugburu ụbọchị a. Buru ụzọ megharịa ya.';
+
+  @override
+  String get lifePlanFlagPassport => 'Ọ ga-agwụ n\'ime ọnwa 6 nke ịkwaga. Ọtụtụ obodo chọrọ oge karịa, ya mere megharịa ya tupu ị pụọ.';
+
+  @override
+  String get lifePlanFlagConvert => 'Ị nwere ike ịgbanwe ya maka ikike obodo ahụ mgbe ị kwagara. Lelee iwu obodo ahụ.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara hụrụ na ndekọ a gbanwere, ya mere a kaara ya akara na emechara ya.';
+
+  @override
+  String get lifePlanAutoAdded => 'Etinyere mgbe ị malitere atụmatụ a.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done n\'ime $total emechara';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ụbọchị $count fọdụrụ',
+      one: 'Ụbọchị 1 fọdụrụ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ụbọchị $count gara aga',
+      one: 'Ụbọchị 1 gara aga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Emechala ihe niile. Ị nwere ike ịka atụmatụ ahụ akara na emechara ya.';
+
+  @override
+  String get lifePlanFinish => 'Kaa akara na emechara';
+
+  @override
+  String get lifePlanReopen => 'Meghee ya ọzọ';
+
+  @override
+  String get lifePlanDelete => 'Hichapụ atụmatụ';
+
+  @override
+  String get lifePlanDeleteTitle => 'Hichapụ atụmatụ a?';
+
+  @override
+  String get lifePlanDeleteBody => 'Ọ bụ naanị atụmatụ ka a ga-ehichapụ. Ndekọ gị ga-anọgide otu ha dị.';
+
+  @override
+  String get lifePlanLimit => 'Ị nwere ike inwe ihe ruru atụmatụ 10 na-aga n\'ihu. Buru ụzọ mechaa ma ọ bụ hichapụ otu.';
+
+  @override
+  String get lifePlanSaveError => 'Enweghị ike ichekwa atụmatụ ahụ. Lelee njikọ gị ma nwaa ọzọ.';
+
+  @override
+  String get lifePlanStarted => 'Amalitela atụmatụ';
+
+  @override
+  String get lifePlanReminderBody => 'Meghee atụmatụ ahụ ka ị hụ ihe fọdụrụ.';
+
+  @override
+  String get lifePlanReminderAfter => 'Ihe ụfọdụ ka fọdụrụ. Meghee atụmatụ ahụ iji mechaa ha.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ị zụtara ma ọ bụ rere ụgbọala? Hụ ihe ọzọ ị ga-emelite.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Ị na-akwaga ebe ahụ ruo oge ụfọdụ?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Malite atụmatụ maka ịkwaga obodo ọzọ. Vaultara na-egosi ihe ị ga-ahazi tupu ị pụọ.';
 }

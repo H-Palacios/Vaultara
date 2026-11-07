@@ -2900,10 +2900,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lifeEventsTitle => 'Àwọn ìṣẹ̀lẹ̀ ayé';
 
   @override
-  String get lifeEventsSubtitle => 'Ṣíṣí lọ, orúkọ tuntun tàbí ọkọ̀ tuntun? Wo ohun tó yẹ kí o ṣe àtúnṣe';
+  String get lifeEventsSubtitle => 'Ìṣípò ilé, orúkọ tuntun, ọmọ tàbí ọkọ̀ tuntun? Gba ètò ohun tí o máa ṣe àtúnṣe sí';
 
   @override
-  String get lifeEventsIntro => 'Yan ohun tó ń ṣẹlẹ̀ ní ayé rẹ. Vaultara yóò ṣe àtòjọ àwọn igbasilẹ tí o fi pamọ́ tó sábà máa ń nílò àtúnṣe nítorí rẹ̀.';
+  String get lifeEventsIntro => 'Yan ohun tó ń ṣẹlẹ̀. Vaultara máa ṣe ètò láti inú àwọn àkọsílẹ̀ tí o fi pamọ́, ó máa fi ohun tí o máa ṣe ṣáájú àti lẹ́yìn ọjọ́ náà hàn, ó sì máa rán ọ létí.';
 
   @override
   String get lifeEventMoving => 'Mo ń kó lọ sí ilé tuntun';
@@ -2946,11 +2946,6 @@ class AppLocalizationsYo extends AppLocalizations {
       other: 'Àwọn igbasilẹ rẹ $count',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done nínú $total ni a ti ṣe àtúnṣe';
   }
 
   @override
@@ -6572,4 +6567,232 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Àtijọ́';
+
+  @override
+  String get lifeEventHomeBuy => 'Mo ń ra ilé';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Ṣètò ìbánigbófò fún ilé tuntun ṣáájú kí o tó kó wọlé, lẹ́yìn náà ṣe àtúnṣe àdírẹ́sì rẹ níbi gbogbo.';
+
+  @override
+  String get lifeEventHomeSell => 'Mo ń ta ilé mi';
+
+  @override
+  String get lifeEventHomeSellBody => 'Pa ìbánigbófò rẹ mọ́ títí ìtajà yóò fi parí, lẹ́yìn náà fagi lé ohun tí o kò nílò mọ́.';
+
+  @override
+  String get lifeEventMarriage => 'Mo fẹ́ ṣe ìgbéyàwó';
+
+  @override
+  String get lifeEventMarriageBody => 'Ṣe àtúnṣe sí ìwọ̀nyí lẹ́yìn ìgbéyàwó, pàápàá tí o bá yí orúkọ rẹ padà tàbí fi ẹnìkejì rẹ kún ìbánigbófò.';
+
+  @override
+  String get lifeEventDivorce => 'Mo ń kọ ìyàwó/ọkọ sílẹ̀';
+
+  @override
+  String get lifeEventDivorceBody => 'Ṣàyẹ̀wò ẹni tí a bò àti ẹni tí orúkọ rẹ̀ wà lórí ọ̀kọ̀ọ̀kan, kí o sì pa tàbí pín ohunkóhun tí ẹ jọ ní.';
+
+  @override
+  String get lifeEventBaby => 'A fẹ́ bí ọmọ';
+
+  @override
+  String get lifeEventBabyBody => 'Fi ọmọ náà kún ìbánigbófò rẹ kí o sì ṣàyẹ̀wò àwọn ìbánigbófò rẹ. Fi ọmọ náà kún Ìdílé láti tẹ̀lé àwọn ìwé rẹ̀.';
+
+  @override
+  String get lifeEventStudies => 'Mo ń bẹ̀rẹ̀ ẹ̀kọ́';
+
+  @override
+  String get lifeEventStudiesBody => 'Ṣàyẹ̀wò àwọn ìwé àṣẹ, ìbánigbófò àti ìwé akẹ́kọ̀ọ́ rẹ ṣáájú kí ẹ̀kọ́ tó bẹ̀rẹ̀.';
+
+  @override
+  String get lifeEventRetiring => 'Mo ń fẹ̀yìntì';
+
+  @override
+  String get lifeEventRetiringBody => 'Dá àwọn ohun iṣẹ́ padà kí o sì ṣàyẹ̀wò ìbánigbófò rẹ, nítorí àǹfààní iṣẹ́ máa ń parí.';
+
+  @override
+  String get lifeEventChildAdult => 'Ọmọ mi ń pé ọmọ ọdún 16 tàbí 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Yan ọmọ rẹ. Ní ọjọ́ orí yìí wọ́n sábà máa ń nílò káàdì ìdánimọ̀, ìwé ìrìnnà, ìwé àṣẹ awakọ̀ tàbí ìbánigbófò tiwọn.';
+
+  @override
+  String get lifeEventBereavement => 'Ẹnìkan nínú ìdílé mi ti kú';
+
+  @override
+  String get lifeEventBereavementBody => 'Yan ẹni tó kú. Àwọn àkọsílẹ̀ rẹ̀ lè nílò láti fagi lé, béèrè fún, tàbí gbé lọ sọ́dọ̀ ẹlòmíràn. Ṣe é ní ìgbésẹ̀ kan lẹ́ẹ̀kan.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Ẹ̀rí àdírẹ́sì';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Ìwé ẹ̀rí ọlọ́pàá';
+
+  @override
+  String get lifeNeedVaccination => 'Ìwé ẹ̀rí abẹ́rẹ́ àjẹsára';
+
+  @override
+  String get lifeNeedStudentCard => 'Káàdì akẹ́kọ̀ọ́';
+
+  @override
+  String get lifePlanStartTitle => 'Bẹ̀rẹ̀ ètò';
+
+  @override
+  String get lifePlanStartNew => 'Kí ló ń ṣẹlẹ̀?';
+
+  @override
+  String get lifePlanInProgress => 'Ó ń lọ lọ́wọ́';
+
+  @override
+  String get lifePlanFinishedSection => 'Ti parí';
+
+  @override
+  String get lifePlanWhen => 'Ìgbà wo ló máa ṣẹlẹ̀?';
+
+  @override
+  String get lifePlanPickDate => 'Yan ọjọ́';
+
+  @override
+  String get lifePlanNoDate => 'Kò sí ọjọ́ síbẹ̀';
+
+  @override
+  String get lifePlanWho => 'Fún ta ni?';
+
+  @override
+  String get lifePlanAddPerson => 'Kọ́kọ́ fi wọ́n kún Ìdílé, kí Vaultara lè rí àwọn àkọsílẹ̀ wọn.';
+
+  @override
+  String get lifePlanDestination => 'Orílẹ̀-èdè wo lò ń kó lọ?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Orílẹ̀-èdè (àṣàyàn)';
+
+  @override
+  String get lifePlanBefore => 'Ṣáájú';
+
+  @override
+  String get lifePlanAfter => 'Lẹ́yìn';
+
+  @override
+  String get lifePlanToDo => 'Láti ṣe';
+
+  @override
+  String get lifePlanDoneSection => 'Ti ṣe';
+
+  @override
+  String get lifePlanMayNeed => 'O tún lè nílò';
+
+  @override
+  String get lifePlanDoUpdate => 'Ṣe àtúnṣe àlàyé';
+
+  @override
+  String get lifePlanDoRenew => 'Sọ ọ́ dọ̀tun';
+
+  @override
+  String get lifePlanDoCancel => 'Fagi lé tàbí dá a padà';
+
+  @override
+  String get lifePlanDoCheck => 'Ṣàyẹ̀wò bóyá ó ṣì bá a mu';
+
+  @override
+  String get lifePlanMark => 'Sàmì sí bí';
+
+  @override
+  String get lifePlanStatusUpdated => 'Ti ṣàtúnṣe';
+
+  @override
+  String get lifePlanStatusRenewed => 'Ti sọ dọ̀tun';
+
+  @override
+  String get lifePlanStatusCancelled => 'Ti fagi lé';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Kò pọn dandan';
+
+  @override
+  String get lifePlanStatusUndo => 'Kò tíì ṣe';
+
+  @override
+  String get lifePlanFlagExpires => 'Ó máa parí ní àyíká ọjọ́ yìí. Kọ́kọ́ sọ ọ́ dọ̀tun.';
+
+  @override
+  String get lifePlanFlagPassport => 'Ó máa parí láàárín oṣù 6 lẹ́yìn ìṣípò. Ọ̀pọ̀ orílẹ̀-èdè fẹ́ àkókò tó pọ̀ jù, nítorí náà sọ ọ́ dọ̀tun ṣáájú kí o tó lọ.';
+
+  @override
+  String get lifePlanFlagConvert => 'O lè nílò láti pààrọ̀ rẹ̀ sí ìwé àṣẹ ti ibẹ̀ lẹ́yìn ìṣípò. Ṣàyẹ̀wò òfin ibẹ̀.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara rí i pé àkọsílẹ̀ yìí yí padà, nítorí náà a ti sàmì sí i pé ó ti ṣe.';
+
+  @override
+  String get lifePlanAutoAdded => 'A fi kún un lẹ́yìn tí o bẹ̀rẹ̀ ètò yìí.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done nínú $total ti ṣe';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ọjọ́ $count ló kù',
+      one: 'Ọjọ́ 1 ló kù',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ọjọ́ $count sẹ́yìn',
+      one: 'Ọjọ́ 1 sẹ́yìn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Gbogbo rẹ̀ ti parí. O lè sàmì sí ètò náà pé ó ti parí.';
+
+  @override
+  String get lifePlanFinish => 'Sàmì sí pé ó ti parí';
+
+  @override
+  String get lifePlanReopen => 'Ṣí i lẹ́ẹ̀kan sí i';
+
+  @override
+  String get lifePlanDelete => 'Pa ètò rẹ́';
+
+  @override
+  String get lifePlanDeleteTitle => 'Pa ètò yìí rẹ́?';
+
+  @override
+  String get lifePlanDeleteBody => 'Ètò nìkan ni a máa pa rẹ́. Àwọn àkọsílẹ̀ rẹ máa wà bí wọ́n ṣe wà.';
+
+  @override
+  String get lifePlanLimit => 'O lè ní ètò tó tó 10 tó ń lọ lọ́wọ́. Kọ́kọ́ parí tàbí pa ọ̀kan rẹ́.';
+
+  @override
+  String get lifePlanSaveError => 'A kò lè fi ètò náà pamọ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.';
+
+  @override
+  String get lifePlanStarted => 'Ètò ti bẹ̀rẹ̀';
+
+  @override
+  String get lifePlanReminderBody => 'Ṣí ètò náà láti rí ohun tó kù.';
+
+  @override
+  String get lifePlanReminderAfter => 'Àwọn nǹkan kan ṣì kù. Ṣí ètò náà láti parí wọn.';
+
+  @override
+  String get lifePlanSuggestCar => 'O ra tàbí ta ọkọ̀? Wo ohun mìíràn tí o máa ṣe àtúnṣe sí.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Ṣé o ń kó lọ síbẹ̀ fún ìgbà díẹ̀?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Bẹ̀rẹ̀ ètò fún ìṣípò sí orílẹ̀-èdè mìíràn. Vaultara máa fi ohun tí o máa yanjú ṣáájú kí o tó lọ hàn.';
 }

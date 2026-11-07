@@ -2954,10 +2954,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lifeEventsTitle => 'Životní události';
 
   @override
-  String get lifeEventsSubtitle => 'Stěhování, nové jméno nebo nové auto? Podívejte se, co aktualizovat';
+  String get lifeEventsSubtitle => 'Stěhování, nové jméno, miminko nebo nové auto? Získejte plán, co aktualizovat';
 
   @override
-  String get lifeEventsIntro => 'Vyberte, co se právě děje ve vašem životě. Vaultara vypíše uložené záznamy, které je kvůli tomu obvykle potřeba aktualizovat.';
+  String get lifeEventsIntro => 'Vyberte, co se děje. Vaultara z vašich uložených záznamů vytvoří plán, ukáže, co udělat před tím dnem a po něm, a připomene vám to.';
 
   @override
   String get lifeEventMoving => 'Stěhuji se';
@@ -3003,11 +3003,6 @@ class AppLocalizationsCs extends AppLocalizations {
       one: '$count z vašich záznamů',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Aktualizováno $done z $total';
   }
 
   @override
@@ -6755,4 +6750,236 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Starší';
+
+  @override
+  String get lifeEventHomeBuy => 'Kupuji bydlení';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Zajistěte pojištění nového bydlení před nastěhováním a pak všude změňte adresu.';
+
+  @override
+  String get lifeEventHomeSell => 'Prodávám své bydlení';
+
+  @override
+  String get lifeEventHomeSellBody => 'Pojištění si nechte, dokud prodej není dokončen, a pak zrušte, co už nepotřebujete.';
+
+  @override
+  String get lifeEventMarriage => 'Beru se';
+
+  @override
+  String get lifeEventMarriageBody => 'Aktualizujte je po svatbě, zvlášť pokud měníte jméno nebo přidáváte partnera do pojistky.';
+
+  @override
+  String get lifeEventDivorce => 'Rozvádím se';
+
+  @override
+  String get lifeEventDivorceBody => 'U každého zkontrolujte, kdo je pojištěn a uveden, a zrušte nebo rozdělte, co jste sdíleli.';
+
+  @override
+  String get lifeEventBaby => 'Čekáme miminko';
+
+  @override
+  String get lifeEventBabyBody => 'Přidejte miminko do pojištění a zkontrolujte pojistky. Přidejte miminko v sekci Rodina a sledujte jeho doklady.';
+
+  @override
+  String get lifeEventStudies => 'Začínám studovat';
+
+  @override
+  String get lifeEventStudiesBody => 'Před začátkem studia zkontrolujte povolení, pojištění a studentské doklady.';
+
+  @override
+  String get lifeEventRetiring => 'Odcházím do důchodu';
+
+  @override
+  String get lifeEventRetiringBody => 'Vraťte pracovní věci a zkontrolujte pojištění, protože benefity z práce obvykle končí.';
+
+  @override
+  String get lifeEventChildAdult => 'Mému dítěti bude 16 nebo 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Vyberte dítě. V tomto věku často potřebuje vlastní občanku, pas, řidičák nebo pojištění.';
+
+  @override
+  String get lifeEventBereavement => 'Zemřel někdo z mé rodiny';
+
+  @override
+  String get lifeEventBereavementBody => 'Vyberte zemřelou osobu. Její záznamy bude možná nutné zrušit, uplatnit nebo převést na někoho jiného. Postupujte krok za krokem.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Doklad o adrese';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Výpis z rejstříku trestů';
+
+  @override
+  String get lifeNeedVaccination => 'Očkovací průkaz';
+
+  @override
+  String get lifeNeedStudentCard => 'Studentský průkaz';
+
+  @override
+  String get lifePlanStartTitle => 'Začít plán';
+
+  @override
+  String get lifePlanStartNew => 'Co se děje?';
+
+  @override
+  String get lifePlanInProgress => 'Probíhá';
+
+  @override
+  String get lifePlanFinishedSection => 'Dokončené';
+
+  @override
+  String get lifePlanWhen => 'Kdy se to stane?';
+
+  @override
+  String get lifePlanPickDate => 'Vybrat datum';
+
+  @override
+  String get lifePlanNoDate => 'Zatím bez data';
+
+  @override
+  String get lifePlanWho => 'Pro koho to je?';
+
+  @override
+  String get lifePlanAddPerson => 'Nejdřív osobu přidejte v sekci Rodina, aby Vaultara našla její záznamy.';
+
+  @override
+  String get lifePlanDestination => 'Do které země se stěhujete?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Země (nepovinné)';
+
+  @override
+  String get lifePlanBefore => 'Před';
+
+  @override
+  String get lifePlanAfter => 'Po';
+
+  @override
+  String get lifePlanToDo => 'Udělat';
+
+  @override
+  String get lifePlanDoneSection => 'Hotovo';
+
+  @override
+  String get lifePlanMayNeed => 'Možná budete potřebovat i';
+
+  @override
+  String get lifePlanDoUpdate => 'Aktualizovat údaje';
+
+  @override
+  String get lifePlanDoRenew => 'Obnovit';
+
+  @override
+  String get lifePlanDoCancel => 'Zrušit nebo vrátit';
+
+  @override
+  String get lifePlanDoCheck => 'Ověřit, že stále vyhovuje';
+
+  @override
+  String get lifePlanMark => 'Označit jako';
+
+  @override
+  String get lifePlanStatusUpdated => 'Aktualizováno';
+
+  @override
+  String get lifePlanStatusRenewed => 'Obnoveno';
+
+  @override
+  String get lifePlanStatusCancelled => 'Zrušeno';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Není potřeba';
+
+  @override
+  String get lifePlanStatusUndo => 'Zatím neuděláno';
+
+  @override
+  String get lifePlanFlagExpires => 'Vyprší kolem tohoto data. Nejdřív ho obnovte.';
+
+  @override
+  String get lifePlanFlagPassport => 'Vyprší do 6 měsíců po stěhování. Mnoho zemí chce delší platnost, proto ho obnovte před odjezdem.';
+
+  @override
+  String get lifePlanFlagConvert => 'Po stěhování ho možná budete muset vyměnit za místní řidičský průkaz. Ověřte místní pravidla.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara zjistila, že se tento záznam změnil, proto je označen jako hotový.';
+
+  @override
+  String get lifePlanAutoAdded => 'Přidáno po zahájení tohoto plánu.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return 'Hotovo $done z $total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zbývá $count dní',
+      many: 'Zbývá $count dne',
+      few: 'Zbývají $count dny',
+      one: 'Zbývá $count den',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Před $count dny',
+      many: 'Před $count dne',
+      few: 'Před $count dny',
+      one: 'Před $count dnem',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Vše je hotovo. Plán můžete označit jako dokončený.';
+
+  @override
+  String get lifePlanFinish => 'Označit jako dokončený';
+
+  @override
+  String get lifePlanReopen => 'Znovu otevřít';
+
+  @override
+  String get lifePlanDelete => 'Smazat plán';
+
+  @override
+  String get lifePlanDeleteTitle => 'Smazat tento plán?';
+
+  @override
+  String get lifePlanDeleteBody => 'Smaže se jen plán. Vaše záznamy zůstanou beze změny.';
+
+  @override
+  String get lifePlanLimit => 'Můžete mít až 10 probíhajících plánů. Nejdřív jeden dokončete nebo smažte.';
+
+  @override
+  String get lifePlanSaveError => 'Plán se nepodařilo uložit. Zkontrolujte připojení a zkuste to znovu.';
+
+  @override
+  String get lifePlanStarted => 'Plán zahájen';
+
+  @override
+  String get lifePlanReminderBody => 'Otevřete plán a podívejte se, co zbývá.';
+
+  @override
+  String get lifePlanReminderAfter => 'Něco ještě zbývá. Otevřete plán a dokončete to.';
+
+  @override
+  String get lifePlanSuggestCar => 'Koupili jste nebo prodali auto? Podívejte se, co dalšího aktualizovat.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Stěhujete se tam na delší dobu?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Začněte plán stěhování do jiné země. Vaultara ukáže, co vyřídit před odjezdem.';
 }

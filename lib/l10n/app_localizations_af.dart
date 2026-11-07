@@ -2905,10 +2905,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lifeEventsTitle => 'Lewensgebeure';
 
   @override
-  String get lifeEventsSubtitle => 'Trek jy, kry jy \'n nuwe naam of \'n nuwe kar? Sien wat om op te dateer';
+  String get lifeEventsSubtitle => 'Trek, \'n nuwe naam, \'n baba of \'n nuwe motor? Kry \'n plan vir wat om op te dateer';
 
   @override
-  String get lifeEventsIntro => 'Kies wat in jou lewe aan die gang is. Vaultara lys die rekords wat jy gestoor het wat gewoonlik daarvoor opgedateer moet word.';
+  String get lifeEventsIntro => 'Kies wat gebeur. Vaultara maak \'n plan uit jou gestoorde rekords, wys wat om voor en na die dag te doen, en herinner jou.';
 
   @override
   String get lifeEventMoving => 'Ek trek';
@@ -2952,11 +2952,6 @@ class AppLocalizationsAf extends AppLocalizations {
       one: '$count van jou rekords',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done van $total opgedateer';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Ouer';
+
+  @override
+  String get lifeEventHomeBuy => 'Ek koop \'n huis';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Reël dekking vir die nuwe huis voordat jy intrek, en dateer dan jou adres oral op.';
+
+  @override
+  String get lifeEventHomeSell => 'Ek verkoop my huis';
+
+  @override
+  String get lifeEventHomeSellBody => 'Hou jou dekking tot die verkoping finaal is, en kanselleer dan wat jy nie meer nodig het nie.';
+
+  @override
+  String get lifeEventMarriage => 'Ek trou';
+
+  @override
+  String get lifeEventMarriageBody => 'Dateer hierdie na die troue op, veral as jy jou naam verander of jou maat by \'n polis voeg.';
+
+  @override
+  String get lifeEventDivorce => 'Ek skei';
+
+  @override
+  String get lifeEventDivorceBody => 'Kyk wie gedek en genoem word op elkeen hiervan, en sluit of verdeel enigiets wat julle gedeel het.';
+
+  @override
+  String get lifeEventBaby => 'Ons kry \'n baba';
+
+  @override
+  String get lifeEventBabyBody => 'Voeg die baba by jou dekking en kyk na jou polisse. Voeg die baba by Familie om hul dokumente te volg.';
+
+  @override
+  String get lifeEventStudies => 'Ek begin studeer';
+
+  @override
+  String get lifeEventStudiesBody => 'Kyk na jou permitte, dekking en studentedokumente voordat jou studies begin.';
+
+  @override
+  String get lifeEventRetiring => 'Ek tree af';
+
+  @override
+  String get lifeEventRetiringBody => 'Gee werksitems terug en kyk na jou dekking, want werksvoordele eindig gewoonlik.';
+
+  @override
+  String get lifeEventChildAdult => 'My kind word 16 of 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Kies jou kind. Op hierdie ouderdom het hulle dikwels hul eie ID, paspoort, lisensie of dekking nodig.';
+
+  @override
+  String get lifeEventBereavement => 'Iemand in my familie is oorlede';
+
+  @override
+  String get lifeEventBereavementBody => 'Kies die persoon wat oorlede is. Hul rekords moet dalk gekanselleer, geëis of na iemand anders oorgedra word. Neem dit een stap op \'n slag.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Bewys van adres';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Polisieklaringsertifikaat';
+
+  @override
+  String get lifeNeedVaccination => 'Inentingsertifikaat';
+
+  @override
+  String get lifeNeedStudentCard => 'Studentekaart';
+
+  @override
+  String get lifePlanStartTitle => 'Begin \'n plan';
+
+  @override
+  String get lifePlanStartNew => 'Wat gebeur?';
+
+  @override
+  String get lifePlanInProgress => 'Aan die gang';
+
+  @override
+  String get lifePlanFinishedSection => 'Klaar';
+
+  @override
+  String get lifePlanWhen => 'Wanneer gebeur dit?';
+
+  @override
+  String get lifePlanPickDate => 'Kies \'n datum';
+
+  @override
+  String get lifePlanNoDate => 'Nog geen datum nie';
+
+  @override
+  String get lifePlanWho => 'Vir wie is dit?';
+
+  @override
+  String get lifePlanAddPerson => 'Voeg hulle eers by Familie, sodat Vaultara hul rekords kan vind.';
+
+  @override
+  String get lifePlanDestination => 'Na watter land trek jy?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Land (opsioneel)';
+
+  @override
+  String get lifePlanBefore => 'Voor';
+
+  @override
+  String get lifePlanAfter => 'Na';
+
+  @override
+  String get lifePlanToDo => 'Om te doen';
+
+  @override
+  String get lifePlanDoneSection => 'Klaar';
+
+  @override
+  String get lifePlanMayNeed => 'Jy het dalk ook nodig';
+
+  @override
+  String get lifePlanDoUpdate => 'Dateer die besonderhede op';
+
+  @override
+  String get lifePlanDoRenew => 'Hernu dit';
+
+  @override
+  String get lifePlanDoCancel => 'Kanselleer of gee dit terug';
+
+  @override
+  String get lifePlanDoCheck => 'Kyk of dit nog pas';
+
+  @override
+  String get lifePlanMark => 'Merk as';
+
+  @override
+  String get lifePlanStatusUpdated => 'Opgedateer';
+
+  @override
+  String get lifePlanStatusRenewed => 'Hernu';
+
+  @override
+  String get lifePlanStatusCancelled => 'Gekanselleer';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Nie nodig nie';
+
+  @override
+  String get lifePlanStatusUndo => 'Nog nie gedoen nie';
+
+  @override
+  String get lifePlanFlagExpires => 'Verval rondom hierdie datum. Hernu dit eers.';
+
+  @override
+  String get lifePlanFlagPassport => 'Verval binne 6 maande na die trek. Baie lande wil meer tyd oor hê, so hernu dit voor jy gaan.';
+
+  @override
+  String get lifePlanFlagConvert => 'Jy moet dit dalk na die trek vir \'n plaaslike lisensie omruil. Kyk na die plaaslike reëls.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara het gesien dat hierdie rekord verander het, so dit is as klaar gemerk.';
+
+  @override
+  String get lifePlanAutoAdded => 'Bygevoeg nadat jy hierdie plan begin het.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done van $total klaar';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nog $count dae',
+      one: 'Nog 1 dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dae gelede',
+      one: '1 dag gelede',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Alles is klaar. Jy kan die plan as klaar merk.';
+
+  @override
+  String get lifePlanFinish => 'Merk as klaar';
+
+  @override
+  String get lifePlanReopen => 'Maak dit weer oop';
+
+  @override
+  String get lifePlanDelete => 'Vee plan uit';
+
+  @override
+  String get lifePlanDeleteTitle => 'Vee hierdie plan uit?';
+
+  @override
+  String get lifePlanDeleteBody => 'Net die plan word uitgevee. Jou rekords bly soos hulle is.';
+
+  @override
+  String get lifePlanLimit => 'Jy kan tot 10 planne aan die gang hê. Voltooi of vee eers een uit.';
+
+  @override
+  String get lifePlanSaveError => 'Die plan kon nie gestoor word nie. Kyk na jou verbinding en probeer weer.';
+
+  @override
+  String get lifePlanStarted => 'Plan begin';
+
+  @override
+  String get lifePlanReminderBody => 'Maak die plan oop om te sien wat oorbly.';
+
+  @override
+  String get lifePlanReminderAfter => 'Party dinge moet nog gedoen word. Maak die plan oop om dit klaar te maak.';
+
+  @override
+  String get lifePlanSuggestCar => 'Het jy \'n motor gekoop of verkoop? Kyk wat nog opgedateer moet word.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Trek jy vir \'n ruk soontoe?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Begin \'n plan om na \'n ander land te trek. Vaultara wys wat om te reël voordat jy gaan.';
 }

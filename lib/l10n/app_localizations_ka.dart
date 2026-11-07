@@ -2905,10 +2905,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifeEventsTitle => 'ცხოვრებისეული მოვლენები';
 
   @override
-  String get lifeEventsSubtitle => 'გადადიხართ, სახელს იცვლით ან მანქანა იყიდეთ? ნახეთ, რა უნდა განახლდეს';
+  String get lifeEventsSubtitle => 'გადასვლა, ახალი სახელი, ბავშვი თუ ახალი მანქანა? მიიღეთ გეგმა, რა უნდა განაახლოთ';
 
   @override
-  String get lifeEventsIntro => 'აირჩიეთ, რა ხდება თქვენს ცხოვრებაში. Vaultara აჩვენებს თქვენს შენახულ ჩანაწერებს, რომლებიც ამის გამო ჩვეულებრივ განახლებას საჭიროებს.';
+  String get lifeEventsIntro => 'აირჩიეთ, რა ხდება. Vaultara თქვენი შენახული ჩანაწერებიდან ადგენს გეგმას, გაჩვენებთ, რა გააკეთოთ ამ დღემდე და მის შემდეგ, და შეგახსენებთ.';
 
   @override
   String get lifeEventMoving => 'სახლს ვიცვლი';
@@ -2952,11 +2952,6 @@ class AppLocalizationsKa extends AppLocalizations {
       one: 'თქვენი $count ჩანაწერი',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$total-დან განახლდა $done';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'უფრო ძველი';
+
+  @override
+  String get lifeEventHomeBuy => 'სახლს ვყიდულობ';
+
+  @override
+  String get lifeEventHomeBuyBody => 'ახალი სახლი დააზღვიეთ შესვლამდე, შემდეგ კი ყველგან განაახლეთ მისამართი.';
+
+  @override
+  String get lifeEventHomeSell => 'ჩემს სახლს ვყიდი';
+
+  @override
+  String get lifeEventHomeSellBody => 'დაზღვევა შეინარჩუნეთ, სანამ გაყიდვა არ დასრულდება, შემდეგ გააუქმეთ ის, რაც აღარ გჭირდებათ.';
+
+  @override
+  String get lifeEventMarriage => 'ვქორწინდები';
+
+  @override
+  String get lifeEventMarriageBody => 'განაახლეთ ეს ქორწილის შემდეგ, განსაკუთრებით თუ გვარს იცვლით ან პარტნიორს ამატებთ პოლისში.';
+
+  @override
+  String get lifeEventDivorce => 'ვშორდები';
+
+  @override
+  String get lifeEventDivorceBody => 'თითოეულში შეამოწმეთ, ვინ არის დაზღვეული და მითითებული, და დახურეთ ან გაიყავით საერთო.';
+
+  @override
+  String get lifeEventBaby => 'ბავშვი გვეყოლება';
+
+  @override
+  String get lifeEventBabyBody => 'დაამატეთ ბავშვი თქვენს დაზღვევაში და შეამოწმეთ პოლისები. დაამატეთ ბავშვი ოჯახში, რომ მისი დოკუმენტები თვალყურს ადევნოთ.';
+
+  @override
+  String get lifeEventStudies => 'სწავლას ვიწყებ';
+
+  @override
+  String get lifeEventStudiesBody => 'სწავლის დაწყებამდე შეამოწმეთ ნებართვები, დაზღვევა და სტუდენტური დოკუმენტები.';
+
+  @override
+  String get lifeEventRetiring => 'პენსიაზე გავდივარ';
+
+  @override
+  String get lifeEventRetiringBody => 'დააბრუნეთ სამსახურის ნივთები და შეამოწმეთ დაზღვევა, რადგან სამსახურის შეღავათები ჩვეულებრივ წყდება.';
+
+  @override
+  String get lifeEventChildAdult => 'ჩემს შვილს 16 ან 18 უსრულდება';
+
+  @override
+  String get lifeEventChildAdultBody => 'აირჩიეთ შვილი. ამ ასაკში ხშირად სჭირდება საკუთარი პირადობა, პასპორტი, მართვის მოწმობა ან დაზღვევა.';
+
+  @override
+  String get lifeEventBereavement => 'ჩემი ოჯახის წევრი გარდაიცვალა';
+
+  @override
+  String get lifeEventBereavementBody => 'აირჩიეთ გარდაცვლილი. მისი ჩანაწერები შეიძლება გასაუქმებელი, მოსათხოვი ან სხვაზე გადასაცემი იყოს. იმოქმედეთ ნაბიჯ-ნაბიჯ.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'მისამართის დამადასტურებელი';
+
+  @override
+  String get lifeNeedPoliceClearance => 'ნასამართლობის ცნობა';
+
+  @override
+  String get lifeNeedVaccination => 'აცრის სერტიფიკატი';
+
+  @override
+  String get lifeNeedStudentCard => 'სტუდენტის ბარათი';
+
+  @override
+  String get lifePlanStartTitle => 'გეგმის დაწყება';
+
+  @override
+  String get lifePlanStartNew => 'რა ხდება?';
+
+  @override
+  String get lifePlanInProgress => 'მიმდინარე';
+
+  @override
+  String get lifePlanFinishedSection => 'დასრულებული';
+
+  @override
+  String get lifePlanWhen => 'როდის ხდება?';
+
+  @override
+  String get lifePlanPickDate => 'თარიღის არჩევა';
+
+  @override
+  String get lifePlanNoDate => 'თარიღი ჯერ არ არის';
+
+  @override
+  String get lifePlanWho => 'ვისთვისაა?';
+
+  @override
+  String get lifePlanAddPerson => 'ჯერ დაამატეთ ისინი ოჯახში, რომ Vaultara-მ მათი ჩანაწერები იპოვოს.';
+
+  @override
+  String get lifePlanDestination => 'რომელ ქვეყანაში გადადიხართ?';
+
+  @override
+  String get lifePlanDestinationOptional => 'ქვეყანა (არასავალდებულო)';
+
+  @override
+  String get lifePlanBefore => 'მანამდე';
+
+  @override
+  String get lifePlanAfter => 'შემდეგ';
+
+  @override
+  String get lifePlanToDo => 'გასაკეთებელი';
+
+  @override
+  String get lifePlanDoneSection => 'შესრულდა';
+
+  @override
+  String get lifePlanMayNeed => 'შეიძლება ესეც დაგჭირდეთ';
+
+  @override
+  String get lifePlanDoUpdate => 'მონაცემების განახლება';
+
+  @override
+  String get lifePlanDoRenew => 'განახლება';
+
+  @override
+  String get lifePlanDoCancel => 'გაუქმება ან დაბრუნება';
+
+  @override
+  String get lifePlanDoCheck => 'შეამოწმეთ, ისევ ერგება თუ არა';
+
+  @override
+  String get lifePlanMark => 'მონიშვნა როგორც';
+
+  @override
+  String get lifePlanStatusUpdated => 'განახლდა';
+
+  @override
+  String get lifePlanStatusRenewed => 'გახანგრძლივდა';
+
+  @override
+  String get lifePlanStatusCancelled => 'გაუქმდა';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'არ არის საჭირო';
+
+  @override
+  String get lifePlanStatusUndo => 'ჯერ არ გაკეთებულა';
+
+  @override
+  String get lifePlanFlagExpires => 'ამ თარიღის ახლოს იწურება. ჯერ განაახლეთ.';
+
+  @override
+  String get lifePlanFlagPassport => 'გადასვლიდან 6 თვეში იწურება. ბევრ ქვეყანას მეტი ვადა სჭირდება, ამიტომ განაახლეთ წასვლამდე.';
+
+  @override
+  String get lifePlanFlagConvert => 'გადასვლის შემდეგ შეიძლება ადგილობრივ მოწმობაზე გაცვლა მოგიწიოთ. შეამოწმეთ ადგილობრივი წესები.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara-მ დაინახა, რომ ეს ჩანაწერი შეიცვალა, ამიტომ შესრულებულად მოინიშნა.';
+
+  @override
+  String get lifePlanAutoAdded => 'დაემატა ამ გეგმის დაწყების შემდეგ.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return 'შესრულდა $done / $total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დარჩა $count დღე',
+      one: 'დარჩა $count დღე',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count დღის წინ',
+      one: '$count დღის წინ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'ყველაფერი შესრულდა. შეგიძლიათ გეგმა დასრულებულად მონიშნოთ.';
+
+  @override
+  String get lifePlanFinish => 'დასრულებულად მონიშვნა';
+
+  @override
+  String get lifePlanReopen => 'ხელახლა გახსნა';
+
+  @override
+  String get lifePlanDelete => 'გეგმის წაშლა';
+
+  @override
+  String get lifePlanDeleteTitle => 'წავშალოთ ეს გეგმა?';
+
+  @override
+  String get lifePlanDeleteBody => 'იშლება მხოლოდ გეგმა. თქვენი ჩანაწერები უცვლელი რჩება.';
+
+  @override
+  String get lifePlanLimit => 'ერთდროულად შეიძლება 10-მდე გეგმა გქონდეთ. ჯერ ერთი დაასრულეთ ან წაშალეთ.';
+
+  @override
+  String get lifePlanSaveError => 'გეგმის შენახვა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+
+  @override
+  String get lifePlanStarted => 'გეგმა დაიწყო';
+
+  @override
+  String get lifePlanReminderBody => 'გახსენით გეგმა, რომ ნახოთ, რა დარჩა.';
+
+  @override
+  String get lifePlanReminderAfter => 'ჯერ კიდევ რაღაც დარჩა. გახსენით გეგმა, რომ დაასრულოთ.';
+
+  @override
+  String get lifePlanSuggestCar => 'იყიდეთ ან გაყიდეთ მანქანა? ნახეთ, კიდევ რა უნდა განაახლოთ.';
+
+  @override
+  String get lifePlanSuggestTrip => 'იქ ცოტა ხნით გადადიხართ?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'დაიწყეთ სხვა ქვეყანაში გადასვლის გეგმა. Vaultara გაჩვენებთ, რა მოაგვაროთ წასვლამდე.';
 }

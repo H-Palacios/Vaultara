@@ -2931,10 +2931,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifeEventsTitle => 'Evenimente din viață';
 
   @override
-  String get lifeEventsSubtitle => 'Mutare, nume nou sau mașină nouă? Vezi ce trebuie actualizat';
+  String get lifeEventsSubtitle => 'Mutare, nume nou, un bebeluș sau o mașină nouă? Primește un plan cu ce trebuie actualizat';
 
   @override
-  String get lifeEventsIntro => 'Alege ce se întâmplă în viața ta. Vaultara listează înregistrările salvate care de obicei trebuie actualizate din acest motiv.';
+  String get lifeEventsIntro => 'Alege ce se întâmplă. Vaultara face un plan din înregistrările tale salvate, arată ce să faci înainte și după ziua respectivă și îți amintește.';
 
   @override
   String get lifeEventMoving => 'Mă mut într-o locuință nouă';
@@ -2979,11 +2979,6 @@ class AppLocalizationsRo extends AppLocalizations {
       one: '$count dintre înregistrările tale',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done din $total actualizate';
   }
 
   @override
@@ -6695,4 +6690,234 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Mai vechi';
+
+  @override
+  String get lifeEventHomeBuy => 'Cumpăr o locuință';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Fă asigurarea noii locuințe înainte să te muți, apoi actualizează-ți adresa peste tot.';
+
+  @override
+  String get lifeEventHomeSell => 'Îmi vând locuința';
+
+  @override
+  String get lifeEventHomeSellBody => 'Păstrează asigurarea până când vânzarea e finală, apoi anulează ce nu-ți mai trebuie.';
+
+  @override
+  String get lifeEventMarriage => 'Mă căsătoresc';
+
+  @override
+  String get lifeEventMarriageBody => 'Actualizează-le după nuntă, mai ales dacă îți schimbi numele sau îți adaugi partenerul într-o poliță.';
+
+  @override
+  String get lifeEventDivorce => 'Divorțez';
+
+  @override
+  String get lifeEventDivorceBody => 'Verifică cine e acoperit și menționat în fiecare și închide sau împarte ce aveați în comun.';
+
+  @override
+  String get lifeEventBaby => 'Vom avea un bebeluș';
+
+  @override
+  String get lifeEventBabyBody => 'Adaugă bebelușul în asigurare și verifică-ți polițele. Adaugă bebelușul în Familie ca să-i urmărești documentele.';
+
+  @override
+  String get lifeEventStudies => 'Încep studiile';
+
+  @override
+  String get lifeEventStudiesBody => 'Verifică permisele, asigurarea și documentele de student înainte de începerea studiilor.';
+
+  @override
+  String get lifeEventRetiring => 'Ies la pensie';
+
+  @override
+  String get lifeEventRetiringBody => 'Returnează lucrurile de la serviciu și verifică-ți asigurarea, pentru că beneficiile de la locul de muncă se termină de obicei.';
+
+  @override
+  String get lifeEventChildAdult => 'Copilul meu împlinește 16 sau 18 ani';
+
+  @override
+  String get lifeEventChildAdultBody => 'Alege copilul. La vârsta asta are adesea nevoie de propriul act de identitate, pașaport, permis sau asigurare.';
+
+  @override
+  String get lifeEventBereavement => 'A murit cineva din familia mea';
+
+  @override
+  String get lifeEventBereavementBody => 'Alege persoana care a murit. Înregistrările ei poate trebuie anulate, revendicate sau trecute pe altcineva. Ia-o pas cu pas.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Dovada adresei';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Cazier judiciar';
+
+  @override
+  String get lifeNeedVaccination => 'Certificat de vaccinare';
+
+  @override
+  String get lifeNeedStudentCard => 'Carnet de student';
+
+  @override
+  String get lifePlanStartTitle => 'Începe un plan';
+
+  @override
+  String get lifePlanStartNew => 'Ce se întâmplă?';
+
+  @override
+  String get lifePlanInProgress => 'În curs';
+
+  @override
+  String get lifePlanFinishedSection => 'Finalizate';
+
+  @override
+  String get lifePlanWhen => 'Când se întâmplă?';
+
+  @override
+  String get lifePlanPickDate => 'Alege o dată';
+
+  @override
+  String get lifePlanNoDate => 'Încă fără dată';
+
+  @override
+  String get lifePlanWho => 'Pentru cine este?';
+
+  @override
+  String get lifePlanAddPerson => 'Adaugă mai întâi persoana în Familie, ca Vaultara să-i găsească înregistrările.';
+
+  @override
+  String get lifePlanDestination => 'În ce țară te muți?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Țara (opțional)';
+
+  @override
+  String get lifePlanBefore => 'Înainte';
+
+  @override
+  String get lifePlanAfter => 'După';
+
+  @override
+  String get lifePlanToDo => 'De făcut';
+
+  @override
+  String get lifePlanDoneSection => 'Gata';
+
+  @override
+  String get lifePlanMayNeed => 'S-ar putea să-ți trebuiască și';
+
+  @override
+  String get lifePlanDoUpdate => 'Actualizează datele';
+
+  @override
+  String get lifePlanDoRenew => 'Reînnoiește';
+
+  @override
+  String get lifePlanDoCancel => 'Anulează sau returnează';
+
+  @override
+  String get lifePlanDoCheck => 'Verifică dacă se mai potrivește';
+
+  @override
+  String get lifePlanMark => 'Marchează ca';
+
+  @override
+  String get lifePlanStatusUpdated => 'Actualizat';
+
+  @override
+  String get lifePlanStatusRenewed => 'Reînnoit';
+
+  @override
+  String get lifePlanStatusCancelled => 'Anulat';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Nu e nevoie';
+
+  @override
+  String get lifePlanStatusUndo => 'Încă nefăcut';
+
+  @override
+  String get lifePlanFlagExpires => 'Expiră în jurul acestei date. Reînnoiește-l mai întâi.';
+
+  @override
+  String get lifePlanFlagPassport => 'Expiră în 6 luni de la mutare. Multe țări cer o valabilitate mai lungă, așa că reînnoiește-l înainte de plecare.';
+
+  @override
+  String get lifePlanFlagConvert => 'S-ar putea să trebuiască să-l schimbi pe un permis local după mutare. Verifică regulile locale.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara a văzut că această înregistrare s-a schimbat, așa că e marcată ca gata.';
+
+  @override
+  String get lifePlanAutoAdded => 'Adăugat după ce ai început acest plan.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done din $total gata';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mai sunt $count de zile',
+      few: 'Mai sunt $count zile',
+      one: 'Mai e $count zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Acum $count de zile',
+      few: 'Acum $count zile',
+      one: 'Acum $count zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Totul e gata. Poți marca planul ca finalizat.';
+
+  @override
+  String get lifePlanFinish => 'Marchează ca finalizat';
+
+  @override
+  String get lifePlanReopen => 'Redeschide';
+
+  @override
+  String get lifePlanDelete => 'Șterge planul';
+
+  @override
+  String get lifePlanDeleteTitle => 'Ștergi acest plan?';
+
+  @override
+  String get lifePlanDeleteBody => 'Se șterge doar planul. Înregistrările tale rămân la fel.';
+
+  @override
+  String get lifePlanLimit => 'Poți avea până la 10 planuri în curs. Finalizează sau șterge unul mai întâi.';
+
+  @override
+  String get lifePlanSaveError => 'Planul nu a putut fi salvat. Verifică conexiunea și încearcă din nou.';
+
+  @override
+  String get lifePlanStarted => 'Plan început';
+
+  @override
+  String get lifePlanReminderBody => 'Deschide planul ca să vezi ce a mai rămas.';
+
+  @override
+  String get lifePlanReminderAfter => 'Mai sunt lucruri de făcut. Deschide planul ca să le termini.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ai cumpărat sau vândut o mașină? Vezi ce mai trebuie actualizat.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Te muți acolo pentru o vreme?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Începe un plan pentru mutarea în altă țară. Vaultara îți arată ce să rezolvi înainte de plecare.';
 }

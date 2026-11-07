@@ -2905,10 +2905,10 @@ class AppLocalizationsNn extends AppLocalizations {
   String get lifeEventsTitle => 'Livshendingar';
 
   @override
-  String get lifeEventsSubtitle => 'Flytting, nytt namn eller ny bil? Sjå kva du må oppdatere';
+  String get lifeEventsSubtitle => 'Flytting, nytt namn, ein baby eller ny bil? Få ein plan for kva du må oppdatere';
 
   @override
-  String get lifeEventsIntro => 'Vel kva som skjer i livet ditt. Vaultara viser oppføringane du har lagra som vanlegvis må oppdaterast på grunn av det.';
+  String get lifeEventsIntro => 'Vel kva som skjer. Vaultara lagar ein plan frå dei lagra oppføringane dine, viser kva du skal gjere før og etter dagen, og minner deg på det.';
 
   @override
   String get lifeEventMoving => 'Eg flyttar';
@@ -2952,11 +2952,6 @@ class AppLocalizationsNn extends AppLocalizations {
       one: '$count av oppføringane dine',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done av $total oppdatert';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Eldre';
+
+  @override
+  String get lifeEventHomeBuy => 'Eg kjøper bustad';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Ordne forsikring for den nye bustaden før du flyttar inn, og oppdater så adressa di overalt.';
+
+  @override
+  String get lifeEventHomeSell => 'Eg sel bustaden min';
+
+  @override
+  String get lifeEventHomeSellBody => 'Behald forsikringa til salet er endeleg, og sei så opp det du ikkje treng lenger.';
+
+  @override
+  String get lifeEventMarriage => 'Eg skal gifte meg';
+
+  @override
+  String get lifeEventMarriageBody => 'Oppdater desse etter bryllaupet, særleg viss du byter namn eller legg til partnaren din på ein polise.';
+
+  @override
+  String get lifeEventDivorce => 'Eg skal skiljast';
+
+  @override
+  String get lifeEventDivorceBody => 'Sjekk kven som er dekt og nemnd på kvar av dei, og avslutt eller del det de hadde saman.';
+
+  @override
+  String get lifeEventBaby => 'Vi skal få barn';
+
+  @override
+  String get lifeEventBabyBody => 'Legg babyen til i dekninga di og sjekk polisane dine. Legg til babyen under Familie for å følgje dokumenta.';
+
+  @override
+  String get lifeEventStudies => 'Eg byrjar å studere';
+
+  @override
+  String get lifeEventStudiesBody => 'Sjekk løyve, dekning og studentdokument før studia byrjar.';
+
+  @override
+  String get lifeEventRetiring => 'Eg blir pensjonist';
+
+  @override
+  String get lifeEventRetiringBody => 'Lever tilbake jobbting og sjekk dekninga di, fordi gode frå jobben vanlegvis sluttar.';
+
+  @override
+  String get lifeEventChildAdult => 'Barnet mitt fyller 16 eller 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Vel barnet ditt. I denne alderen treng dei ofte eigen ID, eige pass, førarkort eller eiga dekning.';
+
+  @override
+  String get lifeEventBereavement => 'Nokon i familien min har døydd';
+
+  @override
+  String get lifeEventBereavementBody => 'Vel personen som døydde. Oppføringane deira må kanskje seiast opp, krevjast utbetalt eller flyttast til nokon andre. Ta eitt steg om gongen.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Adressebevis';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Politiattest';
+
+  @override
+  String get lifeNeedVaccination => 'Vaksinasjonsattest';
+
+  @override
+  String get lifeNeedStudentCard => 'Studentbevis';
+
+  @override
+  String get lifePlanStartTitle => 'Start ein plan';
+
+  @override
+  String get lifePlanStartNew => 'Kva skjer?';
+
+  @override
+  String get lifePlanInProgress => 'Pågår';
+
+  @override
+  String get lifePlanFinishedSection => 'Fullført';
+
+  @override
+  String get lifePlanWhen => 'Når skjer det?';
+
+  @override
+  String get lifePlanPickDate => 'Vel ein dato';
+
+  @override
+  String get lifePlanNoDate => 'Ingen dato enno';
+
+  @override
+  String get lifePlanWho => 'Kven gjeld det?';
+
+  @override
+  String get lifePlanAddPerson => 'Legg dei til under Familie først, så Vaultara finn oppføringane deira.';
+
+  @override
+  String get lifePlanDestination => 'Kva land flyttar du til?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Land (valfritt)';
+
+  @override
+  String get lifePlanBefore => 'Før';
+
+  @override
+  String get lifePlanAfter => 'Etter';
+
+  @override
+  String get lifePlanToDo => 'Å gjere';
+
+  @override
+  String get lifePlanDoneSection => 'Ferdig';
+
+  @override
+  String get lifePlanMayNeed => 'Du treng kanskje òg';
+
+  @override
+  String get lifePlanDoUpdate => 'Oppdater opplysningane';
+
+  @override
+  String get lifePlanDoRenew => 'Forny han';
+
+  @override
+  String get lifePlanDoCancel => 'Sei opp eller lever tilbake';
+
+  @override
+  String get lifePlanDoCheck => 'Sjekk at han framleis passar';
+
+  @override
+  String get lifePlanMark => 'Merk som';
+
+  @override
+  String get lifePlanStatusUpdated => 'Oppdatert';
+
+  @override
+  String get lifePlanStatusRenewed => 'Forna';
+
+  @override
+  String get lifePlanStatusCancelled => 'Sagt opp';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ikkje nødvendig';
+
+  @override
+  String get lifePlanStatusUndo => 'Ikkje gjort enno';
+
+  @override
+  String get lifePlanFlagExpires => 'Går ut rundt denne datoen. Forny han først.';
+
+  @override
+  String get lifePlanFlagPassport => 'Går ut innan 6 månader etter flyttinga. Mange land krev lengre gyldigheit, så forny det før du reiser.';
+
+  @override
+  String get lifePlanFlagConvert => 'Du må kanskje byte det til eit lokalt førarkort etter flyttinga. Sjekk dei lokale reglane.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara såg at denne oppføringa vart endra, så ho er merkt som ferdig.';
+
+  @override
+  String get lifePlanAutoAdded => 'Lagt til etter at du starta denne planen.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done av $total ferdig';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dagar att',
+      one: '1 dag att',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'For $count dagar sidan',
+      one: 'For 1 dag sidan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Alt er ferdig. Du kan merke planen som fullført.';
+
+  @override
+  String get lifePlanFinish => 'Merk som fullført';
+
+  @override
+  String get lifePlanReopen => 'Opne han igjen';
+
+  @override
+  String get lifePlanDelete => 'Slett plan';
+
+  @override
+  String get lifePlanDeleteTitle => 'Slette denne planen?';
+
+  @override
+  String get lifePlanDeleteBody => 'Berre planen blir sletta. Oppføringane dine blir som dei er.';
+
+  @override
+  String get lifePlanLimit => 'Du kan ha opptil 10 planar som pågår. Fullfør eller slett ein først.';
+
+  @override
+  String get lifePlanSaveError => 'Planen kunne ikkje lagrast. Sjekk tilkoplinga og prøv igjen.';
+
+  @override
+  String get lifePlanStarted => 'Plan starta';
+
+  @override
+  String get lifePlanReminderBody => 'Opne planen for å sjå kva som står att.';
+
+  @override
+  String get lifePlanReminderAfter => 'Noko står framleis att. Opne planen for å gjere det ferdig.';
+
+  @override
+  String get lifePlanSuggestCar => 'Kjøpt eller selt bil? Sjå kva anna du må oppdatere.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Flyttar du dit ei stund?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Start ein plan for å flytte til eit anna land. Vaultara viser kva du må ordne før du reiser.';
 }

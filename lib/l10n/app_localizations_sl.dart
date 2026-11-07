@@ -2947,10 +2947,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get lifeEventsTitle => 'Življenjski dogodki';
 
   @override
-  String get lifeEventsSubtitle => 'Selitev, novo ime ali nov avto? Oglejte si, kaj posodobiti';
+  String get lifeEventsSubtitle => 'Selitev, novo ime, dojenček ali nov avto? Dobite načrt, kaj posodobiti';
 
   @override
-  String get lifeEventsIntro => 'Izberite, kaj se dogaja v vašem življenju. Vaultara navede shranjene zapise, ki jih je zaradi tega običajno treba posodobiti.';
+  String get lifeEventsIntro => 'Izberite, kaj se dogaja. Vaultara iz shranjenih zapisov naredi načrt, pokaže, kaj narediti pred tem dnem in po njem, ter vas opomni.';
 
   @override
   String get lifeEventMoving => 'Selim se';
@@ -2996,11 +2996,6 @@ class AppLocalizationsSl extends AppLocalizations {
       one: '$count vaš zapis',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Posodobljeno: $done od $total';
   }
 
   @override
@@ -6757,4 +6752,236 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Starejši';
+
+  @override
+  String get lifeEventHomeBuy => 'Kupujem dom';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Uredite zavarovanje novega doma pred vselitvijo, nato povsod posodobite naslov.';
+
+  @override
+  String get lifeEventHomeSell => 'Prodajam svoj dom';
+
+  @override
+  String get lifeEventHomeSellBody => 'Zavarovanje obdržite, dokler prodaja ni dokončna, nato prekličite, česar ne potrebujete več.';
+
+  @override
+  String get lifeEventMarriage => 'Poročam se';
+
+  @override
+  String get lifeEventMarriageBody => 'Posodobite jih po poroki, zlasti če spremenite priimek ali partnerja dodate v polico.';
+
+  @override
+  String get lifeEventDivorce => 'Ločujem se';
+
+  @override
+  String get lifeEventDivorceBody => 'Pri vsakem preverite, kdo je zavarovan in naveden, ter zaprite ali razdelite, kar sta delila.';
+
+  @override
+  String get lifeEventBaby => 'Dobili bomo dojenčka';
+
+  @override
+  String get lifeEventBabyBody => 'Dojenčka dodajte v zavarovanje in preverite police. Dojenčka dodajte v Družino, da spremljate njegove dokumente.';
+
+  @override
+  String get lifeEventStudies => 'Začenjam študij';
+
+  @override
+  String get lifeEventStudiesBody => 'Pred začetkom študija preverite dovoljenja, zavarovanje in študentske dokumente.';
+
+  @override
+  String get lifeEventRetiring => 'Upokojujem se';
+
+  @override
+  String get lifeEventRetiringBody => 'Vrnite službene stvari in preverite zavarovanje, saj ugodnosti iz službe običajno prenehajo.';
+
+  @override
+  String get lifeEventChildAdult => 'Moj otrok bo star 16 ali 18 let';
+
+  @override
+  String get lifeEventChildAdultBody => 'Izberite otroka. Pri teh letih pogosto potrebuje svojo osebno izkaznico, potni list, vozniško dovoljenje ali zavarovanje.';
+
+  @override
+  String get lifeEventBereavement => 'Nekdo iz moje družine je umrl';
+
+  @override
+  String get lifeEventBereavementBody => 'Izberite osebo, ki je umrla. Njene zapise bo morda treba preklicati, uveljavljati ali prenesti na nekoga drugega. Pojdite korak za korakom.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Potrdilo o naslovu';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Potrdilo o nekaznovanosti';
+
+  @override
+  String get lifeNeedVaccination => 'Potrdilo o cepljenju';
+
+  @override
+  String get lifeNeedStudentCard => 'Študentska izkaznica';
+
+  @override
+  String get lifePlanStartTitle => 'Začni načrt';
+
+  @override
+  String get lifePlanStartNew => 'Kaj se dogaja?';
+
+  @override
+  String get lifePlanInProgress => 'V teku';
+
+  @override
+  String get lifePlanFinishedSection => 'Končani';
+
+  @override
+  String get lifePlanWhen => 'Kdaj se bo zgodilo?';
+
+  @override
+  String get lifePlanPickDate => 'Izberi datum';
+
+  @override
+  String get lifePlanNoDate => 'Še brez datuma';
+
+  @override
+  String get lifePlanWho => 'Za koga je?';
+
+  @override
+  String get lifePlanAddPerson => 'Osebo najprej dodajte v Družino, da Vaultara najde njene zapise.';
+
+  @override
+  String get lifePlanDestination => 'V katero državo se selite?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Država (neobvezno)';
+
+  @override
+  String get lifePlanBefore => 'Prej';
+
+  @override
+  String get lifePlanAfter => 'Potem';
+
+  @override
+  String get lifePlanToDo => 'Za narediti';
+
+  @override
+  String get lifePlanDoneSection => 'Narejeno';
+
+  @override
+  String get lifePlanMayNeed => 'Morda potrebujete tudi';
+
+  @override
+  String get lifePlanDoUpdate => 'Posodobi podatke';
+
+  @override
+  String get lifePlanDoRenew => 'Obnovi';
+
+  @override
+  String get lifePlanDoCancel => 'Prekliči ali vrni';
+
+  @override
+  String get lifePlanDoCheck => 'Preveri, ali še ustreza';
+
+  @override
+  String get lifePlanMark => 'Označi kot';
+
+  @override
+  String get lifePlanStatusUpdated => 'Posodobljeno';
+
+  @override
+  String get lifePlanStatusRenewed => 'Obnovljeno';
+
+  @override
+  String get lifePlanStatusCancelled => 'Preklicano';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Ni potrebno';
+
+  @override
+  String get lifePlanStatusUndo => 'Še ni narejeno';
+
+  @override
+  String get lifePlanFlagExpires => 'Poteče okoli tega datuma. Najprej ga obnovite.';
+
+  @override
+  String get lifePlanFlagPassport => 'Poteče v 6 mesecih po selitvi. Veliko držav zahteva daljšo veljavnost, zato ga obnovite pred odhodom.';
+
+  @override
+  String get lifePlanFlagConvert => 'Po selitvi ga boste morda morali zamenjati za lokalno vozniško dovoljenje. Preverite lokalna pravila.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara je opazila, da se je ta zapis spremenil, zato je označen kot narejen.';
+
+  @override
+  String get lifePlanAutoAdded => 'Dodano po začetku tega načrta.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return 'Narejeno $done od $total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Še $count dni',
+      few: 'Še $count dni',
+      two: 'Še $count dneva',
+      one: 'Še $count dan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pred $count dnevi',
+      few: 'Pred $count dnevi',
+      two: 'Pred $count dnevoma',
+      one: 'Pred $count dnem',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Vse je narejeno. Načrt lahko označite kot končan.';
+
+  @override
+  String get lifePlanFinish => 'Označi kot končan';
+
+  @override
+  String get lifePlanReopen => 'Znova odpri';
+
+  @override
+  String get lifePlanDelete => 'Izbriši načrt';
+
+  @override
+  String get lifePlanDeleteTitle => 'Želite izbrisati ta načrt?';
+
+  @override
+  String get lifePlanDeleteBody => 'Izbriše se samo načrt. Vaši zapisi ostanejo, kot so.';
+
+  @override
+  String get lifePlanLimit => 'Imate lahko največ 10 načrtov v teku. Najprej enega končajte ali izbrišite.';
+
+  @override
+  String get lifePlanSaveError => 'Načrta ni bilo mogoče shraniti. Preverite povezavo in poskusite znova.';
+
+  @override
+  String get lifePlanStarted => 'Načrt začet';
+
+  @override
+  String get lifePlanReminderBody => 'Odprite načrt, da vidite, kaj je še ostalo.';
+
+  @override
+  String get lifePlanReminderAfter => 'Nekaj je še ostalo. Odprite načrt in to dokončajte.';
+
+  @override
+  String get lifePlanSuggestCar => 'Ste kupili ali prodali avto? Poglejte, kaj še posodobiti.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Se tja selite za dalj časa?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Začnite načrt za selitev v drugo državo. Vaultara pokaže, kaj urediti pred odhodom.';
 }

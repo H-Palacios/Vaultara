@@ -2922,10 +2922,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifeEventsTitle => 'Dzīves notikumi';
 
   @override
-  String get lifeEventsSubtitle => 'Pārcelšanās, jauns vārds vai jauna automašīna? Skatiet, kas jāatjaunina';
+  String get lifeEventsSubtitle => 'Pārvākšanās, jauns vārds, mazulis vai jauns auto? Saņemiet plānu, ko atjaunināt';
 
   @override
-  String get lifeEventsIntro => 'Izvēlieties, kas notiek jūsu dzīvē. Vaultara parāda jūsu saglabātos ierakstus, kas parasti jāatjaunina šī iemesla dēļ.';
+  String get lifeEventsIntro => 'Izvēlieties, kas notiek. Vaultara no jūsu saglabātajiem ierakstiem izveido plānu, parāda, kas jādara pirms un pēc dienas, un atgādina.';
 
   @override
   String get lifeEventMoving => 'Es mainu dzīvesvietu';
@@ -2970,11 +2970,6 @@ class AppLocalizationsLv extends AppLocalizations {
       zero: '$count jūsu ierakstu',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return 'Atjaunināti $done no $total';
   }
 
   @override
@@ -6686,4 +6681,234 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Vecākas';
+
+  @override
+  String get lifeEventHomeBuy => 'Pērku mājokli';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Apdrošiniet jauno mājokli pirms ievākšanās un pēc tam visur atjauniniet adresi.';
+
+  @override
+  String get lifeEventHomeSell => 'Pārdodu savu mājokli';
+
+  @override
+  String get lifeEventHomeSellBody => 'Paturiet apdrošināšanu, līdz pārdošana ir pabeigta, un tad atceliet to, kas vairs nav vajadzīgs.';
+
+  @override
+  String get lifeEventMarriage => 'Precos';
+
+  @override
+  String get lifeEventMarriageBody => 'Atjauniniet tos pēc kāzām, īpaši, ja maināt uzvārdu vai pievienojat partneri polisei.';
+
+  @override
+  String get lifeEventDivorce => 'Šķiros';
+
+  @override
+  String get lifeEventDivorceBody => 'Katram pārbaudiet, kas ir apdrošināts un norādīts, un slēdziet vai sadaliet kopīgo.';
+
+  @override
+  String get lifeEventBaby => 'Gaidām mazuli';
+
+  @override
+  String get lifeEventBabyBody => 'Pievienojiet mazuli apdrošināšanai un pārbaudiet polises. Pievienojiet mazuli sadaļā Ģimene, lai sekotu viņa dokumentiem.';
+
+  @override
+  String get lifeEventStudies => 'Sāku studijas';
+
+  @override
+  String get lifeEventStudiesBody => 'Pirms studiju sākuma pārbaudiet atļaujas, apdrošināšanu un studenta dokumentus.';
+
+  @override
+  String get lifeEventRetiring => 'Dodos pensijā';
+
+  @override
+  String get lifeEventRetiringBody => 'Atdodiet darba lietas un pārbaudiet apdrošināšanu, jo darba labumi parasti beidzas.';
+
+  @override
+  String get lifeEventChildAdult => 'Manam bērnam paliek 16 vai 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Izvēlieties bērnu. Šajā vecumā bieži vajag savu ID karti, pasi, vadītāja apliecību vai apdrošināšanu.';
+
+  @override
+  String get lifeEventBereavement => 'Nomira kāds no manas ģimenes';
+
+  @override
+  String get lifeEventBereavementBody => 'Izvēlieties mirušo. Viņa ierakstus, iespējams, vajadzēs atcelt, pieteikt atlīdzību vai nodot citam. Ejiet soli pa solim.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Adreses apliecinājums';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Izziņa par sodāmību';
+
+  @override
+  String get lifeNeedVaccination => 'Vakcinācijas apliecība';
+
+  @override
+  String get lifeNeedStudentCard => 'Studenta apliecība';
+
+  @override
+  String get lifePlanStartTitle => 'Sākt plānu';
+
+  @override
+  String get lifePlanStartNew => 'Kas notiek?';
+
+  @override
+  String get lifePlanInProgress => 'Procesā';
+
+  @override
+  String get lifePlanFinishedSection => 'Pabeigti';
+
+  @override
+  String get lifePlanWhen => 'Kad tas notiks?';
+
+  @override
+  String get lifePlanPickDate => 'Izvēlēties datumu';
+
+  @override
+  String get lifePlanNoDate => 'Datuma vēl nav';
+
+  @override
+  String get lifePlanWho => 'Kam tas ir?';
+
+  @override
+  String get lifePlanAddPerson => 'Vispirms pievienojiet personu sadaļā Ģimene, lai Vaultara atrastu tās ierakstus.';
+
+  @override
+  String get lifePlanDestination => 'Uz kuru valsti pārceļaties?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Valsts (nav obligāti)';
+
+  @override
+  String get lifePlanBefore => 'Pirms';
+
+  @override
+  String get lifePlanAfter => 'Pēc';
+
+  @override
+  String get lifePlanToDo => 'Jāizdara';
+
+  @override
+  String get lifePlanDoneSection => 'Izdarīts';
+
+  @override
+  String get lifePlanMayNeed => 'Jums var būt vajadzīgs arī';
+
+  @override
+  String get lifePlanDoUpdate => 'Atjaunināt datus';
+
+  @override
+  String get lifePlanDoRenew => 'Atjaunot';
+
+  @override
+  String get lifePlanDoCancel => 'Atcelt vai atdot';
+
+  @override
+  String get lifePlanDoCheck => 'Pārbaudīt, vai joprojām der';
+
+  @override
+  String get lifePlanMark => 'Atzīmēt kā';
+
+  @override
+  String get lifePlanStatusUpdated => 'Atjaunināts';
+
+  @override
+  String get lifePlanStatusRenewed => 'Atjaunots';
+
+  @override
+  String get lifePlanStatusCancelled => 'Atcelts';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Nav vajadzīgs';
+
+  @override
+  String get lifePlanStatusUndo => 'Vēl nav izdarīts';
+
+  @override
+  String get lifePlanFlagExpires => 'Beidzas ap šo datumu. Vispirms to atjaunojiet.';
+
+  @override
+  String get lifePlanFlagPassport => 'Beidzas 6 mēnešu laikā pēc pārcelšanās. Daudzas valstis prasa ilgāku derīgumu, tāpēc atjaunojiet pirms došanās prom.';
+
+  @override
+  String get lifePlanFlagConvert => 'Pēc pārcelšanās to var nākties apmainīt pret vietējo vadītāja apliecību. Pārbaudiet vietējos noteikumus.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara pamanīja, ka šis ieraksts mainījās, tāpēc tas atzīmēts kā izdarīts.';
+
+  @override
+  String get lifePlanAutoAdded => 'Pievienots pēc šī plāna sākšanas.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return 'Izdarīti $done no $total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atlikušas $count dienas',
+      one: 'Atlikusi $count diena',
+      zero: 'Atlikušas $count dienas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pirms $count dienām',
+      one: 'Pirms $count dienas',
+      zero: 'Pirms $count dienām',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Viss ir izdarīts. Varat atzīmēt plānu kā pabeigtu.';
+
+  @override
+  String get lifePlanFinish => 'Atzīmēt kā pabeigtu';
+
+  @override
+  String get lifePlanReopen => 'Atvērt vēlreiz';
+
+  @override
+  String get lifePlanDelete => 'Dzēst plānu';
+
+  @override
+  String get lifePlanDeleteTitle => 'Vai dzēst šo plānu?';
+
+  @override
+  String get lifePlanDeleteBody => 'Tiek dzēsts tikai plāns. Jūsu ieraksti paliek nemainīti.';
+
+  @override
+  String get lifePlanLimit => 'Vienlaikus var būt līdz 10 plāniem. Vispirms pabeidziet vai dzēsiet vienu.';
+
+  @override
+  String get lifePlanSaveError => 'Plānu neizdevās saglabāt. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+
+  @override
+  String get lifePlanStarted => 'Plāns sākts';
+
+  @override
+  String get lifePlanReminderBody => 'Atveriet plānu, lai redzētu, kas vēl jāizdara.';
+
+  @override
+  String get lifePlanReminderAfter => 'Vēl kaut kas jāizdara. Atveriet plānu, lai to pabeigtu.';
+
+  @override
+  String get lifePlanSuggestCar => 'Nopirkāt vai pārdevāt auto? Skatiet, ko vēl atjaunināt.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Pārceļaties uz turieni uz kādu laiku?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Sāciet plānu pārcelšanās uz citu valsti. Vaultara parāda, kas jānokārto pirms došanās prom.';
 }

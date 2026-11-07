@@ -2905,10 +2905,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lifeEventsTitle => 'Жашоодогу окуялар';
 
   @override
-  String get lifeEventsSubtitle => 'Көчүп жатасызбы, атыңызды өзгөртүп жатасызбы же жаңы унаа алдыңызбы? Эмнени жаңыртуу керектигин көрүңүз';
+  String get lifeEventsSubtitle => 'Көчүү, жаңы ысым, бөбөк же жаңы унаа? Эмнени жаңыртуу керектиги боюнча план алыңыз';
 
   @override
-  String get lifeEventsIntro => 'Жашооңузда эмне болуп жатканын тандаңыз. Vaultara сакталган жазууларыңыздын ичинен ушул себептен адатта жаңыртуу талап кылынгандарын көрсөтөт.';
+  String get lifeEventsIntro => 'Эмне болуп жатканын тандаңыз. Vaultara сакталган жазууларыңыздан план түзүп, ошол күнгө чейин жана андан кийин эмне кылуу керектигин көрсөтөт жана эскертет.';
 
   @override
   String get lifeEventMoving => 'Үйдү алмаштырып көчүп жатам';
@@ -2952,11 +2952,6 @@ class AppLocalizationsKy extends AppLocalizations {
       one: 'Жазууларыңыздын $count',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$total ичинен $done жаңыртылды';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Эскилери';
+
+  @override
+  String get lifeEventHomeBuy => 'Үй сатып алам';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Көчө электе жаңы үйдү камсыздандырып, андан соң дарегиңизди бардык жерде жаңыртыңыз.';
+
+  @override
+  String get lifeEventHomeSell => 'Үйүмдү сатам';
+
+  @override
+  String get lifeEventHomeSellBody => 'Сатуу бүткүчө камсыздандырууну сактап, андан соң керексизин токтотуңуз.';
+
+  @override
+  String get lifeEventMarriage => 'Үйлөнөм';
+
+  @override
+  String get lifeEventMarriageBody => 'Тойдон кийин буларды жаңыртыңыз, айрыкча фамилияңызды өзгөртсөңүз же жубайыңызды полиске кошсоңуз.';
+
+  @override
+  String get lifeEventDivorce => 'Ажырашам';
+
+  @override
+  String get lifeEventDivorceBody => 'Ар биринде ким камсыздандырылганын жана аталганын текшерип, жалпыны жабыңыз же бөлүңүз.';
+
+  @override
+  String get lifeEventBaby => 'Бөбөгүбүз болот';
+
+  @override
+  String get lifeEventBabyBody => 'Бөбөктү камсыздандырууңузга кошуп, полистериңизди текшериңиз. Документтерин көзөмөлдөө үчүн бөбөктү Үй-бүлө бөлүмүнө кошуңуз.';
+
+  @override
+  String get lifeEventStudies => 'Окууну баштайм';
+
+  @override
+  String get lifeEventStudiesBody => 'Окуу башталганга чейин уруксаттарды, камсыздандырууну жана студенттик документтерди текшериңиз.';
+
+  @override
+  String get lifeEventRetiring => 'Пенсияга чыгам';
+
+  @override
+  String get lifeEventRetiringBody => 'Жумуш буюмдарын кайтарып, камсыздандырууңузду текшериңиз, анткени жумуштан берилген жеңилдиктер адатта токтойт.';
+
+  @override
+  String get lifeEventChildAdult => 'Балам 16 же 18ге чыгат';
+
+  @override
+  String get lifeEventChildAdultBody => 'Балаңызды тандаңыз. Бул куракта ага көбүнчө өз ID картасы, паспорту, айдоочулук күбөлүгү же камсыздандыруусу керек.';
+
+  @override
+  String get lifeEventBereavement => 'Үй-бүлөмдөн бирөө каза болду';
+
+  @override
+  String get lifeEventBereavementBody => 'Каза болгон адамды тандаңыз. Анын жазууларын токтотуу, талап кылуу же башка бирөөгө өткөрүү керек болушу мүмкүн. Акырындык менен аракет кылыңыз.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Даректи тастыктоо';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Соттуулугу жоктугу тууралуу маалымкат';
+
+  @override
+  String get lifeNeedVaccination => 'Эмдөө сертификаты';
+
+  @override
+  String get lifeNeedStudentCard => 'Студенттик билет';
+
+  @override
+  String get lifePlanStartTitle => 'План баштоо';
+
+  @override
+  String get lifePlanStartNew => 'Эмне болуп жатат?';
+
+  @override
+  String get lifePlanInProgress => 'Аткарылууда';
+
+  @override
+  String get lifePlanFinishedSection => 'Бүткөн';
+
+  @override
+  String get lifePlanWhen => 'Качан болот?';
+
+  @override
+  String get lifePlanPickDate => 'Күндү тандоо';
+
+  @override
+  String get lifePlanNoDate => 'Азырынча күн жок';
+
+  @override
+  String get lifePlanWho => 'Ким үчүн?';
+
+  @override
+  String get lifePlanAddPerson => 'Vaultara жазууларын табышы үчүн адегенде аны Үй-бүлө бөлүмүнө кошуңуз.';
+
+  @override
+  String get lifePlanDestination => 'Кайсы өлкөгө көчөсүз?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Өлкө (милдеттүү эмес)';
+
+  @override
+  String get lifePlanBefore => 'Чейин';
+
+  @override
+  String get lifePlanAfter => 'Кийин';
+
+  @override
+  String get lifePlanToDo => 'Аткаруу керек';
+
+  @override
+  String get lifePlanDoneSection => 'Аткарылды';
+
+  @override
+  String get lifePlanMayNeed => 'Сизге бул да керек болушу мүмкүн';
+
+  @override
+  String get lifePlanDoUpdate => 'Маалыматты жаңыртуу';
+
+  @override
+  String get lifePlanDoRenew => 'Узартуу';
+
+  @override
+  String get lifePlanDoCancel => 'Токтотуу же кайтаруу';
+
+  @override
+  String get lifePlanDoCheck => 'Дагы эле туура келерин текшерүү';
+
+  @override
+  String get lifePlanMark => 'Белгилөө';
+
+  @override
+  String get lifePlanStatusUpdated => 'Жаңыртылды';
+
+  @override
+  String get lifePlanStatusRenewed => 'Узартылды';
+
+  @override
+  String get lifePlanStatusCancelled => 'Токтотулду';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Керек эмес';
+
+  @override
+  String get lifePlanStatusUndo => 'Азырынча аткарылган жок';
+
+  @override
+  String get lifePlanFlagExpires => 'Ушул күнгө жакын мөөнөтү бүтөт. Адегенде узартыңыз.';
+
+  @override
+  String get lifePlanFlagPassport => 'Көчкөндөн кийин 6 айдын ичинде мөөнөтү бүтөт. Көп өлкөлөр узагыраак мөөнөт талап кылат, ошондуктан кетерден мурун узартыңыз.';
+
+  @override
+  String get lifePlanFlagConvert => 'Көчкөндөн кийин аны жергиликтүү күбөлүккө алмаштыруу керек болушу мүмкүн. Жергиликтүү эрежелерди текшериңиз.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara бул жазуунун өзгөргөнүн көрдү, ошондуктан ал аткарылды деп белгиленди.';
+
+  @override
+  String get lifePlanAutoAdded => 'Бул планды баштагандан кийин кошулду.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$total ичинен $done аткарылды';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күн калды',
+      one: '$count күн калды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күн мурун',
+      one: '$count күн мурун',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Баары аткарылды. Планды бүттү деп белгилей аласыз.';
+
+  @override
+  String get lifePlanFinish => 'Бүттү деп белгилөө';
+
+  @override
+  String get lifePlanReopen => 'Кайра ачуу';
+
+  @override
+  String get lifePlanDelete => 'Планды өчүрүү';
+
+  @override
+  String get lifePlanDeleteTitle => 'Бул планды өчүрөсүзбү?';
+
+  @override
+  String get lifePlanDeleteBody => 'План гана өчүрүлөт. Жазууларыңыз ошол бойдон калат.';
+
+  @override
+  String get lifePlanLimit => 'Бир убакта 10го чейин план болушу мүмкүн. Адегенде бирин бүтүрүңүз же өчүрүңүз.';
+
+  @override
+  String get lifePlanSaveError => 'План сакталган жок. Байланышты текшерип, кайра аракет кылыңыз.';
+
+  @override
+  String get lifePlanStarted => 'План башталды';
+
+  @override
+  String get lifePlanReminderBody => 'Эмне калганын көрүү үчүн планды ачыңыз.';
+
+  @override
+  String get lifePlanReminderAfter => 'Дагы аткара турган иштер бар. Бүтүрүү үчүн планды ачыңыз.';
+
+  @override
+  String get lifePlanSuggestCar => 'Унаа сатып алдыңызбы же саттыңызбы? Дагы эмнени жаңыртуу керек экенин караңыз.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Ал жакка бир азга көчөсүзбү?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Башка өлкөгө көчүү планын баштаңыз. Vaultara кетерден мурун эмнени жөнгө салуу керектигин көрсөтөт.';
 }

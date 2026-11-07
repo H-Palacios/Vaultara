@@ -2905,10 +2905,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifeEventsTitle => 'ڕووداوەکانی ژیان';
 
   @override
-  String get lifeEventsSubtitle => 'گواستنەوە، ناوی نوێ یان ئۆتۆمبێلی نوێ؟ ببینە چی نوێ بکەیتەوە';
+  String get lifeEventsSubtitle => 'گواستنەوە، ناوی نوێ، منداڵ یان ئۆتۆمبێلی نوێ؟ پلانێک وەربگرە بۆ ئەوەی چی نوێ بکەیتەوە';
 
   @override
-  String get lifeEventsIntro => 'هەڵبژێرە لە ژیانتدا چی ڕوودەدات. Vaultara ئەو تۆمارە هەڵگیراوانەت پیشان دەدات کە بەهۆیەوە زۆرجار پێویستیان بە نوێکردنەوە هەیە.';
+  String get lifeEventsIntro => 'هەڵبژێرە چی ڕوودەدات. Vaultara لە تۆمارە پاشەکەوتکراوەکانت پلانێک دروست دەکات، پیشان دەدات پێش و دوای ڕۆژەکە چی بکەیت، و بیرت دەخاتەوە.';
 
   @override
   String get lifeEventMoving => 'دەگوازمەوە بۆ ماڵێکی نوێ';
@@ -2952,11 +2952,6 @@ class AppLocalizationsCkb extends AppLocalizations {
       one: '$count لە تۆمارەکانت',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done لە $total نوێکرانەوە';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'کۆنتر';
+
+  @override
+  String get lifeEventHomeBuy => 'خانوو دەکڕم';
+
+  @override
+  String get lifeEventHomeBuyBody => 'پێش گواستنەوە خانووە نوێکە بیمە بکە، پاشان ناونیشانەکەت لە هەموو شوێنێک نوێ بکەرەوە.';
+
+  @override
+  String get lifeEventHomeSell => 'خانووەکەم دەفرۆشم';
+
+  @override
+  String get lifeEventHomeSellBody => 'بیمەکە بهێڵەرەوە تا فرۆشتنەکە کۆتایی دێت، پاشان ئەوەی پێویستت نییە هەڵیبوەشێنەرەوە.';
+
+  @override
+  String get lifeEventMarriage => 'هاوسەرگیری دەکەم';
+
+  @override
+  String get lifeEventMarriageBody => 'دوای شاییەکە ئەمانە نوێ بکەرەوە، بەتایبەتی ئەگەر ناوەکەت دەگۆڕیت یان هاوسەرەکەت زیاد دەکەیت بۆ پۆلیسێک.';
+
+  @override
+  String get lifeEventDivorce => 'جیا دەبمەوە';
+
+  @override
+  String get lifeEventDivorceBody => 'لە هەریەکەیان بپشکنە کێ بیمەکراوە و ناوی هاتووە، و ئەوەی هاوبەش بوو دایبخە یان دابەشی بکە.';
+
+  @override
+  String get lifeEventBaby => 'منداڵمان دەبێت';
+
+  @override
+  String get lifeEventBabyBody => 'منداڵەکە زیاد بکە بۆ بیمەکەت و پۆلیسەکانت بپشکنە. منداڵەکە لە خێزان زیاد بکە بۆ بەدواداچوونی بەڵگەنامەکانی.';
+
+  @override
+  String get lifeEventStudies => 'خوێندن دەست پێدەکەم';
+
+  @override
+  String get lifeEventStudiesBody => 'پێش دەستپێکردنی خوێندن مۆڵەت و بیمە و بەڵگەنامەکانی خوێندکار بپشکنە.';
+
+  @override
+  String get lifeEventRetiring => 'خانەنشین دەبم';
+
+  @override
+  String get lifeEventRetiringBody => 'کەلوپەلی کار بگەڕێنەرەوە و بیمەکەت بپشکنە، چونکە سوودەکانی کار زۆرجار کۆتایی دێن.';
+
+  @override
+  String get lifeEventChildAdult => 'منداڵەکەم دەبێتە 16 یان 18 ساڵ';
+
+  @override
+  String get lifeEventChildAdultBody => 'منداڵەکەت هەڵبژێرە. لەم تەمەنەدا زۆرجار ناسنامە، پاسپۆرت، مۆڵەتی شۆفێری یان بیمەی خۆی پێویستە.';
+
+  @override
+  String get lifeEventBereavement => 'کەسێک لە خێزانەکەم کۆچی دوایی کرد';
+
+  @override
+  String get lifeEventBereavementBody => 'ئەو کەسە هەڵبژێرە کە کۆچی کردووە. لەوانەیە تۆمارەکانی پێویستیان بە هەڵوەشاندنەوە، داواکردن یان گواستنەوە بۆ کەسێکی تر هەبێت. هەنگاو بە هەنگاو بڕۆ.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'بەڵگەی ناونیشان';
+
+  @override
+  String get lifeNeedPoliceClearance => 'بڕوانامەی پاکی لە پۆلیس';
+
+  @override
+  String get lifeNeedVaccination => 'بڕوانامەی کوتان';
+
+  @override
+  String get lifeNeedStudentCard => 'کارتی خوێندکار';
+
+  @override
+  String get lifePlanStartTitle => 'دەستپێکردنی پلان';
+
+  @override
+  String get lifePlanStartNew => 'چی ڕوودەدات؟';
+
+  @override
+  String get lifePlanInProgress => 'بەردەوامە';
+
+  @override
+  String get lifePlanFinishedSection => 'تەواوبووەکان';
+
+  @override
+  String get lifePlanWhen => 'کەی ڕوودەدات؟';
+
+  @override
+  String get lifePlanPickDate => 'بەروارێک هەڵبژێرە';
+
+  @override
+  String get lifePlanNoDate => 'هێشتا بەروار نییە';
+
+  @override
+  String get lifePlanWho => 'بۆ کێیە؟';
+
+  @override
+  String get lifePlanAddPerson => 'سەرەتا لە خێزان زیادیان بکە تا Vaultara تۆمارەکانیان بدۆزێتەوە.';
+
+  @override
+  String get lifePlanDestination => 'بۆ کام وڵات دەگوازیتەوە؟';
+
+  @override
+  String get lifePlanDestinationOptional => 'وڵات (ئارەزوومەندانە)';
+
+  @override
+  String get lifePlanBefore => 'پێش';
+
+  @override
+  String get lifePlanAfter => 'دوای';
+
+  @override
+  String get lifePlanToDo => 'بۆ کردن';
+
+  @override
+  String get lifePlanDoneSection => 'کرا';
+
+  @override
+  String get lifePlanMayNeed => 'لەوانەیە ئەمەشت پێویست بێت';
+
+  @override
+  String get lifePlanDoUpdate => 'زانیارییەکان نوێ بکەرەوە';
+
+  @override
+  String get lifePlanDoRenew => 'نوێی بکەرەوە';
+
+  @override
+  String get lifePlanDoCancel => 'هەڵیبوەشێنەرەوە یان بیگەڕێنەرەوە';
+
+  @override
+  String get lifePlanDoCheck => 'بپشکنە هێشتا گونجاوە';
+
+  @override
+  String get lifePlanMark => 'نیشانە بکە وەک';
+
+  @override
+  String get lifePlanStatusUpdated => 'نوێکرایەوە';
+
+  @override
+  String get lifePlanStatusRenewed => 'درێژکرایەوە';
+
+  @override
+  String get lifePlanStatusCancelled => 'هەڵوەشێنرایەوە';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'پێویست نییە';
+
+  @override
+  String get lifePlanStatusUndo => 'هێشتا نەکراوە';
+
+  @override
+  String get lifePlanFlagExpires => 'نزیک ئەم بەروارە بەسەردەچێت. سەرەتا نوێی بکەرەوە.';
+
+  @override
+  String get lifePlanFlagPassport => 'لە ماوەی 6 مانگ دوای گواستنەوە بەسەردەچێت. زۆر وڵات ماوەی زیاتر دەوێت، بۆیە پێش ڕۆیشتن نوێی بکەرەوە.';
+
+  @override
+  String get lifePlanFlagConvert => 'لەوانەیە دوای گواستنەوە بیگۆڕیتەوە بە مۆڵەتی ناوخۆیی. یاساکانی ناوخۆ بپشکنە.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara بینی ئەم تۆمارە گۆڕاوە، بۆیە وەک کراو نیشانە کرا.';
+
+  @override
+  String get lifePlanAutoAdded => 'دوای دەستپێکردنی ئەم پلانە زیادکرا.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done لە $total کرا';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ ماوە',
+      one: '$count ڕۆژ ماوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ لەمەوبەر',
+      one: '$count ڕۆژ لەمەوبەر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'هەموو شتێک کرا. دەتوانیت پلانەکە وەک تەواوبوو نیشانە بکەیت.';
+
+  @override
+  String get lifePlanFinish => 'نیشانە بکە وەک تەواوبوو';
+
+  @override
+  String get lifePlanReopen => 'دووبارە بیکەرەوە';
+
+  @override
+  String get lifePlanDelete => 'سڕینەوەی پلان';
+
+  @override
+  String get lifePlanDeleteTitle => 'ئەم پلانە بسڕیتەوە؟';
+
+  @override
+  String get lifePlanDeleteBody => 'تەنها پلانەکە دەسڕێتەوە. تۆمارەکانت وەک خۆیان دەمێننەوە.';
+
+  @override
+  String get lifePlanLimit => 'دەتوانیت تا 10 پلانی بەردەوامت هەبێت. سەرەتا یەکێک تەواو بکە یان بیسڕەوە.';
+
+  @override
+  String get lifePlanSaveError => 'پلانەکە پاشەکەوت نەکرا. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get lifePlanStarted => 'پلان دەستی پێکرد';
+
+  @override
+  String get lifePlanReminderBody => 'پلانەکە بکەرەوە بۆ بینینی ئەوەی ماوە.';
+
+  @override
+  String get lifePlanReminderAfter => 'هێشتا هەندێک کار ماوە. پلانەکە بکەرەوە بۆ تەواوکردنیان.';
+
+  @override
+  String get lifePlanSuggestCar => 'ئۆتۆمبێلت کڕی یان فرۆشت؟ ببینە چی تر پێویستە نوێ بکرێتەوە.';
+
+  @override
+  String get lifePlanSuggestTrip => 'بۆ ماوەیەک دەگوازیتەوە بۆ ئەوێ؟';
+
+  @override
+  String get lifePlanSuggestTripBody => 'پلانێک بۆ گواستنەوە بۆ وڵاتێکی تر دەست پێبکە. Vaultara پیشان دەدات پێش ڕۆیشتن چی ڕێکبخەیت.';
 }

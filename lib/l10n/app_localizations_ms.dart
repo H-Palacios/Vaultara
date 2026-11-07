@@ -2899,10 +2899,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lifeEventsTitle => 'Peristiwa hidup';
 
   @override
-  String get lifeEventsSubtitle => 'Berpindah, tukar nama atau beli kereta baharu? Lihat apa yang perlu dikemas kini';
+  String get lifeEventsSubtitle => 'Berpindah rumah, nama baharu, bayi atau kereta baharu? Dapatkan pelan apa yang perlu dikemas kini';
 
   @override
-  String get lifeEventsIntro => 'Pilih apa yang sedang berlaku dalam hidup anda. Vaultara menyenaraikan rekod yang anda simpan yang biasanya perlu dikemas kini kerana perkara itu.';
+  String get lifeEventsIntro => 'Pilih apa yang sedang berlaku. Vaultara membuat pelan daripada rekod yang anda simpan, menunjukkan apa yang perlu dibuat sebelum dan selepas hari itu, dan mengingatkan anda.';
 
   @override
   String get lifeEventMoving => 'Saya sedang berpindah rumah';
@@ -2945,11 +2945,6 @@ class AppLocalizationsMs extends AppLocalizations {
       other: '$count rekod anda',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done daripada $total telah dikemas kini';
   }
 
   @override
@@ -6571,4 +6566,230 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Lebih lama';
+
+  @override
+  String get lifeEventHomeBuy => 'Saya membeli rumah';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Uruskan perlindungan untuk rumah baharu sebelum berpindah, kemudian kemas kini alamat anda di semua tempat.';
+
+  @override
+  String get lifeEventHomeSell => 'Saya menjual rumah saya';
+
+  @override
+  String get lifeEventHomeSellBody => 'Kekalkan perlindungan sehingga jualan selesai, kemudian batalkan apa yang tidak diperlukan lagi.';
+
+  @override
+  String get lifeEventMarriage => 'Saya akan berkahwin';
+
+  @override
+  String get lifeEventMarriageBody => 'Kemas kini ini selepas perkahwinan, terutamanya jika anda menukar nama atau menambah pasangan ke dalam polisi.';
+
+  @override
+  String get lifeEventDivorce => 'Saya akan bercerai';
+
+  @override
+  String get lifeEventDivorceBody => 'Semak siapa yang dilindungi dan dinamakan pada setiap satu, dan tutup atau bahagikan apa yang dikongsi.';
+
+  @override
+  String get lifeEventBaby => 'Kami akan mendapat bayi';
+
+  @override
+  String get lifeEventBabyBody => 'Tambah bayi ke dalam perlindungan anda dan semak polisi anda. Tambah bayi dalam Keluarga untuk menjejak dokumennya.';
+
+  @override
+  String get lifeEventStudies => 'Saya mula belajar';
+
+  @override
+  String get lifeEventStudiesBody => 'Semak permit, perlindungan dan dokumen pelajar anda sebelum pengajian bermula.';
+
+  @override
+  String get lifeEventRetiring => 'Saya akan bersara';
+
+  @override
+  String get lifeEventRetiringBody => 'Pulangkan barang kerja dan semak perlindungan anda, kerana faedah kerja biasanya tamat.';
+
+  @override
+  String get lifeEventChildAdult => 'Anak saya akan berumur 16 atau 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Pilih anak anda. Pada umur ini mereka selalunya perlukan kad pengenalan, pasport, lesen atau perlindungan sendiri.';
+
+  @override
+  String get lifeEventBereavement => 'Seseorang dalam keluarga saya meninggal dunia';
+
+  @override
+  String get lifeEventBereavementBody => 'Pilih orang yang meninggal dunia. Rekodnya mungkin perlu dibatalkan, dituntut atau dipindahkan kepada orang lain. Buat satu langkah demi satu langkah.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Bukti alamat';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Sijil pelepasan polis';
+
+  @override
+  String get lifeNeedVaccination => 'Sijil vaksinasi';
+
+  @override
+  String get lifeNeedStudentCard => 'Kad pelajar';
+
+  @override
+  String get lifePlanStartTitle => 'Mulakan pelan';
+
+  @override
+  String get lifePlanStartNew => 'Apa yang berlaku?';
+
+  @override
+  String get lifePlanInProgress => 'Sedang berjalan';
+
+  @override
+  String get lifePlanFinishedSection => 'Selesai';
+
+  @override
+  String get lifePlanWhen => 'Bilakah ia berlaku?';
+
+  @override
+  String get lifePlanPickDate => 'Pilih tarikh';
+
+  @override
+  String get lifePlanNoDate => 'Belum ada tarikh';
+
+  @override
+  String get lifePlanWho => 'Untuk siapa?';
+
+  @override
+  String get lifePlanAddPerson => 'Tambah mereka dalam Keluarga dahulu supaya Vaultara dapat mencari rekod mereka.';
+
+  @override
+  String get lifePlanDestination => 'Anda berpindah ke negara mana?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Negara (pilihan)';
+
+  @override
+  String get lifePlanBefore => 'Sebelum';
+
+  @override
+  String get lifePlanAfter => 'Selepas';
+
+  @override
+  String get lifePlanToDo => 'Perlu dibuat';
+
+  @override
+  String get lifePlanDoneSection => 'Selesai';
+
+  @override
+  String get lifePlanMayNeed => 'Anda mungkin juga perlukan';
+
+  @override
+  String get lifePlanDoUpdate => 'Kemas kini butiran';
+
+  @override
+  String get lifePlanDoRenew => 'Perbaharuinya';
+
+  @override
+  String get lifePlanDoCancel => 'Batalkan atau pulangkan';
+
+  @override
+  String get lifePlanDoCheck => 'Semak sama ada masih sesuai';
+
+  @override
+  String get lifePlanMark => 'Tandakan sebagai';
+
+  @override
+  String get lifePlanStatusUpdated => 'Dikemas kini';
+
+  @override
+  String get lifePlanStatusRenewed => 'Diperbaharui';
+
+  @override
+  String get lifePlanStatusCancelled => 'Dibatalkan';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Tidak diperlukan';
+
+  @override
+  String get lifePlanStatusUndo => 'Belum selesai';
+
+  @override
+  String get lifePlanFlagExpires => 'Tamat tempoh sekitar tarikh ini. Perbaharui dahulu.';
+
+  @override
+  String get lifePlanFlagPassport => 'Tamat tempoh dalam 6 bulan selepas berpindah. Banyak negara mahukan baki tempoh yang lebih lama, jadi perbaharui sebelum pergi.';
+
+  @override
+  String get lifePlanFlagConvert => 'Anda mungkin perlu menukarnya kepada lesen tempatan selepas berpindah. Semak peraturan tempatan.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara nampak rekod ini berubah, jadi ia ditandakan selesai.';
+
+  @override
+  String get lifePlanAutoAdded => 'Ditambah selepas anda memulakan pelan ini.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done daripada $total selesai';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lagi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Semuanya selesai. Anda boleh menandakan pelan ini sebagai selesai.';
+
+  @override
+  String get lifePlanFinish => 'Tandakan selesai';
+
+  @override
+  String get lifePlanReopen => 'Buka semula';
+
+  @override
+  String get lifePlanDelete => 'Padam pelan';
+
+  @override
+  String get lifePlanDeleteTitle => 'Padam pelan ini?';
+
+  @override
+  String get lifePlanDeleteBody => 'Hanya pelan yang dipadam. Rekod anda kekal seperti sedia ada.';
+
+  @override
+  String get lifePlanLimit => 'Anda boleh ada sehingga 10 pelan yang sedang berjalan. Selesaikan atau padam satu dahulu.';
+
+  @override
+  String get lifePlanSaveError => 'Pelan tidak dapat disimpan. Semak sambungan anda dan cuba lagi.';
+
+  @override
+  String get lifePlanStarted => 'Pelan dimulakan';
+
+  @override
+  String get lifePlanReminderBody => 'Buka pelan untuk melihat apa yang masih tinggal.';
+
+  @override
+  String get lifePlanReminderAfter => 'Masih ada beberapa perkara yang tinggal. Buka pelan untuk menyelesaikannya.';
+
+  @override
+  String get lifePlanSuggestCar => 'Membeli atau menjual kereta? Lihat apa lagi yang perlu dikemas kini.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Berpindah ke sana untuk seketika?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Mulakan pelan berpindah ke negara lain. Vaultara menunjukkan apa yang perlu diuruskan sebelum anda pergi.';
 }

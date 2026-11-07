@@ -2899,10 +2899,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifeEventsTitle => '人生事件';
 
   @override
-  String get lifeEventsSubtitle => '搬家、改名或买了新车？查看需要更新什么';
+  String get lifeEventsSubtitle => '搬家、改名、添宝宝或换新车？获取需要更新哪些内容的计划';
 
   @override
-  String get lifeEventsIntro => '选择你正在经历的事。Vaultara 会列出你保存的记录中，通常因此需要更新的那些。';
+  String get lifeEventsIntro => '选择正在发生的事。Vaultara 会根据你保存的记录制定计划，显示当天前后要做的事，并提醒你。';
 
   @override
   String get lifeEventMoving => '我要搬家';
@@ -2945,11 +2945,6 @@ class AppLocalizationsZh extends AppLocalizations {
       other: '你的 $count 条记录',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '已更新 $done/$total';
   }
 
   @override
@@ -6571,6 +6566,232 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => '更早';
+
+  @override
+  String get lifeEventHomeBuy => '我要买房';
+
+  @override
+  String get lifeEventHomeBuyBody => '入住前先为新家安排保险，然后在各处更新你的地址。';
+
+  @override
+  String get lifeEventHomeSell => '我要卖房';
+
+  @override
+  String get lifeEventHomeSellBody => '在交易完成前保留保险，然后取消不再需要的项目。';
+
+  @override
+  String get lifeEventMarriage => '我要结婚';
+
+  @override
+  String get lifeEventMarriageBody => '婚礼后更新这些，尤其是你改名或把伴侣加入保单时。';
+
+  @override
+  String get lifeEventDivorce => '我要离婚';
+
+  @override
+  String get lifeEventDivorceBody => '查看每一项的受保人和登记人，并关闭或分割共同拥有的项目。';
+
+  @override
+  String get lifeEventBaby => '我们要有宝宝了';
+
+  @override
+  String get lifeEventBabyBody => '把宝宝加入你的保险并检查保单。在家庭中添加宝宝，以便跟踪其证件。';
+
+  @override
+  String get lifeEventStudies => '我要开始上学';
+
+  @override
+  String get lifeEventStudiesBody => '开学前检查你的许可、保险和学生证件。';
+
+  @override
+  String get lifeEventRetiring => '我要退休';
+
+  @override
+  String get lifeEventRetiringBody => '归还工作物品并检查保险，因为工作福利通常会结束。';
+
+  @override
+  String get lifeEventChildAdult => '我的孩子快满16岁或18岁';
+
+  @override
+  String get lifeEventChildAdultBody => '选择你的孩子。到这个年龄，他们常常需要自己的身份证、护照、驾照或保险。';
+
+  @override
+  String get lifeEventBereavement => '我的家人去世了';
+
+  @override
+  String get lifeEventBereavementBody => '选择去世的人。其记录可能需要注销、理赔或转给他人。一步一步来。';
+
+  @override
+  String get lifeNeedProofOfAddress => '住址证明';
+
+  @override
+  String get lifeNeedPoliceClearance => '无犯罪记录证明';
+
+  @override
+  String get lifeNeedVaccination => '疫苗接种证明';
+
+  @override
+  String get lifeNeedStudentCard => '学生证';
+
+  @override
+  String get lifePlanStartTitle => '开始计划';
+
+  @override
+  String get lifePlanStartNew => '发生了什么？';
+
+  @override
+  String get lifePlanInProgress => '进行中';
+
+  @override
+  String get lifePlanFinishedSection => '已完成';
+
+  @override
+  String get lifePlanWhen => '什么时候？';
+
+  @override
+  String get lifePlanPickDate => '选择日期';
+
+  @override
+  String get lifePlanNoDate => '暂无日期';
+
+  @override
+  String get lifePlanWho => '为谁？';
+
+  @override
+  String get lifePlanAddPerson => '请先在家庭中添加他们，以便 Vaultara 找到他们的记录。';
+
+  @override
+  String get lifePlanDestination => '你要搬到哪个国家？';
+
+  @override
+  String get lifePlanDestinationOptional => '国家（可选）';
+
+  @override
+  String get lifePlanBefore => '之前';
+
+  @override
+  String get lifePlanAfter => '之后';
+
+  @override
+  String get lifePlanToDo => '待办';
+
+  @override
+  String get lifePlanDoneSection => '已完成';
+
+  @override
+  String get lifePlanMayNeed => '你可能还需要';
+
+  @override
+  String get lifePlanDoUpdate => '更新信息';
+
+  @override
+  String get lifePlanDoRenew => '续期';
+
+  @override
+  String get lifePlanDoCancel => '取消或归还';
+
+  @override
+  String get lifePlanDoCheck => '检查是否仍然适用';
+
+  @override
+  String get lifePlanMark => '标记为';
+
+  @override
+  String get lifePlanStatusUpdated => '已更新';
+
+  @override
+  String get lifePlanStatusRenewed => '已续期';
+
+  @override
+  String get lifePlanStatusCancelled => '已取消';
+
+  @override
+  String get lifePlanStatusNotNeeded => '不需要';
+
+  @override
+  String get lifePlanStatusUndo => '尚未完成';
+
+  @override
+  String get lifePlanFlagExpires => '在这个日期前后到期。请先续期。';
+
+  @override
+  String get lifePlanFlagPassport => '在搬家后6个月内到期。许多国家要求更长的剩余有效期，请在出发前续期。';
+
+  @override
+  String get lifePlanFlagConvert => '搬家后你可能需要换成当地驾照。请查看当地规定。';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara 发现这条记录有变化，因此已标为完成。';
+
+  @override
+  String get lifePlanAutoAdded => '在你开始此计划后添加。';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '已完成 $done/$total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '还有 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => '全部完成。你可以将计划标记为已完成。';
+
+  @override
+  String get lifePlanFinish => '标记为已完成';
+
+  @override
+  String get lifePlanReopen => '重新打开';
+
+  @override
+  String get lifePlanDelete => '删除计划';
+
+  @override
+  String get lifePlanDeleteTitle => '删除此计划？';
+
+  @override
+  String get lifePlanDeleteBody => '只会删除计划。你的记录保持不变。';
+
+  @override
+  String get lifePlanLimit => '最多可以有 10 个进行中的计划。请先完成或删除一个。';
+
+  @override
+  String get lifePlanSaveError => '无法保存计划。请检查网络连接后重试。';
+
+  @override
+  String get lifePlanStarted => '计划已开始';
+
+  @override
+  String get lifePlanReminderBody => '打开计划查看剩余事项。';
+
+  @override
+  String get lifePlanReminderAfter => '还有一些事项未完成。打开计划完成它们。';
+
+  @override
+  String get lifePlanSuggestCar => '买了或卖了车？看看还需要更新什么。';
+
+  @override
+  String get lifePlanSuggestTrip => '要在那里住一段时间吗？';
+
+  @override
+  String get lifePlanSuggestTripBody => '开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -9456,10 +9677,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifeEventsTitle => '人生大事';
 
   @override
-  String get lifeEventsSubtitle => '搬家、改名或买了新车？看看需要更新什么';
+  String get lifeEventsSubtitle => '搬家、改名、添宝宝或换新车？获取需要更新哪些内容的计划';
 
   @override
-  String get lifeEventsIntro => '选择您生活中正在发生的事。Vaultara 会列出您保存的记录中，通常因此需要更新的那些。';
+  String get lifeEventsIntro => '选择正在发生的事。Vaultara 会根据你保存的记录制定计划，显示当天前后要做的事，并提醒你。';
 
   @override
   String get lifeEventMoving => '我要搬家';
@@ -9502,11 +9723,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       other: '您的 $count 条记录',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '已更新 $done/$total';
   }
 
   @override
@@ -13128,6 +13344,232 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantHistoryOlder => '更早';
+
+  @override
+  String get lifeEventHomeBuy => '我要买房';
+
+  @override
+  String get lifeEventHomeBuyBody => '入住前先为新家安排保险，然后在各处更新你的地址。';
+
+  @override
+  String get lifeEventHomeSell => '我要卖房';
+
+  @override
+  String get lifeEventHomeSellBody => '在交易完成前保留保险，然后取消不再需要的项目。';
+
+  @override
+  String get lifeEventMarriage => '我要结婚';
+
+  @override
+  String get lifeEventMarriageBody => '婚礼后更新这些，尤其是你改名或把伴侣加入保单时。';
+
+  @override
+  String get lifeEventDivorce => '我要离婚';
+
+  @override
+  String get lifeEventDivorceBody => '查看每一项的受保人和登记人，并关闭或分割共同拥有的项目。';
+
+  @override
+  String get lifeEventBaby => '我们要有宝宝了';
+
+  @override
+  String get lifeEventBabyBody => '把宝宝加入你的保险并检查保单。在家庭中添加宝宝，以便跟踪其证件。';
+
+  @override
+  String get lifeEventStudies => '我要开始上学';
+
+  @override
+  String get lifeEventStudiesBody => '开学前检查你的许可、保险和学生证件。';
+
+  @override
+  String get lifeEventRetiring => '我要退休';
+
+  @override
+  String get lifeEventRetiringBody => '归还工作物品并检查保险，因为工作福利通常会结束。';
+
+  @override
+  String get lifeEventChildAdult => '我的孩子快满16岁或18岁';
+
+  @override
+  String get lifeEventChildAdultBody => '选择你的孩子。到这个年龄，他们常常需要自己的身份证、护照、驾照或保险。';
+
+  @override
+  String get lifeEventBereavement => '我的家人去世了';
+
+  @override
+  String get lifeEventBereavementBody => '选择去世的人。其记录可能需要注销、理赔或转给他人。一步一步来。';
+
+  @override
+  String get lifeNeedProofOfAddress => '住址证明';
+
+  @override
+  String get lifeNeedPoliceClearance => '无犯罪记录证明';
+
+  @override
+  String get lifeNeedVaccination => '疫苗接种证明';
+
+  @override
+  String get lifeNeedStudentCard => '学生证';
+
+  @override
+  String get lifePlanStartTitle => '开始计划';
+
+  @override
+  String get lifePlanStartNew => '发生了什么？';
+
+  @override
+  String get lifePlanInProgress => '进行中';
+
+  @override
+  String get lifePlanFinishedSection => '已完成';
+
+  @override
+  String get lifePlanWhen => '什么时候？';
+
+  @override
+  String get lifePlanPickDate => '选择日期';
+
+  @override
+  String get lifePlanNoDate => '暂无日期';
+
+  @override
+  String get lifePlanWho => '为谁？';
+
+  @override
+  String get lifePlanAddPerson => '请先在家庭中添加他们，以便 Vaultara 找到他们的记录。';
+
+  @override
+  String get lifePlanDestination => '你要搬到哪个国家？';
+
+  @override
+  String get lifePlanDestinationOptional => '国家（可选）';
+
+  @override
+  String get lifePlanBefore => '之前';
+
+  @override
+  String get lifePlanAfter => '之后';
+
+  @override
+  String get lifePlanToDo => '待办';
+
+  @override
+  String get lifePlanDoneSection => '已完成';
+
+  @override
+  String get lifePlanMayNeed => '你可能还需要';
+
+  @override
+  String get lifePlanDoUpdate => '更新信息';
+
+  @override
+  String get lifePlanDoRenew => '续期';
+
+  @override
+  String get lifePlanDoCancel => '取消或归还';
+
+  @override
+  String get lifePlanDoCheck => '检查是否仍然适用';
+
+  @override
+  String get lifePlanMark => '标记为';
+
+  @override
+  String get lifePlanStatusUpdated => '已更新';
+
+  @override
+  String get lifePlanStatusRenewed => '已续期';
+
+  @override
+  String get lifePlanStatusCancelled => '已取消';
+
+  @override
+  String get lifePlanStatusNotNeeded => '不需要';
+
+  @override
+  String get lifePlanStatusUndo => '尚未完成';
+
+  @override
+  String get lifePlanFlagExpires => '在这个日期前后到期。请先续期。';
+
+  @override
+  String get lifePlanFlagPassport => '在搬家后6个月内到期。许多国家要求更长的剩余有效期，请在出发前续期。';
+
+  @override
+  String get lifePlanFlagConvert => '搬家后你可能需要换成当地驾照。请查看当地规定。';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara 发现这条记录有变化，因此已标为完成。';
+
+  @override
+  String get lifePlanAutoAdded => '在你开始此计划后添加。';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '已完成 $done/$total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '还有 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => '全部完成。你可以将计划标记为已完成。';
+
+  @override
+  String get lifePlanFinish => '标记为已完成';
+
+  @override
+  String get lifePlanReopen => '重新打开';
+
+  @override
+  String get lifePlanDelete => '删除计划';
+
+  @override
+  String get lifePlanDeleteTitle => '删除此计划？';
+
+  @override
+  String get lifePlanDeleteBody => '只会删除计划。你的记录保持不变。';
+
+  @override
+  String get lifePlanLimit => '最多可以有 10 个进行中的计划。请先完成或删除一个。';
+
+  @override
+  String get lifePlanSaveError => '无法保存计划。请检查网络连接后重试。';
+
+  @override
+  String get lifePlanStarted => '计划已开始';
+
+  @override
+  String get lifePlanReminderBody => '打开计划查看剩余事项。';
+
+  @override
+  String get lifePlanReminderAfter => '还有一些事项未完成。打开计划完成它们。';
+
+  @override
+  String get lifePlanSuggestCar => '买了或卖了车？看看还需要更新什么。';
+
+  @override
+  String get lifePlanSuggestTrip => '要在那里住一段时间吗？';
+
+  @override
+  String get lifePlanSuggestTripBody => '开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -16013,10 +16455,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifeEventsTitle => '人生大事';
 
   @override
-  String get lifeEventsSubtitle => '搬家、改名或買新車？查看需要更新什麼';
+  String get lifeEventsSubtitle => '搬家、改名、添寶寶或換新車？取得需要更新哪些內容的計畫';
 
   @override
-  String get lifeEventsIntro => '請選擇您生活中正在發生的事。Vaultara 會列出您儲存的記錄中，通常因此需要更新的項目。';
+  String get lifeEventsIntro => '選擇正在發生的事。Vaultara 會根據你儲存的記錄擬定計畫，顯示當天前後要做的事，並提醒你。';
 
   @override
   String get lifeEventMoving => '我要搬家';
@@ -16059,11 +16501,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       other: '您的 $count 筆記錄',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '已更新 $done / $total';
   }
 
   @override
@@ -19685,4 +20122,230 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantHistoryOlder => '更早';
+
+  @override
+  String get lifeEventHomeBuy => '我要買房';
+
+  @override
+  String get lifeEventHomeBuyBody => '入住前先為新家安排保險，然後在各處更新你的地址。';
+
+  @override
+  String get lifeEventHomeSell => '我要賣房';
+
+  @override
+  String get lifeEventHomeSellBody => '在交易完成前保留保險，然後取消不再需要的項目。';
+
+  @override
+  String get lifeEventMarriage => '我要結婚';
+
+  @override
+  String get lifeEventMarriageBody => '婚禮後更新這些，尤其是你改名或把伴侶加入保單時。';
+
+  @override
+  String get lifeEventDivorce => '我要離婚';
+
+  @override
+  String get lifeEventDivorceBody => '查看每一項的被保人與登記人，並關閉或分割共同擁有的項目。';
+
+  @override
+  String get lifeEventBaby => '我們要有寶寶了';
+
+  @override
+  String get lifeEventBabyBody => '把寶寶加入你的保險並檢查保單。在家庭中新增寶寶，以便追蹤其證件。';
+
+  @override
+  String get lifeEventStudies => '我要開始上學';
+
+  @override
+  String get lifeEventStudiesBody => '開學前檢查你的許可、保險和學生證件。';
+
+  @override
+  String get lifeEventRetiring => '我要退休';
+
+  @override
+  String get lifeEventRetiringBody => '歸還工作物品並檢查保險，因為工作福利通常會結束。';
+
+  @override
+  String get lifeEventChildAdult => '我的孩子快滿16歲或18歲';
+
+  @override
+  String get lifeEventChildAdultBody => '選擇你的孩子。到這個年齡，他們常常需要自己的身分證、護照、駕照或保險。';
+
+  @override
+  String get lifeEventBereavement => '我的家人過世了';
+
+  @override
+  String get lifeEventBereavementBody => '選擇過世的人。其記錄可能需要註銷、理賠或轉給他人。一步一步來。';
+
+  @override
+  String get lifeNeedProofOfAddress => '住址證明';
+
+  @override
+  String get lifeNeedPoliceClearance => '良民證';
+
+  @override
+  String get lifeNeedVaccination => '疫苗接種證明';
+
+  @override
+  String get lifeNeedStudentCard => '學生證';
+
+  @override
+  String get lifePlanStartTitle => '開始計畫';
+
+  @override
+  String get lifePlanStartNew => '發生了什麼事？';
+
+  @override
+  String get lifePlanInProgress => '進行中';
+
+  @override
+  String get lifePlanFinishedSection => '已完成';
+
+  @override
+  String get lifePlanWhen => '什麼時候？';
+
+  @override
+  String get lifePlanPickDate => '選擇日期';
+
+  @override
+  String get lifePlanNoDate => '尚無日期';
+
+  @override
+  String get lifePlanWho => '為誰？';
+
+  @override
+  String get lifePlanAddPerson => '請先在家庭中新增他們，讓 Vaultara 能找到他們的記錄。';
+
+  @override
+  String get lifePlanDestination => '你要搬到哪個國家？';
+
+  @override
+  String get lifePlanDestinationOptional => '國家（選填）';
+
+  @override
+  String get lifePlanBefore => '之前';
+
+  @override
+  String get lifePlanAfter => '之後';
+
+  @override
+  String get lifePlanToDo => '待辦';
+
+  @override
+  String get lifePlanDoneSection => '已完成';
+
+  @override
+  String get lifePlanMayNeed => '你可能還需要';
+
+  @override
+  String get lifePlanDoUpdate => '更新資料';
+
+  @override
+  String get lifePlanDoRenew => '續期';
+
+  @override
+  String get lifePlanDoCancel => '取消或歸還';
+
+  @override
+  String get lifePlanDoCheck => '檢查是否仍然適用';
+
+  @override
+  String get lifePlanMark => '標記為';
+
+  @override
+  String get lifePlanStatusUpdated => '已更新';
+
+  @override
+  String get lifePlanStatusRenewed => '已續期';
+
+  @override
+  String get lifePlanStatusCancelled => '已取消';
+
+  @override
+  String get lifePlanStatusNotNeeded => '不需要';
+
+  @override
+  String get lifePlanStatusUndo => '尚未完成';
+
+  @override
+  String get lifePlanFlagExpires => '在這個日期前後到期。請先續期。';
+
+  @override
+  String get lifePlanFlagPassport => '在搬家後6個月內到期。許多國家要求更長的剩餘效期，請在出發前續期。';
+
+  @override
+  String get lifePlanFlagConvert => '搬家後你可能需要換成當地駕照。請查看當地規定。';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara 發現這筆記錄有變更，因此已標為完成。';
+
+  @override
+  String get lifePlanAutoAdded => '在你開始此計畫後新增。';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '已完成 $done/$total';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '還有 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => '全部完成。你可以將計畫標記為已完成。';
+
+  @override
+  String get lifePlanFinish => '標記為已完成';
+
+  @override
+  String get lifePlanReopen => '重新開啟';
+
+  @override
+  String get lifePlanDelete => '刪除計畫';
+
+  @override
+  String get lifePlanDeleteTitle => '刪除此計畫？';
+
+  @override
+  String get lifePlanDeleteBody => '只會刪除計畫。你的記錄保持不變。';
+
+  @override
+  String get lifePlanLimit => '最多可以有 10 個進行中的計畫。請先完成或刪除一個。';
+
+  @override
+  String get lifePlanSaveError => '無法儲存計畫。請檢查網路連線後再試一次。';
+
+  @override
+  String get lifePlanStarted => '計畫已開始';
+
+  @override
+  String get lifePlanReminderBody => '開啟計畫查看剩餘事項。';
+
+  @override
+  String get lifePlanReminderAfter => '還有一些事項尚未完成。開啟計畫完成它們。';
+
+  @override
+  String get lifePlanSuggestCar => '買了或賣了車？看看還需要更新什麼。';
+
+  @override
+  String get lifePlanSuggestTrip => '要在那裡住一段時間嗎？';
+
+  @override
+  String get lifePlanSuggestTripBody => '開始一個移居國外的計畫。Vaultara 會顯示出發前需要辦妥的事。';
 }

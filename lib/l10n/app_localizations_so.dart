@@ -2904,10 +2904,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifeEventsTitle => 'Dhacdooyinka nolosha';
 
   @override
-  String get lifeEventsSubtitle => 'Ma guurayaa, magac ma beddelaysaa, mise gaari cusub baad iibsatay? Arag waxa la cusboonaysiinayo';
+  String get lifeEventsSubtitle => 'Guuritaan, magac cusub, ilmo ama baabuur cusub? Hel qorshe waxa la cusboonaysiinayo';
 
   @override
-  String get lifeEventsIntro => 'Dooro waxa nolosha kugu socda. Vaultara wuxuu liis garaynayaa diiwaannada aad kaydsatay ee sida caadiga ah loo baahan yahay in la cusboonaysiiyo sababtaas awgeed.';
+  String get lifeEventsIntro => 'Dooro waxa dhacaya. Vaultara waxay qorshe ka samaysaa diiwaannadaada kaydsan, waxay muujisaa waxa la sameeyo maalinta ka hor iyo ka dib, wayna ku xasuusisaa.';
 
   @override
   String get lifeEventMoving => 'Guri kale ayaan u guurayaa';
@@ -2951,11 +2951,6 @@ class AppLocalizationsSo extends AppLocalizations {
       one: '$count diiwaankaaga ka mid ah',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done oo ka mid ah $total ayaa la cusboonaysiiyay';
   }
 
   @override
@@ -6622,4 +6617,232 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Kuwii hore';
+
+  @override
+  String get lifeEventHomeBuy => 'Guri ayaan iibsanayaa';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Diyaari caymiska guriga cusub ka hor intaadan u guurin, kadibna meel kasta ku cusboonaysii cinwaankaaga.';
+
+  @override
+  String get lifeEventHomeSell => 'Gurigayga ayaan iibinayaa';
+
+  @override
+  String get lifeEventHomeSellBody => 'Hay caymiskaaga ilaa iibku dhammaado, kadibna jooji waxaadan u baahnayn.';
+
+  @override
+  String get lifeEventMarriage => 'Waan guursanayaa';
+
+  @override
+  String get lifeEventMarriageBody => 'Cusboonaysii kuwan arooska ka dib, gaar ahaan haddii aad magaca bedesho ama lammaanahaaga ku darto caymis.';
+
+  @override
+  String get lifeEventDivorce => 'Waan kala tagaynaa';
+
+  @override
+  String get lifeEventDivorceBody => 'Hubi cidda la caymisay iyo cidda magaceeda ku qoran mid kasta, oo xir ama qaybi wixii aad wadaagteen.';
+
+  @override
+  String get lifeEventBaby => 'Ilmo ayaan dhalaynaa';
+
+  @override
+  String get lifeEventBabyBody => 'Ku dar ilmaha caymiskaaga oo hubi caymisyadaada. Ku dar ilmaha Qoyska si aad ula socoto dukumentiyadiisa.';
+
+  @override
+  String get lifeEventStudies => 'Waxbarasho ayaan bilaabayaa';
+
+  @override
+  String get lifeEventStudiesBody => 'Hubi ogolaanshahaaga, caymiskaaga iyo dukumentiyada ardayga ka hor intaanay waxbarashadu bilaabmin.';
+
+  @override
+  String get lifeEventRetiring => 'Hawlgab ayaan galayaa';
+
+  @override
+  String get lifeEventRetiringBody => 'Celi alaabta shaqada oo hubi caymiskaaga, maxaa yeelay faa\'iidooyinka shaqadu badanaa way dhammaadaan.';
+
+  @override
+  String get lifeEventChildAdult => 'Ilmahaygu wuxuu gaarayaa 16 ama 18';
+
+  @override
+  String get lifeEventChildAdultBody => 'Dooro ilmahaaga. Da\'dan badanaa waxay u baahan yihiin aqoonsi, baasaboor, liisan ama caymis u gaar ah.';
+
+  @override
+  String get lifeEventBereavement => 'Qof qoyskayga ka mid ah ayaa dhintay';
+
+  @override
+  String get lifeEventBereavementBody => 'Dooro qofka dhintay. Diiwaannadiisa waxaa laga yaabaa in la joojiyo, la sheegto ama loo wareejiyo qof kale. Tallaabo tallaabo u qaad.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Caddaynta cinwaanka';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Shahaadada booliska';
+
+  @override
+  String get lifeNeedVaccination => 'Shahaadada tallaalka';
+
+  @override
+  String get lifeNeedStudentCard => 'Kaarka ardayga';
+
+  @override
+  String get lifePlanStartTitle => 'Bilow qorshe';
+
+  @override
+  String get lifePlanStartNew => 'Maxaa dhacaya?';
+
+  @override
+  String get lifePlanInProgress => 'Socda';
+
+  @override
+  String get lifePlanFinishedSection => 'Dhammaaday';
+
+  @override
+  String get lifePlanWhen => 'Goorma ayuu dhacayaa?';
+
+  @override
+  String get lifePlanPickDate => 'Dooro taariikh';
+
+  @override
+  String get lifePlanNoDate => 'Weli taariikh ma jirto';
+
+  @override
+  String get lifePlanWho => 'Yaa loogu talagalay?';
+
+  @override
+  String get lifePlanAddPerson => 'Marka hore ku dar Qoyska, si Vaultara u hesho diiwaannadooda.';
+
+  @override
+  String get lifePlanDestination => 'Waddankee ayaad u guuraysaa?';
+
+  @override
+  String get lifePlanDestinationOptional => 'Waddan (ikhtiyaari)';
+
+  @override
+  String get lifePlanBefore => 'Ka hor';
+
+  @override
+  String get lifePlanAfter => 'Ka dib';
+
+  @override
+  String get lifePlanToDo => 'In la sameeyo';
+
+  @override
+  String get lifePlanDoneSection => 'La dhammeeyay';
+
+  @override
+  String get lifePlanMayNeed => 'Waxa kale oo aad u baahan kartaa';
+
+  @override
+  String get lifePlanDoUpdate => 'Cusboonaysii faahfaahinta';
+
+  @override
+  String get lifePlanDoRenew => 'Cusboonaysii muddada';
+
+  @override
+  String get lifePlanDoCancel => 'Jooji ama celi';
+
+  @override
+  String get lifePlanDoCheck => 'Hubi inuu weli ku habboon yahay';
+
+  @override
+  String get lifePlanMark => 'U calaamadee sida';
+
+  @override
+  String get lifePlanStatusUpdated => 'La cusboonaysiiyay';
+
+  @override
+  String get lifePlanStatusRenewed => 'Muddada la kordhiyay';
+
+  @override
+  String get lifePlanStatusCancelled => 'La joojiyay';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'Looma baahna';
+
+  @override
+  String get lifePlanStatusUndo => 'Weli lama samayn';
+
+  @override
+  String get lifePlanFlagExpires => 'Wuxuu dhacayaa qiyaastii taariikhdan. Marka hore cusboonaysii.';
+
+  @override
+  String get lifePlanFlagPassport => 'Wuxuu dhacayaa 6 bilood gudahood guurista. Waddammo badan ayaa doonaya waqti dheer, markaa cusboonaysii ka hor intaadan bixin.';
+
+  @override
+  String get lifePlanFlagConvert => 'Waxaa laga yaabaa inaad u beddesho liisan maxalli ah ka dib markaad guurto. Hubi xeerarka maxalliga ah.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara waxay aragtay diiwaankan oo isbeddelay, markaa waxaa loo calaamadeeyay la dhammeeyay.';
+
+  @override
+  String get lifePlanAutoAdded => 'La daray ka dib markaad bilowday qorshahan.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done ka mid ah $total ayaa la dhammeeyay';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood ayaa harsan',
+      one: '1 maalin ayaa harsan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood ka hor',
+      one: '1 maalin ka hor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Wax walba waa la dhammeeyay. Waxaad qorshaha u calaamadayn kartaa dhammaaday.';
+
+  @override
+  String get lifePlanFinish => 'U calaamadee dhammaaday';
+
+  @override
+  String get lifePlanReopen => 'Mar kale fur';
+
+  @override
+  String get lifePlanDelete => 'Tirtir qorshaha';
+
+  @override
+  String get lifePlanDeleteTitle => 'Ma la tirtiraa qorshahan?';
+
+  @override
+  String get lifePlanDeleteBody => 'Qorshaha oo keliya ayaa la tirtirayaa. Diiwaannadaadu sidooda ayay ahaan doonaan.';
+
+  @override
+  String get lifePlanLimit => 'Waxaad yeelan kartaa ilaa 10 qorshe oo socda. Marka hore dhammee ama tirtir mid.';
+
+  @override
+  String get lifePlanSaveError => 'Qorshaha lama kaydin karin. Hubi xiriirkaaga oo isku day mar kale.';
+
+  @override
+  String get lifePlanStarted => 'Qorshe ayaa bilaabmay';
+
+  @override
+  String get lifePlanReminderBody => 'Fur qorshaha si aad u aragto waxa haray.';
+
+  @override
+  String get lifePlanReminderAfter => 'Waxyaabo qaar ayaa weli haray. Fur qorshaha si aad u dhammaystirto.';
+
+  @override
+  String get lifePlanSuggestCar => 'Baabuur ma iibsatay ama ma iibisay? Eeg waxa kale ee la cusboonaysiinayo.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Muddo ma u guuraysaa halkaas?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Bilow qorshe aad ugu guurayso waddan kale. Vaultara waxay muujisaa waxa la habeeyo ka hor intaadan bixin.';
 }

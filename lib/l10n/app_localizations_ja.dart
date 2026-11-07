@@ -2887,10 +2887,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifeEventsTitle => 'ライフイベント';
 
   @override
-  String get lifeEventsSubtitle => '引っ越し、改姓、車の購入など。更新が必要なものを確認します';
+  String get lifeEventsSubtitle => '引っ越し、改姓、出産、新しい車？ 更新が必要なものの計画を作れます';
 
   @override
-  String get lifeEventsIntro => '今のあなたの状況を選んでください。Vaultaraが、保存した記録のうち通常は更新が必要なものを一覧にします。';
+  String get lifeEventsIntro => '今起きていることを選んでください。Vaultara が保存済みの記録から計画を作り、その日の前後にすることを示して、お知らせします。';
 
   @override
   String get lifeEventMoving => '引っ越しをする';
@@ -2933,11 +2933,6 @@ class AppLocalizationsJa extends AppLocalizations {
       other: '保存した記録のうち$count件',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$total件中$done件を更新済み';
   }
 
   @override
@@ -6559,4 +6554,230 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'それ以前';
+
+  @override
+  String get lifeEventHomeBuy => '家を買う';
+
+  @override
+  String get lifeEventHomeBuyBody => '入居前に新居の保険を手配し、その後あらゆる場所で住所を更新しましょう。';
+
+  @override
+  String get lifeEventHomeSell => '家を売る';
+
+  @override
+  String get lifeEventHomeSellBody => '売却が確定するまで保険を続け、その後不要になったものを解約しましょう。';
+
+  @override
+  String get lifeEventMarriage => '結婚する';
+
+  @override
+  String get lifeEventMarriageBody => '結婚後にこれらを更新しましょう。特に姓を変える場合や、パートナーを保険に加える場合に。';
+
+  @override
+  String get lifeEventDivorce => '離婚する';
+
+  @override
+  String get lifeEventDivorceBody => 'それぞれ誰が補償対象で名義人かを確認し、共有していたものは解約するか分けましょう。';
+
+  @override
+  String get lifeEventBaby => '子どもが生まれる';
+
+  @override
+  String get lifeEventBabyBody => '赤ちゃんを保険に加え、契約内容を確認しましょう。書類を管理するため、家族に赤ちゃんを追加しましょう。';
+
+  @override
+  String get lifeEventStudies => '進学する';
+
+  @override
+  String get lifeEventStudiesBody => '学業が始まる前に、許可証、保険、学生向けの書類を確認しましょう。';
+
+  @override
+  String get lifeEventRetiring => '退職する';
+
+  @override
+  String get lifeEventRetiringBody => '仕事の備品を返却し、保険を確認しましょう。勤務先の福利厚生は通常終了します。';
+
+  @override
+  String get lifeEventChildAdult => '子どもが16歳か18歳になる';
+
+  @override
+  String get lifeEventChildAdultBody => 'お子さんを選んでください。この年齢では本人の身分証、パスポート、免許、保険が必要になることがよくあります。';
+
+  @override
+  String get lifeEventBereavement => '家族が亡くなった';
+
+  @override
+  String get lifeEventBereavementBody => '亡くなった方を選んでください。記録の解約、請求、別の人への名義変更が必要な場合があります。一つずつ進めましょう。';
+
+  @override
+  String get lifeNeedProofOfAddress => '住所証明';
+
+  @override
+  String get lifeNeedPoliceClearance => '無犯罪証明書';
+
+  @override
+  String get lifeNeedVaccination => '予防接種証明書';
+
+  @override
+  String get lifeNeedStudentCard => '学生証';
+
+  @override
+  String get lifePlanStartTitle => '計画を始める';
+
+  @override
+  String get lifePlanStartNew => '何が起きていますか？';
+
+  @override
+  String get lifePlanInProgress => '進行中';
+
+  @override
+  String get lifePlanFinishedSection => '完了';
+
+  @override
+  String get lifePlanWhen => 'いつですか？';
+
+  @override
+  String get lifePlanPickDate => '日付を選ぶ';
+
+  @override
+  String get lifePlanNoDate => '日付はまだ未定';
+
+  @override
+  String get lifePlanWho => '誰のためですか？';
+
+  @override
+  String get lifePlanAddPerson => 'Vaultara が記録を見つけられるよう、まず家族に追加してください。';
+
+  @override
+  String get lifePlanDestination => 'どの国に引っ越しますか？';
+
+  @override
+  String get lifePlanDestinationOptional => '国（任意）';
+
+  @override
+  String get lifePlanBefore => '前';
+
+  @override
+  String get lifePlanAfter => '後';
+
+  @override
+  String get lifePlanToDo => 'やること';
+
+  @override
+  String get lifePlanDoneSection => '完了';
+
+  @override
+  String get lifePlanMayNeed => 'こちらも必要かもしれません';
+
+  @override
+  String get lifePlanDoUpdate => '内容を更新する';
+
+  @override
+  String get lifePlanDoRenew => '更新手続きをする';
+
+  @override
+  String get lifePlanDoCancel => '解約または返却する';
+
+  @override
+  String get lifePlanDoCheck => '今も合っているか確認する';
+
+  @override
+  String get lifePlanMark => '状態を設定';
+
+  @override
+  String get lifePlanStatusUpdated => '更新済み';
+
+  @override
+  String get lifePlanStatusRenewed => '更新手続き済み';
+
+  @override
+  String get lifePlanStatusCancelled => '解約済み';
+
+  @override
+  String get lifePlanStatusNotNeeded => '不要';
+
+  @override
+  String get lifePlanStatusUndo => '未完了';
+
+  @override
+  String get lifePlanFlagExpires => 'この日付の前後に期限が切れます。先に更新しましょう。';
+
+  @override
+  String get lifePlanFlagPassport => '引っ越しから6か月以内に期限が切れます。多くの国ではもっと長い残存期間が必要なため、出発前に更新しましょう。';
+
+  @override
+  String get lifePlanFlagConvert => '引っ越し後、現地の免許への切り替えが必要な場合があります。現地のルールを確認してください。';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara がこの記録の変更を確認したため、完了にしました。';
+
+  @override
+  String get lifePlanAutoAdded => 'この計画を始めた後に追加されました。';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$total件中$done件完了';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'あと$count日',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count日前',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'すべて完了しました。計画を完了にできます。';
+
+  @override
+  String get lifePlanFinish => '完了にする';
+
+  @override
+  String get lifePlanReopen => 'もう一度開く';
+
+  @override
+  String get lifePlanDelete => '計画を削除';
+
+  @override
+  String get lifePlanDeleteTitle => 'この計画を削除しますか？';
+
+  @override
+  String get lifePlanDeleteBody => '削除されるのは計画だけです。記録はそのまま残ります。';
+
+  @override
+  String get lifePlanLimit => '進行中の計画は10件までです。先にどれかを完了または削除してください。';
+
+  @override
+  String get lifePlanSaveError => '計画を保存できませんでした。接続を確認して、もう一度お試しください。';
+
+  @override
+  String get lifePlanStarted => '計画を開始しました';
+
+  @override
+  String get lifePlanReminderBody => '計画を開いて、残りのやることを確認しましょう。';
+
+  @override
+  String get lifePlanReminderAfter => 'まだやることが残っています。計画を開いて終わらせましょう。';
+
+  @override
+  String get lifePlanSuggestCar => '車を買った、または売りましたか？ ほかに更新するものを確認しましょう。';
+
+  @override
+  String get lifePlanSuggestTrip => 'しばらくそこに住みますか？';
+
+  @override
+  String get lifePlanSuggestTripBody => '海外への引っ越し計画を始めましょう。出発前に済ませることを Vaultara が示します。';
 }

@@ -2905,10 +2905,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lifeEventsTitle => 'Esdeveniments vitals';
 
   @override
-  String get lifeEventsSubtitle => 'Et mudes, canvies de nom o tens un cotxe nou? Mira què cal actualitzar';
+  String get lifeEventsSubtitle => 'Mudança, un nom nou, un nadó o un cotxe nou? Obtén un pla del que has d\'actualitzar';
 
   @override
-  String get lifeEventsIntro => 'Tria què passa a la teva vida. Vaultara llista els registres que has desat i que normalment cal actualitzar per aquest motiu.';
+  String get lifeEventsIntro => 'Tria què passa. Vaultara fa un pla amb els teus registres desats, mostra què fer abans i després del dia i t\'ho recorda.';
 
   @override
   String get lifeEventMoving => 'Em canvio de casa';
@@ -2952,11 +2952,6 @@ class AppLocalizationsCa extends AppLocalizations {
       one: '$count dels teus registres',
     );
     return '$_temp0';
-  }
-
-  @override
-  String lifeEventProgress(int done, int total) {
-    return '$done de $total actualitzats';
   }
 
   @override
@@ -6623,4 +6618,232 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantHistoryOlder => 'Més antics';
+
+  @override
+  String get lifeEventHomeBuy => 'Compro un habitatge';
+
+  @override
+  String get lifeEventHomeBuyBody => 'Contracta l\'assegurança del nou habitatge abans d\'entrar-hi i després actualitza la teva adreça arreu.';
+
+  @override
+  String get lifeEventHomeSell => 'Venc el meu habitatge';
+
+  @override
+  String get lifeEventHomeSellBody => 'Mantén l\'assegurança fins que la venda sigui definitiva i després cancel·la el que ja no necessitis.';
+
+  @override
+  String get lifeEventMarriage => 'Em caso';
+
+  @override
+  String get lifeEventMarriageBody => 'Actualitza\'ls després del casament, sobretot si canvies de nom o afegeixes la parella a una pòlissa.';
+
+  @override
+  String get lifeEventDivorce => 'Em divorcio';
+
+  @override
+  String get lifeEventDivorceBody => 'Comprova qui està cobert i nomenat a cadascun i tanca o reparteix el que compartíeu.';
+
+  @override
+  String get lifeEventBaby => 'Tindrem un nadó';
+
+  @override
+  String get lifeEventBabyBody => 'Afegeix el nadó a la teva cobertura i revisa les pòlisses. Afegeix el nadó a Família per seguir els seus documents.';
+
+  @override
+  String get lifeEventStudies => 'Començo a estudiar';
+
+  @override
+  String get lifeEventStudiesBody => 'Revisa els permisos, la cobertura i els documents d\'estudiant abans que comencin els estudis.';
+
+  @override
+  String get lifeEventRetiring => 'Em jubilo';
+
+  @override
+  String get lifeEventRetiringBody => 'Retorna les coses de la feina i revisa la cobertura, perquè els avantatges de la feina solen acabar.';
+
+  @override
+  String get lifeEventChildAdult => 'El meu fill fa 16 o 18 anys';
+
+  @override
+  String get lifeEventChildAdultBody => 'Tria el teu fill. A aquesta edat sovint necessita el seu propi DNI, passaport, carnet de conduir o cobertura.';
+
+  @override
+  String get lifeEventBereavement => 'Ha mort algú de la meva família';
+
+  @override
+  String get lifeEventBereavementBody => 'Tria la persona que ha mort. Potser caldrà cancel·lar els seus registres, reclamar-los o passar-los a una altra persona. Ves pas a pas.';
+
+  @override
+  String get lifeNeedProofOfAddress => 'Justificant de domicili';
+
+  @override
+  String get lifeNeedPoliceClearance => 'Certificat d\'antecedents penals';
+
+  @override
+  String get lifeNeedVaccination => 'Certificat de vacunació';
+
+  @override
+  String get lifeNeedStudentCard => 'Carnet d\'estudiant';
+
+  @override
+  String get lifePlanStartTitle => 'Començar un pla';
+
+  @override
+  String get lifePlanStartNew => 'Què passa?';
+
+  @override
+  String get lifePlanInProgress => 'En curs';
+
+  @override
+  String get lifePlanFinishedSection => 'Acabats';
+
+  @override
+  String get lifePlanWhen => 'Quan passa?';
+
+  @override
+  String get lifePlanPickDate => 'Tria una data';
+
+  @override
+  String get lifePlanNoDate => 'Encara sense data';
+
+  @override
+  String get lifePlanWho => 'Per a qui és?';
+
+  @override
+  String get lifePlanAddPerson => 'Afegeix primer aquesta persona a Família perquè Vaultara trobi els seus registres.';
+
+  @override
+  String get lifePlanDestination => 'A quin país et mudes?';
+
+  @override
+  String get lifePlanDestinationOptional => 'País (opcional)';
+
+  @override
+  String get lifePlanBefore => 'Abans';
+
+  @override
+  String get lifePlanAfter => 'Després';
+
+  @override
+  String get lifePlanToDo => 'Per fer';
+
+  @override
+  String get lifePlanDoneSection => 'Fet';
+
+  @override
+  String get lifePlanMayNeed => 'Potser també necessites';
+
+  @override
+  String get lifePlanDoUpdate => 'Actualitza les dades';
+
+  @override
+  String get lifePlanDoRenew => 'Renova\'l';
+
+  @override
+  String get lifePlanDoCancel => 'Cancel·la\'l o retorna\'l';
+
+  @override
+  String get lifePlanDoCheck => 'Comprova que encara serveix';
+
+  @override
+  String get lifePlanMark => 'Marca com a';
+
+  @override
+  String get lifePlanStatusUpdated => 'Actualitzat';
+
+  @override
+  String get lifePlanStatusRenewed => 'Renovat';
+
+  @override
+  String get lifePlanStatusCancelled => 'Cancel·lat';
+
+  @override
+  String get lifePlanStatusNotNeeded => 'No cal';
+
+  @override
+  String get lifePlanStatusUndo => 'Encara no fet';
+
+  @override
+  String get lifePlanFlagExpires => 'Caduca a prop d\'aquesta data. Renova\'l abans.';
+
+  @override
+  String get lifePlanFlagPassport => 'Caduca menys de 6 mesos després de la mudança. Molts països demanen més validesa, així que renova\'l abans de marxar.';
+
+  @override
+  String get lifePlanFlagConvert => 'Potser l\'hauràs de canviar per un carnet local després de la mudança. Consulta les normes locals.';
+
+  @override
+  String get lifePlanAutoChanged => 'Vaultara ha vist que aquest registre ha canviat, així que està marcat com a fet.';
+
+  @override
+  String get lifePlanAutoAdded => 'Afegit després de començar aquest pla.';
+
+  @override
+  String lifePlanProgress(int done, int total) {
+    return '$done de $total fets';
+  }
+
+  @override
+  String lifePlanDaysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Falten $count dies',
+      one: 'Falta 1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fa $count dies',
+      one: 'Fa 1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanAllDone => 'Tot està fet. Pots marcar el pla com a acabat.';
+
+  @override
+  String get lifePlanFinish => 'Marca com a acabat';
+
+  @override
+  String get lifePlanReopen => 'Torna\'l a obrir';
+
+  @override
+  String get lifePlanDelete => 'Elimina el pla';
+
+  @override
+  String get lifePlanDeleteTitle => 'Vols eliminar aquest pla?';
+
+  @override
+  String get lifePlanDeleteBody => 'Només s\'elimina el pla. Els teus registres es queden com estan.';
+
+  @override
+  String get lifePlanLimit => 'Pots tenir fins a 10 plans en curs. Acaba\'n o elimina\'n un primer.';
+
+  @override
+  String get lifePlanSaveError => 'No s\'ha pogut desar el pla. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String get lifePlanStarted => 'Pla començat';
+
+  @override
+  String get lifePlanReminderBody => 'Obre el pla per veure què queda per fer.';
+
+  @override
+  String get lifePlanReminderAfter => 'Encara queden coses per fer. Obre el pla per acabar-les.';
+
+  @override
+  String get lifePlanSuggestCar => 'Has comprat o venut un cotxe? Mira què més cal actualitzar.';
+
+  @override
+  String get lifePlanSuggestTrip => 'Te\'n vas a viure allà una temporada?';
+
+  @override
+  String get lifePlanSuggestTripBody => 'Comença un pla per mudar-te a un altre país. Vaultara et mostra què cal resoldre abans de marxar.';
 }
