@@ -25,6 +25,7 @@ import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
+import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 Future<void> openAskVaultara(
@@ -219,10 +220,14 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     });
     _scrollToEnd();
 
+    // Only the country, and only when the user turned this on.
+    final here = await LocationCountry.current();
+    if (!mounted) return;
     final result = await AssistantService.ask(
       _turns(),
       locale: loc.localeName,
       runId: run.id,
+      here: here,
     );
     // Disposed after the next frame, once the waiting bubble that listens
     // to it is gone.
@@ -403,6 +408,14 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           message.undos[index] = applied.undo;
           _setStatus(message, index, 'applied');
           _offerTripCheck(message, action);
+          if (action.type == AssistantActionType.location) {
+            // Carry on the conversation now that the country is known.
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              if (mounted && !_busy) {
+                _send(AppLocalizations.of(context)!.assistantLocationShared);
+              }
+            });
+          }
         case AssistantApplyResult.opened:
           message.actionStates[index] = AssistantActionState.opened;
           _setStatus(message, index, 'opened');

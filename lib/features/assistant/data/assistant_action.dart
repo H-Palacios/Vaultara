@@ -13,6 +13,7 @@ enum AssistantActionType {
   tripAdd,
   tripEdit,
   setting,
+  location,
   open,
 }
 
@@ -118,6 +119,7 @@ class AssistantTripChanges {
   final TripPurpose? purpose;
   final List<TripFlight>? flights;
   final Map<String, DateTime>? arrivals;
+  final List<String>? places;
 
   const AssistantTripChanges({
     this.name,
@@ -129,6 +131,7 @@ class AssistantTripChanges {
     this.purpose,
     this.flights,
     this.arrivals,
+    this.places,
   });
 
   bool get isEmpty =>
@@ -140,7 +143,8 @@ class AssistantTripChanges {
       driving == null &&
       purpose == null &&
       flights == null &&
-      arrivals == null;
+      arrivals == null &&
+      places == null;
 
   static AssistantTripChanges? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -156,6 +160,9 @@ class AssistantTripChanges {
           ? AssistantAction.flightsOf(raw['flights'])
           : null,
       arrivals: AssistantAction.arrivalsOf(raw['arrivals']),
+      places: raw['places'] is List
+          ? SavedTrip.cleanPlaces(raw['places'] as List)
+          : null,
     );
     return changes.isEmpty ? null : changes;
   }
@@ -241,6 +248,7 @@ class AssistantAction {
   final TripPurpose purpose;
   final List<TripFlight> flights;
   final Map<String, DateTime> arrivals;
+  final List<String> places;
   final AssistantTripChanges? tripChanges;
   final String? screen;
   final String? targetId;
@@ -283,6 +291,7 @@ class AssistantAction {
     this.purpose = TripPurposes.fallback,
     this.flights = const <TripFlight>[],
     this.arrivals = const <String, DateTime>{},
+    this.places = const <String>[],
     this.tripChanges,
     this.screen,
     this.targetId,
@@ -434,6 +443,8 @@ class AssistantAction {
         return _fromTripEdit(raw);
       case 'setting':
         return _fromSetting(raw);
+      case 'location':
+        return const AssistantAction(type: AssistantActionType.location);
       case 'open':
         return _fromOpen(raw);
     }
@@ -569,6 +580,9 @@ class AssistantAction {
       purpose: TripPurposes.fromStorage(raw['purpose']),
       flights: flightsOf(raw['flights']) ?? const <TripFlight>[],
       arrivals: arrivalsOf(raw['arrivals']) ?? const <String, DateTime>{},
+      places: raw['places'] is List
+          ? SavedTrip.cleanPlaces(raw['places'] as List)
+          : const <String>[],
     );
   }
 

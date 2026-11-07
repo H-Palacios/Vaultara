@@ -24,6 +24,7 @@ import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/logic/stay_counter.dart';
+import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/features/travel/logic/trip_checklist.dart';
 import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -217,6 +218,8 @@ class AssistantActionLauncher {
           return await _editTrip(context, action, slot);
         case AssistantActionType.setting:
           return await _setting(context, action, slot);
+        case AssistantActionType.location:
+          return await _location(context);
         case AssistantActionType.open:
           return AssistantNavigator.open(context, action)
               ? AssistantApplyResult.opened
@@ -464,6 +467,17 @@ class AssistantActionLauncher {
     }
   }
 
+  static Future<AssistantApplyResult> _location(BuildContext context) async {
+    final loc = AppLocalizations.of(context)!;
+    if (await LocationCountry.enable()) return AssistantApplyResult.applied;
+    if (!context.mounted) return AssistantApplyResult.failed;
+    _info(context, loc.assistantLocationOff);
+    if (await LocationCountry.blockedForever()) {
+      await LocationCountry.openPhoneSettings();
+    }
+    return AssistantApplyResult.failed;
+  }
+
   static Future<AssistantApplyResult> _addPerson(
     BuildContext context,
     AssistantAction action,
@@ -675,7 +689,9 @@ class AssistantActionLauncher {
     }
     final countries = _validCountries(action.countries);
     final name = action.name ??
-        (countries.isEmpty ? '' : SavedTrip.defaultName(countries));
+        (countries.isEmpty
+            ? ''
+            : SavedTrip.defaultName(countries, places: action.places));
     if (name.isEmpty) {
       _info(context, loc.assistantActionNotPossible);
       return AssistantApplyResult.failed;
@@ -699,6 +715,7 @@ class AssistantActionLauncher {
       countries: countries,
       purpose: action.purpose,
       flights: flights,
+      places: action.places,
     );
     final base = plain.copyWith(
       arrivals: _zonedArrivals(plain, action.arrivals),
@@ -749,13 +766,14 @@ class AssistantActionLauncher {
       return AssistantApplyResult.failed;
     }
 
+    final places = changes.places ?? base.places;
     var name = changes.name ?? base.name;
     if (changes.name == null &&
-        changes.countries != null &&
+        (changes.countries != null || changes.places != null) &&
         base.countries.isNotEmpty &&
-        base.name == SavedTrip.defaultName(base.countries) &&
+        base.hasAutoName &&
         countries.isNotEmpty) {
-      name = SavedTrip.defaultName(countries);
+      name = SavedTrip.defaultName(countries, places: places);
     }
 
     final flights = _validFlights(
@@ -778,6 +796,7 @@ class AssistantActionLauncher {
       driving: changes.driving,
       purpose: changes.purpose,
       flights: flights,
+      places: places,
     );
     final arrivals = changes.arrivals;
     if (arrivals != null) {

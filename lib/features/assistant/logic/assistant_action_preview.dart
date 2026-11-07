@@ -84,6 +84,8 @@ class AssistantActionPreview {
         return 'trip_edit';
       case AssistantActionType.setting:
         return 'setting';
+      case AssistantActionType.location:
+        return 'location';
       case AssistantActionType.open:
         return 'open';
     }
@@ -114,6 +116,14 @@ class AssistantActionPreview {
         return _tripEdit(f, action);
       case AssistantActionType.setting:
         return _setting(f, action);
+      case AssistantActionType.location:
+        return AssistantActionPreview(
+          title: f.loc.assistantLocationTitle,
+          icon: Icons.my_location_rounded,
+          subject: '',
+          rows: const <AssistantChangeRow>[],
+          note: f.loc.assistantLocationNote,
+        );
       case AssistantActionType.open:
         return AssistantActionPreview(
           title: f.loc.assistantOpen,
@@ -430,6 +440,11 @@ class AssistantActionPreview {
           label: loc.assistantFieldCountryCount(action.countries.length),
           after: f.countries(action.countries),
         ),
+      if (action.places.isNotEmpty)
+        AssistantChangeRow(
+          label: loc.travelPlacesLabel,
+          after: action.places.join(', '),
+        ),
       AssistantChangeRow(
         label: loc.travelSectionWho,
         after: f.travellers(action.travellers),
@@ -465,7 +480,12 @@ class AssistantActionPreview {
     final name = action.name;
     final subject = name == null ||
             (action.countries.isNotEmpty &&
-                name == SavedTrip.defaultName(action.countries))
+                (name == SavedTrip.defaultName(action.countries) ||
+                    name ==
+                        SavedTrip.defaultName(
+                          action.countries,
+                          places: action.places,
+                        )))
         ? ''
         : name;
     return AssistantActionPreview(
@@ -495,6 +515,17 @@ class AssistantActionPreview {
         ),
         before: trip == null ? null : f.countries(trip.countries),
         after: f.countries(c.countries!),
+      ));
+    }
+    if (c.places != null) {
+      rows.add(AssistantChangeRow(
+        label: loc.travelPlacesLabel,
+        before: trip == null || trip.places.isEmpty
+            ? null
+            : trip.places.join(', '),
+        after: c.places!.isEmpty
+            ? loc.assistantValueNone
+            : c.places!.join(', '),
       ));
     }
     if (c.departure != null) {
