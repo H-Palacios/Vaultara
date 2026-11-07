@@ -9,6 +9,7 @@ import 'package:vaultara/core/util/text_normaliser.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
+import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
@@ -213,6 +214,8 @@ class AssistantActionLauncher {
           return await _addTrip(context, action, slot);
         case AssistantActionType.tripEdit:
           return await _editTrip(context, action, slot);
+        case AssistantActionType.setting:
+          return await _setting(context, action, slot);
         case AssistantActionType.open:
           return AssistantNavigator.open(context, action)
               ? AssistantApplyResult.opened
@@ -435,6 +438,28 @@ class AssistantActionLauncher {
           .timeout(const Duration(seconds: 6));
     } catch (_) {
       return PlanTier.free;
+    }
+  }
+
+  static Future<AssistantApplyResult> _setting(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    if (!AssistantSettings.available(action.setting)) {
+      _info(context, loc.assistantSettingUnavailable);
+      return AssistantApplyResult.failed;
+    }
+    final result = await AssistantSettings.apply(context, action);
+    switch (result.outcome) {
+      case AssistantSettingOutcome.changed:
+        slot.undo = result.undo;
+        return AssistantApplyResult.applied;
+      case AssistantSettingOutcome.unchanged:
+        return AssistantApplyResult.applied;
+      case AssistantSettingOutcome.failed:
+        return AssistantApplyResult.failed;
     }
   }
 

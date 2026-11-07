@@ -60,6 +60,8 @@ class AssistantStepLabel {
         return name == null
             ? loc.assistantStepTrips
             : loc.assistantStepUpdating(name);
+      case 'setting':
+        return loc.assistantStepSetting;
       case 'screen':
         return loc.assistantStepScreen;
     }
