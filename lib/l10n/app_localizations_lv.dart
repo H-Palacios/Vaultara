@@ -5961,9 +5961,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantDeleteNote => 'Tas tiks pārvietots uz Atkopšanas centru, kur to varēsiet atjaunot 30 dienas.';
 
   @override
-  String get assistantFieldCountries => 'Valstis';
-
-  @override
   String get assistantHistoryAllDeleted => 'Visas sarunas izdzēstas';
 
   @override
@@ -6519,4 +6516,97 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Palīdzi man plānot ceļojumu';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Valstis',
+      one: 'Valsts',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Mainīt iestatījumu';
+
+  @override
+  String get assistantSettingAppLockNote => 'Tālrunis vispirms prasīs pirksta nospiedumu, seju vai ekrāna bloķēšanu.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Tālrunis lūgs atļaut paziņojumus.';
+
+  @override
+  String get assistantSettingUnavailable => 'Šis iestatījums šajā tālrunī nav pieejams.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: izmaiņas nav vajadzīgas';
+  }
+
+  @override
+  String get assistantStepSetting => 'Sagatavo iestatījumu';
+
+  @override
+  String get travelItemAccommodation => 'Apliecinājums par naktsmītni, piemēram, rezervācija';
+
+  @override
+  String get travelItemReturnTicket => 'Atpakaļceļa vai tālākā ceļa biļete';
+
+  @override
+  String get travelItemHostInvite => 'Uzņēmēja adrese un ielūgums, ja valsts to prasa';
+
+  @override
+  String get travelItemBusinessInvite => 'Ielūgums no uzņēmuma, ko apmeklējat';
+
+  @override
+  String get travelItemEmployerLetter => 'Darba devēja vēstule par braucienu';
+
+  @override
+  String get travelItemStudyAcceptance => 'Uzņemšanas vēstule no skolas vai universitātes';
+
+  @override
+  String get travelItemProofOfFunds => 'Līdzekļu apliecinājums, piemēram, jaunākie bankas izraksti';
+
+  @override
+  String get travelItemStudyPermit => 'Studiju vīza vai atļauja apstiprināta';
+
+  @override
+  String get travelItemWorkPermit => 'Darba vīza vai atļauja apstiprināta';
+
+  @override
+  String get travelItemWorkContract => 'Parakstīts darba piedāvājums vai darba līgums';
+
+  @override
+  String get visaPermitNoneStudy => 'Nav saglabāta studiju atļauja';
+
+  @override
+  String get visaPermitNoneWork => 'Nav saglabāta darba atļauja';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Atļauja derīga līdz $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Atļaujai beidzas termiņš $date, pirms atgriežaties';
+  }
+
+  @override
+  String get visaPermitHint => 'Saglabājiet atļauju kā ierakstu, un Vaultara atgādinās pirms termiņa beigām.';
+
+  @override
+  String get visaPermitAdd => 'Pievienot atļauju';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studiju atļauja: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Darba atļauja: $country';
+  }
 }

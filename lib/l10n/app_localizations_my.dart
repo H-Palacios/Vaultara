@@ -5852,9 +5852,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantDeleteNote => '၎င်းကို ပြန်လည်ရယူရေး စင်တာသို့ ရွှေ့မည်ဖြစ်ပြီး ရက် 30 အတွင်း ပြန်ယူနိုင်ပါသည်။';
 
   @override
-  String get assistantFieldCountries => 'နိုင်ငံများ';
-
-  @override
   String get assistantHistoryAllDeleted => 'စကားပြောခန်းအားလုံး ဖျက်ပြီးပါပြီ';
 
   @override
@@ -6402,4 +6399,97 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ခရီးစီစဉ်ရန် ကူညီပါ';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'နိုင်ငံများ',
+      one: 'နိုင်ငံ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'ဆက်တင် ပြောင်းရန်';
+
+  @override
+  String get assistantSettingAppLockNote => 'ဖုန်းက လက်ဗွေ၊ မျက်နှာ သို့မဟုတ် စခရင်လော့ခ်ကို အရင်တောင်းပါမည်။';
+
+  @override
+  String get assistantSettingNotificationsNote => 'ဖုန်းက အသိပေးချက်များကို ခွင့်ပြုရန် တောင်းပါမည်။';
+
+  @override
+  String get assistantSettingUnavailable => 'ဤဆက်တင်ကို ဤဖုန်းတွင် မရနိုင်ပါ။';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ပြောင်းရန်မလိုပါ';
+  }
+
+  @override
+  String get assistantStepSetting => 'ဆက်တင်ကို ပြင်ဆင်နေသည်';
+
+  @override
+  String get travelItemAccommodation => 'တည်းခိုမည့်နေရာ အထောက်အထား၊ ဥပမာ ကြိုတင်စာရင်းသွင်းမှု';
+
+  @override
+  String get travelItemReturnTicket => 'အပြန် သို့မဟုတ် ဆက်လက်ခရီးလက်မှတ်';
+
+  @override
+  String get travelItemHostInvite => 'အိမ်ရှင်၏ လိပ်စာနှင့် နိုင်ငံက တောင်းလျှင် ဖိတ်စာ';
+
+  @override
+  String get travelItemBusinessInvite => 'သွားရောက်မည့် ကုမ္ပဏီ၏ ဖိတ်စာ';
+
+  @override
+  String get travelItemEmployerLetter => 'ခရီးစဉ်နှင့်ပတ်သက်၍ အလုပ်ရှင်၏ စာ';
+
+  @override
+  String get travelItemStudyAcceptance => 'ကျောင်း သို့မဟုတ် တက္ကသိုလ်၏ ဝင်ခွင့်စာ';
+
+  @override
+  String get travelItemProofOfFunds => 'ငွေကြေး အထောက်အထား၊ ဥပမာ မကြာသေးမီ ဘဏ်စာရင်းရှင်းတမ်း';
+
+  @override
+  String get travelItemStudyPermit => 'ပညာသင် ဗီဇာ သို့မဟုတ် ခွင့်ပြုချက် အတည်ပြုပြီး';
+
+  @override
+  String get travelItemWorkPermit => 'အလုပ် ဗီဇာ သို့မဟုတ် ခွင့်ပြုချက် အတည်ပြုပြီး';
+
+  @override
+  String get travelItemWorkContract => 'လက်မှတ်ထိုးထားသော အလုပ်ကမ်းလှမ်းချက် သို့မဟုတ် အလုပ်စာချုပ်';
+
+  @override
+  String get visaPermitNoneStudy => 'ပညာသင်ခွင့်ပြုချက် သိမ်းမထားပါ';
+
+  @override
+  String get visaPermitNoneWork => 'အလုပ်ခွင့်ပြုချက် သိမ်းမထားပါ';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'ခွင့်ပြုချက် $date အထိ အကျုံးဝင်သည်';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'ခွင့်ပြုချက် $date တွင် ကုန်ဆုံးမည်၊ သင်ပြန်မလာမီ';
+  }
+
+  @override
+  String get visaPermitHint => 'ခွင့်ပြုချက်ကို မှတ်တမ်းအဖြစ် သိမ်းပါ၊ မကုန်ဆုံးမီ Vaultara က သတိပေးပါမည်။';
+
+  @override
+  String get visaPermitAdd => 'ခွင့်ပြုချက် ထည့်ရန်';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country အတွက် ပညာသင်ခွင့်ပြုချက်';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country အတွက် အလုပ်ခွင့်ပြုချက်';
+  }
 }

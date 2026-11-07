@@ -10051,12 +10051,6 @@ abstract class AppLocalizations {
   /// **'It moves to the Recovery Centre, where you can restore it for 30 days.'**
   String get assistantDeleteNote;
 
-  /// Label on an assistant trip card for the list of destination countries.
-  ///
-  /// In en, this message translates to:
-  /// **'Countries'**
-  String get assistantFieldCountries;
-
   /// Confirmation shown after the user deleted all saved assistant chats.
   ///
   /// In en, this message translates to:
@@ -10962,6 +10956,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Help me plan a trip'**
   String get assistantSuggestPlanTrip;
+
+  /// Label above the countries on an Ask Vaultara trip card.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Country} other{Countries}}'**
+  String assistantFieldCountryCount(int count);
+
+  /// Title of an Ask Vaultara card that changes an app setting.
+  ///
+  /// In en, this message translates to:
+  /// **'Change a setting'**
+  String get assistantSettingTitle;
+
+  /// No description provided for @assistantSettingAppLockNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone asks for your fingerprint, face or screen lock first.'**
+  String get assistantSettingAppLockNote;
+
+  /// No description provided for @assistantSettingNotificationsNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone asks you to allow notifications.'**
+  String get assistantSettingNotificationsNote;
+
+  /// No description provided for @assistantSettingUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'This setting is not available on this phone.'**
+  String get assistantSettingUnavailable;
+
+  /// Shown when a confirmed setting was already set that way.
+  ///
+  /// In en, this message translates to:
+  /// **'{setting}: no change needed'**
+  String assistantSettingAlready(String setting);
+
+  /// Shown while Ask Vaultara prepares a settings card.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the setting'**
+  String get assistantStepSetting;
+
+  /// No description provided for @travelItemAccommodation.
+  ///
+  /// In en, this message translates to:
+  /// **'Proof of where you are staying, such as a booking'**
+  String get travelItemAccommodation;
+
+  /// Trip checklist item.
+  ///
+  /// In en, this message translates to:
+  /// **'Return or onward ticket'**
+  String get travelItemReturnTicket;
+
+  /// No description provided for @travelItemHostInvite.
+  ///
+  /// In en, this message translates to:
+  /// **'Your host\'s address, and an invitation letter if the country asks for one'**
+  String get travelItemHostInvite;
+
+  /// No description provided for @travelItemBusinessInvite.
+  ///
+  /// In en, this message translates to:
+  /// **'Invitation letter from the company you are visiting'**
+  String get travelItemBusinessInvite;
+
+  /// No description provided for @travelItemEmployerLetter.
+  ///
+  /// In en, this message translates to:
+  /// **'Letter from your employer about the trip'**
+  String get travelItemEmployerLetter;
+
+  /// No description provided for @travelItemStudyAcceptance.
+  ///
+  /// In en, this message translates to:
+  /// **'Acceptance letter from your school or university'**
+  String get travelItemStudyAcceptance;
+
+  /// No description provided for @travelItemProofOfFunds.
+  ///
+  /// In en, this message translates to:
+  /// **'Proof of funds, such as recent bank statements'**
+  String get travelItemProofOfFunds;
+
+  /// No description provided for @travelItemStudyPermit.
+  ///
+  /// In en, this message translates to:
+  /// **'Study visa or permit approved'**
+  String get travelItemStudyPermit;
+
+  /// No description provided for @travelItemWorkPermit.
+  ///
+  /// In en, this message translates to:
+  /// **'Work visa or permit approved'**
+  String get travelItemWorkPermit;
+
+  /// No description provided for @travelItemWorkContract.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed job offer or work contract'**
+  String get travelItemWorkContract;
+
+  /// No description provided for @visaPermitNoneStudy.
+  ///
+  /// In en, this message translates to:
+  /// **'No study permit saved'**
+  String get visaPermitNoneStudy;
+
+  /// No description provided for @visaPermitNoneWork.
+  ///
+  /// In en, this message translates to:
+  /// **'No work permit saved'**
+  String get visaPermitNoneWork;
+
+  /// No description provided for @visaPermitValidUntil.
+  ///
+  /// In en, this message translates to:
+  /// **'Permit valid until {date}'**
+  String visaPermitValidUntil(String date);
+
+  /// No description provided for @visaPermitEndsEarly.
+  ///
+  /// In en, this message translates to:
+  /// **'Permit expires {date}, before you come back'**
+  String visaPermitEndsEarly(String date);
+
+  /// No description provided for @visaPermitHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the permit as a record and Vaultara reminds you before it expires.'**
+  String get visaPermitHint;
+
+  /// No description provided for @visaPermitAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add permit'**
+  String get visaPermitAdd;
+
+  /// Suggested record name for a study permit. {country} is the destination.
+  ///
+  /// In en, this message translates to:
+  /// **'Study permit for {country}'**
+  String visaPermitRecordStudy(String country);
+
+  /// Suggested record name for a work permit. {country} is the destination.
+  ///
+  /// In en, this message translates to:
+  /// **'Work permit for {country}'**
+  String visaPermitRecordWork(String country);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

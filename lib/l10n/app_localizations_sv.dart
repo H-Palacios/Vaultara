@@ -5901,9 +5901,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get assistantDeleteNote => 'Den flyttas till Återställningscenter, där du kan återställa den i 30 dagar.';
 
   @override
-  String get assistantFieldCountries => 'Länder';
-
-  @override
   String get assistantHistoryAllDeleted => 'Alla chattar har raderats';
 
   @override
@@ -6455,4 +6452,97 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Hjälp mig att planera en resa';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Länder',
+      one: 'Land',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Ändra en inställning';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonen ber först om fingeravtryck, ansikte eller skärmlås.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonen ber dig tillåta aviseringar.';
+
+  @override
+  String get assistantSettingUnavailable => 'Den här inställningen finns inte på den här telefonen.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ingen ändring behövs';
+  }
+
+  @override
+  String get assistantStepSetting => 'Förbereder inställningen';
+
+  @override
+  String get travelItemAccommodation => 'Bevis på var du bor, till exempel en bokning';
+
+  @override
+  String get travelItemReturnTicket => 'Retur- eller vidarebiljett';
+
+  @override
+  String get travelItemHostInvite => 'Din värds adress och ett inbjudningsbrev om landet kräver det';
+
+  @override
+  String get travelItemBusinessInvite => 'Inbjudningsbrev från företaget du besöker';
+
+  @override
+  String get travelItemEmployerLetter => 'Brev från din arbetsgivare om resan';
+
+  @override
+  String get travelItemStudyAcceptance => 'Antagningsbesked från skolan eller universitetet';
+
+  @override
+  String get travelItemProofOfFunds => 'Bevis på medel, till exempel aktuella kontoutdrag';
+
+  @override
+  String get travelItemStudyPermit => 'Studievisum eller -tillstånd godkänt';
+
+  @override
+  String get travelItemWorkPermit => 'Arbetsvisum eller -tillstånd godkänt';
+
+  @override
+  String get travelItemWorkContract => 'Undertecknat jobberbjudande eller anställningsavtal';
+
+  @override
+  String get visaPermitNoneStudy => 'Inget studietillstånd sparat';
+
+  @override
+  String get visaPermitNoneWork => 'Inget arbetstillstånd sparat';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Tillståndet gäller till $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Tillståndet går ut $date, innan du kommer hem';
+  }
+
+  @override
+  String get visaPermitHint => 'Spara tillståndet som en post så påminner Vaultara dig innan det går ut.';
+
+  @override
+  String get visaPermitAdd => 'Lägg till tillstånd';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studietillstånd för $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Arbetstillstånd för $country';
+  }
 }

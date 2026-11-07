@@ -5951,9 +5951,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantDeleteNote => 'היא תעבור למרכז שחזור, ושם תוכל לשחזר אותה במשך 30 ימים.';
 
   @override
-  String get assistantFieldCountries => 'מדינות';
-
-  @override
   String get assistantHistoryAllDeleted => 'כל הצ\'אטים נמחקו';
 
   @override
@@ -6509,4 +6506,97 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'עזור לי לתכנן נסיעה';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'מדינות',
+      one: 'מדינה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'שינוי הגדרה';
+
+  @override
+  String get assistantSettingAppLockNote => 'הטלפון יבקש קודם טביעת אצבע, זיהוי פנים או נעילת מסך.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'הטלפון יבקש ממך לאשר התראות.';
+
+  @override
+  String get assistantSettingUnavailable => 'ההגדרה הזו לא זמינה בטלפון הזה.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: אין צורך בשינוי';
+  }
+
+  @override
+  String get assistantStepSetting => 'מכין את ההגדרה';
+
+  @override
+  String get travelItemAccommodation => 'הוכחה למקום הלינה, למשל הזמנה';
+
+  @override
+  String get travelItemReturnTicket => 'כרטיס חזור או המשך';
+
+  @override
+  String get travelItemHostInvite => 'הכתובת של המארחים שלך, ומכתב הזמנה אם המדינה דורשת';
+
+  @override
+  String get travelItemBusinessInvite => 'מכתב הזמנה מהחברה שאליה את/ה נוסע/ת';
+
+  @override
+  String get travelItemEmployerLetter => 'מכתב מהמעסיק על הנסיעה';
+
+  @override
+  String get travelItemStudyAcceptance => 'מכתב קבלה מבית הספר או מהאוניברסיטה';
+
+  @override
+  String get travelItemProofOfFunds => 'הוכחת אמצעים, למשל דפי חשבון בנק אחרונים';
+
+  @override
+  String get travelItemStudyPermit => 'ויזת לימודים או אישור לימודים אושרו';
+
+  @override
+  String get travelItemWorkPermit => 'ויזת עבודה או אישור עבודה אושרו';
+
+  @override
+  String get travelItemWorkContract => 'הצעת עבודה או חוזה עבודה חתומים';
+
+  @override
+  String get visaPermitNoneStudy => 'לא נשמר אישור לימודים';
+
+  @override
+  String get visaPermitNoneWork => 'לא נשמר אישור עבודה';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'האישור בתוקף עד $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'תוקף האישור מסתיים ב-$date, לפני החזרה';
+  }
+
+  @override
+  String get visaPermitHint => 'שמור/י את האישור כרשומה ו-Vaultara יזכיר לך לפני שהוא פג.';
+
+  @override
+  String get visaPermitAdd => 'הוספת אישור';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'אישור לימודים ל$country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'אישור עבודה ל$country';
+  }
 }

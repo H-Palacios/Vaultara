@@ -5902,9 +5902,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get assistantDeleteNote => 'به مرکز بازیابی منتقل می‌شود و تا ۳۰ روز می‌توانید آن را بازیابی کنید.';
 
   @override
-  String get assistantFieldCountries => 'کشورها';
-
-  @override
   String get assistantHistoryAllDeleted => 'همه گفتگوها حذف شدند';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'کمکم کن یک سفر برنامه‌ریزی کنم';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'کشورها',
+      one: 'کشور',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'تغییر یک تنظیم';
+
+  @override
+  String get assistantSettingAppLockNote => 'گوشی شما ابتدا اثر انگشت، چهره یا قفل صفحه را می‌خواهد.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'گوشی از شما می‌خواهد اجازهٔ اعلان‌ها را بدهید.';
+
+  @override
+  String get assistantSettingUnavailable => 'این تنظیم در این گوشی در دسترس نیست.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: نیازی به تغییر نیست';
+  }
+
+  @override
+  String get assistantStepSetting => 'در حال آماده کردن تنظیم';
+
+  @override
+  String get travelItemAccommodation => 'مدرک محل اقامت، مثلاً رزرو';
+
+  @override
+  String get travelItemReturnTicket => 'بلیت بازگشت یا ادامهٔ سفر';
+
+  @override
+  String get travelItemHostInvite => 'نشانی میزبان، و دعوت‌نامه اگر کشور بخواهد';
+
+  @override
+  String get travelItemBusinessInvite => 'دعوت‌نامه از شرکتی که از آن بازدید می‌کنید';
+
+  @override
+  String get travelItemEmployerLetter => 'نامهٔ کارفرما دربارهٔ سفر';
+
+  @override
+  String get travelItemStudyAcceptance => 'نامهٔ پذیرش از مدرسه یا دانشگاه';
+
+  @override
+  String get travelItemProofOfFunds => 'مدرک تمکن مالی، مثلاً صورت‌حساب‌های اخیر بانکی';
+
+  @override
+  String get travelItemStudyPermit => 'ویزا یا مجوز تحصیل تأیید شده است';
+
+  @override
+  String get travelItemWorkPermit => 'ویزا یا مجوز کار تأیید شده است';
+
+  @override
+  String get travelItemWorkContract => 'پیشنهاد کار یا قرارداد کار امضاشده';
+
+  @override
+  String get visaPermitNoneStudy => 'هیچ مجوز تحصیلی ذخیره نشده است';
+
+  @override
+  String get visaPermitNoneWork => 'هیچ مجوز کاری ذخیره نشده است';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'مجوز تا $date معتبر است';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'مجوز در $date، پیش از بازگشت شما، منقضی می‌شود';
+  }
+
+  @override
+  String get visaPermitHint => 'مجوز را به‌صورت سابقه ذخیره کنید تا Vaultara پیش از انقضا یادآوری کند.';
+
+  @override
+  String get visaPermitAdd => 'افزودن مجوز';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'مجوز تحصیل برای $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'مجوز کار برای $country';
+  }
 }

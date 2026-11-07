@@ -5902,9 +5902,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get assistantDeleteNote => 'Μεταφέρεται στο Κέντρο ανάκτησης, όπου μπορείτε να την επαναφέρετε για 30 ημέρες.';
 
   @override
-  String get assistantFieldCountries => 'Χώρες';
-
-  @override
   String get assistantHistoryAllDeleted => 'Όλες οι συνομιλίες διαγράφηκαν';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Βοήθησέ με να σχεδιάσω ένα ταξίδι';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Χώρες',
+      one: 'Χώρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Αλλαγή ρύθμισης';
+
+  @override
+  String get assistantSettingAppLockNote => 'Το κινητό σας ζητά πρώτα δακτυλικό αποτύπωμα, πρόσωπο ή κλείδωμα οθόνης.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Το κινητό σας θα σας ζητήσει να επιτρέψετε τις ειδοποιήσεις.';
+
+  @override
+  String get assistantSettingUnavailable => 'Αυτή η ρύθμιση δεν είναι διαθέσιμη σε αυτό το κινητό.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: δεν χρειάζεται αλλαγή';
+  }
+
+  @override
+  String get assistantStepSetting => 'Προετοιμασία της ρύθμισης';
+
+  @override
+  String get travelItemAccommodation => 'Απόδειξη του πού θα μείνετε, π.χ. κράτηση';
+
+  @override
+  String get travelItemReturnTicket => 'Εισιτήριο επιστροφής ή συνέχισης';
+
+  @override
+  String get travelItemHostInvite => 'Η διεύθυνση του οικοδεσπότη σας και πρόσκληση, αν τη ζητά η χώρα';
+
+  @override
+  String get travelItemBusinessInvite => 'Επιστολή πρόσκλησης από την εταιρεία που επισκέπτεστε';
+
+  @override
+  String get travelItemEmployerLetter => 'Επιστολή του εργοδότη σας για το ταξίδι';
+
+  @override
+  String get travelItemStudyAcceptance => 'Επιστολή αποδοχής από το σχολείο ή το πανεπιστήμιό σας';
+
+  @override
+  String get travelItemProofOfFunds => 'Απόδειξη οικονομικών πόρων, π.χ. πρόσφατα αντίγραφα κίνησης λογαριασμού';
+
+  @override
+  String get travelItemStudyPermit => 'Εγκρίθηκε φοιτητική βίζα ή άδεια';
+
+  @override
+  String get travelItemWorkPermit => 'Εγκρίθηκε βίζα ή άδεια εργασίας';
+
+  @override
+  String get travelItemWorkContract => 'Υπογεγραμμένη πρόταση εργασίας ή σύμβαση';
+
+  @override
+  String get visaPermitNoneStudy => 'Δεν έχει αποθηκευτεί άδεια σπουδών';
+
+  @override
+  String get visaPermitNoneWork => 'Δεν έχει αποθηκευτεί άδεια εργασίας';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Η άδεια ισχύει έως $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Η άδεια λήγει στις $date, πριν επιστρέψετε';
+  }
+
+  @override
+  String get visaPermitHint => 'Αποθηκεύστε την άδεια ως εγγραφή και το Vaultara θα σας υπενθυμίσει πριν λήξει.';
+
+  @override
+  String get visaPermitAdd => 'Προσθήκη άδειας';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Άδεια σπουδών για $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Άδεια εργασίας για $country';
+  }
 }

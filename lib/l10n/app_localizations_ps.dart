@@ -5902,9 +5902,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantDeleteNote => 'دا د بیا رغونې مرکز ته ځي، چېرته چې تاسو یې تر 30 ورځو پورې بیرته راګرځولی شئ.';
 
   @override
-  String get assistantFieldCountries => 'هېوادونه';
-
-  @override
   String get assistantHistoryAllDeleted => 'ټولې خبرې اترې ړنګې شوې';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'د سفر په پلان کې مې مرسته وکړه';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'هېوادونه',
+      one: 'هېواد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'یوه تنظیم بدل کړئ';
+
+  @override
+  String get assistantSettingAppLockNote => 'ستاسو تلیفون به لومړی د ګوتې نښه، مخ یا د سکرین قلف وغواړي.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'ستاسو تلیفون به له تاسو وغواړي چې خبرتیاوو ته اجازه ورکړئ.';
+
+  @override
+  String get assistantSettingUnavailable => 'دا تنظیم په دې تلیفون کې نشته.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: بدلون ته اړتیا نشته';
+  }
+
+  @override
+  String get assistantStepSetting => 'تنظیم چمتو کېږي';
+
+  @override
+  String get travelItemAccommodation => 'د اوسېدو ځای ثبوت، لکه بکینګ';
+
+  @override
+  String get travelItemReturnTicket => 'د راستنېدو یا مخکې تلو ټکټ';
+
+  @override
+  String get travelItemHostInvite => 'د کوربه پته، او که هېواد وغواړي د بلنې لیک';
+
+  @override
+  String get travelItemBusinessInvite => 'د هغه شرکت د بلنې لیک چې ورځئ';
+
+  @override
+  String get travelItemEmployerLetter => 'د سفر په اړه د ستاسو د کارګمارونکي لیک';
+
+  @override
+  String get travelItemStudyAcceptance => 'د ښوونځي یا پوهنتون د منلو لیک';
+
+  @override
+  String get travelItemProofOfFunds => 'د پیسو ثبوت، لکه وروستي بانکي صورت حسابونه';
+
+  @override
+  String get travelItemStudyPermit => 'د زده کړې ویزه یا جواز تصویب شو';
+
+  @override
+  String get travelItemWorkPermit => 'د کار ویزه یا جواز تصویب شو';
+
+  @override
+  String get travelItemWorkContract => 'لاسلیک شوې دندې وړاندیز یا د کار تړون';
+
+  @override
+  String get visaPermitNoneStudy => 'د زده کړې جواز نه دی خوندي شوی';
+
+  @override
+  String get visaPermitNoneWork => 'د کار جواز نه دی خوندي شوی';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'جواز تر $date پورې اعتبار لري';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'جواز په $date پای ته رسېږي، مخکې له دې چې راستون شئ';
+  }
+
+  @override
+  String get visaPermitHint => 'جواز د ریکارډ په توګه خوندي کړئ، Vaultara به مو د پای ته رسېدو مخکې خبر کړي.';
+
+  @override
+  String get visaPermitAdd => 'جواز اضافه کړئ';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'د $country لپاره د زده کړې جواز';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'د $country لپاره د کار جواز';
+  }
 }

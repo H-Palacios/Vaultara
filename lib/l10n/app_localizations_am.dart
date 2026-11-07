@@ -5902,9 +5902,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantDeleteNote => 'ወደ የመልሶ ማግኛ ማዕከል ይዛወራል፤ እዚያ ለ30 ቀናት መልሰው ማግኘት ይችላሉ።';
 
   @override
-  String get assistantFieldCountries => 'አገሮች';
-
-  @override
   String get assistantHistoryAllDeleted => 'ሁሉም ውይይቶች ተሰርዘዋል';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ጉዞ ለማቀድ እርዱኝ';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'አገሮች',
+      one: 'አገር',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'ቅንብር ይቀይሩ';
+
+  @override
+  String get assistantSettingAppLockNote => 'ስልክዎ መጀመሪያ የጣት አሻራዎን፣ ፊትዎን ወይም የማያ ገጽ መቆለፊያዎን ይጠይቃል።';
+
+  @override
+  String get assistantSettingNotificationsNote => 'ስልክዎ ማሳወቂያዎችን እንዲፈቅዱ ይጠይቅዎታል።';
+
+  @override
+  String get assistantSettingUnavailable => 'ይህ ቅንብር በዚህ ስልክ ላይ አይገኝም።';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting፦ ለውጥ አያስፈልግም';
+  }
+
+  @override
+  String get assistantStepSetting => 'ቅንብሩን በማዘጋጀት ላይ';
+
+  @override
+  String get travelItemAccommodation => 'የሚያርፉበት ቦታ ማረጋገጫ፣ ለምሳሌ ቦታ ማስያዣ';
+
+  @override
+  String get travelItemReturnTicket => 'የመመለሻ ወይም ቀጣይ ጉዞ ትኬት';
+
+  @override
+  String get travelItemHostInvite => 'የአስተናጋጅዎ አድራሻ፣ አገሩ ከጠየቀ ደግሞ የግብዣ ደብዳቤ';
+
+  @override
+  String get travelItemBusinessInvite => 'ከሚጎበኙት ኩባንያ የግብዣ ደብዳቤ';
+
+  @override
+  String get travelItemEmployerLetter => 'ስለ ጉዞው ከአሠሪዎ የተሰጠ ደብዳቤ';
+
+  @override
+  String get travelItemStudyAcceptance => 'ከትምህርት ቤትዎ ወይም ከዩኒቨርሲቲዎ የመቀበያ ደብዳቤ';
+
+  @override
+  String get travelItemProofOfFunds => 'የገንዘብ ማረጋገጫ፣ ለምሳሌ የቅርብ ጊዜ የባንክ መግለጫዎች';
+
+  @override
+  String get travelItemStudyPermit => 'የትምህርት ቪዛ ወይም ፈቃድ ጸድቋል';
+
+  @override
+  String get travelItemWorkPermit => 'የሥራ ቪዛ ወይም ፈቃድ ጸድቋል';
+
+  @override
+  String get travelItemWorkContract => 'የተፈረመ የሥራ ቅናሽ ወይም የሥራ ውል';
+
+  @override
+  String get visaPermitNoneStudy => 'ምንም የትምህርት ፈቃድ አልተቀመጠም';
+
+  @override
+  String get visaPermitNoneWork => 'ምንም የሥራ ፈቃድ አልተቀመጠም';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'ፈቃዱ እስከ $date ድረስ የሚሰራ ነው';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'ፈቃዱ $date ያበቃል፣ ከመመለስዎ በፊት';
+  }
+
+  @override
+  String get visaPermitHint => 'ፈቃዱን እንደ መዝገብ ያስቀምጡ፣ Vaultara ከማለቁ በፊት ያስታውስዎታል።';
+
+  @override
+  String get visaPermitAdd => 'ፈቃድ ያክሉ';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'ለ$country የትምህርት ፈቃድ';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'ለ$country የሥራ ፈቃድ';
+  }
 }

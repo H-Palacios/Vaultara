@@ -5902,9 +5902,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get assistantDeleteNote => 'Hún fer í Endurheimtarmiðstöð, þar sem þú getur endurheimt hana í 30 daga.';
 
   @override
-  String get assistantFieldCountries => 'Lönd';
-
-  @override
   String get assistantHistoryAllDeleted => 'Öllum spjöllum eytt';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Hjálpaðu mér að skipuleggja ferð';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lönd',
+      one: 'Land',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Breyta stillingu';
+
+  @override
+  String get assistantSettingAppLockNote => 'Síminn biður fyrst um fingrafar, andlit eða skjálás.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Síminn biður þig að leyfa tilkynningar.';
+
+  @override
+  String get assistantSettingUnavailable => 'Þessi stilling er ekki í boði í þessum síma.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: engin breyting nauðsynleg';
+  }
+
+  @override
+  String get assistantStepSetting => 'Undirbý stillinguna';
+
+  @override
+  String get travelItemAccommodation => 'Staðfesting á gistingu, t.d. bókun';
+
+  @override
+  String get travelItemReturnTicket => 'Miði heim eða áfram';
+
+  @override
+  String get travelItemHostInvite => 'Heimilisfang gestgjafans og boðsbréf ef landið krefst þess';
+
+  @override
+  String get travelItemBusinessInvite => 'Boðsbréf frá fyrirtækinu sem þú heimsækir';
+
+  @override
+  String get travelItemEmployerLetter => 'Bréf frá vinnuveitanda um ferðina';
+
+  @override
+  String get travelItemStudyAcceptance => 'Inntökubréf frá skólanum eða háskólanum';
+
+  @override
+  String get travelItemProofOfFunds => 'Staðfesting á fjármunum, t.d. nýleg bankayfirlit';
+
+  @override
+  String get travelItemStudyPermit => 'Námsáritun eða -leyfi samþykkt';
+
+  @override
+  String get travelItemWorkPermit => 'Vinnuáritun eða -leyfi samþykkt';
+
+  @override
+  String get travelItemWorkContract => 'Undirritað atvinnutilboð eða ráðningarsamningur';
+
+  @override
+  String get visaPermitNoneStudy => 'Ekkert námsleyfi vistað';
+
+  @override
+  String get visaPermitNoneWork => 'Ekkert atvinnuleyfi vistað';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Leyfið gildir til $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Leyfið rennur út $date, áður en þú kemur heim';
+  }
+
+  @override
+  String get visaPermitHint => 'Vistaðu leyfið sem færslu og Vaultara minnir þig á áður en það rennur út.';
+
+  @override
+  String get visaPermitAdd => 'Bæta við leyfi';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Námsleyfi fyrir $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Atvinnuleyfi fyrir $country';
+  }
 }

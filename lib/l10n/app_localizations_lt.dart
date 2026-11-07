@@ -6032,9 +6032,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get assistantDeleteNote => 'Jis perkeliamas į Atkūrimo centrą, kur galėsite jį atkurti per 30 dienų.';
 
   @override
-  String get assistantFieldCountries => 'Šalys';
-
-  @override
   String get assistantHistoryAllDeleted => 'Visi pokalbiai ištrinti';
 
   @override
@@ -6594,4 +6591,97 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Padėk man suplanuoti kelionę';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Šalys',
+      one: 'Šalis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Keisti nustatymą';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonas pirmiausia paprašys piršto atspaudo, veido ar ekrano užrakto.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonas paprašys leisti pranešimus.';
+
+  @override
+  String get assistantSettingUnavailable => 'Šis nustatymas šiame telefone nepasiekiamas.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: keisti nereikia';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ruošiamas nustatymas';
+
+  @override
+  String get travelItemAccommodation => 'Apgyvendinimo įrodymas, pvz., rezervacija';
+
+  @override
+  String get travelItemReturnTicket => 'Bilietas atgal arba tolimesnei kelionei';
+
+  @override
+  String get travelItemHostInvite => 'Jus priimančio asmens adresas ir kvietimas, jei šalis jo prašo';
+
+  @override
+  String get travelItemBusinessInvite => 'Kvietimas iš įmonės, kurioje lankotės';
+
+  @override
+  String get travelItemEmployerLetter => 'Darbdavio laiškas apie kelionę';
+
+  @override
+  String get travelItemStudyAcceptance => 'Priėmimo laiškas iš mokyklos ar universiteto';
+
+  @override
+  String get travelItemProofOfFunds => 'Lėšų įrodymas, pvz., naujausi banko išrašai';
+
+  @override
+  String get travelItemStudyPermit => 'Studijų viza ar leidimas patvirtinti';
+
+  @override
+  String get travelItemWorkPermit => 'Darbo viza ar leidimas patvirtinti';
+
+  @override
+  String get travelItemWorkContract => 'Pasirašytas darbo pasiūlymas arba darbo sutartis';
+
+  @override
+  String get visaPermitNoneStudy => 'Studijų leidimas neišsaugotas';
+
+  @override
+  String get visaPermitNoneWork => 'Darbo leidimas neišsaugotas';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Leidimas galioja iki $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Leidimas baigiasi $date, prieš jums grįžtant';
+  }
+
+  @override
+  String get visaPermitHint => 'Išsaugokite leidimą kaip įrašą ir Vaultara primins prieš jam baigiantis.';
+
+  @override
+  String get visaPermitAdd => 'Pridėti leidimą';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studijų leidimas: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Darbo leidimas: $country';
+  }
 }

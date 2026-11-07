@@ -5902,9 +5902,6 @@ class AppLocalizationsNe extends AppLocalizations {
   String get assistantDeleteNote => 'यो पुनःप्राप्ति केन्द्रमा सर्छ, जहाँ तपाईं यसलाई 30 दिनसम्म पुनर्स्थापना गर्न सक्नुहुन्छ।';
 
   @override
-  String get assistantFieldCountries => 'देशहरू';
-
-  @override
   String get assistantHistoryAllDeleted => 'सबै च्याट हटाइए';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'यात्राको योजना बनाउन मद्दत गर्नुहोस्';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'देशहरू',
+      one: 'देश',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'सेटिङ बदल्नुहोस्';
+
+  @override
+  String get assistantSettingAppLockNote => 'तपाईंको फोनले पहिले औंठाछाप, अनुहार वा स्क्रिन लक माग्छ।';
+
+  @override
+  String get assistantSettingNotificationsNote => 'तपाईंको फोनले सूचनाहरूलाई अनुमति दिन भन्छ।';
+
+  @override
+  String get assistantSettingUnavailable => 'यो सेटिङ यो फोनमा उपलब्ध छैन।';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: परिवर्तन आवश्यक छैन';
+  }
+
+  @override
+  String get assistantStepSetting => 'सेटिङ तयार हुँदैछ';
+
+  @override
+  String get travelItemAccommodation => 'तपाईं कहाँ बस्नुहुन्छ भन्ने प्रमाण, जस्तै बुकिङ';
+
+  @override
+  String get travelItemReturnTicket => 'फर्कने वा अगाडिको यात्राको टिकट';
+
+  @override
+  String get travelItemHostInvite => 'तपाईंको आतिथेयको ठेगाना, र देशले मागेमा निमन्त्रणा पत्र';
+
+  @override
+  String get travelItemBusinessInvite => 'तपाईंले भेट्ने कम्पनीको निमन्त्रणा पत्र';
+
+  @override
+  String get travelItemEmployerLetter => 'यात्राबारे तपाईंको रोजगारदाताको पत्र';
+
+  @override
+  String get travelItemStudyAcceptance => 'विद्यालय वा विश्वविद्यालयको भर्ना पत्र';
+
+  @override
+  String get travelItemProofOfFunds => 'रकमको प्रमाण, जस्तै हालका बैंक स्टेटमेन्ट';
+
+  @override
+  String get travelItemStudyPermit => 'अध्ययन भिसा वा अनुमति स्वीकृत';
+
+  @override
+  String get travelItemWorkPermit => 'कार्य भिसा वा अनुमति स्वीकृत';
+
+  @override
+  String get travelItemWorkContract => 'हस्ताक्षर गरिएको जागिर प्रस्ताव वा कार्य सम्झौता';
+
+  @override
+  String get visaPermitNoneStudy => 'कुनै अध्ययन अनुमति सुरक्षित छैन';
+
+  @override
+  String get visaPermitNoneWork => 'कुनै कार्य अनुमति सुरक्षित छैन';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'अनुमति $date सम्म मान्य';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'अनुमति $date मा सकिन्छ, तपाईं फर्कनुअघि';
+  }
+
+  @override
+  String get visaPermitHint => 'अनुमतिलाई रेकर्डका रूपमा सुरक्षित गर्नुहोस्, सकिनुअघि Vaultara ले सम्झाउँछ।';
+
+  @override
+  String get visaPermitAdd => 'अनुमति थप्नुहोस्';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country को अध्ययन अनुमति';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country को कार्य अनुमति';
+  }
 }

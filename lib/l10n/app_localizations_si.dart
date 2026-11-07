@@ -5901,9 +5901,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get assistantDeleteNote => 'එය ප්‍රතිසාධන මධ්‍යස්ථානයට යයි, එහිදී ඔබට දින 30ක් ඇතුළත එය ප්‍රතිසාධනය කළ හැක.';
 
   @override
-  String get assistantFieldCountries => 'රටවල්';
-
-  @override
   String get assistantHistoryAllDeleted => 'සියලු සංවාද මකා දැමිණි';
 
   @override
@@ -6455,4 +6452,97 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'ගමනක් සැලසුම් කිරීමට උදව් කරන්න';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'රටවල්',
+      one: 'රට',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'සැකසුමක් වෙනස් කරන්න';
+
+  @override
+  String get assistantSettingAppLockNote => 'ඔබගේ දුරකථනය මුලින්ම ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල ඉල්ලයි.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'දැනුම්දීම්වලට ඉඩ දෙන්නැයි ඔබගේ දුරකථනය ඉල්ලයි.';
+
+  @override
+  String get assistantSettingUnavailable => 'මෙම සැකසුම මෙම දුරකථනයේ නැත.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: වෙනසක් අවශ්‍ය නැත';
+  }
+
+  @override
+  String get assistantStepSetting => 'සැකසුම සූදානම් කරමින්';
+
+  @override
+  String get travelItemAccommodation => 'ඔබ නවතින ස්ථානයේ සාක්ෂි, උදා. වෙන්කිරීමක්';
+
+  @override
+  String get travelItemReturnTicket => 'ආපසු හෝ ඉදිරි ගමන් ප්‍රවේශපත්‍රය';
+
+  @override
+  String get travelItemHostInvite => 'ඔබගේ සත්කාරකයාගේ ලිපිනය, රට ඉල්ලන්නේ නම් ආරාධනා ලිපියක්';
+
+  @override
+  String get travelItemBusinessInvite => 'ඔබ යන සමාගමෙන් ආරාධනා ලිපිය';
+
+  @override
+  String get travelItemEmployerLetter => 'ගමන ගැන ඔබගේ සේවායෝජකයාගෙන් ලිපියක්';
+
+  @override
+  String get travelItemStudyAcceptance => 'පාසලෙන් හෝ විශ්වවිද්‍යාලයෙන් ඇතුළත් කිරීමේ ලිපිය';
+
+  @override
+  String get travelItemProofOfFunds => 'මුදල් සාක්ෂි, උදා. මෑත බැංකු ප්‍රකාශ';
+
+  @override
+  String get travelItemStudyPermit => 'අධ්‍යයන වීසා හෝ බලපත්‍රය අනුමතයි';
+
+  @override
+  String get travelItemWorkPermit => 'රැකියා වීසා හෝ බලපත්‍රය අනුමතයි';
+
+  @override
+  String get travelItemWorkContract => 'අත්සන් කළ රැකියා දීමනාව හෝ රැකියා ගිවිසුම';
+
+  @override
+  String get visaPermitNoneStudy => 'අධ්‍යයන බලපත්‍රයක් සුරැකී නැත';
+
+  @override
+  String get visaPermitNoneWork => 'රැකියා බලපත්‍රයක් සුරැකී නැත';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'බලපත්‍රය $date දක්වා වලංගුයි';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'බලපත්‍රය $date දින කල් ඉකුත් වේ, ඔබ ආපසු එන්න පෙර';
+  }
+
+  @override
+  String get visaPermitHint => 'බලපත්‍රය වාර්තාවක් ලෙස සුරකින්න, කල් ඉකුත් වීමට පෙර Vaultara මතක් කරයි.';
+
+  @override
+  String get visaPermitAdd => 'බලපත්‍රය එක් කරන්න';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country අධ්‍යයන බලපත්‍රය';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country රැකියා බලපත්‍රය';
+  }
 }
