@@ -8194,7 +8194,7 @@ abstract class AppLocalizations {
   /// Subtitle of the Ask Vaultara tile in Profile, Smart tools.
   ///
   /// In en, this message translates to:
-  /// **'Ask about your records in plain words'**
+  /// **'Ask about records, trips and settings in plain words'**
   String get assistantTileSubtitle;
 
   /// Intro text on the empty Ask Vaultara screen.
@@ -8206,7 +8206,7 @@ abstract class AppLocalizations {
   /// Hint in the Ask Vaultara message field.
   ///
   /// In en, this message translates to:
-  /// **'Ask about your records'**
+  /// **'Ask about records, trips or the app'**
   String get assistantHint;
 
   /// Suggestion chip. Tapping sends this question to the assistant.
@@ -8257,12 +8257,6 @@ abstract class AppLocalizations {
   /// **'Voice input is not available. Check that Vaultara may use the microphone.'**
   String get assistantMicUnavailable;
 
-  /// Shown while waiting for the assistant reply.
-  ///
-  /// In en, this message translates to:
-  /// **'Checking your records'**
-  String get assistantThinking;
-
   /// Assistant error when there is no internet.
   ///
   /// In en, this message translates to:
@@ -8302,7 +8296,7 @@ abstract class AppLocalizations {
   /// Body shown to free users on the Ask Vaultara screen, and when the server says the plan is not paid.
   ///
   /// In en, this message translates to:
-  /// **'Upgrade to ask questions about your records and add records in plain words.'**
+  /// **'Upgrade to ask about your records, trips and settings, and make changes in plain words.'**
   String get assistantPremiumBody;
 
   /// Button that opens the plans screen.
@@ -10770,6 +10764,204 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Vaultara is not part of this site. If this site says something different from Vaultara, follow this site.'**
   String get visaLeavingRulesNote;
+
+  /// Shown while Ask Vaultara starts working on an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking'**
+  String get assistantStepThinking;
+
+  /// Shown when one step of an Ask Vaultara answer takes long.
+  ///
+  /// In en, this message translates to:
+  /// **'Still working on it'**
+  String get assistantStepSlow;
+
+  /// Ask Vaultara is reading the user's records.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your records'**
+  String get assistantStepRecords;
+
+  /// Ask Vaultara is reading the user's trips.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your trips'**
+  String get assistantStepTrips;
+
+  /// Ask Vaultara is reading the people the user tracks records for.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your people'**
+  String get assistantStepPeople;
+
+  /// Ask Vaultara is preparing a new record card. Nothing is saved until the user confirms.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing {name}'**
+  String assistantStepRecordAdd(String name);
+
+  /// Ask Vaultara is preparing changes to a record. Nothing is saved until the user confirms.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing changes to {name}'**
+  String assistantStepRecordEdit(String name);
+
+  /// Ask Vaultara is preparing a renewal with a new expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the new date for {name}'**
+  String assistantStepRecordRenew(String name);
+
+  /// Ask Vaultara is preparing a delete card. Nothing is deleted until the user confirms.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing to delete {name}'**
+  String assistantStepRecordDelete(String name);
+
+  /// Ask Vaultara is preparing a record change for a locked or unnamed record.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the change'**
+  String get assistantStepRecordGeneric;
+
+  /// Ask Vaultara is preparing to add a person.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding {name}'**
+  String assistantStepPersonAdd(String name);
+
+  /// Ask Vaultara is preparing changes to a person or a trip.
+  ///
+  /// In en, this message translates to:
+  /// **'Updating {name}'**
+  String assistantStepUpdating(String name);
+
+  /// Ask Vaultara is preparing changes to the user's own details.
+  ///
+  /// In en, this message translates to:
+  /// **'Updating your details'**
+  String get assistantStepPersonMe;
+
+  /// Ask Vaultara is preparing a new trip. place is one or more country names.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing your trip to {place}'**
+  String assistantStepTripAdd(String place);
+
+  /// Ask Vaultara is finding the screen the user asked about.
+  ///
+  /// In en, this message translates to:
+  /// **'Finding the right screen'**
+  String get assistantStepScreen;
+
+  /// Button that stops the answer being worked out.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop'**
+  String get assistantStop;
+
+  /// Shown in the chat after the user stopped an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'You stopped this answer.'**
+  String get assistantStopped;
+
+  /// Copies an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get assistantCopy;
+
+  /// Confirmation after copying an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get assistantCopied;
+
+  /// Thumbs up on an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Helpful'**
+  String get assistantHelpful;
+
+  /// Thumbs down on an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Not helpful'**
+  String get assistantNotHelpful;
+
+  /// Confirmation after rating an answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks for the feedback'**
+  String get assistantFeedbackThanks;
+
+  /// Reverses a change the user confirmed in Ask Vaultara.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get assistantUndo;
+
+  /// Reverses all changes confirmed from one combined card.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo all'**
+  String get assistantUndoAll;
+
+  /// Confirmation after undoing a change.
+  ///
+  /// In en, this message translates to:
+  /// **'Change undone'**
+  String get assistantUndone;
+
+  /// Shown when a change could not be undone.
+  ///
+  /// In en, this message translates to:
+  /// **'This could not be undone. Make the change yourself.'**
+  String get assistantUndoFailed;
+
+  /// Title of a card that holds several record changes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{{count} change} other{{count} changes}}'**
+  String assistantBatchTitle(int count);
+
+  /// Confirms every change on a combined card.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm all'**
+  String get assistantConfirmAll;
+
+  /// Confirms only the ticked changes on a combined card.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm {count}'**
+  String assistantConfirmSelected(int count);
+
+  /// Starter question for a record that expires soon. Sent as the user's message.
+  ///
+  /// In en, this message translates to:
+  /// **'Help me renew {name}'**
+  String assistantSuggestRenew(String name);
+
+  /// Starter question for a record that has expired. Sent as the user's message.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has expired. What do I do?'**
+  String assistantSuggestExpired(String name);
+
+  /// Starter question for an upcoming trip. Sent as the user's message. place is one or more country names or the trip name.
+  ///
+  /// In en, this message translates to:
+  /// **'Am I ready for my trip to {place}?'**
+  String assistantSuggestTripReady(String place);
+
+  /// Starter question when the user has no upcoming trip. Sent as the user's message.
+  ///
+  /// In en, this message translates to:
+  /// **'Help me plan a trip'**
+  String get assistantSuggestPlanTrip;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

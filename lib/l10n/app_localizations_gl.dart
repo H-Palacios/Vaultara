@@ -4754,13 +4754,13 @@ class AppLocalizationsGl extends AppLocalizations {
   String get assistantTitle => 'Pregunta a Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Pregunta polos teus rexistros con palabras sinxelas';
+  String get assistantTileSubtitle => 'Pregunta por rexistros, viaxes e axustes con palabras sinxelas';
 
   @override
   String get assistantIntro => 'Pregúntame polos teus rexistros e renovacións. Tamén podo preparar rexistros novos para que os revises.';
 
   @override
-  String get assistantHint => 'Pregunta polos teus rexistros';
+  String get assistantHint => 'Pregunta por rexistros, viaxes ou a app';
 
   @override
   String get assistantSuggestionMonth => 'Que caduca este mes?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsGl extends AppLocalizations {
   String get assistantMicUnavailable => 'A entrada de voz non está dispoñible. Comproba que Vaultara pode usar o micrófono.';
 
   @override
-  String get assistantThinking => 'Revisando os teus rexistros';
-
-  @override
   String get assistantErrorOffline => 'Non tes conexión. Conéctate a internet e téntao de novo.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get assistantPremiumTitle => 'Pregunta a Vaultara forma parte de Premium';
 
   @override
-  String get assistantPremiumBody => 'Pasa a Premium para facer preguntas sobre os teus rexistros e engadir rexistros con palabras sinxelas.';
+  String get assistantPremiumBody => 'Pasa a Premium para preguntar polos teus rexistros, viaxes e axustes, e facer cambios con palabras sinxelas.';
 
   @override
   String get assistantSeePlans => 'Ver plans';
@@ -6330,4 +6327,133 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara non forma parte deste sitio. Se este sitio di algo distinto de Vaultara, segue este sitio.';
+
+  @override
+  String get assistantStepThinking => 'Pensando';
+
+  @override
+  String get assistantStepSlow => 'Aínda traballando niso';
+
+  @override
+  String get assistantStepRecords => 'Revisando os teus rexistros';
+
+  @override
+  String get assistantStepTrips => 'Revisando as túas viaxes';
+
+  @override
+  String get assistantStepPeople => 'Revisando as túas persoas';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Preparando $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Preparando cambios en $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Preparando a nova data de $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Preparando a eliminación de $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Preparando o cambio';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Engadindo a $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Actualizando $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Actualizando os teus datos';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Preparando a túa viaxe a $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Buscando a pantalla axeitada';
+
+  @override
+  String get assistantStop => 'Deter';
+
+  @override
+  String get assistantStopped => 'Detiveches esta resposta.';
+
+  @override
+  String get assistantCopy => 'Copiar';
+
+  @override
+  String get assistantCopied => 'Copiado';
+
+  @override
+  String get assistantHelpful => 'Útil';
+
+  @override
+  String get assistantNotHelpful => 'Non é útil';
+
+  @override
+  String get assistantFeedbackThanks => 'Grazas pola túa opinión';
+
+  @override
+  String get assistantUndo => 'Desfacer';
+
+  @override
+  String get assistantUndoAll => 'Desfacer todo';
+
+  @override
+  String get assistantUndone => 'Cambio desfeito';
+
+  @override
+  String get assistantUndoFailed => 'Non se puido desfacer. Fai ti o cambio.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cambios',
+      one: '$count cambio',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Confirmar todo';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Confirmar $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Axúdame a renovar $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name caducou. Que fago?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Estou listo para a miña viaxe a $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Axúdame a planificar unha viaxe';
 }

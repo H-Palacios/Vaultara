@@ -5509,7 +5509,7 @@
   "@assistantTitle": {
     "description": "Title of the AI assistant screen, its Home button tooltip and its Profile tile."
   },
-  "assistantTileSubtitle": "Ask about your records in plain words",
+  "assistantTileSubtitle": "Ask about records, trips and settings in plain words",
   "@assistantTileSubtitle": {
     "description": "Subtitle of the Ask Vaultara tile in Profile, Smart tools."
   },
@@ -5517,7 +5517,7 @@
   "@assistantIntro": {
     "description": "Intro text on the empty Ask Vaultara screen."
   },
-  "assistantHint": "Ask about your records",
+  "assistantHint": "Ask about records, trips or the app",
   "@assistantHint": {
     "description": "Hint in the Ask Vaultara message field."
   },
@@ -5553,10 +5553,6 @@
   "@assistantMicUnavailable": {
     "description": "Shown when speech recognition cannot start."
   },
-  "assistantThinking": "Checking your records",
-  "@assistantThinking": {
-    "description": "Shown while waiting for the assistant reply."
-  },
   "assistantErrorOffline": "You are offline. Connect to the internet and try again.",
   "@assistantErrorOffline": {
     "description": "Assistant error when there is no internet."
@@ -5581,7 +5577,7 @@
   "@assistantPremiumTitle": {
     "description": "Title shown to free users on the Ask Vaultara screen."
   },
-  "assistantPremiumBody": "Upgrade to ask questions about your records and add records in plain words.",
+  "assistantPremiumBody": "Upgrade to ask about your records, trips and settings, and make changes in plain words.",
   "@assistantPremiumBody": {
     "description": "Body shown to free users on the Ask Vaultara screen, and when the server says the plan is not paid."
   },
@@ -7728,5 +7724,197 @@
   "visaLeavingRulesNote": "Vaultara is not part of this site. If this site says something different from Vaultara, follow this site.",
   "@visaLeavingRulesNote": {
     "description": "Shown before opening a government visa rules page."
+  },
+  "assistantStepThinking": "Thinking",
+  "@assistantStepThinking": {
+    "description": "Shown while Ask Vaultara starts working on an answer."
+  },
+  "assistantStepSlow": "Still working on it",
+  "@assistantStepSlow": {
+    "description": "Shown when one step of an Ask Vaultara answer takes long."
+  },
+  "assistantStepRecords": "Checking your records",
+  "@assistantStepRecords": {
+    "description": "Ask Vaultara is reading the user's records."
+  },
+  "assistantStepTrips": "Checking your trips",
+  "@assistantStepTrips": {
+    "description": "Ask Vaultara is reading the user's trips."
+  },
+  "assistantStepPeople": "Checking your people",
+  "@assistantStepPeople": {
+    "description": "Ask Vaultara is reading the people the user tracks records for."
+  },
+  "assistantStepRecordAdd": "Preparing {name}",
+  "@assistantStepRecordAdd": {
+    "description": "Ask Vaultara is preparing a new record card. Nothing is saved until the user confirms.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRecordEdit": "Preparing changes to {name}",
+  "@assistantStepRecordEdit": {
+    "description": "Ask Vaultara is preparing changes to a record. Nothing is saved until the user confirms.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRecordRenew": "Preparing the new date for {name}",
+  "@assistantStepRecordRenew": {
+    "description": "Ask Vaultara is preparing a renewal with a new expiry date.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRecordDelete": "Preparing to delete {name}",
+  "@assistantStepRecordDelete": {
+    "description": "Ask Vaultara is preparing a delete card. Nothing is deleted until the user confirms.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRecordGeneric": "Preparing the change",
+  "@assistantStepRecordGeneric": {
+    "description": "Ask Vaultara is preparing a record change for a locked or unnamed record."
+  },
+  "assistantStepPersonAdd": "Adding {name}",
+  "@assistantStepPersonAdd": {
+    "description": "Ask Vaultara is preparing to add a person.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepUpdating": "Updating {name}",
+  "@assistantStepUpdating": {
+    "description": "Ask Vaultara is preparing changes to a person or a trip.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepPersonMe": "Updating your details",
+  "@assistantStepPersonMe": {
+    "description": "Ask Vaultara is preparing changes to the user's own details."
+  },
+  "assistantStepTripAdd": "Preparing your trip to {place}",
+  "@assistantStepTripAdd": {
+    "description": "Ask Vaultara is preparing a new trip. place is one or more country names.",
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepScreen": "Finding the right screen",
+  "@assistantStepScreen": {
+    "description": "Ask Vaultara is finding the screen the user asked about."
+  },
+  "assistantStop": "Stop",
+  "@assistantStop": {
+    "description": "Button that stops the answer being worked out."
+  },
+  "assistantStopped": "You stopped this answer.",
+  "@assistantStopped": {
+    "description": "Shown in the chat after the user stopped an answer."
+  },
+  "assistantCopy": "Copy",
+  "@assistantCopy": {
+    "description": "Copies an answer."
+  },
+  "assistantCopied": "Copied",
+  "@assistantCopied": {
+    "description": "Confirmation after copying an answer."
+  },
+  "assistantHelpful": "Helpful",
+  "@assistantHelpful": {
+    "description": "Thumbs up on an answer."
+  },
+  "assistantNotHelpful": "Not helpful",
+  "@assistantNotHelpful": {
+    "description": "Thumbs down on an answer."
+  },
+  "assistantFeedbackThanks": "Thanks for the feedback",
+  "@assistantFeedbackThanks": {
+    "description": "Confirmation after rating an answer."
+  },
+  "assistantUndo": "Undo",
+  "@assistantUndo": {
+    "description": "Reverses a change the user confirmed in Ask Vaultara."
+  },
+  "assistantUndoAll": "Undo all",
+  "@assistantUndoAll": {
+    "description": "Reverses all changes confirmed from one combined card."
+  },
+  "assistantUndone": "Change undone",
+  "@assistantUndone": {
+    "description": "Confirmation after undoing a change."
+  },
+  "assistantUndoFailed": "This could not be undone. Make the change yourself.",
+  "@assistantUndoFailed": {
+    "description": "Shown when a change could not be undone."
+  },
+  "assistantBatchTitle": "{count, plural, one{{count} change} other{{count} changes}}",
+  "@assistantBatchTitle": {
+    "description": "Title of a card that holds several record changes.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantConfirmAll": "Confirm all",
+  "@assistantConfirmAll": {
+    "description": "Confirms every change on a combined card."
+  },
+  "assistantConfirmSelected": "Confirm {count}",
+  "@assistantConfirmSelected": {
+    "description": "Confirms only the ticked changes on a combined card.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantSuggestRenew": "Help me renew {name}",
+  "@assistantSuggestRenew": {
+    "description": "Starter question for a record that expires soon. Sent as the user's message.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantSuggestExpired": "{name} has expired. What do I do?",
+  "@assistantSuggestExpired": {
+    "description": "Starter question for a record that has expired. Sent as the user's message.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantSuggestTripReady": "Am I ready for my trip to {place}?",
+  "@assistantSuggestTripReady": {
+    "description": "Starter question for an upcoming trip. Sent as the user's message. place is one or more country names or the trip name.",
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantSuggestPlanTrip": "Help me plan a trip",
+  "@assistantSuggestPlanTrip": {
+    "description": "Starter question when the user has no upcoming trip. Sent as the user's message."
   }
 }

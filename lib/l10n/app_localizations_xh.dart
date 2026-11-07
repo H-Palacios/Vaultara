@@ -4754,13 +4754,13 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantTitle => 'Buza iVaultara';
 
   @override
-  String get assistantTileSubtitle => 'Buza ngeerekhodi zakho ngamazwi alula';
+  String get assistantTileSubtitle => 'Buza ngeerekhodi, uhambo neesetingi ngamazwi alula';
 
   @override
   String get assistantIntro => 'Ndibuze ngeerekhodi zakho nokuvuselelwa kwazo. Ndingakwazi nokulungiselela iirekhodi ezintsha ozijongayo.';
 
   @override
-  String get assistantHint => 'Buza ngeerekhodi zakho';
+  String get assistantHint => 'Buza ngeerekhodi, uhambo okanye iapp';
 
   @override
   String get assistantSuggestionMonth => 'Yintoni ephelelwa kule nyanga?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantMicUnavailable => 'Igalelo lezwi alifumaneki. Jonga ukuba iVaultara ivumelekile ukusebenzisa imakrofoni.';
 
   @override
-  String get assistantThinking => 'Ndijonga iirekhodi zakho';
-
-  @override
   String get assistantErrorOffline => 'Awunayo i-intanethi. Qhagamshela kwi-intanethi uphinde uzame.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantPremiumTitle => 'Buza iVaultara yinxalenye ye-Premium';
 
   @override
-  String get assistantPremiumBody => 'Yiya kwi-Premium ukuze ubuze ngeerekhodi zakho kwaye wongeze iirekhodi ngamazwi alula.';
+  String get assistantPremiumBody => 'Yiya kwi-Premium ukuze ubuze ngeerekhodi, uhambo neesetingi zakho kwaye wenze utshintsho ngamazwi alula.';
 
   @override
   String get assistantSeePlans => 'Jonga iiplani';
@@ -6330,4 +6327,133 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'IVaultara ayiyonxalenye yale sayithi. Ukuba le sayithi ithetha into eyahlukileyo kuVaultara, landela le sayithi.';
+
+  @override
+  String get assistantStepThinking => 'Ndiyacinga';
+
+  @override
+  String get assistantStepSlow => 'Ndisasebenza kuyo';
+
+  @override
+  String get assistantStepRecords => 'Ndijonga iirekhodi zakho';
+
+  @override
+  String get assistantStepTrips => 'Ndijonga uhambo lwakho';
+
+  @override
+  String get assistantStepPeople => 'Ndijonga abantu bakho';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Ndilungiselela i-$name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Ndilungiselela utshintsho kwi-$name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Ndilungiselela umhla omtsha we-$name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Ndilungiselela ukucima i-$name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Ndilungiselela utshintsho';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Ndongeza u-$name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ndihlaziya i-$name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ndihlaziya iinkcukacha zakho';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Ndilungiselela uhambo lwakho oluya e-$place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Ndikhangela isikrini esifanelekileyo';
+
+  @override
+  String get assistantStop => 'Yima';
+
+  @override
+  String get assistantStopped => 'Uyimisile le mpendulo.';
+
+  @override
+  String get assistantCopy => 'Kopa';
+
+  @override
+  String get assistantCopied => 'Ikopiwe';
+
+  @override
+  String get assistantHelpful => 'Iluncedo';
+
+  @override
+  String get assistantNotHelpful => 'Ayiloncedo';
+
+  @override
+  String get assistantFeedbackThanks => 'Enkosi ngengxelo yakho';
+
+  @override
+  String get assistantUndo => 'Buyisela';
+
+  @override
+  String get assistantUndoAll => 'Buyisela konke';
+
+  @override
+  String get assistantUndone => 'Utshintsho lubuyisiwe';
+
+  @override
+  String get assistantUndoFailed => 'Oku akukwazanga ukubuyiselwa. Yenza utshintsho ngokwakho.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Utshintsho olu-$count',
+      one: 'Utshintsho olu-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Qinisekisa konke';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Qinisekisa $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Ndincede ndivuselele i-$name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'I-$name iphelelwe lixesha. Ndenze ntoni?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Ingaba ndilungele uhambo lwam oluya e-$place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Ndincede ndicwangcise uhambo';
 }

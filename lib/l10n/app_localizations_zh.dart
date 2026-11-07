@@ -4719,13 +4719,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantTitle => '询问 Vaultara';
 
   @override
-  String get assistantTileSubtitle => '用日常的话询问您的记录';
+  String get assistantTileSubtitle => '用日常的话询问记录、行程和设置';
 
   @override
   String get assistantIntro => '您可以向我询问记录和续期的问题。我也可以准备新记录，供您检查。';
 
   @override
-  String get assistantHint => '询问您的记录';
+  String get assistantHint => '询问记录、行程或应用';
 
   @override
   String get assistantSuggestionMonth => '本月有什么要到期？';
@@ -4752,9 +4752,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantMicUnavailable => '无法使用语音输入。请检查是否允许 Vaultara 使用麦克风。';
 
   @override
-  String get assistantThinking => '正在查看您的记录';
-
-  @override
   String get assistantErrorOffline => '您当前处于离线状态。请连接网络后重试。';
 
   @override
@@ -4773,7 +4770,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantPremiumTitle => '询问 Vaultara 属于 Premium';
 
   @override
-  String get assistantPremiumBody => '升级后，您可以询问记录相关的问题，也可以用日常的话添加记录。';
+  String get assistantPremiumBody => '升级后，您可以询问记录、行程和设置，并用日常的话进行更改。';
 
   @override
   String get assistantSeePlans => '查看方案';
@@ -6279,6 +6276,134 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara 不属于此网站。如果此网站的说法与 Vaultara 不同，请以此网站为准。';
+
+  @override
+  String get assistantStepThinking => '正在思考';
+
+  @override
+  String get assistantStepSlow => '仍在处理';
+
+  @override
+  String get assistantStepRecords => '正在查看您的记录';
+
+  @override
+  String get assistantStepTrips => '正在查看您的行程';
+
+  @override
+  String get assistantStepPeople => '正在查看您的人员';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '正在准备$name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '正在准备对$name的更改';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '正在准备$name的新日期';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '正在准备删除$name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => '正在准备更改';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '正在添加$name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '正在更新$name';
+  }
+
+  @override
+  String get assistantStepPersonMe => '正在更新您的资料';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '正在准备您前往$place的行程';
+  }
+
+  @override
+  String get assistantStepScreen => '正在查找合适的页面';
+
+  @override
+  String get assistantStop => '停止';
+
+  @override
+  String get assistantStopped => '您已停止此回答。';
+
+  @override
+  String get assistantCopy => '复制';
+
+  @override
+  String get assistantCopied => '已复制';
+
+  @override
+  String get assistantHelpful => '有帮助';
+
+  @override
+  String get assistantNotHelpful => '没有帮助';
+
+  @override
+  String get assistantFeedbackThanks => '感谢您的反馈';
+
+  @override
+  String get assistantUndo => '撤销';
+
+  @override
+  String get assistantUndoAll => '全部撤销';
+
+  @override
+  String get assistantUndone => '已撤销更改';
+
+  @override
+  String get assistantUndoFailed => '无法撤销。请自行更改。';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项更改',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => '全部确认';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '确认 $count 项';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '帮我续期$name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name已过期。我该怎么办？';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '我准备好去$place旅行了吗？';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => '帮我计划行程';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -10984,13 +11109,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantTitle => '询问 Vaultara';
 
   @override
-  String get assistantTileSubtitle => '用日常语言询问您的记录';
+  String get assistantTileSubtitle => '用日常语言询问记录、行程和设置';
 
   @override
   String get assistantIntro => '您可以向我询问记录和续期的问题。我还可以准备新记录，供您核对。';
 
   @override
-  String get assistantHint => '询问您的记录';
+  String get assistantHint => '询问记录、行程或应用';
 
   @override
   String get assistantSuggestionMonth => '这个月有什么到期？';
@@ -11017,9 +11142,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantMicUnavailable => '语音输入不可用。请检查 Vaultara 是否有权使用麦克风。';
 
   @override
-  String get assistantThinking => '正在查看您的记录';
-
-  @override
   String get assistantErrorOffline => '您已离线。请连接互联网后重试。';
 
   @override
@@ -11038,7 +11160,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantPremiumTitle => '询问 Vaultara 属于高级版';
 
   @override
-  String get assistantPremiumBody => '升级后，您可以用日常语言询问记录并添加记录。';
+  String get assistantPremiumBody => '升级后，您可以询问记录、行程和设置，并用日常语言进行更改。';
 
   @override
   String get assistantSeePlans => '查看方案';
@@ -12544,6 +12666,134 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara 不属于此网站。如果此网站的说法与 Vaultara 不同，请以此网站为准。';
+
+  @override
+  String get assistantStepThinking => '正在思考';
+
+  @override
+  String get assistantStepSlow => '仍在处理';
+
+  @override
+  String get assistantStepRecords => '正在查看您的记录';
+
+  @override
+  String get assistantStepTrips => '正在查看您的行程';
+
+  @override
+  String get assistantStepPeople => '正在查看您的人员';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '正在准备$name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '正在准备对$name的更改';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '正在准备$name的新日期';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '正在准备删除$name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => '正在准备更改';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '正在添加$name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '正在更新$name';
+  }
+
+  @override
+  String get assistantStepPersonMe => '正在更新您的资料';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '正在准备您前往$place的行程';
+  }
+
+  @override
+  String get assistantStepScreen => '正在查找合适的页面';
+
+  @override
+  String get assistantStop => '停止';
+
+  @override
+  String get assistantStopped => '您已停止此回答。';
+
+  @override
+  String get assistantCopy => '复制';
+
+  @override
+  String get assistantCopied => '已复制';
+
+  @override
+  String get assistantHelpful => '有帮助';
+
+  @override
+  String get assistantNotHelpful => '没有帮助';
+
+  @override
+  String get assistantFeedbackThanks => '感谢您的反馈';
+
+  @override
+  String get assistantUndo => '撤销';
+
+  @override
+  String get assistantUndoAll => '全部撤销';
+
+  @override
+  String get assistantUndone => '已撤销更改';
+
+  @override
+  String get assistantUndoFailed => '无法撤销。请自行更改。';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项更改',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => '全部确认';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '确认 $count 项';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '帮我续期$name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name已过期。我该怎么办？';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '我准备好去$place旅行了吗？';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => '帮我计划行程';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -17249,13 +17499,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get assistantTitle => '詢問 Vaultara';
 
   @override
-  String get assistantTileSubtitle => '用簡單的話詢問您的記錄';
+  String get assistantTileSubtitle => '用簡單的話詢問記錄、旅程和設定';
 
   @override
   String get assistantIntro => '您可以向我詢問記錄和續期的事。我也能準備新的記錄，讓您確認。';
 
   @override
-  String get assistantHint => '詢問您的記錄';
+  String get assistantHint => '詢問記錄、旅程或 App';
 
   @override
   String get assistantSuggestionMonth => '這個月有什麼要到期？';
@@ -17282,9 +17532,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get assistantMicUnavailable => '無法使用語音輸入。請確認 Vaultara 已獲准使用麥克風。';
 
   @override
-  String get assistantThinking => '正在查看您的記錄';
-
-  @override
   String get assistantErrorOffline => '您目前處於離線狀態。請連上網路後再試一次。';
 
   @override
@@ -17303,7 +17550,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get assistantPremiumTitle => '詢問 Vaultara 屬於 Premium';
 
   @override
-  String get assistantPremiumBody => '升級後，即可詢問記錄相關問題，並用簡單的話新增記錄。';
+  String get assistantPremiumBody => '升級後，即可詢問記錄、旅程和設定，並用簡單的話進行變更。';
 
   @override
   String get assistantSeePlans => '查看方案';
@@ -18809,4 +19056,132 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara 不屬於此網站。如果此網站的說法與 Vaultara 不同，請以此網站為準。';
+
+  @override
+  String get assistantStepThinking => '正在思考';
+
+  @override
+  String get assistantStepSlow => '仍在處理';
+
+  @override
+  String get assistantStepRecords => '正在查看您的記錄';
+
+  @override
+  String get assistantStepTrips => '正在查看您的旅程';
+
+  @override
+  String get assistantStepPeople => '正在查看您的人員';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '正在準備$name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '正在準備$name的變更';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '正在準備$name的新日期';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '正在準備刪除$name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => '正在準備變更';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '正在新增$name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '正在更新$name';
+  }
+
+  @override
+  String get assistantStepPersonMe => '正在更新您的資料';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '正在準備您前往$place的旅程';
+  }
+
+  @override
+  String get assistantStepScreen => '正在尋找合適的畫面';
+
+  @override
+  String get assistantStop => '停止';
+
+  @override
+  String get assistantStopped => '您已停止此回答。';
+
+  @override
+  String get assistantCopy => '複製';
+
+  @override
+  String get assistantCopied => '已複製';
+
+  @override
+  String get assistantHelpful => '有幫助';
+
+  @override
+  String get assistantNotHelpful => '沒有幫助';
+
+  @override
+  String get assistantFeedbackThanks => '感謝您的意見';
+
+  @override
+  String get assistantUndo => '復原';
+
+  @override
+  String get assistantUndoAll => '全部復原';
+
+  @override
+  String get assistantUndone => '已復原變更';
+
+  @override
+  String get assistantUndoFailed => '無法復原。請自行變更。';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項變更',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => '全部確認';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '確認 $count 項';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '幫我續期$name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name已過期。我該怎麼辦？';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '我準備好前往$place的旅程了嗎？';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => '幫我規劃旅程';
 }

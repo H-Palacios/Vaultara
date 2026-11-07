@@ -4796,13 +4796,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantTitle => 'שאל את Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'שאל על הרשומות שלך במילים פשוטות';
+  String get assistantTileSubtitle => 'שאל על רשומות, נסיעות והגדרות במילים פשוטות';
 
   @override
   String get assistantIntro => 'שאל אותי על הרשומות והחידושים שלך. אני יכול גם להכין רשומות חדשות כדי שתבדוק אותן.';
 
   @override
-  String get assistantHint => 'שאל על הרשומות שלך';
+  String get assistantHint => 'שאל על רשומות, נסיעות או האפליקציה';
 
   @override
   String get assistantSuggestionMonth => 'מה פג תוקפו החודש?';
@@ -4829,9 +4829,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantMicUnavailable => 'קלט קולי אינו זמין. בדוק שמותר ל־Vaultara להשתמש במיקרופון.';
 
   @override
-  String get assistantThinking => 'בודק את הרשומות שלך';
-
-  @override
   String get assistantErrorOffline => 'אין לך חיבור לאינטרנט. התחבר לאינטרנט ונסה שוב.';
 
   @override
@@ -4850,7 +4847,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantPremiumTitle => 'שאל את Vaultara כלול בפרימיום';
 
   @override
-  String get assistantPremiumBody => 'שדרג לפרימיום כדי לשאול שאלות על הרשומות שלך ולהוסיף רשומות במילים פשוטות.';
+  String get assistantPremiumBody => 'שדרג לפרימיום כדי לשאול על הרשומות, הנסיעות וההגדרות שלך ולבצע שינויים במילים פשוטות.';
 
   @override
   String get assistantSeePlans => 'לצפייה בתוכניות';
@@ -6382,4 +6379,134 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara אינה חלק מהאתר הזה. אם האתר הזה אומר משהו שונה מ-Vaultara, פעל לפי האתר הזה.';
+
+  @override
+  String get assistantStepThinking => 'חושב';
+
+  @override
+  String get assistantStepSlow => 'עדיין עובד על זה';
+
+  @override
+  String get assistantStepRecords => 'בודק את הרשומות שלך';
+
+  @override
+  String get assistantStepTrips => 'בודק את הנסיעות שלך';
+
+  @override
+  String get assistantStepPeople => 'בודק את האנשים שלך';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'מכין את $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'מכין שינויים ב־$name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'מכין את התאריך החדש של $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'מכין מחיקה של $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'מכין את השינוי';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'מוסיף את $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'מעדכן את $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'מעדכן את הפרטים שלך';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'מכין את הנסיעה שלך ל־$place';
+  }
+
+  @override
+  String get assistantStepScreen => 'מחפש את המסך המתאים';
+
+  @override
+  String get assistantStop => 'עצור';
+
+  @override
+  String get assistantStopped => 'עצרת את התשובה הזו.';
+
+  @override
+  String get assistantCopy => 'העתק';
+
+  @override
+  String get assistantCopied => 'הועתק';
+
+  @override
+  String get assistantHelpful => 'מועיל';
+
+  @override
+  String get assistantNotHelpful => 'לא מועיל';
+
+  @override
+  String get assistantFeedbackThanks => 'תודה על המשוב';
+
+  @override
+  String get assistantUndo => 'בטל';
+
+  @override
+  String get assistantUndoAll => 'בטל הכול';
+
+  @override
+  String get assistantUndone => 'השינוי בוטל';
+
+  @override
+  String get assistantUndoFailed => 'לא ניתן היה לבטל. בצע את השינוי בעצמך.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count שינויים',
+      two: '$count שינויים',
+      one: 'שינוי אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'אשר הכול';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'אשר $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'עזור לי לחדש את $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'פג התוקף של $name. מה עליי לעשות?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'האם אני מוכן לנסיעה ל־$place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'עזור לי לתכנן נסיעה';
 }

@@ -4754,13 +4754,13 @@ class AppLocalizationsNe extends AppLocalizations {
   String get assistantTitle => 'Vaultara लाई सोध्नुहोस्';
 
   @override
-  String get assistantTileSubtitle => 'सरल शब्दमा आफ्ना रेकर्डहरूबारे सोध्नुहोस्';
+  String get assistantTileSubtitle => 'सरल शब्दमा रेकर्ड, यात्रा र सेटिङबारे सोध्नुहोस्';
 
   @override
   String get assistantIntro => 'मलाई आफ्ना रेकर्ड र नवीकरणबारे सोध्नुहोस्। म नयाँ रेकर्ड पनि तयार गरिदिन सक्छु, जसलाई तपाईंले जाँच्न सक्नुहुन्छ।';
 
   @override
-  String get assistantHint => 'आफ्ना रेकर्डहरूबारे सोध्नुहोस्';
+  String get assistantHint => 'रेकर्ड, यात्रा वा एपबारे सोध्नुहोस्';
 
   @override
   String get assistantSuggestionMonth => 'यो महिना के-के म्याद सकिँदैछ?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsNe extends AppLocalizations {
   String get assistantMicUnavailable => 'आवाजबाट इनपुट उपलब्ध छैन। Vaultara ले माइक्रोफोन प्रयोग गर्न पाउँछ कि पाउँदैन जाँच्नुहोस्।';
 
   @override
-  String get assistantThinking => 'तपाईंका रेकर्डहरू हेर्दै';
-
-  @override
   String get assistantErrorOffline => 'तपाईं अफलाइन हुनुहुन्छ। इन्टरनेटमा जोडिएर फेरि प्रयास गर्नुहोस्।';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara लाई सोध्नुहोस् Premium को हिस्सा हो';
 
   @override
-  String get assistantPremiumBody => 'आफ्ना रेकर्डहरूबारे प्रश्न सोध्न र सरल शब्दमा रेकर्ड थप्न अपग्रेड गर्नुहोस्।';
+  String get assistantPremiumBody => 'आफ्ना रेकर्ड, यात्रा र सेटिङबारे सोध्न र सरल शब्दमा परिवर्तन गर्न अपग्रेड गर्नुहोस्।';
 
   @override
   String get assistantSeePlans => 'योजनाहरू हेर्नुहोस्';
@@ -6330,4 +6327,133 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara यो साइटको अंश होइन। यो साइटले Vaultara भन्दा फरक कुरा भन्छ भने, यो साइट पालना गर्नुहोस्।';
+
+  @override
+  String get assistantStepThinking => 'सोच्दै';
+
+  @override
+  String get assistantStepSlow => 'अझै काम हुँदैछ';
+
+  @override
+  String get assistantStepRecords => 'तपाईंका रेकर्डहरू हेर्दै';
+
+  @override
+  String get assistantStepTrips => 'तपाईंका यात्राहरू हेर्दै';
+
+  @override
+  String get assistantStepPeople => 'तपाईंका मानिसहरू हेर्दै';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name तयार गर्दै';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name मा परिवर्तनहरू तयार गर्दै';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name को नयाँ मिति तयार गर्दै';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name मेटाउने तयारी गर्दै';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'परिवर्तन तयार गर्दै';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name थप्दै';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name अद्यावधिक गर्दै';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'तपाईंको विवरण अद्यावधिक गर्दै';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place को तपाईंको यात्रा तयार गर्दै';
+  }
+
+  @override
+  String get assistantStepScreen => 'सही स्क्रिन खोज्दै';
+
+  @override
+  String get assistantStop => 'रोक्नुहोस्';
+
+  @override
+  String get assistantStopped => 'तपाईंले यो जवाफ रोक्नुभयो।';
+
+  @override
+  String get assistantCopy => 'प्रतिलिपि गर्नुहोस्';
+
+  @override
+  String get assistantCopied => 'प्रतिलिपि भयो';
+
+  @override
+  String get assistantHelpful => 'उपयोगी';
+
+  @override
+  String get assistantNotHelpful => 'उपयोगी छैन';
+
+  @override
+  String get assistantFeedbackThanks => 'प्रतिक्रियाका लागि धन्यवाद';
+
+  @override
+  String get assistantUndo => 'पूर्ववत् गर्नुहोस्';
+
+  @override
+  String get assistantUndoAll => 'सबै पूर्ववत् गर्नुहोस्';
+
+  @override
+  String get assistantUndone => 'परिवर्तन पूर्ववत् भयो';
+
+  @override
+  String get assistantUndoFailed => 'यो पूर्ववत् गर्न सकिएन। परिवर्तन आफैं गर्नुहोस्।';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count परिवर्तन',
+      one: '$count परिवर्तन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'सबै पुष्टि गर्नुहोस्';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count पुष्टि गर्नुहोस्';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name नवीकरण गर्न मद्दत गर्नुहोस्';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name को म्याद सकियो। म के गरूँ?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'के म $place को यात्राका लागि तयार छु?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'यात्राको योजना बनाउन मद्दत गर्नुहोस्';
 }

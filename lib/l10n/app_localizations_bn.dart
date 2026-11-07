@@ -4754,13 +4754,13 @@ class AppLocalizationsBn extends AppLocalizations {
   String get assistantTitle => 'Vaultara-কে জিজ্ঞাসা করুন';
 
   @override
-  String get assistantTileSubtitle => 'আপনার রেকর্ড সম্পর্কে সহজ ভাষায় জিজ্ঞাসা করুন';
+  String get assistantTileSubtitle => 'রেকর্ড, ভ্রমণ ও সেটিংস সম্পর্কে সহজ ভাষায় জিজ্ঞাসা করুন';
 
   @override
   String get assistantIntro => 'আপনার রেকর্ড ও নবায়ন সম্পর্কে আমাকে জিজ্ঞাসা করুন। আপনার যাচাই করার জন্য আমি নতুন রেকর্ডও তৈরি করে দিতে পারি।';
 
   @override
-  String get assistantHint => 'আপনার রেকর্ড সম্পর্কে জিজ্ঞাসা করুন';
+  String get assistantHint => 'রেকর্ড, ভ্রমণ বা অ্যাপ সম্পর্কে জিজ্ঞাসা করুন';
 
   @override
   String get assistantSuggestionMonth => 'এই মাসে কী কী মেয়াদ শেষ হচ্ছে?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get assistantMicUnavailable => 'ভয়েস ইনপুট পাওয়া যাচ্ছে না। Vaultara মাইক্রোফোন ব্যবহার করতে পারে কি না দেখে নিন।';
 
   @override
-  String get assistantThinking => 'আপনার রেকর্ড দেখা হচ্ছে';
-
-  @override
   String get assistantErrorOffline => 'আপনি অফলাইনে আছেন। ইন্টারনেটে সংযুক্ত হয়ে আবার চেষ্টা করুন।';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara-কে জিজ্ঞাসা করুন প্রিমিয়ামের অংশ';
 
   @override
-  String get assistantPremiumBody => 'আপনার রেকর্ড সম্পর্কে প্রশ্ন করতে এবং সহজ ভাষায় রেকর্ড যোগ করতে আপগ্রেড করুন।';
+  String get assistantPremiumBody => 'আপনার রেকর্ড, ভ্রমণ ও সেটিংস সম্পর্কে জিজ্ঞাসা করতে এবং সহজ ভাষায় পরিবর্তন করতে আপগ্রেড করুন।';
 
   @override
   String get assistantSeePlans => 'প্ল্যান দেখুন';
@@ -6330,4 +6327,133 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara এই সাইটের অংশ নয়। এই সাইট যদি Vaultara থেকে ভিন্ন কিছু বলে, তাহলে এই সাইট অনুসরণ করুন।';
+
+  @override
+  String get assistantStepThinking => 'ভাবছি';
+
+  @override
+  String get assistantStepSlow => 'এখনও কাজ চলছে';
+
+  @override
+  String get assistantStepRecords => 'আপনার রেকর্ড দেখা হচ্ছে';
+
+  @override
+  String get assistantStepTrips => 'আপনার ভ্রমণ দেখা হচ্ছে';
+
+  @override
+  String get assistantStepPeople => 'আপনার লোকজন দেখা হচ্ছে';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name প্রস্তুত করা হচ্ছে';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name-এর পরিবর্তন প্রস্তুত করা হচ্ছে';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name-এর নতুন তারিখ প্রস্তুত করা হচ্ছে';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name মুছে ফেলার প্রস্তুতি চলছে';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'পরিবর্তন প্রস্তুত করা হচ্ছে';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name যোগ করা হচ্ছে';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name হালনাগাদ করা হচ্ছে';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'আপনার তথ্য হালনাগাদ করা হচ্ছে';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place-এ আপনার ভ্রমণ প্রস্তুত করা হচ্ছে';
+  }
+
+  @override
+  String get assistantStepScreen => 'সঠিক স্ক্রিন খোঁজা হচ্ছে';
+
+  @override
+  String get assistantStop => 'থামান';
+
+  @override
+  String get assistantStopped => 'আপনি এই উত্তরটি থামিয়েছেন।';
+
+  @override
+  String get assistantCopy => 'কপি করুন';
+
+  @override
+  String get assistantCopied => 'কপি হয়েছে';
+
+  @override
+  String get assistantHelpful => 'সহায়ক';
+
+  @override
+  String get assistantNotHelpful => 'সহায়ক নয়';
+
+  @override
+  String get assistantFeedbackThanks => 'মতামতের জন্য ধন্যবাদ';
+
+  @override
+  String get assistantUndo => 'পূর্বাবস্থায় ফেরান';
+
+  @override
+  String get assistantUndoAll => 'সব পূর্বাবস্থায় ফেরান';
+
+  @override
+  String get assistantUndone => 'পরিবর্তন ফিরিয়ে নেওয়া হয়েছে';
+
+  @override
+  String get assistantUndoFailed => 'এটি ফিরিয়ে নেওয়া যায়নি। পরিবর্তনটি নিজে করুন।';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি পরিবর্তন',
+      one: '$countটি পরিবর্তন',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'সব নিশ্চিত করুন';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$countটি নিশ্চিত করুন';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name নবায়ন করতে সাহায্য করুন';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name-এর মেয়াদ শেষ হয়েছে। আমি কী করব?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '$place-এ ভ্রমণের জন্য আমি কি প্রস্তুত?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'একটি ভ্রমণের পরিকল্পনা করতে সাহায্য করুন';
 }

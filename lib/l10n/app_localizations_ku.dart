@@ -4754,13 +4754,13 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantTitle => 'Ji Vaultara bipirse';
 
   @override
-  String get assistantTileSubtitle => 'Bi gotinên sade li ser tomarên xwe bipirse';
+  String get assistantTileSubtitle => 'Bi gotinên sade li ser tomar, rêwîtî û mîhengan bipirse';
 
   @override
   String get assistantIntro => 'Li ser tomar û nûkirinên xwe ji min bipirse. Ez dikarim tomarên nû jî amade bikim da ku tu kontrol bikî.';
 
   @override
-  String get assistantHint => 'Li ser tomarên xwe bipirse';
+  String get assistantHint => 'Li ser tomar, rêwîtî an sepanê bipirse';
 
   @override
   String get assistantSuggestionMonth => 'Vê mehê çi bidawî dibe?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantMicUnavailable => 'Têketina dengî ne berdest e. Kontrol bike ka Vaultara dikare mîkrofonê bikar bîne.';
 
   @override
-  String get assistantThinking => 'Tomarên te têne kontrolkirin';
-
-  @override
   String get assistantErrorOffline => 'Tu ne serhêl î. Bi înternetê ve girêbide û dîsa biceribîne.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantPremiumTitle => 'Ji Vaultara bipirse beşek ji Premium e';
 
   @override
-  String get assistantPremiumBody => 'Biçe Premium da ku li ser tomarên xwe bipirsî û bi gotinên sade tomaran zêde bikî.';
+  String get assistantPremiumBody => 'Biçe Premium da ku li ser tomar, rêwîtî û mîhengên xwe bipirsî û bi gotinên sade guhertinan bikî.';
 
   @override
   String get assistantSeePlans => 'Planan bibîne';
@@ -6330,4 +6327,133 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ne beşek ji vê malperê ye. Heke ev malper tiştekî cuda ji Vaultara bêje, li pey vê malperê here.';
+
+  @override
+  String get assistantStepThinking => 'Difikirim';
+
+  @override
+  String get assistantStepSlow => 'Hîn li ser dixebitim';
+
+  @override
+  String get assistantStepRecords => 'Tomarên te têne kontrolkirin';
+
+  @override
+  String get assistantStepTrips => 'Rêwîtiyên te têne kontrolkirin';
+
+  @override
+  String get assistantStepPeople => 'Kesên te têne kontrolkirin';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name tê amadekirin';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Guhertinên $name têne amadekirin';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Dîroka nû ya $name tê amadekirin';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Jêbirina $name tê amadekirin';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Guhertin tê amadekirin';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name tê zêdekirin';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name tê nûkirin';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Agahiyên te têne nûkirin';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Rêwîtiya te ya $place tê amadekirin';
+  }
+
+  @override
+  String get assistantStepScreen => 'Ekrana rast tê dîtin';
+
+  @override
+  String get assistantStop => 'Rawestîne';
+
+  @override
+  String get assistantStopped => 'Te ev bersiv rawestand.';
+
+  @override
+  String get assistantCopy => 'Kopî bike';
+
+  @override
+  String get assistantCopied => 'Hate kopîkirin';
+
+  @override
+  String get assistantHelpful => 'Bikêr';
+
+  @override
+  String get assistantNotHelpful => 'Ne bikêr';
+
+  @override
+  String get assistantFeedbackThanks => 'Spas ji bo nêrîna te';
+
+  @override
+  String get assistantUndo => 'Vegerîne';
+
+  @override
+  String get assistantUndoAll => 'Hemûyan vegerîne';
+
+  @override
+  String get assistantUndone => 'Guhertin hate vegerandin';
+
+  @override
+  String get assistantUndoFailed => 'Ev nehate vegerandin. Guhertinê bi xwe bike.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count guhertin',
+      one: '$count guhertin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Hemûyan piştrast bike';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count piştrast bike';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Alîkariya min bike ku $name nû bikim';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'Dema $name qediya. Ez çi bikim?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Ez ji bo rêwîtiya xwe ya $place amade me?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Alîkariya min bike ku rêwîtiyekê plan bikim';
 }

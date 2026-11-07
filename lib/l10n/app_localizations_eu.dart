@@ -4754,13 +4754,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantTitle => 'Galdetu Vaultarari';
 
   @override
-  String get assistantTileSubtitle => 'Galdetu zure erregistroei buruz hitz xumeetan';
+  String get assistantTileSubtitle => 'Galdetu erregistroei, bidaiei eta ezarpenei buruz hitz xumeetan';
 
   @override
   String get assistantIntro => 'Galdetu niri zure erregistroei eta berritzeei buruz. Erregistro berriak ere prestatu ditzaket, zuk egiazta ditzazun.';
 
   @override
-  String get assistantHint => 'Galdetu zure erregistroei buruz';
+  String get assistantHint => 'Galdetu erregistroei, bidaiei edo aplikazioari buruz';
 
   @override
   String get assistantSuggestionMonth => 'Zer iraungitzen da hilabete honetan?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantMicUnavailable => 'Ahots bidezko sarrera ez dago erabilgarri. Egiaztatu Vaultarak mikrofonoa erabiltzeko baimena duela.';
 
   @override
-  String get assistantThinking => 'Zure erregistroak egiaztatzen';
-
-  @override
   String get assistantErrorOffline => 'Konexiorik gabe zaude. Konektatu internetera eta saiatu berriro.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantPremiumTitle => 'Galdetu Vaultarari Premium planaren parte da';
 
   @override
-  String get assistantPremiumBody => 'Eguneratu plana zure erregistroei buruz galdetzeko eta erregistroak hitz xumeetan gehitzeko.';
+  String get assistantPremiumBody => 'Eguneratu plana zure erregistroei, bidaiei eta ezarpenei buruz galdetzeko eta aldaketak hitz xumeetan egiteko.';
 
   @override
   String get assistantSeePlans => 'Ikusi planak';
@@ -6330,4 +6327,133 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ez da gune honen parte. Gune honek Vaultarak ez bezalako zerbait esaten badu, jarraitu gune honi.';
+
+  @override
+  String get assistantStepThinking => 'Pentsatzen';
+
+  @override
+  String get assistantStepSlow => 'Oraindik lanean';
+
+  @override
+  String get assistantStepRecords => 'Zure erregistroak egiaztatzen';
+
+  @override
+  String get assistantStepTrips => 'Zure bidaiak egiaztatzen';
+
+  @override
+  String get assistantStepPeople => 'Zure pertsonak egiaztatzen';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name prestatzen';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name(e)ko aldaketak prestatzen';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name(r)en data berria prestatzen';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name ezabatzeko prestatzen';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Aldaketa prestatzen';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name gehitzen';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name eguneratzen';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Zure datuak eguneratzen';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place(e)rako bidaia prestatzen';
+  }
+
+  @override
+  String get assistantStepScreen => 'Pantaila egokia bilatzen';
+
+  @override
+  String get assistantStop => 'Gelditu';
+
+  @override
+  String get assistantStopped => 'Erantzun hau gelditu duzu.';
+
+  @override
+  String get assistantCopy => 'Kopiatu';
+
+  @override
+  String get assistantCopied => 'Kopiatuta';
+
+  @override
+  String get assistantHelpful => 'Lagungarria';
+
+  @override
+  String get assistantNotHelpful => 'Ez da lagungarria';
+
+  @override
+  String get assistantFeedbackThanks => 'Eskerrik asko iritziagatik';
+
+  @override
+  String get assistantUndo => 'Desegin';
+
+  @override
+  String get assistantUndoAll => 'Desegin dena';
+
+  @override
+  String get assistantUndone => 'Aldaketa desegin da';
+
+  @override
+  String get assistantUndoFailed => 'Ezin izan da desegin. Egin aldaketa zuk zeuk.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aldaketa',
+      one: 'Aldaketa $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Berretsi dena';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Berretsi $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Lagundu $name berritzen';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name iraungi da. Zer egin behar dut?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Prest nago $place(e)rako bidaiarako?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Lagundu bidaia bat planifikatzen';
 }

@@ -4754,13 +4754,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantTitle => 'Vaultaraን ይጠይቁ';
 
   @override
-  String get assistantTileSubtitle => 'ስለ መዝገቦችዎ በቀላል ቃላት ይጠይቁ';
+  String get assistantTileSubtitle => 'ስለ መዝገቦች፣ ጉዞዎች እና ቅንብሮች በቀላል ቃላት ይጠይቁ';
 
   @override
   String get assistantIntro => 'ስለ መዝገቦችዎ እና እድሳቶችዎ ይጠይቁኝ። እርስዎ እንዲያረጋግጡ አዲስ መዝገቦችንም ማዘጋጀት እችላለሁ።';
 
   @override
-  String get assistantHint => 'ስለ መዝገቦችዎ ይጠይቁ';
+  String get assistantHint => 'ስለ መዝገቦች፣ ጉዞዎች ወይም መተግበሪያው ይጠይቁ';
 
   @override
   String get assistantSuggestionMonth => 'በዚህ ወር ምን ያበቃል?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantMicUnavailable => 'የድምፅ ግብዓት አይገኝም። Vaultara ማይክሮፎኑን እንዲጠቀም መፈቀዱን ያረጋግጡ።';
 
   @override
-  String get assistantThinking => 'መዝገቦችዎን በማየት ላይ';
-
-  @override
   String get assistantErrorOffline => 'ከመስመር ውጭ ነዎት። ከበይነመረብ ጋር ተገናኝተው እንደገና ይሞክሩ።';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultaraን ይጠይቁ የPremium አካል ነው';
 
   @override
-  String get assistantPremiumBody => 'ስለ መዝገቦችዎ ጥያቄ ለመጠየቅ እና መዝገቦችን በቀላል ቃላት ለመጨመር ያሻሽሉ።';
+  String get assistantPremiumBody => 'ስለ መዝገቦችዎ፣ ጉዞዎችዎ እና ቅንብሮችዎ ለመጠየቅ እና በቀላል ቃላት ለውጦችን ለማድረግ ያሻሽሉ።';
 
   @override
   String get assistantSeePlans => 'እቅዶችን ይመልከቱ';
@@ -6330,4 +6327,133 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara የዚህ ድረ-ገጽ አካል አይደለም። ይህ ድረ-ገጽ ከVaultara የተለየ ነገር ከተናገረ፣ ይህንን ድረ-ገጽ ይከተሉ።';
+
+  @override
+  String get assistantStepThinking => 'በማሰብ ላይ';
+
+  @override
+  String get assistantStepSlow => 'አሁንም እየሰራሁ ነው';
+
+  @override
+  String get assistantStepRecords => 'መዝገቦችዎን በማየት ላይ';
+
+  @override
+  String get assistantStepTrips => 'ጉዞዎችዎን በማየት ላይ';
+
+  @override
+  String get assistantStepPeople => 'ሰዎችዎን በማየት ላይ';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$nameን በማዘጋጀት ላይ';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'በ$name ላይ ለውጦችን በማዘጋጀት ላይ';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'ለ$name አዲሱን ቀን በማዘጋጀት ላይ';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$nameን ለመሰረዝ በማዘጋጀት ላይ';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'ለውጡን በማዘጋጀት ላይ';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$nameን በማከል ላይ';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$nameን በማዘመን ላይ';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'ዝርዝሮችዎን በማዘመን ላይ';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'ወደ $place የሚያደርጉትን ጉዞ በማዘጋጀት ላይ';
+  }
+
+  @override
+  String get assistantStepScreen => 'ትክክለኛውን ማያ ገጽ በመፈለግ ላይ';
+
+  @override
+  String get assistantStop => 'አቁም';
+
+  @override
+  String get assistantStopped => 'ይህን መልስ አቁመዋል።';
+
+  @override
+  String get assistantCopy => 'ቅዳ';
+
+  @override
+  String get assistantCopied => 'ተቀድቷል';
+
+  @override
+  String get assistantHelpful => 'ጠቃሚ';
+
+  @override
+  String get assistantNotHelpful => 'ጠቃሚ አይደለም';
+
+  @override
+  String get assistantFeedbackThanks => 'ስለ አስተያየትዎ እናመሰግናለን';
+
+  @override
+  String get assistantUndo => 'ቀልብስ';
+
+  @override
+  String get assistantUndoAll => 'ሁሉንም ቀልብስ';
+
+  @override
+  String get assistantUndone => 'ለውጡ ተቀልብሷል';
+
+  @override
+  String get assistantUndoFailed => 'ይህ ሊቀለበስ አልቻለም። ለውጡን ራስዎ ያድርጉ።';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ለውጦች',
+      one: '$count ለውጥ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'ሁሉንም አረጋግጥ';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count አረጋግጥ';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$nameን ለማደስ እርዱኝ';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name ጊዜው አልፏል። ምን ላድርግ?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'ወደ $place ለምሄደው ጉዞ ዝግጁ ነኝ?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'ጉዞ ለማቀድ እርዱኝ';
 }

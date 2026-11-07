@@ -4717,13 +4717,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantTitle => 'Vaultara ကို မေးရန်';
 
   @override
-  String get assistantTileSubtitle => 'သင့်မှတ်တမ်းများအကြောင်း ရိုးရိုးစကားဖြင့် မေးပါ';
+  String get assistantTileSubtitle => 'မှတ်တမ်းများ၊ ခရီးများနှင့် ဆက်တင်များအကြောင်း ရိုးရိုးစကားဖြင့် မေးပါ';
 
   @override
   String get assistantIntro => 'သင့်မှတ်တမ်းများနှင့် သက်တမ်းတိုးခြင်းများအကြောင်း ကျွန်ုပ်ကို မေးပါ။ သင်စစ်ဆေးရန် မှတ်တမ်းအသစ်များကိုလည်း ကျွန်ုပ် ပြင်ဆင်ပေးနိုင်ပါသည်။';
 
   @override
-  String get assistantHint => 'သင့်မှတ်တမ်းများအကြောင်း မေးပါ';
+  String get assistantHint => 'မှတ်တမ်းများ၊ ခရီးများ သို့မဟုတ် အက်ပ်အကြောင်း မေးပါ';
 
   @override
   String get assistantSuggestionMonth => 'ဤလတွင် မည်သည့်အရာများ သက်တမ်းကုန်မည်နည်း။';
@@ -4750,9 +4750,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantMicUnavailable => 'အသံဖြင့် ထည့်သွင်းခြင်း မရနိုင်ပါ။ Vaultara အား မိုက်ခရိုဖုန်း သုံးခွင့်ရှိမရှိ စစ်ဆေးပါ။';
 
   @override
-  String get assistantThinking => 'သင့်မှတ်တမ်းများကို စစ်ဆေးနေသည်';
-
-  @override
   String get assistantErrorOffline => 'သင်သည် အော့ဖ်လိုင်း ဖြစ်နေသည်။ အင်တာနက်နှင့် ချိတ်ဆက်ပြီး ထပ်စမ်းပါ။';
 
   @override
@@ -4771,7 +4768,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara ကို မေးရန် သည် Premium ၏ အစိတ်အပိုင်း ဖြစ်သည်';
 
   @override
-  String get assistantPremiumBody => 'သင့်မှတ်တမ်းများအကြောင်း မေးရန်နှင့် ရိုးရိုးစကားဖြင့် မှတ်တမ်းများ ထည့်ရန် Premium သို့ အဆင့်မြှင့်ပါ။';
+  String get assistantPremiumBody => 'သင့်မှတ်တမ်းများ၊ ခရီးများနှင့် ဆက်တင်များအကြောင်း မေးရန်နှင့် ရိုးရိုးစကားဖြင့် ပြောင်းလဲရန် Premium သို့ အဆင့်မြှင့်ပါ။';
 
   @override
   String get assistantSeePlans => 'အစီအစဉ်များ ကြည့်ရန်';
@@ -6277,4 +6274,132 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara သည် ဤဆိုက်၏ အစိတ်အပိုင်း မဟုတ်ပါ။ ဤဆိုက်က Vaultara နှင့် မတူသည်ကို ပြောပါက ဤဆိုက်ကို လိုက်နာပါ။';
+
+  @override
+  String get assistantStepThinking => 'စဉ်းစားနေသည်';
+
+  @override
+  String get assistantStepSlow => 'လုပ်ဆောင်နေဆဲ';
+
+  @override
+  String get assistantStepRecords => 'သင့်မှတ်တမ်းများကို စစ်ဆေးနေသည်';
+
+  @override
+  String get assistantStepTrips => 'သင့်ခရီးများကို စစ်ဆေးနေသည်';
+
+  @override
+  String get assistantStepPeople => 'သင့်လူများကို စစ်ဆေးနေသည်';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name ကို ပြင်ဆင်နေသည်';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name ၏ ပြောင်းလဲမှုများကို ပြင်ဆင်နေသည်';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name အတွက် ရက်စွဲအသစ်ကို ပြင်ဆင်နေသည်';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name ကို ဖျက်ရန် ပြင်ဆင်နေသည်';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'ပြောင်းလဲမှုကို ပြင်ဆင်နေသည်';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name ကို ထည့်နေသည်';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name ကို အပ်ဒိတ်လုပ်နေသည်';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'သင့်အချက်အလက်များကို အပ်ဒိတ်လုပ်နေသည်';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place သို့ သင့်ခရီးကို ပြင်ဆင်နေသည်';
+  }
+
+  @override
+  String get assistantStepScreen => 'မှန်ကန်သော မျက်နှာပြင်ကို ရှာနေသည်';
+
+  @override
+  String get assistantStop => 'ရပ်ရန်';
+
+  @override
+  String get assistantStopped => 'သင် ဤအဖြေကို ရပ်လိုက်သည်။';
+
+  @override
+  String get assistantCopy => 'ကူးယူရန်';
+
+  @override
+  String get assistantCopied => 'ကူးယူပြီး';
+
+  @override
+  String get assistantHelpful => 'အသုံးဝင်သည်';
+
+  @override
+  String get assistantNotHelpful => 'အသုံးမဝင်ပါ';
+
+  @override
+  String get assistantFeedbackThanks => 'အကြံပြုချက်အတွက် ကျေးဇူးတင်ပါသည်';
+
+  @override
+  String get assistantUndo => 'ပြန်ဖျက်ရန်';
+
+  @override
+  String get assistantUndoAll => 'အားလုံး ပြန်ဖျက်ရန်';
+
+  @override
+  String get assistantUndone => 'ပြောင်းလဲမှုကို ပြန်ဖျက်ပြီး';
+
+  @override
+  String get assistantUndoFailed => 'ပြန်ဖျက်၍ မရပါ။ ပြောင်းလဲမှုကို ကိုယ်တိုင် ပြုလုပ်ပါ။';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ပြောင်းလဲမှု $count ခု',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'အားလုံး အတည်ပြုရန်';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count ခု အတည်ပြုရန်';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return '$name သက်တမ်းတိုးရန် ကူညီပါ';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name သက်တမ်းကုန်သွားပါပြီ။ ဘာလုပ်ရမလဲ?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return '$place ခရီးအတွက် ကျွန်ုပ် အဆင်သင့်ဖြစ်ပြီလား?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'ခရီးစီစဉ်ရန် ကူညီပါ';
 }

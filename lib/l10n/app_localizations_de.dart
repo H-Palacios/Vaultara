@@ -4754,13 +4754,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get assistantTitle => 'Vaultara fragen';
 
   @override
-  String get assistantTileSubtitle => 'Frag in einfachen Worten nach deinen Einträgen';
+  String get assistantTileSubtitle => 'Frag in einfachen Worten nach Einträgen, Reisen und Einstellungen';
 
   @override
   String get assistantIntro => 'Frag mich nach deinen Einträgen und Verlängerungen. Ich kann auch neue Einträge zur Prüfung für dich vorbereiten.';
 
   @override
-  String get assistantHint => 'Frag nach deinen Einträgen';
+  String get assistantHint => 'Frag nach Einträgen, Reisen oder der App';
 
   @override
   String get assistantSuggestionMonth => 'Was läuft diesen Monat ab?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get assistantMicUnavailable => 'Spracheingabe ist nicht verfügbar. Prüfe, ob Vaultara das Mikrofon verwenden darf.';
 
   @override
-  String get assistantThinking => 'Deine Einträge werden geprüft';
-
-  @override
   String get assistantErrorOffline => 'Du bist offline. Verbinde dich mit dem Internet und versuche es noch einmal.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get assistantPremiumTitle => 'Vaultara fragen gehört zu Premium';
 
   @override
-  String get assistantPremiumBody => 'Wechsle zu Premium, um Fragen zu deinen Einträgen zu stellen und Einträge in einfachen Worten hinzuzufügen.';
+  String get assistantPremiumBody => 'Wechsle zu Premium, um nach deinen Einträgen, Reisen und Einstellungen zu fragen und Änderungen in einfachen Worten vorzunehmen.';
 
   @override
   String get assistantSeePlans => 'Tarife ansehen';
@@ -6330,4 +6327,133 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara gehört nicht zu dieser Website. Wenn diese Website etwas anderes sagt als Vaultara, richte dich nach dieser Website.';
+
+  @override
+  String get assistantStepThinking => 'Denke nach';
+
+  @override
+  String get assistantStepSlow => 'Bin noch dabei';
+
+  @override
+  String get assistantStepRecords => 'Deine Einträge werden geprüft';
+
+  @override
+  String get assistantStepTrips => 'Deine Reisen werden geprüft';
+
+  @override
+  String get assistantStepPeople => 'Deine Personen werden geprüft';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name wird vorbereitet';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Änderungen an $name werden vorbereitet';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Neues Datum für $name wird vorbereitet';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Löschen von $name wird vorbereitet';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Änderung wird vorbereitet';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name wird hinzugefügt';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name wird aktualisiert';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Deine Angaben werden aktualisiert';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Deine Reise nach $place wird vorbereitet';
+  }
+
+  @override
+  String get assistantStepScreen => 'Richtiger Bildschirm wird gesucht';
+
+  @override
+  String get assistantStop => 'Stopp';
+
+  @override
+  String get assistantStopped => 'Du hast diese Antwort gestoppt.';
+
+  @override
+  String get assistantCopy => 'Kopieren';
+
+  @override
+  String get assistantCopied => 'Kopiert';
+
+  @override
+  String get assistantHelpful => 'Hilfreich';
+
+  @override
+  String get assistantNotHelpful => 'Nicht hilfreich';
+
+  @override
+  String get assistantFeedbackThanks => 'Danke für dein Feedback';
+
+  @override
+  String get assistantUndo => 'Rückgängig';
+
+  @override
+  String get assistantUndoAll => 'Alle rückgängig';
+
+  @override
+  String get assistantUndone => 'Änderung rückgängig gemacht';
+
+  @override
+  String get assistantUndoFailed => 'Das ließ sich nicht rückgängig machen. Ändere es bitte selbst.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Änderungen',
+      one: '$count Änderung',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Alle bestätigen';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count bestätigen';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Hilf mir, $name zu erneuern';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name ist abgelaufen. Was soll ich tun?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Bin ich bereit für meine Reise nach $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Hilf mir, eine Reise zu planen';
 }

@@ -4719,13 +4719,13 @@ class AppLocalizationsMs extends AppLocalizations {
   String get assistantTitle => 'Tanya Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Tanya tentang rekod anda dengan kata-kata biasa';
+  String get assistantTileSubtitle => 'Tanya tentang rekod, perjalanan dan tetapan dengan kata-kata biasa';
 
   @override
   String get assistantIntro => 'Tanya saya tentang rekod dan pembaharuan anda. Saya juga boleh menyediakan rekod baharu untuk anda semak.';
 
   @override
-  String get assistantHint => 'Tanya tentang rekod anda';
+  String get assistantHint => 'Tanya tentang rekod, perjalanan atau aplikasi';
 
   @override
   String get assistantSuggestionMonth => 'Apa yang tamat tempoh bulan ini?';
@@ -4752,9 +4752,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String get assistantMicUnavailable => 'Input suara tidak tersedia. Semak sama ada Vaultara dibenarkan menggunakan mikrofon.';
 
   @override
-  String get assistantThinking => 'Menyemak rekod anda';
-
-  @override
   String get assistantErrorOffline => 'Anda di luar talian. Sambung ke internet dan cuba lagi.';
 
   @override
@@ -4773,7 +4770,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get assistantPremiumTitle => 'Tanya Vaultara ialah sebahagian daripada Premium';
 
   @override
-  String get assistantPremiumBody => 'Naik taraf untuk bertanya tentang rekod anda dan menambah rekod dengan kata-kata biasa.';
+  String get assistantPremiumBody => 'Naik taraf untuk bertanya tentang rekod, perjalanan dan tetapan anda serta membuat perubahan dengan kata-kata biasa.';
 
   @override
   String get assistantSeePlans => 'Lihat pelan';
@@ -6279,4 +6276,132 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara bukan sebahagian daripada laman ini. Jika laman ini menyatakan sesuatu yang berbeza daripada Vaultara, ikut laman ini.';
+
+  @override
+  String get assistantStepThinking => 'Sedang berfikir';
+
+  @override
+  String get assistantStepSlow => 'Masih sedang diusahakan';
+
+  @override
+  String get assistantStepRecords => 'Menyemak rekod anda';
+
+  @override
+  String get assistantStepTrips => 'Menyemak perjalanan anda';
+
+  @override
+  String get assistantStepPeople => 'Menyemak orang anda';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Menyediakan $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Menyediakan perubahan pada $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Menyediakan tarikh baharu untuk $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Menyediakan pemadaman $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Menyediakan perubahan';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Menambah $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Mengemas kini $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Mengemas kini butiran anda';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Menyediakan perjalanan anda ke $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Mencari skrin yang betul';
+
+  @override
+  String get assistantStop => 'Henti';
+
+  @override
+  String get assistantStopped => 'Anda telah menghentikan jawapan ini.';
+
+  @override
+  String get assistantCopy => 'Salin';
+
+  @override
+  String get assistantCopied => 'Disalin';
+
+  @override
+  String get assistantHelpful => 'Membantu';
+
+  @override
+  String get assistantNotHelpful => 'Tidak membantu';
+
+  @override
+  String get assistantFeedbackThanks => 'Terima kasih atas maklum balas anda';
+
+  @override
+  String get assistantUndo => 'Buat asal';
+
+  @override
+  String get assistantUndoAll => 'Buat asal semua';
+
+  @override
+  String get assistantUndone => 'Perubahan dibuat asal';
+
+  @override
+  String get assistantUndoFailed => 'Ini tidak dapat dibuat asal. Buat perubahan itu sendiri.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count perubahan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Sahkan semua';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Sahkan $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Bantu saya memperbaharui $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name telah tamat tempoh. Apa yang perlu saya buat?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Adakah saya bersedia untuk perjalanan ke $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Bantu saya merancang perjalanan';
 }

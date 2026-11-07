@@ -4753,13 +4753,13 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantTitle => 'Weydii Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Weydii diiwaannadaada erayo fudud';
+  String get assistantTileSubtitle => 'Weydii diiwaanno, safarro iyo dejinno erayo fudud';
 
   @override
   String get assistantIntro => 'Weydii ila diiwaannadaada iyo cusboonaysiinta. Waxaan kaloo diyaarin karaa diiwaanno cusub si aad u hubiso.';
 
   @override
-  String get assistantHint => 'Weydii diiwaannadaada';
+  String get assistantHint => 'Weydii diiwaanno, safarro ama abka';
 
   @override
   String get assistantSuggestionMonth => 'Maxaa dhacaya bishan?';
@@ -4786,9 +4786,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantMicUnavailable => 'Codka lagama geli karo hadda. Hubi in Vaultara loo ogolaaday makarafoonka.';
 
   @override
-  String get assistantThinking => 'Waxaan hubinayaa diiwaannadaada';
-
-  @override
   String get assistantErrorOffline => 'Internet kuma xirna. Ku xir internetka oo isku day mar kale.';
 
   @override
@@ -4807,7 +4804,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantPremiumTitle => 'Weydii Vaultara waa qayb ka mid ah Premium';
 
   @override
-  String get assistantPremiumBody => 'U beddel Premium si aad su\'aalo uga weydiiso diiwaannadaada oo aad diiwaanno ugu darto erayo fudud.';
+  String get assistantPremiumBody => 'U beddel Premium si aad u weydiiso diiwaannadaada, safarradaada iyo dejintaada oo aad isbeddel ugu sameyso erayo fudud.';
 
   @override
   String get assistantSeePlans => 'Eeg qorshayaasha';
@@ -6329,4 +6326,133 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara qayb kama aha boggan. Haddii boggani wax ka duwan Vaultara sheego, raac boggan.';
+
+  @override
+  String get assistantStepThinking => 'Waan fekerayaa';
+
+  @override
+  String get assistantStepSlow => 'Weli waan ka shaqeynayaa';
+
+  @override
+  String get assistantStepRecords => 'Waxaan hubinayaa diiwaannadaada';
+
+  @override
+  String get assistantStepTrips => 'Waxaan hubinayaa safarradaada';
+
+  @override
+  String get assistantStepPeople => 'Waxaan hubinayaa dadkaaga';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Waxaan diyaarinayaa $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Waxaan diyaarinayaa isbeddellada $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Waxaan diyaarinayaa taariikhda cusub ee $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Waxaan u diyaarinayaa tirtiridda $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Waxaan diyaarinayaa isbeddelka';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Waxaan ku darayaa $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Waxaan cusboonaysiinayaa $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Waxaan cusboonaysiinayaa faahfaahintaada';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Waxaan diyaarinayaa safarkaaga $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Waxaan raadinayaa shaashadda saxda ah';
+
+  @override
+  String get assistantStop => 'Jooji';
+
+  @override
+  String get assistantStopped => 'Waad joojisay jawaabtan.';
+
+  @override
+  String get assistantCopy => 'Koobi';
+
+  @override
+  String get assistantCopied => 'Waa la koobiyeeyay';
+
+  @override
+  String get assistantHelpful => 'Waxtar leh';
+
+  @override
+  String get assistantNotHelpful => 'Waxtar ma leh';
+
+  @override
+  String get assistantFeedbackThanks => 'Waad ku mahadsan tahay jawaab celintaada';
+
+  @override
+  String get assistantUndo => 'Ka noqo';
+
+  @override
+  String get assistantUndoAll => 'Ka noqo dhammaan';
+
+  @override
+  String get assistantUndone => 'Isbeddelka waa laga noqday';
+
+  @override
+  String get assistantUndoFailed => 'Lagama noqon karin. Isbeddelka adigu samee.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count isbeddel',
+      one: '$count isbeddel',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Xaqiiji dhammaan';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Xaqiiji $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'I caawi inaan cusboonaysiiyo $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name wuu dhacay. Maxaan sameeyaa?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Ma u diyaarsanahay safarkayga $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'I caawi inaan qorsheeyo safar';
 }

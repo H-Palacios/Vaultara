@@ -4754,13 +4754,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantTitle => 'Uliza Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Uliza kuhusu rekodi zako kwa maneno rahisi';
+  String get assistantTileSubtitle => 'Uliza kuhusu rekodi, safari na mipangilio kwa maneno rahisi';
 
   @override
   String get assistantIntro => 'Niulize kuhusu rekodi zako na usasishaji. Pia naweza kuandaa rekodi mpya ili uzikague.';
 
   @override
-  String get assistantHint => 'Uliza kuhusu rekodi zako';
+  String get assistantHint => 'Uliza kuhusu rekodi, safari au programu';
 
   @override
   String get assistantSuggestionMonth => 'Nini kinaisha muda mwezi huu?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantMicUnavailable => 'Kuingiza sauti hakupatikani. Hakikisha Vaultara inaruhusiwa kutumia maikrofoni.';
 
   @override
-  String get assistantThinking => 'Inakagua rekodi zako';
-
-  @override
   String get assistantErrorOffline => 'Hujaunganishwa na intaneti. Unganisha kisha ujaribu tena.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantPremiumTitle => 'Uliza Vaultara ni sehemu ya Premium';
 
   @override
-  String get assistantPremiumBody => 'Pandisha daraja ili uulize maswali kuhusu rekodi zako na kuongeza rekodi kwa maneno rahisi.';
+  String get assistantPremiumBody => 'Pandisha daraja ili uulize kuhusu rekodi, safari na mipangilio yako na ufanye mabadiliko kwa maneno rahisi.';
 
   @override
   String get assistantSeePlans => 'Angalia mipango';
@@ -6330,4 +6327,133 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara si sehemu ya tovuti hii. Ikiwa tovuti hii inasema kitu tofauti na Vaultara, fuata tovuti hii.';
+
+  @override
+  String get assistantStepThinking => 'Ninafikiri';
+
+  @override
+  String get assistantStepSlow => 'Bado ninashughulikia';
+
+  @override
+  String get assistantStepRecords => 'Inakagua rekodi zako';
+
+  @override
+  String get assistantStepTrips => 'Inakagua safari zako';
+
+  @override
+  String get assistantStepPeople => 'Inakagua watu wako';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Inaandaa $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Inaandaa mabadiliko ya $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Inaandaa tarehe mpya ya $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Inajiandaa kufuta $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Inaandaa mabadiliko';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Inaongeza $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Inasasisha $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Inasasisha maelezo yako';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Inaandaa safari yako ya $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Inatafuta skrini sahihi';
+
+  @override
+  String get assistantStop => 'Simamisha';
+
+  @override
+  String get assistantStopped => 'Umesimamisha jibu hili.';
+
+  @override
+  String get assistantCopy => 'Nakili';
+
+  @override
+  String get assistantCopied => 'Imenakiliwa';
+
+  @override
+  String get assistantHelpful => 'Inasaidia';
+
+  @override
+  String get assistantNotHelpful => 'Haisaidii';
+
+  @override
+  String get assistantFeedbackThanks => 'Asante kwa maoni yako';
+
+  @override
+  String get assistantUndo => 'Tendua';
+
+  @override
+  String get assistantUndoAll => 'Tendua yote';
+
+  @override
+  String get assistantUndone => 'Mabadiliko yametenduliwa';
+
+  @override
+  String get assistantUndoFailed => 'Hili halikuweza kutenduliwa. Fanya mabadiliko mwenyewe.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mabadiliko $count',
+      one: 'Badiliko $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Thibitisha yote';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Thibitisha $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Nisaidie kusasisha $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name imeisha muda. Nifanye nini?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Je, niko tayari kwa safari yangu ya $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Nisaidie kupanga safari';
 }

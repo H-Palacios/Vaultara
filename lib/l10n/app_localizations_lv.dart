@@ -4800,13 +4800,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantTitle => 'Jautāt Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Jautājiet par saviem ierakstiem vienkāršiem vārdiem';
+  String get assistantTileSubtitle => 'Jautājiet par ierakstiem, ceļojumiem un iestatījumiem vienkāršiem vārdiem';
 
   @override
   String get assistantIntro => 'Jautājiet man par saviem ierakstiem un atjaunošanu. Varu arī sagatavot jaunus ierakstus, lai jūs tos pārbaudītu.';
 
   @override
-  String get assistantHint => 'Jautājiet par saviem ierakstiem';
+  String get assistantHint => 'Jautājiet par ierakstiem, ceļojumiem vai lietotni';
 
   @override
   String get assistantSuggestionMonth => 'Kam šomēnes beidzas termiņš?';
@@ -4833,9 +4833,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantMicUnavailable => 'Balss ievade nav pieejama. Pārbaudiet, vai Vaultara drīkst izmantot mikrofonu.';
 
   @override
-  String get assistantThinking => 'Pārbauda jūsu ierakstus';
-
-  @override
   String get assistantErrorOffline => 'Jums nav savienojuma. Izveidojiet savienojumu ar internetu un mēģiniet vēlreiz.';
 
   @override
@@ -4854,7 +4851,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantPremiumTitle => 'Jautāt Vaultara ir Premium daļa';
 
   @override
-  String get assistantPremiumBody => 'Jauniniet plānu, lai uzdotu jautājumus par saviem ierakstiem un pievienotu ierakstus vienkāršiem vārdiem.';
+  String get assistantPremiumBody => 'Jauniniet plānu, lai jautātu par saviem ierakstiem, ceļojumiem un iestatījumiem un veiktu izmaiņas vienkāršiem vārdiem.';
 
   @override
   String get assistantSeePlans => 'Skatīt plānus';
@@ -6392,4 +6389,134 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara nav šīs vietnes daļa. Ja šī vietne saka ko citu nekā Vaultara, ievērojiet šo vietni.';
+
+  @override
+  String get assistantStepThinking => 'Domāju';
+
+  @override
+  String get assistantStepSlow => 'Joprojām strādāju';
+
+  @override
+  String get assistantStepRecords => 'Pārbauda jūsu ierakstus';
+
+  @override
+  String get assistantStepTrips => 'Pārbauda jūsu ceļojumus';
+
+  @override
+  String get assistantStepPeople => 'Pārbauda jūsu personas';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Sagatavo: $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Sagatavo izmaiņas: $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Sagatavo jauno datumu: $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Sagatavo dzēšanu: $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Sagatavo izmaiņas';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Pievieno: $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Atjaunina: $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Atjaunina jūsu datus';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Sagatavo jūsu ceļojumu: $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Meklē pareizo ekrānu';
+
+  @override
+  String get assistantStop => 'Apturēt';
+
+  @override
+  String get assistantStopped => 'Jūs apturējāt šo atbildi.';
+
+  @override
+  String get assistantCopy => 'Kopēt';
+
+  @override
+  String get assistantCopied => 'Nokopēts';
+
+  @override
+  String get assistantHelpful => 'Noderīgi';
+
+  @override
+  String get assistantNotHelpful => 'Nav noderīgi';
+
+  @override
+  String get assistantFeedbackThanks => 'Paldies par atsauksmi';
+
+  @override
+  String get assistantUndo => 'Atsaukt';
+
+  @override
+  String get assistantUndoAll => 'Atsaukt visu';
+
+  @override
+  String get assistantUndone => 'Izmaiņas atsauktas';
+
+  @override
+  String get assistantUndoFailed => 'To nevarēja atsaukt. Veiciet izmaiņas paši.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count izmaiņas',
+      one: '$count izmaiņa',
+      zero: '$count izmaiņu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Apstiprināt visu';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Apstiprināt $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Palīdzi man atjaunot: $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name derīgums ir beidzies. Ko man darīt?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Vai esmu gatavs ceļojumam: $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Palīdzi man plānot ceļojumu';
 }

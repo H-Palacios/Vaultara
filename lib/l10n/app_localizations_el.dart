@@ -4754,13 +4754,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get assistantTitle => 'Ρωτήστε το Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Ρωτήστε για τις εγγραφές σας με απλά λόγια';
+  String get assistantTileSubtitle => 'Ρωτήστε για εγγραφές, ταξίδια και ρυθμίσεις με απλά λόγια';
 
   @override
   String get assistantIntro => 'Ρωτήστε με για τις εγγραφές και τις ανανεώσεις σας. Μπορώ επίσης να ετοιμάσω νέες εγγραφές για να τις ελέγξετε.';
 
   @override
-  String get assistantHint => 'Ρωτήστε για τις εγγραφές σας';
+  String get assistantHint => 'Ρωτήστε για εγγραφές, ταξίδια ή την εφαρμογή';
 
   @override
   String get assistantSuggestionMonth => 'Τι λήγει αυτόν τον μήνα;';
@@ -4787,9 +4787,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get assistantMicUnavailable => 'Η φωνητική εισαγωγή δεν είναι διαθέσιμη. Ελέγξτε ότι το Vaultara έχει άδεια χρήσης του μικροφώνου.';
 
   @override
-  String get assistantThinking => 'Έλεγχος των εγγραφών σας';
-
-  @override
   String get assistantErrorOffline => 'Είστε εκτός σύνδεσης. Συνδεθείτε στο διαδίκτυο και δοκιμάστε ξανά.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get assistantPremiumTitle => 'Το Ρωτήστε το Vaultara περιλαμβάνεται στο Premium';
 
   @override
-  String get assistantPremiumBody => 'Αναβαθμίστε για να κάνετε ερωτήσεις για τις εγγραφές σας και να προσθέτετε εγγραφές με απλά λόγια.';
+  String get assistantPremiumBody => 'Αναβαθμίστε για να ρωτάτε για τις εγγραφές, τα ταξίδια και τις ρυθμίσεις σας και να κάνετε αλλαγές με απλά λόγια.';
 
   @override
   String get assistantSeePlans => 'Δείτε τα προγράμματα';
@@ -6330,4 +6327,133 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Το Vaultara δεν είναι μέρος αυτού του ιστότοπου. Αν ο ιστότοπος λέει κάτι διαφορετικό από το Vaultara, ακολουθήστε τον ιστότοπο.';
+
+  @override
+  String get assistantStepThinking => 'Σκέφτομαι';
+
+  @override
+  String get assistantStepSlow => 'Το δουλεύω ακόμη';
+
+  @override
+  String get assistantStepRecords => 'Έλεγχος των εγγραφών σας';
+
+  @override
+  String get assistantStepTrips => 'Έλεγχος των ταξιδιών σας';
+
+  @override
+  String get assistantStepPeople => 'Έλεγχος των ατόμων σας';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Προετοιμασία: $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Προετοιμασία αλλαγών στο $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Προετοιμασία νέας ημερομηνίας για το $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Προετοιμασία διαγραφής του $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Προετοιμασία της αλλαγής';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Προσθήκη: $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ενημέρωση: $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ενημέρωση των στοιχείων σας';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Προετοιμασία του ταξιδιού σας: $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Αναζήτηση της σωστής οθόνης';
+
+  @override
+  String get assistantStop => 'Διακοπή';
+
+  @override
+  String get assistantStopped => 'Διακόψατε αυτή την απάντηση.';
+
+  @override
+  String get assistantCopy => 'Αντιγραφή';
+
+  @override
+  String get assistantCopied => 'Αντιγράφηκε';
+
+  @override
+  String get assistantHelpful => 'Χρήσιμο';
+
+  @override
+  String get assistantNotHelpful => 'Όχι χρήσιμο';
+
+  @override
+  String get assistantFeedbackThanks => 'Ευχαριστούμε για τα σχόλια';
+
+  @override
+  String get assistantUndo => 'Αναίρεση';
+
+  @override
+  String get assistantUndoAll => 'Αναίρεση όλων';
+
+  @override
+  String get assistantUndone => 'Η αλλαγή αναιρέθηκε';
+
+  @override
+  String get assistantUndoFailed => 'Δεν ήταν δυνατή η αναίρεση. Κάντε την αλλαγή μόνοι σας.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count αλλαγές',
+      one: '$count αλλαγή',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Επιβεβαίωση όλων';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Επιβεβαίωση $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Βοήθησέ με να ανανεώσω: $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'Το $name έληξε. Τι να κάνω;';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Είμαι έτοιμος για το ταξίδι: $place;';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Βοήθησέ με να σχεδιάσω ένα ταξίδι';
 }

@@ -4754,13 +4754,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantTitle => 'Kérdezze a Vaultarát';
 
   @override
-  String get assistantTileSubtitle => 'Kérdezzen a bejegyzéseiről egyszerű szavakkal';
+  String get assistantTileSubtitle => 'Kérdezzen bejegyzésekről, utazásokról és beállításokról egyszerű szavakkal';
 
   @override
   String get assistantIntro => 'Kérdezzen a bejegyzéseiről és a megújításokról. Új bejegyzéseket is elő tudok készíteni, hogy Ön ellenőrizhesse őket.';
 
   @override
-  String get assistantHint => 'Kérdezzen a bejegyzéseiről';
+  String get assistantHint => 'Kérdezzen bejegyzésekről, utazásokról vagy az appról';
 
   @override
   String get assistantSuggestionMonth => 'Mi jár le ebben a hónapban?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantMicUnavailable => 'A hangbevitel nem érhető el. Ellenőrizze, hogy a Vaultara használhatja-e a mikrofont.';
 
   @override
-  String get assistantThinking => 'Bejegyzései ellenőrzése';
-
-  @override
   String get assistantErrorOffline => 'Nincs internetkapcsolata. Csatlakozzon az internetre, és próbálja újra.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantPremiumTitle => 'A Premium része: Kérdezze a Vaultarát';
 
   @override
-  String get assistantPremiumBody => 'Frissítsen Premiumra, hogy kérdezhessen a bejegyzéseiről, és egyszerű szavakkal vehessen fel újakat.';
+  String get assistantPremiumBody => 'Frissítsen Premiumra, hogy kérdezhessen a bejegyzéseiről, utazásairól és beállításairól, és egyszerű szavakkal módosíthasson.';
 
   @override
   String get assistantSeePlans => 'Csomagok megtekintése';
@@ -6330,4 +6327,133 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'A Vaultara nem része ennek az oldalnak. Ha az oldal mást mond, mint a Vaultara, kövesse az oldalt.';
+
+  @override
+  String get assistantStepThinking => 'Gondolkodom';
+
+  @override
+  String get assistantStepSlow => 'Még dolgozom rajta';
+
+  @override
+  String get assistantStepRecords => 'Bejegyzései ellenőrzése';
+
+  @override
+  String get assistantStepTrips => 'Utazásai ellenőrzése';
+
+  @override
+  String get assistantStepPeople => 'Személyei ellenőrzése';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name előkészítése';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return '$name módosításainak előkészítése';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return '$name új dátumának előkészítése';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return '$name törlésének előkészítése';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'A módosítás előkészítése';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name hozzáadása';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name frissítése';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Adatai frissítése';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Az utazása előkészítése: $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'A megfelelő képernyő keresése';
+
+  @override
+  String get assistantStop => 'Leállítás';
+
+  @override
+  String get assistantStopped => 'Leállította ezt a választ.';
+
+  @override
+  String get assistantCopy => 'Másolás';
+
+  @override
+  String get assistantCopied => 'Másolva';
+
+  @override
+  String get assistantHelpful => 'Hasznos';
+
+  @override
+  String get assistantNotHelpful => 'Nem hasznos';
+
+  @override
+  String get assistantFeedbackThanks => 'Köszönjük a visszajelzést';
+
+  @override
+  String get assistantUndo => 'Visszavonás';
+
+  @override
+  String get assistantUndoAll => 'Összes visszavonása';
+
+  @override
+  String get assistantUndone => 'Módosítás visszavonva';
+
+  @override
+  String get assistantUndoFailed => 'Ezt nem lehetett visszavonni. Végezze el a módosítást saját maga.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count módosítás',
+      one: '$count módosítás',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Összes megerősítése';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count megerősítése';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Segíts megújítani: $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name lejárt. Mit tegyek?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Készen állok az utazásra: $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Segíts megtervezni egy utazást';
 }

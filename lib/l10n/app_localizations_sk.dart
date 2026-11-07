@@ -4846,13 +4846,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get assistantTitle => 'Opýtajte sa Vaultary';
 
   @override
-  String get assistantTileSubtitle => 'Pýtajte sa na svoje záznamy jednoduchými slovami';
+  String get assistantTileSubtitle => 'Pýtajte sa na záznamy, cesty a nastavenia jednoduchými slovami';
 
   @override
   String get assistantIntro => 'Opýtajte sa ma na svoje záznamy a obnovenia. Môžem tiež pripraviť nové záznamy, aby ste ich skontrolovali.';
 
   @override
-  String get assistantHint => 'Opýtajte sa na svoje záznamy';
+  String get assistantHint => 'Pýtajte sa na záznamy, cesty alebo aplikáciu';
 
   @override
   String get assistantSuggestionMonth => 'Čo vyprší tento mesiac?';
@@ -4879,9 +4879,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get assistantMicUnavailable => 'Hlasový vstup nie je k dispozícii. Skontrolujte, či Vaultara smie používať mikrofón.';
 
   @override
-  String get assistantThinking => 'Kontrolujem vaše záznamy';
-
-  @override
   String get assistantErrorOffline => 'Ste offline. Pripojte sa na internet a skúste to znova.';
 
   @override
@@ -4900,7 +4897,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get assistantPremiumTitle => 'Opýtajte sa Vaultary je súčasťou Premium';
 
   @override
-  String get assistantPremiumBody => 'Prejdite na vyšší tarif a pýtajte sa na svoje záznamy a pridávajte záznamy jednoduchými slovami.';
+  String get assistantPremiumBody => 'Prejdite na vyšší tarif, aby ste sa mohli pýtať na svoje záznamy, cesty a nastavenia a robiť zmeny jednoduchými slovami.';
 
   @override
   String get assistantSeePlans => 'Zobraziť tarify';
@@ -6454,4 +6451,135 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara nie je súčasťou tejto stránky. Ak táto stránka uvádza niečo iné ako Vaultara, riaďte sa touto stránkou.';
+
+  @override
+  String get assistantStepThinking => 'Premýšľam';
+
+  @override
+  String get assistantStepSlow => 'Ešte na tom pracujem';
+
+  @override
+  String get assistantStepRecords => 'Kontrolujem vaše záznamy';
+
+  @override
+  String get assistantStepTrips => 'Kontrolujem vaše cesty';
+
+  @override
+  String get assistantStepPeople => 'Kontrolujem vaše osoby';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Pripravujem $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Pripravujem zmeny záznamu $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Pripravujem nový dátum pre $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Pripravujem odstránenie záznamu $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Pripravujem zmenu';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Pridávam osobu $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Aktualizujem $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Aktualizujem vaše údaje';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Pripravujem vašu cestu do $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Hľadám správnu obrazovku';
+
+  @override
+  String get assistantStop => 'Zastaviť';
+
+  @override
+  String get assistantStopped => 'Túto odpoveď ste zastavili.';
+
+  @override
+  String get assistantCopy => 'Kopírovať';
+
+  @override
+  String get assistantCopied => 'Skopírované';
+
+  @override
+  String get assistantHelpful => 'Užitočné';
+
+  @override
+  String get assistantNotHelpful => 'Neužitočné';
+
+  @override
+  String get assistantFeedbackThanks => 'Ďakujeme za spätnú väzbu';
+
+  @override
+  String get assistantUndo => 'Vrátiť späť';
+
+  @override
+  String get assistantUndoAll => 'Vrátiť všetko';
+
+  @override
+  String get assistantUndone => 'Zmena bola vrátená';
+
+  @override
+  String get assistantUndoFailed => 'Túto zmenu sa nepodarilo vrátiť. Urobte ju sami.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zmien',
+      many: '$count zmeny',
+      few: '$count zmeny',
+      one: '$count zmena',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Potvrdiť všetko';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Potvrdiť $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Pomôž mi obnoviť $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'Platnosť $name vypršala. Čo mám robiť?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Som pripravený na cestu do $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Pomôž mi naplánovať cestu';
 }

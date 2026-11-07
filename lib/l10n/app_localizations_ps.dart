@@ -4754,13 +4754,13 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantTitle => 'له Vaultara وپوښتئ';
 
   @override
-  String get assistantTileSubtitle => 'د خپلو ریکارډونو په اړه په ساده ټکو وپوښتئ';
+  String get assistantTileSubtitle => 'د ریکارډونو، سفرونو او تنظیماتو په اړه په ساده ټکو وپوښتئ';
 
   @override
   String get assistantIntro => 'له ما څخه د خپلو ریکارډونو او نوي کولو په اړه وپوښتئ. زه کولی شم نوي ریکارډونه هم چمتو کړم چې تاسو یې وګورئ.';
 
   @override
-  String get assistantHint => 'د خپلو ریکارډونو په اړه وپوښتئ';
+  String get assistantHint => 'د ریکارډونو، سفرونو یا اپ په اړه وپوښتئ';
 
   @override
   String get assistantSuggestionMonth => 'پدې میاشت کې څه پای ته رسیږي؟';
@@ -4787,9 +4787,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantMicUnavailable => 'غږیز ننوتل شتون نلري. وګورئ چې Vaultara کولی شي مایکروفون وکاروي.';
 
   @override
-  String get assistantThinking => 'ستاسو ریکارډونه کتل کیږي';
-
-  @override
   String get assistantErrorOffline => 'تاسو آفلاین یاست. انټرنیټ ته وصل شئ او بیا هڅه وکړئ.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantPremiumTitle => 'له Vaultara وپوښتئ د پریمیم برخه ده';
 
   @override
-  String get assistantPremiumBody => 'د خپلو ریکارډونو په اړه د پوښتنو کولو او په ساده ټکو د ریکارډونو اضافه کولو لپاره پریمیم ته لوړ شئ.';
+  String get assistantPremiumBody => 'د خپلو ریکارډونو، سفرونو او تنظیماتو په اړه د پوښتنې او په ساده ټکو د بدلون لپاره پریمیم ته لوړ شئ.';
 
   @override
   String get assistantSeePlans => 'پلانونه وګورئ';
@@ -6330,4 +6327,133 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara د دې ویب پاڼې برخه نه ده. که دا ویب پاڼه له Vaultara سره توپیر لرونکې خبره کوي، د دې ویب پاڼې پیروي وکړئ.';
+
+  @override
+  String get assistantStepThinking => 'فکر کوم';
+
+  @override
+  String get assistantStepSlow => 'لا هم کار روان دی';
+
+  @override
+  String get assistantStepRecords => 'ستاسو ریکارډونه کتل کیږي';
+
+  @override
+  String get assistantStepTrips => 'ستاسو سفرونه کتل کیږي';
+
+  @override
+  String get assistantStepPeople => 'ستاسو خلک کتل کیږي';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return '$name چمتو کیږي';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'په $name کې بدلونونه چمتو کیږي';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'د $name نوې نیټه چمتو کیږي';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'د $name ړنګولو ته چمتووالی';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'بدلون چمتو کیږي';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return '$name اضافه کیږي';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return '$name تازه کیږي';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'ستاسو معلومات تازه کیږي';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return '$place ته ستاسو سفر چمتو کیږي';
+  }
+
+  @override
+  String get assistantStepScreen => 'سمه پرده لټول کیږي';
+
+  @override
+  String get assistantStop => 'ودروئ';
+
+  @override
+  String get assistantStopped => 'تاسو دا ځواب ودراوه.';
+
+  @override
+  String get assistantCopy => 'کاپي';
+
+  @override
+  String get assistantCopied => 'کاپي شو';
+
+  @override
+  String get assistantHelpful => 'ګټور';
+
+  @override
+  String get assistantNotHelpful => 'ګټور نه دی';
+
+  @override
+  String get assistantFeedbackThanks => 'د نظر لپاره مننه';
+
+  @override
+  String get assistantUndo => 'بیرته یې کړئ';
+
+  @override
+  String get assistantUndoAll => 'ټول بیرته کړئ';
+
+  @override
+  String get assistantUndone => 'بدلون بیرته شو';
+
+  @override
+  String get assistantUndoFailed => 'دا بیرته نه شو کېدای. بدلون پخپله وکړئ.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count بدلونونه',
+      one: '$count بدلون',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'ټول تایید کړئ';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return '$count تایید کړئ';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'د $name په نوي کولو کې مې مرسته وکړه';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'د $name موده پای ته رسېدلې. څه وکړم؟';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'ایا زه $place ته د سفر لپاره چمتو یم؟';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'د سفر په پلان کې مې مرسته وکړه';
 }

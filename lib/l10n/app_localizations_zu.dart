@@ -4754,13 +4754,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get assistantTitle => 'Buza i-Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Buza ngamarekhodi akho ngamagama alula';
+  String get assistantTileSubtitle => 'Buza ngamarekhodi, uhambo nezilungiselelo ngamagama alula';
 
   @override
   String get assistantIntro => 'Ngibuze ngamarekhodi akho nokuvuselelwa. Ngingalungisa namarekhodi amasha ukuze uwahlole.';
 
   @override
-  String get assistantHint => 'Buza ngamarekhodi akho';
+  String get assistantHint => 'Buza ngamarekhodi, uhambo noma uhlelo lokusebenza';
 
   @override
   String get assistantSuggestionMonth => 'Yini ephelelwa yisikhathi kule nyanga?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get assistantMicUnavailable => 'Ukufaka ngezwi akutholakali. Hlola ukuthi i-Vaultara ivunyelwe ukusebenzisa imakrofoni.';
 
   @override
-  String get assistantThinking => 'Ngihlola amarekhodi akho';
-
-  @override
   String get assistantErrorOffline => 'Awuxhunyiwe ku-inthanethi. Xhuma ku-inthanethi bese uzama futhi.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get assistantPremiumTitle => 'Buza i-Vaultara iyingxenye ye-Premium';
 
   @override
-  String get assistantPremiumBody => 'Thuthukela ku-Premium ukuze ubuze imibuzo ngamarekhodi akho futhi wengeze amarekhodi ngamagama alula.';
+  String get assistantPremiumBody => 'Thuthukela ku-Premium ukuze ubuze ngamarekhodi akho, uhambo nezilungiselelo futhi wenze izinguquko ngamagama alula.';
 
   @override
   String get assistantSeePlans => 'Bona izinhlelo';
@@ -6330,4 +6327,133 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'I-Vaultara ayiyona ingxenye yale sayithi. Uma le sayithi isho okuhlukile ku-Vaultara, landela le sayithi.';
+
+  @override
+  String get assistantStepThinking => 'Ngiyacabanga';
+
+  @override
+  String get assistantStepSlow => 'Ngisasebenza kukho';
+
+  @override
+  String get assistantStepRecords => 'Ngihlola amarekhodi akho';
+
+  @override
+  String get assistantStepTrips => 'Ngihlola uhambo lwakho';
+
+  @override
+  String get assistantStepPeople => 'Ngihlola abantu bakho';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Ngilungiselela i-$name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Ngilungiselela izinguquko ku-$name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Ngilungiselela usuku olusha lwe-$name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Ngilungiselela ukususa i-$name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Ngilungiselela inguquko';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Ngengeza u-$name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Ngibuyekeza i-$name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Ngibuyekeza imininingwane yakho';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Ngilungiselela uhambo lwakho oluya e-$place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Ngifuna isikrini esifanele';
+
+  @override
+  String get assistantStop => 'Misa';
+
+  @override
+  String get assistantStopped => 'Uyimisile le mpendulo.';
+
+  @override
+  String get assistantCopy => 'Kopisha';
+
+  @override
+  String get assistantCopied => 'Kukopishiwe';
+
+  @override
+  String get assistantHelpful => 'Kuyasiza';
+
+  @override
+  String get assistantNotHelpful => 'Akusizi';
+
+  @override
+  String get assistantFeedbackThanks => 'Siyabonga ngempendulo yakho';
+
+  @override
+  String get assistantUndo => 'Hlehlisa';
+
+  @override
+  String get assistantUndoAll => 'Hlehlisa konke';
+
+  @override
+  String get assistantUndone => 'Inguquko ihlehlisiwe';
+
+  @override
+  String get assistantUndoFailed => 'Lokhu akukwazanga ukuhlehliswa. Yenza inguquko ngokwakho.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izinguquko ezingu-$count',
+      one: 'Inguquko engu-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Qinisekisa konke';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Qinisekisa $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Ngisize ngivuselele i-$name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return 'I-$name iphelelwe yisikhathi. Ngenzeni?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Ngabe ngilungele uhambo lwami oluya e-$place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Ngisize ngihlele uhambo';
 }

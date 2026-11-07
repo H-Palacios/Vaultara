@@ -4754,13 +4754,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantTitle => 'Kysy Vaultaralta';
 
   @override
-  String get assistantTileSubtitle => 'Kysy tietueistasi tavallisin sanoin';
+  String get assistantTileSubtitle => 'Kysy tietueista, matkoista ja asetuksista tavallisin sanoin';
 
   @override
   String get assistantIntro => 'Kysy minulta tietueistasi ja uusimisista. Voin myös valmistella uusia tietueita tarkistettavaksesi.';
 
   @override
-  String get assistantHint => 'Kysy tietueistasi';
+  String get assistantHint => 'Kysy tietueista, matkoista tai sovelluksesta';
 
   @override
   String get assistantSuggestionMonth => 'Mikä vanhenee tässä kuussa?';
@@ -4787,9 +4787,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantMicUnavailable => 'Puhesyöte ei ole käytettävissä. Tarkista, että Vaultara saa käyttää mikrofonia.';
 
   @override
-  String get assistantThinking => 'Tarkistetaan tietueesi';
-
-  @override
   String get assistantErrorOffline => 'Olet offline-tilassa. Muodosta internetyhteys ja yritä uudelleen.';
 
   @override
@@ -4808,7 +4805,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantPremiumTitle => 'Kysy Vaultaralta kuuluu Premiumiin';
 
   @override
-  String get assistantPremiumBody => 'Päivitä Premiumiin, niin voit kysyä tietueistasi ja lisätä tietueita tavallisin sanoin.';
+  String get assistantPremiumBody => 'Päivitä Premiumiin, niin voit kysyä tietueistasi, matkoistasi ja asetuksistasi ja tehdä muutoksia tavallisin sanoin.';
 
   @override
   String get assistantSeePlans => 'Näytä tilaukset';
@@ -6330,4 +6327,133 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara ei ole osa tätä sivustoa. Jos sivusto sanoo jotain muuta kuin Vaultara, noudata sivustoa.';
+
+  @override
+  String get assistantStepThinking => 'Mietitään';
+
+  @override
+  String get assistantStepSlow => 'Työ on yhä kesken';
+
+  @override
+  String get assistantStepRecords => 'Tarkistetaan tietueesi';
+
+  @override
+  String get assistantStepTrips => 'Tarkistetaan matkasi';
+
+  @override
+  String get assistantStepPeople => 'Tarkistetaan henkilösi';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Valmistellaan: $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Valmistellaan muutoksia: $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Valmistellaan uutta päivämäärää: $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Valmistellaan poistoa: $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Valmistellaan muutosta';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Lisätään: $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Päivitetään: $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Päivitetään tietojasi';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Valmistellaan matkaasi: $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Etsitään oikeaa näkymää';
+
+  @override
+  String get assistantStop => 'Pysäytä';
+
+  @override
+  String get assistantStopped => 'Pysäytit tämän vastauksen.';
+
+  @override
+  String get assistantCopy => 'Kopioi';
+
+  @override
+  String get assistantCopied => 'Kopioitu';
+
+  @override
+  String get assistantHelpful => 'Hyödyllinen';
+
+  @override
+  String get assistantNotHelpful => 'Ei hyödyllinen';
+
+  @override
+  String get assistantFeedbackThanks => 'Kiitos palautteesta';
+
+  @override
+  String get assistantUndo => 'Kumoa';
+
+  @override
+  String get assistantUndoAll => 'Kumoa kaikki';
+
+  @override
+  String get assistantUndone => 'Muutos kumottu';
+
+  @override
+  String get assistantUndoFailed => 'Tätä ei voitu kumota. Tee muutos itse.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count muutosta',
+      one: '$count muutos',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Vahvista kaikki';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Vahvista $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Auta minua uusimaan $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name on vanhentunut. Mitä teen?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Olenko valmis matkalle: $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Auta minua suunnittelemaan matka';
 }

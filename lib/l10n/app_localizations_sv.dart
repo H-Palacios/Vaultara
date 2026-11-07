@@ -4753,13 +4753,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get assistantTitle => 'Fråga Vaultara';
 
   @override
-  String get assistantTileSubtitle => 'Fråga om dina poster med vanliga ord';
+  String get assistantTileSubtitle => 'Fråga om poster, resor och inställningar med vanliga ord';
 
   @override
   String get assistantIntro => 'Fråga mig om dina poster och förnyelser. Jag kan också förbereda nya poster som du kan granska.';
 
   @override
-  String get assistantHint => 'Fråga om dina poster';
+  String get assistantHint => 'Fråga om poster, resor eller appen';
 
   @override
   String get assistantSuggestionMonth => 'Vad går ut den här månaden?';
@@ -4786,9 +4786,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get assistantMicUnavailable => 'Röstinmatning är inte tillgänglig. Kontrollera att Vaultara får använda mikrofonen.';
 
   @override
-  String get assistantThinking => 'Kollar dina poster';
-
-  @override
   String get assistantErrorOffline => 'Du är offline. Anslut till internet och försök igen.';
 
   @override
@@ -4807,7 +4804,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get assistantPremiumTitle => 'Fråga Vaultara ingår i Premium';
 
   @override
-  String get assistantPremiumBody => 'Uppgradera för att ställa frågor om dina poster och lägga till poster med vanliga ord.';
+  String get assistantPremiumBody => 'Uppgradera för att fråga om dina poster, resor och inställningar och göra ändringar med vanliga ord.';
 
   @override
   String get assistantSeePlans => 'Visa planer';
@@ -6329,4 +6326,133 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get visaLeavingRulesNote => 'Vaultara är inte en del av den här webbplatsen. Om webbplatsen säger något annat än Vaultara ska du följa webbplatsen.';
+
+  @override
+  String get assistantStepThinking => 'Tänker';
+
+  @override
+  String get assistantStepSlow => 'Jobbar fortfarande på det';
+
+  @override
+  String get assistantStepRecords => 'Kollar dina poster';
+
+  @override
+  String get assistantStepTrips => 'Kollar dina resor';
+
+  @override
+  String get assistantStepPeople => 'Kollar dina personer';
+
+  @override
+  String assistantStepRecordAdd(String name) {
+    return 'Förbereder $name';
+  }
+
+  @override
+  String assistantStepRecordEdit(String name) {
+    return 'Förbereder ändringar i $name';
+  }
+
+  @override
+  String assistantStepRecordRenew(String name) {
+    return 'Förbereder nytt datum för $name';
+  }
+
+  @override
+  String assistantStepRecordDelete(String name) {
+    return 'Förbereder borttagning av $name';
+  }
+
+  @override
+  String get assistantStepRecordGeneric => 'Förbereder ändringen';
+
+  @override
+  String assistantStepPersonAdd(String name) {
+    return 'Lägger till $name';
+  }
+
+  @override
+  String assistantStepUpdating(String name) {
+    return 'Uppdaterar $name';
+  }
+
+  @override
+  String get assistantStepPersonMe => 'Uppdaterar dina uppgifter';
+
+  @override
+  String assistantStepTripAdd(String place) {
+    return 'Förbereder din resa till $place';
+  }
+
+  @override
+  String get assistantStepScreen => 'Hittar rätt skärm';
+
+  @override
+  String get assistantStop => 'Stoppa';
+
+  @override
+  String get assistantStopped => 'Du stoppade det här svaret.';
+
+  @override
+  String get assistantCopy => 'Kopiera';
+
+  @override
+  String get assistantCopied => 'Kopierat';
+
+  @override
+  String get assistantHelpful => 'Hjälpsamt';
+
+  @override
+  String get assistantNotHelpful => 'Inte hjälpsamt';
+
+  @override
+  String get assistantFeedbackThanks => 'Tack för din feedback';
+
+  @override
+  String get assistantUndo => 'Ångra';
+
+  @override
+  String get assistantUndoAll => 'Ångra alla';
+
+  @override
+  String get assistantUndone => 'Ändringen är ångrad';
+
+  @override
+  String get assistantUndoFailed => 'Det gick inte att ångra. Gör ändringen själv.';
+
+  @override
+  String assistantBatchTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ändringar',
+      one: '$count ändring',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantConfirmAll => 'Bekräfta alla';
+
+  @override
+  String assistantConfirmSelected(int count) {
+    return 'Bekräfta $count';
+  }
+
+  @override
+  String assistantSuggestRenew(String name) {
+    return 'Hjälp mig att förnya $name';
+  }
+
+  @override
+  String assistantSuggestExpired(String name) {
+    return '$name har gått ut. Vad gör jag?';
+  }
+
+  @override
+  String assistantSuggestTripReady(String place) {
+    return 'Är jag redo för resan till $place?';
+  }
+
+  @override
+  String get assistantSuggestPlanTrip => 'Hjälp mig att planera en resa';
 }
