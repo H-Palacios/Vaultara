@@ -5902,9 +5902,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get assistantDeleteNote => 'Ililipat ito sa Sentro ng Pagbawi, kung saan puwede mo itong ibalik sa loob ng 30 araw.';
 
   @override
-  String get assistantFieldCountries => 'Mga bansa';
-
-  @override
   String get assistantHistoryAllDeleted => 'Natanggal na ang lahat ng chat';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Tulungan akong magplano ng biyahe';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mga bansa',
+      one: 'Bansa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Baguhin ang setting';
+
+  @override
+  String get assistantSettingAppLockNote => 'Hihingin muna ng phone mo ang fingerprint, mukha o screen lock mo.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Hihilingin ng phone mo na payagan ang mga notification.';
+
+  @override
+  String get assistantSettingUnavailable => 'Hindi available ang setting na ito sa phone na ito.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: walang kailangang baguhin';
+  }
+
+  @override
+  String get assistantStepSetting => 'Inihahanda ang setting';
+
+  @override
+  String get travelItemAccommodation => 'Patunay kung saan ka tutuloy, gaya ng booking';
+
+  @override
+  String get travelItemReturnTicket => 'Ticket pabalik o papunta sa susunod na destinasyon';
+
+  @override
+  String get travelItemHostInvite => 'Address ng host mo, at invitation letter kung hinihingi ng bansa';
+
+  @override
+  String get travelItemBusinessInvite => 'Invitation letter mula sa kumpanyang bibisitahin mo';
+
+  @override
+  String get travelItemEmployerLetter => 'Sulat mula sa employer mo tungkol sa biyahe';
+
+  @override
+  String get travelItemStudyAcceptance => 'Acceptance letter mula sa paaralan o unibersidad mo';
+
+  @override
+  String get travelItemProofOfFunds => 'Patunay ng pondo, gaya ng mga bagong bank statement';
+
+  @override
+  String get travelItemStudyPermit => 'Aprubado na ang study visa o permit';
+
+  @override
+  String get travelItemWorkPermit => 'Aprubado na ang work visa o permit';
+
+  @override
+  String get travelItemWorkContract => 'Pinirmahang job offer o kontrata sa trabaho';
+
+  @override
+  String get visaPermitNoneStudy => 'Walang naka-save na study permit';
+
+  @override
+  String get visaPermitNoneWork => 'Walang naka-save na work permit';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Valid ang permit hanggang $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Mag-e-expire ang permit sa $date, bago ka bumalik';
+  }
+
+  @override
+  String get visaPermitHint => 'I-save ang permit bilang record at paaalalahanan ka ng Vaultara bago ito mag-expire.';
+
+  @override
+  String get visaPermitAdd => 'Magdagdag ng permit';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Study permit para sa $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Work permit para sa $country';
+  }
 }

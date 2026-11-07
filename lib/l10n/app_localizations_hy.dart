@@ -5902,9 +5902,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get assistantDeleteNote => 'Այն կտեղափոխվի Վերականգնման կենտրոն, որտեղ կարող եք այն վերականգնել 30 օրվա ընթացքում։';
 
   @override
-  String get assistantFieldCountries => 'Երկրներ';
-
-  @override
   String get assistantHistoryAllDeleted => 'Բոլոր զրույցները ջնջված են';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Օգնիր պլանավորել ճամփորդություն';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Երկրներ',
+      one: 'Երկիր',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Փոխել կարգավորումը';
+
+  @override
+  String get assistantSettingAppLockNote => 'Հեռախոսը նախ կխնդրի մատնահետք, դեմք կամ էկրանի կողպեք։';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Հեռախոսը կխնդրի թույլատրել ծանուցումները։';
+
+  @override
+  String get assistantSettingUnavailable => 'Այս կարգավորումը հասանելի չէ այս հեռախոսում։';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting՝ փոփոխություն պետք չէ';
+  }
+
+  @override
+  String get assistantStepSetting => 'Կարգավորումը պատրաստվում է';
+
+  @override
+  String get travelItemAccommodation => 'Կացության վայրի ապացույց, օրինակ՝ ամրագրում';
+
+  @override
+  String get travelItemReturnTicket => 'Վերադարձի կամ հետագա ուղևորության տոմս';
+
+  @override
+  String get travelItemHostInvite => 'Հյուրընկալողի հասցեն և հրավերի նամակ, եթե երկիրը պահանջում է';
+
+  @override
+  String get travelItemBusinessInvite => 'Հրավերի նամակ այն ընկերությունից, որին այցելում եք';
+
+  @override
+  String get travelItemEmployerLetter => 'Գործատուի նամակ ուղևորության մասին';
+
+  @override
+  String get travelItemStudyAcceptance => 'Ընդունման նամակ դպրոցից կամ համալսարանից';
+
+  @override
+  String get travelItemProofOfFunds => 'Միջոցների ապացույց, օրինակ՝ վերջին բանկային քաղվածքներ';
+
+  @override
+  String get travelItemStudyPermit => 'Ուսանողական վիզան կամ թույլտվությունը հաստատված է';
+
+  @override
+  String get travelItemWorkPermit => 'Աշխատանքային վիզան կամ թույլտվությունը հաստատված է';
+
+  @override
+  String get travelItemWorkContract => 'Ստորագրված աշխատանքի առաջարկ կամ պայմանագիր';
+
+  @override
+  String get visaPermitNoneStudy => 'Ուսման թույլտվություն պահված չէ';
+
+  @override
+  String get visaPermitNoneWork => 'Աշխատանքի թույլտվություն պահված չէ';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Թույլտվությունը վավեր է մինչև $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Թույլտվության ժամկետը լրանում է $date, մինչև վերադարձը';
+  }
+
+  @override
+  String get visaPermitHint => 'Պահեք թույլտվությունը որպես գրառում, և Vaultara-ն կհիշեցնի մինչև ժամկետի ավարտը։';
+
+  @override
+  String get visaPermitAdd => 'Ավելացնել թույլտվություն';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Ուսման թույլտվություն՝ $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Աշխատանքի թույլտվություն՝ $country';
+  }
 }

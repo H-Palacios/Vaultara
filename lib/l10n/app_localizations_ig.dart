@@ -5855,9 +5855,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantDeleteNote => 'Ọ ga-aga na Ebe Nweghachi, ebe ị nwere ike iweghachi ya n\'ime ụbọchị 30.';
 
   @override
-  String get assistantFieldCountries => 'Obodo';
-
-  @override
   String get assistantHistoryAllDeleted => 'Ehichapụla mkparịta ụka niile';
 
   @override
@@ -6405,4 +6402,97 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Nyere m aka hazie njem';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mba dị iche iche',
+      one: 'Mba',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Gbanwee ntọala';
+
+  @override
+  String get assistantSettingAppLockNote => 'Ekwentị gị ga-ebu ụzọ rịọ akara mkpịsị aka, ihu ma ọ bụ mkpọchi ihuenyo.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Ekwentị gị ga-arịọ gị ka ị kwe ka ọkwa bata.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ntọala a adịghị na ekwentị a.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ọ dịghị mgbanwe dị mkpa';
+  }
+
+  @override
+  String get assistantStepSetting => 'Na-akwado ntọala ahụ';
+
+  @override
+  String get travelItemAccommodation => 'Ihe akaebe ebe ị ga-anọ, dịka ndekọ ebe obibi';
+
+  @override
+  String get travelItemReturnTicket => 'Tiketi nlọghachi ma ọ bụ ịga n\'ihu';
+
+  @override
+  String get travelItemHostInvite => 'Adreesị onye nnabata gị, na akwụkwọ ọkpụkpọ ma ọ bụrụ na mba ahụ chọrọ ya';
+
+  @override
+  String get travelItemBusinessInvite => 'Akwụkwọ ọkpụkpọ sitere n\'ụlọ ọrụ ị na-eleta';
+
+  @override
+  String get travelItemEmployerLetter => 'Akwụkwọ ozi sitere n\'aka onye were gị n\'ọrụ gbasara njem ahụ';
+
+  @override
+  String get travelItemStudyAcceptance => 'Akwụkwọ nnabata sitere n\'ụlọ akwụkwọ ma ọ bụ mahadum gị';
+
+  @override
+  String get travelItemProofOfFunds => 'Ihe akaebe ego, dịka nkọwa akaụntụ ụlọ akụ ọhụrụ';
+
+  @override
+  String get travelItemStudyPermit => 'Akwadoro visa ma ọ bụ ikike ọmụmụ';
+
+  @override
+  String get travelItemWorkPermit => 'Akwadoro visa ma ọ bụ ikike ọrụ';
+
+  @override
+  String get travelItemWorkContract => 'Onyinye ọrụ ma ọ bụ nkwekọrịta ọrụ e binyere aka';
+
+  @override
+  String get visaPermitNoneStudy => 'Enweghị ikike ọmụmụ echekwara';
+
+  @override
+  String get visaPermitNoneWork => 'Enweghị ikike ọrụ echekwara';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Ikike ahụ dị irè ruo $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Ikike ahụ ga-agwụ na $date, tupu ị lọghachi';
+  }
+
+  @override
+  String get visaPermitHint => 'Chekwaa ikike ahụ dịka ndekọ, Vaultara ga-echetara gị tupu ọ gwụ.';
+
+  @override
+  String get visaPermitAdd => 'Tinye ikike';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Ikike ọmụmụ maka $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Ikike ọrụ maka $country';
+  }
 }

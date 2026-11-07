@@ -5902,9 +5902,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get assistantDeleteNote => 'U Tiklash markaziga oʻtadi, u yerda uni 30 kun ichida tiklashingiz mumkin.';
 
   @override
-  String get assistantFieldCountries => 'Davlatlar';
-
-  @override
   String get assistantHistoryAllDeleted => 'Barcha suhbatlar oʻchirildi';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Sayohat rejalashtirishga yordam ber';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Davlatlar',
+      one: 'Davlat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Sozlamani o\'zgartirish';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefon avval barmoq izi, yuz yoki ekran qulfini so\'raydi.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefon bildirishnomalarga ruxsat berishni so\'raydi.';
+
+  @override
+  String get assistantSettingUnavailable => 'Bu sozlama ushbu telefonda mavjud emas.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: o\'zgartirish shart emas';
+  }
+
+  @override
+  String get assistantStepSetting => 'Sozlama tayyorlanmoqda';
+
+  @override
+  String get travelItemAccommodation => 'Qayerda turishingiz isboti, masalan bron';
+
+  @override
+  String get travelItemReturnTicket => 'Qaytish yoki davom etish chiptasi';
+
+  @override
+  String get travelItemHostInvite => 'Mezbon manzili va davlat talab qilsa, taklifnoma';
+
+  @override
+  String get travelItemBusinessInvite => 'Siz borayotgan kompaniyadan taklifnoma';
+
+  @override
+  String get travelItemEmployerLetter => 'Ish beruvchingizdan safar haqida xat';
+
+  @override
+  String get travelItemStudyAcceptance => 'Maktab yoki universitetdan qabul xati';
+
+  @override
+  String get travelItemProofOfFunds => 'Mablag\' isboti, masalan so\'nggi bank ko\'chirmalari';
+
+  @override
+  String get travelItemStudyPermit => 'O\'qish vizasi yoki ruxsati tasdiqlandi';
+
+  @override
+  String get travelItemWorkPermit => 'Ish vizasi yoki ruxsati tasdiqlandi';
+
+  @override
+  String get travelItemWorkContract => 'Imzolangan ish taklifi yoki mehnat shartnomasi';
+
+  @override
+  String get visaPermitNoneStudy => 'O\'qish ruxsati saqlanmagan';
+
+  @override
+  String get visaPermitNoneWork => 'Ish ruxsati saqlanmagan';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Ruxsat $date gacha amal qiladi';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Ruxsat muddati $date da, qaytishingizdan oldin tugaydi';
+  }
+
+  @override
+  String get visaPermitHint => 'Ruxsatni yozuv sifatida saqlang, Vaultara muddati tugashidan oldin eslatadi.';
+
+  @override
+  String get visaPermitAdd => 'Ruxsat qo\'shish';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country uchun o\'qish ruxsati';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country uchun ish ruxsati';
+  }
 }

@@ -5970,9 +5970,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantDeleteNote => 'Se mută în Centrul de recuperare, de unde o poți restaura timp de 30 de zile.';
 
   @override
-  String get assistantFieldCountries => 'Țări';
-
-  @override
   String get assistantHistoryAllDeleted => 'Toate conversațiile au fost șterse';
 
   @override
@@ -6528,4 +6525,97 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Ajută-mă să planific o călătorie';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Țări',
+      one: 'Țară',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Schimbă o setare';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonul îți cere mai întâi amprenta, fața sau blocarea ecranului.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonul îți cere să permiți notificările.';
+
+  @override
+  String get assistantSettingUnavailable => 'Această setare nu este disponibilă pe acest telefon.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: nu e nevoie de nicio schimbare';
+  }
+
+  @override
+  String get assistantStepSetting => 'Se pregătește setarea';
+
+  @override
+  String get travelItemAccommodation => 'Dovada cazării, de exemplu o rezervare';
+
+  @override
+  String get travelItemReturnTicket => 'Bilet de întoarcere sau de continuare';
+
+  @override
+  String get travelItemHostInvite => 'Adresa gazdei și o scrisoare de invitație, dacă țara o cere';
+
+  @override
+  String get travelItemBusinessInvite => 'Scrisoare de invitație de la firma pe care o vizitezi';
+
+  @override
+  String get travelItemEmployerLetter => 'Scrisoare de la angajator despre călătorie';
+
+  @override
+  String get travelItemStudyAcceptance => 'Scrisoare de admitere de la școală sau universitate';
+
+  @override
+  String get travelItemProofOfFunds => 'Dovada fondurilor, de exemplu extrase bancare recente';
+
+  @override
+  String get travelItemStudyPermit => 'Viză sau permis de studii aprobat';
+
+  @override
+  String get travelItemWorkPermit => 'Viză sau permis de muncă aprobat';
+
+  @override
+  String get travelItemWorkContract => 'Ofertă de muncă sau contract de muncă semnat';
+
+  @override
+  String get visaPermitNoneStudy => 'Niciun permis de studii salvat';
+
+  @override
+  String get visaPermitNoneWork => 'Niciun permis de muncă salvat';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Permis valabil până la $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Permisul expiră pe $date, înainte să te întorci';
+  }
+
+  @override
+  String get visaPermitHint => 'Salvează permisul ca înregistrare și Vaultara îți amintește înainte să expire.';
+
+  @override
+  String get visaPermitAdd => 'Adaugă permis';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Permis de studii pentru $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Permis de muncă pentru $country';
+  }
 }

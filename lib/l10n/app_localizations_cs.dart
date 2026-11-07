@@ -6026,9 +6026,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get assistantDeleteNote => 'Přesune se do Centra obnovy, kde ho můžete 30 dní obnovit.';
 
   @override
-  String get assistantFieldCountries => 'Země';
-
-  @override
   String get assistantHistoryAllDeleted => 'Všechny chaty byly smazány';
 
   @override
@@ -6588,4 +6585,97 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Pomoz mi naplánovat cestu';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Země',
+      one: 'Země',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Změnit nastavení';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefon nejprve požádá o otisk prstu, obličej nebo zámek obrazovky.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefon vás požádá o povolení oznámení.';
+
+  @override
+  String get assistantSettingUnavailable => 'Toto nastavení není na tomto telefonu k dispozici.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: není potřeba nic měnit';
+  }
+
+  @override
+  String get assistantStepSetting => 'Připravuji nastavení';
+
+  @override
+  String get travelItemAccommodation => 'Doklad o ubytování, například rezervace';
+
+  @override
+  String get travelItemReturnTicket => 'Zpáteční nebo navazující jízdenka';
+
+  @override
+  String get travelItemHostInvite => 'Adresa hostitele a zvací dopis, pokud ho země vyžaduje';
+
+  @override
+  String get travelItemBusinessInvite => 'Zvací dopis od firmy, kterou navštěvujete';
+
+  @override
+  String get travelItemEmployerLetter => 'Dopis od zaměstnavatele o cestě';
+
+  @override
+  String get travelItemStudyAcceptance => 'Potvrzení o přijetí od školy nebo univerzity';
+
+  @override
+  String get travelItemProofOfFunds => 'Doklad o finančních prostředcích, například nedávné výpisy z účtu';
+
+  @override
+  String get travelItemStudyPermit => 'Studijní vízum nebo povolení schváleno';
+
+  @override
+  String get travelItemWorkPermit => 'Pracovní vízum nebo povolení schváleno';
+
+  @override
+  String get travelItemWorkContract => 'Podepsaná nabídka práce nebo pracovní smlouva';
+
+  @override
+  String get visaPermitNoneStudy => 'Žádné studijní povolení není uloženo';
+
+  @override
+  String get visaPermitNoneWork => 'Žádné pracovní povolení není uloženo';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Povolení platí do $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Povolení vyprší $date, před vaším návratem';
+  }
+
+  @override
+  String get visaPermitHint => 'Uložte povolení jako záznam a Vaultara vám připomene, než vyprší.';
+
+  @override
+  String get visaPermitAdd => 'Přidat povolení';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studijní povolení pro $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Pracovní povolení pro $country';
+  }
 }

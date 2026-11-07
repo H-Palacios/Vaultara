@@ -6074,9 +6074,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantDeleteNote => 'Bogtar é chuig an Ionad Aisghabhála, áit ar féidir leat é a athchóiriú ar feadh 30 lá.';
 
   @override
-  String get assistantFieldCountries => 'Tíortha';
-
-  @override
   String get assistantHistoryAllDeleted => 'Scriosadh gach comhrá';
 
   @override
@@ -6640,4 +6637,97 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Cabhraigh liom turas a phleanáil';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tíortha',
+      one: 'Tír',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Athraigh socrú';
+
+  @override
+  String get assistantSettingAppLockNote => 'Iarrfaidh do ghuthán do mhéarlorg, d\'aghaidh nó glas an scáileáin ar dtús.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Iarrfaidh do ghuthán ort fógraí a cheadú.';
+
+  @override
+  String get assistantSettingUnavailable => 'Níl an socrú seo ar fáil ar an nguthán seo.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: níl gá le hathrú';
+  }
+
+  @override
+  String get assistantStepSetting => 'Ag ullmhú an tsocraithe';
+
+  @override
+  String get travelItemAccommodation => 'Cruthúnas ar an áit a bhfuil tú ag fanacht, mar shampla áirithint';
+
+  @override
+  String get travelItemReturnTicket => 'Ticéad fillte nó ar aghaidh';
+
+  @override
+  String get travelItemHostInvite => 'Seoladh d\'óstaigh, agus litir chuiridh má iarrann an tír í';
+
+  @override
+  String get travelItemBusinessInvite => 'Litir chuiridh ón gcomhlacht atá tú ag tabhairt cuairte air';
+
+  @override
+  String get travelItemEmployerLetter => 'Litir ó d\'fhostóir faoin turas';
+
+  @override
+  String get travelItemStudyAcceptance => 'Litir ghlactha ó do scoil nó d\'ollscoil';
+
+  @override
+  String get travelItemProofOfFunds => 'Cruthúnas ar chistí, mar shampla ráitis bhainc le déanaí';
+
+  @override
+  String get travelItemStudyPermit => 'Víosa nó cead staidéir ceadaithe';
+
+  @override
+  String get travelItemWorkPermit => 'Víosa nó cead oibre ceadaithe';
+
+  @override
+  String get travelItemWorkContract => 'Tairiscint poist nó conradh oibre sínithe';
+
+  @override
+  String get visaPermitNoneStudy => 'Níl aon chead staidéir sábháilte';
+
+  @override
+  String get visaPermitNoneWork => 'Níl aon chead oibre sábháilte';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Cead bailí go dtí $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Rachaidh an cead in éag ar $date, sula bhfillfidh tú';
+  }
+
+  @override
+  String get visaPermitHint => 'Sábháil an cead mar thaifead agus cuirfidh Vaultara i gcuimhne duit sula rachaidh sé in éag.';
+
+  @override
+  String get visaPermitAdd => 'Cuir cead leis';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Cead staidéir do $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Cead oibre do $country';
+  }
 }

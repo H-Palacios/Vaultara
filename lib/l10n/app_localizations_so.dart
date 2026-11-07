@@ -5901,9 +5901,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantDeleteNote => 'Wuxuu u guurayaa Xarunta Soo Celinta, halkaas oo aad ka soo celin karto muddo 30 maalmood ah.';
 
   @override
-  String get assistantFieldCountries => 'Waddamada';
-
-  @override
   String get assistantHistoryAllDeleted => 'Dhammaan wada hadallada waa la tirtiray';
 
   @override
@@ -6455,4 +6452,97 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'I caawi inaan qorsheeyo safar';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Waddammo',
+      one: 'Waddan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Beddel goob';
+
+  @override
+  String get assistantSettingAppLockNote => 'Taleefankaagu marka hore wuxuu weydiin doonaa faraha, wejiga ama quufka shaashadda.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Taleefankaagu wuxuu ku weydiin doonaa inaad oggolaato ogeysiisyada.';
+
+  @override
+  String get assistantSettingUnavailable => 'Goobtan kuma jirto taleefankan.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: isbeddel looma baahna';
+  }
+
+  @override
+  String get assistantStepSetting => 'Goobta waa la diyaarinayaa';
+
+  @override
+  String get travelItemAccommodation => 'Caddeynta meesha aad deggan tahay, sida ballan';
+
+  @override
+  String get travelItemReturnTicket => 'Tigidh soo laabasho ama sii socod';
+
+  @override
+  String get travelItemHostInvite => 'Cinwaanka martigeliyahaaga, iyo warqad casuumaad haddii waddanku codsado';
+
+  @override
+  String get travelItemBusinessInvite => 'Warqad casuumaad oo ka timid shirkadda aad booqanayso';
+
+  @override
+  String get travelItemEmployerLetter => 'Warqad ka timid shaqo-bixiyahaaga oo ku saabsan safarka';
+
+  @override
+  String get travelItemStudyAcceptance => 'Warqad aqbalaad oo ka timid dugsigaaga ama jaamacaddaada';
+
+  @override
+  String get travelItemProofOfFunds => 'Caddeynta lacagta, sida war-bixinnada bangiga ee dhowaan';
+
+  @override
+  String get travelItemStudyPermit => 'Fiisaha ama oggolaanshaha waxbarashada waa la ansixiyay';
+
+  @override
+  String get travelItemWorkPermit => 'Fiisaha ama oggolaanshaha shaqada waa la ansixiyay';
+
+  @override
+  String get travelItemWorkContract => 'Dalab shaqo ama qandaraas shaqo oo la saxiixay';
+
+  @override
+  String get visaPermitNoneStudy => 'Oggolaansho waxbarasho lama keydin';
+
+  @override
+  String get visaPermitNoneWork => 'Oggolaansho shaqo lama keydin';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Oggolaanshuhu wuu shaqeynayaa ilaa $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Oggolaanshuhu wuxuu dhacayaa $date, ka hor intaadan soo laaban';
+  }
+
+  @override
+  String get visaPermitHint => 'Ku keydi oggolaanshaha diiwaan ahaan, Vaultara ayaa ku xasuusin doonta ka hor intuusan dhicin.';
+
+  @override
+  String get visaPermitAdd => 'Ku dar oggolaansho';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Oggolaansho waxbarasho $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Oggolaansho shaqo $country';
+  }
 }

@@ -6034,9 +6034,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get assistantDeleteNote => 'Запис переміститься до Центру відновлення, де його можна відновити протягом 30 днів.';
 
   @override
-  String get assistantFieldCountries => 'Країни';
-
-  @override
   String get assistantHistoryAllDeleted => 'Усі чати видалено';
 
   @override
@@ -6596,4 +6593,97 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Допоможи спланувати поїздку';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Країни',
+      one: 'Країна',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Змінити налаштування';
+
+  @override
+  String get assistantSettingAppLockNote => 'Телефон спершу попросить відбиток пальця, обличчя або блокування екрана.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Телефон попросить дозволити сповіщення.';
+
+  @override
+  String get assistantSettingUnavailable => 'Це налаштування недоступне на цьому телефоні.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: змінювати нічого не потрібно';
+  }
+
+  @override
+  String get assistantStepSetting => 'Готую налаштування';
+
+  @override
+  String get travelItemAccommodation => 'Підтвердження проживання, наприклад бронювання';
+
+  @override
+  String get travelItemReturnTicket => 'Зворотний квиток або квиток на подальший маршрут';
+
+  @override
+  String get travelItemHostInvite => 'Адреса приймальної сторони і запрошення, якщо країна його вимагає';
+
+  @override
+  String get travelItemBusinessInvite => 'Запрошення від компанії, яку ви відвідуєте';
+
+  @override
+  String get travelItemEmployerLetter => 'Лист від роботодавця про поїздку';
+
+  @override
+  String get travelItemStudyAcceptance => 'Лист про зарахування від школи або університету';
+
+  @override
+  String get travelItemProofOfFunds => 'Підтвердження коштів, наприклад свіжі банківські виписки';
+
+  @override
+  String get travelItemStudyPermit => 'Навчальну візу або дозвіл схвалено';
+
+  @override
+  String get travelItemWorkPermit => 'Робочу візу або дозвіл схвалено';
+
+  @override
+  String get travelItemWorkContract => 'Підписана пропозиція роботи або трудовий договір';
+
+  @override
+  String get visaPermitNoneStudy => 'Дозвіл на навчання не збережено';
+
+  @override
+  String get visaPermitNoneWork => 'Дозвіл на роботу не збережено';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Дозвіл чинний до $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Дозвіл спливає $date, до вашого повернення';
+  }
+
+  @override
+  String get visaPermitHint => 'Збережіть дозвіл як запис, і Vaultara нагадає до завершення строку.';
+
+  @override
+  String get visaPermitAdd => 'Додати дозвіл';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Дозвіл на навчання: $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Дозвіл на роботу: $country';
+  }
 }

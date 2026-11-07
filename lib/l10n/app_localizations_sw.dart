@@ -5902,9 +5902,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantDeleteNote => 'Itahamia Kituo cha kurejesha, ambapo unaweza kuirejesha ndani ya siku 30.';
 
   @override
-  String get assistantFieldCountries => 'Nchi';
-
-  @override
   String get assistantHistoryAllDeleted => 'Mazungumzo yote yamefutwa';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Nisaidie kupanga safari';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nchi',
+      one: 'Nchi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Badilisha mpangilio';
+
+  @override
+  String get assistantSettingAppLockNote => 'Simu yako itaomba kwanza alama ya kidole, uso au kufuli ya skrini.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Simu yako itakuomba uruhusu arifa.';
+
+  @override
+  String get assistantSettingUnavailable => 'Mpangilio huu haupatikani kwenye simu hii.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: hakuna haja ya kubadilisha';
+  }
+
+  @override
+  String get assistantStepSetting => 'Inaandaa mpangilio';
+
+  @override
+  String get travelItemAccommodation => 'Uthibitisho wa mahali utakapokaa, kama uhifadhi';
+
+  @override
+  String get travelItemReturnTicket => 'Tiketi ya kurudi au ya kuendelea';
+
+  @override
+  String get travelItemHostInvite => 'Anwani ya mwenyeji wako, na barua ya mwaliko ikiwa nchi inaitaka';
+
+  @override
+  String get travelItemBusinessInvite => 'Barua ya mwaliko kutoka kampuni unayotembelea';
+
+  @override
+  String get travelItemEmployerLetter => 'Barua kutoka kwa mwajiri wako kuhusu safari';
+
+  @override
+  String get travelItemStudyAcceptance => 'Barua ya kukubaliwa kutoka shule au chuo kikuu';
+
+  @override
+  String get travelItemProofOfFunds => 'Uthibitisho wa fedha, kama taarifa za benki za hivi karibuni';
+
+  @override
+  String get travelItemStudyPermit => 'Visa au kibali cha masomo kimeidhinishwa';
+
+  @override
+  String get travelItemWorkPermit => 'Visa au kibali cha kazi kimeidhinishwa';
+
+  @override
+  String get travelItemWorkContract => 'Ofa ya kazi au mkataba wa kazi uliosainiwa';
+
+  @override
+  String get visaPermitNoneStudy => 'Hakuna kibali cha masomo kilichohifadhiwa';
+
+  @override
+  String get visaPermitNoneWork => 'Hakuna kibali cha kazi kilichohifadhiwa';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Kibali ni halali hadi $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Kibali kinaisha $date, kabla hujarudi';
+  }
+
+  @override
+  String get visaPermitHint => 'Hifadhi kibali kama rekodi na Vaultara itakukumbusha kabla hakijaisha.';
+
+  @override
+  String get visaPermitAdd => 'Ongeza kibali';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Kibali cha masomo cha $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Kibali cha kazi cha $country';
+  }
 }

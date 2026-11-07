@@ -7162,10 +7162,6 @@
   "@assistantDeleteNote": {
     "description": "Note on the red Delete record card from the assistant."
   },
-  "assistantFieldCountries": "Countries",
-  "@assistantFieldCountries": {
-    "description": "Label on an assistant trip card for the list of destination countries."
-  },
   "assistantHistoryAllDeleted": "All chats deleted",
   "@assistantHistoryAllDeleted": {
     "description": "Confirmation shown after the user deleted all saved assistant chats."
@@ -7916,5 +7912,85 @@
   "assistantSuggestPlanTrip": "Help me plan a trip",
   "@assistantSuggestPlanTrip": {
     "description": "Starter question when the user has no upcoming trip. Sent as the user's message."
+  },
+  "assistantFieldCountryCount": "{count, plural, =1{Country} other{Countries}}",
+  "@assistantFieldCountryCount": {
+    "description": "Label above the countries on an Ask Vaultara trip card.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantSettingTitle": "Change a setting",
+  "@assistantSettingTitle": {
+    "description": "Title of an Ask Vaultara card that changes an app setting."
+  },
+  "assistantSettingAppLockNote": "Your phone asks for your fingerprint, face or screen lock first.",
+  "assistantSettingNotificationsNote": "Your phone asks you to allow notifications.",
+  "assistantSettingUnavailable": "This setting is not available on this phone.",
+  "assistantSettingAlready": "{setting}: no change needed",
+  "@assistantSettingAlready": {
+    "description": "Shown when a confirmed setting was already set that way.",
+    "placeholders": {
+      "setting": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepSetting": "Preparing the setting",
+  "@assistantStepSetting": {
+    "description": "Shown while Ask Vaultara prepares a settings card."
+  },
+  "travelItemAccommodation": "Proof of where you are staying, such as a booking",
+  "travelItemReturnTicket": "Return or onward ticket",
+  "@travelItemReturnTicket": {
+    "description": "Trip checklist item."
+  },
+  "travelItemHostInvite": "Your host's address, and an invitation letter if the country asks for one",
+  "travelItemBusinessInvite": "Invitation letter from the company you are visiting",
+  "travelItemEmployerLetter": "Letter from your employer about the trip",
+  "travelItemStudyAcceptance": "Acceptance letter from your school or university",
+  "travelItemProofOfFunds": "Proof of funds, such as recent bank statements",
+  "travelItemStudyPermit": "Study visa or permit approved",
+  "travelItemWorkPermit": "Work visa or permit approved",
+  "travelItemWorkContract": "Signed job offer or work contract",
+  "visaPermitNoneStudy": "No study permit saved",
+  "visaPermitNoneWork": "No work permit saved",
+  "visaPermitValidUntil": "Permit valid until {date}",
+  "@visaPermitValidUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "visaPermitEndsEarly": "Permit expires {date}, before you come back",
+  "@visaPermitEndsEarly": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "visaPermitHint": "Save the permit as a record and Vaultara reminds you before it expires.",
+  "visaPermitAdd": "Add permit",
+  "visaPermitRecordStudy": "Study permit for {country}",
+  "@visaPermitRecordStudy": {
+    "description": "Suggested record name for a study permit. {country} is the destination.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "visaPermitRecordWork": "Work permit for {country}",
+  "@visaPermitRecordWork": {
+    "description": "Suggested record name for a work permit. {country} is the destination.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
   }
 }

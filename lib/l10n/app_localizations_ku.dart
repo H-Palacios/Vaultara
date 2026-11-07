@@ -5902,9 +5902,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantDeleteNote => 'Ew diçe Navenda Vegerandinê, ku tu dikarî heta 30 rojan wê vegerînî.';
 
   @override
-  String get assistantFieldCountries => 'Welat';
-
-  @override
   String get assistantHistoryAllDeleted => 'Hemû sohbet hatin jêbirin';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Alîkariya min bike ku rêwîtiyekê plan bikim';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Welat',
+      one: 'Welat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Mîhengekê biguherîne';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefona te pêşî şopa tiliyê, rû an qefla ekranê dixwaze.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefona te dê ji te bixwaze ku destûrê bidî agahdariyan.';
+
+  @override
+  String get assistantSettingUnavailable => 'Ev mîheng li ser vê telefonê tune ye.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: guhertin ne pêwîst e';
+  }
+
+  @override
+  String get assistantStepSetting => 'Mîheng tê amadekirin';
+
+  @override
+  String get travelItemAccommodation => 'Belgeya cihê ku tu lê dimînî, wek rezervasyonek';
+
+  @override
+  String get travelItemReturnTicket => 'Bilêta vegerê an berdewamiyê';
+
+  @override
+  String get travelItemHostInvite => 'Navnîşana mazûvanê te, û nameya vexwendinê heke welat bixwaze';
+
+  @override
+  String get travelItemBusinessInvite => 'Nameya vexwendinê ji şirketa ku tu serdana wê dikî';
+
+  @override
+  String get travelItemEmployerLetter => 'Nameya kardêrê te derbarê rêwîtiyê de';
+
+  @override
+  String get travelItemStudyAcceptance => 'Nameya pejirandinê ji dibistan an zanîngeha te';
+
+  @override
+  String get travelItemProofOfFunds => 'Belgeya pereyan, wek daxuyaniyên bankê yên dawî';
+
+  @override
+  String get travelItemStudyPermit => 'Vîze an destûra xwendinê hat pejirandin';
+
+  @override
+  String get travelItemWorkPermit => 'Vîze an destûra kar hat pejirandin';
+
+  @override
+  String get travelItemWorkContract => 'Pêşniyara kar an peymana kar a îmzekirî';
+
+  @override
+  String get visaPermitNoneStudy => 'Destûra xwendinê nehatiye tomarkirin';
+
+  @override
+  String get visaPermitNoneWork => 'Destûra kar nehatiye tomarkirin';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Destûr heta $date derbasdar e';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Destûr di $date de diqede, berî ku tu vegerî';
+  }
+
+  @override
+  String get visaPermitHint => 'Destûrê wek tomar tomar bike û Vaultara berî qedandinê bîra te tîne.';
+
+  @override
+  String get visaPermitAdd => 'Destûr zêde bike';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Destûra xwendinê ji bo $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Destûra kar ji bo $country';
+  }
 }

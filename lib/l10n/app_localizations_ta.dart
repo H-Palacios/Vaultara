@@ -5902,9 +5902,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get assistantDeleteNote => 'இது மீட்பு மையத்துக்கு நகரும், அங்கு 30 நாட்கள் வரை இதை மீட்டெடுக்கலாம்.';
 
   @override
-  String get assistantFieldCountries => 'நாடுகள்';
-
-  @override
   String get assistantHistoryAllDeleted => 'எல்லா அரட்டைகளும் நீக்கப்பட்டன';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'பயணம் திட்டமிட உதவு';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'நாடுகள்',
+      one: 'நாடு',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'அமைப்பை மாற்று';
+
+  @override
+  String get assistantSettingAppLockNote => 'உங்கள் போன் முதலில் கைரேகை, முகம் அல்லது திரைப் பூட்டைக் கேட்கும்.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'அறிவிப்புகளை அனுமதிக்க உங்கள் போன் கேட்கும்.';
+
+  @override
+  String get assistantSettingUnavailable => 'இந்த அமைப்பு இந்த போனில் இல்லை.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: மாற்றம் தேவையில்லை';
+  }
+
+  @override
+  String get assistantStepSetting => 'அமைப்பைத் தயாரிக்கிறது';
+
+  @override
+  String get travelItemAccommodation => 'நீங்கள் தங்கும் இடத்திற்கான சான்று, எ.கா. முன்பதிவு';
+
+  @override
+  String get travelItemReturnTicket => 'திரும்பும் அல்லது தொடர் பயண டிக்கெட்';
+
+  @override
+  String get travelItemHostInvite => 'உங்கள் விருந்தோம்புநரின் முகவரி, நாடு கேட்டால் அழைப்புக் கடிதம்';
+
+  @override
+  String get travelItemBusinessInvite => 'நீங்கள் செல்லும் நிறுவனத்தின் அழைப்புக் கடிதம்';
+
+  @override
+  String get travelItemEmployerLetter => 'பயணம் பற்றி உங்கள் முதலாளியின் கடிதம்';
+
+  @override
+  String get travelItemStudyAcceptance => 'பள்ளி அல்லது பல்கலைக்கழகத்தின் சேர்க்கைக் கடிதம்';
+
+  @override
+  String get travelItemProofOfFunds => 'நிதிச் சான்று, எ.கா. சமீபத்திய வங்கி அறிக்கைகள்';
+
+  @override
+  String get travelItemStudyPermit => 'படிப்பு விசா அல்லது அனுமதி அங்கீகரிக்கப்பட்டது';
+
+  @override
+  String get travelItemWorkPermit => 'வேலை விசா அல்லது அனுமதி அங்கீகரிக்கப்பட்டது';
+
+  @override
+  String get travelItemWorkContract => 'கையொப்பமிட்ட வேலை வாய்ப்பு அல்லது பணி ஒப்பந்தம்';
+
+  @override
+  String get visaPermitNoneStudy => 'படிப்பு அனுமதி எதுவும் சேமிக்கப்படவில்லை';
+
+  @override
+  String get visaPermitNoneWork => 'வேலை அனுமதி எதுவும் சேமிக்கப்படவில்லை';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'அனுமதி $date வரை செல்லும்';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'அனுமதி $date அன்று காலாவதியாகும், நீங்கள் திரும்பும் முன்';
+  }
+
+  @override
+  String get visaPermitHint => 'அனுமதியைப் பதிவாகச் சேமியுங்கள், காலாவதியாகும் முன் Vaultara நினைவூட்டும்.';
+
+  @override
+  String get visaPermitAdd => 'அனுமதியைச் சேர்';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country படிப்பு அனுமதி';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country வேலை அனுமதி';
+  }
 }

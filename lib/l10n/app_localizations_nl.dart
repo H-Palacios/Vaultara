@@ -5902,9 +5902,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get assistantDeleteNote => 'Het gaat naar het Herstelcentrum, waar je het 30 dagen lang kunt terugzetten.';
 
   @override
-  String get assistantFieldCountries => 'Landen';
-
-  @override
   String get assistantHistoryAllDeleted => 'Alle chats verwijderd';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Help me een reis te plannen';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Landen',
+      one: 'Land',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Instelling wijzigen';
+
+  @override
+  String get assistantSettingAppLockNote => 'Je telefoon vraagt eerst om je vingerafdruk, gezicht of schermvergrendeling.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Je telefoon vraagt je om meldingen toe te staan.';
+
+  @override
+  String get assistantSettingUnavailable => 'Deze instelling is niet beschikbaar op deze telefoon.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: geen wijziging nodig';
+  }
+
+  @override
+  String get assistantStepSetting => 'Instelling voorbereiden';
+
+  @override
+  String get travelItemAccommodation => 'Bewijs van verblijf, zoals een boeking';
+
+  @override
+  String get travelItemReturnTicket => 'Retour- of vervolgticket';
+
+  @override
+  String get travelItemHostInvite => 'Het adres van je gastheer, en een uitnodigingsbrief als het land erom vraagt';
+
+  @override
+  String get travelItemBusinessInvite => 'Uitnodigingsbrief van het bedrijf dat je bezoekt';
+
+  @override
+  String get travelItemEmployerLetter => 'Brief van je werkgever over de reis';
+
+  @override
+  String get travelItemStudyAcceptance => 'Toelatingsbrief van je school of universiteit';
+
+  @override
+  String get travelItemProofOfFunds => 'Bewijs van middelen, zoals recente bankafschriften';
+
+  @override
+  String get travelItemStudyPermit => 'Studievisum of -vergunning goedgekeurd';
+
+  @override
+  String get travelItemWorkPermit => 'Werkvisum of -vergunning goedgekeurd';
+
+  @override
+  String get travelItemWorkContract => 'Getekend jobaanbod of arbeidscontract';
+
+  @override
+  String get visaPermitNoneStudy => 'Geen studievergunning opgeslagen';
+
+  @override
+  String get visaPermitNoneWork => 'Geen werkvergunning opgeslagen';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Vergunning geldig tot $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Vergunning verloopt op $date, voordat je terugkomt';
+  }
+
+  @override
+  String get visaPermitHint => 'Sla de vergunning op als record en Vaultara herinnert je voordat ze verloopt.';
+
+  @override
+  String get visaPermitAdd => 'Vergunning toevoegen';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studievergunning voor $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Werkvergunning voor $country';
+  }
 }

@@ -5902,9 +5902,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get assistantDeleteNote => 'Ал Калыбына келтирүү борборуна өтөт, ал жерден аны 30 күндүн ичинде калыбына келтире аласыз.';
 
   @override
-  String get assistantFieldCountries => 'Өлкөлөр';
-
-  @override
   String get assistantHistoryAllDeleted => 'Бардык чаттар өчүрүлдү';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Сапар пландоого жардам бер';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Өлкөлөр',
+      one: 'Өлкө',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Жөндөөнү өзгөртүү';
+
+  @override
+  String get assistantSettingAppLockNote => 'Телефон адегенде манжа изин, жүздү же экран кулпусун сурайт.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Телефон билдирмелерге уруксат берүүнү сурайт.';
+
+  @override
+  String get assistantSettingUnavailable => 'Бул жөндөө бул телефондо жок.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: өзгөртүүнүн кереги жок';
+  }
+
+  @override
+  String get assistantStepSetting => 'Жөндөө даярдалууда';
+
+  @override
+  String get travelItemAccommodation => 'Жашай турган жериңиздин далили, мисалы брондоо';
+
+  @override
+  String get travelItemReturnTicket => 'Кайтуу же андан аркы жол билети';
+
+  @override
+  String get travelItemHostInvite => 'Кабыл алуучунун дареги жана өлкө талап кылса, чакыруу кат';
+
+  @override
+  String get travelItemBusinessInvite => 'Барган компаниянын чакыруу каты';
+
+  @override
+  String get travelItemEmployerLetter => 'Иш берүүчүңүздүн сапар тууралуу каты';
+
+  @override
+  String get travelItemStudyAcceptance => 'Мектептен же университеттен кабыл алуу каты';
+
+  @override
+  String get travelItemProofOfFunds => 'Каражаттын далили, мисалы акыркы банк көчүрмөлөрү';
+
+  @override
+  String get travelItemStudyPermit => 'Окуу визасы же уруксаты бекитилди';
+
+  @override
+  String get travelItemWorkPermit => 'Иш визасы же уруксаты бекитилди';
+
+  @override
+  String get travelItemWorkContract => 'Кол коюлган жумуш сунушу же эмгек келишими';
+
+  @override
+  String get visaPermitNoneStudy => 'Окуу уруксаты сакталган эмес';
+
+  @override
+  String get visaPermitNoneWork => 'Иш уруксаты сакталган эмес';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Уруксат $date чейин жарактуу';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Уруксаттын мөөнөтү $date бүтөт, кайтканга чейин';
+  }
+
+  @override
+  String get visaPermitHint => 'Уруксатты жазуу катары сактаңыз, Vaultara мөөнөтү бүткөнгө чейин эскертет.';
+
+  @override
+  String get visaPermitAdd => 'Уруксат кошуу';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return '$country үчүн окуу уруксаты';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return '$country үчүн иш уруксаты';
+  }
 }

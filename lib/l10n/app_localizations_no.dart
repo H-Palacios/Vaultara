@@ -5902,9 +5902,6 @@ class AppLocalizationsNo extends AppLocalizations {
   String get assistantDeleteNote => 'Den flyttes til Gjenopprettingssenter, der du kan gjenopprette den i 30 dager.';
 
   @override
-  String get assistantFieldCountries => 'Land';
-
-  @override
   String get assistantHistoryAllDeleted => 'Alle samtaler slettet';
 
   @override
@@ -6456,4 +6453,97 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get assistantSuggestPlanTrip => 'Hjelp meg å planlegge en reise';
+
+  @override
+  String assistantFieldCountryCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Land',
+      one: 'Land',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantSettingTitle => 'Endre en innstilling';
+
+  @override
+  String get assistantSettingAppLockNote => 'Telefonen ber først om fingeravtrykk, ansikt eller skjermlås.';
+
+  @override
+  String get assistantSettingNotificationsNote => 'Telefonen ber deg tillate varsler.';
+
+  @override
+  String get assistantSettingUnavailable => 'Denne innstillingen finnes ikke på denne telefonen.';
+
+  @override
+  String assistantSettingAlready(String setting) {
+    return '$setting: ingen endring nødvendig';
+  }
+
+  @override
+  String get assistantStepSetting => 'Forbereder innstillingen';
+
+  @override
+  String get travelItemAccommodation => 'Bevis på hvor du bor, for eksempel en bestilling';
+
+  @override
+  String get travelItemReturnTicket => 'Retur- eller videre billett';
+
+  @override
+  String get travelItemHostInvite => 'Adressen til verten din, og et invitasjonsbrev hvis landet krever det';
+
+  @override
+  String get travelItemBusinessInvite => 'Invitasjonsbrev fra firmaet du besøker';
+
+  @override
+  String get travelItemEmployerLetter => 'Brev fra arbeidsgiveren din om reisen';
+
+  @override
+  String get travelItemStudyAcceptance => 'Opptaksbrev fra skolen eller universitetet';
+
+  @override
+  String get travelItemProofOfFunds => 'Bevis på midler, for eksempel nylige kontoutskrifter';
+
+  @override
+  String get travelItemStudyPermit => 'Studievisum eller -tillatelse godkjent';
+
+  @override
+  String get travelItemWorkPermit => 'Arbeidsvisum eller -tillatelse godkjent';
+
+  @override
+  String get travelItemWorkContract => 'Signert jobbtilbud eller arbeidskontrakt';
+
+  @override
+  String get visaPermitNoneStudy => 'Ingen studietillatelse lagret';
+
+  @override
+  String get visaPermitNoneWork => 'Ingen arbeidstillatelse lagret';
+
+  @override
+  String visaPermitValidUntil(String date) {
+    return 'Tillatelsen gjelder til $date';
+  }
+
+  @override
+  String visaPermitEndsEarly(String date) {
+    return 'Tillatelsen utløper $date, før du kommer hjem';
+  }
+
+  @override
+  String get visaPermitHint => 'Lagre tillatelsen som en oppføring, så minner Vaultara deg på det før den utløper.';
+
+  @override
+  String get visaPermitAdd => 'Legg til tillatelse';
+
+  @override
+  String visaPermitRecordStudy(String country) {
+    return 'Studietillatelse for $country';
+  }
+
+  @override
+  String visaPermitRecordWork(String country) {
+    return 'Arbeidstillatelse for $country';
+  }
 }
