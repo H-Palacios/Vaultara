@@ -212,6 +212,8 @@ class AssistantAction {
     'import',
     'export',
     'recovery_centre',
+    'life_events',
+    'life_event',
   ];
 
   final AssistantActionType type;
