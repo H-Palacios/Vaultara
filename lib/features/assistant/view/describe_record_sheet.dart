@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 
 Future<AssistantAction?> showDescribeRecordSheet(BuildContext context) {
   return showModalBottomSheet<AssistantAction>(
@@ -50,11 +52,21 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
     if (mounted) setState(() {});
   }
 
+  Future<void> _cancelVoice() async {
+    await _voice.cancel();
+    if (!mounted) return;
+    _controller.value = TextEditingValue(
+      text: _voiceBase,
+      selection: TextSelection.collapsed(offset: _voiceBase.length),
+    );
+  }
+
   Future<void> _toggleMic() async {
     if (_voice.listening.value) {
       await _voice.stop();
       return;
     }
+    HapticFeedback.mediumImpact();
     final loc = AppLocalizations.of(context)!;
     _voiceBase = _controller.text.trim();
     final started = await _voice.start(
@@ -199,6 +211,25 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
                 contentPadding: const EdgeInsets.fromLTRB(14, 14, 8, 14),
                 errorMaxLines: 3,
               ),
+            ),
+          ),
+          ValueListenableBuilder<bool>(
+            valueListenable: _voice.listening,
+            builder: (context, listening, _) => AnimatedSize(
+              duration: const Duration(milliseconds: 220),
+              curve: Curves.easeOutCubic,
+              child: listening
+                  ? Padding(
+                      padding: const EdgeInsets.only(top: 8, bottom: 4),
+                      child: AssistantVoicePanel(
+                        voice: _voice,
+                        onCancel: _cancelVoice,
+                        onDone: () {
+                          _voice.stop();
+                        },
+                      ),
+                    )
+                  : const SizedBox(width: double.infinity),
             ),
           ),
           const SizedBox(height: 6),
