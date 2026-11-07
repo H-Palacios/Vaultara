@@ -13,9 +13,10 @@ import 'package:vaultara/features/assistant/logic/assistant_suggestions.dart';
 import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_feedback_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_run.dart';
+import 'package:vaultara/features/assistant/services/assistant_open_chat.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
-import 'package:vaultara/features/assistant/view/assistant_history_screen.dart';
+import 'package:vaultara/features/assistant/view/assistant_chat_panel.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_action_card.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_batch_card.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_bubble.dart';
@@ -65,21 +66,74 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   final FocusNode _focus = FocusNode();
   final ScrollController _scroll = ScrollController();
   final VoiceInput _voice = VoiceInput();
-  final List<AssistantMessage> _messages = <AssistantMessage>[];
+  final GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
+
+  List<AssistantMessage> get _messages => AssistantOpenChat.messages;
+  String? get _chatId => AssistantOpenChat.chatId;
+  set _chatId(String? value) => AssistantOpenChat.chatId = value;
 
   bool _busy = false;
   bool _loadingChat = false;
   AssistantRun? _run;
   String _voiceBase = '';
   bool _sharedPrefilled = false;
-  String? _chatId;
+  String _stoppedText = '';
 
   @override
   void initState() {
     super.initState();
     _focus.addListener(_onFocus);
     _voice.problem.addListener(_onVoiceProblem);
+    AssistantOpenChat.claim(AssistantChatStore.userId);
+    final shared = widget.sharedText?.trim() ?? '';
+    final firstOpen = !AssistantOpenChat.opened;
+    AssistantOpenChat.opened = true;
+    if (shared.isNotEmpty) {
+      // Shared text starts its own conversation.
+      _chatId = null;
+      _messages.clear();
+    } else if (firstOpen) {
+      _loadingChat = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _reopenLatest());
+    } else if (_messages.isEmpty && _chatId != null) {
+      // The screen was closed while this chat was still loading.
+      final id = _chatId!;
+      _loadingChat = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _loadChat(id);
+      });
+    } else if (_messages.isNotEmpty) {
+      _jumpToEnd();
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) => _prefillSharedText());
+  }
+
+  /// After the app starts, reopens the last chat if it is recent.
+  Future<void> _reopenLatest() async {
+    AssistantChatSummary? latest;
+    try {
+      latest = await AssistantChatStore.latest();
+    } catch (_) {
+      latest = null;
+    }
+    if (!mounted) return;
+    if (latest == null ||
+        DateTime.now().difference(latest.updatedAt) >=
+            AssistantOpenChat.reopenWithin ||
+        _chatId != null ||
+        _messages.isNotEmpty) {
+      setState(() => _loadingChat = false);
+      return;
+    }
+    await _loadChat(latest.id, quiet: true);
+  }
+
+  void _jumpToEnd() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scroll.hasClients) {
+        _scroll.jumpTo(_scroll.position.maxScrollExtent);
+      }
+    });
   }
 
   @override
@@ -90,7 +144,19 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   @override
   void dispose() {
-    _run?.stop();
+    final run = _run;
+    if (_busy && run != null) {
+      // Leaving stops the answer. The chat keeps a note so it can be
+      // asked again when the user comes back.
+      run.stop();
+      _messages.add(
+        AssistantMessage(
+          role: AssistantRole.assistant,
+          text: _stoppedText,
+          failure: AssistantFailure.stopped,
+        ),
+      );
+    }
     _run?.dispose();
     _focus.removeListener(_onFocus);
     _voice.problem.removeListener(_onVoiceProblem);
@@ -213,6 +279,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   Future<void> _request() async {
     if (_busy) return;
     final loc = AppLocalizations.of(context)!;
+    _stoppedText = loc.assistantStopped;
     final run = AssistantRun()..start();
     setState(() {
       _busy = true;
@@ -575,19 +642,33 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     });
   }
 
-  Future<void> _openHistory() async {
+  void _openChats() {
     if (_busy) return;
-    final result = await openAssistantHistory(context);
-    if (!mounted || result == null) return;
-    final current = _chatId;
-    final currentGone = current != null &&
-        (result.deletedAll || result.deleted.contains(current));
-    if (result.newChat || currentGone) _newChat();
-    final open = result.openChatId;
-    if (open != null && open != _chatId) await _loadChat(open);
+    FocusScope.of(context).unfocus();
+    _scaffold.currentState?.openEndDrawer();
   }
 
-  Future<void> _loadChat(String chatId) async {
+  void _openChat(String chatId) {
+    if (_busy || chatId == _chatId) return;
+    _loadChat(chatId);
+  }
+
+  void _chatDeleted(String chatId) {
+    if (chatId == _chatId) _forgetOpenChat();
+  }
+
+  void _allChatsDeleted() => _forgetOpenChat();
+
+  void _forgetOpenChat() {
+    if (mounted) {
+      _newChat();
+    } else {
+      _chatId = null;
+      _messages.clear();
+    }
+  }
+
+  Future<void> _loadChat(String chatId, {bool quiet = false}) async {
     final loc = AppLocalizations.of(context)!;
     _voice.stop();
     setState(() {
@@ -597,28 +678,28 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     });
     try {
       final stored = await AssistantChatStore.messages(chatId);
-      if (!mounted || _chatId != chatId) return;
-      setState(() {
-        _loadingChat = false;
-        for (final item in stored) {
-          _messages.add(
-            AssistantMessage(
-              role: item.fromUser ? AssistantRole.user : AssistantRole.assistant,
-              text: item.text,
-              archived: item.proposals,
-              proposals: item.proposals,
-              id: item.id,
-            ),
-          );
-        }
-      });
+      if (_chatId != chatId || _messages.isNotEmpty) return;
+      // Filled even if the screen was closed meanwhile, so the chat is
+      // there when it opens again.
+      for (final item in stored) {
+        _messages.add(
+          AssistantMessage(
+            role: item.fromUser ? AssistantRole.user : AssistantRole.assistant,
+            text: item.text,
+            archived: item.proposals,
+            proposals: item.proposals,
+            id: item.id,
+          ),
+        );
+      }
+      if (!mounted) return;
+      setState(() => _loadingChat = false);
       _scrollToEnd();
     } catch (_) {
+      if (_chatId == chatId) _chatId = null;
       if (!mounted) return;
-      setState(() {
-        _loadingChat = false;
-        _chatId = null;
-      });
+      setState(() => _loadingChat = false);
+      if (quiet) return;
       ActionFeedbackSnackbar.showInfo(
         context,
         loc.assistantHistoryLoadError,
@@ -633,6 +714,17 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
+      key: _scaffold,
+      endDrawerEnableOpenDragGesture: widget.isPremium && !_busy,
+      endDrawer: !widget.isPremium
+          ? null
+          : AssistantChatPanel(
+              currentChatId: _chatId,
+              onNewChat: _newChat,
+              onOpenChat: _openChat,
+              onDeleted: _chatDeleted,
+              onDeletedAll: _allChatsDeleted,
+            ),
       body: SafeArea(
         child: Column(
           children: [
@@ -645,17 +737,17 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                     : Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          IconButton(
-                            tooltip: loc.assistantHistoryTitle,
-                            onPressed: _busy ? null : _openHistory,
-                            icon: const Icon(Icons.history_rounded),
-                          ),
                           if (_messages.isNotEmpty)
                             IconButton(
                               tooltip: loc.assistantNewChat,
                               onPressed: _busy ? null : _newChat,
                               icon: const Icon(Icons.add_comment_outlined),
                             ),
+                          IconButton(
+                            tooltip: loc.assistantHistoryTitle,
+                            onPressed: _busy ? null : _openChats,
+                            icon: const Icon(Icons.menu_rounded),
+                          ),
                         ],
                       ),
               ),
