@@ -11,6 +11,7 @@ enum AssistantActionType {
   personEdit,
   tripAdd,
   tripEdit,
+  setting,
   open,
 }
 
@@ -153,6 +154,26 @@ class AssistantAction {
   static const int maxActions = 5;
   static const String me = 'me';
 
+  /// Settings Ask Vaultara may change after the user confirms. Security
+  /// settings and notifications can only be turned on from the chat; turning
+  /// them off stays in the settings screens.
+  static const List<String> settings = <String>[
+    'app_lock',
+    'privacy_screen',
+    'block_screenshots',
+    'notifications',
+    'daily_digest',
+    'monthly_summary',
+    'reminder_time',
+  ];
+
+  static const Set<String> onlyOn = <String>{
+    'app_lock',
+    'privacy_screen',
+    'block_screenshots',
+    'notifications',
+  };
+
   static const List<String> screens = <String>[
     'home',
     'records',
@@ -210,6 +231,9 @@ class AssistantAction {
   final AssistantTripChanges? tripChanges;
   final String? screen;
   final String? targetId;
+  final String? setting;
+  final bool? settingOn;
+  final String? settingTime;
 
   const AssistantAction({
     required this.type,
@@ -247,6 +271,9 @@ class AssistantAction {
     this.tripChanges,
     this.screen,
     this.targetId,
+    this.setting,
+    this.settingOn,
+    this.settingTime,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -348,6 +375,8 @@ class AssistantAction {
         return _fromTripAdd(raw);
       case 'trip_edit':
         return _fromTripEdit(raw);
+      case 'setting':
+        return _fromSetting(raw);
       case 'open':
         return _fromOpen(raw);
     }
@@ -493,6 +522,34 @@ class AssistantAction {
       tripId: tripId,
       name: text(raw['name'], 60),
       tripChanges: changes,
+    );
+  }
+
+  static String? time(Object? value) {
+    if (value is! String) return null;
+    final match = RegExp(r'^([01]\d|2[0-3]):([0-5]\d)$').firstMatch(value.trim());
+    return match == null ? null : '${match.group(1)}:${match.group(2)}';
+  }
+
+  static AssistantAction? _fromSetting(Map<dynamic, dynamic> raw) {
+    final setting = raw['setting'];
+    if (setting is! String || !settings.contains(setting)) return null;
+    if (setting == 'reminder_time') {
+      final at = time(raw['time']);
+      if (at == null) return null;
+      return AssistantAction(
+        type: AssistantActionType.setting,
+        setting: setting,
+        settingTime: at,
+      );
+    }
+    final on = raw['on'];
+    if (on is! bool) return null;
+    if (!on && onlyOn.contains(setting)) return null;
+    return AssistantAction(
+      type: AssistantActionType.setting,
+      setting: setting,
+      settingOn: on,
     );
   }
 

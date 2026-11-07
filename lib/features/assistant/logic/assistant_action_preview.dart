@@ -9,6 +9,7 @@ import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
+import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
@@ -81,6 +82,8 @@ class AssistantActionPreview {
         return 'trip_add';
       case AssistantActionType.tripEdit:
         return 'trip_edit';
+      case AssistantActionType.setting:
+        return 'setting';
       case AssistantActionType.open:
         return 'open';
     }
@@ -109,6 +112,8 @@ class AssistantActionPreview {
         return _tripAdd(f, action);
       case AssistantActionType.tripEdit:
         return _tripEdit(f, action);
+      case AssistantActionType.setting:
+        return _setting(f, action);
       case AssistantActionType.open:
         return AssistantActionPreview(
           title: f.loc.assistantOpen,
@@ -422,9 +427,13 @@ class AssistantActionPreview {
     final rows = <AssistantChangeRow>[
       if (action.countries.isNotEmpty)
         AssistantChangeRow(
-          label: loc.assistantFieldCountries,
+          label: loc.assistantFieldCountryCount(action.countries.length),
           after: f.countries(action.countries),
         ),
+      AssistantChangeRow(
+        label: loc.travelSectionWho,
+        after: f.travellers(action.travellers),
+      ),
       AssistantChangeRow(
         label: loc.travelDeparture,
         after: action.departure == null ? '' : f.date(action.departure!),
@@ -432,10 +441,6 @@ class AssistantActionPreview {
       AssistantChangeRow(
         label: loc.travelReturn,
         after: action.returnDate == null ? '' : f.date(action.returnDate!),
-      ),
-      AssistantChangeRow(
-        label: loc.travelSectionWho,
-        after: f.travellers(action.travellers),
       ),
       AssistantChangeRow(
         label: loc.tripPurposeTitle,
@@ -470,7 +475,9 @@ class AssistantActionPreview {
     }
     if (c.countries != null) {
       rows.add(AssistantChangeRow(
-        label: loc.assistantFieldCountries,
+        label: loc.assistantFieldCountryCount(
+          c.countries!.length > 1 || (trip?.countries.length ?? 0) > 1 ? 2 : 1,
+        ),
         before: trip == null ? null : f.countries(trip.countries),
         after: f.countries(c.countries!),
       ));
@@ -517,6 +524,36 @@ class AssistantActionPreview {
       rows: rows,
     );
   }
+}
+
+AssistantActionPreview _setting(_Formatter f, AssistantAction action) {
+  final loc = f.loc;
+  final setting = action.setting;
+  final String value;
+  if (setting == 'reminder_time') {
+    final time = AssistantSettings.timeOf(action.settingTime);
+    value = time == null
+        ? ''
+        : MaterialLocalizations.of(f.context).formatTimeOfDay(
+            time,
+            alwaysUse24HourFormat:
+                MediaQuery.maybeOf(f.context)?.alwaysUse24HourFormat ?? false,
+          );
+  } else {
+    value = f.onOff(action.settingOn ?? true);
+  }
+  return AssistantActionPreview(
+    title: loc.assistantSettingTitle,
+    icon: AssistantSettings.icon(setting),
+    subject: '',
+    rows: <AssistantChangeRow>[
+      AssistantChangeRow(
+        label: AssistantSettings.label(loc, setting),
+        after: value,
+      ),
+    ],
+    note: AssistantSettings.note(loc, setting),
+  );
 }
 
 class _Formatter {
