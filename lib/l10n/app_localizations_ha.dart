@@ -2440,7 +2440,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get travelFlights => 'Jiragen sama';
 
   @override
-  String get travelFlightsHint => 'Ƙara jiragenka don ganin lokacin saukarka da kwanakin da za ka yi a can.';
+  String get travelFlightsHint => 'Ƙara kowane jirgi, har da canje-canje, don ganin lokacin da za ka sauka da kwanakin da za ka yi a can.';
 
   @override
   String get travelFlightAdd => 'Ƙara jirgin sama';
@@ -6545,5 +6545,25 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Izinin aiki na $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Canjin jirgi a $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Canjin jirgi a $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours a $minutes m';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Isowa $country';
   }
 }

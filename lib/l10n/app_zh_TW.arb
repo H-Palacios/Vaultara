@@ -943,7 +943,7 @@
   "travelAtDestination": "在目的地的天數：{days}",
   "travelSectionJourney": "你的行程",
   "travelFlights": "航班",
-  "travelFlightsHint": "新增航班，即可看到你何時降落以及在當地停留幾天。",
+  "travelFlightsHint": "新增每一段航班（包括轉機），即可看到你何時落地以及在當地停留幾天。",
   "travelFlightAdd": "新增航班",
   "travelFlightEdit": "航班詳情",
   "travelFlightFrom": "出發地",
@@ -2050,5 +2050,9 @@
   "visaPermitHint": "將許可儲存為紀錄，Vaultara 會在到期前提醒你。",
   "visaPermitAdd": "新增許可",
   "visaPermitRecordStudy": "{country}就學許可",
-  "visaPermitRecordWork": "{country}工作許可"
+  "visaPermitRecordWork": "{country}工作許可",
+  "travelConnectionIn": "在{place}轉機",
+  "travelConnectionLong": "在{place}轉機：{duration}",
+  "travelDurationHoursMinutes": "{hours}小時{minutes}分鐘",
+  "travelArriveIn": "抵達{country}"
 }

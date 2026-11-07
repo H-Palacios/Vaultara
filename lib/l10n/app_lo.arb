@@ -968,7 +968,7 @@
   "travelAtDestination": "ມື້ຢູ່ປາຍທາງ: {days}",
   "travelSectionJourney": "ການເດີນທາງຂອງທ່ານ",
   "travelFlights": "ຖ້ຽວບິນ",
-  "travelFlightsHint": "ເພີ່ມຖ້ຽວບິນຂອງທ່ານເພື່ອເບິ່ງວ່າທ່ານລົງຈອດເມື່ອໃດ ແລະ ຢູ່ຫຼາຍມື້.",
+  "travelFlightsHint": "ເພີ່ມທຸກຖ້ຽວບິນ ລວມທັງການຕໍ່ຍົນ ເພື່ອເບິ່ງວ່າທ່ານລົງຈອດເມື່ອໃດ ແລະ ຢູ່ທີ່ນັ້ນຈັກມື້.",
   "travelFlightAdd": "ເພີ່ມຖ້ຽວບິນ",
   "travelFlightEdit": "ລາຍລະອຽດຖ້ຽວບິນ",
   "travelFlightFrom": "ຈາກ",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "ບັນທຶກໃບອະນຸຍາດເປັນລາຍການ ແລະ Vaultara ຈະເຕືອນທ່ານກ່ອນໝົດອາຍຸ.",
   "visaPermitAdd": "ເພີ່ມໃບອະນຸຍາດ",
   "visaPermitRecordStudy": "ໃບອະນຸຍາດຮຽນສຳລັບ {country}",
-  "visaPermitRecordWork": "ໃບອະນຸຍາດເຮັດວຽກສຳລັບ {country}"
+  "visaPermitRecordWork": "ໃບອະນຸຍາດເຮັດວຽກສຳລັບ {country}",
+  "travelConnectionIn": "ຕໍ່ຍົນທີ່ {place}",
+  "travelConnectionLong": "ຕໍ່ຍົນທີ່ {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ຊມ {minutes} ນທ",
+  "travelArriveIn": "ມາຮອດ {country}"
 }

@@ -2455,7 +2455,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get travelFlights => 'Letovi';
 
   @override
-  String get travelFlightsHint => 'Dodajte svoje letove da vidite kada slijećete i koliko dana ostajete tamo.';
+  String get travelFlightsHint => 'Dodajte svaki let, uključujući presjedanja, da vidite kada slijećete i koliko ste dana ondje.';
 
   @override
   String get travelFlightAdd => 'Dodaj let';
@@ -6611,5 +6611,25 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Radna dozvola za $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Presjedanje u $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Presjedanje u $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Dolazak: $country';
   }
 }

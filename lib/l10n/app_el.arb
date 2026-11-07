@@ -957,7 +957,7 @@
   "travelAtDestination": "Ημέρες στον προορισμό: {days}",
   "travelSectionJourney": "Το ταξίδι σας",
   "travelFlights": "Πτήσεις",
-  "travelFlightsHint": "Προσθέστε τις πτήσεις σας για να δείτε πότε προσγειώνεστε και πόσες ημέρες μένετε εκεί.",
+  "travelFlightsHint": "Προσθέστε κάθε πτήση, μαζί με τις ανταποκρίσεις, για να δείτε πότε προσγειώνεστε και πόσες μέρες μένετε.",
   "travelFlightAdd": "Προσθήκη πτήσης",
   "travelFlightEdit": "Στοιχεία πτήσης",
   "travelFlightFrom": "Από",
@@ -2064,5 +2064,9 @@
   "visaPermitHint": "Αποθηκεύστε την άδεια ως εγγραφή και το Vaultara θα σας υπενθυμίσει πριν λήξει.",
   "visaPermitAdd": "Προσθήκη άδειας",
   "visaPermitRecordStudy": "Άδεια σπουδών για {country}",
-  "visaPermitRecordWork": "Άδεια εργασίας για {country}"
+  "visaPermitRecordWork": "Άδεια εργασίας για {country}",
+  "travelConnectionIn": "Ανταπόκριση στο {place}",
+  "travelConnectionLong": "Ανταπόκριση στο {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ώ {minutes} λ",
+  "travelArriveIn": "Άφιξη: {country}"
 }

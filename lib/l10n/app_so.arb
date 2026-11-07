@@ -950,7 +950,7 @@
   "travelAtDestination": "Maalmaha meesha aad tegayso: {days}",
   "travelSectionJourney": "Safarkaaga",
   "travelFlights": "Duullimaadyada",
-  "travelFlightsHint": "Ku dar duullimaadyadaada si aad u aragto goorta aad degayso iyo inta maalmood ee aad joogayso.",
+  "travelFlightsHint": "Ku dar duulimaad kasta, oo ay ku jiraan isku-xirkuhu, si aad u aragto goorta aad degto iyo inta maalmood ee aad joogto.",
   "travelFlightAdd": "Ku dar duullimaad",
   "travelFlightEdit": "Faahfaahinta duullimaadka",
   "travelFlightFrom": "Laga bilaabo",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Ku keydi oggolaanshaha diiwaan ahaan, Vaultara ayaa ku xasuusin doonta ka hor intuusan dhicin.",
   "visaPermitAdd": "Ku dar oggolaansho",
   "visaPermitRecordStudy": "Oggolaansho waxbarasho {country}",
-  "visaPermitRecordWork": "Oggolaansho shaqo {country}"
+  "visaPermitRecordWork": "Oggolaansho shaqo {country}",
+  "travelConnectionIn": "Isku-xirka {place}",
+  "travelConnectionLong": "Isku-xirka {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} s {minutes} d",
+  "travelArriveIn": "Imaatinka {country}"
 }

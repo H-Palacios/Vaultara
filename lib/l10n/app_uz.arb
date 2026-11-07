@@ -700,7 +700,7 @@
   "travelAtDestination": "Manzilda o‘tkaziladigan kunlar: {days}",
   "travelSectionJourney": "Sayohatingiz",
   "travelFlights": "Reyslar",
-  "travelFlightsHint": "Qachon qo‘nishingiz va u yerda necha kun bo‘lishingizni ko‘rish uchun reyslaringizni qo‘shing.",
+  "travelFlightsHint": "Qachon qo'nishingiz va u yerda necha kun bo'lishingizni ko'rish uchun har bir reysni, o'tishlar bilan qo'shing.",
   "travelFlightAdd": "Reys qo‘shish",
   "travelFlightEdit": "Reys tafsilotlari",
   "travelFlightFrom": "Qayerdan",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "Ruxsatni yozuv sifatida saqlang, Vaultara muddati tugashidan oldin eslatadi.",
   "visaPermitAdd": "Ruxsat qo'shish",
   "visaPermitRecordStudy": "{country} uchun o'qish ruxsati",
-  "visaPermitRecordWork": "{country} uchun ish ruxsati"
+  "visaPermitRecordWork": "{country} uchun ish ruxsati",
+  "travelConnectionIn": "{place} orqali o'tish",
+  "travelConnectionLong": "{place} orqali o'tish: {duration}",
+  "travelDurationHoursMinutes": "{hours} s {minutes} daq",
+  "travelArriveIn": "Yetib kelish: {country}"
 }

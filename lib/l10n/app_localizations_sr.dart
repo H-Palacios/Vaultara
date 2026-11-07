@@ -2454,7 +2454,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get travelFlights => 'Летови';
 
   @override
-  String get travelFlightsHint => 'Додајте летове да видите када слећете и колико дана остајете тамо.';
+  String get travelFlightsHint => 'Додајте сваки лет, укључујући преседања, да видите када слећете и колико дана сте тамо.';
 
   @override
   String get travelFlightAdd => 'Додај лет';
@@ -6615,6 +6615,26 @@ class AppLocalizationsSr extends AppLocalizations {
   String visaPermitRecordWork(String country) {
     return 'Радна дозвола за $country';
   }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Преседање у $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Преседање у $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ч $minutes мин';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Долазак: $country';
+  }
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -9066,7 +9086,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get travelFlights => 'Летови';
 
   @override
-  String get travelFlightsHint => 'Додајте летове да видите када слећете и колико дана остајете тамо.';
+  String get travelFlightsHint => 'Додајте сваки лет, укључујући преседања, да видите када слећете и колико дана сте тамо.';
 
   @override
   String get travelFlightAdd => 'Додај лет';
@@ -13227,6 +13247,26 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String visaPermitRecordWork(String country) {
     return 'Радна дозвола за $country';
   }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Преседање у $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Преседање у $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ч $minutes мин';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Долазак: $country';
+  }
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -15678,7 +15718,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get travelFlights => 'Letovi';
 
   @override
-  String get travelFlightsHint => 'Dodajte letove da vidite kada sletate i koliko dana ostajete tamo.';
+  String get travelFlightsHint => 'Dodajte svaki let, uključujući presedanja, da vidite kada slećete i koliko dana ste tamo.';
 
   @override
   String get travelFlightAdd => 'Dodaj let';
@@ -19834,5 +19874,25 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   @override
   String visaPermitRecordWork(String country) {
     return 'Radna dozvola za $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Presedanje u $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Presedanje u $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours č $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Dolazak: $country';
   }
 }

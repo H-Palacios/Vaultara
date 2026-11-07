@@ -950,7 +950,7 @@
   "travelAtDestination": "Dní v cieli: {days}",
   "travelSectionJourney": "Vaša cesta",
   "travelFlights": "Lety",
-  "travelFlightsHint": "Pridajte svoje lety a uvidíte, kedy pristanete a koľko dní tam strávite.",
+  "travelFlightsHint": "Pridajte každý let vrátane prestupov a uvidíte, kedy pristanete a koľko dní tam strávite.",
   "travelFlightAdd": "Pridať let",
   "travelFlightEdit": "Podrobnosti o lete",
   "travelFlightFrom": "Odkiaľ",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Uložte povolenie ako záznam a Vaultara vám pripomenie, kým vyprší.",
   "visaPermitAdd": "Pridať povolenie",
   "visaPermitRecordStudy": "Študijné povolenie pre {country}",
-  "visaPermitRecordWork": "Pracovné povolenie pre {country}"
+  "visaPermitRecordWork": "Pracovné povolenie pre {country}",
+  "travelConnectionIn": "Prestup: {place}",
+  "travelConnectionLong": "Prestup: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Prílet: {country}"
 }

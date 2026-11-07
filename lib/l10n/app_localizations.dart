@@ -4462,7 +4462,7 @@ abstract class AppLocalizations {
   /// Hint under the flights heading when no flight is added
   ///
   /// In en, this message translates to:
-  /// **'Add your flights to see when you land and how many days you spend there.'**
+  /// **'Add each flight, connections included, to see when you land and how many days you spend there.'**
   String get travelFlightsHint;
 
   /// Button that adds a flight to a trip
@@ -11106,6 +11106,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Work permit for {country}'**
   String visaPermitRecordWork(String country);
+
+  /// No description provided for @travelConnectionIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection in {place}'**
+  String travelConnectionIn(String place);
+
+  /// No description provided for @travelConnectionLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection in {place}: {duration}'**
+  String travelConnectionLong(String place, String duration);
+
+  /// No description provided for @travelDurationHoursMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} h {minutes} min'**
+  String travelDurationHoursMinutes(int hours, int minutes);
+
+  /// Arrival date label for one destination country.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrive in {country}'**
+  String travelArriveIn(String country);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

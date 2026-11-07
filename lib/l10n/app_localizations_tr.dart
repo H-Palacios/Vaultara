@@ -2440,7 +2440,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get travelFlights => 'Uçuşlar';
 
   @override
-  String get travelFlightsHint => 'Ne zaman ineceğinizi ve orada kaç gün kalacağınızı görmek için uçuşlarınızı ekleyin.';
+  String get travelFlightsHint => 'Ne zaman ineceğini ve orada kaç gün kalacağını görmek için aktarmalar dahil her uçuşu ekle.';
 
   @override
   String get travelFlightAdd => 'Uçuş ekle';
@@ -6545,5 +6545,25 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country çalışma izni';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '$place aktarması';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '$place aktarması: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours sa $minutes dk';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Varış: $country';
   }
 }

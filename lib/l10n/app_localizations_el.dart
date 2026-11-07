@@ -2440,7 +2440,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get travelFlights => 'Πτήσεις';
 
   @override
-  String get travelFlightsHint => 'Προσθέστε τις πτήσεις σας για να δείτε πότε προσγειώνεστε και πόσες ημέρες μένετε εκεί.';
+  String get travelFlightsHint => 'Προσθέστε κάθε πτήση, μαζί με τις ανταποκρίσεις, για να δείτε πότε προσγειώνεστε και πόσες μέρες μένετε.';
 
   @override
   String get travelFlightAdd => 'Προσθήκη πτήσης';
@@ -6545,5 +6545,25 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Άδεια εργασίας για $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Ανταπόκριση στο $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Ανταπόκριση στο $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ώ $minutes λ';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Άφιξη: $country';
   }
 }

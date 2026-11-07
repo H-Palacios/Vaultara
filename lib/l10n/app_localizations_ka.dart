@@ -2440,7 +2440,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get travelFlights => 'ფრენები';
 
   @override
-  String get travelFlightsHint => 'დაამატეთ თქვენი ფრენები, რომ ნახოთ როდის დაეშვებით და რამდენ დღეს დაჰყოფთ იქ.';
+  String get travelFlightsHint => 'დაამატეთ ყველა ფრენა, გადაჯდომების ჩათვლით, რომ ნახოთ როდის დაეშვებით და რამდენ დღეს დარჩებით.';
 
   @override
   String get travelFlightAdd => 'ფრენის დამატება';
@@ -6545,5 +6545,25 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'სამუშაო ნებართვა: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'გადაჯდომა: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'გადაჯდომა: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours სთ $minutes წთ';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'ჩასვლა: $country';
   }
 }

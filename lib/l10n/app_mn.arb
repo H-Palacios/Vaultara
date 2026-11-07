@@ -968,7 +968,7 @@
   "travelAtDestination": "Очих газар байх өдөр: {days}",
   "travelSectionJourney": "Таны аялал",
   "travelFlights": "Нислэгүүд",
-  "travelFlightsHint": "Хэзээ буухаа болон тэнд хэд хоносоноо харахын тулд нислэгээ нэмнэ үү.",
+  "travelFlightsHint": "Хэзээ буухыг болон тэнд хэдэн өдөр байхыг харахын тулд дамжих нислэгийг оролцуулан нислэг бүрийг нэмнэ үү.",
   "travelFlightAdd": "Нислэг нэмэх",
   "travelFlightEdit": "Нислэгийн мэдээлэл",
   "travelFlightFrom": "Хаанаас",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "Зөвшөөрлийг бичлэг болгон хадгалвал Vaultara хугацаа дуусахаас өмнө сануулна.",
   "visaPermitAdd": "Зөвшөөрөл нэмэх",
   "visaPermitRecordStudy": "{country} суралцах зөвшөөрөл",
-  "visaPermitRecordWork": "{country} ажлын зөвшөөрөл"
+  "visaPermitRecordWork": "{country} ажлын зөвшөөрөл",
+  "travelConnectionIn": "Дамжин өнгөрөх: {place}",
+  "travelConnectionLong": "Дамжин өнгөрөх: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} ц {minutes} мин",
+  "travelArriveIn": "Ирэх: {country}"
 }

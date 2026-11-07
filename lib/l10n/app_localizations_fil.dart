@@ -2440,7 +2440,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get travelFlights => 'Mga flight';
 
   @override
-  String get travelFlightsHint => 'Idagdag ang iyong mga flight para makita kung kailan ka lalapag at ilang araw ka roon.';
+  String get travelFlightsHint => 'Idagdag ang bawat flight, kasama ang mga connection, para makita kung kailan ka lalapag at ilang araw ka roon.';
 
   @override
   String get travelFlightAdd => 'Magdagdag ng flight';
@@ -6545,5 +6545,25 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Work permit para sa $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Connection sa $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Connection sa $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Pagdating sa $country';
   }
 }

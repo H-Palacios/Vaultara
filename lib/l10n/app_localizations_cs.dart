@@ -2471,7 +2471,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get travelFlights => 'Lety';
 
   @override
-  String get travelFlightsHint => 'Přidejte své lety a uvidíte, kdy přistanete a kolik dní tam strávíte.';
+  String get travelFlightsHint => 'Přidejte každý let včetně přestupů a uvidíte, kdy přistanete a kolik dní tam strávíte.';
 
   @override
   String get travelFlightAdd => 'Přidat let';
@@ -6677,5 +6677,25 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Pracovní povolení pro $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Přestup v $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Přestup v $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Přílet: $country';
   }
 }

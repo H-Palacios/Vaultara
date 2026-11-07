@@ -950,7 +950,7 @@
   "travelAtDestination": "சேருமிடத்தில் நாட்கள்: {days}",
   "travelSectionJourney": "உங்கள் பயணம்",
   "travelFlights": "விமானங்கள்",
-  "travelFlightsHint": "நீங்கள் எப்போது தரையிறங்குவீர்கள், அங்கே எத்தனை நாட்கள் இருப்பீர்கள் என்பதைப் பார்க்க உங்கள் விமானங்களைச் சேர்க்கவும்.",
+  "travelFlightsHint": "நீங்கள் எப்போது தரையிறங்குகிறீர்கள், அங்கு எத்தனை நாள் இருப்பீர்கள் என்பதைப் பார்க்க இணைப்புகள் உட்பட ஒவ்வொரு விமானத்தையும் சேர்க்கவும்.",
   "travelFlightAdd": "விமானத்தைச் சேர்",
   "travelFlightEdit": "விமான விவரங்கள்",
   "travelFlightFrom": "எங்கிருந்து",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "அனுமதியைப் பதிவாகச் சேமியுங்கள், காலாவதியாகும் முன் Vaultara நினைவூட்டும்.",
   "visaPermitAdd": "அனுமதியைச் சேர்",
   "visaPermitRecordStudy": "{country} படிப்பு அனுமதி",
-  "visaPermitRecordWork": "{country} வேலை அனுமதி"
+  "visaPermitRecordWork": "{country} வேலை அனுமதி",
+  "travelConnectionIn": "{place} இல் இணைப்பு",
+  "travelConnectionLong": "{place} இல் இணைப்பு: {duration}",
+  "travelDurationHoursMinutes": "{hours} ம {minutes} நி",
+  "travelArriveIn": "{country} வருகை"
 }

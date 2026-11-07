@@ -950,7 +950,7 @@
   "travelAtDestination": "Hari di destinasi: {days}",
   "travelSectionJourney": "Perjalanan anda",
   "travelFlights": "Penerbangan",
-  "travelFlightsHint": "Tambah penerbangan anda untuk melihat bila anda mendarat dan berapa hari anda di sana.",
+  "travelFlightsHint": "Tambah setiap penerbangan, termasuk transit, untuk melihat bila anda mendarat dan berapa hari anda di sana.",
   "travelFlightAdd": "Tambah penerbangan",
   "travelFlightEdit": "Butiran penerbangan",
   "travelFlightFrom": "Dari",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Simpan permit sebagai rekod dan Vaultara akan mengingatkan anda sebelum ia tamat.",
   "visaPermitAdd": "Tambah permit",
   "visaPermitRecordStudy": "Permit belajar untuk {country}",
-  "visaPermitRecordWork": "Permit kerja untuk {country}"
+  "visaPermitRecordWork": "Permit kerja untuk {country}",
+  "travelConnectionIn": "Transit di {place}",
+  "travelConnectionLong": "Transit di {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} j {minutes} min",
+  "travelArriveIn": "Tiba di {country}"
 }

@@ -700,7 +700,7 @@
   "travelAtDestination": "ലക്ഷ്യസ്ഥാനത്തെ ദിവസങ്ങൾ: {days}",
   "travelSectionJourney": "നിങ്ങളുടെ യാത്ര",
   "travelFlights": "വിമാനങ്ങൾ",
-  "travelFlightsHint": "നിങ്ങൾ എപ്പോൾ ഇറങ്ങുമെന്നും അവിടെ എത്ര ദിവസം ഉണ്ടാകുമെന്നും കാണാൻ നിങ്ങളുടെ വിമാനങ്ങൾ ചേർക്കുക.",
+  "travelFlightsHint": "എപ്പോൾ ഇറങ്ങുമെന്നും അവിടെ എത്ര ദിവസം ഉണ്ടെന്നും കാണാൻ കണക്ഷനുകൾ ഉൾപ്പെടെ ഓരോ ഫ്ലൈറ്റും ചേർക്കുക.",
   "travelFlightAdd": "വിമാനം ചേർക്കുക",
   "travelFlightEdit": "വിമാന വിവരങ്ങൾ",
   "travelFlightFrom": "എവിടെ നിന്ന്",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "പെർമിറ്റ് റെക്കോർഡായി സേവ് ചെയ്യുക, കാലഹരണപ്പെടുന്നതിന് മുമ്പ് Vaultara ഓർമ്മിപ്പിക്കും.",
   "visaPermitAdd": "പെർമിറ്റ് ചേർക്കുക",
   "visaPermitRecordStudy": "{country}-ലേക്കുള്ള സ്റ്റഡി പെർമിറ്റ്",
-  "visaPermitRecordWork": "{country}-ലേക്കുള്ള വർക്ക് പെർമിറ്റ്"
+  "visaPermitRecordWork": "{country}-ലേക്കുള്ള വർക്ക് പെർമിറ്റ്",
+  "travelConnectionIn": "{place}-ൽ കണക്ഷൻ",
+  "travelConnectionLong": "{place}-ൽ കണക്ഷൻ: {duration}",
+  "travelDurationHoursMinutes": "{hours} മ {minutes} മി",
+  "travelArriveIn": "{country}-ൽ എത്തുന്നു"
 }

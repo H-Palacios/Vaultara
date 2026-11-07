@@ -700,7 +700,7 @@
   "travelAtDestination": "ថ្ងៃនៅគោលដៅ៖ {days}",
   "travelSectionJourney": "ដំណើររបស់អ្នក",
   "travelFlights": "ជើងហោះហើរ",
-  "travelFlightsHint": "បន្ថែមជើងហោះហើររបស់អ្នក ដើម្បីមើលថាពេលណាអ្នកចុះចត និងស្នាក់នៅទីនោះប៉ុន្មានថ្ងៃ។",
+  "travelFlightsHint": "បន្ថែមជើងហោះហើរនីមួយៗ រួមទាំងការផ្លាស់យន្តហោះ ដើម្បីមើលពេលចុះចត និងចំនួនថ្ងៃដែលអ្នកស្នាក់នៅ។",
   "travelFlightAdd": "បន្ថែមជើងហោះហើរ",
   "travelFlightEdit": "ព័ត៌មានលម្អិតជើងហោះហើរ",
   "travelFlightFrom": "ពី",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "រក្សាទុកលិខិតអនុញ្ញាតជាកំណត់ត្រា ហើយ Vaultara នឹងរំលឹកអ្នកមុនពេលផុតកំណត់។",
   "visaPermitAdd": "បន្ថែមលិខិតអនុញ្ញាត",
   "visaPermitRecordStudy": "លិខិតអនុញ្ញាតសិក្សាសម្រាប់ {country}",
-  "visaPermitRecordWork": "លិខិតអនុញ្ញាតការងារសម្រាប់ {country}"
+  "visaPermitRecordWork": "លិខិតអនុញ្ញាតការងារសម្រាប់ {country}",
+  "travelConnectionIn": "ផ្លាស់យន្តហោះនៅ {place}",
+  "travelConnectionLong": "ផ្លាស់យន្តហោះនៅ {place}៖ {duration}",
+  "travelDurationHoursMinutes": "{hours} ម៉ោង {minutes} នាទី",
+  "travelArriveIn": "មកដល់ {country}"
 }

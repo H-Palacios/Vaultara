@@ -2440,7 +2440,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get travelFlights => 'Vlugte';
 
   @override
-  String get travelFlightsHint => 'Voeg jou vlugte by om te sien wanneer jy land en hoeveel dae jy daar deurbring.';
+  String get travelFlightsHint => 'Voeg elke vlug by, oorklimme ingesluit, om te sien wanneer jy land en hoeveel dae jy daar is.';
 
   @override
   String get travelFlightAdd => 'Voeg \'n vlug by';
@@ -6545,5 +6545,25 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Werkpermit vir $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Oorklim in $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Oorklim in $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Aankoms in $country';
   }
 }

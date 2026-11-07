@@ -2440,7 +2440,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get travelFlights => 'Firîn';
 
   @override
-  String get travelFlightsHint => 'Firînên xwe zêde bike da ku bibînî kengê dadikevî û çend rojan li wir dimînî.';
+  String get travelFlightsHint => 'Her firînekê, bi veguhastinan re, zêde bike da ku bibînî kengî dadikevî û çend rojan li wir î.';
 
   @override
   String get travelFlightAdd => 'Firînekê zêde bike';
@@ -6545,5 +6545,25 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Destûra kar ji bo $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Veguhastin li $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Veguhastin li $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours s $minutes d';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Gihîştin: $country';
   }
 }

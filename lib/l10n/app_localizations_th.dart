@@ -2427,7 +2427,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get travelFlights => 'เที่ยวบิน';
 
   @override
-  String get travelFlightsHint => 'เพิ่มเที่ยวบินของคุณเพื่อดูว่าคุณลงจอดเมื่อไรและอยู่ที่นั่นกี่วัน';
+  String get travelFlightsHint => 'เพิ่มทุกเที่ยวบิน รวมถึงเที่ยวบินต่อเครื่อง เพื่อดูว่าคุณลงจอดเมื่อไรและอยู่ที่นั่นกี่วัน';
 
   @override
   String get travelFlightAdd => 'เพิ่มเที่ยวบิน';
@@ -6481,5 +6481,25 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'ใบอนุญาตทำงานสำหรับ $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'ต่อเครื่องที่ $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'ต่อเครื่องที่ $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ชม. $minutes นาที';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'ถึง$country';
   }
 }

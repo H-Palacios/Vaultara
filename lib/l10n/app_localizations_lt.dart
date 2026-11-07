@@ -2468,7 +2468,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get travelFlights => 'Skrydžiai';
 
   @override
-  String get travelFlightsHint => 'Pridėkite skrydžius, kad pamatytumėte, kada nusileisite ir kiek dienų ten būsite.';
+  String get travelFlightsHint => 'Pridėkite kiekvieną skrydį, įskaitant persėdimus, kad matytumėte, kada nusileidžiate ir kiek dienų ten būsite.';
 
   @override
   String get travelFlightAdd => 'Pridėti skrydį';
@@ -6683,5 +6683,25 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Darbo leidimas: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Persėdimas: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Persėdimas: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours val. $minutes min.';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Atvykimas: $country';
   }
 }
