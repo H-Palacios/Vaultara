@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 
-enum AssistantFailure { offline, limitReached, notPremium, busy, failed }
+enum AssistantFailure { offline, limitReached, notPremium, busy, failed, stopped }
 
 class AssistantTurn {
   final bool fromUser;
@@ -19,19 +19,39 @@ class AssistantTurn {
 }
 
 class AssistantReply {
+  static const int maxReplies = 4;
+  static const int replyMaxChars = 40;
+
   final String reply;
   final List<AssistantAction> actions;
+  final List<String> replies;
   final AssistantFailure? failure;
 
   const AssistantReply({
     this.reply = '',
     this.actions = const <AssistantAction>[],
+    this.replies = const <String>[],
     this.failure,
   });
 
   const AssistantReply.failed(AssistantFailure this.failure)
       : reply = '',
-        actions = const <AssistantAction>[];
+        actions = const <AssistantAction>[],
+        replies = const <String>[];
+
+  static List<String> repliesFrom(Object? raw) {
+    if (raw is! List) return const <String>[];
+    final out = <String>[];
+    for (final item in raw) {
+      if (item is! String) continue;
+      final text = item.trim();
+      if (text.isEmpty || text.length > replyMaxChars) continue;
+      if (out.any((r) => r.toLowerCase() == text.toLowerCase())) continue;
+      out.add(text);
+      if (out.length >= maxReplies) break;
+    }
+    return out;
+  }
 
   bool get ok => failure == null;
 }
@@ -43,7 +63,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 2;
+  static const int protocolVersion = 3;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -59,6 +79,7 @@ class AssistantService {
     List<AssistantTurn> turns, {
     required String locale,
     bool propose = false,
+    String? runId,
   }) async {
     final cleaned = turns
         .where((t) => t.text.trim().isNotEmpty)
@@ -86,6 +107,7 @@ class AssistantService {
         'locale': locale,
         'v': protocolVersion,
         if (propose) 'intent': 'propose',
+        if (runId != null) 'runId': runId,
       });
       final data = response.data;
       if (data is! Map) return const AssistantReply.failed(AssistantFailure.failed);
@@ -93,6 +115,7 @@ class AssistantService {
       return AssistantReply(
         reply: reply is String ? reply.trim() : '',
         actions: AssistantAction.listFrom(data['actions']),
+        replies: AssistantReply.repliesFrom(data['replies']),
       );
     } on FirebaseFunctionsException catch (e) {
       final failure = _mapCode(e.code);
@@ -148,6 +171,8 @@ class AssistantService {
         return AssistantFailure.notPremium;
       case 'deadline-exceeded':
         return AssistantFailure.busy;
+      case 'cancelled':
+        return AssistantFailure.stopped;
       default:
         return AssistantFailure.failed;
     }

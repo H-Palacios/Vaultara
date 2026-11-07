@@ -1,4 +1,5 @@
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
+import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 
 enum AssistantRole { user, assistant }
@@ -61,6 +62,18 @@ class AssistantMessage {
   final List<StoredProposal> proposals;
   final List<StoredProposal> archived;
   final AssistantFailure? failure;
+
+  /// Ways to reverse each confirmed card, kept only while the chat is open.
+  final List<AssistantUndo?> undos;
+
+  /// Tap-able replies under the answer. Only the newest answer shows them.
+  final List<String> replies;
+
+  /// Cards in a combined card that the user unticked.
+  final Set<int> unchecked = <int>{};
+
+  /// 1 for helpful, -1 for not helpful, 0 when not rated.
+  int rating = 0;
   String? id;
 
   AssistantMessage({
@@ -70,9 +83,12 @@ class AssistantMessage {
     List<AssistantAction> actions = const <AssistantAction>[],
     List<StoredProposal> proposals = const <StoredProposal>[],
     List<StoredProposal> archived = const <StoredProposal>[],
+    List<String> replies = const <String>[],
     this.failure,
     this.id,
   })  : actions = List<AssistantAction>.unmodifiable(actions),
+        undos = List<AssistantUndo?>.filled(actions.length, null),
+        replies = List<String>.of(replies),
         actionStates = List<AssistantActionState>.filled(
           actions.length,
           AssistantActionState.pending,

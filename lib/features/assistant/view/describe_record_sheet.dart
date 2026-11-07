@@ -86,6 +86,8 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
         return loc.assistantErrorBusy;
       case AssistantFailure.failed:
         return loc.assistantErrorFailed;
+      case AssistantFailure.stopped:
+        return loc.assistantStopped;
     }
   }
 

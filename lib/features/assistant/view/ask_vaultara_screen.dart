@@ -7,14 +7,22 @@ import 'package:vaultara/features/assistant/data/assistant_message.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_preview.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
+import 'package:vaultara/features/assistant/logic/assistant_step_label.dart';
+import 'package:vaultara/features/assistant/logic/assistant_suggestions.dart';
 import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
+import 'package:vaultara/features/assistant/services/assistant_feedback_store.dart';
+import 'package:vaultara/features/assistant/services/assistant_run.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
 import 'package:vaultara/features/assistant/view/assistant_history_screen.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_action_card.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_batch_card.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_bubble.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_input_bar.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_linked_text.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 Future<void> openAskVaultara(
@@ -58,6 +66,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   bool _busy = false;
   bool _loadingChat = false;
+  AssistantRun? _run;
   String _voiceBase = '';
   bool _sharedPrefilled = false;
   String? _chatId;
@@ -77,6 +86,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   @override
   void dispose() {
+    _run?.stop();
+    _run?.dispose();
     _focus.removeListener(_onFocus);
     _voice.dispose();
     _input.dispose();
@@ -197,14 +208,23 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   Future<void> _request() async {
     if (_busy) return;
     final loc = AppLocalizations.of(context)!;
-    setState(() => _busy = true);
+    final run = AssistantRun()..start();
+    setState(() {
+      _busy = true;
+      _run = run;
+    });
     _scrollToEnd();
 
     final result = await AssistantService.ask(
       _turns(),
       locale: loc.localeName,
+      runId: run.id,
     );
-    if (!mounted) return;
+    // Disposed after the next frame, once the waiting bubble that listens
+    // to it is gone.
+    WidgetsBinding.instance.addPostFrameCallback((_) => run.dispose());
+    if (run.stopped || !mounted) return;
+    _run = null;
 
     if (!result.ok) {
       setState(() {
@@ -231,6 +251,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       role: AssistantRole.assistant,
       text: reply,
       actions: result.actions,
+      replies: result.replies,
       proposals: <StoredProposal>[
         for (final action in result.actions) _storedFor(action, 'pending'),
       ],
@@ -240,6 +261,27 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       _messages.add(message);
     });
     _saveAssistantMessage(message);
+    _scrollToEnd();
+  }
+
+  /// Stops waiting for the current answer. The function is asked to stop
+  /// before its next step, and whatever it still sends back is ignored.
+  void _stop() {
+    final run = _run;
+    if (!_busy || run == null) return;
+    final loc = AppLocalizations.of(context)!;
+    run.stop();
+    setState(() {
+      _busy = false;
+      _run = null;
+      _messages.add(
+        AssistantMessage(
+          role: AssistantRole.assistant,
+          text: loc.assistantStopped,
+          failure: AssistantFailure.stopped,
+        ),
+      );
+    });
     _scrollToEnd();
   }
 
@@ -261,6 +303,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         return loc.assistantErrorBusy;
       case AssistantFailure.failed:
         return loc.assistantErrorFailed;
+      case AssistantFailure.stopped:
+        return loc.assistantStopped;
     }
   }
 
@@ -315,13 +359,17 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     final previous = message.actionStates[index];
     if (previous == AssistantActionState.busy) return;
     setState(() => message.actionStates[index] = AssistantActionState.busy);
-    final result = await AssistantActionLauncher.apply(context, action);
+    final applied =
+        await AssistantActionLauncher.applyWithUndo(context, action);
+    final result = applied.result;
     if (!mounted) return;
     setState(() {
       switch (result) {
         case AssistantApplyResult.applied:
           message.actionStates[index] = AssistantActionState.applied;
+          message.undos[index] = applied.undo;
           _setStatus(message, index, 'applied');
+          _offerTripCheck(message, action);
         case AssistantApplyResult.opened:
           message.actionStates[index] = AssistantActionState.opened;
           _setStatus(message, index, 'opened');
@@ -336,6 +384,137 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       message.actionStates[index] = AssistantActionState.cancelled;
       _setStatus(message, index, 'cancelled');
     });
+  }
+
+  /// After a new trip is saved, offer the readiness check as a reply.
+  void _offerTripCheck(AssistantMessage message, AssistantAction action) {
+    if (action.type != AssistantActionType.tripAdd) return;
+    final loc = AppLocalizations.of(context)!;
+    final place = action.countries.isNotEmpty
+        ? Countries.names(action.countries)
+        : action.name;
+    if (place == null || place.isEmpty) return;
+    final ask = loc.assistantSuggestTripReady(place);
+    if (!message.replies.contains(ask)) message.replies.insert(0, ask);
+    while (message.replies.length > AssistantReply.maxReplies) {
+      message.replies.removeLast();
+    }
+  }
+
+  Future<bool> _runUndo(AssistantMessage message, int index) async {
+    final undo = message.undos[index];
+    if (undo == null) return false;
+    message.undos[index] = null;
+    setState(() => message.actionStates[index] = AssistantActionState.busy);
+    var ok = false;
+    try {
+      ok = await undo();
+    } catch (_) {
+      ok = false;
+    }
+    if (!mounted) return ok;
+    setState(() {
+      if (ok) {
+        message.actionStates[index] = AssistantActionState.pending;
+        _setStatus(message, index, 'pending');
+      } else {
+        message.actionStates[index] = AssistantActionState.applied;
+      }
+    });
+    return ok;
+  }
+
+  Future<void> _undo(AssistantMessage message, int index) async {
+    final loc = AppLocalizations.of(context)!;
+    final ok = await _runUndo(message, index);
+    if (!mounted) return;
+    _undoFeedback(loc, ok);
+  }
+
+  Future<void> _undoAll(AssistantMessage message) async {
+    final loc = AppLocalizations.of(context)!;
+    var ok = true;
+    for (var i = 0; i < message.actions.length; i++) {
+      if (message.undos[i] == null) continue;
+      ok = await _runUndo(message, i) && ok;
+      if (!mounted) return;
+    }
+    _undoFeedback(loc, ok);
+  }
+
+  void _undoFeedback(AppLocalizations loc, bool ok) {
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      ok ? loc.assistantUndone : loc.assistantUndoFailed,
+      icon: ok ? Icons.undo_rounded : Icons.error_outline_rounded,
+    );
+  }
+
+  Future<void> _confirmBatch(AssistantMessage message) async {
+    for (var i = 0; i < message.actions.length; i++) {
+      if (message.actionStates[i] != AssistantActionState.pending) continue;
+      if (message.unchecked.contains(i)) {
+        _cancel(message, i);
+        continue;
+      }
+      await _confirm(message, i);
+      if (!mounted) return;
+    }
+  }
+
+  void _cancelBatch(AssistantMessage message) {
+    for (var i = 0; i < message.actions.length; i++) {
+      if (message.actionStates[i] == AssistantActionState.pending) {
+        _cancel(message, i);
+      }
+    }
+  }
+
+  void _toggleBatch(AssistantMessage message, int index) {
+    setState(() {
+      if (!message.unchecked.remove(index)) message.unchecked.add(index);
+    });
+  }
+
+  void _rate(AssistantMessage message, int rating) {
+    final loc = AppLocalizations.of(context)!;
+    setState(() => message.rating = rating);
+    if (rating == 0) return;
+    final at = _messages.indexOf(message);
+    String question = '';
+    for (var i = at - 1; i >= 0; i--) {
+      if (_messages[i].isUser) {
+        question = _messages[i].sentText;
+        break;
+      }
+    }
+    final id = message.id ?? AssistantRun.newId();
+    message.id ??= id;
+    AssistantFeedbackStore.save(
+      messageId: id,
+      rating: rating,
+      question: question,
+      answer: message.text,
+      chatId: _chatId,
+    );
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      loc.assistantFeedbackThanks,
+      icon: rating == 1
+          ? Icons.thumb_up_alt_rounded
+          : Icons.thumb_down_alt_rounded,
+    );
+  }
+
+  void _openRecord(String id) {
+    AssistantNavigator.open(
+      context,
+      AssistantAction(
+        type: AssistantActionType.open,
+        screen: 'record',
+        targetId: id,
+      ),
+    );
   }
 
   void _newChat() {
@@ -451,11 +630,13 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                               itemCount: _messages.length + (_busy ? 1 : 0),
                               itemBuilder: (context, i) {
                                 if (i >= _messages.length) {
-                                  return AssistantThinkingBubble(
-                                    label: loc.assistantThinking,
-                                  );
+                                  return _LiveThinking(run: _run);
                                 }
-                                return _buildMessage(context, _messages[i]);
+                                return _buildMessage(
+                                  context,
+                                  _messages[i],
+                                  newest: i == _messages.length - 1,
+                                );
                               },
                             ),
             ),
@@ -478,6 +659,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                     hintText: loc.assistantHint,
                     onSend: () => _send(_input.text),
                     onMic: _toggleMic,
+                    onStop: _busy ? _stop : null,
                   ),
                 ),
               ),
@@ -487,7 +669,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     );
   }
 
-  Widget _buildMessage(BuildContext context, AssistantMessage message) {
+  Widget _buildMessage(
+    BuildContext context,
+    AssistantMessage message, {
+    bool newest = false,
+  }) {
     final loc = AppLocalizations.of(context)!;
 
     if (message.isUser) {
@@ -501,7 +687,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       final bool notPremium = message.failure == AssistantFailure.notPremium;
       return AssistantBubble(
         fromUser: false,
-        isError: true,
+        isError: message.failure != AssistantFailure.stopped,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
@@ -525,7 +711,26 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
 
     final List<Widget> extras = <Widget>[];
-    for (var i = 0; i < message.actions.length; i++) {
+    final batch = AssistantBatchCard.fits(message.actions);
+    if (batch) {
+      extras.add(
+        AssistantBatchCard(
+          previews: <AssistantActionPreview>[
+            for (final action in message.actions)
+              AssistantActionPreview.build(context, action),
+          ],
+          states: message.actionStates,
+          unchecked: message.unchecked,
+          onToggle: (i) => _toggleBatch(message, i),
+          onConfirm: () => _confirmBatch(message),
+          onCancel: () => _cancelBatch(message),
+          onUndoAll: message.undos.any((u) => u != null)
+              ? () => _undoAll(message)
+              : null,
+        ),
+      );
+    }
+    for (var i = 0; i < message.actions.length && !batch; i++) {
       final action = message.actions[i];
       final index = i;
       if (action.isOpen) {
@@ -538,6 +743,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           state: message.actionStates[i],
           onConfirm: () => _confirm(message, index),
           onCancel: () => _cancel(message, index),
+          onUndo:
+              message.undos[i] == null ? null : () => _undo(message, index),
         ),
       );
     }
@@ -569,7 +776,18 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       children: [
         AssistantBubble(
           fromUser: false,
-          child: SelectableText(message.text),
+          child: AssistantLinkedText(
+            text: message.text,
+            onOpenRecord: _openRecord,
+          ),
+        ),
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: AssistantMessageTools(
+            text: message.text,
+            rating: message.rating,
+            onRate: (rating) => _rate(message, rating),
+          ),
         ),
         if (extras.isNotEmpty)
           Padding(
@@ -578,6 +796,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: extras,
             ),
+          ),
+        if (newest && message.replies.isNotEmpty)
+          AssistantReplyChips(
+            replies: message.replies,
+            enabled: !_busy,
+            onTap: (reply) => _send(reply),
           ),
       ],
     );
@@ -593,6 +817,33 @@ extension on List<AssistantMessage> {
   }
 }
 
+/// The waiting bubble. Its line follows what the assistant is doing and
+/// switches to "Still working on it" when a step takes long. The bubble is
+/// a live region, so screen readers announce each new line.
+class _LiveThinking extends StatelessWidget {
+  final AssistantRun? run;
+
+  const _LiveThinking({required this.run});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final current = run;
+    if (current == null) {
+      return AssistantThinkingBubble(label: loc.assistantStepThinking);
+    }
+    return ValueListenableBuilder<AssistantStep?>(
+      valueListenable: current.step,
+      builder: (context, step, _) => ValueListenableBuilder<bool>(
+        valueListenable: current.slow,
+        builder: (context, slow, _) => AssistantThinkingBubble(
+          label: AssistantStepLabel.of(loc, step, slow: slow),
+        ),
+      ),
+    );
+  }
+}
+
 class _EmptyState extends StatelessWidget {
   final ValueChanged<String> onSuggestion;
 
@@ -603,12 +854,7 @@ class _EmptyState extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    final suggestions = <String>[
-      loc.assistantSuggestionMonth,
-      loc.assistantSuggestionPassport,
-      loc.assistantSuggestionAdd,
-      loc.assistantSuggestionWhere,
-    ];
+    final suggestions = AssistantSuggestions.build(loc);
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 24, 20, 16),
