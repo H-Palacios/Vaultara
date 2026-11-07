@@ -29,6 +29,8 @@ const PERSON_NAME_MAX = 40;
 const TRIP_NAME_MAX = 60;
 const MAX_TRIPS = 20;
 const MAX_COUNTRIES = 5;
+const MAX_FLIGHTS = 10;
+const FLIGHT_PLACE_MAX = 40;
 const MAX_TRAVELLERS = 26;
 const MAX_REMINDER_DAYS = 365;
 const MAX_LEAD_DAYS = 365;
@@ -380,6 +382,53 @@ const SUGGEST_REPLIES = {
   },
 };
 
+// Flights and arrival dates on trips. Only clients on protocol 5 can save
+// them, so older builds never get a card that drops the flights.
+const TRIP_EXTRA_PROPERTIES = {
+  flights: {
+    type: "array",
+    description:
+      "Flights for the trip, at most 10, as separate legs. A connection is its own leg: Johannesburg to Dubai, then Dubai to Tokyo. Every leg must fall within the trip dates. For changes give the full new list.",
+    items: {
+      type: "object",
+      properties: {
+        from: { type: "string", description: "City or airport, at most 40 characters." },
+        to: { type: "string", description: "City or airport, at most 40 characters." },
+        to_country: { type: "string", description: "ISO alpha-2 code of the country the leg lands in." },
+        depart_date: { type: "string", description: "YYYY-MM-DD" },
+        depart_time: { type: "string", description: "Optional local time HH:MM." },
+        land_date: { type: "string", description: "YYYY-MM-DD, local date at arrival. Defaults to depart_date." },
+        land_time: { type: "string", description: "Optional local time HH:MM." },
+      },
+      required: ["from", "to", "depart_date"],
+    },
+  },
+  arrivals: {
+    type: "array",
+    description:
+      "Only for trips with several countries when the user says when they reach a country, for example by train or car. The date they arrive in each country. Flights already give this for countries they land in.",
+    items: {
+      type: "object",
+      properties: {
+        country: { type: "string", description: "ISO alpha-2 code, one of the trip countries." },
+        date: { type: "string", description: "YYYY-MM-DD within the trip dates." },
+      },
+      required: ["country", "date"],
+    },
+  },
+};
+
+function withTripExtras(tool) {
+  if (tool.name !== "propose_create_trip" && tool.name !== "propose_update_trip") return tool;
+  return {
+    ...tool,
+    input_schema: {
+      ...tool.input_schema,
+      properties: { ...tool.input_schema.properties, ...TRIP_EXTRA_PROPERTIES },
+    },
+  };
+}
+
 const SETTINGS = [
   "app_lock",
   "privacy_screen",
@@ -416,10 +465,12 @@ const TOOLS_V1 = [...READ_TOOLS, PROPOSE_RECORD, PROPOSE_UPDATE_LEGACY];
 const TOOLS_V2 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS];
 const TOOLS_V3 = [...TOOLS_V2, SUGGEST_REPLIES];
 const TOOLS_V4 = [...TOOLS_V2, PROPOSE_SETTING, SUGGEST_REPLIES];
+const TOOLS_V5 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS.map(withTripExtras), PROPOSE_SETTING, SUGGEST_REPLIES];
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
 const NAMES_V4 = new Set(TOOLS_V4.map((t) => t.name));
+const NAMES_V5 = NAMES_V4;
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -634,6 +685,8 @@ class UserData {
         driving: data.driving === true,
         purpose: TRIP_PURPOSES.includes(data.purpose) ? data.purpose : DEFAULT_TRIP_PURPOSE,
         needsVisa: data.needsVisa === true,
+        flights: storedFlights(data.flights, this.offset),
+        arrivals: storedArrivals(data.arrivals, this.offset),
       });
     }
     trips.sort((a, b) => a.startDay - b.startDay);
@@ -1022,6 +1075,16 @@ async function listTrips(ctx) {
       needs_visa: trip.needsVisa,
       driving: trip.driving,
       purpose: trip.purpose,
+      flights: trip.flights.map((f) => ({
+        from: f.from,
+        to: f.to,
+        to_country: f.toCountry,
+        depart_date: isoDay(f.departDay),
+        depart_time: f.departTime,
+        land_date: isoDay(f.landDay),
+        land_time: f.landTime,
+      })),
+      arrivals: Object.entries(trip.arrivals).map(([zone, day]) => ({ country: zone, date: isoDay(day) })),
       past: trip.endDay < ctx.today,
     })),
     max_trips: MAX_TRIPS,
@@ -1226,6 +1289,102 @@ async function parseTravellers(ctx, value) {
   return { ids, names };
 }
 
+const TIME_OF_DAY = /^([01]\d|2[0-3]):[0-5]\d$/;
+
+function storedFlights(raw, offset) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const f of raw.slice(0, MAX_FLIGHTS)) {
+    if (!f || typeof f !== "object") continue;
+    const depart = toMillis(f.departDate);
+    const land = toMillis(f.landDate);
+    const from = str(f.from, FLIGHT_PLACE_MAX);
+    const to = str(f.to, FLIGHT_PLACE_MAX);
+    if (depart === null || land === null || !from || !to) continue;
+    out.push({
+      from,
+      to,
+      toCountry: typeof f.toCountry === "string" && COUNTRY_PATTERN.test(f.toCountry) ? f.toCountry : null,
+      departDay: dayNumber(depart, offset),
+      departTime: TIME_OF_DAY.test(f.departTime || "") ? f.departTime : null,
+      landDay: dayNumber(land, offset),
+      landTime: TIME_OF_DAY.test(f.landTime || "") ? f.landTime : null,
+    });
+  }
+  out.sort((a, b) => a.departDay - b.departDay || String(a.departTime || "").localeCompare(String(b.departTime || "")));
+  return out;
+}
+
+function storedArrivals(raw, offset) {
+  const out = {};
+  if (!raw || typeof raw !== "object") return out;
+  for (const [zone, value] of Object.entries(raw)) {
+    const ms = toMillis(value);
+    if (ms === null) continue;
+    if (zone !== "SCHENGEN" && !COUNTRY_PATTERN.test(zone)) continue;
+    out[zone] = dayNumber(ms, offset);
+  }
+  return out;
+}
+
+function parseFlights(value, startDay, endDay) {
+  if (!Array.isArray(value)) return { error: "flights must be a list of legs." };
+  if (value.length > MAX_FLIGHTS) return { error: `A trip can have at most ${MAX_FLIGHTS} flights.` };
+  const flights = [];
+  for (const item of value) {
+    const from = str(item?.from);
+    const to = str(item?.to);
+    if (!from || !to) return { error: "Each flight needs from and to." };
+    if (from.length > FLIGHT_PLACE_MAX || to.length > FLIGHT_PLACE_MAX) {
+      return { error: `from and to must be at most ${FLIGHT_PLACE_MAX} characters. Use the city or airport code.` };
+    }
+    const departDay = parseDay(item?.depart_date);
+    if (departDay === null) return { error: "depart_date must be YYYY-MM-DD." };
+    const landDay = has(item, "land_date") && item.land_date ? parseDay(item.land_date) : departDay;
+    if (landDay === null) return { error: "land_date must be YYYY-MM-DD." };
+    if (landDay < departDay) return { error: "land_date must be on or after depart_date." };
+    if (departDay < startDay || landDay > endDay) {
+      return { error: "Every flight must be within the trip dates. Change the trip dates as well if the user wants that." };
+    }
+    for (const field of ["depart_time", "land_time"]) {
+      if (has(item, field) && item[field] && !TIME_OF_DAY.test(String(item[field]))) {
+        return { error: `${field} must be HH:MM.` };
+      }
+    }
+    let toCountry = null;
+    if (has(item, "to_country") && item.to_country) {
+      toCountry = countryCode(item.to_country);
+      if (!toCountry) return { error: "to_country must be a 2 letter ISO code." };
+    }
+    flights.push({
+      from,
+      to,
+      toCountry,
+      departDate: isoDay(departDay),
+      departTime: item?.depart_time ? String(item.depart_time) : null,
+      landDate: isoDay(landDay),
+      landTime: item?.land_time ? String(item.land_time) : null,
+      departDay,
+    });
+  }
+  flights.sort((a, b) => a.departDay - b.departDay || String(a.departTime || "").localeCompare(String(b.departTime || "")));
+  return { flights: flights.map(({ departDay, ...f }) => f) };
+}
+
+function parseArrivals(value, countries, startDay, endDay) {
+  if (!Array.isArray(value)) return { error: "arrivals must be a list." };
+  const out = {};
+  for (const item of value) {
+    const code = countryCode(item?.country);
+    if (!code || !countries.includes(code)) return { error: "Each arrival country must be one of the trip countries." };
+    const day = parseDay(item?.date);
+    if (day === null) return { error: "Each arrival date must be YYYY-MM-DD." };
+    if (day < startDay || day > endDay) return { error: "Arrival dates must be within the trip dates." };
+    out[code] = isoDay(day);
+  }
+  return { arrivals: out };
+}
+
 async function proposeCreateTrip(ctx, input, actions) {
   const trips = await ctx.trips();
   if (trips.length >= MAX_TRIPS) return { error: "The user already has 20 trips, the most allowed. An old trip must be deleted first." };
@@ -1251,6 +1410,18 @@ async function proposeCreateTrip(ctx, input, actions) {
   if (has(input, "purpose") && !TRIP_PURPOSES.includes(input.purpose)) {
     return { error: `purpose must be one of ${TRIP_PURPOSES.join(", ")}.` };
   }
+  let flights = [];
+  if (ctx.tripExtras && has(input, "flights") && input.flights) {
+    const parsed = parseFlights(input.flights, start.day, end.day);
+    if (parsed.error) return parsed;
+    flights = parsed.flights;
+  }
+  let arrivals = {};
+  if (ctx.tripExtras && has(input, "arrivals") && input.arrivals) {
+    const parsed = parseArrivals(input.arrivals, countries, start.day, end.day);
+    if (parsed.error) return parsed;
+    arrivals = parsed.arrivals;
+  }
   const failed = pushAction(actions, {
     type: "trip_add",
     name: name || null,
@@ -1261,6 +1432,8 @@ async function proposeCreateTrip(ctx, input, actions) {
     travellerNames: travellers.names,
     driving: input?.driving === true,
     purpose: has(input, "purpose") ? input.purpose : DEFAULT_TRIP_PURPOSE,
+    ...(flights.length ? { flights } : {}),
+    ...(Object.keys(arrivals).length ? { arrivals } : {}),
   });
   if (failed) return failed;
   return draftReady();
@@ -1312,6 +1485,19 @@ async function proposeUpdateTrip(ctx, input, actions) {
       return { error: `purpose must be one of ${TRIP_PURPOSES.join(", ")}.` };
     }
     if (input.purpose !== trip.purpose) changes.purpose = input.purpose;
+  }
+  if (ctx.tripExtras && has(input, "flights") && Array.isArray(input.flights)) {
+    const parsed = parseFlights(input.flights, startDay, endDay);
+    if (parsed.error) return parsed;
+    changes.flights = parsed.flights;
+  } else if (ctx.tripExtras && (changes.departure || changes.returnDate)) {
+    const outside = trip.flights.some((f) => f.departDay < startDay || f.landDay > endDay);
+    if (outside) return { error: "Some saved flights would fall outside the new dates. Give the full new flights list as well." };
+  }
+  if (ctx.tripExtras && has(input, "arrivals") && Array.isArray(input.arrivals) && input.arrivals.length) {
+    const parsed = parseArrivals(input.arrivals, changes.countries || trip.countries, startDay, endDay);
+    if (parsed.error) return parsed;
+    changes.arrivals = parsed.arrivals;
   }
   if (Object.keys(changes).length === 0) return { error: "Nothing would change." };
   const failed = pushAction(actions, { type: "trip_edit", tripId: trip.id, name: trip.name, changes });
@@ -1410,7 +1596,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false, v4 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1453,6 +1639,11 @@ function staticPrompt(v2, v3 = false, v4 = false) {
       "If the user wants to add a record but gave no expiry date, you may still call propose_record without expiry_date and tell them to pick the date."
     );
   }
+  if (v5) {
+    lines.push(
+      "Flights: when the user mentions flights, add them to propose_create_trip or propose_update_trip as separate legs, with each connection as its own leg (for example Johannesburg to Dubai, then Dubai to Tokyo) and to_country set on every leg. Use the local date at arrival as land_date, so an overnight flight lands the next day. Do not ask for flights before preparing a new trip; after the trip card, offer \"Add my flights\" with suggest_replies. To add or change one flight on a saved trip, call list_trips and send the full new flights list. For trips with several countries, arrivals sets the day the user reaches a country they do not fly into."
+    );
+  }
   lines.push("", APP_GUIDE);
   return lines.join("\n");
 }
@@ -1461,8 +1652,9 @@ const STATIC_PROMPT_V1 = staticPrompt(false);
 const STATIC_PROMPT_V2 = staticPrompt(true);
 const STATIC_PROMPT_V3 = staticPrompt(true, true);
 const STATIC_PROMPT_V4 = staticPrompt(true, true, true);
+const STATIC_PROMPT_V5 = staticPrompt(true, true, true, true);
 
-function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1478,7 +1670,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false) {
   return [
     {
       type: "text",
-      text: v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -1625,6 +1817,7 @@ exports.askVaultara = onCall(
     const v2 = version >= 2;
     const v3 = version >= 3 && intent === "chat";
     const v4 = version >= 4 && intent === "chat";
+    const v5 = version >= 5 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -1648,9 +1841,10 @@ exports.askVaultara = onCall(
     const lang = cleanLanguage(request.data?.locale) || userLanguage(userData);
     const ctx = new UserData(uid, userData);
     const model = str(process.env.ANTHROPIC_MODEL) || DEFAULT_MODEL;
-    const system = systemPrompt(ctx, lang, intent, v2, v3, v4);
-    const tools = v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    ctx.tripExtras = v5;
+    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5);
+    const tools = v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
