@@ -162,8 +162,6 @@ class _RecordTile extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: scheme.onSurface,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 2),
                 Text(
@@ -173,8 +171,6 @@ class _RecordTile extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: scheme.onSurfaceVariant,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
