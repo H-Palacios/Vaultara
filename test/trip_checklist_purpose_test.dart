@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
+import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_purpose.dart';
 import 'package:vaultara/features/travel/logic/trip_checklist.dart';
@@ -69,6 +70,64 @@ void main() {
       final work = TripChecklist.wanted(trip(TripPurpose.work));
       expect(work, isNot(contains(TripChecklistKind.accommodation)));
       expect(work, isNot(contains(TripChecklistKind.studyPermit)));
+    });
+  });
+
+  group('trips at home', () {
+    tearDown(() {
+      NationalityRepository.mine.value = null;
+      NationalityRepository.myResidence.value = null;
+    });
+
+    SavedTrip home(TripPurpose purpose) => SavedTrip(
+          id: 't2',
+          name: 'Durban, South Africa',
+          departure: DateTime(2027, 3, 10),
+          returnDate: DateTime(2027, 3, 24),
+          countries: const <String>['ZA'],
+          needsVisa: true,
+          purpose: purpose,
+          places: const <String>['Durban'],
+        );
+
+    test('a citizen at home gets no passport, visa or permit items', () {
+      NationalityRepository.mine.value = 'ZA';
+      final trip = home(TripPurpose.work);
+      expect(TripChecklist.isDomestic(trip), isTrue);
+      final wanted = TripChecklist.wanted(trip);
+      expect(wanted, contains(TripChecklistKind.idCard));
+      expect(wanted, contains(TripChecklistKind.workContract));
+      for (final kind in [
+        TripChecklistKind.passportPhoto,
+        TripChecklistKind.visa,
+        TripChecklistKind.workPermit,
+        TripChecklistKind.returnTicket,
+      ]) {
+        expect(wanted, isNot(contains(kind)));
+      }
+    });
+
+    test('living there counts as home too', () {
+      NationalityRepository.mine.value = 'ZW';
+      NationalityRepository.myResidence.value = 'ZA';
+      expect(TripChecklist.isDomestic(home(TripPurpose.holiday)), isTrue);
+    });
+
+    test('abroad, or nothing saved, is not home', () {
+      expect(TripChecklist.isDomestic(home(TripPurpose.holiday)), isFalse);
+      NationalityRepository.mine.value = 'ZA';
+      expect(TripChecklist.isDomestic(trip(TripPurpose.holiday)), isFalse);
+    });
+
+    test('the name includes the city', () {
+      expect(
+        SavedTrip.defaultName(const <String>['ZA'], places: const <String>['Durban']),
+        isNot(SavedTrip.defaultName(const <String>['ZA'])),
+      );
+      expect(
+        SavedTrip.placesFromText('Tokyo, osaka ,TOKYO,, Kyoto'),
+        <String>['Tokyo', 'osaka', 'Kyoto'],
+      );
     });
   });
 
