@@ -380,12 +380,46 @@ const SUGGEST_REPLIES = {
   },
 };
 
+const SETTINGS = [
+  "app_lock",
+  "privacy_screen",
+  "block_screenshots",
+  "notifications",
+  "daily_digest",
+  "monthly_summary",
+  "reminder_time",
+];
+// Security settings and notifications are only turned on from the chat.
+// Turning them off stays in the settings screens.
+const ONLY_ON_SETTINGS = new Set(["app_lock", "privacy_screen", "block_screenshots", "notifications"]);
+const TIME_PATTERN = /^([01]\d|2[0-3]):([0-5]\d)$/;
+
+const PROPOSE_SETTING = {
+  name: "propose_setting",
+  description:
+    "Prepare a change to one app setting. This does not change anything; the user confirms a card in the app, and the phone may ask for a fingerprint or for permission. " +
+    "app_lock: fingerprint, face or screen lock to open Vaultara. privacy_screen: hides Vaultara in the recent apps view. block_screenshots: blocks screenshots (Android only). " +
+    "notifications: allows notifications, which reminders need. daily_digest: one daily summary instead of separate reminders. monthly_summary: the monthly email summary. " +
+    "reminder_time: the time of day reminders arrive. app_lock, privacy_screen, block_screenshots and notifications can only be turned on here.",
+  input_schema: {
+    type: "object",
+    properties: {
+      setting: { type: "string", enum: SETTINGS },
+      on: { type: "boolean", description: "true to turn on, false to turn off. Not used for reminder_time." },
+      time: { type: "string", description: "Only for reminder_time: 24-hour time HH:MM, for example 08:30." },
+    },
+    required: ["setting"],
+  },
+};
+
 const TOOLS_V1 = [...READ_TOOLS, PROPOSE_RECORD, PROPOSE_UPDATE_LEGACY];
 const TOOLS_V2 = [...READ_TOOLS, PROPOSE_RECORD, ...ACTION_TOOLS];
 const TOOLS_V3 = [...TOOLS_V2, SUGGEST_REPLIES];
+const TOOLS_V4 = [...TOOLS_V2, PROPOSE_SETTING, SUGGEST_REPLIES];
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
+const NAMES_V4 = new Set(TOOLS_V4.map((t) => t.name));
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -396,6 +430,7 @@ const APP_GUIDE = [
   "- Editing: open the record in Categories and tap it. Record cards also offer Renew (mark as renewed with the new expiry date and cost, kept in the renewal history), a renewal guide with a checklist, sharing as a link, and Delete.",
   "- Deleted records stay in Profile > Recovery Centre for 30 days, where they can be restored or deleted permanently.",
   "- Reminders: the free choices are on the expiry day or 7 days before. Paid plans add 3, 14, 30, 60 or 90 days, custom days, several reminders on one record, and cascade reminders that get more frequent as the deadline nears. The reminder time and the Monthly email summary (sent on the 1st of each month) are in Profile > Notifications.",
+  "- Notifications (Profile > Notifications): Allow notifications (reminders only arrive when the phone allows notifications for Vaultara; turning them off is done in the phone's settings), Reminder time, One daily summary instead of separate reminders, How reminders work, and the Monthly email summary with Send me a sample.",
   "- Repeats (for subscriptions): every 1, 3, 6 or 12 months; the date moves forward by itself when it passes. Renewal takes about: Vaultara starts reminding early enough to renew in time.",
   "- Lock this record: the phone's fingerprint, face or screen lock is needed to see it. You cannot see the name or details of locked records.",
   "- Insights tab: smart insights about what needs attention, the expiry timeline by month, and renewal costs for the next 12 months (paid plans). Insights can be read aloud.",
@@ -1305,6 +1340,33 @@ async function openScreen(ctx, input, actions) {
   return { status: "button_ready", note: "The user sees an Open button under your reply. Reply with one short sentence." };
 }
 
+function proposeSetting(input, actions) {
+  const setting = str(input?.setting);
+  if (!SETTINGS.includes(setting)) return { error: `setting must be one of ${SETTINGS.join(", ")}.` };
+  const action = { type: "setting", setting };
+  if (setting === "reminder_time") {
+    const time = str(input?.time);
+    if (!TIME_PATTERN.test(time)) return { error: "time must be a 24-hour time HH:MM, for example 08:30." };
+    action.time = time;
+  } else {
+    if (typeof input?.on !== "boolean") return { error: "on must be true or false." };
+    if (!input.on && ONLY_ON_SETTINGS.has(setting)) {
+      return {
+        error:
+          "This can only be turned off by the user in the app. Explain where: Profile > Security and privacy for app lock, privacy screen and block screenshots, or the phone's own settings for notifications (Profile > Notifications has a link). Then call open_screen.",
+      };
+    }
+    action.on = input.on;
+  }
+  const failed = pushAction(actions, action);
+  if (failed) return failed;
+  const result = draftReady();
+  if (setting === "app_lock") result.note += " After Confirm the phone asks for the fingerprint, face or screen lock.";
+  if (setting === "notifications") result.note += " After Confirm the phone asks to allow notifications.";
+  if (setting === "block_screenshots") result.note += " This only works on Android phones.";
+  return result;
+}
+
 async function runTool(ctx, name, input, actions, allowed) {
   if (!allowed.has(name)) return { error: "Unknown tool." };
   try {
@@ -1337,6 +1399,8 @@ async function runTool(ctx, name, input, actions, allowed) {
         return await proposeUpdateTrip(ctx, input, actions);
       case "open_screen":
         return await openScreen(ctx, input, actions);
+      case "propose_setting":
+        return proposeSetting(input, actions);
       default:
         return { error: "Unknown tool." };
     }
@@ -1346,7 +1410,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false) {
+function staticPrompt(v2, v3 = false, v4 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1376,6 +1440,13 @@ function staticPrompt(v2, v3 = false) {
         "After a useful answer, call suggest_replies with 2 to 4 next steps the user is likely to want, such as renewing a record that expires soon or setting a reminder. Only suggest things you can do with your tools. Skip it when there is no clear next step."
       );
     }
+    if (v4) {
+      lines.push(
+        "Settings: when the user asks how to turn on or change a setting that propose_setting covers, do it for them: explain in one sentence where it is and call propose_setting so they get a card to confirm. Do not only send them to the screen. App lock, privacy screen, block screenshots and notifications can only be turned on from the chat; to turn them off, explain where it is and call open_screen.",
+        "Reminders: when the user asks how to turn on reminders or why they get none, say that reminders need notifications allowed on the phone and that each record has its own reminder. Offer propose_setting for notifications, and offer to set a reminder on records that have none (list_records, then propose_update_record).",
+        "Study and work trips: Vaultara tracks permits as records in the groups study_permits and work_permits. After preparing a study or work trip, or when checking if the user is ready for one, check for that permit with list_records and offer to add it with propose_record, so Vaultara reminds them before it expires."
+      );
+    }
   } else {
     lines.push(
       "To add a record, call propose_record. To change an expiry date, call propose_update. These only create drafts. Tell the user to check the card and tap Confirm. Never say a record was saved.",
@@ -1389,8 +1460,9 @@ function staticPrompt(v2, v3 = false) {
 const STATIC_PROMPT_V1 = staticPrompt(false);
 const STATIC_PROMPT_V2 = staticPrompt(true);
 const STATIC_PROMPT_V3 = staticPrompt(true, true);
+const STATIC_PROMPT_V4 = staticPrompt(true, true, true);
 
-function systemPrompt(ctx, lang, intent, v2, v3 = false) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1404,7 +1476,11 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false) {
     );
   }
   return [
-    { type: "text", text: v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1, cache_control: { type: "ephemeral" } },
+    {
+      type: "text",
+      text: v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      cache_control: { type: "ephemeral" },
+    },
     { type: "text", text: dynamic.join("\n") },
   ];
 }
@@ -1483,6 +1559,8 @@ async function stepFor(ctx, name, input) {
     }
     case "open_screen":
       return { step: "screen" };
+    case "propose_setting":
+      return { step: "setting" };
     default:
       return null;
   }
@@ -1546,6 +1624,7 @@ exports.askVaultara = onCall(
     const version = Number(request.data?.v) || 1;
     const v2 = version >= 2;
     const v3 = version >= 3 && intent === "chat";
+    const v4 = version >= 4 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -1569,9 +1648,9 @@ exports.askVaultara = onCall(
     const lang = cleanLanguage(request.data?.locale) || userLanguage(userData);
     const ctx = new UserData(uid, userData);
     const model = str(process.env.ANTHROPIC_MODEL) || DEFAULT_MODEL;
-    const system = systemPrompt(ctx, lang, intent, v2, v3);
-    const tools = v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const system = systemPrompt(ctx, lang, intent, v2, v3, v4);
+    const tools = v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
