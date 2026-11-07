@@ -93,6 +93,7 @@ samples, guidance on mobile development, and a full API reference.
 ### Ask Vaultara
 - An AI assistant powered by the Claude API, available on paid plans.
 - Chat or speak, with answers drawn from your own records.
+- Voice input with a live sound wave that follows your voice, the words appearing as you speak, a timer, and Cancel, Done or Send straight away.
 - Can add records from plain words, but always asks before saving anything.
 - Share photos, PDFs and text into Vaultara from other apps.
 - Chat history is kept for 90 days and can be deleted at any time.
