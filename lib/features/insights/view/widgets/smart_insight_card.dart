@@ -299,8 +299,6 @@ class _MoreRow extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       insight.body,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontSize: 12,
                         height: 1.3,
