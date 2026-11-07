@@ -962,7 +962,7 @@
   "travelAtDestination": "Jours à destination : {days}",
   "travelSectionJourney": "Votre voyage",
   "travelFlights": "Vols",
-  "travelFlightsHint": "Ajoutez vos vols pour voir quand vous atterrissez et combien de jours vous y passez.",
+  "travelFlightsHint": "Ajoutez chaque vol, correspondances comprises, pour voir quand vous atterrissez et combien de jours vous y passez.",
   "travelFlightAdd": "Ajouter un vol",
   "travelFlightEdit": "Détails du vol",
   "travelFlightFrom": "De",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "Enregistrez le permis comme document et Vaultara vous préviendra avant son expiration.",
   "visaPermitAdd": "Ajouter le permis",
   "visaPermitRecordStudy": "Permis d'études pour {country}",
-  "visaPermitRecordWork": "Permis de travail pour {country}"
+  "visaPermitRecordWork": "Permis de travail pour {country}",
+  "travelConnectionIn": "Correspondance à {place}",
+  "travelConnectionLong": "Correspondance à {place} : {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Arrivée : {country}"
 }

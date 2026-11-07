@@ -950,7 +950,7 @@
   "travelAtDestination": "Dagen op de bestemming: {days}",
   "travelSectionJourney": "Je reis",
   "travelFlights": "Vluchten",
-  "travelFlightsHint": "Voeg je vluchten toe om te zien wanneer je landt en hoeveel dagen je daar bent.",
+  "travelFlightsHint": "Voeg elke vlucht toe, ook overstappen, om te zien wanneer je landt en hoeveel dagen je daar bent.",
   "travelFlightAdd": "Vlucht toevoegen",
   "travelFlightEdit": "Vluchtgegevens",
   "travelFlightFrom": "Van",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Sla de vergunning op als record en Vaultara herinnert je voordat ze verloopt.",
   "visaPermitAdd": "Vergunning toevoegen",
   "visaPermitRecordStudy": "Studievergunning voor {country}",
-  "visaPermitRecordWork": "Werkvergunning voor {country}"
+  "visaPermitRecordWork": "Werkvergunning voor {country}",
+  "travelConnectionIn": "Overstap in {place}",
+  "travelConnectionLong": "Overstap in {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} u {minutes} min",
+  "travelArriveIn": "Aankomst in {country}"
 }

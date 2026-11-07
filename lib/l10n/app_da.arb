@@ -981,7 +981,7 @@
   "travelAtDestination": "Dage på destinationen: {days}",
   "travelSectionJourney": "Din rejse",
   "travelFlights": "Fly",
-  "travelFlightsHint": "Tilføj dine fly for at se, hvornår du lander, og hvor mange dage du er der.",
+  "travelFlightsHint": "Tilføj hver flyvning, også skift, for at se hvornår du lander, og hvor mange dage du er der.",
   "travelFlightAdd": "Tilføj en flyrejse",
   "travelFlightEdit": "Flyoplysninger",
   "travelFlightFrom": "Fra",
@@ -2088,5 +2088,9 @@
   "visaPermitHint": "Gem tilladelsen som en post, så minder Vaultara dig om den, før den udløber.",
   "visaPermitAdd": "Tilføj tilladelse",
   "visaPermitRecordStudy": "Studietilladelse til {country}",
-  "visaPermitRecordWork": "Arbejdstilladelse til {country}"
+  "visaPermitRecordWork": "Arbejdstilladelse til {country}",
+  "travelConnectionIn": "Skift i {place}",
+  "travelConnectionLong": "Skift i {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} t {minutes} min",
+  "travelArriveIn": "Ankomst til {country}"
 }

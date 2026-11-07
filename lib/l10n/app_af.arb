@@ -988,7 +988,7 @@
   "travelAtDestination": "Dae by jou bestemming: {days}",
   "travelSectionJourney": "Jou reis",
   "travelFlights": "Vlugte",
-  "travelFlightsHint": "Voeg jou vlugte by om te sien wanneer jy land en hoeveel dae jy daar deurbring.",
+  "travelFlightsHint": "Voeg elke vlug by, oorklimme ingesluit, om te sien wanneer jy land en hoeveel dae jy daar is.",
   "travelFlightAdd": "Voeg 'n vlug by",
   "travelFlightEdit": "Vlugbesonderhede",
   "travelFlightFrom": "Van",
@@ -2095,5 +2095,9 @@
   "visaPermitHint": "Stoor die permit as 'n rekord en Vaultara herinner jou voordat dit verval.",
   "visaPermitAdd": "Voeg permit by",
   "visaPermitRecordStudy": "Studiepermit vir {country}",
-  "visaPermitRecordWork": "Werkpermit vir {country}"
+  "visaPermitRecordWork": "Werkpermit vir {country}",
+  "travelConnectionIn": "Oorklim in {place}",
+  "travelConnectionLong": "Oorklim in {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Aankoms in {country}"
 }

@@ -950,7 +950,7 @@
   "travelAtDestination": "ගමනාන්තයේ දින: {days}",
   "travelSectionJourney": "ඔබේ ගමන",
   "travelFlights": "ගුවන් ගමන්",
-  "travelFlightsHint": "ඔබ ගොඩබසින්නේ කවදාද සහ එහි දින කීයක් සිටින්නේදැයි බැලීමට ඔබේ ගුවන් ගමන් එක් කරන්න.",
+  "travelFlightsHint": "ඔබ ගොඩබසින්නේ කවදාද සහ එහි දින කීයක් ගත කරනවාද බැලීමට සම්බන්ධතා ඇතුළුව සෑම ගුවන් ගමනක්ම එක් කරන්න.",
   "travelFlightAdd": "ගුවන් ගමනක් එක් කරන්න",
   "travelFlightEdit": "ගුවන් ගමන් විස්තර",
   "travelFlightFrom": "සිට",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "බලපත්‍රය වාර්තාවක් ලෙස සුරකින්න, කල් ඉකුත් වීමට පෙර Vaultara මතක් කරයි.",
   "visaPermitAdd": "බලපත්‍රය එක් කරන්න",
   "visaPermitRecordStudy": "{country} අධ්‍යයන බලපත්‍රය",
-  "visaPermitRecordWork": "{country} රැකියා බලපත්‍රය"
+  "visaPermitRecordWork": "{country} රැකියා බලපත්‍රය",
+  "travelConnectionIn": "{place} හි සම්බන්ධතාව",
+  "travelConnectionLong": "{place} හි සම්බන්ධතාව: {duration}",
+  "travelDurationHoursMinutes": "පැය {hours} විනාඩි {minutes}",
+  "travelArriveIn": "{country} වෙත පැමිණීම"
 }

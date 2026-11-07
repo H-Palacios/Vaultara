@@ -2440,7 +2440,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get travelFlights => 'Vluchten';
 
   @override
-  String get travelFlightsHint => 'Voeg je vluchten toe om te zien wanneer je landt en hoeveel dagen je daar bent.';
+  String get travelFlightsHint => 'Voeg elke vlucht toe, ook overstappen, om te zien wanneer je landt en hoeveel dagen je daar bent.';
 
   @override
   String get travelFlightAdd => 'Vlucht toevoegen';
@@ -6545,5 +6545,25 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Werkvergunning voor $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Overstap in $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Overstap in $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours u $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Aankomst in $country';
   }
 }

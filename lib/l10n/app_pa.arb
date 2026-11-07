@@ -957,7 +957,7 @@
   "travelAtDestination": "ਮੰਜ਼ਿਲ 'ਤੇ ਦਿਨ: {days}",
   "travelSectionJourney": "ਤੁਹਾਡੀ ਯਾਤਰਾ",
   "travelFlights": "ਉਡਾਣਾਂ",
-  "travelFlightsHint": "ਤੁਸੀਂ ਕਦੋਂ ਉਤਰੋਗੇ ਅਤੇ ਉੱਥੇ ਕਿੰਨੇ ਦਿਨ ਰਹੋਗੇ ਇਹ ਵੇਖਣ ਲਈ ਆਪਣੀਆਂ ਉਡਾਣਾਂ ਸ਼ਾਮਲ ਕਰੋ।",
+  "travelFlightsHint": "ਤੁਸੀਂ ਕਦੋਂ ਉਤਰੋਗੇ ਅਤੇ ਉੱਥੇ ਕਿੰਨੇ ਦਿਨ ਰਹੋਗੇ ਵੇਖਣ ਲਈ ਕਨੈਕਸ਼ਨਾਂ ਸਮੇਤ ਹਰ ਫ਼ਲਾਈਟ ਜੋੜੋ।",
   "travelFlightAdd": "ਉਡਾਣ ਸ਼ਾਮਲ ਕਰੋ",
   "travelFlightEdit": "ਉਡਾਣ ਦੇ ਵੇਰਵੇ",
   "travelFlightFrom": "ਕਿੱਥੋਂ",
@@ -2064,5 +2064,9 @@
   "visaPermitHint": "ਪਰਮਿਟ ਨੂੰ ਰਿਕਾਰਡ ਵਜੋਂ ਸੰਭਾਲੋ, ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Vaultara ਯਾਦ ਕਰਾਏਗਾ।",
   "visaPermitAdd": "ਪਰਮਿਟ ਜੋੜੋ",
   "visaPermitRecordStudy": "{country} ਲਈ ਸਟੱਡੀ ਪਰਮਿਟ",
-  "visaPermitRecordWork": "{country} ਲਈ ਵਰਕ ਪਰਮਿਟ"
+  "visaPermitRecordWork": "{country} ਲਈ ਵਰਕ ਪਰਮਿਟ",
+  "travelConnectionIn": "{place} ਵਿੱਚ ਕਨੈਕਸ਼ਨ",
+  "travelConnectionLong": "{place} ਵਿੱਚ ਕਨੈਕਸ਼ਨ: {duration}",
+  "travelDurationHoursMinutes": "{hours} ਘੰ {minutes} ਮਿੰ",
+  "travelArriveIn": "{country} ਪਹੁੰਚਣਾ"
 }

@@ -2440,7 +2440,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get travelFlights => 'Duullimaadyada';
 
   @override
-  String get travelFlightsHint => 'Ku dar duullimaadyadaada si aad u aragto goorta aad degayso iyo inta maalmood ee aad joogayso.';
+  String get travelFlightsHint => 'Ku dar duulimaad kasta, oo ay ku jiraan isku-xirkuhu, si aad u aragto goorta aad degto iyo inta maalmood ee aad joogto.';
 
   @override
   String get travelFlightAdd => 'Ku dar duullimaad';
@@ -6544,5 +6544,25 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Oggolaansho shaqo $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Isku-xirka $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Isku-xirka $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours s $minutes d';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Imaatinka $country';
   }
 }

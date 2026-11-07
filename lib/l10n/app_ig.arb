@@ -955,7 +955,7 @@
   "travelAtDestination": "Ụbọchị n'ebe ị na-aga: {days}",
   "travelSectionJourney": "Njem gị",
   "travelFlights": "Ụgbọelu",
-  "travelFlightsHint": "Tinye ụgbọ elu gị ka ị hụ mgbe ị ga-ada na ụbọchị ole ị ga-anọ n’ebe ahụ.",
+  "travelFlightsHint": "Tinye ụgbọ elu ọ bụla, gụnyere njikọ, ka ị hụ mgbe ị ga-ada na ụbọchị ole ị ga-anọ ebe ahụ.",
   "travelFlightAdd": "Tinye ụgbọelu",
   "travelFlightEdit": "Nkọwa ụgbọelu",
   "travelFlightFrom": "Site na",
@@ -2062,5 +2062,9 @@
   "visaPermitHint": "Chekwaa ikike ahụ dịka ndekọ, Vaultara ga-echetara gị tupu ọ gwụ.",
   "visaPermitAdd": "Tinye ikike",
   "visaPermitRecordStudy": "Ikike ọmụmụ maka {country}",
-  "visaPermitRecordWork": "Ikike ọrụ maka {country}"
+  "visaPermitRecordWork": "Ikike ọrụ maka {country}",
+  "travelConnectionIn": "Njikọ na {place}",
+  "travelConnectionLong": "Njikọ na {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} awa {minutes} nkeji",
+  "travelArriveIn": "Ịbịarute {country}"
 }

@@ -2439,7 +2439,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get travelFlights => '航班';
 
   @override
-  String get travelFlightsHint => '添加航班，即可看到你何时降落以及在当地停留几天。';
+  String get travelFlightsHint => '添加每一段航班（包括转机），即可看到你何时落地以及在当地停留几天。';
 
   @override
   String get travelFlightAdd => '添加航班';
@@ -6494,6 +6494,26 @@ class AppLocalizationsZh extends AppLocalizations {
   String visaPermitRecordWork(String country) {
     return '$country工作许可';
   }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '在$place转机';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '在$place转机：$duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours小时$minutes分钟';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '抵达$country';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -8919,7 +8939,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get travelFlights => '航班';
 
   @override
-  String get travelFlightsHint => '添加航班，即可看到你何时降落以及在当地停留几天。';
+  String get travelFlightsHint => '添加每一段航班（包括转机），即可看到你何时落地以及在当地停留几天。';
 
   @override
   String get travelFlightAdd => '添加航班';
@@ -12974,6 +12994,26 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String visaPermitRecordWork(String country) {
     return '$country工作许可';
   }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '在$place转机';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '在$place转机：$duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours小时$minutes分钟';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '抵达$country';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -15399,7 +15439,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get travelFlights => '航班';
 
   @override
-  String get travelFlightsHint => '新增航班，即可看到你何時降落以及在當地停留幾天。';
+  String get travelFlightsHint => '新增每一段航班（包括轉機），即可看到你何時落地以及在當地停留幾天。';
 
   @override
   String get travelFlightAdd => '新增航班';
@@ -19453,5 +19493,25 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String visaPermitRecordWork(String country) {
     return '$country工作許可';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return '在$place轉機';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return '在$place轉機：$duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours小時$minutes分鐘';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return '抵達$country';
   }
 }

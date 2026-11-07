@@ -2439,7 +2439,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get travelFlights => 'Penerbangan';
 
   @override
-  String get travelFlightsHint => 'Tambah penerbangan anda untuk melihat bila anda mendarat dan berapa hari anda di sana.';
+  String get travelFlightsHint => 'Tambah setiap penerbangan, termasuk transit, untuk melihat bila anda mendarat dan berapa hari anda di sana.';
 
   @override
   String get travelFlightAdd => 'Tambah penerbangan';
@@ -6493,5 +6493,25 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Permit kerja untuk $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Transit di $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Transit di $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours j $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Tiba di $country';
   }
 }

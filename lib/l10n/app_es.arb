@@ -957,7 +957,7 @@
   "travelAtDestination": "Días en el destino: {days}",
   "travelSectionJourney": "Tu viaje",
   "travelFlights": "Vuelos",
-  "travelFlightsHint": "Añade tus vuelos para ver cuándo aterrizas y cuántos días pasas allí.",
+  "travelFlightsHint": "Añade cada vuelo, escalas incluidas, para ver cuándo aterrizas y cuántos días pasas allí.",
   "travelFlightAdd": "Añadir un vuelo",
   "travelFlightEdit": "Detalles del vuelo",
   "travelFlightFrom": "Desde",
@@ -2064,5 +2064,9 @@
   "visaPermitHint": "Guarda el permiso como registro y Vaultara te avisará antes de que caduque.",
   "visaPermitAdd": "Añadir permiso",
   "visaPermitRecordStudy": "Permiso de estudios para {country}",
-  "visaPermitRecordWork": "Permiso de trabajo para {country}"
+  "visaPermitRecordWork": "Permiso de trabajo para {country}",
+  "travelConnectionIn": "Escala en {place}",
+  "travelConnectionLong": "Escala en {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} h {minutes} min",
+  "travelArriveIn": "Llegada a {country}"
 }

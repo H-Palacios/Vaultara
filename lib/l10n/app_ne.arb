@@ -950,7 +950,7 @@
   "travelAtDestination": "गन्तव्यमा दिनहरू: {days}",
   "travelSectionJourney": "तपाईंको यात्रा",
   "travelFlights": "उडानहरू",
-  "travelFlightsHint": "तपाईं कहिले अवतरण गर्नुहुन्छ र त्यहाँ कति दिन बस्नुहुन्छ भन्ने हेर्न आफ्ना उडानहरू थप्नुहोस्।",
+  "travelFlightsHint": "तपाईं कहिले अवतरण गर्नुहुन्छ र त्यहाँ कति दिन बस्नुहुन्छ हेर्न कनेक्सनसहित हरेक उडान थप्नुहोस्।",
   "travelFlightAdd": "उडान थप्नुहोस्",
   "travelFlightEdit": "उडानको विवरण",
   "travelFlightFrom": "कहाँबाट",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "अनुमतिलाई रेकर्डका रूपमा सुरक्षित गर्नुहोस्, सकिनुअघि Vaultara ले सम्झाउँछ।",
   "visaPermitAdd": "अनुमति थप्नुहोस्",
   "visaPermitRecordStudy": "{country} को अध्ययन अनुमति",
-  "visaPermitRecordWork": "{country} को कार्य अनुमति"
+  "visaPermitRecordWork": "{country} को कार्य अनुमति",
+  "travelConnectionIn": "{place} मा कनेक्सन",
+  "travelConnectionLong": "{place} मा कनेक्सन: {duration}",
+  "travelDurationHoursMinutes": "{hours} घ {minutes} मि",
+  "travelArriveIn": "{country} पुग्ने"
 }

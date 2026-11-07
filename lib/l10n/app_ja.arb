@@ -962,7 +962,7 @@
   "travelAtDestination": "現地での日数：{days}",
   "travelSectionJourney": "旅程",
   "travelFlights": "フライト",
-  "travelFlightsHint": "フライトを追加すると、到着日と現地での滞在日数がわかります。",
+  "travelFlightsHint": "乗り継ぎを含めてすべての便を追加すると、到着日と滞在日数がわかります。",
   "travelFlightAdd": "フライトを追加",
   "travelFlightEdit": "フライトの詳細",
   "travelFlightFrom": "出発地",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "許可を記録として保存すると、期限切れの前に Vaultara がお知らせします。",
   "visaPermitAdd": "許可を追加",
   "visaPermitRecordStudy": "{country}の就学許可",
-  "visaPermitRecordWork": "{country}の就労許可"
+  "visaPermitRecordWork": "{country}の就労許可",
+  "travelConnectionIn": "{place}で乗り継ぎ",
+  "travelConnectionLong": "{place}で乗り継ぎ：{duration}",
+  "travelDurationHoursMinutes": "{hours}時間{minutes}分",
+  "travelArriveIn": "{country}に到着"
 }

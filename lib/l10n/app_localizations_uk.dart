@@ -2470,7 +2470,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get travelFlights => 'Перельоти';
 
   @override
-  String get travelFlightsHint => 'Додайте перельоти, щоб побачити, коли ви приземлитесь і скільки днів там пробудете.';
+  String get travelFlightsHint => 'Додайте кожен рейс, включно з пересадками, щоб бачити, коли ви прилітаєте і скільки днів там проводите.';
 
   @override
   String get travelFlightAdd => 'Додати переліт';
@@ -6685,5 +6685,25 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Дозвіл на роботу: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Пересадка: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Пересадка: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours год $minutes хв';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Прибуття: $country';
   }
 }

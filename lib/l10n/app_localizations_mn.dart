@@ -2439,7 +2439,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get travelFlights => 'Нислэгүүд';
 
   @override
-  String get travelFlightsHint => 'Хэзээ буухаа болон тэнд хэд хоносоноо харахын тулд нислэгээ нэмнэ үү.';
+  String get travelFlightsHint => 'Хэзээ буухыг болон тэнд хэдэн өдөр байхыг харахын тулд дамжих нислэгийг оролцуулан нислэг бүрийг нэмнэ үү.';
 
   @override
   String get travelFlightAdd => 'Нислэг нэмэх';
@@ -6535,5 +6535,25 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return '$country ажлын зөвшөөрөл';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Дамжин өнгөрөх: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Дамжин өнгөрөх: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours ц $minutes мин';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Ирэх: $country';
   }
 }

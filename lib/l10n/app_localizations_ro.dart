@@ -2457,7 +2457,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get travelFlights => 'Zboruri';
 
   @override
-  String get travelFlightsHint => 'Adaugă zborurile tale ca să vezi când aterizezi și câte zile stai acolo.';
+  String get travelFlightsHint => 'Adaugă fiecare zbor, inclusiv escalele, ca să vezi când aterizezi și câte zile petreci acolo.';
 
   @override
   String get travelFlightAdd => 'Adaugă un zbor';
@@ -6617,5 +6617,25 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Permis de muncă pentru $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Escală în $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Escală în $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Sosire: $country';
   }
 }

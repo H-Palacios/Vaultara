@@ -950,7 +950,7 @@
   "travelAtDestination": "په منزل کې ورځې: {days}",
   "travelSectionJourney": "ستاسو سفر",
   "travelFlights": "الوتنې",
-  "travelFlightsHint": "خپلې الوتنې اضافه کړئ چې وګورئ کله کېنئ او هلته څو ورځې یاست.",
+  "travelFlightsHint": "هره الوتنه، د نښلونو په ګډون، اضافه کړئ ترڅو وګورئ کله کښته کېږئ او څو ورځې هلته یاست.",
   "travelFlightAdd": "الوتنه اضافه کړئ",
   "travelFlightEdit": "د الوتنې جزئیات",
   "travelFlightFrom": "له",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "جواز د ریکارډ په توګه خوندي کړئ، Vaultara به مو د پای ته رسېدو مخکې خبر کړي.",
   "visaPermitAdd": "جواز اضافه کړئ",
   "visaPermitRecordStudy": "د {country} لپاره د زده کړې جواز",
-  "visaPermitRecordWork": "د {country} لپاره د کار جواز"
+  "visaPermitRecordWork": "د {country} لپاره د کار جواز",
+  "travelConnectionIn": "په {place} کې نښلول",
+  "travelConnectionLong": "په {place} کې نښلول: {duration}",
+  "travelDurationHoursMinutes": "{hours} ساعته {minutes} دقیقې",
+  "travelArriveIn": "{country} ته رسېدل"
 }

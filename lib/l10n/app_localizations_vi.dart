@@ -2439,7 +2439,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get travelFlights => 'Chuyến bay';
 
   @override
-  String get travelFlightsHint => 'Thêm các chuyến bay để xem bạn hạ cánh khi nào và ở đó bao nhiêu ngày.';
+  String get travelFlightsHint => 'Thêm từng chuyến bay, kể cả chuyến nối, để xem khi nào bạn hạ cánh và ở đó bao nhiêu ngày.';
 
   @override
   String get travelFlightAdd => 'Thêm chuyến bay';
@@ -6493,5 +6493,25 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Giấy phép lao động $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Nối chuyến tại $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Nối chuyến tại $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours giờ $minutes phút';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Đến $country';
   }
 }

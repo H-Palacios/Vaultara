@@ -700,7 +700,7 @@
   "travelAtDestination": "गंतव्यस्थळी दिवस: {days}",
   "travelSectionJourney": "तुमचा प्रवास",
   "travelFlights": "विमानसेवा",
-  "travelFlightsHint": "तुम्ही कधी उतरता आणि तिथे किती दिवस राहता हे पाहण्यासाठी तुमची विमान प्रवास माहिती जोडा.",
+  "travelFlightsHint": "तुम्ही कधी उतरता आणि तिथे किती दिवस राहता हे पाहण्यासाठी कनेक्शनसह प्रत्येक फ्लाइट जोडा.",
   "travelFlightAdd": "विमान प्रवास जोडा",
   "travelFlightEdit": "विमान प्रवासाचा तपशील",
   "travelFlightFrom": "कुठून",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "परमिट रेकॉर्ड म्हणून जतन करा, ते संपण्यापूर्वी Vaultara आठवण करून देईल.",
   "visaPermitAdd": "परमिट जोडा",
   "visaPermitRecordStudy": "{country} साठी स्टडी परमिट",
-  "visaPermitRecordWork": "{country} साठी वर्क परमिट"
+  "visaPermitRecordWork": "{country} साठी वर्क परमिट",
+  "travelConnectionIn": "{place} येथे कनेक्शन",
+  "travelConnectionLong": "{place} येथे कनेक्शन: {duration}",
+  "travelDurationHoursMinutes": "{hours} ता {minutes} मि",
+  "travelArriveIn": "{country} येथे पोहोचणे"
 }

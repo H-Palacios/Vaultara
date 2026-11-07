@@ -2479,7 +2479,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get travelFlights => 'الرحلات الجوية';
 
   @override
-  String get travelFlightsHint => 'أضف رحلاتك لمعرفة موعد هبوطك وعدد الأيام التي ستقضيها هناك.';
+  String get travelFlightsHint => 'أضف كل رحلة، بما فيها رحلات الترانزيت، لترى متى تهبط وكم يومًا تقضي هناك.';
 
   @override
   String get travelFlightAdd => 'إضافة رحلة جوية';
@@ -6748,5 +6748,25 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'تصريح عمل في $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'توقف في $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'توقف في $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours س $minutes د';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'الوصول إلى $country';
   }
 }

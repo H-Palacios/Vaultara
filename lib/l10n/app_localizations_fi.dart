@@ -2440,7 +2440,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get travelFlights => 'Lennot';
 
   @override
-  String get travelFlightsHint => 'Lisää lentosi nähdäksesi, milloin laskeudut ja montako päivää olet perillä.';
+  String get travelFlightsHint => 'Lisää jokainen lento, vaihdot mukaan lukien, niin näet milloin laskeudut ja montako päivää olet perillä.';
 
   @override
   String get travelFlightAdd => 'Lisää lento';
@@ -6545,5 +6545,25 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Työlupa: $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Vaihto: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Vaihto: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Saapuminen: $country';
   }
 }

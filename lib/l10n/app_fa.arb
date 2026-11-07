@@ -962,7 +962,7 @@
   "travelAtDestination": "روزها در مقصد: {days}",
   "travelSectionJourney": "سفر شما",
   "travelFlights": "پروازها",
-  "travelFlightsHint": "پروازهای خود را اضافه کنید تا ببینید کی فرود می‌آیید و چند روز آنجا می‌مانید.",
+  "travelFlightsHint": "هر پرواز، همراه با پروازهای اتصالی، را اضافه کنید تا ببینید کی فرود می‌آیید و چند روز آنجا هستید.",
   "travelFlightAdd": "افزودن پرواز",
   "travelFlightEdit": "جزئیات پرواز",
   "travelFlightFrom": "از",
@@ -2069,5 +2069,9 @@
   "visaPermitHint": "مجوز را به‌صورت سابقه ذخیره کنید تا Vaultara پیش از انقضا یادآوری کند.",
   "visaPermitAdd": "افزودن مجوز",
   "visaPermitRecordStudy": "مجوز تحصیل برای {country}",
-  "visaPermitRecordWork": "مجوز کار برای {country}"
+  "visaPermitRecordWork": "مجوز کار برای {country}",
+  "travelConnectionIn": "توقف در {place}",
+  "travelConnectionLong": "توقف در {place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ساعت {minutes} دقیقه",
+  "travelArriveIn": "رسیدن به {country}"
 }

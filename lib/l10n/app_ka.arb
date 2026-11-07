@@ -968,7 +968,7 @@
   "travelAtDestination": "დღეები დანიშნულების ადგილას: {days}",
   "travelSectionJourney": "თქვენი მოგზაურობა",
   "travelFlights": "ფრენები",
-  "travelFlightsHint": "დაამატეთ თქვენი ფრენები, რომ ნახოთ როდის დაეშვებით და რამდენ დღეს დაჰყოფთ იქ.",
+  "travelFlightsHint": "დაამატეთ ყველა ფრენა, გადაჯდომების ჩათვლით, რომ ნახოთ როდის დაეშვებით და რამდენ დღეს დარჩებით.",
   "travelFlightAdd": "ფრენის დამატება",
   "travelFlightEdit": "ფრენის დეტალები",
   "travelFlightFrom": "საიდან",
@@ -2075,5 +2075,9 @@
   "visaPermitHint": "შეინახეთ ნებართვა ჩანაწერად და Vaultara ვადის გასვლამდე შეგახსენებთ.",
   "visaPermitAdd": "ნებართვის დამატება",
   "visaPermitRecordStudy": "სასწავლო ნებართვა: {country}",
-  "visaPermitRecordWork": "სამუშაო ნებართვა: {country}"
+  "visaPermitRecordWork": "სამუშაო ნებართვა: {country}",
+  "travelConnectionIn": "გადაჯდომა: {place}",
+  "travelConnectionLong": "გადაჯდომა: {place}, {duration}",
+  "travelDurationHoursMinutes": "{hours} სთ {minutes} წთ",
+  "travelArriveIn": "ჩასვლა: {country}"
 }

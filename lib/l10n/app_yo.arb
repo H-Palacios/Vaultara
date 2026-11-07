@@ -950,7 +950,7 @@
   "travelAtDestination": "Ọjọ́ ní ibi tí ń lọ: {days}",
   "travelSectionJourney": "Ìrìn àjò rẹ",
   "travelFlights": "Àwọn ọkọ̀ òfurufú",
-  "travelFlightsHint": "Fi àwọn ọkọ̀ òfurufú rẹ kún un láti rí ìgbà tí o máa balẹ̀ àti iye ọjọ́ tí o máa wà níbẹ̀.",
+  "travelFlightsHint": "Ṣàfikún ọkọ̀ òfurufú kọ̀ọ̀kan, pẹ̀lú àwọn ìsopọ̀, láti rí ìgbà tí o máa balẹ̀ àti iye ọjọ́ tí o máa lò níbẹ̀.",
   "travelFlightAdd": "Fi ọkọ̀ òfurufú kún un",
   "travelFlightEdit": "Àlàyé ọkọ̀ òfurufú",
   "travelFlightFrom": "Láti",
@@ -2057,5 +2057,9 @@
   "visaPermitHint": "Fi ìyọ̀ǹda pamọ́ bí àkọsílẹ̀, Vaultara yóò rán ọ létí kí ó tó parí.",
   "visaPermitAdd": "Ṣàfikún ìyọ̀ǹda",
   "visaPermitRecordStudy": "Ìyọ̀ǹda ẹ̀kọ́ fún {country}",
-  "visaPermitRecordWork": "Ìyọ̀ǹda iṣẹ́ fún {country}"
+  "visaPermitRecordWork": "Ìyọ̀ǹda iṣẹ́ fún {country}",
+  "travelConnectionIn": "Ìsopọ̀ ní {place}",
+  "travelConnectionLong": "Ìsopọ̀ ní {place}: {duration}",
+  "travelDurationHoursMinutes": "Wákàtí {hours} ìṣẹ́jú {minutes}",
+  "travelArriveIn": "Dídé sí {country}"
 }

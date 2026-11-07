@@ -2440,7 +2440,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get travelFlights => 'Fluturime';
 
   @override
-  String get travelFlightsHint => 'Shto fluturimet e tua për të parë kur ulesh dhe sa ditë qëndron atje.';
+  String get travelFlightsHint => 'Shto çdo fluturim, përfshirë ndërlidhjet, për të parë kur ulesh dhe sa ditë qëndron atje.';
 
   @override
   String get travelFlightAdd => 'Shto një fluturim';
@@ -6545,5 +6545,25 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Leje pune për $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Ndërlidhje në $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Ndërlidhje në $place: $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours orë $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Mbërritja: $country';
   }
 }

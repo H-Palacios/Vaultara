@@ -955,7 +955,7 @@
   "travelAtDestination": "ימים ביעד: {days}",
   "travelSectionJourney": "הנסיעה שלך",
   "travelFlights": "טיסות",
-  "travelFlightsHint": "הוסיפו את הטיסות שלכם כדי לראות מתי תנחתו וכמה ימים תהיו שם.",
+  "travelFlightsHint": "הוסיפו כל טיסה, כולל טיסות המשך, כדי לראות מתי נוחתים וכמה ימים שוהים שם.",
   "travelFlightAdd": "הוספת טיסה",
   "travelFlightEdit": "פרטי הטיסה",
   "travelFlightFrom": "מ",
@@ -2062,5 +2062,9 @@
   "visaPermitHint": "שמור/י את האישור כרשומה ו-Vaultara יזכיר לך לפני שהוא פג.",
   "visaPermitAdd": "הוספת אישור",
   "visaPermitRecordStudy": "אישור לימודים ל{country}",
-  "visaPermitRecordWork": "אישור עבודה ל{country}"
+  "visaPermitRecordWork": "אישור עבודה ל{country}",
+  "travelConnectionIn": "קונקשן ב{place}",
+  "travelConnectionLong": "קונקשן ב{place}: {duration}",
+  "travelDurationHoursMinutes": "{hours} ש׳ {minutes} ד׳",
+  "travelArriveIn": "הגעה ל{country}"
 }

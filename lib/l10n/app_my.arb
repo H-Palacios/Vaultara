@@ -700,7 +700,7 @@
   "travelAtDestination": "ခရီးဆုံးတွင်ရက်များ - {days}",
   "travelSectionJourney": "သင့်ခရီး",
   "travelFlights": "လေယာဉ်ခရီးစဉ်များ",
-  "travelFlightsHint": "မည်သည့်အချိန်ဆင်းသက်မည်နှင့် ထိုနေရာတွင် ရက်မည်မျှနေမည်ကိုကြည့်ရန် သင့်လေယာဉ်ခရီးစဉ်များ ထည့်ပါ။",
+  "travelFlightsHint": "ဆင်းသက်မည့်အချိန်နှင့် နေမည့်ရက်ကို ကြည့်ရန် လေယာဉ်ပြောင်းခြင်းအပါအဝင် ခရီးစဉ်တိုင်းကို ထည့်ပါ။",
   "travelFlightAdd": "လေယာဉ်ခရီးစဉ်ထည့်ရန်",
   "travelFlightEdit": "လေယာဉ်ခရီးစဉ်အသေးစိတ်",
   "travelFlightFrom": "မှ",
@@ -1807,5 +1807,9 @@
   "visaPermitHint": "ခွင့်ပြုချက်ကို မှတ်တမ်းအဖြစ် သိမ်းပါ၊ မကုန်ဆုံးမီ Vaultara က သတိပေးပါမည်။",
   "visaPermitAdd": "ခွင့်ပြုချက် ထည့်ရန်",
   "visaPermitRecordStudy": "{country} အတွက် ပညာသင်ခွင့်ပြုချက်",
-  "visaPermitRecordWork": "{country} အတွက် အလုပ်ခွင့်ပြုချက်"
+  "visaPermitRecordWork": "{country} အတွက် အလုပ်ခွင့်ပြုချက်",
+  "travelConnectionIn": "{place} တွင် လေယာဉ်ပြောင်း",
+  "travelConnectionLong": "{place} တွင် လေယာဉ်ပြောင်း- {duration}",
+  "travelDurationHoursMinutes": "{hours} နာရီ {minutes} မိနစ်",
+  "travelArriveIn": "{country} သို့ ရောက်ရှိ"
 }

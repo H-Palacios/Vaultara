@@ -2440,7 +2440,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get travelFlights => 'Lennud';
 
   @override
-  String get travelFlightsHint => 'Lisa oma lennud, et näha, millal maandud ja mitu päeva seal oled.';
+  String get travelFlightsHint => 'Lisa iga lend koos ümberistumistega, et näha, millal maandud ja mitu päeva seal oled.';
 
   @override
   String get travelFlightAdd => 'Lisa lend';
@@ -6545,5 +6545,25 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String visaPermitRecordWork(String country) {
     return 'Tööluba riiki $country';
+  }
+
+  @override
+  String travelConnectionIn(String place) {
+    return 'Ümberistumine: $place';
+  }
+
+  @override
+  String travelConnectionLong(String place, String duration) {
+    return 'Ümberistumine: $place, $duration';
+  }
+
+  @override
+  String travelDurationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String travelArriveIn(String country) {
+    return 'Saabumine: $country';
   }
 }
