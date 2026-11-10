@@ -40,10 +40,7 @@ class ItemLifecycleManager {
     return result;
   }
 
-  static int totalItemsForGroup(
-    String categoryKey,
-    String groupKey,
-  ) {
+  static int totalItemsForGroup(String categoryKey, String groupKey) {
     return getItemsForGroup(categoryKey, groupKey).length;
   }
 
@@ -61,10 +58,7 @@ class ItemLifecycleManager {
     return total;
   }
 
-  static int expiringSoonForGroup(
-    String categoryKey,
-    String subcategoryKey,
-  ) {
+  static int expiringSoonForGroup(String categoryKey, String subcategoryKey) {
     final items = getItemsForGroup(categoryKey, subcategoryKey);
 
     final today = DateUtils.dateOnly(DateTime.now());
@@ -102,6 +96,27 @@ class ItemLifecycleManager {
       }
     }
 
+    return count;
+  }
+
+  static int expiredForGroup(String categoryKey, String groupKey) {
+    final today = DateUtils.dateOnly(DateTime.now());
+    return getItemsForGroup(categoryKey, groupKey)
+        .where((item) => DateUtils.dateOnly(item.expiryDate).isBefore(today))
+        .length;
+  }
+
+  static int expiredForCategory(String categoryKey) {
+    final byCategory = RecordRepository.storeSnapshot[categoryKey];
+    if (byCategory == null) return 0;
+
+    final today = DateUtils.dateOnly(DateTime.now());
+    var count = 0;
+    for (final list in byCategory.values) {
+      for (final item in list) {
+        if (DateUtils.dateOnly(item.expiryDate).isBefore(today)) count++;
+      }
+    }
     return count;
   }
 }
