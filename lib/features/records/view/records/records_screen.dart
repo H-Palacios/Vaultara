@@ -8,8 +8,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
+import 'package:vaultara/core/data/category_resolver.dart';
+import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 import 'package:vaultara/core/data/models/category_item.dart';
-import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/search/text_search.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -22,12 +23,14 @@ import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/core/view/widgets/confirm_soft_delete_dialog.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
-import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
+import 'package:vaultara/features/records/view/widgets/person_filter_chips.dart';
 
 import '../../data/enums/record_editor_mode.dart';
+import '../../logic/record_sections.dart';
 import '../../logic/record_status.dart';
 import '../record_editor_sheet.dart';
 import 'widgets/record_card.dart';
+import 'widgets/move_records_sheet.dart';
 import 'widgets/record_notes_dialog.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
@@ -59,18 +62,34 @@ class RecordsScreen extends StatefulWidget {
   State<RecordsScreen> createState() => _RecordsScreenState();
 }
 
+enum _RecordsMenu { sortExpiry, sortName, select }
+
 class _RecordsScreenState extends State<RecordsScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   String _userFirstName = '';
   Stream<QuerySnapshot<Map<String, dynamic>>>? _stream;
 
+  /// Opened from search to show one record. "Show all" clears it.
+  String? _focusId;
+
+  bool _sortByName = false;
+
+  /// Null for everyone, PersonFilterChips.me, or a person's id.
+  String? _person;
+
+  bool _selecting = false;
+  final Set<String> _selected = <String>{};
+
   @override
   void initState() {
     super.initState();
 
+    _focusId = widget.focusRecordId;
     final initial = widget.initialSearch?.trim() ?? '';
-    if (initial.isNotEmpty) _searchController.text = initial;
+    if (initial.isNotEmpty && _focusId == null) {
+      _searchController.text = initial;
+    }
 
     DayClock.init();
     DayClock.day.addListener(_onDayChanged);
@@ -112,7 +131,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
     );
   }
 
-  void _openAddRecordSheet() {
+  void _openAddRecordSheet({bool scan = false}) {
     if (!RecordRepository.canAddRecord(isPremium: widget.isPremium)) {
       _showLimitReached();
       return;
@@ -124,6 +143,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
       isPremium: widget.isPremium,
       categoryKey: widget.category.key,
       subcategoryKey: widget.groupKey,
+      autoScan: scan,
       onExistingUpdated: () {
         if (mounted) setState(() {});
       },
@@ -238,14 +258,180 @@ class _RecordsScreenState extends State<RecordsScreen> {
     setState(() {});
   }
 
-  Future<void> _openRecentlyDeleted() async {
-    final changed = await Navigator.push<bool>(
-      context,
-      MaterialPageRoute(
-        builder: (_) => const RecentlyDeletedScreen(initialTabIndex: 2),
+  void _startSelecting(TrackedItem record) {
+    final id = record.id;
+    if (id == null) return;
+    setState(() {
+      _selecting = true;
+      _selected
+        ..clear()
+        ..add(id);
+    });
+  }
+
+  void _toggleSelected(TrackedItem record) {
+    final id = record.id;
+    if (id == null) return;
+    setState(() {
+      if (!_selected.remove(id)) _selected.add(id);
+      if (_selected.isEmpty) _selecting = false;
+    });
+  }
+
+  void _stopSelecting() {
+    setState(() {
+      _selecting = false;
+      _selected.clear();
+    });
+  }
+
+  /// The chosen records that this user may change. Locked records need one
+  /// fingerprint or screen lock for the whole batch.
+  Future<List<TrackedItem>?> _editableSelection(List<TrackedItem> shown) async {
+    final loc = AppLocalizations.of(context)!;
+    final chosen = [
+      for (final r in shown)
+        if (r.id != null && _selected.contains(r.id)) r,
+    ];
+    final editable = chosen.where((r) => RecordRepository.canEdit(r)).toList();
+
+    if (editable.any((r) => r.locked)) {
+      final ok = await RecordLock.confirmDevice(context);
+      if (!ok) return null;
+    }
+    if (editable.length < chosen.length && mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.householdReadOnly,
+        icon: Icons.lock_outline_rounded,
+      );
+    }
+    return editable;
+  }
+
+  Future<void> _deleteSelected(List<TrackedItem> shown) async {
+    final loc = AppLocalizations.of(context)!;
+    final records = await _editableSelection(shown);
+    if (records == null || records.isEmpty || !mounted) return;
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(loc.recordsDeleteManyTitle(records.length)),
+        content: Text(loc.recordsDeleteManyBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(loc.cancel),
+          ),
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Theme.of(dialogContext).colorScheme.error,
+            ),
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(loc.delete),
+          ),
+        ],
       ),
     );
-    if (changed == true && mounted) setState(() {});
+    if (confirmed != true) return;
+
+    for (final record in records) {
+      await RecordRepository.softDeleteRecord(record);
+    }
+
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      loc.recordsDeletedMany(records.length),
+    );
+    _stopSelecting();
+  }
+
+  Future<void> _moveSelected(List<TrackedItem> shown) async {
+    final loc = AppLocalizations.of(context)!;
+    final records = await _editableSelection(shown);
+    if (records == null || records.isEmpty || !mounted) return;
+
+    final target = await MoveRecordsSheet.show(
+      context,
+      fromCategoryKey: widget.category.key,
+      fromGroupKey: widget.groupKey,
+    );
+    if (target == null) return;
+
+    for (final record in records) {
+      await RecordRepository.updateRecord(
+        record,
+        record.copyWith(
+          categoryKey: target.categoryKey,
+          categoryLabel: target.categoryLabel,
+          subcategoryName: target.groupKey,
+        ),
+      );
+    }
+
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      loc.recordsMoved(records.length),
+      icon: Icons.drive_file_move_rounded,
+    );
+    _stopSelecting();
+  }
+
+  String _sectionTitle(AppLocalizations loc, RecordSection section) {
+    switch (section) {
+      case RecordSection.expired:
+        return loc.statusExpired;
+      case RecordSection.soon:
+        return loc.recordsSectionSoon;
+      case RecordSection.valid:
+        return loc.statusValid;
+    }
+  }
+
+  Widget _recordCard(TrackedItem record, AppLocalizations loc) {
+    final notes = record.notes?.trim() ?? '';
+    final id = record.id;
+
+    return RecordCard(
+      record: record,
+      status: RecordStatus.of(record, loc),
+      selecting: _selecting,
+      selected: id != null && _selected.contains(id),
+      onLongPress: _selecting ? null : () => _startSelecting(record),
+      onToggleSelect: () => _toggleSelected(record),
+      onEdit: () =>
+          RecordLock.guard(context, record, () => _openEditRecordSheet(record)),
+      onRenew: () =>
+          RecordLock.guard(context, record, () => _renewRecord(record)),
+      onDelete: () =>
+          RecordLock.guard(context, record, () => _deleteRecord(record)),
+      onViewNotes: notes.isEmpty
+          ? null
+          : () => RecordLock.guard(
+              context,
+              record,
+              () => RecordNotesDialog.show(
+                context,
+                title: record.name,
+                notes: notes,
+              ),
+            ),
+      onHowToRenew: () => _openRenewalGuide(record),
+      onShare: record.locked || record.isShared
+          ? null
+          : () => ShareLinkService.share(
+              context,
+              record,
+              isPremium: widget.isPremium,
+            ),
+      onAddToCalendar: () => CalendarExport.addOne(context, record),
+      onRequestUpdate: RequestUpdateAction.staffFor(record) == null
+          ? null
+          : () => RequestUpdateAction.run(context, record),
+    );
   }
 
   @override
@@ -261,6 +447,17 @@ class _RecordsScreenState extends State<RecordsScreen> {
       40.0,
     );
     const maxContentWidth = 720.0;
+    final groupName = CategoryResolver.groupLabel(context, widget.groupKey);
+
+    Widget constrained(Widget child) => Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: edgePad),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: maxContentWidth),
+          child: child,
+        ),
+      ),
+    );
 
     return Scaffold(
       body: SafeArea(
@@ -269,14 +466,40 @@ class _RecordsScreenState extends State<RecordsScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
               child: ScreenHeader(
-                title: PresetCatalog.groupLabel(context, widget.groupKey),
-                trailing: IconButton(
-                  tooltip: loc.recentlyDeletedTitle,
-                  icon: Icon(
-                    Icons.restore_from_trash_rounded,
-                    color: scheme.primary,
-                  ),
-                  onPressed: _openRecentlyDeleted,
+                title: groupName,
+                trailing: PopupMenuButton<_RecordsMenu>(
+                  tooltip: loc.recordMenuMore,
+                  icon: Icon(Icons.more_vert_rounded, color: scheme.onSurface),
+                  onSelected: (choice) {
+                    switch (choice) {
+                      case _RecordsMenu.sortExpiry:
+                        setState(() => _sortByName = false);
+                      case _RecordsMenu.sortName:
+                        setState(() => _sortByName = true);
+                      case _RecordsMenu.select:
+                        setState(() {
+                          _selecting = true;
+                          _selected.clear();
+                        });
+                    }
+                  },
+                  itemBuilder: (_) => [
+                    CheckedPopupMenuItem(
+                      value: _RecordsMenu.sortExpiry,
+                      checked: !_sortByName,
+                      child: Text(loc.recordsSortExpiry),
+                    ),
+                    CheckedPopupMenuItem(
+                      value: _RecordsMenu.sortName,
+                      checked: _sortByName,
+                      child: Text(loc.recordsSortName),
+                    ),
+                    const PopupMenuDivider(),
+                    PopupMenuItem(
+                      value: _RecordsMenu.select,
+                      child: Text(loc.recordsSelect),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -323,66 +546,112 @@ class _RecordsScreenState extends State<RecordsScreen> {
                           final id = record.id;
                           if (id != null) byId[id] = record;
                         }
-                        var records = byId.values.toList();
+                        final all = byId.values.toList();
+                        var records = all
+                            .where((r) => PersonFilterChips.matches(r, _person))
+                            .toList();
 
-                        if (widget.focusRecordId != null) {
-                          records = records
-                              .where((r) => r.id == widget.focusRecordId)
-                              .toList();
+                        final focused = _focusId != null
+                            ? records.where((r) => r.id == _focusId).toList()
+                            : null;
+                        if (focused != null && focused.isNotEmpty) {
+                          records = focused;
                         }
 
-                        // Soonest-expiring first. Expired dates sort to the top,
-                        // which is where they belong: this is an expiry tracker, so
-                        // the thing that has already lapsed is the most urgent.
-                        records.sort(
-                          (a, b) => a.expiryDate.compareTo(b.expiryDate),
-                        );
+                        if (_sortByName) {
+                          records.sort(
+                            (a, b) => a.name.toLowerCase().compareTo(
+                              b.name.toLowerCase(),
+                            ),
+                          );
+                        } else {
+                          // Soonest-expiring first. Expired dates sort to the top,
+                          // which is where they belong in an expiry tracker.
+                          records.sort(
+                            (a, b) => a.expiryDate.compareTo(b.expiryDate),
+                          );
+                        }
 
                         final result = TextSearch.run<TrackedItem>(
                           items: records,
                           query: _searchController.text,
                           textOf: (r) =>
                               r.locked ? r.name : '${r.name} ${r.notes ?? ''}',
+                          fuzzy: true,
                         );
+
+                        final showSections =
+                            !_sortByName &&
+                            !result.hasQuery &&
+                            result.matches.length > 1;
+
+                        final children = <Widget>[];
+                        if (showSections) {
+                          for (final section in RecordSections.split(
+                            result.matches,
+                            daysLeft: RecordStatus.daysLeftFor,
+                            soonDays:
+                                ItemLifecycleManager.expiringThresholdDays,
+                          )) {
+                            children.add(
+                              _SectionHeader(
+                                title: _sectionTitle(loc, section.key),
+                                count: section.value.length,
+                                warn: section.key == RecordSection.expired,
+                              ),
+                            );
+                            for (final record in section.value) {
+                              children.add(_recordCard(record, loc));
+                            }
+                          }
+                        } else {
+                          for (final record in result.matches) {
+                            children.add(_recordCard(record, loc));
+                          }
+                        }
+
+                        final groupEmpty = all.isEmpty;
 
                         return Column(
                           children: [
-                            Center(
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: edgePad,
-                                ),
-                                child: ConstrainedBox(
-                                  constraints: const BoxConstraints(
-                                    maxWidth: maxContentWidth,
-                                  ),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.stretch,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          0,
-                                          12,
-                                          0,
-                                          4,
-                                        ),
-                                        child: SearchField(
-                                          controller: _searchController,
-                                          hintText: loc.searchRecords,
-                                          onChanged: () => setState(() {}),
-                                        ),
+                            constrained(
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  if (!groupEmpty) ...[
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                        0,
+                                        12,
+                                        0,
+                                        4,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          0,
-                                          8,
-                                          0,
-                                          4,
-                                        ),
-                                        child: Align(
-                                          alignment: Alignment.centerRight,
-                                          child: FilledButton.icon(
+                                      child: SearchField(
+                                        controller: _searchController,
+                                        hintText: loc.searchRecords,
+                                        onChanged: () => setState(() {}),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                        0,
+                                        8,
+                                        0,
+                                        4,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: PersonFilterChips(
+                                              records: all,
+                                              value: _person,
+                                              onChanged: (value) => setState(
+                                                () => _person = value,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(width: 8),
+                                          FilledButton.icon(
                                             onPressed: _openAddRecordSheet,
                                             icon: const Icon(
                                               Icons.add_rounded,
@@ -390,125 +659,226 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                             ),
                                             label: Text(loc.addRecord),
                                           ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                  if (focused != null && focused.isNotEmpty)
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional.centerStart,
+                                      child: TextButton.icon(
+                                        onPressed: () =>
+                                            setState(() => _focusId = null),
+                                        icon: const Icon(
+                                          Icons.unfold_more_rounded,
+                                          size: 18,
+                                        ),
+                                        label: Text(
+                                          loc.recordsShowAll(all.length),
                                         ),
                                       ),
-                                      const SizedBox(height: 6),
-                                    ],
-                                  ),
-                                ),
+                                    ),
+                                ],
                               ),
                             ),
                             Expanded(
-                              child: Center(
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: edgePad,
-                                  ),
-                                  child: ConstrainedBox(
-                                    constraints: const BoxConstraints(
-                                      maxWidth: maxContentWidth,
-                                    ),
-                                    child: result.isEmpty
-                                        ? SearchEmptyState(
-                                            reason: result.emptyReason,
-                                            noMatchesText: loc.recordsNoMatch(
-                                              result.query,
-                                            ),
-                                            emptyText: loc.noRecordsYet,
-                                          )
-                                        : ListView.builder(
-                                            padding: const EdgeInsets.fromLTRB(
-                                              0,
-                                              16,
-                                              0,
-                                              16,
-                                            ),
-                                            itemCount: result.matches.length,
-                                            itemBuilder: (_, index) {
-                                              final record =
-                                                  result.matches[index];
-                                              final notes =
-                                                  record.notes?.trim() ?? '';
-
-                                              return RecordCard(
-                                                record: record,
-                                                status: RecordStatus.of(
-                                                  record,
-                                                  loc,
-                                                ),
-                                                onEdit: () => RecordLock.guard(
-                                                  context,
-                                                  record,
-                                                  () => _openEditRecordSheet(
-                                                    record,
-                                                  ),
-                                                ),
-                                                onRenew: () => RecordLock.guard(
-                                                  context,
-                                                  record,
-                                                  () => _renewRecord(record),
-                                                ),
-                                                onDelete: () =>
-                                                    RecordLock.guard(
-                                                      context,
-                                                      record,
-                                                      () =>
-                                                          _deleteRecord(record),
-                                                    ),
-                                                onViewNotes: notes.isEmpty
-                                                    ? null
-                                                    : () => RecordLock.guard(
-                                                        context,
-                                                        record,
-                                                        () =>
-                                                            RecordNotesDialog.show(
-                                                              context,
-                                                              title:
-                                                                  record.name,
-                                                              notes: notes,
-                                                            ),
-                                                      ),
-                                                onHowToRenew: () =>
-                                                    _openRenewalGuide(record),
-                                                onShare:
-                                                    record.locked ||
-                                                        record.isShared
-                                                    ? null
-                                                    : () =>
-                                                          ShareLinkService.share(
-                                                            context,
-                                                            record,
-                                                            isPremium: widget
-                                                                .isPremium,
-                                                          ),
-                                                onAddToCalendar: () =>
-                                                    CalendarExport.addOne(
-                                                      context,
-                                                      record,
-                                                    ),
-                                                onRequestUpdate:
-                                                    RequestUpdateAction.staffFor(
-                                                          record,
-                                                        ) ==
-                                                        null
-                                                    ? null
-                                                    : () =>
-                                                          RequestUpdateAction.run(
-                                                            context,
-                                                            record,
-                                                          ),
-                                              );
-                                            },
-                                          ),
-                                  ),
-                                ),
+                              child: constrained(
+                                groupEmpty
+                                    ? _EmptyGroup(
+                                        groupName: groupName,
+                                        onScan: () =>
+                                            _openAddRecordSheet(scan: true),
+                                        onAdd: _openAddRecordSheet,
+                                      )
+                                    : result.isEmpty
+                                    ? SearchEmptyState(
+                                        reason: result.emptyReason,
+                                        noMatchesText: loc.recordsNoMatch(
+                                          result.query,
+                                        ),
+                                        emptyText: loc.noRecordsYet,
+                                      )
+                                    : ListView(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          0,
+                                          8,
+                                          0,
+                                          16,
+                                        ),
+                                        children: children,
+                                      ),
                               ),
                             ),
+                            if (_selecting)
+                              _SelectionBar(
+                                count: _selected.length,
+                                onMove: _selected.isEmpty
+                                    ? null
+                                    : () => _moveSelected(all),
+                                onDelete: _selected.isEmpty
+                                    ? null
+                                    : () => _deleteSelected(all),
+                                onClose: _stopSelecting,
+                              ),
                           ],
                         );
                       },
                     ),
               ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SectionHeader extends StatelessWidget {
+  final String title;
+  final int count;
+  final bool warn;
+
+  const _SectionHeader({
+    required this.title,
+    required this.count,
+    required this.warn,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    final colour = warn ? scheme.error : scheme.onSurfaceVariant;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 10, 4, 8),
+      child: Text(
+        '$title · $count',
+        style: TextStyle(
+          fontSize: 13,
+          fontWeight: FontWeight.w800,
+          letterSpacing: 0.2,
+          color: colour,
+        ),
+      ),
+    );
+  }
+}
+
+class _EmptyGroup extends StatelessWidget {
+  final String groupName;
+  final VoidCallback onScan;
+  final VoidCallback onAdd;
+
+  const _EmptyGroup({
+    required this.groupName,
+    required this.onScan,
+    required this.onAdd,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(vertical: 40),
+      child: Column(
+        children: [
+          Container(
+            width: 72,
+            height: 72,
+            decoration: BoxDecoration(
+              color: scheme.primary.withValues(alpha: 0.10),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              Icons.document_scanner_rounded,
+              size: 34,
+              color: scheme.primary,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            loc.recordsEmptyTitle(groupName),
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            loc.recordsEmptyBody,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 14, color: scheme.onSurfaceVariant),
+          ),
+          const SizedBox(height: 20),
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 12,
+            runSpacing: 8,
+            children: [
+              FilledButton.icon(
+                onPressed: onScan,
+                icon: const Icon(Icons.photo_camera_outlined, size: 18),
+                label: Text(loc.recordsScan),
+              ),
+              OutlinedButton.icon(
+                onPressed: onAdd,
+                icon: const Icon(Icons.edit_note_rounded, size: 18),
+                label: Text(loc.addRecord),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SelectionBar extends StatelessWidget {
+  final int count;
+  final VoidCallback? onMove;
+  final VoidCallback? onDelete;
+  final VoidCallback onClose;
+
+  const _SelectionBar({
+    required this.count,
+    required this.onMove,
+    required this.onDelete,
+    required this.onClose,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+
+    return Material(
+      elevation: 8,
+      color: scheme.surfaceContainerHigh,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(8, 6, 12, 6),
+        child: Row(
+          children: [
+            IconButton(
+              tooltip: loc.cancel,
+              icon: const Icon(Icons.close_rounded),
+              onPressed: onClose,
+            ),
+            Expanded(
+              child: Text(
+                loc.recordsSelected(count),
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            TextButton.icon(
+              onPressed: onMove,
+              icon: const Icon(Icons.drive_file_move_rounded, size: 18),
+              label: Text(loc.recordsMove),
+            ),
+            TextButton.icon(
+              style: TextButton.styleFrom(foregroundColor: scheme.error),
+              onPressed: onDelete,
+              icon: const Icon(Icons.delete_outline_rounded, size: 18),
+              label: Text(loc.delete),
             ),
           ],
         ),
