@@ -30,13 +30,16 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 ## Features
 
 ### Records and organisation
-- **Categories, groups and records.** Records sit inside groups, and groups sit inside categories. Seven preset categories with 20 preset groups cover the common documents, and users can add their own.
+- **Categories, groups and records.** Records sit inside groups, and groups sit inside categories. Nine preset categories (including Health and medical, and Memberships and subscriptions) with 34 preset groups cover the common documents, and users can add their own in any language. Custom categories and groups can be renamed, and a "Yours" tag marks them.
+- **Steady order and pins.** Pinned categories come first and sync across devices, then the presets, then your own by name. The order never reshuffles because something was opened.
+- **Icons picked from the name.** Type a name for a new category and the app guesses an icon on the phone, then asks the `suggestCategoryIcon` Cloud Function, which uses the same Anthropic model as Ask Vaultara to pick from about 40 icons. Tap the icon to change it or its colour.
+- **Records screen.** Records are split into Expired, Due soon and Valid, can be sorted by expiry date or name, filtered by person, and selected together to move or delete. Cards show how many records have expired. An empty group offers Scan straight away.
 - **Snap to add.** Scan a card, passport or document with the camera and Vaultara fills in the expiry date, group and document number. Bank card numbers are masked.
 - **Passport MRZ scanning.** Reads the machine-readable zone on the passport photo page for the expiry date, name and country with very few mistakes.
 - **Licence disc scanning.** Reads the barcode on a South African vehicle licence disc to fill in the plate number and expiry date.
 - **Repeating records.** Subscriptions and policies that renew on their own move their date forward each month or year automatically.
 - **Spreadsheet import.** Bring records over from Excel or another app with a CSV file, with automatic date detection.
-- **Global search** across categories, groups and records.
+- **Global search** across categories, groups and records, including holder names, notes and where a record is kept (not for locked records). It ignores accents, tolerates small typos and can be filtered by person.
 - **Recovery Centre.** Deleted categories, groups and records can be restored for 30 days.
 
 ### Reminders
@@ -143,7 +146,7 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 |---|---|---|---|---|
 | Records | 10 | Unlimited | Unlimited | Unlimited |
 | Custom categories | 3 | Unlimited | Unlimited | Unlimited |
-| Custom groups | | ✓ | ✓ | ✓ |
+| Custom groups | 2 | Unlimited | Unlimited | Unlimited |
 | Multiple reminders and cascade | | ✓ | ✓ | ✓ |
 | Smart Insights and calendar | ✓ | ✓ | ✓ | ✓ |
 | Photos per record | 1 | Up to 10 | Up to 10 | Up to 10 |
