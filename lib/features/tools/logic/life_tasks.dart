@@ -58,6 +58,17 @@ enum LifeTask {
   parentFindPapers,
   parentPermission,
   parentMedicines,
+  walletFreezeCards,
+  walletRetrace,
+  walletFraudAlert,
+  walletStatements,
+  walletPayApps,
+  walletSubscriptions,
+  walletLocks,
+  walletHealthCard,
+  walletTransport,
+  walletLoyalty,
+  walletInsurance,
 }
 
 /// What a task can open in the app, so the user does not have to find it.
@@ -205,6 +216,22 @@ class LifeTasks {
           LifeTask.parentMedicines,
           LifeTask.updateWill,
         ];
+      case LifeEvent.lostWallet:
+        final stolen = variant == LifeEvents.variantStolen;
+        return <LifeTask>[
+          LifeTask.walletFreezeCards,
+          if (stolen) LifeTask.reportToPolice else LifeTask.walletRetrace,
+          if (!stolen) LifeTask.reportToPolice,
+          LifeTask.walletFraudAlert,
+          LifeTask.walletStatements,
+          LifeTask.walletSubscriptions,
+          LifeTask.walletPayApps,
+          LifeTask.walletHealthCard,
+          LifeTask.walletTransport,
+          LifeTask.walletLoyalty,
+          LifeTask.walletLocks,
+          LifeTask.walletInsurance,
+        ];
     }
   }
 
@@ -214,7 +241,9 @@ class LifeTasks {
       task == LifeTask.phoneBlockSim ||
       task == LifeTask.phoneBlockBanking ||
       task == LifeTask.disasterSafePlace ||
-      task == LifeTask.jobUnemployment;
+      task == LifeTask.jobUnemployment ||
+      task == LifeTask.walletFreezeCards ||
+      task == LifeTask.walletRetrace;
 
   static LifeTaskLink link(LifeTask task) {
     switch (task) {
@@ -341,6 +370,28 @@ class LifeTasks {
         return loc.lifeTaskParentPermission;
       case LifeTask.parentMedicines:
         return loc.lifeTaskParentMedicines;
+      case LifeTask.walletFreezeCards:
+        return loc.lifeTaskWalletFreezeCards;
+      case LifeTask.walletRetrace:
+        return loc.lifeTaskWalletRetrace;
+      case LifeTask.walletFraudAlert:
+        return loc.lifeTaskWalletFraudAlert;
+      case LifeTask.walletStatements:
+        return loc.lifeTaskWalletStatements;
+      case LifeTask.walletPayApps:
+        return loc.lifeTaskWalletPayApps;
+      case LifeTask.walletSubscriptions:
+        return loc.lifeTaskWalletSubscriptions;
+      case LifeTask.walletLocks:
+        return loc.lifeTaskWalletLocks;
+      case LifeTask.walletHealthCard:
+        return loc.lifeTaskWalletHealthCard;
+      case LifeTask.walletTransport:
+        return loc.lifeTaskWalletTransport;
+      case LifeTask.walletLoyalty:
+        return loc.lifeTaskWalletLoyalty;
+      case LifeTask.walletInsurance:
+        return loc.lifeTaskWalletInsurance;
     }
   }
 }

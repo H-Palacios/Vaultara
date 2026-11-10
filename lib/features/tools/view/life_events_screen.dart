@@ -99,23 +99,23 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
                 for (final group in LifeEventGroup.values) ...[
                   _GroupLabel(LifeEvents.groupTitle(loc, group)),
                   for (final event in LifeEvents.groups[group]!) ...[
-                    _EventTile(
-                      event: event,
-                      active: active.any((p) => p.event == event),
-                    ),
-                    const SizedBox(height: 8),
-                  ],
-                  if (group == LifeEventGroup.emergency) ...[
-                    _Tile(
-                      icon: Icons.account_balance_wallet_rounded,
-                      title: loc.lostWalletTitle,
-                      subtitle: loc.lostWalletSubtitle,
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute<void>(
-                          builder: (_) => const LostWalletScreen(),
-                        ),
+                    if (event == LifeEvent.lostWallet)
+                      // Lost my wallet opens its own screen first, with the
+                      // check-up, rather than going straight to a plan.
+                      _Tile(
+                        icon: LifeEvents.icon(event),
+                        title: loc.lostWalletTitle,
+                        subtitle: active.any((p) => p.event == event)
+                            ? loc.lifePlanInProgress
+                            : loc.lostWalletSubtitle,
+                        highlight: active.any((p) => p.event == event),
+                        onTap: () => openLostWallet(context),
+                      )
+                    else
+                      _EventTile(
+                        event: event,
+                        active: active.any((p) => p.event == event),
                       ),
-                    ),
                     const SizedBox(height: 8),
                   ],
                 ],

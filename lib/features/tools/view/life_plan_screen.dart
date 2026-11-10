@@ -22,6 +22,7 @@ import 'package:vaultara/features/tools/services/life_plan_reminders.dart';
 import 'package:vaultara/features/tools/services/life_plan_share.dart';
 import 'package:vaultara/features/tools/view/life_plan_start_sheet.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
+import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/features/tools/view/proof_pack_screen.dart';
 import 'package:vaultara/features/travel/view/travel_actions.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -29,6 +30,10 @@ import 'package:vaultara/shell/shell_fab.dart';
 import 'package:vaultara/shell/shell_state.dart';
 
 Future<void> openLifePlan(BuildContext context, String planId) {
+  // A lost wallet has its own screen, with call buttons and the case number.
+  if (LifePlanRepository.byId(planId)?.event == LifeEvent.lostWallet) {
+    return openLostWallet(context, planId: planId);
+  }
   return Navigator.of(context).push(
     MaterialPageRoute<void>(builder: (_) => LifePlanScreen(planId: planId)),
   );

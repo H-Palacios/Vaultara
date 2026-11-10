@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/logic/life_tasks.dart';
@@ -51,6 +52,7 @@ class LifePlan {
   static const int maxPeople = 26;
   static const int maxItems = 80;
   static const int maxSkipped = 40;
+  static const int maxCaseNumber = 40;
 
   final String id;
   final LifeEvent event;
@@ -83,6 +85,16 @@ class LifePlan {
   /// To-dos the user added.
   final List<LifeCustomTask> custom;
 
+  /// The police or incident case number, for a lost or stolen wallet.
+  final String? caseNumber;
+
+  /// What went missing, from KeptIn.carried, for a lost or stolen wallet.
+  /// Plans saved without it mean the wallet.
+  final List<String> places;
+
+  /// When a lost wallet turned up again.
+  final DateTime? foundAt;
+
   const LifePlan({
     required this.id,
     required this.event,
@@ -97,9 +109,40 @@ class LifePlan {
     this.variant,
     this.tasksDone = const <String>{},
     this.custom = const <LifeCustomTask>[],
+    this.caseNumber,
+    this.places = const <String>[],
+    this.foundAt,
   });
 
   bool get isFinished => finishedAt != null;
+
+  bool get isFound => foundAt != null;
+
+  /// The places that went missing, the wallet when none were saved.
+  List<String> get missing =>
+      places.isEmpty ? const <String>[KeptIn.wallet] : places;
+
+  static String? cleanCaseNumber(Object? value) {
+    if (value is! String) return null;
+    final text = value.trim();
+    if (text.isEmpty) return null;
+    return text.length > maxCaseNumber
+        ? text.substring(0, maxCaseNumber)
+        : text;
+  }
+
+  static List<String> cleanPlaces(Object? value) {
+    if (value is! List) return const <String>[];
+    final out = <String>[];
+    for (final item in value) {
+      if (item is String &&
+          KeptIn.carried.contains(item) &&
+          !out.contains(item)) {
+        out.add(item);
+      }
+    }
+    return out;
+  }
 
   bool includes(TrackedItem record) {
     final holder = record.holderId ?? meKey;
@@ -170,6 +213,11 @@ class LifePlan {
     bool clearVariant = false,
     Set<String>? tasksDone,
     List<LifeCustomTask>? custom,
+    String? caseNumber,
+    bool clearCaseNumber = false,
+    List<String>? places,
+    DateTime? foundAt,
+    bool clearFound = false,
   }) {
     return LifePlan(
       id: id ?? this.id,
@@ -185,6 +233,11 @@ class LifePlan {
       variant: clearVariant ? null : (variant ?? this.variant),
       tasksDone: tasksDone ?? this.tasksDone,
       custom: custom ?? this.custom,
+      caseNumber: clearCaseNumber
+          ? null
+          : cleanCaseNumber(caseNumber ?? this.caseNumber),
+      places: places == null ? this.places : cleanPlaces(places),
+      foundAt: clearFound ? null : (foundAt ?? this.foundAt),
     );
   }
 
@@ -243,6 +296,9 @@ class LifePlan {
       'custom': <Map<String, dynamic>>[
         for (final task in custom.take(LifeTasks.maxCustom)) task.toMap(),
       ],
+      if (caseNumber != null) 'caseNumber': caseNumber,
+      if (places.isNotEmpty) 'places': places,
+      if (foundAt != null) 'foundAt': Timestamp.fromDate(foundAt!),
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }
@@ -305,6 +361,9 @@ class LifePlan {
           if (LifeTasks.fromName(item) != null) item as String,
       },
       custom: custom.take(LifeTasks.maxCustom).toList(),
+      caseNumber: cleanCaseNumber(map['caseNumber']),
+      places: cleanPlaces(map['places']),
+      foundAt: _date(map['foundAt']),
     );
   }
 }

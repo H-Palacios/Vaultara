@@ -10,6 +10,7 @@ import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/logic/life_plan_items.dart';
 import 'package:vaultara/features/tools/view/life_plan_screen.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
+import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -24,6 +25,10 @@ Future<void> startLifePlan(
   List<String>? people,
   String? variant,
 }) async {
+  if (event == LifeEvent.lostWallet) {
+    await openLostWallet(context, start: true, variant: variant);
+    return;
+  }
   for (final plan in LifePlanRepository.active) {
     if (plan.event == event) {
       await openLifePlan(context, plan.id);
