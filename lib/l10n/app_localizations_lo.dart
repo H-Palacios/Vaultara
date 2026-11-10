@@ -7868,4 +7868,184 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'ສົ່ງລິ້ງ ແລ້ວພະນັກງານຈະອັບໂຫລດເອກະສານທີ່ຕໍ່ອາຍຸແລ້ວເອງ.';
+
+  @override
+  String get categoryHealthAndMedical => 'ສຸຂະພາບ ແລະ ການແພດ';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'ສະມາຊິກ ແລະ ການສະໝັກໃຊ້';
+
+  @override
+  String get subcategoryFirearmLicences => 'ໃບອະນຸຍາດອາວຸດປືນ';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'ໃບຂັບຂີ່ສາກົນ';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'ໃບອະນຸຍາດເຮືອ ແລະ ນັກບິນ';
+
+  @override
+  String get subcategorySafetyCertificates => 'ໃບຢັ້ງຢືນການປະຖົມພະຍາບານ ແລະ ຄວາມປອດໄພ';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'ໃບຢັ້ງຢືນລະບົບໄຟຟ້າ';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'ການບໍລິການອຸປະກອນດັບເພີງ';
+
+  @override
+  String get subcategoryMedicalAidCards => 'ບັດປະກັນສຸຂະພາບ';
+
+  @override
+  String get subcategoryPrescriptions => 'ໃບສັ່ງຢາ';
+
+  @override
+  String get subcategoryVaccinations => 'ການສັກວັກຊີນ';
+
+  @override
+  String get subcategoryMedicalCertificates => 'ໃບຢັ້ງຢືນແພດ';
+
+  @override
+  String get subcategoryGymMemberships => 'ສະມາຊິກຫ້ອງອອກກຳລັງກາຍ';
+
+  @override
+  String get subcategoryClubMemberships => 'ສະມາຊິກສະໂມສອນ';
+
+  @override
+  String get subcategorySubscriptions => 'ການສະໝັກໃຊ້';
+
+  @override
+  String get subcategoryWarranties => 'ການຮັບປະກັນ';
+
+  @override
+  String get yoursTag => 'ຂອງທ່ານ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໝົດອາຍຸ $count',
+      one: 'ໝົດອາຍຸ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'ປ່ຽນໄອຄອນ';
+
+  @override
+  String get categoryLookTitle => 'ໄອຄອນ ແລະ ສີ';
+
+  @override
+  String get categoryLookAppColour => 'ສີຂອງແອັບ';
+
+  @override
+  String get categoryLookHint => 'ເລືອກຕາມຊື່. ແຕະເພື່ອປ່ຽນ.';
+
+  @override
+  String get renameCategoryTitle => 'ປ່ຽນຊື່ໝວດ';
+
+  @override
+  String get renameGroupTitle => 'ປ່ຽນຊື່ກຸ່ມ';
+
+  @override
+  String get nameInUse => 'ຊື່ນີ້ຖືກໃຊ້ຢູ່ບ່ອນນີ້ແລ້ວ.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'ກຸ່ມຟຣີ: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'ທ່ານໃຊ້ກຸ່ມທີ່ສ້າງເອງຄົບ $limit ກຸ່ມຕາມຂີດຈຳກັດຂອງແຜນຟຣີແລ້ວ. ອັບເກຣດເປັນ Premium ເພື່ອສ້າງກຸ່ມບໍ່ຈຳກັດ.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'ຮຽງຕາມວັນໝົດອາຍຸ';
+
+  @override
+  String get recordsSortName => 'ຮຽງຕາມຊື່';
+
+  @override
+  String get recordsSelect => 'ເລືອກ';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເລືອກແລ້ວ $count',
+      one: 'ເລືອກແລ້ວ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'ຍ້າຍ';
+
+  @override
+  String get recordsMoveTitle => 'ຍ້າຍໄປ';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຍ້າຍ $count ລາຍການແລ້ວ',
+      one: 'ຍ້າຍ $count ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ລຶບ $count ລາຍການບໍ?',
+      one: 'ລຶບ $count ລາຍການບໍ?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'ລາຍການຈະໄປຢູ່ໃນ \"ລຶບລ່າສຸດ\" ເຊິ່ງກູ້ຄືນໄດ້ພາຍໃນ 30 ມື້.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ລຶບ $count ລາຍການແລ້ວ',
+      one: 'ລຶບ $count ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'ໃກ້ໝົດອາຍຸ';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ສະແດງທັງໝົດ $count ລາຍການ',
+      one: 'ສະແດງທຸກລາຍການ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'ຍັງບໍ່ມີຫຍັງໃນ $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'ສະແກນບັດ ຫຼື ເອກະສານ ຫຼື ເພີ່ມເອງ. Vaultara ຈະເຕືອນທ່ານກ່ອນໝົດອາຍຸ.';
+
+  @override
+  String get recordsScan => 'ສະແກນ';
 }

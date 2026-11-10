@@ -8070,4 +8070,190 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Pošlete odkaz a zaměstnanec sám nahraje obnovený doklad.';
+
+  @override
+  String get categoryHealthAndMedical => 'Zdraví a medicína';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Členství a předplatné';
+
+  @override
+  String get subcategoryFirearmLicences => 'Zbrojní průkazy';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Mezinárodní řidičská oprávnění';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Průkazy vůdce plavidla a pilota';
+
+  @override
+  String get subcategorySafetyCertificates => 'Certifikáty první pomoci a BOZP';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Revize elektroinstalace';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Revize hasicích přístrojů';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kartičky zdravotní pojišťovny';
+
+  @override
+  String get subcategoryPrescriptions => 'Recepty';
+
+  @override
+  String get subcategoryVaccinations => 'Očkování';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Lékařská potvrzení';
+
+  @override
+  String get subcategoryGymMemberships => 'Permanentky do posilovny';
+
+  @override
+  String get subcategoryClubMemberships => 'Členství v klubech';
+
+  @override
+  String get subcategorySubscriptions => 'Předplatné';
+
+  @override
+  String get subcategoryWarranties => 'Záruky';
+
+  @override
+  String get yoursTag => 'Vaše';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Propadlé: $count',
+      one: '$count propadlé',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Změnit ikonu';
+
+  @override
+  String get categoryLookTitle => 'Ikona a barva';
+
+  @override
+  String get categoryLookAppColour => 'Barva aplikace';
+
+  @override
+  String get categoryLookHint => 'Vybráno podle názvu. Klepnutím změníte.';
+
+  @override
+  String get renameCategoryTitle => 'Přejmenovat kategorii';
+
+  @override
+  String get renameGroupTitle => 'Přejmenovat skupinu';
+
+  @override
+  String get nameInUse => 'Tento název se tu už používá.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Skupiny zdarma: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Dosáhli jste limitu tarifu Free: $limit vlastních skupin. S Premium můžete vytvářet neomezeně skupin.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Řadit podle data platnosti';
+
+  @override
+  String get recordsSortName => 'Řadit podle názvu';
+
+  @override
+  String get recordsSelect => 'Vybrat';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vybráno: $count',
+      one: 'Vybrán $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Přesunout';
+
+  @override
+  String get recordsMoveTitle => 'Přesunout do';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přesunuto $count záznamů',
+      many: 'Přesunuto $count záznamu',
+      few: 'Přesunuty $count záznamy',
+      one: 'Přesunut $count záznam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Smazat $count záznamů?',
+      many: 'Smazat $count záznamu?',
+      few: 'Smazat $count záznamy?',
+      one: 'Smazat $count záznam?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Přesunou se do „Nedávno odstraněné“, kde je 30 dní můžete obnovit.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Smazáno $count záznamů',
+      many: 'Smazáno $count záznamu',
+      few: 'Smazány $count záznamy',
+      one: 'Smazán $count záznam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Brzy vyprší';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zobrazit všechny záznamy ($count)',
+      one: 'Zobrazit všechny záznamy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Ve skupině $group zatím nic není';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Naskenujte kartu nebo doklad, nebo ho přidejte ručně. Vaultara vám připomene konec platnosti.';
+
+  @override
+  String get recordsScan => 'Skenovat';
 }

@@ -8113,4 +8113,184 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Seol nasc agus uaslódálann an ball foirne an doiciméad athnuaite é féin.';
+
+  @override
+  String get categoryHealthAndMedical => 'Sláinte agus leigheas';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Ballraíochtaí agus síntiúis';
+
+  @override
+  String get subcategoryFirearmLicences => 'Ceadúnais arm tine';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Ceadúnais tiomána idirnáisiúnta';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Ceadúnais bháid agus phíolóta';
+
+  @override
+  String get subcategorySafetyCertificates => 'Teastais garchabhrach agus sábháilteachta';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Teastais chomhlíonta leictreachais';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Seirbhísiú trealaimh dóiteáin';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Cártaí árachais sláinte';
+
+  @override
+  String get subcategoryPrescriptions => 'Oidis';
+
+  @override
+  String get subcategoryVaccinations => 'Vacsaínithe';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Teastais leighis';
+
+  @override
+  String get subcategoryGymMemberships => 'Ballraíochtaí giomnáisiam';
+
+  @override
+  String get subcategoryClubMemberships => 'Ballraíochtaí club';
+
+  @override
+  String get subcategorySubscriptions => 'Síntiúis';
+
+  @override
+  String get subcategoryWarranties => 'Barántais';
+
+  @override
+  String get yoursTag => 'Leatsa';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count imithe in éag',
+      one: '$count imithe in éag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Athraigh an deilbhín';
+
+  @override
+  String get categoryLookTitle => 'Deilbhín agus dath';
+
+  @override
+  String get categoryLookAppColour => 'Dath na haipe';
+
+  @override
+  String get categoryLookHint => 'Roghnaithe ón ainm. Tapáil chun é a athrú.';
+
+  @override
+  String get renameCategoryTitle => 'Athainmnigh an chatagóir';
+
+  @override
+  String get renameGroupTitle => 'Athainmnigh an grúpa';
+
+  @override
+  String get nameInUse => 'Tá an t-ainm sin in úsáid anseo cheana.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Grúpaí saor in aisce: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Tá teorainn an phlean saor in aisce de $limit grúpa saincheaptha bainte amach agat. Uasghrádaigh go Premium le haghaidh grúpaí gan teorainn.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sórtáil de réir dáta éaga';
+
+  @override
+  String get recordsSortName => 'Sórtáil de réir ainm';
+
+  @override
+  String get recordsSelect => 'Roghnaigh';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count roghnaithe',
+      one: '$count roghnaithe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Bog';
+
+  @override
+  String get recordsMoveTitle => 'Bog go';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bogadh $count taifead',
+      one: 'Bogadh $count taifead',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Scrios $count taifead?',
+      one: 'Scrios $count taifead?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Téann siad go \"Scriosta le déanaí\", áit ar féidir leat iad a fháil ar ais ar feadh 30 lá.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Scriosadh $count taifead',
+      one: 'Scriosadh $count taifead',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Ag dul in éag go luath';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Taispeáin na $count taifead',
+      one: 'Taispeáin gach taifead',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Níl aon rud in $group fós';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Scan an cárta nó an doiciméad, nó cuir leis de láimh é. Cuirfidh Vaultara i gcuimhne duit sula dtéann sé in éag.';
+
+  @override
+  String get recordsScan => 'Scan';
 }

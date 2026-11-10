@@ -7926,4 +7926,184 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'پیوندی بفرستید تا کارمند خودش مدرک تمدیدشده را بارگذاری کند.';
+
+  @override
+  String get categoryHealthAndMedical => 'سلامت و پزشکی';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'عضویت‌ها و اشتراک‌ها';
+
+  @override
+  String get subcategoryFirearmLicences => 'مجوزهای سلاح گرم';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'گواهینامه‌های رانندگی بین‌المللی';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'گواهینامه‌های قایق و خلبانی';
+
+  @override
+  String get subcategorySafetyCertificates => 'گواهی‌های کمک‌های اولیه و ایمنی';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'گواهی‌های تأیید برق';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'سرویس تجهیزات آتش‌نشانی';
+
+  @override
+  String get subcategoryMedicalAidCards => 'کارت‌های بیمه درمانی';
+
+  @override
+  String get subcategoryPrescriptions => 'نسخه‌ها';
+
+  @override
+  String get subcategoryVaccinations => 'واکسیناسیون‌ها';
+
+  @override
+  String get subcategoryMedicalCertificates => 'گواهی‌های پزشکی';
+
+  @override
+  String get subcategoryGymMemberships => 'عضویت باشگاه ورزشی';
+
+  @override
+  String get subcategoryClubMemberships => 'عضویت در باشگاه‌ها';
+
+  @override
+  String get subcategorySubscriptions => 'اشتراک‌ها';
+
+  @override
+  String get subcategoryWarranties => 'ضمانت‌نامه‌ها';
+
+  @override
+  String get yoursTag => 'مال شما';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count منقضی',
+      one: '$count منقضی',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'تغییر نماد';
+
+  @override
+  String get categoryLookTitle => 'نماد و رنگ';
+
+  @override
+  String get categoryLookAppColour => 'رنگ برنامه';
+
+  @override
+  String get categoryLookHint => 'از روی نام انتخاب شد. برای تغییر ضربه بزنید.';
+
+  @override
+  String get renameCategoryTitle => 'تغییر نام دسته';
+
+  @override
+  String get renameGroupTitle => 'تغییر نام گروه';
+
+  @override
+  String get nameInUse => 'این نام قبلاً اینجا استفاده شده است.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'گروه‌های رایگان: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'به سقف طرح رایگان یعنی $limit گروه سفارشی رسیده‌اید. برای ساخت گروه‌های نامحدود به Premium ارتقا دهید.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'مرتب‌سازی بر اساس تاریخ انقضا';
+
+  @override
+  String get recordsSortName => 'مرتب‌سازی بر اساس نام';
+
+  @override
+  String get recordsSelect => 'انتخاب';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count انتخاب شد',
+      one: '$count انتخاب شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'انتقال';
+
+  @override
+  String get recordsMoveTitle => 'انتقال به';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد منتقل شد',
+      one: '$count مورد منتقل شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد حذف شود؟',
+      one: '$count مورد حذف شود؟',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'به «اخیراً حذف شده» می‌روند و تا ۳۰ روز می‌توانید آن‌ها را برگردانید.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد حذف شد',
+      one: '$count مورد حذف شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'به‌زودی منقضی می‌شود';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'نمایش همه $count مورد',
+      one: 'نمایش همه موارد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'هنوز چیزی در $group نیست';
+  }
+
+  @override
+  String get recordsEmptyBody => 'کارت یا سند را اسکن کنید یا دستی اضافه کنید. Vaultara پیش از انقضا به شما یادآوری می‌کند.';
+
+  @override
+  String get recordsScan => 'اسکن';
 }

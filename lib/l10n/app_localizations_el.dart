@@ -7930,4 +7930,184 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Στείλτε σύνδεσμο και το μέλος του προσωπικού ανεβάζει μόνο του το ανανεωμένο έγγραφο.';
+
+  @override
+  String get categoryHealthAndMedical => 'Υγεία και ιατρικά';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Συνδρομές και μέλη';
+
+  @override
+  String get subcategoryFirearmLicences => 'Άδειες οπλοφορίας';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Διεθνείς άδειες οδήγησης';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Άδειες σκάφους και πιλότου';
+
+  @override
+  String get subcategorySafetyCertificates => 'Πιστοποιητικά πρώτων βοηθειών και ασφάλειας';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Πιστοποιητικά ηλεκτρικής εγκατάστασης';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Συντήρηση πυροσβεστικού εξοπλισμού';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Κάρτες ασφάλισης υγείας';
+
+  @override
+  String get subcategoryPrescriptions => 'Συνταγές';
+
+  @override
+  String get subcategoryVaccinations => 'Εμβολιασμοί';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Ιατρικά πιστοποιητικά';
+
+  @override
+  String get subcategoryGymMemberships => 'Συνδρομές γυμναστηρίου';
+
+  @override
+  String get subcategoryClubMemberships => 'Συνδρομές σε συλλόγους';
+
+  @override
+  String get subcategorySubscriptions => 'Συνδρομές';
+
+  @override
+  String get subcategoryWarranties => 'Εγγυήσεις';
+
+  @override
+  String get yoursTag => 'Δικό σας';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count έληξαν',
+      one: '$count έληξε',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Αλλαγή εικονιδίου';
+
+  @override
+  String get categoryLookTitle => 'Εικονίδιο και χρώμα';
+
+  @override
+  String get categoryLookAppColour => 'Χρώμα εφαρμογής';
+
+  @override
+  String get categoryLookHint => 'Επιλέχθηκε από το όνομα. Πατήστε για αλλαγή.';
+
+  @override
+  String get renameCategoryTitle => 'Μετονομασία κατηγορίας';
+
+  @override
+  String get renameGroupTitle => 'Μετονομασία ομάδας';
+
+  @override
+  String get nameInUse => 'Αυτό το όνομα χρησιμοποιείται ήδη εδώ.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Δωρεάν ομάδες: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Φτάσατε το όριο του δωρεάν προγράμματος των $limit προσαρμοσμένων ομάδων. Αναβαθμίστε σε Premium για απεριόριστες ομάδες.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Ταξινόμηση κατά ημερομηνία λήξης';
+
+  @override
+  String get recordsSortName => 'Ταξινόμηση κατά όνομα';
+
+  @override
+  String get recordsSelect => 'Επιλογή';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count επιλεγμένα',
+      one: '$count επιλεγμένο',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Μετακίνηση';
+
+  @override
+  String get recordsMoveTitle => 'Μετακίνηση σε';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Μετακινήθηκαν $count εγγραφές',
+      one: 'Μετακινήθηκε $count εγγραφή',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Διαγραφή $count εγγραφών;',
+      one: 'Διαγραφή $count εγγραφής;',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Πηγαίνουν στα «Πρόσφατα διαγραμμένα», όπου μπορείτε να τα επαναφέρετε για 30 ημέρες.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Διαγράφηκαν $count εγγραφές',
+      one: 'Διαγράφηκε $count εγγραφή',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Λήγει σύντομα';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Εμφάνιση και των $count εγγραφών',
+      one: 'Εμφάνιση όλων των εγγραφών',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Δεν υπάρχει ακόμα τίποτα στην ομάδα $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Σαρώστε την κάρτα ή το έγγραφο ή προσθέστε το χειροκίνητα. Το Vaultara θα σας υπενθυμίσει πριν λήξει.';
+
+  @override
+  String get recordsScan => 'Σάρωση';
 }

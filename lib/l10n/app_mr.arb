@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "मासिक अहवाल",
   "storyBusiness3Body": "दर महिन्याला अहवाल दाखवतो काय वैध आहे, काय संपत आहे आणि काय कमी आहे.",
   "storyBusiness4Title": "अपडेट मागा",
-  "storyBusiness4Body": "लिंक पाठवा आणि कर्मचारी स्वतः नूतनीकृत दस्तऐवज अपलोड करेल."
+  "storyBusiness4Body": "लिंक पाठवा आणि कर्मचारी स्वतः नूतनीकृत दस्तऐवज अपलोड करेल.",
+  "categoryHealthAndMedical": "आरोग्य आणि वैद्यकीय",
+  "categoryMembershipsAndSubscriptions": "सदस्यता आणि सबस्क्रिप्शन",
+  "subcategoryFirearmLicences": "शस्त्र परवाने",
+  "subcategoryInternationalDrivingPermits": "आंतरराष्ट्रीय वाहन परवाने",
+  "subcategoryBoatAndPilotLicences": "बोट आणि वैमानिक परवाने",
+  "subcategorySafetyCertificates": "प्रथमोपचार आणि सुरक्षा प्रमाणपत्रे",
+  "subcategoryElectricalComplianceCertificates": "विद्युत अनुपालन प्रमाणपत्रे",
+  "subcategoryFireEquipmentServices": "अग्निशमन उपकरणांची सर्व्हिस",
+  "subcategoryMedicalAidCards": "आरोग्य विमा कार्ड",
+  "subcategoryPrescriptions": "प्रिस्क्रिप्शन",
+  "subcategoryVaccinations": "लसीकरण",
+  "subcategoryMedicalCertificates": "वैद्यकीय प्रमाणपत्रे",
+  "subcategoryGymMemberships": "जिम सदस्यता",
+  "subcategoryClubMemberships": "क्लब सदस्यता",
+  "subcategorySubscriptions": "सबस्क्रिप्शन",
+  "subcategoryWarranties": "वॉरंटी आणि गॅरंटी",
+  "yoursTag": "तुमचे",
+  "expiredBadge": "{count, plural, =1{{count} ची मुदत संपली} other{{count} ची मुदत संपली}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "आयकन बदला",
+  "categoryLookTitle": "आयकन आणि रंग",
+  "categoryLookAppColour": "ॲपचा रंग",
+  "categoryLookHint": "नावावरून निवडले. बदलण्यासाठी टॅप करा.",
+  "renameCategoryTitle": "श्रेणीचे नाव बदला",
+  "renameGroupTitle": "गटाचे नाव बदला",
+  "nameInUse": "हे नाव इथे आधीच वापरले आहे.",
+  "freeGroupsProgress": "मोफत गट: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "तुम्ही मोफत प्लॅनच्या {limit} सानुकूल गटांच्या मर्यादेपर्यंत पोहोचलात. अमर्याद गट तयार करण्यासाठी Premium घ्या.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "मुदतीच्या तारखेनुसार लावा",
+  "recordsSortName": "नावानुसार लावा",
+  "recordsSelect": "निवडा",
+  "recordsSelected": "{count, plural, =1{{count} निवडले} other{{count} निवडले}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "हलवा",
+  "recordsMoveTitle": "येथे हलवा",
+  "recordsMoved": "{count, plural, =1{{count} नोंद हलवली} other{{count} नोंदी हलवल्या}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} नोंद हटवायची?} other{{count} नोंदी हटवायच्या?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "त्या \"अलीकडे हटवलेले\" मध्ये जातील, तिथून तुम्ही 30 दिवस त्या परत आणू शकता.",
+  "recordsDeletedMany": "{count, plural, =1{{count} नोंद हटवली} other{{count} नोंदी हटवल्या}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "लवकरच मुदत संपेल",
+  "recordsShowAll": "{count, plural, =1{सर्व नोंदी दाखवा} other{सर्व {count} नोंदी दाखवा}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} मध्ये अजून काही नाही",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "कार्ड किंवा दस्तऐवज स्कॅन करा, किंवा स्वतः जोडा. मुदत संपण्यापूर्वी Vaultara आठवण करून देईल.",
+  "recordsScan": "स्कॅन करा"
 }

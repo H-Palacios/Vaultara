@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "Rahoton wata-wata",
   "storyBusiness3Body": "Kowane wata rahoto yana nuna abin da ke aiki, abin da ke ƙarewa da abin da ya ɓace.",
   "storyBusiness4Title": "Nemi sabuntawa",
-  "storyBusiness4Body": "Aika hanyar haɗi kuma ma'aikaci zai loda sabuwar takardar da kansa."
+  "storyBusiness4Body": "Aika hanyar haɗi kuma ma'aikaci zai loda sabuwar takardar da kansa.",
+  "categoryHealthAndMedical": "Lafiya da magani",
+  "categoryMembershipsAndSubscriptions": "Membobi da biyan kuɗin rajista",
+  "subcategoryFirearmLicences": "Lasisin bindiga",
+  "subcategoryInternationalDrivingPermits": "Lasisin tuƙi na ƙasa da ƙasa",
+  "subcategoryBoatAndPilotLicences": "Lasisin jirgin ruwa da matuƙi",
+  "subcategorySafetyCertificates": "Takardun taimakon gaggawa da tsaro",
+  "subcategoryElectricalComplianceCertificates": "Takardun dacewar wutar lantarki",
+  "subcategoryFireEquipmentServices": "Gyaran kayan kashe gobara",
+  "subcategoryMedicalAidCards": "Katunan inshorar lafiya",
+  "subcategoryPrescriptions": "Takardun magani",
+  "subcategoryVaccinations": "Alluran rigakafi",
+  "subcategoryMedicalCertificates": "Takardun shaidar likita",
+  "subcategoryGymMemberships": "Membobin gidan motsa jiki",
+  "subcategoryClubMemberships": "Membobin kulob",
+  "subcategorySubscriptions": "Biyan kuɗin rajista",
+  "subcategoryWarranties": "Garanti",
+  "yoursTag": "Naka",
+  "expiredBadge": "{count, plural, =1{{count} ya ƙare} other{{count} sun ƙare}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Canza alama",
+  "categoryLookTitle": "Alama da launi",
+  "categoryLookAppColour": "Launin manhaja",
+  "categoryLookHint": "An zaɓa daga sunan. Taɓa don canzawa.",
+  "renameCategoryTitle": "Sake sunan rukuni",
+  "renameGroupTitle": "Sake sunan ƙungiya",
+  "nameInUse": "Ana amfani da wannan sunan a nan tuni.",
+  "freeGroupsProgress": "Ƙungiyoyin kyauta: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Ka kai iyakar shirin Kyauta na ƙungiyoyi {limit} na kanka. Haɓaka zuwa Premium don ƙirƙirar ƙungiyoyi marasa iyaka.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Jera bisa ranar ƙarewa",
+  "recordsSortName": "Jera bisa suna",
+  "recordsSelect": "Zaɓa",
+  "recordsSelected": "{count, plural, =1{An zaɓi {count}} other{An zaɓi {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Matsar",
+  "recordsMoveTitle": "Matsar zuwa",
+  "recordsMoved": "{count, plural, =1{An matsar da bayani {count}} other{An matsar da bayanai {count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{A share bayani {count}?} other{A share bayanai {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Za su je \"An goge kwanan nan\", inda za ka iya dawo da su cikin kwana 30.",
+  "recordsDeletedMany": "{count, plural, =1{An share bayani {count}} other{An share bayanai {count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Zai ƙare nan ba da daɗewa ba",
+  "recordsShowAll": "{count, plural, =1{Nuna dukkan bayanai} other{Nuna dukkan bayanai {count}}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Babu komai a {group} tukuna",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Duba katin ko takardar da kyamara, ko ka ƙara da hannu. Vaultara za ta tunatar da kai kafin ya ƙare.",
+  "recordsScan": "Duba"
 }

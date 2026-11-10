@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "मासिक रिपोर्ट",
   "storyBusiness3Body": "हरेक महिना रिपोर्टले के मान्य छ, के म्याद सकिँदैछ र के छुटेको छ देखाउँछ।",
   "storyBusiness4Title": "अपडेट माग्नुहोस्",
-  "storyBusiness4Body": "लिंक पठाउनुहोस् र कर्मचारी आफैं नवीकरण गरिएको कागजात अपलोड गर्छन्।"
+  "storyBusiness4Body": "लिंक पठाउनुहोस् र कर्मचारी आफैं नवीकरण गरिएको कागजात अपलोड गर्छन्।",
+  "categoryHealthAndMedical": "स्वास्थ्य र चिकित्सा",
+  "categoryMembershipsAndSubscriptions": "सदस्यता र सब्सक्रिप्सन",
+  "subcategoryFirearmLicences": "हतियार इजाजतपत्र",
+  "subcategoryInternationalDrivingPermits": "अन्तर्राष्ट्रिय सवारी चालक अनुमति",
+  "subcategoryBoatAndPilotLicences": "डुङ्गा र पाइलट लाइसेन्स",
+  "subcategorySafetyCertificates": "प्राथमिक उपचार र सुरक्षा प्रमाणपत्र",
+  "subcategoryElectricalComplianceCertificates": "विद्युत अनुपालन प्रमाणपत्र",
+  "subcategoryFireEquipmentServices": "अग्नि नियन्त्रण उपकरण सर्भिस",
+  "subcategoryMedicalAidCards": "स्वास्थ्य बीमा कार्ड",
+  "subcategoryPrescriptions": "प्रेस्क्रिप्सन",
+  "subcategoryVaccinations": "खोप",
+  "subcategoryMedicalCertificates": "मेडिकल प्रमाणपत्र",
+  "subcategoryGymMemberships": "जिम सदस्यता",
+  "subcategoryClubMemberships": "क्लब सदस्यता",
+  "subcategorySubscriptions": "सब्सक्रिप्सन",
+  "subcategoryWarranties": "वारेन्टी र ग्यारेन्टी",
+  "yoursTag": "तपाईंको",
+  "expiredBadge": "{count, plural, =1{{count} को म्याद सकियो} other{{count} को म्याद सकियो}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "आइकन बदल्नुहोस्",
+  "categoryLookTitle": "आइकन र रङ",
+  "categoryLookAppColour": "एपको रङ",
+  "categoryLookHint": "नामका आधारमा छानियो। बदल्न ट्याप गर्नुहोस्।",
+  "renameCategoryTitle": "श्रेणीको नाम बदल्नुहोस्",
+  "renameGroupTitle": "समूहको नाम बदल्नुहोस्",
+  "nameInUse": "यो नाम यहाँ पहिल्यै प्रयोगमा छ।",
+  "freeGroupsProgress": "निःशुल्क समूह: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "तपाईं निःशुल्क योजनाको {limit} कस्टम समूहको सीमामा पुग्नुभयो। असीमित समूह बनाउन Premium लिनुहोस्।",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "म्याद मितिअनुसार मिलाउनुहोस्",
+  "recordsSortName": "नामअनुसार मिलाउनुहोस्",
+  "recordsSelect": "छान्नुहोस्",
+  "recordsSelected": "{count, plural, =1{{count} छानियो} other{{count} छानिए}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "सार्नुहोस्",
+  "recordsMoveTitle": "यहाँ सार्नुहोस्",
+  "recordsMoved": "{count, plural, =1{{count} रेकर्ड सारियो} other{{count} रेकर्ड सारिए}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} रेकर्ड मेटाउने?} other{{count} रेकर्ड मेटाउने?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "यी \"हालै हटाइएका\" मा जान्छन्, जहाँबाट तपाईं 30 दिनसम्म फिर्ता ल्याउन सक्नुहुन्छ।",
+  "recordsDeletedMany": "{count, plural, =1{{count} रेकर्ड मेटाइयो} other{{count} रेकर्ड मेटाइए}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "छिट्टै म्याद सकिँदै",
+  "recordsShowAll": "{count, plural, =1{सबै रेकर्ड देखाउनुहोस्} other{सबै {count} रेकर्ड देखाउनुहोस्}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} मा अझै केही छैन",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "कार्ड वा कागजात स्क्यान गर्नुहोस्, वा आफैं थप्नुहोस्। म्याद सकिनुअघि Vaultara ले सम्झाउनेछ।",
+  "recordsScan": "स्क्यान गर्नुहोस्"
 }

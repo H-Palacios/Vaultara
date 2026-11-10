@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Месечен извештај",
   "storyBusiness3Body": "Секој месец извештај покажува што важи, што истекува и што недостасува.",
   "storyBusiness4Title": "Побарајте ажурирање",
-  "storyBusiness4Body": "Испратете врска и вработениот сам го прикачува обновениот документ."
+  "storyBusiness4Body": "Испратете врска и вработениот сам го прикачува обновениот документ.",
+  "categoryHealthAndMedical": "Здравје и медицина",
+  "categoryMembershipsAndSubscriptions": "Членства и претплати",
+  "subcategoryFirearmLicences": "Дозволи за оружје",
+  "subcategoryInternationalDrivingPermits": "Меѓународни возачки дозволи",
+  "subcategoryBoatAndPilotLicences": "Дозволи за брод и пилот",
+  "subcategorySafetyCertificates": "Сертификати за прва помош и безбедност",
+  "subcategoryElectricalComplianceCertificates": "Атести за електрични инсталации",
+  "subcategoryFireEquipmentServices": "Сервис на противпожарна опрема",
+  "subcategoryMedicalAidCards": "Картички за здравствено осигурување",
+  "subcategoryPrescriptions": "Рецепти",
+  "subcategoryVaccinations": "Вакцинации",
+  "subcategoryMedicalCertificates": "Лекарски потврди",
+  "subcategoryGymMemberships": "Членства во теретана",
+  "subcategoryClubMemberships": "Членства во клубови",
+  "subcategorySubscriptions": "Претплати",
+  "subcategoryWarranties": "Гаранции",
+  "yoursTag": "Ваше",
+  "expiredBadge": "{count, plural, =1{{count} истечено} other{{count} истечени}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Промени икона",
+  "categoryLookTitle": "Икона и боја",
+  "categoryLookAppColour": "Боја на апликацијата",
+  "categoryLookHint": "Избрано според името. Допрете за промена.",
+  "renameCategoryTitle": "Преименувај категорија",
+  "renameGroupTitle": "Преименувај група",
+  "nameInUse": "Ова име веќе се користи тука.",
+  "freeGroupsProgress": "Бесплатни групи: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Го достигнавте ограничувањето на бесплатниот план од {limit} сопствени групи. Преминете на Premium за неограничен број групи.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Подреди по датум на истекување",
+  "recordsSortName": "Подреди по име",
+  "recordsSelect": "Избери",
+  "recordsSelected": "{count, plural, =1{{count} избрано} other{{count} избрани}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Премести",
+  "recordsMoveTitle": "Премести во",
+  "recordsMoved": "{count, plural, =1{Преместен {count} запис} other{Преместени {count} записи}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Да се избрише {count} запис?} other{Да се избришат {count} записи?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Одат во „Неодамна избришани“, од каде што можете да ги вратите 30 дена.",
+  "recordsDeletedMany": "{count, plural, =1{Избришан {count} запис} other{Избришани {count} записи}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Наскоро истекува",
+  "recordsShowAll": "{count, plural, =1{Прикажи ги сите записи} other{Прикажи ги сите {count} записи}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Сè уште нема ништо во {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Скенирајте ја картичката или документот или додајте рачно. Vaultara ќе ве потсети пред да истече.",
+  "recordsScan": "Скенирај"
 }

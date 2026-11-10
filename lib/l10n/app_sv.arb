@@ -2601,5 +2601,113 @@
   "storyBusiness3Title": "Månadsrapport",
   "storyBusiness3Body": "Varje månad visar en rapport vad som gäller, vad som går ut och vad som saknas.",
   "storyBusiness4Title": "Be om en uppdatering",
-  "storyBusiness4Body": "Skicka en länk så laddar personalen själv upp det förnyade dokumentet."
+  "storyBusiness4Body": "Skicka en länk så laddar personalen själv upp det förnyade dokumentet.",
+  "categoryHealthAndMedical": "Hälsa och sjukvård",
+  "categoryMembershipsAndSubscriptions": "Medlemskap och abonnemang",
+  "subcategoryFirearmLicences": "Vapenlicenser",
+  "subcategoryInternationalDrivingPermits": "Internationella körkort",
+  "subcategoryBoatAndPilotLicences": "Båt- och pilotcertifikat",
+  "subcategorySafetyCertificates": "Certifikat för första hjälpen och säkerhet",
+  "subcategoryElectricalComplianceCertificates": "Elinstallationsintyg",
+  "subcategoryFireEquipmentServices": "Service av brandutrustning",
+  "subcategoryMedicalAidCards": "Sjukförsäkringskort",
+  "subcategoryPrescriptions": "Recept",
+  "subcategoryVaccinations": "Vaccinationer",
+  "subcategoryMedicalCertificates": "Läkarintyg",
+  "subcategoryGymMemberships": "Gymmedlemskap",
+  "subcategoryClubMemberships": "Klubbmedlemskap",
+  "subcategorySubscriptions": "Prenumerationer",
+  "subcategoryWarranties": "Garantier",
+  "yoursTag": "Ditt",
+  "expiredBadge": "{count, plural, =1{{count} har gått ut} other{{count} har gått ut}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Byt ikon",
+  "categoryLookTitle": "Ikon och färg",
+  "categoryLookAppColour": "Appens färg",
+  "categoryLookHint": "Vald utifrån namnet. Tryck för att ändra.",
+  "renameCategoryTitle": "Byt namn på kategori",
+  "renameGroupTitle": "Byt namn på grupp",
+  "nameInUse": "Det namnet används redan här.",
+  "freeGroupsProgress": "Gratisgrupper: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Du har nått gränsen i gratisplanen på {limit} egna grupper. Uppgradera till Premium för obegränsat antal grupper.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sortera efter utgångsdatum",
+  "recordsSortName": "Sortera efter namn",
+  "recordsSelect": "Välj",
+  "recordsSelected": "{count, plural, =1{{count} vald} other{{count} valda}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Flytta",
+  "recordsMoveTitle": "Flytta till",
+  "recordsMoved": "{count, plural, =1{{count} post flyttad} other{{count} poster flyttade}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Radera {count} post?} other{Radera {count} poster?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "De hamnar i ”Nyligen borttagna”, där du kan återställa dem i 30 dagar.",
+  "recordsDeletedMany": "{count, plural, =1{{count} post raderad} other{{count} poster raderade}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Går snart ut",
+  "recordsShowAll": "{count, plural, =1{Visa alla poster} other{Visa alla {count} poster}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Inget i {group} än",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skanna kortet eller dokumentet, eller lägg till det för hand. Vaultara påminner dig innan det går ut.",
+  "recordsScan": "Skanna"
 }

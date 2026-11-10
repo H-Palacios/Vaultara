@@ -7926,4 +7926,184 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Magpadala ng link at ang staff mismo ang mag-a-upload ng na-renew na dokumento.';
+
+  @override
+  String get categoryHealthAndMedical => 'Kalusugan at medikal';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Mga membership at subscription';
+
+  @override
+  String get subcategoryFirearmLicences => 'Mga lisensya sa baril';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Mga international driving permit';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Mga lisensya sa bangka at piloto';
+
+  @override
+  String get subcategorySafetyCertificates => 'Mga sertipiko sa first aid at kaligtasan';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Mga sertipiko ng pagsunod sa kuryente';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Serbisyo ng kagamitang pamatay-sunog';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Mga health insurance card';
+
+  @override
+  String get subcategoryPrescriptions => 'Mga reseta';
+
+  @override
+  String get subcategoryVaccinations => 'Mga bakuna';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Mga medical certificate';
+
+  @override
+  String get subcategoryGymMemberships => 'Mga gym membership';
+
+  @override
+  String get subcategoryClubMemberships => 'Mga club membership';
+
+  @override
+  String get subcategorySubscriptions => 'Mga subscription';
+
+  @override
+  String get subcategoryWarranties => 'Mga warranty at garantiya';
+
+  @override
+  String get yoursTag => 'Iyo';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expired',
+      one: '$count expired',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Palitan ang icon';
+
+  @override
+  String get categoryLookTitle => 'Icon at kulay';
+
+  @override
+  String get categoryLookAppColour => 'Kulay ng app';
+
+  @override
+  String get categoryLookHint => 'Pinili batay sa pangalan. I-tap para palitan.';
+
+  @override
+  String get renameCategoryTitle => 'Palitan ang pangalan ng kategorya';
+
+  @override
+  String get renameGroupTitle => 'Palitan ang pangalan ng grupo';
+
+  @override
+  String get nameInUse => 'Ginagamit na ang pangalang iyan dito.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Mga libreng grupo: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Naabot mo na ang limitasyon ng Free plan na $limit custom na grupo. Mag-upgrade sa Premium para gumawa ng walang limitasyong grupo.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Ayusin ayon sa petsa ng pag-expire';
+
+  @override
+  String get recordsSortName => 'Ayusin ayon sa pangalan';
+
+  @override
+  String get recordsSelect => 'Pumili';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ang napili',
+      one: '$count ang napili',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Ilipat';
+
+  @override
+  String get recordsMoveTitle => 'Ilipat sa';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nailipat ang $count record',
+      one: 'Nailipat ang $count record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Burahin ang $count record?',
+      one: 'Burahin ang $count record?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Mapupunta ang mga ito sa \"Kamakailang tinanggal\", kung saan maibabalik mo sila sa loob ng 30 araw.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nabura ang $count record',
+      one: 'Nabura ang $count record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Malapit nang mag-expire';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ipakita ang lahat ng $count record',
+      one: 'Ipakita ang lahat ng record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Wala pang laman ang $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'I-scan ang card o dokumento, o idagdag nang mano-mano. Paaalalahanan ka ng Vaultara bago ito mag-expire.';
+
+  @override
+  String get recordsScan => 'I-scan';
 }

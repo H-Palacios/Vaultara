@@ -7995,4 +7995,184 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu.';
+
+  @override
+  String get categoryHealthAndMedical => 'Veselība un medicīna';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Dalība un abonementi';
+
+  @override
+  String get subcategoryFirearmLicences => 'Ieroču atļaujas';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Starptautiskās vadītāja apliecības';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Kuģa vadītāja un pilota apliecības';
+
+  @override
+  String get subcategorySafetyCertificates => 'Pirmās palīdzības un drošības sertifikāti';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Elektroinstalācijas pārbaudes akti';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Ugunsdzēsības aprīkojuma apkope';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Veselības apdrošināšanas kartes';
+
+  @override
+  String get subcategoryPrescriptions => 'Receptes';
+
+  @override
+  String get subcategoryVaccinations => 'Vakcinācijas';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Medicīniskās izziņas';
+
+  @override
+  String get subcategoryGymMemberships => 'Sporta zāles abonementi';
+
+  @override
+  String get subcategoryClubMemberships => 'Klubu biedru kartes';
+
+  @override
+  String get subcategorySubscriptions => 'Abonementi';
+
+  @override
+  String get subcategoryWarranties => 'Garantijas';
+
+  @override
+  String get yoursTag => 'Jūsu';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beigušies: $count',
+      one: '$count beidzies',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Mainīt ikonu';
+
+  @override
+  String get categoryLookTitle => 'Ikona un krāsa';
+
+  @override
+  String get categoryLookAppColour => 'Lietotnes krāsa';
+
+  @override
+  String get categoryLookHint => 'Izvēlēta pēc nosaukuma. Pieskarieties, lai mainītu.';
+
+  @override
+  String get renameCategoryTitle => 'Pārdēvēt kategoriju';
+
+  @override
+  String get renameGroupTitle => 'Pārdēvēt grupu';
+
+  @override
+  String get nameInUse => 'Šis nosaukums šeit jau tiek izmantots.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Bezmaksas grupas: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Jūs esat sasniedzis bezmaksas plāna ierobežojumu – $limit pašu grupas. Pārejiet uz Premium, lai veidotu neierobežoti grupu.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Kārtot pēc derīguma termiņa';
+
+  @override
+  String get recordsSortName => 'Kārtot pēc nosaukuma';
+
+  @override
+  String get recordsSelect => 'Atlasīt';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atlasīti: $count',
+      one: 'Atlasīts: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Pārvietot';
+
+  @override
+  String get recordsMoveTitle => 'Pārvietot uz';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pārvietoti ieraksti: $count',
+      one: 'Pārvietots $count ieraksts',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dzēst ierakstus: $count?',
+      one: 'Dzēst $count ierakstu?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Tie nonāks sadaļā “Nesen dzēstie”, kur tos varēsiet atjaunot 30 dienas.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izdzēsti ieraksti: $count',
+      one: 'Izdzēsts $count ieraksts',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Drīz beigsies';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rādīt visus ierakstus ($count)',
+      one: 'Rādīt visus ierakstus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Grupā $group vēl nekā nav';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Noskenējiet karti vai dokumentu vai pievienojiet manuāli. Vaultara atgādinās, pirms beigsies derīgums.';
+
+  @override
+  String get recordsScan => 'Skenēt';
 }

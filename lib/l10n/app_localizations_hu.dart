@@ -7926,4 +7926,184 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot.';
+
+  @override
+  String get categoryHealthAndMedical => 'Egészség és orvosi';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Tagságok és előfizetések';
+
+  @override
+  String get subcategoryFirearmLicences => 'Fegyvertartási engedélyek';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Nemzetközi vezetői engedélyek';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Hajó- és pilótaengedélyek';
+
+  @override
+  String get subcategorySafetyCertificates => 'Elsősegély- és biztonsági tanúsítványok';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Villamos biztonsági jegyzőkönyvek';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Tűzvédelmi eszközök karbantartása';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Egészségbiztosítási kártyák';
+
+  @override
+  String get subcategoryPrescriptions => 'Receptek';
+
+  @override
+  String get subcategoryVaccinations => 'Oltások';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Orvosi igazolások';
+
+  @override
+  String get subcategoryGymMemberships => 'Edzőtermi bérletek';
+
+  @override
+  String get subcategoryClubMemberships => 'Klubtagságok';
+
+  @override
+  String get subcategorySubscriptions => 'Előfizetések';
+
+  @override
+  String get subcategoryWarranties => 'Garanciák';
+
+  @override
+  String get yoursTag => 'Saját';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lejárt',
+      one: '$count lejárt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Ikon módosítása';
+
+  @override
+  String get categoryLookTitle => 'Ikon és szín';
+
+  @override
+  String get categoryLookAppColour => 'Az app színe';
+
+  @override
+  String get categoryLookHint => 'A név alapján választva. Koppints a módosításhoz.';
+
+  @override
+  String get renameCategoryTitle => 'Kategória átnevezése';
+
+  @override
+  String get renameGroupTitle => 'Csoport átnevezése';
+
+  @override
+  String get nameInUse => 'Ez a név itt már foglalt.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Ingyenes csoportok: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Elérted az ingyenes csomag $limit saját csoportos korlátját. Válts Premiumra a korlátlan csoportokért.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Rendezés lejárat szerint';
+
+  @override
+  String get recordsSortName => 'Rendezés név szerint';
+
+  @override
+  String get recordsSelect => 'Kijelölés';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kijelölve',
+      one: '$count kijelölve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Áthelyezés';
+
+  @override
+  String get recordsMoveTitle => 'Áthelyezés ide';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tétel áthelyezve',
+      one: '$count tétel áthelyezve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Törlöd a(z) $count tételt?',
+      one: 'Törlöd az $count tételt?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'A(z) „Nemrég törölt elemek” helyre kerülnek, ahonnan 30 napig visszaállíthatod őket.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tétel törölve',
+      one: '$count tétel törölve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Hamarosan lejár';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mind a(z) $count tétel mutatása',
+      one: 'Összes tétel mutatása',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Még nincs semmi itt: $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Szkenneld be a kártyát vagy dokumentumot, vagy add hozzá kézzel. A Vaultara lejárat előtt emlékeztet.';
+
+  @override
+  String get recordsScan => 'Szkennelés';
 }

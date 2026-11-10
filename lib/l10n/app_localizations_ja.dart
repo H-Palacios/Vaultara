@@ -7856,4 +7856,184 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'リンクを送ると、スタッフが更新した書類を自分でアップロードします。';
+
+  @override
+  String get categoryHealthAndMedical => '健康・医療';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => '会員・サブスクリプション';
+
+  @override
+  String get subcategoryFirearmLicences => '銃砲所持許可証';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => '国際運転免許証';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => '船舶・操縦士免許';
+
+  @override
+  String get subcategorySafetyCertificates => '救急・安全資格証';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => '電気設備検査証明書';
+
+  @override
+  String get subcategoryFireEquipmentServices => '消防設備点検';
+
+  @override
+  String get subcategoryMedicalAidCards => '健康保険証';
+
+  @override
+  String get subcategoryPrescriptions => '処方箋';
+
+  @override
+  String get subcategoryVaccinations => '予防接種';
+
+  @override
+  String get subcategoryMedicalCertificates => '診断書';
+
+  @override
+  String get subcategoryGymMemberships => 'ジム会員';
+
+  @override
+  String get subcategoryClubMemberships => 'クラブ会員';
+
+  @override
+  String get subcategorySubscriptions => 'サブスクリプション';
+
+  @override
+  String get subcategoryWarranties => '保証書';
+
+  @override
+  String get yoursTag => '自分用';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '期限切れ $count件',
+      one: '期限切れ $count件',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'アイコンを変更';
+
+  @override
+  String get categoryLookTitle => 'アイコンと色';
+
+  @override
+  String get categoryLookAppColour => 'アプリの色';
+
+  @override
+  String get categoryLookHint => '名前から選びました。タップして変更できます。';
+
+  @override
+  String get renameCategoryTitle => 'カテゴリ名を変更';
+
+  @override
+  String get renameGroupTitle => 'グループ名を変更';
+
+  @override
+  String get nameInUse => 'この名前はすでに使われています。';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return '無料グループ: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return '無料プランのカスタムグループ上限（$limit個）に達しました。Premiumにアップグレードすると無制限に作成できます。';
+  }
+
+  @override
+  String get recordsSortExpiry => '有効期限順に並べ替え';
+
+  @override
+  String get recordsSortName => '名前順に並べ替え';
+
+  @override
+  String get recordsSelect => '選択';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count件選択中',
+      one: '$count件選択中',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => '移動';
+
+  @override
+  String get recordsMoveTitle => '移動先';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count件を移動しました',
+      one: '$count件を移動しました',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count件を削除しますか？',
+      one: '$count件を削除しますか？',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '「最近削除された項目」に移動し、30日間は元に戻せます。';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count件を削除しました',
+      one: '$count件を削除しました',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'まもなく期限';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count件すべてを表示',
+      one: 'すべての記録を表示',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$groupはまだありません';
+  }
+
+  @override
+  String get recordsEmptyBody => 'カードや書類をスキャンするか、手動で追加してください。期限が切れる前にVaultaraがお知らせします。';
+
+  @override
+  String get recordsScan => 'スキャン';
 }

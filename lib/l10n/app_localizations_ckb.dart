@@ -7926,4 +7926,184 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'بەستەرێک بنێرە و کارمەندەکە خۆی بەڵگەنامە نوێکراوەکە بار دەکات.';
+
+  @override
+  String get categoryHealthAndMedical => 'تەندروستی و پزیشکی';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'ئەندامێتی و بەشداریکردن';
+
+  @override
+  String get subcategoryFirearmLicences => 'مۆڵەتی چەک';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'مۆڵەتی شوفێری نێودەوڵەتی';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'مۆڵەتی بەلەم و فڕۆکەوان';
+
+  @override
+  String get subcategorySafetyCertificates => 'بڕوانامەی فریاگوزاری سەرەتایی و سەلامەتی';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'بڕوانامەی گونجاندنی کارەبا';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'خزمەتگوزاری ئامێری ئاگرکوژێنەوە';
+
+  @override
+  String get subcategoryMedicalAidCards => 'کارتی بیمەی تەندروستی';
+
+  @override
+  String get subcategoryPrescriptions => 'ڕەچەتە';
+
+  @override
+  String get subcategoryVaccinations => 'کوتان';
+
+  @override
+  String get subcategoryMedicalCertificates => 'ڕاپۆرتی پزیشکی';
+
+  @override
+  String get subcategoryGymMemberships => 'ئەندامێتی هۆڵی وەرزش';
+
+  @override
+  String get subcategoryClubMemberships => 'ئەندامێتی یانە';
+
+  @override
+  String get subcategorySubscriptions => 'بەشداریکردن';
+
+  @override
+  String get subcategoryWarranties => 'گەرەنتی';
+
+  @override
+  String get yoursTag => 'هی تۆ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count بەسەرچوون',
+      one: '$count بەسەرچووە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'گۆڕینی ئایکۆن';
+
+  @override
+  String get categoryLookTitle => 'ئایکۆن و ڕەنگ';
+
+  @override
+  String get categoryLookAppColour => 'ڕەنگی ئەپ';
+
+  @override
+  String get categoryLookHint => 'بەپێی ناو هەڵبژێردرا. بۆ گۆڕین دەستی لێبدە.';
+
+  @override
+  String get renameCategoryTitle => 'گۆڕینی ناوی هاوپۆل';
+
+  @override
+  String get renameGroupTitle => 'گۆڕینی ناوی گروپ';
+
+  @override
+  String get nameInUse => 'ئەم ناوە پێشتر لێرە بەکارهاتووە.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'گروپی بێبەرامبەر: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'گەیشتیتە سنووری پلانی بێبەرامبەر کە $limit گروپی تایبەتە. بۆ گروپی بێسنوور بچۆ سەر Premium.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'ڕیزکردن بەپێی بەرواری بەسەرچوون';
+
+  @override
+  String get recordsSortName => 'ڕیزکردن بەپێی ناو';
+
+  @override
+  String get recordsSelect => 'هەڵبژاردن';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هەڵبژێردران',
+      one: '$count هەڵبژێردرا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'گواستنەوە';
+
+  @override
+  String get recordsMoveTitle => 'گواستنەوە بۆ';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تۆمار گوازرانەوە',
+      one: '$count تۆمار گوازرایەوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تۆمار بسڕدرێنەوە؟',
+      one: '$count تۆمار بسڕدرێتەوە؟',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'دەچنە «بەتازەیی سڕاوەکان»، لەوێ تا 30 ڕۆژ دەتوانیت بیانگەڕێنیتەوە.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تۆمار سڕانەوە',
+      one: '$count تۆمار سڕایەوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'بەم زووانە بەسەردەچێت';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'پیشاندانی هەموو $count تۆمارەکە',
+      one: 'پیشاندانی هەموو تۆمارەکان',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'هێشتا هیچ لە $group دا نییە';
+  }
+
+  @override
+  String get recordsEmptyBody => 'کارت یان بەڵگەنامەکە سکان بکە، یان بە دەست زیادی بکە. Vaultara پێش بەسەرچوون بیرت دەخاتەوە.';
+
+  @override
+  String get recordsScan => 'سکان';
 }

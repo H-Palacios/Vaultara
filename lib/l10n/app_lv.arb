@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Mēneša pārskats",
   "storyBusiness3Body": "Katru mēnesi pārskats parāda, kas ir derīgs, kam beidzas termiņš un kā trūkst.",
   "storyBusiness4Title": "Pieprasi atjauninājumu",
-  "storyBusiness4Body": "Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu."
+  "storyBusiness4Body": "Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu.",
+  "categoryHealthAndMedical": "Veselība un medicīna",
+  "categoryMembershipsAndSubscriptions": "Dalība un abonementi",
+  "subcategoryFirearmLicences": "Ieroču atļaujas",
+  "subcategoryInternationalDrivingPermits": "Starptautiskās vadītāja apliecības",
+  "subcategoryBoatAndPilotLicences": "Kuģa vadītāja un pilota apliecības",
+  "subcategorySafetyCertificates": "Pirmās palīdzības un drošības sertifikāti",
+  "subcategoryElectricalComplianceCertificates": "Elektroinstalācijas pārbaudes akti",
+  "subcategoryFireEquipmentServices": "Ugunsdzēsības aprīkojuma apkope",
+  "subcategoryMedicalAidCards": "Veselības apdrošināšanas kartes",
+  "subcategoryPrescriptions": "Receptes",
+  "subcategoryVaccinations": "Vakcinācijas",
+  "subcategoryMedicalCertificates": "Medicīniskās izziņas",
+  "subcategoryGymMemberships": "Sporta zāles abonementi",
+  "subcategoryClubMemberships": "Klubu biedru kartes",
+  "subcategorySubscriptions": "Abonementi",
+  "subcategoryWarranties": "Garantijas",
+  "yoursTag": "Jūsu",
+  "expiredBadge": "{count, plural, =1{{count} beidzies} other{Beigušies: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Mainīt ikonu",
+  "categoryLookTitle": "Ikona un krāsa",
+  "categoryLookAppColour": "Lietotnes krāsa",
+  "categoryLookHint": "Izvēlēta pēc nosaukuma. Pieskarieties, lai mainītu.",
+  "renameCategoryTitle": "Pārdēvēt kategoriju",
+  "renameGroupTitle": "Pārdēvēt grupu",
+  "nameInUse": "Šis nosaukums šeit jau tiek izmantots.",
+  "freeGroupsProgress": "Bezmaksas grupas: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Jūs esat sasniedzis bezmaksas plāna ierobežojumu – {limit} pašu grupas. Pārejiet uz Premium, lai veidotu neierobežoti grupu.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Kārtot pēc derīguma termiņa",
+  "recordsSortName": "Kārtot pēc nosaukuma",
+  "recordsSelect": "Atlasīt",
+  "recordsSelected": "{count, plural, =1{Atlasīts: {count}} other{Atlasīti: {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Pārvietot",
+  "recordsMoveTitle": "Pārvietot uz",
+  "recordsMoved": "{count, plural, =1{Pārvietots {count} ieraksts} other{Pārvietoti ieraksti: {count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Dzēst {count} ierakstu?} other{Dzēst ierakstus: {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Tie nonāks sadaļā “Nesen dzēstie”, kur tos varēsiet atjaunot 30 dienas.",
+  "recordsDeletedMany": "{count, plural, =1{Izdzēsts {count} ieraksts} other{Izdzēsti ieraksti: {count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Drīz beigsies",
+  "recordsShowAll": "{count, plural, =1{Rādīt visus ierakstus} other{Rādīt visus ierakstus ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Grupā {group} vēl nekā nav",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Noskenējiet karti vai dokumentu vai pievienojiet manuāli. Vaultara atgādinās, pirms beigsies derīgums.",
+  "recordsScan": "Skenēt"
 }

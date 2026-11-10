@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Mėnesio ataskaita",
   "storyBusiness3Body": "Kas mėnesį ataskaita parodo, kas galioja, kas baigiasi ir ko trūksta.",
   "storyBusiness4Title": "Paprašykite atnaujinimo",
-  "storyBusiness4Body": "Išsiųskite nuorodą, ir darbuotojas pats įkels atnaujintą dokumentą."
+  "storyBusiness4Body": "Išsiųskite nuorodą, ir darbuotojas pats įkels atnaujintą dokumentą.",
+  "categoryHealthAndMedical": "Sveikata ir medicina",
+  "categoryMembershipsAndSubscriptions": "Narystės ir prenumeratos",
+  "subcategoryFirearmLicences": "Ginklų leidimai",
+  "subcategoryInternationalDrivingPermits": "Tarptautiniai vairuotojo pažymėjimai",
+  "subcategoryBoatAndPilotLicences": "Laivavedžio ir piloto licencijos",
+  "subcategorySafetyCertificates": "Pirmosios pagalbos ir saugos pažymėjimai",
+  "subcategoryElectricalComplianceCertificates": "Elektros instaliacijos patikros aktai",
+  "subcategoryFireEquipmentServices": "Gaisrinės įrangos aptarnavimas",
+  "subcategoryMedicalAidCards": "Sveikatos draudimo kortelės",
+  "subcategoryPrescriptions": "Receptai",
+  "subcategoryVaccinations": "Skiepai",
+  "subcategoryMedicalCertificates": "Medicininės pažymos",
+  "subcategoryGymMemberships": "Sporto klubo narystės",
+  "subcategoryClubMemberships": "Klubų narystės",
+  "subcategorySubscriptions": "Prenumeratos",
+  "subcategoryWarranties": "Garantijos",
+  "yoursTag": "Jūsų",
+  "expiredBadge": "{count, plural, =1{{count} nebegalioja} other{Nebegalioja: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Keisti piktogramą",
+  "categoryLookTitle": "Piktograma ir spalva",
+  "categoryLookAppColour": "Programėlės spalva",
+  "categoryLookHint": "Parinkta pagal pavadinimą. Bakstelėkite, kad pakeistumėte.",
+  "renameCategoryTitle": "Pervadinti kategoriją",
+  "renameGroupTitle": "Pervadinti grupę",
+  "nameInUse": "Šis pavadinimas čia jau naudojamas.",
+  "freeGroupsProgress": "Nemokamos grupės: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Pasiekėte nemokamo plano ribą – {limit} savų grupių. Pereikite prie Premium ir kurkite neribotai grupių.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Rikiuoti pagal galiojimo datą",
+  "recordsSortName": "Rikiuoti pagal pavadinimą",
+  "recordsSelect": "Pasirinkti",
+  "recordsSelected": "{count, plural, =1{Pasirinkta: {count}} other{Pasirinkta: {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Perkelti",
+  "recordsMoveTitle": "Perkelti į",
+  "recordsMoved": "{count, plural, =1{Perkeltas {count} įrašas} other{Perkelta įrašų: {count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Ištrinti {count} įrašą?} other{Ištrinti įrašų: {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Jie bus perkelti į „Neseniai ištrinti“, iš kur juos galėsite atkurti 30 dienų.",
+  "recordsDeletedMany": "{count, plural, =1{Ištrintas {count} įrašas} other{Ištrinta įrašų: {count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Greitai baigs galioti",
+  "recordsShowAll": "{count, plural, =1{Rodyti visus įrašus} other{Rodyti visus įrašus ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Grupėje {group} dar nieko nėra",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Nuskenuokite kortelę ar dokumentą arba pridėkite rankiniu būdu. Vaultara primins prieš baigiantis galiojimui.",
+  "recordsScan": "Skenuoti"
 }

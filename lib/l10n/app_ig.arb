@@ -2613,5 +2613,113 @@
   "storyBusiness3Title": "Akụkọ kwa ọnwa",
   "storyBusiness3Body": "Ọnwa ọ bụla akụkọ na-egosi ihe dị irè, ihe na-agwụ na ihe na-efu.",
   "storyBusiness4Title": "Rịọ maka mmelite",
-  "storyBusiness4Body": "Ziga njikọ ma onye ọrụ ga-ebulite akwụkwọ emegharịrị n'onwe ya."
+  "storyBusiness4Body": "Ziga njikọ ma onye ọrụ ga-ebulite akwụkwọ emegharịrị n'onwe ya.",
+  "categoryHealthAndMedical": "Ahụike na ọgwụ",
+  "categoryMembershipsAndSubscriptions": "Ndị otu na ndebanye aha",
+  "subcategoryFirearmLicences": "Akwụkwọ ikike egbe",
+  "subcategoryInternationalDrivingPermits": "Akwụkwọ ikike ịnya ụgbọ mba ụwa",
+  "subcategoryBoatAndPilotLicences": "Akwụkwọ ikike ụgbọ mmiri na onye ọkwọ ụgbọ elu",
+  "subcategorySafetyCertificates": "Asambodo enyemaka mbụ na nchekwa",
+  "subcategoryElectricalComplianceCertificates": "Asambodo nnabata ọkụ eletrik",
+  "subcategoryFireEquipmentServices": "Ọrụ ngwa mgbochi ọkụ",
+  "subcategoryMedicalAidCards": "Kaadị mkpuchi ahụike",
+  "subcategoryPrescriptions": "Ndenye ọgwụ",
+  "subcategoryVaccinations": "Ọgwụ mgbochi",
+  "subcategoryMedicalCertificates": "Asambodo ahụike",
+  "subcategoryGymMemberships": "Ndị otu jim",
+  "subcategoryClubMemberships": "Ndị otu klọb",
+  "subcategorySubscriptions": "Ndebanye aha",
+  "subcategoryWarranties": "Nkwa",
+  "yoursTag": "Nke gị",
+  "expiredBadge": "{count, plural, =1{{count} agwụla} other{{count} agwụla}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Gbanwee akara ngosi",
+  "categoryLookTitle": "Akara ngosi na agba",
+  "categoryLookAppColour": "Agba ngwa",
+  "categoryLookHint": "Ahọrọ ya site n'aha. Pịa ka ịgbanwee.",
+  "renameCategoryTitle": "Gbanwee aha ụdị",
+  "renameGroupTitle": "Gbanwee aha otu",
+  "nameInUse": "A na-eji aha ahụ ebe a.",
+  "freeGroupsProgress": "Otu n'efu: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Ị ruola oke atụmatụ n'efu nke otu {limit} nke gị. Kwalite gaa Premium ka ị mepụta otu na-enweghị njedebe.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Hazie site n'ụbọchị njedebe",
+  "recordsSortName": "Hazie site n'aha",
+  "recordsSelect": "Họrọ",
+  "recordsSelected": "{count, plural, =1{Ahọrọla {count}} other{Ahọrọla {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Bugharịa",
+  "recordsMoveTitle": "Bugharịa gaa",
+  "recordsMoved": "{count, plural, =1{Ebugharịala ndekọ {count}} other{Ebugharịala ndekọ {count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Hichapụ ndekọ {count}?} other{Hichapụ ndekọ {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ha na-aga na \"E wepụrụ n'oge na-adịbeghị anya\", ebe ị nwere ike iweghachi ha n'ime ụbọchị 30.",
+  "recordsDeletedMany": "{count, plural, =1{Ehichapụla ndekọ {count}} other{Ehichapụla ndekọ {count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Ọ ga-agwụ n'oge na-adịghị anya",
+  "recordsShowAll": "{count, plural, =1{Gosi ndekọ niile} other{Gosi ndekọ {count} niile}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ọ nweghị ihe dị na {group} ugbu a",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Nyochaa kaadị ma ọ bụ akwụkwọ, ma ọ bụ tinye ya n'aka. Vaultara ga-echetara gị tupu ọ gwụ.",
+  "recordsScan": "Nyochaa"
 }

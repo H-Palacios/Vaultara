@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "මාසික වාර්තාව",
   "storyBusiness3Body": "සෑම මසකම වලංගු දේ, කල් ඉකුත් වන දේ සහ නැති දේ වාර්තාවක් පෙන්වයි.",
   "storyBusiness4Title": "යාවත්කාලීනයක් ඉල්ලන්න",
-  "storyBusiness4Body": "සබැඳියක් යවන්න, කාර්ය මණ්ඩල සාමාජිකයා අලුත් කළ ලේඛනය තමාම උඩුගත කරයි."
+  "storyBusiness4Body": "සබැඳියක් යවන්න, කාර්ය මණ්ඩල සාමාජිකයා අලුත් කළ ලේඛනය තමාම උඩුගත කරයි.",
+  "categoryHealthAndMedical": "සෞඛ්‍ය සහ වෛද්‍ය",
+  "categoryMembershipsAndSubscriptions": "සාමාජිකත්ව සහ දායකත්ව",
+  "subcategoryFirearmLicences": "ගිනි අවි බලපත්‍ර",
+  "subcategoryInternationalDrivingPermits": "ජාත්‍යන්තර රියදුරු අවසරපත්‍ර",
+  "subcategoryBoatAndPilotLicences": "බෝට්ටු සහ නියමු බලපත්‍ර",
+  "subcategorySafetyCertificates": "ප්‍රථමාධාර සහ ආරක්ෂණ සහතික",
+  "subcategoryElectricalComplianceCertificates": "විදුලි අනුකූලතා සහතික",
+  "subcategoryFireEquipmentServices": "ගිනි නිවන උපකරණ සේවා",
+  "subcategoryMedicalAidCards": "සෞඛ්‍ය රක්ෂණ කාඩ්පත්",
+  "subcategoryPrescriptions": "බෙහෙත් වට්ටෝරු",
+  "subcategoryVaccinations": "එන්නත්",
+  "subcategoryMedicalCertificates": "වෛද්‍ය සහතික",
+  "subcategoryGymMemberships": "ජිම් සාමාජිකත්ව",
+  "subcategoryClubMemberships": "සමාජ සාමාජිකත්ව",
+  "subcategorySubscriptions": "දායකත්ව",
+  "subcategoryWarranties": "වගකීම් සහ සහතික",
+  "yoursTag": "ඔබේ",
+  "expiredBadge": "{count, plural, =1{{count}ක් කල් ඉකුත් වී ඇත} other{{count}ක් කල් ඉකුත් වී ඇත}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "නිරූපකය වෙනස් කරන්න",
+  "categoryLookTitle": "නිරූපකය සහ වර්ණය",
+  "categoryLookAppColour": "යෙදුමේ වර්ණය",
+  "categoryLookHint": "නමින් තෝරා ගන්නා ලදී. වෙනස් කිරීමට තට්ටු කරන්න.",
+  "renameCategoryTitle": "කාණ්ඩය නැවත නම් කරන්න",
+  "renameGroupTitle": "කණ්ඩායම නැවත නම් කරන්න",
+  "nameInUse": "මෙම නම මෙහි දැනටමත් භාවිතයේ ඇත.",
+  "freeGroupsProgress": "නොමිලේ කණ්ඩායම්: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "ඔබ නොමිලේ සැලැස්මේ අභිරුචි කණ්ඩායම් {limit} සීමාවට ළඟා වී ඇත. අසීමිත කණ්ඩායම් සඳහා Premium වෙත උත්ශ්‍රේණි කරන්න.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "කල් ඉකුත් වන දිනය අනුව පෙළගස්වන්න",
+  "recordsSortName": "නම අනුව පෙළගස්වන්න",
+  "recordsSelect": "තෝරන්න",
+  "recordsSelected": "{count, plural, =1{{count}ක් තෝරා ඇත} other{{count}ක් තෝරා ඇත}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ගෙන යන්න",
+  "recordsMoveTitle": "මෙතැනට ගෙන යන්න",
+  "recordsMoved": "{count, plural, =1{වාර්තා {count}ක් ගෙන ගියා} other{වාර්තා {count}ක් ගෙන ගියා}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{වාර්තා {count}ක් මකන්නද?} other{වාර්තා {count}ක් මකන්නද?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ඒවා \"මෑතකදී මකන ලද\" වෙත යයි, එතැනින් දින 30ක් ඇතුළත ආපසු ගත හැක.",
+  "recordsDeletedMany": "{count, plural, =1{වාර්තා {count}ක් මැකුවා} other{වාර්තා {count}ක් මැකුවා}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ඉක්මනින් කල් ඉකුත් වේ",
+  "recordsShowAll": "{count, plural, =1{සියලු වාර්තා පෙන්වන්න} other{වාර්තා {count}ම පෙන්වන්න}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} තුළ තවම කිසිවක් නැත",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "කාඩ්පත හෝ ලේඛනය ස්කෑන් කරන්න, නැතහොත් අතින් එක් කරන්න. කල් ඉකුත් වීමට පෙර Vaultara මතක් කරයි.",
+  "recordsScan": "ස්කෑන් කරන්න"
 }

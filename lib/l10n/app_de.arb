@@ -2639,5 +2639,113 @@
   "storyBusiness3Title": "Monatsbericht",
   "storyBusiness3Body": "Ein Bericht jeden Monat zeigt, was gültig ist, was abläuft und was fehlt.",
   "storyBusiness4Title": "Eine Aktualisierung anfordern",
-  "storyBusiness4Body": "Sende einen Link, und Mitarbeitende laden ihr verlängertes Dokument selbst hoch."
+  "storyBusiness4Body": "Sende einen Link, und Mitarbeitende laden ihr verlängertes Dokument selbst hoch.",
+  "categoryHealthAndMedical": "Gesundheit und Medizin",
+  "categoryMembershipsAndSubscriptions": "Mitgliedschaften und Abos",
+  "subcategoryFirearmLicences": "Waffenscheine",
+  "subcategoryInternationalDrivingPermits": "Internationale Führerscheine",
+  "subcategoryBoatAndPilotLicences": "Boots- und Pilotenscheine",
+  "subcategorySafetyCertificates": "Erste-Hilfe- und Sicherheitszertifikate",
+  "subcategoryElectricalComplianceCertificates": "Elektro-Prüfprotokolle",
+  "subcategoryFireEquipmentServices": "Brandschutzwartungen",
+  "subcategoryMedicalAidCards": "Krankenkassenkarten",
+  "subcategoryPrescriptions": "Rezepte",
+  "subcategoryVaccinations": "Impfungen",
+  "subcategoryMedicalCertificates": "Ärztliche Atteste",
+  "subcategoryGymMemberships": "Fitnessstudio-Mitgliedschaften",
+  "subcategoryClubMemberships": "Vereinsmitgliedschaften",
+  "subcategorySubscriptions": "Abonnements",
+  "subcategoryWarranties": "Garantien",
+  "yoursTag": "Deins",
+  "expiredBadge": "{count, plural, =1{{count} abgelaufen} other{{count} abgelaufen}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Symbol ändern",
+  "categoryLookTitle": "Symbol und Farbe",
+  "categoryLookAppColour": "App-Farbe",
+  "categoryLookHint": "Aus dem Namen gewählt. Zum Ändern tippen.",
+  "renameCategoryTitle": "Kategorie umbenennen",
+  "renameGroupTitle": "Gruppe umbenennen",
+  "nameInUse": "Dieser Name wird hier schon verwendet.",
+  "freeGroupsProgress": "Kostenlose Gruppen: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Du hast das Limit des Free-Plans von {limit} eigenen Gruppen erreicht. Mit Premium kannst du unbegrenzt Gruppen erstellen.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Nach Ablaufdatum sortieren",
+  "recordsSortName": "Nach Name sortieren",
+  "recordsSelect": "Auswählen",
+  "recordsSelected": "{count, plural, =1{{count} ausgewählt} other{{count} ausgewählt}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Verschieben",
+  "recordsMoveTitle": "Verschieben nach",
+  "recordsMoved": "{count, plural, =1{{count} Eintrag verschoben} other{{count} Einträge verschoben}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} Eintrag löschen?} other{{count} Einträge löschen?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Sie kommen in „Kürzlich gelöscht“, wo du sie 30 Tage lang wiederherstellen kannst.",
+  "recordsDeletedMany": "{count, plural, =1{{count} Eintrag gelöscht} other{{count} Einträge gelöscht}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Bald fällig",
+  "recordsShowAll": "{count, plural, =1{Alle Einträge anzeigen} other{Alle {count} Einträge anzeigen}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Noch keine {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scanne die Karte oder das Dokument oder füge es manuell hinzu. Vaultara erinnert dich, bevor es abläuft.",
+  "recordsScan": "Scannen"
 }

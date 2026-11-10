@@ -2625,5 +2625,113 @@
   "storyBusiness3Title": "รายงานรายเดือน",
   "storyBusiness3Body": "ทุกเดือนจะมีรายงานว่าอะไรยังใช้ได้ อะไรกำลังหมดอายุ และอะไรขาดหายไป",
   "storyBusiness4Title": "ขอการอัปเดต",
-  "storyBusiness4Body": "ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง"
+  "storyBusiness4Body": "ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง",
+  "categoryHealthAndMedical": "สุขภาพและการแพทย์",
+  "categoryMembershipsAndSubscriptions": "สมาชิกและการสมัครรับ",
+  "subcategoryFirearmLicences": "ใบอนุญาตอาวุธปืน",
+  "subcategoryInternationalDrivingPermits": "ใบขับขี่สากล",
+  "subcategoryBoatAndPilotLicences": "ใบอนุญาตเรือและนักบิน",
+  "subcategorySafetyCertificates": "ใบรับรองปฐมพยาบาลและความปลอดภัย",
+  "subcategoryElectricalComplianceCertificates": "ใบรับรองระบบไฟฟ้า",
+  "subcategoryFireEquipmentServices": "การบำรุงรักษาอุปกรณ์ดับเพลิง",
+  "subcategoryMedicalAidCards": "บัตรประกันสุขภาพ",
+  "subcategoryPrescriptions": "ใบสั่งยา",
+  "subcategoryVaccinations": "การฉีดวัคซีน",
+  "subcategoryMedicalCertificates": "ใบรับรองแพทย์",
+  "subcategoryGymMemberships": "สมาชิกฟิตเนส",
+  "subcategoryClubMemberships": "สมาชิกสโมสร",
+  "subcategorySubscriptions": "การสมัครรับ",
+  "subcategoryWarranties": "การรับประกัน",
+  "yoursTag": "ของคุณ",
+  "expiredBadge": "{count, plural, =1{หมดอายุ {count} รายการ} other{หมดอายุ {count} รายการ}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "เปลี่ยนไอคอน",
+  "categoryLookTitle": "ไอคอนและสี",
+  "categoryLookAppColour": "สีของแอป",
+  "categoryLookHint": "เลือกจากชื่อแล้ว แตะเพื่อเปลี่ยน",
+  "renameCategoryTitle": "เปลี่ยนชื่อหมวดหมู่",
+  "renameGroupTitle": "เปลี่ยนชื่อกลุ่ม",
+  "nameInUse": "ชื่อนี้ถูกใช้แล้วที่นี่",
+  "freeGroupsProgress": "กลุ่มฟรี: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "คุณใช้กลุ่มที่สร้างเองครบ {limit} กลุ่มตามขีดจำกัดของแผนฟรีแล้ว อัปเกรดเป็น Premium เพื่อสร้างกลุ่มได้ไม่จำกัด",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "เรียงตามวันหมดอายุ",
+  "recordsSortName": "เรียงตามชื่อ",
+  "recordsSelect": "เลือก",
+  "recordsSelected": "{count, plural, =1{เลือก {count} รายการ} other{เลือก {count} รายการ}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ย้าย",
+  "recordsMoveTitle": "ย้ายไปที่",
+  "recordsMoved": "{count, plural, =1{ย้าย {count} รายการแล้ว} other{ย้าย {count} รายการแล้ว}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{ลบ {count} รายการไหม} other{ลบ {count} รายการไหม}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "รายการจะไปอยู่ใน \"ลบล่าสุด\" ซึ่งกู้คืนได้ภายใน 30 วัน",
+  "recordsDeletedMany": "{count, plural, =1{ลบ {count} รายการแล้ว} other{ลบ {count} รายการแล้ว}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ใกล้หมดอายุ",
+  "recordsShowAll": "{count, plural, =1{แสดงทุกรายการ} other{แสดงทั้งหมด {count} รายการ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "ยังไม่มี{group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "สแกนบัตรหรือเอกสาร หรือเพิ่มเอง Vaultara จะเตือนคุณก่อนหมดอายุ",
+  "recordsScan": "สแกน"
 }

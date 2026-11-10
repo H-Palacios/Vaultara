@@ -7856,4 +7856,184 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง';
+
+  @override
+  String get categoryHealthAndMedical => 'สุขภาพและการแพทย์';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'สมาชิกและการสมัครรับ';
+
+  @override
+  String get subcategoryFirearmLicences => 'ใบอนุญาตอาวุธปืน';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'ใบขับขี่สากล';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'ใบอนุญาตเรือและนักบิน';
+
+  @override
+  String get subcategorySafetyCertificates => 'ใบรับรองปฐมพยาบาลและความปลอดภัย';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'ใบรับรองระบบไฟฟ้า';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'การบำรุงรักษาอุปกรณ์ดับเพลิง';
+
+  @override
+  String get subcategoryMedicalAidCards => 'บัตรประกันสุขภาพ';
+
+  @override
+  String get subcategoryPrescriptions => 'ใบสั่งยา';
+
+  @override
+  String get subcategoryVaccinations => 'การฉีดวัคซีน';
+
+  @override
+  String get subcategoryMedicalCertificates => 'ใบรับรองแพทย์';
+
+  @override
+  String get subcategoryGymMemberships => 'สมาชิกฟิตเนส';
+
+  @override
+  String get subcategoryClubMemberships => 'สมาชิกสโมสร';
+
+  @override
+  String get subcategorySubscriptions => 'การสมัครรับ';
+
+  @override
+  String get subcategoryWarranties => 'การรับประกัน';
+
+  @override
+  String get yoursTag => 'ของคุณ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'หมดอายุ $count รายการ',
+      one: 'หมดอายุ $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'เปลี่ยนไอคอน';
+
+  @override
+  String get categoryLookTitle => 'ไอคอนและสี';
+
+  @override
+  String get categoryLookAppColour => 'สีของแอป';
+
+  @override
+  String get categoryLookHint => 'เลือกจากชื่อแล้ว แตะเพื่อเปลี่ยน';
+
+  @override
+  String get renameCategoryTitle => 'เปลี่ยนชื่อหมวดหมู่';
+
+  @override
+  String get renameGroupTitle => 'เปลี่ยนชื่อกลุ่ม';
+
+  @override
+  String get nameInUse => 'ชื่อนี้ถูกใช้แล้วที่นี่';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'กลุ่มฟรี: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'คุณใช้กลุ่มที่สร้างเองครบ $limit กลุ่มตามขีดจำกัดของแผนฟรีแล้ว อัปเกรดเป็น Premium เพื่อสร้างกลุ่มได้ไม่จำกัด';
+  }
+
+  @override
+  String get recordsSortExpiry => 'เรียงตามวันหมดอายุ';
+
+  @override
+  String get recordsSortName => 'เรียงตามชื่อ';
+
+  @override
+  String get recordsSelect => 'เลือก';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เลือก $count รายการ',
+      one: 'เลือก $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'ย้าย';
+
+  @override
+  String get recordsMoveTitle => 'ย้ายไปที่';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ย้าย $count รายการแล้ว',
+      one: 'ย้าย $count รายการแล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ลบ $count รายการไหม',
+      one: 'ลบ $count รายการไหม',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'รายการจะไปอยู่ใน \"ลบล่าสุด\" ซึ่งกู้คืนได้ภายใน 30 วัน';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ลบ $count รายการแล้ว',
+      one: 'ลบ $count รายการแล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'ใกล้หมดอายุ';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'แสดงทั้งหมด $count รายการ',
+      one: 'แสดงทุกรายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'ยังไม่มี$group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'สแกนบัตรหรือเอกสาร หรือเพิ่มเอง Vaultara จะเตือนคุณก่อนหมดอายุ';
+
+  @override
+  String get recordsScan => 'สแกน';
 }

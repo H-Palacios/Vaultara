@@ -2639,5 +2639,113 @@
   "storyBusiness3Title": "Månedsrapport",
   "storyBusiness3Body": "Hver måned viser en rapport, hvad der er gyldigt, hvad der udløber, og hvad der mangler.",
   "storyBusiness4Title": "Bed om en opdatering",
-  "storyBusiness4Body": "Send et link, så uploader medarbejderne selv det fornyede dokument."
+  "storyBusiness4Body": "Send et link, så uploader medarbejderne selv det fornyede dokument.",
+  "categoryHealthAndMedical": "Sundhed og lægeligt",
+  "categoryMembershipsAndSubscriptions": "Medlemskaber og abonnementer",
+  "subcategoryFirearmLicences": "Våbentilladelser",
+  "subcategoryInternationalDrivingPermits": "Internationale kørekort",
+  "subcategoryBoatAndPilotLicences": "Båd- og pilotcertifikater",
+  "subcategorySafetyCertificates": "Førstehjælps- og sikkerhedsbeviser",
+  "subcategoryElectricalComplianceCertificates": "Elinstallationsrapporter",
+  "subcategoryFireEquipmentServices": "Service af brandudstyr",
+  "subcategoryMedicalAidCards": "Sygesikringskort",
+  "subcategoryPrescriptions": "Recepter",
+  "subcategoryVaccinations": "Vaccinationer",
+  "subcategoryMedicalCertificates": "Lægeerklæringer",
+  "subcategoryGymMemberships": "Fitnessmedlemskaber",
+  "subcategoryClubMemberships": "Klubmedlemskaber",
+  "subcategorySubscriptions": "Abonnementer",
+  "subcategoryWarranties": "Garantier",
+  "yoursTag": "Dit",
+  "expiredBadge": "{count, plural, =1{{count} udløbet} other{{count} udløbet}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Skift ikon",
+  "categoryLookTitle": "Ikon og farve",
+  "categoryLookAppColour": "Appens farve",
+  "categoryLookHint": "Valgt ud fra navnet. Tryk for at ændre.",
+  "renameCategoryTitle": "Omdøb kategori",
+  "renameGroupTitle": "Omdøb gruppe",
+  "nameInUse": "Det navn bruges allerede her.",
+  "freeGroupsProgress": "Gratis grupper: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Du har nået gratisplanens grænse på {limit} egne grupper. Opgrader til Premium for ubegrænsede grupper.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sortér efter udløbsdato",
+  "recordsSortName": "Sortér efter navn",
+  "recordsSelect": "Vælg",
+  "recordsSelected": "{count, plural, =1{{count} valgt} other{{count} valgt}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Flyt",
+  "recordsMoveTitle": "Flyt til",
+  "recordsMoved": "{count, plural, =1{{count} post flyttet} other{{count} poster flyttet}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Slet {count} post?} other{Slet {count} poster?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "De havner i \"For nylig slettet\", hvor du kan gendanne dem i 30 dage.",
+  "recordsDeletedMany": "{count, plural, =1{{count} post slettet} other{{count} poster slettet}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Udløber snart",
+  "recordsShowAll": "{count, plural, =1{Vis alle poster} other{Vis alle {count} poster}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Intet i {group} endnu",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scan kortet eller dokumentet, eller tilføj det manuelt. Vaultara minder dig om det, før det udløber.",
+  "recordsScan": "Scan"
 }

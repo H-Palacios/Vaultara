@@ -2622,5 +2622,113 @@
   "storyBusiness3Title": "Ամսական հաշվետվություն",
   "storyBusiness3Body": "Յուրաքանչյուր ամիս հաշվետվությունը ցույց է տալիս, թե ինչն է վավեր, ինչն է լրանում և ինչն է պակասում։",
   "storyBusiness4Title": "Խնդրեք թարմացում",
-  "storyBusiness4Body": "Ուղարկեք հղում, և աշխատակիցն ինքը կվերբեռնի թարմացված փաստաթուղթը։"
+  "storyBusiness4Body": "Ուղարկեք հղում, և աշխատակիցն ինքը կվերբեռնի թարմացված փաստաթուղթը։",
+  "categoryHealthAndMedical": "Առողջություն և բժշկություն",
+  "categoryMembershipsAndSubscriptions": "Անդամակցություններ և բաժանորդագրություններ",
+  "subcategoryFirearmLicences": "Զենքի թույլտվություններ",
+  "subcategoryInternationalDrivingPermits": "Միջազգային վարորդական վկայականներ",
+  "subcategoryBoatAndPilotLicences": "Նավի և օդաչուի վկայականներ",
+  "subcategorySafetyCertificates": "Առաջին օգնության և անվտանգության վկայագրեր",
+  "subcategoryElectricalComplianceCertificates": "Էլեկտրական համապատասխանության վկայագրեր",
+  "subcategoryFireEquipmentServices": "Հրշեջ սարքավորումների սպասարկում",
+  "subcategoryMedicalAidCards": "Բժշկական ապահովագրության քարտեր",
+  "subcategoryPrescriptions": "Դեղատոմսեր",
+  "subcategoryVaccinations": "Պատվաստումներ",
+  "subcategoryMedicalCertificates": "Բժշկական տեղեկանքներ",
+  "subcategoryGymMemberships": "Մարզասրահի անդամակցություններ",
+  "subcategoryClubMemberships": "Ակումբների անդամակցություններ",
+  "subcategorySubscriptions": "Բաժանորդագրություններ",
+  "subcategoryWarranties": "Երաշխիքներ",
+  "yoursTag": "Ձերը",
+  "expiredBadge": "{count, plural, =1{{count}-ի ժամկետն անցել է} other{{count}-ի ժամկետն անցել է}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Փոխել պատկերակը",
+  "categoryLookTitle": "Պատկերակ և գույն",
+  "categoryLookAppColour": "Հավելվածի գույնը",
+  "categoryLookHint": "Ընտրված է ըստ անվան։ Հպեք՝ փոխելու համար։",
+  "renameCategoryTitle": "Վերանվանել կատեգորիան",
+  "renameGroupTitle": "Վերանվանել խումբը",
+  "nameInUse": "Այս անունն այստեղ արդեն օգտագործվում է։",
+  "freeGroupsProgress": "Անվճար խմբեր՝ {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Դուք հասել եք անվճար պլանի {limit} անհատական խմբի սահմանին։ Անսահմանափակ խմբերի համար անցեք Premium-ի։",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Դասավորել ըստ ժամկետի",
+  "recordsSortName": "Դասավորել ըստ անվան",
+  "recordsSelect": "Ընտրել",
+  "recordsSelected": "{count, plural, =1{Ընտրված է {count}} other{Ընտրված է {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Տեղափոխել",
+  "recordsMoveTitle": "Տեղափոխել այստեղ",
+  "recordsMoved": "{count, plural, =1{Տեղափոխվեց {count} գրառում} other{Տեղափոխվեց {count} գրառում}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Ջնջե՞լ {count} գրառումը} other{Ջնջե՞լ {count} գրառումները}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Դրանք կտեղափոխվեն «Վերջերս ջնջվածներ», որտեղից կարող եք վերականգնել 30 օրվա ընթացքում։",
+  "recordsDeletedMany": "{count, plural, =1{Ջնջվեց {count} գրառում} other{Ջնջվեց {count} գրառում}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Շուտով կլրանա",
+  "recordsShowAll": "{count, plural, =1{Ցույց տալ բոլոր գրառումները} other{Ցույց տալ բոլոր {count} գրառումները}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group}-ում դեռ ոչինչ չկա",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Սկանավորեք քարտը կամ փաստաթուղթը կամ ավելացրեք ձեռքով։ Vaultara-ն կհիշեցնի ժամկետը լրանալուց առաջ։",
+  "recordsScan": "Սկանավորել"
 }

@@ -2646,5 +2646,113 @@
   "storyBusiness3Title": "تقرير شهري",
   "storyBusiness3Body": "كل شهر يعرض تقرير ما هو ساري المفعول وما ينتهي وما ينقص.",
   "storyBusiness4Title": "اطلب تحديثاً",
-  "storyBusiness4Body": "أرسل رابطاً ليرفع الموظف المستند المجدَّد بنفسه."
+  "storyBusiness4Body": "أرسل رابطاً ليرفع الموظف المستند المجدَّد بنفسه.",
+  "categoryHealthAndMedical": "الصحة والطب",
+  "categoryMembershipsAndSubscriptions": "العضويات والاشتراكات",
+  "subcategoryFirearmLicences": "تراخيص الأسلحة النارية",
+  "subcategoryInternationalDrivingPermits": "رخص القيادة الدولية",
+  "subcategoryBoatAndPilotLicences": "رخص القوارب والطيران",
+  "subcategorySafetyCertificates": "شهادات الإسعافات الأولية والسلامة",
+  "subcategoryElectricalComplianceCertificates": "شهادات مطابقة الكهرباء",
+  "subcategoryFireEquipmentServices": "صيانة معدات الحريق",
+  "subcategoryMedicalAidCards": "بطاقات التأمين الصحي",
+  "subcategoryPrescriptions": "الوصفات الطبية",
+  "subcategoryVaccinations": "التطعيمات",
+  "subcategoryMedicalCertificates": "الشهادات الطبية",
+  "subcategoryGymMemberships": "عضويات النادي الرياضي",
+  "subcategoryClubMemberships": "عضويات الأندية",
+  "subcategorySubscriptions": "الاشتراكات",
+  "subcategoryWarranties": "الضمانات",
+  "yoursTag": "خاص بك",
+  "expiredBadge": "{count, plural, =1{{count} منتهي} other{{count} منتهية}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "تغيير الأيقونة",
+  "categoryLookTitle": "الأيقونة واللون",
+  "categoryLookAppColour": "لون التطبيق",
+  "categoryLookHint": "اختيرت حسب الاسم. انقر لتغييرها.",
+  "renameCategoryTitle": "إعادة تسمية الفئة",
+  "renameGroupTitle": "إعادة تسمية المجموعة",
+  "nameInUse": "هذا الاسم مستخدم هنا بالفعل.",
+  "freeGroupsProgress": "المجموعات المجانية: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "لقد وصلت إلى حد الخطة المجانية وهو {limit} مجموعات مخصصة. قم بالترقية إلى Premium لإنشاء مجموعات بلا حدود.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "الترتيب حسب تاريخ الانتهاء",
+  "recordsSortName": "الترتيب حسب الاسم",
+  "recordsSelect": "تحديد",
+  "recordsSelected": "{count, plural, =1{تم تحديد {count}} other{تم تحديد {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "نقل",
+  "recordsMoveTitle": "نقل إلى",
+  "recordsMoved": "{count, plural, =1{تم نقل سجل واحد} other{تم نقل {count} سجلات}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{حذف سجل واحد؟} other{حذف {count} سجلات؟}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ستنتقل إلى «المحذوفة مؤخرًا» حيث يمكنك استعادتها خلال 30 يومًا.",
+  "recordsDeletedMany": "{count, plural, =1{تم حذف سجل واحد} other{تم حذف {count} سجلات}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ينتهي قريبًا",
+  "recordsShowAll": "{count, plural, =1{عرض كل السجلات} other{عرض كل السجلات ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "لا يوجد شيء في {group} بعد",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "امسح البطاقة أو المستند ضوئيًا، أو أضفه يدويًا. سيذكّرك Vaultara قبل انتهاء صلاحيته.",
+  "recordsScan": "مسح ضوئي"
 }

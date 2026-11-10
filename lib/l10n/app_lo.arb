@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "ລາຍງານລາຍເດືອນ",
   "storyBusiness3Body": "ທຸກເດືອນມີລາຍງານວ່າຫຍັງຍັງໃຊ້ໄດ້, ຫຍັງກຳລັງໝົດອາຍຸ ແລະ ຫຍັງຂາດໄປ.",
   "storyBusiness4Title": "ຂໍການອັບເດດ",
-  "storyBusiness4Body": "ສົ່ງລິ້ງ ແລ້ວພະນັກງານຈະອັບໂຫລດເອກະສານທີ່ຕໍ່ອາຍຸແລ້ວເອງ."
+  "storyBusiness4Body": "ສົ່ງລິ້ງ ແລ້ວພະນັກງານຈະອັບໂຫລດເອກະສານທີ່ຕໍ່ອາຍຸແລ້ວເອງ.",
+  "categoryHealthAndMedical": "ສຸຂະພາບ ແລະ ການແພດ",
+  "categoryMembershipsAndSubscriptions": "ສະມາຊິກ ແລະ ການສະໝັກໃຊ້",
+  "subcategoryFirearmLicences": "ໃບອະນຸຍາດອາວຸດປືນ",
+  "subcategoryInternationalDrivingPermits": "ໃບຂັບຂີ່ສາກົນ",
+  "subcategoryBoatAndPilotLicences": "ໃບອະນຸຍາດເຮືອ ແລະ ນັກບິນ",
+  "subcategorySafetyCertificates": "ໃບຢັ້ງຢືນການປະຖົມພະຍາບານ ແລະ ຄວາມປອດໄພ",
+  "subcategoryElectricalComplianceCertificates": "ໃບຢັ້ງຢືນລະບົບໄຟຟ້າ",
+  "subcategoryFireEquipmentServices": "ການບໍລິການອຸປະກອນດັບເພີງ",
+  "subcategoryMedicalAidCards": "ບັດປະກັນສຸຂະພາບ",
+  "subcategoryPrescriptions": "ໃບສັ່ງຢາ",
+  "subcategoryVaccinations": "ການສັກວັກຊີນ",
+  "subcategoryMedicalCertificates": "ໃບຢັ້ງຢືນແພດ",
+  "subcategoryGymMemberships": "ສະມາຊິກຫ້ອງອອກກຳລັງກາຍ",
+  "subcategoryClubMemberships": "ສະມາຊິກສະໂມສອນ",
+  "subcategorySubscriptions": "ການສະໝັກໃຊ້",
+  "subcategoryWarranties": "ການຮັບປະກັນ",
+  "yoursTag": "ຂອງທ່ານ",
+  "expiredBadge": "{count, plural, =1{ໝົດອາຍຸ {count}} other{ໝົດອາຍຸ {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ປ່ຽນໄອຄອນ",
+  "categoryLookTitle": "ໄອຄອນ ແລະ ສີ",
+  "categoryLookAppColour": "ສີຂອງແອັບ",
+  "categoryLookHint": "ເລືອກຕາມຊື່. ແຕະເພື່ອປ່ຽນ.",
+  "renameCategoryTitle": "ປ່ຽນຊື່ໝວດ",
+  "renameGroupTitle": "ປ່ຽນຊື່ກຸ່ມ",
+  "nameInUse": "ຊື່ນີ້ຖືກໃຊ້ຢູ່ບ່ອນນີ້ແລ້ວ.",
+  "freeGroupsProgress": "ກຸ່ມຟຣີ: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "ທ່ານໃຊ້ກຸ່ມທີ່ສ້າງເອງຄົບ {limit} ກຸ່ມຕາມຂີດຈຳກັດຂອງແຜນຟຣີແລ້ວ. ອັບເກຣດເປັນ Premium ເພື່ອສ້າງກຸ່ມບໍ່ຈຳກັດ.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "ຮຽງຕາມວັນໝົດອາຍຸ",
+  "recordsSortName": "ຮຽງຕາມຊື່",
+  "recordsSelect": "ເລືອກ",
+  "recordsSelected": "{count, plural, =1{ເລືອກແລ້ວ {count}} other{ເລືອກແລ້ວ {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ຍ້າຍ",
+  "recordsMoveTitle": "ຍ້າຍໄປ",
+  "recordsMoved": "{count, plural, =1{ຍ້າຍ {count} ລາຍການແລ້ວ} other{ຍ້າຍ {count} ລາຍການແລ້ວ}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{ລຶບ {count} ລາຍການບໍ?} other{ລຶບ {count} ລາຍການບໍ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ລາຍການຈະໄປຢູ່ໃນ \"ລຶບລ່າສຸດ\" ເຊິ່ງກູ້ຄືນໄດ້ພາຍໃນ 30 ມື້.",
+  "recordsDeletedMany": "{count, plural, =1{ລຶບ {count} ລາຍການແລ້ວ} other{ລຶບ {count} ລາຍການແລ້ວ}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ໃກ້ໝົດອາຍຸ",
+  "recordsShowAll": "{count, plural, =1{ສະແດງທຸກລາຍການ} other{ສະແດງທັງໝົດ {count} ລາຍການ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "ຍັງບໍ່ມີຫຍັງໃນ {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "ສະແກນບັດ ຫຼື ເອກະສານ ຫຼື ເພີ່ມເອງ. Vaultara ຈະເຕືອນທ່ານກ່ອນໝົດອາຍຸ.",
+  "recordsScan": "ສະແກນ"
 }

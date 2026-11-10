@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Raport lunar",
   "storyBusiness3Body": "În fiecare lună, un raport arată ce e valabil, ce expiră și ce lipsește.",
   "storyBusiness4Title": "Cere o actualizare",
-  "storyBusiness4Body": "Trimite un link și angajatul încarcă singur documentul reînnoit."
+  "storyBusiness4Body": "Trimite un link și angajatul încarcă singur documentul reînnoit.",
+  "categoryHealthAndMedical": "Sănătate și medical",
+  "categoryMembershipsAndSubscriptions": "Abonamente și calitate de membru",
+  "subcategoryFirearmLicences": "Permise de port-armă",
+  "subcategoryInternationalDrivingPermits": "Permise internaționale de conducere",
+  "subcategoryBoatAndPilotLicences": "Permise de navigație și licențe de pilot",
+  "subcategorySafetyCertificates": "Certificate de prim ajutor și siguranță",
+  "subcategoryElectricalComplianceCertificates": "Certificate de conformitate electrică",
+  "subcategoryFireEquipmentServices": "Service echipamente de stingere a incendiilor",
+  "subcategoryMedicalAidCards": "Carduri de sănătate",
+  "subcategoryPrescriptions": "Rețete",
+  "subcategoryVaccinations": "Vaccinări",
+  "subcategoryMedicalCertificates": "Certificate medicale",
+  "subcategoryGymMemberships": "Abonamente la sală",
+  "subcategoryClubMemberships": "Abonamente la cluburi",
+  "subcategorySubscriptions": "Abonamente",
+  "subcategoryWarranties": "Garanții",
+  "yoursTag": "Al tău",
+  "expiredBadge": "{count, plural, =1{{count} expirat} other{{count} expirate}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Schimbă pictograma",
+  "categoryLookTitle": "Pictogramă și culoare",
+  "categoryLookAppColour": "Culoarea aplicației",
+  "categoryLookHint": "Aleasă după nume. Atinge pentru a o schimba.",
+  "renameCategoryTitle": "Redenumește categoria",
+  "renameGroupTitle": "Redenumește grupul",
+  "nameInUse": "Acest nume este deja folosit aici.",
+  "freeGroupsProgress": "Grupuri gratuite: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Ai atins limita planului Gratuit de {limit} grupuri personalizate. Treci la Premium pentru grupuri nelimitate.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sortează după data expirării",
+  "recordsSortName": "Sortează după nume",
+  "recordsSelect": "Selectează",
+  "recordsSelected": "{count, plural, =1{{count} selectat} other{{count} selectate}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Mută",
+  "recordsMoveTitle": "Mută în",
+  "recordsMoved": "{count, plural, =1{{count} înregistrare mutată} other{{count} înregistrări mutate}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Ștergi {count} înregistrare?} other{Ștergi {count} înregistrări?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ajung în „Șterse recent”, de unde le poți recupera timp de 30 de zile.",
+  "recordsDeletedMany": "{count, plural, =1{{count} înregistrare ștearsă} other{{count} înregistrări șterse}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Expiră curând",
+  "recordsShowAll": "{count, plural, =1{Arată toate înregistrările} other{Arată toate cele {count} înregistrări}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Încă nimic în {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scanează cardul sau documentul ori adaugă-l manual. Vaultara îți amintește înainte să expire.",
+  "recordsScan": "Scanează"
 }

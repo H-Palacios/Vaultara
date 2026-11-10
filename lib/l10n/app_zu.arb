@@ -2600,5 +2600,113 @@
   "storyBusiness3Title": "Umbiko wanyanga zonke",
   "storyBusiness3Body": "Inyanga ngayinye umbiko ubonisa okusebenzayo, okuphelelwa yisikhathi nokuntulekayo.",
   "storyBusiness4Title": "Cela isibuyekezo",
-  "storyBusiness4Body": "Thumela isixhumanisi futhi umsebenzi alayishe yena umbhalo ovuselelwe."
+  "storyBusiness4Body": "Thumela isixhumanisi futhi umsebenzi alayishe yena umbhalo ovuselelwe.",
+  "categoryHealthAndMedical": "Impilo nezokwelapha",
+  "categoryMembershipsAndSubscriptions": "Ubulungu nokubhalisa",
+  "subcategoryFirearmLicences": "Amalayisense ezibhamu",
+  "subcategoryInternationalDrivingPermits": "Izimvume zokushayela zamazwe ngamazwe",
+  "subcategoryBoatAndPilotLicences": "Amalayisense ezikebhe nawomshayeli wendiza",
+  "subcategorySafetyCertificates": "Izitifiketi zosizo lokuqala nokuphepha",
+  "subcategoryElectricalComplianceCertificates": "Izitifiketi zokuthobela zikagesi",
+  "subcategoryFireEquipmentServices": "Isevisi yemishini yomlilo",
+  "subcategoryMedicalAidCards": "Amakhadi omshwalense wezempilo",
+  "subcategoryPrescriptions": "Imiyalelo kadokotela",
+  "subcategoryVaccinations": "Ukugoma",
+  "subcategoryMedicalCertificates": "Izitifiketi zezokwelapha",
+  "subcategoryGymMemberships": "Ubulungu bejimu",
+  "subcategoryClubMemberships": "Ubulungu bekilabhu",
+  "subcategorySubscriptions": "Okubhalisile",
+  "subcategoryWarranties": "Iziqinisekiso",
+  "yoursTag": "Okwakho",
+  "expiredBadge": "{count, plural, =1{{count} iphelelwe yisikhathi} other{{count} ziphelelwe yisikhathi}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Shintsha isithonjana",
+  "categoryLookTitle": "Isithonjana nombala",
+  "categoryLookAppColour": "Umbala wohlelo",
+  "categoryLookHint": "Kukhethwe ngegama. Thepha ukuze ushintshe.",
+  "renameCategoryTitle": "Qamba kabusha isigaba",
+  "renameGroupTitle": "Qamba kabusha iqembu",
+  "nameInUse": "Lelo gama selisetshenziswa lapha.",
+  "freeGroupsProgress": "Amaqembu amahhala: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Usufinyelele umkhawulo wohlelo Lwamahhala wamaqembu angu-{limit} owenzile. Thuthukela ku-Premium ukuze wenze amaqembu angenamkhawulo.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Hlunga ngosuku lokuphelelwa",
+  "recordsSortName": "Hlunga ngegama",
+  "recordsSelect": "Khetha",
+  "recordsSelected": "{count, plural, =1{{count} okhethiwe} other{{count} akhethiwe}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Hambisa",
+  "recordsMoveTitle": "Hambisela ku-",
+  "recordsMoved": "{count, plural, =1{Kuhanjiswe irekhodi eli-{count}} other{Kuhanjiswe amarekhodi angu-{count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Susa irekhodi eli-{count}?} other{Susa amarekhodi angu-{count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Aya ku-\"Okususiwe muva nje\", lapho ungawabuyisa khona izinsuku ezingu-30.",
+  "recordsDeletedMany": "{count, plural, =1{Kususwe irekhodi eli-{count}} other{Kususwe amarekhodi angu-{count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Kuzophelelwa maduze",
+  "recordsShowAll": "{count, plural, =1{Bonisa wonke amarekhodi} other{Bonisa wonke amarekhodi angu-{count}}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Akukho lutho ku-{group} okwamanje",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skena ikhadi noma idokhumenti, noma ulengeze ngesandla. I-Vaultara izokukhumbuza ngaphambi kokuthi iphelelwe yisikhathi.",
+  "recordsScan": "Skena"
 }

@@ -7868,4 +7868,184 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn.';
+
+  @override
+  String get categoryHealthAndMedical => 'Sức khỏe và y tế';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Hội viên và gói đăng ký';
+
+  @override
+  String get subcategoryFirearmLicences => 'Giấy phép sử dụng súng';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Giấy phép lái xe quốc tế';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Bằng lái tàu thuyền và phi công';
+
+  @override
+  String get subcategorySafetyCertificates => 'Chứng chỉ sơ cứu và an toàn';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Giấy chứng nhận an toàn điện';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Bảo trì thiết bị chữa cháy';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Thẻ bảo hiểm y tế';
+
+  @override
+  String get subcategoryPrescriptions => 'Đơn thuốc';
+
+  @override
+  String get subcategoryVaccinations => 'Tiêm chủng';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Giấy chứng nhận y tế';
+
+  @override
+  String get subcategoryGymMemberships => 'Thẻ hội viên phòng gym';
+
+  @override
+  String get subcategoryClubMemberships => 'Thẻ hội viên câu lạc bộ';
+
+  @override
+  String get subcategorySubscriptions => 'Gói đăng ký';
+
+  @override
+  String get subcategoryWarranties => 'Bảo hành';
+
+  @override
+  String get yoursTag => 'Của bạn';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count đã hết hạn',
+      one: '$count đã hết hạn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Đổi biểu tượng';
+
+  @override
+  String get categoryLookTitle => 'Biểu tượng và màu';
+
+  @override
+  String get categoryLookAppColour => 'Màu của ứng dụng';
+
+  @override
+  String get categoryLookHint => 'Được chọn theo tên. Nhấn để đổi.';
+
+  @override
+  String get renameCategoryTitle => 'Đổi tên danh mục';
+
+  @override
+  String get renameGroupTitle => 'Đổi tên nhóm';
+
+  @override
+  String get nameInUse => 'Tên này đã được dùng ở đây.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Nhóm miễn phí: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Bạn đã đạt giới hạn $limit nhóm tùy chỉnh của gói Miễn phí. Nâng cấp lên Premium để tạo nhóm không giới hạn.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sắp xếp theo ngày hết hạn';
+
+  @override
+  String get recordsSortName => 'Sắp xếp theo tên';
+
+  @override
+  String get recordsSelect => 'Chọn';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã chọn $count',
+      one: 'Đã chọn $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Di chuyển';
+
+  @override
+  String get recordsMoveTitle => 'Di chuyển đến';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã di chuyển $count hồ sơ',
+      one: 'Đã di chuyển $count hồ sơ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Xóa $count hồ sơ?',
+      one: 'Xóa $count hồ sơ?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Chúng sẽ vào mục \"Đã xóa gần đây\", nơi bạn có thể khôi phục trong 30 ngày.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã xóa $count hồ sơ',
+      one: 'Đã xóa $count hồ sơ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Sắp hết hạn';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hiện tất cả $count hồ sơ',
+      one: 'Hiện tất cả hồ sơ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Chưa có gì trong $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Quét thẻ hoặc giấy tờ, hoặc thêm thủ công. Vaultara sẽ nhắc bạn trước khi hết hạn.';
+
+  @override
+  String get recordsScan => 'Quét';
 }

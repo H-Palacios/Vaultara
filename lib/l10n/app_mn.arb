@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Сарын тайлан",
   "storyBusiness3Body": "Сар бүр тайлан юу хүчинтэй, юуны хугацаа дуусч байгаа, юу дутуу байгааг харуулна.",
   "storyBusiness4Title": "Шинэчлэл хүсэх",
-  "storyBusiness4Body": "Холбоос илгээвэл ажилтан сунгасан баримт бичгээ өөрөө байршуулна."
+  "storyBusiness4Body": "Холбоос илгээвэл ажилтан сунгасан баримт бичгээ өөрөө байршуулна.",
+  "categoryHealthAndMedical": "Эрүүл мэнд ба эмнэлэг",
+  "categoryMembershipsAndSubscriptions": "Гишүүнчлэл ба захиалга",
+  "subcategoryFirearmLicences": "Галт зэвсгийн зөвшөөрөл",
+  "subcategoryInternationalDrivingPermits": "Олон улсын жолооны үнэмлэх",
+  "subcategoryBoatAndPilotLicences": "Завь ба нисгэгчийн үнэмлэх",
+  "subcategorySafetyCertificates": "Анхны тусламж ба аюулгүй байдлын гэрчилгээ",
+  "subcategoryElectricalComplianceCertificates": "Цахилгааны тохирлын гэрчилгээ",
+  "subcategoryFireEquipmentServices": "Галын тоног төхөөрөмжийн үйлчилгээ",
+  "subcategoryMedicalAidCards": "Эрүүл мэндийн даатгалын карт",
+  "subcategoryPrescriptions": "Жор",
+  "subcategoryVaccinations": "Вакцинжуулалт",
+  "subcategoryMedicalCertificates": "Эмнэлгийн тодорхойлолт",
+  "subcategoryGymMemberships": "Фитнесийн гишүүнчлэл",
+  "subcategoryClubMemberships": "Клубын гишүүнчлэл",
+  "subcategorySubscriptions": "Захиалга",
+  "subcategoryWarranties": "Баталгаа",
+  "yoursTag": "Таных",
+  "expiredBadge": "{count, plural, =1{{count} хугацаа дууссан} other{{count} хугацаа дууссан}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Дүрс солих",
+  "categoryLookTitle": "Дүрс ба өнгө",
+  "categoryLookAppColour": "Аппын өнгө",
+  "categoryLookHint": "Нэрээр нь сонгосон. Солихын тулд товшино уу.",
+  "renameCategoryTitle": "Ангиллын нэрийг өөрчлөх",
+  "renameGroupTitle": "Бүлгийн нэрийг өөрчлөх",
+  "nameInUse": "Энэ нэрийг энд аль хэдийн ашигласан байна.",
+  "freeGroupsProgress": "Үнэгүй бүлэг: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Та үнэгүй багцын {limit} өөрийн бүлгийн хязгаарт хүрлээ. Хязгааргүй бүлэг үүсгэхийн тулд Premium руу шилжинэ үү.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Дуусах огноогоор эрэмбэлэх",
+  "recordsSortName": "Нэрээр эрэмбэлэх",
+  "recordsSelect": "Сонгох",
+  "recordsSelected": "{count, plural, =1{{count} сонгосон} other{{count} сонгосон}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Зөөх",
+  "recordsMoveTitle": "Энд зөөх",
+  "recordsMoved": "{count, plural, =1{{count} бичлэг зөөсөн} other{{count} бичлэг зөөсөн}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} бичлэг устгах уу?} other{{count} бичлэг устгах уу?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Тэд «Саяхан устгасан» руу орох бөгөөд 30 хоногийн дотор сэргээж болно.",
+  "recordsDeletedMany": "{count, plural, =1{{count} бичлэг устгасан} other{{count} бичлэг устгасан}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Удахгүй дуусна",
+  "recordsShowAll": "{count, plural, =1{Бүх бичлэгийг харуулах} other{Бүх {count} бичлэгийг харуулах}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} одоогоор хоосон",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Карт эсвэл баримтаа скан хийх эсвэл гараар нэмнэ үү. Хугацаа дуусахаас өмнө Vaultara сануулна.",
+  "recordsScan": "Скан хийх"
 }

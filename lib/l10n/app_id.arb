@@ -2613,5 +2613,113 @@
   "storyBusiness3Title": "Laporan bulanan",
   "storyBusiness3Body": "Setiap bulan, laporan menunjukkan apa yang berlaku, apa yang akan kedaluwarsa, dan apa yang kurang.",
   "storyBusiness4Title": "Minta pembaruan",
-  "storyBusiness4Body": "Kirim tautan dan staf mengunggah sendiri dokumen yang sudah diperpanjang."
+  "storyBusiness4Body": "Kirim tautan dan staf mengunggah sendiri dokumen yang sudah diperpanjang.",
+  "categoryHealthAndMedical": "Kesehatan dan medis",
+  "categoryMembershipsAndSubscriptions": "Keanggotaan dan langganan",
+  "subcategoryFirearmLicences": "Izin senjata api",
+  "subcategoryInternationalDrivingPermits": "SIM internasional",
+  "subcategoryBoatAndPilotLicences": "Lisensi kapal dan pilot",
+  "subcategorySafetyCertificates": "Sertifikat P3K dan keselamatan",
+  "subcategoryElectricalComplianceCertificates": "Sertifikat laik operasi listrik",
+  "subcategoryFireEquipmentServices": "Servis alat pemadam kebakaran",
+  "subcategoryMedicalAidCards": "Kartu asuransi kesehatan",
+  "subcategoryPrescriptions": "Resep obat",
+  "subcategoryVaccinations": "Vaksinasi",
+  "subcategoryMedicalCertificates": "Surat keterangan dokter",
+  "subcategoryGymMemberships": "Keanggotaan gym",
+  "subcategoryClubMemberships": "Keanggotaan klub",
+  "subcategorySubscriptions": "Langganan",
+  "subcategoryWarranties": "Garansi dan jaminan",
+  "yoursTag": "Milik Anda",
+  "expiredBadge": "{count, plural, =1{{count} kedaluwarsa} other{{count} kedaluwarsa}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Ganti ikon",
+  "categoryLookTitle": "Ikon dan warna",
+  "categoryLookAppColour": "Warna aplikasi",
+  "categoryLookHint": "Dipilih dari nama. Ketuk untuk mengganti.",
+  "renameCategoryTitle": "Ganti nama kategori",
+  "renameGroupTitle": "Ganti nama grup",
+  "nameInUse": "Nama itu sudah dipakai di sini.",
+  "freeGroupsProgress": "Grup gratis: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Anda telah mencapai batas paket Gratis, yaitu {limit} grup kustom. Upgrade ke Premium untuk membuat grup tanpa batas.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Urutkan menurut tanggal kedaluwarsa",
+  "recordsSortName": "Urutkan menurut nama",
+  "recordsSelect": "Pilih",
+  "recordsSelected": "{count, plural, =1{{count} dipilih} other{{count} dipilih}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Pindahkan",
+  "recordsMoveTitle": "Pindahkan ke",
+  "recordsMoved": "{count, plural, =1{{count} catatan dipindahkan} other{{count} catatan dipindahkan}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Hapus {count} catatan?} other{Hapus {count} catatan?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Catatan akan masuk ke \"Baru saja dihapus\", tempat Anda bisa memulihkannya selama 30 hari.",
+  "recordsDeletedMany": "{count, plural, =1{{count} catatan dihapus} other{{count} catatan dihapus}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Segera kedaluwarsa",
+  "recordsShowAll": "{count, plural, =1{Tampilkan semua catatan} other{Tampilkan semua {count} catatan}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Belum ada apa pun di {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Pindai kartu atau dokumen, atau tambahkan secara manual. Vaultara mengingatkan Anda sebelum kedaluwarsa.",
+  "recordsScan": "Pindai"
 }

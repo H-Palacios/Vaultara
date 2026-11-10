@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Maandrapport",
   "storyBusiness3Body": "Elke maand toont een rapport wat geldig is, wat verloopt en wat ontbreekt.",
   "storyBusiness4Title": "Een update vragen",
-  "storyBusiness4Body": "Stuur een link en personeel uploadt zelf het verlengde document."
+  "storyBusiness4Body": "Stuur een link en personeel uploadt zelf het verlengde document.",
+  "categoryHealthAndMedical": "Gezondheid en medisch",
+  "categoryMembershipsAndSubscriptions": "Lidmaatschappen en abonnementen",
+  "subcategoryFirearmLicences": "Wapenvergunningen",
+  "subcategoryInternationalDrivingPermits": "Internationale rijbewijzen",
+  "subcategoryBoatAndPilotLicences": "Vaar- en vliegbrevetten",
+  "subcategorySafetyCertificates": "EHBO- en veiligheidscertificaten",
+  "subcategoryElectricalComplianceCertificates": "Keuringsrapporten elektra",
+  "subcategoryFireEquipmentServices": "Onderhoud brandblusmiddelen",
+  "subcategoryMedicalAidCards": "Zorgpassen",
+  "subcategoryPrescriptions": "Recepten",
+  "subcategoryVaccinations": "Vaccinaties",
+  "subcategoryMedicalCertificates": "Medische verklaringen",
+  "subcategoryGymMemberships": "Sportschoollidmaatschappen",
+  "subcategoryClubMemberships": "Clublidmaatschappen",
+  "subcategorySubscriptions": "Abonnementen",
+  "subcategoryWarranties": "Garanties",
+  "yoursTag": "Van jou",
+  "expiredBadge": "{count, plural, =1{{count} verlopen} other{{count} verlopen}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Icoon wijzigen",
+  "categoryLookTitle": "Icoon en kleur",
+  "categoryLookAppColour": "App-kleur",
+  "categoryLookHint": "Gekozen op basis van de naam. Tik om te wijzigen.",
+  "renameCategoryTitle": "Categorie hernoemen",
+  "renameGroupTitle": "Groep hernoemen",
+  "nameInUse": "Die naam wordt hier al gebruikt.",
+  "freeGroupsProgress": "Gratis groepen: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Je hebt de limiet van het gratis abonnement van {limit} eigen groepen bereikt. Upgrade naar Premium voor onbeperkt groepen.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sorteren op vervaldatum",
+  "recordsSortName": "Sorteren op naam",
+  "recordsSelect": "Selecteren",
+  "recordsSelected": "{count, plural, =1{{count} geselecteerd} other{{count} geselecteerd}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Verplaatsen",
+  "recordsMoveTitle": "Verplaatsen naar",
+  "recordsMoved": "{count, plural, =1{{count} item verplaatst} other{{count} items verplaatst}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} item verwijderen?} other{{count} items verwijderen?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ze gaan naar 'Recent verwijderd', waar je ze 30 dagen lang kunt terugzetten.",
+  "recordsDeletedMany": "{count, plural, =1{{count} item verwijderd} other{{count} items verwijderd}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Verloopt binnenkort",
+  "recordsShowAll": "{count, plural, =1{Alle items tonen} other{Alle {count} items tonen}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Nog niets in {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scan de kaart of het document, of voeg het handmatig toe. Vaultara herinnert je voordat het verloopt.",
+  "recordsScan": "Scannen"
 }

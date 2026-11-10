@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "月次レポート",
   "storyBusiness3Body": "毎月のレポートで、有効なもの、期限が近いもの、不足しているものがわかります。",
   "storyBusiness4Title": "更新を依頼",
-  "storyBusiness4Body": "リンクを送ると、スタッフが更新した書類を自分でアップロードします。"
+  "storyBusiness4Body": "リンクを送ると、スタッフが更新した書類を自分でアップロードします。",
+  "categoryHealthAndMedical": "健康・医療",
+  "categoryMembershipsAndSubscriptions": "会員・サブスクリプション",
+  "subcategoryFirearmLicences": "銃砲所持許可証",
+  "subcategoryInternationalDrivingPermits": "国際運転免許証",
+  "subcategoryBoatAndPilotLicences": "船舶・操縦士免許",
+  "subcategorySafetyCertificates": "救急・安全資格証",
+  "subcategoryElectricalComplianceCertificates": "電気設備検査証明書",
+  "subcategoryFireEquipmentServices": "消防設備点検",
+  "subcategoryMedicalAidCards": "健康保険証",
+  "subcategoryPrescriptions": "処方箋",
+  "subcategoryVaccinations": "予防接種",
+  "subcategoryMedicalCertificates": "診断書",
+  "subcategoryGymMemberships": "ジム会員",
+  "subcategoryClubMemberships": "クラブ会員",
+  "subcategorySubscriptions": "サブスクリプション",
+  "subcategoryWarranties": "保証書",
+  "yoursTag": "自分用",
+  "expiredBadge": "{count, plural, =1{期限切れ {count}件} other{期限切れ {count}件}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "アイコンを変更",
+  "categoryLookTitle": "アイコンと色",
+  "categoryLookAppColour": "アプリの色",
+  "categoryLookHint": "名前から選びました。タップして変更できます。",
+  "renameCategoryTitle": "カテゴリ名を変更",
+  "renameGroupTitle": "グループ名を変更",
+  "nameInUse": "この名前はすでに使われています。",
+  "freeGroupsProgress": "無料グループ: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "無料プランのカスタムグループ上限（{limit}個）に達しました。Premiumにアップグレードすると無制限に作成できます。",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "有効期限順に並べ替え",
+  "recordsSortName": "名前順に並べ替え",
+  "recordsSelect": "選択",
+  "recordsSelected": "{count, plural, =1{{count}件選択中} other{{count}件選択中}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "移動",
+  "recordsMoveTitle": "移動先",
+  "recordsMoved": "{count, plural, =1{{count}件を移動しました} other{{count}件を移動しました}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count}件を削除しますか？} other{{count}件を削除しますか？}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "「最近削除された項目」に移動し、30日間は元に戻せます。",
+  "recordsDeletedMany": "{count, plural, =1{{count}件を削除しました} other{{count}件を削除しました}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "まもなく期限",
+  "recordsShowAll": "{count, plural, =1{すべての記録を表示} other{{count}件すべてを表示}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group}はまだありません",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "カードや書類をスキャンするか、手動で追加してください。期限が切れる前にVaultaraがお知らせします。",
+  "recordsScan": "スキャン"
 }

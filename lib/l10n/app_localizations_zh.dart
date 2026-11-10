@@ -7868,6 +7868,186 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => '发送链接，员工自行上传续期后的证件。';
+
+  @override
+  String get categoryHealthAndMedical => '健康与医疗';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => '会员与订阅';
+
+  @override
+  String get subcategoryFirearmLicences => '持枪许可证';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => '国际驾照';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => '船舶与飞行执照';
+
+  @override
+  String get subcategorySafetyCertificates => '急救与安全证书';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => '电气合格证明';
+
+  @override
+  String get subcategoryFireEquipmentServices => '消防设备维护';
+
+  @override
+  String get subcategoryMedicalAidCards => '医保卡';
+
+  @override
+  String get subcategoryPrescriptions => '处方';
+
+  @override
+  String get subcategoryVaccinations => '疫苗接种';
+
+  @override
+  String get subcategoryMedicalCertificates => '医疗证明';
+
+  @override
+  String get subcategoryGymMemberships => '健身房会员';
+
+  @override
+  String get subcategoryClubMemberships => '俱乐部会员';
+
+  @override
+  String get subcategorySubscriptions => '订阅';
+
+  @override
+  String get subcategoryWarranties => '保修与保证';
+
+  @override
+  String get yoursTag => '我的';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项已过期',
+      one: '$count 项已过期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => '更换图标';
+
+  @override
+  String get categoryLookTitle => '图标和颜色';
+
+  @override
+  String get categoryLookAppColour => '应用颜色';
+
+  @override
+  String get categoryLookHint => '已根据名称选择。点按可更改。';
+
+  @override
+  String get renameCategoryTitle => '重命名类别';
+
+  @override
+  String get renameGroupTitle => '重命名分组';
+
+  @override
+  String get nameInUse => '此名称已在这里使用。';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return '免费分组：$current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return '你已达到免费方案 $limit 个自定义分组的上限。升级到 Premium 即可无限创建分组。';
+  }
+
+  @override
+  String get recordsSortExpiry => '按到期日期排序';
+
+  @override
+  String get recordsSortName => '按名称排序';
+
+  @override
+  String get recordsSelect => '选择';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已选择 $count 项',
+      one: '已选择 $count 项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => '移动';
+
+  @override
+  String get recordsMoveTitle => '移动到';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已移动 $count 条记录',
+      one: '已移动 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '删除 $count 条记录？',
+      one: '删除 $count 条记录？',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '它们会进入“最近删除”，30 天内可以恢复。';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已删除 $count 条记录',
+      one: '已删除 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => '即将到期';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '显示全部 $count 条记录',
+      one: '显示所有记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '还没有$group';
+  }
+
+  @override
+  String get recordsEmptyBody => '扫描卡片或文件，或手动添加。Vaultara 会在到期前提醒你。';
+
+  @override
+  String get recordsScan => '扫描';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -15722,6 +15902,186 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get storyBusiness4Body => '发送链接，员工自行上传续期后的证件。';
+
+  @override
+  String get categoryHealthAndMedical => '健康与医疗';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => '会员与订阅';
+
+  @override
+  String get subcategoryFirearmLicences => '持枪许可证';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => '国际驾照';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => '船舶与飞行执照';
+
+  @override
+  String get subcategorySafetyCertificates => '急救与安全证书';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => '电气合格证明';
+
+  @override
+  String get subcategoryFireEquipmentServices => '消防设备维护';
+
+  @override
+  String get subcategoryMedicalAidCards => '医保卡';
+
+  @override
+  String get subcategoryPrescriptions => '处方';
+
+  @override
+  String get subcategoryVaccinations => '疫苗接种';
+
+  @override
+  String get subcategoryMedicalCertificates => '医疗证明';
+
+  @override
+  String get subcategoryGymMemberships => '健身房会员';
+
+  @override
+  String get subcategoryClubMemberships => '俱乐部会员';
+
+  @override
+  String get subcategorySubscriptions => '订阅';
+
+  @override
+  String get subcategoryWarranties => '保修与保证';
+
+  @override
+  String get yoursTag => '我的';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项已过期',
+      one: '$count 项已过期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => '更换图标';
+
+  @override
+  String get categoryLookTitle => '图标和颜色';
+
+  @override
+  String get categoryLookAppColour => '应用颜色';
+
+  @override
+  String get categoryLookHint => '已根据名称选择。点按可更改。';
+
+  @override
+  String get renameCategoryTitle => '重命名类别';
+
+  @override
+  String get renameGroupTitle => '重命名分组';
+
+  @override
+  String get nameInUse => '此名称已在这里使用。';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return '免费分组：$current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return '你已达到免费方案 $limit 个自定义分组的上限。升级到 Premium 即可无限创建分组。';
+  }
+
+  @override
+  String get recordsSortExpiry => '按到期日期排序';
+
+  @override
+  String get recordsSortName => '按名称排序';
+
+  @override
+  String get recordsSelect => '选择';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已选择 $count 项',
+      one: '已选择 $count 项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => '移动';
+
+  @override
+  String get recordsMoveTitle => '移动到';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已移动 $count 条记录',
+      one: '已移动 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '删除 $count 条记录？',
+      one: '删除 $count 条记录？',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '它们会进入“最近删除”，30 天内可以恢复。';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已删除 $count 条记录',
+      one: '已删除 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => '即将到期';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '显示全部 $count 条记录',
+      one: '显示所有记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '还没有$group';
+  }
+
+  @override
+  String get recordsEmptyBody => '扫描卡片或文件，或手动添加。Vaultara 会在到期前提醒你。';
+
+  @override
+  String get recordsScan => '扫描';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -23576,4 +23936,184 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get storyBusiness4Body => '傳送連結，員工自行上傳續期後的證件。';
+
+  @override
+  String get categoryHealthAndMedical => '健康與醫療';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => '會員與訂閱';
+
+  @override
+  String get subcategoryFirearmLicences => '槍枝執照';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => '國際駕照';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => '船舶與飛行執照';
+
+  @override
+  String get subcategorySafetyCertificates => '急救與安全證書';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => '電氣檢驗合格證明';
+
+  @override
+  String get subcategoryFireEquipmentServices => '消防設備保養';
+
+  @override
+  String get subcategoryMedicalAidCards => '健保卡';
+
+  @override
+  String get subcategoryPrescriptions => '處方箋';
+
+  @override
+  String get subcategoryVaccinations => '疫苗接種';
+
+  @override
+  String get subcategoryMedicalCertificates => '診斷證明';
+
+  @override
+  String get subcategoryGymMemberships => '健身房會員';
+
+  @override
+  String get subcategoryClubMemberships => '俱樂部會員';
+
+  @override
+  String get subcategorySubscriptions => '訂閱';
+
+  @override
+  String get subcategoryWarranties => '保固與保證';
+
+  @override
+  String get yoursTag => '我的';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項已過期',
+      one: '$count 項已過期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => '更換圖示';
+
+  @override
+  String get categoryLookTitle => '圖示與顏色';
+
+  @override
+  String get categoryLookAppColour => 'App 顏色';
+
+  @override
+  String get categoryLookHint => '已依名稱選擇。輕觸即可更改。';
+
+  @override
+  String get renameCategoryTitle => '重新命名類別';
+
+  @override
+  String get renameGroupTitle => '重新命名群組';
+
+  @override
+  String get nameInUse => '此名稱已在這裡使用。';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return '免費群組：$current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return '你已達到免費方案 $limit 個自訂群組的上限。升級至 Premium 即可無限建立群組。';
+  }
+
+  @override
+  String get recordsSortExpiry => '依到期日排序';
+
+  @override
+  String get recordsSortName => '依名稱排序';
+
+  @override
+  String get recordsSelect => '選取';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已選取 $count 項',
+      one: '已選取 $count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => '移動';
+
+  @override
+  String get recordsMoveTitle => '移至';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已移動 $count 筆紀錄',
+      one: '已移動 $count 筆紀錄',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '要刪除 $count 筆紀錄嗎？',
+      one: '要刪除 $count 筆紀錄嗎？',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '它們會移至「最近刪除」，30 天內可以復原。';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已刪除 $count 筆紀錄',
+      one: '已刪除 $count 筆紀錄',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => '即將到期';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '顯示全部 $count 筆紀錄',
+      one: '顯示所有紀錄',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '還沒有$group';
+  }
+
+  @override
+  String get recordsEmptyBody => '掃描卡片或文件，或手動新增。Vaultara 會在到期前提醒你。';
+
+  @override
+  String get recordsScan => '掃描';
 }

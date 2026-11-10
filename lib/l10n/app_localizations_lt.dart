@@ -8076,4 +8076,184 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Išsiųskite nuorodą, ir darbuotojas pats įkels atnaujintą dokumentą.';
+
+  @override
+  String get categoryHealthAndMedical => 'Sveikata ir medicina';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Narystės ir prenumeratos';
+
+  @override
+  String get subcategoryFirearmLicences => 'Ginklų leidimai';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Tarptautiniai vairuotojo pažymėjimai';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Laivavedžio ir piloto licencijos';
+
+  @override
+  String get subcategorySafetyCertificates => 'Pirmosios pagalbos ir saugos pažymėjimai';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Elektros instaliacijos patikros aktai';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Gaisrinės įrangos aptarnavimas';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Sveikatos draudimo kortelės';
+
+  @override
+  String get subcategoryPrescriptions => 'Receptai';
+
+  @override
+  String get subcategoryVaccinations => 'Skiepai';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Medicininės pažymos';
+
+  @override
+  String get subcategoryGymMemberships => 'Sporto klubo narystės';
+
+  @override
+  String get subcategoryClubMemberships => 'Klubų narystės';
+
+  @override
+  String get subcategorySubscriptions => 'Prenumeratos';
+
+  @override
+  String get subcategoryWarranties => 'Garantijos';
+
+  @override
+  String get yoursTag => 'Jūsų';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nebegalioja: $count',
+      one: '$count nebegalioja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Keisti piktogramą';
+
+  @override
+  String get categoryLookTitle => 'Piktograma ir spalva';
+
+  @override
+  String get categoryLookAppColour => 'Programėlės spalva';
+
+  @override
+  String get categoryLookHint => 'Parinkta pagal pavadinimą. Bakstelėkite, kad pakeistumėte.';
+
+  @override
+  String get renameCategoryTitle => 'Pervadinti kategoriją';
+
+  @override
+  String get renameGroupTitle => 'Pervadinti grupę';
+
+  @override
+  String get nameInUse => 'Šis pavadinimas čia jau naudojamas.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Nemokamos grupės: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Pasiekėte nemokamo plano ribą – $limit savų grupių. Pereikite prie Premium ir kurkite neribotai grupių.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Rikiuoti pagal galiojimo datą';
+
+  @override
+  String get recordsSortName => 'Rikiuoti pagal pavadinimą';
+
+  @override
+  String get recordsSelect => 'Pasirinkti';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pasirinkta: $count',
+      one: 'Pasirinkta: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Perkelti';
+
+  @override
+  String get recordsMoveTitle => 'Perkelti į';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Perkelta įrašų: $count',
+      one: 'Perkeltas $count įrašas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ištrinti įrašų: $count?',
+      one: 'Ištrinti $count įrašą?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Jie bus perkelti į „Neseniai ištrinti“, iš kur juos galėsite atkurti 30 dienų.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ištrinta įrašų: $count',
+      one: 'Ištrintas $count įrašas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Greitai baigs galioti';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rodyti visus įrašus ($count)',
+      one: 'Rodyti visus įrašus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Grupėje $group dar nieko nėra';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Nuskenuokite kortelę ar dokumentą arba pridėkite rankiniu būdu. Vaultara primins prieš baigiantis galiojimui.';
+
+  @override
+  String get recordsScan => 'Skenuoti';
 }

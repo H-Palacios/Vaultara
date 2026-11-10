@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Havi jelentés",
   "storyBusiness3Body": "Minden hónapban egy jelentés mutatja, mi érvényes, mi jár le, és mi hiányzik.",
   "storyBusiness4Title": "Frissítés kérése",
-  "storyBusiness4Body": "Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot."
+  "storyBusiness4Body": "Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot.",
+  "categoryHealthAndMedical": "Egészség és orvosi",
+  "categoryMembershipsAndSubscriptions": "Tagságok és előfizetések",
+  "subcategoryFirearmLicences": "Fegyvertartási engedélyek",
+  "subcategoryInternationalDrivingPermits": "Nemzetközi vezetői engedélyek",
+  "subcategoryBoatAndPilotLicences": "Hajó- és pilótaengedélyek",
+  "subcategorySafetyCertificates": "Elsősegély- és biztonsági tanúsítványok",
+  "subcategoryElectricalComplianceCertificates": "Villamos biztonsági jegyzőkönyvek",
+  "subcategoryFireEquipmentServices": "Tűzvédelmi eszközök karbantartása",
+  "subcategoryMedicalAidCards": "Egészségbiztosítási kártyák",
+  "subcategoryPrescriptions": "Receptek",
+  "subcategoryVaccinations": "Oltások",
+  "subcategoryMedicalCertificates": "Orvosi igazolások",
+  "subcategoryGymMemberships": "Edzőtermi bérletek",
+  "subcategoryClubMemberships": "Klubtagságok",
+  "subcategorySubscriptions": "Előfizetések",
+  "subcategoryWarranties": "Garanciák",
+  "yoursTag": "Saját",
+  "expiredBadge": "{count, plural, =1{{count} lejárt} other{{count} lejárt}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Ikon módosítása",
+  "categoryLookTitle": "Ikon és szín",
+  "categoryLookAppColour": "Az app színe",
+  "categoryLookHint": "A név alapján választva. Koppints a módosításhoz.",
+  "renameCategoryTitle": "Kategória átnevezése",
+  "renameGroupTitle": "Csoport átnevezése",
+  "nameInUse": "Ez a név itt már foglalt.",
+  "freeGroupsProgress": "Ingyenes csoportok: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Elérted az ingyenes csomag {limit} saját csoportos korlátját. Válts Premiumra a korlátlan csoportokért.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Rendezés lejárat szerint",
+  "recordsSortName": "Rendezés név szerint",
+  "recordsSelect": "Kijelölés",
+  "recordsSelected": "{count, plural, =1{{count} kijelölve} other{{count} kijelölve}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Áthelyezés",
+  "recordsMoveTitle": "Áthelyezés ide",
+  "recordsMoved": "{count, plural, =1{{count} tétel áthelyezve} other{{count} tétel áthelyezve}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Törlöd az {count} tételt?} other{Törlöd a(z) {count} tételt?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "A(z) „Nemrég törölt elemek” helyre kerülnek, ahonnan 30 napig visszaállíthatod őket.",
+  "recordsDeletedMany": "{count, plural, =1{{count} tétel törölve} other{{count} tétel törölve}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Hamarosan lejár",
+  "recordsShowAll": "{count, plural, =1{Összes tétel mutatása} other{Mind a(z) {count} tétel mutatása}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Még nincs semmi itt: {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Szkenneld be a kártyát vagy dokumentumot, vagy add hozzá kézzel. A Vaultara lejárat előtt emlékeztet.",
+  "recordsScan": "Szkennelés"
 }

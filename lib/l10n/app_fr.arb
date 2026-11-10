@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "Rapport mensuel",
   "storyBusiness3Body": "Chaque mois, un rapport montre ce qui est valide, ce qui expire et ce qui manque.",
   "storyBusiness4Title": "Demander une mise à jour",
-  "storyBusiness4Body": "Envoyez un lien et le personnel télécharge lui-même son document renouvelé."
+  "storyBusiness4Body": "Envoyez un lien et le personnel télécharge lui-même son document renouvelé.",
+  "categoryHealthAndMedical": "Santé et médical",
+  "categoryMembershipsAndSubscriptions": "Abonnements et adhésions",
+  "subcategoryFirearmLicences": "Permis de port d'arme",
+  "subcategoryInternationalDrivingPermits": "Permis de conduire internationaux",
+  "subcategoryBoatAndPilotLicences": "Permis bateau et licences de pilote",
+  "subcategorySafetyCertificates": "Certificats de secourisme et de sécurité",
+  "subcategoryElectricalComplianceCertificates": "Certificats de conformité électrique",
+  "subcategoryFireEquipmentServices": "Entretien des équipements incendie",
+  "subcategoryMedicalAidCards": "Cartes d'assurance maladie",
+  "subcategoryPrescriptions": "Ordonnances",
+  "subcategoryVaccinations": "Vaccinations",
+  "subcategoryMedicalCertificates": "Certificats médicaux",
+  "subcategoryGymMemberships": "Abonnements à la salle de sport",
+  "subcategoryClubMemberships": "Adhésions à des clubs",
+  "subcategorySubscriptions": "Abonnements",
+  "subcategoryWarranties": "Garanties",
+  "yoursTag": "À vous",
+  "expiredBadge": "{count, plural, =1{{count} expiré} other{{count} expirés}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Changer l'icône",
+  "categoryLookTitle": "Icône et couleur",
+  "categoryLookAppColour": "Couleur de l'app",
+  "categoryLookHint": "Choisie d'après le nom. Touchez pour la changer.",
+  "renameCategoryTitle": "Renommer la catégorie",
+  "renameGroupTitle": "Renommer le groupe",
+  "nameInUse": "Ce nom est déjà utilisé ici.",
+  "freeGroupsProgress": "Groupes gratuits : {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Vous avez atteint la limite du forfait Gratuit de {limit} groupes personnalisés. Passez à Premium pour créer des groupes sans limite.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Trier par date d'expiration",
+  "recordsSortName": "Trier par nom",
+  "recordsSelect": "Sélectionner",
+  "recordsSelected": "{count, plural, =1{{count} sélectionné} other{{count} sélectionnés}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Déplacer",
+  "recordsMoveTitle": "Déplacer vers",
+  "recordsMoved": "{count, plural, =1{{count} élément déplacé} other{{count} éléments déplacés}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Supprimer {count} élément ?} other{Supprimer {count} éléments ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ils vont dans « Supprimés récemment », où vous pouvez les récupérer pendant 30 jours.",
+  "recordsDeletedMany": "{count, plural, =1{{count} élément supprimé} other{{count} éléments supprimés}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Bientôt à échéance",
+  "recordsShowAll": "{count, plural, =1{Afficher tous les éléments} other{Afficher les {count} éléments}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Aucun élément dans {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scannez la carte ou le document, ou ajoutez-le à la main. Vaultara vous prévient avant l'expiration.",
+  "recordsScan": "Scanner"
 }

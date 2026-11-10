@@ -13662,6 +13662,258 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send a link and staff can upload their renewed document themselves.'**
   String get storyBusiness4Body;
+
+  /// Name of a built-in category of records.
+  ///
+  /// In en, this message translates to:
+  /// **'Health and medical'**
+  String get categoryHealthAndMedical;
+
+  /// Name of a built-in category of records.
+  ///
+  /// In en, this message translates to:
+  /// **'Memberships and subscriptions'**
+  String get categoryMembershipsAndSubscriptions;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Firearm licences'**
+  String get subcategoryFirearmLicences;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'International driving permits'**
+  String get subcategoryInternationalDrivingPermits;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Boat and pilot licences'**
+  String get subcategoryBoatAndPilotLicences;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'First aid and safety certificates'**
+  String get subcategorySafetyCertificates;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Electrical certificates of compliance'**
+  String get subcategoryElectricalComplianceCertificates;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Fire equipment services'**
+  String get subcategoryFireEquipmentServices;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical aid cards'**
+  String get subcategoryMedicalAidCards;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Prescriptions'**
+  String get subcategoryPrescriptions;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaccinations'**
+  String get subcategoryVaccinations;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical certificates'**
+  String get subcategoryMedicalCertificates;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Gym memberships'**
+  String get subcategoryGymMemberships;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Club memberships'**
+  String get subcategoryClubMemberships;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions'**
+  String get subcategorySubscriptions;
+
+  /// Name of a built-in group of records inside a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Warranties and guarantees'**
+  String get subcategoryWarranties;
+
+  /// Small label on a category or group the user made.
+  ///
+  /// In en, this message translates to:
+  /// **'Yours'**
+  String get yoursTag;
+
+  /// Badge with how many records in a category or group have expired.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 expired} other{{count} expired}}'**
+  String expiredBadge(int count);
+
+  /// Menu item to change a custom category's icon and colour.
+  ///
+  /// In en, this message translates to:
+  /// **'Change icon'**
+  String get changeIcon;
+
+  /// Title of the sheet to pick a category's icon and colour.
+  ///
+  /// In en, this message translates to:
+  /// **'Icon and colour'**
+  String get categoryLookTitle;
+
+  /// Tooltip of the colour swatch that uses the app's own colour.
+  ///
+  /// In en, this message translates to:
+  /// **'App colour'**
+  String get categoryLookAppColour;
+
+  /// Under the icon preview when making a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Picked from the name. Tap to change it.'**
+  String get categoryLookHint;
+
+  /// Title of the sheet to rename a category.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename category'**
+  String get renameCategoryTitle;
+
+  /// Title of the sheet to rename a group.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename group'**
+  String get renameGroupTitle;
+
+  /// Error when a category or group name is taken.
+  ///
+  /// In en, this message translates to:
+  /// **'That name is already in use here.'**
+  String get nameInUse;
+
+  /// How many custom groups a Free plan user has made.
+  ///
+  /// In en, this message translates to:
+  /// **'Free groups: {current}/{limit}'**
+  String freeGroupsProgress(int current, int limit);
+
+  /// Shown when a Free plan user has made all their custom groups.
+  ///
+  /// In en, this message translates to:
+  /// **'You have reached the Free plan limit of {limit} custom groups. Upgrade to Premium to create unlimited groups.'**
+  String groupLimitReached(int limit);
+
+  /// Menu item on the records screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by expiry date'**
+  String get recordsSortExpiry;
+
+  /// Menu item on the records screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by name'**
+  String get recordsSortName;
+
+  /// Menu item to start choosing several records.
+  ///
+  /// In en, this message translates to:
+  /// **'Select'**
+  String get recordsSelect;
+
+  /// How many records are chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 selected} other{{count} selected}}'**
+  String recordsSelected(int count);
+
+  /// Button to move the chosen records to another group.
+  ///
+  /// In en, this message translates to:
+  /// **'Move'**
+  String get recordsMove;
+
+  /// Title of the sheet to pick a group to move records to.
+  ///
+  /// In en, this message translates to:
+  /// **'Move to'**
+  String get recordsMoveTitle;
+
+  /// Confirmation after moving records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Moved 1 record} other{Moved {count} records}}'**
+  String recordsMoved(int count);
+
+  /// Title of the dialog before deleting several records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Delete 1 record?} other{Delete {count} records?}}'**
+  String recordsDeleteManyTitle(int count);
+
+  /// Body of the dialog before deleting several records.
+  ///
+  /// In en, this message translates to:
+  /// **'They go to Recently deleted, where you can bring them back for 30 days.'**
+  String get recordsDeleteManyBody;
+
+  /// Confirmation after deleting several records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Deleted 1 record} other{Deleted {count} records}}'**
+  String recordsDeletedMany(int count);
+
+  /// Section heading for records that expire within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'Due soon'**
+  String get recordsSectionSoon;
+
+  /// Button to show every record in the group after opening one from search.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Show all records} other{Show all {count} records}}'**
+  String recordsShowAll(int count);
+
+  /// Title when a group has no records. {group} is the group name.
+  ///
+  /// In en, this message translates to:
+  /// **'No {group} yet'**
+  String recordsEmptyTitle(String group);
+
+  /// Text when a group has no records.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan the card or document, or add it by hand. Vaultara reminds you before it expires.'**
+  String get recordsEmptyBody;
+
+  /// Button to add a record by scanning it with the camera.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan'**
+  String get recordsScan;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

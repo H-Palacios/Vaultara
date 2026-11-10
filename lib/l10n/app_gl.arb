@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "Informe mensual",
   "storyBusiness3Body": "Cada mes, un informe amosa que é válido, que caduca e que falta.",
   "storyBusiness4Title": "Pide unha actualización",
-  "storyBusiness4Body": "Envía unha ligazón e o persoal sobe el mesmo o documento renovado."
+  "storyBusiness4Body": "Envía unha ligazón e o persoal sobe el mesmo o documento renovado.",
+  "categoryHealthAndMedical": "Saúde e medicina",
+  "categoryMembershipsAndSubscriptions": "Subscricións e cotas de socio",
+  "subcategoryFirearmLicences": "Licenzas de armas",
+  "subcategoryInternationalDrivingPermits": "Permisos de condución internacionais",
+  "subcategoryBoatAndPilotLicences": "Titulacións náuticas e licenzas de piloto",
+  "subcategorySafetyCertificates": "Certificados de primeiros auxilios e seguridade",
+  "subcategoryElectricalComplianceCertificates": "Boletíns de instalación eléctrica",
+  "subcategoryFireEquipmentServices": "Mantemento de equipos contra incendios",
+  "subcategoryMedicalAidCards": "Tarxetas sanitarias",
+  "subcategoryPrescriptions": "Receitas",
+  "subcategoryVaccinations": "Vacinas",
+  "subcategoryMedicalCertificates": "Certificados médicos",
+  "subcategoryGymMemberships": "Cotas do ximnasio",
+  "subcategoryClubMemberships": "Cotas de clubs",
+  "subcategorySubscriptions": "Subscricións",
+  "subcategoryWarranties": "Garantías",
+  "yoursTag": "Teu",
+  "expiredBadge": "{count, plural, =1{{count} caducado} other{{count} caducados}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Cambiar a icona",
+  "categoryLookTitle": "Icona e cor",
+  "categoryLookAppColour": "Cor da app",
+  "categoryLookHint": "Escollida segundo o nome. Toca para cambiala.",
+  "renameCategoryTitle": "Cambiar o nome da categoría",
+  "renameGroupTitle": "Cambiar o nome do grupo",
+  "nameInUse": "Ese nome xa se usa aquí.",
+  "freeGroupsProgress": "Grupos gratuítos: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Chegaches ao límite do plan Gratuíto de {limit} grupos personalizados. Pasa a Premium para crear grupos sen límite.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ordenar por data de caducidade",
+  "recordsSortName": "Ordenar por nome",
+  "recordsSelect": "Seleccionar",
+  "recordsSelected": "{count, plural, =1{{count} seleccionado} other{{count} seleccionados}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Mover",
+  "recordsMoveTitle": "Mover a",
+  "recordsMoved": "{count, plural, =1{Moveuse {count} rexistro} other{Movéronse {count} rexistros}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Queres eliminar {count} rexistro?} other{Queres eliminar {count} rexistros?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Van a «Eliminados recentemente», onde podes recuperalos durante 30 días.",
+  "recordsDeletedMany": "{count, plural, =1{Eliminouse {count} rexistro} other{Elimináronse {count} rexistros}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Caduca pronto",
+  "recordsShowAll": "{count, plural, =1{Mostrar todos os rexistros} other{Mostrar os {count} rexistros}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Aínda non hai nada en {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Escanea a tarxeta ou o documento, ou engádeo a man. Vaultara avísate antes de que caduque.",
+  "recordsScan": "Escanear"
 }

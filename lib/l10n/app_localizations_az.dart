@@ -7926,4 +7926,184 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Link göndərin, işçi yenilənmiş sənədi özü yükləyəcək.';
+
+  @override
+  String get categoryHealthAndMedical => 'Sağlamlıq və tibb';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Üzvlüklər və abunələr';
+
+  @override
+  String get subcategoryFirearmLicences => 'Silah lisenziyaları';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Beynəlxalq sürücülük vəsiqələri';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Qayıq və pilot lisenziyaları';
+
+  @override
+  String get subcategorySafetyCertificates => 'İlk yardım və təhlükəsizlik sertifikatları';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Elektrik uyğunluq sertifikatları';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Yanğın avadanlığına xidmət';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Tibbi sığorta kartları';
+
+  @override
+  String get subcategoryPrescriptions => 'Reseptlər';
+
+  @override
+  String get subcategoryVaccinations => 'Peyvəndlər';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Tibbi arayışlar';
+
+  @override
+  String get subcategoryGymMemberships => 'İdman zalı üzvlükləri';
+
+  @override
+  String get subcategoryClubMemberships => 'Klub üzvlükləri';
+
+  @override
+  String get subcategorySubscriptions => 'Abunələr';
+
+  @override
+  String get subcategoryWarranties => 'Zəmanətlər';
+
+  @override
+  String get yoursTag => 'Sizin';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count müddəti bitib',
+      one: '$count müddəti bitib',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'İkonu dəyiş';
+
+  @override
+  String get categoryLookTitle => 'İkon və rəng';
+
+  @override
+  String get categoryLookAppColour => 'Tətbiqin rəngi';
+
+  @override
+  String get categoryLookHint => 'Ada görə seçildi. Dəyişmək üçün toxunun.';
+
+  @override
+  String get renameCategoryTitle => 'Kateqoriyanın adını dəyiş';
+
+  @override
+  String get renameGroupTitle => 'Qrupun adını dəyiş';
+
+  @override
+  String get nameInUse => 'Bu ad burada artıq istifadə olunur.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Pulsuz qruplar: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Pulsuz planın $limit fərdi qrup limitinə çatdınız. Limitsiz qruplar üçün Premium-a keçin.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Bitmə tarixinə görə sırala';
+
+  @override
+  String get recordsSortName => 'Ada görə sırala';
+
+  @override
+  String get recordsSelect => 'Seç';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count seçildi',
+      one: '$count seçildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Köçür';
+
+  @override
+  String get recordsMoveTitle => 'Bura köçür';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count qeyd köçürüldü',
+      one: '$count qeyd köçürüldü',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count qeyd silinsin?',
+      one: '$count qeyd silinsin?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Onlar \"Son silinənlər\" bölməsinə keçir, oradan 30 gün ərzində bərpa edə bilərsiniz.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count qeyd silindi',
+      one: '$count qeyd silindi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Tezliklə bitir';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bütün $count qeydi göstər',
+      one: 'Bütün qeydləri göstər',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group hələ boşdur';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Kartı və ya sənədi skan edin, ya da əl ilə əlavə edin. Vaultara müddəti bitməzdən əvvəl xatırladacaq.';
+
+  @override
+  String get recordsScan => 'Skan et';
 }

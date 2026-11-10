@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "Tuarascáil mhíosúil",
   "storyBusiness3Body": "Gach mí, taispeánann tuarascáil cad atá bailí, cad atá ag dul in éag agus cad atá in easnamh.",
   "storyBusiness4Title": "Iarr nuashonrú",
-  "storyBusiness4Body": "Seol nasc agus uaslódálann an ball foirne an doiciméad athnuaite é féin."
+  "storyBusiness4Body": "Seol nasc agus uaslódálann an ball foirne an doiciméad athnuaite é féin.",
+  "categoryHealthAndMedical": "Sláinte agus leigheas",
+  "categoryMembershipsAndSubscriptions": "Ballraíochtaí agus síntiúis",
+  "subcategoryFirearmLicences": "Ceadúnais arm tine",
+  "subcategoryInternationalDrivingPermits": "Ceadúnais tiomána idirnáisiúnta",
+  "subcategoryBoatAndPilotLicences": "Ceadúnais bháid agus phíolóta",
+  "subcategorySafetyCertificates": "Teastais garchabhrach agus sábháilteachta",
+  "subcategoryElectricalComplianceCertificates": "Teastais chomhlíonta leictreachais",
+  "subcategoryFireEquipmentServices": "Seirbhísiú trealaimh dóiteáin",
+  "subcategoryMedicalAidCards": "Cártaí árachais sláinte",
+  "subcategoryPrescriptions": "Oidis",
+  "subcategoryVaccinations": "Vacsaínithe",
+  "subcategoryMedicalCertificates": "Teastais leighis",
+  "subcategoryGymMemberships": "Ballraíochtaí giomnáisiam",
+  "subcategoryClubMemberships": "Ballraíochtaí club",
+  "subcategorySubscriptions": "Síntiúis",
+  "subcategoryWarranties": "Barántais",
+  "yoursTag": "Leatsa",
+  "expiredBadge": "{count, plural, =1{{count} imithe in éag} other{{count} imithe in éag}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Athraigh an deilbhín",
+  "categoryLookTitle": "Deilbhín agus dath",
+  "categoryLookAppColour": "Dath na haipe",
+  "categoryLookHint": "Roghnaithe ón ainm. Tapáil chun é a athrú.",
+  "renameCategoryTitle": "Athainmnigh an chatagóir",
+  "renameGroupTitle": "Athainmnigh an grúpa",
+  "nameInUse": "Tá an t-ainm sin in úsáid anseo cheana.",
+  "freeGroupsProgress": "Grúpaí saor in aisce: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Tá teorainn an phlean saor in aisce de {limit} grúpa saincheaptha bainte amach agat. Uasghrádaigh go Premium le haghaidh grúpaí gan teorainn.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sórtáil de réir dáta éaga",
+  "recordsSortName": "Sórtáil de réir ainm",
+  "recordsSelect": "Roghnaigh",
+  "recordsSelected": "{count, plural, =1{{count} roghnaithe} other{{count} roghnaithe}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Bog",
+  "recordsMoveTitle": "Bog go",
+  "recordsMoved": "{count, plural, =1{Bogadh {count} taifead} other{Bogadh {count} taifead}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Scrios {count} taifead?} other{Scrios {count} taifead?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Téann siad go \"Scriosta le déanaí\", áit ar féidir leat iad a fháil ar ais ar feadh 30 lá.",
+  "recordsDeletedMany": "{count, plural, =1{Scriosadh {count} taifead} other{Scriosadh {count} taifead}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Ag dul in éag go luath",
+  "recordsShowAll": "{count, plural, =1{Taispeáin gach taifead} other{Taispeáin na {count} taifead}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Níl aon rud in {group} fós",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scan an cárta nó an doiciméad, nó cuir leis de láimh é. Cuirfidh Vaultara i gcuimhne duit sula dtéann sé in éag.",
+  "recordsScan": "Scan"
 }

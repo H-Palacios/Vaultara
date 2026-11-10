@@ -2613,5 +2613,113 @@
   "storyBusiness3Title": "דוח חודשי",
   "storyBusiness3Body": "בכל חודש דוח מראה מה בתוקף, מה עומד לפוג ומה חסר.",
   "storyBusiness4Title": "בקשו עדכון",
-  "storyBusiness4Body": "שלחו קישור והעובד יעלה בעצמו את המסמך המחודש."
+  "storyBusiness4Body": "שלחו קישור והעובד יעלה בעצמו את המסמך המחודש.",
+  "categoryHealthAndMedical": "בריאות ורפואה",
+  "categoryMembershipsAndSubscriptions": "מינויים וחברויות",
+  "subcategoryFirearmLicences": "רישיונות לנשק",
+  "subcategoryInternationalDrivingPermits": "רישיונות נהיגה בינלאומיים",
+  "subcategoryBoatAndPilotLicences": "רישיונות שיט וטיס",
+  "subcategorySafetyCertificates": "תעודות עזרה ראשונה ובטיחות",
+  "subcategoryElectricalComplianceCertificates": "אישורי בדיקת חשמל",
+  "subcategoryFireEquipmentServices": "תחזוקת ציוד כיבוי אש",
+  "subcategoryMedicalAidCards": "כרטיסי קופת חולים",
+  "subcategoryPrescriptions": "מרשמים",
+  "subcategoryVaccinations": "חיסונים",
+  "subcategoryMedicalCertificates": "אישורים רפואיים",
+  "subcategoryGymMemberships": "מינויים לחדר כושר",
+  "subcategoryClubMemberships": "חברויות במועדונים",
+  "subcategorySubscriptions": "מינויים",
+  "subcategoryWarranties": "אחריות",
+  "yoursTag": "שלך",
+  "expiredBadge": "{count, plural, =1{פג תוקף: {count}} other{פג תוקף: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "שינוי סמל",
+  "categoryLookTitle": "סמל וצבע",
+  "categoryLookAppColour": "צבע האפליקציה",
+  "categoryLookHint": "נבחר לפי השם. הקש כדי לשנות.",
+  "renameCategoryTitle": "שינוי שם הקטגוריה",
+  "renameGroupTitle": "שינוי שם הקבוצה",
+  "nameInUse": "השם הזה כבר בשימוש כאן.",
+  "freeGroupsProgress": "קבוצות בחינם: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "הגעת למגבלת התוכנית החינמית של {limit} קבוצות מותאמות. שדרג ל-Premium כדי ליצור קבוצות ללא הגבלה.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "מיון לפי תאריך תפוגה",
+  "recordsSortName": "מיון לפי שם",
+  "recordsSelect": "בחירה",
+  "recordsSelected": "{count, plural, =1{נבחר {count}} other{נבחרו {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "העברה",
+  "recordsMoveTitle": "העברה אל",
+  "recordsMoved": "{count, plural, =1{רשומה אחת הועברה} other{{count} רשומות הועברו}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{למחוק רשומה אחת?} other{למחוק {count} רשומות?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "הן יעברו אל \"נמחקו לאחרונה\", ושם אפשר לשחזר אותן במשך 30 יום.",
+  "recordsDeletedMany": "{count, plural, =1{רשומה אחת נמחקה} other{{count} רשומות נמחקו}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "יפוג בקרוב",
+  "recordsShowAll": "{count, plural, =1{הצגת כל הרשומות} other{הצגת כל {count} הרשומות}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "אין עדיין פריטים ב{group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "סרוק את הכרטיס או המסמך, או הוסף ידנית. Vaultara יזכיר לך לפני שהתוקף יפוג.",
+  "recordsScan": "סריקה"
 }

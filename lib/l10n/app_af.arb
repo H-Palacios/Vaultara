@@ -2646,5 +2646,113 @@
   "storyBusiness3Title": "Maandverslag",
   "storyBusiness3Body": "Elke maand wys 'n verslag wat geldig is, wat verval en wat ontbreek.",
   "storyBusiness4Title": "Vra vir 'n opdatering",
-  "storyBusiness4Body": "Stuur 'n skakel en die personeellid laai self die hernude dokument op."
+  "storyBusiness4Body": "Stuur 'n skakel en die personeellid laai self die hernude dokument op.",
+  "categoryHealthAndMedical": "Gesondheid en medies",
+  "categoryMembershipsAndSubscriptions": "Lidmaatskappe en intekeninge",
+  "subcategoryFirearmLicences": "Vuurwapenlisensies",
+  "subcategoryInternationalDrivingPermits": "Internasionale bestuurspermitte",
+  "subcategoryBoatAndPilotLicences": "Boot- en vlieënierslisensies",
+  "subcategorySafetyCertificates": "Noodhulp- en veiligheidsertifikate",
+  "subcategoryElectricalComplianceCertificates": "Elektriese voldoeningsertifikate",
+  "subcategoryFireEquipmentServices": "Diens van brandtoerusting",
+  "subcategoryMedicalAidCards": "Mediesefondskaarte",
+  "subcategoryPrescriptions": "Voorskrifte",
+  "subcategoryVaccinations": "Inentings",
+  "subcategoryMedicalCertificates": "Mediese sertifikate",
+  "subcategoryGymMemberships": "Gimnasiumlidmaatskappe",
+  "subcategoryClubMemberships": "Klublidmaatskappe",
+  "subcategorySubscriptions": "Intekeninge",
+  "subcategoryWarranties": "Waarborge",
+  "yoursTag": "Joune",
+  "expiredBadge": "{count, plural, =1{{count} verval} other{{count} verval}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Verander ikoon",
+  "categoryLookTitle": "Ikoon en kleur",
+  "categoryLookAppColour": "Toepassing se kleur",
+  "categoryLookHint": "Gekies volgens die naam. Tik om te verander.",
+  "renameCategoryTitle": "Hernoem kategorie",
+  "renameGroupTitle": "Hernoem groep",
+  "nameInUse": "Daardie naam word reeds hier gebruik.",
+  "freeGroupsProgress": "Gratis groepe: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Jy het die Gratis-plan se limiet van {limit} eie groepe bereik. Gradeer op na Premium vir onbeperkte groepe.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sorteer volgens vervaldatum",
+  "recordsSortName": "Sorteer volgens naam",
+  "recordsSelect": "Kies",
+  "recordsSelected": "{count, plural, =1{{count} gekies} other{{count} gekies}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Skuif",
+  "recordsMoveTitle": "Skuif na",
+  "recordsMoved": "{count, plural, =1{{count} inskrywing geskuif} other{{count} inskrywings geskuif}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Vee {count} inskrywing uit?} other{Vee {count} inskrywings uit?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Hulle gaan na \"Onlangs Uitgevee\", waar jy hulle 30 dae lank kan terugkry.",
+  "recordsDeletedMany": "{count, plural, =1{{count} inskrywing uitgevee} other{{count} inskrywings uitgevee}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Verval binnekort",
+  "recordsShowAll": "{count, plural, =1{Wys alle inskrywings} other{Wys al {count} inskrywings}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Nog niks in {group} nie",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skandeer die kaart of dokument, of voeg dit met die hand by. Vaultara herinner jou voordat dit verval.",
+  "recordsScan": "Skandeer"
 }

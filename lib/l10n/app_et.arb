@@ -2773,5 +2773,113 @@
   "storyBusiness3Title": "Kuuaruanne",
   "storyBusiness3Body": "Igal kuul näitab aruanne, mis kehtib, mis aegub ja mis puudub.",
   "storyBusiness4Title": "Küsi uuendust",
-  "storyBusiness4Body": "Saada link ja töötaja laadib uuendatud dokumendi ise üles."
+  "storyBusiness4Body": "Saada link ja töötaja laadib uuendatud dokumendi ise üles.",
+  "categoryHealthAndMedical": "Tervis ja meditsiin",
+  "categoryMembershipsAndSubscriptions": "Liikmesused ja tellimused",
+  "subcategoryFirearmLicences": "Relvaload",
+  "subcategoryInternationalDrivingPermits": "Rahvusvahelised juhiload",
+  "subcategoryBoatAndPilotLicences": "Laevajuhi- ja pilooditunnistused",
+  "subcategorySafetyCertificates": "Esmaabi- ja ohutustunnistused",
+  "subcategoryElectricalComplianceCertificates": "Elektripaigaldise kontrollaktid",
+  "subcategoryFireEquipmentServices": "Tuleohutusseadmete hooldus",
+  "subcategoryMedicalAidCards": "Ravikindlustuskaardid",
+  "subcategoryPrescriptions": "Retseptid",
+  "subcategoryVaccinations": "Vaktsineerimised",
+  "subcategoryMedicalCertificates": "Arstitõendid",
+  "subcategoryGymMemberships": "Jõusaali liikmesused",
+  "subcategoryClubMemberships": "Klubiliikmesused",
+  "subcategorySubscriptions": "Tellimused",
+  "subcategoryWarranties": "Garantiid",
+  "yoursTag": "Sinu",
+  "expiredBadge": "{count, plural, =1{{count} aegunud} other{{count} aegunud}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Muuda ikooni",
+  "categoryLookTitle": "Ikoon ja värv",
+  "categoryLookAppColour": "Rakenduse värv",
+  "categoryLookHint": "Valitud nime järgi. Muutmiseks puuduta.",
+  "renameCategoryTitle": "Nimeta kategooria ümber",
+  "renameGroupTitle": "Nimeta grupp ümber",
+  "nameInUse": "See nimi on siin juba kasutusel.",
+  "freeGroupsProgress": "Tasuta grupid: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Oled jõudnud tasuta paketi piirini, {limit} oma gruppi. Piiramatute gruppide jaoks vali Premium.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sordi aegumise järgi",
+  "recordsSortName": "Sordi nime järgi",
+  "recordsSelect": "Vali",
+  "recordsSelected": "{count, plural, =1{{count} valitud} other{{count} valitud}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Teisalda",
+  "recordsMoveTitle": "Teisalda asukohta",
+  "recordsMoved": "{count, plural, =1{{count} kirje teisaldatud} other{{count} kirjet teisaldatud}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Kas kustutada {count} kirje?} other{Kas kustutada {count} kirjet?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Need lähevad jaotisse „Hiljuti kustutatud“, kust saad need 30 päeva jooksul taastada.",
+  "recordsDeletedMany": "{count, plural, =1{{count} kirje kustutatud} other{{count} kirjet kustutatud}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Aegub peagi",
+  "recordsShowAll": "{count, plural, =1{Näita kõiki kirjeid} other{Näita kõiki {count} kirjet}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Grupis {group} pole veel midagi",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skanni kaart või dokument või lisa see käsitsi. Vaultara tuletab meelde enne aegumist.",
+  "recordsScan": "Skanni"
 }

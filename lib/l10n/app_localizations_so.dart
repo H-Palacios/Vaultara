@@ -7925,4 +7925,184 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Dir xiriiriye, shaqaalaha ayaa isagu soo gelinaya dukumentiga la cusboonaysiiyay.';
+
+  @override
+  String get categoryHealthAndMedical => 'Caafimaad iyo daryeel';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Xubinnimo iyo is-diiwaangelin';
+
+  @override
+  String get subcategoryFirearmLicences => 'Shatiyada hubka';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Ruqsadaha darawalnimada caalamiga ah';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Shatiyada doonta iyo duuliyaha';
+
+  @override
+  String get subcategorySafetyCertificates => 'Shahaadooyinka gargaarka degdegga iyo badbaadada';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Shahaadooyinka u hoggaansanaanta korontada';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Adeegga qalabka dabka';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kaararka caymiska caafimaadka';
+
+  @override
+  String get subcategoryPrescriptions => 'Warqadaha daawada';
+
+  @override
+  String get subcategoryVaccinations => 'Tallaalada';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Shahaadooyinka caafimaadka';
+
+  @override
+  String get subcategoryGymMemberships => 'Xubinnimada jimicsiga';
+
+  @override
+  String get subcategoryClubMemberships => 'Xubinnimada naadiyada';
+
+  @override
+  String get subcategorySubscriptions => 'Is-diiwaangelin';
+
+  @override
+  String get subcategoryWarranties => 'Dammaanadaha';
+
+  @override
+  String get yoursTag => 'Adiga';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count waa dhaceen',
+      one: '$count waa dhacay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Beddel astaanta';
+
+  @override
+  String get categoryLookTitle => 'Astaanta iyo midabka';
+
+  @override
+  String get categoryLookAppColour => 'Midabka abka';
+
+  @override
+  String get categoryLookHint => 'Waxaa laga doortay magaca. Taabo si aad u beddesho.';
+
+  @override
+  String get renameCategoryTitle => 'Magaca qaybta beddel';
+
+  @override
+  String get renameGroupTitle => 'Magaca kooxda beddel';
+
+  @override
+  String get nameInUse => 'Magacaas halkan horey ayaa loo isticmaalay.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Kooxaha bilaashka ah: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Waxaad gaartay xadka qorshaha Bilaashka ah ee $limit kooxood oo gaar ah. U gudub Premium si aad u samaysato kooxo aan xad lahayn.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Ku kala saar taariikhda dhicitaanka';
+
+  @override
+  String get recordsSortName => 'Ku kala saar magaca';
+
+  @override
+  String get recordsSelect => 'Dooro';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count la doortay',
+      one: '$count la doortay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Wareeji';
+
+  @override
+  String get recordsMoveTitle => 'U wareeji';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count diiwaan ayaa la wareejiyay',
+      one: '$count diiwaan ayaa la wareejiyay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tirtir $count diiwaan?',
+      one: 'Tirtir $count diiwaan?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Waxay galayaan \"La tirtiray dhawaan\", halkaas oo aad ka soo celin karto 30 maalmood gudahood.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count diiwaan ayaa la tirtiray',
+      one: '$count diiwaan ayaa la tirtiray',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Dhowaan ayuu dhacayaa';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tus dhammaan $count diiwaan',
+      one: 'Tus dhammaan diiwaannada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Weli waxba kuma jiraan $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Iska sawir kaarka ama dukumentiga, ama gacanta ku dar. Vaultara ayaa ku xasuusinaysa ka hor inta uusan dhicin.';
+
+  @override
+  String get recordsScan => 'Iska sawir';
 }

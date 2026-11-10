@@ -7926,4 +7926,184 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Sendu tengil og starfsfólk hleður sjálft upp endurnýjaða skjalinu.';
+
+  @override
+  String get categoryHealthAndMedical => 'Heilsa og læknisfræði';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Aðild og áskriftir';
+
+  @override
+  String get subcategoryFirearmLicences => 'Skotvopnaleyfi';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Alþjóðleg ökuskírteini';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Bátaréttindi og flugskírteini';
+
+  @override
+  String get subcategorySafetyCertificates => 'Skírteini í skyndihjálp og öryggismálum';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Vottorð um raflagnir';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Þjónusta við brunavarnabúnað';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Sjúkratryggingakort';
+
+  @override
+  String get subcategoryPrescriptions => 'Lyfseðlar';
+
+  @override
+  String get subcategoryVaccinations => 'Bólusetningar';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Læknisvottorð';
+
+  @override
+  String get subcategoryGymMemberships => 'Líkamsræktaraðild';
+
+  @override
+  String get subcategoryClubMemberships => 'Klúbbaðild';
+
+  @override
+  String get subcategorySubscriptions => 'Áskriftir';
+
+  @override
+  String get subcategoryWarranties => 'Ábyrgðir';
+
+  @override
+  String get yoursTag => 'Þitt';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count útrunnin',
+      one: '$count útrunnið',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Breyta tákni';
+
+  @override
+  String get categoryLookTitle => 'Tákn og litur';
+
+  @override
+  String get categoryLookAppColour => 'Litur forritsins';
+
+  @override
+  String get categoryLookHint => 'Valið út frá nafninu. Ýttu til að breyta.';
+
+  @override
+  String get renameCategoryTitle => 'Endurnefna flokk';
+
+  @override
+  String get renameGroupTitle => 'Endurnefna hóp';
+
+  @override
+  String get nameInUse => 'Þetta nafn er þegar í notkun hér.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Ókeypis hópar: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Þú hefur náð hámarki ókeypis áskriftar, $limit eigin hópum. Uppfærðu í Premium til að búa til ótakmarkaðan fjölda hópa.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Raða eftir gildistíma';
+
+  @override
+  String get recordsSortName => 'Raða eftir nafni';
+
+  @override
+  String get recordsSelect => 'Velja';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count valin',
+      one: '$count valið',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Færa';
+
+  @override
+  String get recordsMoveTitle => 'Færa í';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count færslur færðar',
+      one: '$count færsla færð',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Eyða $count færslum?',
+      one: 'Eyða $count færslu?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Þær fara í „Nýlega eytt“ þar sem þú getur endurheimt þær í 30 daga.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count færslum eytt',
+      one: '$count færslu eytt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Rennur brátt út';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sýna allar $count færslur',
+      one: 'Sýna allar færslur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Ekkert í $group ennþá';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Skannaðu kortið eða skjalið, eða bættu því við handvirkt. Vaultara minnir þig á áður en það rennur út.';
+
+  @override
+  String get recordsScan => 'Skanna';
 }

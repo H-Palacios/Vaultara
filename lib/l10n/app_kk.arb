@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Айлық есеп",
   "storyBusiness3Body": "Әр ай есеп нені жарамды, нені мерзімі бітіп жатқанын және нені жетіспейтінін көрсетеді.",
   "storyBusiness4Title": "Жаңартуды сұраңыз",
-  "storyBusiness4Body": "Сілтеме жіберіңіз, қызметкер жаңартылған құжатты өзі жүктейді."
+  "storyBusiness4Body": "Сілтеме жіберіңіз, қызметкер жаңартылған құжатты өзі жүктейді.",
+  "categoryHealthAndMedical": "Денсаулық және медицина",
+  "categoryMembershipsAndSubscriptions": "Мүшеліктер мен жазылымдар",
+  "subcategoryFirearmLicences": "Қару лицензиялары",
+  "subcategoryInternationalDrivingPermits": "Халықаралық жүргізуші куәліктері",
+  "subcategoryBoatAndPilotLicences": "Қайық және ұшқыш лицензиялары",
+  "subcategorySafetyCertificates": "Алғашқы көмек және қауіпсіздік сертификаттары",
+  "subcategoryElectricalComplianceCertificates": "Электр сәйкестік сертификаттары",
+  "subcategoryFireEquipmentServices": "Өрт сөндіру жабдығына қызмет көрсету",
+  "subcategoryMedicalAidCards": "Медициналық сақтандыру карталары",
+  "subcategoryPrescriptions": "Рецепттер",
+  "subcategoryVaccinations": "Екпелер",
+  "subcategoryMedicalCertificates": "Медициналық анықтамалар",
+  "subcategoryGymMemberships": "Спортзал мүшеліктері",
+  "subcategoryClubMemberships": "Клуб мүшеліктері",
+  "subcategorySubscriptions": "Жазылымдар",
+  "subcategoryWarranties": "Кепілдіктер",
+  "yoursTag": "Сіздікі",
+  "expiredBadge": "{count, plural, =1{{count} мерзімі өткен} other{{count} мерзімі өткен}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Белгішені өзгерту",
+  "categoryLookTitle": "Белгіше және түс",
+  "categoryLookAppColour": "Қолданба түсі",
+  "categoryLookHint": "Атауына қарай таңдалды. Өзгерту үшін түртіңіз.",
+  "renameCategoryTitle": "Санат атауын өзгерту",
+  "renameGroupTitle": "Топ атауын өзгерту",
+  "nameInUse": "Бұл атау мұнда бұрыннан қолданылады.",
+  "freeGroupsProgress": "Тегін топтар: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Тегін жоспардағы {limit} жеке топ шегіне жеттіңіз. Шексіз топ жасау үшін Premium-ға өтіңіз.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Мерзімі бойынша сұрыптау",
+  "recordsSortName": "Атауы бойынша сұрыптау",
+  "recordsSelect": "Таңдау",
+  "recordsSelected": "{count, plural, =1{{count} таңдалды} other{{count} таңдалды}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Жылжыту",
+  "recordsMoveTitle": "Мұнда жылжыту",
+  "recordsMoved": "{count, plural, =1{{count} жазба жылжытылды} other{{count} жазба жылжытылды}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} жазба жойылсын ба?} other{{count} жазба жойылсын ба?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Олар «Жақында жойылғандар» бөліміне түседі, онда 30 күн ішінде қалпына келтіре аласыз.",
+  "recordsDeletedMany": "{count, plural, =1{{count} жазба жойылды} other{{count} жазба жойылды}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Жақында мерзімі бітеді",
+  "recordsShowAll": "{count, plural, =1{Барлық жазбаларды көрсету} other{Барлық {count} жазбаны көрсету}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "«{group}» әзірге бос",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Картаны не құжатты сканерлеңіз немесе қолмен қосыңыз. Мерзімі біткенге дейін Vaultara еске салады.",
+  "recordsScan": "Сканерлеу"
 }

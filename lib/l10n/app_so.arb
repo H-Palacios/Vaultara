@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Warbixin bille ah",
   "storyBusiness3Body": "Bil kasta warbixin ayaa muujisa waxa ansax ah, waxa dhacaya iyo waxa maqan.",
   "storyBusiness4Title": "Codso cusboonaysiin",
-  "storyBusiness4Body": "Dir xiriiriye, shaqaalaha ayaa isagu soo gelinaya dukumentiga la cusboonaysiiyay."
+  "storyBusiness4Body": "Dir xiriiriye, shaqaalaha ayaa isagu soo gelinaya dukumentiga la cusboonaysiiyay.",
+  "categoryHealthAndMedical": "Caafimaad iyo daryeel",
+  "categoryMembershipsAndSubscriptions": "Xubinnimo iyo is-diiwaangelin",
+  "subcategoryFirearmLicences": "Shatiyada hubka",
+  "subcategoryInternationalDrivingPermits": "Ruqsadaha darawalnimada caalamiga ah",
+  "subcategoryBoatAndPilotLicences": "Shatiyada doonta iyo duuliyaha",
+  "subcategorySafetyCertificates": "Shahaadooyinka gargaarka degdegga iyo badbaadada",
+  "subcategoryElectricalComplianceCertificates": "Shahaadooyinka u hoggaansanaanta korontada",
+  "subcategoryFireEquipmentServices": "Adeegga qalabka dabka",
+  "subcategoryMedicalAidCards": "Kaararka caymiska caafimaadka",
+  "subcategoryPrescriptions": "Warqadaha daawada",
+  "subcategoryVaccinations": "Tallaalada",
+  "subcategoryMedicalCertificates": "Shahaadooyinka caafimaadka",
+  "subcategoryGymMemberships": "Xubinnimada jimicsiga",
+  "subcategoryClubMemberships": "Xubinnimada naadiyada",
+  "subcategorySubscriptions": "Is-diiwaangelin",
+  "subcategoryWarranties": "Dammaanadaha",
+  "yoursTag": "Adiga",
+  "expiredBadge": "{count, plural, =1{{count} waa dhacay} other{{count} waa dhaceen}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Beddel astaanta",
+  "categoryLookTitle": "Astaanta iyo midabka",
+  "categoryLookAppColour": "Midabka abka",
+  "categoryLookHint": "Waxaa laga doortay magaca. Taabo si aad u beddesho.",
+  "renameCategoryTitle": "Magaca qaybta beddel",
+  "renameGroupTitle": "Magaca kooxda beddel",
+  "nameInUse": "Magacaas halkan horey ayaa loo isticmaalay.",
+  "freeGroupsProgress": "Kooxaha bilaashka ah: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Waxaad gaartay xadka qorshaha Bilaashka ah ee {limit} kooxood oo gaar ah. U gudub Premium si aad u samaysato kooxo aan xad lahayn.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ku kala saar taariikhda dhicitaanka",
+  "recordsSortName": "Ku kala saar magaca",
+  "recordsSelect": "Dooro",
+  "recordsSelected": "{count, plural, =1{{count} la doortay} other{{count} la doortay}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Wareeji",
+  "recordsMoveTitle": "U wareeji",
+  "recordsMoved": "{count, plural, =1{{count} diiwaan ayaa la wareejiyay} other{{count} diiwaan ayaa la wareejiyay}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Tirtir {count} diiwaan?} other{Tirtir {count} diiwaan?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Waxay galayaan \"La tirtiray dhawaan\", halkaas oo aad ka soo celin karto 30 maalmood gudahood.",
+  "recordsDeletedMany": "{count, plural, =1{{count} diiwaan ayaa la tirtiray} other{{count} diiwaan ayaa la tirtiray}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Dhowaan ayuu dhacayaa",
+  "recordsShowAll": "{count, plural, =1{Tus dhammaan diiwaannada} other{Tus dhammaan {count} diiwaan}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Weli waxba kuma jiraan {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Iska sawir kaarka ama dukumentiga, ama gacanta ku dar. Vaultara ayaa ku xasuusinaysa ka hor inta uusan dhicin.",
+  "recordsScan": "Iska sawir"
 }

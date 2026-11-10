@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Laporan bulanan",
   "storyBusiness3Body": "Setiap bulan, laporan menunjukkan apa yang sah, apa yang akan tamat tempoh dan apa yang tiada.",
   "storyBusiness4Title": "Minta kemas kini",
-  "storyBusiness4Body": "Hantar pautan dan kakitangan memuat naik sendiri dokumen yang diperbaharui."
+  "storyBusiness4Body": "Hantar pautan dan kakitangan memuat naik sendiri dokumen yang diperbaharui.",
+  "categoryHealthAndMedical": "Kesihatan dan perubatan",
+  "categoryMembershipsAndSubscriptions": "Keahlian dan langganan",
+  "subcategoryFirearmLicences": "Lesen senjata api",
+  "subcategoryInternationalDrivingPermits": "Permit memandu antarabangsa",
+  "subcategoryBoatAndPilotLicences": "Lesen bot dan juruterbang",
+  "subcategorySafetyCertificates": "Sijil pertolongan cemas dan keselamatan",
+  "subcategoryElectricalComplianceCertificates": "Sijil pematuhan elektrik",
+  "subcategoryFireEquipmentServices": "Servis peralatan kebakaran",
+  "subcategoryMedicalAidCards": "Kad insurans perubatan",
+  "subcategoryPrescriptions": "Preskripsi",
+  "subcategoryVaccinations": "Vaksinasi",
+  "subcategoryMedicalCertificates": "Sijil perubatan",
+  "subcategoryGymMemberships": "Keahlian gim",
+  "subcategoryClubMemberships": "Keahlian kelab",
+  "subcategorySubscriptions": "Langganan",
+  "subcategoryWarranties": "Waranti dan jaminan",
+  "yoursTag": "Milik anda",
+  "expiredBadge": "{count, plural, =1{{count} tamat tempoh} other{{count} tamat tempoh}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Tukar ikon",
+  "categoryLookTitle": "Ikon dan warna",
+  "categoryLookAppColour": "Warna apl",
+  "categoryLookHint": "Dipilih berdasarkan nama. Ketik untuk menukar.",
+  "renameCategoryTitle": "Namakan semula kategori",
+  "renameGroupTitle": "Namakan semula kumpulan",
+  "nameInUse": "Nama itu sudah digunakan di sini.",
+  "freeGroupsProgress": "Kumpulan percuma: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Anda telah mencapai had pelan Percuma iaitu {limit} kumpulan tersuai. Naik taraf ke Premium untuk mencipta kumpulan tanpa had.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Isih mengikut tarikh tamat tempoh",
+  "recordsSortName": "Isih mengikut nama",
+  "recordsSelect": "Pilih",
+  "recordsSelected": "{count, plural, =1{{count} dipilih} other{{count} dipilih}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Alihkan",
+  "recordsMoveTitle": "Alihkan ke",
+  "recordsMoved": "{count, plural, =1{{count} rekod dialihkan} other{{count} rekod dialihkan}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Padam {count} rekod?} other{Padam {count} rekod?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Rekod akan masuk ke \"Baru Dipadam\", di mana anda boleh memulihkannya selama 30 hari.",
+  "recordsDeletedMany": "{count, plural, =1{{count} rekod dipadam} other{{count} rekod dipadam}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Hampir tamat tempoh",
+  "recordsShowAll": "{count, plural, =1{Tunjukkan semua rekod} other{Tunjukkan semua {count} rekod}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Belum ada apa-apa dalam {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Imbas kad atau dokumen, atau tambah secara manual. Vaultara akan mengingatkan anda sebelum tamat tempoh.",
+  "recordsScan": "Imbas"
 }

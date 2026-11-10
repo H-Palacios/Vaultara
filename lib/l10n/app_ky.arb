@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Айлык отчет",
   "storyBusiness3Body": "Ар айда отчет эмне жарактуу, эмненин мөөнөтү бүтүп жатканын жана эмне жетишпегенин көрсөтөт.",
   "storyBusiness4Title": "Жаңыртууну сураңыз",
-  "storyBusiness4Body": "Шилтеме жөнөтүңүз, кызматкер жаңыртылган документти өзү жүктөйт."
+  "storyBusiness4Body": "Шилтеме жөнөтүңүз, кызматкер жаңыртылган документти өзү жүктөйт.",
+  "categoryHealthAndMedical": "Ден соолук жана медицина",
+  "categoryMembershipsAndSubscriptions": "Мүчөлүктөр жана жазылуулар",
+  "subcategoryFirearmLicences": "Курал лицензиялары",
+  "subcategoryInternationalDrivingPermits": "Эл аралык айдоочулук күбөлүктөр",
+  "subcategoryBoatAndPilotLicences": "Кайык жана учкуч лицензиялары",
+  "subcategorySafetyCertificates": "Биринчи жардам жана коопсуздук сертификаттары",
+  "subcategoryElectricalComplianceCertificates": "Электр шайкештик сертификаттары",
+  "subcategoryFireEquipmentServices": "Өрт өчүрүү жабдууларын тейлөө",
+  "subcategoryMedicalAidCards": "Медициналык камсыздандыруу карталары",
+  "subcategoryPrescriptions": "Рецепттер",
+  "subcategoryVaccinations": "Эмдөөлөр",
+  "subcategoryMedicalCertificates": "Медициналык маалымкаттар",
+  "subcategoryGymMemberships": "Спорт залдын мүчөлүктөрү",
+  "subcategoryClubMemberships": "Клуб мүчөлүктөрү",
+  "subcategorySubscriptions": "Жазылуулар",
+  "subcategoryWarranties": "Кепилдиктер",
+  "yoursTag": "Сиздики",
+  "expiredBadge": "{count, plural, =1{{count} мөөнөтү өткөн} other{{count} мөөнөтү өткөн}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Сүрөтчөнү өзгөртүү",
+  "categoryLookTitle": "Сүрөтчө жана түс",
+  "categoryLookAppColour": "Колдонмонун түсү",
+  "categoryLookHint": "Аталышына жараша тандалды. Өзгөртүү үчүн таптаңыз.",
+  "renameCategoryTitle": "Категориянын атын өзгөртүү",
+  "renameGroupTitle": "Топтун атын өзгөртүү",
+  "nameInUse": "Бул ат бул жерде мурдатан колдонулат.",
+  "freeGroupsProgress": "Акысыз топтор: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Акысыз пландын {limit} жеке топ чегине жеттиңиз. Чексиз топтор үчүн Premium'га өтүңүз.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Мөөнөтү боюнча иреттөө",
+  "recordsSortName": "Аты боюнча иреттөө",
+  "recordsSelect": "Тандоо",
+  "recordsSelected": "{count, plural, =1{{count} тандалды} other{{count} тандалды}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Жылдыруу",
+  "recordsMoveTitle": "Бул жерге жылдыруу",
+  "recordsMoved": "{count, plural, =1{{count} жазуу жылдырылды} other{{count} жазуу жылдырылды}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} жазуу өчүрүлсүнбү?} other{{count} жазуу өчүрүлсүнбү?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Алар «Жакында өчүрүлгөндөр» бөлүмүнө түшөт, ал жерден 30 күн ичинде калыбына келтире аласыз.",
+  "recordsDeletedMany": "{count, plural, =1{{count} жазуу өчүрүлдү} other{{count} жазуу өчүрүлдү}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Жакында мөөнөтү бүтөт",
+  "recordsShowAll": "{count, plural, =1{Бардык жазууларды көрсөтүү} other{Бардык {count} жазууну көрсөтүү}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "«{group}» азырынча бош",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Картаны же документти сканерлеңиз же кол менен кошуңуз. Мөөнөтү бүтөрдөн мурун Vaultara эскертет.",
+  "recordsScan": "Сканерлөө"
 }

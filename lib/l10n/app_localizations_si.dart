@@ -7925,4 +7925,184 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'සබැඳියක් යවන්න, කාර්ය මණ්ඩල සාමාජිකයා අලුත් කළ ලේඛනය තමාම උඩුගත කරයි.';
+
+  @override
+  String get categoryHealthAndMedical => 'සෞඛ්‍ය සහ වෛද්‍ය';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'සාමාජිකත්ව සහ දායකත්ව';
+
+  @override
+  String get subcategoryFirearmLicences => 'ගිනි අවි බලපත්‍ර';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'ජාත්‍යන්තර රියදුරු අවසරපත්‍ර';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'බෝට්ටු සහ නියමු බලපත්‍ර';
+
+  @override
+  String get subcategorySafetyCertificates => 'ප්‍රථමාධාර සහ ආරක්ෂණ සහතික';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'විදුලි අනුකූලතා සහතික';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'ගිනි නිවන උපකරණ සේවා';
+
+  @override
+  String get subcategoryMedicalAidCards => 'සෞඛ්‍ය රක්ෂණ කාඩ්පත්';
+
+  @override
+  String get subcategoryPrescriptions => 'බෙහෙත් වට්ටෝරු';
+
+  @override
+  String get subcategoryVaccinations => 'එන්නත්';
+
+  @override
+  String get subcategoryMedicalCertificates => 'වෛද්‍ය සහතික';
+
+  @override
+  String get subcategoryGymMemberships => 'ජිම් සාමාජිකත්ව';
+
+  @override
+  String get subcategoryClubMemberships => 'සමාජ සාමාජිකත්ව';
+
+  @override
+  String get subcategorySubscriptions => 'දායකත්ව';
+
+  @override
+  String get subcategoryWarranties => 'වගකීම් සහ සහතික';
+
+  @override
+  String get yoursTag => 'ඔබේ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countක් කල් ඉකුත් වී ඇත',
+      one: '$countක් කල් ඉකුත් වී ඇත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'නිරූපකය වෙනස් කරන්න';
+
+  @override
+  String get categoryLookTitle => 'නිරූපකය සහ වර්ණය';
+
+  @override
+  String get categoryLookAppColour => 'යෙදුමේ වර්ණය';
+
+  @override
+  String get categoryLookHint => 'නමින් තෝරා ගන්නා ලදී. වෙනස් කිරීමට තට්ටු කරන්න.';
+
+  @override
+  String get renameCategoryTitle => 'කාණ්ඩය නැවත නම් කරන්න';
+
+  @override
+  String get renameGroupTitle => 'කණ්ඩායම නැවත නම් කරන්න';
+
+  @override
+  String get nameInUse => 'මෙම නම මෙහි දැනටමත් භාවිතයේ ඇත.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'නොමිලේ කණ්ඩායම්: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'ඔබ නොමිලේ සැලැස්මේ අභිරුචි කණ්ඩායම් $limit සීමාවට ළඟා වී ඇත. අසීමිත කණ්ඩායම් සඳහා Premium වෙත උත්ශ්‍රේණි කරන්න.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'කල් ඉකුත් වන දිනය අනුව පෙළගස්වන්න';
+
+  @override
+  String get recordsSortName => 'නම අනුව පෙළගස්වන්න';
+
+  @override
+  String get recordsSelect => 'තෝරන්න';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countක් තෝරා ඇත',
+      one: '$countක් තෝරා ඇත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'ගෙන යන්න';
+
+  @override
+  String get recordsMoveTitle => 'මෙතැනට ගෙන යන්න';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වාර්තා $countක් ගෙන ගියා',
+      one: 'වාර්තා $countක් ගෙන ගියා',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වාර්තා $countක් මකන්නද?',
+      one: 'වාර්තා $countක් මකන්නද?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'ඒවා \"මෑතකදී මකන ලද\" වෙත යයි, එතැනින් දින 30ක් ඇතුළත ආපසු ගත හැක.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වාර්තා $countක් මැකුවා',
+      one: 'වාර්තා $countක් මැකුවා',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'ඉක්මනින් කල් ඉකුත් වේ';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වාර්තා $countම පෙන්වන්න',
+      one: 'සියලු වාර්තා පෙන්වන්න',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group තුළ තවම කිසිවක් නැත';
+  }
+
+  @override
+  String get recordsEmptyBody => 'කාඩ්පත හෝ ලේඛනය ස්කෑන් කරන්න, නැතහොත් අතින් එක් කරන්න. කල් ඉකුත් වීමට පෙර Vaultara මතක් කරයි.';
+
+  @override
+  String get recordsScan => 'ස්කෑන් කරන්න';
 }

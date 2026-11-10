@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Rapora mehane",
   "storyBusiness3Body": "Her meh raporek nîşan dide çi derbasdar e, çi diqede û çi kêm e.",
   "storyBusiness4Title": "Nûkirinekê bixwaze",
-  "storyBusiness4Body": "Girêdanekê bişîne û karmend bi xwe belgeya nûkirî bar dike."
+  "storyBusiness4Body": "Girêdanekê bişîne û karmend bi xwe belgeya nûkirî bar dike.",
+  "categoryHealthAndMedical": "Tendurustî û bijîşkî",
+  "categoryMembershipsAndSubscriptions": "Endametî û abonetî",
+  "subcategoryFirearmLicences": "Destûrên çekan",
+  "subcategoryInternationalDrivingPermits": "Ehliyetên ajotinê yên navneteweyî",
+  "subcategoryBoatAndPilotLicences": "Ehliyetên keştî û pîlotiyê",
+  "subcategorySafetyCertificates": "Sertîfîkayên alîkariya yekem û ewlehiyê",
+  "subcategoryElectricalComplianceCertificates": "Sertîfîkayên lihevhatina elektrîkê",
+  "subcategoryFireEquipmentServices": "Servîsa alavên agirkujiyê",
+  "subcategoryMedicalAidCards": "Kartên sîgortaya tenduristiyê",
+  "subcategoryPrescriptions": "Reçete",
+  "subcategoryVaccinations": "Derziyên parastinê",
+  "subcategoryMedicalCertificates": "Raporên bijîşkî",
+  "subcategoryGymMemberships": "Endametiya werzîşgehê",
+  "subcategoryClubMemberships": "Endametiya klûban",
+  "subcategorySubscriptions": "Abonetî",
+  "subcategoryWarranties": "Garantî",
+  "yoursTag": "Ya te",
+  "expiredBadge": "{count, plural, =1{{count} dema wê derbas bûye} other{{count} dema wan derbas bûye}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Îkonê biguherîne",
+  "categoryLookTitle": "Îkon û reng",
+  "categoryLookAppColour": "Rengê sepanê",
+  "categoryLookHint": "Li gorî navî hat hilbijartin. Ji bo guhertinê bitikîne.",
+  "renameCategoryTitle": "Navê kategoriyê biguherîne",
+  "renameGroupTitle": "Navê komê biguherîne",
+  "nameInUse": "Ev nav li vir jixwe tê bikaranîn.",
+  "freeGroupsProgress": "Komên belaş: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Te gihişt sînorê plana Belaş a {limit} komên taybet. Ji bo komên bêsînor derbasî Premium bibe.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Li gorî dîroka qedandinê rêz bike",
+  "recordsSortName": "Li gorî navî rêz bike",
+  "recordsSelect": "Hilbijêre",
+  "recordsSelected": "{count, plural, =1{{count} hat hilbijartin} other{{count} hatin hilbijartin}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Bibe",
+  "recordsMoveTitle": "Bibe bo",
+  "recordsMoved": "{count, plural, =1{{count} tomar hat birin} other{{count} tomar hatin birin}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} tomar jê bibe?} other{{count} tomar jê bibe?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ew diçin \"Vê Dawiyê Jêbirî\", li wir tu dikarî wan heta 30 rojan vegerînî.",
+  "recordsDeletedMany": "{count, plural, =1{{count} tomar hat jêbirin} other{{count} tomar hatin jêbirin}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Zû diqede",
+  "recordsShowAll": "{count, plural, =1{Hemû tomaran nîşan bide} other{Hemû {count} tomaran nîşan bide}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Hîn tiştek di {group} de tune",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Kart an belgeyê bişopîne, an bi destan lê zêde bike. Vaultara berî qedandinê bîra te tîne.",
+  "recordsScan": "Bişopîne"
 }

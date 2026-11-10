@@ -2625,5 +2625,113 @@
   "storyBusiness3Title": "Щомісячний звіт",
   "storyBusiness3Body": "Щомісяця звіт показує, що чинне, що спливає і чого бракує.",
   "storyBusiness4Title": "Попросіть оновлення",
-  "storyBusiness4Body": "Надішліть посилання, і працівник сам завантажить поновлений документ."
+  "storyBusiness4Body": "Надішліть посилання, і працівник сам завантажить поновлений документ.",
+  "categoryHealthAndMedical": "Здоров'я і медицина",
+  "categoryMembershipsAndSubscriptions": "Членства й підписки",
+  "subcategoryFirearmLicences": "Дозволи на зброю",
+  "subcategoryInternationalDrivingPermits": "Міжнародні посвідчення водія",
+  "subcategoryBoatAndPilotLicences": "Права на судно та ліцензії пілота",
+  "subcategorySafetyCertificates": "Сертифікати першої допомоги та безпеки",
+  "subcategoryElectricalComplianceCertificates": "Акти перевірки електромережі",
+  "subcategoryFireEquipmentServices": "Обслуговування протипожежного обладнання",
+  "subcategoryMedicalAidCards": "Картки медичного страхування",
+  "subcategoryPrescriptions": "Рецепти",
+  "subcategoryVaccinations": "Щеплення",
+  "subcategoryMedicalCertificates": "Медичні довідки",
+  "subcategoryGymMemberships": "Абонементи в спортзал",
+  "subcategoryClubMemberships": "Членство в клубах",
+  "subcategorySubscriptions": "Підписки",
+  "subcategoryWarranties": "Гарантії",
+  "yoursTag": "Ваше",
+  "expiredBadge": "{count, plural, =1{{count} прострочено} other{{count} прострочено}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Змінити значок",
+  "categoryLookTitle": "Значок і колір",
+  "categoryLookAppColour": "Колір застосунку",
+  "categoryLookHint": "Вибрано за назвою. Торкніться, щоб змінити.",
+  "renameCategoryTitle": "Перейменувати категорію",
+  "renameGroupTitle": "Перейменувати групу",
+  "nameInUse": "Ця назва тут уже використовується.",
+  "freeGroupsProgress": "Безкоштовні групи: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Ви досягли ліміту безкоштовного плану: {limit} власних груп. Перейдіть на Premium, щоб створювати групи без обмежень.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Сортувати за терміном дії",
+  "recordsSortName": "Сортувати за назвою",
+  "recordsSelect": "Вибрати",
+  "recordsSelected": "{count, plural, =1{Вибрано {count}} other{Вибрано {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Перемістити",
+  "recordsMoveTitle": "Перемістити до",
+  "recordsMoved": "{count, plural, =1{Переміщено {count} запис} one{Переміщено {count} запис} few{Переміщено {count} записи} many{Переміщено {count} записів} other{Переміщено {count} записи}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Видалити {count} запис?} one{Видалити {count} запис?} few{Видалити {count} записи?} many{Видалити {count} записів?} other{Видалити {count} записи?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Вони потраплять до «Нещодавно видалені», звідки їх можна повернути протягом 30 днів.",
+  "recordsDeletedMany": "{count, plural, =1{Видалено {count} запис} one{Видалено {count} запис} few{Видалено {count} записи} many{Видалено {count} записів} other{Видалено {count} записи}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Скоро спливає",
+  "recordsShowAll": "{count, plural, =1{Показати всі записи} other{Показати всі записи ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "У «{group}» поки порожньо",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Відскануйте картку чи документ або додайте вручну. Vaultara нагадає до закінчення терміну.",
+  "recordsScan": "Сканувати"
 }

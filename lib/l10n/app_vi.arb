@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Báo cáo hằng tháng",
   "storyBusiness3Body": "Mỗi tháng một báo cáo cho thấy gì còn hiệu lực, gì sắp hết hạn và gì còn thiếu.",
   "storyBusiness4Title": "Yêu cầu cập nhật",
-  "storyBusiness4Body": "Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn."
+  "storyBusiness4Body": "Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn.",
+  "categoryHealthAndMedical": "Sức khỏe và y tế",
+  "categoryMembershipsAndSubscriptions": "Hội viên và gói đăng ký",
+  "subcategoryFirearmLicences": "Giấy phép sử dụng súng",
+  "subcategoryInternationalDrivingPermits": "Giấy phép lái xe quốc tế",
+  "subcategoryBoatAndPilotLicences": "Bằng lái tàu thuyền và phi công",
+  "subcategorySafetyCertificates": "Chứng chỉ sơ cứu và an toàn",
+  "subcategoryElectricalComplianceCertificates": "Giấy chứng nhận an toàn điện",
+  "subcategoryFireEquipmentServices": "Bảo trì thiết bị chữa cháy",
+  "subcategoryMedicalAidCards": "Thẻ bảo hiểm y tế",
+  "subcategoryPrescriptions": "Đơn thuốc",
+  "subcategoryVaccinations": "Tiêm chủng",
+  "subcategoryMedicalCertificates": "Giấy chứng nhận y tế",
+  "subcategoryGymMemberships": "Thẻ hội viên phòng gym",
+  "subcategoryClubMemberships": "Thẻ hội viên câu lạc bộ",
+  "subcategorySubscriptions": "Gói đăng ký",
+  "subcategoryWarranties": "Bảo hành",
+  "yoursTag": "Của bạn",
+  "expiredBadge": "{count, plural, =1{{count} đã hết hạn} other{{count} đã hết hạn}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Đổi biểu tượng",
+  "categoryLookTitle": "Biểu tượng và màu",
+  "categoryLookAppColour": "Màu của ứng dụng",
+  "categoryLookHint": "Được chọn theo tên. Nhấn để đổi.",
+  "renameCategoryTitle": "Đổi tên danh mục",
+  "renameGroupTitle": "Đổi tên nhóm",
+  "nameInUse": "Tên này đã được dùng ở đây.",
+  "freeGroupsProgress": "Nhóm miễn phí: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Bạn đã đạt giới hạn {limit} nhóm tùy chỉnh của gói Miễn phí. Nâng cấp lên Premium để tạo nhóm không giới hạn.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sắp xếp theo ngày hết hạn",
+  "recordsSortName": "Sắp xếp theo tên",
+  "recordsSelect": "Chọn",
+  "recordsSelected": "{count, plural, =1{Đã chọn {count}} other{Đã chọn {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Di chuyển",
+  "recordsMoveTitle": "Di chuyển đến",
+  "recordsMoved": "{count, plural, =1{Đã di chuyển {count} hồ sơ} other{Đã di chuyển {count} hồ sơ}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Xóa {count} hồ sơ?} other{Xóa {count} hồ sơ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Chúng sẽ vào mục \"Đã xóa gần đây\", nơi bạn có thể khôi phục trong 30 ngày.",
+  "recordsDeletedMany": "{count, plural, =1{Đã xóa {count} hồ sơ} other{Đã xóa {count} hồ sơ}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Sắp hết hạn",
+  "recordsShowAll": "{count, plural, =1{Hiện tất cả hồ sơ} other{Hiện tất cả {count} hồ sơ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Chưa có gì trong {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Quét thẻ hoặc giấy tờ, hoặc thêm thủ công. Vaultara sẽ nhắc bạn trước khi hết hạn.",
+  "recordsScan": "Quét"
 }

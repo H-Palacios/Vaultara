@@ -7874,4 +7874,184 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Ziga njikọ ma onye ọrụ ga-ebulite akwụkwọ emegharịrị n\'onwe ya.';
+
+  @override
+  String get categoryHealthAndMedical => 'Ahụike na ọgwụ';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Ndị otu na ndebanye aha';
+
+  @override
+  String get subcategoryFirearmLicences => 'Akwụkwọ ikike egbe';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Akwụkwọ ikike ịnya ụgbọ mba ụwa';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Akwụkwọ ikike ụgbọ mmiri na onye ọkwọ ụgbọ elu';
+
+  @override
+  String get subcategorySafetyCertificates => 'Asambodo enyemaka mbụ na nchekwa';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Asambodo nnabata ọkụ eletrik';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Ọrụ ngwa mgbochi ọkụ';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kaadị mkpuchi ahụike';
+
+  @override
+  String get subcategoryPrescriptions => 'Ndenye ọgwụ';
+
+  @override
+  String get subcategoryVaccinations => 'Ọgwụ mgbochi';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Asambodo ahụike';
+
+  @override
+  String get subcategoryGymMemberships => 'Ndị otu jim';
+
+  @override
+  String get subcategoryClubMemberships => 'Ndị otu klọb';
+
+  @override
+  String get subcategorySubscriptions => 'Ndebanye aha';
+
+  @override
+  String get subcategoryWarranties => 'Nkwa';
+
+  @override
+  String get yoursTag => 'Nke gị';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count agwụla',
+      one: '$count agwụla',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Gbanwee akara ngosi';
+
+  @override
+  String get categoryLookTitle => 'Akara ngosi na agba';
+
+  @override
+  String get categoryLookAppColour => 'Agba ngwa';
+
+  @override
+  String get categoryLookHint => 'Ahọrọ ya site n\'aha. Pịa ka ịgbanwee.';
+
+  @override
+  String get renameCategoryTitle => 'Gbanwee aha ụdị';
+
+  @override
+  String get renameGroupTitle => 'Gbanwee aha otu';
+
+  @override
+  String get nameInUse => 'A na-eji aha ahụ ebe a.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Otu n\'efu: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Ị ruola oke atụmatụ n\'efu nke otu $limit nke gị. Kwalite gaa Premium ka ị mepụta otu na-enweghị njedebe.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Hazie site n\'ụbọchị njedebe';
+
+  @override
+  String get recordsSortName => 'Hazie site n\'aha';
+
+  @override
+  String get recordsSelect => 'Họrọ';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ahọrọla $count',
+      one: 'Ahọrọla $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Bugharịa';
+
+  @override
+  String get recordsMoveTitle => 'Bugharịa gaa';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ebugharịala ndekọ $count',
+      one: 'Ebugharịala ndekọ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hichapụ ndekọ $count?',
+      one: 'Hichapụ ndekọ $count?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ha na-aga na \"E wepụrụ n\'oge na-adịbeghị anya\", ebe ị nwere ike iweghachi ha n\'ime ụbọchị 30.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ehichapụla ndekọ $count',
+      one: 'Ehichapụla ndekọ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Ọ ga-agwụ n\'oge na-adịghị anya';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gosi ndekọ $count niile',
+      one: 'Gosi ndekọ niile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Ọ nweghị ihe dị na $group ugbu a';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Nyochaa kaadị ma ọ bụ akwụkwọ, ma ọ bụ tinye ya n\'aka. Vaultara ga-echetara gị tupu ọ gwụ.';
+
+  @override
+  String get recordsScan => 'Nyochaa';
 }

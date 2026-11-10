@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "میاشتنی راپور",
   "storyBusiness3Body": "هره میاشت یو راپور ښیي چې څه اعتبار لري، څه پای ته رسېږي او څه کم دي.",
   "storyBusiness4Title": "د تازه کولو غوښتنه وکړئ",
-  "storyBusiness4Body": "لینک ولېږئ او کارکوونکی به پخپله نوی شوی سند پورته کړي."
+  "storyBusiness4Body": "لینک ولېږئ او کارکوونکی به پخپله نوی شوی سند پورته کړي.",
+  "categoryHealthAndMedical": "روغتیا او طبي",
+  "categoryMembershipsAndSubscriptions": "غړیتوب او ګډونونه",
+  "subcategoryFirearmLicences": "د وسلې جوازونه",
+  "subcategoryInternationalDrivingPermits": "نړیوال د موټر چلولو جوازونه",
+  "subcategoryBoatAndPilotLicences": "د کښتۍ او پیلوټ جوازونه",
+  "subcategorySafetyCertificates": "د لومړنۍ مرستې او خوندیتوب سندونه",
+  "subcategoryElectricalComplianceCertificates": "د برېښنا د مطابقت سندونه",
+  "subcategoryFireEquipmentServices": "د اور وژنې د وسایلو خدمت",
+  "subcategoryMedicalAidCards": "د روغتیا بیمې کارتونه",
+  "subcategoryPrescriptions": "نسخې",
+  "subcategoryVaccinations": "واکسینونه",
+  "subcategoryMedicalCertificates": "طبي تصدیقونه",
+  "subcategoryGymMemberships": "د جم غړیتوب",
+  "subcategoryClubMemberships": "د کلب غړیتوب",
+  "subcategorySubscriptions": "ګډونونه",
+  "subcategoryWarranties": "تضمینونه",
+  "yoursTag": "ستاسو",
+  "expiredBadge": "{count, plural, =1{{count} پای ته رسېدلی} other{{count} پای ته رسېدلي}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "نښه بدله کړئ",
+  "categoryLookTitle": "نښه او رنګ",
+  "categoryLookAppColour": "د اپ رنګ",
+  "categoryLookHint": "د نوم له مخې غوره شو. د بدلولو لپاره ټک وکړئ.",
+  "renameCategoryTitle": "د کټګورۍ نوم بدل کړئ",
+  "renameGroupTitle": "د ډلې نوم بدل کړئ",
+  "nameInUse": "دا نوم دلته مخکې کارول شوی.",
+  "freeGroupsProgress": "وړیا ډلې: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "تاسو د وړیا پلان د {limit} ځانګړو ډلو حد ته رسېدلي یاست. د بې‌حده ډلو لپاره Premium ته لوړ شئ.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "د پای نېټې له مخې ترتیب",
+  "recordsSortName": "د نوم له مخې ترتیب",
+  "recordsSelect": "غوره کړئ",
+  "recordsSelected": "{count, plural, =1{{count} غوره شو} other{{count} غوره شول}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ولېږدوئ",
+  "recordsMoveTitle": "دې ته ولېږدوئ",
+  "recordsMoved": "{count, plural, =1{{count} ریکارډ ولېږدول شو} other{{count} ریکارډونه ولېږدول شول}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} ریکارډ حذف شي؟} other{{count} ریکارډونه حذف شي؟}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "دوی «وروستي حذف شوي» ته ځي، چېرې چې تاسو یې تر 30 ورځو بېرته راوستلی شئ.",
+  "recordsDeletedMany": "{count, plural, =1{{count} ریکارډ حذف شو} other{{count} ریکارډونه حذف شول}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ژر پای ته رسېږي",
+  "recordsShowAll": "{count, plural, =1{ټول ریکارډونه وښایاست} other{ټول {count} ریکارډونه وښایاست}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "په {group} کې لا هیڅ نشته",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "کارت یا سند سکن کړئ، یا یې په لاس ورزیات کړئ. Vaultara به تاسو ته د پای ته رسېدو مخکې یادونه وکړي.",
+  "recordsScan": "سکن"
 }

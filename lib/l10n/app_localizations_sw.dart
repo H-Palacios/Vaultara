@@ -7926,4 +7926,184 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Tuma kiungo na mfanyakazi anapakia mwenyewe hati iliyohuishwa.';
+
+  @override
+  String get categoryHealthAndMedical => 'Afya na matibabu';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Uanachama na usajili';
+
+  @override
+  String get subcategoryFirearmLicences => 'Leseni za silaha';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Vibali vya kimataifa vya udereva';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Leseni za boti na urubani';
+
+  @override
+  String get subcategorySafetyCertificates => 'Vyeti vya huduma ya kwanza na usalama';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Vyeti vya ukaguzi wa umeme';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Huduma ya vifaa vya kuzima moto';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kadi za bima ya afya';
+
+  @override
+  String get subcategoryPrescriptions => 'Maagizo ya daktari';
+
+  @override
+  String get subcategoryVaccinations => 'Chanjo';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Vyeti vya matibabu';
+
+  @override
+  String get subcategoryGymMemberships => 'Uanachama wa gym';
+
+  @override
+  String get subcategoryClubMemberships => 'Uanachama wa klabu';
+
+  @override
+  String get subcategorySubscriptions => 'Usajili';
+
+  @override
+  String get subcategoryWarranties => 'Dhamana na waranti';
+
+  @override
+  String get yoursTag => 'Yako';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zimeisha muda',
+      one: '$count imeisha muda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Badilisha aikoni';
+
+  @override
+  String get categoryLookTitle => 'Aikoni na rangi';
+
+  @override
+  String get categoryLookAppColour => 'Rangi ya programu';
+
+  @override
+  String get categoryLookHint => 'Imechaguliwa kutokana na jina. Gusa ili kubadilisha.';
+
+  @override
+  String get renameCategoryTitle => 'Badilisha jina la kategoria';
+
+  @override
+  String get renameGroupTitle => 'Badilisha jina la kikundi';
+
+  @override
+  String get nameInUse => 'Jina hilo tayari linatumika hapa.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Vikundi vya bure: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Umefikia kikomo cha mpango wa Bure cha vikundi $limit maalum. Pandisha hadi Premium ili kuunda vikundi bila kikomo.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Panga kwa tarehe ya kuisha';
+
+  @override
+  String get recordsSortName => 'Panga kwa jina';
+
+  @override
+  String get recordsSelect => 'Chagua';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zimechaguliwa',
+      one: '$count imechaguliwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Hamisha';
+
+  @override
+  String get recordsMoveTitle => 'Hamisha hadi';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rekodi $count zimehamishwa',
+      one: 'Rekodi $count imehamishwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Futa rekodi $count?',
+      one: 'Futa rekodi $count?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Zitaenda kwenye \"Zilizofutwa hivi karibuni\", ambapo unaweza kuzirejesha kwa siku 30.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rekodi $count zimefutwa',
+      one: 'Rekodi $count imefutwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Inaisha hivi karibuni';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Onyesha rekodi zote $count',
+      one: 'Onyesha rekodi zote',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Bado hakuna kitu katika $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Changanua kadi au hati, au iongeze mwenyewe. Vaultara itakukumbusha kabla muda wake haujaisha.';
+
+  @override
+  String get recordsScan => 'Changanua';
 }

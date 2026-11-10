@@ -2615,5 +2615,113 @@
   "storyBusiness3Title": "Informe mensual",
   "storyBusiness3Body": "Cada mes, un informe muestra qué es válido, qué caduca y qué falta.",
   "storyBusiness4Title": "Pide una actualización",
-  "storyBusiness4Body": "Envía un enlace y el personal sube su documento renovado por sí mismo."
+  "storyBusiness4Body": "Envía un enlace y el personal sube su documento renovado por sí mismo.",
+  "categoryHealthAndMedical": "Salud y medicina",
+  "categoryMembershipsAndSubscriptions": "Membresías y suscripciones",
+  "subcategoryFirearmLicences": "Licencias de armas",
+  "subcategoryInternationalDrivingPermits": "Permisos internacionales de conducir",
+  "subcategoryBoatAndPilotLicences": "Licencias de navegación y de piloto",
+  "subcategorySafetyCertificates": "Certificados de primeros auxilios y seguridad",
+  "subcategoryElectricalComplianceCertificates": "Certificados eléctricos de conformidad",
+  "subcategoryFireEquipmentServices": "Mantenimiento de equipos contra incendios",
+  "subcategoryMedicalAidCards": "Tarjetas de seguro médico",
+  "subcategoryPrescriptions": "Recetas",
+  "subcategoryVaccinations": "Vacunas",
+  "subcategoryMedicalCertificates": "Certificados médicos",
+  "subcategoryGymMemberships": "Membresías de gimnasio",
+  "subcategoryClubMemberships": "Membresías de clubes",
+  "subcategorySubscriptions": "Suscripciones",
+  "subcategoryWarranties": "Garantías",
+  "yoursTag": "Tuyo",
+  "expiredBadge": "{count, plural, =1{{count} vencido} other{{count} vencidos}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Cambiar icono",
+  "categoryLookTitle": "Icono y color",
+  "categoryLookAppColour": "Color de la app",
+  "categoryLookHint": "Elegido según el nombre. Toca para cambiarlo.",
+  "renameCategoryTitle": "Cambiar nombre de la categoría",
+  "renameGroupTitle": "Cambiar nombre del grupo",
+  "nameInUse": "Ese nombre ya se usa aquí.",
+  "freeGroupsProgress": "Grupos gratis: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Has llegado al límite del plan Gratis de {limit} grupos personalizados. Mejora a Premium para crear grupos sin límite.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ordenar por fecha de vencimiento",
+  "recordsSortName": "Ordenar por nombre",
+  "recordsSelect": "Seleccionar",
+  "recordsSelected": "{count, plural, =1{{count} seleccionado} other{{count} seleccionados}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Mover",
+  "recordsMoveTitle": "Mover a",
+  "recordsMoved": "{count, plural, =1{Se movió {count} registro} other{Se movieron {count} registros}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{¿Eliminar {count} registro?} other{¿Eliminar {count} registros?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Van a «Eliminados recientemente», donde puedes recuperarlos durante 30 días.",
+  "recordsDeletedMany": "{count, plural, =1{Se eliminó {count} registro} other{Se eliminaron {count} registros}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Vence pronto",
+  "recordsShowAll": "{count, plural, =1{Mostrar todos los registros} other{Mostrar los {count} registros}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Aún no hay nada en {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Escanea la tarjeta o el documento, o agrégalo a mano. Vaultara te avisa antes de que venza.",
+  "recordsScan": "Escanear"
 }

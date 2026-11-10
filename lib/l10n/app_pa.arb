@@ -2615,5 +2615,113 @@
   "storyBusiness3Title": "ਮਾਸਿਕ ਰਿਪੋਰਟ",
   "storyBusiness3Body": "ਹਰ ਮਹੀਨੇ ਰਿਪੋਰਟ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਕੀ ਵੈਧ ਹੈ, ਕੀ ਖ਼ਤਮ ਹੋ ਰਿਹਾ ਹੈ ਅਤੇ ਕੀ ਗੁੰਮ ਹੈ।",
   "storyBusiness4Title": "ਅੱਪਡੇਟ ਮੰਗੋ",
-  "storyBusiness4Body": "ਲਿੰਕ ਭੇਜੋ ਅਤੇ ਸਟਾਫ਼ ਖੁਦ ਨਵਿਆਇਆ ਦਸਤਾਵੇਜ਼ ਅੱਪਲੋਡ ਕਰੇਗਾ।"
+  "storyBusiness4Body": "ਲਿੰਕ ਭੇਜੋ ਅਤੇ ਸਟਾਫ਼ ਖੁਦ ਨਵਿਆਇਆ ਦਸਤਾਵੇਜ਼ ਅੱਪਲੋਡ ਕਰੇਗਾ।",
+  "categoryHealthAndMedical": "ਸਿਹਤ ਅਤੇ ਮੈਡੀਕਲ",
+  "categoryMembershipsAndSubscriptions": "ਮੈਂਬਰਸ਼ਿਪ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+  "subcategoryFirearmLicences": "ਹਥਿਆਰ ਲਾਇਸੈਂਸ",
+  "subcategoryInternationalDrivingPermits": "ਅੰਤਰਰਾਸ਼ਟਰੀ ਡਰਾਈਵਿੰਗ ਪਰਮਿਟ",
+  "subcategoryBoatAndPilotLicences": "ਕਿਸ਼ਤੀ ਅਤੇ ਪਾਇਲਟ ਲਾਇਸੈਂਸ",
+  "subcategorySafetyCertificates": "ਮੁੱਢਲੀ ਸਹਾਇਤਾ ਅਤੇ ਸੁਰੱਖਿਆ ਸਰਟੀਫਿਕੇਟ",
+  "subcategoryElectricalComplianceCertificates": "ਬਿਜਲੀ ਅਨੁਪਾਲਨ ਸਰਟੀਫਿਕੇਟ",
+  "subcategoryFireEquipmentServices": "ਅੱਗ ਬੁਝਾਊ ਉਪਕਰਨਾਂ ਦੀ ਸਰਵਿਸ",
+  "subcategoryMedicalAidCards": "ਸਿਹਤ ਬੀਮਾ ਕਾਰਡ",
+  "subcategoryPrescriptions": "ਨੁਸਖ਼ੇ",
+  "subcategoryVaccinations": "ਟੀਕਾਕਰਨ",
+  "subcategoryMedicalCertificates": "ਮੈਡੀਕਲ ਸਰਟੀਫਿਕੇਟ",
+  "subcategoryGymMemberships": "ਜਿਮ ਮੈਂਬਰਸ਼ਿਪ",
+  "subcategoryClubMemberships": "ਕਲੱਬ ਮੈਂਬਰਸ਼ਿਪ",
+  "subcategorySubscriptions": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+  "subcategoryWarranties": "ਵਾਰੰਟੀ ਅਤੇ ਗਾਰੰਟੀ",
+  "yoursTag": "ਤੁਹਾਡਾ",
+  "expiredBadge": "{count, plural, =1{{count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ} other{{count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ਆਈਕਨ ਬਦਲੋ",
+  "categoryLookTitle": "ਆਈਕਨ ਅਤੇ ਰੰਗ",
+  "categoryLookAppColour": "ਐਪ ਦਾ ਰੰਗ",
+  "categoryLookHint": "ਨਾਮ ਦੇ ਆਧਾਰ 'ਤੇ ਚੁਣਿਆ ਗਿਆ। ਬਦਲਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "renameCategoryTitle": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਦਲੋ",
+  "renameGroupTitle": "ਗਰੁੱਪ ਦਾ ਨਾਮ ਬਦਲੋ",
+  "nameInUse": "ਇਹ ਨਾਮ ਇੱਥੇ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।",
+  "freeGroupsProgress": "ਮੁਫ਼ਤ ਗਰੁੱਪ: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "ਤੁਸੀਂ ਮੁਫ਼ਤ ਪਲਾਨ ਦੀ {limit} ਕਸਟਮ ਗਰੁੱਪਾਂ ਦੀ ਸੀਮਾ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਬੇਅੰਤ ਗਰੁੱਪ ਬਣਾਉਣ ਲਈ Premium ਲਓ।",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "ਮਿਆਦ ਦੀ ਤਾਰੀਖ਼ ਮੁਤਾਬਕ ਲੜੀਬੱਧ ਕਰੋ",
+  "recordsSortName": "ਨਾਮ ਮੁਤਾਬਕ ਲੜੀਬੱਧ ਕਰੋ",
+  "recordsSelect": "ਚੁਣੋ",
+  "recordsSelected": "{count, plural, =1{{count} ਚੁਣਿਆ} other{{count} ਚੁਣੇ}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ਭੇਜੋ",
+  "recordsMoveTitle": "ਇੱਥੇ ਭੇਜੋ",
+  "recordsMoved": "{count, plural, =1{{count} ਰਿਕਾਰਡ ਭੇਜਿਆ ਗਿਆ} other{{count} ਰਿਕਾਰਡ ਭੇਜੇ ਗਏ}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} ਰਿਕਾਰਡ ਮਿਟਾਉਣਾ ਹੈ?} other{{count} ਰਿਕਾਰਡ ਮਿਟਾਉਣੇ ਹਨ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ਇਹ \"ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਹੋਏ\" ਵਿੱਚ ਜਾਣਗੇ, ਜਿੱਥੋਂ ਤੁਸੀਂ 30 ਦਿਨਾਂ ਤੱਕ ਵਾਪਸ ਲਿਆ ਸਕਦੇ ਹੋ।",
+  "recordsDeletedMany": "{count, plural, =1{{count} ਰਿਕਾਰਡ ਮਿਟਾਇਆ ਗਿਆ} other{{count} ਰਿਕਾਰਡ ਮਿਟਾਏ ਗਏ}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ਜਲਦੀ ਮਿਆਦ ਖ਼ਤਮ",
+  "recordsShowAll": "{count, plural, =1{ਸਾਰੇ ਰਿਕਾਰਡ ਦਿਖਾਓ} other{ਸਾਰੇ {count} ਰਿਕਾਰਡ ਦਿਖਾਓ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} ਵਿੱਚ ਹਾਲੇ ਕੁਝ ਨਹੀਂ",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "ਕਾਰਡ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਸਕੈਨ ਕਰੋ, ਜਾਂ ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ। ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Vaultara ਯਾਦ ਕਰਾਏਗਾ।",
+  "recordsScan": "ਸਕੈਨ ਕਰੋ"
 }

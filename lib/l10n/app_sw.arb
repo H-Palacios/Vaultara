@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Ripoti ya mwezi",
   "storyBusiness3Body": "Kila mwezi ripoti inaonyesha kilicho halali, kinachoisha na kinachokosekana.",
   "storyBusiness4Title": "Omba usasishaji",
-  "storyBusiness4Body": "Tuma kiungo na mfanyakazi anapakia mwenyewe hati iliyohuishwa."
+  "storyBusiness4Body": "Tuma kiungo na mfanyakazi anapakia mwenyewe hati iliyohuishwa.",
+  "categoryHealthAndMedical": "Afya na matibabu",
+  "categoryMembershipsAndSubscriptions": "Uanachama na usajili",
+  "subcategoryFirearmLicences": "Leseni za silaha",
+  "subcategoryInternationalDrivingPermits": "Vibali vya kimataifa vya udereva",
+  "subcategoryBoatAndPilotLicences": "Leseni za boti na urubani",
+  "subcategorySafetyCertificates": "Vyeti vya huduma ya kwanza na usalama",
+  "subcategoryElectricalComplianceCertificates": "Vyeti vya ukaguzi wa umeme",
+  "subcategoryFireEquipmentServices": "Huduma ya vifaa vya kuzima moto",
+  "subcategoryMedicalAidCards": "Kadi za bima ya afya",
+  "subcategoryPrescriptions": "Maagizo ya daktari",
+  "subcategoryVaccinations": "Chanjo",
+  "subcategoryMedicalCertificates": "Vyeti vya matibabu",
+  "subcategoryGymMemberships": "Uanachama wa gym",
+  "subcategoryClubMemberships": "Uanachama wa klabu",
+  "subcategorySubscriptions": "Usajili",
+  "subcategoryWarranties": "Dhamana na waranti",
+  "yoursTag": "Yako",
+  "expiredBadge": "{count, plural, =1{{count} imeisha muda} other{{count} zimeisha muda}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Badilisha aikoni",
+  "categoryLookTitle": "Aikoni na rangi",
+  "categoryLookAppColour": "Rangi ya programu",
+  "categoryLookHint": "Imechaguliwa kutokana na jina. Gusa ili kubadilisha.",
+  "renameCategoryTitle": "Badilisha jina la kategoria",
+  "renameGroupTitle": "Badilisha jina la kikundi",
+  "nameInUse": "Jina hilo tayari linatumika hapa.",
+  "freeGroupsProgress": "Vikundi vya bure: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Umefikia kikomo cha mpango wa Bure cha vikundi {limit} maalum. Pandisha hadi Premium ili kuunda vikundi bila kikomo.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Panga kwa tarehe ya kuisha",
+  "recordsSortName": "Panga kwa jina",
+  "recordsSelect": "Chagua",
+  "recordsSelected": "{count, plural, =1{{count} imechaguliwa} other{{count} zimechaguliwa}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Hamisha",
+  "recordsMoveTitle": "Hamisha hadi",
+  "recordsMoved": "{count, plural, =1{Rekodi {count} imehamishwa} other{Rekodi {count} zimehamishwa}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Futa rekodi {count}?} other{Futa rekodi {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Zitaenda kwenye \"Zilizofutwa hivi karibuni\", ambapo unaweza kuzirejesha kwa siku 30.",
+  "recordsDeletedMany": "{count, plural, =1{Rekodi {count} imefutwa} other{Rekodi {count} zimefutwa}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Inaisha hivi karibuni",
+  "recordsShowAll": "{count, plural, =1{Onyesha rekodi zote} other{Onyesha rekodi zote {count}}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Bado hakuna kitu katika {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Changanua kadi au hati, au iongeze mwenyewe. Vaultara itakukumbusha kabla muda wake haujaisha.",
+  "recordsScan": "Changanua"
 }

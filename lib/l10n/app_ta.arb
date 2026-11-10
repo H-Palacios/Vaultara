@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "மாதாந்திர அறிக்கை",
   "storyBusiness3Body": "ஒவ்வொரு மாதமும் எது செல்லுபடியானது, எது காலாவதியாகிறது, எது விடுபட்டுள்ளது என்று அறிக்கை காட்டும்.",
   "storyBusiness4Title": "புதுப்பிப்பைக் கேளுங்கள்",
-  "storyBusiness4Body": "இணைப்பை அனுப்புங்கள், பணியாளர் தாமே புதுப்பித்த ஆவணத்தைப் பதிவேற்றுவார்."
+  "storyBusiness4Body": "இணைப்பை அனுப்புங்கள், பணியாளர் தாமே புதுப்பித்த ஆவணத்தைப் பதிவேற்றுவார்.",
+  "categoryHealthAndMedical": "சுகாதாரம் மற்றும் மருத்துவம்",
+  "categoryMembershipsAndSubscriptions": "உறுப்பினர் மற்றும் சந்தாக்கள்",
+  "subcategoryFirearmLicences": "துப்பாக்கி உரிமங்கள்",
+  "subcategoryInternationalDrivingPermits": "சர்வதேச ஓட்டுநர் அனுமதிகள்",
+  "subcategoryBoatAndPilotLicences": "படகு மற்றும் விமானி உரிமங்கள்",
+  "subcategorySafetyCertificates": "முதலுதவி மற்றும் பாதுகாப்புச் சான்றிதழ்கள்",
+  "subcategoryElectricalComplianceCertificates": "மின் இணக்கச் சான்றிதழ்கள்",
+  "subcategoryFireEquipmentServices": "தீயணைப்பு உபகரணச் சேவை",
+  "subcategoryMedicalAidCards": "மருத்துவக் காப்பீட்டு அட்டைகள்",
+  "subcategoryPrescriptions": "மருந்துச் சீட்டுகள்",
+  "subcategoryVaccinations": "தடுப்பூசிகள்",
+  "subcategoryMedicalCertificates": "மருத்துவச் சான்றிதழ்கள்",
+  "subcategoryGymMemberships": "ஜிம் உறுப்பினர்",
+  "subcategoryClubMemberships": "கிளப் உறுப்பினர்",
+  "subcategorySubscriptions": "சந்தாக்கள்",
+  "subcategoryWarranties": "உத்தரவாதங்கள்",
+  "yoursTag": "உங்களுடையது",
+  "expiredBadge": "{count, plural, =1{{count} காலாவதி} other{{count} காலாவதி}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ஐகானை மாற்று",
+  "categoryLookTitle": "ஐகான் மற்றும் நிறம்",
+  "categoryLookAppColour": "ஆப்ஸ் நிறம்",
+  "categoryLookHint": "பெயரை வைத்துத் தேர்ந்தெடுக்கப்பட்டது. மாற்ற தட்டவும்.",
+  "renameCategoryTitle": "வகையின் பெயரை மாற்று",
+  "renameGroupTitle": "குழுவின் பெயரை மாற்று",
+  "nameInUse": "இந்தப் பெயர் இங்கே ஏற்கனவே பயன்பாட்டில் உள்ளது.",
+  "freeGroupsProgress": "இலவசக் குழுக்கள்: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "இலவசத் திட்டத்தின் {limit} தனிப்பயன் குழுக்கள் வரம்பை அடைந்துவிட்டீர்கள். வரம்பற்ற குழுக்களுக்கு Premium-க்கு மேம்படுத்துங்கள்.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "காலாவதி தேதிப்படி வரிசைப்படுத்து",
+  "recordsSortName": "பெயர்ப்படி வரிசைப்படுத்து",
+  "recordsSelect": "தேர்ந்தெடு",
+  "recordsSelected": "{count, plural, =1{{count} தேர்ந்தெடுக்கப்பட்டது} other{{count} தேர்ந்தெடுக்கப்பட்டன}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "நகர்த்து",
+  "recordsMoveTitle": "இங்கே நகர்த்து",
+  "recordsMoved": "{count, plural, =1{{count} பதிவு நகர்த்தப்பட்டது} other{{count} பதிவுகள் நகர்த்தப்பட்டன}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} பதிவை நீக்கவா?} other{{count} பதிவுகளை நீக்கவா?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "இவை \"சமீபத்தில் நீக்கப்பட்டது\" பகுதிக்குச் செல்லும்; 30 நாட்களுக்குள் மீட்டெடுக்கலாம்.",
+  "recordsDeletedMany": "{count, plural, =1{{count} பதிவு நீக்கப்பட்டது} other{{count} பதிவுகள் நீக்கப்பட்டன}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "விரைவில் காலாவதி",
+  "recordsShowAll": "{count, plural, =1{எல்லாப் பதிவுகளையும் காட்டு} other{{count} பதிவுகளையும் காட்டு}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} இல் இன்னும் எதுவும் இல்லை",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "அட்டை அல்லது ஆவணத்தை ஸ்கேன் செய்யுங்கள், அல்லது கைமுறையாகச் சேருங்கள். காலாவதியாகும் முன் Vaultara நினைவூட்டும்.",
+  "recordsScan": "ஸ்கேன்"
 }

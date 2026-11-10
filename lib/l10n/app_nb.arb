@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Månedsrapport",
   "storyBusiness3Body": "Hver måned viser en rapport hva som er gyldig, hva som utløper, og hva som mangler.",
   "storyBusiness4Title": "Be om en oppdatering",
-  "storyBusiness4Body": "Send en lenke, så laster de ansatte selv opp det fornyede dokumentet."
+  "storyBusiness4Body": "Send en lenke, så laster de ansatte selv opp det fornyede dokumentet.",
+  "categoryHealthAndMedical": "Helse og medisinsk",
+  "categoryMembershipsAndSubscriptions": "Medlemskap og abonnementer",
+  "subcategoryFirearmLicences": "Våpenlisenser",
+  "subcategoryInternationalDrivingPermits": "Internasjonale førerkort",
+  "subcategoryBoatAndPilotLicences": "Båt- og flysertifikater",
+  "subcategorySafetyCertificates": "Førstehjelps- og sikkerhetsbevis",
+  "subcategoryElectricalComplianceCertificates": "Samsvarserklæringer for elektro",
+  "subcategoryFireEquipmentServices": "Service på brannutstyr",
+  "subcategoryMedicalAidCards": "Helsekort",
+  "subcategoryPrescriptions": "Resepter",
+  "subcategoryVaccinations": "Vaksiner",
+  "subcategoryMedicalCertificates": "Legeerklæringer",
+  "subcategoryGymMemberships": "Treningssentermedlemskap",
+  "subcategoryClubMemberships": "Klubbmedlemskap",
+  "subcategorySubscriptions": "Abonnementer",
+  "subcategoryWarranties": "Garantier",
+  "yoursTag": "Ditt",
+  "expiredBadge": "{count, plural, =1{{count} utløpt} other{{count} utløpt}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Bytt ikon",
+  "categoryLookTitle": "Ikon og farge",
+  "categoryLookAppColour": "Appens farge",
+  "categoryLookHint": "Valgt ut fra navnet. Trykk for å endre.",
+  "renameCategoryTitle": "Gi kategorien nytt navn",
+  "renameGroupTitle": "Gi gruppen nytt navn",
+  "nameInUse": "Det navnet er allerede i bruk her.",
+  "freeGroupsProgress": "Gratis grupper: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Du har nådd gratisplanens grense på {limit} egne grupper. Oppgrader til Premium for ubegrenset antall grupper.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sorter etter utløpsdato",
+  "recordsSortName": "Sorter etter navn",
+  "recordsSelect": "Velg",
+  "recordsSelected": "{count, plural, =1{{count} valgt} other{{count} valgt}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Flytt",
+  "recordsMoveTitle": "Flytt til",
+  "recordsMoved": "{count, plural, =1{{count} oppføring flyttet} other{{count} oppføringer flyttet}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Slette {count} oppføring?} other{Slette {count} oppføringer?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "De havner i «Nylig slettet», der du kan hente dem tilbake i 30 dager.",
+  "recordsDeletedMany": "{count, plural, =1{{count} oppføring slettet} other{{count} oppføringer slettet}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Utløper snart",
+  "recordsShowAll": "{count, plural, =1{Vis alle oppføringer} other{Vis alle {count} oppføringer}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ingenting i {group} ennå",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skann kortet eller dokumentet, eller legg det til manuelt. Vaultara minner deg på det før det utløper.",
+  "recordsScan": "Skann"
 }

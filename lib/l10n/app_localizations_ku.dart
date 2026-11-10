@@ -7926,4 +7926,184 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Girêdanekê bişîne û karmend bi xwe belgeya nûkirî bar dike.';
+
+  @override
+  String get categoryHealthAndMedical => 'Tendurustî û bijîşkî';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Endametî û abonetî';
+
+  @override
+  String get subcategoryFirearmLicences => 'Destûrên çekan';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Ehliyetên ajotinê yên navneteweyî';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Ehliyetên keştî û pîlotiyê';
+
+  @override
+  String get subcategorySafetyCertificates => 'Sertîfîkayên alîkariya yekem û ewlehiyê';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Sertîfîkayên lihevhatina elektrîkê';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Servîsa alavên agirkujiyê';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kartên sîgortaya tenduristiyê';
+
+  @override
+  String get subcategoryPrescriptions => 'Reçete';
+
+  @override
+  String get subcategoryVaccinations => 'Derziyên parastinê';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Raporên bijîşkî';
+
+  @override
+  String get subcategoryGymMemberships => 'Endametiya werzîşgehê';
+
+  @override
+  String get subcategoryClubMemberships => 'Endametiya klûban';
+
+  @override
+  String get subcategorySubscriptions => 'Abonetî';
+
+  @override
+  String get subcategoryWarranties => 'Garantî';
+
+  @override
+  String get yoursTag => 'Ya te';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dema wan derbas bûye',
+      one: '$count dema wê derbas bûye',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Îkonê biguherîne';
+
+  @override
+  String get categoryLookTitle => 'Îkon û reng';
+
+  @override
+  String get categoryLookAppColour => 'Rengê sepanê';
+
+  @override
+  String get categoryLookHint => 'Li gorî navî hat hilbijartin. Ji bo guhertinê bitikîne.';
+
+  @override
+  String get renameCategoryTitle => 'Navê kategoriyê biguherîne';
+
+  @override
+  String get renameGroupTitle => 'Navê komê biguherîne';
+
+  @override
+  String get nameInUse => 'Ev nav li vir jixwe tê bikaranîn.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Komên belaş: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Te gihişt sînorê plana Belaş a $limit komên taybet. Ji bo komên bêsînor derbasî Premium bibe.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Li gorî dîroka qedandinê rêz bike';
+
+  @override
+  String get recordsSortName => 'Li gorî navî rêz bike';
+
+  @override
+  String get recordsSelect => 'Hilbijêre';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hatin hilbijartin',
+      one: '$count hat hilbijartin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Bibe';
+
+  @override
+  String get recordsMoveTitle => 'Bibe bo';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tomar hatin birin',
+      one: '$count tomar hat birin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tomar jê bibe?',
+      one: '$count tomar jê bibe?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ew diçin \"Vê Dawiyê Jêbirî\", li wir tu dikarî wan heta 30 rojan vegerînî.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tomar hatin jêbirin',
+      one: '$count tomar hat jêbirin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Zû diqede';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hemû $count tomaran nîşan bide',
+      one: 'Hemû tomaran nîşan bide',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Hîn tiştek di $group de tune';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Kart an belgeyê bişopîne, an bi destan lê zêde bike. Vaultara berî qedandinê bîra te tîne.';
+
+  @override
+  String get recordsScan => 'Bişopîne';
 }
