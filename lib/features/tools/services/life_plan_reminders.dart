@@ -14,7 +14,9 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 /// Reminders for plans: 7 days before, on the day and 7 days after if
 /// something is still left, a check 30 days after that new documents
-/// arrived, and a nudge every 14 days for plans without a date.
+/// arrived, and a nudge every 14 days for plans without a date. A lost or
+/// stolen wallet also gets a statement check 30, 60 and 90 days on, and
+/// anyone can ask for a wallet check-up every 6 months.
 class LifePlanReminders {
   const LifePlanReminders._();
 
@@ -25,7 +27,21 @@ class LifePlanReminders {
   /// The check-in and the nudge use a second range, so the ids of
   /// reminders scheduled by older versions stay the same.
   static const int _extraSlots = 2;
-  static const int idEnd = _baseEnd + 0x40000 * _extraSlots;
+  static const int _extraEnd = _baseEnd + 0x40000 * _extraSlots;
+
+  /// The statement checks after a lost wallet, in a third range.
+  static const int _walletSlots = 3;
+  static const int _walletEnd = _extraEnd + 0x40000 * _walletSlots;
+
+  /// The one wallet check-up reminder.
+  static const int walletCheckId = _walletEnd;
+  static const int idEnd = _walletEnd + 1;
+
+  /// Days after a lost wallet to look at bank statements again. Fraud with
+  /// stolen details often starts weeks later.
+  static const List<int> statementDays = <int>[30, 60, 90];
+  static const int walletCheckMonths = 6;
+  static const String walletCheckPrefsKey = 'walletCheckReminder';
   static const int daysBefore = 7;
   static const int daysAfter = 7;
   static const int checkInDays = 30;
@@ -54,6 +70,9 @@ class LifePlanReminders {
 
   static int extraIdFor(String planId, int slot) =>
       _baseEnd + (_hash(planId) & 0x3FFFF) * _extraSlots + slot;
+
+  static int walletIdFor(String planId, int slot) =>
+      _extraEnd + (_hash(planId) & 0x3FFFF) * _walletSlots + slot;
 
   static Future<void> _restore() async {
     if (_restored) return;
@@ -86,6 +105,9 @@ class LifePlanReminders {
     for (var slot = 0; slot < _extraSlots; slot++) {
       await ReminderScheduler.cancelId(extraIdFor(planId, slot));
     }
+    for (var slot = 0; slot < _walletSlots; slot++) {
+      await ReminderScheduler.cancelId(walletIdFor(planId, slot));
+    }
     _scheduled.remove(planId);
   }
 
@@ -102,7 +124,74 @@ class LifePlanReminders {
       for (final id in _scheduled.toList()) {
         await _cancelId(id);
       }
+      await ReminderScheduler.cancelId(walletCheckId);
     });
+  }
+
+  /// Whether the user asked for a wallet check-up every 6 months.
+  static Future<bool> walletCheckOn() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      return prefs.getBool(walletCheckPrefsKey) ?? false;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Turns the wallet check-up on or off. The next one is 6 months from
+  /// today, and opening Lost my wallet counts as a check-up.
+  static Future<void> setWalletCheck(
+    AppLocalizations loc, {
+    required bool on,
+  }) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(walletCheckPrefsKey, on);
+    } catch (_) {}
+    await ReminderScheduler.cancelId(walletCheckId);
+    if (!on) return;
+    final today = Dates.only(DateTime.now());
+    await ReminderScheduler.scheduleOnDay(
+      id: walletCheckId,
+      title: loc.walletCheckReminderTitle,
+      body: loc.walletCheckReminderBody,
+      day: DateTime(today.year, today.month + walletCheckMonths, today.day),
+      channelId: _channelId,
+      channelName: _channelName,
+    );
+  }
+
+  /// A lost wallet whose statement checks still lie ahead. These carry on
+  /// after the plan is finished, unless the wallet turned up.
+  static bool _watchesStatements(LifePlan plan, DateTime today) {
+    if (plan.event != LifeEvent.lostWallet || plan.isFound) return false;
+    final date = plan.date ?? plan.createdAt;
+    final last = Dates.only(date).add(Duration(days: statementDays.last));
+    return last.isAfter(today);
+  }
+
+  static Future<void> _scheduleStatements(
+    AppLocalizations loc,
+    LifePlan plan,
+    DateTime today,
+  ) async {
+    final date = Dates.only(plan.date ?? plan.createdAt);
+    for (var slot = 0; slot < statementDays.length; slot++) {
+      final day = DateTime(
+        date.year,
+        date.month,
+        date.day + statementDays[slot],
+      );
+      if (!day.isAfter(today)) continue;
+      await ReminderScheduler.scheduleOnDay(
+        id: walletIdFor(plan.id, slot),
+        title: loc.lostWalletStatementTitle,
+        body: loc.lostWalletStatementBody,
+        day: day,
+        channelId: _channelId,
+        channelName: _channelName,
+      );
+    }
   }
 
   static void refreshSoon([List<LifePlan>? plans]) {
@@ -122,7 +211,11 @@ class LifePlanReminders {
       return;
     }
 
-    final wanted = plans.where((p) => !p.isFinished).map((p) => p.id).toSet();
+    final now = Dates.only(DateTime.now());
+    final wanted = plans
+        .where((p) => !p.isFinished || _watchesStatements(p, now))
+        .map((p) => p.id)
+        .toSet();
     for (final id in _scheduled.toList()) {
       if (!wanted.contains(id)) await _cancelId(id);
     }
@@ -140,6 +233,11 @@ class LifePlanReminders {
     for (final plan in plans) {
       if (!wanted.contains(plan.id)) continue;
       await _cancelId(plan.id);
+      if (_watchesStatements(plan, today)) {
+        await _scheduleStatements(loc, plan, today);
+        _scheduled.add(plan.id);
+      }
+      if (plan.isFinished) continue;
       final view = LifePlanItems.build(plan, records, extraLabels: labels);
       if (view.total > 0 && view.left == 0) continue;
       final title = LifePlanText.notificationTitle(loc, plan);

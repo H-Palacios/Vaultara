@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
+import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:quick_actions/quick_actions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -36,6 +37,7 @@ const String kIsNewUserKey = 'isNewUser';
 const String kUserFirstNameKey = 'userFirstName';
 const String _kShortcutAdd = 'add_record';
 const String _kShortcutScan = 'scan_record';
+const String _kShortcutWallet = 'lost_wallet';
 
 class ShellState extends State<Shell> {
   static ShellState? current;
@@ -158,6 +160,10 @@ class ShellState extends State<Shell> {
     if (!mounted || tutorialActive) return;
     if (type == _kShortcutAdd) openAddRecord(context, this);
     if (type == _kShortcutScan) openAddRecord(context, this, autoScan: true);
+    if (type == _kShortcutWallet) {
+      LifePlanRepository.start();
+      unawaited(openLostWallet(context, start: true));
+    }
   }
 
   Future<void> _rescheduleAllRemindersOnce() async {
@@ -165,8 +171,9 @@ class ShellState extends State<Shell> {
     _didReschedule = true;
 
     final loc = AppLocalizations.of(context)!;
-    final firstName =
-        _userFirstName.trim().isEmpty ? ' ' : _userFirstName.trim();
+    final firstName = _userFirstName.trim().isEmpty
+        ? ' '
+        : _userFirstName.trim();
 
     final snapshot = RecordRepository.storeSnapshot;
 
@@ -222,6 +229,10 @@ class ShellState extends State<Shell> {
       await actions.setShortcutItems(<ShortcutItem>[
         ShortcutItem(type: _kShortcutAdd, localizedTitle: loc.addRecord),
         ShortcutItem(type: _kShortcutScan, localizedTitle: loc.shortcutScan),
+        ShortcutItem(
+          type: _kShortcutWallet,
+          localizedTitle: loc.lostWalletTitle,
+        ),
       ]);
     } catch (_) {}
   }
@@ -252,10 +263,7 @@ class ShellState extends State<Shell> {
     final primaryColour = Theme.of(context).colorScheme.primary;
 
     return Scaffold(
-      body: IndexedStack(
-        index: index,
-        children: buildShellPages(this),
-      ),
+      body: IndexedStack(index: index, children: buildShellPages(this)),
       bottomNavigationBar: BottomNavBar(
         currentIndex: index,
         isTutorialActive: tutorialActive,

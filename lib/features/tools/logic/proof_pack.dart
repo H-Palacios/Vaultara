@@ -31,14 +31,21 @@ class ProofPack {
 
   static const String fileName = 'vaultara-proof-pack.pdf';
 
+  /// Builds the pack. A report such as the lost wallet one passes its own
+  /// [title], a few [intro] lines for the top of the first page, and a
+  /// [notes] line per record id, such as "Blocked".
   static Future<Uint8List> build(
     BuildContext context,
     List<TrackedItem> records, {
     required bool includePhotos,
+    String? title,
+    List<String> intro = const <String>[],
+    Map<String, String> notes = const <String, String>{},
   }) async {
     final loc = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context);
-    final rtl = Directionality.of(context) == TextDirection.rtl ||
+    final rtl =
+        Directionality.of(context) == TextDirection.rtl ||
         PdfExport.isRtlLanguage(locale.languageCode);
     final dateFormat = DateFormat.yMMMd(SafeLocale.date(loc.localeName));
 
@@ -50,11 +57,11 @@ class ProofPack {
           loc.proofPackExpires(dateFormat.format(r.expiryDate)),
           if (PeopleRepository.byId(r.holderId) != null)
             PeopleRepository.byId(r.holderId)!.name,
+          if (r.id != null && notes[r.id] != null) notes[r.id]!,
         ].join('  ·  '),
     ];
-    final title = loc.proofPackTitle;
-    final prepared =
-        loc.proofPackPrepared(dateFormat.format(DateTime.now()));
+    final heading = title ?? loc.proofPackTitle;
+    final prepared = loc.proofPackPrepared(dateFormat.format(DateTime.now()));
     final skippedNote = loc.proofPackPdfSkipped;
 
     final entries = <_PackEntry>[];
@@ -71,17 +78,19 @@ class ProofPack {
         final bytes = await AttachmentRepository.bytesFor(a);
         if (bytes != null) photos.add(bytes);
       }
-      entries.add(_PackEntry(
-        name: r.name,
-        details: details[i],
-        photos: photos,
-        skippedPdf: skipped,
-      ));
+      entries.add(
+        _PackEntry(
+          name: r.name,
+          details: details[i],
+          photos: photos,
+          skippedPdf: skipped,
+        ),
+      );
     }
 
     final theme = await PdfExport.themeFor(locale);
     final direction = rtl ? pw.TextDirection.rtl : pw.TextDirection.ltr;
-    final doc = pw.Document(title: title, author: 'Vaultara');
+    final doc = pw.Document(title: heading, author: 'Vaultara');
 
     doc.addPage(
       pw.MultiPage(
@@ -93,7 +102,7 @@ class ProofPack {
           crossAxisAlignment: pw.CrossAxisAlignment.start,
           children: [
             pw.Text(
-              title,
+              heading,
               style: pw.TextStyle(fontSize: 20, fontWeight: pw.FontWeight.bold),
             ),
             pw.SizedBox(height: 2),
@@ -105,6 +114,30 @@ class ProofPack {
           ],
         ),
         build: (_) => [
+          if (intro.isNotEmpty) ...[
+            pw.Container(
+              width: double.infinity,
+              padding: const pw.EdgeInsets.all(12),
+              decoration: pw.BoxDecoration(
+                color: PdfColors.grey100,
+                borderRadius: pw.BorderRadius.circular(6),
+              ),
+              child: pw.Column(
+                crossAxisAlignment: pw.CrossAxisAlignment.start,
+                children: [
+                  for (final line in intro)
+                    pw.Padding(
+                      padding: const pw.EdgeInsets.only(bottom: 3),
+                      child: pw.Text(
+                        line,
+                        style: const pw.TextStyle(fontSize: 11),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            pw.SizedBox(height: 16),
+          ],
           for (final e in entries) ...[
             pw.Container(
               padding: const pw.EdgeInsets.only(bottom: 6),
@@ -149,7 +182,10 @@ class ProofPack {
               pw.Center(
                 child: pw.ConstrainedBox(
                   constraints: const pw.BoxConstraints(maxHeight: 560),
-                  child: pw.Image(pw.MemoryImage(photo), fit: pw.BoxFit.contain),
+                  child: pw.Image(
+                    pw.MemoryImage(photo),
+                    fit: pw.BoxFit.contain,
+                  ),
                 ),
               ),
               pw.SizedBox(height: 10),

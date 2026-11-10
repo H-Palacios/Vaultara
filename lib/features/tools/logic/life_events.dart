@@ -23,6 +23,7 @@ enum LifeEvent {
   jobLoss,
   disaster,
   caringParent,
+  lostWallet,
 }
 
 /// How the picker groups the events, so the list is short to scan.
@@ -69,6 +70,8 @@ class LifeEvents {
   static const String variantSell = 'sell';
   static const String variantStart = 'start';
   static const String variantLeave = 'leave';
+  static const String variantLost = 'lost';
+  static const String variantStolen = 'stolen';
 
   /// Events that ask one extra question, such as bought or sold. Plans
   /// saved before variants existed have none and keep the combined rules.
@@ -76,6 +79,7 @@ class LifeEvents {
       <LifeEvent, List<String>>{
         LifeEvent.car: <String>[variantBuy, variantSell],
         LifeEvent.job: <String>[variantStart, variantLeave],
+        LifeEvent.lostWallet: <String>[variantLost, variantStolen],
       };
 
   static bool hasVariants(LifeEvent event) => variants.containsKey(event);
@@ -337,7 +341,35 @@ class LifeEvents {
           'driving_licences': _checkBefore,
           'debit_and_credit_cards': _checkBefore,
         },
+        // A lost wallet matches records by where they are kept, not by group;
+        // see walletRule.
+        LifeEvent.lostWallet: _wallet,
       };
+
+  /// What to do with each kind of card or document that was in a lost
+  /// wallet. Cards are blocked first; documents are replaced.
+  static const Map<String, LifeRule> _wallet = <String, LifeRule>{
+    'debit_and_credit_cards': _cancelAfter,
+    'store_cards': _cancelAfter,
+    'access_cards_and_tags': _cancelAfter,
+    'work_access_cards': _cancelAfter,
+    'id_cards': _renewAfter,
+    'driving_licences': _renewAfter,
+    'passports': _renewAfter,
+    'residence_permits': _renewAfter,
+    'work_permits': _renewAfter,
+    'study_permits': _renewAfter,
+    'visas': _renewAfter,
+    'professional_licences': _renewAfter,
+  };
+
+  /// The rule for one record in a lost wallet. Anything not listed, such as
+  /// a medical aid card, is checked.
+  static LifeRule walletRule(String group) => _wallet[group] ?? _checkAfter;
+
+  /// Whether a record in a lost wallet is blocked rather than replaced.
+  static bool blocksFirst(String group) =>
+      walletRule(group).action == LifeAction.cancel;
 
   /// The rules for a plan, taking the bought or sold answer into account.
   static Map<String, LifeRule> rulesFor(LifeEvent event, String? variant) {
@@ -420,6 +452,7 @@ class LifeEvents {
           LifeNeed('id_cards', perPerson: true),
           LifeNeed('health_insurances'),
         ],
+        LifeEvent.lostWallet: <LifeNeed>[],
       };
 
   /// The needs for a plan. A seller does not need a registration or cover
@@ -459,6 +492,7 @@ class LifeEvents {
         ],
         LifeEventGroup.carTravel: <LifeEvent>[LifeEvent.car, LifeEvent.country],
         LifeEventGroup.emergency: <LifeEvent>[
+          LifeEvent.lostWallet,
           LifeEvent.lostPhone,
           LifeEvent.disaster,
         ],
@@ -476,7 +510,8 @@ class LifeEvents {
       event == LifeEvent.bereavement ||
       event == LifeEvent.childAdult ||
       event == LifeEvent.caringParent ||
-      event == LifeEvent.lostPhone;
+      event == LifeEvent.lostPhone ||
+      event == LifeEvent.lostWallet;
 
   /// Events that have usually already happened when a plan is started, so
   /// the date question is worded for the past and today is filled in.
@@ -484,7 +519,8 @@ class LifeEvents {
       event == LifeEvent.bereavement ||
       event == LifeEvent.lostPhone ||
       event == LifeEvent.jobLoss ||
-      event == LifeEvent.disaster;
+      event == LifeEvent.disaster ||
+      event == LifeEvent.lostWallet;
 
   /// Events whose name should not show on a locked phone screen.
   static bool isPrivate(LifeEvent event) =>
@@ -558,6 +594,8 @@ class LifeEvents {
         return Icons.house_siding_rounded;
       case LifeEvent.caringParent:
         return Icons.elderly_rounded;
+      case LifeEvent.lostWallet:
+        return Icons.account_balance_wallet_rounded;
     }
   }
 
@@ -622,6 +660,9 @@ class LifeEvents {
         return loc.lifeEventDisaster;
       case LifeEvent.caringParent:
         return loc.lifeEventCaringParent;
+      case LifeEvent.lostWallet:
+        if (variant == variantStolen) return loc.lifeEventWalletStolen;
+        return loc.lifeEventWalletLost;
     }
   }
 
@@ -667,12 +708,16 @@ class LifeEvents {
         return loc.lifeEventDisasterBody;
       case LifeEvent.caringParent:
         return loc.lifeEventCaringParentBody;
+      case LifeEvent.lostWallet:
+        if (variant == variantStolen) return loc.lifeEventWalletStolenBody;
+        return loc.lifeEventWalletLostBody;
     }
   }
 
   /// The question and answers for an event with variants.
   static String variantQuestion(AppLocalizations loc, LifeEvent event) {
     if (event == LifeEvent.job) return loc.lifeVariantJobQuestion;
+    if (event == LifeEvent.lostWallet) return loc.lifeVariantWalletQuestion;
     return loc.lifeVariantCarQuestion;
   }
 
@@ -686,6 +731,10 @@ class LifeEvents {
         return loc.lifeVariantStart;
       case variantLeave:
         return loc.lifeVariantLeave;
+      case variantLost:
+        return loc.lifeVariantLost;
+      case variantStolen:
+        return loc.lifeVariantStolen;
     }
     return variant;
   }

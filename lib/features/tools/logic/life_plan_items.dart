@@ -147,8 +147,18 @@ class LifePlanItems {
     'professional_licences',
   };
 
-  /// Saved records the plan is about.
+  /// Saved records the plan is about. For a lost wallet that is whatever
+  /// was kept in the places that went missing, whoever it belongs to.
   static List<TrackedItem> matching(LifePlan plan, List<TrackedItem> records) {
+    if (plan.event == LifeEvent.lostWallet) {
+      final places = plan.missing;
+      return records
+          .where(
+            (r) => !r.isDeleted && r.id != null && places.contains(r.place),
+          )
+          .toList()
+        ..sort(_walletOrder);
+    }
     final rules = LifeEvents.rulesFor(plan.event, plan.variant);
     return records
         .where(
@@ -162,6 +172,36 @@ class LifePlanItems {
       ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
   }
 
+  /// Cards to block first, then documents to replace, then the rest.
+  static int _walletOrder(TrackedItem a, TrackedItem b) {
+    int rank(TrackedItem r) {
+      switch (LifeEvents.walletRule(r.subcategoryName).action) {
+        case LifeAction.cancel:
+          return 0;
+        case LifeAction.renew:
+          return 1;
+        default:
+          return 2;
+      }
+    }
+
+    final byRank = rank(a).compareTo(rank(b));
+    if (byRank != 0) return byRank;
+    return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+  }
+
+  /// What to do with one record in the plan.
+  static LifeRule ruleFor(LifePlan plan, TrackedItem record) {
+    if (plan.event == LifeEvent.lostWallet) {
+      return LifeEvents.walletRule(record.subcategoryName);
+    }
+    return LifeEvents.rulesFor(
+          plan.event,
+          plan.variant,
+        )[record.subcategoryName] ??
+        const LifeRule(LifeAction.check, LifePhase.after);
+  }
+
   static LifeFlag? _flag(
     LifePlan plan,
     TrackedItem record,
@@ -173,6 +213,7 @@ class LifePlanItems {
       record.expiryDate.month,
       record.expiryDate.day,
     );
+    if (plan.event == LifeEvent.lostWallet) return null;
     final group = record.subcategoryName;
     final when = plan.date ?? today;
     if (plan.event == LifeEvent.country && group == 'passports') {
@@ -226,11 +267,10 @@ class LifePlanItems {
     Map<String, String> extraLabels = const <String, String>{},
   }) {
     final today = _day(now ?? DateTime.now());
-    final rules = LifeEvents.rulesFor(plan.event, plan.variant);
     final items = <LifeRecordItem>[];
     for (final record in matching(plan, records)) {
       final id = record.id!;
-      final rule = rules[record.subcategoryName]!;
+      final rule = ruleFor(plan, record);
       final status = plan.statuses[id];
       LifeDoneBy? doneBy;
       if (status != null) {
