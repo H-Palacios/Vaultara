@@ -123,7 +123,12 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - New trip and record cards show their details in two columns, and the countries label matches the number of countries.
 
 ### Experience
-- **Guided tours.** Separate tutorials for adding a record, setting reminders and Insights, or the full tour in one go. A "Take the tour" banner appears for new users.
+- **Tutorials.** Seventeen tutorials in four groups (the basics, staying on top, travel and family, life events and emergencies) plus paid features, on a Tutorials screen with a progress ring, the length of each tutorial and a badge on paid ones.
+  - Guided tutorials walk through the real screens: adding a record, reminders, Insights, travel, smart tools and family.
+  - Illustrated tutorials use sample data, so nothing in your account changes: the home screen, renewing, calendar and costs, photos and security, sharing, scan and import, households, Lost my wallet, Life events, Ask Vaultara and Business. Each ends with "Try it now", and paid ones can be watched on any plan.
+  - The full tour comes in eight chapters that can be skipped and picked up later.
+  - "New here?" tips on the Family, Life events, Lost my wallet and Travel screens, and a "What's new" card on the home screen.
+  - Every step can be read aloud. Progress syncs between devices, and Ask Vaultara can open any tutorial ("show me how Lost my wallet works").
 - **Home screen widget** showing the next three records to expire.
 - **Long-press shortcuts** on the app icon for "Add record" and "Scan a document".
 - **Light, dark and system themes.**
