@@ -183,13 +183,18 @@ service cloud.firestore {
       let d = request.resource.data;
       return d.keys().hasOnly(['event', 'date', 'people', 'country', 'createdAt',
                                'finishedAt', 'statuses', 'start', 'skipped', 'updatedAt',
-                               'variant', 'tasksDone', 'custom'])
+                               'variant', 'tasksDone', 'custom', 'caseNumber',
+                               'places', 'foundAt'])
         && d.event in ['moving', 'homeBuy', 'homeSell', 'nameChange', 'marriage',
                        'divorce', 'baby', 'car', 'job', 'studies', 'retiring',
                        'country', 'childAdult', 'bereavement', 'lostPhone',
-                       'jobLoss', 'disaster', 'caringParent']
-        && (!('variant' in d) || d.variant in ['buy', 'sell', 'start', 'leave'])
-        && (!('tasksDone' in d) || (d.tasksDone is list && d.tasksDone.size() <= 60))
+                       'jobLoss', 'disaster', 'caringParent', 'lostWallet']
+        && (!('variant' in d)
+            || d.variant in ['buy', 'sell', 'start', 'leave', 'lost', 'stolen'])
+        && (!('tasksDone' in d) || (d.tasksDone is list && d.tasksDone.size() <= 80))
+        && (!('caseNumber' in d) || (d.caseNumber is string && d.caseNumber.size() <= 40))
+        && (!('places' in d) || (d.places is list && d.places.size() <= 6))
+        && (!('foundAt' in d) || d.foundAt == null || d.foundAt is timestamp)
         && (!('custom' in d) || (d.custom is list && d.custom.size() <= 20))
         && (!('date' in d) || d.date == null || d.date is timestamp)
         && d.people is list && d.people.size() > 0 && d.people.size() <= 26
@@ -206,6 +211,14 @@ service cloud.firestore {
         || request.resource.data[field] == null
         || (request.resource.data[field] is list
             && request.resource.data[field].size() <= max);
+    }
+
+    // Where a card or document is kept, and the number to call to block it.
+    function keptInOk() {
+      let d = request.resource.data;
+      return (!('keptIn' in d) || d.keptIn == null
+              || d.keptIn in ['wallet', 'bag', 'car', 'phoneCase', 'home', 'travelPouch'])
+        && shortText('lostLine', 40);
     }
 
     function optionalBool(field) {
@@ -240,6 +253,7 @@ service cloud.firestore {
             || (d.repeatMonths is int && d.repeatMonths in [1, 3, 6, 12]))
         && (!('locked' in d) || d.locked is bool)
         && optionalBool('inWallet')
+        && keptInOk()
         && (!('leadDays' in d) || d.leadDays == null
             || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
     }
@@ -300,6 +314,7 @@ service cloud.firestore {
             || (d.repeatMonths is int && d.repeatMonths in [1, 3, 6, 12]))
         && (!('locked' in d) || d.locked is bool)
         && optionalBool('inWallet')
+        && keptInOk()
         && optionalBool('isDeleted')
         && (!('leadDays' in d) || d.leadDays == null
             || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
@@ -543,7 +558,7 @@ service cloud.firestore {
       match /lifePlans/{planId} {
         allow read: if isOwner(uid);
         allow delete: if isOwner(uid);
-        allow create, update: if isOwner(uid) && smallDoc(13) && validLifePlan();
+        allow create, update: if isOwner(uid) && smallDoc(16) && validLifePlan();
       }
 
       match /items/{itemId} {
