@@ -9592,5 +9592,221 @@
   "storyBusiness4Body": "Send a link and staff can upload their renewed document themselves.",
   "@storyBusiness4Body": {
     "description": "Text of a tutorial step."
+  },
+  "categoryHealthAndMedical": "Health and medical",
+  "@categoryHealthAndMedical": {
+    "description": "Name of a built-in category of records."
+  },
+  "categoryMembershipsAndSubscriptions": "Memberships and subscriptions",
+  "@categoryMembershipsAndSubscriptions": {
+    "description": "Name of a built-in category of records."
+  },
+  "subcategoryFirearmLicences": "Firearm licences",
+  "@subcategoryFirearmLicences": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryInternationalDrivingPermits": "International driving permits",
+  "@subcategoryInternationalDrivingPermits": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryBoatAndPilotLicences": "Boat and pilot licences",
+  "@subcategoryBoatAndPilotLicences": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategorySafetyCertificates": "First aid and safety certificates",
+  "@subcategorySafetyCertificates": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryElectricalComplianceCertificates": "Electrical certificates of compliance",
+  "@subcategoryElectricalComplianceCertificates": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryFireEquipmentServices": "Fire equipment services",
+  "@subcategoryFireEquipmentServices": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryMedicalAidCards": "Medical aid cards",
+  "@subcategoryMedicalAidCards": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryPrescriptions": "Prescriptions",
+  "@subcategoryPrescriptions": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryVaccinations": "Vaccinations",
+  "@subcategoryVaccinations": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryMedicalCertificates": "Medical certificates",
+  "@subcategoryMedicalCertificates": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryGymMemberships": "Gym memberships",
+  "@subcategoryGymMemberships": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryClubMemberships": "Club memberships",
+  "@subcategoryClubMemberships": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategorySubscriptions": "Subscriptions",
+  "@subcategorySubscriptions": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryWarranties": "Warranties and guarantees",
+  "@subcategoryWarranties": {
+    "description": "Name of a built-in group of records inside a category."
+  },
+  "yoursTag": "Yours",
+  "@yoursTag": {
+    "description": "Small label on a category or group the user made."
+  },
+  "expiredBadge": "{count, plural, =1{1 expired} other{{count} expired}}",
+  "@expiredBadge": {
+    "description": "Badge with how many records in a category or group have expired.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Change icon",
+  "@changeIcon": {
+    "description": "Menu item to change a custom category's icon and colour."
+  },
+  "categoryLookTitle": "Icon and colour",
+  "@categoryLookTitle": {
+    "description": "Title of the sheet to pick a category's icon and colour."
+  },
+  "categoryLookAppColour": "App colour",
+  "@categoryLookAppColour": {
+    "description": "Tooltip of the colour swatch that uses the app's own colour."
+  },
+  "categoryLookHint": "Picked from the name. Tap to change it.",
+  "@categoryLookHint": {
+    "description": "Under the icon preview when making a category."
+  },
+  "renameCategoryTitle": "Rename category",
+  "@renameCategoryTitle": {
+    "description": "Title of the sheet to rename a category."
+  },
+  "renameGroupTitle": "Rename group",
+  "@renameGroupTitle": {
+    "description": "Title of the sheet to rename a group."
+  },
+  "nameInUse": "That name is already in use here.",
+  "@nameInUse": {
+    "description": "Error when a category or group name is taken."
+  },
+  "freeGroupsProgress": "Free groups: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "description": "How many custom groups a Free plan user has made.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "You have reached the Free plan limit of {limit} custom groups. Upgrade to Premium to create unlimited groups.",
+  "@groupLimitReached": {
+    "description": "Shown when a Free plan user has made all their custom groups.",
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sort by expiry date",
+  "@recordsSortExpiry": {
+    "description": "Menu item on the records screen."
+  },
+  "recordsSortName": "Sort by name",
+  "@recordsSortName": {
+    "description": "Menu item on the records screen."
+  },
+  "recordsSelect": "Select",
+  "@recordsSelect": {
+    "description": "Menu item to start choosing several records."
+  },
+  "recordsSelected": "{count, plural, =1{1 selected} other{{count} selected}}",
+  "@recordsSelected": {
+    "description": "How many records are chosen.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Move",
+  "@recordsMove": {
+    "description": "Button to move the chosen records to another group."
+  },
+  "recordsMoveTitle": "Move to",
+  "@recordsMoveTitle": {
+    "description": "Title of the sheet to pick a group to move records to."
+  },
+  "recordsMoved": "{count, plural, =1{Moved 1 record} other{Moved {count} records}}",
+  "@recordsMoved": {
+    "description": "Confirmation after moving records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Delete 1 record?} other{Delete {count} records?}}",
+  "@recordsDeleteManyTitle": {
+    "description": "Title of the dialog before deleting several records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "They go to Recently deleted, where you can bring them back for 30 days.",
+  "@recordsDeleteManyBody": {
+    "description": "Body of the dialog before deleting several records."
+  },
+  "recordsDeletedMany": "{count, plural, =1{Deleted 1 record} other{Deleted {count} records}}",
+  "@recordsDeletedMany": {
+    "description": "Confirmation after deleting several records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Due soon",
+  "@recordsSectionSoon": {
+    "description": "Section heading for records that expire within 30 days."
+  },
+  "recordsShowAll": "{count, plural, =1{Show all records} other{Show all {count} records}}",
+  "@recordsShowAll": {
+    "description": "Button to show every record in the group after opening one from search.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "No {group} yet",
+  "@recordsEmptyTitle": {
+    "description": "Title when a group has no records. {group} is the group name.",
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scan the card or document, or add it by hand. Vaultara reminds you before it expires.",
+  "@recordsEmptyBody": {
+    "description": "Text when a group has no records."
+  },
+  "recordsScan": "Scan",
+  "@recordsScan": {
+    "description": "Button to add a record by scanning it with the camera."
   }
 }
