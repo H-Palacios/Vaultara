@@ -7,7 +7,6 @@ import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/features/auth/services/biometric_preference.dart';
-import 'package:vaultara/features/records/logic/usage_tracker.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/data/visa_link_repository.dart';
@@ -32,8 +31,7 @@ class SignOutService {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove('backgroundAtMs');
       await BiometricPreference.forgetUid();
-    } catch (_) {
-    }
+    } catch (_) {}
 
     await PushService.unregister();
     await DailyDigestService.clearForSignOut();
@@ -41,7 +39,6 @@ class SignOutService {
     CategoryRepository.clearForSignOut();
     RecordRepository.clearForSignOut();
     GroupRepository.clearForSignOut();
-    UsageTracker.clearForSignOut();
     FamilyReminderSync.detach();
     PeopleRepository.clearForSignOut();
     TripRepository.clearForSignOut();
