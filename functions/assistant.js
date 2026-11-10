@@ -111,6 +111,10 @@ const LIFE_EVENTS = [
   "country",
   "childAdult",
   "bereavement",
+  "lostPhone",
+  "jobLoss",
+  "disaster",
+  "caringParent",
 ];
 const SCREENS_V7 = [...SCREENS, "life_events", "life_event"];
 
@@ -571,7 +575,7 @@ const APP_GUIDE = [
 // Protocol 7 clients have life event plans.
 const APP_GUIDE_V7 = APP_GUIDE.replace(
   "Life events (what to update after moving, a new name or a new car)",
-  "Life events (free: pick what is happening, such as moving house, a new home, a new name, marriage, divorce, a baby, a car, a job, studies, retiring, moving abroad, a child turning 16 or 18 or a death in the family, and Vaultara makes a plan with a date and the people it is for; it lists the user's records to update, renew or cancel before and after the day, flags records that expire around the date, suggests records that may be missing, marks a record as done when it changes, reminds 7 days before, on the day and 7 days after, and can share the plan as a PDF or add it to the calendar; plans in progress also show on Home)"
+  "Life events (free: pick what is happening, such as moving house, a new home, a new name, marriage, divorce, a baby, a car, a job, studies, retiring, moving abroad, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, losing a job, or a fire, flood or break-in at home, and Vaultara makes a plan with a date and the people it is for, with steps that are not records such as blocking a SIM card or registering a birth, and room for the user's own steps; it lists the user's records to update, renew or cancel before and after the day, flags records that expire around the date, suggests records that may be missing, marks a record as done when it changes, reminds 7 days before, on the day and 7 days after, and can share the plan as a PDF or add it to the calendar; plans in progress also show on Home)"
 );
 
 let anthropicClient = null;
@@ -1824,7 +1828,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   }
   if (v7) {
     lines.push(
-      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, or a death in the family), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family, be brief and kind."
+      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first."
     );
   }
   lines.push("", v7 ? APP_GUIDE_V7 : APP_GUIDE);
