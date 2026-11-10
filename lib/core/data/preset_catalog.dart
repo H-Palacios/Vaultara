@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+
 class PresetCatalog {
   const PresetCatalog._();
 
@@ -11,45 +13,62 @@ class PresetCatalog {
     'banking_and_cards',
     'work_and_professional',
     'property_and_housing',
+    'health_and_medical',
+    'memberships_and_subscriptions',
   ];
 
   static const Map<String, List<String>> groupsByCategory =
       <String, List<String>>{
-    'personal_identification': <String>[
-      'passports',
-      'id_cards',
-      'residence_permits',
-    ],
-    'driving_and_vehicles': <String>[
-      'driving_licences',
-      'vehicle_registrations',
-      'roadworthy_certificates',
-    ],
-    'travel_and_immigration': <String>[
-      'visas',
-      'study_permits',
-      'work_permits',
-    ],
-    'insurance_and_cover': <String>[
-      'vehicle_insurances',
-      'property_insurances',
-      'life_insurances',
-      'health_insurances',
-      'travel_insurances',
-    ],
-    'banking_and_cards': <String>[
-      'debit_and_credit_cards',
-      'store_cards',
-    ],
-    'work_and_professional': <String>[
-      'professional_licences',
-      'work_access_cards',
-    ],
-    'property_and_housing': <String>[
-      'lease_agreements',
-      'access_cards_and_tags',
-    ],
-  };
+        'personal_identification': <String>[
+          'passports',
+          'id_cards',
+          'residence_permits',
+          'firearm_licences',
+        ],
+        'driving_and_vehicles': <String>[
+          'driving_licences',
+          'vehicle_registrations',
+          'roadworthy_certificates',
+          'international_driving_permits',
+          'boat_and_pilot_licences',
+        ],
+        'travel_and_immigration': <String>[
+          'visas',
+          'study_permits',
+          'work_permits',
+        ],
+        'insurance_and_cover': <String>[
+          'vehicle_insurances',
+          'property_insurances',
+          'life_insurances',
+          'health_insurances',
+          'travel_insurances',
+        ],
+        'banking_and_cards': <String>['debit_and_credit_cards', 'store_cards'],
+        'work_and_professional': <String>[
+          'professional_licences',
+          'work_access_cards',
+          'safety_certificates',
+        ],
+        'property_and_housing': <String>[
+          'lease_agreements',
+          'access_cards_and_tags',
+          'electrical_compliance_certificates',
+          'fire_equipment_services',
+        ],
+        'health_and_medical': <String>[
+          'medical_aid_cards',
+          'prescriptions',
+          'vaccinations',
+          'medical_certificates',
+        ],
+        'memberships_and_subscriptions': <String>[
+          'gym_memberships',
+          'club_memberships',
+          'subscriptions',
+          'warranties',
+        ],
+      };
 
   static List<CategorySeed> buildCategorySeeds(BuildContext context) {
     return categoryKeys.map((key) {
@@ -92,6 +111,10 @@ class PresetCatalog {
         .toList();
   }
 
+  /// The category label in [loc], for code that has no BuildContext.
+  static String categoryLabelFor(AppLocalizations loc, String key) =>
+      _categoryLabel(loc, key);
+
   static String _categoryLabel(AppLocalizations loc, String key) {
     switch (key) {
       case 'personal_identification':
@@ -108,14 +131,20 @@ class PresetCatalog {
         return loc.categoryWorkAndProfessional;
       case 'property_and_housing':
         return loc.categoryPropertyAndHousing;
+      case 'health_and_medical':
+        return loc.categoryHealthAndMedical;
+      case 'memberships_and_subscriptions':
+        return loc.categoryMembershipsAndSubscriptions;
       default:
         return key;
     }
   }
 
-  static String groupLabel(BuildContext context, String key) {
-    final loc = AppLocalizations.of(context)!;
+  static String groupLabel(BuildContext context, String key) =>
+      groupLabelFor(AppLocalizations.of(context)!, key);
 
+  /// The group label in [loc], for code that has no BuildContext.
+  static String groupLabelFor(AppLocalizations loc, String key) {
     switch (key) {
       case 'passports':
         return loc.subcategoryPassports;
@@ -163,12 +192,57 @@ class PresetCatalog {
         return loc.subcategoryLeaseAgreements;
       case 'access_cards_and_tags':
         return loc.subcategoryAccessCardsAndTags;
+      case 'electrical_compliance_certificates':
+        return loc.subcategoryElectricalComplianceCertificates;
+      case 'fire_equipment_services':
+        return loc.subcategoryFireEquipmentServices;
+
+      case 'firearm_licences':
+        return loc.subcategoryFirearmLicences;
+      case 'international_driving_permits':
+        return loc.subcategoryInternationalDrivingPermits;
+      case 'boat_and_pilot_licences':
+        return loc.subcategoryBoatAndPilotLicences;
+      case 'safety_certificates':
+        return loc.subcategorySafetyCertificates;
+
+      case 'medical_aid_cards':
+        return loc.subcategoryMedicalAidCards;
+      case 'prescriptions':
+        return loc.subcategoryPrescriptions;
+      case 'vaccinations':
+        return loc.subcategoryVaccinations;
+      case 'medical_certificates':
+        return loc.subcategoryMedicalCertificates;
+
+      case 'gym_memberships':
+        return loc.subcategoryGymMemberships;
+      case 'club_memberships':
+        return loc.subcategoryClubMemberships;
+      case 'subscriptions':
+        return loc.subcategorySubscriptions;
+      case 'warranties':
+        return loc.subcategoryWarranties;
 
       default:
-        // Retired preset keys and custom groups fall through to their raw
-        // value, so existing records under removed presets still render.
-        return key;
+        // Custom groups show the name the user gave them. Retired preset keys
+        // and keys with no name left show as readable words, never as code.
+        final custom = GroupRepository.labelForKey(key);
+        if (custom != null && custom.trim().isNotEmpty) return custom;
+        return readableKey(key);
     }
+  }
+
+  /// "personal_identification__gym_memberships" becomes "Gym memberships".
+  /// Keys made from names in other scripts carry no words, so they show as
+  /// they are. Records saved with a plain name show that name.
+  static String readableKey(String key) {
+    final at = key.lastIndexOf('__');
+    var tail = at >= 0 ? key.substring(at + 2) : key;
+    if (!tail.contains('_') && at < 0) return key;
+    tail = tail.replaceAll(RegExp(r'_\d+$'), '').replaceAll('_', ' ').trim();
+    if (tail.isEmpty || RegExp(r'^h[0-9a-f]{8}$').hasMatch(tail)) return key;
+    return tail[0].toUpperCase() + tail.substring(1);
   }
 
   static IconData _iconForCategoryKey(String key) {
@@ -187,6 +261,10 @@ class PresetCatalog {
         return Icons.work_rounded;
       case 'property_and_housing':
         return Icons.house_rounded;
+      case 'health_and_medical':
+        return Icons.medical_services_rounded;
+      case 'memberships_and_subscriptions':
+        return Icons.card_membership_rounded;
       default:
         return Icons.folder_rounded;
     }

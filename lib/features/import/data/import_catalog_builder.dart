@@ -26,71 +26,13 @@ class ImportCatalogBuilder {
   }
 
   static String _categoryLabel(AppLocalizations loc, String key) {
-    switch (key) {
-      case 'personal_identification':
-        return loc.categoryPersonalIdentification;
-      case 'driving_and_vehicles':
-        return loc.categoryDrivingAndVehicles;
-      case 'travel_and_immigration':
-        return loc.categoryTravelAndImmigration;
-      case 'insurance_and_cover':
-        return loc.categoryInsuranceAndCover;
-      case 'banking_and_cards':
-        return loc.categoryBankingAndCards;
-      case 'work_and_professional':
-        return loc.categoryWorkAndProfessional;
-      case 'property_and_housing':
-        return loc.categoryPropertyAndHousing;
-      default:
-        return '';
-    }
+    final label = PresetCatalog.categoryLabelFor(loc, key);
+    return label == key ? '' : label;
   }
 
   static String _groupLabel(AppLocalizations loc, String key) {
-    switch (key) {
-      case 'passports':
-        return loc.subcategoryPassports;
-      case 'id_cards':
-        return loc.subcategoryIdCards;
-      case 'residence_permits':
-        return loc.subcategoryResidencePermits;
-      case 'driving_licences':
-        return loc.subcategoryDrivingLicences;
-      case 'vehicle_registrations':
-        return loc.subcategoryVehicleRegistrations;
-      case 'roadworthy_certificates':
-        return loc.subcategoryRoadworthyCertificates;
-      case 'visas':
-        return loc.subcategoryVisas;
-      case 'study_permits':
-        return loc.subcategoryStudyPermits;
-      case 'work_permits':
-        return loc.subcategoryWorkPermits;
-      case 'vehicle_insurances':
-        return loc.subcategoryVehicleInsurances;
-      case 'property_insurances':
-        return loc.subcategoryPropertyInsurances;
-      case 'life_insurances':
-        return loc.subcategoryLifeInsurances;
-      case 'health_insurances':
-        return loc.subcategoryHealthInsurances;
-      case 'travel_insurances':
-        return loc.subcategoryTravelInsurances;
-      case 'debit_and_credit_cards':
-        return loc.subcategoryDebitAndCreditCards;
-      case 'store_cards':
-        return loc.subcategoryStoreCards;
-      case 'professional_licences':
-        return loc.subcategoryProfessionalLicences;
-      case 'work_access_cards':
-        return loc.subcategoryWorkAccessCards;
-      case 'lease_agreements':
-        return loc.subcategoryLeaseAgreements;
-      case 'access_cards_and_tags':
-        return loc.subcategoryAccessCardsAndTags;
-      default:
-        return '';
-    }
+    final label = PresetCatalog.groupLabelFor(loc, key);
+    return label == key ? '' : label;
   }
 
   static List<CatalogGroup> _customGroups(String categoryKey) {
