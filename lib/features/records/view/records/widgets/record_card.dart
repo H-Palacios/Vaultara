@@ -12,14 +12,7 @@ import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
 
-enum _RecordMenuAction {
-  notes,
-  guide,
-  share,
-  requestUpdate,
-  calendar,
-  delete,
-}
+enum _RecordMenuAction { notes, guide, share, requestUpdate, calendar, delete }
 
 class RecordCard extends StatelessWidget {
   final TrackedItem record;
@@ -34,6 +27,13 @@ class RecordCard extends StatelessWidget {
   final VoidCallback? onAddToCalendar;
   final VoidCallback? onRequestUpdate;
 
+  /// Long press starts choosing several records. While choosing, a tap
+  /// ticks or unticks the card and its buttons are paused.
+  final bool selecting;
+  final bool selected;
+  final VoidCallback? onLongPress;
+  final VoidCallback? onToggleSelect;
+
   const RecordCard({
     super.key,
     required this.record,
@@ -46,6 +46,10 @@ class RecordCard extends StatelessWidget {
     this.onShare,
     this.onAddToCalendar,
     this.onRequestUpdate,
+    this.selecting = false,
+    this.selected = false,
+    this.onLongPress,
+    this.onToggleSelect,
   });
 
   void _onMenuSelected(_RecordMenuAction action) {
@@ -78,11 +82,7 @@ class RecordCard extends StatelessWidget {
           Icon(icon, size: 20, color: iconColour),
           const SizedBox(width: 12),
           Flexible(
-            child: Text(
-              label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+            child: Text(label, maxLines: 1, overflow: TextOverflow.ellipsis),
           ),
         ],
       ),
@@ -105,186 +105,212 @@ class RecordCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Material(
-        color: scheme.surface,
-        borderRadius: BorderRadius.circular(14),
-        child: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Icon(status.icon, color: scheme.primary, size: 22),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      record.name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                  ),
-                  if (record.repeatMonths != null) ...[
-                    const SizedBox(width: 6),
-                    Tooltip(
-                      message: loc.repeatEvery(record.repeatMonths!),
-                      child: Icon(
-                        Icons.repeat_rounded,
-                        size: 16,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
-                  if (record.locked) ...[
-                    const SizedBox(width: 6),
-                    Tooltip(
-                      message: loc.recordLockTitle,
-                      child: Icon(
-                        Icons.lock_rounded,
-                        size: 16,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
-                  if (record.isShared) ...[
-                    const SizedBox(width: 6),
-                    const SharedBadge(),
-                  ],
-                  if (record.holderId != null) ...[
+        color: selected
+            ? scheme.primary.withValues(alpha: 0.10)
+            : scheme.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+          side: selected
+              ? BorderSide(color: scheme.primary, width: 1.5)
+              : BorderSide.none,
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onLongPress: onLongPress,
+          onTap: selecting ? onToggleSelect : null,
+          child: Padding(
+            padding: const EdgeInsets.all(12),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    if (selecting)
+                      Icon(
+                        selected
+                            ? Icons.check_circle_rounded
+                            : Icons.radio_button_unchecked_rounded,
+                        color: selected
+                            ? scheme.primary
+                            : scheme.onSurfaceVariant,
+                        size: 22,
+                      )
+                    else
+                      Icon(status.icon, color: scheme.primary, size: 22),
                     const SizedBox(width: 8),
-                    PersonChip(holderId: record.holderId),
-                  ],
-                ],
-              ),
-              if (_startBy(record) != null) ...[
-                const SizedBox(height: 6),
-                _StartByLine(date: _startBy(record)!),
-              ],
-              if (showGuide && record.id != null)
-                _ChecklistProgressLine(
-                  key: ValueKey(
-                    'checklist-${record.id}-${record.expiryDate.millisecondsSinceEpoch}',
-                  ),
-                  record: record,
-                  onTap: onHowToRenew!,
-                ),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional.centerStart,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10,
-                          vertical: 5,
-                        ),
-                        decoration: BoxDecoration(
-                          color: status.colour.withValues(alpha: 0.15),
-                          borderRadius: BorderRadius.circular(999),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(status.labelIcon, size: 13, color: fg),
-                            const SizedBox(width: 6),
-                            Flexible(
-                              child: Text(
-                                status.label,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  color: fg,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
-                          ],
+                    Expanded(
+                      child: Text(
+                        record.name,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                     ),
+                    if (record.repeatMonths != null) ...[
+                      const SizedBox(width: 6),
+                      Tooltip(
+                        message: loc.repeatEvery(record.repeatMonths!),
+                        child: Icon(
+                          Icons.repeat_rounded,
+                          size: 16,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                    if (record.locked) ...[
+                      const SizedBox(width: 6),
+                      Tooltip(
+                        message: loc.recordLockTitle,
+                        child: Icon(
+                          Icons.lock_rounded,
+                          size: 16,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                    if (record.isShared) ...[
+                      const SizedBox(width: 6),
+                      const SharedBadge(),
+                    ],
+                    if (record.holderId != null) ...[
+                      const SizedBox(width: 8),
+                      PersonChip(holderId: record.holderId),
+                    ],
+                  ],
+                ),
+                if (_startBy(record) != null) ...[
+                  const SizedBox(height: 6),
+                  _StartByLine(date: _startBy(record)!),
+                ],
+                if (showGuide && record.id != null)
+                  _ChecklistProgressLine(
+                    key: ValueKey(
+                      'checklist-${record.id}-${record.expiryDate.millisecondsSinceEpoch}',
+                    ),
+                    record: record,
+                    onTap: onHowToRenew!,
                   ),
-                  RecordPhotosButton(record: record),
-                  IconButton(
-                    tooltip: loc.renewAction,
-                    icon: Icon(
-                      Icons.autorenew_rounded,
-                      size: 20,
-                      color: scheme.primary,
-                    ),
-                    onPressed: onRenew,
-                  ),
-                  IconButton(
-                    tooltip: loc.edit,
-                    icon: Icon(
-                      Icons.edit_rounded,
-                      size: 20,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                    onPressed: onEdit,
-                  ),
-                  PopupMenuButton<_RecordMenuAction>(
-                    tooltip: loc.recordMenuMore,
-                    icon: Icon(
-                      Icons.more_vert,
-                      size: 20,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    onSelected: _onMenuSelected,
-                    itemBuilder: (menuContext) => [
-                      if (onViewNotes != null)
-                        _menuItem(
-                          _RecordMenuAction.notes,
-                          Icons.sticky_note_2_rounded,
-                          loc.editorNotes,
-                          scheme.onSurfaceVariant,
+                const SizedBox(height: 10),
+                IgnorePointer(
+                  ignoring: selecting,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Align(
+                          alignment: AlignmentDirectional.centerStart,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              color: status.colour.withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(999),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(status.labelIcon, size: 13, color: fg),
+                                const SizedBox(width: 6),
+                                Flexible(
+                                  child: Text(
+                                    status.label,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      color: fg,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
-                      if (showGuide)
-                        _menuItem(
-                          _RecordMenuAction.guide,
-                          Icons.menu_book_rounded,
-                          loc.guideTitle,
-                          scheme.onSurfaceVariant,
+                      ),
+                      RecordPhotosButton(record: record),
+                      IconButton(
+                        tooltip: loc.renewAction,
+                        icon: Icon(
+                          Icons.autorenew_rounded,
+                          size: 20,
+                          color: scheme.primary,
                         ),
-                      if (onShare != null)
-                        _menuItem(
-                          _RecordMenuAction.share,
-                          Icons.ios_share_rounded,
-                          loc.recordMenuShareLink,
-                          scheme.onSurfaceVariant,
+                        onPressed: onRenew,
+                      ),
+                      IconButton(
+                        tooltip: loc.edit,
+                        icon: Icon(
+                          Icons.edit_rounded,
+                          size: 20,
+                          color: scheme.onSurfaceVariant,
                         ),
-                      if (onRequestUpdate != null)
-                        _menuItem(
-                          _RecordMenuAction.requestUpdate,
-                          Icons.forward_to_inbox_rounded,
-                          loc.requestUpdateMenu,
-                          scheme.onSurfaceVariant,
+                        onPressed: onEdit,
+                      ),
+                      PopupMenuButton<_RecordMenuAction>(
+                        tooltip: loc.recordMenuMore,
+                        icon: Icon(
+                          Icons.more_vert,
+                          size: 20,
+                          color: scheme.onSurfaceVariant,
                         ),
-                      if (onAddToCalendar != null)
-                        _menuItem(
-                          _RecordMenuAction.calendar,
-                          Icons.event_rounded,
-                          loc.exportCalendarTitle,
-                          scheme.onSurfaceVariant,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
                         ),
-                      _menuItem(
-                        _RecordMenuAction.delete,
-                        Icons.delete_outline_rounded,
-                        loc.delete,
-                        scheme.error,
+                        onSelected: _onMenuSelected,
+                        itemBuilder: (menuContext) => [
+                          if (onViewNotes != null)
+                            _menuItem(
+                              _RecordMenuAction.notes,
+                              Icons.sticky_note_2_rounded,
+                              loc.editorNotes,
+                              scheme.onSurfaceVariant,
+                            ),
+                          if (showGuide)
+                            _menuItem(
+                              _RecordMenuAction.guide,
+                              Icons.menu_book_rounded,
+                              loc.guideTitle,
+                              scheme.onSurfaceVariant,
+                            ),
+                          if (onShare != null)
+                            _menuItem(
+                              _RecordMenuAction.share,
+                              Icons.ios_share_rounded,
+                              loc.recordMenuShareLink,
+                              scheme.onSurfaceVariant,
+                            ),
+                          if (onRequestUpdate != null)
+                            _menuItem(
+                              _RecordMenuAction.requestUpdate,
+                              Icons.forward_to_inbox_rounded,
+                              loc.requestUpdateMenu,
+                              scheme.onSurfaceVariant,
+                            ),
+                          if (onAddToCalendar != null)
+                            _menuItem(
+                              _RecordMenuAction.calendar,
+                              Icons.event_rounded,
+                              loc.exportCalendarTitle,
+                              scheme.onSurfaceVariant,
+                            ),
+                          _menuItem(
+                            _RecordMenuAction.delete,
+                            Icons.delete_outline_rounded,
+                            loc.delete,
+                            scheme.error,
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                ],
-              ),
-            ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -405,9 +431,7 @@ class _ChecklistProgressLineState extends State<_ChecklistProgressLine> {
           child: Row(
             children: [
               Icon(
-                complete
-                    ? Icons.check_circle_rounded
-                    : Icons.checklist_rounded,
+                complete ? Icons.check_circle_rounded : Icons.checklist_rounded,
                 size: 14,
                 color: colour,
               ),
@@ -425,11 +449,7 @@ class _ChecklistProgressLineState extends State<_ChecklistProgressLine> {
                 ),
               ),
               const SizedBox(width: 2),
-              Icon(
-                Icons.chevron_right_rounded,
-                size: 16,
-                color: colour,
-              ),
+              Icon(Icons.chevron_right_rounded, size: 16, color: colour),
             ],
           ),
         ),
