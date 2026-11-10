@@ -7634,4 +7634,440 @@ class AppLocalizationsCs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Vaše domovská obrazovka';
+
+  @override
+  String get tutorialsSubHome => 'Co znamenají karty a kde co najdete';
+
+  @override
+  String get tutorialsTitleRenew => 'Obnovení záznamu';
+
+  @override
+  String get tutorialsSubRenew => 'Co dělat, když přijde připomínka';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendář a náklady';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Termíny v kalendáři a kolik stojí obnovy';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotky a zabezpečení';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Fotky dokladů, šifrování a zámky';
+
+  @override
+  String get tutorialsTitleSharing => 'Bezpečné sdílení';
+
+  @override
+  String get tutorialsSubSharing => 'Sdílet záznam, vytvořit balíček, zastavit odkaz';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skenování a import';
+
+  @override
+  String get tutorialsSubImportScan => 'Rychle přidat mnoho záznamů';
+
+  @override
+  String get tutorialsTitleHousehold => 'Sdílená domácnost';
+
+  @override
+  String get tutorialsSubHousehold => 'Pozvěte ostatní ke sdílení záznamů a připomínek';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Ztráta peněženky';
+
+  @override
+  String get tutorialsSubLostWallet => 'Připravte se teď a jednejte rychle, když se ztratí';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Životní události';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plán na stěhování, miminko, novou práci a další';
+
+  @override
+  String get tutorialsTitleAsk => 'Zeptat se aplikace Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Pište nebo mluvte se svými záznamy';
+
+  @override
+  String get tutorialsTitleBusiness => 'Nástroje Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Dokumenty zaměstnanců, připomínky a přehledy';
+
+  @override
+  String get tutorialsGroupBasics => 'Základy';
+
+  @override
+  String get tutorialsGroupOnTop => 'Mít vše pod kontrolou';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Cestování a rodina';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Životní události a nouzové situace';
+
+  @override
+  String get tutorialsGroupPaid => 'Placené funkce';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kroků',
+      many: '$count kroku',
+      few: '$count kroky',
+      one: '$count krok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Placené tarify';
+
+  @override
+  String get tutorialsPaidNote => 'Prohlédnout si to můžete s jakýmkoli tarifem. Samotná funkce vyžaduje placený tarif.';
+
+  @override
+  String get tutorialsBack => 'Zpět';
+
+  @override
+  String get tutorialsTryIt => 'Vyzkoušet';
+
+  @override
+  String get tutorialHintText => 'Jste tu poprvé? Projděte si krátkou prohlídku';
+
+  @override
+  String get tutorialHintPlay => 'Ukázat';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Kapitola $number z $total';
+  }
+
+  @override
+  String get tourContinue => 'Pokračovat';
+
+  @override
+  String get tourSkip => 'Přeskočit';
+
+  @override
+  String get tourSkipped => 'Přeskočeno';
+
+  @override
+  String get tourDone => 'Viděli jste celou prohlídku';
+
+  @override
+  String get tourRestart => 'Začít znovu';
+
+  @override
+  String get whatsNewBadge => 'Novinka';
+
+  @override
+  String get whatsNewTitle => 'Ztráta peněženky';
+
+  @override
+  String get whatsNewBody => 'Uložte si, kde nosíte karty, a blokační číslo každé banky. Když peněženku ztratíte, vše zablokujete během pár minut.';
+
+  @override
+  String get whatsNewDismiss => 'Rozumím';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Další podrobnosti obsahují doplňky: poznámky, opakování, dobu obnovy, čí je záznam, kde ho máte, zámek a fotky. Otevírejte je jen v případě potřeby.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Zamkněte záznam, aby před zobrazením vyžadoval otisk prstu nebo zámek obrazovky. Zvolte, kde ho máte, třeba v peněžence, a přidejte fotky dokladu.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Ztratili jste peněženku? Podívejte se na vše, co v ní bylo, zavolejte každé bance jedním klepnutím a projděte zbylé kroky.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Stěhování, miminko, nová práce nebo nouzová situace? Životní události vám dají plán s vašimi záznamy, kroky a daty.';
+
+  @override
+  String get storySampleQuestion => 'Co letos vyprší?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Váš $name vyprší v březnu. Chcete připomínku měsíc předem?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name vyprší za 30 dní. Klepnutím obnovíte.';
+  }
+
+  @override
+  String get storySampleGym => 'Permanentka do posilovny';
+
+  @override
+  String get storySampleFirstAid => 'Osvědčení o první pomoci';
+
+  @override
+  String get storySampleEncrypt => 'Šifrovat fotky';
+
+  @override
+  String get storySampleAppLock => 'Zámek aplikace';
+
+  @override
+  String get storySampleHideApp => 'Skrýt obsah v přepínači aplikací';
+
+  @override
+  String get storyHome1Title => 'Váš den v kostce';
+
+  @override
+  String get storyHome1Body => 'Domovská obrazovka ukazuje, co je dnes důležité: co brzy vyprší a kolik máte záznamů.';
+
+  @override
+  String get storyHome2Title => 'Najděte cokoli';
+
+  @override
+  String get storyHome2Body => 'Klepněte na hledání a najděte záznam podle názvu, skupiny nebo osoby.';
+
+  @override
+  String get storyHome3Title => 'Cesty a plány';
+
+  @override
+  String get storyHome3Body => 'Zde se zobrazují plánované cesty a probíhající plány životních událostí se zbývajícími úkoly.';
+
+  @override
+  String get storyHome4Title => 'Pomoc jedním klepnutím';
+
+  @override
+  String get storyHome4Body => 'Tlačítko s jiskrou otevře „Zeptat se aplikace Vaultara“. Vaše fotka otevře profil, nastavení a návody.';
+
+  @override
+  String get storyRenew1Title => 'Přijde připomínka';
+
+  @override
+  String get storyRenew1Body => 'Než záznam vyprší, Vaultara vám to připomene. Klepnutím na připomínku záznam otevřete.';
+
+  @override
+  String get storyRenew2Title => 'Uložte nové datum';
+
+  @override
+  String get storyRenew2Body => 'Obnoveno? Klepněte na „Obnovit“ a zadejte nové datum platnosti. Připomínky se posunou s ním.';
+
+  @override
+  String get storyRenew3Title => 'Nevíte jak?';
+
+  @override
+  String get storyRenew3Body => 'Mnoho záznamů má průvodce s kroky, doklady a obvyklou cenou.';
+
+  @override
+  String get storyRenew4Title => 'Ať se opakuje';
+
+  @override
+  String get storyRenew4Body => 'U předplatných a ročních plateb zapněte opakování a datum se posune samo.';
+
+  @override
+  String get storyAsk1Title => 'Ptejte se vlastními slovy';
+
+  @override
+  String get storyAsk1Body => 'Zeptejte se třeba „Co letos vyprší?“ a dostanete odpovědi ze svých záznamů.';
+
+  @override
+  String get storyAsk2Title => 'Mluvte místo psaní';
+
+  @override
+  String get storyAsk2Body => 'Klepněte na mikrofon a mluvte. Slova se objevují během mluvení a můžete hned odeslat.';
+
+  @override
+  String get storyAsk3Title => 'Každou změnu potvrzujete vy';
+
+  @override
+  String get storyAsk3Body => 'Požádejte o přidání nebo změnu záznamu a nejdřív uvidíte kartu. Nic se neuloží, dokud nepotvrdíte.';
+
+  @override
+  String get storyAsk4Title => 'Vraťte jakoukoli změnu';
+
+  @override
+  String get storyAsk4Body => 'Rozmysleli jste si to? Každou potvrzenou změnu lze vrátit ze stejné karty.';
+
+  @override
+  String get storyAsk5Title => 'Pokračujte, kde jste skončili';
+
+  @override
+  String get storyAsk5Body => 'Chaty se uchovávají 90 dní v „Historie chatů“ a navrhované otázky vám pomohou začít.';
+
+  @override
+  String get storyWallet1Title => 'Připravte se předem';
+
+  @override
+  String get storyWallet1Body => 'Otevřete kartu nebo doklad a zvolte, kde ho máte, třeba v peněžence nebo tašce.';
+
+  @override
+  String get storyWallet2Title => 'Uložte blokační číslo';
+
+  @override
+  String get storyWallet2Body => 'Přidejte teď blokační číslo každé banky. Je na kartě, kterou mít nebudete, až ho budete potřebovat.';
+
+  @override
+  String get storyWallet3Title => 'Když se ztratí';
+
+  @override
+  String get storyWallet3Body => 'Otevřete „Ztráta peněženky“ a klepněte na „Ztracená“ nebo „Ukradená“. Vaultara vypíše vše, co v ní bylo.';
+
+  @override
+  String get storyWallet4Title => 'Zablokujte karty během minut';
+
+  @override
+  String get storyWallet4Body => 'Volejte každé bance jedním klepnutím, označujte karty jako zablokované a uložte číslo oznámení.';
+
+  @override
+  String get storyWallet5Title => 'Nahraďte a buďte v bezpečí';
+
+  @override
+  String get storyWallet5Body => 'Nahraďte doklady, kontrolujte výpisy, když vám to připomeneme, a klepněte na „Našel jsem ji“, pokud se najde.';
+
+  @override
+  String get storyLife1Title => 'Velké chvíle, jeden plán';
+
+  @override
+  String get storyLife1Body => 'Stěhování, miminko, nová práce nebo nouzová situace: v „Životní události“ zvolte, co se děje.';
+
+  @override
+  String get storyLife2Title => 'Vaše záznamy v pořádku';
+
+  @override
+  String get storyLife2Body => 'Plán ukáže, které záznamy aktualizovat, zrušit nebo obnovit a které možná přidat.';
+
+  @override
+  String get storyLife3Title => 'Kroky a data';
+
+  @override
+  String get storyLife3Body => 'Kroky pokrývají vše, co není záznam, a data zahájení řeknou, kdy požádat, aby nic nebylo pozdě.';
+
+  @override
+  String get storyLife4Title => 'Přizpůsobte si ho';
+
+  @override
+  String get storyLife4Body => 'Přidejte vlastní kroky, sdílejte plán jako PDF a dostávejte připomínky kolem data.';
+
+  @override
+  String get storyPhotos1Title => 'Fotky vašich dokladů';
+
+  @override
+  String get storyPhotos1Body => 'V záznamu přidejte fotky přední a zadní strany karty nebo dokladu.';
+
+  @override
+  String get storyPhotos2Title => 'Šifrované v telefonu';
+
+  @override
+  String get storyPhotos2Body => 'Zapněte šifrování fotek a fotky se zamknou v telefonu ještě před nahráním.';
+
+  @override
+  String get storyPhotos3Title => 'Zamkněte citlivé záznamy';
+
+  @override
+  String get storyPhotos3Body => 'Zamkněte záznam a před otevřením si vyžádá otisk prstu nebo zámek obrazovky.';
+
+  @override
+  String get storyPhotos4Title => 'Zamkněte celou aplikaci';
+
+  @override
+  String get storyPhotos4Body => 'V nastavení zabezpečení zapněte zámek aplikace a skryjte obsah při přepínání aplikací.';
+
+  @override
+  String get storyShare1Title => 'Sdílejte jeden záznam';
+
+  @override
+  String get storyShare1Body => 'Otevřete záznam a sdílejte odkaz, který ukazuje jen tento záznam, nic víc.';
+
+  @override
+  String get storyShare2Title => 'Balíček dokladů';
+
+  @override
+  String get storyShare2Body => 'Vložte vybrané záznamy i s fotkami do jednoho PDF pro pronajímatele, banku nebo úřad.';
+
+  @override
+  String get storyShare3Title => 'Mějte vše pod kontrolou';
+
+  @override
+  String get storyShare3Body => '„Sdílené odkazy“ ukazuje každý vytvořený odkaz. Kterýkoli kdykoli zastavte a přestane se otevírat.';
+
+  @override
+  String get storyHousehold1Title => 'Pozvěte domácnost';
+
+  @override
+  String get storyHousehold1Body => 'Sdílejte kód nebo odkaz pozvánky. Každý se přihlásí vlastním účtem.';
+
+  @override
+  String get storyHousehold2Title => 'Jedna sada záznamů';
+
+  @override
+  String get storyHousehold2Body => 'Všichni vidí stejné sdílené záznamy a dostávají stejné připomínky.';
+
+  @override
+  String get storyHousehold3Title => 'Čí je to?';
+
+  @override
+  String get storyHousehold3Body => 'Každý záznam může někomu patřit. Jméno se zobrazí v záznamu i v připomínkách.';
+
+  @override
+  String get storyImport1Title => 'Naskenujte kartu';
+
+  @override
+  String get storyImport1Body => 'Vyfoťte kartu nebo doklad a Vaultara za vás vyplní název a datum platnosti.';
+
+  @override
+  String get storyImport2Title => 'Importujte seznam';
+
+  @override
+  String get storyImport2Body => 'Už máte tabulku? Importujte ji a před uložením zkontrolujte každý řádek.';
+
+  @override
+  String get storyImport3Title => 'Sdílejte do Vaultary';
+
+  @override
+  String get storyImport3Body => 'Sdílejte fotku, PDF nebo text z jiné aplikace do Vaultary a začněte nový záznam.';
+
+  @override
+  String get storyCosts1Title => 'Ve vašem kalendáři';
+
+  @override
+  String get storyCosts1Body => 'Přidejte termíny do kalendáře v telefonu vedle ostatních plánů.';
+
+  @override
+  String get storyCosts2Title => 'Kolik stojí obnovy';
+
+  @override
+  String get storyCosts2Body => 'Zadejte cenu obnovy do záznamu a Vaultara ukáže, kolik ročně utratíte.';
+
+  @override
+  String get storyCosts3Title => 'Plánujte dopředu';
+
+  @override
+  String get storyCosts3Body => 'Vidíte drahé měsíce předem, takže vás velká obnova nikdy nepřekvapí.';
+
+  @override
+  String get storyBusiness1Title => 'Sledujte svůj tým';
+
+  @override
+  String get storyBusiness1Body => 'Přidejte zaměstnance a mějte jejich certifikáty, povolení a licence na jednom místě.';
+
+  @override
+  String get storyBusiness2Title => 'Připomínky e-mailem';
+
+  @override
+  String get storyBusiness2Body => 'Zaměstnanci dostanou e-mail před vypršením dokladů, i bez aplikace.';
+
+  @override
+  String get storyBusiness3Title => 'Měsíční přehled';
+
+  @override
+  String get storyBusiness3Body => 'Každý měsíc přehled ukáže, co platí, co vyprší a co chybí.';
+
+  @override
+  String get storyBusiness4Title => 'Požádejte o aktualizaci';
+
+  @override
+  String get storyBusiness4Body => 'Pošlete odkaz a zaměstnanec sám nahraje obnovený doklad.';
 }

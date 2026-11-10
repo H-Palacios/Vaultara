@@ -7492,4 +7492,438 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Allon gidanka';
+
+  @override
+  String get tutorialsSubHome => 'Ma\'anar katunan da inda komai yake';
+
+  @override
+  String get tutorialsTitleRenew => 'Sabunta bayani';
+
+  @override
+  String get tutorialsSubRenew => 'Abin da za ka yi idan tunatarwa ta zo';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalanda da farashi';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Kwanakin karewa a kalandarka da kudin sabuntawa';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Hotuna da tsaro';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Hotunan takardu, boye bayanai da kullewa';
+
+  @override
+  String get tutorialsTitleSharing => 'Raba cikin aminci';
+
+  @override
+  String get tutorialsSubSharing => 'Raba bayani, yi fakiti, dakatar da hanyar haɗi';
+
+  @override
+  String get tutorialsTitleImportScan => 'Duba da shigo da su';
+
+  @override
+  String get tutorialsSubImportScan => 'Ƙara bayanai da yawa da sauri';
+
+  @override
+  String get tutorialsTitleHousehold => 'Gida na tare';
+
+  @override
+  String get tutorialsSubHousehold => 'Gayyaci wasu don raba bayanai da tunatarwa';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Na yi asarar jakar kuɗina';
+
+  @override
+  String get tutorialsSubLostWallet => 'Shirya yanzu, ka yi sauri idan ya ɓace';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Abubuwan rayuwa';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Shiri don ƙaura, jariri, sabon aiki da ƙari';
+
+  @override
+  String get tutorialsTitleAsk => 'Tambayi Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Yi hira ko magana da bayananka';
+
+  @override
+  String get tutorialsTitleBusiness => 'Kayan aikin Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Takardun ma\'aikata, tunatarwa da rahotanni';
+
+  @override
+  String get tutorialsGroupBasics => 'Abubuwan yau da kullum';
+
+  @override
+  String get tutorialsGroupOnTop => 'Kasancewa a kan komai';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Tafiya da iyali';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Al\'amuran rayuwa da gaggawa';
+
+  @override
+  String get tutorialsGroupPaid => 'Fasalolin biya';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Matakai $count',
+      one: 'Mataki 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Tsare-tsaren biya';
+
+  @override
+  String get tutorialsPaidNote => 'Kana iya kallon wannan da kowane tsari. Fasalin kansa yana buƙatar tsarin biya.';
+
+  @override
+  String get tutorialsBack => 'Baya';
+
+  @override
+  String get tutorialsTryIt => 'Gwada yanzu';
+
+  @override
+  String get tutorialHintText => 'Sabo a nan? Kalli gajeren rangadi';
+
+  @override
+  String get tutorialHintPlay => 'Nuna mini';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Babi $number cikin $total';
+  }
+
+  @override
+  String get tourContinue => 'Ci gaba';
+
+  @override
+  String get tourSkip => 'Tsallake';
+
+  @override
+  String get tourSkipped => 'An tsallake';
+
+  @override
+  String get tourDone => 'Ka ga dukan rangadin';
+
+  @override
+  String get tourRestart => 'Fara daga farko';
+
+  @override
+  String get whatsNewBadge => 'Sabo';
+
+  @override
+  String get whatsNewTitle => 'Na yi asarar jakar kuɗina';
+
+  @override
+  String get whatsNewBody => 'Ajiye inda kake ajiye katunanka da lambar dakatarwa ta kowane banki. Idan walat ɗinka ya ɓace, za ka dakatar da komai cikin mintuna.';
+
+  @override
+  String get whatsNewDismiss => 'Na gane';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Ƙarin bayani yana ɗauke da ƙari: bayanin kula, maimaitawa, lokacin sabuntawa, na wane ne, inda kake ajiye shi, kulle da hotuna. Buɗe shi kawai idan kana buƙata.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Kulle bayani don ya nemi zanen yatsa ko kullin allo kafin a nuna shi. Zaɓi inda kake ajiye shi, kamar walat ɗinka, ka ƙara hotunan takardar.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Walat ya ɓace? Ga duk abin da ke ciki, kira kowane banki da taɓawa ɗaya kuma bi matakan sauran.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Ƙaura, jariri, sabon aiki ko gaggawa? Al\'amuran rayuwa suna ba ka shiri tare da bayananka, matakai da kwanaki.';
+
+  @override
+  String get storySampleQuestion => 'Me zai ƙare a bana?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name ɗinka zai ƙare a watan Maris. Kana son tunatarwa wata ɗaya kafin?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name zai ƙare cikin kwanaki 30. Taɓa don sabuntawa.';
+  }
+
+  @override
+  String get storySampleGym => 'Membobin gidan motsa jiki';
+
+  @override
+  String get storySampleFirstAid => 'Takardar shaidar taimakon farko';
+
+  @override
+  String get storySampleEncrypt => 'Ɓoye hotuna';
+
+  @override
+  String get storySampleAppLock => 'Kullin manhaja';
+
+  @override
+  String get storySampleHideApp => 'Ɓoye abun ciki a mai sauya manhajoji';
+
+  @override
+  String get storyHome1Title => 'Ranarka a kallo ɗaya';
+
+  @override
+  String get storyHome1Body => 'Allon gida yana nuna abin da ke da muhimmanci yau: abin da zai ƙare nan ba da daɗewa ba da yawan bayananka.';
+
+  @override
+  String get storyHome2Title => 'Nemo komai';
+
+  @override
+  String get storyHome2Body => 'Taɓa bincike don nemo bayani ta suna, rukuni ko mutum.';
+
+  @override
+  String get storyHome3Title => 'Tafiye-tafiye da tsare-tsare';
+
+  @override
+  String get storyHome3Body => 'Tafiye-tafiyen da kake shiryawa da tsare-tsaren al\'amuran rayuwa da ke gudana suna bayyana a nan, tare da abin da ya rage.';
+
+  @override
+  String get storyHome4Title => 'Taimako da taɓawa ɗaya';
+
+  @override
+  String get storyHome4Body => 'Maɓallin walƙiya yana buɗe «Tambayi Vaultara». Hotonka yana buɗe bayananka, saitunan da koyarwa.';
+
+  @override
+  String get storyRenew1Title => 'Tunatarwa ta zo';
+
+  @override
+  String get storyRenew1Body => 'Kafin bayani ya ƙare, Vaultara tana tunatar da kai. Taɓa tunatarwar don buɗe bayanin.';
+
+  @override
+  String get storyRenew2Title => 'Ajiye sabuwar kwanan wata';
+
+  @override
+  String get storyRenew2Body => 'Ka sabunta? Taɓa «Sabunta» ka shigar da sabuwar ranar karewa. Tunatarwarka za su motsa tare da ita.';
+
+  @override
+  String get storyRenew3Title => 'Ba ka da tabbacin yadda?';
+
+  @override
+  String get storyRenew3Body => 'Bayanai da yawa suna da jagora da matakai, takardu da farashin da aka saba.';
+
+  @override
+  String get storyRenew4Title => 'Bari ya maimaita';
+
+  @override
+  String get storyRenew4Body => 'Don biyan kuɗi na lokaci-lokaci da na shekara, kunna maimaitawa kuma kwanan wata zai matsa da kansa.';
+
+  @override
+  String get storyAsk1Title => 'Tambaya da kalmominka';
+
+  @override
+  String get storyAsk1Body => 'Yi tambayoyi kamar «Me zai ƙare a bana?» ka sami amsoshi daga bayananka.';
+
+  @override
+  String get storyAsk2Title => 'Yi magana maimakon rubutu';
+
+  @override
+  String get storyAsk2Body => 'Taɓa makirufo ka yi magana. Kalmominka suna bayyana yayin da kake magana kuma kana iya aikawa nan take.';
+
+  @override
+  String get storyAsk3Title => 'Kai ne ke tabbatar da kowane canji';
+
+  @override
+  String get storyAsk3Body => 'Nemi a ƙara ko a canza bayani kuma za ka fara ganin kati. Babu abin da ake ajiyewa har sai ka tabbatar.';
+
+  @override
+  String get storyAsk4Title => 'Soke kowane canji';
+
+  @override
+  String get storyAsk4Body => 'Ka canza ra\'ayi? Ana iya soke kowane canjin da aka tabbatar daga katin guda.';
+
+  @override
+  String get storyAsk5Title => 'Ci gaba daga inda ka tsaya';
+
+  @override
+  String get storyAsk5Body => 'Ana ajiye hirarraki na kwanaki 90 a «Tarihin hira», kuma tambayoyin da aka ba da shawara suna taimaka maka ka fara.';
+
+  @override
+  String get storyWallet1Title => 'Shirya da farko';
+
+  @override
+  String get storyWallet1Body => 'Buɗe kati ko takarda ka zaɓi inda kake ajiye shi, kamar walat ko jakarka.';
+
+  @override
+  String get storyWallet2Title => 'Ajiye lambar dakatarwa';
+
+  @override
+  String get storyWallet2Body => 'Ƙara lambar dakatarwa ta kowane banki yanzu. Tana kan katin, wanda ba za ka samu ba lokacin da kake buƙatarta.';
+
+  @override
+  String get storyWallet3Title => 'Idan ya ɓace';
+
+  @override
+  String get storyWallet3Body => 'Buɗe «Na yi asarar jakar kuɗina» ka taɓa «Ya ɓace» ko «An sace shi». Vaultara tana jera duk abin da ke ciki.';
+
+  @override
+  String get storyWallet4Title => 'Dakatar da katuna cikin mintuna';
+
+  @override
+  String get storyWallet4Body => 'Kira kowane banki da taɓawa ɗaya, yi wa katunan alamar an dakatar da su kuma ajiye lambar rahoto.';
+
+  @override
+  String get storyWallet5Title => 'Sauya kuma ka kasance lafiya';
+
+  @override
+  String get storyWallet5Body => 'Sauya takardunka, duba bayanan asusu idan an tunatar da kai kuma taɓa «Na same shi» idan ya bayyana.';
+
+  @override
+  String get storyLife1Title => 'Manyan lokuta, shiri ɗaya';
+
+  @override
+  String get storyLife1Body => 'Ƙaura, jariri, sabon aiki ko gaggawa: zaɓi a «Abubuwan rayuwa» abin da ke faruwa.';
+
+  @override
+  String get storyLife2Title => 'Bayananka, a tsare';
+
+  @override
+  String get storyLife2Body => 'Shirin yana nuna bayanan da za ka sabunta, soke ko sake sabuntawa, da waɗanda ƙila za ka buƙaci ƙarawa.';
+
+  @override
+  String get storyLife3Title => 'Matakai da kwanaki';
+
+  @override
+  String get storyLife3Body => 'Matakai suna rufe abin da ba bayani ba ne, kuma kwanakin farawa suna gaya maka lokacin neman don kada wani abu ya makara.';
+
+  @override
+  String get storyLife4Title => 'Mai da shi naka';
+
+  @override
+  String get storyLife4Body => 'Ƙara matakanka, raba shirin a matsayin PDF kuma karɓi tunatarwa kusa da ranar.';
+
+  @override
+  String get storyPhotos1Title => 'Hotunan takardunka';
+
+  @override
+  String get storyPhotos1Body => 'Daga bayanin, ƙara hotunan gaba da baya na kati ko takarda.';
+
+  @override
+  String get storyPhotos2Title => 'An ɓoye su a wayarka';
+
+  @override
+  String get storyPhotos2Body => 'Kunna ɓoye hotuna kuma ana kulle su a wayarka kafin a loda su.';
+
+  @override
+  String get storyPhotos3Title => 'Kulle bayanai masu mahimmanci';
+
+  @override
+  String get storyPhotos3Body => 'Kulle bayani kuma zai nemi zanen yatsa ko kullin allo kafin ya buɗe.';
+
+  @override
+  String get storyPhotos4Title => 'Kulle dukan manhajar';
+
+  @override
+  String get storyPhotos4Body => 'A saitunan tsaro, kunna kullin manhaja kuma ɓoye abun ciki lokacin da kake sauya manhaja.';
+
+  @override
+  String get storyShare1Title => 'Raba bayani ɗaya';
+
+  @override
+  String get storyShare1Body => 'Buɗe bayani ka raba hanyar haɗi da ke nuna wannan bayanin kawai, babu wani abu.';
+
+  @override
+  String get storyShare2Title => 'Fakitin shaida';
+
+  @override
+  String get storyShare2Body => 'Saka bayanan da ka zaɓa, tare da hotunansu, cikin PDF ɗaya don mai gida, banki ko ofis.';
+
+  @override
+  String get storyShare3Title => 'Riƙe iko';
+
+  @override
+  String get storyShare3Body => '«Hanyoyin haɗin da aka raba» yana nuna kowace hanyar haɗi da ka yi. Dakatar da kowace a kowane lokaci kuma ba za ta ƙara buɗewa ba.';
+
+  @override
+  String get storyHousehold1Title => 'Gayyaci gidanka';
+
+  @override
+  String get storyHousehold1Body => 'Raba lambar gayyata ko hanyar haɗi. Kowane mutum yana shiga da asusunsa.';
+
+  @override
+  String get storyHousehold2Title => 'Saitin bayanai ɗaya';
+
+  @override
+  String get storyHousehold2Body => 'Kowa yana ganin bayanan tare iri ɗaya kuma yana samun tunatarwa iri ɗaya.';
+
+  @override
+  String get storyHousehold3Title => 'Na wane ne?';
+
+  @override
+  String get storyHousehold3Body => 'Kowane bayani zai iya zama na wani. Sunansa yana bayyana a kansa da a tunatarwarsa.';
+
+  @override
+  String get storyImport1Title => 'Duba kati';
+
+  @override
+  String get storyImport1Body => 'Ɗauki hoton kati ko takarda kuma Vaultara za ta cike suna da ranar karewa a madadinka.';
+
+  @override
+  String get storyImport2Title => 'Shigo da jeri';
+
+  @override
+  String get storyImport2Body => 'Kana da maƙunsar bayanai tuni? Shigo da shi ka duba kowane layi kafin a ajiye wani abu.';
+
+  @override
+  String get storyImport3Title => 'Raba zuwa Vaultara';
+
+  @override
+  String get storyImport3Body => 'Raba hoto, PDF ko rubutu daga wata manhaja zuwa Vaultara don fara sabon bayani.';
+
+  @override
+  String get storyCosts1Title => 'A kalandarka';
+
+  @override
+  String get storyCosts1Body => 'Ƙara kwanakin karewa a kalandar wayarka, kusa da sauran tsare-tsarenka.';
+
+  @override
+  String get storyCosts2Title => 'Kudin sabuntawa';
+
+  @override
+  String get storyCosts2Body => 'Shigar da kudin sabuntawa a bayani kuma Vaultara za ta nuna abin da kake kashewa a shekara.';
+
+  @override
+  String get storyCosts3Title => 'Shirya tun da wuri';
+
+  @override
+  String get storyCosts3Body => 'Ga watanni masu tsada suna zuwa don babban sabuntawa kada ya ba ka mamaki.';
+
+  @override
+  String get storyBusiness1Title => 'Bi ƙungiyarka';
+
+  @override
+  String get storyBusiness1Body => 'Ƙara ma\'aikata ka ajiye takardun shaida, izini da lasisinsu a wuri ɗaya.';
+
+  @override
+  String get storyBusiness2Title => 'Tunatarwa ta imel';
+
+  @override
+  String get storyBusiness2Body => 'Ma\'aikata suna samun imel kafin takardunsu su ƙare, ko da babu manhajar.';
+
+  @override
+  String get storyBusiness3Title => 'Rahoton wata-wata';
+
+  @override
+  String get storyBusiness3Body => 'Kowane wata rahoto yana nuna abin da ke aiki, abin da ke ƙarewa da abin da ya ɓace.';
+
+  @override
+  String get storyBusiness4Title => 'Nemi sabuntawa';
+
+  @override
+  String get storyBusiness4Body => 'Aika hanyar haɗi kuma ma\'aikaci zai loda sabuwar takardar da kansa.';
 }

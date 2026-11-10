@@ -7492,4 +7492,438 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Skrini yako ya mwanzo';
+
+  @override
+  String get tutorialsSubHome => 'Maana ya kadi na mahali kila kitu kilipo';
+
+  @override
+  String get tutorialsTitleRenew => 'Kuhuisha rekodi';
+
+  @override
+  String get tutorialsSubRenew => 'Cha kufanya kikumbusho kinapofika';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalenda na gharama';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Tarehe za kuisha kwenye kalenda yako na gharama za kuhuisha';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Picha na usalama';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Picha za hati, usimbaji fiche na kufuli';
+
+  @override
+  String get tutorialsTitleSharing => 'Shiriki kwa usalama';
+
+  @override
+  String get tutorialsSubSharing => 'Shiriki rekodi, tengeneza kifurushi, simamisha kiungo';
+
+  @override
+  String get tutorialsTitleImportScan => 'Changanua na leta';
+
+  @override
+  String get tutorialsSubImportScan => 'Ongeza rekodi nyingi haraka';
+
+  @override
+  String get tutorialsTitleHousehold => 'Kaya ya pamoja';
+
+  @override
+  String get tutorialsSubHousehold => 'Alika wengine kushiriki rekodi na vikumbusho';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Nimepoteza pochi yangu';
+
+  @override
+  String get tutorialsSubLostWallet => 'Jiandae sasa, chukua hatua haraka ukiipoteza';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Matukio ya maisha';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Mpango wa kuhama, mtoto, kazi mpya na zaidi';
+
+  @override
+  String get tutorialsTitleAsk => 'Uliza Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Piga gumzo au zungumza na rekodi zako';
+
+  @override
+  String get tutorialsTitleBusiness => 'Zana za Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Hati za wafanyakazi, vikumbusho na ripoti';
+
+  @override
+  String get tutorialsGroupBasics => 'Misingi';
+
+  @override
+  String get tutorialsGroupOnTop => 'Kuwa juu ya mambo';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Safari na familia';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Matukio ya maisha na dharura';
+
+  @override
+  String get tutorialsGroupPaid => 'Vipengele vya kulipia';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hatua $count',
+      one: 'Hatua 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Mipango ya kulipia';
+
+  @override
+  String get tutorialsPaidNote => 'Unaweza kutazama hili kwa mpango wowote. Kipengele chenyewe kinahitaji mpango wa kulipia.';
+
+  @override
+  String get tutorialsBack => 'Nyuma';
+
+  @override
+  String get tutorialsTryIt => 'Jaribu sasa';
+
+  @override
+  String get tutorialHintText => 'Mgeni hapa? Tazama ziara fupi';
+
+  @override
+  String get tutorialHintPlay => 'Nionyeshe';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Sura $number kati ya $total';
+  }
+
+  @override
+  String get tourContinue => 'Endelea';
+
+  @override
+  String get tourSkip => 'Ruka';
+
+  @override
+  String get tourSkipped => 'Imerukwa';
+
+  @override
+  String get tourDone => 'Umeona ziara yote';
+
+  @override
+  String get tourRestart => 'Anza upya';
+
+  @override
+  String get whatsNewBadge => 'Mpya';
+
+  @override
+  String get whatsNewTitle => 'Nimepoteza pochi yangu';
+
+  @override
+  String get whatsNewBody => 'Hifadhi mahali unapoweka kadi zako na nambari ya kuzuia ya kila benki. Ukipoteza pochi, unazuia kila kitu ndani ya dakika.';
+
+  @override
+  String get whatsNewDismiss => 'Nimeelewa';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Maelezo zaidi yanabeba ziada: madokezo, kurudia, muda wa kuhuisha, ni ya nani, unaiweka wapi, kufuli na picha. Ifungue tu unapohitaji.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Funga rekodi ili iombe alama ya kidole au kufuli ya skrini kabla ya kuonyesha. Chagua unapoiweka, kama pochi yako, na uongeze picha za hati.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Umepoteza pochi? Ona kila kilichokuwemo, piga simu kila benki kwa mguso mmoja na ufuate hatua za vingine.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Kuhama, mtoto, kazi mpya au dharura? Matukio ya maisha yanakupa mpango wenye rekodi, hatua na tarehe zako.';
+
+  @override
+  String get storySampleQuestion => 'Nini kinaisha mwaka huu?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name yako inaisha Machi. Ungependa kikumbusho mwezi mmoja kabla?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name inaisha baada ya siku 30. Gusa ili kuhuisha.';
+  }
+
+  @override
+  String get storySampleGym => 'Uanachama wa gym';
+
+  @override
+  String get storySampleFirstAid => 'Cheti cha huduma ya kwanza';
+
+  @override
+  String get storySampleEncrypt => 'Simba picha kwa njia fiche';
+
+  @override
+  String get storySampleAppLock => 'Kufuli ya programu';
+
+  @override
+  String get storySampleHideApp => 'Ficha maudhui kwenye kibadilishaji programu';
+
+  @override
+  String get storyHome1Title => 'Siku yako kwa mtazamo mmoja';
+
+  @override
+  String get storyHome1Body => 'Skrini ya mwanzo inaonyesha kilicho muhimu leo: kinachoisha karibuni na idadi ya rekodi ulizo nazo.';
+
+  @override
+  String get storyHome2Title => 'Pata chochote';
+
+  @override
+  String get storyHome2Body => 'Gusa utafutaji kupata rekodi kwa jina, kundi au mtu.';
+
+  @override
+  String get storyHome3Title => 'Safari na mipango';
+
+  @override
+  String get storyHome3Body => 'Safari unazopanga na mipango ya matukio ya maisha inayoendelea huonekana hapa, pamoja na kilichobaki.';
+
+  @override
+  String get storyHome4Title => 'Msaada kwa mguso mmoja';
+
+  @override
+  String get storyHome4Body => 'Kitufe cha cheche hufungua «Uliza Vaultara». Picha yako hufungua wasifu, mipangilio na mafunzo.';
+
+  @override
+  String get storyRenew1Title => 'Kikumbusho kinafika';
+
+  @override
+  String get storyRenew1Body => 'Kabla rekodi haijaisha, Vaultara inakukumbusha. Gusa kikumbusho kufungua rekodi.';
+
+  @override
+  String get storyRenew2Title => 'Hifadhi tarehe mpya';
+
+  @override
+  String get storyRenew2Body => 'Umehuisha? Gusa «Huisha» na uweke tarehe mpya ya kuisha. Vikumbusho vinasogea pamoja nayo.';
+
+  @override
+  String get storyRenew3Title => 'Huna uhakika vipi?';
+
+  @override
+  String get storyRenew3Body => 'Rekodi nyingi zina mwongozo wenye hatua, hati na gharama ya kawaida.';
+
+  @override
+  String get storyRenew4Title => 'Iache ijirudie';
+
+  @override
+  String get storyRenew4Body => 'Kwa usajili na malipo ya kila mwaka, washa kurudia na tarehe itasonga yenyewe.';
+
+  @override
+  String get storyAsk1Title => 'Uliza kwa maneno yako';
+
+  @override
+  String get storyAsk1Body => 'Uliza mambo kama «Nini kinaisha mwaka huu?» na upate majibu kutoka rekodi zako.';
+
+  @override
+  String get storyAsk2Title => 'Zungumza badala ya kuandika';
+
+  @override
+  String get storyAsk2Body => 'Gusa maikrofoni uzungumze. Maneno yanaonekana unapozungumza na unaweza kutuma mara moja.';
+
+  @override
+  String get storyAsk3Title => 'Unathibitisha kila badiliko';
+
+  @override
+  String get storyAsk3Body => 'Omba kuongeza au kubadilisha rekodi na utaona kadi kwanza. Hakuna kinachohifadhiwa hadi uthibitishe.';
+
+  @override
+  String get storyAsk4Title => 'Tendua badiliko lolote';
+
+  @override
+  String get storyAsk4Body => 'Umebadili nia? Kila badiliko lililothibitishwa linaweza kutenduliwa kutoka kadi ileile.';
+
+  @override
+  String get storyAsk5Title => 'Endelea ulipoishia';
+
+  @override
+  String get storyAsk5Body => 'Gumzo huhifadhiwa siku 90 kwenye «Historia ya mazungumzo», na maswali yaliyopendekezwa hukusaidia kuanza.';
+
+  @override
+  String get storyWallet1Title => 'Jiandae kwanza';
+
+  @override
+  String get storyWallet1Body => 'Fungua kadi au hati na uchague unapoiweka, kama pochi au mkoba wako.';
+
+  @override
+  String get storyWallet2Title => 'Hifadhi nambari ya kuzuia';
+
+  @override
+  String get storyWallet2Body => 'Ongeza sasa nambari ya kuzuia ya kila benki. Iko kwenye kadi, ambayo hutakuwa nayo utakapoihitaji.';
+
+  @override
+  String get storyWallet3Title => 'Ikipotea';
+
+  @override
+  String get storyWallet3Body => 'Fungua «Nimepoteza pochi yangu» na ugusa «Imepotea» au «Imeibiwa». Vaultara inaorodhesha kila kilichokuwemo.';
+
+  @override
+  String get storyWallet4Title => 'Zuia kadi ndani ya dakika';
+
+  @override
+  String get storyWallet4Body => 'Piga simu kila benki kwa mguso mmoja, weka alama kadi kuwa zimezuiwa na hifadhi nambari ya ripoti.';
+
+  @override
+  String get storyWallet5Title => 'Badilisha na ubaki salama';
+
+  @override
+  String get storyWallet5Body => 'Badilisha hati zako, kagua taarifa za akaunti unapokumbushwa na ugusa «Nimeipata» ikipatikana.';
+
+  @override
+  String get storyLife1Title => 'Nyakati kubwa, mpango mmoja';
+
+  @override
+  String get storyLife1Body => 'Kuhama, mtoto, kazi mpya au dharura: chagua kwenye «Matukio ya maisha» kinachotokea.';
+
+  @override
+  String get storyLife2Title => 'Rekodi zako, zimepangwa';
+
+  @override
+  String get storyLife2Body => 'Mpango unaonyesha rekodi za kusasisha, kughairi au kuhuisha, na zipi huenda ukahitaji kuongeza.';
+
+  @override
+  String get storyLife3Title => 'Hatua na tarehe';
+
+  @override
+  String get storyLife3Body => 'Hatua hushughulikia kisicho rekodi, na tarehe za kuanza hukuambia lini kuomba ili kisichelewe chochote.';
+
+  @override
+  String get storyLife4Title => 'Ifanye yako';
+
+  @override
+  String get storyLife4Body => 'Ongeza hatua zako, shiriki mpango kama PDF na upate vikumbusho karibu na tarehe.';
+
+  @override
+  String get storyPhotos1Title => 'Picha za hati zako';
+
+  @override
+  String get storyPhotos1Body => 'Kutoka kwenye rekodi, ongeza picha za mbele na nyuma ya kadi au hati.';
+
+  @override
+  String get storyPhotos2Title => 'Zimesimbwa kwenye simu yako';
+
+  @override
+  String get storyPhotos2Body => 'Washa usimbaji fiche wa picha na zinafungwa kwenye simu kabla ya kupakiwa.';
+
+  @override
+  String get storyPhotos3Title => 'Funga rekodi nyeti';
+
+  @override
+  String get storyPhotos3Body => 'Funga rekodi na itaomba alama ya kidole au kufuli ya skrini kabla ya kufunguka.';
+
+  @override
+  String get storyPhotos4Title => 'Funga programu nzima';
+
+  @override
+  String get storyPhotos4Body => 'Katika mipangilio ya usalama, washa kufuli ya programu na ufiche maudhui unapobadilisha programu.';
+
+  @override
+  String get storyShare1Title => 'Shiriki rekodi moja';
+
+  @override
+  String get storyShare1Body => 'Fungua rekodi na ushiriki kiungo kinachoonyesha rekodi hiyo pekee, si kingine.';
+
+  @override
+  String get storyShare2Title => 'Kifurushi cha uthibitisho';
+
+  @override
+  String get storyShare2Body => 'Weka rekodi unazochagua, pamoja na picha zake, katika PDF moja kwa mwenye nyumba, benki au ofisi.';
+
+  @override
+  String get storyShare3Title => 'Baki na udhibiti';
+
+  @override
+  String get storyShare3Body => '«Viungo vilivyoshirikiwa» inaonyesha kila kiungo ulichotengeneza. Simamisha chochote wakati wowote na hakitafunguka tena.';
+
+  @override
+  String get storyHousehold1Title => 'Alika kaya yako';
+
+  @override
+  String get storyHousehold1Body => 'Shiriki msimbo au kiungo cha mwaliko. Kila mtu huingia kwa akaunti yake.';
+
+  @override
+  String get storyHousehold2Title => 'Seti moja ya rekodi';
+
+  @override
+  String get storyHousehold2Body => 'Kila mtu huona rekodi zilezile za pamoja na hupata vikumbusho vilevile.';
+
+  @override
+  String get storyHousehold3Title => 'Ni ya nani?';
+
+  @override
+  String get storyHousehold3Body => 'Kila rekodi inaweza kuwa ya mtu fulani. Jina lake linaonekana juu yake na kwenye vikumbusho.';
+
+  @override
+  String get storyImport1Title => 'Changanua kadi';
+
+  @override
+  String get storyImport1Body => 'Piga picha ya kadi au hati na Vaultara itajaza jina na tarehe ya kuisha kwa ajili yako.';
+
+  @override
+  String get storyImport2Title => 'Leta orodha';
+
+  @override
+  String get storyImport2Body => 'Tayari una lahajedwali? Ilete na ukague kila safu kabla kitu chochote hakijahifadhiwa.';
+
+  @override
+  String get storyImport3Title => 'Shiriki kwa Vaultara';
+
+  @override
+  String get storyImport3Body => 'Shiriki picha, PDF au maandishi kutoka programu nyingine kwa Vaultara kuanzisha rekodi mpya.';
+
+  @override
+  String get storyCosts1Title => 'Kwenye kalenda yako';
+
+  @override
+  String get storyCosts1Body => 'Ongeza tarehe za kuisha kwenye kalenda ya simu, kando ya mipango yako mingine.';
+
+  @override
+  String get storyCosts2Title => 'Gharama za kuhuisha';
+
+  @override
+  String get storyCosts2Body => 'Weka gharama ya kuhuisha kwenye rekodi na Vaultara inaonyesha unachotumia kwa mwaka.';
+
+  @override
+  String get storyCosts3Title => 'Panga mapema';
+
+  @override
+  String get storyCosts3Body => 'Ona miezi ya gharama ikija ili kuhuisha kukubwa kusikushangaze kamwe.';
+
+  @override
+  String get storyBusiness1Title => 'Fuatilia timu yako';
+
+  @override
+  String get storyBusiness1Body => 'Ongeza wafanyakazi na uweke vyeti, vibali na leseni zao mahali pamoja.';
+
+  @override
+  String get storyBusiness2Title => 'Vikumbusho kwa barua pepe';
+
+  @override
+  String get storyBusiness2Body => 'Wafanyakazi hupata barua pepe kabla hati zao hazijaisha, hata bila programu.';
+
+  @override
+  String get storyBusiness3Title => 'Ripoti ya mwezi';
+
+  @override
+  String get storyBusiness3Body => 'Kila mwezi ripoti inaonyesha kilicho halali, kinachoisha na kinachokosekana.';
+
+  @override
+  String get storyBusiness4Title => 'Omba usasishaji';
+
+  @override
+  String get storyBusiness4Body => 'Tuma kiungo na mfanyakazi anapakia mwenyewe hati iliyohuishwa.';
 }

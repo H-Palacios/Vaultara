@@ -7573,4 +7573,439 @@ class AppLocalizationsRo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Ecranul tău principal';
+
+  @override
+  String get tutorialsSubHome => 'Ce înseamnă cardurile și unde găsești totul';
+
+  @override
+  String get tutorialsTitleRenew => 'Reînnoirea unei înregistrări';
+
+  @override
+  String get tutorialsSubRenew => 'Ce faci când primești un memento';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Calendar și costuri';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Datele de expirare în calendar și cât costă reînnoirile';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotografii și securitate';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Fotografii ale documentelor, criptare și blocări';
+
+  @override
+  String get tutorialsTitleSharing => 'Partajare în siguranță';
+
+  @override
+  String get tutorialsSubSharing => 'Partajează o înregistrare, creează un pachet, oprește un link';
+
+  @override
+  String get tutorialsTitleImportScan => 'Scanare și import';
+
+  @override
+  String get tutorialsSubImportScan => 'Adaugă rapid multe înregistrări';
+
+  @override
+  String get tutorialsTitleHousehold => 'Gospodărie comună';
+
+  @override
+  String get tutorialsSubHousehold => 'Invită-i pe alții să partajeze înregistrări și mementouri';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Mi-am pierdut portofelul';
+
+  @override
+  String get tutorialsSubLostWallet => 'Pregătește-te acum și acționează rapid dacă se pierde';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Evenimente din viață';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Un plan pentru mutare, un copil, un job nou și altele';
+
+  @override
+  String get tutorialsTitleAsk => 'Întreabă Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Scrie sau vorbește cu înregistrările tale';
+
+  @override
+  String get tutorialsTitleBusiness => 'Instrumente Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Documente ale angajaților, mementouri și rapoarte';
+
+  @override
+  String get tutorialsGroupBasics => 'Elementele de bază';
+
+  @override
+  String get tutorialsGroupOnTop => 'Ține totul sub control';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Călătorii și familie';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Evenimente de viață și urgențe';
+
+  @override
+  String get tutorialsGroupPaid => 'Funcții plătite';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de pași',
+      few: '$count pași',
+      one: '$count pas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Abonamente plătite';
+
+  @override
+  String get tutorialsPaidNote => 'Poți vedea asta cu orice abonament. Funcția în sine necesită un abonament plătit.';
+
+  @override
+  String get tutorialsBack => 'Înapoi';
+
+  @override
+  String get tutorialsTryIt => 'Încearcă acum';
+
+  @override
+  String get tutorialHintText => 'Ești nou aici? Fă turul rapid';
+
+  @override
+  String get tutorialHintPlay => 'Arată-mi';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Capitolul $number din $total';
+  }
+
+  @override
+  String get tourContinue => 'Continuă';
+
+  @override
+  String get tourSkip => 'Omite';
+
+  @override
+  String get tourSkipped => 'Omis';
+
+  @override
+  String get tourDone => 'Ai văzut tot turul';
+
+  @override
+  String get tourRestart => 'Ia-o de la capăt';
+
+  @override
+  String get whatsNewBadge => 'Nou';
+
+  @override
+  String get whatsNewTitle => 'Mi-am pierdut portofelul';
+
+  @override
+  String get whatsNewBody => 'Salvează unde ții cardurile și numărul de blocare al fiecărei bănci. Dacă pierzi portofelul, blochezi totul în câteva minute.';
+
+  @override
+  String get whatsNewDismiss => 'Am înțeles';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Mai multe detalii conține extrasele: note, repetare, timp de reînnoire, al cui este, unde îl ții, blocare și fotografii. Deschide-l doar când ai nevoie.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Blochează o înregistrare ca să ceară amprenta sau blocarea ecranului înainte de afișare. Alege unde o ții, de pildă în portofel, și adaugă fotografii ale documentului.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Ai pierdut portofelul? Vezi tot ce era în el, sună fiecare bancă cu o atingere și urmează pașii pentru rest.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Mutare, un copil, un job nou sau o urgență? Evenimentele de viață îți dau un plan cu înregistrările, pașii și datele tale.';
+
+  @override
+  String get storySampleQuestion => 'Ce expiră anul acesta?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name expiră în martie. Vrei un memento cu o lună înainte?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name expiră în 30 de zile. Atinge pentru reînnoire.';
+  }
+
+  @override
+  String get storySampleGym => 'Abonament la sală';
+
+  @override
+  String get storySampleFirstAid => 'Certificat de prim ajutor';
+
+  @override
+  String get storySampleEncrypt => 'Criptează fotografiile';
+
+  @override
+  String get storySampleAppLock => 'Blocarea aplicației';
+
+  @override
+  String get storySampleHideApp => 'Ascunde conținutul în comutatorul de aplicații';
+
+  @override
+  String get storyHome1Title => 'Ziua ta dintr-o privire';
+
+  @override
+  String get storyHome1Body => 'Ecranul principal arată ce contează azi: ce expiră curând și câte înregistrări ai.';
+
+  @override
+  String get storyHome2Title => 'Găsește orice';
+
+  @override
+  String get storyHome2Body => 'Atinge căutarea pentru a găsi o înregistrare după nume, grup sau persoană.';
+
+  @override
+  String get storyHome3Title => 'Călătorii și planuri';
+
+  @override
+  String get storyHome3Body => 'Aici apar călătoriile pe care le planifici și planurile de evenimente de viață în curs, cu ce a mai rămas.';
+
+  @override
+  String get storyHome4Title => 'Ajutor dintr-o atingere';
+
+  @override
+  String get storyHome4Body => 'Butonul cu scânteie deschide „Întreabă Vaultara”. Fotografia ta deschide profilul, setările și tutorialele.';
+
+  @override
+  String get storyRenew1Title => 'Sosește un memento';
+
+  @override
+  String get storyRenew1Body => 'Înainte să expire o înregistrare, Vaultara îți amintește. Atinge mementoul ca să deschizi înregistrarea.';
+
+  @override
+  String get storyRenew2Title => 'Salvează data nouă';
+
+  @override
+  String get storyRenew2Body => 'Ai reînnoit? Atinge „Reînnoiește” și introdu noua dată de expirare. Mementourile se mută odată cu ea.';
+
+  @override
+  String get storyRenew3Title => 'Nu știi cum?';
+
+  @override
+  String get storyRenew3Body => 'Multe înregistrări au un ghid cu pașii, documentele și costul obișnuit.';
+
+  @override
+  String get storyRenew4Title => 'Las-o să se repete';
+
+  @override
+  String get storyRenew4Body => 'Pentru abonamente și plăți anuale, activează repetarea și data avansează singură.';
+
+  @override
+  String get storyAsk1Title => 'Întreabă cu cuvintele tale';
+
+  @override
+  String get storyAsk1Body => 'Întreabă de exemplu „Ce expiră anul acesta?” și primește răspunsuri din înregistrările tale.';
+
+  @override
+  String get storyAsk2Title => 'Vorbește în loc să scrii';
+
+  @override
+  String get storyAsk2Body => 'Atinge microfonul și vorbește. Cuvintele apar pe măsură ce vorbești și poți trimite imediat.';
+
+  @override
+  String get storyAsk3Title => 'Tu confirmi fiecare schimbare';
+
+  @override
+  String get storyAsk3Body => 'Cere să adaugi sau să modifici o înregistrare și vei vedea mai întâi un card. Nimic nu se salvează până nu confirmi.';
+
+  @override
+  String get storyAsk4Title => 'Anulează orice schimbare';
+
+  @override
+  String get storyAsk4Body => 'Te-ai răzgândit? Orice schimbare confirmată poate fi anulată din același card.';
+
+  @override
+  String get storyAsk5Title => 'Continuă de unde ai rămas';
+
+  @override
+  String get storyAsk5Body => 'Conversațiile se păstrează 90 de zile în „Istoricul conversațiilor”, iar întrebările sugerate te ajută să începi.';
+
+  @override
+  String get storyWallet1Title => 'Pregătește-te întâi';
+
+  @override
+  String get storyWallet1Body => 'Deschide un card sau un document și alege unde îl ții, de pildă în portofel sau geantă.';
+
+  @override
+  String get storyWallet2Title => 'Salvează numărul de blocare';
+
+  @override
+  String get storyWallet2Body => 'Adaugă acum numărul de blocare al fiecărei bănci. E pe card, pe care nu-l vei avea când îți trebuie.';
+
+  @override
+  String get storyWallet3Title => 'Dacă se pierde';
+
+  @override
+  String get storyWallet3Body => 'Deschide „Mi-am pierdut portofelul” și atinge „Pierdut” sau „Furat”. Vaultara listează tot ce era în el.';
+
+  @override
+  String get storyWallet4Title => 'Blochează cardurile în câteva minute';
+
+  @override
+  String get storyWallet4Body => 'Sună fiecare bancă cu o atingere, marchează cardurile ca blocate și salvează numărul plângerii.';
+
+  @override
+  String get storyWallet5Title => 'Înlocuiește și fii în siguranță';
+
+  @override
+  String get storyWallet5Body => 'Înlocuiește documentele, verifică extrasele când ți se amintește și atinge „L-am găsit” dacă apare.';
+
+  @override
+  String get storyLife1Title => 'Momente mari, un singur plan';
+
+  @override
+  String get storyLife1Body => 'Mutare, un copil, un job nou sau o urgență: alege în „Evenimente din viață” ce se întâmplă.';
+
+  @override
+  String get storyLife2Title => 'Înregistrările tale, în ordine';
+
+  @override
+  String get storyLife2Body => 'Planul arată ce înregistrări să actualizezi, anulezi sau reînnoiești și pe care poate trebuie să le adaugi.';
+
+  @override
+  String get storyLife3Title => 'Pași și date';
+
+  @override
+  String get storyLife3Body => 'Pașii acoperă ce nu e o înregistrare, iar datele de început îți spun când să aplici ca nimic să nu întârzie.';
+
+  @override
+  String get storyLife4Title => 'Fă-l al tău';
+
+  @override
+  String get storyLife4Body => 'Adaugă pași proprii, partajează planul ca PDF și primește mementouri în jurul datei.';
+
+  @override
+  String get storyPhotos1Title => 'Fotografii ale documentelor';
+
+  @override
+  String get storyPhotos1Body => 'Din înregistrare, adaugă fotografii cu fața și spatele unui card sau document.';
+
+  @override
+  String get storyPhotos2Title => 'Criptate pe telefon';
+
+  @override
+  String get storyPhotos2Body => 'Activează criptarea fotografiilor și ele sunt blocate pe telefon înainte de încărcare.';
+
+  @override
+  String get storyPhotos3Title => 'Blochează înregistrările sensibile';
+
+  @override
+  String get storyPhotos3Body => 'Blochează o înregistrare și îți va cere amprenta sau blocarea ecranului înainte să se deschidă.';
+
+  @override
+  String get storyPhotos4Title => 'Blochează toată aplicația';
+
+  @override
+  String get storyPhotos4Body => 'În setările de securitate, activează blocarea aplicației și ascunde conținutul când schimbi aplicația.';
+
+  @override
+  String get storyShare1Title => 'Partajează o înregistrare';
+
+  @override
+  String get storyShare1Body => 'Deschide o înregistrare și partajează un link care arată doar acea înregistrare, nimic altceva.';
+
+  @override
+  String get storyShare2Title => 'Pachet de dovezi';
+
+  @override
+  String get storyShare2Body => 'Pune înregistrările alese, cu fotografiile lor, într-un singur PDF pentru un proprietar, o bancă sau o instituție.';
+
+  @override
+  String get storyShare3Title => 'Păstrează controlul';
+
+  @override
+  String get storyShare3Body => '„Linkuri partajate” arată fiecare link creat. Oprește oricare oricând și nu se mai deschide.';
+
+  @override
+  String get storyHousehold1Title => 'Invită-ți gospodăria';
+
+  @override
+  String get storyHousehold1Body => 'Partajează un cod sau un link de invitație. Fiecare se conectează cu propriul cont.';
+
+  @override
+  String get storyHousehold2Title => 'Un singur set de înregistrări';
+
+  @override
+  String get storyHousehold2Body => 'Toată lumea vede aceleași înregistrări comune și primește aceleași mementouri.';
+
+  @override
+  String get storyHousehold3Title => 'Al cui este?';
+
+  @override
+  String get storyHousehold3Body => 'Fiecare înregistrare poate aparține cuiva. Numele apare pe ea și în mementouri.';
+
+  @override
+  String get storyImport1Title => 'Scanează un card';
+
+  @override
+  String get storyImport1Body => 'Fotografiază un card sau un document și Vaultara completează numele și data de expirare.';
+
+  @override
+  String get storyImport2Title => 'Importă o listă';
+
+  @override
+  String get storyImport2Body => 'Ai deja un tabel? Importă-l și verifică fiecare rând înainte să se salveze ceva.';
+
+  @override
+  String get storyImport3Title => 'Partajează în Vaultara';
+
+  @override
+  String get storyImport3Body => 'Partajează o fotografie, un PDF sau un text din altă aplicație în Vaultara ca să începi o înregistrare nouă.';
+
+  @override
+  String get storyCosts1Title => 'În calendarul tău';
+
+  @override
+  String get storyCosts1Body => 'Adaugă datele de expirare în calendarul telefonului, lângă celelalte planuri.';
+
+  @override
+  String get storyCosts2Title => 'Cât costă reînnoirile';
+
+  @override
+  String get storyCosts2Body => 'Introdu costul reînnoirii într-o înregistrare și Vaultara arată cât cheltuiești pe an.';
+
+  @override
+  String get storyCosts3Title => 'Planifică din timp';
+
+  @override
+  String get storyCosts3Body => 'Vezi lunile scumpe din timp, ca o reînnoire mare să nu te surprindă niciodată.';
+
+  @override
+  String get storyBusiness1Title => 'Urmărește-ți echipa';
+
+  @override
+  String get storyBusiness1Body => 'Adaugă angajați și păstrează-le certificatele, permisele și licențele într-un singur loc.';
+
+  @override
+  String get storyBusiness2Title => 'Mementouri pe e-mail';
+
+  @override
+  String get storyBusiness2Body => 'Angajații primesc e-mailuri înainte să le expire documentele, chiar și fără aplicație.';
+
+  @override
+  String get storyBusiness3Title => 'Raport lunar';
+
+  @override
+  String get storyBusiness3Body => 'În fiecare lună, un raport arată ce e valabil, ce expiră și ce lipsește.';
+
+  @override
+  String get storyBusiness4Title => 'Cere o actualizare';
+
+  @override
+  String get storyBusiness4Body => 'Trimite un link și angajatul încarcă singur documentul reînnoit.';
 }

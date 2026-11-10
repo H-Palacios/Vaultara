@@ -7676,4 +7676,441 @@ class AppLocalizationsGa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Do scáileán baile';
+
+  @override
+  String get tutorialsSubHome => 'Brí na gcártaí agus cá bhfuil gach rud';
+
+  @override
+  String get tutorialsTitleRenew => 'Taifead a athnuachan';
+
+  @override
+  String get tutorialsSubRenew => 'Cad atá le déanamh nuair a thagann meabhrúchán';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Féilire agus costais';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Dátaí éaga i d\'fhéilire agus costas na n-athnuachan';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Grianghraif agus slándáil';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Grianghraif doiciméad, criptiú agus glais';
+
+  @override
+  String get tutorialsTitleSharing => 'Comhroinn go sábháilte';
+
+  @override
+  String get tutorialsSubSharing => 'Taifead a chomhroinnt, pacáiste a dhéanamh, nasc a stopadh';
+
+  @override
+  String get tutorialsTitleImportScan => 'Scanadh agus iompórtáil';
+
+  @override
+  String get tutorialsSubImportScan => 'Cuir go leor taifead leis go tapa';
+
+  @override
+  String get tutorialsTitleHousehold => 'Teaghlach comhroinnte';
+
+  @override
+  String get tutorialsSubHousehold => 'Tabhair cuireadh do dhaoine eile taifid agus meabhrúcháin a chomhroinnt';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Chaill mé mo sparán';
+
+  @override
+  String get tutorialsSubLostWallet => 'Ullmhaigh anois, agus gníomhaigh go tapa má chailltear é';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Imeachtaí saoil';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plean d\'aistriú tí, leanbh, post nua agus níos mó';
+
+  @override
+  String get tutorialsTitleAsk => 'Fiafraigh de Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Déan comhrá nó labhair le do thaifid';
+
+  @override
+  String get tutorialsTitleBusiness => 'Uirlisí Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Doiciméid foirne, meabhrúcháin agus tuarascálacha';
+
+  @override
+  String get tutorialsGroupBasics => 'Na bunrudaí';
+
+  @override
+  String get tutorialsGroupOnTop => 'Fanacht ar an eolas';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Taisteal agus teaghlach';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Imeachtaí saoil agus éigeandálaí';
+
+  @override
+  String get tutorialsGroupPaid => 'Gnéithe íoctha';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count céim',
+      many: '$count gcéim',
+      few: '$count chéim',
+      two: '$count chéim',
+      one: '$count chéim',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Pleananna íoctha';
+
+  @override
+  String get tutorialsPaidNote => 'Is féidir é seo a fheiceáil le haon phlean. Teastaíonn plean íoctha don ghné féin.';
+
+  @override
+  String get tutorialsBack => 'Siar';
+
+  @override
+  String get tutorialsTryIt => 'Bain triail as anois';
+
+  @override
+  String get tutorialHintText => 'Nua anseo? Féach ar an turas gearr';
+
+  @override
+  String get tutorialHintPlay => 'Taispeáin dom';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Caibidil $number de $total';
+  }
+
+  @override
+  String get tourContinue => 'Lean ar aghaidh';
+
+  @override
+  String get tourSkip => 'Scipeáil';
+
+  @override
+  String get tourSkipped => 'Scipeáilte';
+
+  @override
+  String get tourDone => 'Chonaic tú an turas ar fad';
+
+  @override
+  String get tourRestart => 'Tosaigh arís';
+
+  @override
+  String get whatsNewBadge => 'Nua';
+
+  @override
+  String get whatsNewTitle => 'Chaill mé mo sparán';
+
+  @override
+  String get whatsNewBody => 'Sábháil cá gcoinníonn tú do chártaí agus uimhir bhlocála gach bainc. Má chailleann tú do sparán, blocálann tú gach rud i gceann nóiméad.';
+
+  @override
+  String get whatsNewDismiss => 'Tuigim';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Coinníonn Tuilleadh sonraí na breiseáin: nótaí, athdhéanamh, am athnuachana, cé leis é, cá gcoinníonn tú é, glas agus grianghraif. Ná hoscail é ach nuair is gá.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Cuir glas ar thaifead ionas go n-iarrfaidh sé méarlorg nó glas scáileáin sula dtaispeántar é. Roghnaigh cá gcoinníonn tú é, mar shampla i do sparán, agus cuir grianghraif den doiciméad leis.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Sparán caillte? Féach ar gach a raibh ann, cuir glao ar gach banc le haon tapáil agus lean na céimeanna don chuid eile.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Aistriú tí, leanbh, post nua nó éigeandáil? Tugann Imeachtaí saoil plean duit le do thaifid, céimeanna agus dátaí.';
+
+  @override
+  String get storySampleQuestion => 'Cad a rachaidh in éag i mbliana?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Rachaidh do $name in éag i mí an Mhárta. An bhfuil meabhrúchán uait mí roimh ré?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'Rachaidh $name in éag i gceann 30 lá. Tapáil chun athnuachan.';
+  }
+
+  @override
+  String get storySampleGym => 'Ballraíocht giomnáisiam';
+
+  @override
+  String get storySampleFirstAid => 'Teastas garchabhrach';
+
+  @override
+  String get storySampleEncrypt => 'Criptigh grianghraif';
+
+  @override
+  String get storySampleAppLock => 'Glas aipe';
+
+  @override
+  String get storySampleHideApp => 'Folaigh an t-ábhar sa mhalartóir aipeanna';
+
+  @override
+  String get storyHome1Title => 'Do lá ar sracfhéachaint';
+
+  @override
+  String get storyHome1Body => 'Taispeánann an scáileán baile an rud atá tábhachtach inniu: cad a rachaidh in éag go luath agus cé mhéad taifead atá agat.';
+
+  @override
+  String get storyHome2Title => 'Aimsigh gach rud';
+
+  @override
+  String get storyHome2Body => 'Tapáil cuardach chun taifead a aimsiú de réir ainm, grúpa nó duine.';
+
+  @override
+  String get storyHome3Title => 'Turais agus pleananna';
+
+  @override
+  String get storyHome3Body => 'Taispeántar anseo turais atá á bpleanáil agat agus pleananna imeachtaí saoil ar siúl, leis an méid atá fágtha.';
+
+  @override
+  String get storyHome4Title => 'Cabhair le haon tapáil';
+
+  @override
+  String get storyHome4Body => 'Osclaíonn an cnaipe spréiche «Fiafraigh de Vaultara». Osclaíonn do ghrianghraf do phróifíl, socruithe agus ranganna teagaisc.';
+
+  @override
+  String get storyRenew1Title => 'Tagann meabhrúchán';
+
+  @override
+  String get storyRenew1Body => 'Sula rachaidh taifead in éag, cuireann Vaultara i gcuimhne duit é. Tapáil an meabhrúchán chun an taifead a oscailt.';
+
+  @override
+  String get storyRenew2Title => 'Sábháil an dáta nua';
+
+  @override
+  String get storyRenew2Body => 'Athnuaite? Tapáil «Athnuaigh» agus cuir isteach an dáta éaga nua. Bogann do mheabhrúcháin leis.';
+
+  @override
+  String get storyRenew3Title => 'Níl tú cinnte conas?';
+
+  @override
+  String get storyRenew3Body => 'Tá treoir ag go leor taifead leis na céimeanna, na doiciméid agus an costas is gnách.';
+
+  @override
+  String get storyRenew4Title => 'Lig dó athdhéanamh';
+
+  @override
+  String get storyRenew4Body => 'Do shíntiúis agus íocaíochtaí bliantúla, cas air athdhéanamh agus bogann an dáta ar aghaidh leis féin.';
+
+  @override
+  String get storyAsk1Title => 'Fiafraigh i d\'fhocail féin';
+
+  @override
+  String get storyAsk1Body => 'Fiafraigh rudaí mar «Cad a rachaidh in éag i mbliana?» agus faigh freagraí ó do thaifid féin.';
+
+  @override
+  String get storyAsk2Title => 'Labhair in áit clóscríobh';
+
+  @override
+  String get storyAsk2Body => 'Tapáil an micreafón agus labhair. Feictear d\'fhocail fad a labhraíonn tú agus is féidir leat seoladh láithreach.';
+
+  @override
+  String get storyAsk3Title => 'Deimhníonn tusa gach athrú';
+
+  @override
+  String get storyAsk3Body => 'Iarr taifead a chur leis nó a athrú agus feicfidh tú cárta ar dtús. Ní shábháiltear aon rud go dtí go ndeimhníonn tú.';
+
+  @override
+  String get storyAsk4Title => 'Cealaigh aon athrú';
+
+  @override
+  String get storyAsk4Body => 'Athraigh tú d\'intinn? Is féidir aon athrú deimhnithe a chealú ón gcárta céanna.';
+
+  @override
+  String get storyAsk5Title => 'Lean ar aghaidh ón áit ar stop tú';
+
+  @override
+  String get storyAsk5Body => 'Coinnítear comhráite ar feadh 90 lá in «Stair comhráite», agus cabhraíonn ceisteanna molta leat tosú.';
+
+  @override
+  String get storyWallet1Title => 'Ullmhaigh ar dtús';
+
+  @override
+  String get storyWallet1Body => 'Oscail cárta nó doiciméad agus roghnaigh cá gcoinníonn tú é, mar shampla i do sparán nó i do mhála.';
+
+  @override
+  String get storyWallet2Title => 'Sábháil an uimhir bhlocála';
+
+  @override
+  String get storyWallet2Body => 'Cuir uimhir bhlocála gach bainc leis anois. Tá sí ar an gcárta, agus ní bheidh sé agat nuair a bheidh sí uait.';
+
+  @override
+  String get storyWallet3Title => 'Má chailltear é';
+
+  @override
+  String get storyWallet3Body => 'Oscail «Chaill mé mo sparán» agus tapáil «Caillte» nó «Goidte». Liostaíonn Vaultara gach a raibh ann.';
+
+  @override
+  String get storyWallet4Title => 'Blocáil cártaí i gceann nóiméad';
+
+  @override
+  String get storyWallet4Body => 'Cuir glao ar gach banc le haon tapáil, marcáil cártaí mar bhlocáilte agus sábháil uimhir na tuairisce.';
+
+  @override
+  String get storyWallet5Title => 'Athsholáthair agus fan slán';
+
+  @override
+  String get storyWallet5Body => 'Athsholáthair do dhoiciméid, seiceáil do ráitis nuair a chuirtear i gcuimhne duit agus tapáil «D\'aimsigh mé é» má thagann sé chun solais.';
+
+  @override
+  String get storyLife1Title => 'Móimintí móra, plean amháin';
+
+  @override
+  String get storyLife1Body => 'Aistriú tí, leanbh, post nua nó éigeandáil: roghnaigh in «Imeachtaí saoil» cad atá ag tarlú.';
+
+  @override
+  String get storyLife2Title => 'Do thaifid in ord';
+
+  @override
+  String get storyLife2Body => 'Taispeánann an plean cé na taifid le nuashonrú, cealú nó athnuachan, agus cé na cinn b\'fhéidir le cur leis.';
+
+  @override
+  String get storyLife3Title => 'Céimeanna agus dátaí';
+
+  @override
+  String get storyLife3Body => 'Clúdaíonn céimeanna an rud nach taifead é, agus insíonn dátaí tosaigh duit cathain iarratas a dhéanamh ionas nach mbeidh aon rud déanach.';
+
+  @override
+  String get storyLife4Title => 'Déan do chuid féin de';
+
+  @override
+  String get storyLife4Body => 'Cuir do chéimeanna féin leis, comhroinn an plean mar PDF agus faigh meabhrúcháin timpeall an dáta.';
+
+  @override
+  String get storyPhotos1Title => 'Grianghraif de do dhoiciméid';
+
+  @override
+  String get storyPhotos1Body => 'Ón taifead, cuir grianghraif d\'aghaidh agus de chúl cárta nó doiciméid leis.';
+
+  @override
+  String get storyPhotos2Title => 'Criptithe ar do ghuthán';
+
+  @override
+  String get storyPhotos2Body => 'Cas air criptiú grianghraf agus cuirtear glas orthu ar do ghuthán sula n-uaslódáiltear iad.';
+
+  @override
+  String get storyPhotos3Title => 'Cuir glas ar thaifid íogaire';
+
+  @override
+  String get storyPhotos3Body => 'Cuir glas ar thaifead agus iarrfaidh sé méarlorg nó glas scáileáin sula n-osclaíonn sé.';
+
+  @override
+  String get storyPhotos4Title => 'Cuir glas ar an aip ar fad';
+
+  @override
+  String get storyPhotos4Body => 'I socruithe slándála, cas air glas aipe agus folaigh an t-ábhar nuair a athraíonn tú aip.';
+
+  @override
+  String get storyShare1Title => 'Comhroinn taifead amháin';
+
+  @override
+  String get storyShare1Body => 'Oscail taifead agus comhroinn nasc nach dtaispeánann ach an taifead sin, rud ar bith eile.';
+
+  @override
+  String get storyShare2Title => 'Paca cruthúnais';
+
+  @override
+  String get storyShare2Body => 'Cuir na taifid a roghnaíonn tú, lena ngrianghraif, in aon PDF amháin do thiarna talún, banc nó oifig.';
+
+  @override
+  String get storyShare3Title => 'Coinnigh smacht';
+
+  @override
+  String get storyShare3Body => 'Taispeánann «Naisc roinnte» gach nasc a rinne tú. Stop aon cheann am ar bith agus ní osclóidh sé a thuilleadh.';
+
+  @override
+  String get storyHousehold1Title => 'Tabhair cuireadh do do theaghlach';
+
+  @override
+  String get storyHousehold1Body => 'Comhroinn cód nó nasc cuiridh. Síníonn gach duine isteach lena chuntas féin.';
+
+  @override
+  String get storyHousehold2Title => 'Sraith amháin taifead';
+
+  @override
+  String get storyHousehold2Body => 'Feiceann gach duine na taifid chomhroinnte chéanna agus faigheann siad na meabhrúcháin chéanna.';
+
+  @override
+  String get storyHousehold3Title => 'Cé leis é?';
+
+  @override
+  String get storyHousehold3Body => 'Is féidir le gach taifead a bheith ag duine. Taispeántar a ainm air agus ina mheabhrúcháin.';
+
+  @override
+  String get storyImport1Title => 'Scanáil cárta';
+
+  @override
+  String get storyImport1Body => 'Glac grianghraf de chárta nó de dhoiciméad agus líonann Vaultara an t-ainm agus an dáta éaga duit.';
+
+  @override
+  String get storyImport2Title => 'Iompórtáil liosta';
+
+  @override
+  String get storyImport2Body => 'An bhfuil scarbhileog agat cheana? Iompórtáil í agus seiceáil gach ró sula sábháiltear aon rud.';
+
+  @override
+  String get storyImport3Title => 'Comhroinn le Vaultara';
+
+  @override
+  String get storyImport3Body => 'Comhroinn grianghraf, PDF nó téacs ó aip eile le Vaultara chun taifead nua a thosú.';
+
+  @override
+  String get storyCosts1Title => 'I d\'fhéilire';
+
+  @override
+  String get storyCosts1Body => 'Cuir dátaí éaga le féilire do ghutháin, in aice le do phleananna eile.';
+
+  @override
+  String get storyCosts2Title => 'Costas na n-athnuachan';
+
+  @override
+  String get storyCosts2Body => 'Cuir costas athnuachana ar thaifead agus taispeánann Vaultara a gcaitheann tú in aghaidh na bliana.';
+
+  @override
+  String get storyCosts3Title => 'Pleanáil roimh ré';
+
+  @override
+  String get storyCosts3Body => 'Feic na míonna costasacha ag teacht ionas nach gcuirfidh athnuachan mhór iontas ort choíche.';
+
+  @override
+  String get storyBusiness1Title => 'Lean d\'fhoireann';
+
+  @override
+  String get storyBusiness1Body => 'Cuir baill foirne leis agus coinnigh a dteastais, a gceadanna agus a gceadúnais in aon áit amháin.';
+
+  @override
+  String get storyBusiness2Title => 'Meabhrúcháin ríomhphoist';
+
+  @override
+  String get storyBusiness2Body => 'Faigheann an fhoireann ríomhphoist sula rachaidh a ndoiciméid in éag, fiú gan an aip.';
+
+  @override
+  String get storyBusiness3Title => 'Tuarascáil mhíosúil';
+
+  @override
+  String get storyBusiness3Body => 'Gach mí, taispeánann tuarascáil cad atá bailí, cad atá ag dul in éag agus cad atá in easnamh.';
+
+  @override
+  String get storyBusiness4Title => 'Iarr nuashonrú';
+
+  @override
+  String get storyBusiness4Body => 'Seol nasc agus uaslódálann an ball foirne an doiciméad athnuaite é féin.';
 }

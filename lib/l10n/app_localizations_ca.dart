@@ -7496,4 +7496,438 @@ class AppLocalizationsCa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'La teva pantalla d\'inici';
+
+  @override
+  String get tutorialsSubHome => 'Què volen dir les targetes i on és tot';
+
+  @override
+  String get tutorialsTitleRenew => 'Renovar un registre';
+
+  @override
+  String get tutorialsSubRenew => 'Què fer quan arriba un recordatori';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Calendari i costos';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Les dates de caducitat al calendari i el que costen les renovacions';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotos i seguretat';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Fotos de documents, xifratge i bloquejos';
+
+  @override
+  String get tutorialsTitleSharing => 'Compartir amb seguretat';
+
+  @override
+  String get tutorialsSubSharing => 'Compartir un registre, fer un paquet, aturar un enllaç';
+
+  @override
+  String get tutorialsTitleImportScan => 'Escanejar i importar';
+
+  @override
+  String get tutorialsSubImportScan => 'Afegir molts registres ràpidament';
+
+  @override
+  String get tutorialsTitleHousehold => 'Llar compartida';
+
+  @override
+  String get tutorialsSubHousehold => 'Convida altres persones a compartir registres i recordatoris';
+
+  @override
+  String get tutorialsTitleLostWallet => 'He perdut la cartera';
+
+  @override
+  String get tutorialsSubLostWallet => 'Prepara\'t ara i actua de pressa si es perd';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Esdeveniments vitals';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Un pla per a una mudança, un nadó, una feina nova i més';
+
+  @override
+  String get tutorialsTitleAsk => 'Pregunta a Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Xateja o parla amb els teus registres';
+
+  @override
+  String get tutorialsTitleBusiness => 'Eines Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Documents del personal, recordatoris i informes';
+
+  @override
+  String get tutorialsGroupBasics => 'El bàsic';
+
+  @override
+  String get tutorialsGroupOnTop => 'Estar al dia';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Viatges i família';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Esdeveniments vitals i emergències';
+
+  @override
+  String get tutorialsGroupPaid => 'Funcions de pagament';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count passos',
+      one: '1 pas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Plans de pagament';
+
+  @override
+  String get tutorialsPaidNote => 'Pots veure-ho amb qualsevol pla. Fer servir la funció requereix un pla de pagament.';
+
+  @override
+  String get tutorialsBack => 'Enrere';
+
+  @override
+  String get tutorialsTryIt => 'Prova-ho ara';
+
+  @override
+  String get tutorialHintText => 'Ets nou? Fes el recorregut ràpid';
+
+  @override
+  String get tutorialHintPlay => 'Mostra-m\'ho';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Capítol $number de $total';
+  }
+
+  @override
+  String get tourContinue => 'Continua';
+
+  @override
+  String get tourSkip => 'Omet';
+
+  @override
+  String get tourSkipped => 'Omès';
+
+  @override
+  String get tourDone => 'Has vist tot el recorregut';
+
+  @override
+  String get tourRestart => 'Torna a començar';
+
+  @override
+  String get whatsNewBadge => 'Nou';
+
+  @override
+  String get whatsNewTitle => 'He perdut la cartera';
+
+  @override
+  String get whatsNewBody => 'Desa on guardes les targetes i el número de bloqueig de cada banc. Si perds la cartera, ho bloqueges tot en minuts.';
+
+  @override
+  String get whatsNewDismiss => 'Entesos';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Més detalls té els extres: notes, repetició, temps de renovació, de qui és el registre, on el guardes, bloqueig i fotos. Obre-ho només quan calgui.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Bloqueja un registre per demanar l\'empremta o el bloqueig de pantalla abans de mostrar-lo. Tria on el guardes, com la cartera, i afegeix fotos del document.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Has perdut la cartera? Mira tot el que hi havia, truca a cada banc amb un toc i segueix els passos per a la resta.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Una mudança, un nadó, una feina nova o una emergència? Esdeveniments vitals et dona un pla amb els teus registres, passos i dates.';
+
+  @override
+  String get storySampleQuestion => 'Què caduca aquest any?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'El teu $name caduca al març. Vols un recordatori un mes abans?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name caduca d\'aquí a 30 dies. Toca per renovar.';
+  }
+
+  @override
+  String get storySampleGym => 'Quota del gimnàs';
+
+  @override
+  String get storySampleFirstAid => 'Certificat de primers auxilis';
+
+  @override
+  String get storySampleEncrypt => 'Xifra les fotos';
+
+  @override
+  String get storySampleAppLock => 'Bloqueig de l\'app';
+
+  @override
+  String get storySampleHideApp => 'Amaga el contingut al selector d\'apps';
+
+  @override
+  String get storyHome1Title => 'El teu dia d\'un cop d\'ull';
+
+  @override
+  String get storyHome1Body => 'L\'inici mostra el que importa avui: el que caduca aviat i quants registres tens.';
+
+  @override
+  String get storyHome2Title => 'Troba-ho tot';
+
+  @override
+  String get storyHome2Body => 'Toca la cerca per trobar un registre pel nom, el grup o la persona.';
+
+  @override
+  String get storyHome3Title => 'Viatges i plans';
+
+  @override
+  String get storyHome3Body => 'Aquí apareixen els viatges que planifiques i els plans d\'esdeveniments vitals en curs, amb el que queda per fer.';
+
+  @override
+  String get storyHome4Title => 'Ajuda a un toc';
+
+  @override
+  String get storyHome4Body => 'El botó d\'espurna obre «Pregunta a Vaultara». La teva foto obre el perfil, la configuració i els tutorials.';
+
+  @override
+  String get storyRenew1Title => 'Arriba un recordatori';
+
+  @override
+  String get storyRenew1Body => 'Abans que un registre caduqui, Vaultara t\'avisa. Toca el recordatori per obrir el registre.';
+
+  @override
+  String get storyRenew2Title => 'Desa la data nova';
+
+  @override
+  String get storyRenew2Body => 'L\'has renovat? Toca «Renova» i escriu la nova data de caducitat. Els recordatoris s\'hi adapten.';
+
+  @override
+  String get storyRenew3Title => 'No saps com?';
+
+  @override
+  String get storyRenew3Body => 'Molts registres tenen una guia amb els passos, els documents i el cost habitual.';
+
+  @override
+  String get storyRenew4Title => 'Que es repeteixi';
+
+  @override
+  String get storyRenew4Body => 'Per a subscripcions i pagaments anuals, activa la repetició i la data avança sola.';
+
+  @override
+  String get storyAsk1Title => 'Pregunta amb les teves paraules';
+
+  @override
+  String get storyAsk1Body => 'Pregunta coses com «Què caduca aquest any?» i obtén respostes dels teus registres.';
+
+  @override
+  String get storyAsk2Title => 'Parla en lloc d\'escriure';
+
+  @override
+  String get storyAsk2Body => 'Toca el micròfon i parla. Les paraules apareixen mentre parles i pots enviar de seguida.';
+
+  @override
+  String get storyAsk3Title => 'Confirmes cada canvi';
+
+  @override
+  String get storyAsk3Body => 'Demana afegir o canviar un registre i primer veuràs una targeta. No es desa res fins que confirmes.';
+
+  @override
+  String get storyAsk4Title => 'Desfés qualsevol canvi';
+
+  @override
+  String get storyAsk4Body => 'Has canviat d\'idea? Cada canvi confirmat es pot desfer des de la mateixa targeta.';
+
+  @override
+  String get storyAsk5Title => 'Continua on ho vas deixar';
+
+  @override
+  String get storyAsk5Body => 'Els xats es guarden 90 dies a «Historial de xats», i les preguntes suggerides t\'ajuden a començar.';
+
+  @override
+  String get storyWallet1Title => 'Prepara\'t primer';
+
+  @override
+  String get storyWallet1Body => 'Obre una targeta o un document i tria on el guardes, com la cartera o la bossa.';
+
+  @override
+  String get storyWallet2Title => 'Desa el número de bloqueig';
+
+  @override
+  String get storyWallet2Body => 'Afegeix ara el número de bloqueig de cada banc. És a la targeta, que no tindràs quan el necessitis.';
+
+  @override
+  String get storyWallet3Title => 'Si es perd';
+
+  @override
+  String get storyWallet3Body => 'Obre «He perdut la cartera» i toca «Perduda» o «Robada». Vaultara llista tot el que hi havia.';
+
+  @override
+  String get storyWallet4Title => 'Bloqueja targetes en minuts';
+
+  @override
+  String get storyWallet4Body => 'Truca a cada banc amb un toc, marca les targetes com a bloquejades i guarda el número de denúncia.';
+
+  @override
+  String get storyWallet5Title => 'Substitueix i estigues segur';
+
+  @override
+  String get storyWallet5Body => 'Substitueix els documents, revisa els extractes quan t\'ho recordem i toca «L\'he trobada» si apareix.';
+
+  @override
+  String get storyLife1Title => 'Grans moments, un pla';
+
+  @override
+  String get storyLife1Body => 'Una mudança, un nadó, una feina nova o una emergència: tria el que passa a «Esdeveniments vitals».';
+
+  @override
+  String get storyLife2Title => 'Els teus registres, endreçats';
+
+  @override
+  String get storyLife2Body => 'El pla indica quins registres actualitzar, cancel·lar o renovar, i quins potser cal afegir.';
+
+  @override
+  String get storyLife3Title => 'Passos i dates';
+
+  @override
+  String get storyLife3Body => 'Els passos cobreixen el que no és un registre, i les dates d\'inici et diuen quan sol·licitar perquè res no arribi tard.';
+
+  @override
+  String get storyLife4Title => 'Fes-lo teu';
+
+  @override
+  String get storyLife4Body => 'Afegeix passos propis, comparteix el pla en PDF i rep recordatoris al voltant de la data.';
+
+  @override
+  String get storyPhotos1Title => 'Fotos dels teus documents';
+
+  @override
+  String get storyPhotos1Body => 'Des del registre, afegeix fotos de l\'anvers i el revers d\'una targeta o un document.';
+
+  @override
+  String get storyPhotos2Title => 'Xifrades al telèfon';
+
+  @override
+  String get storyPhotos2Body => 'Activa el xifratge de fotos i es protegeixen al telèfon abans de pujar-les.';
+
+  @override
+  String get storyPhotos3Title => 'Bloqueja registres sensibles';
+
+  @override
+  String get storyPhotos3Body => 'Bloqueja un registre i et demanarà l\'empremta o el bloqueig de pantalla abans d\'obrir-se.';
+
+  @override
+  String get storyPhotos4Title => 'Bloqueja tota l\'app';
+
+  @override
+  String get storyPhotos4Body => 'A la configuració de seguretat, activa el bloqueig de l\'app i amaga\'n el contingut en canviar d\'app.';
+
+  @override
+  String get storyShare1Title => 'Comparteix un registre';
+
+  @override
+  String get storyShare1Body => 'Obre un registre i comparteix un enllaç que només mostra aquest registre, res més.';
+
+  @override
+  String get storyShare2Title => 'Paquet de proves';
+
+  @override
+  String get storyShare2Body => 'Posa els registres que triïs, amb les fotos, en un sol PDF per a un propietari, un banc o una oficina.';
+
+  @override
+  String get storyShare3Title => 'Tens el control';
+
+  @override
+  String get storyShare3Body => '«Enllaços compartits» mostra cada enllaç que has creat. Atura\'n un quan vulguis i deixa d\'obrir-se.';
+
+  @override
+  String get storyHousehold1Title => 'Convida la teva llar';
+
+  @override
+  String get storyHousehold1Body => 'Comparteix un codi o un enllaç d\'invitació. Cada persona entra amb el seu compte.';
+
+  @override
+  String get storyHousehold2Title => 'Un sol conjunt de registres';
+
+  @override
+  String get storyHousehold2Body => 'Tothom veu els mateixos registres compartits i rep els mateixos recordatoris.';
+
+  @override
+  String get storyHousehold3Title => 'De qui és?';
+
+  @override
+  String get storyHousehold3Body => 'Cada registre pot ser d\'algú. El seu nom hi apareix i als recordatoris.';
+
+  @override
+  String get storyImport1Title => 'Escaneja una targeta';
+
+  @override
+  String get storyImport1Body => 'Fes una foto d\'una targeta o un document i Vaultara omple el nom i la data de caducitat.';
+
+  @override
+  String get storyImport2Title => 'Importa una llista';
+
+  @override
+  String get storyImport2Body => 'Ja tens un full de càlcul? Importa\'l i revisa cada fila abans de desar res.';
+
+  @override
+  String get storyImport3Title => 'Comparteix a Vaultara';
+
+  @override
+  String get storyImport3Body => 'Comparteix una foto, un PDF o un text des d\'una altra app a Vaultara per començar un registre.';
+
+  @override
+  String get storyCosts1Title => 'Al teu calendari';
+
+  @override
+  String get storyCosts1Body => 'Afegeix les dates de caducitat al calendari del telèfon, al costat dels teus altres plans.';
+
+  @override
+  String get storyCosts2Title => 'El que costen les renovacions';
+
+  @override
+  String get storyCosts2Body => 'Indica el cost de renovació en un registre i Vaultara mostra el que gastes cada any.';
+
+  @override
+  String get storyCosts3Title => 'Planifica amb temps';
+
+  @override
+  String get storyCosts3Body => 'Mira venir els mesos cars perquè una renovació gran no et sorprengui mai.';
+
+  @override
+  String get storyBusiness1Title => 'Segueix el teu equip';
+
+  @override
+  String get storyBusiness1Body => 'Afegeix el personal i guarda certificats, permisos i llicències en un sol lloc.';
+
+  @override
+  String get storyBusiness2Title => 'Recordatoris per correu';
+
+  @override
+  String get storyBusiness2Body => 'El personal rep recordatoris per correu abans que caduquin els documents, fins i tot sense l\'app.';
+
+  @override
+  String get storyBusiness3Title => 'Informe mensual';
+
+  @override
+  String get storyBusiness3Body => 'Cada mes, un informe mostra què és vàlid, què caduca i què falta.';
+
+  @override
+  String get storyBusiness4Title => 'Demana una actualització';
+
+  @override
+  String get storyBusiness4Body => 'Envia un enllaç i el personal puja ell mateix el document renovat.';
 }

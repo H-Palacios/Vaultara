@@ -7492,4 +7492,438 @@ class AppLocalizationsKa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'თქვენი მთავარი ეკრანი';
+
+  @override
+  String get tutorialsSubHome => 'რას ნიშნავს ბარათები და სად არის ყველაფერი';
+
+  @override
+  String get tutorialsTitleRenew => 'ჩანაწერის განახლება';
+
+  @override
+  String get tutorialsSubRenew => 'რა უნდა გააკეთოთ, როცა შეხსენება მოდის';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'კალენდარი და ხარჯები';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'ვადები კალენდარში და განახლების ღირებულება';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'ფოტოები და უსაფრთხოება';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'დოკუმენტების ფოტოები, დაშიფვრა და ჩაკეტვა';
+
+  @override
+  String get tutorialsTitleSharing => 'უსაფრთხო გაზიარება';
+
+  @override
+  String get tutorialsSubSharing => 'ჩანაწერის გაზიარება, პაკეტის შექმნა, ბმულის შეჩერება';
+
+  @override
+  String get tutorialsTitleImportScan => 'სკანირება და იმპორტი';
+
+  @override
+  String get tutorialsSubImportScan => 'ბევრი ჩანაწერის სწრაფად დამატება';
+
+  @override
+  String get tutorialsTitleHousehold => 'საერთო ოჯახი';
+
+  @override
+  String get tutorialsSubHousehold => 'მოიწვიეთ სხვები ჩანაწერებისა და შეხსენებების გასაზიარებლად';
+
+  @override
+  String get tutorialsTitleLostWallet => 'საფულე დავკარგე';
+
+  @override
+  String get tutorialsSubLostWallet => 'მოემზადეთ ახლავე და იმოქმედეთ სწრაფად, თუ დაიკარგება';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'ცხოვრებისეული მოვლენები';
+
+  @override
+  String get tutorialsSubLifeEvents => 'გეგმა გადასვლისთვის, ბავშვისთვის, ახალი სამსახურისთვის და სხვა';
+
+  @override
+  String get tutorialsTitleAsk => 'ჰკითხეთ Vaultara-ს';
+
+  @override
+  String get tutorialsSubAsk => 'ესაუბრეთ ან ელაპარაკეთ თქვენს ჩანაწერებს';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business ხელსაწყოები';
+
+  @override
+  String get tutorialsSubBusiness => 'თანამშრომლების დოკუმენტები, შეხსენებები და ანგარიშები';
+
+  @override
+  String get tutorialsGroupBasics => 'საფუძვლები';
+
+  @override
+  String get tutorialsGroupOnTop => 'ყველაფრის კონტროლი';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'მოგზაურობა და ოჯახი';
+
+  @override
+  String get tutorialsGroupEmergencies => 'ცხოვრებისეული მოვლენები და საგანგებო სიტუაციები';
+
+  @override
+  String get tutorialsGroupPaid => 'ფასიანი ფუნქციები';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ნაბიჯი',
+      one: '$count ნაბიჯი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'ფასიანი გეგმები';
+
+  @override
+  String get tutorialsPaidNote => 'ამის ნახვა ნებისმიერი გეგმით შეგიძლიათ. თავად ფუნქციას ფასიანი გეგმა სჭირდება.';
+
+  @override
+  String get tutorialsBack => 'უკან';
+
+  @override
+  String get tutorialsTryIt => 'სცადეთ ახლა';
+
+  @override
+  String get tutorialHintText => 'ახალი ხართ? ნახეთ მოკლე ტური';
+
+  @override
+  String get tutorialHintPlay => 'მაჩვენე';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'თავი $number / $total';
+  }
+
+  @override
+  String get tourContinue => 'გაგრძელება';
+
+  @override
+  String get tourSkip => 'გამოტოვება';
+
+  @override
+  String get tourSkipped => 'გამოტოვებულია';
+
+  @override
+  String get tourDone => 'თქვენ ნახეთ მთელი ტური';
+
+  @override
+  String get tourRestart => 'თავიდან დაწყება';
+
+  @override
+  String get whatsNewBadge => 'ახალი';
+
+  @override
+  String get whatsNewTitle => 'საფულე დავკარგე';
+
+  @override
+  String get whatsNewBody => 'შეინახეთ, სად ინახავთ ბარათებს, და თითოეული ბანკის დაბლოკვის ნომერი. საფულე თუ დაიკარგა, ყველაფერს წუთებში დაბლოკავთ.';
+
+  @override
+  String get whatsNewDismiss => 'გასაგებია';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'მეტი დეტალი შეიცავს დამატებებს: შენიშვნები, გამეორება, განახლების ვადა, ვისია, სად ინახავთ, ჩაკეტვა და ფოტოები. გახსენით მხოლოდ საჭიროებისას.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'ჩაკეტეთ ჩანაწერი, რომ ჩვენებამდე თითის ანაბეჭდი ან ეკრანის საკეტი მოითხოვოს. აირჩიეთ, სად ინახავთ, მაგ. საფულეში, და დაამატეთ დოკუმენტის ფოტოები.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'საფულე დაკარგეთ? ნახეთ ყველაფერი, რაც შიგნით იყო, ერთი შეხებით დაურეკეთ თითოეულ ბანკს და მიჰყევით დანარჩენ ნაბიჯებს.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'გადასვლა, ბავშვი, ახალი სამსახური თუ საგანგებო სიტუაცია? ცხოვრებისეული მოვლენები გაძლევთ გეგმას თქვენი ჩანაწერებით, ნაბიჯებითა და თარიღებით.';
+
+  @override
+  String get storySampleQuestion => 'რას გასდის ვადა წელს?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'თქვენს $name-ს ვადა მარტში გასდის. გსურთ შეხსენება ერთი თვით ადრე?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name-ს ვადა 30 დღეში გასდის. შეეხეთ განსაახლებლად.';
+  }
+
+  @override
+  String get storySampleGym => 'სპორტდარბაზის წევრობა';
+
+  @override
+  String get storySampleFirstAid => 'პირველადი დახმარების სერტიფიკატი';
+
+  @override
+  String get storySampleEncrypt => 'ფოტოების დაშიფვრა';
+
+  @override
+  String get storySampleAppLock => 'აპის საკეტი';
+
+  @override
+  String get storySampleHideApp => 'შიგთავსის დამალვა აპების გადამრთველში';
+
+  @override
+  String get storyHome1Title => 'თქვენი დღე ერთი შეხედვით';
+
+  @override
+  String get storyHome1Body => 'მთავარი ეკრანი აჩვენებს, რა არის დღეს მნიშვნელოვანი: რას გასდის მალე ვადა და რამდენი ჩანაწერი გაქვთ.';
+
+  @override
+  String get storyHome2Title => 'იპოვეთ ნებისმიერი რამ';
+
+  @override
+  String get storyHome2Body => 'შეეხეთ ძიებას, რომ იპოვოთ ჩანაწერი სახელით, ჯგუფით ან პირით.';
+
+  @override
+  String get storyHome3Title => 'მოგზაურობები და გეგმები';
+
+  @override
+  String get storyHome3Body => 'თქვენ მიერ დაგეგმილი მოგზაურობები და მიმდინარე ცხოვრებისეული მოვლენების გეგმები, დარჩენილ საქმეებთან ერთად, აქ ჩანს.';
+
+  @override
+  String get storyHome4Title => 'დახმარება ერთი შეხებით';
+
+  @override
+  String get storyHome4Body => 'ნაპერწკლის ღილაკი ხსნის «ჰკითხეთ Vaultara-ს»-ს. თქვენი ფოტო ხსნის პროფილს, პარამეტრებს და გაკვეთილებს.';
+
+  @override
+  String get storyRenew1Title => 'შეხსენება მოდის';
+
+  @override
+  String get storyRenew1Body => 'ჩანაწერის ვადის გასვლამდე Vaultara შეგახსენებთ. შეეხეთ შეხსენებას ჩანაწერის გასახსნელად.';
+
+  @override
+  String get storyRenew2Title => 'შეინახეთ ახალი თარიღი';
+
+  @override
+  String get storyRenew2Body => 'განაახლეთ? შეეხეთ «განახლება»-ს და შეიყვანეთ ახალი ვადა. შეხსენებებიც გადაიწევს.';
+
+  @override
+  String get storyRenew3Title => 'არ იცით როგორ?';
+
+  @override
+  String get storyRenew3Body => 'ბევრ ჩანაწერს აქვს გზამკვლევი ნაბიჯებით, დოკუმენტებითა და ჩვეული ღირებულებით.';
+
+  @override
+  String get storyRenew4Title => 'დაე, განმეორდეს';
+
+  @override
+  String get storyRenew4Body => 'გამოწერებისა და წლიური გადახდებისთვის ჩართეთ გამეორება და თარიღი თავად გადაიწევს.';
+
+  @override
+  String get storyAsk1Title => 'იკითხეთ თქვენი სიტყვებით';
+
+  @override
+  String get storyAsk1Body => 'იკითხეთ, მაგ. «რას გასდის ვადა წელს?» და მიიღეთ პასუხები თქვენი ჩანაწერებიდან.';
+
+  @override
+  String get storyAsk2Title => 'ილაპარაკეთ აკრეფის ნაცვლად';
+
+  @override
+  String get storyAsk2Body => 'შეეხეთ მიკროფონს და ილაპარაკეთ. სიტყვები ლაპარაკისას ჩნდება და მაშინვე შეგიძლიათ გაგზავნა.';
+
+  @override
+  String get storyAsk3Title => 'ყოველ ცვლილებას თქვენ ადასტურებთ';
+
+  @override
+  String get storyAsk3Body => 'სთხოვეთ ჩანაწერის დამატება ან შეცვლა და ჯერ ბარათს ნახავთ. არაფერი შეინახება, სანამ არ დაადასტურებთ.';
+
+  @override
+  String get storyAsk4Title => 'გააუქმეთ ნებისმიერი ცვლილება';
+
+  @override
+  String get storyAsk4Body => 'გადაიფიქრეთ? ყოველი დადასტურებული ცვლილება შეიძლება გაუქმდეს იმავე ბარათიდან.';
+
+  @override
+  String get storyAsk5Title => 'გააგრძელეთ, სადაც შეჩერდით';
+
+  @override
+  String get storyAsk5Body => 'საუბრები 90 დღე ინახება «ჩატების ისტორია»-ში, შემოთავაზებული კითხვები კი დაწყებაში გეხმარებათ.';
+
+  @override
+  String get storyWallet1Title => 'ჯერ მოემზადეთ';
+
+  @override
+  String get storyWallet1Body => 'გახსენით ბარათი ან დოკუმენტი და აირჩიეთ, სად ინახავთ, მაგ. საფულეში ან ჩანთაში.';
+
+  @override
+  String get storyWallet2Title => 'შეინახეთ დაბლოკვის ნომერი';
+
+  @override
+  String get storyWallet2Body => 'დაამატეთ თითოეული ბანკის დაბლოკვის ნომერი ახლავე. ის ბარათზეა, რომელიც საჭიროებისას თქვენთან არ იქნება.';
+
+  @override
+  String get storyWallet3Title => 'თუ დაიკარგა';
+
+  @override
+  String get storyWallet3Body => 'გახსენით «საფულე დავკარგე» და შეეხეთ «დაიკარგა»-ს ან «მოიპარეს»-ს. Vaultara ჩამოთვლის ყველაფერს, რაც შიგნით იყო.';
+
+  @override
+  String get storyWallet4Title => 'დაბლოკეთ ბარათები წუთებში';
+
+  @override
+  String get storyWallet4Body => 'ერთი შეხებით დაურეკეთ თითოეულ ბანკს, მონიშნეთ ბარათები დაბლოკილად და შეინახეთ განცხადების ნომერი.';
+
+  @override
+  String get storyWallet5Title => 'აღადგინეთ და დარჩით უსაფრთხოდ';
+
+  @override
+  String get storyWallet5Body => 'აღადგინეთ დოკუმენტები, შეხსენებისას შეამოწმეთ ამონაწერები და თუ იპოვეთ, შეეხეთ «ვიპოვე»-ს.';
+
+  @override
+  String get storyLife1Title => 'დიდი მომენტები, ერთი გეგმა';
+
+  @override
+  String get storyLife1Body => 'გადასვლა, ბავშვი, ახალი სამსახური თუ საგანგებო სიტუაცია: «ცხოვრებისეული მოვლენები»-ში აირჩიეთ, რა ხდება.';
+
+  @override
+  String get storyLife2Title => 'თქვენი ჩანაწერები წესრიგშია';
+
+  @override
+  String get storyLife2Body => 'გეგმა აჩვენებს, რომელი ჩანაწერები უნდა განახლდეს, გაუქმდეს ან გაგრძელდეს და რომლის დამატება შეიძლება დაგჭირდეთ.';
+
+  @override
+  String get storyLife3Title => 'ნაბიჯები და თარიღები';
+
+  @override
+  String get storyLife3Body => 'ნაბიჯები მოიცავს იმას, რაც ჩანაწერი არ არის, ხოლო დაწყების თარიღები გეუბნებათ, როდის უნდა მიმართოთ, რომ არაფერი დაგვიანდეს.';
+
+  @override
+  String get storyLife4Title => 'გახადეთ თქვენი';
+
+  @override
+  String get storyLife4Body => 'დაამატეთ საკუთარი ნაბიჯები, გააზიარეთ გეგმა PDF-ად და მიიღეთ შეხსენებები თარიღის ახლოს.';
+
+  @override
+  String get storyPhotos1Title => 'თქვენი დოკუმენტების ფოტოები';
+
+  @override
+  String get storyPhotos1Body => 'ჩანაწერიდან დაამატეთ ბარათის ან დოკუმენტის წინა და უკანა მხარის ფოტოები.';
+
+  @override
+  String get storyPhotos2Title => 'დაშიფრული ტელეფონზე';
+
+  @override
+  String get storyPhotos2Body => 'ჩართეთ ფოტოების დაშიფვრა და ფოტოები ატვირთვამდე ტელეფონზე ჩაიკეტება.';
+
+  @override
+  String get storyPhotos3Title => 'ჩაკეტეთ მგრძნობიარე ჩანაწერები';
+
+  @override
+  String get storyPhotos3Body => 'ჩაკეტეთ ჩანაწერი და გახსნამდე ის თითის ანაბეჭდს ან ეკრანის საკეტს მოითხოვს.';
+
+  @override
+  String get storyPhotos4Title => 'ჩაკეტეთ მთელი აპი';
+
+  @override
+  String get storyPhotos4Body => 'უსაფრთხოების პარამეტრებში ჩართეთ აპის საკეტი და დამალეთ შიგთავსი აპების გადართვისას.';
+
+  @override
+  String get storyShare1Title => 'გააზიარეთ ერთი ჩანაწერი';
+
+  @override
+  String get storyShare1Body => 'გახსენით ჩანაწერი და გააზიარეთ ბმული, რომელიც მხოლოდ ამ ჩანაწერს აჩვენებს, სხვას არაფერს.';
+
+  @override
+  String get storyShare2Title => 'მტკიცებულებების ნაკრები';
+
+  @override
+  String get storyShare2Body => 'შეკრიბეთ არჩეული ჩანაწერები ფოტოებით ერთ PDF-ში მეპატრონისთვის, ბანკისთვის ან დაწესებულებისთვის.';
+
+  @override
+  String get storyShare3Title => 'კონტროლი თქვენს ხელშია';
+
+  @override
+  String get storyShare3Body => '«გაზიარებული ბმულები» აჩვენებს თქვენ მიერ შექმნილ ყოველ ბმულს. შეაჩერეთ ნებისმიერი ნებისმიერ დროს და ის აღარ გაიხსნება.';
+
+  @override
+  String get storyHousehold1Title => 'მოიწვიეთ ოჯახის წევრები';
+
+  @override
+  String get storyHousehold1Body => 'გააზიარეთ მოწვევის კოდი ან ბმული. თითოეული საკუთარი ანგარიშით შედის.';
+
+  @override
+  String get storyHousehold2Title => 'ჩანაწერების ერთი ნაკრები';
+
+  @override
+  String get storyHousehold2Body => 'ყველა ხედავს ერთსა და იმავე საერთო ჩანაწერებს და იღებს ერთსა და იმავე შეხსენებებს.';
+
+  @override
+  String get storyHousehold3Title => 'ვისია?';
+
+  @override
+  String get storyHousehold3Body => 'თითოეული ჩანაწერი შეიძლება ვინმეს ეკუთვნოდეს. მისი სახელი ჩანს ჩანაწერში და შეხსენებებში.';
+
+  @override
+  String get storyImport1Title => 'დაასკანერეთ ბარათი';
+
+  @override
+  String get storyImport1Body => 'გადაუღეთ ბარათს ან დოკუმენტს და Vaultara თქვენ ნაცვლად შეავსებს სახელს და ვადას.';
+
+  @override
+  String get storyImport2Title => 'სიის იმპორტი';
+
+  @override
+  String get storyImport2Body => 'უკვე გაქვთ ცხრილი? შემოიტანეთ და შენახვამდე შეამოწმეთ ყოველი სტრიქონი.';
+
+  @override
+  String get storyImport3Title => 'გააზიარეთ Vaultara-ში';
+
+  @override
+  String get storyImport3Body => 'ახალი ჩანაწერის დასაწყებად სხვა აპიდან გააზიარეთ ფოტო, PDF ან ტექსტი Vaultara-ში.';
+
+  @override
+  String get storyCosts1Title => 'თქვენს კალენდარში';
+
+  @override
+  String get storyCosts1Body => 'დაამატეთ ვადები ტელეფონის კალენდარში, თქვენი სხვა გეგმების გვერდით.';
+
+  @override
+  String get storyCosts2Title => 'განახლების ღირებულება';
+
+  @override
+  String get storyCosts2Body => 'შეიყვანეთ განახლების ღირებულება ჩანაწერში და Vaultara გაჩვენებთ, რამდენს ხარჯავთ წელიწადში.';
+
+  @override
+  String get storyCosts3Title => 'დაგეგმეთ წინასწარ';
+
+  @override
+  String get storyCosts3Body => 'წინასწარ დაინახეთ ძვირი თვეები, რომ დიდმა განახლებამ არასოდეს მოგიტყუოთ მოულოდნელად.';
+
+  @override
+  String get storyBusiness1Title => 'თვალი ადევნეთ გუნდს';
+
+  @override
+  String get storyBusiness1Body => 'დაამატეთ თანამშრომლები და შეინახეთ მათი სერტიფიკატები, ნებართვები და ლიცენზიები ერთ ადგილას.';
+
+  @override
+  String get storyBusiness2Title => 'შეხსენებები ელფოსტით';
+
+  @override
+  String get storyBusiness2Body => 'თანამშრომლები დოკუმენტების ვადის გასვლამდე იღებენ წერილს, აპის გარეშეც.';
+
+  @override
+  String get storyBusiness3Title => 'ყოველთვიური ანგარიში';
+
+  @override
+  String get storyBusiness3Body => 'ყოველთვე ანგარიში აჩვენებს, რა მოქმედებს, რას გასდის ვადა და რა აკლია.';
+
+  @override
+  String get storyBusiness4Title => 'მოითხოვეთ განახლება';
+
+  @override
+  String get storyBusiness4Body => 'გაგზავნეთ ბმული და თანამშრომელი თავად ატვირთავს განახლებულ დოკუმენტს.';
 }

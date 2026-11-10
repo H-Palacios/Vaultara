@@ -7496,4 +7496,438 @@ class AppLocalizationsSq extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Ekrani yt kryesor';
+
+  @override
+  String get tutorialsSubHome => 'Çfarë tregojnë kartat dhe ku ndodhet gjithçka';
+
+  @override
+  String get tutorialsTitleRenew => 'Rinovo një regjistrim';
+
+  @override
+  String get tutorialsSubRenew => 'Çfarë të bësh kur vjen një kujtesë';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendari dhe kostot';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Datat e skadimit në kalendar dhe sa kushtojnë rinovimet';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotot dhe siguria';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Foto dokumentesh, enkriptim dhe kyçje';
+
+  @override
+  String get tutorialsTitleSharing => 'Ndaj me siguri';
+
+  @override
+  String get tutorialsSubSharing => 'Ndaj një regjistrim, bëj një paketë, ndalo një lidhje';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skano dhe importo';
+
+  @override
+  String get tutorialsSubImportScan => 'Shto shpejt shumë regjistrime';
+
+  @override
+  String get tutorialsTitleHousehold => 'Familje e përbashkët';
+
+  @override
+  String get tutorialsSubHousehold => 'Fto të tjerët të ndajnë regjistrime dhe kujtesa';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Humba portofolin';
+
+  @override
+  String get tutorialsSubLostWallet => 'Përgatitu tani, vepro shpejt nëse humbet';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Ngjarjet e jetës';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Një plan për shpërngulje, bebe, punë të re e më shumë';
+
+  @override
+  String get tutorialsTitleAsk => 'Pyet Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Shkruaj ose fol me regjistrimet e tua';
+
+  @override
+  String get tutorialsTitleBusiness => 'Mjetet Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Dokumente stafi, kujtesa dhe raporte';
+
+  @override
+  String get tutorialsGroupBasics => 'Bazat';
+
+  @override
+  String get tutorialsGroupOnTop => 'Të jesh në kontroll';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Udhëtime dhe familje';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Ngjarje jete dhe emergjenca';
+
+  @override
+  String get tutorialsGroupPaid => 'Veçori me pagesë';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hapa',
+      one: '$count hap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Plane me pagesë';
+
+  @override
+  String get tutorialsPaidNote => 'Mund ta shikosh këtë me çdo plan. Vetë veçoria kërkon plan me pagesë.';
+
+  @override
+  String get tutorialsBack => 'Prapa';
+
+  @override
+  String get tutorialsTryIt => 'Provoje tani';
+
+  @override
+  String get tutorialHintText => 'I ri këtu? Bëj turin e shkurtër';
+
+  @override
+  String get tutorialHintPlay => 'Më trego';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Kapitulli $number nga $total';
+  }
+
+  @override
+  String get tourContinue => 'Vazhdo';
+
+  @override
+  String get tourSkip => 'Kapërce';
+
+  @override
+  String get tourSkipped => 'U kapërcye';
+
+  @override
+  String get tourDone => 'E pe gjithë turin';
+
+  @override
+  String get tourRestart => 'Fillo nga e para';
+
+  @override
+  String get whatsNewBadge => 'E re';
+
+  @override
+  String get whatsNewTitle => 'Humba portofolin';
+
+  @override
+  String get whatsNewBody => 'Ruaj ku i mban kartat dhe numrin e bllokimit të çdo banke. Nëse humbet portofolin, bllokon gjithçka brenda pak minutash.';
+
+  @override
+  String get whatsNewDismiss => 'E kuptova';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Më shumë detaje mban shtesat: shënime, përsëritje, kohën e rinovimit, i kujt është, ku e mban, kyçjen dhe fotot. Hape vetëm kur të duhet.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Kyç një regjistrim që të kërkojë gjurmë gishti ose kyçjen e ekranit para shfaqjes. Zgjidh ku e mban, p.sh. në portofol, dhe shto foto të dokumentit.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Humbe portofolin? Shiko gjithçka që kishte brenda, telefono çdo bankë me një prekje dhe ndiq hapat për pjesën tjetër.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Shpërngulje, bebe, punë e re apo emergjencë? Ngjarjet e jetës të japin një plan me regjistrimet, hapat dhe datat e tua.';
+
+  @override
+  String get storySampleQuestion => 'Çfarë skadon këtë vit?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name yt skadon në mars. Do një kujtesë një muaj më parë?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name skadon pas 30 ditësh. Prek për ta rinovuar.';
+  }
+
+  @override
+  String get storySampleGym => 'Abonim në palestër';
+
+  @override
+  String get storySampleFirstAid => 'Certifikatë ndihme të parë';
+
+  @override
+  String get storySampleEncrypt => 'Enkripto fotot';
+
+  @override
+  String get storySampleAppLock => 'Kyçja e aplikacionit';
+
+  @override
+  String get storySampleHideApp => 'Fshih përmbajtjen te ndërruesi i aplikacioneve';
+
+  @override
+  String get storyHome1Title => 'Dita jote me një shikim';
+
+  @override
+  String get storyHome1Body => 'Ekrani kryesor tregon atë që ka rëndësi sot: çfarë skadon së shpejti dhe sa regjistrime ke.';
+
+  @override
+  String get storyHome2Title => 'Gjej gjithçka';
+
+  @override
+  String get storyHome2Body => 'Prek kërkimin për të gjetur një regjistrim sipas emrit, grupit ose personit.';
+
+  @override
+  String get storyHome3Title => 'Udhëtime dhe plane';
+
+  @override
+  String get storyHome3Body => 'Udhëtimet që planifikon dhe planet e ngjarjeve të jetës në vazhdim shfaqen këtu, me atë që mbetet.';
+
+  @override
+  String get storyHome4Title => 'Ndihmë me një prekje';
+
+  @override
+  String get storyHome4Body => 'Butoni me shkëndijë hap «Pyet Vaultara». Fotoja jote hap profilin, cilësimet dhe udhëzuesit.';
+
+  @override
+  String get storyRenew1Title => 'Vjen një kujtesë';
+
+  @override
+  String get storyRenew1Body => 'Para se të skadojë një regjistrim, Vaultara të kujton. Prek kujtesën për të hapur regjistrimin.';
+
+  @override
+  String get storyRenew2Title => 'Ruaj datën e re';
+
+  @override
+  String get storyRenew2Body => 'E rinovove? Prek «Rinovo» dhe fut datën e re të skadimit. Kujtesat zhvendosen bashkë me të.';
+
+  @override
+  String get storyRenew3Title => 'Nuk e di si?';
+
+  @override
+  String get storyRenew3Body => 'Shumë regjistrime kanë një udhëzues me hapat, dokumentet dhe koston e zakonshme.';
+
+  @override
+  String get storyRenew4Title => 'Le të përsëritet';
+
+  @override
+  String get storyRenew4Body => 'Për abonime dhe pagesa vjetore, aktivizo përsëritjen dhe data shtyhet vetë.';
+
+  @override
+  String get storyAsk1Title => 'Pyet me fjalët e tua';
+
+  @override
+  String get storyAsk1Body => 'Pyet p.sh. «Çfarë skadon këtë vit?» dhe merr përgjigje nga regjistrimet e tua.';
+
+  @override
+  String get storyAsk2Title => 'Fol në vend që të shkruash';
+
+  @override
+  String get storyAsk2Body => 'Prek mikrofonin dhe fol. Fjalët shfaqen ndërsa flet dhe mund të dërgosh menjëherë.';
+
+  @override
+  String get storyAsk3Title => 'Ti konfirmon çdo ndryshim';
+
+  @override
+  String get storyAsk3Body => 'Kërko të shtosh ose të ndryshosh një regjistrim dhe fillimisht do të shohësh një kartë. Asgjë nuk ruhet pa konfirmimin tënd.';
+
+  @override
+  String get storyAsk4Title => 'Zhbëj çdo ndryshim';
+
+  @override
+  String get storyAsk4Body => 'Ndryshove mendje? Çdo ndryshim i konfirmuar mund të zhbëhet nga e njëjta kartë.';
+
+  @override
+  String get storyAsk5Title => 'Vazhdo nga ku e le';
+
+  @override
+  String get storyAsk5Body => 'Bisedat ruhen 90 ditë te «Historiku i bisedave» dhe pyetjet e sugjeruara të ndihmojnë të fillosh.';
+
+  @override
+  String get storyWallet1Title => 'Përgatitu më parë';
+
+  @override
+  String get storyWallet1Body => 'Hap një kartë ose dokument dhe zgjidh ku e mban, p.sh. në portofol ose në çantë.';
+
+  @override
+  String get storyWallet2Title => 'Ruaj numrin e bllokimit';
+
+  @override
+  String get storyWallet2Body => 'Shto tani numrin e bllokimit të çdo banke. Është në kartë, të cilën nuk do ta kesh kur të duhet.';
+
+  @override
+  String get storyWallet3Title => 'Nëse humbet';
+
+  @override
+  String get storyWallet3Body => 'Hap «Humba portofolin» dhe prek «Humbur» ose «Vjedhur». Vaultara rendit gjithçka që kishte brenda.';
+
+  @override
+  String get storyWallet4Title => 'Blloko kartat brenda minutash';
+
+  @override
+  String get storyWallet4Body => 'Telefono çdo bankë me një prekje, shëno kartat si të bllokuara dhe ruaj numrin e denoncimit.';
+
+  @override
+  String get storyWallet5Title => 'Zëvendëso dhe qëndro i sigurt';
+
+  @override
+  String get storyWallet5Body => 'Zëvendëso dokumentet, kontrollo pasqyrat kur të kujtohet dhe prek «E gjeta» nëse gjendet.';
+
+  @override
+  String get storyLife1Title => 'Momente të mëdha, një plan';
+
+  @override
+  String get storyLife1Body => 'Shpërngulje, bebe, punë e re apo emergjencë: zgjidh te «Ngjarjet e jetës» çfarë po ndodh.';
+
+  @override
+  String get storyLife2Title => 'Regjistrimet e tua në rregull';
+
+  @override
+  String get storyLife2Body => 'Plani tregon cilat regjistrime të përditësosh, anulosh ose rinovosh dhe cilat ndoshta duhet të shtosh.';
+
+  @override
+  String get storyLife3Title => 'Hapa dhe data';
+
+  @override
+  String get storyLife3Body => 'Hapat mbulojnë atë që nuk është regjistrim, dhe datat e fillimit të tregojnë kur të aplikosh që asgjë të mos vonohet.';
+
+  @override
+  String get storyLife4Title => 'Bëje tëndin';
+
+  @override
+  String get storyLife4Body => 'Shto hapat e tu, ndaje planin si PDF dhe merr kujtesa rreth datës.';
+
+  @override
+  String get storyPhotos1Title => 'Fotot e dokumenteve të tua';
+
+  @override
+  String get storyPhotos1Body => 'Nga regjistrimi, shto foto të pjesës së përparme dhe të pasme të një karte ose dokumenti.';
+
+  @override
+  String get storyPhotos2Title => 'Të enkriptuara në telefon';
+
+  @override
+  String get storyPhotos2Body => 'Aktivizo enkriptimin e fotove dhe ato kyçen në telefon para ngarkimit.';
+
+  @override
+  String get storyPhotos3Title => 'Kyç regjistrimet e ndjeshme';
+
+  @override
+  String get storyPhotos3Body => 'Kyç një regjistrim dhe ai kërkon gjurmë gishti ose kyçjen e ekranit para se të hapet.';
+
+  @override
+  String get storyPhotos4Title => 'Kyç gjithë aplikacionin';
+
+  @override
+  String get storyPhotos4Body => 'Te cilësimet e sigurisë, aktivizo kyçjen e aplikacionit dhe fshih përmbajtjen kur ndërron aplikacion.';
+
+  @override
+  String get storyShare1Title => 'Ndaj një regjistrim';
+
+  @override
+  String get storyShare1Body => 'Hap një regjistrim dhe ndaj një lidhje që tregon vetëm atë regjistrim, asgjë tjetër.';
+
+  @override
+  String get storyShare2Title => 'Paketa e dëshmive';
+
+  @override
+  String get storyShare2Body => 'Bashko regjistrimet që zgjedh, me fotot e tyre, në një PDF për pronarin, bankën ose zyrën.';
+
+  @override
+  String get storyShare3Title => 'Mbaj kontrollin';
+
+  @override
+  String get storyShare3Body => '«Lidhjet e ndara» tregon çdo lidhje që ke krijuar. Ndalo cilëndo kur të duash dhe nuk hapet më.';
+
+  @override
+  String get storyHousehold1Title => 'Fto familjen';
+
+  @override
+  String get storyHousehold1Body => 'Ndaj një kod ose lidhje ftese. Secili hyn me llogarinë e vet.';
+
+  @override
+  String get storyHousehold2Title => 'Një grup regjistrimesh';
+
+  @override
+  String get storyHousehold2Body => 'Të gjithë shohin të njëjtat regjistrime të përbashkëta dhe marrin të njëjtat kujtesa.';
+
+  @override
+  String get storyHousehold3Title => 'I kujt është?';
+
+  @override
+  String get storyHousehold3Body => 'Çdo regjistrim mund t\'i përkasë dikujt. Emri shfaqet në të dhe në kujtesa.';
+
+  @override
+  String get storyImport1Title => 'Skano një kartë';
+
+  @override
+  String get storyImport1Body => 'Bëj foto një karte ose dokumenti dhe Vaultara plotëson emrin dhe datën e skadimit për ty.';
+
+  @override
+  String get storyImport2Title => 'Importo një listë';
+
+  @override
+  String get storyImport2Body => 'Ke tashmë një tabelë? Importoje dhe kontrollo çdo rresht para se të ruhet diçka.';
+
+  @override
+  String get storyImport3Title => 'Ndaj te Vaultara';
+
+  @override
+  String get storyImport3Body => 'Ndaj një foto, PDF ose tekst nga një aplikacion tjetër te Vaultara për të nisur një regjistrim të ri.';
+
+  @override
+  String get storyCosts1Title => 'Në kalendarin tënd';
+
+  @override
+  String get storyCosts1Body => 'Shto datat e skadimit në kalendarin e telefonit, pranë planeve të tjera.';
+
+  @override
+  String get storyCosts2Title => 'Sa kushtojnë rinovimet';
+
+  @override
+  String get storyCosts2Body => 'Fut koston e rinovimit në një regjistrim dhe Vaultara tregon sa shpenzon në vit.';
+
+  @override
+  String get storyCosts3Title => 'Planifiko përpara';
+
+  @override
+  String get storyCosts3Body => 'Shih muajt e shtrenjtë që vijnë, që një rinovim i madh të mos të befasojë kurrë.';
+
+  @override
+  String get storyBusiness1Title => 'Ndiq ekipin tënd';
+
+  @override
+  String get storyBusiness1Body => 'Shto stafin dhe mbaj certifikatat, lejet dhe licencat e tyre në një vend.';
+
+  @override
+  String get storyBusiness2Title => 'Kujtesa me email';
+
+  @override
+  String get storyBusiness2Body => 'Stafi merr email para se t\'u skadojnë dokumentet, edhe pa aplikacionin.';
+
+  @override
+  String get storyBusiness3Title => 'Raport mujor';
+
+  @override
+  String get storyBusiness3Body => 'Çdo muaj një raport tregon çfarë është e vlefshme, çfarë po skadon dhe çfarë mungon.';
+
+  @override
+  String get storyBusiness4Title => 'Kërko një përditësim';
+
+  @override
+  String get storyBusiness4Body => 'Dërgo një lidhje dhe stafi ngarkon vetë dokumentin e rinovuar.';
 }

@@ -7482,4 +7482,438 @@ class AppLocalizationsMn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Таны үндсэн дэлгэц';
+
+  @override
+  String get tutorialsSubHome => 'Картуудын утга болон бүх зүйл хаана байгаа';
+
+  @override
+  String get tutorialsTitleRenew => 'Бүртгэл сунгах';
+
+  @override
+  String get tutorialsSubRenew => 'Сануулга ирэхэд юу хийх вэ';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Хуанли ба зардал';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Хуанли дахь дуусах огноо ба сунгалтын зардал';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Зураг ба аюулгүй байдал';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Баримт бичгийн зураг, шифрлэлт, түгжээ';
+
+  @override
+  String get tutorialsTitleSharing => 'Аюулгүй хуваалцах';
+
+  @override
+  String get tutorialsSubSharing => 'Бүртгэл хуваалцах, багц үүсгэх, холбоос зогсоох';
+
+  @override
+  String get tutorialsTitleImportScan => 'Скан хийх ба импортлох';
+
+  @override
+  String get tutorialsSubImportScan => 'Олон бүртгэлийг хурдан нэмэх';
+
+  @override
+  String get tutorialsTitleHousehold => 'Хамтын өрх';
+
+  @override
+  String get tutorialsSubHousehold => 'Бүртгэл болон сануулгаа хуваалцахаар бусдыг урих';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Түрийвчээ гээлээ';
+
+  @override
+  String get tutorialsSubLostWallet => 'Одоо бэлдээрэй, алга болвол шуурхай арга хэмжээ аваарай';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Амьдралын үйл явдлууд';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Нүүх, хүүхэдтэй болох, шинэ ажил гэх мэтэд зориулсан төлөвлөгөө';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara-аас асуух';
+
+  @override
+  String get tutorialsSubAsk => 'Бүртгэлүүдтэйгээ чатлах эсвэл ярих';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business хэрэгслүүд';
+
+  @override
+  String get tutorialsSubBusiness => 'Ажилтны баримт бичиг, сануулга, тайлан';
+
+  @override
+  String get tutorialsGroupBasics => 'Үндсэн зүйлс';
+
+  @override
+  String get tutorialsGroupOnTop => 'Бүгдийг хянах';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Аялал ба гэр бүл';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Амьдралын үйл явдал ба онцгой байдал';
+
+  @override
+  String get tutorialsGroupPaid => 'Төлбөртэй боломжууд';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count алхам',
+      one: '$count алхам',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Төлбөртэй багцууд';
+
+  @override
+  String get tutorialsPaidNote => 'Үүнийг ямар ч багцаар үзэж болно. Боломжийг ашиглахад төлбөртэй багц шаардлагатай.';
+
+  @override
+  String get tutorialsBack => 'Буцах';
+
+  @override
+  String get tutorialsTryIt => 'Одоо туршиж үзэх';
+
+  @override
+  String get tutorialHintText => 'Шинэ үү? Богино аяллыг үзээрэй';
+
+  @override
+  String get tutorialHintPlay => 'Үзүүлэх';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$total-ээс $number-р бүлэг';
+  }
+
+  @override
+  String get tourContinue => 'Үргэлжлүүлэх';
+
+  @override
+  String get tourSkip => 'Алгасах';
+
+  @override
+  String get tourSkipped => 'Алгассан';
+
+  @override
+  String get tourDone => 'Та бүх аяллыг үзлээ';
+
+  @override
+  String get tourRestart => 'Дахин эхлэх';
+
+  @override
+  String get whatsNewBadge => 'Шинэ';
+
+  @override
+  String get whatsNewTitle => 'Түрийвчээ гээлээ';
+
+  @override
+  String get whatsNewBody => 'Картаа хаана хадгалдаг болон банк бүрийн хаах дугаарыг хадгална уу. Түрийвч алга болвол хэдхэн минутад бүгдийг хаана.';
+
+  @override
+  String get whatsNewDismiss => 'Ойлголоо';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Дэлгэрэнгүй мэдээлэлд нэмэлтүүд бий: тэмдэглэл, давталт, сунгах хугацаа, хэнийх, хаана хадгалдаг, түгжээ, зураг. Зөвхөн хэрэгтэй үед нээнэ үү.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Бүртгэлийг харуулахаас өмнө хурууны хээ эсвэл дэлгэцийн түгжээ асуудаг болгож түгжинэ үү. Хаана хадгалдгаа сонгоно уу, жишээ нь түрийвч, мөн баримтын зургийг нэмнэ үү.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Түрийвч алга болсон уу? Дотор байсан бүхнийг харж, нэг товшилтоор банк бүр рүү залгаж, үлдсэн алхмуудыг дагана уу.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Нүүх, хүүхэдтэй болох, шинэ ажил эсвэл онцгой байдал уу? Амьдралын үйл явдал таны бүртгэл, алхам, огноогоор төлөвлөгөө гаргана.';
+
+  @override
+  String get storySampleQuestion => 'Энэ жил юуны хугацаа дуусах вэ?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Таны $name 3-р сард дуусна. Нэг сарын өмнө сануулга авах уу?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name 30 хоногийн дараа дуусна. Сунгахын тулд товшино уу.';
+  }
+
+  @override
+  String get storySampleGym => 'Фитнессийн гишүүнчлэл';
+
+  @override
+  String get storySampleFirstAid => 'Анхны тусламжийн гэрчилгээ';
+
+  @override
+  String get storySampleEncrypt => 'Зургийг шифрлэх';
+
+  @override
+  String get storySampleAppLock => 'Аппын түгжээ';
+
+  @override
+  String get storySampleHideApp => 'Апп солигч дээр агуулгыг нуух';
+
+  @override
+  String get storyHome1Title => 'Таны өдөр нэг харцаар';
+
+  @override
+  String get storyHome1Body => 'Үндсэн дэлгэц өнөөдөр чухал зүйлийг харуулна: удахгүй дуусах зүйлс болон хэдэн бүртгэлтэй байгаа.';
+
+  @override
+  String get storyHome2Title => 'Юуг ч олоорой';
+
+  @override
+  String get storyHome2Body => 'Нэр, бүлэг эсвэл хүнээр бүртгэл хайхын тулд хайлтыг товшино уу.';
+
+  @override
+  String get storyHome3Title => 'Аялал ба төлөвлөгөө';
+
+  @override
+  String get storyHome3Body => 'Таны төлөвлөж буй аялал болон явагдаж буй амьдралын үйл явдлын төлөвлөгөө үлдсэн ажлын хамт энд харагдана.';
+
+  @override
+  String get storyHome4Title => 'Нэг товшилтоор тусламж';
+
+  @override
+  String get storyHome4Body => 'Гялбааны товч «Vaultara-аас асуух»-г нээнэ. Таны зураг профайл, тохиргоо, зааварчилгааг нээнэ.';
+
+  @override
+  String get storyRenew1Title => 'Сануулга ирнэ';
+
+  @override
+  String get storyRenew1Body => 'Бүртгэлийн хугацаа дуусахаас өмнө Vaultara сануулна. Бүртгэлийг нээхийн тулд сануулгыг товшино уу.';
+
+  @override
+  String get storyRenew2Title => 'Шинэ огноог хадгалах';
+
+  @override
+  String get storyRenew2Body => 'Сунгасан уу? «Сунгах»-г товшиж шинэ дуусах огноог оруулна уу. Сануулгууд хамт шилжинэ.';
+
+  @override
+  String get storyRenew3Title => 'Яаж хийхээ мэдэхгүй байна уу?';
+
+  @override
+  String get storyRenew3Body => 'Олон бүртгэлд алхам, баримт бичиг, ердийн зардал бүхий заавар бий.';
+
+  @override
+  String get storyRenew4Title => 'Давтагдаг болгох';
+
+  @override
+  String get storyRenew4Body => 'Захиалга болон жилийн төлбөрт давталтыг асаавал огноо өөрөө урагшилна.';
+
+  @override
+  String get storyAsk1Title => 'Өөрийн үгээр асуу';
+
+  @override
+  String get storyAsk1Body => '«Энэ жил юуны хугацаа дуусах вэ?» гэх мэтээр асууж, өөрийн бүртгэлээс хариулт аваарай.';
+
+  @override
+  String get storyAsk2Title => 'Бичихийн оронд ярь';
+
+  @override
+  String get storyAsk2Body => 'Микрофоныг товшоод яриарай. Ярих зуур үг гарч ирэх ба шууд илгээж болно.';
+
+  @override
+  String get storyAsk3Title => 'Өөрчлөлт бүрийг та баталгаажуулна';
+
+  @override
+  String get storyAsk3Body => 'Бүртгэл нэмэх эсвэл өөрчлөхийг хүсэхэд эхлээд карт харагдана. Та баталгаажуулах хүртэл юу ч хадгалагдахгүй.';
+
+  @override
+  String get storyAsk4Title => 'Ямар ч өөрчлөлтийг буцаах';
+
+  @override
+  String get storyAsk4Body => 'Бодлоо өөрчилсөн үү? Баталгаажсан өөрчлөлт бүрийг тэр картаас буцааж болно.';
+
+  @override
+  String get storyAsk5Title => 'Зогссон газраасаа үргэлжлүүл';
+
+  @override
+  String get storyAsk5Body => 'Чатууд «Чатын түүх» хэсэгт 90 хоног хадгалагдах ба санал болгосон асуултууд эхлэхэд тусална.';
+
+  @override
+  String get storyWallet1Title => 'Эхлээд бэлд';
+
+  @override
+  String get storyWallet1Body => 'Карт эсвэл баримт бичгийг нээж, хаана хадгалдгаа сонгоно уу, жишээ нь түрийвч эсвэл цүнх.';
+
+  @override
+  String get storyWallet2Title => 'Хаах дугаарыг хадгал';
+
+  @override
+  String get storyWallet2Body => 'Банк бүрийн хаах дугаарыг одоо нэмнэ үү. Энэ нь карт дээр байдаг ба хэрэгтэй үед карт тантай хамт байхгүй.';
+
+  @override
+  String get storyWallet3Title => 'Хэрэв алга болвол';
+
+  @override
+  String get storyWallet3Body => '«Түрийвчээ гээлээ»-г нээгээд «Алдсан» эсвэл «Хулгайлагдсан»-г товшино уу. Vaultara дотор байсан бүхнийг жагсаана.';
+
+  @override
+  String get storyWallet4Title => 'Картуудыг минутанд хаах';
+
+  @override
+  String get storyWallet4Body => 'Нэг товшилтоор банк бүр рүү залгаж, картуудыг хаасан гэж тэмдэглэж, мэдүүлгийн дугаарыг хадгална уу.';
+
+  @override
+  String get storyWallet5Title => 'Солиод аюулгүй байгаарай';
+
+  @override
+  String get storyWallet5Body => 'Баримт бичгээ сэргээж, сануулах үед хуулгаа шалгаж, олдвол «Олчихлоо»-г товшино уу.';
+
+  @override
+  String get storyLife1Title => 'Том мөчүүд, нэг төлөвлөгөө';
+
+  @override
+  String get storyLife1Body => 'Нүүх, хүүхэдтэй болох, шинэ ажил эсвэл онцгой байдал: «Амьдралын үйл явдлууд» хэсэгт юу болж байгааг сонгоно уу.';
+
+  @override
+  String get storyLife2Title => 'Таны бүртгэл эмх цэгцтэй';
+
+  @override
+  String get storyLife2Body => 'Төлөвлөгөө ямар бүртгэлийг шинэчлэх, цуцлах эсвэл сунгах, мөн алийг нэмэх хэрэгтэй байж болохыг харуулна.';
+
+  @override
+  String get storyLife3Title => 'Алхам ба огноо';
+
+  @override
+  String get storyLife3Body => 'Алхмууд бүртгэл биш зүйлсийг хамарч, эхлэх огноо юу ч хоцрохгүйн тулд хэзээ өргөдөл гаргахыг хэлнэ.';
+
+  @override
+  String get storyLife4Title => 'Өөртөө тохируул';
+
+  @override
+  String get storyLife4Body => 'Өөрийн алхмуудыг нэмж, төлөвлөгөөг PDF хэлбэрээр хуваалцаж, огнооны орчимд сануулга аваарай.';
+
+  @override
+  String get storyPhotos1Title => 'Баримт бичгийнхээ зураг';
+
+  @override
+  String get storyPhotos1Body => 'Бүртгэлээс карт эсвэл баримт бичгийн нүүр, ар талын зургийг нэмнэ үү.';
+
+  @override
+  String get storyPhotos2Title => 'Утсан дээр шифрлэгдсэн';
+
+  @override
+  String get storyPhotos2Body => 'Зургийн шифрлэлтийг асаавал зургууд байршуулахаас өмнө утсан дээр түгжигдэнэ.';
+
+  @override
+  String get storyPhotos3Title => 'Мэдрэмтгий бүртгэлүүдийг түгж';
+
+  @override
+  String get storyPhotos3Body => 'Бүртгэлийг түгжвэл нээгдэхээс өмнө хурууны хээ эсвэл дэлгэцийн түгжээ асууна.';
+
+  @override
+  String get storyPhotos4Title => 'Бүх аппыг түгж';
+
+  @override
+  String get storyPhotos4Body => 'Аюулгүй байдлын тохиргоонд аппын түгжээг асааж, апп солих үед агуулгыг нууна уу.';
+
+  @override
+  String get storyShare1Title => 'Нэг бүртгэл хуваалц';
+
+  @override
+  String get storyShare1Body => 'Бүртгэлийг нээж, зөвхөн тэр бүртгэлийг харуулах холбоос хуваалцана уу, өөр юу ч биш.';
+
+  @override
+  String get storyShare2Title => 'Нотлох багц';
+
+  @override
+  String get storyShare2Body => 'Сонгосон бүртгэлүүдийг зурагтай нь хамт байрны эзэн, банк эсвэл албанд зориулан нэг PDF болгоно уу.';
+
+  @override
+  String get storyShare3Title => 'Хяналт таны гарт';
+
+  @override
+  String get storyShare3Body => '«Хуваалцсан холбоосууд» таны үүсгэсэн холбоос бүрийг харуулна. Аль нэгийг хүссэн үедээ зогсоовол дахин нээгдэхгүй.';
+
+  @override
+  String get storyHousehold1Title => 'Өрхийнхөө гишүүдийг ур';
+
+  @override
+  String get storyHousehold1Body => 'Урилгын код эсвэл холбоос хуваалцана уу. Хүн бүр өөрийн бүртгэлээр нэвтэрнэ.';
+
+  @override
+  String get storyHousehold2Title => 'Нэг бүртгэлийн багц';
+
+  @override
+  String get storyHousehold2Body => 'Бүгд ижил хамтын бүртгэлийг харж, ижил сануулга авна.';
+
+  @override
+  String get storyHousehold3Title => 'Хэнийх вэ?';
+
+  @override
+  String get storyHousehold3Body => 'Бүртгэл бүр хэн нэгнийх байж болно. Түүний нэр бүртгэл болон сануулгад харагдана.';
+
+  @override
+  String get storyImport1Title => 'Карт скан хийх';
+
+  @override
+  String get storyImport1Body => 'Карт эсвэл баримт бичгийн зургийг авбал Vaultara нэр болон дуусах огноог бөглөнө.';
+
+  @override
+  String get storyImport2Title => 'Жагсаалт импортлох';
+
+  @override
+  String get storyImport2Body => 'Хүснэгт аль хэдийн бий юу? Импортлоод хадгалахаас өмнө мөр бүрийг шалгана уу.';
+
+  @override
+  String get storyImport3Title => 'Vaultara руу хуваалцах';
+
+  @override
+  String get storyImport3Body => 'Шинэ бүртгэл эхлүүлэхийн тулд өөр аппаас зураг, PDF эсвэл текстийг Vaultara руу хуваалцана уу.';
+
+  @override
+  String get storyCosts1Title => 'Таны хуанлид';
+
+  @override
+  String get storyCosts1Body => 'Дуусах огноог бусад төлөвлөгөөнийхөө хажууд утасны хуанлид нэмнэ үү.';
+
+  @override
+  String get storyCosts2Title => 'Сунгалтын зардал';
+
+  @override
+  String get storyCosts2Body => 'Бүртгэлд сунгалтын зардлыг оруулбал Vaultara жилд хэр зарцуулдгийг харуулна.';
+
+  @override
+  String get storyCosts3Title => 'Урьдчилан төлөвлө';
+
+  @override
+  String get storyCosts3Body => 'Үнэтэй саруудыг урьдчилан харж, том сунгалт таныг хэзээ ч гайхшруулахгүй.';
+
+  @override
+  String get storyBusiness1Title => 'Багаа хянаарай';
+
+  @override
+  String get storyBusiness1Body => 'Ажилтнуудаа нэмж, тэдний гэрчилгээ, зөвшөөрөл, тусгай зөвшөөрлийг нэг дор хадгална уу.';
+
+  @override
+  String get storyBusiness2Title => 'Имэйл сануулга';
+
+  @override
+  String get storyBusiness2Body => 'Ажилтнууд баримт бичгийнх нь хугацаа дуусахаас өмнө имэйл авна, апп байхгүй байсан ч.';
+
+  @override
+  String get storyBusiness3Title => 'Сарын тайлан';
+
+  @override
+  String get storyBusiness3Body => 'Сар бүр тайлан юу хүчинтэй, юуны хугацаа дуусч байгаа, юу дутуу байгааг харуулна.';
+
+  @override
+  String get storyBusiness4Title => 'Шинэчлэл хүсэх';
+
+  @override
+  String get storyBusiness4Body => 'Холбоос илгээвэл ажилтан сунгасан баримт бичгээ өөрөө байршуулна.';
 }

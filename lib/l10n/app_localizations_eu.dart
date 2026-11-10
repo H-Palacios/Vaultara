@@ -7496,4 +7496,438 @@ class AppLocalizationsEu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Zure hasierako pantaila';
+
+  @override
+  String get tutorialsSubHome => 'Txartelek zer esan nahi duten eta dena non dagoen';
+
+  @override
+  String get tutorialsTitleRenew => 'Erregistro bat berritu';
+
+  @override
+  String get tutorialsSubRenew => 'Zer egin oroigarri bat iristen denean';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Egutegia eta kostuak';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Iraungitze-datak egutegian eta berritzeek zenbat balio duten';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Argazkiak eta segurtasuna';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentuen argazkiak, enkriptatzea eta blokeoak';
+
+  @override
+  String get tutorialsTitleSharing => 'Segurtasunez partekatu';
+
+  @override
+  String get tutorialsSubSharing => 'Erregistro bat partekatu, pakete bat sortu, esteka bat gelditu';
+
+  @override
+  String get tutorialsTitleImportScan => 'Eskaneatu eta inportatu';
+
+  @override
+  String get tutorialsSubImportScan => 'Erregistro asko azkar gehitu';
+
+  @override
+  String get tutorialsTitleHousehold => 'Etxe partekatua';
+
+  @override
+  String get tutorialsSubHousehold => 'Gonbidatu besteak erregistroak eta oroigarriak partekatzera';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Zorroa galdu dut';
+
+  @override
+  String get tutorialsSubLostWallet => 'Prestatu orain, jardun azkar galtzen bada';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Bizitzako gertaerak';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plan bat etxez aldatzeko, haurra izateko, lan berrirako eta gehiagorako';
+
+  @override
+  String get tutorialsTitleAsk => 'Galdetu Vaultarari';
+
+  @override
+  String get tutorialsSubAsk => 'Txateatu edo hitz egin zure erregistroekin';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business tresnak';
+
+  @override
+  String get tutorialsSubBusiness => 'Langileen dokumentuak, oroigarriak eta txostenak';
+
+  @override
+  String get tutorialsGroupBasics => 'Oinarriak';
+
+  @override
+  String get tutorialsGroupOnTop => 'Egunean egon';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Bidaiak eta familia';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Bizitzako gertaerak eta larrialdiak';
+
+  @override
+  String get tutorialsGroupPaid => 'Ordainpeko funtzioak';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count urrats',
+      one: 'Urrats 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Ordainpeko planak';
+
+  @override
+  String get tutorialsPaidNote => 'Edozein planarekin ikus dezakezu. Funtzioa erabiltzeko ordainpeko plana behar da.';
+
+  @override
+  String get tutorialsBack => 'Atzera';
+
+  @override
+  String get tutorialsTryIt => 'Probatu orain';
+
+  @override
+  String get tutorialHintText => 'Berria zara? Egin bisita laburra';
+
+  @override
+  String get tutorialHintPlay => 'Erakutsi';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$total(e)tik $number. kapitulua';
+  }
+
+  @override
+  String get tourContinue => 'Jarraitu';
+
+  @override
+  String get tourSkip => 'Saltatu';
+
+  @override
+  String get tourSkipped => 'Saltatuta';
+
+  @override
+  String get tourDone => 'Bisita osoa ikusi duzu';
+
+  @override
+  String get tourRestart => 'Hasi berriro';
+
+  @override
+  String get whatsNewBadge => 'Berria';
+
+  @override
+  String get whatsNewTitle => 'Zorroa galdu dut';
+
+  @override
+  String get whatsNewBody => 'Gorde non dituzun txartelak eta banku bakoitzaren blokeatze-zenbakia. Zorroa galtzen baduzu, dena minututan blokeatuko duzu.';
+
+  @override
+  String get whatsNewDismiss => 'Ulertuta';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Xehetasun gehiagok gehigarriak ditu: oharrak, errepikapena, berritze-denbora, norena den, non gordetzen duzun, blokeoa eta argazkiak. Ireki behar duzunean bakarrik.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Blokeatu erregistro bat erakutsi aurretik hatz-marka edo pantaila-blokeoa eskatzeko. Aukeratu non gordetzen duzun, adibidez zorroan, eta gehitu dokumentuaren argazkiak.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Zorroa galdu duzu? Ikusi barruan zegoen guztia, deitu banku bakoitzari ukitu batekin eta jarraitu gainerakoaren urratsei.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Etxe-aldaketa, haurra, lan berria edo larrialdia? Bizitzako gertaerak plan bat ematen dizu zure erregistro, urrats eta datekin.';
+
+  @override
+  String get storySampleQuestion => 'Zer iraungitzen da aurten?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Zure $name martxoan iraungitzen da. Oroigarria nahi duzu hilabete lehenago?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name 30 egunetan iraungitzen da. Ukitu berritzeko.';
+  }
+
+  @override
+  String get storySampleGym => 'Gimnasioko kuota';
+
+  @override
+  String get storySampleFirstAid => 'Lehen sorospenen ziurtagiria';
+
+  @override
+  String get storySampleEncrypt => 'Enkriptatu argazkiak';
+
+  @override
+  String get storySampleAppLock => 'Aplikazioaren blokeoa';
+
+  @override
+  String get storySampleHideApp => 'Ezkutatu edukia aplikazio-aldatzailean';
+
+  @override
+  String get storyHome1Title => 'Zure eguna begirada batean';
+
+  @override
+  String get storyHome1Body => 'Hasierak gaur garrantzitsua dena erakusten du: laster iraungitzen dena eta zenbat erregistro dituzun.';
+
+  @override
+  String get storyHome2Title => 'Aurkitu dena';
+
+  @override
+  String get storyHome2Body => 'Ukitu bilaketa erregistro bat izenaren, taldearen edo pertsonaren arabera aurkitzeko.';
+
+  @override
+  String get storyHome3Title => 'Bidaiak eta planak';
+
+  @override
+  String get storyHome3Body => 'Planifikatzen ari zaren bidaiak eta bizitzako gertaeren planak hemen agertzen dira, egiteko dagoenarekin.';
+
+  @override
+  String get storyHome4Title => 'Laguntza ukitu batera';
+
+  @override
+  String get storyHome4Body => 'Distira-botoiak «Galdetu Vaultarari» irekitzen du. Zure argazkiak profila, ezarpenak eta tutorialak irekitzen ditu.';
+
+  @override
+  String get storyRenew1Title => 'Oroigarri bat iristen da';
+
+  @override
+  String get storyRenew1Body => 'Erregistro bat iraungi aurretik, Vaultarak gogorarazten dizu. Ukitu oroigarria erregistroa irekitzeko.';
+
+  @override
+  String get storyRenew2Title => 'Gorde data berria';
+
+  @override
+  String get storyRenew2Body => 'Berritu duzu? Ukitu «Berritu» eta idatzi iraungitze-data berria. Oroigarriak ere mugituko dira.';
+
+  @override
+  String get storyRenew3Title => 'Ez dakizu nola?';
+
+  @override
+  String get storyRenew3Body => 'Erregistro askok gida bat dute urratsekin, dokumentuekin eta ohiko kostuarekin.';
+
+  @override
+  String get storyRenew4Title => 'Errepika dadila';
+
+  @override
+  String get storyRenew4Body => 'Harpidetza eta urteko ordainketetarako, aktibatu errepikapena eta data bere kabuz aurreratuko da.';
+
+  @override
+  String get storyAsk1Title => 'Galdetu zure hitzekin';
+
+  @override
+  String get storyAsk1Body => 'Galdetu, adibidez, «Zer iraungitzen da aurten?» eta jaso erantzunak zure erregistroetatik.';
+
+  @override
+  String get storyAsk2Title => 'Hitz egin idatzi beharrean';
+
+  @override
+  String get storyAsk2Body => 'Ukitu mikrofonoa eta hitz egin. Hitzak hitz egin ahala agertzen dira, eta berehala bidal dezakezu.';
+
+  @override
+  String get storyAsk3Title => 'Zuk berresten duzu aldaketa oro';
+
+  @override
+  String get storyAsk3Body => 'Eskatu erregistro bat gehitzeko edo aldatzeko eta txartel bat ikusiko duzu lehenik. Ez da ezer gordetzen berretsi arte.';
+
+  @override
+  String get storyAsk4Title => 'Desegin edozein aldaketa';
+
+  @override
+  String get storyAsk4Body => 'Iritziz aldatu zara? Berretsitako aldaketa oro txartel berean desegin daiteke.';
+
+  @override
+  String get storyAsk5Title => 'Jarraitu utzi zenuen lekutik';
+
+  @override
+  String get storyAsk5Body => 'Txatak 90 egunez gordetzen dira «Txaten historia» atalean, eta iradokitako galderek hasten laguntzen dute.';
+
+  @override
+  String get storyWallet1Title => 'Prestatu lehenik';
+
+  @override
+  String get storyWallet1Body => 'Ireki txartel edo dokumentu bat eta aukeratu non gordetzen duzun, adibidez zorroan edo poltsan.';
+
+  @override
+  String get storyWallet2Title => 'Gorde blokeatze-zenbakia';
+
+  @override
+  String get storyWallet2Body => 'Gehitu orain banku bakoitzaren blokeatze-zenbakia. Txartelean dago, eta behar duzunean ez duzu izango.';
+
+  @override
+  String get storyWallet3Title => 'Galtzen bada';
+
+  @override
+  String get storyWallet3Body => 'Ireki «Zorroa galdu dut» eta ukitu «Galduta» edo «Lapurtuta». Vaultarak barruan zegoen guztia zerrendatzen du.';
+
+  @override
+  String get storyWallet4Title => 'Blokeatu txartelak minututan';
+
+  @override
+  String get storyWallet4Body => 'Deitu banku bakoitzari ukitu batekin, markatu txartelak blokeatuta gisa eta gorde salaketa-zenbakia.';
+
+  @override
+  String get storyWallet5Title => 'Ordeztu eta egon seguru';
+
+  @override
+  String get storyWallet5Body => 'Ordeztu dokumentuak, begiratu laburpenak gogorarazten zaizunean eta ukitu «Aurkitu dut» agertzen bada.';
+
+  @override
+  String get storyLife1Title => 'Une handiak, plan bakarra';
+
+  @override
+  String get storyLife1Body => 'Etxe-aldaketa, haurra, lan berria edo larrialdia: aukeratu «Bizitzako gertaerak» atalean zer gertatzen den.';
+
+  @override
+  String get storyLife2Title => 'Zure erregistroak, ordenatuta';
+
+  @override
+  String get storyLife2Body => 'Planak adierazten du zein erregistro eguneratu, baliogabetu edo berritu, eta zein gehitu beharko zenituzkeen.';
+
+  @override
+  String get storyLife3Title => 'Urratsak eta datak';
+
+  @override
+  String get storyLife3Body => 'Urratsek erregistroa ez dena hartzen dute, eta hasiera-datek noiz eskatu esaten dizute ezer berandu ez iristeko.';
+
+  @override
+  String get storyLife4Title => 'Egin zurea';
+
+  @override
+  String get storyLife4Body => 'Gehitu zure urratsak, partekatu plana PDF gisa eta jaso oroigarriak dataren inguruan.';
+
+  @override
+  String get storyPhotos1Title => 'Zure dokumentuen argazkiak';
+
+  @override
+  String get storyPhotos1Body => 'Erregistrotik, gehitu txartel edo dokumentu baten aurrealdeko eta atzealdeko argazkiak.';
+
+  @override
+  String get storyPhotos2Title => 'Telefonoan enkriptatuta';
+
+  @override
+  String get storyPhotos2Body => 'Aktibatu argazkien enkriptatzea eta argazkiak telefonoan babesten dira igo aurretik.';
+
+  @override
+  String get storyPhotos3Title => 'Blokeatu erregistro sentikorrak';
+
+  @override
+  String get storyPhotos3Body => 'Blokeatu erregistro bat eta hatz-marka edo pantaila-blokeoa eskatuko du ireki aurretik.';
+
+  @override
+  String get storyPhotos4Title => 'Blokeatu aplikazio osoa';
+
+  @override
+  String get storyPhotos4Body => 'Segurtasun-ezarpenetan, aktibatu aplikazioaren blokeoa eta ezkutatu edukia aplikazioz aldatzean.';
+
+  @override
+  String get storyShare1Title => 'Partekatu erregistro bat';
+
+  @override
+  String get storyShare1Body => 'Ireki erregistro bat eta partekatu erregistro hori bakarrik erakusten duen esteka bat.';
+
+  @override
+  String get storyShare2Title => 'Froga-paketea';
+
+  @override
+  String get storyShare2Body => 'Bildu aukeratzen dituzun erregistroak, argazkiekin, PDF bakarrean jabe, banku edo bulego baterako.';
+
+  @override
+  String get storyShare3Title => 'Kontrola zuk duzu';
+
+  @override
+  String get storyShare3Body => '«Partekatutako estekak» atalak sortu duzun esteka oro erakusten du. Gelditu bat nahi duzunean eta ez da gehiago irekiko.';
+
+  @override
+  String get storyHousehold1Title => 'Gonbidatu zure etxekoak';
+
+  @override
+  String get storyHousehold1Body => 'Partekatu gonbidapen-kode edo esteka bat. Pertsona bakoitzak bere kontuarekin hasten du saioa.';
+
+  @override
+  String get storyHousehold2Title => 'Erregistro multzo bakarra';
+
+  @override
+  String get storyHousehold2Body => 'Denek erregistro partekatu berak ikusten dituzte eta oroigarri berak jasotzen dituzte.';
+
+  @override
+  String get storyHousehold3Title => 'Norena da?';
+
+  @override
+  String get storyHousehold3Body => 'Erregistro bakoitza norbaitena izan daiteke. Haren izena erregistroan eta oroigarrietan agertzen da.';
+
+  @override
+  String get storyImport1Title => 'Eskaneatu txartel bat';
+
+  @override
+  String get storyImport1Body => 'Atera argazki bat txartel edo dokumentu bati eta Vaultarak izena eta iraungitze-data betetzen ditu.';
+
+  @override
+  String get storyImport2Title => 'Inportatu zerrenda bat';
+
+  @override
+  String get storyImport2Body => 'Kalkulu-orri bat duzu jada? Inportatu eta begiratu errenkada bakoitza ezer gorde aurretik.';
+
+  @override
+  String get storyImport3Title => 'Partekatu Vaultarara';
+
+  @override
+  String get storyImport3Body => 'Partekatu argazki, PDF edo testu bat beste aplikazio batetik Vaultarara erregistro berri bat hasteko.';
+
+  @override
+  String get storyCosts1Title => 'Zure egutegian';
+
+  @override
+  String get storyCosts1Body => 'Gehitu iraungitze-datak telefonoko egutegira, zure beste planen ondoan.';
+
+  @override
+  String get storyCosts2Title => 'Berritzeek zenbat balio duten';
+
+  @override
+  String get storyCosts2Body => 'Idatzi erregistro batean berritzearen kostua eta Vaultarak urtean zenbat gastatzen duzun erakusten du.';
+
+  @override
+  String get storyCosts3Title => 'Planifikatu aurretik';
+
+  @override
+  String get storyCosts3Body => 'Ikusi hilabete garestiak etortzen, berritze handi batek inoiz ez zaitzan ezustean harrapatu.';
+
+  @override
+  String get storyBusiness1Title => 'Jarraitu zure taldeari';
+
+  @override
+  String get storyBusiness1Body => 'Gehitu langileak eta gorde haien ziurtagiriak, baimenak eta lizentziak leku bakarrean.';
+
+  @override
+  String get storyBusiness2Title => 'Posta bidezko oroigarriak';
+
+  @override
+  String get storyBusiness2Body => 'Langileek posta bidezko oroigarriak jasotzen dituzte dokumentuak iraungi aurretik, aplikaziorik gabe ere.';
+
+  @override
+  String get storyBusiness3Title => 'Hileko txostena';
+
+  @override
+  String get storyBusiness3Body => 'Hilero txosten batek erakusten du zer dagoen indarrean, zer iraungitzen ari den eta zer falta den.';
+
+  @override
+  String get storyBusiness4Title => 'Eskatu eguneratze bat';
+
+  @override
+  String get storyBusiness4Body => 'Bidali esteka bat eta langileek beraiek igoko dute dokumentu berritua.';
 }

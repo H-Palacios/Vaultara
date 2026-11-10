@@ -7496,4 +7496,438 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Η αρχική σας οθόνη';
+
+  @override
+  String get tutorialsSubHome => 'Τι σημαίνουν οι κάρτες και πού βρίσκονται όλα';
+
+  @override
+  String get tutorialsTitleRenew => 'Ανανέωση εγγραφής';
+
+  @override
+  String get tutorialsSubRenew => 'Τι να κάνετε όταν έρθει υπενθύμιση';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Ημερολόγιο και κόστος';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Λήξεις στο ημερολόγιο και πόσο κοστίζουν οι ανανεώσεις';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Φωτογραφίες και ασφάλεια';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Φωτογραφίες εγγράφων, κρυπτογράφηση και κλειδώματα';
+
+  @override
+  String get tutorialsTitleSharing => 'Ασφαλής κοινή χρήση';
+
+  @override
+  String get tutorialsSubSharing => 'Κοινοποιήστε μια εγγραφή, φτιάξτε πακέτο, σταματήστε έναν σύνδεσμο';
+
+  @override
+  String get tutorialsTitleImportScan => 'Σάρωση και εισαγωγή';
+
+  @override
+  String get tutorialsSubImportScan => 'Προσθέστε γρήγορα πολλές εγγραφές';
+
+  @override
+  String get tutorialsTitleHousehold => 'Κοινό νοικοκυριό';
+
+  @override
+  String get tutorialsSubHousehold => 'Προσκαλέστε άλλους να μοιράζονται εγγραφές και υπενθυμίσεις';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Έχασα το πορτοφόλι μου';
+
+  @override
+  String get tutorialsSubLostWallet => 'Προετοιμαστείτε τώρα, δράστε γρήγορα αν χαθεί';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Γεγονότα ζωής';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Ένα σχέδιο για μετακόμιση, μωρό, νέα δουλειά και άλλα';
+
+  @override
+  String get tutorialsTitleAsk => 'Ρωτήστε το Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Γράψτε ή μιλήστε με τις εγγραφές σας';
+
+  @override
+  String get tutorialsTitleBusiness => 'Εργαλεία Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Έγγραφα προσωπικού, υπενθυμίσεις και αναφορές';
+
+  @override
+  String get tutorialsGroupBasics => 'Τα βασικά';
+
+  @override
+  String get tutorialsGroupOnTop => 'Όλα υπό έλεγχο';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Ταξίδια και οικογένεια';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Γεγονότα ζωής και έκτακτα περιστατικά';
+
+  @override
+  String get tutorialsGroupPaid => 'Επί πληρωμή λειτουργίες';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count βήματα',
+      one: '1 βήμα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Επί πληρωμή προγράμματα';
+
+  @override
+  String get tutorialsPaidNote => 'Μπορείτε να το δείτε με οποιοδήποτε πρόγραμμα. Η ίδια η λειτουργία απαιτεί πρόγραμμα επί πληρωμή.';
+
+  @override
+  String get tutorialsBack => 'Πίσω';
+
+  @override
+  String get tutorialsTryIt => 'Δοκιμάστε το';
+
+  @override
+  String get tutorialHintText => 'Νέος εδώ; Δείτε τη σύντομη περιήγηση';
+
+  @override
+  String get tutorialHintPlay => 'Δείξε μου';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Κεφάλαιο $number από $total';
+  }
+
+  @override
+  String get tourContinue => 'Συνέχεια';
+
+  @override
+  String get tourSkip => 'Παράλειψη';
+
+  @override
+  String get tourSkipped => 'Παραλείφθηκε';
+
+  @override
+  String get tourDone => 'Είδατε όλη την περιήγηση';
+
+  @override
+  String get tourRestart => 'Από την αρχή';
+
+  @override
+  String get whatsNewBadge => 'Νέο';
+
+  @override
+  String get whatsNewTitle => 'Έχασα το πορτοφόλι μου';
+
+  @override
+  String get whatsNewBody => 'Αποθηκεύστε πού έχετε τις κάρτες σας και τον αριθμό φραγής κάθε τράπεζας. Αν χάσετε το πορτοφόλι, μπλοκάρετε τα πάντα σε λίγα λεπτά.';
+
+  @override
+  String get whatsNewDismiss => 'Κατάλαβα';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Οι Περισσότερες λεπτομέρειες περιέχουν τα επιπλέον: σημειώσεις, επανάληψη, χρόνο ανανέωσης, σε ποιον ανήκει, πού το φυλάτε, κλείδωμα και φωτογραφίες. Ανοίξτε τες μόνο όταν χρειάζεται.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Κλειδώστε μια εγγραφή ώστε να ζητά δακτυλικό αποτύπωμα ή κλείδωμα οθόνης πριν εμφανιστεί. Επιλέξτε πού τη φυλάτε, π.χ. στο πορτοφόλι, και προσθέστε φωτογραφίες του εγγράφου.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Χάσατε το πορτοφόλι; Δείτε όσα είχε μέσα, καλέστε κάθε τράπεζα με ένα πάτημα και ακολουθήστε τα υπόλοιπα βήματα.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Μετακόμιση, μωρό, νέα δουλειά ή έκτακτο περιστατικό; Τα Γεγονότα ζωής σάς δίνουν σχέδιο με τις εγγραφές, τα βήματα και τις ημερομηνίες σας.';
+
+  @override
+  String get storySampleQuestion => 'Τι λήγει φέτος;';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Το $name σας λήγει τον Μάρτιο. Θέλετε υπενθύμιση έναν μήνα νωρίτερα;';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'Το $name λήγει σε 30 ημέρες. Πατήστε για ανανέωση.';
+  }
+
+  @override
+  String get storySampleGym => 'Συνδρομή γυμναστηρίου';
+
+  @override
+  String get storySampleFirstAid => 'Πιστοποιητικό πρώτων βοηθειών';
+
+  @override
+  String get storySampleEncrypt => 'Κρυπτογράφηση φωτογραφιών';
+
+  @override
+  String get storySampleAppLock => 'Κλείδωμα εφαρμογής';
+
+  @override
+  String get storySampleHideApp => 'Απόκρυψη περιεχομένου στην εναλλαγή εφαρμογών';
+
+  @override
+  String get storyHome1Title => 'Η μέρα σας με μια ματιά';
+
+  @override
+  String get storyHome1Body => 'Η αρχική δείχνει τι μετράει σήμερα: τι λήγει σύντομα και πόσες εγγραφές έχετε.';
+
+  @override
+  String get storyHome2Title => 'Βρείτε τα πάντα';
+
+  @override
+  String get storyHome2Body => 'Πατήστε την αναζήτηση για να βρείτε μια εγγραφή με όνομα, ομάδα ή πρόσωπο.';
+
+  @override
+  String get storyHome3Title => 'Ταξίδια και σχέδια';
+
+  @override
+  String get storyHome3Body => 'Εδώ εμφανίζονται τα ταξίδια που σχεδιάζετε και τα τρέχοντα σχέδια γεγονότων ζωής, με ό,τι απομένει.';
+
+  @override
+  String get storyHome4Title => 'Βοήθεια με ένα πάτημα';
+
+  @override
+  String get storyHome4Body => 'Το κουμπί με τη σπίθα ανοίγει το «Ρωτήστε το Vaultara». Η φωτογραφία σας ανοίγει το προφίλ, τις ρυθμίσεις και τους οδηγούς.';
+
+  @override
+  String get storyRenew1Title => 'Έρχεται υπενθύμιση';
+
+  @override
+  String get storyRenew1Body => 'Πριν λήξει μια εγγραφή, το Vaultara σάς το υπενθυμίζει. Πατήστε την υπενθύμιση για να ανοίξει η εγγραφή.';
+
+  @override
+  String get storyRenew2Title => 'Αποθηκεύστε τη νέα ημερομηνία';
+
+  @override
+  String get storyRenew2Body => 'Ανανεώθηκε; Πατήστε «Ανανέωση» και βάλτε τη νέα ημερομηνία λήξης. Οι υπενθυμίσεις μετακινούνται μαζί.';
+
+  @override
+  String get storyRenew3Title => 'Δεν ξέρετε πώς;';
+
+  @override
+  String get storyRenew3Body => 'Πολλές εγγραφές έχουν οδηγό με τα βήματα, τα έγγραφα και το συνηθισμένο κόστος.';
+
+  @override
+  String get storyRenew4Title => 'Αφήστε τη να επαναλαμβάνεται';
+
+  @override
+  String get storyRenew4Body => 'Για συνδρομές και ετήσιες πληρωμές, ενεργοποιήστε την επανάληψη και η ημερομηνία προχωρά μόνη της.';
+
+  @override
+  String get storyAsk1Title => 'Ρωτήστε με δικά σας λόγια';
+
+  @override
+  String get storyAsk1Body => 'Ρωτήστε π.χ. «Τι λήγει φέτος;» και πάρτε απαντήσεις από τις δικές σας εγγραφές.';
+
+  @override
+  String get storyAsk2Title => 'Μιλήστε αντί να γράφετε';
+
+  @override
+  String get storyAsk2Body => 'Πατήστε το μικρόφωνο και μιλήστε. Οι λέξεις εμφανίζονται καθώς μιλάτε και μπορείτε να στείλετε αμέσως.';
+
+  @override
+  String get storyAsk3Title => 'Εσείς επιβεβαιώνετε κάθε αλλαγή';
+
+  @override
+  String get storyAsk3Body => 'Ζητήστε να προστεθεί ή να αλλάξει μια εγγραφή και θα δείτε πρώτα μια κάρτα. Τίποτα δεν αποθηκεύεται χωρίς επιβεβαίωση.';
+
+  @override
+  String get storyAsk4Title => 'Αναίρεση οποιασδήποτε αλλαγής';
+
+  @override
+  String get storyAsk4Body => 'Αλλάξατε γνώμη; Κάθε επιβεβαιωμένη αλλαγή αναιρείται από την ίδια κάρτα.';
+
+  @override
+  String get storyAsk5Title => 'Συνεχίστε από εκεί που μείνατε';
+
+  @override
+  String get storyAsk5Body => 'Οι συνομιλίες κρατούνται 90 ημέρες στο «Ιστορικό συνομιλιών» και οι προτεινόμενες ερωτήσεις σάς βοηθούν να ξεκινήσετε.';
+
+  @override
+  String get storyWallet1Title => 'Πρώτα προετοιμαστείτε';
+
+  @override
+  String get storyWallet1Body => 'Ανοίξτε μια κάρτα ή ένα έγγραφο και επιλέξτε πού το φυλάτε, π.χ. στο πορτοφόλι ή την τσάντα.';
+
+  @override
+  String get storyWallet2Title => 'Αποθηκεύστε τον αριθμό φραγής';
+
+  @override
+  String get storyWallet2Body => 'Προσθέστε τώρα τον αριθμό φραγής κάθε τράπεζας. Είναι πάνω στην κάρτα, που δεν θα έχετε όταν τον χρειαστείτε.';
+
+  @override
+  String get storyWallet3Title => 'Αν χαθεί';
+
+  @override
+  String get storyWallet3Body => 'Ανοίξτε το «Έχασα το πορτοφόλι μου» και πατήστε «Χάθηκε» ή «Κλάπηκε». Το Vaultara δείχνει όσα είχε μέσα.';
+
+  @override
+  String get storyWallet4Title => 'Μπλοκάρετε κάρτες σε λίγα λεπτά';
+
+  @override
+  String get storyWallet4Body => 'Καλέστε κάθε τράπεζα με ένα πάτημα, σημειώστε τις κάρτες ως μπλοκαρισμένες και κρατήστε τον αριθμό της αναφοράς.';
+
+  @override
+  String get storyWallet5Title => 'Αντικαταστήστε και μείνετε ασφαλείς';
+
+  @override
+  String get storyWallet5Body => 'Αντικαταστήστε τα έγγραφα, ελέγξτε τις κινήσεις όταν σας το υπενθυμίσουμε και πατήστε «Το βρήκα» αν βρεθεί.';
+
+  @override
+  String get storyLife1Title => 'Μεγάλες στιγμές, ένα σχέδιο';
+
+  @override
+  String get storyLife1Body => 'Μετακόμιση, μωρό, νέα δουλειά ή έκτακτο περιστατικό: επιλέξτε στο «Γεγονότα ζωής» τι συμβαίνει.';
+
+  @override
+  String get storyLife2Title => 'Οι εγγραφές σας σε τάξη';
+
+  @override
+  String get storyLife2Body => 'Το σχέδιο δείχνει ποιες εγγραφές να ενημερώσετε, να ακυρώσετε ή να ανανεώσετε και ποιες ίσως να προσθέσετε.';
+
+  @override
+  String get storyLife3Title => 'Βήματα και ημερομηνίες';
+
+  @override
+  String get storyLife3Body => 'Τα βήματα καλύπτουν ό,τι δεν είναι εγγραφή και οι ημερομηνίες έναρξης λένε πότε να κάνετε αίτηση ώστε τίποτα να μην αργήσει.';
+
+  @override
+  String get storyLife4Title => 'Κάντε το δικό σας';
+
+  @override
+  String get storyLife4Body => 'Προσθέστε δικά σας βήματα, μοιραστείτε το σχέδιο ως PDF και λάβετε υπενθυμίσεις γύρω από την ημερομηνία.';
+
+  @override
+  String get storyPhotos1Title => 'Φωτογραφίες των εγγράφων σας';
+
+  @override
+  String get storyPhotos1Body => 'Από την εγγραφή, προσθέστε φωτογραφίες της μπροστινής και πίσω όψης κάρτας ή εγγράφου.';
+
+  @override
+  String get storyPhotos2Title => 'Κρυπτογραφημένες στο τηλέφωνο';
+
+  @override
+  String get storyPhotos2Body => 'Ενεργοποιήστε την κρυπτογράφηση φωτογραφιών και κλειδώνονται στο τηλέφωνο πριν ανέβουν.';
+
+  @override
+  String get storyPhotos3Title => 'Κλειδώστε ευαίσθητες εγγραφές';
+
+  @override
+  String get storyPhotos3Body => 'Κλειδώστε μια εγγραφή και θα ζητά δακτυλικό αποτύπωμα ή κλείδωμα οθόνης πριν ανοίξει.';
+
+  @override
+  String get storyPhotos4Title => 'Κλειδώστε όλη την εφαρμογή';
+
+  @override
+  String get storyPhotos4Body => 'Στις ρυθμίσεις ασφαλείας, ενεργοποιήστε το κλείδωμα εφαρμογής και κρύψτε το περιεχόμενο κατά την εναλλαγή.';
+
+  @override
+  String get storyShare1Title => 'Μοιραστείτε μία εγγραφή';
+
+  @override
+  String get storyShare1Body => 'Ανοίξτε μια εγγραφή και μοιραστείτε σύνδεσμο που δείχνει μόνο αυτήν, τίποτε άλλο.';
+
+  @override
+  String get storyShare2Title => 'Φάκελος αποδείξεων';
+
+  @override
+  String get storyShare2Body => 'Βάλτε τις εγγραφές που επιλέγετε, με τις φωτογραφίες τους, σε ένα PDF για ιδιοκτήτη, τράπεζα ή υπηρεσία.';
+
+  @override
+  String get storyShare3Title => 'Κρατήστε τον έλεγχο';
+
+  @override
+  String get storyShare3Body => 'Το «Σύνδεσμοι κοινοποίησης» δείχνει κάθε σύνδεσμο που φτιάξατε. Σταματήστε όποιον θέλετε, όποτε θέλετε, και δεν ανοίγει πια.';
+
+  @override
+  String get storyHousehold1Title => 'Προσκαλέστε το νοικοκυριό σας';
+
+  @override
+  String get storyHousehold1Body => 'Μοιραστείτε κωδικό ή σύνδεσμο πρόσκλησης. Ο καθένας συνδέεται με τον δικό του λογαριασμό.';
+
+  @override
+  String get storyHousehold2Title => 'Ένα σύνολο εγγραφών';
+
+  @override
+  String get storyHousehold2Body => 'Όλοι βλέπουν τις ίδιες κοινές εγγραφές και λαμβάνουν τις ίδιες υπενθυμίσεις.';
+
+  @override
+  String get storyHousehold3Title => 'Σε ποιον ανήκει;';
+
+  @override
+  String get storyHousehold3Body => 'Κάθε εγγραφή μπορεί να ανήκει σε κάποιον. Το όνομά του φαίνεται σε αυτήν και στις υπενθυμίσεις.';
+
+  @override
+  String get storyImport1Title => 'Σαρώστε μια κάρτα';
+
+  @override
+  String get storyImport1Body => 'Φωτογραφίστε μια κάρτα ή ένα έγγραφο και το Vaultara συμπληρώνει όνομα και ημερομηνία λήξης.';
+
+  @override
+  String get storyImport2Title => 'Εισαγάγετε μια λίστα';
+
+  @override
+  String get storyImport2Body => 'Έχετε ήδη υπολογιστικό φύλλο; Εισαγάγετέ το και ελέγξτε κάθε γραμμή πριν αποθηκευτεί κάτι.';
+
+  @override
+  String get storyImport3Title => 'Κοινή χρήση στο Vaultara';
+
+  @override
+  String get storyImport3Body => 'Στείλτε φωτογραφία, PDF ή κείμενο από άλλη εφαρμογή στο Vaultara για να ξεκινήσετε νέα εγγραφή.';
+
+  @override
+  String get storyCosts1Title => 'Στο ημερολόγιό σας';
+
+  @override
+  String get storyCosts1Body => 'Προσθέστε τις λήξεις στο ημερολόγιο του τηλεφώνου, δίπλα στα άλλα σας σχέδια.';
+
+  @override
+  String get storyCosts2Title => 'Πόσο κοστίζουν οι ανανεώσεις';
+
+  @override
+  String get storyCosts2Body => 'Βάλτε το κόστος ανανέωσης σε μια εγγραφή και το Vaultara δείχνει πόσα ξοδεύετε τον χρόνο.';
+
+  @override
+  String get storyCosts3Title => 'Σχεδιάστε από νωρίς';
+
+  @override
+  String get storyCosts3Body => 'Δείτε τους ακριβούς μήνες να έρχονται, ώστε μια μεγάλη ανανέωση να μη σας αιφνιδιάσει ποτέ.';
+
+  @override
+  String get storyBusiness1Title => 'Παρακολουθήστε την ομάδα σας';
+
+  @override
+  String get storyBusiness1Body => 'Προσθέστε προσωπικό και κρατήστε πιστοποιητικά, άδειες και διπλώματα σε ένα σημείο.';
+
+  @override
+  String get storyBusiness2Title => 'Υπενθυμίσεις με email';
+
+  @override
+  String get storyBusiness2Body => 'Το προσωπικό λαμβάνει email πριν λήξουν τα έγγραφά του, ακόμη και χωρίς την εφαρμογή.';
+
+  @override
+  String get storyBusiness3Title => 'Μηνιαία αναφορά';
+
+  @override
+  String get storyBusiness3Body => 'Κάθε μήνα μια αναφορά δείχνει τι ισχύει, τι λήγει και τι λείπει.';
+
+  @override
+  String get storyBusiness4Title => 'Ζητήστε ενημέρωση';
+
+  @override
+  String get storyBusiness4Body => 'Στείλτε σύνδεσμο και το μέλος του προσωπικού ανεβάζει μόνο του το ανανεωμένο έγγραφο.';
 }

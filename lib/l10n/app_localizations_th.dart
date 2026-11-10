@@ -7423,4 +7423,437 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'หน้าจอหลักของคุณ';
+
+  @override
+  String get tutorialsSubHome => 'ความหมายของการ์ดและทุกอย่างอยู่ที่ไหน';
+
+  @override
+  String get tutorialsTitleRenew => 'ต่ออายุรายการ';
+
+  @override
+  String get tutorialsSubRenew => 'สิ่งที่ต้องทำเมื่อมีการแจ้งเตือน';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'ปฏิทินและค่าใช้จ่าย';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'วันหมดอายุในปฏิทินและค่าต่ออายุ';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'รูปภาพและความปลอดภัย';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'รูปเอกสาร การเข้ารหัส และการล็อก';
+
+  @override
+  String get tutorialsTitleSharing => 'แชร์อย่างปลอดภัย';
+
+  @override
+  String get tutorialsSubSharing => 'แชร์รายการ สร้างชุด หยุดลิงก์';
+
+  @override
+  String get tutorialsTitleImportScan => 'สแกนและนำเข้า';
+
+  @override
+  String get tutorialsSubImportScan => 'เพิ่มรายการจำนวนมากอย่างรวดเร็ว';
+
+  @override
+  String get tutorialsTitleHousehold => 'ครัวเรือนที่แชร์';
+
+  @override
+  String get tutorialsSubHousehold => 'เชิญคนอื่นมาแชร์รายการและการแจ้งเตือน';
+
+  @override
+  String get tutorialsTitleLostWallet => 'กระเป๋าสตางค์หาย';
+
+  @override
+  String get tutorialsSubLostWallet => 'เตรียมพร้อมตอนนี้ แล้วรีบจัดการถ้าหาย';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'เหตุการณ์ในชีวิต';
+
+  @override
+  String get tutorialsSubLifeEvents => 'แผนสำหรับย้ายบ้าน มีลูก งานใหม่ และอื่น ๆ';
+
+  @override
+  String get tutorialsTitleAsk => 'ถาม Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'แชทหรือพูดคุยกับรายการของคุณ';
+
+  @override
+  String get tutorialsTitleBusiness => 'เครื่องมือ Business';
+
+  @override
+  String get tutorialsSubBusiness => 'เอกสารพนักงาน การแจ้งเตือน และรายงาน';
+
+  @override
+  String get tutorialsGroupBasics => 'พื้นฐาน';
+
+  @override
+  String get tutorialsGroupOnTop => 'ติดตามทุกอย่าง';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'การเดินทางและครอบครัว';
+
+  @override
+  String get tutorialsGroupEmergencies => 'เหตุการณ์ชีวิตและเหตุฉุกเฉิน';
+
+  @override
+  String get tutorialsGroupPaid => 'ฟีเจอร์แบบชำระเงิน';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ขั้นตอน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'แพ็กเกจแบบชำระเงิน';
+
+  @override
+  String get tutorialsPaidNote => 'คุณดูสิ่งนี้ได้ในทุกแพ็กเกจ ตัวฟีเจอร์ต้องใช้แพ็กเกจแบบชำระเงิน';
+
+  @override
+  String get tutorialsBack => 'ย้อนกลับ';
+
+  @override
+  String get tutorialsTryIt => 'ลองเลย';
+
+  @override
+  String get tutorialHintText => 'มาใหม่ใช่ไหม ดูทัวร์สั้น ๆ';
+
+  @override
+  String get tutorialHintPlay => 'แสดงให้ดู';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'บทที่ $number จาก $total';
+  }
+
+  @override
+  String get tourContinue => 'ต่อไป';
+
+  @override
+  String get tourSkip => 'ข้าม';
+
+  @override
+  String get tourSkipped => 'ข้ามแล้ว';
+
+  @override
+  String get tourDone => 'คุณดูทัวร์ครบแล้ว';
+
+  @override
+  String get tourRestart => 'เริ่มใหม่';
+
+  @override
+  String get whatsNewBadge => 'ใหม่';
+
+  @override
+  String get whatsNewTitle => 'กระเป๋าสตางค์หาย';
+
+  @override
+  String get whatsNewBody => 'บันทึกว่าคุณเก็บบัตรไว้ที่ไหนและเบอร์อายัดบัตรของแต่ละธนาคาร ถ้ากระเป๋าสตางค์หาย คุณอายัดทุกอย่างได้ในไม่กี่นาที';
+
+  @override
+  String get whatsNewDismiss => 'เข้าใจแล้ว';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'รายละเอียดเพิ่มเติมเก็บส่วนเสริมไว้ ได้แก่ บันทึก การทำซ้ำ ระยะเวลาต่ออายุ เป็นของใคร เก็บไว้ที่ไหน การล็อก และรูปภาพ เปิดเฉพาะเมื่อต้องการ';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'ล็อกรายการให้ต้องใช้ลายนิ้วมือหรือการล็อกหน้าจอก่อนแสดง เลือกที่เก็บ เช่น กระเป๋าสตางค์ และเพิ่มรูปเอกสาร';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'กระเป๋าสตางค์หาย? ดูทุกอย่างที่อยู่ข้างใน โทรหาแต่ละธนาคารในแตะเดียว แล้วทำตามขั้นตอนที่เหลือ';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'ย้ายบ้าน มีลูก งานใหม่ หรือเหตุฉุกเฉิน? เหตุการณ์ชีวิตให้แผนพร้อมรายการ ขั้นตอน และวันที่ของคุณ';
+
+  @override
+  String get storySampleQuestion => 'ปีนี้มีอะไรหมดอายุบ้าง';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name ของคุณหมดอายุเดือนมีนาคม ต้องการแจ้งเตือนล่วงหน้าหนึ่งเดือนไหม';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name หมดอายุในอีก 30 วัน แตะเพื่อต่ออายุ';
+  }
+
+  @override
+  String get storySampleGym => 'สมาชิกฟิตเนส';
+
+  @override
+  String get storySampleFirstAid => 'ใบรับรองการปฐมพยาบาล';
+
+  @override
+  String get storySampleEncrypt => 'เข้ารหัสรูปภาพ';
+
+  @override
+  String get storySampleAppLock => 'ล็อกแอป';
+
+  @override
+  String get storySampleHideApp => 'ซ่อนเนื้อหาในตัวสลับแอป';
+
+  @override
+  String get storyHome1Title => 'วันของคุณในแวบเดียว';
+
+  @override
+  String get storyHome1Body => 'หน้าจอหลักแสดงสิ่งสำคัญของวันนี้ ทั้งสิ่งที่จะหมดอายุเร็ว ๆ นี้และจำนวนรายการที่คุณมี';
+
+  @override
+  String get storyHome2Title => 'ค้นหาได้ทุกอย่าง';
+
+  @override
+  String get storyHome2Body => 'แตะค้นหาเพื่อหารายการตามชื่อ กลุ่ม หรือบุคคล';
+
+  @override
+  String get storyHome3Title => 'ทริปและแผน';
+
+  @override
+  String get storyHome3Body => 'ทริปที่คุณวางแผนและแผนเหตุการณ์ชีวิตที่กำลังดำเนินอยู่จะแสดงที่นี่ พร้อมสิ่งที่ยังเหลือ';
+
+  @override
+  String get storyHome4Title => 'ความช่วยเหลือในแตะเดียว';
+
+  @override
+  String get storyHome4Body => 'ปุ่มประกายเปิด «ถาม Vaultara» รูปของคุณเปิดโปรไฟล์ การตั้งค่า และบทแนะนำ';
+
+  @override
+  String get storyRenew1Title => 'มีการแจ้งเตือน';
+
+  @override
+  String get storyRenew1Body => 'ก่อนรายการหมดอายุ Vaultara จะเตือนคุณ แตะการแจ้งเตือนเพื่อเปิดรายการ';
+
+  @override
+  String get storyRenew2Title => 'บันทึกวันที่ใหม่';
+
+  @override
+  String get storyRenew2Body => 'ต่ออายุแล้ว? แตะ «ต่ออายุ» แล้วใส่วันหมดอายุใหม่ การแจ้งเตือนจะเลื่อนตามไปด้วย';
+
+  @override
+  String get storyRenew3Title => 'ไม่แน่ใจว่าต้องทำอย่างไร?';
+
+  @override
+  String get storyRenew3Body => 'หลายรายการมีคู่มือพร้อมขั้นตอน เอกสาร และค่าใช้จ่ายโดยทั่วไป';
+
+  @override
+  String get storyRenew4Title => 'ให้ทำซ้ำ';
+
+  @override
+  String get storyRenew4Body => 'สำหรับการสมัครสมาชิกและการชำระรายปี เปิดการทำซ้ำแล้ววันที่จะเลื่อนไปเอง';
+
+  @override
+  String get storyAsk1Title => 'ถามด้วยคำพูดของคุณ';
+
+  @override
+  String get storyAsk1Body => 'ถามเช่น «ปีนี้มีอะไรหมดอายุบ้าง» แล้วรับคำตอบจากรายการของคุณเอง';
+
+  @override
+  String get storyAsk2Title => 'พูดแทนการพิมพ์';
+
+  @override
+  String get storyAsk2Body => 'แตะไมค์แล้วพูด คำของคุณจะปรากฏขณะพูด และส่งได้ทันที';
+
+  @override
+  String get storyAsk3Title => 'คุณยืนยันทุกการเปลี่ยนแปลง';
+
+  @override
+  String get storyAsk3Body => 'ขอให้เพิ่มหรือแก้ไขรายการ แล้วคุณจะเห็นการ์ดก่อน จะไม่มีอะไรถูกบันทึกจนกว่าคุณจะยืนยัน';
+
+  @override
+  String get storyAsk4Title => 'เลิกทำการเปลี่ยนแปลงใดก็ได้';
+
+  @override
+  String get storyAsk4Body => 'เปลี่ยนใจ? ทุกการเปลี่ยนแปลงที่ยืนยันแล้วเลิกทำได้จากการ์ดเดิม';
+
+  @override
+  String get storyAsk5Title => 'ทำต่อจากที่ค้างไว้';
+
+  @override
+  String get storyAsk5Body => 'แชทจะเก็บไว้ 90 วันใน «ประวัติแชต» และคำถามแนะนำช่วยให้คุณเริ่มต้นได้';
+
+  @override
+  String get storyWallet1Title => 'เตรียมพร้อมก่อน';
+
+  @override
+  String get storyWallet1Body => 'เปิดบัตรหรือเอกสารแล้วเลือกที่เก็บ เช่น กระเป๋าสตางค์หรือกระเป๋า';
+
+  @override
+  String get storyWallet2Title => 'บันทึกเบอร์อายัดบัตร';
+
+  @override
+  String get storyWallet2Body => 'เพิ่มเบอร์อายัดบัตรของแต่ละธนาคารตอนนี้ เบอร์อยู่บนบัตร ซึ่งคุณจะไม่มีเมื่อต้องใช้';
+
+  @override
+  String get storyWallet3Title => 'ถ้าหาย';
+
+  @override
+  String get storyWallet3Body => 'เปิด «กระเป๋าสตางค์หาย» แล้วแตะ «หาย» หรือ «ถูกขโมย» Vaultara จะแสดงทุกอย่างที่อยู่ข้างใน';
+
+  @override
+  String get storyWallet4Title => 'อายัดบัตรในไม่กี่นาที';
+
+  @override
+  String get storyWallet4Body => 'โทรหาแต่ละธนาคารในแตะเดียว ทำเครื่องหมายว่าอายัดแล้ว และบันทึกเลขที่แจ้งความ';
+
+  @override
+  String get storyWallet5Title => 'ทำใหม่และปลอดภัย';
+
+  @override
+  String get storyWallet5Body => 'ทำเอกสารใหม่ ตรวจรายการเดินบัญชีเมื่อได้รับการเตือน และแตะ «ฉันเจอแล้ว» ถ้าเจอ';
+
+  @override
+  String get storyLife1Title => 'ช่วงเวลาสำคัญ แผนเดียว';
+
+  @override
+  String get storyLife1Body => 'ย้ายบ้าน มีลูก งานใหม่ หรือเหตุฉุกเฉิน: เลือกใน «เหตุการณ์ในชีวิต» ว่าเกิดอะไรขึ้น';
+
+  @override
+  String get storyLife2Title => 'รายการของคุณเป็นระเบียบ';
+
+  @override
+  String get storyLife2Body => 'แผนจะแสดงว่ารายการใดต้องอัปเดต ยกเลิก หรือต่ออายุ และรายการใดที่อาจต้องเพิ่ม';
+
+  @override
+  String get storyLife3Title => 'ขั้นตอนและวันที่';
+
+  @override
+  String get storyLife3Body => 'ขั้นตอนครอบคลุมสิ่งที่ไม่ใช่รายการ และวันเริ่มบอกว่าควรยื่นเมื่อไรเพื่อไม่ให้มีอะไรล่าช้า';
+
+  @override
+  String get storyLife4Title => 'ทำให้เป็นของคุณ';
+
+  @override
+  String get storyLife4Body => 'เพิ่มขั้นตอนของคุณเอง แชร์แผนเป็น PDF และรับการแจ้งเตือนช่วงใกล้วันที่';
+
+  @override
+  String get storyPhotos1Title => 'รูปเอกสารของคุณ';
+
+  @override
+  String get storyPhotos1Body => 'จากในรายการ เพิ่มรูปด้านหน้าและด้านหลังของบัตรหรือเอกสาร';
+
+  @override
+  String get storyPhotos2Title => 'เข้ารหัสในโทรศัพท์';
+
+  @override
+  String get storyPhotos2Body => 'เปิดการเข้ารหัสรูปภาพ แล้วรูปจะถูกล็อกในโทรศัพท์ก่อนอัปโหลด';
+
+  @override
+  String get storyPhotos3Title => 'ล็อกรายการสำคัญ';
+
+  @override
+  String get storyPhotos3Body => 'ล็อกรายการ แล้วจะขอลายนิ้วมือหรือการล็อกหน้าจอก่อนเปิด';
+
+  @override
+  String get storyPhotos4Title => 'ล็อกทั้งแอป';
+
+  @override
+  String get storyPhotos4Body => 'ในการตั้งค่าความปลอดภัย เปิดล็อกแอปและซ่อนเนื้อหาเมื่อสลับแอป';
+
+  @override
+  String get storyShare1Title => 'แชร์รายการเดียว';
+
+  @override
+  String get storyShare1Body => 'เปิดรายการแล้วแชร์ลิงก์ที่แสดงเฉพาะรายการนั้น ไม่มีอย่างอื่น';
+
+  @override
+  String get storyShare2Title => 'ชุดเอกสารยืนยัน';
+
+  @override
+  String get storyShare2Body => 'รวมรายการที่คุณเลือกพร้อมรูปไว้ใน PDF เดียวสำหรับเจ้าของที่พัก ธนาคาร หรือหน่วยงาน';
+
+  @override
+  String get storyShare3Title => 'ควบคุมได้เอง';
+
+  @override
+  String get storyShare3Body => '«ลิงก์ที่แชร์» แสดงทุกลิงก์ที่คุณสร้าง หยุดลิงก์ใดก็ได้ทุกเมื่อ แล้วลิงก์นั้นจะเปิดไม่ได้อีก';
+
+  @override
+  String get storyHousehold1Title => 'เชิญคนในบ้าน';
+
+  @override
+  String get storyHousehold1Body => 'แชร์รหัสหรือลิงก์คำเชิญ แต่ละคนลงชื่อเข้าใช้ด้วยบัญชีของตัวเอง';
+
+  @override
+  String get storyHousehold2Title => 'รายการชุดเดียว';
+
+  @override
+  String get storyHousehold2Body => 'ทุกคนเห็นรายการที่แชร์ชุดเดียวกันและได้รับการแจ้งเตือนเหมือนกัน';
+
+  @override
+  String get storyHousehold3Title => 'เป็นของใคร?';
+
+  @override
+  String get storyHousehold3Body => 'แต่ละรายการเป็นของใครสักคนได้ ชื่อจะแสดงบนรายการและในการแจ้งเตือน';
+
+  @override
+  String get storyImport1Title => 'สแกนบัตร';
+
+  @override
+  String get storyImport1Body => 'ถ่ายรูปบัตรหรือเอกสาร แล้ว Vaultara จะกรอกชื่อและวันหมดอายุให้';
+
+  @override
+  String get storyImport2Title => 'นำเข้ารายการ';
+
+  @override
+  String get storyImport2Body => 'มีสเปรดชีตอยู่แล้ว? นำเข้าแล้วตรวจทุกแถวก่อนบันทึก';
+
+  @override
+  String get storyImport3Title => 'แชร์มาที่ Vaultara';
+
+  @override
+  String get storyImport3Body => 'แชร์รูป PDF หรือข้อความจากแอปอื่นมาที่ Vaultara เพื่อเริ่มรายการใหม่';
+
+  @override
+  String get storyCosts1Title => 'ในปฏิทินของคุณ';
+
+  @override
+  String get storyCosts1Body => 'เพิ่มวันหมดอายุลงในปฏิทินโทรศัพท์ ข้างแผนอื่น ๆ ของคุณ';
+
+  @override
+  String get storyCosts2Title => 'ค่าต่ออายุ';
+
+  @override
+  String get storyCosts2Body => 'ใส่ค่าต่ออายุในรายการ แล้ว Vaultara จะแสดงว่าคุณใช้จ่ายเท่าไรต่อปี';
+
+  @override
+  String get storyCosts3Title => 'วางแผนล่วงหน้า';
+
+  @override
+  String get storyCosts3Body => 'เห็นเดือนที่ค่าใช้จ่ายสูงล่วงหน้า การต่ออายุก้อนใหญ่จะไม่ทำให้คุณตกใจ';
+
+  @override
+  String get storyBusiness1Title => 'ติดตามทีมของคุณ';
+
+  @override
+  String get storyBusiness1Body => 'เพิ่มพนักงานและเก็บใบรับรอง ใบอนุญาต และใบประกอบวิชาชีพไว้ที่เดียว';
+
+  @override
+  String get storyBusiness2Title => 'แจ้งเตือนทางอีเมล';
+
+  @override
+  String get storyBusiness2Body => 'พนักงานได้รับอีเมลก่อนเอกสารหมดอายุ แม้ไม่มีแอป';
+
+  @override
+  String get storyBusiness3Title => 'รายงานรายเดือน';
+
+  @override
+  String get storyBusiness3Body => 'ทุกเดือนจะมีรายงานว่าอะไรยังใช้ได้ อะไรกำลังหมดอายุ และอะไรขาดหายไป';
+
+  @override
+  String get storyBusiness4Title => 'ขอการอัปเดต';
+
+  @override
+  String get storyBusiness4Body => 'ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง';
 }

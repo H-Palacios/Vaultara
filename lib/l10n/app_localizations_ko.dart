@@ -7435,4 +7435,437 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => '홈 화면';
+
+  @override
+  String get tutorialsSubHome => '카드의 의미와 모든 항목의 위치';
+
+  @override
+  String get tutorialsTitleRenew => '기록 갱신하기';
+
+  @override
+  String get tutorialsSubRenew => '알림이 오면 할 일';
+
+  @override
+  String get tutorialsTitleCalendarCosts => '캘린더와 비용';
+
+  @override
+  String get tutorialsSubCalendarCosts => '캘린더의 만료일과 갱신 비용';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => '사진과 보안';
+
+  @override
+  String get tutorialsSubPhotosSecurity => '서류 사진, 암호화, 잠금';
+
+  @override
+  String get tutorialsTitleSharing => '안전하게 공유';
+
+  @override
+  String get tutorialsSubSharing => '기록 공유, 팩 만들기, 링크 중지';
+
+  @override
+  String get tutorialsTitleImportScan => '스캔 및 가져오기';
+
+  @override
+  String get tutorialsSubImportScan => '많은 기록을 빠르게 추가';
+
+  @override
+  String get tutorialsTitleHousehold => '공유 가구';
+
+  @override
+  String get tutorialsSubHousehold => '기록과 알림을 함께 쓰도록 가족 초대';
+
+  @override
+  String get tutorialsTitleLostWallet => '지갑 분실';
+
+  @override
+  String get tutorialsSubLostWallet => '지금 준비하고, 잃어버리면 빠르게 대처';
+
+  @override
+  String get tutorialsTitleLifeEvents => '생활 변화';
+
+  @override
+  String get tutorialsSubLifeEvents => '이사, 출산, 이직 등을 위한 계획';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara에 물어보기';
+
+  @override
+  String get tutorialsSubAsk => '기록과 채팅하거나 대화하기';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business 도구';
+
+  @override
+  String get tutorialsSubBusiness => '직원 서류, 알림, 보고서';
+
+  @override
+  String get tutorialsGroupBasics => '기본';
+
+  @override
+  String get tutorialsGroupOnTop => '빠짐없이 관리';
+
+  @override
+  String get tutorialsGroupTravelFamily => '여행과 가족';
+
+  @override
+  String get tutorialsGroupEmergencies => '인생 이벤트와 비상 상황';
+
+  @override
+  String get tutorialsGroupPaid => '유료 기능';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count단계',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => '유료 요금제';
+
+  @override
+  String get tutorialsPaidNote => '어떤 요금제에서도 볼 수 있어요. 기능을 쓰려면 유료 요금제가 필요해요.';
+
+  @override
+  String get tutorialsBack => '뒤로';
+
+  @override
+  String get tutorialsTryIt => '지금 해 보기';
+
+  @override
+  String get tutorialHintText => '처음이신가요? 짧은 투어를 보세요';
+
+  @override
+  String get tutorialHintPlay => '보여 주기';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$total장 중 $number장';
+  }
+
+  @override
+  String get tourContinue => '계속';
+
+  @override
+  String get tourSkip => '건너뛰기';
+
+  @override
+  String get tourSkipped => '건너뜀';
+
+  @override
+  String get tourDone => '투어를 모두 봤어요';
+
+  @override
+  String get tourRestart => '처음부터';
+
+  @override
+  String get whatsNewBadge => '새 기능';
+
+  @override
+  String get whatsNewTitle => '지갑 분실';
+
+  @override
+  String get whatsNewBody => '카드를 어디에 두는지와 은행별 분실 신고 번호를 저장하세요. 지갑을 잃어버려도 몇 분 만에 모두 정지할 수 있어요.';
+
+  @override
+  String get whatsNewDismiss => '알겠어요';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => '세부 정보 더보기에는 추가 항목이 있어요: 메모, 반복, 갱신 기간, 소유자, 보관 장소, 잠금, 사진. 필요할 때만 여세요.';
+
+  @override
+  String get tutorialAddRecordProtect2 => '기록을 잠그면 표시 전에 지문이나 화면 잠금이 필요해요. 지갑 등 보관 장소를 고르고 서류 사진을 추가하세요.';
+
+  @override
+  String get tutorialSmartLostWallet2 => '지갑을 잃어버렸나요? 안에 있던 것을 모두 확인하고, 탭 한 번으로 은행마다 전화하고, 나머지 단계를 따라가세요.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => '이사, 출산, 이직, 비상 상황인가요? 인생 이벤트가 내 기록, 단계, 날짜로 계획을 만들어 드려요.';
+
+  @override
+  String get storySampleQuestion => '올해 만료되는 건?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name이(가) 3월에 만료돼요. 한 달 전에 알림을 받을까요?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name이(가) 30일 후 만료돼요. 탭해서 갱신하세요.';
+  }
+
+  @override
+  String get storySampleGym => '헬스장 회원권';
+
+  @override
+  String get storySampleFirstAid => '응급처치 수료증';
+
+  @override
+  String get storySampleEncrypt => '사진 암호화';
+
+  @override
+  String get storySampleAppLock => '앱 잠금';
+
+  @override
+  String get storySampleHideApp => '앱 전환 화면에서 내용 숨기기';
+
+  @override
+  String get storyHome1Title => '오늘을 한눈에';
+
+  @override
+  String get storyHome1Body => '홈 화면은 오늘 중요한 것을 보여 줘요: 곧 만료되는 항목과 기록 개수.';
+
+  @override
+  String get storyHome2Title => '무엇이든 찾기';
+
+  @override
+  String get storyHome2Body => '검색을 탭해 이름, 그룹, 사람으로 기록을 찾으세요.';
+
+  @override
+  String get storyHome3Title => '여행과 계획';
+
+  @override
+  String get storyHome3Body => '계획 중인 여행과 진행 중인 인생 이벤트 계획이 남은 일과 함께 여기 표시돼요.';
+
+  @override
+  String get storyHome4Title => '탭 한 번으로 도움';
+
+  @override
+  String get storyHome4Body => '반짝이 버튼으로 \'Vaultara에 물어보기\'이(가) 열려요. 프로필 사진을 누르면 프로필, 설정, 튜토리얼이 열려요.';
+
+  @override
+  String get storyRenew1Title => '알림이 와요';
+
+  @override
+  String get storyRenew1Body => '기록이 만료되기 전에 Vaultara가 알려 드려요. 알림을 탭하면 기록이 열려요.';
+
+  @override
+  String get storyRenew2Title => '새 날짜 저장';
+
+  @override
+  String get storyRenew2Body => '갱신했나요? \'갱신\'을(를) 탭하고 새 만료일을 입력하세요. 알림도 함께 옮겨져요.';
+
+  @override
+  String get storyRenew3Title => '방법을 모르겠나요?';
+
+  @override
+  String get storyRenew3Body => '많은 기록에 단계, 필요 서류, 일반적인 비용을 담은 안내가 있어요.';
+
+  @override
+  String get storyRenew4Title => '반복되게 하기';
+
+  @override
+  String get storyRenew4Body => '구독과 연간 결제는 반복을 켜면 날짜가 자동으로 넘어가요.';
+
+  @override
+  String get storyAsk1Title => '내 말로 물어보기';
+
+  @override
+  String get storyAsk1Body => '\"올해 만료되는 건?\"처럼 물으면 내 기록에서 답을 찾아 드려요.';
+
+  @override
+  String get storyAsk2Title => '입력 대신 말하기';
+
+  @override
+  String get storyAsk2Body => '마이크를 탭하고 말하세요. 말하는 동안 글자가 나타나고 바로 보낼 수 있어요.';
+
+  @override
+  String get storyAsk3Title => '모든 변경은 내가 확인';
+
+  @override
+  String get storyAsk3Body => '기록 추가나 변경을 요청하면 먼저 카드가 보여요. 확인하기 전에는 아무것도 저장되지 않아요.';
+
+  @override
+  String get storyAsk4Title => '어떤 변경이든 되돌리기';
+
+  @override
+  String get storyAsk4Body => '마음이 바뀌었나요? 확인한 변경은 같은 카드에서 되돌릴 수 있어요.';
+
+  @override
+  String get storyAsk5Title => '이어서 하기';
+
+  @override
+  String get storyAsk5Body => '채팅은 \'대화 기록\'에 90일 동안 보관되고, 추천 질문이 시작을 도와요.';
+
+  @override
+  String get storyWallet1Title => '먼저 준비하기';
+
+  @override
+  String get storyWallet1Body => '카드나 서류를 열고 지갑이나 가방 등 보관 장소를 고르세요.';
+
+  @override
+  String get storyWallet2Title => '분실 신고 번호 저장';
+
+  @override
+  String get storyWallet2Body => '지금 은행별 분실 신고 번호를 추가하세요. 번호는 카드에 있는데, 필요할 땐 카드가 없어요.';
+
+  @override
+  String get storyWallet3Title => '잃어버렸다면';
+
+  @override
+  String get storyWallet3Body => '\'지갑 분실\'을(를) 열고 \'분실\' 또는 \'도난\'을(를) 탭하세요. Vaultara가 안에 있던 것을 모두 보여 줘요.';
+
+  @override
+  String get storyWallet4Title => '몇 분 만에 카드 정지';
+
+  @override
+  String get storyWallet4Body => '탭 한 번으로 은행마다 전화하고, 카드를 정지됨으로 표시하고, 신고 번호를 저장하세요.';
+
+  @override
+  String get storyWallet5Title => '재발급하고 안전하게';
+
+  @override
+  String get storyWallet5Body => '서류를 재발급하고, 알림이 오면 거래 내역을 확인하고, 찾으면 \'찾았어요\'을(를) 탭하세요.';
+
+  @override
+  String get storyLife1Title => '큰 순간, 하나의 계획';
+
+  @override
+  String get storyLife1Body => '이사, 출산, 이직, 비상 상황: \'생활 변화\'에서 어떤 일인지 고르세요.';
+
+  @override
+  String get storyLife2Title => '정리된 내 기록';
+
+  @override
+  String get storyLife2Body => '계획에서 업데이트, 해지, 갱신할 기록과 추가가 필요할 수 있는 기록을 알려 줘요.';
+
+  @override
+  String get storyLife3Title => '단계와 날짜';
+
+  @override
+  String get storyLife3Body => '단계는 기록이 아닌 일을 다루고, 시작일은 늦지 않도록 언제 신청할지 알려 줘요.';
+
+  @override
+  String get storyLife4Title => '나에게 맞게';
+
+  @override
+  String get storyLife4Body => '나만의 단계를 추가하고, 계획을 PDF로 공유하고, 날짜 즈음 알림을 받으세요.';
+
+  @override
+  String get storyPhotos1Title => '서류 사진';
+
+  @override
+  String get storyPhotos1Body => '기록에서 카드나 서류의 앞뒷면 사진을 추가하세요.';
+
+  @override
+  String get storyPhotos2Title => '휴대폰에서 암호화';
+
+  @override
+  String get storyPhotos2Body => '사진 암호화를 켜면 업로드 전에 휴대폰에서 잠겨요.';
+
+  @override
+  String get storyPhotos3Title => '민감한 기록 잠그기';
+
+  @override
+  String get storyPhotos3Body => '기록을 잠그면 열기 전에 지문이나 화면 잠금을 요구해요.';
+
+  @override
+  String get storyPhotos4Title => '앱 전체 잠그기';
+
+  @override
+  String get storyPhotos4Body => '보안 설정에서 앱 잠금을 켜고 앱 전환 시 내용을 숨기세요.';
+
+  @override
+  String get storyShare1Title => '기록 하나만 공유';
+
+  @override
+  String get storyShare1Body => '기록을 열고 그 기록만 보이는 링크를 공유하세요. 다른 건 보이지 않아요.';
+
+  @override
+  String get storyShare2Title => '증빙 패키지';
+
+  @override
+  String get storyShare2Body => '고른 기록을 사진과 함께 PDF 하나로 묶어 집주인, 은행, 관공서에 낼 수 있어요.';
+
+  @override
+  String get storyShare3Title => '통제는 내 손에';
+
+  @override
+  String get storyShare3Body => '\'공유한 링크\'에서 만든 링크를 모두 볼 수 있어요. 언제든 중지하면 더는 열리지 않아요.';
+
+  @override
+  String get storyHousehold1Title => '가족 초대';
+
+  @override
+  String get storyHousehold1Body => '초대 코드나 링크를 공유하세요. 각자 자기 계정으로 로그인해요.';
+
+  @override
+  String get storyHousehold2Title => '하나의 기록 모음';
+
+  @override
+  String get storyHousehold2Body => '모두가 같은 공유 기록을 보고 같은 알림을 받아요.';
+
+  @override
+  String get storyHousehold3Title => '누구 거예요?';
+
+  @override
+  String get storyHousehold3Body => '기록마다 주인을 정할 수 있고, 이름이 기록과 알림에 표시돼요.';
+
+  @override
+  String get storyImport1Title => '카드 스캔';
+
+  @override
+  String get storyImport1Body => '카드나 서류를 찍으면 Vaultara가 이름과 만료일을 채워 줘요.';
+
+  @override
+  String get storyImport2Title => '목록 가져오기';
+
+  @override
+  String get storyImport2Body => '이미 스프레드시트가 있나요? 가져와서 저장 전에 행마다 확인하세요.';
+
+  @override
+  String get storyImport3Title => 'Vaultara로 공유';
+
+  @override
+  String get storyImport3Body => '다른 앱에서 사진, PDF, 텍스트를 Vaultara로 공유해 새 기록을 시작하세요.';
+
+  @override
+  String get storyCosts1Title => '내 캘린더에';
+
+  @override
+  String get storyCosts1Body => '만료일을 휴대폰 캘린더에 다른 일정과 함께 추가하세요.';
+
+  @override
+  String get storyCosts2Title => '갱신 비용';
+
+  @override
+  String get storyCosts2Body => '기록에 갱신 비용을 입력하면 Vaultara가 연간 지출을 보여 줘요.';
+
+  @override
+  String get storyCosts3Title => '미리 계획하기';
+
+  @override
+  String get storyCosts3Body => '지출이 큰 달을 미리 보고 큰 갱신에 당황하지 않도록 하세요.';
+
+  @override
+  String get storyBusiness1Title => '팀 관리';
+
+  @override
+  String get storyBusiness1Body => '직원을 추가하고 자격증, 허가증, 면허를 한곳에서 관리하세요.';
+
+  @override
+  String get storyBusiness2Title => '이메일 알림';
+
+  @override
+  String get storyBusiness2Body => '직원은 서류 만료 전에 이메일을 받아요. 앱이 없어도 돼요.';
+
+  @override
+  String get storyBusiness3Title => '월간 보고서';
+
+  @override
+  String get storyBusiness3Body => '매달 보고서로 유효한 것, 만료 예정인 것, 빠진 것을 확인하세요.';
+
+  @override
+  String get storyBusiness4Title => '업데이트 요청';
+
+  @override
+  String get storyBusiness4Body => '링크를 보내면 직원이 갱신한 서류를 직접 올려요.';
 }

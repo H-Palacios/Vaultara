@@ -7640,4 +7640,440 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Jūsų pradžios ekranas';
+
+  @override
+  String get tutorialsSubHome => 'Ką reiškia kortelės ir kur kas yra';
+
+  @override
+  String get tutorialsTitleRenew => 'Įrašo atnaujinimas';
+
+  @override
+  String get tutorialsSubRenew => 'Ką daryti, kai gaunate priminimą';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendorius ir išlaidos';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Galiojimo datos kalendoriuje ir kiek kainuoja atnaujinimai';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Nuotraukos ir sauga';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentų nuotraukos, šifravimas ir užraktai';
+
+  @override
+  String get tutorialsTitleSharing => 'Saugus bendrinimas';
+
+  @override
+  String get tutorialsSubSharing => 'Bendrinti įrašą, sudaryti paketą, sustabdyti nuorodą';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skenavimas ir importas';
+
+  @override
+  String get tutorialsSubImportScan => 'Greitai pridėkite daug įrašų';
+
+  @override
+  String get tutorialsTitleHousehold => 'Bendras namų ūkis';
+
+  @override
+  String get tutorialsSubHousehold => 'Pakvieskite kitus bendrinti įrašus ir priminimus';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Pamečiau piniginę';
+
+  @override
+  String get tutorialsSubLostWallet => 'Pasiruoškite dabar ir greitai veikite, jei jis dings';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Gyvenimo įvykiai';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Planas persikraustymui, kūdikiui, naujam darbui ir kt.';
+
+  @override
+  String get tutorialsTitleAsk => 'Klauskite Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Rašykite ar kalbėkite su savo įrašais';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business įrankiai';
+
+  @override
+  String get tutorialsSubBusiness => 'Darbuotojų dokumentai, priminimai ir ataskaitos';
+
+  @override
+  String get tutorialsGroupBasics => 'Pagrindai';
+
+  @override
+  String get tutorialsGroupOnTop => 'Viską kontroliuoti';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Kelionės ir šeima';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Gyvenimo įvykiai ir nelaimės';
+
+  @override
+  String get tutorialsGroupPaid => 'Mokamos funkcijos';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count žingsnių',
+      many: '$count žingsnio',
+      few: '$count žingsniai',
+      one: '$count žingsnis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Mokami planai';
+
+  @override
+  String get tutorialsPaidNote => 'Tai galite peržiūrėti su bet kuriuo planu. Pačiai funkcijai reikia mokamo plano.';
+
+  @override
+  String get tutorialsBack => 'Atgal';
+
+  @override
+  String get tutorialsTryIt => 'Išbandyti';
+
+  @override
+  String get tutorialHintText => 'Esate čia naujas? Peržiūrėkite trumpą turą';
+
+  @override
+  String get tutorialHintPlay => 'Rodyti';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$number skyrius iš $total';
+  }
+
+  @override
+  String get tourContinue => 'Tęsti';
+
+  @override
+  String get tourSkip => 'Praleisti';
+
+  @override
+  String get tourSkipped => 'Praleista';
+
+  @override
+  String get tourDone => 'Peržiūrėjote visą turą';
+
+  @override
+  String get tourRestart => 'Pradėti iš naujo';
+
+  @override
+  String get whatsNewBadge => 'Nauja';
+
+  @override
+  String get whatsNewTitle => 'Pamečiau piniginę';
+
+  @override
+  String get whatsNewBody => 'Išsaugokite, kur laikote korteles, ir kiekvieno banko blokavimo numerį. Pametę piniginę, viską užblokuosite per kelias minutes.';
+
+  @override
+  String get whatsNewDismiss => 'Supratau';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Daugiau informacijos apima papildomus dalykus: pastabas, kartojimą, atnaujinimo laiką, kieno įrašas, kur jį laikote, užraktą ir nuotraukas. Atidarykite tik kai reikia.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Užrakinkite įrašą, kad prieš rodant būtų prašoma piršto atspaudo ar ekrano užrakto. Pasirinkite, kur jį laikote, pvz., piniginėje, ir pridėkite dokumento nuotraukų.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Pametėte piniginę? Pamatykite viską, kas joje buvo, vienu palietimu paskambinkite kiekvienam bankui ir atlikite likusius žingsnius.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Persikraustymas, kūdikis, naujas darbas ar nelaimė? Gyvenimo įvykiai pateikia planą su jūsų įrašais, žingsniais ir datomis.';
+
+  @override
+  String get storySampleQuestion => 'Kas baigiasi šiais metais?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Jūsų $name baigiasi kovą. Ar norite priminimo mėnesiu anksčiau?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name baigiasi po 30 dienų. Palieskite, kad atnaujintumėte.';
+  }
+
+  @override
+  String get storySampleGym => 'Sporto klubo narystė';
+
+  @override
+  String get storySampleFirstAid => 'Pirmosios pagalbos pažymėjimas';
+
+  @override
+  String get storySampleEncrypt => 'Šifruoti nuotraukas';
+
+  @override
+  String get storySampleAppLock => 'Programos užraktas';
+
+  @override
+  String get storySampleHideApp => 'Slėpti turinį programų perjungiklyje';
+
+  @override
+  String get storyHome1Title => 'Jūsų diena vienu žvilgsniu';
+
+  @override
+  String get storyHome1Body => 'Pradžios ekranas rodo, kas svarbu šiandien: kas netrukus baigiasi ir kiek turite įrašų.';
+
+  @override
+  String get storyHome2Title => 'Raskite viską';
+
+  @override
+  String get storyHome2Body => 'Palieskite paiešką, kad rastumėte įrašą pagal pavadinimą, grupę ar asmenį.';
+
+  @override
+  String get storyHome3Title => 'Kelionės ir planai';
+
+  @override
+  String get storyHome3Body => 'Čia rodomos planuojamos kelionės ir vykdomi gyvenimo įvykių planai su tuo, kas liko.';
+
+  @override
+  String get storyHome4Title => 'Pagalba vienu palietimu';
+
+  @override
+  String get storyHome4Body => 'Kibirkšties mygtukas atidaro „Klauskite Vaultara“. Jūsų nuotrauka atidaro profilį, nustatymus ir mokymus.';
+
+  @override
+  String get storyRenew1Title => 'Gaunate priminimą';
+
+  @override
+  String get storyRenew1Body => 'Prieš baigiantis įrašui Vaultara jums primena. Palieskite priminimą, kad atidarytumėte įrašą.';
+
+  @override
+  String get storyRenew2Title => 'Išsaugokite naują datą';
+
+  @override
+  String get storyRenew2Body => 'Atnaujinote? Palieskite „Atnaujinti“ ir įveskite naują galiojimo datą. Priminimai pasislenka kartu.';
+
+  @override
+  String get storyRenew3Title => 'Nežinote, kaip?';
+
+  @override
+  String get storyRenew3Body => 'Daugelis įrašų turi vadovą su žingsniais, dokumentais ir įprasta kaina.';
+
+  @override
+  String get storyRenew4Title => 'Tegul kartojasi';
+
+  @override
+  String get storyRenew4Body => 'Prenumeratoms ir metiniams mokėjimams įjunkite kartojimą, ir data pasislinks pati.';
+
+  @override
+  String get storyAsk1Title => 'Klauskite savais žodžiais';
+
+  @override
+  String get storyAsk1Body => 'Paklauskite, pvz., „Kas baigiasi šiais metais?“ ir gaukite atsakymus iš savo įrašų.';
+
+  @override
+  String get storyAsk2Title => 'Kalbėkite vietoj rašymo';
+
+  @override
+  String get storyAsk2Body => 'Palieskite mikrofoną ir kalbėkite. Žodžiai rodomi jums kalbant, ir galite iškart siųsti.';
+
+  @override
+  String get storyAsk3Title => 'Kiekvieną pakeitimą patvirtinate jūs';
+
+  @override
+  String get storyAsk3Body => 'Paprašykite pridėti ar pakeisti įrašą ir pirmiausia pamatysite kortelę. Niekas neišsaugoma, kol nepatvirtinsite.';
+
+  @override
+  String get storyAsk4Title => 'Atšaukite bet kokį pakeitimą';
+
+  @override
+  String get storyAsk4Body => 'Persigalvojote? Kiekvieną patvirtintą pakeitimą galima atšaukti iš tos pačios kortelės.';
+
+  @override
+  String get storyAsk5Title => 'Tęskite nuo ten, kur baigėte';
+
+  @override
+  String get storyAsk5Body => 'Pokalbiai saugomi 90 dienų skiltyje „Pokalbių istorija“, o siūlomi klausimai padeda pradėti.';
+
+  @override
+  String get storyWallet1Title => 'Pirmiausia pasiruoškite';
+
+  @override
+  String get storyWallet1Body => 'Atidarykite kortelę ar dokumentą ir pasirinkite, kur jį laikote, pvz., piniginėje ar rankinėje.';
+
+  @override
+  String get storyWallet2Title => 'Išsaugokite blokavimo numerį';
+
+  @override
+  String get storyWallet2Body => 'Pridėkite kiekvieno banko blokavimo numerį dabar. Jis yra kortelėje, kurios neturėsite, kai jo prireiks.';
+
+  @override
+  String get storyWallet3Title => 'Jei jis dingo';
+
+  @override
+  String get storyWallet3Body => 'Atidarykite „Pamečiau piniginę“ ir palieskite „Pamesta“ arba „Pavogta“. Vaultara išvardija viską, kas joje buvo.';
+
+  @override
+  String get storyWallet4Title => 'Užblokuokite korteles per minutes';
+
+  @override
+  String get storyWallet4Body => 'Vienu palietimu skambinkite kiekvienam bankui, pažymėkite korteles kaip užblokuotas ir išsaugokite pranešimo numerį.';
+
+  @override
+  String get storyWallet5Title => 'Pakeiskite ir būkite saugūs';
+
+  @override
+  String get storyWallet5Body => 'Pakeiskite dokumentus, patikrinkite išrašus, kai priminsime, ir palieskite „Radau“, jei jis atsiras.';
+
+  @override
+  String get storyLife1Title => 'Svarbios akimirkos, vienas planas';
+
+  @override
+  String get storyLife1Body => 'Persikraustymas, kūdikis, naujas darbas ar nelaimė: skiltyje „Gyvenimo įvykiai“ pasirinkite, kas vyksta.';
+
+  @override
+  String get storyLife2Title => 'Jūsų įrašai tvarkoje';
+
+  @override
+  String get storyLife2Body => 'Planas parodo, kuriuos įrašus atnaujinti, atšaukti ar pratęsti ir kuriuos galbūt pridėti.';
+
+  @override
+  String get storyLife3Title => 'Žingsniai ir datos';
+
+  @override
+  String get storyLife3Body => 'Žingsniai apima tai, kas nėra įrašas, o pradžios datos nurodo, kada teikti prašymą, kad niekas nevėluotų.';
+
+  @override
+  String get storyLife4Title => 'Pritaikykite sau';
+
+  @override
+  String get storyLife4Body => 'Pridėkite savo žingsnių, bendrinkite planą kaip PDF ir gaukite priminimus apie datą.';
+
+  @override
+  String get storyPhotos1Title => 'Jūsų dokumentų nuotraukos';
+
+  @override
+  String get storyPhotos1Body => 'Įraše pridėkite kortelės ar dokumento priekinės ir galinės pusės nuotraukas.';
+
+  @override
+  String get storyPhotos2Title => 'Užšifruota telefone';
+
+  @override
+  String get storyPhotos2Body => 'Įjunkite nuotraukų šifravimą, ir jos užrakinamos telefone prieš įkeliant.';
+
+  @override
+  String get storyPhotos3Title => 'Užrakinkite jautrius įrašus';
+
+  @override
+  String get storyPhotos3Body => 'Užrakinkite įrašą, ir prieš atsidarydamas jis paprašys piršto atspaudo ar ekrano užrakto.';
+
+  @override
+  String get storyPhotos4Title => 'Užrakinkite visą programą';
+
+  @override
+  String get storyPhotos4Body => 'Saugos nustatymuose įjunkite programos užraktą ir slėpkite turinį perjungdami programas.';
+
+  @override
+  String get storyShare1Title => 'Bendrinkite vieną įrašą';
+
+  @override
+  String get storyShare1Body => 'Atidarykite įrašą ir bendrinkite nuorodą, kuri rodo tik tą įrašą ir nieko daugiau.';
+
+  @override
+  String get storyShare2Title => 'Įrodymų paketas';
+
+  @override
+  String get storyShare2Body => 'Sudėkite pasirinktus įrašus su nuotraukomis į vieną PDF nuomotojui, bankui ar įstaigai.';
+
+  @override
+  String get storyShare3Title => 'Kontrolė jūsų rankose';
+
+  @override
+  String get storyShare3Body => '„Pasidalintos nuorodos“ rodo kiekvieną sukurtą nuorodą. Sustabdykite bet kurią bet kada, ir ji nebeatsidarys.';
+
+  @override
+  String get storyHousehold1Title => 'Pakvieskite savo namų ūkį';
+
+  @override
+  String get storyHousehold1Body => 'Bendrinkite pakvietimo kodą ar nuorodą. Kiekvienas prisijungia savo paskyra.';
+
+  @override
+  String get storyHousehold2Title => 'Vienas įrašų rinkinys';
+
+  @override
+  String get storyHousehold2Body => 'Visi mato tuos pačius bendrus įrašus ir gauna tuos pačius priminimus.';
+
+  @override
+  String get storyHousehold3Title => 'Kieno tai?';
+
+  @override
+  String get storyHousehold3Body => 'Kiekvienas įrašas gali kam nors priklausyti. Vardas rodomas įraše ir priminimuose.';
+
+  @override
+  String get storyImport1Title => 'Nuskenuokite kortelę';
+
+  @override
+  String get storyImport1Body => 'Nufotografuokite kortelę ar dokumentą, ir Vaultara už jus užpildys pavadinimą bei galiojimo datą.';
+
+  @override
+  String get storyImport2Title => 'Importuokite sąrašą';
+
+  @override
+  String get storyImport2Body => 'Jau turite skaičiuoklę? Importuokite ją ir patikrinkite kiekvieną eilutę prieš išsaugant.';
+
+  @override
+  String get storyImport3Title => 'Bendrinkite į Vaultara';
+
+  @override
+  String get storyImport3Body => 'Bendrinkite nuotrauką, PDF ar tekstą iš kitos programos į Vaultara, kad pradėtumėte naują įrašą.';
+
+  @override
+  String get storyCosts1Title => 'Jūsų kalendoriuje';
+
+  @override
+  String get storyCosts1Body => 'Pridėkite galiojimo datas į telefono kalendorių šalia kitų planų.';
+
+  @override
+  String get storyCosts2Title => 'Kiek kainuoja atnaujinimai';
+
+  @override
+  String get storyCosts2Body => 'Įveskite atnaujinimo kainą įraše, ir Vaultara parodys, kiek išleidžiate per metus.';
+
+  @override
+  String get storyCosts3Title => 'Planuokite iš anksto';
+
+  @override
+  String get storyCosts3Body => 'Matykite brangius mėnesius iš anksto, kad didelis atnaujinimas niekada jūsų nenustebintų.';
+
+  @override
+  String get storyBusiness1Title => 'Sekite savo komandą';
+
+  @override
+  String get storyBusiness1Body => 'Pridėkite darbuotojų ir laikykite jų pažymėjimus, leidimus ir licencijas vienoje vietoje.';
+
+  @override
+  String get storyBusiness2Title => 'Priminimai el. paštu';
+
+  @override
+  String get storyBusiness2Body => 'Darbuotojai gauna el. laiškus prieš baigiantis jų dokumentams, net be programos.';
+
+  @override
+  String get storyBusiness3Title => 'Mėnesio ataskaita';
+
+  @override
+  String get storyBusiness3Body => 'Kas mėnesį ataskaita parodo, kas galioja, kas baigiasi ir ko trūksta.';
+
+  @override
+  String get storyBusiness4Title => 'Paprašykite atnaujinimo';
+
+  @override
+  String get storyBusiness4Body => 'Išsiųskite nuorodą, ir darbuotojas pats įkels atnaujintą dokumentą.';
 }

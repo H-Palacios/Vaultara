@@ -7511,4 +7511,438 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Your Home screen';
+
+  @override
+  String get tutorialsSubHome => 'What the cards mean and where everything is';
+
+  @override
+  String get tutorialsTitleRenew => 'Renewing a record';
+
+  @override
+  String get tutorialsSubRenew => 'What to do when a reminder arrives';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Calendar and costs';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Expiry dates in your calendar and what renewals cost';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Photos and security';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Document photos, encryption and locks';
+
+  @override
+  String get tutorialsTitleSharing => 'Sharing safely';
+
+  @override
+  String get tutorialsSubSharing => 'Share a record, make a Proof pack, stop a link';
+
+  @override
+  String get tutorialsTitleImportScan => 'Scan and import';
+
+  @override
+  String get tutorialsSubImportScan => 'Add many records quickly';
+
+  @override
+  String get tutorialsTitleHousehold => 'Shared household';
+
+  @override
+  String get tutorialsSubHousehold => 'Invite others to share records and reminders';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Lost my wallet';
+
+  @override
+  String get tutorialsSubLostWallet => 'Get ready now, act fast if it goes missing';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Life events';
+
+  @override
+  String get tutorialsSubLifeEvents => 'A plan for moving, a baby, a new job and more';
+
+  @override
+  String get tutorialsTitleAsk => 'Ask Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Chat or talk to your records';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business tools';
+
+  @override
+  String get tutorialsSubBusiness => 'Staff records, reminders and reports';
+
+  @override
+  String get tutorialsGroupBasics => 'Basics';
+
+  @override
+  String get tutorialsGroupOnTop => 'Staying on top';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Travel and family';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Life events and emergencies';
+
+  @override
+  String get tutorialsGroupPaid => 'Paid features';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count steps',
+      one: '1 step',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Paid plans';
+
+  @override
+  String get tutorialsPaidNote => 'You can watch this on any plan. Using the feature needs a paid plan.';
+
+  @override
+  String get tutorialsBack => 'Back';
+
+  @override
+  String get tutorialsTryIt => 'Try it now';
+
+  @override
+  String get tutorialHintText => 'New here? Take the quick tour';
+
+  @override
+  String get tutorialHintPlay => 'Show me';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Chapter $number of $total';
+  }
+
+  @override
+  String get tourContinue => 'Continue';
+
+  @override
+  String get tourSkip => 'Skip';
+
+  @override
+  String get tourSkipped => 'Skipped';
+
+  @override
+  String get tourDone => 'You have seen the whole tour';
+
+  @override
+  String get tourRestart => 'Start again';
+
+  @override
+  String get whatsNewBadge => 'New';
+
+  @override
+  String get whatsNewTitle => 'Lost my wallet';
+
+  @override
+  String get whatsNewBody => 'Save where you keep your cards and each bank\'s lost card number. If your wallet goes missing, block everything in minutes.';
+
+  @override
+  String get whatsNewDismiss => 'Got it';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'More details holds the extras: notes, repeat, renewal time, whose record it is, where you keep it, lock and photos. Open it only when you need it.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Lock a record to ask for your fingerprint or screen lock before showing it. Choose where you keep it, such as your wallet, and add photos of the document.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Lost your wallet? See everything you keep in it, call each bank with one tap and follow the steps to replace the rest.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Moving, a new baby, a new job or an emergency? Life events gives you a plan with your records, steps and dates.';
+
+  @override
+  String get storySampleQuestion => 'What expires this year?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Your $name expires in March. Want a reminder a month before?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name expires in 30 days. Tap to renew.';
+  }
+
+  @override
+  String get storySampleGym => 'Gym membership';
+
+  @override
+  String get storySampleFirstAid => 'First aid certificate';
+
+  @override
+  String get storySampleEncrypt => 'Encrypt photos';
+
+  @override
+  String get storySampleAppLock => 'App lock';
+
+  @override
+  String get storySampleHideApp => 'Hide content in the app switcher';
+
+  @override
+  String get storyHome1Title => 'Your day at a glance';
+
+  @override
+  String get storyHome1Body => 'Home shows what needs you today: anything expiring soon and how many records you keep.';
+
+  @override
+  String get storyHome2Title => 'Find anything';
+
+  @override
+  String get storyHome2Body => 'Tap the search bar to find a record by its name, group or the person it belongs to.';
+
+  @override
+  String get storyHome3Title => 'Trips and plans';
+
+  @override
+  String get storyHome3Body => 'Trips you are planning and life event plans in progress show here, with what is left to do.';
+
+  @override
+  String get storyHome4Title => 'Help is one tap away';
+
+  @override
+  String get storyHome4Body => 'The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.';
+
+  @override
+  String get storyRenew1Title => 'A reminder arrives';
+
+  @override
+  String get storyRenew1Body => 'Before a record expires, Vaultara reminds you. Tap the reminder to open the record.';
+
+  @override
+  String get storyRenew2Title => 'Save the new date';
+
+  @override
+  String get storyRenew2Body => 'Renewed it? Tap Renew and enter the new expiry date. Your reminders move with it.';
+
+  @override
+  String get storyRenew3Title => 'Not sure how?';
+
+  @override
+  String get storyRenew3Body => 'Many records have a guide with the steps, documents and usual cost of renewing.';
+
+  @override
+  String get storyRenew4Title => 'Let it repeat';
+
+  @override
+  String get storyRenew4Body => 'For subscriptions and yearly payments, turn on Repeat and the date moves forward by itself.';
+
+  @override
+  String get storyAsk1Title => 'Ask in your own words';
+
+  @override
+  String get storyAsk1Body => 'Ask things like “What expires this year?” and get answers from your own records.';
+
+  @override
+  String get storyAsk2Title => 'Talk instead of typing';
+
+  @override
+  String get storyAsk2Body => 'Tap the microphone and speak. Your words appear as you talk, and you can send straight away.';
+
+  @override
+  String get storyAsk3Title => 'You confirm every change';
+
+  @override
+  String get storyAsk3Body => 'Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.';
+
+  @override
+  String get storyAsk4Title => 'Undo any change';
+
+  @override
+  String get storyAsk4Body => 'Changed your mind? Every change you confirmed can be undone from the same card.';
+
+  @override
+  String get storyAsk5Title => 'Pick up where you left off';
+
+  @override
+  String get storyAsk5Body => 'Chats are kept for 90 days in Chat history, and suggested questions help you get started.';
+
+  @override
+  String get storyWallet1Title => 'Get ready first';
+
+  @override
+  String get storyWallet1Body => 'Open a card or document and choose where you keep it, such as your wallet or bag.';
+
+  @override
+  String get storyWallet2Title => 'Save the lost card number';
+
+  @override
+  String get storyWallet2Body => 'Add each bank\'s lost card number now. It is printed on the card, which is gone when you need it.';
+
+  @override
+  String get storyWallet3Title => 'If it goes missing';
+
+  @override
+  String get storyWallet3Body => 'Open Lost my wallet and tap Lost or Stolen. Vaultara lists everything that was inside.';
+
+  @override
+  String get storyWallet4Title => 'Block cards in minutes';
+
+  @override
+  String get storyWallet4Body => 'Call each bank with one tap, mark cards as blocked and keep the police case number.';
+
+  @override
+  String get storyWallet5Title => 'Replace and stay safe';
+
+  @override
+  String get storyWallet5Body => 'Replace your documents, check your statements when reminded, and tap I found it if it turns up.';
+
+  @override
+  String get storyLife1Title => 'Big moments, one plan';
+
+  @override
+  String get storyLife1Body => 'Moving, a baby, a new job or an emergency: choose what is happening in Life events.';
+
+  @override
+  String get storyLife2Title => 'Your records, sorted';
+
+  @override
+  String get storyLife2Body => 'The plan lists which records to update, cancel or renew, and which ones you may need to add.';
+
+  @override
+  String get storyLife3Title => 'Steps and dates';
+
+  @override
+  String get storyLife3Body => 'Steps cover what is not a record, and start-by dates tell you when to apply so nothing is late.';
+
+  @override
+  String get storyLife4Title => 'Make it yours';
+
+  @override
+  String get storyLife4Body => 'Add your own steps, share the plan as a PDF and get reminders around the date.';
+
+  @override
+  String get storyPhotos1Title => 'Photos of your documents';
+
+  @override
+  String get storyPhotos1Body => 'Add photos of the front and back of a card or document from the record.';
+
+  @override
+  String get storyPhotos2Title => 'Encrypted on your phone';
+
+  @override
+  String get storyPhotos2Body => 'Turn on photo encryption and photos are locked on your phone before they are uploaded.';
+
+  @override
+  String get storyPhotos3Title => 'Lock sensitive records';
+
+  @override
+  String get storyPhotos3Body => 'Lock a record and it asks for your fingerprint or screen lock before it opens.';
+
+  @override
+  String get storyPhotos4Title => 'Lock the whole app';
+
+  @override
+  String get storyPhotos4Body => 'In Security and privacy, turn on app lock and hide the app\'s content when you switch apps.';
+
+  @override
+  String get storyShare1Title => 'Share one record';
+
+  @override
+  String get storyShare1Body => 'Open a record and share a link that shows only that record, nothing else.';
+
+  @override
+  String get storyShare2Title => 'Proof pack';
+
+  @override
+  String get storyShare2Body => 'Put the records you choose, with their photos, into one PDF for a landlord, bank or office.';
+
+  @override
+  String get storyShare3Title => 'Stay in control';
+
+  @override
+  String get storyShare3Body => 'Shared links lists every link you made. Stop one at any time and it no longer opens.';
+
+  @override
+  String get storyHousehold1Title => 'Invite your household';
+
+  @override
+  String get storyHousehold1Body => 'Share an invite code or link. Each person signs in with their own account.';
+
+  @override
+  String get storyHousehold2Title => 'One set of records';
+
+  @override
+  String get storyHousehold2Body => 'Everyone sees the same shared records and gets the same reminders.';
+
+  @override
+  String get storyHousehold3Title => 'Whose is it?';
+
+  @override
+  String get storyHousehold3Body => 'Each record can belong to someone. Their name shows on it and in its reminders.';
+
+  @override
+  String get storyImport1Title => 'Scan a card';
+
+  @override
+  String get storyImport1Body => 'Snap a card or document and Vaultara fills in the name and expiry date for you.';
+
+  @override
+  String get storyImport2Title => 'Import a list';
+
+  @override
+  String get storyImport2Body => 'Keep a spreadsheet already? Import it and check each row before anything is saved.';
+
+  @override
+  String get storyImport3Title => 'Share into Vaultara';
+
+  @override
+  String get storyImport3Body => 'Share a photo, PDF or text from another app to Vaultara to start a new record.';
+
+  @override
+  String get storyCosts1Title => 'In your calendar';
+
+  @override
+  String get storyCosts1Body => 'Add expiry dates to your phone\'s calendar, so they sit next to your other plans.';
+
+  @override
+  String get storyCosts2Title => 'What renewals cost';
+
+  @override
+  String get storyCosts2Body => 'Add what a renewal costs to a record and Vaultara shows what you spend each year.';
+
+  @override
+  String get storyCosts3Title => 'Plan ahead';
+
+  @override
+  String get storyCosts3Body => 'See the expensive months coming, so a big renewal never takes you by surprise.';
+
+  @override
+  String get storyBusiness1Title => 'Track your team';
+
+  @override
+  String get storyBusiness1Body => 'Add staff and keep their certificates, permits and licences in one place.';
+
+  @override
+  String get storyBusiness2Title => 'Email reminders';
+
+  @override
+  String get storyBusiness2Body => 'Staff get email reminders before their documents expire, even without the app.';
+
+  @override
+  String get storyBusiness3Title => 'Monthly report';
+
+  @override
+  String get storyBusiness3Body => 'A report each month shows what is valid, what is expiring and what is missing.';
+
+  @override
+  String get storyBusiness4Title => 'Request an update';
+
+  @override
+  String get storyBusiness4Body => 'Send a link and staff can upload their renewed document themselves.';
 }

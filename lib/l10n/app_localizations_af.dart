@@ -7496,4 +7496,438 @@ class AppLocalizationsAf extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Jou tuisskerm';
+
+  @override
+  String get tutorialsSubHome => 'Wat die kaarte beteken en waar alles is';
+
+  @override
+  String get tutorialsTitleRenew => 'Hernu \'n inskrywing';
+
+  @override
+  String get tutorialsSubRenew => 'Wat om te doen wanneer \'n herinnering kom';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalender en koste';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Vervaldatums in jou kalender en wat hernuwings kos';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Foto\'s en sekuriteit';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentfoto\'s, enkripsie en slotte';
+
+  @override
+  String get tutorialsTitleSharing => 'Deel veilig';
+
+  @override
+  String get tutorialsSubSharing => 'Deel \'n inskrywing, maak \'n pakket, stop \'n skakel';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skandeer en voer in';
+
+  @override
+  String get tutorialsSubImportScan => 'Voeg vinnig baie inskrywings by';
+
+  @override
+  String get tutorialsTitleHousehold => 'Gedeelde huishouding';
+
+  @override
+  String get tutorialsSubHousehold => 'Nooi ander om inskrywings en herinnerings te deel';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Beursie verloor';
+
+  @override
+  String get tutorialsSubLostWallet => 'Berei nou voor, tree vinnig op as dit wegraak';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Lewensgebeure';
+
+  @override
+  String get tutorialsSubLifeEvents => '\'n Plan vir trek, \'n baba, \'n nuwe werk en meer';
+
+  @override
+  String get tutorialsTitleAsk => 'Vra Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Klets of praat met jou inskrywings';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business-gereedskap';
+
+  @override
+  String get tutorialsSubBusiness => 'Personeeldokumente, herinnerings en verslae';
+
+  @override
+  String get tutorialsGroupBasics => 'Die basiese';
+
+  @override
+  String get tutorialsGroupOnTop => 'Bly op hoogte';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Reis en gesin';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Lewensgebeure en noodgevalle';
+
+  @override
+  String get tutorialsGroupPaid => 'Betaalde funksies';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stappe',
+      one: '1 stap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Betaalde planne';
+
+  @override
+  String get tutorialsPaidNote => 'Jy kan dit met enige plan kyk. Die funksie self vereis \'n betaalde plan.';
+
+  @override
+  String get tutorialsBack => 'Terug';
+
+  @override
+  String get tutorialsTryIt => 'Probeer dit nou';
+
+  @override
+  String get tutorialHintText => 'Nuut hier? Neem die vinnige toer';
+
+  @override
+  String get tutorialHintPlay => 'Wys my';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Hoofstuk $number van $total';
+  }
+
+  @override
+  String get tourContinue => 'Gaan voort';
+
+  @override
+  String get tourSkip => 'Slaan oor';
+
+  @override
+  String get tourSkipped => 'Oorgeslaan';
+
+  @override
+  String get tourDone => 'Jy het die hele toer gesien';
+
+  @override
+  String get tourRestart => 'Begin oor';
+
+  @override
+  String get whatsNewBadge => 'Nuut';
+
+  @override
+  String get whatsNewTitle => 'Beursie verloor';
+
+  @override
+  String get whatsNewBody => 'Stoor waar jy jou kaarte hou en elke bank se blokkeernommer. As jy jou beursie verloor, blokkeer jy alles binne minute.';
+
+  @override
+  String get whatsNewDismiss => 'Verstaan';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Meer besonderhede hou die ekstras: notas, herhaling, hernutyd, wie s\'n dit is, waar jy dit hou, slot en foto\'s. Maak dit net oop wanneer nodig.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Sluit \'n inskrywing sodat dit \'n vingerafdruk of skermslot vra voordat dit wys. Kies waar jy dit hou, soos jou beursie, en voeg foto\'s van die dokument by.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Beursie verloor? Sien alles wat daarin was, bel elke bank met een tik en volg die stappe vir die res.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Trek, \'n baba, \'n nuwe werk of \'n noodgeval? Lewensgebeure gee jou \'n plan met jou inskrywings, stappe en datums.';
+
+  @override
+  String get storySampleQuestion => 'Wat verval vanjaar?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Jou $name verval in Maart. Wil jy \'n herinnering \'n maand vooraf hê?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name verval oor 30 dae. Tik om te hernu.';
+  }
+
+  @override
+  String get storySampleGym => 'Gimnasiumlidmaatskap';
+
+  @override
+  String get storySampleFirstAid => 'Noodhulpsertifikaat';
+
+  @override
+  String get storySampleEncrypt => 'Enkripteer foto\'s';
+
+  @override
+  String get storySampleAppLock => 'Toepassingslot';
+
+  @override
+  String get storySampleHideApp => 'Versteek inhoud in die toepassingwisselaar';
+
+  @override
+  String get storyHome1Title => 'Jou dag in \'n oogopslag';
+
+  @override
+  String get storyHome1Body => 'Die tuisskerm wys wat vandag saak maak: wat binnekort verval en hoeveel inskrywings jy het.';
+
+  @override
+  String get storyHome2Title => 'Vind enigiets';
+
+  @override
+  String get storyHome2Body => 'Tik op soek om \'n inskrywing volgens naam, groep of persoon te vind.';
+
+  @override
+  String get storyHome3Title => 'Reise en planne';
+
+  @override
+  String get storyHome3Body => 'Reise wat jy beplan en lopende lewensgebeurtenisplanne verskyn hier, met wat oorbly.';
+
+  @override
+  String get storyHome4Title => 'Hulp met een tik';
+
+  @override
+  String get storyHome4Body => 'Die vonkknoppie maak \"Vra Vaultara\" oop. Jou foto maak jou profiel, instellings en tutoriale oop.';
+
+  @override
+  String get storyRenew1Title => '\'n Herinnering kom';
+
+  @override
+  String get storyRenew1Body => 'Voordat \'n inskrywing verval, herinner Vaultara jou. Tik op die herinnering om die inskrywing oop te maak.';
+
+  @override
+  String get storyRenew2Title => 'Stoor die nuwe datum';
+
+  @override
+  String get storyRenew2Body => 'Hernu? Tik op \"Hernu\" en voer die nuwe vervaldatum in. Jou herinnerings skuif saam.';
+
+  @override
+  String get storyRenew3Title => 'Onseker hoe?';
+
+  @override
+  String get storyRenew3Body => 'Baie inskrywings het \'n gids met die stappe, dokumente en gewone koste.';
+
+  @override
+  String get storyRenew4Title => 'Laat dit herhaal';
+
+  @override
+  String get storyRenew4Body => 'Vir intekeninge en jaarlikse betalings skakel jy herhaling aan, en die datum skuif self vorentoe.';
+
+  @override
+  String get storyAsk1Title => 'Vra in jou eie woorde';
+
+  @override
+  String get storyAsk1Body => 'Vra dinge soos \"Wat verval vanjaar?\" en kry antwoorde uit jou eie inskrywings.';
+
+  @override
+  String get storyAsk2Title => 'Praat in plaas van tik';
+
+  @override
+  String get storyAsk2Body => 'Tik op die mikrofoon en praat. Jou woorde verskyn terwyl jy praat en jy kan dadelik stuur.';
+
+  @override
+  String get storyAsk3Title => 'Jy bevestig elke verandering';
+
+  @override
+  String get storyAsk3Body => 'Vra om \'n inskrywing by te voeg of te verander en jy sien eers \'n kaart. Niks word gestoor totdat jy bevestig nie.';
+
+  @override
+  String get storyAsk4Title => 'Ontdoen enige verandering';
+
+  @override
+  String get storyAsk4Body => 'Van plan verander? Elke bevestigde verandering kan van dieselfde kaart ontdoen word.';
+
+  @override
+  String get storyAsk5Title => 'Gaan voort waar jy opgehou het';
+
+  @override
+  String get storyAsk5Body => 'Kletse word 90 dae lank in \"Gespreksgeskiedenis\" gehou, en voorgestelde vrae help jou begin.';
+
+  @override
+  String get storyWallet1Title => 'Berei eers voor';
+
+  @override
+  String get storyWallet1Body => 'Maak \'n kaart of dokument oop en kies waar jy dit hou, soos jou beursie of sak.';
+
+  @override
+  String get storyWallet2Title => 'Stoor die blokkeernommer';
+
+  @override
+  String get storyWallet2Body => 'Voeg nou elke bank se blokkeernommer by. Dit is op die kaart, wat jy nie sal hê wanneer jy dit nodig het nie.';
+
+  @override
+  String get storyWallet3Title => 'As dit wegraak';
+
+  @override
+  String get storyWallet3Body => 'Maak \"Beursie verloor\" oop en tik op \"Verloor\" of \"Gesteel\". Vaultara lys alles wat daarin was.';
+
+  @override
+  String get storyWallet4Title => 'Blokkeer kaarte binne minute';
+
+  @override
+  String get storyWallet4Body => 'Bel elke bank met een tik, merk kaarte as geblokkeer en stoor die polisieverslagnommer.';
+
+  @override
+  String get storyWallet5Title => 'Vervang en bly veilig';
+
+  @override
+  String get storyWallet5Body => 'Vervang jou dokumente, kyk na jou state wanneer jy herinner word en tik op \"Ek het dit gekry\" as dit opdaag.';
+
+  @override
+  String get storyLife1Title => 'Groot oomblikke, een plan';
+
+  @override
+  String get storyLife1Body => 'Trek, \'n baba, \'n nuwe werk of \'n noodgeval: kies in \"Lewensgebeure\" wat gebeur.';
+
+  @override
+  String get storyLife2Title => 'Jou inskrywings, gesorteer';
+
+  @override
+  String get storyLife2Body => 'Die plan wys watter inskrywings om op te dateer, te kanselleer of te hernu, en watter jy dalk moet byvoeg.';
+
+  @override
+  String get storyLife3Title => 'Stappe en datums';
+
+  @override
+  String get storyLife3Body => 'Stappe dek wat nie \'n inskrywing is nie, en begindatums sê wanneer om aansoek te doen sodat niks laat is nie.';
+
+  @override
+  String get storyLife4Title => 'Maak dit joune';
+
+  @override
+  String get storyLife4Body => 'Voeg jou eie stappe by, deel die plan as PDF en kry herinnerings rondom die datum.';
+
+  @override
+  String get storyPhotos1Title => 'Foto\'s van jou dokumente';
+
+  @override
+  String get storyPhotos1Body => 'Voeg vanuit die inskrywing foto\'s van die voor- en agterkant van \'n kaart of dokument by.';
+
+  @override
+  String get storyPhotos2Title => 'Geënkripteer op jou foon';
+
+  @override
+  String get storyPhotos2Body => 'Skakel foto-enkripsie aan en foto\'s word op jou foon gesluit voordat hulle opgelaai word.';
+
+  @override
+  String get storyPhotos3Title => 'Sluit sensitiewe inskrywings';
+
+  @override
+  String get storyPhotos3Body => 'Sluit \'n inskrywing en dit vra jou vingerafdruk of skermslot voordat dit oopmaak.';
+
+  @override
+  String get storyPhotos4Title => 'Sluit die hele toepassing';
+
+  @override
+  String get storyPhotos4Body => 'Skakel die toepassingslot in sekuriteitsinstellings aan en versteek inhoud wanneer jy toepassings wissel.';
+
+  @override
+  String get storyShare1Title => 'Deel een inskrywing';
+
+  @override
+  String get storyShare1Body => 'Maak \'n inskrywing oop en deel \'n skakel wat net daardie inskrywing wys, niks anders nie.';
+
+  @override
+  String get storyShare2Title => 'Bewyspakket';
+
+  @override
+  String get storyShare2Body => 'Sit die inskrywings wat jy kies, met hul foto\'s, in een PDF vir \'n verhuurder, bank of kantoor.';
+
+  @override
+  String get storyShare3Title => 'Behou beheer';
+
+  @override
+  String get storyShare3Body => '\"Gedeelde skakels\" wys elke skakel wat jy gemaak het. Stop enige een enige tyd en dit maak nie meer oop nie.';
+
+  @override
+  String get storyHousehold1Title => 'Nooi jou huishouding';
+
+  @override
+  String get storyHousehold1Body => 'Deel \'n uitnodigingskode of -skakel. Elke persoon meld met hul eie rekening aan.';
+
+  @override
+  String get storyHousehold2Title => 'Een stel inskrywings';
+
+  @override
+  String get storyHousehold2Body => 'Almal sien dieselfde gedeelde inskrywings en kry dieselfde herinnerings.';
+
+  @override
+  String get storyHousehold3Title => 'Wie s\'n is dit?';
+
+  @override
+  String get storyHousehold3Body => 'Elke inskrywing kan aan iemand behoort. Hul naam wys daarop en in die herinnerings.';
+
+  @override
+  String get storyImport1Title => 'Skandeer \'n kaart';
+
+  @override
+  String get storyImport1Body => 'Neem \'n foto van \'n kaart of dokument en Vaultara vul die naam en vervaldatum vir jou in.';
+
+  @override
+  String get storyImport2Title => 'Voer \'n lys in';
+
+  @override
+  String get storyImport2Body => 'Het jy reeds \'n sigblad? Voer dit in en gaan elke ry na voordat iets gestoor word.';
+
+  @override
+  String get storyImport3Title => 'Deel na Vaultara';
+
+  @override
+  String get storyImport3Body => 'Deel \'n foto, PDF of teks uit \'n ander toepassing na Vaultara om \'n nuwe inskrywing te begin.';
+
+  @override
+  String get storyCosts1Title => 'In jou kalender';
+
+  @override
+  String get storyCosts1Body => 'Voeg vervaldatums by jou foon se kalender, langs jou ander planne.';
+
+  @override
+  String get storyCosts2Title => 'Wat hernuwings kos';
+
+  @override
+  String get storyCosts2Body => 'Voer die koste van \'n hernuwing op \'n inskrywing in en Vaultara wys wat jy per jaar spandeer.';
+
+  @override
+  String get storyCosts3Title => 'Beplan vooruit';
+
+  @override
+  String get storyCosts3Body => 'Sien die duur maande aankom sodat \'n groot hernuwing jou nooit verras nie.';
+
+  @override
+  String get storyBusiness1Title => 'Volg jou span';
+
+  @override
+  String get storyBusiness1Body => 'Voeg personeel by en hou hul sertifikate, permitte en lisensies op een plek.';
+
+  @override
+  String get storyBusiness2Title => 'E-posherinnerings';
+
+  @override
+  String get storyBusiness2Body => 'Personeel kry e-posse voordat hul dokumente verval, selfs sonder die toepassing.';
+
+  @override
+  String get storyBusiness3Title => 'Maandverslag';
+
+  @override
+  String get storyBusiness3Body => 'Elke maand wys \'n verslag wat geldig is, wat verval en wat ontbreek.';
+
+  @override
+  String get storyBusiness4Title => 'Vra vir \'n opdatering';
+
+  @override
+  String get storyBusiness4Body => 'Stuur \'n skakel en die personeellid laai self die hernude dokument op.';
 }

@@ -7492,4 +7492,438 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'તમારી હોમ સ્ક્રીન';
+
+  @override
+  String get tutorialsSubHome => 'કાર્ડનો અર્થ અને બધું ક્યાં છે';
+
+  @override
+  String get tutorialsTitleRenew => 'રેકોર્ડ રિન્યૂ કરો';
+
+  @override
+  String get tutorialsSubRenew => 'રિમાઇન્ડર આવે ત્યારે શું કરવું';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'કૅલેન્ડર અને ખર્ચ';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'કૅલેન્ડરમાં સમાપ્તિ તારીખો અને રિન્યૂઅલનો ખર્ચ';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'ફોટા અને સુરક્ષા';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'દસ્તાવેજના ફોટા, એન્ક્રિપ્શન અને લૉક';
+
+  @override
+  String get tutorialsTitleSharing => 'સુરક્ષિત રીતે શેર કરો';
+
+  @override
+  String get tutorialsSubSharing => 'રેકોર્ડ શેર કરો, પૅક બનાવો, લિંક બંધ કરો';
+
+  @override
+  String get tutorialsTitleImportScan => 'સ્કૅન અને ઇમ્પોર્ટ';
+
+  @override
+  String get tutorialsSubImportScan => 'ઘણા રેકોર્ડ ઝડપથી ઉમેરો';
+
+  @override
+  String get tutorialsTitleHousehold => 'શેર કરેલું ઘર';
+
+  @override
+  String get tutorialsSubHousehold => 'રેકોર્ડ અને રિમાઇન્ડર શેર કરવા બીજાને આમંત્રણ આપો';
+
+  @override
+  String get tutorialsTitleLostWallet => 'મારું વૉલેટ ખોવાઈ ગયું';
+
+  @override
+  String get tutorialsSubLostWallet => 'હમણાં તૈયારી કરો, ખોવાય તો ઝડપથી પગલાં લો';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'જીવનની ઘટનાઓ';
+
+  @override
+  String get tutorialsSubLifeEvents => 'ઘર બદલવા, બાળક, નવી નોકરી અને વધુ માટે યોજના';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara ને પૂછો';
+
+  @override
+  String get tutorialsSubAsk => 'તમારા રેકોર્ડ સાથે ચૅટ કરો અથવા વાત કરો';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business સાધનો';
+
+  @override
+  String get tutorialsSubBusiness => 'સ્ટાફના દસ્તાવેજો, રિમાઇન્ડર અને રિપોર્ટ';
+
+  @override
+  String get tutorialsGroupBasics => 'મૂળભૂત બાબતો';
+
+  @override
+  String get tutorialsGroupOnTop => 'બધું ધ્યાનમાં રાખવું';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'પ્રવાસ અને પરિવાર';
+
+  @override
+  String get tutorialsGroupEmergencies => 'જીવનની ઘટનાઓ અને કટોકટી';
+
+  @override
+  String get tutorialsGroupPaid => 'પેઇડ સુવિધાઓ';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count પગલાં',
+      one: '$count પગલું',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'પેઇડ પ્લાન';
+
+  @override
+  String get tutorialsPaidNote => 'તમે કોઈપણ પ્લાન સાથે આ જોઈ શકો છો. સુવિધા માટે પેઇડ પ્લાન જરૂરી છે.';
+
+  @override
+  String get tutorialsBack => 'પાછા';
+
+  @override
+  String get tutorialsTryIt => 'હમણાં અજમાવો';
+
+  @override
+  String get tutorialHintText => 'અહીં નવા છો? ટૂંકો ટૂર જુઓ';
+
+  @override
+  String get tutorialHintPlay => 'મને બતાવો';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'પ્રકરણ $number / $total';
+  }
+
+  @override
+  String get tourContinue => 'ચાલુ રાખો';
+
+  @override
+  String get tourSkip => 'છોડો';
+
+  @override
+  String get tourSkipped => 'છોડ્યું';
+
+  @override
+  String get tourDone => 'તમે આખો ટૂર જોઈ લીધો';
+
+  @override
+  String get tourRestart => 'ફરીથી શરૂ કરો';
+
+  @override
+  String get whatsNewBadge => 'નવું';
+
+  @override
+  String get whatsNewTitle => 'મારું વૉલેટ ખોવાઈ ગયું';
+
+  @override
+  String get whatsNewBody => 'તમે કાર્ડ ક્યાં રાખો છો અને દરેક બૅન્કનો બ્લૉક નંબર સેવ કરો. પાકીટ ખોવાય તો તમે મિનિટોમાં બધું બ્લૉક કરી શકશો.';
+
+  @override
+  String get whatsNewDismiss => 'સમજાયું';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'વધુ વિગતોમાં વધારાની બાબતો છે: નોંધ, પુનરાવર્તન, રિન્યૂઅલ સમય, કોનું છે, ક્યાં રાખો છો, લૉક અને ફોટા. જરૂર હોય ત્યારે જ ખોલો.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'રેકોર્ડ લૉક કરો જેથી બતાવતા પહેલાં ફિંગરપ્રિન્ટ અથવા સ્ક્રીન લૉક માગે. તમે તેને ક્યાં રાખો છો તે પસંદ કરો, જેમ કે પાકીટ, અને દસ્તાવેજના ફોટા ઉમેરો.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'પાકીટ ખોવાયું? તેમાં જે હતું તે બધું જુઓ, એક ટૅપમાં દરેક બૅન્કને કૉલ કરો અને બાકીનાં પગલાં અનુસરો.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'ઘર બદલવું, બાળક, નવી નોકરી કે કટોકટી? જીવનની ઘટનાઓ તમારા રેકોર્ડ, પગલાં અને તારીખો સાથે યોજના આપે છે.';
+
+  @override
+  String get storySampleQuestion => 'આ વર્ષે શું સમાપ્ત થાય છે?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'તમારું $name માર્ચમાં સમાપ્ત થાય છે. એક મહિના પહેલાં રિમાઇન્ડર જોઈએ?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name 30 દિવસમાં સમાપ્ત થાય છે. રિન્યૂ કરવા ટૅપ કરો.';
+  }
+
+  @override
+  String get storySampleGym => 'જિમ સભ્યપદ';
+
+  @override
+  String get storySampleFirstAid => 'પ્રાથમિક સારવાર પ્રમાણપત્ર';
+
+  @override
+  String get storySampleEncrypt => 'ફોટા એન્ક્રિપ્ટ કરો';
+
+  @override
+  String get storySampleAppLock => 'ઍપ લૉક';
+
+  @override
+  String get storySampleHideApp => 'ઍપ સ્વિચરમાં સામગ્રી છુપાવો';
+
+  @override
+  String get storyHome1Title => 'એક નજરમાં તમારો દિવસ';
+
+  @override
+  String get storyHome1Body => 'હોમ સ્ક્રીન આજે શું મહત્ત્વનું છે તે બતાવે છે: શું જલ્દી સમાપ્ત થાય છે અને તમારી પાસે કેટલા રેકોર્ડ છે.';
+
+  @override
+  String get storyHome2Title => 'કંઈપણ શોધો';
+
+  @override
+  String get storyHome2Body => 'નામ, જૂથ કે વ્યક્તિથી રેકોર્ડ શોધવા માટે શોધ પર ટૅપ કરો.';
+
+  @override
+  String get storyHome3Title => 'પ્રવાસ અને યોજનાઓ';
+
+  @override
+  String get storyHome3Body => 'તમે આયોજન કરો છો તે પ્રવાસ અને ચાલુ જીવન ઘટનાની યોજનાઓ, બાકી કામ સાથે, અહીં દેખાય છે.';
+
+  @override
+  String get storyHome4Title => 'એક ટૅપમાં મદદ';
+
+  @override
+  String get storyHome4Body => 'સ્પાર્કલ બટન «Vaultara ને પૂછો» ખોલે છે. તમારો ફોટો પ્રોફાઇલ, સેટિંગ્સ અને ટ્યુટોરિયલ ખોલે છે.';
+
+  @override
+  String get storyRenew1Title => 'રિમાઇન્ડર આવે છે';
+
+  @override
+  String get storyRenew1Body => 'રેકોર્ડ સમાપ્ત થાય તે પહેલાં Vaultara તમને યાદ અપાવે છે. રેકોર્ડ ખોલવા રિમાઇન્ડર પર ટૅપ કરો.';
+
+  @override
+  String get storyRenew2Title => 'નવી તારીખ સેવ કરો';
+
+  @override
+  String get storyRenew2Body => 'રિન્યૂ કર્યું? «રિન્યૂ કરો» પર ટૅપ કરો અને નવી સમાપ્તિ તારીખ દાખલ કરો. રિમાઇન્ડર પણ સાથે ખસે છે.';
+
+  @override
+  String get storyRenew3Title => 'કેવી રીતે તે ખબર નથી?';
+
+  @override
+  String get storyRenew3Body => 'ઘણા રેકોર્ડમાં પગલાં, દસ્તાવેજો અને સામાન્ય ખર્ચ સાથેની માર્ગદર્શિકા હોય છે.';
+
+  @override
+  String get storyRenew4Title => 'તેને પુનરાવર્તિત થવા દો';
+
+  @override
+  String get storyRenew4Body => 'સબ્સ્ક્રિપ્શન અને વાર્ષિક ચુકવણી માટે પુનરાવર્તન ચાલુ કરો, તારીખ આપમેળે આગળ વધશે.';
+
+  @override
+  String get storyAsk1Title => 'તમારા શબ્દોમાં પૂછો';
+
+  @override
+  String get storyAsk1Body => 'જેમ કે «આ વર્ષે શું સમાપ્ત થાય છે?» પૂછો અને તમારા રેકોર્ડમાંથી જવાબ મેળવો.';
+
+  @override
+  String get storyAsk2Title => 'ટાઇપ કરવાને બદલે બોલો';
+
+  @override
+  String get storyAsk2Body => 'માઇક પર ટૅપ કરીને બોલો. બોલતાં જ શબ્દો દેખાય છે અને તમે તરત મોકલી શકો છો.';
+
+  @override
+  String get storyAsk3Title => 'દરેક ફેરફારની પુષ્ટિ તમે કરો છો';
+
+  @override
+  String get storyAsk3Body => 'રેકોર્ડ ઉમેરવા કે બદલવા કહો, પહેલાં એક કાર્ડ દેખાશે. તમે પુષ્ટિ ન કરો ત્યાં સુધી કંઈ સેવ થતું નથી.';
+
+  @override
+  String get storyAsk4Title => 'કોઈપણ ફેરફાર પૂર્વવત્ કરો';
+
+  @override
+  String get storyAsk4Body => 'મન બદલાયું? દરેક પુષ્ટિ કરેલો ફેરફાર એ જ કાર્ડમાંથી પૂર્વવત્ કરી શકાય છે.';
+
+  @override
+  String get storyAsk5Title => 'જ્યાં અટક્યા ત્યાંથી ચાલુ રાખો';
+
+  @override
+  String get storyAsk5Body => 'ચૅટ 90 દિવસ સુધી «ચેટ ઇતિહાસ» માં રહે છે, અને સૂચવેલા પ્રશ્નો શરૂઆત કરવામાં મદદ કરે છે.';
+
+  @override
+  String get storyWallet1Title => 'પહેલાં તૈયારી કરો';
+
+  @override
+  String get storyWallet1Body => 'કાર્ડ કે દસ્તાવેજ ખોલો અને તમે તેને ક્યાં રાખો છો તે પસંદ કરો, જેમ કે પાકીટ કે બૅગ.';
+
+  @override
+  String get storyWallet2Title => 'બ્લૉક નંબર સેવ કરો';
+
+  @override
+  String get storyWallet2Body => 'હમણાં દરેક બૅન્કનો બ્લૉક નંબર ઉમેરો. તે કાર્ડ પર હોય છે, જે જરૂર પડે ત્યારે તમારી પાસે નહીં હોય.';
+
+  @override
+  String get storyWallet3Title => 'જો ખોવાય';
+
+  @override
+  String get storyWallet3Body => '«મારું વૉલેટ ખોવાઈ ગયું» ખોલો અને «ખોવાયું» અથવા «ચોરાયું» પર ટૅપ કરો. Vaultara તેમાં જે હતું તે બધું બતાવે છે.';
+
+  @override
+  String get storyWallet4Title => 'મિનિટોમાં કાર્ડ બ્લૉક કરો';
+
+  @override
+  String get storyWallet4Body => 'એક ટૅપમાં દરેક બૅન્કને કૉલ કરો, કાર્ડને બ્લૉક તરીકે ચિહ્નિત કરો અને રિપોર્ટ નંબર સેવ કરો.';
+
+  @override
+  String get storyWallet5Title => 'બદલો અને સુરક્ષિત રહો';
+
+  @override
+  String get storyWallet5Body => 'દસ્તાવેજો બદલાવો, યાદ અપાય ત્યારે સ્ટેટમેન્ટ તપાસો અને મળે તો «મને મળી ગયું» પર ટૅપ કરો.';
+
+  @override
+  String get storyLife1Title => 'મોટી પળો, એક યોજના';
+
+  @override
+  String get storyLife1Body => 'ઘર બદલવું, બાળક, નવી નોકરી કે કટોકટી: «જીવનની ઘટનાઓ» માં પસંદ કરો કે શું થઈ રહ્યું છે.';
+
+  @override
+  String get storyLife2Title => 'તમારા રેકોર્ડ વ્યવસ્થિત';
+
+  @override
+  String get storyLife2Body => 'યોજના બતાવે છે કે કયા રેકોર્ડ અપડેટ, રદ કે રિન્યૂ કરવા અને કયા કદાચ ઉમેરવા પડે.';
+
+  @override
+  String get storyLife3Title => 'પગલાં અને તારીખો';
+
+  @override
+  String get storyLife3Body => 'પગલાં રેકોર્ડ ન હોય તેવું કામ આવરે છે, અને શરૂઆતની તારીખો કહે છે કે ક્યારે અરજી કરવી જેથી કંઈ મોડું ન થાય.';
+
+  @override
+  String get storyLife4Title => 'તેને તમારી બનાવો';
+
+  @override
+  String get storyLife4Body => 'તમારાં પગલાં ઉમેરો, યોજના PDF તરીકે શેર કરો અને તારીખની આસપાસ રિમાઇન્ડર મેળવો.';
+
+  @override
+  String get storyPhotos1Title => 'તમારા દસ્તાવેજોના ફોટા';
+
+  @override
+  String get storyPhotos1Body => 'રેકોર્ડમાંથી કાર્ડ કે દસ્તાવેજની આગળ અને પાછળની બાજુના ફોટા ઉમેરો.';
+
+  @override
+  String get storyPhotos2Title => 'ફોન પર એન્ક્રિપ્ટેડ';
+
+  @override
+  String get storyPhotos2Body => 'ફોટો એન્ક્રિપ્શન ચાલુ કરો, અપલોડ પહેલાં ફોટા ફોન પર લૉક થાય છે.';
+
+  @override
+  String get storyPhotos3Title => 'સંવેદનશીલ રેકોર્ડ લૉક કરો';
+
+  @override
+  String get storyPhotos3Body => 'રેકોર્ડ લૉક કરો, ખૂલતાં પહેલાં તે ફિંગરપ્રિન્ટ અથવા સ્ક્રીન લૉક માગશે.';
+
+  @override
+  String get storyPhotos4Title => 'આખી ઍપ લૉક કરો';
+
+  @override
+  String get storyPhotos4Body => 'સુરક્ષા સેટિંગ્સમાં ઍપ લૉક ચાલુ કરો અને ઍપ બદલતી વખતે સામગ્રી છુપાવો.';
+
+  @override
+  String get storyShare1Title => 'એક રેકોર્ડ શેર કરો';
+
+  @override
+  String get storyShare1Body => 'રેકોર્ડ ખોલો અને એવી લિંક શેર કરો જે ફક્ત એ જ રેકોર્ડ બતાવે, બીજું કંઈ નહીં.';
+
+  @override
+  String get storyShare2Title => 'પુરાવા પૅક';
+
+  @override
+  String get storyShare2Body => 'પસંદ કરેલા રેકોર્ડ તેમના ફોટા સાથે મકાનમાલિક, બૅન્ક કે ઑફિસ માટે એક PDFમાં મૂકો.';
+
+  @override
+  String get storyShare3Title => 'નિયંત્રણ તમારા હાથમાં';
+
+  @override
+  String get storyShare3Body => '«શેર કરેલી લિંક» તમે બનાવેલી દરેક લિંક બતાવે છે. કોઈપણને ક્યારેય પણ બંધ કરો, પછી તે નહીં ખૂલે.';
+
+  @override
+  String get storyHousehold1Title => 'તમારા ઘરને આમંત્રણ આપો';
+
+  @override
+  String get storyHousehold1Body => 'આમંત્રણ કોડ અથવા લિંક શેર કરો. દરેક વ્યક્તિ પોતાના એકાઉન્ટથી સાઇન ઇન કરે છે.';
+
+  @override
+  String get storyHousehold2Title => 'રેકોર્ડનો એક સેટ';
+
+  @override
+  String get storyHousehold2Body => 'બધા એ જ શેર કરેલા રેકોર્ડ જુએ છે અને એ જ રિમાઇન્ડર મેળવે છે.';
+
+  @override
+  String get storyHousehold3Title => 'આ કોનું છે?';
+
+  @override
+  String get storyHousehold3Body => 'દરેક રેકોર્ડ કોઈનો હોઈ શકે છે. તેમનું નામ રેકોર્ડ અને રિમાઇન્ડરમાં દેખાય છે.';
+
+  @override
+  String get storyImport1Title => 'કાર્ડ સ્કૅન કરો';
+
+  @override
+  String get storyImport1Body => 'કાર્ડ કે દસ્તાવેજનો ફોટો લો અને Vaultara નામ અને સમાપ્તિ તારીખ ભરી દેશે.';
+
+  @override
+  String get storyImport2Title => 'યાદી ઇમ્પોર્ટ કરો';
+
+  @override
+  String get storyImport2Body => 'પહેલેથી સ્પ્રેડશીટ છે? તેને ઇમ્પોર્ટ કરો અને સેવ થાય તે પહેલાં દરેક પંક્તિ તપાસો.';
+
+  @override
+  String get storyImport3Title => 'Vaultara પર શેર કરો';
+
+  @override
+  String get storyImport3Body => 'નવો રેકોર્ડ શરૂ કરવા બીજી ઍપમાંથી ફોટો, PDF કે ટેક્સ્ટ Vaultara પર શેર કરો.';
+
+  @override
+  String get storyCosts1Title => 'તમારા કૅલેન્ડરમાં';
+
+  @override
+  String get storyCosts1Body => 'સમાપ્તિ તારીખો ફોનના કૅલેન્ડરમાં તમારી અન્ય યોજનાઓની બાજુમાં ઉમેરો.';
+
+  @override
+  String get storyCosts2Title => 'રિન્યૂઅલનો ખર્ચ';
+
+  @override
+  String get storyCosts2Body => 'રેકોર્ડ પર રિન્યૂઅલનો ખર્ચ દાખલ કરો અને Vaultara બતાવશે કે તમે વર્ષે કેટલો ખર્ચ કરો છો.';
+
+  @override
+  String get storyCosts3Title => 'અગાઉથી યોજના બનાવો';
+
+  @override
+  String get storyCosts3Body => 'મોંઘા મહિના અગાઉથી જુઓ જેથી મોટું રિન્યૂઅલ ક્યારેય આશ્ચર્ય ન આપે.';
+
+  @override
+  String get storyBusiness1Title => 'તમારી ટીમ પર નજર રાખો';
+
+  @override
+  String get storyBusiness1Body => 'સ્ટાફ ઉમેરો અને તેમનાં પ્રમાણપત્રો, પરમિટ અને લાઇસન્સ એક જગ્યાએ રાખો.';
+
+  @override
+  String get storyBusiness2Title => 'ઇમેઇલ રિમાઇન્ડર';
+
+  @override
+  String get storyBusiness2Body => 'સ્ટાફને દસ્તાવેજો સમાપ્ત થાય તે પહેલાં ઇમેઇલ મળે છે, ઍપ વિના પણ.';
+
+  @override
+  String get storyBusiness3Title => 'માસિક રિપોર્ટ';
+
+  @override
+  String get storyBusiness3Body => 'દર મહિને રિપોર્ટ બતાવે છે કે શું માન્ય છે, શું સમાપ્ત થાય છે અને શું ખૂટે છે.';
+
+  @override
+  String get storyBusiness4Title => 'અપડેટ માગો';
+
+  @override
+  String get storyBusiness4Body => 'લિંક મોકલો અને સ્ટાફ પોતે રિન્યૂ થયેલો દસ્તાવેજ અપલોડ કરશે.';
 }

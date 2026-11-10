@@ -7715,4 +7715,442 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'شاشتك الرئيسية';
+
+  @override
+  String get tutorialsSubHome => 'ماذا تعني البطاقات وأين تجد كل شيء';
+
+  @override
+  String get tutorialsTitleRenew => 'تجديد سجل';
+
+  @override
+  String get tutorialsSubRenew => 'ماذا تفعل عند وصول تذكير';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'التقويم والتكاليف';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'تواريخ الانتهاء في تقويمك وتكلفة التجديدات';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'الصور والأمان';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'صور المستندات والتشفير والأقفال';
+
+  @override
+  String get tutorialsTitleSharing => 'مشاركة آمنة';
+
+  @override
+  String get tutorialsSubSharing => 'شارك سجلاً، أنشئ حزمة، أوقف رابطاً';
+
+  @override
+  String get tutorialsTitleImportScan => 'المسح والاستيراد';
+
+  @override
+  String get tutorialsSubImportScan => 'أضف سجلات كثيرة بسرعة';
+
+  @override
+  String get tutorialsTitleHousehold => 'منزل مشترك';
+
+  @override
+  String get tutorialsSubHousehold => 'ادعُ آخرين لمشاركة السجلات والتذكيرات';
+
+  @override
+  String get tutorialsTitleLostWallet => 'فقدت محفظتي';
+
+  @override
+  String get tutorialsSubLostWallet => 'استعد الآن وتصرّف بسرعة إذا ضاعت';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'أحداث الحياة';
+
+  @override
+  String get tutorialsSubLifeEvents => 'خطة للانتقال أو مولود أو وظيفة جديدة والمزيد';
+
+  @override
+  String get tutorialsTitleAsk => 'اسأل Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'دردش أو تحدّث مع سجلاتك';
+
+  @override
+  String get tutorialsTitleBusiness => 'أدوات Business';
+
+  @override
+  String get tutorialsSubBusiness => 'مستندات الموظفين والتذكيرات والتقارير';
+
+  @override
+  String get tutorialsGroupBasics => 'الأساسيات';
+
+  @override
+  String get tutorialsGroupOnTop => 'البقاء على اطلاع';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'السفر والعائلة';
+
+  @override
+  String get tutorialsGroupEmergencies => 'أحداث الحياة والطوارئ';
+
+  @override
+  String get tutorialsGroupPaid => 'ميزات مدفوعة';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خطوة',
+      many: '$count خطوة',
+      few: '$count خطوات',
+      two: 'خطوتان',
+      one: 'خطوة واحدة',
+      zero: 'لا خطوات',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'الخطط المدفوعة';
+
+  @override
+  String get tutorialsPaidNote => 'يمكنك مشاهدة هذا مع أي خطة. أما الميزة نفسها فتتطلب خطة مدفوعة.';
+
+  @override
+  String get tutorialsBack => 'رجوع';
+
+  @override
+  String get tutorialsTryIt => 'جرّبها الآن';
+
+  @override
+  String get tutorialHintText => 'جديد هنا؟ خذ الجولة السريعة';
+
+  @override
+  String get tutorialHintPlay => 'أرني';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'الفصل $number من $total';
+  }
+
+  @override
+  String get tourContinue => 'متابعة';
+
+  @override
+  String get tourSkip => 'تخطٍّ';
+
+  @override
+  String get tourSkipped => 'تم التخطي';
+
+  @override
+  String get tourDone => 'شاهدت الجولة كاملة';
+
+  @override
+  String get tourRestart => 'ابدأ من جديد';
+
+  @override
+  String get whatsNewBadge => 'جديد';
+
+  @override
+  String get whatsNewTitle => 'فقدت محفظتي';
+
+  @override
+  String get whatsNewBody => 'احفظ مكان بطاقاتك ورقم الإيقاف لكل بنك. إذا ضاعت محفظتك توقف كل شيء في دقائق.';
+
+  @override
+  String get whatsNewDismiss => 'فهمت';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'تفاصيل إضافية تحتوي على الإضافات: الملاحظات والتكرار ومدة التجديد ولمن السجل وأين تحفظه والقفل والصور. افتحها فقط عند الحاجة.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'اقفل سجلاً ليطلب بصمة الإصبع أو قفل الشاشة قبل عرضه. اختر أين تحفظه، مثل محفظتك، وأضف صور المستند.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'أضعت محفظتك؟ شاهد كل ما كان فيها، واتصل بكل بنك بلمسة واحدة، واتبع الخطوات للباقي.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'انتقال أو مولود أو وظيفة جديدة أو حالة طارئة؟ تمنحك أحداث الحياة خطة بسجلاتك وخطواتك وتواريخك.';
+
+  @override
+  String get storySampleQuestion => 'ما الذي ينتهي هذا العام؟';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'ينتهي $name في مارس. هل تريد تذكيراً قبل شهر؟';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'ينتهي $name خلال 30 يوماً. انقر للتجديد.';
+  }
+
+  @override
+  String get storySampleGym => 'اشتراك النادي الرياضي';
+
+  @override
+  String get storySampleFirstAid => 'شهادة الإسعافات الأولية';
+
+  @override
+  String get storySampleEncrypt => 'تشفير الصور';
+
+  @override
+  String get storySampleAppLock => 'قفل التطبيق';
+
+  @override
+  String get storySampleHideApp => 'إخفاء المحتوى في مبدّل التطبيقات';
+
+  @override
+  String get storyHome1Title => 'يومك في لمحة';
+
+  @override
+  String get storyHome1Body => 'تعرض الشاشة الرئيسية ما يهم اليوم: ما سينتهي قريباً وعدد سجلاتك.';
+
+  @override
+  String get storyHome2Title => 'اعثر على أي شيء';
+
+  @override
+  String get storyHome2Body => 'انقر على البحث للعثور على سجل بالاسم أو المجموعة أو الشخص.';
+
+  @override
+  String get storyHome3Title => 'الرحلات والخطط';
+
+  @override
+  String get storyHome3Body => 'تظهر هنا الرحلات التي تخطط لها وخطط أحداث الحياة الجارية مع ما تبقى منها.';
+
+  @override
+  String get storyHome4Title => 'مساعدة بلمسة واحدة';
+
+  @override
+  String get storyHome4Body => 'زر الشرارة يفتح «اسأل Vaultara». وصورتك تفتح ملفك الشخصي والإعدادات والدروس.';
+
+  @override
+  String get storyRenew1Title => 'يصل تذكير';
+
+  @override
+  String get storyRenew1Body => 'قبل أن ينتهي سجل، يذكّرك Vaultara. انقر على التذكير لفتح السجل.';
+
+  @override
+  String get storyRenew2Title => 'احفظ التاريخ الجديد';
+
+  @override
+  String get storyRenew2Body => 'جدّدته؟ انقر على «تجديد» وأدخل تاريخ الانتهاء الجديد. تتحرك تذكيراتك معه.';
+
+  @override
+  String get storyRenew3Title => 'لست متأكداً من الطريقة؟';
+
+  @override
+  String get storyRenew3Body => 'لكثير من السجلات دليل بالخطوات والمستندات والتكلفة المعتادة.';
+
+  @override
+  String get storyRenew4Title => 'دعه يتكرر';
+
+  @override
+  String get storyRenew4Body => 'للاشتراكات والمدفوعات السنوية، فعّل التكرار ليتقدم التاريخ تلقائياً.';
+
+  @override
+  String get storyAsk1Title => 'اسأل بكلماتك';
+
+  @override
+  String get storyAsk1Body => 'اسأل مثلاً «ما الذي ينتهي هذا العام؟» واحصل على إجابات من سجلاتك.';
+
+  @override
+  String get storyAsk2Title => 'تحدّث بدلاً من الكتابة';
+
+  @override
+  String get storyAsk2Body => 'انقر على الميكروفون وتحدّث. تظهر كلماتك أثناء الحديث ويمكنك الإرسال فوراً.';
+
+  @override
+  String get storyAsk3Title => 'أنت تؤكد كل تغيير';
+
+  @override
+  String get storyAsk3Body => 'اطلب إضافة سجل أو تغييره وسترى بطاقة أولاً. لا يُحفظ شيء حتى تؤكد.';
+
+  @override
+  String get storyAsk4Title => 'تراجع عن أي تغيير';
+
+  @override
+  String get storyAsk4Body => 'غيّرت رأيك؟ يمكن التراجع عن أي تغيير مؤكد من البطاقة نفسها.';
+
+  @override
+  String get storyAsk5Title => 'تابع من حيث توقفت';
+
+  @override
+  String get storyAsk5Body => 'تُحفظ المحادثات 90 يوماً في «سجل المحادثات»، وتساعدك الأسئلة المقترحة على البدء.';
+
+  @override
+  String get storyWallet1Title => 'استعد أولاً';
+
+  @override
+  String get storyWallet1Body => 'افتح بطاقة أو مستنداً واختر أين تحفظه، مثل محفظتك أو حقيبتك.';
+
+  @override
+  String get storyWallet2Title => 'احفظ رقم الإيقاف';
+
+  @override
+  String get storyWallet2Body => 'أضف رقم الإيقاف لكل بنك الآن. إنه على البطاقة، ولن تكون معك عندما تحتاج إليه.';
+
+  @override
+  String get storyWallet3Title => 'إذا ضاعت';
+
+  @override
+  String get storyWallet3Body => 'افتح «فقدت محفظتي» وانقر على «ضاعت» أو «سُرقت». يعرض Vaultara كل ما كان فيها.';
+
+  @override
+  String get storyWallet4Title => 'أوقف البطاقات في دقائق';
+
+  @override
+  String get storyWallet4Body => 'اتصل بكل بنك بلمسة واحدة، وضع علامة على البطاقات كموقوفة، واحفظ رقم البلاغ.';
+
+  @override
+  String get storyWallet5Title => 'استبدل وابقَ آمناً';
+
+  @override
+  String get storyWallet5Body => 'استبدل مستنداتك، وراجع كشوف الحساب عند التذكير، وانقر على «وجدتها» إذا عثرت عليها.';
+
+  @override
+  String get storyLife1Title => 'لحظات كبيرة، خطة واحدة';
+
+  @override
+  String get storyLife1Body => 'انتقال أو مولود أو وظيفة جديدة أو حالة طارئة: اختر في «أحداث الحياة» ما يحدث.';
+
+  @override
+  String get storyLife2Title => 'سجلاتك مرتبة';
+
+  @override
+  String get storyLife2Body => 'تعرض الخطة السجلات التي يجب تحديثها أو إلغاؤها أو تجديدها، وتلك التي قد تحتاج إلى إضافتها.';
+
+  @override
+  String get storyLife3Title => 'الخطوات والتواريخ';
+
+  @override
+  String get storyLife3Body => 'تغطي الخطوات ما ليس سجلاً، وتخبرك تواريخ البدء متى تقدّم الطلب حتى لا يتأخر شيء.';
+
+  @override
+  String get storyLife4Title => 'اجعلها خاصة بك';
+
+  @override
+  String get storyLife4Body => 'أضف خطواتك، وشارك الخطة كملف PDF، واحصل على تذكيرات حول التاريخ.';
+
+  @override
+  String get storyPhotos1Title => 'صور مستنداتك';
+
+  @override
+  String get storyPhotos1Body => 'من السجل، أضف صوراً للوجه الأمامي والخلفي لبطاقة أو مستند.';
+
+  @override
+  String get storyPhotos2Title => 'مشفرة على هاتفك';
+
+  @override
+  String get storyPhotos2Body => 'فعّل تشفير الصور لتُقفل على هاتفك قبل رفعها.';
+
+  @override
+  String get storyPhotos3Title => 'اقفل السجلات الحساسة';
+
+  @override
+  String get storyPhotos3Body => 'اقفل سجلاً وسيطلب بصمة الإصبع أو قفل الشاشة قبل فتحه.';
+
+  @override
+  String get storyPhotos4Title => 'اقفل التطبيق بالكامل';
+
+  @override
+  String get storyPhotos4Body => 'في إعدادات الأمان، فعّل قفل التطبيق وأخفِ المحتوى عند التبديل بين التطبيقات.';
+
+  @override
+  String get storyShare1Title => 'شارك سجلاً واحداً';
+
+  @override
+  String get storyShare1Body => 'افتح سجلاً وشارك رابطاً يعرض هذا السجل فقط ولا شيء غيره.';
+
+  @override
+  String get storyShare2Title => 'حزمة الإثبات';
+
+  @override
+  String get storyShare2Body => 'ضع السجلات التي تختارها مع صورها في ملف PDF واحد لمالك العقار أو البنك أو الجهة الرسمية.';
+
+  @override
+  String get storyShare3Title => 'تحكّم كامل';
+
+  @override
+  String get storyShare3Body => 'يعرض «الروابط المشاركة» كل رابط أنشأته. أوقف أياً منها متى شئت ولن يُفتح بعد ذلك.';
+
+  @override
+  String get storyHousehold1Title => 'ادعُ أهل منزلك';
+
+  @override
+  String get storyHousehold1Body => 'شارك رمز دعوة أو رابطاً. يسجّل كل شخص الدخول بحسابه.';
+
+  @override
+  String get storyHousehold2Title => 'مجموعة سجلات واحدة';
+
+  @override
+  String get storyHousehold2Body => 'يرى الجميع السجلات المشتركة نفسها ويتلقون التذكيرات نفسها.';
+
+  @override
+  String get storyHousehold3Title => 'لمن هذا؟';
+
+  @override
+  String get storyHousehold3Body => 'يمكن أن يخص كل سجل شخصاً ما. يظهر اسمه عليه وفي تذكيراته.';
+
+  @override
+  String get storyImport1Title => 'امسح بطاقة';
+
+  @override
+  String get storyImport1Body => 'صوّر بطاقة أو مستنداً وسيملأ Vaultara الاسم وتاريخ الانتهاء نيابة عنك.';
+
+  @override
+  String get storyImport2Title => 'استورد قائمة';
+
+  @override
+  String get storyImport2Body => 'لديك جدول بيانات بالفعل؟ استورده وراجع كل صف قبل حفظ أي شيء.';
+
+  @override
+  String get storyImport3Title => 'شارك إلى Vaultara';
+
+  @override
+  String get storyImport3Body => 'شارك صورة أو ملف PDF أو نصاً من تطبيق آخر إلى Vaultara لبدء سجل جديد.';
+
+  @override
+  String get storyCosts1Title => 'في تقويمك';
+
+  @override
+  String get storyCosts1Body => 'أضف تواريخ الانتهاء إلى تقويم هاتفك بجانب خططك الأخرى.';
+
+  @override
+  String get storyCosts2Title => 'تكلفة التجديدات';
+
+  @override
+  String get storyCosts2Body => 'أدخل تكلفة التجديد في السجل وسيعرض Vaultara ما تنفقه سنوياً.';
+
+  @override
+  String get storyCosts3Title => 'خطط مسبقاً';
+
+  @override
+  String get storyCosts3Body => 'اعرف الأشهر المكلفة مسبقاً حتى لا يفاجئك تجديد كبير أبداً.';
+
+  @override
+  String get storyBusiness1Title => 'تابع فريقك';
+
+  @override
+  String get storyBusiness1Body => 'أضف الموظفين واحتفظ بشهاداتهم وتصاريحهم ورخصهم في مكان واحد.';
+
+  @override
+  String get storyBusiness2Title => 'تذكيرات بالبريد الإلكتروني';
+
+  @override
+  String get storyBusiness2Body => 'يتلقى الموظفون رسائل قبل انتهاء مستنداتهم، حتى من دون التطبيق.';
+
+  @override
+  String get storyBusiness3Title => 'تقرير شهري';
+
+  @override
+  String get storyBusiness3Body => 'كل شهر يعرض تقرير ما هو ساري المفعول وما ينتهي وما ينقص.';
+
+  @override
+  String get storyBusiness4Title => 'اطلب تحديثاً';
+
+  @override
+  String get storyBusiness4Body => 'أرسل رابطاً ليرفع الموظف المستند المجدَّد بنفسه.';
 }

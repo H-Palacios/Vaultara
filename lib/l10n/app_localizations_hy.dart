@@ -7492,4 +7492,438 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Ձեր գլխավոր էկրանը';
+
+  @override
+  String get tutorialsSubHome => 'Ինչ են նշանակում քարտերը և որտեղ է ամեն ինչ';
+
+  @override
+  String get tutorialsTitleRenew => 'Գրառման թարմացում';
+
+  @override
+  String get tutorialsSubRenew => 'Ինչ անել, երբ հիշեցում է գալիս';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Օրացույց և ծախսեր';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Ժամկետները օրացույցում և թարմացման արժեքը';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Լուսանկարներ և անվտանգություն';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Փաստաթղթերի լուսանկարներ, գաղտնագրում և կողպեքներ';
+
+  @override
+  String get tutorialsTitleSharing => 'Անվտանգ կիսվել';
+
+  @override
+  String get tutorialsSubSharing => 'Կիսվել գրառումով, ստեղծել փաթեթ, դադարեցնել հղումը';
+
+  @override
+  String get tutorialsTitleImportScan => 'Սկանավորում և ներմուծում';
+
+  @override
+  String get tutorialsSubImportScan => 'Արագ ավելացրեք շատ գրառումներ';
+
+  @override
+  String get tutorialsTitleHousehold => 'Ընդհանուր տնային տնտեսություն';
+
+  @override
+  String get tutorialsSubHousehold => 'Հրավիրեք ուրիշներին կիսվելու գրառումներով և հիշեցումներով';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Կորցրել եմ դրամապանակս';
+
+  @override
+  String get tutorialsSubLostWallet => 'Պատրաստվեք հիմա, կորելու դեպքում գործեք արագ';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Կյանքի իրադարձություններ';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Պլան տեղափոխության, երեխայի, նոր աշխատանքի և այլնի համար';
+
+  @override
+  String get tutorialsTitleAsk => 'Հարցրեք Vaultara-ին';
+
+  @override
+  String get tutorialsSubAsk => 'Զրուցեք կամ խոսեք ձեր գրառումների հետ';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business գործիքներ';
+
+  @override
+  String get tutorialsSubBusiness => 'Աշխատակիցների փաստաթղթեր, հիշեցումներ և հաշվետվություններ';
+
+  @override
+  String get tutorialsGroupBasics => 'Հիմունքներ';
+
+  @override
+  String get tutorialsGroupOnTop => 'Ամեն ինչ վերահսկողության տակ';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Ճամփորդություն և ընտանիք';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Կյանքի իրադարձություններ և արտակարգ իրավիճակներ';
+
+  @override
+  String get tutorialsGroupPaid => 'Վճարովի գործառույթներ';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count քայլ',
+      one: '$count քայլ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Վճարովի պլաններ';
+
+  @override
+  String get tutorialsPaidNote => 'Սա կարող եք դիտել ցանկացած պլանով։ Գործառույթն ինքնին պահանջում է վճարովի պլան։';
+
+  @override
+  String get tutorialsBack => 'Հետ';
+
+  @override
+  String get tutorialsTryIt => 'Փորձել հիմա';
+
+  @override
+  String get tutorialHintText => 'Նո՞ր եք այստեղ։ Դիտեք կարճ շրջայցը';
+
+  @override
+  String get tutorialHintPlay => 'Ցույց տալ';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Գլուխ $number՝ $total-ից';
+  }
+
+  @override
+  String get tourContinue => 'Շարունակել';
+
+  @override
+  String get tourSkip => 'Բաց թողնել';
+
+  @override
+  String get tourSkipped => 'Բաց թողնված';
+
+  @override
+  String get tourDone => 'Դուք դիտել եք ամբողջ շրջայցը';
+
+  @override
+  String get tourRestart => 'Սկսել նորից';
+
+  @override
+  String get whatsNewBadge => 'Նոր';
+
+  @override
+  String get whatsNewTitle => 'Կորցրել եմ դրամապանակս';
+
+  @override
+  String get whatsNewBody => 'Պահպանեք, թե որտեղ եք պահում քարտերը, և յուրաքանչյուր բանկի արգելափակման համարը։ Դրամապանակը կորցնելու դեպքում ամեն ինչ կարգելափակեք րոպեների ընթացքում։';
+
+  @override
+  String get whatsNewDismiss => 'Հասկանալի է';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Ավելի շատ մանրամասներում լրացուցիչներն են՝ նշումներ, կրկնություն, թարմացման ժամկետ, ում է պատկանում, որտեղ եք պահում, կողպեք և լուսանկարներ։ Բացեք միայն անհրաժեշտության դեպքում։';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Կողպեք գրառումը, որպեսզի ցուցադրելուց առաջ պահանջի մատնահետք կամ էկրանի կողպեք։ Ընտրեք, թե որտեղ եք պահում, օրինակ՝ դրամապանակում, և ավելացրեք փաստաթղթի լուսանկարները։';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Կորցրե՞լ եք դրամապանակը։ Տեսեք այն ամենը, ինչ կար ներսում, մեկ հպումով զանգեք յուրաքանչյուր բանկ և հետևեք մնացած քայլերին։';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Տեղափոխություն, երեխա, նոր աշխատանք կամ արտակարգ իրավիճա՞կ։ Կյանքի իրադարձությունները տալիս են պլան ձեր գրառումներով, քայլերով և ամսաթվերով։';
+
+  @override
+  String get storySampleQuestion => 'Ի՞նչն է լրանում այս տարի';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Ձեր $name-ի ժամկետը լրանում է մարտին։ Ցանկանո՞ւմ եք հիշեցում մեկ ամիս առաջ։';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name-ի ժամկետը լրանում է 30 օրից։ Հպեք՝ թարմացնելու համար։';
+  }
+
+  @override
+  String get storySampleGym => 'Մարզասրահի անդամակցություն';
+
+  @override
+  String get storySampleFirstAid => 'Առաջին օգնության վկայական';
+
+  @override
+  String get storySampleEncrypt => 'Գաղտնագրել լուսանկարները';
+
+  @override
+  String get storySampleAppLock => 'Հավելվածի կողպեք';
+
+  @override
+  String get storySampleHideApp => 'Թաքցնել բովանդակությունը հավելվածների փոխանջատիչում';
+
+  @override
+  String get storyHome1Title => 'Ձեր օրը մեկ հայացքով';
+
+  @override
+  String get storyHome1Body => 'Գլխավոր էկրանը ցույց է տալիս այն, ինչ կարևոր է այսօր՝ ինչն է շուտով լրանում և քանի գրառում ունեք։';
+
+  @override
+  String get storyHome2Title => 'Գտեք ցանկացած բան';
+
+  @override
+  String get storyHome2Body => 'Հպեք որոնմանը՝ գրառում գտնելու անունով, խմբով կամ անձով։';
+
+  @override
+  String get storyHome3Title => 'Ճամփորդություններ և պլաններ';
+
+  @override
+  String get storyHome3Body => 'Ձեր պլանավորած ճամփորդությունները և ընթացիկ կյանքի իրադարձությունների պլանները՝ մնացած գործերով հանդերձ, երևում են այստեղ։';
+
+  @override
+  String get storyHome4Title => 'Օգնություն մեկ հպումով';
+
+  @override
+  String get storyHome4Body => 'Կայծի կոճակը բացում է «Հարցրեք Vaultara-ին»-ը։ Ձեր լուսանկարը բացում է պրոֆիլը, կարգավորումները և ուղեցույցները։';
+
+  @override
+  String get storyRenew1Title => 'Հիշեցում է գալիս';
+
+  @override
+  String get storyRenew1Body => 'Մինչև գրառման ժամկետի լրանալը Vaultara-ն հիշեցնում է ձեզ։ Հպեք հիշեցմանը՝ գրառումը բացելու համար։';
+
+  @override
+  String get storyRenew2Title => 'Պահպանեք նոր ամսաթիվը';
+
+  @override
+  String get storyRenew2Body => 'Թարմացրե՞լ եք։ Հպեք «Նորացնել»-ին և մուտքագրեք նոր ժամկետը։ Հիշեցումները նույնպես կտեղաշարժվեն։';
+
+  @override
+  String get storyRenew3Title => 'Չգիտե՞ք ինչպես';
+
+  @override
+  String get storyRenew3Body => 'Շատ գրառումներ ունեն ուղեցույց՝ քայլերով, փաստաթղթերով և սովորական արժեքով։';
+
+  @override
+  String get storyRenew4Title => 'Թող կրկնվի';
+
+  @override
+  String get storyRenew4Body => 'Բաժանորդագրությունների և տարեկան վճարումների համար միացրեք կրկնությունը, և ամսաթիվն ինքը կառաջանա։';
+
+  @override
+  String get storyAsk1Title => 'Հարցրեք ձեր բառերով';
+
+  @override
+  String get storyAsk1Body => 'Հարցրեք, օրինակ՝ «Ի՞նչն է լրանում այս տարի», և ստացեք պատասխաններ ձեր գրառումներից։';
+
+  @override
+  String get storyAsk2Title => 'Խոսեք մուտքագրելու փոխարեն';
+
+  @override
+  String get storyAsk2Body => 'Հպեք խոսափողին և խոսեք։ Բառերը հայտնվում են խոսելիս, և կարող եք անմիջապես ուղարկել։';
+
+  @override
+  String get storyAsk3Title => 'Յուրաքանչյուր փոփոխություն հաստատում եք դուք';
+
+  @override
+  String get storyAsk3Body => 'Խնդրեք ավելացնել կամ փոխել գրառումը, և նախ կտեսնեք քարտ։ Ոչինչ չի պահպանվում, քանի դեռ չեք հաստատել։';
+
+  @override
+  String get storyAsk4Title => 'Չեղարկեք ցանկացած փոփոխություն';
+
+  @override
+  String get storyAsk4Body => 'Մտափոխվե՞լ եք։ Յուրաքանչյուր հաստատված փոփոխություն կարելի է չեղարկել նույն քարտից։';
+
+  @override
+  String get storyAsk5Title => 'Շարունակեք այնտեղից, որտեղ կանգ էիք առել';
+
+  @override
+  String get storyAsk5Body => 'Զրույցները պահվում են 90 օր «Զրույցների պատմություն»-ում, իսկ առաջարկվող հարցերն օգնում են սկսել։';
+
+  @override
+  String get storyWallet1Title => 'Նախ պատրաստվեք';
+
+  @override
+  String get storyWallet1Body => 'Բացեք քարտ կամ փաստաթուղթ և ընտրեք, թե որտեղ եք պահում, օրինակ՝ դրամապանակում կամ պայուսակում։';
+
+  @override
+  String get storyWallet2Title => 'Պահպանեք արգելափակման համարը';
+
+  @override
+  String get storyWallet2Body => 'Ավելացրեք յուրաքանչյուր բանկի արգելափակման համարը հիմա։ Այն քարտի վրա է, որը ձեզ մոտ չի լինի, երբ անհրաժեշտ լինի։';
+
+  @override
+  String get storyWallet3Title => 'Եթե կորի';
+
+  @override
+  String get storyWallet3Body => 'Բացեք «Կորցրել եմ դրամապանակս»-ը և հպեք «Կորել է»-ին կամ «Գողացել են»-ին։ Vaultara-ն թվարկում է այն ամենը, ինչ կար ներսում։';
+
+  @override
+  String get storyWallet4Title => 'Արգելափակեք քարտերը րոպեների ընթացքում';
+
+  @override
+  String get storyWallet4Body => 'Մեկ հպումով զանգեք յուրաքանչյուր բանկ, նշեք քարտերը որպես արգելափակված և պահպանեք դիմումի համարը։';
+
+  @override
+  String get storyWallet5Title => 'Փոխարինեք և մնացեք անվտանգ';
+
+  @override
+  String get storyWallet5Body => 'Վերականգնեք փաստաթղթերը, ստուգեք քաղվածքները հիշեցման դեպքում և հպեք «Գտա»-ին, եթե գտնվի։';
+
+  @override
+  String get storyLife1Title => 'Մեծ պահեր, մեկ պլան';
+
+  @override
+  String get storyLife1Body => 'Տեղափոխություն, երեխա, նոր աշխատանք կամ արտակարգ իրավիճակ՝ «Կյանքի իրադարձություններ»-ում ընտրեք, թե ինչ է կատարվում։';
+
+  @override
+  String get storyLife2Title => 'Ձեր գրառումները կարգի են';
+
+  @override
+  String get storyLife2Body => 'Պլանը ցույց է տալիս, թե որ գրառումները թարմացնել, չեղարկել կամ երկարաձգել, և որոնք գուցե պետք է ավելացնել։';
+
+  @override
+  String get storyLife3Title => 'Քայլեր և ամսաթվեր';
+
+  @override
+  String get storyLife3Body => 'Քայլերը ներառում են այն, ինչը գրառում չէ, իսկ մեկնարկի ամսաթվերը ասում են, թե երբ դիմել, որպեսզի ոչինչ չուշանա։';
+
+  @override
+  String get storyLife4Title => 'Դարձրեք այն ձերը';
+
+  @override
+  String get storyLife4Body => 'Ավելացրեք ձեր քայլերը, կիսվեք պլանով որպես PDF և ստացեք հիշեցումներ ամսաթվի շուրջ։';
+
+  @override
+  String get storyPhotos1Title => 'Ձեր փաստաթղթերի լուսանկարները';
+
+  @override
+  String get storyPhotos1Body => 'Գրառումից ավելացրեք քարտի կամ փաստաթղթի առջևի և հետևի կողմի լուսանկարները։';
+
+  @override
+  String get storyPhotos2Title => 'Գաղտնագրված հեռախոսում';
+
+  @override
+  String get storyPhotos2Body => 'Միացրեք լուսանկարների գաղտնագրումը, և դրանք կկողպվեն հեռախոսում վերբեռնելուց առաջ։';
+
+  @override
+  String get storyPhotos3Title => 'Կողպեք զգայուն գրառումները';
+
+  @override
+  String get storyPhotos3Body => 'Կողպեք գրառումը, և բացելուց առաջ այն կպահանջի մատնահետք կամ էկրանի կողպեք։';
+
+  @override
+  String get storyPhotos4Title => 'Կողպեք ամբողջ հավելվածը';
+
+  @override
+  String get storyPhotos4Body => 'Անվտանգության կարգավորումներում միացրեք հավելվածի կողպեքը և թաքցրեք բովանդակությունը հավելվածները փոխելիս։';
+
+  @override
+  String get storyShare1Title => 'Կիսվեք մեկ գրառումով';
+
+  @override
+  String get storyShare1Body => 'Բացեք գրառումը և կիսվեք հղումով, որը ցույց է տալիս միայն այդ գրառումը, ուրիշ ոչինչ։';
+
+  @override
+  String get storyShare2Title => 'Ապացույցների փաթեթ';
+
+  @override
+  String get storyShare2Body => 'Ընտրված գրառումները լուսանկարներով հավաքեք մեկ PDF-ում՝ տանտիրոջ, բանկի կամ գրասենյակի համար։';
+
+  @override
+  String get storyShare3Title => 'Վերահսկողությունը ձերն է';
+
+  @override
+  String get storyShare3Body => '«Կիսված հղումներ»-ը ցույց է տալիս ձեր ստեղծած յուրաքանչյուր հղումը։ Դադարեցրեք ցանկացածը ցանկացած պահի, և այն այլևս չի բացվի։';
+
+  @override
+  String get storyHousehold1Title => 'Հրավիրեք ձեր տնեցիներին';
+
+  @override
+  String get storyHousehold1Body => 'Կիսվեք հրավերի կոդով կամ հղումով։ Յուրաքանչյուրը մուտք է գործում իր հաշվով։';
+
+  @override
+  String get storyHousehold2Title => 'Գրառումների մեկ հավաքածու';
+
+  @override
+  String get storyHousehold2Body => 'Բոլորը տեսնում են նույն ընդհանուր գրառումները և ստանում նույն հիշեցումները։';
+
+  @override
+  String get storyHousehold3Title => 'Ո՞ւմն է';
+
+  @override
+  String get storyHousehold3Body => 'Յուրաքանչյուր գրառում կարող է պատկանել ինչ-որ մեկին։ Նրա անունը երևում է գրառման և հիշեցումների մեջ։';
+
+  @override
+  String get storyImport1Title => 'Սկանավորեք քարտը';
+
+  @override
+  String get storyImport1Body => 'Լուսանկարեք քարտը կամ փաստաթուղթը, և Vaultara-ն կլրացնի անունն ու ժամկետը ձեր փոխարեն։';
+
+  @override
+  String get storyImport2Title => 'Ներմուծեք ցուցակ';
+
+  @override
+  String get storyImport2Body => 'Արդեն ունե՞ք աղյուսակ։ Ներմուծեք այն և ստուգեք յուրաքանչյուր տող պահպանելուց առաջ։';
+
+  @override
+  String get storyImport3Title => 'Կիսվեք Vaultara-ում';
+
+  @override
+  String get storyImport3Body => 'Կիսվեք լուսանկարով, PDF-ով կամ տեքստով այլ հավելվածից Vaultara-ում՝ նոր գրառում սկսելու համար։';
+
+  @override
+  String get storyCosts1Title => 'Ձեր օրացույցում';
+
+  @override
+  String get storyCosts1Body => 'Ավելացրեք ժամկետները հեռախոսի օրացույցին՝ ձեր մյուս պլանների կողքին։';
+
+  @override
+  String get storyCosts2Title => 'Թարմացման արժեքը';
+
+  @override
+  String get storyCosts2Body => 'Մուտքագրեք թարմացման արժեքը գրառման մեջ, և Vaultara-ն ցույց կտա, թե որքան եք ծախսում տարեկան։';
+
+  @override
+  String get storyCosts3Title => 'Պլանավորեք նախապես';
+
+  @override
+  String get storyCosts3Body => 'Տեսեք թանկ ամիսները նախապես, որպեսզի մեծ թարմացումը երբեք անակնկալ չլինի։';
+
+  @override
+  String get storyBusiness1Title => 'Հետևեք ձեր թիմին';
+
+  @override
+  String get storyBusiness1Body => 'Ավելացրեք աշխատակիցներին և պահեք նրանց վկայականները, թույլտվությունները և լիցենզիաները մեկ տեղում։';
+
+  @override
+  String get storyBusiness2Title => 'Էլփոստով հիշեցումներ';
+
+  @override
+  String get storyBusiness2Body => 'Աշխատակիցները նամակ են ստանում մինչև փաստաթղթերի ժամկետի լրանալը, նույնիսկ առանց հավելվածի։';
+
+  @override
+  String get storyBusiness3Title => 'Ամսական հաշվետվություն';
+
+  @override
+  String get storyBusiness3Body => 'Յուրաքանչյուր ամիս հաշվետվությունը ցույց է տալիս, թե ինչն է վավեր, ինչն է լրանում և ինչն է պակասում։';
+
+  @override
+  String get storyBusiness4Title => 'Խնդրեք թարմացում';
+
+  @override
+  String get storyBusiness4Body => 'Ուղարկեք հղում, և աշխատակիցն ինքը կվերբեռնի թարմացված փաստաթուղթը։';
 }

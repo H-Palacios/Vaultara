@@ -7441,4 +7441,437 @@ class AppLocalizationsIg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Ihuenyo ụlọ gị';
+
+  @override
+  String get tutorialsSubHome => 'Ihe kaadị pụtara na ebe ihe niile dị';
+
+  @override
+  String get tutorialsTitleRenew => 'Megharịa ndekọ';
+
+  @override
+  String get tutorialsSubRenew => 'Ihe ị ga-eme mgbe ncheta bịara';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalịnda na ọnụ ahịa';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Ụbọchị njedebe na kalịnda gị na ọnụ ahịa imegharị';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Foto na nchekwa';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Foto akwụkwọ, izo ya ezo na mkpọchi';
+
+  @override
+  String get tutorialsTitleSharing => 'Kekọrịta n\'enweghị nsogbu';
+
+  @override
+  String get tutorialsSubSharing => 'Kekọrịta ndekọ, mee ngwugwu, kwụsị njikọ';
+
+  @override
+  String get tutorialsTitleImportScan => 'Nyochaa ma bubata';
+
+  @override
+  String get tutorialsSubImportScan => 'Tinye ọtụtụ ndekọ ngwa ngwa';
+
+  @override
+  String get tutorialsTitleHousehold => 'Ezinụlọ ekekọrịtara';
+
+  @override
+  String get tutorialsSubHousehold => 'Kpọọ ndị ọzọ ka ha kekọrịta ndekọ na ncheta';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Furu m akpa ego m';
+
+  @override
+  String get tutorialsSubLostWallet => 'Kwadebe ugbu a, mee ngwa ngwa ma ọ furu efu';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Ihe mere n\'ọnụ ndụ';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Atụmatụ maka ịkwaga, nwa, ọrụ ọhụrụ na ndị ọzọ';
+
+  @override
+  String get tutorialsTitleAsk => 'Jụọ Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Kparịta ụka ma ọ bụ kwuo okwu na ndekọ gị';
+
+  @override
+  String get tutorialsTitleBusiness => 'Ngwaọrụ Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Akwụkwọ ndị ọrụ, ncheta na akụkọ';
+
+  @override
+  String get tutorialsGroupBasics => 'Ihe ndabere';
+
+  @override
+  String get tutorialsGroupOnTop => 'Ịnọ n\'elu ihe';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Njem na ezinụlọ';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Ihe omume ndụ na ihe mberede';
+
+  @override
+  String get tutorialsGroupPaid => 'Atụmatụ a na-akwụ ụgwọ';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nzọụkwụ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Atụmatụ ịkwụ ụgwọ';
+
+  @override
+  String get tutorialsPaidNote => 'Ị nwere ike ilele nke a na atụmatụ ọ bụla. Atụmatụ ahụ n\'onwe ya chọrọ atụmatụ akwụ ụgwọ.';
+
+  @override
+  String get tutorialsBack => 'Azụ';
+
+  @override
+  String get tutorialsTryIt => 'Nwalee ugbu a';
+
+  @override
+  String get tutorialHintText => 'Ị bụ onye ọhụrụ ebe a? Lee njem dị mkpụmkpụ';
+
+  @override
+  String get tutorialHintPlay => 'Gosi m';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Isi $number n\'ime $total';
+  }
+
+  @override
+  String get tourContinue => 'Gaa n\'ihu';
+
+  @override
+  String get tourSkip => 'Wụfee';
+
+  @override
+  String get tourSkipped => 'Awụfeela';
+
+  @override
+  String get tourDone => 'Ị hụla njem niile';
+
+  @override
+  String get tourRestart => 'Malite ọzọ';
+
+  @override
+  String get whatsNewBadge => 'Ọhụrụ';
+
+  @override
+  String get whatsNewTitle => 'Furu m akpa ego m';
+
+  @override
+  String get whatsNewBody => 'Chekwaa ebe ị na-edebe kaadị gị na nọmba mkpọchi nke ụlọ akụ ọ bụla. Ọ bụrụ na akpa ego gị efuo, ị na-egbochi ihe niile n\'ime nkeji ole na ole.';
+
+  @override
+  String get whatsNewDismiss => 'Aghọtara m';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Nkọwa ndị ọzọ nwere ihe mgbakwunye: ndetu, ikwughachi, oge imegharị, onye nwe ya, ebe ị na-edebe ya, mkpọchi na foto. Mepee ya naanị mgbe ọ dị mkpa.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Kpọchie ndekọ ka ọ chọọ akara mkpịsị aka ma ọ bụ mkpọchi ihuenyo tupu e gosi ya. Họrọ ebe ị na-edebe ya, dịka akpa ego gị, ma tinye foto akwụkwọ ahụ.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Akpa ego furu efu? Hụ ihe niile dị n\'ime ya, kpọọ ụlọ akụ ọ bụla site na mmetụ otu ma soro nzọụkwụ maka ndị fọdụrụ.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Ịkwaga, nwa, ọrụ ọhụrụ ma ọ bụ ihe mberede? Ihe omume ndụ na-enye gị atụmatụ nwere ndekọ, nzọụkwụ na ụbọchị gị.';
+
+  @override
+  String get storySampleQuestion => 'Kedu ihe na-agwụ n\'afọ a?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name gị na-agwụ na Maachị. Ị chọrọ ncheta otu ọnwa tupu mgbe ahụ?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name na-agwụ n\'ime ụbọchị 30. Pịa ka imegharị.';
+  }
+
+  @override
+  String get storySampleGym => 'Ndị otu ebe mgbatị ahụ';
+
+  @override
+  String get storySampleFirstAid => 'Asambodo enyemaka mbụ';
+
+  @override
+  String get storySampleEncrypt => 'Zoo foto';
+
+  @override
+  String get storySampleAppLock => 'Mkpọchi ngwa';
+
+  @override
+  String get storySampleHideApp => 'Zoo ọdịnaya na ngbanwe ngwa';
+
+  @override
+  String get storyHome1Title => 'Ụbọchị gị n\'otu nlele';
+
+  @override
+  String get storyHome1Body => 'Ihuenyo ụlọ na-egosi ihe dị mkpa taa: ihe na-agwụ n\'oge na-adịghị anya na ọnụ ọgụgụ ndekọ ị nwere.';
+
+  @override
+  String get storyHome2Title => 'Chọta ihe ọ bụla';
+
+  @override
+  String get storyHome2Body => 'Pịa ọchụchọ ka ịchọta ndekọ site na aha, otu ma ọ bụ mmadụ.';
+
+  @override
+  String get storyHome3Title => 'Njem na atụmatụ';
+
+  @override
+  String get storyHome3Body => 'Njem ị na-eme atụmatụ na atụmatụ ihe omume ndụ na-aga n\'ihu na-apụta ebe a, ya na ihe fọdụrụ.';
+
+  @override
+  String get storyHome4Title => 'Enyemaka n\'otu mmetụ';
+
+  @override
+  String get storyHome4Body => 'Bọtịnụ ọkụ na-emepe «Jụọ Vaultara». Foto gị na-emepe profaịlụ, ntọala na nkuzi gị.';
+
+  @override
+  String get storyRenew1Title => 'Ncheta bịara';
+
+  @override
+  String get storyRenew1Body => 'Tupu ndekọ agwụ, Vaultara na-echetara gị. Pịa ncheta ahụ ka imepe ndekọ ahụ.';
+
+  @override
+  String get storyRenew2Title => 'Chekwaa ụbọchị ọhụrụ';
+
+  @override
+  String get storyRenew2Body => 'Emegharịala? Pịa «Megharịa» ma tinye ụbọchị njedebe ọhụrụ. Ncheta gị na-esoro ya.';
+
+  @override
+  String get storyRenew3Title => 'Ejighị n\'aka otu esi eme ya?';
+
+  @override
+  String get storyRenew3Body => 'Ọtụtụ ndekọ nwere ntuziaka nwere nzọụkwụ, akwụkwọ na ọnụ ahịa a na-ahụkarị.';
+
+  @override
+  String get storyRenew4Title => 'Hapụ ya ka ọ kwughachi';
+
+  @override
+  String get storyRenew4Body => 'Maka ndenye aha na ịkwụ ụgwọ kwa afọ, gbanwuo ikwughachi ma ụbọchị ga-aga n\'ihu n\'onwe ya.';
+
+  @override
+  String get storyAsk1Title => 'Jụọ n\'okwu nke gị';
+
+  @override
+  String get storyAsk1Body => 'Jụọ ihe dịka «Kedu ihe na-agwụ n\'afọ a?» ma nweta azịza site na ndekọ gị.';
+
+  @override
+  String get storyAsk2Title => 'Kwuo okwu kama ịpị';
+
+  @override
+  String get storyAsk2Body => 'Pịa igwe okwu ma kwuo okwu. Okwu gị na-apụta ka ị na-ekwu ma ị nwere ike iziga ozugbo.';
+
+  @override
+  String get storyAsk3Title => 'Ị na-akwado mgbanwe ọ bụla';
+
+  @override
+  String get storyAsk3Body => 'Rịọ ka itinye ma ọ bụ gbanwee ndekọ, ị ga-ebu ụzọ hụ kaadị. Ọ dịghị ihe a na-echekwa ruo mgbe ị kwadoro.';
+
+  @override
+  String get storyAsk4Title => 'Weghachi mgbanwe ọ bụla';
+
+  @override
+  String get storyAsk4Body => 'Ị gbanwere obi? Mgbanwe ọ bụla akwadoro nwere ike iweghachi site na otu kaadị ahụ.';
+
+  @override
+  String get storyAsk5Title => 'Gaa n\'ihu ebe ị kwụsịrị';
+
+  @override
+  String get storyAsk5Body => 'A na-edebe mkparịta ụka ụbọchị 90 na «Akụkọ mkparịta ụka», ajụjụ a tụrụ aro na-enyere gị aka ịmalite.';
+
+  @override
+  String get storyWallet1Title => 'Kwadebe mbụ';
+
+  @override
+  String get storyWallet1Body => 'Mepee kaadị ma ọ bụ akwụkwọ ma họrọ ebe ị na-edebe ya, dịka akpa ego ma ọ bụ akpa gị.';
+
+  @override
+  String get storyWallet2Title => 'Chekwaa nọmba mkpọchi';
+
+  @override
+  String get storyWallet2Body => 'Tinye nọmba mkpọchi nke ụlọ akụ ọ bụla ugbu a. Ọ dị na kaadị ahụ, nke ị na-agaghị enwe mgbe ị chọrọ ya.';
+
+  @override
+  String get storyWallet3Title => 'Ọ bụrụ na ọ furu efu';
+
+  @override
+  String get storyWallet3Body => 'Mepee «Furu m akpa ego m» ma pịa «Furu efu» ma ọ bụ «E zuru ya». Vaultara na-edepụta ihe niile dị n\'ime ya.';
+
+  @override
+  String get storyWallet4Title => 'Gbochie kaadị n\'ime nkeji';
+
+  @override
+  String get storyWallet4Body => 'Kpọọ ụlọ akụ ọ bụla site na mmetụ otu, kaa kaadị dịka egbochiri ma chekwaa nọmba akụkọ.';
+
+  @override
+  String get storyWallet5Title => 'Dochie ma nọrọ na nchekwa';
+
+  @override
+  String get storyWallet5Body => 'Dochie akwụkwọ gị, lelee nkwupụta akaụntụ mgbe e chetaara gị ma pịa «Achọtala m ya» ma ọ pụta.';
+
+  @override
+  String get storyLife1Title => 'Oge ukwu, otu atụmatụ';
+
+  @override
+  String get storyLife1Body => 'Ịkwaga, nwa, ọrụ ọhụrụ ma ọ bụ ihe mberede: họrọ na «Ihe mere n\'ọnụ ndụ» ihe na-eme.';
+
+  @override
+  String get storyLife2Title => 'Ndekọ gị, ahaziri ahazi';
+
+  @override
+  String get storyLife2Body => 'Atụmatụ ahụ na-egosi ndekọ ị ga-emelite, kagbuo ma ọ bụ megharịa, na ndị ị nwere ike ịgbakwunye.';
+
+  @override
+  String get storyLife3Title => 'Nzọụkwụ na ụbọchị';
+
+  @override
+  String get storyLife3Body => 'Nzọụkwụ na-ekpuchi ihe na-abụghị ndekọ, ụbọchị mmalite na-agwa gị mgbe ị ga-etinye akwụkwọ ka ihe ọ bụla ghara ịbịa n\'oge.';
+
+  @override
+  String get storyLife4Title => 'Mee ka ọ bụrụ nke gị';
+
+  @override
+  String get storyLife4Body => 'Tinye nzọụkwụ nke gị, kekọrịta atụmatụ ahụ dịka PDF ma nweta ncheta gburugburu ụbọchị ahụ.';
+
+  @override
+  String get storyPhotos1Title => 'Foto akwụkwọ gị';
+
+  @override
+  String get storyPhotos1Body => 'Site na ndekọ ahụ, tinye foto n\'ihu na azụ kaadị ma ọ bụ akwụkwọ.';
+
+  @override
+  String get storyPhotos2Title => 'Ezoro ezo na ekwentị gị';
+
+  @override
+  String get storyPhotos2Body => 'Gbanwuo izo foto ma a na-akpọchi ha na ekwentị gị tupu e bulite ha.';
+
+  @override
+  String get storyPhotos3Title => 'Kpọchie ndekọ dị nro';
+
+  @override
+  String get storyPhotos3Body => 'Kpọchie ndekọ ma ọ ga-arịọ akara mkpịsị aka ma ọ bụ mkpọchi ihuenyo tupu o meghe.';
+
+  @override
+  String get storyPhotos4Title => 'Kpọchie ngwa niile';
+
+  @override
+  String get storyPhotos4Body => 'Na ntọala nchekwa, gbanwuo mkpọchi ngwa ma zoo ọdịnaya mgbe ị na-agbanwe ngwa.';
+
+  @override
+  String get storyShare1Title => 'Kekọrịta otu ndekọ';
+
+  @override
+  String get storyShare1Body => 'Mepee ndekọ ma kekọrịta njikọ na-egosi naanị ndekọ ahụ, ọ dịghị ihe ọzọ.';
+
+  @override
+  String get storyShare2Title => 'Ngwugwu ihe akaebe';
+
+  @override
+  String get storyShare2Body => 'Tinye ndekọ ị họọrọ, ya na foto ha, n\'otu PDF maka onye nwe ụlọ, ụlọ akụ ma ọ bụ ọfịs.';
+
+  @override
+  String get storyShare3Title => 'Nọgide na-achịkwa';
+
+  @override
+  String get storyShare3Body => '«Njikọ ekesara» na-egosi njikọ ọ bụla ị mere. Kwụsị nke ọ bụla n\'oge ọ bụla ma ọ gaghị emepe ọzọ.';
+
+  @override
+  String get storyHousehold1Title => 'Kpọọ ezinụlọ gị';
+
+  @override
+  String get storyHousehold1Body => 'Kekọrịta koodu ma ọ bụ njikọ òkù. Onye ọ bụla na-abanye na akaụntụ nke ya.';
+
+  @override
+  String get storyHousehold2Title => 'Otu nchịkọta ndekọ';
+
+  @override
+  String get storyHousehold2Body => 'Onye ọ bụla na-ahụ otu ndekọ ekekọrịtara ma na-enweta otu ncheta.';
+
+  @override
+  String get storyHousehold3Title => 'Onye nwe ya?';
+
+  @override
+  String get storyHousehold3Body => 'Ndekọ ọ bụla nwere ike ịbụ nke mmadụ. Aha ya na-apụta na ya na na ncheta ya.';
+
+  @override
+  String get storyImport1Title => 'Nyochaa kaadị';
+
+  @override
+  String get storyImport1Body => 'See foto kaadị ma ọ bụ akwụkwọ ma Vaultara ejupụta aha na ụbọchị njedebe maka gị.';
+
+  @override
+  String get storyImport2Title => 'Bubata ndepụta';
+
+  @override
+  String get storyImport2Body => 'Ị nweelarị mpempe akwụkwọ? Bubata ya ma lelee ahịrị ọ bụla tupu e chekwaa ihe ọ bụla.';
+
+  @override
+  String get storyImport3Title => 'Kekọrịta na Vaultara';
+
+  @override
+  String get storyImport3Body => 'Kekọrịta foto, PDF ma ọ bụ ederede site na ngwa ọzọ na Vaultara ka ịmalite ndekọ ọhụrụ.';
+
+  @override
+  String get storyCosts1Title => 'Na kalịnda gị';
+
+  @override
+  String get storyCosts1Body => 'Tinye ụbọchị njedebe na kalịnda ekwentị gị, n\'akụkụ atụmatụ gị ndị ọzọ.';
+
+  @override
+  String get storyCosts2Title => 'Ọnụ ahịa imegharị';
+
+  @override
+  String get storyCosts2Body => 'Tinye ọnụ ahịa imegharị na ndekọ ma Vaultara na-egosi ego ị na-emefu kwa afọ.';
+
+  @override
+  String get storyCosts3Title => 'Mee atụmatụ n\'ihu';
+
+  @override
+  String get storyCosts3Body => 'Hụ ọnwa dị oke ọnụ ka ha na-abịa ka imegharị buru ibu ghara iju gị anya.';
+
+  @override
+  String get storyBusiness1Title => 'Soro otu gị';
+
+  @override
+  String get storyBusiness1Body => 'Tinye ndị ọrụ ma debe asambodo, ikike na akwụkwọ ikike ha n\'otu ebe.';
+
+  @override
+  String get storyBusiness2Title => 'Ncheta email';
+
+  @override
+  String get storyBusiness2Body => 'Ndị ọrụ na-enweta email tupu akwụkwọ ha agwụ, ọbụlagodi na-enweghị ngwa ahụ.';
+
+  @override
+  String get storyBusiness3Title => 'Akụkọ kwa ọnwa';
+
+  @override
+  String get storyBusiness3Body => 'Ọnwa ọ bụla akụkọ na-egosi ihe dị irè, ihe na-agwụ na ihe na-efu.';
+
+  @override
+  String get storyBusiness4Title => 'Rịọ maka mmelite';
+
+  @override
+  String get storyBusiness4Body => 'Ziga njikọ ma onye ọrụ ga-ebulite akwụkwọ emegharịrị n\'onwe ya.';
 }

@@ -7492,4 +7492,438 @@ class AppLocalizationsXh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Isikrini sakho sasekhaya';
+
+  @override
+  String get tutorialsSubHome => 'Intsingiselo yamakhadi nalapho yonke into ikhoyo';
+
+  @override
+  String get tutorialsTitleRenew => 'Hlaziya irekhodi';
+
+  @override
+  String get tutorialsSubRenew => 'Into omawuyenze xa kufika isikhumbuzi';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Ikhalenda neendleko';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Imihla yokuphelelwa ekhalendeni lakho nokuba kubiza malini ukuhlaziya';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Iifoto nokhuseleko';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Iifoto zamaxwebhu, ukufihla nezitshixo';
+
+  @override
+  String get tutorialsTitleSharing => 'Yabelana ngokukhuselekileyo';
+
+  @override
+  String get tutorialsSubSharing => 'Yabelana ngerekhodi, yenza ipakethe, misa ikhonkco';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skena kwaye ungenise';
+
+  @override
+  String get tutorialsSubImportScan => 'Yongeza iirekhodi ezininzi ngokukhawuleza';
+
+  @override
+  String get tutorialsTitleHousehold => 'Usapho olwabelanayo';
+
+  @override
+  String get tutorialsSubHousehold => 'Mema abanye ukuba babelane ngeerekhodi nezikhumbuzi';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Ndilahlekelwe sisikhwama sam';
+
+  @override
+  String get tutorialsSubLostWallet => 'Zilungiselele ngoku, wenze ngokukhawuleza ukuba ilahlekile';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Iziganeko zobomi';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Isicwangciso sokufuduka, umntwana, umsebenzi omtsha nokunye';
+
+  @override
+  String get tutorialsTitleAsk => 'Buza iVaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Ncokola okanye uthethe neerekhodi zakho';
+
+  @override
+  String get tutorialsTitleBusiness => 'Izixhobo ze-Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Amaxwebhu abasebenzi, izikhumbuzi neengxelo';
+
+  @override
+  String get tutorialsGroupBasics => 'Iziseko';
+
+  @override
+  String get tutorialsGroupOnTop => 'Ukuhlala uphezu kwezinto';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Uhambo nosapho';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Iziganeko zobomi nezimo ezingxamisekileyo';
+
+  @override
+  String get tutorialsGroupPaid => 'Iimpawu ezihlawulelwayo';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amanyathelo angama-$count',
+      one: 'Inyathelo eli-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Izicwangciso ezihlawulelwayo';
+
+  @override
+  String get tutorialsPaidNote => 'Ungakubukela oku ngaso nasiphi na isicwangciso. Uphawu ngokwalo lufuna isicwangciso esihlawulelwayo.';
+
+  @override
+  String get tutorialsBack => 'Emva';
+
+  @override
+  String get tutorialsTryIt => 'Zama ngoku';
+
+  @override
+  String get tutorialHintText => 'Umtsha apha? Thatha ukhenketho olufutshane';
+
+  @override
+  String get tutorialHintPlay => 'Ndibonise';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Isahluko $number kwezi-$total';
+  }
+
+  @override
+  String get tourContinue => 'Qhubeka';
+
+  @override
+  String get tourSkip => 'Tsiba';
+
+  @override
+  String get tourSkipped => 'Kutsibiwe';
+
+  @override
+  String get tourDone => 'Ubone lonke ukhenketho';
+
+  @override
+  String get tourRestart => 'Qala kwakhona';
+
+  @override
+  String get whatsNewBadge => 'Okutsha';
+
+  @override
+  String get whatsNewTitle => 'Ndilahlekelwe sisikhwama sam';
+
+  @override
+  String get whatsNewBody => 'Gcina apho ugcina khona amakhadi akho nenombolo yokuvala yebhanki nganye. Ukuba ulahlekelwe yingxowa, uvala yonke into kwimizuzu.';
+
+  @override
+  String get whatsNewDismiss => 'Ndiyaqonda';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Iinkcukacha ezongezelelweyo ziqulethe izongezo: amanqaku, ukuphinda, ixesha lokuhlaziya, ukuba yeyabani, apho uyigcina khona, isitshixo neefoto. Yivule kuphela xa uyidinga.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Tshixa irekhodi ukuze lifune umnwe okanye isitshixo sesikrini phambi kokuboniswa. Khetha apho uligcina khona, njengengxowa yakho, uze wongeze iifoto zoxwebhu.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Ulahlekelwe yingxowa? Bona yonke into ebikuyo, tsalela ibhanki nganye ngokuchukumisa kanye uze ulandele amanyathelo okunye.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Ukufuduka, umntwana, umsebenzi omtsha okanye imeko engxamisekileyo? Iziganeko zobomi zikunika isicwangciso esineerekhodi, amanyathelo nemihla yakho.';
+
+  @override
+  String get storySampleQuestion => 'Yintoni ephelelwa kulo nyaka?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'I-$name yakho iphelelwa ngoMatshi. Ungathanda isikhumbuzi kwinyanga enye ngaphambili?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'I-$name iphelelwa kwiintsuku ezingama-30. Cofa ukuze uhlaziye.';
+  }
+
+  @override
+  String get storySampleGym => 'Ubulungu be-gym';
+
+  @override
+  String get storySampleFirstAid => 'Isatifikethi soncedo lokuqala';
+
+  @override
+  String get storySampleEncrypt => 'Fihla iifoto';
+
+  @override
+  String get storySampleAppLock => 'Isitshixo se-app';
+
+  @override
+  String get storySampleHideApp => 'Fihla umxholo kwisitshintshi see-app';
+
+  @override
+  String get storyHome1Title => 'Usuku lwakho ngokujonga kanye';
+
+  @override
+  String get storyHome1Body => 'Isikrini sasekhaya sibonisa okubalulekileyo namhlanje: okuza kuphelelwa kungekudala nenani leerekhodi onazo.';
+
+  @override
+  String get storyHome2Title => 'Fumana nantoni na';
+
+  @override
+  String get storyHome2Body => 'Cofa ukukhangela ukuze ufumane irekhodi ngegama, iqela okanye umntu.';
+
+  @override
+  String get storyHome3Title => 'Uhambo nezicwangciso';
+
+  @override
+  String get storyHome3Body => 'Uhambo olucwangcisayo nezicwangciso zeziganeko zobomi eziqhubekayo zivela apha, kunye nokuseleyo.';
+
+  @override
+  String get storyHome4Title => 'Uncedo ngokuchukumisa kanye';
+
+  @override
+  String get storyHome4Body => 'Iqhosha lentlantsi livula «Buza iVaultara». Ifoto yakho ivula iprofayile, iisetingi nezifundo.';
+
+  @override
+  String get storyRenew1Title => 'Kufika isikhumbuzi';
+
+  @override
+  String get storyRenew1Body => 'Phambi kokuba irekhodi liphelelwe, i-Vaultara iyakukhumbuza. Cofa isikhumbuzi ukuze uvule irekhodi.';
+
+  @override
+  String get storyRenew2Title => 'Gcina umhla omtsha';
+
+  @override
+  String get storyRenew2Body => 'Uhlaziyile? Cofa «Vuselela» uze ufake umhla omtsha wokuphelelwa. Izikhumbuzi zihamba nawo.';
+
+  @override
+  String get storyRenew3Title => 'Akuqinisekanga ukuba njani?';
+
+  @override
+  String get storyRenew3Body => 'Iirekhodi ezininzi zinesikhokelo esinamanyathelo, amaxwebhu neendleko eziqhelekileyo.';
+
+  @override
+  String get storyRenew4Title => 'Yiyeke iziphinde';
+
+  @override
+  String get storyRenew4Body => 'Kwimirhumo neentlawulo zonyaka, vula ukuphinda kwaye umhla uya kuhamba ngokwawo.';
+
+  @override
+  String get storyAsk1Title => 'Buza ngamazwi akho';
+
+  @override
+  String get storyAsk1Body => 'Buza izinto ezinjengokuthi «Yintoni ephelelwa kulo nyaka?» ufumane iimpendulo kwiirekhodi zakho.';
+
+  @override
+  String get storyAsk2Title => 'Thetha endaweni yokuchwetheza';
+
+  @override
+  String get storyAsk2Body => 'Cofa imakrofoni uze uthethe. Amagama akho avela njengoko uthetha kwaye ungathumela kwangoko.';
+
+  @override
+  String get storyAsk3Title => 'Nguwe oqinisekisa lonke utshintsho';
+
+  @override
+  String get storyAsk3Body => 'Cela ukongeza okanye ukutshintsha irekhodi uya kubona ikhadi kuqala. Akukho nto igcinwayo de uqinisekise.';
+
+  @override
+  String get storyAsk4Title => 'Rhoxisa nalo naluphi na utshintsho';
+
+  @override
+  String get storyAsk4Body => 'Utshintshe ingqondo? Lonke utshintsho oluqinisekisiweyo lungarhoxiswa kwikhadi elinye.';
+
+  @override
+  String get storyAsk5Title => 'Qhubeka apho uyeke khona';
+
+  @override
+  String get storyAsk5Body => 'Iincoko zigcinwa iintsuku ezingama-90 kwi-«Imbali yeencoko», kwaye imibuzo ecetyiswayo ikunceda uqale.';
+
+  @override
+  String get storyWallet1Title => 'Zilungiselele kuqala';
+
+  @override
+  String get storyWallet1Body => 'Vula ikhadi okanye uxwebhu uze ukhethe apho ulugcina khona, njengengxowa okanye ibhegi yakho.';
+
+  @override
+  String get storyWallet2Title => 'Gcina inombolo yokuvala';
+
+  @override
+  String get storyWallet2Body => 'Yongeza ngoku inombolo yokuvala yebhanki nganye. Ikwikhadi, ongazukuba nalo xa uyidinga.';
+
+  @override
+  String get storyWallet3Title => 'Ukuba ilahlekile';
+
+  @override
+  String get storyWallet3Body => 'Vula «Ndilahlekelwe sisikhwama sam» uze ucofe «Silahlekile» okanye «Sibiwe». I-Vaultara idwelisa yonke into ebikuyo.';
+
+  @override
+  String get storyWallet4Title => 'Vala amakhadi kwimizuzu';
+
+  @override
+  String get storyWallet4Body => 'Tsalela ibhanki nganye ngokuchukumisa kanye, phawula amakhadi njengavaliweyo uze ugcine inombolo yengxelo.';
+
+  @override
+  String get storyWallet5Title => 'Tshintsha kwaye uhlale ukhuselekile';
+
+  @override
+  String get storyWallet5Body => 'Faka amanye amaxwebhu, jonga iingxelo zeakhawunti xa ukhunjuzwa uze ucofe «Ndisifumene» ukuba iyavela.';
+
+  @override
+  String get storyLife1Title => 'Amaxesha amakhulu, isicwangciso esinye';
+
+  @override
+  String get storyLife1Body => 'Ukufuduka, umntwana, umsebenzi omtsha okanye imeko engxamisekileyo: khetha kwi-«Iziganeko zobomi» okwenzekayo.';
+
+  @override
+  String get storyLife2Title => 'Iirekhodi zakho zicwangcisiwe';
+
+  @override
+  String get storyLife2Body => 'Isicwangciso sibonisa ukuba zeziphi iirekhodi ekufuneka uzihlaziye, uzirhoxise okanye uzivuselele, nezo usenokufuna ukuzongeza.';
+
+  @override
+  String get storyLife3Title => 'Amanyathelo nemihla';
+
+  @override
+  String get storyLife3Body => 'Amanyathelo agubungela okungeyiyo irekhodi, kwaye imihla yokuqala ikuxelela ukuba ufake isicelo nini ukuze kungabikho nto ilibazisekayo.';
+
+  @override
+  String get storyLife4Title => 'Yenze ibe yeyakho';
+
+  @override
+  String get storyLife4Body => 'Yongeza amanyathelo akho, yabelana ngesicwangciso njenge-PDF uze ufumane izikhumbuzi kufutshane nomhla.';
+
+  @override
+  String get storyPhotos1Title => 'Iifoto zamaxwebhu akho';
+
+  @override
+  String get storyPhotos1Body => 'Kwirekhodi, yongeza iifoto zangaphambili nezangasemva zekhadi okanye zoxwebhu.';
+
+  @override
+  String get storyPhotos2Title => 'Zifihliwe kwifowuni yakho';
+
+  @override
+  String get storyPhotos2Body => 'Vula ukufihla iifoto kwaye ziyatshixwa kwifowuni phambi kokulayishwa.';
+
+  @override
+  String get storyPhotos3Title => 'Tshixa iirekhodi ezibuthathaka';
+
+  @override
+  String get storyPhotos3Body => 'Tshixa irekhodi kwaye liya kucela umnwe okanye isitshixo sesikrini phambi kokuvuleka.';
+
+  @override
+  String get storyPhotos4Title => 'Tshixa yonke i-app';
+
+  @override
+  String get storyPhotos4Body => 'Kwiisetingi zokhuseleko, vula isitshixo se-app uze ufihle umxholo xa utshintsha ii-app.';
+
+  @override
+  String get storyShare1Title => 'Yabelana ngerekhodi elinye';
+
+  @override
+  String get storyShare1Body => 'Vula irekhodi uze wabelane ngekhonkco elibonisa elo rekhodi kuphela, akukho nto yimbi.';
+
+  @override
+  String get storyShare2Title => 'Ipakethe yobungqina';
+
+  @override
+  String get storyShare2Body => 'Faka iirekhodi ozikhethayo, kunye neefoto zazo, kwi-PDF enye yomnini-ndlu, ibhanki okanye iofisi.';
+
+  @override
+  String get storyShare3Title => 'Hlala ulawula';
+
+  @override
+  String get storyShare3Body => '«Amakhonkco owabelene ngawo» ibonisa lonke ikhonkco olenzileyo. Misa nalinye nanini na kwaye alisayi kuvuleka.';
+
+  @override
+  String get storyHousehold1Title => 'Mema usapho lwakho';
+
+  @override
+  String get storyHousehold1Body => 'Yabelana ngekhowudi okanye ikhonkco lesimemo. Umntu ngamnye ungena ngeakhawunti yakhe.';
+
+  @override
+  String get storyHousehold2Title => 'Iseti enye yeerekhodi';
+
+  @override
+  String get storyHousehold2Body => 'Wonke umntu ubona iirekhodi ezifanayo ekwabelwana ngazo kwaye ufumana izikhumbuzi ezifanayo.';
+
+  @override
+  String get storyHousehold3Title => 'Yeyabani?';
+
+  @override
+  String get storyHousehold3Body => 'Irekhodi ngalinye linokuba lelomntu othile. Igama lakhe libonakala kulo nakwizikhumbuzi.';
+
+  @override
+  String get storyImport1Title => 'Skena ikhadi';
+
+  @override
+  String get storyImport1Body => 'Thatha ifoto yekhadi okanye uxwebhu kwaye i-Vaultara izalisa igama nomhla wokuphelelwa.';
+
+  @override
+  String get storyImport2Title => 'Ngenisa uluhlu';
+
+  @override
+  String get storyImport2Body => 'Sele unayo ispredishithi? Yingenise uze ujonge umqolo ngamnye phambi kokuba kugcinwe nantoni na.';
+
+  @override
+  String get storyImport3Title => 'Yabelana ne-Vaultara';
+
+  @override
+  String get storyImport3Body => 'Yabelana ngefoto, i-PDF okanye isicatshulwa kwenye i-app ne-Vaultara ukuze uqale irekhodi elitsha.';
+
+  @override
+  String get storyCosts1Title => 'Ekhalendeni lakho';
+
+  @override
+  String get storyCosts1Body => 'Yongeza imihla yokuphelelwa ekhalendeni lefowuni, ecaleni kwezinye izicwangciso zakho.';
+
+  @override
+  String get storyCosts2Title => 'Ukuba kubiza malini ukuhlaziya';
+
+  @override
+  String get storyCosts2Body => 'Faka iindleko zokuhlaziya kwirekhodi kwaye i-Vaultara ibonisa ukuba uchitha malini ngonyaka.';
+
+  @override
+  String get storyCosts3Title => 'Cwangcisa kwangaphambili';
+
+  @override
+  String get storyCosts3Body => 'Bona iinyanga ezibizayo zisiza ukuze ukuhlaziya okukhulu kungaze kukumangalise.';
+
+  @override
+  String get storyBusiness1Title => 'Landela iqela lakho';
+
+  @override
+  String get storyBusiness1Body => 'Yongeza abasebenzi uze ugcine izatifikethi, iimvume neelayisensi zabo kwindawo enye.';
+
+  @override
+  String get storyBusiness2Title => 'Izikhumbuzi nge-imeyile';
+
+  @override
+  String get storyBusiness2Body => 'Abasebenzi bafumana ii-imeyile phambi kokuba amaxwebhu abo aphelelwe, nokuba abanayo i-app.';
+
+  @override
+  String get storyBusiness3Title => 'Ingxelo yenyanga';
+
+  @override
+  String get storyBusiness3Body => 'Inyanga nganye ingxelo ibonisa okusebenzayo, okuphelelwayo nokungekhoyo.';
+
+  @override
+  String get storyBusiness4Title => 'Cela uhlaziyo';
+
+  @override
+  String get storyBusiness4Body => 'Thumela ikhonkco kwaye umsebenzi alayishe ngokwakhe uxwebhu oluhlaziyiweyo.';
 }

@@ -7435,4 +7435,437 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Màn hình chính của bạn';
+
+  @override
+  String get tutorialsSubHome => 'Ý nghĩa các thẻ và mọi thứ nằm ở đâu';
+
+  @override
+  String get tutorialsTitleRenew => 'Gia hạn một mục';
+
+  @override
+  String get tutorialsSubRenew => 'Làm gì khi có lời nhắc';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Lịch và chi phí';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Ngày hết hạn trong lịch và chi phí gia hạn';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Ảnh và bảo mật';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Ảnh giấy tờ, mã hóa và khóa';
+
+  @override
+  String get tutorialsTitleSharing => 'Chia sẻ an toàn';
+
+  @override
+  String get tutorialsSubSharing => 'Chia sẻ một mục, tạo gói, dừng liên kết';
+
+  @override
+  String get tutorialsTitleImportScan => 'Quét và nhập';
+
+  @override
+  String get tutorialsSubImportScan => 'Thêm nhanh nhiều mục';
+
+  @override
+  String get tutorialsTitleHousehold => 'Hộ gia đình chung';
+
+  @override
+  String get tutorialsSubHousehold => 'Mời người khác chia sẻ mục và lời nhắc';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Tôi bị mất ví';
+
+  @override
+  String get tutorialsSubLostWallet => 'Chuẩn bị ngay bây giờ, hành động nhanh nếu bị mất';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Sự kiện trong đời';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Kế hoạch cho chuyển nhà, sinh con, việc mới và hơn thế nữa';
+
+  @override
+  String get tutorialsTitleAsk => 'Hỏi Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Trò chuyện hoặc nói với các mục của bạn';
+
+  @override
+  String get tutorialsTitleBusiness => 'Công cụ Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Giấy tờ nhân viên, lời nhắc và báo cáo';
+
+  @override
+  String get tutorialsGroupBasics => 'Cơ bản';
+
+  @override
+  String get tutorialsGroupOnTop => 'Nắm bắt mọi thứ';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Du lịch và gia đình';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Sự kiện cuộc sống và trường hợp khẩn cấp';
+
+  @override
+  String get tutorialsGroupPaid => 'Tính năng trả phí';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bước',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Gói trả phí';
+
+  @override
+  String get tutorialsPaidNote => 'Bạn có thể xem phần này với bất kỳ gói nào. Bản thân tính năng cần gói trả phí.';
+
+  @override
+  String get tutorialsBack => 'Quay lại';
+
+  @override
+  String get tutorialsTryIt => 'Thử ngay';
+
+  @override
+  String get tutorialHintText => 'Bạn mới đến? Xem chuyến tham quan ngắn';
+
+  @override
+  String get tutorialHintPlay => 'Cho tôi xem';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Chương $number/$total';
+  }
+
+  @override
+  String get tourContinue => 'Tiếp tục';
+
+  @override
+  String get tourSkip => 'Bỏ qua';
+
+  @override
+  String get tourSkipped => 'Đã bỏ qua';
+
+  @override
+  String get tourDone => 'Bạn đã xem hết chuyến tham quan';
+
+  @override
+  String get tourRestart => 'Bắt đầu lại';
+
+  @override
+  String get whatsNewBadge => 'Mới';
+
+  @override
+  String get whatsNewTitle => 'Tôi bị mất ví';
+
+  @override
+  String get whatsNewBody => 'Lưu nơi bạn để thẻ và số khóa thẻ của từng ngân hàng. Nếu mất ví, bạn khóa mọi thứ trong vài phút.';
+
+  @override
+  String get whatsNewDismiss => 'Đã hiểu';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Thêm chi tiết chứa các phần bổ sung: ghi chú, lặp lại, thời gian gia hạn, của ai, cất ở đâu, khóa và ảnh. Chỉ mở khi cần.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Khóa một mục để yêu cầu vân tay hoặc khóa màn hình trước khi hiển thị. Chọn nơi bạn cất, ví dụ trong ví, và thêm ảnh giấy tờ.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Mất ví? Xem mọi thứ có trong đó, gọi từng ngân hàng chỉ với một chạm và làm theo các bước còn lại.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Chuyển nhà, sinh con, việc mới hay khẩn cấp? Sự kiện cuộc sống cho bạn kế hoạch với các mục, bước và ngày của bạn.';
+
+  @override
+  String get storySampleQuestion => 'Năm nay có gì hết hạn?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name của bạn hết hạn vào tháng 3. Bạn có muốn nhắc trước một tháng không?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name hết hạn sau 30 ngày. Chạm để gia hạn.';
+  }
+
+  @override
+  String get storySampleGym => 'Thẻ tập gym';
+
+  @override
+  String get storySampleFirstAid => 'Chứng chỉ sơ cứu';
+
+  @override
+  String get storySampleEncrypt => 'Mã hóa ảnh';
+
+  @override
+  String get storySampleAppLock => 'Khóa ứng dụng';
+
+  @override
+  String get storySampleHideApp => 'Ẩn nội dung trong trình chuyển ứng dụng';
+
+  @override
+  String get storyHome1Title => 'Một ngày của bạn trong nháy mắt';
+
+  @override
+  String get storyHome1Body => 'Màn hình chính cho thấy điều quan trọng hôm nay: thứ sắp hết hạn và bạn có bao nhiêu mục.';
+
+  @override
+  String get storyHome2Title => 'Tìm bất cứ thứ gì';
+
+  @override
+  String get storyHome2Body => 'Chạm vào tìm kiếm để tìm mục theo tên, nhóm hoặc người.';
+
+  @override
+  String get storyHome3Title => 'Chuyến đi và kế hoạch';
+
+  @override
+  String get storyHome3Body => 'Chuyến đi bạn đang lên kế hoạch và các kế hoạch sự kiện cuộc sống đang diễn ra, cùng việc còn lại, hiện ở đây.';
+
+  @override
+  String get storyHome4Title => 'Trợ giúp chỉ một chạm';
+
+  @override
+  String get storyHome4Body => 'Nút lấp lánh mở «Hỏi Vaultara». Ảnh của bạn mở hồ sơ, cài đặt và hướng dẫn.';
+
+  @override
+  String get storyRenew1Title => 'Có lời nhắc';
+
+  @override
+  String get storyRenew1Body => 'Trước khi một mục hết hạn, Vaultara nhắc bạn. Chạm vào lời nhắc để mở mục.';
+
+  @override
+  String get storyRenew2Title => 'Lưu ngày mới';
+
+  @override
+  String get storyRenew2Body => 'Đã gia hạn? Chạm «Gia hạn» và nhập ngày hết hạn mới. Lời nhắc sẽ dời theo.';
+
+  @override
+  String get storyRenew3Title => 'Chưa rõ cách làm?';
+
+  @override
+  String get storyRenew3Body => 'Nhiều mục có hướng dẫn với các bước, giấy tờ và chi phí thường gặp.';
+
+  @override
+  String get storyRenew4Title => 'Để nó lặp lại';
+
+  @override
+  String get storyRenew4Body => 'Với gói đăng ký và khoản thanh toán hằng năm, bật lặp lại và ngày sẽ tự dời tới.';
+
+  @override
+  String get storyAsk1Title => 'Hỏi bằng lời của bạn';
+
+  @override
+  String get storyAsk1Body => 'Hỏi chẳng hạn «Năm nay có gì hết hạn?» và nhận câu trả lời từ chính các mục của bạn.';
+
+  @override
+  String get storyAsk2Title => 'Nói thay vì gõ';
+
+  @override
+  String get storyAsk2Body => 'Chạm micro và nói. Lời của bạn hiện ra khi nói và bạn có thể gửi ngay.';
+
+  @override
+  String get storyAsk3Title => 'Bạn xác nhận mọi thay đổi';
+
+  @override
+  String get storyAsk3Body => 'Yêu cầu thêm hoặc sửa một mục và bạn sẽ thấy một thẻ trước. Không gì được lưu cho đến khi bạn xác nhận.';
+
+  @override
+  String get storyAsk4Title => 'Hoàn tác mọi thay đổi';
+
+  @override
+  String get storyAsk4Body => 'Đổi ý? Mọi thay đổi đã xác nhận đều có thể hoàn tác từ chính thẻ đó.';
+
+  @override
+  String get storyAsk5Title => 'Tiếp tục từ chỗ bạn dừng';
+
+  @override
+  String get storyAsk5Body => 'Cuộc trò chuyện được lưu 90 ngày trong «Lịch sử trò chuyện» và câu hỏi gợi ý giúp bạn bắt đầu.';
+
+  @override
+  String get storyWallet1Title => 'Chuẩn bị trước';
+
+  @override
+  String get storyWallet1Body => 'Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất, ví dụ ví hoặc túi.';
+
+  @override
+  String get storyWallet2Title => 'Lưu số khóa thẻ';
+
+  @override
+  String get storyWallet2Body => 'Thêm số khóa thẻ của từng ngân hàng ngay. Số này in trên thẻ, thứ bạn sẽ không có khi cần.';
+
+  @override
+  String get storyWallet3Title => 'Nếu bị mất';
+
+  @override
+  String get storyWallet3Body => 'Mở «Tôi bị mất ví» và chạm «Bị mất» hoặc «Bị trộm». Vaultara liệt kê mọi thứ có trong đó.';
+
+  @override
+  String get storyWallet4Title => 'Khóa thẻ trong vài phút';
+
+  @override
+  String get storyWallet4Body => 'Gọi từng ngân hàng chỉ với một chạm, đánh dấu thẻ đã khóa và lưu số trình báo.';
+
+  @override
+  String get storyWallet5Title => 'Làm lại và giữ an toàn';
+
+  @override
+  String get storyWallet5Body => 'Làm lại giấy tờ, kiểm tra sao kê khi được nhắc và chạm «Tôi đã tìm thấy» nếu tìm thấy.';
+
+  @override
+  String get storyLife1Title => 'Khoảnh khắc lớn, một kế hoạch';
+
+  @override
+  String get storyLife1Body => 'Chuyển nhà, sinh con, việc mới hay khẩn cấp: chọn trong «Sự kiện trong đời» điều đang xảy ra.';
+
+  @override
+  String get storyLife2Title => 'Các mục của bạn, gọn gàng';
+
+  @override
+  String get storyLife2Body => 'Kế hoạch cho thấy mục nào cần cập nhật, hủy hoặc gia hạn và mục nào có thể cần thêm.';
+
+  @override
+  String get storyLife3Title => 'Bước và ngày';
+
+  @override
+  String get storyLife3Body => 'Các bước bao gồm những việc không phải là mục, và ngày bắt đầu cho biết khi nào nộp đơn để không gì bị trễ.';
+
+  @override
+  String get storyLife4Title => 'Biến nó thành của bạn';
+
+  @override
+  String get storyLife4Body => 'Thêm bước của riêng bạn, chia sẻ kế hoạch dạng PDF và nhận lời nhắc quanh ngày đó.';
+
+  @override
+  String get storyPhotos1Title => 'Ảnh giấy tờ của bạn';
+
+  @override
+  String get storyPhotos1Body => 'Từ trong mục, thêm ảnh mặt trước và mặt sau của thẻ hoặc giấy tờ.';
+
+  @override
+  String get storyPhotos2Title => 'Mã hóa trên điện thoại';
+
+  @override
+  String get storyPhotos2Body => 'Bật mã hóa ảnh và ảnh sẽ được khóa trên điện thoại trước khi tải lên.';
+
+  @override
+  String get storyPhotos3Title => 'Khóa mục nhạy cảm';
+
+  @override
+  String get storyPhotos3Body => 'Khóa một mục và nó sẽ yêu cầu vân tay hoặc khóa màn hình trước khi mở.';
+
+  @override
+  String get storyPhotos4Title => 'Khóa toàn bộ ứng dụng';
+
+  @override
+  String get storyPhotos4Body => 'Trong cài đặt bảo mật, bật khóa ứng dụng và ẩn nội dung khi chuyển ứng dụng.';
+
+  @override
+  String get storyShare1Title => 'Chia sẻ một mục';
+
+  @override
+  String get storyShare1Body => 'Mở một mục và chia sẻ liên kết chỉ hiện mục đó, không gì khác.';
+
+  @override
+  String get storyShare2Title => 'Bộ hồ sơ chứng minh';
+
+  @override
+  String get storyShare2Body => 'Gộp các mục bạn chọn, kèm ảnh, vào một PDF cho chủ nhà, ngân hàng hoặc cơ quan.';
+
+  @override
+  String get storyShare3Title => 'Giữ quyền kiểm soát';
+
+  @override
+  String get storyShare3Body => '«Liên kết đã chia sẻ» hiện mọi liên kết bạn đã tạo. Dừng bất kỳ liên kết nào bất cứ lúc nào và nó sẽ không mở được nữa.';
+
+  @override
+  String get storyHousehold1Title => 'Mời hộ gia đình';
+
+  @override
+  String get storyHousehold1Body => 'Chia sẻ mã hoặc liên kết mời. Mỗi người đăng nhập bằng tài khoản riêng.';
+
+  @override
+  String get storyHousehold2Title => 'Một bộ mục chung';
+
+  @override
+  String get storyHousehold2Body => 'Mọi người thấy cùng các mục chung và nhận cùng lời nhắc.';
+
+  @override
+  String get storyHousehold3Title => 'Của ai?';
+
+  @override
+  String get storyHousehold3Body => 'Mỗi mục có thể thuộc về ai đó. Tên của họ hiện trên mục và trong lời nhắc.';
+
+  @override
+  String get storyImport1Title => 'Quét thẻ';
+
+  @override
+  String get storyImport1Body => 'Chụp ảnh thẻ hoặc giấy tờ và Vaultara điền tên và ngày hết hạn giúp bạn.';
+
+  @override
+  String get storyImport2Title => 'Nhập danh sách';
+
+  @override
+  String get storyImport2Body => 'Đã có bảng tính? Nhập vào và kiểm tra từng dòng trước khi lưu.';
+
+  @override
+  String get storyImport3Title => 'Chia sẻ vào Vaultara';
+
+  @override
+  String get storyImport3Body => 'Chia sẻ ảnh, PDF hoặc văn bản từ ứng dụng khác vào Vaultara để bắt đầu mục mới.';
+
+  @override
+  String get storyCosts1Title => 'Trong lịch của bạn';
+
+  @override
+  String get storyCosts1Body => 'Thêm ngày hết hạn vào lịch điện thoại, cạnh các kế hoạch khác của bạn.';
+
+  @override
+  String get storyCosts2Title => 'Chi phí gia hạn';
+
+  @override
+  String get storyCosts2Body => 'Nhập chi phí gia hạn vào mục và Vaultara cho thấy bạn chi bao nhiêu mỗi năm.';
+
+  @override
+  String get storyCosts3Title => 'Lên kế hoạch trước';
+
+  @override
+  String get storyCosts3Body => 'Thấy trước những tháng tốn kém để một lần gia hạn lớn không bao giờ làm bạn bất ngờ.';
+
+  @override
+  String get storyBusiness1Title => 'Theo dõi đội ngũ';
+
+  @override
+  String get storyBusiness1Body => 'Thêm nhân viên và giữ chứng chỉ, giấy phép và bằng cấp của họ ở một nơi.';
+
+  @override
+  String get storyBusiness2Title => 'Nhắc qua email';
+
+  @override
+  String get storyBusiness2Body => 'Nhân viên nhận email trước khi giấy tờ hết hạn, kể cả khi không có ứng dụng.';
+
+  @override
+  String get storyBusiness3Title => 'Báo cáo hằng tháng';
+
+  @override
+  String get storyBusiness3Body => 'Mỗi tháng một báo cáo cho thấy gì còn hiệu lực, gì sắp hết hạn và gì còn thiếu.';
+
+  @override
+  String get storyBusiness4Title => 'Yêu cầu cập nhật';
+
+  @override
+  String get storyBusiness4Body => 'Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn.';
 }
