@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/records/view/widgets/record_count_badges.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+
+enum _GroupAction { rename, delete }
 
 class GroupCard extends StatelessWidget {
   final String groupLabel;
   final int recordCount;
   final int expiringSoon;
+  final int expired;
+  final bool isCustom;
   final VoidCallback onOpen;
+  final VoidCallback? onRename;
   final VoidCallback? onDelete;
 
   const GroupCard({
@@ -14,6 +20,9 @@ class GroupCard extends StatelessWidget {
     required this.recordCount,
     required this.expiringSoon,
     required this.onOpen,
+    this.expired = 0,
+    this.isCustom = false,
+    this.onRename,
     this.onDelete,
   });
 
@@ -21,6 +30,7 @@ class GroupCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
+    final hasMenu = onRename != null || onDelete != null;
 
     return Material(
       color: scheme.surface,
@@ -39,14 +49,24 @@ class GroupCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      groupLabel,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontSize: 14.5,
-                        fontWeight: FontWeight.w800,
-                      ),
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            groupLabel,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              fontSize: 14.5,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
+                        if (isCustom) ...[
+                          const SizedBox(width: 6),
+                          const YoursTag(),
+                        ],
+                      ],
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -56,22 +76,44 @@ class GroupCard extends StatelessWidget {
                         color: scheme.onSurfaceVariant,
                       ),
                     ),
+                    if (expired > 0 || expiringSoon > 0) ...[
+                      const SizedBox(height: 6),
+                      RecordCountBadges(
+                        expired: expired,
+                        expiringSoon: expiringSoon,
+                      ),
+                    ],
                   ],
                 ),
               ),
-              if (expiringSoon > 0) ...[
-                const SizedBox(width: 8),
-                _ExpiringBadge(count: expiringSoon),
-              ],
-              if (onDelete != null)
-                IconButton(
-                  tooltip: loc.delete,
+              if (hasMenu)
+                PopupMenuButton<_GroupAction>(
+                  tooltip: loc.recordMenuMore,
                   icon: Icon(
-                    Icons.delete_outline_rounded,
+                    Icons.more_vert_rounded,
                     size: 20,
                     color: scheme.onSurfaceVariant,
                   ),
-                  onPressed: onDelete,
+                  onSelected: (action) {
+                    switch (action) {
+                      case _GroupAction.rename:
+                        onRename?.call();
+                      case _GroupAction.delete:
+                        onDelete?.call();
+                    }
+                  },
+                  itemBuilder: (_) => [
+                    if (onRename != null)
+                      PopupMenuItem(
+                        value: _GroupAction.rename,
+                        child: Text(loc.familyRename),
+                      ),
+                    if (onDelete != null)
+                      PopupMenuItem(
+                        value: _GroupAction.delete,
+                        child: Text(loc.delete),
+                      ),
+                  ],
                 ),
               Icon(
                 Icons.chevron_right_rounded,
@@ -81,34 +123,6 @@ class GroupCard extends StatelessWidget {
               const SizedBox(width: 4),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ExpiringBadge extends StatelessWidget {
-  final int count;
-
-  const _ExpiringBadge({required this.count});
-
-  @override
-  Widget build(BuildContext context) {
-    final loc = AppLocalizations.of(context)!;
-    final scheme = Theme.of(context).colorScheme;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(
-        color: scheme.primary.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(
-        loc.expiringBadge(count),
-        style: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w800,
-          color: scheme.primary,
         ),
       ),
     );

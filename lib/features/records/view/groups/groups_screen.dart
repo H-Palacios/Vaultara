@@ -14,12 +14,10 @@ import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/confirm_soft_delete_dialog.dart';
 import 'package:vaultara/features/billing/view/plans_screen.dart';
-import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
+import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 
-import '../../data/enums/origin_filter.dart';
-import '../../logic/origin_pool_builder.dart';
+import '../../logic/category_order.dart';
 import '../records/records_screen.dart';
-import '../widgets/origin_filter_chips.dart';
 import 'widgets/add_group_sheet.dart';
 import 'widgets/group_card.dart';
 
@@ -38,10 +36,13 @@ class GroupsScreen extends StatefulWidget {
 }
 
 class _GroupsScreenState extends State<GroupsScreen> {
+  /// Below this many groups everything fits on screen, so the search box
+  /// would only be clutter.
+  static const int _searchFrom = 9;
+
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
 
-  OriginFilter _filter = OriginFilter.all;
   List<String> _customGroupKeys = <String>[];
   bool _loading = true;
 
@@ -64,9 +65,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
   Future<void> _load({bool forceReload = false}) async {
     await GroupRepository.loadForCurrentUser(forceReload: forceReload);
 
-    final custom = GroupRepository.getForCategory(widget.category.key)
-      ..sort((a, b) =>
-          _label(a).toLowerCase().compareTo(_label(b).toLowerCase()));
+    final custom = GroupRepository.getForCategory(widget.category.key);
 
     if (!mounted) return;
     setState(() {
@@ -82,16 +81,28 @@ class _GroupsScreenState extends State<GroupsScreen> {
     return GroupRepository.labelForCategoryKey(widget.category.key, key) ?? key;
   }
 
+  /// The message to show when [name] is already a group here, or null.
+  String? _nameTaken(String name, {String? except}) {
+    final wanted = name.trim().toLowerCase();
+    final names = <String>[
+      for (final key in _presetGroupKeys) _label(key),
+      for (final key in _customGroupKeys) _label(key),
+      ...GroupRepository.getDeletedForCategory(widget.category.key),
+    ];
+    final taken = names.any(
+      (n) => n.trim().toLowerCase() == wanted && n != except,
+    );
+    return taken ? AppLocalizations.of(context)!.nameInUse : null;
+  }
+
   void _openPaywall() {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) => PlansScreen(
-            isPremium: isPremium,
-            onUpgrade: () {},
-          ),
+          builder: (_, isPremium) =>
+              PlansScreen(isPremium: isPremium, onUpgrade: () {}),
         ),
       ),
     );
@@ -110,20 +121,37 @@ class _GroupsScreenState extends State<GroupsScreen> {
           ),
         ),
       ),
-    );
+    ).then((_) {
+      if (mounted) setState(() {});
+    });
   }
 
   Future<void> _openAddGroupSheet() async {
-    if (!widget.isPremium) {
-      _openPaywall();
-      return;
-    }
+    final loc = AppLocalizations.of(context)!;
+    final used = GroupRepository.customGroupCount();
+    const limit = GroupRepository.freeGroupLimit;
 
     await showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => AddGroupSheet(
+        limit: widget.isPremium
+            ? null
+            : NameEntryLimit(
+                current: used,
+                max: limit,
+                progressText: loc.freeGroupsProgress(
+                  used.clamp(0, limit),
+                  limit,
+                ),
+                limitReachedText: loc.groupLimitReached(limit),
+                onUpgrade: () {
+                  Navigator.pop(context);
+                  _openPaywall();
+                },
+              ),
+        extraCheck: (name) => _nameTaken(name),
         onCreate: (name) async {
           await GroupRepository.addGroup(
             categoryKey: widget.category.key,
@@ -134,6 +162,28 @@ class _GroupsScreenState extends State<GroupsScreen> {
 
           if (!mounted) return;
           ActionFeedbackSnackbar.showAdded(context, name);
+        },
+      ),
+    );
+  }
+
+  Future<void> _renameGroup(String key) async {
+    final current = _label(key);
+
+    await showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (_) => AddGroupSheet(
+        initialName: current,
+        extraCheck: (name) => _nameTaken(name, except: current),
+        onCreate: (name) async {
+          await GroupRepository.renameGroup(
+            categoryKey: widget.category.key,
+            from: current,
+            to: name,
+          );
+          await _load(forceReload: false);
         },
       ),
     );
@@ -160,17 +210,6 @@ class _GroupsScreenState extends State<GroupsScreen> {
     ActionFeedbackSnackbar.showDeleted(context, label);
   }
 
-  Future<void> _openRecentlyDeleted() async {
-    final changed = await Navigator.push<bool>(
-      context,
-      MaterialPageRoute(
-        builder: (_) => const RecentlyDeletedScreen(initialTabIndex: 1),
-      ),
-    );
-
-    if (changed == true) await _load(forceReload: true);
-  }
-
   double _maxContentWidth(BuildContext context) {
     final w = MediaQuery.of(context).size.width;
     if (w >= 1100) return 820;
@@ -182,20 +221,23 @@ class _GroupsScreenState extends State<GroupsScreen> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final scheme = Theme.of(context).colorScheme;
     final maxWidth = _maxContentWidth(context);
 
-    final pool = OriginPoolBuilder.build<String>(
-      presets: _presetGroupKeys,
-      custom: _customGroupKeys,
+    final all = CategoryOrder.sort<String>(
+      <String>{..._presetGroupKeys, ..._customGroupKeys}.toList(),
       keyOf: (k) => k,
-      filter: _filter,
+      labelOf: _label,
+      presetOrder: _presetGroupKeys,
     );
 
+    final showSearch =
+        all.length >= _searchFrom || _searchController.text.isNotEmpty;
+
     final result = TextSearch.run<String>(
-      items: pool.items,
-      query: _searchController.text,
+      items: all,
+      query: showSearch ? _searchController.text : '',
       textOf: _label,
+      fuzzy: true,
     );
 
     return Scaffold(
@@ -204,24 +246,13 @@ class _GroupsScreenState extends State<GroupsScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
-              child: ScreenHeader(
-                title: widget.category.label,
-                trailing: IconButton(
-                  tooltip: loc.recentlyDeletedTitle,
-                  icon: Icon(
-                    Icons.restore_from_trash_rounded,
-                    color: scheme.primary,
-                  ),
-                  onPressed: _openRecentlyDeleted,
-                ),
-              ),
+              child: ScreenHeader(title: widget.category.label),
             ),
             Expanded(
               child: _loading
                   ? const Center(child: CircularProgressIndicator())
                   : Scrollbar(
                       controller: _scrollController,
-                      thumbVisibility: true,
                       child: CustomScrollView(
                         controller: _scrollController,
                         physics: const BouncingScrollPhysics(),
@@ -234,36 +265,38 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                   crossAxisAlignment:
                                       CrossAxisAlignment.stretch,
                                   children: [
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          16, 12, 16, 4),
-                                      child: SearchField(
-                                        controller: _searchController,
-                                        hintText: loc.searchGroups,
-                                        onChanged: () => setState(() {}),
+                                    if (showSearch)
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          16,
+                                          12,
+                                          16,
+                                          4,
+                                        ),
+                                        child: SearchField(
+                                          controller: _searchController,
+                                          hintText: loc.searchGroups,
+                                          onChanged: () => setState(() {}),
+                                        ),
                                       ),
-                                    ),
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(
-                                          16, 6, 16, 4),
+                                        16,
+                                        10,
+                                        16,
+                                        0,
+                                      ),
                                       child: Align(
                                         alignment: Alignment.centerRight,
                                         child: FilledButton.icon(
                                           onPressed: _openAddGroupSheet,
-                                          icon: Icon(
-                                            widget.isPremium
-                                                ? Icons.add_rounded
-                                                : Icons.lock_outline_rounded,
+                                          icon: const Icon(
+                                            Icons.add_rounded,
                                             size: 18,
                                           ),
                                           label: Text(loc.addGroupTitle),
                                         ),
                                       ),
-                                    ),
-                                    OriginFilterChips(
-                                      filter: _filter,
-                                      onChanged: (f) =>
-                                          setState(() => _filter = f),
                                     ),
                                   ],
                                 ),
@@ -283,8 +316,9 @@ class _GroupsScreenState extends State<GroupsScreen> {
                             SliverToBoxAdapter(
                               child: Center(
                                 child: ConstrainedBox(
-                                  constraints:
-                                      BoxConstraints(maxWidth: maxWidth),
+                                  constraints: BoxConstraints(
+                                    maxWidth: maxWidth,
+                                  ),
                                   child: Padding(
                                     padding: const EdgeInsets.all(16),
                                     child: Column(
@@ -292,25 +326,33 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                         for (final key in result.matches)
                                           Padding(
                                             padding: const EdgeInsets.only(
-                                                bottom: 10),
+                                              bottom: 10,
+                                            ),
                                             child: GroupCard(
                                               groupLabel: _label(key),
-                                              recordCount: ItemLifecycleManager
-                                                  .totalItemsForGroup(
-                                                widget.category.key,
-                                                key,
-                                              ),
+                                              isCustom: !_isPreset(key),
+                                              recordCount:
+                                                  ItemLifecycleManager.totalItemsForGroup(
+                                                    widget.category.key,
+                                                    key,
+                                                  ),
                                               expiringSoon:
-                                                  ItemLifecycleManager
-                                                      .expiringSoonForGroup(
-                                                widget.category.key,
-                                                key,
-                                              ),
+                                                  ItemLifecycleManager.expiringSoonForGroup(
+                                                    widget.category.key,
+                                                    key,
+                                                  ),
+                                              expired:
+                                                  ItemLifecycleManager.expiredForGroup(
+                                                    widget.category.key,
+                                                    key,
+                                                  ),
                                               onOpen: () => _openRecords(key),
-                                              onDelete: (widget.isPremium &&
-                                                      !_isPreset(key))
-                                                  ? () => _deleteGroup(key)
-                                                  : null,
+                                              onRename: _isPreset(key)
+                                                  ? null
+                                                  : () => _renameGroup(key),
+                                              onDelete: _isPreset(key)
+                                                  ? null
+                                                  : () => _deleteGroup(key),
                                             ),
                                           ),
                                       ],
