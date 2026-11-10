@@ -11,150 +11,551 @@ class GroupSuggester {
   const GroupSuggester._();
 
   static const Map<String, String> _accents = <String, String>{
-    'á': 'a', 'à': 'a', 'â': 'a', 'ã': 'a', 'ä': 'a', 'å': 'a',
-    'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
-    'í': 'i', 'ì': 'i', 'î': 'i', 'ï': 'i',
-    'ó': 'o', 'ò': 'o', 'ô': 'o', 'õ': 'o', 'ö': 'o',
-    'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u',
-    'ç': 'c', 'ñ': 'n', 'ß': 'ss', 'ø': 'o', 'æ': 'ae',
+    'á': 'a',
+    'à': 'a',
+    'â': 'a',
+    'ã': 'a',
+    'ä': 'a',
+    'å': 'a',
+    'é': 'e',
+    'è': 'e',
+    'ê': 'e',
+    'ë': 'e',
+    'í': 'i',
+    'ì': 'i',
+    'î': 'i',
+    'ï': 'i',
+    'ó': 'o',
+    'ò': 'o',
+    'ô': 'o',
+    'õ': 'o',
+    'ö': 'o',
+    'ú': 'u',
+    'ù': 'u',
+    'û': 'u',
+    'ü': 'u',
+    'ç': 'c',
+    'ñ': 'n',
+    'ß': 'ss',
+    'ø': 'o',
+    'æ': 'ae',
   };
 
   static const List<String> _skip = <String>[
-    'tv licence', 'tv license', 'television', 'firearm', 'gun licence',
-    'gun license', 'fishing', 'dog licence', 'dog license', 'wapen',
+    'tv licence',
+    'tv license',
+    'television',
+    'fishing',
+    'dog licence',
+    'dog license',
+  ];
+
+  static const List<String> _firearm = <String>[
+    'firearm',
+    'gun licence',
+    'gun license',
+    'wapen',
+    'vuurwapen',
+    'waffenschein',
+    'arma de fuego',
+    'competency certificate',
+  ];
+
+  static const List<String> _idp = <String>[
+    'international driving permit',
+    'international driving licence',
+    'international driving license',
+    'idp',
+  ];
+
+  static const List<String> _boatPilot = <String>[
+    'boat licence',
+    'boat license',
+    'skipper',
+    'skippers',
+    'pilot licence',
+    'pilot license',
+    'pilots licence',
+    'drone licence',
+    'drone license',
+    'sailing licence',
+  ];
+
+  static const List<String> _medicalCard = <String>[
+    'medical aid card',
+    'medical card',
+    'health card',
+    'medical aid membership',
+  ];
+
+  static const List<String> _prescription = <String>[
+    'prescription',
+    'repeat script',
+    'chronic medication',
+    'receta',
+    'rezept',
+  ];
+
+  static const List<String> _vaccination = <String>[
+    'vaccination',
+    'vaccine',
+    'immunisation',
+    'immunization',
+    'yellow fever',
+    'vacuna',
+    'impfung',
+    'vaccin',
+  ];
+
+  static const List<String> _medicalCertificate = <String>[
+    'medical certificate',
+    'sick note',
+    'medical report',
+    'doctors note',
+    'fitness certificate',
+  ];
+
+  static const List<String> _safety = <String>[
+    'first aid',
+    'safety certificate',
+    'health and safety',
+    'fire marshal',
+    'forklift',
+  ];
+
+  static const List<String> _electrical = <String>[
+    'certificate of compliance',
+    'electrical certificate',
+    'electrical coc',
+    'coc',
+    'electrical compliance',
+  ];
+
+  static const List<String> _fireEquipment = <String>[
+    'fire extinguisher',
+    'extinguisher',
+    'fire equipment',
+  ];
+
+  static const List<String> _gym = <String>[
+    'gym',
+    'fitness',
+    'virgin active',
+    'planet fitness',
+  ];
+
+  static const List<String> _warranty = <String>[
+    'warranty',
+    'guarantee',
+    'service plan',
+    'garantie',
+    'garantia',
+  ];
+
+  static const List<String> _subscription = <String>[
+    'subscription',
+    'netflix',
+    'spotify',
+    'streaming',
+    'showmax',
+    'disney',
+    'youtube premium',
+    'apple music',
+    'magazine',
+  ];
+
+  static const List<String> _club = <String>[
+    'club membership',
+    'membership',
+    'golf club',
+    'country club',
+    'association',
   ];
 
   static const List<String> _cardBrands = <String>[
-    'visa card', 'mastercard', 'master card', 'amex', 'american express',
-    'credit card', 'debit card', 'cheque card', 'bank card', 'tarjeta de credito',
-    'tarjeta de debito', 'cartao de credito', 'cartao de debito',
-    'carte bancaire', 'carte de credit', 'kreditkarte', 'bankkarte', 'girocard',
-    'ec karte', 'bankpas', 'pinpas', 'kredietkaart', 'creditcard', 'debietkaart',
-    'bankkaart', 'carta di credito', 'bancomat',
+    'visa card',
+    'mastercard',
+    'master card',
+    'amex',
+    'american express',
+    'credit card',
+    'debit card',
+    'cheque card',
+    'bank card',
+    'tarjeta de credito',
+    'tarjeta de debito',
+    'cartao de credito',
+    'cartao de debito',
+    'carte bancaire',
+    'carte de credit',
+    'kreditkarte',
+    'bankkarte',
+    'girocard',
+    'ec karte',
+    'bankpas',
+    'pinpas',
+    'kredietkaart',
+    'creditcard',
+    'debietkaart',
+    'bankkaart',
+    'carta di credito',
+    'bancomat',
   ];
 
   static const List<String> _insurance = <String>[
-    'insurance', 'insure', 'assurance', 'seguro', 'versicherung', 'verzekering',
-    'versekering', 'assicurazione', 'policy', 'polis', 'poliza', 'apolice',
+    'insurance',
+    'insure',
+    'assurance',
+    'seguro',
+    'versicherung',
+    'verzekering',
+    'versekering',
+    'assicurazione',
+    'policy',
+    'polis',
+    'poliza',
+    'apolice',
   ];
 
   static const List<String> _health = <String>[
-    'medical', 'medical aid', 'health', 'hospital', 'gap cover', 'dental',
-    'salud', 'medico', 'saude', 'plano de saude', 'sante', 'mutuelle',
-    'gesundheit', 'kranken', 'mediese', 'mediese fonds', 'gesondheid',
-    'zorg', 'ziektekosten', 'medica', 'medicina', 'discovery health',
+    'medical',
+    'medical aid',
+    'health',
+    'hospital',
+    'gap cover',
+    'dental',
+    'salud',
+    'medico',
+    'saude',
+    'plano de saude',
+    'sante',
+    'mutuelle',
+    'gesundheit',
+    'kranken',
+    'mediese',
+    'mediese fonds',
+    'gesondheid',
+    'zorg',
+    'ziektekosten',
+    'medica',
+    'medicina',
+    'discovery health',
   ];
 
   static const List<String> _vehicleWords = <String>[
-    'car', 'vehicle', 'motor', 'auto', 'carro', 'coche', 'voiture', 'fahrzeug',
-    'kfz', 'motorbike', 'motorcycle', 'moto', 'truck', 'bakkie', 'trailer',
-    'caravan', 'voertuig', 'motorfiets', 'vehiculo', 'veiculo', 'vehicule',
+    'car',
+    'vehicle',
+    'motor',
+    'auto',
+    'carro',
+    'coche',
+    'voiture',
+    'fahrzeug',
+    'kfz',
+    'motorbike',
+    'motorcycle',
+    'moto',
+    'truck',
+    'bakkie',
+    'trailer',
+    'caravan',
+    'voertuig',
+    'motorfiets',
+    'vehiculo',
+    'veiculo',
+    'vehicule',
   ];
 
   static const List<String> _travelWords = <String>[
-    'travel', 'trip', 'viaje', 'viagem', 'voyage', 'reise', 'reis', 'viaggio',
+    'travel',
+    'trip',
+    'viaje',
+    'viagem',
+    'voyage',
+    'reise',
+    'reis',
+    'viaggio',
   ];
 
   static const List<String> _lifeWords = <String>[
-    'life', 'funeral', 'vida', 'vie', 'leben', 'lewens', 'levens', 'begrafnis',
-    'funeraria', 'obseques',
+    'life',
+    'funeral',
+    'vida',
+    'vie',
+    'leben',
+    'lewens',
+    'levens',
+    'begrafnis',
+    'funeraria',
+    'obseques',
   ];
 
   static const List<String> _homeWords = <String>[
-    'home', 'house', 'building', 'contents', 'household', 'property', 'hogar',
-    'casa', 'maison', 'habitation', 'haus', 'hausrat', 'wohngebaude', 'woning',
-    'huis', 'opstal', 'huishoudelike', 'inboedel', 'geyser',
+    'home',
+    'house',
+    'building',
+    'contents',
+    'household',
+    'property',
+    'hogar',
+    'casa',
+    'maison',
+    'habitation',
+    'haus',
+    'hausrat',
+    'wohngebaude',
+    'woning',
+    'huis',
+    'opstal',
+    'huishoudelike',
+    'inboedel',
+    'geyser',
   ];
 
   static const List<String> _roadworthy = <String>[
-    'roadworthy', 'road worthy', 'padwaardig', 'itv', 'tuv', 'mot test',
-    'apk', 'controle technique', 'inspecao', 'revisione', 'hauptuntersuchung',
+    'roadworthy',
+    'road worthy',
+    'padwaardig',
+    'itv',
+    'tuv',
+    'mot test',
+    'apk',
+    'controle technique',
+    'inspecao',
+    'revisione',
+    'hauptuntersuchung',
   ];
 
   static const List<String> _registration = <String>[
-    'disc', 'licence disc', 'license disc', 'registration', 'rego', 'matricula',
-    'kenteken', 'zulassung', 'carte grise', 'number plate', 'lisensieskyf',
-    'skyf', 'licenciamento', 'circulacion', 'tag renewal', 'road tax',
+    'disc',
+    'licence disc',
+    'license disc',
+    'registration',
+    'rego',
+    'matricula',
+    'kenteken',
+    'zulassung',
+    'carte grise',
+    'number plate',
+    'lisensieskyf',
+    'skyf',
+    'licenciamento',
+    'circulacion',
+    'tag renewal',
+    'road tax',
   ];
 
   static const List<String> _licence = <String>[
-    'licence', 'license', 'licencia', 'licenca', 'rijbewijs', 'fuhrerschein',
-    'fahrerlaubnis', 'permis de conduire', 'carnet de conducir',
-    'permiso de conducir', 'carta de conducao', 'carteira de motorista', 'cnh',
-    'patente', 'lisensie', 'bestuurderslisensie', 'rybewys', 'prdp',
-    'drivers', 'driving',
+    'licence',
+    'license',
+    'licencia',
+    'licenca',
+    'rijbewijs',
+    'fuhrerschein',
+    'fahrerlaubnis',
+    'permis de conduire',
+    'carnet de conducir',
+    'permiso de conducir',
+    'carta de conducao',
+    'carteira de motorista',
+    'cnh',
+    'patente',
+    'lisensie',
+    'bestuurderslisensie',
+    'rybewys',
+    'prdp',
+    'drivers',
+    'driving',
   ];
 
   static const List<String> _professional = <String>[
-    'professional', 'practising', 'practicing', 'hpcsa', 'sacap', 'ecsa',
-    'board certification', 'colegiado', 'ordem', 'kammer', 'beroeps',
+    'professional',
+    'practising',
+    'practicing',
+    'hpcsa',
+    'sacap',
+    'ecsa',
+    'board certification',
+    'colegiado',
+    'ordem',
+    'kammer',
+    'beroeps',
   ];
 
   static const List<String> _passport = <String>[
-    'passport', 'pasaporte', 'passaporte', 'passeport', 'reisepass',
-    'paspoort', 'passaporto', 'pasport', 'paszport',
+    'passport',
+    'pasaporte',
+    'passaporte',
+    'passeport',
+    'reisepass',
+    'paspoort',
+    'passaporto',
+    'pasport',
+    'paszport',
   ];
 
   static const List<String> _study = <String>[
-    'study permit', 'study visa', 'student visa', 'student permit',
-    'estudiante', 'estudante', 'etudiant', 'studentenvisum', 'studievisum',
-    'studiepermit', 'studie permit',
+    'study permit',
+    'study visa',
+    'student visa',
+    'student permit',
+    'estudiante',
+    'estudante',
+    'etudiant',
+    'studentenvisum',
+    'studievisum',
+    'studiepermit',
+    'studie permit',
   ];
 
   static const List<String> _work = <String>[
-    'work permit', 'work visa', 'critical skills', 'general work',
-    'permiso de trabajo', 'visto de trabalho', 'permis de travail',
-    'arbeitserlaubnis', 'arbeitsvisum', 'werkvergunning', 'werkpermit',
-    'blue card', 'blaue karte',
+    'work permit',
+    'work visa',
+    'critical skills',
+    'general work',
+    'permiso de trabajo',
+    'visto de trabalho',
+    'permis de travail',
+    'arbeitserlaubnis',
+    'arbeitsvisum',
+    'werkvergunning',
+    'werkpermit',
+    'blue card',
+    'blaue karte',
   ];
 
   static const List<String> _residence = <String>[
-    'residence', 'residency', 'residencia', 'titre de sejour', 'aufenthalt',
-    'verblijfsvergunning', 'permanent resident', 'green card', 'brp',
-    'nie', 'tie card', 'permesso di soggiorno', 'verblyf',
+    'residence',
+    'residency',
+    'residencia',
+    'titre de sejour',
+    'aufenthalt',
+    'verblijfsvergunning',
+    'permanent resident',
+    'green card',
+    'brp',
+    'nie',
+    'tie card',
+    'permesso di soggiorno',
+    'verblyf',
   ];
 
   static const List<String> _visa = <String>[
-    'visa', 'visum', 'visto', 'evisa', 'e visa', 'esta', 'eta',
+    'visa',
+    'visum',
+    'visto',
+    'evisa',
+    'e visa',
+    'esta',
+    'eta',
   ];
 
   static const List<String> _permit = <String>[
-    'permit', 'permiso', 'permis', 'genehmigung', 'vergunning', 'permesso',
+    'permit',
+    'permiso',
+    'permis',
+    'genehmigung',
+    'vergunning',
+    'permesso',
     'permissao',
   ];
 
   static const List<String> _idCard = <String>[
-    'id', 'id card', 'id book', 'smart id', 'identity', 'identification',
-    'cedula', 'dni', 'documento de identidad', 'carte d identite', 'cni',
-    'personalausweis', 'ausweis', 'identiteitskaart', 'identiteitsdokument',
-    'carta d identita', 'bilhete de identidade', 'cartao de cidadao', 'rg',
-    'id kaart', 'idkaart', 'nic',
+    'id',
+    'id card',
+    'id book',
+    'smart id',
+    'identity',
+    'identification',
+    'cedula',
+    'dni',
+    'documento de identidad',
+    'carte d identite',
+    'cni',
+    'personalausweis',
+    'ausweis',
+    'identiteitskaart',
+    'identiteitsdokument',
+    'carta d identita',
+    'bilhete de identidade',
+    'cartao de cidadao',
+    'rg',
+    'id kaart',
+    'idkaart',
+    'nic',
   ];
 
   static const List<String> _lease = <String>[
-    'lease', 'rental', 'rent', 'tenancy', 'alquiler', 'arrendamiento',
-    'aluguel', 'arrendamento', 'bail', 'mietvertrag', 'miete', 'huurcontract',
-    'huurovereenkomst', 'huurooreenkoms', 'affitto', 'locazione',
+    'lease',
+    'rental',
+    'rent',
+    'tenancy',
+    'alquiler',
+    'arrendamiento',
+    'aluguel',
+    'arrendamento',
+    'bail',
+    'mietvertrag',
+    'miete',
+    'huurcontract',
+    'huurovereenkomst',
+    'huurooreenkoms',
+    'affitto',
+    'locazione',
   ];
 
   static const List<String> _workAccess = <String>[
-    'work access', 'staff card', 'employee card', 'staff id', 'employee id',
-    'work card', 'badge', 'werkkaart', 'dienstausweis', 'mitarbeiterausweis',
+    'work access',
+    'staff card',
+    'employee card',
+    'staff id',
+    'employee id',
+    'work card',
+    'badge',
+    'werkkaart',
+    'dienstausweis',
+    'mitarbeiterausweis',
   ];
 
   static const List<String> _access = <String>[
-    'access card', 'access tag', 'tag', 'remote', 'gate', 'fob', 'key card',
-    'keycard', 'toegang', 'zugang', 'acceso', 'acesso', 'badge acces',
+    'access card',
+    'access tag',
+    'tag',
+    'remote',
+    'gate',
+    'fob',
+    'key card',
+    'keycard',
+    'toegang',
+    'zugang',
+    'acceso',
+    'acesso',
+    'badge acces',
   ];
 
   static const List<String> _store = <String>[
-    'store card', 'loyalty', 'rewards', 'reward card', 'club card',
-    'clubcard', 'membership', 'gym', 'tarjeta de fidelidad', 'kundenkarte',
-    'klantenkaart', 'carte de fidelite', 'cartao fidelidade',
+    'store card',
+    'loyalty',
+    'rewards',
+    'reward card',
+    'club card',
+    'clubcard',
+    'tarjeta de fidelidad',
+    'kundenkarte',
+    'klantenkaart',
+    'carte de fidelite',
+    'cartao fidelidade',
   ];
 
   static const List<String> _card = <String>[
-    'card', 'tarjeta', 'cartao', 'carte', 'karte', 'kaart', 'carta', 'kaartjie',
+    'card',
+    'tarjeta',
+    'cartao',
+    'carte',
+    'karte',
+    'kaart',
+    'carta',
+    'kaartjie',
   ];
 
   static String normalise(String input) {
@@ -186,6 +587,20 @@ class GroupSuggester {
     if (text.trim().length < 2) return null;
     if (_has(text, _skip)) return null;
 
+    if (_has(text, _firearm)) return 'firearm_licences';
+    if (_has(text, _idp)) return 'international_driving_permits';
+    if (_has(text, _boatPilot)) return 'boat_and_pilot_licences';
+    if (_has(text, _medicalCard)) return 'medical_aid_cards';
+    if (_has(text, _prescription)) return 'prescriptions';
+    if (_has(text, _vaccination)) return 'vaccinations';
+    if (_has(text, _medicalCertificate)) return 'medical_certificates';
+    if (_has(text, _safety)) return 'safety_certificates';
+    if (_has(text, _electrical)) return 'electrical_compliance_certificates';
+    if (_has(text, _fireEquipment)) return 'fire_equipment_services';
+    if (_has(text, _gym)) return 'gym_memberships';
+    if (_has(text, _warranty)) return 'warranties';
+    if (_has(text, _subscription)) return 'subscriptions';
+
     if (_has(text, _cardBrands)) return 'debit_and_credit_cards';
 
     final insurance = _has(text, _insurance);
@@ -198,6 +613,7 @@ class GroupSuggester {
       return 'health_insurances';
     }
 
+    if (_has(text, _club)) return 'club_memberships';
     if (_has(text, _roadworthy)) return 'roadworthy_certificates';
     if (_has(text, _professional)) return 'professional_licences';
     if (_has(text, _registration)) return 'vehicle_registrations';
