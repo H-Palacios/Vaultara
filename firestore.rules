@@ -379,7 +379,11 @@ service cloud.firestore {
     }
 
     function validPreference() {
-      return smallDoc(20) && optionalList('labels', 100);
+      // done and hints hold tutorial ids, for preferences/tutorials.
+      return smallDoc(20)
+        && optionalList('labels', 100)
+        && optionalList('done', 60)
+        && optionalList('hints', 60);
     }
 
     function assistantExpiryOk(d) {
