@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Tu diçî maleke nû? Binêre ka divê çi din nû bikî."
+  "lifePlanSuggestMove": "Tu diçî maleke nû? Binêre ka divê çi din nû bikî.",
+  "keptInTitle": "Ez li ku diparêzim",
+  "keptInSubtitle": "Da ku tu zanibî ger winda bibe çi bloke bikî û çi biguherînî",
+  "keptInWallet": "Berîk",
+  "keptInBag": "Çente",
+  "keptInPhoneCase": "Qalikê telefonê",
+  "keptInTravelPouch": "Çenteyê rêwîtiyê",
+  "keptInCar": "Erebe",
+  "keptInHome": "Li malê",
+  "keptInNone": "Nehatiye diyarkirin",
+  "lostLineLabel": "Hejmara kartê ya windabûyî",
+  "lostLineHelper": "Niha tomar bike. Hejmar li ser kartê çapkirî ye, ji ber vê yekê dema hewce be dê ne li cem te be.",
+  "lifeEventWalletLost": "Min berîka xwe winda kir",
+  "lifeEventWalletLostBody": "Pêşî kartên xwe bloke bike, paşê belgeyên xwe yek bi yek biguherîne.",
+  "lifeEventWalletStolen": "Berîka min hate dizîn",
+  "lifeEventWalletStolenBody": "Tavilê kartên xwe bloke bike û diziyê ragihîne. Paşê li hesabên xwe ji bo xapandinê binêre.",
+  "lifeVariantWalletQuestion": "Winda bû an hate dizîn?",
+  "lifeVariantLost": "Winda bû",
+  "lifeVariantStolen": "Hate dizîn",
+  "lifeTaskWalletFreezeCards": "Ger sepana bankê destûr bide, kartên xwe tê de bicemidîne",
+  "lifeTaskWalletRetrace": "Li cihên dawî yên ku tu lê bûyî telefon bike û li tiştên windabûyî bipirse",
+  "lifeTaskWalletFraudAlert": "Ji buroyên krediyê an xizmeta dijî-xapandinê ya welatê xwe bixwaze ku nasnameya te nîşan bikin",
+  "lifeTaskWalletStatements": "Daxuyaniyên bankê ji bo dravdanên ku te nekirine kontrol bike",
+  "lifeTaskWalletSubscriptions": "Karta nû li ser abonetî û dravdanên otomatîk deyne",
+  "lifeTaskWalletPayApps": "Kartên nû li Google Pay an Apple Pay zêde bike",
+  "lifeTaskWalletHealthCard": "Ji sîgorteya tenduristiyê karta endamtiyê ya nû bixwaze",
+  "lifeTaskWalletTransport": "Karta veguhastinê an rêbacê bloke bike û balansê veguhezîne",
+  "lifeTaskWalletLoyalty": "Kartên dilsoziyê yên nû bixwaze da ku xalên te bimînin",
+  "lifeTaskWalletLocks": "Ger mifte an navnîşana te tê de bû, li ser guhertina kilîtan bifikire",
+  "lifeTaskWalletInsurance": "Kontrol bike ka sîgorteya te berîk û pereyê nakit digire",
+  "lostWalletHeroTitle": "Berîka xwe winda kir?",
+  "lostWalletHeroBody": "Vaultara nîşan dide ku pêşî çi bloke bikî, çi biguherînî û ji kê re bibêjî.",
+  "lostWalletStartTitle": "Çi qewimî?",
+  "lostWalletEditTitle": "Hûrguliyan biguherîne",
+  "lostWalletLostHint": "Ket an min li derekê ji bîr kir",
+  "lostWalletStolenHint": "Kesekî bir",
+  "lostWalletWhatMissing": "Çi kêm e?",
+  "lostWalletStartButton": "Nîşanî min bide ka çi bikim",
+  "lostWalletCheckupTitle": "Kontrola berîkê",
+  "lostWalletCheckupBody": "Niha amade be, da ku ger winda bibe tiştek ji bîr neçe.",
+  "lostWalletCheckupAllGood": "Her tişt amade ye. Ger rojekê winda bibe, tu amade yî.",
+  "lostWalletSetPlaceBody": "Kartek an belgeyek veke û hilbijêre ka li ku diparêzî. Vê ji bo nasname, ehliyet û kartên xwe bike.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bê wêne: {count}. Bi wêne guhertin zûtir e.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kartên bê hejmara blokekirinê: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasaport an destûrên li cem te: {count}. Ger rêwîtiyê nakî, wan li malê bihêle.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Tiştên li cem te",
+  "lostWalletNoPhoto": "Wêne tune",
+  "lostWalletHasPhoto": "Wêne hate tomarkirin",
+  "lostWalletNoLineShort": "Hejmara blokekirinê tune",
+  "lostWalletHistory": "Carên berê",
+  "lostWalletFound": "Hate dîtin",
+  "walletCheckToggle": "Her 6 mehan bîne bîra min",
+  "walletCheckToggleBody": "Nêrînek bilez li tiştên ku tu hildigirî, da ku lîste rast bimîne.",
+  "walletCheckReminderTitle": "Kontrola berîkê",
+  "walletCheckReminderBody": "Tiştek di berîka te de guherî? Deqeyekê ji bo nûkirina Vaultara veqetîne.",
+  "lostWalletBlockNow": "Van niha bloke bike",
+  "lostWalletBlockNowHint": "Li her bankê telefon bike an sepana wê bikar bîne. Her deqe girîng e.",
+  "lostWalletCall": "Telefon bike",
+  "lostWalletAddLine": "Hejmarê zêde bike",
+  "lostWalletNoLine": "Tu hejmar nehatiye tomarkirin. Wê di sepan an malpera bankê de bibîne.",
+  "lostWalletBlocked": "Hate blokekirin",
+  "lostWalletReplace": "Van biguherîne",
+  "lostWalletReplaceHint": "Ji bo yên nû serlêdan bike û dema bigihîjin dîroka nû tomar bike.",
+  "lostWalletArrived": "Ya nû gihîşt",
+  "lostWalletCheck": "Van kontrol bike",
+  "lostWalletCheckHint": "Bipirse ka karta an hejmara nû pêwîst e.",
+  "lostWalletPlanEmptyTitle": "Li wir tiştekî tomarkirî tune bû",
+  "lostWalletPlanEmpty": "Gavên jêrîn hîn jî alîkar in. Cara bê, hilbijêre ka kart û belgeyên xwe li ku diparêzî.",
+  "lostWalletCaseTitle": "Hejmara dosyaya polîsan",
+  "lostWalletCaseHint": "Bank, sîgorte û nivîsgeh gelek caran dixwazin.",
+  "lostWalletCaseLabel": "Hejmara dosyayê an referansê",
+  "lostWalletCaseSaved": "Hejmara dosyayê hate tomarkirin",
+  "lostWalletAbroadTitle": "Niha li derveyî welêt î?",
+  "lostWalletAbroadBody": "Tu di rêwîtiya {trip} de yî. Ger pasaport an nasnameya te tê de bû, ji bo belgeya rêwîtiyê ya acîl bi balyozxane an konsolosxaneyê re têkilî dayne û sîgorteya rêwîtiyê agahdar bike.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Rêwîtiyê veke",
+  "lostWalletPhoneTitle": "Telefona te jî hate birin?",
+  "lostWalletPhoneBody": "Pêşî karta SIM û sepanên bankê bloke bike. Ji bo vê planek heye.",
+  "lostWalletPhoneButton": "Plana telefona windabûyî dest pê bike",
+  "lostWalletStatementNote": "Vaultara dê piştî 30, 60 û 90 rojan bîne bîra te.",
+  "lostWalletStatementTitle": "Daxuyaniyên bankê kontrol bike",
+  "lostWalletStatementBody": "Li dravdanên ku te ji dema windabûna berîkê ve nekirine bigere.",
+  "lostWalletFoundButton": "Min dît",
+  "lostWalletFoundTitle": "Nûçeya baş!",
+  "lostWalletFoundBody": "Ev kart jixwe hatine blokekirin, ji ber vê yekê li benda yên nû be:",
+  "lostWalletFoundNone": "Hîn tiştek nehatiye blokekirin, tu dikarî wekî berê berdewam bikî.",
+  "lostWalletFoundUnfreeze": "Ger te kart di sepana bankê de cemidandine, yên ku te bloke nekirine veke.",
+  "lostWalletFoundConfirm": "Planê bigire",
+  "lostWalletFoundOn": "Di {date} de hate dîtin",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rapora tiştên windabûyî",
+  "lostWalletReportTitle": "Rapora tiştên windabûyî",
+  "lostWalletReportWhen": "Dîrok: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Çi kêm e: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Hejmara dosyayê: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Hejmara dosyayê: hîn nehatiye ragihandin",
+  "lostWalletReportCount": "{count, plural, other{Tiştên jêrîn: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

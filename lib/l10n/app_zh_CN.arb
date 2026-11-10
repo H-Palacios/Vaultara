@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "要搬新家吗？看看还有什么需要更新。"
+  "lifePlanSuggestMove": "要搬新家吗？看看还有什么需要更新。",
+  "keptInTitle": "存放位置",
+  "keptInSubtitle": "以便丢失时知道要冻结和补办什么",
+  "keptInWallet": "钱包",
+  "keptInBag": "包",
+  "keptInPhoneCase": "手机壳",
+  "keptInTravelPouch": "旅行收纳包",
+  "keptInCar": "汽车",
+  "keptInHome": "家里",
+  "keptInNone": "未设置",
+  "lostLineLabel": "挂失电话",
+  "lostLineHelper": "现在就保存。号码印在卡上，需要时就不在手边了。",
+  "lifeEventWalletLost": "我的钱包丢了",
+  "lifeEventWalletLostBody": "先冻结银行卡，再逐一补办证件。",
+  "lifeEventWalletStolen": "我的钱包被偷了",
+  "lifeEventWalletStolenBody": "立即冻结银行卡并报案。之后留意账户是否有欺诈。",
+  "lifeVariantWalletQuestion": "丢失还是被盗？",
+  "lifeVariantLost": "丢失",
+  "lifeVariantStolen": "被盗",
+  "lifeTaskWalletFreezeCards": "如果银行 App 支持，先在 App 中锁定卡片",
+  "lifeTaskWalletRetrace": "打电话给最近去过的地方，询问失物招领",
+  "lifeTaskWalletFraudAlert": "请征信机构或本国反诈骗机构标记你的身份证件",
+  "lifeTaskWalletStatements": "检查银行账单中是否有不是你本人的消费",
+  "lifeTaskWalletSubscriptions": "把新卡绑定到订阅和自动扣款",
+  "lifeTaskWalletPayApps": "把新卡添加到 Google Pay 或 Apple Pay",
+  "lifeTaskWalletHealthCard": "向医疗保险申请新的会员卡",
+  "lifeTaskWalletTransport": "冻结交通卡或通行费卡并转移余额",
+  "lifeTaskWalletLoyalty": "补办会员卡以保留积分",
+  "lifeTaskWalletLocks": "如果里面有钥匙或你的地址，考虑换锁",
+  "lifeTaskWalletInsurance": "确认你的保险是否涵盖钱包和现金",
+  "lostWalletHeroTitle": "钱包丢了？",
+  "lostWalletHeroBody": "Vaultara 告诉你先冻结什么、补办什么、通知谁。",
+  "lostWalletStartTitle": "发生了什么？",
+  "lostWalletEditTitle": "更改详情",
+  "lostWalletLostHint": "掉了或落在某处",
+  "lostWalletStolenHint": "被人拿走了",
+  "lostWalletWhatMissing": "少了什么？",
+  "lostWalletStartButton": "告诉我该做什么",
+  "lostWalletCheckupTitle": "钱包检查",
+  "lostWalletCheckupBody": "现在就做好准备，丢失时不会遗漏任何东西。",
+  "lostWalletCheckupAllGood": "一切就绪。万一丢失，你已有准备。",
+  "lostWalletSetPlaceBody": "打开一张卡或一份证件，选择存放位置。为身份证、驾照和银行卡都设置一下。",
+  "lostWalletIssuePhotos": "{count, plural, other{没有照片：{count} 项。有照片补办更快。}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{未保存挂失电话的卡：{count} 张。}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{随身携带的护照或许可证：{count} 份。不出行时请放在家里。}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "随身携带的物品",
+  "lostWalletNoPhoto": "没有照片",
+  "lostWalletHasPhoto": "已保存照片",
+  "lostWalletNoLineShort": "没有挂失电话",
+  "lostWalletHistory": "以往记录",
+  "lostWalletFound": "已找到",
+  "walletCheckToggle": "每 6 个月提醒我",
+  "walletCheckToggleBody": "快速看看随身物品，让清单保持准确。",
+  "walletCheckReminderTitle": "钱包检查",
+  "walletCheckReminderBody": "钱包里有变化吗？花一分钟更新 Vaultara。",
+  "lostWalletBlockNow": "立即冻结",
+  "lostWalletBlockNowHint": "逐一致电银行或使用其 App。分秒必争。",
+  "lostWalletCall": "拨打",
+  "lostWalletAddLine": "添加号码",
+  "lostWalletNoLine": "尚未保存号码。可在银行 App 或官网查找。",
+  "lostWalletBlocked": "已冻结",
+  "lostWalletReplace": "补办这些",
+  "lostWalletReplaceHint": "申请新的，收到后保存新日期。",
+  "lostWalletArrived": "新的已到",
+  "lostWalletCheck": "检查这些",
+  "lostWalletCheckHint": "询问是否需要新卡或新号码。",
+  "lostWalletPlanEmptyTitle": "那里没有保存的物品",
+  "lostWalletPlanEmpty": "下面的步骤仍然有用。下次请设置卡片和证件的存放位置。",
+  "lostWalletCaseTitle": "报案回执编号",
+  "lostWalletCaseHint": "银行、保险公司和政府部门常会要求提供。",
+  "lostWalletCaseLabel": "案件或参考编号",
+  "lostWalletCaseSaved": "已保存报案编号",
+  "lostWalletAbroadTitle": "现在在国外吗？",
+  "lostWalletAbroadBody": "你正在旅行：{trip}。如果护照或身份证在里面，请联系使领馆申请紧急旅行证件，并通知旅行保险。",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "打开行程",
+  "lostWalletPhoneTitle": "手机也被拿走了吗？",
+  "lostWalletPhoneBody": "先冻结 SIM 卡和银行 App。有专门的计划。",
+  "lostWalletPhoneButton": "开始手机丢失计划",
+  "lostWalletStatementNote": "Vaultara 会在 30、60 和 90 天后提醒你。",
+  "lostWalletStatementTitle": "检查银行账单",
+  "lostWalletStatementBody": "查找钱包丢失后不是你本人的消费。",
+  "lostWalletFoundButton": "我找到了",
+  "lostWalletFoundTitle": "好消息！",
+  "lostWalletFoundBody": "这些卡已冻结，请留意新卡：",
+  "lostWalletFoundNone": "还没有冻结任何东西，可以照常使用。",
+  "lostWalletFoundUnfreeze": "如果你在银行 App 中锁定了卡片，请解锁未挂失的卡。",
+  "lostWalletFoundConfirm": "关闭计划",
+  "lostWalletFoundOn": "于 {date} 找到",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "失物报告",
+  "lostWalletReportTitle": "失物报告",
+  "lostWalletReportWhen": "日期：{date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "丢失物品：{places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "报案编号：{number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "报案编号：尚未报案",
+  "lostWalletReportCount": "{count, plural, other{下列项目：{count} 项}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

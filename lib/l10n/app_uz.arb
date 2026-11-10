@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Yangi uyga ko'chyapsizmi? Yana nimani yangilash kerakligini ko'ring."
+  "lifePlanSuggestMove": "Yangi uyga ko'chyapsizmi? Yana nimani yangilash kerakligini ko'ring.",
+  "keptInTitle": "Uni qayerda saqlayman",
+  "keptInSubtitle": "Yo'qolsa, nimani bloklab, nimani almashtirishni bilish uchun",
+  "keptInWallet": "Hamyon",
+  "keptInBag": "Sumka",
+  "keptInPhoneCase": "Telefon g'ilofi",
+  "keptInTravelPouch": "Sayohat xaltasi",
+  "keptInCar": "Avtomobil",
+  "keptInHome": "Uyda",
+  "keptInNone": "Tanlanmagan",
+  "lostLineLabel": "Yo'qolgan kartani bloklash raqami",
+  "lostLineHelper": "Hozir saqlang. Raqam kartada yozilgan, shuning uchun kerak bo'lganda yoningizda bo'lmaydi.",
+  "lifeEventWalletLost": "Hamyonimni yo'qotdim",
+  "lifeEventWalletLostBody": "Avval kartalaringizni bloklang, keyin hujjatlarni birma-bir almashtiring.",
+  "lifeEventWalletStolen": "Hamyonimni o'g'irlashdi",
+  "lifeEventWalletStolenBody": "Kartalarni darhol bloklang va o'g'irlik haqida xabar bering. Keyin hisoblaringizni firibgarlikdan kuzating.",
+  "lifeVariantWalletQuestion": "Yo'qoldimi yoki o'g'irlandimi?",
+  "lifeVariantLost": "Yo'qoldi",
+  "lifeVariantStolen": "O'g'irlandi",
+  "lifeTaskWalletFreezeCards": "Bank ilovasida imkon bo'lsa, kartalarni muzlating",
+  "lifeTaskWalletRetrace": "Oxirgi bo'lgan joylaringizga qo'ng'iroq qilib, yo'qolgan buyumlar haqida so'rang",
+  "lifeTaskWalletFraudAlert": "Kredit byurolaridan yoki mamlakatingiz firibgarlikka qarshi xizmatidan shaxsiy hujjatingizni belgilashni so'rang",
+  "lifeTaskWalletStatements": "Bank ko'chirmalarida o'zingiz qilmagan to'lovlarni tekshiring",
+  "lifeTaskWalletSubscriptions": "Yangi kartani obunalar va avtomatik to'lovlarga ulang",
+  "lifeTaskWalletPayApps": "Yangi kartalarni Google Pay yoki Apple Pay'ga qo'shing",
+  "lifeTaskWalletHealthCard": "Tibbiy sug'urtangizdan yangi a'zolik kartasini so'rang",
+  "lifeTaskWalletTransport": "Transport yoki yo'l to'lovi kartasini bloklang va qoldiqni o'tkazing",
+  "lifeTaskWalletLoyalty": "Ballaringizni saqlash uchun yangi sodiqlik kartalarini so'rang",
+  "lifeTaskWalletLocks": "Ichida kalit yoki manzilingiz bo'lsa, qulflarni almashtirishni o'ylab ko'ring",
+  "lifeTaskWalletInsurance": "Sug'urtangiz hamyon va naqd pulni qoplashini tekshiring",
+  "lostWalletHeroTitle": "Hamyoningizni yo'qotdingizmi?",
+  "lostWalletHeroBody": "Vaultara avval nimani bloklash, nimani almashtirish va kimga xabar berishni ko'rsatadi.",
+  "lostWalletStartTitle": "Nima bo'ldi?",
+  "lostWalletEditTitle": "Tafsilotlarni o'zgartirish",
+  "lostWalletLostHint": "Tushib qoldi yoki biror joyda qoldirdim",
+  "lostWalletStolenHint": "Kimdir olib ketdi",
+  "lostWalletWhatMissing": "Nima yo'q?",
+  "lostWalletStartButton": "Nima qilishimni ko'rsat",
+  "lostWalletCheckupTitle": "Hamyon tekshiruvi",
+  "lostWalletCheckupBody": "Yo'qolsa hech narsa unutilmasligi uchun hozir tayyorlaning.",
+  "lostWalletCheckupAllGood": "Hammasi tayyor. Qachondir yo'qolsa, siz tayyorsiz.",
+  "lostWalletSetPlaceBody": "Karta yoki hujjatni oching va uni qayerda saqlashingizni tanlang. Buni ID karta, haydovchilik guvohnomasi va kartalar uchun qiling.",
+  "lostWalletIssuePhotos": "{count, plural, other{Rasmsiz: {count}. Rasm bilan almashtirish tezroq.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Bloklash raqami yo'q kartalar: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Yoningizdagi pasport yoki ruxsatnomalar: {count}. Sayohatga chiqmasangiz, uyda qoldiring.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Yoningizda olib yuradiganlaringiz",
+  "lostWalletNoPhoto": "Rasm yo'q",
+  "lostWalletHasPhoto": "Rasm saqlandi",
+  "lostWalletNoLineShort": "Bloklash raqami yo'q",
+  "lostWalletHistory": "Oldingi holatlar",
+  "lostWalletFound": "Topildi",
+  "walletCheckToggle": "Har 6 oyda eslat",
+  "walletCheckToggleBody": "Ro'yxat to'g'ri bo'lishi uchun yoningizdagilarga tezkor nazar.",
+  "walletCheckReminderTitle": "Hamyon tekshiruvi",
+  "walletCheckReminderBody": "Hamyoningizda biror narsa o'zgardimi? Vaultara'ni yangilash uchun bir daqiqa ajrating.",
+  "lostWalletBlockNow": "Bularni hozir bloklang",
+  "lostWalletBlockNowHint": "Har bir bankka qo'ng'iroq qiling yoki uning ilovasidan foydalaning. Har bir daqiqa muhim.",
+  "lostWalletCall": "Qo'ng'iroq",
+  "lostWalletAddLine": "Raqam qo'shish",
+  "lostWalletNoLine": "Raqam saqlanmagan. Uni bank ilovasi yoki saytidan toping.",
+  "lostWalletBlocked": "Bloklandi",
+  "lostWalletReplace": "Bularni almashtiring",
+  "lostWalletReplaceHint": "Yangilariga ariza bering va kelganda yangi sanani saqlang.",
+  "lostWalletArrived": "Yangisi keldi",
+  "lostWalletCheck": "Bularni tekshiring",
+  "lostWalletCheckHint": "Yangi karta yoki raqam kerakmi, so'rang.",
+  "lostWalletPlanEmptyTitle": "U yerda hech narsa saqlanmagan edi",
+  "lostWalletPlanEmpty": "Quyidagi qadamlar baribir yordam beradi. Keyingi safar kartalar va hujjatlarni qayerda saqlashingizni tanlang.",
+  "lostWalletCaseTitle": "Politsiya ishi raqami",
+  "lostWalletCaseHint": "Banklar, sug'urta kompaniyalari va idoralar uni tez-tez so'raydi.",
+  "lostWalletCaseLabel": "Ish yoki ma'lumotnoma raqami",
+  "lostWalletCaseSaved": "Ish raqami saqlandi",
+  "lostWalletAbroadTitle": "Hozir chet eldamisiz?",
+  "lostWalletAbroadBody": "Siz {trip} sayohatidasiz. Ichida pasport yoki ID karta bo'lsa, favqulodda yo'l hujjati uchun elchixona yoki konsullikka murojaat qiling va sayohat sug'urtangizga xabar bering.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Sayohatni ochish",
+  "lostWalletPhoneTitle": "Telefoningizni ham olib ketishdimi?",
+  "lostWalletPhoneBody": "Avval SIM karta va bank ilovalarini bloklang. Buning uchun reja bor.",
+  "lostWalletPhoneButton": "Yo'qolgan telefon rejasini boshlash",
+  "lostWalletStatementNote": "Vaultara 30, 60 va 90 kundan keyin eslatadi.",
+  "lostWalletStatementTitle": "Bank ko'chirmalarini tekshiring",
+  "lostWalletStatementBody": "Hamyon yo'qolgandan beri o'zingiz qilmagan to'lovlarni qidiring.",
+  "lostWalletFoundButton": "Topdim",
+  "lostWalletFoundTitle": "Xushxabar!",
+  "lostWalletFoundBody": "Bu kartalar allaqachon bloklangan, shuning uchun yangilarini kuting:",
+  "lostWalletFoundNone": "Hozircha hech narsa bloklanmagan, avvalgidek davom etishingiz mumkin.",
+  "lostWalletFoundUnfreeze": "Bank ilovasida kartalarni muzlatgan bo'lsangiz, bloklamaganlaringizni oching.",
+  "lostWalletFoundConfirm": "Rejani yopish",
+  "lostWalletFoundOn": "{date} topildi",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Yo'qolgan buyumlar hisoboti",
+  "lostWalletReportTitle": "Yo'qolgan buyumlar hisoboti",
+  "lostWalletReportWhen": "Sana: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Nima yo'q: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Ish raqami: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Ish raqami: hali xabar berilmagan",
+  "lostWalletReportCount": "{count, plural, other{Quyidagi elementlar: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

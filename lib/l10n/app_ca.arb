@@ -2311,5 +2311,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Et mudes a una casa nova? Mira què més has d'actualitzar."
+  "lifePlanSuggestMove": "Et mudes a una casa nova? Mira què més has d'actualitzar.",
+  "keptInTitle": "On el guardo",
+  "keptInSubtitle": "Per saber què bloquejar i substituir si es perd",
+  "keptInWallet": "Cartera",
+  "keptInBag": "Bossa",
+  "keptInPhoneCase": "Funda del mòbil",
+  "keptInTravelPouch": "Bossa de viatge",
+  "keptInCar": "Cotxe",
+  "keptInHome": "A casa",
+  "keptInNone": "Sense indicar",
+  "lostLineLabel": "Telèfon per a targeta perduda",
+  "lostLineHelper": "Desa'l ara. El número és a la targeta, així que no el tindràs quan el necessitis.",
+  "lifeEventWalletLost": "He perdut la cartera",
+  "lifeEventWalletLostBody": "Bloqueja primer les targetes i després substitueix els documents un per un.",
+  "lifeEventWalletStolen": "M'han robat la cartera",
+  "lifeEventWalletStolenBody": "Bloqueja les targetes de seguida i denuncia el robatori. Després vigila els comptes per si hi ha frau.",
+  "lifeVariantWalletQuestion": "S'ha perdut o te l'han robat?",
+  "lifeVariantLost": "Perduda",
+  "lifeVariantStolen": "Robada",
+  "lifeTaskWalletFreezeCards": "Congela les targetes a l'app del banc si ho permet",
+  "lifeTaskWalletRetrace": "Truca als últims llocs on has estat i pregunta a objectes perduts",
+  "lifeTaskWalletFraudAlert": "Demana a les agències de crèdit o al servei antifrau del teu país que marquin el teu document",
+  "lifeTaskWalletStatements": "Revisa els extractes bancaris per si hi ha pagaments que no has fet",
+  "lifeTaskWalletSubscriptions": "Posa la targeta nova a les subscripcions i domiciliacions",
+  "lifeTaskWalletPayApps": "Afegeix les targetes noves a Google Pay o Apple Pay",
+  "lifeTaskWalletHealthCard": "Demana una targeta nova a la teva mútua o assegurança de salut",
+  "lifeTaskWalletTransport": "Bloqueja la targeta de transport o de peatge i traspassa el saldo",
+  "lifeTaskWalletLoyalty": "Demana noves targetes de fidelitat per conservar els punts",
+  "lifeTaskWalletLocks": "Si hi havia claus o la teva adreça, pensa a canviar els panys",
+  "lifeTaskWalletInsurance": "Comprova si l'assegurança cobreix la cartera i els diners",
+  "lostWalletHeroTitle": "Has perdut la cartera?",
+  "lostWalletHeroBody": "Vaultara et mostra què bloquejar primer, què substituir i a qui avisar.",
+  "lostWalletStartTitle": "Què ha passat?",
+  "lostWalletEditTitle": "Canvia les dades",
+  "lostWalletLostHint": "Ha caigut o me l'he deixat en algun lloc",
+  "lostWalletStolenHint": "Algú se l'ha endut",
+  "lostWalletWhatMissing": "Què falta?",
+  "lostWalletStartButton": "Digues-me què fer",
+  "lostWalletCheckupTitle": "Revisió de la cartera",
+  "lostWalletCheckupBody": "Prepara't ara perquè no t'oblidis de res si es perd.",
+  "lostWalletCheckupAllGood": "Tot a punt. Si mai es perd, estàs preparat.",
+  "lostWalletSetPlaceBody": "Obre una targeta o un document i tria on el guardes. Fes-ho amb el DNI, el carnet de conduir i les targetes.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 element no té foto. Amb una foto se substitueix abans.} other{{count} elements no tenen foto. Amb fotos se substitueixen abans.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 targeta no té desat el telèfon per a targeta perduda.} other{{count} targetes no tenen desat el telèfon per a targeta perduda.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Portes un passaport o permís a sobre. Deixa'l a casa si no viatges.} other{Portes {count} passaports o permisos a sobre. Deixa'ls a casa si no viatges.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "El que portes a sobre",
+  "lostWalletNoPhoto": "Sense foto",
+  "lostWalletHasPhoto": "Foto desada",
+  "lostWalletNoLineShort": "Sense telèfon per a targeta perduda",
+  "lostWalletHistory": "Vegades anteriors",
+  "lostWalletFound": "Trobada",
+  "walletCheckToggle": "Recorda-m'ho cada 6 mesos",
+  "walletCheckToggleBody": "Un cop d'ull ràpid al que portes, perquè la llista estigui al dia.",
+  "walletCheckReminderTitle": "Revisió de la cartera",
+  "walletCheckReminderBody": "Ha canviat res a la cartera? Dedica un minut a actualitzar Vaultara.",
+  "lostWalletBlockNow": "Bloqueja això ara",
+  "lostWalletBlockNowHint": "Truca a cada banc o fes servir la seva app. Cada minut compta.",
+  "lostWalletCall": "Truca",
+  "lostWalletAddLine": "Afegeix el número",
+  "lostWalletNoLine": "No hi ha cap número desat. Busca'l a l'app o al web del teu banc.",
+  "lostWalletBlocked": "Bloquejada",
+  "lostWalletReplace": "Substitueix això",
+  "lostWalletReplaceHint": "Demana'n de nous i desa la data nova quan arribin.",
+  "lostWalletArrived": "Ja ha arribat el nou",
+  "lostWalletCheck": "Revisa això",
+  "lostWalletCheckHint": "Pregunta si necessites una targeta o un número nous.",
+  "lostWalletPlanEmptyTitle": "Allà no hi havia res desat",
+  "lostWalletPlanEmpty": "Els passos de sota continuen ajudant. La propera vegada, tria on guardes les targetes i els documents.",
+  "lostWalletCaseTitle": "Número de denúncia",
+  "lostWalletCaseHint": "Bancs, asseguradores i oficines sovint el demanen.",
+  "lostWalletCaseLabel": "Número de denúncia o de referència",
+  "lostWalletCaseSaved": "Número de denúncia desat",
+  "lostWalletAbroadTitle": "Ets a l'estranger?",
+  "lostWalletAbroadBody": "Ets de viatge: {trip}. Si hi havia el passaport o el DNI, contacta amb l'ambaixada o el consolat per a un document de viatge d'emergència i avisa l'assegurança de viatge.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Obre el viatge",
+  "lostWalletPhoneTitle": "També t'han pres el mòbil?",
+  "lostWalletPhoneBody": "Bloqueja primer la SIM i les apps del banc. Hi ha un pla per a això.",
+  "lostWalletPhoneButton": "Comença el pla de mòbil perdut",
+  "lostWalletStatementNote": "Vaultara t'ho recorda als 30, 60 i 90 dies.",
+  "lostWalletStatementTitle": "Revisa els extractes bancaris",
+  "lostWalletStatementBody": "Busca pagaments que no has fet des que vas perdre la cartera.",
+  "lostWalletFoundButton": "L'he trobada",
+  "lostWalletFoundTitle": "Bones notícies!",
+  "lostWalletFoundBody": "Aquestes targetes ja estan bloquejades, així que estigues atent a les noves:",
+  "lostWalletFoundNone": "Encara no s'ha bloquejat res, pots continuar com abans.",
+  "lostWalletFoundUnfreeze": "Si has congelat targetes a l'app del banc, descongela les que no has bloquejat.",
+  "lostWalletFoundConfirm": "Tanca el pla",
+  "lostWalletFoundOn": "Trobada el {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Informe d'objectes perduts",
+  "lostWalletReportTitle": "Informe d'objectes perduts",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Què falta: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Número de denúncia: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Número de denúncia: encara no denunciat",
+  "lostWalletReportCount": "{count, plural, =1{1 element a sota} other{{count} elements a sota}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

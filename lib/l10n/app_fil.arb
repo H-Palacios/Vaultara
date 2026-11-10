@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Lilipat sa bagong bahay? Tingnan kung ano pa ang dapat i-update."
+  "lifePlanSuggestMove": "Lilipat sa bagong bahay? Tingnan kung ano pa ang dapat i-update.",
+  "keptInTitle": "Kung saan ko ito itinatago",
+  "keptInSubtitle": "Para alam mo kung ano ang iba-block at papalitan kapag nawala",
+  "keptInWallet": "Wallet",
+  "keptInBag": "Bag",
+  "keptInPhoneCase": "Case ng telepono",
+  "keptInTravelPouch": "Pouch sa biyahe",
+  "keptInCar": "Kotse",
+  "keptInHome": "Sa bahay",
+  "keptInNone": "Hindi nakatakda",
+  "lostLineLabel": "Numero para sa nawalang card",
+  "lostLineHelper": "I-save ito ngayon. Nakaimprenta ang numero sa card, kaya wala ito sa iyo kapag kailangan mo.",
+  "lifeEventWalletLost": "Nawala ang wallet ko",
+  "lifeEventWalletLostBody": "I-block muna ang mga card mo, saka palitan ang mga dokumento isa-isa.",
+  "lifeEventWalletStolen": "Ninakaw ang wallet ko",
+  "lifeEventWalletStolenBody": "I-block agad ang mga card mo at i-report ang pagnanakaw. Pagkatapos, bantayan ang mga account mo laban sa panloloko.",
+  "lifeVariantWalletQuestion": "Nawala o ninakaw?",
+  "lifeVariantLost": "Nawala",
+  "lifeVariantStolen": "Ninakaw",
+  "lifeTaskWalletFreezeCards": "I-freeze ang mga card sa banking app kung may opsyon ito",
+  "lifeTaskWalletRetrace": "Tawagan ang mga huling lugar na pinuntahan mo at magtanong tungkol sa mga nawalang gamit",
+  "lifeTaskWalletFraudAlert": "Hilingin sa mga credit bureau o sa fraud service ng bansa mo na markahan ang ID mo",
+  "lifeTaskWalletStatements": "Suriin ang bank statement para sa mga bayad na hindi mo ginawa",
+  "lifeTaskWalletSubscriptions": "Ilagay ang bagong card sa mga subscription at auto-debit mo",
+  "lifeTaskWalletPayApps": "Idagdag ang mga bagong card sa Google Pay o Apple Pay",
+  "lifeTaskWalletHealthCard": "Humingi ng bagong member card sa health insurance mo",
+  "lifeTaskWalletTransport": "I-block ang transport o toll card mo at ilipat ang balanse",
+  "lifeTaskWalletLoyalty": "Humingi ng bagong loyalty card para hindi mawala ang points mo",
+  "lifeTaskWalletLocks": "Kung may susi o address mo sa loob, pag-isipang palitan ang mga kandado",
+  "lifeTaskWalletInsurance": "Alamin kung sakop ng insurance mo ang wallet at cash",
+  "lostWalletHeroTitle": "Nawala ang wallet mo?",
+  "lostWalletHeroBody": "Ipinapakita ng Vaultara kung ano ang unang iba-block, ano ang papalitan, at sino ang sasabihan.",
+  "lostWalletStartTitle": "Ano ang nangyari?",
+  "lostWalletEditTitle": "Baguhin ang detalye",
+  "lostWalletLostHint": "Nahulog o naiwan kung saan",
+  "lostWalletStolenHint": "May kumuha nito",
+  "lostWalletWhatMissing": "Ano ang nawawala?",
+  "lostWalletStartButton": "Ipakita kung ano ang gagawin ko",
+  "lostWalletCheckupTitle": "Pagsusuri ng wallet",
+  "lostWalletCheckupBody": "Maghanda na ngayon para walang makalimutan kapag nawala ito.",
+  "lostWalletCheckupAllGood": "Handa na ang lahat. Kung mawala ito balang araw, handa ka.",
+  "lostWalletSetPlaceBody": "Buksan ang isang card o dokumento at piliin kung saan mo ito itinatago. Gawin ito para sa ID, lisensya, at mga card mo.",
+  "lostWalletIssuePhotos": "{count, plural, other{Walang larawan: {count}. Mas mabilis palitan kapag may larawan.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Mga card na walang numero para i-block: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasaporte o permit na dala mo: {count}. Iwan sa bahay maliban kung bibiyahe ka.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ang dala mo",
+  "lostWalletNoPhoto": "Walang larawan",
+  "lostWalletHasPhoto": "Na-save ang larawan",
+  "lostWalletNoLineShort": "Walang numero para i-block",
+  "lostWalletHistory": "Mga nakaraang pagkakataon",
+  "lostWalletFound": "Nahanap",
+  "walletCheckToggle": "Paalalahanan ako bawat 6 na buwan",
+  "walletCheckToggleBody": "Mabilis na tingin sa dala mo para manatiling tama ang listahan.",
+  "walletCheckReminderTitle": "Pagsusuri ng wallet",
+  "walletCheckReminderBody": "May nagbago ba sa wallet mo? Maglaan ng isang minuto para i-update ang Vaultara.",
+  "lostWalletBlockNow": "I-block ang mga ito ngayon",
+  "lostWalletBlockNowHint": "Tawagan ang bawat bangko o gamitin ang app nila. Mahalaga ang bawat minuto.",
+  "lostWalletCall": "Tumawag",
+  "lostWalletAddLine": "Idagdag ang numero",
+  "lostWalletNoLine": "Walang naka-save na numero. Hanapin ito sa app o website ng bangko mo.",
+  "lostWalletBlocked": "Naka-block",
+  "lostWalletReplace": "Palitan ang mga ito",
+  "lostWalletReplaceHint": "Mag-apply ng bago at i-save ang bagong petsa kapag dumating.",
+  "lostWalletArrived": "Dumating na ang bago",
+  "lostWalletCheck": "Suriin ang mga ito",
+  "lostWalletCheckHint": "Itanong kung kailangan mo ng bagong card o numero.",
+  "lostWalletPlanEmptyTitle": "Walang naka-save na nakatago doon",
+  "lostWalletPlanEmpty": "Nakakatulong pa rin ang mga hakbang sa ibaba. Sa susunod, piliin kung saan mo itinatago ang mga card at dokumento.",
+  "lostWalletCaseTitle": "Numero ng kaso sa pulis",
+  "lostWalletCaseHint": "Madalas itong hingin ng mga bangko, insurer, at opisina.",
+  "lostWalletCaseLabel": "Numero ng kaso o reference",
+  "lostWalletCaseSaved": "Na-save ang numero ng kaso",
+  "lostWalletAbroadTitle": "Nasa ibang bansa ka ngayon?",
+  "lostWalletAbroadBody": "Nasa biyaheng {trip} ka. Kung nasa loob ang pasaporte o ID mo, makipag-ugnayan sa embahada o konsulado para sa emergency travel document at sabihan ang travel insurance mo.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Buksan ang biyahe",
+  "lostWalletPhoneTitle": "Kinuha rin ba ang telepono mo?",
+  "lostWalletPhoneBody": "I-block muna ang SIM card at mga banking app. May plano para diyan.",
+  "lostWalletPhoneButton": "Simulan ang plano para sa nawalang telepono",
+  "lostWalletStatementNote": "Ipapaalala ng Vaultara pagkalipas ng 30, 60 at 90 araw.",
+  "lostWalletStatementTitle": "Suriin ang bank statement mo",
+  "lostWalletStatementBody": "Hanapin ang mga bayad na hindi mo ginawa mula nang mawala ang wallet mo.",
+  "lostWalletFoundButton": "Nahanap ko na",
+  "lostWalletFoundTitle": "Magandang balita!",
+  "lostWalletFoundBody": "Naka-block na ang mga card na ito, kaya abangan ang mga bago:",
+  "lostWalletFoundNone": "Wala pang naka-block, puwede kang magpatuloy gaya ng dati.",
+  "lostWalletFoundUnfreeze": "Kung nag-freeze ka ng card sa banking app, i-unfreeze ang mga hindi mo na-block.",
+  "lostWalletFoundConfirm": "Isara ang plano",
+  "lostWalletFoundOn": "Nahanap noong {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Ulat ng mga nawalang gamit",
+  "lostWalletReportTitle": "Ulat ng mga nawalang gamit",
+  "lostWalletReportWhen": "Petsa: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ang nawawala: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Numero ng kaso: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Numero ng kaso: hindi pa nai-report",
+  "lostWalletReportCount": "{count, plural, other{Mga item sa ibaba: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

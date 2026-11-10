@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Yeni evə köçürsünüz? Başqa nəyi yeniləməli olduğunuza baxın."
+  "lifePlanSuggestMove": "Yeni evə köçürsünüz? Başqa nəyi yeniləməli olduğunuza baxın.",
+  "keptInTitle": "Harada saxlayıram",
+  "keptInSubtitle": "İtsə, nəyi bloklayıb nəyi yeniləyəcəyini bilmək üçün",
+  "keptInWallet": "Pul kisəsi",
+  "keptInBag": "Çanta",
+  "keptInPhoneCase": "Telefon qabı",
+  "keptInTravelPouch": "Səyahət kisəsi",
+  "keptInCar": "Avtomobil",
+  "keptInHome": "Evdə",
+  "keptInNone": "Seçilməyib",
+  "lostLineLabel": "İtmiş kartın nömrəsi",
+  "lostLineHelper": "İndi saxlayın. Nömrə kartın üzərində yazılıb, ona görə lazım olanda yanınızda olmayacaq.",
+  "lifeEventWalletLost": "Pul kisəmi itirdim",
+  "lifeEventWalletLostBody": "Əvvəlcə kartlarınızı bloklayın, sonra sənədlərinizi bir-bir yeniləyin.",
+  "lifeEventWalletStolen": "Pul kisəm oğurlandı",
+  "lifeEventWalletStolenBody": "Kartlarınızı dərhal bloklayın və oğurluğu bildirin. Sonra hesablarınızı fırıldaqçılığa qarşı izləyin.",
+  "lifeVariantWalletQuestion": "İtib, yoxsa oğurlanıb?",
+  "lifeVariantLost": "İtib",
+  "lifeVariantStolen": "Oğurlanıb",
+  "lifeTaskWalletFreezeCards": "Bank tətbiqində imkan varsa, kartları dondurun",
+  "lifeTaskWalletRetrace": "Son olduğunuz yerlərə zəng edin və itmiş əşyalar barədə soruşun",
+  "lifeTaskWalletFraudAlert": "Kredit bürolarından və ya ölkənizin fırıldaqçılıqla mübarizə xidmətindən şəxsiyyət sənədinizi qeyd etmələrini xahiş edin",
+  "lifeTaskWalletStatements": "Bank çıxarışlarında etmədiyiniz ödənişləri yoxlayın",
+  "lifeTaskWalletSubscriptions": "Yeni kartı abunəliklərə və avtomatik ödənişlərə qoşun",
+  "lifeTaskWalletPayApps": "Yeni kartları Google Pay və ya Apple Pay-ə əlavə edin",
+  "lifeTaskWalletHealthCard": "Tibbi sığortanızdan yeni üzv kartı istəyin",
+  "lifeTaskWalletTransport": "Nəqliyyat və ya yol ödənişi kartını bloklayın və balansı köçürün",
+  "lifeTaskWalletLoyalty": "Ballarınızı saxlamaq üçün yeni loyallıq kartları istəyin",
+  "lifeTaskWalletLocks": "İçində açar və ya ünvanınız var idisə, qıfılları dəyişməyi düşünün",
+  "lifeTaskWalletInsurance": "Sığortanızın pul kisəsini və nağd pulu əhatə edib-etmədiyini yoxlayın",
+  "lostWalletHeroTitle": "Pul kisənizi itirdiniz?",
+  "lostWalletHeroBody": "Vaultara əvvəlcə nəyi bloklamağı, nəyi yeniləməyi və kimə xəbər verməyi göstərir.",
+  "lostWalletStartTitle": "Nə baş verdi?",
+  "lostWalletEditTitle": "Məlumatları dəyiş",
+  "lostWalletLostHint": "Düşdü və ya harasa unutdum",
+  "lostWalletStolenHint": "Kimsə götürdü",
+  "lostWalletWhatMissing": "Nə çatışmır?",
+  "lostWalletStartButton": "Nə edəcəyimi göstər",
+  "lostWalletCheckupTitle": "Pul kisəsinin yoxlanışı",
+  "lostWalletCheckupBody": "İndi hazırlaşın ki, itsə heç nə unudulmasın.",
+  "lostWalletCheckupAllGood": "Hər şey hazırdır. Nə vaxtsa itsə, hazırsınız.",
+  "lostWalletSetPlaceBody": "Bir kart və ya sənəd açın və harada saxladığınızı seçin. Bunu şəxsiyyət vəsiqəsi, sürücülük vəsiqəsi və kartlar üçün edin.",
+  "lostWalletIssuePhotos": "{count, plural, other{Şəkilsiz: {count}. Şəkil olanda yeniləmək daha tez olur.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Bloklama nömrəsi olmayan kartlar: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Yanınızdakı pasport və ya icazələr: {count}. Səyahət etmirsinizsə, evdə saxlayın.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Yanınızda gəzdirdikləriniz",
+  "lostWalletNoPhoto": "Şəkil yoxdur",
+  "lostWalletHasPhoto": "Şəkil saxlanıldı",
+  "lostWalletNoLineShort": "Bloklama nömrəsi yoxdur",
+  "lostWalletHistory": "Əvvəlki hallar",
+  "lostWalletFound": "Tapıldı",
+  "walletCheckToggle": "Hər 6 aydan bir xatırlat",
+  "walletCheckToggleBody": "Siyahı düzgün qalsın deyə yanınızdakılara qısa baxış.",
+  "walletCheckReminderTitle": "Pul kisəsinin yoxlanışı",
+  "walletCheckReminderBody": "Pul kisənizdə nəsə dəyişib? Vaultara-nı yeniləmək üçün bir dəqiqə ayırın.",
+  "lostWalletBlockNow": "Bunları indi bloklayın",
+  "lostWalletBlockNowHint": "Hər banka zəng edin və ya tətbiqindən istifadə edin. Hər dəqiqə önəmlidir.",
+  "lostWalletCall": "Zəng et",
+  "lostWalletAddLine": "Nömrə əlavə et",
+  "lostWalletNoLine": "Nömrə saxlanılmayıb. Onu bankın tətbiqində və ya saytında tapın.",
+  "lostWalletBlocked": "Bloklandı",
+  "lostWalletReplace": "Bunları yeniləyin",
+  "lostWalletReplaceHint": "Yeniləri üçün müraciət edin və gələndə yeni tarixi saxlayın.",
+  "lostWalletArrived": "Yenisi gəldi",
+  "lostWalletCheck": "Bunları yoxlayın",
+  "lostWalletCheckHint": "Yeni kart və ya nömrə lazım olub-olmadığını soruşun.",
+  "lostWalletPlanEmptyTitle": "Orada saxlanılmış heç nə yox idi",
+  "lostWalletPlanEmpty": "Aşağıdakı addımlar yenə də kömək edir. Növbəti dəfə kart və sənədlərinizi harada saxladığınızı seçin.",
+  "lostWalletCaseTitle": "Polis iş nömrəsi",
+  "lostWalletCaseHint": "Banklar, sığorta şirkətləri və idarələr tez-tez soruşur.",
+  "lostWalletCaseLabel": "İş və ya istinad nömrəsi",
+  "lostWalletCaseSaved": "İş nömrəsi saxlanıldı",
+  "lostWalletAbroadTitle": "İndi xaricdəsiniz?",
+  "lostWalletAbroadBody": "{trip} səyahətindəsiniz. İçində pasport və ya şəxsiyyət vəsiqəniz var idisə, təcili səyahət sənədi üçün səfirlik və ya konsulluqla əlaqə saxlayın və səyahət sığortanıza bildirin.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Səyahəti aç",
+  "lostWalletPhoneTitle": "Telefonunuz da götürüldü?",
+  "lostWalletPhoneBody": "Əvvəlcə SIM kartı və bank tətbiqlərini bloklayın. Bunun üçün plan var.",
+  "lostWalletPhoneButton": "İtmiş telefon planını başlat",
+  "lostWalletStatementNote": "Vaultara 30, 60 və 90 gündən sonra xatırladacaq.",
+  "lostWalletStatementTitle": "Bank çıxarışlarını yoxlayın",
+  "lostWalletStatementBody": "Pul kisəsi itəndən bəri etmədiyiniz ödənişləri axtarın.",
+  "lostWalletFoundButton": "Tapdım",
+  "lostWalletFoundTitle": "Xoş xəbər!",
+  "lostWalletFoundBody": "Bu kartlar artıq bloklanıb, ona görə yenilərini gözləyin:",
+  "lostWalletFoundNone": "Hələ heç nə bloklanmayıb, əvvəlki kimi davam edə bilərsiniz.",
+  "lostWalletFoundUnfreeze": "Bank tətbiqində kartları dondurmusunuzsa, bloklamadıqlarınızı açın.",
+  "lostWalletFoundConfirm": "Planı bağla",
+  "lostWalletFoundOn": "{date} tarixində tapıldı",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "İtmiş əşyalar hesabatı",
+  "lostWalletReportTitle": "İtmiş əşyalar hesabatı",
+  "lostWalletReportWhen": "Tarix: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Nə çatışmır: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "İş nömrəsi: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "İş nömrəsi: hələ bildirilməyib",
+  "lostWalletReportCount": "{count, plural, other{Aşağıdakı elementlər: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

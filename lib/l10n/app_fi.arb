@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Muutatko uuteen kotiin? Katso, mitä muuta pitää päivittää."
+  "lifePlanSuggestMove": "Muutatko uuteen kotiin? Katso, mitä muuta pitää päivittää.",
+  "keptInTitle": "Missä säilytän sitä",
+  "keptInSubtitle": "Jotta tiedät, mitä estää ja korvata, jos se katoaa",
+  "keptInWallet": "Lompakko",
+  "keptInBag": "Laukku",
+  "keptInPhoneCase": "Puhelimen kuori",
+  "keptInTravelPouch": "Matkapussi",
+  "keptInCar": "Auto",
+  "keptInHome": "Kotona",
+  "keptInNone": "Ei valittu",
+  "lostLineLabel": "Kadonneen kortin sulkunumero",
+  "lostLineHelper": "Tallenna se nyt. Numero on kortissa, joten se on poissa, kun tarvitset sitä.",
+  "lifeEventWalletLost": "Kadotin lompakkoni",
+  "lifeEventWalletLostBody": "Sulje ensin korttisi ja korvaa sitten asiakirjat yksi kerrallaan.",
+  "lifeEventWalletStolen": "Lompakkoni varastettiin",
+  "lifeEventWalletStolenBody": "Sulje korttisi heti ja tee rikosilmoitus. Seuraa sitten tilejäsi petosten varalta.",
+  "lifeVariantWalletQuestion": "Kadonnut vai varastettu?",
+  "lifeVariantLost": "Kadonnut",
+  "lifeVariantStolen": "Varastettu",
+  "lifeTaskWalletFreezeCards": "Jäädytä korttisi pankkisovelluksessa, jos se onnistuu",
+  "lifeTaskWalletRetrace": "Soita viimeisiin paikkoihin, joissa kävit, ja kysy löytötavaroista",
+  "lifeTaskWalletFraudAlert": "Pyydä luottotietoyhtiöitä tai maasi petospalvelua merkitsemään henkilöllisyystodistuksesi",
+  "lifeTaskWalletStatements": "Tarkista tiliotteistasi maksut, joita et ole tehnyt",
+  "lifeTaskWalletSubscriptions": "Vaihda uusi kortti tilauksiin ja suoraveloituksiin",
+  "lifeTaskWalletPayApps": "Lisää uudet kortit Google Payhin tai Apple Payhin",
+  "lifeTaskWalletHealthCard": "Pyydä sairausvakuutusyhtiöltäsi uusi jäsenkortti",
+  "lifeTaskWalletTransport": "Sulje matka- tai tietullikorttisi ja siirrä saldo",
+  "lifeTaskWalletLoyalty": "Pyydä uudet kanta-asiakaskortit, jotta pisteesi säilyvät",
+  "lifeTaskWalletLocks": "Jos siinä oli avaimia tai osoitteesi, harkitse lukkojen vaihtamista",
+  "lifeTaskWalletInsurance": "Tarkista, korvaako vakuutuksesi lompakon ja käteisen",
+  "lostWalletHeroTitle": "Kadotitko lompakkosi?",
+  "lostWalletHeroBody": "Vaultara näyttää, mitä estää ensin, mitä korvata ja kenelle kertoa.",
+  "lostWalletStartTitle": "Mitä tapahtui?",
+  "lostWalletEditTitle": "Muuta tietoja",
+  "lostWalletLostHint": "Pudonnut tai unohtunut jonnekin",
+  "lostWalletStolenHint": "Joku vei sen",
+  "lostWalletWhatMissing": "Mitä puuttuu?",
+  "lostWalletStartButton": "Näytä, mitä teen",
+  "lostWalletCheckupTitle": "Lompakon tarkistus",
+  "lostWalletCheckupBody": "Valmistaudu nyt, ettei mitään unohdu, jos se katoaa.",
+  "lostWalletCheckupAllGood": "Kaikki valmista. Jos se joskus katoaa, olet valmis.",
+  "lostWalletSetPlaceBody": "Avaa kortti tai asiakirja ja valitse, missä säilytät sitä. Tee näin henkilökortille, ajokortille ja korteille.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.} other{{count} kohteelta puuttuu kuva. Kuvien avulla korvaaminen käy nopeammin.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 kortilta puuttuu tallennettu sulkunumero.} other{{count} kortilta puuttuu tallennettu sulkunumero.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Kannat mukanasi passia tai lupaa. Jätä se kotiin, ellet matkusta.} other{Kannat mukanasi {count} passia tai lupaa. Jätä ne kotiin, ellet matkusta.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Mitä kannat mukanasi",
+  "lostWalletNoPhoto": "Ei kuvaa",
+  "lostWalletHasPhoto": "Kuva tallennettu",
+  "lostWalletNoLineShort": "Ei sulkunumeroa",
+  "lostWalletHistory": "Aiemmat kerrat",
+  "lostWalletFound": "Löytynyt",
+  "walletCheckToggle": "Muistuta 6 kuukauden välein",
+  "walletCheckToggleBody": "Nopea vilkaisu siihen, mitä kannat, jotta lista pysyy oikeana.",
+  "walletCheckReminderTitle": "Lompakon tarkistus",
+  "walletCheckReminderBody": "Onko lompakossasi muuttunut jotain? Päivitä Vaultara minuutissa.",
+  "lostWalletBlockNow": "Sulje nämä nyt",
+  "lostWalletBlockNowHint": "Soita jokaiseen pankkiin tai käytä sen sovellusta. Jokainen minuutti on tärkeä.",
+  "lostWalletCall": "Soita",
+  "lostWalletAddLine": "Lisää numero",
+  "lostWalletNoLine": "Numeroa ei ole tallennettu. Löydät sulkunumeron pankkisi sovelluksesta tai verkkosivuilta.",
+  "lostWalletBlocked": "Suljettu",
+  "lostWalletReplace": "Korvaa nämä",
+  "lostWalletReplaceHint": "Hae uudet ja tallenna uusi päivämäärä, kun ne saapuvat.",
+  "lostWalletArrived": "Uusi saapui",
+  "lostWalletCheck": "Tarkista nämä",
+  "lostWalletCheckHint": "Kysy, tarvitsetko uuden kortin tai numeron.",
+  "lostWalletPlanEmptyTitle": "Siellä ei ollut mitään tallennettua",
+  "lostWalletPlanEmpty": "Alla olevat vaiheet auttavat silti. Valitse ensi kerralla, missä säilytät korttejasi ja asiakirjojasi.",
+  "lostWalletCaseTitle": "Poliisin ilmoitusnumero",
+  "lostWalletCaseHint": "Pankit, vakuutusyhtiöt ja virastot kysyvät sitä usein.",
+  "lostWalletCaseLabel": "Ilmoitus- tai viitenumero",
+  "lostWalletCaseSaved": "Ilmoitusnumero tallennettu",
+  "lostWalletAbroadTitle": "Ulkomailla juuri nyt?",
+  "lostWalletAbroadBody": "Olet matkalla {trip}. Jos passisi tai henkilökorttisi oli siinä, ota yhteyttä suurlähetystöön tai konsulaattiin hätämatkustusasiakirjaa varten ja ilmoita matkavakuutukseesi.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Avaa matka",
+  "lostWalletPhoneTitle": "Vietiinkö myös puhelimesi?",
+  "lostWalletPhoneBody": "Sulje ensin SIM-kortti ja pankkisovelluksesi. Siihen on oma suunnitelma.",
+  "lostWalletPhoneButton": "Aloita kadonneen puhelimen suunnitelma",
+  "lostWalletStatementNote": "Vaultara muistuttaa sinua 30, 60 ja 90 päivän kuluttua.",
+  "lostWalletStatementTitle": "Tarkista tiliotteesi",
+  "lostWalletStatementBody": "Etsi maksuja, joita et ole tehnyt lompakon katoamisen jälkeen.",
+  "lostWalletFoundButton": "Löysin sen",
+  "lostWalletFoundTitle": "Hyviä uutisia!",
+  "lostWalletFoundBody": "Nämä kortit on jo suljettu, joten pidä silmällä uusia:",
+  "lostWalletFoundNone": "Mitään ei ole vielä suljettu, joten voit jatkaa kuten ennen.",
+  "lostWalletFoundUnfreeze": "Jos jäädytit kortteja pankkisovelluksessa, poista jäädytys niistä, joita et sulkenut.",
+  "lostWalletFoundConfirm": "Sulje suunnitelma",
+  "lostWalletFoundOn": "Löytyi {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Kadonneiden tavaroiden raportti",
+  "lostWalletReportTitle": "Kadonneiden tavaroiden raportti",
+  "lostWalletReportWhen": "Päivämäärä: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Mitä puuttuu: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Ilmoitusnumero: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Ilmoitusnumero: ei vielä ilmoitettu",
+  "lostWalletReportCount": "{count, plural, =1{1 kohde alla} other{{count} kohdetta alla}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

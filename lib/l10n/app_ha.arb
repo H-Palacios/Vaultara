@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Kana ƙaura zuwa sabon gida? Duba abin da kake buƙatar sabuntawa."
+  "lifePlanSuggestMove": "Kana ƙaura zuwa sabon gida? Duba abin da kake buƙatar sabuntawa.",
+  "keptInTitle": "Inda nake ajiye shi",
+  "keptInSubtitle": "Don ka san abin da za ka toshe da maye gurbinsa idan ya ɓace",
+  "keptInWallet": "Walat",
+  "keptInBag": "Jaka",
+  "keptInPhoneCase": "Murfin waya",
+  "keptInTravelPouch": "Jakar tafiya",
+  "keptInCar": "Mota",
+  "keptInHome": "A gida",
+  "keptInNone": "Ba a zaɓa ba",
+  "lostLineLabel": "Lambar katin da ya ɓace",
+  "lostLineHelper": "Ajiye ta yanzu. Lambar tana kan katin, don haka ba za ka same ta ba lokacin da kake bukata.",
+  "lifeEventWalletLost": "Walat ɗina ya ɓace",
+  "lifeEventWalletLostBody": "Ka toshe katunanka da farko, sannan ka maye gurbin takardunka ɗaya bayan ɗaya.",
+  "lifeEventWalletStolen": "An sace walat ɗina",
+  "lifeEventWalletStolenBody": "Ka toshe katunanka nan take kuma ka kai rahoton satar. Sannan ka sa ido kan asusunka don zamba.",
+  "lifeVariantWalletQuestion": "Ya ɓace ko an sace shi?",
+  "lifeVariantLost": "Ya ɓace",
+  "lifeVariantStolen": "An sace shi",
+  "lifeTaskWalletFreezeCards": "Ka daskarar da katunanka a manhajar bankinka idan tana da wannan zaɓi",
+  "lifeTaskWalletRetrace": "Ka kira wuraren ƙarshe da ka je kuma ka tambayi kayan da suka ɓace",
+  "lifeTaskWalletFraudAlert": "Ka roƙi ofisoshin bashi ko sabis na yaƙi da zamba na ƙasarka su yi alama a kan katin shaidarka",
+  "lifeTaskWalletStatements": "Ka duba bayanan bankinka don biyan da ba kai ka yi ba",
+  "lifeTaskWalletSubscriptions": "Ka sa sabon katin a kan biyan kuɗin wata-wata da cire kuɗi na kai-tsaye",
+  "lifeTaskWalletPayApps": "Ka ƙara sabbin katunan zuwa Google Pay ko Apple Pay",
+  "lifeTaskWalletHealthCard": "Ka roƙi inshorar lafiyarka sabon katin mamba",
+  "lifeTaskWalletTransport": "Ka toshe katin sufuri ko na kuɗin hanya ka matsar da sauran kuɗin",
+  "lifeTaskWalletLoyalty": "Ka nemi sabbin katunan aminci don ka riƙe makinka",
+  "lifeTaskWalletLocks": "Idan akwai makullai ko adireshinka a ciki, ka yi tunanin canza makullai",
+  "lifeTaskWalletInsurance": "Ka duba ko inshorarka tana rufe walat da kuɗin hannu",
+  "lostWalletHeroTitle": "Walat ɗinka ya ɓace?",
+  "lostWalletHeroBody": "Vaultara tana nuna abin da za ka toshe da farko, abin da za ka maye gurbinsa da wanda za ka sanar.",
+  "lostWalletStartTitle": "Me ya faru?",
+  "lostWalletEditTitle": "Canza bayanai",
+  "lostWalletLostHint": "Ya faɗi ko na manta shi a wani wuri",
+  "lostWalletStolenHint": "Wani ya ɗauke shi",
+  "lostWalletWhatMissing": "Me ya ɓace?",
+  "lostWalletStartButton": "Nuna min abin da zan yi",
+  "lostWalletCheckupTitle": "Duba walat",
+  "lostWalletCheckupBody": "Ka shirya yanzu, don kada a manta komai idan ya ɓace.",
+  "lostWalletCheckupAllGood": "Komai ya shirya. Idan ya taɓa ɓacewa, kana a shirye.",
+  "lostWalletSetPlaceBody": "Buɗe kati ko takarda ka zaɓi inda kake ajiye shi. Ka yi haka don katin shaida, lasisin tuƙi da katunanka.",
+  "lostWalletIssuePhotos": "{count, plural, other{Babu hoto: {count}. Da hoto, maye gurbin yana da sauri.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Katunan da babu lambar katin da ya ɓace: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Fasfo ko izini da kake ɗauke da su: {count}. Ka bar su a gida sai dai idan kana tafiya.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Abin da kake ɗauke da shi",
+  "lostWalletNoPhoto": "Babu hoto",
+  "lostWalletHasPhoto": "An ajiye hoto",
+  "lostWalletNoLineShort": "Babu lambar katin da ya ɓace",
+  "lostWalletHistory": "Lokutan baya",
+  "lostWalletFound": "An same shi",
+  "walletCheckToggle": "Tunatar da ni kowane wata 6",
+  "walletCheckToggleBody": "Saurin duba abin da kake ɗauke da shi, don jerin ya kasance daidai.",
+  "walletCheckReminderTitle": "Duba walat",
+  "walletCheckReminderBody": "Akwai abin da ya canza a walat ɗinka? Ka ɗauki minti ɗaya ka sabunta Vaultara.",
+  "lostWalletBlockNow": "Toshe waɗannan yanzu",
+  "lostWalletBlockNowHint": "Ka kira kowane banki ko ka yi amfani da manhajarsa. Kowane minti yana da muhimmanci.",
+  "lostWalletCall": "Kira",
+  "lostWalletAddLine": "Ƙara lambar",
+  "lostWalletNoLine": "Babu lambar da aka ajiye. Nemo ta a manhaja ko shafin yanar gizo na bankinka.",
+  "lostWalletBlocked": "An toshe",
+  "lostWalletReplace": "Maye gurbin waɗannan",
+  "lostWalletReplaceHint": "Nemi sababbi ka ajiye sabuwar ranar idan sun iso.",
+  "lostWalletArrived": "Sabon ya iso",
+  "lostWalletCheck": "Duba waɗannan",
+  "lostWalletCheckHint": "Tambayi ko kana bukatar sabon kati ko lamba.",
+  "lostWalletPlanEmptyTitle": "Babu abin da aka ajiye a wurin",
+  "lostWalletPlanEmpty": "Matakan da ke ƙasa har yanzu suna taimakawa. Lokaci na gaba, zaɓi inda kake ajiye katunanka da takardunka.",
+  "lostWalletCaseTitle": "Lambar ƙara ta 'yan sanda",
+  "lostWalletCaseHint": "Bankuna, kamfanonin inshora da ofisoshi sukan nema.",
+  "lostWalletCaseLabel": "Lambar ƙara ko ta nuni",
+  "lostWalletCaseSaved": "An ajiye lambar ƙara",
+  "lostWalletAbroadTitle": "Kana ƙasar waje yanzu?",
+  "lostWalletAbroadBody": "Kana kan tafiyar {trip}. Idan fasfo ko katin shaidarka yana ciki, tuntuɓi ofishin jakadanci ko na karamin jakadanci don takardar tafiya ta gaggawa kuma ka sanar da inshorar tafiyarka.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Buɗe tafiya",
+  "lostWalletPhoneTitle": "An ɗauki wayarka ma?",
+  "lostWalletPhoneBody": "Ka toshe katin SIM da manhajojin banki da farko. Akwai shiri don haka.",
+  "lostWalletPhoneButton": "Fara shirin waya da ta ɓace",
+  "lostWalletStatementNote": "Vaultara za ta tunatar da kai bayan kwanaki 30, 60 da 90.",
+  "lostWalletStatementTitle": "Duba bayanan bankinka",
+  "lostWalletStatementBody": "Nemi biyan da ba kai ka yi ba tun lokacin da walat ɗinka ya ɓace.",
+  "lostWalletFoundButton": "Na same shi",
+  "lostWalletFoundTitle": "Labari mai daɗi!",
+  "lostWalletFoundBody": "An riga an toshe waɗannan katunan, don haka ka jira sababbi:",
+  "lostWalletFoundNone": "Ba a toshe komai ba tukuna, za ka iya ci gaba kamar da.",
+  "lostWalletFoundUnfreeze": "Idan ka daskarar da katuna a manhajar banki, ka buɗe waɗanda ba ka toshe ba.",
+  "lostWalletFoundConfirm": "Rufe shirin",
+  "lostWalletFoundOn": "An same shi a {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rahoton kayan da suka ɓace",
+  "lostWalletReportTitle": "Rahoton kayan da suka ɓace",
+  "lostWalletReportWhen": "Kwanan wata: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Abin da ya ɓace: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Lambar ƙara: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Lambar ƙara: ba a kai rahoto ba tukuna",
+  "lostWalletReportCount": "{count, plural, other{Abubuwan da ke ƙasa: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

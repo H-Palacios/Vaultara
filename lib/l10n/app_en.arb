@@ -8588,5 +8588,426 @@
   "lifePlanSuggestMove": "Moving to a new home? See what else to update.",
   "@lifePlanSuggestMove": {
     "description": "Offer to start a moving plan after a new lease or home cover is saved."
+  },
+  "keptInTitle": "Where I keep it",
+  "@keptInTitle": {
+    "description": "Title of the field for where a card or document is kept."
+  },
+  "keptInSubtitle": "So you know what to block and replace if it goes missing",
+  "@keptInSubtitle": {
+    "description": "Explains the where I keep it field."
+  },
+  "keptInWallet": "Wallet",
+  "@keptInWallet": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInBag": "Bag",
+  "@keptInBag": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInPhoneCase": "Phone case",
+  "@keptInPhoneCase": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInTravelPouch": "Travel pouch",
+  "@keptInTravelPouch": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInCar": "Car",
+  "@keptInCar": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInHome": "At home",
+  "@keptInHome": {
+    "description": "A place where the user keeps a card or document."
+  },
+  "keptInNone": "Not set",
+  "@keptInNone": {
+    "description": "No place chosen for where a card is kept."
+  },
+  "lostLineLabel": "Lost card phone number",
+  "@lostLineLabel": {
+    "description": "Field for the bank's number to block a lost card."
+  },
+  "lostLineHelper": "Save it now. The number is printed on the card, so it is gone when you need it.",
+  "@lostLineHelper": {
+    "description": "Helper under the lost card phone number field."
+  },
+  "lifeEventWalletLost": "I lost my wallet",
+  "@lifeEventWalletLost": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventWalletLostBody": "Block your cards first, then replace your documents one by one.",
+  "@lifeEventWalletLostBody": {
+    "description": "Short explanation shown in a lost wallet plan."
+  },
+  "lifeEventWalletStolen": "My wallet was stolen",
+  "@lifeEventWalletStolen": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventWalletStolenBody": "Block your cards right away and report the theft. Then watch your accounts for fraud.",
+  "@lifeEventWalletStolenBody": {
+    "description": "Short explanation shown in a lost wallet plan."
+  },
+  "lifeVariantWalletQuestion": "Was it lost or stolen?",
+  "@lifeVariantWalletQuestion": {
+    "description": "Question in the lost wallet plan."
+  },
+  "lifeVariantLost": "Lost",
+  "@lifeVariantLost": {
+    "description": "Answer: the wallet was lost."
+  },
+  "lifeVariantStolen": "Stolen",
+  "@lifeVariantStolen": {
+    "description": "Answer: the wallet was stolen."
+  },
+  "lifeTaskWalletFreezeCards": "Freeze your cards in your banking app if it has a freeze switch",
+  "@lifeTaskWalletFreezeCards": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletRetrace": "Call the last places you were and ask at lost property",
+  "@lifeTaskWalletRetrace": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletFraudAlert": "Ask the credit bureaus or your country's fraud service to flag your ID",
+  "@lifeTaskWalletFraudAlert": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletStatements": "Check your bank statements for payments you did not make",
+  "@lifeTaskWalletStatements": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletSubscriptions": "Put the new card on your subscriptions and debit orders",
+  "@lifeTaskWalletSubscriptions": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletPayApps": "Add the new cards to Google Pay or Apple Pay",
+  "@lifeTaskWalletPayApps": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletHealthCard": "Ask your medical aid or health insurer for a new member card",
+  "@lifeTaskWalletHealthCard": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletTransport": "Block your transport or toll card and move the balance",
+  "@lifeTaskWalletTransport": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletLoyalty": "Ask for new loyalty cards so you keep your points",
+  "@lifeTaskWalletLoyalty": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletLocks": "If keys or your address were in it, think about changing the locks",
+  "@lifeTaskWalletLocks": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletInsurance": "Check whether your insurance covers the wallet and cash",
+  "@lifeTaskWalletInsurance": {
+    "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lostWalletHeroTitle": "Lost your wallet?",
+  "@lostWalletHeroTitle": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletHeroBody": "Vaultara shows what to block first, what to replace and who to tell.",
+  "@lostWalletHeroBody": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletStartTitle": "What happened?",
+  "@lostWalletStartTitle": {
+    "description": "Title of the sheet that starts a lost wallet plan."
+  },
+  "lostWalletEditTitle": "Change the details",
+  "@lostWalletEditTitle": {
+    "description": "Title of the sheet that edits a lost wallet plan."
+  },
+  "lostWalletLostHint": "Dropped or left somewhere",
+  "@lostWalletLostHint": {
+    "description": "Under the Lost choice."
+  },
+  "lostWalletStolenHint": "Someone took it",
+  "@lostWalletStolenHint": {
+    "description": "Under the Stolen choice."
+  },
+  "lostWalletWhatMissing": "What went missing?",
+  "@lostWalletWhatMissing": {
+    "description": "Question above the places that were lost."
+  },
+  "lostWalletStartButton": "Show me what to do",
+  "@lostWalletStartButton": {
+    "description": "Button that starts a lost wallet plan."
+  },
+  "lostWalletCheckupTitle": "Wallet check-up",
+  "@lostWalletCheckupTitle": {
+    "description": "Section heading."
+  },
+  "lostWalletCheckupBody": "Get ready now, so nothing is forgotten if it goes missing.",
+  "@lostWalletCheckupBody": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletCheckupAllGood": "All set. If it ever goes missing, you are ready.",
+  "@lostWalletCheckupAllGood": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletSetPlaceBody": "Open a card or document and choose where you keep it. Do this for your ID, licence and cards.",
+  "@lostWalletSetPlaceBody": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletIssuePhotos": "{count, plural, =1{1 item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}",
+  "@lostWalletIssuePhotos": {
+    "description": "On the Lost my wallet screen.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 card has no lost card number saved.} other{{count} cards have no lost card number saved.}}",
+  "@lostWalletIssueLines": {
+    "description": "On the Lost my wallet screen.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{You carry a passport or permit. Keep it at home unless you travel.} other{You carry {count} passports or permits. Keep them at home unless you travel.}}",
+  "@lostWalletIssuePassport": {
+    "description": "On the Lost my wallet screen.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "What you carry",
+  "@lostWalletWhatsInside": {
+    "description": "Section heading."
+  },
+  "lostWalletNoPhoto": "No photo",
+  "@lostWalletNoPhoto": {
+    "description": "Tooltip."
+  },
+  "lostWalletHasPhoto": "Photo saved",
+  "@lostWalletHasPhoto": {
+    "description": "Tooltip."
+  },
+  "lostWalletNoLineShort": "No lost card number",
+  "@lostWalletNoLineShort": {
+    "description": "Tooltip."
+  },
+  "lostWalletHistory": "Earlier times",
+  "@lostWalletHistory": {
+    "description": "Section heading for finished lost wallet plans."
+  },
+  "lostWalletFound": "Found",
+  "@lostWalletFound": {
+    "description": "A lost wallet that turned up again."
+  },
+  "walletCheckToggle": "Remind me every 6 months",
+  "@walletCheckToggle": {
+    "description": "Switch for the wallet check-up reminder."
+  },
+  "walletCheckToggleBody": "A quick look at what you carry, so the list stays right.",
+  "@walletCheckToggleBody": {
+    "description": "Under the wallet check-up switch."
+  },
+  "walletCheckReminderTitle": "Wallet check-up",
+  "@walletCheckReminderTitle": {
+    "description": "Notification title."
+  },
+  "walletCheckReminderBody": "Has anything in your wallet changed? Take a minute to update Vaultara.",
+  "@walletCheckReminderBody": {
+    "description": "Notification body."
+  },
+  "lostWalletBlockNow": "Block these now",
+  "@lostWalletBlockNow": {
+    "description": "Section heading in a lost wallet plan."
+  },
+  "lostWalletBlockNowHint": "Call each bank or use its app. Every minute counts.",
+  "@lostWalletBlockNowHint": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletCall": "Call",
+  "@lostWalletCall": {
+    "description": "Button that phones the bank's lost card line."
+  },
+  "lostWalletAddLine": "Add the number",
+  "@lostWalletAddLine": {
+    "description": "Button to add a lost card phone number."
+  },
+  "lostWalletNoLine": "No number saved. Use your bank's app or its website to find the lost card line.",
+  "@lostWalletNoLine": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletBlocked": "Blocked",
+  "@lostWalletBlocked": {
+    "description": "A card the user has blocked."
+  },
+  "lostWalletReplace": "Replace these",
+  "@lostWalletReplace": {
+    "description": "Section heading in a lost wallet plan."
+  },
+  "lostWalletReplaceHint": "Apply for new ones, then save the new date when each one arrives.",
+  "@lostWalletReplaceHint": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletArrived": "New one arrived",
+  "@lostWalletArrived": {
+    "description": "Button when a replacement document arrives."
+  },
+  "lostWalletCheck": "Check these",
+  "@lostWalletCheck": {
+    "description": "Section heading in a lost wallet plan."
+  },
+  "lostWalletCheckHint": "Ask whether you need a new card or number.",
+  "@lostWalletCheckHint": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletPlanEmptyTitle": "Nothing saved was kept there",
+  "@lostWalletPlanEmptyTitle": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletPlanEmpty": "The steps below still help. Next time, choose where you keep your cards and documents.",
+  "@lostWalletPlanEmpty": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletCaseTitle": "Police case number",
+  "@lostWalletCaseTitle": {
+    "description": "Card title in a lost wallet plan."
+  },
+  "lostWalletCaseHint": "Banks, insurers and offices often ask for it.",
+  "@lostWalletCaseHint": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletCaseLabel": "Case or reference number",
+  "@lostWalletCaseLabel": {
+    "description": "Text field label."
+  },
+  "lostWalletCaseSaved": "Case number saved",
+  "@lostWalletCaseSaved": {
+    "description": "Confirmation."
+  },
+  "lostWalletAbroadTitle": "Abroad right now?",
+  "@lostWalletAbroadTitle": {
+    "description": "Card title in a lost wallet plan."
+  },
+  "lostWalletAbroadBody": "You are on {trip}. If your passport or ID was in it, contact your embassy or consulate for an emergency travel document, and tell your travel insurer.",
+  "@lostWalletAbroadBody": {
+    "description": "On the Lost my wallet screen.",
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Open trip",
+  "@lostWalletOpenTrip": {
+    "description": "Button."
+  },
+  "lostWalletPhoneTitle": "Was your phone taken too?",
+  "@lostWalletPhoneTitle": {
+    "description": "Card title in a lost wallet plan."
+  },
+  "lostWalletPhoneBody": "Block the SIM card and your banking apps first. There is a plan for that.",
+  "@lostWalletPhoneBody": {
+    "description": "On the Lost my wallet screen."
+  },
+  "lostWalletPhoneButton": "Start the lost phone plan",
+  "@lostWalletPhoneButton": {
+    "description": "Button."
+  },
+  "lostWalletStatementNote": "Vaultara reminds you after 30, 60 and 90 days.",
+  "@lostWalletStatementNote": {
+    "description": "Note under the statement step."
+  },
+  "lostWalletStatementTitle": "Check your bank statements",
+  "@lostWalletStatementTitle": {
+    "description": "Notification title."
+  },
+  "lostWalletStatementBody": "Look for payments you did not make since your wallet went missing.",
+  "@lostWalletStatementBody": {
+    "description": "Notification body."
+  },
+  "lostWalletFoundButton": "I found it",
+  "@lostWalletFoundButton": {
+    "description": "Button for when the lost wallet turns up."
+  },
+  "lostWalletFoundTitle": "Good news!",
+  "@lostWalletFoundTitle": {
+    "description": "Dialog title when the wallet is found."
+  },
+  "lostWalletFoundBody": "These cards are already blocked, so keep an eye out for the new ones:",
+  "@lostWalletFoundBody": {
+    "description": "Dialog body, followed by a list of cards."
+  },
+  "lostWalletFoundNone": "Nothing was blocked yet, so you can carry on as before.",
+  "@lostWalletFoundNone": {
+    "description": "Dialog body."
+  },
+  "lostWalletFoundUnfreeze": "If you froze cards in your banking app, unfreeze the ones you did not block.",
+  "@lostWalletFoundUnfreeze": {
+    "description": "Dialog note."
+  },
+  "lostWalletFoundConfirm": "Close the plan",
+  "@lostWalletFoundConfirm": {
+    "description": "Dialog button."
+  },
+  "lostWalletFoundOn": "Found on {date}",
+  "@lostWalletFoundOn": {
+    "description": "Shown on a lost wallet plan once it is found.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Lost items report",
+  "@lostWalletReport": {
+    "description": "Menu item that shares a PDF."
+  },
+  "lostWalletReportTitle": "Lost items report",
+  "@lostWalletReportTitle": {
+    "description": "Title of the PDF."
+  },
+  "lostWalletReportWhen": "Date: {date}",
+  "@lostWalletReportWhen": {
+    "description": "Line in the PDF.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "What went missing: {places}",
+  "@lostWalletReportWhat": {
+    "description": "Line in the PDF.",
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Case number: {number}",
+  "@lostWalletReportCase": {
+    "description": "Line in the PDF.",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Case number: not reported yet",
+  "@lostWalletReportNoCase": {
+    "description": "Line in the PDF."
+  },
+  "lostWalletReportCount": "{count, plural, =1{1 item listed below} other{{count} items listed below}}",
+  "@lostWalletReportCount": {
+    "description": "Line in the PDF.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

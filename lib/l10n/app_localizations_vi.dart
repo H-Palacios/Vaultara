@@ -7115,4 +7115,324 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Chuyển đến nhà mới? Xem còn gì cần cập nhật.';
+
+  @override
+  String get keptInTitle => 'Nơi tôi cất nó';
+
+  @override
+  String get keptInSubtitle => 'Để biết cần khóa và làm lại gì nếu bị mất';
+
+  @override
+  String get keptInWallet => 'Ví';
+
+  @override
+  String get keptInBag => 'Túi xách';
+
+  @override
+  String get keptInPhoneCase => 'Ốp điện thoại';
+
+  @override
+  String get keptInTravelPouch => 'Túi du lịch nhỏ';
+
+  @override
+  String get keptInCar => 'Xe hơi';
+
+  @override
+  String get keptInHome => 'Ở nhà';
+
+  @override
+  String get keptInNone => 'Chưa đặt';
+
+  @override
+  String get lostLineLabel => 'Số khóa thẻ khi mất';
+
+  @override
+  String get lostLineHelper => 'Lưu ngay bây giờ. Số in trên thẻ, nên khi cần bạn sẽ không có.';
+
+  @override
+  String get lifeEventWalletLost => 'Tôi làm mất ví';
+
+  @override
+  String get lifeEventWalletLostBody => 'Khóa thẻ trước, rồi làm lại giấy tờ từng cái một.';
+
+  @override
+  String get lifeEventWalletStolen => 'Ví của tôi bị trộm';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Khóa thẻ ngay và trình báo vụ trộm. Sau đó theo dõi tài khoản để phòng gian lận.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Bị mất hay bị trộm?';
+
+  @override
+  String get lifeVariantLost => 'Bị mất';
+
+  @override
+  String get lifeVariantStolen => 'Bị trộm';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Tạm khóa thẻ trong ứng dụng ngân hàng nếu có';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Gọi đến những nơi bạn đến gần nhất và hỏi về đồ thất lạc';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Đề nghị các văn phòng tín dụng hoặc dịch vụ chống gian lận ở nước bạn đánh dấu giấy tờ tùy thân của bạn';
+
+  @override
+  String get lifeTaskWalletStatements => 'Kiểm tra sao kê ngân hàng tìm khoản thanh toán bạn không thực hiện';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Đặt thẻ mới cho các gói đăng ký và lệnh trích nợ tự động';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Thêm thẻ mới vào Google Pay hoặc Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Xin thẻ thành viên mới từ bảo hiểm y tế';
+
+  @override
+  String get lifeTaskWalletTransport => 'Khóa thẻ đi lại hoặc thẻ thu phí đường và chuyển số dư';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Xin thẻ khách hàng thân thiết mới để giữ điểm';
+
+  @override
+  String get lifeTaskWalletLocks => 'Nếu có chìa khóa hoặc địa chỉ của bạn bên trong, hãy cân nhắc thay khóa';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Kiểm tra xem bảo hiểm có chi trả cho ví và tiền mặt không';
+
+  @override
+  String get lostWalletHeroTitle => 'Mất ví?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara cho biết cần khóa gì trước, làm lại gì và báo cho ai.';
+
+  @override
+  String get lostWalletStartTitle => 'Chuyện gì đã xảy ra?';
+
+  @override
+  String get lostWalletEditTitle => 'Thay đổi chi tiết';
+
+  @override
+  String get lostWalletLostHint => 'Rơi hoặc để quên ở đâu đó';
+
+  @override
+  String get lostWalletStolenHint => 'Có người lấy';
+
+  @override
+  String get lostWalletWhatMissing => 'Mất những gì?';
+
+  @override
+  String get lostWalletStartButton => 'Chỉ tôi cần làm gì';
+
+  @override
+  String get lostWalletCheckupTitle => 'Kiểm tra ví';
+
+  @override
+  String get lostWalletCheckupBody => 'Chuẩn bị ngay bây giờ để không quên gì nếu bị mất.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Mọi thứ đã sẵn sàng. Nếu có ngày bị mất, bạn đã chuẩn bị.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất. Làm vậy cho căn cước, bằng lái và các thẻ.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Không có ảnh: $count. Có ảnh thì làm lại nhanh hơn.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Thẻ chưa có số khóa: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hộ chiếu hoặc giấy phép bạn mang theo: $count. Hãy để ở nhà trừ khi đi du lịch.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Những gì bạn mang theo';
+
+  @override
+  String get lostWalletNoPhoto => 'Không có ảnh';
+
+  @override
+  String get lostWalletHasPhoto => 'Đã lưu ảnh';
+
+  @override
+  String get lostWalletNoLineShort => 'Không có số khóa';
+
+  @override
+  String get lostWalletHistory => 'Những lần trước';
+
+  @override
+  String get lostWalletFound => 'Đã tìm thấy';
+
+  @override
+  String get walletCheckToggle => 'Nhắc tôi mỗi 6 tháng';
+
+  @override
+  String get walletCheckToggleBody => 'Xem nhanh những gì bạn mang theo để danh sách luôn đúng.';
+
+  @override
+  String get walletCheckReminderTitle => 'Kiểm tra ví';
+
+  @override
+  String get walletCheckReminderBody => 'Có gì thay đổi trong ví không? Dành một phút cập nhật Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Khóa ngay những thứ này';
+
+  @override
+  String get lostWalletBlockNowHint => 'Gọi từng ngân hàng hoặc dùng ứng dụng của họ. Mỗi phút đều quan trọng.';
+
+  @override
+  String get lostWalletCall => 'Gọi';
+
+  @override
+  String get lostWalletAddLine => 'Thêm số';
+
+  @override
+  String get lostWalletNoLine => 'Chưa lưu số. Tìm trong ứng dụng hoặc trang web ngân hàng.';
+
+  @override
+  String get lostWalletBlocked => 'Đã khóa';
+
+  @override
+  String get lostWalletReplace => 'Làm lại những thứ này';
+
+  @override
+  String get lostWalletReplaceHint => 'Nộp đơn làm mới và lưu ngày mới khi nhận được.';
+
+  @override
+  String get lostWalletArrived => 'Đã nhận cái mới';
+
+  @override
+  String get lostWalletCheck => 'Kiểm tra những thứ này';
+
+  @override
+  String get lostWalletCheckHint => 'Hỏi xem bạn có cần thẻ hoặc số mới không.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Không có gì được lưu ở đó';
+
+  @override
+  String get lostWalletPlanEmpty => 'Các bước bên dưới vẫn hữu ích. Lần sau, hãy chọn nơi bạn cất thẻ và giấy tờ.';
+
+  @override
+  String get lostWalletCaseTitle => 'Số hồ sơ công an';
+
+  @override
+  String get lostWalletCaseHint => 'Ngân hàng, công ty bảo hiểm và cơ quan thường hỏi số này.';
+
+  @override
+  String get lostWalletCaseLabel => 'Số hồ sơ hoặc số tham chiếu';
+
+  @override
+  String get lostWalletCaseSaved => 'Đã lưu số hồ sơ';
+
+  @override
+  String get lostWalletAbroadTitle => 'Đang ở nước ngoài?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Bạn đang trong chuyến đi $trip. Nếu hộ chiếu hoặc giấy tờ tùy thân ở trong đó, hãy liên hệ đại sứ quán hoặc lãnh sự quán để xin giấy thông hành khẩn cấp và báo cho bảo hiểm du lịch.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Mở chuyến đi';
+
+  @override
+  String get lostWalletPhoneTitle => 'Điện thoại của bạn cũng bị lấy?';
+
+  @override
+  String get lostWalletPhoneBody => 'Khóa SIM và các ứng dụng ngân hàng trước. Có kế hoạch cho việc đó.';
+
+  @override
+  String get lostWalletPhoneButton => 'Bắt đầu kế hoạch mất điện thoại';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara sẽ nhắc bạn sau 30, 60 và 90 ngày.';
+
+  @override
+  String get lostWalletStatementTitle => 'Kiểm tra sao kê ngân hàng';
+
+  @override
+  String get lostWalletStatementBody => 'Tìm các khoản thanh toán bạn không thực hiện kể từ khi mất ví.';
+
+  @override
+  String get lostWalletFoundButton => 'Tôi đã tìm thấy';
+
+  @override
+  String get lostWalletFoundTitle => 'Tin vui!';
+
+  @override
+  String get lostWalletFoundBody => 'Những thẻ này đã bị khóa, vì vậy hãy chờ thẻ mới:';
+
+  @override
+  String get lostWalletFoundNone => 'Chưa khóa gì cả, bạn có thể tiếp tục như trước.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Nếu bạn đã tạm khóa thẻ trong ứng dụng ngân hàng, hãy mở lại những thẻ bạn chưa khóa hẳn.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Đóng kế hoạch';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Tìm thấy ngày $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Báo cáo đồ bị mất';
+
+  @override
+  String get lostWalletReportTitle => 'Báo cáo đồ bị mất';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Ngày: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Những gì bị mất: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Số hồ sơ: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Số hồ sơ: chưa trình báo';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mục bên dưới: $count',
+    );
+    return '$_temp0';
+  }
 }

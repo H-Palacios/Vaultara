@@ -2311,5 +2311,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Flytter du til et nyt hjem? Se hvad du ellers skal opdatere."
+  "lifePlanSuggestMove": "Flytter du til et nyt hjem? Se hvad du ellers skal opdatere.",
+  "keptInTitle": "Hvor jeg opbevarer det",
+  "keptInSubtitle": "Så du ved, hvad du skal spærre og erstatte, hvis det bliver væk",
+  "keptInWallet": "Pung",
+  "keptInBag": "Taske",
+  "keptInPhoneCase": "Telefoncover",
+  "keptInTravelPouch": "Rejsetaske",
+  "keptInCar": "Bil",
+  "keptInHome": "Derhjemme",
+  "keptInNone": "Ikke valgt",
+  "lostLineLabel": "Spærretelefon for mistet kort",
+  "lostLineHelper": "Gem det nu. Nummeret står på kortet, så du har det ikke, når du skal bruge det.",
+  "lifeEventWalletLost": "Jeg har mistet min pung",
+  "lifeEventWalletLostBody": "Spær dine kort først, og erstat så dine dokumenter et ad gangen.",
+  "lifeEventWalletStolen": "Min pung er blevet stjålet",
+  "lifeEventWalletStolenBody": "Spær dine kort med det samme, og anmeld tyveriet. Hold derefter øje med svindel på dine konti.",
+  "lifeVariantWalletQuestion": "Mistet eller stjålet?",
+  "lifeVariantLost": "Mistet",
+  "lifeVariantStolen": "Stjålet",
+  "lifeTaskWalletFreezeCards": "Frys dine kort i din bankapp, hvis den kan det",
+  "lifeTaskWalletRetrace": "Ring til de seneste steder, du var, og spørg efter hittegods",
+  "lifeTaskWalletFraudAlert": "Bed kreditbureauerne eller dit lands svindeltjeneste om at markere dit ID",
+  "lifeTaskWalletStatements": "Tjek dine kontoudtog for betalinger, du ikke har lavet",
+  "lifeTaskWalletSubscriptions": "Sæt det nye kort på dine abonnementer og automatiske betalinger",
+  "lifeTaskWalletPayApps": "Tilføj de nye kort til Google Pay eller Apple Pay",
+  "lifeTaskWalletHealthCard": "Bed dit sundhedsforsikringsselskab om et nyt medlemskort",
+  "lifeTaskWalletTransport": "Spær dit rejse- eller vejafgiftskort, og flyt saldoen",
+  "lifeTaskWalletLoyalty": "Bed om nye kundekort, så du beholder dine point",
+  "lifeTaskWalletLocks": "Var der nøgler eller din adresse i, så overvej at skifte låsene",
+  "lifeTaskWalletInsurance": "Tjek, om din forsikring dækker pungen og kontanterne",
+  "lostWalletHeroTitle": "Mistet din pung?",
+  "lostWalletHeroBody": "Vaultara viser, hvad du skal spærre først, hvad du skal erstatte, og hvem du skal give besked.",
+  "lostWalletStartTitle": "Hvad skete der?",
+  "lostWalletEditTitle": "Ret oplysningerne",
+  "lostWalletLostHint": "Tabt eller glemt et sted",
+  "lostWalletStolenHint": "Nogen tog den",
+  "lostWalletWhatMissing": "Hvad mangler?",
+  "lostWalletStartButton": "Vis mig, hvad jeg skal gøre",
+  "lostWalletCheckupTitle": "Pungtjek",
+  "lostWalletCheckupBody": "Gør dig klar nu, så intet bliver glemt, hvis den bliver væk.",
+  "lostWalletCheckupAllGood": "Alt er klar. Hvis den nogensinde bliver væk, er du forberedt.",
+  "lostWalletSetPlaceBody": "Åbn et kort eller dokument, og vælg, hvor du opbevarer det. Gør det for dit ID, kørekort og kort.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 element har intet foto. Med et foto går erstatning hurtigere.} other{{count} elementer har intet foto. Med fotos går erstatning hurtigere.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 kort har intet spærrenummer gemt.} other{{count} kort har intet spærrenummer gemt.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Du har et pas eller en tilladelse på dig. Lad det ligge hjemme, medmindre du rejser.} other{Du har {count} pas eller tilladelser på dig. Lad dem ligge hjemme, medmindre du rejser.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Det, du har på dig",
+  "lostWalletNoPhoto": "Intet foto",
+  "lostWalletHasPhoto": "Foto gemt",
+  "lostWalletNoLineShort": "Intet spærrenummer",
+  "lostWalletHistory": "Tidligere gange",
+  "lostWalletFound": "Fundet",
+  "walletCheckToggle": "Mind mig om det hver 6. måned",
+  "walletCheckToggleBody": "Et hurtigt kig på det, du har på dig, så listen passer.",
+  "walletCheckReminderTitle": "Pungtjek",
+  "walletCheckReminderBody": "Er der ændret noget i din pung? Brug et minut på at opdatere Vaultara.",
+  "lostWalletBlockNow": "Spær disse nu",
+  "lostWalletBlockNowHint": "Ring til hver bank, eller brug dens app. Hvert minut tæller.",
+  "lostWalletCall": "Ring",
+  "lostWalletAddLine": "Tilføj nummeret",
+  "lostWalletNoLine": "Intet nummer gemt. Find spærrenummeret i din banks app eller på dens hjemmeside.",
+  "lostWalletBlocked": "Spærret",
+  "lostWalletReplace": "Erstat disse",
+  "lostWalletReplaceHint": "Bestil nye, og gem den nye dato, når de kommer.",
+  "lostWalletArrived": "Den nye er kommet",
+  "lostWalletCheck": "Tjek disse",
+  "lostWalletCheckHint": "Spørg, om du skal bruge et nyt kort eller nummer.",
+  "lostWalletPlanEmptyTitle": "Der lå intet gemt der",
+  "lostWalletPlanEmpty": "Trinene nedenfor hjælper stadig. Vælg næste gang, hvor du opbevarer dine kort og dokumenter.",
+  "lostWalletCaseTitle": "Politiets journalnummer",
+  "lostWalletCaseHint": "Banker, forsikringsselskaber og myndigheder spørger ofte efter det.",
+  "lostWalletCaseLabel": "Journal- eller referencenummer",
+  "lostWalletCaseSaved": "Journalnummer gemt",
+  "lostWalletAbroadTitle": "I udlandet lige nu?",
+  "lostWalletAbroadBody": "Du er på rejsen {trip}. Var dit pas eller ID i den, så kontakt din ambassade eller dit konsulat for et nødpas, og giv dit rejseforsikringsselskab besked.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Åbn rejse",
+  "lostWalletPhoneTitle": "Blev din telefon også taget?",
+  "lostWalletPhoneBody": "Spær først SIM-kortet og dine bankapps. Der er en plan til det.",
+  "lostWalletPhoneButton": "Start planen for mistet telefon",
+  "lostWalletStatementNote": "Vaultara minder dig om det efter 30, 60 og 90 dage.",
+  "lostWalletStatementTitle": "Tjek dine kontoudtog",
+  "lostWalletStatementBody": "Kig efter betalinger, du ikke har lavet, siden din pung forsvandt.",
+  "lostWalletFoundButton": "Jeg har fundet den",
+  "lostWalletFoundTitle": "Gode nyheder!",
+  "lostWalletFoundBody": "Disse kort er allerede spærret, så hold øje med de nye:",
+  "lostWalletFoundNone": "Intet er spærret endnu, så du kan fortsætte som før.",
+  "lostWalletFoundUnfreeze": "Har du frosset kort i din bankapp, så lås dem op, du ikke har spærret.",
+  "lostWalletFoundConfirm": "Luk planen",
+  "lostWalletFoundOn": "Fundet den {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rapport over mistede ting",
+  "lostWalletReportTitle": "Rapport over mistede ting",
+  "lostWalletReportWhen": "Dato: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Det, der mangler: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Journalnummer: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Journalnummer: endnu ikke anmeldt",
+  "lostWalletReportCount": "{count, plural, =1{1 element nedenfor} other{{count} elementer nedenfor}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

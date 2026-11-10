@@ -7172,4 +7172,328 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Kolid uude koju? Vaata, mida veel uuendada.';
+
+  @override
+  String get keptInTitle => 'Kus ma seda hoian';
+
+  @override
+  String get keptInSubtitle => 'Et teaksid, mida sulgeda ja asendada, kui see kaob';
+
+  @override
+  String get keptInWallet => 'Rahakott';
+
+  @override
+  String get keptInBag => 'Kott';
+
+  @override
+  String get keptInPhoneCase => 'Telefoniümbris';
+
+  @override
+  String get keptInTravelPouch => 'Reisikott';
+
+  @override
+  String get keptInCar => 'Auto';
+
+  @override
+  String get keptInHome => 'Kodus';
+
+  @override
+  String get keptInNone => 'Määramata';
+
+  @override
+  String get lostLineLabel => 'Kadunud kaardi sulgemise number';
+
+  @override
+  String get lostLineHelper => 'Salvesta see kohe. Number on kaardil, nii et vajadusel pole seda sul käepärast.';
+
+  @override
+  String get lifeEventWalletLost => 'Kaotasin oma rahakoti';
+
+  @override
+  String get lifeEventWalletLostBody => 'Sulge kõigepealt kaardid, seejärel asenda dokumendid ükshaaval.';
+
+  @override
+  String get lifeEventWalletStolen => 'Mu rahakott varastati';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Sulge kaardid kohe ja teata vargusest. Seejärel jälgi kontosid pettuste suhtes.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Kadunud või varastatud?';
+
+  @override
+  String get lifeVariantLost => 'Kadunud';
+
+  @override
+  String get lifeVariantStolen => 'Varastatud';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Külmuta kaardid pangarakenduses, kui see seda võimaldab';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Helista viimastesse kohtadesse, kus käisid, ja küsi leiubüroost';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Palu krediidibüroodel või oma riigi pettusteenistusel oma dokument märgistada';
+
+  @override
+  String get lifeTaskWalletStatements => 'Kontrolli pangaväljavõtteid maksete suhtes, mida sa ei teinud';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Pane uus kaart tellimustele ja otsekorraldustele';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Lisa uued kaardid Google Pay või Apple Pay rakendusse';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Küsi tervisekindlustusest uus kaart';
+
+  @override
+  String get lifeTaskWalletTransport => 'Sulge ühistranspordi- või teemaksukaart ja kanna jääk üle';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Küsi uued kliendikaardid, et punktid alles jääksid';
+
+  @override
+  String get lifeTaskWalletLocks => 'Kui seal olid võtmed või sinu aadress, kaalu lukkude vahetamist';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Kontrolli, kas kindlustus katab rahakoti ja sularaha';
+
+  @override
+  String get lostWalletHeroTitle => 'Kaotasid rahakoti?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara näitab, mida kõigepealt sulgeda, mida asendada ja keda teavitada.';
+
+  @override
+  String get lostWalletStartTitle => 'Mis juhtus?';
+
+  @override
+  String get lostWalletEditTitle => 'Muuda andmeid';
+
+  @override
+  String get lostWalletLostHint => 'Kukkus maha või jäi kuhugi';
+
+  @override
+  String get lostWalletStolenHint => 'Keegi võttis selle';
+
+  @override
+  String get lostWalletWhatMissing => 'Mis on puudu?';
+
+  @override
+  String get lostWalletStartButton => 'Näita, mida teha';
+
+  @override
+  String get lostWalletCheckupTitle => 'Rahakoti ülevaatus';
+
+  @override
+  String get lostWalletCheckupBody => 'Valmistu kohe, et midagi ei ununeks, kui see kaob.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Kõik valmis. Kui see kunagi kaob, oled valmis.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Ava kaart või dokument ja vali, kus seda hoiad. Tee seda ID-kaardi, juhiloa ja kaartide puhul.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count asjal pole fotot. Fotodega on asendamine kiirem.',
+      one: '1 asjal pole fotot. Fotoga on asendamine kiirem.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kaardil pole sulgemise numbrit salvestatud.',
+      one: '1 kaardil pole sulgemise numbrit salvestatud.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kannad kaasas $count passi või luba. Jäta need koju, kui sa ei reisi.',
+      one: 'Kannad kaasas passi või luba. Jäta see koju, kui sa ei reisi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Mida kaasas kannad';
+
+  @override
+  String get lostWalletNoPhoto => 'Fotot pole';
+
+  @override
+  String get lostWalletHasPhoto => 'Foto salvestatud';
+
+  @override
+  String get lostWalletNoLineShort => 'Sulgemise numbrit pole';
+
+  @override
+  String get lostWalletHistory => 'Varasemad korrad';
+
+  @override
+  String get lostWalletFound => 'Leitud';
+
+  @override
+  String get walletCheckToggle => 'Tuleta meelde iga 6 kuu tagant';
+
+  @override
+  String get walletCheckToggleBody => 'Kiire pilk sellele, mida kaasas kannad, et nimekiri oleks õige.';
+
+  @override
+  String get walletCheckReminderTitle => 'Rahakoti ülevaatus';
+
+  @override
+  String get walletCheckReminderBody => 'Kas su rahakotis on midagi muutunud? Võta minut ja uuenda Vaultarat.';
+
+  @override
+  String get lostWalletBlockNow => 'Sulge need kohe';
+
+  @override
+  String get lostWalletBlockNowHint => 'Helista igale pangale või kasuta selle rakendust. Iga minut loeb.';
+
+  @override
+  String get lostWalletCall => 'Helista';
+
+  @override
+  String get lostWalletAddLine => 'Lisa number';
+
+  @override
+  String get lostWalletNoLine => 'Numbrit pole salvestatud. Leia see panga rakendusest või veebilehelt.';
+
+  @override
+  String get lostWalletBlocked => 'Suletud';
+
+  @override
+  String get lostWalletReplace => 'Asenda need';
+
+  @override
+  String get lostWalletReplaceHint => 'Taotle uued ja salvesta uus kuupäev, kui need saabuvad.';
+
+  @override
+  String get lostWalletArrived => 'Uus saabus';
+
+  @override
+  String get lostWalletCheck => 'Kontrolli neid';
+
+  @override
+  String get lostWalletCheckHint => 'Küsi, kas vajad uut kaarti või numbrit.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Seal polnud midagi salvestatud';
+
+  @override
+  String get lostWalletPlanEmpty => 'Allolevad sammud aitavad ikkagi. Vali järgmine kord, kus oma kaarte ja dokumente hoiad.';
+
+  @override
+  String get lostWalletCaseTitle => 'Politsei menetlusnumber';
+
+  @override
+  String get lostWalletCaseHint => 'Pangad, kindlustajad ja ametid küsivad seda sageli.';
+
+  @override
+  String get lostWalletCaseLabel => 'Menetlus- või viitenumber';
+
+  @override
+  String get lostWalletCaseSaved => 'Number salvestatud';
+
+  @override
+  String get lostWalletAbroadTitle => 'Praegu välismaal?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Oled reisil $trip. Kui seal oli pass või ID-kaart, võta ühendust saatkonna või konsulaadiga ajutise reisidokumendi saamiseks ja teavita reisikindlustust.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Ava reis';
+
+  @override
+  String get lostWalletPhoneTitle => 'Kas ka telefon võeti?';
+
+  @override
+  String get lostWalletPhoneBody => 'Sulge kõigepealt SIM-kaart ja pangarakendused. Selle jaoks on oma plaan.';
+
+  @override
+  String get lostWalletPhoneButton => 'Alusta kadunud telefoni plaani';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara tuletab meelde 30, 60 ja 90 päeva pärast.';
+
+  @override
+  String get lostWalletStatementTitle => 'Kontrolli pangaväljavõtteid';
+
+  @override
+  String get lostWalletStatementBody => 'Otsi makseid, mida sa pole rahakoti kadumisest saadik teinud.';
+
+  @override
+  String get lostWalletFoundButton => 'Leidsin selle';
+
+  @override
+  String get lostWalletFoundTitle => 'Hea uudis!';
+
+  @override
+  String get lostWalletFoundBody => 'Need kaardid on juba suletud, nii et oota uusi:';
+
+  @override
+  String get lostWalletFoundNone => 'Midagi pole veel suletud, võid jätkata nagu varem.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Kui külmutasid kaarte pangarakenduses, vabasta need, mida sa ei sulgenud.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Sulge plaan';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Leitud $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Kadunud asjade aruanne';
+
+  @override
+  String get lostWalletReportTitle => 'Kadunud asjade aruanne';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Kuupäev: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Mis on puudu: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Menetlusnumber: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Menetlusnumber: veel teatamata';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count asja allpool',
+      one: '1 asi allpool',
+    );
+    return '$_temp0';
+  }
 }

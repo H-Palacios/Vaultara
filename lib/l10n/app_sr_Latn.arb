@@ -2254,5 +2254,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Selite se u novi dom? Pogledajte šta još treba ažurirati."
+  "lifePlanSuggestMove": "Selite se u novi dom? Pogledajte šta još treba ažurirati.",
+  "keptInTitle": "Gde to držim",
+  "keptInSubtitle": "Da znate šta da blokirate i zamenite ako se izgubi",
+  "keptInWallet": "Novčanik",
+  "keptInBag": "Torba",
+  "keptInPhoneCase": "Futrola za telefon",
+  "keptInTravelPouch": "Putna torbica",
+  "keptInCar": "Auto",
+  "keptInHome": "Kod kuće",
+  "keptInNone": "Nije podešeno",
+  "lostLineLabel": "Broj za blokadu izgubljene kartice",
+  "lostLineHelper": "Sačuvajte ga sada. Broj je na kartici, pa ga nećete imati kad vam zatreba.",
+  "lifeEventWalletLost": "Izgubio sam novčanik",
+  "lifeEventWalletLostBody": "Prvo blokirajte kartice, a zatim zamenite dokumente jedan po jedan.",
+  "lifeEventWalletStolen": "Ukrali su mi novčanik",
+  "lifeEventWalletStolenBody": "Odmah blokirajte kartice i prijavite krađu. Zatim pazite na prevare na računima.",
+  "lifeVariantWalletQuestion": "Izgubljen ili ukraden?",
+  "lifeVariantLost": "Izgubljen",
+  "lifeVariantStolen": "Ukraden",
+  "lifeTaskWalletFreezeCards": "Zamrznite kartice u aplikaciji banke ako to omogućava",
+  "lifeTaskWalletRetrace": "Pozovite poslednja mesta na kojima ste bili i pitajte za izgubljene stvari",
+  "lifeTaskWalletFraudAlert": "Zamolite kreditne biroe ili službu za prevare u svojoj zemlji da označe vaš dokument",
+  "lifeTaskWalletStatements": "Proverite izvode za plaćanja koja niste napravili",
+  "lifeTaskWalletSubscriptions": "Postavite novu karticu za pretplate i trajne naloge",
+  "lifeTaskWalletPayApps": "Dodajte nove kartice u Google Pay ili Apple Pay",
+  "lifeTaskWalletHealthCard": "Zatražite novu karticu od zdravstvenog osiguranja",
+  "lifeTaskWalletTransport": "Blokirajte kartu za prevoz ili putarinu i prebacite saldo",
+  "lifeTaskWalletLoyalty": "Zatražite nove kartice lojalnosti da zadržite bodove",
+  "lifeTaskWalletLocks": "Ako su unutra bili ključevi ili vaša adresa, razmislite o zameni brava",
+  "lifeTaskWalletInsurance": "Proverite da li osiguranje pokriva novčanik i gotovinu",
+  "lostWalletHeroTitle": "Izgubili ste novčanik?",
+  "lostWalletHeroBody": "Vaultara pokazuje šta prvo blokirati, šta zameniti i koga obavestiti.",
+  "lostWalletStartTitle": "Šta se desilo?",
+  "lostWalletEditTitle": "Promeni podatke",
+  "lostWalletLostHint": "Ispao je ili sam ga negde ostavio",
+  "lostWalletStolenHint": "Neko ga je uzeo",
+  "lostWalletWhatMissing": "Šta nedostaje?",
+  "lostWalletStartButton": "Pokaži mi šta da radim",
+  "lostWalletCheckupTitle": "Provera novčanika",
+  "lostWalletCheckupBody": "Pripremite se sada da ništa ne zaboravite ako se izgubi.",
+  "lostWalletCheckupAllGood": "Sve je spremno. Ako se ikad izgubi, spremni ste.",
+  "lostWalletSetPlaceBody": "Otvorite karticu ili dokument i izaberite gde ga držite. Uradite to za ličnu kartu, vozačku i kartice.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bez fotografije: {count}. Sa fotografijom je zamena brža.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kartice bez broja za blokadu: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasoši ili dozvole kod vas: {count}. Držite ih kod kuće ako ne putujete.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Šta nosite sa sobom",
+  "lostWalletNoPhoto": "Nema fotografije",
+  "lostWalletHasPhoto": "Fotografija sačuvana",
+  "lostWalletNoLineShort": "Nema broja za blokadu",
+  "lostWalletHistory": "Raniji puta",
+  "lostWalletFound": "Pronađen",
+  "walletCheckToggle": "Podseti me svakih 6 meseci",
+  "walletCheckToggleBody": "Brz pogled na ono što nosite, da spisak bude tačan.",
+  "walletCheckReminderTitle": "Provera novčanika",
+  "walletCheckReminderBody": "Da li se nešto promenilo u novčaniku? Odvojite minut da ažurirate Vaultara.",
+  "lostWalletBlockNow": "Blokirajte odmah",
+  "lostWalletBlockNowHint": "Pozovite svaku banku ili koristite njenu aplikaciju. Svaki minut je važan.",
+  "lostWalletCall": "Pozovi",
+  "lostWalletAddLine": "Dodaj broj",
+  "lostWalletNoLine": "Broj nije sačuvan. Pronađite ga u aplikaciji ili na sajtu banke.",
+  "lostWalletBlocked": "Blokirano",
+  "lostWalletReplace": "Zamenite",
+  "lostWalletReplaceHint": "Zatražite nove i sačuvajte novi datum kad stignu.",
+  "lostWalletArrived": "Stigao je novi",
+  "lostWalletCheck": "Proverite",
+  "lostWalletCheckHint": "Pitajte da li vam treba nova kartica ili broj.",
+  "lostWalletPlanEmptyTitle": "Tamo ništa nije bilo sačuvano",
+  "lostWalletPlanEmpty": "Koraci ispod ipak pomažu. Sledeći put izaberite gde držite kartice i dokumente.",
+  "lostWalletCaseTitle": "Broj policijske prijave",
+  "lostWalletCaseHint": "Banke, osiguravajuća društva i službe ga često traže.",
+  "lostWalletCaseLabel": "Broj predmeta ili referentni broj",
+  "lostWalletCaseSaved": "Broj prijave sačuvan",
+  "lostWalletAbroadTitle": "Trenutno u inostranstvu?",
+  "lostWalletAbroadBody": "Na putovanju ste: {trip}. Ako su unutra bili pasoš ili lična karta, javite se ambasadi ili konzulatu za putni list i obavestite putno osiguranje.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Otvori putovanje",
+  "lostWalletPhoneTitle": "Da li je uzet i telefon?",
+  "lostWalletPhoneBody": "Prvo blokirajte SIM karticu i bankarske aplikacije. Za to postoji plan.",
+  "lostWalletPhoneButton": "Pokreni plan za izgubljeni telefon",
+  "lostWalletStatementNote": "Vaultara vas podseća posle 30, 60 i 90 dana.",
+  "lostWalletStatementTitle": "Proverite bankovne izvode",
+  "lostWalletStatementBody": "Tražite plaćanja koja niste napravili otkako je novčanik nestao.",
+  "lostWalletFoundButton": "Pronašao sam ga",
+  "lostWalletFoundTitle": "Dobre vesti!",
+  "lostWalletFoundBody": "Ove kartice su već blokirane, zato pripazite na nove:",
+  "lostWalletFoundNone": "Još ništa nije blokirano, možete nastaviti kao pre.",
+  "lostWalletFoundUnfreeze": "Ako ste zamrznuli kartice u aplikaciji banke, odmrznite one koje niste blokirali.",
+  "lostWalletFoundConfirm": "Zatvori plan",
+  "lostWalletFoundOn": "Pronađen {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Izveštaj o izgubljenim stvarima",
+  "lostWalletReportTitle": "Izveštaj o izgubljenim stvarima",
+  "lostWalletReportWhen": "Datum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Šta nedostaje: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Broj prijave: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Broj prijave: još nije prijavljeno",
+  "lostWalletReportCount": "{count, plural, other{Stavke ispod: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -7172,4 +7172,328 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Etxe berrira zoaz? Ikusi zer gehiago eguneratu behar duzun.';
+
+  @override
+  String get keptInTitle => 'Non gordetzen dudan';
+
+  @override
+  String get keptInSubtitle => 'Galtzen bada, zer blokeatu eta zer ordeztu jakiteko';
+
+  @override
+  String get keptInWallet => 'Zorroa';
+
+  @override
+  String get keptInBag => 'Poltsa';
+
+  @override
+  String get keptInPhoneCase => 'Mugikorraren zorroa';
+
+  @override
+  String get keptInTravelPouch => 'Bidaia-poltsa';
+
+  @override
+  String get keptInCar => 'Autoa';
+
+  @override
+  String get keptInHome => 'Etxean';
+
+  @override
+  String get keptInNone => 'Zehaztu gabe';
+
+  @override
+  String get lostLineLabel => 'Galdutako txartelaren telefonoa';
+
+  @override
+  String get lostLineHelper => 'Gorde orain. Zenbakia txartelean dago, beraz ez duzu izango behar duzunean.';
+
+  @override
+  String get lifeEventWalletLost => 'Zorroa galdu dut';
+
+  @override
+  String get lifeEventWalletLostBody => 'Blokeatu txartelak lehenik, eta gero ordeztu dokumentuak banan-banan.';
+
+  @override
+  String get lifeEventWalletStolen => 'Zorroa lapurtu didate';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Blokeatu txartelak berehala eta salatu lapurreta. Gero zaindu kontuak iruzurrik ez izateko.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Galdu da ala lapurtu dizute?';
+
+  @override
+  String get lifeVariantLost => 'Galduta';
+
+  @override
+  String get lifeVariantStolen => 'Lapurtuta';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Izoztu txartelak bankuaren aplikazioan, aukera hori badu';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Deitu egon zaren azken lekuetara eta galdetu galdutako objektuetan';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Eskatu kreditu-agentziei edo zure herrialdeko iruzurraren aurkako zerbitzuari zure agiria markatzeko';
+
+  @override
+  String get lifeTaskWalletStatements => 'Begiratu banku-laburpenak egin ez dituzun ordainketen bila';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Jarri txartel berria harpidetza eta helbideratzeetan';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Gehitu txartel berriak Google Pay edo Apple Pay-ra';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Eskatu txartel berria zure osasun-aseguruari';
+
+  @override
+  String get lifeTaskWalletTransport => 'Blokeatu garraio- edo bidesari-txartela eta pasatu saldoa';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Eskatu leialtasun-txartel berriak puntuak ez galtzeko';
+
+  @override
+  String get lifeTaskWalletLocks => 'Giltzak edo zure helbidea bazeuden, pentsatu sarrailak aldatzea';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Egiaztatu aseguruak zorroa eta dirua estaltzen dituen';
+
+  @override
+  String get lostWalletHeroTitle => 'Zorroa galdu duzu?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultarak erakusten dizu zer blokeatu lehenik, zer ordeztu eta nori abisatu.';
+
+  @override
+  String get lostWalletStartTitle => 'Zer gertatu da?';
+
+  @override
+  String get lostWalletEditTitle => 'Aldatu datuak';
+
+  @override
+  String get lostWalletLostHint => 'Erori zait edo nonbait ahaztu dut';
+
+  @override
+  String get lostWalletStolenHint => 'Norbaitek hartu du';
+
+  @override
+  String get lostWalletWhatMissing => 'Zer falta da?';
+
+  @override
+  String get lostWalletStartButton => 'Erakutsi zer egin';
+
+  @override
+  String get lostWalletCheckupTitle => 'Zorroaren berrikuspena';
+
+  @override
+  String get lostWalletCheckupBody => 'Prestatu orain, galtzen bada ezer ez ahazteko.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Dena prest. Inoiz galtzen bada, prest zaude.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Ireki txartel edo dokumentu bat eta aukeratu non gordetzen duzun. Egin hori NANarekin, gidabaimenarekin eta txartelekin.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elementuk ez dute argazkirik. Argazkiekin azkarrago ordezten dira.',
+      one: 'Elementu batek ez du argazkirik. Argazkiarekin azkarrago ordezten da.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count txartelek ez dute galdutako txartelaren telefonorik gordeta.',
+      one: 'Txartel batek ez du galdutako txartelaren telefonorik gordeta.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pasaporte edo baimen daramatzazu. Utzi etxean bidaiatzen ez bazaude.',
+      one: 'Pasaporte edo baimen bat daramazu. Utzi etxean bidaiatzen ez bazaude.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Zurekin daramazuna';
+
+  @override
+  String get lostWalletNoPhoto => 'Argazkirik ez';
+
+  @override
+  String get lostWalletHasPhoto => 'Argazkia gordeta';
+
+  @override
+  String get lostWalletNoLineShort => 'Galdutako txartelaren telefonorik ez';
+
+  @override
+  String get lostWalletHistory => 'Aurreko aldiak';
+
+  @override
+  String get lostWalletFound => 'Aurkituta';
+
+  @override
+  String get walletCheckToggle => 'Gogorarazi 6 hilean behin';
+
+  @override
+  String get walletCheckToggleBody => 'Begiratu azkar zer daramazun, zerrenda zuzen egon dadin.';
+
+  @override
+  String get walletCheckReminderTitle => 'Zorroaren berrikuspena';
+
+  @override
+  String get walletCheckReminderBody => 'Zerbait aldatu da zure zorroan? Hartu minutu bat Vaultara eguneratzeko.';
+
+  @override
+  String get lostWalletBlockNow => 'Blokeatu hauek orain';
+
+  @override
+  String get lostWalletBlockNowHint => 'Deitu banku bakoitzari edo erabili haren aplikazioa. Minutu bakoitzak balio du.';
+
+  @override
+  String get lostWalletCall => 'Deitu';
+
+  @override
+  String get lostWalletAddLine => 'Gehitu zenbakia';
+
+  @override
+  String get lostWalletNoLine => 'Ez dago zenbakirik gordeta. Bilatu bankuaren aplikazioan edo webgunean.';
+
+  @override
+  String get lostWalletBlocked => 'Blokeatuta';
+
+  @override
+  String get lostWalletReplace => 'Ordeztu hauek';
+
+  @override
+  String get lostWalletReplaceHint => 'Eskatu berriak eta gorde data berria iristen direnean.';
+
+  @override
+  String get lostWalletArrived => 'Berria iritsi da';
+
+  @override
+  String get lostWalletCheck => 'Egiaztatu hauek';
+
+  @override
+  String get lostWalletCheckHint => 'Galdetu txartel edo zenbaki berria behar duzun.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ez zegoen ezer gordeta han';
+
+  @override
+  String get lostWalletPlanEmpty => 'Beheko urratsek laguntzen dute oraindik. Hurrengoan, aukeratu non gordetzen dituzun txartelak eta dokumentuak.';
+
+  @override
+  String get lostWalletCaseTitle => 'Poliziaren salaketa-zenbakia';
+
+  @override
+  String get lostWalletCaseHint => 'Bankuek, aseguru-etxeek eta bulegoek askotan eskatzen dute.';
+
+  @override
+  String get lostWalletCaseLabel => 'Kasu- edo erreferentzia-zenbakia';
+
+  @override
+  String get lostWalletCaseSaved => 'Salaketa-zenbakia gordeta';
+
+  @override
+  String get lostWalletAbroadTitle => 'Atzerrian zaude orain?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Bidaian zaude: $trip. Pasaportea edo NANa bazegoen, jarri harremanetan enbaxadarekin edo kontsulatuarekin larrialdiko bidaia-agiri baterako, eta abisatu bidaia-aseguruari.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Ireki bidaia';
+
+  @override
+  String get lostWalletPhoneTitle => 'Mugikorra ere eraman dute?';
+
+  @override
+  String get lostWalletPhoneBody => 'Blokeatu lehenik SIM txartela eta bankuko aplikazioak. Horretarako plan bat dago.';
+
+  @override
+  String get lostWalletPhoneButton => 'Hasi galdutako mugikorraren plana';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultarak 30, 60 eta 90 egunera gogoraraziko dizu.';
+
+  @override
+  String get lostWalletStatementTitle => 'Begiratu banku-laburpenak';
+
+  @override
+  String get lostWalletStatementBody => 'Bilatu zorroa galdu zenuenetik egin ez dituzun ordainketak.';
+
+  @override
+  String get lostWalletFoundButton => 'Aurkitu dut';
+
+  @override
+  String get lostWalletFoundTitle => 'Albiste ona!';
+
+  @override
+  String get lostWalletFoundBody => 'Txartel hauek blokeatuta daude jada, beraz adi egon berriei:';
+
+  @override
+  String get lostWalletFoundNone => 'Oraindik ez da ezer blokeatu, lehen bezala jarrai dezakezu.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Bankuaren aplikazioan txartelak izoztu badituzu, desizoztu blokeatu ez dituzunak.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Itxi plana';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Aurkitua: $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Galdutako gauzen txostena';
+
+  @override
+  String get lostWalletReportTitle => 'Galdutako gauzen txostena';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Data: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Zer falta den: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Salaketa-zenbakia: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Salaketa-zenbakia: oraindik salatu gabe';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elementu behean',
+      one: 'Elementu bat behean',
+    );
+    return '$_temp0';
+  }
 }

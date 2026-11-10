@@ -7172,4 +7172,324 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'नवीन घरात जात आहात? आणखी काय अपडेट करायचे ते पाहा.';
+
+  @override
+  String get keptInTitle => 'मी ते कुठे ठेवतो';
+
+  @override
+  String get keptInSubtitle => 'हरवल्यास काय ब्लॉक करायचे आणि काय बदलायचे ते कळावे म्हणून';
+
+  @override
+  String get keptInWallet => 'पाकीट';
+
+  @override
+  String get keptInBag => 'बॅग';
+
+  @override
+  String get keptInPhoneCase => 'फोन कव्हर';
+
+  @override
+  String get keptInTravelPouch => 'प्रवासाचे पाऊच';
+
+  @override
+  String get keptInCar => 'कार';
+
+  @override
+  String get keptInHome => 'घरी';
+
+  @override
+  String get keptInNone => 'निवडलेले नाही';
+
+  @override
+  String get lostLineLabel => 'हरवलेल्या कार्डचा नंबर';
+
+  @override
+  String get lostLineHelper => 'आत्ताच सेव्ह करा. नंबर कार्डवर छापलेला असतो, त्यामुळे गरज पडेल तेव्हा तो तुमच्याकडे नसेल.';
+
+  @override
+  String get lifeEventWalletLost => 'माझे पाकीट हरवले';
+
+  @override
+  String get lifeEventWalletLostBody => 'आधी तुमची कार्डे ब्लॉक करा, मग कागदपत्रे एकेक करून बदला.';
+
+  @override
+  String get lifeEventWalletStolen => 'माझे पाकीट चोरीला गेले';
+
+  @override
+  String get lifeEventWalletStolenBody => 'लगेच कार्डे ब्लॉक करा आणि चोरीची तक्रार करा. मग फसवणुकीसाठी खात्यांवर लक्ष ठेवा.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'हरवले की चोरीला गेले?';
+
+  @override
+  String get lifeVariantLost => 'हरवले';
+
+  @override
+  String get lifeVariantStolen => 'चोरीला गेले';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'बँक ॲपमध्ये पर्याय असल्यास कार्डे फ्रीझ करा';
+
+  @override
+  String get lifeTaskWalletRetrace => 'तुम्ही शेवटी जिथे होता तिथे फोन करा आणि हरवलेल्या वस्तूंबद्दल विचारा';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'क्रेडिट ब्युरो किंवा तुमच्या देशाच्या फसवणूक सेवेला तुमच्या ओळखपत्रावर खूण करायला सांगा';
+
+  @override
+  String get lifeTaskWalletStatements => 'बँक स्टेटमेंटमध्ये तुम्ही न केलेली देयके तपासा';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'नवे कार्ड सदस्यता आणि ऑटो-डेबिटवर लावा';
+
+  @override
+  String get lifeTaskWalletPayApps => 'नवी कार्डे Google Pay किंवा Apple Pay मध्ये जोडा';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'आरोग्य विम्याकडून नवे सदस्य कार्ड मागा';
+
+  @override
+  String get lifeTaskWalletTransport => 'प्रवास किंवा टोल कार्ड ब्लॉक करा आणि शिल्लक हलवा';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'पॉइंट्स टिकवण्यासाठी नवी लॉयल्टी कार्डे मागा';
+
+  @override
+  String get lifeTaskWalletLocks => 'आत चाव्या किंवा तुमचा पत्ता असल्यास कुलूप बदलण्याचा विचार करा';
+
+  @override
+  String get lifeTaskWalletInsurance => 'तुमचा विमा पाकीट आणि रोख रक्कम कव्हर करतो का ते तपासा';
+
+  @override
+  String get lostWalletHeroTitle => 'पाकीट हरवले?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara दाखवते की आधी काय ब्लॉक करायचे, काय बदलायचे आणि कोणाला कळवायचे.';
+
+  @override
+  String get lostWalletStartTitle => 'काय झाले?';
+
+  @override
+  String get lostWalletEditTitle => 'तपशील बदला';
+
+  @override
+  String get lostWalletLostHint => 'पडले किंवा कुठेतरी राहिले';
+
+  @override
+  String get lostWalletStolenHint => 'कोणीतरी घेतले';
+
+  @override
+  String get lostWalletWhatMissing => 'काय गहाळ आहे?';
+
+  @override
+  String get lostWalletStartButton => 'मला काय करायचे ते दाखवा';
+
+  @override
+  String get lostWalletCheckupTitle => 'पाकीट तपासणी';
+
+  @override
+  String get lostWalletCheckupBody => 'आत्ताच तयारी करा, म्हणजे हरवल्यास काही विसरणार नाही.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'सर्व तयार आहे. कधी हरवले तरी तुम्ही तयार आहात.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'एखादे कार्ड किंवा कागदपत्र उघडा आणि ते कुठे ठेवता ते निवडा. ओळखपत्र, परवाना आणि कार्डांसाठी हे करा.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'फोटोशिवाय: $count. फोटो असल्यास बदलणे जलद होते.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ब्लॉक नंबर नसलेली कार्डे: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'तुमच्याकडील पासपोर्ट किंवा परवाने: $count. प्रवास करत नसल्यास घरी ठेवा.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'तुम्ही सोबत ठेवता ते';
+
+  @override
+  String get lostWalletNoPhoto => 'फोटो नाही';
+
+  @override
+  String get lostWalletHasPhoto => 'फोटो सेव्ह झाला';
+
+  @override
+  String get lostWalletNoLineShort => 'ब्लॉक नंबर नाही';
+
+  @override
+  String get lostWalletHistory => 'आधीच्या वेळा';
+
+  @override
+  String get lostWalletFound => 'सापडले';
+
+  @override
+  String get walletCheckToggle => 'दर 6 महिन्यांनी आठवण करा';
+
+  @override
+  String get walletCheckToggleBody => 'तुम्ही सोबत ठेवता त्यावर एक झटपट नजर, म्हणजे यादी बरोबर राहील.';
+
+  @override
+  String get walletCheckReminderTitle => 'पाकीट तपासणी';
+
+  @override
+  String get walletCheckReminderBody => 'तुमच्या पाकिटात काही बदलले का? Vaultara अपडेट करायला एक मिनिट द्या.';
+
+  @override
+  String get lostWalletBlockNow => 'हे आत्ताच ब्लॉक करा';
+
+  @override
+  String get lostWalletBlockNowHint => 'प्रत्येक बँकेला फोन करा किंवा तिचे ॲप वापरा. प्रत्येक मिनिट महत्त्वाचा आहे.';
+
+  @override
+  String get lostWalletCall => 'कॉल करा';
+
+  @override
+  String get lostWalletAddLine => 'नंबर जोडा';
+
+  @override
+  String get lostWalletNoLine => 'कोणताही नंबर सेव्ह नाही. तो बँकेच्या ॲपमध्ये किंवा वेबसाइटवर शोधा.';
+
+  @override
+  String get lostWalletBlocked => 'ब्लॉक झाले';
+
+  @override
+  String get lostWalletReplace => 'हे बदला';
+
+  @override
+  String get lostWalletReplaceHint => 'नव्यासाठी अर्ज करा आणि आल्यावर नवी तारीख सेव्ह करा.';
+
+  @override
+  String get lostWalletArrived => 'नवे आले';
+
+  @override
+  String get lostWalletCheck => 'हे तपासा';
+
+  @override
+  String get lostWalletCheckHint => 'नवे कार्ड किंवा नंबर हवा का ते विचारा.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'तिथे काहीही सेव्ह नव्हते';
+
+  @override
+  String get lostWalletPlanEmpty => 'खालील पायऱ्या तरीही मदत करतात. पुढच्या वेळी कार्डे आणि कागदपत्रे कुठे ठेवता ते निवडा.';
+
+  @override
+  String get lostWalletCaseTitle => 'पोलीस केस नंबर';
+
+  @override
+  String get lostWalletCaseHint => 'बँका, विमा कंपन्या आणि कार्यालये तो अनेकदा मागतात.';
+
+  @override
+  String get lostWalletCaseLabel => 'केस किंवा संदर्भ नंबर';
+
+  @override
+  String get lostWalletCaseSaved => 'केस नंबर सेव्ह झाला';
+
+  @override
+  String get lostWalletAbroadTitle => 'सध्या परदेशात?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'तुम्ही $trip प्रवासात आहात. आत पासपोर्ट किंवा ओळखपत्र असल्यास तातडीच्या प्रवास दस्तऐवजासाठी दूतावास किंवा वाणिज्य दूतावासाशी संपर्क साधा आणि प्रवास विम्याला कळवा.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'प्रवास उघडा';
+
+  @override
+  String get lostWalletPhoneTitle => 'तुमचा फोनही नेला का?';
+
+  @override
+  String get lostWalletPhoneBody => 'आधी SIM कार्ड आणि बँकिंग ॲप्स ब्लॉक करा. त्यासाठी एक योजना आहे.';
+
+  @override
+  String get lostWalletPhoneButton => 'हरवलेल्या फोनची योजना सुरू करा';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 30, 60 आणि 90 दिवसांनी आठवण करेल.';
+
+  @override
+  String get lostWalletStatementTitle => 'बँक स्टेटमेंट तपासा';
+
+  @override
+  String get lostWalletStatementBody => 'पाकीट हरवल्यापासून तुम्ही न केलेली देयके शोधा.';
+
+  @override
+  String get lostWalletFoundButton => 'मला सापडले';
+
+  @override
+  String get lostWalletFoundTitle => 'चांगली बातमी!';
+
+  @override
+  String get lostWalletFoundBody => 'ही कार्डे आधीच ब्लॉक आहेत, म्हणून नव्यांची वाट पाहा:';
+
+  @override
+  String get lostWalletFoundNone => 'अजून काहीही ब्लॉक झालेले नाही, तुम्ही आधीसारखे चालू ठेवू शकता.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'बँक ॲपमध्ये कार्डे फ्रीझ केली असल्यास, जी ब्लॉक केली नाहीत ती अनफ्रीझ करा.';
+
+  @override
+  String get lostWalletFoundConfirm => 'योजना बंद करा';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '$date रोजी सापडले';
+  }
+
+  @override
+  String get lostWalletReport => 'हरवलेल्या वस्तूंचा अहवाल';
+
+  @override
+  String get lostWalletReportTitle => 'हरवलेल्या वस्तूंचा अहवाल';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'तारीख: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'काय गहाळ आहे: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'केस नंबर: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'केस नंबर: अजून तक्रार केलेली नाही';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'खालील वस्तू: $count',
+    );
+    return '$_temp0';
+  }
 }

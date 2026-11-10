@@ -2287,5 +2287,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Μετακομίζετε σε νέο σπίτι; Δείτε τι άλλο πρέπει να ενημερώσετε."
+  "lifePlanSuggestMove": "Μετακομίζετε σε νέο σπίτι; Δείτε τι άλλο πρέπει να ενημερώσετε.",
+  "keptInTitle": "Πού το φυλάω",
+  "keptInSubtitle": "Για να ξέρετε τι να μπλοκάρετε και να αντικαταστήσετε αν χαθεί",
+  "keptInWallet": "Πορτοφόλι",
+  "keptInBag": "Τσάντα",
+  "keptInPhoneCase": "Θήκη κινητού",
+  "keptInTravelPouch": "Τσαντάκι ταξιδιού",
+  "keptInCar": "Αυτοκίνητο",
+  "keptInHome": "Στο σπίτι",
+  "keptInNone": "Δεν έχει οριστεί",
+  "lostLineLabel": "Τηλέφωνο για χαμένη κάρτα",
+  "lostLineHelper": "Αποθηκεύστε το τώρα. Ο αριθμός είναι τυπωμένος στην κάρτα, άρα δεν θα τον έχετε όταν τον χρειαστείτε.",
+  "lifeEventWalletLost": "Έχασα το πορτοφόλι μου",
+  "lifeEventWalletLostBody": "Μπλοκάρετε πρώτα τις κάρτες και μετά αντικαταστήστε τα έγγραφα ένα ένα.",
+  "lifeEventWalletStolen": "Μου έκλεψαν το πορτοφόλι",
+  "lifeEventWalletStolenBody": "Μπλοκάρετε αμέσως τις κάρτες και δηλώστε την κλοπή. Μετά προσέχετε τους λογαριασμούς για απάτη.",
+  "lifeVariantWalletQuestion": "Χάθηκε ή κλάπηκε;",
+  "lifeVariantLost": "Χάθηκε",
+  "lifeVariantStolen": "Κλάπηκε",
+  "lifeTaskWalletFreezeCards": "Παγώστε τις κάρτες στην εφαρμογή της τράπεζας, αν το επιτρέπει",
+  "lifeTaskWalletRetrace": "Τηλεφωνήστε στα τελευταία μέρη που πήγατε και ρωτήστε στα απολεσθέντα",
+  "lifeTaskWalletFraudAlert": "Ζητήστε από τα γραφεία πίστης ή την υπηρεσία απάτης της χώρας σας να επισημάνουν το έγγραφό σας",
+  "lifeTaskWalletStatements": "Ελέγξτε τα αντίγραφα κίνησης για πληρωμές που δεν κάνατε",
+  "lifeTaskWalletSubscriptions": "Βάλτε τη νέα κάρτα στις συνδρομές και τις πάγιες εντολές",
+  "lifeTaskWalletPayApps": "Προσθέστε τις νέες κάρτες στο Google Pay ή στο Apple Pay",
+  "lifeTaskWalletHealthCard": "Ζητήστε νέα κάρτα από την ασφάλεια υγείας σας",
+  "lifeTaskWalletTransport": "Μπλοκάρετε την κάρτα συγκοινωνιών ή διοδίων και μεταφέρετε το υπόλοιπο",
+  "lifeTaskWalletLoyalty": "Ζητήστε νέες κάρτες επιβράβευσης για να κρατήσετε τους πόντους",
+  "lifeTaskWalletLocks": "Αν είχε κλειδιά ή τη διεύθυνσή σας, σκεφτείτε να αλλάξετε κλειδαριές",
+  "lifeTaskWalletInsurance": "Ελέγξτε αν η ασφάλειά σας καλύπτει το πορτοφόλι και τα μετρητά",
+  "lostWalletHeroTitle": "Χάσατε το πορτοφόλι σας;",
+  "lostWalletHeroBody": "Το Vaultara δείχνει τι να μπλοκάρετε πρώτα, τι να αντικαταστήσετε και ποιον να ενημερώσετε.",
+  "lostWalletStartTitle": "Τι συνέβη;",
+  "lostWalletEditTitle": "Αλλαγή στοιχείων",
+  "lostWalletLostHint": "Έπεσε ή το ξέχασα κάπου",
+  "lostWalletStolenHint": "Κάποιος το πήρε",
+  "lostWalletWhatMissing": "Τι λείπει;",
+  "lostWalletStartButton": "Δείξε μου τι να κάνω",
+  "lostWalletCheckupTitle": "Έλεγχος πορτοφολιού",
+  "lostWalletCheckupBody": "Προετοιμαστείτε τώρα, για να μην ξεχαστεί τίποτα αν χαθεί.",
+  "lostWalletCheckupAllGood": "Όλα έτοιμα. Αν χαθεί ποτέ, είστε προετοιμασμένοι.",
+  "lostWalletSetPlaceBody": "Ανοίξτε μια κάρτα ή ένα έγγραφο και επιλέξτε πού το φυλάτε. Κάντε το για ταυτότητα, δίπλωμα και κάρτες.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 στοιχείο δεν έχει φωτογραφία. Με φωτογραφία η αντικατάσταση γίνεται πιο γρήγορα.} other{{count} στοιχεία δεν έχουν φωτογραφία. Με φωτογραφίες η αντικατάσταση γίνεται πιο γρήγορα.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 κάρτα δεν έχει αποθηκευμένο τηλέφωνο για χαμένη κάρτα.} other{{count} κάρτες δεν έχουν αποθηκευμένο τηλέφωνο για χαμένη κάρτα.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Κουβαλάτε διαβατήριο ή άδεια. Αφήστε το στο σπίτι εκτός αν ταξιδεύετε.} other{Κουβαλάτε {count} διαβατήρια ή άδειες. Αφήστε τα στο σπίτι εκτός αν ταξιδεύετε.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Τι έχετε μαζί σας",
+  "lostWalletNoPhoto": "Χωρίς φωτογραφία",
+  "lostWalletHasPhoto": "Η φωτογραφία αποθηκεύτηκε",
+  "lostWalletNoLineShort": "Χωρίς τηλέφωνο για χαμένη κάρτα",
+  "lostWalletHistory": "Προηγούμενες φορές",
+  "lostWalletFound": "Βρέθηκε",
+  "walletCheckToggle": "Υπενθύμιση κάθε 6 μήνες",
+  "walletCheckToggleBody": "Μια γρήγορη ματιά σε ό,τι κουβαλάτε, για να είναι σωστή η λίστα.",
+  "walletCheckReminderTitle": "Έλεγχος πορτοφολιού",
+  "walletCheckReminderBody": "Άλλαξε κάτι στο πορτοφόλι σας; Αφιερώστε ένα λεπτό για να ενημερώσετε το Vaultara.",
+  "lostWalletBlockNow": "Μπλοκάρετε τώρα",
+  "lostWalletBlockNowHint": "Τηλεφωνήστε σε κάθε τράπεζα ή χρησιμοποιήστε την εφαρμογή της. Κάθε λεπτό μετράει.",
+  "lostWalletCall": "Κλήση",
+  "lostWalletAddLine": "Προσθήκη αριθμού",
+  "lostWalletNoLine": "Δεν υπάρχει αποθηκευμένος αριθμός. Βρείτε τον στην εφαρμογή ή στον ιστότοπο της τράπεζας.",
+  "lostWalletBlocked": "Μπλοκαρίστηκε",
+  "lostWalletReplace": "Αντικαταστήστε",
+  "lostWalletReplaceHint": "Κάντε αίτηση για νέα και αποθηκεύστε τη νέα ημερομηνία όταν φτάσουν.",
+  "lostWalletArrived": "Ήρθε το νέο",
+  "lostWalletCheck": "Ελέγξτε",
+  "lostWalletCheckHint": "Ρωτήστε αν χρειάζεστε νέα κάρτα ή νέο αριθμό.",
+  "lostWalletPlanEmptyTitle": "Δεν υπήρχε τίποτα αποθηκευμένο εκεί",
+  "lostWalletPlanEmpty": "Τα παρακάτω βήματα βοηθούν ακόμα. Την επόμενη φορά, επιλέξτε πού φυλάτε κάρτες και έγγραφα.",
+  "lostWalletCaseTitle": "Αριθμός αστυνομικής δήλωσης",
+  "lostWalletCaseHint": "Τράπεζες, ασφαλιστικές και υπηρεσίες τον ζητούν συχνά.",
+  "lostWalletCaseLabel": "Αριθμός υπόθεσης ή αναφοράς",
+  "lostWalletCaseSaved": "Ο αριθμός αποθηκεύτηκε",
+  "lostWalletAbroadTitle": "Στο εξωτερικό τώρα;",
+  "lostWalletAbroadBody": "Είστε στο ταξίδι {trip}. Αν μέσα ήταν το διαβατήριο ή η ταυτότητα, επικοινωνήστε με την πρεσβεία ή το προξενείο για έκτακτο ταξιδιωτικό έγγραφο και ενημερώστε την ταξιδιωτική ασφάλεια.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Άνοιγμα ταξιδιού",
+  "lostWalletPhoneTitle": "Πήραν και το κινητό σας;",
+  "lostWalletPhoneBody": "Μπλοκάρετε πρώτα την κάρτα SIM και τις τραπεζικές εφαρμογές. Υπάρχει πλάνο γι' αυτό.",
+  "lostWalletPhoneButton": "Έναρξη πλάνου για χαμένο κινητό",
+  "lostWalletStatementNote": "Το Vaultara σας θυμίζει μετά από 30, 60 και 90 ημέρες.",
+  "lostWalletStatementTitle": "Ελέγξτε τα αντίγραφα κίνησης",
+  "lostWalletStatementBody": "Ψάξτε για πληρωμές που δεν κάνατε από τότε που χάθηκε το πορτοφόλι.",
+  "lostWalletFoundButton": "Το βρήκα",
+  "lostWalletFoundTitle": "Καλά νέα!",
+  "lostWalletFoundBody": "Αυτές οι κάρτες έχουν ήδη μπλοκαριστεί, οπότε περιμένετε τις νέες:",
+  "lostWalletFoundNone": "Δεν έχει μπλοκαριστεί τίποτα ακόμα, συνεχίστε όπως πριν.",
+  "lostWalletFoundUnfreeze": "Αν παγώσατε κάρτες στην εφαρμογή της τράπεζας, ξεπαγώστε όσες δεν μπλοκάρατε.",
+  "lostWalletFoundConfirm": "Κλείσιμο πλάνου",
+  "lostWalletFoundOn": "Βρέθηκε στις {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Αναφορά χαμένων αντικειμένων",
+  "lostWalletReportTitle": "Αναφορά χαμένων αντικειμένων",
+  "lostWalletReportWhen": "Ημερομηνία: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Τι λείπει: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Αριθμός δήλωσης: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Αριθμός δήλωσης: δεν έχει δηλωθεί ακόμα",
+  "lostWalletReportCount": "{count, plural, =1{1 στοιχείο παρακάτω} other{{count} στοιχεία παρακάτω}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

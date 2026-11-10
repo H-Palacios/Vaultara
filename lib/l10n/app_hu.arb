@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Új otthonba költözik? Nézze meg, mit kell még frissítenie."
+  "lifePlanSuggestMove": "Új otthonba költözik? Nézze meg, mit kell még frissítenie.",
+  "keptInTitle": "Hol tartom",
+  "keptInSubtitle": "Hogy tudd, mit kell letiltani és pótolni, ha elveszik",
+  "keptInWallet": "Pénztárca",
+  "keptInBag": "Táska",
+  "keptInPhoneCase": "Telefontok",
+  "keptInTravelPouch": "Úti tárca",
+  "keptInCar": "Autó",
+  "keptInHome": "Otthon",
+  "keptInNone": "Nincs megadva",
+  "lostLineLabel": "Elveszett kártya letiltási száma",
+  "lostLineHelper": "Mentsd el most. A szám a kártyán van, így nem lesz meg, amikor kell.",
+  "lifeEventWalletLost": "Elvesztettem a pénztárcámat",
+  "lifeEventWalletLostBody": "Először tiltsd le a kártyáidat, aztán pótold egyenként az iratokat.",
+  "lifeEventWalletStolen": "Ellopták a pénztárcámat",
+  "lifeEventWalletStolenBody": "Azonnal tiltsd le a kártyáidat, és jelentsd a lopást. Utána figyeld a számláidat csalás miatt.",
+  "lifeVariantWalletQuestion": "Elveszett vagy ellopták?",
+  "lifeVariantLost": "Elveszett",
+  "lifeVariantStolen": "Ellopták",
+  "lifeTaskWalletFreezeCards": "Fagyaszd be a kártyáidat a banki appban, ha tudja",
+  "lifeTaskWalletRetrace": "Hívd fel a legutóbbi helyeket, ahol jártál, és kérdezz a talált tárgyaknál",
+  "lifeTaskWalletFraudAlert": "Kérd meg a hitelinformációs irodákat vagy az országod csalásellenes szolgálatát, hogy jelöljék meg az igazolványodat",
+  "lifeTaskWalletStatements": "Nézd át a bankszámlakivonatokat olyan fizetések után, amelyeket nem te indítottál",
+  "lifeTaskWalletSubscriptions": "Állítsd be az új kártyát az előfizetéseknél és csoportos beszedéseknél",
+  "lifeTaskWalletPayApps": "Add hozzá az új kártyákat a Google Payhez vagy az Apple Payhez",
+  "lifeTaskWalletHealthCard": "Kérj új kártyát az egészségbiztosítódtól",
+  "lifeTaskWalletTransport": "Tiltsd le a közlekedési vagy útdíjkártyát, és vidd át az egyenleget",
+  "lifeTaskWalletLoyalty": "Kérj új hűségkártyákat, hogy megmaradjanak a pontjaid",
+  "lifeTaskWalletLocks": "Ha kulcs vagy a címed is benne volt, gondold át a zárcserét",
+  "lifeTaskWalletInsurance": "Nézd meg, fedezi-e a biztosításod a pénztárcát és a készpénzt",
+  "lostWalletHeroTitle": "Elvesztetted a pénztárcádat?",
+  "lostWalletHeroBody": "A Vaultara megmutatja, mit tilts le először, mit pótolj, és kinek szólj.",
+  "lostWalletStartTitle": "Mi történt?",
+  "lostWalletEditTitle": "Adatok módosítása",
+  "lostWalletLostHint": "Leesett vagy otthagytam valahol",
+  "lostWalletStolenHint": "Valaki elvitte",
+  "lostWalletWhatMissing": "Mi hiányzik?",
+  "lostWalletStartButton": "Mutasd, mit tegyek",
+  "lostWalletCheckupTitle": "Pénztárca-ellenőrzés",
+  "lostWalletCheckupBody": "Készülj fel most, hogy semmi ne maradjon ki, ha elveszik.",
+  "lostWalletCheckupAllGood": "Minden kész. Ha valaha elveszik, felkészültél.",
+  "lostWalletSetPlaceBody": "Nyiss meg egy kártyát vagy iratot, és válaszd ki, hol tartod. Tedd ezt a személyi igazolványnál, a jogosítványnál és a kártyáknál.",
+  "lostWalletIssuePhotos": "{count, plural, other{Fénykép nélkül: {count}. Fényképpel gyorsabb a pótlás.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Letiltási szám nélküli kártyák: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Nálad lévő útlevelek vagy engedélyek: {count}. Tartsd őket otthon, ha nem utazol.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Amit magadnál tartasz",
+  "lostWalletNoPhoto": "Nincs fénykép",
+  "lostWalletHasPhoto": "Fénykép mentve",
+  "lostWalletNoLineShort": "Nincs letiltási szám",
+  "lostWalletHistory": "Korábbi esetek",
+  "lostWalletFound": "Megtalálva",
+  "walletCheckToggle": "Emlékeztess 6 havonta",
+  "walletCheckToggleBody": "Egy gyors pillantás arra, ami nálad van, hogy pontos legyen a lista.",
+  "walletCheckReminderTitle": "Pénztárca-ellenőrzés",
+  "walletCheckReminderBody": "Változott valami a pénztárcádban? Szánj rá egy percet, és frissítsd a Vaultarát.",
+  "lostWalletBlockNow": "Tiltsd le most",
+  "lostWalletBlockNowHint": "Hívd fel mindegyik bankot, vagy használd az appját. Minden perc számít.",
+  "lostWalletCall": "Hívás",
+  "lostWalletAddLine": "Szám hozzáadása",
+  "lostWalletNoLine": "Nincs mentett szám. Keresd meg a bank appjában vagy honlapján.",
+  "lostWalletBlocked": "Letiltva",
+  "lostWalletReplace": "Pótold ezeket",
+  "lostWalletReplaceHint": "Igényelj újakat, és mentsd el az új dátumot, amikor megérkeznek.",
+  "lostWalletArrived": "Megjött az új",
+  "lostWalletCheck": "Ellenőrizd ezeket",
+  "lostWalletCheckHint": "Kérdezd meg, kell-e új kártya vagy szám.",
+  "lostWalletPlanEmptyTitle": "Ott nem volt semmi mentve",
+  "lostWalletPlanEmpty": "Az alábbi lépések így is segítenek. Legközelebb válaszd ki, hol tartod a kártyáidat és iratokat.",
+  "lostWalletCaseTitle": "Rendőrségi ügyszám",
+  "lostWalletCaseHint": "Bankok, biztosítók és hivatalok gyakran kérik.",
+  "lostWalletCaseLabel": "Ügy- vagy hivatkozási szám",
+  "lostWalletCaseSaved": "Ügyszám mentve",
+  "lostWalletAbroadTitle": "Épp külföldön vagy?",
+  "lostWalletAbroadBody": "Úton vagy: {trip}. Ha benne volt az útleveled vagy a személyid, fordulj a nagykövetséghez vagy a konzulátushoz ideiglenes úti okmányért, és értesítsd az utasbiztosítódat.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Utazás megnyitása",
+  "lostWalletPhoneTitle": "A telefonodat is elvitték?",
+  "lostWalletPhoneBody": "Először tiltsd le a SIM-kártyát és a banki appokat. Erre külön terv van.",
+  "lostWalletPhoneButton": "Elveszett telefon terv indítása",
+  "lostWalletStatementNote": "A Vaultara 30, 60 és 90 nap után emlékeztet.",
+  "lostWalletStatementTitle": "Nézd át a bankszámlakivonataidat",
+  "lostWalletStatementBody": "Keress olyan fizetéseket, amelyeket a pénztárca eltűnése óta nem te indítottál.",
+  "lostWalletFoundButton": "Megtaláltam",
+  "lostWalletFoundTitle": "Jó hír!",
+  "lostWalletFoundBody": "Ezek a kártyák már le vannak tiltva, figyeld az újakat:",
+  "lostWalletFoundNone": "Még semmi sincs letiltva, folytathatod úgy, mint eddig.",
+  "lostWalletFoundUnfreeze": "Ha befagyasztottál kártyákat a banki appban, oldd fel azokat, amelyeket nem tiltottál le.",
+  "lostWalletFoundConfirm": "Terv lezárása",
+  "lostWalletFoundOn": "Megtalálva: {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Elveszett tárgyak jelentése",
+  "lostWalletReportTitle": "Elveszett tárgyak jelentése",
+  "lostWalletReportWhen": "Dátum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ami hiányzik: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Ügyszám: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Ügyszám: még nincs bejelentve",
+  "lostWalletReportCount": "{count, plural, other{Tételek alább: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

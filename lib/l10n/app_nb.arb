@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Flytter du til nytt hjem? Se hva annet du må oppdatere."
+  "lifePlanSuggestMove": "Flytter du til nytt hjem? Se hva annet du må oppdatere.",
+  "keptInTitle": "Hvor jeg oppbevarer det",
+  "keptInSubtitle": "Så du vet hva du skal sperre og erstatte hvis det blir borte",
+  "keptInWallet": "Lommebok",
+  "keptInBag": "Veske",
+  "keptInPhoneCase": "Mobildeksel",
+  "keptInTravelPouch": "Reiseveske",
+  "keptInCar": "Bil",
+  "keptInHome": "Hjemme",
+  "keptInNone": "Ikke valgt",
+  "lostLineLabel": "Sperrenummer for mistet kort",
+  "lostLineHelper": "Lagre det nå. Nummeret står på kortet, så du har det ikke når du trenger det.",
+  "lifeEventWalletLost": "Jeg har mistet lommeboken",
+  "lifeEventWalletLostBody": "Sperr kortene først, og erstatt så dokumentene ett om gangen.",
+  "lifeEventWalletStolen": "Lommeboken min er stjålet",
+  "lifeEventWalletStolenBody": "Sperr kortene med en gang og anmeld tyveriet. Følg så med på kontoene dine for svindel.",
+  "lifeVariantWalletQuestion": "Mistet eller stjålet?",
+  "lifeVariantLost": "Mistet",
+  "lifeVariantStolen": "Stjålet",
+  "lifeTaskWalletFreezeCards": "Frys kortene i bankappen hvis den har det",
+  "lifeTaskWalletRetrace": "Ring de siste stedene du var, og spør etter hittegods",
+  "lifeTaskWalletFraudAlert": "Be kredittbyråene eller landets svindeltjeneste om å merke legitimasjonen din",
+  "lifeTaskWalletStatements": "Sjekk kontoutskriftene for betalinger du ikke har gjort",
+  "lifeTaskWalletSubscriptions": "Legg inn det nye kortet på abonnementer og faste trekk",
+  "lifeTaskWalletPayApps": "Legg til de nye kortene i Google Pay eller Apple Pay",
+  "lifeTaskWalletHealthCard": "Be helseforsikringen din om et nytt medlemskort",
+  "lifeTaskWalletTransport": "Sperr reise- eller bompengekortet og flytt saldoen",
+  "lifeTaskWalletLoyalty": "Be om nye kundekort så du beholder poengene",
+  "lifeTaskWalletLocks": "Var det nøkler eller adressen din i den, vurder å bytte lås",
+  "lifeTaskWalletInsurance": "Sjekk om forsikringen dekker lommeboken og kontantene",
+  "lostWalletHeroTitle": "Mistet lommeboken?",
+  "lostWalletHeroBody": "Vaultara viser hva du skal sperre først, hva du skal erstatte og hvem du skal si fra til.",
+  "lostWalletStartTitle": "Hva skjedde?",
+  "lostWalletEditTitle": "Endre opplysningene",
+  "lostWalletLostHint": "Mistet eller glemt et sted",
+  "lostWalletStolenHint": "Noen tok den",
+  "lostWalletWhatMissing": "Hva mangler?",
+  "lostWalletStartButton": "Vis meg hva jeg skal gjøre",
+  "lostWalletCheckupTitle": "Lommeboksjekk",
+  "lostWalletCheckupBody": "Gjør deg klar nå, så ingenting blir glemt hvis den blir borte.",
+  "lostWalletCheckupAllGood": "Alt klart. Hvis den noen gang blir borte, er du forberedt.",
+  "lostWalletSetPlaceBody": "Åpne et kort eller dokument og velg hvor du oppbevarer det. Gjør det for legitimasjon, førerkort og kort.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 element har ikke bilde. Med bilde går det raskere å erstatte.} other{{count} elementer har ikke bilde. Med bilder går det raskere å erstatte.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 kort har ikke lagret sperrenummer.} other{{count} kort har ikke lagret sperrenummer.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Du har med et pass eller en tillatelse. La det ligge hjemme hvis du ikke reiser.} other{Du har med {count} pass eller tillatelser. La dem ligge hjemme hvis du ikke reiser.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Det du har med deg",
+  "lostWalletNoPhoto": "Ikke bilde",
+  "lostWalletHasPhoto": "Bilde lagret",
+  "lostWalletNoLineShort": "Ikke sperrenummer",
+  "lostWalletHistory": "Tidligere ganger",
+  "lostWalletFound": "Funnet",
+  "walletCheckToggle": "Minn meg på det hver 6. måned",
+  "walletCheckToggleBody": "En rask titt på det du har med deg, så listen stemmer.",
+  "walletCheckReminderTitle": "Lommeboksjekk",
+  "walletCheckReminderBody": "Har noe endret seg i lommeboken? Bruk et minutt på å oppdatere Vaultara.",
+  "lostWalletBlockNow": "Sperr disse nå",
+  "lostWalletBlockNowHint": "Ring hver bank eller bruk appen deres. Hvert minutt teller.",
+  "lostWalletCall": "Ring",
+  "lostWalletAddLine": "Legg til nummeret",
+  "lostWalletNoLine": "Ikke noe nummer lagret. Finn sperrenummeret i bankens app eller på nettsiden.",
+  "lostWalletBlocked": "Sperret",
+  "lostWalletReplace": "Erstatt disse",
+  "lostWalletReplaceHint": "Søk om nye, og lagre den nye datoen når de kommer.",
+  "lostWalletArrived": "Den nye har kommet",
+  "lostWalletCheck": "Sjekk disse",
+  "lostWalletCheckHint": "Spør om du trenger nytt kort eller nytt nummer.",
+  "lostWalletPlanEmptyTitle": "Ingenting lagret lå der",
+  "lostWalletPlanEmpty": "Stegene under hjelper likevel. Velg neste gang hvor du oppbevarer kort og dokumenter.",
+  "lostWalletCaseTitle": "Politiets saksnummer",
+  "lostWalletCaseHint": "Banker, forsikringsselskaper og etater spør ofte etter det.",
+  "lostWalletCaseLabel": "Saks- eller referansenummer",
+  "lostWalletCaseSaved": "Saksnummer lagret",
+  "lostWalletAbroadTitle": "I utlandet nå?",
+  "lostWalletAbroadBody": "Du er på reisen {trip}. Hvis passet eller legitimasjonen var i den, kontakt ambassaden eller konsulatet for et nødpass, og si fra til reiseforsikringen.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Åpne reisen",
+  "lostWalletPhoneTitle": "Ble telefonen også tatt?",
+  "lostWalletPhoneBody": "Sperr først SIM-kortet og bankappene. Det finnes en plan for det.",
+  "lostWalletPhoneButton": "Start planen for mistet telefon",
+  "lostWalletStatementNote": "Vaultara minner deg på det etter 30, 60 og 90 dager.",
+  "lostWalletStatementTitle": "Sjekk kontoutskriftene",
+  "lostWalletStatementBody": "Se etter betalinger du ikke har gjort siden lommeboken forsvant.",
+  "lostWalletFoundButton": "Jeg fant den",
+  "lostWalletFoundTitle": "Gode nyheter!",
+  "lostWalletFoundBody": "Disse kortene er allerede sperret, så følg med på de nye:",
+  "lostWalletFoundNone": "Ingenting er sperret ennå, så du kan fortsette som før.",
+  "lostWalletFoundUnfreeze": "Har du fryst kort i bankappen, lås opp dem du ikke har sperret.",
+  "lostWalletFoundConfirm": "Lukk planen",
+  "lostWalletFoundOn": "Funnet {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rapport over mistede ting",
+  "lostWalletReportTitle": "Rapport over mistede ting",
+  "lostWalletReportWhen": "Dato: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Det som mangler: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Saksnummer: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Saksnummer: ikke anmeldt ennå",
+  "lostWalletReportCount": "{count, plural, =1{1 element under} other{{count} elementer under}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -2285,5 +2285,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ti trasferisci in una nuova casa? Guarda cos'altro aggiornare."
+  "lifePlanSuggestMove": "Ti trasferisci in una nuova casa? Guarda cos'altro aggiornare.",
+  "keptInTitle": "Dove lo tengo",
+  "keptInSubtitle": "Per sapere cosa bloccare e sostituire se va perso",
+  "keptInWallet": "Portafoglio",
+  "keptInBag": "Borsa",
+  "keptInPhoneCase": "Custodia del telefono",
+  "keptInTravelPouch": "Marsupio da viaggio",
+  "keptInCar": "Auto",
+  "keptInHome": "A casa",
+  "keptInNone": "Non impostato",
+  "lostLineLabel": "Numero per carta smarrita",
+  "lostLineHelper": "Salvalo ora. Il numero è stampato sulla carta, quindi non lo avrai quando serve.",
+  "lifeEventWalletLost": "Ho perso il portafoglio",
+  "lifeEventWalletLostBody": "Blocca prima le carte, poi sostituisci i documenti uno alla volta.",
+  "lifeEventWalletStolen": "Mi hanno rubato il portafoglio",
+  "lifeEventWalletStolenBody": "Blocca subito le carte e denuncia il furto. Poi controlla i conti per eventuali frodi.",
+  "lifeVariantWalletQuestion": "Perso o rubato?",
+  "lifeVariantLost": "Perso",
+  "lifeVariantStolen": "Rubato",
+  "lifeTaskWalletFreezeCards": "Congela le carte nell'app della banca, se lo permette",
+  "lifeTaskWalletRetrace": "Chiama gli ultimi posti in cui sei stato e chiedi agli oggetti smarriti",
+  "lifeTaskWalletFraudAlert": "Chiedi alle centrali rischi o al servizio antifrode del tuo paese di segnalare il tuo documento",
+  "lifeTaskWalletStatements": "Controlla gli estratti conto per pagamenti che non hai fatto",
+  "lifeTaskWalletSubscriptions": "Metti la nuova carta su abbonamenti e addebiti diretti",
+  "lifeTaskWalletPayApps": "Aggiungi le nuove carte a Google Pay o Apple Pay",
+  "lifeTaskWalletHealthCard": "Chiedi una nuova tessera alla tua assicurazione sanitaria",
+  "lifeTaskWalletTransport": "Blocca la tessera dei trasporti o del pedaggio e trasferisci il credito",
+  "lifeTaskWalletLoyalty": "Chiedi nuove carte fedeltà per non perdere i punti",
+  "lifeTaskWalletLocks": "Se c'erano chiavi o il tuo indirizzo, valuta di cambiare le serrature",
+  "lifeTaskWalletInsurance": "Verifica se l'assicurazione copre il portafoglio e i contanti",
+  "lostWalletHeroTitle": "Hai perso il portafoglio?",
+  "lostWalletHeroBody": "Vaultara ti mostra cosa bloccare per primo, cosa sostituire e chi avvisare.",
+  "lostWalletStartTitle": "Cos'è successo?",
+  "lostWalletEditTitle": "Modifica i dettagli",
+  "lostWalletLostHint": "Caduto o dimenticato da qualche parte",
+  "lostWalletStolenHint": "Qualcuno l'ha preso",
+  "lostWalletWhatMissing": "Cosa manca?",
+  "lostWalletStartButton": "Dimmi cosa fare",
+  "lostWalletCheckupTitle": "Controllo del portafoglio",
+  "lostWalletCheckupBody": "Preparati ora, così non dimentichi nulla se si perde.",
+  "lostWalletCheckupAllGood": "Tutto pronto. Se mai si perdesse, sei preparato.",
+  "lostWalletSetPlaceBody": "Apri una carta o un documento e scegli dove lo tieni. Fallo per carta d'identità, patente e carte.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 elemento non ha foto. Con una foto si sostituisce prima.} other{{count} elementi non hanno foto. Con le foto si sostituiscono prima.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 carta non ha il numero per carta smarrita.} other{{count} carte non hanno il numero per carta smarrita.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Porti con te un passaporto o un permesso. Lascialo a casa se non viaggi.} other{Porti con te {count} passaporti o permessi. Lasciali a casa se non viaggi.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Cosa porti con te",
+  "lostWalletNoPhoto": "Nessuna foto",
+  "lostWalletHasPhoto": "Foto salvata",
+  "lostWalletNoLineShort": "Nessun numero per carta smarrita",
+  "lostWalletHistory": "Volte precedenti",
+  "lostWalletFound": "Ritrovato",
+  "walletCheckToggle": "Ricordamelo ogni 6 mesi",
+  "walletCheckToggleBody": "Un'occhiata veloce a cosa porti, così l'elenco resta giusto.",
+  "walletCheckReminderTitle": "Controllo del portafoglio",
+  "walletCheckReminderBody": "È cambiato qualcosa nel tuo portafoglio? Prenditi un minuto per aggiornare Vaultara.",
+  "lostWalletBlockNow": "Blocca subito",
+  "lostWalletBlockNowHint": "Chiama ogni banca o usa la sua app. Ogni minuto conta.",
+  "lostWalletCall": "Chiama",
+  "lostWalletAddLine": "Aggiungi il numero",
+  "lostWalletNoLine": "Nessun numero salvato. Trovalo nell'app o sul sito della tua banca.",
+  "lostWalletBlocked": "Bloccata",
+  "lostWalletReplace": "Da sostituire",
+  "lostWalletReplaceHint": "Richiedine di nuovi e salva la nuova data quando arrivano.",
+  "lostWalletArrived": "È arrivato il nuovo",
+  "lostWalletCheck": "Da controllare",
+  "lostWalletCheckHint": "Chiedi se ti serve una nuova carta o un nuovo numero.",
+  "lostWalletPlanEmptyTitle": "Lì non c'era nulla di salvato",
+  "lostWalletPlanEmpty": "I passaggi qui sotto aiutano comunque. La prossima volta scegli dove tieni carte e documenti.",
+  "lostWalletCaseTitle": "Numero di denuncia",
+  "lostWalletCaseHint": "Banche, assicurazioni e uffici lo chiedono spesso.",
+  "lostWalletCaseLabel": "Numero di denuncia o di riferimento",
+  "lostWalletCaseSaved": "Numero di denuncia salvato",
+  "lostWalletAbroadTitle": "Sei all'estero ora?",
+  "lostWalletAbroadBody": "Sei in viaggio: {trip}. Se c'era il passaporto o la carta d'identità, contatta l'ambasciata o il consolato per un documento di viaggio d'emergenza e avvisa l'assicurazione di viaggio.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Apri il viaggio",
+  "lostWalletPhoneTitle": "Hanno preso anche il telefono?",
+  "lostWalletPhoneBody": "Blocca prima la SIM e le app della banca. C'è un piano apposta.",
+  "lostWalletPhoneButton": "Avvia il piano telefono perso",
+  "lostWalletStatementNote": "Vaultara te lo ricorda dopo 30, 60 e 90 giorni.",
+  "lostWalletStatementTitle": "Controlla gli estratti conto",
+  "lostWalletStatementBody": "Cerca pagamenti che non hai fatto da quando hai perso il portafoglio.",
+  "lostWalletFoundButton": "L'ho ritrovato",
+  "lostWalletFoundTitle": "Buone notizie!",
+  "lostWalletFoundBody": "Queste carte sono già bloccate, quindi tieni d'occhio quelle nuove:",
+  "lostWalletFoundNone": "Non è stato ancora bloccato nulla, puoi continuare come prima.",
+  "lostWalletFoundUnfreeze": "Se hai congelato carte nell'app della banca, sblocca quelle che non hai bloccato.",
+  "lostWalletFoundConfirm": "Chiudi il piano",
+  "lostWalletFoundOn": "Ritrovato il {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rapporto oggetti smarriti",
+  "lostWalletReportTitle": "Rapporto oggetti smarriti",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Cosa manca: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Numero di denuncia: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Numero di denuncia: non ancora sporta",
+  "lostWalletReportCount": "{count, plural, =1{1 elemento elencato sotto} other{{count} elementi elencati sotto}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

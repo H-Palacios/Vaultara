@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "नए घर में जा रहे हैं? देखें और क्या अपडेट करना है।"
+  "lifePlanSuggestMove": "नए घर में जा रहे हैं? देखें और क्या अपडेट करना है।",
+  "keptInTitle": "मैं इसे कहाँ रखता हूँ",
+  "keptInSubtitle": "ताकि खो जाने पर आपको पता हो कि क्या ब्लॉक करना और क्या बदलना है",
+  "keptInWallet": "बटुआ",
+  "keptInBag": "बैग",
+  "keptInPhoneCase": "फ़ोन कवर",
+  "keptInTravelPouch": "यात्रा पाउच",
+  "keptInCar": "कार",
+  "keptInHome": "घर पर",
+  "keptInNone": "तय नहीं",
+  "lostLineLabel": "खोए कार्ड का नंबर",
+  "lostLineHelper": "इसे अभी सेव करें। नंबर कार्ड पर छपा होता है, इसलिए ज़रूरत के समय आपके पास नहीं होगा।",
+  "lifeEventWalletLost": "मेरा बटुआ खो गया",
+  "lifeEventWalletLostBody": "पहले अपने कार्ड ब्लॉक करें, फिर अपने दस्तावेज़ एक-एक करके बदलें।",
+  "lifeEventWalletStolen": "मेरा बटुआ चोरी हो गया",
+  "lifeEventWalletStolenBody": "तुरंत अपने कार्ड ब्लॉक करें और चोरी की रिपोर्ट करें। फिर धोखाधड़ी के लिए अपने खातों पर नज़र रखें।",
+  "lifeVariantWalletQuestion": "खोया या चोरी हुआ?",
+  "lifeVariantLost": "खो गया",
+  "lifeVariantStolen": "चोरी हुआ",
+  "lifeTaskWalletFreezeCards": "अगर बैंक ऐप में विकल्प हो तो अपने कार्ड फ़्रीज़ करें",
+  "lifeTaskWalletRetrace": "जिन आख़िरी जगहों पर आप गए थे वहाँ फ़ोन करें और खोई चीज़ों के बारे में पूछें",
+  "lifeTaskWalletFraudAlert": "क्रेडिट ब्यूरो या अपने देश की धोखाधड़ी सेवा से अपनी पहचान पर निशान लगाने को कहें",
+  "lifeTaskWalletStatements": "बैंक स्टेटमेंट में ऐसे भुगतान देखें जो आपने नहीं किए",
+  "lifeTaskWalletSubscriptions": "नया कार्ड अपनी सदस्यताओं और ऑटो-डेबिट पर लगाएँ",
+  "lifeTaskWalletPayApps": "नए कार्ड Google Pay या Apple Pay में जोड़ें",
+  "lifeTaskWalletHealthCard": "अपने स्वास्थ्य बीमा से नया सदस्य कार्ड माँगें",
+  "lifeTaskWalletTransport": "अपना ट्रांसपोर्ट या टोल कार्ड ब्लॉक करें और बैलेंस ट्रांसफ़र करें",
+  "lifeTaskWalletLoyalty": "नए लॉयल्टी कार्ड माँगें ताकि आपके पॉइंट बने रहें",
+  "lifeTaskWalletLocks": "अगर उसमें चाबियाँ या आपका पता था, तो ताले बदलने पर विचार करें",
+  "lifeTaskWalletInsurance": "देखें कि आपका बीमा बटुए और नकदी को कवर करता है या नहीं",
+  "lostWalletHeroTitle": "बटुआ खो गया?",
+  "lostWalletHeroBody": "Vaultara दिखाता है कि पहले क्या ब्लॉक करें, क्या बदलें और किसे बताएँ।",
+  "lostWalletStartTitle": "क्या हुआ?",
+  "lostWalletEditTitle": "विवरण बदलें",
+  "lostWalletLostHint": "गिर गया या कहीं छूट गया",
+  "lostWalletStolenHint": "किसी ने ले लिया",
+  "lostWalletWhatMissing": "क्या गायब है?",
+  "lostWalletStartButton": "मुझे बताएँ क्या करना है",
+  "lostWalletCheckupTitle": "बटुए की जाँच",
+  "lostWalletCheckupBody": "अभी तैयारी करें, ताकि खो जाने पर कुछ न भूलें।",
+  "lostWalletCheckupAllGood": "सब तैयार है। अगर कभी खो जाए, तो आप तैयार हैं।",
+  "lostWalletSetPlaceBody": "कोई कार्ड या दस्तावेज़ खोलें और चुनें कि आप उसे कहाँ रखते हैं। अपनी ID, लाइसेंस और कार्ड के लिए ऐसा करें।",
+  "lostWalletIssuePhotos": "{count, plural, other{बिना फ़ोटो: {count}। फ़ोटो से बदलना जल्दी होता है।}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{बिना ब्लॉक नंबर वाले कार्ड: {count}।}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{आपके पास पासपोर्ट या परमिट: {count}। यात्रा न कर रहे हों तो इन्हें घर पर रखें।}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "जो आप साथ रखते हैं",
+  "lostWalletNoPhoto": "कोई फ़ोटो नहीं",
+  "lostWalletHasPhoto": "फ़ोटो सेव हुई",
+  "lostWalletNoLineShort": "कोई ब्लॉक नंबर नहीं",
+  "lostWalletHistory": "पिछली बार",
+  "lostWalletFound": "मिल गया",
+  "walletCheckToggle": "हर 6 महीने याद दिलाएँ",
+  "walletCheckToggleBody": "आप जो साथ रखते हैं उस पर एक नज़र, ताकि सूची सही रहे।",
+  "walletCheckReminderTitle": "बटुए की जाँच",
+  "walletCheckReminderBody": "क्या आपके बटुए में कुछ बदला है? Vaultara अपडेट करने के लिए एक मिनट निकालें।",
+  "lostWalletBlockNow": "इन्हें अभी ब्लॉक करें",
+  "lostWalletBlockNowHint": "हर बैंक को फ़ोन करें या उसका ऐप इस्तेमाल करें। हर मिनट मायने रखता है।",
+  "lostWalletCall": "कॉल करें",
+  "lostWalletAddLine": "नंबर जोड़ें",
+  "lostWalletNoLine": "कोई नंबर सेव नहीं है। इसे अपने बैंक के ऐप या वेबसाइट पर ढूँढें।",
+  "lostWalletBlocked": "ब्लॉक हुआ",
+  "lostWalletReplace": "इन्हें बदलें",
+  "lostWalletReplaceHint": "नए के लिए आवेदन करें और आने पर नई तारीख़ सेव करें।",
+  "lostWalletArrived": "नया आ गया",
+  "lostWalletCheck": "इन्हें जाँचें",
+  "lostWalletCheckHint": "पूछें कि क्या आपको नया कार्ड या नंबर चाहिए।",
+  "lostWalletPlanEmptyTitle": "वहाँ कुछ भी सेव नहीं था",
+  "lostWalletPlanEmpty": "नीचे दिए गए कदम फिर भी मदद करते हैं। अगली बार चुनें कि आप कार्ड और दस्तावेज़ कहाँ रखते हैं।",
+  "lostWalletCaseTitle": "पुलिस केस नंबर",
+  "lostWalletCaseHint": "बैंक, बीमा कंपनियाँ और दफ़्तर अक्सर इसे माँगते हैं।",
+  "lostWalletCaseLabel": "केस या संदर्भ नंबर",
+  "lostWalletCaseSaved": "केस नंबर सेव हुआ",
+  "lostWalletAbroadTitle": "अभी विदेश में हैं?",
+  "lostWalletAbroadBody": "आप यात्रा {trip} पर हैं। अगर उसमें आपका पासपोर्ट या ID था, तो आपातकालीन यात्रा दस्तावेज़ के लिए अपने दूतावास या वाणिज्य दूतावास से संपर्क करें और अपने यात्रा बीमा को बताएँ।",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "यात्रा खोलें",
+  "lostWalletPhoneTitle": "क्या आपका फ़ोन भी ले लिया गया?",
+  "lostWalletPhoneBody": "पहले SIM कार्ड और बैंकिंग ऐप ब्लॉक करें। इसके लिए एक प्लान है।",
+  "lostWalletPhoneButton": "खोए फ़ोन का प्लान शुरू करें",
+  "lostWalletStatementNote": "Vaultara आपको 30, 60 और 90 दिन बाद याद दिलाएगा।",
+  "lostWalletStatementTitle": "अपने बैंक स्टेटमेंट जाँचें",
+  "lostWalletStatementBody": "ऐसे भुगतान देखें जो आपने बटुआ खोने के बाद नहीं किए।",
+  "lostWalletFoundButton": "मुझे मिल गया",
+  "lostWalletFoundTitle": "अच्छी ख़बर!",
+  "lostWalletFoundBody": "ये कार्ड पहले ही ब्लॉक हैं, इसलिए नए कार्ड का इंतज़ार करें:",
+  "lostWalletFoundNone": "अभी कुछ भी ब्लॉक नहीं हुआ, आप पहले की तरह जारी रख सकते हैं।",
+  "lostWalletFoundUnfreeze": "अगर आपने बैंक ऐप में कार्ड फ़्रीज़ किए थे, तो जो ब्लॉक नहीं किए उन्हें अनफ़्रीज़ करें।",
+  "lostWalletFoundConfirm": "प्लान बंद करें",
+  "lostWalletFoundOn": "{date} को मिला",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "खोई चीज़ों की रिपोर्ट",
+  "lostWalletReportTitle": "खोई चीज़ों की रिपोर्ट",
+  "lostWalletReportWhen": "तारीख़: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "क्या गायब है: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "केस नंबर: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "केस नंबर: अभी रिपोर्ट नहीं किया",
+  "lostWalletReportCount": "{count, plural, other{नीचे दी गई चीज़ें: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

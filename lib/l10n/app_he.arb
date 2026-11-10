@@ -2285,5 +2285,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "עוברים לבית חדש? ראו מה עוד צריך לעדכן."
+  "lifePlanSuggestMove": "עוברים לבית חדש? ראו מה עוד צריך לעדכן.",
+  "keptInTitle": "איפה אני שומר את זה",
+  "keptInSubtitle": "כדי לדעת מה לחסום ומה להחליף אם זה הולך לאיבוד",
+  "keptInWallet": "ארנק",
+  "keptInBag": "תיק",
+  "keptInPhoneCase": "כיסוי לטלפון",
+  "keptInTravelPouch": "פאוץ' לנסיעות",
+  "keptInCar": "רכב",
+  "keptInHome": "בבית",
+  "keptInNone": "לא נקבע",
+  "lostLineLabel": "מספר לחסימת כרטיס אבוד",
+  "lostLineHelper": "שמרו אותו עכשיו. המספר מודפס על הכרטיס, כך שלא יהיה לכם אותו כשתצטרכו.",
+  "lifeEventWalletLost": "איבדתי את הארנק",
+  "lifeEventWalletLostBody": "חסמו קודם את הכרטיסים, ואז החליפו את המסמכים אחד אחד.",
+  "lifeEventWalletStolen": "הארנק שלי נגנב",
+  "lifeEventWalletStolenBody": "חסמו את הכרטיסים מיד ודווחו על הגניבה. אחר כך עקבו אחרי החשבונות בגלל הונאות.",
+  "lifeVariantWalletQuestion": "אבד או נגנב?",
+  "lifeVariantLost": "אבד",
+  "lifeVariantStolen": "נגנב",
+  "lifeTaskWalletFreezeCards": "הקפיאו את הכרטיסים באפליקציית הבנק אם יש בה אפשרות כזו",
+  "lifeTaskWalletRetrace": "התקשרו למקומות האחרונים שהייתם בהם ושאלו על אבדות",
+  "lifeTaskWalletFraudAlert": "בקשו מלשכות האשראי או משירות ההונאות במדינה שלכם לסמן את תעודת הזהות",
+  "lifeTaskWalletStatements": "בדקו את דפי החשבון וחפשו חיובים שלא ביצעתם",
+  "lifeTaskWalletSubscriptions": "הגדירו את הכרטיס החדש במינויים ובהוראות הקבע",
+  "lifeTaskWalletPayApps": "הוסיפו את הכרטיסים החדשים ל-Google Pay או ל-Apple Pay",
+  "lifeTaskWalletHealthCard": "בקשו כרטיס חבר חדש מקופת החולים או מביטוח הבריאות",
+  "lifeTaskWalletTransport": "חסמו את כרטיס התחבורה או האגרה והעבירו את היתרה",
+  "lifeTaskWalletLoyalty": "בקשו כרטיסי מועדון חדשים כדי לשמור על הנקודות",
+  "lifeTaskWalletLocks": "אם היו בו מפתחות או הכתובת שלכם, שקלו להחליף מנעולים",
+  "lifeTaskWalletInsurance": "בדקו אם הביטוח מכסה את הארנק והמזומן",
+  "lostWalletHeroTitle": "איבדתם את הארנק?",
+  "lostWalletHeroBody": "Vaultara מראה מה לחסום קודם, מה להחליף ולמי לספר.",
+  "lostWalletStartTitle": "מה קרה?",
+  "lostWalletEditTitle": "שינוי הפרטים",
+  "lostWalletLostHint": "נפל או נשכח איפשהו",
+  "lostWalletStolenHint": "מישהו לקח אותו",
+  "lostWalletWhatMissing": "מה חסר?",
+  "lostWalletStartButton": "הראו לי מה לעשות",
+  "lostWalletCheckupTitle": "בדיקת ארנק",
+  "lostWalletCheckupBody": "התכוננו עכשיו, כדי ששום דבר לא יישכח אם הוא ילך לאיבוד.",
+  "lostWalletCheckupAllGood": "הכול מוכן. אם הוא ילך לאיבוד אי פעם, אתם מוכנים.",
+  "lostWalletSetPlaceBody": "פתחו כרטיס או מסמך ובחרו איפה אתם שומרים אותו. עשו זאת לתעודת הזהות, לרישיון ולכרטיסים.",
+  "lostWalletIssuePhotos": "{count, plural, other{בלי תמונה: {count}. עם תמונה ההחלפה מהירה יותר.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{כרטיסים בלי מספר חסימה: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{דרכונים או היתרים שאתם נושאים: {count}. השאירו אותם בבית אם אינכם בנסיעה.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "מה אתם נושאים",
+  "lostWalletNoPhoto": "אין תמונה",
+  "lostWalletHasPhoto": "התמונה נשמרה",
+  "lostWalletNoLineShort": "אין מספר חסימה",
+  "lostWalletHistory": "פעמים קודמות",
+  "lostWalletFound": "נמצא",
+  "walletCheckToggle": "להזכיר לי כל 6 חודשים",
+  "walletCheckToggleBody": "מבט מהיר על מה שאתם נושאים, כדי שהרשימה תהיה נכונה.",
+  "walletCheckReminderTitle": "בדיקת ארנק",
+  "walletCheckReminderBody": "משהו השתנה בארנק? הקדישו דקה לעדכן את Vaultara.",
+  "lostWalletBlockNow": "חסמו את אלה עכשיו",
+  "lostWalletBlockNowHint": "התקשרו לכל בנק או השתמשו באפליקציה שלו. כל דקה חשובה.",
+  "lostWalletCall": "התקשרות",
+  "lostWalletAddLine": "הוספת המספר",
+  "lostWalletNoLine": "לא נשמר מספר. מצאו אותו באפליקציה או באתר של הבנק.",
+  "lostWalletBlocked": "חסום",
+  "lostWalletReplace": "החליפו את אלה",
+  "lostWalletReplaceHint": "הגישו בקשה לחדשים ושמרו את התאריך החדש כשהם מגיעים.",
+  "lostWalletArrived": "החדש הגיע",
+  "lostWalletCheck": "בדקו את אלה",
+  "lostWalletCheckHint": "שאלו אם צריך כרטיס או מספר חדש.",
+  "lostWalletPlanEmptyTitle": "לא היה שם שום דבר שמור",
+  "lostWalletPlanEmpty": "השלבים למטה עדיין עוזרים. בפעם הבאה, בחרו איפה אתם שומרים כרטיסים ומסמכים.",
+  "lostWalletCaseTitle": "מספר תיק במשטרה",
+  "lostWalletCaseHint": "בנקים, חברות ביטוח ומשרדים מבקשים אותו לעיתים קרובות.",
+  "lostWalletCaseLabel": "מספר תיק או אסמכתה",
+  "lostWalletCaseSaved": "מספר התיק נשמר",
+  "lostWalletAbroadTitle": "בחו\"ל עכשיו?",
+  "lostWalletAbroadBody": "אתם בנסיעה {trip}. אם הדרכון או תעודת הזהות היו בפנים, פנו לשגרירות או לקונסוליה לקבלת תעודת מעבר ועדכנו את ביטוח הנסיעות.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "פתיחת הנסיעה",
+  "lostWalletPhoneTitle": "גם הטלפון נלקח?",
+  "lostWalletPhoneBody": "חסמו קודם את כרטיס ה-SIM ואת אפליקציות הבנק. יש לזה תוכנית.",
+  "lostWalletPhoneButton": "התחלת תוכנית לטלפון אבוד",
+  "lostWalletStatementNote": "Vaultara תזכיר לכם אחרי 30, 60 ו-90 ימים.",
+  "lostWalletStatementTitle": "בדקו את דפי החשבון",
+  "lostWalletStatementBody": "חפשו חיובים שלא ביצעתם מאז שהארנק נעלם.",
+  "lostWalletFoundButton": "מצאתי אותו",
+  "lostWalletFoundTitle": "חדשות טובות!",
+  "lostWalletFoundBody": "הכרטיסים האלה כבר חסומים, אז שימו לב לחדשים:",
+  "lostWalletFoundNone": "עוד לא נחסם כלום, אפשר להמשיך כרגיל.",
+  "lostWalletFoundUnfreeze": "אם הקפאתם כרטיסים באפליקציית הבנק, בטלו את ההקפאה של אלה שלא חסמתם.",
+  "lostWalletFoundConfirm": "סגירת התוכנית",
+  "lostWalletFoundOn": "נמצא ב-{date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "דוח פריטים שאבדו",
+  "lostWalletReportTitle": "דוח פריטים שאבדו",
+  "lostWalletReportWhen": "תאריך: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "מה חסר: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "מספר תיק: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "מספר תיק: עוד לא דווח",
+  "lostWalletReportCount": "{count, plural, other{פריטים למטה: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

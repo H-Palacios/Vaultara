@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ga je verhuizen? Bekijk wat je nog meer moet bijwerken."
+  "lifePlanSuggestMove": "Ga je verhuizen? Bekijk wat je nog meer moet bijwerken.",
+  "keptInTitle": "Waar ik het bewaar",
+  "keptInSubtitle": "Zodat je weet wat je moet blokkeren en vervangen als het kwijtraakt",
+  "keptInWallet": "Portemonnee",
+  "keptInBag": "Tas",
+  "keptInPhoneCase": "Telefoonhoesje",
+  "keptInTravelPouch": "Reistasje",
+  "keptInCar": "Auto",
+  "keptInHome": "Thuis",
+  "keptInNone": "Niet ingesteld",
+  "lostLineLabel": "Telefoonnummer voor verloren pas",
+  "lostLineHelper": "Sla het nu op. Het nummer staat op de pas, dus je hebt het niet als je het nodig hebt.",
+  "lifeEventWalletLost": "Ik ben mijn portemonnee kwijt",
+  "lifeEventWalletLostBody": "Blokkeer eerst je passen en vervang daarna je documenten een voor een.",
+  "lifeEventWalletStolen": "Mijn portemonnee is gestolen",
+  "lifeEventWalletStolenBody": "Blokkeer je passen meteen en doe aangifte. Let daarna op fraude op je rekeningen.",
+  "lifeVariantWalletQuestion": "Verloren of gestolen?",
+  "lifeVariantLost": "Verloren",
+  "lifeVariantStolen": "Gestolen",
+  "lifeTaskWalletFreezeCards": "Bevries je passen in je bankapp als die dat kan",
+  "lifeTaskWalletRetrace": "Bel de laatste plekken waar je was en vraag naar gevonden voorwerpen",
+  "lifeTaskWalletFraudAlert": "Vraag kredietbureaus of de fraudedienst van je land om je identiteitsbewijs te markeren",
+  "lifeTaskWalletStatements": "Controleer je bankafschriften op betalingen die je niet hebt gedaan",
+  "lifeTaskWalletSubscriptions": "Zet de nieuwe pas op je abonnementen en automatische incasso's",
+  "lifeTaskWalletPayApps": "Voeg de nieuwe passen toe aan Google Pay of Apple Pay",
+  "lifeTaskWalletHealthCard": "Vraag je zorgverzekeraar om een nieuwe zorgpas",
+  "lifeTaskWalletTransport": "Blokkeer je ov- of tolkaart en zet het saldo over",
+  "lifeTaskWalletLoyalty": "Vraag nieuwe klantenkaarten aan zodat je je punten houdt",
+  "lifeTaskWalletLocks": "Zaten er sleutels of je adres in, overweeg dan de sloten te vervangen",
+  "lifeTaskWalletInsurance": "Kijk of je verzekering de portemonnee en contant geld dekt",
+  "lostWalletHeroTitle": "Portemonnee kwijt?",
+  "lostWalletHeroBody": "Vaultara laat zien wat je eerst blokkeert, wat je vervangt en wie je inlicht.",
+  "lostWalletStartTitle": "Wat is er gebeurd?",
+  "lostWalletEditTitle": "Gegevens wijzigen",
+  "lostWalletLostHint": "Laten vallen of ergens laten liggen",
+  "lostWalletStolenHint": "Iemand heeft hem gepakt",
+  "lostWalletWhatMissing": "Wat is er weg?",
+  "lostWalletStartButton": "Laat zien wat ik moet doen",
+  "lostWalletCheckupTitle": "Portemonnee-check",
+  "lostWalletCheckupBody": "Bereid je nu voor, zodat je niets vergeet als hij kwijtraakt.",
+  "lostWalletCheckupAllGood": "Alles klaar. Als hij ooit kwijtraakt, ben je voorbereid.",
+  "lostWalletSetPlaceBody": "Open een pas of document en kies waar je het bewaart. Doe dit voor je ID, rijbewijs en passen.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 item heeft geen foto. Met een foto gaat vervangen sneller.} other{{count} items hebben geen foto. Met foto's gaat vervangen sneller.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{Bij 1 pas is geen nummer voor verloren passen opgeslagen.} other{Bij {count} passen is geen nummer voor verloren passen opgeslagen.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Je hebt een paspoort of vergunning bij je. Laat het thuis tenzij je reist.} other{Je hebt {count} paspoorten of vergunningen bij je. Laat ze thuis tenzij je reist.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Wat je bij je hebt",
+  "lostWalletNoPhoto": "Geen foto",
+  "lostWalletHasPhoto": "Foto opgeslagen",
+  "lostWalletNoLineShort": "Geen nummer voor verloren pas",
+  "lostWalletHistory": "Eerdere keren",
+  "lostWalletFound": "Gevonden",
+  "walletCheckToggle": "Elke 6 maanden herinneren",
+  "walletCheckToggleBody": "Even kijken wat je bij je hebt, zodat de lijst klopt.",
+  "walletCheckReminderTitle": "Portemonnee-check",
+  "walletCheckReminderBody": "Is er iets veranderd in je portemonnee? Neem even een minuut om Vaultara bij te werken.",
+  "lostWalletBlockNow": "Nu blokkeren",
+  "lostWalletBlockNowHint": "Bel elke bank of gebruik de app. Elke minuut telt.",
+  "lostWalletCall": "Bellen",
+  "lostWalletAddLine": "Nummer toevoegen",
+  "lostWalletNoLine": "Geen nummer opgeslagen. Zoek het nummer voor verloren passen in de app of op de site van je bank.",
+  "lostWalletBlocked": "Geblokkeerd",
+  "lostWalletReplace": "Vervangen",
+  "lostWalletReplaceHint": "Vraag nieuwe aan en sla de nieuwe datum op zodra ze binnen zijn.",
+  "lostWalletArrived": "Nieuwe is binnen",
+  "lostWalletCheck": "Controleren",
+  "lostWalletCheckHint": "Vraag of je een nieuwe pas of nieuw nummer nodig hebt.",
+  "lostWalletPlanEmptyTitle": "Daar was niets opgeslagen",
+  "lostWalletPlanEmpty": "De stappen hieronder helpen toch. Kies de volgende keer waar je je passen en documenten bewaart.",
+  "lostWalletCaseTitle": "Proces-verbaalnummer",
+  "lostWalletCaseHint": "Banken, verzekeraars en instanties vragen er vaak om.",
+  "lostWalletCaseLabel": "Zaak- of referentienummer",
+  "lostWalletCaseSaved": "Nummer opgeslagen",
+  "lostWalletAbroadTitle": "Nu in het buitenland?",
+  "lostWalletAbroadBody": "Je bent op reis: {trip}. Zat je paspoort of ID erin, neem dan contact op met je ambassade of consulaat voor een noodreisdocument en meld het bij je reisverzekeraar.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Reis openen",
+  "lostWalletPhoneTitle": "Is je telefoon ook meegenomen?",
+  "lostWalletPhoneBody": "Blokkeer eerst de simkaart en je bankapps. Daar is een plan voor.",
+  "lostWalletPhoneButton": "Plan voor verloren telefoon starten",
+  "lostWalletStatementNote": "Vaultara herinnert je na 30, 60 en 90 dagen.",
+  "lostWalletStatementTitle": "Controleer je bankafschriften",
+  "lostWalletStatementBody": "Zoek naar betalingen die je niet hebt gedaan sinds je portemonnee weg is.",
+  "lostWalletFoundButton": "Ik heb hem gevonden",
+  "lostWalletFoundTitle": "Goed nieuws!",
+  "lostWalletFoundBody": "Deze passen zijn al geblokkeerd, dus let op de nieuwe:",
+  "lostWalletFoundNone": "Er is nog niets geblokkeerd, je kunt gewoon doorgaan.",
+  "lostWalletFoundUnfreeze": "Heb je passen bevroren in je bankapp, ontdooi dan de passen die je niet hebt geblokkeerd.",
+  "lostWalletFoundConfirm": "Plan sluiten",
+  "lostWalletFoundOn": "Gevonden op {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Rapport verloren spullen",
+  "lostWalletReportTitle": "Rapport verloren spullen",
+  "lostWalletReportWhen": "Datum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Wat er weg is: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Proces-verbaalnummer: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Proces-verbaalnummer: nog geen aangifte gedaan",
+  "lostWalletReportCount": "{count, plural, =1{1 item hieronder} other{{count} items hieronder}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

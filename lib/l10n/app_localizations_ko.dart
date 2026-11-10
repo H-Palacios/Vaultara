@@ -7115,4 +7115,324 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => '새 집으로 이사하나요? 또 무엇을 바꿔야 하는지 확인하세요.';
+
+  @override
+  String get keptInTitle => '보관 장소';
+
+  @override
+  String get keptInSubtitle => '잃어버렸을 때 무엇을 정지하고 재발급할지 알 수 있도록';
+
+  @override
+  String get keptInWallet => '지갑';
+
+  @override
+  String get keptInBag => '가방';
+
+  @override
+  String get keptInPhoneCase => '휴대폰 케이스';
+
+  @override
+  String get keptInTravelPouch => '여행용 파우치';
+
+  @override
+  String get keptInCar => '자동차';
+
+  @override
+  String get keptInHome => '집';
+
+  @override
+  String get keptInNone => '설정 안 함';
+
+  @override
+  String get lostLineLabel => '분실 카드 신고 번호';
+
+  @override
+  String get lostLineHelper => '지금 저장하세요. 번호가 카드에 인쇄되어 있어서 필요할 때는 손에 없습니다.';
+
+  @override
+  String get lifeEventWalletLost => '지갑을 잃어버렸어요';
+
+  @override
+  String get lifeEventWalletLostBody => '먼저 카드를 정지하고, 그다음 서류를 하나씩 재발급하세요.';
+
+  @override
+  String get lifeEventWalletStolen => '지갑을 도난당했어요';
+
+  @override
+  String get lifeEventWalletStolenBody => '즉시 카드를 정지하고 도난을 신고하세요. 그 후 계좌에서 사기 거래가 없는지 살펴보세요.';
+
+  @override
+  String get lifeVariantWalletQuestion => '분실인가요, 도난인가요?';
+
+  @override
+  String get lifeVariantLost => '분실';
+
+  @override
+  String get lifeVariantStolen => '도난';
+
+  @override
+  String get lifeTaskWalletFreezeCards => '은행 앱에 잠금 기능이 있으면 카드를 일시 정지하세요';
+
+  @override
+  String get lifeTaskWalletRetrace => '마지막으로 들른 곳에 전화해 분실물을 문의하세요';
+
+  @override
+  String get lifeTaskWalletFraudAlert => '신용정보기관이나 국가 사기 방지 기관에 신분증 도용 방지를 요청하세요';
+
+  @override
+  String get lifeTaskWalletStatements => '본인이 하지 않은 결제가 있는지 명세서를 확인하세요';
+
+  @override
+  String get lifeTaskWalletSubscriptions => '새 카드를 구독과 자동이체에 등록하세요';
+
+  @override
+  String get lifeTaskWalletPayApps => '새 카드를 Google Pay 또는 Apple Pay에 추가하세요';
+
+  @override
+  String get lifeTaskWalletHealthCard => '건강보험에 새 회원 카드를 요청하세요';
+
+  @override
+  String get lifeTaskWalletTransport => '교통카드나 하이패스 카드를 정지하고 잔액을 옮기세요';
+
+  @override
+  String get lifeTaskWalletLoyalty => '포인트를 지키려면 멤버십 카드를 재발급하세요';
+
+  @override
+  String get lifeTaskWalletLocks => '열쇠나 주소가 들어 있었다면 자물쇠 교체를 고려하세요';
+
+  @override
+  String get lifeTaskWalletInsurance => '보험이 지갑과 현금을 보상하는지 확인하세요';
+
+  @override
+  String get lostWalletHeroTitle => '지갑을 잃어버리셨나요?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara가 먼저 정지할 것, 재발급할 것, 알릴 곳을 보여 드립니다.';
+
+  @override
+  String get lostWalletStartTitle => '무슨 일이 있었나요?';
+
+  @override
+  String get lostWalletEditTitle => '세부 정보 변경';
+
+  @override
+  String get lostWalletLostHint => '떨어뜨렸거나 어딘가에 두고 왔어요';
+
+  @override
+  String get lostWalletStolenHint => '누군가 가져갔어요';
+
+  @override
+  String get lostWalletWhatMissing => '무엇이 없어졌나요?';
+
+  @override
+  String get lostWalletStartButton => '할 일 보기';
+
+  @override
+  String get lostWalletCheckupTitle => '지갑 점검';
+
+  @override
+  String get lostWalletCheckupBody => '잃어버려도 잊는 것이 없도록 지금 준비하세요.';
+
+  @override
+  String get lostWalletCheckupAllGood => '준비 완료. 언젠가 잃어버려도 걱정 없어요.';
+
+  @override
+  String get lostWalletSetPlaceBody => '카드나 서류를 열고 보관 장소를 선택하세요. 신분증, 운전면허증, 카드에 설정하세요.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '사진 없음: $count개. 사진이 있으면 재발급이 빨라요.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '분실 신고 번호가 없는 카드: $count장.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '가지고 다니는 여권이나 허가증: $count개. 여행할 때가 아니면 집에 두세요.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => '가지고 다니는 것';
+
+  @override
+  String get lostWalletNoPhoto => '사진 없음';
+
+  @override
+  String get lostWalletHasPhoto => '사진 저장됨';
+
+  @override
+  String get lostWalletNoLineShort => '신고 번호 없음';
+
+  @override
+  String get lostWalletHistory => '이전 기록';
+
+  @override
+  String get lostWalletFound => '찾음';
+
+  @override
+  String get walletCheckToggle => '6개월마다 알림';
+
+  @override
+  String get walletCheckToggleBody => '목록이 정확하도록 가지고 다니는 것을 빠르게 확인해요.';
+
+  @override
+  String get walletCheckReminderTitle => '지갑 점검';
+
+  @override
+  String get walletCheckReminderBody => '지갑 속에 바뀐 것이 있나요? 1분만 내서 Vaultara를 업데이트하세요.';
+
+  @override
+  String get lostWalletBlockNow => '지금 정지하세요';
+
+  @override
+  String get lostWalletBlockNowHint => '각 은행에 전화하거나 앱을 사용하세요. 1분 1초가 중요해요.';
+
+  @override
+  String get lostWalletCall => '전화';
+
+  @override
+  String get lostWalletAddLine => '번호 추가';
+
+  @override
+  String get lostWalletNoLine => '저장된 번호가 없습니다. 은행 앱이나 웹사이트에서 찾아보세요.';
+
+  @override
+  String get lostWalletBlocked => '정지됨';
+
+  @override
+  String get lostWalletReplace => '재발급하세요';
+
+  @override
+  String get lostWalletReplaceHint => '새로 신청하고 도착하면 새 날짜를 저장하세요.';
+
+  @override
+  String get lostWalletArrived => '새로 받음';
+
+  @override
+  String get lostWalletCheck => '확인하세요';
+
+  @override
+  String get lostWalletCheckHint => '새 카드나 번호가 필요한지 문의하세요.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => '그곳에 저장된 것이 없었어요';
+
+  @override
+  String get lostWalletPlanEmpty => '아래 단계는 그래도 도움이 됩니다. 다음에는 카드와 서류의 보관 장소를 설정하세요.';
+
+  @override
+  String get lostWalletCaseTitle => '경찰 사건 번호';
+
+  @override
+  String get lostWalletCaseHint => '은행, 보험사, 기관에서 자주 요청합니다.';
+
+  @override
+  String get lostWalletCaseLabel => '사건 또는 접수 번호';
+
+  @override
+  String get lostWalletCaseSaved => '사건 번호 저장됨';
+
+  @override
+  String get lostWalletAbroadTitle => '지금 해외에 계신가요?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return '$trip 여행 중입니다. 여권이나 신분증이 들어 있었다면 대사관이나 영사관에 긴급 여행 증명서를 문의하고 여행자 보험에도 알리세요.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => '여행 열기';
+
+  @override
+  String get lostWalletPhoneTitle => '휴대폰도 가져갔나요?';
+
+  @override
+  String get lostWalletPhoneBody => '먼저 SIM 카드와 은행 앱을 정지하세요. 이를 위한 플랜이 있어요.';
+
+  @override
+  String get lostWalletPhoneButton => '휴대폰 분실 플랜 시작';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara가 30일, 60일, 90일 후에 알려 드립니다.';
+
+  @override
+  String get lostWalletStatementTitle => '명세서를 확인하세요';
+
+  @override
+  String get lostWalletStatementBody => '지갑을 잃어버린 후 본인이 하지 않은 결제를 찾아보세요.';
+
+  @override
+  String get lostWalletFoundButton => '찾았어요';
+
+  @override
+  String get lostWalletFoundTitle => '좋은 소식이에요!';
+
+  @override
+  String get lostWalletFoundBody => '이 카드들은 이미 정지되었으니 새 카드를 기다리세요:';
+
+  @override
+  String get lostWalletFoundNone => '아직 정지한 것이 없으니 전처럼 사용하셔도 돼요.';
+
+  @override
+  String get lostWalletFoundUnfreeze => '은행 앱에서 카드를 일시 정지했다면, 정지 신고하지 않은 카드는 해제하세요.';
+
+  @override
+  String get lostWalletFoundConfirm => '플랜 닫기';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '$date에 찾음';
+  }
+
+  @override
+  String get lostWalletReport => '분실물 보고서';
+
+  @override
+  String get lostWalletReportTitle => '분실물 보고서';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return '날짜: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return '없어진 것: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return '사건 번호: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => '사건 번호: 아직 신고 안 함';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '아래 항목: $count개',
+    );
+    return '$_temp0';
+  }
 }

@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "نوي کور ته ځئ؟ وګورئ نور څه باید تازه کړئ."
+  "lifePlanSuggestMove": "نوي کور ته ځئ؟ وګورئ نور څه باید تازه کړئ.",
+  "keptInTitle": "زه یې چېرته ساتم",
+  "keptInSubtitle": "ترڅو پوه شئ که ورک شو څه بند او بدل کړئ",
+  "keptInWallet": "بټوه",
+  "keptInBag": "بکس",
+  "keptInPhoneCase": "د تلیفون پوښ",
+  "keptInTravelPouch": "د سفر کڅوړه",
+  "keptInCar": "موټر",
+  "keptInHome": "په کور کې",
+  "keptInNone": "نه دی ټاکل شوی",
+  "lostLineLabel": "د ورک کارت د بندولو شمېره",
+  "lostLineHelper": "اوس یې خوندي کړئ. شمېره په کارت چاپ ده، نو کله چې اړتیا وي له تاسو سره به نه وي.",
+  "lifeEventWalletLost": "زما بټوه ورکه شوه",
+  "lifeEventWalletLostBody": "لومړی خپل کارتونه بند کړئ، بیا خپل اسناد یو په یو بدل کړئ.",
+  "lifeEventWalletStolen": "زما بټوه غلا شوه",
+  "lifeEventWalletStolenBody": "سمدستي خپل کارتونه بند کړئ او د غلا راپور ورکړئ. بیا خپل حسابونه د درغلۍ لپاره وڅارئ.",
+  "lifeVariantWalletQuestion": "ورکه شوې که غلا شوې؟",
+  "lifeVariantLost": "ورکه شوې",
+  "lifeVariantStolen": "غلا شوې",
+  "lifeTaskWalletFreezeCards": "که د بانک اپ دا اسانتیا لري، کارتونه په هغې کې کنګل کړئ",
+  "lifeTaskWalletRetrace": "وروستیو ځایونو ته زنګ ووهئ چې هلته وئ او د ورکو شیانو په اړه وپوښتئ",
+  "lifeTaskWalletFraudAlert": "د کریډټ دفترونو یا د خپل هېواد د درغلۍ خدمت څخه وغواړئ چې ستاسو پېژند په نښه کړي",
+  "lifeTaskWalletStatements": "خپل بانکي صورتحسابونه د هغو تادیو لپاره وګورئ چې تاسو نه دي کړي",
+  "lifeTaskWalletSubscriptions": "نوی کارت په ګډونونو او اتومات تادیو کې ولګوئ",
+  "lifeTaskWalletPayApps": "نوي کارتونه Google Pay یا Apple Pay ته ور اضافه کړئ",
+  "lifeTaskWalletHealthCard": "له خپل روغتیايي بیمې نوی غړیتوب کارت وغواړئ",
+  "lifeTaskWalletTransport": "د ټرانسپورټ یا لارې د محصول کارت بند کړئ او پاتې پیسې ولېږدوئ",
+  "lifeTaskWalletLoyalty": "نوي وفاداري کارتونه وغواړئ ترڅو خپل امتیازونه وساتئ",
+  "lifeTaskWalletLocks": "که کلي یا ستاسو پته په کې وه، د قلفونو بدلولو په اړه فکر وکړئ",
+  "lifeTaskWalletInsurance": "وګورئ چې ستاسو بیمه بټوه او نغدې پیسې پوښي که نه",
+  "lostWalletHeroTitle": "بټوه مو ورکه شوې؟",
+  "lostWalletHeroBody": "Vaultara ښيي چې لومړی څه بند کړئ، څه بدل کړئ او چا ته ووایاست.",
+  "lostWalletStartTitle": "څه پېښ شول؟",
+  "lostWalletEditTitle": "جزییات بدل کړئ",
+  "lostWalletLostHint": "ولوېده یا مې چېرته هېره کړه",
+  "lostWalletStolenHint": "یو چا واخیسته",
+  "lostWalletWhatMissing": "څه ورک دي؟",
+  "lostWalletStartButton": "راته وښایاست چې څه وکړم",
+  "lostWalletCheckupTitle": "د بټوې کتنه",
+  "lostWalletCheckupBody": "اوس چمتو شئ ترڅو که ورکه شي هېڅ شی هېر نه شي.",
+  "lostWalletCheckupAllGood": "هر څه چمتو دي. که کله ورکه شي، تاسو چمتو یاست.",
+  "lostWalletSetPlaceBody": "یو کارت یا سند پرانیزئ او وټاکئ چې چېرته یې ساتئ. دا د پېژند کارت، جواز او کارتونو لپاره وکړئ.",
+  "lostWalletIssuePhotos": "{count, plural, other{بې عکسه: {count}. د عکس سره بدلول ګړندي دي.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{بې د بندولو شمېرې کارتونه: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{له تاسو سره پاسپورټونه یا اجازې: {count}. که سفر نه کوئ په کور کې یې پرېږدئ.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "څه له ځانه سره لرئ",
+  "lostWalletNoPhoto": "عکس نشته",
+  "lostWalletHasPhoto": "عکس خوندي شو",
+  "lostWalletNoLineShort": "د بندولو شمېره نشته",
+  "lostWalletHistory": "پخواني ځلې",
+  "lostWalletFound": "پیدا شوه",
+  "walletCheckToggle": "هر ۶ میاشتې مې یادونه وکړه",
+  "walletCheckToggleBody": "هغه څه ته چټکه کتنه چې له ځانه سره یې لرئ، ترڅو لېست سم پاتې شي.",
+  "walletCheckReminderTitle": "د بټوې کتنه",
+  "walletCheckReminderBody": "ستاسو په بټوه کې څه بدل شوي؟ یوه دقیقه ونیسئ او Vaultara تازه کړئ.",
+  "lostWalletBlockNow": "دا اوس بند کړئ",
+  "lostWalletBlockNowHint": "هر بانک ته زنګ ووهئ یا د هغه اپ وکاروئ. هره دقیقه مهمه ده.",
+  "lostWalletCall": "زنګ",
+  "lostWalletAddLine": "شمېره زیاته کړئ",
+  "lostWalletNoLine": "هېڅ شمېره نه ده خوندي شوې. د خپل بانک په اپ یا وېبپاڼه کې یې ومومئ.",
+  "lostWalletBlocked": "بند شو",
+  "lostWalletReplace": "دا بدل کړئ",
+  "lostWalletReplaceHint": "د نویو غوښتنه وکړئ او کله چې ورسېږي نوې نېټه خوندي کړئ.",
+  "lostWalletArrived": "نوی راورسېد",
+  "lostWalletCheck": "دا وګورئ",
+  "lostWalletCheckHint": "وپوښتئ چې ایا نوي کارت یا شمېرې ته اړتیا لرئ.",
+  "lostWalletPlanEmptyTitle": "هلته هېڅ خوندي شی نه و",
+  "lostWalletPlanEmpty": "لاندې ګامونه بیا هم مرسته کوي. بل ځل وټاکئ چې خپل کارتونه او اسناد چېرته ساتئ.",
+  "lostWalletCaseTitle": "د پولیسو د قضیې شمېره",
+  "lostWalletCaseHint": "بانکونه، بیمه شرکتونه او دفترونه یې ډېر ځله غواړي.",
+  "lostWalletCaseLabel": "د قضیې یا حوالې شمېره",
+  "lostWalletCaseSaved": "د قضیې شمېره خوندي شوه",
+  "lostWalletAbroadTitle": "اوس بهر یاست؟",
+  "lostWalletAbroadBody": "تاسو په سفر {trip} کې یاست. که پاسپورټ یا پېژند کارت مو په کې و، د بیړني سفري سند لپاره خپل سفارت یا قونسلګرۍ سره اړیکه ونیسئ او خپل سفري بیمې ته خبر ورکړئ.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "سفر پرانیزئ",
+  "lostWalletPhoneTitle": "ستاسو تلیفون هم یوړل شو؟",
+  "lostWalletPhoneBody": "لومړی SIM کارت او بانکي اپونه بند کړئ. د دې لپاره پلان شته.",
+  "lostWalletPhoneButton": "د ورک تلیفون پلان پیل کړئ",
+  "lostWalletStatementNote": "Vaultara به تاسو ته له ۳۰، ۶۰ او ۹۰ ورځو وروسته یادونه وکړي.",
+  "lostWalletStatementTitle": "خپل بانکي صورتحسابونه وګورئ",
+  "lostWalletStatementBody": "هغه تادیې ولټوئ چې د بټوې له ورکېدو راهیسې مو نه دي کړې.",
+  "lostWalletFoundButton": "ومې موندله",
+  "lostWalletFoundTitle": "ښه خبر!",
+  "lostWalletFoundBody": "دا کارتونه دمخه بند شوي، نو د نویو انتظار وکړئ:",
+  "lostWalletFoundNone": "تر اوسه هېڅ نه دي بند شوي، تاسو کولی شئ د پخوا په څېر دوام ورکړئ.",
+  "lostWalletFoundUnfreeze": "که مو د بانک په اپ کې کارتونه کنګل کړي، هغه پرانیزئ چې مو نه دي بند کړي.",
+  "lostWalletFoundConfirm": "پلان وتړئ",
+  "lostWalletFoundOn": "په {date} پیدا شوه",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "د ورکو شیانو راپور",
+  "lostWalletReportTitle": "د ورکو شیانو راپور",
+  "lostWalletReportWhen": "نېټه: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "څه ورک دي: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "د قضیې شمېره: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "د قضیې شمېره: لا راپور نه دی ورکړل شوی",
+  "lostWalletReportCount": "{count, plural, other{لاندې توکي: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

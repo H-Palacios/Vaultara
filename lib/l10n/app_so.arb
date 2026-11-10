@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ma u guuraysaa guri cusub? Eeg waxa kale ee aad cusboonaysiinayso."
+  "lifePlanSuggestMove": "Ma u guuraysaa guri cusub? Eeg waxa kale ee aad cusboonaysiinayso.",
+  "keptInTitle": "Halka aan ku hayo",
+  "keptInSubtitle": "Si aad u ogaato waxa aad xannibayso iyo waxa aad beddelayso haddii uu lumo",
+  "keptInWallet": "Boorso lacageed",
+  "keptInBag": "Bac",
+  "keptInPhoneCase": "Galka taleefanka",
+  "keptInTravelPouch": "Boorsada safarka",
+  "keptInCar": "Baabuur",
+  "keptInHome": "Guriga",
+  "keptInNone": "Lama dooran",
+  "lostLineLabel": "Lambarka kaarka lumay",
+  "lostLineHelper": "Hadda kaydi. Lambarka wuxuu ku qoran yahay kaarka, markaa ma haysan doontid marka aad u baahato.",
+  "lifeEventWalletLost": "Boorsadaydii lacagta way luntay",
+  "lifeEventWalletLostBody": "Marka hore xannib kaararkaaga, kadibna beddel dukumentiyadaada mid mid.",
+  "lifeEventWalletStolen": "Boorsadaydii lacagta waa la xaday",
+  "lifeEventWalletStolenBody": "Isla markiiba xannib kaararkaaga oo soo sheeg xatooyada. Kadib la soco akoonnadaada khiyaano darteed.",
+  "lifeVariantWalletQuestion": "Ma lumay mise waa la xaday?",
+  "lifeVariantLost": "Lumay",
+  "lifeVariantStolen": "La xaday",
+  "lifeTaskWalletFreezeCards": "Ku qabooji kaararkaaga app-ka bangigaaga haddii uu leeyahay",
+  "lifeTaskWalletRetrace": "Wac meelihii ugu dambeeyay ee aad joogtay oo weydii alaabta lumay",
+  "lifeTaskWalletFraudAlert": "Ka codso xafiisyada deynta ama adeegga khiyaanada dalkaaga inay calaamadeeyaan aqoonsigaaga",
+  "lifeTaskWalletStatements": "Hubi bayaannada bangiga lacag bixin aadan samayn",
+  "lifeTaskWalletSubscriptions": "Geli kaarka cusub rukummadaada iyo lacag-bixinta tooska ah",
+  "lifeTaskWalletPayApps": "Ku dar kaararka cusub Google Pay ama Apple Pay",
+  "lifeTaskWalletHealthCard": "Ka codso caymiskaaga caafimaadka kaar xubinnimo oo cusub",
+  "lifeTaskWalletTransport": "Xannib kaarka gaadiidka ama canshuurta waddada oo u wareeji haraaga",
+  "lifeTaskWalletLoyalty": "Codso kaarar daacadnimo oo cusub si aad dhibcahaaga u haysato",
+  "lifeTaskWalletLocks": "Haddii furayaal ama cinwaankaagu ku jireen, ka fikir inaad beddesho qufulada",
+  "lifeTaskWalletInsurance": "Hubi in caymiskaagu daboolayo boorsada iyo lacagta caddaanka ah",
+  "lostWalletHeroTitle": "Boorsadaada lacagta ma luntay?",
+  "lostWalletHeroBody": "Vaultara waxay ku tusaysaa waxa aad marka hore xannibayso, waxa aad beddelayso iyo cidda aad u sheegayso.",
+  "lostWalletStartTitle": "Maxaa dhacay?",
+  "lostWalletEditTitle": "Beddel faahfaahinta",
+  "lostWalletLostHint": "Way dhacday ama meel ayaan ku illaaway",
+  "lostWalletStolenHint": "Qof ayaa qaatay",
+  "lostWalletWhatMissing": "Maxaa maqan?",
+  "lostWalletStartButton": "I tus waxa aan sameeyo",
+  "lostWalletCheckupTitle": "Hubinta boorsada",
+  "lostWalletCheckupBody": "Hadda isu diyaari, si aan waxba loo illoobin haddii ay lunto.",
+  "lostWalletCheckupAllGood": "Wax walba waa diyaar. Haddii ay waligeed lunto, waad diyaar tahay.",
+  "lostWalletSetPlaceBody": "Fur kaar ama dukumenti oo dooro halka aad ku hayso. Tan u samee aqoonsigaaga, liisankaaga iyo kaararkaaga.",
+  "lostWalletIssuePhotos": "{count, plural, other{Sawir la'aan: {count}. Sawir leh, beddelistu way dhaqsataa.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kaararka aan lahayn lambarka kaarka lumay: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Baasaboorrada ama ruqsadaha aad sido: {count}. Guriga uga tag haddii aadan safrayn.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Waxa aad sido",
+  "lostWalletNoPhoto": "Sawir ma jiro",
+  "lostWalletHasPhoto": "Sawirka waa la kaydiyay",
+  "lostWalletNoLineShort": "Lambarka kaarka lumay ma jiro",
+  "lostWalletHistory": "Marar hore",
+  "lostWalletFound": "Waa la helay",
+  "walletCheckToggle": "I xasuusi 6-dii biloodba mar",
+  "walletCheckToggleBody": "Eegis degdeg ah oo ku saabsan waxa aad sido, si liisku u ahaado mid sax ah.",
+  "walletCheckReminderTitle": "Hubinta boorsada",
+  "walletCheckReminderBody": "Wax ma ka beddelmeen boorsadaada? Qaado daqiiqad aad ku cusbooneysiiso Vaultara.",
+  "lostWalletBlockNow": "Xannib kuwan hadda",
+  "lostWalletBlockNowHint": "Wac bangi kasta ama isticmaal app-kiisa. Daqiiqad kasta waa muhiim.",
+  "lostWalletCall": "Wac",
+  "lostWalletAddLine": "Ku dar lambarka",
+  "lostWalletNoLine": "Lambar lama kaydin. Ka hel app-ka ama websaydka bangigaaga.",
+  "lostWalletBlocked": "La xannibay",
+  "lostWalletReplace": "Beddel kuwan",
+  "lostWalletReplaceHint": "Codso kuwo cusub oo kaydi taariikhda cusub marka ay yimaadaan.",
+  "lostWalletArrived": "Kii cusbaa wuu yimid",
+  "lostWalletCheck": "Hubi kuwan",
+  "lostWalletCheckHint": "Weydii haddii aad u baahan tahay kaar ama lambar cusub.",
+  "lostWalletPlanEmptyTitle": "Waxba lagama kaydin halkaas",
+  "lostWalletPlanEmpty": "Tallaabooyinka hoose weli way caawinayaan. Marka xigta, dooro halka aad ku hayso kaararkaaga iyo dukumentiyadaada.",
+  "lostWalletCaseTitle": "Lambarka kiiska booliska",
+  "lostWalletCaseHint": "Bangiyada, caymisyada iyo xafiisyadu badanaa way weydiiyaan.",
+  "lostWalletCaseLabel": "Lambarka kiiska ama tixraaca",
+  "lostWalletCaseSaved": "Lambarka kiiska waa la kaydiyay",
+  "lostWalletAbroadTitle": "Hadda dibadda ma joogtaa?",
+  "lostWalletAbroadBody": "Waxaad ku jirtaa safarka {trip}. Haddii baasaboorkaaga ama aqoonsigaagu ku jireen, la xiriir safaaraddaada ama qunsuliyaddaada si aad u hesho dukumenti safar degdeg ah, oo u sheeg caymiskaaga safarka.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Fur safarka",
+  "lostWalletPhoneTitle": "Taleefankaaga sidoo kale ma la qaatay?",
+  "lostWalletPhoneBody": "Marka hore xannib kaarka SIM-ka iyo app-yada bangiga. Waxaa jira qorshe taas loogu talagalay.",
+  "lostWalletPhoneButton": "Bilow qorshaha taleefanka lumay",
+  "lostWalletStatementNote": "Vaultara waxay ku xasuusin doontaa 30, 60 iyo 90 maalmood kadib.",
+  "lostWalletStatementTitle": "Hubi bayaannada bangigaaga",
+  "lostWalletStatementBody": "Raadi lacag bixin aadan samayn tan iyo markii boorsadaadu luntay.",
+  "lostWalletFoundButton": "Waan helay",
+  "lostWalletFoundTitle": "War wanaagsan!",
+  "lostWalletFoundBody": "Kaararkan horey ayaa loo xannibay, markaa sug kuwa cusub:",
+  "lostWalletFoundNone": "Weli waxba lama xannibin, waad sii wadan kartaa sidii hore.",
+  "lostWalletFoundUnfreeze": "Haddii aad kaarar ku qaboojisay app-ka bangiga, ka fur kuwa aadan xannibin.",
+  "lostWalletFoundConfirm": "Xir qorshaha",
+  "lostWalletFoundOn": "Waa la helay {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Warbixinta alaabta lumay",
+  "lostWalletReportTitle": "Warbixinta alaabta lumay",
+  "lostWalletReportWhen": "Taariikhda: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Waxa maqan: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Lambarka kiiska: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Lambarka kiiska: weli lama soo sheegin",
+  "lostWalletReportCount": "{count, plural, other{Waxyaabaha hoose: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

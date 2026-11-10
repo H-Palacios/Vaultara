@@ -2311,5 +2311,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ziehen Sie um? Sehen Sie, was Sie noch aktualisieren sollten."
+  "lifePlanSuggestMove": "Ziehen Sie um? Sehen Sie, was Sie noch aktualisieren sollten.",
+  "keptInTitle": "Wo ich es aufbewahre",
+  "keptInSubtitle": "Damit du weißt, was du sperren und ersetzen musst, falls es verloren geht",
+  "keptInWallet": "Geldbörse",
+  "keptInBag": "Tasche",
+  "keptInPhoneCase": "Handyhülle",
+  "keptInTravelPouch": "Reisetasche",
+  "keptInCar": "Auto",
+  "keptInHome": "Zu Hause",
+  "keptInNone": "Nicht festgelegt",
+  "lostLineLabel": "Sperrnummer für verlorene Karten",
+  "lostLineHelper": "Speichere sie jetzt. Die Nummer steht auf der Karte und ist weg, wenn du sie brauchst.",
+  "lifeEventWalletLost": "Ich habe meine Geldbörse verloren",
+  "lifeEventWalletLostBody": "Sperre zuerst deine Karten und ersetze dann deine Dokumente nacheinander.",
+  "lifeEventWalletStolen": "Meine Geldbörse wurde gestohlen",
+  "lifeEventWalletStolenBody": "Sperre sofort deine Karten und melde den Diebstahl. Achte danach auf Betrug auf deinen Konten.",
+  "lifeVariantWalletQuestion": "Verloren oder gestohlen?",
+  "lifeVariantLost": "Verloren",
+  "lifeVariantStolen": "Gestohlen",
+  "lifeTaskWalletFreezeCards": "Friere deine Karten in der Banking-App ein, falls sie das anbietet",
+  "lifeTaskWalletRetrace": "Rufe die letzten Orte an, an denen du warst, und frag im Fundbüro nach",
+  "lifeTaskWalletFraudAlert": "Bitte die Auskunfteien oder die Betrugsstelle deines Landes, deinen Ausweis zu markieren",
+  "lifeTaskWalletStatements": "Prüfe deine Kontoauszüge auf Zahlungen, die du nicht gemacht hast",
+  "lifeTaskWalletSubscriptions": "Hinterlege die neue Karte bei Abos und Lastschriften",
+  "lifeTaskWalletPayApps": "Füge die neuen Karten zu Google Pay oder Apple Pay hinzu",
+  "lifeTaskWalletHealthCard": "Bitte deine Krankenkasse um eine neue Versichertenkarte",
+  "lifeTaskWalletTransport": "Sperre deine Fahr- oder Mautkarte und übertrage das Guthaben",
+  "lifeTaskWalletLoyalty": "Beantrage neue Kundenkarten, damit du deine Punkte behältst",
+  "lifeTaskWalletLocks": "Waren Schlüssel oder deine Adresse darin, denk über neue Schlösser nach",
+  "lifeTaskWalletInsurance": "Prüfe, ob deine Versicherung Geldbörse und Bargeld abdeckt",
+  "lostWalletHeroTitle": "Geldbörse verloren?",
+  "lostWalletHeroBody": "Vaultara zeigt, was du zuerst sperren, was du ersetzen und wem du Bescheid geben musst.",
+  "lostWalletStartTitle": "Was ist passiert?",
+  "lostWalletEditTitle": "Angaben ändern",
+  "lostWalletLostHint": "Fallen gelassen oder irgendwo liegen gelassen",
+  "lostWalletStolenHint": "Jemand hat sie genommen",
+  "lostWalletWhatMissing": "Was fehlt?",
+  "lostWalletStartButton": "Zeig mir, was zu tun ist",
+  "lostWalletCheckupTitle": "Geldbörsen-Check",
+  "lostWalletCheckupBody": "Bereite dich jetzt vor, damit nichts vergessen wird, falls sie verloren geht.",
+  "lostWalletCheckupAllGood": "Alles bereit. Falls sie je verloren geht, bist du vorbereitet.",
+  "lostWalletSetPlaceBody": "Öffne eine Karte oder ein Dokument und wähle, wo du es aufbewahrst. Mach das für Ausweis, Führerschein und Karten.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 Eintrag hat kein Foto. Mit Foto geht der Ersatz schneller.} other{{count} Einträge haben kein Foto. Mit Fotos geht der Ersatz schneller.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{Für 1 Karte ist keine Sperrnummer gespeichert.} other{Für {count} Karten ist keine Sperrnummer gespeichert.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Du trägst einen Pass oder eine Genehmigung bei dir. Lass ihn zu Hause, außer du reist.} other{Du trägst {count} Pässe oder Genehmigungen bei dir. Lass sie zu Hause, außer du reist.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Was du dabeihast",
+  "lostWalletNoPhoto": "Kein Foto",
+  "lostWalletHasPhoto": "Foto gespeichert",
+  "lostWalletNoLineShort": "Keine Sperrnummer",
+  "lostWalletHistory": "Frühere Fälle",
+  "lostWalletFound": "Gefunden",
+  "walletCheckToggle": "Alle 6 Monate erinnern",
+  "walletCheckToggleBody": "Ein kurzer Blick auf das, was du dabeihast, damit die Liste stimmt.",
+  "walletCheckReminderTitle": "Geldbörsen-Check",
+  "walletCheckReminderBody": "Hat sich in deiner Geldbörse etwas geändert? Nimm dir eine Minute, um Vaultara zu aktualisieren.",
+  "lostWalletBlockNow": "Jetzt sperren",
+  "lostWalletBlockNowHint": "Ruf jede Bank an oder nutze ihre App. Jede Minute zählt.",
+  "lostWalletCall": "Anrufen",
+  "lostWalletAddLine": "Nummer hinzufügen",
+  "lostWalletNoLine": "Keine Nummer gespeichert. Die Sperrnummer findest du in der App oder auf der Website deiner Bank.",
+  "lostWalletBlocked": "Gesperrt",
+  "lostWalletReplace": "Ersetzen",
+  "lostWalletReplaceHint": "Beantrage neue und speichere das neue Datum, sobald sie ankommen.",
+  "lostWalletArrived": "Neue ist angekommen",
+  "lostWalletCheck": "Prüfen",
+  "lostWalletCheckHint": "Frag nach, ob du eine neue Karte oder Nummer brauchst.",
+  "lostWalletPlanEmptyTitle": "Dort war nichts Gespeichertes",
+  "lostWalletPlanEmpty": "Die Schritte unten helfen trotzdem. Wähle beim nächsten Mal, wo du deine Karten und Dokumente aufbewahrst.",
+  "lostWalletCaseTitle": "Polizeiliches Aktenzeichen",
+  "lostWalletCaseHint": "Banken, Versicherungen und Ämter fragen oft danach.",
+  "lostWalletCaseLabel": "Aktenzeichen oder Referenznummer",
+  "lostWalletCaseSaved": "Aktenzeichen gespeichert",
+  "lostWalletAbroadTitle": "Gerade im Ausland?",
+  "lostWalletAbroadBody": "Du bist auf der Reise {trip}. War dein Pass oder Ausweis darin, wende dich an deine Botschaft oder dein Konsulat für ein Notreisedokument und informiere deine Reiseversicherung.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Reise öffnen",
+  "lostWalletPhoneTitle": "Wurde auch dein Handy genommen?",
+  "lostWalletPhoneBody": "Sperre zuerst die SIM-Karte und deine Banking-Apps. Dafür gibt es einen eigenen Plan.",
+  "lostWalletPhoneButton": "Plan für verlorenes Handy starten",
+  "lostWalletStatementNote": "Vaultara erinnert dich nach 30, 60 und 90 Tagen.",
+  "lostWalletStatementTitle": "Prüfe deine Kontoauszüge",
+  "lostWalletStatementBody": "Achte auf Zahlungen, die du seit dem Verlust deiner Geldbörse nicht gemacht hast.",
+  "lostWalletFoundButton": "Ich habe sie gefunden",
+  "lostWalletFoundTitle": "Gute Nachricht!",
+  "lostWalletFoundBody": "Diese Karten sind schon gesperrt, achte also auf die neuen:",
+  "lostWalletFoundNone": "Noch nichts wurde gesperrt, du kannst also weitermachen wie bisher.",
+  "lostWalletFoundUnfreeze": "Hast du Karten in der Banking-App eingefroren, gib die frei, die du nicht gesperrt hast.",
+  "lostWalletFoundConfirm": "Plan schließen",
+  "lostWalletFoundOn": "Gefunden am {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Verlustbericht",
+  "lostWalletReportTitle": "Verlustbericht",
+  "lostWalletReportWhen": "Datum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Was fehlt: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Aktenzeichen: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Aktenzeichen: noch nicht gemeldet",
+  "lostWalletReportCount": "{count, plural, =1{1 Eintrag unten aufgeführt} other{{count} Einträge unten aufgeführt}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -2255,5 +2255,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Переезжаете? Посмотрите, что ещё нужно обновить."
+  "lifePlanSuggestMove": "Переезжаете? Посмотрите, что ещё нужно обновить.",
+  "keptInTitle": "Где я это храню",
+  "keptInSubtitle": "Чтобы знать, что блокировать и заменять, если это пропадёт",
+  "keptInWallet": "Кошелёк",
+  "keptInBag": "Сумка",
+  "keptInPhoneCase": "Чехол телефона",
+  "keptInTravelPouch": "Дорожный кошелёк",
+  "keptInCar": "Машина",
+  "keptInHome": "Дома",
+  "keptInNone": "Не указано",
+  "lostLineLabel": "Номер для блокировки карты",
+  "lostLineHelper": "Сохраните его сейчас. Номер напечатан на карте, и когда он понадобится, его не будет под рукой.",
+  "lifeEventWalletLost": "Я потерял кошелёк",
+  "lifeEventWalletLostBody": "Сначала заблокируйте карты, затем восстановите документы по одному.",
+  "lifeEventWalletStolen": "У меня украли кошелёк",
+  "lifeEventWalletStolenBody": "Сразу заблокируйте карты и заявите о краже. Затем следите за мошенничеством на счетах.",
+  "lifeVariantWalletQuestion": "Потерян или украден?",
+  "lifeVariantLost": "Потерян",
+  "lifeVariantStolen": "Украден",
+  "lifeTaskWalletFreezeCards": "Заморозьте карты в банковском приложении, если оно это умеет",
+  "lifeTaskWalletRetrace": "Позвоните в последние места, где вы были, и спросите в бюро находок",
+  "lifeTaskWalletFraudAlert": "Попросите кредитные бюро или антимошенническую службу вашей страны отметить ваш документ",
+  "lifeTaskWalletStatements": "Проверьте выписки на платежи, которые вы не совершали",
+  "lifeTaskWalletSubscriptions": "Привяжите новую карту к подпискам и автоплатежам",
+  "lifeTaskWalletPayApps": "Добавьте новые карты в Google Pay или Apple Pay",
+  "lifeTaskWalletHealthCard": "Попросите новую карту у медицинской страховой компании",
+  "lifeTaskWalletTransport": "Заблокируйте транспортную карту или карту для оплаты дорог и перенесите баланс",
+  "lifeTaskWalletLoyalty": "Закажите новые карты лояльности, чтобы сохранить баллы",
+  "lifeTaskWalletLocks": "Если там были ключи или ваш адрес, подумайте о замене замков",
+  "lifeTaskWalletInsurance": "Проверьте, покрывает ли страховка кошелёк и наличные",
+  "lostWalletHeroTitle": "Потеряли кошелёк?",
+  "lostWalletHeroBody": "Vaultara покажет, что заблокировать в первую очередь, что заменить и кому сообщить.",
+  "lostWalletStartTitle": "Что случилось?",
+  "lostWalletEditTitle": "Изменить данные",
+  "lostWalletLostHint": "Выронил или где-то оставил",
+  "lostWalletStolenHint": "Кто-то его взял",
+  "lostWalletWhatMissing": "Что пропало?",
+  "lostWalletStartButton": "Покажите, что делать",
+  "lostWalletCheckupTitle": "Проверка кошелька",
+  "lostWalletCheckupBody": "Подготовьтесь сейчас, чтобы ничего не забыть, если он пропадёт.",
+  "lostWalletCheckupAllGood": "Всё готово. Если он когда-нибудь пропадёт, вы готовы.",
+  "lostWalletSetPlaceBody": "Откройте карту или документ и выберите, где вы его храните. Сделайте это для паспорта, прав и карт.",
+  "lostWalletIssuePhotos": "{count, plural, other{Без фото: {count}. С фото заменить быстрее.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Карт без номера для блокировки: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Паспортов или разрешений при себе: {count}. Храните их дома, если не путешествуете.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Что у вас с собой",
+  "lostWalletNoPhoto": "Нет фото",
+  "lostWalletHasPhoto": "Фото сохранено",
+  "lostWalletNoLineShort": "Нет номера для блокировки",
+  "lostWalletHistory": "Прошлые случаи",
+  "lostWalletFound": "Найден",
+  "walletCheckToggle": "Напоминать раз в 6 месяцев",
+  "walletCheckToggleBody": "Быстрый взгляд на то, что вы носите, чтобы список был верным.",
+  "walletCheckReminderTitle": "Проверка кошелька",
+  "walletCheckReminderBody": "Что-то изменилось в кошельке? Потратьте минуту, чтобы обновить Vaultara.",
+  "lostWalletBlockNow": "Заблокируйте сейчас",
+  "lostWalletBlockNowHint": "Позвоните в каждый банк или используйте его приложение. Важна каждая минута.",
+  "lostWalletCall": "Позвонить",
+  "lostWalletAddLine": "Добавить номер",
+  "lostWalletNoLine": "Номер не сохранён. Найдите его в приложении или на сайте банка.",
+  "lostWalletBlocked": "Заблокирована",
+  "lostWalletReplace": "Заменить",
+  "lostWalletReplaceHint": "Подайте заявки на новые и сохраните новую дату, когда они придут.",
+  "lostWalletArrived": "Новый пришёл",
+  "lostWalletCheck": "Проверить",
+  "lostWalletCheckHint": "Спросите, нужна ли новая карта или номер.",
+  "lostWalletPlanEmptyTitle": "Там ничего не было сохранено",
+  "lostWalletPlanEmpty": "Шаги ниже всё равно помогут. В следующий раз укажите, где вы храните карты и документы.",
+  "lostWalletCaseTitle": "Номер полицейского заявления",
+  "lostWalletCaseHint": "Банки, страховые и учреждения часто его спрашивают.",
+  "lostWalletCaseLabel": "Номер дела или заявления",
+  "lostWalletCaseSaved": "Номер заявления сохранён",
+  "lostWalletAbroadTitle": "Сейчас за границей?",
+  "lostWalletAbroadBody": "Вы в поездке: {trip}. Если там был паспорт или удостоверение, обратитесь в посольство или консульство за экстренным документом для поездки и сообщите в туристическую страховую.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Открыть поездку",
+  "lostWalletPhoneTitle": "Телефон тоже забрали?",
+  "lostWalletPhoneBody": "Сначала заблокируйте SIM-карту и банковские приложения. Для этого есть отдельный план.",
+  "lostWalletPhoneButton": "Начать план для потерянного телефона",
+  "lostWalletStatementNote": "Vaultara напомнит через 30, 60 и 90 дней.",
+  "lostWalletStatementTitle": "Проверьте банковские выписки",
+  "lostWalletStatementBody": "Ищите платежи, которых вы не совершали с момента пропажи кошелька.",
+  "lostWalletFoundButton": "Я его нашёл",
+  "lostWalletFoundTitle": "Хорошие новости!",
+  "lostWalletFoundBody": "Эти карты уже заблокированы, так что ждите новые:",
+  "lostWalletFoundNone": "Ещё ничего не заблокировано, можно продолжать как раньше.",
+  "lostWalletFoundUnfreeze": "Если вы замораживали карты в приложении банка, разморозьте те, что не блокировали.",
+  "lostWalletFoundConfirm": "Закрыть план",
+  "lostWalletFoundOn": "Найден {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Отчёт о пропавших вещах",
+  "lostWalletReportTitle": "Отчёт о пропавших вещах",
+  "lostWalletReportWhen": "Дата: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Что пропало: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Номер заявления: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Номер заявления: ещё не подано",
+  "lostWalletReportCount": "{count, plural, other{Пунктов ниже: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

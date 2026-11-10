@@ -2311,5 +2311,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Stěhujete se? Podívejte se, co dalšího aktualizovat."
+  "lifePlanSuggestMove": "Stěhujete se? Podívejte se, co dalšího aktualizovat.",
+  "keptInTitle": "Kde to nosím",
+  "keptInSubtitle": "Abyste věděli, co zablokovat a nahradit, když se to ztratí",
+  "keptInWallet": "Peněženka",
+  "keptInBag": "Taška",
+  "keptInPhoneCase": "Pouzdro na telefon",
+  "keptInTravelPouch": "Cestovní pouzdro",
+  "keptInCar": "Auto",
+  "keptInHome": "Doma",
+  "keptInNone": "Nenastaveno",
+  "lostLineLabel": "Číslo pro blokaci ztracené karty",
+  "lostLineHelper": "Uložte si ho teď. Číslo je na kartě, takže ho nebudete mít, až ho budete potřebovat.",
+  "lifeEventWalletLost": "Ztratil jsem peněženku",
+  "lifeEventWalletLostBody": "Nejdřív zablokujte karty a pak nahrazujte doklady jeden po druhém.",
+  "lifeEventWalletStolen": "Ukradli mi peněženku",
+  "lifeEventWalletStolenBody": "Hned zablokujte karty a nahlaste krádež. Pak hlídejte účty kvůli podvodům.",
+  "lifeVariantWalletQuestion": "Ztracená, nebo ukradená?",
+  "lifeVariantLost": "Ztracená",
+  "lifeVariantStolen": "Ukradená",
+  "lifeTaskWalletFreezeCards": "Zmrazte karty v bankovní aplikaci, pokud to umí",
+  "lifeTaskWalletRetrace": "Zavolejte na poslední místa, kde jste byli, a zeptejte se na ztráty a nálezy",
+  "lifeTaskWalletFraudAlert": "Požádejte úvěrové registry nebo protipodvodnou službu své země o označení dokladu",
+  "lifeTaskWalletStatements": "Projděte výpisy kvůli platbám, které jste neudělali",
+  "lifeTaskWalletSubscriptions": "Nastavte novou kartu u předplatných a inkas",
+  "lifeTaskWalletPayApps": "Přidejte nové karty do Google Pay nebo Apple Pay",
+  "lifeTaskWalletHealthCard": "Požádejte zdravotní pojišťovnu o novou kartičku",
+  "lifeTaskWalletTransport": "Zablokujte jízdenkovou nebo mýtnou kartu a převeďte zůstatek",
+  "lifeTaskWalletLoyalty": "Požádejte o nové věrnostní karty, ať o body nepřijdete",
+  "lifeTaskWalletLocks": "Pokud tam byly klíče nebo vaše adresa, zvažte výměnu zámků",
+  "lifeTaskWalletInsurance": "Ověřte, zda pojištění kryje peněženku a hotovost",
+  "lostWalletHeroTitle": "Ztratili jste peněženku?",
+  "lostWalletHeroBody": "Vaultara ukáže, co zablokovat nejdřív, co nahradit a komu dát vědět.",
+  "lostWalletStartTitle": "Co se stalo?",
+  "lostWalletEditTitle": "Změnit údaje",
+  "lostWalletLostHint": "Vypadla nebo jsem ji někde nechal",
+  "lostWalletStolenHint": "Někdo ji vzal",
+  "lostWalletWhatMissing": "Co chybí?",
+  "lostWalletStartButton": "Ukaž mi, co dělat",
+  "lostWalletCheckupTitle": "Kontrola peněženky",
+  "lostWalletCheckupBody": "Připravte se teď, ať nic nezapomenete, kdyby se ztratila.",
+  "lostWalletCheckupAllGood": "Vše připraveno. Kdyby se někdy ztratila, jste připraveni.",
+  "lostWalletSetPlaceBody": "Otevřete kartu nebo doklad a vyberte, kde ho nosíte. Udělejte to pro občanku, řidičák a karty.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bez fotky: {count}. S fotkou je náhrada rychlejší.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Karty bez čísla pro blokaci: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasy nebo povolení u sebe: {count}. Nechávejte je doma, pokud necestujete.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Co nosíte u sebe",
+  "lostWalletNoPhoto": "Bez fotky",
+  "lostWalletHasPhoto": "Fotka uložena",
+  "lostWalletNoLineShort": "Bez čísla pro blokaci",
+  "lostWalletHistory": "Dřívější případy",
+  "lostWalletFound": "Nalezena",
+  "walletCheckToggle": "Připomínat každých 6 měsíců",
+  "walletCheckToggleBody": "Rychlý pohled na to, co nosíte, aby seznam seděl.",
+  "walletCheckReminderTitle": "Kontrola peněženky",
+  "walletCheckReminderBody": "Změnilo se něco v peněžence? Věnujte minutu aktualizaci Vaultary.",
+  "lostWalletBlockNow": "Zablokujte hned",
+  "lostWalletBlockNowHint": "Zavolejte do každé banky nebo použijte její aplikaci. Každá minuta se počítá.",
+  "lostWalletCall": "Zavolat",
+  "lostWalletAddLine": "Přidat číslo",
+  "lostWalletNoLine": "Číslo není uložené. Najdete ho v aplikaci nebo na webu banky.",
+  "lostWalletBlocked": "Zablokováno",
+  "lostWalletReplace": "Nahradit",
+  "lostWalletReplaceHint": "Požádejte o nové a uložte nové datum, až dorazí.",
+  "lostWalletArrived": "Nový dorazil",
+  "lostWalletCheck": "Zkontrolovat",
+  "lostWalletCheckHint": "Zeptejte se, zda potřebujete novou kartu nebo číslo.",
+  "lostWalletPlanEmptyTitle": "Nic uloženého tam nebylo",
+  "lostWalletPlanEmpty": "Kroky níže přesto pomohou. Příště vyberte, kde nosíte karty a doklady.",
+  "lostWalletCaseTitle": "Číslo policejního oznámení",
+  "lostWalletCaseHint": "Banky, pojišťovny a úřady se na něj často ptají.",
+  "lostWalletCaseLabel": "Číslo případu nebo jednací číslo",
+  "lostWalletCaseSaved": "Číslo uloženo",
+  "lostWalletAbroadTitle": "Právě v zahraničí?",
+  "lostWalletAbroadBody": "Jste na cestě: {trip}. Pokud tam byl pas nebo občanka, obraťte se na velvyslanectví či konzulát kvůli náhradnímu cestovnímu dokladu a dejte vědět cestovní pojišťovně.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Otevřít cestu",
+  "lostWalletPhoneTitle": "Vzali vám i telefon?",
+  "lostWalletPhoneBody": "Nejdřív zablokujte SIM kartu a bankovní aplikace. Je na to plán.",
+  "lostWalletPhoneButton": "Spustit plán ztraceného telefonu",
+  "lostWalletStatementNote": "Vaultara připomene po 30, 60 a 90 dnech.",
+  "lostWalletStatementTitle": "Zkontrolujte bankovní výpisy",
+  "lostWalletStatementBody": "Hledejte platby, které jste neudělali od ztráty peněženky.",
+  "lostWalletFoundButton": "Našel jsem ji",
+  "lostWalletFoundTitle": "Dobrá zpráva!",
+  "lostWalletFoundBody": "Tyto karty jsou už zablokované, tak vyhlížejte nové:",
+  "lostWalletFoundNone": "Zatím nic není zablokováno, můžete pokračovat jako dřív.",
+  "lostWalletFoundUnfreeze": "Pokud jste karty zmrazili v aplikaci banky, odmrazte ty, které jste nezablokovali.",
+  "lostWalletFoundConfirm": "Zavřít plán",
+  "lostWalletFoundOn": "Nalezena {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Zpráva o ztracených věcech",
+  "lostWalletReportTitle": "Zpráva o ztracených věcech",
+  "lostWalletReportWhen": "Datum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Co chybí: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Číslo oznámení: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Číslo oznámení: zatím nenahlášeno",
+  "lostWalletReportCount": "{count, plural, other{Položky níže: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

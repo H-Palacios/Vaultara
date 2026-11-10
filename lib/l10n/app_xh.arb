@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ufudukela kwikhaya elitsha? Jonga ukuba yintoni enye ekufuneka uyihlaziye."
+  "lifePlanSuggestMove": "Ufudukela kwikhaya elitsha? Jonga ukuba yintoni enye ekufuneka uyihlaziye.",
+  "keptInTitle": "Apho ndiyigcina khona",
+  "keptInSubtitle": "Ukuze wazi into omawuyivale noyitshintshe ukuba ilahlekile",
+  "keptInWallet": "Isipaji",
+  "keptInBag": "Ingxowa",
+  "keptInPhoneCase": "Ikhava yefowuni",
+  "keptInTravelPouch": "Ingxowa yohambo",
+  "keptInCar": "Imoto",
+  "keptInHome": "Ekhaya",
+  "keptInNone": "Akukhethwanga",
+  "lostLineLabel": "Inombolo yekhadi elilahlekileyo",
+  "lostLineHelper": "Yigcine ngoku. Inombolo ishicilelwe ekhadini, ngoko awuyi kuba nayo xa uyifuna.",
+  "lifeEventWalletLost": "Ndilahlekelwe sisipaji sam",
+  "lifeEventWalletLostBody": "Vala amakhadi akho kuqala, emva koko utshintshe amaxwebhu akho elinye emva kwelinye.",
+  "lifeEventWalletStolen": "Isipaji sam sibiwe",
+  "lifeEventWalletStolenBody": "Vala amakhadi akho ngoko nangoko kwaye unike ingxelo ngobusela. Emva koko jonga iiakhawunti zakho ngenxa yobuqhophololo.",
+  "lifeVariantWalletQuestion": "Silahlekile okanye sibiwe?",
+  "lifeVariantLost": "Silahlekile",
+  "lifeVariantStolen": "Sibiwe",
+  "lifeTaskWalletFreezeCards": "Misa amakhadi akho kwi-app yebhanki ukuba inako oko",
+  "lifeTaskWalletRetrace": "Tsalela iindawo zokugqibela obukuzo ubuze ngempahla elahlekileyo",
+  "lifeTaskWalletFraudAlert": "Cela iibhuro zamatyala okanye inkonzo yobuqhophololo yelizwe lakho ukuba iphawule i-ID yakho",
+  "lifeTaskWalletStatements": "Jonga iingxelo zebhanki ufumane iintlawulo ongazenzanga",
+  "lifeTaskWalletSubscriptions": "Faka ikhadi elitsha kwizabhaliso nakwii-debit order zakho",
+  "lifeTaskWalletPayApps": "Yongeza amakhadi amatsha kwi-Google Pay okanye kwi-Apple Pay",
+  "lifeTaskWalletHealthCard": "Cela ikhadi elitsha lobulungu kwinkampani yakho yeinshorensi yempilo",
+  "lifeTaskWalletTransport": "Vala ikhadi lakho lezothutho okanye lethoyili uze udlulisele imali eseleyo",
+  "lifeTaskWalletLoyalty": "Cela amakhadi amatsha okunyaniseka ukuze ugcine amanqaku akho",
+  "lifeTaskWalletLocks": "Ukuba bekukho izitshixo okanye idilesi yakho, cinga ngokutshintsha izitshixo",
+  "lifeTaskWalletInsurance": "Jonga ukuba iinshorensi yakho iyasigubungela na isipaji nemali",
+  "lostWalletHeroTitle": "Ulahlekelwe sisipaji?",
+  "lostWalletHeroBody": "I-Vaultara ibonisa into omawuyivale kuqala, into omawuyitshintshe nokuba ngubani omawumxelele.",
+  "lostWalletStartTitle": "Kwenzeke ntoni?",
+  "lostWalletEditTitle": "Tshintsha iinkcukacha",
+  "lostWalletLostHint": "Siwile okanye ndisilibele kwenye indawo",
+  "lostWalletStolenHint": "Sithathwe ngomnye umntu",
+  "lostWalletWhatMissing": "Yintoni engekhoyo?",
+  "lostWalletStartButton": "Ndibonise into endimele ndiyenze",
+  "lostWalletCheckupTitle": "Ukuhlolwa kwesipaji",
+  "lostWalletCheckupBody": "Zilungiselele ngoku, ukuze kungalibaleki nto ukuba silahleka.",
+  "lostWalletCheckupAllGood": "Konke kulungile. Ukuba singaze silahleke, ukulungele.",
+  "lostWalletSetPlaceBody": "Vula ikhadi okanye uxwebhu uze ukhethe apho uligcina khona. Yenza oku nge-ID, ilayisensi namakhadi akho.",
+  "lostWalletIssuePhotos": "{count, plural, other{Ezingenamfanekiso: {count}. Ngomfanekiso ukutshintsha kuyakhawuleza.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Amakhadi angenayo inombolo yekhadi elilahlekileyo: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Iipaspoti okanye iimvume ozithweleyo: {count}. Zishiye ekhaya ngaphandle kokuba uyahamba.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Into oyiphetheyo",
+  "lostWalletNoPhoto": "Akukho mfanekiso",
+  "lostWalletHasPhoto": "Umfanekiso ugcinwe",
+  "lostWalletNoLineShort": "Akukho nombolo yekhadi elilahlekileyo",
+  "lostWalletHistory": "Amaxesha angaphambili",
+  "lostWalletFound": "Sifunyenwe",
+  "walletCheckToggle": "Ndikhumbuze rhoqo kwiinyanga ezi-6",
+  "walletCheckToggleBody": "Ukujonga ngokukhawuleza into oyiphetheyo, ukuze uluhlu luhlale luchanekile.",
+  "walletCheckReminderTitle": "Ukuhlolwa kwesipaji",
+  "walletCheckReminderBody": "Ingaba kukho into etshintshileyo esipajini sakho? Thatha umzuzu uhlaziye i-Vaultara.",
+  "lostWalletBlockNow": "Vala ezi ngoku",
+  "lostWalletBlockNowHint": "Tsalela ibhanki nganye okanye usebenzise i-app yayo. Umzuzu ngamnye ubalulekile.",
+  "lostWalletCall": "Tsalela",
+  "lostWalletAddLine": "Yongeza inombolo",
+  "lostWalletNoLine": "Akukho nombolo igciniweyo. Yifumane kwi-app okanye kwiwebhusayithi yebhanki yakho.",
+  "lostWalletBlocked": "Ivaliwe",
+  "lostWalletReplace": "Tshintsha ezi",
+  "lostWalletReplaceHint": "Faka isicelo sezintsha uze ugcine umhla omtsha xa zifika.",
+  "lostWalletArrived": "Entsha ifikile",
+  "lostWalletCheck": "Jonga ezi",
+  "lostWalletCheckHint": "Buza ukuba ufuna ikhadi elitsha okanye inombolo entsha na.",
+  "lostWalletPlanEmptyTitle": "Bekungekho nto igciniweyo apho",
+  "lostWalletPlanEmpty": "Amanyathelo angezantsi asanceda. Kwixesha elizayo, khetha apho ugcina khona amakhadi namaxwebhu akho.",
+  "lostWalletCaseTitle": "Inombolo yetyala lamapolisa",
+  "lostWalletCaseHint": "Iibhanki, iinkampani zeinshorensi neeofisi zihlala ziyicela.",
+  "lostWalletCaseLabel": "Inombolo yetyala okanye yesalathiso",
+  "lostWalletCaseSaved": "Inombolo yetyala igciniwe",
+  "lostWalletAbroadTitle": "Uphesheya ngoku?",
+  "lostWalletAbroadBody": "Usehambweni {trip}. Ukuba ipaspoti okanye i-ID yakho ibikhona, qhagamshelana nozakuzo okanye ibhunga lakho ukuze ufumane uxwebhu lohambo olungxamisekileyo, uze wazise iinshorensi yakho yohambo.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Vula uhambo",
+  "lostWalletPhoneTitle": "Ingaba nefowuni yakho ithathiwe?",
+  "lostWalletPhoneBody": "Vala i-SIM card nee-app zebhanki kuqala. Kukho icebo lwaloo nto.",
+  "lostWalletPhoneButton": "Qala icebo lefowuni elahlekileyo",
+  "lostWalletStatementNote": "I-Vaultara iya kukukhumbuza emva kweentsuku ezingama-30, 60 nama-90.",
+  "lostWalletStatementTitle": "Jonga iingxelo zakho zebhanki",
+  "lostWalletStatementBody": "Khangela iintlawulo ongazenzanga ukusukela oko isipaji sakho silahleka.",
+  "lostWalletFoundButton": "Ndisifumene",
+  "lostWalletFoundTitle": "Iindaba ezimnandi!",
+  "lostWalletFoundBody": "La makhadi sele evaliwe, ngoko lindela amatsha:",
+  "lostWalletFoundNone": "Akukho nto ivaliweyo okwangoku, ungaqhubeka njengangaphambili.",
+  "lostWalletFoundUnfreeze": "Ukuba umise amakhadi kwi-app yebhanki, wavule lawo ungawavalanga.",
+  "lostWalletFoundConfirm": "Vala icebo",
+  "lostWalletFoundOn": "Sifunyenwe ngo-{date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Ingxelo yezinto ezilahlekileyo",
+  "lostWalletReportTitle": "Ingxelo yezinto ezilahlekileyo",
+  "lostWalletReportWhen": "Umhla: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Into engekhoyo: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Inombolo yetyala: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Inombolo yetyala: ayikaxelwa",
+  "lostWalletReportCount": "{count, plural, other{Izinto ezingezantsi: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

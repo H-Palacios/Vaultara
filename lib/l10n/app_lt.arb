@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Kraustotės į naujus namus? Pažiūrėkite, ką dar reikia atnaujinti."
+  "lifePlanSuggestMove": "Kraustotės į naujus namus? Pažiūrėkite, ką dar reikia atnaujinti.",
+  "keptInTitle": "Kur tai laikau",
+  "keptInSubtitle": "Kad žinotumėte, ką blokuoti ir pakeisti, jei pradings",
+  "keptInWallet": "Piniginė",
+  "keptInBag": "Krepšys",
+  "keptInPhoneCase": "Telefono dėklas",
+  "keptInTravelPouch": "Kelioninis krepšelis",
+  "keptInCar": "Automobilis",
+  "keptInHome": "Namuose",
+  "keptInNone": "Nenustatyta",
+  "lostLineLabel": "Pamestos kortelės blokavimo numeris",
+  "lostLineHelper": "Išsaugokite jį dabar. Numeris yra ant kortelės, todėl prireikus jo neturėsite.",
+  "lifeEventWalletLost": "Pamečiau piniginę",
+  "lifeEventWalletLostBody": "Pirmiausia užblokuokite korteles, tada po vieną pakeiskite dokumentus.",
+  "lifeEventWalletStolen": "Pavogė mano piniginę",
+  "lifeEventWalletStolenBody": "Iškart užblokuokite korteles ir praneškite apie vagystę. Tada stebėkite sąskaitas dėl sukčiavimo.",
+  "lifeVariantWalletQuestion": "Pamesta ar pavogta?",
+  "lifeVariantLost": "Pamesta",
+  "lifeVariantStolen": "Pavogta",
+  "lifeTaskWalletFreezeCards": "Užšaldykite korteles banko programėlėje, jei ji tai leidžia",
+  "lifeTaskWalletRetrace": "Paskambinkite į paskutines vietas, kur buvote, ir paklauskite rastų daiktų biure",
+  "lifeTaskWalletFraudAlert": "Paprašykite kredito biurų ar savo šalies sukčiavimo tarnybos pažymėti jūsų dokumentą",
+  "lifeTaskWalletStatements": "Patikrinkite banko išrašus, ar nėra mokėjimų, kurių neatlikote",
+  "lifeTaskWalletSubscriptions": "Nustatykite naują kortelę prenumeratoms ir tiesioginio debeto mokėjimams",
+  "lifeTaskWalletPayApps": "Pridėkite naujas korteles prie Google Pay arba Apple Pay",
+  "lifeTaskWalletHealthCard": "Paprašykite sveikatos draudiko naujos kortelės",
+  "lifeTaskWalletTransport": "Užblokuokite transporto ar kelių mokesčio kortelę ir perkelkite likutį",
+  "lifeTaskWalletLoyalty": "Paprašykite naujų lojalumo kortelių, kad išsaugotumėte taškus",
+  "lifeTaskWalletLocks": "Jei ten buvo raktai ar jūsų adresas, apsvarstykite spynų keitimą",
+  "lifeTaskWalletInsurance": "Patikrinkite, ar draudimas apima piniginę ir grynuosius",
+  "lostWalletHeroTitle": "Pametėte piniginę?",
+  "lostWalletHeroBody": "Vaultara parodo, ką blokuoti pirmiausia, ką pakeisti ir kam pranešti.",
+  "lostWalletStartTitle": "Kas nutiko?",
+  "lostWalletEditTitle": "Keisti duomenis",
+  "lostWalletLostHint": "Iškrito ar kažkur palikau",
+  "lostWalletStolenHint": "Kažkas paėmė",
+  "lostWalletWhatMissing": "Ko trūksta?",
+  "lostWalletStartButton": "Parodyk, ką daryti",
+  "lostWalletCheckupTitle": "Piniginės patikra",
+  "lostWalletCheckupBody": "Pasiruoškite dabar, kad nieko nepamirštumėte, jei ji pradings.",
+  "lostWalletCheckupAllGood": "Viskas paruošta. Jei kada nors pradings, esate pasiruošę.",
+  "lostWalletSetPlaceBody": "Atidarykite kortelę ar dokumentą ir pasirinkite, kur jį laikote. Tai padarykite asmens tapatybės kortelei, vairuotojo pažymėjimui ir kortelėms.",
+  "lostWalletIssuePhotos": "{count, plural, other{Be nuotraukos: {count}. Su nuotrauka pakeisti greičiau.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kortelės be blokavimo numerio: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasai ar leidimai su jumis: {count}. Laikykite juos namuose, jei nekeliaujate.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ką nešiojatės",
+  "lostWalletNoPhoto": "Nėra nuotraukos",
+  "lostWalletHasPhoto": "Nuotrauka išsaugota",
+  "lostWalletNoLineShort": "Nėra blokavimo numerio",
+  "lostWalletHistory": "Ankstesni kartai",
+  "lostWalletFound": "Rasta",
+  "walletCheckToggle": "Priminti kas 6 mėnesius",
+  "walletCheckToggleBody": "Greitas žvilgsnis į tai, ką nešiojatės, kad sąrašas būtų tikslus.",
+  "walletCheckReminderTitle": "Piniginės patikra",
+  "walletCheckReminderBody": "Ar piniginėje kas nors pasikeitė? Skirkite minutę Vaultara atnaujinti.",
+  "lostWalletBlockNow": "Užblokuokite dabar",
+  "lostWalletBlockNowHint": "Paskambinkite kiekvienam bankui arba naudokite jo programėlę. Svarbi kiekviena minutė.",
+  "lostWalletCall": "Skambinti",
+  "lostWalletAddLine": "Pridėti numerį",
+  "lostWalletNoLine": "Numeris neišsaugotas. Raskite jį banko programėlėje ar svetainėje.",
+  "lostWalletBlocked": "Užblokuota",
+  "lostWalletReplace": "Pakeiskite",
+  "lostWalletReplaceHint": "Užsisakykite naujus ir išsaugokite naują datą, kai jie atkeliaus.",
+  "lostWalletArrived": "Naujas atkeliavo",
+  "lostWalletCheck": "Patikrinkite",
+  "lostWalletCheckHint": "Paklauskite, ar reikia naujos kortelės ar numerio.",
+  "lostWalletPlanEmptyTitle": "Ten nieko išsaugoto nebuvo",
+  "lostWalletPlanEmpty": "Toliau pateikti žingsniai vis tiek padės. Kitą kartą pasirinkite, kur laikote korteles ir dokumentus.",
+  "lostWalletCaseTitle": "Policijos bylos numeris",
+  "lostWalletCaseHint": "Bankai, draudikai ir įstaigos dažnai jo prašo.",
+  "lostWalletCaseLabel": "Bylos ar nuorodos numeris",
+  "lostWalletCaseSaved": "Bylos numeris išsaugotas",
+  "lostWalletAbroadTitle": "Šiuo metu užsienyje?",
+  "lostWalletAbroadBody": "Esate kelionėje {trip}. Jei ten buvo pasas ar tapatybės kortelė, kreipkitės į ambasadą ar konsulatą dėl laikino kelionės dokumento ir praneškite kelionių draudikui.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Atidaryti kelionę",
+  "lostWalletPhoneTitle": "Ar paėmė ir telefoną?",
+  "lostWalletPhoneBody": "Pirmiausia užblokuokite SIM kortelę ir banko programėles. Tam yra atskiras planas.",
+  "lostWalletPhoneButton": "Pradėti pamesto telefono planą",
+  "lostWalletStatementNote": "Vaultara primins po 30, 60 ir 90 dienų.",
+  "lostWalletStatementTitle": "Patikrinkite banko išrašus",
+  "lostWalletStatementBody": "Ieškokite mokėjimų, kurių neatlikote nuo tada, kai dingo piniginė.",
+  "lostWalletFoundButton": "Radau",
+  "lostWalletFoundTitle": "Geros naujienos!",
+  "lostWalletFoundBody": "Šios kortelės jau užblokuotos, tad laukite naujų:",
+  "lostWalletFoundNone": "Dar niekas neužblokuota, galite tęsti kaip anksčiau.",
+  "lostWalletFoundUnfreeze": "Jei užšaldėte korteles banko programėlėje, atšildykite tas, kurių neužblokavote.",
+  "lostWalletFoundConfirm": "Uždaryti planą",
+  "lostWalletFoundOn": "Rasta {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Pamestų daiktų ataskaita",
+  "lostWalletReportTitle": "Pamestų daiktų ataskaita",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ko trūksta: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Bylos numeris: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Bylos numeris: dar nepranešta",
+  "lostWalletReportCount": "{count, plural, other{Įrašai žemiau: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

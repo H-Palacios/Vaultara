@@ -7115,4 +7115,324 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'ກຳລັງຍ້າຍໄປເຮືອນໃໝ່ບໍ? ເບິ່ງວ່າຕ້ອງອັບເດດຫຍັງອີກ.';
+
+  @override
+  String get keptInTitle => 'ຂ້ອຍເກັບໄວ້ໃສ';
+
+  @override
+  String get keptInSubtitle => 'ເພື່ອໃຫ້ຮູ້ວ່າຕ້ອງລະງັບ ແລະ ປ່ຽນຫຍັງຖ້າເສຍ';
+
+  @override
+  String get keptInWallet => 'ກະເປົາເງິນ';
+
+  @override
+  String get keptInBag => 'ກະເປົາ';
+
+  @override
+  String get keptInPhoneCase => 'ເຄສໂທລະສັບ';
+
+  @override
+  String get keptInTravelPouch => 'ກະເປົາເດີນທາງນ້ອຍ';
+
+  @override
+  String get keptInCar => 'ລົດ';
+
+  @override
+  String get keptInHome => 'ຢູ່ເຮືອນ';
+
+  @override
+  String get keptInNone => 'ບໍ່ໄດ້ຕັ້ງ';
+
+  @override
+  String get lostLineLabel => 'ເບີລະງັບບັດເສຍ';
+
+  @override
+  String get lostLineHelper => 'ບັນທຶກໄວ້ດຽວນີ້. ເບີພິມຢູ່ເທິງບັດ ດັ່ງນັ້ນຈະບໍ່ມີຕອນທີ່ທ່ານຕ້ອງການ.';
+
+  @override
+  String get lifeEventWalletLost => 'ກະເປົາເງິນຂ້ອຍເສຍ';
+
+  @override
+  String get lifeEventWalletLostBody => 'ລະງັບບັດກ່ອນ, ແລ້ວປ່ຽນເອກະສານເທື່ອລະອັນ.';
+
+  @override
+  String get lifeEventWalletStolen => 'ກະເປົາເງິນຂ້ອຍຖືກລັກ';
+
+  @override
+  String get lifeEventWalletStolenBody => 'ລະງັບບັດທັນທີ ແລະ ແຈ້ງການລັກ. ຈາກນັ້ນຕິດຕາມບັນຊີເພື່ອກັນການສໍ້ໂກງ.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'ເສຍ ຫຼື ຖືກລັກ?';
+
+  @override
+  String get lifeVariantLost => 'ເສຍ';
+
+  @override
+  String get lifeVariantStolen => 'ຖືກລັກ';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'ຢຸດບັດຊົ່ວຄາວໃນແອັບທະນາຄານຖ້າເຮັດໄດ້';
+
+  @override
+  String get lifeTaskWalletRetrace => 'ໂທຫາບ່ອນສຸດທ້າຍທີ່ທ່ານໄປ ແລະ ຖາມເລື່ອງເຄື່ອງເສຍ';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'ຂໍໃຫ້ສຳນັກງານສິນເຊື່ອ ຫຼື ບໍລິການຕ້ານການສໍ້ໂກງຂອງປະເທດທ່ານໝາຍບັດປະຈຳຕົວຂອງທ່ານ';
+
+  @override
+  String get lifeTaskWalletStatements => 'ກວດໃບແຈ້ງຍອດທະນາຄານຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດ';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'ໃສ່ບັດໃໝ່ໃນການສະໝັກສະມາຊິກ ແລະ ການຫັກເງິນອັດຕະໂນມັດ';
+
+  @override
+  String get lifeTaskWalletPayApps => 'ເພີ່ມບັດໃໝ່ໃສ່ Google Pay ຫຼື Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'ຂໍບັດສະມາຊິກໃໝ່ຈາກປະກັນສຸຂະພາບ';
+
+  @override
+  String get lifeTaskWalletTransport => 'ລະງັບບັດຂົນສົ່ງ ຫຼື ບັດທາງດ່ວນ ແລະ ໂອນຍອດເງິນ';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'ຂໍບັດສະສົມແຕ້ມໃໝ່ເພື່ອຮັກສາແຕ້ມ';
+
+  @override
+  String get lifeTaskWalletLocks => 'ຖ້າມີກະແຈ ຫຼື ທີ່ຢູ່ຂອງທ່ານຢູ່ໃນນັ້ນ ໃຫ້ພິຈາລະນາປ່ຽນກະແຈ';
+
+  @override
+  String get lifeTaskWalletInsurance => 'ກວດວ່າປະກັນຂອງທ່ານຄຸ້ມຄອງກະເປົາເງິນ ແລະ ເງິນສົດບໍ່';
+
+  @override
+  String get lostWalletHeroTitle => 'ກະເປົາເງິນເສຍບໍ?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara ສະແດງວ່າຕ້ອງລະງັບຫຍັງກ່ອນ, ປ່ຽນຫຍັງ ແລະ ແຈ້ງໃຜ.';
+
+  @override
+  String get lostWalletStartTitle => 'ເກີດຫຍັງຂຶ້ນ?';
+
+  @override
+  String get lostWalletEditTitle => 'ປ່ຽນລາຍລະອຽດ';
+
+  @override
+  String get lostWalletLostHint => 'ຕົກ ຫຼື ລືມໄວ້ບ່ອນໃດບ່ອນໜຶ່ງ';
+
+  @override
+  String get lostWalletStolenHint => 'ມີຄົນເອົາໄປ';
+
+  @override
+  String get lostWalletWhatMissing => 'ຫຍັງເສຍໄປ?';
+
+  @override
+  String get lostWalletStartButton => 'ບອກຂ້ອຍວ່າຕ້ອງເຮັດຫຍັງ';
+
+  @override
+  String get lostWalletCheckupTitle => 'ກວດກະເປົາເງິນ';
+
+  @override
+  String get lostWalletCheckupBody => 'ກຽມຕົວດຽວນີ້ ເພື່ອບໍ່ໃຫ້ລືມຫຍັງຖ້າເສຍ.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'ພ້ອມແລ້ວ. ຖ້າມື້ໜຶ່ງເສຍ ທ່ານພ້ອມ.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'ເປີດບັດ ຫຼື ເອກະສານ ແລ້ວເລືອກບ່ອນທີ່ທ່ານເກັບ. ເຮັດແບບນີ້ກັບບັດປະຈຳຕົວ, ໃບຂັບຂີ່ ແລະ ບັດຕ່າງໆ.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ບໍ່ມີຮູບ: $count. ມີຮູບຈະປ່ຽນໃໝ່ໄວຂຶ້ນ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ບັດທີ່ບໍ່ມີເບີລະງັບ: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໜັງສືຜ່ານແດນ ຫຼື ໃບອະນຸຍາດທີ່ທ່ານພົກ: $count. ເກັບໄວ້ເຮືອນເວັ້ນແຕ່ເດີນທາງ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'ສິ່ງທີ່ທ່ານພົກ';
+
+  @override
+  String get lostWalletNoPhoto => 'ບໍ່ມີຮູບ';
+
+  @override
+  String get lostWalletHasPhoto => 'ບັນທຶກຮູບແລ້ວ';
+
+  @override
+  String get lostWalletNoLineShort => 'ບໍ່ມີເບີລະງັບ';
+
+  @override
+  String get lostWalletHistory => 'ເທື່ອກ່ອນໆ';
+
+  @override
+  String get lostWalletFound => 'ພົບແລ້ວ';
+
+  @override
+  String get walletCheckToggle => 'ເຕືອນທຸກ 6 ເດືອນ';
+
+  @override
+  String get walletCheckToggleBody => 'ເບິ່ງສິ່ງທີ່ທ່ານພົກຢ່າງໄວ ເພື່ອໃຫ້ລາຍການຖືກຕ້ອງ.';
+
+  @override
+  String get walletCheckReminderTitle => 'ກວດກະເປົາເງິນ';
+
+  @override
+  String get walletCheckReminderBody => 'ມີຫຍັງປ່ຽນໃນກະເປົາເງິນບໍ? ໃຊ້ເວລາໜຶ່ງນາທີອັບເດດ Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'ລະງັບສິ່ງເຫຼົ່ານີ້ດຽວນີ້';
+
+  @override
+  String get lostWalletBlockNowHint => 'ໂທຫາແຕ່ລະທະນາຄານ ຫຼື ໃຊ້ແອັບ. ທຸກນາທີສຳຄັນ.';
+
+  @override
+  String get lostWalletCall => 'ໂທ';
+
+  @override
+  String get lostWalletAddLine => 'ເພີ່ມເບີ';
+
+  @override
+  String get lostWalletNoLine => 'ບໍ່ມີເບີທີ່ບັນທຶກ. ຊອກຫາໃນແອັບ ຫຼື ເວັບໄຊທະນາຄານ.';
+
+  @override
+  String get lostWalletBlocked => 'ລະງັບແລ້ວ';
+
+  @override
+  String get lostWalletReplace => 'ປ່ຽນສິ່ງເຫຼົ່ານີ້';
+
+  @override
+  String get lostWalletReplaceHint => 'ຍື່ນຂໍໃໝ່ ແລະ ບັນທຶກວັນທີໃໝ່ເມື່ອໄດ້ຮັບ.';
+
+  @override
+  String get lostWalletArrived => 'ໄດ້ຮັບອັນໃໝ່ແລ້ວ';
+
+  @override
+  String get lostWalletCheck => 'ກວດສິ່ງເຫຼົ່ານີ້';
+
+  @override
+  String get lostWalletCheckHint => 'ຖາມວ່າຕ້ອງການບັດ ຫຼື ເບີໃໝ່ບໍ່.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'ບໍ່ມີຫຍັງທີ່ບັນທຶກໄວ້ຢູ່ບ່ອນນັ້ນ';
+
+  @override
+  String get lostWalletPlanEmpty => 'ຂັ້ນຕອນຂ້າງລຸ່ມຍັງຊ່ວຍໄດ້. ເທື່ອໜ້າ ເລືອກບ່ອນທີ່ທ່ານເກັບບັດ ແລະ ເອກະສານ.';
+
+  @override
+  String get lostWalletCaseTitle => 'ເລກຄະດີຕຳຫຼວດ';
+
+  @override
+  String get lostWalletCaseHint => 'ທະນາຄານ, ບໍລິສັດປະກັນ ແລະ ຫ້ອງການມັກຂໍເລກນີ້.';
+
+  @override
+  String get lostWalletCaseLabel => 'ເລກຄະດີ ຫຼື ເລກອ້າງອີງ';
+
+  @override
+  String get lostWalletCaseSaved => 'ບັນທຶກເລກຄະດີແລ້ວ';
+
+  @override
+  String get lostWalletAbroadTitle => 'ຢູ່ຕ່າງປະເທດດຽວນີ້ບໍ?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'ທ່ານຢູ່ໃນການເດີນທາງ $trip. ຖ້າໜັງສືຜ່ານແດນ ຫຼື ບັດປະຈຳຕົວຢູ່ໃນນັ້ນ ໃຫ້ຕິດຕໍ່ສະຖານທູດ ຫຼື ກົງສຸນເພື່ອຂໍເອກະສານເດີນທາງສຸກເສີນ ແລະ ແຈ້ງປະກັນການເດີນທາງ.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'ເປີດການເດີນທາງ';
+
+  @override
+  String get lostWalletPhoneTitle => 'ໂທລະສັບກໍຖືກເອົາໄປບໍ?';
+
+  @override
+  String get lostWalletPhoneBody => 'ລະງັບຊິມກາດ ແລະ ແອັບທະນາຄານກ່ອນ. ມີແຜນສຳລັບເລື່ອງນີ້.';
+
+  @override
+  String get lostWalletPhoneButton => 'ເລີ່ມແຜນໂທລະສັບເສຍ';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara ຈະເຕືອນທ່ານຫຼັງ 30, 60 ແລະ 90 ມື້.';
+
+  @override
+  String get lostWalletStatementTitle => 'ກວດໃບແຈ້ງຍອດທະນາຄານ';
+
+  @override
+  String get lostWalletStatementBody => 'ຊອກຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດນັບແຕ່ກະເປົາເງິນເສຍ.';
+
+  @override
+  String get lostWalletFoundButton => 'ຂ້ອຍພົບແລ້ວ';
+
+  @override
+  String get lostWalletFoundTitle => 'ຂ່າວດີ!';
+
+  @override
+  String get lostWalletFoundBody => 'ບັດເຫຼົ່ານີ້ລະງັບແລ້ວ ລໍຖ້າບັດໃໝ່:';
+
+  @override
+  String get lostWalletFoundNone => 'ຍັງບໍ່ໄດ້ລະງັບຫຍັງ ທ່ານສາມາດໃຊ້ຕໍ່ໄດ້ຄືເກົ່າ.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'ຖ້າທ່ານຢຸດບັດໃນແອັບທະນາຄານ ໃຫ້ເປີດຄືນບັດທີ່ບໍ່ໄດ້ລະງັບ.';
+
+  @override
+  String get lostWalletFoundConfirm => 'ປິດແຜນ';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'ພົບເມື່ອ $date';
+  }
+
+  @override
+  String get lostWalletReport => 'ລາຍງານເຄື່ອງເສຍ';
+
+  @override
+  String get lostWalletReportTitle => 'ລາຍງານເຄື່ອງເສຍ';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'ວັນທີ: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'ສິ່ງທີ່ເສຍ: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'ເລກຄະດີ: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'ເລກຄະດີ: ຍັງບໍ່ໄດ້ແຈ້ງ';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ລາຍການຂ້າງລຸ່ມ: $count',
+    );
+    return '$_temp0';
+  }
 }

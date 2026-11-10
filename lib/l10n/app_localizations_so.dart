@@ -7171,4 +7171,324 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Ma u guuraysaa guri cusub? Eeg waxa kale ee aad cusboonaysiinayso.';
+
+  @override
+  String get keptInTitle => 'Halka aan ku hayo';
+
+  @override
+  String get keptInSubtitle => 'Si aad u ogaato waxa aad xannibayso iyo waxa aad beddelayso haddii uu lumo';
+
+  @override
+  String get keptInWallet => 'Boorso lacageed';
+
+  @override
+  String get keptInBag => 'Bac';
+
+  @override
+  String get keptInPhoneCase => 'Galka taleefanka';
+
+  @override
+  String get keptInTravelPouch => 'Boorsada safarka';
+
+  @override
+  String get keptInCar => 'Baabuur';
+
+  @override
+  String get keptInHome => 'Guriga';
+
+  @override
+  String get keptInNone => 'Lama dooran';
+
+  @override
+  String get lostLineLabel => 'Lambarka kaarka lumay';
+
+  @override
+  String get lostLineHelper => 'Hadda kaydi. Lambarka wuxuu ku qoran yahay kaarka, markaa ma haysan doontid marka aad u baahato.';
+
+  @override
+  String get lifeEventWalletLost => 'Boorsadaydii lacagta way luntay';
+
+  @override
+  String get lifeEventWalletLostBody => 'Marka hore xannib kaararkaaga, kadibna beddel dukumentiyadaada mid mid.';
+
+  @override
+  String get lifeEventWalletStolen => 'Boorsadaydii lacagta waa la xaday';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Isla markiiba xannib kaararkaaga oo soo sheeg xatooyada. Kadib la soco akoonnadaada khiyaano darteed.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Ma lumay mise waa la xaday?';
+
+  @override
+  String get lifeVariantLost => 'Lumay';
+
+  @override
+  String get lifeVariantStolen => 'La xaday';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Ku qabooji kaararkaaga app-ka bangigaaga haddii uu leeyahay';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Wac meelihii ugu dambeeyay ee aad joogtay oo weydii alaabta lumay';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Ka codso xafiisyada deynta ama adeegga khiyaanada dalkaaga inay calaamadeeyaan aqoonsigaaga';
+
+  @override
+  String get lifeTaskWalletStatements => 'Hubi bayaannada bangiga lacag bixin aadan samayn';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Geli kaarka cusub rukummadaada iyo lacag-bixinta tooska ah';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Ku dar kaararka cusub Google Pay ama Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Ka codso caymiskaaga caafimaadka kaar xubinnimo oo cusub';
+
+  @override
+  String get lifeTaskWalletTransport => 'Xannib kaarka gaadiidka ama canshuurta waddada oo u wareeji haraaga';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Codso kaarar daacadnimo oo cusub si aad dhibcahaaga u haysato';
+
+  @override
+  String get lifeTaskWalletLocks => 'Haddii furayaal ama cinwaankaagu ku jireen, ka fikir inaad beddesho qufulada';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Hubi in caymiskaagu daboolayo boorsada iyo lacagta caddaanka ah';
+
+  @override
+  String get lostWalletHeroTitle => 'Boorsadaada lacagta ma luntay?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara waxay ku tusaysaa waxa aad marka hore xannibayso, waxa aad beddelayso iyo cidda aad u sheegayso.';
+
+  @override
+  String get lostWalletStartTitle => 'Maxaa dhacay?';
+
+  @override
+  String get lostWalletEditTitle => 'Beddel faahfaahinta';
+
+  @override
+  String get lostWalletLostHint => 'Way dhacday ama meel ayaan ku illaaway';
+
+  @override
+  String get lostWalletStolenHint => 'Qof ayaa qaatay';
+
+  @override
+  String get lostWalletWhatMissing => 'Maxaa maqan?';
+
+  @override
+  String get lostWalletStartButton => 'I tus waxa aan sameeyo';
+
+  @override
+  String get lostWalletCheckupTitle => 'Hubinta boorsada';
+
+  @override
+  String get lostWalletCheckupBody => 'Hadda isu diyaari, si aan waxba loo illoobin haddii ay lunto.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Wax walba waa diyaar. Haddii ay waligeed lunto, waad diyaar tahay.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Fur kaar ama dukumenti oo dooro halka aad ku hayso. Tan u samee aqoonsigaaga, liisankaaga iyo kaararkaaga.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sawir la\'aan: $count. Sawir leh, beddelistu way dhaqsataa.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kaararka aan lahayn lambarka kaarka lumay: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baasaboorrada ama ruqsadaha aad sido: $count. Guriga uga tag haddii aadan safrayn.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Waxa aad sido';
+
+  @override
+  String get lostWalletNoPhoto => 'Sawir ma jiro';
+
+  @override
+  String get lostWalletHasPhoto => 'Sawirka waa la kaydiyay';
+
+  @override
+  String get lostWalletNoLineShort => 'Lambarka kaarka lumay ma jiro';
+
+  @override
+  String get lostWalletHistory => 'Marar hore';
+
+  @override
+  String get lostWalletFound => 'Waa la helay';
+
+  @override
+  String get walletCheckToggle => 'I xasuusi 6-dii biloodba mar';
+
+  @override
+  String get walletCheckToggleBody => 'Eegis degdeg ah oo ku saabsan waxa aad sido, si liisku u ahaado mid sax ah.';
+
+  @override
+  String get walletCheckReminderTitle => 'Hubinta boorsada';
+
+  @override
+  String get walletCheckReminderBody => 'Wax ma ka beddelmeen boorsadaada? Qaado daqiiqad aad ku cusbooneysiiso Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Xannib kuwan hadda';
+
+  @override
+  String get lostWalletBlockNowHint => 'Wac bangi kasta ama isticmaal app-kiisa. Daqiiqad kasta waa muhiim.';
+
+  @override
+  String get lostWalletCall => 'Wac';
+
+  @override
+  String get lostWalletAddLine => 'Ku dar lambarka';
+
+  @override
+  String get lostWalletNoLine => 'Lambar lama kaydin. Ka hel app-ka ama websaydka bangigaaga.';
+
+  @override
+  String get lostWalletBlocked => 'La xannibay';
+
+  @override
+  String get lostWalletReplace => 'Beddel kuwan';
+
+  @override
+  String get lostWalletReplaceHint => 'Codso kuwo cusub oo kaydi taariikhda cusub marka ay yimaadaan.';
+
+  @override
+  String get lostWalletArrived => 'Kii cusbaa wuu yimid';
+
+  @override
+  String get lostWalletCheck => 'Hubi kuwan';
+
+  @override
+  String get lostWalletCheckHint => 'Weydii haddii aad u baahan tahay kaar ama lambar cusub.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Waxba lagama kaydin halkaas';
+
+  @override
+  String get lostWalletPlanEmpty => 'Tallaabooyinka hoose weli way caawinayaan. Marka xigta, dooro halka aad ku hayso kaararkaaga iyo dukumentiyadaada.';
+
+  @override
+  String get lostWalletCaseTitle => 'Lambarka kiiska booliska';
+
+  @override
+  String get lostWalletCaseHint => 'Bangiyada, caymisyada iyo xafiisyadu badanaa way weydiiyaan.';
+
+  @override
+  String get lostWalletCaseLabel => 'Lambarka kiiska ama tixraaca';
+
+  @override
+  String get lostWalletCaseSaved => 'Lambarka kiiska waa la kaydiyay';
+
+  @override
+  String get lostWalletAbroadTitle => 'Hadda dibadda ma joogtaa?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Waxaad ku jirtaa safarka $trip. Haddii baasaboorkaaga ama aqoonsigaagu ku jireen, la xiriir safaaraddaada ama qunsuliyaddaada si aad u hesho dukumenti safar degdeg ah, oo u sheeg caymiskaaga safarka.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Fur safarka';
+
+  @override
+  String get lostWalletPhoneTitle => 'Taleefankaaga sidoo kale ma la qaatay?';
+
+  @override
+  String get lostWalletPhoneBody => 'Marka hore xannib kaarka SIM-ka iyo app-yada bangiga. Waxaa jira qorshe taas loogu talagalay.';
+
+  @override
+  String get lostWalletPhoneButton => 'Bilow qorshaha taleefanka lumay';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara waxay ku xasuusin doontaa 30, 60 iyo 90 maalmood kadib.';
+
+  @override
+  String get lostWalletStatementTitle => 'Hubi bayaannada bangigaaga';
+
+  @override
+  String get lostWalletStatementBody => 'Raadi lacag bixin aadan samayn tan iyo markii boorsadaadu luntay.';
+
+  @override
+  String get lostWalletFoundButton => 'Waan helay';
+
+  @override
+  String get lostWalletFoundTitle => 'War wanaagsan!';
+
+  @override
+  String get lostWalletFoundBody => 'Kaararkan horey ayaa loo xannibay, markaa sug kuwa cusub:';
+
+  @override
+  String get lostWalletFoundNone => 'Weli waxba lama xannibin, waad sii wadan kartaa sidii hore.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Haddii aad kaarar ku qaboojisay app-ka bangiga, ka fur kuwa aadan xannibin.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Xir qorshaha';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Waa la helay $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Warbixinta alaabta lumay';
+
+  @override
+  String get lostWalletReportTitle => 'Warbixinta alaabta lumay';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Taariikhda: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Waxa maqan: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Lambarka kiiska: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Lambarka kiiska: weli lama soo sheegin';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Waxyaabaha hoose: $count',
+    );
+    return '$_temp0';
+  }
 }

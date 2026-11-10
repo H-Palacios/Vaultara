@@ -2318,5 +2318,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "ወደ አዲስ ቤት እየተዛወርክ ነው? ሌላ ምን ማዘመን እንዳለብህ ተመልከት።"
+  "lifePlanSuggestMove": "ወደ አዲስ ቤት እየተዛወርክ ነው? ሌላ ምን ማዘመን እንዳለብህ ተመልከት።",
+  "keptInTitle": "የማስቀምጥበት ቦታ",
+  "keptInSubtitle": "ቢጠፋ ምን መዝጋት እና ምን መተካት እንዳለብዎ እንዲያውቁ",
+  "keptInWallet": "ቦርሳ",
+  "keptInBag": "ቦርሳ (የእጅ)",
+  "keptInPhoneCase": "የስልክ ሽፋን",
+  "keptInTravelPouch": "የጉዞ ኪስ",
+  "keptInCar": "መኪና",
+  "keptInHome": "ቤት ውስጥ",
+  "keptInNone": "አልተመረጠም",
+  "lostLineLabel": "ለጠፋ ካርድ የሚደወል ቁጥር",
+  "lostLineHelper": "አሁን ያስቀምጡት። ቁጥሩ በካርዱ ላይ ስለታተመ ሲፈልጉት አይኖርዎትም።",
+  "lifeEventWalletLost": "ቦርሳዬ ጠፋ",
+  "lifeEventWalletLostBody": "መጀመሪያ ካርዶችዎን ይዝጉ፣ ከዚያ ሰነዶችዎን አንድ በአንድ ይተኩ።",
+  "lifeEventWalletStolen": "ቦርሳዬ ተሰረቀ",
+  "lifeEventWalletStolenBody": "ካርዶችዎን ወዲያውኑ ይዝጉ እና ስርቆቱን ያሳውቁ። ከዚያ መለያዎችዎን ከማጭበርበር ይከታተሉ።",
+  "lifeVariantWalletQuestion": "ጠፋ ወይስ ተሰረቀ?",
+  "lifeVariantLost": "ጠፋ",
+  "lifeVariantStolen": "ተሰረቀ",
+  "lifeTaskWalletFreezeCards": "የባንክ መተግበሪያዎ ካለው ካርዶችዎን በዚያ ያግዱ",
+  "lifeTaskWalletRetrace": "የመጨረሻ የነበሩባቸውን ቦታዎች ይደውሉ እና ስለጠፉ ዕቃዎች ይጠይቁ",
+  "lifeTaskWalletFraudAlert": "የብድር ቢሮዎችን ወይም የአገርዎን የማጭበርበር አገልግሎት መታወቂያዎን እንዲያመለክቱ ይጠይቁ",
+  "lifeTaskWalletStatements": "ያልፈጸሟቸውን ክፍያዎች ለማግኘት የባንክ መግለጫዎችን ያረጋግጡ",
+  "lifeTaskWalletSubscriptions": "አዲሱን ካርድ በምዝገባዎችዎ እና በራስ-ሰር ክፍያዎችዎ ላይ ያስገቡ",
+  "lifeTaskWalletPayApps": "አዲሶቹን ካርዶች ወደ Google Pay ወይም Apple Pay ያክሉ",
+  "lifeTaskWalletHealthCard": "ከጤና መድን ድርጅትዎ አዲስ የአባልነት ካርድ ይጠይቁ",
+  "lifeTaskWalletTransport": "የትራንስፖርት ወይም የመንገድ ክፍያ ካርድዎን ይዝጉ እና ቀሪ ሂሳቡን ያዛውሩ",
+  "lifeTaskWalletLoyalty": "ነጥቦችዎን እንዲይዙ አዲስ የታማኝነት ካርዶችን ይጠይቁ",
+  "lifeTaskWalletLocks": "ቁልፎች ወይም አድራሻዎ በውስጡ ከነበሩ ቁልፎቹን መቀየር ያስቡበት",
+  "lifeTaskWalletInsurance": "መድንዎ ቦርሳውን እና ጥሬ ገንዘቡን የሚሸፍን መሆኑን ያረጋግጡ",
+  "lostWalletHeroTitle": "ቦርሳዎ ጠፋ?",
+  "lostWalletHeroBody": "Vaultara መጀመሪያ ምን መዝጋት፣ ምን መተካት እና ለማን መንገር እንዳለብዎ ያሳያል።",
+  "lostWalletStartTitle": "ምን ሆነ?",
+  "lostWalletEditTitle": "ዝርዝሮቹን ይቀይሩ",
+  "lostWalletLostHint": "ወደቀ ወይም የሆነ ቦታ ረሳሁት",
+  "lostWalletStolenHint": "አንድ ሰው ወሰደው",
+  "lostWalletWhatMissing": "ምን ጠፋ?",
+  "lostWalletStartButton": "ምን ማድረግ እንዳለብኝ አሳየኝ",
+  "lostWalletCheckupTitle": "የቦርሳ ፍተሻ",
+  "lostWalletCheckupBody": "ቢጠፋ ምንም እንዳይረሳ አሁን ይዘጋጁ።",
+  "lostWalletCheckupAllGood": "ሁሉም ዝግጁ ነው። መቼም ቢጠፋ ዝግጁ ነዎት።",
+  "lostWalletSetPlaceBody": "ካርድ ወይም ሰነድ ይክፈቱ እና የሚያስቀምጡበትን ቦታ ይምረጡ። ይህን ለመታወቂያዎ፣ ለመንጃ ፈቃድዎ እና ለካርዶችዎ ያድርጉ።",
+  "lostWalletIssuePhotos": "{count, plural, other{ፎቶ የሌላቸው: {count}። ከፎቶ ጋር መተካት ፈጣን ነው።}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ለጠፋ ካርድ የሚደወል ቁጥር የሌላቸው ካርዶች: {count}።}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{የያዙት ፓስፖርት ወይም ፈቃድ: {count}። ካልተጓዙ ቤት ውስጥ ይተዋቸው።}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "የሚይዙት",
+  "lostWalletNoPhoto": "ፎቶ የለም",
+  "lostWalletHasPhoto": "ፎቶ ተቀምጧል",
+  "lostWalletNoLineShort": "ለጠፋ ካርድ ቁጥር የለም",
+  "lostWalletHistory": "ቀደም ያሉ ጊዜያት",
+  "lostWalletFound": "ተገኝቷል",
+  "walletCheckToggle": "በየ6 ወሩ አስታውሰኝ",
+  "walletCheckToggleBody": "ዝርዝሩ ትክክል እንዲሆን የሚይዙትን በፍጥነት መመልከት።",
+  "walletCheckReminderTitle": "የቦርሳ ፍተሻ",
+  "walletCheckReminderBody": "በቦርሳዎ ውስጥ የተቀየረ ነገር አለ? Vaultaraን ለማዘመን አንድ ደቂቃ ይውሰዱ።",
+  "lostWalletBlockNow": "እነዚህን አሁን ይዝጉ",
+  "lostWalletBlockNowHint": "ለእያንዳንዱ ባንክ ይደውሉ ወይም መተግበሪያውን ይጠቀሙ። እያንዳንዱ ደቂቃ ይቆጠራል።",
+  "lostWalletCall": "ደውል",
+  "lostWalletAddLine": "ቁጥሩን አክል",
+  "lostWalletNoLine": "የተቀመጠ ቁጥር የለም። በባንክዎ መተግበሪያ ወይም ድረ-ገጽ ላይ ያግኙት።",
+  "lostWalletBlocked": "ተዘግቷል",
+  "lostWalletReplace": "እነዚህን ይተኩ",
+  "lostWalletReplaceHint": "አዲስ ያመልክቱ እና ሲደርሱ አዲሱን ቀን ያስቀምጡ።",
+  "lostWalletArrived": "አዲሱ ደርሷል",
+  "lostWalletCheck": "እነዚህን ያረጋግጡ",
+  "lostWalletCheckHint": "አዲስ ካርድ ወይም ቁጥር ያስፈልግዎት እንደሆነ ይጠይቁ።",
+  "lostWalletPlanEmptyTitle": "እዚያ የተቀመጠ ምንም ነገር አልነበረም",
+  "lostWalletPlanEmpty": "ከታች ያሉት እርምጃዎች አሁንም ይረዳሉ። በሚቀጥለው ጊዜ ካርዶችዎን እና ሰነዶችዎን የሚያስቀምጡበትን ይምረጡ።",
+  "lostWalletCaseTitle": "የፖሊስ ጉዳይ ቁጥር",
+  "lostWalletCaseHint": "ባንኮች፣ መድን ሰጪዎች እና ቢሮዎች ብዙ ጊዜ ይጠይቁታል።",
+  "lostWalletCaseLabel": "የጉዳይ ወይም የማጣቀሻ ቁጥር",
+  "lostWalletCaseSaved": "የጉዳይ ቁጥር ተቀምጧል",
+  "lostWalletAbroadTitle": "አሁን ውጭ አገር ነዎት?",
+  "lostWalletAbroadBody": "በጉዞ ላይ ነዎት: {trip}። ፓስፖርትዎ ወይም መታወቂያዎ በውስጡ ከነበረ ለአስቸኳይ የጉዞ ሰነድ ኤምባሲዎን ወይም ቆንስላዎን ያግኙ፣ እና ለጉዞ መድንዎ ያሳውቁ።",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ጉዞውን ክፈት",
+  "lostWalletPhoneTitle": "ስልክዎም ተወሰደ?",
+  "lostWalletPhoneBody": "መጀመሪያ የSIM ካርዱን እና የባንክ መተግበሪያዎችዎን ይዝጉ። ለዚያ እቅድ አለ።",
+  "lostWalletPhoneButton": "የጠፋ ስልክ እቅድ ጀምር",
+  "lostWalletStatementNote": "Vaultara ከ30፣ 60 እና 90 ቀናት በኋላ ያስታውስዎታል።",
+  "lostWalletStatementTitle": "የባንክ መግለጫዎችዎን ያረጋግጡ",
+  "lostWalletStatementBody": "ቦርሳዎ ከጠፋ ጀምሮ ያልፈጸሟቸውን ክፍያዎች ይፈልጉ።",
+  "lostWalletFoundButton": "አገኘሁት",
+  "lostWalletFoundTitle": "መልካም ዜና!",
+  "lostWalletFoundBody": "እነዚህ ካርዶች አስቀድመው ተዘግተዋል፣ ስለዚህ አዲሶቹን ይጠብቁ:",
+  "lostWalletFoundNone": "እስካሁን ምንም አልተዘጋም፣ እንደበፊቱ መቀጠል ይችላሉ።",
+  "lostWalletFoundUnfreeze": "በባንክ መተግበሪያው ካርዶችን ካገዱ፣ ያልዘጓቸውን ይክፈቱ።",
+  "lostWalletFoundConfirm": "እቅዱን ዝጋ",
+  "lostWalletFoundOn": "የተገኘው {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "የጠፉ ዕቃዎች ሪፖርት",
+  "lostWalletReportTitle": "የጠፉ ዕቃዎች ሪፖርት",
+  "lostWalletReportWhen": "ቀን: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "የጠፋው: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "የጉዳይ ቁጥር: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "የጉዳይ ቁጥር: ገና አልተመዘገበም",
+  "lostWalletReportCount": "{count, plural, other{ከታች ያሉ ንጥሎች: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

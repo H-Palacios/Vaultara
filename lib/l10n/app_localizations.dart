@@ -12258,6 +12258,570 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Moving to a new home? See what else to update.'**
   String get lifePlanSuggestMove;
+
+  /// Title of the field for where a card or document is kept.
+  ///
+  /// In en, this message translates to:
+  /// **'Where I keep it'**
+  String get keptInTitle;
+
+  /// Explains the where I keep it field.
+  ///
+  /// In en, this message translates to:
+  /// **'So you know what to block and replace if it goes missing'**
+  String get keptInSubtitle;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Wallet'**
+  String get keptInWallet;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Bag'**
+  String get keptInBag;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone case'**
+  String get keptInPhoneCase;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel pouch'**
+  String get keptInTravelPouch;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'Car'**
+  String get keptInCar;
+
+  /// A place where the user keeps a card or document.
+  ///
+  /// In en, this message translates to:
+  /// **'At home'**
+  String get keptInHome;
+
+  /// No place chosen for where a card is kept.
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get keptInNone;
+
+  /// Field for the bank's number to block a lost card.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost card phone number'**
+  String get lostLineLabel;
+
+  /// Helper under the lost card phone number field.
+  ///
+  /// In en, this message translates to:
+  /// **'Save it now. The number is printed on the card, so it is gone when you need it.'**
+  String get lostLineHelper;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I lost my wallet'**
+  String get lifeEventWalletLost;
+
+  /// Short explanation shown in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Block your cards first, then replace your documents one by one.'**
+  String get lifeEventWalletLostBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'My wallet was stolen'**
+  String get lifeEventWalletStolen;
+
+  /// Short explanation shown in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Block your cards right away and report the theft. Then watch your accounts for fraud.'**
+  String get lifeEventWalletStolenBody;
+
+  /// Question in the lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Was it lost or stolen?'**
+  String get lifeVariantWalletQuestion;
+
+  /// Answer: the wallet was lost.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost'**
+  String get lifeVariantLost;
+
+  /// Answer: the wallet was stolen.
+  ///
+  /// In en, this message translates to:
+  /// **'Stolen'**
+  String get lifeVariantStolen;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Freeze your cards in your banking app if it has a freeze switch'**
+  String get lifeTaskWalletFreezeCards;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Call the last places you were and ask at lost property'**
+  String get lifeTaskWalletRetrace;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask the credit bureaus or your country\'s fraud service to flag your ID'**
+  String get lifeTaskWalletFraudAlert;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your bank statements for payments you did not make'**
+  String get lifeTaskWalletStatements;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Put the new card on your subscriptions and debit orders'**
+  String get lifeTaskWalletSubscriptions;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the new cards to Google Pay or Apple Pay'**
+  String get lifeTaskWalletPayApps;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask your medical aid or health insurer for a new member card'**
+  String get lifeTaskWalletHealthCard;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Block your transport or toll card and move the balance'**
+  String get lifeTaskWalletTransport;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for new loyalty cards so you keep your points'**
+  String get lifeTaskWalletLoyalty;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'If keys or your address were in it, think about changing the locks'**
+  String get lifeTaskWalletLocks;
+
+  /// A step in a lost wallet plan. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Check whether your insurance covers the wallet and cash'**
+  String get lifeTaskWalletInsurance;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost your wallet?'**
+  String get lostWalletHeroTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara shows what to block first, what to replace and who to tell.'**
+  String get lostWalletHeroBody;
+
+  /// Title of the sheet that starts a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'What happened?'**
+  String get lostWalletStartTitle;
+
+  /// Title of the sheet that edits a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Change the details'**
+  String get lostWalletEditTitle;
+
+  /// Under the Lost choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Dropped or left somewhere'**
+  String get lostWalletLostHint;
+
+  /// Under the Stolen choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone took it'**
+  String get lostWalletStolenHint;
+
+  /// Question above the places that were lost.
+  ///
+  /// In en, this message translates to:
+  /// **'What went missing?'**
+  String get lostWalletWhatMissing;
+
+  /// Button that starts a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Show me what to do'**
+  String get lostWalletStartButton;
+
+  /// Section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Wallet check-up'**
+  String get lostWalletCheckupTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Get ready now, so nothing is forgotten if it goes missing.'**
+  String get lostWalletCheckupBody;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'All set. If it ever goes missing, you are ready.'**
+  String get lostWalletCheckupAllGood;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open a card or document and choose where you keep it. Do this for your ID, licence and cards.'**
+  String get lostWalletSetPlaceBody;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}'**
+  String lostWalletIssuePhotos(int count);
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 card has no lost card number saved.} other{{count} cards have no lost card number saved.}}'**
+  String lostWalletIssueLines(int count);
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{You carry a passport or permit. Keep it at home unless you travel.} other{You carry {count} passports or permits. Keep them at home unless you travel.}}'**
+  String lostWalletIssuePassport(int count);
+
+  /// Section heading.
+  ///
+  /// In en, this message translates to:
+  /// **'What you carry'**
+  String get lostWalletWhatsInside;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'No photo'**
+  String get lostWalletNoPhoto;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo saved'**
+  String get lostWalletHasPhoto;
+
+  /// Tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'No lost card number'**
+  String get lostWalletNoLineShort;
+
+  /// Section heading for finished lost wallet plans.
+  ///
+  /// In en, this message translates to:
+  /// **'Earlier times'**
+  String get lostWalletHistory;
+
+  /// A lost wallet that turned up again.
+  ///
+  /// In en, this message translates to:
+  /// **'Found'**
+  String get lostWalletFound;
+
+  /// Switch for the wallet check-up reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me every 6 months'**
+  String get walletCheckToggle;
+
+  /// Under the wallet check-up switch.
+  ///
+  /// In en, this message translates to:
+  /// **'A quick look at what you carry, so the list stays right.'**
+  String get walletCheckToggleBody;
+
+  /// Notification title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wallet check-up'**
+  String get walletCheckReminderTitle;
+
+  /// Notification body.
+  ///
+  /// In en, this message translates to:
+  /// **'Has anything in your wallet changed? Take a minute to update Vaultara.'**
+  String get walletCheckReminderBody;
+
+  /// Section heading in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Block these now'**
+  String get lostWalletBlockNow;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Call each bank or use its app. Every minute counts.'**
+  String get lostWalletBlockNowHint;
+
+  /// Button that phones the bank's lost card line.
+  ///
+  /// In en, this message translates to:
+  /// **'Call'**
+  String get lostWalletCall;
+
+  /// Button to add a lost card phone number.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the number'**
+  String get lostWalletAddLine;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'No number saved. Use your bank\'s app or its website to find the lost card line.'**
+  String get lostWalletNoLine;
+
+  /// A card the user has blocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked'**
+  String get lostWalletBlocked;
+
+  /// Section heading in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace these'**
+  String get lostWalletReplace;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply for new ones, then save the new date when each one arrives.'**
+  String get lostWalletReplaceHint;
+
+  /// Button when a replacement document arrives.
+  ///
+  /// In en, this message translates to:
+  /// **'New one arrived'**
+  String get lostWalletArrived;
+
+  /// Section heading in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Check these'**
+  String get lostWalletCheck;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask whether you need a new card or number.'**
+  String get lostWalletCheckHint;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing saved was kept there'**
+  String get lostWalletPlanEmptyTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'The steps below still help. Next time, choose where you keep your cards and documents.'**
+  String get lostWalletPlanEmpty;
+
+  /// Card title in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Police case number'**
+  String get lostWalletCaseTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Banks, insurers and offices often ask for it.'**
+  String get lostWalletCaseHint;
+
+  /// Text field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Case or reference number'**
+  String get lostWalletCaseLabel;
+
+  /// Confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Case number saved'**
+  String get lostWalletCaseSaved;
+
+  /// Card title in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Abroad right now?'**
+  String get lostWalletAbroadTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'You are on {trip}. If your passport or ID was in it, contact your embassy or consulate for an emergency travel document, and tell your travel insurer.'**
+  String lostWalletAbroadBody(String trip);
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Open trip'**
+  String get lostWalletOpenTrip;
+
+  /// Card title in a lost wallet plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Was your phone taken too?'**
+  String get lostWalletPhoneTitle;
+
+  /// On the Lost my wallet screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Block the SIM card and your banking apps first. There is a plan for that.'**
+  String get lostWalletPhoneBody;
+
+  /// Button.
+  ///
+  /// In en, this message translates to:
+  /// **'Start the lost phone plan'**
+  String get lostWalletPhoneButton;
+
+  /// Note under the statement step.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara reminds you after 30, 60 and 90 days.'**
+  String get lostWalletStatementNote;
+
+  /// Notification title.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your bank statements'**
+  String get lostWalletStatementTitle;
+
+  /// Notification body.
+  ///
+  /// In en, this message translates to:
+  /// **'Look for payments you did not make since your wallet went missing.'**
+  String get lostWalletStatementBody;
+
+  /// Button for when the lost wallet turns up.
+  ///
+  /// In en, this message translates to:
+  /// **'I found it'**
+  String get lostWalletFoundButton;
+
+  /// Dialog title when the wallet is found.
+  ///
+  /// In en, this message translates to:
+  /// **'Good news!'**
+  String get lostWalletFoundTitle;
+
+  /// Dialog body, followed by a list of cards.
+  ///
+  /// In en, this message translates to:
+  /// **'These cards are already blocked, so keep an eye out for the new ones:'**
+  String get lostWalletFoundBody;
+
+  /// Dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing was blocked yet, so you can carry on as before.'**
+  String get lostWalletFoundNone;
+
+  /// Dialog note.
+  ///
+  /// In en, this message translates to:
+  /// **'If you froze cards in your banking app, unfreeze the ones you did not block.'**
+  String get lostWalletFoundUnfreeze;
+
+  /// Dialog button.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the plan'**
+  String get lostWalletFoundConfirm;
+
+  /// Shown on a lost wallet plan once it is found.
+  ///
+  /// In en, this message translates to:
+  /// **'Found on {date}'**
+  String lostWalletFoundOn(String date);
+
+  /// Menu item that shares a PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost items report'**
+  String get lostWalletReport;
+
+  /// Title of the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost items report'**
+  String get lostWalletReportTitle;
+
+  /// Line in the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Date: {date}'**
+  String lostWalletReportWhen(String date);
+
+  /// Line in the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'What went missing: {places}'**
+  String lostWalletReportWhat(String places);
+
+  /// Line in the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Case number: {number}'**
+  String lostWalletReportCase(String number);
+
+  /// Line in the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Case number: not reported yet'**
+  String get lostWalletReportNoCase;
+
+  /// Line in the PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 item listed below} other{{count} items listed below}}'**
+  String lostWalletReportCount(int count);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

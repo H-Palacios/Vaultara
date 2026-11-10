@@ -7115,6 +7115,326 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => '要搬新家吗？看看还有什么需要更新。';
+
+  @override
+  String get keptInTitle => '存放位置';
+
+  @override
+  String get keptInSubtitle => '以便丢失时知道要冻结和补办什么';
+
+  @override
+  String get keptInWallet => '钱包';
+
+  @override
+  String get keptInBag => '包';
+
+  @override
+  String get keptInPhoneCase => '手机壳';
+
+  @override
+  String get keptInTravelPouch => '旅行收纳包';
+
+  @override
+  String get keptInCar => '汽车';
+
+  @override
+  String get keptInHome => '家里';
+
+  @override
+  String get keptInNone => '未设置';
+
+  @override
+  String get lostLineLabel => '挂失电话';
+
+  @override
+  String get lostLineHelper => '现在就保存。号码印在卡上，需要时就不在手边了。';
+
+  @override
+  String get lifeEventWalletLost => '我的钱包丢了';
+
+  @override
+  String get lifeEventWalletLostBody => '先冻结银行卡，再逐一补办证件。';
+
+  @override
+  String get lifeEventWalletStolen => '我的钱包被偷了';
+
+  @override
+  String get lifeEventWalletStolenBody => '立即冻结银行卡并报案。之后留意账户是否有欺诈。';
+
+  @override
+  String get lifeVariantWalletQuestion => '丢失还是被盗？';
+
+  @override
+  String get lifeVariantLost => '丢失';
+
+  @override
+  String get lifeVariantStolen => '被盗';
+
+  @override
+  String get lifeTaskWalletFreezeCards => '如果银行 App 支持，先在 App 中锁定卡片';
+
+  @override
+  String get lifeTaskWalletRetrace => '打电话给最近去过的地方，询问失物招领';
+
+  @override
+  String get lifeTaskWalletFraudAlert => '请征信机构或本国反诈骗机构标记你的身份证件';
+
+  @override
+  String get lifeTaskWalletStatements => '检查银行账单中是否有不是你本人的消费';
+
+  @override
+  String get lifeTaskWalletSubscriptions => '把新卡绑定到订阅和自动扣款';
+
+  @override
+  String get lifeTaskWalletPayApps => '把新卡添加到 Google Pay 或 Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => '向医疗保险申请新的会员卡';
+
+  @override
+  String get lifeTaskWalletTransport => '冻结交通卡或通行费卡并转移余额';
+
+  @override
+  String get lifeTaskWalletLoyalty => '补办会员卡以保留积分';
+
+  @override
+  String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
+
+  @override
+  String get lifeTaskWalletInsurance => '确认你的保险是否涵盖钱包和现金';
+
+  @override
+  String get lostWalletHeroTitle => '钱包丢了？';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara 告诉你先冻结什么、补办什么、通知谁。';
+
+  @override
+  String get lostWalletStartTitle => '发生了什么？';
+
+  @override
+  String get lostWalletEditTitle => '更改详情';
+
+  @override
+  String get lostWalletLostHint => '掉了或落在某处';
+
+  @override
+  String get lostWalletStolenHint => '被人拿走了';
+
+  @override
+  String get lostWalletWhatMissing => '少了什么？';
+
+  @override
+  String get lostWalletStartButton => '告诉我该做什么';
+
+  @override
+  String get lostWalletCheckupTitle => '钱包检查';
+
+  @override
+  String get lostWalletCheckupBody => '现在就做好准备，丢失时不会遗漏任何东西。';
+
+  @override
+  String get lostWalletCheckupAllGood => '一切就绪。万一丢失，你已有准备。';
+
+  @override
+  String get lostWalletSetPlaceBody => '打开一张卡或一份证件，选择存放位置。为身份证、驾照和银行卡都设置一下。';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '没有照片：$count 项。有照片补办更快。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未保存挂失电话的卡：$count 张。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '随身携带的护照或许可证：$count 份。不出行时请放在家里。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => '随身携带的物品';
+
+  @override
+  String get lostWalletNoPhoto => '没有照片';
+
+  @override
+  String get lostWalletHasPhoto => '已保存照片';
+
+  @override
+  String get lostWalletNoLineShort => '没有挂失电话';
+
+  @override
+  String get lostWalletHistory => '以往记录';
+
+  @override
+  String get lostWalletFound => '已找到';
+
+  @override
+  String get walletCheckToggle => '每 6 个月提醒我';
+
+  @override
+  String get walletCheckToggleBody => '快速看看随身物品，让清单保持准确。';
+
+  @override
+  String get walletCheckReminderTitle => '钱包检查';
+
+  @override
+  String get walletCheckReminderBody => '钱包里有变化吗？花一分钟更新 Vaultara。';
+
+  @override
+  String get lostWalletBlockNow => '立即冻结';
+
+  @override
+  String get lostWalletBlockNowHint => '逐一致电银行或使用其 App。分秒必争。';
+
+  @override
+  String get lostWalletCall => '拨打';
+
+  @override
+  String get lostWalletAddLine => '添加号码';
+
+  @override
+  String get lostWalletNoLine => '尚未保存号码。可在银行 App 或官网查找。';
+
+  @override
+  String get lostWalletBlocked => '已冻结';
+
+  @override
+  String get lostWalletReplace => '补办这些';
+
+  @override
+  String get lostWalletReplaceHint => '申请新的，收到后保存新日期。';
+
+  @override
+  String get lostWalletArrived => '新的已到';
+
+  @override
+  String get lostWalletCheck => '检查这些';
+
+  @override
+  String get lostWalletCheckHint => '询问是否需要新卡或新号码。';
+
+  @override
+  String get lostWalletPlanEmptyTitle => '那里没有保存的物品';
+
+  @override
+  String get lostWalletPlanEmpty => '下面的步骤仍然有用。下次请设置卡片和证件的存放位置。';
+
+  @override
+  String get lostWalletCaseTitle => '报案回执编号';
+
+  @override
+  String get lostWalletCaseHint => '银行、保险公司和政府部门常会要求提供。';
+
+  @override
+  String get lostWalletCaseLabel => '案件或参考编号';
+
+  @override
+  String get lostWalletCaseSaved => '已保存报案编号';
+
+  @override
+  String get lostWalletAbroadTitle => '现在在国外吗？';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return '你正在旅行：$trip。如果护照或身份证在里面，请联系使领馆申请紧急旅行证件，并通知旅行保险。';
+  }
+
+  @override
+  String get lostWalletOpenTrip => '打开行程';
+
+  @override
+  String get lostWalletPhoneTitle => '手机也被拿走了吗？';
+
+  @override
+  String get lostWalletPhoneBody => '先冻结 SIM 卡和银行 App。有专门的计划。';
+
+  @override
+  String get lostWalletPhoneButton => '开始手机丢失计划';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 会在 30、60 和 90 天后提醒你。';
+
+  @override
+  String get lostWalletStatementTitle => '检查银行账单';
+
+  @override
+  String get lostWalletStatementBody => '查找钱包丢失后不是你本人的消费。';
+
+  @override
+  String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletFoundTitle => '好消息！';
+
+  @override
+  String get lostWalletFoundBody => '这些卡已冻结，请留意新卡：';
+
+  @override
+  String get lostWalletFoundNone => '还没有冻结任何东西，可以照常使用。';
+
+  @override
+  String get lostWalletFoundUnfreeze => '如果你在银行 App 中锁定了卡片，请解锁未挂失的卡。';
+
+  @override
+  String get lostWalletFoundConfirm => '关闭计划';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '于 $date 找到';
+  }
+
+  @override
+  String get lostWalletReport => '失物报告';
+
+  @override
+  String get lostWalletReportTitle => '失物报告';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return '日期：$date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return '丢失物品：$places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return '报案编号：$number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => '报案编号：尚未报案';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '下列项目：$count 项',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -14216,6 +14536,326 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lifePlanSuggestMove => '要搬新家吗？看看还有什么需要更新。';
+
+  @override
+  String get keptInTitle => '存放位置';
+
+  @override
+  String get keptInSubtitle => '以便丢失时知道要冻结和补办什么';
+
+  @override
+  String get keptInWallet => '钱包';
+
+  @override
+  String get keptInBag => '包';
+
+  @override
+  String get keptInPhoneCase => '手机壳';
+
+  @override
+  String get keptInTravelPouch => '旅行收纳包';
+
+  @override
+  String get keptInCar => '汽车';
+
+  @override
+  String get keptInHome => '家里';
+
+  @override
+  String get keptInNone => '未设置';
+
+  @override
+  String get lostLineLabel => '挂失电话';
+
+  @override
+  String get lostLineHelper => '现在就保存。号码印在卡上，需要时就不在手边了。';
+
+  @override
+  String get lifeEventWalletLost => '我的钱包丢了';
+
+  @override
+  String get lifeEventWalletLostBody => '先冻结银行卡，再逐一补办证件。';
+
+  @override
+  String get lifeEventWalletStolen => '我的钱包被偷了';
+
+  @override
+  String get lifeEventWalletStolenBody => '立即冻结银行卡并报案。之后留意账户是否有欺诈。';
+
+  @override
+  String get lifeVariantWalletQuestion => '丢失还是被盗？';
+
+  @override
+  String get lifeVariantLost => '丢失';
+
+  @override
+  String get lifeVariantStolen => '被盗';
+
+  @override
+  String get lifeTaskWalletFreezeCards => '如果银行 App 支持，先在 App 中锁定卡片';
+
+  @override
+  String get lifeTaskWalletRetrace => '打电话给最近去过的地方，询问失物招领';
+
+  @override
+  String get lifeTaskWalletFraudAlert => '请征信机构或本国反诈骗机构标记你的身份证件';
+
+  @override
+  String get lifeTaskWalletStatements => '检查银行账单中是否有不是你本人的消费';
+
+  @override
+  String get lifeTaskWalletSubscriptions => '把新卡绑定到订阅和自动扣款';
+
+  @override
+  String get lifeTaskWalletPayApps => '把新卡添加到 Google Pay 或 Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => '向医疗保险申请新的会员卡';
+
+  @override
+  String get lifeTaskWalletTransport => '冻结交通卡或通行费卡并转移余额';
+
+  @override
+  String get lifeTaskWalletLoyalty => '补办会员卡以保留积分';
+
+  @override
+  String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
+
+  @override
+  String get lifeTaskWalletInsurance => '确认你的保险是否涵盖钱包和现金';
+
+  @override
+  String get lostWalletHeroTitle => '钱包丢了？';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara 告诉你先冻结什么、补办什么、通知谁。';
+
+  @override
+  String get lostWalletStartTitle => '发生了什么？';
+
+  @override
+  String get lostWalletEditTitle => '更改详情';
+
+  @override
+  String get lostWalletLostHint => '掉了或落在某处';
+
+  @override
+  String get lostWalletStolenHint => '被人拿走了';
+
+  @override
+  String get lostWalletWhatMissing => '少了什么？';
+
+  @override
+  String get lostWalletStartButton => '告诉我该做什么';
+
+  @override
+  String get lostWalletCheckupTitle => '钱包检查';
+
+  @override
+  String get lostWalletCheckupBody => '现在就做好准备，丢失时不会遗漏任何东西。';
+
+  @override
+  String get lostWalletCheckupAllGood => '一切就绪。万一丢失，你已有准备。';
+
+  @override
+  String get lostWalletSetPlaceBody => '打开一张卡或一份证件，选择存放位置。为身份证、驾照和银行卡都设置一下。';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '没有照片：$count 项。有照片补办更快。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未保存挂失电话的卡：$count 张。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '随身携带的护照或许可证：$count 份。不出行时请放在家里。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => '随身携带的物品';
+
+  @override
+  String get lostWalletNoPhoto => '没有照片';
+
+  @override
+  String get lostWalletHasPhoto => '已保存照片';
+
+  @override
+  String get lostWalletNoLineShort => '没有挂失电话';
+
+  @override
+  String get lostWalletHistory => '以往记录';
+
+  @override
+  String get lostWalletFound => '已找到';
+
+  @override
+  String get walletCheckToggle => '每 6 个月提醒我';
+
+  @override
+  String get walletCheckToggleBody => '快速看看随身物品，让清单保持准确。';
+
+  @override
+  String get walletCheckReminderTitle => '钱包检查';
+
+  @override
+  String get walletCheckReminderBody => '钱包里有变化吗？花一分钟更新 Vaultara。';
+
+  @override
+  String get lostWalletBlockNow => '立即冻结';
+
+  @override
+  String get lostWalletBlockNowHint => '逐一致电银行或使用其 App。分秒必争。';
+
+  @override
+  String get lostWalletCall => '拨打';
+
+  @override
+  String get lostWalletAddLine => '添加号码';
+
+  @override
+  String get lostWalletNoLine => '尚未保存号码。可在银行 App 或官网查找。';
+
+  @override
+  String get lostWalletBlocked => '已冻结';
+
+  @override
+  String get lostWalletReplace => '补办这些';
+
+  @override
+  String get lostWalletReplaceHint => '申请新的，收到后保存新日期。';
+
+  @override
+  String get lostWalletArrived => '新的已到';
+
+  @override
+  String get lostWalletCheck => '检查这些';
+
+  @override
+  String get lostWalletCheckHint => '询问是否需要新卡或新号码。';
+
+  @override
+  String get lostWalletPlanEmptyTitle => '那里没有保存的物品';
+
+  @override
+  String get lostWalletPlanEmpty => '下面的步骤仍然有用。下次请设置卡片和证件的存放位置。';
+
+  @override
+  String get lostWalletCaseTitle => '报案回执编号';
+
+  @override
+  String get lostWalletCaseHint => '银行、保险公司和政府部门常会要求提供。';
+
+  @override
+  String get lostWalletCaseLabel => '案件或参考编号';
+
+  @override
+  String get lostWalletCaseSaved => '已保存报案编号';
+
+  @override
+  String get lostWalletAbroadTitle => '现在在国外吗？';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return '你正在旅行：$trip。如果护照或身份证在里面，请联系使领馆申请紧急旅行证件，并通知旅行保险。';
+  }
+
+  @override
+  String get lostWalletOpenTrip => '打开行程';
+
+  @override
+  String get lostWalletPhoneTitle => '手机也被拿走了吗？';
+
+  @override
+  String get lostWalletPhoneBody => '先冻结 SIM 卡和银行 App。有专门的计划。';
+
+  @override
+  String get lostWalletPhoneButton => '开始手机丢失计划';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 会在 30、60 和 90 天后提醒你。';
+
+  @override
+  String get lostWalletStatementTitle => '检查银行账单';
+
+  @override
+  String get lostWalletStatementBody => '查找钱包丢失后不是你本人的消费。';
+
+  @override
+  String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletFoundTitle => '好消息！';
+
+  @override
+  String get lostWalletFoundBody => '这些卡已冻结，请留意新卡：';
+
+  @override
+  String get lostWalletFoundNone => '还没有冻结任何东西，可以照常使用。';
+
+  @override
+  String get lostWalletFoundUnfreeze => '如果你在银行 App 中锁定了卡片，请解锁未挂失的卡。';
+
+  @override
+  String get lostWalletFoundConfirm => '关闭计划';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '于 $date 找到';
+  }
+
+  @override
+  String get lostWalletReport => '失物报告';
+
+  @override
+  String get lostWalletReportTitle => '失物报告';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return '日期：$date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return '丢失物品：$places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return '报案编号：$number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => '报案编号：尚未报案';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '下列项目：$count 项',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -21317,4 +21957,324 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lifePlanSuggestMove => '要搬新家嗎？看看還有什麼需要更新。';
+
+  @override
+  String get keptInTitle => '存放位置';
+
+  @override
+  String get keptInSubtitle => '以便遺失時知道要停用及補辦什麼';
+
+  @override
+  String get keptInWallet => '錢包';
+
+  @override
+  String get keptInBag => '包包';
+
+  @override
+  String get keptInPhoneCase => '手機殼';
+
+  @override
+  String get keptInTravelPouch => '旅行收納包';
+
+  @override
+  String get keptInCar => '汽車';
+
+  @override
+  String get keptInHome => '家裡';
+
+  @override
+  String get keptInNone => '未設定';
+
+  @override
+  String get lostLineLabel => '掛失電話';
+
+  @override
+  String get lostLineHelper => '現在就儲存。號碼印在卡片上，需要時就不在手邊了。';
+
+  @override
+  String get lifeEventWalletLost => '我的錢包掉了';
+
+  @override
+  String get lifeEventWalletLostBody => '先停用卡片，再逐一補辦證件。';
+
+  @override
+  String get lifeEventWalletStolen => '我的錢包被偷了';
+
+  @override
+  String get lifeEventWalletStolenBody => '立即停用卡片並報案。之後留意帳戶是否有盜刷。';
+
+  @override
+  String get lifeVariantWalletQuestion => '遺失還是被偷？';
+
+  @override
+  String get lifeVariantLost => '遺失';
+
+  @override
+  String get lifeVariantStolen => '被偷';
+
+  @override
+  String get lifeTaskWalletFreezeCards => '如果銀行 App 支援，先在 App 中暫停卡片';
+
+  @override
+  String get lifeTaskWalletRetrace => '打電話給最近去過的地方，詢問失物招領';
+
+  @override
+  String get lifeTaskWalletFraudAlert => '請信用機構或本國反詐騙單位註記你的身分證件';
+
+  @override
+  String get lifeTaskWalletStatements => '檢查銀行對帳單是否有不是你本人的消費';
+
+  @override
+  String get lifeTaskWalletSubscriptions => '把新卡綁定到訂閱和自動扣款';
+
+  @override
+  String get lifeTaskWalletPayApps => '把新卡加入 Google Pay 或 Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => '向健康保險申請新的會員卡';
+
+  @override
+  String get lifeTaskWalletTransport => '停用交通卡或通行費卡並轉移餘額';
+
+  @override
+  String get lifeTaskWalletLoyalty => '補辦會員卡以保留點數';
+
+  @override
+  String get lifeTaskWalletLocks => '如果裡面有鑰匙或你的地址，考慮換鎖';
+
+  @override
+  String get lifeTaskWalletInsurance => '確認你的保險是否涵蓋錢包和現金';
+
+  @override
+  String get lostWalletHeroTitle => '錢包掉了？';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara 告訴你先停用什麼、補辦什麼、通知誰。';
+
+  @override
+  String get lostWalletStartTitle => '發生了什麼事？';
+
+  @override
+  String get lostWalletEditTitle => '變更詳細資料';
+
+  @override
+  String get lostWalletLostHint => '掉了或忘在某處';
+
+  @override
+  String get lostWalletStolenHint => '被人拿走了';
+
+  @override
+  String get lostWalletWhatMissing => '少了什麼？';
+
+  @override
+  String get lostWalletStartButton => '告訴我該做什麼';
+
+  @override
+  String get lostWalletCheckupTitle => '錢包檢查';
+
+  @override
+  String get lostWalletCheckupBody => '現在就做好準備，遺失時不會漏掉任何東西。';
+
+  @override
+  String get lostWalletCheckupAllGood => '一切就緒。萬一遺失，你已有準備。';
+
+  @override
+  String get lostWalletSetPlaceBody => '打開一張卡片或一份證件，選擇存放位置。為身分證、駕照和卡片都設定一下。';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '沒有照片：$count 項。有照片補辦更快。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未儲存掛失電話的卡片：$count 張。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '隨身攜帶的護照或許可證：$count 份。不出遊時請放在家裡。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => '隨身攜帶的物品';
+
+  @override
+  String get lostWalletNoPhoto => '沒有照片';
+
+  @override
+  String get lostWalletHasPhoto => '已儲存照片';
+
+  @override
+  String get lostWalletNoLineShort => '沒有掛失電話';
+
+  @override
+  String get lostWalletHistory => '過去紀錄';
+
+  @override
+  String get lostWalletFound => '已找到';
+
+  @override
+  String get walletCheckToggle => '每 6 個月提醒我';
+
+  @override
+  String get walletCheckToggleBody => '快速看看隨身物品，讓清單保持正確。';
+
+  @override
+  String get walletCheckReminderTitle => '錢包檢查';
+
+  @override
+  String get walletCheckReminderBody => '錢包裡有變化嗎？花一分鐘更新 Vaultara。';
+
+  @override
+  String get lostWalletBlockNow => '立即停用';
+
+  @override
+  String get lostWalletBlockNowHint => '逐一致電銀行或使用其 App。分秒必爭。';
+
+  @override
+  String get lostWalletCall => '撥打';
+
+  @override
+  String get lostWalletAddLine => '新增號碼';
+
+  @override
+  String get lostWalletNoLine => '尚未儲存號碼。可在銀行 App 或官網查詢。';
+
+  @override
+  String get lostWalletBlocked => '已停用';
+
+  @override
+  String get lostWalletReplace => '補辦這些';
+
+  @override
+  String get lostWalletReplaceHint => '申請新的，收到後儲存新日期。';
+
+  @override
+  String get lostWalletArrived => '新的已到';
+
+  @override
+  String get lostWalletCheck => '檢查這些';
+
+  @override
+  String get lostWalletCheckHint => '詢問是否需要新卡或新號碼。';
+
+  @override
+  String get lostWalletPlanEmptyTitle => '那裡沒有儲存的物品';
+
+  @override
+  String get lostWalletPlanEmpty => '下面的步驟仍然有用。下次請設定卡片和證件的存放位置。';
+
+  @override
+  String get lostWalletCaseTitle => '報案三聯單編號';
+
+  @override
+  String get lostWalletCaseHint => '銀行、保險公司和政府機關常會要求提供。';
+
+  @override
+  String get lostWalletCaseLabel => '案件或參考編號';
+
+  @override
+  String get lostWalletCaseSaved => '已儲存報案編號';
+
+  @override
+  String get lostWalletAbroadTitle => '現在在國外嗎？';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return '你正在旅行：$trip。如果護照或身分證在裡面，請聯絡駐外館處申請緊急旅行文件，並通知旅遊保險。';
+  }
+
+  @override
+  String get lostWalletOpenTrip => '開啟行程';
+
+  @override
+  String get lostWalletPhoneTitle => '手機也被拿走了嗎？';
+
+  @override
+  String get lostWalletPhoneBody => '先停用 SIM 卡和銀行 App。有專門的計畫。';
+
+  @override
+  String get lostWalletPhoneButton => '開始手機遺失計畫';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 會在 30、60 和 90 天後提醒你。';
+
+  @override
+  String get lostWalletStatementTitle => '檢查銀行對帳單';
+
+  @override
+  String get lostWalletStatementBody => '查找錢包遺失後不是你本人的消費。';
+
+  @override
+  String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletFoundTitle => '好消息！';
+
+  @override
+  String get lostWalletFoundBody => '這些卡片已停用，請留意新卡：';
+
+  @override
+  String get lostWalletFoundNone => '還沒有停用任何東西，可以照常使用。';
+
+  @override
+  String get lostWalletFoundUnfreeze => '如果你在銀行 App 中暫停了卡片，請恢復未掛失的卡片。';
+
+  @override
+  String get lostWalletFoundConfirm => '關閉計畫';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '於 $date 找到';
+  }
+
+  @override
+  String get lostWalletReport => '遺失物報告';
+
+  @override
+  String get lostWalletReportTitle => '遺失物報告';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return '日期：$date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return '遺失物品：$places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return '報案編號：$number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => '報案編號：尚未報案';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '下列項目：$count 項',
+    );
+    return '$_temp0';
+  }
 }

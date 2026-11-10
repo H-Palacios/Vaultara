@@ -2297,5 +2297,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "กำลังย้ายบ้านใหม่? ดูว่ายังต้องอัปเดตอะไรอีก"
+  "lifePlanSuggestMove": "กำลังย้ายบ้านใหม่? ดูว่ายังต้องอัปเดตอะไรอีก",
+  "keptInTitle": "ฉันเก็บไว้ที่ไหน",
+  "keptInSubtitle": "เพื่อให้รู้ว่าต้องอายัดและเปลี่ยนอะไรหากหาย",
+  "keptInWallet": "กระเป๋าสตางค์",
+  "keptInBag": "กระเป๋า",
+  "keptInPhoneCase": "เคสโทรศัพท์",
+  "keptInTravelPouch": "กระเป๋าเดินทางใบเล็ก",
+  "keptInCar": "รถยนต์",
+  "keptInHome": "ที่บ้าน",
+  "keptInNone": "ยังไม่ได้ตั้ง",
+  "lostLineLabel": "เบอร์อายัดบัตรหาย",
+  "lostLineHelper": "บันทึกไว้ตอนนี้ เบอร์พิมพ์อยู่บนบัตร จึงไม่มีอยู่กับคุณตอนที่ต้องใช้",
+  "lifeEventWalletLost": "กระเป๋าสตางค์ฉันหาย",
+  "lifeEventWalletLostBody": "อายัดบัตรก่อน แล้วค่อยทำเอกสารใหม่ทีละอย่าง",
+  "lifeEventWalletStolen": "กระเป๋าสตางค์ฉันถูกขโมย",
+  "lifeEventWalletStolenBody": "อายัดบัตรทันทีและแจ้งความเรื่องการขโมย จากนั้นเฝ้าดูบัญชีเผื่อมีการฉ้อโกง",
+  "lifeVariantWalletQuestion": "หายหรือถูกขโมย?",
+  "lifeVariantLost": "หาย",
+  "lifeVariantStolen": "ถูกขโมย",
+  "lifeTaskWalletFreezeCards": "ระงับบัตรชั่วคราวในแอปธนาคารหากทำได้",
+  "lifeTaskWalletRetrace": "โทรไปยังสถานที่ล่าสุดที่คุณไปและสอบถามของหาย",
+  "lifeTaskWalletFraudAlert": "ขอให้บริษัทข้อมูลเครดิตหรือหน่วยงานป้องกันการฉ้อโกงของประเทศคุณทำเครื่องหมายบัตรประจำตัวของคุณ",
+  "lifeTaskWalletStatements": "ตรวจสอบรายการเดินบัญชีว่ามีการชำระเงินที่คุณไม่ได้ทำหรือไม่",
+  "lifeTaskWalletSubscriptions": "ผูกบัตรใหม่กับการสมัครสมาชิกและการหักบัญชีอัตโนมัติ",
+  "lifeTaskWalletPayApps": "เพิ่มบัตรใหม่ใน Google Pay หรือ Apple Pay",
+  "lifeTaskWalletHealthCard": "ขอบัตรสมาชิกใหม่จากประกันสุขภาพของคุณ",
+  "lifeTaskWalletTransport": "อายัดบัตรเดินทางหรือบัตรทางด่วนและโอนยอดเงินคงเหลือ",
+  "lifeTaskWalletLoyalty": "ขอบัตรสะสมแต้มใหม่เพื่อเก็บแต้มไว้",
+  "lifeTaskWalletLocks": "ถ้ามีกุญแจหรือที่อยู่ของคุณอยู่ในนั้น ลองพิจารณาเปลี่ยนกุญแจ",
+  "lifeTaskWalletInsurance": "ตรวจสอบว่าประกันของคุณคุ้มครองกระเป๋าสตางค์และเงินสดหรือไม่",
+  "lostWalletHeroTitle": "กระเป๋าสตางค์หาย?",
+  "lostWalletHeroBody": "Vaultara แสดงว่าต้องอายัดอะไรก่อน ต้องทำอะไรใหม่ และต้องแจ้งใคร",
+  "lostWalletStartTitle": "เกิดอะไรขึ้น?",
+  "lostWalletEditTitle": "เปลี่ยนรายละเอียด",
+  "lostWalletLostHint": "ทำตกหรือลืมไว้ที่ไหนสักแห่ง",
+  "lostWalletStolenHint": "มีคนหยิบไป",
+  "lostWalletWhatMissing": "อะไรหายไปบ้าง?",
+  "lostWalletStartButton": "บอกฉันว่าต้องทำอะไร",
+  "lostWalletCheckupTitle": "ตรวจกระเป๋าสตางค์",
+  "lostWalletCheckupBody": "เตรียมตัวตอนนี้ เพื่อไม่ให้ลืมอะไรหากหาย",
+  "lostWalletCheckupAllGood": "พร้อมแล้ว หากวันหนึ่งหาย คุณพร้อมรับมือ",
+  "lostWalletSetPlaceBody": "เปิดบัตรหรือเอกสารแล้วเลือกว่าคุณเก็บไว้ที่ไหน ทำแบบนี้กับบัตรประชาชน ใบขับขี่ และบัตรต่างๆ",
+  "lostWalletIssuePhotos": "{count, plural, other{ไม่มีรูปภาพ: {count} รายการ มีรูปภาพจะทำใหม่ได้เร็วขึ้น}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{บัตรที่ไม่มีเบอร์อายัด: {count} ใบ}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{คุณพกหนังสือเดินทางหรือใบอนุญาต {count} ฉบับ เก็บไว้ที่บ้านเว้นแต่จะเดินทาง}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "สิ่งที่คุณพกติดตัว",
+  "lostWalletNoPhoto": "ไม่มีรูปภาพ",
+  "lostWalletHasPhoto": "บันทึกรูปภาพแล้ว",
+  "lostWalletNoLineShort": "ไม่มีเบอร์อายัด",
+  "lostWalletHistory": "ครั้งก่อนๆ",
+  "lostWalletFound": "เจอแล้ว",
+  "walletCheckToggle": "เตือนทุก 6 เดือน",
+  "walletCheckToggleBody": "ดูสิ่งที่คุณพกอย่างรวดเร็ว เพื่อให้รายการถูกต้อง",
+  "walletCheckReminderTitle": "ตรวจกระเป๋าสตางค์",
+  "walletCheckReminderBody": "มีอะไรเปลี่ยนในกระเป๋าสตางค์ไหม? ใช้เวลาสักนาทีเพื่ออัปเดต Vaultara",
+  "lostWalletBlockNow": "อายัดสิ่งเหล่านี้ตอนนี้",
+  "lostWalletBlockNowHint": "โทรหาแต่ละธนาคารหรือใช้แอปของธนาคาร ทุกนาทีมีค่า",
+  "lostWalletCall": "โทร",
+  "lostWalletAddLine": "เพิ่มเบอร์",
+  "lostWalletNoLine": "ยังไม่ได้บันทึกเบอร์ หาได้ในแอปหรือเว็บไซต์ของธนาคาร",
+  "lostWalletBlocked": "อายัดแล้ว",
+  "lostWalletReplace": "ทำใหม่",
+  "lostWalletReplaceHint": "ยื่นขอใหม่และบันทึกวันที่ใหม่เมื่อได้รับ",
+  "lostWalletArrived": "ได้รับอันใหม่แล้ว",
+  "lostWalletCheck": "ตรวจสอบ",
+  "lostWalletCheckHint": "สอบถามว่าต้องใช้บัตรหรือหมายเลขใหม่หรือไม่",
+  "lostWalletPlanEmptyTitle": "ไม่มีอะไรที่บันทึกไว้อยู่ที่นั่น",
+  "lostWalletPlanEmpty": "ขั้นตอนด้านล่างยังช่วยได้ ครั้งหน้าให้เลือกว่าคุณเก็บบัตรและเอกสารไว้ที่ไหน",
+  "lostWalletCaseTitle": "เลขที่แจ้งความ",
+  "lostWalletCaseHint": "ธนาคาร บริษัทประกัน และหน่วยงานมักขอเลขนี้",
+  "lostWalletCaseLabel": "เลขที่คดีหรือเลขอ้างอิง",
+  "lostWalletCaseSaved": "บันทึกเลขที่แจ้งความแล้ว",
+  "lostWalletAbroadTitle": "อยู่ต่างประเทศตอนนี้?",
+  "lostWalletAbroadBody": "คุณอยู่ในทริป {trip} หากหนังสือเดินทางหรือบัตรประจำตัวอยู่ในนั้น ให้ติดต่อสถานทูตหรือสถานกงสุลเพื่อขอเอกสารเดินทางฉุกเฉิน และแจ้งประกันการเดินทาง",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "เปิดทริป",
+  "lostWalletPhoneTitle": "โทรศัพท์ถูกเอาไปด้วยหรือเปล่า?",
+  "lostWalletPhoneBody": "อายัดซิมการ์ดและแอปธนาคารก่อน มีแผนสำหรับเรื่องนี้",
+  "lostWalletPhoneButton": "เริ่มแผนโทรศัพท์หาย",
+  "lostWalletStatementNote": "Vaultara จะเตือนคุณหลัง 30, 60 และ 90 วัน",
+  "lostWalletStatementTitle": "ตรวจสอบรายการเดินบัญชี",
+  "lostWalletStatementBody": "มองหาการชำระเงินที่คุณไม่ได้ทำตั้งแต่กระเป๋าสตางค์หาย",
+  "lostWalletFoundButton": "ฉันเจอแล้ว",
+  "lostWalletFoundTitle": "ข่าวดี!",
+  "lostWalletFoundBody": "บัตรเหล่านี้อายัดแล้ว รอรับบัตรใหม่ได้เลย:",
+  "lostWalletFoundNone": "ยังไม่ได้อายัดอะไร ใช้งานได้ตามปกติ",
+  "lostWalletFoundUnfreeze": "หากคุณระงับบัตรในแอปธนาคาร ให้ยกเลิกการระงับบัตรที่ไม่ได้อายัด",
+  "lostWalletFoundConfirm": "ปิดแผน",
+  "lostWalletFoundOn": "เจอเมื่อ {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "รายงานของหาย",
+  "lostWalletReportTitle": "รายงานของหาย",
+  "lostWalletReportWhen": "วันที่: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "สิ่งที่หาย: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "เลขที่แจ้งความ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "เลขที่แจ้งความ: ยังไม่ได้แจ้ง",
+  "lostWalletReportCount": "{count, plural, other{รายการด้านล่าง: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

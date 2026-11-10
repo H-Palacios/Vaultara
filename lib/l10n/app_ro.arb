@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Vă mutați într-o casă nouă? Vedeți ce mai trebuie actualizat."
+  "lifePlanSuggestMove": "Vă mutați într-o casă nouă? Vedeți ce mai trebuie actualizat.",
+  "keptInTitle": "Unde îl țin",
+  "keptInSubtitle": "Ca să știi ce să blochezi și ce să înlocuiești dacă se pierde",
+  "keptInWallet": "Portofel",
+  "keptInBag": "Geantă",
+  "keptInPhoneCase": "Husa telefonului",
+  "keptInTravelPouch": "Borsetă de călătorie",
+  "keptInCar": "Mașină",
+  "keptInHome": "Acasă",
+  "keptInNone": "Nesetat",
+  "lostLineLabel": "Număr pentru card pierdut",
+  "lostLineHelper": "Salvează-l acum. Numărul e tipărit pe card, deci nu-l vei avea când îți trebuie.",
+  "lifeEventWalletLost": "Mi-am pierdut portofelul",
+  "lifeEventWalletLostBody": "Blochează mai întâi cardurile, apoi înlocuiește documentele pe rând.",
+  "lifeEventWalletStolen": "Mi s-a furat portofelul",
+  "lifeEventWalletStolenBody": "Blochează imediat cardurile și raportează furtul. Apoi urmărește conturile pentru fraude.",
+  "lifeVariantWalletQuestion": "Pierdut sau furat?",
+  "lifeVariantLost": "Pierdut",
+  "lifeVariantStolen": "Furat",
+  "lifeTaskWalletFreezeCards": "Îngheață cardurile în aplicația băncii, dacă permite",
+  "lifeTaskWalletRetrace": "Sună în ultimele locuri unde ai fost și întreabă la obiecte pierdute",
+  "lifeTaskWalletFraudAlert": "Cere birourilor de credit sau serviciului antifraudă din țara ta să-ți marcheze actul",
+  "lifeTaskWalletStatements": "Verifică extrasele pentru plăți pe care nu le-ai făcut",
+  "lifeTaskWalletSubscriptions": "Pune noul card la abonamente și debitări directe",
+  "lifeTaskWalletPayApps": "Adaugă noile carduri în Google Pay sau Apple Pay",
+  "lifeTaskWalletHealthCard": "Cere un card nou de la asigurarea de sănătate",
+  "lifeTaskWalletTransport": "Blochează cardul de transport sau de taxă de drum și mută soldul",
+  "lifeTaskWalletLoyalty": "Cere carduri de fidelitate noi ca să-ți păstrezi punctele",
+  "lifeTaskWalletLocks": "Dacă erau chei sau adresa ta înăuntru, gândește-te să schimbi încuietorile",
+  "lifeTaskWalletInsurance": "Verifică dacă asigurarea acoperă portofelul și banii",
+  "lostWalletHeroTitle": "Ți-ai pierdut portofelul?",
+  "lostWalletHeroBody": "Vaultara îți arată ce să blochezi întâi, ce să înlocuiești și pe cine să anunți.",
+  "lostWalletStartTitle": "Ce s-a întâmplat?",
+  "lostWalletEditTitle": "Modifică detaliile",
+  "lostWalletLostHint": "Căzut sau uitat undeva",
+  "lostWalletStolenHint": "L-a luat cineva",
+  "lostWalletWhatMissing": "Ce lipsește?",
+  "lostWalletStartButton": "Arată-mi ce să fac",
+  "lostWalletCheckupTitle": "Verificarea portofelului",
+  "lostWalletCheckupBody": "Pregătește-te acum, ca să nu uiți nimic dacă se pierde.",
+  "lostWalletCheckupAllGood": "Totul e gata. Dacă se pierde vreodată, ești pregătit.",
+  "lostWalletSetPlaceBody": "Deschide un card sau document și alege unde îl ții. Fă asta pentru buletin, permis și carduri.",
+  "lostWalletIssuePhotos": "{count, plural, one{1 element nu are fotografie. Cu o fotografie se înlocuiește mai repede.} other{{count} elemente nu au fotografie. Cu fotografii se înlocuiesc mai repede.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, one{1 card nu are salvat numărul pentru card pierdut.} other{{count} carduri nu au salvat numărul pentru card pierdut.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, one{Porți la tine un pașaport sau un permis. Lasă-l acasă dacă nu călătorești.} other{Porți la tine {count} pașapoarte sau permise. Lasă-le acasă dacă nu călătorești.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ce porți la tine",
+  "lostWalletNoPhoto": "Fără fotografie",
+  "lostWalletHasPhoto": "Fotografie salvată",
+  "lostWalletNoLineShort": "Fără număr pentru card pierdut",
+  "lostWalletHistory": "Dăți anterioare",
+  "lostWalletFound": "Găsit",
+  "walletCheckToggle": "Amintește-mi la fiecare 6 luni",
+  "walletCheckToggleBody": "O privire rapidă la ce porți, ca lista să fie corectă.",
+  "walletCheckReminderTitle": "Verificarea portofelului",
+  "walletCheckReminderBody": "S-a schimbat ceva în portofel? Ia-ți un minut să actualizezi Vaultara.",
+  "lostWalletBlockNow": "Blochează acum",
+  "lostWalletBlockNowHint": "Sună la fiecare bancă sau folosește aplicația ei. Fiecare minut contează.",
+  "lostWalletCall": "Sună",
+  "lostWalletAddLine": "Adaugă numărul",
+  "lostWalletNoLine": "Niciun număr salvat. Găsește-l în aplicația sau pe site-ul băncii.",
+  "lostWalletBlocked": "Blocat",
+  "lostWalletReplace": "Înlocuiește",
+  "lostWalletReplaceHint": "Cere altele noi și salvează noua dată când sosesc.",
+  "lostWalletArrived": "A sosit cel nou",
+  "lostWalletCheck": "Verifică",
+  "lostWalletCheckHint": "Întreabă dacă ai nevoie de un card sau un număr nou.",
+  "lostWalletPlanEmptyTitle": "Nu era nimic salvat acolo",
+  "lostWalletPlanEmpty": "Pașii de mai jos tot ajută. Data viitoare, alege unde îți ții cardurile și documentele.",
+  "lostWalletCaseTitle": "Număr de dosar la poliție",
+  "lostWalletCaseHint": "Băncile, asigurătorii și instituțiile îl cer des.",
+  "lostWalletCaseLabel": "Număr de dosar sau de referință",
+  "lostWalletCaseSaved": "Număr de dosar salvat",
+  "lostWalletAbroadTitle": "În străinătate acum?",
+  "lostWalletAbroadBody": "Ești în călătoria {trip}. Dacă pașaportul sau buletinul era înăuntru, contactează ambasada sau consulatul pentru un document de călătorie de urgență și anunță asigurarea de călătorie.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Deschide călătoria",
+  "lostWalletPhoneTitle": "Ți-au luat și telefonul?",
+  "lostWalletPhoneBody": "Blochează întâi cartela SIM și aplicațiile bancare. Există un plan pentru asta.",
+  "lostWalletPhoneButton": "Pornește planul pentru telefon pierdut",
+  "lostWalletStatementNote": "Vaultara îți amintește după 30, 60 și 90 de zile.",
+  "lostWalletStatementTitle": "Verifică extrasele bancare",
+  "lostWalletStatementBody": "Caută plăți pe care nu le-ai făcut de când ai pierdut portofelul.",
+  "lostWalletFoundButton": "L-am găsit",
+  "lostWalletFoundTitle": "Vești bune!",
+  "lostWalletFoundBody": "Aceste carduri sunt deja blocate, așa că fii atent la cele noi:",
+  "lostWalletFoundNone": "Nimic nu a fost blocat încă, poți continua ca înainte.",
+  "lostWalletFoundUnfreeze": "Dacă ai înghețat carduri în aplicația băncii, dezgheață-le pe cele pe care nu le-ai blocat.",
+  "lostWalletFoundConfirm": "Închide planul",
+  "lostWalletFoundOn": "Găsit pe {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Raport obiecte pierdute",
+  "lostWalletReportTitle": "Raport obiecte pierdute",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ce lipsește: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Număr de dosar: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Număr de dosar: încă neraportat",
+  "lostWalletReportCount": "{count, plural, one{1 element mai jos} other{{count} elemente mai jos}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }
