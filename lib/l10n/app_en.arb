@@ -9009,5 +9009,588 @@
         "type": "int"
       }
     }
+  },
+  "tutorialsTitleHome": "Your Home screen",
+  "@tutorialsTitleHome": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubHome": "What the cards mean and where everything is",
+  "@tutorialsSubHome": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleRenew": "Renewing a record",
+  "@tutorialsTitleRenew": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubRenew": "What to do when a reminder arrives",
+  "@tutorialsSubRenew": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleCalendarCosts": "Calendar and costs",
+  "@tutorialsTitleCalendarCosts": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubCalendarCosts": "Expiry dates in your calendar and what renewals cost",
+  "@tutorialsSubCalendarCosts": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitlePhotosSecurity": "Photos and security",
+  "@tutorialsTitlePhotosSecurity": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubPhotosSecurity": "Document photos, encryption and locks",
+  "@tutorialsSubPhotosSecurity": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleSharing": "Sharing safely",
+  "@tutorialsTitleSharing": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubSharing": "Share a record, make a Proof pack, stop a link",
+  "@tutorialsSubSharing": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleImportScan": "Scan and import",
+  "@tutorialsTitleImportScan": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubImportScan": "Add many records quickly",
+  "@tutorialsSubImportScan": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleHousehold": "Shared household",
+  "@tutorialsTitleHousehold": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubHousehold": "Invite others to share records and reminders",
+  "@tutorialsSubHousehold": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleLostWallet": "Lost my wallet",
+  "@tutorialsTitleLostWallet": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubLostWallet": "Get ready now, act fast if it goes missing",
+  "@tutorialsSubLostWallet": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleLifeEvents": "Life events",
+  "@tutorialsTitleLifeEvents": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubLifeEvents": "A plan for moving, a baby, a new job and more",
+  "@tutorialsSubLifeEvents": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleAsk": "Ask Vaultara",
+  "@tutorialsTitleAsk": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubAsk": "Chat or talk to your records",
+  "@tutorialsSubAsk": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsTitleBusiness": "Business tools",
+  "@tutorialsTitleBusiness": {
+    "description": "Short title of a tutorial."
+  },
+  "tutorialsSubBusiness": "Staff records, reminders and reports",
+  "@tutorialsSubBusiness": {
+    "description": "One line on what a tutorial covers."
+  },
+  "tutorialsGroupBasics": "Basics",
+  "@tutorialsGroupBasics": {
+    "description": "Heading on the Tutorials screen."
+  },
+  "tutorialsGroupOnTop": "Staying on top",
+  "@tutorialsGroupOnTop": {
+    "description": "Heading on the Tutorials screen."
+  },
+  "tutorialsGroupTravelFamily": "Travel and family",
+  "@tutorialsGroupTravelFamily": {
+    "description": "Heading on the Tutorials screen."
+  },
+  "tutorialsGroupEmergencies": "Life events and emergencies",
+  "@tutorialsGroupEmergencies": {
+    "description": "Heading on the Tutorials screen."
+  },
+  "tutorialsGroupPaid": "Paid features",
+  "@tutorialsGroupPaid": {
+    "description": "Heading on the Tutorials screen."
+  },
+  "tutorialsSteps": "{count, plural, =1{1 step} other{{count} steps}}",
+  "@tutorialsSteps": {
+    "description": "How long a tutorial is.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tutorialsPaidBadge": "Paid plans",
+  "@tutorialsPaidBadge": {
+    "description": "Badge on a tutorial for a paid feature."
+  },
+  "tutorialsPaidNote": "You can watch this on any plan. Using the feature needs a paid plan.",
+  "@tutorialsPaidNote": {
+    "description": "Note at the end of a tutorial for a paid feature."
+  },
+  "tutorialsBack": "Back",
+  "@tutorialsBack": {
+    "description": "Button that goes to the previous tutorial step."
+  },
+  "tutorialsTryIt": "Try it now",
+  "@tutorialsTryIt": {
+    "description": "Button that opens the feature after a tutorial."
+  },
+  "tutorialHintText": "New here? Take the quick tour",
+  "@tutorialHintText": {
+    "description": "Hint at the top of a screen."
+  },
+  "tutorialHintPlay": "Show me",
+  "@tutorialHintPlay": {
+    "description": "Button that plays a tutorial."
+  },
+  "tourChapter": "Chapter {number} of {total}",
+  "@tourChapter": {
+    "description": "Where the user is in the full tour.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tourContinue": "Continue",
+  "@tourContinue": {
+    "description": "Button that plays the next chapter of the tour."
+  },
+  "tourSkip": "Skip",
+  "@tourSkip": {
+    "description": "Button that skips a tour chapter."
+  },
+  "tourSkipped": "Skipped",
+  "@tourSkipped": {
+    "description": "A tour chapter the user skipped."
+  },
+  "tourDone": "You have seen the whole tour",
+  "@tourDone": {
+    "description": "Shown when every chapter is done."
+  },
+  "tourRestart": "Start again",
+  "@tourRestart": {
+    "description": "Button that restarts the tour."
+  },
+  "whatsNewBadge": "New",
+  "@whatsNewBadge": {
+    "description": "Badge on the What's new card."
+  },
+  "whatsNewTitle": "Lost my wallet",
+  "@whatsNewTitle": {
+    "description": "Title of the What's new card."
+  },
+  "whatsNewBody": "Save where you keep your cards and each bank's lost card number. If your wallet goes missing, block everything in minutes.",
+  "@whatsNewBody": {
+    "description": "Body of the What's new card."
+  },
+  "whatsNewDismiss": "Got it",
+  "@whatsNewDismiss": {
+    "description": "Button that closes the What's new card."
+  },
+  "tutorialAddRecordMoreDetails2": "More details holds the extras: notes, repeat, renewal time, whose record it is, where you keep it, lock and photos. Open it only when you need it.",
+  "@tutorialAddRecordMoreDetails2": {
+    "description": "Tip in a guided tutorial."
+  },
+  "tutorialAddRecordProtect2": "Lock a record to ask for your fingerprint or screen lock before showing it. Choose where you keep it, such as your wallet, and add photos of the document.",
+  "@tutorialAddRecordProtect2": {
+    "description": "Tip in a guided tutorial."
+  },
+  "tutorialSmartLostWallet2": "Lost your wallet? See everything you keep in it, call each bank with one tap and follow the steps to replace the rest.",
+  "@tutorialSmartLostWallet2": {
+    "description": "Tip in a guided tutorial."
+  },
+  "tutorialSmartLifeEvents2": "Moving, a new baby, a new job or an emergency? Life events gives you a plan with your records, steps and dates.",
+  "@tutorialSmartLifeEvents2": {
+    "description": "Tip in a guided tutorial."
+  },
+  "storySampleQuestion": "What expires this year?",
+  "@storySampleQuestion": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storySampleAnswer": "Your {name} expires in March. Want a reminder a month before?",
+  "@storySampleAnswer": {
+    "description": "Sample text shown inside a tutorial illustration.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storySampleNotification": "{name} expires in 30 days. Tap to renew.",
+  "@storySampleNotification": {
+    "description": "Sample text shown inside a tutorial illustration.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storySampleGym": "Gym membership",
+  "@storySampleGym": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storySampleFirstAid": "First aid certificate",
+  "@storySampleFirstAid": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storySampleEncrypt": "Encrypt photos",
+  "@storySampleEncrypt": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storySampleAppLock": "App lock",
+  "@storySampleAppLock": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storySampleHideApp": "Hide content in the app switcher",
+  "@storySampleHideApp": {
+    "description": "Sample text shown inside a tutorial illustration."
+  },
+  "storyHome1Title": "Your day at a glance",
+  "@storyHome1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHome1Body": "Home shows what needs you today: anything expiring soon and how many records you keep.",
+  "@storyHome1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHome2Title": "Find anything",
+  "@storyHome2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHome2Body": "Tap the search bar to find a record by its name, group or the person it belongs to.",
+  "@storyHome2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHome3Title": "Trips and plans",
+  "@storyHome3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHome3Body": "Trips you are planning and life event plans in progress show here, with what is left to do.",
+  "@storyHome3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHome4Title": "Help is one tap away",
+  "@storyHome4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHome4Body": "The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.",
+  "@storyHome4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyRenew1Title": "A reminder arrives",
+  "@storyRenew1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyRenew1Body": "Before a record expires, Vaultara reminds you. Tap the reminder to open the record.",
+  "@storyRenew1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyRenew2Title": "Save the new date",
+  "@storyRenew2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyRenew2Body": "Renewed it? Tap Renew and enter the new expiry date. Your reminders move with it.",
+  "@storyRenew2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyRenew3Title": "Not sure how?",
+  "@storyRenew3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyRenew3Body": "Many records have a guide with the steps, documents and usual cost of renewing.",
+  "@storyRenew3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyRenew4Title": "Let it repeat",
+  "@storyRenew4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyRenew4Body": "For subscriptions and yearly payments, turn on Repeat and the date moves forward by itself.",
+  "@storyRenew4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyAsk1Title": "Ask in your own words",
+  "@storyAsk1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyAsk1Body": "Ask things like “What expires this year?” and get answers from your own records.",
+  "@storyAsk1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyAsk2Title": "Talk instead of typing",
+  "@storyAsk2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyAsk2Body": "Tap the microphone and speak. Your words appear as you talk, and you can send straight away.",
+  "@storyAsk2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyAsk3Title": "You confirm every change",
+  "@storyAsk3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyAsk3Body": "Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.",
+  "@storyAsk3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyAsk4Title": "Undo any change",
+  "@storyAsk4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyAsk4Body": "Changed your mind? Every change you confirmed can be undone from the same card.",
+  "@storyAsk4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyAsk5Title": "Pick up where you left off",
+  "@storyAsk5Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyAsk5Body": "Chats are kept for 90 days in Chat history, and suggested questions help you get started.",
+  "@storyAsk5Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyWallet1Title": "Get ready first",
+  "@storyWallet1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyWallet1Body": "Open a card or document and choose where you keep it, such as your wallet or bag.",
+  "@storyWallet1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyWallet2Title": "Save the lost card number",
+  "@storyWallet2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyWallet2Body": "Add each bank's lost card number now. It is printed on the card, which is gone when you need it.",
+  "@storyWallet2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyWallet3Title": "If it goes missing",
+  "@storyWallet3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyWallet3Body": "Open Lost my wallet and tap Lost or Stolen. Vaultara lists everything that was inside.",
+  "@storyWallet3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyWallet4Title": "Block cards in minutes",
+  "@storyWallet4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyWallet4Body": "Call each bank with one tap, mark cards as blocked and keep the police case number.",
+  "@storyWallet4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyWallet5Title": "Replace and stay safe",
+  "@storyWallet5Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyWallet5Body": "Replace your documents, check your statements when reminded, and tap I found it if it turns up.",
+  "@storyWallet5Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyLife1Title": "Big moments, one plan",
+  "@storyLife1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyLife1Body": "Moving, a baby, a new job or an emergency: choose what is happening in Life events.",
+  "@storyLife1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyLife2Title": "Your records, sorted",
+  "@storyLife2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyLife2Body": "The plan lists which records to update, cancel or renew, and which ones you may need to add.",
+  "@storyLife2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyLife3Title": "Steps and dates",
+  "@storyLife3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyLife3Body": "Steps cover what is not a record, and start-by dates tell you when to apply so nothing is late.",
+  "@storyLife3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyLife4Title": "Make it yours",
+  "@storyLife4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyLife4Body": "Add your own steps, share the plan as a PDF and get reminders around the date.",
+  "@storyLife4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyPhotos1Title": "Photos of your documents",
+  "@storyPhotos1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyPhotos1Body": "Add photos of the front and back of a card or document from the record.",
+  "@storyPhotos1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyPhotos2Title": "Encrypted on your phone",
+  "@storyPhotos2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyPhotos2Body": "Turn on photo encryption and photos are locked on your phone before they are uploaded.",
+  "@storyPhotos2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyPhotos3Title": "Lock sensitive records",
+  "@storyPhotos3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyPhotos3Body": "Lock a record and it asks for your fingerprint or screen lock before it opens.",
+  "@storyPhotos3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyPhotos4Title": "Lock the whole app",
+  "@storyPhotos4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyPhotos4Body": "In Security and privacy, turn on app lock and hide the app's content when you switch apps.",
+  "@storyPhotos4Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyShare1Title": "Share one record",
+  "@storyShare1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyShare1Body": "Open a record and share a link that shows only that record, nothing else.",
+  "@storyShare1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyShare2Title": "Proof pack",
+  "@storyShare2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyShare2Body": "Put the records you choose, with their photos, into one PDF for a landlord, bank or office.",
+  "@storyShare2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyShare3Title": "Stay in control",
+  "@storyShare3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyShare3Body": "Shared links lists every link you made. Stop one at any time and it no longer opens.",
+  "@storyShare3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHousehold1Title": "Invite your household",
+  "@storyHousehold1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHousehold1Body": "Share an invite code or link. Each person signs in with their own account.",
+  "@storyHousehold1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHousehold2Title": "One set of records",
+  "@storyHousehold2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHousehold2Body": "Everyone sees the same shared records and gets the same reminders.",
+  "@storyHousehold2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyHousehold3Title": "Whose is it?",
+  "@storyHousehold3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyHousehold3Body": "Each record can belong to someone. Their name shows on it and in its reminders.",
+  "@storyHousehold3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyImport1Title": "Scan a card",
+  "@storyImport1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyImport1Body": "Snap a card or document and Vaultara fills in the name and expiry date for you.",
+  "@storyImport1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyImport2Title": "Import a list",
+  "@storyImport2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyImport2Body": "Keep a spreadsheet already? Import it and check each row before anything is saved.",
+  "@storyImport2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyImport3Title": "Share into Vaultara",
+  "@storyImport3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyImport3Body": "Share a photo, PDF or text from another app to Vaultara to start a new record.",
+  "@storyImport3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyCosts1Title": "In your calendar",
+  "@storyCosts1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyCosts1Body": "Add expiry dates to your phone's calendar, so they sit next to your other plans.",
+  "@storyCosts1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyCosts2Title": "What renewals cost",
+  "@storyCosts2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyCosts2Body": "Add what a renewal costs to a record and Vaultara shows what you spend each year.",
+  "@storyCosts2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyCosts3Title": "Plan ahead",
+  "@storyCosts3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyCosts3Body": "See the expensive months coming, so a big renewal never takes you by surprise.",
+  "@storyCosts3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyBusiness1Title": "Track your team",
+  "@storyBusiness1Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyBusiness1Body": "Add staff and keep their certificates, permits and licences in one place.",
+  "@storyBusiness1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyBusiness2Title": "Email reminders",
+  "@storyBusiness2Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyBusiness2Body": "Staff get email reminders before their documents expire, even without the app.",
+  "@storyBusiness2Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyBusiness3Title": "Monthly report",
+  "@storyBusiness3Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyBusiness3Body": "A report each month shows what is valid, what is expiring and what is missing.",
+  "@storyBusiness3Body": {
+    "description": "Text of a tutorial step."
+  },
+  "storyBusiness4Title": "Request an update",
+  "@storyBusiness4Title": {
+    "description": "Title of a tutorial step. Short."
+  },
+  "storyBusiness4Body": "Send a link and staff can upload their renewed document themselves.",
+  "@storyBusiness4Body": {
+    "description": "Text of a tutorial step."
   }
 }
