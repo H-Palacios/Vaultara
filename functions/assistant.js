@@ -73,6 +73,27 @@ const GROUPS = {
   access_cards_and_tags: "property_and_housing",
 };
 
+// Groups added with the Health and Memberships categories. Only clients on
+// protocol 9 know these categories, so older app versions are never sent a
+// record they cannot show.
+const GROUPS_V9 = {
+  ...GROUPS,
+  firearm_licences: "personal_identification",
+  international_driving_permits: "driving_and_vehicles",
+  boat_and_pilot_licences: "driving_and_vehicles",
+  safety_certificates: "work_and_professional",
+  electrical_compliance_certificates: "property_and_housing",
+  fire_equipment_services: "property_and_housing",
+  medical_aid_cards: "health_and_medical",
+  prescriptions: "health_and_medical",
+  vaccinations: "health_and_medical",
+  medical_certificates: "health_and_medical",
+  gym_memberships: "memberships_and_subscriptions",
+  club_memberships: "memberships_and_subscriptions",
+  subscriptions: "memberships_and_subscriptions",
+  warranties: "memberships_and_subscriptions",
+};
+
 const SCREENS = [
   "home",
   "records",
@@ -183,6 +204,16 @@ const COUNTRY_PATTERN = /^[A-Z]{2}$/;
 const CURRENCY_PATTERN = /^[A-Z]{3}$/;
 
 const GROUP_HELP = `Group key: ${Object.keys(GROUPS).join(", ")}.`;
+const GROUP_HELP_V9 = `Group key: ${Object.keys(GROUPS_V9).join(", ")}.`;
+
+// The same tools with the protocol 9 group list in their descriptions.
+const toolsV9Cache = new Map();
+function withGroupsV9(tools) {
+  if (!toolsV9Cache.has(tools)) {
+    toolsV9Cache.set(tools, tools.map((tool) => JSON.parse(JSON.stringify(tool).split(GROUP_HELP).join(GROUP_HELP_V9))));
+  }
+  return toolsV9Cache.get(tools);
+}
 
 const RECORD_FIELD_PROPERTIES = {
   name: { type: "string", description: "Record name, at most 30 characters." },
@@ -595,12 +626,14 @@ const NAMES_V8 = NAMES_V7;
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
-  "- Vaultara tracks expiry dates of records (passports, ID cards, licences, permits, visas, insurance policies, bank and store cards, leases, subscriptions) and reminds the user before they expire.",
+  "- Vaultara tracks expiry dates of records (passports, ID cards, licences, permits, visas, insurance policies, bank and store cards, leases, subscriptions, medical aid cards, prescriptions, vaccinations, memberships and warranties) and reminds the user before they expire.",
   "- Bottom tabs: Home, Categories (all records, sorted into categories and groups), Insights and Calendar. The round + button in the middle adds a record.",
   "- Home: search bar for records, the Ask Vaultara button (sparkle icon), the profile picture which opens Profile, a summary of what expires next, and the \"Planning a trip?\" card which opens Travel check.",
   "- Adding a record: tap +, choose a category and group, enter the name and expiry date and choose a reminder. A passport, ID or licence disc can be scanned to fill the form; scanning happens on the phone. \"More details\" has: Repeats, Renewal takes about, notes, renewal cost, whose record it is, photos and PDF files, Lock this record, In my wallet, and Shared with household.",
   "- Editing: open the record in Categories and tap it. Record cards also offer Renew (mark as renewed with the new expiry date and cost, kept in the renewal history), a renewal guide with a checklist, sharing as a link, and Delete.",
-  "- Deleted records stay in Profile > Recovery Centre for 30 days, where they can be restored or deleted permanently.",
+  "- Deleted records stay in Profile > Recovery Centre for 30 days, where they can be restored or deleted permanently. The menu (three dots) at the top of Categories also opens Recently deleted.",
+  "- Categories screen: preset categories include Health and medical, and Memberships and subscriptions. Tap the pin on a card to keep it at the top; pins sync to every device. The order never changes by itself: pinned first, then presets, then the user's own by name. Categories and groups the user made have a Yours tag, and their card menu has Rename, Change icon (categories only) and Delete. A new category gets an icon picked from its name, which can be tapped to change. Names can use any language and numbers.",
+  "- Inside a group: records are split into Expired, Due soon and Valid. The menu at the top sorts by expiry date or name and has Select, which picks several records to move to another group or delete together (a long press also starts it). Person chips filter by whose record it is when records belong to more than one person. An empty group offers Scan to add a record with the camera. Search on a category's groups appears when it has more than eight groups.",
   "- Reminders: the free choices are on the expiry day or 7 days before. Paid plans add 3, 14, 30, 60 or 90 days, custom days, several reminders on one record, and cascade reminders that get more frequent as the deadline nears. The reminder time and the Monthly email summary (sent on the 1st of each month) are in Profile > Notifications.",
   "- Notifications (Profile > Notifications): Allow notifications (reminders only arrive when the phone allows notifications for Vaultara; turning them off is done in the phone's settings), Reminder time, One daily summary instead of separate reminders, How reminders work, and the Monthly email summary with Send me a sample.",
   "- Repeats (for subscriptions): every 1, 3, 6 or 12 months; the date moves forward by itself when it passes. Renewal takes about: Vaultara starts reminding early enough to renew in time.",
@@ -611,7 +644,7 @@ const APP_GUIDE = [
   "- Family: Profile > Family. The Family plan tracks records for up to 5 people and Business for up to 25; each person has their own records and reminders. Household (Family and Business): the owner creates a household and invites people with a code or link (each invite works once, for 7 days). Members get Premium through the plan, their own records stay private, and records with Shared with household turned on can be seen and edited by everyone in it.",
   "- Smart tools in Profile: Lost my wallet (what was in it and what to replace), Life events (what to update after moving, a new name or a new car), Proof pack (paid plans: chosen records and photos in one PDF), Shared links (see and stop links; a link works for 1 to 72 hours, 24 hours by default).",
   "- Import: Profile > Import from spreadsheet (CSV file). Invite friends in Profile: both people get a free month of Premium.",
-  "- Plans (the plan card in Profile): Free has 10 records, 3 custom categories and the basic reminders. Premium (Individual tab) has unlimited records and custom categories, custom groups, multiple and custom reminders, Ask Vaultara, Travel check, PDF export, Proof pack, Calendar link, renewal costs, and up to 10 photos or files per record instead of 1. Family has everything in Premium for up to 5 people and a household, with one subscription. Business has everything in Family, staff and vehicle records for up to 25 people, staff email reminders and a team PDF with the company name. Billing is monthly or yearly. Free trials: Premium (Individual) and Family 7 days, Business 14 days. Billing history is on the Plans screen. Subscriptions are managed and cancelled in Google Play or the App Store.",
+  "- Plans (the plan card in Profile): Free has 10 records, 3 custom categories, 2 custom groups and the basic reminders. Premium (Individual tab) has unlimited records, custom categories and custom groups, multiple and custom reminders, Ask Vaultara, Travel check, PDF export, Proof pack, Calendar link, renewal costs, and up to 10 photos or files per record instead of 1. Family has everything in Premium for up to 5 people and a household, with one subscription. Business has everything in Family, staff and vehicle records for up to 25 people, staff email reminders and a team PDF with the company name. Billing is monthly or yearly. Free trials: Premium (Individual) and Family 7 days, Business 14 days. Billing history is on the Plans screen. Subscriptions are managed and cancelled in Google Play or the App Store.",
   "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, Use my location for trips (off by default: only the country is used, to tell if the user is at home or travelling, and it is not saved), and Delete account.",
   "- Delete account: Profile > Security and privacy > Delete account, or on the web at vaultara-f49ab.web.app/delete. It does not cancel a subscription; cancel that in Google Play or the App Store first.",
   "- Privacy: data is stored on Google Cloud in the United States and is not sold. Scanning happens on the phone. Ask Vaultara sends the user's messages and the record details it looks up to Anthropic to answer. Chats are saved to the account so the user can come back to them; they are deleted automatically after 90 days, and the user can delete one chat or all chats at any time in the chat history.",
@@ -1009,14 +1042,14 @@ function groupMatches(record, query) {
   });
 }
 
-function resolveGroup(value) {
+function resolveGroup(value, groups = GROUPS) {
   const text = str(value, 60);
   const key = norm(text).replace(/ /g, "_");
-  if (GROUPS[key]) return { groupKey: key, categoryKey: GROUPS[key], group: text };
+  if (groups[key]) return { groupKey: key, categoryKey: groups[key], group: text };
   const wanted = stem(text);
-  for (const groupKey of Object.keys(GROUPS)) {
+  for (const groupKey of Object.keys(groups)) {
     const candidate = stem(groupKey);
-    if (candidate === wanted) return { groupKey, categoryKey: GROUPS[groupKey], group: text };
+    if (candidate === wanted) return { groupKey, categoryKey: groups[groupKey], group: text };
   }
   return { groupKey: null, categoryKey: null, group: text };
 }
@@ -1067,10 +1100,11 @@ async function parseRecordFields(ctx, input, { record = null, creating = false }
   }
 
   if (has(input, "group")) {
-    const group = resolveGroup(input.group);
+    const groups = ctx.groups || GROUPS;
+    const group = resolveGroup(input.group, groups);
     if (!group.group) return { error: "group cannot be empty." };
     if (!creating && !group.groupKey) {
-      return { error: `To move a record, use one of these group keys: ${Object.keys(GROUPS).join(", ")}. Other groups can be changed in the app.` };
+      return { error: `To move a record, use one of these group keys: ${Object.keys(groups).join(", ")}. Other groups can be changed in the app.` };
     }
     out.groupKey = group.groupKey;
     out.categoryKey = group.categoryKey;
@@ -2088,6 +2122,7 @@ exports.askVaultara = onCall(
     const v6 = version >= 6 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
+    const v9 = version >= 9;
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -2116,9 +2151,11 @@ exports.askVaultara = onCall(
     ctx.here = v6 ? countryCode(request.data?.here) : null;
     ctx.lifePlans = v7;
     ctx.tutorials = v8;
+    ctx.groups = v9 ? GROUPS_V9 : GROUPS;
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7);
-    const tools = v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const tools = v9 ? withGroupsV9(baseTools) : baseTools;
     const allowed = v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
