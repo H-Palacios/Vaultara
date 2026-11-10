@@ -2156,5 +2156,136 @@
   "lifePlanReminderAfter": "ਕੁਝ ਕੰਮ ਅਜੇ ਬਾਕੀ ਹਨ। ਉਹਨਾਂ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਯੋਜਨਾ ਖੋਲ੍ਹੋ।",
   "lifePlanSuggestCar": "ਕਾਰ ਖਰੀਦੀ ਜਾਂ ਵੇਚੀ? ਦੇਖੋ ਹੋਰ ਕੀ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ।",
   "lifePlanSuggestTrip": "ਕੁਝ ਸਮੇਂ ਲਈ ਉੱਥੇ ਜਾ ਰਹੇ ਹੋ?",
-  "lifePlanSuggestTripBody": "ਕਿਸੇ ਹੋਰ ਦੇਸ਼ ਜਾਣ ਦੀ ਯੋਜਨਾ ਸ਼ੁਰੂ ਕਰੋ। ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਨਿਪਟਾਉਣਾ ਹੈ Vaultara ਦਿਖਾਉਂਦਾ ਹੈ।"
+  "lifePlanSuggestTripBody": "ਕਿਸੇ ਹੋਰ ਦੇਸ਼ ਜਾਣ ਦੀ ਯੋਜਨਾ ਸ਼ੁਰੂ ਕਰੋ। ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਨਿਪਟਾਉਣਾ ਹੈ Vaultara ਦਿਖਾਉਂਦਾ ਹੈ।",
+  "lifeGroupHome": "ਘਰ",
+  "lifeGroupFamily": "ਪਰਿਵਾਰ",
+  "lifeGroupWork": "ਕੰਮ ਅਤੇ ਪੜ੍ਹਾਈ",
+  "lifeGroupCarTravel": "ਕਾਰ ਅਤੇ ਯਾਤਰਾ",
+  "lifeGroupEmergency": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ",
+  "lifeEventCarBuy": "ਮੈਂ ਕਾਰ ਖਰੀਦੀ",
+  "lifeEventCarBuyBody": "ਘਰ ਲਿਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਬੀਮਾ ਕਰਵਾਓ, ਫਿਰ ਕਾਰ ਆਪਣੇ ਨਾਂ ਕਰਵਾਓ।",
+  "lifeEventCarSell": "ਮੈਂ ਕਾਰ ਵੇਚੀ",
+  "lifeEventCarSellBody": "ਵਿਕਰੀ ਬਾਰੇ ਲਾਇਸੈਂਸ ਦਫ਼ਤਰ ਨੂੰ ਦੱਸੋ ਅਤੇ ਕਾਰ ਤੁਹਾਡੀ ਨਾ ਰਹਿਣ 'ਤੇ ਬੀਮਾ ਰੱਦ ਕਰੋ।",
+  "lifeEventJobStart": "ਮੈਂ ਨਵੀਂ ਨੌਕਰੀ ਸ਼ੁਰੂ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "lifeEventJobStartBody": "ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਪਰਮਿਟ ਜਾਂਚੋ, ਫਿਰ ਕੰਮ ਦਾ ਕਾਰਡ ਅਤੇ ਲਾਭ ਸੈੱਟ ਕਰੋ।",
+  "lifeEventJobLeave": "ਮੈਂ ਨੌਕਰੀ ਛੱਡ ਰਿਹਾ ਹਾਂ",
+  "lifeEventJobLeaveBody": "ਕੰਮ ਦਾ ਸਾਮਾਨ ਵਾਪਸ ਕਰੋ ਅਤੇ ਦੇਖੋ ਕਿ ਨੌਕਰੀ ਤੋਂ ਮਿਲੇ ਕਵਰ ਦਾ ਕੀ ਹੋਵੇਗਾ।",
+  "lifeEventLostPhone": "ਮੇਰਾ ਫ਼ੋਨ ਗੁਆਚ ਗਿਆ ਜਾਂ ਚੋਰੀ ਹੋ ਗਿਆ",
+  "lifeEventLostPhoneBody": "ਜਲਦੀ ਕਰੋ। ਜਿਸ ਕੋਲ ਤੁਹਾਡਾ ਫ਼ੋਨ ਅਤੇ ਸਿਮ ਕਾਰਡ ਹੈ ਉਹ ਤੁਹਾਡੇ ਬੈਂਕ ਅਤੇ ਈਮੇਲ ਵਿੱਚ ਜਾ ਸਕਦਾ ਹੈ। ਪਹਿਲੇ ਕਦਮ ਹੁਣੇ ਚੁੱਕੋ।",
+  "lifeEventJobLoss": "ਮੇਰੀ ਨੌਕਰੀ ਚਲੀ ਗਈ",
+  "lifeEventJobLossBody": "ਇਹ ਔਖਾ ਹੈ। ਇੱਕ-ਇੱਕ ਕਦਮ ਚੁੱਕੋ। ਕੁਝ ਦਾਅਵਿਆਂ ਦੀ ਆਖਰੀ ਤਾਰੀਖ ਹੁੰਦੀ ਹੈ, ਉਹਨਾਂ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ।",
+  "lifeEventDisaster": "ਘਰ ਵਿੱਚ ਅੱਗ, ਹੜ੍ਹ ਜਾਂ ਚੋਰੀ",
+  "lifeEventDisasterBody": "ਪਹਿਲਾਂ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਸੁਰੱਖਿਅਤ ਹਨ। ਫਿਰ ਫ਼ੋਟੋਆਂ ਖਿੱਚੋ, ਬੀਮਾ ਕੰਪਨੀ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਅਤੇ ਗੁਆਚਿਆ ਦੁਬਾਰਾ ਬਣਵਾਓ।",
+  "lifeEventCaringParent": "ਮੈਂ ਮਾਂ ਜਾਂ ਪਿਤਾ ਦੀ ਦੇਖਭਾਲ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "lifeEventCaringParentBody": "ਜਿਸ ਦੀ ਦੇਖਭਾਲ ਕਰ ਰਹੇ ਹੋ ਉਸ ਨੂੰ ਚੁਣੋ। ਉਹਨਾਂ ਦੇ ਦਸਤਾਵੇਜ਼ ਅਤੇ ਕਵਰ ਜਾਂਚੋ, ਅਤੇ ਲੋੜੀਂਦਾ ਨੇੜੇ ਰੱਖੋ।",
+  "lifeVariantCarQuestion": "ਤੁਸੀਂ ਖਰੀਦੀ ਜਾਂ ਵੇਚੀ?",
+  "lifeVariantJobQuestion": "ਤੁਸੀਂ ਸ਼ੁਰੂ ਕਰ ਰਹੇ ਹੋ ਜਾਂ ਛੱਡ ਰਹੇ ਹੋ?",
+  "lifeVariantBuy": "ਖਰੀਦੀ",
+  "lifeVariantSell": "ਵੇਚੀ",
+  "lifeVariantStart": "ਸ਼ੁਰੂ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "lifeVariantLeave": "ਛੱਡ ਰਿਹਾ ਹਾਂ",
+  "lifeTaskRedirectPost": "ਆਪਣੀ ਡਾਕ ਨਵੇਂ ਪਤੇ 'ਤੇ ਭੇਜਣ ਦੀ ਬੇਨਤੀ ਕਰੋ",
+  "lifeTaskNewAddressEveryone": "ਮਾਲਕ, ਟੈਕਸ ਦਫ਼ਤਰ, ਡਾਕਟਰ ਅਤੇ ਸਕੂਲ ਨੂੰ ਨਵਾਂ ਪਤਾ ਦਿਓ",
+  "lifeTaskMoveUtilities": "ਬਿਜਲੀ, ਪਾਣੀ ਅਤੇ ਇੰਟਰਨੈੱਟ ਦੇ ਖਾਤੇ ਬੰਦ ਕਰੋ ਜਾਂ ਤਬਦੀਲ ਕਰੋ",
+  "lifeTaskMeterReadings": "ਘਰ ਛੱਡਣ ਵਾਲੇ ਦਿਨ ਮੀਟਰ ਰੀਡਿੰਗ ਅਤੇ ਫ਼ੋਟੋਆਂ ਲਓ",
+  "lifeTaskSaveHomePapers": "ਵਿਕਰੀ ਜਾਂ ਤਬਾਦਲੇ ਦੇ ਕਾਗਜ਼ਾਂ ਦੀ ਫ਼ੋਟੋ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskHandOverKeys": "ਚਾਬੀਆਂ, ਰਿਮੋਟ ਅਤੇ ਦਾਖਲਾ ਟੈਗ ਸੌਂਪੋ",
+  "lifeTaskOfficialNameProof": "ਪਹਿਲਾਂ ਆਪਣੇ ਨਵੇਂ ਨਾਂ ਦਾ ਸਰਕਾਰੀ ਸਬੂਤ ਲਓ। ਜ਼ਿਆਦਾਤਰ ਦਫ਼ਤਰ ਇਹ ਮੰਗਦੇ ਹਨ।",
+  "lifeTaskTellNameChange": "ਬੈਂਕ, ਮਾਲਕ, ਡਾਕਟਰ ਅਤੇ ਟੈਕਸ ਦਫ਼ਤਰ ਨੂੰ ਨਵੇਂ ਨਾਂ ਬਾਰੇ ਦੱਸੋ",
+  "lifeTaskUpdateOnlineAccounts": "ਈਮੇਲ, ਫ਼ੋਨ ਅਤੇ ਔਨਲਾਈਨ ਖਾਤਿਆਂ ਵਿੱਚ ਨਾਂ ਬਦਲੋ",
+  "lifeTaskSaveMarriageCertificate": "ਵਿਆਹ ਸਰਟੀਫਿਕੇਟ ਦੀ ਫ਼ੋਟੋ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskCheckBeneficiaries": "ਆਪਣੀਆਂ ਪਾਲਿਸੀਆਂ ਅਤੇ ਖਾਤਿਆਂ ਵਿੱਚ ਲਾਭਪਾਤਰੀ ਕੌਣ ਹੈ ਜਾਂਚੋ",
+  "lifeTaskUpdateWill": "ਵਸੀਅਤ ਬਣਾਓ ਜਾਂ ਅੱਪਡੇਟ ਕਰੋ",
+  "lifeTaskSaveDivorceOrder": "ਤਲਾਕ ਦੇ ਅੰਤਿਮ ਹੁਕਮ ਦੀ ਫ਼ੋਟੋ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskSplitSharedAccounts": "ਸਾਂਝੇ ਖਾਤੇ ਬੰਦ ਕਰੋ ਜਾਂ ਵੰਡੋ ਅਤੇ ਸਾਂਝੇ ਪਾਸਵਰਡ ਬਦਲੋ",
+  "lifeTaskRegisterBirth": "ਜਨਮ ਦੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਕਰੋ ਅਤੇ ਜਨਮ ਸਰਟੀਫਿਕੇਟ ਲਓ",
+  "lifeTaskAddBabyToFamily": "ਬੱਚੇ ਦੇ ਦਸਤਾਵੇਜ਼ ਟ੍ਰੈਕ ਕਰਨ ਲਈ ਬੱਚੇ ਨੂੰ ਪਰਿਵਾਰ ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskCarRegisterInName": "ਕਾਨੂੰਨ ਵੱਲੋਂ ਦਿੱਤੇ ਸਮੇਂ ਵਿੱਚ ਕਾਰ ਆਪਣੇ ਨਾਂ ਕਰਵਾਓ",
+  "lifeTaskCarSavePapers": "ਵਿਕਰੀ ਇਕਰਾਰਨਾਮੇ ਦੀ ਫ਼ੋਟੋ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskCarNotifySale": "ਲਾਇਸੈਂਸ ਦਫ਼ਤਰ ਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਕਾਰ ਵੇਚ ਦਿੱਤੀ ਹੈ ਅਤੇ ਸਬੂਤ ਰੱਖੋ",
+  "lifeTaskCarRemoveTags": "ਟੋਲ ਟੈਗ, ਪਾਰਕਿੰਗ ਕਾਰਡ ਅਤੇ ਨਿੱਜੀ ਸਾਮਾਨ ਕੱਢੋ",
+  "lifeTaskJobGiveDetails": "ਨਵੇਂ ਮਾਲਕ ਨੂੰ ਬੈਂਕ ਵੇਰਵੇ ਅਤੇ ਟੈਕਸ ਨੰਬਰ ਦਿਓ",
+  "lifeTaskJobJoinBenefits": "ਮਾਲਕ ਵੱਲੋਂ ਦਿੱਤੇ ਮੈਡੀਕਲ ਕਵਰ ਅਤੇ ਪੈਨਸ਼ਨ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+  "lifeTaskJobReturnItems": "ਲੈਪਟਾਪ, ਕਾਰਡ ਜਾਂ ਚਾਬੀਆਂ ਵਰਗਾ ਕੰਮ ਦਾ ਸਾਮਾਨ ਵਾਪਸ ਕਰੋ",
+  "lifeTaskJobLastPayslip": "ਆਖਰੀ ਤਨਖਾਹ ਸਲਿੱਪ ਅਤੇ ਕੰਮ ਦੀਆਂ ਤਾਰੀਖਾਂ ਦੀ ਪੁਸ਼ਟੀ ਵਾਲੀ ਚਿੱਠੀ ਮੰਗੋ",
+  "lifeTaskJobAskBenefits": "ਪੁੱਛੋ ਕਿ ਤੁਹਾਡੇ ਮੈਡੀਕਲ ਕਵਰ ਅਤੇ ਪੈਨਸ਼ਨ ਦਾ ਕੀ ਹੋਵੇਗਾ",
+  "lifeTaskJobUnemployment": "ਬੇਰੁਜ਼ਗਾਰੀ ਭੱਤੇ ਬਾਰੇ ਹੁਣੇ ਪੁੱਛੋ। ਦਾਅਵਿਆਂ ਦੀ ਅਕਸਰ ਆਖਰੀ ਤਾਰੀਖ ਹੁੰਦੀ ਹੈ।",
+  "lifeTaskJobPauseDebits": "ਆਟੋ-ਡੈਬਿਟ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਦੀ ਸੂਚੀ ਬਣਾਓ ਅਤੇ ਜੋ ਹੋ ਸਕੇ ਰੋਕੋ",
+  "lifeTaskStudySaveLetters": "ਦਾਖਲਾ ਪੱਤਰ ਅਤੇ ਫੀਸ ਵੇਰਵਿਆਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskStudyFunding": "ਵਜ਼ੀਫ਼ੇ, ਕਰਜ਼ੇ ਜਾਂ ਹੋਰ ਸਹਾਇਤਾ ਦੀਆਂ ਆਖਰੀ ਤਾਰੀਖਾਂ ਜਾਂਚੋ",
+  "lifeTaskRetirePension": "ਪੁੱਛੋ ਕਿ ਤੁਹਾਡੀ ਪੈਨਸ਼ਨ ਕਿਵੇਂ ਅਤੇ ਕਦੋਂ ਮਿਲੇਗੀ",
+  "lifeTaskRetireOwnCover": "ਨੌਕਰੀ ਦਾ ਕਵਰ ਖਤਮ ਹੋਣ 'ਤੇ ਆਪਣਾ ਮੈਡੀਕਲ ਕਵਰ ਲਓ",
+  "lifeTaskCountryTellBankTax": "ਬੈਂਕ ਅਤੇ ਟੈਕਸ ਦਫ਼ਤਰ ਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਜਾ ਰਹੇ ਹੋ",
+  "lifeTaskCountryScanCopies": "ਹਰ ਜ਼ਰੂਰੀ ਦਸਤਾਵੇਜ਼ ਦੀ ਫ਼ੋਟੋ Vaultara ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskCountryLicenceRules": "ਜਾਂਚੋ ਕਿ ਕੀ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਬਦਲਣਾ ਪਵੇਗਾ",
+  "lifeTaskChildOwnId": "ਲੋੜ ਹੋਵੇ ਤਾਂ ਆਪਣੇ ਪਛਾਣ ਪੱਤਰ ਲਈ ਅਰਜ਼ੀ ਦੇਣ ਵਿੱਚ ਮਦਦ ਕਰੋ",
+  "lifeTaskChildBankAccount": "ਆਪਣਾ ਬੈਂਕ ਖਾਤਾ ਖੋਲ੍ਹਣ ਵਿੱਚ ਮਦਦ ਕਰੋ",
+  "lifeTaskDeathCertificates": "ਮੌਤ ਸਰਟੀਫਿਕੇਟ ਦੀਆਂ ਕੁਝ ਤਸਦੀਕਸ਼ੁਦਾ ਕਾਪੀਆਂ ਲਓ",
+  "lifeTaskDeathTellOrganisations": "ਬੈਂਕ, ਬੀਮਾ ਕੰਪਨੀਆਂ ਅਤੇ ਮਾਲਕ ਨੂੰ ਦੱਸੋ",
+  "lifeTaskDeathFindWill": "ਵਸੀਅਤ ਲੱਭੋ ਅਤੇ ਕਾਰਜਕਾਰੀ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "lifeTaskDeathStopReminders": "ਤਿਆਰ ਹੋਣ 'ਤੇ ਉਹਨਾਂ ਦੇ ਰਿਕਾਰਡਾਂ ਦੇ ਰੀਮਾਈਂਡਰ ਬੰਦ ਕਰੋ",
+  "lifeTaskPhoneBlockSim": "ਸਿਮ ਕਾਰਡ ਬਲਾਕ ਕਰਾਉਣ ਲਈ ਨੈੱਟਵਰਕ ਨੂੰ ਫ਼ੋਨ ਕਰੋ। ਇਸ ਨਾਲ ਸਿਮ ਸਵੈਪ ਧੋਖਾਧੜੀ ਰੁਕਦੀ ਹੈ।",
+  "lifeTaskPhoneBlockBanking": "ਫ਼ੋਨ 'ਤੇ ਬੈਂਕਿੰਗ ਬਲਾਕ ਕਰਾਉਣ ਲਈ ਬੈਂਕ ਨੂੰ ਫ਼ੋਨ ਕਰੋ",
+  "lifeTaskPhoneLockErase": "ਕਿਸੇ ਹੋਰ ਡਿਵਾਈਸ ਤੋਂ ਫ਼ੋਨ ਲਾਕ ਕਰੋ ਜਾਂ ਮਿਟਾਓ",
+  "lifeTaskPhoneChangePasswords": "ਈਮੇਲ ਅਤੇ ਸੋਸ਼ਲ ਮੀਡੀਆ ਦੇ ਪਾਸਵਰਡ ਬਦਲੋ",
+  "lifeTaskReportToPolice": "ਪੁਲਿਸ ਨੂੰ ਰਿਪੋਰਟ ਕਰੋ ਅਤੇ ਕੇਸ ਨੰਬਰ ਰੱਖੋ",
+  "lifeTaskDisasterSafePlace": "ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਸੁਰੱਖਿਅਤ ਹਨ ਅਤੇ ਰਹਿਣ ਦੀ ਥਾਂ ਹੈ",
+  "lifeTaskDisasterPhotos": "ਸਫ਼ਾਈ ਤੋਂ ਪਹਿਲਾਂ ਨੁਕਸਾਨ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਖਿੱਚੋ",
+  "lifeTaskDisasterContactInsurer": "ਜਿੰਨੀ ਜਲਦੀ ਹੋ ਸਕੇ ਬੀਮਾ ਕੰਪਨੀ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+  "lifeTaskDisasterProofPack": "ਸਬੂਤ ਪੈਕ ਨਾਲ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀਆਂ ਕਾਪੀਆਂ ਭੇਜੋ",
+  "lifeTaskParentFindPapers": "ਪਤਾ ਕਰੋ ਕਿ ਉਹਨਾਂ ਦੇ ਜ਼ਰੂਰੀ ਕਾਗਜ਼ ਕਿੱਥੇ ਰੱਖੇ ਹਨ",
+  "lifeTaskParentPermission": "ਪੁੱਛੋ ਕਿ ਕੀ ਤੁਸੀਂ ਉਹਨਾਂ ਵੱਲੋਂ ਬੈਂਕ, ਡਾਕਟਰ ਅਤੇ ਬੀਮਾ ਕੰਪਨੀ ਨਾਲ ਗੱਲ ਕਰ ਸਕਦੇ ਹੋ",
+  "lifeTaskParentMedicines": "ਉਹਨਾਂ ਦੀਆਂ ਦਵਾਈਆਂ ਅਤੇ ਡਾਕਟਰਾਂ ਦੀ ਸੂਚੀ ਰੱਖੋ",
+  "lifePlanDoClaim": "ਦਾਅਵਾ ਕਰੋ",
+  "lifePlanStatusClaimed": "ਦਾਅਵਾ ਕੀਤਾ",
+  "lifePlanStartBy": "{weeks, plural, =1{{date} ਤੱਕ ਸ਼ੁਰੂ ਕਰੋ। ਨਵਾਂ ਆਮ ਤੌਰ 'ਤੇ ਲਗਭਗ ਇੱਕ ਹਫ਼ਤਾ ਲੈਂਦਾ ਹੈ।} other{{date} ਤੱਕ ਸ਼ੁਰੂ ਕਰੋ। ਨਵਾਂ ਆਮ ਤੌਰ 'ਤੇ ਲਗਭਗ {weeks} ਹਫ਼ਤੇ ਲੈਂਦਾ ਹੈ।}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ। ਨਵਾਂ ਆਮ ਤੌਰ 'ਤੇ ਲਗਭਗ ਇੱਕ ਹਫ਼ਤਾ ਲੈਂਦਾ ਹੈ।} other{ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ। ਨਵਾਂ ਆਮ ਤੌਰ 'ਤੇ ਲਗਭਗ {weeks} ਹਫ਼ਤੇ ਲੈਂਦਾ ਹੈ।}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ਤੁਹਾਡੀ ਯੋਜਨਾ",
+  "lifePlanWhenHappened": "ਇਹ ਕਦੋਂ ਹੋਇਆ?",
+  "lifePlanReminderNudge": "ਤੁਹਾਡੀ ਯੋਜਨਾ ਵਿੱਚ ਅਜੇ ਕੰਮ ਬਾਕੀ ਹਨ। ਸਮਾਂ ਮਿਲਣ 'ਤੇ ਖੋਲ੍ਹੋ।",
+  "lifePlanReminderCheckIn": "ਕੀ ਤੁਹਾਡੇ ਨਵੇਂ ਕਾਰਡ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਆ ਗਏ? ਜਾਂਚਣ ਲਈ ਯੋਜਨਾ ਖੋਲ੍ਹੋ।",
+  "lifePlanDoFirst": "ਪਹਿਲਾਂ ਇਹ ਕਰੋ",
+  "lifePlanSteps": "ਹੋਰ ਕਦਮ",
+  "lifePlanAddOwnStep": "ਆਪਣਾ ਕਦਮ ਜੋੜੋ",
+  "lifePlanOwnStepHint": "ਜਿਵੇਂ: ਸਕੂਲ ਨੂੰ ਦੱਸੋ",
+  "lifePlanOwnStepLimit": "ਤੁਸੀਂ ਆਪਣੇ 20 ਤੱਕ ਕਦਮ ਜੋੜ ਸਕਦੇ ਹੋ।",
+  "lifePlanReadAloud": "ਉੱਚੀ ਪੜ੍ਹੋ",
+  "lifePlanStopReading": "ਪੜ੍ਹਨਾ ਬੰਦ ਕਰੋ",
+  "lifePlanReadAloudUnavailable": "ਇਸ ਫ਼ੋਨ 'ਤੇ ਉੱਚੀ ਪੜ੍ਹਨ ਦੀ ਸਹੂਲਤ ਨਹੀਂ ਹੈ।",
+  "lifePlanProofPack": "ਸਬੂਤ ਪੈਕ ਬਣਾਓ",
+  "lifePlanOpenFamily": "ਪਰਿਵਾਰ ਖੋਲ੍ਹੋ",
+  "lifePlanRemoved": "{count, plural, =1{ਤੁਹਾਡਾ ਮਿਟਾਇਆ 1 ਰਿਕਾਰਡ ਰੱਦ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ।} other{ਤੁਹਾਡੇ ਮਿਟਾਏ {count} ਰਿਕਾਰਡ ਰੱਦ ਮੰਨੇ ਜਾਂਦੇ ਹਨ।}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "ਇਹਨਾਂ ਨੂੰ ਰੀਨਿਊ ਕਰਨ 'ਤੇ ਆਮ ਤੌਰ 'ਤੇ ਲਗਭਗ {amount} ਲੱਗਦੇ ਹਨ।",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "ਨਵੇਂ ਘਰ ਜਾ ਰਹੇ ਹੋ? ਦੇਖੋ ਹੋਰ ਕੀ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ।"
 }

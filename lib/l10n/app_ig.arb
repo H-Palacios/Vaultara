@@ -2154,5 +2154,136 @@
   "lifePlanReminderAfter": "Ihe ụfọdụ ka fọdụrụ. Meghee atụmatụ ahụ iji mechaa ha.",
   "lifePlanSuggestCar": "Ị zụtara ma ọ bụ rere ụgbọala? Hụ ihe ọzọ ị ga-emelite.",
   "lifePlanSuggestTrip": "Ị na-akwaga ebe ahụ ruo oge ụfọdụ?",
-  "lifePlanSuggestTripBody": "Malite atụmatụ maka ịkwaga obodo ọzọ. Vaultara na-egosi ihe ị ga-ahazi tupu ị pụọ."
+  "lifePlanSuggestTripBody": "Malite atụmatụ maka ịkwaga obodo ọzọ. Vaultara na-egosi ihe ị ga-ahazi tupu ị pụọ.",
+  "lifeGroupHome": "Ụlọ",
+  "lifeGroupFamily": "Ezinụlọ",
+  "lifeGroupWork": "Ọrụ na agụmakwụkwọ",
+  "lifeGroupCarTravel": "Ụgbọala na njem",
+  "lifeGroupEmergency": "Ihe adịghị mma mere",
+  "lifeEventCarBuy": "Azụrụ m ụgbọala",
+  "lifeEventCarBuyBody": "Nweta mkpuchi tupu ịkwọba ya n'ụlọ, wee debanye ụgbọala ahụ n'aha gị.",
+  "lifeEventCarSell": "Erere m ụgbọala",
+  "lifeEventCarSellBody": "Gwa ụlọ ọrụ ikike gbasara ire ahụ, kagbuo mkpuchi mgbe ụgbọala ahụ abụghịzi nke gị.",
+  "lifeEventJobStart": "Ana m amalite ọrụ ọhụrụ",
+  "lifeEventJobStartBody": "Lelee ikike gị tupu ịmalite, wee hazie kaadị ọrụ na uru ndị ọzọ.",
+  "lifeEventJobLeave": "Ana m ahapụ ọrụ m",
+  "lifeEventJobLeaveBody": "Weghachi ihe ọrụ ma lelee ihe ga-eme mkpuchi ọrụ gị nyere gị.",
+  "lifeEventLostPhone": "Ekwentị m furu efu ma ọ bụ e zuru ya",
+  "lifeEventLostPhoneBody": "Mee ngwa ngwa. Onye nwere ekwentị gị na kaadị SIM nwere ike ịbanye n'ụlọ akụ na email gị. Mee nzọụkwụ mbụ ugbu a.",
+  "lifeEventJobLoss": "Ọrụ m fụrụ m",
+  "lifeEventJobLossBody": "Nke a siri ike. Were otu nzọụkwụ n'otu oge. Arịrịọ ụfọdụ nwere ụbọchị njedebe, ya mere bido na ha.",
+  "lifeEventDisaster": "Ọkụ, idei mmiri ma ọ bụ ohi n'ụlọ",
+  "lifeEventDisasterBody": "Buru ụzọ hụ na onye ọ bụla dị mma. Mgbe ahụ see foto, kpọtụrụ ụlọ ọrụ mkpuchi gị ma dochie ihe furu efu.",
+  "lifeEventCaringParent": "Ana m elekọta nne ma ọ bụ nna m",
+  "lifeEventCaringParentBody": "Họrọ onye ị na-elekọta. Lelee akwụkwọ na mkpuchi ya, debe ihe ị chọrọ n'akụkụ gị.",
+  "lifeVariantCarQuestion": "Ị zụrụ ka ị rere?",
+  "lifeVariantJobQuestion": "Ị na-amalite ka ị na-ahapụ?",
+  "lifeVariantBuy": "Azụrụ m",
+  "lifeVariantSell": "Erere m",
+  "lifeVariantStart": "Ana m amalite",
+  "lifeVariantLeave": "Ana m ahapụ",
+  "lifeTaskRedirectPost": "Rịọ ka e zigara akwụkwọ ozi gị n'adreesị ọhụrụ",
+  "lifeTaskNewAddressEveryone": "Nye onye were gị n'ọrụ, ụlọ ọrụ ụtụ, dọkịta na ụlọ akwụkwọ adreesị ọhụrụ gị",
+  "lifeTaskMoveUtilities": "Mechie ma ọ bụ bufee akaụntụ ọkụ eletrik, mmiri na ịntanetị",
+  "lifeTaskMeterReadings": "Dee ọgụgụ mita ma see foto n'ụbọchị ị na-akwapụ",
+  "lifeTaskSaveHomePapers": "Tinye foto akwụkwọ ire ma ọ bụ mbufe na Vaultara",
+  "lifeTaskHandOverKeys": "Nyefee igodo, rimot na kaadị ịbanye",
+  "lifeTaskOfficialNameProof": "Buru ụzọ nweta ihe akaebe gọọmentị nke aha ọhụrụ gị. Ọtụtụ ụlọ ọrụ na-arịọ ya.",
+  "lifeTaskTellNameChange": "Gwa ụlọ akụ, onye were gị n'ọrụ, dọkịta na ụlọ ọrụ ụtụ gbasara aha ọhụrụ gị",
+  "lifeTaskUpdateOnlineAccounts": "Gbanwee aha gị na email, ekwentị na akaụntụ ịntanetị",
+  "lifeTaskSaveMarriageCertificate": "Tinye foto asambodo alụmdi na nwunye na Vaultara",
+  "lifeTaskCheckBeneficiaries": "Lelee onye e dere dị ka onye ga-erite uru na amụma na akaụntụ gị",
+  "lifeTaskUpdateWill": "Dee ma ọ bụ melite akwụkwọ ọchịchọ ikpeazụ",
+  "lifeTaskSaveDivorceOrder": "Tinye foto iwu ikpeazụ ịgba alụkwaghịm na Vaultara",
+  "lifeTaskSplitSharedAccounts": "Mechie ma ọ bụ kewaa akaụntụ unu nwekọrọ ma gbanwee okwuntughe unu nwekọrọ",
+  "lifeTaskRegisterBirth": "Debanye ọmụmụ ahụ ma nweta asambodo ọmụmụ",
+  "lifeTaskAddBabyToFamily": "Tinye nwa ọhụrụ n'Ezinụlọ ka e soro akwụkwọ ya",
+  "lifeTaskCarRegisterInName": "Debanye ụgbọala n'aha gị n'ime oge iwu kwere",
+  "lifeTaskCarSavePapers": "Tinye foto nkwekọrịta ire na Vaultara",
+  "lifeTaskCarNotifySale": "Gwa ụlọ ọrụ ikike na i rere ụgbọala ahụ ma debe ihe akaebe",
+  "lifeTaskCarRemoveTags": "Wepụ tag ụzọ ụgwọ, kaadị ebe ndọba ụgbọala na ihe nkeonwe",
+  "lifeTaskJobGiveDetails": "Nye onye were gị n'ọrụ ọhụrụ nkọwa ụlọ akụ na nọmba ụtụ gị",
+  "lifeTaskJobJoinBenefits": "Sonye na mkpuchi ahụike na ezumike nka onye were gị n'ọrụ na-enye",
+  "lifeTaskJobReturnItems": "Weghachi ihe ọrụ dị ka laptọọpụ, kaadị ma ọ bụ igodo",
+  "lifeTaskJobLastPayslip": "Rịọ akwụkwọ ụgwọ ọnwa ikpeazụ na akwụkwọ ozi na-akwado ụbọchị ọrụ gị",
+  "lifeTaskJobAskBenefits": "Jụọ ihe ga-eme mkpuchi ahụike na ezumike nka gị",
+  "lifeTaskJobUnemployment": "Jụọ gbasara enyemaka enweghị ọrụ ugbu a. Arịrịọ na-enwekarị ụbọchị njedebe.",
+  "lifeTaskJobPauseDebits": "Depụta ụgwọ akpaaka na ndenye aha gị, kwụsịtụ ndị ị nwere ike",
+  "lifeTaskStudySaveLetters": "Tinye foto akwụkwọ nnabata na nkwupụta ụgwọ akwụkwọ na Vaultara",
+  "lifeTaskStudyFunding": "Lelee ụbọchị njedebe maka nkwado agụmakwụkwọ, mbinye ego ma ọ bụ enyemaka ndị ọzọ",
+  "lifeTaskRetirePension": "Jụọ otu na mgbe a ga-akwụ ezumike nka gị",
+  "lifeTaskRetireOwnCover": "Hazie mkpuchi ahụike nke gị ma ọ bụrụ na nke ọrụ akwụsị",
+  "lifeTaskCountryTellBankTax": "Gwa ụlọ akụ na ụlọ ọrụ ụtụ na ị na-apụ",
+  "lifeTaskCountryScanCopies": "Tinye foto akwụkwọ ọ bụla dị mkpa na Vaultara",
+  "lifeTaskCountryLicenceRules": "Lelee ma ị ga-agbanwe akwụkwọ ikike ịnya ụgbọala gị",
+  "lifeTaskChildOwnId": "Nyere ya aka ịrịọ maka kaadị njirimara nke ya ma ọ bụrụ na ọ chọrọ",
+  "lifeTaskChildBankAccount": "Nyere ya aka imepe akaụntụ ụlọ akụ nke ya",
+  "lifeTaskDeathCertificates": "Nweta mbipụta ole na ole akwadoro nke asambodo ọnwụ",
+  "lifeTaskDeathTellOrganisations": "Gwa ụlọ akụ, ụlọ ọrụ mkpuchi na onye were ya n'ọrụ",
+  "lifeTaskDeathFindWill": "Chọta akwụkwọ ọchịchọ ikpeazụ ma kpọtụrụ onye na-ahụ maka ya",
+  "lifeTaskDeathStopReminders": "Mgbe ị dị njikere, gbanyụọ ncheta maka ndekọ ya",
+  "lifeTaskPhoneBlockSim": "Kpọọ netwọk gị ka ha gbochie kaadị SIM. Nke a na-akwụsị aghụghọ mgbanwe SIM.",
+  "lifeTaskPhoneBlockBanking": "Kpọọ ụlọ akụ gị ka ha gbochie ụlọ akụ n'ekwentị",
+  "lifeTaskPhoneLockErase": "Kpọchie ma ọ bụ hichapụ ekwentị site na ngwaọrụ ọzọ",
+  "lifeTaskPhoneChangePasswords": "Gbanwee okwuntughe email na mgbasa ozi ọha",
+  "lifeTaskReportToPolice": "Kọọrọ ndị uwe ojii ma debe nọmba okwu ahụ",
+  "lifeTaskDisasterSafePlace": "Hụ na onye ọ bụla dị mma ma nwee ebe obibi",
+  "lifeTaskDisasterPhotos": "See foto mmebi tupu ị kpochaa",
+  "lifeTaskDisasterContactInsurer": "Kpọtụrụ ụlọ ọrụ mkpuchi gị ozugbo i nwere ike",
+  "lifeTaskDisasterProofPack": "Ziga mbipụta akwụkwọ gị site na Ngwugwu ihe akaebe",
+  "lifeTaskParentFindPapers": "Chọpụta ebe a na-edebe akwụkwọ ya ndị dị mkpa",
+  "lifeTaskParentPermission": "Jụọ ma ị nwere ike ịgwa ụlọ akụ, dọkịta na ụlọ ọrụ mkpuchi ya okwu n'aha ya",
+  "lifeTaskParentMedicines": "Debe ndepụta ọgwụ na ndị dọkịta ya",
+  "lifePlanDoClaim": "Mee arịrịọ",
+  "lifePlanStatusClaimed": "Arịrịọ emere",
+  "lifePlanStartBy": "{weeks, plural, =1{Bido tupu {date}. Nke ọhụrụ na-ewekarị ihe dị ka otu izu.} other{Bido tupu {date}. Nke ọhụrụ na-ewekarị ihe dị ka izu {weeks}.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Bido ugbu a. Nke ọhụrụ na-ewekarị ihe dị ka otu izu.} other{Bido ugbu a. Nke ọhụrụ na-ewekarị ihe dị ka izu {weeks}.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Atụmatụ gị",
+  "lifePlanWhenHappened": "Olee mgbe ọ mere?",
+  "lifePlanReminderNudge": "Atụmatụ gị ka nwere ihe a ga-eme. Mepee ya mgbe i nwere obere oge.",
+  "lifePlanReminderCheckIn": "Kaadị na akwụkwọ ọhụrụ gị abịala? Mepee atụmatụ ka i lelee.",
+  "lifePlanDoFirst": "Buru ụzọ mee nke a",
+  "lifePlanSteps": "Nzọụkwụ ndị ọzọ",
+  "lifePlanAddOwnStep": "Tinye nzọụkwụ nke gị",
+  "lifePlanOwnStepHint": "Dịka ọmụmaatụ: Gwa ụlọ akwụkwọ",
+  "lifePlanOwnStepLimit": "Ị nwere ike itinye ihe ruru nzọụkwụ 20 nke gị.",
+  "lifePlanReadAloud": "Gụọ n'olu dara ụda",
+  "lifePlanStopReading": "Kwụsị ịgụ",
+  "lifePlanReadAloudUnavailable": "Ịgụ n'olu dara ụda adịghị na ekwentị a.",
+  "lifePlanProofPack": "Mepụta ngwugwu ihe akaebe",
+  "lifePlanOpenFamily": "Mepee Ezinụlọ",
+  "lifePlanRemoved": "{count, plural, =1{Ndekọ 1 i hichapụrụ ka a gụrụ dị ka akagburu.} other{Ndekọ {count} i hichapụrụ ka a gụrụ dị ka akagburu.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Imelite ndị a na-efukarị ihe dị ka {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ị na-akwaga n'ụlọ ọhụrụ? Lee ihe ọzọ ị ga-emelite."
 }

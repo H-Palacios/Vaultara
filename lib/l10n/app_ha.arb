@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "Akwai abubuwan da suka rage. Buɗe tsarin don kammala su.",
   "lifePlanSuggestCar": "Ka saya ko ka sayar da mota? Duba me kuma za a sabunta.",
   "lifePlanSuggestTrip": "Za ka ƙaura can na ɗan lokaci?",
-  "lifePlanSuggestTripBody": "Fara tsarin ƙaura zuwa wata ƙasa. Vaultara yana nuna abin da za a shirya kafin ka tafi."
+  "lifePlanSuggestTripBody": "Fara tsarin ƙaura zuwa wata ƙasa. Vaultara yana nuna abin da za a shirya kafin ka tafi.",
+  "lifeGroupHome": "Gida",
+  "lifeGroupFamily": "Iyali",
+  "lifeGroupWork": "Aiki da karatu",
+  "lifeGroupCarTravel": "Mota da tafiya",
+  "lifeGroupEmergency": "Wani abu ya faru",
+  "lifeEventCarBuy": "Na sayi mota",
+  "lifeEventCarBuyBody": "Yi inshora kafin ka tuka ta gida, sannan ka mayar da motar da sunanka.",
+  "lifeEventCarSell": "Na sayar da mota",
+  "lifeEventCarSellBody": "Sanar da ofishin lasisi game da sayarwar, kuma ka soke inshora idan motar ba taka ba ce.",
+  "lifeEventJobStart": "Zan fara sabon aiki",
+  "lifeEventJobStartBody": "Duba izininka kafin ka fara, sannan ka shirya katin aiki da alfanu.",
+  "lifeEventJobLeave": "Zan bar aikina",
+  "lifeEventJobLeaveBody": "Mayar da kayan aiki kuma ka duba abin da zai faru da inshorar da aikinka ya ba ka.",
+  "lifeEventLostPhone": "Wayata ta ɓace ko an sace ta",
+  "lifeEventLostPhoneBody": "Yi sauri. Duk wanda ke da wayarka da katin SIM zai iya shiga bankinka da imel ɗinka. Yi matakan farko yanzu.",
+  "lifeEventJobLoss": "Na rasa aikina",
+  "lifeEventJobLossBody": "Wannan yana da wuya. Ɗauki mataki ɗaya bayan ɗaya. Wasu buƙatu suna da wa'adi, don haka fara da su.",
+  "lifeEventDisaster": "Gobara, ambaliya ko sata a gida",
+  "lifeEventDisasterBody": "Da farko ka tabbata kowa yana lafiya. Sannan ka ɗauki hotuna, ka tuntuɓi kamfanin inshora ka maye gurbin abin da ya ɓace.",
+  "lifeEventCaringParent": "Ina kula da mahaifi ko mahaifiya",
+  "lifeEventCaringParentBody": "Zaɓi mutumin da kake kulawa da shi. Duba takardunsa da inshorarsa, ka ajiye abin da kake buƙata kusa.",
+  "lifeVariantCarQuestion": "Ka saya ko ka sayar?",
+  "lifeVariantJobQuestion": "Kana farawa ko kana barin?",
+  "lifeVariantBuy": "Na saya",
+  "lifeVariantSell": "Na sayar",
+  "lifeVariantStart": "Ina farawa",
+  "lifeVariantLeave": "Ina barin",
+  "lifeTaskRedirectPost": "Nemi a riƙa aika wasiƙunka zuwa sabon adireshinka",
+  "lifeTaskNewAddressEveryone": "Ba da sabon adireshinka ga ma'aikacinka, ofishin haraji, likita da makaranta",
+  "lifeTaskMoveUtilities": "Rufe ko canja asusun wutar lantarki, ruwa da intanet",
+  "lifeTaskMeterReadings": "Ɗauki karatun mita da hotuna a ranar da za ka tashi",
+  "lifeTaskSaveHomePapers": "Ƙara hoton takardun sayarwa ko canja mallaka a Vaultara",
+  "lifeTaskHandOverKeys": "Mika makullai, rimot da katunan shiga",
+  "lifeTaskOfficialNameProof": "Da farko ka sami shaidar hukuma ta sabon sunanka. Yawancin ofisoshi suna nema.",
+  "lifeTaskTellNameChange": "Sanar da bankinka, ma'aikacinka, likita da ofishin haraji sabon sunanka",
+  "lifeTaskUpdateOnlineAccounts": "Canja sunanka a imel, waya da asusun kan layi",
+  "lifeTaskSaveMarriageCertificate": "Ƙara hoton takardar shaidar aure a Vaultara",
+  "lifeTaskCheckBeneficiaries": "Duba wanda aka sanya a matsayin mai cin gajiya a manufofinka da asusunka",
+  "lifeTaskUpdateWill": "Rubuta ko sabunta wasiyya",
+  "lifeTaskSaveDivorceOrder": "Ƙara hoton hukuncin saki na ƙarshe a Vaultara",
+  "lifeTaskSplitSharedAccounts": "Rufe ko raba asusun haɗin gwiwa kuma ka canja kalmomin sirri na haɗin gwiwa",
+  "lifeTaskRegisterBirth": "Yi rajistar haihuwa kuma ka sami takardar shaidar haihuwa",
+  "lifeTaskAddBabyToFamily": "Ƙara jaririn a Iyali don a bibiyi takardunsa",
+  "lifeTaskCarRegisterInName": "Mayar da motar da sunanka cikin lokacin da doka ta ba da",
+  "lifeTaskCarSavePapers": "Ƙara hoton yarjejeniyar sayarwa a Vaultara",
+  "lifeTaskCarNotifySale": "Sanar da ofishin lasisi cewa ka sayar da motar kuma ka ajiye shaidar",
+  "lifeTaskCarRemoveTags": "Cire alamomin biyan hanya, katunan ajiye mota da kayanka",
+  "lifeTaskJobGiveDetails": "Ba da bayanan bankinka da lambar harajinka ga sabon ma'aikacinka",
+  "lifeTaskJobJoinBenefits": "Shiga inshorar lafiya da fansho da ma'aikaci ke bayarwa",
+  "lifeTaskJobReturnItems": "Mayar da kayan aiki kamar kwamfuta, kati ko makullai",
+  "lifeTaskJobLastPayslip": "Nemi takardar albashinka ta ƙarshe da wasiƙar da ke tabbatar da kwanakin aikinka",
+  "lifeTaskJobAskBenefits": "Tambayi abin da zai faru da inshorar lafiyarka da fansho",
+  "lifeTaskJobUnemployment": "Tambayi game da tallafin rashin aikin yi yanzu. Buƙatu sau da yawa suna da wa'adi.",
+  "lifeTaskJobPauseDebits": "Lissafa cire kuɗi na atomatik da biyan kuɗin kowane wata, ka dakatar da abin da za ka iya",
+  "lifeTaskStudySaveLetters": "Ƙara hotunan wasiƙar karɓa da bayanan kuɗin makaranta a Vaultara",
+  "lifeTaskStudyFunding": "Duba wa'adin tallafin karatu, lamuni ko wani tallafi",
+  "lifeTaskRetirePension": "Tambayi yadda da lokacin da za a biya fansho ɗinka",
+  "lifeTaskRetireOwnCover": "Shirya inshorar lafiyarka idan ta wurin aiki ta ƙare",
+  "lifeTaskCountryTellBankTax": "Sanar da bankinka da ofishin haraji cewa za ka tafi",
+  "lifeTaskCountryScanCopies": "Ƙara hoton kowace muhimmiyar takarda a Vaultara",
+  "lifeTaskCountryLicenceRules": "Duba ko dole ne ka canja lasisin tuƙinka",
+  "lifeTaskChildOwnId": "Taimaka masa ya nemi katin shaidarsa idan yana buƙata",
+  "lifeTaskChildBankAccount": "Taimaka masa ya buɗe asusun bankinsa",
+  "lifeTaskDeathCertificates": "Sami kwafi kaɗan da aka tabbatar na takardar shaidar mutuwa",
+  "lifeTaskDeathTellOrganisations": "Sanar da banki, kamfanonin inshora da ma'aikaci",
+  "lifeTaskDeathFindWill": "Nemo wasiyyar kuma ka tuntuɓi mai zartarwa",
+  "lifeTaskDeathStopReminders": "Idan ka shirya, kashe tunatarwa na bayanansa",
+  "lifeTaskPhoneBlockSim": "Kira kamfanin wayarka don a toshe katin SIM. Wannan yana hana zamba ta canja SIM.",
+  "lifeTaskPhoneBlockBanking": "Kira bankinka don a toshe banki a wayar",
+  "lifeTaskPhoneLockErase": "Kulle ko goge wayar daga wata na'ura",
+  "lifeTaskPhoneChangePasswords": "Canja kalmomin sirri na imel da kafofin sada zumunta",
+  "lifeTaskReportToPolice": "Kai rahoto ga 'yan sanda kuma ka ajiye lambar ƙara",
+  "lifeTaskDisasterSafePlace": "Tabbata kowa yana lafiya kuma yana da wurin zama",
+  "lifeTaskDisasterPhotos": "Ɗauki hotunan ɓarna kafin ka share",
+  "lifeTaskDisasterContactInsurer": "Tuntuɓi kamfanin inshora da wuri-wuri",
+  "lifeTaskDisasterProofPack": "Aika kwafin takardunka da Fakitin shaida",
+  "lifeTaskParentFindPapers": "Gano inda ake ajiye muhimman takardunsa",
+  "lifeTaskParentPermission": "Tambayi ko za ka iya magana a madadinsa da bankinsa, likitansa da kamfanin inshorarsa",
+  "lifeTaskParentMedicines": "Ajiye jerin magungunansa da likitocinsa",
+  "lifePlanDoClaim": "Yi da'awa",
+  "lifePlanStatusClaimed": "An yi da'awa",
+  "lifePlanStartBy": "{weeks, plural, =1{Fara kafin {date}. Sabo yakan ɗauki kusan mako guda.} other{Fara kafin {date}. Sabo yakan ɗauki kusan makonni {weeks}.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Fara yanzu. Sabo yakan ɗauki kusan mako guda.} other{Fara yanzu. Sabo yakan ɗauki kusan makonni {weeks}.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Shirinka",
+  "lifePlanWhenHappened": "Yaushe abin ya faru?",
+  "lifePlanReminderNudge": "Shirinka yana da abubuwan da za a yi. Buɗe shi idan ka sami lokaci.",
+  "lifePlanReminderCheckIn": "Sabbin katunanka da takardunka sun iso? Buɗe shirin don dubawa.",
+  "lifePlanDoFirst": "Yi wannan da farko",
+  "lifePlanSteps": "Sauran matakai",
+  "lifePlanAddOwnStep": "Ƙara matakinka",
+  "lifePlanOwnStepHint": "Misali: Sanar da makaranta",
+  "lifePlanOwnStepLimit": "Kana iya ƙara matakai naka har 20.",
+  "lifePlanReadAloud": "Karanta da ƙarfi",
+  "lifePlanStopReading": "Dakatar da karatu",
+  "lifePlanReadAloudUnavailable": "Karatu da ƙarfi ba ya samuwa a wannan wayar.",
+  "lifePlanProofPack": "Ƙirƙiri fakitin shaida",
+  "lifePlanOpenFamily": "Buɗe Iyali",
+  "lifePlanRemoved": "{count, plural, =1{Bayani 1 da ka goge ana ɗaukarsa a matsayin an soke.} other{Bayanai {count} da ka goge ana ɗaukarsu a matsayin an soke.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Sabunta waɗannan yakan kai kusan {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Kana ƙaura zuwa sabon gida? Duba abin da kake buƙatar sabuntawa."
 }

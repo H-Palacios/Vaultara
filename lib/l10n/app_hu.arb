@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Még van teendő. Nyisd meg a tervet, és fejezd be.",
   "lifePlanSuggestCar": "Autót vettél vagy adtál el? Nézd meg, mit kell még frissíteni.",
   "lifePlanSuggestTrip": "Egy időre odaköltözöl?",
-  "lifePlanSuggestTripBody": "Indíts tervet egy másik országba költözéshez. A Vaultara megmutatja, mit kell elintézni indulás előtt."
+  "lifePlanSuggestTripBody": "Indíts tervet egy másik országba költözéshez. A Vaultara megmutatja, mit kell elintézni indulás előtt.",
+  "lifeGroupHome": "Otthon",
+  "lifeGroupFamily": "Család",
+  "lifeGroupWork": "Munka és tanulás",
+  "lifeGroupCarTravel": "Autó és utazás",
+  "lifeGroupEmergency": "Valami történt",
+  "lifeEventCarBuy": "Autót vettem",
+  "lifeEventCarBuyBody": "Kössön biztosítást, mielőtt hazavezeti, aztán írassa át az autót a nevére.",
+  "lifeEventCarSell": "Eladtam egy autót",
+  "lifeEventCarSellBody": "Jelentse be az eladást az okmányirodánál, és mondja fel a biztosítást, amint az autó már nem az öné.",
+  "lifeEventJobStart": "Új munkahelyen kezdek",
+  "lifeEventJobStartBody": "Kezdés előtt ellenőrizze az engedélyeit, aztán intézze el a belépőkártyát és a juttatásokat.",
+  "lifeEventJobLeave": "Kilépek a munkahelyemről",
+  "lifeEventJobLeaveBody": "Adja vissza a munkahelyi eszközöket, és nézze meg, mi lesz a munkahely által adott fedezettel.",
+  "lifeEventLostPhone": "Elvesztettem a telefonom, vagy ellopták",
+  "lifeEventLostPhoneBody": "Cselekedjen gyorsan. Akinél a telefonja és a SIM-kártyája van, hozzáférhet a bankjához és az e-mailjeihez. Tegye meg azonnal az első lépéseket.",
+  "lifeEventJobLoss": "Elvesztettem az állásomat",
+  "lifeEventJobLossBody": "Ez nehéz. Haladjon lépésről lépésre. Néhány kérelemnek határideje van, ezekkel kezdje.",
+  "lifeEventDisaster": "Tűz, árvíz vagy betörés otthon",
+  "lifeEventDisasterBody": "Először győződjön meg róla, hogy mindenki biztonságban van. Aztán fotózzon, keresse meg a biztosítót, és pótolja, ami elveszett.",
+  "lifeEventCaringParent": "Egy szülőmről gondoskodom",
+  "lifeEventCaringParentBody": "Válassza ki, akiről gondoskodik. Ellenőrizze az iratait és biztosításait, és tartsa kéznél, amire szüksége van.",
+  "lifeVariantCarQuestion": "Vett vagy eladott?",
+  "lifeVariantJobQuestion": "Kezd vagy távozik?",
+  "lifeVariantBuy": "Vettem",
+  "lifeVariantSell": "Eladtam",
+  "lifeVariantStart": "Kezdek",
+  "lifeVariantLeave": "Távozom",
+  "lifeTaskRedirectPost": "Kérje a posta átirányítását az új címre",
+  "lifeTaskNewAddressEveryone": "Adja meg az új címét a munkáltatónak, az adóhivatalnak, az orvosnak és az iskolának",
+  "lifeTaskMoveUtilities": "Mondja fel vagy írassa át az áram-, víz- és internetszerződést",
+  "lifeTaskMeterReadings": "A kiköltözés napján olvassa le és fotózza le a mérőórákat",
+  "lifeTaskSaveHomePapers": "Adjon hozzá fotót az adásvételi vagy átruházási iratokról a Vaultarához",
+  "lifeTaskHandOverKeys": "Adja át a kulcsokat, távirányítókat és belépőket",
+  "lifeTaskOfficialNameProof": "Először szerezzen hivatalos igazolást az új nevéről. A legtöbb hivatal kéri.",
+  "lifeTaskTellNameChange": "Értesítse a bankot, a munkáltatót, az orvost és az adóhivatalt az új nevéről",
+  "lifeTaskUpdateOnlineAccounts": "Módosítsa a nevét az e-mailben, a telefonon és az online fiókokban",
+  "lifeTaskSaveMarriageCertificate": "Adjon hozzá fotót a házassági anyakönyvi kivonatról a Vaultarához",
+  "lifeTaskCheckBeneficiaries": "Ellenőrizze, ki a kedvezményezett a szerződésein és számláin",
+  "lifeTaskUpdateWill": "Készítsen vagy frissítsen végrendeletet",
+  "lifeTaskSaveDivorceOrder": "Adjon hozzá fotót a jogerős válási ítéletről a Vaultarához",
+  "lifeTaskSplitSharedAccounts": "Zárja le vagy ossza fel a közös számlákat, és változtassa meg a közös jelszavakat",
+  "lifeTaskRegisterBirth": "Anyakönyveztesse a születést, és kérje ki a születési anyakönyvi kivonatot",
+  "lifeTaskAddBabyToFamily": "Adja hozzá a babát a Családhoz, hogy követni lehessen az iratait",
+  "lifeTaskCarRegisterInName": "Írassa át az autót a nevére a törvényes határidőn belül",
+  "lifeTaskCarSavePapers": "Adjon hozzá fotót az adásvételi szerződésről a Vaultarához",
+  "lifeTaskCarNotifySale": "Jelentse az okmányirodának, hogy eladta az autót, és őrizze meg az igazolást",
+  "lifeTaskCarRemoveTags": "Vegye ki az útdíj-eszközöket, parkolókártyákat és személyes holmikat",
+  "lifeTaskJobGiveDetails": "Adja meg az új munkáltatónak a bankszámlaszámát és adóazonosítóját",
+  "lifeTaskJobJoinBenefits": "Csatlakozzon a munkáltató egészségbiztosításához és nyugdíjprogramjához",
+  "lifeTaskJobReturnItems": "Adja vissza a munkahelyi eszközöket, például laptopot, kártyát, kulcsokat",
+  "lifeTaskJobLastPayslip": "Kérje el az utolsó bérjegyzéket és egy igazolást a munkaviszony idejéről",
+  "lifeTaskJobAskBenefits": "Kérdezze meg, mi lesz az egészségbiztosításával és nyugdíjával",
+  "lifeTaskJobUnemployment": "Érdeklődjön most az álláskeresési járadékról. A kérelmeknek gyakran határideje van.",
+  "lifeTaskJobPauseDebits": "Írja össze a csoportos beszedéseket és előfizetéseket, és szüneteltesse, amit tud",
+  "lifeTaskStudySaveLetters": "Adjon hozzá fotókat a felvételi levélről és a díjértesítőkről a Vaultarához",
+  "lifeTaskStudyFunding": "Ellenőrizze az ösztöndíjak, hitelek és egyéb támogatások határidejét",
+  "lifeTaskRetirePension": "Kérdezze meg, hogyan és mikor folyósítják a nyugdíját",
+  "lifeTaskRetireOwnCover": "Intézzen saját egészségbiztosítást, ha a munkahelyi megszűnik",
+  "lifeTaskCountryTellBankTax": "Értesítse a bankot és az adóhivatalt, hogy elköltözik",
+  "lifeTaskCountryScanCopies": "Adjon hozzá fotót minden fontos iratról a Vaultarához",
+  "lifeTaskCountryLicenceRules": "Nézze meg, kell-e cserélnie a jogosítványát",
+  "lifeTaskChildOwnId": "Segítsen neki saját személyi igazolványt igényelni, ha kell",
+  "lifeTaskChildBankAccount": "Segítsen neki saját bankszámlát nyitni",
+  "lifeTaskDeathCertificates": "Szerezzen néhány hitelesített másolatot a halotti anyakönyvi kivonatról",
+  "lifeTaskDeathTellOrganisations": "Értesítse a bankot, a biztosítókat és a munkáltatót",
+  "lifeTaskDeathFindWill": "Keresse meg a végrendeletet, és vegye fel a kapcsolatot a végrehajtóval",
+  "lifeTaskDeathStopReminders": "Ha készen áll, kapcsolja ki az emlékeztetőket a bejegyzéseire",
+  "lifeTaskPhoneBlockSim": "Hívja a szolgáltatóját, és tiltassa le a SIM-kártyát. Ez megállítja a SIM-csalást.",
+  "lifeTaskPhoneBlockBanking": "Hívja a bankját, és tiltassa le a telefonos bankolást",
+  "lifeTaskPhoneLockErase": "Zárja le vagy törölje a telefont egy másik eszközről",
+  "lifeTaskPhoneChangePasswords": "Változtassa meg az e-mail és a közösségi média jelszavait",
+  "lifeTaskReportToPolice": "Tegyen feljelentést a rendőrségen, és őrizze meg az ügyszámot",
+  "lifeTaskDisasterSafePlace": "Győződjön meg róla, hogy mindenki biztonságban van és van hol laknia",
+  "lifeTaskDisasterPhotos": "Fotózza le a károkat, mielőtt rendet rak",
+  "lifeTaskDisasterContactInsurer": "Minél előbb keresse meg a biztosítóját",
+  "lifeTaskDisasterProofPack": "Küldje el az iratai másolatát az Igazolási csomaggal",
+  "lifeTaskParentFindPapers": "Derítse ki, hol tartja a fontos iratait",
+  "lifeTaskParentPermission": "Kérdezze meg, intézkedhet-e a nevében a banknál, az orvosnál és a biztosítónál",
+  "lifeTaskParentMedicines": "Vezessen listát a gyógyszereiről és orvosairól",
+  "lifePlanDoClaim": "Kárigény bejelentése",
+  "lifePlanStatusClaimed": "Bejelentve",
+  "lifePlanStartBy": "{weeks, plural, one{Kezdje el {date}-ig. Egy új általában körülbelül {weeks} hetet vesz igénybe.} other{Kezdje el {date}-ig. Egy új általában körülbelül {weeks} hetet vesz igénybe.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Kezdje el most. Egy új általában körülbelül {weeks} hetet vesz igénybe.} other{Kezdje el most. Egy új általában körülbelül {weeks} hetet vesz igénybe.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Az ön terve",
+  "lifePlanWhenHappened": "Mikor történt?",
+  "lifePlanReminderNudge": "A tervében még van teendő. Nyissa meg, amikor lesz egy perce.",
+  "lifePlanReminderCheckIn": "Megérkeztek az új kártyái és iratai? Nyissa meg a tervet, és ellenőrizze.",
+  "lifePlanDoFirst": "Ezt tegye meg először",
+  "lifePlanSteps": "További lépések",
+  "lifePlanAddOwnStep": "Saját lépés hozzáadása",
+  "lifePlanOwnStepHint": "Például: Szólni az iskolának",
+  "lifePlanOwnStepLimit": "Legfeljebb 20 saját lépést adhat hozzá.",
+  "lifePlanReadAloud": "Felolvasás",
+  "lifePlanStopReading": "Felolvasás leállítása",
+  "lifePlanReadAloudUnavailable": "A felolvasás nem érhető el ezen a telefonon.",
+  "lifePlanProofPack": "Igazolási csomag készítése",
+  "lifePlanOpenFamily": "Család megnyitása",
+  "lifePlanRemoved": "{count, plural, one{{count} törölt bejegyzés megszüntetettnek számít.} other{{count} törölt bejegyzés megszüntetettnek számít.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Ezek megújítása általában körülbelül {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Új otthonba költözik? Nézze meg, mit kell még frissítenie."
 }

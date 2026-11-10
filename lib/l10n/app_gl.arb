@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "Aínda quedan cousas por facer. Abre o plan para rematalas.",
   "lifePlanSuggestCar": "Mercaches ou vendiches un coche? Mira que máis hai que actualizar.",
   "lifePlanSuggestTrip": "Vas vivir alí unha tempada?",
-  "lifePlanSuggestTripBody": "Comeza un plan para mudarte a outro país. Vaultara amosa o que resolver antes de marchar."
+  "lifePlanSuggestTripBody": "Comeza un plan para mudarte a outro país. Vaultara amosa o que resolver antes de marchar.",
+  "lifeGroupHome": "Fogar",
+  "lifeGroupFamily": "Familia",
+  "lifeGroupWork": "Traballo e estudos",
+  "lifeGroupCarTravel": "Coche e viaxes",
+  "lifeGroupEmergency": "Algo saíu mal",
+  "lifeEventCarBuy": "Comprei un coche",
+  "lifeEventCarBuyBody": "Contrata o seguro antes de levalo para a casa e despois pon o coche ao teu nome.",
+  "lifeEventCarSell": "Vendín un coche",
+  "lifeEventCarSellBody": "Comunica a venda á oficina de tráfico e cancela o seguro cando o coche xa non sexa teu.",
+  "lifeEventJobStart": "Comezo un traballo novo",
+  "lifeEventJobStartBody": "Revisa os permisos antes de comezar e despois configura a tarxeta de traballo e os beneficios.",
+  "lifeEventJobLeave": "Deixo o meu traballo",
+  "lifeEventJobLeaveBody": "Devolve o material de traballo e comproba que pasa coa cobertura que che daba o emprego.",
+  "lifeEventLostPhone": "Perdín o móbil ou roubáronmo",
+  "lifeEventLostPhoneBody": "Actúa rápido. Quen teña o teu móbil e a túa SIM pode entrar no teu banco e no teu correo. Fai os primeiros pasos agora mesmo.",
+  "lifeEventJobLoss": "Perdín o traballo",
+  "lifeEventJobLossBody": "É difícil. Vai paso a paso. Algunhas solicitudes teñen prazo, así que comeza por elas.",
+  "lifeEventDisaster": "Incendio, inundación ou roubo na casa",
+  "lifeEventDisasterBody": "Primeiro asegúrate de que todos están ben. Despois fai fotos, contacta coa aseguradora e substitúe o que se perdeu.",
+  "lifeEventCaringParent": "Coido do meu pai ou da miña nai",
+  "lifeEventCaringParentBody": "Escolle a persoa que coidas. Revisa os seus documentos e a súa cobertura e ten a man o que necesites.",
+  "lifeVariantCarQuestion": "Compraches ou vendiches?",
+  "lifeVariantJobQuestion": "Comezas ou vaste?",
+  "lifeVariantBuy": "Comprado",
+  "lifeVariantSell": "Vendido",
+  "lifeVariantStart": "Comezo",
+  "lifeVariantLeave": "Vóume",
+  "lifeTaskRedirectPost": "Pide que che reenvíen o correo ao novo enderezo",
+  "lifeTaskNewAddressEveryone": "Dálle o novo enderezo á empresa, a Facenda, ao médico e á escola",
+  "lifeTaskMoveUtilities": "Dá de baixa ou traslada a luz, a auga e internet",
+  "lifeTaskMeterReadings": "Anota as lecturas dos contadores e fai fotos o día que marches",
+  "lifeTaskSaveHomePapers": "Engade unha foto dos papeis de venda ou traspaso a Vaultara",
+  "lifeTaskHandOverKeys": "Entrega as chaves, os mandos e as tarxetas de acceso",
+  "lifeTaskOfficialNameProof": "Primeiro consegue unha proba oficial do novo nome. A maioría das oficinas pídena.",
+  "lifeTaskTellNameChange": "Comunica o novo nome ao banco, á empresa, ao médico e a Facenda",
+  "lifeTaskUpdateOnlineAccounts": "Cambia o nome no correo, no móbil e nas contas en liña",
+  "lifeTaskSaveMarriageCertificate": "Engade unha foto do certificado de matrimonio a Vaultara",
+  "lifeTaskCheckBeneficiaries": "Revisa quen figura como beneficiario nas túas pólizas e contas",
+  "lifeTaskUpdateWill": "Fai ou actualiza o testamento",
+  "lifeTaskSaveDivorceOrder": "Engade unha foto da sentenza firme de divorcio a Vaultara",
+  "lifeTaskSplitSharedAccounts": "Pecha ou divide as contas compartidas e cambia os contrasinais compartidos",
+  "lifeTaskRegisterBirth": "Inscribe o nacemento e obtén o certificado de nacemento",
+  "lifeTaskAddBabyToFamily": "Engade o bebé en Familia para seguir os seus documentos",
+  "lifeTaskCarRegisterInName": "Pon o coche ao teu nome dentro do prazo legal",
+  "lifeTaskCarSavePapers": "Engade unha foto do contrato de compravenda a Vaultara",
+  "lifeTaskCarNotifySale": "Comunica á oficina de tráfico que vendiches o coche e garda o xustificante",
+  "lifeTaskCarRemoveTags": "Quita os dispositivos de peaxe, as tarxetas de aparcamento e as túas cousas",
+  "lifeTaskJobGiveDetails": "Dálle os teus datos bancarios e o número fiscal á nova empresa",
+  "lifeTaskJobJoinBenefits": "Apúntate ao seguro médico e ao plan de pensións que ofrece a empresa",
+  "lifeTaskJobReturnItems": "Devolve o material de traballo, como o portátil, a tarxeta ou as chaves",
+  "lifeTaskJobLastPayslip": "Pide a última nómina e unha carta que confirme as datas de traballo",
+  "lifeTaskJobAskBenefits": "Pregunta que pasa co teu seguro médico e coa túa pensión",
+  "lifeTaskJobUnemployment": "Infórmate xa sobre a prestación por desemprego. As solicitudes adoitan ter prazo.",
+  "lifeTaskJobPauseDebits": "Fai unha lista de domiciliacións e subscricións e pausa o que poidas",
+  "lifeTaskStudySaveLetters": "Engade fotos da carta de admisión e dos recibos de matrícula a Vaultara",
+  "lifeTaskStudyFunding": "Revisa os prazos de bolsas, préstamos ou outras axudas",
+  "lifeTaskRetirePension": "Pregunta como e cando se pagará a túa pensión",
+  "lifeTaskRetireOwnCover": "Contrata o teu propio seguro médico se remata o do traballo",
+  "lifeTaskCountryTellBankTax": "Comunica ao banco e a Facenda que marchas",
+  "lifeTaskCountryScanCopies": "Engade unha foto de cada documento importante a Vaultara",
+  "lifeTaskCountryLicenceRules": "Comproba se tes que trocar o permiso de conducir",
+  "lifeTaskChildOwnId": "Axúdao a solicitar o seu propio documento de identidade se o precisa",
+  "lifeTaskChildBankAccount": "Axúdao a abrir a súa propia conta bancaria",
+  "lifeTaskDeathCertificates": "Consegue varias copias certificadas do certificado de defunción",
+  "lifeTaskDeathTellOrganisations": "Avisa ao banco, ás aseguradoras e á empresa",
+  "lifeTaskDeathFindWill": "Busca o testamento e contacta co albacea",
+  "lifeTaskDeathStopReminders": "Cando esteas preparado, desactiva os recordatorios dos seus rexistros",
+  "lifeTaskPhoneBlockSim": "Chama ao teu operador para bloquear a SIM. Así evítase a fraude por duplicado de SIM.",
+  "lifeTaskPhoneBlockBanking": "Chama ao banco para bloquear a banca no móbil",
+  "lifeTaskPhoneLockErase": "Bloquea ou borra o móbil desde outro dispositivo",
+  "lifeTaskPhoneChangePasswords": "Cambia os contrasinais do correo e das redes sociais",
+  "lifeTaskReportToPolice": "Denúncialo á policía e garda o número da denuncia",
+  "lifeTaskDisasterSafePlace": "Asegúrate de que todos están ben e teñen onde quedar",
+  "lifeTaskDisasterPhotos": "Fai fotos dos danos antes de limpar",
+  "lifeTaskDisasterContactInsurer": "Contacta coa aseguradora canto antes",
+  "lifeTaskDisasterProofPack": "Envía copias dos teus documentos co Paquete de probas",
+  "lifeTaskParentFindPapers": "Descobre onde garda os papeis importantes",
+  "lifeTaskParentPermission": "Pregunta se podes falar no seu nome co banco, o médico e a aseguradora",
+  "lifeTaskParentMedicines": "Ten unha lista dos seus medicamentos e médicos",
+  "lifePlanDoClaim": "Fai unha reclamación",
+  "lifePlanStatusClaimed": "Reclamado",
+  "lifePlanStartBy": "{weeks, plural, =1{Comeza antes do {date}. Un novo adoita tardar unha semana.} other{Comeza antes do {date}. Un novo adoita tardar unhas {weeks} semanas.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Comeza xa. Un novo adoita tardar unha semana.} other{Comeza xa. Un novo adoita tardar unhas {weeks} semanas.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "O teu plan",
+  "lifePlanWhenHappened": "Cando ocorreu?",
+  "lifePlanReminderNudge": "O teu plan aínda ten cousas pendentes. Ábreo cando teñas un momento.",
+  "lifePlanReminderCheckIn": "Chegaron as novas tarxetas e documentos? Abre o plan para comprobalo.",
+  "lifePlanDoFirst": "Fai isto primeiro",
+  "lifePlanSteps": "Outros pasos",
+  "lifePlanAddOwnStep": "Engadir un paso propio",
+  "lifePlanOwnStepHint": "Por exemplo: Avisar á escola",
+  "lifePlanOwnStepLimit": "Podes engadir ata 20 pasos propios.",
+  "lifePlanReadAloud": "Ler en voz alta",
+  "lifePlanStopReading": "Deixar de ler",
+  "lifePlanReadAloudUnavailable": "A lectura en voz alta non está dispoñible neste móbil.",
+  "lifePlanProofPack": "Crear un paquete de probas",
+  "lifePlanOpenFamily": "Abrir Familia",
+  "lifePlanRemoved": "{count, plural, =1{1 rexistro que borraches conta como cancelado.} other{{count} rexistros que borraches contan como cancelados.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Renovalos adoita custar uns {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Múdaste a unha casa nova? Mira que máis debes actualizar."
 }

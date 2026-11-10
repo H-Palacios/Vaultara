@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Dar kai kas liko. Atidarykite planą ir užbaikite.",
   "lifePlanSuggestCar": "Pirkote ar pardavėte automobilį? Pažiūrėkite, ką dar atnaujinti.",
   "lifePlanSuggestTrip": "Kraustotės ten kuriam laikui?",
-  "lifePlanSuggestTripBody": "Pradėkite persikraustymo į kitą šalį planą. Vaultara parodo, ką sutvarkyti prieš išvykstant."
+  "lifePlanSuggestTripBody": "Pradėkite persikraustymo į kitą šalį planą. Vaultara parodo, ką sutvarkyti prieš išvykstant.",
+  "lifeGroupHome": "Namai",
+  "lifeGroupFamily": "Šeima",
+  "lifeGroupWork": "Darbas ir studijos",
+  "lifeGroupCarTravel": "Automobilis ir kelionės",
+  "lifeGroupEmergency": "Kažkas nutiko",
+  "lifeEventCarBuy": "Nusipirkau automobilį",
+  "lifeEventCarBuyBody": "Apdrauskite jį prieš parvažiuodami namo, tada perregistruokite automobilį savo vardu.",
+  "lifeEventCarSell": "Pardaviau automobilį",
+  "lifeEventCarSellBody": "Praneškite apie pardavimą registracijos įstaigai ir nutraukite draudimą, kai automobilis nebebus jūsų.",
+  "lifeEventJobStart": "Pradedu naują darbą",
+  "lifeEventJobStartBody": "Prieš pradėdami patikrinkite leidimus, tada susitvarkykite darbo kortelę ir naudas.",
+  "lifeEventJobLeave": "Išeinu iš darbo",
+  "lifeEventJobLeaveBody": "Grąžinkite darbo daiktus ir patikrinkite, kas bus su draudimu, kurį suteikė darbas.",
+  "lifeEventLostPhone": "Pamečiau telefoną arba jį pavogė",
+  "lifeEventLostPhoneBody": "Veikite greitai. Kas turi jūsų telefoną ir SIM kortelę, gali patekti į jūsų banką ir el. paštą. Pirmus žingsnius atlikite iš karto.",
+  "lifeEventJobLoss": "Netekau darbo",
+  "lifeEventJobLossBody": "Tai sunku. Eikite po vieną žingsnį. Kai kurie prašymai turi terminą, tad pradėkite nuo jų.",
+  "lifeEventDisaster": "Gaisras, potvynis ar įsilaužimas namuose",
+  "lifeEventDisasterBody": "Pirmiausia įsitikinkite, kad visi saugūs. Tada fotografuokite, susisiekite su draudiku ir atkurkite tai, kas prarasta.",
+  "lifeEventCaringParent": "Rūpinuosi vienu iš tėvų",
+  "lifeEventCaringParentBody": "Pasirinkite žmogų, kuriuo rūpinatės. Patikrinkite jo dokumentus ir draudimą ir laikykite reikalingus dalykus po ranka.",
+  "lifeVariantCarQuestion": "Pirkote ar pardavėte?",
+  "lifeVariantJobQuestion": "Pradedate ar išeinate?",
+  "lifeVariantBuy": "Pirkau",
+  "lifeVariantSell": "Pardaviau",
+  "lifeVariantStart": "Pradedu",
+  "lifeVariantLeave": "Išeinu",
+  "lifeTaskRedirectPost": "Paprašykite peradresuoti paštą naujuoju adresu",
+  "lifeTaskNewAddressEveryone": "Duokite naują adresą darbdaviui, mokesčių inspekcijai, gydytojui ir mokyklai",
+  "lifeTaskMoveUtilities": "Nutraukite arba perkelkite elektros, vandens ir interneto sutartis",
+  "lifeTaskMeterReadings": "Išsikraustymo dieną užrašykite skaitiklių rodmenis ir nufotografuokite",
+  "lifeTaskSaveHomePapers": "Pridėkite pardavimo ar perleidimo dokumentų nuotrauką į Vaultara",
+  "lifeTaskHandOverKeys": "Perduokite raktus, pultelius ir prieigos korteles",
+  "lifeTaskOfficialNameProof": "Pirmiausia gaukite oficialų naujo vardo įrodymą. Dauguma įstaigų jo prašo.",
+  "lifeTaskTellNameChange": "Praneškite apie naują vardą bankui, darbdaviui, gydytojui ir mokesčių inspekcijai",
+  "lifeTaskUpdateOnlineAccounts": "Pakeiskite vardą el. pašte, telefone ir internetinėse paskyrose",
+  "lifeTaskSaveMarriageCertificate": "Pridėkite santuokos liudijimo nuotrauką į Vaultara",
+  "lifeTaskCheckBeneficiaries": "Patikrinkite, kas nurodytas naudos gavėju jūsų polisuose ir sąskaitose",
+  "lifeTaskUpdateWill": "Sudarykite arba atnaujinkite testamentą",
+  "lifeTaskSaveDivorceOrder": "Pridėkite galutinio sprendimo dėl skyrybų nuotrauką į Vaultara",
+  "lifeTaskSplitSharedAccounts": "Uždarykite arba padalykite bendras sąskaitas ir pakeiskite bendrus slaptažodžius",
+  "lifeTaskRegisterBirth": "Įregistruokite gimimą ir gaukite gimimo liudijimą",
+  "lifeTaskAddBabyToFamily": "Pridėkite kūdikį prie Šeimos, kad būtų sekami jo dokumentai",
+  "lifeTaskCarRegisterInName": "Perregistruokite automobilį savo vardu per įstatymo nustatytą laiką",
+  "lifeTaskCarSavePapers": "Pridėkite pirkimo–pardavimo sutarties nuotrauką į Vaultara",
+  "lifeTaskCarNotifySale": "Praneškite registracijos įstaigai, kad pardavėte automobilį, ir pasilikite įrodymą",
+  "lifeTaskCarRemoveTags": "Išimkite kelių mokesčių įrenginius, stovėjimo korteles ir asmeninius daiktus",
+  "lifeTaskJobGiveDetails": "Duokite naujam darbdaviui banko duomenis ir mokesčių numerį",
+  "lifeTaskJobJoinBenefits": "Prisijunkite prie darbdavio siūlomo sveikatos draudimo ir pensijos",
+  "lifeTaskJobReturnItems": "Grąžinkite darbo daiktus, pvz., nešiojamąjį kompiuterį, kortelę ar raktus",
+  "lifeTaskJobLastPayslip": "Paprašykite paskutinio atlyginimo lapelio ir pažymos apie darbo laikotarpį",
+  "lifeTaskJobAskBenefits": "Paklauskite, kas bus su sveikatos draudimu ir pensija",
+  "lifeTaskJobUnemployment": "Dabar pasiteiraukite apie nedarbo išmoką. Prašymai dažnai turi terminą.",
+  "lifeTaskJobPauseDebits": "Surašykite tiesioginio debeto mokėjimus ir prenumeratas ir sustabdykite, ką galite",
+  "lifeTaskStudySaveLetters": "Pridėkite priėmimo laiško ir mokesčių išrašų nuotraukas į Vaultara",
+  "lifeTaskStudyFunding": "Patikrinkite stipendijų, paskolų ar kitos paramos terminus",
+  "lifeTaskRetirePension": "Paklauskite, kaip ir kada bus mokama pensija",
+  "lifeTaskRetireOwnCover": "Pasirūpinkite savo sveikatos draudimu, jei darbo draudimas baigiasi",
+  "lifeTaskCountryTellBankTax": "Praneškite bankui ir mokesčių inspekcijai, kad išvykstate",
+  "lifeTaskCountryScanCopies": "Pridėkite kiekvieno svarbaus dokumento nuotrauką į Vaultara",
+  "lifeTaskCountryLicenceRules": "Patikrinkite, ar reikia pasikeisti vairuotojo pažymėjimą",
+  "lifeTaskChildOwnId": "Padėkite jam pateikti prašymą asmens tapatybės kortelei, jei reikia",
+  "lifeTaskChildBankAccount": "Padėkite jam atidaryti savo banko sąskaitą",
+  "lifeTaskDeathCertificates": "Gaukite kelias patvirtintas mirties liudijimo kopijas",
+  "lifeTaskDeathTellOrganisations": "Praneškite bankui, draudikams ir darbdaviui",
+  "lifeTaskDeathFindWill": "Suraskite testamentą ir susisiekite su vykdytoju",
+  "lifeTaskDeathStopReminders": "Kai būsite pasiruošę, išjunkite jo įrašų priminimus",
+  "lifeTaskPhoneBlockSim": "Paskambinkite operatoriui ir užblokuokite SIM kortelę. Tai sustabdo SIM keitimo sukčiavimą.",
+  "lifeTaskPhoneBlockBanking": "Paskambinkite į banką ir užblokuokite bankininkystę telefone",
+  "lifeTaskPhoneLockErase": "Užrakinkite arba ištrinkite telefoną iš kito įrenginio",
+  "lifeTaskPhoneChangePasswords": "Pakeiskite el. pašto ir socialinių tinklų slaptažodžius",
+  "lifeTaskReportToPolice": "Praneškite policijai ir pasilikite bylos numerį",
+  "lifeTaskDisasterSafePlace": "Įsitikinkite, kad visi saugūs ir turi kur apsistoti",
+  "lifeTaskDisasterPhotos": "Prieš tvarkydami nufotografuokite žalą",
+  "lifeTaskDisasterContactInsurer": "Kuo greičiau susisiekite su draudiku",
+  "lifeTaskDisasterProofPack": "Išsiųskite dokumentų kopijas su Įrodymų paketu",
+  "lifeTaskParentFindPapers": "Sužinokite, kur laikomi jo svarbūs dokumentai",
+  "lifeTaskParentPermission": "Paklauskite, ar galite jo vardu kalbėti su banku, gydytoju ir draudiku",
+  "lifeTaskParentMedicines": "Turėkite jo vaistų ir gydytojų sąrašą",
+  "lifePlanDoClaim": "Pateikti pretenziją",
+  "lifePlanStatusClaimed": "Pretenzija pateikta",
+  "lifePlanStartBy": "{weeks, plural, one{Pradėkite iki {date}. Naujas paprastai užtrunka apie {weeks} savaitę.} few{Pradėkite iki {date}. Naujas paprastai užtrunka apie {weeks} savaites.} many{Pradėkite iki {date}. Naujas paprastai užtrunka apie {weeks} savaitės.} other{Pradėkite iki {date}. Naujas paprastai užtrunka apie {weeks} savaičių.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Pradėkite dabar. Naujas paprastai užtrunka apie {weeks} savaitę.} few{Pradėkite dabar. Naujas paprastai užtrunka apie {weeks} savaites.} many{Pradėkite dabar. Naujas paprastai užtrunka apie {weeks} savaitės.} other{Pradėkite dabar. Naujas paprastai užtrunka apie {weeks} savaičių.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Jūsų planas",
+  "lifePlanWhenHappened": "Kada tai nutiko?",
+  "lifePlanReminderNudge": "Jūsų plane dar yra darbų. Atidarykite jį, kai turėsite minutę.",
+  "lifePlanReminderCheckIn": "Ar atkeliavo naujos kortelės ir dokumentai? Atidarykite planą ir patikrinkite.",
+  "lifePlanDoFirst": "Pirmiausia padarykite tai",
+  "lifePlanSteps": "Kiti žingsniai",
+  "lifePlanAddOwnStep": "Pridėti savo žingsnį",
+  "lifePlanOwnStepHint": "Pavyzdžiui: Pranešti mokyklai",
+  "lifePlanOwnStepLimit": "Galite pridėti iki 20 savo žingsnių.",
+  "lifePlanReadAloud": "Skaityti garsiai",
+  "lifePlanStopReading": "Sustabdyti skaitymą",
+  "lifePlanReadAloudUnavailable": "Šiame telefone skaitymas garsiai nepasiekiamas.",
+  "lifePlanProofPack": "Sukurti įrodymų paketą",
+  "lifePlanOpenFamily": "Atidaryti Šeimą",
+  "lifePlanRemoved": "{count, plural, one{{count} jūsų ištrintas įrašas laikomas nutrauktu.} few{{count} jūsų ištrinti įrašai laikomi nutrauktais.} many{{count} jūsų ištrinto įrašo laikoma nutrauktais.} other{{count} jūsų ištrintų įrašų laikoma nutrauktais.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Jų atnaujinimas paprastai kainuoja apie {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Kraustotės į naujus namus? Pažiūrėkite, ką dar reikia atnaujinti."
 }

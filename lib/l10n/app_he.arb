@@ -2154,5 +2154,136 @@
   "lifePlanReminderAfter": "עדיין נשארו דברים לעשות. פתחו את התוכנית כדי לסיים אותם.",
   "lifePlanSuggestCar": "קניתם או מכרתם רכב? ראו מה עוד צריך לעדכן.",
   "lifePlanSuggestTrip": "עוברים לשם לזמן מה?",
-  "lifePlanSuggestTripBody": "התחילו תוכנית למעבר למדינה אחרת. Vaultara מראה מה לסדר לפני היציאה."
+  "lifePlanSuggestTripBody": "התחילו תוכנית למעבר למדינה אחרת. Vaultara מראה מה לסדר לפני היציאה.",
+  "lifeGroupHome": "בית",
+  "lifeGroupFamily": "משפחה",
+  "lifeGroupWork": "עבודה ולימודים",
+  "lifeGroupCarTravel": "רכב ונסיעות",
+  "lifeGroupEmergency": "משהו השתבש",
+  "lifeEventCarBuy": "קניתי רכב",
+  "lifeEventCarBuyBody": "עשו ביטוח לפני שאתם נוסעים בו הביתה, ואז העבירו את הרכב על שמכם.",
+  "lifeEventCarSell": "מכרתי רכב",
+  "lifeEventCarSellBody": "דווחו על המכירה למשרד הרישוי ובטלו את הביטוח כשהרכב כבר לא שלכם.",
+  "lifeEventJobStart": "אני מתחיל עבודה חדשה",
+  "lifeEventJobStartBody": "בדקו את ההיתרים לפני שמתחילים, ואז סדרו כרטיס עובד והטבות.",
+  "lifeEventJobLeave": "אני עוזב את העבודה",
+  "lifeEventJobLeaveBody": "החזירו ציוד עבודה ובדקו מה קורה לכיסוי שהעבודה נתנה לכם.",
+  "lifeEventLostPhone": "הטלפון שלי אבד או נגנב",
+  "lifeEventLostPhoneBody": "פעלו מהר. מי שמחזיק בטלפון ובכרטיס ה-SIM שלכם יכול להיכנס לבנק ולמייל. עשו את הצעדים הראשונים מיד.",
+  "lifeEventJobLoss": "איבדתי את העבודה",
+  "lifeEventJobLossBody": "זה קשה. קחו צעד אחד בכל פעם. לחלק מהתביעות יש מועד אחרון, אז התחילו בהן.",
+  "lifeEventDisaster": "שריפה, הצפה או פריצה בבית",
+  "lifeEventDisasterBody": "קודם ודאו שכולם בטוחים. אחר כך צלמו, פנו לחברת הביטוח והחליפו את מה שאבד.",
+  "lifeEventCaringParent": "אני מטפל בהורה",
+  "lifeEventCaringParentBody": "בחרו את האדם שבו אתם מטפלים. בדקו את המסמכים והכיסוי שלו, ושמרו את מה שצריך בהישג יד.",
+  "lifeVariantCarQuestion": "קניתם או מכרתם?",
+  "lifeVariantJobQuestion": "מתחילים או עוזבים?",
+  "lifeVariantBuy": "קניתי",
+  "lifeVariantSell": "מכרתי",
+  "lifeVariantStart": "מתחיל",
+  "lifeVariantLeave": "עוזב",
+  "lifeTaskRedirectPost": "בקשו שהדואר יישלח לכתובת החדשה",
+  "lifeTaskNewAddressEveryone": "מסרו את הכתובת החדשה למעסיק, למס הכנסה, לרופא ולבית הספר",
+  "lifeTaskMoveUtilities": "סגרו או העבירו את חשבונות החשמל, המים והאינטרנט",
+  "lifeTaskMeterReadings": "רשמו קריאות מונים וצלמו ביום שאתם עוזבים",
+  "lifeTaskSaveHomePapers": "הוסיפו ל-Vaultara תמונה של מסמכי המכירה או ההעברה",
+  "lifeTaskHandOverKeys": "מסרו מפתחות, שלטים ותגי כניסה",
+  "lifeTaskOfficialNameProof": "קודם השיגו אישור רשמי על השם החדש. רוב המשרדים מבקשים אותו.",
+  "lifeTaskTellNameChange": "עדכנו את הבנק, המעסיק, הרופא ומס הכנסה על השם החדש",
+  "lifeTaskUpdateOnlineAccounts": "שנו את השם במייל, בטלפון ובחשבונות המקוונים",
+  "lifeTaskSaveMarriageCertificate": "הוסיפו ל-Vaultara תמונה של תעודת הנישואין",
+  "lifeTaskCheckBeneficiaries": "בדקו מי רשום כמוטב בפוליסות ובחשבונות שלכם",
+  "lifeTaskUpdateWill": "כתבו או עדכנו צוואה",
+  "lifeTaskSaveDivorceOrder": "הוסיפו ל-Vaultara תמונה של פסק הדין הסופי לגירושין",
+  "lifeTaskSplitSharedAccounts": "סגרו או חלקו חשבונות משותפים ושנו סיסמאות משותפות",
+  "lifeTaskRegisterBirth": "רשמו את הלידה וקבלו תעודת לידה",
+  "lifeTaskAddBabyToFamily": "הוסיפו את התינוק במשפחה כדי לעקוב אחרי המסמכים שלו",
+  "lifeTaskCarRegisterInName": "העבירו את הרכב על שמכם בזמן שהחוק מאפשר",
+  "lifeTaskCarSavePapers": "הוסיפו ל-Vaultara תמונה של הסכם המכירה",
+  "lifeTaskCarNotifySale": "דווחו למשרד הרישוי שמכרתם את הרכב ושמרו את האישור",
+  "lifeTaskCarRemoveTags": "הסירו תגי אגרה, כרטיסי חניה וחפצים אישיים",
+  "lifeTaskJobGiveDetails": "מסרו למעסיק החדש את פרטי הבנק ומספר תיק המס",
+  "lifeTaskJobJoinBenefits": "הצטרפו לביטוח הבריאות והפנסיה שהמעסיק מציע",
+  "lifeTaskJobReturnItems": "החזירו ציוד עבודה כמו מחשב נייד, כרטיס או מפתחות",
+  "lifeTaskJobLastPayslip": "בקשו את תלוש השכר האחרון ומכתב שמאשר את תאריכי העבודה",
+  "lifeTaskJobAskBenefits": "שאלו מה קורה לביטוח הבריאות ולפנסיה שלכם",
+  "lifeTaskJobUnemployment": "בררו עכשיו לגבי דמי אבטלה. לתביעות יש לעיתים קרובות מועד אחרון.",
+  "lifeTaskJobPauseDebits": "רשמו את הוראות הקבע והמנויים, והקפיאו מה שאפשר",
+  "lifeTaskStudySaveLetters": "הוסיפו ל-Vaultara תמונות של מכתב הקבלה ודפי שכר הלימוד",
+  "lifeTaskStudyFunding": "בדקו מועדים למלגות, הלוואות או מימון אחר",
+  "lifeTaskRetirePension": "שאלו איך ומתי תשולם הפנסיה",
+  "lifeTaskRetireOwnCover": "סדרו ביטוח בריאות משלכם אם הביטוח מהעבודה מסתיים",
+  "lifeTaskCountryTellBankTax": "הודיעו לבנק ולמס הכנסה שאתם עוזבים",
+  "lifeTaskCountryScanCopies": "הוסיפו ל-Vaultara תמונה של כל מסמך חשוב",
+  "lifeTaskCountryLicenceRules": "בדקו אם צריך להמיר את רישיון הנהיגה",
+  "lifeTaskChildOwnId": "עזרו לו להגיש בקשה לתעודת זהות משלו אם צריך",
+  "lifeTaskChildBankAccount": "עזרו לו לפתוח חשבון בנק משלו",
+  "lifeTaskDeathCertificates": "השיגו כמה עותקים מאושרים של תעודת הפטירה",
+  "lifeTaskDeathTellOrganisations": "עדכנו את הבנק, חברות הביטוח והמעסיק",
+  "lifeTaskDeathFindWill": "מצאו את הצוואה ופנו למנהל העיזבון",
+  "lifeTaskDeathStopReminders": "כשתהיו מוכנים, כבו את התזכורות לרשומות שלו",
+  "lifeTaskPhoneBlockSim": "התקשרו לחברת הסלולר כדי לחסום את כרטיס ה-SIM. זה עוצר הונאת החלפת SIM.",
+  "lifeTaskPhoneBlockBanking": "התקשרו לבנק כדי לחסום את הבנקאות בטלפון",
+  "lifeTaskPhoneLockErase": "נעלו או מחקו את הטלפון ממכשיר אחר",
+  "lifeTaskPhoneChangePasswords": "שנו את הסיסמאות למייל ולרשתות החברתיות",
+  "lifeTaskReportToPolice": "הגישו תלונה במשטרה ושמרו את מספר התיק",
+  "lifeTaskDisasterSafePlace": "ודאו שכולם בטוחים ויש להם איפה לשהות",
+  "lifeTaskDisasterPhotos": "צלמו את הנזק לפני שמנקים",
+  "lifeTaskDisasterContactInsurer": "פנו לחברת הביטוח בהקדם האפשרי",
+  "lifeTaskDisasterProofPack": "שלחו עותקים של המסמכים עם חבילת הוכחות",
+  "lifeTaskParentFindPapers": "בררו איפה נשמרים המסמכים החשובים שלו",
+  "lifeTaskParentPermission": "שאלו אם מותר לכם לדבר בשמו עם הבנק, הרופא וחברת הביטוח",
+  "lifeTaskParentMedicines": "שמרו רשימה של התרופות והרופאים שלו",
+  "lifePlanDoClaim": "הגשת תביעה",
+  "lifePlanStatusClaimed": "נתבע",
+  "lifePlanStartBy": "{weeks, plural, one{התחילו עד {date}. חדש לוקח בדרך כלל כשבוע.} two{התחילו עד {date}. חדש לוקח בדרך כלל כשבועיים.} other{התחילו עד {date}. חדש לוקח בדרך כלל כ-{weeks} שבועות.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{התחילו עכשיו. חדש לוקח בדרך כלל כשבוע.} two{התחילו עכשיו. חדש לוקח בדרך כלל כשבועיים.} other{התחילו עכשיו. חדש לוקח בדרך כלל כ-{weeks} שבועות.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "התוכנית שלך",
+  "lifePlanWhenHappened": "מתי זה קרה?",
+  "lifePlanReminderNudge": "בתוכנית שלך עוד יש דברים לעשות. פתחו אותה כשיש לכם רגע.",
+  "lifePlanReminderCheckIn": "הכרטיסים והמסמכים החדשים הגיעו? פתחו את התוכנית כדי לבדוק.",
+  "lifePlanDoFirst": "עשו את זה קודם",
+  "lifePlanSteps": "צעדים נוספים",
+  "lifePlanAddOwnStep": "הוספת צעד משלך",
+  "lifePlanOwnStepHint": "לדוגמה: לעדכן את בית הספר",
+  "lifePlanOwnStepLimit": "אפשר להוסיף עד 20 צעדים משלך.",
+  "lifePlanReadAloud": "הקראה",
+  "lifePlanStopReading": "עצירת ההקראה",
+  "lifePlanReadAloudUnavailable": "הקראה לא זמינה בטלפון הזה.",
+  "lifePlanProofPack": "יצירת חבילת הוכחות",
+  "lifePlanOpenFamily": "פתיחת משפחה",
+  "lifePlanRemoved": "{count, plural, one{רשומה אחת שמחקת נחשבת כמבוטלת.} two{שתי רשומות שמחקת נחשבות כמבוטלות.} other{{count} רשומות שמחקת נחשבות כמבוטלות.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "חידוש אלה עולה בדרך כלל בערך {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "עוברים לבית חדש? ראו מה עוד צריך לעדכן."
 }

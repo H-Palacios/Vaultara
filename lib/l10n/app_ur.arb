@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "کچھ کام ابھی باقی ہیں۔ انہیں مکمل کرنے کے لیے منصوبہ کھولیں۔",
   "lifePlanSuggestCar": "گاڑی خریدی یا بیچی؟ دیکھیں اور کیا اپ ڈیٹ کرنا ہے۔",
   "lifePlanSuggestTrip": "کچھ عرصے کے لیے وہاں منتقل ہو رہے ہیں؟",
-  "lifePlanSuggestTripBody": "دوسرے ملک منتقل ہونے کا منصوبہ شروع کریں۔ Vaultara دکھاتا ہے کہ جانے سے پہلے کیا طے کرنا ہے۔"
+  "lifePlanSuggestTripBody": "دوسرے ملک منتقل ہونے کا منصوبہ شروع کریں۔ Vaultara دکھاتا ہے کہ جانے سے پہلے کیا طے کرنا ہے۔",
+  "lifeGroupHome": "گھر",
+  "lifeGroupFamily": "خاندان",
+  "lifeGroupWork": "کام اور تعلیم",
+  "lifeGroupCarTravel": "گاڑی اور سفر",
+  "lifeGroupEmergency": "کچھ غلط ہو گیا",
+  "lifeEventCarBuy": "میں نے گاڑی خریدی",
+  "lifeEventCarBuyBody": "گھر لے جانے سے پہلے انشورنس کروائیں، پھر گاڑی اپنے نام کروائیں۔",
+  "lifeEventCarSell": "میں نے گاڑی بیچی",
+  "lifeEventCarSellBody": "فروخت کی اطلاع لائسنس دفتر کو دیں اور گاڑی آپ کی نہ رہنے پر انشورنس منسوخ کریں۔",
+  "lifeEventJobStart": "میں نئی نوکری شروع کر رہا ہوں",
+  "lifeEventJobStartBody": "شروع کرنے سے پہلے اپنے اجازت نامے دیکھیں، پھر ورک کارڈ اور مراعات سیٹ کریں۔",
+  "lifeEventJobLeave": "میں نوکری چھوڑ رہا ہوں",
+  "lifeEventJobLeaveBody": "کام کا سامان واپس کریں اور دیکھیں کہ نوکری سے ملنے والے کور کا کیا ہوگا۔",
+  "lifeEventLostPhone": "میرا فون گم ہو گیا یا چوری ہو گیا",
+  "lifeEventLostPhoneBody": "جلدی کریں۔ جس کے پاس آپ کا فون اور سم کارڈ ہے وہ آپ کے بینک اور ای میل میں جا سکتا ہے۔ پہلے قدم ابھی اٹھائیں۔",
+  "lifeEventJobLoss": "میری نوکری چلی گئی",
+  "lifeEventJobLossBody": "یہ مشکل ہے۔ ایک ایک قدم اٹھائیں۔ کچھ دعووں کی آخری تاریخ ہوتی ہے، ان سے شروع کریں۔",
+  "lifeEventDisaster": "گھر میں آگ، سیلاب یا چوری",
+  "lifeEventDisasterBody": "پہلے یقینی بنائیں کہ سب محفوظ ہیں۔ پھر تصاویر لیں، انشورنس کمپنی سے رابطہ کریں اور جو کھویا اسے دوبارہ بنوائیں۔",
+  "lifeEventCaringParent": "میں والدین میں سے کسی کی دیکھ بھال کر رہا ہوں",
+  "lifeEventCaringParentBody": "جس کی دیکھ بھال کر رہے ہیں اسے منتخب کریں۔ ان کے دستاویزات اور کور دیکھیں، اور ضروری چیزیں قریب رکھیں۔",
+  "lifeVariantCarQuestion": "آپ نے خریدی یا بیچی؟",
+  "lifeVariantJobQuestion": "آپ شروع کر رہے ہیں یا چھوڑ رہے ہیں؟",
+  "lifeVariantBuy": "خریدی",
+  "lifeVariantSell": "بیچی",
+  "lifeVariantStart": "شروع کر رہا ہوں",
+  "lifeVariantLeave": "چھوڑ رہا ہوں",
+  "lifeTaskRedirectPost": "اپنی ڈاک نئے پتے پر بھیجنے کی درخواست کریں",
+  "lifeTaskNewAddressEveryone": "آجر، ٹیکس دفتر، ڈاکٹر اور اسکول کو نیا پتہ دیں",
+  "lifeTaskMoveUtilities": "بجلی، پانی اور انٹرنیٹ کے اکاؤنٹ بند یا منتقل کریں",
+  "lifeTaskMeterReadings": "گھر چھوڑنے کے دن میٹر ریڈنگ اور تصاویر لیں",
+  "lifeTaskSaveHomePapers": "فروخت یا منتقلی کے کاغذات کی تصویر Vaultara میں شامل کریں",
+  "lifeTaskHandOverKeys": "چابیاں، ریموٹ اور داخلہ ٹیگ حوالے کریں",
+  "lifeTaskOfficialNameProof": "پہلے اپنے نئے نام کا سرکاری ثبوت لیں۔ زیادہ تر دفاتر یہ مانگتے ہیں۔",
+  "lifeTaskTellNameChange": "بینک، آجر، ڈاکٹر اور ٹیکس دفتر کو نئے نام کے بارے میں بتائیں",
+  "lifeTaskUpdateOnlineAccounts": "ای میل، فون اور آن لائن اکاؤنٹس میں اپنا نام بدلیں",
+  "lifeTaskSaveMarriageCertificate": "نکاح نامے کی تصویر Vaultara میں شامل کریں",
+  "lifeTaskCheckBeneficiaries": "دیکھیں کہ آپ کی پالیسیوں اور اکاؤنٹس میں فائدہ اٹھانے والا کون ہے",
+  "lifeTaskUpdateWill": "وصیت لکھیں یا اپ ڈیٹ کریں",
+  "lifeTaskSaveDivorceOrder": "طلاق کے حتمی حکم کی تصویر Vaultara میں شامل کریں",
+  "lifeTaskSplitSharedAccounts": "مشترکہ اکاؤنٹس بند یا تقسیم کریں اور مشترکہ پاس ورڈ بدلیں",
+  "lifeTaskRegisterBirth": "پیدائش کا اندراج کریں اور پیدائش کا سرٹیفکیٹ لیں",
+  "lifeTaskAddBabyToFamily": "بچے کے دستاویزات پر نظر رکھنے کے لیے اسے خاندان میں شامل کریں",
+  "lifeTaskCarRegisterInName": "قانون کی دی گئی مدت میں گاڑی اپنے نام کروائیں",
+  "lifeTaskCarSavePapers": "فروخت کے معاہدے کی تصویر Vaultara میں شامل کریں",
+  "lifeTaskCarNotifySale": "لائسنس دفتر کو بتائیں کہ آپ نے گاڑی بیچ دی ہے اور ثبوت رکھیں",
+  "lifeTaskCarRemoveTags": "ٹول ٹیگ، پارکنگ کارڈ اور ذاتی سامان نکال لیں",
+  "lifeTaskJobGiveDetails": "نئے آجر کو بینک کی تفصیلات اور ٹیکس نمبر دیں",
+  "lifeTaskJobJoinBenefits": "آجر کی پیش کردہ میڈیکل کور اور پنشن میں شامل ہوں",
+  "lifeTaskJobReturnItems": "لیپ ٹاپ، کارڈ یا چابیوں جیسا کام کا سامان واپس کریں",
+  "lifeTaskJobLastPayslip": "آخری تنخواہ کی سلپ اور کام کی تاریخوں کی تصدیق کا خط مانگیں",
+  "lifeTaskJobAskBenefits": "پوچھیں کہ آپ کی میڈیکل کور اور پنشن کا کیا ہوگا",
+  "lifeTaskJobUnemployment": "بے روزگاری الاؤنس کے بارے میں ابھی پوچھیں۔ دعووں کی اکثر آخری تاریخ ہوتی ہے۔",
+  "lifeTaskJobPauseDebits": "خودکار ادائیگیوں اور سبسکرپشنز کی فہرست بنائیں اور جو ہو سکے روکیں",
+  "lifeTaskStudySaveLetters": "داخلہ خط اور فیس کی تفصیلات کی تصاویر Vaultara میں شامل کریں",
+  "lifeTaskStudyFunding": "اسکالرشپ، قرض یا دیگر امداد کی آخری تاریخیں دیکھیں",
+  "lifeTaskRetirePension": "پوچھیں کہ آپ کی پنشن کیسے اور کب ملے گی",
+  "lifeTaskRetireOwnCover": "نوکری کی کور ختم ہو تو اپنی میڈیکل کور لیں",
+  "lifeTaskCountryTellBankTax": "بینک اور ٹیکس دفتر کو بتائیں کہ آپ جا رہے ہیں",
+  "lifeTaskCountryScanCopies": "ہر اہم دستاویز کی تصویر Vaultara میں شامل کریں",
+  "lifeTaskCountryLicenceRules": "دیکھیں کہ کیا ڈرائیونگ لائسنس بدلنا ہوگا",
+  "lifeTaskChildOwnId": "ضرورت ہو تو اپنے شناختی کارڈ کے لیے درخواست دینے میں مدد کریں",
+  "lifeTaskChildBankAccount": "اپنا بینک اکاؤنٹ کھولنے میں مدد کریں",
+  "lifeTaskDeathCertificates": "ڈیتھ سرٹیفکیٹ کی چند تصدیق شدہ کاپیاں لیں",
+  "lifeTaskDeathTellOrganisations": "بینک، انشورنس کمپنیوں اور آجر کو اطلاع دیں",
+  "lifeTaskDeathFindWill": "وصیت تلاش کریں اور وصی سے رابطہ کریں",
+  "lifeTaskDeathStopReminders": "جب آپ تیار ہوں، ان کے ریکارڈز کی یاد دہانیاں بند کریں",
+  "lifeTaskPhoneBlockSim": "سم کارڈ بلاک کروانے کے لیے اپنے نیٹ ورک کو فون کریں۔ اس سے سم سواپ فراڈ رکتا ہے۔",
+  "lifeTaskPhoneBlockBanking": "فون پر بینکنگ بلاک کروانے کے لیے بینک کو فون کریں",
+  "lifeTaskPhoneLockErase": "کسی دوسرے آلے سے فون لاک یا صاف کریں",
+  "lifeTaskPhoneChangePasswords": "ای میل اور سوشل میڈیا کے پاس ورڈ بدلیں",
+  "lifeTaskReportToPolice": "پولیس میں رپورٹ کریں اور کیس نمبر رکھیں",
+  "lifeTaskDisasterSafePlace": "یقینی بنائیں کہ سب محفوظ ہیں اور رہنے کی جگہ ہے",
+  "lifeTaskDisasterPhotos": "صفائی سے پہلے نقصان کی تصاویر لیں",
+  "lifeTaskDisasterContactInsurer": "جتنی جلدی ہو سکے انشورنس کمپنی سے رابطہ کریں",
+  "lifeTaskDisasterProofPack": "ثبوت کا پیک سے اپنے دستاویزات کی کاپیاں بھیجیں",
+  "lifeTaskParentFindPapers": "معلوم کریں کہ ان کے اہم کاغذات کہاں رکھے ہیں",
+  "lifeTaskParentPermission": "پوچھیں کہ کیا آپ ان کی طرف سے بینک، ڈاکٹر اور انشورنس کمپنی سے بات کر سکتے ہیں",
+  "lifeTaskParentMedicines": "ان کی دواؤں اور ڈاکٹروں کی فہرست رکھیں",
+  "lifePlanDoClaim": "دعویٰ کریں",
+  "lifePlanStatusClaimed": "دعویٰ کیا گیا",
+  "lifePlanStartBy": "{weeks, plural, one{{date} تک شروع کریں۔ نیا عام طور پر تقریباً {weeks} ہفتہ لیتا ہے۔} other{{date} تک شروع کریں۔ نیا عام طور پر تقریباً {weeks} ہفتے لیتا ہے۔}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{ابھی شروع کریں۔ نیا عام طور پر تقریباً {weeks} ہفتہ لیتا ہے۔} other{ابھی شروع کریں۔ نیا عام طور پر تقریباً {weeks} ہفتے لیتا ہے۔}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "آپ کا منصوبہ",
+  "lifePlanWhenHappened": "یہ کب ہوا؟",
+  "lifePlanReminderNudge": "آپ کے منصوبے میں ابھی کام باقی ہیں۔ وقت ملے تو کھولیں۔",
+  "lifePlanReminderCheckIn": "کیا آپ کے نئے کارڈ اور دستاویزات آ گئے؟ دیکھنے کے لیے منصوبہ کھولیں۔",
+  "lifePlanDoFirst": "پہلے یہ کریں",
+  "lifePlanSteps": "دیگر قدم",
+  "lifePlanAddOwnStep": "اپنا قدم شامل کریں",
+  "lifePlanOwnStepHint": "مثلاً: اسکول کو بتائیں",
+  "lifePlanOwnStepLimit": "آپ اپنے 20 تک قدم شامل کر سکتے ہیں۔",
+  "lifePlanReadAloud": "بلند آواز سے پڑھیں",
+  "lifePlanStopReading": "پڑھنا روکیں",
+  "lifePlanReadAloudUnavailable": "اس فون پر بلند آواز سے پڑھنے کی سہولت دستیاب نہیں۔",
+  "lifePlanProofPack": "ثبوت کا پیک بنائیں",
+  "lifePlanOpenFamily": "خاندان کھولیں",
+  "lifePlanRemoved": "{count, plural, one{آپ کا حذف کیا گیا {count} ریکارڈ منسوخ شمار ہوتا ہے۔} other{آپ کے حذف کیے گئے {count} ریکارڈ منسوخ شمار ہوتے ہیں۔}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "انہیں تجدید کرنے پر عام طور پر تقریباً {amount} لگتے ہیں۔",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "نئے گھر جا رہے ہیں؟ دیکھیں اور کیا اپ ڈیٹ کرنا ہے۔"
 }

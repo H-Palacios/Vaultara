@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "May ilang bagay pang natitira. Buksan ang plano para tapusin ang mga ito.",
   "lifePlanSuggestCar": "Bumili o nagbenta ng kotse? Tingnan kung ano pa ang dapat i-update.",
   "lifePlanSuggestTrip": "Lilipat ka ba roon nang matagal?",
-  "lifePlanSuggestTripBody": "Magsimula ng plano para lumipat sa ibang bansa. Ipapakita ng Vaultara ang dapat ayusin bago ka umalis."
+  "lifePlanSuggestTripBody": "Magsimula ng plano para lumipat sa ibang bansa. Ipapakita ng Vaultara ang dapat ayusin bago ka umalis.",
+  "lifeGroupHome": "Bahay",
+  "lifeGroupFamily": "Pamilya",
+  "lifeGroupWork": "Trabaho at pag-aaral",
+  "lifeGroupCarTravel": "Kotse at biyahe",
+  "lifeGroupEmergency": "May nangyaring problema",
+  "lifeEventCarBuy": "Bumili ako ng kotse",
+  "lifeEventCarBuyBody": "Kumuha ng insurance bago mo ito iuwi, saka ilipat ang kotse sa pangalan mo.",
+  "lifeEventCarSell": "Nagbenta ako ng kotse",
+  "lifeEventCarSellBody": "Ipaalam sa licensing office ang bentahan at kanselahin ang insurance kapag hindi na sa iyo ang kotse.",
+  "lifeEventJobStart": "Magsisimula ako sa bagong trabaho",
+  "lifeEventJobStartBody": "Suriin ang mga permit mo bago magsimula, saka ayusin ang work card at mga benepisyo.",
+  "lifeEventJobLeave": "Aalis ako sa trabaho ko",
+  "lifeEventJobLeaveBody": "Ibalik ang mga gamit sa trabaho at alamin kung ano ang mangyayari sa coverage na ibinigay ng trabaho mo.",
+  "lifeEventLostPhone": "Nawala o ninakaw ang phone ko",
+  "lifeEventLostPhoneBody": "Kumilos agad. Ang may hawak ng phone at SIM card mo ay maaaring makapasok sa bangko at email mo. Gawin agad ang mga unang hakbang.",
+  "lifeEventJobLoss": "Nawalan ako ng trabaho",
+  "lifeEventJobLossBody": "Mahirap ito. Isa-isang hakbang lang. May deadline ang ilang claim, kaya doon magsimula.",
+  "lifeEventDisaster": "Sunog, baha o pagnanakaw sa bahay",
+  "lifeEventDisasterBody": "Siguraduhin muna na ligtas ang lahat. Saka kumuha ng litrato, kontakin ang insurer mo at palitan ang nawala.",
+  "lifeEventCaringParent": "Inaalagaan ko ang magulang ko",
+  "lifeEventCaringParentBody": "Piliin ang taong inaalagaan mo. Suriin ang mga dokumento at coverage niya, at ilagay sa malapit ang kailangan mo.",
+  "lifeVariantCarQuestion": "Bumili ka ba o nagbenta?",
+  "lifeVariantJobQuestion": "Magsisimula ka ba o aalis?",
+  "lifeVariantBuy": "Bumili",
+  "lifeVariantSell": "Nagbenta",
+  "lifeVariantStart": "Magsisimula",
+  "lifeVariantLeave": "Aalis",
+  "lifeTaskRedirectPost": "Ipadala ang iyong sulat sa bagong address mo",
+  "lifeTaskNewAddressEveryone": "Ibigay ang bagong address sa employer, tax office, doktor at paaralan",
+  "lifeTaskMoveUtilities": "Isara o ilipat ang account sa kuryente, tubig at internet",
+  "lifeTaskMeterReadings": "Kunan ang metro at itala ang reading sa araw ng paglipat",
+  "lifeTaskSaveHomePapers": "Magdagdag ng litrato ng mga papeles ng bentahan o paglipat sa Vaultara",
+  "lifeTaskHandOverKeys": "Ibigay ang mga susi, remote at access tag",
+  "lifeTaskOfficialNameProof": "Kumuha muna ng opisyal na patunay ng bagong pangalan mo. Hinihingi ito ng karamihan ng opisina.",
+  "lifeTaskTellNameChange": "Ipaalam sa bangko, employer, doktor at tax office ang bagong pangalan mo",
+  "lifeTaskUpdateOnlineAccounts": "Palitan ang pangalan mo sa email, phone at online accounts",
+  "lifeTaskSaveMarriageCertificate": "Magdagdag ng litrato ng marriage certificate sa Vaultara",
+  "lifeTaskCheckBeneficiaries": "Alamin kung sino ang beneficiary sa mga policy at account mo",
+  "lifeTaskUpdateWill": "Gumawa o i-update ang huling habilin",
+  "lifeTaskSaveDivorceOrder": "Magdagdag ng litrato ng pinal na desisyon sa annulment o diborsyo sa Vaultara",
+  "lifeTaskSplitSharedAccounts": "Isara o hatiin ang mga shared account at palitan ang mga shared password",
+  "lifeTaskRegisterBirth": "Iparehistro ang kapanganakan at kunin ang birth certificate",
+  "lifeTaskAddBabyToFamily": "Idagdag ang baby sa Pamilya para masubaybayan ang mga dokumento niya",
+  "lifeTaskCarRegisterInName": "Ilipat sa pangalan mo ang kotse sa loob ng panahong pinapayagan ng batas",
+  "lifeTaskCarSavePapers": "Magdagdag ng litrato ng deed of sale sa Vaultara",
+  "lifeTaskCarNotifySale": "Ipaalam sa licensing office na naibenta mo ang kotse at itago ang patunay",
+  "lifeTaskCarRemoveTags": "Tanggalin ang toll tag, parking card at personal na gamit",
+  "lifeTaskJobGiveDetails": "Ibigay ang bank details at tax number mo sa bagong employer",
+  "lifeTaskJobJoinBenefits": "Sumali sa medical coverage at pension na alok ng employer",
+  "lifeTaskJobReturnItems": "Ibalik ang mga gamit sa trabaho tulad ng laptop, card o susi",
+  "lifeTaskJobLastPayslip": "Hingin ang huling payslip at sulat na nagpapatunay ng mga petsa ng trabaho mo",
+  "lifeTaskJobAskBenefits": "Itanong kung ano ang mangyayari sa medical coverage at pension mo",
+  "lifeTaskJobUnemployment": "Magtanong na ngayon tungkol sa unemployment benefit. Madalas may deadline ang claim.",
+  "lifeTaskJobPauseDebits": "Ilista ang mga auto-debit at subscription mo, at ihinto ang kaya mo",
+  "lifeTaskStudySaveLetters": "Magdagdag ng litrato ng acceptance letter at mga statement of fees sa Vaultara",
+  "lifeTaskStudyFunding": "Alamin ang deadline ng scholarship, loan o iba pang tulong pinansyal",
+  "lifeTaskRetirePension": "Itanong kung paano at kailan ibibigay ang pension mo",
+  "lifeTaskRetireOwnCover": "Kumuha ng sariling medical coverage kung matatapos ang mula sa trabaho",
+  "lifeTaskCountryTellBankTax": "Ipaalam sa bangko at tax office na aalis ka",
+  "lifeTaskCountryScanCopies": "Magdagdag ng litrato ng bawat mahalagang dokumento sa Vaultara",
+  "lifeTaskCountryLicenceRules": "Alamin kung kailangan mong palitan ang driver's license mo",
+  "lifeTaskChildOwnId": "Tulungan siyang mag-apply ng sariling ID kung kailangan",
+  "lifeTaskChildBankAccount": "Tulungan siyang magbukas ng sariling bank account",
+  "lifeTaskDeathCertificates": "Kumuha ng ilang certified na kopya ng death certificate",
+  "lifeTaskDeathTellOrganisations": "Ipaalam sa bangko, mga insurer at employer",
+  "lifeTaskDeathFindWill": "Hanapin ang huling habilin at kontakin ang executor",
+  "lifeTaskDeathStopReminders": "Kapag handa ka na, i-off ang mga paalala para sa mga record niya",
+  "lifeTaskPhoneBlockSim": "Tawagan ang network mo para i-block ang SIM card. Pinipigilan nito ang SIM swap fraud.",
+  "lifeTaskPhoneBlockBanking": "Tawagan ang bangko mo para i-block ang banking sa phone",
+  "lifeTaskPhoneLockErase": "I-lock o burahin ang phone mula sa ibang device",
+  "lifeTaskPhoneChangePasswords": "Palitan ang password ng email at social media mo",
+  "lifeTaskReportToPolice": "I-report ito sa pulis at itago ang case number",
+  "lifeTaskDisasterSafePlace": "Siguraduhing ligtas ang lahat at may matutuluyan",
+  "lifeTaskDisasterPhotos": "Kunan ng litrato ang pinsala bago maglinis",
+  "lifeTaskDisasterContactInsurer": "Kontakin ang insurer mo sa lalong madaling panahon",
+  "lifeTaskDisasterProofPack": "Ipadala ang mga kopya ng dokumento mo gamit ang Pakete ng patunay",
+  "lifeTaskParentFindPapers": "Alamin kung saan nakatago ang mahahalagang papeles niya",
+  "lifeTaskParentPermission": "Itanong kung puwede kang makipag-usap para sa kanya sa bangko, doktor at insurer niya",
+  "lifeTaskParentMedicines": "Magtabi ng listahan ng mga gamot at doktor niya",
+  "lifePlanDoClaim": "Mag-claim",
+  "lifePlanStatusClaimed": "Na-claim na",
+  "lifePlanStartBy": "{weeks, plural, =1{Magsimula bago mag-{date}. Karaniwang mga isang linggo bago makuha ang bago.} other{Magsimula bago mag-{date}. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Magsimula na ngayon. Karaniwang mga isang linggo bago makuha ang bago.} other{Magsimula na ngayon. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Ang plano mo",
+  "lifePlanWhenHappened": "Kailan ito nangyari?",
+  "lifePlanReminderNudge": "May mga gagawin pa sa plano mo. Buksan ito kapag may oras ka.",
+  "lifePlanReminderCheckIn": "Dumating na ba ang mga bagong card at dokumento mo? Buksan ang plano para tingnan.",
+  "lifePlanDoFirst": "Gawin muna ito",
+  "lifePlanSteps": "Iba pang hakbang",
+  "lifePlanAddOwnStep": "Magdagdag ng sariling hakbang",
+  "lifePlanOwnStepHint": "Halimbawa: Sabihan ang paaralan",
+  "lifePlanOwnStepLimit": "Puwede kang magdagdag ng hanggang 20 sariling hakbang.",
+  "lifePlanReadAloud": "Basahin nang malakas",
+  "lifePlanStopReading": "Itigil ang pagbasa",
+  "lifePlanReadAloudUnavailable": "Hindi available ang pagbasa nang malakas sa phone na ito.",
+  "lifePlanProofPack": "Gumawa ng pakete ng patunay",
+  "lifePlanOpenFamily": "Buksan ang Pamilya",
+  "lifePlanRemoved": "{count, plural, =1{Ang 1 record na binura mo ay itinuturing na kanselado.} other{Ang {count} record na binura mo ay itinuturing na kanselado.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Karaniwang mga {amount} ang gastos sa pag-renew ng mga ito.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Lilipat sa bagong bahay? Tingnan kung ano pa ang dapat i-update."
 }

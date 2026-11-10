@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Hâlâ yapılacak şeyler var. Bitirmek için planı aç.",
   "lifePlanSuggestCar": "Araba aldın mı veya sattın mı? Başka neyi güncellemen gerektiğine bak.",
   "lifePlanSuggestTrip": "Bir süreliğine oraya mı taşınıyorsun?",
-  "lifePlanSuggestTripBody": "Başka bir ülkeye taşınmak için bir plan başlat. Vaultara gitmeden önce neleri halletmen gerektiğini gösterir."
+  "lifePlanSuggestTripBody": "Başka bir ülkeye taşınmak için bir plan başlat. Vaultara gitmeden önce neleri halletmen gerektiğini gösterir.",
+  "lifeGroupHome": "Ev",
+  "lifeGroupFamily": "Aile",
+  "lifeGroupWork": "İş ve okul",
+  "lifeGroupCarTravel": "Araba ve seyahat",
+  "lifeGroupEmergency": "Bir şey oldu",
+  "lifeEventCarBuy": "Araba aldım",
+  "lifeEventCarBuyBody": "Eve sürmeden önce sigorta yaptırın, sonra arabayı adınıza tescil ettirin.",
+  "lifeEventCarSell": "Araba sattım",
+  "lifeEventCarSellBody": "Satışı tescil kurumuna bildirin ve araba artık sizin değilken sigortayı iptal edin.",
+  "lifeEventJobStart": "Yeni bir işe başlıyorum",
+  "lifeEventJobStartBody": "Başlamadan önce izinlerinizi kontrol edin, sonra iş kartınızı ve yan haklarınızı ayarlayın.",
+  "lifeEventJobLeave": "İşimden ayrılıyorum",
+  "lifeEventJobLeaveBody": "İş eşyalarını iade edin ve işin sağladığı sigortaya ne olacağını kontrol edin.",
+  "lifeEventLostPhone": "Telefonumu kaybettim ya da çalındı",
+  "lifeEventLostPhoneBody": "Hızlı davranın. Telefonunuz ve SIM kartınız elinde olan biri bankanıza ve e-postanıza girebilir. İlk adımları hemen atın.",
+  "lifeEventJobLoss": "İşimi kaybettim",
+  "lifeEventJobLossBody": "Bu zor. Adım adım ilerleyin. Bazı başvuruların son tarihi var, onlarla başlayın.",
+  "lifeEventDisaster": "Evde yangın, sel veya hırsızlık",
+  "lifeEventDisasterBody": "Önce herkesin güvende olduğundan emin olun. Sonra fotoğraf çekin, sigorta şirketinizle iletişime geçin ve kaybolanı yeniletin.",
+  "lifeEventCaringParent": "Bir ebeveynime bakıyorum",
+  "lifeEventCaringParentBody": "Baktığınız kişiyi seçin. Belgelerini ve sigortasını kontrol edin, ihtiyacınız olanları yakınınızda tutun.",
+  "lifeVariantCarQuestion": "Aldınız mı, sattınız mı?",
+  "lifeVariantJobQuestion": "Başlıyor musunuz, ayrılıyor musunuz?",
+  "lifeVariantBuy": "Aldım",
+  "lifeVariantSell": "Sattım",
+  "lifeVariantStart": "Başlıyorum",
+  "lifeVariantLeave": "Ayrılıyorum",
+  "lifeTaskRedirectPost": "Postanızın yeni adresinize yönlendirilmesini isteyin",
+  "lifeTaskNewAddressEveryone": "Yeni adresinizi işvereninize, vergi dairesine, doktorunuza ve okula verin",
+  "lifeTaskMoveUtilities": "Elektrik, su ve internet aboneliklerini kapatın veya taşıyın",
+  "lifeTaskMeterReadings": "Taşındığınız gün sayaç değerlerini not alın ve fotoğraf çekin",
+  "lifeTaskSaveHomePapers": "Satış veya devir belgelerinin fotoğrafını Vaultara'ya ekleyin",
+  "lifeTaskHandOverKeys": "Anahtarları, kumandaları ve giriş kartlarını teslim edin",
+  "lifeTaskOfficialNameProof": "Önce yeni adınızın resmi belgesini alın. Çoğu kurum bunu ister.",
+  "lifeTaskTellNameChange": "Yeni adınızı bankaya, işverene, doktora ve vergi dairesine bildirin",
+  "lifeTaskUpdateOnlineAccounts": "E-posta, telefon ve çevrim içi hesaplarda adınızı değiştirin",
+  "lifeTaskSaveMarriageCertificate": "Evlilik cüzdanının fotoğrafını Vaultara'ya ekleyin",
+  "lifeTaskCheckBeneficiaries": "Poliçe ve hesaplarınızda lehtar olarak kimin yazdığını kontrol edin",
+  "lifeTaskUpdateWill": "Vasiyetname hazırlayın veya güncelleyin",
+  "lifeTaskSaveDivorceOrder": "Kesinleşmiş boşanma kararının fotoğrafını Vaultara'ya ekleyin",
+  "lifeTaskSplitSharedAccounts": "Ortak hesapları kapatın veya bölün ve ortak şifreleri değiştirin",
+  "lifeTaskRegisterBirth": "Doğumu kaydettirin ve doğum belgesini alın",
+  "lifeTaskAddBabyToFamily": "Belgelerinin takip edilmesi için bebeği Aile'ye ekleyin",
+  "lifeTaskCarRegisterInName": "Arabayı yasal süre içinde adınıza tescil ettirin",
+  "lifeTaskCarSavePapers": "Satış sözleşmesinin fotoğrafını Vaultara'ya ekleyin",
+  "lifeTaskCarNotifySale": "Arabayı sattığınızı tescil kurumuna bildirin ve belgeyi saklayın",
+  "lifeTaskCarRemoveTags": "HGS/OGS etiketlerini, otopark kartlarını ve kişisel eşyaları çıkarın",
+  "lifeTaskJobGiveDetails": "Yeni işverene banka bilgilerinizi ve vergi numaranızı verin",
+  "lifeTaskJobJoinBenefits": "İşverenin sunduğu sağlık sigortasına ve emeklilik planına katılın",
+  "lifeTaskJobReturnItems": "Dizüstü bilgisayar, kart veya anahtar gibi iş eşyalarını iade edin",
+  "lifeTaskJobLastPayslip": "Son maaş bordronuzu ve çalışma tarihlerinizi gösteren bir yazı isteyin",
+  "lifeTaskJobAskBenefits": "Sağlık sigortanıza ve emekliliğinize ne olacağını sorun",
+  "lifeTaskJobUnemployment": "İşsizlik ödeneğini hemen sorun. Başvuruların çoğu zaman son tarihi vardır.",
+  "lifeTaskJobPauseDebits": "Otomatik ödemelerinizi ve aboneliklerinizi listeleyin, durdurabildiklerinizi durdurun",
+  "lifeTaskStudySaveLetters": "Kabul mektubunuzun ve harç dökümlerinin fotoğraflarını Vaultara'ya ekleyin",
+  "lifeTaskStudyFunding": "Burs, kredi veya diğer desteklerin son tarihlerini kontrol edin",
+  "lifeTaskRetirePension": "Emekli maaşınızın nasıl ve ne zaman ödeneceğini sorun",
+  "lifeTaskRetireOwnCover": "İşteki sigorta biterse kendi sağlık sigortanızı yaptırın",
+  "lifeTaskCountryTellBankTax": "Gideceğinizi bankaya ve vergi dairesine bildirin",
+  "lifeTaskCountryScanCopies": "Her önemli belgenin fotoğrafını Vaultara'ya ekleyin",
+  "lifeTaskCountryLicenceRules": "Ehliyetinizi değiştirmeniz gerekip gerekmediğini kontrol edin",
+  "lifeTaskChildOwnId": "Gerekirse kendi kimlik kartına başvurmasına yardım edin",
+  "lifeTaskChildBankAccount": "Kendi banka hesabını açmasına yardım edin",
+  "lifeTaskDeathCertificates": "Ölüm belgesinin birkaç onaylı suretini alın",
+  "lifeTaskDeathTellOrganisations": "Bankaya, sigorta şirketlerine ve işverene haber verin",
+  "lifeTaskDeathFindWill": "Vasiyetnameyi bulun ve vasiyeti yerine getirecek kişiyle iletişime geçin",
+  "lifeTaskDeathStopReminders": "Hazır olduğunuzda, kayıtları için hatırlatıcıları kapatın",
+  "lifeTaskPhoneBlockSim": "SIM kartı kapattırmak için operatörünüzü arayın. Bu, SIM değiştirme dolandırıcılığını durdurur.",
+  "lifeTaskPhoneBlockBanking": "Telefondaki bankacılığı kapattırmak için bankanızı arayın",
+  "lifeTaskPhoneLockErase": "Telefonu başka bir cihazdan kilitleyin veya silin",
+  "lifeTaskPhoneChangePasswords": "E-posta ve sosyal medya şifrelerinizi değiştirin",
+  "lifeTaskReportToPolice": "Polise bildirin ve dosya numarasını saklayın",
+  "lifeTaskDisasterSafePlace": "Herkesin güvende olduğundan ve kalacak yeri olduğundan emin olun",
+  "lifeTaskDisasterPhotos": "Temizlemeden önce hasarın fotoğrafını çekin",
+  "lifeTaskDisasterContactInsurer": "Sigorta şirketinizle en kısa sürede iletişime geçin",
+  "lifeTaskDisasterProofPack": "Belgelerinizin kopyalarını Kanıt paketi ile gönderin",
+  "lifeTaskParentFindPapers": "Önemli belgelerinin nerede saklandığını öğrenin",
+  "lifeTaskParentPermission": "Onun adına banka, doktor ve sigorta şirketiyle konuşup konuşamayacağınızı sorun",
+  "lifeTaskParentMedicines": "İlaçlarının ve doktorlarının listesini tutun",
+  "lifePlanDoClaim": "Hasar talebi açın",
+  "lifePlanStatusClaimed": "Talep açıldı",
+  "lifePlanStartBy": "{weeks, plural, one{{date} tarihine kadar başlayın. Yenisi genellikle yaklaşık {weeks} hafta sürer.} other{{date} tarihine kadar başlayın. Yenisi genellikle yaklaşık {weeks} hafta sürer.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Hemen başlayın. Yenisi genellikle yaklaşık {weeks} hafta sürer.} other{Hemen başlayın. Yenisi genellikle yaklaşık {weeks} hafta sürer.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Planınız",
+  "lifePlanWhenHappened": "Ne zaman oldu?",
+  "lifePlanReminderNudge": "Planınızda hâlâ yapılacaklar var. Vaktiniz olduğunda açın.",
+  "lifePlanReminderCheckIn": "Yeni kartlarınız ve belgeleriniz geldi mi? Kontrol etmek için planı açın.",
+  "lifePlanDoFirst": "Önce bunu yapın",
+  "lifePlanSteps": "Diğer adımlar",
+  "lifePlanAddOwnStep": "Kendi adımınızı ekleyin",
+  "lifePlanOwnStepHint": "Örneğin: Okula haber ver",
+  "lifePlanOwnStepLimit": "En fazla 20 kendi adımınızı ekleyebilirsiniz.",
+  "lifePlanReadAloud": "Sesli oku",
+  "lifePlanStopReading": "Okumayı durdur",
+  "lifePlanReadAloudUnavailable": "Bu telefonda sesli okuma kullanılamıyor.",
+  "lifePlanProofPack": "Kanıt paketi oluşturun",
+  "lifePlanOpenFamily": "Aile'yi aç",
+  "lifePlanRemoved": "{count, plural, one{Sildiğiniz {count} kayıt iptal edilmiş sayılır.} other{Sildiğiniz {count} kayıt iptal edilmiş sayılır.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Bunları yenilemek genellikle yaklaşık {amount} tutar.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Yeni bir eve mi taşınıyorsunuz? Başka neyi güncellemeniz gerektiğine bakın."
 }

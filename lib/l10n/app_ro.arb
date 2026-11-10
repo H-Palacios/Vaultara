@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Mai sunt lucruri de făcut. Deschide planul ca să le termini.",
   "lifePlanSuggestCar": "Ai cumpărat sau vândut o mașină? Vezi ce mai trebuie actualizat.",
   "lifePlanSuggestTrip": "Te muți acolo pentru o vreme?",
-  "lifePlanSuggestTripBody": "Începe un plan pentru mutarea în altă țară. Vaultara îți arată ce să rezolvi înainte de plecare."
+  "lifePlanSuggestTripBody": "Începe un plan pentru mutarea în altă țară. Vaultara îți arată ce să rezolvi înainte de plecare.",
+  "lifeGroupHome": "Casă",
+  "lifeGroupFamily": "Familie",
+  "lifeGroupWork": "Muncă și studii",
+  "lifeGroupCarTravel": "Mașină și călătorii",
+  "lifeGroupEmergency": "S-a întâmplat ceva",
+  "lifeEventCarBuy": "Am cumpărat o mașină",
+  "lifeEventCarBuyBody": "Asigurați-o înainte s-o conduceți acasă, apoi înmatriculați mașina pe numele dvs.",
+  "lifeEventCarSell": "Am vândut o mașină",
+  "lifeEventCarSellBody": "Anunțați vânzarea la serviciul de înmatriculări și încheiați asigurarea când mașina nu mai e a dvs.",
+  "lifeEventJobStart": "Încep un loc de muncă nou",
+  "lifeEventJobStartBody": "Verificați permisele înainte să începeți, apoi rezolvați cardul de acces și beneficiile.",
+  "lifeEventJobLeave": "Plec de la locul de muncă",
+  "lifeEventJobLeaveBody": "Returnați lucrurile de serviciu și verificați ce se întâmplă cu asigurarea de la job.",
+  "lifeEventLostPhone": "Mi-am pierdut telefonul sau mi-a fost furat",
+  "lifeEventLostPhoneBody": "Acționați repede. Cine are telefonul și cartela SIM poate intra în banca și emailul dvs. Faceți primii pași imediat.",
+  "lifeEventJobLoss": "Mi-am pierdut locul de muncă",
+  "lifeEventJobLossBody": "E greu. Luați-o pas cu pas. Unele cereri au termen, așa că începeți cu ele.",
+  "lifeEventDisaster": "Incendiu, inundație sau spargere acasă",
+  "lifeEventDisasterBody": "Mai întâi asigurați-vă că toată lumea e în siguranță. Apoi faceți poze, contactați asigurătorul și înlocuiți ce s-a pierdut.",
+  "lifeEventCaringParent": "Am grijă de un părinte",
+  "lifeEventCaringParentBody": "Alegeți persoana de care aveți grijă. Verificați-i actele și asigurările și țineți la îndemână ce vă trebuie.",
+  "lifeVariantCarQuestion": "Ați cumpărat sau ați vândut?",
+  "lifeVariantJobQuestion": "Începeți sau plecați?",
+  "lifeVariantBuy": "Cumpărată",
+  "lifeVariantSell": "Vândută",
+  "lifeVariantStart": "Încep",
+  "lifeVariantLeave": "Plec",
+  "lifeTaskRedirectPost": "Cereți redirecționarea corespondenței la noua adresă",
+  "lifeTaskNewAddressEveryone": "Dați noua adresă angajatorului, ANAF, medicului și școlii",
+  "lifeTaskMoveUtilities": "Încheiați sau mutați contractele de curent, apă și internet",
+  "lifeTaskMeterReadings": "În ziua mutării, notați indexurile și faceți poze",
+  "lifeTaskSaveHomePapers": "Adăugați în Vaultara o poză a actelor de vânzare sau transfer",
+  "lifeTaskHandOverKeys": "Predați cheile, telecomenzile și cartelele de acces",
+  "lifeTaskOfficialNameProof": "Obțineți mai întâi o dovadă oficială a noului nume. Majoritatea instituțiilor o cer.",
+  "lifeTaskTellNameChange": "Anunțați banca, angajatorul, medicul și ANAF despre noul nume",
+  "lifeTaskUpdateOnlineAccounts": "Schimbați numele în email, telefon și conturile online",
+  "lifeTaskSaveMarriageCertificate": "Adăugați în Vaultara o poză a certificatului de căsătorie",
+  "lifeTaskCheckBeneficiaries": "Verificați cine e trecut ca beneficiar pe polițe și conturi",
+  "lifeTaskUpdateWill": "Faceți sau actualizați testamentul",
+  "lifeTaskSaveDivorceOrder": "Adăugați în Vaultara o poză a hotărârii definitive de divorț",
+  "lifeTaskSplitSharedAccounts": "Închideți sau împărțiți conturile comune și schimbați parolele comune",
+  "lifeTaskRegisterBirth": "Înregistrați nașterea și obțineți certificatul de naștere",
+  "lifeTaskAddBabyToFamily": "Adăugați bebelușul în Familie ca să-i urmăriți actele",
+  "lifeTaskCarRegisterInName": "Înmatriculați mașina pe numele dvs. în termenul legal",
+  "lifeTaskCarSavePapers": "Adăugați în Vaultara o poză a contractului de vânzare",
+  "lifeTaskCarNotifySale": "Anunțați serviciul de înmatriculări că ați vândut mașina și păstrați dovada",
+  "lifeTaskCarRemoveTags": "Scoateți dispozitivele de taxare, cardurile de parcare și lucrurile personale",
+  "lifeTaskJobGiveDetails": "Dați noului angajator datele bancare și CNP-ul",
+  "lifeTaskJobJoinBenefits": "Înscrieți-vă la asigurarea medicală și pensia oferite de angajator",
+  "lifeTaskJobReturnItems": "Returnați lucrurile de serviciu, ca laptopul, cardul sau cheile",
+  "lifeTaskJobLastPayslip": "Cereți ultimul fluturaș de salariu și o adeverință cu perioada lucrată",
+  "lifeTaskJobAskBenefits": "Întrebați ce se întâmplă cu asigurarea medicală și pensia",
+  "lifeTaskJobUnemployment": "Interesați-vă acum de ajutorul de șomaj. Cererile au adesea termen.",
+  "lifeTaskJobPauseDebits": "Faceți o listă cu debitările directe și abonamentele și suspendați ce puteți",
+  "lifeTaskStudySaveLetters": "Adăugați în Vaultara poze ale scrisorii de admitere și ale facturilor de taxe",
+  "lifeTaskStudyFunding": "Verificați termenele pentru burse, împrumuturi sau alt sprijin",
+  "lifeTaskRetirePension": "Întrebați cum și când se va plăti pensia",
+  "lifeTaskRetireOwnCover": "Faceți-vă asigurare medicală proprie dacă cea de la job se încheie",
+  "lifeTaskCountryTellBankTax": "Anunțați banca și ANAF că plecați",
+  "lifeTaskCountryScanCopies": "Adăugați în Vaultara o poză a fiecărui act important",
+  "lifeTaskCountryLicenceRules": "Verificați dacă trebuie să preschimbați permisul de conducere",
+  "lifeTaskChildOwnId": "Ajutați-l să ceară propriul act de identitate, dacă are nevoie",
+  "lifeTaskChildBankAccount": "Ajutați-l să-și deschidă propriul cont bancar",
+  "lifeTaskDeathCertificates": "Obțineți câteva copii legalizate ale certificatului de deces",
+  "lifeTaskDeathTellOrganisations": "Anunțați banca, asigurătorii și angajatorul",
+  "lifeTaskDeathFindWill": "Găsiți testamentul și contactați executorul",
+  "lifeTaskDeathStopReminders": "Când sunteți pregătit, opriți mementourile pentru înregistrările persoanei",
+  "lifeTaskPhoneBlockSim": "Sunați operatorul să blocheze cartela SIM. Asta oprește frauda prin schimbarea SIM.",
+  "lifeTaskPhoneBlockBanking": "Sunați banca să blocheze aplicația bancară de pe telefon",
+  "lifeTaskPhoneLockErase": "Blocați sau ștergeți telefonul de pe alt dispozitiv",
+  "lifeTaskPhoneChangePasswords": "Schimbați parolele de email și rețele sociale",
+  "lifeTaskReportToPolice": "Faceți plângere la poliție și păstrați numărul dosarului",
+  "lifeTaskDisasterSafePlace": "Asigurați-vă că toți sunt în siguranță și au unde sta",
+  "lifeTaskDisasterPhotos": "Fotografiați pagubele înainte să faceți curat",
+  "lifeTaskDisasterContactInsurer": "Contactați asigurătorul cât mai repede",
+  "lifeTaskDisasterProofPack": "Trimiteți copii ale actelor cu Pachetul de dovezi",
+  "lifeTaskParentFindPapers": "Aflați unde își ține actele importante",
+  "lifeTaskParentPermission": "Întrebați dacă puteți vorbi în numele lui cu banca, medicul și asigurătorul",
+  "lifeTaskParentMedicines": "Țineți o listă cu medicamentele și medicii lui",
+  "lifePlanDoClaim": "Depuneți o daună",
+  "lifePlanStatusClaimed": "Daună depusă",
+  "lifePlanStartBy": "{weeks, plural, one{Începeți până pe {date}. Unul nou durează de obicei cam o săptămână.} few{Începeți până pe {date}. Unul nou durează de obicei cam {weeks} săptămâni.} other{Începeți până pe {date}. Unul nou durează de obicei cam {weeks} de săptămâni.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Începeți acum. Unul nou durează de obicei cam o săptămână.} few{Începeți acum. Unul nou durează de obicei cam {weeks} săptămâni.} other{Începeți acum. Unul nou durează de obicei cam {weeks} de săptămâni.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Planul dvs.",
+  "lifePlanWhenHappened": "Când s-a întâmplat?",
+  "lifePlanReminderNudge": "Planul dvs. mai are lucruri de făcut. Deschideți-l când aveți un moment.",
+  "lifePlanReminderCheckIn": "Au sosit cardurile și actele noi? Deschideți planul să verificați.",
+  "lifePlanDoFirst": "Faceți asta mai întâi",
+  "lifePlanSteps": "Alți pași",
+  "lifePlanAddOwnStep": "Adăugați un pas propriu",
+  "lifePlanOwnStepHint": "De exemplu: Anunțați școala",
+  "lifePlanOwnStepLimit": "Puteți adăuga până la 20 de pași proprii.",
+  "lifePlanReadAloud": "Citește cu voce tare",
+  "lifePlanStopReading": "Oprește citirea",
+  "lifePlanReadAloudUnavailable": "Citirea cu voce tare nu e disponibilă pe acest telefon.",
+  "lifePlanProofPack": "Creați un pachet de dovezi",
+  "lifePlanOpenFamily": "Deschide Familie",
+  "lifePlanRemoved": "{count, plural, one{{count} înregistrare ștearsă contează ca încheiată.} few{{count} înregistrări șterse contează ca încheiate.} other{{count} de înregistrări șterse contează ca încheiate.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Reînnoirea lor costă de obicei cam {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Vă mutați într-o casă nouă? Vedeți ce mai trebuie actualizat."
 }

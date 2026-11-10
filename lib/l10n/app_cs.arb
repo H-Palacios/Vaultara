@@ -2180,5 +2180,136 @@
   "lifePlanReminderAfter": "Něco ještě zbývá. Otevřete plán a dokončete to.",
   "lifePlanSuggestCar": "Koupili jste nebo prodali auto? Podívejte se, co dalšího aktualizovat.",
   "lifePlanSuggestTrip": "Stěhujete se tam na delší dobu?",
-  "lifePlanSuggestTripBody": "Začněte plán stěhování do jiné země. Vaultara ukáže, co vyřídit před odjezdem."
+  "lifePlanSuggestTripBody": "Začněte plán stěhování do jiné země. Vaultara ukáže, co vyřídit před odjezdem.",
+  "lifeGroupHome": "Domov",
+  "lifeGroupFamily": "Rodina",
+  "lifeGroupWork": "Práce a studium",
+  "lifeGroupCarTravel": "Auto a cestování",
+  "lifeGroupEmergency": "Něco se pokazilo",
+  "lifeEventCarBuy": "Koupil(a) jsem auto",
+  "lifeEventCarBuyBody": "Pojistěte auto dřív, než s ním pojedete domů, a pak ho převeďte na sebe.",
+  "lifeEventCarSell": "Prodal(a) jsem auto",
+  "lifeEventCarSellBody": "Oznamte prodej na registru vozidel a zrušte pojištění, jakmile auto už není vaše.",
+  "lifeEventJobStart": "Nastupuji do nové práce",
+  "lifeEventJobStartBody": "Před nástupem si zkontrolujte povolení a pak si vyřiďte pracovní kartu a benefity.",
+  "lifeEventJobLeave": "Odcházím z práce",
+  "lifeEventJobLeaveBody": "Vraťte pracovní věci a zjistěte, co bude s pojištěním, které vám dávala práce.",
+  "lifeEventLostPhone": "Ztratil(a) jsem telefon nebo mi ho ukradli",
+  "lifeEventLostPhoneBody": "Jednejte rychle. Kdo má váš telefon a SIM kartu, může se dostat do vaší banky a e-mailu. Udělejte první kroky hned.",
+  "lifeEventJobLoss": "Přišel (přišla) jsem o práci",
+  "lifeEventJobLossBody": "Je to těžké. Postupujte krok za krokem. Některé žádosti mají lhůtu, tak začněte s nimi.",
+  "lifeEventDisaster": "Požár, povodeň nebo vloupání doma",
+  "lifeEventDisasterBody": "Nejdřív se ujistěte, že jsou všichni v bezpečí. Pak pořiďte fotky, kontaktujte pojišťovnu a nahraďte, co se ztratilo.",
+  "lifeEventCaringParent": "Starám se o rodiče",
+  "lifeEventCaringParentBody": "Vyberte člověka, o kterého se staráte. Zkontrolujte jeho doklady a pojištění a mějte potřebné po ruce.",
+  "lifeVariantCarQuestion": "Koupili jste, nebo prodali?",
+  "lifeVariantJobQuestion": "Nastupujete, nebo odcházíte?",
+  "lifeVariantBuy": "Koupeno",
+  "lifeVariantSell": "Prodáno",
+  "lifeVariantStart": "Nastupuji",
+  "lifeVariantLeave": "Odcházím",
+  "lifeTaskRedirectPost": "Požádejte o přeposílání pošty na novou adresu",
+  "lifeTaskNewAddressEveryone": "Nahlaste novou adresu zaměstnavateli, finančnímu úřadu, lékaři a škole",
+  "lifeTaskMoveUtilities": "Zrušte nebo převeďte smlouvy na elektřinu, vodu a internet",
+  "lifeTaskMeterReadings": "V den vystěhování si zapište stavy měřičů a vyfoťte je",
+  "lifeTaskSaveHomePapers": "Přidejte do Vaultara fotku dokumentů o prodeji nebo převodu",
+  "lifeTaskHandOverKeys": "Předejte klíče, ovladače a přístupové čipy",
+  "lifeTaskOfficialNameProof": "Nejdřív si opatřete úřední doklad o novém jménu. Většina úřadů ho chce.",
+  "lifeTaskTellNameChange": "Oznamte nové jméno bance, zaměstnavateli, lékaři a finančnímu úřadu",
+  "lifeTaskUpdateOnlineAccounts": "Změňte jméno v e-mailu, telefonu a online účtech",
+  "lifeTaskSaveMarriageCertificate": "Přidejte do Vaultara fotku oddacího listu",
+  "lifeTaskCheckBeneficiaries": "Zkontrolujte, kdo je uveden jako obmyšlený na pojistkách a účtech",
+  "lifeTaskUpdateWill": "Sepište nebo aktualizujte závěť",
+  "lifeTaskSaveDivorceOrder": "Přidejte do Vaultara fotku pravomocného rozsudku o rozvodu",
+  "lifeTaskSplitSharedAccounts": "Zrušte nebo rozdělte společné účty a změňte společná hesla",
+  "lifeTaskRegisterBirth": "Nahlaste narození a vyzvedněte rodný list",
+  "lifeTaskAddBabyToFamily": "Přidejte miminko do Rodiny, ať se sledují jeho doklady",
+  "lifeTaskCarRegisterInName": "Převeďte auto na sebe v zákonné lhůtě",
+  "lifeTaskCarSavePapers": "Přidejte do Vaultara fotku kupní smlouvy",
+  "lifeTaskCarNotifySale": "Oznamte registru vozidel, že jste auto prodali, a uschovejte doklad",
+  "lifeTaskCarRemoveTags": "Odstraňte mýtné známky, parkovací karty a osobní věci",
+  "lifeTaskJobGiveDetails": "Dejte novému zaměstnavateli číslo účtu a daňové údaje",
+  "lifeTaskJobJoinBenefits": "Přihlaste se ke zdravotnímu pojištění a penzi, které zaměstnavatel nabízí",
+  "lifeTaskJobReturnItems": "Vraťte pracovní věci jako notebook, kartu nebo klíče",
+  "lifeTaskJobLastPayslip": "Požádejte o poslední výplatní pásku a potvrzení o době zaměstnání",
+  "lifeTaskJobAskBenefits": "Zeptejte se, co bude se zdravotním pojištěním a penzí",
+  "lifeTaskJobUnemployment": "Zeptejte se hned na podporu v nezaměstnanosti. Žádosti mívají lhůtu.",
+  "lifeTaskJobPauseDebits": "Sepište inkasa a předplatná a pozastavte, co jde",
+  "lifeTaskStudySaveLetters": "Přidejte do Vaultara fotky dopisu o přijetí a výpisů školného",
+  "lifeTaskStudyFunding": "Zkontrolujte termíny pro stipendia, půjčky a jiné financování",
+  "lifeTaskRetirePension": "Zeptejte se, jak a kdy se bude penze vyplácet",
+  "lifeTaskRetireOwnCover": "Zařiďte si vlastní zdravotní pojištění, pokud pracovní skončí",
+  "lifeTaskCountryTellBankTax": "Oznamte bance a finančnímu úřadu, že odcházíte",
+  "lifeTaskCountryScanCopies": "Přidejte do Vaultara fotku každého důležitého dokladu",
+  "lifeTaskCountryLicenceRules": "Zjistěte, jestli musíte vyměnit řidičský průkaz",
+  "lifeTaskChildOwnId": "Pomozte mu požádat o vlastní občanský průkaz, pokud ho potřebuje",
+  "lifeTaskChildBankAccount": "Pomozte mu založit vlastní bankovní účet",
+  "lifeTaskDeathCertificates": "Opatřete si několik ověřených kopií úmrtního listu",
+  "lifeTaskDeathTellOrganisations": "Informujte banku, pojišťovny a zaměstnavatele",
+  "lifeTaskDeathFindWill": "Najděte závěť a kontaktujte notáře nebo vykonavatele",
+  "lifeTaskDeathStopReminders": "Až budete připraveni, vypněte připomínky k jeho záznamům",
+  "lifeTaskPhoneBlockSim": "Zavolejte operátorovi, ať zablokuje SIM kartu. Tím zastavíte podvod s výměnou SIM.",
+  "lifeTaskPhoneBlockBanking": "Zavolejte do banky, ať zablokuje bankovnictví v telefonu",
+  "lifeTaskPhoneLockErase": "Zamkněte nebo vymažte telefon z jiného zařízení",
+  "lifeTaskPhoneChangePasswords": "Změňte hesla k e-mailu a sociálním sítím",
+  "lifeTaskReportToPolice": "Nahlaste to policii a uschovejte číslo jednací",
+  "lifeTaskDisasterSafePlace": "Ujistěte se, že jsou všichni v bezpečí a mají kde bydlet",
+  "lifeTaskDisasterPhotos": "Vyfoťte škody dřív, než začnete uklízet",
+  "lifeTaskDisasterContactInsurer": "Kontaktujte pojišťovnu co nejdřív",
+  "lifeTaskDisasterProofPack": "Pošlete kopie dokladů přes Balíček dokladů",
+  "lifeTaskParentFindPapers": "Zjistěte, kde má uložené důležité dokumenty",
+  "lifeTaskParentPermission": "Zeptejte se, jestli můžete za něj jednat s bankou, lékařem a pojišťovnou",
+  "lifeTaskParentMedicines": "Veďte si seznam jeho léků a lékařů",
+  "lifePlanDoClaim": "Uplatněte nárok",
+  "lifePlanStatusClaimed": "Nárok uplatněn",
+  "lifePlanStartBy": "{weeks, plural, one{Začněte do {date}. Nový obvykle trvá asi {weeks} týden.} few{Začněte do {date}. Nový obvykle trvá asi {weeks} týdny.} many{Začněte do {date}. Nový obvykle trvá asi {weeks} týdne.} other{Začněte do {date}. Nový obvykle trvá asi {weeks} týdnů.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Začněte hned. Nový obvykle trvá asi {weeks} týden.} few{Začněte hned. Nový obvykle trvá asi {weeks} týdny.} many{Začněte hned. Nový obvykle trvá asi {weeks} týdne.} other{Začněte hned. Nový obvykle trvá asi {weeks} týdnů.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Váš plán",
+  "lifePlanWhenHappened": "Kdy se to stalo?",
+  "lifePlanReminderNudge": "Ve vašem plánu ještě zbývá co udělat. Otevřete ho, až budete mít chvilku.",
+  "lifePlanReminderCheckIn": "Dorazily nové karty a doklady? Otevřete plán a zkontrolujte to.",
+  "lifePlanDoFirst": "Nejdřív udělejte tohle",
+  "lifePlanSteps": "Další kroky",
+  "lifePlanAddOwnStep": "Přidat vlastní krok",
+  "lifePlanOwnStepHint": "Například: Dát vědět škole",
+  "lifePlanOwnStepLimit": "Můžete přidat až 20 vlastních kroků.",
+  "lifePlanReadAloud": "Přečíst nahlas",
+  "lifePlanStopReading": "Zastavit čtení",
+  "lifePlanReadAloudUnavailable": "Čtení nahlas není na tomto telefonu k dispozici.",
+  "lifePlanProofPack": "Vytvořit balíček dokladů",
+  "lifePlanOpenFamily": "Otevřít Rodinu",
+  "lifePlanRemoved": "{count, plural, one{{count} smazaný záznam se počítá jako zrušený.} few{{count} smazané záznamy se počítají jako zrušené.} many{{count} smazaného záznamu se počítá jako zrušené.} other{{count} smazaných záznamů se počítá jako zrušené.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Obnova těchto věcí obvykle stojí asi {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Stěhujete se? Podívejte se, co dalšího aktualizovat."
 }

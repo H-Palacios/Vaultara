@@ -6846,4 +6846,330 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Սկսեք այլ երկիր տեղափոխվելու պլան: Vaultara-ն ցույց է տալիս, թե ինչ կարգավորել մեկնելուց առաջ:';
+
+  @override
+  String get lifeGroupHome => 'Տուն';
+
+  @override
+  String get lifeGroupFamily => 'Ընտանիք';
+
+  @override
+  String get lifeGroupWork => 'Աշխատանք և ուսում';
+
+  @override
+  String get lifeGroupCarTravel => 'Մեքենա և ճանապարհորդություն';
+
+  @override
+  String get lifeGroupEmergency => 'Ինչ-որ բան սխալ գնաց';
+
+  @override
+  String get lifeEventCarBuy => 'Ես մեքենա գնեցի';
+
+  @override
+  String get lifeEventCarBuyBody => 'Ապահովագրեք մեքենան՝ նախքան այն տուն տանելը, ապա գրանցեք այն ձեր անունով։';
+
+  @override
+  String get lifeEventCarSell => 'Ես մեքենա վաճառեցի';
+
+  @override
+  String get lifeEventCarSellBody => 'Վաճառքի մասին տեղեկացրեք հաշվառման գրասենյակին և չեղարկեք ապահովագրությունը, երբ մեքենան այլևս ձերը չէ։';
+
+  @override
+  String get lifeEventJobStart => 'Ես նոր աշխատանք եմ սկսում';
+
+  @override
+  String get lifeEventJobStartBody => 'Սկսելուց առաջ ստուգեք ձեր թույլտվությունները, ապա կարգավորեք աշխատանքային քարտը և արտոնությունները։';
+
+  @override
+  String get lifeEventJobLeave => 'Ես թողնում եմ աշխատանքս';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Վերադարձրեք աշխատանքային իրերը և ստուգեք, թե ինչ կլինի աշխատանքից ստացած ապահովագրության հետ։';
+
+  @override
+  String get lifeEventLostPhone => 'Հեռախոսս կորել է կամ գողացել են';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Գործեք արագ։ Ձեր հեռախոսն ու SIM քարտն ունեցողը կարող է մտնել ձեր բանկ և էլ. փոստ։ Առաջին քայլերն արեք հենց հիմա։';
+
+  @override
+  String get lifeEventJobLoss => 'Ես կորցրել եմ աշխատանքս';
+
+  @override
+  String get lifeEventJobLossBody => 'Սա դժվար է։ Գնացեք քայլ առ քայլ։ Որոշ դիմումներ ունեն վերջնաժամկետ, ուստի սկսեք դրանցից։';
+
+  @override
+  String get lifeEventDisaster => 'Հրդեհ, ջրհեղեղ կամ կոտրանք տանը';
+
+  @override
+  String get lifeEventDisasterBody => 'Նախ համոզվեք, որ բոլորն անվտանգ են։ Հետո լուսանկարեք, կապվեք ապահովագրողի հետ և փոխարինեք կորցրածը։';
+
+  @override
+  String get lifeEventCaringParent => 'Ես խնամում եմ ծնողիս';
+
+  @override
+  String get lifeEventCaringParentBody => 'Ընտրեք այն մարդուն, ում խնամում եք։ Ստուգեք նրա փաստաթղթերն ու ապահովագրությունը և անհրաժեշտը պահեք ձեռքի տակ։';
+
+  @override
+  String get lifeVariantCarQuestion => 'Գնեցի՞ք, թե՞ վաճառեցիք';
+
+  @override
+  String get lifeVariantJobQuestion => 'Սկսո՞ւմ եք, թե՞ հեռանում';
+
+  @override
+  String get lifeVariantBuy => 'Գնեցի';
+
+  @override
+  String get lifeVariantSell => 'Վաճառեցի';
+
+  @override
+  String get lifeVariantStart => 'Սկսում եմ';
+
+  @override
+  String get lifeVariantLeave => 'Հեռանում եմ';
+
+  @override
+  String get lifeTaskRedirectPost => 'Խնդրեք, որ ձեր փոստն ուղարկվի նոր հասցեով';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Նոր հասցեն տվեք գործատուին, հարկային ծառայությանը, բժշկին և դպրոցին';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Փակեք կամ տեղափոխեք էլեկտրաէներգիայի, ջրի և ինտերնետի հաշիվները';
+
+  @override
+  String get lifeTaskMeterReadings => 'Տեղափոխվելու օրը գրանցեք հաշվիչների ցուցմունքները և լուսանկարեք';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Ավելացրեք վաճառքի կամ փոխանցման փաստաթղթերի լուսանկարը Vaultara-ում';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Հանձնեք բանալիները, հեռակառավարման վահանակները և մուտքի քարտերը';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Նախ ստացեք ձեր նոր անվան պաշտոնական ապացույցը։ Գրասենյակների մեծ մասը պահանջում է այն։';
+
+  @override
+  String get lifeTaskTellNameChange => 'Ձեր նոր անվան մասին տեղեկացրեք բանկին, գործատուին, բժշկին և հարկային ծառայությանը';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Փոխեք ձեր անունը էլ. փոստում, հեռախոսում և առցանց հաշիվներում';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Ավելացրեք ամուսնության վկայականի լուսանկարը Vaultara-ում';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Ստուգեք, թե ով է նշված որպես շահառու ձեր պոլիսներում և հաշիվներում';
+
+  @override
+  String get lifeTaskUpdateWill => 'Կազմեք կամ թարմացրեք կտակը';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Ավելացրեք ամուսնալուծության վերջնական որոշման լուսանկարը Vaultara-ում';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Փակեք կամ բաժանեք ընդհանուր հաշիվները և փոխեք ընդհանուր գաղտնաբառերը';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Գրանցեք ծնունդը և ստացեք ծննդյան վկայականը';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Ավելացրեք երեխային Ընտանիքում, որպեսզի նրա փաստաթղթերը հետևվեն';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Գրանցեք մեքենան ձեր անունով օրենքով թույլատրված ժամկետում';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Ավելացրեք առքուվաճառքի պայմանագրի լուսանկարը Vaultara-ում';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Տեղեկացրեք հաշվառման գրասենյակին, որ վաճառել եք մեքենան, և պահեք ապացույցը';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Հանեք ճանապարհավճարի սարքերը, կայանատեղիի քարտերը և անձնական իրերը';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Նոր գործատուին տվեք ձեր բանկային տվյալները և հարկային համարը';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Միացեք գործատուի առաջարկած բժշկական ապահովագրությանը և կենսաթոշակին';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Վերադարձրեք աշխատանքային իրերը, օրինակ՝ նոութբուք, քարտ կամ բանալիներ';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Խնդրեք վերջին աշխատավարձի թերթիկը և աշխատանքի ամսաթվերը հաստատող նամակ';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Հարցրեք, թե ինչ կլինի ձեր բժշկական ապահովագրության և կենսաթոշակի հետ';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Հիմա հարցրեք գործազրկության նպաստի մասին։ Դիմումները հաճախ վերջնաժամկետ ունեն։';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Կազմեք ավտոմատ վճարումների և բաժանորդագրությունների ցանկ և դադարեցրեք հնարավորը';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Ավելացրեք ընդունելության նամակի և վարձավճարի քաղվածքների լուսանկարները Vaultara-ում';
+
+  @override
+  String get lifeTaskStudyFunding => 'Ստուգեք կրթաթոշակների, վարկերի կամ այլ ֆինանսավորման վերջնաժամկետները';
+
+  @override
+  String get lifeTaskRetirePension => 'Հարցրեք, թե ինչպես և երբ կվճարվի ձեր կենսաթոշակը';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Կազմակերպեք ձեր սեփական բժշկական ապահովագրությունը, եթե աշխատանքայինն ավարտվի';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Տեղեկացրեք բանկին և հարկային ծառայությանը, որ մեկնում եք';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Ավելացրեք յուրաքանչյուր կարևոր փաստաթղթի լուսանկարը Vaultara-ում';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Ստուգեք, արդյոք պետք է փոխանակեք վարորդական վկայականը';
+
+  @override
+  String get lifeTaskChildOwnId => 'Օգնեք նրան դիմել սեփական անձնագրի կամ նույնականացման քարտի համար, եթե պետք է';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Օգնեք նրան բացել սեփական բանկային հաշիվ';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Ստացեք մահվան վկայականի մի քանի վավերացված պատճեն';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Տեղեկացրեք բանկին, ապահովագրողներին և գործատուին';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Գտեք կտակը և կապվեք կտակակատարի հետ';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Երբ պատրաստ լինեք, անջատեք նրա գրառումների հիշեցումները';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Զանգահարեք օպերատորին՝ SIM քարտը արգելափակելու համար։ Սա կանխում է SIM փոխարինման խարդախությունը։';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Զանգահարեք բանկ՝ հեռախոսով բանկային ծառայություններն արգելափակելու համար';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Կողպեք կամ ջնջեք հեռախոսը մեկ այլ սարքից';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Փոխեք էլ. փոստի և սոցիալական ցանցերի գաղտնաբառերը';
+
+  @override
+  String get lifeTaskReportToPolice => 'Հայտնեք ոստիկանությանը և պահեք գործի համարը';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Համոզվեք, որ բոլորն անվտանգ են և ունեն մնալու տեղ';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Մաքրելուց առաջ լուսանկարեք վնասները';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Հնարավորինս շուտ կապվեք ապահովագրողի հետ';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Ուղարկեք ձեր փաստաթղթերի պատճենները Ապացույցների փաթեթով';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Պարզեք, թե որտեղ են պահվում նրա կարևոր թղթերը';
+
+  @override
+  String get lifeTaskParentPermission => 'Հարցրեք, թե կարող եք արդյոք նրա անունից խոսել բանկի, բժշկի և ապահովագրողի հետ';
+
+  @override
+  String get lifeTaskParentMedicines => 'Պահեք նրա դեղերի և բժիշկների ցանկը';
+
+  @override
+  String get lifePlanDoClaim => 'Ներկայացրեք պահանջ';
+
+  @override
+  String get lifePlanStatusClaimed => 'Պահանջը ներկայացված է';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Սկսեք մինչև $date։ Նորը սովորաբար տևում է մոտ $weeks շաբաթ։',
+      one: 'Սկսեք մինչև $date։ Նորը սովորաբար տևում է մոտ $weeks շաբաթ։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Սկսեք հիմա։ Նորը սովորաբար տևում է մոտ $weeks շաբաթ։',
+      one: 'Սկսեք հիմա։ Նորը սովորաբար տևում է մոտ $weeks շաբաթ։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Ձեր պլանը';
+
+  @override
+  String get lifePlanWhenHappened => 'Ե՞րբ է դա տեղի ունեցել';
+
+  @override
+  String get lifePlanReminderNudge => 'Ձեր պլանում դեռ անելիքներ կան։ Բացեք այն, երբ ժամանակ ունենաք։';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Ձեր նոր քարտերն ու փաստաթղթերը եկե՞լ են։ Բացեք պլանը՝ ստուգելու համար։';
+
+  @override
+  String get lifePlanDoFirst => 'Նախ արեք սա';
+
+  @override
+  String get lifePlanSteps => 'Այլ քայլեր';
+
+  @override
+  String get lifePlanAddOwnStep => 'Ավելացնել ձեր քայլը';
+
+  @override
+  String get lifePlanOwnStepHint => 'Օրինակ՝ տեղեկացնել դպրոցին';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Կարող եք ավելացնել մինչև 20 սեփական քայլ։';
+
+  @override
+  String get lifePlanReadAloud => 'Կարդալ բարձրաձայն';
+
+  @override
+  String get lifePlanStopReading => 'Դադարեցնել ընթերցումը';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Բարձրաձայն ընթերցումը հասանելի չէ այս հեռախոսում։';
+
+  @override
+  String get lifePlanProofPack => 'Ստեղծել ապացույցների փաթեթ';
+
+  @override
+  String get lifePlanOpenFamily => 'Բացել Ընտանիքը';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ձեր ջնջած $count գրառումները համարվում են չեղարկված։',
+      one: 'Ձեր ջնջած $count գրառումը համարվում է չեղարկված։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Սրանց նորացումը սովորաբար արժե մոտ $amount։';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Տեղափոխվո՞ւմ եք նոր տուն։ Տեսեք, թե էլ ինչ պետք է թարմացնել։';
 }

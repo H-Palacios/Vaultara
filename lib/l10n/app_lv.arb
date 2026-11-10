@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Vēl kaut kas jāizdara. Atveriet plānu, lai to pabeigtu.",
   "lifePlanSuggestCar": "Nopirkāt vai pārdevāt auto? Skatiet, ko vēl atjaunināt.",
   "lifePlanSuggestTrip": "Pārceļaties uz turieni uz kādu laiku?",
-  "lifePlanSuggestTripBody": "Sāciet plānu pārcelšanās uz citu valsti. Vaultara parāda, kas jānokārto pirms došanās prom."
+  "lifePlanSuggestTripBody": "Sāciet plānu pārcelšanās uz citu valsti. Vaultara parāda, kas jānokārto pirms došanās prom.",
+  "lifeGroupHome": "Mājas",
+  "lifeGroupFamily": "Ģimene",
+  "lifeGroupWork": "Darbs un studijas",
+  "lifeGroupCarTravel": "Auto un ceļojumi",
+  "lifeGroupEmergency": "Kaut kas notika",
+  "lifeEventCarBuy": "Es nopirku auto",
+  "lifeEventCarBuyBody": "Apdrošiniet to, pirms braucat mājās, un tad pārreģistrējiet auto uz sava vārda.",
+  "lifeEventCarSell": "Es pārdevu auto",
+  "lifeEventCarSellBody": "Paziņojiet par pārdošanu CSDD un pārtrauciet apdrošināšanu, kad auto vairs nav jūsu.",
+  "lifeEventJobStart": "Es sāku jaunu darbu",
+  "lifeEventJobStartBody": "Pirms sākšanas pārbaudiet atļaujas, tad nokārtojiet darba karti un labumus.",
+  "lifeEventJobLeave": "Es aizeju no darba",
+  "lifeEventJobLeaveBody": "Atdodiet darba lietas un pārbaudiet, kas notiks ar darba devēja apdrošināšanu.",
+  "lifeEventLostPhone": "Pazaudēju telefonu vai to nozaga",
+  "lifeEventLostPhoneBody": "Rīkojieties ātri. Kam ir jūsu telefons un SIM karte, tas var piekļūt jūsu bankai un e-pastam. Pirmos soļus veiciet uzreiz.",
+  "lifeEventJobLoss": "Es zaudēju darbu",
+  "lifeEventJobLossBody": "Tas ir grūti. Ejiet soli pa solim. Dažiem pieteikumiem ir termiņš, tāpēc sāciet ar tiem.",
+  "lifeEventDisaster": "Ugunsgrēks, plūdi vai ielaušanās mājās",
+  "lifeEventDisasterBody": "Vispirms pārliecinieties, ka visi ir drošībā. Tad fotografējiet, sazinieties ar apdrošinātāju un atjaunojiet zaudēto.",
+  "lifeEventCaringParent": "Es rūpējos par vecāku",
+  "lifeEventCaringParentBody": "Izvēlieties cilvēku, par kuru rūpējaties. Pārbaudiet viņa dokumentus un apdrošināšanu un turiet vajadzīgo pa rokai.",
+  "lifeVariantCarQuestion": "Jūs nopirkāt vai pārdevāt?",
+  "lifeVariantJobQuestion": "Jūs sākat vai aizejat?",
+  "lifeVariantBuy": "Nopirku",
+  "lifeVariantSell": "Pārdevu",
+  "lifeVariantStart": "Sāku",
+  "lifeVariantLeave": "Aizeju",
+  "lifeTaskRedirectPost": "Palūdziet pāradresēt pastu uz jauno adresi",
+  "lifeTaskNewAddressEveryone": "Dodiet jauno adresi darba devējam, VID, ārstam un skolai",
+  "lifeTaskMoveUtilities": "Pārtrauciet vai pārceliet elektrības, ūdens un interneta līgumus",
+  "lifeTaskMeterReadings": "Izvākšanās dienā nolasiet skaitītājus un nofotografējiet",
+  "lifeTaskSaveHomePapers": "Pievienojiet pirkuma vai nodošanas dokumentu fotoattēlu Vaultara",
+  "lifeTaskHandOverKeys": "Nododiet atslēgas, pultis un piekļuves kartes",
+  "lifeTaskOfficialNameProof": "Vispirms iegūstiet oficiālu jaunā vārda apliecinājumu. Lielākā daļa iestāžu to prasa.",
+  "lifeTaskTellNameChange": "Paziņojiet jauno vārdu bankai, darba devējam, ārstam un VID",
+  "lifeTaskUpdateOnlineAccounts": "Nomainiet vārdu e-pastā, telefonā un tiešsaistes kontos",
+  "lifeTaskSaveMarriageCertificate": "Pievienojiet laulības apliecības fotoattēlu Vaultara",
+  "lifeTaskCheckBeneficiaries": "Pārbaudiet, kas norādīts kā labuma guvējs jūsu polisēs un kontos",
+  "lifeTaskUpdateWill": "Sastādiet vai atjauniniet testamentu",
+  "lifeTaskSaveDivorceOrder": "Pievienojiet galīgā šķiršanās lēmuma fotoattēlu Vaultara",
+  "lifeTaskSplitSharedAccounts": "Slēdziet vai sadaliet kopīgos kontus un nomainiet kopīgās paroles",
+  "lifeTaskRegisterBirth": "Reģistrējiet dzimšanu un saņemiet dzimšanas apliecību",
+  "lifeTaskAddBabyToFamily": "Pievienojiet mazuli Ģimenei, lai sekotu viņa dokumentiem",
+  "lifeTaskCarRegisterInName": "Pārreģistrējiet auto uz sava vārda likumā noteiktajā laikā",
+  "lifeTaskCarSavePapers": "Pievienojiet pirkuma līguma fotoattēlu Vaultara",
+  "lifeTaskCarNotifySale": "Paziņojiet CSDD, ka pārdevāt auto, un saglabājiet apliecinājumu",
+  "lifeTaskCarRemoveTags": "Izņemiet ceļu nodevu ierīces, stāvvietu kartes un personīgās mantas",
+  "lifeTaskJobGiveDetails": "Dodiet jaunajam darba devējam bankas rekvizītus un nodokļu numuru",
+  "lifeTaskJobJoinBenefits": "Pievienojieties darba devēja piedāvātajai veselības apdrošināšanai un pensijai",
+  "lifeTaskJobReturnItems": "Atdodiet darba lietas, piemēram, datoru, karti vai atslēgas",
+  "lifeTaskJobLastPayslip": "Palūdziet pēdējo algas lapiņu un izziņu par darba periodu",
+  "lifeTaskJobAskBenefits": "Pajautājiet, kas notiks ar veselības apdrošināšanu un pensiju",
+  "lifeTaskJobUnemployment": "Jau tagad uzziniet par bezdarbnieka pabalstu. Pieteikumiem bieži ir termiņš.",
+  "lifeTaskJobPauseDebits": "Uzskaitiet tiešā debeta maksājumus un abonementus un apturiet, ko varat",
+  "lifeTaskStudySaveLetters": "Pievienojiet uzņemšanas vēstules un maksas izrakstu fotoattēlus Vaultara",
+  "lifeTaskStudyFunding": "Pārbaudiet stipendiju, kredītu vai cita atbalsta termiņus",
+  "lifeTaskRetirePension": "Pajautājiet, kā un kad tiks maksāta pensija",
+  "lifeTaskRetireOwnCover": "Nokārtojiet savu veselības apdrošināšanu, ja darba apdrošināšana beidzas",
+  "lifeTaskCountryTellBankTax": "Paziņojiet bankai un VID, ka aizbraucat",
+  "lifeTaskCountryScanCopies": "Pievienojiet katra svarīga dokumenta fotoattēlu Vaultara",
+  "lifeTaskCountryLicenceRules": "Pārbaudiet, vai jāmaina vadītāja apliecība",
+  "lifeTaskChildOwnId": "Palīdziet viņam pieteikties savai personas apliecībai, ja vajag",
+  "lifeTaskChildBankAccount": "Palīdziet viņam atvērt savu bankas kontu",
+  "lifeTaskDeathCertificates": "Iegūstiet dažas apliecinātas miršanas apliecības kopijas",
+  "lifeTaskDeathTellOrganisations": "Paziņojiet bankai, apdrošinātājiem un darba devējam",
+  "lifeTaskDeathFindWill": "Atrodiet testamentu un sazinieties ar izpildītāju",
+  "lifeTaskDeathStopReminders": "Kad būsiet gatavs, izslēdziet atgādinājumus par viņa ierakstiem",
+  "lifeTaskPhoneBlockSim": "Zvaniet operatoram, lai bloķētu SIM karti. Tas aptur SIM apmaiņas krāpšanu.",
+  "lifeTaskPhoneBlockBanking": "Zvaniet bankai, lai bloķētu internetbanku telefonā",
+  "lifeTaskPhoneLockErase": "Bloķējiet vai izdzēsiet telefonu no citas ierīces",
+  "lifeTaskPhoneChangePasswords": "Nomainiet e-pasta un sociālo tīklu paroles",
+  "lifeTaskReportToPolice": "Ziņojiet policijai un saglabājiet lietas numuru",
+  "lifeTaskDisasterSafePlace": "Pārliecinieties, ka visi ir drošībā un viņiem ir kur palikt",
+  "lifeTaskDisasterPhotos": "Pirms tīrīšanas nofotografējiet bojājumus",
+  "lifeTaskDisasterContactInsurer": "Sazinieties ar apdrošinātāju pēc iespējas ātrāk",
+  "lifeTaskDisasterProofPack": "Nosūtiet dokumentu kopijas ar Pierādījumu komplektu",
+  "lifeTaskParentFindPapers": "Uzziniet, kur glabājas viņa svarīgie dokumenti",
+  "lifeTaskParentPermission": "Pajautājiet, vai drīkstat viņa vārdā runāt ar banku, ārstu un apdrošinātāju",
+  "lifeTaskParentMedicines": "Turiet sarakstu ar viņa zālēm un ārstiem",
+  "lifePlanDoClaim": "Iesniegt pieteikumu",
+  "lifePlanStatusClaimed": "Pieteikums iesniegts",
+  "lifePlanStartBy": "{weeks, plural, zero{Sāciet līdz {date}. Jauns parasti aizņem apmēram {weeks} nedēļas.} one{Sāciet līdz {date}. Jauns parasti aizņem apmēram {weeks} nedēļu.} other{Sāciet līdz {date}. Jauns parasti aizņem apmēram {weeks} nedēļas.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, zero{Sāciet tagad. Jauns parasti aizņem apmēram {weeks} nedēļas.} one{Sāciet tagad. Jauns parasti aizņem apmēram {weeks} nedēļu.} other{Sāciet tagad. Jauns parasti aizņem apmēram {weeks} nedēļas.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Jūsu plāns",
+  "lifePlanWhenHappened": "Kad tas notika?",
+  "lifePlanReminderNudge": "Jūsu plānā vēl ir darāmais. Atveriet to, kad būs brīdis.",
+  "lifePlanReminderCheckIn": "Vai jaunās kartes un dokumenti pienāca? Atveriet plānu, lai pārbaudītu.",
+  "lifePlanDoFirst": "Vispirms izdariet šo",
+  "lifePlanSteps": "Citi soļi",
+  "lifePlanAddOwnStep": "Pievienot savu soli",
+  "lifePlanOwnStepHint": "Piemēram: Paziņot skolai",
+  "lifePlanOwnStepLimit": "Varat pievienot līdz 20 saviem soļiem.",
+  "lifePlanReadAloud": "Lasīt skaļi",
+  "lifePlanStopReading": "Pārtraukt lasīšanu",
+  "lifePlanReadAloudUnavailable": "Šajā telefonā skaļa lasīšana nav pieejama.",
+  "lifePlanProofPack": "Izveidot pierādījumu komplektu",
+  "lifePlanOpenFamily": "Atvērt Ģimeni",
+  "lifePlanRemoved": "{count, plural, zero{{count} jūsu dzēstie ieraksti tiek uzskatīti par pārtrauktiem.} one{{count} jūsu dzēstais ieraksts tiek uzskatīts par pārtrauktu.} other{{count} jūsu dzēstie ieraksti tiek uzskatīti par pārtrauktiem.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "To atjaunošana parasti maksā apmēram {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Pārceļaties uz jaunām mājām? Paskatieties, ko vēl atjaunināt."
 }

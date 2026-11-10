@@ -6846,4 +6846,330 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Boshqa davlatga ko\'chish rejasini boshlang. Vaultara ketishdan oldin nimani hal qilish kerakligini ko\'rsatadi.';
+
+  @override
+  String get lifeGroupHome => 'Uy';
+
+  @override
+  String get lifeGroupFamily => 'Oila';
+
+  @override
+  String get lifeGroupWork => 'Ish va o\'qish';
+
+  @override
+  String get lifeGroupCarTravel => 'Mashina va sayohat';
+
+  @override
+  String get lifeGroupEmergency => 'Nimadir yuz berdi';
+
+  @override
+  String get lifeEventCarBuy => 'Mashina sotib oldim';
+
+  @override
+  String get lifeEventCarBuyBody => 'Uyga haydab ketishdan oldin sug\'urta qiling, keyin mashinani o\'z nomingizga rasmiylashtiring.';
+
+  @override
+  String get lifeEventCarSell => 'Mashina sotdim';
+
+  @override
+  String get lifeEventCarSellBody => 'Sotuv haqida ro\'yxatga olish idorasiga xabar bering va mashina sizniki bo\'lmay qolganda sug\'urtani bekor qiling.';
+
+  @override
+  String get lifeEventJobStart => 'Yangi ishni boshlayapman';
+
+  @override
+  String get lifeEventJobStartBody => 'Boshlashdan oldin ruxsatnomalaringizni tekshiring, keyin ish kartasi va imtiyozlarni sozlang.';
+
+  @override
+  String get lifeEventJobLeave => 'Ishdan ketyapman';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Ish buyumlarini qaytaring va ish bergan sug\'urta nima bo\'lishini tekshiring.';
+
+  @override
+  String get lifeEventLostPhone => 'Telefonimni yo\'qotdim yoki o\'g\'irlatdim';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Tez harakat qiling. Telefoningiz va SIM kartangiz kimda bo\'lsa, u bankingiz va pochtangizga kira oladi. Birinchi qadamlarni hozir bajaring.';
+
+  @override
+  String get lifeEventJobLoss => 'Ishimdan ayrildim';
+
+  @override
+  String get lifeEventJobLossBody => 'Bu og\'ir. Qadamma-qadam boring. Ba\'zi arizalarning muddati bor, shuning uchun ulardan boshlang.';
+
+  @override
+  String get lifeEventDisaster => 'Uyda yong\'in, suv toshqini yoki o\'g\'rilik';
+
+  @override
+  String get lifeEventDisasterBody => 'Avval hamma xavfsiz ekaniga ishonch hosil qiling. Keyin suratga oling, sug\'urta kompaniyasiga murojaat qiling va yo\'qolganini tiklang.';
+
+  @override
+  String get lifeEventCaringParent => 'Ota yoki onamga g\'amxo\'rlik qilyapman';
+
+  @override
+  String get lifeEventCaringParentBody => 'G\'amxo\'rlik qilayotgan odamni tanlang. Uning hujjatlari va sug\'urtasini tekshiring, keraklisini yaqin tuting.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Sotib oldingizmi yoki sotdingizmi?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Boshlayapsizmi yoki ketyapsizmi?';
+
+  @override
+  String get lifeVariantBuy => 'Sotib oldim';
+
+  @override
+  String get lifeVariantSell => 'Sotdim';
+
+  @override
+  String get lifeVariantStart => 'Boshlayapman';
+
+  @override
+  String get lifeVariantLeave => 'Ketyapman';
+
+  @override
+  String get lifeTaskRedirectPost => 'Pochtangizni yangi manzilga yuborishni so\'rang';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Yangi manzilni ish beruvchi, soliq idorasi, shifokor va maktabga bering';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Elektr, suv va internet hisoblarini yoping yoki ko\'chiring';
+
+  @override
+  String get lifeTaskMeterReadings => 'Ko\'chadigan kuningiz hisoblagich ko\'rsatkichlarini yozib, suratga oling';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Sotuv yoki o\'tkazish hujjatlarining suratini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Kalitlar, pultlar va kirish kartalarini topshiring';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Avval yangi ismingizning rasmiy tasdig\'ini oling. Ko\'p idoralar buni so\'raydi.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Yangi ismingiz haqida bank, ish beruvchi, shifokor va soliq idorasiga xabar bering';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Pochta, telefon va onlayn hisoblardagi ismingizni o\'zgartiring';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Nikoh guvohnomasining suratini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Polis va hisoblaringizda kim naf oluvchi ekanini tekshiring';
+
+  @override
+  String get lifeTaskUpdateWill => 'Vasiyatnoma yozing yoki yangilang';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Ajralish bo\'yicha yakuniy qarorning suratini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Umumiy hisoblarni yoping yoki bo\'ling va umumiy parollarni o\'zgartiring';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Tug\'ilishni ro\'yxatdan o\'tkazing va tug\'ilganlik haqida guvohnoma oling';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Hujjatlarini kuzatish uchun chaqaloqni Oilaga qo\'shing';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Mashinani qonun belgilagan muddatda o\'z nomingizga rasmiylashtiring';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Oldi-sotdi shartnomasining suratini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Mashinani sotganingizni ro\'yxatga olish idorasiga bildiring va tasdiqni saqlang';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Pullik yo\'l qurilmalari, avtoturargoh kartalari va shaxsiy buyumlarni oling';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Yangi ish beruvchiga bank rekvizitlari va soliq raqamingizni bering';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Ish beruvchi taklif qilgan tibbiy sug\'urta va pensiyaga qo\'shiling';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Noutbuk, karta yoki kalit kabi ish buyumlarini qaytaring';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Oxirgi ish haqi varag\'i va ish muddatini tasdiqlovchi xat so\'rang';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Tibbiy sug\'urta va pensiyangiz nima bo\'lishini so\'rang';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Ishsizlik nafaqasi haqida hozir so\'rang. Arizalarning ko\'pincha muddati bo\'ladi.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Avtomatik to\'lovlar va obunalar ro\'yxatini tuzing va imkoni borini to\'xtating';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Qabul xati va to\'lov hisobotlari suratlarini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskStudyFunding => 'Grant, kredit yoki boshqa yordam muddatlarini tekshiring';
+
+  @override
+  String get lifeTaskRetirePension => 'Pensiyangiz qanday va qachon to\'lanishini so\'rang';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Ishdagi sug\'urta tugasa, o\'z tibbiy sug\'urtangizni rasmiylashtiring';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Ketayotganingizni bank va soliq idorasiga bildiring';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Har bir muhim hujjatning suratini Vaultara\'ga qo\'shing';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Haydovchilik guvohnomasini almashtirish kerakmi, tekshiring';
+
+  @override
+  String get lifeTaskChildOwnId => 'Kerak bo\'lsa, o\'z ID kartasiga ariza berishga yordam bering';
+
+  @override
+  String get lifeTaskChildBankAccount => 'O\'z bank hisobini ochishga yordam bering';
+
+  @override
+  String get lifeTaskDeathCertificates => 'O\'lim haqidagi guvohnomaning bir nechta tasdiqlangan nusxasini oling';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Bank, sug\'urta kompaniyalari va ish beruvchiga xabar bering';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Vasiyatnomani toping va ijrochi bilan bog\'laning';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Tayyor bo\'lganingizda, uning yozuvlari uchun eslatmalarni o\'chiring';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'SIM kartani bloklash uchun operatorga qo\'ng\'iroq qiling. Bu SIM almashtirish firibgarligini to\'xtatadi.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Telefondagi bankingni bloklash uchun bankka qo\'ng\'iroq qiling';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Telefonni boshqa qurilmadan qulflang yoki tozalang';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Pochta va ijtimoiy tarmoq parollarini o\'zgartiring';
+
+  @override
+  String get lifeTaskReportToPolice => 'Politsiyaga xabar bering va ish raqamini saqlang';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Hamma xavfsiz va turadigan joyi borligiga ishonch hosil qiling';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Tozalashdan oldin zararni suratga oling';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Imkon qadar tez sug\'urta kompaniyasiga murojaat qiling';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Hujjatlaringiz nusxalarini Isbot toʻplami orqali yuboring';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Uning muhim hujjatlari qayerda saqlanishini bilib oling';
+
+  @override
+  String get lifeTaskParentPermission => 'Uning nomidan bank, shifokor va sug\'urta bilan gaplasha olasizmi, so\'rang';
+
+  @override
+  String get lifeTaskParentMedicines => 'Uning dorilari va shifokorlari ro\'yxatini yuriting';
+
+  @override
+  String get lifePlanDoClaim => 'Talabnoma bering';
+
+  @override
+  String get lifePlanStatusClaimed => 'Talabnoma berildi';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '$date gacha boshlang. Yangisi odatda taxminan $weeks hafta oladi.',
+      one: '$date gacha boshlang. Yangisi odatda taxminan $weeks hafta oladi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Hozir boshlang. Yangisi odatda taxminan $weeks hafta oladi.',
+      one: 'Hozir boshlang. Yangisi odatda taxminan $weeks hafta oladi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Rejangiz';
+
+  @override
+  String get lifePlanWhenHappened => 'Bu qachon bo\'ldi?';
+
+  @override
+  String get lifePlanReminderNudge => 'Rejangizda hali ishlar bor. Vaqtingiz bo\'lganda oching.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Yangi kartalar va hujjatlaringiz keldimi? Tekshirish uchun rejani oching.';
+
+  @override
+  String get lifePlanDoFirst => 'Avval buni qiling';
+
+  @override
+  String get lifePlanSteps => 'Boshqa qadamlar';
+
+  @override
+  String get lifePlanAddOwnStep => 'O\'z qadamingizni qo\'shing';
+
+  @override
+  String get lifePlanOwnStepHint => 'Masalan: Maktabga xabar berish';
+
+  @override
+  String get lifePlanOwnStepLimit => '20 tagacha o\'z qadamingizni qo\'shishingiz mumkin.';
+
+  @override
+  String get lifePlanReadAloud => 'Ovoz chiqarib o\'qish';
+
+  @override
+  String get lifePlanStopReading => 'O\'qishni to\'xtatish';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Bu telefonda ovoz chiqarib o\'qish mavjud emas.';
+
+  @override
+  String get lifePlanProofPack => 'Isbot toʻplamini yarating';
+
+  @override
+  String get lifePlanOpenFamily => 'Oilani ochish';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Siz o\'chirgan $count ta yozuv bekor qilingan hisoblanadi.',
+      one: 'Siz o\'chirgan $count ta yozuv bekor qilingan hisoblanadi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Bularni yangilash odatda taxminan $amount turadi.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Yangi uyga ko\'chyapsizmi? Yana nimani yangilash kerakligini ko\'ring.';
 }

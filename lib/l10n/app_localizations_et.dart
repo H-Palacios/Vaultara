@@ -6846,4 +6846,330 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Alusta plaani teise riiki kolimiseks. Vaultara näitab, mida enne lahkumist korda ajada.';
+
+  @override
+  String get lifeGroupHome => 'Kodu';
+
+  @override
+  String get lifeGroupFamily => 'Pere';
+
+  @override
+  String get lifeGroupWork => 'Töö ja õpingud';
+
+  @override
+  String get lifeGroupCarTravel => 'Auto ja reisimine';
+
+  @override
+  String get lifeGroupEmergency => 'Midagi läks valesti';
+
+  @override
+  String get lifeEventCarBuy => 'Ostsin auto';
+
+  @override
+  String get lifeEventCarBuyBody => 'Kindlusta auto enne koju sõitmist ja vormista see siis enda nimele.';
+
+  @override
+  String get lifeEventCarSell => 'Müüsin auto';
+
+  @override
+  String get lifeEventCarSellBody => 'Teata müügist transpordiametile ja lõpeta kindlustus, kui auto pole enam sinu.';
+
+  @override
+  String get lifeEventJobStart => 'Alustan uut tööd';
+
+  @override
+  String get lifeEventJobStartBody => 'Kontrolli enne alustamist oma lube ja seadista siis töökaart ja hüved.';
+
+  @override
+  String get lifeEventJobLeave => 'Lahkun töölt';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Tagasta tööasjad ja uuri, mis saab kindlustusest, mida töö sulle andis.';
+
+  @override
+  String get lifeEventLostPhone => 'Kaotasin telefoni või see varastati';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Tegutse kiiresti. Sinu telefoni ja SIM-kaardiga saab keegi pääseda sinu panka ja e-posti. Tee esimesed sammud kohe.';
+
+  @override
+  String get lifeEventJobLoss => 'Kaotasin töö';
+
+  @override
+  String get lifeEventJobLossBody => 'See on raske. Võta üks samm korraga. Mõnel taotlusel on tähtaeg, alusta neist.';
+
+  @override
+  String get lifeEventDisaster => 'Tulekahju, üleujutus või sissemurdmine kodus';
+
+  @override
+  String get lifeEventDisasterBody => 'Kõigepealt veendu, et kõik on ohutus kohas. Seejärel tee fotod, võta ühendust kindlustusega ja asenda kaotatu.';
+
+  @override
+  String get lifeEventCaringParent => 'Hoolitsen vanema eest';
+
+  @override
+  String get lifeEventCaringParentBody => 'Vali inimene, kelle eest hoolitsed. Kontrolli tema dokumente ja kindlustust ning hoia vajalik käepärast.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Kas ostsid või müüsid?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Kas alustad või lahkud?';
+
+  @override
+  String get lifeVariantBuy => 'Ostsin';
+
+  @override
+  String get lifeVariantSell => 'Müüsin';
+
+  @override
+  String get lifeVariantStart => 'Alustan';
+
+  @override
+  String get lifeVariantLeave => 'Lahkun';
+
+  @override
+  String get lifeTaskRedirectPost => 'Palu oma post uuele aadressile suunata';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Anna uus aadress tööandjale, maksuametile, arstile ja koolile';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Lõpeta või vii üle elektri-, vee- ja internetilepingud';
+
+  @override
+  String get lifeTaskMeterReadings => 'Võta väljakolimise päeval näidud ja tee fotod';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Lisa müügi- või üleandmisdokumentide foto Vaultarasse';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Anna üle võtmed, puldid ja pääsukiibid';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Hangi esmalt ametlik tõend uue nime kohta. Enamik asutusi küsib seda.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Teata uuest nimest pangale, tööandjale, arstile ja maksuametile';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Muuda nime e-postis, telefonis ja veebikontodel';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Lisa abielutunnistuse foto Vaultarasse';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Kontrolli, kes on poliisidel ja kontodel soodustatud isikuks';
+
+  @override
+  String get lifeTaskUpdateWill => 'Koosta või uuenda testament';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Lisa lõpliku lahutusotsuse foto Vaultarasse';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Sulge või jaga ühiskontod ja muuda ühiseid paroole';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Registreeri sünd ja hangi sünnitunnistus';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Lisa beebi Pere alla, et tema dokumente jälgitaks';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Vormista auto enda nimele seadusega lubatud aja jooksul';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Lisa müügilepingu foto Vaultarasse';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Teata transpordiametile, et müüsid auto, ja hoia tõend alles';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Eemalda teemaksuseadmed, parkimiskaardid ja isiklikud asjad';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Anna uuele tööandjale oma pangaandmed ja isikukood';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Liitu tööandja pakutava ravikindlustuse ja pensioniga';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Tagasta tööasjad, nagu sülearvuti, kaart või võtmed';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Küsi viimast palgalehte ja kirja, mis kinnitab töötamise kuupäevi';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Küsi, mis saab sinu ravikindlustusest ja pensionist';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Küsi töötuskindlustuse kohta kohe. Taotlustel on sageli tähtaeg.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Koosta otsekorralduste ja tellimuste nimekiri ning peata, mis saab';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Lisa vastuvõtukirja ja õppemaksuarvete fotod Vaultarasse';
+
+  @override
+  String get lifeTaskStudyFunding => 'Kontrolli stipendiumide, laenude või muu toetuse tähtaegu';
+
+  @override
+  String get lifeTaskRetirePension => 'Küsi, kuidas ja millal pensioni makstakse';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Korralda endale ravikindlustus, kui töökoha oma lõpeb';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Teata pangale ja maksuametile, et lahkud';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Lisa iga olulise dokumendi foto Vaultarasse';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Kontrolli, kas pead juhiloa vahetama';
+
+  @override
+  String get lifeTaskChildOwnId => 'Aita tal taotleda oma ID-kaarti, kui seda vaja on';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Aita tal avada oma pangakonto';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Hangi surmatunnistusest mõned kinnitatud koopiad';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Teavita panka, kindlustusi ja tööandjat';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Leia testament ja võta ühendust testamenditäitjaga';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Kui oled valmis, lülita tema kirjete meeldetuletused välja';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Helista operaatorile ja lase SIM-kaart blokeerida. See peatab SIM-vahetuse pettuse.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Helista pangale ja lase telefonis pangandus blokeerida';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Lukusta või kustuta telefon teisest seadmest';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Muuda e-posti ja sotsiaalmeedia paroolid';
+
+  @override
+  String get lifeTaskReportToPolice => 'Teata politseile ja hoia juhtumi number alles';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Veendu, et kõik on ohutus kohas ja neil on peavari';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Pildista kahjud enne koristamist';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Võta kindlustusega ühendust nii kiiresti kui saad';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Saada dokumentide koopiad Tõendipaketiga';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Uuri, kus tema olulisi pabereid hoitakse';
+
+  @override
+  String get lifeTaskParentPermission => 'Küsi, kas võid tema nimel pangaga, arstiga ja kindlustusega rääkida';
+
+  @override
+  String get lifeTaskParentMedicines => 'Pea nimekirja tema ravimitest ja arstidest';
+
+  @override
+  String get lifePlanDoClaim => 'Esita nõue';
+
+  @override
+  String get lifePlanStatusClaimed => 'Nõue esitatud';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Alusta hiljemalt $date. Uue saamine võtab tavaliselt umbes $weeks nädalat.',
+      one: 'Alusta hiljemalt $date. Uue saamine võtab tavaliselt umbes nädala.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Alusta kohe. Uue saamine võtab tavaliselt umbes $weeks nädalat.',
+      one: 'Alusta kohe. Uue saamine võtab tavaliselt umbes nädala.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Sinu plaan';
+
+  @override
+  String get lifePlanWhenHappened => 'Millal see juhtus?';
+
+  @override
+  String get lifePlanReminderNudge => 'Sinu plaanis on veel teha. Ava see, kui sul on hetk aega.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Kas uued kaardid ja dokumendid jõudsid kohale? Ava plaan, et kontrollida.';
+
+  @override
+  String get lifePlanDoFirst => 'Tee see kõigepealt';
+
+  @override
+  String get lifePlanSteps => 'Muud sammud';
+
+  @override
+  String get lifePlanAddOwnStep => 'Lisa oma samm';
+
+  @override
+  String get lifePlanOwnStepHint => 'Näiteks: Teavita kooli';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Saad lisada kuni 20 oma sammu.';
+
+  @override
+  String get lifePlanReadAloud => 'Loe ette';
+
+  @override
+  String get lifePlanStopReading => 'Lõpeta lugemine';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Ettelugemine pole selles telefonis saadaval.';
+
+  @override
+  String get lifePlanProofPack => 'Loo tõendipakett';
+
+  @override
+  String get lifePlanOpenFamily => 'Ava Pere';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kustutatud kirjet loetakse lõpetatuks.',
+      one: '1 kustutatud kirje loetakse lõpetatuks.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Nende uuendamine maksab tavaliselt umbes $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Kolid uude koju? Vaata, mida veel uuendada.';
 }

@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Jotain on vielä tekemättä. Avaa suunnitelma ja vie asiat loppuun.",
   "lifePlanSuggestCar": "Ostitko tai myitkö auton? Katso, mitä muuta pitää päivittää.",
   "lifePlanSuggestTrip": "Muutatko sinne joksikin aikaa?",
-  "lifePlanSuggestTripBody": "Aloita suunnitelma muutosta toiseen maahan. Vaultara näyttää, mitä hoitaa ennen lähtöä."
+  "lifePlanSuggestTripBody": "Aloita suunnitelma muutosta toiseen maahan. Vaultara näyttää, mitä hoitaa ennen lähtöä.",
+  "lifeGroupHome": "Koti",
+  "lifeGroupFamily": "Perhe",
+  "lifeGroupWork": "Työ ja opiskelu",
+  "lifeGroupCarTravel": "Auto ja matkat",
+  "lifeGroupEmergency": "Jotain meni pieleen",
+  "lifeEventCarBuy": "Ostin auton",
+  "lifeEventCarBuyBody": "Hanki vakuutus ennen kuin ajat sen kotiin ja rekisteröi auto sitten omiin nimiisi.",
+  "lifeEventCarSell": "Myin auton",
+  "lifeEventCarSellBody": "Ilmoita myynnistä liikennevirastoon ja lopeta vakuutus, kun auto ei ole enää sinun.",
+  "lifeEventJobStart": "Aloitan uudessa työssä",
+  "lifeEventJobStartBody": "Tarkista luvat ennen aloitusta ja järjestä sitten työkortti ja edut.",
+  "lifeEventJobLeave": "Lähden työstäni",
+  "lifeEventJobLeaveBody": "Palauta työvälineet ja tarkista, mitä työn kautta saamallesi turvalle tapahtuu.",
+  "lifeEventLostPhone": "Puhelimeni katosi tai varastettiin",
+  "lifeEventLostPhoneBody": "Toimi nopeasti. Joku, jolla on puhelimesi ja SIM-korttisi, voi päästä pankkiisi ja sähköpostiisi. Tee ensimmäiset vaiheet heti.",
+  "lifeEventJobLoss": "Menetin työni",
+  "lifeEventJobLossBody": "Tämä on raskasta. Etene askel kerrallaan. Joillakin hakemuksilla on määräaika, joten aloita niistä.",
+  "lifeEventDisaster": "Tulipalo, tulva tai murto kotona",
+  "lifeEventDisasterBody": "Varmista ensin, että kaikki ovat turvassa. Ota sitten kuvia, ota yhteys vakuutusyhtiöön ja korvaa menetetty.",
+  "lifeEventCaringParent": "Huolehdin vanhemmastani",
+  "lifeEventCaringParentBody": "Valitse henkilö, josta huolehdit. Tarkista hänen asiakirjansa ja vakuutuksensa ja pidä tarvittava lähellä.",
+  "lifeVariantCarQuestion": "Ostitko vai myitkö?",
+  "lifeVariantJobQuestion": "Aloitatko vai lähdetkö?",
+  "lifeVariantBuy": "Ostin",
+  "lifeVariantSell": "Myin",
+  "lifeVariantStart": "Aloitan",
+  "lifeVariantLeave": "Lähden",
+  "lifeTaskRedirectPost": "Pyydä postisi edelleenlähetystä uuteen osoitteeseen",
+  "lifeTaskNewAddressEveryone": "Anna uusi osoite työnantajalle, verottajalle, lääkärille ja koululle",
+  "lifeTaskMoveUtilities": "Irtisano tai siirrä sähkö-, vesi- ja nettisopimukset",
+  "lifeTaskMeterReadings": "Ota mittarilukemat ja kuvat muuttopäivänä",
+  "lifeTaskSaveHomePapers": "Lisää kuva kauppa- tai luovutuskirjoista Vaultaraan",
+  "lifeTaskHandOverKeys": "Luovuta avaimet, kaukosäätimet ja kulkutunnisteet",
+  "lifeTaskOfficialNameProof": "Hanki ensin virallinen todistus uudesta nimestäsi. Useimmat virastot pyytävät sitä.",
+  "lifeTaskTellNameChange": "Kerro uudesta nimestäsi pankille, työnantajalle, lääkärille ja verottajalle",
+  "lifeTaskUpdateOnlineAccounts": "Vaihda nimesi sähköpostiin, puhelimeen ja verkkotileille",
+  "lifeTaskSaveMarriageCertificate": "Lisää kuva vihkitodistuksesta Vaultaraan",
+  "lifeTaskCheckBeneficiaries": "Tarkista, kuka on edunsaajana vakuutuksissasi ja tileilläsi",
+  "lifeTaskUpdateWill": "Laadi tai päivitä testamentti",
+  "lifeTaskSaveDivorceOrder": "Lisää kuva lainvoimaisesta avioeropäätöksestä Vaultaraan",
+  "lifeTaskSplitSharedAccounts": "Sulje tai jaa yhteiset tilit ja vaihda yhteiset salasanat",
+  "lifeTaskRegisterBirth": "Rekisteröi syntymä ja hanki syntymätodistus",
+  "lifeTaskAddBabyToFamily": "Lisää vauva Perheeseen, jotta hänen asiakirjojaan seurataan",
+  "lifeTaskCarRegisterInName": "Rekisteröi auto nimiisi lain sallimassa ajassa",
+  "lifeTaskCarSavePapers": "Lisää kuva kauppakirjasta Vaultaraan",
+  "lifeTaskCarNotifySale": "Ilmoita liikennevirastoon, että myit auton, ja säilytä todiste",
+  "lifeTaskCarRemoveTags": "Poista tietullilaitteet, pysäköintikortit ja omat tavarat",
+  "lifeTaskJobGiveDetails": "Anna uudelle työnantajalle pankkitietosi ja verotunnisteesi",
+  "lifeTaskJobJoinBenefits": "Liity työnantajan tarjoamaan terveysturvaan ja eläkkeeseen",
+  "lifeTaskJobReturnItems": "Palauta työvälineet, kuten kannettava, kortti tai avaimet",
+  "lifeTaskJobLastPayslip": "Pyydä viimeinen palkkalaskelma ja työtodistus, jossa näkyvät työsuhteen päivät",
+  "lifeTaskJobAskBenefits": "Kysy, mitä terveysturvallesi ja eläkkeellesi tapahtuu",
+  "lifeTaskJobUnemployment": "Kysy työttömyysturvasta nyt. Hakemuksilla on usein määräaika.",
+  "lifeTaskJobPauseDebits": "Listaa suoraveloitukset ja tilaukset ja keskeytä, mitä voit",
+  "lifeTaskStudySaveLetters": "Lisää kuvat hyväksymiskirjeestä ja maksulaskuista Vaultaraan",
+  "lifeTaskStudyFunding": "Tarkista apurahojen, lainojen ja muun tuen määräajat",
+  "lifeTaskRetirePension": "Kysy, miten ja milloin eläkkeesi maksetaan",
+  "lifeTaskRetireOwnCover": "Hanki oma terveysvakuutus, jos työn kautta saatu päättyy",
+  "lifeTaskCountryTellBankTax": "Kerro pankille ja verottajalle, että muutat pois",
+  "lifeTaskCountryScanCopies": "Lisää kuva jokaisesta tärkeästä asiakirjasta Vaultaraan",
+  "lifeTaskCountryLicenceRules": "Tarkista, pitääkö ajokortti vaihtaa",
+  "lifeTaskChildOwnId": "Auta häntä hakemaan omaa henkilökorttia, jos hän tarvitsee sitä",
+  "lifeTaskChildBankAccount": "Auta häntä avaamaan oma pankkitili",
+  "lifeTaskDeathCertificates": "Hanki muutama oikeaksi todistettu kopio kuolintodistuksesta",
+  "lifeTaskDeathTellOrganisations": "Ilmoita pankille, vakuutusyhtiöille ja työnantajalle",
+  "lifeTaskDeathFindWill": "Etsi testamentti ja ota yhteys toimeenpanijaan",
+  "lifeTaskDeathStopReminders": "Kun olet valmis, poista hänen tietojensa muistutukset käytöstä",
+  "lifeTaskPhoneBlockSim": "Soita operaattorille ja sulje SIM-kortti. Se estää SIM-huijauksen.",
+  "lifeTaskPhoneBlockBanking": "Soita pankkiin ja sulje puhelimen pankkipalvelut",
+  "lifeTaskPhoneLockErase": "Lukitse tai tyhjennä puhelin toiselta laitteelta",
+  "lifeTaskPhoneChangePasswords": "Vaihda sähköpostin ja somen salasanat",
+  "lifeTaskReportToPolice": "Tee rikosilmoitus ja säilytä asianumero",
+  "lifeTaskDisasterSafePlace": "Varmista, että kaikki ovat turvassa ja heillä on paikka yöpyä",
+  "lifeTaskDisasterPhotos": "Kuvaa vahingot ennen siivoamista",
+  "lifeTaskDisasterContactInsurer": "Ota yhteys vakuutusyhtiöön mahdollisimman pian",
+  "lifeTaskDisasterProofPack": "Lähetä kopiot asiakirjoistasi Todistepaketilla",
+  "lifeTaskParentFindPapers": "Selvitä, missä hänen tärkeät paperinsa säilytetään",
+  "lifeTaskParentPermission": "Kysy, saatko asioida hänen puolestaan pankin, lääkärin ja vakuutusyhtiön kanssa",
+  "lifeTaskParentMedicines": "Pidä listaa hänen lääkkeistään ja lääkäreistään",
+  "lifePlanDoClaim": "Hae korvausta",
+  "lifePlanStatusClaimed": "Korvausta haettu",
+  "lifePlanStartBy": "{weeks, plural, =1{Aloita viimeistään {date}. Uuden saaminen kestää yleensä noin viikon.} other{Aloita viimeistään {date}. Uuden saaminen kestää yleensä noin {weeks} viikkoa.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Aloita nyt. Uuden saaminen kestää yleensä noin viikon.} other{Aloita nyt. Uuden saaminen kestää yleensä noin {weeks} viikkoa.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Suunnitelmasi",
+  "lifePlanWhenHappened": "Milloin se tapahtui?",
+  "lifePlanReminderNudge": "Suunnitelmassasi on vielä tehtävää. Avaa se, kun sinulla on hetki aikaa.",
+  "lifePlanReminderCheckIn": "Saapuivatko uudet korttisi ja asiakirjasi? Avaa suunnitelma ja tarkista.",
+  "lifePlanDoFirst": "Tee tämä ensin",
+  "lifePlanSteps": "Muut vaiheet",
+  "lifePlanAddOwnStep": "Lisää oma vaihe",
+  "lifePlanOwnStepHint": "Esimerkiksi: Ilmoita koululle",
+  "lifePlanOwnStepLimit": "Voit lisätä enintään 20 omaa vaihetta.",
+  "lifePlanReadAloud": "Lue ääneen",
+  "lifePlanStopReading": "Lopeta lukeminen",
+  "lifePlanReadAloudUnavailable": "Ääneen lukeminen ei ole käytettävissä tässä puhelimessa.",
+  "lifePlanProofPack": "Luo todistepaketti",
+  "lifePlanOpenFamily": "Avaa Perhe",
+  "lifePlanRemoved": "{count, plural, =1{1 poistamasi tieto lasketaan lopetetuksi.} other{{count} poistamaasi tietoa lasketaan lopetetuiksi.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Näiden uusiminen maksaa yleensä noin {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Muutatko uuteen kotiin? Katso, mitä muuta pitää päivittää."
 }

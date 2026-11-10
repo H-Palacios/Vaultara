@@ -2187,5 +2187,136 @@
   "lifePlanReminderAfter": "አንዳንድ ነገሮች ገና ቀርተዋል። ለማጠናቀቅ እቅዱን ይክፈቱ።",
   "lifePlanSuggestCar": "መኪና ገዝተዋል ወይም ሸጠዋል? ሌላ ምን ማዘመን እንዳለብዎ ይመልከቱ።",
   "lifePlanSuggestTrip": "ለተወሰነ ጊዜ ወደዚያ እየተዛወሩ ነው?",
-  "lifePlanSuggestTripBody": "ወደ ሌላ አገር ለመዛወር እቅድ ይጀምሩ። Vaultara ከመሄድዎ በፊት ምን ማስተካከል እንዳለብዎ ያሳያል።"
+  "lifePlanSuggestTripBody": "ወደ ሌላ አገር ለመዛወር እቅድ ይጀምሩ። Vaultara ከመሄድዎ በፊት ምን ማስተካከል እንዳለብዎ ያሳያል።",
+  "lifeGroupHome": "ቤት",
+  "lifeGroupFamily": "ቤተሰብ",
+  "lifeGroupWork": "ሥራ እና ትምህርት",
+  "lifeGroupCarTravel": "መኪና እና ጉዞ",
+  "lifeGroupEmergency": "የሆነ ችግር ተፈጥሯል",
+  "lifeEventCarBuy": "መኪና ገዛሁ",
+  "lifeEventCarBuyBody": "ወደ ቤት ከመንዳትህ በፊት ኢንሹራንስ አግኝ፣ ከዚያ መኪናውን በስምህ አስመዝግብ።",
+  "lifeEventCarSell": "መኪና ሸጥኩ",
+  "lifeEventCarSellBody": "ሽያጩን ለፈቃድ ቢሮ አሳውቅ፣ መኪናው የአንተ ካልሆነ በኋላ ኢንሹራንሱን ሰርዝ።",
+  "lifeEventJobStart": "አዲስ ሥራ እጀምራለሁ",
+  "lifeEventJobStartBody": "ከመጀመርህ በፊት ፈቃዶችህን አረጋግጥ፣ ከዚያ የሥራ ካርድህንና ጥቅማ ጥቅሞችህን አዘጋጅ።",
+  "lifeEventJobLeave": "ሥራዬን እለቃለሁ",
+  "lifeEventJobLeaveBody": "የሥራ ዕቃዎችን መልስ፣ ሥራህ የሰጠህ ሽፋን ምን እንደሚሆን አረጋግጥ።",
+  "lifeEventLostPhone": "ስልኬ ጠፋ ወይም ተሰረቀ",
+  "lifeEventLostPhoneBody": "በፍጥነት እርምጃ ውሰድ። ስልክህና ሲም ካርድህ ያለው ሰው ወደ ባንክህና ኢሜይልህ መግባት ይችላል። የመጀመሪያዎቹን ደረጃዎች ወዲያውኑ አድርግ።",
+  "lifeEventJobLoss": "ሥራዬን አጣሁ",
+  "lifeEventJobLossBody": "ይህ ከባድ ነው። በአንድ ጊዜ አንድ ደረጃ ውሰድ። አንዳንድ የይገባኛል ጥያቄዎች የጊዜ ገደብ አላቸው፣ ስለዚህ በእነሱ ጀምር።",
+  "lifeEventDisaster": "በቤት ውስጥ እሳት፣ ጎርፍ ወይም ስርቆት",
+  "lifeEventDisasterBody": "በመጀመሪያ ሁሉም ደህና መሆናቸውን አረጋግጥ። ከዚያ ፎቶ አንሳ፣ የኢንሹራንስ ድርጅትህን አግኝ እና የጠፋውን ተካ።",
+  "lifeEventCaringParent": "ወላጅን እየተንከባከብኩ ነው",
+  "lifeEventCaringParentBody": "የምትንከባከበውን ሰው ምረጥ። ሰነዶቻቸውንና ሽፋናቸውን አረጋግጥ፣ የሚያስፈልግህንም በአቅራቢያ አስቀምጥ።",
+  "lifeVariantCarQuestion": "ገዛህ ወይስ ሸጥክ?",
+  "lifeVariantJobQuestion": "እየጀመርክ ነው ወይስ እየለቀቅክ?",
+  "lifeVariantBuy": "ገዛሁ",
+  "lifeVariantSell": "ሸጥኩ",
+  "lifeVariantStart": "እየጀመርኩ",
+  "lifeVariantLeave": "እየለቀቅኩ",
+  "lifeTaskRedirectPost": "ፖስታህ ወደ አዲሱ አድራሻህ እንዲላክ ጠይቅ",
+  "lifeTaskNewAddressEveryone": "አዲሱን አድራሻህን ለአሠሪህ፣ ለግብር ቢሮ፣ ለሐኪምህ እና ለትምህርት ቤት ስጥ",
+  "lifeTaskMoveUtilities": "የኤሌክትሪክ፣ የውሃ እና የኢንተርኔት ሂሳቦችህን ዝጋ ወይም አዛውር",
+  "lifeTaskMeterReadings": "በምትለቅበት ቀን የቆጣሪ ንባቦችንና ፎቶዎችን ውሰድ",
+  "lifeTaskSaveHomePapers": "የሽያጭ ወይም የዝውውር ሰነዶችን ፎቶ ወደ Vaultara አክል",
+  "lifeTaskHandOverKeys": "ቁልፎችን፣ ሪሞቶችንና የመግቢያ ካርዶችን አስረክብ",
+  "lifeTaskOfficialNameProof": "በመጀመሪያ የአዲሱን ስምህን ኦፊሴላዊ ማረጋገጫ አግኝ። አብዛኞቹ ቢሮዎች ይጠይቁታል።",
+  "lifeTaskTellNameChange": "ስለ አዲሱ ስምህ ለባንክህ፣ ለአሠሪህ፣ ለሐኪምህ እና ለግብር ቢሮ አሳውቅ",
+  "lifeTaskUpdateOnlineAccounts": "በኢሜይልህ፣ በስልክህ እና በኦንላይን መለያዎችህ ላይ ስምህን ቀይር",
+  "lifeTaskSaveMarriageCertificate": "የጋብቻ የምስክር ወረቀቱን ፎቶ ወደ Vaultara አክል",
+  "lifeTaskCheckBeneficiaries": "በፖሊሲዎችህና በሂሳቦችህ ላይ ተጠቃሚ ተብሎ የተጻፈው ማን እንደሆነ አረጋግጥ",
+  "lifeTaskUpdateWill": "ኑዛዜ አዘጋጅ ወይም አዘምን",
+  "lifeTaskSaveDivorceOrder": "የመጨረሻውን የፍቺ ውሳኔ ፎቶ ወደ Vaultara አክል",
+  "lifeTaskSplitSharedAccounts": "የጋራ ሂሳቦችን ዝጋ ወይም ከፋፍል፣ የጋራ የይለፍ ቃሎችን ቀይር",
+  "lifeTaskRegisterBirth": "ልደቱን አስመዝግብና የልደት የምስክር ወረቀቱን አግኝ",
+  "lifeTaskAddBabyToFamily": "ሰነዶቻቸው እንዲከታተሉ ሕፃኑን በቤተሰብ ውስጥ አክል",
+  "lifeTaskCarRegisterInName": "ሕጉ በሚፈቅደው ጊዜ ውስጥ መኪናውን በስምህ አስመዝግብ",
+  "lifeTaskCarSavePapers": "የሽያጭ ስምምነቱን ፎቶ ወደ Vaultara አክል",
+  "lifeTaskCarNotifySale": "መኪናውን እንደሸጥክ ለፈቃድ ቢሮ አሳውቅና ማረጋገጫውን ያዝ",
+  "lifeTaskCarRemoveTags": "የክፍያ መንገድ መለያዎችን፣ የመኪና ማቆሚያ ካርዶችንና የግል ዕቃዎችን አስወግድ",
+  "lifeTaskJobGiveDetails": "የባንክ ዝርዝሮችህንና የግብር ቁጥርህን ለአዲሱ አሠሪህ ስጥ",
+  "lifeTaskJobJoinBenefits": "አሠሪህ የሚያቀርበውን የሕክምና ሽፋንና ጡረታ ተቀላቀል",
+  "lifeTaskJobReturnItems": "እንደ ላፕቶፕ፣ ካርድ ወይም ቁልፎች ያሉ የሥራ ዕቃዎችን መልስ",
+  "lifeTaskJobLastPayslip": "የመጨረሻ የደመወዝ ወረቀትህንና የሥራ ቀናትህን የሚያረጋግጥ ደብዳቤ ጠይቅ",
+  "lifeTaskJobAskBenefits": "የሕክምና ሽፋንህና ጡረታህ ምን እንደሚሆን ጠይቅ",
+  "lifeTaskJobUnemployment": "ስለ ሥራ አጥነት ጥቅማ ጥቅሞች አሁኑኑ ጠይቅ። ጥያቄዎች ብዙ ጊዜ የጊዜ ገደብ አላቸው።",
+  "lifeTaskJobPauseDebits": "የቀጥታ ክፍያዎችህንና ምዝገባዎችህን ዘርዝር፣ የምትችለውንም አቁም",
+  "lifeTaskStudySaveLetters": "የተቀባይነት ደብዳቤህንና የክፍያ መግለጫዎችህን ፎቶዎች ወደ Vaultara አክል",
+  "lifeTaskStudyFunding": "የስኮላርሺፕ፣ የብድር ወይም የሌላ የገንዘብ ድጋፍ የጊዜ ገደቦችን አረጋግጥ",
+  "lifeTaskRetirePension": "ጡረታህ እንዴትና መቼ እንደሚከፈል ጠይቅ",
+  "lifeTaskRetireOwnCover": "የሥራ ሽፋንህ ካበቃ የራስህን የሕክምና ሽፋን አዘጋጅ",
+  "lifeTaskCountryTellBankTax": "እንደምትሄድ ለባንክህና ለግብር ቢሮ አሳውቅ",
+  "lifeTaskCountryScanCopies": "የእያንዳንዱን አስፈላጊ ሰነድ ፎቶ ወደ Vaultara አክል",
+  "lifeTaskCountryLicenceRules": "መንጃ ፈቃድህን መቀየር እንዳለብህ አረጋግጥ",
+  "lifeTaskChildOwnId": "ካስፈለጋቸው የራሳቸውን መታወቂያ እንዲያመለክቱ እርዳቸው",
+  "lifeTaskChildBankAccount": "የራሳቸውን የባንክ ሂሳብ እንዲከፍቱ እርዳቸው",
+  "lifeTaskDeathCertificates": "የሞት የምስክር ወረቀቱን ጥቂት የተረጋገጡ ቅጂዎች አግኝ",
+  "lifeTaskDeathTellOrganisations": "ለባንኩ፣ ለኢንሹራንስ ድርጅቶችና ለአሠሪው አሳውቅ",
+  "lifeTaskDeathFindWill": "ኑዛዜውን ፈልግና የንብረት አስፈጻሚውን አግኝ",
+  "lifeTaskDeathStopReminders": "ዝግጁ ስትሆን ለመዝገቦቻቸው አስታዋሾችን አጥፋ",
+  "lifeTaskPhoneBlockSim": "ሲም ካርዱን ለማገድ ወደ ኔትወርክህ ደውል። ይህ የሲም ቅያሪ ማጭበርበርን ያስቆማል።",
+  "lifeTaskPhoneBlockBanking": "በስልኩ ላይ ያለውን የባንክ አገልግሎት ለማገድ ወደ ባንክህ ደውል",
+  "lifeTaskPhoneLockErase": "ስልኩን ከሌላ መሣሪያ ቆልፍ ወይም አጥፋ",
+  "lifeTaskPhoneChangePasswords": "የኢሜይልና የማኅበራዊ ሚዲያ የይለፍ ቃሎችህን ቀይር",
+  "lifeTaskReportToPolice": "ለፖሊስ አመልክትና የጉዳዩን ቁጥር ያዝ",
+  "lifeTaskDisasterSafePlace": "ሁሉም ደህና መሆናቸውንና የሚያርፉበት ቦታ እንዳላቸው አረጋግጥ",
+  "lifeTaskDisasterPhotos": "ከማጽዳትህ በፊት የጉዳቱን ፎቶዎች አንሳ",
+  "lifeTaskDisasterContactInsurer": "በተቻለ ፍጥነት የኢንሹራንስ ድርጅትህን አግኝ",
+  "lifeTaskDisasterProofPack": "የሰነዶችህን ቅጂዎች በማስረጃ ጥቅል ላክ",
+  "lifeTaskParentFindPapers": "አስፈላጊ ሰነዶቻቸው የት እንደሚቀመጡ እወቅ",
+  "lifeTaskParentPermission": "በእነሱ ስም ከባንካቸው፣ ከሐኪማቸውና ከኢንሹራንስ ድርጅታቸው ጋር መነጋገር ትችል እንደሆነ ጠይቅ",
+  "lifeTaskParentMedicines": "የመድኃኒቶቻቸውንና የሐኪሞቻቸውን ዝርዝር ያዝ",
+  "lifePlanDoClaim": "የይገባኛል ጥያቄ አቅርብ",
+  "lifePlanStatusClaimed": "ጥያቄ ቀርቧል",
+  "lifePlanStartBy": "{weeks, plural, =1{እስከ {date} ጀምር። አዲሱ ብዙ ጊዜ አንድ ሳምንት ገደማ ይወስዳል።} other{እስከ {date} ጀምር። አዲሱ ብዙ ጊዜ {weeks} ሳምንታት ገደማ ይወስዳል።}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{አሁን ጀምር። አዲሱ ብዙ ጊዜ አንድ ሳምንት ገደማ ይወስዳል።} other{አሁን ጀምር። አዲሱ ብዙ ጊዜ {weeks} ሳምንታት ገደማ ይወስዳል።}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ዕቅድህ",
+  "lifePlanWhenHappened": "መቼ ሆነ?",
+  "lifePlanReminderNudge": "ዕቅድህ አሁንም የሚሠሩ ነገሮች አሉት። ጊዜ ሲኖርህ ክፈተው።",
+  "lifePlanReminderCheckIn": "አዲሶቹ ካርዶችህና ሰነዶችህ ደረሱ? ለማረጋገጥ ዕቅዱን ክፈት።",
+  "lifePlanDoFirst": "ይህን በመጀመሪያ አድርግ",
+  "lifePlanSteps": "ሌሎች ደረጃዎች",
+  "lifePlanAddOwnStep": "የራስህን ደረጃ አክል",
+  "lifePlanOwnStepHint": "ለምሳሌ፦ ለትምህርት ቤቱ አሳውቅ",
+  "lifePlanOwnStepLimit": "እስከ 20 የራስህን ደረጃዎች ማከል ትችላለህ።",
+  "lifePlanReadAloud": "ጮክ ብለህ አንብብ",
+  "lifePlanStopReading": "ማንበብ አቁም",
+  "lifePlanReadAloudUnavailable": "ጮክ ብሎ ማንበብ በዚህ ስልክ ላይ አይገኝም።",
+  "lifePlanProofPack": "የማስረጃ ጥቅል አዘጋጅ",
+  "lifePlanOpenFamily": "ቤተሰብን ክፈት",
+  "lifePlanRemoved": "{count, plural, =1{የሰረዝከው 1 መዝገብ እንደተሰረዘ ይቆጠራል።} other{የሰረዝካቸው {count} መዝገቦች እንደተሰረዙ ይቆጠራሉ።}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "እነዚህን ማደስ ብዙ ጊዜ ወደ {amount} ገደማ ያስወጣል።",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "ወደ አዲስ ቤት እየተዛወርክ ነው? ሌላ ምን ማዘመን እንዳለብህ ተመልከት።"
 }

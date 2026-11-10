@@ -2314,5 +2314,136 @@
   "lifePlanReminderAfter": "Midagi on veel teha. Ava plaan, et see lõpetada.",
   "lifePlanSuggestCar": "Ostsid või müüsid auto? Vaata, mida veel uuendada.",
   "lifePlanSuggestTrip": "Kolid sinna mõneks ajaks?",
-  "lifePlanSuggestTripBody": "Alusta plaani teise riiki kolimiseks. Vaultara näitab, mida enne lahkumist korda ajada."
+  "lifePlanSuggestTripBody": "Alusta plaani teise riiki kolimiseks. Vaultara näitab, mida enne lahkumist korda ajada.",
+  "lifeGroupHome": "Kodu",
+  "lifeGroupFamily": "Pere",
+  "lifeGroupWork": "Töö ja õpingud",
+  "lifeGroupCarTravel": "Auto ja reisimine",
+  "lifeGroupEmergency": "Midagi läks valesti",
+  "lifeEventCarBuy": "Ostsin auto",
+  "lifeEventCarBuyBody": "Kindlusta auto enne koju sõitmist ja vormista see siis enda nimele.",
+  "lifeEventCarSell": "Müüsin auto",
+  "lifeEventCarSellBody": "Teata müügist transpordiametile ja lõpeta kindlustus, kui auto pole enam sinu.",
+  "lifeEventJobStart": "Alustan uut tööd",
+  "lifeEventJobStartBody": "Kontrolli enne alustamist oma lube ja seadista siis töökaart ja hüved.",
+  "lifeEventJobLeave": "Lahkun töölt",
+  "lifeEventJobLeaveBody": "Tagasta tööasjad ja uuri, mis saab kindlustusest, mida töö sulle andis.",
+  "lifeEventLostPhone": "Kaotasin telefoni või see varastati",
+  "lifeEventLostPhoneBody": "Tegutse kiiresti. Sinu telefoni ja SIM-kaardiga saab keegi pääseda sinu panka ja e-posti. Tee esimesed sammud kohe.",
+  "lifeEventJobLoss": "Kaotasin töö",
+  "lifeEventJobLossBody": "See on raske. Võta üks samm korraga. Mõnel taotlusel on tähtaeg, alusta neist.",
+  "lifeEventDisaster": "Tulekahju, üleujutus või sissemurdmine kodus",
+  "lifeEventDisasterBody": "Kõigepealt veendu, et kõik on ohutus kohas. Seejärel tee fotod, võta ühendust kindlustusega ja asenda kaotatu.",
+  "lifeEventCaringParent": "Hoolitsen vanema eest",
+  "lifeEventCaringParentBody": "Vali inimene, kelle eest hoolitsed. Kontrolli tema dokumente ja kindlustust ning hoia vajalik käepärast.",
+  "lifeVariantCarQuestion": "Kas ostsid või müüsid?",
+  "lifeVariantJobQuestion": "Kas alustad või lahkud?",
+  "lifeVariantBuy": "Ostsin",
+  "lifeVariantSell": "Müüsin",
+  "lifeVariantStart": "Alustan",
+  "lifeVariantLeave": "Lahkun",
+  "lifeTaskRedirectPost": "Palu oma post uuele aadressile suunata",
+  "lifeTaskNewAddressEveryone": "Anna uus aadress tööandjale, maksuametile, arstile ja koolile",
+  "lifeTaskMoveUtilities": "Lõpeta või vii üle elektri-, vee- ja internetilepingud",
+  "lifeTaskMeterReadings": "Võta väljakolimise päeval näidud ja tee fotod",
+  "lifeTaskSaveHomePapers": "Lisa müügi- või üleandmisdokumentide foto Vaultarasse",
+  "lifeTaskHandOverKeys": "Anna üle võtmed, puldid ja pääsukiibid",
+  "lifeTaskOfficialNameProof": "Hangi esmalt ametlik tõend uue nime kohta. Enamik asutusi küsib seda.",
+  "lifeTaskTellNameChange": "Teata uuest nimest pangale, tööandjale, arstile ja maksuametile",
+  "lifeTaskUpdateOnlineAccounts": "Muuda nime e-postis, telefonis ja veebikontodel",
+  "lifeTaskSaveMarriageCertificate": "Lisa abielutunnistuse foto Vaultarasse",
+  "lifeTaskCheckBeneficiaries": "Kontrolli, kes on poliisidel ja kontodel soodustatud isikuks",
+  "lifeTaskUpdateWill": "Koosta või uuenda testament",
+  "lifeTaskSaveDivorceOrder": "Lisa lõpliku lahutusotsuse foto Vaultarasse",
+  "lifeTaskSplitSharedAccounts": "Sulge või jaga ühiskontod ja muuda ühiseid paroole",
+  "lifeTaskRegisterBirth": "Registreeri sünd ja hangi sünnitunnistus",
+  "lifeTaskAddBabyToFamily": "Lisa beebi Pere alla, et tema dokumente jälgitaks",
+  "lifeTaskCarRegisterInName": "Vormista auto enda nimele seadusega lubatud aja jooksul",
+  "lifeTaskCarSavePapers": "Lisa müügilepingu foto Vaultarasse",
+  "lifeTaskCarNotifySale": "Teata transpordiametile, et müüsid auto, ja hoia tõend alles",
+  "lifeTaskCarRemoveTags": "Eemalda teemaksuseadmed, parkimiskaardid ja isiklikud asjad",
+  "lifeTaskJobGiveDetails": "Anna uuele tööandjale oma pangaandmed ja isikukood",
+  "lifeTaskJobJoinBenefits": "Liitu tööandja pakutava ravikindlustuse ja pensioniga",
+  "lifeTaskJobReturnItems": "Tagasta tööasjad, nagu sülearvuti, kaart või võtmed",
+  "lifeTaskJobLastPayslip": "Küsi viimast palgalehte ja kirja, mis kinnitab töötamise kuupäevi",
+  "lifeTaskJobAskBenefits": "Küsi, mis saab sinu ravikindlustusest ja pensionist",
+  "lifeTaskJobUnemployment": "Küsi töötuskindlustuse kohta kohe. Taotlustel on sageli tähtaeg.",
+  "lifeTaskJobPauseDebits": "Koosta otsekorralduste ja tellimuste nimekiri ning peata, mis saab",
+  "lifeTaskStudySaveLetters": "Lisa vastuvõtukirja ja õppemaksuarvete fotod Vaultarasse",
+  "lifeTaskStudyFunding": "Kontrolli stipendiumide, laenude või muu toetuse tähtaegu",
+  "lifeTaskRetirePension": "Küsi, kuidas ja millal pensioni makstakse",
+  "lifeTaskRetireOwnCover": "Korralda endale ravikindlustus, kui töökoha oma lõpeb",
+  "lifeTaskCountryTellBankTax": "Teata pangale ja maksuametile, et lahkud",
+  "lifeTaskCountryScanCopies": "Lisa iga olulise dokumendi foto Vaultarasse",
+  "lifeTaskCountryLicenceRules": "Kontrolli, kas pead juhiloa vahetama",
+  "lifeTaskChildOwnId": "Aita tal taotleda oma ID-kaarti, kui seda vaja on",
+  "lifeTaskChildBankAccount": "Aita tal avada oma pangakonto",
+  "lifeTaskDeathCertificates": "Hangi surmatunnistusest mõned kinnitatud koopiad",
+  "lifeTaskDeathTellOrganisations": "Teavita panka, kindlustusi ja tööandjat",
+  "lifeTaskDeathFindWill": "Leia testament ja võta ühendust testamenditäitjaga",
+  "lifeTaskDeathStopReminders": "Kui oled valmis, lülita tema kirjete meeldetuletused välja",
+  "lifeTaskPhoneBlockSim": "Helista operaatorile ja lase SIM-kaart blokeerida. See peatab SIM-vahetuse pettuse.",
+  "lifeTaskPhoneBlockBanking": "Helista pangale ja lase telefonis pangandus blokeerida",
+  "lifeTaskPhoneLockErase": "Lukusta või kustuta telefon teisest seadmest",
+  "lifeTaskPhoneChangePasswords": "Muuda e-posti ja sotsiaalmeedia paroolid",
+  "lifeTaskReportToPolice": "Teata politseile ja hoia juhtumi number alles",
+  "lifeTaskDisasterSafePlace": "Veendu, et kõik on ohutus kohas ja neil on peavari",
+  "lifeTaskDisasterPhotos": "Pildista kahjud enne koristamist",
+  "lifeTaskDisasterContactInsurer": "Võta kindlustusega ühendust nii kiiresti kui saad",
+  "lifeTaskDisasterProofPack": "Saada dokumentide koopiad Tõendipaketiga",
+  "lifeTaskParentFindPapers": "Uuri, kus tema olulisi pabereid hoitakse",
+  "lifeTaskParentPermission": "Küsi, kas võid tema nimel pangaga, arstiga ja kindlustusega rääkida",
+  "lifeTaskParentMedicines": "Pea nimekirja tema ravimitest ja arstidest",
+  "lifePlanDoClaim": "Esita nõue",
+  "lifePlanStatusClaimed": "Nõue esitatud",
+  "lifePlanStartBy": "{weeks, plural, =1{Alusta hiljemalt {date}. Uue saamine võtab tavaliselt umbes nädala.} other{Alusta hiljemalt {date}. Uue saamine võtab tavaliselt umbes {weeks} nädalat.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Alusta kohe. Uue saamine võtab tavaliselt umbes nädala.} other{Alusta kohe. Uue saamine võtab tavaliselt umbes {weeks} nädalat.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Sinu plaan",
+  "lifePlanWhenHappened": "Millal see juhtus?",
+  "lifePlanReminderNudge": "Sinu plaanis on veel teha. Ava see, kui sul on hetk aega.",
+  "lifePlanReminderCheckIn": "Kas uued kaardid ja dokumendid jõudsid kohale? Ava plaan, et kontrollida.",
+  "lifePlanDoFirst": "Tee see kõigepealt",
+  "lifePlanSteps": "Muud sammud",
+  "lifePlanAddOwnStep": "Lisa oma samm",
+  "lifePlanOwnStepHint": "Näiteks: Teavita kooli",
+  "lifePlanOwnStepLimit": "Saad lisada kuni 20 oma sammu.",
+  "lifePlanReadAloud": "Loe ette",
+  "lifePlanStopReading": "Lõpeta lugemine",
+  "lifePlanReadAloudUnavailable": "Ettelugemine pole selles telefonis saadaval.",
+  "lifePlanProofPack": "Loo tõendipakett",
+  "lifePlanOpenFamily": "Ava Pere",
+  "lifePlanRemoved": "{count, plural, =1{1 kustutatud kirje loetakse lõpetatuks.} other{{count} kustutatud kirjet loetakse lõpetatuks.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Nende uuendamine maksab tavaliselt umbes {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Kolid uude koju? Vaata, mida veel uuendada."
 }

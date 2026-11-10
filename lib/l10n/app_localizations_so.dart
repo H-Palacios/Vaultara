@@ -6845,4 +6845,330 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Bilow qorshe aad ugu guurayso waddan kale. Vaultara waxay muujisaa waxa la habeeyo ka hor intaadan bixin.';
+
+  @override
+  String get lifeGroupHome => 'Guri';
+
+  @override
+  String get lifeGroupFamily => 'Qoyska';
+
+  @override
+  String get lifeGroupWork => 'Shaqo iyo waxbarasho';
+
+  @override
+  String get lifeGroupCarTravel => 'Baabuur iyo safar';
+
+  @override
+  String get lifeGroupEmergency => 'Wax ayaa dhacay';
+
+  @override
+  String get lifeEventCarBuy => 'Waxaan iibsaday baabuur';
+
+  @override
+  String get lifeEventCarBuyBody => 'Caymi ka hor intaadan guriga u wadin, kadibna baabuurka magacaaga ku diiwaangeli.';
+
+  @override
+  String get lifeEventCarSell => 'Waxaan iibiyay baabuur';
+
+  @override
+  String get lifeEventCarSellBody => 'U sheeg xafiiska shatiyada iibka, oo jooji caymiska marka baabuurku aanu adiga kuu ahayn.';
+
+  @override
+  String get lifeEventJobStart => 'Waxaan bilaabayaa shaqo cusub';
+
+  @override
+  String get lifeEventJobStartBody => 'Hubi ruqsadahaaga ka hor intaadan bilaabin, kadibna diyaari kaarka shaqada iyo faa\'iidooyinka.';
+
+  @override
+  String get lifeEventJobLeave => 'Waxaan ka tagayaa shaqadayda';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Celi alaabta shaqada oo hubi waxa ku dhici doona caymiskii shaqadu ku siisay.';
+
+  @override
+  String get lifeEventLostPhone => 'Taleefankaygii waa lumay ama waa la xaday';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Si degdeg ah u dhaqaaq. Qofka haysta taleefankaaga iyo kaarka SIM wuxuu geli karaa bangigaaga iyo iimaylkaaga. Hadda samee tallaabooyinka koowaad.';
+
+  @override
+  String get lifeEventJobLoss => 'Shaqadaydii waan waayay';
+
+  @override
+  String get lifeEventJobLossBody => 'Tani waa adag tahay. Tallaabo tallaabo u soco. Codsiyada qaar waxay leeyihiin waqti kama dambeys ah, markaa ka bilow.';
+
+  @override
+  String get lifeEventDisaster => 'Dab, daad ama tuugo guriga';
+
+  @override
+  String get lifeEventDisasterBody => 'Marka hore hubi in qof walba ammaan yahay. Kadib sawir qaad, la xiriir shirkadda caymiska oo beddel wixii lumay.';
+
+  @override
+  String get lifeEventCaringParent => 'Waxaan daryeelayaa waalid';
+
+  @override
+  String get lifeEventCaringParentBody => 'Dooro qofka aad daryeesho. Hubi dukumentiyadiisa iyo caymiskiisa, oo wixii aad u baahan tahay meel kuu dhow dhig.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ma iibsatay mise ma iibisay?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Ma bilaabaysaa mise waad ka tagaysaa?';
+
+  @override
+  String get lifeVariantBuy => 'Iibsaday';
+
+  @override
+  String get lifeVariantSell => 'Iibiyay';
+
+  @override
+  String get lifeVariantStart => 'Bilaabayaa';
+
+  @override
+  String get lifeVariantLeave => 'Ka tagayaa';
+
+  @override
+  String get lifeTaskRedirectPost => 'Codso in boostadaada loo diro cinwaankaaga cusub';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Sii cinwaankaaga cusub shaqo-bixiyaha, xafiiska canshuurta, dhakhtarka iyo dugsiga';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Xir ama wareeji akoonnada korontada, biyaha iyo internetka';
+
+  @override
+  String get lifeTaskMeterReadings => 'Maalinta aad guurayso qor akhriska mitirka oo sawir qaad';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Ku dar Vaultara sawirka waraaqaha iibka ama wareejinta';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Gacan-geli furayaasha, rimootyada iyo kaarka galitaanka';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Marka hore hel caddeyn rasmi ah oo magacaaga cusub ah. Xafiisyada badankood way codsadaan.';
+
+  @override
+  String get lifeTaskTellNameChange => 'U sheeg bangiga, shaqo-bixiyaha, dhakhtarka iyo xafiiska canshuurta magacaaga cusub';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Ka beddel magacaaga iimaylka, taleefanka iyo akoonnada onlaynka';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Ku dar Vaultara sawirka shahaadada guurka';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Hubi qofka loo qoray ka-faa\'iideystaha caymisyadaada iyo akoonnadaada';
+
+  @override
+  String get lifeTaskUpdateWill => 'Samee ama cusboonaysii dardaaran';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Ku dar Vaultara sawirka go\'aanka furiinka ee kama dambaysta ah';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Xir ama qaybi akoonnada wadaagga ah oo beddel furaha sirta ee la wadaago';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Diiwaangeli dhalashada oo hel shahaadada dhalashada';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Ku dar ilmaha Qoyska si dukumentiyadiisa loola socdo';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Baabuurka magacaaga ku diiwaangeli muddada sharcigu oggol yahay';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Ku dar Vaultara sawirka heshiiska iibka';
+
+  @override
+  String get lifeTaskCarNotifySale => 'U sheeg xafiiska shatiyada inaad iibisay baabuurka oo hay caddeynta';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Ka saar calaamadaha waddooyinka lacagta leh, kaarka baarkinka iyo alaabtaada';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Sii shaqo-bixiyaha cusub faahfaahinta bangiga iyo lambarka canshuurta';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Ku biir caymiska caafimaadka iyo hawlgabka uu shaqo-bixiyuhu bixiyo';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Celi alaabta shaqada sida laptop, kaar ama furayaal';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Codso warqadda mushaharka ugu dambeysay iyo warqad xaqiijinaysa taariikhaha shaqadaada';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Weydii waxa ku dhici doona caymiska caafimaadka iyo hawlgabkaaga';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Hadda weydii gargaarka shaqo la\'aanta. Codsiyadu inta badan waxay leeyihiin waqti kama dambeys ah.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Qor lacag-bixinta tooska ah iyo isdiiwaangelinta, oo jooji waxaad awoodo';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Ku dar Vaultara sawirrada warqadda aqbalaadda iyo bayaannada khidmadda';
+
+  @override
+  String get lifeTaskStudyFunding => 'Hubi waqtiyada kama dambaysta ah ee deeqaha, amaahda ama taageero kale';
+
+  @override
+  String get lifeTaskRetirePension => 'Weydii sida iyo goorta hawlgabkaaga la bixin doono';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Samayso caymis caafimaad oo adiga kuu gaar ah haddii kan shaqadu dhammaado';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'U sheeg bangiga iyo xafiiska canshuurta inaad tagayso';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Ku dar Vaultara sawirka dukumenti kasta oo muhiim ah';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Hubi haddii aad u baahan tahay inaad beddesho shatiga darawalnimada';
+
+  @override
+  String get lifeTaskChildOwnId => 'Ka caawi inuu codsado kaarkiisa aqoonsiga haddii loo baahdo';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Ka caawi inuu furto akoon bangi oo isaga u gaar ah';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Hel dhowr nuqul oo la xaqiijiyay oo shahaadada dhimashada ah';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'U sheeg bangiga, shirkadaha caymiska iyo shaqo-bixiyaha';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Raadi dardaaranka oo la xiriir fuliyaha';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Markaad diyaar noqoto, dami xusuusinta diiwaannadiisa';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Wac shabakaddaada si ay u xiraan kaarka SIM. Tani waxay joojisaa khiyaanada beddelka SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Wac bangigaaga si ay u xiraan bangiga taleefanka';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Ka quful ama tirtir taleefanka qalab kale';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Beddel furaha sirta ee iimaylka iyo baraha bulshada';
+
+  @override
+  String get lifeTaskReportToPolice => 'U warbixi booliska oo hay lambarka kiiska';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Hubi in qof walba ammaan yahay oo uu leeyahay meel uu joogo';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Sawir burburka ka hor intaadan nadiifin';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'La xiriir shirkadda caymiska sida ugu dhaqsaha badan';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Ku dir nuqullada dukumentiyadaada Xirmada caddaynta';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Ogow meesha waraaqahiisa muhiimka ah lagu hayo';
+
+  @override
+  String get lifeTaskParentPermission => 'Weydii haddii aad isaga u hadli karto bangiga, dhakhtarka iyo shirkadda caymiska';
+
+  @override
+  String get lifeTaskParentMedicines => 'Hay liiska daawooyinkiisa iyo dhakhaatiirtiisa';
+
+  @override
+  String get lifePlanDoClaim => 'Samee dalab magdhow';
+
+  @override
+  String get lifePlanStatusClaimed => 'Dalab la sameeyay';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Bilow ka hor $date. Mid cusub badanaa wuxuu qaataa qiyaastii $weeks toddobaad.',
+      one: 'Bilow ka hor $date. Mid cusub badanaa wuxuu qaataa qiyaastii toddobaad.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Hadda bilow. Mid cusub badanaa wuxuu qaataa qiyaastii $weeks toddobaad.',
+      one: 'Hadda bilow. Mid cusub badanaa wuxuu qaataa qiyaastii toddobaad.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Qorshahaaga';
+
+  @override
+  String get lifePlanWhenHappened => 'Goorma ayay dhacday?';
+
+  @override
+  String get lifePlanReminderNudge => 'Qorshahaagu wali wuxuu leeyahay waxyaabo la sameeyo. Fur markaad waqti hesho.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Kaararkaaga iyo dukumentiyadaada cusub ma yimaadeen? Fur qorshaha si aad u hubiso.';
+
+  @override
+  String get lifePlanDoFirst => 'Marka hore tan samee';
+
+  @override
+  String get lifePlanSteps => 'Tallaabooyin kale';
+
+  @override
+  String get lifePlanAddOwnStep => 'Ku dar tallaabadaada';
+
+  @override
+  String get lifePlanOwnStepHint => 'Tusaale: U sheeg dugsiga';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Waxaad ku dari kartaa ilaa 20 tallaabo oo adiga kuu gaar ah.';
+
+  @override
+  String get lifePlanReadAloud => 'Kor u akhri';
+
+  @override
+  String get lifePlanStopReading => 'Jooji akhriska';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Kor u akhrintu kuma jirto taleefankan.';
+
+  @override
+  String get lifePlanProofPack => 'Samee xirmada caddaynta';
+
+  @override
+  String get lifePlanOpenFamily => 'Fur Qoyska';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.',
+      one: '1 diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Cusboonaysiinta kuwan badanaa waxay ku kacdaa qiyaastii $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ma u guuraysaa guri cusub? Eeg waxa kale ee aad cusboonaysiinayso.';
 }

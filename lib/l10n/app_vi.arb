@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Vẫn còn vài việc. Mở kế hoạch để hoàn tất.",
   "lifePlanSuggestCar": "Đã mua hoặc bán xe? Xem còn gì cần cập nhật.",
   "lifePlanSuggestTrip": "Chuyển đến đó một thời gian?",
-  "lifePlanSuggestTripBody": "Bắt đầu kế hoạch chuyển ra nước ngoài. Vaultara cho thấy những gì cần lo trước khi đi."
+  "lifePlanSuggestTripBody": "Bắt đầu kế hoạch chuyển ra nước ngoài. Vaultara cho thấy những gì cần lo trước khi đi.",
+  "lifeGroupHome": "Nhà ở",
+  "lifeGroupFamily": "Gia đình",
+  "lifeGroupWork": "Công việc và học tập",
+  "lifeGroupCarTravel": "Xe và du lịch",
+  "lifeGroupEmergency": "Có chuyện xảy ra",
+  "lifeEventCarBuy": "Tôi đã mua xe",
+  "lifeEventCarBuyBody": "Mua bảo hiểm trước khi lái xe về nhà, sau đó sang tên xe cho bạn.",
+  "lifeEventCarSell": "Tôi đã bán xe",
+  "lifeEventCarSellBody": "Báo việc bán xe cho cơ quan đăng ký và hủy bảo hiểm khi xe không còn là của bạn.",
+  "lifeEventJobStart": "Tôi bắt đầu công việc mới",
+  "lifeEventJobStartBody": "Kiểm tra giấy phép trước khi bắt đầu, sau đó thiết lập thẻ nhân viên và phúc lợi.",
+  "lifeEventJobLeave": "Tôi nghỉ việc",
+  "lifeEventJobLeaveBody": "Trả lại đồ của công ty và xem bảo hiểm do công việc cung cấp sẽ ra sao.",
+  "lifeEventLostPhone": "Tôi bị mất điện thoại hoặc bị trộm",
+  "lifeEventLostPhoneBody": "Hãy hành động nhanh. Người có điện thoại và thẻ SIM của bạn có thể vào ngân hàng và email của bạn. Làm các bước đầu tiên ngay.",
+  "lifeEventJobLoss": "Tôi bị mất việc",
+  "lifeEventJobLossBody": "Điều này thật khó khăn. Hãy làm từng bước. Một số yêu cầu có hạn chót, nên bắt đầu từ đó.",
+  "lifeEventDisaster": "Cháy, lũ lụt hoặc trộm vào nhà",
+  "lifeEventDisasterBody": "Trước tiên hãy đảm bảo mọi người đều an toàn. Sau đó chụp ảnh, liên hệ công ty bảo hiểm và làm lại những gì bị mất.",
+  "lifeEventCaringParent": "Tôi đang chăm sóc cha hoặc mẹ",
+  "lifeEventCaringParentBody": "Chọn người bạn đang chăm sóc. Kiểm tra giấy tờ và bảo hiểm của họ, và để những thứ cần thiết ở gần.",
+  "lifeVariantCarQuestion": "Bạn đã mua hay bán?",
+  "lifeVariantJobQuestion": "Bạn bắt đầu hay nghỉ việc?",
+  "lifeVariantBuy": "Đã mua",
+  "lifeVariantSell": "Đã bán",
+  "lifeVariantStart": "Bắt đầu",
+  "lifeVariantLeave": "Nghỉ việc",
+  "lifeTaskRedirectPost": "Yêu cầu chuyển thư từ đến địa chỉ mới",
+  "lifeTaskNewAddressEveryone": "Báo địa chỉ mới cho công ty, cơ quan thuế, bác sĩ và trường học",
+  "lifeTaskMoveUtilities": "Hủy hoặc chuyển tài khoản điện, nước và internet",
+  "lifeTaskMeterReadings": "Ghi chỉ số đồng hồ và chụp ảnh vào ngày dọn đi",
+  "lifeTaskSaveHomePapers": "Thêm ảnh giấy tờ mua bán hoặc chuyển nhượng vào Vaultara",
+  "lifeTaskHandOverKeys": "Bàn giao chìa khóa, điều khiển và thẻ ra vào",
+  "lifeTaskOfficialNameProof": "Trước tiên hãy lấy giấy tờ chính thức về tên mới. Hầu hết cơ quan đều yêu cầu.",
+  "lifeTaskTellNameChange": "Báo tên mới cho ngân hàng, công ty, bác sĩ và cơ quan thuế",
+  "lifeTaskUpdateOnlineAccounts": "Đổi tên trên email, điện thoại và các tài khoản trực tuyến",
+  "lifeTaskSaveMarriageCertificate": "Thêm ảnh giấy chứng nhận kết hôn vào Vaultara",
+  "lifeTaskCheckBeneficiaries": "Kiểm tra ai là người thụ hưởng trên hợp đồng bảo hiểm và tài khoản",
+  "lifeTaskUpdateWill": "Lập hoặc cập nhật di chúc",
+  "lifeTaskSaveDivorceOrder": "Thêm ảnh quyết định ly hôn cuối cùng vào Vaultara",
+  "lifeTaskSplitSharedAccounts": "Đóng hoặc chia tài khoản chung và đổi mật khẩu dùng chung",
+  "lifeTaskRegisterBirth": "Đăng ký khai sinh và nhận giấy khai sinh",
+  "lifeTaskAddBabyToFamily": "Thêm em bé vào Gia đình để theo dõi giấy tờ",
+  "lifeTaskCarRegisterInName": "Sang tên xe cho bạn trong thời hạn luật cho phép",
+  "lifeTaskCarSavePapers": "Thêm ảnh hợp đồng mua bán vào Vaultara",
+  "lifeTaskCarNotifySale": "Báo cơ quan đăng ký rằng bạn đã bán xe và giữ lại giấy tờ",
+  "lifeTaskCarRemoveTags": "Tháo thẻ thu phí, thẻ gửi xe và đồ cá nhân",
+  "lifeTaskJobGiveDetails": "Cung cấp thông tin ngân hàng và mã số thuế cho công ty mới",
+  "lifeTaskJobJoinBenefits": "Tham gia bảo hiểm y tế và hưu trí mà công ty cung cấp",
+  "lifeTaskJobReturnItems": "Trả lại đồ của công ty như máy tính, thẻ hoặc chìa khóa",
+  "lifeTaskJobLastPayslip": "Xin phiếu lương cuối cùng và giấy xác nhận thời gian làm việc",
+  "lifeTaskJobAskBenefits": "Hỏi bảo hiểm y tế và hưu trí của bạn sẽ ra sao",
+  "lifeTaskJobUnemployment": "Hỏi ngay về trợ cấp thất nghiệp. Yêu cầu thường có hạn chót.",
+  "lifeTaskJobPauseDebits": "Liệt kê các khoản trừ tiền tự động và đăng ký, tạm dừng những gì có thể",
+  "lifeTaskStudySaveLetters": "Thêm ảnh thư nhập học và bảng học phí vào Vaultara",
+  "lifeTaskStudyFunding": "Kiểm tra hạn chót học bổng, khoản vay hoặc hỗ trợ khác",
+  "lifeTaskRetirePension": "Hỏi lương hưu sẽ được trả như thế nào và khi nào",
+  "lifeTaskRetireOwnCover": "Tự mua bảo hiểm y tế nếu bảo hiểm từ công việc kết thúc",
+  "lifeTaskCountryTellBankTax": "Báo cho ngân hàng và cơ quan thuế rằng bạn sắp đi",
+  "lifeTaskCountryScanCopies": "Thêm ảnh mọi giấy tờ quan trọng vào Vaultara",
+  "lifeTaskCountryLicenceRules": "Kiểm tra xem có phải đổi bằng lái xe không",
+  "lifeTaskChildOwnId": "Giúp con làm căn cước riêng nếu cần",
+  "lifeTaskChildBankAccount": "Giúp con mở tài khoản ngân hàng riêng",
+  "lifeTaskDeathCertificates": "Lấy vài bản sao có chứng thực của giấy chứng tử",
+  "lifeTaskDeathTellOrganisations": "Báo cho ngân hàng, công ty bảo hiểm và nơi làm việc",
+  "lifeTaskDeathFindWill": "Tìm di chúc và liên hệ người thi hành di chúc",
+  "lifeTaskDeathStopReminders": "Khi bạn sẵn sàng, hãy tắt lời nhắc cho hồ sơ của người đó",
+  "lifeTaskPhoneBlockSim": "Gọi nhà mạng để khóa thẻ SIM. Việc này ngăn lừa đảo đổi SIM.",
+  "lifeTaskPhoneBlockBanking": "Gọi ngân hàng để khóa ngân hàng trên điện thoại",
+  "lifeTaskPhoneLockErase": "Khóa hoặc xóa điện thoại từ thiết bị khác",
+  "lifeTaskPhoneChangePasswords": "Đổi mật khẩu email và mạng xã hội",
+  "lifeTaskReportToPolice": "Trình báo công an và giữ lại số hồ sơ",
+  "lifeTaskDisasterSafePlace": "Đảm bảo mọi người an toàn và có chỗ ở",
+  "lifeTaskDisasterPhotos": "Chụp ảnh thiệt hại trước khi dọn dẹp",
+  "lifeTaskDisasterContactInsurer": "Liên hệ công ty bảo hiểm càng sớm càng tốt",
+  "lifeTaskDisasterProofPack": "Gửi bản sao giấy tờ bằng Bộ hồ sơ chứng minh",
+  "lifeTaskParentFindPapers": "Tìm hiểu giấy tờ quan trọng của họ được cất ở đâu",
+  "lifeTaskParentPermission": "Hỏi xem bạn có thể thay họ làm việc với ngân hàng, bác sĩ và bảo hiểm không",
+  "lifeTaskParentMedicines": "Ghi danh sách thuốc và bác sĩ của họ",
+  "lifePlanDoClaim": "Yêu cầu bồi thường",
+  "lifePlanStatusClaimed": "Đã yêu cầu",
+  "lifePlanStartBy": "{weeks, plural, other{Bắt đầu trước {date}. Làm mới thường mất khoảng {weeks} tuần.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{Bắt đầu ngay. Làm mới thường mất khoảng {weeks} tuần.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Kế hoạch của bạn",
+  "lifePlanWhenHappened": "Chuyện xảy ra khi nào?",
+  "lifePlanReminderNudge": "Kế hoạch của bạn vẫn còn việc cần làm. Mở khi bạn rảnh.",
+  "lifePlanReminderCheckIn": "Thẻ và giấy tờ mới đã đến chưa? Mở kế hoạch để kiểm tra.",
+  "lifePlanDoFirst": "Làm việc này trước",
+  "lifePlanSteps": "Các bước khác",
+  "lifePlanAddOwnStep": "Thêm bước của bạn",
+  "lifePlanOwnStepHint": "Ví dụ: Báo cho trường học",
+  "lifePlanOwnStepLimit": "Bạn có thể thêm tối đa 20 bước của riêng mình.",
+  "lifePlanReadAloud": "Đọc to",
+  "lifePlanStopReading": "Dừng đọc",
+  "lifePlanReadAloudUnavailable": "Điện thoại này không hỗ trợ đọc to.",
+  "lifePlanProofPack": "Tạo bộ hồ sơ chứng minh",
+  "lifePlanOpenFamily": "Mở Gia đình",
+  "lifePlanRemoved": "{count, plural, other{{count} hồ sơ bạn đã xóa được tính là đã hủy.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Gia hạn những thứ này thường tốn khoảng {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Chuyển đến nhà mới? Xem còn gì cần cập nhật."
 }

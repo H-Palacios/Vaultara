@@ -2142,5 +2142,136 @@
   "lifePlanReminderAfter": "還有一些事項尚未完成。開啟計畫完成它們。",
   "lifePlanSuggestCar": "買了或賣了車？看看還需要更新什麼。",
   "lifePlanSuggestTrip": "要在那裡住一段時間嗎？",
-  "lifePlanSuggestTripBody": "開始一個移居國外的計畫。Vaultara 會顯示出發前需要辦妥的事。"
+  "lifePlanSuggestTripBody": "開始一個移居國外的計畫。Vaultara 會顯示出發前需要辦妥的事。",
+  "lifeGroupHome": "住家",
+  "lifeGroupFamily": "家人",
+  "lifeGroupWork": "工作與學業",
+  "lifeGroupCarTravel": "汽車與旅行",
+  "lifeGroupEmergency": "發生狀況",
+  "lifeEventCarBuy": "我買了車",
+  "lifeEventCarBuyBody": "開回家前先投保，然後把車過戶到你名下。",
+  "lifeEventCarSell": "我賣了車",
+  "lifeEventCarSellBody": "向監理單位申報出售，車子不再屬於你後就取消保險。",
+  "lifeEventJobStart": "我要開始新工作",
+  "lifeEventJobStartBody": "到職前先檢查許可證件，再辦理工作證與福利。",
+  "lifeEventJobLeave": "我要離職",
+  "lifeEventJobLeaveBody": "歸還公司物品，並確認工作提供的保障會如何。",
+  "lifeEventLostPhone": "手機遺失或被偷",
+  "lifeEventLostPhoneBody": "盡快行動。拿到你手機和 SIM 卡的人可以進入你的銀行和電子郵件。現在就完成第一步。",
+  "lifeEventJobLoss": "我失業了",
+  "lifeEventJobLossBody": "這很不容易。一步一步來。有些申請有期限，先處理這些。",
+  "lifeEventDisaster": "家中火災、水災或遭竊",
+  "lifeEventDisasterBody": "先確認大家都安全。然後拍照、聯絡保險公司，並補辦遺失的東西。",
+  "lifeEventCaringParent": "我在照顧父母",
+  "lifeEventCaringParentBody": "選擇你照顧的人。檢查他們的證件與保險，把需要的東西放在手邊。",
+  "lifeVariantCarQuestion": "你是買車還是賣車？",
+  "lifeVariantJobQuestion": "你是到職還是離職？",
+  "lifeVariantBuy": "買了",
+  "lifeVariantSell": "賣了",
+  "lifeVariantStart": "到職",
+  "lifeVariantLeave": "離職",
+  "lifeTaskRedirectPost": "申請將郵件轉寄到新地址",
+  "lifeTaskNewAddressEveryone": "把新地址告訴雇主、國稅局、醫師和學校",
+  "lifeTaskMoveUtilities": "終止或移轉電、水和網路帳戶",
+  "lifeTaskMeterReadings": "搬走當天抄錄錶數並拍照",
+  "lifeTaskSaveHomePapers": "把買賣或過戶文件的照片加入 Vaultara",
+  "lifeTaskHandOverKeys": "交還鑰匙、遙控器和門禁卡",
+  "lifeTaskOfficialNameProof": "先取得新姓名的官方證明。大多數機關都會要求。",
+  "lifeTaskTellNameChange": "把新姓名告訴銀行、雇主、醫師和國稅局",
+  "lifeTaskUpdateOnlineAccounts": "在電子郵件、手機和線上帳戶更改姓名",
+  "lifeTaskSaveMarriageCertificate": "把結婚證明的照片加入 Vaultara",
+  "lifeTaskCheckBeneficiaries": "查看你的保單和帳戶中誰是受益人",
+  "lifeTaskUpdateWill": "立下或更新遺囑",
+  "lifeTaskSaveDivorceOrder": "把離婚確定證明的照片加入 Vaultara",
+  "lifeTaskSplitSharedAccounts": "關閉或分開共同帳戶，並更改共用密碼",
+  "lifeTaskRegisterBirth": "辦理出生登記並取得出生證明",
+  "lifeTaskAddBabyToFamily": "在家人中加入寶寶，以便追蹤證件",
+  "lifeTaskCarRegisterInName": "在法定期限內把車過戶到你名下",
+  "lifeTaskCarSavePapers": "把買賣合約的照片加入 Vaultara",
+  "lifeTaskCarNotifySale": "告知監理單位你已賣車，並保留證明",
+  "lifeTaskCarRemoveTags": "取下 eTag、停車卡和個人物品",
+  "lifeTaskJobGiveDetails": "把銀行資料和稅籍編號提供給新雇主",
+  "lifeTaskJobJoinBenefits": "加入雇主提供的醫療保險和退休金",
+  "lifeTaskJobReturnItems": "歸還筆電、識別證或鑰匙等公司物品",
+  "lifeTaskJobLastPayslip": "索取最後一張薪資單和在職期間證明",
+  "lifeTaskJobAskBenefits": "詢問你的醫療保險和退休金會如何",
+  "lifeTaskJobUnemployment": "現在就詢問失業給付。申請通常有期限。",
+  "lifeTaskJobPauseDebits": "列出自動扣款和訂閱，能停的先停",
+  "lifeTaskStudySaveLetters": "把錄取通知和學費單的照片加入 Vaultara",
+  "lifeTaskStudyFunding": "查看獎學金、就學貸款或其他補助的期限",
+  "lifeTaskRetirePension": "詢問退休金如何及何時發放",
+  "lifeTaskRetireOwnCover": "如果公司的保險結束，自己投保醫療保險",
+  "lifeTaskCountryTellBankTax": "告訴銀行和國稅局你要離開",
+  "lifeTaskCountryScanCopies": "把每份重要證件的照片加入 Vaultara",
+  "lifeTaskCountryLicenceRules": "查看是否需要換駕照",
+  "lifeTaskChildOwnId": "如有需要，協助他們申請自己的身分證",
+  "lifeTaskChildBankAccount": "協助他們開立自己的銀行帳戶",
+  "lifeTaskDeathCertificates": "申請幾份經認證的死亡證明副本",
+  "lifeTaskDeathTellOrganisations": "通知銀行、保險公司和雇主",
+  "lifeTaskDeathFindWill": "找到遺囑並聯絡遺囑執行人",
+  "lifeTaskDeathStopReminders": "準備好時，關閉其紀錄的提醒",
+  "lifeTaskPhoneBlockSim": "打電話給電信業者停用 SIM 卡。這能防止換卡詐騙。",
+  "lifeTaskPhoneBlockBanking": "打電話給銀行停用手機銀行",
+  "lifeTaskPhoneLockErase": "用其他裝置鎖定或清除手機",
+  "lifeTaskPhoneChangePasswords": "更改電子郵件和社群媒體密碼",
+  "lifeTaskReportToPolice": "向警方報案並保留案件編號",
+  "lifeTaskDisasterSafePlace": "確認大家都安全並有地方住",
+  "lifeTaskDisasterPhotos": "清理前先拍下損害",
+  "lifeTaskDisasterContactInsurer": "盡快聯絡保險公司",
+  "lifeTaskDisasterProofPack": "用證明資料包寄送證件副本",
+  "lifeTaskParentFindPapers": "了解他們的重要文件放在哪裡",
+  "lifeTaskParentPermission": "問問能否代他們與銀行、醫師和保險公司溝通",
+  "lifeTaskParentMedicines": "記下他們的用藥和醫師清單",
+  "lifePlanDoClaim": "申請理賠",
+  "lifePlanStatusClaimed": "已申請理賠",
+  "lifePlanStartBy": "{weeks, plural, other{請在 {date} 前開始。新的通常需要約 {weeks} 週。}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{請現在開始。新的通常需要約 {weeks} 週。}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "你的計畫",
+  "lifePlanWhenHappened": "是什麼時候發生的？",
+  "lifePlanReminderNudge": "你的計畫還有事情要做。有空時打開看看。",
+  "lifePlanReminderCheckIn": "新卡和證件到了嗎？打開計畫確認一下。",
+  "lifePlanDoFirst": "先做這些",
+  "lifePlanSteps": "其他步驟",
+  "lifePlanAddOwnStep": "新增自己的步驟",
+  "lifePlanOwnStepHint": "例如：通知學校",
+  "lifePlanOwnStepLimit": "最多可新增 20 個自己的步驟。",
+  "lifePlanReadAloud": "朗讀",
+  "lifePlanStopReading": "停止朗讀",
+  "lifePlanReadAloudUnavailable": "這支手機不支援朗讀。",
+  "lifePlanProofPack": "製作證明資料包",
+  "lifePlanOpenFamily": "開啟家人",
+  "lifePlanRemoved": "{count, plural, other{你刪除的 {count} 筆紀錄視為已取消。}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "續辦這些通常需要約 {amount}。",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "要搬新家嗎？看看還有什麼需要更新。"
 }

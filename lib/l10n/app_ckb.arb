@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "هێشتا هەندێک کار ماوە. پلانەکە بکەرەوە بۆ تەواوکردنیان.",
   "lifePlanSuggestCar": "ئۆتۆمبێلت کڕی یان فرۆشت؟ ببینە چی تر پێویستە نوێ بکرێتەوە.",
   "lifePlanSuggestTrip": "بۆ ماوەیەک دەگوازیتەوە بۆ ئەوێ؟",
-  "lifePlanSuggestTripBody": "پلانێک بۆ گواستنەوە بۆ وڵاتێکی تر دەست پێبکە. Vaultara پیشان دەدات پێش ڕۆیشتن چی ڕێکبخەیت."
+  "lifePlanSuggestTripBody": "پلانێک بۆ گواستنەوە بۆ وڵاتێکی تر دەست پێبکە. Vaultara پیشان دەدات پێش ڕۆیشتن چی ڕێکبخەیت.",
+  "lifeGroupHome": "ماڵ",
+  "lifeGroupFamily": "خێزان",
+  "lifeGroupWork": "کار و خوێندن",
+  "lifeGroupCarTravel": "ئۆتۆمبێل و گەشت",
+  "lifeGroupEmergency": "شتێک بە هەڵەدا چوو",
+  "lifeEventCarBuy": "ئۆتۆمبێلێکم کڕی",
+  "lifeEventCarBuyBody": "پێش ئەوەی بیهێنیتەوە ماڵەوە بیمەی بکە، پاشان ئۆتۆمبێلەکە بخەرە سەر ناوی خۆت.",
+  "lifeEventCarSell": "ئۆتۆمبێلێکم فرۆشت",
+  "lifeEventCarSellBody": "فرۆشتنەکە بە نووسینگەی مۆڵەت ڕابگەیەنە و کاتێک ئۆتۆمبێلەکە چیتر هی تۆ نییە بیمەکە هەڵبوەشێنەوە.",
+  "lifeEventJobStart": "کارێکی نوێ دەست پێدەکەم",
+  "lifeEventJobStartBody": "پێش دەستپێکردن مۆڵەتەکانت بپشکنە، پاشان کارتی کار و سوودەکانت ڕێک بخە.",
+  "lifeEventJobLeave": "کارەکەم بەجێدەهێڵم",
+  "lifeEventJobLeaveBody": "کەلوپەلی کار بگەڕێنەوە و بزانە چی بەسەر ئەو بیمەیەدا دێت کە کارەکەت پێی دابوویت.",
+  "lifeEventLostPhone": "مۆبایلەکەم ون بوو یان دزرا",
+  "lifeEventLostPhoneBody": "خێرا بجوڵێ. هەر کەسێک مۆبایل و سیمکارتەکەتی هەبێت دەتوانێت بچێتە ناو بانک و ئیمەیڵەکەت. هەنگاوە سەرەتاییەکان ئێستا بکە.",
+  "lifeEventJobLoss": "کارەکەم لەدەست دا",
+  "lifeEventJobLossBody": "ئەمە قورسە. هەنگاو بە هەنگاو بڕۆ. هەندێک داواکاری وادەی کۆتاییان هەیە، بۆیە لەوانەوە دەست پێبکە.",
+  "lifeEventDisaster": "ئاگر، لافاو یان دزی لە ماڵەوە",
+  "lifeEventDisasterBody": "سەرەتا دڵنیابە هەموو کەس سەلامەتن. پاشان وێنە بگرە، پەیوەندی بە کۆمپانیای بیمەوە بکە و ئەوەی لەدەست چووە بگۆڕەوە.",
+  "lifeEventCaringParent": "چاودێری دایک یان باوکم دەکەم",
+  "lifeEventCaringParentBody": "ئەو کەسە هەڵبژێرە کە چاودێری دەکەیت. بەڵگەنامە و بیمەکانی بپشکنە و ئەوەی پێویستتە لە نزیک خۆتەوە دابنێ.",
+  "lifeVariantCarQuestion": "کڕیت یان فرۆشتت؟",
+  "lifeVariantJobQuestion": "دەست پێدەکەیت یان دەڕۆیت؟",
+  "lifeVariantBuy": "کڕیم",
+  "lifeVariantSell": "فرۆشتم",
+  "lifeVariantStart": "دەست پێدەکەم",
+  "lifeVariantLeave": "دەڕۆم",
+  "lifeTaskRedirectPost": "داوا بکە پۆستەکانت بنێردرێنە ناونیشانە نوێیەکەت",
+  "lifeTaskNewAddressEveryone": "ناونیشانە نوێیەکەت بدە بە خاوەنکار، نووسینگەی باج، پزیشک و قوتابخانە",
+  "lifeTaskMoveUtilities": "هەژمارەکانی کارەبا، ئاو و ئینتەرنێت دابخە یان بیانگوازەوە",
+  "lifeTaskMeterReadings": "لە ڕۆژی ڕۆیشتنتدا خوێندنەوەی پێوەرەکان و وێنە بگرە",
+  "lifeTaskSaveHomePapers": "وێنەی بەڵگەنامەکانی فرۆشتن یان گواستنەوە زیاد بکە بۆ Vaultara",
+  "lifeTaskHandOverKeys": "کلیل، ڕیمۆت و کارتەکانی چوونەژوورەوە ڕادەست بکە",
+  "lifeTaskOfficialNameProof": "سەرەتا بەڵگەی فەرمی ناوە نوێیەکەت وەربگرە. زۆربەی نووسینگەکان داوای دەکەن.",
+  "lifeTaskTellNameChange": "ناوە نوێیەکەت بە بانک، خاوەنکار، پزیشک و نووسینگەی باج ڕابگەیەنە",
+  "lifeTaskUpdateOnlineAccounts": "ناوەکەت لە ئیمەیڵ، مۆبایل و هەژمارە ئۆنلاینەکانت بگۆڕە",
+  "lifeTaskSaveMarriageCertificate": "وێنەی بڕوانامەی هاوسەرگیری زیاد بکە بۆ Vaultara",
+  "lifeTaskCheckBeneficiaries": "بپشکنە کێ وەک سوودمەند لە بیمە و هەژمارەکانتدا نووسراوە",
+  "lifeTaskUpdateWill": "وەسیەتنامە بنووسە یان نوێی بکەرەوە",
+  "lifeTaskSaveDivorceOrder": "وێنەی بڕیاری کۆتایی جیابوونەوە زیاد بکە بۆ Vaultara",
+  "lifeTaskSplitSharedAccounts": "هەژمارە هاوبەشەکان دابخە یان دابەشیان بکە و وشە نهێنییە هاوبەشەکان بگۆڕە",
+  "lifeTaskRegisterBirth": "لەدایکبوونەکە تۆمار بکە و بڕوانامەی لەدایکبوون وەربگرە",
+  "lifeTaskAddBabyToFamily": "منداڵەکە زیاد بکە بۆ خێزان بۆ ئەوەی بەڵگەنامەکانی بەدوادا بچن",
+  "lifeTaskCarRegisterInName": "لەو ماوەیەدا کە یاسا ڕێگەی پێدەدات ئۆتۆمبێلەکە بخەرە سەر ناوی خۆت",
+  "lifeTaskCarSavePapers": "وێنەی گرێبەستی فرۆشتن زیاد بکە بۆ Vaultara",
+  "lifeTaskCarNotifySale": "بە نووسینگەی مۆڵەت ڕابگەیەنە کە ئۆتۆمبێلەکەت فرۆشتووە و بەڵگەکە هەڵبگرە",
+  "lifeTaskCarRemoveTags": "تاگی باجی ڕێگا، کارتی پارکینگ و کەلوپەلی کەسی لابەرە",
+  "lifeTaskJobGiveDetails": "زانیاری بانکی و ژمارەی باجەکەت بدە بە خاوەنکارە نوێیەکەت",
+  "lifeTaskJobJoinBenefits": "بەشداری لەو بیمەی تەندروستی و خانەنشینییە بکە کە خاوەنکار پێشکەشی دەکات",
+  "lifeTaskJobReturnItems": "کەلوپەلی کار وەک لاپتۆپ، کارت یان کلیل بگەڕێنەوە",
+  "lifeTaskJobLastPayslip": "داوای دوایین پسوولەی مووچە و نامەیەک بکە کە بەرواری کارەکەت پشتڕاست بکاتەوە",
+  "lifeTaskJobAskBenefits": "بپرسە چی بەسەر بیمەی تەندروستی و خانەنشینییەکەتدا دێت",
+  "lifeTaskJobUnemployment": "ئێستا دەربارەی موچەی بێکاری بپرسە. داواکارییەکان زۆرجار وادەی کۆتاییان هەیە.",
+  "lifeTaskJobPauseDebits": "لیستی پارەدانە ئۆتۆماتیکییەکان و بەشدارییەکانت بنووسە و ئەوەی دەتوانیت ڕایبگرە",
+  "lifeTaskStudySaveLetters": "وێنەی نامەی وەرگرتن و پسوولەکانی کرێی خوێندن زیاد بکە بۆ Vaultara",
+  "lifeTaskStudyFunding": "وادەی کۆتایی بورس، قەرز یان پاڵپشتی دارایی تر بپشکنە",
+  "lifeTaskRetirePension": "بپرسە خانەنشینییەکەت چۆن و کەی دەدرێت",
+  "lifeTaskRetireOwnCover": "ئەگەر بیمەی کارەکەت کۆتایی هات، بیمەی تەندروستی خۆت ڕێک بخە",
+  "lifeTaskCountryTellBankTax": "بە بانک و نووسینگەی باج ڕابگەیەنە کە دەڕۆیت",
+  "lifeTaskCountryScanCopies": "وێنەی هەموو بەڵگەنامەیەکی گرنگ زیاد بکە بۆ Vaultara",
+  "lifeTaskCountryLicenceRules": "بپشکنە ئایا دەبێت مۆڵەتی شۆفێرییەکەت بگۆڕیت",
+  "lifeTaskChildOwnId": "ئەگەر پێویستی بوو یارمەتی بدە داوای ناسنامەی خۆی بکات",
+  "lifeTaskChildBankAccount": "یارمەتی بدە هەژماری بانکی خۆی بکاتەوە",
+  "lifeTaskDeathCertificates": "چەند کۆپییەکی پەسەندکراوی بڕوانامەی مردن وەربگرە",
+  "lifeTaskDeathTellOrganisations": "بانک، کۆمپانیاکانی بیمە و خاوەنکار ئاگادار بکەرەوە",
+  "lifeTaskDeathFindWill": "وەسیەتنامەکە بدۆزەرەوە و پەیوەندی بە جێبەجێکارەکەوە بکە",
+  "lifeTaskDeathStopReminders": "کاتێک ئامادە بوویت، بیرخستنەوەکانی تۆمارەکانی بکوژێنەوە",
+  "lifeTaskPhoneBlockSim": "پەیوەندی بە کۆمپانیای مۆبایلەوە بکە بۆ داخستنی سیمکارتەکە. ئەمە ڕێگری لە فێڵی گۆڕینی سیم دەکات.",
+  "lifeTaskPhoneBlockBanking": "پەیوەندی بە بانکەوە بکە بۆ داخستنی بانکداری لەسەر مۆبایلەکە",
+  "lifeTaskPhoneLockErase": "مۆبایلەکە لە ئامێرێکی ترەوە قوفڵ بکە یان بیسڕەوە",
+  "lifeTaskPhoneChangePasswords": "وشە نهێنییەکانی ئیمەیڵ و تۆڕە کۆمەڵایەتییەکان بگۆڕە",
+  "lifeTaskReportToPolice": "بە پۆلیس ڕابگەیەنە و ژمارەی دۆسیەکە هەڵبگرە",
+  "lifeTaskDisasterSafePlace": "دڵنیابە هەموو کەس سەلامەتن و شوێنێکیان هەیە بۆ مانەوە",
+  "lifeTaskDisasterPhotos": "پێش پاککردنەوە وێنەی زیانەکان بگرە",
+  "lifeTaskDisasterContactInsurer": "هەرچی زووە پەیوەندی بە کۆمپانیای بیمەوە بکە",
+  "lifeTaskDisasterProofPack": "کۆپی بەڵگەنامەکانت بە پاکێتی بەڵگە بنێرە",
+  "lifeTaskParentFindPapers": "بزانە بەڵگەنامە گرنگەکانی لە کوێ هەڵگیراون",
+  "lifeTaskParentPermission": "بپرسە ئایا دەتوانیت لە جیاتی ئەو قسە لەگەڵ بانک، پزیشک و کۆمپانیای بیمەکەی بکەیت",
+  "lifeTaskParentMedicines": "لیستێکی دەرمان و پزیشکەکانی هەڵبگرە",
+  "lifePlanDoClaim": "داواکاری پێشکەش بکە",
+  "lifePlanStatusClaimed": "داواکراوە",
+  "lifePlanStartBy": "{weeks, plural, one{تا {date} دەست پێبکە. نوێیەکە زۆرجار نزیکەی {weeks} هەفتە دەخایەنێت.} other{تا {date} دەست پێبکە. نوێیەکە زۆرجار نزیکەی {weeks} هەفتە دەخایەنێت.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{ئێستا دەست پێبکە. نوێیەکە زۆرجار نزیکەی {weeks} هەفتە دەخایەنێت.} other{ئێستا دەست پێبکە. نوێیەکە زۆرجار نزیکەی {weeks} هەفتە دەخایەنێت.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "پلانەکەت",
+  "lifePlanWhenHappened": "کەی ڕوویدا؟",
+  "lifePlanReminderNudge": "پلانەکەت هێشتا کاری ماوە. کاتێک دەرفەتت هەبوو بیکەرەوە.",
+  "lifePlanReminderCheckIn": "کارت و بەڵگەنامە نوێیەکانت گەیشتن؟ پلانەکە بکەرەوە بۆ پشکنین.",
+  "lifePlanDoFirst": "سەرەتا ئەمە بکە",
+  "lifePlanSteps": "هەنگاوەکانی تر",
+  "lifePlanAddOwnStep": "هەنگاوی خۆت زیاد بکە",
+  "lifePlanOwnStepHint": "بۆ نموونە: قوتابخانە ئاگادار بکەرەوە",
+  "lifePlanOwnStepLimit": "دەتوانیت تا 20 هەنگاوی خۆت زیاد بکەیت.",
+  "lifePlanReadAloud": "بە دەنگی بەرز بیخوێنەوە",
+  "lifePlanStopReading": "خوێندنەوە ڕابگرە",
+  "lifePlanReadAloudUnavailable": "خوێندنەوە بە دەنگی بەرز لەم مۆبایلەدا بەردەست نییە.",
+  "lifePlanProofPack": "پاکێتی بەڵگە دروست بکە",
+  "lifePlanOpenFamily": "خێزان بکەرەوە",
+  "lifePlanRemoved": "{count, plural, one{{count} تۆمار کە سڕیتەوە وەک هەڵوەشاوە دادەنرێت.} other{{count} تۆمار کە سڕیتەوە وەک هەڵوەشاوە دادەنرێن.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "نوێکردنەوەی ئەمانە زۆرجار نزیکەی {amount} تێدەچێت.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "دەگوازیتەوە بۆ ماڵێکی نوێ؟ بزانە چیتر پێویستە نوێ بکەیتەوە."
 }

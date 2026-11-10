@@ -6846,4 +6846,330 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Planek ji bo barkirina welatekî din dest pê bike. Vaultara nîşan dide berî çûyînê çi saz bikî.';
+
+  @override
+  String get lifeGroupHome => 'Mal';
+
+  @override
+  String get lifeGroupFamily => 'Malbat';
+
+  @override
+  String get lifeGroupWork => 'Kar û xwendin';
+
+  @override
+  String get lifeGroupCarTravel => 'Erebe û rêwîtî';
+
+  @override
+  String get lifeGroupEmergency => 'Tiştek xelet çû';
+
+  @override
+  String get lifeEventCarBuy => 'Min erebeyek kirî';
+
+  @override
+  String get lifeEventCarBuyBody => 'Berî ku tu wê bibî malê sîgorte bike, paşê erebeyê li ser navê xwe tomar bike.';
+
+  @override
+  String get lifeEventCarSell => 'Min erebeyek firot';
+
+  @override
+  String get lifeEventCarSellBody => 'Firotinê ji nivîsgeha lîsansê re ragihîne û gava erebe êdî ya te nebe sîgorteyê betal bike.';
+
+  @override
+  String get lifeEventJobStart => 'Ez dest bi karekî nû dikim';
+
+  @override
+  String get lifeEventJobStartBody => 'Berî destpêkirinê destûrên xwe kontrol bike, paşê karta kar û feydeyan amade bike.';
+
+  @override
+  String get lifeEventJobLeave => 'Ez ji karê xwe derdikevim';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Tiştên kar vegerîne û kontrol bike ka dê çi bê serê sîgorteya ku karê te dabû te.';
+
+  @override
+  String get lifeEventLostPhone => 'Telefona min winda bû an hate dizîn';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Zû tevbigere. Kesê ku telefon û karta te ya SIM heye dikare têkeve bank û e-nameya te. Gavên pêşîn niha bavêje.';
+
+  @override
+  String get lifeEventJobLoss => 'Min karê xwe winda kir';
+
+  @override
+  String get lifeEventJobLossBody => 'Ev dijwar e. Gav bi gav biçe. Hin daxwaz xwedî dawiyê ne, ji ber vê yekê ji wan dest pê bike.';
+
+  @override
+  String get lifeEventDisaster => 'Agir, lehî an dizî li malê';
+
+  @override
+  String get lifeEventDisasterBody => 'Pêşî piştrast bike ku her kes ewle ye. Paşê wêne bikişîne, bi sîgorteyê re têkilî dayne û tiştên winda nû bike.';
+
+  @override
+  String get lifeEventCaringParent => 'Ez li dê an bavê xwe xwedî derdikevim';
+
+  @override
+  String get lifeEventCaringParentBody => 'Kesê ku tu lê xwedî derdikevî hilbijêre. Belge û sîgorteya wî kontrol bike û tiştên pêwîst nêzîkî xwe bihêle.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Te kirî an firot?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Tu dest pê dikî an derdikevî?';
+
+  @override
+  String get lifeVariantBuy => 'Min kirî';
+
+  @override
+  String get lifeVariantSell => 'Min firot';
+
+  @override
+  String get lifeVariantStart => 'Dest pê dikim';
+
+  @override
+  String get lifeVariantLeave => 'Derdikevim';
+
+  @override
+  String get lifeTaskRedirectPost => 'Bixwaze ku nameyên te ji navnîşana nû re bên şandin';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Navnîşana nû bide kardêr, nivîsgeha bacê, bijîşk û dibistanê';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Hesabên elektrîk, av û înternetê bigire an veguhezîne';
+
+  @override
+  String get lifeTaskMeterReadings => 'Roja ku tu derdikevî xwendina sayaxan û wêneyan bigire';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Wêneyê belgeyên firotin an veguhastinê li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Mifte, kontrolên dûr û kartên ketinê radest bike';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Pêşî delîla fermî ya navê xwe yê nû bistîne. Piraniya nivîsgehan wê dixwazin.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Navê xwe yê nû ji bank, kardêr, bijîşk û nivîsgeha bacê re bibêje';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Navê xwe di e-name, telefon û hesabên serhêl de biguherîne';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Wêneyê belgeya zewacê li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Kontrol bike ka kî di polîçe û hesabên te de wek sûdmend hatiye nivîsîn';
+
+  @override
+  String get lifeTaskUpdateWill => 'Wesiyetnameyekê binivîse an nû bike';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Wêneyê biryara dawî ya veqetînê li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Hesabên hevpar bigire an parve bike û şîfreyên hevpar biguherîne';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Jidayikbûnê tomar bike û belgeya jidayikbûnê bistîne';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Pitikê li Malbatê zêde bike da ku belgeyên wî bên şopandin';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Erebeyê di dema ku qanûn destûr dide de li ser navê xwe tomar bike';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Wêneyê peymana firotinê li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Ji nivîsgeha lîsansê re bibêje ku te erebe firot û delîlê biparêze';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Etîketên rêyê, kartên parkê û tiştên kesane rake';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Agahiyên bankê û hejmara bacê bide kardêrê nû';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Beşdarî sîgorteya tenduristiyê û teqawîtiya ku kardêr pêşkêş dike bibe';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Tiştên kar ên wek laptop, kart an mifte vegerîne';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Pusûleya meaşê ya dawî û nameyeke ku dîrokên karê te piştrast dike bixwaze';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Bipirse ka dê çi bê serê sîgorteya tenduristî û teqawîtiya te';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Niha li ser alîkariya bêkariyê bipirse. Daxwaz pir caran xwedî dawiyê ne.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Lîsteya dayinên otomatîk û abonetiyan çêke û yên ku dikarî rawestîne';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Wêneyên nameya pejirandinê û belgeyên xercê li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskStudyFunding => 'Dawiyên bûrs, deyn an alîkariyên din kontrol bike';
+
+  @override
+  String get lifeTaskRetirePension => 'Bipirse ka teqawîtiya te dê çawa û kengî bê dayîn';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Heke sîgorteya kar biqede, sîgorteya tenduristiyê ya xwe amade bike';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Ji bank û nivîsgeha bacê re bibêje ku tu diçî';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Wêneyê her belgeyeke girîng li Vaultara zêde bike';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Kontrol bike ka divê tu ehliyeta xwe biguherînî';
+
+  @override
+  String get lifeTaskChildOwnId => 'Heke pêwîst be, alîkariya wî bike ku ji bo nasnameya xwe serî lê bide';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Alîkariya wî bike ku hesabekî bankê yê xwe veke';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Çend kopiyên pejirandî yên belgeya mirinê bistîne';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Bank, sîgorte û kardêr agahdar bike';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Wesiyetnameyê bibîne û bi pêkanîner re têkilî dayne';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Gava tu amade bî, bîranînên tomarên wî vemirîne';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Ji bo girtina karta SIM li tora xwe bigere. Ev xapandina guherîna SIM radiwestîne.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Ji bo girtina bankeya li ser telefonê li bankê bigere';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Telefonê ji amûreke din kilît bike an paqij bike';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Şîfreyên e-name û medyaya civakî biguherîne';
+
+  @override
+  String get lifeTaskReportToPolice => 'Ji polîsan re ragihîne û hejmara dosyayê biparêze';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Piştrast bike ku her kes ewle ye û cihekî mayînê heye';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Berî paqijkirinê wêneyên zirarê bikişîne';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Bi lez bi sîgorteya xwe re têkilî dayne';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Kopiyên belgeyên xwe bi Pakêta delîlan bişîne';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Fêr bibe ka belgeyên wî yên girîng li ku têne parastin';
+
+  @override
+  String get lifeTaskParentPermission => 'Bipirse ka tu dikarî li şûna wî bi bank, bijîşk û sîgorteya wî re biaxivî';
+
+  @override
+  String get lifeTaskParentMedicines => 'Lîsteya derman û bijîşkên wî biparêze';
+
+  @override
+  String get lifePlanDoClaim => 'Daxwaza tazmînatê bike';
+
+  @override
+  String get lifePlanStatusClaimed => 'Daxwaz hate kirin';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Heta $date dest pê bike. Yê nû bi gelemperî nêzî $weeks hefteyan digire.',
+      one: 'Heta $date dest pê bike. Yê nû bi gelemperî nêzî $weeks hefteyê digire.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Niha dest pê bike. Yê nû bi gelemperî nêzî $weeks hefteyan digire.',
+      one: 'Niha dest pê bike. Yê nû bi gelemperî nêzî $weeks hefteyê digire.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Plana te';
+
+  @override
+  String get lifePlanWhenHappened => 'Kengî qewimî?';
+
+  @override
+  String get lifePlanReminderNudge => 'Plana te hîn karên kirinê hene. Gava demek te hebe veke.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Kart û belgeyên te yên nû gihîştin? Ji bo kontrolê planê veke.';
+
+  @override
+  String get lifePlanDoFirst => 'Pêşî vê bike';
+
+  @override
+  String get lifePlanSteps => 'Gavên din';
+
+  @override
+  String get lifePlanAddOwnStep => 'Gava xwe zêde bike';
+
+  @override
+  String get lifePlanOwnStepHint => 'Mînak: Dibistanê agahdar bike';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Tu dikarî heta 20 gavên xwe zêde bikî.';
+
+  @override
+  String get lifePlanReadAloud => 'Bi deng bixwîne';
+
+  @override
+  String get lifePlanStopReading => 'Xwendinê rawestîne';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Xwendina bi deng li ser vê telefonê tune ye.';
+
+  @override
+  String get lifePlanProofPack => 'Pakêta delîlan çêke';
+
+  @override
+  String get lifePlanOpenFamily => 'Malbatê veke';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tomarên ku te jê birin wek betalkirî têne hesibandin.',
+      one: '$count tomara ku te jê bir wek betalkirî tê hesibandin.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Nûkirina van bi gelemperî nêzî $amount e.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Tu diçî maleke nû? Binêre ka divê çi din nû bikî.';
 }

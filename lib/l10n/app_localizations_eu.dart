@@ -6846,4 +6846,330 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Hasi beste herrialde batera joateko plan bat. Vaultarak erakusten du zer konpondu joan aurretik.';
+
+  @override
+  String get lifeGroupHome => 'Etxea';
+
+  @override
+  String get lifeGroupFamily => 'Familia';
+
+  @override
+  String get lifeGroupWork => 'Lana eta ikasketak';
+
+  @override
+  String get lifeGroupCarTravel => 'Autoa eta bidaiak';
+
+  @override
+  String get lifeGroupEmergency => 'Zerbait gaizki atera da';
+
+  @override
+  String get lifeEventCarBuy => 'Auto bat erosi dut';
+
+  @override
+  String get lifeEventCarBuyBody => 'Kontratatu asegurua etxera eraman aurretik, eta gero jarri autoa zure izenean.';
+
+  @override
+  String get lifeEventCarSell => 'Auto bat saldu dut';
+
+  @override
+  String get lifeEventCarSellBody => 'Jakinarazi salmenta trafiko bulegoari eta ezeztatu asegurua autoa zurea ez denean.';
+
+  @override
+  String get lifeEventJobStart => 'Lan berri bat hasiko dut';
+
+  @override
+  String get lifeEventJobStartBody => 'Egiaztatu baimenak hasi aurretik, eta gero konfiguratu lan-txartela eta onurak.';
+
+  @override
+  String get lifeEventJobLeave => 'Lana utziko dut';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Itzuli laneko gauzak eta egiaztatu zer gertatzen den lanak ematen zizun estaldurarekin.';
+
+  @override
+  String get lifeEventLostPhone => 'Mugikorra galdu dut edo lapurtu didate';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Jokatu azkar. Zure mugikorra eta SIM txartela dituenak zure bankuan eta posta elektronikoan sar daiteke. Egin lehen urratsak berehala.';
+
+  @override
+  String get lifeEventJobLoss => 'Lana galdu dut';
+
+  @override
+  String get lifeEventJobLossBody => 'Gogorra da. Urratsez urrats joan. Eskaera batzuek epea dute, beraz hasi horiekin.';
+
+  @override
+  String get lifeEventDisaster => 'Sutea, uholdea edo lapurreta etxean';
+
+  @override
+  String get lifeEventDisasterBody => 'Lehenik ziurtatu denak salbu daudela. Gero atera argazkiak, jarri harremanetan aseguru-etxearekin eta ordezkatu galdutakoa.';
+
+  @override
+  String get lifeEventCaringParent => 'Guraso bat zaintzen ari naiz';
+
+  @override
+  String get lifeEventCaringParentBody => 'Aukeratu zaintzen duzun pertsona. Egiaztatu haren agiriak eta estaldura, eta izan behar duzuna eskura.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Erosi ala saldu duzu?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Hasten ari zara ala uzten?';
+
+  @override
+  String get lifeVariantBuy => 'Erosia';
+
+  @override
+  String get lifeVariantSell => 'Saldua';
+
+  @override
+  String get lifeVariantStart => 'Hasten';
+
+  @override
+  String get lifeVariantLeave => 'Uzten';
+
+  @override
+  String get lifeTaskRedirectPost => 'Eskatu zure posta helbide berrira bidaltzeko';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Eman helbide berria enpresari, Ogasunari, medikuari eta eskolari';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Eman baja edo aldatu argiaren, uraren eta internetaren kontuak';
+
+  @override
+  String get lifeTaskMeterReadings => 'Hartu kontagailuen irakurketak eta atera argazkiak alde egiten duzun egunean';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Gehitu salmenta edo eskualdatze paperen argazki bat Vaultara-n';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Eman giltzak, urruneko agintea eta sarbide-txartelak';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Lortu lehenik izen berriaren froga ofiziala. Bulego gehienek eskatzen dute.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Jakinarazi izen berria bankuari, enpresari, medikuari eta Ogasunari';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Aldatu izena posta elektronikoan, mugikorrean eta lineako kontuetan';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Gehitu ezkontza-ziurtagiriaren argazki bat Vaultara-n';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Egiaztatu nor agertzen den onuradun gisa zure poliza eta kontuetan';
+
+  @override
+  String get lifeTaskUpdateWill => 'Egin edo eguneratu testamentua';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Gehitu dibortzio-epai irmoaren argazki bat Vaultara-n';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Itxi edo banatu kontu partekatuak eta aldatu pasahitz partekatuak';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Erregistratu jaiotza eta lortu jaiotza-agiria';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Gehitu haurra Familian, haren agiriak jarraitzeko';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Jarri autoa zure izenean legeak baimentzen duen epean';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Gehitu salerosketa-kontratuaren argazki bat Vaultara-n';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Jakinarazi trafiko bulegoari autoa saldu duzula eta gorde froga';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Kendu bidesari-gailuak, aparkaleku-txartelak eta gauza pertsonalak';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Eman banku-datuak eta zerga-zenbakia enpresa berriari';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Batu enpresak eskaintzen dituen osasun-aseguru eta pentsio planera';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Itzuli laneko gauzak, hala nola ordenagailua, txartela edo giltzak';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Eskatu azken nomina eta lan-datak berresten dituen gutun bat';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Galdetu zer gertatzen den zure osasun-aseguru eta pentsioarekin';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Galdetu orain langabezia-prestazioari buruz. Eskaerek askotan epea dute.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Egin helbideratzeen eta harpidetzen zerrenda, eta eten ahal duzuna';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Gehitu onarpen-gutunaren eta matrikula-ordainagirien argazkiak Vaultara-n';
+
+  @override
+  String get lifeTaskStudyFunding => 'Egiaztatu beka, mailegu edo bestelako laguntzen epeak';
+
+  @override
+  String get lifeTaskRetirePension => 'Galdetu nola eta noiz ordainduko den zure pentsioa';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Kontratatu zure osasun-asegurua laneko amaitzen bada';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Jakinarazi bankuari eta Ogasunari alde egiten duzula';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Gehitu agiri garrantzitsu bakoitzaren argazki bat Vaultara-n';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Egiaztatu gidabaimena aldatu behar duzun';
+
+  @override
+  String get lifeTaskChildOwnId => 'Lagundu bere NANa eskatzen behar badu';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Lagundu bere banku-kontua irekitzen';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Lortu heriotza-ziurtagiriaren kopia ziurtatu batzuk';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Jakinarazi bankuari, aseguru-etxeei eta enpresari';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Aurkitu testamentua eta jarri harremanetan albazearekin';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Prest zaudenean, desaktibatu haren erregistroen oroigarriak';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Deitu operadoreari SIM txartela blokeatzeko. Horrela SIM aldaketaren iruzurra eragozten da.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Deitu bankuari mugikorreko banka blokeatzeko';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Blokeatu edo ezabatu mugikorra beste gailu batetik';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Aldatu posta elektronikoaren eta sare sozialen pasahitzak';
+
+  @override
+  String get lifeTaskReportToPolice => 'Salatu poliziari eta gorde salaketa-zenbakia';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Ziurtatu denak salbu daudela eta egoteko lekua dutela';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Atera kalteen argazkiak garbitu aurretik';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Jarri harremanetan aseguru-etxearekin lehenbailehen';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Bidali zure agirien kopiak Froga-paketearekin';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Jakin non gordetzen dituen paper garrantzitsuak';
+
+  @override
+  String get lifeTaskParentPermission => 'Galdetu haren izenean bankuarekin, medikuarekin eta aseguru-etxearekin hitz egin dezakezun';
+
+  @override
+  String get lifeTaskParentMedicines => 'Izan haren sendagaien eta medikuen zerrenda';
+
+  @override
+  String get lifePlanDoClaim => 'Egin erreklamazioa';
+
+  @override
+  String get lifePlanStatusClaimed => 'Erreklamatua';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Hasi $date baino lehen. Berri batek $weeks aste inguru behar izaten ditu.',
+      one: 'Hasi $date baino lehen. Berri batek astebete inguru behar izaten du.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Hasi orain. Berri batek $weeks aste inguru behar izaten ditu.',
+      one: 'Hasi orain. Berri batek astebete inguru behar izaten du.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Zure plana';
+
+  @override
+  String get lifePlanWhenHappened => 'Noiz gertatu zen?';
+
+  @override
+  String get lifePlanReminderNudge => 'Zure planak oraindik egitekoak ditu. Ireki une bat duzunean.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Iritsi al dira txartel eta agiri berriak? Ireki plana egiaztatzeko.';
+
+  @override
+  String get lifePlanDoFirst => 'Egin hau lehenik';
+
+  @override
+  String get lifePlanSteps => 'Beste urrats batzuk';
+
+  @override
+  String get lifePlanAddOwnStep => 'Gehitu zure urratsa';
+
+  @override
+  String get lifePlanOwnStepHint => 'Adibidez: Eskolari jakinarazi';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Zure 20 urrats arte gehi ditzakezu.';
+
+  @override
+  String get lifePlanReadAloud => 'Irakurri ozen';
+
+  @override
+  String get lifePlanStopReading => 'Utzi irakurtzeari';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Ozen irakurtzea ez dago erabilgarri mugikor honetan.';
+
+  @override
+  String get lifePlanProofPack => 'Sortu froga-paketea';
+
+  @override
+  String get lifePlanOpenFamily => 'Ireki Familia';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ezabatu dituzun $count erregistro ezeztatutzat hartzen dira.',
+      one: 'Ezabatu duzun erregistro 1 ezeztatutzat hartzen da.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Hauek berritzeak $amount inguru kostatzen du normalean.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Etxe berrira zoaz? Ikusi zer gehiago eguneratu behar duzun.';
 }

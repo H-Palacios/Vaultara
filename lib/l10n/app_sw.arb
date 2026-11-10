@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Bado kuna mambo yaliyobaki. Fungua mpango ili kuyakamilisha.",
   "lifePlanSuggestCar": "Umenunua au umeuza gari? Angalia nini kingine cha kusasisha.",
   "lifePlanSuggestTrip": "Unahamia huko kwa muda?",
-  "lifePlanSuggestTripBody": "Anza mpango wa kuhamia nchi nyingine. Vaultara inaonyesha cha kushughulikia kabla ya kuondoka."
+  "lifePlanSuggestTripBody": "Anza mpango wa kuhamia nchi nyingine. Vaultara inaonyesha cha kushughulikia kabla ya kuondoka.",
+  "lifeGroupHome": "Nyumbani",
+  "lifeGroupFamily": "Familia",
+  "lifeGroupWork": "Kazi na masomo",
+  "lifeGroupCarTravel": "Gari na safari",
+  "lifeGroupEmergency": "Kuna tatizo limetokea",
+  "lifeEventCarBuy": "Nimenunua gari",
+  "lifeEventCarBuyBody": "Pata bima kabla ya kuliendesha nyumbani, kisha sajili gari kwa jina lako.",
+  "lifeEventCarSell": "Nimeuza gari",
+  "lifeEventCarSellBody": "Ijulishe ofisi ya leseni kuhusu mauzo, kisha sitisha bima gari likiacha kuwa lako.",
+  "lifeEventJobStart": "Ninaanza kazi mpya",
+  "lifeEventJobStartBody": "Kagua vibali vyako kabla ya kuanza, kisha andaa kadi ya kazi na marupurupu.",
+  "lifeEventJobLeave": "Ninaacha kazi",
+  "lifeEventJobLeaveBody": "Rudisha vifaa vya kazi na uangalie kitakachotokea kwa bima uliyopata kazini.",
+  "lifeEventLostPhone": "Simu yangu imepotea au imeibiwa",
+  "lifeEventLostPhoneBody": "Chukua hatua haraka. Mtu aliye na simu na SIM kadi yako anaweza kuingia benki na barua pepe yako. Fanya hatua za kwanza sasa hivi.",
+  "lifeEventJobLoss": "Nimepoteza kazi",
+  "lifeEventJobLossBody": "Hili ni gumu. Chukua hatua moja baada ya nyingine. Baadhi ya madai yana tarehe ya mwisho, kwa hivyo anza nayo.",
+  "lifeEventDisaster": "Moto, mafuriko au wizi nyumbani",
+  "lifeEventDisasterBody": "Kwanza hakikisha kila mtu yuko salama. Kisha piga picha, wasiliana na kampuni ya bima na ubadilishe kilichopotea.",
+  "lifeEventCaringParent": "Ninamhudumia mzazi",
+  "lifeEventCaringParentBody": "Chagua mtu unayemhudumia. Kagua hati na bima yake, na weka unachohitaji karibu.",
+  "lifeVariantCarQuestion": "Ulinunua au uliuza?",
+  "lifeVariantJobQuestion": "Unaanza au unaacha?",
+  "lifeVariantBuy": "Nimenunua",
+  "lifeVariantSell": "Nimeuza",
+  "lifeVariantStart": "Ninaanza",
+  "lifeVariantLeave": "Ninaacha",
+  "lifeTaskRedirectPost": "Omba barua zako zitumwe kwenye anwani mpya",
+  "lifeTaskNewAddressEveryone": "Mpe mwajiri, ofisi ya kodi, daktari na shule anwani yako mpya",
+  "lifeTaskMoveUtilities": "Funga au hamisha akaunti za umeme, maji na intaneti",
+  "lifeTaskMeterReadings": "Siku unayohama, andika usomaji wa mita na upige picha",
+  "lifeTaskSaveHomePapers": "Ongeza picha ya hati za mauzo au uhamisho kwenye Vaultara",
+  "lifeTaskHandOverKeys": "Kabidhi funguo, rimoti na kadi za kuingia",
+  "lifeTaskOfficialNameProof": "Kwanza pata uthibitisho rasmi wa jina lako jipya. Ofisi nyingi huuomba.",
+  "lifeTaskTellNameChange": "Ijulishe benki, mwajiri, daktari na ofisi ya kodi kuhusu jina lako jipya",
+  "lifeTaskUpdateOnlineAccounts": "Badilisha jina lako kwenye barua pepe, simu na akaunti za mtandaoni",
+  "lifeTaskSaveMarriageCertificate": "Ongeza picha ya cheti cha ndoa kwenye Vaultara",
+  "lifeTaskCheckBeneficiaries": "Kagua nani ameandikwa kama mnufaika kwenye bima na akaunti zako",
+  "lifeTaskUpdateWill": "Andika au sasisha wosia",
+  "lifeTaskSaveDivorceOrder": "Ongeza picha ya amri ya mwisho ya talaka kwenye Vaultara",
+  "lifeTaskSplitSharedAccounts": "Funga au gawanya akaunti za pamoja na ubadilishe nywila za pamoja",
+  "lifeTaskRegisterBirth": "Sajili kuzaliwa na upate cheti cha kuzaliwa",
+  "lifeTaskAddBabyToFamily": "Mwongeze mtoto kwenye Familia ili hati zake zifuatiliwe",
+  "lifeTaskCarRegisterInName": "Sajili gari kwa jina lako ndani ya muda unaoruhusiwa na sheria",
+  "lifeTaskCarSavePapers": "Ongeza picha ya mkataba wa mauzo kwenye Vaultara",
+  "lifeTaskCarNotifySale": "Ijulishe ofisi ya leseni kuwa umeuza gari na uhifadhi uthibitisho",
+  "lifeTaskCarRemoveTags": "Ondoa vibandiko vya ushuru wa barabara, kadi za maegesho na vitu binafsi",
+  "lifeTaskJobGiveDetails": "Mpe mwajiri mpya maelezo ya benki na namba ya kodi",
+  "lifeTaskJobJoinBenefits": "Jiunge na bima ya afya na pensheni anayotoa mwajiri",
+  "lifeTaskJobReturnItems": "Rudisha vifaa vya kazi kama kompyuta, kadi au funguo",
+  "lifeTaskJobLastPayslip": "Omba hati ya mshahara ya mwisho na barua inayothibitisha tarehe za kazi",
+  "lifeTaskJobAskBenefits": "Uliza kitakachotokea kwa bima yako ya afya na pensheni",
+  "lifeTaskJobUnemployment": "Uliza kuhusu fao la kukosa ajira sasa. Madai mara nyingi yana tarehe ya mwisho.",
+  "lifeTaskJobPauseDebits": "Orodhesha malipo ya moja kwa moja na usajili, na usimamishe unavyoweza",
+  "lifeTaskStudySaveLetters": "Ongeza picha za barua ya kukubaliwa na taarifa za ada kwenye Vaultara",
+  "lifeTaskStudyFunding": "Kagua tarehe za mwisho za ufadhili, mikopo au misaada mingine",
+  "lifeTaskRetirePension": "Uliza jinsi na lini pensheni yako italipwa",
+  "lifeTaskRetireOwnCover": "Panga bima yako ya afya ikiwa ya kazini itaisha",
+  "lifeTaskCountryTellBankTax": "Ijulishe benki na ofisi ya kodi kuwa unaondoka",
+  "lifeTaskCountryScanCopies": "Ongeza picha ya kila hati muhimu kwenye Vaultara",
+  "lifeTaskCountryLicenceRules": "Kagua kama lazima ubadilishe leseni ya udereva",
+  "lifeTaskChildOwnId": "Msaidie kuomba kitambulisho chake ikiwa anakihitaji",
+  "lifeTaskChildBankAccount": "Msaidie kufungua akaunti yake ya benki",
+  "lifeTaskDeathCertificates": "Pata nakala chache zilizothibitishwa za cheti cha kifo",
+  "lifeTaskDeathTellOrganisations": "Ijulishe benki, kampuni za bima na mwajiri",
+  "lifeTaskDeathFindWill": "Tafuta wosia na uwasiliane na msimamizi wa mirathi",
+  "lifeTaskDeathStopReminders": "Ukiwa tayari, zima vikumbusho vya rekodi zake",
+  "lifeTaskPhoneBlockSim": "Piga simu kwa mtandao wako ili kuzuia SIM kadi. Hii huzuia ulaghai wa kubadilisha SIM.",
+  "lifeTaskPhoneBlockBanking": "Piga simu benki ili kuzuia huduma za benki kwenye simu",
+  "lifeTaskPhoneLockErase": "Funga au futa simu kutoka kifaa kingine",
+  "lifeTaskPhoneChangePasswords": "Badilisha nywila za barua pepe na mitandao ya kijamii",
+  "lifeTaskReportToPolice": "Ripoti polisi na uhifadhi namba ya kesi",
+  "lifeTaskDisasterSafePlace": "Hakikisha kila mtu yuko salama na ana mahali pa kukaa",
+  "lifeTaskDisasterPhotos": "Piga picha za uharibifu kabla ya kusafisha",
+  "lifeTaskDisasterContactInsurer": "Wasiliana na kampuni ya bima haraka iwezekanavyo",
+  "lifeTaskDisasterProofPack": "Tuma nakala za hati zako kwa Kifurushi cha uthibitisho",
+  "lifeTaskParentFindPapers": "Jua hati zake muhimu zimehifadhiwa wapi",
+  "lifeTaskParentPermission": "Uliza kama unaweza kuzungumza kwa niaba yake na benki, daktari na kampuni ya bima",
+  "lifeTaskParentMedicines": "Weka orodha ya dawa zake na madaktari wake",
+  "lifePlanDoClaim": "Wasilisha dai",
+  "lifePlanStatusClaimed": "Dai limewasilishwa",
+  "lifePlanStartBy": "{weeks, plural, =1{Anza kabla ya {date}. Mpya kwa kawaida huchukua karibu wiki moja.} other{Anza kabla ya {date}. Mpya kwa kawaida huchukua karibu wiki {weeks}.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Anza sasa. Mpya kwa kawaida huchukua karibu wiki moja.} other{Anza sasa. Mpya kwa kawaida huchukua karibu wiki {weeks}.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Mpango wako",
+  "lifePlanWhenHappened": "Ilitokea lini?",
+  "lifePlanReminderNudge": "Mpango wako bado una mambo ya kufanya. Ufungue ukipata muda.",
+  "lifePlanReminderCheckIn": "Kadi na hati zako mpya zimefika? Fungua mpango ili kukagua.",
+  "lifePlanDoFirst": "Fanya hili kwanza",
+  "lifePlanSteps": "Hatua nyingine",
+  "lifePlanAddOwnStep": "Ongeza hatua yako",
+  "lifePlanOwnStepHint": "Kwa mfano: Ijulishe shule",
+  "lifePlanOwnStepLimit": "Unaweza kuongeza hadi hatua 20 zako.",
+  "lifePlanReadAloud": "Soma kwa sauti",
+  "lifePlanStopReading": "Acha kusoma",
+  "lifePlanReadAloudUnavailable": "Kusoma kwa sauti hakupatikani kwenye simu hii.",
+  "lifePlanProofPack": "Tengeneza kifurushi cha uthibitisho",
+  "lifePlanOpenFamily": "Fungua Familia",
+  "lifePlanRemoved": "{count, plural, =1{Rekodi 1 uliyofuta inahesabiwa kuwa imesitishwa.} other{Rekodi {count} ulizofuta zinahesabiwa kuwa zimesitishwa.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Kuhuisha hivi kwa kawaida hugharimu karibu {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Unahamia nyumba mpya? Angalia nini kingine cha kusasisha."
 }

@@ -6846,4 +6846,330 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Qala isicwangciso sokufudukela kwelinye ilizwe. I-Vaultara ibonisa into ekufuneka uyilungise phambi kokuba uhambe.';
+
+  @override
+  String get lifeGroupHome => 'Ikhaya';
+
+  @override
+  String get lifeGroupFamily => 'Usapho';
+
+  @override
+  String get lifeGroupWork => 'Umsebenzi nezifundo';
+
+  @override
+  String get lifeGroupCarTravel => 'Imoto nohambo';
+
+  @override
+  String get lifeGroupEmergency => 'Kukho into eyenzekileyo';
+
+  @override
+  String get lifeEventCarBuy => 'Ndithenge imoto';
+
+  @override
+  String get lifeEventCarBuyBody => 'Yifakele i-inshorensi ngaphambi kokuba uyiqhubele ekhaya, emva koko uyibhalise egameni lakho.';
+
+  @override
+  String get lifeEventCarSell => 'Ndithengise imoto';
+
+  @override
+  String get lifeEventCarSellBody => 'Xelela iofisi yeelayisensi ngentengiso, uze urhoxise i-inshorensi xa imoto ingaseyiyo eyakho.';
+
+  @override
+  String get lifeEventJobStart => 'Ndiqala umsebenzi omtsha';
+
+  @override
+  String get lifeEventJobStartBody => 'Jonga iimvume zakho ngaphambi kokuqala, uze ulungise ikhadi lomsebenzi nezibonelelo.';
+
+  @override
+  String get lifeEventJobLeave => 'Ndiyawushiya umsebenzi wam';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Buyisa izinto zomsebenzi uze ujonge ukuba kuza kwenzeka ntoni kwi-inshorensi oyinikwe ngumsebenzi.';
+
+  @override
+  String get lifeEventLostPhone => 'Ndilahlekelwe yifowuni okanye ibiwe';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Khawuleza. Nabani na onefowuni yakho nekhadi le-SIM angangena ebhankini nakwi-imeyile yakho. Yenza amanyathelo okuqala ngoku.';
+
+  @override
+  String get lifeEventJobLoss => 'Ndiphelelwe ngumsebenzi';
+
+  @override
+  String get lifeEventJobLossBody => 'Oku kunzima. Thatha inyathelo elinye ngexesha. Amabango athile anomhla wokugqibela, ngoko qala ngawo.';
+
+  @override
+  String get lifeEventDisaster => 'Umlilo, izikhukhula okanye ukuqhekezwa ekhaya';
+
+  @override
+  String get lifeEventDisasterBody => 'Qala uqinisekise ukuba wonke umntu ukhuselekile. Emva koko thatha iifoto, qhagamshelana nenkampani ye-inshorensi uze utshintshe oko kulahlekileyo.';
+
+  @override
+  String get lifeEventCaringParent => 'Ndinakekela umzali';
+
+  @override
+  String get lifeEventCaringParentBody => 'Khetha umntu omnakekelayo. Jonga amaxwebhu akhe ne-inshorensi, ugcine kufutshane oko ukudingayo.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Uthenge okanye uthengise?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Uyaqala okanye uyahamba?';
+
+  @override
+  String get lifeVariantBuy => 'Ndithengile';
+
+  @override
+  String get lifeVariantSell => 'Ndithengisile';
+
+  @override
+  String get lifeVariantStart => 'Ndiyaqala';
+
+  @override
+  String get lifeVariantLeave => 'Ndiyahamba';
+
+  @override
+  String get lifeTaskRedirectPost => 'Cela ukuba iposi yakho ithunyelwe kwidilesi entsha';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Nika iqesha, iofisi yerhafu, ugqirha nesikolo idilesi yakho entsha';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Vala okanye udlulisele ii-akhawunti zombane, amanzi ne-intanethi';
+
+  @override
+  String get lifeTaskMeterReadings => 'Ngomhla ophuma ngawo, bhala iimitha uze uthathe iifoto';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Yongeza ifoto yamaphepha entengiso okanye okudlulisela kwi-Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Nikezela ngezitshixo, iirimothi neekhadi zokungena';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Qala ufumane ubungqina obusemthethweni begama lakho elitsha. Uninzi lweeofisi luyabucela.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Xelela ibhanki, iqesha, ugqirha neofisi yerhafu ngegama lakho elitsha';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Tshintsha igama lakho kwi-imeyile, kwifowuni nakwii-akhawunti ze-intanethi';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Yongeza ifoto yesatifikethi somtshato kwi-Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Jonga ukuba ngubani ozuzayo kwiipolisi nakwii-akhawunti zakho';
+
+  @override
+  String get lifeTaskUpdateWill => 'Yenza okanye uhlaziye ilifa (incwadi yokugqibela)';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Yongeza ifoto yomyalelo wokugqibela woqhawulo-mtshato kwi-Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Vala okanye wahlule ii-akhawunti ezabelwana ngazo uze utshintshe iiphasiwedi ezabelwana ngazo';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Bhalisa ukuzalwa uze ufumane isatifikethi sokuzalwa';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Yongeza usana kuSapho ukuze amaxwebhu alo alandelelwe';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Bhalisa imoto egameni lakho ngexesha elivunyelwe ngumthetho';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Yongeza ifoto yesivumelwano sentengiso kwi-Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Xelela iofisi yeelayisensi ukuba uthengise imoto uze ugcine ubungqina';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Susa iithegi zeendlela zokuhlawula, iikhadi zokupaka nezinto zakho';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Nika iqesha elitsha iinkcukacha zebhanki nenombolo yerhafu';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Joyina i-inshorensi yezempilo nompeshenali onikezelwa ngumqeshi';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Buyisa izinto zomsebenzi ezifana nelaptop, ikhadi okanye izitshixo';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Cela isiliphu somvuzo sokugqibela nencwadi eqinisekisa imihla yomsebenzi wakho';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Buza ukuba kuza kwenzeka ntoni kwi-inshorensi yezempilo nomhlalaphantsi wakho';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Buza ngoku nge-UIF okanye inkxaso yokungasebenzi. Amabango adla ngokuba nomhla wokugqibela.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Dwelisa ii-odolo zokutsala imali nemirhumo, uze umise oko unako';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Yongeza iifoto zeleta yokwamkelwa neengxelo zemirhumo kwi-Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Jonga imihla yokugqibela yeebhasari, iimali-mboleko okanye olunye uncedo';
+
+  @override
+  String get lifeTaskRetirePension => 'Buza ukuba umhlalaphantsi wakho uza kuhlawulwa njani nini';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Lungiselela i-inshorensi yakho yezempilo ukuba eyomsebenzi iyaphela';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Xelela ibhanki neofisi yerhafu ukuba uyahamba';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Yongeza ifoto yexwebhu ngalinye elibalulekileyo kwi-Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Jonga ukuba kufuneka utshintshe ilayisensi yokuqhuba';
+
+  @override
+  String get lifeTaskChildOwnId => 'Mncede afake isicelo sesazisi sakhe ukuba uyasifuna';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Mncede avule eyakhe i-akhawunti yebhanki';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Fumana iikopi ezimbalwa eziqinisekisiweyo zesatifikethi sokufa';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Xelela ibhanki, iinkampani ze-inshorensi neqesha';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Fumana ilifa uze uqhagamshelane nomlawuli walo';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Xa ulungile, cima izikhumbuzo zeerekhodi zakhe';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Tsalela inethiwekhi yakho ukuze bavale ikhadi le-SIM. Oku kumisa ubuqhetseba bokutshintsha i-SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Tsalela ibhanki yakho ukuze bavale ibhanki kwifowuni';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Tshixa okanye ucime ifowuni usebenzisa esinye isixhobo';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Tshintsha iiphasiwedi ze-imeyile nemidiya yoluntu';
+
+  @override
+  String get lifeTaskReportToPolice => 'Xela emapoliseni uze ugcine inombolo yetyala';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Qinisekisa ukuba wonke umntu ukhuselekile kwaye unendawo yokuhlala';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Thatha iifoto zomonakalo ngaphambi kokucoca';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Qhagamshelana nenkampani ye-inshorensi ngokukhawuleza';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Thumela iikopi zamaxwebhu akho ngePakethe yobungqina';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Fumanisa apho amaphepha akhe abalulekileyo agcinwe khona';
+
+  @override
+  String get lifeTaskParentPermission => 'Buza ukuba ungathetha egameni lakhe nebhanki, ugqirha nenkampani ye-inshorensi';
+
+  @override
+  String get lifeTaskParentMedicines => 'Gcina uluhlu lwamayeza akhe noogqirha bakhe';
+
+  @override
+  String get lifePlanDoClaim => 'Faka ibango';
+
+  @override
+  String get lifePlanStatusClaimed => 'Ibango lifakiwe';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Qala ngaphambi ko-$date. Entsha idla ngokuthatha malunga neeveki ezi-$weeks.',
+      one: 'Qala ngaphambi ko-$date. Entsha idla ngokuthatha malunga neveki enye.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Qala ngoku. Entsha idla ngokuthatha malunga neeveki ezi-$weeks.',
+      one: 'Qala ngoku. Entsha idla ngokuthatha malunga neveki enye.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Isicwangciso sakho';
+
+  @override
+  String get lifePlanWhenHappened => 'Kwenzeka nini?';
+
+  @override
+  String get lifePlanReminderNudge => 'Isicwangciso sakho sisenezinto ekufuneka zenziwe. Sivule xa unexesha.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Ingaba amakhadi namaxwebhu akho amatsha afikile? Vula isicwangciso ukuze ujonge.';
+
+  @override
+  String get lifePlanDoFirst => 'Yenza oku kuqala';
+
+  @override
+  String get lifePlanSteps => 'Amanye amanyathelo';
+
+  @override
+  String get lifePlanAddOwnStep => 'Yongeza elakho inyathelo';
+
+  @override
+  String get lifePlanOwnStepHint => 'Umzekelo: Xelela isikolo';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Ungongeza ukuya kuma-20 amanyathelo akho.';
+
+  @override
+  String get lifePlanReadAloud => 'Funda ngokuvakalayo';
+
+  @override
+  String get lifePlanStopReading => 'Yeka ukufunda';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Ukufunda ngokuvakalayo akufumaneki kule fowuni.';
+
+  @override
+  String get lifePlanProofPack => 'Yenza ipakethe yobungqina';
+
+  @override
+  String get lifePlanOpenFamily => 'Vula Usapho';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iirekhodi ezi-$count ozicimileyo zibalwa njengezirhoxisiweyo.',
+      one: 'Irekhodi eli-1 olicimileyo libalwa njengelirhoxisiweyo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Ukuhlaziya ezi kudla ngokuxabisa malunga ne-$amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ufudukela kwikhaya elitsha? Jonga ukuba yintoni enye ekufuneka uyihlaziye.';
 }

@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "ჯერ კიდევ რაღაც დარჩა. გახსენით გეგმა, რომ დაასრულოთ.",
   "lifePlanSuggestCar": "იყიდეთ ან გაყიდეთ მანქანა? ნახეთ, კიდევ რა უნდა განაახლოთ.",
   "lifePlanSuggestTrip": "იქ ცოტა ხნით გადადიხართ?",
-  "lifePlanSuggestTripBody": "დაიწყეთ სხვა ქვეყანაში გადასვლის გეგმა. Vaultara გაჩვენებთ, რა მოაგვაროთ წასვლამდე."
+  "lifePlanSuggestTripBody": "დაიწყეთ სხვა ქვეყანაში გადასვლის გეგმა. Vaultara გაჩვენებთ, რა მოაგვაროთ წასვლამდე.",
+  "lifeGroupHome": "სახლი",
+  "lifeGroupFamily": "ოჯახი",
+  "lifeGroupWork": "სამსახური და სწავლა",
+  "lifeGroupCarTravel": "მანქანა და მოგზაურობა",
+  "lifeGroupEmergency": "რაღაც მოხდა",
+  "lifeEventCarBuy": "მანქანა ვიყიდე",
+  "lifeEventCarBuyBody": "დააზღვიეთ, სანამ სახლში წაიყვანთ, შემდეგ კი მანქანა თქვენს სახელზე გადაიფორმეთ.",
+  "lifeEventCarSell": "მანქანა გავყიდე",
+  "lifeEventCarSellBody": "აცნობეთ გაყიდვის შესახებ რეგისტრაციის სამსახურს და გააუქმეთ დაზღვევა, როცა მანქანა აღარ არის თქვენი.",
+  "lifeEventJobStart": "ახალ სამსახურს ვიწყებ",
+  "lifeEventJobStartBody": "დაწყებამდე შეამოწმეთ ნებართვები, შემდეგ მოაწესრიგეთ სამუშაო ბარათი და შეღავათები.",
+  "lifeEventJobLeave": "სამსახურიდან მივდივარ",
+  "lifeEventJobLeaveBody": "დააბრუნეთ სამუშაო ნივთები და შეამოწმეთ, რა მოუვა სამსახურის მიერ მოცემულ დაზღვევას.",
+  "lifeEventLostPhone": "ტელეფონი დავკარგე ან მომპარეს",
+  "lifeEventLostPhoneBody": "იმოქმედეთ სწრაფად. ვისაც თქვენი ტელეფონი და SIM ბარათი აქვს, შეუძლია შევიდეს თქვენს ბანკსა და ელფოსტაში. პირველი ნაბიჯები ახლავე გადადგით.",
+  "lifeEventJobLoss": "სამსახური დავკარგე",
+  "lifeEventJobLossBody": "ეს რთულია. ნაბიჯ-ნაბიჯ იმოძრავეთ. ზოგ განაცხადს ვადა აქვს, ამიტომ მათით დაიწყეთ.",
+  "lifeEventDisaster": "ხანძარი, წყალდიდობა ან ქურდობა სახლში",
+  "lifeEventDisasterBody": "ჯერ დარწმუნდით, რომ ყველა უსაფრთხოდაა. შემდეგ გადაიღეთ ფოტოები, დაუკავშირდით მზღვეველს და აღადგინეთ დაკარგული.",
+  "lifeEventCaringParent": "მშობელს ვუვლი",
+  "lifeEventCaringParentBody": "აირჩიეთ ადამიანი, ვისაც უვლით. შეამოწმეთ მისი დოკუმენტები და დაზღვევა და საჭირო რამ ხელთ გქონდეთ.",
+  "lifeVariantCarQuestion": "იყიდეთ თუ გაყიდეთ?",
+  "lifeVariantJobQuestion": "იწყებთ თუ მიდიხართ?",
+  "lifeVariantBuy": "ვიყიდე",
+  "lifeVariantSell": "გავყიდე",
+  "lifeVariantStart": "ვიწყებ",
+  "lifeVariantLeave": "მივდივარ",
+  "lifeTaskRedirectPost": "მოითხოვეთ, რომ ფოსტა ახალ მისამართზე გამოგიგზავნონ",
+  "lifeTaskNewAddressEveryone": "ახალი მისამართი მიეცით დამსაქმებელს, საგადასახადოს, ექიმსა და სკოლას",
+  "lifeTaskMoveUtilities": "დახურეთ ან გადაიტანეთ დენის, წყლისა და ინტერნეტის ანგარიშები",
+  "lifeTaskMeterReadings": "გასვლის დღეს ჩაიწერეთ მრიცხველების ჩვენებები და გადაიღეთ ფოტოები",
+  "lifeTaskSaveHomePapers": "დაამატეთ ნასყიდობის ან გადაცემის დოკუმენტების ფოტო Vaultara-ში",
+  "lifeTaskHandOverKeys": "გადაეცით გასაღებები, პულტები და დაშვების ბარათები",
+  "lifeTaskOfficialNameProof": "ჯერ მიიღეთ ახალი სახელის ოფიციალური დამადასტურებელი. უმეტესი უწყება მას ითხოვს.",
+  "lifeTaskTellNameChange": "ახალი სახელის შესახებ აცნობეთ ბანკს, დამსაქმებელს, ექიმსა და საგადასახადოს",
+  "lifeTaskUpdateOnlineAccounts": "შეცვალეთ სახელი ელფოსტაში, ტელეფონსა და ონლაინ ანგარიშებში",
+  "lifeTaskSaveMarriageCertificate": "დაამატეთ ქორწინების მოწმობის ფოტო Vaultara-ში",
+  "lifeTaskCheckBeneficiaries": "შეამოწმეთ, ვინ არის მითითებული ბენეფიციარად თქვენს პოლისებსა და ანგარიშებში",
+  "lifeTaskUpdateWill": "შეადგინეთ ან განაახლეთ ანდერძი",
+  "lifeTaskSaveDivorceOrder": "დაამატეთ განქორწინების საბოლოო გადაწყვეტილების ფოტო Vaultara-ში",
+  "lifeTaskSplitSharedAccounts": "დახურეთ ან გაყავით საერთო ანგარიშები და შეცვალეთ საერთო პაროლები",
+  "lifeTaskRegisterBirth": "დაარეგისტრირეთ დაბადება და აიღეთ დაბადების მოწმობა",
+  "lifeTaskAddBabyToFamily": "დაამატეთ ბავშვი ოჯახში, რომ მისი დოკუმენტები თვალყურის ქვეშ იყოს",
+  "lifeTaskCarRegisterInName": "კანონით დადგენილ ვადაში მანქანა თქვენს სახელზე გადაიფორმეთ",
+  "lifeTaskCarSavePapers": "დაამატეთ ნასყიდობის ხელშეკრულების ფოტო Vaultara-ში",
+  "lifeTaskCarNotifySale": "აცნობეთ რეგისტრაციის სამსახურს, რომ მანქანა გაყიდეთ, და შეინახეთ დამადასტურებელი",
+  "lifeTaskCarRemoveTags": "მოხსენით გზის გადასახადის მოწყობილობები, პარკინგის ბარათები და პირადი ნივთები",
+  "lifeTaskJobGiveDetails": "ახალ დამსაქმებელს მიეცით საბანკო რეკვიზიტები და საიდენტიფიკაციო ნომერი",
+  "lifeTaskJobJoinBenefits": "შეუერთდით დამსაქმებლის სამედიცინო დაზღვევასა და საპენსიო სქემას",
+  "lifeTaskJobReturnItems": "დააბრუნეთ სამუშაო ნივთები, მაგალითად ლეპტოპი, ბარათი ან გასაღებები",
+  "lifeTaskJobLastPayslip": "მოითხოვეთ ბოლო ხელფასის ფურცელი და მუშაობის თარიღების დამადასტურებელი წერილი",
+  "lifeTaskJobAskBenefits": "იკითხეთ, რა მოუვა თქვენს სამედიცინო დაზღვევასა და პენსიას",
+  "lifeTaskJobUnemployment": "ახლავე იკითხეთ უმუშევრობის შემწეობის შესახებ. განაცხადებს ხშირად ვადა აქვს.",
+  "lifeTaskJobPauseDebits": "ჩამოწერეთ ავტომატური გადახდები და გამოწერები და შეაჩერეთ, რაც შეგიძლიათ",
+  "lifeTaskStudySaveLetters": "დაამატეთ მიღების წერილისა და სწავლის საფასურის ამონაწერების ფოტოები Vaultara-ში",
+  "lifeTaskStudyFunding": "შეამოწმეთ სტიპენდიების, სესხების ან სხვა დაფინანსების ვადები",
+  "lifeTaskRetirePension": "იკითხეთ, როგორ და როდის გადაგიხდიან პენსიას",
+  "lifeTaskRetireOwnCover": "მოაწყვეთ საკუთარი სამედიცინო დაზღვევა, თუ სამსახურისა დასრულდება",
+  "lifeTaskCountryTellBankTax": "აცნობეთ ბანკსა და საგადასახადოს, რომ მიდიხართ",
+  "lifeTaskCountryScanCopies": "დაამატეთ ყველა მნიშვნელოვანი დოკუმენტის ფოტო Vaultara-ში",
+  "lifeTaskCountryLicenceRules": "შეამოწმეთ, გჭირდებათ თუ არა მართვის მოწმობის გაცვლა",
+  "lifeTaskChildOwnId": "დაეხმარეთ საკუთარი პირადობის მოწმობის აღებაში, თუ სჭირდება",
+  "lifeTaskChildBankAccount": "დაეხმარეთ საკუთარი საბანკო ანგარიშის გახსნაში",
+  "lifeTaskDeathCertificates": "აიღეთ გარდაცვალების მოწმობის რამდენიმე დამოწმებული ასლი",
+  "lifeTaskDeathTellOrganisations": "აცნობეთ ბანკს, მზღვეველებსა და დამსაქმებელს",
+  "lifeTaskDeathFindWill": "იპოვეთ ანდერძი და დაუკავშირდით შემსრულებელს",
+  "lifeTaskDeathStopReminders": "როცა მზად იქნებით, გამორთეთ მისი ჩანაწერების შეხსენებები",
+  "lifeTaskPhoneBlockSim": "დაურეკეთ ოპერატორს SIM ბარათის დასაბლოკად. ეს აჩერებს SIM-ის შეცვლის თაღლითობას.",
+  "lifeTaskPhoneBlockBanking": "დაურეკეთ ბანკს ტელეფონზე ბანკინგის დასაბლოკად",
+  "lifeTaskPhoneLockErase": "დაბლოკეთ ან წაშალეთ ტელეფონი სხვა მოწყობილობიდან",
+  "lifeTaskPhoneChangePasswords": "შეცვალეთ ელფოსტისა და სოციალური ქსელების პაროლები",
+  "lifeTaskReportToPolice": "შეატყობინეთ პოლიციას და შეინახეთ საქმის ნომერი",
+  "lifeTaskDisasterSafePlace": "დარწმუნდით, რომ ყველა უსაფრთხოდაა და აქვს დარჩენის ადგილი",
+  "lifeTaskDisasterPhotos": "დალაგებამდე გადაიღეთ ზიანის ფოტოები",
+  "lifeTaskDisasterContactInsurer": "რაც შეიძლება მალე დაუკავშირდით მზღვეველს",
+  "lifeTaskDisasterProofPack": "გაგზავნეთ დოკუმენტების ასლები მტკიცებულებების ნაკრებით",
+  "lifeTaskParentFindPapers": "გაარკვიეთ, სად ინახება მისი მნიშვნელოვანი საბუთები",
+  "lifeTaskParentPermission": "იკითხეთ, შეგიძლიათ თუ არა მისი სახელით ესაუბროთ ბანკს, ექიმსა და მზღვეველს",
+  "lifeTaskParentMedicines": "იქონიეთ მისი წამლებისა და ექიმების სია",
+  "lifePlanDoClaim": "მოითხოვეთ ანაზღაურება",
+  "lifePlanStatusClaimed": "მოთხოვნილია",
+  "lifePlanStartBy": "{weeks, plural, one{დაიწყეთ {date}-მდე. ახლის მიღებას ჩვეულებრივ დაახლოებით {weeks} კვირა სჭირდება.} other{დაიწყეთ {date}-მდე. ახლის მიღებას ჩვეულებრივ დაახლოებით {weeks} კვირა სჭირდება.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{დაიწყეთ ახლავე. ახლის მიღებას ჩვეულებრივ დაახლოებით {weeks} კვირა სჭირდება.} other{დაიწყეთ ახლავე. ახლის მიღებას ჩვეულებრივ დაახლოებით {weeks} კვირა სჭირდება.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "თქვენი გეგმა",
+  "lifePlanWhenHappened": "როდის მოხდა?",
+  "lifePlanReminderNudge": "თქვენს გეგმაში ჯერ კიდევ არის გასაკეთებელი. გახსენით, როცა დრო გექნებათ.",
+  "lifePlanReminderCheckIn": "მოვიდა თქვენი ახალი ბარათები და დოკუმენტები? გახსენით გეგმა შესამოწმებლად.",
+  "lifePlanDoFirst": "ჯერ ეს გააკეთეთ",
+  "lifePlanSteps": "სხვა ნაბიჯები",
+  "lifePlanAddOwnStep": "საკუთარი ნაბიჯის დამატება",
+  "lifePlanOwnStepHint": "მაგალითად: სკოლას შევატყობინო",
+  "lifePlanOwnStepLimit": "შეგიძლიათ დაამატოთ 20-მდე საკუთარი ნაბიჯი.",
+  "lifePlanReadAloud": "ხმამაღლა წაკითხვა",
+  "lifePlanStopReading": "წაკითხვის შეჩერება",
+  "lifePlanReadAloudUnavailable": "ამ ტელეფონზე ხმამაღლა წაკითხვა მიუწვდომელია.",
+  "lifePlanProofPack": "მტკიცებულებების ნაკრების შექმნა",
+  "lifePlanOpenFamily": "ოჯახის გახსნა",
+  "lifePlanRemoved": "{count, plural, one{თქვენ მიერ წაშლილი {count} ჩანაწერი გაუქმებულად ითვლება.} other{თქვენ მიერ წაშლილი {count} ჩანაწერი გაუქმებულად ითვლება.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "მათი განახლება ჩვეულებრივ დაახლოებით {amount} ღირს.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "ახალ სახლში გადადიხართ? ნახეთ, კიდევ რა უნდა განაახლოთ."
 }

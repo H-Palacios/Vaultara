@@ -6846,4 +6846,330 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'پلانێک بۆ گواستنەوە بۆ وڵاتێکی تر دەست پێبکە. Vaultara پیشان دەدات پێش ڕۆیشتن چی ڕێکبخەیت.';
+
+  @override
+  String get lifeGroupHome => 'ماڵ';
+
+  @override
+  String get lifeGroupFamily => 'خێزان';
+
+  @override
+  String get lifeGroupWork => 'کار و خوێندن';
+
+  @override
+  String get lifeGroupCarTravel => 'ئۆتۆمبێل و گەشت';
+
+  @override
+  String get lifeGroupEmergency => 'شتێک بە هەڵەدا چوو';
+
+  @override
+  String get lifeEventCarBuy => 'ئۆتۆمبێلێکم کڕی';
+
+  @override
+  String get lifeEventCarBuyBody => 'پێش ئەوەی بیهێنیتەوە ماڵەوە بیمەی بکە، پاشان ئۆتۆمبێلەکە بخەرە سەر ناوی خۆت.';
+
+  @override
+  String get lifeEventCarSell => 'ئۆتۆمبێلێکم فرۆشت';
+
+  @override
+  String get lifeEventCarSellBody => 'فرۆشتنەکە بە نووسینگەی مۆڵەت ڕابگەیەنە و کاتێک ئۆتۆمبێلەکە چیتر هی تۆ نییە بیمەکە هەڵبوەشێنەوە.';
+
+  @override
+  String get lifeEventJobStart => 'کارێکی نوێ دەست پێدەکەم';
+
+  @override
+  String get lifeEventJobStartBody => 'پێش دەستپێکردن مۆڵەتەکانت بپشکنە، پاشان کارتی کار و سوودەکانت ڕێک بخە.';
+
+  @override
+  String get lifeEventJobLeave => 'کارەکەم بەجێدەهێڵم';
+
+  @override
+  String get lifeEventJobLeaveBody => 'کەلوپەلی کار بگەڕێنەوە و بزانە چی بەسەر ئەو بیمەیەدا دێت کە کارەکەت پێی دابوویت.';
+
+  @override
+  String get lifeEventLostPhone => 'مۆبایلەکەم ون بوو یان دزرا';
+
+  @override
+  String get lifeEventLostPhoneBody => 'خێرا بجوڵێ. هەر کەسێک مۆبایل و سیمکارتەکەتی هەبێت دەتوانێت بچێتە ناو بانک و ئیمەیڵەکەت. هەنگاوە سەرەتاییەکان ئێستا بکە.';
+
+  @override
+  String get lifeEventJobLoss => 'کارەکەم لەدەست دا';
+
+  @override
+  String get lifeEventJobLossBody => 'ئەمە قورسە. هەنگاو بە هەنگاو بڕۆ. هەندێک داواکاری وادەی کۆتاییان هەیە، بۆیە لەوانەوە دەست پێبکە.';
+
+  @override
+  String get lifeEventDisaster => 'ئاگر، لافاو یان دزی لە ماڵەوە';
+
+  @override
+  String get lifeEventDisasterBody => 'سەرەتا دڵنیابە هەموو کەس سەلامەتن. پاشان وێنە بگرە، پەیوەندی بە کۆمپانیای بیمەوە بکە و ئەوەی لەدەست چووە بگۆڕەوە.';
+
+  @override
+  String get lifeEventCaringParent => 'چاودێری دایک یان باوکم دەکەم';
+
+  @override
+  String get lifeEventCaringParentBody => 'ئەو کەسە هەڵبژێرە کە چاودێری دەکەیت. بەڵگەنامە و بیمەکانی بپشکنە و ئەوەی پێویستتە لە نزیک خۆتەوە دابنێ.';
+
+  @override
+  String get lifeVariantCarQuestion => 'کڕیت یان فرۆشتت؟';
+
+  @override
+  String get lifeVariantJobQuestion => 'دەست پێدەکەیت یان دەڕۆیت؟';
+
+  @override
+  String get lifeVariantBuy => 'کڕیم';
+
+  @override
+  String get lifeVariantSell => 'فرۆشتم';
+
+  @override
+  String get lifeVariantStart => 'دەست پێدەکەم';
+
+  @override
+  String get lifeVariantLeave => 'دەڕۆم';
+
+  @override
+  String get lifeTaskRedirectPost => 'داوا بکە پۆستەکانت بنێردرێنە ناونیشانە نوێیەکەت';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'ناونیشانە نوێیەکەت بدە بە خاوەنکار، نووسینگەی باج، پزیشک و قوتابخانە';
+
+  @override
+  String get lifeTaskMoveUtilities => 'هەژمارەکانی کارەبا، ئاو و ئینتەرنێت دابخە یان بیانگوازەوە';
+
+  @override
+  String get lifeTaskMeterReadings => 'لە ڕۆژی ڕۆیشتنتدا خوێندنەوەی پێوەرەکان و وێنە بگرە';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'وێنەی بەڵگەنامەکانی فرۆشتن یان گواستنەوە زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'کلیل، ڕیمۆت و کارتەکانی چوونەژوورەوە ڕادەست بکە';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'سەرەتا بەڵگەی فەرمی ناوە نوێیەکەت وەربگرە. زۆربەی نووسینگەکان داوای دەکەن.';
+
+  @override
+  String get lifeTaskTellNameChange => 'ناوە نوێیەکەت بە بانک، خاوەنکار، پزیشک و نووسینگەی باج ڕابگەیەنە';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'ناوەکەت لە ئیمەیڵ، مۆبایل و هەژمارە ئۆنلاینەکانت بگۆڕە';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'وێنەی بڕوانامەی هاوسەرگیری زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'بپشکنە کێ وەک سوودمەند لە بیمە و هەژمارەکانتدا نووسراوە';
+
+  @override
+  String get lifeTaskUpdateWill => 'وەسیەتنامە بنووسە یان نوێی بکەرەوە';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'وێنەی بڕیاری کۆتایی جیابوونەوە زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'هەژمارە هاوبەشەکان دابخە یان دابەشیان بکە و وشە نهێنییە هاوبەشەکان بگۆڕە';
+
+  @override
+  String get lifeTaskRegisterBirth => 'لەدایکبوونەکە تۆمار بکە و بڕوانامەی لەدایکبوون وەربگرە';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'منداڵەکە زیاد بکە بۆ خێزان بۆ ئەوەی بەڵگەنامەکانی بەدوادا بچن';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'لەو ماوەیەدا کە یاسا ڕێگەی پێدەدات ئۆتۆمبێلەکە بخەرە سەر ناوی خۆت';
+
+  @override
+  String get lifeTaskCarSavePapers => 'وێنەی گرێبەستی فرۆشتن زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'بە نووسینگەی مۆڵەت ڕابگەیەنە کە ئۆتۆمبێلەکەت فرۆشتووە و بەڵگەکە هەڵبگرە';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'تاگی باجی ڕێگا، کارتی پارکینگ و کەلوپەلی کەسی لابەرە';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'زانیاری بانکی و ژمارەی باجەکەت بدە بە خاوەنکارە نوێیەکەت';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'بەشداری لەو بیمەی تەندروستی و خانەنشینییە بکە کە خاوەنکار پێشکەشی دەکات';
+
+  @override
+  String get lifeTaskJobReturnItems => 'کەلوپەلی کار وەک لاپتۆپ، کارت یان کلیل بگەڕێنەوە';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'داوای دوایین پسوولەی مووچە و نامەیەک بکە کە بەرواری کارەکەت پشتڕاست بکاتەوە';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'بپرسە چی بەسەر بیمەی تەندروستی و خانەنشینییەکەتدا دێت';
+
+  @override
+  String get lifeTaskJobUnemployment => 'ئێستا دەربارەی موچەی بێکاری بپرسە. داواکارییەکان زۆرجار وادەی کۆتاییان هەیە.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'لیستی پارەدانە ئۆتۆماتیکییەکان و بەشدارییەکانت بنووسە و ئەوەی دەتوانیت ڕایبگرە';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'وێنەی نامەی وەرگرتن و پسوولەکانی کرێی خوێندن زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'وادەی کۆتایی بورس، قەرز یان پاڵپشتی دارایی تر بپشکنە';
+
+  @override
+  String get lifeTaskRetirePension => 'بپرسە خانەنشینییەکەت چۆن و کەی دەدرێت';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'ئەگەر بیمەی کارەکەت کۆتایی هات، بیمەی تەندروستی خۆت ڕێک بخە';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'بە بانک و نووسینگەی باج ڕابگەیەنە کە دەڕۆیت';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'وێنەی هەموو بەڵگەنامەیەکی گرنگ زیاد بکە بۆ Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'بپشکنە ئایا دەبێت مۆڵەتی شۆفێرییەکەت بگۆڕیت';
+
+  @override
+  String get lifeTaskChildOwnId => 'ئەگەر پێویستی بوو یارمەتی بدە داوای ناسنامەی خۆی بکات';
+
+  @override
+  String get lifeTaskChildBankAccount => 'یارمەتی بدە هەژماری بانکی خۆی بکاتەوە';
+
+  @override
+  String get lifeTaskDeathCertificates => 'چەند کۆپییەکی پەسەندکراوی بڕوانامەی مردن وەربگرە';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'بانک، کۆمپانیاکانی بیمە و خاوەنکار ئاگادار بکەرەوە';
+
+  @override
+  String get lifeTaskDeathFindWill => 'وەسیەتنامەکە بدۆزەرەوە و پەیوەندی بە جێبەجێکارەکەوە بکە';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'کاتێک ئامادە بوویت، بیرخستنەوەکانی تۆمارەکانی بکوژێنەوە';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'پەیوەندی بە کۆمپانیای مۆبایلەوە بکە بۆ داخستنی سیمکارتەکە. ئەمە ڕێگری لە فێڵی گۆڕینی سیم دەکات.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'پەیوەندی بە بانکەوە بکە بۆ داخستنی بانکداری لەسەر مۆبایلەکە';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'مۆبایلەکە لە ئامێرێکی ترەوە قوفڵ بکە یان بیسڕەوە';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'وشە نهێنییەکانی ئیمەیڵ و تۆڕە کۆمەڵایەتییەکان بگۆڕە';
+
+  @override
+  String get lifeTaskReportToPolice => 'بە پۆلیس ڕابگەیەنە و ژمارەی دۆسیەکە هەڵبگرە';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'دڵنیابە هەموو کەس سەلامەتن و شوێنێکیان هەیە بۆ مانەوە';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'پێش پاککردنەوە وێنەی زیانەکان بگرە';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'هەرچی زووە پەیوەندی بە کۆمپانیای بیمەوە بکە';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'کۆپی بەڵگەنامەکانت بە پاکێتی بەڵگە بنێرە';
+
+  @override
+  String get lifeTaskParentFindPapers => 'بزانە بەڵگەنامە گرنگەکانی لە کوێ هەڵگیراون';
+
+  @override
+  String get lifeTaskParentPermission => 'بپرسە ئایا دەتوانیت لە جیاتی ئەو قسە لەگەڵ بانک، پزیشک و کۆمپانیای بیمەکەی بکەیت';
+
+  @override
+  String get lifeTaskParentMedicines => 'لیستێکی دەرمان و پزیشکەکانی هەڵبگرە';
+
+  @override
+  String get lifePlanDoClaim => 'داواکاری پێشکەش بکە';
+
+  @override
+  String get lifePlanStatusClaimed => 'داواکراوە';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'تا $date دەست پێبکە. نوێیەکە زۆرجار نزیکەی $weeks هەفتە دەخایەنێت.',
+      one: 'تا $date دەست پێبکە. نوێیەکە زۆرجار نزیکەی $weeks هەفتە دەخایەنێت.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'ئێستا دەست پێبکە. نوێیەکە زۆرجار نزیکەی $weeks هەفتە دەخایەنێت.',
+      one: 'ئێستا دەست پێبکە. نوێیەکە زۆرجار نزیکەی $weeks هەفتە دەخایەنێت.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'پلانەکەت';
+
+  @override
+  String get lifePlanWhenHappened => 'کەی ڕوویدا؟';
+
+  @override
+  String get lifePlanReminderNudge => 'پلانەکەت هێشتا کاری ماوە. کاتێک دەرفەتت هەبوو بیکەرەوە.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'کارت و بەڵگەنامە نوێیەکانت گەیشتن؟ پلانەکە بکەرەوە بۆ پشکنین.';
+
+  @override
+  String get lifePlanDoFirst => 'سەرەتا ئەمە بکە';
+
+  @override
+  String get lifePlanSteps => 'هەنگاوەکانی تر';
+
+  @override
+  String get lifePlanAddOwnStep => 'هەنگاوی خۆت زیاد بکە';
+
+  @override
+  String get lifePlanOwnStepHint => 'بۆ نموونە: قوتابخانە ئاگادار بکەرەوە';
+
+  @override
+  String get lifePlanOwnStepLimit => 'دەتوانیت تا 20 هەنگاوی خۆت زیاد بکەیت.';
+
+  @override
+  String get lifePlanReadAloud => 'بە دەنگی بەرز بیخوێنەوە';
+
+  @override
+  String get lifePlanStopReading => 'خوێندنەوە ڕابگرە';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'خوێندنەوە بە دەنگی بەرز لەم مۆبایلەدا بەردەست نییە.';
+
+  @override
+  String get lifePlanProofPack => 'پاکێتی بەڵگە دروست بکە';
+
+  @override
+  String get lifePlanOpenFamily => 'خێزان بکەرەوە';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تۆمار کە سڕیتەوە وەک هەڵوەشاوە دادەنرێن.',
+      one: '$count تۆمار کە سڕیتەوە وەک هەڵوەشاوە دادەنرێت.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'نوێکردنەوەی ئەمانە زۆرجار نزیکەی $amount تێدەچێت.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'دەگوازیتەوە بۆ ماڵێکی نوێ؟ بزانە چیتر پێویستە نوێ بکەیتەوە.';
 }

@@ -2156,5 +2156,136 @@
   "lifePlanReminderAfter": "Απομένουν ακόμα κάποια πράγματα. Ανοίξτε το πλάνο για να τα ολοκληρώσετε.",
   "lifePlanSuggestCar": "Αγοράσατε ή πουλήσατε αυτοκίνητο; Δείτε τι άλλο πρέπει να ενημερώσετε.",
   "lifePlanSuggestTrip": "Μετακομίζετε εκεί για λίγο καιρό;",
-  "lifePlanSuggestTripBody": "Ξεκινήστε ένα πλάνο για μετακόμιση σε άλλη χώρα. Το Vaultara δείχνει τι να τακτοποιήσετε πριν φύγετε."
+  "lifePlanSuggestTripBody": "Ξεκινήστε ένα πλάνο για μετακόμιση σε άλλη χώρα. Το Vaultara δείχνει τι να τακτοποιήσετε πριν φύγετε.",
+  "lifeGroupHome": "Σπίτι",
+  "lifeGroupFamily": "Οικογένεια",
+  "lifeGroupWork": "Εργασία και σπουδές",
+  "lifeGroupCarTravel": "Αυτοκίνητο και ταξίδια",
+  "lifeGroupEmergency": "Κάτι πήγε στραβά",
+  "lifeEventCarBuy": "Αγόρασα αυτοκίνητο",
+  "lifeEventCarBuyBody": "Ασφαλίστε το πριν το οδηγήσετε στο σπίτι και μετά μεταβιβάστε το στο όνομά σας.",
+  "lifeEventCarSell": "Πούλησα αυτοκίνητο",
+  "lifeEventCarSellBody": "Ενημερώστε την υπηρεσία μεταφορών για την πώληση και ακυρώστε την ασφάλεια μόλις το αυτοκίνητο δεν είναι πια δικό σας.",
+  "lifeEventJobStart": "Ξεκινάω νέα δουλειά",
+  "lifeEventJobStartBody": "Ελέγξτε τις άδειές σας πριν ξεκινήσετε και μετά τακτοποιήστε την κάρτα εργασίας και τις παροχές.",
+  "lifeEventJobLeave": "Αφήνω τη δουλειά μου",
+  "lifeEventJobLeaveBody": "Επιστρέψτε τα αντικείμενα εργασίας και ελέγξτε τι γίνεται με την κάλυψη που σας έδινε η δουλειά.",
+  "lifeEventLostPhone": "Έχασα το κινητό μου ή μου το έκλεψαν",
+  "lifeEventLostPhoneBody": "Κινηθείτε γρήγορα. Όποιος έχει το κινητό και την κάρτα SIM σας μπορεί να μπει στην τράπεζα και στο email σας. Κάντε τα πρώτα βήματα αμέσως.",
+  "lifeEventJobLoss": "Έχασα τη δουλειά μου",
+  "lifeEventJobLossBody": "Είναι δύσκολο. Πάρτε το βήμα βήμα. Κάποιες αιτήσεις έχουν προθεσμία, οπότε ξεκινήστε από αυτές.",
+  "lifeEventDisaster": "Φωτιά, πλημμύρα ή διάρρηξη στο σπίτι",
+  "lifeEventDisasterBody": "Πρώτα βεβαιωθείτε ότι όλοι είναι ασφαλείς. Μετά βγάλτε φωτογραφίες, επικοινωνήστε με την ασφαλιστική και αντικαταστήστε ό,τι χάθηκε.",
+  "lifeEventCaringParent": "Φροντίζω έναν γονιό",
+  "lifeEventCaringParentBody": "Επιλέξτε το άτομο που φροντίζετε. Ελέγξτε τα έγγραφα και την κάλυψή του και κρατήστε κοντά ό,τι χρειάζεστε.",
+  "lifeVariantCarQuestion": "Αγοράσατε ή πουλήσατε;",
+  "lifeVariantJobQuestion": "Ξεκινάτε ή φεύγετε;",
+  "lifeVariantBuy": "Αγόρασα",
+  "lifeVariantSell": "Πούλησα",
+  "lifeVariantStart": "Ξεκινάω",
+  "lifeVariantLeave": "Φεύγω",
+  "lifeTaskRedirectPost": "Ζητήστε να προωθείται η αλληλογραφία στη νέα σας διεύθυνση",
+  "lifeTaskNewAddressEveryone": "Δώστε τη νέα διεύθυνση στον εργοδότη, την εφορία, τον γιατρό και το σχολείο",
+  "lifeTaskMoveUtilities": "Κλείστε ή μεταφέρετε τους λογαριασμούς ρεύματος, νερού και ίντερνετ",
+  "lifeTaskMeterReadings": "Καταγράψτε τις ενδείξεις των μετρητών και βγάλτε φωτογραφίες την ημέρα που φεύγετε",
+  "lifeTaskSaveHomePapers": "Προσθέστε φωτογραφία των εγγράφων πώλησης ή μεταβίβασης στο Vaultara",
+  "lifeTaskHandOverKeys": "Παραδώστε κλειδιά, τηλεχειριστήρια και κάρτες πρόσβασης",
+  "lifeTaskOfficialNameProof": "Πρώτα πάρτε επίσημη απόδειξη του νέου σας ονόματος. Οι περισσότερες υπηρεσίες τη ζητούν.",
+  "lifeTaskTellNameChange": "Ενημερώστε τράπεζα, εργοδότη, γιατρό και εφορία για το νέο σας όνομα",
+  "lifeTaskUpdateOnlineAccounts": "Αλλάξτε το όνομά σας στο email, το κινητό και τους διαδικτυακούς λογαριασμούς",
+  "lifeTaskSaveMarriageCertificate": "Προσθέστε φωτογραφία της ληξιαρχικής πράξης γάμου στο Vaultara",
+  "lifeTaskCheckBeneficiaries": "Ελέγξτε ποιος ορίζεται δικαιούχος στα συμβόλαια και τους λογαριασμούς σας",
+  "lifeTaskUpdateWill": "Συντάξτε ή ενημερώστε διαθήκη",
+  "lifeTaskSaveDivorceOrder": "Προσθέστε φωτογραφία της τελεσίδικης απόφασης διαζυγίου στο Vaultara",
+  "lifeTaskSplitSharedAccounts": "Κλείστε ή μοιράστε τους κοινούς λογαριασμούς και αλλάξτε τους κοινούς κωδικούς",
+  "lifeTaskRegisterBirth": "Δηλώστε τη γέννηση και πάρτε την ληξιαρχική πράξη γέννησης",
+  "lifeTaskAddBabyToFamily": "Προσθέστε το μωρό στην Οικογένεια για να παρακολουθούνται τα έγγραφά του",
+  "lifeTaskCarRegisterInName": "Μεταβιβάστε το αυτοκίνητο στο όνομά σας εντός της νόμιμης προθεσμίας",
+  "lifeTaskCarSavePapers": "Προσθέστε φωτογραφία του συμφωνητικού πώλησης στο Vaultara",
+  "lifeTaskCarNotifySale": "Ενημερώστε την υπηρεσία μεταφορών ότι πουλήσατε το αυτοκίνητο και κρατήστε την απόδειξη",
+  "lifeTaskCarRemoveTags": "Αφαιρέστε πομπούς διοδίων, κάρτες στάθμευσης και προσωπικά αντικείμενα",
+  "lifeTaskJobGiveDetails": "Δώστε στον νέο εργοδότη τα τραπεζικά σας στοιχεία και τον ΑΦΜ",
+  "lifeTaskJobJoinBenefits": "Εγγραφείτε στην ιατρική κάλυψη και τη σύνταξη που προσφέρει ο εργοδότης",
+  "lifeTaskJobReturnItems": "Επιστρέψτε αντικείμενα εργασίας όπως λάπτοπ, κάρτα ή κλειδιά",
+  "lifeTaskJobLastPayslip": "Ζητήστε την τελευταία μισθοδοσία και μια βεβαίωση με τις ημερομηνίες εργασίας",
+  "lifeTaskJobAskBenefits": "Ρωτήστε τι γίνεται με την ιατρική κάλυψη και τη σύνταξή σας",
+  "lifeTaskJobUnemployment": "Ρωτήστε τώρα για επίδομα ανεργίας. Οι αιτήσεις έχουν συχνά προθεσμία.",
+  "lifeTaskJobPauseDebits": "Καταγράψτε πάγιες εντολές και συνδρομές και σταματήστε ό,τι μπορείτε",
+  "lifeTaskStudySaveLetters": "Προσθέστε φωτογραφίες της επιστολής αποδοχής και των τελών στο Vaultara",
+  "lifeTaskStudyFunding": "Ελέγξτε τις προθεσμίες για υποτροφίες, δάνεια ή άλλη χρηματοδότηση",
+  "lifeTaskRetirePension": "Ρωτήστε πώς και πότε θα πληρώνεται η σύνταξή σας",
+  "lifeTaskRetireOwnCover": "Κανονίστε δική σας ιατρική κάλυψη αν λήξει αυτή της εργασίας",
+  "lifeTaskCountryTellBankTax": "Ενημερώστε την τράπεζα και την εφορία ότι φεύγετε",
+  "lifeTaskCountryScanCopies": "Προσθέστε φωτογραφία κάθε σημαντικού εγγράφου στο Vaultara",
+  "lifeTaskCountryLicenceRules": "Ελέγξτε αν πρέπει να ανταλλάξετε το δίπλωμα οδήγησης",
+  "lifeTaskChildOwnId": "Βοηθήστε το να κάνει αίτηση για δική του ταυτότητα αν τη χρειάζεται",
+  "lifeTaskChildBankAccount": "Βοηθήστε το να ανοίξει δικό του τραπεζικό λογαριασμό",
+  "lifeTaskDeathCertificates": "Πάρτε μερικά επικυρωμένα αντίγραφα της ληξιαρχικής πράξης θανάτου",
+  "lifeTaskDeathTellOrganisations": "Ενημερώστε την τράπεζα, τις ασφαλιστικές και τον εργοδότη",
+  "lifeTaskDeathFindWill": "Βρείτε τη διαθήκη και επικοινωνήστε με τον εκτελεστή",
+  "lifeTaskDeathStopReminders": "Όταν είστε έτοιμοι, απενεργοποιήστε τις υπενθυμίσεις για τις εγγραφές του",
+  "lifeTaskPhoneBlockSim": "Καλέστε τον πάροχο να μπλοκάρει την κάρτα SIM. Έτσι σταματά η απάτη αλλαγής SIM.",
+  "lifeTaskPhoneBlockBanking": "Καλέστε την τράπεζα να μπλοκάρει το mobile banking",
+  "lifeTaskPhoneLockErase": "Κλειδώστε ή διαγράψτε το κινητό από άλλη συσκευή",
+  "lifeTaskPhoneChangePasswords": "Αλλάξτε τους κωδικούς email και μέσων κοινωνικής δικτύωσης",
+  "lifeTaskReportToPolice": "Δηλώστε το στην αστυνομία και κρατήστε τον αριθμό υπόθεσης",
+  "lifeTaskDisasterSafePlace": "Βεβαιωθείτε ότι όλοι είναι ασφαλείς και έχουν πού να μείνουν",
+  "lifeTaskDisasterPhotos": "Φωτογραφίστε τις ζημιές πριν καθαρίσετε",
+  "lifeTaskDisasterContactInsurer": "Επικοινωνήστε με την ασφαλιστική το συντομότερο",
+  "lifeTaskDisasterProofPack": "Στείλτε αντίγραφα των εγγράφων σας με τον Φάκελο αποδείξεων",
+  "lifeTaskParentFindPapers": "Μάθετε πού φυλάσσονται τα σημαντικά του έγγραφα",
+  "lifeTaskParentPermission": "Ρωτήστε αν μπορείτε να μιλάτε εκ μέρους του με την τράπεζα, τον γιατρό και την ασφαλιστική",
+  "lifeTaskParentMedicines": "Κρατήστε λίστα με τα φάρμακα και τους γιατρούς του",
+  "lifePlanDoClaim": "Υποβάλετε αποζημίωση",
+  "lifePlanStatusClaimed": "Υποβλήθηκε",
+  "lifePlanStartBy": "{weeks, plural, one{Ξεκινήστε έως {date}. Ένα νέο συνήθως χρειάζεται περίπου μία εβδομάδα.} other{Ξεκινήστε έως {date}. Ένα νέο συνήθως χρειάζεται περίπου {weeks} εβδομάδες.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Ξεκινήστε τώρα. Ένα νέο συνήθως χρειάζεται περίπου μία εβδομάδα.} other{Ξεκινήστε τώρα. Ένα νέο συνήθως χρειάζεται περίπου {weeks} εβδομάδες.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Το πλάνο σας",
+  "lifePlanWhenHappened": "Πότε συνέβη;",
+  "lifePlanReminderNudge": "Το πλάνο σας έχει ακόμα πράγματα να γίνουν. Ανοίξτε το όταν βρείτε λίγο χρόνο.",
+  "lifePlanReminderCheckIn": "Έφτασαν οι νέες κάρτες και τα έγγραφά σας; Ανοίξτε το πλάνο για έλεγχο.",
+  "lifePlanDoFirst": "Κάντε πρώτα αυτό",
+  "lifePlanSteps": "Άλλα βήματα",
+  "lifePlanAddOwnStep": "Προσθέστε δικό σας βήμα",
+  "lifePlanOwnStepHint": "Για παράδειγμα: Ενημερώστε το σχολείο",
+  "lifePlanOwnStepLimit": "Μπορείτε να προσθέσετε έως 20 δικά σας βήματα.",
+  "lifePlanReadAloud": "Ανάγνωση φωναχτά",
+  "lifePlanStopReading": "Διακοπή ανάγνωσης",
+  "lifePlanReadAloudUnavailable": "Η ανάγνωση φωναχτά δεν είναι διαθέσιμη σε αυτό το κινητό.",
+  "lifePlanProofPack": "Δημιουργία φακέλου αποδείξεων",
+  "lifePlanOpenFamily": "Άνοιγμα Οικογένειας",
+  "lifePlanRemoved": "{count, plural, one{{count} εγγραφή που διαγράψατε μετράει ως ακυρωμένη.} other{{count} εγγραφές που διαγράψατε μετρούν ως ακυρωμένες.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Η ανανέωσή τους κοστίζει συνήθως περίπου {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Μετακομίζετε σε νέο σπίτι; Δείτε τι άλλο πρέπει να ενημερώσετε."
 }

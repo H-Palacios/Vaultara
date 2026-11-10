@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "Il reste encore des choses à faire. Ouvrez le plan pour les terminer.",
   "lifePlanSuggestCar": "Voiture achetée ou vendue ? Voyez ce qu'il faut encore mettre à jour.",
   "lifePlanSuggestTrip": "Vous y installez-vous pour un moment ?",
-  "lifePlanSuggestTripBody": "Créez un plan pour déménager dans un autre pays. Vaultara montre ce qu'il faut régler avant de partir."
+  "lifePlanSuggestTripBody": "Créez un plan pour déménager dans un autre pays. Vaultara montre ce qu'il faut régler avant de partir.",
+  "lifeGroupHome": "Logement",
+  "lifeGroupFamily": "Famille",
+  "lifeGroupWork": "Travail et études",
+  "lifeGroupCarTravel": "Voiture et voyages",
+  "lifeGroupEmergency": "Un problème est arrivé",
+  "lifeEventCarBuy": "J'ai acheté une voiture",
+  "lifeEventCarBuyBody": "Assurez-la avant de la ramener chez vous, puis mettez la voiture à votre nom.",
+  "lifeEventCarSell": "J'ai vendu une voiture",
+  "lifeEventCarSellBody": "Déclarez la vente au service des immatriculations et résiliez l'assurance dès que la voiture n'est plus à vous.",
+  "lifeEventJobStart": "Je commence un nouveau travail",
+  "lifeEventJobStartBody": "Vérifiez vos autorisations avant de commencer, puis configurez votre badge et vos avantages.",
+  "lifeEventJobLeave": "Je quitte mon travail",
+  "lifeEventJobLeaveBody": "Rendez le matériel de travail et vérifiez ce que devient la couverture que votre emploi vous offrait.",
+  "lifeEventLostPhone": "J'ai perdu mon téléphone ou on me l'a volé",
+  "lifeEventLostPhoneBody": "Agissez vite. Quelqu'un qui a votre téléphone et votre carte SIM peut accéder à votre banque et à vos e-mails. Faites les premières étapes tout de suite.",
+  "lifeEventJobLoss": "J'ai perdu mon emploi",
+  "lifeEventJobLossBody": "C'est difficile. Avancez étape par étape. Certaines demandes ont un délai, commencez par celles-là.",
+  "lifeEventDisaster": "Incendie, inondation ou cambriolage à la maison",
+  "lifeEventDisasterBody": "Assurez-vous d'abord que tout le monde est en sécurité. Prenez ensuite des photos, contactez votre assureur et remplacez ce qui a été perdu.",
+  "lifeEventCaringParent": "Je m'occupe d'un parent",
+  "lifeEventCaringParentBody": "Choisissez la personne dont vous vous occupez. Vérifiez ses documents et sa couverture, et gardez à portée de main ce dont vous avez besoin.",
+  "lifeVariantCarQuestion": "Vous avez acheté ou vendu ?",
+  "lifeVariantJobQuestion": "Vous commencez ou vous partez ?",
+  "lifeVariantBuy": "Acheté",
+  "lifeVariantSell": "Vendu",
+  "lifeVariantStart": "Je commence",
+  "lifeVariantLeave": "Je pars",
+  "lifeTaskRedirectPost": "Faites suivre votre courrier à votre nouvelle adresse",
+  "lifeTaskNewAddressEveryone": "Donnez votre nouvelle adresse à votre employeur, aux impôts, à votre médecin et à l'école",
+  "lifeTaskMoveUtilities": "Résiliez ou transférez l'électricité, l'eau et internet",
+  "lifeTaskMeterReadings": "Relevez les compteurs et prenez des photos le jour du départ",
+  "lifeTaskSaveHomePapers": "Ajoutez une photo de l'acte de vente ou de transfert dans Vaultara",
+  "lifeTaskHandOverKeys": "Remettez les clés, télécommandes et badges d'accès",
+  "lifeTaskOfficialNameProof": "Obtenez d'abord une preuve officielle de votre nouveau nom. La plupart des services la demandent.",
+  "lifeTaskTellNameChange": "Informez votre banque, votre employeur, votre médecin et les impôts de votre nouveau nom",
+  "lifeTaskUpdateOnlineAccounts": "Changez votre nom sur votre e-mail, votre téléphone et vos comptes en ligne",
+  "lifeTaskSaveMarriageCertificate": "Ajoutez une photo de l'acte de mariage dans Vaultara",
+  "lifeTaskCheckBeneficiaries": "Vérifiez qui est désigné comme bénéficiaire sur vos contrats et comptes",
+  "lifeTaskUpdateWill": "Rédigez ou mettez à jour un testament",
+  "lifeTaskSaveDivorceOrder": "Ajoutez une photo du jugement de divorce définitif dans Vaultara",
+  "lifeTaskSplitSharedAccounts": "Fermez ou partagez les comptes communs et changez les mots de passe communs",
+  "lifeTaskRegisterBirth": "Déclarez la naissance et obtenez l'acte de naissance",
+  "lifeTaskAddBabyToFamily": "Ajoutez le bébé dans Famille pour suivre ses documents",
+  "lifeTaskCarRegisterInName": "Mettez la voiture à votre nom dans le délai prévu par la loi",
+  "lifeTaskCarSavePapers": "Ajoutez une photo du certificat de vente dans Vaultara",
+  "lifeTaskCarNotifySale": "Déclarez la vente de la voiture au service des immatriculations et gardez la preuve",
+  "lifeTaskCarRemoveTags": "Retirez badges de péage, cartes de stationnement et affaires personnelles",
+  "lifeTaskJobGiveDetails": "Donnez vos coordonnées bancaires et votre numéro fiscal au nouvel employeur",
+  "lifeTaskJobJoinBenefits": "Adhérez à la mutuelle et à la retraite proposées par l'employeur",
+  "lifeTaskJobReturnItems": "Rendez le matériel de travail comme l'ordinateur, le badge ou les clés",
+  "lifeTaskJobLastPayslip": "Demandez votre dernière fiche de paie et une attestation de vos dates de travail",
+  "lifeTaskJobAskBenefits": "Demandez ce que deviennent votre mutuelle et votre retraite",
+  "lifeTaskJobUnemployment": "Renseignez-vous dès maintenant sur les allocations chômage. Les demandes ont souvent un délai.",
+  "lifeTaskJobPauseDebits": "Listez vos prélèvements et abonnements, et suspendez ce que vous pouvez",
+  "lifeTaskStudySaveLetters": "Ajoutez des photos de la lettre d'admission et des relevés de frais dans Vaultara",
+  "lifeTaskStudyFunding": "Vérifiez les délais des bourses, prêts et autres aides",
+  "lifeTaskRetirePension": "Demandez comment et quand votre retraite sera versée",
+  "lifeTaskRetireOwnCover": "Souscrivez votre propre couverture santé si celle du travail prend fin",
+  "lifeTaskCountryTellBankTax": "Prévenez votre banque et les impôts de votre départ",
+  "lifeTaskCountryScanCopies": "Ajoutez une photo de chaque document important dans Vaultara",
+  "lifeTaskCountryLicenceRules": "Vérifiez si vous devez échanger votre permis de conduire",
+  "lifeTaskChildOwnId": "Aidez-le à demander sa propre pièce d'identité s'il en a besoin",
+  "lifeTaskChildBankAccount": "Aidez-le à ouvrir son propre compte bancaire",
+  "lifeTaskDeathCertificates": "Obtenez plusieurs copies certifiées de l'acte de décès",
+  "lifeTaskDeathTellOrganisations": "Prévenez la banque, les assureurs et l'employeur",
+  "lifeTaskDeathFindWill": "Trouvez le testament et contactez le notaire ou l'exécuteur",
+  "lifeTaskDeathStopReminders": "Quand vous serez prêt, désactivez les rappels de ses dossiers",
+  "lifeTaskPhoneBlockSim": "Appelez votre opérateur pour bloquer la carte SIM. Cela empêche la fraude au changement de SIM.",
+  "lifeTaskPhoneBlockBanking": "Appelez votre banque pour bloquer l'accès bancaire sur le téléphone",
+  "lifeTaskPhoneLockErase": "Verrouillez ou effacez le téléphone depuis un autre appareil",
+  "lifeTaskPhoneChangePasswords": "Changez vos mots de passe e-mail et réseaux sociaux",
+  "lifeTaskReportToPolice": "Portez plainte et gardez le numéro de dossier",
+  "lifeTaskDisasterSafePlace": "Assurez-vous que tout le monde est en sécurité et a un endroit où loger",
+  "lifeTaskDisasterPhotos": "Photographiez les dégâts avant de nettoyer",
+  "lifeTaskDisasterContactInsurer": "Contactez votre assureur dès que possible",
+  "lifeTaskDisasterProofPack": "Envoyez des copies de vos documents avec le Dossier justificatif",
+  "lifeTaskParentFindPapers": "Découvrez où sont rangés ses papiers importants",
+  "lifeTaskParentPermission": "Demandez si vous pouvez parler en son nom à sa banque, son médecin et son assureur",
+  "lifeTaskParentMedicines": "Gardez une liste de ses médicaments et de ses médecins",
+  "lifePlanDoClaim": "Faire une demande d'indemnisation",
+  "lifePlanStatusClaimed": "Demande faite",
+  "lifePlanStartBy": "{weeks, plural, =1{Commencez avant le {date}. Un nouveau prend en général environ une semaine.} other{Commencez avant le {date}. Un nouveau prend en général environ {weeks} semaines.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Commencez maintenant. Un nouveau prend en général environ une semaine.} other{Commencez maintenant. Un nouveau prend en général environ {weeks} semaines.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Votre plan",
+  "lifePlanWhenHappened": "Quand est-ce arrivé ?",
+  "lifePlanReminderNudge": "Il reste des choses à faire dans votre plan. Ouvrez-le quand vous avez un moment.",
+  "lifePlanReminderCheckIn": "Vos nouvelles cartes et documents sont-ils arrivés ? Ouvrez le plan pour vérifier.",
+  "lifePlanDoFirst": "À faire en premier",
+  "lifePlanSteps": "Autres étapes",
+  "lifePlanAddOwnStep": "Ajouter une étape",
+  "lifePlanOwnStepHint": "Par exemple : Prévenir l'école",
+  "lifePlanOwnStepLimit": "Vous pouvez ajouter jusqu'à 20 étapes personnelles.",
+  "lifePlanReadAloud": "Lire à voix haute",
+  "lifePlanStopReading": "Arrêter la lecture",
+  "lifePlanReadAloudUnavailable": "La lecture à voix haute n'est pas disponible sur ce téléphone.",
+  "lifePlanProofPack": "Créer un dossier justificatif",
+  "lifePlanOpenFamily": "Ouvrir Famille",
+  "lifePlanRemoved": "{count, plural, =1{1 dossier que vous avez supprimé compte comme résilié.} other{{count} dossiers que vous avez supprimés comptent comme résiliés.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Les renouveler coûte en général environ {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Vous déménagez ? Voyez ce qu'il faut encore mettre à jour."
 }
