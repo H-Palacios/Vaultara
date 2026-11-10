@@ -120,6 +120,29 @@ const LIFE_EVENTS = [
 const KEPT_IN = ["wallet", "bag", "car", "phoneCase", "home", "travelPouch"];
 const SCREENS_V7 = [...SCREENS, "life_events", "life_event"];
 
+// Tutorials the app can play. Only clients on protocol 8 can open them.
+// Keep in step with TutorialIds.all in the app.
+const TUTORIALS = [
+  "home",
+  "add_record",
+  "reminders",
+  "renew",
+  "insights",
+  "calendar_costs",
+  "photos_security",
+  "sharing",
+  "import_scan",
+  "travel",
+  "family",
+  "household",
+  "lost_wallet",
+  "life_events",
+  "smart_tools",
+  "ask_vaultara",
+  "business",
+];
+const SCREENS_V8 = [...SCREENS_V7, "tutorial"];
+
 const RECORD_FIELDS = [
   "name",
   "expiryDate",
@@ -542,6 +565,25 @@ function withLifeEvents(tool) {
   };
 }
 const TOOLS_V7 = TOOLS_V6.map(withLifeEvents);
+function withTutorials(tool) {
+  if (tool.name !== "open_screen") return tool;
+  return {
+    ...tool,
+    description:
+      tool.description +
+      " tutorial plays a short in-app tutorial; give its key as id: " +
+      TUTORIALS.join(", ") +
+      ". When the user asks how to do something in Vaultara or how a feature works, answer in one or two sentences and offer the matching tutorial with screen tutorial.",
+    input_schema: {
+      ...tool.input_schema,
+      properties: {
+        ...tool.input_schema.properties,
+        screen: { type: "string", enum: SCREENS_V8 },
+      },
+    },
+  };
+}
+const TOOLS_V8 = TOOLS_V7.map(withTutorials);
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
@@ -549,6 +591,7 @@ const NAMES_V4 = new Set(TOOLS_V4.map((t) => t.name));
 const NAMES_V5 = NAMES_V4;
 const NAMES_V6 = new Set(TOOLS_V6.map((t) => t.name));
 const NAMES_V7 = NAMES_V6;
+const NAMES_V8 = NAMES_V7;
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -1671,10 +1714,14 @@ async function proposeUpdateTrip(ctx, input, actions) {
 
 async function openScreen(ctx, input, actions) {
   const screen = str(input?.screen);
-  const screens = ctx.lifePlans ? SCREENS_V7 : SCREENS;
+  const screens = ctx.tutorials ? SCREENS_V8 : ctx.lifePlans ? SCREENS_V7 : SCREENS;
   if (!screens.includes(screen)) return { error: `screen must be one of ${screens.join(", ")}.` };
   const action = { type: "open", screen };
-  if (screen === "life_event") {
+  if (screen === "tutorial") {
+    const tutorial = str(input?.id);
+    if (!TUTORIALS.includes(tutorial)) return { error: `Give the tutorial key as id: ${TUTORIALS.join(", ")}.` };
+    action.id = tutorial;
+  } else if (screen === "life_event") {
     const event = str(input?.id);
     if (!LIFE_EVENTS.includes(event)) return { error: `Give the life event key as id: ${LIFE_EVENTS.join(", ")}.` };
     action.id = event;
@@ -2040,6 +2087,7 @@ exports.askVaultara = onCall(
     const v5 = version >= 5 && intent === "chat";
     const v6 = version >= 6 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
+    const v8 = version >= 8 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -2067,10 +2115,11 @@ exports.askVaultara = onCall(
     ctx.tripPlaces = v6;
     ctx.here = v6 ? countryCode(request.data?.here) : null;
     ctx.lifePlans = v7;
+    ctx.tutorials = v8;
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7);
-    const tools = v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const allowed = v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const tools = v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const allowed = v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
