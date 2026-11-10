@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/category_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
+import 'package:vaultara/core/data/category_appearance.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
+import 'package:vaultara/core/data/repositories/group_repository.dart';
+
 class CategoryResolver {
   const CategoryResolver._();
 
@@ -53,10 +56,20 @@ class CategoryResolver {
     return category(context, key)?.icon ?? Icons.category_rounded;
   }
 
+  /// The colour chosen for a custom category, or null to use the app's.
+  static Color? categoryColour(BuildContext context, String key) {
+    return CategoryAppearance.colourFor(category(context, key)?.colourKey);
+  }
+
   /// Display label for a group. Presets resolve through the catalog; custom
-  /// groups are stored under the name the user typed.
+  /// groups through the name the user typed. A key with no name left (its
+  /// group was removed) is shown as readable words rather than as a code.
   static String groupLabel(BuildContext context, String key) {
     if (isPresetGroup(key)) return PresetCatalog.groupLabel(context, key);
-    return key;
+    final custom = GroupRepository.labelForKey(key);
+    if (custom != null && custom.trim().isNotEmpty) return custom;
+    return readableKey(key);
   }
+
+  static String readableKey(String key) => PresetCatalog.readableKey(key);
 }
