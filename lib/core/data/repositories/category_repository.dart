@@ -2,14 +2,20 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import '../category_appearance.dart';
 import '../models/category_item.dart';
+import '../preset_catalog.dart';
+import '../../util/stable_key.dart';
 
 class CategoryRepository {
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static final FirebaseAuth _auth = FirebaseAuth.instance;
 
   static final List<CategoryItem> _categories = <CategoryItem>[];
-  static final Set<String> _pinnedLabels = <String>{};
+
+  /// Pinned category keys, in the order they were pinned. Saved to the
+  /// account so pins survive a restart and follow the user to other phones.
+  static final List<String> _pins = <String>[];
 
   static bool _hasLoadedForUser = false;
 
@@ -35,8 +41,12 @@ class CategoryRepository {
     if (icon == null) return null;
 
     if (identical(icon, Icons.category_rounded)) return 'category_rounded';
-    if (identical(icon, Icons.description_rounded)) return 'description_rounded';
-    if (identical(icon, Icons.credit_card_rounded)) return 'credit_card_rounded';
+    if (identical(icon, Icons.description_rounded)) {
+      return 'description_rounded';
+    }
+    if (identical(icon, Icons.credit_card_rounded)) {
+      return 'credit_card_rounded';
+    }
     if (identical(icon, Icons.badge_rounded)) return 'badge_rounded';
     if (identical(icon, Icons.card_membership_rounded)) {
       return 'card_membership_rounded';
@@ -193,6 +203,8 @@ class CategoryRepository {
 
   static IconData _iconFromMap(Map<String, dynamic> data) {
     final String? iconKey = data['iconKey'] as String?;
+    final IconData? chosen = CategoryAppearance.iconFor(iconKey);
+    if (chosen != null) return chosen;
     if (iconKey != null && iconKey.trim().isNotEmpty) {
       return _iconFromKey(iconKey);
     }
@@ -211,11 +223,16 @@ class CategoryRepository {
     final data = doc.data();
     final key = data['key'] as String? ?? doc.id;
 
+    final iconKey = data['iconKey'] as String?;
+    final colourKey = data['colourKey'] as String?;
+
     return CategoryItem(
       key: key,
       label: data['label'] as String? ?? key,
       icon: _iconFromMap(data),
       groupKeys: List<String>.from(data['subcategories'] ?? <String>[]),
+      iconKey: CategoryAppearance.isIcon(iconKey) ? iconKey : null,
+      colourKey: CategoryAppearance.isColour(colourKey) ? colourKey : null,
     );
   }
 
@@ -229,13 +246,14 @@ class CategoryRepository {
     if (_hasLoadedForUser && !force) return;
 
     _categories.clear();
-    _pinnedLabels.clear();
+    _pins.clear();
 
     final userDoc = await _firestore.collection('users').doc(user.uid).get();
     final data = userDoc.data();
     final raw = data?['createdCategoriesCount'];
-    _createdCategoriesCount =
-        raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
+    _createdCategoriesCount = raw is num
+        ? raw.toInt()
+        : int.tryParse('$raw') ?? 0;
 
     final snap = await _firestore.collection(_categoriesPath(user.uid)).get();
 
@@ -247,10 +265,11 @@ class CategoryRepository {
     final pinnedDoc = await _firestore.doc(_pinnedPath(user.uid)).get();
 
     if (pinnedDoc.exists) {
-      final data = pinnedDoc.data();
-      final List<dynamic>? labels = data?['labels'] as List<dynamic>?;
-      if (labels != null) {
-        _pinnedLabels.addAll(labels.cast<String>());
+      final pins = pinnedDoc.data()?['pins'];
+      if (pins is List) {
+        for (final key in pins) {
+          if (key is String && !_pins.contains(key)) _pins.add(key);
+        }
       }
     }
 
@@ -268,8 +287,9 @@ class CategoryRepository {
         .where('isDeleted', isEqualTo: true)
         .get();
 
-    final cutoff = DateTime.now()
-        .subtract(const Duration(days: recentlyDeletedRetentionDays));
+    final cutoff = DateTime.now().subtract(
+      const Duration(days: recentlyDeletedRetentionDays),
+    );
     final result = <CategoryItem>[];
 
     for (final doc in snap.docs) {
@@ -292,22 +312,89 @@ class CategoryRepository {
 
   static int createdCategoriesCount() => _createdCategoriesCount;
 
-  static Set<String> getPinnedLabels() => Set<String>.from(_pinnedLabels);
+  /// Pinned category keys, oldest pin first.
+  static List<String> pins() => List<String>.from(_pins);
 
-  static Future<void> togglePinnedLabel(String label) async {
+  static bool isPinned(String key) => _pins.contains(key);
+
+  static Future<void> togglePin(String key) async {
+    if (!_pins.remove(key)) _pins.add(key);
+
     final User? user = _auth.currentUser;
     if (user == null) return;
 
-    if (_pinnedLabels.contains(label)) {
-      _pinnedLabels.remove(label);
-    } else {
-      _pinnedLabels.add(label);
-    }
-
     _firestore.doc(_pinnedPath(user.uid)).set({
-      'labels': _pinnedLabels.toList(),
+      'pins': List<String>.from(_pins),
       'updatedAt': FieldValue.serverTimestamp(),
-    }).ignore();
+    }, SetOptions(merge: true)).ignore();
+  }
+
+  /// A key for a new category called [label] that no preset or custom
+  /// category uses. Works for names in any script.
+  static String newKeyFor(String label) {
+    final taken = <String>{
+      ...PresetCatalog.categoryKeys,
+      for (final c in _categories) c.key,
+    };
+    return StableKey.unique(StableKey.base(label), taken);
+  }
+
+  /// True when another category already shows [label], ignoring case.
+  static bool labelInUse(
+    String label, {
+    String? exceptKey,
+    List<String> presetLabels = const [],
+  }) {
+    final wanted = label.trim().toLowerCase();
+    if (presetLabels.any((l) => l.trim().toLowerCase() == wanted)) return true;
+    return _categories.any(
+      (c) => c.key != exceptKey && c.label.trim().toLowerCase() == wanted,
+    );
+  }
+
+  /// Gives a custom category a new name. The key and every record in it stay
+  /// the same.
+  static Future<void> renameCategory(String key, String label) async {
+    final index = _categories.indexWhere((c) => c.key == key);
+    if (index < 0) return;
+    _categories[index] = _categories[index].copyWith(label: label);
+
+    final User? user = _auth.currentUser;
+    if (user == null) return;
+
+    _firestore.collection(_categoriesPath(user.uid)).doc(key).set({
+      'label': label,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true)).ignore();
+  }
+
+  /// Saves a new icon and colour for a custom category. A null [colourKey]
+  /// goes back to the app's own colour.
+  static Future<void> updateAppearance(
+    String key, {
+    required String iconKey,
+    required String? colourKey,
+  }) async {
+    final index = _categories.indexWhere((c) => c.key == key);
+    if (index < 0) return;
+    final old = _categories[index];
+    _categories[index] = CategoryItem(
+      key: old.key,
+      label: old.label,
+      icon: CategoryAppearance.iconFor(iconKey) ?? old.icon,
+      groupKeys: old.groupKeys,
+      iconKey: iconKey,
+      colourKey: colourKey,
+    );
+
+    final User? user = _auth.currentUser;
+    if (user == null) return;
+
+    _firestore.collection(_categoriesPath(user.uid)).doc(key).set({
+      'iconKey': iconKey,
+      'colourKey': colourKey,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true)).ignore();
   }
 
   static Future<bool> addCategory(
@@ -327,13 +414,14 @@ class CategoryRepository {
 
     if (!isPremium) _createdCategoriesCount += 1;
 
-    final String? iconKey = _iconKeyFromIcon(item.icon);
+    final String? iconKey = item.iconKey ?? _iconKeyFromIcon(item.icon);
 
     _firestore.collection(_categoriesPath(user.uid)).doc(item.key).set({
       'key': item.key,
       'label': item.label,
       'subcategories': item.groupKeys,
       'iconKey': iconKey,
+      'colourKey': item.colourKey,
       'iconCodePoint': item.icon?.codePoint,
       'iconFontFamily': item.icon?.fontFamily,
       'iconFontPackage': item.icon?.fontPackage,
@@ -389,7 +477,7 @@ class CategoryRepository {
 
   static void clearForSignOut() {
     _categories.clear();
-    _pinnedLabels.clear();
+    _pins.clear();
     _hasLoadedForUser = false;
     _createdCategoriesCount = 0;
   }

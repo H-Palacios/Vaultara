@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class CategoryItem {
   final String key;
 
@@ -12,11 +13,19 @@ class CategoryItem {
   /// Keys of the groups under this category.
   final List<String> groupKeys;
 
+  /// For custom categories: the icon and colour keys from
+  /// CategoryAppearance. Null for presets and for categories made before
+  /// they could be chosen.
+  final String? iconKey;
+  final String? colourKey;
+
   const CategoryItem({
     required this.key,
     required this.label,
     this.icon,
     this.groupKeys = const <String>[],
+    this.iconKey,
+    this.colourKey,
   });
 
   CategoryItem copyWith({
@@ -24,12 +33,16 @@ class CategoryItem {
     String? label,
     IconData? icon,
     List<String>? groupKeys,
+    String? iconKey,
+    String? colourKey,
   }) {
     return CategoryItem(
       key: key ?? this.key,
       label: label ?? this.label,
       icon: icon ?? this.icon,
       groupKeys: groupKeys ?? this.groupKeys,
+      iconKey: iconKey ?? this.iconKey,
+      colourKey: colourKey ?? this.colourKey,
     );
   }
 
@@ -39,10 +52,11 @@ class CategoryItem {
       (other is CategoryItem &&
           other.key == key &&
           other.label == label &&
-          other.icon == icon);
+          other.icon == icon &&
+          other.colourKey == colourKey);
 
   @override
-  int get hashCode => Object.hash(key, label, icon);
+  int get hashCode => Object.hash(key, label, icon, colourKey);
 
   @override
   String toString() => 'CategoryItem($key, $label, ${groupKeys.length} groups)';
