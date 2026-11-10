@@ -70,7 +70,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 8;
+  static const int protocolVersion = 9;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -101,8 +101,9 @@ class AssistantService {
     while (recent.isNotEmpty && !recent.first.fromUser) {
       recent.removeAt(0);
     }
-    if (recent.isEmpty)
+    if (recent.isEmpty) {
       return const AssistantReply.failed(AssistantFailure.failed);
+    }
 
     try {
       final callable = _functions.httpsCallable(
@@ -118,8 +119,9 @@ class AssistantService {
         if (here != null) 'here': here,
       });
       final data = response.data;
-      if (data is! Map)
+      if (data is! Map) {
         return const AssistantReply.failed(AssistantFailure.failed);
+      }
       final reply = data['reply'];
       return AssistantReply(
         reply: reply is String ? reply.trim() : '',
