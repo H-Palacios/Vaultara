@@ -230,7 +230,7 @@ service cloud.firestore {
     function attachmentsOk(uid) {
       let d = request.resource.data;
       let count = d.get('attachments', null) == null ? 0 : d.attachments.size();
-      let previous = resource == null ? null : resource.data.get('attachments', null);
+      let previous = resource == null ? [] : resource.data.get('attachments', []);
       return !('attachments' in d)
         || d.attachments == null
         || (d.attachments is list
@@ -368,20 +368,25 @@ service cloud.firestore {
     }
 
     function groupKeys() {
-      return ['categoryKey', 'groups', 'deletedGroups', 'updatedAt'];
+      return ['categoryKey', 'groups', 'deletedGroups', 'ids', 'updatedAt'];
     }
 
     function validGroup() {
       let d = request.resource.data;
+      // ids pairs each group name with the key its records carry, so a
+      // group can be renamed and names in any script get their own key.
       return (!('categoryKey' in d) || (d.categoryKey is string && d.categoryKey.size() <= 120))
         && (!('groups' in d) || (d.groups is list && d.groups.size() <= 200))
-        && (!('deletedGroups' in d) || (d.deletedGroups is list && d.deletedGroups.size() <= 200));
+        && (!('deletedGroups' in d) || (d.deletedGroups is list && d.deletedGroups.size() <= 200))
+        && (!('ids' in d) || (d.ids is list && d.ids.size() <= 400));
     }
 
     function validPreference() {
-      // done and hints hold tutorial ids, for preferences/tutorials.
+      // done and hints hold tutorial ids, for preferences/tutorials. pins
+      // holds pinned category keys, for preferences/pinnedCategories.
       return smallDoc(20)
         && optionalList('labels', 100)
+        && optionalList('pins', 100)
         && optionalList('done', 60)
         && optionalList('hints', 60);
     }
