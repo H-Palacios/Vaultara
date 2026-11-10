@@ -1,9 +1,48 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
+import 'package:vaultara/features/tools/logic/life_tasks.dart';
 
 /// What the user did with one record in a plan.
-enum LifeItemStatus { updated, renewed, cancelled, notNeeded }
+enum LifeItemStatus { updated, renewed, cancelled, notNeeded, claimed }
+
+/// A to-do the user typed into a plan themselves.
+class LifeCustomTask {
+  final String id;
+  final String text;
+  final bool done;
+
+  const LifeCustomTask({
+    required this.id,
+    required this.text,
+    this.done = false,
+  });
+
+  LifeCustomTask copyWith({String? text, bool? done}) =>
+      LifeCustomTask(id: id, text: text ?? this.text, done: done ?? this.done);
+
+  Map<String, dynamic> toMap() => <String, dynamic>{
+    'id': id,
+    'text': text,
+    'done': done,
+  };
+
+  static LifeCustomTask? fromMap(Object? value) {
+    if (value is! Map) return null;
+    final id = value['id'];
+    final text = value['text'];
+    if (id is! String || id.isEmpty || text is! String) return null;
+    final clean = text.trim();
+    if (clean.isEmpty) return null;
+    return LifeCustomTask(
+      id: id,
+      text: clean.length > LifeTasks.maxCustomLength
+          ? clean.substring(0, LifeTasks.maxCustomLength)
+          : clean,
+      done: value['done'] == true,
+    );
+  }
+}
 
 /// A life event the user is working through: what is happening, when, for
 /// whom, and what they have done so far. Saved in users/{uid}/lifePlans.
@@ -35,6 +74,15 @@ class LifePlan {
   /// Keys of suggested records the user said are not needed.
   final Set<String> skipped;
 
+  /// The answer to the extra question, such as bought or sold a car.
+  final String? variant;
+
+  /// Names of the built-in tasks the user ticked.
+  final Set<String> tasksDone;
+
+  /// To-dos the user added.
+  final List<LifeCustomTask> custom;
+
   const LifePlan({
     required this.id,
     required this.event,
@@ -46,6 +94,9 @@ class LifePlan {
     this.statuses = const <String, LifeItemStatus>{},
     this.start = const <String, int>{},
     this.skipped = const <String>{},
+    this.variant,
+    this.tasksDone = const <String>{},
+    this.custom = const <LifeCustomTask>[],
   });
 
   bool get isFinished => finishedAt != null;
@@ -56,16 +107,45 @@ class LifePlan {
   }
 
   /// A short fingerprint of the parts of a record a user changes when they
-  /// update it.
+  /// update it. Notes are left out, so adding a note does not mark a record
+  /// as done.
   static int fingerprint(TrackedItem record) {
-    final text = <String>[
-      record.name,
-      '${record.expiryDate.year}-${record.expiryDate.month}-${record.expiryDate.day}',
-      record.notes ?? '',
-      record.holderId ?? '',
-      record.lastRenewedAt?.millisecondsSinceEpoch.toString() ?? '',
-      record.renewals.length.toString(),
-    ].join('|');
+    return _hash(
+      <String>[
+        'v2',
+        record.name,
+        '${record.expiryDate.year}-${record.expiryDate.month}-${record.expiryDate.day}',
+        record.holderId ?? '',
+        record.lastRenewedAt?.millisecondsSinceEpoch.toString() ?? '',
+        record.renewals.length.toString(),
+      ].join('|'),
+    );
+  }
+
+  /// The fingerprint plans started before notes were left out.
+  static int legacyFingerprint(TrackedItem record) {
+    return _hash(
+      <String>[
+        record.name,
+        '${record.expiryDate.year}-${record.expiryDate.month}-${record.expiryDate.day}',
+        record.notes ?? '',
+        record.holderId ?? '',
+        record.lastRenewedAt?.millisecondsSinceEpoch.toString() ?? '',
+        record.renewals.length.toString(),
+      ].join('|'),
+    );
+  }
+
+  /// Whether a record looks the same as when the plan started.
+  bool unchanged(TrackedItem record) {
+    final id = record.id;
+    if (id == null) return true;
+    final saved = start[id];
+    if (saved == null) return false;
+    return saved == fingerprint(record) || saved == legacyFingerprint(record);
+  }
+
+  static int _hash(String text) {
     var hash = 0x811c9dc5;
     for (final unit in text.codeUnits) {
       hash ^= unit;
@@ -86,6 +166,10 @@ class LifePlan {
     Map<String, LifeItemStatus>? statuses,
     Map<String, int>? start,
     Set<String>? skipped,
+    String? variant,
+    bool clearVariant = false,
+    Set<String>? tasksDone,
+    List<LifeCustomTask>? custom,
   }) {
     return LifePlan(
       id: id ?? this.id,
@@ -98,8 +182,24 @@ class LifePlan {
       statuses: statuses ?? this.statuses,
       start: start ?? this.start,
       skipped: skipped ?? this.skipped,
+      variant: clearVariant ? null : (variant ?? this.variant),
+      tasksDone: tasksDone ?? this.tasksDone,
+      custom: custom ?? this.custom,
     );
   }
+
+  LifePlan withTask(String key, bool done) {
+    final next = Set<String>.of(tasksDone);
+    if (done) {
+      if (next.length < LifeTask.values.length) next.add(key);
+    } else {
+      next.remove(key);
+    }
+    return copyWith(tasksDone: next);
+  }
+
+  LifePlan withCustom(List<LifeCustomTask> tasks) =>
+      copyWith(custom: tasks.take(LifeTasks.maxCustom).toList());
 
   LifePlan withStatus(String recordId, LifeItemStatus? status) {
     final next = Map<String, LifeItemStatus>.of(statuses);
@@ -134,9 +234,15 @@ class LifePlan {
           entry.key: entry.value.name,
       },
       'start': <String, int>{
-        for (final entry in start.entries.take(maxItems)) entry.key: entry.value,
+        for (final entry in start.entries.take(maxItems))
+          entry.key: entry.value,
       },
       'skipped': skipped.take(maxSkipped).toList(),
+      if (variant != null) 'variant': variant,
+      'tasksDone': tasksDone.take(LifeTask.values.length).toList(),
+      'custom': <Map<String, dynamic>>[
+        for (final task in custom.take(LifeTasks.maxCustom)) task.toMap(),
+      ],
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }
@@ -175,6 +281,10 @@ class LifePlan {
       }
     }
     final country = map['country'];
+    final custom = <LifeCustomTask>[
+      for (final item in (map['custom'] as List?) ?? const <Object?>[])
+        if (LifeCustomTask.fromMap(item) case final task?) task,
+    ];
     return LifePlan(
       id: id,
       event: event,
@@ -189,6 +299,12 @@ class LifePlan {
         for (final item in (map['skipped'] as List?) ?? const <Object?>[])
           if (item is String) item,
       },
+      variant: LifeEvents.cleanVariant(event, map['variant']),
+      tasksDone: <String>{
+        for (final item in (map['tasksDone'] as List?) ?? const <Object?>[])
+          if (LifeTasks.fromName(item) != null) item as String,
+      },
+      custom: custom.take(LifeTasks.maxCustom).toList(),
     );
   }
 }

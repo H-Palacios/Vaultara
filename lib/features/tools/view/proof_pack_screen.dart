@@ -12,7 +12,11 @@ import 'package:vaultara/features/tools/logic/proof_pack.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 class ProofPackScreen extends StatefulWidget {
-  const ProofPackScreen({super.key});
+  /// Records to tick when the screen opens, such as the ones in a life
+  /// event plan. Locked records are left for the user to unlock and tick.
+  final Iterable<String> initialSelected;
+
+  const ProofPackScreen({super.key, this.initialSelected = const <String>[]});
 
   @override
   State<ProofPackScreen> createState() => _ProofPackScreenState();
@@ -22,6 +26,15 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
   final Set<String> _selected = <String>{};
   bool _photos = true;
   bool _busy = false;
+
+  @override
+  void initState() {
+    super.initState();
+    for (final id in widget.initialSelected) {
+      final record = RecordRepository.findById(id);
+      if (record != null && !record.locked) _selected.add(id);
+    }
+  }
 
   Future<void> _toggle(TrackedItem record, bool value) async {
     final id = record.id;
@@ -60,10 +73,10 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final records = RecordRepository.allActive()
-        .where((r) => r.id != null)
-        .toList()
-      ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+    final records =
+        RecordRepository.allActive().where((r) => r.id != null).toList()..sort(
+          (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()),
+        );
     final count = records.where((r) => _selected.contains(r.id)).length;
 
     return Scaffold(
@@ -123,9 +136,12 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
                         ),
                         secondary: record.holderId == null
                             ? (record.locked
-                                ? Icon(Icons.lock_rounded,
-                                    size: 18, color: scheme.onSurfaceVariant)
-                                : null)
+                                  ? Icon(
+                                      Icons.lock_rounded,
+                                      size: 18,
+                                      color: scheme.onSurfaceVariant,
+                                    )
+                                  : null)
                             : PersonChip(holderId: record.holderId),
                       ),
                     ),
@@ -139,8 +155,9 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
               child: SizedBox(
                 width: double.infinity,
                 child: FilledButton.icon(
-                  onPressed:
-                      count == 0 || _busy ? null : () => _create(records),
+                  onPressed: count == 0 || _busy
+                      ? null
+                      : () => _create(records),
                   icon: const Icon(Icons.picture_as_pdf_rounded),
                   label: Text(
                     count == 0

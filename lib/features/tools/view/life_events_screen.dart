@@ -38,10 +38,11 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
   void initState() {
     super.initState();
     LifePlanRepository.start();
-    _watcher = UserDataWatcher(onChanged: () {
-      if (mounted) setState(() {});
-    })
-      ..start();
+    _watcher = UserDataWatcher(
+      onChanged: () {
+        if (mounted) setState(() {});
+      },
+    )..start();
     final start = widget.start;
     if (start != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -95,29 +96,34 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
                   ],
                 ],
                 _Heading(loc.lifePlanStartNew),
-                for (final event in LifeEvent.values) ...[
-                  _EventTile(
-                    event: event,
-                    active: active.any((p) => p.event == event),
-                  ),
-                  const SizedBox(height: 8),
-                ],
-                _Tile(
-                  icon: Icons.account_balance_wallet_rounded,
-                  title: loc.lostWalletTitle,
-                  subtitle: loc.lostWalletSubtitle,
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute<void>(
-                      builder: (_) => const LostWalletScreen(),
+                for (final group in LifeEventGroup.values) ...[
+                  _GroupLabel(LifeEvents.groupTitle(loc, group)),
+                  for (final event in LifeEvents.groups[group]!) ...[
+                    _EventTile(
+                      event: event,
+                      active: active.any((p) => p.event == event),
                     ),
-                  ),
-                ),
+                    const SizedBox(height: 8),
+                  ],
+                  if (group == LifeEventGroup.emergency) ...[
+                    _Tile(
+                      icon: Icons.account_balance_wallet_rounded,
+                      title: loc.lostWalletTitle,
+                      subtitle: loc.lostWalletSubtitle,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const LostWalletScreen(),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                  ],
+                ],
                 if (finished.isNotEmpty) ...[
                   const SizedBox(height: 14),
                   InkWell(
                     borderRadius: BorderRadius.circular(12),
-                    onTap: () =>
-                        setState(() => _showFinished = !_showFinished),
+                    onTap: () => setState(() => _showFinished = !_showFinished),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                         vertical: 8,
@@ -175,14 +181,35 @@ class _Heading extends StatelessWidget {
   }
 }
 
+/// A small label above each group of events, such as Home or Family.
+class _GroupLabel extends StatelessWidget {
+  final String text;
+
+  const _GroupLabel(this.text);
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Padding(
+      padding: const EdgeInsetsDirectional.fromSTEB(6, 10, 4, 8),
+      child: Text(
+        text.toUpperCase(),
+        style: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w800,
+          letterSpacing: 0.6,
+          color: scheme.primary,
+        ),
+      ),
+    );
+  }
+}
+
 class _EventTile extends StatelessWidget {
   final LifeEvent event;
   final bool active;
 
-  const _EventTile({
-    required this.event,
-    required this.active,
-  });
+  const _EventTile({required this.event, required this.active});
 
   @override
   Widget build(BuildContext context) {
@@ -204,8 +231,8 @@ class _EventTile extends StatelessWidget {
       subtitle: active
           ? loc.lifePlanInProgress
           : count == null
-              ? null
-              : loc.lifeEventCount(count),
+          ? null
+          : loc.lifeEventCount(count),
       highlight: active,
       onTap: () => startLifePlan(context, event),
     );
@@ -236,10 +263,7 @@ class _Tile extends StatelessWidget {
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         leading: Icon(icon, color: scheme.primary),
-        title: Text(
-          title,
-          style: const TextStyle(fontWeight: FontWeight.w700),
-        ),
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.w700)),
         subtitle: subtitle == null
             ? null
             : Text(
@@ -266,7 +290,11 @@ class LifePlanCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final view = LifePlanItems.build(plan, RecordRepository.allActive());
+    final view = LifePlanItems.build(
+      plan,
+      RecordRepository.allActive(),
+      extraLabels: LifePlanText.extraLabels(loc),
+    );
     final progress = view.total == 0 ? 0.0 : view.done / view.total;
     final when = LifePlanText.when(loc, plan);
     final days = LifePlanItems.daysToGo(plan);
@@ -338,10 +366,7 @@ class LifePlanCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 4),
-              Icon(
-                Icons.chevron_right_rounded,
-                color: scheme.onSurfaceVariant,
-              ),
+              Icon(Icons.chevron_right_rounded, color: scheme.onSurfaceVariant),
             ],
           ),
         ),

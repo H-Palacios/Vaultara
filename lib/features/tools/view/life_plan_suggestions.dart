@@ -15,6 +15,7 @@ class LifePlanSuggestions {
 
   static const Duration _quiet = Duration(days: 30);
   static const String _carKey = 'lifePlanSuggestedCar';
+  static const String _moveKey = 'lifePlanSuggestedMove';
 
   /// Trips this long for study or work are often a move.
   static const int moveDays = 90;
@@ -22,20 +23,22 @@ class LifePlanSuggestions {
   static bool _hasActive(LifeEvent event) =>
       LifePlanRepository.active.any((p) => p.event == event);
 
-  /// After a new car registration is saved, asks once a month at most
-  /// whether the user bought or sold a car.
+  /// After a record is saved that usually comes with a life event, asks
+  /// once a month at most whether to start a plan: a new car registration
+  /// suggests a car plan, a new lease or home cover suggests a move.
   static Future<void> afterRecordAdded(
     BuildContext context,
     TrackedItem record,
   ) async {
-    if (record.subcategoryName != 'vehicle_registrations') return;
-    if (_hasActive(LifeEvent.car)) return;
+    final hint = _hintFor(record.subcategoryName);
+    if (hint == null) return;
+    if (hint.events.any(_hasActive)) return;
     try {
       final prefs = await SharedPreferences.getInstance();
-      final last = prefs.getInt(_carKey);
+      final last = prefs.getInt(hint.prefsKey);
       final now = DateTime.now().millisecondsSinceEpoch;
       if (last != null && now - last < _quiet.inMilliseconds) return;
-      await prefs.setInt(_carKey, now);
+      await prefs.setInt(hint.prefsKey, now);
     } catch (_) {
       return;
     }
@@ -45,11 +48,32 @@ class LifePlanSuggestions {
     final loc = AppLocalizations.of(context)!;
     ActionFeedbackSnackbar.showInfoWithAction(
       context,
-      loc.lifePlanSuggestCar,
-      icon: Icons.directions_car_rounded,
+      hint.message(loc),
+      icon: LifeEvents.icon(hint.events.first),
       actionLabel: loc.lifePlanStartTitle,
-      onAction: () => startLifePlan(context, LifeEvent.car),
+      onAction: () =>
+          startLifePlan(context, hint.events.first, variant: hint.variant),
     );
+  }
+
+  static _Hint? _hintFor(String group) {
+    switch (group) {
+      case 'vehicle_registrations':
+        return _Hint(
+          events: const <LifeEvent>[LifeEvent.car],
+          prefsKey: _carKey,
+          message: (loc) => loc.lifePlanSuggestCar,
+          variant: LifeEvents.variantBuy,
+        );
+      case 'lease_agreements':
+      case 'property_insurances':
+        return _Hint(
+          events: const <LifeEvent>[LifeEvent.moving, LifeEvent.homeBuy],
+          prefsKey: _moveKey,
+          message: (loc) => loc.lifePlanSuggestMove,
+        );
+    }
+    return null;
   }
 
   /// Whether a trip looks like a move abroad.
@@ -68,6 +92,20 @@ class LifePlanSuggestions {
       people: trip.travellers,
     );
   }
+}
+
+class _Hint {
+  final List<LifeEvent> events;
+  final String prefsKey;
+  final String Function(AppLocalizations loc) message;
+  final String? variant;
+
+  const _Hint({
+    required this.events,
+    required this.prefsKey,
+    required this.message,
+    this.variant,
+  });
 }
 
 /// Shown on a long study or work trip: offers the moving abroad plan.

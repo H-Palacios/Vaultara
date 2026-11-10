@@ -52,31 +52,36 @@ class LifePlanShare {
     final open = view.records.where((r) => !r.isDone).toList();
     final sections = <_Section>[];
     if (plan.date != null) {
-      final before =
-          open.where((r) => r.rule.phase == LifePhase.before).toList();
+      final before = open
+          .where((r) => r.rule.phase == LifePhase.before)
+          .toList();
       final after = open.where((r) => r.rule.phase == LifePhase.after).toList();
       if (before.isNotEmpty) {
-        sections.add(_Section(
-          loc.lifePlanBefore,
-          before.map(recordLine).toList(),
-        ));
+        sections.add(
+          _Section(loc.lifePlanBefore, before.map(recordLine).toList()),
+        );
       }
       if (after.isNotEmpty) {
-        sections.add(_Section(
-          loc.lifePlanAfter,
-          after.map(recordLine).toList(),
-        ));
+        sections.add(
+          _Section(loc.lifePlanAfter, after.map(recordLine).toList()),
+        );
       }
     } else if (open.isNotEmpty) {
       sections.add(_Section(loc.lifePlanToDo, open.map(recordLine).toList()));
     }
     final gaps = view.gaps
-        .map((g) => _Line(
-              LifePlanText.gap(context, loc, plan, g),
-              g.skipped ? loc.lifePlanStatusNotNeeded : '',
-              g.skipped,
-            ))
+        .map(
+          (g) => _Line(
+            LifePlanText.gap(context, loc, plan, g),
+            g.skipped ? loc.lifePlanStatusNotNeeded : '',
+            g.skipped,
+          ),
+        )
         .toList();
+    final tasks = view.tasks
+        .map((t) => _Line(LifePlanText.task(loc, t), '', t.done))
+        .toList();
+    if (tasks.isNotEmpty) sections.add(_Section(loc.lifePlanSteps, tasks));
     if (gaps.isNotEmpty) sections.add(_Section(loc.lifePlanMayNeed, gaps));
     final done = view.records.where((r) => r.isDone).map(recordLine).toList();
     if (done.isNotEmpty) sections.add(_Section(loc.lifePlanDoneSection, done));
@@ -98,14 +103,15 @@ class LifePlanShare {
   ) async {
     final loc = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context);
-    final rtl = Directionality.of(context) == TextDirection.rtl ||
+    final rtl =
+        Directionality.of(context) == TextDirection.rtl ||
         PdfExport.isRtlLanguage(locale.languageCode);
     final title = LifePlanText.title(loc, plan);
     final details = <String>[
       LifePlanText.dateLine(context, loc, plan),
       LifePlanText.people(loc, plan),
       loc.lifePlanProgress(view.done, view.total),
-      LifeEvents.body(loc, plan.event),
+      LifeEvents.body(loc, plan.event, plan.variant),
     ];
     final sections = _sections(context, loc, plan, view);
 
@@ -184,7 +190,11 @@ class LifePlanShare {
                     pw.Container(
                       width: 11,
                       height: 11,
-                      margin: const pw.EdgeInsets.only(top: 2, right: 8, left: 2),
+                      margin: const pw.EdgeInsets.only(
+                        top: 2,
+                        right: 8,
+                        left: 2,
+                      ),
                       decoration: pw.BoxDecoration(
                         border: pw.Border.all(color: muted, width: 1),
                         color: line.done ? accent : null,
@@ -236,6 +246,8 @@ class LifePlanShare {
       for (final item in view.records.where((r) => !r.isDone))
         '- ${LifePlanText.recordName(loc, item)}: '
             '${LifePlanText.hint(loc, item.rule.action)}',
+      for (final task in view.tasks.where((t) => !t.done))
+        '- ${LifePlanText.task(loc, task)}',
     ];
     await CalendarExport.shareEvents(
       context,
