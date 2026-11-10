@@ -115,7 +115,9 @@ const LIFE_EVENTS = [
   "jobLoss",
   "disaster",
   "caringParent",
+  "lostWallet",
 ];
+const KEPT_IN = ["wallet", "bag", "car", "phoneCase", "home", "travelPouch"];
 const SCREENS_V7 = [...SCREENS, "life_events", "life_event"];
 
 const RECORD_FIELDS = [
@@ -133,6 +135,7 @@ const RECORD_FIELDS = [
   "renewalCost",
   "costCurrency",
   "inWallet",
+  "keptIn",
   "reminderOffsetDays",
   "leadDays",
 ];
@@ -878,6 +881,7 @@ class UserData {
       cost: Number.isFinite(cost) && cost > 0 && CURRENCY_PATTERN.test(currency) ? cost : null,
       currency: CURRENCY_PATTERN.test(currency) ? currency : null,
       inWallet: data.inWallet === true,
+      keptIn: KEPT_IN.includes(data.keptIn) ? data.keptIn : data.inWallet === true ? "wallet" : null,
       reminderDays: reminder !== null && reminder >= 0 ? reminder : null,
       leadDays: lead !== null && lead > 0 && lead <= MAX_LEAD_DAYS ? lead : null,
     };
@@ -914,6 +918,7 @@ class UserData {
     if (withDetails) {
       out.repeats_every_months = record.repeatMonths;
       out.in_wallet = record.inWallet;
+      out.kept_in = record.keptIn;
       if (!record.locked) {
         out.reminder_days_before = record.reminderDays;
         out.renewal_takes_days = record.leadDays;
@@ -1828,7 +1833,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   }
   if (v7) {
     lines.push(
-      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first."
+      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
     );
   }
   lines.push("", v7 ? APP_GUIDE_V7 : APP_GUIDE);
