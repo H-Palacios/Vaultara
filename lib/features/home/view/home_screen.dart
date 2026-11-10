@@ -14,7 +14,8 @@ import 'package:vaultara/features/home/view/widgets/home_summary_section.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
 import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
-import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
+import 'package:vaultara/features/tutorials/view/tour_screen.dart';
+import 'package:vaultara/features/tutorials/view/whats_new_card.dart';
 import 'package:vaultara/features/tools/view/life_plans_home_section.dart';
 import 'package:vaultara/features/travel/view/travel_check_card.dart';
 
@@ -56,9 +57,7 @@ class HomeScreenState extends State<HomeScreen>
     HomeOverviewLoader.loadCached();
     HomeOverviewLoader.load(force: true);
 
-    WidgetsBinding.instance.addPostFrameCallback(
-      (_) => _initFirstRun(),
-    );
+    WidgetsBinding.instance.addPostFrameCallback((_) => _initFirstRun());
   }
 
   @override
@@ -102,7 +101,7 @@ class HomeScreenState extends State<HomeScreen>
   Future<void> _startTour() async {
     await _dismissTourBanner();
     if (!mounted) return;
-    TutorialsService.playFullTour(context);
+    await openTour(context);
   }
 
   void _onOverviewChanged() {
@@ -119,10 +118,8 @@ class HomeScreenState extends State<HomeScreen>
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) => ProfileScreen(
-            isPremium: isPremium,
-            onUpgrade: widget.onUpgrade,
-          ),
+          builder: (_, isPremium) =>
+              ProfileScreen(isPremium: isPremium, onUpgrade: widget.onUpgrade),
         ),
       ),
     );
@@ -157,10 +154,8 @@ class HomeScreenState extends State<HomeScreen>
               const SizedBox(width: 4),
               IconButton(
                 tooltip: loc.assistantTitle,
-                onPressed: () => openAskVaultara(
-                  context,
-                  isPremium: widget.isPremium,
-                ),
+                onPressed: () =>
+                    openAskVaultara(context, isPremium: widget.isPremium),
                 icon: Icon(
                   Icons.auto_awesome_rounded,
                   color: scheme.primary,
@@ -188,11 +183,9 @@ class HomeScreenState extends State<HomeScreen>
           ),
           if (_showTourBanner) ...[
             const SizedBox(height: 16),
-            _TourBanner(
-              onDismiss: _dismissTourBanner,
-              onStart: _startTour,
-            ),
-          ],
+            _TourBanner(onDismiss: _dismissTourBanner, onStart: _startTour),
+          ] else
+            WhatsNewCard(newUser: widget.isNewUser),
           const SizedBox(height: 20),
           HomeSummarySection(
             totals: overview.totals,
@@ -212,10 +205,7 @@ class _TourBanner extends StatelessWidget {
   final VoidCallback onDismiss;
   final VoidCallback onStart;
 
-  const _TourBanner({
-    required this.onDismiss,
-    required this.onStart,
-  });
+  const _TourBanner({required this.onDismiss, required this.onStart});
 
   @override
   Widget build(BuildContext context) {
@@ -234,10 +224,7 @@ class _TourBanner extends StatelessWidget {
         children: [
           Text(
             loc.tourBannerTitle,
-            style: const TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w800,
-            ),
+            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
           ),
           const SizedBox(height: 6),
           Text(
