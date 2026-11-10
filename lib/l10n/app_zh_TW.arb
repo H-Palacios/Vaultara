@@ -2273,5 +2273,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "要搬新家嗎？看看還有什麼需要更新。"
+  "lifePlanSuggestMove": "要搬新家嗎？看看還有什麼需要更新。",
+  "keptInTitle": "存放位置",
+  "keptInSubtitle": "以便遺失時知道要停用及補辦什麼",
+  "keptInWallet": "錢包",
+  "keptInBag": "包包",
+  "keptInPhoneCase": "手機殼",
+  "keptInTravelPouch": "旅行收納包",
+  "keptInCar": "汽車",
+  "keptInHome": "家裡",
+  "keptInNone": "未設定",
+  "lostLineLabel": "掛失電話",
+  "lostLineHelper": "現在就儲存。號碼印在卡片上，需要時就不在手邊了。",
+  "lifeEventWalletLost": "我的錢包掉了",
+  "lifeEventWalletLostBody": "先停用卡片，再逐一補辦證件。",
+  "lifeEventWalletStolen": "我的錢包被偷了",
+  "lifeEventWalletStolenBody": "立即停用卡片並報案。之後留意帳戶是否有盜刷。",
+  "lifeVariantWalletQuestion": "遺失還是被偷？",
+  "lifeVariantLost": "遺失",
+  "lifeVariantStolen": "被偷",
+  "lifeTaskWalletFreezeCards": "如果銀行 App 支援，先在 App 中暫停卡片",
+  "lifeTaskWalletRetrace": "打電話給最近去過的地方，詢問失物招領",
+  "lifeTaskWalletFraudAlert": "請信用機構或本國反詐騙單位註記你的身分證件",
+  "lifeTaskWalletStatements": "檢查銀行對帳單是否有不是你本人的消費",
+  "lifeTaskWalletSubscriptions": "把新卡綁定到訂閱和自動扣款",
+  "lifeTaskWalletPayApps": "把新卡加入 Google Pay 或 Apple Pay",
+  "lifeTaskWalletHealthCard": "向健康保險申請新的會員卡",
+  "lifeTaskWalletTransport": "停用交通卡或通行費卡並轉移餘額",
+  "lifeTaskWalletLoyalty": "補辦會員卡以保留點數",
+  "lifeTaskWalletLocks": "如果裡面有鑰匙或你的地址，考慮換鎖",
+  "lifeTaskWalletInsurance": "確認你的保險是否涵蓋錢包和現金",
+  "lostWalletHeroTitle": "錢包掉了？",
+  "lostWalletHeroBody": "Vaultara 告訴你先停用什麼、補辦什麼、通知誰。",
+  "lostWalletStartTitle": "發生了什麼事？",
+  "lostWalletEditTitle": "變更詳細資料",
+  "lostWalletLostHint": "掉了或忘在某處",
+  "lostWalletStolenHint": "被人拿走了",
+  "lostWalletWhatMissing": "少了什麼？",
+  "lostWalletStartButton": "告訴我該做什麼",
+  "lostWalletCheckupTitle": "錢包檢查",
+  "lostWalletCheckupBody": "現在就做好準備，遺失時不會漏掉任何東西。",
+  "lostWalletCheckupAllGood": "一切就緒。萬一遺失，你已有準備。",
+  "lostWalletSetPlaceBody": "打開一張卡片或一份證件，選擇存放位置。為身分證、駕照和卡片都設定一下。",
+  "lostWalletIssuePhotos": "{count, plural, other{沒有照片：{count} 項。有照片補辦更快。}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{未儲存掛失電話的卡片：{count} 張。}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{隨身攜帶的護照或許可證：{count} 份。不出遊時請放在家裡。}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "隨身攜帶的物品",
+  "lostWalletNoPhoto": "沒有照片",
+  "lostWalletHasPhoto": "已儲存照片",
+  "lostWalletNoLineShort": "沒有掛失電話",
+  "lostWalletHistory": "過去紀錄",
+  "lostWalletFound": "已找到",
+  "walletCheckToggle": "每 6 個月提醒我",
+  "walletCheckToggleBody": "快速看看隨身物品，讓清單保持正確。",
+  "walletCheckReminderTitle": "錢包檢查",
+  "walletCheckReminderBody": "錢包裡有變化嗎？花一分鐘更新 Vaultara。",
+  "lostWalletBlockNow": "立即停用",
+  "lostWalletBlockNowHint": "逐一致電銀行或使用其 App。分秒必爭。",
+  "lostWalletCall": "撥打",
+  "lostWalletAddLine": "新增號碼",
+  "lostWalletNoLine": "尚未儲存號碼。可在銀行 App 或官網查詢。",
+  "lostWalletBlocked": "已停用",
+  "lostWalletReplace": "補辦這些",
+  "lostWalletReplaceHint": "申請新的，收到後儲存新日期。",
+  "lostWalletArrived": "新的已到",
+  "lostWalletCheck": "檢查這些",
+  "lostWalletCheckHint": "詢問是否需要新卡或新號碼。",
+  "lostWalletPlanEmptyTitle": "那裡沒有儲存的物品",
+  "lostWalletPlanEmpty": "下面的步驟仍然有用。下次請設定卡片和證件的存放位置。",
+  "lostWalletCaseTitle": "報案三聯單編號",
+  "lostWalletCaseHint": "銀行、保險公司和政府機關常會要求提供。",
+  "lostWalletCaseLabel": "案件或參考編號",
+  "lostWalletCaseSaved": "已儲存報案編號",
+  "lostWalletAbroadTitle": "現在在國外嗎？",
+  "lostWalletAbroadBody": "你正在旅行：{trip}。如果護照或身分證在裡面，請聯絡駐外館處申請緊急旅行文件，並通知旅遊保險。",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "開啟行程",
+  "lostWalletPhoneTitle": "手機也被拿走了嗎？",
+  "lostWalletPhoneBody": "先停用 SIM 卡和銀行 App。有專門的計畫。",
+  "lostWalletPhoneButton": "開始手機遺失計畫",
+  "lostWalletStatementNote": "Vaultara 會在 30、60 和 90 天後提醒你。",
+  "lostWalletStatementTitle": "檢查銀行對帳單",
+  "lostWalletStatementBody": "查找錢包遺失後不是你本人的消費。",
+  "lostWalletFoundButton": "我找到了",
+  "lostWalletFoundTitle": "好消息！",
+  "lostWalletFoundBody": "這些卡片已停用，請留意新卡：",
+  "lostWalletFoundNone": "還沒有停用任何東西，可以照常使用。",
+  "lostWalletFoundUnfreeze": "如果你在銀行 App 中暫停了卡片，請恢復未掛失的卡片。",
+  "lostWalletFoundConfirm": "關閉計畫",
+  "lostWalletFoundOn": "於 {date} 找到",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "遺失物報告",
+  "lostWalletReportTitle": "遺失物報告",
+  "lostWalletReportWhen": "日期：{date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "遺失物品：{places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "報案編號：{number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "報案編號：尚未報案",
+  "lostWalletReportCount": "{count, plural, other{下列項目：{count} 項}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

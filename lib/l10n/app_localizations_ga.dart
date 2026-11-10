@@ -7356,4 +7356,324 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Ag bogadh go teach nua? Féach cad eile atá le nuashonrú.';
+
+  @override
+  String get keptInTitle => 'Cá gcoinním é';
+
+  @override
+  String get keptInSubtitle => 'Le go mbeidh a fhios agat cad atá le blocáil agus le hathsholáthar má chailltear é';
+
+  @override
+  String get keptInWallet => 'Sparán';
+
+  @override
+  String get keptInBag => 'Mála';
+
+  @override
+  String get keptInPhoneCase => 'Cumhdach fóin';
+
+  @override
+  String get keptInTravelPouch => 'Púitse taistil';
+
+  @override
+  String get keptInCar => 'Carr';
+
+  @override
+  String get keptInHome => 'Sa bhaile';
+
+  @override
+  String get keptInNone => 'Gan socrú';
+
+  @override
+  String get lostLineLabel => 'Uimhir do chárta caillte';
+
+  @override
+  String get lostLineHelper => 'Sábháil anois í. Tá an uimhir ar an gcárta, mar sin ní bheidh sí agat nuair a theastaíonn sí.';
+
+  @override
+  String get lifeEventWalletLost => 'Chaill mé mo sparán';
+
+  @override
+  String get lifeEventWalletLostBody => 'Blocáil do chártaí ar dtús, ansin athsholáthair do dhoiciméid ceann ar cheann.';
+
+  @override
+  String get lifeEventWalletStolen => 'Goideadh mo sparán';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Blocáil do chártaí láithreach agus tuairiscigh an goid. Ansin coinnigh súil ar do chuntais ar eagla calaoise.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Caillte nó goidte?';
+
+  @override
+  String get lifeVariantLost => 'Caillte';
+
+  @override
+  String get lifeVariantStolen => 'Goidte';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Reoigh do chártaí in aip do bhainc má cheadaíonn sí é';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Glaoigh ar na háiteanna deireanacha a raibh tú agus fiafraigh faoi earraí caillte';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Iarr ar na biúrónna creidmheasa nó ar sheirbhís calaoise do thíre do cháipéis aitheantais a mharcáil';
+
+  @override
+  String get lifeTaskWalletStatements => 'Seiceáil do ráitis bhainc le haghaidh íocaíochtaí nach ndearna tú';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Cuir an cárta nua ar do shíntiúis agus do dhochair dhíreacha';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Cuir na cártaí nua le Google Pay nó Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Iarr cárta nua ar d\'árachóir sláinte';
+
+  @override
+  String get lifeTaskWalletTransport => 'Blocáil do chárta taistil nó dola agus aistrigh an t-iarmhéid';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Iarr cártaí dílseachta nua chun do phointí a choinneáil';
+
+  @override
+  String get lifeTaskWalletLocks => 'Má bhí eochracha nó do sheoladh ann, smaoinigh ar na glais a athrú';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Seiceáil an gclúdaíonn d\'árachas an sparán agus an t-airgead tirim';
+
+  @override
+  String get lostWalletHeroTitle => 'Ar chaill tú do sparán?';
+
+  @override
+  String get lostWalletHeroBody => 'Taispeánann Vaultara cad atá le blocáil ar dtús, cad atá le hathsholáthar agus cé dó a n-inseofá.';
+
+  @override
+  String get lostWalletStartTitle => 'Cad a tharla?';
+
+  @override
+  String get lostWalletEditTitle => 'Athraigh na sonraí';
+
+  @override
+  String get lostWalletLostHint => 'Thit sé nó d\'fhág mé áit éigin é';
+
+  @override
+  String get lostWalletStolenHint => 'Thóg duine éigin é';
+
+  @override
+  String get lostWalletWhatMissing => 'Cad atá ar iarraidh?';
+
+  @override
+  String get lostWalletStartButton => 'Taispeáin dom cad atá le déanamh';
+
+  @override
+  String get lostWalletCheckupTitle => 'Seiceáil sparáin';
+
+  @override
+  String get lostWalletCheckupBody => 'Ullmhaigh anois, ionas nach ndéanfar dearmad ar aon rud má chailltear é.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Gach rud réidh. Má chailltear é riamh, tá tú ullamh.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Oscail cárta nó doiciméad agus roghnaigh cá gcoinníonn tú é. Déan é seo do do chárta aitheantais, do cheadúnas agus do chártaí.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gan grianghraf: $count. Le grianghraf is tapúla an t-athsholáthar.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Cártaí gan uimhir do chárta caillte: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pasanna nó ceadúnais ort: $count. Fág sa bhaile iad mura bhfuil tú ag taisteal.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'An méid a iompraíonn tú';
+
+  @override
+  String get lostWalletNoPhoto => 'Gan grianghraf';
+
+  @override
+  String get lostWalletHasPhoto => 'Grianghraf sábháilte';
+
+  @override
+  String get lostWalletNoLineShort => 'Gan uimhir do chárta caillte';
+
+  @override
+  String get lostWalletHistory => 'Amanna roimhe seo';
+
+  @override
+  String get lostWalletFound => 'Aimsithe';
+
+  @override
+  String get walletCheckToggle => 'Cuir i gcuimhne dom gach 6 mhí';
+
+  @override
+  String get walletCheckToggleBody => 'Sracfhéachaint ar an méid a iompraíonn tú, ionas go mbeidh an liosta ceart.';
+
+  @override
+  String get walletCheckReminderTitle => 'Seiceáil sparáin';
+
+  @override
+  String get walletCheckReminderBody => 'Ar athraigh aon rud i do sparán? Caith nóiméad ag nuashonrú Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Blocáil iad seo anois';
+
+  @override
+  String get lostWalletBlockNowHint => 'Glaoigh ar gach banc nó úsáid a aip. Tá gach nóiméad tábhachtach.';
+
+  @override
+  String get lostWalletCall => 'Glaoigh';
+
+  @override
+  String get lostWalletAddLine => 'Cuir an uimhir leis';
+
+  @override
+  String get lostWalletNoLine => 'Níl aon uimhir sábháilte. Aimsigh í in aip nó ar shuíomh do bhainc.';
+
+  @override
+  String get lostWalletBlocked => 'Blocáilte';
+
+  @override
+  String get lostWalletReplace => 'Athsholáthair iad seo';
+
+  @override
+  String get lostWalletReplaceHint => 'Iarr cinn nua agus sábháil an dáta nua nuair a thagann siad.';
+
+  @override
+  String get lostWalletArrived => 'Tháinig an ceann nua';
+
+  @override
+  String get lostWalletCheck => 'Seiceáil iad seo';
+
+  @override
+  String get lostWalletCheckHint => 'Fiafraigh an dteastaíonn cárta nó uimhir nua uait.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ní raibh aon rud sábháilte ansin';
+
+  @override
+  String get lostWalletPlanEmpty => 'Cabhraíonn na céimeanna thíos fós. An chéad uair eile, roghnaigh cá gcoinníonn tú do chártaí agus doiciméid.';
+
+  @override
+  String get lostWalletCaseTitle => 'Uimhir cháis na nGardaí';
+
+  @override
+  String get lostWalletCaseHint => 'Is minic a iarrann bainc, árachóirí agus oifigí í.';
+
+  @override
+  String get lostWalletCaseLabel => 'Uimhir cháis nó tagartha';
+
+  @override
+  String get lostWalletCaseSaved => 'Uimhir cháis sábháilte';
+
+  @override
+  String get lostWalletAbroadTitle => 'Thar lear anois?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Tá tú ar an turas $trip. Má bhí do phas nó d\'aitheantas ann, déan teagmháil le d\'ambasáid nó do chonsalacht le haghaidh doiciméad taistil éigeandála agus cuir d\'árachóir taistil ar an eolas.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Oscail an turas';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ar tógadh d\'fhón freisin?';
+
+  @override
+  String get lostWalletPhoneBody => 'Blocáil an cárta SIM agus d\'aipeanna bainc ar dtús. Tá plean ann chuige sin.';
+
+  @override
+  String get lostWalletPhoneButton => 'Tosaigh plean an fhóin chaillte';
+
+  @override
+  String get lostWalletStatementNote => 'Cuirfidh Vaultara i gcuimhne duit tar éis 30, 60 agus 90 lá.';
+
+  @override
+  String get lostWalletStatementTitle => 'Seiceáil do ráitis bhainc';
+
+  @override
+  String get lostWalletStatementBody => 'Lorg íocaíochtaí nach ndearna tú ó cailleadh do sparán.';
+
+  @override
+  String get lostWalletFoundButton => 'D\'aimsigh mé é';
+
+  @override
+  String get lostWalletFoundTitle => 'Dea-scéala!';
+
+  @override
+  String get lostWalletFoundBody => 'Tá na cártaí seo blocáilte cheana, mar sin coinnigh súil amach do na cinn nua:';
+
+  @override
+  String get lostWalletFoundNone => 'Níor blocáladh aon rud fós, is féidir leat leanúint ar aghaidh mar a bhí.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Má reoigh tú cártaí in aip do bhainc, díreoigh na cinn nár bhlocáil tú.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Dún an plean';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Aimsithe ar $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Tuarascáil earraí caillte';
+
+  @override
+  String get lostWalletReportTitle => 'Tuarascáil earraí caillte';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Dáta: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Cad atá ar iarraidh: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Uimhir cháis: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Uimhir cháis: gan tuairisciú fós';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Míreanna thíos: $count',
+    );
+    return '$_temp0';
+  }
 }

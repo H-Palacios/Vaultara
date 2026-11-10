@@ -2294,5 +2294,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Etxe berrira zoaz? Ikusi zer gehiago eguneratu behar duzun."
+  "lifePlanSuggestMove": "Etxe berrira zoaz? Ikusi zer gehiago eguneratu behar duzun.",
+  "keptInTitle": "Non gordetzen dudan",
+  "keptInSubtitle": "Galtzen bada, zer blokeatu eta zer ordeztu jakiteko",
+  "keptInWallet": "Zorroa",
+  "keptInBag": "Poltsa",
+  "keptInPhoneCase": "Mugikorraren zorroa",
+  "keptInTravelPouch": "Bidaia-poltsa",
+  "keptInCar": "Autoa",
+  "keptInHome": "Etxean",
+  "keptInNone": "Zehaztu gabe",
+  "lostLineLabel": "Galdutako txartelaren telefonoa",
+  "lostLineHelper": "Gorde orain. Zenbakia txartelean dago, beraz ez duzu izango behar duzunean.",
+  "lifeEventWalletLost": "Zorroa galdu dut",
+  "lifeEventWalletLostBody": "Blokeatu txartelak lehenik, eta gero ordeztu dokumentuak banan-banan.",
+  "lifeEventWalletStolen": "Zorroa lapurtu didate",
+  "lifeEventWalletStolenBody": "Blokeatu txartelak berehala eta salatu lapurreta. Gero zaindu kontuak iruzurrik ez izateko.",
+  "lifeVariantWalletQuestion": "Galdu da ala lapurtu dizute?",
+  "lifeVariantLost": "Galduta",
+  "lifeVariantStolen": "Lapurtuta",
+  "lifeTaskWalletFreezeCards": "Izoztu txartelak bankuaren aplikazioan, aukera hori badu",
+  "lifeTaskWalletRetrace": "Deitu egon zaren azken lekuetara eta galdetu galdutako objektuetan",
+  "lifeTaskWalletFraudAlert": "Eskatu kreditu-agentziei edo zure herrialdeko iruzurraren aurkako zerbitzuari zure agiria markatzeko",
+  "lifeTaskWalletStatements": "Begiratu banku-laburpenak egin ez dituzun ordainketen bila",
+  "lifeTaskWalletSubscriptions": "Jarri txartel berria harpidetza eta helbideratzeetan",
+  "lifeTaskWalletPayApps": "Gehitu txartel berriak Google Pay edo Apple Pay-ra",
+  "lifeTaskWalletHealthCard": "Eskatu txartel berria zure osasun-aseguruari",
+  "lifeTaskWalletTransport": "Blokeatu garraio- edo bidesari-txartela eta pasatu saldoa",
+  "lifeTaskWalletLoyalty": "Eskatu leialtasun-txartel berriak puntuak ez galtzeko",
+  "lifeTaskWalletLocks": "Giltzak edo zure helbidea bazeuden, pentsatu sarrailak aldatzea",
+  "lifeTaskWalletInsurance": "Egiaztatu aseguruak zorroa eta dirua estaltzen dituen",
+  "lostWalletHeroTitle": "Zorroa galdu duzu?",
+  "lostWalletHeroBody": "Vaultarak erakusten dizu zer blokeatu lehenik, zer ordeztu eta nori abisatu.",
+  "lostWalletStartTitle": "Zer gertatu da?",
+  "lostWalletEditTitle": "Aldatu datuak",
+  "lostWalletLostHint": "Erori zait edo nonbait ahaztu dut",
+  "lostWalletStolenHint": "Norbaitek hartu du",
+  "lostWalletWhatMissing": "Zer falta da?",
+  "lostWalletStartButton": "Erakutsi zer egin",
+  "lostWalletCheckupTitle": "Zorroaren berrikuspena",
+  "lostWalletCheckupBody": "Prestatu orain, galtzen bada ezer ez ahazteko.",
+  "lostWalletCheckupAllGood": "Dena prest. Inoiz galtzen bada, prest zaude.",
+  "lostWalletSetPlaceBody": "Ireki txartel edo dokumentu bat eta aukeratu non gordetzen duzun. Egin hori NANarekin, gidabaimenarekin eta txartelekin.",
+  "lostWalletIssuePhotos": "{count, plural, =1{Elementu batek ez du argazkirik. Argazkiarekin azkarrago ordezten da.} other{{count} elementuk ez dute argazkirik. Argazkiekin azkarrago ordezten dira.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{Txartel batek ez du galdutako txartelaren telefonorik gordeta.} other{{count} txartelek ez dute galdutako txartelaren telefonorik gordeta.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Pasaporte edo baimen bat daramazu. Utzi etxean bidaiatzen ez bazaude.} other{{count} pasaporte edo baimen daramatzazu. Utzi etxean bidaiatzen ez bazaude.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Zurekin daramazuna",
+  "lostWalletNoPhoto": "Argazkirik ez",
+  "lostWalletHasPhoto": "Argazkia gordeta",
+  "lostWalletNoLineShort": "Galdutako txartelaren telefonorik ez",
+  "lostWalletHistory": "Aurreko aldiak",
+  "lostWalletFound": "Aurkituta",
+  "walletCheckToggle": "Gogorarazi 6 hilean behin",
+  "walletCheckToggleBody": "Begiratu azkar zer daramazun, zerrenda zuzen egon dadin.",
+  "walletCheckReminderTitle": "Zorroaren berrikuspena",
+  "walletCheckReminderBody": "Zerbait aldatu da zure zorroan? Hartu minutu bat Vaultara eguneratzeko.",
+  "lostWalletBlockNow": "Blokeatu hauek orain",
+  "lostWalletBlockNowHint": "Deitu banku bakoitzari edo erabili haren aplikazioa. Minutu bakoitzak balio du.",
+  "lostWalletCall": "Deitu",
+  "lostWalletAddLine": "Gehitu zenbakia",
+  "lostWalletNoLine": "Ez dago zenbakirik gordeta. Bilatu bankuaren aplikazioan edo webgunean.",
+  "lostWalletBlocked": "Blokeatuta",
+  "lostWalletReplace": "Ordeztu hauek",
+  "lostWalletReplaceHint": "Eskatu berriak eta gorde data berria iristen direnean.",
+  "lostWalletArrived": "Berria iritsi da",
+  "lostWalletCheck": "Egiaztatu hauek",
+  "lostWalletCheckHint": "Galdetu txartel edo zenbaki berria behar duzun.",
+  "lostWalletPlanEmptyTitle": "Ez zegoen ezer gordeta han",
+  "lostWalletPlanEmpty": "Beheko urratsek laguntzen dute oraindik. Hurrengoan, aukeratu non gordetzen dituzun txartelak eta dokumentuak.",
+  "lostWalletCaseTitle": "Poliziaren salaketa-zenbakia",
+  "lostWalletCaseHint": "Bankuek, aseguru-etxeek eta bulegoek askotan eskatzen dute.",
+  "lostWalletCaseLabel": "Kasu- edo erreferentzia-zenbakia",
+  "lostWalletCaseSaved": "Salaketa-zenbakia gordeta",
+  "lostWalletAbroadTitle": "Atzerrian zaude orain?",
+  "lostWalletAbroadBody": "Bidaian zaude: {trip}. Pasaportea edo NANa bazegoen, jarri harremanetan enbaxadarekin edo kontsulatuarekin larrialdiko bidaia-agiri baterako, eta abisatu bidaia-aseguruari.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Ireki bidaia",
+  "lostWalletPhoneTitle": "Mugikorra ere eraman dute?",
+  "lostWalletPhoneBody": "Blokeatu lehenik SIM txartela eta bankuko aplikazioak. Horretarako plan bat dago.",
+  "lostWalletPhoneButton": "Hasi galdutako mugikorraren plana",
+  "lostWalletStatementNote": "Vaultarak 30, 60 eta 90 egunera gogoraraziko dizu.",
+  "lostWalletStatementTitle": "Begiratu banku-laburpenak",
+  "lostWalletStatementBody": "Bilatu zorroa galdu zenuenetik egin ez dituzun ordainketak.",
+  "lostWalletFoundButton": "Aurkitu dut",
+  "lostWalletFoundTitle": "Albiste ona!",
+  "lostWalletFoundBody": "Txartel hauek blokeatuta daude jada, beraz adi egon berriei:",
+  "lostWalletFoundNone": "Oraindik ez da ezer blokeatu, lehen bezala jarrai dezakezu.",
+  "lostWalletFoundUnfreeze": "Bankuaren aplikazioan txartelak izoztu badituzu, desizoztu blokeatu ez dituzunak.",
+  "lostWalletFoundConfirm": "Itxi plana",
+  "lostWalletFoundOn": "Aurkitua: {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Galdutako gauzen txostena",
+  "lostWalletReportTitle": "Galdutako gauzen txostena",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Zer falta den: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Salaketa-zenbakia: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Salaketa-zenbakia: oraindik salatu gabe",
+  "lostWalletReportCount": "{count, plural, =1{Elementu bat behean} other{{count} elementu behean}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

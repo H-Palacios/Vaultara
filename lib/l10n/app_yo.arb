@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ṣé o ń kó lọ sí ilé tuntun? Wo ohun míì tí o yẹ kí o ṣe àtúnṣe."
+  "lifePlanSuggestMove": "Ṣé o ń kó lọ sí ilé tuntun? Wo ohun míì tí o yẹ kí o ṣe àtúnṣe.",
+  "keptInTitle": "Ibi ti mo ti n tọju rẹ",
+  "keptInSubtitle": "Kí o lè mọ ohun tí o yẹ kí o dènà àti rọ́pò tí ó bá sọnù",
+  "keptInWallet": "Àpò owó",
+  "keptInBag": "Báàgì",
+  "keptInPhoneCase": "Ìbòrí fóònù",
+  "keptInTravelPouch": "Àpò ìrìnàjò",
+  "keptInCar": "Ọkọ̀ ayọ́kẹ́lẹ́",
+  "keptInHome": "Nílé",
+  "keptInNone": "Kò tíì yàn",
+  "lostLineLabel": "Nọ́mbà fún káàdì tó sọnù",
+  "lostLineHelper": "Fi pamọ́ báyìí. Nọ́mbà náà wà lórí káàdì, nítorí náà kò ní sí lọ́wọ́ rẹ nígbà tí o bá nílò rẹ̀.",
+  "lifeEventWalletLost": "Àpò owó mi sọnù",
+  "lifeEventWalletLostBody": "Dènà àwọn káàdì rẹ ní àkọ́kọ́, lẹ́yìn náà rọ́pò àwọn ìwé rẹ ní ọ̀kọ̀ọ̀kan.",
+  "lifeEventWalletStolen": "Wọ́n jí àpò owó mi",
+  "lifeEventWalletStolenBody": "Dènà àwọn káàdì rẹ lẹ́sẹ̀kẹsẹ̀ kí o sì fi ìjínigbé náà tó ọlọ́pàá létí. Lẹ́yìn náà ṣọ́ àwọn àkáǹtì rẹ fún jìbìtì.",
+  "lifeVariantWalletQuestion": "Ó sọnù àbí wọ́n jí i?",
+  "lifeVariantLost": "Ó sọnù",
+  "lifeVariantStolen": "Wọ́n jí i",
+  "lifeTaskWalletFreezeCards": "Dì àwọn káàdì rẹ nínú áàpù báǹkì rẹ tí ó bá ní àṣàyàn yẹn",
+  "lifeTaskWalletRetrace": "Pe àwọn ibi tí o lọ kẹ́yìn kí o sì béèrè nípa ohun tó sọnù",
+  "lifeTaskWalletFraudAlert": "Ní kí àwọn ọ́fíìsì kírẹ́dítì tàbí iṣẹ́ ìdènà jìbìtì orílẹ̀-èdè rẹ sàmì sí ìwé ìdánimọ̀ rẹ",
+  "lifeTaskWalletStatements": "Ṣàyẹ̀wò àkọsílẹ̀ báǹkì rẹ fún owó tí o kò san",
+  "lifeTaskWalletSubscriptions": "Fi káàdì tuntun sí àwọn ìforúkọsílẹ̀ àti ìyọkúrò owó aládàáṣe rẹ",
+  "lifeTaskWalletPayApps": "Ṣàfikún àwọn káàdì tuntun sí Google Pay tàbí Apple Pay",
+  "lifeTaskWalletHealthCard": "Béèrè káàdì ọmọ ẹgbẹ́ tuntun lọ́wọ́ ilé iṣẹ́ ìbánigbófò ìlera rẹ",
+  "lifeTaskWalletTransport": "Dènà káàdì ìrìnnà tàbí owó ọ̀nà rẹ kí o sì gbé owó tó kù lọ",
+  "lifeTaskWalletLoyalty": "Béèrè àwọn káàdì ìdúróṣinṣin tuntun kí o lè pa àwọn pọ́ìǹtì rẹ mọ́",
+  "lifeTaskWalletLocks": "Tí kọ́kọ́rọ́ tàbí àdírẹ́sì rẹ bá wà nínú rẹ̀, ronú nípa yíyí àwọn títì padà",
+  "lifeTaskWalletInsurance": "Ṣàyẹ̀wò bóyá ìbánigbófò rẹ bo àpò owó àti owó ọwọ́",
+  "lostWalletHeroTitle": "Àpò owó rẹ sọnù?",
+  "lostWalletHeroBody": "Vaultara fi ohun tí o yẹ kí o dènà ní àkọ́kọ́ hàn, ohun tí o yẹ kí o rọ́pò àti ẹni tí o yẹ kí o sọ fún.",
+  "lostWalletStartTitle": "Kí ló ṣẹlẹ̀?",
+  "lostWalletEditTitle": "Yí àwọn àlàyé padà",
+  "lostWalletLostHint": "Ó jábọ́ tàbí mo gbàgbé rẹ̀ síbì kan",
+  "lostWalletStolenHint": "Ẹnìkan mú un",
+  "lostWalletWhatMissing": "Kí ló sọnù?",
+  "lostWalletStartButton": "Fi ohun tí mo yẹ kí n ṣe hàn mí",
+  "lostWalletCheckupTitle": "Àyẹ̀wò àpò owó",
+  "lostWalletCheckupBody": "Múra sílẹ̀ báyìí, kí ohunkóhun má bàa gbàgbé tí ó bá sọnù.",
+  "lostWalletCheckupAllGood": "Gbogbo rẹ̀ ti ṣetán. Tí ó bá sọnù lọ́jọ́ kan, o ti múra sílẹ̀.",
+  "lostWalletSetPlaceBody": "Ṣí káàdì tàbí ìwé kan kí o sì yan ibi tí o ti ń tọ́jú rẹ̀. Ṣe èyí fún ìwé ìdánimọ̀, ìwé àṣẹ ìwakọ̀ àti àwọn káàdì rẹ.",
+  "lostWalletIssuePhotos": "{count, plural, other{Láìsí fọ́tò: {count}. Pẹ̀lú fọ́tò, rírọ́pò máa ń yára.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Àwọn káàdì láìsí nọ́mbà fún káàdì tó sọnù: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Ìwé ìrìnnà tàbí ìwé àṣẹ tí o gbé dání: {count}. Fi wọ́n sílé àyàfi tí o bá ń rìnrìn àjò.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ohun tí o gbé dání",
+  "lostWalletNoPhoto": "Kò sí fọ́tò",
+  "lostWalletHasPhoto": "A ti fi fọ́tò pamọ́",
+  "lostWalletNoLineShort": "Kò sí nọ́mbà fún káàdì tó sọnù",
+  "lostWalletHistory": "Àwọn ìgbà àtẹ̀yìnwá",
+  "lostWalletFound": "A ti rí i",
+  "walletCheckToggle": "Rán mi létí ní gbogbo oṣù 6",
+  "walletCheckToggleBody": "Ìwòye kíákíá lórí ohun tí o gbé dání, kí àtòjọ náà lè péye.",
+  "walletCheckReminderTitle": "Àyẹ̀wò àpò owó",
+  "walletCheckReminderBody": "Ṣé nǹkan kan yí padà nínú àpò owó rẹ? Lo ìṣẹ́jú kan láti ṣe àtúnṣe Vaultara.",
+  "lostWalletBlockNow": "Dènà àwọn wọ̀nyí báyìí",
+  "lostWalletBlockNowHint": "Pe báǹkì kọ̀ọ̀kan tàbí lo áàpù wọn. Gbogbo ìṣẹ́jú ṣe pàtàkì.",
+  "lostWalletCall": "Pè",
+  "lostWalletAddLine": "Ṣàfikún nọ́mbà náà",
+  "lostWalletNoLine": "Kò sí nọ́mbà tí a fi pamọ́. Wá a nínú áàpù tàbí lórí ojú òpó báǹkì rẹ.",
+  "lostWalletBlocked": "Ti dènà",
+  "lostWalletReplace": "Rọ́pò àwọn wọ̀nyí",
+  "lostWalletReplaceHint": "Béèrè fún tuntun kí o sì fi ọjọ́ tuntun pamọ́ nígbà tí wọ́n bá dé.",
+  "lostWalletArrived": "Tuntun ti dé",
+  "lostWalletCheck": "Ṣàyẹ̀wò àwọn wọ̀nyí",
+  "lostWalletCheckHint": "Béèrè bóyá o nílò káàdì tàbí nọ́mbà tuntun.",
+  "lostWalletPlanEmptyTitle": "Kò sí ohun tí a fi pamọ́ níbẹ̀",
+  "lostWalletPlanEmpty": "Àwọn ìgbésẹ̀ ìsàlẹ̀ ṣì ń ṣe ìrànlọ́wọ́. Nígbà míì, yan ibi tí o ti ń tọ́jú àwọn káàdì àti ìwé rẹ.",
+  "lostWalletCaseTitle": "Nọ́mbà ẹjọ́ ọlọ́pàá",
+  "lostWalletCaseHint": "Àwọn báǹkì, ilé iṣẹ́ ìbánigbófò àti ọ́fíìsì sábà máa ń béèrè fún un.",
+  "lostWalletCaseLabel": "Nọ́mbà ẹjọ́ tàbí ìtọ́kasí",
+  "lostWalletCaseSaved": "A ti fi nọ́mbà ẹjọ́ pamọ́",
+  "lostWalletAbroadTitle": "Ṣé o wà lókè òkun báyìí?",
+  "lostWalletAbroadBody": "O wà lórí ìrìnàjò {trip}. Tí ìwé ìrìnnà tàbí ìwé ìdánimọ̀ rẹ bá wà nínú rẹ̀, kàn sí ilé aṣojú tàbí kọ́nsúlétì rẹ fún ìwé ìrìnnà pàjáwìrì kí o sì sọ fún ilé iṣẹ́ ìbánigbófò ìrìnàjò rẹ.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Ṣí ìrìnàjò",
+  "lostWalletPhoneTitle": "Ṣé wọ́n mú fóònù rẹ náà?",
+  "lostWalletPhoneBody": "Dènà káàdì SIM àti àwọn áàpù báǹkì rẹ ní àkọ́kọ́. Ètò kan wà fún ìyẹn.",
+  "lostWalletPhoneButton": "Bẹ̀rẹ̀ ètò fóònù tó sọnù",
+  "lostWalletStatementNote": "Vaultara yóò rán ọ létí lẹ́yìn ọjọ́ 30, 60 àti 90.",
+  "lostWalletStatementTitle": "Ṣàyẹ̀wò àkọsílẹ̀ báǹkì rẹ",
+  "lostWalletStatementBody": "Wá owó tí o kò san látìgbà tí àpò owó rẹ ti sọnù.",
+  "lostWalletFoundButton": "Mo ti rí i",
+  "lostWalletFoundTitle": "Ìròyìn ayọ̀!",
+  "lostWalletFoundBody": "Àwọn káàdì wọ̀nyí ti dènà tẹ́lẹ̀, nítorí náà máa retí àwọn tuntun:",
+  "lostWalletFoundNone": "Kò sí ohun tí a tíì dènà, o lè máa bá a lọ bíi ti tẹ́lẹ̀.",
+  "lostWalletFoundUnfreeze": "Tí o bá dì àwọn káàdì nínú áàpù báǹkì rẹ, tú àwọn tí o kò dènà sílẹ̀.",
+  "lostWalletFoundConfirm": "Pa ètò náà dé",
+  "lostWalletFoundOn": "A rí i ní {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Ìròyìn àwọn ohun tó sọnù",
+  "lostWalletReportTitle": "Ìròyìn àwọn ohun tó sọnù",
+  "lostWalletReportWhen": "Ọjọ́: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ohun tó sọnù: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Nọ́mbà ẹjọ́: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Nọ́mbà ẹjọ́: kò tíì fi tó ọlọ́pàá létí",
+  "lostWalletReportCount": "{count, plural, other{Àwọn nǹkan ìsàlẹ̀: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

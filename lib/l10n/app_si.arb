@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "නව නිවසකට යනවාද? තවත් යාවත්කාලීන කළ යුතු දේ බලන්න."
+  "lifePlanSuggestMove": "නව නිවසකට යනවාද? තවත් යාවත්කාලීන කළ යුතු දේ බලන්න.",
+  "keptInTitle": "මම එය තබන තැන",
+  "keptInSubtitle": "නැති වුණොත් අවහිර කළ යුත්තේ සහ ප්‍රතිස්ථාපනය කළ යුත්තේ කුමක්දැයි දැනගැනීමට",
+  "keptInWallet": "පසුම්බිය",
+  "keptInBag": "බෑගය",
+  "keptInPhoneCase": "දුරකථන කවරය",
+  "keptInTravelPouch": "ගමන් මල්ල",
+  "keptInCar": "මෝටර් රථය",
+  "keptInHome": "නිවසේ",
+  "keptInNone": "තෝරා නැත",
+  "lostLineLabel": "නැතිවූ කාඩ්පතේ අංකය",
+  "lostLineHelper": "දැන්ම සුරකින්න. අංකය කාඩ්පතේ මුද්‍රණය කර ඇති නිසා අවශ්‍ය වූ විට ඔබ ළඟ නොතිබේ.",
+  "lifeEventWalletLost": "මගේ පසුම්බිය නැති වුණා",
+  "lifeEventWalletLostBody": "පළමුව කාඩ්පත් අවහිර කරන්න, ඉන්පසු ලේඛන එකින් එක ප්‍රතිස්ථාපනය කරන්න.",
+  "lifeEventWalletStolen": "මගේ පසුම්බිය සොරකම් කළා",
+  "lifeEventWalletStolenBody": "වහාම කාඩ්පත් අවහිර කර සොරකම වාර්තා කරන්න. ඉන්පසු වංචා සඳහා ගිණුම් නිරීක්ෂණය කරන්න.",
+  "lifeVariantWalletQuestion": "නැති වුණාද, සොරකම් කළාද?",
+  "lifeVariantLost": "නැති වුණා",
+  "lifeVariantStolen": "සොරකම් කළා",
+  "lifeTaskWalletFreezeCards": "බැංකු යෙදුමේ පහසුකම ඇත්නම් කාඩ්පත් කැටි කරන්න",
+  "lifeTaskWalletRetrace": "අවසන් වරට ගිය ස්ථානවලට කතා කර නැතිවූ භාණ්ඩ ගැන අසන්න",
+  "lifeTaskWalletFraudAlert": "ණය කාර්යාංශවලින් හෝ ඔබේ රටේ වංචා සේවයෙන් ඔබේ හැඳුනුම්පත සලකුණු කරන්නැයි ඉල්ලන්න",
+  "lifeTaskWalletStatements": "ඔබ නොකළ ගෙවීම් සඳහා බැංකු ප්‍රකාශ පරීක්ෂා කරන්න",
+  "lifeTaskWalletSubscriptions": "නව කාඩ්පත දායකත්ව සහ ස්වයංක්‍රීය ගෙවීම්වලට දමන්න",
+  "lifeTaskWalletPayApps": "නව කාඩ්පත් Google Pay හෝ Apple Pay වෙත එක් කරන්න",
+  "lifeTaskWalletHealthCard": "සෞඛ්‍ය රක්ෂණයෙන් නව සාමාජික කාඩ්පතක් ඉල්ලන්න",
+  "lifeTaskWalletTransport": "ප්‍රවාහන හෝ මාර්ග ගාස්තු කාඩ්පත අවහිර කර ශේෂය මාරු කරන්න",
+  "lifeTaskWalletLoyalty": "ලකුණු රඳවා ගැනීමට නව පක්ෂපාතීත්ව කාඩ්පත් ඉල්ලන්න",
+  "lifeTaskWalletLocks": "ඇතුළේ යතුරු හෝ ඔබේ ලිපිනය තිබුණා නම් අගුළු මාරු කිරීම ගැන සිතන්න",
+  "lifeTaskWalletInsurance": "ඔබේ රක්ෂණය පසුම්බිය සහ මුදල් ආවරණය කරනවාදැයි පරීක්ෂා කරන්න",
+  "lostWalletHeroTitle": "පසුම්බිය නැති වුණාද?",
+  "lostWalletHeroBody": "මුලින්ම අවහිර කළ යුත්තේ කුමක්ද, ප්‍රතිස්ථාපනය කළ යුත්තේ කුමක්ද, කාටද කිව යුත්තේ යන්න Vaultara පෙන්වයි.",
+  "lostWalletStartTitle": "මොකද වුණේ?",
+  "lostWalletEditTitle": "විස්තර වෙනස් කරන්න",
+  "lostWalletLostHint": "වැටුණා හෝ කොහේ හරි අමතක වුණා",
+  "lostWalletStolenHint": "කවුරුහරි ගත්තා",
+  "lostWalletWhatMissing": "නැත්තේ මොනවාද?",
+  "lostWalletStartButton": "කළ යුත්ත පෙන්වන්න",
+  "lostWalletCheckupTitle": "පසුම්බි පරීක්ෂාව",
+  "lostWalletCheckupBody": "නැති වුණොත් කිසිවක් අමතක නොවීමට දැන්ම සූදානම් වන්න.",
+  "lostWalletCheckupAllGood": "සියල්ල සූදානම්. කවදා හෝ නැති වුණොත් ඔබ සූදානම්.",
+  "lostWalletSetPlaceBody": "කාඩ්පතක් හෝ ලේඛනයක් විවෘත කර එය තබන තැන තෝරන්න. හැඳුනුම්පත, බලපත්‍රය සහ කාඩ්පත් සඳහා මෙය කරන්න.",
+  "lostWalletIssuePhotos": "{count, plural, other{ඡායාරූප නැති: {count}. ඡායාරූපයක් ඇත්නම් ප්‍රතිස්ථාපනය ඉක්මන්.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{අවහිර අංකය නැති කාඩ්පත්: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{ඔබ ළඟ ඇති ගමන් බලපත්‍ර හෝ අවසර පත්‍ර: {count}. ගමන් නොයන්නේ නම් නිවසේ තබන්න.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ඔබ රැගෙන යන දේ",
+  "lostWalletNoPhoto": "ඡායාරූපයක් නැත",
+  "lostWalletHasPhoto": "ඡායාරූපය සුරැකිණි",
+  "lostWalletNoLineShort": "අවහිර අංකයක් නැත",
+  "lostWalletHistory": "පෙර අවස්ථා",
+  "lostWalletFound": "හමු විය",
+  "walletCheckToggle": "සෑම මාස 6කට වරක් මතක් කරන්න",
+  "walletCheckToggleBody": "ලැයිස්තුව නිවැරදිව තබා ගැනීමට ඔබ රැගෙන යන දේ ඉක්මනින් බැලීම.",
+  "walletCheckReminderTitle": "පසුම්බි පරීක්ෂාව",
+  "walletCheckReminderBody": "ඔබේ පසුම්බියේ යමක් වෙනස් වුණාද? Vaultara යාවත්කාලීන කිරීමට මිනිත්තුවක් ගන්න.",
+  "lostWalletBlockNow": "මේවා දැන්ම අවහිර කරන්න",
+  "lostWalletBlockNowHint": "සෑම බැංකුවකටම කතා කරන්න හෝ එහි යෙදුම භාවිත කරන්න. සෑම මිනිත්තුවක්ම වැදගත්.",
+  "lostWalletCall": "අමතන්න",
+  "lostWalletAddLine": "අංකය එක් කරන්න",
+  "lostWalletNoLine": "අංකයක් සුරැකී නැත. බැංකුවේ යෙදුමෙන් හෝ වෙබ් අඩවියෙන් සොයන්න.",
+  "lostWalletBlocked": "අවහිරයි",
+  "lostWalletReplace": "මේවා ප්‍රතිස්ථාපනය කරන්න",
+  "lostWalletReplaceHint": "අලුත් ඒවා සඳහා අයදුම් කර ලැබුණු විට නව දිනය සුරකින්න.",
+  "lostWalletArrived": "අලුත් එක ලැබුණා",
+  "lostWalletCheck": "මේවා පරීක්ෂා කරන්න",
+  "lostWalletCheckHint": "නව කාඩ්පතක් හෝ අංකයක් අවශ්‍යදැයි අසන්න.",
+  "lostWalletPlanEmptyTitle": "එහි කිසිවක් සුරැකී නොතිබුණි",
+  "lostWalletPlanEmpty": "පහත පියවර තවමත් උදව් වේ. ඊළඟ වතාවේ කාඩ්පත් සහ ලේඛන තබන තැන තෝරන්න.",
+  "lostWalletCaseTitle": "පොලිස් නඩු අංකය",
+  "lostWalletCaseHint": "බැංකු, රක්ෂණ සමාගම් සහ කාර්යාල එය නිතර ඉල්ලයි.",
+  "lostWalletCaseLabel": "නඩු හෝ යොමු අංකය",
+  "lostWalletCaseSaved": "නඩු අංකය සුරැකිණි",
+  "lostWalletAbroadTitle": "දැන් විදේශයකද?",
+  "lostWalletAbroadBody": "ඔබ {trip} ගමනේ සිටී. ඇතුළේ ගමන් බලපත්‍රය හෝ හැඳුනුම්පත තිබුණා නම් හදිසි ගමන් ලේඛනයක් සඳහා තානාපති කාර්යාලය හෝ කොන්සල් කාර්යාලය අමතා ගමන් රක්ෂණයට දන්වන්න.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ගමන විවෘත කරන්න",
+  "lostWalletPhoneTitle": "ඔබේ දුරකථනයත් ගත්තාද?",
+  "lostWalletPhoneBody": "පළමුව SIM කාඩ්පත සහ බැංකු යෙදුම් අවහිර කරන්න. ඒ සඳහා සැලැස්මක් ඇත.",
+  "lostWalletPhoneButton": "නැතිවූ දුරකථන සැලැස්ම අරඹන්න",
+  "lostWalletStatementNote": "Vaultara දින 30, 60 සහ 90කට පසු මතක් කරයි.",
+  "lostWalletStatementTitle": "බැංකු ප්‍රකාශ පරීක්ෂා කරන්න",
+  "lostWalletStatementBody": "පසුම්බිය නැති වූ දා සිට ඔබ නොකළ ගෙවීම් සොයන්න.",
+  "lostWalletFoundButton": "මට හමු වුණා",
+  "lostWalletFoundTitle": "සුබ ආරංචියක්!",
+  "lostWalletFoundBody": "මෙම කාඩ්පත් දැනටමත් අවහිර කර ඇත, එබැවින් අලුත් ඒවා බලාපොරොත්තු වන්න:",
+  "lostWalletFoundNone": "තවම කිසිවක් අවහිර කර නැත, පෙර පරිදි ඉදිරියට යා හැක.",
+  "lostWalletFoundUnfreeze": "බැංකු යෙදුමේ කාඩ්පත් කැටි කළා නම්, අවහිර නොකළ ඒවා නැවත සක්‍රිය කරන්න.",
+  "lostWalletFoundConfirm": "සැලැස්ම වසන්න",
+  "lostWalletFoundOn": "{date} දින හමු විය",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "නැතිවූ භාණ්ඩ වාර්තාව",
+  "lostWalletReportTitle": "නැතිවූ භාණ්ඩ වාර්තාව",
+  "lostWalletReportWhen": "දිනය: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "නැත්තේ: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "නඩු අංකය: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "නඩු අංකය: තවම වාර්තා කර නැත",
+  "lostWalletReportCount": "{count, plural, other{පහත අයිතම: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

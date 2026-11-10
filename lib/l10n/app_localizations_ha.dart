@@ -7172,4 +7172,324 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Kana ƙaura zuwa sabon gida? Duba abin da kake buƙatar sabuntawa.';
+
+  @override
+  String get keptInTitle => 'Inda nake ajiye shi';
+
+  @override
+  String get keptInSubtitle => 'Don ka san abin da za ka toshe da maye gurbinsa idan ya ɓace';
+
+  @override
+  String get keptInWallet => 'Walat';
+
+  @override
+  String get keptInBag => 'Jaka';
+
+  @override
+  String get keptInPhoneCase => 'Murfin waya';
+
+  @override
+  String get keptInTravelPouch => 'Jakar tafiya';
+
+  @override
+  String get keptInCar => 'Mota';
+
+  @override
+  String get keptInHome => 'A gida';
+
+  @override
+  String get keptInNone => 'Ba a zaɓa ba';
+
+  @override
+  String get lostLineLabel => 'Lambar katin da ya ɓace';
+
+  @override
+  String get lostLineHelper => 'Ajiye ta yanzu. Lambar tana kan katin, don haka ba za ka same ta ba lokacin da kake bukata.';
+
+  @override
+  String get lifeEventWalletLost => 'Walat ɗina ya ɓace';
+
+  @override
+  String get lifeEventWalletLostBody => 'Ka toshe katunanka da farko, sannan ka maye gurbin takardunka ɗaya bayan ɗaya.';
+
+  @override
+  String get lifeEventWalletStolen => 'An sace walat ɗina';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Ka toshe katunanka nan take kuma ka kai rahoton satar. Sannan ka sa ido kan asusunka don zamba.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Ya ɓace ko an sace shi?';
+
+  @override
+  String get lifeVariantLost => 'Ya ɓace';
+
+  @override
+  String get lifeVariantStolen => 'An sace shi';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Ka daskarar da katunanka a manhajar bankinka idan tana da wannan zaɓi';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Ka kira wuraren ƙarshe da ka je kuma ka tambayi kayan da suka ɓace';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Ka roƙi ofisoshin bashi ko sabis na yaƙi da zamba na ƙasarka su yi alama a kan katin shaidarka';
+
+  @override
+  String get lifeTaskWalletStatements => 'Ka duba bayanan bankinka don biyan da ba kai ka yi ba';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Ka sa sabon katin a kan biyan kuɗin wata-wata da cire kuɗi na kai-tsaye';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Ka ƙara sabbin katunan zuwa Google Pay ko Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Ka roƙi inshorar lafiyarka sabon katin mamba';
+
+  @override
+  String get lifeTaskWalletTransport => 'Ka toshe katin sufuri ko na kuɗin hanya ka matsar da sauran kuɗin';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Ka nemi sabbin katunan aminci don ka riƙe makinka';
+
+  @override
+  String get lifeTaskWalletLocks => 'Idan akwai makullai ko adireshinka a ciki, ka yi tunanin canza makullai';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Ka duba ko inshorarka tana rufe walat da kuɗin hannu';
+
+  @override
+  String get lostWalletHeroTitle => 'Walat ɗinka ya ɓace?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara tana nuna abin da za ka toshe da farko, abin da za ka maye gurbinsa da wanda za ka sanar.';
+
+  @override
+  String get lostWalletStartTitle => 'Me ya faru?';
+
+  @override
+  String get lostWalletEditTitle => 'Canza bayanai';
+
+  @override
+  String get lostWalletLostHint => 'Ya faɗi ko na manta shi a wani wuri';
+
+  @override
+  String get lostWalletStolenHint => 'Wani ya ɗauke shi';
+
+  @override
+  String get lostWalletWhatMissing => 'Me ya ɓace?';
+
+  @override
+  String get lostWalletStartButton => 'Nuna min abin da zan yi';
+
+  @override
+  String get lostWalletCheckupTitle => 'Duba walat';
+
+  @override
+  String get lostWalletCheckupBody => 'Ka shirya yanzu, don kada a manta komai idan ya ɓace.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Komai ya shirya. Idan ya taɓa ɓacewa, kana a shirye.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Buɗe kati ko takarda ka zaɓi inda kake ajiye shi. Ka yi haka don katin shaida, lasisin tuƙi da katunanka.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Babu hoto: $count. Da hoto, maye gurbin yana da sauri.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Katunan da babu lambar katin da ya ɓace: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fasfo ko izini da kake ɗauke da su: $count. Ka bar su a gida sai dai idan kana tafiya.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Abin da kake ɗauke da shi';
+
+  @override
+  String get lostWalletNoPhoto => 'Babu hoto';
+
+  @override
+  String get lostWalletHasPhoto => 'An ajiye hoto';
+
+  @override
+  String get lostWalletNoLineShort => 'Babu lambar katin da ya ɓace';
+
+  @override
+  String get lostWalletHistory => 'Lokutan baya';
+
+  @override
+  String get lostWalletFound => 'An same shi';
+
+  @override
+  String get walletCheckToggle => 'Tunatar da ni kowane wata 6';
+
+  @override
+  String get walletCheckToggleBody => 'Saurin duba abin da kake ɗauke da shi, don jerin ya kasance daidai.';
+
+  @override
+  String get walletCheckReminderTitle => 'Duba walat';
+
+  @override
+  String get walletCheckReminderBody => 'Akwai abin da ya canza a walat ɗinka? Ka ɗauki minti ɗaya ka sabunta Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Toshe waɗannan yanzu';
+
+  @override
+  String get lostWalletBlockNowHint => 'Ka kira kowane banki ko ka yi amfani da manhajarsa. Kowane minti yana da muhimmanci.';
+
+  @override
+  String get lostWalletCall => 'Kira';
+
+  @override
+  String get lostWalletAddLine => 'Ƙara lambar';
+
+  @override
+  String get lostWalletNoLine => 'Babu lambar da aka ajiye. Nemo ta a manhaja ko shafin yanar gizo na bankinka.';
+
+  @override
+  String get lostWalletBlocked => 'An toshe';
+
+  @override
+  String get lostWalletReplace => 'Maye gurbin waɗannan';
+
+  @override
+  String get lostWalletReplaceHint => 'Nemi sababbi ka ajiye sabuwar ranar idan sun iso.';
+
+  @override
+  String get lostWalletArrived => 'Sabon ya iso';
+
+  @override
+  String get lostWalletCheck => 'Duba waɗannan';
+
+  @override
+  String get lostWalletCheckHint => 'Tambayi ko kana bukatar sabon kati ko lamba.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Babu abin da aka ajiye a wurin';
+
+  @override
+  String get lostWalletPlanEmpty => 'Matakan da ke ƙasa har yanzu suna taimakawa. Lokaci na gaba, zaɓi inda kake ajiye katunanka da takardunka.';
+
+  @override
+  String get lostWalletCaseTitle => 'Lambar ƙara ta \'yan sanda';
+
+  @override
+  String get lostWalletCaseHint => 'Bankuna, kamfanonin inshora da ofisoshi sukan nema.';
+
+  @override
+  String get lostWalletCaseLabel => 'Lambar ƙara ko ta nuni';
+
+  @override
+  String get lostWalletCaseSaved => 'An ajiye lambar ƙara';
+
+  @override
+  String get lostWalletAbroadTitle => 'Kana ƙasar waje yanzu?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Kana kan tafiyar $trip. Idan fasfo ko katin shaidarka yana ciki, tuntuɓi ofishin jakadanci ko na karamin jakadanci don takardar tafiya ta gaggawa kuma ka sanar da inshorar tafiyarka.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Buɗe tafiya';
+
+  @override
+  String get lostWalletPhoneTitle => 'An ɗauki wayarka ma?';
+
+  @override
+  String get lostWalletPhoneBody => 'Ka toshe katin SIM da manhajojin banki da farko. Akwai shiri don haka.';
+
+  @override
+  String get lostWalletPhoneButton => 'Fara shirin waya da ta ɓace';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara za ta tunatar da kai bayan kwanaki 30, 60 da 90.';
+
+  @override
+  String get lostWalletStatementTitle => 'Duba bayanan bankinka';
+
+  @override
+  String get lostWalletStatementBody => 'Nemi biyan da ba kai ka yi ba tun lokacin da walat ɗinka ya ɓace.';
+
+  @override
+  String get lostWalletFoundButton => 'Na same shi';
+
+  @override
+  String get lostWalletFoundTitle => 'Labari mai daɗi!';
+
+  @override
+  String get lostWalletFoundBody => 'An riga an toshe waɗannan katunan, don haka ka jira sababbi:';
+
+  @override
+  String get lostWalletFoundNone => 'Ba a toshe komai ba tukuna, za ka iya ci gaba kamar da.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Idan ka daskarar da katuna a manhajar banki, ka buɗe waɗanda ba ka toshe ba.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Rufe shirin';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'An same shi a $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Rahoton kayan da suka ɓace';
+
+  @override
+  String get lostWalletReportTitle => 'Rahoton kayan da suka ɓace';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Kwanan wata: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Abin da ya ɓace: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Lambar ƙara: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Lambar ƙara: ba a kai rahoto ba tukuna';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Abubuwan da ke ƙasa: $count',
+    );
+    return '$_temp0';
+  }
 }

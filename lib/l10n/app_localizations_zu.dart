@@ -7172,4 +7172,324 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Uthuthela ekhaya elisha? Bheka ukuthi yini okunye okufanele ukubuyekeze.';
+
+  @override
+  String get keptInTitle => 'Lapho ngikugcina khona';
+
+  @override
+  String get keptInSubtitle => 'Ukuze wazi okufanele ukuvimbe nokushintsha uma kulahleka';
+
+  @override
+  String get keptInWallet => 'Isikhwama semali';
+
+  @override
+  String get keptInBag => 'Isikhwama';
+
+  @override
+  String get keptInPhoneCase => 'Ikhava yefoni';
+
+  @override
+  String get keptInTravelPouch => 'Isikhwama sohambo';
+
+  @override
+  String get keptInCar => 'Imoto';
+
+  @override
+  String get keptInHome => 'Ekhaya';
+
+  @override
+  String get keptInNone => 'Akukhethiwe';
+
+  @override
+  String get lostLineLabel => 'Inombolo yekhadi elilahlekile';
+
+  @override
+  String get lostLineHelper => 'Yigcine manje. Inombolo iphrintwe ekhadini, ngakho ngeke ube nayo uma uyidinga.';
+
+  @override
+  String get lifeEventWalletLost => 'Ngilahlekelwe isikhwama sami semali';
+
+  @override
+  String get lifeEventWalletLostBody => 'Vimba amakhadi akho kuqala, bese ushintsha imibhalo yakho ngayinye ngayinye.';
+
+  @override
+  String get lifeEventWalletStolen => 'Isikhwama sami semali sebiwe';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Vimba amakhadi akho ngokushesha futhi ubike ukwebiwa. Bese uqapha ama-akhawunti akho ngenxa yokukhwabanisa.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Kulahlekile noma kwebiwe?';
+
+  @override
+  String get lifeVariantLost => 'Kulahlekile';
+
+  @override
+  String get lifeVariantStolen => 'Kwebiwe';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Misa amakhadi akho ku-app yebhange uma inalokho';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Shayela izindawo zokugcina obukade ukhona kuzo ubuze ngempahla elahlekile';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Cela amabhiro ezikweletu noma insiza yokukhwabanisa yezwe lakho ukuthi bamake i-ID yakho';
+
+  @override
+  String get lifeTaskWalletStatements => 'Hlola izitatimende zebhange ukuthola izinkokhelo ongazenzanga';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Faka ikhadi elisha kuma-subscription nama-debit order akho';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Engeza amakhadi amasha ku-Google Pay noma ku-Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Cela ikhadi elisha lobulungu kusikimu sakho sezokwelapha';
+
+  @override
+  String get lifeTaskWalletTransport => 'Vimba ikhadi lakho lezokuthutha noma lethoyili bese udlulisa imali esele';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Cela amakhadi amasha okwethembeka ukuze ugcine amaphoyinti akho';
+
+  @override
+  String get lifeTaskWalletLocks => 'Uma kwakunezikhiye noma ikheli lakho, cabanga ngokushintsha izingidi';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Hlola ukuthi umshwalense wakho uyasimboza yini isikhwama nemali';
+
+  @override
+  String get lostWalletHeroTitle => 'Ulahlekelwe isikhwama semali?';
+
+  @override
+  String get lostWalletHeroBody => 'I-Vaultara ikhombisa okufanele ukuvimbe kuqala, okufanele ukushintshe nokuthi ubani okufanele umtshele.';
+
+  @override
+  String get lostWalletStartTitle => 'Kwenzekeni?';
+
+  @override
+  String get lostWalletEditTitle => 'Shintsha imininingwane';
+
+  @override
+  String get lostWalletLostHint => 'Kuwile noma ngikukhohlwe kwenye indawo';
+
+  @override
+  String get lostWalletStolenHint => 'Kuthathwe othile';
+
+  @override
+  String get lostWalletWhatMissing => 'Yini engekho?';
+
+  @override
+  String get lostWalletStartButton => 'Ngikhombise okufanele ngikwenze';
+
+  @override
+  String get lostWalletCheckupTitle => 'Ukuhlolwa kwesikhwama semali';
+
+  @override
+  String get lostWalletCheckupBody => 'Lungiselela manje, ukuze kungakhohlwa lutho uma kulahleka.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Konke kulungile. Uma kungake kulahleke, ukulungele.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Vula ikhadi noma umbhalo bese ukhetha lapho ukugcina khona. Kwenze lokhu nge-ID, ilayisensi namakhadi akho.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okungenasithombe: $count. Ngesithombe ukushintsha kuyashesha.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amakhadi angenayo inombolo yekhadi elilahlekile: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amaphasipoti noma izimvume ozithwele: $count. Zishiye ekhaya ngaphandle uma uhamba.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Okuthwele';
+
+  @override
+  String get lostWalletNoPhoto => 'Asikho isithombe';
+
+  @override
+  String get lostWalletHasPhoto => 'Isithombe sigciniwe';
+
+  @override
+  String get lostWalletNoLineShort => 'Ayikho inombolo yekhadi elilahlekile';
+
+  @override
+  String get lostWalletHistory => 'Izikhathi zangaphambili';
+
+  @override
+  String get lostWalletFound => 'Kutholakele';
+
+  @override
+  String get walletCheckToggle => 'Ngikhumbuze njalo ezinyangeni ezi-6';
+
+  @override
+  String get walletCheckToggleBody => 'Ukubheka ngokushesha okuthwele, ukuze uhlu luhlale lulungile.';
+
+  @override
+  String get walletCheckReminderTitle => 'Ukuhlolwa kwesikhwama semali';
+
+  @override
+  String get walletCheckReminderBody => 'Ingabe kukhona okushintshile esikhwameni sakho? Thatha umzuzu ubuyekeze i-Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Vimba lokhu manje';
+
+  @override
+  String get lostWalletBlockNowHint => 'Shayela ibhange ngalinye noma usebenzise i-app yalo. Umzuzu ngamunye ubalulekile.';
+
+  @override
+  String get lostWalletCall => 'Shayela';
+
+  @override
+  String get lostWalletAddLine => 'Engeza inombolo';
+
+  @override
+  String get lostWalletNoLine => 'Ayikho inombolo egciniwe. Yithole ku-app noma kuwebhusayithi yebhange lakho.';
+
+  @override
+  String get lostWalletBlocked => 'Kuvinjiwe';
+
+  @override
+  String get lostWalletReplace => 'Shintsha lokhu';
+
+  @override
+  String get lostWalletReplaceHint => 'Faka isicelo sokusha bese ugcina usuku olusha lapho kufika.';
+
+  @override
+  String get lostWalletArrived => 'Okusha sekufikile';
+
+  @override
+  String get lostWalletCheck => 'Hlola lokhu';
+
+  @override
+  String get lostWalletCheckHint => 'Buza ukuthi udinga ikhadi elisha noma inombolo entsha yini.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Akukho okugciniwe okwakukhona lapho';
+
+  @override
+  String get lostWalletPlanEmpty => 'Izinyathelo ezingezansi zisasiza. Ngokuzayo, khetha lapho ugcina khona amakhadi nemibhalo yakho.';
+
+  @override
+  String get lostWalletCaseTitle => 'Inombolo yecala lamaphoyisa';
+
+  @override
+  String get lostWalletCaseHint => 'Amabhange, abomshwalense namahhovisi bavame ukuyicela.';
+
+  @override
+  String get lostWalletCaseLabel => 'Inombolo yecala noma yereferensi';
+
+  @override
+  String get lostWalletCaseSaved => 'Inombolo yecala igciniwe';
+
+  @override
+  String get lostWalletAbroadTitle => 'Usephesheya manje?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Usohambweni $trip. Uma iphasipoti noma i-ID yakho yayikhona, xhumana nenxusa noma i-consulate ukuze uthole umbhalo wohambo ophuthumayo, futhi wazise umshwalense wakho wohambo.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Vula uhambo';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ngabe nefoni yakho ithathiwe?';
+
+  @override
+  String get lostWalletPhoneBody => 'Vimba i-SIM card nama-app ebhange kuqala. Kukhona uhlelo lwalokho.';
+
+  @override
+  String get lostWalletPhoneButton => 'Qala uhlelo lwefoni elahlekile';
+
+  @override
+  String get lostWalletStatementNote => 'I-Vaultara izokukhumbuza ngemva kwezinsuku ezingama-30, 60 no-90.';
+
+  @override
+  String get lostWalletStatementTitle => 'Hlola izitatimende zakho zebhange';
+
+  @override
+  String get lostWalletStatementBody => 'Bheka izinkokhelo ongazenzanga kusukela isikhwama sakho silahlekile.';
+
+  @override
+  String get lostWalletFoundButton => 'Ngikutholile';
+
+  @override
+  String get lostWalletFoundTitle => 'Izindaba ezinhle!';
+
+  @override
+  String get lostWalletFoundBody => 'La makhadi asevinjiwe, ngakho qaphela amasha:';
+
+  @override
+  String get lostWalletFoundNone => 'Akukho okuvinjiwe okwamanje, ungaqhubeka njengakuqala.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Uma umise amakhadi ku-app yebhange, wavule lawo ongawavimbanga.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Vala uhlelo';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Kutholakale ngo-$date';
+  }
+
+  @override
+  String get lostWalletReport => 'Umbiko wezinto ezilahlekile';
+
+  @override
+  String get lostWalletReportTitle => 'Umbiko wezinto ezilahlekile';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Usuku: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Okungekho: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Inombolo yecala: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Inombolo yecala: akukabikwa';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izinto ezingezansi: $count',
+    );
+    return '$_temp0';
+  }
 }

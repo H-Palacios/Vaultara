@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ag bogadh go teach nua? Féach cad eile atá le nuashonrú."
+  "lifePlanSuggestMove": "Ag bogadh go teach nua? Féach cad eile atá le nuashonrú.",
+  "keptInTitle": "Cá gcoinním é",
+  "keptInSubtitle": "Le go mbeidh a fhios agat cad atá le blocáil agus le hathsholáthar má chailltear é",
+  "keptInWallet": "Sparán",
+  "keptInBag": "Mála",
+  "keptInPhoneCase": "Cumhdach fóin",
+  "keptInTravelPouch": "Púitse taistil",
+  "keptInCar": "Carr",
+  "keptInHome": "Sa bhaile",
+  "keptInNone": "Gan socrú",
+  "lostLineLabel": "Uimhir do chárta caillte",
+  "lostLineHelper": "Sábháil anois í. Tá an uimhir ar an gcárta, mar sin ní bheidh sí agat nuair a theastaíonn sí.",
+  "lifeEventWalletLost": "Chaill mé mo sparán",
+  "lifeEventWalletLostBody": "Blocáil do chártaí ar dtús, ansin athsholáthair do dhoiciméid ceann ar cheann.",
+  "lifeEventWalletStolen": "Goideadh mo sparán",
+  "lifeEventWalletStolenBody": "Blocáil do chártaí láithreach agus tuairiscigh an goid. Ansin coinnigh súil ar do chuntais ar eagla calaoise.",
+  "lifeVariantWalletQuestion": "Caillte nó goidte?",
+  "lifeVariantLost": "Caillte",
+  "lifeVariantStolen": "Goidte",
+  "lifeTaskWalletFreezeCards": "Reoigh do chártaí in aip do bhainc má cheadaíonn sí é",
+  "lifeTaskWalletRetrace": "Glaoigh ar na háiteanna deireanacha a raibh tú agus fiafraigh faoi earraí caillte",
+  "lifeTaskWalletFraudAlert": "Iarr ar na biúrónna creidmheasa nó ar sheirbhís calaoise do thíre do cháipéis aitheantais a mharcáil",
+  "lifeTaskWalletStatements": "Seiceáil do ráitis bhainc le haghaidh íocaíochtaí nach ndearna tú",
+  "lifeTaskWalletSubscriptions": "Cuir an cárta nua ar do shíntiúis agus do dhochair dhíreacha",
+  "lifeTaskWalletPayApps": "Cuir na cártaí nua le Google Pay nó Apple Pay",
+  "lifeTaskWalletHealthCard": "Iarr cárta nua ar d'árachóir sláinte",
+  "lifeTaskWalletTransport": "Blocáil do chárta taistil nó dola agus aistrigh an t-iarmhéid",
+  "lifeTaskWalletLoyalty": "Iarr cártaí dílseachta nua chun do phointí a choinneáil",
+  "lifeTaskWalletLocks": "Má bhí eochracha nó do sheoladh ann, smaoinigh ar na glais a athrú",
+  "lifeTaskWalletInsurance": "Seiceáil an gclúdaíonn d'árachas an sparán agus an t-airgead tirim",
+  "lostWalletHeroTitle": "Ar chaill tú do sparán?",
+  "lostWalletHeroBody": "Taispeánann Vaultara cad atá le blocáil ar dtús, cad atá le hathsholáthar agus cé dó a n-inseofá.",
+  "lostWalletStartTitle": "Cad a tharla?",
+  "lostWalletEditTitle": "Athraigh na sonraí",
+  "lostWalletLostHint": "Thit sé nó d'fhág mé áit éigin é",
+  "lostWalletStolenHint": "Thóg duine éigin é",
+  "lostWalletWhatMissing": "Cad atá ar iarraidh?",
+  "lostWalletStartButton": "Taispeáin dom cad atá le déanamh",
+  "lostWalletCheckupTitle": "Seiceáil sparáin",
+  "lostWalletCheckupBody": "Ullmhaigh anois, ionas nach ndéanfar dearmad ar aon rud má chailltear é.",
+  "lostWalletCheckupAllGood": "Gach rud réidh. Má chailltear é riamh, tá tú ullamh.",
+  "lostWalletSetPlaceBody": "Oscail cárta nó doiciméad agus roghnaigh cá gcoinníonn tú é. Déan é seo do do chárta aitheantais, do cheadúnas agus do chártaí.",
+  "lostWalletIssuePhotos": "{count, plural, other{Gan grianghraf: {count}. Le grianghraf is tapúla an t-athsholáthar.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Cártaí gan uimhir do chárta caillte: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasanna nó ceadúnais ort: {count}. Fág sa bhaile iad mura bhfuil tú ag taisteal.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "An méid a iompraíonn tú",
+  "lostWalletNoPhoto": "Gan grianghraf",
+  "lostWalletHasPhoto": "Grianghraf sábháilte",
+  "lostWalletNoLineShort": "Gan uimhir do chárta caillte",
+  "lostWalletHistory": "Amanna roimhe seo",
+  "lostWalletFound": "Aimsithe",
+  "walletCheckToggle": "Cuir i gcuimhne dom gach 6 mhí",
+  "walletCheckToggleBody": "Sracfhéachaint ar an méid a iompraíonn tú, ionas go mbeidh an liosta ceart.",
+  "walletCheckReminderTitle": "Seiceáil sparáin",
+  "walletCheckReminderBody": "Ar athraigh aon rud i do sparán? Caith nóiméad ag nuashonrú Vaultara.",
+  "lostWalletBlockNow": "Blocáil iad seo anois",
+  "lostWalletBlockNowHint": "Glaoigh ar gach banc nó úsáid a aip. Tá gach nóiméad tábhachtach.",
+  "lostWalletCall": "Glaoigh",
+  "lostWalletAddLine": "Cuir an uimhir leis",
+  "lostWalletNoLine": "Níl aon uimhir sábháilte. Aimsigh í in aip nó ar shuíomh do bhainc.",
+  "lostWalletBlocked": "Blocáilte",
+  "lostWalletReplace": "Athsholáthair iad seo",
+  "lostWalletReplaceHint": "Iarr cinn nua agus sábháil an dáta nua nuair a thagann siad.",
+  "lostWalletArrived": "Tháinig an ceann nua",
+  "lostWalletCheck": "Seiceáil iad seo",
+  "lostWalletCheckHint": "Fiafraigh an dteastaíonn cárta nó uimhir nua uait.",
+  "lostWalletPlanEmptyTitle": "Ní raibh aon rud sábháilte ansin",
+  "lostWalletPlanEmpty": "Cabhraíonn na céimeanna thíos fós. An chéad uair eile, roghnaigh cá gcoinníonn tú do chártaí agus doiciméid.",
+  "lostWalletCaseTitle": "Uimhir cháis na nGardaí",
+  "lostWalletCaseHint": "Is minic a iarrann bainc, árachóirí agus oifigí í.",
+  "lostWalletCaseLabel": "Uimhir cháis nó tagartha",
+  "lostWalletCaseSaved": "Uimhir cháis sábháilte",
+  "lostWalletAbroadTitle": "Thar lear anois?",
+  "lostWalletAbroadBody": "Tá tú ar an turas {trip}. Má bhí do phas nó d'aitheantas ann, déan teagmháil le d'ambasáid nó do chonsalacht le haghaidh doiciméad taistil éigeandála agus cuir d'árachóir taistil ar an eolas.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Oscail an turas",
+  "lostWalletPhoneTitle": "Ar tógadh d'fhón freisin?",
+  "lostWalletPhoneBody": "Blocáil an cárta SIM agus d'aipeanna bainc ar dtús. Tá plean ann chuige sin.",
+  "lostWalletPhoneButton": "Tosaigh plean an fhóin chaillte",
+  "lostWalletStatementNote": "Cuirfidh Vaultara i gcuimhne duit tar éis 30, 60 agus 90 lá.",
+  "lostWalletStatementTitle": "Seiceáil do ráitis bhainc",
+  "lostWalletStatementBody": "Lorg íocaíochtaí nach ndearna tú ó cailleadh do sparán.",
+  "lostWalletFoundButton": "D'aimsigh mé é",
+  "lostWalletFoundTitle": "Dea-scéala!",
+  "lostWalletFoundBody": "Tá na cártaí seo blocáilte cheana, mar sin coinnigh súil amach do na cinn nua:",
+  "lostWalletFoundNone": "Níor blocáladh aon rud fós, is féidir leat leanúint ar aghaidh mar a bhí.",
+  "lostWalletFoundUnfreeze": "Má reoigh tú cártaí in aip do bhainc, díreoigh na cinn nár bhlocáil tú.",
+  "lostWalletFoundConfirm": "Dún an plean",
+  "lostWalletFoundOn": "Aimsithe ar {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Tuarascáil earraí caillte",
+  "lostWalletReportTitle": "Tuarascáil earraí caillte",
+  "lostWalletReportWhen": "Dáta: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Cad atá ar iarraidh: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Uimhir cháis: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Uimhir cháis: gan tuairisciú fós",
+  "lostWalletReportCount": "{count, plural, other{Míreanna thíos: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

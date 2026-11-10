@@ -7172,4 +7172,324 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Új otthonba költözik? Nézze meg, mit kell még frissítenie.';
+
+  @override
+  String get keptInTitle => 'Hol tartom';
+
+  @override
+  String get keptInSubtitle => 'Hogy tudd, mit kell letiltani és pótolni, ha elveszik';
+
+  @override
+  String get keptInWallet => 'Pénztárca';
+
+  @override
+  String get keptInBag => 'Táska';
+
+  @override
+  String get keptInPhoneCase => 'Telefontok';
+
+  @override
+  String get keptInTravelPouch => 'Úti tárca';
+
+  @override
+  String get keptInCar => 'Autó';
+
+  @override
+  String get keptInHome => 'Otthon';
+
+  @override
+  String get keptInNone => 'Nincs megadva';
+
+  @override
+  String get lostLineLabel => 'Elveszett kártya letiltási száma';
+
+  @override
+  String get lostLineHelper => 'Mentsd el most. A szám a kártyán van, így nem lesz meg, amikor kell.';
+
+  @override
+  String get lifeEventWalletLost => 'Elvesztettem a pénztárcámat';
+
+  @override
+  String get lifeEventWalletLostBody => 'Először tiltsd le a kártyáidat, aztán pótold egyenként az iratokat.';
+
+  @override
+  String get lifeEventWalletStolen => 'Ellopták a pénztárcámat';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Azonnal tiltsd le a kártyáidat, és jelentsd a lopást. Utána figyeld a számláidat csalás miatt.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Elveszett vagy ellopták?';
+
+  @override
+  String get lifeVariantLost => 'Elveszett';
+
+  @override
+  String get lifeVariantStolen => 'Ellopták';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Fagyaszd be a kártyáidat a banki appban, ha tudja';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Hívd fel a legutóbbi helyeket, ahol jártál, és kérdezz a talált tárgyaknál';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Kérd meg a hitelinformációs irodákat vagy az országod csalásellenes szolgálatát, hogy jelöljék meg az igazolványodat';
+
+  @override
+  String get lifeTaskWalletStatements => 'Nézd át a bankszámlakivonatokat olyan fizetések után, amelyeket nem te indítottál';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Állítsd be az új kártyát az előfizetéseknél és csoportos beszedéseknél';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Add hozzá az új kártyákat a Google Payhez vagy az Apple Payhez';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Kérj új kártyát az egészségbiztosítódtól';
+
+  @override
+  String get lifeTaskWalletTransport => 'Tiltsd le a közlekedési vagy útdíjkártyát, és vidd át az egyenleget';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Kérj új hűségkártyákat, hogy megmaradjanak a pontjaid';
+
+  @override
+  String get lifeTaskWalletLocks => 'Ha kulcs vagy a címed is benne volt, gondold át a zárcserét';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Nézd meg, fedezi-e a biztosításod a pénztárcát és a készpénzt';
+
+  @override
+  String get lostWalletHeroTitle => 'Elvesztetted a pénztárcádat?';
+
+  @override
+  String get lostWalletHeroBody => 'A Vaultara megmutatja, mit tilts le először, mit pótolj, és kinek szólj.';
+
+  @override
+  String get lostWalletStartTitle => 'Mi történt?';
+
+  @override
+  String get lostWalletEditTitle => 'Adatok módosítása';
+
+  @override
+  String get lostWalletLostHint => 'Leesett vagy otthagytam valahol';
+
+  @override
+  String get lostWalletStolenHint => 'Valaki elvitte';
+
+  @override
+  String get lostWalletWhatMissing => 'Mi hiányzik?';
+
+  @override
+  String get lostWalletStartButton => 'Mutasd, mit tegyek';
+
+  @override
+  String get lostWalletCheckupTitle => 'Pénztárca-ellenőrzés';
+
+  @override
+  String get lostWalletCheckupBody => 'Készülj fel most, hogy semmi ne maradjon ki, ha elveszik.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Minden kész. Ha valaha elveszik, felkészültél.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Nyiss meg egy kártyát vagy iratot, és válaszd ki, hol tartod. Tedd ezt a személyi igazolványnál, a jogosítványnál és a kártyáknál.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fénykép nélkül: $count. Fényképpel gyorsabb a pótlás.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Letiltási szám nélküli kártyák: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nálad lévő útlevelek vagy engedélyek: $count. Tartsd őket otthon, ha nem utazol.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Amit magadnál tartasz';
+
+  @override
+  String get lostWalletNoPhoto => 'Nincs fénykép';
+
+  @override
+  String get lostWalletHasPhoto => 'Fénykép mentve';
+
+  @override
+  String get lostWalletNoLineShort => 'Nincs letiltási szám';
+
+  @override
+  String get lostWalletHistory => 'Korábbi esetek';
+
+  @override
+  String get lostWalletFound => 'Megtalálva';
+
+  @override
+  String get walletCheckToggle => 'Emlékeztess 6 havonta';
+
+  @override
+  String get walletCheckToggleBody => 'Egy gyors pillantás arra, ami nálad van, hogy pontos legyen a lista.';
+
+  @override
+  String get walletCheckReminderTitle => 'Pénztárca-ellenőrzés';
+
+  @override
+  String get walletCheckReminderBody => 'Változott valami a pénztárcádban? Szánj rá egy percet, és frissítsd a Vaultarát.';
+
+  @override
+  String get lostWalletBlockNow => 'Tiltsd le most';
+
+  @override
+  String get lostWalletBlockNowHint => 'Hívd fel mindegyik bankot, vagy használd az appját. Minden perc számít.';
+
+  @override
+  String get lostWalletCall => 'Hívás';
+
+  @override
+  String get lostWalletAddLine => 'Szám hozzáadása';
+
+  @override
+  String get lostWalletNoLine => 'Nincs mentett szám. Keresd meg a bank appjában vagy honlapján.';
+
+  @override
+  String get lostWalletBlocked => 'Letiltva';
+
+  @override
+  String get lostWalletReplace => 'Pótold ezeket';
+
+  @override
+  String get lostWalletReplaceHint => 'Igényelj újakat, és mentsd el az új dátumot, amikor megérkeznek.';
+
+  @override
+  String get lostWalletArrived => 'Megjött az új';
+
+  @override
+  String get lostWalletCheck => 'Ellenőrizd ezeket';
+
+  @override
+  String get lostWalletCheckHint => 'Kérdezd meg, kell-e új kártya vagy szám.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ott nem volt semmi mentve';
+
+  @override
+  String get lostWalletPlanEmpty => 'Az alábbi lépések így is segítenek. Legközelebb válaszd ki, hol tartod a kártyáidat és iratokat.';
+
+  @override
+  String get lostWalletCaseTitle => 'Rendőrségi ügyszám';
+
+  @override
+  String get lostWalletCaseHint => 'Bankok, biztosítók és hivatalok gyakran kérik.';
+
+  @override
+  String get lostWalletCaseLabel => 'Ügy- vagy hivatkozási szám';
+
+  @override
+  String get lostWalletCaseSaved => 'Ügyszám mentve';
+
+  @override
+  String get lostWalletAbroadTitle => 'Épp külföldön vagy?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Úton vagy: $trip. Ha benne volt az útleveled vagy a személyid, fordulj a nagykövetséghez vagy a konzulátushoz ideiglenes úti okmányért, és értesítsd az utasbiztosítódat.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Utazás megnyitása';
+
+  @override
+  String get lostWalletPhoneTitle => 'A telefonodat is elvitték?';
+
+  @override
+  String get lostWalletPhoneBody => 'Először tiltsd le a SIM-kártyát és a banki appokat. Erre külön terv van.';
+
+  @override
+  String get lostWalletPhoneButton => 'Elveszett telefon terv indítása';
+
+  @override
+  String get lostWalletStatementNote => 'A Vaultara 30, 60 és 90 nap után emlékeztet.';
+
+  @override
+  String get lostWalletStatementTitle => 'Nézd át a bankszámlakivonataidat';
+
+  @override
+  String get lostWalletStatementBody => 'Keress olyan fizetéseket, amelyeket a pénztárca eltűnése óta nem te indítottál.';
+
+  @override
+  String get lostWalletFoundButton => 'Megtaláltam';
+
+  @override
+  String get lostWalletFoundTitle => 'Jó hír!';
+
+  @override
+  String get lostWalletFoundBody => 'Ezek a kártyák már le vannak tiltva, figyeld az újakat:';
+
+  @override
+  String get lostWalletFoundNone => 'Még semmi sincs letiltva, folytathatod úgy, mint eddig.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Ha befagyasztottál kártyákat a banki appban, oldd fel azokat, amelyeket nem tiltottál le.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Terv lezárása';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Megtalálva: $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Elveszett tárgyak jelentése';
+
+  @override
+  String get lostWalletReportTitle => 'Elveszett tárgyak jelentése';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Dátum: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Ami hiányzik: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Ügyszám: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Ügyszám: még nincs bejelentve';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tételek alább: $count',
+    );
+    return '$_temp0';
+  }
 }

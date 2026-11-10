@@ -2287,5 +2287,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "ਨਵੇਂ ਘਰ ਜਾ ਰਹੇ ਹੋ? ਦੇਖੋ ਹੋਰ ਕੀ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ।"
+  "lifePlanSuggestMove": "ਨਵੇਂ ਘਰ ਜਾ ਰਹੇ ਹੋ? ਦੇਖੋ ਹੋਰ ਕੀ ਅੱਪਡੇਟ ਕਰਨਾ ਹੈ।",
+  "keptInTitle": "ਮੈਂ ਇਸਨੂੰ ਕਿੱਥੇ ਰੱਖਦਾ ਹਾਂ",
+  "keptInSubtitle": "ਤਾਂ ਜੋ ਗੁੰਮ ਹੋਣ ਤੇ ਪਤਾ ਹੋਵੇ ਕਿ ਕੀ ਬਲੌਕ ਕਰਨਾ ਅਤੇ ਕੀ ਬਦਲਣਾ ਹੈ",
+  "keptInWallet": "ਬਟੂਆ",
+  "keptInBag": "ਬੈਗ",
+  "keptInPhoneCase": "ਫ਼ੋਨ ਕਵਰ",
+  "keptInTravelPouch": "ਸਫ਼ਰ ਵਾਲੀ ਥੈਲੀ",
+  "keptInCar": "ਕਾਰ",
+  "keptInHome": "ਘਰ ਵਿੱਚ",
+  "keptInNone": "ਤੈਅ ਨਹੀਂ",
+  "lostLineLabel": "ਗੁੰਮ ਹੋਏ ਕਾਰਡ ਦਾ ਨੰਬਰ",
+  "lostLineHelper": "ਹੁਣੇ ਸੇਵ ਕਰੋ। ਨੰਬਰ ਕਾਰਡ ਉੱਤੇ ਛਪਿਆ ਹੁੰਦਾ ਹੈ, ਇਸ ਲਈ ਲੋੜ ਵੇਲੇ ਤੁਹਾਡੇ ਕੋਲ ਨਹੀਂ ਹੋਵੇਗਾ।",
+  "lifeEventWalletLost": "ਮੇਰਾ ਬਟੂਆ ਗੁੰਮ ਹੋ ਗਿਆ",
+  "lifeEventWalletLostBody": "ਪਹਿਲਾਂ ਆਪਣੇ ਕਾਰਡ ਬਲੌਕ ਕਰੋ, ਫਿਰ ਦਸਤਾਵੇਜ਼ ਇੱਕ-ਇੱਕ ਕਰਕੇ ਬਦਲੋ।",
+  "lifeEventWalletStolen": "ਮੇਰਾ ਬਟੂਆ ਚੋਰੀ ਹੋ ਗਿਆ",
+  "lifeEventWalletStolenBody": "ਤੁਰੰਤ ਕਾਰਡ ਬਲੌਕ ਕਰੋ ਅਤੇ ਚੋਰੀ ਦੀ ਰਿਪੋਰਟ ਕਰੋ। ਫਿਰ ਧੋਖਾਧੜੀ ਲਈ ਖਾਤਿਆਂ ਉੱਤੇ ਨਜ਼ਰ ਰੱਖੋ।",
+  "lifeVariantWalletQuestion": "ਗੁੰਮ ਹੋਇਆ ਜਾਂ ਚੋਰੀ?",
+  "lifeVariantLost": "ਗੁੰਮ ਹੋਇਆ",
+  "lifeVariantStolen": "ਚੋਰੀ ਹੋਇਆ",
+  "lifeTaskWalletFreezeCards": "ਜੇ ਬੈਂਕ ਐਪ ਵਿੱਚ ਸਹੂਲਤ ਹੈ ਤਾਂ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕਰੋ",
+  "lifeTaskWalletRetrace": "ਆਖ਼ਰੀ ਥਾਵਾਂ ਤੇ ਫ਼ੋਨ ਕਰੋ ਜਿੱਥੇ ਤੁਸੀਂ ਗਏ ਸੀ ਅਤੇ ਗੁੰਮ ਹੋਈਆਂ ਚੀਜ਼ਾਂ ਬਾਰੇ ਪੁੱਛੋ",
+  "lifeTaskWalletFraudAlert": "ਕ੍ਰੈਡਿਟ ਬਿਊਰੋ ਜਾਂ ਆਪਣੇ ਦੇਸ਼ ਦੀ ਧੋਖਾਧੜੀ ਸੇਵਾ ਨੂੰ ਤੁਹਾਡੀ ਪਛਾਣ ਤੇ ਨਿਸ਼ਾਨ ਲਗਾਉਣ ਲਈ ਕਹੋ",
+  "lifeTaskWalletStatements": "ਬੈਂਕ ਸਟੇਟਮੈਂਟ ਵਿੱਚ ਉਹ ਭੁਗਤਾਨ ਦੇਖੋ ਜੋ ਤੁਸੀਂ ਨਹੀਂ ਕੀਤੇ",
+  "lifeTaskWalletSubscriptions": "ਨਵਾਂ ਕਾਰਡ ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਅਤੇ ਆਟੋ-ਡੈਬਿਟ ਉੱਤੇ ਲਗਾਓ",
+  "lifeTaskWalletPayApps": "ਨਵੇਂ ਕਾਰਡ Google Pay ਜਾਂ Apple Pay ਵਿੱਚ ਜੋੜੋ",
+  "lifeTaskWalletHealthCard": "ਆਪਣੇ ਸਿਹਤ ਬੀਮੇ ਤੋਂ ਨਵਾਂ ਮੈਂਬਰ ਕਾਰਡ ਮੰਗੋ",
+  "lifeTaskWalletTransport": "ਟ੍ਰਾਂਸਪੋਰਟ ਜਾਂ ਟੋਲ ਕਾਰਡ ਬਲੌਕ ਕਰੋ ਅਤੇ ਬਕਾਇਆ ਤਬਦੀਲ ਕਰੋ",
+  "lifeTaskWalletLoyalty": "ਪੁਆਇੰਟ ਬਚਾਉਣ ਲਈ ਨਵੇਂ ਲੌਇਲਟੀ ਕਾਰਡ ਮੰਗੋ",
+  "lifeTaskWalletLocks": "ਜੇ ਅੰਦਰ ਚਾਬੀਆਂ ਜਾਂ ਤੁਹਾਡਾ ਪਤਾ ਸੀ ਤਾਂ ਤਾਲੇ ਬਦਲਣ ਬਾਰੇ ਸੋਚੋ",
+  "lifeTaskWalletInsurance": "ਦੇਖੋ ਕਿ ਤੁਹਾਡਾ ਬੀਮਾ ਬਟੂਏ ਅਤੇ ਨਕਦੀ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ ਜਾਂ ਨਹੀਂ",
+  "lostWalletHeroTitle": "ਬਟੂਆ ਗੁੰਮ ਹੋ ਗਿਆ?",
+  "lostWalletHeroBody": "Vaultara ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਪਹਿਲਾਂ ਕੀ ਬਲੌਕ ਕਰਨਾ, ਕੀ ਬਦਲਣਾ ਅਤੇ ਕਿਸਨੂੰ ਦੱਸਣਾ ਹੈ।",
+  "lostWalletStartTitle": "ਕੀ ਹੋਇਆ?",
+  "lostWalletEditTitle": "ਵੇਰਵੇ ਬਦਲੋ",
+  "lostWalletLostHint": "ਡਿੱਗ ਗਿਆ ਜਾਂ ਕਿਤੇ ਰਹਿ ਗਿਆ",
+  "lostWalletStolenHint": "ਕਿਸੇ ਨੇ ਲੈ ਲਿਆ",
+  "lostWalletWhatMissing": "ਕੀ ਗਾਇਬ ਹੈ?",
+  "lostWalletStartButton": "ਮੈਨੂੰ ਦੱਸੋ ਕੀ ਕਰਨਾ ਹੈ",
+  "lostWalletCheckupTitle": "ਬਟੂਏ ਦੀ ਜਾਂਚ",
+  "lostWalletCheckupBody": "ਹੁਣੇ ਤਿਆਰੀ ਕਰੋ, ਤਾਂ ਜੋ ਗੁੰਮ ਹੋਣ ਤੇ ਕੁਝ ਨਾ ਭੁੱਲੇ।",
+  "lostWalletCheckupAllGood": "ਸਭ ਤਿਆਰ ਹੈ। ਜੇ ਕਦੇ ਗੁੰਮ ਹੋਇਆ ਤਾਂ ਤੁਸੀਂ ਤਿਆਰ ਹੋ।",
+  "lostWalletSetPlaceBody": "ਕੋਈ ਕਾਰਡ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਖੋਲ੍ਹੋ ਅਤੇ ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਇਸਨੂੰ ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ। ਆਪਣੀ ਪਛਾਣ, ਲਾਇਸੈਂਸ ਅਤੇ ਕਾਰਡਾਂ ਲਈ ਇਹ ਕਰੋ।",
+  "lostWalletIssuePhotos": "{count, plural, other{ਬਿਨਾਂ ਫ਼ੋਟੋ: {count}। ਫ਼ੋਟੋ ਨਾਲ ਬਦਲਣਾ ਤੇਜ਼ ਹੁੰਦਾ ਹੈ।}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ਬਲੌਕ ਨੰਬਰ ਤੋਂ ਬਿਨਾਂ ਕਾਰਡ: {count}।}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{ਤੁਹਾਡੇ ਕੋਲ ਪਾਸਪੋਰਟ ਜਾਂ ਪਰਮਿਟ: {count}। ਸਫ਼ਰ ਨਾ ਕਰ ਰਹੇ ਹੋਵੋ ਤਾਂ ਘਰ ਰੱਖੋ।}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ਜੋ ਤੁਸੀਂ ਨਾਲ ਰੱਖਦੇ ਹੋ",
+  "lostWalletNoPhoto": "ਕੋਈ ਫ਼ੋਟੋ ਨਹੀਂ",
+  "lostWalletHasPhoto": "ਫ਼ੋਟੋ ਸੇਵ ਹੋਈ",
+  "lostWalletNoLineShort": "ਕੋਈ ਬਲੌਕ ਨੰਬਰ ਨਹੀਂ",
+  "lostWalletHistory": "ਪਿਛਲੀ ਵਾਰ",
+  "lostWalletFound": "ਮਿਲ ਗਿਆ",
+  "walletCheckToggle": "ਹਰ 6 ਮਹੀਨੇ ਯਾਦ ਕਰਾਓ",
+  "walletCheckToggleBody": "ਜੋ ਤੁਸੀਂ ਨਾਲ ਰੱਖਦੇ ਹੋ ਉਸ ਉੱਤੇ ਇੱਕ ਨਜ਼ਰ, ਤਾਂ ਜੋ ਸੂਚੀ ਸਹੀ ਰਹੇ।",
+  "walletCheckReminderTitle": "ਬਟੂਏ ਦੀ ਜਾਂਚ",
+  "walletCheckReminderBody": "ਕੀ ਤੁਹਾਡੇ ਬਟੂਏ ਵਿੱਚ ਕੁਝ ਬਦਲਿਆ ਹੈ? Vaultara ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਇੱਕ ਮਿੰਟ ਕੱਢੋ।",
+  "lostWalletBlockNow": "ਇਹ ਹੁਣੇ ਬਲੌਕ ਕਰੋ",
+  "lostWalletBlockNowHint": "ਹਰ ਬੈਂਕ ਨੂੰ ਫ਼ੋਨ ਕਰੋ ਜਾਂ ਉਸਦੀ ਐਪ ਵਰਤੋ। ਹਰ ਮਿੰਟ ਮਹੱਤਵਪੂਰਨ ਹੈ।",
+  "lostWalletCall": "ਕਾਲ ਕਰੋ",
+  "lostWalletAddLine": "ਨੰਬਰ ਜੋੜੋ",
+  "lostWalletNoLine": "ਕੋਈ ਨੰਬਰ ਸੇਵ ਨਹੀਂ। ਇਸਨੂੰ ਬੈਂਕ ਦੀ ਐਪ ਜਾਂ ਵੈੱਬਸਾਈਟ ਤੇ ਲੱਭੋ।",
+  "lostWalletBlocked": "ਬਲੌਕ ਹੋਇਆ",
+  "lostWalletReplace": "ਇਹ ਬਦਲੋ",
+  "lostWalletReplaceHint": "ਨਵਿਆਂ ਲਈ ਅਰਜ਼ੀ ਦਿਓ ਅਤੇ ਪਹੁੰਚਣ ਤੇ ਨਵੀਂ ਤਾਰੀਖ਼ ਸੇਵ ਕਰੋ।",
+  "lostWalletArrived": "ਨਵਾਂ ਆ ਗਿਆ",
+  "lostWalletCheck": "ਇਹ ਜਾਂਚੋ",
+  "lostWalletCheckHint": "ਪੁੱਛੋ ਕਿ ਕੀ ਨਵਾਂ ਕਾਰਡ ਜਾਂ ਨੰਬਰ ਚਾਹੀਦਾ ਹੈ।",
+  "lostWalletPlanEmptyTitle": "ਉੱਥੇ ਕੁਝ ਸੇਵ ਨਹੀਂ ਸੀ",
+  "lostWalletPlanEmpty": "ਹੇਠਾਂ ਦਿੱਤੇ ਕਦਮ ਫਿਰ ਵੀ ਮਦਦ ਕਰਦੇ ਹਨ। ਅਗਲੀ ਵਾਰ ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਕਾਰਡ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ।",
+  "lostWalletCaseTitle": "ਪੁਲਿਸ ਕੇਸ ਨੰਬਰ",
+  "lostWalletCaseHint": "ਬੈਂਕ, ਬੀਮਾ ਕੰਪਨੀਆਂ ਅਤੇ ਦਫ਼ਤਰ ਅਕਸਰ ਇਹ ਮੰਗਦੇ ਹਨ।",
+  "lostWalletCaseLabel": "ਕੇਸ ਜਾਂ ਹਵਾਲਾ ਨੰਬਰ",
+  "lostWalletCaseSaved": "ਕੇਸ ਨੰਬਰ ਸੇਵ ਹੋਇਆ",
+  "lostWalletAbroadTitle": "ਹੁਣ ਵਿਦੇਸ਼ ਵਿੱਚ ਹੋ?",
+  "lostWalletAbroadBody": "ਤੁਸੀਂ {trip} ਸਫ਼ਰ ਤੇ ਹੋ। ਜੇ ਅੰਦਰ ਪਾਸਪੋਰਟ ਜਾਂ ਪਛਾਣ ਪੱਤਰ ਸੀ ਤਾਂ ਐਮਰਜੈਂਸੀ ਯਾਤਰਾ ਦਸਤਾਵੇਜ਼ ਲਈ ਦੂਤਾਵਾਸ ਜਾਂ ਕੌਂਸਲੇਟ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਅਤੇ ਯਾਤਰਾ ਬੀਮੇ ਨੂੰ ਦੱਸੋ।",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ਸਫ਼ਰ ਖੋਲ੍ਹੋ",
+  "lostWalletPhoneTitle": "ਕੀ ਤੁਹਾਡਾ ਫ਼ੋਨ ਵੀ ਲੈ ਗਏ?",
+  "lostWalletPhoneBody": "ਪਹਿਲਾਂ SIM ਕਾਰਡ ਅਤੇ ਬੈਂਕਿੰਗ ਐਪਾਂ ਬਲੌਕ ਕਰੋ। ਇਸ ਲਈ ਇੱਕ ਯੋਜਨਾ ਹੈ।",
+  "lostWalletPhoneButton": "ਗੁੰਮ ਫ਼ੋਨ ਦੀ ਯੋਜਨਾ ਸ਼ੁਰੂ ਕਰੋ",
+  "lostWalletStatementNote": "Vaultara ਤੁਹਾਨੂੰ 30, 60 ਅਤੇ 90 ਦਿਨਾਂ ਬਾਅਦ ਯਾਦ ਕਰਾਏਗਾ।",
+  "lostWalletStatementTitle": "ਬੈਂਕ ਸਟੇਟਮੈਂਟ ਜਾਂਚੋ",
+  "lostWalletStatementBody": "ਬਟੂਆ ਗੁੰਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਦੇ ਉਹ ਭੁਗਤਾਨ ਲੱਭੋ ਜੋ ਤੁਸੀਂ ਨਹੀਂ ਕੀਤੇ।",
+  "lostWalletFoundButton": "ਮੈਨੂੰ ਮਿਲ ਗਿਆ",
+  "lostWalletFoundTitle": "ਚੰਗੀ ਖ਼ਬਰ!",
+  "lostWalletFoundBody": "ਇਹ ਕਾਰਡ ਪਹਿਲਾਂ ਹੀ ਬਲੌਕ ਹਨ, ਇਸ ਲਈ ਨਵਿਆਂ ਦੀ ਉਡੀਕ ਕਰੋ:",
+  "lostWalletFoundNone": "ਅਜੇ ਕੁਝ ਵੀ ਬਲੌਕ ਨਹੀਂ ਹੋਇਆ, ਤੁਸੀਂ ਪਹਿਲਾਂ ਵਾਂਗ ਜਾਰੀ ਰੱਖ ਸਕਦੇ ਹੋ।",
+  "lostWalletFoundUnfreeze": "ਜੇ ਤੁਸੀਂ ਬੈਂਕ ਐਪ ਵਿੱਚ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕੀਤੇ ਸਨ, ਤਾਂ ਜੋ ਬਲੌਕ ਨਹੀਂ ਕੀਤੇ ਉਹ ਅਨਫ੍ਰੀਜ਼ ਕਰੋ।",
+  "lostWalletFoundConfirm": "ਯੋਜਨਾ ਬੰਦ ਕਰੋ",
+  "lostWalletFoundOn": "{date} ਨੂੰ ਮਿਲਿਆ",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "ਗੁੰਮ ਚੀਜ਼ਾਂ ਦੀ ਰਿਪੋਰਟ",
+  "lostWalletReportTitle": "ਗੁੰਮ ਚੀਜ਼ਾਂ ਦੀ ਰਿਪੋਰਟ",
+  "lostWalletReportWhen": "ਤਾਰੀਖ਼: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "ਕੀ ਗਾਇਬ ਹੈ: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "ਕੇਸ ਨੰਬਰ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "ਕੇਸ ਨੰਬਰ: ਅਜੇ ਰਿਪੋਰਟ ਨਹੀਂ ਕੀਤਾ",
+  "lostWalletReportCount": "{count, plural, other{ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਚੀਜ਼ਾਂ: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

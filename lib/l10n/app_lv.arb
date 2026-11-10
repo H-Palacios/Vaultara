@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Pārceļaties uz jaunām mājām? Paskatieties, ko vēl atjaunināt."
+  "lifePlanSuggestMove": "Pārceļaties uz jaunām mājām? Paskatieties, ko vēl atjaunināt.",
+  "keptInTitle": "Kur es to glabāju",
+  "keptInSubtitle": "Lai zinātu, ko bloķēt un aizstāt, ja tas pazūd",
+  "keptInWallet": "Maks",
+  "keptInBag": "Soma",
+  "keptInPhoneCase": "Telefona vāciņš",
+  "keptInTravelPouch": "Ceļojuma somiņa",
+  "keptInCar": "Auto",
+  "keptInHome": "Mājās",
+  "keptInNone": "Nav norādīts",
+  "lostLineLabel": "Pazaudētas kartes bloķēšanas numurs",
+  "lostLineHelper": "Saglabā to tagad. Numurs ir uz kartes, tāpēc tad, kad vajadzēs, tā tev nebūs.",
+  "lifeEventWalletLost": "Es pazaudēju maku",
+  "lifeEventWalletLostBody": "Vispirms bloķē kartes, tad aizstāj dokumentus pa vienam.",
+  "lifeEventWalletStolen": "Man nozaga maku",
+  "lifeEventWalletStolenBody": "Uzreiz bloķē kartes un ziņo par zādzību. Pēc tam seko kontiem, vai nav krāpšanas.",
+  "lifeVariantWalletQuestion": "Pazaudēts vai nozagts?",
+  "lifeVariantLost": "Pazaudēts",
+  "lifeVariantStolen": "Nozagts",
+  "lifeTaskWalletFreezeCards": "Iesaldē kartes bankas lietotnē, ja tā to ļauj",
+  "lifeTaskWalletRetrace": "Piezvani uz pēdējām vietām, kur biji, un pajautā atrasto mantu birojā",
+  "lifeTaskWalletFraudAlert": "Palūdz kredītbirojiem vai savas valsts krāpšanas dienestam atzīmēt tavu dokumentu",
+  "lifeTaskWalletStatements": "Pārbaudi bankas izrakstus, vai nav maksājumu, ko neveici",
+  "lifeTaskWalletSubscriptions": "Iestati jauno karti abonementiem un tiešā debeta maksājumiem",
+  "lifeTaskWalletPayApps": "Pievieno jaunās kartes Google Pay vai Apple Pay",
+  "lifeTaskWalletHealthCard": "Palūdz veselības apdrošinātājam jaunu karti",
+  "lifeTaskWalletTransport": "Bloķē transporta vai ceļu nodevas karti un pārcel atlikumu",
+  "lifeTaskWalletLoyalty": "Palūdz jaunas lojalitātes kartes, lai saglabātu punktus",
+  "lifeTaskWalletLocks": "Ja tur bija atslēgas vai tava adrese, apsver slēdžu nomaiņu",
+  "lifeTaskWalletInsurance": "Pārbaudi, vai apdrošināšana sedz maku un skaidru naudu",
+  "lostWalletHeroTitle": "Pazaudēji maku?",
+  "lostWalletHeroBody": "Vaultara parāda, ko bloķēt vispirms, ko aizstāt un kam paziņot.",
+  "lostWalletStartTitle": "Kas notika?",
+  "lostWalletEditTitle": "Mainīt datus",
+  "lostWalletLostHint": "Izkrita vai kaut kur palika",
+  "lostWalletStolenHint": "Kāds to paņēma",
+  "lostWalletWhatMissing": "Kā trūkst?",
+  "lostWalletStartButton": "Parādi, kas jādara",
+  "lostWalletCheckupTitle": "Maka pārbaude",
+  "lostWalletCheckupBody": "Sagatavojies tagad, lai nekas netiktu aizmirsts, ja tas pazūd.",
+  "lostWalletCheckupAllGood": "Viss gatavs. Ja tas kādreiz pazudīs, tu esi sagatavojies.",
+  "lostWalletSetPlaceBody": "Atver karti vai dokumentu un izvēlies, kur to glabā. Dari to ar ID karti, vadītāja apliecību un kartēm.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bez fotoattēla: {count}. Ar fotoattēlu aizstāšana ir ātrāka.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kartes bez bloķēšanas numura: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pases vai atļaujas pie tevis: {count}. Glabā tās mājās, ja neceļo.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ko tu nēsā līdzi",
+  "lostWalletNoPhoto": "Nav fotoattēla",
+  "lostWalletHasPhoto": "Fotoattēls saglabāts",
+  "lostWalletNoLineShort": "Nav bloķēšanas numura",
+  "lostWalletHistory": "Iepriekšējās reizes",
+  "lostWalletFound": "Atrasts",
+  "walletCheckToggle": "Atgādināt ik pēc 6 mēnešiem",
+  "walletCheckToggleBody": "Ātrs skats uz to, ko nēsā līdzi, lai saraksts būtu pareizs.",
+  "walletCheckReminderTitle": "Maka pārbaude",
+  "walletCheckReminderBody": "Vai makā kaut kas ir mainījies? Velti minūti, lai atjauninātu Vaultara.",
+  "lostWalletBlockNow": "Bloķē tūlīt",
+  "lostWalletBlockNowHint": "Piezvani katrai bankai vai izmanto tās lietotni. Katra minūte ir svarīga.",
+  "lostWalletCall": "Zvanīt",
+  "lostWalletAddLine": "Pievienot numuru",
+  "lostWalletNoLine": "Numurs nav saglabāts. Atrodi to bankas lietotnē vai vietnē.",
+  "lostWalletBlocked": "Bloķēta",
+  "lostWalletReplace": "Aizstāj",
+  "lostWalletReplaceHint": "Piesakies jauniem un saglabā jauno datumu, kad tie pienāk.",
+  "lostWalletArrived": "Jaunais ir pienācis",
+  "lostWalletCheck": "Pārbaudi",
+  "lostWalletCheckHint": "Pajautā, vai vajag jaunu karti vai numuru.",
+  "lostWalletPlanEmptyTitle": "Tur nekas nebija saglabāts",
+  "lostWalletPlanEmpty": "Tālāk minētie soļi tik un tā palīdz. Nākamreiz izvēlies, kur glabā kartes un dokumentus.",
+  "lostWalletCaseTitle": "Policijas lietas numurs",
+  "lostWalletCaseHint": "Bankas, apdrošinātāji un iestādes to bieži prasa.",
+  "lostWalletCaseLabel": "Lietas vai atsauces numurs",
+  "lostWalletCaseSaved": "Lietas numurs saglabāts",
+  "lostWalletAbroadTitle": "Pašlaik ārzemēs?",
+  "lostWalletAbroadBody": "Tu esi ceļojumā {trip}. Ja tur bija pase vai ID karte, sazinies ar vēstniecību vai konsulātu par pagaidu ceļošanas dokumentu un paziņo ceļojuma apdrošinātājam.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Atvērt ceļojumu",
+  "lostWalletPhoneTitle": "Vai paņēma arī telefonu?",
+  "lostWalletPhoneBody": "Vispirms bloķē SIM karti un bankas lietotnes. Tam ir atsevišķs plāns.",
+  "lostWalletPhoneButton": "Sākt pazaudēta telefona plānu",
+  "lostWalletStatementNote": "Vaultara atgādinās pēc 30, 60 un 90 dienām.",
+  "lostWalletStatementTitle": "Pārbaudi bankas izrakstus",
+  "lostWalletStatementBody": "Meklē maksājumus, ko neveici, kopš maks pazuda.",
+  "lostWalletFoundButton": "Es to atradu",
+  "lostWalletFoundTitle": "Labas ziņas!",
+  "lostWalletFoundBody": "Šīs kartes jau ir bloķētas, tāpēc gaidi jaunās:",
+  "lostWalletFoundNone": "Vēl nekas nav bloķēts, vari turpināt kā iepriekš.",
+  "lostWalletFoundUnfreeze": "Ja iesaldēji kartes bankas lietotnē, atsaldē tās, kuras nebloķēji.",
+  "lostWalletFoundConfirm": "Aizvērt plānu",
+  "lostWalletFoundOn": "Atrasts {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Pazaudēto mantu atskaite",
+  "lostWalletReportTitle": "Pazaudēto mantu atskaite",
+  "lostWalletReportWhen": "Datums: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Kā trūkst: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Lietas numurs: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Lietas numurs: vēl nav ziņots",
+  "lostWalletReportCount": "{count, plural, other{Ieraksti zemāk: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

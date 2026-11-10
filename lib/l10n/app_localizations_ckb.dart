@@ -7172,4 +7172,324 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'دەگوازیتەوە بۆ ماڵێکی نوێ؟ بزانە چیتر پێویستە نوێ بکەیتەوە.';
+
+  @override
+  String get keptInTitle => 'لە کوێ هەڵیدەگرم';
+
+  @override
+  String get keptInSubtitle => 'بۆ ئەوەی بزانیت ئەگەر ون بوو چی ڕابگریت و چی بگۆڕیت';
+
+  @override
+  String get keptInWallet => 'جزدان';
+
+  @override
+  String get keptInBag => 'جانتا';
+
+  @override
+  String get keptInPhoneCase => 'بەرگی مۆبایل';
+
+  @override
+  String get keptInTravelPouch => 'جانتای گەشت';
+
+  @override
+  String get keptInCar => 'ئۆتۆمبێل';
+
+  @override
+  String get keptInHome => 'لە ماڵەوە';
+
+  @override
+  String get keptInNone => 'دیاری نەکراوە';
+
+  @override
+  String get lostLineLabel => 'ژمارەی ڕاگرتنی کارتی ونبوو';
+
+  @override
+  String get lostLineHelper => 'ئێستا پاشەکەوتی بکە. ژمارەکە لەسەر کارتەکە چاپ کراوە، بۆیە کاتێک پێویستت پێیەتی لات نابێت.';
+
+  @override
+  String get lifeEventWalletLost => 'جزدانەکەم ون بوو';
+
+  @override
+  String get lifeEventWalletLostBody => 'سەرەتا کارتەکانت ڕابگرە، پاشان بەڵگەنامەکانت یەک بە یەک بگۆڕە.';
+
+  @override
+  String get lifeEventWalletStolen => 'جزدانەکەم دزرا';
+
+  @override
+  String get lifeEventWalletStolenBody => 'یەکسەر کارتەکانت ڕابگرە و ڕاپۆرتی دزییەکە بدە. پاشان ئاگات لە هەژمارەکانت بێت بۆ فێڵ.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'ون بوو یان دزرا؟';
+
+  @override
+  String get lifeVariantLost => 'ون بوو';
+
+  @override
+  String get lifeVariantStolen => 'دزرا';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'ئەگەر ئەپی بانکەکەت ڕێگە دەدات، کارتەکانت تێیدا بەستە';
+
+  @override
+  String get lifeTaskWalletRetrace => 'پەیوەندی بە دوایین شوێنەکانەوە بکە کە لێی بوویت و پرسیار لە شتە ونبووەکان بکە';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'داوا لە نووسینگەکانی قەرز یان خزمەتگوزاری دژە-فێڵی وڵاتەکەت بکە ناسنامەکەت نیشانە بکەن';
+
+  @override
+  String get lifeTaskWalletStatements => 'کورتەی بانکەکەت بپشکنە بۆ پارەدانێک کە نەتکردووە';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'کارتە نوێیەکە لەسەر بەشداربوونەکان و پارەدانە خۆکارەکانت دابنێ';
+
+  @override
+  String get lifeTaskWalletPayApps => 'کارتە نوێیەکان زیاد بکە بۆ Google Pay یان Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'داوای کارتی ئەندامێتی نوێ لە بیمەی تەندروستیت بکە';
+
+  @override
+  String get lifeTaskWalletTransport => 'کارتی گواستنەوە یان باجی ڕێگا ڕابگرە و باڵانسەکە بگوازەوە';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'داوای کارتی دڵسۆزی نوێ بکە بۆ ئەوەی خاڵەکانت بمێنن';
+
+  @override
+  String get lifeTaskWalletLocks => 'ئەگەر کلیل یان ناونیشانەکەت تێیدا بوو، بیر لە گۆڕینی قوفڵەکان بکەرەوە';
+
+  @override
+  String get lifeTaskWalletInsurance => 'بپشکنە ئایا بیمەکەت جزدان و پارەی نەختینە دەگرێتەوە';
+
+  @override
+  String get lostWalletHeroTitle => 'جزدانەکەت ون بووە؟';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara پیشانی دەدات سەرەتا چی ڕابگریت، چی بگۆڕیت و بە کێ بڵێیت.';
+
+  @override
+  String get lostWalletStartTitle => 'چی ڕوویدا؟';
+
+  @override
+  String get lostWalletEditTitle => 'گۆڕینی وردەکارییەکان';
+
+  @override
+  String get lostWalletLostHint => 'کەوت یان لە شوێنێک جێم هێشت';
+
+  @override
+  String get lostWalletStolenHint => 'کەسێک بردی';
+
+  @override
+  String get lostWalletWhatMissing => 'چی ونە؟';
+
+  @override
+  String get lostWalletStartButton => 'پیشانم بدە چی بکەم';
+
+  @override
+  String get lostWalletCheckupTitle => 'پشکنینی جزدان';
+
+  @override
+  String get lostWalletCheckupBody => 'ئێستا ئامادە بە، بۆ ئەوەی ئەگەر ون بوو هیچ شتێک لەبیر نەچێت.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'هەموو شتێک ئامادەیە. ئەگەر ڕۆژێک ون بوو، ئامادەیت.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'کارتێک یان بەڵگەنامەیەک بکەرەوە و هەڵبژێرە لە کوێ هەڵیدەگریت. ئەمە بۆ ناسنامە، مۆڵەتی شۆفێری و کارتەکانت بکە.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'بێ وێنە: $count. بە وێنە گۆڕین خێراترە.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'کارتی بێ ژمارەی ڕاگرتن: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'پاسپۆرت یان مۆڵەتی پێتە: $count. ئەگەر گەشت ناکەیت لە ماڵەوە دایانبنێ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'ئەوەی پێتە';
+
+  @override
+  String get lostWalletNoPhoto => 'وێنە نییە';
+
+  @override
+  String get lostWalletHasPhoto => 'وێنە پاشەکەوت کرا';
+
+  @override
+  String get lostWalletNoLineShort => 'ژمارەی ڕاگرتن نییە';
+
+  @override
+  String get lostWalletHistory => 'جارەکانی پێشوو';
+
+  @override
+  String get lostWalletFound => 'دۆزرایەوە';
+
+  @override
+  String get walletCheckToggle => 'هەموو 6 مانگ جارێک بیرم بخەرەوە';
+
+  @override
+  String get walletCheckToggleBody => 'سەیرێکی خێرا بۆ ئەوەی پێتە، بۆ ئەوەی لیستەکە ڕاست بمێنێت.';
+
+  @override
+  String get walletCheckReminderTitle => 'پشکنینی جزدان';
+
+  @override
+  String get walletCheckReminderBody => 'هیچ شتێک لە جزدانەکەتدا گۆڕاوە؟ خولەکێک تەرخان بکە بۆ نوێکردنەوەی Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'ئێستا ئەمانە ڕابگرە';
+
+  @override
+  String get lostWalletBlockNowHint => 'پەیوەندی بە هەر بانکێکەوە بکە یان ئەپەکەی بەکاربهێنە. هەر خولەکێک گرنگە.';
+
+  @override
+  String get lostWalletCall => 'پەیوەندی';
+
+  @override
+  String get lostWalletAddLine => 'زیادکردنی ژمارە';
+
+  @override
+  String get lostWalletNoLine => 'هیچ ژمارەیەک پاشەکەوت نەکراوە. لە ئەپ یان ماڵپەڕی بانکەکەت بیدۆزەرەوە.';
+
+  @override
+  String get lostWalletBlocked => 'ڕاگیرا';
+
+  @override
+  String get lostWalletReplace => 'ئەمانە بگۆڕە';
+
+  @override
+  String get lostWalletReplaceHint => 'داوای نوێ بکە و کاتێک گەیشتن بەروارە نوێیەکە پاشەکەوت بکە.';
+
+  @override
+  String get lostWalletArrived => 'نوێیەکە گەیشت';
+
+  @override
+  String get lostWalletCheck => 'ئەمانە بپشکنە';
+
+  @override
+  String get lostWalletCheckHint => 'بپرسە ئایا کارت یان ژمارەی نوێت پێویستە.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'هیچ شتێکی پاشەکەوتکراو لەوێ نەبوو';
+
+  @override
+  String get lostWalletPlanEmpty => 'هەنگاوەکانی خوارەوە هێشتا یارمەتی دەدەن. جاری داهاتوو، هەڵبژێرە کارت و بەڵگەنامەکانت لە کوێ هەڵدەگریت.';
+
+  @override
+  String get lostWalletCaseTitle => 'ژمارەی دۆسیەی پۆلیس';
+
+  @override
+  String get lostWalletCaseHint => 'بانک و کۆمپانیای بیمە و فەرمانگەکان زۆرجار داوای دەکەن.';
+
+  @override
+  String get lostWalletCaseLabel => 'ژمارەی دۆسیە یان ئاماژە';
+
+  @override
+  String get lostWalletCaseSaved => 'ژمارەی دۆسیە پاشەکەوت کرا';
+
+  @override
+  String get lostWalletAbroadTitle => 'ئێستا لە دەرەوەی وڵاتیت؟';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'تۆ لە گەشتی $tripدایت. ئەگەر پاسپۆرت یان ناسنامەکەت تێیدا بوو، پەیوەندی بە باڵیۆزخانە یان کونسوڵخانەکەتەوە بکە بۆ بەڵگەنامەی گەشتی فریاکەوتن و ئاگاداری بیمەی گەشتەکەت بکەرەوە.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'کردنەوەی گەشت';
+
+  @override
+  String get lostWalletPhoneTitle => 'مۆبایلەکەشت برا؟';
+
+  @override
+  String get lostWalletPhoneBody => 'سەرەتا سیمکارت و ئەپەکانی بانک ڕابگرە. پلانێک بۆ ئەوە هەیە.';
+
+  @override
+  String get lostWalletPhoneButton => 'دەستپێکردنی پلانی مۆبایلی ونبوو';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara دوای 30، 60 و 90 ڕۆژ بیرت دەخاتەوە.';
+
+  @override
+  String get lostWalletStatementTitle => 'کورتەی بانکەکانت بپشکنە';
+
+  @override
+  String get lostWalletStatementBody => 'بەدوای ئەو پارەدانانەدا بگەڕێ کە لە کاتی ونبوونی جزدانەکەتەوە نەتکردوون.';
+
+  @override
+  String get lostWalletFoundButton => 'دۆزیمەوە';
+
+  @override
+  String get lostWalletFoundTitle => 'هەواڵی خۆش!';
+
+  @override
+  String get lostWalletFoundBody => 'ئەم کارتانە پێشتر ڕاگیراون، بۆیە چاوەڕوانی نوێیەکان بە:';
+
+  @override
+  String get lostWalletFoundNone => 'هێشتا هیچ شتێک ڕانەگیراوە، دەتوانیت وەک پێشوو بەردەوام بیت.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'ئەگەر کارتت لە ئەپی بانکدا بەستووە، ئەوانەی ڕاتنەگرتوون بکەرەوە.';
+
+  @override
+  String get lostWalletFoundConfirm => 'داخستنی پلان';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'لە $date دۆزرایەوە';
+  }
+
+  @override
+  String get lostWalletReport => 'ڕاپۆرتی شتە ونبووەکان';
+
+  @override
+  String get lostWalletReportTitle => 'ڕاپۆرتی شتە ونبووەکان';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'بەروار: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'چی ونە: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'ژمارەی دۆسیە: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'ژمارەی دۆسیە: هێشتا ڕاپۆرت نەدراوە';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'بڕگەکانی خوارەوە: $count',
+    );
+    return '$_temp0';
+  }
 }

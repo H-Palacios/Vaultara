@@ -7172,4 +7172,324 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Yeni bir eve mi taşınıyorsunuz? Başka neyi güncellemeniz gerektiğine bakın.';
+
+  @override
+  String get keptInTitle => 'Nerede tutuyorum';
+
+  @override
+  String get keptInSubtitle => 'Kaybolursa neyi engelleyip neyi yenileyeceğini bilmen için';
+
+  @override
+  String get keptInWallet => 'Cüzdan';
+
+  @override
+  String get keptInBag => 'Çanta';
+
+  @override
+  String get keptInPhoneCase => 'Telefon kılıfı';
+
+  @override
+  String get keptInTravelPouch => 'Seyahat kesesi';
+
+  @override
+  String get keptInCar => 'Araba';
+
+  @override
+  String get keptInHome => 'Evde';
+
+  @override
+  String get keptInNone => 'Belirtilmedi';
+
+  @override
+  String get lostLineLabel => 'Kayıp kart telefon numarası';
+
+  @override
+  String get lostLineHelper => 'Şimdi kaydet. Numara kartın üzerinde yazar, yani gerektiğinde elinde olmaz.';
+
+  @override
+  String get lifeEventWalletLost => 'Cüzdanımı kaybettim';
+
+  @override
+  String get lifeEventWalletLostBody => 'Önce kartlarını kapat, sonra belgelerini tek tek yenile.';
+
+  @override
+  String get lifeEventWalletStolen => 'Cüzdanım çalındı';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Kartlarını hemen kapat ve hırsızlığı bildir. Sonra hesaplarını dolandırıcılığa karşı izle.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Kayıp mı, çalıntı mı?';
+
+  @override
+  String get lifeVariantLost => 'Kayıp';
+
+  @override
+  String get lifeVariantStolen => 'Çalıntı';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Banka uygulamanda dondurma seçeneği varsa kartlarını dondur';
+
+  @override
+  String get lifeTaskWalletRetrace => 'En son bulunduğun yerleri ara ve kayıp eşya bürosuna sor';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Kredi bürolarından veya ülkenin dolandırıcılık servisinden kimliğini işaretlemelerini iste';
+
+  @override
+  String get lifeTaskWalletStatements => 'Banka ekstrelerinde yapmadığın ödemeleri kontrol et';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Yeni kartı aboneliklerine ve otomatik ödemelerine tanımla';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Yeni kartları Google Pay veya Apple Pay\'e ekle';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Sağlık sigortandan yeni bir üye kartı iste';
+
+  @override
+  String get lifeTaskWalletTransport => 'Ulaşım veya geçiş kartını kapat ve bakiyeyi aktar';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Puanlarını korumak için yeni sadakat kartları iste';
+
+  @override
+  String get lifeTaskWalletLocks => 'İçinde anahtar veya adresin varsa kilitleri değiştirmeyi düşün';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Sigortanın cüzdanı ve nakit parayı karşılayıp karşılamadığını kontrol et';
+
+  @override
+  String get lostWalletHeroTitle => 'Cüzdanını mı kaybettin?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara önce neyi kapatacağını, neyi yenileyeceğini ve kime haber vereceğini gösterir.';
+
+  @override
+  String get lostWalletStartTitle => 'Ne oldu?';
+
+  @override
+  String get lostWalletEditTitle => 'Bilgileri değiştir';
+
+  @override
+  String get lostWalletLostHint => 'Düşürdüm veya bir yerde unuttum';
+
+  @override
+  String get lostWalletStolenHint => 'Biri aldı';
+
+  @override
+  String get lostWalletWhatMissing => 'Ne eksik?';
+
+  @override
+  String get lostWalletStartButton => 'Ne yapacağımı göster';
+
+  @override
+  String get lostWalletCheckupTitle => 'Cüzdan kontrolü';
+
+  @override
+  String get lostWalletCheckupBody => 'Şimdi hazırlan, kaybolursa hiçbir şey unutulmasın.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Her şey hazır. Bir gün kaybolursa hazırsın.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Bir kart veya belge aç ve nerede tuttuğunu seç. Bunu kimliğin, ehliyetin ve kartların için yap.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fotoğrafı olmayan: $count. Fotoğrafla yenilemek daha hızlıdır.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kayıp kart numarası olmayan kart: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Üzerindeki pasaport veya izin belgesi: $count. Seyahat etmiyorsan evde bırak.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Üzerinde taşıdıkların';
+
+  @override
+  String get lostWalletNoPhoto => 'Fotoğraf yok';
+
+  @override
+  String get lostWalletHasPhoto => 'Fotoğraf kaydedildi';
+
+  @override
+  String get lostWalletNoLineShort => 'Kayıp kart numarası yok';
+
+  @override
+  String get lostWalletHistory => 'Önceki seferler';
+
+  @override
+  String get lostWalletFound => 'Bulundu';
+
+  @override
+  String get walletCheckToggle => 'Her 6 ayda bir hatırlat';
+
+  @override
+  String get walletCheckToggleBody => 'Taşıdıklarına hızlı bir bakış, liste doğru kalsın diye.';
+
+  @override
+  String get walletCheckReminderTitle => 'Cüzdan kontrolü';
+
+  @override
+  String get walletCheckReminderBody => 'Cüzdanında bir şey değişti mi? Vaultara\'yı güncellemek için bir dakika ayır.';
+
+  @override
+  String get lostWalletBlockNow => 'Bunları şimdi kapat';
+
+  @override
+  String get lostWalletBlockNowHint => 'Her bankayı ara veya uygulamasını kullan. Her dakika önemli.';
+
+  @override
+  String get lostWalletCall => 'Ara';
+
+  @override
+  String get lostWalletAddLine => 'Numara ekle';
+
+  @override
+  String get lostWalletNoLine => 'Kayıtlı numara yok. Bankanın uygulamasında veya web sitesinde bul.';
+
+  @override
+  String get lostWalletBlocked => 'Kapatıldı';
+
+  @override
+  String get lostWalletReplace => 'Bunları yenile';
+
+  @override
+  String get lostWalletReplaceHint => 'Yenilerine başvur ve geldiklerinde yeni tarihi kaydet.';
+
+  @override
+  String get lostWalletArrived => 'Yenisi geldi';
+
+  @override
+  String get lostWalletCheck => 'Bunları kontrol et';
+
+  @override
+  String get lostWalletCheckHint => 'Yeni bir kart veya numara gerekip gerekmediğini sor.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Orada kayıtlı bir şey yoktu';
+
+  @override
+  String get lostWalletPlanEmpty => 'Aşağıdaki adımlar yine de yardımcı olur. Bir dahaki sefere kartlarını ve belgelerini nerede tuttuğunu seç.';
+
+  @override
+  String get lostWalletCaseTitle => 'Polis dosya numarası';
+
+  @override
+  String get lostWalletCaseHint => 'Bankalar, sigortacılar ve kurumlar sık sık ister.';
+
+  @override
+  String get lostWalletCaseLabel => 'Dosya veya referans numarası';
+
+  @override
+  String get lostWalletCaseSaved => 'Dosya numarası kaydedildi';
+
+  @override
+  String get lostWalletAbroadTitle => 'Şu an yurt dışında mısın?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return '$trip seyahatindesin. İçinde pasaportun veya kimliğin varsa acil seyahat belgesi için büyükelçiliğe veya konsolosluğa başvur ve seyahat sigortana haber ver.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Seyahati aç';
+
+  @override
+  String get lostWalletPhoneTitle => 'Telefonun da mı alındı?';
+
+  @override
+  String get lostWalletPhoneBody => 'Önce SIM kartını ve banka uygulamalarını kapat. Bunun için bir plan var.';
+
+  @override
+  String get lostWalletPhoneButton => 'Kayıp telefon planını başlat';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 30, 60 ve 90 gün sonra hatırlatır.';
+
+  @override
+  String get lostWalletStatementTitle => 'Banka ekstrelerini kontrol et';
+
+  @override
+  String get lostWalletStatementBody => 'Cüzdanın kaybolduğundan beri yapmadığın ödemelere bak.';
+
+  @override
+  String get lostWalletFoundButton => 'Buldum';
+
+  @override
+  String get lostWalletFoundTitle => 'Güzel haber!';
+
+  @override
+  String get lostWalletFoundBody => 'Bu kartlar zaten kapatıldı, yenilerini bekle:';
+
+  @override
+  String get lostWalletFoundNone => 'Henüz hiçbir şey kapatılmadı, eskisi gibi devam edebilirsin.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Banka uygulamasında kart dondurduysan, kapatmadıklarının dondurmasını kaldır.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Planı kapat';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '$date tarihinde bulundu';
+  }
+
+  @override
+  String get lostWalletReport => 'Kayıp eşya raporu';
+
+  @override
+  String get lostWalletReportTitle => 'Kayıp eşya raporu';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Tarih: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Eksik olanlar: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Dosya numarası: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Dosya numarası: henüz bildirilmedi';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aşağıdaki öğe sayısı: $count',
+    );
+    return '$_temp0';
+  }
 }

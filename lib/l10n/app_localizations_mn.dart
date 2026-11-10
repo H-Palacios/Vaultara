@@ -7162,4 +7162,324 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Шинэ гэрт нүүж байна уу? Өөр юуг шинэчлэх хэрэгтэйг хараарай.';
+
+  @override
+  String get keptInTitle => 'Би үүнийг хаана хадгалдаг';
+
+  @override
+  String get keptInSubtitle => 'Алдвал юуг хааж, юуг солихоо мэдэхийн тулд';
+
+  @override
+  String get keptInWallet => 'Түрийвч';
+
+  @override
+  String get keptInBag => 'Цүнх';
+
+  @override
+  String get keptInPhoneCase => 'Утасны гэр';
+
+  @override
+  String get keptInTravelPouch => 'Аяллын уут';
+
+  @override
+  String get keptInCar => 'Машин';
+
+  @override
+  String get keptInHome => 'Гэртээ';
+
+  @override
+  String get keptInNone => 'Сонгоогүй';
+
+  @override
+  String get lostLineLabel => 'Алдагдсан картын дугаар';
+
+  @override
+  String get lostLineHelper => 'Одоо хадгална уу. Дугаар нь карт дээр хэвлэгдсэн тул хэрэгтэй үед танд байхгүй.';
+
+  @override
+  String get lifeEventWalletLost => 'Түрийвчээ алдсан';
+
+  @override
+  String get lifeEventWalletLostBody => 'Эхлээд картуудаа хааж, дараа нь баримт бичгээ нэг нэгээр нь солино уу.';
+
+  @override
+  String get lifeEventWalletStolen => 'Түрийвчийг минь хулгайлсан';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Картуудаа даруй хааж, хулгайн талаар мэдэгдээрэй. Дараа нь залилангаас сэргийлж дансаа хянаарай.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Алдсан уу, хулгайлагдсан уу?';
+
+  @override
+  String get lifeVariantLost => 'Алдсан';
+
+  @override
+  String get lifeVariantStolen => 'Хулгайлагдсан';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Банкны апп боломжтой бол картуудаа түр хаа';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Сүүлд очсон газруудаа залгаж, гээгдсэн эд зүйлсийн талаар асуу';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Зээлийн товчоо эсвэл улсынхаа залилангийн эсрэг үйлчилгээнээс иргэний үнэмлэхээ тэмдэглүүлэхийг хүс';
+
+  @override
+  String get lifeTaskWalletStatements => 'Хийгээгүй төлбөр байгаа эсэхийг банкны хуулгаас шалга';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Шинэ картаа захиалга болон автомат төлбөрт холбо';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Шинэ картуудаа Google Pay эсвэл Apple Pay-д нэм';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Эрүүл мэндийн даатгалаасаа шинэ гишүүний карт хүс';
+
+  @override
+  String get lifeTaskWalletTransport => 'Тээврийн эсвэл замын төлбөрийн картаа хааж, үлдэгдлийг шилжүүл';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Оноогоо хадгалахын тулд шинэ урамшууллын карт хүс';
+
+  @override
+  String get lifeTaskWalletLocks => 'Дотор нь түлхүүр эсвэл хаяг чинь байсан бол цоож солих талаар бод';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Даатгал чинь түрийвч болон бэлэн мөнгийг нөхөх эсэхийг шалга';
+
+  @override
+  String get lostWalletHeroTitle => 'Түрийвчээ алдсан уу?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara эхлээд юуг хаах, юуг солих, хэнд мэдэгдэхийг харуулна.';
+
+  @override
+  String get lostWalletStartTitle => 'Юу болсон бэ?';
+
+  @override
+  String get lostWalletEditTitle => 'Дэлгэрэнгүйг өөрчлөх';
+
+  @override
+  String get lostWalletLostHint => 'Унасан эсвэл хаа нэгтээ мартсан';
+
+  @override
+  String get lostWalletStolenHint => 'Хэн нэгэн авсан';
+
+  @override
+  String get lostWalletWhatMissing => 'Юу алга?';
+
+  @override
+  String get lostWalletStartButton => 'Юу хийхийг харуул';
+
+  @override
+  String get lostWalletCheckupTitle => 'Түрийвчний шалгалт';
+
+  @override
+  String get lostWalletCheckupBody => 'Алдвал юу ч мартагдахгүйн тулд одооноос бэлдээрэй.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Бүгд бэлэн. Хэзээ нэгэн цагт алдвал та бэлэн.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Карт эсвэл баримт бичгээ нээж, хаана хадгалдгаа сонгоно уу. Үүнийг иргэний үнэмлэх, жолооны үнэмлэх, картууддаа хий.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Зураггүй: $count. Зурагтай бол солиход хурдан.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Хаах дугааргүй картууд: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Биедээ авч явдаг паспорт эсвэл зөвшөөрөл: $count. Аялахгүй бол гэртээ үлдээгээрэй.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Таны авч явдаг зүйлс';
+
+  @override
+  String get lostWalletNoPhoto => 'Зураг алга';
+
+  @override
+  String get lostWalletHasPhoto => 'Зураг хадгалагдсан';
+
+  @override
+  String get lostWalletNoLineShort => 'Хаах дугаар алга';
+
+  @override
+  String get lostWalletHistory => 'Өмнөх тохиолдлууд';
+
+  @override
+  String get lostWalletFound => 'Олдсон';
+
+  @override
+  String get walletCheckToggle => '6 сар тутам сануул';
+
+  @override
+  String get walletCheckToggleBody => 'Жагсаалт зөв байхын тулд авч явдаг зүйлсээ хурдан харах.';
+
+  @override
+  String get walletCheckReminderTitle => 'Түрийвчний шалгалт';
+
+  @override
+  String get walletCheckReminderBody => 'Түрийвчинд тань өөрчлөлт гарсан уу? Vaultara-г шинэчлэхэд нэг минут гаргаарай.';
+
+  @override
+  String get lostWalletBlockNow => 'Эдгээрийг одоо хаа';
+
+  @override
+  String get lostWalletBlockNowHint => 'Банк бүр рүү залгах эсвэл аппыг нь ашигла. Минут бүр чухал.';
+
+  @override
+  String get lostWalletCall => 'Залгах';
+
+  @override
+  String get lostWalletAddLine => 'Дугаар нэмэх';
+
+  @override
+  String get lostWalletNoLine => 'Дугаар хадгалагдаагүй. Банкныхаа апп эсвэл вэбсайтаас олоорой.';
+
+  @override
+  String get lostWalletBlocked => 'Хаагдсан';
+
+  @override
+  String get lostWalletReplace => 'Эдгээрийг соль';
+
+  @override
+  String get lostWalletReplaceHint => 'Шинээр хүсэлт гаргаж, ирэхэд шинэ огноог хадгал.';
+
+  @override
+  String get lostWalletArrived => 'Шинэ нь ирсэн';
+
+  @override
+  String get lostWalletCheck => 'Эдгээрийг шалга';
+
+  @override
+  String get lostWalletCheckHint => 'Шинэ карт эсвэл дугаар хэрэгтэй эсэхийг асуу.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Тэнд хадгалсан юм байгаагүй';
+
+  @override
+  String get lostWalletPlanEmpty => 'Доорх алхмууд одоо ч тус болно. Дараагийн удаа карт, баримт бичгээ хаана хадгалдгаа сонгоорой.';
+
+  @override
+  String get lostWalletCaseTitle => 'Цагдаагийн хэргийн дугаар';
+
+  @override
+  String get lostWalletCaseHint => 'Банк, даатгалын компани, байгууллагууд үүнийг ихэвчлэн асуудаг.';
+
+  @override
+  String get lostWalletCaseLabel => 'Хэргийн эсвэл лавлагааны дугаар';
+
+  @override
+  String get lostWalletCaseSaved => 'Хэргийн дугаар хадгалагдсан';
+
+  @override
+  String get lostWalletAbroadTitle => 'Одоо гадаадад байна уу?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Та $trip аялалд байна. Дотор нь паспорт эсвэл иргэний үнэмлэх байсан бол яаралтай аяллын бичиг баримтын төлөө элчин сайдын яам эсвэл консулын газартай холбогдож, аяллын даатгалдаа мэдэгдээрэй.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Аяллыг нээх';
+
+  @override
+  String get lostWalletPhoneTitle => 'Утсыг чинь бас авсан уу?';
+
+  @override
+  String get lostWalletPhoneBody => 'Эхлээд SIM карт болон банкны аппуудыг хаа. Үүнд зориулсан төлөвлөгөө бий.';
+
+  @override
+  String get lostWalletPhoneButton => 'Алдсан утасны төлөвлөгөө эхлүүлэх';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara 30, 60, 90 хоногийн дараа сануулна.';
+
+  @override
+  String get lostWalletStatementTitle => 'Банкны хуулгаа шалга';
+
+  @override
+  String get lostWalletStatementBody => 'Түрийвч алдагдсанаас хойш хийгээгүй төлбөрүүдийг хай.';
+
+  @override
+  String get lostWalletFoundButton => 'Олчихлоо';
+
+  @override
+  String get lostWalletFoundTitle => 'Сайн мэдээ!';
+
+  @override
+  String get lostWalletFoundBody => 'Эдгээр картууд аль хэдийн хаагдсан тул шинийг нь хүлээгээрэй:';
+
+  @override
+  String get lostWalletFoundNone => 'Одоогоор юу ч хаагдаагүй, өмнөх шигээ үргэлжлүүлж болно.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Банкны аппад картуудаа түр хаасан бол хаагаагүйг нь нээгээрэй.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Төлөвлөгөөг хаах';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '$date-нд олдсон';
+  }
+
+  @override
+  String get lostWalletReport => 'Алдагдсан эд зүйлсийн тайлан';
+
+  @override
+  String get lostWalletReportTitle => 'Алдагдсан эд зүйлсийн тайлан';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Огноо: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Юу алга: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Хэргийн дугаар: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Хэргийн дугаар: одоогоор мэдэгдээгүй';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Доорх зүйлс: $count',
+    );
+    return '$_temp0';
+  }
 }

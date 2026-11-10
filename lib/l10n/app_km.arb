@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "កំពុងផ្លាស់ទៅផ្ទះថ្មី? មើលអ្វីផ្សេងទៀតដែលត្រូវធ្វើបច្ចុប្បន្នភាព។"
+  "lifePlanSuggestMove": "កំពុងផ្លាស់ទៅផ្ទះថ្មី? មើលអ្វីផ្សេងទៀតដែលត្រូវធ្វើបច្ចុប្បន្នភាព។",
+  "keptInTitle": "កន្លែងដែលខ្ញុំទុក",
+  "keptInSubtitle": "ដើម្បីដឹងថាត្រូវបិទ និងប្តូរអ្វីប្រសិនបើបាត់",
+  "keptInWallet": "កាបូបលុយ",
+  "keptInBag": "កាបូប",
+  "keptInPhoneCase": "គម្របទូរស័ព្ទ",
+  "keptInTravelPouch": "កាបូបធ្វើដំណើរ",
+  "keptInCar": "ឡាន",
+  "keptInHome": "នៅផ្ទះ",
+  "keptInNone": "មិនទាន់កំណត់",
+  "lostLineLabel": "លេខសម្រាប់កាតបាត់",
+  "lostLineHelper": "រក្សាទុកឥឡូវនេះ។ លេខបោះពុម្ពលើកាត ដូច្នេះអ្នកនឹងគ្មានវាពេលត្រូវការ។",
+  "lifeEventWalletLost": "កាបូបលុយខ្ញុំបាត់",
+  "lifeEventWalletLostBody": "បិទកាតរបស់អ្នកជាមុន បន្ទាប់មកប្តូរឯកសារម្តងមួយៗ។",
+  "lifeEventWalletStolen": "កាបូបលុយខ្ញុំត្រូវគេលួច",
+  "lifeEventWalletStolenBody": "បិទកាតភ្លាមៗ ហើយរាយការណ៍ពីការលួច។ បន្ទាប់មកតាមដានគណនីដើម្បីការពារការបោកប្រាស់។",
+  "lifeVariantWalletQuestion": "បាត់ ឬត្រូវគេលួច?",
+  "lifeVariantLost": "បាត់",
+  "lifeVariantStolen": "ត្រូវគេលួច",
+  "lifeTaskWalletFreezeCards": "បង្កកកាតក្នុងកម្មវិធីធនាគារ ប្រសិនបើអាចធ្វើបាន",
+  "lifeTaskWalletRetrace": "ទូរស័ព្ទទៅកន្លែងចុងក្រោយដែលអ្នកបានទៅ ហើយសួររកវត្ថុបាត់",
+  "lifeTaskWalletFraudAlert": "ស្នើការិយាល័យឥណទាន ឬសេវាប្រឆាំងការបោកប្រាស់នៃប្រទេសអ្នកឱ្យសម្គាល់អត្តសញ្ញាណប័ណ្ណរបស់អ្នក",
+  "lifeTaskWalletStatements": "ពិនិត្យរបាយការណ៍ធនាគាររកការបង់ប្រាក់ដែលអ្នកមិនបានធ្វើ",
+  "lifeTaskWalletSubscriptions": "ដាក់កាតថ្មីលើការជាវ និងការដកប្រាក់ស្វ័យប្រវត្តិ",
+  "lifeTaskWalletPayApps": "បន្ថែមកាតថ្មីទៅ Google Pay ឬ Apple Pay",
+  "lifeTaskWalletHealthCard": "ស្នើកាតសមាជិកថ្មីពីធានារ៉ាប់រងសុខភាព",
+  "lifeTaskWalletTransport": "បិទកាតដឹកជញ្ជូន ឬកាតបង់ថ្លៃផ្លូវ ហើយផ្ទេរសមតុល្យ",
+  "lifeTaskWalletLoyalty": "ស្នើកាតភក្តីភាពថ្មីដើម្បីរក្សាពិន្ទុ",
+  "lifeTaskWalletLocks": "ប្រសិនបើមានសោ ឬអាសយដ្ឋានរបស់អ្នកនៅខាងក្នុង គិតអំពីការប្តូរសោ",
+  "lifeTaskWalletInsurance": "ពិនិត្យថាតើធានារ៉ាប់រងរបស់អ្នកគ្របដណ្តប់កាបូប និងសាច់ប្រាក់ឬទេ",
+  "lostWalletHeroTitle": "កាបូបលុយបាត់មែនទេ?",
+  "lostWalletHeroBody": "Vaultara បង្ហាញថាត្រូវបិទអ្វីមុន ប្តូរអ្វី និងប្រាប់អ្នកណា។",
+  "lostWalletStartTitle": "មានរឿងអ្វីកើតឡើង?",
+  "lostWalletEditTitle": "ប្តូរព័ត៌មានលម្អិត",
+  "lostWalletLostHint": "ធ្លាក់ ឬភ្លេចទុកនៅកន្លែងណាមួយ",
+  "lostWalletStolenHint": "មាននរណាម្នាក់យកទៅ",
+  "lostWalletWhatMissing": "តើអ្វីបាត់?",
+  "lostWalletStartButton": "បង្ហាញខ្ញុំពីអ្វីដែលត្រូវធ្វើ",
+  "lostWalletCheckupTitle": "ការពិនិត្យកាបូប",
+  "lostWalletCheckupBody": "ត្រៀមខ្លួនឥឡូវនេះ ដើម្បីកុំឱ្យភ្លេចអ្វីប្រសិនបើបាត់។",
+  "lostWalletCheckupAllGood": "រួចរាល់ហើយ។ ប្រសិនបើបាត់ថ្ងៃណាមួយ អ្នកបានត្រៀមខ្លួន។",
+  "lostWalletSetPlaceBody": "បើកកាត ឬឯកសារ ហើយជ្រើសរើសកន្លែងដែលអ្នកទុក។ ធ្វើបែបនេះសម្រាប់អត្តសញ្ញាណប័ណ្ណ ប័ណ្ណបើកបរ និងកាត។",
+  "lostWalletIssuePhotos": "{count, plural, other{គ្មានរូបថត: {count}។ មានរូបថតធ្វើឱ្យប្តូរបានលឿន។}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{កាតគ្មានលេខបិទ: {count}។}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{លិខិតឆ្លងដែន ឬលិខិតអនុញ្ញាតដែលអ្នកយកតាម: {count}។ ទុកនៅផ្ទះ លុះត្រាតែធ្វើដំណើរ។}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "អ្វីដែលអ្នកយកតាមខ្លួន",
+  "lostWalletNoPhoto": "គ្មានរូបថត",
+  "lostWalletHasPhoto": "បានរក្សាទុករូបថត",
+  "lostWalletNoLineShort": "គ្មានលេខបិទ",
+  "lostWalletHistory": "ពេលមុនៗ",
+  "lostWalletFound": "បានរកឃើញ",
+  "walletCheckToggle": "រំលឹកខ្ញុំរៀងរាល់ 6 ខែ",
+  "walletCheckToggleBody": "មើលរហ័សលើអ្វីដែលអ្នកយកតាម ដើម្បីឱ្យបញ្ជីត្រឹមត្រូវ។",
+  "walletCheckReminderTitle": "ការពិនិត្យកាបូប",
+  "walletCheckReminderBody": "មានអ្វីផ្លាស់ប្តូរក្នុងកាបូបរបស់អ្នកទេ? ចំណាយមួយនាទីដើម្បីធ្វើបច្ចុប្បន្នភាព Vaultara។",
+  "lostWalletBlockNow": "បិទទាំងនេះឥឡូវ",
+  "lostWalletBlockNowHint": "ទូរស័ព្ទទៅធនាគារនីមួយៗ ឬប្រើកម្មវិធីរបស់វា។ រាល់នាទីសំខាន់។",
+  "lostWalletCall": "ហៅ",
+  "lostWalletAddLine": "បន្ថែមលេខ",
+  "lostWalletNoLine": "គ្មានលេខបានរក្សាទុក។ រកវានៅក្នុងកម្មវិធី ឬគេហទំព័រធនាគារ។",
+  "lostWalletBlocked": "បានបិទ",
+  "lostWalletReplace": "ប្តូរទាំងនេះ",
+  "lostWalletReplaceHint": "ដាក់ពាក្យសុំថ្មី ហើយរក្សាទុកកាលបរិច្ឆេទថ្មីពេលមកដល់។",
+  "lostWalletArrived": "ថ្មីបានមកដល់",
+  "lostWalletCheck": "ពិនិត្យទាំងនេះ",
+  "lostWalletCheckHint": "សួរថាតើអ្នកត្រូវការកាត ឬលេខថ្មីឬទេ។",
+  "lostWalletPlanEmptyTitle": "គ្មានអ្វីបានរក្សាទុកនៅទីនោះ",
+  "lostWalletPlanEmpty": "ជំហានខាងក្រោមនៅតែជួយបាន។ ពេលក្រោយ ជ្រើសរើសកន្លែងដែលអ្នកទុកកាត និងឯកសារ។",
+  "lostWalletCaseTitle": "លេខករណីប៉ូលីស",
+  "lostWalletCaseHint": "ធនាគារ ក្រុមហ៊ុនធានារ៉ាប់រង និងការិយាល័យតែងតែស្នើលេខនេះ។",
+  "lostWalletCaseLabel": "លេខករណី ឬលេខយោង",
+  "lostWalletCaseSaved": "បានរក្សាទុកលេខករណី",
+  "lostWalletAbroadTitle": "កំពុងនៅបរទេសមែនទេ?",
+  "lostWalletAbroadBody": "អ្នកកំពុងធ្វើដំណើរ {trip}។ ប្រសិនបើលិខិតឆ្លងដែន ឬអត្តសញ្ញាណប័ណ្ណនៅខាងក្នុង ទាក់ទងស្ថានទូត ឬកុងស៊ុលសម្រាប់ឯកសារធ្វើដំណើរបន្ទាន់ ហើយប្រាប់ធានារ៉ាប់រងធ្វើដំណើរ។",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "បើកការធ្វើដំណើរ",
+  "lostWalletPhoneTitle": "ទូរស័ព្ទរបស់អ្នកក៏ត្រូវគេយកដែរ?",
+  "lostWalletPhoneBody": "បិទស៊ីមកាត និងកម្មវិធីធនាគារជាមុន។ មានផែនការសម្រាប់រឿងនេះ។",
+  "lostWalletPhoneButton": "ចាប់ផ្តើមផែនការទូរស័ព្ទបាត់",
+  "lostWalletStatementNote": "Vaultara នឹងរំលឹកអ្នកក្រោយ 30, 60 និង 90 ថ្ងៃ។",
+  "lostWalletStatementTitle": "ពិនិត្យរបាយការណ៍ធនាគារ",
+  "lostWalletStatementBody": "រកការបង់ប្រាក់ដែលអ្នកមិនបានធ្វើចាប់តាំងពីកាបូបបាត់។",
+  "lostWalletFoundButton": "ខ្ញុំរកឃើញហើយ",
+  "lostWalletFoundTitle": "ដំណឹងល្អ!",
+  "lostWalletFoundBody": "កាតទាំងនេះបានបិទរួចហើយ ដូច្នេះរង់ចាំកាតថ្មី:",
+  "lostWalletFoundNone": "មិនទាន់បានបិទអ្វីទេ អ្នកអាចបន្តដូចមុន។",
+  "lostWalletFoundUnfreeze": "ប្រសិនបើអ្នកបានបង្កកកាតក្នុងកម្មវិធីធនាគារ ដោះការបង្កកកាតដែលមិនបានបិទ។",
+  "lostWalletFoundConfirm": "បិទផែនការ",
+  "lostWalletFoundOn": "រកឃើញនៅ {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "របាយការណ៍វត្ថុបាត់",
+  "lostWalletReportTitle": "របាយការណ៍វត្ថុបាត់",
+  "lostWalletReportWhen": "កាលបរិច្ឆេទ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "អ្វីដែលបាត់: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "លេខករណី: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "លេខករណី: មិនទាន់រាយការណ៍",
+  "lostWalletReportCount": "{count, plural, other{ធាតុខាងក្រោម: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

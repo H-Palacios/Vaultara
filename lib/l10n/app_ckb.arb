@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "دەگوازیتەوە بۆ ماڵێکی نوێ؟ بزانە چیتر پێویستە نوێ بکەیتەوە."
+  "lifePlanSuggestMove": "دەگوازیتەوە بۆ ماڵێکی نوێ؟ بزانە چیتر پێویستە نوێ بکەیتەوە.",
+  "keptInTitle": "لە کوێ هەڵیدەگرم",
+  "keptInSubtitle": "بۆ ئەوەی بزانیت ئەگەر ون بوو چی ڕابگریت و چی بگۆڕیت",
+  "keptInWallet": "جزدان",
+  "keptInBag": "جانتا",
+  "keptInPhoneCase": "بەرگی مۆبایل",
+  "keptInTravelPouch": "جانتای گەشت",
+  "keptInCar": "ئۆتۆمبێل",
+  "keptInHome": "لە ماڵەوە",
+  "keptInNone": "دیاری نەکراوە",
+  "lostLineLabel": "ژمارەی ڕاگرتنی کارتی ونبوو",
+  "lostLineHelper": "ئێستا پاشەکەوتی بکە. ژمارەکە لەسەر کارتەکە چاپ کراوە، بۆیە کاتێک پێویستت پێیەتی لات نابێت.",
+  "lifeEventWalletLost": "جزدانەکەم ون بوو",
+  "lifeEventWalletLostBody": "سەرەتا کارتەکانت ڕابگرە، پاشان بەڵگەنامەکانت یەک بە یەک بگۆڕە.",
+  "lifeEventWalletStolen": "جزدانەکەم دزرا",
+  "lifeEventWalletStolenBody": "یەکسەر کارتەکانت ڕابگرە و ڕاپۆرتی دزییەکە بدە. پاشان ئاگات لە هەژمارەکانت بێت بۆ فێڵ.",
+  "lifeVariantWalletQuestion": "ون بوو یان دزرا؟",
+  "lifeVariantLost": "ون بوو",
+  "lifeVariantStolen": "دزرا",
+  "lifeTaskWalletFreezeCards": "ئەگەر ئەپی بانکەکەت ڕێگە دەدات، کارتەکانت تێیدا بەستە",
+  "lifeTaskWalletRetrace": "پەیوەندی بە دوایین شوێنەکانەوە بکە کە لێی بوویت و پرسیار لە شتە ونبووەکان بکە",
+  "lifeTaskWalletFraudAlert": "داوا لە نووسینگەکانی قەرز یان خزمەتگوزاری دژە-فێڵی وڵاتەکەت بکە ناسنامەکەت نیشانە بکەن",
+  "lifeTaskWalletStatements": "کورتەی بانکەکەت بپشکنە بۆ پارەدانێک کە نەتکردووە",
+  "lifeTaskWalletSubscriptions": "کارتە نوێیەکە لەسەر بەشداربوونەکان و پارەدانە خۆکارەکانت دابنێ",
+  "lifeTaskWalletPayApps": "کارتە نوێیەکان زیاد بکە بۆ Google Pay یان Apple Pay",
+  "lifeTaskWalletHealthCard": "داوای کارتی ئەندامێتی نوێ لە بیمەی تەندروستیت بکە",
+  "lifeTaskWalletTransport": "کارتی گواستنەوە یان باجی ڕێگا ڕابگرە و باڵانسەکە بگوازەوە",
+  "lifeTaskWalletLoyalty": "داوای کارتی دڵسۆزی نوێ بکە بۆ ئەوەی خاڵەکانت بمێنن",
+  "lifeTaskWalletLocks": "ئەگەر کلیل یان ناونیشانەکەت تێیدا بوو، بیر لە گۆڕینی قوفڵەکان بکەرەوە",
+  "lifeTaskWalletInsurance": "بپشکنە ئایا بیمەکەت جزدان و پارەی نەختینە دەگرێتەوە",
+  "lostWalletHeroTitle": "جزدانەکەت ون بووە؟",
+  "lostWalletHeroBody": "Vaultara پیشانی دەدات سەرەتا چی ڕابگریت، چی بگۆڕیت و بە کێ بڵێیت.",
+  "lostWalletStartTitle": "چی ڕوویدا؟",
+  "lostWalletEditTitle": "گۆڕینی وردەکارییەکان",
+  "lostWalletLostHint": "کەوت یان لە شوێنێک جێم هێشت",
+  "lostWalletStolenHint": "کەسێک بردی",
+  "lostWalletWhatMissing": "چی ونە؟",
+  "lostWalletStartButton": "پیشانم بدە چی بکەم",
+  "lostWalletCheckupTitle": "پشکنینی جزدان",
+  "lostWalletCheckupBody": "ئێستا ئامادە بە، بۆ ئەوەی ئەگەر ون بوو هیچ شتێک لەبیر نەچێت.",
+  "lostWalletCheckupAllGood": "هەموو شتێک ئامادەیە. ئەگەر ڕۆژێک ون بوو، ئامادەیت.",
+  "lostWalletSetPlaceBody": "کارتێک یان بەڵگەنامەیەک بکەرەوە و هەڵبژێرە لە کوێ هەڵیدەگریت. ئەمە بۆ ناسنامە، مۆڵەتی شۆفێری و کارتەکانت بکە.",
+  "lostWalletIssuePhotos": "{count, plural, other{بێ وێنە: {count}. بە وێنە گۆڕین خێراترە.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{کارتی بێ ژمارەی ڕاگرتن: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{پاسپۆرت یان مۆڵەتی پێتە: {count}. ئەگەر گەشت ناکەیت لە ماڵەوە دایانبنێ.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ئەوەی پێتە",
+  "lostWalletNoPhoto": "وێنە نییە",
+  "lostWalletHasPhoto": "وێنە پاشەکەوت کرا",
+  "lostWalletNoLineShort": "ژمارەی ڕاگرتن نییە",
+  "lostWalletHistory": "جارەکانی پێشوو",
+  "lostWalletFound": "دۆزرایەوە",
+  "walletCheckToggle": "هەموو 6 مانگ جارێک بیرم بخەرەوە",
+  "walletCheckToggleBody": "سەیرێکی خێرا بۆ ئەوەی پێتە، بۆ ئەوەی لیستەکە ڕاست بمێنێت.",
+  "walletCheckReminderTitle": "پشکنینی جزدان",
+  "walletCheckReminderBody": "هیچ شتێک لە جزدانەکەتدا گۆڕاوە؟ خولەکێک تەرخان بکە بۆ نوێکردنەوەی Vaultara.",
+  "lostWalletBlockNow": "ئێستا ئەمانە ڕابگرە",
+  "lostWalletBlockNowHint": "پەیوەندی بە هەر بانکێکەوە بکە یان ئەپەکەی بەکاربهێنە. هەر خولەکێک گرنگە.",
+  "lostWalletCall": "پەیوەندی",
+  "lostWalletAddLine": "زیادکردنی ژمارە",
+  "lostWalletNoLine": "هیچ ژمارەیەک پاشەکەوت نەکراوە. لە ئەپ یان ماڵپەڕی بانکەکەت بیدۆزەرەوە.",
+  "lostWalletBlocked": "ڕاگیرا",
+  "lostWalletReplace": "ئەمانە بگۆڕە",
+  "lostWalletReplaceHint": "داوای نوێ بکە و کاتێک گەیشتن بەروارە نوێیەکە پاشەکەوت بکە.",
+  "lostWalletArrived": "نوێیەکە گەیشت",
+  "lostWalletCheck": "ئەمانە بپشکنە",
+  "lostWalletCheckHint": "بپرسە ئایا کارت یان ژمارەی نوێت پێویستە.",
+  "lostWalletPlanEmptyTitle": "هیچ شتێکی پاشەکەوتکراو لەوێ نەبوو",
+  "lostWalletPlanEmpty": "هەنگاوەکانی خوارەوە هێشتا یارمەتی دەدەن. جاری داهاتوو، هەڵبژێرە کارت و بەڵگەنامەکانت لە کوێ هەڵدەگریت.",
+  "lostWalletCaseTitle": "ژمارەی دۆسیەی پۆلیس",
+  "lostWalletCaseHint": "بانک و کۆمپانیای بیمە و فەرمانگەکان زۆرجار داوای دەکەن.",
+  "lostWalletCaseLabel": "ژمارەی دۆسیە یان ئاماژە",
+  "lostWalletCaseSaved": "ژمارەی دۆسیە پاشەکەوت کرا",
+  "lostWalletAbroadTitle": "ئێستا لە دەرەوەی وڵاتیت؟",
+  "lostWalletAbroadBody": "تۆ لە گەشتی {trip}دایت. ئەگەر پاسپۆرت یان ناسنامەکەت تێیدا بوو، پەیوەندی بە باڵیۆزخانە یان کونسوڵخانەکەتەوە بکە بۆ بەڵگەنامەی گەشتی فریاکەوتن و ئاگاداری بیمەی گەشتەکەت بکەرەوە.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "کردنەوەی گەشت",
+  "lostWalletPhoneTitle": "مۆبایلەکەشت برا؟",
+  "lostWalletPhoneBody": "سەرەتا سیمکارت و ئەپەکانی بانک ڕابگرە. پلانێک بۆ ئەوە هەیە.",
+  "lostWalletPhoneButton": "دەستپێکردنی پلانی مۆبایلی ونبوو",
+  "lostWalletStatementNote": "Vaultara دوای 30، 60 و 90 ڕۆژ بیرت دەخاتەوە.",
+  "lostWalletStatementTitle": "کورتەی بانکەکانت بپشکنە",
+  "lostWalletStatementBody": "بەدوای ئەو پارەدانانەدا بگەڕێ کە لە کاتی ونبوونی جزدانەکەتەوە نەتکردوون.",
+  "lostWalletFoundButton": "دۆزیمەوە",
+  "lostWalletFoundTitle": "هەواڵی خۆش!",
+  "lostWalletFoundBody": "ئەم کارتانە پێشتر ڕاگیراون، بۆیە چاوەڕوانی نوێیەکان بە:",
+  "lostWalletFoundNone": "هێشتا هیچ شتێک ڕانەگیراوە، دەتوانیت وەک پێشوو بەردەوام بیت.",
+  "lostWalletFoundUnfreeze": "ئەگەر کارتت لە ئەپی بانکدا بەستووە، ئەوانەی ڕاتنەگرتوون بکەرەوە.",
+  "lostWalletFoundConfirm": "داخستنی پلان",
+  "lostWalletFoundOn": "لە {date} دۆزرایەوە",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "ڕاپۆرتی شتە ونبووەکان",
+  "lostWalletReportTitle": "ڕاپۆرتی شتە ونبووەکان",
+  "lostWalletReportWhen": "بەروار: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "چی ونە: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "ژمارەی دۆسیە: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "ژمارەی دۆسیە: هێشتا ڕاپۆرت نەدراوە",
+  "lostWalletReportCount": "{count, plural, other{بڕگەکانی خوارەوە: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

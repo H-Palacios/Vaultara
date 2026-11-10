@@ -2294,5 +2294,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Տեղափոխվո՞ւմ եք նոր տուն։ Տեսեք, թե էլ ինչ պետք է թարմացնել։"
+  "lifePlanSuggestMove": "Տեղափոխվո՞ւմ եք նոր տուն։ Տեսեք, թե էլ ինչ պետք է թարմացնել։",
+  "keptInTitle": "Որտեղ եմ պահում",
+  "keptInSubtitle": "Որպեսզի իմանաք՝ կորչելու դեպքում ինչ արգելափակել և ինչ փոխարինել",
+  "keptInWallet": "Դրամապանակ",
+  "keptInBag": "Պայուսակ",
+  "keptInPhoneCase": "Հեռախոսի պատյան",
+  "keptInTravelPouch": "Ճանապարհորդական պայուսակ",
+  "keptInCar": "Մեքենա",
+  "keptInHome": "Տանը",
+  "keptInNone": "Ընտրված չէ",
+  "lostLineLabel": "Կորած քարտի համար",
+  "lostLineHelper": "Պահպանեք հիմա։ Համարը տպված է քարտի վրա, ուստի պետք եղած պահին ձեզ մոտ չի լինի։",
+  "lifeEventWalletLost": "Կորցրի դրամապանակս",
+  "lifeEventWalletLostBody": "Նախ արգելափակեք քարտերը, հետո փաստաթղթերը փոխարինեք մեկ առ մեկ։",
+  "lifeEventWalletStolen": "Դրամապանակս գողացան",
+  "lifeEventWalletStolenBody": "Անմիջապես արգելափակեք քարտերը և հայտնեք գողության մասին։ Հետո հետևեք հաշիվներին խարդախությունից։",
+  "lifeVariantWalletQuestion": "Կորե՞լ է, թե՞ գողացել են",
+  "lifeVariantLost": "Կորել է",
+  "lifeVariantStolen": "Գողացել են",
+  "lifeTaskWalletFreezeCards": "Եթե բանկի հավելվածը թույլ է տալիս, սառեցրեք քարտերը",
+  "lifeTaskWalletRetrace": "Զանգեք վերջին վայրերը, որտեղ եղել եք, և հարցրեք կորած իրերի մասին",
+  "lifeTaskWalletFraudAlert": "Խնդրեք վարկային բյուրոներին կամ ձեր երկրի հակախարդախության ծառայությանը նշել ձեր անձնագիրը",
+  "lifeTaskWalletStatements": "Ստուգեք բանկային քաղվածքները՝ ձեր չկատարած վճարումների համար",
+  "lifeTaskWalletSubscriptions": "Նոր քարտը կապեք բաժանորդագրություններին և ավտոմատ վճարումներին",
+  "lifeTaskWalletPayApps": "Ավելացրեք նոր քարտերը Google Pay կամ Apple Pay",
+  "lifeTaskWalletHealthCard": "Առողջության ապահովագրությունից խնդրեք նոր անդամության քարտ",
+  "lifeTaskWalletTransport": "Արգելափակեք տրանսպորտային կամ ճանապարհավճարի քարտը և փոխանցեք մնացորդը",
+  "lifeTaskWalletLoyalty": "Խնդրեք նոր հավատարմության քարտեր՝ միավորները պահելու համար",
+  "lifeTaskWalletLocks": "Եթե ներսում բանալիներ կամ ձեր հասցեն կար, մտածեք կողպեքները փոխելու մասին",
+  "lifeTaskWalletInsurance": "Ստուգեք՝ արդյոք ապահովագրությունը ծածկում է դրամապանակը և կանխիկը",
+  "lostWalletHeroTitle": "Կորցրե՞լ եք դրամապանակը",
+  "lostWalletHeroBody": "Vaultara-ն ցույց է տալիս՝ ինչ արգելափակել առաջինը, ինչ փոխարինել և ում տեղեկացնել։",
+  "lostWalletStartTitle": "Ի՞նչ պատահեց",
+  "lostWalletEditTitle": "Փոխել մանրամասները",
+  "lostWalletLostHint": "Ընկավ կամ ինչ-որ տեղ մոռացա",
+  "lostWalletStolenHint": "Ինչ-որ մեկը վերցրեց",
+  "lostWalletWhatMissing": "Ի՞նչն է պակասում",
+  "lostWalletStartButton": "Ցույց տուր ինչ անել",
+  "lostWalletCheckupTitle": "Դրամապանակի ստուգում",
+  "lostWalletCheckupBody": "Պատրաստվեք հիմա, որպեսզի կորչելու դեպքում ոչինչ չմոռացվի։",
+  "lostWalletCheckupAllGood": "Ամեն ինչ պատրաստ է։ Եթե երբևէ կորչի, դուք պատրաստ եք։",
+  "lostWalletSetPlaceBody": "Բացեք քարտ կամ փաստաթուղթ և ընտրեք՝ որտեղ եք պահում։ Արեք սա անձնագրի, վարորդական իրավունքի և քարտերի համար։",
+  "lostWalletIssuePhotos": "{count, plural, other{Առանց լուսանկարի՝ {count}։ Լուսանկարով փոխարինելն ավելի արագ է։}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Արգելափակման համար չունեցող քարտեր՝ {count}։}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Ձեզ մոտ եղած անձնագրեր կամ թույլտվություններ՝ {count}։ Եթե չեք ճանապարհորդում, պահեք տանը։}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ինչ եք կրում ձեզ հետ",
+  "lostWalletNoPhoto": "Լուսանկար չկա",
+  "lostWalletHasPhoto": "Լուսանկարը պահպանվեց",
+  "lostWalletNoLineShort": "Արգելափակման համար չկա",
+  "lostWalletHistory": "Նախորդ դեպքեր",
+  "lostWalletFound": "Գտնվեց",
+  "walletCheckToggle": "Հիշեցնել 6 ամիսը մեկ",
+  "walletCheckToggleBody": "Արագ հայացք ձեր կրածին, որպեսզի ցուցակը ճիշտ մնա։",
+  "walletCheckReminderTitle": "Դրամապանակի ստուգում",
+  "walletCheckReminderBody": "Ինչ-որ բան փոխվե՞լ է ձեր դրամապանակում։ Մեկ րոպե տրամադրեք Vaultara-ն թարմացնելուն։",
+  "lostWalletBlockNow": "Արգելափակեք սրանք հիմա",
+  "lostWalletBlockNowHint": "Զանգեք յուրաքանչյուր բանկ կամ օգտագործեք նրա հավելվածը։ Յուրաքանչյուր րոպե կարևոր է։",
+  "lostWalletCall": "Զանգել",
+  "lostWalletAddLine": "Ավելացնել համարը",
+  "lostWalletNoLine": "Համար պահպանված չէ։ Գտեք այն բանկի հավելվածում կամ կայքում։",
+  "lostWalletBlocked": "Արգելափակված է",
+  "lostWalletReplace": "Փոխարինեք սրանք",
+  "lostWalletReplaceHint": "Դիմեք նորերի համար և պահպանեք նոր ամսաթիվը, երբ ժամանեն։",
+  "lostWalletArrived": "Նորը եկավ",
+  "lostWalletCheck": "Ստուգեք սրանք",
+  "lostWalletCheckHint": "Հարցրեք՝ արդյոք նոր քարտ կամ համար է պետք։",
+  "lostWalletPlanEmptyTitle": "Այնտեղ պահպանված ոչինչ չկար",
+  "lostWalletPlanEmpty": "Ստորև բերված քայլերը դեռ օգնում են։ Հաջորդ անգամ ընտրեք՝ որտեղ եք պահում քարտերն ու փաստաթղթերը։",
+  "lostWalletCaseTitle": "Ոստիկանության գործի համար",
+  "lostWalletCaseHint": "Բանկերը, ապահովագրողները և գրասենյակները հաճախ են այն խնդրում։",
+  "lostWalletCaseLabel": "Գործի կամ հղման համար",
+  "lostWalletCaseSaved": "Գործի համարը պահպանվեց",
+  "lostWalletAbroadTitle": "Հիմա արտերկրո՞ւմ եք",
+  "lostWalletAbroadBody": "Դուք {trip} ճանապարհորդության մեջ եք։ Եթե ներսում անձնագիրը կամ նույնականացման քարտն էր, դիմեք դեսպանատուն կամ հյուպատոսություն արտակարգ ճանապարհորդական փաստաթղթի համար և տեղեկացրեք ճանապարհորդական ապահովագրությանը։",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Բացել ճանապարհորդությունը",
+  "lostWalletPhoneTitle": "Ձեր հեռախոսն էլ վերցրի՞ն",
+  "lostWalletPhoneBody": "Նախ արգելափակեք SIM քարտը և բանկային հավելվածները։ Դրա համար պլան կա։",
+  "lostWalletPhoneButton": "Սկսել կորած հեռախոսի պլանը",
+  "lostWalletStatementNote": "Vaultara-ն կհիշեցնի 30, 60 և 90 օր հետո։",
+  "lostWalletStatementTitle": "Ստուգեք բանկային քաղվածքները",
+  "lostWalletStatementBody": "Փնտրեք վճարումներ, որոնք չեք կատարել դրամապանակը կորցնելուց հետո։",
+  "lostWalletFoundButton": "Գտա",
+  "lostWalletFoundTitle": "Լավ լուր։",
+  "lostWalletFoundBody": "Այս քարտերն արդեն արգելափակված են, ուստի սպասեք նորերին։",
+  "lostWalletFoundNone": "Դեռ ոչինչ արգելափակված չէ, կարող եք շարունակել ինչպես առաջ։",
+  "lostWalletFoundUnfreeze": "Եթե բանկի հավելվածում քարտեր եք սառեցրել, ապասառեցրեք նրանք, որոնք չեք արգելափակել։",
+  "lostWalletFoundConfirm": "Փակել պլանը",
+  "lostWalletFoundOn": "Գտնվել է {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Կորած իրերի հաշվետվություն",
+  "lostWalletReportTitle": "Կորած իրերի հաշվետվություն",
+  "lostWalletReportWhen": "Ամսաթիվ՝ {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ինչն է պակասում՝ {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Գործի համար՝ {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Գործի համար՝ դեռ չի հայտնվել",
+  "lostWalletReportCount": "{count, plural, other{Ստորև նշված տարրեր՝ {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

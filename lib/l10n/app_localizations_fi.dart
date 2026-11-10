@@ -7172,4 +7172,328 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Muutatko uuteen kotiin? Katso, mitä muuta pitää päivittää.';
+
+  @override
+  String get keptInTitle => 'Missä säilytän sitä';
+
+  @override
+  String get keptInSubtitle => 'Jotta tiedät, mitä estää ja korvata, jos se katoaa';
+
+  @override
+  String get keptInWallet => 'Lompakko';
+
+  @override
+  String get keptInBag => 'Laukku';
+
+  @override
+  String get keptInPhoneCase => 'Puhelimen kuori';
+
+  @override
+  String get keptInTravelPouch => 'Matkapussi';
+
+  @override
+  String get keptInCar => 'Auto';
+
+  @override
+  String get keptInHome => 'Kotona';
+
+  @override
+  String get keptInNone => 'Ei valittu';
+
+  @override
+  String get lostLineLabel => 'Kadonneen kortin sulkunumero';
+
+  @override
+  String get lostLineHelper => 'Tallenna se nyt. Numero on kortissa, joten se on poissa, kun tarvitset sitä.';
+
+  @override
+  String get lifeEventWalletLost => 'Kadotin lompakkoni';
+
+  @override
+  String get lifeEventWalletLostBody => 'Sulje ensin korttisi ja korvaa sitten asiakirjat yksi kerrallaan.';
+
+  @override
+  String get lifeEventWalletStolen => 'Lompakkoni varastettiin';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Sulje korttisi heti ja tee rikosilmoitus. Seuraa sitten tilejäsi petosten varalta.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Kadonnut vai varastettu?';
+
+  @override
+  String get lifeVariantLost => 'Kadonnut';
+
+  @override
+  String get lifeVariantStolen => 'Varastettu';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Jäädytä korttisi pankkisovelluksessa, jos se onnistuu';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Soita viimeisiin paikkoihin, joissa kävit, ja kysy löytötavaroista';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Pyydä luottotietoyhtiöitä tai maasi petospalvelua merkitsemään henkilöllisyystodistuksesi';
+
+  @override
+  String get lifeTaskWalletStatements => 'Tarkista tiliotteistasi maksut, joita et ole tehnyt';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Vaihda uusi kortti tilauksiin ja suoraveloituksiin';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Lisää uudet kortit Google Payhin tai Apple Payhin';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Pyydä sairausvakuutusyhtiöltäsi uusi jäsenkortti';
+
+  @override
+  String get lifeTaskWalletTransport => 'Sulje matka- tai tietullikorttisi ja siirrä saldo';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Pyydä uudet kanta-asiakaskortit, jotta pisteesi säilyvät';
+
+  @override
+  String get lifeTaskWalletLocks => 'Jos siinä oli avaimia tai osoitteesi, harkitse lukkojen vaihtamista';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Tarkista, korvaako vakuutuksesi lompakon ja käteisen';
+
+  @override
+  String get lostWalletHeroTitle => 'Kadotitko lompakkosi?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara näyttää, mitä estää ensin, mitä korvata ja kenelle kertoa.';
+
+  @override
+  String get lostWalletStartTitle => 'Mitä tapahtui?';
+
+  @override
+  String get lostWalletEditTitle => 'Muuta tietoja';
+
+  @override
+  String get lostWalletLostHint => 'Pudonnut tai unohtunut jonnekin';
+
+  @override
+  String get lostWalletStolenHint => 'Joku vei sen';
+
+  @override
+  String get lostWalletWhatMissing => 'Mitä puuttuu?';
+
+  @override
+  String get lostWalletStartButton => 'Näytä, mitä teen';
+
+  @override
+  String get lostWalletCheckupTitle => 'Lompakon tarkistus';
+
+  @override
+  String get lostWalletCheckupBody => 'Valmistaudu nyt, ettei mitään unohdu, jos se katoaa.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Kaikki valmista. Jos se joskus katoaa, olet valmis.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Avaa kortti tai asiakirja ja valitse, missä säilytät sitä. Tee näin henkilökortille, ajokortille ja korteille.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kohteelta puuttuu kuva. Kuvien avulla korvaaminen käy nopeammin.',
+      one: '1 kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kortilta puuttuu tallennettu sulkunumero.',
+      one: '1 kortilta puuttuu tallennettu sulkunumero.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kannat mukanasi $count passia tai lupaa. Jätä ne kotiin, ellet matkusta.',
+      one: 'Kannat mukanasi passia tai lupaa. Jätä se kotiin, ellet matkusta.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Mitä kannat mukanasi';
+
+  @override
+  String get lostWalletNoPhoto => 'Ei kuvaa';
+
+  @override
+  String get lostWalletHasPhoto => 'Kuva tallennettu';
+
+  @override
+  String get lostWalletNoLineShort => 'Ei sulkunumeroa';
+
+  @override
+  String get lostWalletHistory => 'Aiemmat kerrat';
+
+  @override
+  String get lostWalletFound => 'Löytynyt';
+
+  @override
+  String get walletCheckToggle => 'Muistuta 6 kuukauden välein';
+
+  @override
+  String get walletCheckToggleBody => 'Nopea vilkaisu siihen, mitä kannat, jotta lista pysyy oikeana.';
+
+  @override
+  String get walletCheckReminderTitle => 'Lompakon tarkistus';
+
+  @override
+  String get walletCheckReminderBody => 'Onko lompakossasi muuttunut jotain? Päivitä Vaultara minuutissa.';
+
+  @override
+  String get lostWalletBlockNow => 'Sulje nämä nyt';
+
+  @override
+  String get lostWalletBlockNowHint => 'Soita jokaiseen pankkiin tai käytä sen sovellusta. Jokainen minuutti on tärkeä.';
+
+  @override
+  String get lostWalletCall => 'Soita';
+
+  @override
+  String get lostWalletAddLine => 'Lisää numero';
+
+  @override
+  String get lostWalletNoLine => 'Numeroa ei ole tallennettu. Löydät sulkunumeron pankkisi sovelluksesta tai verkkosivuilta.';
+
+  @override
+  String get lostWalletBlocked => 'Suljettu';
+
+  @override
+  String get lostWalletReplace => 'Korvaa nämä';
+
+  @override
+  String get lostWalletReplaceHint => 'Hae uudet ja tallenna uusi päivämäärä, kun ne saapuvat.';
+
+  @override
+  String get lostWalletArrived => 'Uusi saapui';
+
+  @override
+  String get lostWalletCheck => 'Tarkista nämä';
+
+  @override
+  String get lostWalletCheckHint => 'Kysy, tarvitsetko uuden kortin tai numeron.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Siellä ei ollut mitään tallennettua';
+
+  @override
+  String get lostWalletPlanEmpty => 'Alla olevat vaiheet auttavat silti. Valitse ensi kerralla, missä säilytät korttejasi ja asiakirjojasi.';
+
+  @override
+  String get lostWalletCaseTitle => 'Poliisin ilmoitusnumero';
+
+  @override
+  String get lostWalletCaseHint => 'Pankit, vakuutusyhtiöt ja virastot kysyvät sitä usein.';
+
+  @override
+  String get lostWalletCaseLabel => 'Ilmoitus- tai viitenumero';
+
+  @override
+  String get lostWalletCaseSaved => 'Ilmoitusnumero tallennettu';
+
+  @override
+  String get lostWalletAbroadTitle => 'Ulkomailla juuri nyt?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Olet matkalla $trip. Jos passisi tai henkilökorttisi oli siinä, ota yhteyttä suurlähetystöön tai konsulaattiin hätämatkustusasiakirjaa varten ja ilmoita matkavakuutukseesi.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Avaa matka';
+
+  @override
+  String get lostWalletPhoneTitle => 'Vietiinkö myös puhelimesi?';
+
+  @override
+  String get lostWalletPhoneBody => 'Sulje ensin SIM-kortti ja pankkisovelluksesi. Siihen on oma suunnitelma.';
+
+  @override
+  String get lostWalletPhoneButton => 'Aloita kadonneen puhelimen suunnitelma';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara muistuttaa sinua 30, 60 ja 90 päivän kuluttua.';
+
+  @override
+  String get lostWalletStatementTitle => 'Tarkista tiliotteesi';
+
+  @override
+  String get lostWalletStatementBody => 'Etsi maksuja, joita et ole tehnyt lompakon katoamisen jälkeen.';
+
+  @override
+  String get lostWalletFoundButton => 'Löysin sen';
+
+  @override
+  String get lostWalletFoundTitle => 'Hyviä uutisia!';
+
+  @override
+  String get lostWalletFoundBody => 'Nämä kortit on jo suljettu, joten pidä silmällä uusia:';
+
+  @override
+  String get lostWalletFoundNone => 'Mitään ei ole vielä suljettu, joten voit jatkaa kuten ennen.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Jos jäädytit kortteja pankkisovelluksessa, poista jäädytys niistä, joita et sulkenut.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Sulje suunnitelma';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Löytyi $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Kadonneiden tavaroiden raportti';
+
+  @override
+  String get lostWalletReportTitle => 'Kadonneiden tavaroiden raportti';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Päivämäärä: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Mitä puuttuu: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Ilmoitusnumero: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Ilmoitusnumero: ei vielä ilmoitettu';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kohdetta alla',
+      one: '1 kohde alla',
+    );
+    return '$_temp0';
+  }
 }

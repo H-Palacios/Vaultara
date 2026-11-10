@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Chuyển đến nhà mới? Xem còn gì cần cập nhật."
+  "lifePlanSuggestMove": "Chuyển đến nhà mới? Xem còn gì cần cập nhật.",
+  "keptInTitle": "Nơi tôi cất nó",
+  "keptInSubtitle": "Để biết cần khóa và làm lại gì nếu bị mất",
+  "keptInWallet": "Ví",
+  "keptInBag": "Túi xách",
+  "keptInPhoneCase": "Ốp điện thoại",
+  "keptInTravelPouch": "Túi du lịch nhỏ",
+  "keptInCar": "Xe hơi",
+  "keptInHome": "Ở nhà",
+  "keptInNone": "Chưa đặt",
+  "lostLineLabel": "Số khóa thẻ khi mất",
+  "lostLineHelper": "Lưu ngay bây giờ. Số in trên thẻ, nên khi cần bạn sẽ không có.",
+  "lifeEventWalletLost": "Tôi làm mất ví",
+  "lifeEventWalletLostBody": "Khóa thẻ trước, rồi làm lại giấy tờ từng cái một.",
+  "lifeEventWalletStolen": "Ví của tôi bị trộm",
+  "lifeEventWalletStolenBody": "Khóa thẻ ngay và trình báo vụ trộm. Sau đó theo dõi tài khoản để phòng gian lận.",
+  "lifeVariantWalletQuestion": "Bị mất hay bị trộm?",
+  "lifeVariantLost": "Bị mất",
+  "lifeVariantStolen": "Bị trộm",
+  "lifeTaskWalletFreezeCards": "Tạm khóa thẻ trong ứng dụng ngân hàng nếu có",
+  "lifeTaskWalletRetrace": "Gọi đến những nơi bạn đến gần nhất và hỏi về đồ thất lạc",
+  "lifeTaskWalletFraudAlert": "Đề nghị các văn phòng tín dụng hoặc dịch vụ chống gian lận ở nước bạn đánh dấu giấy tờ tùy thân của bạn",
+  "lifeTaskWalletStatements": "Kiểm tra sao kê ngân hàng tìm khoản thanh toán bạn không thực hiện",
+  "lifeTaskWalletSubscriptions": "Đặt thẻ mới cho các gói đăng ký và lệnh trích nợ tự động",
+  "lifeTaskWalletPayApps": "Thêm thẻ mới vào Google Pay hoặc Apple Pay",
+  "lifeTaskWalletHealthCard": "Xin thẻ thành viên mới từ bảo hiểm y tế",
+  "lifeTaskWalletTransport": "Khóa thẻ đi lại hoặc thẻ thu phí đường và chuyển số dư",
+  "lifeTaskWalletLoyalty": "Xin thẻ khách hàng thân thiết mới để giữ điểm",
+  "lifeTaskWalletLocks": "Nếu có chìa khóa hoặc địa chỉ của bạn bên trong, hãy cân nhắc thay khóa",
+  "lifeTaskWalletInsurance": "Kiểm tra xem bảo hiểm có chi trả cho ví và tiền mặt không",
+  "lostWalletHeroTitle": "Mất ví?",
+  "lostWalletHeroBody": "Vaultara cho biết cần khóa gì trước, làm lại gì và báo cho ai.",
+  "lostWalletStartTitle": "Chuyện gì đã xảy ra?",
+  "lostWalletEditTitle": "Thay đổi chi tiết",
+  "lostWalletLostHint": "Rơi hoặc để quên ở đâu đó",
+  "lostWalletStolenHint": "Có người lấy",
+  "lostWalletWhatMissing": "Mất những gì?",
+  "lostWalletStartButton": "Chỉ tôi cần làm gì",
+  "lostWalletCheckupTitle": "Kiểm tra ví",
+  "lostWalletCheckupBody": "Chuẩn bị ngay bây giờ để không quên gì nếu bị mất.",
+  "lostWalletCheckupAllGood": "Mọi thứ đã sẵn sàng. Nếu có ngày bị mất, bạn đã chuẩn bị.",
+  "lostWalletSetPlaceBody": "Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất. Làm vậy cho căn cước, bằng lái và các thẻ.",
+  "lostWalletIssuePhotos": "{count, plural, other{Không có ảnh: {count}. Có ảnh thì làm lại nhanh hơn.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Thẻ chưa có số khóa: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Hộ chiếu hoặc giấy phép bạn mang theo: {count}. Hãy để ở nhà trừ khi đi du lịch.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Những gì bạn mang theo",
+  "lostWalletNoPhoto": "Không có ảnh",
+  "lostWalletHasPhoto": "Đã lưu ảnh",
+  "lostWalletNoLineShort": "Không có số khóa",
+  "lostWalletHistory": "Những lần trước",
+  "lostWalletFound": "Đã tìm thấy",
+  "walletCheckToggle": "Nhắc tôi mỗi 6 tháng",
+  "walletCheckToggleBody": "Xem nhanh những gì bạn mang theo để danh sách luôn đúng.",
+  "walletCheckReminderTitle": "Kiểm tra ví",
+  "walletCheckReminderBody": "Có gì thay đổi trong ví không? Dành một phút cập nhật Vaultara.",
+  "lostWalletBlockNow": "Khóa ngay những thứ này",
+  "lostWalletBlockNowHint": "Gọi từng ngân hàng hoặc dùng ứng dụng của họ. Mỗi phút đều quan trọng.",
+  "lostWalletCall": "Gọi",
+  "lostWalletAddLine": "Thêm số",
+  "lostWalletNoLine": "Chưa lưu số. Tìm trong ứng dụng hoặc trang web ngân hàng.",
+  "lostWalletBlocked": "Đã khóa",
+  "lostWalletReplace": "Làm lại những thứ này",
+  "lostWalletReplaceHint": "Nộp đơn làm mới và lưu ngày mới khi nhận được.",
+  "lostWalletArrived": "Đã nhận cái mới",
+  "lostWalletCheck": "Kiểm tra những thứ này",
+  "lostWalletCheckHint": "Hỏi xem bạn có cần thẻ hoặc số mới không.",
+  "lostWalletPlanEmptyTitle": "Không có gì được lưu ở đó",
+  "lostWalletPlanEmpty": "Các bước bên dưới vẫn hữu ích. Lần sau, hãy chọn nơi bạn cất thẻ và giấy tờ.",
+  "lostWalletCaseTitle": "Số hồ sơ công an",
+  "lostWalletCaseHint": "Ngân hàng, công ty bảo hiểm và cơ quan thường hỏi số này.",
+  "lostWalletCaseLabel": "Số hồ sơ hoặc số tham chiếu",
+  "lostWalletCaseSaved": "Đã lưu số hồ sơ",
+  "lostWalletAbroadTitle": "Đang ở nước ngoài?",
+  "lostWalletAbroadBody": "Bạn đang trong chuyến đi {trip}. Nếu hộ chiếu hoặc giấy tờ tùy thân ở trong đó, hãy liên hệ đại sứ quán hoặc lãnh sự quán để xin giấy thông hành khẩn cấp và báo cho bảo hiểm du lịch.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Mở chuyến đi",
+  "lostWalletPhoneTitle": "Điện thoại của bạn cũng bị lấy?",
+  "lostWalletPhoneBody": "Khóa SIM và các ứng dụng ngân hàng trước. Có kế hoạch cho việc đó.",
+  "lostWalletPhoneButton": "Bắt đầu kế hoạch mất điện thoại",
+  "lostWalletStatementNote": "Vaultara sẽ nhắc bạn sau 30, 60 và 90 ngày.",
+  "lostWalletStatementTitle": "Kiểm tra sao kê ngân hàng",
+  "lostWalletStatementBody": "Tìm các khoản thanh toán bạn không thực hiện kể từ khi mất ví.",
+  "lostWalletFoundButton": "Tôi đã tìm thấy",
+  "lostWalletFoundTitle": "Tin vui!",
+  "lostWalletFoundBody": "Những thẻ này đã bị khóa, vì vậy hãy chờ thẻ mới:",
+  "lostWalletFoundNone": "Chưa khóa gì cả, bạn có thể tiếp tục như trước.",
+  "lostWalletFoundUnfreeze": "Nếu bạn đã tạm khóa thẻ trong ứng dụng ngân hàng, hãy mở lại những thẻ bạn chưa khóa hẳn.",
+  "lostWalletFoundConfirm": "Đóng kế hoạch",
+  "lostWalletFoundOn": "Tìm thấy ngày {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Báo cáo đồ bị mất",
+  "lostWalletReportTitle": "Báo cáo đồ bị mất",
+  "lostWalletReportWhen": "Ngày: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Những gì bị mất: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Số hồ sơ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Số hồ sơ: chưa trình báo",
+  "lostWalletReportCount": "{count, plural, other{Mục bên dưới: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

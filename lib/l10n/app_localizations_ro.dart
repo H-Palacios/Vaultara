@@ -7249,4 +7249,328 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Vă mutați într-o casă nouă? Vedeți ce mai trebuie actualizat.';
+
+  @override
+  String get keptInTitle => 'Unde îl țin';
+
+  @override
+  String get keptInSubtitle => 'Ca să știi ce să blochezi și ce să înlocuiești dacă se pierde';
+
+  @override
+  String get keptInWallet => 'Portofel';
+
+  @override
+  String get keptInBag => 'Geantă';
+
+  @override
+  String get keptInPhoneCase => 'Husa telefonului';
+
+  @override
+  String get keptInTravelPouch => 'Borsetă de călătorie';
+
+  @override
+  String get keptInCar => 'Mașină';
+
+  @override
+  String get keptInHome => 'Acasă';
+
+  @override
+  String get keptInNone => 'Nesetat';
+
+  @override
+  String get lostLineLabel => 'Număr pentru card pierdut';
+
+  @override
+  String get lostLineHelper => 'Salvează-l acum. Numărul e tipărit pe card, deci nu-l vei avea când îți trebuie.';
+
+  @override
+  String get lifeEventWalletLost => 'Mi-am pierdut portofelul';
+
+  @override
+  String get lifeEventWalletLostBody => 'Blochează mai întâi cardurile, apoi înlocuiește documentele pe rând.';
+
+  @override
+  String get lifeEventWalletStolen => 'Mi s-a furat portofelul';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Blochează imediat cardurile și raportează furtul. Apoi urmărește conturile pentru fraude.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Pierdut sau furat?';
+
+  @override
+  String get lifeVariantLost => 'Pierdut';
+
+  @override
+  String get lifeVariantStolen => 'Furat';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Îngheață cardurile în aplicația băncii, dacă permite';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Sună în ultimele locuri unde ai fost și întreabă la obiecte pierdute';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Cere birourilor de credit sau serviciului antifraudă din țara ta să-ți marcheze actul';
+
+  @override
+  String get lifeTaskWalletStatements => 'Verifică extrasele pentru plăți pe care nu le-ai făcut';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Pune noul card la abonamente și debitări directe';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Adaugă noile carduri în Google Pay sau Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Cere un card nou de la asigurarea de sănătate';
+
+  @override
+  String get lifeTaskWalletTransport => 'Blochează cardul de transport sau de taxă de drum și mută soldul';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Cere carduri de fidelitate noi ca să-ți păstrezi punctele';
+
+  @override
+  String get lifeTaskWalletLocks => 'Dacă erau chei sau adresa ta înăuntru, gândește-te să schimbi încuietorile';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Verifică dacă asigurarea acoperă portofelul și banii';
+
+  @override
+  String get lostWalletHeroTitle => 'Ți-ai pierdut portofelul?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara îți arată ce să blochezi întâi, ce să înlocuiești și pe cine să anunți.';
+
+  @override
+  String get lostWalletStartTitle => 'Ce s-a întâmplat?';
+
+  @override
+  String get lostWalletEditTitle => 'Modifică detaliile';
+
+  @override
+  String get lostWalletLostHint => 'Căzut sau uitat undeva';
+
+  @override
+  String get lostWalletStolenHint => 'L-a luat cineva';
+
+  @override
+  String get lostWalletWhatMissing => 'Ce lipsește?';
+
+  @override
+  String get lostWalletStartButton => 'Arată-mi ce să fac';
+
+  @override
+  String get lostWalletCheckupTitle => 'Verificarea portofelului';
+
+  @override
+  String get lostWalletCheckupBody => 'Pregătește-te acum, ca să nu uiți nimic dacă se pierde.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Totul e gata. Dacă se pierde vreodată, ești pregătit.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Deschide un card sau document și alege unde îl ții. Fă asta pentru buletin, permis și carduri.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elemente nu au fotografie. Cu fotografii se înlocuiesc mai repede.',
+      one: '1 element nu are fotografie. Cu o fotografie se înlocuiește mai repede.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count carduri nu au salvat numărul pentru card pierdut.',
+      one: '1 card nu are salvat numărul pentru card pierdut.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Porți la tine $count pașapoarte sau permise. Lasă-le acasă dacă nu călătorești.',
+      one: 'Porți la tine un pașaport sau un permis. Lasă-l acasă dacă nu călătorești.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Ce porți la tine';
+
+  @override
+  String get lostWalletNoPhoto => 'Fără fotografie';
+
+  @override
+  String get lostWalletHasPhoto => 'Fotografie salvată';
+
+  @override
+  String get lostWalletNoLineShort => 'Fără număr pentru card pierdut';
+
+  @override
+  String get lostWalletHistory => 'Dăți anterioare';
+
+  @override
+  String get lostWalletFound => 'Găsit';
+
+  @override
+  String get walletCheckToggle => 'Amintește-mi la fiecare 6 luni';
+
+  @override
+  String get walletCheckToggleBody => 'O privire rapidă la ce porți, ca lista să fie corectă.';
+
+  @override
+  String get walletCheckReminderTitle => 'Verificarea portofelului';
+
+  @override
+  String get walletCheckReminderBody => 'S-a schimbat ceva în portofel? Ia-ți un minut să actualizezi Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Blochează acum';
+
+  @override
+  String get lostWalletBlockNowHint => 'Sună la fiecare bancă sau folosește aplicația ei. Fiecare minut contează.';
+
+  @override
+  String get lostWalletCall => 'Sună';
+
+  @override
+  String get lostWalletAddLine => 'Adaugă numărul';
+
+  @override
+  String get lostWalletNoLine => 'Niciun număr salvat. Găsește-l în aplicația sau pe site-ul băncii.';
+
+  @override
+  String get lostWalletBlocked => 'Blocat';
+
+  @override
+  String get lostWalletReplace => 'Înlocuiește';
+
+  @override
+  String get lostWalletReplaceHint => 'Cere altele noi și salvează noua dată când sosesc.';
+
+  @override
+  String get lostWalletArrived => 'A sosit cel nou';
+
+  @override
+  String get lostWalletCheck => 'Verifică';
+
+  @override
+  String get lostWalletCheckHint => 'Întreabă dacă ai nevoie de un card sau un număr nou.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Nu era nimic salvat acolo';
+
+  @override
+  String get lostWalletPlanEmpty => 'Pașii de mai jos tot ajută. Data viitoare, alege unde îți ții cardurile și documentele.';
+
+  @override
+  String get lostWalletCaseTitle => 'Număr de dosar la poliție';
+
+  @override
+  String get lostWalletCaseHint => 'Băncile, asigurătorii și instituțiile îl cer des.';
+
+  @override
+  String get lostWalletCaseLabel => 'Număr de dosar sau de referință';
+
+  @override
+  String get lostWalletCaseSaved => 'Număr de dosar salvat';
+
+  @override
+  String get lostWalletAbroadTitle => 'În străinătate acum?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Ești în călătoria $trip. Dacă pașaportul sau buletinul era înăuntru, contactează ambasada sau consulatul pentru un document de călătorie de urgență și anunță asigurarea de călătorie.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Deschide călătoria';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ți-au luat și telefonul?';
+
+  @override
+  String get lostWalletPhoneBody => 'Blochează întâi cartela SIM și aplicațiile bancare. Există un plan pentru asta.';
+
+  @override
+  String get lostWalletPhoneButton => 'Pornește planul pentru telefon pierdut';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara îți amintește după 30, 60 și 90 de zile.';
+
+  @override
+  String get lostWalletStatementTitle => 'Verifică extrasele bancare';
+
+  @override
+  String get lostWalletStatementBody => 'Caută plăți pe care nu le-ai făcut de când ai pierdut portofelul.';
+
+  @override
+  String get lostWalletFoundButton => 'L-am găsit';
+
+  @override
+  String get lostWalletFoundTitle => 'Vești bune!';
+
+  @override
+  String get lostWalletFoundBody => 'Aceste carduri sunt deja blocate, așa că fii atent la cele noi:';
+
+  @override
+  String get lostWalletFoundNone => 'Nimic nu a fost blocat încă, poți continua ca înainte.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Dacă ai înghețat carduri în aplicația băncii, dezgheață-le pe cele pe care nu le-ai blocat.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Închide planul';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Găsit pe $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Raport obiecte pierdute';
+
+  @override
+  String get lostWalletReportTitle => 'Raport obiecte pierdute';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Data: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Ce lipsește: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Număr de dosar: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Număr de dosar: încă neraportat';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elemente mai jos',
+      one: '1 element mai jos',
+    );
+    return '$_temp0';
+  }
 }

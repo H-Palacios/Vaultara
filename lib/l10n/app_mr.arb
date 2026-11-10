@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "नवीन घरात जात आहात? आणखी काय अपडेट करायचे ते पाहा."
+  "lifePlanSuggestMove": "नवीन घरात जात आहात? आणखी काय अपडेट करायचे ते पाहा.",
+  "keptInTitle": "मी ते कुठे ठेवतो",
+  "keptInSubtitle": "हरवल्यास काय ब्लॉक करायचे आणि काय बदलायचे ते कळावे म्हणून",
+  "keptInWallet": "पाकीट",
+  "keptInBag": "बॅग",
+  "keptInPhoneCase": "फोन कव्हर",
+  "keptInTravelPouch": "प्रवासाचे पाऊच",
+  "keptInCar": "कार",
+  "keptInHome": "घरी",
+  "keptInNone": "निवडलेले नाही",
+  "lostLineLabel": "हरवलेल्या कार्डचा नंबर",
+  "lostLineHelper": "आत्ताच सेव्ह करा. नंबर कार्डवर छापलेला असतो, त्यामुळे गरज पडेल तेव्हा तो तुमच्याकडे नसेल.",
+  "lifeEventWalletLost": "माझे पाकीट हरवले",
+  "lifeEventWalletLostBody": "आधी तुमची कार्डे ब्लॉक करा, मग कागदपत्रे एकेक करून बदला.",
+  "lifeEventWalletStolen": "माझे पाकीट चोरीला गेले",
+  "lifeEventWalletStolenBody": "लगेच कार्डे ब्लॉक करा आणि चोरीची तक्रार करा. मग फसवणुकीसाठी खात्यांवर लक्ष ठेवा.",
+  "lifeVariantWalletQuestion": "हरवले की चोरीला गेले?",
+  "lifeVariantLost": "हरवले",
+  "lifeVariantStolen": "चोरीला गेले",
+  "lifeTaskWalletFreezeCards": "बँक ॲपमध्ये पर्याय असल्यास कार्डे फ्रीझ करा",
+  "lifeTaskWalletRetrace": "तुम्ही शेवटी जिथे होता तिथे फोन करा आणि हरवलेल्या वस्तूंबद्दल विचारा",
+  "lifeTaskWalletFraudAlert": "क्रेडिट ब्युरो किंवा तुमच्या देशाच्या फसवणूक सेवेला तुमच्या ओळखपत्रावर खूण करायला सांगा",
+  "lifeTaskWalletStatements": "बँक स्टेटमेंटमध्ये तुम्ही न केलेली देयके तपासा",
+  "lifeTaskWalletSubscriptions": "नवे कार्ड सदस्यता आणि ऑटो-डेबिटवर लावा",
+  "lifeTaskWalletPayApps": "नवी कार्डे Google Pay किंवा Apple Pay मध्ये जोडा",
+  "lifeTaskWalletHealthCard": "आरोग्य विम्याकडून नवे सदस्य कार्ड मागा",
+  "lifeTaskWalletTransport": "प्रवास किंवा टोल कार्ड ब्लॉक करा आणि शिल्लक हलवा",
+  "lifeTaskWalletLoyalty": "पॉइंट्स टिकवण्यासाठी नवी लॉयल्टी कार्डे मागा",
+  "lifeTaskWalletLocks": "आत चाव्या किंवा तुमचा पत्ता असल्यास कुलूप बदलण्याचा विचार करा",
+  "lifeTaskWalletInsurance": "तुमचा विमा पाकीट आणि रोख रक्कम कव्हर करतो का ते तपासा",
+  "lostWalletHeroTitle": "पाकीट हरवले?",
+  "lostWalletHeroBody": "Vaultara दाखवते की आधी काय ब्लॉक करायचे, काय बदलायचे आणि कोणाला कळवायचे.",
+  "lostWalletStartTitle": "काय झाले?",
+  "lostWalletEditTitle": "तपशील बदला",
+  "lostWalletLostHint": "पडले किंवा कुठेतरी राहिले",
+  "lostWalletStolenHint": "कोणीतरी घेतले",
+  "lostWalletWhatMissing": "काय गहाळ आहे?",
+  "lostWalletStartButton": "मला काय करायचे ते दाखवा",
+  "lostWalletCheckupTitle": "पाकीट तपासणी",
+  "lostWalletCheckupBody": "आत्ताच तयारी करा, म्हणजे हरवल्यास काही विसरणार नाही.",
+  "lostWalletCheckupAllGood": "सर्व तयार आहे. कधी हरवले तरी तुम्ही तयार आहात.",
+  "lostWalletSetPlaceBody": "एखादे कार्ड किंवा कागदपत्र उघडा आणि ते कुठे ठेवता ते निवडा. ओळखपत्र, परवाना आणि कार्डांसाठी हे करा.",
+  "lostWalletIssuePhotos": "{count, plural, other{फोटोशिवाय: {count}. फोटो असल्यास बदलणे जलद होते.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ब्लॉक नंबर नसलेली कार्डे: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{तुमच्याकडील पासपोर्ट किंवा परवाने: {count}. प्रवास करत नसल्यास घरी ठेवा.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "तुम्ही सोबत ठेवता ते",
+  "lostWalletNoPhoto": "फोटो नाही",
+  "lostWalletHasPhoto": "फोटो सेव्ह झाला",
+  "lostWalletNoLineShort": "ब्लॉक नंबर नाही",
+  "lostWalletHistory": "आधीच्या वेळा",
+  "lostWalletFound": "सापडले",
+  "walletCheckToggle": "दर 6 महिन्यांनी आठवण करा",
+  "walletCheckToggleBody": "तुम्ही सोबत ठेवता त्यावर एक झटपट नजर, म्हणजे यादी बरोबर राहील.",
+  "walletCheckReminderTitle": "पाकीट तपासणी",
+  "walletCheckReminderBody": "तुमच्या पाकिटात काही बदलले का? Vaultara अपडेट करायला एक मिनिट द्या.",
+  "lostWalletBlockNow": "हे आत्ताच ब्लॉक करा",
+  "lostWalletBlockNowHint": "प्रत्येक बँकेला फोन करा किंवा तिचे ॲप वापरा. प्रत्येक मिनिट महत्त्वाचा आहे.",
+  "lostWalletCall": "कॉल करा",
+  "lostWalletAddLine": "नंबर जोडा",
+  "lostWalletNoLine": "कोणताही नंबर सेव्ह नाही. तो बँकेच्या ॲपमध्ये किंवा वेबसाइटवर शोधा.",
+  "lostWalletBlocked": "ब्लॉक झाले",
+  "lostWalletReplace": "हे बदला",
+  "lostWalletReplaceHint": "नव्यासाठी अर्ज करा आणि आल्यावर नवी तारीख सेव्ह करा.",
+  "lostWalletArrived": "नवे आले",
+  "lostWalletCheck": "हे तपासा",
+  "lostWalletCheckHint": "नवे कार्ड किंवा नंबर हवा का ते विचारा.",
+  "lostWalletPlanEmptyTitle": "तिथे काहीही सेव्ह नव्हते",
+  "lostWalletPlanEmpty": "खालील पायऱ्या तरीही मदत करतात. पुढच्या वेळी कार्डे आणि कागदपत्रे कुठे ठेवता ते निवडा.",
+  "lostWalletCaseTitle": "पोलीस केस नंबर",
+  "lostWalletCaseHint": "बँका, विमा कंपन्या आणि कार्यालये तो अनेकदा मागतात.",
+  "lostWalletCaseLabel": "केस किंवा संदर्भ नंबर",
+  "lostWalletCaseSaved": "केस नंबर सेव्ह झाला",
+  "lostWalletAbroadTitle": "सध्या परदेशात?",
+  "lostWalletAbroadBody": "तुम्ही {trip} प्रवासात आहात. आत पासपोर्ट किंवा ओळखपत्र असल्यास तातडीच्या प्रवास दस्तऐवजासाठी दूतावास किंवा वाणिज्य दूतावासाशी संपर्क साधा आणि प्रवास विम्याला कळवा.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "प्रवास उघडा",
+  "lostWalletPhoneTitle": "तुमचा फोनही नेला का?",
+  "lostWalletPhoneBody": "आधी SIM कार्ड आणि बँकिंग ॲप्स ब्लॉक करा. त्यासाठी एक योजना आहे.",
+  "lostWalletPhoneButton": "हरवलेल्या फोनची योजना सुरू करा",
+  "lostWalletStatementNote": "Vaultara 30, 60 आणि 90 दिवसांनी आठवण करेल.",
+  "lostWalletStatementTitle": "बँक स्टेटमेंट तपासा",
+  "lostWalletStatementBody": "पाकीट हरवल्यापासून तुम्ही न केलेली देयके शोधा.",
+  "lostWalletFoundButton": "मला सापडले",
+  "lostWalletFoundTitle": "चांगली बातमी!",
+  "lostWalletFoundBody": "ही कार्डे आधीच ब्लॉक आहेत, म्हणून नव्यांची वाट पाहा:",
+  "lostWalletFoundNone": "अजून काहीही ब्लॉक झालेले नाही, तुम्ही आधीसारखे चालू ठेवू शकता.",
+  "lostWalletFoundUnfreeze": "बँक ॲपमध्ये कार्डे फ्रीझ केली असल्यास, जी ब्लॉक केली नाहीत ती अनफ्रीझ करा.",
+  "lostWalletFoundConfirm": "योजना बंद करा",
+  "lostWalletFoundOn": "{date} रोजी सापडले",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "हरवलेल्या वस्तूंचा अहवाल",
+  "lostWalletReportTitle": "हरवलेल्या वस्तूंचा अहवाल",
+  "lostWalletReportWhen": "तारीख: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "काय गहाळ आहे: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "केस नंबर: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "केस नंबर: अजून तक्रार केलेली नाही",
+  "lostWalletReportCount": "{count, plural, other{खालील वस्तू: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

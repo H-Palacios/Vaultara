@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Unahamia nyumba mpya? Angalia nini kingine cha kusasisha."
+  "lifePlanSuggestMove": "Unahamia nyumba mpya? Angalia nini kingine cha kusasisha.",
+  "keptInTitle": "Ninapokiweka",
+  "keptInSubtitle": "Ili ujue cha kuzuia na kubadilisha kikipotea",
+  "keptInWallet": "Pochi",
+  "keptInBag": "Mkoba",
+  "keptInPhoneCase": "Kava ya simu",
+  "keptInTravelPouch": "Mfuko wa safari",
+  "keptInCar": "Gari",
+  "keptInHome": "Nyumbani",
+  "keptInNone": "Haijawekwa",
+  "lostLineLabel": "Nambari ya kadi iliyopotea",
+  "lostLineHelper": "Ihifadhi sasa. Nambari imechapishwa kwenye kadi, kwa hivyo hutakuwa nayo unapoihitaji.",
+  "lifeEventWalletLost": "Nimepoteza pochi yangu",
+  "lifeEventWalletLostBody": "Zuia kadi zako kwanza, kisha badilisha hati zako moja baada ya nyingine.",
+  "lifeEventWalletStolen": "Pochi yangu imeibiwa",
+  "lifeEventWalletStolenBody": "Zuia kadi zako mara moja na uripoti wizi. Kisha fuatilia akaunti zako kwa ulaghai.",
+  "lifeVariantWalletQuestion": "Imepotea au imeibiwa?",
+  "lifeVariantLost": "Imepotea",
+  "lifeVariantStolen": "Imeibiwa",
+  "lifeTaskWalletFreezeCards": "Gandisha kadi zako kwenye programu ya benki ikiwa inaruhusu",
+  "lifeTaskWalletRetrace": "Piga simu sehemu za mwisho ulizokuwa na uulize vitu vilivyopotea",
+  "lifeTaskWalletFraudAlert": "Omba ofisi za mikopo au huduma ya ulaghai ya nchi yako iweke alama kwenye kitambulisho chako",
+  "lifeTaskWalletStatements": "Kagua taarifa za benki kwa malipo ambayo hukufanya",
+  "lifeTaskWalletSubscriptions": "Weka kadi mpya kwenye usajili na makato yako ya moja kwa moja",
+  "lifeTaskWalletPayApps": "Ongeza kadi mpya kwenye Google Pay au Apple Pay",
+  "lifeTaskWalletHealthCard": "Omba kadi mpya ya uanachama kutoka bima yako ya afya",
+  "lifeTaskWalletTransport": "Zuia kadi yako ya usafiri au ya ushuru wa barabara na uhamishe salio",
+  "lifeTaskWalletLoyalty": "Omba kadi mpya za uaminifu ili ubaki na pointi zako",
+  "lifeTaskWalletLocks": "Ikiwa funguo au anwani yako vilikuwemo, fikiria kubadilisha kufuli",
+  "lifeTaskWalletInsurance": "Angalia kama bima yako inagharamia pochi na pesa taslimu",
+  "lostWalletHeroTitle": "Umepoteza pochi yako?",
+  "lostWalletHeroBody": "Vaultara inaonyesha cha kuzuia kwanza, cha kubadilisha na nani wa kumjulisha.",
+  "lostWalletStartTitle": "Nini kilitokea?",
+  "lostWalletEditTitle": "Badilisha maelezo",
+  "lostWalletLostHint": "Ilianguka au niliisahau mahali fulani",
+  "lostWalletStolenHint": "Mtu aliichukua",
+  "lostWalletWhatMissing": "Nini kinakosekana?",
+  "lostWalletStartButton": "Nionyeshe cha kufanya",
+  "lostWalletCheckupTitle": "Ukaguzi wa pochi",
+  "lostWalletCheckupBody": "Jiandae sasa, ili usisahau chochote ikipotea.",
+  "lostWalletCheckupAllGood": "Kila kitu kiko tayari. Ikipotea siku moja, uko tayari.",
+  "lostWalletSetPlaceBody": "Fungua kadi au hati na uchague unapoiweka. Fanya hivi kwa kitambulisho, leseni na kadi zako.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bila picha: {count}. Kwa picha, kubadilisha ni haraka zaidi.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kadi bila nambari ya kadi iliyopotea: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Pasipoti au vibali ulivyobeba: {count}. Viache nyumbani usiposafiri.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Unachobeba",
+  "lostWalletNoPhoto": "Hakuna picha",
+  "lostWalletHasPhoto": "Picha imehifadhiwa",
+  "lostWalletNoLineShort": "Hakuna nambari ya kadi iliyopotea",
+  "lostWalletHistory": "Mara zilizopita",
+  "lostWalletFound": "Imepatikana",
+  "walletCheckToggle": "Nikumbushe kila miezi 6",
+  "walletCheckToggleBody": "Mtazamo wa haraka wa unachobeba, ili orodha ibaki sahihi.",
+  "walletCheckReminderTitle": "Ukaguzi wa pochi",
+  "walletCheckReminderBody": "Kuna kitu kilichobadilika kwenye pochi yako? Chukua dakika moja kusasisha Vaultara.",
+  "lostWalletBlockNow": "Zuia hizi sasa",
+  "lostWalletBlockNowHint": "Piga simu kila benki au tumia programu yake. Kila dakika ni muhimu.",
+  "lostWalletCall": "Piga simu",
+  "lostWalletAddLine": "Ongeza nambari",
+  "lostWalletNoLine": "Hakuna nambari iliyohifadhiwa. Itafute kwenye programu au tovuti ya benki yako.",
+  "lostWalletBlocked": "Imezuiwa",
+  "lostWalletReplace": "Badilisha hizi",
+  "lostWalletReplaceHint": "Omba mpya na uhifadhi tarehe mpya zikifika.",
+  "lostWalletArrived": "Mpya imefika",
+  "lostWalletCheck": "Kagua hizi",
+  "lostWalletCheckHint": "Uliza kama unahitaji kadi au nambari mpya.",
+  "lostWalletPlanEmptyTitle": "Hakuna kilichohifadhiwa kilichowekwa hapo",
+  "lostWalletPlanEmpty": "Hatua zilizo hapa chini bado zinasaidia. Wakati ujao, chagua unapoweka kadi na hati zako.",
+  "lostWalletCaseTitle": "Nambari ya kesi ya polisi",
+  "lostWalletCaseHint": "Benki, kampuni za bima na ofisi mara nyingi huiomba.",
+  "lostWalletCaseLabel": "Nambari ya kesi au marejeleo",
+  "lostWalletCaseSaved": "Nambari ya kesi imehifadhiwa",
+  "lostWalletAbroadTitle": "Uko ng'ambo sasa?",
+  "lostWalletAbroadBody": "Uko kwenye safari {trip}. Ikiwa pasipoti au kitambulisho chako kilikuwemo, wasiliana na ubalozi au ubalozi mdogo kwa hati ya dharura ya kusafiria na umjulishe bima yako ya safari.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Fungua safari",
+  "lostWalletPhoneTitle": "Simu yako nayo ilichukuliwa?",
+  "lostWalletPhoneBody": "Zuia kadi ya SIM na programu za benki kwanza. Kuna mpango kwa hilo.",
+  "lostWalletPhoneButton": "Anza mpango wa simu iliyopotea",
+  "lostWalletStatementNote": "Vaultara itakukumbusha baada ya siku 30, 60 na 90.",
+  "lostWalletStatementTitle": "Kagua taarifa zako za benki",
+  "lostWalletStatementBody": "Tafuta malipo ambayo hukufanya tangu pochi yako ipotee.",
+  "lostWalletFoundButton": "Nimeipata",
+  "lostWalletFoundTitle": "Habari njema!",
+  "lostWalletFoundBody": "Kadi hizi tayari zimezuiwa, kwa hivyo subiri mpya:",
+  "lostWalletFoundNone": "Hakuna kilichozuiwa bado, unaweza kuendelea kama awali.",
+  "lostWalletFoundUnfreeze": "Ikiwa uligandisha kadi kwenye programu ya benki, ondoa ugandishaji kwa zile ambazo hukuzuia.",
+  "lostWalletFoundConfirm": "Funga mpango",
+  "lostWalletFoundOn": "Imepatikana {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Ripoti ya vitu vilivyopotea",
+  "lostWalletReportTitle": "Ripoti ya vitu vilivyopotea",
+  "lostWalletReportWhen": "Tarehe: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Kinachokosekana: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Nambari ya kesi: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Nambari ya kesi: bado haijaripotiwa",
+  "lostWalletReportCount": "{count, plural, other{Vipengee hapa chini: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

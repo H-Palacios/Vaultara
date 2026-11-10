@@ -2285,5 +2285,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Pindah ke rumah baru? Lihat apa lagi yang perlu diperbarui."
+  "lifePlanSuggestMove": "Pindah ke rumah baru? Lihat apa lagi yang perlu diperbarui.",
+  "keptInTitle": "Tempat saya menyimpannya",
+  "keptInSubtitle": "Agar Anda tahu apa yang harus diblokir dan diganti jika hilang",
+  "keptInWallet": "Dompet",
+  "keptInBag": "Tas",
+  "keptInPhoneCase": "Casing ponsel",
+  "keptInTravelPouch": "Kantong perjalanan",
+  "keptInCar": "Mobil",
+  "keptInHome": "Di rumah",
+  "keptInNone": "Belum diatur",
+  "lostLineLabel": "Nomor kartu hilang",
+  "lostLineHelper": "Simpan sekarang. Nomornya tercetak di kartu, jadi tidak ada di tangan saat Anda membutuhkannya.",
+  "lifeEventWalletLost": "Dompet saya hilang",
+  "lifeEventWalletLostBody": "Blokir kartu Anda dulu, lalu ganti dokumen satu per satu.",
+  "lifeEventWalletStolen": "Dompet saya dicuri",
+  "lifeEventWalletStolenBody": "Segera blokir kartu dan laporkan pencurian. Lalu pantau rekening Anda dari penipuan.",
+  "lifeVariantWalletQuestion": "Hilang atau dicuri?",
+  "lifeVariantLost": "Hilang",
+  "lifeVariantStolen": "Dicuri",
+  "lifeTaskWalletFreezeCards": "Bekukan kartu di aplikasi bank jika tersedia",
+  "lifeTaskWalletRetrace": "Hubungi tempat terakhir yang Anda kunjungi dan tanyakan barang hilang",
+  "lifeTaskWalletFraudAlert": "Minta biro kredit atau layanan antipenipuan negara Anda menandai identitas Anda",
+  "lifeTaskWalletStatements": "Periksa mutasi rekening untuk pembayaran yang tidak Anda lakukan",
+  "lifeTaskWalletSubscriptions": "Pasang kartu baru di langganan dan autodebet",
+  "lifeTaskWalletPayApps": "Tambahkan kartu baru ke Google Pay atau Apple Pay",
+  "lifeTaskWalletHealthCard": "Minta kartu peserta baru dari asuransi kesehatan Anda",
+  "lifeTaskWalletTransport": "Blokir kartu transportasi atau tol dan pindahkan saldonya",
+  "lifeTaskWalletLoyalty": "Minta kartu loyalitas baru agar poin Anda tetap ada",
+  "lifeTaskWalletLocks": "Jika ada kunci atau alamat Anda di dalamnya, pertimbangkan mengganti kunci",
+  "lifeTaskWalletInsurance": "Periksa apakah asuransi Anda menanggung dompet dan uang tunai",
+  "lostWalletHeroTitle": "Dompet hilang?",
+  "lostWalletHeroBody": "Vaultara menunjukkan apa yang harus diblokir dulu, apa yang diganti, dan siapa yang harus diberi tahu.",
+  "lostWalletStartTitle": "Apa yang terjadi?",
+  "lostWalletEditTitle": "Ubah detail",
+  "lostWalletLostHint": "Terjatuh atau tertinggal di suatu tempat",
+  "lostWalletStolenHint": "Seseorang mengambilnya",
+  "lostWalletWhatMissing": "Apa yang hilang?",
+  "lostWalletStartButton": "Tunjukkan yang harus saya lakukan",
+  "lostWalletCheckupTitle": "Pemeriksaan dompet",
+  "lostWalletCheckupBody": "Bersiaplah sekarang agar tidak ada yang terlupa jika hilang.",
+  "lostWalletCheckupAllGood": "Semua siap. Jika suatu hari hilang, Anda sudah siap.",
+  "lostWalletSetPlaceBody": "Buka kartu atau dokumen lalu pilih tempat Anda menyimpannya. Lakukan untuk KTP, SIM, dan kartu Anda.",
+  "lostWalletIssuePhotos": "{count, plural, other{Tanpa foto: {count}. Dengan foto, penggantian lebih cepat.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kartu tanpa nomor blokir: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Paspor atau izin yang Anda bawa: {count}. Simpan di rumah kecuali sedang bepergian.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Yang Anda bawa",
+  "lostWalletNoPhoto": "Tidak ada foto",
+  "lostWalletHasPhoto": "Foto disimpan",
+  "lostWalletNoLineShort": "Tidak ada nomor blokir",
+  "lostWalletHistory": "Kejadian sebelumnya",
+  "lostWalletFound": "Ditemukan",
+  "walletCheckToggle": "Ingatkan saya setiap 6 bulan",
+  "walletCheckToggleBody": "Sekilas melihat apa yang Anda bawa agar daftarnya tetap benar.",
+  "walletCheckReminderTitle": "Pemeriksaan dompet",
+  "walletCheckReminderBody": "Ada yang berubah di dompet Anda? Luangkan semenit untuk memperbarui Vaultara.",
+  "lostWalletBlockNow": "Blokir ini sekarang",
+  "lostWalletBlockNowHint": "Hubungi setiap bank atau gunakan aplikasinya. Setiap menit berharga.",
+  "lostWalletCall": "Telepon",
+  "lostWalletAddLine": "Tambahkan nomor",
+  "lostWalletNoLine": "Belum ada nomor tersimpan. Cari di aplikasi atau situs bank Anda.",
+  "lostWalletBlocked": "Diblokir",
+  "lostWalletReplace": "Ganti ini",
+  "lostWalletReplaceHint": "Ajukan yang baru dan simpan tanggal barunya saat tiba.",
+  "lostWalletArrived": "Yang baru sudah tiba",
+  "lostWalletCheck": "Periksa ini",
+  "lostWalletCheckHint": "Tanyakan apakah Anda perlu kartu atau nomor baru.",
+  "lostWalletPlanEmptyTitle": "Tidak ada yang tersimpan di sana",
+  "lostWalletPlanEmpty": "Langkah di bawah tetap membantu. Lain kali, pilih tempat Anda menyimpan kartu dan dokumen.",
+  "lostWalletCaseTitle": "Nomor laporan polisi",
+  "lostWalletCaseHint": "Bank, perusahaan asuransi, dan kantor sering memintanya.",
+  "lostWalletCaseLabel": "Nomor kasus atau referensi",
+  "lostWalletCaseSaved": "Nomor laporan disimpan",
+  "lostWalletAbroadTitle": "Sedang di luar negeri?",
+  "lostWalletAbroadBody": "Anda sedang dalam perjalanan {trip}. Jika paspor atau KTP ada di dalamnya, hubungi kedutaan atau konsulat untuk dokumen perjalanan darurat dan beri tahu asuransi perjalanan Anda.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Buka perjalanan",
+  "lostWalletPhoneTitle": "Ponsel Anda juga diambil?",
+  "lostWalletPhoneBody": "Blokir kartu SIM dan aplikasi bank lebih dulu. Ada rencana untuk itu.",
+  "lostWalletPhoneButton": "Mulai rencana ponsel hilang",
+  "lostWalletStatementNote": "Vaultara akan mengingatkan Anda setelah 30, 60, dan 90 hari.",
+  "lostWalletStatementTitle": "Periksa mutasi rekening",
+  "lostWalletStatementBody": "Cari pembayaran yang tidak Anda lakukan sejak dompet hilang.",
+  "lostWalletFoundButton": "Sudah ketemu",
+  "lostWalletFoundTitle": "Kabar baik!",
+  "lostWalletFoundBody": "Kartu-kartu ini sudah diblokir, jadi tunggu yang baru:",
+  "lostWalletFoundNone": "Belum ada yang diblokir, Anda bisa lanjut seperti biasa.",
+  "lostWalletFoundUnfreeze": "Jika Anda membekukan kartu di aplikasi bank, cairkan kartu yang tidak Anda blokir.",
+  "lostWalletFoundConfirm": "Tutup rencana",
+  "lostWalletFoundOn": "Ditemukan pada {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Laporan barang hilang",
+  "lostWalletReportTitle": "Laporan barang hilang",
+  "lostWalletReportWhen": "Tanggal: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Yang hilang: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Nomor laporan: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Nomor laporan: belum dilaporkan",
+  "lostWalletReportCount": "{count, plural, other{Item di bawah: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

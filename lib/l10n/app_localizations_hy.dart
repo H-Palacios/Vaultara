@@ -7172,4 +7172,324 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Տեղափոխվո՞ւմ եք նոր տուն։ Տեսեք, թե էլ ինչ պետք է թարմացնել։';
+
+  @override
+  String get keptInTitle => 'Որտեղ եմ պահում';
+
+  @override
+  String get keptInSubtitle => 'Որպեսզի իմանաք՝ կորչելու դեպքում ինչ արգելափակել և ինչ փոխարինել';
+
+  @override
+  String get keptInWallet => 'Դրամապանակ';
+
+  @override
+  String get keptInBag => 'Պայուսակ';
+
+  @override
+  String get keptInPhoneCase => 'Հեռախոսի պատյան';
+
+  @override
+  String get keptInTravelPouch => 'Ճանապարհորդական պայուսակ';
+
+  @override
+  String get keptInCar => 'Մեքենա';
+
+  @override
+  String get keptInHome => 'Տանը';
+
+  @override
+  String get keptInNone => 'Ընտրված չէ';
+
+  @override
+  String get lostLineLabel => 'Կորած քարտի համար';
+
+  @override
+  String get lostLineHelper => 'Պահպանեք հիմա։ Համարը տպված է քարտի վրա, ուստի պետք եղած պահին ձեզ մոտ չի լինի։';
+
+  @override
+  String get lifeEventWalletLost => 'Կորցրի դրամապանակս';
+
+  @override
+  String get lifeEventWalletLostBody => 'Նախ արգելափակեք քարտերը, հետո փաստաթղթերը փոխարինեք մեկ առ մեկ։';
+
+  @override
+  String get lifeEventWalletStolen => 'Դրամապանակս գողացան';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Անմիջապես արգելափակեք քարտերը և հայտնեք գողության մասին։ Հետո հետևեք հաշիվներին խարդախությունից։';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Կորե՞լ է, թե՞ գողացել են';
+
+  @override
+  String get lifeVariantLost => 'Կորել է';
+
+  @override
+  String get lifeVariantStolen => 'Գողացել են';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Եթե բանկի հավելվածը թույլ է տալիս, սառեցրեք քարտերը';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Զանգեք վերջին վայրերը, որտեղ եղել եք, և հարցրեք կորած իրերի մասին';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Խնդրեք վարկային բյուրոներին կամ ձեր երկրի հակախարդախության ծառայությանը նշել ձեր անձնագիրը';
+
+  @override
+  String get lifeTaskWalletStatements => 'Ստուգեք բանկային քաղվածքները՝ ձեր չկատարած վճարումների համար';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Նոր քարտը կապեք բաժանորդագրություններին և ավտոմատ վճարումներին';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Ավելացրեք նոր քարտերը Google Pay կամ Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Առողջության ապահովագրությունից խնդրեք նոր անդամության քարտ';
+
+  @override
+  String get lifeTaskWalletTransport => 'Արգելափակեք տրանսպորտային կամ ճանապարհավճարի քարտը և փոխանցեք մնացորդը';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Խնդրեք նոր հավատարմության քարտեր՝ միավորները պահելու համար';
+
+  @override
+  String get lifeTaskWalletLocks => 'Եթե ներսում բանալիներ կամ ձեր հասցեն կար, մտածեք կողպեքները փոխելու մասին';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Ստուգեք՝ արդյոք ապահովագրությունը ծածկում է դրամապանակը և կանխիկը';
+
+  @override
+  String get lostWalletHeroTitle => 'Կորցրե՞լ եք դրամապանակը';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara-ն ցույց է տալիս՝ ինչ արգելափակել առաջինը, ինչ փոխարինել և ում տեղեկացնել։';
+
+  @override
+  String get lostWalletStartTitle => 'Ի՞նչ պատահեց';
+
+  @override
+  String get lostWalletEditTitle => 'Փոխել մանրամասները';
+
+  @override
+  String get lostWalletLostHint => 'Ընկավ կամ ինչ-որ տեղ մոռացա';
+
+  @override
+  String get lostWalletStolenHint => 'Ինչ-որ մեկը վերցրեց';
+
+  @override
+  String get lostWalletWhatMissing => 'Ի՞նչն է պակասում';
+
+  @override
+  String get lostWalletStartButton => 'Ցույց տուր ինչ անել';
+
+  @override
+  String get lostWalletCheckupTitle => 'Դրամապանակի ստուգում';
+
+  @override
+  String get lostWalletCheckupBody => 'Պատրաստվեք հիմա, որպեսզի կորչելու դեպքում ոչինչ չմոռացվի։';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Ամեն ինչ պատրաստ է։ Եթե երբևէ կորչի, դուք պատրաստ եք։';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Բացեք քարտ կամ փաստաթուղթ և ընտրեք՝ որտեղ եք պահում։ Արեք սա անձնագրի, վարորդական իրավունքի և քարտերի համար։';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Առանց լուսանկարի՝ $count։ Լուսանկարով փոխարինելն ավելի արագ է։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Արգելափակման համար չունեցող քարտեր՝ $count։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ձեզ մոտ եղած անձնագրեր կամ թույլտվություններ՝ $count։ Եթե չեք ճանապարհորդում, պահեք տանը։',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Ինչ եք կրում ձեզ հետ';
+
+  @override
+  String get lostWalletNoPhoto => 'Լուսանկար չկա';
+
+  @override
+  String get lostWalletHasPhoto => 'Լուսանկարը պահպանվեց';
+
+  @override
+  String get lostWalletNoLineShort => 'Արգելափակման համար չկա';
+
+  @override
+  String get lostWalletHistory => 'Նախորդ դեպքեր';
+
+  @override
+  String get lostWalletFound => 'Գտնվեց';
+
+  @override
+  String get walletCheckToggle => 'Հիշեցնել 6 ամիսը մեկ';
+
+  @override
+  String get walletCheckToggleBody => 'Արագ հայացք ձեր կրածին, որպեսզի ցուցակը ճիշտ մնա։';
+
+  @override
+  String get walletCheckReminderTitle => 'Դրամապանակի ստուգում';
+
+  @override
+  String get walletCheckReminderBody => 'Ինչ-որ բան փոխվե՞լ է ձեր դրամապանակում։ Մեկ րոպե տրամադրեք Vaultara-ն թարմացնելուն։';
+
+  @override
+  String get lostWalletBlockNow => 'Արգելափակեք սրանք հիմա';
+
+  @override
+  String get lostWalletBlockNowHint => 'Զանգեք յուրաքանչյուր բանկ կամ օգտագործեք նրա հավելվածը։ Յուրաքանչյուր րոպե կարևոր է։';
+
+  @override
+  String get lostWalletCall => 'Զանգել';
+
+  @override
+  String get lostWalletAddLine => 'Ավելացնել համարը';
+
+  @override
+  String get lostWalletNoLine => 'Համար պահպանված չէ։ Գտեք այն բանկի հավելվածում կամ կայքում։';
+
+  @override
+  String get lostWalletBlocked => 'Արգելափակված է';
+
+  @override
+  String get lostWalletReplace => 'Փոխարինեք սրանք';
+
+  @override
+  String get lostWalletReplaceHint => 'Դիմեք նորերի համար և պահպանեք նոր ամսաթիվը, երբ ժամանեն։';
+
+  @override
+  String get lostWalletArrived => 'Նորը եկավ';
+
+  @override
+  String get lostWalletCheck => 'Ստուգեք սրանք';
+
+  @override
+  String get lostWalletCheckHint => 'Հարցրեք՝ արդյոք նոր քարտ կամ համար է պետք։';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Այնտեղ պահպանված ոչինչ չկար';
+
+  @override
+  String get lostWalletPlanEmpty => 'Ստորև բերված քայլերը դեռ օգնում են։ Հաջորդ անգամ ընտրեք՝ որտեղ եք պահում քարտերն ու փաստաթղթերը։';
+
+  @override
+  String get lostWalletCaseTitle => 'Ոստիկանության գործի համար';
+
+  @override
+  String get lostWalletCaseHint => 'Բանկերը, ապահովագրողները և գրասենյակները հաճախ են այն խնդրում։';
+
+  @override
+  String get lostWalletCaseLabel => 'Գործի կամ հղման համար';
+
+  @override
+  String get lostWalletCaseSaved => 'Գործի համարը պահպանվեց';
+
+  @override
+  String get lostWalletAbroadTitle => 'Հիմա արտերկրո՞ւմ եք';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Դուք $trip ճանապարհորդության մեջ եք։ Եթե ներսում անձնագիրը կամ նույնականացման քարտն էր, դիմեք դեսպանատուն կամ հյուպատոսություն արտակարգ ճանապարհորդական փաստաթղթի համար և տեղեկացրեք ճանապարհորդական ապահովագրությանը։';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Բացել ճանապարհորդությունը';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ձեր հեռախոսն էլ վերցրի՞ն';
+
+  @override
+  String get lostWalletPhoneBody => 'Նախ արգելափակեք SIM քարտը և բանկային հավելվածները։ Դրա համար պլան կա։';
+
+  @override
+  String get lostWalletPhoneButton => 'Սկսել կորած հեռախոսի պլանը';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara-ն կհիշեցնի 30, 60 և 90 օր հետո։';
+
+  @override
+  String get lostWalletStatementTitle => 'Ստուգեք բանկային քաղվածքները';
+
+  @override
+  String get lostWalletStatementBody => 'Փնտրեք վճարումներ, որոնք չեք կատարել դրամապանակը կորցնելուց հետո։';
+
+  @override
+  String get lostWalletFoundButton => 'Գտա';
+
+  @override
+  String get lostWalletFoundTitle => 'Լավ լուր։';
+
+  @override
+  String get lostWalletFoundBody => 'Այս քարտերն արդեն արգելափակված են, ուստի սպասեք նորերին։';
+
+  @override
+  String get lostWalletFoundNone => 'Դեռ ոչինչ արգելափակված չէ, կարող եք շարունակել ինչպես առաջ։';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Եթե բանկի հավելվածում քարտեր եք սառեցրել, ապասառեցրեք նրանք, որոնք չեք արգելափակել։';
+
+  @override
+  String get lostWalletFoundConfirm => 'Փակել պլանը';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Գտնվել է $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Կորած իրերի հաշվետվություն';
+
+  @override
+  String get lostWalletReportTitle => 'Կորած իրերի հաշվետվություն';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Ամսաթիվ՝ $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Ինչն է պակասում՝ $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Գործի համար՝ $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Գործի համար՝ դեռ չի հայտնվել';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ստորև նշված տարրեր՝ $count',
+    );
+    return '$_temp0';
+  }
 }

@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "အိမ်အသစ်သို့ ပြောင်းမလား? အခြား ဘာတွေ ပြင်ဆင်ရမည်ကို ကြည့်ပါ။"
+  "lifePlanSuggestMove": "အိမ်အသစ်သို့ ပြောင်းမလား? အခြား ဘာတွေ ပြင်ဆင်ရမည်ကို ကြည့်ပါ။",
+  "keptInTitle": "ကျွန်ုပ် သိမ်းထားသည့်နေရာ",
+  "keptInSubtitle": "ပျောက်သွားပါက ဘာကိုပိတ်ပြီး ဘာကိုအစားထိုးရမလဲ သိနိုင်ရန်",
+  "keptInWallet": "ပိုက်ဆံအိတ်",
+  "keptInBag": "အိတ်",
+  "keptInPhoneCase": "ဖုန်းအိတ်",
+  "keptInTravelPouch": "ခရီးဆောင်အိတ်ငယ်",
+  "keptInCar": "ကား",
+  "keptInHome": "အိမ်မှာ",
+  "keptInNone": "မသတ်မှတ်ရသေး",
+  "lostLineLabel": "ပျောက်ကတ် ဖုန်းနံပါတ်",
+  "lostLineHelper": "ယခုပင် သိမ်းထားပါ။ နံပါတ်က ကတ်ပေါ်တွင် ပုံနှိပ်ထားသဖြင့် လိုအပ်ချိန်တွင် သင့်ထံ ရှိမည်မဟုတ်ပါ။",
+  "lifeEventWalletLost": "ကျွန်ုပ်၏ ပိုက်ဆံအိတ် ပျောက်သွားသည်",
+  "lifeEventWalletLostBody": "ကတ်များကို အရင်ပိတ်ပါ၊ ထို့နောက် စာရွက်စာတမ်းများကို တစ်ခုချင်း အစားထိုးပါ။",
+  "lifeEventWalletStolen": "ကျွန်ုပ်၏ ပိုက်ဆံအိတ် ခိုးခံရသည်",
+  "lifeEventWalletStolenBody": "ကတ်များကို ချက်ချင်းပိတ်ပြီး ခိုးမှုကို တိုင်ကြားပါ။ ထို့နောက် လိမ်လည်မှုအတွက် အကောင့်များကို စောင့်ကြည့်ပါ။",
+  "lifeVariantWalletQuestion": "ပျောက်သလား၊ ခိုးခံရသလား?",
+  "lifeVariantLost": "ပျောက်သည်",
+  "lifeVariantStolen": "ခိုးခံရသည်",
+  "lifeTaskWalletFreezeCards": "ဘဏ်အက်ပ်တွင် ရွေးချယ်စရာရှိပါက ကတ်များကို ခဏရပ်ထားပါ",
+  "lifeTaskWalletRetrace": "နောက်ဆုံးရောက်ခဲ့သည့်နေရာများကို ဖုန်းဆက်ပြီး ပျောက်ပစ္စည်းအကြောင်း မေးပါ",
+  "lifeTaskWalletFraudAlert": "ခရက်ဒစ်ဗျူရိုများ သို့မဟုတ် သင့်နိုင်ငံ၏ လိမ်လည်မှုဆိုင်ရာ ဝန်ဆောင်မှုကို သင့်မှတ်ပုံတင်အား အမှတ်အသားပြုရန် တောင်းဆိုပါ",
+  "lifeTaskWalletStatements": "သင်မပြုလုပ်ခဲ့သော ငွေပေးချေမှုများအတွက် ဘဏ်စာရင်းရှင်းတမ်းများကို စစ်ဆေးပါ",
+  "lifeTaskWalletSubscriptions": "ကတ်အသစ်ကို စာရင်းသွင်းမှုများနှင့် အလိုအလျောက်ငွေဖြတ်မှုများတွင် ထည့်ပါ",
+  "lifeTaskWalletPayApps": "ကတ်အသစ်များကို Google Pay သို့မဟုတ် Apple Pay သို့ ထည့်ပါ",
+  "lifeTaskWalletHealthCard": "ကျန်းမာရေးအာမခံထံမှ အဖွဲ့ဝင်ကတ်အသစ် တောင်းပါ",
+  "lifeTaskWalletTransport": "ခရီးသွားကတ် သို့မဟုတ် လမ်းကြေးကတ်ကို ပိတ်ပြီး လက်ကျန်ငွေကို လွှဲပါ",
+  "lifeTaskWalletLoyalty": "အမှတ်များ ထိန်းထားနိုင်ရန် သစ္စာရှိမှုကတ်အသစ်များ တောင်းပါ",
+  "lifeTaskWalletLocks": "သော့ သို့မဟုတ် သင့်လိပ်စာ ပါခဲ့ပါက သော့ခလောက်များ လဲရန် စဉ်းစားပါ",
+  "lifeTaskWalletInsurance": "သင့်အာမခံက ပိုက်ဆံအိတ်နှင့် ငွေသားကို ကာမိမကာမိ စစ်ဆေးပါ",
+  "lostWalletHeroTitle": "ပိုက်ဆံအိတ် ပျောက်သွားပြီလား?",
+  "lostWalletHeroBody": "ဘာကို အရင်ပိတ်ရမလဲ၊ ဘာကို အစားထိုးရမလဲ၊ ဘယ်သူ့ကို ပြောရမလဲ Vaultara က ပြသည်။",
+  "lostWalletStartTitle": "ဘာဖြစ်ခဲ့သလဲ?",
+  "lostWalletEditTitle": "အသေးစိတ်ကို ပြောင်းပါ",
+  "lostWalletLostHint": "ပြုတ်ကျသွားသည် သို့မဟုတ် တစ်နေရာတွင် မေ့ကျန်ခဲ့သည်",
+  "lostWalletStolenHint": "တစ်စုံတစ်ယောက် ယူသွားသည်",
+  "lostWalletWhatMissing": "ဘာပျောက်နေသလဲ?",
+  "lostWalletStartButton": "ဘာလုပ်ရမလဲ ပြပါ",
+  "lostWalletCheckupTitle": "ပိုက်ဆံအိတ် စစ်ဆေးမှု",
+  "lostWalletCheckupBody": "ပျောက်သွားပါက ဘာမှမမေ့စေရန် ယခုပင် ပြင်ဆင်ထားပါ။",
+  "lostWalletCheckupAllGood": "အားလုံး အဆင်သင့်ပါ။ တစ်နေ့ ပျောက်သွားလျှင် သင် အဆင်သင့်ဖြစ်နေပါပြီ။",
+  "lostWalletSetPlaceBody": "ကတ် သို့မဟုတ် စာရွက်စာတမ်းကို ဖွင့်ပြီး သိမ်းထားသည့်နေရာကို ရွေးပါ။ မှတ်ပုံတင်၊ လိုင်စင်နှင့် ကတ်များအတွက် ဤသို့ပြုလုပ်ပါ။",
+  "lostWalletIssuePhotos": "{count, plural, other{ဓာတ်ပုံမရှိ: {count}။ ဓာတ်ပုံရှိလျှင် အစားထိုးရန် ပိုမြန်သည်။}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ပိတ်ရန်နံပါတ်မရှိသော ကတ်များ: {count}။}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{သင်ယူဆောင်ထားသော နိုင်ငံကူးလက်မှတ် သို့မဟုတ် ခွင့်ပြုချက်: {count}။ ခရီးမသွားလျှင် အိမ်တွင် ထားပါ။}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "သင်ယူဆောင်ထားသည်များ",
+  "lostWalletNoPhoto": "ဓာတ်ပုံမရှိ",
+  "lostWalletHasPhoto": "ဓာတ်ပုံ သိမ်းပြီး",
+  "lostWalletNoLineShort": "ပိတ်ရန်နံပါတ်မရှိ",
+  "lostWalletHistory": "ယခင်အကြိမ်များ",
+  "lostWalletFound": "တွေ့ပြီ",
+  "walletCheckToggle": "၆ လတစ်ကြိမ် သတိပေးပါ",
+  "walletCheckToggleBody": "စာရင်းမှန်ကန်စေရန် သင်ယူဆောင်ထားသည်များကို အမြန်ကြည့်ခြင်း။",
+  "walletCheckReminderTitle": "ပိုက်ဆံအိတ် စစ်ဆေးမှု",
+  "walletCheckReminderBody": "သင့်ပိုက်ဆံအိတ်ထဲတွင် တစ်ခုခု ပြောင်းလဲသွားသလား? Vaultara ကို အပ်ဒိတ်လုပ်ရန် တစ်မိနစ် ယူပါ။",
+  "lostWalletBlockNow": "ဤအရာများကို ယခုပိတ်ပါ",
+  "lostWalletBlockNowHint": "ဘဏ်တစ်ခုချင်းစီကို ဖုန်းဆက်ပါ သို့မဟုတ် ၎င်း၏အက်ပ်ကို သုံးပါ။ မိနစ်တိုင်း အရေးကြီးသည်။",
+  "lostWalletCall": "ဖုန်းဆက်ရန်",
+  "lostWalletAddLine": "နံပါတ်ထည့်ရန်",
+  "lostWalletNoLine": "နံပါတ် မသိမ်းရသေးပါ။ ဘဏ်၏ အက်ပ် သို့မဟုတ် ဝက်ဘ်ဆိုက်တွင် ရှာပါ။",
+  "lostWalletBlocked": "ပိတ်ပြီး",
+  "lostWalletReplace": "ဤအရာများကို အစားထိုးပါ",
+  "lostWalletReplaceHint": "အသစ်များအတွက် လျှောက်ထားပြီး ရောက်လာသည့်အခါ ရက်စွဲအသစ်ကို သိမ်းပါ။",
+  "lostWalletArrived": "အသစ် ရောက်ပြီ",
+  "lostWalletCheck": "ဤအရာများကို စစ်ဆေးပါ",
+  "lostWalletCheckHint": "ကတ် သို့မဟုတ် နံပါတ်အသစ် လိုအပ်မလား မေးပါ။",
+  "lostWalletPlanEmptyTitle": "ထိုနေရာတွင် ဘာမှ မသိမ်းထားပါ",
+  "lostWalletPlanEmpty": "အောက်ပါအဆင့်များက ကူညီနိုင်ဆဲဖြစ်သည်။ နောက်တစ်ကြိမ် ကတ်များနှင့် စာရွက်စာတမ်းများ သိမ်းထားသည့်နေရာကို ရွေးပါ။",
+  "lostWalletCaseTitle": "ရဲအမှုနံပါတ်",
+  "lostWalletCaseHint": "ဘဏ်များ၊ အာမခံကုမ္ပဏီများနှင့် ရုံးများက မကြာခဏ တောင်းသည်။",
+  "lostWalletCaseLabel": "အမှု သို့မဟုတ် ရည်ညွှန်းနံပါတ်",
+  "lostWalletCaseSaved": "အမှုနံပါတ် သိမ်းပြီး",
+  "lostWalletAbroadTitle": "ယခု နိုင်ငံခြားမှာလား?",
+  "lostWalletAbroadBody": "သင် {trip} ခရီးတွင် ရှိနေသည်။ နိုင်ငံကူးလက်မှတ် သို့မဟုတ် မှတ်ပုံတင် ပါခဲ့ပါက အရေးပေါ် ခရီးသွားစာရွက်စာတမ်းအတွက် သံရုံး သို့မဟုတ် ကောင်စစ်ဝန်ရုံးကို ဆက်သွယ်ပြီး ခရီးသွားအာမခံကို အကြောင်းကြားပါ။",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ခရီးကို ဖွင့်ရန်",
+  "lostWalletPhoneTitle": "သင့်ဖုန်းလည်း ယူသွားသလား?",
+  "lostWalletPhoneBody": "SIM ကတ်နှင့် ဘဏ်အက်ပ်များကို အရင်ပိတ်ပါ။ ၎င်းအတွက် အစီအစဉ်တစ်ခု ရှိသည်။",
+  "lostWalletPhoneButton": "ပျောက်ဖုန်း အစီအစဉ် စတင်ရန်",
+  "lostWalletStatementNote": "Vaultara က ရက် 30၊ 60 နှင့် 90 ကြာပြီးနောက် သတိပေးမည်။",
+  "lostWalletStatementTitle": "ဘဏ်စာရင်းရှင်းတမ်းများ စစ်ဆေးပါ",
+  "lostWalletStatementBody": "ပိုက်ဆံအိတ် ပျောက်ပြီးကတည်းက သင်မပြုလုပ်ခဲ့သော ငွေပေးချေမှုများကို ရှာပါ။",
+  "lostWalletFoundButton": "တွေ့ပြီ",
+  "lostWalletFoundTitle": "သတင်းကောင်း!",
+  "lostWalletFoundBody": "ဤကတ်များ ပိတ်ပြီးဖြစ်သဖြင့် အသစ်များကို စောင့်ပါ:",
+  "lostWalletFoundNone": "ဘာမှ မပိတ်ရသေးပါ၊ ယခင်အတိုင်း ဆက်လုပ်နိုင်သည်။",
+  "lostWalletFoundUnfreeze": "ဘဏ်အက်ပ်တွင် ကတ်များကို ခဏရပ်ထားခဲ့ပါက မပိတ်ခဲ့သည့်ကတ်များကို ပြန်ဖွင့်ပါ။",
+  "lostWalletFoundConfirm": "အစီအစဉ် ပိတ်ရန်",
+  "lostWalletFoundOn": "{date} တွင် တွေ့ခဲ့သည်",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "ပျောက်ပစ္စည်း အစီရင်ခံစာ",
+  "lostWalletReportTitle": "ပျောက်ပစ္စည်း အစီရင်ခံစာ",
+  "lostWalletReportWhen": "ရက်စွဲ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "ပျောက်နေသည်များ: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "အမှုနံပါတ်: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "အမှုနံပါတ်: မတိုင်ကြားရသေး",
+  "lostWalletReportCount": "{count, plural, other{အောက်ပါအရာများ: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

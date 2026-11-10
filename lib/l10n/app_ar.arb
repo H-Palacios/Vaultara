@@ -2318,5 +2318,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "هل تنتقل إلى منزل جديد؟ اطّلع على ما يجب تحديثه أيضًا."
+  "lifePlanSuggestMove": "هل تنتقل إلى منزل جديد؟ اطّلع على ما يجب تحديثه أيضًا.",
+  "keptInTitle": "أين أحتفظ به",
+  "keptInSubtitle": "لتعرف ما يجب إيقافه واستبداله إذا ضاع",
+  "keptInWallet": "المحفظة",
+  "keptInBag": "الحقيبة",
+  "keptInPhoneCase": "غطاء الهاتف",
+  "keptInTravelPouch": "حقيبة السفر الصغيرة",
+  "keptInCar": "السيارة",
+  "keptInHome": "في المنزل",
+  "keptInNone": "غير محدد",
+  "lostLineLabel": "رقم إيقاف البطاقة المفقودة",
+  "lostLineHelper": "احفظه الآن. الرقم مطبوع على البطاقة، فلن يكون معك حين تحتاج إليه.",
+  "lifeEventWalletLost": "أضعت محفظتي",
+  "lifeEventWalletLostBody": "أوقف بطاقاتك أولًا، ثم استبدل مستنداتك واحدًا تلو الآخر.",
+  "lifeEventWalletStolen": "سُرقت محفظتي",
+  "lifeEventWalletStolenBody": "أوقف بطاقاتك فورًا وأبلغ عن السرقة. ثم راقب حساباتك تحسبًا للاحتيال.",
+  "lifeVariantWalletQuestion": "هل ضاعت أم سُرقت؟",
+  "lifeVariantLost": "ضاعت",
+  "lifeVariantStolen": "سُرقت",
+  "lifeTaskWalletFreezeCards": "جمّد بطاقاتك في تطبيق البنك إن كان يتيح ذلك",
+  "lifeTaskWalletRetrace": "اتصل بآخر الأماكن التي كنت فيها واسأل عن المفقودات",
+  "lifeTaskWalletFraudAlert": "اطلب من مكاتب الائتمان أو خدمة مكافحة الاحتيال في بلدك وضع علامة على هويتك",
+  "lifeTaskWalletStatements": "راجع كشوف حسابك بحثًا عن مدفوعات لم تقم بها",
+  "lifeTaskWalletSubscriptions": "ضع البطاقة الجديدة على اشتراكاتك وأوامر الخصم المباشر",
+  "lifeTaskWalletPayApps": "أضف البطاقات الجديدة إلى Google Pay أو Apple Pay",
+  "lifeTaskWalletHealthCard": "اطلب بطاقة عضوية جديدة من تأمينك الصحي",
+  "lifeTaskWalletTransport": "أوقف بطاقة المواصلات أو رسوم الطرق وانقل الرصيد",
+  "lifeTaskWalletLoyalty": "اطلب بطاقات ولاء جديدة لتحتفظ بنقاطك",
+  "lifeTaskWalletLocks": "إن كانت فيها مفاتيح أو عنوانك، ففكّر في تغيير الأقفال",
+  "lifeTaskWalletInsurance": "تحقق مما إذا كان تأمينك يغطي المحفظة والنقود",
+  "lostWalletHeroTitle": "أضعت محفظتك؟",
+  "lostWalletHeroBody": "يعرض Vaultara ما يجب إيقافه أولًا، وما يجب استبداله، ومن يجب إبلاغه.",
+  "lostWalletStartTitle": "ماذا حدث؟",
+  "lostWalletEditTitle": "تغيير التفاصيل",
+  "lostWalletLostHint": "سقطت أو نسيتها في مكان ما",
+  "lostWalletStolenHint": "أخذها شخص ما",
+  "lostWalletWhatMissing": "ما المفقود؟",
+  "lostWalletStartButton": "أرني ما أفعله",
+  "lostWalletCheckupTitle": "فحص المحفظة",
+  "lostWalletCheckupBody": "استعد الآن حتى لا تنسى شيئًا إن ضاعت.",
+  "lostWalletCheckupAllGood": "كل شيء جاهز. إن ضاعت يومًا فأنت مستعد.",
+  "lostWalletSetPlaceBody": "افتح بطاقة أو مستندًا واختر أين تحتفظ به. افعل ذلك لهويتك ورخصة القيادة وبطاقاتك.",
+  "lostWalletIssuePhotos": "{count, plural, other{بلا صورة: {count}. الصورة تسرّع الاستبدال.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{بطاقات بلا رقم إيقاف: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{جوازات أو تصاريح تحملها: {count}. اتركها في المنزل ما لم تسافر.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ما تحمله معك",
+  "lostWalletNoPhoto": "لا توجد صورة",
+  "lostWalletHasPhoto": "تم حفظ الصورة",
+  "lostWalletNoLineShort": "لا يوجد رقم إيقاف",
+  "lostWalletHistory": "المرات السابقة",
+  "lostWalletFound": "عُثر عليها",
+  "walletCheckToggle": "ذكّرني كل 6 أشهر",
+  "walletCheckToggleBody": "نظرة سريعة على ما تحمله ليبقى القائمة صحيحة.",
+  "walletCheckReminderTitle": "فحص المحفظة",
+  "walletCheckReminderBody": "هل تغيّر شيء في محفظتك؟ خذ دقيقة لتحديث Vaultara.",
+  "lostWalletBlockNow": "أوقف هذه الآن",
+  "lostWalletBlockNowHint": "اتصل بكل بنك أو استخدم تطبيقه. كل دقيقة مهمة.",
+  "lostWalletCall": "اتصال",
+  "lostWalletAddLine": "إضافة الرقم",
+  "lostWalletNoLine": "لا يوجد رقم محفوظ. ابحث عنه في تطبيق البنك أو موقعه.",
+  "lostWalletBlocked": "موقوفة",
+  "lostWalletReplace": "استبدل هذه",
+  "lostWalletReplaceHint": "اطلب بدائل جديدة واحفظ التاريخ الجديد عند وصولها.",
+  "lostWalletArrived": "وصل الجديد",
+  "lostWalletCheck": "تحقق من هذه",
+  "lostWalletCheckHint": "اسأل إن كنت تحتاج بطاقة أو رقمًا جديدًا.",
+  "lostWalletPlanEmptyTitle": "لم يكن هناك شيء محفوظ",
+  "lostWalletPlanEmpty": "الخطوات أدناه لا تزال مفيدة. في المرة القادمة، اختر أين تحتفظ ببطاقاتك ومستنداتك.",
+  "lostWalletCaseTitle": "رقم البلاغ لدى الشرطة",
+  "lostWalletCaseHint": "كثيرًا ما تطلبه البنوك وشركات التأمين والجهات الرسمية.",
+  "lostWalletCaseLabel": "رقم القضية أو المرجع",
+  "lostWalletCaseSaved": "تم حفظ رقم البلاغ",
+  "lostWalletAbroadTitle": "في الخارج الآن؟",
+  "lostWalletAbroadBody": "أنت في رحلة {trip}. إن كان جواز سفرك أو هويتك فيها، فتواصل مع سفارتك أو قنصليتك للحصول على وثيقة سفر طارئة، وأبلغ تأمين السفر.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "فتح الرحلة",
+  "lostWalletPhoneTitle": "هل أُخذ هاتفك أيضًا؟",
+  "lostWalletPhoneBody": "أوقف شريحة SIM وتطبيقات البنك أولًا. هناك خطة لذلك.",
+  "lostWalletPhoneButton": "بدء خطة الهاتف المفقود",
+  "lostWalletStatementNote": "سيذكّرك Vaultara بعد 30 و60 و90 يومًا.",
+  "lostWalletStatementTitle": "راجع كشوف حسابك",
+  "lostWalletStatementBody": "ابحث عن مدفوعات لم تقم بها منذ ضياع محفظتك.",
+  "lostWalletFoundButton": "وجدتها",
+  "lostWalletFoundTitle": "أخبار سارة!",
+  "lostWalletFoundBody": "هذه البطاقات موقوفة بالفعل، فترقّب البطاقات الجديدة:",
+  "lostWalletFoundNone": "لم يُوقف شيء بعد، يمكنك المتابعة كما كنت.",
+  "lostWalletFoundUnfreeze": "إن جمّدت بطاقات في تطبيق البنك، فألغِ تجميد التي لم توقفها.",
+  "lostWalletFoundConfirm": "إغلاق الخطة",
+  "lostWalletFoundOn": "عُثر عليها في {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "تقرير المفقودات",
+  "lostWalletReportTitle": "تقرير المفقودات",
+  "lostWalletReportWhen": "التاريخ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "المفقود: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "رقم البلاغ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "رقم البلاغ: لم يُبلَّغ بعد",
+  "lostWalletReportCount": "{count, plural, other{العناصر أدناه: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

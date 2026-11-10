@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "ახალ სახლში გადადიხართ? ნახეთ, კიდევ რა უნდა განაახლოთ."
+  "lifePlanSuggestMove": "ახალ სახლში გადადიხართ? ნახეთ, კიდევ რა უნდა განაახლოთ.",
+  "keptInTitle": "სად ვინახავ",
+  "keptInSubtitle": "რომ იცოდეთ, დაკარგვისას რა დაბლოკოთ და რა შეცვალოთ",
+  "keptInWallet": "საფულე",
+  "keptInBag": "ჩანთა",
+  "keptInPhoneCase": "ტელეფონის ქეისი",
+  "keptInTravelPouch": "სამგზავრო ჩანთა",
+  "keptInCar": "მანქანა",
+  "keptInHome": "სახლში",
+  "keptInNone": "არ არის არჩეული",
+  "lostLineLabel": "დაკარგული ბარათის ნომერი",
+  "lostLineHelper": "შეინახეთ ახლავე. ნომერი ბარათზეა დაბეჭდილი, ამიტომ როცა დაგჭირდებათ, თან არ გექნებათ.",
+  "lifeEventWalletLost": "საფულე დავკარგე",
+  "lifeEventWalletLostBody": "ჯერ დაბლოკეთ ბარათები, შემდეგ დოკუმენტები სათითაოდ შეცვალეთ.",
+  "lifeEventWalletStolen": "საფულე მომპარეს",
+  "lifeEventWalletStolenBody": "დაუყოვნებლივ დაბლოკეთ ბარათები და შეატყობინეთ ქურდობის შესახებ. შემდეგ თვალი ადევნეთ ანგარიშებს თაღლითობისგან.",
+  "lifeVariantWalletQuestion": "დაიკარგა თუ მოიპარეს?",
+  "lifeVariantLost": "დაიკარგა",
+  "lifeVariantStolen": "მოიპარეს",
+  "lifeTaskWalletFreezeCards": "თუ ბანკის აპი იძლევა საშუალებას, გაყინეთ ბარათები",
+  "lifeTaskWalletRetrace": "დარეკეთ ბოლო ადგილებში, სადაც იყავით, და იკითხეთ დაკარგული ნივთების შესახებ",
+  "lifeTaskWalletFraudAlert": "სთხოვეთ საკრედიტო ბიუროებს ან თქვენი ქვეყნის თაღლითობის საწინააღმდეგო სამსახურს თქვენი პირადობის მონიშვნა",
+  "lifeTaskWalletStatements": "შეამოწმეთ საბანკო ამონაწერები გადახდებზე, რომლებიც არ გაგიკეთებიათ",
+  "lifeTaskWalletSubscriptions": "ახალი ბარათი მიაბით გამოწერებსა და ავტომატურ გადახდებს",
+  "lifeTaskWalletPayApps": "დაამატეთ ახალი ბარათები Google Pay-ში ან Apple Pay-ში",
+  "lifeTaskWalletHealthCard": "ჯანმრთელობის დაზღვევას სთხოვეთ ახალი წევრის ბარათი",
+  "lifeTaskWalletTransport": "დაბლოკეთ სატრანსპორტო ან გზის საფასურის ბარათი და გადაიტანეთ ნაშთი",
+  "lifeTaskWalletLoyalty": "მოითხოვეთ ახალი ლოიალობის ბარათები ქულების შესანარჩუნებლად",
+  "lifeTaskWalletLocks": "თუ შიგნით გასაღები ან თქვენი მისამართი იყო, იფიქრეთ საკეტების შეცვლაზე",
+  "lifeTaskWalletInsurance": "შეამოწმეთ, ფარავს თუ არა დაზღვევა საფულესა და ნაღდ ფულს",
+  "lostWalletHeroTitle": "საფულე დაკარგეთ?",
+  "lostWalletHeroBody": "Vaultara გაჩვენებთ, რა დაბლოკოთ ჯერ, რა შეცვალოთ და ვის აცნობოთ.",
+  "lostWalletStartTitle": "რა მოხდა?",
+  "lostWalletEditTitle": "დეტალების შეცვლა",
+  "lostWalletLostHint": "დამივარდა ან სადღაც დავტოვე",
+  "lostWalletStolenHint": "ვიღაცამ წაიღო",
+  "lostWalletWhatMissing": "რა აკლია?",
+  "lostWalletStartButton": "მაჩვენე, რა გავაკეთო",
+  "lostWalletCheckupTitle": "საფულის შემოწმება",
+  "lostWalletCheckupBody": "მოემზადეთ ახლავე, რომ დაკარგვისას არაფერი დაგავიწყდეთ.",
+  "lostWalletCheckupAllGood": "ყველაფერი მზადაა. თუ ოდესმე დაიკარგება, მზად ხართ.",
+  "lostWalletSetPlaceBody": "გახსენით ბარათი ან დოკუმენტი და აირჩიეთ, სად ინახავთ. ეს გააკეთეთ პირადობისთვის, მართვის მოწმობისა და ბარათებისთვის.",
+  "lostWalletIssuePhotos": "{count, plural, other{ფოტოს გარეშე: {count}. ფოტოთი შეცვლა უფრო სწრაფია.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ბარათები დაბლოკვის ნომრის გარეშე: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{თქვენთან არსებული პასპორტები ან ნებართვები: {count}. თუ არ მოგზაურობთ, დატოვეთ სახლში.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "რას ატარებთ თან",
+  "lostWalletNoPhoto": "ფოტო არ არის",
+  "lostWalletHasPhoto": "ფოტო შენახულია",
+  "lostWalletNoLineShort": "დაბლოკვის ნომერი არ არის",
+  "lostWalletHistory": "წინა შემთხვევები",
+  "lostWalletFound": "ნაპოვნია",
+  "walletCheckToggle": "შემახსენე ყოველ 6 თვეში",
+  "walletCheckToggleBody": "სწრაფი გადახედვა იმას, რასაც ატარებთ, რომ სია სწორი დარჩეს.",
+  "walletCheckReminderTitle": "საფულის შემოწმება",
+  "walletCheckReminderBody": "შეიცვალა რამე თქვენს საფულეში? გამოყავით ერთი წუთი Vaultara-ს განსაახლებლად.",
+  "lostWalletBlockNow": "დაბლოკეთ ესენი ახლავე",
+  "lostWalletBlockNowHint": "დაურეკეთ თითოეულ ბანკს ან გამოიყენეთ მისი აპი. ყოველი წუთი მნიშვნელოვანია.",
+  "lostWalletCall": "დარეკვა",
+  "lostWalletAddLine": "ნომრის დამატება",
+  "lostWalletNoLine": "ნომერი არ არის შენახული. იპოვეთ ბანკის აპში ან ვებგვერდზე.",
+  "lostWalletBlocked": "დაბლოკილია",
+  "lostWalletReplace": "შეცვალეთ ესენი",
+  "lostWalletReplaceHint": "მოითხოვეთ ახლები და შეინახეთ ახალი თარიღი, როცა მოვა.",
+  "lostWalletArrived": "ახალი მოვიდა",
+  "lostWalletCheck": "შეამოწმეთ ესენი",
+  "lostWalletCheckHint": "იკითხეთ, გჭირდებათ თუ არა ახალი ბარათი ან ნომერი.",
+  "lostWalletPlanEmptyTitle": "იქ არაფერი იყო შენახული",
+  "lostWalletPlanEmpty": "ქვემოთ მოცემული ნაბიჯები მაინც დაგეხმარებათ. შემდეგ ჯერზე აირჩიეთ, სად ინახავთ ბარათებსა და დოკუმენტებს.",
+  "lostWalletCaseTitle": "პოლიციის საქმის ნომერი",
+  "lostWalletCaseHint": "ბანკები, მზღვეველები და უწყებები ხშირად ითხოვენ.",
+  "lostWalletCaseLabel": "საქმის ან მითითების ნომერი",
+  "lostWalletCaseSaved": "საქმის ნომერი შენახულია",
+  "lostWalletAbroadTitle": "ახლა საზღვარგარეთ ხართ?",
+  "lostWalletAbroadBody": "თქვენ ხართ მოგზაურობაში {trip}. თუ შიგნით პასპორტი ან პირადობა იყო, მიმართეთ საელჩოს ან საკონსულოს საგანგებო სამგზავრო დოკუმენტისთვის და აცნობეთ სამოგზაურო დაზღვევას.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "მოგზაურობის გახსნა",
+  "lostWalletPhoneTitle": "ტელეფონიც წაიღეს?",
+  "lostWalletPhoneBody": "ჯერ დაბლოკეთ SIM ბარათი და საბანკო აპები. ამისთვის გეგმა არსებობს.",
+  "lostWalletPhoneButton": "დაკარგული ტელეფონის გეგმის დაწყება",
+  "lostWalletStatementNote": "Vaultara შეგახსენებთ 30, 60 და 90 დღის შემდეგ.",
+  "lostWalletStatementTitle": "შეამოწმეთ საბანკო ამონაწერები",
+  "lostWalletStatementBody": "მოძებნეთ გადახდები, რომლებიც საფულის დაკარგვის შემდეგ არ გაგიკეთებიათ.",
+  "lostWalletFoundButton": "ვიპოვე",
+  "lostWalletFoundTitle": "კარგი ამბავი!",
+  "lostWalletFoundBody": "ეს ბარათები უკვე დაბლოკილია, ამიტომ დაელოდეთ ახლებს:",
+  "lostWalletFoundNone": "ჯერ არაფერია დაბლოკილი, შეგიძლიათ განაგრძოთ როგორც ადრე.",
+  "lostWalletFoundUnfreeze": "თუ ბანკის აპში ბარათები გაყინეთ, გაალღვეთ ის, რომლებიც არ დაგიბლოკავთ.",
+  "lostWalletFoundConfirm": "გეგმის დახურვა",
+  "lostWalletFoundOn": "ნაპოვნია {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "დაკარგული ნივთების ანგარიში",
+  "lostWalletReportTitle": "დაკარგული ნივთების ანგარიში",
+  "lostWalletReportWhen": "თარიღი: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "რა აკლია: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "საქმის ნომერი: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "საქმის ნომერი: ჯერ არ არის შეტყობინებული",
+  "lostWalletReportCount": "{count, plural, other{ქვემოთ მოცემული ელემენტები: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

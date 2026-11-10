@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Местите се в нов дом? Вижте какво още да обновите."
+  "lifePlanSuggestMove": "Местите се в нов дом? Вижте какво още да обновите.",
+  "keptInTitle": "Къде го държа",
+  "keptInSubtitle": "За да знаете какво да блокирате и замените, ако се изгуби",
+  "keptInWallet": "Портфейл",
+  "keptInBag": "Чанта",
+  "keptInPhoneCase": "Калъф за телефон",
+  "keptInTravelPouch": "Пътна чантичка",
+  "keptInCar": "Кола",
+  "keptInHome": "Вкъщи",
+  "keptInNone": "Не е зададено",
+  "lostLineLabel": "Номер за блокиране на изгубена карта",
+  "lostLineHelper": "Запазете го сега. Номерът е на картата, така че няма да го имате, когато ви потрябва.",
+  "lifeEventWalletLost": "Изгубих портфейла си",
+  "lifeEventWalletLostBody": "Първо блокирайте картите, после заменете документите един по един.",
+  "lifeEventWalletStolen": "Откраднаха ми портфейла",
+  "lifeEventWalletStolenBody": "Веднага блокирайте картите и подайте сигнал за кражбата. После следете сметките за измами.",
+  "lifeVariantWalletQuestion": "Изгубен или откраднат?",
+  "lifeVariantLost": "Изгубен",
+  "lifeVariantStolen": "Откраднат",
+  "lifeTaskWalletFreezeCards": "Замразете картите в банковото приложение, ако то го позволява",
+  "lifeTaskWalletRetrace": "Обадете се на последните места, където сте били, и питайте за изгубени вещи",
+  "lifeTaskWalletFraudAlert": "Помолете кредитните бюра или службата за измами във вашата страна да отбележат документа ви",
+  "lifeTaskWalletStatements": "Проверете извлеченията за плащания, които не сте правили",
+  "lifeTaskWalletSubscriptions": "Задайте новата карта за абонаменти и директни дебити",
+  "lifeTaskWalletPayApps": "Добавете новите карти в Google Pay или Apple Pay",
+  "lifeTaskWalletHealthCard": "Поискайте нова карта от здравната си застраховка",
+  "lifeTaskWalletTransport": "Блокирайте картата за транспорт или пътна такса и прехвърлете баланса",
+  "lifeTaskWalletLoyalty": "Поискайте нови карти за лоялност, за да запазите точките си",
+  "lifeTaskWalletLocks": "Ако вътре е имало ключове или адреса ви, помислете за смяна на ключалките",
+  "lifeTaskWalletInsurance": "Проверете дали застраховката покрива портфейла и парите в брой",
+  "lostWalletHeroTitle": "Изгубихте портфейла си?",
+  "lostWalletHeroBody": "Vaultara показва какво да блокирате първо, какво да замените и кого да уведомите.",
+  "lostWalletStartTitle": "Какво се случи?",
+  "lostWalletEditTitle": "Промяна на данните",
+  "lostWalletLostHint": "Изпуснах го или го забравих някъде",
+  "lostWalletStolenHint": "Някой го взе",
+  "lostWalletWhatMissing": "Какво липсва?",
+  "lostWalletStartButton": "Покажи ми какво да правя",
+  "lostWalletCheckupTitle": "Проверка на портфейла",
+  "lostWalletCheckupBody": "Подгответе се сега, за да не забравите нищо, ако се изгуби.",
+  "lostWalletCheckupAllGood": "Всичко е готово. Ако някога се изгуби, вие сте подготвени.",
+  "lostWalletSetPlaceBody": "Отворете карта или документ и изберете къде го държите. Направете го за личната карта, шофьорската книжка и картите.",
+  "lostWalletIssuePhotos": "{count, plural, other{Без снимка: {count}. Със снимка подмяната е по-бърза.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Карти без номер за блокиране: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Паспорти или разрешителни у вас: {count}. Дръжте ги вкъщи, освен ако не пътувате.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Какво носите със себе си",
+  "lostWalletNoPhoto": "Няма снимка",
+  "lostWalletHasPhoto": "Снимката е запазена",
+  "lostWalletNoLineShort": "Няма номер за блокиране",
+  "lostWalletHistory": "Предишни случаи",
+  "lostWalletFound": "Намерен",
+  "walletCheckToggle": "Напомняй ми на всеки 6 месеца",
+  "walletCheckToggleBody": "Бърз поглед към това, което носите, за да е точен списъкът.",
+  "walletCheckReminderTitle": "Проверка на портфейла",
+  "walletCheckReminderBody": "Промени ли се нещо в портфейла ви? Отделете минута да обновите Vaultara.",
+  "lostWalletBlockNow": "Блокирайте сега",
+  "lostWalletBlockNowHint": "Обадете се на всяка банка или използвайте приложението ѝ. Всяка минута е важна.",
+  "lostWalletCall": "Обади се",
+  "lostWalletAddLine": "Добави номер",
+  "lostWalletNoLine": "Няма запазен номер. Намерете го в приложението или на сайта на банката.",
+  "lostWalletBlocked": "Блокирана",
+  "lostWalletReplace": "Заменете",
+  "lostWalletReplaceHint": "Подайте заявления за нови и запазете новата дата, когато пристигнат.",
+  "lostWalletArrived": "Новият пристигна",
+  "lostWalletCheck": "Проверете",
+  "lostWalletCheckHint": "Попитайте дали ви трябва нова карта или номер.",
+  "lostWalletPlanEmptyTitle": "Там нямаше нищо запазено",
+  "lostWalletPlanEmpty": "Стъпките по-долу пак помагат. Следващия път изберете къде държите картите и документите си.",
+  "lostWalletCaseTitle": "Номер на полицейски сигнал",
+  "lostWalletCaseHint": "Банки, застрахователи и институции често го искат.",
+  "lostWalletCaseLabel": "Номер на преписка или референтен номер",
+  "lostWalletCaseSaved": "Номерът е запазен",
+  "lostWalletAbroadTitle": "В чужбина в момента?",
+  "lostWalletAbroadBody": "На пътуване сте: {trip}. Ако вътре е бил паспортът или личната карта, свържете се с посолството или консулството за временен документ за пътуване и уведомете туристическата си застраховка.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Отвори пътуването",
+  "lostWalletPhoneTitle": "Взеха ли и телефона ви?",
+  "lostWalletPhoneBody": "Първо блокирайте SIM картата и банковите приложения. За това има отделен план.",
+  "lostWalletPhoneButton": "Започни плана за изгубен телефон",
+  "lostWalletStatementNote": "Vaultara ще ви напомни след 30, 60 и 90 дни.",
+  "lostWalletStatementTitle": "Проверете банковите извлечения",
+  "lostWalletStatementBody": "Търсете плащания, които не сте правили, откакто изчезна портфейлът.",
+  "lostWalletFoundButton": "Намерих го",
+  "lostWalletFoundTitle": "Добри новини!",
+  "lostWalletFoundBody": "Тези карти вече са блокирани, така че очаквайте новите:",
+  "lostWalletFoundNone": "Още нищо не е блокирано, можете да продължите както преди.",
+  "lostWalletFoundUnfreeze": "Ако сте замразили карти в банковото приложение, размразете тези, които не сте блокирали.",
+  "lostWalletFoundConfirm": "Затвори плана",
+  "lostWalletFoundOn": "Намерен на {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Доклад за изгубени вещи",
+  "lostWalletReportTitle": "Доклад за изгубени вещи",
+  "lostWalletReportWhen": "Дата: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Какво липсва: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Номер на сигнал: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Номер на сигнал: още не е подаден",
+  "lostWalletReportCount": "{count, plural, other{Позиции по-долу: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

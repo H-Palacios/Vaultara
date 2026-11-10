@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "ກຳລັງຍ້າຍໄປເຮືອນໃໝ່ບໍ? ເບິ່ງວ່າຕ້ອງອັບເດດຫຍັງອີກ."
+  "lifePlanSuggestMove": "ກຳລັງຍ້າຍໄປເຮືອນໃໝ່ບໍ? ເບິ່ງວ່າຕ້ອງອັບເດດຫຍັງອີກ.",
+  "keptInTitle": "ຂ້ອຍເກັບໄວ້ໃສ",
+  "keptInSubtitle": "ເພື່ອໃຫ້ຮູ້ວ່າຕ້ອງລະງັບ ແລະ ປ່ຽນຫຍັງຖ້າເສຍ",
+  "keptInWallet": "ກະເປົາເງິນ",
+  "keptInBag": "ກະເປົາ",
+  "keptInPhoneCase": "ເຄສໂທລະສັບ",
+  "keptInTravelPouch": "ກະເປົາເດີນທາງນ້ອຍ",
+  "keptInCar": "ລົດ",
+  "keptInHome": "ຢູ່ເຮືອນ",
+  "keptInNone": "ບໍ່ໄດ້ຕັ້ງ",
+  "lostLineLabel": "ເບີລະງັບບັດເສຍ",
+  "lostLineHelper": "ບັນທຶກໄວ້ດຽວນີ້. ເບີພິມຢູ່ເທິງບັດ ດັ່ງນັ້ນຈະບໍ່ມີຕອນທີ່ທ່ານຕ້ອງການ.",
+  "lifeEventWalletLost": "ກະເປົາເງິນຂ້ອຍເສຍ",
+  "lifeEventWalletLostBody": "ລະງັບບັດກ່ອນ, ແລ້ວປ່ຽນເອກະສານເທື່ອລະອັນ.",
+  "lifeEventWalletStolen": "ກະເປົາເງິນຂ້ອຍຖືກລັກ",
+  "lifeEventWalletStolenBody": "ລະງັບບັດທັນທີ ແລະ ແຈ້ງການລັກ. ຈາກນັ້ນຕິດຕາມບັນຊີເພື່ອກັນການສໍ້ໂກງ.",
+  "lifeVariantWalletQuestion": "ເສຍ ຫຼື ຖືກລັກ?",
+  "lifeVariantLost": "ເສຍ",
+  "lifeVariantStolen": "ຖືກລັກ",
+  "lifeTaskWalletFreezeCards": "ຢຸດບັດຊົ່ວຄາວໃນແອັບທະນາຄານຖ້າເຮັດໄດ້",
+  "lifeTaskWalletRetrace": "ໂທຫາບ່ອນສຸດທ້າຍທີ່ທ່ານໄປ ແລະ ຖາມເລື່ອງເຄື່ອງເສຍ",
+  "lifeTaskWalletFraudAlert": "ຂໍໃຫ້ສຳນັກງານສິນເຊື່ອ ຫຼື ບໍລິການຕ້ານການສໍ້ໂກງຂອງປະເທດທ່ານໝາຍບັດປະຈຳຕົວຂອງທ່ານ",
+  "lifeTaskWalletStatements": "ກວດໃບແຈ້ງຍອດທະນາຄານຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດ",
+  "lifeTaskWalletSubscriptions": "ໃສ່ບັດໃໝ່ໃນການສະໝັກສະມາຊິກ ແລະ ການຫັກເງິນອັດຕະໂນມັດ",
+  "lifeTaskWalletPayApps": "ເພີ່ມບັດໃໝ່ໃສ່ Google Pay ຫຼື Apple Pay",
+  "lifeTaskWalletHealthCard": "ຂໍບັດສະມາຊິກໃໝ່ຈາກປະກັນສຸຂະພາບ",
+  "lifeTaskWalletTransport": "ລະງັບບັດຂົນສົ່ງ ຫຼື ບັດທາງດ່ວນ ແລະ ໂອນຍອດເງິນ",
+  "lifeTaskWalletLoyalty": "ຂໍບັດສະສົມແຕ້ມໃໝ່ເພື່ອຮັກສາແຕ້ມ",
+  "lifeTaskWalletLocks": "ຖ້າມີກະແຈ ຫຼື ທີ່ຢູ່ຂອງທ່ານຢູ່ໃນນັ້ນ ໃຫ້ພິຈາລະນາປ່ຽນກະແຈ",
+  "lifeTaskWalletInsurance": "ກວດວ່າປະກັນຂອງທ່ານຄຸ້ມຄອງກະເປົາເງິນ ແລະ ເງິນສົດບໍ່",
+  "lostWalletHeroTitle": "ກະເປົາເງິນເສຍບໍ?",
+  "lostWalletHeroBody": "Vaultara ສະແດງວ່າຕ້ອງລະງັບຫຍັງກ່ອນ, ປ່ຽນຫຍັງ ແລະ ແຈ້ງໃຜ.",
+  "lostWalletStartTitle": "ເກີດຫຍັງຂຶ້ນ?",
+  "lostWalletEditTitle": "ປ່ຽນລາຍລະອຽດ",
+  "lostWalletLostHint": "ຕົກ ຫຼື ລືມໄວ້ບ່ອນໃດບ່ອນໜຶ່ງ",
+  "lostWalletStolenHint": "ມີຄົນເອົາໄປ",
+  "lostWalletWhatMissing": "ຫຍັງເສຍໄປ?",
+  "lostWalletStartButton": "ບອກຂ້ອຍວ່າຕ້ອງເຮັດຫຍັງ",
+  "lostWalletCheckupTitle": "ກວດກະເປົາເງິນ",
+  "lostWalletCheckupBody": "ກຽມຕົວດຽວນີ້ ເພື່ອບໍ່ໃຫ້ລືມຫຍັງຖ້າເສຍ.",
+  "lostWalletCheckupAllGood": "ພ້ອມແລ້ວ. ຖ້າມື້ໜຶ່ງເສຍ ທ່ານພ້ອມ.",
+  "lostWalletSetPlaceBody": "ເປີດບັດ ຫຼື ເອກະສານ ແລ້ວເລືອກບ່ອນທີ່ທ່ານເກັບ. ເຮັດແບບນີ້ກັບບັດປະຈຳຕົວ, ໃບຂັບຂີ່ ແລະ ບັດຕ່າງໆ.",
+  "lostWalletIssuePhotos": "{count, plural, other{ບໍ່ມີຮູບ: {count}. ມີຮູບຈະປ່ຽນໃໝ່ໄວຂຶ້ນ.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ບັດທີ່ບໍ່ມີເບີລະງັບ: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{ໜັງສືຜ່ານແດນ ຫຼື ໃບອະນຸຍາດທີ່ທ່ານພົກ: {count}. ເກັບໄວ້ເຮືອນເວັ້ນແຕ່ເດີນທາງ.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ສິ່ງທີ່ທ່ານພົກ",
+  "lostWalletNoPhoto": "ບໍ່ມີຮູບ",
+  "lostWalletHasPhoto": "ບັນທຶກຮູບແລ້ວ",
+  "lostWalletNoLineShort": "ບໍ່ມີເບີລະງັບ",
+  "lostWalletHistory": "ເທື່ອກ່ອນໆ",
+  "lostWalletFound": "ພົບແລ້ວ",
+  "walletCheckToggle": "ເຕືອນທຸກ 6 ເດືອນ",
+  "walletCheckToggleBody": "ເບິ່ງສິ່ງທີ່ທ່ານພົກຢ່າງໄວ ເພື່ອໃຫ້ລາຍການຖືກຕ້ອງ.",
+  "walletCheckReminderTitle": "ກວດກະເປົາເງິນ",
+  "walletCheckReminderBody": "ມີຫຍັງປ່ຽນໃນກະເປົາເງິນບໍ? ໃຊ້ເວລາໜຶ່ງນາທີອັບເດດ Vaultara.",
+  "lostWalletBlockNow": "ລະງັບສິ່ງເຫຼົ່ານີ້ດຽວນີ້",
+  "lostWalletBlockNowHint": "ໂທຫາແຕ່ລະທະນາຄານ ຫຼື ໃຊ້ແອັບ. ທຸກນາທີສຳຄັນ.",
+  "lostWalletCall": "ໂທ",
+  "lostWalletAddLine": "ເພີ່ມເບີ",
+  "lostWalletNoLine": "ບໍ່ມີເບີທີ່ບັນທຶກ. ຊອກຫາໃນແອັບ ຫຼື ເວັບໄຊທະນາຄານ.",
+  "lostWalletBlocked": "ລະງັບແລ້ວ",
+  "lostWalletReplace": "ປ່ຽນສິ່ງເຫຼົ່ານີ້",
+  "lostWalletReplaceHint": "ຍື່ນຂໍໃໝ່ ແລະ ບັນທຶກວັນທີໃໝ່ເມື່ອໄດ້ຮັບ.",
+  "lostWalletArrived": "ໄດ້ຮັບອັນໃໝ່ແລ້ວ",
+  "lostWalletCheck": "ກວດສິ່ງເຫຼົ່ານີ້",
+  "lostWalletCheckHint": "ຖາມວ່າຕ້ອງການບັດ ຫຼື ເບີໃໝ່ບໍ່.",
+  "lostWalletPlanEmptyTitle": "ບໍ່ມີຫຍັງທີ່ບັນທຶກໄວ້ຢູ່ບ່ອນນັ້ນ",
+  "lostWalletPlanEmpty": "ຂັ້ນຕອນຂ້າງລຸ່ມຍັງຊ່ວຍໄດ້. ເທື່ອໜ້າ ເລືອກບ່ອນທີ່ທ່ານເກັບບັດ ແລະ ເອກະສານ.",
+  "lostWalletCaseTitle": "ເລກຄະດີຕຳຫຼວດ",
+  "lostWalletCaseHint": "ທະນາຄານ, ບໍລິສັດປະກັນ ແລະ ຫ້ອງການມັກຂໍເລກນີ້.",
+  "lostWalletCaseLabel": "ເລກຄະດີ ຫຼື ເລກອ້າງອີງ",
+  "lostWalletCaseSaved": "ບັນທຶກເລກຄະດີແລ້ວ",
+  "lostWalletAbroadTitle": "ຢູ່ຕ່າງປະເທດດຽວນີ້ບໍ?",
+  "lostWalletAbroadBody": "ທ່ານຢູ່ໃນການເດີນທາງ {trip}. ຖ້າໜັງສືຜ່ານແດນ ຫຼື ບັດປະຈຳຕົວຢູ່ໃນນັ້ນ ໃຫ້ຕິດຕໍ່ສະຖານທູດ ຫຼື ກົງສຸນເພື່ອຂໍເອກະສານເດີນທາງສຸກເສີນ ແລະ ແຈ້ງປະກັນການເດີນທາງ.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ເປີດການເດີນທາງ",
+  "lostWalletPhoneTitle": "ໂທລະສັບກໍຖືກເອົາໄປບໍ?",
+  "lostWalletPhoneBody": "ລະງັບຊິມກາດ ແລະ ແອັບທະນາຄານກ່ອນ. ມີແຜນສຳລັບເລື່ອງນີ້.",
+  "lostWalletPhoneButton": "ເລີ່ມແຜນໂທລະສັບເສຍ",
+  "lostWalletStatementNote": "Vaultara ຈະເຕືອນທ່ານຫຼັງ 30, 60 ແລະ 90 ມື້.",
+  "lostWalletStatementTitle": "ກວດໃບແຈ້ງຍອດທະນາຄານ",
+  "lostWalletStatementBody": "ຊອກຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດນັບແຕ່ກະເປົາເງິນເສຍ.",
+  "lostWalletFoundButton": "ຂ້ອຍພົບແລ້ວ",
+  "lostWalletFoundTitle": "ຂ່າວດີ!",
+  "lostWalletFoundBody": "ບັດເຫຼົ່ານີ້ລະງັບແລ້ວ ລໍຖ້າບັດໃໝ່:",
+  "lostWalletFoundNone": "ຍັງບໍ່ໄດ້ລະງັບຫຍັງ ທ່ານສາມາດໃຊ້ຕໍ່ໄດ້ຄືເກົ່າ.",
+  "lostWalletFoundUnfreeze": "ຖ້າທ່ານຢຸດບັດໃນແອັບທະນາຄານ ໃຫ້ເປີດຄືນບັດທີ່ບໍ່ໄດ້ລະງັບ.",
+  "lostWalletFoundConfirm": "ປິດແຜນ",
+  "lostWalletFoundOn": "ພົບເມື່ອ {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "ລາຍງານເຄື່ອງເສຍ",
+  "lostWalletReportTitle": "ລາຍງານເຄື່ອງເສຍ",
+  "lostWalletReportWhen": "ວັນທີ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "ສິ່ງທີ່ເສຍ: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "ເລກຄະດີ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "ເລກຄະດີ: ຍັງບໍ່ໄດ້ແຈ້ງ",
+  "lostWalletReportCount": "{count, plural, other{ລາຍການຂ້າງລຸ່ມ: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

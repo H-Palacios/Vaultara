@@ -7172,4 +7172,324 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Unahamia nyumba mpya? Angalia nini kingine cha kusasisha.';
+
+  @override
+  String get keptInTitle => 'Ninapokiweka';
+
+  @override
+  String get keptInSubtitle => 'Ili ujue cha kuzuia na kubadilisha kikipotea';
+
+  @override
+  String get keptInWallet => 'Pochi';
+
+  @override
+  String get keptInBag => 'Mkoba';
+
+  @override
+  String get keptInPhoneCase => 'Kava ya simu';
+
+  @override
+  String get keptInTravelPouch => 'Mfuko wa safari';
+
+  @override
+  String get keptInCar => 'Gari';
+
+  @override
+  String get keptInHome => 'Nyumbani';
+
+  @override
+  String get keptInNone => 'Haijawekwa';
+
+  @override
+  String get lostLineLabel => 'Nambari ya kadi iliyopotea';
+
+  @override
+  String get lostLineHelper => 'Ihifadhi sasa. Nambari imechapishwa kwenye kadi, kwa hivyo hutakuwa nayo unapoihitaji.';
+
+  @override
+  String get lifeEventWalletLost => 'Nimepoteza pochi yangu';
+
+  @override
+  String get lifeEventWalletLostBody => 'Zuia kadi zako kwanza, kisha badilisha hati zako moja baada ya nyingine.';
+
+  @override
+  String get lifeEventWalletStolen => 'Pochi yangu imeibiwa';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Zuia kadi zako mara moja na uripoti wizi. Kisha fuatilia akaunti zako kwa ulaghai.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Imepotea au imeibiwa?';
+
+  @override
+  String get lifeVariantLost => 'Imepotea';
+
+  @override
+  String get lifeVariantStolen => 'Imeibiwa';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Gandisha kadi zako kwenye programu ya benki ikiwa inaruhusu';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Piga simu sehemu za mwisho ulizokuwa na uulize vitu vilivyopotea';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Omba ofisi za mikopo au huduma ya ulaghai ya nchi yako iweke alama kwenye kitambulisho chako';
+
+  @override
+  String get lifeTaskWalletStatements => 'Kagua taarifa za benki kwa malipo ambayo hukufanya';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Weka kadi mpya kwenye usajili na makato yako ya moja kwa moja';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Ongeza kadi mpya kwenye Google Pay au Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Omba kadi mpya ya uanachama kutoka bima yako ya afya';
+
+  @override
+  String get lifeTaskWalletTransport => 'Zuia kadi yako ya usafiri au ya ushuru wa barabara na uhamishe salio';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Omba kadi mpya za uaminifu ili ubaki na pointi zako';
+
+  @override
+  String get lifeTaskWalletLocks => 'Ikiwa funguo au anwani yako vilikuwemo, fikiria kubadilisha kufuli';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Angalia kama bima yako inagharamia pochi na pesa taslimu';
+
+  @override
+  String get lostWalletHeroTitle => 'Umepoteza pochi yako?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara inaonyesha cha kuzuia kwanza, cha kubadilisha na nani wa kumjulisha.';
+
+  @override
+  String get lostWalletStartTitle => 'Nini kilitokea?';
+
+  @override
+  String get lostWalletEditTitle => 'Badilisha maelezo';
+
+  @override
+  String get lostWalletLostHint => 'Ilianguka au niliisahau mahali fulani';
+
+  @override
+  String get lostWalletStolenHint => 'Mtu aliichukua';
+
+  @override
+  String get lostWalletWhatMissing => 'Nini kinakosekana?';
+
+  @override
+  String get lostWalletStartButton => 'Nionyeshe cha kufanya';
+
+  @override
+  String get lostWalletCheckupTitle => 'Ukaguzi wa pochi';
+
+  @override
+  String get lostWalletCheckupBody => 'Jiandae sasa, ili usisahau chochote ikipotea.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Kila kitu kiko tayari. Ikipotea siku moja, uko tayari.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Fungua kadi au hati na uchague unapoiweka. Fanya hivi kwa kitambulisho, leseni na kadi zako.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bila picha: $count. Kwa picha, kubadilisha ni haraka zaidi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kadi bila nambari ya kadi iliyopotea: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pasipoti au vibali ulivyobeba: $count. Viache nyumbani usiposafiri.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Unachobeba';
+
+  @override
+  String get lostWalletNoPhoto => 'Hakuna picha';
+
+  @override
+  String get lostWalletHasPhoto => 'Picha imehifadhiwa';
+
+  @override
+  String get lostWalletNoLineShort => 'Hakuna nambari ya kadi iliyopotea';
+
+  @override
+  String get lostWalletHistory => 'Mara zilizopita';
+
+  @override
+  String get lostWalletFound => 'Imepatikana';
+
+  @override
+  String get walletCheckToggle => 'Nikumbushe kila miezi 6';
+
+  @override
+  String get walletCheckToggleBody => 'Mtazamo wa haraka wa unachobeba, ili orodha ibaki sahihi.';
+
+  @override
+  String get walletCheckReminderTitle => 'Ukaguzi wa pochi';
+
+  @override
+  String get walletCheckReminderBody => 'Kuna kitu kilichobadilika kwenye pochi yako? Chukua dakika moja kusasisha Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Zuia hizi sasa';
+
+  @override
+  String get lostWalletBlockNowHint => 'Piga simu kila benki au tumia programu yake. Kila dakika ni muhimu.';
+
+  @override
+  String get lostWalletCall => 'Piga simu';
+
+  @override
+  String get lostWalletAddLine => 'Ongeza nambari';
+
+  @override
+  String get lostWalletNoLine => 'Hakuna nambari iliyohifadhiwa. Itafute kwenye programu au tovuti ya benki yako.';
+
+  @override
+  String get lostWalletBlocked => 'Imezuiwa';
+
+  @override
+  String get lostWalletReplace => 'Badilisha hizi';
+
+  @override
+  String get lostWalletReplaceHint => 'Omba mpya na uhifadhi tarehe mpya zikifika.';
+
+  @override
+  String get lostWalletArrived => 'Mpya imefika';
+
+  @override
+  String get lostWalletCheck => 'Kagua hizi';
+
+  @override
+  String get lostWalletCheckHint => 'Uliza kama unahitaji kadi au nambari mpya.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Hakuna kilichohifadhiwa kilichowekwa hapo';
+
+  @override
+  String get lostWalletPlanEmpty => 'Hatua zilizo hapa chini bado zinasaidia. Wakati ujao, chagua unapoweka kadi na hati zako.';
+
+  @override
+  String get lostWalletCaseTitle => 'Nambari ya kesi ya polisi';
+
+  @override
+  String get lostWalletCaseHint => 'Benki, kampuni za bima na ofisi mara nyingi huiomba.';
+
+  @override
+  String get lostWalletCaseLabel => 'Nambari ya kesi au marejeleo';
+
+  @override
+  String get lostWalletCaseSaved => 'Nambari ya kesi imehifadhiwa';
+
+  @override
+  String get lostWalletAbroadTitle => 'Uko ng\'ambo sasa?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Uko kwenye safari $trip. Ikiwa pasipoti au kitambulisho chako kilikuwemo, wasiliana na ubalozi au ubalozi mdogo kwa hati ya dharura ya kusafiria na umjulishe bima yako ya safari.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Fungua safari';
+
+  @override
+  String get lostWalletPhoneTitle => 'Simu yako nayo ilichukuliwa?';
+
+  @override
+  String get lostWalletPhoneBody => 'Zuia kadi ya SIM na programu za benki kwanza. Kuna mpango kwa hilo.';
+
+  @override
+  String get lostWalletPhoneButton => 'Anza mpango wa simu iliyopotea';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara itakukumbusha baada ya siku 30, 60 na 90.';
+
+  @override
+  String get lostWalletStatementTitle => 'Kagua taarifa zako za benki';
+
+  @override
+  String get lostWalletStatementBody => 'Tafuta malipo ambayo hukufanya tangu pochi yako ipotee.';
+
+  @override
+  String get lostWalletFoundButton => 'Nimeipata';
+
+  @override
+  String get lostWalletFoundTitle => 'Habari njema!';
+
+  @override
+  String get lostWalletFoundBody => 'Kadi hizi tayari zimezuiwa, kwa hivyo subiri mpya:';
+
+  @override
+  String get lostWalletFoundNone => 'Hakuna kilichozuiwa bado, unaweza kuendelea kama awali.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Ikiwa uligandisha kadi kwenye programu ya benki, ondoa ugandishaji kwa zile ambazo hukuzuia.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Funga mpango';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Imepatikana $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Ripoti ya vitu vilivyopotea';
+
+  @override
+  String get lostWalletReportTitle => 'Ripoti ya vitu vilivyopotea';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Tarehe: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Kinachokosekana: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Nambari ya kesi: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Nambari ya kesi: bado haijaripotiwa';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vipengee hapa chini: $count',
+    );
+    return '$_temp0';
+  }
 }

@@ -2445,5 +2445,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Kolid uude koju? Vaata, mida veel uuendada."
+  "lifePlanSuggestMove": "Kolid uude koju? Vaata, mida veel uuendada.",
+  "keptInTitle": "Kus ma seda hoian",
+  "keptInSubtitle": "Et teaksid, mida sulgeda ja asendada, kui see kaob",
+  "keptInWallet": "Rahakott",
+  "keptInBag": "Kott",
+  "keptInPhoneCase": "Telefoniümbris",
+  "keptInTravelPouch": "Reisikott",
+  "keptInCar": "Auto",
+  "keptInHome": "Kodus",
+  "keptInNone": "Määramata",
+  "lostLineLabel": "Kadunud kaardi sulgemise number",
+  "lostLineHelper": "Salvesta see kohe. Number on kaardil, nii et vajadusel pole seda sul käepärast.",
+  "lifeEventWalletLost": "Kaotasin oma rahakoti",
+  "lifeEventWalletLostBody": "Sulge kõigepealt kaardid, seejärel asenda dokumendid ükshaaval.",
+  "lifeEventWalletStolen": "Mu rahakott varastati",
+  "lifeEventWalletStolenBody": "Sulge kaardid kohe ja teata vargusest. Seejärel jälgi kontosid pettuste suhtes.",
+  "lifeVariantWalletQuestion": "Kadunud või varastatud?",
+  "lifeVariantLost": "Kadunud",
+  "lifeVariantStolen": "Varastatud",
+  "lifeTaskWalletFreezeCards": "Külmuta kaardid pangarakenduses, kui see seda võimaldab",
+  "lifeTaskWalletRetrace": "Helista viimastesse kohtadesse, kus käisid, ja küsi leiubüroost",
+  "lifeTaskWalletFraudAlert": "Palu krediidibüroodel või oma riigi pettusteenistusel oma dokument märgistada",
+  "lifeTaskWalletStatements": "Kontrolli pangaväljavõtteid maksete suhtes, mida sa ei teinud",
+  "lifeTaskWalletSubscriptions": "Pane uus kaart tellimustele ja otsekorraldustele",
+  "lifeTaskWalletPayApps": "Lisa uued kaardid Google Pay või Apple Pay rakendusse",
+  "lifeTaskWalletHealthCard": "Küsi tervisekindlustusest uus kaart",
+  "lifeTaskWalletTransport": "Sulge ühistranspordi- või teemaksukaart ja kanna jääk üle",
+  "lifeTaskWalletLoyalty": "Küsi uued kliendikaardid, et punktid alles jääksid",
+  "lifeTaskWalletLocks": "Kui seal olid võtmed või sinu aadress, kaalu lukkude vahetamist",
+  "lifeTaskWalletInsurance": "Kontrolli, kas kindlustus katab rahakoti ja sularaha",
+  "lostWalletHeroTitle": "Kaotasid rahakoti?",
+  "lostWalletHeroBody": "Vaultara näitab, mida kõigepealt sulgeda, mida asendada ja keda teavitada.",
+  "lostWalletStartTitle": "Mis juhtus?",
+  "lostWalletEditTitle": "Muuda andmeid",
+  "lostWalletLostHint": "Kukkus maha või jäi kuhugi",
+  "lostWalletStolenHint": "Keegi võttis selle",
+  "lostWalletWhatMissing": "Mis on puudu?",
+  "lostWalletStartButton": "Näita, mida teha",
+  "lostWalletCheckupTitle": "Rahakoti ülevaatus",
+  "lostWalletCheckupBody": "Valmistu kohe, et midagi ei ununeks, kui see kaob.",
+  "lostWalletCheckupAllGood": "Kõik valmis. Kui see kunagi kaob, oled valmis.",
+  "lostWalletSetPlaceBody": "Ava kaart või dokument ja vali, kus seda hoiad. Tee seda ID-kaardi, juhiloa ja kaartide puhul.",
+  "lostWalletIssuePhotos": "{count, plural, one{1 asjal pole fotot. Fotoga on asendamine kiirem.} other{{count} asjal pole fotot. Fotodega on asendamine kiirem.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, one{1 kaardil pole sulgemise numbrit salvestatud.} other{{count} kaardil pole sulgemise numbrit salvestatud.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, one{Kannad kaasas passi või luba. Jäta see koju, kui sa ei reisi.} other{Kannad kaasas {count} passi või luba. Jäta need koju, kui sa ei reisi.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Mida kaasas kannad",
+  "lostWalletNoPhoto": "Fotot pole",
+  "lostWalletHasPhoto": "Foto salvestatud",
+  "lostWalletNoLineShort": "Sulgemise numbrit pole",
+  "lostWalletHistory": "Varasemad korrad",
+  "lostWalletFound": "Leitud",
+  "walletCheckToggle": "Tuleta meelde iga 6 kuu tagant",
+  "walletCheckToggleBody": "Kiire pilk sellele, mida kaasas kannad, et nimekiri oleks õige.",
+  "walletCheckReminderTitle": "Rahakoti ülevaatus",
+  "walletCheckReminderBody": "Kas su rahakotis on midagi muutunud? Võta minut ja uuenda Vaultarat.",
+  "lostWalletBlockNow": "Sulge need kohe",
+  "lostWalletBlockNowHint": "Helista igale pangale või kasuta selle rakendust. Iga minut loeb.",
+  "lostWalletCall": "Helista",
+  "lostWalletAddLine": "Lisa number",
+  "lostWalletNoLine": "Numbrit pole salvestatud. Leia see panga rakendusest või veebilehelt.",
+  "lostWalletBlocked": "Suletud",
+  "lostWalletReplace": "Asenda need",
+  "lostWalletReplaceHint": "Taotle uued ja salvesta uus kuupäev, kui need saabuvad.",
+  "lostWalletArrived": "Uus saabus",
+  "lostWalletCheck": "Kontrolli neid",
+  "lostWalletCheckHint": "Küsi, kas vajad uut kaarti või numbrit.",
+  "lostWalletPlanEmptyTitle": "Seal polnud midagi salvestatud",
+  "lostWalletPlanEmpty": "Allolevad sammud aitavad ikkagi. Vali järgmine kord, kus oma kaarte ja dokumente hoiad.",
+  "lostWalletCaseTitle": "Politsei menetlusnumber",
+  "lostWalletCaseHint": "Pangad, kindlustajad ja ametid küsivad seda sageli.",
+  "lostWalletCaseLabel": "Menetlus- või viitenumber",
+  "lostWalletCaseSaved": "Number salvestatud",
+  "lostWalletAbroadTitle": "Praegu välismaal?",
+  "lostWalletAbroadBody": "Oled reisil {trip}. Kui seal oli pass või ID-kaart, võta ühendust saatkonna või konsulaadiga ajutise reisidokumendi saamiseks ja teavita reisikindlustust.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Ava reis",
+  "lostWalletPhoneTitle": "Kas ka telefon võeti?",
+  "lostWalletPhoneBody": "Sulge kõigepealt SIM-kaart ja pangarakendused. Selle jaoks on oma plaan.",
+  "lostWalletPhoneButton": "Alusta kadunud telefoni plaani",
+  "lostWalletStatementNote": "Vaultara tuletab meelde 30, 60 ja 90 päeva pärast.",
+  "lostWalletStatementTitle": "Kontrolli pangaväljavõtteid",
+  "lostWalletStatementBody": "Otsi makseid, mida sa pole rahakoti kadumisest saadik teinud.",
+  "lostWalletFoundButton": "Leidsin selle",
+  "lostWalletFoundTitle": "Hea uudis!",
+  "lostWalletFoundBody": "Need kaardid on juba suletud, nii et oota uusi:",
+  "lostWalletFoundNone": "Midagi pole veel suletud, võid jätkata nagu varem.",
+  "lostWalletFoundUnfreeze": "Kui külmutasid kaarte pangarakenduses, vabasta need, mida sa ei sulgenud.",
+  "lostWalletFoundConfirm": "Sulge plaan",
+  "lostWalletFoundOn": "Leitud {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Kadunud asjade aruanne",
+  "lostWalletReportTitle": "Kadunud asjade aruanne",
+  "lostWalletReportWhen": "Kuupäev: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Mis on puudu: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Menetlusnumber: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Menetlusnumber: veel teatamata",
+  "lostWalletReportCount": "{count, plural, one{1 asi allpool} other{{count} asja allpool}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

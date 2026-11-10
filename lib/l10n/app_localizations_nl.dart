@@ -7172,4 +7172,328 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Ga je verhuizen? Bekijk wat je nog meer moet bijwerken.';
+
+  @override
+  String get keptInTitle => 'Waar ik het bewaar';
+
+  @override
+  String get keptInSubtitle => 'Zodat je weet wat je moet blokkeren en vervangen als het kwijtraakt';
+
+  @override
+  String get keptInWallet => 'Portemonnee';
+
+  @override
+  String get keptInBag => 'Tas';
+
+  @override
+  String get keptInPhoneCase => 'Telefoonhoesje';
+
+  @override
+  String get keptInTravelPouch => 'Reistasje';
+
+  @override
+  String get keptInCar => 'Auto';
+
+  @override
+  String get keptInHome => 'Thuis';
+
+  @override
+  String get keptInNone => 'Niet ingesteld';
+
+  @override
+  String get lostLineLabel => 'Telefoonnummer voor verloren pas';
+
+  @override
+  String get lostLineHelper => 'Sla het nu op. Het nummer staat op de pas, dus je hebt het niet als je het nodig hebt.';
+
+  @override
+  String get lifeEventWalletLost => 'Ik ben mijn portemonnee kwijt';
+
+  @override
+  String get lifeEventWalletLostBody => 'Blokkeer eerst je passen en vervang daarna je documenten een voor een.';
+
+  @override
+  String get lifeEventWalletStolen => 'Mijn portemonnee is gestolen';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Blokkeer je passen meteen en doe aangifte. Let daarna op fraude op je rekeningen.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Verloren of gestolen?';
+
+  @override
+  String get lifeVariantLost => 'Verloren';
+
+  @override
+  String get lifeVariantStolen => 'Gestolen';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Bevries je passen in je bankapp als die dat kan';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Bel de laatste plekken waar je was en vraag naar gevonden voorwerpen';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Vraag kredietbureaus of de fraudedienst van je land om je identiteitsbewijs te markeren';
+
+  @override
+  String get lifeTaskWalletStatements => 'Controleer je bankafschriften op betalingen die je niet hebt gedaan';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Zet de nieuwe pas op je abonnementen en automatische incasso\'s';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Voeg de nieuwe passen toe aan Google Pay of Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Vraag je zorgverzekeraar om een nieuwe zorgpas';
+
+  @override
+  String get lifeTaskWalletTransport => 'Blokkeer je ov- of tolkaart en zet het saldo over';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Vraag nieuwe klantenkaarten aan zodat je je punten houdt';
+
+  @override
+  String get lifeTaskWalletLocks => 'Zaten er sleutels of je adres in, overweeg dan de sloten te vervangen';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Kijk of je verzekering de portemonnee en contant geld dekt';
+
+  @override
+  String get lostWalletHeroTitle => 'Portemonnee kwijt?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara laat zien wat je eerst blokkeert, wat je vervangt en wie je inlicht.';
+
+  @override
+  String get lostWalletStartTitle => 'Wat is er gebeurd?';
+
+  @override
+  String get lostWalletEditTitle => 'Gegevens wijzigen';
+
+  @override
+  String get lostWalletLostHint => 'Laten vallen of ergens laten liggen';
+
+  @override
+  String get lostWalletStolenHint => 'Iemand heeft hem gepakt';
+
+  @override
+  String get lostWalletWhatMissing => 'Wat is er weg?';
+
+  @override
+  String get lostWalletStartButton => 'Laat zien wat ik moet doen';
+
+  @override
+  String get lostWalletCheckupTitle => 'Portemonnee-check';
+
+  @override
+  String get lostWalletCheckupBody => 'Bereid je nu voor, zodat je niets vergeet als hij kwijtraakt.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Alles klaar. Als hij ooit kwijtraakt, ben je voorbereid.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Open een pas of document en kies waar je het bewaart. Doe dit voor je ID, rijbewijs en passen.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items hebben geen foto. Met foto\'s gaat vervangen sneller.',
+      one: '1 item heeft geen foto. Met een foto gaat vervangen sneller.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bij $count passen is geen nummer voor verloren passen opgeslagen.',
+      one: 'Bij 1 pas is geen nummer voor verloren passen opgeslagen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Je hebt $count paspoorten of vergunningen bij je. Laat ze thuis tenzij je reist.',
+      one: 'Je hebt een paspoort of vergunning bij je. Laat het thuis tenzij je reist.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Wat je bij je hebt';
+
+  @override
+  String get lostWalletNoPhoto => 'Geen foto';
+
+  @override
+  String get lostWalletHasPhoto => 'Foto opgeslagen';
+
+  @override
+  String get lostWalletNoLineShort => 'Geen nummer voor verloren pas';
+
+  @override
+  String get lostWalletHistory => 'Eerdere keren';
+
+  @override
+  String get lostWalletFound => 'Gevonden';
+
+  @override
+  String get walletCheckToggle => 'Elke 6 maanden herinneren';
+
+  @override
+  String get walletCheckToggleBody => 'Even kijken wat je bij je hebt, zodat de lijst klopt.';
+
+  @override
+  String get walletCheckReminderTitle => 'Portemonnee-check';
+
+  @override
+  String get walletCheckReminderBody => 'Is er iets veranderd in je portemonnee? Neem even een minuut om Vaultara bij te werken.';
+
+  @override
+  String get lostWalletBlockNow => 'Nu blokkeren';
+
+  @override
+  String get lostWalletBlockNowHint => 'Bel elke bank of gebruik de app. Elke minuut telt.';
+
+  @override
+  String get lostWalletCall => 'Bellen';
+
+  @override
+  String get lostWalletAddLine => 'Nummer toevoegen';
+
+  @override
+  String get lostWalletNoLine => 'Geen nummer opgeslagen. Zoek het nummer voor verloren passen in de app of op de site van je bank.';
+
+  @override
+  String get lostWalletBlocked => 'Geblokkeerd';
+
+  @override
+  String get lostWalletReplace => 'Vervangen';
+
+  @override
+  String get lostWalletReplaceHint => 'Vraag nieuwe aan en sla de nieuwe datum op zodra ze binnen zijn.';
+
+  @override
+  String get lostWalletArrived => 'Nieuwe is binnen';
+
+  @override
+  String get lostWalletCheck => 'Controleren';
+
+  @override
+  String get lostWalletCheckHint => 'Vraag of je een nieuwe pas of nieuw nummer nodig hebt.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Daar was niets opgeslagen';
+
+  @override
+  String get lostWalletPlanEmpty => 'De stappen hieronder helpen toch. Kies de volgende keer waar je je passen en documenten bewaart.';
+
+  @override
+  String get lostWalletCaseTitle => 'Proces-verbaalnummer';
+
+  @override
+  String get lostWalletCaseHint => 'Banken, verzekeraars en instanties vragen er vaak om.';
+
+  @override
+  String get lostWalletCaseLabel => 'Zaak- of referentienummer';
+
+  @override
+  String get lostWalletCaseSaved => 'Nummer opgeslagen';
+
+  @override
+  String get lostWalletAbroadTitle => 'Nu in het buitenland?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Je bent op reis: $trip. Zat je paspoort of ID erin, neem dan contact op met je ambassade of consulaat voor een noodreisdocument en meld het bij je reisverzekeraar.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Reis openen';
+
+  @override
+  String get lostWalletPhoneTitle => 'Is je telefoon ook meegenomen?';
+
+  @override
+  String get lostWalletPhoneBody => 'Blokkeer eerst de simkaart en je bankapps. Daar is een plan voor.';
+
+  @override
+  String get lostWalletPhoneButton => 'Plan voor verloren telefoon starten';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara herinnert je na 30, 60 en 90 dagen.';
+
+  @override
+  String get lostWalletStatementTitle => 'Controleer je bankafschriften';
+
+  @override
+  String get lostWalletStatementBody => 'Zoek naar betalingen die je niet hebt gedaan sinds je portemonnee weg is.';
+
+  @override
+  String get lostWalletFoundButton => 'Ik heb hem gevonden';
+
+  @override
+  String get lostWalletFoundTitle => 'Goed nieuws!';
+
+  @override
+  String get lostWalletFoundBody => 'Deze passen zijn al geblokkeerd, dus let op de nieuwe:';
+
+  @override
+  String get lostWalletFoundNone => 'Er is nog niets geblokkeerd, je kunt gewoon doorgaan.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Heb je passen bevroren in je bankapp, ontdooi dan de passen die je niet hebt geblokkeerd.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Plan sluiten';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Gevonden op $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Rapport verloren spullen';
+
+  @override
+  String get lostWalletReportTitle => 'Rapport verloren spullen';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Datum: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Wat er weg is: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Proces-verbaalnummer: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Proces-verbaalnummer: nog geen aangifte gedaan';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items hieronder',
+      one: '1 item hieronder',
+    );
+    return '$_temp0';
+  }
 }

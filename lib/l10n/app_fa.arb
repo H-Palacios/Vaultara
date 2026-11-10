@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "به خانه جدید می‌روید؟ ببینید چه چیز دیگری را باید به‌روز کنید."
+  "lifePlanSuggestMove": "به خانه جدید می‌روید؟ ببینید چه چیز دیگری را باید به‌روز کنید.",
+  "keptInTitle": "کجا نگهش می‌دارم",
+  "keptInSubtitle": "تا بدانید اگر گم شد چه چیزی را مسدود و جایگزین کنید",
+  "keptInWallet": "کیف پول",
+  "keptInBag": "کیف",
+  "keptInPhoneCase": "قاب گوشی",
+  "keptInTravelPouch": "کیف کوچک سفر",
+  "keptInCar": "خودرو",
+  "keptInHome": "در خانه",
+  "keptInNone": "تعیین نشده",
+  "lostLineLabel": "شماره مسدودسازی کارت گم‌شده",
+  "lostLineHelper": "همین حالا ذخیره‌اش کنید. شماره روی کارت چاپ شده، پس وقتی لازمش دارید همراهتان نیست.",
+  "lifeEventWalletLost": "کیف پولم را گم کردم",
+  "lifeEventWalletLostBody": "اول کارت‌ها را مسدود کنید، بعد مدارک را یکی‌یکی جایگزین کنید.",
+  "lifeEventWalletStolen": "کیف پولم دزدیده شد",
+  "lifeEventWalletStolenBody": "فوراً کارت‌ها را مسدود کنید و سرقت را گزارش دهید. سپس حساب‌هایتان را از نظر کلاهبرداری زیر نظر بگیرید.",
+  "lifeVariantWalletQuestion": "گم شده یا دزدیده شده؟",
+  "lifeVariantLost": "گم شده",
+  "lifeVariantStolen": "دزدیده شده",
+  "lifeTaskWalletFreezeCards": "اگر برنامه بانک امکانش را دارد، کارت‌ها را در آن مسدود موقت کنید",
+  "lifeTaskWalletRetrace": "با آخرین جاهایی که بودید تماس بگیرید و از اشیای گم‌شده بپرسید",
+  "lifeTaskWalletFraudAlert": "از دفاتر اعتباری یا سرویس مقابله با کلاهبرداری کشورتان بخواهید مدرک شناسایی‌تان را علامت‌گذاری کنند",
+  "lifeTaskWalletStatements": "صورت‌حساب‌های بانکی را برای پرداخت‌هایی که انجام نداده‌اید بررسی کنید",
+  "lifeTaskWalletSubscriptions": "کارت جدید را برای اشتراک‌ها و برداشت‌های خودکار ثبت کنید",
+  "lifeTaskWalletPayApps": "کارت‌های جدید را به Google Pay یا Apple Pay اضافه کنید",
+  "lifeTaskWalletHealthCard": "از بیمه درمانی‌تان کارت عضویت جدید بخواهید",
+  "lifeTaskWalletTransport": "کارت حمل‌ونقل یا عوارض را مسدود کنید و موجودی را منتقل کنید",
+  "lifeTaskWalletLoyalty": "کارت‌های وفاداری جدید بخواهید تا امتیازهایتان حفظ شود",
+  "lifeTaskWalletLocks": "اگر کلید یا نشانی‌تان داخلش بود، به عوض کردن قفل‌ها فکر کنید",
+  "lifeTaskWalletInsurance": "بررسی کنید بیمه‌تان کیف پول و پول نقد را پوشش می‌دهد یا نه",
+  "lostWalletHeroTitle": "کیف پولتان را گم کرده‌اید؟",
+  "lostWalletHeroBody": "Vaultara نشان می‌دهد اول چه چیزی را مسدود کنید، چه چیزی را جایگزین کنید و به چه کسی خبر دهید.",
+  "lostWalletStartTitle": "چه اتفاقی افتاد؟",
+  "lostWalletEditTitle": "تغییر جزئیات",
+  "lostWalletLostHint": "افتاد یا جایی جا ماند",
+  "lostWalletStolenHint": "کسی آن را برداشت",
+  "lostWalletWhatMissing": "چه چیزی گم شده؟",
+  "lostWalletStartButton": "نشانم بده چه کنم",
+  "lostWalletCheckupTitle": "بررسی کیف پول",
+  "lostWalletCheckupBody": "همین حالا آماده شوید تا اگر گم شد چیزی فراموش نشود.",
+  "lostWalletCheckupAllGood": "همه‌چیز آماده است. اگر روزی گم شود، آماده‌اید.",
+  "lostWalletSetPlaceBody": "یک کارت یا مدرک را باز کنید و انتخاب کنید کجا نگهش می‌دارید. این کار را برای کارت شناسایی، گواهینامه و کارت‌ها انجام دهید.",
+  "lostWalletIssuePhotos": "{count, plural, other{بدون عکس: {count}. با عکس جایگزینی سریع‌تر است.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{کارت‌های بدون شماره مسدودسازی: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{گذرنامه یا مجوز همراهتان: {count}. اگر سفر نمی‌کنید در خانه بگذاریدشان.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "آنچه همراه دارید",
+  "lostWalletNoPhoto": "بدون عکس",
+  "lostWalletHasPhoto": "عکس ذخیره شد",
+  "lostWalletNoLineShort": "بدون شماره مسدودسازی",
+  "lostWalletHistory": "دفعات قبلی",
+  "lostWalletFound": "پیدا شد",
+  "walletCheckToggle": "هر ۶ ماه یادآوری کن",
+  "walletCheckToggleBody": "نگاهی سریع به آنچه همراه دارید، تا فهرست درست بماند.",
+  "walletCheckReminderTitle": "بررسی کیف پول",
+  "walletCheckReminderBody": "چیزی در کیف پولتان تغییر کرده؟ یک دقیقه برای به‌روزرسانی Vaultara وقت بگذارید.",
+  "lostWalletBlockNow": "اکنون مسدود کنید",
+  "lostWalletBlockNowHint": "با هر بانک تماس بگیرید یا از برنامه‌اش استفاده کنید. هر دقیقه مهم است.",
+  "lostWalletCall": "تماس",
+  "lostWalletAddLine": "افزودن شماره",
+  "lostWalletNoLine": "شماره‌ای ذخیره نشده. آن را در برنامه یا وب‌سایت بانک پیدا کنید.",
+  "lostWalletBlocked": "مسدود شد",
+  "lostWalletReplace": "جایگزین کنید",
+  "lostWalletReplaceHint": "درخواست موارد جدید بدهید و وقتی رسیدند تاریخ جدید را ذخیره کنید.",
+  "lostWalletArrived": "جدید رسید",
+  "lostWalletCheck": "بررسی کنید",
+  "lostWalletCheckHint": "بپرسید آیا کارت یا شماره جدید لازم دارید.",
+  "lostWalletPlanEmptyTitle": "چیز ذخیره‌شده‌ای آنجا نبود",
+  "lostWalletPlanEmpty": "مراحل زیر همچنان کمک می‌کند. دفعه بعد انتخاب کنید کارت‌ها و مدارکتان را کجا نگه می‌دارید.",
+  "lostWalletCaseTitle": "شماره پرونده پلیس",
+  "lostWalletCaseHint": "بانک‌ها، بیمه‌ها و ادارات اغلب آن را می‌خواهند.",
+  "lostWalletCaseLabel": "شماره پرونده یا ارجاع",
+  "lostWalletCaseSaved": "شماره پرونده ذخیره شد",
+  "lostWalletAbroadTitle": "الان خارج از کشورید؟",
+  "lostWalletAbroadBody": "در سفر {trip} هستید. اگر گذرنامه یا کارت شناسایی‌تان داخلش بود، برای سند سفر اضطراری با سفارت یا کنسولگری تماس بگیرید و به بیمه مسافرتی خبر دهید.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "باز کردن سفر",
+  "lostWalletPhoneTitle": "گوشی‌تان را هم بردند؟",
+  "lostWalletPhoneBody": "اول سیم‌کارت و برنامه‌های بانکی را مسدود کنید. برای این کار یک برنامه وجود دارد.",
+  "lostWalletPhoneButton": "شروع برنامه گوشی گم‌شده",
+  "lostWalletStatementNote": "Vaultara پس از ۳۰، ۶۰ و ۹۰ روز به شما یادآوری می‌کند.",
+  "lostWalletStatementTitle": "صورت‌حساب‌های بانکی را بررسی کنید",
+  "lostWalletStatementBody": "دنبال پرداخت‌هایی بگردید که از زمان گم شدن کیف پول انجام نداده‌اید.",
+  "lostWalletFoundButton": "پیدایش کردم",
+  "lostWalletFoundTitle": "خبر خوب!",
+  "lostWalletFoundBody": "این کارت‌ها از قبل مسدود شده‌اند، پس منتظر کارت‌های جدید باشید:",
+  "lostWalletFoundNone": "هنوز چیزی مسدود نشده، می‌توانید مثل قبل ادامه دهید.",
+  "lostWalletFoundUnfreeze": "اگر کارت‌ها را در برنامه بانک مسدود موقت کرده‌اید، آن‌هایی را که مسدود نکرده‌اید آزاد کنید.",
+  "lostWalletFoundConfirm": "بستن برنامه",
+  "lostWalletFoundOn": "پیدا شده در {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "گزارش اقلام گم‌شده",
+  "lostWalletReportTitle": "گزارش اقلام گم‌شده",
+  "lostWalletReportWhen": "تاریخ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "چه چیزی گم شده: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "شماره پرونده: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "شماره پرونده: هنوز گزارش نشده",
+  "lostWalletReportCount": "{count, plural, other{موارد زیر: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

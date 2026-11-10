@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "引っ越しですか？ほかに更新が必要なものを確認しましょう。"
+  "lifePlanSuggestMove": "引っ越しですか？ほかに更新が必要なものを確認しましょう。",
+  "keptInTitle": "保管場所",
+  "keptInSubtitle": "なくしたときに、何を止めて何を再発行するか分かるように",
+  "keptInWallet": "財布",
+  "keptInBag": "バッグ",
+  "keptInPhoneCase": "スマホケース",
+  "keptInTravelPouch": "トラベルポーチ",
+  "keptInCar": "車",
+  "keptInHome": "自宅",
+  "keptInNone": "未設定",
+  "lostLineLabel": "紛失時の連絡先番号",
+  "lostLineHelper": "今すぐ保存しましょう。番号はカードに印字されているので、必要なときには手元にありません。",
+  "lifeEventWalletLost": "財布をなくした",
+  "lifeEventWalletLostBody": "まずカードを止め、それから書類を1つずつ再発行します。",
+  "lifeEventWalletStolen": "財布を盗まれた",
+  "lifeEventWalletStolenBody": "すぐにカードを止めて盗難を届け出ます。その後、口座の不正利用に注意します。",
+  "lifeVariantWalletQuestion": "紛失か盗難か?",
+  "lifeVariantLost": "紛失",
+  "lifeVariantStolen": "盗難",
+  "lifeTaskWalletFreezeCards": "銀行アプリにロック機能があればカードを一時停止する",
+  "lifeTaskWalletRetrace": "最後に立ち寄った場所に電話して遺失物を問い合わせる",
+  "lifeTaskWalletFraudAlert": "信用情報機関や国の不正対策窓口に本人確認書類の登録を依頼する",
+  "lifeTaskWalletStatements": "身に覚えのない支払いがないか明細を確認する",
+  "lifeTaskWalletSubscriptions": "新しいカードをサブスクや自動引き落としに登録する",
+  "lifeTaskWalletPayApps": "新しいカードを Google Pay や Apple Pay に追加する",
+  "lifeTaskWalletHealthCard": "健康保険に新しい保険証の発行を依頼する",
+  "lifeTaskWalletTransport": "交通系カードや ETC カードを止めて残高を移す",
+  "lifeTaskWalletLoyalty": "ポイントを失わないようポイントカードを再発行する",
+  "lifeTaskWalletLocks": "鍵や住所が入っていたなら、鍵の交換を検討する",
+  "lifeTaskWalletInsurance": "保険で財布や現金が補償されるか確認する",
+  "lostWalletHeroTitle": "財布をなくしましたか?",
+  "lostWalletHeroBody": "Vaultara が、最初に止めるもの、再発行するもの、連絡先を示します。",
+  "lostWalletStartTitle": "何がありましたか?",
+  "lostWalletEditTitle": "詳細を変更",
+  "lostWalletLostHint": "落とした、またはどこかに置き忘れた",
+  "lostWalletStolenHint": "誰かに取られた",
+  "lostWalletWhatMissing": "何がなくなりましたか?",
+  "lostWalletStartButton": "やることを表示",
+  "lostWalletCheckupTitle": "財布チェック",
+  "lostWalletCheckupBody": "なくしても何も忘れないよう、今のうちに準備しましょう。",
+  "lostWalletCheckupAllGood": "準備完了です。いつなくしても大丈夫です。",
+  "lostWalletSetPlaceBody": "カードや書類を開いて保管場所を選びます。身分証、免許証、カードで設定しましょう。",
+  "lostWalletIssuePhotos": "{count, plural, other{写真なし: {count}件。写真があると再発行が早くなります。}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{連絡先番号がないカード: {count}枚。}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{持ち歩いているパスポートや許可証: {count}件。旅行時以外は自宅に置きましょう。}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "持ち歩いているもの",
+  "lostWalletNoPhoto": "写真なし",
+  "lostWalletHasPhoto": "写真を保存済み",
+  "lostWalletNoLineShort": "連絡先番号なし",
+  "lostWalletHistory": "過去の記録",
+  "lostWalletFound": "見つかった",
+  "walletCheckToggle": "6か月ごとに知らせる",
+  "walletCheckToggleBody": "持ち物をさっと確認して、リストを正しく保ちます。",
+  "walletCheckReminderTitle": "財布チェック",
+  "walletCheckReminderBody": "財布の中身に変化はありましたか？1分で Vaultara を更新しましょう。",
+  "lostWalletBlockNow": "今すぐ止める",
+  "lostWalletBlockNowHint": "各銀行に電話するかアプリを使います。一分一秒が大切です。",
+  "lostWalletCall": "電話する",
+  "lostWalletAddLine": "番号を追加",
+  "lostWalletNoLine": "番号が保存されていません。銀行のアプリやサイトで確認してください。",
+  "lostWalletBlocked": "停止済み",
+  "lostWalletReplace": "再発行する",
+  "lostWalletReplaceHint": "新しいものを申請し、届いたら新しい日付を保存します。",
+  "lostWalletArrived": "新しいものが届いた",
+  "lostWalletCheck": "確認する",
+  "lostWalletCheckHint": "新しいカードや番号が必要か問い合わせます。",
+  "lostWalletPlanEmptyTitle": "保存済みのものはありませんでした",
+  "lostWalletPlanEmpty": "以下の手順はそれでも役立ちます。次回はカードや書類の保管場所を設定しましょう。",
+  "lostWalletCaseTitle": "警察の受理番号",
+  "lostWalletCaseHint": "銀行、保険会社、役所でよく聞かれます。",
+  "lostWalletCaseLabel": "受理番号または参照番号",
+  "lostWalletCaseSaved": "受理番号を保存しました",
+  "lostWalletAbroadTitle": "今、海外にいますか?",
+  "lostWalletAbroadBody": "旅行中です: {trip}。パスポートや身分証が入っていた場合は、大使館や領事館に緊急渡航書類を相談し、旅行保険にも連絡してください。",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "旅行を開く",
+  "lostWalletPhoneTitle": "スマホも取られましたか?",
+  "lostWalletPhoneBody": "まず SIM カードと銀行アプリを止めましょう。専用のプランがあります。",
+  "lostWalletPhoneButton": "スマホ紛失プランを開始",
+  "lostWalletStatementNote": "Vaultara が30日後、60日後、90日後にお知らせします。",
+  "lostWalletStatementTitle": "明細を確認",
+  "lostWalletStatementBody": "財布をなくしてから身に覚えのない支払いがないか確認します。",
+  "lostWalletFoundButton": "見つかった",
+  "lostWalletFoundTitle": "よかったですね!",
+  "lostWalletFoundBody": "これらのカードは停止済みなので、新しいカードを待ちましょう:",
+  "lostWalletFoundNone": "まだ何も止めていないので、これまで通り使えます。",
+  "lostWalletFoundUnfreeze": "銀行アプリでカードを一時停止した場合は、止めていないカードを解除してください。",
+  "lostWalletFoundConfirm": "プランを閉じる",
+  "lostWalletFoundOn": "{date}に発見",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "紛失物レポート",
+  "lostWalletReportTitle": "紛失物レポート",
+  "lostWalletReportWhen": "日付: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "なくなったもの: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "受理番号: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "受理番号: 未届け",
+  "lostWalletReportCount": "{count, plural, other{以下の項目: {count}件}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

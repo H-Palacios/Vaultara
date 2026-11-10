@@ -7171,4 +7171,324 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'නව නිවසකට යනවාද? තවත් යාවත්කාලීන කළ යුතු දේ බලන්න.';
+
+  @override
+  String get keptInTitle => 'මම එය තබන තැන';
+
+  @override
+  String get keptInSubtitle => 'නැති වුණොත් අවහිර කළ යුත්තේ සහ ප්‍රතිස්ථාපනය කළ යුත්තේ කුමක්දැයි දැනගැනීමට';
+
+  @override
+  String get keptInWallet => 'පසුම්බිය';
+
+  @override
+  String get keptInBag => 'බෑගය';
+
+  @override
+  String get keptInPhoneCase => 'දුරකථන කවරය';
+
+  @override
+  String get keptInTravelPouch => 'ගමන් මල්ල';
+
+  @override
+  String get keptInCar => 'මෝටර් රථය';
+
+  @override
+  String get keptInHome => 'නිවසේ';
+
+  @override
+  String get keptInNone => 'තෝරා නැත';
+
+  @override
+  String get lostLineLabel => 'නැතිවූ කාඩ්පතේ අංකය';
+
+  @override
+  String get lostLineHelper => 'දැන්ම සුරකින්න. අංකය කාඩ්පතේ මුද්‍රණය කර ඇති නිසා අවශ්‍ය වූ විට ඔබ ළඟ නොතිබේ.';
+
+  @override
+  String get lifeEventWalletLost => 'මගේ පසුම්බිය නැති වුණා';
+
+  @override
+  String get lifeEventWalletLostBody => 'පළමුව කාඩ්පත් අවහිර කරන්න, ඉන්පසු ලේඛන එකින් එක ප්‍රතිස්ථාපනය කරන්න.';
+
+  @override
+  String get lifeEventWalletStolen => 'මගේ පසුම්බිය සොරකම් කළා';
+
+  @override
+  String get lifeEventWalletStolenBody => 'වහාම කාඩ්පත් අවහිර කර සොරකම වාර්තා කරන්න. ඉන්පසු වංචා සඳහා ගිණුම් නිරීක්ෂණය කරන්න.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'නැති වුණාද, සොරකම් කළාද?';
+
+  @override
+  String get lifeVariantLost => 'නැති වුණා';
+
+  @override
+  String get lifeVariantStolen => 'සොරකම් කළා';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'බැංකු යෙදුමේ පහසුකම ඇත්නම් කාඩ්පත් කැටි කරන්න';
+
+  @override
+  String get lifeTaskWalletRetrace => 'අවසන් වරට ගිය ස්ථානවලට කතා කර නැතිවූ භාණ්ඩ ගැන අසන්න';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'ණය කාර්යාංශවලින් හෝ ඔබේ රටේ වංචා සේවයෙන් ඔබේ හැඳුනුම්පත සලකුණු කරන්නැයි ඉල්ලන්න';
+
+  @override
+  String get lifeTaskWalletStatements => 'ඔබ නොකළ ගෙවීම් සඳහා බැංකු ප්‍රකාශ පරීක්ෂා කරන්න';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'නව කාඩ්පත දායකත්ව සහ ස්වයංක්‍රීය ගෙවීම්වලට දමන්න';
+
+  @override
+  String get lifeTaskWalletPayApps => 'නව කාඩ්පත් Google Pay හෝ Apple Pay වෙත එක් කරන්න';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'සෞඛ්‍ය රක්ෂණයෙන් නව සාමාජික කාඩ්පතක් ඉල්ලන්න';
+
+  @override
+  String get lifeTaskWalletTransport => 'ප්‍රවාහන හෝ මාර්ග ගාස්තු කාඩ්පත අවහිර කර ශේෂය මාරු කරන්න';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'ලකුණු රඳවා ගැනීමට නව පක්ෂපාතීත්ව කාඩ්පත් ඉල්ලන්න';
+
+  @override
+  String get lifeTaskWalletLocks => 'ඇතුළේ යතුරු හෝ ඔබේ ලිපිනය තිබුණා නම් අගුළු මාරු කිරීම ගැන සිතන්න';
+
+  @override
+  String get lifeTaskWalletInsurance => 'ඔබේ රක්ෂණය පසුම්බිය සහ මුදල් ආවරණය කරනවාදැයි පරීක්ෂා කරන්න';
+
+  @override
+  String get lostWalletHeroTitle => 'පසුම්බිය නැති වුණාද?';
+
+  @override
+  String get lostWalletHeroBody => 'මුලින්ම අවහිර කළ යුත්තේ කුමක්ද, ප්‍රතිස්ථාපනය කළ යුත්තේ කුමක්ද, කාටද කිව යුත්තේ යන්න Vaultara පෙන්වයි.';
+
+  @override
+  String get lostWalletStartTitle => 'මොකද වුණේ?';
+
+  @override
+  String get lostWalletEditTitle => 'විස්තර වෙනස් කරන්න';
+
+  @override
+  String get lostWalletLostHint => 'වැටුණා හෝ කොහේ හරි අමතක වුණා';
+
+  @override
+  String get lostWalletStolenHint => 'කවුරුහරි ගත්තා';
+
+  @override
+  String get lostWalletWhatMissing => 'නැත්තේ මොනවාද?';
+
+  @override
+  String get lostWalletStartButton => 'කළ යුත්ත පෙන්වන්න';
+
+  @override
+  String get lostWalletCheckupTitle => 'පසුම්බි පරීක්ෂාව';
+
+  @override
+  String get lostWalletCheckupBody => 'නැති වුණොත් කිසිවක් අමතක නොවීමට දැන්ම සූදානම් වන්න.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'සියල්ල සූදානම්. කවදා හෝ නැති වුණොත් ඔබ සූදානම්.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'කාඩ්පතක් හෝ ලේඛනයක් විවෘත කර එය තබන තැන තෝරන්න. හැඳුනුම්පත, බලපත්‍රය සහ කාඩ්පත් සඳහා මෙය කරන්න.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඡායාරූප නැති: $count. ඡායාරූපයක් ඇත්නම් ප්‍රතිස්ථාපනය ඉක්මන්.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'අවහිර අංකය නැති කාඩ්පත්: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඔබ ළඟ ඇති ගමන් බලපත්‍ර හෝ අවසර පත්‍ර: $count. ගමන් නොයන්නේ නම් නිවසේ තබන්න.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'ඔබ රැගෙන යන දේ';
+
+  @override
+  String get lostWalletNoPhoto => 'ඡායාරූපයක් නැත';
+
+  @override
+  String get lostWalletHasPhoto => 'ඡායාරූපය සුරැකිණි';
+
+  @override
+  String get lostWalletNoLineShort => 'අවහිර අංකයක් නැත';
+
+  @override
+  String get lostWalletHistory => 'පෙර අවස්ථා';
+
+  @override
+  String get lostWalletFound => 'හමු විය';
+
+  @override
+  String get walletCheckToggle => 'සෑම මාස 6කට වරක් මතක් කරන්න';
+
+  @override
+  String get walletCheckToggleBody => 'ලැයිස්තුව නිවැරදිව තබා ගැනීමට ඔබ රැගෙන යන දේ ඉක්මනින් බැලීම.';
+
+  @override
+  String get walletCheckReminderTitle => 'පසුම්බි පරීක්ෂාව';
+
+  @override
+  String get walletCheckReminderBody => 'ඔබේ පසුම්බියේ යමක් වෙනස් වුණාද? Vaultara යාවත්කාලීන කිරීමට මිනිත්තුවක් ගන්න.';
+
+  @override
+  String get lostWalletBlockNow => 'මේවා දැන්ම අවහිර කරන්න';
+
+  @override
+  String get lostWalletBlockNowHint => 'සෑම බැංකුවකටම කතා කරන්න හෝ එහි යෙදුම භාවිත කරන්න. සෑම මිනිත්තුවක්ම වැදගත්.';
+
+  @override
+  String get lostWalletCall => 'අමතන්න';
+
+  @override
+  String get lostWalletAddLine => 'අංකය එක් කරන්න';
+
+  @override
+  String get lostWalletNoLine => 'අංකයක් සුරැකී නැත. බැංකුවේ යෙදුමෙන් හෝ වෙබ් අඩවියෙන් සොයන්න.';
+
+  @override
+  String get lostWalletBlocked => 'අවහිරයි';
+
+  @override
+  String get lostWalletReplace => 'මේවා ප්‍රතිස්ථාපනය කරන්න';
+
+  @override
+  String get lostWalletReplaceHint => 'අලුත් ඒවා සඳහා අයදුම් කර ලැබුණු විට නව දිනය සුරකින්න.';
+
+  @override
+  String get lostWalletArrived => 'අලුත් එක ලැබුණා';
+
+  @override
+  String get lostWalletCheck => 'මේවා පරීක්ෂා කරන්න';
+
+  @override
+  String get lostWalletCheckHint => 'නව කාඩ්පතක් හෝ අංකයක් අවශ්‍යදැයි අසන්න.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'එහි කිසිවක් සුරැකී නොතිබුණි';
+
+  @override
+  String get lostWalletPlanEmpty => 'පහත පියවර තවමත් උදව් වේ. ඊළඟ වතාවේ කාඩ්පත් සහ ලේඛන තබන තැන තෝරන්න.';
+
+  @override
+  String get lostWalletCaseTitle => 'පොලිස් නඩු අංකය';
+
+  @override
+  String get lostWalletCaseHint => 'බැංකු, රක්ෂණ සමාගම් සහ කාර්යාල එය නිතර ඉල්ලයි.';
+
+  @override
+  String get lostWalletCaseLabel => 'නඩු හෝ යොමු අංකය';
+
+  @override
+  String get lostWalletCaseSaved => 'නඩු අංකය සුරැකිණි';
+
+  @override
+  String get lostWalletAbroadTitle => 'දැන් විදේශයකද?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'ඔබ $trip ගමනේ සිටී. ඇතුළේ ගමන් බලපත්‍රය හෝ හැඳුනුම්පත තිබුණා නම් හදිසි ගමන් ලේඛනයක් සඳහා තානාපති කාර්යාලය හෝ කොන්සල් කාර්යාලය අමතා ගමන් රක්ෂණයට දන්වන්න.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'ගමන විවෘත කරන්න';
+
+  @override
+  String get lostWalletPhoneTitle => 'ඔබේ දුරකථනයත් ගත්තාද?';
+
+  @override
+  String get lostWalletPhoneBody => 'පළමුව SIM කාඩ්පත සහ බැංකු යෙදුම් අවහිර කරන්න. ඒ සඳහා සැලැස්මක් ඇත.';
+
+  @override
+  String get lostWalletPhoneButton => 'නැතිවූ දුරකථන සැලැස්ම අරඹන්න';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara දින 30, 60 සහ 90කට පසු මතක් කරයි.';
+
+  @override
+  String get lostWalletStatementTitle => 'බැංකු ප්‍රකාශ පරීක්ෂා කරන්න';
+
+  @override
+  String get lostWalletStatementBody => 'පසුම්බිය නැති වූ දා සිට ඔබ නොකළ ගෙවීම් සොයන්න.';
+
+  @override
+  String get lostWalletFoundButton => 'මට හමු වුණා';
+
+  @override
+  String get lostWalletFoundTitle => 'සුබ ආරංචියක්!';
+
+  @override
+  String get lostWalletFoundBody => 'මෙම කාඩ්පත් දැනටමත් අවහිර කර ඇත, එබැවින් අලුත් ඒවා බලාපොරොත්තු වන්න:';
+
+  @override
+  String get lostWalletFoundNone => 'තවම කිසිවක් අවහිර කර නැත, පෙර පරිදි ඉදිරියට යා හැක.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'බැංකු යෙදුමේ කාඩ්පත් කැටි කළා නම්, අවහිර නොකළ ඒවා නැවත සක්‍රිය කරන්න.';
+
+  @override
+  String get lostWalletFoundConfirm => 'සැලැස්ම වසන්න';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return '$date දින හමු විය';
+  }
+
+  @override
+  String get lostWalletReport => 'නැතිවූ භාණ්ඩ වාර්තාව';
+
+  @override
+  String get lostWalletReportTitle => 'නැතිවූ භාණ්ඩ වාර්තාව';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'දිනය: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'නැත්තේ: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'නඩු අංකය: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'නඩු අංකය: තවම වාර්තා කර නැත';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'පහත අයිතම: $count',
+    );
+    return '$_temp0';
+  }
 }

@@ -2318,5 +2318,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Trek jy na 'n nuwe huis? Kyk wat jy nog moet bywerk."
+  "lifePlanSuggestMove": "Trek jy na 'n nuwe huis? Kyk wat jy nog moet bywerk.",
+  "keptInTitle": "Waar ek dit hou",
+  "keptInSubtitle": "Sodat jy weet wat om te blokkeer en te vervang as dit wegraak",
+  "keptInWallet": "Beursie",
+  "keptInBag": "Sak",
+  "keptInPhoneCase": "Fooncover",
+  "keptInTravelPouch": "Reissakkie",
+  "keptInCar": "Kar",
+  "keptInHome": "By die huis",
+  "keptInNone": "Nie gekies nie",
+  "lostLineLabel": "Nommer vir verlore kaart",
+  "lostLineHelper": "Stoor dit nou. Die nommer is op die kaart gedruk, so jy het dit nie wanneer jy dit nodig het nie.",
+  "lifeEventWalletLost": "Ek het my beursie verloor",
+  "lifeEventWalletLostBody": "Blokkeer eers jou kaarte en vervang dan jou dokumente een vir een.",
+  "lifeEventWalletStolen": "My beursie is gesteel",
+  "lifeEventWalletStolenBody": "Blokkeer jou kaarte dadelik en meld die diefstal aan. Hou dan jou rekeninge dop vir bedrog.",
+  "lifeVariantWalletQuestion": "Verloor of gesteel?",
+  "lifeVariantLost": "Verloor",
+  "lifeVariantStolen": "Gesteel",
+  "lifeTaskWalletFreezeCards": "Vries jou kaarte in jou bankprogram as dit dit kan doen",
+  "lifeTaskWalletRetrace": "Bel die laaste plekke waar jy was en vra by verlore eiendom",
+  "lifeTaskWalletFraudAlert": "Vra die kredietburo's of jou land se bedrogdiens om jou ID te merk (soos SAFPS in Suid-Afrika)",
+  "lifeTaskWalletStatements": "Gaan jou bankstate na vir betalings wat jy nie gemaak het nie",
+  "lifeTaskWalletSubscriptions": "Sit die nuwe kaart op jou intekeninge en debietorders",
+  "lifeTaskWalletPayApps": "Voeg die nuwe kaarte by Google Pay of Apple Pay",
+  "lifeTaskWalletHealthCard": "Vra jou mediese fonds vir 'n nuwe lidmaatskaart",
+  "lifeTaskWalletTransport": "Blokkeer jou vervoer- of tolkaart en skuif die saldo oor",
+  "lifeTaskWalletLoyalty": "Vra vir nuwe lojaliteitskaarte sodat jy jou punte hou",
+  "lifeTaskWalletLocks": "As sleutels of jou adres daarin was, oorweeg dit om die slotte te vervang",
+  "lifeTaskWalletInsurance": "Kyk of jou versekering die beursie en kontant dek",
+  "lostWalletHeroTitle": "Beursie verloor?",
+  "lostWalletHeroBody": "Vaultara wys wat jy eerste moet blokkeer, wat om te vervang en wie om te laat weet.",
+  "lostWalletStartTitle": "Wat het gebeur?",
+  "lostWalletEditTitle": "Verander die besonderhede",
+  "lostWalletLostHint": "Laat val of iewers vergeet",
+  "lostWalletStolenHint": "Iemand het dit gevat",
+  "lostWalletWhatMissing": "Wat ontbreek?",
+  "lostWalletStartButton": "Wys my wat om te doen",
+  "lostWalletCheckupTitle": "Beursie-nagaan",
+  "lostWalletCheckupBody": "Maak nou gereed sodat niks vergeet word as dit wegraak nie.",
+  "lostWalletCheckupAllGood": "Alles reg. As dit ooit wegraak, is jy gereed.",
+  "lostWalletSetPlaceBody": "Maak 'n kaart of dokument oop en kies waar jy dit hou. Doen dit vir jou ID, rybewys en kaarte.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 item het geen foto nie. Met 'n foto is vervanging vinniger.} other{{count} items het geen foto nie. Met foto's is vervanging vinniger.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 kaart het geen nommer vir verlore kaart nie.} other{{count} kaarte het geen nommer vir verlore kaart nie.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Jy dra 'n paspoort of permit by jou. Los dit by die huis tensy jy reis.} other{Jy dra {count} paspoorte of permitte by jou. Los hulle by die huis tensy jy reis.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Wat jy by jou dra",
+  "lostWalletNoPhoto": "Geen foto",
+  "lostWalletHasPhoto": "Foto gestoor",
+  "lostWalletNoLineShort": "Geen nommer vir verlore kaart",
+  "lostWalletHistory": "Vorige kere",
+  "lostWalletFound": "Gevind",
+  "walletCheckToggle": "Herinner my elke 6 maande",
+  "walletCheckToggleBody": "'n Vinnige kyk na wat jy dra, sodat die lys reg bly.",
+  "walletCheckReminderTitle": "Beursie-nagaan",
+  "walletCheckReminderBody": "Het iets in jou beursie verander? Neem 'n minuut om Vaultara by te werk.",
+  "lostWalletBlockNow": "Blokkeer hierdie nou",
+  "lostWalletBlockNowHint": "Bel elke bank of gebruik sy program. Elke minuut tel.",
+  "lostWalletCall": "Bel",
+  "lostWalletAddLine": "Voeg die nommer by",
+  "lostWalletNoLine": "Geen nommer gestoor nie. Kry dit in jou bank se program of webwerf.",
+  "lostWalletBlocked": "Geblokkeer",
+  "lostWalletReplace": "Vervang hierdie",
+  "lostWalletReplaceHint": "Doen aansoek vir nuwes en stoor die nuwe datum wanneer elkeen aankom.",
+  "lostWalletArrived": "Nuwe een het aangekom",
+  "lostWalletCheck": "Gaan hierdie na",
+  "lostWalletCheckHint": "Vra of jy 'n nuwe kaart of nommer nodig het.",
+  "lostWalletPlanEmptyTitle": "Niks gestoor is daar gehou nie",
+  "lostWalletPlanEmpty": "Die stappe hieronder help steeds. Kies volgende keer waar jy jou kaarte en dokumente hou.",
+  "lostWalletCaseTitle": "Polisiesaaknommer",
+  "lostWalletCaseHint": "Banke, versekeraars en kantore vra dikwels daarvoor.",
+  "lostWalletCaseLabel": "Saak- of verwysingsnommer",
+  "lostWalletCaseSaved": "Saaknommer gestoor",
+  "lostWalletAbroadTitle": "Nou in die buiteland?",
+  "lostWalletAbroadBody": "Jy is op {trip}. As jou paspoort of ID daarin was, kontak jou ambassade of konsulaat vir 'n noodreisdokument en laat weet jou reisversekeraar.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Maak reis oop",
+  "lostWalletPhoneTitle": "Is jou foon ook gevat?",
+  "lostWalletPhoneBody": "Blokkeer eers die SIM-kaart en jou bankprogramme. Daar is 'n plan daarvoor.",
+  "lostWalletPhoneButton": "Begin die verlore-foon-plan",
+  "lostWalletStatementNote": "Vaultara herinner jou na 30, 60 en 90 dae.",
+  "lostWalletStatementTitle": "Gaan jou bankstate na",
+  "lostWalletStatementBody": "Soek betalings wat jy nie gemaak het sedert jou beursie weg is nie.",
+  "lostWalletFoundButton": "Ek het dit gekry",
+  "lostWalletFoundTitle": "Goeie nuus!",
+  "lostWalletFoundBody": "Hierdie kaarte is reeds geblokkeer, so hou 'n oog oop vir die nuwes:",
+  "lostWalletFoundNone": "Niks is nog geblokkeer nie, so jy kan aangaan soos voorheen.",
+  "lostWalletFoundUnfreeze": "As jy kaarte in jou bankprogram gevries het, ontvries dié wat jy nie geblokkeer het nie.",
+  "lostWalletFoundConfirm": "Sluit die plan",
+  "lostWalletFoundOn": "Gevind op {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Verslag van verlore items",
+  "lostWalletReportTitle": "Verslag van verlore items",
+  "lostWalletReportWhen": "Datum: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Wat ontbreek: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Saaknommer: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Saaknommer: nog nie aangemeld nie",
+  "lostWalletReportCount": "{count, plural, =1{1 item hieronder gelys} other{{count} items hieronder gelys}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

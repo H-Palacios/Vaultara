@@ -7320,4 +7320,324 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Kraustotės į naujus namus? Pažiūrėkite, ką dar reikia atnaujinti.';
+
+  @override
+  String get keptInTitle => 'Kur tai laikau';
+
+  @override
+  String get keptInSubtitle => 'Kad žinotumėte, ką blokuoti ir pakeisti, jei pradings';
+
+  @override
+  String get keptInWallet => 'Piniginė';
+
+  @override
+  String get keptInBag => 'Krepšys';
+
+  @override
+  String get keptInPhoneCase => 'Telefono dėklas';
+
+  @override
+  String get keptInTravelPouch => 'Kelioninis krepšelis';
+
+  @override
+  String get keptInCar => 'Automobilis';
+
+  @override
+  String get keptInHome => 'Namuose';
+
+  @override
+  String get keptInNone => 'Nenustatyta';
+
+  @override
+  String get lostLineLabel => 'Pamestos kortelės blokavimo numeris';
+
+  @override
+  String get lostLineHelper => 'Išsaugokite jį dabar. Numeris yra ant kortelės, todėl prireikus jo neturėsite.';
+
+  @override
+  String get lifeEventWalletLost => 'Pamečiau piniginę';
+
+  @override
+  String get lifeEventWalletLostBody => 'Pirmiausia užblokuokite korteles, tada po vieną pakeiskite dokumentus.';
+
+  @override
+  String get lifeEventWalletStolen => 'Pavogė mano piniginę';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Iškart užblokuokite korteles ir praneškite apie vagystę. Tada stebėkite sąskaitas dėl sukčiavimo.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Pamesta ar pavogta?';
+
+  @override
+  String get lifeVariantLost => 'Pamesta';
+
+  @override
+  String get lifeVariantStolen => 'Pavogta';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Užšaldykite korteles banko programėlėje, jei ji tai leidžia';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Paskambinkite į paskutines vietas, kur buvote, ir paklauskite rastų daiktų biure';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Paprašykite kredito biurų ar savo šalies sukčiavimo tarnybos pažymėti jūsų dokumentą';
+
+  @override
+  String get lifeTaskWalletStatements => 'Patikrinkite banko išrašus, ar nėra mokėjimų, kurių neatlikote';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Nustatykite naują kortelę prenumeratoms ir tiesioginio debeto mokėjimams';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Pridėkite naujas korteles prie Google Pay arba Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Paprašykite sveikatos draudiko naujos kortelės';
+
+  @override
+  String get lifeTaskWalletTransport => 'Užblokuokite transporto ar kelių mokesčio kortelę ir perkelkite likutį';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Paprašykite naujų lojalumo kortelių, kad išsaugotumėte taškus';
+
+  @override
+  String get lifeTaskWalletLocks => 'Jei ten buvo raktai ar jūsų adresas, apsvarstykite spynų keitimą';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Patikrinkite, ar draudimas apima piniginę ir grynuosius';
+
+  @override
+  String get lostWalletHeroTitle => 'Pametėte piniginę?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara parodo, ką blokuoti pirmiausia, ką pakeisti ir kam pranešti.';
+
+  @override
+  String get lostWalletStartTitle => 'Kas nutiko?';
+
+  @override
+  String get lostWalletEditTitle => 'Keisti duomenis';
+
+  @override
+  String get lostWalletLostHint => 'Iškrito ar kažkur palikau';
+
+  @override
+  String get lostWalletStolenHint => 'Kažkas paėmė';
+
+  @override
+  String get lostWalletWhatMissing => 'Ko trūksta?';
+
+  @override
+  String get lostWalletStartButton => 'Parodyk, ką daryti';
+
+  @override
+  String get lostWalletCheckupTitle => 'Piniginės patikra';
+
+  @override
+  String get lostWalletCheckupBody => 'Pasiruoškite dabar, kad nieko nepamirštumėte, jei ji pradings.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Viskas paruošta. Jei kada nors pradings, esate pasiruošę.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Atidarykite kortelę ar dokumentą ir pasirinkite, kur jį laikote. Tai padarykite asmens tapatybės kortelei, vairuotojo pažymėjimui ir kortelėms.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Be nuotraukos: $count. Su nuotrauka pakeisti greičiau.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kortelės be blokavimo numerio: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pasai ar leidimai su jumis: $count. Laikykite juos namuose, jei nekeliaujate.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Ką nešiojatės';
+
+  @override
+  String get lostWalletNoPhoto => 'Nėra nuotraukos';
+
+  @override
+  String get lostWalletHasPhoto => 'Nuotrauka išsaugota';
+
+  @override
+  String get lostWalletNoLineShort => 'Nėra blokavimo numerio';
+
+  @override
+  String get lostWalletHistory => 'Ankstesni kartai';
+
+  @override
+  String get lostWalletFound => 'Rasta';
+
+  @override
+  String get walletCheckToggle => 'Priminti kas 6 mėnesius';
+
+  @override
+  String get walletCheckToggleBody => 'Greitas žvilgsnis į tai, ką nešiojatės, kad sąrašas būtų tikslus.';
+
+  @override
+  String get walletCheckReminderTitle => 'Piniginės patikra';
+
+  @override
+  String get walletCheckReminderBody => 'Ar piniginėje kas nors pasikeitė? Skirkite minutę Vaultara atnaujinti.';
+
+  @override
+  String get lostWalletBlockNow => 'Užblokuokite dabar';
+
+  @override
+  String get lostWalletBlockNowHint => 'Paskambinkite kiekvienam bankui arba naudokite jo programėlę. Svarbi kiekviena minutė.';
+
+  @override
+  String get lostWalletCall => 'Skambinti';
+
+  @override
+  String get lostWalletAddLine => 'Pridėti numerį';
+
+  @override
+  String get lostWalletNoLine => 'Numeris neišsaugotas. Raskite jį banko programėlėje ar svetainėje.';
+
+  @override
+  String get lostWalletBlocked => 'Užblokuota';
+
+  @override
+  String get lostWalletReplace => 'Pakeiskite';
+
+  @override
+  String get lostWalletReplaceHint => 'Užsisakykite naujus ir išsaugokite naują datą, kai jie atkeliaus.';
+
+  @override
+  String get lostWalletArrived => 'Naujas atkeliavo';
+
+  @override
+  String get lostWalletCheck => 'Patikrinkite';
+
+  @override
+  String get lostWalletCheckHint => 'Paklauskite, ar reikia naujos kortelės ar numerio.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ten nieko išsaugoto nebuvo';
+
+  @override
+  String get lostWalletPlanEmpty => 'Toliau pateikti žingsniai vis tiek padės. Kitą kartą pasirinkite, kur laikote korteles ir dokumentus.';
+
+  @override
+  String get lostWalletCaseTitle => 'Policijos bylos numeris';
+
+  @override
+  String get lostWalletCaseHint => 'Bankai, draudikai ir įstaigos dažnai jo prašo.';
+
+  @override
+  String get lostWalletCaseLabel => 'Bylos ar nuorodos numeris';
+
+  @override
+  String get lostWalletCaseSaved => 'Bylos numeris išsaugotas';
+
+  @override
+  String get lostWalletAbroadTitle => 'Šiuo metu užsienyje?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Esate kelionėje $trip. Jei ten buvo pasas ar tapatybės kortelė, kreipkitės į ambasadą ar konsulatą dėl laikino kelionės dokumento ir praneškite kelionių draudikui.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Atidaryti kelionę';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ar paėmė ir telefoną?';
+
+  @override
+  String get lostWalletPhoneBody => 'Pirmiausia užblokuokite SIM kortelę ir banko programėles. Tam yra atskiras planas.';
+
+  @override
+  String get lostWalletPhoneButton => 'Pradėti pamesto telefono planą';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara primins po 30, 60 ir 90 dienų.';
+
+  @override
+  String get lostWalletStatementTitle => 'Patikrinkite banko išrašus';
+
+  @override
+  String get lostWalletStatementBody => 'Ieškokite mokėjimų, kurių neatlikote nuo tada, kai dingo piniginė.';
+
+  @override
+  String get lostWalletFoundButton => 'Radau';
+
+  @override
+  String get lostWalletFoundTitle => 'Geros naujienos!';
+
+  @override
+  String get lostWalletFoundBody => 'Šios kortelės jau užblokuotos, tad laukite naujų:';
+
+  @override
+  String get lostWalletFoundNone => 'Dar niekas neužblokuota, galite tęsti kaip anksčiau.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Jei užšaldėte korteles banko programėlėje, atšildykite tas, kurių neužblokavote.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Uždaryti planą';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Rasta $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Pamestų daiktų ataskaita';
+
+  @override
+  String get lostWalletReportTitle => 'Pamestų daiktų ataskaita';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Data: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Ko trūksta: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Bylos numeris: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Bylos numeris: dar nepranešta';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Įrašai žemiau: $count',
+    );
+    return '$_temp0';
+  }
 }

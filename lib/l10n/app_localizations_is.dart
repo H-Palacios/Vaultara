@@ -7172,4 +7172,324 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Ertu að flytja? Sjáðu hvað annað þarf að uppfæra.';
+
+  @override
+  String get keptInTitle => 'Hvar ég geymi það';
+
+  @override
+  String get keptInSubtitle => 'Svo þú vitir hvað þarf að loka og endurnýja ef það týnist';
+
+  @override
+  String get keptInWallet => 'Veski';
+
+  @override
+  String get keptInBag => 'Taska';
+
+  @override
+  String get keptInPhoneCase => 'Símahulstur';
+
+  @override
+  String get keptInTravelPouch => 'Ferðaveski';
+
+  @override
+  String get keptInCar => 'Bíll';
+
+  @override
+  String get keptInHome => 'Heima';
+
+  @override
+  String get keptInNone => 'Ekki valið';
+
+  @override
+  String get lostLineLabel => 'Lokunarnúmer fyrir glatað kort';
+
+  @override
+  String get lostLineHelper => 'Vistaðu það núna. Númerið er á kortinu, svo þú hefur það ekki þegar þú þarft það.';
+
+  @override
+  String get lifeEventWalletLost => 'Ég týndi veskinu mínu';
+
+  @override
+  String get lifeEventWalletLostBody => 'Lokaðu kortunum fyrst og endurnýjaðu svo skilríkin eitt af öðru.';
+
+  @override
+  String get lifeEventWalletStolen => 'Veskinu mínu var stolið';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Lokaðu kortunum strax og tilkynntu þjófnaðinn. Fylgstu svo með reikningunum vegna svika.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Týnt eða stolið?';
+
+  @override
+  String get lifeVariantLost => 'Týnt';
+
+  @override
+  String get lifeVariantStolen => 'Stolið';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Frystu kortin í bankaappinu ef það býður upp á það';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Hringdu á síðustu staðina sem þú varst á og spurðu um óskilamuni';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Biddu lánshæfisfyrirtæki eða svikaþjónustu landsins að merkja skilríkin þín';
+
+  @override
+  String get lifeTaskWalletStatements => 'Farðu yfir bankayfirlit eftir greiðslum sem þú gerðir ekki';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Settu nýja kortið á áskriftir og sjálfvirkar greiðslur';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Bættu nýju kortunum í Google Pay eða Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Biddu sjúkratrygginguna um nýtt kort';
+
+  @override
+  String get lifeTaskWalletTransport => 'Lokaðu samgöngu- eða veggjaldakortinu og færðu inneignina';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Biddu um ný vildarkort svo þú haldir punktunum';
+
+  @override
+  String get lifeTaskWalletLocks => 'Ef lyklar eða heimilisfangið þitt voru í því, íhugaðu að skipta um lása';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Athugaðu hvort tryggingin þín nær yfir veskið og reiðufé';
+
+  @override
+  String get lostWalletHeroTitle => 'Týndirðu veskinu?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara sýnir hverju á að loka fyrst, hvað á að endurnýja og hverjum á að segja frá.';
+
+  @override
+  String get lostWalletStartTitle => 'Hvað gerðist?';
+
+  @override
+  String get lostWalletEditTitle => 'Breyta upplýsingum';
+
+  @override
+  String get lostWalletLostHint => 'Datt eða gleymdist einhvers staðar';
+
+  @override
+  String get lostWalletStolenHint => 'Einhver tók það';
+
+  @override
+  String get lostWalletWhatMissing => 'Hvað vantar?';
+
+  @override
+  String get lostWalletStartButton => 'Sýndu mér hvað ég á að gera';
+
+  @override
+  String get lostWalletCheckupTitle => 'Veskisskoðun';
+
+  @override
+  String get lostWalletCheckupBody => 'Undirbúðu þig núna svo ekkert gleymist ef það týnist.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Allt tilbúið. Ef það týnist einhvern tímann ertu undirbúin(n).';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Opnaðu kort eða skjal og veldu hvar þú geymir það. Gerðu þetta fyrir skilríki, ökuskírteini og kort.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Án myndar: $count. Með mynd gengur endurnýjun hraðar.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kort án lokunarnúmers: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vegabréf eða leyfi á þér: $count. Geymdu þau heima nema þú sért á ferðalagi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Það sem þú berð á þér';
+
+  @override
+  String get lostWalletNoPhoto => 'Engin mynd';
+
+  @override
+  String get lostWalletHasPhoto => 'Mynd vistuð';
+
+  @override
+  String get lostWalletNoLineShort => 'Ekkert lokunarnúmer';
+
+  @override
+  String get lostWalletHistory => 'Fyrri skipti';
+
+  @override
+  String get lostWalletFound => 'Fannst';
+
+  @override
+  String get walletCheckToggle => 'Minna mig á á 6 mánaða fresti';
+
+  @override
+  String get walletCheckToggleBody => 'Snöggt yfirlit yfir það sem þú berð, svo listinn sé réttur.';
+
+  @override
+  String get walletCheckReminderTitle => 'Veskisskoðun';
+
+  @override
+  String get walletCheckReminderBody => 'Hefur eitthvað breyst í veskinu? Taktu eina mínútu í að uppfæra Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Lokaðu þessu núna';
+
+  @override
+  String get lostWalletBlockNowHint => 'Hringdu í hvern banka eða notaðu appið hans. Hver mínúta skiptir máli.';
+
+  @override
+  String get lostWalletCall => 'Hringja';
+
+  @override
+  String get lostWalletAddLine => 'Bæta við númeri';
+
+  @override
+  String get lostWalletNoLine => 'Ekkert númer vistað. Finndu það í appi eða á vef bankans.';
+
+  @override
+  String get lostWalletBlocked => 'Lokað';
+
+  @override
+  String get lostWalletReplace => 'Endurnýjaðu þetta';
+
+  @override
+  String get lostWalletReplaceHint => 'Sæktu um ný og vistaðu nýju dagsetninguna þegar þau berast.';
+
+  @override
+  String get lostWalletArrived => 'Nýtt er komið';
+
+  @override
+  String get lostWalletCheck => 'Athugaðu þetta';
+
+  @override
+  String get lostWalletCheckHint => 'Spurðu hvort þú þurfir nýtt kort eða númer.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Þar var ekkert vistað';
+
+  @override
+  String get lostWalletPlanEmpty => 'Skrefin hér fyrir neðan hjálpa samt. Veldu næst hvar þú geymir kort og skjöl.';
+
+  @override
+  String get lostWalletCaseTitle => 'Málsnúmer lögreglu';
+
+  @override
+  String get lostWalletCaseHint => 'Bankar, tryggingafélög og stofnanir biðja oft um það.';
+
+  @override
+  String get lostWalletCaseLabel => 'Mála- eða tilvísunarnúmer';
+
+  @override
+  String get lostWalletCaseSaved => 'Málsnúmer vistað';
+
+  @override
+  String get lostWalletAbroadTitle => 'Erlendis núna?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Þú ert á ferðalaginu $trip. Ef vegabréfið eða skilríkin voru í því, hafðu samband við sendiráðið eða ræðisskrifstofuna vegna neyðarvegabréfs og láttu ferðatrygginguna vita.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Opna ferðalag';
+
+  @override
+  String get lostWalletPhoneTitle => 'Var símanum líka stolið?';
+
+  @override
+  String get lostWalletPhoneBody => 'Lokaðu fyrst SIM-kortinu og bankaöppunum. Það er til áætlun fyrir það.';
+
+  @override
+  String get lostWalletPhoneButton => 'Hefja áætlun fyrir týndan síma';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara minnir þig á eftir 30, 60 og 90 daga.';
+
+  @override
+  String get lostWalletStatementTitle => 'Farðu yfir bankayfirlitin';
+
+  @override
+  String get lostWalletStatementBody => 'Leitaðu að greiðslum sem þú gerðir ekki síðan veskið hvarf.';
+
+  @override
+  String get lostWalletFoundButton => 'Ég fann það';
+
+  @override
+  String get lostWalletFoundTitle => 'Góðar fréttir!';
+
+  @override
+  String get lostWalletFoundBody => 'Þessum kortum hefur þegar verið lokað, svo fylgstu með nýjum:';
+
+  @override
+  String get lostWalletFoundNone => 'Engu hefur verið lokað enn, þú getur haldið áfram eins og áður.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Ef þú frystir kort í bankaappinu, affrystu þau sem þú lokaðir ekki.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Loka áætlun';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Fannst $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Skýrsla um týnda hluti';
+
+  @override
+  String get lostWalletReportTitle => 'Skýrsla um týnda hluti';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Dagsetning: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Það sem vantar: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Málsnúmer: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Málsnúmer: ekki tilkynnt enn';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atriði hér fyrir neðan: $count',
+    );
+    return '$_temp0';
+  }
 }

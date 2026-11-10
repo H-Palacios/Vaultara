@@ -2280,5 +2280,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Przeprowadzasz się? Zobacz, co jeszcze zaktualizować."
+  "lifePlanSuggestMove": "Przeprowadzasz się? Zobacz, co jeszcze zaktualizować.",
+  "keptInTitle": "Gdzie to trzymam",
+  "keptInSubtitle": "Żebyś wiedział, co zablokować i wymienić, jeśli zginie",
+  "keptInWallet": "Portfel",
+  "keptInBag": "Torba",
+  "keptInPhoneCase": "Etui na telefon",
+  "keptInTravelPouch": "Saszetka podróżna",
+  "keptInCar": "Samochód",
+  "keptInHome": "W domu",
+  "keptInNone": "Nie ustawiono",
+  "lostLineLabel": "Numer do zastrzeżenia karty",
+  "lostLineHelper": "Zapisz go teraz. Numer jest na karcie, więc nie będziesz go mieć, gdy będzie potrzebny.",
+  "lifeEventWalletLost": "Zgubiłem portfel",
+  "lifeEventWalletLostBody": "Najpierw zastrzeż karty, potem wymieniaj dokumenty po kolei.",
+  "lifeEventWalletStolen": "Ukradziono mi portfel",
+  "lifeEventWalletStolenBody": "Od razu zastrzeż karty i zgłoś kradzież. Potem pilnuj kont pod kątem oszustw.",
+  "lifeVariantWalletQuestion": "Zgubiony czy skradziony?",
+  "lifeVariantLost": "Zgubiony",
+  "lifeVariantStolen": "Skradziony",
+  "lifeTaskWalletFreezeCards": "Zamroź karty w aplikacji banku, jeśli to umożliwia",
+  "lifeTaskWalletRetrace": "Zadzwoń do ostatnich miejsc, w których byłeś, i zapytaj w biurze rzeczy znalezionych",
+  "lifeTaskWalletFraudAlert": "Poproś biura kredytowe lub krajową usługę antyfraudową o oznaczenie twojego dokumentu",
+  "lifeTaskWalletStatements": "Sprawdź wyciągi bankowe pod kątem płatności, których nie robiłeś",
+  "lifeTaskWalletSubscriptions": "Podepnij nową kartę do subskrypcji i poleceń zapłaty",
+  "lifeTaskWalletPayApps": "Dodaj nowe karty do Google Pay lub Apple Pay",
+  "lifeTaskWalletHealthCard": "Poproś ubezpieczyciela zdrowotnego o nową kartę",
+  "lifeTaskWalletTransport": "Zablokuj kartę komunikacyjną lub do opłat drogowych i przenieś saldo",
+  "lifeTaskWalletLoyalty": "Poproś o nowe karty lojalnościowe, żeby zachować punkty",
+  "lifeTaskWalletLocks": "Jeśli były tam klucze lub twój adres, rozważ wymianę zamków",
+  "lifeTaskWalletInsurance": "Sprawdź, czy ubezpieczenie obejmuje portfel i gotówkę",
+  "lostWalletHeroTitle": "Zgubiłeś portfel?",
+  "lostWalletHeroBody": "Vaultara pokaże, co zablokować najpierw, co wymienić i kogo powiadomić.",
+  "lostWalletStartTitle": "Co się stało?",
+  "lostWalletEditTitle": "Zmień dane",
+  "lostWalletLostHint": "Wypadł lub został gdzieś",
+  "lostWalletStolenHint": "Ktoś go zabrał",
+  "lostWalletWhatMissing": "Czego brakuje?",
+  "lostWalletStartButton": "Pokaż, co robić",
+  "lostWalletCheckupTitle": "Przegląd portfela",
+  "lostWalletCheckupBody": "Przygotuj się teraz, żeby niczego nie zapomnieć, jeśli zginie.",
+  "lostWalletCheckupAllGood": "Wszystko gotowe. Jeśli kiedyś zginie, jesteś przygotowany.",
+  "lostWalletSetPlaceBody": "Otwórz kartę lub dokument i wybierz, gdzie go trzymasz. Zrób to dla dowodu, prawa jazdy i kart.",
+  "lostWalletIssuePhotos": "{count, plural, other{Bez zdjęcia: {count}. Ze zdjęciem wymiana idzie szybciej.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Karty bez numeru do zastrzeżenia: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Paszporty lub zezwolenia przy sobie: {count}. Trzymaj je w domu, jeśli nie podróżujesz.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Co nosisz przy sobie",
+  "lostWalletNoPhoto": "Brak zdjęcia",
+  "lostWalletHasPhoto": "Zdjęcie zapisane",
+  "lostWalletNoLineShort": "Brak numeru do zastrzeżenia",
+  "lostWalletHistory": "Wcześniejsze przypadki",
+  "lostWalletFound": "Znaleziony",
+  "walletCheckToggle": "Przypominaj co 6 miesięcy",
+  "walletCheckToggleBody": "Szybki rzut oka na to, co nosisz, żeby lista się zgadzała.",
+  "walletCheckReminderTitle": "Przegląd portfela",
+  "walletCheckReminderBody": "Czy coś się zmieniło w portfelu? Poświęć minutę na aktualizację Vaultara.",
+  "lostWalletBlockNow": "Zablokuj teraz",
+  "lostWalletBlockNowHint": "Zadzwoń do każdego banku lub użyj jego aplikacji. Liczy się każda minuta.",
+  "lostWalletCall": "Zadzwoń",
+  "lostWalletAddLine": "Dodaj numer",
+  "lostWalletNoLine": "Brak zapisanego numeru. Znajdź go w aplikacji lub na stronie banku.",
+  "lostWalletBlocked": "Zastrzeżona",
+  "lostWalletReplace": "Wymień",
+  "lostWalletReplaceHint": "Złóż wnioski o nowe i zapisz nową datę, gdy przyjdą.",
+  "lostWalletArrived": "Nowy przyszedł",
+  "lostWalletCheck": "Sprawdź",
+  "lostWalletCheckHint": "Zapytaj, czy potrzebujesz nowej karty lub numeru.",
+  "lostWalletPlanEmptyTitle": "Nic zapisanego tam nie było",
+  "lostWalletPlanEmpty": "Kroki poniżej i tak pomogą. Następnym razem wybierz, gdzie trzymasz karty i dokumenty.",
+  "lostWalletCaseTitle": "Numer zgłoszenia na policji",
+  "lostWalletCaseHint": "Banki, ubezpieczyciele i urzędy często o niego proszą.",
+  "lostWalletCaseLabel": "Numer sprawy lub zgłoszenia",
+  "lostWalletCaseSaved": "Numer zgłoszenia zapisany",
+  "lostWalletAbroadTitle": "Za granicą?",
+  "lostWalletAbroadBody": "Jesteś w podróży: {trip}. Jeśli był tam paszport lub dowód, skontaktuj się z ambasadą lub konsulatem w sprawie tymczasowego dokumentu podróży i powiadom ubezpieczyciela podróżnego.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Otwórz podróż",
+  "lostWalletPhoneTitle": "Telefon też zabrano?",
+  "lostWalletPhoneBody": "Najpierw zablokuj kartę SIM i aplikacje bankowe. Jest na to osobny plan.",
+  "lostWalletPhoneButton": "Rozpocznij plan zgubionego telefonu",
+  "lostWalletStatementNote": "Vaultara przypomni po 30, 60 i 90 dniach.",
+  "lostWalletStatementTitle": "Sprawdź wyciągi bankowe",
+  "lostWalletStatementBody": "Szukaj płatności, których nie robiłeś, od kiedy zginął portfel.",
+  "lostWalletFoundButton": "Znalazłem go",
+  "lostWalletFoundTitle": "Dobra wiadomość!",
+  "lostWalletFoundBody": "Te karty są już zastrzeżone, więc wypatruj nowych:",
+  "lostWalletFoundNone": "Nic jeszcze nie zastrzeżono, możesz działać jak wcześniej.",
+  "lostWalletFoundUnfreeze": "Jeśli zamroziłeś karty w aplikacji banku, odmroź te, których nie zastrzegłeś.",
+  "lostWalletFoundConfirm": "Zamknij plan",
+  "lostWalletFoundOn": "Znaleziony {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Raport zgubionych rzeczy",
+  "lostWalletReportTitle": "Raport zgubionych rzeczy",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Czego brakuje: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Numer zgłoszenia: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Numer zgłoszenia: jeszcze nie zgłoszono",
+  "lostWalletReportCount": "{count, plural, other{Pozycje poniżej: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -7110,4 +7110,324 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Pindah ke rumah baru? Lihat apa lagi yang perlu diperbarui.';
+
+  @override
+  String get keptInTitle => 'Tempat saya menyimpannya';
+
+  @override
+  String get keptInSubtitle => 'Agar Anda tahu apa yang harus diblokir dan diganti jika hilang';
+
+  @override
+  String get keptInWallet => 'Dompet';
+
+  @override
+  String get keptInBag => 'Tas';
+
+  @override
+  String get keptInPhoneCase => 'Casing ponsel';
+
+  @override
+  String get keptInTravelPouch => 'Kantong perjalanan';
+
+  @override
+  String get keptInCar => 'Mobil';
+
+  @override
+  String get keptInHome => 'Di rumah';
+
+  @override
+  String get keptInNone => 'Belum diatur';
+
+  @override
+  String get lostLineLabel => 'Nomor kartu hilang';
+
+  @override
+  String get lostLineHelper => 'Simpan sekarang. Nomornya tercetak di kartu, jadi tidak ada di tangan saat Anda membutuhkannya.';
+
+  @override
+  String get lifeEventWalletLost => 'Dompet saya hilang';
+
+  @override
+  String get lifeEventWalletLostBody => 'Blokir kartu Anda dulu, lalu ganti dokumen satu per satu.';
+
+  @override
+  String get lifeEventWalletStolen => 'Dompet saya dicuri';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Segera blokir kartu dan laporkan pencurian. Lalu pantau rekening Anda dari penipuan.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Hilang atau dicuri?';
+
+  @override
+  String get lifeVariantLost => 'Hilang';
+
+  @override
+  String get lifeVariantStolen => 'Dicuri';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Bekukan kartu di aplikasi bank jika tersedia';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Hubungi tempat terakhir yang Anda kunjungi dan tanyakan barang hilang';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Minta biro kredit atau layanan antipenipuan negara Anda menandai identitas Anda';
+
+  @override
+  String get lifeTaskWalletStatements => 'Periksa mutasi rekening untuk pembayaran yang tidak Anda lakukan';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Pasang kartu baru di langganan dan autodebet';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Tambahkan kartu baru ke Google Pay atau Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Minta kartu peserta baru dari asuransi kesehatan Anda';
+
+  @override
+  String get lifeTaskWalletTransport => 'Blokir kartu transportasi atau tol dan pindahkan saldonya';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Minta kartu loyalitas baru agar poin Anda tetap ada';
+
+  @override
+  String get lifeTaskWalletLocks => 'Jika ada kunci atau alamat Anda di dalamnya, pertimbangkan mengganti kunci';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Periksa apakah asuransi Anda menanggung dompet dan uang tunai';
+
+  @override
+  String get lostWalletHeroTitle => 'Dompet hilang?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara menunjukkan apa yang harus diblokir dulu, apa yang diganti, dan siapa yang harus diberi tahu.';
+
+  @override
+  String get lostWalletStartTitle => 'Apa yang terjadi?';
+
+  @override
+  String get lostWalletEditTitle => 'Ubah detail';
+
+  @override
+  String get lostWalletLostHint => 'Terjatuh atau tertinggal di suatu tempat';
+
+  @override
+  String get lostWalletStolenHint => 'Seseorang mengambilnya';
+
+  @override
+  String get lostWalletWhatMissing => 'Apa yang hilang?';
+
+  @override
+  String get lostWalletStartButton => 'Tunjukkan yang harus saya lakukan';
+
+  @override
+  String get lostWalletCheckupTitle => 'Pemeriksaan dompet';
+
+  @override
+  String get lostWalletCheckupBody => 'Bersiaplah sekarang agar tidak ada yang terlupa jika hilang.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Semua siap. Jika suatu hari hilang, Anda sudah siap.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Buka kartu atau dokumen lalu pilih tempat Anda menyimpannya. Lakukan untuk KTP, SIM, dan kartu Anda.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tanpa foto: $count. Dengan foto, penggantian lebih cepat.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kartu tanpa nomor blokir: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Paspor atau izin yang Anda bawa: $count. Simpan di rumah kecuali sedang bepergian.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Yang Anda bawa';
+
+  @override
+  String get lostWalletNoPhoto => 'Tidak ada foto';
+
+  @override
+  String get lostWalletHasPhoto => 'Foto disimpan';
+
+  @override
+  String get lostWalletNoLineShort => 'Tidak ada nomor blokir';
+
+  @override
+  String get lostWalletHistory => 'Kejadian sebelumnya';
+
+  @override
+  String get lostWalletFound => 'Ditemukan';
+
+  @override
+  String get walletCheckToggle => 'Ingatkan saya setiap 6 bulan';
+
+  @override
+  String get walletCheckToggleBody => 'Sekilas melihat apa yang Anda bawa agar daftarnya tetap benar.';
+
+  @override
+  String get walletCheckReminderTitle => 'Pemeriksaan dompet';
+
+  @override
+  String get walletCheckReminderBody => 'Ada yang berubah di dompet Anda? Luangkan semenit untuk memperbarui Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Blokir ini sekarang';
+
+  @override
+  String get lostWalletBlockNowHint => 'Hubungi setiap bank atau gunakan aplikasinya. Setiap menit berharga.';
+
+  @override
+  String get lostWalletCall => 'Telepon';
+
+  @override
+  String get lostWalletAddLine => 'Tambahkan nomor';
+
+  @override
+  String get lostWalletNoLine => 'Belum ada nomor tersimpan. Cari di aplikasi atau situs bank Anda.';
+
+  @override
+  String get lostWalletBlocked => 'Diblokir';
+
+  @override
+  String get lostWalletReplace => 'Ganti ini';
+
+  @override
+  String get lostWalletReplaceHint => 'Ajukan yang baru dan simpan tanggal barunya saat tiba.';
+
+  @override
+  String get lostWalletArrived => 'Yang baru sudah tiba';
+
+  @override
+  String get lostWalletCheck => 'Periksa ini';
+
+  @override
+  String get lostWalletCheckHint => 'Tanyakan apakah Anda perlu kartu atau nomor baru.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Tidak ada yang tersimpan di sana';
+
+  @override
+  String get lostWalletPlanEmpty => 'Langkah di bawah tetap membantu. Lain kali, pilih tempat Anda menyimpan kartu dan dokumen.';
+
+  @override
+  String get lostWalletCaseTitle => 'Nomor laporan polisi';
+
+  @override
+  String get lostWalletCaseHint => 'Bank, perusahaan asuransi, dan kantor sering memintanya.';
+
+  @override
+  String get lostWalletCaseLabel => 'Nomor kasus atau referensi';
+
+  @override
+  String get lostWalletCaseSaved => 'Nomor laporan disimpan';
+
+  @override
+  String get lostWalletAbroadTitle => 'Sedang di luar negeri?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Anda sedang dalam perjalanan $trip. Jika paspor atau KTP ada di dalamnya, hubungi kedutaan atau konsulat untuk dokumen perjalanan darurat dan beri tahu asuransi perjalanan Anda.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Buka perjalanan';
+
+  @override
+  String get lostWalletPhoneTitle => 'Ponsel Anda juga diambil?';
+
+  @override
+  String get lostWalletPhoneBody => 'Blokir kartu SIM dan aplikasi bank lebih dulu. Ada rencana untuk itu.';
+
+  @override
+  String get lostWalletPhoneButton => 'Mulai rencana ponsel hilang';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara akan mengingatkan Anda setelah 30, 60, dan 90 hari.';
+
+  @override
+  String get lostWalletStatementTitle => 'Periksa mutasi rekening';
+
+  @override
+  String get lostWalletStatementBody => 'Cari pembayaran yang tidak Anda lakukan sejak dompet hilang.';
+
+  @override
+  String get lostWalletFoundButton => 'Sudah ketemu';
+
+  @override
+  String get lostWalletFoundTitle => 'Kabar baik!';
+
+  @override
+  String get lostWalletFoundBody => 'Kartu-kartu ini sudah diblokir, jadi tunggu yang baru:';
+
+  @override
+  String get lostWalletFoundNone => 'Belum ada yang diblokir, Anda bisa lanjut seperti biasa.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Jika Anda membekukan kartu di aplikasi bank, cairkan kartu yang tidak Anda blokir.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Tutup rencana';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Ditemukan pada $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Laporan barang hilang';
+
+  @override
+  String get lostWalletReportTitle => 'Laporan barang hilang';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Tanggal: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Yang hilang: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Nomor laporan: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Nomor laporan: belum dilaporkan';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Item di bawah: $count',
+    );
+    return '$_temp0';
+  }
 }

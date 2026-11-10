@@ -7314,4 +7314,324 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Stěhujete se? Podívejte se, co dalšího aktualizovat.';
+
+  @override
+  String get keptInTitle => 'Kde to nosím';
+
+  @override
+  String get keptInSubtitle => 'Abyste věděli, co zablokovat a nahradit, když se to ztratí';
+
+  @override
+  String get keptInWallet => 'Peněženka';
+
+  @override
+  String get keptInBag => 'Taška';
+
+  @override
+  String get keptInPhoneCase => 'Pouzdro na telefon';
+
+  @override
+  String get keptInTravelPouch => 'Cestovní pouzdro';
+
+  @override
+  String get keptInCar => 'Auto';
+
+  @override
+  String get keptInHome => 'Doma';
+
+  @override
+  String get keptInNone => 'Nenastaveno';
+
+  @override
+  String get lostLineLabel => 'Číslo pro blokaci ztracené karty';
+
+  @override
+  String get lostLineHelper => 'Uložte si ho teď. Číslo je na kartě, takže ho nebudete mít, až ho budete potřebovat.';
+
+  @override
+  String get lifeEventWalletLost => 'Ztratil jsem peněženku';
+
+  @override
+  String get lifeEventWalletLostBody => 'Nejdřív zablokujte karty a pak nahrazujte doklady jeden po druhém.';
+
+  @override
+  String get lifeEventWalletStolen => 'Ukradli mi peněženku';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Hned zablokujte karty a nahlaste krádež. Pak hlídejte účty kvůli podvodům.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Ztracená, nebo ukradená?';
+
+  @override
+  String get lifeVariantLost => 'Ztracená';
+
+  @override
+  String get lifeVariantStolen => 'Ukradená';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Zmrazte karty v bankovní aplikaci, pokud to umí';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Zavolejte na poslední místa, kde jste byli, a zeptejte se na ztráty a nálezy';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Požádejte úvěrové registry nebo protipodvodnou službu své země o označení dokladu';
+
+  @override
+  String get lifeTaskWalletStatements => 'Projděte výpisy kvůli platbám, které jste neudělali';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Nastavte novou kartu u předplatných a inkas';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Přidejte nové karty do Google Pay nebo Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Požádejte zdravotní pojišťovnu o novou kartičku';
+
+  @override
+  String get lifeTaskWalletTransport => 'Zablokujte jízdenkovou nebo mýtnou kartu a převeďte zůstatek';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Požádejte o nové věrnostní karty, ať o body nepřijdete';
+
+  @override
+  String get lifeTaskWalletLocks => 'Pokud tam byly klíče nebo vaše adresa, zvažte výměnu zámků';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Ověřte, zda pojištění kryje peněženku a hotovost';
+
+  @override
+  String get lostWalletHeroTitle => 'Ztratili jste peněženku?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara ukáže, co zablokovat nejdřív, co nahradit a komu dát vědět.';
+
+  @override
+  String get lostWalletStartTitle => 'Co se stalo?';
+
+  @override
+  String get lostWalletEditTitle => 'Změnit údaje';
+
+  @override
+  String get lostWalletLostHint => 'Vypadla nebo jsem ji někde nechal';
+
+  @override
+  String get lostWalletStolenHint => 'Někdo ji vzal';
+
+  @override
+  String get lostWalletWhatMissing => 'Co chybí?';
+
+  @override
+  String get lostWalletStartButton => 'Ukaž mi, co dělat';
+
+  @override
+  String get lostWalletCheckupTitle => 'Kontrola peněženky';
+
+  @override
+  String get lostWalletCheckupBody => 'Připravte se teď, ať nic nezapomenete, kdyby se ztratila.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Vše připraveno. Kdyby se někdy ztratila, jste připraveni.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Otevřete kartu nebo doklad a vyberte, kde ho nosíte. Udělejte to pro občanku, řidičák a karty.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bez fotky: $count. S fotkou je náhrada rychlejší.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Karty bez čísla pro blokaci: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pasy nebo povolení u sebe: $count. Nechávejte je doma, pokud necestujete.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Co nosíte u sebe';
+
+  @override
+  String get lostWalletNoPhoto => 'Bez fotky';
+
+  @override
+  String get lostWalletHasPhoto => 'Fotka uložena';
+
+  @override
+  String get lostWalletNoLineShort => 'Bez čísla pro blokaci';
+
+  @override
+  String get lostWalletHistory => 'Dřívější případy';
+
+  @override
+  String get lostWalletFound => 'Nalezena';
+
+  @override
+  String get walletCheckToggle => 'Připomínat každých 6 měsíců';
+
+  @override
+  String get walletCheckToggleBody => 'Rychlý pohled na to, co nosíte, aby seznam seděl.';
+
+  @override
+  String get walletCheckReminderTitle => 'Kontrola peněženky';
+
+  @override
+  String get walletCheckReminderBody => 'Změnilo se něco v peněžence? Věnujte minutu aktualizaci Vaultary.';
+
+  @override
+  String get lostWalletBlockNow => 'Zablokujte hned';
+
+  @override
+  String get lostWalletBlockNowHint => 'Zavolejte do každé banky nebo použijte její aplikaci. Každá minuta se počítá.';
+
+  @override
+  String get lostWalletCall => 'Zavolat';
+
+  @override
+  String get lostWalletAddLine => 'Přidat číslo';
+
+  @override
+  String get lostWalletNoLine => 'Číslo není uložené. Najdete ho v aplikaci nebo na webu banky.';
+
+  @override
+  String get lostWalletBlocked => 'Zablokováno';
+
+  @override
+  String get lostWalletReplace => 'Nahradit';
+
+  @override
+  String get lostWalletReplaceHint => 'Požádejte o nové a uložte nové datum, až dorazí.';
+
+  @override
+  String get lostWalletArrived => 'Nový dorazil';
+
+  @override
+  String get lostWalletCheck => 'Zkontrolovat';
+
+  @override
+  String get lostWalletCheckHint => 'Zeptejte se, zda potřebujete novou kartu nebo číslo.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Nic uloženého tam nebylo';
+
+  @override
+  String get lostWalletPlanEmpty => 'Kroky níže přesto pomohou. Příště vyberte, kde nosíte karty a doklady.';
+
+  @override
+  String get lostWalletCaseTitle => 'Číslo policejního oznámení';
+
+  @override
+  String get lostWalletCaseHint => 'Banky, pojišťovny a úřady se na něj často ptají.';
+
+  @override
+  String get lostWalletCaseLabel => 'Číslo případu nebo jednací číslo';
+
+  @override
+  String get lostWalletCaseSaved => 'Číslo uloženo';
+
+  @override
+  String get lostWalletAbroadTitle => 'Právě v zahraničí?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Jste na cestě: $trip. Pokud tam byl pas nebo občanka, obraťte se na velvyslanectví či konzulát kvůli náhradnímu cestovnímu dokladu a dejte vědět cestovní pojišťovně.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Otevřít cestu';
+
+  @override
+  String get lostWalletPhoneTitle => 'Vzali vám i telefon?';
+
+  @override
+  String get lostWalletPhoneBody => 'Nejdřív zablokujte SIM kartu a bankovní aplikace. Je na to plán.';
+
+  @override
+  String get lostWalletPhoneButton => 'Spustit plán ztraceného telefonu';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara připomene po 30, 60 a 90 dnech.';
+
+  @override
+  String get lostWalletStatementTitle => 'Zkontrolujte bankovní výpisy';
+
+  @override
+  String get lostWalletStatementBody => 'Hledejte platby, které jste neudělali od ztráty peněženky.';
+
+  @override
+  String get lostWalletFoundButton => 'Našel jsem ji';
+
+  @override
+  String get lostWalletFoundTitle => 'Dobrá zpráva!';
+
+  @override
+  String get lostWalletFoundBody => 'Tyto karty jsou už zablokované, tak vyhlížejte nové:';
+
+  @override
+  String get lostWalletFoundNone => 'Zatím nic není zablokováno, můžete pokračovat jako dřív.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Pokud jste karty zmrazili v aplikaci banky, odmrazte ty, které jste nezablokovali.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Zavřít plán';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Nalezena $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Zpráva o ztracených věcech';
+
+  @override
+  String get lostWalletReportTitle => 'Zpráva o ztracených věcech';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Datum: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Co chybí: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Číslo oznámení: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Číslo oznámení: zatím nenahlášeno';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Položky níže: $count',
+    );
+    return '$_temp0';
+  }
 }

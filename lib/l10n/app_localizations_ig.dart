@@ -7121,4 +7121,324 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Ị na-akwaga n\'ụlọ ọhụrụ? Lee ihe ọzọ ị ga-emelite.';
+
+  @override
+  String get keptInTitle => 'Ebe m na-edobe ya';
+
+  @override
+  String get keptInSubtitle => 'Ka ị mara ihe ị ga-egbochi na dochie ma ọ funahụ';
+
+  @override
+  String get keptInWallet => 'Obere akpa ego';
+
+  @override
+  String get keptInBag => 'Akpa';
+
+  @override
+  String get keptInPhoneCase => 'Mkpuchi ekwentị';
+
+  @override
+  String get keptInTravelPouch => 'Akpa njem';
+
+  @override
+  String get keptInCar => 'Ụgbọala';
+
+  @override
+  String get keptInHome => 'N\'ụlọ';
+
+  @override
+  String get keptInNone => 'Ahọrọbeghị';
+
+  @override
+  String get lostLineLabel => 'Nọmba maka kaadị furu efu';
+
+  @override
+  String get lostLineHelper => 'Chekwaa ya ugbu a. Nọmba ahụ dị na kaadị ahụ, ya mere ọ gaghị adị gị mgbe ịchọrọ ya.';
+
+  @override
+  String get lifeEventWalletLost => 'Akpa ego m furu efu';
+
+  @override
+  String get lifeEventWalletLostBody => 'Gbochie kaadị gị mbụ, wee dochie akwụkwọ gị otu otu.';
+
+  @override
+  String get lifeEventWalletStolen => 'E zuru akpa ego m';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Gbochie kaadị gị ozugbo ma kọọ ohi ahụ. Mgbe ahụ lezie anya na akaụntụ gị maka aghụghọ.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Ọ furu efu ka e zuru ya?';
+
+  @override
+  String get lifeVariantLost => 'Furu efu';
+
+  @override
+  String get lifeVariantStolen => 'E zuru ya';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Kpọnwụọ kaadị gị n\'ime ngwa ụlọ akụ gị ma ọ nwere nhọrọ ahụ';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Kpọọ ebe ikpeazụ ị gara ma jụọ maka ihe furu efu';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Rịọ ụlọ ọrụ kredit ma ọ bụ ọrụ mgbochi aghụghọ obodo gị ka ha kaa akara na NJ gị';
+
+  @override
+  String get lifeTaskWalletStatements => 'Lelee nkọwa ụlọ akụ gị maka ịkwụ ụgwọ ị na-emeghị';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Tinye kaadị ọhụrụ na ndebanye aha na ịkwụ ụgwọ akpaaka gị';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Tinye kaadị ọhụrụ na Google Pay ma ọ bụ Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Rịọ ụlọ ọrụ inshọransị ahụike gị maka kaadị otu ọhụrụ';
+
+  @override
+  String get lifeTaskWalletTransport => 'Gbochie kaadị njem ma ọ bụ ụgwọ okporo ụzọ gị ma bufee ego fọdụrụ';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Rịọ maka kaadị iguzosi ike ọhụrụ ka ị nọgide na-enwe akara gị';
+
+  @override
+  String get lifeTaskWalletLocks => 'Ọ bụrụ na igodo ma ọ bụ adreesị gị dị n\'ime ya, tụlee ịgbanwe mkpọchi';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Lelee ma inshọransị gị ọ na-ekpuchi akpa ego na ego ọcha';
+
+  @override
+  String get lostWalletHeroTitle => 'Akpa ego gị furu efu?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara na-egosi ihe ị ga-ebu ụzọ gbochie, ihe ị ga-edochi na onye ị ga-agwa.';
+
+  @override
+  String get lostWalletStartTitle => 'Gịnị mere?';
+
+  @override
+  String get lostWalletEditTitle => 'Gbanwee nkọwa';
+
+  @override
+  String get lostWalletLostHint => 'Ọ dapụrụ ma ọ bụ m chefuru ya ebe';
+
+  @override
+  String get lostWalletStolenHint => 'Mmadụ were ya';
+
+  @override
+  String get lostWalletWhatMissing => 'Gịnị na-efu?';
+
+  @override
+  String get lostWalletStartButton => 'Gosi m ihe m ga-eme';
+
+  @override
+  String get lostWalletCheckupTitle => 'Nlele akpa ego';
+
+  @override
+  String get lostWalletCheckupBody => 'Kwado ugbu a, ka ọ dịghị ihe a ga-echefu ma ọ funahụ.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Ihe niile dị njikere. Ọ bụrụ na ọ funahụ otu ụbọchị, ị dị njikere.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Mepee kaadị ma ọ bụ akwụkwọ ma họrọ ebe ị na-edobe ya. Mee nke a maka NJ, akwụkwọ ikike ịnya ụgbọ na kaadị gị.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Enweghị foto: $count. Site na foto, idochi na-adị ngwa.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kaadị na-enweghị nọmba maka kaadị furu efu: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Paspọtụ ma ọ bụ ikike ị bu: $count. Hapụ ha n\'ụlọ ma ọ bụrụ na ị naghị eme njem.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Ihe ị na-ebu';
+
+  @override
+  String get lostWalletNoPhoto => 'Enweghị foto';
+
+  @override
+  String get lostWalletHasPhoto => 'Echekwala foto';
+
+  @override
+  String get lostWalletNoLineShort => 'Enweghị nọmba maka kaadị furu efu';
+
+  @override
+  String get lostWalletHistory => 'Oge gara aga';
+
+  @override
+  String get lostWalletFound => 'Achọtala ya';
+
+  @override
+  String get walletCheckToggle => 'Chetara m kwa ọnwa 6';
+
+  @override
+  String get walletCheckToggleBody => 'Nlele ngwa ngwa nke ihe ị na-ebu, ka ndepụta ahụ dị mma.';
+
+  @override
+  String get walletCheckReminderTitle => 'Nlele akpa ego';
+
+  @override
+  String get walletCheckReminderBody => 'Ọ dị ihe gbanwere n\'akpa ego gị? Were otu nkeji melite Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Gbochie ndị a ugbu a';
+
+  @override
+  String get lostWalletBlockNowHint => 'Kpọọ ụlọ akụ ọ bụla ma ọ bụ jiri ngwa ha. Nkeji ọ bụla dị mkpa.';
+
+  @override
+  String get lostWalletCall => 'Kpọọ';
+
+  @override
+  String get lostWalletAddLine => 'Tinye nọmba';
+
+  @override
+  String get lostWalletNoLine => 'Enweghị nọmba echekwara. Chọta ya na ngwa ma ọ bụ weebụsaịtị ụlọ akụ gị.';
+
+  @override
+  String get lostWalletBlocked => 'Egbochiri';
+
+  @override
+  String get lostWalletReplace => 'Dochie ndị a';
+
+  @override
+  String get lostWalletReplaceHint => 'Tinye akwụkwọ maka ọhụrụ ma chekwaa ụbọchị ọhụrụ mgbe ha rutere.';
+
+  @override
+  String get lostWalletArrived => 'Nke ọhụrụ abịala';
+
+  @override
+  String get lostWalletCheck => 'Lelee ndị a';
+
+  @override
+  String get lostWalletCheckHint => 'Jụọ ma ị chọrọ kaadị ma ọ bụ nọmba ọhụrụ.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ọ dịghị ihe echekwara dị ebe ahụ';
+
+  @override
+  String get lostWalletPlanEmpty => 'Usoro ndị dị n\'okpuru ka na-enyere aka. Oge ọzọ, họrọ ebe ị na-edobe kaadị na akwụkwọ gị.';
+
+  @override
+  String get lostWalletCaseTitle => 'Nọmba okwu ndị uwe ojii';
+
+  @override
+  String get lostWalletCaseHint => 'Ụlọ akụ, ndị inshọransị na ụlọ ọrụ na-arịọkarị ya.';
+
+  @override
+  String get lostWalletCaseLabel => 'Nọmba okwu ma ọ bụ ntụaka';
+
+  @override
+  String get lostWalletCaseSaved => 'Echekwala nọmba okwu';
+
+  @override
+  String get lostWalletAbroadTitle => 'Ị nọ mba ọzọ ugbu a?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Ị nọ na njem $trip. Ọ bụrụ na paspọtụ ma ọ bụ NJ gị dị n\'ime ya, kpọtụrụ ụlọ ọrụ nnọchiteanya ma ọ bụ kọnsụlet maka akwụkwọ njem mberede ma gwa inshọransị njem gị.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Mepee njem';
+
+  @override
+  String get lostWalletPhoneTitle => 'E wekwara ekwentị gị?';
+
+  @override
+  String get lostWalletPhoneBody => 'Buru ụzọ gbochie kaadị SIM na ngwa ụlọ akụ gị. E nwere atụmatụ maka nke ahụ.';
+
+  @override
+  String get lostWalletPhoneButton => 'Malite atụmatụ ekwentị furu efu';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara ga-echetara gị mgbe ụbọchị 30, 60 na 90 gachara.';
+
+  @override
+  String get lostWalletStatementTitle => 'Lelee nkọwa ụlọ akụ gị';
+
+  @override
+  String get lostWalletStatementBody => 'Chọọ ịkwụ ụgwọ ị na-emeghị kemgbe akpa ego gị furu efu.';
+
+  @override
+  String get lostWalletFoundButton => 'Achọtala m ya';
+
+  @override
+  String get lostWalletFoundTitle => 'Ozi ọma!';
+
+  @override
+  String get lostWalletFoundBody => 'Egbochilarị kaadị ndị a, ya mere lechaa anya maka ndị ọhụrụ:';
+
+  @override
+  String get lostWalletFoundNone => 'Ọ dịbeghị ihe egbochiri, ị nwere ike ịga n\'ihu dị ka mbụ.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Ọ bụrụ na ị kpọnwụrụ kaadị n\'ime ngwa ụlọ akụ, kpọghee ndị ị na-egbochighị.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Mechie atụmatụ';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Achọtara ya na $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Akụkọ ihe furu efu';
+
+  @override
+  String get lostWalletReportTitle => 'Akụkọ ihe furu efu';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Ụbọchị: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Ihe na-efu: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Nọmba okwu: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Nọmba okwu: akọbeghị ya';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ihe ndị dị n\'okpuru: $count',
+    );
+    return '$_temp0';
+  }
 }

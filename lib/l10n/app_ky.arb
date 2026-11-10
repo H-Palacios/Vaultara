@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Жаңы үйгө көчүп жатасызбы? Дагы эмнени жаңыртуу керектигин караңыз."
+  "lifePlanSuggestMove": "Жаңы үйгө көчүп жатасызбы? Дагы эмнени жаңыртуу керектигин караңыз.",
+  "keptInTitle": "Мен аны кайда сактайм",
+  "keptInSubtitle": "Жоголсо эмнени бөгөттөп, эмнени алмаштырышты билүү үчүн",
+  "keptInWallet": "Капчык",
+  "keptInBag": "Сумка",
+  "keptInPhoneCase": "Телефон кабы",
+  "keptInTravelPouch": "Жол баштыгы",
+  "keptInCar": "Унаа",
+  "keptInHome": "Үйдө",
+  "keptInNone": "Тандалган эмес",
+  "lostLineLabel": "Жоголгон картаны бөгөттөө номери",
+  "lostLineHelper": "Азыр сактаңыз. Номер картада басылган, ошондуктан керек болгондо колуңузда болбойт.",
+  "lifeEventWalletLost": "Капчыгымды жоготтум",
+  "lifeEventWalletLostBody": "Адегенде карталарды бөгөттөңүз, анан документтерди бир-бирден алмаштырыңыз.",
+  "lifeEventWalletStolen": "Капчыгымды уурдап кетишти",
+  "lifeEventWalletStolenBody": "Карталарды дароо бөгөттөп, уурулук тууралуу кабарлаңыз. Анан алдамчылыкка карата эсептериңизди көзөмөлдөңүз.",
+  "lifeVariantWalletQuestion": "Жоголдубу же уурдалдыбы?",
+  "lifeVariantLost": "Жоголду",
+  "lifeVariantStolen": "Уурдалды",
+  "lifeTaskWalletFreezeCards": "Банк колдонмосунда мүмкүнчүлүк болсо, карталарды тоңдуруңуз",
+  "lifeTaskWalletRetrace": "Акыркы барган жерлериңизге чалып, жоголгон буюмдар тууралуу сураңыз",
+  "lifeTaskWalletFraudAlert": "Кредиттик бюролордон же өлкөңүздүн алдамчылыкка каршы кызматынан инсандык документиңизди белгилөөнү сураныңыз",
+  "lifeTaskWalletStatements": "Банк көчүрмөлөрүнөн өзүңүз жасабаган төлөмдөрдү текшериңиз",
+  "lifeTaskWalletSubscriptions": "Жаңы картаны жазылууларга жана автотөлөмдөргө кошуңуз",
+  "lifeTaskWalletPayApps": "Жаңы карталарды Google Pay же Apple Pay'ге кошуңуз",
+  "lifeTaskWalletHealthCard": "Медициналык камсыздандыруудан жаңы мүчөлүк карта сураңыз",
+  "lifeTaskWalletTransport": "Транспорт же жол акы картасын бөгөттөп, калдыкты которуңуз",
+  "lifeTaskWalletLoyalty": "Упайларды сактоо үчүн жаңы лоялдуулук карталарын сураңыз",
+  "lifeTaskWalletLocks": "Ичинде ачкыч же дарегиңиз болсо, кулпуларды алмаштырууну ойлонуңуз",
+  "lifeTaskWalletInsurance": "Камсыздандырууңуз капчык менен накталай акчаны жабарын текшериңиз",
+  "lostWalletHeroTitle": "Капчыгыңызды жоготтуңузбу?",
+  "lostWalletHeroBody": "Vaultara адегенде эмнени бөгөттөп, эмнени алмаштырып, кимге кабарлоону көрсөтөт.",
+  "lostWalletStartTitle": "Эмне болду?",
+  "lostWalletEditTitle": "Маалыматты өзгөртүү",
+  "lostWalletLostHint": "Түшүп калды же бир жерге унутуп калдым",
+  "lostWalletStolenHint": "Бирөө алып кетти",
+  "lostWalletWhatMissing": "Эмне жок?",
+  "lostWalletStartButton": "Эмне кыларымды көрсөт",
+  "lostWalletCheckupTitle": "Капчыкты текшерүү",
+  "lostWalletCheckupBody": "Жоголсо эч нерсе унутулбашы үчүн азыр даярданыңыз.",
+  "lostWalletCheckupAllGood": "Баары даяр. Качандыр бир жоголсо, сиз даярсыз.",
+  "lostWalletSetPlaceBody": "Карта же документти ачып, аны кайда сактаарыңызды тандаңыз. Муну инсандык күбөлүк, айдоочулук күбөлүк жана карталар үчүн жасаңыз.",
+  "lostWalletIssuePhotos": "{count, plural, other{Сүрөтсүз: {count}. Сүрөт менен алмаштыруу тезирээк.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Бөгөттөө номери жок карталар: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Жаныңыздагы паспорттор же уруксаттар: {count}. Сапарга чыкпасаңыз, үйдө калтырыңыз.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Жаныңызда жүргөндөр",
+  "lostWalletNoPhoto": "Сүрөт жок",
+  "lostWalletHasPhoto": "Сүрөт сакталды",
+  "lostWalletNoLineShort": "Бөгөттөө номери жок",
+  "lostWalletHistory": "Мурунку учурлар",
+  "lostWalletFound": "Табылды",
+  "walletCheckToggle": "Ар 6 айда эскерт",
+  "walletCheckToggleBody": "Тизме туура болушу үчүн жаныңыздагыларды тез карап чыгуу.",
+  "walletCheckReminderTitle": "Капчыкты текшерүү",
+  "walletCheckReminderBody": "Капчыгыңызда бир нерсе өзгөрдүбү? Vaultara'ны жаңыртуу үчүн бир мүнөт бөлүңүз.",
+  "lostWalletBlockNow": "Буларды азыр бөгөттөңүз",
+  "lostWalletBlockNowHint": "Ар бир банкка чалыңыз же анын колдонмосун колдонуңуз. Ар бир мүнөт маанилүү.",
+  "lostWalletCall": "Чалуу",
+  "lostWalletAddLine": "Номер кошуу",
+  "lostWalletNoLine": "Номер сакталган эмес. Аны банктын колдонмосунан же сайтынан табыңыз.",
+  "lostWalletBlocked": "Бөгөттөлдү",
+  "lostWalletReplace": "Буларды алмаштырыңыз",
+  "lostWalletReplaceHint": "Жаңысына арыз берип, келгенде жаңы күндү сактаңыз.",
+  "lostWalletArrived": "Жаңысы келди",
+  "lostWalletCheck": "Буларды текшериңиз",
+  "lostWalletCheckHint": "Жаңы карта же номер керекпи, сураңыз.",
+  "lostWalletPlanEmptyTitle": "Ал жерде эч нерсе сакталган эмес",
+  "lostWalletPlanEmpty": "Төмөнкү кадамдар баары бир жардам берет. Кийинки жолу карталар менен документтерди кайда сактаарыңызды тандаңыз.",
+  "lostWalletCaseTitle": "Милициянын иш номери",
+  "lostWalletCaseHint": "Банктар, камсыздандыруу компаниялары жана мекемелер аны көп сурашат.",
+  "lostWalletCaseLabel": "Иш же маалымдама номери",
+  "lostWalletCaseSaved": "Иш номери сакталды",
+  "lostWalletAbroadTitle": "Азыр чет өлкөдөсүзбү?",
+  "lostWalletAbroadBody": "Сиз {trip} сапарындасыз. Ичинде паспорт же инсандык күбөлүк болсо, шашылыш жол документи үчүн элчиликке же консулдукка кайрылып, сапар камсыздандыруусуна кабарлаңыз.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Сапарды ачуу",
+  "lostWalletPhoneTitle": "Телефонуңузду да алып кетиштиби?",
+  "lostWalletPhoneBody": "Адегенде SIM картаны жана банк колдонмолорун бөгөттөңүз. Бул үчүн план бар.",
+  "lostWalletPhoneButton": "Жоголгон телефон планын баштоо",
+  "lostWalletStatementNote": "Vaultara 30, 60 жана 90 күндөн кийин эскертет.",
+  "lostWalletStatementTitle": "Банк көчүрмөлөрүн текшериңиз",
+  "lostWalletStatementBody": "Капчык жоголгондон бери өзүңүз жасабаган төлөмдөрдү издеңиз.",
+  "lostWalletFoundButton": "Таптым",
+  "lostWalletFoundTitle": "Жакшы кабар!",
+  "lostWalletFoundBody": "Бул карталар мурунтан эле бөгөттөлгөн, ошондуктан жаңыларын күтүңүз:",
+  "lostWalletFoundNone": "Азырынча эч нерсе бөгөттөлгөн жок, мурдагыдай уланта аласыз.",
+  "lostWalletFoundUnfreeze": "Банк колдонмосунда карталарды тоңдурган болсоңуз, бөгөттөлбөгөндөрүн ачыңыз.",
+  "lostWalletFoundConfirm": "Планды жабуу",
+  "lostWalletFoundOn": "{date} табылды",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Жоголгон буюмдардын отчету",
+  "lostWalletReportTitle": "Жоголгон буюмдардын отчету",
+  "lostWalletReportWhen": "Күнү: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Эмне жок: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Иш номери: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Иш номери: азырынча кабарланган жок",
+  "lostWalletReportCount": "{count, plural, other{Төмөнкү элементтер: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

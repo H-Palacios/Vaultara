@@ -2285,5 +2285,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ị na-akwaga n'ụlọ ọhụrụ? Lee ihe ọzọ ị ga-emelite."
+  "lifePlanSuggestMove": "Ị na-akwaga n'ụlọ ọhụrụ? Lee ihe ọzọ ị ga-emelite.",
+  "keptInTitle": "Ebe m na-edobe ya",
+  "keptInSubtitle": "Ka ị mara ihe ị ga-egbochi na dochie ma ọ funahụ",
+  "keptInWallet": "Obere akpa ego",
+  "keptInBag": "Akpa",
+  "keptInPhoneCase": "Mkpuchi ekwentị",
+  "keptInTravelPouch": "Akpa njem",
+  "keptInCar": "Ụgbọala",
+  "keptInHome": "N'ụlọ",
+  "keptInNone": "Ahọrọbeghị",
+  "lostLineLabel": "Nọmba maka kaadị furu efu",
+  "lostLineHelper": "Chekwaa ya ugbu a. Nọmba ahụ dị na kaadị ahụ, ya mere ọ gaghị adị gị mgbe ịchọrọ ya.",
+  "lifeEventWalletLost": "Akpa ego m furu efu",
+  "lifeEventWalletLostBody": "Gbochie kaadị gị mbụ, wee dochie akwụkwọ gị otu otu.",
+  "lifeEventWalletStolen": "E zuru akpa ego m",
+  "lifeEventWalletStolenBody": "Gbochie kaadị gị ozugbo ma kọọ ohi ahụ. Mgbe ahụ lezie anya na akaụntụ gị maka aghụghọ.",
+  "lifeVariantWalletQuestion": "Ọ furu efu ka e zuru ya?",
+  "lifeVariantLost": "Furu efu",
+  "lifeVariantStolen": "E zuru ya",
+  "lifeTaskWalletFreezeCards": "Kpọnwụọ kaadị gị n'ime ngwa ụlọ akụ gị ma ọ nwere nhọrọ ahụ",
+  "lifeTaskWalletRetrace": "Kpọọ ebe ikpeazụ ị gara ma jụọ maka ihe furu efu",
+  "lifeTaskWalletFraudAlert": "Rịọ ụlọ ọrụ kredit ma ọ bụ ọrụ mgbochi aghụghọ obodo gị ka ha kaa akara na NJ gị",
+  "lifeTaskWalletStatements": "Lelee nkọwa ụlọ akụ gị maka ịkwụ ụgwọ ị na-emeghị",
+  "lifeTaskWalletSubscriptions": "Tinye kaadị ọhụrụ na ndebanye aha na ịkwụ ụgwọ akpaaka gị",
+  "lifeTaskWalletPayApps": "Tinye kaadị ọhụrụ na Google Pay ma ọ bụ Apple Pay",
+  "lifeTaskWalletHealthCard": "Rịọ ụlọ ọrụ inshọransị ahụike gị maka kaadị otu ọhụrụ",
+  "lifeTaskWalletTransport": "Gbochie kaadị njem ma ọ bụ ụgwọ okporo ụzọ gị ma bufee ego fọdụrụ",
+  "lifeTaskWalletLoyalty": "Rịọ maka kaadị iguzosi ike ọhụrụ ka ị nọgide na-enwe akara gị",
+  "lifeTaskWalletLocks": "Ọ bụrụ na igodo ma ọ bụ adreesị gị dị n'ime ya, tụlee ịgbanwe mkpọchi",
+  "lifeTaskWalletInsurance": "Lelee ma inshọransị gị ọ na-ekpuchi akpa ego na ego ọcha",
+  "lostWalletHeroTitle": "Akpa ego gị furu efu?",
+  "lostWalletHeroBody": "Vaultara na-egosi ihe ị ga-ebu ụzọ gbochie, ihe ị ga-edochi na onye ị ga-agwa.",
+  "lostWalletStartTitle": "Gịnị mere?",
+  "lostWalletEditTitle": "Gbanwee nkọwa",
+  "lostWalletLostHint": "Ọ dapụrụ ma ọ bụ m chefuru ya ebe",
+  "lostWalletStolenHint": "Mmadụ were ya",
+  "lostWalletWhatMissing": "Gịnị na-efu?",
+  "lostWalletStartButton": "Gosi m ihe m ga-eme",
+  "lostWalletCheckupTitle": "Nlele akpa ego",
+  "lostWalletCheckupBody": "Kwado ugbu a, ka ọ dịghị ihe a ga-echefu ma ọ funahụ.",
+  "lostWalletCheckupAllGood": "Ihe niile dị njikere. Ọ bụrụ na ọ funahụ otu ụbọchị, ị dị njikere.",
+  "lostWalletSetPlaceBody": "Mepee kaadị ma ọ bụ akwụkwọ ma họrọ ebe ị na-edobe ya. Mee nke a maka NJ, akwụkwọ ikike ịnya ụgbọ na kaadị gị.",
+  "lostWalletIssuePhotos": "{count, plural, other{Enweghị foto: {count}. Site na foto, idochi na-adị ngwa.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kaadị na-enweghị nọmba maka kaadị furu efu: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Paspọtụ ma ọ bụ ikike ị bu: {count}. Hapụ ha n'ụlọ ma ọ bụrụ na ị naghị eme njem.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Ihe ị na-ebu",
+  "lostWalletNoPhoto": "Enweghị foto",
+  "lostWalletHasPhoto": "Echekwala foto",
+  "lostWalletNoLineShort": "Enweghị nọmba maka kaadị furu efu",
+  "lostWalletHistory": "Oge gara aga",
+  "lostWalletFound": "Achọtala ya",
+  "walletCheckToggle": "Chetara m kwa ọnwa 6",
+  "walletCheckToggleBody": "Nlele ngwa ngwa nke ihe ị na-ebu, ka ndepụta ahụ dị mma.",
+  "walletCheckReminderTitle": "Nlele akpa ego",
+  "walletCheckReminderBody": "Ọ dị ihe gbanwere n'akpa ego gị? Were otu nkeji melite Vaultara.",
+  "lostWalletBlockNow": "Gbochie ndị a ugbu a",
+  "lostWalletBlockNowHint": "Kpọọ ụlọ akụ ọ bụla ma ọ bụ jiri ngwa ha. Nkeji ọ bụla dị mkpa.",
+  "lostWalletCall": "Kpọọ",
+  "lostWalletAddLine": "Tinye nọmba",
+  "lostWalletNoLine": "Enweghị nọmba echekwara. Chọta ya na ngwa ma ọ bụ weebụsaịtị ụlọ akụ gị.",
+  "lostWalletBlocked": "Egbochiri",
+  "lostWalletReplace": "Dochie ndị a",
+  "lostWalletReplaceHint": "Tinye akwụkwọ maka ọhụrụ ma chekwaa ụbọchị ọhụrụ mgbe ha rutere.",
+  "lostWalletArrived": "Nke ọhụrụ abịala",
+  "lostWalletCheck": "Lelee ndị a",
+  "lostWalletCheckHint": "Jụọ ma ị chọrọ kaadị ma ọ bụ nọmba ọhụrụ.",
+  "lostWalletPlanEmptyTitle": "Ọ dịghị ihe echekwara dị ebe ahụ",
+  "lostWalletPlanEmpty": "Usoro ndị dị n'okpuru ka na-enyere aka. Oge ọzọ, họrọ ebe ị na-edobe kaadị na akwụkwọ gị.",
+  "lostWalletCaseTitle": "Nọmba okwu ndị uwe ojii",
+  "lostWalletCaseHint": "Ụlọ akụ, ndị inshọransị na ụlọ ọrụ na-arịọkarị ya.",
+  "lostWalletCaseLabel": "Nọmba okwu ma ọ bụ ntụaka",
+  "lostWalletCaseSaved": "Echekwala nọmba okwu",
+  "lostWalletAbroadTitle": "Ị nọ mba ọzọ ugbu a?",
+  "lostWalletAbroadBody": "Ị nọ na njem {trip}. Ọ bụrụ na paspọtụ ma ọ bụ NJ gị dị n'ime ya, kpọtụrụ ụlọ ọrụ nnọchiteanya ma ọ bụ kọnsụlet maka akwụkwọ njem mberede ma gwa inshọransị njem gị.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Mepee njem",
+  "lostWalletPhoneTitle": "E wekwara ekwentị gị?",
+  "lostWalletPhoneBody": "Buru ụzọ gbochie kaadị SIM na ngwa ụlọ akụ gị. E nwere atụmatụ maka nke ahụ.",
+  "lostWalletPhoneButton": "Malite atụmatụ ekwentị furu efu",
+  "lostWalletStatementNote": "Vaultara ga-echetara gị mgbe ụbọchị 30, 60 na 90 gachara.",
+  "lostWalletStatementTitle": "Lelee nkọwa ụlọ akụ gị",
+  "lostWalletStatementBody": "Chọọ ịkwụ ụgwọ ị na-emeghị kemgbe akpa ego gị furu efu.",
+  "lostWalletFoundButton": "Achọtala m ya",
+  "lostWalletFoundTitle": "Ozi ọma!",
+  "lostWalletFoundBody": "Egbochilarị kaadị ndị a, ya mere lechaa anya maka ndị ọhụrụ:",
+  "lostWalletFoundNone": "Ọ dịbeghị ihe egbochiri, ị nwere ike ịga n'ihu dị ka mbụ.",
+  "lostWalletFoundUnfreeze": "Ọ bụrụ na ị kpọnwụrụ kaadị n'ime ngwa ụlọ akụ, kpọghee ndị ị na-egbochighị.",
+  "lostWalletFoundConfirm": "Mechie atụmatụ",
+  "lostWalletFoundOn": "Achọtara ya na {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Akụkọ ihe furu efu",
+  "lostWalletReportTitle": "Akụkọ ihe furu efu",
+  "lostWalletReportWhen": "Ụbọchị: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Ihe na-efu: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Nọmba okwu: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Nọmba okwu: akọbeghị ya",
+  "lostWalletReportCount": "{count, plural, other{Ihe ndị dị n'okpuru: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -2292,5 +2292,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Múdaste a unha casa nova? Mira que máis debes actualizar."
+  "lifePlanSuggestMove": "Múdaste a unha casa nova? Mira que máis debes actualizar.",
+  "keptInTitle": "Onde o gardo",
+  "keptInSubtitle": "Para saber que bloquear e substituír se se perde",
+  "keptInWallet": "Carteira",
+  "keptInBag": "Bolso",
+  "keptInPhoneCase": "Funda do móbil",
+  "keptInTravelPouch": "Bolsa de viaxe",
+  "keptInCar": "Coche",
+  "keptInHome": "Na casa",
+  "keptInNone": "Sen indicar",
+  "lostLineLabel": "Teléfono para tarxeta perdida",
+  "lostLineHelper": "Gárdao agora. O número vén na tarxeta, así que non o terás cando o precises.",
+  "lifeEventWalletLost": "Perdín a carteira",
+  "lifeEventWalletLostBody": "Bloquea primeiro as tarxetas e despois substitúe os documentos un a un.",
+  "lifeEventWalletStolen": "Roubáronme a carteira",
+  "lifeEventWalletStolenBody": "Bloquea as tarxetas axiña e denuncia o roubo. Despois vixía as contas por se hai fraude.",
+  "lifeVariantWalletQuestion": "Perdeuse ou roubároncha?",
+  "lifeVariantLost": "Perdida",
+  "lifeVariantStolen": "Roubada",
+  "lifeTaskWalletFreezeCards": "Conxela as tarxetas na app do banco se o permite",
+  "lifeTaskWalletRetrace": "Chama aos últimos sitios onde estiveches e pregunta en obxectos perdidos",
+  "lifeTaskWalletFraudAlert": "Pide ás axencias de crédito ou ao servizo antifraude do teu país que marquen o teu documento",
+  "lifeTaskWalletStatements": "Revisa os extractos bancarios por se hai pagamentos que non fixeches",
+  "lifeTaskWalletSubscriptions": "Pon a tarxeta nova nas subscricións e domiciliacións",
+  "lifeTaskWalletPayApps": "Engade as tarxetas novas a Google Pay ou Apple Pay",
+  "lifeTaskWalletHealthCard": "Pide unha tarxeta nova ao teu seguro de saúde",
+  "lifeTaskWalletTransport": "Bloquea a tarxeta de transporte ou de peaxe e traspasa o saldo",
+  "lifeTaskWalletLoyalty": "Pide novas tarxetas de fidelización para conservar os puntos",
+  "lifeTaskWalletLocks": "Se había chaves ou o teu enderezo, pensa en cambiar as pechaduras",
+  "lifeTaskWalletInsurance": "Comproba se o seguro cobre a carteira e o diñeiro",
+  "lostWalletHeroTitle": "Perdiches a carteira?",
+  "lostWalletHeroBody": "Vaultara amósache que bloquear primeiro, que substituír e a quen avisar.",
+  "lostWalletStartTitle": "Que pasou?",
+  "lostWalletEditTitle": "Cambiar os datos",
+  "lostWalletLostHint": "Caeu ou deixeina nalgún sitio",
+  "lostWalletStolenHint": "Alguén a colleu",
+  "lostWalletWhatMissing": "Que falta?",
+  "lostWalletStartButton": "Dime que facer",
+  "lostWalletCheckupTitle": "Revisión da carteira",
+  "lostWalletCheckupBody": "Prepárate agora para non esquecer nada se se perde.",
+  "lostWalletCheckupAllGood": "Todo listo. Se algunha vez se perde, estás preparado.",
+  "lostWalletSetPlaceBody": "Abre unha tarxeta ou documento e escolle onde o gardas. Faino co DNI, o carné de conducir e as tarxetas.",
+  "lostWalletIssuePhotos": "{count, plural, =1{1 elemento non ten foto. Cunha foto substitúese antes.} other{{count} elementos non teñen foto. Con fotos substitúense antes.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, =1{1 tarxeta non ten gardado o teléfono para tarxeta perdida.} other{{count} tarxetas non teñen gardado o teléfono para tarxeta perdida.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, =1{Levas encima un pasaporte ou permiso. Déixao na casa salvo que viaxes.} other{Levas encima {count} pasaportes ou permisos. Déixaos na casa salvo que viaxes.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "O que levas encima",
+  "lostWalletNoPhoto": "Sen foto",
+  "lostWalletHasPhoto": "Foto gardada",
+  "lostWalletNoLineShort": "Sen teléfono para tarxeta perdida",
+  "lostWalletHistory": "Veces anteriores",
+  "lostWalletFound": "Atopada",
+  "walletCheckToggle": "Lembrarmo cada 6 meses",
+  "walletCheckToggleBody": "Unha ollada rápida ao que levas, para que a lista estea ao día.",
+  "walletCheckReminderTitle": "Revisión da carteira",
+  "walletCheckReminderBody": "Cambiou algo na túa carteira? Dedica un minuto a actualizar Vaultara.",
+  "lostWalletBlockNow": "Bloquea isto xa",
+  "lostWalletBlockNowHint": "Chama a cada banco ou usa a súa app. Cada minuto conta.",
+  "lostWalletCall": "Chamar",
+  "lostWalletAddLine": "Engadir o número",
+  "lostWalletNoLine": "Non hai número gardado. Búscao na app ou na web do teu banco.",
+  "lostWalletBlocked": "Bloqueada",
+  "lostWalletReplace": "Substitúe isto",
+  "lostWalletReplaceHint": "Solicita uns novos e garda a data nova cando cheguen.",
+  "lostWalletArrived": "Xa chegou o novo",
+  "lostWalletCheck": "Revisa isto",
+  "lostWalletCheckHint": "Pregunta se precisas unha tarxeta ou un número novos.",
+  "lostWalletPlanEmptyTitle": "Alí non había nada gardado",
+  "lostWalletPlanEmpty": "Os pasos de abaixo seguen axudando. A próxima vez, escolle onde gardas as tarxetas e os documentos.",
+  "lostWalletCaseTitle": "Número de denuncia",
+  "lostWalletCaseHint": "Bancos, aseguradoras e oficinas adoitan pedilo.",
+  "lostWalletCaseLabel": "Número de denuncia ou referencia",
+  "lostWalletCaseSaved": "Número de denuncia gardado",
+  "lostWalletAbroadTitle": "Estás no estranxeiro?",
+  "lostWalletAbroadBody": "Estás de viaxe: {trip}. Se levabas o pasaporte ou o DNI, contacta coa embaixada ou o consulado para un documento de viaxe de emerxencia e avisa o seguro de viaxe.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Abrir a viaxe",
+  "lostWalletPhoneTitle": "Tamén che levaron o móbil?",
+  "lostWalletPhoneBody": "Bloquea primeiro a SIM e as apps do banco. Hai un plan para iso.",
+  "lostWalletPhoneButton": "Comezar o plan de móbil perdido",
+  "lostWalletStatementNote": "Vaultara lémbrache aos 30, 60 e 90 días.",
+  "lostWalletStatementTitle": "Revisa os extractos bancarios",
+  "lostWalletStatementBody": "Busca pagamentos que non fixeches desde que perdiches a carteira.",
+  "lostWalletFoundButton": "Atopeina",
+  "lostWalletFoundTitle": "Boas novas!",
+  "lostWalletFoundBody": "Estas tarxetas xa están bloqueadas, así que atento ás novas:",
+  "lostWalletFoundNone": "Aínda non se bloqueou nada, podes seguir coma antes.",
+  "lostWalletFoundUnfreeze": "Se conxelaches tarxetas na app do banco, desconxela as que non bloqueaches.",
+  "lostWalletFoundConfirm": "Pechar o plan",
+  "lostWalletFoundOn": "Atopada o {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Informe de obxectos perdidos",
+  "lostWalletReportTitle": "Informe de obxectos perdidos",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Que falta: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Número de denuncia: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Número de denuncia: aínda sen denunciar",
+  "lostWalletReportCount": "{count, plural, =1{1 elemento abaixo} other{{count} elementos abaixo}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

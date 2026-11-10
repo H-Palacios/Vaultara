@@ -2285,5 +2285,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Ertu að flytja? Sjáðu hvað annað þarf að uppfæra."
+  "lifePlanSuggestMove": "Ertu að flytja? Sjáðu hvað annað þarf að uppfæra.",
+  "keptInTitle": "Hvar ég geymi það",
+  "keptInSubtitle": "Svo þú vitir hvað þarf að loka og endurnýja ef það týnist",
+  "keptInWallet": "Veski",
+  "keptInBag": "Taska",
+  "keptInPhoneCase": "Símahulstur",
+  "keptInTravelPouch": "Ferðaveski",
+  "keptInCar": "Bíll",
+  "keptInHome": "Heima",
+  "keptInNone": "Ekki valið",
+  "lostLineLabel": "Lokunarnúmer fyrir glatað kort",
+  "lostLineHelper": "Vistaðu það núna. Númerið er á kortinu, svo þú hefur það ekki þegar þú þarft það.",
+  "lifeEventWalletLost": "Ég týndi veskinu mínu",
+  "lifeEventWalletLostBody": "Lokaðu kortunum fyrst og endurnýjaðu svo skilríkin eitt af öðru.",
+  "lifeEventWalletStolen": "Veskinu mínu var stolið",
+  "lifeEventWalletStolenBody": "Lokaðu kortunum strax og tilkynntu þjófnaðinn. Fylgstu svo með reikningunum vegna svika.",
+  "lifeVariantWalletQuestion": "Týnt eða stolið?",
+  "lifeVariantLost": "Týnt",
+  "lifeVariantStolen": "Stolið",
+  "lifeTaskWalletFreezeCards": "Frystu kortin í bankaappinu ef það býður upp á það",
+  "lifeTaskWalletRetrace": "Hringdu á síðustu staðina sem þú varst á og spurðu um óskilamuni",
+  "lifeTaskWalletFraudAlert": "Biddu lánshæfisfyrirtæki eða svikaþjónustu landsins að merkja skilríkin þín",
+  "lifeTaskWalletStatements": "Farðu yfir bankayfirlit eftir greiðslum sem þú gerðir ekki",
+  "lifeTaskWalletSubscriptions": "Settu nýja kortið á áskriftir og sjálfvirkar greiðslur",
+  "lifeTaskWalletPayApps": "Bættu nýju kortunum í Google Pay eða Apple Pay",
+  "lifeTaskWalletHealthCard": "Biddu sjúkratrygginguna um nýtt kort",
+  "lifeTaskWalletTransport": "Lokaðu samgöngu- eða veggjaldakortinu og færðu inneignina",
+  "lifeTaskWalletLoyalty": "Biddu um ný vildarkort svo þú haldir punktunum",
+  "lifeTaskWalletLocks": "Ef lyklar eða heimilisfangið þitt voru í því, íhugaðu að skipta um lása",
+  "lifeTaskWalletInsurance": "Athugaðu hvort tryggingin þín nær yfir veskið og reiðufé",
+  "lostWalletHeroTitle": "Týndirðu veskinu?",
+  "lostWalletHeroBody": "Vaultara sýnir hverju á að loka fyrst, hvað á að endurnýja og hverjum á að segja frá.",
+  "lostWalletStartTitle": "Hvað gerðist?",
+  "lostWalletEditTitle": "Breyta upplýsingum",
+  "lostWalletLostHint": "Datt eða gleymdist einhvers staðar",
+  "lostWalletStolenHint": "Einhver tók það",
+  "lostWalletWhatMissing": "Hvað vantar?",
+  "lostWalletStartButton": "Sýndu mér hvað ég á að gera",
+  "lostWalletCheckupTitle": "Veskisskoðun",
+  "lostWalletCheckupBody": "Undirbúðu þig núna svo ekkert gleymist ef það týnist.",
+  "lostWalletCheckupAllGood": "Allt tilbúið. Ef það týnist einhvern tímann ertu undirbúin(n).",
+  "lostWalletSetPlaceBody": "Opnaðu kort eða skjal og veldu hvar þú geymir það. Gerðu þetta fyrir skilríki, ökuskírteini og kort.",
+  "lostWalletIssuePhotos": "{count, plural, other{Án myndar: {count}. Með mynd gengur endurnýjun hraðar.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Kort án lokunarnúmers: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Vegabréf eða leyfi á þér: {count}. Geymdu þau heima nema þú sért á ferðalagi.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Það sem þú berð á þér",
+  "lostWalletNoPhoto": "Engin mynd",
+  "lostWalletHasPhoto": "Mynd vistuð",
+  "lostWalletNoLineShort": "Ekkert lokunarnúmer",
+  "lostWalletHistory": "Fyrri skipti",
+  "lostWalletFound": "Fannst",
+  "walletCheckToggle": "Minna mig á á 6 mánaða fresti",
+  "walletCheckToggleBody": "Snöggt yfirlit yfir það sem þú berð, svo listinn sé réttur.",
+  "walletCheckReminderTitle": "Veskisskoðun",
+  "walletCheckReminderBody": "Hefur eitthvað breyst í veskinu? Taktu eina mínútu í að uppfæra Vaultara.",
+  "lostWalletBlockNow": "Lokaðu þessu núna",
+  "lostWalletBlockNowHint": "Hringdu í hvern banka eða notaðu appið hans. Hver mínúta skiptir máli.",
+  "lostWalletCall": "Hringja",
+  "lostWalletAddLine": "Bæta við númeri",
+  "lostWalletNoLine": "Ekkert númer vistað. Finndu það í appi eða á vef bankans.",
+  "lostWalletBlocked": "Lokað",
+  "lostWalletReplace": "Endurnýjaðu þetta",
+  "lostWalletReplaceHint": "Sæktu um ný og vistaðu nýju dagsetninguna þegar þau berast.",
+  "lostWalletArrived": "Nýtt er komið",
+  "lostWalletCheck": "Athugaðu þetta",
+  "lostWalletCheckHint": "Spurðu hvort þú þurfir nýtt kort eða númer.",
+  "lostWalletPlanEmptyTitle": "Þar var ekkert vistað",
+  "lostWalletPlanEmpty": "Skrefin hér fyrir neðan hjálpa samt. Veldu næst hvar þú geymir kort og skjöl.",
+  "lostWalletCaseTitle": "Málsnúmer lögreglu",
+  "lostWalletCaseHint": "Bankar, tryggingafélög og stofnanir biðja oft um það.",
+  "lostWalletCaseLabel": "Mála- eða tilvísunarnúmer",
+  "lostWalletCaseSaved": "Málsnúmer vistað",
+  "lostWalletAbroadTitle": "Erlendis núna?",
+  "lostWalletAbroadBody": "Þú ert á ferðalaginu {trip}. Ef vegabréfið eða skilríkin voru í því, hafðu samband við sendiráðið eða ræðisskrifstofuna vegna neyðarvegabréfs og láttu ferðatrygginguna vita.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Opna ferðalag",
+  "lostWalletPhoneTitle": "Var símanum líka stolið?",
+  "lostWalletPhoneBody": "Lokaðu fyrst SIM-kortinu og bankaöppunum. Það er til áætlun fyrir það.",
+  "lostWalletPhoneButton": "Hefja áætlun fyrir týndan síma",
+  "lostWalletStatementNote": "Vaultara minnir þig á eftir 30, 60 og 90 daga.",
+  "lostWalletStatementTitle": "Farðu yfir bankayfirlitin",
+  "lostWalletStatementBody": "Leitaðu að greiðslum sem þú gerðir ekki síðan veskið hvarf.",
+  "lostWalletFoundButton": "Ég fann það",
+  "lostWalletFoundTitle": "Góðar fréttir!",
+  "lostWalletFoundBody": "Þessum kortum hefur þegar verið lokað, svo fylgstu með nýjum:",
+  "lostWalletFoundNone": "Engu hefur verið lokað enn, þú getur haldið áfram eins og áður.",
+  "lostWalletFoundUnfreeze": "Ef þú frystir kort í bankaappinu, affrystu þau sem þú lokaðir ekki.",
+  "lostWalletFoundConfirm": "Loka áætlun",
+  "lostWalletFoundOn": "Fannst {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Skýrsla um týnda hluti",
+  "lostWalletReportTitle": "Skýrsla um týnda hluti",
+  "lostWalletReportWhen": "Dagsetning: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Það sem vantar: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Málsnúmer: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Málsnúmer: ekki tilkynnt enn",
+  "lostWalletReportCount": "{count, plural, other{Atriði hér fyrir neðan: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

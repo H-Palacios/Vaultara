@@ -2030,5 +2030,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "ಹೊಸ ಮನೆಗೆ ಹೋಗುತ್ತಿದ್ದೀರಾ? ಇನ್ನೇನು ನವೀಕರಿಸಬೇಕು ನೋಡಿ."
+  "lifePlanSuggestMove": "ಹೊಸ ಮನೆಗೆ ಹೋಗುತ್ತಿದ್ದೀರಾ? ಇನ್ನೇನು ನವೀಕರಿಸಬೇಕು ನೋಡಿ.",
+  "keptInTitle": "ನಾನು ಇದನ್ನು ಎಲ್ಲಿ ಇಡುತ್ತೇನೆ",
+  "keptInSubtitle": "ಕಳೆದುಹೋದರೆ ಏನನ್ನು ಬ್ಲಾಕ್ ಮಾಡಬೇಕು ಮತ್ತು ಬದಲಾಯಿಸಬೇಕು ಎಂದು ತಿಳಿಯಲು",
+  "keptInWallet": "ಪರ್ಸ್",
+  "keptInBag": "ಬ್ಯಾಗ್",
+  "keptInPhoneCase": "ಫೋನ್ ಕವರ್",
+  "keptInTravelPouch": "ಪ್ರಯಾಣದ ಚೀಲ",
+  "keptInCar": "ಕಾರು",
+  "keptInHome": "ಮನೆಯಲ್ಲಿ",
+  "keptInNone": "ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ",
+  "lostLineLabel": "ಕಳೆದುಹೋದ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ",
+  "lostLineHelper": "ಈಗಲೇ ಉಳಿಸಿ. ಸಂಖ್ಯೆ ಕಾರ್ಡ್ ಮೇಲೆ ಮುದ್ರಿತವಾಗಿರುತ್ತದೆ, ಆದ್ದರಿಂದ ಬೇಕಾದಾಗ ನಿಮ್ಮ ಬಳಿ ಇರುವುದಿಲ್ಲ.",
+  "lifeEventWalletLost": "ನನ್ನ ಪರ್ಸ್ ಕಳೆದುಹೋಯಿತು",
+  "lifeEventWalletLostBody": "ಮೊದಲು ನಿಮ್ಮ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ, ನಂತರ ದಾಖಲೆಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಬದಲಾಯಿಸಿ.",
+  "lifeEventWalletStolen": "ನನ್ನ ಪರ್ಸ್ ಕಳುವಾಯಿತು",
+  "lifeEventWalletStolenBody": "ತಕ್ಷಣ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ಕಳ್ಳತನವನ್ನು ವರದಿ ಮಾಡಿ. ನಂತರ ವಂಚನೆಗಾಗಿ ಖಾತೆಗಳ ಮೇಲೆ ಕಣ್ಣಿಡಿ.",
+  "lifeVariantWalletQuestion": "ಕಳೆದುಹೋಯಿತೇ ಅಥವಾ ಕಳುವಾಯಿತೇ?",
+  "lifeVariantLost": "ಕಳೆದುಹೋಯಿತು",
+  "lifeVariantStolen": "ಕಳುವಾಯಿತು",
+  "lifeTaskWalletFreezeCards": "ಬ್ಯಾಂಕ್ ಆ್ಯಪ್‌ನಲ್ಲಿ ಆಯ್ಕೆ ಇದ್ದರೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ಫ್ರೀಜ್ ಮಾಡಿ",
+  "lifeTaskWalletRetrace": "ಕೊನೆಯದಾಗಿ ಹೋಗಿದ್ದ ಸ್ಥಳಗಳಿಗೆ ಕರೆ ಮಾಡಿ ಕಳೆದುಹೋದ ವಸ್ತುಗಳ ಬಗ್ಗೆ ಕೇಳಿ",
+  "lifeTaskWalletFraudAlert": "ಕ್ರೆಡಿಟ್ ಬ್ಯೂರೋಗಳು ಅಥವಾ ನಿಮ್ಮ ದೇಶದ ವಂಚನೆ ಸೇವೆಗೆ ನಿಮ್ಮ ಗುರುತಿನ ಚೀಟಿಗೆ ಗುರುತು ಹಾಕಲು ಹೇಳಿ",
+  "lifeTaskWalletStatements": "ನೀವು ಮಾಡದ ಪಾವತಿಗಳಿಗಾಗಿ ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಪರಿಶೀಲಿಸಿ",
+  "lifeTaskWalletSubscriptions": "ಹೊಸ ಕಾರ್ಡ್ ಅನ್ನು ಚಂದಾದಾರಿಕೆಗಳು ಮತ್ತು ಸ್ವಯಂ ಪಾವತಿಗಳಿಗೆ ಹಾಕಿ",
+  "lifeTaskWalletPayApps": "ಹೊಸ ಕಾರ್ಡ್‌ಗಳನ್ನು Google Pay ಅಥವಾ Apple Pay ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskWalletHealthCard": "ಆರೋಗ್ಯ ವಿಮೆಯಿಂದ ಹೊಸ ಸದಸ್ಯ ಕಾರ್ಡ್ ಕೇಳಿ",
+  "lifeTaskWalletTransport": "ಸಾರಿಗೆ ಅಥವಾ ಟೋಲ್ ಕಾರ್ಡ್ ಬ್ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ಬಾಕಿ ವರ್ಗಾಯಿಸಿ",
+  "lifeTaskWalletLoyalty": "ಅಂಕಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು ಹೊಸ ಲಾಯಲ್ಟಿ ಕಾರ್ಡ್‌ಗಳನ್ನು ಕೇಳಿ",
+  "lifeTaskWalletLocks": "ಒಳಗೆ ಕೀಲಿಗಳು ಅಥವಾ ನಿಮ್ಮ ವಿಳಾಸ ಇದ್ದರೆ ಬೀಗ ಬದಲಾಯಿಸುವ ಬಗ್ಗೆ ಯೋಚಿಸಿ",
+  "lifeTaskWalletInsurance": "ನಿಮ್ಮ ವಿಮೆ ಪರ್ಸ್ ಮತ್ತು ನಗದನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆಯೇ ಪರಿಶೀಲಿಸಿ",
+  "lostWalletHeroTitle": "ಪರ್ಸ್ ಕಳೆದುಹೋಯಿತೇ?",
+  "lostWalletHeroBody": "ಮೊದಲು ಏನು ಬ್ಲಾಕ್ ಮಾಡಬೇಕು, ಏನು ಬದಲಾಯಿಸಬೇಕು ಮತ್ತು ಯಾರಿಗೆ ತಿಳಿಸಬೇಕು ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ.",
+  "lostWalletStartTitle": "ಏನಾಯಿತು?",
+  "lostWalletEditTitle": "ವಿವರಗಳನ್ನು ಬದಲಾಯಿಸಿ",
+  "lostWalletLostHint": "ಬಿದ್ದುಹೋಯಿತು ಅಥವಾ ಎಲ್ಲೋ ಬಿಟ್ಟೆ",
+  "lostWalletStolenHint": "ಯಾರೋ ತೆಗೆದುಕೊಂಡರು",
+  "lostWalletWhatMissing": "ಏನು ಕಾಣೆಯಾಗಿದೆ?",
+  "lostWalletStartButton": "ಏನು ಮಾಡಬೇಕು ತೋರಿಸಿ",
+  "lostWalletCheckupTitle": "ಪರ್ಸ್ ಪರಿಶೀಲನೆ",
+  "lostWalletCheckupBody": "ಕಳೆದುಹೋದರೆ ಏನೂ ಮರೆಯದಂತೆ ಈಗಲೇ ಸಿದ್ಧರಾಗಿ.",
+  "lostWalletCheckupAllGood": "ಎಲ್ಲವೂ ಸಿದ್ಧ. ಎಂದಾದರೂ ಕಳೆದುಹೋದರೆ ನೀವು ಸಿದ್ಧರಿದ್ದೀರಿ.",
+  "lostWalletSetPlaceBody": "ಒಂದು ಕಾರ್ಡ್ ಅಥವಾ ದಾಖಲೆ ತೆರೆಯಿರಿ ಮತ್ತು ಅದನ್ನು ಎಲ್ಲಿ ಇಡುತ್ತೀರಿ ಎಂದು ಆಯ್ಕೆಮಾಡಿ. ಗುರುತಿನ ಚೀಟಿ, ಪರವಾನಗಿ ಮತ್ತು ಕಾರ್ಡ್‌ಗಳಿಗೆ ಇದನ್ನು ಮಾಡಿ.",
+  "lostWalletIssuePhotos": "{count, plural, other{ಫೋಟೋ ಇಲ್ಲದವು: {count}. ಫೋಟೋ ಇದ್ದರೆ ಬದಲಾವಣೆ ವೇಗವಾಗುತ್ತದೆ.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{ಬ್ಲಾಕ್ ಸಂಖ್ಯೆ ಇಲ್ಲದ ಕಾರ್ಡ್‌ಗಳು: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{ನಿಮ್ಮ ಬಳಿ ಇರುವ ಪಾಸ್‌ಪೋರ್ಟ್ ಅಥವಾ ಪರವಾನಗಿಗಳು: {count}. ಪ್ರಯಾಣ ಮಾಡದಿದ್ದರೆ ಮನೆಯಲ್ಲಿ ಇಡಿ.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "ನೀವು ಜೊತೆಗೆ ಇಟ್ಟುಕೊಳ್ಳುವುದು",
+  "lostWalletNoPhoto": "ಫೋಟೋ ಇಲ್ಲ",
+  "lostWalletHasPhoto": "ಫೋಟೋ ಉಳಿಸಲಾಗಿದೆ",
+  "lostWalletNoLineShort": "ಬ್ಲಾಕ್ ಸಂಖ್ಯೆ ಇಲ್ಲ",
+  "lostWalletHistory": "ಹಿಂದಿನ ಸಲಗಳು",
+  "lostWalletFound": "ಸಿಕ್ಕಿದೆ",
+  "walletCheckToggle": "ಪ್ರತಿ 6 ತಿಂಗಳಿಗೊಮ್ಮೆ ನೆನಪಿಸಿ",
+  "walletCheckToggleBody": "ನೀವು ಇಟ್ಟುಕೊಳ್ಳುವುದರ ಮೇಲೆ ಒಂದು ತ್ವರಿತ ನೋಟ, ಪಟ್ಟಿ ಸರಿಯಾಗಿರಲು.",
+  "walletCheckReminderTitle": "ಪರ್ಸ್ ಪರಿಶೀಲನೆ",
+  "walletCheckReminderBody": "ನಿಮ್ಮ ಪರ್ಸ್‌ನಲ್ಲಿ ಏನಾದರೂ ಬದಲಾಗಿದೆಯೇ? Vaultara ನವೀಕರಿಸಲು ಒಂದು ನಿಮಿಷ ಕೊಡಿ.",
+  "lostWalletBlockNow": "ಇವನ್ನು ಈಗ ಬ್ಲಾಕ್ ಮಾಡಿ",
+  "lostWalletBlockNowHint": "ಪ್ರತಿ ಬ್ಯಾಂಕ್‌ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಅದರ ಆ್ಯಪ್ ಬಳಸಿ. ಪ್ರತಿ ನಿಮಿಷವೂ ಮುಖ್ಯ.",
+  "lostWalletCall": "ಕರೆ ಮಾಡಿ",
+  "lostWalletAddLine": "ಸಂಖ್ಯೆ ಸೇರಿಸಿ",
+  "lostWalletNoLine": "ಯಾವುದೇ ಸಂಖ್ಯೆ ಉಳಿಸಿಲ್ಲ. ಬ್ಯಾಂಕ್‌ನ ಆ್ಯಪ್ ಅಥವಾ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹುಡುಕಿ.",
+  "lostWalletBlocked": "ಬ್ಲಾಕ್ ಆಗಿದೆ",
+  "lostWalletReplace": "ಇವನ್ನು ಬದಲಾಯಿಸಿ",
+  "lostWalletReplaceHint": "ಹೊಸದಕ್ಕೆ ಅರ್ಜಿ ಹಾಕಿ ಮತ್ತು ಬಂದಾಗ ಹೊಸ ದಿನಾಂಕ ಉಳಿಸಿ.",
+  "lostWalletArrived": "ಹೊಸದು ಬಂದಿದೆ",
+  "lostWalletCheck": "ಇವನ್ನು ಪರಿಶೀಲಿಸಿ",
+  "lostWalletCheckHint": "ಹೊಸ ಕಾರ್ಡ್ ಅಥವಾ ಸಂಖ್ಯೆ ಬೇಕೇ ಎಂದು ಕೇಳಿ.",
+  "lostWalletPlanEmptyTitle": "ಅಲ್ಲಿ ಏನೂ ಉಳಿಸಿರಲಿಲ್ಲ",
+  "lostWalletPlanEmpty": "ಕೆಳಗಿನ ಹಂತಗಳು ಇನ್ನೂ ಸಹಾಯ ಮಾಡುತ್ತವೆ. ಮುಂದಿನ ಬಾರಿ ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ಎಲ್ಲಿ ಇಡುತ್ತೀರಿ ಎಂದು ಆಯ್ಕೆಮಾಡಿ.",
+  "lostWalletCaseTitle": "ಪೊಲೀಸ್ ಪ್ರಕರಣ ಸಂಖ್ಯೆ",
+  "lostWalletCaseHint": "ಬ್ಯಾಂಕ್‌ಗಳು, ವಿಮಾ ಕಂಪನಿಗಳು ಮತ್ತು ಕಚೇರಿಗಳು ಇದನ್ನು ಆಗಾಗ ಕೇಳುತ್ತವೆ.",
+  "lostWalletCaseLabel": "ಪ್ರಕರಣ ಅಥವಾ ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ",
+  "lostWalletCaseSaved": "ಪ್ರಕರಣ ಸಂಖ್ಯೆ ಉಳಿಸಲಾಗಿದೆ",
+  "lostWalletAbroadTitle": "ಈಗ ವಿದೇಶದಲ್ಲಿದ್ದೀರಾ?",
+  "lostWalletAbroadBody": "ನೀವು {trip} ಪ್ರಯಾಣದಲ್ಲಿದ್ದೀರಿ. ಒಳಗೆ ಪಾಸ್‌ಪೋರ್ಟ್ ಅಥವಾ ಗುರುತಿನ ಚೀಟಿ ಇದ್ದರೆ ತುರ್ತು ಪ್ರಯಾಣ ದಾಖಲೆಗಾಗಿ ರಾಯಭಾರ ಕಚೇರಿ ಅಥವಾ ದೂತಾವಾಸವನ್ನು ಸಂಪರ್ಕಿಸಿ ಮತ್ತು ಪ್ರಯಾಣ ವಿಮೆಗೆ ತಿಳಿಸಿ.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "ಪ್ರಯಾಣ ತೆರೆಯಿರಿ",
+  "lostWalletPhoneTitle": "ನಿಮ್ಮ ಫೋನ್ ಕೂಡ ತೆಗೆದುಕೊಂಡರೇ?",
+  "lostWalletPhoneBody": "ಮೊದಲು SIM ಕಾರ್ಡ್ ಮತ್ತು ಬ್ಯಾಂಕಿಂಗ್ ಆ್ಯಪ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ. ಅದಕ್ಕೊಂದು ಯೋಜನೆ ಇದೆ.",
+  "lostWalletPhoneButton": "ಕಳೆದುಹೋದ ಫೋನ್ ಯೋಜನೆ ಪ್ರಾರಂಭಿಸಿ",
+  "lostWalletStatementNote": "Vaultara 30, 60 ಮತ್ತು 90 ದಿನಗಳ ನಂತರ ನೆನಪಿಸುತ್ತದೆ.",
+  "lostWalletStatementTitle": "ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಪರಿಶೀಲಿಸಿ",
+  "lostWalletStatementBody": "ಪರ್ಸ್ ಕಳೆದುಹೋದಾಗಿನಿಂದ ನೀವು ಮಾಡದ ಪಾವತಿಗಳನ್ನು ಹುಡುಕಿ.",
+  "lostWalletFoundButton": "ನನಗೆ ಸಿಕ್ಕಿತು",
+  "lostWalletFoundTitle": "ಒಳ್ಳೆಯ ಸುದ್ದಿ!",
+  "lostWalletFoundBody": "ಈ ಕಾರ್ಡ್‌ಗಳು ಈಗಾಗಲೇ ಬ್ಲಾಕ್ ಆಗಿವೆ, ಹೊಸವುಗಳಿಗಾಗಿ ಕಾಯಿರಿ:",
+  "lostWalletFoundNone": "ಇನ್ನೂ ಏನೂ ಬ್ಲಾಕ್ ಆಗಿಲ್ಲ, ಮೊದಲಿನಂತೆ ಮುಂದುವರಿಯಬಹುದು.",
+  "lostWalletFoundUnfreeze": "ಬ್ಯಾಂಕ್ ಆ್ಯಪ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ಗಳನ್ನು ಫ್ರೀಜ್ ಮಾಡಿದ್ದರೆ, ಬ್ಲಾಕ್ ಮಾಡದವನ್ನು ಅನ್‌ಫ್ರೀಜ್ ಮಾಡಿ.",
+  "lostWalletFoundConfirm": "ಯೋಜನೆ ಮುಚ್ಚಿ",
+  "lostWalletFoundOn": "{date} ರಂದು ಸಿಕ್ಕಿತು",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "ಕಳೆದುಹೋದ ವಸ್ತುಗಳ ವರದಿ",
+  "lostWalletReportTitle": "ಕಳೆದುಹೋದ ವಸ್ತುಗಳ ವರದಿ",
+  "lostWalletReportWhen": "ದಿನಾಂಕ: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "ಏನು ಕಾಣೆಯಾಗಿದೆ: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "ಪ್ರಕರಣ ಸಂಖ್ಯೆ: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "ಪ್ರಕರಣ ಸಂಖ್ಯೆ: ಇನ್ನೂ ವರದಿ ಮಾಡಿಲ್ಲ",
+  "lostWalletReportCount": "{count, plural, other{ಕೆಳಗಿನ ಐಟಂಗಳು: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

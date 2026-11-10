@@ -2298,5 +2298,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Шинэ гэрт нүүж байна уу? Өөр юуг шинэчлэх хэрэгтэйг хараарай."
+  "lifePlanSuggestMove": "Шинэ гэрт нүүж байна уу? Өөр юуг шинэчлэх хэрэгтэйг хараарай.",
+  "keptInTitle": "Би үүнийг хаана хадгалдаг",
+  "keptInSubtitle": "Алдвал юуг хааж, юуг солихоо мэдэхийн тулд",
+  "keptInWallet": "Түрийвч",
+  "keptInBag": "Цүнх",
+  "keptInPhoneCase": "Утасны гэр",
+  "keptInTravelPouch": "Аяллын уут",
+  "keptInCar": "Машин",
+  "keptInHome": "Гэртээ",
+  "keptInNone": "Сонгоогүй",
+  "lostLineLabel": "Алдагдсан картын дугаар",
+  "lostLineHelper": "Одоо хадгална уу. Дугаар нь карт дээр хэвлэгдсэн тул хэрэгтэй үед танд байхгүй.",
+  "lifeEventWalletLost": "Түрийвчээ алдсан",
+  "lifeEventWalletLostBody": "Эхлээд картуудаа хааж, дараа нь баримт бичгээ нэг нэгээр нь солино уу.",
+  "lifeEventWalletStolen": "Түрийвчийг минь хулгайлсан",
+  "lifeEventWalletStolenBody": "Картуудаа даруй хааж, хулгайн талаар мэдэгдээрэй. Дараа нь залилангаас сэргийлж дансаа хянаарай.",
+  "lifeVariantWalletQuestion": "Алдсан уу, хулгайлагдсан уу?",
+  "lifeVariantLost": "Алдсан",
+  "lifeVariantStolen": "Хулгайлагдсан",
+  "lifeTaskWalletFreezeCards": "Банкны апп боломжтой бол картуудаа түр хаа",
+  "lifeTaskWalletRetrace": "Сүүлд очсон газруудаа залгаж, гээгдсэн эд зүйлсийн талаар асуу",
+  "lifeTaskWalletFraudAlert": "Зээлийн товчоо эсвэл улсынхаа залилангийн эсрэг үйлчилгээнээс иргэний үнэмлэхээ тэмдэглүүлэхийг хүс",
+  "lifeTaskWalletStatements": "Хийгээгүй төлбөр байгаа эсэхийг банкны хуулгаас шалга",
+  "lifeTaskWalletSubscriptions": "Шинэ картаа захиалга болон автомат төлбөрт холбо",
+  "lifeTaskWalletPayApps": "Шинэ картуудаа Google Pay эсвэл Apple Pay-д нэм",
+  "lifeTaskWalletHealthCard": "Эрүүл мэндийн даатгалаасаа шинэ гишүүний карт хүс",
+  "lifeTaskWalletTransport": "Тээврийн эсвэл замын төлбөрийн картаа хааж, үлдэгдлийг шилжүүл",
+  "lifeTaskWalletLoyalty": "Оноогоо хадгалахын тулд шинэ урамшууллын карт хүс",
+  "lifeTaskWalletLocks": "Дотор нь түлхүүр эсвэл хаяг чинь байсан бол цоож солих талаар бод",
+  "lifeTaskWalletInsurance": "Даатгал чинь түрийвч болон бэлэн мөнгийг нөхөх эсэхийг шалга",
+  "lostWalletHeroTitle": "Түрийвчээ алдсан уу?",
+  "lostWalletHeroBody": "Vaultara эхлээд юуг хаах, юуг солих, хэнд мэдэгдэхийг харуулна.",
+  "lostWalletStartTitle": "Юу болсон бэ?",
+  "lostWalletEditTitle": "Дэлгэрэнгүйг өөрчлөх",
+  "lostWalletLostHint": "Унасан эсвэл хаа нэгтээ мартсан",
+  "lostWalletStolenHint": "Хэн нэгэн авсан",
+  "lostWalletWhatMissing": "Юу алга?",
+  "lostWalletStartButton": "Юу хийхийг харуул",
+  "lostWalletCheckupTitle": "Түрийвчний шалгалт",
+  "lostWalletCheckupBody": "Алдвал юу ч мартагдахгүйн тулд одооноос бэлдээрэй.",
+  "lostWalletCheckupAllGood": "Бүгд бэлэн. Хэзээ нэгэн цагт алдвал та бэлэн.",
+  "lostWalletSetPlaceBody": "Карт эсвэл баримт бичгээ нээж, хаана хадгалдгаа сонгоно уу. Үүнийг иргэний үнэмлэх, жолооны үнэмлэх, картууддаа хий.",
+  "lostWalletIssuePhotos": "{count, plural, other{Зураггүй: {count}. Зурагтай бол солиход хурдан.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, other{Хаах дугааргүй картууд: {count}.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, other{Биедээ авч явдаг паспорт эсвэл зөвшөөрөл: {count}. Аялахгүй бол гэртээ үлдээгээрэй.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Таны авч явдаг зүйлс",
+  "lostWalletNoPhoto": "Зураг алга",
+  "lostWalletHasPhoto": "Зураг хадгалагдсан",
+  "lostWalletNoLineShort": "Хаах дугаар алга",
+  "lostWalletHistory": "Өмнөх тохиолдлууд",
+  "lostWalletFound": "Олдсон",
+  "walletCheckToggle": "6 сар тутам сануул",
+  "walletCheckToggleBody": "Жагсаалт зөв байхын тулд авч явдаг зүйлсээ хурдан харах.",
+  "walletCheckReminderTitle": "Түрийвчний шалгалт",
+  "walletCheckReminderBody": "Түрийвчинд тань өөрчлөлт гарсан уу? Vaultara-г шинэчлэхэд нэг минут гаргаарай.",
+  "lostWalletBlockNow": "Эдгээрийг одоо хаа",
+  "lostWalletBlockNowHint": "Банк бүр рүү залгах эсвэл аппыг нь ашигла. Минут бүр чухал.",
+  "lostWalletCall": "Залгах",
+  "lostWalletAddLine": "Дугаар нэмэх",
+  "lostWalletNoLine": "Дугаар хадгалагдаагүй. Банкныхаа апп эсвэл вэбсайтаас олоорой.",
+  "lostWalletBlocked": "Хаагдсан",
+  "lostWalletReplace": "Эдгээрийг соль",
+  "lostWalletReplaceHint": "Шинээр хүсэлт гаргаж, ирэхэд шинэ огноог хадгал.",
+  "lostWalletArrived": "Шинэ нь ирсэн",
+  "lostWalletCheck": "Эдгээрийг шалга",
+  "lostWalletCheckHint": "Шинэ карт эсвэл дугаар хэрэгтэй эсэхийг асуу.",
+  "lostWalletPlanEmptyTitle": "Тэнд хадгалсан юм байгаагүй",
+  "lostWalletPlanEmpty": "Доорх алхмууд одоо ч тус болно. Дараагийн удаа карт, баримт бичгээ хаана хадгалдгаа сонгоорой.",
+  "lostWalletCaseTitle": "Цагдаагийн хэргийн дугаар",
+  "lostWalletCaseHint": "Банк, даатгалын компани, байгууллагууд үүнийг ихэвчлэн асуудаг.",
+  "lostWalletCaseLabel": "Хэргийн эсвэл лавлагааны дугаар",
+  "lostWalletCaseSaved": "Хэргийн дугаар хадгалагдсан",
+  "lostWalletAbroadTitle": "Одоо гадаадад байна уу?",
+  "lostWalletAbroadBody": "Та {trip} аялалд байна. Дотор нь паспорт эсвэл иргэний үнэмлэх байсан бол яаралтай аяллын бичиг баримтын төлөө элчин сайдын яам эсвэл консулын газартай холбогдож, аяллын даатгалдаа мэдэгдээрэй.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Аяллыг нээх",
+  "lostWalletPhoneTitle": "Утсыг чинь бас авсан уу?",
+  "lostWalletPhoneBody": "Эхлээд SIM карт болон банкны аппуудыг хаа. Үүнд зориулсан төлөвлөгөө бий.",
+  "lostWalletPhoneButton": "Алдсан утасны төлөвлөгөө эхлүүлэх",
+  "lostWalletStatementNote": "Vaultara 30, 60, 90 хоногийн дараа сануулна.",
+  "lostWalletStatementTitle": "Банкны хуулгаа шалга",
+  "lostWalletStatementBody": "Түрийвч алдагдсанаас хойш хийгээгүй төлбөрүүдийг хай.",
+  "lostWalletFoundButton": "Олчихлоо",
+  "lostWalletFoundTitle": "Сайн мэдээ!",
+  "lostWalletFoundBody": "Эдгээр картууд аль хэдийн хаагдсан тул шинийг нь хүлээгээрэй:",
+  "lostWalletFoundNone": "Одоогоор юу ч хаагдаагүй, өмнөх шигээ үргэлжлүүлж болно.",
+  "lostWalletFoundUnfreeze": "Банкны аппад картуудаа түр хаасан бол хаагаагүйг нь нээгээрэй.",
+  "lostWalletFoundConfirm": "Төлөвлөгөөг хаах",
+  "lostWalletFoundOn": "{date}-нд олдсон",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Алдагдсан эд зүйлсийн тайлан",
+  "lostWalletReportTitle": "Алдагдсан эд зүйлсийн тайлан",
+  "lostWalletReportWhen": "Огноо: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Юу алга: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Хэргийн дугаар: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Хэргийн дугаар: одоогоор мэдэгдээгүй",
+  "lostWalletReportCount": "{count, plural, other{Доорх зүйлс: {count}}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

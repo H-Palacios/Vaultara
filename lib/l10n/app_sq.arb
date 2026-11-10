@@ -2294,5 +2294,162 @@
       }
     }
   },
-  "lifePlanSuggestMove": "Po kalon në një shtëpi të re? Shiko çfarë tjetër duhet përditësuar."
+  "lifePlanSuggestMove": "Po kalon në një shtëpi të re? Shiko çfarë tjetër duhet përditësuar.",
+  "keptInTitle": "Ku e mbaj",
+  "keptInSubtitle": "Që të dish çfarë të bllokosh dhe të zëvendësosh nëse humbet",
+  "keptInWallet": "Portofol",
+  "keptInBag": "Çantë",
+  "keptInPhoneCase": "Këllëf telefoni",
+  "keptInTravelPouch": "Qeskë udhëtimi",
+  "keptInCar": "Makinë",
+  "keptInHome": "Në shtëpi",
+  "keptInNone": "Pa caktuar",
+  "lostLineLabel": "Numri për kartë të humbur",
+  "lostLineHelper": "Ruaje tani. Numri është i shtypur në kartë, kështu që nuk do ta kesh kur të duhet.",
+  "lifeEventWalletLost": "Humba portofolin",
+  "lifeEventWalletLostBody": "Blloko së pari kartat, pastaj zëvendëso dokumentet një nga një.",
+  "lifeEventWalletStolen": "Ma vodhën portofolin",
+  "lifeEventWalletStolenBody": "Blloko menjëherë kartat dhe denoncoje vjedhjen. Pastaj ndiq llogaritë për mashtrime.",
+  "lifeVariantWalletQuestion": "Humbur apo vjedhur?",
+  "lifeVariantLost": "Humbur",
+  "lifeVariantStolen": "Vjedhur",
+  "lifeTaskWalletFreezeCards": "Ngrij kartat në aplikacionin e bankës nëse e lejon",
+  "lifeTaskWalletRetrace": "Telefono vendet e fundit ku ke qenë dhe pyet te sendet e humbura",
+  "lifeTaskWalletFraudAlert": "Kërkoju zyrave të kredisë ose shërbimit kundër mashtrimit në vendin tënd të shënojnë dokumentin tënd",
+  "lifeTaskWalletStatements": "Kontrollo pasqyrat bankare për pagesa që nuk i ke bërë",
+  "lifeTaskWalletSubscriptions": "Vendose kartën e re te abonimet dhe debitimet automatike",
+  "lifeTaskWalletPayApps": "Shto kartat e reja në Google Pay ose Apple Pay",
+  "lifeTaskWalletHealthCard": "Kërko një kartë të re nga sigurimi shëndetësor",
+  "lifeTaskWalletTransport": "Blloko kartën e transportit ose të pagesës rrugore dhe kalo bilancin",
+  "lifeTaskWalletLoyalty": "Kërko karta të reja besnikërie që të mbash pikët",
+  "lifeTaskWalletLocks": "Nëse kishte çelësa ose adresën tënde, mendo të ndërrosh bravat",
+  "lifeTaskWalletInsurance": "Kontrollo nëse sigurimi mbulon portofolin dhe paratë",
+  "lostWalletHeroTitle": "Humbe portofolin?",
+  "lostWalletHeroBody": "Vaultara të tregon çfarë të bllokosh së pari, çfarë të zëvendësosh dhe kë të njoftosh.",
+  "lostWalletStartTitle": "Çfarë ndodhi?",
+  "lostWalletEditTitle": "Ndrysho të dhënat",
+  "lostWalletLostHint": "Më ra ose e harrova diku",
+  "lostWalletStolenHint": "Dikush e mori",
+  "lostWalletWhatMissing": "Çfarë mungon?",
+  "lostWalletStartButton": "Më trego çfarë të bëj",
+  "lostWalletCheckupTitle": "Kontrolli i portofolit",
+  "lostWalletCheckupBody": "Përgatitu tani, që të mos harrohet asgjë nëse humbet.",
+  "lostWalletCheckupAllGood": "Gjithçka gati. Nëse humbet ndonjëherë, je i përgatitur.",
+  "lostWalletSetPlaceBody": "Hap një kartë ose dokument dhe zgjidh ku e mban. Bëje këtë për ID-në, patentën dhe kartat.",
+  "lostWalletIssuePhotos": "{count, plural, one{1 send nuk ka foto. Me foto zëvendësohet më shpejt.} other{{count} sende nuk kanë foto. Me foto zëvendësohen më shpejt.}}",
+  "@lostWalletIssuePhotos": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssueLines": "{count, plural, one{1 kartë nuk ka të ruajtur numrin për kartë të humbur.} other{{count} karta nuk kanë të ruajtur numrin për kartë të humbur.}}",
+  "@lostWalletIssueLines": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletIssuePassport": "{count, plural, one{Mban me vete një pasaportë ose leje. Lëre në shtëpi nëse nuk udhëton.} other{Mban me vete {count} pasaporta ose leje. Lëri në shtëpi nëse nuk udhëton.}}",
+  "@lostWalletIssuePassport": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lostWalletWhatsInside": "Çfarë mban me vete",
+  "lostWalletNoPhoto": "Pa foto",
+  "lostWalletHasPhoto": "Foto u ruajt",
+  "lostWalletNoLineShort": "Pa numër për kartë të humbur",
+  "lostWalletHistory": "Herë të mëparshme",
+  "lostWalletFound": "U gjet",
+  "walletCheckToggle": "Më kujto çdo 6 muaj",
+  "walletCheckToggleBody": "Një vështrim i shpejtë te ajo që mban, që lista të jetë e saktë.",
+  "walletCheckReminderTitle": "Kontrolli i portofolit",
+  "walletCheckReminderBody": "Ka ndryshuar diçka në portofol? Merr një minutë për të përditësuar Vaultara.",
+  "lostWalletBlockNow": "Bllokoji tani",
+  "lostWalletBlockNowHint": "Telefono çdo bankë ose përdor aplikacionin e saj. Çdo minutë ka rëndësi.",
+  "lostWalletCall": "Telefono",
+  "lostWalletAddLine": "Shto numrin",
+  "lostWalletNoLine": "Asnjë numër i ruajtur. Gjeje në aplikacionin ose faqen e bankës.",
+  "lostWalletBlocked": "E bllokuar",
+  "lostWalletReplace": "Zëvendësoji",
+  "lostWalletReplaceHint": "Apliko për të reja dhe ruaj datën e re kur të vijnë.",
+  "lostWalletArrived": "Erdhi i riu",
+  "lostWalletCheck": "Kontrolloji",
+  "lostWalletCheckHint": "Pyet nëse të duhet kartë ose numër i ri.",
+  "lostWalletPlanEmptyTitle": "Aty nuk kishte asgjë të ruajtur",
+  "lostWalletPlanEmpty": "Hapat më poshtë ndihmojnë gjithsesi. Herën tjetër, zgjidh ku i mban kartat dhe dokumentet.",
+  "lostWalletCaseTitle": "Numri i denoncimit në polici",
+  "lostWalletCaseHint": "Bankat, siguruesit dhe zyrat shpesh e kërkojnë.",
+  "lostWalletCaseLabel": "Numri i çështjes ose i referencës",
+  "lostWalletCaseSaved": "Numri u ruajt",
+  "lostWalletAbroadTitle": "Jashtë vendit tani?",
+  "lostWalletAbroadBody": "Je në udhëtimin {trip}. Nëse aty ishte pasaporta ose ID-ja, kontakto ambasadën ose konsullatën për një dokument udhëtimi urgjent dhe njofto sigurimin e udhëtimit.",
+  "@lostWalletAbroadBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletOpenTrip": "Hap udhëtimin",
+  "lostWalletPhoneTitle": "Ta morën edhe telefonin?",
+  "lostWalletPhoneBody": "Blloko së pari kartën SIM dhe aplikacionet bankare. Ka një plan për këtë.",
+  "lostWalletPhoneButton": "Nis planin për telefon të humbur",
+  "lostWalletStatementNote": "Vaultara të kujton pas 30, 60 dhe 90 ditësh.",
+  "lostWalletStatementTitle": "Kontrollo pasqyrat bankare",
+  "lostWalletStatementBody": "Kërko pagesa që nuk i ke bërë që kur humbi portofoli.",
+  "lostWalletFoundButton": "E gjeta",
+  "lostWalletFoundTitle": "Lajm i mirë!",
+  "lostWalletFoundBody": "Këto karta janë bllokuar tashmë, ndaj prit të rejat:",
+  "lostWalletFoundNone": "Ende nuk është bllokuar asgjë, mund të vazhdosh si më parë.",
+  "lostWalletFoundUnfreeze": "Nëse ngrive karta në aplikacionin e bankës, shkriji ato që nuk i bllokove.",
+  "lostWalletFoundConfirm": "Mbyll planin",
+  "lostWalletFoundOn": "U gjet më {date}",
+  "@lostWalletFoundOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReport": "Raporti i sendeve të humbura",
+  "lostWalletReportTitle": "Raporti i sendeve të humbura",
+  "lostWalletReportWhen": "Data: {date}",
+  "@lostWalletReportWhen": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportWhat": "Çfarë mungon: {places}",
+  "@lostWalletReportWhat": {
+    "placeholders": {
+      "places": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportCase": "Numri i denoncimit: {number}",
+  "@lostWalletReportCase": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletReportNoCase": "Numri i denoncimit: ende pa denoncuar",
+  "lostWalletReportCount": "{count, plural, one{1 send më poshtë} other{{count} sende më poshtë}}",
+  "@lostWalletReportCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

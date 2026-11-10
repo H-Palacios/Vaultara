@@ -7172,4 +7172,328 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get lifePlanSuggestMove => 'Flyttar du til ein ny heim? Sjå kva anna du må oppdatere.';
+
+  @override
+  String get keptInTitle => 'Kvar eg oppbevarer det';
+
+  @override
+  String get keptInSubtitle => 'Så du veit kva du skal sperre og erstatte om det blir borte';
+
+  @override
+  String get keptInWallet => 'Lommebok';
+
+  @override
+  String get keptInBag => 'Veske';
+
+  @override
+  String get keptInPhoneCase => 'Mobildeksel';
+
+  @override
+  String get keptInTravelPouch => 'Reiseveske';
+
+  @override
+  String get keptInCar => 'Bil';
+
+  @override
+  String get keptInHome => 'Heime';
+
+  @override
+  String get keptInNone => 'Ikkje valt';
+
+  @override
+  String get lostLineLabel => 'Sperrenummer for mista kort';
+
+  @override
+  String get lostLineHelper => 'Lagre det no. Nummeret står på kortet, så du har det ikkje når du treng det.';
+
+  @override
+  String get lifeEventWalletLost => 'Eg har mista lommeboka';
+
+  @override
+  String get lifeEventWalletLostBody => 'Sperr korta først, og erstatt så dokumenta eitt om gongen.';
+
+  @override
+  String get lifeEventWalletStolen => 'Lommeboka mi er stolen';
+
+  @override
+  String get lifeEventWalletStolenBody => 'Sperr korta med ein gong og meld tjuveriet. Følg så med på kontoane dine for svindel.';
+
+  @override
+  String get lifeVariantWalletQuestion => 'Mista eller stolen?';
+
+  @override
+  String get lifeVariantLost => 'Mista';
+
+  @override
+  String get lifeVariantStolen => 'Stolen';
+
+  @override
+  String get lifeTaskWalletFreezeCards => 'Frys korta i bankappen om han har det';
+
+  @override
+  String get lifeTaskWalletRetrace => 'Ring dei siste stadene du var, og spør etter hittegods';
+
+  @override
+  String get lifeTaskWalletFraudAlert => 'Be kredittbyråa eller svindeltenesta i landet om å merkje legitimasjonen din';
+
+  @override
+  String get lifeTaskWalletStatements => 'Sjekk kontoutskriftene for betalingar du ikkje har gjort';
+
+  @override
+  String get lifeTaskWalletSubscriptions => 'Legg inn det nye kortet på abonnement og faste trekk';
+
+  @override
+  String get lifeTaskWalletPayApps => 'Legg til dei nye korta i Google Pay eller Apple Pay';
+
+  @override
+  String get lifeTaskWalletHealthCard => 'Be helseforsikringa di om eit nytt medlemskort';
+
+  @override
+  String get lifeTaskWalletTransport => 'Sperr reise- eller bompengekortet og flytt saldoen';
+
+  @override
+  String get lifeTaskWalletLoyalty => 'Be om nye kundekort så du held på poenga';
+
+  @override
+  String get lifeTaskWalletLocks => 'Var det nøklar eller adressa di i ho, vurder å byte lås';
+
+  @override
+  String get lifeTaskWalletInsurance => 'Sjekk om forsikringa dekkjer lommeboka og kontantane';
+
+  @override
+  String get lostWalletHeroTitle => 'Mista lommeboka?';
+
+  @override
+  String get lostWalletHeroBody => 'Vaultara viser kva du skal sperre først, kva du skal erstatte og kven du skal seie frå til.';
+
+  @override
+  String get lostWalletStartTitle => 'Kva skjedde?';
+
+  @override
+  String get lostWalletEditTitle => 'Endre opplysningane';
+
+  @override
+  String get lostWalletLostHint => 'Mista eller gløymd ein stad';
+
+  @override
+  String get lostWalletStolenHint => 'Nokon tok ho';
+
+  @override
+  String get lostWalletWhatMissing => 'Kva manglar?';
+
+  @override
+  String get lostWalletStartButton => 'Vis meg kva eg skal gjere';
+
+  @override
+  String get lostWalletCheckupTitle => 'Lommeboksjekk';
+
+  @override
+  String get lostWalletCheckupBody => 'Gjer deg klar no, så ingenting blir gløymt om ho blir borte.';
+
+  @override
+  String get lostWalletCheckupAllGood => 'Alt klart. Om ho nokon gong blir borte, er du førebudd.';
+
+  @override
+  String get lostWalletSetPlaceBody => 'Opne eit kort eller dokument og vel kvar du oppbevarer det. Gjer det for legitimasjon, førarkort og kort.';
+
+  @override
+  String lostWalletIssuePhotos(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count element har ikkje bilete. Med bilete går det raskare å erstatte.',
+      one: '1 element har ikkje bilete. Med bilete går det raskare å erstatte.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssueLines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kort har ikkje lagra sperrenummer.',
+      one: '1 kort har ikkje lagra sperrenummer.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lostWalletIssuePassport(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Du har med $count pass eller løyve. La dei liggje heime om du ikkje reiser.',
+      one: 'Du har med eit pass eller eit løyve. La det liggje heime om du ikkje reiser.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lostWalletWhatsInside => 'Det du har med deg';
+
+  @override
+  String get lostWalletNoPhoto => 'Ikkje bilete';
+
+  @override
+  String get lostWalletHasPhoto => 'Bilete lagra';
+
+  @override
+  String get lostWalletNoLineShort => 'Ikkje sperrenummer';
+
+  @override
+  String get lostWalletHistory => 'Tidlegare gonger';
+
+  @override
+  String get lostWalletFound => 'Funnen';
+
+  @override
+  String get walletCheckToggle => 'Minn meg på det kvar 6. månad';
+
+  @override
+  String get walletCheckToggleBody => 'Ein rask kikk på det du har med deg, så lista stemmer.';
+
+  @override
+  String get walletCheckReminderTitle => 'Lommeboksjekk';
+
+  @override
+  String get walletCheckReminderBody => 'Har noko endra seg i lommeboka? Bruk eit minutt på å oppdatere Vaultara.';
+
+  @override
+  String get lostWalletBlockNow => 'Sperr desse no';
+
+  @override
+  String get lostWalletBlockNowHint => 'Ring kvar bank eller bruk appen deira. Kvart minutt tel.';
+
+  @override
+  String get lostWalletCall => 'Ring';
+
+  @override
+  String get lostWalletAddLine => 'Legg til nummeret';
+
+  @override
+  String get lostWalletNoLine => 'Ikkje noko nummer lagra. Finn sperrenummeret i appen eller på nettsida til banken.';
+
+  @override
+  String get lostWalletBlocked => 'Sperra';
+
+  @override
+  String get lostWalletReplace => 'Erstatt desse';
+
+  @override
+  String get lostWalletReplaceHint => 'Søk om nye, og lagre den nye datoen når dei kjem.';
+
+  @override
+  String get lostWalletArrived => 'Den nye har kome';
+
+  @override
+  String get lostWalletCheck => 'Sjekk desse';
+
+  @override
+  String get lostWalletCheckHint => 'Spør om du treng nytt kort eller nytt nummer.';
+
+  @override
+  String get lostWalletPlanEmptyTitle => 'Ingenting lagra låg der';
+
+  @override
+  String get lostWalletPlanEmpty => 'Stega under hjelper likevel. Vel neste gong kvar du oppbevarer kort og dokument.';
+
+  @override
+  String get lostWalletCaseTitle => 'Saksnummer frå politiet';
+
+  @override
+  String get lostWalletCaseHint => 'Bankar, forsikringsselskap og etatar spør ofte etter det.';
+
+  @override
+  String get lostWalletCaseLabel => 'Saks- eller referansenummer';
+
+  @override
+  String get lostWalletCaseSaved => 'Saksnummer lagra';
+
+  @override
+  String get lostWalletAbroadTitle => 'I utlandet no?';
+
+  @override
+  String lostWalletAbroadBody(String trip) {
+    return 'Du er på reisa $trip. Om passet eller legitimasjonen var i ho, kontakt ambassaden eller konsulatet for eit naudpass, og sei frå til reiseforsikringa.';
+  }
+
+  @override
+  String get lostWalletOpenTrip => 'Opne reisa';
+
+  @override
+  String get lostWalletPhoneTitle => 'Vart telefonen òg teken?';
+
+  @override
+  String get lostWalletPhoneBody => 'Sperr først SIM-kortet og bankappane. Det finst ein plan for det.';
+
+  @override
+  String get lostWalletPhoneButton => 'Start planen for mista telefon';
+
+  @override
+  String get lostWalletStatementNote => 'Vaultara minner deg på det etter 30, 60 og 90 dagar.';
+
+  @override
+  String get lostWalletStatementTitle => 'Sjekk kontoutskriftene';
+
+  @override
+  String get lostWalletStatementBody => 'Sjå etter betalingar du ikkje har gjort sidan lommeboka forsvann.';
+
+  @override
+  String get lostWalletFoundButton => 'Eg fann ho';
+
+  @override
+  String get lostWalletFoundTitle => 'Gode nyheiter!';
+
+  @override
+  String get lostWalletFoundBody => 'Desse korta er allereie sperra, så følg med på dei nye:';
+
+  @override
+  String get lostWalletFoundNone => 'Ingenting er sperra enno, så du kan halde fram som før.';
+
+  @override
+  String get lostWalletFoundUnfreeze => 'Har du frose kort i bankappen, lås opp dei du ikkje har sperra.';
+
+  @override
+  String get lostWalletFoundConfirm => 'Lukk planen';
+
+  @override
+  String lostWalletFoundOn(String date) {
+    return 'Funnen $date';
+  }
+
+  @override
+  String get lostWalletReport => 'Rapport over mista ting';
+
+  @override
+  String get lostWalletReportTitle => 'Rapport over mista ting';
+
+  @override
+  String lostWalletReportWhen(String date) {
+    return 'Dato: $date';
+  }
+
+  @override
+  String lostWalletReportWhat(String places) {
+    return 'Det som manglar: $places';
+  }
+
+  @override
+  String lostWalletReportCase(String number) {
+    return 'Saksnummer: $number';
+  }
+
+  @override
+  String get lostWalletReportNoCase => 'Saksnummer: ikkje meldt enno';
+
+  @override
+  String lostWalletReportCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count element under',
+      one: '1 element under',
+    );
+    return '$_temp0';
+  }
 }
