@@ -79,7 +79,17 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 
 ### Life events
 - **Plans for big moments.** Moving, buying or selling a home, a new name, marriage, divorce, a baby, buying or selling a car, starting, leaving or losing a job, studies, retiring, moving abroad, a child turning 16 or 18, looking after a parent and a death in the family. Free on every plan.
-- **Emergencies.** A lost or stolen phone (block the SIM card and banking first) and a fire, flood or break-in at home (photos, insurer, Proof pack), next to Lost my wallet.
+- **Emergencies.** A lost or stolen phone (block the SIM card and banking first) and a fire, flood or break-in at home (photos, insurer, Proof pack).
+- **Lost my wallet.** A synced plan for a lost or stolen wallet, bag, phone case, travel pouch or car:
+  - Block now: each card with a Call button for its saved lost card number, plus freezing cards in the banking app.
+  - Police case number, kept on the plan and on the lost items report.
+  - Replace: documents with New one arrived (saves the new expiry) and the replacement guide.
+  - Steps for theft and loss: fraud alert, statements, subscriptions, Google or Apple Pay, medical aid, transport, loyalty cards, locks and insurance.
+  - Statement check reminders 30, 60 and 90 days on, which carry on after the plan is closed unless the wallet was found.
+  - I found it: shows which cards were already blocked, then closes the plan. Earlier times stay in the history.
+  - Lost items report PDF (photos on paid plans), a card when you are abroad on a trip, and a link to the lost phone plan.
+  - Wallet check-up: what you carry by place, cards without a lost card number, items without a photo, passports carried day to day, and an optional reminder every 6 months.
+  - Where I keep it on every record replaces the In my wallet switch (older records still count). App icon shortcut and Ask Vaultara both know it.
 - **Steps that are not records.** Each event comes with short steps that work in any country, such as registering a birth or redirecting post. Urgent ones show first, and users can add their own.
 - **Start-by dates.** Counts back from the date of the event using how long a new document usually takes, so a passport is applied for in time.
 - **Costs and progress.** Shows what renewing the plan's records usually costs. A record that changes is marked done, a deleted record counts as cancelled, and adding a note does not count.
