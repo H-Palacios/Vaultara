@@ -1,5 +1,6 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
+
 class AnalyticsService {
   const AnalyticsService._();
 
@@ -17,6 +18,7 @@ class AnalyticsService {
   static Future<void> logScreenView(String screenName) async {
     await _analytics.logScreenView(screenName: screenName);
   }
+
   static Future<void> setUserId(String? id) async {
     await _analytics.setUserId(id: id);
   }
@@ -24,6 +26,7 @@ class AnalyticsService {
   static Future<void> setUserProperty(String name, String value) async {
     await _analytics.setUserProperty(name: name, value: value);
   }
+
   static Future<void> setCollectionEnabled(
     bool enabled, {
     bool adMeasurement = false,
@@ -36,29 +39,34 @@ class AnalyticsService {
     );
     await _analytics.setAnalyticsCollectionEnabled(enabled);
   }
-  static Future<void> logRecordAdded({String? categoryKey}) =>
-      logEvent('record_added', parameters: {
-        if (categoryKey != null)
-          'category_key': PresetCatalog.categoryKeys.contains(categoryKey)
-              ? categoryKey
-              : 'custom',
-      });
+
+  static Future<void> logRecordAdded({String? categoryKey}) => logEvent(
+    'record_added',
+    parameters: {
+      if (categoryKey != null)
+        'category_key': PresetCatalog.categoryKeys.contains(categoryKey)
+            ? categoryKey
+            : 'custom',
+    },
+  );
   static Future<void> logRecordRestored() => logEvent('record_restored');
 
   static Future<void> logRecordDeleted({bool permanent = false}) =>
       logEvent('record_deleted', parameters: {'permanent': permanent});
-  static Future<void> logReminderSet({String? cadence}) =>
-      logEvent('reminder_set', parameters: {
-        if (cadence != null) 'cadence': cadence,
-      });
+  static Future<void> logReminderSet({String? cadence}) => logEvent(
+    'reminder_set',
+    parameters: {if (cadence != null) 'cadence': cadence},
+  );
 
-  static Future<void> logGroupAdded({String? categoryKey}) =>
-      logEvent('group_added', parameters: {
-        if (categoryKey != null)
-          'category_key': PresetCatalog.categoryKeys.contains(categoryKey)
-              ? categoryKey
-              : 'custom',
-      });
+  static Future<void> logGroupAdded({String? categoryKey}) => logEvent(
+    'group_added',
+    parameters: {
+      if (categoryKey != null)
+        'category_key': PresetCatalog.categoryKeys.contains(categoryKey)
+            ? categoryKey
+            : 'custom',
+    },
+  );
 
   static Future<void> logCategoryAdded() => logEvent('category_added');
 
@@ -67,8 +75,22 @@ class AnalyticsService {
 
   static Future<void> logFullTourStarted() => logEvent('full_tour_started');
 
-  static Future<void> logUpgradeViewed({String? source}) =>
-      logEvent('upgrade_viewed', parameters: {
-        if (source != null) 'source': source,
-      });
+  /// A tutorial step was shown, so drop-off can be seen step by step.
+  static Future<void> logTutorialStep(String tutorialName, int step) =>
+      logEvent(
+        'tutorial_step',
+        parameters: {'tutorial': tutorialName, 'step': step},
+      );
+
+  /// The user closed a tutorial before the end.
+  static Future<void> logTutorialQuit(String tutorialName, int step) =>
+      logEvent(
+        'tutorial_quit',
+        parameters: {'tutorial': tutorialName, 'step': step},
+      );
+
+  static Future<void> logUpgradeViewed({String? source}) => logEvent(
+    'upgrade_viewed',
+    parameters: {if (source != null) 'source': source},
+  );
 }
