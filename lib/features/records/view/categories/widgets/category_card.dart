@@ -1,37 +1,53 @@
 import 'package:flutter/material.dart';
-import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/data/category_appearance.dart';
 import 'package:vaultara/core/data/item_lifecycle_manager.dart';
-import '../../../../../core/data/models/category_item.dart';
+import 'package:vaultara/core/data/models/category_item.dart';
+import 'package:vaultara/features/records/view/categories/widgets/category_look_sheet.dart';
+import 'package:vaultara/features/records/view/widgets/record_count_badges.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
+
+enum _CategoryAction { rename, look, delete }
 
 class CategoryCard extends StatelessWidget {
   final CategoryItem category;
-  final ColorScheme scheme;
   final bool isPinned;
   final bool isCustom;
 
   final VoidCallback onPinnedToggle;
   final VoidCallback onOpen;
+  final VoidCallback? onRename;
+  final VoidCallback? onChangeLook;
   final VoidCallback? onDelete;
 
   const CategoryCard({
     super.key,
     required this.category,
-    required this.scheme,
     required this.isPinned,
     required this.isCustom,
     required this.onPinnedToggle,
     required this.onOpen,
+    this.onRename,
+    this.onChangeLook,
     this.onDelete,
   });
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
 
-    final totalRecords =
-        ItemLifecycleManager.totalItemsForCategory(category.key);
-    final expiringSoon =
-        ItemLifecycleManager.expiringSoonForCategory(category.key);
+    final totalRecords = ItemLifecycleManager.totalItemsForCategory(
+      category.key,
+    );
+    final expiringSoon = ItemLifecycleManager.expiringSoonForCategory(
+      category.key,
+    );
+    final expired = ItemLifecycleManager.expiredForCategory(category.key);
+
+    final icon =
+        CategoryAppearance.iconFor(category.iconKey) ??
+        category.icon ??
+        Icons.folder_rounded;
 
     return Material(
       color: scheme.surface,
@@ -40,29 +56,21 @@ class CategoryCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         onTap: onOpen,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 8, 4, 12),
+          padding: const EdgeInsets.fromLTRB(12, 8, 2, 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  Icon(
-                    isCustom ? Icons.category_rounded : category.icon,
-                    color: scheme.primary,
+                  CategoryIconBadge(
+                    icon: icon,
+                    colour: CategoryAppearance.colourFor(category.colourKey),
+                    size: 34,
                   ),
                   const Spacer(),
-                  if (isCustom && onDelete != null)
-                    IconButton(
-                      tooltip: loc.delete,
-                      icon: Icon(
-                        Icons.delete_outline_rounded,
-                        size: 18,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                      onPressed: onDelete,
-                    ),
                   IconButton(
-                    tooltip: isPinned ? AppLocalizations.of(context)!.unpinCategory : AppLocalizations.of(context)!.pinCategory,
+                    tooltip: isPinned ? loc.unpinCategory : loc.pinCategory,
+                    visualDensity: VisualDensity.compact,
                     icon: Icon(
                       isPinned
                           ? Icons.push_pin_rounded
@@ -74,11 +82,44 @@ class CategoryCard extends StatelessWidget {
                     ),
                     onPressed: onPinnedToggle,
                   ),
+                  if (isCustom)
+                    PopupMenuButton<_CategoryAction>(
+                      tooltip: loc.recordMenuMore,
+                      icon: Icon(
+                        Icons.more_vert_rounded,
+                        size: 18,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                      onSelected: (action) {
+                        switch (action) {
+                          case _CategoryAction.rename:
+                            onRename?.call();
+                          case _CategoryAction.look:
+                            onChangeLook?.call();
+                          case _CategoryAction.delete:
+                            onDelete?.call();
+                        }
+                      },
+                      itemBuilder: (_) => [
+                        PopupMenuItem(
+                          value: _CategoryAction.rename,
+                          child: Text(loc.familyRename),
+                        ),
+                        PopupMenuItem(
+                          value: _CategoryAction.look,
+                          child: Text(loc.changeIcon),
+                        ),
+                        PopupMenuItem(
+                          value: _CategoryAction.delete,
+                          child: Text(loc.delete),
+                        ),
+                      ],
+                    ),
                 ],
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: 6),
               Padding(
-                padding: const EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.only(right: 10),
                 child: Text(
                   category.label,
                   maxLines: 2,
@@ -90,56 +131,32 @@ class CategoryCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 2),
-              Text(
-                loc.recordsLabel(totalRecords),
-                style: TextStyle(
-                  fontSize: 12,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-              const Spacer(),
               Row(
                 children: [
-                  if (expiringSoon > 0)
-                    _ExpiringBadge(count: expiringSoon, scheme: scheme),
-                  const Spacer(),
-                  Icon(
-                    Icons.chevron_right_rounded,
-                    size: 22,
-                    color: scheme.onSurfaceVariant,
+                  Flexible(
+                    child: Text(
+                      loc.recordsLabel(totalRecords),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
                   ),
+                  if (isCustom) ...[const SizedBox(width: 6), const YoursTag()],
                 ],
+              ),
+              const Spacer(),
+              Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: RecordCountBadges(
+                  expired: expired,
+                  expiringSoon: expiringSoon,
+                ),
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ExpiringBadge extends StatelessWidget {
-  final int count;
-  final ColorScheme scheme;
-
-  const _ExpiringBadge({required this.count, required this.scheme});
-
-  @override
-  Widget build(BuildContext context) {
-    final loc = AppLocalizations.of(context)!;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(
-        color: scheme.primary.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(
-        loc.expiringBadge(count),
-        style: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w800,
-          color: scheme.primary,
         ),
       ),
     );

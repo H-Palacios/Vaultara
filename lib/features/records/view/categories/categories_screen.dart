@@ -10,18 +10,20 @@ import 'package:vaultara/core/search/text_search.dart';
 import 'package:vaultara/core/view/widgets/search_field.dart';
 import 'package:vaultara/core/view/widgets/search_empty_state.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
+import 'package:vaultara/features/records/logic/name_validator.dart';
+import 'package:vaultara/features/records/services/icon_suggest_service.dart';
 import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
+import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/confirm_soft_delete_dialog.dart';
 import 'package:vaultara/features/billing/view/plans_screen.dart';
-import '../../data/enums/origin_filter.dart';
-import '../../data/enums/usage_sort_mode.dart';
-import '../../logic/origin_pool_builder.dart';
-import '../../logic/usage_tracker.dart';
+import '../../logic/category_order.dart';
 import '../groups/groups_screen.dart';
-import '../widgets/origin_filter_chips.dart';
 import 'widgets/add_category_sheet.dart';
 import 'widgets/category_card.dart';
+import 'widgets/category_look_sheet.dart';
+
+enum _CategoriesMenu { recentlyDeleted }
 
 class CategoriesScreen extends StatefulWidget {
   final bool isPremium;
@@ -38,15 +40,9 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
-  static const double _cardHeight = 158;
+  static const double _cardHeight = 180;
 
   final TextEditingController _searchController = TextEditingController();
-
-  late List<CategoryItem> _presetCategories;
-  bool _categoriesReady = false;
-
-  OriginFilter _filter = OriginFilter.all;
-  final UsageSortMode _sortMode = UsageSortMode.recentlyUsed;
 
   @override
   void dispose() {
@@ -54,24 +50,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     super.dispose();
   }
 
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-
-    if (!_categoriesReady) {
-      _presetCategories = PresetCatalog.buildCategorySeeds(context)
-          .map(
-            (seed) => CategoryItem(
-              key: seed.key,
-              label: seed.label,
-              icon: seed.icon,
-              groupKeys: List<String>.from(seed.groupKeys),
-            ),
-          )
-          .toList();
-
-      _categoriesReady = true;
-    }
+  List<CategoryItem> _presets(BuildContext context) {
+    return PresetCatalog.buildCategorySeeds(context)
+        .map(
+          (seed) => CategoryItem(
+            key: seed.key,
+            label: seed.label,
+            icon: seed.icon,
+            groupKeys: List<String>.from(seed.groupKeys),
+          ),
+        )
+        .toList();
   }
 
   void _openPaywall() {
@@ -80,16 +69,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) => PlansScreen(
-            isPremium: isPremium,
-            onUpgrade: () {},
-          ),
+          builder: (_, isPremium) =>
+              PlansScreen(isPremium: isPremium, onUpgrade: () {}),
         ),
       ),
     );
   }
 
-  Future<void> _openRecentlyDeletedCategories() async {
+  /// The one way into Recently deleted. It has tabs for categories, groups
+  /// and records, so the groups and records screens no longer need their own
+  /// button.
+  Future<void> _openRecentlyDeleted() async {
     final changed = await Navigator.push<bool>(
       context,
       MaterialPageRoute(
@@ -123,6 +113,59 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     if (!mounted) return;
     ActionFeedbackSnackbar.showDeleted(context, category.label);
     setState(() {});
+  }
+
+  void _renameCategory(CategoryItem category) {
+    final loc = AppLocalizations.of(context)!;
+    final presetLabels = PresetCatalog.categoriesLocalized(context);
+
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (_) => NameEntrySheet(
+        title: loc.renameCategoryTitle,
+        fieldLabel: loc.category2Label,
+        fieldHint: loc.categoryNameHint,
+        submitLabel: loc.save,
+        initialName: category.label,
+        messages: NameValidationMessages(
+          empty: loc.categoryErrorEmpty,
+          tooShort: loc.categoryErrorTooShort,
+          tooLong: loc.categoryErrorTooLong,
+          symbols: loc.categoryErrorSymbols,
+        ),
+        extraCheck: (name) =>
+            CategoryRepository.labelInUse(
+              name,
+              exceptKey: category.key,
+              presetLabels: presetLabels,
+            )
+            ? loc.nameInUse
+            : null,
+        onSubmit: (name) async {
+          await CategoryRepository.renameCategory(category.key, name);
+          if (mounted) setState(() {});
+        },
+      ),
+    );
+  }
+
+  Future<void> _changeLook(CategoryItem category) async {
+    final picked = await CategoryLookSheet.show(
+      context,
+      initial: CategoryLook(
+        icon: category.iconKey ?? IconSuggestService.guess(category.label).icon,
+        colour: category.colourKey,
+      ),
+    );
+    if (picked == null) return;
+    await CategoryRepository.updateAppearance(
+      category.key,
+      iconKey: picked.icon,
+      colourKey: picked.colour,
+    );
+    if (mounted) setState(() {});
   }
 
   int _currentCategoryCount() => widget.isPremium
@@ -176,7 +219,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   }
 
   void _openCategory(CategoryItem category) {
-    UsageTracker.recordOpen(category.key);
     widget.onCategoryOpened?.call(category.key);
 
     Navigator.push(
@@ -184,13 +226,18 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) => GroupsScreen(
-            category: category,
-            isPremium: isPremium,
-          ),
+          builder: (_, isPremium) =>
+              GroupsScreen(category: category, isPremium: isPremium),
         ),
       ),
-    );
+    ).then((_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  Future<void> _togglePin(CategoryItem category) async {
+    await CategoryRepository.togglePin(category.key);
+    if (mounted) setState(() {});
   }
 
   @override
@@ -198,24 +245,26 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    final pool = OriginPoolBuilder.build<CategoryItem>(
-      presets: _presetCategories,
-      custom: CategoryRepository.getAll(),
+    final custom = CategoryRepository.getAll();
+    final customKeys = custom.map((c) => c.key).toSet();
+    final all = <CategoryItem>[
+      ..._presets(context).where((p) => !customKeys.contains(p.key)),
+      ...custom,
+    ];
+
+    final ordered = CategoryOrder.sort<CategoryItem>(
+      all,
       keyOf: (c) => c.key,
-      filter: _filter,
+      labelOf: (c) => c.label,
+      presetOrder: PresetCatalog.categoryKeys,
+      pins: CategoryRepository.pins(),
     );
 
     final result = TextSearch.run<CategoryItem>(
-      items: pool.items,
+      items: ordered,
       query: _searchController.text,
       textOf: (c) => c.label,
-    );
-
-    final visible = List<CategoryItem>.from(result.matches);
-    UsageTracker.sortByUsage<CategoryItem>(
-      visible,
-      keyOf: (c) => c.key,
-      mode: _sortMode,
+      fuzzy: true,
     );
 
     final width = MediaQuery.of(context).size.width;
@@ -225,22 +274,49 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 0),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: IconButton(
-                tooltip: loc.recentlyDeletedTitle,
-                onPressed: _openRecentlyDeletedCategories,
-                icon: Icon(
-                  Icons.restore_from_trash_rounded,
-                  color: scheme.primary,
-                  size: 28,
+            padding: const EdgeInsets.fromLTRB(20, 12, 8, 0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    loc.navCategories,
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
                 ),
-              ),
+                PopupMenuButton<_CategoriesMenu>(
+                  tooltip: loc.recordMenuMore,
+                  icon: Icon(Icons.more_vert_rounded, color: scheme.onSurface),
+                  onSelected: (choice) {
+                    switch (choice) {
+                      case _CategoriesMenu.recentlyDeleted:
+                        _openRecentlyDeleted();
+                    }
+                  },
+                  itemBuilder: (_) => [
+                    PopupMenuItem(
+                      value: _CategoriesMenu.recentlyDeleted,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.restore_from_trash_rounded,
+                            size: 20,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                          const SizedBox(width: 12),
+                          Text(loc.recentlyDeletedTitle),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
             child: SearchField(
               controller: _searchController,
               hintText: loc.searchCategories,
@@ -258,13 +334,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 8),
-            child: OriginFilterChips(
-              filter: _filter,
-              onChanged: (f) => setState(() => _filter = f),
-            ),
-          ),
           Expanded(
             child: result.isEmpty
                 ? SingleChildScrollView(
@@ -275,26 +344,29 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ),
                   )
                 : GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 140),
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 140),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: crossAxisCount,
                       crossAxisSpacing: 12,
                       mainAxisSpacing: 12,
                       mainAxisExtent: _cardHeight,
                     ),
-                    itemCount: visible.length,
+                    itemCount: result.matches.length,
                     itemBuilder: (context, index) {
-                      final category = visible[index];
-                      final isCustom = pool.isCustomKey(category.key);
+                      final category = result.matches[index];
+                      final isCustom = customKeys.contains(category.key);
 
                       return CategoryCard(
                         category: category,
-                        scheme: scheme,
-                        isPinned: UsageTracker.isPinned(category.key),
+                        isPinned: CategoryRepository.isPinned(category.key),
                         isCustom: isCustom,
-                        onPinnedToggle: () => setState(
-                          () => UsageTracker.togglePin(category.key),
-                        ),
+                        onPinnedToggle: () => _togglePin(category),
+                        onRename: isCustom
+                            ? () => _renameCategory(category)
+                            : null,
+                        onChangeLook: isCustom
+                            ? () => _changeLook(category)
+                            : null,
                         onDelete: isCustom
                             ? () => _deleteCustomCategory(category)
                             : null,
