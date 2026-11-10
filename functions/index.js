@@ -62,6 +62,7 @@ exports.sendSummaryNow = require("./summary").sendSummaryNow;
 exports.summaryUnsubscribe = require("./summary").summaryUnsubscribe;
 exports.householdEscalationJob = require("./push").householdEscalationJob;
 exports.askVaultara = require("./assistant").askVaultara;
+exports.suggestCategoryIcon = require("./icon-suggest").suggestCategoryIcon;
 exports.staffReminderJob = require("./staff").staffReminderJob;
 exports.staffUnsubscribe = require("./staff").staffUnsubscribe;
 exports.complianceReportJob = require("./compliance").complianceReportJob;
