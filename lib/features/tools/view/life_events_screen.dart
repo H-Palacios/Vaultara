@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/user_data_watcher.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -76,6 +78,7 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
                   title: loc.lifeEventsTitle,
                   onBack: () => Navigator.of(context).pop(),
                 ),
+                const TutorialHint(id: TutorialIds.lifeEvents),
                 const SizedBox(height: 8),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 4),
