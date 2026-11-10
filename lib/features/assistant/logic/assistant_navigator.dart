@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
+import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
 
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/category_resolver.dart';
@@ -38,7 +40,9 @@ class AssistantNavigator {
 
   static void _push(BuildContext context, Widget screen) {
     unawaited(
-      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => screen)),
+      Navigator.of(
+        context,
+      ).push(MaterialPageRoute<void>(builder: (_) => screen)),
     );
   }
 
@@ -167,10 +171,18 @@ class AssistantNavigator {
           openLifeEvents(context, start: LifeEvents.fromName(action.targetId)),
         );
         return true;
+      case 'tutorial':
+        final id = action.targetId;
+        if (id == null || !TutorialIds.all.contains(id)) return false;
+        unawaited(TutorialsService.playTutorial(context, id));
+        return true;
     }
     return false;
   }
 
   static bool needsTarget(String screen) =>
-      screen == 'record' || screen == 'trip' || screen == 'life_event';
+      screen == 'record' ||
+      screen == 'trip' ||
+      screen == 'life_event' ||
+      screen == 'tutorial';
 }

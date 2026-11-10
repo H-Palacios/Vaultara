@@ -4,7 +4,14 @@ import 'dart:io';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 
-enum AssistantFailure { offline, limitReached, notPremium, busy, failed, stopped }
+enum AssistantFailure {
+  offline,
+  limitReached,
+  notPremium,
+  busy,
+  failed,
+  stopped,
+}
 
 class AssistantTurn {
   final bool fromUser;
@@ -13,9 +20,9 @@ class AssistantTurn {
   const AssistantTurn({required this.fromUser, required this.text});
 
   Map<String, String> toMap() => <String, String>{
-        'role': fromUser ? 'user' : 'assistant',
-        'text': text,
-      };
+    'role': fromUser ? 'user' : 'assistant',
+    'text': text,
+  };
 }
 
 class AssistantReply {
@@ -35,9 +42,9 @@ class AssistantReply {
   });
 
   const AssistantReply.failed(AssistantFailure this.failure)
-      : reply = '',
-        actions = const <AssistantAction>[],
-        replies = const <String>[];
+    : reply = '',
+      actions = const <AssistantAction>[],
+      replies = const <String>[];
 
   static List<String> repliesFrom(Object? raw) {
     if (raw is! List) return const <String>[];
@@ -63,16 +70,14 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 7;
+  static const int protocolVersion = 8;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
 
   static String clip(String text) {
     final trimmed = text.trim();
-    return trimmed.length > maxChars
-        ? trimmed.substring(0, maxChars)
-        : trimmed;
+    return trimmed.length > maxChars ? trimmed.substring(0, maxChars) : trimmed;
   }
 
   static Future<AssistantReply> ask(
@@ -96,7 +101,8 @@ class AssistantService {
     while (recent.isNotEmpty && !recent.first.fromUser) {
       recent.removeAt(0);
     }
-    if (recent.isEmpty) return const AssistantReply.failed(AssistantFailure.failed);
+    if (recent.isEmpty)
+      return const AssistantReply.failed(AssistantFailure.failed);
 
     try {
       final callable = _functions.httpsCallable(
@@ -112,7 +118,8 @@ class AssistantService {
         if (here != null) 'here': here,
       });
       final data = response.data;
-      if (data is! Map) return const AssistantReply.failed(AssistantFailure.failed);
+      if (data is! Map)
+        return const AssistantReply.failed(AssistantFailure.failed);
       final reply = data['reply'];
       return AssistantReply(
         reply: reply is String ? reply.trim() : '',
@@ -146,7 +153,10 @@ class AssistantService {
   }) {
     return ask(
       <AssistantTurn>[
-        AssistantTurn(fromUser: true, text: 'Create a record from this text:\n$text'),
+        AssistantTurn(
+          fromUser: true,
+          text: 'Create a record from this text:\n$text',
+        ),
       ],
       locale: locale,
       propose: true,
@@ -155,8 +165,9 @@ class AssistantService {
 
   static Future<bool> _online() async {
     try {
-      final result = await InternetAddress.lookup('firebase.google.com')
-          .timeout(const Duration(seconds: 3));
+      final result = await InternetAddress.lookup(
+        'firebase.google.com',
+      ).timeout(const Duration(seconds: 3));
       return result.isNotEmpty && result.first.rawAddress.isNotEmpty;
     } catch (_) {
       return false;

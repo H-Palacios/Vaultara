@@ -214,6 +214,7 @@ class AssistantAction {
     'recovery_centre',
     'life_events',
     'life_event',
+    'tutorial',
   ];
 
   final AssistantActionType type;
@@ -395,15 +396,17 @@ class AssistantAction {
         continue;
       }
       if (land.isBefore(depart)) continue;
-      out.add(TripFlight(
-        from: from,
-        to: to,
-        departDate: depart,
-        departTime: time(item['departTime']),
-        landDate: land,
-        landTime: time(item['landTime']),
-        toCountry: country(item['toCountry']),
-      ));
+      out.add(
+        TripFlight(
+          from: from,
+          to: to,
+          departDate: depart,
+          departTime: time(item['departTime']),
+          landDate: land,
+          landTime: time(item['landTime']),
+          toCountry: country(item['toCountry']),
+        ),
+      );
       if (out.length >= SavedTrip.maxFlights) break;
     }
     out.sort(TripFlight.compare);
@@ -549,15 +552,15 @@ class AssistantAction {
       person: text(raw['person'], 40),
       name: personId == me ? null : text(raw['name'], 40),
       nationality: country(raw['nationality']),
-      hasNationality: raw.containsKey('nationality') &&
+      hasNationality:
+          raw.containsKey('nationality') &&
           (raw['nationality'] == null || country(raw['nationality']) != null),
       residence: country(raw['residence']),
-      hasResidence: raw.containsKey('residence') &&
+      hasResidence:
+          raw.containsKey('residence') &&
           (raw['residence'] == null || country(raw['residence']) != null),
     );
-    if (action.name == null &&
-        !action.hasNationality &&
-        !action.hasResidence) {
+    if (action.name == null && !action.hasNationality && !action.hasResidence) {
       return null;
     }
     return action;
@@ -602,7 +605,9 @@ class AssistantAction {
 
   static String? time(Object? value) {
     if (value is! String) return null;
-    final match = RegExp(r'^([01]\d|2[0-3]):([0-5]\d)$').firstMatch(value.trim());
+    final match = RegExp(
+      r'^([01]\d|2[0-3]):([0-5]\d)$',
+    ).firstMatch(value.trim());
     return match == null ? null : '${match.group(1)}:${match.group(2)}';
   }
 
@@ -648,12 +653,12 @@ class AssistantAction {
   }
 
   RecordPrefill toPrefill() => RecordPrefill(
-        name: name,
-        categoryKey: categoryKey,
-        groupKey: groupKey,
-        groupText: group,
-        expiryDate: expiryDate,
-        holderId: personId,
-        notes: notes,
-      );
+    name: name,
+    categoryKey: categoryKey,
+    groupKey: groupKey,
+    groupText: group,
+    expiryDate: expiryDate,
+    holderId: personId,
+    notes: notes,
+  );
 }
