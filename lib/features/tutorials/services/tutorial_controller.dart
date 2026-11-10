@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
+import 'package:vaultara/core/analytics/analytics_service.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_overlay.dart';
 
 class TutorialController extends ChangeNotifier {
@@ -61,8 +63,22 @@ class TutorialController extends ChangeNotifier {
     _currentStep = step;
     _isPremium = isPremium;
     _activeGroup = group ?? TutorialStepGroups.stepsFor(step);
+    _logStep();
     _show();
     notifyListeners();
+  }
+
+  /// Records which step is showing, so drop-off can be seen per step.
+  void _logStep() {
+    final step = _currentStep;
+    if (step == null) return;
+    final id = TutorialStepGroups.tutorialIdFor(step);
+    if (id == null) return;
+    final index = _activeGroup.indexOf(step);
+    AnalyticsService.logTutorialStep(
+      id,
+      index < 0 ? 0 : index + 1,
+    ).catchError((_) {});
   }
 
   void beginFullTour() {
@@ -87,7 +103,9 @@ class TutorialController extends ChangeNotifier {
       _terminate();
       return;
     }
+    TutorialVoice.stop();
     _currentStep = _activeGroup[index + 1];
+    _logStep();
     _show();
     notifyListeners();
   }
@@ -101,6 +119,15 @@ class TutorialController extends ChangeNotifier {
   }
 
   void cancel() {
+    final step = _currentStep;
+    final id = step == null ? null : TutorialStepGroups.tutorialIdFor(step);
+    if (step != null && id != null) {
+      final index = _activeGroup.indexOf(step);
+      AnalyticsService.logTutorialQuit(
+        id,
+        index < 0 ? 0 : index + 1,
+      ).catchError((_) {});
+    }
     _cancelling = true;
     try {
       finishTour();
@@ -123,6 +150,7 @@ class TutorialController extends ChangeNotifier {
       final String? id = TutorialStepGroups.tutorialIdFor(step);
       if (id != null) TutorialProgress.markCompleted(id);
     }
+    TutorialVoice.stop();
     _overlayEntry?.remove();
     _overlayEntry = null;
     _currentStep = null;
@@ -146,8 +174,9 @@ class TutorialController extends ChangeNotifier {
     if (rect.top <= 0 && rect.left <= 0) return null;
 
     final BuildContext? root = _rootContext;
-    final Size? screen =
-        (root != null && root.mounted) ? MediaQuery.maybeSizeOf(root) : null;
+    final Size? screen = (root != null && root.mounted)
+        ? MediaQuery.maybeSizeOf(root)
+        : null;
     if (screen != null && !rect.overlaps(Offset.zero & screen)) return null;
 
     return rect;
