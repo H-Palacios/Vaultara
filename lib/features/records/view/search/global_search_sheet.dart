@@ -3,6 +3,9 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 
 import 'package:vaultara/core/data/category_resolver.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
+import 'package:vaultara/features/records/view/kept_in_text.dart';
+import 'package:vaultara/features/records/view/widgets/person_filter_chips.dart';
 import 'package:vaultara/core/search/text_search.dart';
 import 'package:vaultara/core/view/widgets/search_field.dart';
 import 'package:vaultara/core/view/widgets/search_empty_state.dart';
@@ -17,6 +20,7 @@ import '../records/records_screen.dart';
 import 'package:vaultara/features/household/view/household_records_screen.dart';
 import 'widgets/record_filter_bar.dart';
 import 'widgets/search_result_card.dart';
+
 class GlobalSearchSheet extends StatefulWidget {
   final bool isPremium;
   final RecordFilterMode initialFilter;
@@ -61,6 +65,9 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
   final TextEditingController _searchController = TextEditingController();
   late RecordFilterMode _mode;
 
+  /// Null for everyone, PersonFilterChips.me, or a person's id.
+  String? _person;
+
   @override
   void initState() {
     super.initState();
@@ -79,10 +86,7 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
       if (record.isShared) {
         final navigator = Navigator.of(context);
         navigator.pop();
-        openHouseholdRecords(
-          navigator.context,
-          focusRecordId: record.id,
-        );
+        openHouseholdRecords(navigator.context, focusRecordId: record.id);
       }
       return;
     }
@@ -99,7 +103,6 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
           groupKey: record.subcategoryName,
           isPremium: widget.isPremium,
           focusRecordId: record.id,
-          initialSearch: record.name,
         ),
       ),
     );
@@ -109,22 +112,40 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
 
-    // Filter first, then search: same order as categories and groups.
+    final everything = ItemLifecycleManager.getAllItemsFlat();
+
+    // Filter first, then search: same order as categories and groups. The
+    // filter keeps soonest-expiring first, and search keeps that order.
     final pool = RecordFilter.apply(
-      ItemLifecycleManager.getAllItemsFlat(),
+      everything,
       mode: _mode,
       window: widget.dateWindow,
-    );
+    ).where((r) => PersonFilterChips.matches(r, _person)).toList();
 
     final result = TextSearch.run<TrackedItem>(
       items: pool,
       query: _searchController.text,
+      fuzzy: true,
       // Category and group are searched by label, not key, so typing
-      // "Passport" matches rather than "passports".
-      textOf: (r) =>
-          '${r.name} '
-          '${CategoryResolver.categoryLabel(context, r.categoryKey, storedLabel: r.categoryLabel)} '
-          '${CategoryResolver.groupLabel(context, r.subcategoryName)}',
+      // "Passport" matches rather than "passports". Whose it is counts too.
+      // Notes and where it is kept stay hidden for locked records.
+      textOf: (r) {
+        final parts = <String>[
+          r.name,
+          CategoryResolver.categoryLabel(
+            context,
+            r.categoryKey,
+            storedLabel: r.categoryLabel,
+          ),
+          CategoryResolver.groupLabel(context, r.subcategoryName),
+          PeopleRepository.byId(r.holderId)?.name ?? '',
+          if (!r.locked) ...[
+            r.notes ?? '',
+            if (r.place != null) KeptInText.label(loc, r.place),
+          ],
+        ];
+        return parts.join(' ');
+      },
     );
 
     return SafeArea(
@@ -152,6 +173,11 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
             RecordFilterBar(
               mode: _mode,
               onChanged: (mode) => setState(() => _mode = mode),
+            ),
+            PersonFilterChips(
+              records: everything,
+              value: _person,
+              onChanged: (value) => setState(() => _person = value),
             ),
             const SizedBox(height: 12),
             Expanded(
