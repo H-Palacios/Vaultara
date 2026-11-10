@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -129,7 +131,8 @@ class _FamilyScreenState extends State<FamilyScreen> {
     );
     if (input == null || !mounted) return;
 
-    final emailChanged = showEmail &&
+    final emailChanged =
+        showEmail &&
         (input.email != person.email ||
             (input.email != null && input.reminders != person.emailReminders));
 
@@ -214,6 +217,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                   cacheExtent: TutorialController.listCacheExtent,
                   children: [
                     ScreenHeader(title: loc.familyTitle),
+                    const TutorialHint(id: TutorialIds.family),
                     const SizedBox(height: 12),
                     Text(
                       loc.familyIntro,
@@ -224,8 +228,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                       ),
                     ),
                     const SizedBox(height: 18),
-                    if (tier == PlanTier.business)
-                      const UpdatesReviewSection(),
+                    if (tier == PlanTier.business) const UpdatesReviewSection(),
                     ValueListenableBuilder<String?>(
                       valueListenable: NationalityRepository.mine,
                       builder: (context, mine, _) => _PersonRow(
@@ -359,8 +362,8 @@ class _PersonRow extends StatelessWidget {
                     nationality == null
                         ? loc.familyRecordCount(recordCount)
                         : '${loc.familyRecordCount(recordCount)}  ·  '
-                            '${Countries.flag(nationality!)} '
-                            '${Countries.name(nationality!)}',
+                              '${Countries.flag(nationality!)} '
+                              '${Countries.name(nationality!)}',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
@@ -653,11 +656,7 @@ class _PersonInput {
   final String? email;
   final bool reminders;
 
-  const _PersonInput({
-    required this.name,
-    this.email,
-    this.reminders = false,
-  });
+  const _PersonInput({required this.name, this.email, this.reminders = false});
 }
 
 Future<_PersonInput?> _showNameSheet(
@@ -725,8 +724,7 @@ class _NameSheetState extends State<_NameSheet> {
     _emailController = TextEditingController(text: widget.initialEmail ?? '');
     _emailFocus = FocusNode();
     _emailFocus.addListener(_onFocusChanged);
-    _reminders =
-        widget.initialEmail == null ? true : widget.initialReminders;
+    _reminders = widget.initialEmail == null ? true : widget.initialReminders;
     _initialSignature = _signature();
   }
 
@@ -785,9 +783,9 @@ class _NameSheetState extends State<_NameSheet> {
         return;
       }
     }
-    Navigator.of(context).pop(
-      _PersonInput(name: name, email: email, reminders: _reminders),
-    );
+    Navigator.of(
+      context,
+    ).pop(_PersonInput(name: name, email: email, reminders: _reminders));
   }
 
   @override
@@ -823,15 +821,12 @@ class _NameSheetState extends State<_NameSheet> {
             textInputAction: widget.showEmail
                 ? TextInputAction.next
                 : TextInputAction.done,
-            inputFormatters: [
-              LengthLimitingTextInputFormatter(_maxLength),
-            ],
+            inputFormatters: [LengthLimitingTextInputFormatter(_maxLength)],
             onChanged: (_) {
               if (_error != null) setState(() => _error = null);
             },
-            onSubmitted: (_) => widget.showEmail
-                ? _emailFocus.requestFocus()
-                : _submit(),
+            onSubmitted: (_) =>
+                widget.showEmail ? _emailFocus.requestFocus() : _submit(),
             decoration: AppInputDecorations.field(
               context,
               labelText: loc.familyNameLabel,
@@ -907,9 +902,9 @@ class _NameSheetState extends State<_NameSheet> {
                         activeTrackColor: scheme.primary,
                         onChanged: _hasEmail
                             ? (value) => setState(() {
-                                  _reminders = value;
-                                  _remindersTouched = true;
-                                })
+                                _reminders = value;
+                                _remindersTouched = true;
+                              })
                             : null,
                       ),
                     ),
@@ -950,10 +945,7 @@ class _NameSheetState extends State<_NameSheet> {
               const Spacer(),
               SizedBox(
                 width: 140,
-                child: FilledButton(
-                  onPressed: _submit,
-                  child: Text(loc.save),
-                ),
+                child: FilledButton(onPressed: _submit, child: Text(loc.save)),
               ),
             ],
           ),

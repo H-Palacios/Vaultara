@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
@@ -216,6 +218,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
           title: loc.lostWalletTitle,
           onBack: () => Navigator.of(context).maybePop(),
         ),
+        const TutorialHint(id: TutorialIds.lostWallet),
         const SizedBox(height: 12),
         _Hero(
           onLost: () => _start(LifeEvents.variantLost),

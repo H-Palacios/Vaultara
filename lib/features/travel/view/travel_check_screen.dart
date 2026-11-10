@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -44,10 +46,11 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
   @override
   void initState() {
     super.initState();
-    _watcher = UserDataWatcher(onChanged: () {
-      if (mounted) setState(() {});
-    })
-      ..start();
+    _watcher = UserDataWatcher(
+      onChanged: () {
+        if (mounted) setState(() {});
+      },
+    )..start();
     TutorialController.instance
       ..register(TutorialStep.travelReadiness, _readinessKey)
       ..register(TutorialStep.travelLocked, _lockedKey)
@@ -111,9 +114,11 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
     if (!RecordRepository.isLoaded) return;
     final short = <String?>[
       for (final r in TravelCheck.forTrip(RecordRepository.allActive(), trip))
-        if (r.findings.any((f) =>
-            f.kind == TravelFindingKind.passportExpiresDuringTrip ||
-            f.kind == TravelFindingKind.passportTooShort))
+        if (r.findings.any(
+          (f) =>
+              f.kind == TravelFindingKind.passportExpiresDuringTrip ||
+              f.kind == TravelFindingKind.passportTooShort,
+        ))
           r.holderId,
     ];
     if (short.isEmpty) return;
@@ -154,6 +159,7 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
                 children: [
                   ScreenHeader(title: loc.travelTitle),
+                  const TutorialHint(id: TutorialIds.travel),
                   const SizedBox(height: 16),
                   TravelReadinessCard(key: _readinessKey),
                   const SizedBox(height: 16),
@@ -171,8 +177,9 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
                   valueListenable: TripRepository.trips,
                   builder: (context, trips, _) {
                     final today = Dates.only(DateTime.now());
-                    final upcoming =
-                        trips.where((t) => !t.isPast(today)).toList();
+                    final upcoming = trips
+                        .where((t) => !t.isPast(today))
+                        .toList();
                     final past = trips.where((t) => t.isPast(today)).toList()
                       ..sort((a, b) => b.departure.compareTo(a.departure));
 
@@ -183,6 +190,7 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
                       cacheExtent: TutorialController.listCacheExtent,
                       children: [
                         ScreenHeader(title: loc.travelTitle),
+                        const TutorialHint(id: TutorialIds.travel),
                         const SizedBox(height: 16),
                         TravelReadinessCard(
                           key: _readinessKey,
@@ -334,11 +342,7 @@ class _TripCard extends StatelessWidget {
   final SavedTrip trip;
   final VoidCallback onTap;
 
-  const _TripCard({
-    super.key,
-    required this.trip,
-    required this.onTap,
-  });
+  const _TripCard({super.key, required this.trip, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -417,8 +421,8 @@ class _TripCard extends StatelessWidget {
                       issues == 0
                           ? loc.travelAllGood
                           : (problems > 0
-                              ? loc.travelFixBeforeYouGo(problems)
-                              : loc.travelIssues(issues)),
+                                ? loc.travelFixBeforeYouGo(problems)
+                                : loc.travelIssues(issues)),
                       style: TextStyle(
                         fontSize: 12.5,
                         fontWeight: FontWeight.w700,
