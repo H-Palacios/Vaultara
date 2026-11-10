@@ -182,10 +182,15 @@ service cloud.firestore {
     function validLifePlan() {
       let d = request.resource.data;
       return d.keys().hasOnly(['event', 'date', 'people', 'country', 'createdAt',
-                               'finishedAt', 'statuses', 'start', 'skipped', 'updatedAt'])
+                               'finishedAt', 'statuses', 'start', 'skipped', 'updatedAt',
+                               'variant', 'tasksDone', 'custom'])
         && d.event in ['moving', 'homeBuy', 'homeSell', 'nameChange', 'marriage',
                        'divorce', 'baby', 'car', 'job', 'studies', 'retiring',
-                       'country', 'childAdult', 'bereavement']
+                       'country', 'childAdult', 'bereavement', 'lostPhone',
+                       'jobLoss', 'disaster', 'caringParent']
+        && (!('variant' in d) || d.variant in ['buy', 'sell', 'start', 'leave'])
+        && (!('tasksDone' in d) || (d.tasksDone is list && d.tasksDone.size() <= 60))
+        && (!('custom' in d) || (d.custom is list && d.custom.size() <= 20))
         && (!('date' in d) || d.date == null || d.date is timestamp)
         && d.people is list && d.people.size() > 0 && d.people.size() <= 26
         && (!('country' in d) || (d.country is string && d.country.matches('^[A-Z]{2}$')))
@@ -538,7 +543,7 @@ service cloud.firestore {
       match /lifePlans/{planId} {
         allow read: if isOwner(uid);
         allow delete: if isOwner(uid);
-        allow create, update: if isOwner(uid) && smallDoc(12) && validLifePlan();
+        allow create, update: if isOwner(uid) && smallDoc(13) && validLifePlan();
       }
 
       match /items/{itemId} {
