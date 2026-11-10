@@ -52,7 +52,11 @@ class ImportRunner {
       if (label == null || categoryKey == null) continue;
       if (!createdGroups.add('$categoryKey|$label')) continue;
       try {
-        await GroupRepository.addGroup(categoryKey: categoryKey, name: label);
+        await GroupRepository.addGroup(
+          categoryKey: categoryKey,
+          name: label,
+          key: row.groupKey,
+        );
       } catch (error, stack) {
         ErrorReporter.record(error, stack, 'import_group');
       }
