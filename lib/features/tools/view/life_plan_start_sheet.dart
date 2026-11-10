@@ -22,6 +22,7 @@ Future<void> startLifePlan(
   DateTime? date,
   String? country,
   List<String>? people,
+  String? variant,
 }) async {
   for (final plan in LifePlanRepository.active) {
     if (plan.event == event) {
@@ -49,6 +50,7 @@ Future<void> startLifePlan(
       date: date,
       country: country,
       people: people,
+      variant: variant,
     ),
   );
   if (draft == null || !context.mounted) return;
@@ -81,16 +83,21 @@ Future<void> editLifePlan(BuildContext context, LifePlan plan) async {
       date: plan.date,
       country: plan.country,
       people: plan.people,
+      variant: plan.variant,
     ),
   );
   if (edited == null) return;
-  // Records of someone just added to the plan start as they are now.
+  // Records that only now belong to the plan, because someone was added or
+  // the answer changed from bought to sold, start as they are now.
+  final records = RecordRepository.allActive();
+  final before = <String>{
+    for (final record in LifePlanItems.matching(plan, records)) record.id!,
+  };
   final start = Map<String, int>.of(edited.start);
-  for (final record
-      in LifePlanItems.matching(edited, RecordRepository.allActive())) {
+  for (final record in LifePlanItems.matching(edited, records)) {
     final id = record.id!;
     if (start.length >= LifePlan.maxItems) break;
-    if (!plan.includes(record)) start[id] = LifePlan.fingerprint(record);
+    if (!before.contains(id)) start[id] = LifePlan.fingerprint(record);
   }
   final ok = await LifePlanRepository.save(edited.copyWith(start: start));
   if (!ok && context.mounted) {
@@ -108,6 +115,7 @@ class _LifePlanStartSheet extends StatefulWidget {
   final DateTime? date;
   final String? country;
   final List<String>? people;
+  final String? variant;
 
   const _LifePlanStartSheet({
     required this.event,
@@ -115,6 +123,7 @@ class _LifePlanStartSheet extends StatefulWidget {
     required this.date,
     required this.country,
     required this.people,
+    this.variant,
   });
 
   @override
@@ -124,13 +133,22 @@ class _LifePlanStartSheet extends StatefulWidget {
 class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
   DateTime? _date;
   String? _country;
+  String? _variant;
   late List<String> _people;
 
   @override
   void initState() {
     super.initState();
     _date = widget.date;
+    // Something that already happened usually happened today.
+    if (_date == null &&
+        widget.plan == null &&
+        LifeEvents.alreadyHappened(widget.event)) {
+      final now = DateTime.now();
+      _date = DateTime(now.year, now.month, now.day);
+    }
     _country = widget.country;
+    _variant = LifeEvents.cleanVariant(widget.event, widget.variant);
     final given = widget.people;
     if (given != null && given.isNotEmpty) {
       _people = List<String>.of(given);
@@ -185,8 +203,15 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
     if (picked != null && mounted) setState(() => _country = picked);
   }
 
+  /// New plans for a car or a job need the answer. Plans saved before the
+  /// question existed can still be edited without one.
+  bool get _needsVariant =>
+      widget.plan == null &&
+      LifeEvents.hasVariants(widget.event) &&
+      _variant == null;
+
   void _submit() {
-    if (_people.isEmpty) return;
+    if (_people.isEmpty || _needsVariant) return;
     final current = widget.plan;
     final date = _date == null
         ? null
@@ -199,6 +224,7 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
             people: _people,
             country: LifeEvents.asksCountry(widget.event) ? _country : null,
             createdAt: DateTime.now(),
+            variant: _variant,
           )
         : current.copyWith(
             date: date,
@@ -206,21 +232,23 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
             people: _people,
             country: _country,
             clearCountry: _country == null,
+            variant: _variant,
+            clearVariant: _variant == null,
           );
     Navigator.of(context).pop(plan);
   }
 
   Widget _label(String text, ColorScheme scheme) => Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 13,
-            fontWeight: FontWeight.w700,
-            color: scheme.onSurfaceVariant,
-          ),
-        ),
-      );
+    padding: const EdgeInsets.only(bottom: 8),
+    child: Text(
+      text,
+      style: TextStyle(
+        fontSize: 13,
+        fontWeight: FontWeight.w700,
+        color: scheme.onSurfaceVariant,
+      ),
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -260,7 +288,7 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      LifeEvents.title(loc, widget.event),
+                      LifeEvents.title(loc, widget.event, _variant),
                       style: const TextStyle(
                         fontSize: 19,
                         fontWeight: FontWeight.w800,
@@ -272,15 +300,34 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
               ),
               const SizedBox(height: 10),
               Text(
-                LifeEvents.body(loc, widget.event),
+                LifeEvents.body(loc, widget.event, _variant),
                 style: TextStyle(
                   fontSize: 13.5,
                   height: 1.4,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
+              if (LifeEvents.hasVariants(widget.event)) ...[
+                const SizedBox(height: 20),
+                _label(LifeEvents.variantQuestion(loc, widget.event), scheme),
+                SegmentedButton<String>(
+                  emptySelectionAllowed: true,
+                  showSelectedIcon: false,
+                  segments: <ButtonSegment<String>>[
+                    for (final option in LifeEvents.variants[widget.event]!)
+                      ButtonSegment<String>(
+                        value: option,
+                        label: Text(LifeEvents.variantLabel(loc, option)),
+                      ),
+                  ],
+                  selected: <String>{if (_variant != null) _variant!},
+                  onSelectionChanged: (value) => setState(
+                    () => _variant = value.isEmpty ? _variant : value.first,
+                  ),
+                ),
+              ],
               const SizedBox(height: 20),
-              _label(loc.lifePlanWhen, scheme),
+              _label(LifePlanText.whenQuestion(loc, widget.event), scheme),
               Wrap(
                 spacing: 8,
                 runSpacing: 8,
@@ -355,11 +402,7 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                   runSpacing: 8,
                   children: [
                     if (!LifeEvents.aboutSomeoneElse(widget.event))
-                      _personChip(
-                        LifePlan.meKey,
-                        loc.familyMe,
-                        scheme.primary,
-                      ),
+                      _personChip(LifePlan.meKey, loc.familyMe, scheme.primary),
                     for (final person in people)
                       _personChip(
                         person.id,
@@ -370,7 +413,7 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                 ),
               const SizedBox(height: 24),
               FilledButton.icon(
-                onPressed: _people.isEmpty ? null : _submit,
+                onPressed: _people.isEmpty || _needsVariant ? null : _submit,
                 style: FilledButton.styleFrom(
                   minimumSize: const Size.fromHeight(50),
                   shape: RoundedRectangleBorder(
@@ -378,7 +421,9 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                   ),
                 ),
                 icon: Icon(
-                  editing ? Icons.check_rounded : Icons.playlist_add_check_rounded,
+                  editing
+                      ? Icons.check_rounded
+                      : Icons.playlist_add_check_rounded,
                 ),
                 label: Text(editing ? loc.save : loc.lifePlanStartTitle),
               ),
