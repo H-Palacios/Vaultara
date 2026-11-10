@@ -13,6 +13,17 @@ class NameEntrySheet extends StatefulWidget {
   final void Function(String formattedName) onSubmit;
   final NameEntryLimit? limit;
 
+  /// The current name, when renaming.
+  final String? initialName;
+
+  /// Shown under the field, rebuilt as the name changes. Used for the icon
+  /// preview when making a category.
+  final Widget Function(BuildContext context, String name)? accessory;
+
+  /// Extra check after the usual name rules, such as a name already in use.
+  /// Returns the message to show, or null when the name is fine.
+  final String? Function(String formattedName)? extraCheck;
+
   const NameEntrySheet({
     super.key,
     required this.title,
@@ -22,6 +33,9 @@ class NameEntrySheet extends StatefulWidget {
     required this.messages,
     required this.onSubmit,
     this.limit,
+    this.initialName,
+    this.accessory,
+    this.extraCheck,
   });
 
   @override
@@ -37,13 +51,17 @@ class _NameEntrySheetState extends State<NameEntrySheet> {
   @override
   void initState() {
     super.initState();
-    _controller = TextEditingController();
+    _controller = TextEditingController(text: widget.initialName ?? '');
     _focusNode = FocusNode();
 
     _focusNode.addListener(() => setState(() {}));
 
     _controller.addListener(() {
-      if (_errorText != null) setState(() => _errorText = null);
+      if (_errorText != null) {
+        setState(() => _errorText = null);
+      } else if (widget.accessory != null) {
+        setState(() {});
+      }
     });
   }
 
@@ -65,7 +83,14 @@ class _NameEntrySheetState extends State<NameEntrySheet> {
       return;
     }
 
-    widget.onSubmit(normaliseTitleCase(raw));
+    final formatted = normaliseTitleCase(raw);
+    final extra = widget.extraCheck?.call(formatted);
+    if (extra != null) {
+      setState(() => _errorText = extra);
+      return;
+    }
+
+    widget.onSubmit(formatted);
     Navigator.pop(context);
   }
 
@@ -115,6 +140,10 @@ class _NameEntrySheetState extends State<NameEntrySheet> {
                         errorText: _errorText,
                       ),
                     ),
+                    if (widget.accessory != null) ...[
+                      const SizedBox(height: 12),
+                      widget.accessory!(context, _controller.text),
+                    ],
                     const SizedBox(height: 16),
                     Row(
                       children: [

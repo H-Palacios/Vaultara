@@ -12,6 +12,13 @@ String normaliseTitleCase(String input) {
     if (RegExp(r'^[A-Z0-9]+$').hasMatch(word) && RegExp(r'\d').hasMatch(word)) {
       return word;
     }
+    // Short abbreviations typed in capitals stay as typed: COC, SARS, IDP.
+    if (word.length >= 2 &&
+        word.length <= 5 &&
+        word == word.toUpperCase() &&
+        word != word.toLowerCase()) {
+      return word;
+    }
 
     String lower = word.toLowerCase();
 

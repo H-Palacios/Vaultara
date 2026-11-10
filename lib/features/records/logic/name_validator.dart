@@ -1,4 +1,5 @@
 import 'package:vaultara/core/util/input_validator.dart';
+
 class NameValidator {
   const NameValidator._();
 
@@ -15,8 +16,10 @@ class NameValidator {
     if (value.isEmpty) return messages.empty;
     if (value.length < minLength) return messages.tooShort;
     if (value.length > maxLength) return messages.tooLong;
-    if (InputValidator.containsSymbols(value)) return messages.symbols;
-    if (InputValidator.containsNumber(value)) return messages.numbers;
+    if (InputValidator.containsSymbols(value) ||
+        !InputValidator.hasLetterOrNumber(value)) {
+      return messages.symbols;
+    }
 
     return null;
   }
@@ -28,13 +31,11 @@ class NameValidationMessages {
   final String tooShort;
   final String tooLong;
   final String symbols;
-  final String numbers;
 
   const NameValidationMessages({
     required this.empty,
     required this.tooShort,
     required this.tooLong,
     required this.symbols,
-    required this.numbers,
   });
 }
