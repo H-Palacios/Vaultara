@@ -72,6 +72,8 @@ class TravelActions {
           repeatMonths: draft.repeatMonths,
           locked: draft.locked,
           inWallet: draft.inWallet,
+          keptIn: draft.keptIn,
+          lostLine: draft.lostLine,
           leadDays: draft.leadDays,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
         );
@@ -135,32 +137,38 @@ class TravelActions {
     final actions = <TravelTileAction>[];
 
     if (finding.isMissing && group != null) {
-      actions.add(TravelTileAction(
-        label: loc.travelActionAdd,
-        icon: Icons.add_rounded,
-        primary: true,
-        onPressed: () => addRecord(
-          context,
-          group: group,
-          holderId: holderId,
-          isPremium: isPremium,
+      actions.add(
+        TravelTileAction(
+          label: loc.travelActionAdd,
+          icon: Icons.add_rounded,
+          primary: true,
+          onPressed: () => addRecord(
+            context,
+            group: group,
+            holderId: holderId,
+            isPremium: isPremium,
+          ),
         ),
-      ));
+      );
     } else if (record != null) {
-      actions.add(TravelTileAction(
-        label: loc.travelActionUpdateDate,
-        icon: Icons.event_repeat_rounded,
-        primary: true,
-        onPressed: () => updateRecord(context, record),
-      ));
+      actions.add(
+        TravelTileAction(
+          label: loc.travelActionUpdateDate,
+          icon: Icons.event_repeat_rounded,
+          primary: true,
+          onPressed: () => updateRecord(context, record),
+        ),
+      );
     }
 
     if (record != null && group != null && hasGuide(group)) {
-      actions.add(TravelTileAction(
-        label: loc.guideTitle,
-        icon: Icons.menu_book_rounded,
-        onPressed: () => openGuide(context, group: group, record: record),
-      ));
+      actions.add(
+        TravelTileAction(
+          label: loc.guideTitle,
+          icon: Icons.menu_book_rounded,
+          onPressed: () => openGuide(context, group: group, record: record),
+        ),
+      );
     }
     return actions;
   }

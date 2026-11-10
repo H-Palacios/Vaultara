@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:vaultara/core/data/models/renewal_entry.dart';
 import 'package:vaultara/core/data/models/record_attachment.dart';
+import 'package:vaultara/core/data/models/kept_in.dart';
 
 class TrackedItem {
   String? id;
@@ -21,6 +22,13 @@ class TrackedItem {
   final int? repeatMonths;
   final bool locked;
   final bool inWallet;
+
+  /// Where the user keeps it, one of [KeptIn.values]. Older records only
+  /// have [inWallet]; use [place] to read either.
+  final String? keptIn;
+
+  /// The phone number to call to block it if it is lost, for cards.
+  final String? lostLine;
   final int? leadDays;
 
   final bool isDeleted;
@@ -30,6 +38,9 @@ class TrackedItem {
   final String? createdBy;
 
   bool get isShared => householdId != null;
+
+  /// Where it is kept, reading the older wallet switch too.
+  String? get place => keptIn ?? (inWallet ? KeptIn.wallet : null);
 
   TrackedItem({
     this.id,
@@ -50,12 +61,15 @@ class TrackedItem {
     this.repeatMonths,
     this.locked = false,
     this.inWallet = false,
+    String? keptIn,
+    String? lostLine,
     this.leadDays,
     this.isDeleted = false,
     this.deletedAt,
     this.householdId,
     this.createdBy,
-  });
+  }) : keptIn = KeptIn.clean(keptIn),
+       lostLine = KeptIn.cleanLine(lostLine);
 
   TrackedItem copyWith({
     String? id,
@@ -81,6 +95,10 @@ class TrackedItem {
     bool clearRepeat = false,
     bool? locked,
     bool? inWallet,
+    String? keptIn,
+    bool clearKeptIn = false,
+    String? lostLine,
+    bool clearLostLine = false,
     int? leadDays,
     bool clearLeadDays = false,
     bool? isDeleted,
@@ -89,6 +107,16 @@ class TrackedItem {
     bool clearHousehold = false,
     String? createdBy,
   }) {
+    // The place and the older wallet switch stay in step: a new place sets
+    // the switch, and turning the switch on or off moves the place.
+    var nextPlace = clearKeptIn ? null : (keptIn ?? this.keptIn);
+    var nextWallet = inWallet ?? this.inWallet;
+    if (keptIn != null || clearKeptIn) {
+      nextWallet = nextPlace == KeptIn.wallet;
+    } else if (inWallet != null) {
+      if (inWallet && nextPlace != KeptIn.wallet) nextPlace = KeptIn.wallet;
+      if (!inWallet && nextPlace == KeptIn.wallet) nextPlace = null;
+    }
     return TrackedItem(
       id: id ?? this.id,
       name: name ?? this.name,
@@ -109,12 +137,13 @@ class TrackedItem {
       attachments: attachments ?? this.attachments,
       repeatMonths: clearRepeat ? null : (repeatMonths ?? this.repeatMonths),
       locked: locked ?? this.locked,
-      inWallet: inWallet ?? this.inWallet,
+      inWallet: nextWallet,
+      keptIn: nextPlace,
+      lostLine: clearLostLine ? null : (lostLine ?? this.lostLine),
       leadDays: clearLeadDays ? null : (leadDays ?? this.leadDays),
       isDeleted: isDeleted ?? this.isDeleted,
       deletedAt: deletedAt ?? this.deletedAt,
-      householdId:
-          clearHousehold ? null : (householdId ?? this.householdId),
+      householdId: clearHousehold ? null : (householdId ?? this.householdId),
       createdBy: clearHousehold ? null : (createdBy ?? this.createdBy),
     );
   }
@@ -129,8 +158,9 @@ class TrackedItem {
       'notes': notes,
       'reminderBaseId': reminderBaseId,
       'reminderOffsetDays': reminderOffsetDays,
-      'lastRenewedAt':
-          lastRenewedAt != null ? Timestamp.fromDate(lastRenewedAt!) : null,
+      'lastRenewedAt': lastRenewedAt != null
+          ? Timestamp.fromDate(lastRenewedAt!)
+          : null,
       'renewals': renewals.map((e) => e.toMap()).toList(),
       'holderId': holderId,
       'renewalCost': renewalCost,
@@ -139,6 +169,8 @@ class TrackedItem {
       'repeatMonths': repeatMonths,
       'locked': locked,
       'inWallet': inWallet,
+      'keptIn': keptIn,
+      'lostLine': lostLine,
       'leadDays': leadDays,
       'isDeleted': isDeleted,
       'deletedAt': deletedAt != null ? Timestamp.fromDate(deletedAt!) : null,
@@ -226,6 +258,8 @@ class TrackedItem {
       repeatMonths: _readRepeat(map['repeatMonths']),
       locked: map['locked'] == true,
       inWallet: map['inWallet'] == true,
+      keptIn: map['keptIn'] is String ? map['keptIn'] as String : null,
+      lostLine: map['lostLine'] is String ? map['lostLine'] as String : null,
       leadDays: _readLeadDays(map['leadDays']),
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,

@@ -146,6 +146,8 @@ class _RecordsScreenState extends State<RecordsScreen> {
           repeatMonths: draft.repeatMonths,
           locked: draft.locked,
           inWallet: draft.inWallet,
+          keptIn: draft.keptIn,
+          lostLine: draft.lostLine,
           leadDays: draft.leadDays,
           isDeleted: false,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
@@ -254,8 +256,10 @@ class _RecordsScreenState extends State<RecordsScreen> {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return Center(child: Text(loc.notLoggedIn));
 
-    final edgePad =
-        (MediaQuery.of(context).size.width * 0.05).clamp(16.0, 40.0);
+    final edgePad = (MediaQuery.of(context).size.width * 0.05).clamp(
+      16.0,
+      40.0,
+    );
     const maxContentWidth = 720.0;
 
     return Scaffold(
@@ -281,186 +285,229 @@ class _RecordsScreenState extends State<RecordsScreen> {
                 valueListenable: HouseholdRepository.revision,
                 builder: (context, _, __) =>
                     StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-                stream: _stream ??= ErrorReporter.watch(
-                  FirebaseFirestore.instance
-                      .collection('users/${user.uid}/records')
-                      .where('categoryKey', isEqualTo: widget.category.key)
-                      .where('subcategoryName', isEqualTo: widget.groupKey)
-                      .snapshots(),
-                  'records_stream',
-                ),
-                builder: (context, snapshot) {
-                  if (snapshot.hasError && !snapshot.hasData) {
-                    return LoadErrorView(
-                      onRetry: () => setState(() => _stream = null),
-                    );
-                  }
-                  if (!snapshot.hasData) {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-
-                  final byId = <String, TrackedItem>{};
-                  for (final d in snapshot.data!.docs) {
-                    final record = TrackedItem.fromMap(d.id, d.data());
-                    if (record.isDeleted != true) byId[d.id] = record;
-                  }
-                  for (final record in RecordRepository.sharedIn(
-                    widget.category.key,
-                    widget.groupKey,
-                  )) {
-                    final id = record.id;
-                    if (id != null) byId[id] = record;
-                  }
-                  var records = byId.values.toList();
-
-                  if (widget.focusRecordId != null) {
-                    records = records
-                        .where((r) => r.id == widget.focusRecordId)
-                        .toList();
-                  }
-
-                  // Soonest-expiring first. Expired dates sort to the top,
-                  // which is where they belong: this is an expiry tracker, so
-                  // the thing that has already lapsed is the most urgent.
-                  records.sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
-
-                  final result = TextSearch.run<TrackedItem>(
-                    items: records,
-                    query: _searchController.text,
-                    textOf: (r) =>
-                        r.locked ? r.name : '${r.name} ${r.notes ?? ''}',
-                  );
-
-                  return Column(
-                    children: [
-                      Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: edgePad),
-                          child: ConstrainedBox(
-                            constraints: const BoxConstraints(
-                                maxWidth: maxContentWidth),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(0, 12, 0, 4),
-                                  child: SearchField(
-                                    controller: _searchController,
-                                    hintText: loc.searchRecords,
-                                    onChanged: () => setState(() {}),
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(0, 8, 0, 4),
-                                  child: Align(
-                                    alignment: Alignment.centerRight,
-                                    child: FilledButton.icon(
-                                      onPressed: _openAddRecordSheet,
-                                      icon: const Icon(Icons.add_rounded,
-                                          size: 16),
-                                      label: Text(loc.addRecord),
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(height: 6),
-                              ],
-                            ),
-                          ),
-                        ),
+                      stream: _stream ??= ErrorReporter.watch(
+                        FirebaseFirestore.instance
+                            .collection('users/${user.uid}/records')
+                            .where(
+                              'categoryKey',
+                              isEqualTo: widget.category.key,
+                            )
+                            .where(
+                              'subcategoryName',
+                              isEqualTo: widget.groupKey,
+                            )
+                            .snapshots(),
+                        'records_stream',
                       ),
-                      Expanded(
-                        child: Center(
-                          child: Padding(
-                            padding:
-                                EdgeInsets.symmetric(horizontal: edgePad),
-                            child: ConstrainedBox(
-                              constraints: const BoxConstraints(
-                                  maxWidth: maxContentWidth),
-                              child: result.isEmpty
-                                  ? SearchEmptyState(
-                                      reason: result.emptyReason,
-                                      noMatchesText:
-                                          loc.recordsNoMatch(result.query),
-                                      emptyText: loc.noRecordsYet,
-                                    )
-                                  : ListView.builder(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 16, 0, 16),
-                                      itemCount: result.matches.length,
-                                      itemBuilder: (_, index) {
-                                        final record = result.matches[index];
-                                        final notes =
-                                            record.notes?.trim() ?? '';
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError && !snapshot.hasData) {
+                          return LoadErrorView(
+                            onRetry: () => setState(() => _stream = null),
+                          );
+                        }
+                        if (!snapshot.hasData) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
 
-                                        return RecordCard(
-                                          record: record,
-                                          status:
-                                              RecordStatus.of(record, loc),
-                                          onEdit: () => RecordLock.guard(
-                                                context,
-                                                record,
-                                                () => _openEditRecordSheet(
+                        final byId = <String, TrackedItem>{};
+                        for (final d in snapshot.data!.docs) {
+                          final record = TrackedItem.fromMap(d.id, d.data());
+                          if (record.isDeleted != true) byId[d.id] = record;
+                        }
+                        for (final record in RecordRepository.sharedIn(
+                          widget.category.key,
+                          widget.groupKey,
+                        )) {
+                          final id = record.id;
+                          if (id != null) byId[id] = record;
+                        }
+                        var records = byId.values.toList();
+
+                        if (widget.focusRecordId != null) {
+                          records = records
+                              .where((r) => r.id == widget.focusRecordId)
+                              .toList();
+                        }
+
+                        // Soonest-expiring first. Expired dates sort to the top,
+                        // which is where they belong: this is an expiry tracker, so
+                        // the thing that has already lapsed is the most urgent.
+                        records.sort(
+                          (a, b) => a.expiryDate.compareTo(b.expiryDate),
+                        );
+
+                        final result = TextSearch.run<TrackedItem>(
+                          items: records,
+                          query: _searchController.text,
+                          textOf: (r) =>
+                              r.locked ? r.name : '${r.name} ${r.notes ?? ''}',
+                        );
+
+                        return Column(
+                          children: [
+                            Center(
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: edgePad,
+                                ),
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    maxWidth: maxContentWidth,
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          0,
+                                          12,
+                                          0,
+                                          4,
+                                        ),
+                                        child: SearchField(
+                                          controller: _searchController,
+                                          hintText: loc.searchRecords,
+                                          onChanged: () => setState(() {}),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          0,
+                                          8,
+                                          0,
+                                          4,
+                                        ),
+                                        child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: FilledButton.icon(
+                                            onPressed: _openAddRecordSheet,
+                                            icon: const Icon(
+                                              Icons.add_rounded,
+                                              size: 16,
+                                            ),
+                                            label: Text(loc.addRecord),
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(height: 6),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Center(
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: edgePad,
+                                  ),
+                                  child: ConstrainedBox(
+                                    constraints: const BoxConstraints(
+                                      maxWidth: maxContentWidth,
+                                    ),
+                                    child: result.isEmpty
+                                        ? SearchEmptyState(
+                                            reason: result.emptyReason,
+                                            noMatchesText: loc.recordsNoMatch(
+                                              result.query,
+                                            ),
+                                            emptyText: loc.noRecordsYet,
+                                          )
+                                        : ListView.builder(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              0,
+                                              16,
+                                              0,
+                                              16,
+                                            ),
+                                            itemCount: result.matches.length,
+                                            itemBuilder: (_, index) {
+                                              final record =
+                                                  result.matches[index];
+                                              final notes =
+                                                  record.notes?.trim() ?? '';
+
+                                              return RecordCard(
+                                                record: record,
+                                                status: RecordStatus.of(
                                                   record,
+                                                  loc,
                                                 ),
-                                              ),
-                                          onRenew: () => RecordLock.guard(
-                                                context,
-                                                record,
-                                                () => _renewRecord(record),
-                                              ),
-                                          onDelete: () => RecordLock.guard(
-                                                context,
-                                                record,
-                                                () => _deleteRecord(record),
-                                              ),
-                                          onViewNotes: notes.isEmpty
-                                              ? null
-                                              : () => RecordLock.guard(
-                                                    context,
+                                                onEdit: () => RecordLock.guard(
+                                                  context,
+                                                  record,
+                                                  () => _openEditRecordSheet(
                                                     record,
-                                                    () => RecordNotesDialog.show(
+                                                  ),
+                                                ),
+                                                onRenew: () => RecordLock.guard(
+                                                  context,
+                                                  record,
+                                                  () => _renewRecord(record),
+                                                ),
+                                                onDelete: () =>
+                                                    RecordLock.guard(
                                                       context,
-                                                      title: record.name,
-                                                      notes: notes,
+                                                      record,
+                                                      () =>
+                                                          _deleteRecord(record),
                                                     ),
-                                                  ),
-                                          onHowToRenew: () =>
-                                              _openRenewalGuide(record),
-                                          onShare: record.locked ||
-                                                  record.isShared
-                                              ? null
-                                              : () => ShareLinkService.share(
-                                                    context,
-                                                    record,
-                                                    isPremium:
-                                                        widget.isPremium,
-                                                  ),
-                                          onAddToCalendar: () =>
-                                              CalendarExport.addOne(
-                                                context,
-                                                record,
-                                              ),
-                                          onRequestUpdate:
-                                              RequestUpdateAction.staffFor(
+                                                onViewNotes: notes.isEmpty
+                                                    ? null
+                                                    : () => RecordLock.guard(
+                                                        context,
                                                         record,
-                                                      ) ==
-                                                      null
-                                                  ? null
-                                                  : () => RequestUpdateAction
-                                                      .run(context, record),
-                                        );
-                                      },
-                                    ),
+                                                        () =>
+                                                            RecordNotesDialog.show(
+                                                              context,
+                                                              title:
+                                                                  record.name,
+                                                              notes: notes,
+                                                            ),
+                                                      ),
+                                                onHowToRenew: () =>
+                                                    _openRenewalGuide(record),
+                                                onShare:
+                                                    record.locked ||
+                                                        record.isShared
+                                                    ? null
+                                                    : () =>
+                                                          ShareLinkService.share(
+                                                            context,
+                                                            record,
+                                                            isPremium: widget
+                                                                .isPremium,
+                                                          ),
+                                                onAddToCalendar: () =>
+                                                    CalendarExport.addOne(
+                                                      context,
+                                                      record,
+                                                    ),
+                                                onRequestUpdate:
+                                                    RequestUpdateAction.staffFor(
+                                                          record,
+                                                        ) ==
+                                                        null
+                                                    ? null
+                                                    : () =>
+                                                          RequestUpdateAction.run(
+                                                            context,
+                                                            record,
+                                                          ),
+                                              );
+                                            },
+                                          ),
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  );
-                },
-              ),
+                          ],
+                        );
+                      },
+                    ),
               ),
             ),
           ],

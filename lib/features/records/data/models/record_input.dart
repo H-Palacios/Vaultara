@@ -18,6 +18,12 @@ class RecordInput {
   final int? repeatMonths;
   final bool locked;
   final bool inWallet;
+
+  /// Where it is kept, one of KeptIn.values.
+  final String? keptIn;
+
+  /// The phone number for blocking it if it is lost.
+  final String? lostLine;
   final int? leadDays;
   final bool shared;
 
@@ -39,6 +45,8 @@ class RecordInput {
     this.repeatMonths,
     this.locked = false,
     this.inWallet = false,
+    this.keptIn,
+    this.lostLine,
     this.leadDays,
     this.shared = false,
   });
