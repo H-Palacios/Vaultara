@@ -71,14 +71,7 @@ class TutorialStepGroups {
     TutorialStep.familyRecordPerson,
   ];
 
-  static const List<TutorialStep> plans = [
-    TutorialStep.plansTabs,
-    TutorialStep.plansBilling,
-  ];
-
-  static const Set<TutorialStep> centred = {
-    TutorialStep.familyRecordPerson,
-  };
+  static const Set<TutorialStep> centred = {TutorialStep.familyRecordPerson};
 
   static const Set<TutorialStep> blockTouches = {
     TutorialStep.travelReadiness,
@@ -94,8 +87,6 @@ class TutorialStepGroups {
     TutorialStep.familyMe,
     TutorialStep.familyAddPerson,
     TutorialStep.familyRecordPerson,
-    TutorialStep.plansTabs,
-    TutorialStep.plansBilling,
   };
 
   static const Set<TutorialStep> travelDetailSteps = {
@@ -112,7 +103,6 @@ class TutorialStepGroups {
     if (travelFree.contains(step)) return travelFree;
     if (smartTools.contains(step)) return smartTools;
     if (family.contains(step)) return family;
-    if (plans.contains(step)) return plans;
     return const [];
   }
 
@@ -127,7 +117,6 @@ class TutorialStepGroups {
     }
     if (smartTools.contains(step)) return TutorialIds.smartTools;
     if (family.contains(step)) return TutorialIds.family;
-    if (plans.contains(step)) return TutorialIds.plans;
     return null;
   }
 }

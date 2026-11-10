@@ -16,8 +16,6 @@ import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/billing/data/trial_period.dart';
-import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
-import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'billing_history_screen.dart';
 import 'widgets/company_name_tile.dart';
 import 'widgets/plan_tile.dart';
@@ -62,15 +60,9 @@ class _PlansScreenState extends State<PlansScreen> {
   bool _tabSettled = false;
   bool _yearlySelected = true;
 
-  final GlobalKey _tabsKey = GlobalKey();
-  final GlobalKey _billingKey = GlobalKey();
-
   @override
   void initState() {
     super.initState();
-    TutorialController.instance
-      ..register(TutorialStep.plansTabs, _tabsKey)
-      ..register(TutorialStep.plansBilling, _billingKey);
     _isPremium = widget.isPremium;
     final initial = widget.initialTier;
     if (initial != null && _tabs.contains(initial)) {
@@ -103,9 +95,6 @@ class _PlansScreenState extends State<PlansScreen> {
 
   @override
   void dispose() {
-    TutorialController.instance
-      ..unregister(TutorialStep.plansTabs, _tabsKey)
-      ..unregister(TutorialStep.plansBilling, _billingKey);
     _planSub?.cancel();
     _uiSub?.cancel();
     super.dispose();
@@ -122,10 +111,7 @@ class _PlansScreenState extends State<PlansScreen> {
     if (_buying || !_planKnown) return;
     setState(() => _buying = true);
     try {
-      await _service.buySubscription(
-        product,
-        alreadyPaid: _plan.paysInStore,
-      );
+      await _service.buySubscription(product, alreadyPaid: _plan.paysInStore);
     } catch (_) {
       if (mounted) {
         ActionFeedbackSnackbar.showPurchaseProblem(
@@ -340,7 +326,8 @@ class _PlansScreenState extends State<PlansScreen> {
 
     final onThisTier = _plan.tier == tier;
     final currentId = _plan.productId;
-    final isCurrent = paid &&
+    final isCurrent =
+        paid &&
         onThisTier &&
         (currentId == null || product == null || currentId == product.id);
     final otherPeriod = paid && onThisTier && !isCurrent;
@@ -357,8 +344,8 @@ class _PlansScreenState extends State<PlansScreen> {
     final String? badge = isCurrent
         ? loc.planBadgeCurrent
         : (!_plan.tier.isPaid && tier == PlanTier.premium
-            ? loc.planBadgePopular
-            : null);
+              ? loc.planBadgePopular
+              : null);
 
     final buttonStyle = FilledButton.styleFrom(
       padding: const EdgeInsets.symmetric(vertical: 15),
@@ -366,9 +353,8 @@ class _PlansScreenState extends State<PlansScreen> {
       textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
     );
 
-    VoidCallback? buyAction() => (loading || product == null)
-        ? null
-        : () => _buy(product);
+    VoidCallback? buyAction() =>
+        (loading || product == null) ? null : () => _buy(product);
 
     final Widget footer;
     if (isCurrent) {
@@ -403,8 +389,8 @@ class _PlansScreenState extends State<PlansScreen> {
               loading
                   ? loc.plansLoading
                   : (trial == null || trialForNewOnly)
-                      ? _buyLabel(loc, tier)
-                      : _trialButton(loc, trial),
+                  ? _buyLabel(loc, tier)
+                  : _trialButton(loc, trial),
             ),
           ),
           const SizedBox(height: 8),
@@ -475,30 +461,23 @@ class _PlansScreenState extends State<PlansScreen> {
                 ),
               ],
               const SizedBox(height: 18),
-              KeyedSubtree(
-                key: _tabsKey,
-                child: _PlanTabs(
-                  tabs: _tabs,
-                  selected: _tab,
-                  current: _plan.tier,
-                  labelFor: (t) => _tabLabel(loc, t),
-                  iconFor: _tabIcon,
-                  onChanged: (t) => setState(() {
-                    _tab = t;
-                    _tabSettled = true;
-                  }),
-                ),
+              _PlanTabs(
+                tabs: _tabs,
+                selected: _tab,
+                current: _plan.tier,
+                labelFor: (t) => _tabLabel(loc, t),
+                iconFor: _tabIcon,
+                onChanged: (t) => setState(() {
+                  _tab = t;
+                  _tabSettled = true;
+                }),
               ),
               const SizedBox(height: 12),
-              KeyedSubtree(
-                key: _billingKey,
-                child: _BillingToggle(
-                  yearlySelected: _yearlySelected,
-                  monthlyLabel: loc.planBillingMonthly,
-                  yearlyLabel: loc.planBillingYearly,
-                  onChanged: (yearly) =>
-                      setState(() => _yearlySelected = yearly),
-                ),
+              _BillingToggle(
+                yearlySelected: _yearlySelected,
+                monthlyLabel: loc.planBillingMonthly,
+                yearlyLabel: loc.planBillingYearly,
+                onChanged: (yearly) => setState(() => _yearlySelected = yearly),
               ),
               const SizedBox(height: 16),
               AnimatedSwitcher(
@@ -563,10 +542,7 @@ class _PlansScreenState extends State<PlansScreen> {
               Text(
                 loc.plansTaxIncluded,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: scheme.onSurfaceVariant,
-                ),
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
               ),
               const SizedBox(height: 10),
               if (paid)
@@ -972,7 +948,9 @@ class _BillingToggle extends StatelessWidget {
               style: TextStyle(
                 fontSize: 13.5,
                 fontWeight: FontWeight.w700,
-                color: selected ? scheme.onSecondaryContainer : scheme.onSurface,
+                color: selected
+                    ? scheme.onSecondaryContainer
+                    : scheme.onSurface,
               ),
             ),
           ),

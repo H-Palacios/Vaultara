@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
 
 export 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 
@@ -40,30 +41,37 @@ class TutorialOverlay extends StatelessWidget {
 
     final bool isFabStep = step == TutorialStep.addRecordFab;
     final bool isSaveStep = step == TutorialStep.addRecordSave;
-    final bool isSetReminderFieldStep =
-        step == TutorialStep.setReminderField;
-    final bool isApplyStep = step == TutorialStep.reminderApplyFree ||
+    final bool isSetReminderFieldStep = step == TutorialStep.setReminderField;
+    final bool isApplyStep =
+        step == TutorialStep.reminderApplyFree ||
         step == TutorialStep.reminderApplyPremium;
 
     final bool isReminderTourStep =
         isFullTour && step == TutorialStep.addRecordReminder;
 
-    final bool forcedBelow = step == TutorialStep.insightsSmartCard ||
+    final bool forcedBelow =
+        step == TutorialStep.insightsSmartCard ||
         step == TutorialStep.insightsSpeaker ||
         step == TutorialStep.addRecordScan;
 
-    final bool showNext = !isFabStep &&
+    final bool showNext =
+        !isFabStep &&
         !isSaveStep &&
         !isSetReminderFieldStep &&
         !isApplyStep &&
         !isReminderTourStep;
 
-    final List<TutorialStep> group =
-        steps.isNotEmpty ? steps : TutorialStepGroups.stepsFor(step);
+    final List<TutorialStep> group = steps.isNotEmpty
+        ? steps
+        : TutorialStepGroups.stepsFor(step);
     final bool isLastStep = group.isNotEmpty && group.last == step;
 
-    final Rect screenRect =
-        Rect.fromLTWH(0, 0, screenSize.width, screenSize.height);
+    final Rect screenRect = Rect.fromLTWH(
+      0,
+      0,
+      screenSize.width,
+      screenSize.height,
+    );
 
     final Path overlayPath = Path()..addRect(screenRect);
     Rect? tapHole;
@@ -91,19 +99,29 @@ class TutorialOverlay extends StatelessWidget {
       overlayPath.fillType = PathFillType.evenOdd;
     }
 
+    final String message = _messageForStep(loc, step, isPremium, isFullTour);
     final Widget messageAndButtons = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          _messageForStep(loc, step, isPremium, isFullTour),
-          textAlign: TextAlign.center,
-          style: _textStyle,
-        ),
+        Text(message, textAlign: TextAlign.center, style: _textStyle),
         const SizedBox(height: _spacingTextToButtons),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
+            ValueListenableBuilder<bool>(
+              valueListenable: TutorialVoice.speaking,
+              builder: (context, speaking, _) => IconButton(
+                tooltip: loc.lifePlanReadAloud,
+                onPressed: () => TutorialVoice.toggle(context, message),
+                icon: Icon(
+                  speaking ? Icons.stop_rounded : Icons.volume_up_rounded,
+                  color: Colors.white70,
+                  size: 22,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
             TextButton(
               onPressed: onCancel,
               child: Text(
@@ -251,11 +269,11 @@ class TutorialOverlay extends StatelessWidget {
       case TutorialStep.addRecordExpiry:
         return loc.tutorialAddRecordExpiry;
       case TutorialStep.addRecordMoreDetails:
-        return loc.tutorialAddRecordMoreDetails;
+        return loc.tutorialAddRecordMoreDetails2;
       case TutorialStep.addRecordRepeat:
         return loc.tutorialAddRecordRepeat;
       case TutorialStep.addRecordProtect:
-        return loc.tutorialAddRecordProtect;
+        return loc.tutorialAddRecordProtect2;
       case TutorialStep.addRecordReminder:
         return isFullTour
             ? loc.tutorialAddRecordReminderTour
@@ -299,9 +317,9 @@ class TutorialOverlay extends StatelessWidget {
       case TutorialStep.travelTripChecklist:
         return loc.tutorialTravelTripChecklist;
       case TutorialStep.smartLostWallet:
-        return loc.tutorialSmartLostWallet;
+        return loc.tutorialSmartLostWallet2;
       case TutorialStep.smartLifeEvents:
-        return loc.tutorialSmartLifeEvents;
+        return loc.tutorialSmartLifeEvents2;
       case TutorialStep.smartProofPack:
         return loc.tutorialSmartProofPack;
       case TutorialStep.smartSharedLinks:
@@ -314,10 +332,6 @@ class TutorialOverlay extends StatelessWidget {
             : loc.tutorialFamilyAddPersonLocked;
       case TutorialStep.familyRecordPerson:
         return loc.tutorialFamilyRecordPerson;
-      case TutorialStep.plansTabs:
-        return loc.tutorialPlansTabs;
-      case TutorialStep.plansBilling:
-        return loc.tutorialPlansBilling;
     }
   }
 }
@@ -342,25 +356,14 @@ class _FieldPositioned extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (placeBelow) {
-      final double topAnchor =
-          highlightRect.bottom + _spacingTextToHighlight;
-      return Positioned(
-        top: topAnchor,
-        left: 24,
-        right: 24,
-        child: child,
-      );
+      final double topAnchor = highlightRect.bottom + _spacingTextToHighlight;
+      return Positioned(top: topAnchor, left: 24, right: 24, child: child);
     }
 
     final double bottomAnchor =
         screenSize.height - highlightRect.top + _spacingTextToHighlight;
 
-    return Positioned(
-      bottom: bottomAnchor,
-      left: 24,
-      right: 24,
-      child: child,
-    );
+    return Positioned(bottom: bottomAnchor, left: 24, right: 24, child: child);
   }
 }
 
@@ -381,15 +384,9 @@ class _FabPositioned extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double bottomAnchor =
-        screenSize.height - highlightRect.top + 40.0;
+    final double bottomAnchor = screenSize.height - highlightRect.top + 40.0;
 
-    return Positioned(
-      bottom: bottomAnchor,
-      left: 24,
-      right: 24,
-      child: child,
-    );
+    return Positioned(bottom: bottomAnchor, left: 24, right: 24, child: child);
   }
 }
 
