@@ -343,11 +343,16 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
       rows.add(_tile(chat, scheme, loc));
     }
 
-    return RefreshIndicator(
-      onRefresh: () => _load(quiet: true),
-      child: ListView(
-        padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
-        children: rows,
+    // The list gets its own clip, so a row scrolled past the top edge is
+    // cut off there instead of showing behind the title, the New chat
+    // button or the status bar.
+    return ClipRect(
+      child: RefreshIndicator(
+        onRefresh: () => _load(quiet: true),
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+          children: rows,
+        ),
       ),
     );
   }
@@ -360,8 +365,7 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
     final current = chat.id == widget.currentChatId;
     return Dismissible(
       key: ValueKey('chat-${chat.id}'),
-      direction:
-          _working ? DismissDirection.none : DismissDirection.endToStart,
+      direction: _working ? DismissDirection.none : DismissDirection.endToStart,
       background: Container(
         alignment: AlignmentDirectional.centerEnd,
         padding: const EdgeInsetsDirectional.only(end: 20),
@@ -378,39 +382,49 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
       onDismissed: (_) => setState(() => _remove(chat.id)),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 1),
-        child: ListTile(
-          selected: current,
-          selectedTileColor: scheme.primaryContainer.withValues(alpha: 0.55),
-          selectedColor: scheme.onPrimaryContainer,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          dense: true,
-          visualDensity: const VisualDensity(vertical: -1),
-          contentPadding: const EdgeInsetsDirectional.only(start: 12),
-          title: Text(
-            chat.title,
-            style: TextStyle(
-              fontSize: 14.5,
-              height: 1.3,
-              fontWeight: current ? FontWeight.w700 : FontWeight.w500,
+        // The highlight is painted by the row's own Material. A ListTile
+        // colour is painted on the drawer's Material instead, which is not
+        // clipped by the list, so the highlight used to stay visible behind
+        // the header and the status bar while scrolling.
+        child: Material(
+          color: current
+              ? scheme.primaryContainer.withValues(alpha: 0.55)
+              : Colors.transparent,
+          borderRadius: BorderRadius.circular(12),
+          clipBehavior: Clip.antiAlias,
+          child: ListTile(
+            selected: current,
+            selectedColor: scheme.onPrimaryContainer,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
             ),
-          ),
-          onTap: _working ? null : () => _open(chat.id),
-          onLongPress: _working ? null : () => _deleteOne(chat),
-          trailing: PopupMenuButton<String>(
-            enabled: !_working,
-            icon: Icon(
-              Icons.more_horiz_rounded,
-              color: scheme.onSurfaceVariant,
-            ),
-            onSelected: (_) => _deleteOne(chat),
-            itemBuilder: (_) => [
-              PopupMenuItem<String>(
-                value: 'delete',
-                child: Text(loc.assistantHistoryDeleteChat),
+            dense: true,
+            visualDensity: const VisualDensity(vertical: -1),
+            contentPadding: const EdgeInsetsDirectional.only(start: 12),
+            title: Text(
+              chat.title,
+              style: TextStyle(
+                fontSize: 14.5,
+                height: 1.3,
+                fontWeight: current ? FontWeight.w700 : FontWeight.w500,
               ),
-            ],
+            ),
+            onTap: _working ? null : () => _open(chat.id),
+            onLongPress: _working ? null : () => _deleteOne(chat),
+            trailing: PopupMenuButton<String>(
+              enabled: !_working,
+              icon: Icon(
+                Icons.more_horiz_rounded,
+                color: scheme.onSurfaceVariant,
+              ),
+              onSelected: (_) => _deleteOne(chat),
+              itemBuilder: (_) => [
+                PopupMenuItem<String>(
+                  value: 'delete',
+                  child: Text(loc.assistantHistoryDeleteChat),
+                ),
+              ],
+            ),
           ),
         ),
       ),
