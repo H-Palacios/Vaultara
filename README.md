@@ -77,6 +77,16 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Trip form in a natural order**: where, when, who, why, flights, then an optional name.
 - **Permit tracking for study and work trips**: shows whether each traveller has the permit saved as a record, warns when it runs out before the return date, and adds it in one tap so Vaultara reminds them before it expires.
 
+### Life events
+- **Plans for big moments.** Moving, buying or selling a home, a new name, marriage, divorce, a baby, buying or selling a car, starting, leaving or losing a job, studies, retiring, moving abroad, a child turning 16 or 18, looking after a parent and a death in the family. Free on every plan.
+- **Emergencies.** A lost or stolen phone (block the SIM card and banking first) and a fire, flood or break-in at home (photos, insurer, Proof pack), next to Lost my wallet.
+- **Steps that are not records.** Each event comes with short steps that work in any country, such as registering a birth or redirecting post. Urgent ones show first, and users can add their own.
+- **Start-by dates.** Counts back from the date of the event using how long a new document usually takes, so a passport is applied for in time.
+- **Costs and progress.** Shows what renewing the plan's records usually costs. A record that changes is marked done, a deleted record counts as cancelled, and adding a note does not count.
+- **Private reminders.** 7 days before, on the day, 7 days after, a check-in after 30 days that new documents arrived, and a nudge every 14 days for plans without a date. Divorce, a death, a baby, a lost job and caring for a parent never show their name on a locked screen.
+- **Suggestions.** Saving a new car registration, lease or home cover offers the matching plan.
+- **Read aloud, PDF, calendar and Proof pack** from any plan.
+
 ### Family and household
 - **Family profiles.** Track records for a partner, children and parents. Reminders say whose document it is.
 - **Shared household.** Family and Business owners invite others with a code or link. Members sign in with their own account, see the same records and get the same reminders.
