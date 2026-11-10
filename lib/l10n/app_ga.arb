@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "Tá rudaí fós le déanamh. Oscail an plean chun iad a chríochnú.",
   "lifePlanSuggestCar": "Ar cheannaigh nó ar dhíol tú carr? Féach cad eile atá le nuashonrú.",
   "lifePlanSuggestTrip": "Ag bogadh ann ar feadh tamaill?",
-  "lifePlanSuggestTripBody": "Tosaigh plean chun bogadh go tír eile. Taispeánann Vaultara cad atá le socrú sula n-imíonn tú."
+  "lifePlanSuggestTripBody": "Tosaigh plean chun bogadh go tír eile. Taispeánann Vaultara cad atá le socrú sula n-imíonn tú.",
+  "lifeGroupHome": "Baile",
+  "lifeGroupFamily": "Teaghlach",
+  "lifeGroupWork": "Obair agus staidéar",
+  "lifeGroupCarTravel": "Carr agus taisteal",
+  "lifeGroupEmergency": "Chuaigh rud éigin mícheart",
+  "lifeEventCarBuy": "Cheannaigh mé carr",
+  "lifeEventCarBuyBody": "Faigh árachas sula dtiomáineann tú abhaile é, ansin cuir an carr i d'ainm féin.",
+  "lifeEventCarSell": "Dhíol mé carr",
+  "lifeEventCarSellBody": "Inis don oifig cheadúnaithe faoin díol agus cealaigh an t-árachas nuair nach leatsa an carr a thuilleadh.",
+  "lifeEventJobStart": "Tá post nua á thosú agam",
+  "lifeEventJobStartBody": "Seiceáil do cheadanna sula dtosaíonn tú, ansin socraigh do chárta oibre agus do shochair.",
+  "lifeEventJobLeave": "Táim ag fágáil mo phoist",
+  "lifeEventJobLeaveBody": "Tabhair earraí oibre ar ais agus seiceáil cad a tharlóidh don chlúdach a thug do phost duit.",
+  "lifeEventLostPhone": "Chaill mé mo ghuthán nó goideadh é",
+  "lifeEventLostPhoneBody": "Bí sciobtha. Is féidir le duine a bhfuil do ghuthán agus do chárta SIM aige dul isteach i do bhanc agus i do ríomhphost. Déan na chéad chéimeanna láithreach.",
+  "lifeEventJobLoss": "Chaill mé mo phost",
+  "lifeEventJobLossBody": "Tá sé seo deacair. Glac céim amháin ag an am. Tá spriocdháta ag roinnt éileamh, mar sin tosaigh leo sin.",
+  "lifeEventDisaster": "Tine, tuile nó briseadh isteach sa bhaile",
+  "lifeEventDisasterBody": "Déan cinnte ar dtús go bhfuil gach duine slán. Ansin glac grianghraif, déan teagmháil le d'árachóir agus athsholáthair a cailleadh.",
+  "lifeEventCaringParent": "Táim ag tabhairt aire do thuismitheoir",
+  "lifeEventCaringParentBody": "Roghnaigh an duine a bhfuil tú ag tabhairt aire dó. Seiceáil a gcáipéisí agus a gclúdach, agus coinnigh a bhfuil uait in aice láimhe.",
+  "lifeVariantCarQuestion": "Ar cheannaigh nó ar dhíol tú?",
+  "lifeVariantJobQuestion": "An bhfuil tú ag tosú nó ag imeacht?",
+  "lifeVariantBuy": "Ceannaithe",
+  "lifeVariantSell": "Díolta",
+  "lifeVariantStart": "Ag tosú",
+  "lifeVariantLeave": "Ag imeacht",
+  "lifeTaskRedirectPost": "Iarr go seolfar do phost chuig do sheoladh nua",
+  "lifeTaskNewAddressEveryone": "Tabhair do sheoladh nua d'fhostóir, don oifig chánach, do dhochtúir agus don scoil",
+  "lifeTaskMoveUtilities": "Dún nó aistrigh do chuntais leictreachais, uisce agus idirlín",
+  "lifeTaskMeterReadings": "Tóg léamha méadair agus grianghraif ar an lá a bhogann tú amach",
+  "lifeTaskSaveHomePapers": "Cuir grianghraf de pháipéir an díola nó an aistrithe le Vaultara",
+  "lifeTaskHandOverKeys": "Tabhair uait eochracha, cianrialtáin agus clibeanna rochtana",
+  "lifeTaskOfficialNameProof": "Faigh cruthúnas oifigiúil ar d'ainm nua ar dtús. Iarrann formhór na n-oifigí é.",
+  "lifeTaskTellNameChange": "Inis do do bhanc, d'fhostóir, do dhochtúir agus don oifig chánach faoi d'ainm nua",
+  "lifeTaskUpdateOnlineAccounts": "Athraigh d'ainm ar do ríomhphost, do ghuthán agus do chuntais ar líne",
+  "lifeTaskSaveMarriageCertificate": "Cuir grianghraf den teastas pósta le Vaultara",
+  "lifeTaskCheckBeneficiaries": "Seiceáil cé atá ainmnithe mar thairbhí ar do pholasaithe agus do chuntais",
+  "lifeTaskUpdateWill": "Déan uacht nó nuashonraigh í",
+  "lifeTaskSaveDivorceOrder": "Cuir grianghraf den ordú colscartha deiridh le Vaultara",
+  "lifeTaskSplitSharedAccounts": "Dún nó roinn cuntais chomhroinnte agus athraigh pasfhocail chomhroinnte",
+  "lifeTaskRegisterBirth": "Cláraigh an bhreith agus faigh an teastas breithe",
+  "lifeTaskAddBabyToFamily": "Cuir an leanbh le Teaghlach ionas go leanfar a gcáipéisí",
+  "lifeTaskCarRegisterInName": "Cuir an carr i d'ainm féin laistigh den am a cheadaíonn an dlí",
+  "lifeTaskCarSavePapers": "Cuir grianghraf den chomhaontú díola le Vaultara",
+  "lifeTaskCarNotifySale": "Inis don oifig cheadúnaithe gur dhíol tú an carr agus coinnigh an cruthúnas",
+  "lifeTaskCarRemoveTags": "Bain clibeanna dola, cártaí páirceála agus earraí pearsanta",
+  "lifeTaskJobGiveDetails": "Tabhair do shonraí bainc agus d'uimhir chánach d'fhostóir nua",
+  "lifeTaskJobJoinBenefits": "Glac páirt sa chlúdach leighis agus sa phinsean a thairgeann d'fhostóir",
+  "lifeTaskJobReturnItems": "Tabhair earraí oibre ar ais ar nós ríomhaire glúine, cárta nó eochracha",
+  "lifeTaskJobLastPayslip": "Iarr do dhuillín pá deiridh agus litir a dhearbhaíonn dátaí d'oibre",
+  "lifeTaskJobAskBenefits": "Fiafraigh cad a tharlóidh do do chlúdach leighis agus do phinsean",
+  "lifeTaskJobUnemployment": "Fiafraigh faoi shochair dífhostaíochta anois. Is minic spriocdháta ag éilimh.",
+  "lifeTaskJobPauseDebits": "Liostaigh do dhochair dhíreacha agus síntiúis, agus cuir ar sos a bhfuil ar do chumas",
+  "lifeTaskStudySaveLetters": "Cuir grianghraif de do litir ghlactha agus de ráitis táillí le Vaultara",
+  "lifeTaskStudyFunding": "Seiceáil na spriocdhátaí do sparánachtaí, iasachtaí nó maoiniú eile",
+  "lifeTaskRetirePension": "Fiafraigh conas agus cathain a íocfar do phinsean",
+  "lifeTaskRetireOwnCover": "Socraigh do chlúdach leighis féin má chríochnaíonn clúdach na hoibre",
+  "lifeTaskCountryTellBankTax": "Inis do do bhanc agus don oifig chánach go bhfuil tú ag imeacht",
+  "lifeTaskCountryScanCopies": "Cuir grianghraf de gach cáipéis thábhachtach le Vaultara",
+  "lifeTaskCountryLicenceRules": "Seiceáil an gcaithfidh tú do cheadúnas tiomána a mhalartú",
+  "lifeTaskChildOwnId": "Cabhraigh leo iarratas a dhéanamh ar a gcárta aitheantais féin más gá",
+  "lifeTaskChildBankAccount": "Cabhraigh leo a gcuntas bainc féin a oscailt",
+  "lifeTaskDeathCertificates": "Faigh roinnt cóipeanna deimhnithe den teastas báis",
+  "lifeTaskDeathTellOrganisations": "Inis don bhanc, do na hárachóirí agus don fhostóir",
+  "lifeTaskDeathFindWill": "Aimsigh an uacht agus déan teagmháil leis an seiceadóir",
+  "lifeTaskDeathStopReminders": "Nuair a bheidh tú réidh, múch meabhrúcháin dá dtaifid",
+  "lifeTaskPhoneBlockSim": "Glaoigh ar do líonra chun an cárta SIM a bhac. Stopann sé seo calaois malartú SIM.",
+  "lifeTaskPhoneBlockBanking": "Glaoigh ar do bhanc chun baincéireacht ar an nguthán a bhac",
+  "lifeTaskPhoneLockErase": "Cuir glas ar an nguthán nó glan é ó ghléas eile",
+  "lifeTaskPhoneChangePasswords": "Athraigh do phasfhocail ríomhphoist agus meán sóisialta",
+  "lifeTaskReportToPolice": "Tuairiscigh é do na gardaí agus coinnigh uimhir an cháis",
+  "lifeTaskDisasterSafePlace": "Déan cinnte go bhfuil gach duine slán agus go bhfuil áit acu le fanacht",
+  "lifeTaskDisasterPhotos": "Glac grianghraif den damáiste sula nglanann tú suas",
+  "lifeTaskDisasterContactInsurer": "Déan teagmháil le d'árachóir chomh luath agus is féidir",
+  "lifeTaskDisasterProofPack": "Seol cóipeanna de do cháipéisí le Paca cruthúnais",
+  "lifeTaskParentFindPapers": "Faigh amach cá gcoinnítear a bpáipéir thábhachtacha",
+  "lifeTaskParentPermission": "Fiafraigh an féidir leat labhairt thar a gceann lena mbanc, a ndochtúir agus a n-árachóir",
+  "lifeTaskParentMedicines": "Coinnigh liosta dá gcógais agus dá ndochtúirí",
+  "lifePlanDoClaim": "Déan éileamh",
+  "lifePlanStatusClaimed": "Éilithe",
+  "lifePlanStartBy": "{weeks, plural, =1{Tosaigh faoi {date}. Tógann ceann nua thart ar sheachtain de ghnáth.} other{Tosaigh faoi {date}. Tógann ceann nua thart ar {weeks} seachtain de ghnáth.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Tosaigh anois. Tógann ceann nua thart ar sheachtain de ghnáth.} other{Tosaigh anois. Tógann ceann nua thart ar {weeks} seachtain de ghnáth.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Do phlean",
+  "lifePlanWhenHappened": "Cathain a tharla sé?",
+  "lifePlanReminderNudge": "Tá rudaí le déanamh fós i do phlean. Oscail é nuair a bhíonn nóiméad agat.",
+  "lifePlanReminderCheckIn": "Ar tháinig do chártaí agus do cháipéisí nua? Oscail an plean chun seiceáil.",
+  "lifePlanDoFirst": "Déan é seo ar dtús",
+  "lifePlanSteps": "Céimeanna eile",
+  "lifePlanAddOwnStep": "Cuir do chéim féin leis",
+  "lifePlanOwnStepHint": "Mar shampla: Inis don scoil",
+  "lifePlanOwnStepLimit": "Is féidir leat suas le 20 de do chéimeanna féin a chur leis.",
+  "lifePlanReadAloud": "Léigh os ard",
+  "lifePlanStopReading": "Stop ag léamh",
+  "lifePlanReadAloudUnavailable": "Níl léamh os ard ar fáil ar an nguthán seo.",
+  "lifePlanProofPack": "Déan paca cruthúnais",
+  "lifePlanOpenFamily": "Oscail Teaghlach",
+  "lifePlanRemoved": "{count, plural, =1{Áirítear 1 taifead a scrios tú mar cealaithe.} other{Áirítear {count} taifead a scrios tú mar cealaithe.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Cosnaíonn sé thart ar {amount} de ghnáth iad seo a athnuachan.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ag bogadh go teach nua? Féach cad eile atá le nuashonrú."
 }

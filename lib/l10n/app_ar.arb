@@ -2187,5 +2187,136 @@
   "lifePlanReminderAfter": "ما زالت هناك أمور متبقية. افتح الخطة لإنهائها.",
   "lifePlanSuggestCar": "اشتريت سيارة أو بعتها؟ اطّلع على ما يجب تحديثه أيضًا.",
   "lifePlanSuggestTrip": "هل تنتقل إلى هناك لفترة؟",
-  "lifePlanSuggestTripBody": "ابدأ خطة للانتقال إلى بلد آخر. يوضح Vaultara ما يجب ترتيبه قبل السفر."
+  "lifePlanSuggestTripBody": "ابدأ خطة للانتقال إلى بلد آخر. يوضح Vaultara ما يجب ترتيبه قبل السفر.",
+  "lifeGroupHome": "المنزل",
+  "lifeGroupFamily": "العائلة",
+  "lifeGroupWork": "العمل والدراسة",
+  "lifeGroupCarTravel": "السيارة والسفر",
+  "lifeGroupEmergency": "حدث خطأ ما",
+  "lifeEventCarBuy": "اشتريت سيارة",
+  "lifeEventCarBuyBody": "احصل على تأمين قبل أن تقودها إلى المنزل، ثم سجّل السيارة باسمك.",
+  "lifeEventCarSell": "بعت سيارة",
+  "lifeEventCarSellBody": "أبلغ مكتب الترخيص بالبيع وألغِ التأمين عندما لا تعود السيارة ملكك.",
+  "lifeEventJobStart": "سأبدأ وظيفة جديدة",
+  "lifeEventJobStartBody": "تحقق من تصاريحك قبل أن تبدأ، ثم جهّز بطاقة العمل والمزايا.",
+  "lifeEventJobLeave": "سأترك وظيفتي",
+  "lifeEventJobLeaveBody": "أعد أغراض العمل وتحقق مما سيحدث للتغطية التي منحتك إياها وظيفتك.",
+  "lifeEventLostPhone": "فقدت هاتفي أو سُرق",
+  "lifeEventLostPhoneBody": "تصرّف بسرعة. من يملك هاتفك وشريحة SIM يمكنه الدخول إلى حسابك البنكي وبريدك. نفّذ الخطوات الأولى فورًا.",
+  "lifeEventJobLoss": "فقدت وظيفتي",
+  "lifeEventJobLossBody": "هذا صعب. خذ الأمور خطوة بخطوة. لبعض المطالبات موعد نهائي، فابدأ بها.",
+  "lifeEventDisaster": "حريق أو فيضان أو اقتحام في المنزل",
+  "lifeEventDisasterBody": "تأكد أولًا من أن الجميع بأمان. ثم التقط الصور وتواصل مع شركة التأمين واستبدل ما فُقد.",
+  "lifeEventCaringParent": "أرعى أحد والديّ",
+  "lifeEventCaringParentBody": "اختر الشخص الذي ترعاه. تحقق من مستنداته وتغطيته، واحتفظ بما تحتاجه في متناول يدك.",
+  "lifeVariantCarQuestion": "هل اشتريت أم بعت؟",
+  "lifeVariantJobQuestion": "هل ستبدأ أم ستغادر؟",
+  "lifeVariantBuy": "اشتريت",
+  "lifeVariantSell": "بعت",
+  "lifeVariantStart": "سأبدأ",
+  "lifeVariantLeave": "سأغادر",
+  "lifeTaskRedirectPost": "اطلب إرسال بريدك إلى عنوانك الجديد",
+  "lifeTaskNewAddressEveryone": "أعطِ عنوانك الجديد لصاحب العمل ومكتب الضرائب والطبيب والمدرسة",
+  "lifeTaskMoveUtilities": "أغلق أو انقل حسابات الكهرباء والماء والإنترنت",
+  "lifeTaskMeterReadings": "سجّل قراءات العدادات والتقط صورًا يوم مغادرتك",
+  "lifeTaskSaveHomePapers": "أضف صورة لأوراق البيع أو نقل الملكية إلى Vaultara",
+  "lifeTaskHandOverKeys": "سلّم المفاتيح وأجهزة التحكم وبطاقات الدخول",
+  "lifeTaskOfficialNameProof": "احصل أولًا على إثبات رسمي لاسمك الجديد. معظم المكاتب تطلبه.",
+  "lifeTaskTellNameChange": "أبلغ البنك وصاحب العمل والطبيب ومكتب الضرائب باسمك الجديد",
+  "lifeTaskUpdateOnlineAccounts": "غيّر اسمك في البريد الإلكتروني والهاتف والحسابات الإلكترونية",
+  "lifeTaskSaveMarriageCertificate": "أضف صورة لعقد الزواج إلى Vaultara",
+  "lifeTaskCheckBeneficiaries": "تحقق من المستفيد المذكور في وثائقك وحساباتك",
+  "lifeTaskUpdateWill": "اكتب وصية أو حدّثها",
+  "lifeTaskSaveDivorceOrder": "أضف صورة لحكم الطلاق النهائي إلى Vaultara",
+  "lifeTaskSplitSharedAccounts": "أغلق الحسابات المشتركة أو قسّمها وغيّر كلمات المرور المشتركة",
+  "lifeTaskRegisterBirth": "سجّل الولادة واحصل على شهادة الميلاد",
+  "lifeTaskAddBabyToFamily": "أضف الطفل في العائلة لمتابعة مستنداته",
+  "lifeTaskCarRegisterInName": "سجّل السيارة باسمك خلال المدة التي يسمح بها القانون",
+  "lifeTaskCarSavePapers": "أضف صورة لعقد البيع إلى Vaultara",
+  "lifeTaskCarNotifySale": "أبلغ مكتب الترخيص بأنك بعت السيارة واحتفظ بالإثبات",
+  "lifeTaskCarRemoveTags": "أزل ملصقات الرسوم وبطاقات المواقف والأغراض الشخصية",
+  "lifeTaskJobGiveDetails": "أعطِ بياناتك البنكية ورقمك الضريبي لصاحب العمل الجديد",
+  "lifeTaskJobJoinBenefits": "انضم إلى التأمين الطبي والتقاعد اللذين يقدمهما صاحب العمل",
+  "lifeTaskJobReturnItems": "أعد أغراض العمل مثل الحاسوب المحمول أو البطاقة أو المفاتيح",
+  "lifeTaskJobLastPayslip": "اطلب آخر قسيمة راتب ورسالة تؤكد تواريخ عملك",
+  "lifeTaskJobAskBenefits": "اسأل عما سيحدث لتأمينك الطبي وتقاعدك",
+  "lifeTaskJobUnemployment": "اسأل عن إعانات البطالة الآن. للمطالبات غالبًا موعد نهائي.",
+  "lifeTaskJobPauseDebits": "اكتب قائمة بالخصومات المباشرة والاشتراكات، وأوقف ما تستطيع",
+  "lifeTaskStudySaveLetters": "أضف صورًا لخطاب القبول وكشوف الرسوم إلى Vaultara",
+  "lifeTaskStudyFunding": "تحقق من مواعيد المنح أو القروض أو أي تمويل آخر",
+  "lifeTaskRetirePension": "اسأل كيف ومتى سيُدفع معاشك",
+  "lifeTaskRetireOwnCover": "رتّب تأمينًا طبيًا خاصًا بك إذا انتهى تأمين العمل",
+  "lifeTaskCountryTellBankTax": "أبلغ البنك ومكتب الضرائب بأنك ستغادر",
+  "lifeTaskCountryScanCopies": "أضف صورة لكل مستند مهم إلى Vaultara",
+  "lifeTaskCountryLicenceRules": "تحقق مما إذا كان عليك استبدال رخصة القيادة",
+  "lifeTaskChildOwnId": "ساعده على التقدم لبطاقة هوية خاصة به إذا احتاجها",
+  "lifeTaskChildBankAccount": "ساعده على فتح حساب بنكي خاص به",
+  "lifeTaskDeathCertificates": "احصل على بضع نسخ مصدقة من شهادة الوفاة",
+  "lifeTaskDeathTellOrganisations": "أبلغ البنك وشركات التأمين وصاحب العمل",
+  "lifeTaskDeathFindWill": "ابحث عن الوصية وتواصل مع منفّذ الوصية",
+  "lifeTaskDeathStopReminders": "عندما تكون مستعدًا، أوقف التذكيرات لسجلاته",
+  "lifeTaskPhoneBlockSim": "اتصل بشركة الاتصالات لحظر شريحة SIM. هذا يمنع احتيال تبديل الشريحة.",
+  "lifeTaskPhoneBlockBanking": "اتصل بالبنك لحظر الخدمات المصرفية على الهاتف",
+  "lifeTaskPhoneLockErase": "اقفل الهاتف أو امسح بياناته من جهاز آخر",
+  "lifeTaskPhoneChangePasswords": "غيّر كلمات مرور البريد الإلكتروني ووسائل التواصل الاجتماعي",
+  "lifeTaskReportToPolice": "أبلغ الشرطة واحتفظ برقم القضية",
+  "lifeTaskDisasterSafePlace": "تأكد من أن الجميع بأمان ولديهم مكان للإقامة",
+  "lifeTaskDisasterPhotos": "التقط صورًا للأضرار قبل التنظيف",
+  "lifeTaskDisasterContactInsurer": "تواصل مع شركة التأمين في أقرب وقت",
+  "lifeTaskDisasterProofPack": "أرسل نسخًا من مستنداتك عبر حزمة الإثبات",
+  "lifeTaskParentFindPapers": "اعرف أين تُحفظ أوراقه المهمة",
+  "lifeTaskParentPermission": "اسأله إن كان بإمكانك التحدث نيابةً عنه مع البنك والطبيب وشركة التأمين",
+  "lifeTaskParentMedicines": "احتفظ بقائمة بأدويته وأطبائه",
+  "lifePlanDoClaim": "قدّم مطالبة",
+  "lifePlanStatusClaimed": "تمت المطالبة",
+  "lifePlanStartBy": "{weeks, plural, zero{ابدأ قبل {date}. الجديد يستغرق عادةً أقل من أسبوع.} one{ابدأ قبل {date}. الجديد يستغرق عادةً نحو أسبوع.} two{ابدأ قبل {date}. الجديد يستغرق عادةً نحو أسبوعين.} few{ابدأ قبل {date}. الجديد يستغرق عادةً نحو {weeks} أسابيع.} many{ابدأ قبل {date}. الجديد يستغرق عادةً نحو {weeks} أسبوعًا.} other{ابدأ قبل {date}. الجديد يستغرق عادةً نحو {weeks} أسبوع.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, zero{ابدأ الآن. الجديد يستغرق عادةً أقل من أسبوع.} one{ابدأ الآن. الجديد يستغرق عادةً نحو أسبوع.} two{ابدأ الآن. الجديد يستغرق عادةً نحو أسبوعين.} few{ابدأ الآن. الجديد يستغرق عادةً نحو {weeks} أسابيع.} many{ابدأ الآن. الجديد يستغرق عادةً نحو {weeks} أسبوعًا.} other{ابدأ الآن. الجديد يستغرق عادةً نحو {weeks} أسبوع.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "خطتك",
+  "lifePlanWhenHappened": "متى حدث ذلك؟",
+  "lifePlanReminderNudge": "لا تزال في خطتك أمور يجب إنجازها. افتحها عندما يتسنى لك ذلك.",
+  "lifePlanReminderCheckIn": "هل وصلت بطاقاتك ومستنداتك الجديدة؟ افتح الخطة للتحقق.",
+  "lifePlanDoFirst": "افعل هذا أولًا",
+  "lifePlanSteps": "خطوات أخرى",
+  "lifePlanAddOwnStep": "أضف خطوتك الخاصة",
+  "lifePlanOwnStepHint": "مثال: أبلغ المدرسة",
+  "lifePlanOwnStepLimit": "يمكنك إضافة ما يصل إلى 20 خطوة خاصة بك.",
+  "lifePlanReadAloud": "القراءة بصوت عالٍ",
+  "lifePlanStopReading": "إيقاف القراءة",
+  "lifePlanReadAloudUnavailable": "القراءة بصوت عالٍ غير متاحة على هذا الهاتف.",
+  "lifePlanProofPack": "أنشئ حزمة إثبات",
+  "lifePlanOpenFamily": "افتح العائلة",
+  "lifePlanRemoved": "{count, plural, zero{لا توجد سجلات محذوفة.} one{سجل واحد حذفته يُحسب ملغى.} two{سجلان حذفتهما يُحسبان ملغيين.} few{{count} سجلات حذفتها تُحسب ملغاة.} many{{count} سجلًا حذفته تُحسب ملغاة.} other{{count} سجل حذفته تُحسب ملغاة.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "تجديد هذه يكلف عادةً نحو {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "هل تنتقل إلى منزل جديد؟ اطّلع على ما يجب تحديثه أيضًا."
 }

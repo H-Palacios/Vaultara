@@ -1899,5 +1899,136 @@
   "lifePlanReminderAfter": "Hali qiladigan ishlar bor. Tugatish uchun rejani oching.",
   "lifePlanSuggestCar": "Mashina sotib oldingizmi yoki sotdingizmi? Yana nimani yangilash kerakligini ko'ring.",
   "lifePlanSuggestTrip": "U yerga bir muddatga ko'chyapsizmi?",
-  "lifePlanSuggestTripBody": "Boshqa davlatga ko'chish rejasini boshlang. Vaultara ketishdan oldin nimani hal qilish kerakligini ko'rsatadi."
+  "lifePlanSuggestTripBody": "Boshqa davlatga ko'chish rejasini boshlang. Vaultara ketishdan oldin nimani hal qilish kerakligini ko'rsatadi.",
+  "lifeGroupHome": "Uy",
+  "lifeGroupFamily": "Oila",
+  "lifeGroupWork": "Ish va o'qish",
+  "lifeGroupCarTravel": "Mashina va sayohat",
+  "lifeGroupEmergency": "Nimadir yuz berdi",
+  "lifeEventCarBuy": "Mashina sotib oldim",
+  "lifeEventCarBuyBody": "Uyga haydab ketishdan oldin sug'urta qiling, keyin mashinani o'z nomingizga rasmiylashtiring.",
+  "lifeEventCarSell": "Mashina sotdim",
+  "lifeEventCarSellBody": "Sotuv haqida ro'yxatga olish idorasiga xabar bering va mashina sizniki bo'lmay qolganda sug'urtani bekor qiling.",
+  "lifeEventJobStart": "Yangi ishni boshlayapman",
+  "lifeEventJobStartBody": "Boshlashdan oldin ruxsatnomalaringizni tekshiring, keyin ish kartasi va imtiyozlarni sozlang.",
+  "lifeEventJobLeave": "Ishdan ketyapman",
+  "lifeEventJobLeaveBody": "Ish buyumlarini qaytaring va ish bergan sug'urta nima bo'lishini tekshiring.",
+  "lifeEventLostPhone": "Telefonimni yo'qotdim yoki o'g'irlatdim",
+  "lifeEventLostPhoneBody": "Tez harakat qiling. Telefoningiz va SIM kartangiz kimda bo'lsa, u bankingiz va pochtangizga kira oladi. Birinchi qadamlarni hozir bajaring.",
+  "lifeEventJobLoss": "Ishimdan ayrildim",
+  "lifeEventJobLossBody": "Bu og'ir. Qadamma-qadam boring. Ba'zi arizalarning muddati bor, shuning uchun ulardan boshlang.",
+  "lifeEventDisaster": "Uyda yong'in, suv toshqini yoki o'g'rilik",
+  "lifeEventDisasterBody": "Avval hamma xavfsiz ekaniga ishonch hosil qiling. Keyin suratga oling, sug'urta kompaniyasiga murojaat qiling va yo'qolganini tiklang.",
+  "lifeEventCaringParent": "Ota yoki onamga g'amxo'rlik qilyapman",
+  "lifeEventCaringParentBody": "G'amxo'rlik qilayotgan odamni tanlang. Uning hujjatlari va sug'urtasini tekshiring, keraklisini yaqin tuting.",
+  "lifeVariantCarQuestion": "Sotib oldingizmi yoki sotdingizmi?",
+  "lifeVariantJobQuestion": "Boshlayapsizmi yoki ketyapsizmi?",
+  "lifeVariantBuy": "Sotib oldim",
+  "lifeVariantSell": "Sotdim",
+  "lifeVariantStart": "Boshlayapman",
+  "lifeVariantLeave": "Ketyapman",
+  "lifeTaskRedirectPost": "Pochtangizni yangi manzilga yuborishni so'rang",
+  "lifeTaskNewAddressEveryone": "Yangi manzilni ish beruvchi, soliq idorasi, shifokor va maktabga bering",
+  "lifeTaskMoveUtilities": "Elektr, suv va internet hisoblarini yoping yoki ko'chiring",
+  "lifeTaskMeterReadings": "Ko'chadigan kuningiz hisoblagich ko'rsatkichlarini yozib, suratga oling",
+  "lifeTaskSaveHomePapers": "Sotuv yoki o'tkazish hujjatlarining suratini Vaultara'ga qo'shing",
+  "lifeTaskHandOverKeys": "Kalitlar, pultlar va kirish kartalarini topshiring",
+  "lifeTaskOfficialNameProof": "Avval yangi ismingizning rasmiy tasdig'ini oling. Ko'p idoralar buni so'raydi.",
+  "lifeTaskTellNameChange": "Yangi ismingiz haqida bank, ish beruvchi, shifokor va soliq idorasiga xabar bering",
+  "lifeTaskUpdateOnlineAccounts": "Pochta, telefon va onlayn hisoblardagi ismingizni o'zgartiring",
+  "lifeTaskSaveMarriageCertificate": "Nikoh guvohnomasining suratini Vaultara'ga qo'shing",
+  "lifeTaskCheckBeneficiaries": "Polis va hisoblaringizda kim naf oluvchi ekanini tekshiring",
+  "lifeTaskUpdateWill": "Vasiyatnoma yozing yoki yangilang",
+  "lifeTaskSaveDivorceOrder": "Ajralish bo'yicha yakuniy qarorning suratini Vaultara'ga qo'shing",
+  "lifeTaskSplitSharedAccounts": "Umumiy hisoblarni yoping yoki bo'ling va umumiy parollarni o'zgartiring",
+  "lifeTaskRegisterBirth": "Tug'ilishni ro'yxatdan o'tkazing va tug'ilganlik haqida guvohnoma oling",
+  "lifeTaskAddBabyToFamily": "Hujjatlarini kuzatish uchun chaqaloqni Oilaga qo'shing",
+  "lifeTaskCarRegisterInName": "Mashinani qonun belgilagan muddatda o'z nomingizga rasmiylashtiring",
+  "lifeTaskCarSavePapers": "Oldi-sotdi shartnomasining suratini Vaultara'ga qo'shing",
+  "lifeTaskCarNotifySale": "Mashinani sotganingizni ro'yxatga olish idorasiga bildiring va tasdiqni saqlang",
+  "lifeTaskCarRemoveTags": "Pullik yo'l qurilmalari, avtoturargoh kartalari va shaxsiy buyumlarni oling",
+  "lifeTaskJobGiveDetails": "Yangi ish beruvchiga bank rekvizitlari va soliq raqamingizni bering",
+  "lifeTaskJobJoinBenefits": "Ish beruvchi taklif qilgan tibbiy sug'urta va pensiyaga qo'shiling",
+  "lifeTaskJobReturnItems": "Noutbuk, karta yoki kalit kabi ish buyumlarini qaytaring",
+  "lifeTaskJobLastPayslip": "Oxirgi ish haqi varag'i va ish muddatini tasdiqlovchi xat so'rang",
+  "lifeTaskJobAskBenefits": "Tibbiy sug'urta va pensiyangiz nima bo'lishini so'rang",
+  "lifeTaskJobUnemployment": "Ishsizlik nafaqasi haqida hozir so'rang. Arizalarning ko'pincha muddati bo'ladi.",
+  "lifeTaskJobPauseDebits": "Avtomatik to'lovlar va obunalar ro'yxatini tuzing va imkoni borini to'xtating",
+  "lifeTaskStudySaveLetters": "Qabul xati va to'lov hisobotlari suratlarini Vaultara'ga qo'shing",
+  "lifeTaskStudyFunding": "Grant, kredit yoki boshqa yordam muddatlarini tekshiring",
+  "lifeTaskRetirePension": "Pensiyangiz qanday va qachon to'lanishini so'rang",
+  "lifeTaskRetireOwnCover": "Ishdagi sug'urta tugasa, o'z tibbiy sug'urtangizni rasmiylashtiring",
+  "lifeTaskCountryTellBankTax": "Ketayotganingizni bank va soliq idorasiga bildiring",
+  "lifeTaskCountryScanCopies": "Har bir muhim hujjatning suratini Vaultara'ga qo'shing",
+  "lifeTaskCountryLicenceRules": "Haydovchilik guvohnomasini almashtirish kerakmi, tekshiring",
+  "lifeTaskChildOwnId": "Kerak bo'lsa, o'z ID kartasiga ariza berishga yordam bering",
+  "lifeTaskChildBankAccount": "O'z bank hisobini ochishga yordam bering",
+  "lifeTaskDeathCertificates": "O'lim haqidagi guvohnomaning bir nechta tasdiqlangan nusxasini oling",
+  "lifeTaskDeathTellOrganisations": "Bank, sug'urta kompaniyalari va ish beruvchiga xabar bering",
+  "lifeTaskDeathFindWill": "Vasiyatnomani toping va ijrochi bilan bog'laning",
+  "lifeTaskDeathStopReminders": "Tayyor bo'lganingizda, uning yozuvlari uchun eslatmalarni o'chiring",
+  "lifeTaskPhoneBlockSim": "SIM kartani bloklash uchun operatorga qo'ng'iroq qiling. Bu SIM almashtirish firibgarligini to'xtatadi.",
+  "lifeTaskPhoneBlockBanking": "Telefondagi bankingni bloklash uchun bankka qo'ng'iroq qiling",
+  "lifeTaskPhoneLockErase": "Telefonni boshqa qurilmadan qulflang yoki tozalang",
+  "lifeTaskPhoneChangePasswords": "Pochta va ijtimoiy tarmoq parollarini o'zgartiring",
+  "lifeTaskReportToPolice": "Politsiyaga xabar bering va ish raqamini saqlang",
+  "lifeTaskDisasterSafePlace": "Hamma xavfsiz va turadigan joyi borligiga ishonch hosil qiling",
+  "lifeTaskDisasterPhotos": "Tozalashdan oldin zararni suratga oling",
+  "lifeTaskDisasterContactInsurer": "Imkon qadar tez sug'urta kompaniyasiga murojaat qiling",
+  "lifeTaskDisasterProofPack": "Hujjatlaringiz nusxalarini Isbot toʻplami orqali yuboring",
+  "lifeTaskParentFindPapers": "Uning muhim hujjatlari qayerda saqlanishini bilib oling",
+  "lifeTaskParentPermission": "Uning nomidan bank, shifokor va sug'urta bilan gaplasha olasizmi, so'rang",
+  "lifeTaskParentMedicines": "Uning dorilari va shifokorlari ro'yxatini yuriting",
+  "lifePlanDoClaim": "Talabnoma bering",
+  "lifePlanStatusClaimed": "Talabnoma berildi",
+  "lifePlanStartBy": "{weeks, plural, one{{date} gacha boshlang. Yangisi odatda taxminan {weeks} hafta oladi.} other{{date} gacha boshlang. Yangisi odatda taxminan {weeks} hafta oladi.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Hozir boshlang. Yangisi odatda taxminan {weeks} hafta oladi.} other{Hozir boshlang. Yangisi odatda taxminan {weeks} hafta oladi.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Rejangiz",
+  "lifePlanWhenHappened": "Bu qachon bo'ldi?",
+  "lifePlanReminderNudge": "Rejangizda hali ishlar bor. Vaqtingiz bo'lganda oching.",
+  "lifePlanReminderCheckIn": "Yangi kartalar va hujjatlaringiz keldimi? Tekshirish uchun rejani oching.",
+  "lifePlanDoFirst": "Avval buni qiling",
+  "lifePlanSteps": "Boshqa qadamlar",
+  "lifePlanAddOwnStep": "O'z qadamingizni qo'shing",
+  "lifePlanOwnStepHint": "Masalan: Maktabga xabar berish",
+  "lifePlanOwnStepLimit": "20 tagacha o'z qadamingizni qo'shishingiz mumkin.",
+  "lifePlanReadAloud": "Ovoz chiqarib o'qish",
+  "lifePlanStopReading": "O'qishni to'xtatish",
+  "lifePlanReadAloudUnavailable": "Bu telefonda ovoz chiqarib o'qish mavjud emas.",
+  "lifePlanProofPack": "Isbot toʻplamini yarating",
+  "lifePlanOpenFamily": "Oilani ochish",
+  "lifePlanRemoved": "{count, plural, one{Siz o'chirgan {count} ta yozuv bekor qilingan hisoblanadi.} other{Siz o'chirgan {count} ta yozuv bekor qilingan hisoblanadi.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Bularni yangilash odatda taxminan {amount} turadi.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Yangi uyga ko'chyapsizmi? Yana nimani yangilash kerakligini ko'ring."
 }

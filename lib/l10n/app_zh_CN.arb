@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "还有一些事项未完成。打开计划完成它们。",
   "lifePlanSuggestCar": "买了或卖了车？看看还需要更新什么。",
   "lifePlanSuggestTrip": "要在那里住一段时间吗？",
-  "lifePlanSuggestTripBody": "开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。"
+  "lifePlanSuggestTripBody": "开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。",
+  "lifeGroupHome": "住房",
+  "lifeGroupFamily": "家庭",
+  "lifeGroupWork": "工作和学习",
+  "lifeGroupCarTravel": "汽车和出行",
+  "lifeGroupEmergency": "遇到问题",
+  "lifeEventCarBuy": "我买了车",
+  "lifeEventCarBuyBody": "开回家之前先上保险，然后把车过户到你名下。",
+  "lifeEventCarSell": "我卖了车",
+  "lifeEventCarSellBody": "向车管部门报备出售，车不再属于你后取消保险。",
+  "lifeEventJobStart": "我要开始新工作",
+  "lifeEventJobStartBody": "入职前检查许可证件，然后办理工作证和福利。",
+  "lifeEventJobLeave": "我要离职",
+  "lifeEventJobLeaveBody": "归还公司物品，并确认工作提供的保障会怎样。",
+  "lifeEventLostPhone": "手机丢了或被偷了",
+  "lifeEventLostPhoneBody": "尽快行动。拿到你手机和 SIM 卡的人可以进入你的银行和邮箱。马上完成第一步。",
+  "lifeEventJobLoss": "我失业了",
+  "lifeEventJobLossBody": "这很不容易。一步一步来。有些申请有截止日期，先处理这些。",
+  "lifeEventDisaster": "家中火灾、水灾或失窃",
+  "lifeEventDisasterBody": "先确认所有人都安全。然后拍照、联系保险公司，并补办丢失的东西。",
+  "lifeEventCaringParent": "我在照顾父母",
+  "lifeEventCaringParentBody": "选择你照顾的人。检查他们的证件和保险，把需要的东西放在手边。",
+  "lifeVariantCarQuestion": "你是买车还是卖车？",
+  "lifeVariantJobQuestion": "你是入职还是离职？",
+  "lifeVariantBuy": "买了",
+  "lifeVariantSell": "卖了",
+  "lifeVariantStart": "入职",
+  "lifeVariantLeave": "离职",
+  "lifeTaskRedirectPost": "申请把邮件转寄到新地址",
+  "lifeTaskNewAddressEveryone": "把新地址告诉雇主、税务局、医生和学校",
+  "lifeTaskMoveUtilities": "注销或迁移电、水和网络账户",
+  "lifeTaskMeterReadings": "搬走当天记录表数并拍照",
+  "lifeTaskSaveHomePapers": "把买卖或过户文件的照片添加到 Vaultara",
+  "lifeTaskHandOverKeys": "交还钥匙、遥控器和门禁卡",
+  "lifeTaskOfficialNameProof": "先取得新姓名的官方证明。大多数机构都会要求。",
+  "lifeTaskTellNameChange": "把新姓名告诉银行、雇主、医生和税务局",
+  "lifeTaskUpdateOnlineAccounts": "在邮箱、手机和网上账户中更改姓名",
+  "lifeTaskSaveMarriageCertificate": "把结婚证的照片添加到 Vaultara",
+  "lifeTaskCheckBeneficiaries": "查看你的保单和账户中谁是受益人",
+  "lifeTaskUpdateWill": "立下或更新遗嘱",
+  "lifeTaskSaveDivorceOrder": "把离婚判决书或离婚证的照片添加到 Vaultara",
+  "lifeTaskSplitSharedAccounts": "关闭或分开共同账户，并更改共用密码",
+  "lifeTaskRegisterBirth": "登记出生并领取出生证明",
+  "lifeTaskAddBabyToFamily": "在家庭中添加宝宝，以便跟踪证件",
+  "lifeTaskCarRegisterInName": "在法律规定的期限内把车过户到你名下",
+  "lifeTaskCarSavePapers": "把买卖合同的照片添加到 Vaultara",
+  "lifeTaskCarNotifySale": "告知车管部门你已卖车，并保留凭证",
+  "lifeTaskCarRemoveTags": "取下 ETC、停车卡和个人物品",
+  "lifeTaskJobGiveDetails": "把银行信息和税号提供给新雇主",
+  "lifeTaskJobJoinBenefits": "加入雇主提供的医疗保险和养老金",
+  "lifeTaskJobReturnItems": "归还笔记本电脑、工牌或钥匙等公司物品",
+  "lifeTaskJobLastPayslip": "索取最后一张工资单和在职时间证明",
+  "lifeTaskJobAskBenefits": "询问你的医疗保险和养老金会怎样",
+  "lifeTaskJobUnemployment": "现在就询问失业金。申请通常有截止日期。",
+  "lifeTaskJobPauseDebits": "列出自动扣款和订阅，能停的先停",
+  "lifeTaskStudySaveLetters": "把录取通知书和学费单的照片添加到 Vaultara",
+  "lifeTaskStudyFunding": "查看奖学金、助学贷款或其他资助的截止日期",
+  "lifeTaskRetirePension": "询问养老金如何以及何时发放",
+  "lifeTaskRetireOwnCover": "如果单位的保险结束，自己购买医疗保险",
+  "lifeTaskCountryTellBankTax": "告诉银行和税务局你要离开",
+  "lifeTaskCountryScanCopies": "把每份重要证件的照片添加到 Vaultara",
+  "lifeTaskCountryLicenceRules": "查看是否需要换驾照",
+  "lifeTaskChildOwnId": "如有需要，帮他们申请自己的身份证",
+  "lifeTaskChildBankAccount": "帮他们开立自己的银行账户",
+  "lifeTaskDeathCertificates": "办理几份经认证的死亡证明副本",
+  "lifeTaskDeathTellOrganisations": "通知银行、保险公司和雇主",
+  "lifeTaskDeathFindWill": "找到遗嘱并联系遗嘱执行人",
+  "lifeTaskDeathStopReminders": "准备好时，关闭其记录的提醒",
+  "lifeTaskPhoneBlockSim": "打电话给运营商挂失 SIM 卡。这能防止换卡诈骗。",
+  "lifeTaskPhoneBlockBanking": "打电话给银行冻结手机银行",
+  "lifeTaskPhoneLockErase": "用其他设备锁定或清除手机",
+  "lifeTaskPhoneChangePasswords": "更改邮箱和社交媒体密码",
+  "lifeTaskReportToPolice": "向警方报案并保留案件编号",
+  "lifeTaskDisasterSafePlace": "确认所有人都安全并有地方住",
+  "lifeTaskDisasterPhotos": "清理前先拍下损失",
+  "lifeTaskDisasterContactInsurer": "尽快联系保险公司",
+  "lifeTaskDisasterProofPack": "用证明材料包发送证件副本",
+  "lifeTaskParentFindPapers": "弄清他们的重要文件放在哪里",
+  "lifeTaskParentPermission": "问问能否代他们与银行、医生和保险公司沟通",
+  "lifeTaskParentMedicines": "记下他们的药物和医生清单",
+  "lifePlanDoClaim": "申请理赔",
+  "lifePlanStatusClaimed": "已理赔",
+  "lifePlanStartBy": "{weeks, plural, other{请在 {date} 前开始。新的通常需要约 {weeks} 周。}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{请现在开始。新的通常需要约 {weeks} 周。}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "你的计划",
+  "lifePlanWhenHappened": "是什么时候发生的？",
+  "lifePlanReminderNudge": "你的计划还有事情要做。有空时打开看看。",
+  "lifePlanReminderCheckIn": "新卡和证件到了吗？打开计划确认一下。",
+  "lifePlanDoFirst": "先做这些",
+  "lifePlanSteps": "其他步骤",
+  "lifePlanAddOwnStep": "添加自己的步骤",
+  "lifePlanOwnStepHint": "例如：通知学校",
+  "lifePlanOwnStepLimit": "最多可添加 20 个自己的步骤。",
+  "lifePlanReadAloud": "朗读",
+  "lifePlanStopReading": "停止朗读",
+  "lifePlanReadAloudUnavailable": "这部手机不支持朗读。",
+  "lifePlanProofPack": "制作证明材料包",
+  "lifePlanOpenFamily": "打开家庭",
+  "lifePlanRemoved": "{count, plural, other{你删除的 {count} 条记录计为已取消。}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "续办这些通常需要约 {amount}。",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "要搬新家吗？看看还有什么需要更新。"
 }

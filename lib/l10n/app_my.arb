@@ -1899,5 +1899,136 @@
   "lifePlanReminderAfter": "အချို့ ကျန်ရှိနေသေးသည်။ ပြီးအောင်လုပ်ရန် အစီအစဉ်ကို ဖွင့်ပါ။",
   "lifePlanSuggestCar": "ကား ဝယ် သို့မဟုတ် ရောင်းခဲ့သလား? အခြား ဘာ အပ်ဒိတ်လုပ်ရမလဲ ကြည့်ပါ။",
   "lifePlanSuggestTrip": "အချိန်အတော်ကြာ ထိုနေရာသို့ ပြောင်းမလား?",
-  "lifePlanSuggestTripBody": "အခြားနိုင်ငံသို့ ပြောင်းရွှေ့ရန် အစီအစဉ် စတင်ပါ။ မထွက်ခွာမီ ဘာစီစဉ်ရမလဲ Vaultara က ပြပေးသည်။"
+  "lifePlanSuggestTripBody": "အခြားနိုင်ငံသို့ ပြောင်းရွှေ့ရန် အစီအစဉ် စတင်ပါ။ မထွက်ခွာမီ ဘာစီစဉ်ရမလဲ Vaultara က ပြပေးသည်။",
+  "lifeGroupHome": "အိမ်",
+  "lifeGroupFamily": "မိသားစု",
+  "lifeGroupWork": "အလုပ်နှင့် ပညာရေး",
+  "lifeGroupCarTravel": "ကားနှင့် ခရီးသွား",
+  "lifeGroupEmergency": "တစ်ခုခု မှားသွားသည်",
+  "lifeEventCarBuy": "ကားဝယ်ခဲ့သည်",
+  "lifeEventCarBuyBody": "အိမ်သို့ မမောင်းမီ အာမခံထားပါ၊ ထို့နောက် ကားကို သင့်အမည်သို့ ပြောင်းပါ။",
+  "lifeEventCarSell": "ကားရောင်းခဲ့သည်",
+  "lifeEventCarSellBody": "ရောင်းချမှုကို လိုင်စင်ရုံးသို့ အကြောင်းကြားပြီး ကားသည် သင့်ပိုင်မဟုတ်တော့သည့်အခါ အာမခံကို ဖျက်ပါ။",
+  "lifeEventJobStart": "အလုပ်သစ် စတင်မည်",
+  "lifeEventJobStartBody": "မစမီ ခွင့်ပြုချက်များကို စစ်ဆေးပါ၊ ထို့နောက် အလုပ်ကတ်နှင့် အကျိုးခံစားခွင့်များကို စီစဉ်ပါ။",
+  "lifeEventJobLeave": "အလုပ်မှ ထွက်မည်",
+  "lifeEventJobLeaveBody": "အလုပ်ပစ္စည်းများကို ပြန်အပ်ပြီး အလုပ်မှပေးသော အာမခံ ဘာဖြစ်မည်ကို စစ်ဆေးပါ။",
+  "lifeEventLostPhone": "ဖုန်းပျောက်သွားသည် သို့မဟုတ် ခိုးခံရသည်",
+  "lifeEventLostPhoneBody": "မြန်မြန်လုပ်ပါ။ သင့်ဖုန်းနှင့် SIM ကတ်ရှိသူသည် သင့်ဘဏ်နှင့် အီးမေးလ်သို့ ဝင်နိုင်သည်။ ပထမအဆင့်များကို ယခုပင် လုပ်ပါ။",
+  "lifeEventJobLoss": "အလုပ်ပြုတ်သွားသည်",
+  "lifeEventJobLossBody": "ဒါက ခက်ခဲသည်။ တစ်ဆင့်ချင်း လုပ်ပါ။ တချို့လျှောက်လွှာများတွင် နောက်ဆုံးရက်ရှိသဖြင့် ၎င်းတို့မှ စပါ။",
+  "lifeEventDisaster": "အိမ်တွင် မီးလောင်၊ ရေကြီး သို့မဟုတ် ခိုးမှု",
+  "lifeEventDisasterBody": "ပထမဦးစွာ အားလုံး ဘေးကင်းကြောင်း သေချာပါစေ။ ထို့နောက် ဓာတ်ပုံရိုက်၊ အာမခံကုမ္ပဏီကို ဆက်သွယ်ပြီး ပျောက်ဆုံးသွားသည်များကို အစားထိုးပါ။",
+  "lifeEventCaringParent": "မိဘကို ပြုစုနေသည်",
+  "lifeEventCaringParentBody": "သင်ပြုစုနေသူကို ရွေးပါ။ ၎င်း၏ စာရွက်စာတမ်းနှင့် အာမခံကို စစ်ဆေးပြီး လိုအပ်သည်များကို အနီးတွင် ထားပါ။",
+  "lifeVariantCarQuestion": "ဝယ်ခဲ့သလား ရောင်းခဲ့သလား?",
+  "lifeVariantJobQuestion": "စတင်မလား ထွက်မလား?",
+  "lifeVariantBuy": "ဝယ်ခဲ့သည်",
+  "lifeVariantSell": "ရောင်းခဲ့သည်",
+  "lifeVariantStart": "စတင်မည်",
+  "lifeVariantLeave": "ထွက်မည်",
+  "lifeTaskRedirectPost": "သင့်စာများကို လိပ်စာအသစ်သို့ ပို့ရန် တောင်းဆိုပါ",
+  "lifeTaskNewAddressEveryone": "အလုပ်ရှင်၊ အခွန်ရုံး၊ ဆရာဝန်နှင့် ကျောင်းသို့ လိပ်စာအသစ် ပေးပါ",
+  "lifeTaskMoveUtilities": "လျှပ်စစ်၊ ရေနှင့် အင်တာနက် အကောင့်များကို ပိတ်ပါ သို့မဟုတ် ပြောင်းပါ",
+  "lifeTaskMeterReadings": "ပြောင်းထွက်သည့်နေ့တွင် မီတာဖတ်ချက်များ မှတ်ပြီး ဓာတ်ပုံရိုက်ပါ",
+  "lifeTaskSaveHomePapers": "ရောင်းဝယ်ရေး သို့မဟုတ် လွှဲပြောင်းရေး စာရွက်များ၏ ဓာတ်ပုံကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskHandOverKeys": "သော့များ၊ ရီမုတ်များနှင့် ဝင်ခွင့်ကတ်များကို လွှဲပေးပါ",
+  "lifeTaskOfficialNameProof": "ပထမဦးစွာ အမည်အသစ်၏ တရားဝင် အထောက်အထား ရယူပါ။ ရုံးအများစုက တောင်းသည်။",
+  "lifeTaskTellNameChange": "ဘဏ်၊ အလုပ်ရှင်၊ ဆရာဝန်နှင့် အခွန်ရုံးကို အမည်အသစ်အကြောင်း ပြောပါ",
+  "lifeTaskUpdateOnlineAccounts": "အီးမေးလ်၊ ဖုန်းနှင့် အွန်လိုင်း အကောင့်များတွင် အမည်ပြောင်းပါ",
+  "lifeTaskSaveMarriageCertificate": "လက်ထပ်စာချုပ်၏ ဓာတ်ပုံကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskCheckBeneficiaries": "သင့်မူဝါဒများနှင့် အကောင့်များတွင် အကျိုးခံစားခွင့်ရှိသူ မည်သူဖြစ်သည်ကို စစ်ဆေးပါ",
+  "lifeTaskUpdateWill": "သေတမ်းစာ ရေးပါ သို့မဟုတ် ပြင်ဆင်ပါ",
+  "lifeTaskSaveDivorceOrder": "နောက်ဆုံး ကွာရှင်းမိန့်၏ ဓာတ်ပုံကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskSplitSharedAccounts": "ပူးတွဲအကောင့်များကို ပိတ်ပါ သို့မဟုတ် ခွဲပြီး ပူးတွဲစကားဝှက်များကို ပြောင်းပါ",
+  "lifeTaskRegisterBirth": "မွေးဖွားမှုကို မှတ်ပုံတင်ပြီး မွေးစာရင်း ရယူပါ",
+  "lifeTaskAddBabyToFamily": "စာရွက်စာတမ်းများ ခြေရာခံနိုင်ရန် ကလေးကို မိသားစုတွင် ထည့်ပါ",
+  "lifeTaskCarRegisterInName": "ဥပဒေခွင့်ပြုသည့်အချိန်အတွင်း ကားကို သင့်အမည်သို့ ပြောင်းပါ",
+  "lifeTaskCarSavePapers": "ရောင်းဝယ်ရေး စာချုပ်၏ ဓာတ်ပုံကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskCarNotifySale": "ကားရောင်းပြီးကြောင်း လိုင်စင်ရုံးသို့ ပြောပြီး အထောက်အထား သိမ်းထားပါ",
+  "lifeTaskCarRemoveTags": "လမ်းကြေး တဂ်၊ ကားရပ်ကတ်နှင့် ကိုယ်ပိုင်ပစ္စည်းများ ဖယ်ရှားပါ",
+  "lifeTaskJobGiveDetails": "အလုပ်ရှင်အသစ်ကို ဘဏ်အချက်အလက်နှင့် အခွန်နံပါတ် ပေးပါ",
+  "lifeTaskJobJoinBenefits": "အလုပ်ရှင်ပေးသော ဆေးကုသမှုအာမခံနှင့် ပင်စင်တွင် ပါဝင်ပါ",
+  "lifeTaskJobReturnItems": "လက်ပ်တော့၊ ကတ် သို့မဟုတ် သော့ကဲ့သို့ အလုပ်ပစ္စည်းများ ပြန်အပ်ပါ",
+  "lifeTaskJobLastPayslip": "နောက်ဆုံး လစာစာရွက်နှင့် အလုပ်လုပ်ခဲ့သည့်ရက်များ အတည်ပြုစာ တောင်းပါ",
+  "lifeTaskJobAskBenefits": "ဆေးကုသမှုအာမခံနှင့် ပင်စင် ဘာဖြစ်မည်ကို မေးပါ",
+  "lifeTaskJobUnemployment": "အလုပ်လက်မဲ့ ထောက်ပံ့ကြေးအကြောင်း ယခုပင် မေးပါ။ လျှောက်လွှာများတွင် နောက်ဆုံးရက် ရှိတတ်သည်။",
+  "lifeTaskJobPauseDebits": "အလိုအလျောက် ငွေနုတ်မှုများနှင့် စာရင်းသွင်းမှုများ စာရင်းပြုစုပြီး ရပ်နိုင်သည်များ ရပ်ပါ",
+  "lifeTaskStudySaveLetters": "ဝင်ခွင့်စာနှင့် ကျောင်းလခ ရှင်းတမ်းများ၏ ဓာတ်ပုံများကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskStudyFunding": "ပညာသင်ဆု၊ ချေးငွေ သို့မဟုတ် အခြားအထောက်အပံ့များ၏ နောက်ဆုံးရက်များ စစ်ဆေးပါ",
+  "lifeTaskRetirePension": "ပင်စင် မည်သို့ မည်သည့်အခါ ပေးမည်ကို မေးပါ",
+  "lifeTaskRetireOwnCover": "အလုပ်မှ အာမခံ ကုန်ဆုံးလျှင် ကိုယ်ပိုင် ဆေးကုသမှုအာမခံ စီစဉ်ပါ",
+  "lifeTaskCountryTellBankTax": "သင်ထွက်ခွာမည်ဖြစ်ကြောင်း ဘဏ်နှင့် အခွန်ရုံးကို ပြောပါ",
+  "lifeTaskCountryScanCopies": "အရေးကြီးသော စာရွက်စာတမ်းတိုင်း၏ ဓာတ်ပုံကို Vaultara သို့ ထည့်ပါ",
+  "lifeTaskCountryLicenceRules": "ယာဉ်မောင်းလိုင်စင် လဲရန် လိုမလို စစ်ဆေးပါ",
+  "lifeTaskChildOwnId": "လိုအပ်ပါက ကိုယ်ပိုင် မှတ်ပုံတင်ကတ် လျှောက်ရန် ကူညီပါ",
+  "lifeTaskChildBankAccount": "ကိုယ်ပိုင် ဘဏ်အကောင့် ဖွင့်ရန် ကူညီပါ",
+  "lifeTaskDeathCertificates": "သေစာရင်း၏ အတည်ပြုမိတ္တူ အနည်းငယ် ရယူပါ",
+  "lifeTaskDeathTellOrganisations": "ဘဏ်၊ အာမခံကုမ္ပဏီများနှင့် အလုပ်ရှင်ကို အကြောင်းကြားပါ",
+  "lifeTaskDeathFindWill": "သေတမ်းစာကို ရှာပြီး အမွေဆောင်ရွက်သူကို ဆက်သွယ်ပါ",
+  "lifeTaskDeathStopReminders": "အဆင်သင့်ဖြစ်သည့်အခါ ၎င်း၏ မှတ်တမ်းများအတွက် သတိပေးချက်များ ပိတ်ပါ",
+  "lifeTaskPhoneBlockSim": "SIM ကတ်ကို ပိတ်ရန် ဖုန်းကုမ္ပဏီကို ခေါ်ပါ။ ၎င်းက SIM လဲ လိမ်လည်မှုကို တားဆီးသည်။",
+  "lifeTaskPhoneBlockBanking": "ဖုန်းပေါ်ရှိ ဘဏ်ဝန်ဆောင်မှုကို ပိတ်ရန် ဘဏ်ကို ခေါ်ပါ",
+  "lifeTaskPhoneLockErase": "အခြားစက်မှ ဖုန်းကို သော့ခတ်ပါ သို့မဟုတ် ဖျက်ပါ",
+  "lifeTaskPhoneChangePasswords": "အီးမေးလ်နှင့် ဆိုရှယ်မီဒီယာ စကားဝှက်များ ပြောင်းပါ",
+  "lifeTaskReportToPolice": "ရဲထံ တိုင်ကြားပြီး အမှုနံပါတ် သိမ်းထားပါ",
+  "lifeTaskDisasterSafePlace": "အားလုံး ဘေးကင်းပြီး နေစရာရှိကြောင်း သေချာပါစေ",
+  "lifeTaskDisasterPhotos": "မရှင်းလင်းမီ ပျက်စီးမှုကို ဓာတ်ပုံရိုက်ပါ",
+  "lifeTaskDisasterContactInsurer": "အာမခံကုမ္ပဏီကို အမြန်ဆုံး ဆက်သွယ်ပါ",
+  "lifeTaskDisasterProofPack": "သက်သေအထောက်အထား အစုံဖြင့် စာရွက်စာတမ်း မိတ္တူများ ပို့ပါ",
+  "lifeTaskParentFindPapers": "၎င်း၏ အရေးကြီးစာရွက်များ ဘယ်မှာ ထားသည်ကို သိထားပါ",
+  "lifeTaskParentPermission": "၎င်းကိုယ်စား ဘဏ်၊ ဆရာဝန်နှင့် အာမခံကုမ္ပဏီနှင့် စကားပြောခွင့်ရှိမရှိ မေးပါ",
+  "lifeTaskParentMedicines": "၎င်း၏ ဆေးဝါးများနှင့် ဆရာဝန်များ စာရင်း ထားရှိပါ",
+  "lifePlanDoClaim": "တောင်းဆိုပါ",
+  "lifePlanStatusClaimed": "တောင်းဆိုပြီး",
+  "lifePlanStartBy": "{weeks, plural, other{{date} မတိုင်မီ စတင်ပါ။ အသစ်တစ်ခုသည် များသောအားဖြင့် {weeks} ပတ်ခန့် ကြာသည်။}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{ယခုပင် စတင်ပါ။ အသစ်တစ်ခုသည် များသောအားဖြင့် {weeks} ပတ်ခန့် ကြာသည်။}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "သင့်အစီအစဉ်",
+  "lifePlanWhenHappened": "ဘယ်အချိန်က ဖြစ်ခဲ့သလဲ?",
+  "lifePlanReminderNudge": "သင့်အစီအစဉ်တွင် လုပ်စရာများ ရှိနေသေးသည်။ အချိန်ရသည့်အခါ ဖွင့်ကြည့်ပါ။",
+  "lifePlanReminderCheckIn": "ကတ်နှင့် စာရွက်စာတမ်း အသစ်များ ရောက်ပြီလား? စစ်ဆေးရန် အစီအစဉ်ကို ဖွင့်ပါ။",
+  "lifePlanDoFirst": "ဒါကို အရင်လုပ်ပါ",
+  "lifePlanSteps": "အခြားအဆင့်များ",
+  "lifePlanAddOwnStep": "ကိုယ်ပိုင်အဆင့် ထည့်ပါ",
+  "lifePlanOwnStepHint": "ဥပမာ - ကျောင်းကို ပြောပါ",
+  "lifePlanOwnStepLimit": "ကိုယ်ပိုင်အဆင့် ၂၀ အထိ ထည့်နိုင်သည်။",
+  "lifePlanReadAloud": "အသံထွက်ဖတ်ပါ",
+  "lifePlanStopReading": "ဖတ်ခြင်း ရပ်ပါ",
+  "lifePlanReadAloudUnavailable": "ဤဖုန်းတွင် အသံထွက်ဖတ်ခြင်း မရနိုင်ပါ။",
+  "lifePlanProofPack": "သက်သေအထောက်အထား အစုံ ပြုလုပ်ပါ",
+  "lifePlanOpenFamily": "မိသားစုကို ဖွင့်ပါ",
+  "lifePlanRemoved": "{count, plural, other{သင်ဖျက်ခဲ့သော မှတ်တမ်း {count} ခုကို ဖျက်သိမ်းပြီးဟု ရေတွက်သည်။}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "၎င်းတို့ကို သက်တမ်းတိုးရန် များသောအားဖြင့် {amount} ခန့် ကုန်ကျသည်။",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "အိမ်အသစ်သို့ ပြောင်းမလား? အခြား ဘာတွေ ပြင်ဆင်ရမည်ကို ကြည့်ပါ။"
 }

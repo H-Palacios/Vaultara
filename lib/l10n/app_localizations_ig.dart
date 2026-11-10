@@ -6795,4 +6795,330 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Malite atụmatụ maka ịkwaga obodo ọzọ. Vaultara na-egosi ihe ị ga-ahazi tupu ị pụọ.';
+
+  @override
+  String get lifeGroupHome => 'Ụlọ';
+
+  @override
+  String get lifeGroupFamily => 'Ezinụlọ';
+
+  @override
+  String get lifeGroupWork => 'Ọrụ na agụmakwụkwọ';
+
+  @override
+  String get lifeGroupCarTravel => 'Ụgbọala na njem';
+
+  @override
+  String get lifeGroupEmergency => 'Ihe adịghị mma mere';
+
+  @override
+  String get lifeEventCarBuy => 'Azụrụ m ụgbọala';
+
+  @override
+  String get lifeEventCarBuyBody => 'Nweta mkpuchi tupu ịkwọba ya n\'ụlọ, wee debanye ụgbọala ahụ n\'aha gị.';
+
+  @override
+  String get lifeEventCarSell => 'Erere m ụgbọala';
+
+  @override
+  String get lifeEventCarSellBody => 'Gwa ụlọ ọrụ ikike gbasara ire ahụ, kagbuo mkpuchi mgbe ụgbọala ahụ abụghịzi nke gị.';
+
+  @override
+  String get lifeEventJobStart => 'Ana m amalite ọrụ ọhụrụ';
+
+  @override
+  String get lifeEventJobStartBody => 'Lelee ikike gị tupu ịmalite, wee hazie kaadị ọrụ na uru ndị ọzọ.';
+
+  @override
+  String get lifeEventJobLeave => 'Ana m ahapụ ọrụ m';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Weghachi ihe ọrụ ma lelee ihe ga-eme mkpuchi ọrụ gị nyere gị.';
+
+  @override
+  String get lifeEventLostPhone => 'Ekwentị m furu efu ma ọ bụ e zuru ya';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Mee ngwa ngwa. Onye nwere ekwentị gị na kaadị SIM nwere ike ịbanye n\'ụlọ akụ na email gị. Mee nzọụkwụ mbụ ugbu a.';
+
+  @override
+  String get lifeEventJobLoss => 'Ọrụ m fụrụ m';
+
+  @override
+  String get lifeEventJobLossBody => 'Nke a siri ike. Were otu nzọụkwụ n\'otu oge. Arịrịọ ụfọdụ nwere ụbọchị njedebe, ya mere bido na ha.';
+
+  @override
+  String get lifeEventDisaster => 'Ọkụ, idei mmiri ma ọ bụ ohi n\'ụlọ';
+
+  @override
+  String get lifeEventDisasterBody => 'Buru ụzọ hụ na onye ọ bụla dị mma. Mgbe ahụ see foto, kpọtụrụ ụlọ ọrụ mkpuchi gị ma dochie ihe furu efu.';
+
+  @override
+  String get lifeEventCaringParent => 'Ana m elekọta nne ma ọ bụ nna m';
+
+  @override
+  String get lifeEventCaringParentBody => 'Họrọ onye ị na-elekọta. Lelee akwụkwọ na mkpuchi ya, debe ihe ị chọrọ n\'akụkụ gị.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ị zụrụ ka ị rere?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Ị na-amalite ka ị na-ahapụ?';
+
+  @override
+  String get lifeVariantBuy => 'Azụrụ m';
+
+  @override
+  String get lifeVariantSell => 'Erere m';
+
+  @override
+  String get lifeVariantStart => 'Ana m amalite';
+
+  @override
+  String get lifeVariantLeave => 'Ana m ahapụ';
+
+  @override
+  String get lifeTaskRedirectPost => 'Rịọ ka e zigara akwụkwọ ozi gị n\'adreesị ọhụrụ';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Nye onye were gị n\'ọrụ, ụlọ ọrụ ụtụ, dọkịta na ụlọ akwụkwọ adreesị ọhụrụ gị';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Mechie ma ọ bụ bufee akaụntụ ọkụ eletrik, mmiri na ịntanetị';
+
+  @override
+  String get lifeTaskMeterReadings => 'Dee ọgụgụ mita ma see foto n\'ụbọchị ị na-akwapụ';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Tinye foto akwụkwọ ire ma ọ bụ mbufe na Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Nyefee igodo, rimot na kaadị ịbanye';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Buru ụzọ nweta ihe akaebe gọọmentị nke aha ọhụrụ gị. Ọtụtụ ụlọ ọrụ na-arịọ ya.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Gwa ụlọ akụ, onye were gị n\'ọrụ, dọkịta na ụlọ ọrụ ụtụ gbasara aha ọhụrụ gị';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Gbanwee aha gị na email, ekwentị na akaụntụ ịntanetị';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Tinye foto asambodo alụmdi na nwunye na Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Lelee onye e dere dị ka onye ga-erite uru na amụma na akaụntụ gị';
+
+  @override
+  String get lifeTaskUpdateWill => 'Dee ma ọ bụ melite akwụkwọ ọchịchọ ikpeazụ';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Tinye foto iwu ikpeazụ ịgba alụkwaghịm na Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Mechie ma ọ bụ kewaa akaụntụ unu nwekọrọ ma gbanwee okwuntughe unu nwekọrọ';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Debanye ọmụmụ ahụ ma nweta asambodo ọmụmụ';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Tinye nwa ọhụrụ n\'Ezinụlọ ka e soro akwụkwọ ya';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Debanye ụgbọala n\'aha gị n\'ime oge iwu kwere';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Tinye foto nkwekọrịta ire na Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Gwa ụlọ ọrụ ikike na i rere ụgbọala ahụ ma debe ihe akaebe';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Wepụ tag ụzọ ụgwọ, kaadị ebe ndọba ụgbọala na ihe nkeonwe';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Nye onye were gị n\'ọrụ ọhụrụ nkọwa ụlọ akụ na nọmba ụtụ gị';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Sonye na mkpuchi ahụike na ezumike nka onye were gị n\'ọrụ na-enye';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Weghachi ihe ọrụ dị ka laptọọpụ, kaadị ma ọ bụ igodo';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Rịọ akwụkwọ ụgwọ ọnwa ikpeazụ na akwụkwọ ozi na-akwado ụbọchị ọrụ gị';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Jụọ ihe ga-eme mkpuchi ahụike na ezumike nka gị';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Jụọ gbasara enyemaka enweghị ọrụ ugbu a. Arịrịọ na-enwekarị ụbọchị njedebe.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Depụta ụgwọ akpaaka na ndenye aha gị, kwụsịtụ ndị ị nwere ike';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Tinye foto akwụkwọ nnabata na nkwupụta ụgwọ akwụkwọ na Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Lelee ụbọchị njedebe maka nkwado agụmakwụkwọ, mbinye ego ma ọ bụ enyemaka ndị ọzọ';
+
+  @override
+  String get lifeTaskRetirePension => 'Jụọ otu na mgbe a ga-akwụ ezumike nka gị';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Hazie mkpuchi ahụike nke gị ma ọ bụrụ na nke ọrụ akwụsị';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Gwa ụlọ akụ na ụlọ ọrụ ụtụ na ị na-apụ';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Tinye foto akwụkwọ ọ bụla dị mkpa na Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Lelee ma ị ga-agbanwe akwụkwọ ikike ịnya ụgbọala gị';
+
+  @override
+  String get lifeTaskChildOwnId => 'Nyere ya aka ịrịọ maka kaadị njirimara nke ya ma ọ bụrụ na ọ chọrọ';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Nyere ya aka imepe akaụntụ ụlọ akụ nke ya';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Nweta mbipụta ole na ole akwadoro nke asambodo ọnwụ';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Gwa ụlọ akụ, ụlọ ọrụ mkpuchi na onye were ya n\'ọrụ';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Chọta akwụkwọ ọchịchọ ikpeazụ ma kpọtụrụ onye na-ahụ maka ya';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Mgbe ị dị njikere, gbanyụọ ncheta maka ndekọ ya';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Kpọọ netwọk gị ka ha gbochie kaadị SIM. Nke a na-akwụsị aghụghọ mgbanwe SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Kpọọ ụlọ akụ gị ka ha gbochie ụlọ akụ n\'ekwentị';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Kpọchie ma ọ bụ hichapụ ekwentị site na ngwaọrụ ọzọ';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Gbanwee okwuntughe email na mgbasa ozi ọha';
+
+  @override
+  String get lifeTaskReportToPolice => 'Kọọrọ ndị uwe ojii ma debe nọmba okwu ahụ';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Hụ na onye ọ bụla dị mma ma nwee ebe obibi';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'See foto mmebi tupu ị kpochaa';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Kpọtụrụ ụlọ ọrụ mkpuchi gị ozugbo i nwere ike';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Ziga mbipụta akwụkwọ gị site na Ngwugwu ihe akaebe';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Chọpụta ebe a na-edebe akwụkwọ ya ndị dị mkpa';
+
+  @override
+  String get lifeTaskParentPermission => 'Jụọ ma ị nwere ike ịgwa ụlọ akụ, dọkịta na ụlọ ọrụ mkpuchi ya okwu n\'aha ya';
+
+  @override
+  String get lifeTaskParentMedicines => 'Debe ndepụta ọgwụ na ndị dọkịta ya';
+
+  @override
+  String get lifePlanDoClaim => 'Mee arịrịọ';
+
+  @override
+  String get lifePlanStatusClaimed => 'Arịrịọ emere';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Bido tupu $date. Nke ọhụrụ na-ewekarị ihe dị ka izu $weeks.',
+      one: 'Bido tupu $date. Nke ọhụrụ na-ewekarị ihe dị ka otu izu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Bido ugbu a. Nke ọhụrụ na-ewekarị ihe dị ka izu $weeks.',
+      one: 'Bido ugbu a. Nke ọhụrụ na-ewekarị ihe dị ka otu izu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Atụmatụ gị';
+
+  @override
+  String get lifePlanWhenHappened => 'Olee mgbe ọ mere?';
+
+  @override
+  String get lifePlanReminderNudge => 'Atụmatụ gị ka nwere ihe a ga-eme. Mepee ya mgbe i nwere obere oge.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Kaadị na akwụkwọ ọhụrụ gị abịala? Mepee atụmatụ ka i lelee.';
+
+  @override
+  String get lifePlanDoFirst => 'Buru ụzọ mee nke a';
+
+  @override
+  String get lifePlanSteps => 'Nzọụkwụ ndị ọzọ';
+
+  @override
+  String get lifePlanAddOwnStep => 'Tinye nzọụkwụ nke gị';
+
+  @override
+  String get lifePlanOwnStepHint => 'Dịka ọmụmaatụ: Gwa ụlọ akwụkwọ';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Ị nwere ike itinye ihe ruru nzọụkwụ 20 nke gị.';
+
+  @override
+  String get lifePlanReadAloud => 'Gụọ n\'olu dara ụda';
+
+  @override
+  String get lifePlanStopReading => 'Kwụsị ịgụ';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Ịgụ n\'olu dara ụda adịghị na ekwentị a.';
+
+  @override
+  String get lifePlanProofPack => 'Mepụta ngwugwu ihe akaebe';
+
+  @override
+  String get lifePlanOpenFamily => 'Mepee Ezinụlọ';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ndekọ $count i hichapụrụ ka a gụrụ dị ka akagburu.',
+      one: 'Ndekọ 1 i hichapụrụ ka a gụrụ dị ka akagburu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Imelite ndị a na-efukarị ihe dị ka $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ị na-akwaga n\'ụlọ ọhụrụ? Lee ihe ọzọ ị ga-emelite.';
 }

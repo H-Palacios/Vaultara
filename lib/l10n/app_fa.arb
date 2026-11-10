@@ -2161,5 +2161,136 @@
   "lifePlanReminderAfter": "هنوز کارهایی مانده است. برنامه را باز کنید تا تمامشان کنید.",
   "lifePlanSuggestCar": "خودرو خریدید یا فروختید؟ ببینید چه چیز دیگری باید به‌روز شود.",
   "lifePlanSuggestTrip": "برای مدتی به آنجا می‌روید؟",
-  "lifePlanSuggestTripBody": "برنامه‌ای برای رفتن به کشوری دیگر شروع کنید. Vaultara نشان می‌دهد پیش از رفتن چه کارهایی را انجام دهید."
+  "lifePlanSuggestTripBody": "برنامه‌ای برای رفتن به کشوری دیگر شروع کنید. Vaultara نشان می‌دهد پیش از رفتن چه کارهایی را انجام دهید.",
+  "lifeGroupHome": "خانه",
+  "lifeGroupFamily": "خانواده",
+  "lifeGroupWork": "کار و تحصیل",
+  "lifeGroupCarTravel": "خودرو و سفر",
+  "lifeGroupEmergency": "مشکلی پیش آمد",
+  "lifeEventCarBuy": "خودرو خریدم",
+  "lifeEventCarBuyBody": "قبل از اینکه آن را به خانه ببرید بیمه کنید، سپس خودرو را به نام خود کنید.",
+  "lifeEventCarSell": "خودرو فروختم",
+  "lifeEventCarSellBody": "فروش را به اداره راهنمایی و رانندگی اطلاع دهید و وقتی خودرو دیگر مال شما نیست بیمه را لغو کنید.",
+  "lifeEventJobStart": "کار جدیدی شروع می‌کنم",
+  "lifeEventJobStartBody": "پیش از شروع، مجوزهای خود را بررسی کنید و سپس کارت کاری و مزایا را تنظیم کنید.",
+  "lifeEventJobLeave": "کارم را ترک می‌کنم",
+  "lifeEventJobLeaveBody": "وسایل کار را برگردانید و ببینید پوشش بیمه‌ای که از کار داشتید چه می‌شود.",
+  "lifeEventLostPhone": "گوشی‌ام گم شد یا دزدیده شد",
+  "lifeEventLostPhoneBody": "سریع اقدام کنید. کسی که گوشی و سیم‌کارت شما را دارد می‌تواند وارد بانک و ایمیل شما شود. قدم‌های اول را همین حالا انجام دهید.",
+  "lifeEventJobLoss": "کارم را از دست دادم",
+  "lifeEventJobLossBody": "این سخت است. قدم به قدم پیش بروید. برخی درخواست‌ها مهلت دارند، پس از آن‌ها شروع کنید.",
+  "lifeEventDisaster": "آتش‌سوزی، سیل یا سرقت در خانه",
+  "lifeEventDisasterBody": "اول مطمئن شوید همه در امان هستند. سپس عکس بگیرید، با بیمه تماس بگیرید و آنچه از دست رفته را جایگزین کنید.",
+  "lifeEventCaringParent": "از پدر یا مادرم مراقبت می‌کنم",
+  "lifeEventCaringParentBody": "فردی را که از او مراقبت می‌کنید انتخاب کنید. مدارک و بیمه‌اش را بررسی کنید و آنچه لازم دارید را دم دست نگه دارید.",
+  "lifeVariantCarQuestion": "خریدید یا فروختید؟",
+  "lifeVariantJobQuestion": "شروع می‌کنید یا ترک می‌کنید؟",
+  "lifeVariantBuy": "خریدم",
+  "lifeVariantSell": "فروختم",
+  "lifeVariantStart": "شروع می‌کنم",
+  "lifeVariantLeave": "ترک می‌کنم",
+  "lifeTaskRedirectPost": "درخواست کنید نامه‌هایتان به نشانی جدید فرستاده شود",
+  "lifeTaskNewAddressEveryone": "نشانی جدید را به کارفرما، اداره مالیات، پزشک و مدرسه بدهید",
+  "lifeTaskMoveUtilities": "حساب‌های برق، آب و اینترنت را ببندید یا منتقل کنید",
+  "lifeTaskMeterReadings": "روز تخلیه، شماره کنتورها را یادداشت کنید و عکس بگیرید",
+  "lifeTaskSaveHomePapers": "عکس مدارک فروش یا انتقال را به Vaultara اضافه کنید",
+  "lifeTaskHandOverKeys": "کلیدها، ریموت‌ها و کارت‌های ورود را تحویل دهید",
+  "lifeTaskOfficialNameProof": "اول مدرک رسمی نام جدید خود را بگیرید. بیشتر ادارات آن را می‌خواهند.",
+  "lifeTaskTellNameChange": "نام جدید خود را به بانک، کارفرما، پزشک و اداره مالیات اطلاع دهید",
+  "lifeTaskUpdateOnlineAccounts": "نام خود را در ایمیل، گوشی و حساب‌های آنلاین تغییر دهید",
+  "lifeTaskSaveMarriageCertificate": "عکس سند ازدواج را به Vaultara اضافه کنید",
+  "lifeTaskCheckBeneficiaries": "بررسی کنید چه کسی در بیمه‌نامه‌ها و حساب‌هایتان ذی‌نفع است",
+  "lifeTaskUpdateWill": "وصیت‌نامه بنویسید یا به‌روز کنید",
+  "lifeTaskSaveDivorceOrder": "عکس حکم قطعی طلاق را به Vaultara اضافه کنید",
+  "lifeTaskSplitSharedAccounts": "حساب‌های مشترک را ببندید یا تقسیم کنید و رمزهای مشترک را عوض کنید",
+  "lifeTaskRegisterBirth": "تولد را ثبت کنید و شناسنامه بگیرید",
+  "lifeTaskAddBabyToFamily": "نوزاد را در خانواده اضافه کنید تا مدارکش پیگیری شود",
+  "lifeTaskCarRegisterInName": "خودرو را در مهلت قانونی به نام خود کنید",
+  "lifeTaskCarSavePapers": "عکس قرارداد فروش را به Vaultara اضافه کنید",
+  "lifeTaskCarNotifySale": "به اداره راهنمایی و رانندگی اطلاع دهید که خودرو را فروخته‌اید و مدرک را نگه دارید",
+  "lifeTaskCarRemoveTags": "برچسب‌های عوارض، کارت‌های پارکینگ و وسایل شخصی را بردارید",
+  "lifeTaskJobGiveDetails": "اطلاعات بانکی و شماره مالیاتی خود را به کارفرمای جدید بدهید",
+  "lifeTaskJobJoinBenefits": "در بیمه درمانی و بازنشستگی که کارفرما ارائه می‌دهد عضو شوید",
+  "lifeTaskJobReturnItems": "وسایل کار مثل لپ‌تاپ، کارت یا کلید را برگردانید",
+  "lifeTaskJobLastPayslip": "آخرین فیش حقوقی و نامه‌ای که تاریخ‌های کارتان را تأیید کند بخواهید",
+  "lifeTaskJobAskBenefits": "بپرسید بیمه درمانی و بازنشستگی شما چه می‌شود",
+  "lifeTaskJobUnemployment": "همین حالا درباره بیمه بیکاری بپرسید. درخواست‌ها اغلب مهلت دارند.",
+  "lifeTaskJobPauseDebits": "فهرست پرداخت‌های خودکار و اشتراک‌ها را بنویسید و هرچه می‌توانید متوقف کنید",
+  "lifeTaskStudySaveLetters": "عکس نامه پذیرش و صورت‌حساب‌های شهریه را به Vaultara اضافه کنید",
+  "lifeTaskStudyFunding": "مهلت بورسیه‌ها، وام‌ها یا سایر کمک‌های مالی را بررسی کنید",
+  "lifeTaskRetirePension": "بپرسید حقوق بازنشستگی شما چگونه و کی پرداخت می‌شود",
+  "lifeTaskRetireOwnCover": "اگر بیمه کار تمام شد، بیمه درمانی خودتان را ترتیب دهید",
+  "lifeTaskCountryTellBankTax": "به بانک و اداره مالیات بگویید که می‌روید",
+  "lifeTaskCountryScanCopies": "عکس هر مدرک مهم را به Vaultara اضافه کنید",
+  "lifeTaskCountryLicenceRules": "بررسی کنید آیا باید گواهینامه رانندگی را تعویض کنید",
+  "lifeTaskChildOwnId": "اگر لازم است، کمکش کنید برای کارت شناسایی خودش درخواست دهد",
+  "lifeTaskChildBankAccount": "کمکش کنید حساب بانکی خودش را باز کند",
+  "lifeTaskDeathCertificates": "چند نسخه تأییدشده از گواهی فوت بگیرید",
+  "lifeTaskDeathTellOrganisations": "به بانک، بیمه‌ها و کارفرما اطلاع دهید",
+  "lifeTaskDeathFindWill": "وصیت‌نامه را پیدا کنید و با وصی تماس بگیرید",
+  "lifeTaskDeathStopReminders": "وقتی آماده بودید، یادآورهای سوابق او را خاموش کنید",
+  "lifeTaskPhoneBlockSim": "با اپراتور تماس بگیرید تا سیم‌کارت را مسدود کند. این جلوی کلاهبرداری تعویض سیم‌کارت را می‌گیرد.",
+  "lifeTaskPhoneBlockBanking": "با بانک تماس بگیرید تا بانکداری روی گوشی را مسدود کند",
+  "lifeTaskPhoneLockErase": "گوشی را از دستگاه دیگری قفل یا پاک کنید",
+  "lifeTaskPhoneChangePasswords": "رمز ایمیل و شبکه‌های اجتماعی را عوض کنید",
+  "lifeTaskReportToPolice": "به پلیس گزارش دهید و شماره پرونده را نگه دارید",
+  "lifeTaskDisasterSafePlace": "مطمئن شوید همه در امان هستند و جایی برای ماندن دارند",
+  "lifeTaskDisasterPhotos": "پیش از تمیزکاری از خسارت‌ها عکس بگیرید",
+  "lifeTaskDisasterContactInsurer": "هرچه زودتر با بیمه تماس بگیرید",
+  "lifeTaskDisasterProofPack": "نسخه‌ای از مدارکتان را با بسته مدارک بفرستید",
+  "lifeTaskParentFindPapers": "بفهمید مدارک مهمش کجا نگهداری می‌شود",
+  "lifeTaskParentPermission": "بپرسید آیا می‌توانید از طرف او با بانک، پزشک و بیمه‌اش صحبت کنید",
+  "lifeTaskParentMedicines": "فهرستی از داروها و پزشکانش نگه دارید",
+  "lifePlanDoClaim": "درخواست خسارت بدهید",
+  "lifePlanStatusClaimed": "درخواست داده شد",
+  "lifePlanStartBy": "{weeks, plural, one{تا {date} شروع کنید. معمولاً تهیه نسخه جدید حدود {weeks} هفته طول می‌کشد.} other{تا {date} شروع کنید. معمولاً تهیه نسخه جدید حدود {weeks} هفته طول می‌کشد.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{همین حالا شروع کنید. معمولاً تهیه نسخه جدید حدود {weeks} هفته طول می‌کشد.} other{همین حالا شروع کنید. معمولاً تهیه نسخه جدید حدود {weeks} هفته طول می‌کشد.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "برنامه شما",
+  "lifePlanWhenHappened": "کی اتفاق افتاد؟",
+  "lifePlanReminderNudge": "برنامه شما هنوز کارهایی دارد. هر وقت فرصت داشتید بازش کنید.",
+  "lifePlanReminderCheckIn": "کارت‌ها و مدارک جدیدتان رسید؟ برای بررسی برنامه را باز کنید.",
+  "lifePlanDoFirst": "اول این را انجام دهید",
+  "lifePlanSteps": "قدم‌های دیگر",
+  "lifePlanAddOwnStep": "قدم خودتان را اضافه کنید",
+  "lifePlanOwnStepHint": "مثلاً: به مدرسه اطلاع دهید",
+  "lifePlanOwnStepLimit": "می‌توانید تا ۲۰ قدم خودتان اضافه کنید.",
+  "lifePlanReadAloud": "بلند خواندن",
+  "lifePlanStopReading": "توقف خواندن",
+  "lifePlanReadAloudUnavailable": "بلند خواندن در این گوشی در دسترس نیست.",
+  "lifePlanProofPack": "ساخت بسته مدارک",
+  "lifePlanOpenFamily": "باز کردن خانواده",
+  "lifePlanRemoved": "{count, plural, one{{count} سابقه‌ای که حذف کردید لغوشده حساب می‌شود.} other{{count} سابقه‌ای که حذف کردید لغوشده حساب می‌شوند.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "تمدید این‌ها معمولاً حدود {amount} هزینه دارد.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "به خانه جدید می‌روید؟ ببینید چه چیز دیگری را باید به‌روز کنید."
 }

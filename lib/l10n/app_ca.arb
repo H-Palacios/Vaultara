@@ -2180,5 +2180,136 @@
   "lifePlanReminderAfter": "Encara queden coses per fer. Obre el pla per acabar-les.",
   "lifePlanSuggestCar": "Has comprat o venut un cotxe? Mira què més cal actualitzar.",
   "lifePlanSuggestTrip": "Te'n vas a viure allà una temporada?",
-  "lifePlanSuggestTripBody": "Comença un pla per mudar-te a un altre país. Vaultara et mostra què cal resoldre abans de marxar."
+  "lifePlanSuggestTripBody": "Comença un pla per mudar-te a un altre país. Vaultara et mostra què cal resoldre abans de marxar.",
+  "lifeGroupHome": "Casa",
+  "lifeGroupFamily": "Família",
+  "lifeGroupWork": "Feina i estudis",
+  "lifeGroupCarTravel": "Cotxe i viatges",
+  "lifeGroupEmergency": "Alguna cosa ha anat malament",
+  "lifeEventCarBuy": "He comprat un cotxe",
+  "lifeEventCarBuyBody": "Contracta l'assegurança abans de portar-lo a casa i després posa el cotxe al teu nom.",
+  "lifeEventCarSell": "He venut un cotxe",
+  "lifeEventCarSellBody": "Comunica la venda a l'oficina de trànsit i cancel·la l'assegurança quan el cotxe ja no sigui teu.",
+  "lifeEventJobStart": "Començo una feina nova",
+  "lifeEventJobStartBody": "Comprova els permisos abans de començar i després configura la targeta de feina i els beneficis.",
+  "lifeEventJobLeave": "Deixo la feina",
+  "lifeEventJobLeaveBody": "Retorna el material de feina i comprova què passa amb la cobertura que et donava la feina.",
+  "lifeEventLostPhone": "He perdut el mòbil o me l'han robat",
+  "lifeEventLostPhoneBody": "Actua de pressa. Qui tingui el teu mòbil i la SIM pot entrar al teu banc i al correu. Fes els primers passos ara mateix.",
+  "lifeEventJobLoss": "He perdut la feina",
+  "lifeEventJobLossBody": "És difícil. Ves pas a pas. Algunes sol·licituds tenen termini, així que comença per aquestes.",
+  "lifeEventDisaster": "Incendi, inundació o robatori a casa",
+  "lifeEventDisasterBody": "Primer assegura't que tothom està bé. Després fes fotos, contacta amb l'asseguradora i substitueix el que s'ha perdut.",
+  "lifeEventCaringParent": "Cuido un pare o una mare",
+  "lifeEventCaringParentBody": "Tria la persona que cuides. Comprova els seus documents i la cobertura i tingues a mà el que necessitis.",
+  "lifeVariantCarQuestion": "L'has comprat o venut?",
+  "lifeVariantJobQuestion": "Comences o te'n vas?",
+  "lifeVariantBuy": "Comprat",
+  "lifeVariantSell": "Venut",
+  "lifeVariantStart": "Començo",
+  "lifeVariantLeave": "Me'n vaig",
+  "lifeTaskRedirectPost": "Demana que t'enviïn el correu a la nova adreça",
+  "lifeTaskNewAddressEveryone": "Dona la nova adreça a l'empresa, a Hisenda, al metge i a l'escola",
+  "lifeTaskMoveUtilities": "Dona de baixa o trasllada els comptes de llum, aigua i internet",
+  "lifeTaskMeterReadings": "Pren les lectures dels comptadors i fes fotos el dia que marxis",
+  "lifeTaskSaveHomePapers": "Afegeix una foto dels papers de venda o traspàs a Vaultara",
+  "lifeTaskHandOverKeys": "Lliura les claus, els comandaments i les targetes d'accés",
+  "lifeTaskOfficialNameProof": "Primer aconsegueix una prova oficial del nou nom. La majoria d'oficines la demanen.",
+  "lifeTaskTellNameChange": "Comunica el nou nom al banc, a l'empresa, al metge i a Hisenda",
+  "lifeTaskUpdateOnlineAccounts": "Canvia el nom al correu, al mòbil i als comptes en línia",
+  "lifeTaskSaveMarriageCertificate": "Afegeix una foto del certificat de matrimoni a Vaultara",
+  "lifeTaskCheckBeneficiaries": "Comprova qui consta com a beneficiari a les pòlisses i comptes",
+  "lifeTaskUpdateWill": "Fes o actualitza el testament",
+  "lifeTaskSaveDivorceOrder": "Afegeix una foto de la sentència ferma de divorci a Vaultara",
+  "lifeTaskSplitSharedAccounts": "Tanca o divideix els comptes compartits i canvia les contrasenyes compartides",
+  "lifeTaskRegisterBirth": "Inscriu el naixement i obtén el certificat de naixement",
+  "lifeTaskAddBabyToFamily": "Afegeix el nadó a Família perquè se'n segueixin els documents",
+  "lifeTaskCarRegisterInName": "Posa el cotxe al teu nom dins del termini legal",
+  "lifeTaskCarSavePapers": "Afegeix una foto del contracte de venda a Vaultara",
+  "lifeTaskCarNotifySale": "Comunica a l'oficina de trànsit que has venut el cotxe i guarda'n la prova",
+  "lifeTaskCarRemoveTags": "Treu els dispositius de peatge, les targetes d'aparcament i les coses personals",
+  "lifeTaskJobGiveDetails": "Dona les dades bancàries i el número fiscal a la nova empresa",
+  "lifeTaskJobJoinBenefits": "Apunta't a l'assegurança mèdica i al pla de pensions que ofereix l'empresa",
+  "lifeTaskJobReturnItems": "Retorna el material de feina, com ara l'ordinador, la targeta o les claus",
+  "lifeTaskJobLastPayslip": "Demana l'última nòmina i una carta que confirmi les dates de feina",
+  "lifeTaskJobAskBenefits": "Pregunta què passa amb l'assegurança mèdica i la pensió",
+  "lifeTaskJobUnemployment": "Informa't ara de la prestació d'atur. Les sol·licituds solen tenir termini.",
+  "lifeTaskJobPauseDebits": "Fes una llista de domiciliacions i subscripcions i atura el que puguis",
+  "lifeTaskStudySaveLetters": "Afegeix fotos de la carta d'admissió i dels rebuts de matrícula a Vaultara",
+  "lifeTaskStudyFunding": "Comprova els terminis de beques, préstecs o altres ajudes",
+  "lifeTaskRetirePension": "Pregunta com i quan es pagarà la pensió",
+  "lifeTaskRetireOwnCover": "Contracta una assegurança mèdica pròpia si s'acaba la de la feina",
+  "lifeTaskCountryTellBankTax": "Comunica al banc i a Hisenda que marxes",
+  "lifeTaskCountryScanCopies": "Afegeix una foto de cada document important a Vaultara",
+  "lifeTaskCountryLicenceRules": "Comprova si has de canviar el carnet de conduir",
+  "lifeTaskChildOwnId": "Ajuda'l a demanar el seu propi DNI si el necessita",
+  "lifeTaskChildBankAccount": "Ajuda'l a obrir el seu propi compte bancari",
+  "lifeTaskDeathCertificates": "Aconsegueix unes quantes còpies certificades del certificat de defunció",
+  "lifeTaskDeathTellOrganisations": "Avisa el banc, les asseguradores i l'empresa",
+  "lifeTaskDeathFindWill": "Troba el testament i contacta amb el marmessor",
+  "lifeTaskDeathStopReminders": "Quan estiguis a punt, desactiva els recordatoris dels seus registres",
+  "lifeTaskPhoneBlockSim": "Truca a l'operador per bloquejar la SIM. Així s'evita el frau per duplicat de SIM.",
+  "lifeTaskPhoneBlockBanking": "Truca al banc per bloquejar la banca al mòbil",
+  "lifeTaskPhoneLockErase": "Bloqueja o esborra el mòbil des d'un altre dispositiu",
+  "lifeTaskPhoneChangePasswords": "Canvia les contrasenyes del correu i de les xarxes socials",
+  "lifeTaskReportToPolice": "Denuncia-ho a la policia i guarda el número de denúncia",
+  "lifeTaskDisasterSafePlace": "Assegura't que tothom està bé i té on allotjar-se",
+  "lifeTaskDisasterPhotos": "Fes fotos dels danys abans de netejar",
+  "lifeTaskDisasterContactInsurer": "Contacta amb l'asseguradora com més aviat millor",
+  "lifeTaskDisasterProofPack": "Envia còpies dels documents amb el Paquet de proves",
+  "lifeTaskParentFindPapers": "Esbrina on guarda els papers importants",
+  "lifeTaskParentPermission": "Pregunta si pots parlar en nom seu amb el banc, el metge i l'asseguradora",
+  "lifeTaskParentMedicines": "Tingues una llista dels seus medicaments i metges",
+  "lifePlanDoClaim": "Fes una reclamació",
+  "lifePlanStatusClaimed": "Reclamat",
+  "lifePlanStartBy": "{weeks, plural, =1{Comença abans del {date}. Un de nou sol trigar una setmana.} other{Comença abans del {date}. Un de nou sol trigar unes {weeks} setmanes.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Comença ara. Un de nou sol trigar una setmana.} other{Comença ara. Un de nou sol trigar unes {weeks} setmanes.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "El teu pla",
+  "lifePlanWhenHappened": "Quan va passar?",
+  "lifePlanReminderNudge": "Al teu pla encara hi ha coses per fer. Obre'l quan tinguis un moment.",
+  "lifePlanReminderCheckIn": "Han arribat les targetes i els documents nous? Obre el pla per comprovar-ho.",
+  "lifePlanDoFirst": "Fes això primer",
+  "lifePlanSteps": "Altres passos",
+  "lifePlanAddOwnStep": "Afegeix un pas propi",
+  "lifePlanOwnStepHint": "Per exemple: Avisar l'escola",
+  "lifePlanOwnStepLimit": "Pots afegir fins a 20 passos propis.",
+  "lifePlanReadAloud": "Llegeix en veu alta",
+  "lifePlanStopReading": "Deixa de llegir",
+  "lifePlanReadAloudUnavailable": "La lectura en veu alta no està disponible en aquest mòbil.",
+  "lifePlanProofPack": "Crea un paquet de proves",
+  "lifePlanOpenFamily": "Obre Família",
+  "lifePlanRemoved": "{count, plural, =1{1 registre que has esborrat compta com a cancel·lat.} other{{count} registres que has esborrat compten com a cancel·lats.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Renovar-los sol costar uns {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Et mudes a una casa nova? Mira què més has d'actualitzar."
 }

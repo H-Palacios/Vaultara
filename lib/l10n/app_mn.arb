@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Хийх зүйл үлдсэн байна. Дуусгахын тулд төлөвлөгөөг нээнэ үү.",
   "lifePlanSuggestCar": "Машин авсан эсвэл зарсан уу? Өөр юу шинэчлэхийг хараарай.",
   "lifePlanSuggestTrip": "Тэнд хэсэг хугацаанд нүүх үү?",
-  "lifePlanSuggestTripBody": "Өөр улс руу нүүх төлөвлөгөө эхлүүлээрэй. Vaultara явахаасаа өмнө юуг шийдэхийг харуулна."
+  "lifePlanSuggestTripBody": "Өөр улс руу нүүх төлөвлөгөө эхлүүлээрэй. Vaultara явахаасаа өмнө юуг шийдэхийг харуулна.",
+  "lifeGroupHome": "Гэр",
+  "lifeGroupFamily": "Гэр бүл",
+  "lifeGroupWork": "Ажил ба сургууль",
+  "lifeGroupCarTravel": "Машин ба аялал",
+  "lifeGroupEmergency": "Ямар нэг юм болсон",
+  "lifeEventCarBuy": "Би машин авсан",
+  "lifeEventCarBuyBody": "Гэртээ унаж очихоосоо өмнө даатгуулж, дараа нь машинаа өөрийн нэр дээр шилжүүлээрэй.",
+  "lifeEventCarSell": "Би машин зарсан",
+  "lifeEventCarSellBody": "Борлуулсан тухайгаа бүртгэлийн газарт мэдэгдэж, машин таных биш болмогц даатгалаа цуцлаарай.",
+  "lifeEventJobStart": "Би шинэ ажилд орж байна",
+  "lifeEventJobStartBody": "Эхлэхээсээ өмнө зөвшөөрлүүдээ шалгаж, дараа нь ажлын карт болон хангамжаа тохируулаарай.",
+  "lifeEventJobLeave": "Би ажлаасаа гарч байна",
+  "lifeEventJobLeaveBody": "Ажлын эд зүйлсээ буцааж өгч, ажлын байрнаас олгосон даатгал юу болохыг шалгаарай.",
+  "lifeEventLostPhone": "Утсаа гээсэн эсвэл хулгайд алдсан",
+  "lifeEventLostPhoneBody": "Хурдан арга хэмжээ аваарай. Таны утас, SIM карттай хүн банк, имэйл рүү тань нэвтэрч чадна. Эхний алхмуудыг яг одоо хий.",
+  "lifeEventJobLoss": "Би ажлаа алдсан",
+  "lifeEventJobLossBody": "Энэ хэцүү. Алхам алхмаар яваарай. Зарим хүсэлт хугацаатай тул тэднээс эхлээрэй.",
+  "lifeEventDisaster": "Гэрт гал, үер эсвэл хулгай",
+  "lifeEventDisasterBody": "Эхлээд бүгд аюулгүй эсэхийг шалга. Дараа нь зураг авч, даатгалын компанитай холбогдож, алдсанаа нөхөөрэй.",
+  "lifeEventCaringParent": "Би эцэг эхээ асарч байна",
+  "lifeEventCaringParentBody": "Асарч буй хүнээ сонго. Түүний бичиг баримт, даатгалыг шалгаж, хэрэгтэй зүйлсээ ойрхон байлга.",
+  "lifeVariantCarQuestion": "Авсан уу, зарсан уу?",
+  "lifeVariantJobQuestion": "Эхэлж байна уу, гарч байна уу?",
+  "lifeVariantBuy": "Авсан",
+  "lifeVariantSell": "Зарсан",
+  "lifeVariantStart": "Эхэлж байна",
+  "lifeVariantLeave": "Гарч байна",
+  "lifeTaskRedirectPost": "Шуудангаа шинэ хаяг руу илгээхийг хүс",
+  "lifeTaskNewAddressEveryone": "Шинэ хаягаа ажил олгогч, татварын алба, эмч, сургуульд өг",
+  "lifeTaskMoveUtilities": "Цахилгаан, ус, интернетийн дансаа хаах эсвэл шилжүүлэх",
+  "lifeTaskMeterReadings": "Нүүх өдрөө тоолуурын заалтыг бичиж, зураг ав",
+  "lifeTaskSaveHomePapers": "Худалдах эсвэл шилжүүлэх бичиг баримтын зургийг Vaultara-д нэм",
+  "lifeTaskHandOverKeys": "Түлхүүр, пульт, нэвтрэх картаа хүлээлгэж өг",
+  "lifeTaskOfficialNameProof": "Эхлээд шинэ нэрийнхээ албан ёсны баталгааг ав. Ихэнх газар үүнийг шаарддаг.",
+  "lifeTaskTellNameChange": "Шинэ нэрээ банк, ажил олгогч, эмч, татварын албанд мэдэгд",
+  "lifeTaskUpdateOnlineAccounts": "Имэйл, утас, онлайн бүртгэл дээрх нэрээ солих",
+  "lifeTaskSaveMarriageCertificate": "Гэрлэлтийн гэрчилгээний зургийг Vaultara-д нэм",
+  "lifeTaskCheckBeneficiaries": "Даатгал, данс дээр хэн ашиг хүртэгчээр бичигдсэнийг шалга",
+  "lifeTaskUpdateWill": "Гэрээслэл бичих эсвэл шинэчлэх",
+  "lifeTaskSaveDivorceOrder": "Гэр бүл цуцлалтын эцсийн шийдвэрийн зургийг Vaultara-д нэм",
+  "lifeTaskSplitSharedAccounts": "Хамтын дансаа хаах эсвэл хувааж, хамтын нууц үгээ солих",
+  "lifeTaskRegisterBirth": "Төрсөн хүүхдээ бүртгүүлж, төрсний гэрчилгээ ав",
+  "lifeTaskAddBabyToFamily": "Бичиг баримтыг нь хянахын тулд нялх хүүхдийг Гэр бүлд нэм",
+  "lifeTaskCarRegisterInName": "Хуулиар зөвшөөрсөн хугацаанд машинаа өөрийн нэр дээр шилжүүл",
+  "lifeTaskCarSavePapers": "Худалдах гэрээний зургийг Vaultara-д нэм",
+  "lifeTaskCarNotifySale": "Машинаа зарснаа бүртгэлийн газарт мэдэгдэж, баталгааг хадгал",
+  "lifeTaskCarRemoveTags": "Төлбөртэй замын төхөөрөмж, зогсоолын карт, хувийн эд зүйлсээ ав",
+  "lifeTaskJobGiveDetails": "Шинэ ажил олгогчдоо банкны мэдээлэл, татварын дугаараа өг",
+  "lifeTaskJobJoinBenefits": "Ажил олгогчийн санал болгосон эрүүл мэндийн даатгал, тэтгэврийн сан руу нэгд",
+  "lifeTaskJobReturnItems": "Зөөврийн компьютер, карт, түлхүүр зэрэг ажлын эд зүйлсээ буцааж өг",
+  "lifeTaskJobLastPayslip": "Сүүлийн цалингийн хуудас болон ажилласан хугацааг баталсан захидал хүс",
+  "lifeTaskJobAskBenefits": "Эрүүл мэндийн даатгал, тэтгэвэр тань юу болохыг асуу",
+  "lifeTaskJobUnemployment": "Ажилгүйдлийн тэтгэмжийн талаар одоо асуу. Хүсэлт ихэвчлэн хугацаатай байдаг.",
+  "lifeTaskJobPauseDebits": "Автомат төлбөр, захиалгуудаа жагсааж, боломжтойг нь зогсоо",
+  "lifeTaskStudySaveLetters": "Элсэлтийн захидал, төлбөрийн хуудасны зургийг Vaultara-д нэм",
+  "lifeTaskStudyFunding": "Тэтгэлэг, зээл болон бусад дэмжлэгийн хугацааг шалга",
+  "lifeTaskRetirePension": "Тэтгэвэр хэрхэн, хэзээ олгогдохыг асуу",
+  "lifeTaskRetireOwnCover": "Ажлын даатгал дуусвал өөрийн эрүүл мэндийн даатгал хийлгэ",
+  "lifeTaskCountryTellBankTax": "Явах гэж байгаагаа банк, татварын албанд мэдэгд",
+  "lifeTaskCountryScanCopies": "Чухал бичиг баримт бүрийн зургийг Vaultara-д нэм",
+  "lifeTaskCountryLicenceRules": "Жолооны үнэмлэхээ солих шаардлагатай эсэхийг шалга",
+  "lifeTaskChildOwnId": "Шаардлагатай бол өөрийн иргэний үнэмлэх авахад нь туслах",
+  "lifeTaskChildBankAccount": "Өөрийн банкны данс нээхэд нь туслах",
+  "lifeTaskDeathCertificates": "Нас барсны гэрчилгээний хэдэн баталгаат хуулбар ав",
+  "lifeTaskDeathTellOrganisations": "Банк, даатгалын компани, ажил олгогчид мэдэгд",
+  "lifeTaskDeathFindWill": "Гэрээслэлийг олж, гүйцэтгэгчтэй холбогд",
+  "lifeTaskDeathStopReminders": "Бэлэн болохоороо түүний бүртгэлийн сануулгуудыг унтраа",
+  "lifeTaskPhoneBlockSim": "SIM картыг хаалгахын тулд оператор руугаа залга. Энэ нь SIM солих залилангаас сэргийлнэ.",
+  "lifeTaskPhoneBlockBanking": "Утсан дээрх банкны үйлчилгээг хаалгахын тулд банк руу залга",
+  "lifeTaskPhoneLockErase": "Өөр төхөөрөмжөөс утсаа түгжих эсвэл арилга",
+  "lifeTaskPhoneChangePasswords": "Имэйл, нийгмийн сүлжээний нууц үгээ солих",
+  "lifeTaskReportToPolice": "Цагдаад мэдэгдэж, хэргийн дугаарыг хадгал",
+  "lifeTaskDisasterSafePlace": "Бүгд аюулгүй, байх газартай эсэхийг шалга",
+  "lifeTaskDisasterPhotos": "Цэвэрлэхээсээ өмнө хохирлын зургийг ав",
+  "lifeTaskDisasterContactInsurer": "Аль болох хурдан даатгалын компанитай холбогд",
+  "lifeTaskDisasterProofPack": "Бичиг баримтынхаа хуулбарыг Нотлох багцаар илгээ",
+  "lifeTaskParentFindPapers": "Түүний чухал бичиг баримт хаана хадгалагдаж байгааг олж мэд",
+  "lifeTaskParentPermission": "Түүний өмнөөс банк, эмч, даатгалтай ярьж болох эсэхийг асуу",
+  "lifeTaskParentMedicines": "Түүний эм, эмч нарын жагсаалтыг хөтөл",
+  "lifePlanDoClaim": "Нөхөн төлбөр нэхэмжлэх",
+  "lifePlanStatusClaimed": "Нэхэмжилсэн",
+  "lifePlanStartBy": "{weeks, plural, one{{date}-аас өмнө эхэл. Шинэ нь ихэвчлэн ойролцоогоор {weeks} долоо хоног болдог.} other{{date}-аас өмнө эхэл. Шинэ нь ихэвчлэн ойролцоогоор {weeks} долоо хоног болдог.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Одоо эхэл. Шинэ нь ихэвчлэн ойролцоогоор {weeks} долоо хоног болдог.} other{Одоо эхэл. Шинэ нь ихэвчлэн ойролцоогоор {weeks} долоо хоног болдог.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Таны төлөвлөгөө",
+  "lifePlanWhenHappened": "Хэзээ болсон бэ?",
+  "lifePlanReminderNudge": "Таны төлөвлөгөөнд хийх зүйл үлдсэн байна. Завтай үедээ нээгээрэй.",
+  "lifePlanReminderCheckIn": "Шинэ карт, бичиг баримт тань ирсэн үү? Шалгахын тулд төлөвлөгөөгөө нээ.",
+  "lifePlanDoFirst": "Эхлээд үүнийг хий",
+  "lifePlanSteps": "Бусад алхам",
+  "lifePlanAddOwnStep": "Өөрийн алхам нэмэх",
+  "lifePlanOwnStepHint": "Жишээ нь: Сургуульд мэдэгдэх",
+  "lifePlanOwnStepLimit": "Та өөрийн 20 хүртэл алхам нэмж болно.",
+  "lifePlanReadAloud": "Чангаар унших",
+  "lifePlanStopReading": "Уншихыг зогсоох",
+  "lifePlanReadAloudUnavailable": "Энэ утсанд чангаар унших боломжгүй.",
+  "lifePlanProofPack": "Нотлох багц үүсгэх",
+  "lifePlanOpenFamily": "Гэр бүлийг нээх",
+  "lifePlanRemoved": "{count, plural, one{Таны устгасан {count} бүртгэлийг цуцалсанд тооцно.} other{Таны устгасан {count} бүртгэлийг цуцалсанд тооцно.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Эдгээрийг сунгах нь ихэвчлэн ойролцоогоор {amount} болдог.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Шинэ гэрт нүүж байна уу? Өөр юуг шинэчлэх хэрэгтэйг хараарай."
 }

@@ -2180,5 +2180,136 @@
   "lifePlanReminderAfter": "কিছু কাজ এখনও বাকি। শেষ করতে পরিকল্পনাটি খুলুন।",
   "lifePlanSuggestCar": "গাড়ি কিনেছেন বা বিক্রি করেছেন? আর কী হালনাগাদ করতে হবে দেখুন।",
   "lifePlanSuggestTrip": "কিছুদিনের জন্য সেখানে যাচ্ছেন?",
-  "lifePlanSuggestTripBody": "অন্য দেশে যাওয়ার পরিকল্পনা শুরু করুন। যাওয়ার আগে কী গোছাতে হবে Vaultara দেখায়।"
+  "lifePlanSuggestTripBody": "অন্য দেশে যাওয়ার পরিকল্পনা শুরু করুন। যাওয়ার আগে কী গোছাতে হবে Vaultara দেখায়।",
+  "lifeGroupHome": "বাড়ি",
+  "lifeGroupFamily": "পরিবার",
+  "lifeGroupWork": "কাজ ও পড়াশোনা",
+  "lifeGroupCarTravel": "গাড়ি ও ভ্রমণ",
+  "lifeGroupEmergency": "কিছু একটা ভুল হয়েছে",
+  "lifeEventCarBuy": "আমি একটি গাড়ি কিনেছি",
+  "lifeEventCarBuyBody": "গাড়িটি বাড়িতে চালিয়ে আনার আগে বিমা করুন, তারপর গাড়িটি নিজের নামে করুন।",
+  "lifeEventCarSell": "আমি একটি গাড়ি বিক্রি করেছি",
+  "lifeEventCarSellBody": "লাইসেন্স অফিসকে বিক্রির কথা জানান এবং গাড়িটি আর আপনার না থাকলে বিমা বাতিল করুন।",
+  "lifeEventJobStart": "আমি নতুন চাকরি শুরু করছি",
+  "lifeEventJobStartBody": "শুরুর আগে আপনার অনুমতিপত্র দেখে নিন, তারপর কাজের কার্ড ও সুবিধাগুলো ঠিক করুন।",
+  "lifeEventJobLeave": "আমি চাকরি ছাড়ছি",
+  "lifeEventJobLeaveBody": "কাজের জিনিস ফেরত দিন এবং চাকরি থেকে পাওয়া বিমার কী হবে তা দেখে নিন।",
+  "lifeEventLostPhone": "আমার ফোন হারিয়েছে বা চুরি হয়েছে",
+  "lifeEventLostPhoneBody": "দ্রুত ব্যবস্থা নিন। আপনার ফোন ও সিম কার্ড যার কাছে আছে সে আপনার ব্যাংক ও ইমেইলে ঢুকতে পারে। প্রথম ধাপগুলো এখনই করুন।",
+  "lifeEventJobLoss": "আমি চাকরি হারিয়েছি",
+  "lifeEventJobLossBody": "এটা কঠিন। এক ধাপ করে এগোন। কিছু দাবির শেষ তারিখ থাকে, তাই সেগুলো দিয়ে শুরু করুন।",
+  "lifeEventDisaster": "বাড়িতে আগুন, বন্যা বা চুরি",
+  "lifeEventDisasterBody": "প্রথমে সবাই নিরাপদ আছে কি না নিশ্চিত করুন। তারপর ছবি তুলুন, বিমা কোম্পানির সাথে যোগাযোগ করুন এবং হারানো জিনিস আবার করান।",
+  "lifeEventCaringParent": "আমি বাবা বা মায়ের দেখাশোনা করছি",
+  "lifeEventCaringParentBody": "যার দেখাশোনা করছেন তাকে বেছে নিন। তার কাগজপত্র ও বিমা দেখে নিন এবং দরকারি জিনিস হাতের কাছে রাখুন।",
+  "lifeVariantCarQuestion": "আপনি কিনেছেন নাকি বিক্রি করেছেন?",
+  "lifeVariantJobQuestion": "আপনি শুরু করছেন নাকি ছাড়ছেন?",
+  "lifeVariantBuy": "কিনেছি",
+  "lifeVariantSell": "বিক্রি করেছি",
+  "lifeVariantStart": "শুরু করছি",
+  "lifeVariantLeave": "ছাড়ছি",
+  "lifeTaskRedirectPost": "আপনার চিঠিপত্র নতুন ঠিকানায় পাঠানোর অনুরোধ করুন",
+  "lifeTaskNewAddressEveryone": "নিয়োগকর্তা, কর অফিস, ডাক্তার ও স্কুলকে নতুন ঠিকানা দিন",
+  "lifeTaskMoveUtilities": "বিদ্যুৎ, পানি ও ইন্টারনেট অ্যাকাউন্ট বন্ধ বা স্থানান্তর করুন",
+  "lifeTaskMeterReadings": "যেদিন বাসা ছাড়বেন সেদিন মিটারের রিডিং ও ছবি নিন",
+  "lifeTaskSaveHomePapers": "বিক্রি বা হস্তান্তরের কাগজের ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskHandOverKeys": "চাবি, রিমোট ও প্রবেশ কার্ড বুঝিয়ে দিন",
+  "lifeTaskOfficialNameProof": "প্রথমে নতুন নামের সরকারি প্রমাণ নিন। বেশিরভাগ অফিস এটি চায়।",
+  "lifeTaskTellNameChange": "ব্যাংক, নিয়োগকর্তা, ডাক্তার ও কর অফিসকে নতুন নামের কথা জানান",
+  "lifeTaskUpdateOnlineAccounts": "ইমেইল, ফোন ও অনলাইন অ্যাকাউন্টে নাম বদলান",
+  "lifeTaskSaveMarriageCertificate": "বিয়ের সনদের ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskCheckBeneficiaries": "পলিসি ও অ্যাকাউন্টে কাকে সুবিধাভোগী করা আছে দেখে নিন",
+  "lifeTaskUpdateWill": "উইল করুন বা হালনাগাদ করুন",
+  "lifeTaskSaveDivorceOrder": "চূড়ান্ত বিবাহবিচ্ছেদের আদেশের ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskSplitSharedAccounts": "যৌথ অ্যাকাউন্ট বন্ধ বা ভাগ করুন এবং যৌথ পাসওয়ার্ড বদলান",
+  "lifeTaskRegisterBirth": "জন্ম নিবন্ধন করুন এবং জন্ম সনদ নিন",
+  "lifeTaskAddBabyToFamily": "শিশুর কাগজপত্র ট্র্যাক করতে তাকে পরিবারে যোগ করুন",
+  "lifeTaskCarRegisterInName": "আইনে নির্ধারিত সময়ের মধ্যে গাড়িটি নিজের নামে করুন",
+  "lifeTaskCarSavePapers": "বিক্রয় চুক্তির ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskCarNotifySale": "লাইসেন্স অফিসকে জানান যে গাড়িটি বিক্রি করেছেন এবং প্রমাণ রাখুন",
+  "lifeTaskCarRemoveTags": "টোল ট্যাগ, পার্কিং কার্ড ও ব্যক্তিগত জিনিস সরিয়ে নিন",
+  "lifeTaskJobGiveDetails": "নতুন নিয়োগকর্তাকে ব্যাংকের তথ্য ও কর নম্বর দিন",
+  "lifeTaskJobJoinBenefits": "নিয়োগকর্তার দেওয়া চিকিৎসা বিমা ও পেনশনে যোগ দিন",
+  "lifeTaskJobReturnItems": "ল্যাপটপ, কার্ড বা চাবির মতো কাজের জিনিস ফেরত দিন",
+  "lifeTaskJobLastPayslip": "শেষ বেতনের স্লিপ এবং কাজের তারিখ নিশ্চিত করে এমন চিঠি চান",
+  "lifeTaskJobAskBenefits": "আপনার চিকিৎসা বিমা ও পেনশনের কী হবে জিজ্ঞেস করুন",
+  "lifeTaskJobUnemployment": "এখনই বেকার ভাতার কথা জিজ্ঞেস করুন। দাবির প্রায়ই শেষ তারিখ থাকে।",
+  "lifeTaskJobPauseDebits": "ডেবিট অর্ডার ও সাবস্ক্রিপশনের তালিকা করুন এবং যা পারেন বন্ধ রাখুন",
+  "lifeTaskStudySaveLetters": "ভর্তির চিঠি ও ফি বিবরণীর ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskStudyFunding": "বৃত্তি, ঋণ বা অন্য অর্থসহায়তার শেষ তারিখ দেখে নিন",
+  "lifeTaskRetirePension": "আপনার পেনশন কীভাবে ও কখন দেওয়া হবে জিজ্ঞেস করুন",
+  "lifeTaskRetireOwnCover": "কাজের বিমা শেষ হলে নিজের চিকিৎসা বিমার ব্যবস্থা করুন",
+  "lifeTaskCountryTellBankTax": "ব্যাংক ও কর অফিসকে জানান যে আপনি চলে যাচ্ছেন",
+  "lifeTaskCountryScanCopies": "প্রতিটি গুরুত্বপূর্ণ কাগজের ছবি Vaultara-তে যোগ করুন",
+  "lifeTaskCountryLicenceRules": "ড্রাইভিং লাইসেন্স বদলাতে হবে কি না দেখে নিন",
+  "lifeTaskChildOwnId": "দরকার হলে নিজের পরিচয়পত্রের আবেদন করতে সাহায্য করুন",
+  "lifeTaskChildBankAccount": "নিজের ব্যাংক অ্যাকাউন্ট খুলতে সাহায্য করুন",
+  "lifeTaskDeathCertificates": "মৃত্যু সনদের কয়েকটি সত্যায়িত কপি নিন",
+  "lifeTaskDeathTellOrganisations": "ব্যাংক, বিমা কোম্পানি ও নিয়োগকর্তাকে জানান",
+  "lifeTaskDeathFindWill": "উইল খুঁজে বের করুন এবং নির্বাহকের সাথে যোগাযোগ করুন",
+  "lifeTaskDeathStopReminders": "আপনি প্রস্তুত হলে তার রেকর্ডের রিমাইন্ডার বন্ধ করুন",
+  "lifeTaskPhoneBlockSim": "সিম কার্ড ব্লক করতে আপনার নেটওয়ার্কে ফোন করুন। এতে সিম সোয়াপ প্রতারণা বন্ধ হয়।",
+  "lifeTaskPhoneBlockBanking": "ফোনে ব্যাংকিং ব্লক করতে ব্যাংকে ফোন করুন",
+  "lifeTaskPhoneLockErase": "অন্য ডিভাইস থেকে ফোনটি লক বা মুছে দিন",
+  "lifeTaskPhoneChangePasswords": "ইমেইল ও সোশ্যাল মিডিয়ার পাসওয়ার্ড বদলান",
+  "lifeTaskReportToPolice": "পুলিশে জানান এবং মামলার নম্বর রাখুন",
+  "lifeTaskDisasterSafePlace": "সবাই নিরাপদ আছে এবং থাকার জায়গা আছে কি না নিশ্চিত করুন",
+  "lifeTaskDisasterPhotos": "পরিষ্কার করার আগে ক্ষতির ছবি তুলুন",
+  "lifeTaskDisasterContactInsurer": "যত তাড়াতাড়ি সম্ভব বিমা কোম্পানির সাথে যোগাযোগ করুন",
+  "lifeTaskDisasterProofPack": "প্রমাণ প্যাক দিয়ে আপনার কাগজপত্রের কপি পাঠান",
+  "lifeTaskParentFindPapers": "তার গুরুত্বপূর্ণ কাগজপত্র কোথায় রাখা আছে জেনে নিন",
+  "lifeTaskParentPermission": "তার হয়ে ব্যাংক, ডাক্তার ও বিমা কোম্পানির সাথে কথা বলতে পারবেন কি না জিজ্ঞেস করুন",
+  "lifeTaskParentMedicines": "তার ওষুধ ও ডাক্তারদের একটি তালিকা রাখুন",
+  "lifePlanDoClaim": "দাবি করুন",
+  "lifePlanStatusClaimed": "দাবি করা হয়েছে",
+  "lifePlanStartBy": "{weeks, plural, =1{{date}-এর মধ্যে শুরু করুন। নতুনটি পেতে সাধারণত প্রায় এক সপ্তাহ লাগে।} other{{date}-এর মধ্যে শুরু করুন। নতুনটি পেতে সাধারণত প্রায় {weeks} সপ্তাহ লাগে।}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{এখনই শুরু করুন। নতুনটি পেতে সাধারণত প্রায় এক সপ্তাহ লাগে।} other{এখনই শুরু করুন। নতুনটি পেতে সাধারণত প্রায় {weeks} সপ্তাহ লাগে।}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "আপনার পরিকল্পনা",
+  "lifePlanWhenHappened": "এটা কখন ঘটেছে?",
+  "lifePlanReminderNudge": "আপনার পরিকল্পনায় এখনও কিছু কাজ বাকি আছে। সময় পেলে খুলুন।",
+  "lifePlanReminderCheckIn": "আপনার নতুন কার্ড ও কাগজপত্র কি এসেছে? দেখতে পরিকল্পনাটি খুলুন।",
+  "lifePlanDoFirst": "আগে এটা করুন",
+  "lifePlanSteps": "অন্যান্য ধাপ",
+  "lifePlanAddOwnStep": "নিজের ধাপ যোগ করুন",
+  "lifePlanOwnStepHint": "যেমন: স্কুলকে জানান",
+  "lifePlanOwnStepLimit": "আপনি সর্বোচ্চ ২০টি নিজের ধাপ যোগ করতে পারবেন।",
+  "lifePlanReadAloud": "জোরে পড়ুন",
+  "lifePlanStopReading": "পড়া থামান",
+  "lifePlanReadAloudUnavailable": "এই ফোনে জোরে পড়ার সুবিধা নেই।",
+  "lifePlanProofPack": "প্রমাণ প্যাক তৈরি করুন",
+  "lifePlanOpenFamily": "পরিবার খুলুন",
+  "lifePlanRemoved": "{count, plural, =1{আপনার মুছে ফেলা 1টি রেকর্ড বাতিল হিসেবে গণ্য হয়।} other{আপনার মুছে ফেলা {count}টি রেকর্ড বাতিল হিসেবে গণ্য হয়।}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "এগুলো নবায়ন করতে সাধারণত প্রায় {amount} খরচ হয়।",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "নতুন বাড়িতে যাচ্ছেন? আর কী হালনাগাদ করতে হবে দেখুন।"
 }

@@ -6792,6 +6792,329 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => '开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。';
+
+  @override
+  String get lifeGroupHome => '住房';
+
+  @override
+  String get lifeGroupFamily => '家庭';
+
+  @override
+  String get lifeGroupWork => '工作和学习';
+
+  @override
+  String get lifeGroupCarTravel => '汽车和出行';
+
+  @override
+  String get lifeGroupEmergency => '遇到问题';
+
+  @override
+  String get lifeEventCarBuy => '我买了车';
+
+  @override
+  String get lifeEventCarBuyBody => '开回家之前先上保险，然后把车过户到你名下。';
+
+  @override
+  String get lifeEventCarSell => '我卖了车';
+
+  @override
+  String get lifeEventCarSellBody => '向车管部门报备出售，车不再属于你后取消保险。';
+
+  @override
+  String get lifeEventJobStart => '我要开始新工作';
+
+  @override
+  String get lifeEventJobStartBody => '入职前检查许可证件，然后办理工作证和福利。';
+
+  @override
+  String get lifeEventJobLeave => '我要离职';
+
+  @override
+  String get lifeEventJobLeaveBody => '归还公司物品，并确认工作提供的保障会怎样。';
+
+  @override
+  String get lifeEventLostPhone => '手机丢了或被偷了';
+
+  @override
+  String get lifeEventLostPhoneBody => '尽快行动。拿到你手机和 SIM 卡的人可以进入你的银行和邮箱。马上完成第一步。';
+
+  @override
+  String get lifeEventJobLoss => '我失业了';
+
+  @override
+  String get lifeEventJobLossBody => '这很不容易。一步一步来。有些申请有截止日期，先处理这些。';
+
+  @override
+  String get lifeEventDisaster => '家中火灾、水灾或失窃';
+
+  @override
+  String get lifeEventDisasterBody => '先确认所有人都安全。然后拍照、联系保险公司，并补办丢失的东西。';
+
+  @override
+  String get lifeEventCaringParent => '我在照顾父母';
+
+  @override
+  String get lifeEventCaringParentBody => '选择你照顾的人。检查他们的证件和保险，把需要的东西放在手边。';
+
+  @override
+  String get lifeVariantCarQuestion => '你是买车还是卖车？';
+
+  @override
+  String get lifeVariantJobQuestion => '你是入职还是离职？';
+
+  @override
+  String get lifeVariantBuy => '买了';
+
+  @override
+  String get lifeVariantSell => '卖了';
+
+  @override
+  String get lifeVariantStart => '入职';
+
+  @override
+  String get lifeVariantLeave => '离职';
+
+  @override
+  String get lifeTaskRedirectPost => '申请把邮件转寄到新地址';
+
+  @override
+  String get lifeTaskNewAddressEveryone => '把新地址告诉雇主、税务局、医生和学校';
+
+  @override
+  String get lifeTaskMoveUtilities => '注销或迁移电、水和网络账户';
+
+  @override
+  String get lifeTaskMeterReadings => '搬走当天记录表数并拍照';
+
+  @override
+  String get lifeTaskSaveHomePapers => '把买卖或过户文件的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => '交还钥匙、遥控器和门禁卡';
+
+  @override
+  String get lifeTaskOfficialNameProof => '先取得新姓名的官方证明。大多数机构都会要求。';
+
+  @override
+  String get lifeTaskTellNameChange => '把新姓名告诉银行、雇主、医生和税务局';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => '在邮箱、手机和网上账户中更改姓名';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => '把结婚证的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => '查看你的保单和账户中谁是受益人';
+
+  @override
+  String get lifeTaskUpdateWill => '立下或更新遗嘱';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => '把离婚判决书或离婚证的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => '关闭或分开共同账户，并更改共用密码';
+
+  @override
+  String get lifeTaskRegisterBirth => '登记出生并领取出生证明';
+
+  @override
+  String get lifeTaskAddBabyToFamily => '在家庭中添加宝宝，以便跟踪证件';
+
+  @override
+  String get lifeTaskCarRegisterInName => '在法律规定的期限内把车过户到你名下';
+
+  @override
+  String get lifeTaskCarSavePapers => '把买卖合同的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => '告知车管部门你已卖车，并保留凭证';
+
+  @override
+  String get lifeTaskCarRemoveTags => '取下 ETC、停车卡和个人物品';
+
+  @override
+  String get lifeTaskJobGiveDetails => '把银行信息和税号提供给新雇主';
+
+  @override
+  String get lifeTaskJobJoinBenefits => '加入雇主提供的医疗保险和养老金';
+
+  @override
+  String get lifeTaskJobReturnItems => '归还笔记本电脑、工牌或钥匙等公司物品';
+
+  @override
+  String get lifeTaskJobLastPayslip => '索取最后一张工资单和在职时间证明';
+
+  @override
+  String get lifeTaskJobAskBenefits => '询问你的医疗保险和养老金会怎样';
+
+  @override
+  String get lifeTaskJobUnemployment => '现在就询问失业金。申请通常有截止日期。';
+
+  @override
+  String get lifeTaskJobPauseDebits => '列出自动扣款和订阅，能停的先停';
+
+  @override
+  String get lifeTaskStudySaveLetters => '把录取通知书和学费单的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => '查看奖学金、助学贷款或其他资助的截止日期';
+
+  @override
+  String get lifeTaskRetirePension => '询问养老金如何以及何时发放';
+
+  @override
+  String get lifeTaskRetireOwnCover => '如果单位的保险结束，自己购买医疗保险';
+
+  @override
+  String get lifeTaskCountryTellBankTax => '告诉银行和税务局你要离开';
+
+  @override
+  String get lifeTaskCountryScanCopies => '把每份重要证件的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => '查看是否需要换驾照';
+
+  @override
+  String get lifeTaskChildOwnId => '如有需要，帮他们申请自己的身份证';
+
+  @override
+  String get lifeTaskChildBankAccount => '帮他们开立自己的银行账户';
+
+  @override
+  String get lifeTaskDeathCertificates => '办理几份经认证的死亡证明副本';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => '通知银行、保险公司和雇主';
+
+  @override
+  String get lifeTaskDeathFindWill => '找到遗嘱并联系遗嘱执行人';
+
+  @override
+  String get lifeTaskDeathStopReminders => '准备好时，关闭其记录的提醒';
+
+  @override
+  String get lifeTaskPhoneBlockSim => '打电话给运营商挂失 SIM 卡。这能防止换卡诈骗。';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => '打电话给银行冻结手机银行';
+
+  @override
+  String get lifeTaskPhoneLockErase => '用其他设备锁定或清除手机';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => '更改邮箱和社交媒体密码';
+
+  @override
+  String get lifeTaskReportToPolice => '向警方报案并保留案件编号';
+
+  @override
+  String get lifeTaskDisasterSafePlace => '确认所有人都安全并有地方住';
+
+  @override
+  String get lifeTaskDisasterPhotos => '清理前先拍下损失';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => '尽快联系保险公司';
+
+  @override
+  String get lifeTaskDisasterProofPack => '用证明材料包发送证件副本';
+
+  @override
+  String get lifeTaskParentFindPapers => '弄清他们的重要文件放在哪里';
+
+  @override
+  String get lifeTaskParentPermission => '问问能否代他们与银行、医生和保险公司沟通';
+
+  @override
+  String get lifeTaskParentMedicines => '记下他们的药物和医生清单';
+
+  @override
+  String get lifePlanDoClaim => '申请理赔';
+
+  @override
+  String get lifePlanStatusClaimed => '已理赔';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '请在 $date 前开始。新的通常需要约 $weeks 周。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '请现在开始。新的通常需要约 $weeks 周。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => '你的计划';
+
+  @override
+  String get lifePlanWhenHappened => '是什么时候发生的？';
+
+  @override
+  String get lifePlanReminderNudge => '你的计划还有事情要做。有空时打开看看。';
+
+  @override
+  String get lifePlanReminderCheckIn => '新卡和证件到了吗？打开计划确认一下。';
+
+  @override
+  String get lifePlanDoFirst => '先做这些';
+
+  @override
+  String get lifePlanSteps => '其他步骤';
+
+  @override
+  String get lifePlanAddOwnStep => '添加自己的步骤';
+
+  @override
+  String get lifePlanOwnStepHint => '例如：通知学校';
+
+  @override
+  String get lifePlanOwnStepLimit => '最多可添加 20 个自己的步骤。';
+
+  @override
+  String get lifePlanReadAloud => '朗读';
+
+  @override
+  String get lifePlanStopReading => '停止朗读';
+
+  @override
+  String get lifePlanReadAloudUnavailable => '这部手机不支持朗读。';
+
+  @override
+  String get lifePlanProofPack => '制作证明材料包';
+
+  @override
+  String get lifePlanOpenFamily => '打开家庭';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '你删除的 $count 条记录计为已取消。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return '续办这些通常需要约 $amount。';
+  }
+
+  @override
+  String get lifePlanSuggestMove => '要搬新家吗？看看还有什么需要更新。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13570,6 +13893,329 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lifePlanSuggestTripBody => '开始一个移居国外的计划。Vaultara 会显示出发前需要办妥的事。';
+
+  @override
+  String get lifeGroupHome => '住房';
+
+  @override
+  String get lifeGroupFamily => '家庭';
+
+  @override
+  String get lifeGroupWork => '工作和学习';
+
+  @override
+  String get lifeGroupCarTravel => '汽车和出行';
+
+  @override
+  String get lifeGroupEmergency => '遇到问题';
+
+  @override
+  String get lifeEventCarBuy => '我买了车';
+
+  @override
+  String get lifeEventCarBuyBody => '开回家之前先上保险，然后把车过户到你名下。';
+
+  @override
+  String get lifeEventCarSell => '我卖了车';
+
+  @override
+  String get lifeEventCarSellBody => '向车管部门报备出售，车不再属于你后取消保险。';
+
+  @override
+  String get lifeEventJobStart => '我要开始新工作';
+
+  @override
+  String get lifeEventJobStartBody => '入职前检查许可证件，然后办理工作证和福利。';
+
+  @override
+  String get lifeEventJobLeave => '我要离职';
+
+  @override
+  String get lifeEventJobLeaveBody => '归还公司物品，并确认工作提供的保障会怎样。';
+
+  @override
+  String get lifeEventLostPhone => '手机丢了或被偷了';
+
+  @override
+  String get lifeEventLostPhoneBody => '尽快行动。拿到你手机和 SIM 卡的人可以进入你的银行和邮箱。马上完成第一步。';
+
+  @override
+  String get lifeEventJobLoss => '我失业了';
+
+  @override
+  String get lifeEventJobLossBody => '这很不容易。一步一步来。有些申请有截止日期，先处理这些。';
+
+  @override
+  String get lifeEventDisaster => '家中火灾、水灾或失窃';
+
+  @override
+  String get lifeEventDisasterBody => '先确认所有人都安全。然后拍照、联系保险公司，并补办丢失的东西。';
+
+  @override
+  String get lifeEventCaringParent => '我在照顾父母';
+
+  @override
+  String get lifeEventCaringParentBody => '选择你照顾的人。检查他们的证件和保险，把需要的东西放在手边。';
+
+  @override
+  String get lifeVariantCarQuestion => '你是买车还是卖车？';
+
+  @override
+  String get lifeVariantJobQuestion => '你是入职还是离职？';
+
+  @override
+  String get lifeVariantBuy => '买了';
+
+  @override
+  String get lifeVariantSell => '卖了';
+
+  @override
+  String get lifeVariantStart => '入职';
+
+  @override
+  String get lifeVariantLeave => '离职';
+
+  @override
+  String get lifeTaskRedirectPost => '申请把邮件转寄到新地址';
+
+  @override
+  String get lifeTaskNewAddressEveryone => '把新地址告诉雇主、税务局、医生和学校';
+
+  @override
+  String get lifeTaskMoveUtilities => '注销或迁移电、水和网络账户';
+
+  @override
+  String get lifeTaskMeterReadings => '搬走当天记录表数并拍照';
+
+  @override
+  String get lifeTaskSaveHomePapers => '把买卖或过户文件的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => '交还钥匙、遥控器和门禁卡';
+
+  @override
+  String get lifeTaskOfficialNameProof => '先取得新姓名的官方证明。大多数机构都会要求。';
+
+  @override
+  String get lifeTaskTellNameChange => '把新姓名告诉银行、雇主、医生和税务局';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => '在邮箱、手机和网上账户中更改姓名';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => '把结婚证的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => '查看你的保单和账户中谁是受益人';
+
+  @override
+  String get lifeTaskUpdateWill => '立下或更新遗嘱';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => '把离婚判决书或离婚证的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => '关闭或分开共同账户，并更改共用密码';
+
+  @override
+  String get lifeTaskRegisterBirth => '登记出生并领取出生证明';
+
+  @override
+  String get lifeTaskAddBabyToFamily => '在家庭中添加宝宝，以便跟踪证件';
+
+  @override
+  String get lifeTaskCarRegisterInName => '在法律规定的期限内把车过户到你名下';
+
+  @override
+  String get lifeTaskCarSavePapers => '把买卖合同的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => '告知车管部门你已卖车，并保留凭证';
+
+  @override
+  String get lifeTaskCarRemoveTags => '取下 ETC、停车卡和个人物品';
+
+  @override
+  String get lifeTaskJobGiveDetails => '把银行信息和税号提供给新雇主';
+
+  @override
+  String get lifeTaskJobJoinBenefits => '加入雇主提供的医疗保险和养老金';
+
+  @override
+  String get lifeTaskJobReturnItems => '归还笔记本电脑、工牌或钥匙等公司物品';
+
+  @override
+  String get lifeTaskJobLastPayslip => '索取最后一张工资单和在职时间证明';
+
+  @override
+  String get lifeTaskJobAskBenefits => '询问你的医疗保险和养老金会怎样';
+
+  @override
+  String get lifeTaskJobUnemployment => '现在就询问失业金。申请通常有截止日期。';
+
+  @override
+  String get lifeTaskJobPauseDebits => '列出自动扣款和订阅，能停的先停';
+
+  @override
+  String get lifeTaskStudySaveLetters => '把录取通知书和学费单的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => '查看奖学金、助学贷款或其他资助的截止日期';
+
+  @override
+  String get lifeTaskRetirePension => '询问养老金如何以及何时发放';
+
+  @override
+  String get lifeTaskRetireOwnCover => '如果单位的保险结束，自己购买医疗保险';
+
+  @override
+  String get lifeTaskCountryTellBankTax => '告诉银行和税务局你要离开';
+
+  @override
+  String get lifeTaskCountryScanCopies => '把每份重要证件的照片添加到 Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => '查看是否需要换驾照';
+
+  @override
+  String get lifeTaskChildOwnId => '如有需要，帮他们申请自己的身份证';
+
+  @override
+  String get lifeTaskChildBankAccount => '帮他们开立自己的银行账户';
+
+  @override
+  String get lifeTaskDeathCertificates => '办理几份经认证的死亡证明副本';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => '通知银行、保险公司和雇主';
+
+  @override
+  String get lifeTaskDeathFindWill => '找到遗嘱并联系遗嘱执行人';
+
+  @override
+  String get lifeTaskDeathStopReminders => '准备好时，关闭其记录的提醒';
+
+  @override
+  String get lifeTaskPhoneBlockSim => '打电话给运营商挂失 SIM 卡。这能防止换卡诈骗。';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => '打电话给银行冻结手机银行';
+
+  @override
+  String get lifeTaskPhoneLockErase => '用其他设备锁定或清除手机';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => '更改邮箱和社交媒体密码';
+
+  @override
+  String get lifeTaskReportToPolice => '向警方报案并保留案件编号';
+
+  @override
+  String get lifeTaskDisasterSafePlace => '确认所有人都安全并有地方住';
+
+  @override
+  String get lifeTaskDisasterPhotos => '清理前先拍下损失';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => '尽快联系保险公司';
+
+  @override
+  String get lifeTaskDisasterProofPack => '用证明材料包发送证件副本';
+
+  @override
+  String get lifeTaskParentFindPapers => '弄清他们的重要文件放在哪里';
+
+  @override
+  String get lifeTaskParentPermission => '问问能否代他们与银行、医生和保险公司沟通';
+
+  @override
+  String get lifeTaskParentMedicines => '记下他们的药物和医生清单';
+
+  @override
+  String get lifePlanDoClaim => '申请理赔';
+
+  @override
+  String get lifePlanStatusClaimed => '已理赔';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '请在 $date 前开始。新的通常需要约 $weeks 周。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '请现在开始。新的通常需要约 $weeks 周。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => '你的计划';
+
+  @override
+  String get lifePlanWhenHappened => '是什么时候发生的？';
+
+  @override
+  String get lifePlanReminderNudge => '你的计划还有事情要做。有空时打开看看。';
+
+  @override
+  String get lifePlanReminderCheckIn => '新卡和证件到了吗？打开计划确认一下。';
+
+  @override
+  String get lifePlanDoFirst => '先做这些';
+
+  @override
+  String get lifePlanSteps => '其他步骤';
+
+  @override
+  String get lifePlanAddOwnStep => '添加自己的步骤';
+
+  @override
+  String get lifePlanOwnStepHint => '例如：通知学校';
+
+  @override
+  String get lifePlanOwnStepLimit => '最多可添加 20 个自己的步骤。';
+
+  @override
+  String get lifePlanReadAloud => '朗读';
+
+  @override
+  String get lifePlanStopReading => '停止朗读';
+
+  @override
+  String get lifePlanReadAloudUnavailable => '这部手机不支持朗读。';
+
+  @override
+  String get lifePlanProofPack => '制作证明材料包';
+
+  @override
+  String get lifePlanOpenFamily => '打开家庭';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '你删除的 $count 条记录计为已取消。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return '续办这些通常需要约 $amount。';
+  }
+
+  @override
+  String get lifePlanSuggestMove => '要搬新家吗？看看还有什么需要更新。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -20348,4 +20994,327 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lifePlanSuggestTripBody => '開始一個移居國外的計畫。Vaultara 會顯示出發前需要辦妥的事。';
+
+  @override
+  String get lifeGroupHome => '住家';
+
+  @override
+  String get lifeGroupFamily => '家人';
+
+  @override
+  String get lifeGroupWork => '工作與學業';
+
+  @override
+  String get lifeGroupCarTravel => '汽車與旅行';
+
+  @override
+  String get lifeGroupEmergency => '發生狀況';
+
+  @override
+  String get lifeEventCarBuy => '我買了車';
+
+  @override
+  String get lifeEventCarBuyBody => '開回家前先投保，然後把車過戶到你名下。';
+
+  @override
+  String get lifeEventCarSell => '我賣了車';
+
+  @override
+  String get lifeEventCarSellBody => '向監理單位申報出售，車子不再屬於你後就取消保險。';
+
+  @override
+  String get lifeEventJobStart => '我要開始新工作';
+
+  @override
+  String get lifeEventJobStartBody => '到職前先檢查許可證件，再辦理工作證與福利。';
+
+  @override
+  String get lifeEventJobLeave => '我要離職';
+
+  @override
+  String get lifeEventJobLeaveBody => '歸還公司物品，並確認工作提供的保障會如何。';
+
+  @override
+  String get lifeEventLostPhone => '手機遺失或被偷';
+
+  @override
+  String get lifeEventLostPhoneBody => '盡快行動。拿到你手機和 SIM 卡的人可以進入你的銀行和電子郵件。現在就完成第一步。';
+
+  @override
+  String get lifeEventJobLoss => '我失業了';
+
+  @override
+  String get lifeEventJobLossBody => '這很不容易。一步一步來。有些申請有期限，先處理這些。';
+
+  @override
+  String get lifeEventDisaster => '家中火災、水災或遭竊';
+
+  @override
+  String get lifeEventDisasterBody => '先確認大家都安全。然後拍照、聯絡保險公司，並補辦遺失的東西。';
+
+  @override
+  String get lifeEventCaringParent => '我在照顧父母';
+
+  @override
+  String get lifeEventCaringParentBody => '選擇你照顧的人。檢查他們的證件與保險，把需要的東西放在手邊。';
+
+  @override
+  String get lifeVariantCarQuestion => '你是買車還是賣車？';
+
+  @override
+  String get lifeVariantJobQuestion => '你是到職還是離職？';
+
+  @override
+  String get lifeVariantBuy => '買了';
+
+  @override
+  String get lifeVariantSell => '賣了';
+
+  @override
+  String get lifeVariantStart => '到職';
+
+  @override
+  String get lifeVariantLeave => '離職';
+
+  @override
+  String get lifeTaskRedirectPost => '申請將郵件轉寄到新地址';
+
+  @override
+  String get lifeTaskNewAddressEveryone => '把新地址告訴雇主、國稅局、醫師和學校';
+
+  @override
+  String get lifeTaskMoveUtilities => '終止或移轉電、水和網路帳戶';
+
+  @override
+  String get lifeTaskMeterReadings => '搬走當天抄錄錶數並拍照';
+
+  @override
+  String get lifeTaskSaveHomePapers => '把買賣或過戶文件的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => '交還鑰匙、遙控器和門禁卡';
+
+  @override
+  String get lifeTaskOfficialNameProof => '先取得新姓名的官方證明。大多數機關都會要求。';
+
+  @override
+  String get lifeTaskTellNameChange => '把新姓名告訴銀行、雇主、醫師和國稅局';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => '在電子郵件、手機和線上帳戶更改姓名';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => '把結婚證明的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => '查看你的保單和帳戶中誰是受益人';
+
+  @override
+  String get lifeTaskUpdateWill => '立下或更新遺囑';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => '把離婚確定證明的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => '關閉或分開共同帳戶，並更改共用密碼';
+
+  @override
+  String get lifeTaskRegisterBirth => '辦理出生登記並取得出生證明';
+
+  @override
+  String get lifeTaskAddBabyToFamily => '在家人中加入寶寶，以便追蹤證件';
+
+  @override
+  String get lifeTaskCarRegisterInName => '在法定期限內把車過戶到你名下';
+
+  @override
+  String get lifeTaskCarSavePapers => '把買賣合約的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => '告知監理單位你已賣車，並保留證明';
+
+  @override
+  String get lifeTaskCarRemoveTags => '取下 eTag、停車卡和個人物品';
+
+  @override
+  String get lifeTaskJobGiveDetails => '把銀行資料和稅籍編號提供給新雇主';
+
+  @override
+  String get lifeTaskJobJoinBenefits => '加入雇主提供的醫療保險和退休金';
+
+  @override
+  String get lifeTaskJobReturnItems => '歸還筆電、識別證或鑰匙等公司物品';
+
+  @override
+  String get lifeTaskJobLastPayslip => '索取最後一張薪資單和在職期間證明';
+
+  @override
+  String get lifeTaskJobAskBenefits => '詢問你的醫療保險和退休金會如何';
+
+  @override
+  String get lifeTaskJobUnemployment => '現在就詢問失業給付。申請通常有期限。';
+
+  @override
+  String get lifeTaskJobPauseDebits => '列出自動扣款和訂閱，能停的先停';
+
+  @override
+  String get lifeTaskStudySaveLetters => '把錄取通知和學費單的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => '查看獎學金、就學貸款或其他補助的期限';
+
+  @override
+  String get lifeTaskRetirePension => '詢問退休金如何及何時發放';
+
+  @override
+  String get lifeTaskRetireOwnCover => '如果公司的保險結束，自己投保醫療保險';
+
+  @override
+  String get lifeTaskCountryTellBankTax => '告訴銀行和國稅局你要離開';
+
+  @override
+  String get lifeTaskCountryScanCopies => '把每份重要證件的照片加入 Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => '查看是否需要換駕照';
+
+  @override
+  String get lifeTaskChildOwnId => '如有需要，協助他們申請自己的身分證';
+
+  @override
+  String get lifeTaskChildBankAccount => '協助他們開立自己的銀行帳戶';
+
+  @override
+  String get lifeTaskDeathCertificates => '申請幾份經認證的死亡證明副本';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => '通知銀行、保險公司和雇主';
+
+  @override
+  String get lifeTaskDeathFindWill => '找到遺囑並聯絡遺囑執行人';
+
+  @override
+  String get lifeTaskDeathStopReminders => '準備好時，關閉其紀錄的提醒';
+
+  @override
+  String get lifeTaskPhoneBlockSim => '打電話給電信業者停用 SIM 卡。這能防止換卡詐騙。';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => '打電話給銀行停用手機銀行';
+
+  @override
+  String get lifeTaskPhoneLockErase => '用其他裝置鎖定或清除手機';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => '更改電子郵件和社群媒體密碼';
+
+  @override
+  String get lifeTaskReportToPolice => '向警方報案並保留案件編號';
+
+  @override
+  String get lifeTaskDisasterSafePlace => '確認大家都安全並有地方住';
+
+  @override
+  String get lifeTaskDisasterPhotos => '清理前先拍下損害';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => '盡快聯絡保險公司';
+
+  @override
+  String get lifeTaskDisasterProofPack => '用證明資料包寄送證件副本';
+
+  @override
+  String get lifeTaskParentFindPapers => '了解他們的重要文件放在哪裡';
+
+  @override
+  String get lifeTaskParentPermission => '問問能否代他們與銀行、醫師和保險公司溝通';
+
+  @override
+  String get lifeTaskParentMedicines => '記下他們的用藥和醫師清單';
+
+  @override
+  String get lifePlanDoClaim => '申請理賠';
+
+  @override
+  String get lifePlanStatusClaimed => '已申請理賠';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '請在 $date 前開始。新的通常需要約 $weeks 週。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '請現在開始。新的通常需要約 $weeks 週。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => '你的計畫';
+
+  @override
+  String get lifePlanWhenHappened => '是什麼時候發生的？';
+
+  @override
+  String get lifePlanReminderNudge => '你的計畫還有事情要做。有空時打開看看。';
+
+  @override
+  String get lifePlanReminderCheckIn => '新卡和證件到了嗎？打開計畫確認一下。';
+
+  @override
+  String get lifePlanDoFirst => '先做這些';
+
+  @override
+  String get lifePlanSteps => '其他步驟';
+
+  @override
+  String get lifePlanAddOwnStep => '新增自己的步驟';
+
+  @override
+  String get lifePlanOwnStepHint => '例如：通知學校';
+
+  @override
+  String get lifePlanOwnStepLimit => '最多可新增 20 個自己的步驟。';
+
+  @override
+  String get lifePlanReadAloud => '朗讀';
+
+  @override
+  String get lifePlanStopReading => '停止朗讀';
+
+  @override
+  String get lifePlanReadAloudUnavailable => '這支手機不支援朗讀。';
+
+  @override
+  String get lifePlanProofPack => '製作證明資料包';
+
+  @override
+  String get lifePlanOpenFamily => '開啟家人';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '你刪除的 $count 筆紀錄視為已取消。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return '續辦這些通常需要約 $amount。';
+  }
+
+  @override
+  String get lifePlanSuggestMove => '要搬新家嗎？看看還有什麼需要更新。';
 }

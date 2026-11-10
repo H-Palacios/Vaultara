@@ -1899,5 +1899,136 @@
   "lifePlanReminderAfter": "ಕೆಲವು ಕೆಲಸಗಳು ಇನ್ನೂ ಉಳಿದಿವೆ. ಅವನ್ನು ಮುಗಿಸಲು ಯೋಜನೆ ತೆರೆಯಿರಿ.",
   "lifePlanSuggestCar": "ಕಾರು ಖರೀದಿಸಿದಿರಾ ಅಥವಾ ಮಾರಿದಿರಾ? ಇನ್ನೇನು ನವೀಕರಿಸಬೇಕು ನೋಡಿ.",
   "lifePlanSuggestTrip": "ಸ್ವಲ್ಪ ಸಮಯ ಅಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಾ?",
-  "lifePlanSuggestTripBody": "ಬೇರೆ ದೇಶಕ್ಕೆ ಸ್ಥಳಾಂತರದ ಯೋಜನೆ ಆರಂಭಿಸಿ. ಹೊರಡುವ ಮೊದಲು ಏನು ಸರಿಪಡಿಸಬೇಕು ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ."
+  "lifePlanSuggestTripBody": "ಬೇರೆ ದೇಶಕ್ಕೆ ಸ್ಥಳಾಂತರದ ಯೋಜನೆ ಆರಂಭಿಸಿ. ಹೊರಡುವ ಮೊದಲು ಏನು ಸರಿಪಡಿಸಬೇಕು ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ.",
+  "lifeGroupHome": "ಮನೆ",
+  "lifeGroupFamily": "ಕುಟುಂಬ",
+  "lifeGroupWork": "ಕೆಲಸ ಮತ್ತು ಅಧ್ಯಯನ",
+  "lifeGroupCarTravel": "ಕಾರು ಮತ್ತು ಪ್ರಯಾಣ",
+  "lifeGroupEmergency": "ಏನೋ ತಪ್ಪಾಗಿದೆ",
+  "lifeEventCarBuy": "ನಾನು ಕಾರು ಖರೀದಿಸಿದೆ",
+  "lifeEventCarBuyBody": "ಮನೆಗೆ ಓಡಿಸುವ ಮೊದಲು ವಿಮೆ ಮಾಡಿಸಿ, ನಂತರ ಕಾರನ್ನು ನಿಮ್ಮ ಹೆಸರಿಗೆ ಮಾಡಿಸಿ.",
+  "lifeEventCarSell": "ನಾನು ಕಾರು ಮಾರಿದೆ",
+  "lifeEventCarSellBody": "ಮಾರಾಟದ ಬಗ್ಗೆ ಪರವಾನಗಿ ಕಚೇರಿಗೆ ತಿಳಿಸಿ ಮತ್ತು ಕಾರು ನಿಮ್ಮದಲ್ಲದಾದಾಗ ವಿಮೆ ರದ್ದುಮಾಡಿ.",
+  "lifeEventJobStart": "ನಾನು ಹೊಸ ಕೆಲಸ ಆರಂಭಿಸುತ್ತಿದ್ದೇನೆ",
+  "lifeEventJobStartBody": "ಆರಂಭಿಸುವ ಮೊದಲು ನಿಮ್ಮ ಪರವಾನಗಿಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ನಂತರ ಕೆಲಸದ ಕಾರ್ಡ್ ಮತ್ತು ಸೌಲಭ್ಯಗಳನ್ನು ಹೊಂದಿಸಿ.",
+  "lifeEventJobLeave": "ನಾನು ಕೆಲಸ ಬಿಡುತ್ತಿದ್ದೇನೆ",
+  "lifeEventJobLeaveBody": "ಕೆಲಸದ ವಸ್ತುಗಳನ್ನು ಹಿಂದಿರುಗಿಸಿ ಮತ್ತು ಕೆಲಸದಿಂದ ಸಿಕ್ಕ ಕವರ್‌ಗೆ ಏನಾಗುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ.",
+  "lifeEventLostPhone": "ನನ್ನ ಫೋನ್ ಕಳೆದುಹೋಯಿತು ಅಥವಾ ಕಳ್ಳತನವಾಯಿತು",
+  "lifeEventLostPhoneBody": "ಬೇಗ ಕ್ರಮ ಕೈಗೊಳ್ಳಿ. ನಿಮ್ಮ ಫೋನ್ ಮತ್ತು ಸಿಮ್ ಕಾರ್ಡ್ ಇರುವವರು ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಮತ್ತು ಇಮೇಲ್‌ಗೆ ಪ್ರವೇಶಿಸಬಹುದು. ಮೊದಲ ಹಂತಗಳನ್ನು ಈಗಲೇ ಮಾಡಿ.",
+  "lifeEventJobLoss": "ನಾನು ಕೆಲಸ ಕಳೆದುಕೊಂಡೆ",
+  "lifeEventJobLossBody": "ಇದು ಕಷ್ಟ. ಒಂದೊಂದೇ ಹಂತ ತೆಗೆದುಕೊಳ್ಳಿ. ಕೆಲವು ಅರ್ಜಿಗಳಿಗೆ ಗಡುವು ಇರುತ್ತದೆ, ಅವುಗಳಿಂದ ಆರಂಭಿಸಿ.",
+  "lifeEventDisaster": "ಮನೆಯಲ್ಲಿ ಬೆಂಕಿ, ಪ್ರವಾಹ ಅಥವಾ ಕಳ್ಳತನ",
+  "lifeEventDisasterBody": "ಮೊದಲು ಎಲ್ಲರೂ ಸುರಕ್ಷಿತರಾಗಿದ್ದಾರೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ. ನಂತರ ಫೋಟೋ ತೆಗೆಯಿರಿ, ವಿಮಾ ಕಂಪನಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ ಮತ್ತು ಕಳೆದುಹೋದುದನ್ನು ಮತ್ತೆ ಪಡೆಯಿರಿ.",
+  "lifeEventCaringParent": "ನಾನು ಪೋಷಕರನ್ನು ನೋಡಿಕೊಳ್ಳುತ್ತಿದ್ದೇನೆ",
+  "lifeEventCaringParentBody": "ನೀವು ನೋಡಿಕೊಳ್ಳುವ ವ್ಯಕ್ತಿಯನ್ನು ಆರಿಸಿ. ಅವರ ದಾಖಲೆಗಳು ಮತ್ತು ಕವರ್ ಪರಿಶೀಲಿಸಿ, ಬೇಕಾದುದನ್ನು ಕೈಗೆಟುಕುವಂತೆ ಇಡಿ.",
+  "lifeVariantCarQuestion": "ನೀವು ಖರೀದಿಸಿದಿರಾ ಅಥವಾ ಮಾರಿದಿರಾ?",
+  "lifeVariantJobQuestion": "ನೀವು ಆರಂಭಿಸುತ್ತಿದ್ದೀರಾ ಅಥವಾ ಬಿಡುತ್ತಿದ್ದೀರಾ?",
+  "lifeVariantBuy": "ಖರೀದಿಸಿದೆ",
+  "lifeVariantSell": "ಮಾರಿದೆ",
+  "lifeVariantStart": "ಆರಂಭಿಸುತ್ತಿದ್ದೇನೆ",
+  "lifeVariantLeave": "ಬಿಡುತ್ತಿದ್ದೇನೆ",
+  "lifeTaskRedirectPost": "ನಿಮ್ಮ ಅಂಚೆಯನ್ನು ಹೊಸ ವಿಳಾಸಕ್ಕೆ ಕಳುಹಿಸುವಂತೆ ಕೇಳಿ",
+  "lifeTaskNewAddressEveryone": "ಉದ್ಯೋಗದಾತ, ತೆರಿಗೆ ಕಚೇರಿ, ವೈದ್ಯರು ಮತ್ತು ಶಾಲೆಗೆ ಹೊಸ ವಿಳಾಸ ನೀಡಿ",
+  "lifeTaskMoveUtilities": "ವಿದ್ಯುತ್, ನೀರು ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಖಾತೆಗಳನ್ನು ಮುಚ್ಚಿ ಅಥವಾ ವರ್ಗಾಯಿಸಿ",
+  "lifeTaskMeterReadings": "ಮನೆ ಬಿಡುವ ದಿನ ಮೀಟರ್ ರೀಡಿಂಗ್ ಮತ್ತು ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ",
+  "lifeTaskSaveHomePapers": "ಮಾರಾಟ ಅಥವಾ ವರ್ಗಾವಣೆ ದಾಖಲೆಗಳ ಫೋಟೋವನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskHandOverKeys": "ಕೀಲಿಗಳು, ರಿಮೋಟ್‌ಗಳು ಮತ್ತು ಪ್ರವೇಶ ಟ್ಯಾಗ್‌ಗಳನ್ನು ಒಪ್ಪಿಸಿ",
+  "lifeTaskOfficialNameProof": "ಮೊದಲು ನಿಮ್ಮ ಹೊಸ ಹೆಸರಿನ ಅಧಿಕೃತ ಪುರಾವೆ ಪಡೆಯಿರಿ. ಹೆಚ್ಚಿನ ಕಚೇರಿಗಳು ಅದನ್ನು ಕೇಳುತ್ತವೆ.",
+  "lifeTaskTellNameChange": "ಬ್ಯಾಂಕ್, ಉದ್ಯೋಗದಾತ, ವೈದ್ಯರು ಮತ್ತು ತೆರಿಗೆ ಕಚೇರಿಗೆ ಹೊಸ ಹೆಸರಿನ ಬಗ್ಗೆ ತಿಳಿಸಿ",
+  "lifeTaskUpdateOnlineAccounts": "ಇಮೇಲ್, ಫೋನ್ ಮತ್ತು ಆನ್‌ಲೈನ್ ಖಾತೆಗಳಲ್ಲಿ ಹೆಸರು ಬದಲಿಸಿ",
+  "lifeTaskSaveMarriageCertificate": "ವಿವಾಹ ಪ್ರಮಾಣಪತ್ರದ ಫೋಟೋವನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskCheckBeneficiaries": "ನಿಮ್ಮ ಪಾಲಿಸಿ ಮತ್ತು ಖಾತೆಗಳಲ್ಲಿ ಫಲಾನುಭವಿ ಯಾರು ಎಂದು ಪರಿಶೀಲಿಸಿ",
+  "lifeTaskUpdateWill": "ಉಯಿಲು ಮಾಡಿ ಅಥವಾ ನವೀಕರಿಸಿ",
+  "lifeTaskSaveDivorceOrder": "ವಿಚ್ಛೇದನದ ಅಂತಿಮ ಆದೇಶದ ಫೋಟೋವನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskSplitSharedAccounts": "ಜಂಟಿ ಖಾತೆಗಳನ್ನು ಮುಚ್ಚಿ ಅಥವಾ ಹಂಚಿ ಮತ್ತು ಹಂಚಿಕೆಯ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ಬದಲಿಸಿ",
+  "lifeTaskRegisterBirth": "ಜನನ ನೋಂದಣಿ ಮಾಡಿ ಮತ್ತು ಜನನ ಪ್ರಮಾಣಪತ್ರ ಪಡೆಯಿರಿ",
+  "lifeTaskAddBabyToFamily": "ಮಗುವಿನ ದಾಖಲೆಗಳನ್ನು ಗಮನಿಸಲು ಮಗುವನ್ನು ಕುಟುಂಬಕ್ಕೆ ಸೇರಿಸಿ",
+  "lifeTaskCarRegisterInName": "ಕಾನೂನು ಅನುಮತಿಸುವ ಅವಧಿಯೊಳಗೆ ಕಾರನ್ನು ನಿಮ್ಮ ಹೆಸರಿಗೆ ಮಾಡಿಸಿ",
+  "lifeTaskCarSavePapers": "ಮಾರಾಟ ಒಪ್ಪಂದದ ಫೋಟೋವನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskCarNotifySale": "ಕಾರು ಮಾರಿದ್ದನ್ನು ಪರವಾನಗಿ ಕಚೇರಿಗೆ ತಿಳಿಸಿ ಮತ್ತು ಪುರಾವೆ ಇಟ್ಟುಕೊಳ್ಳಿ",
+  "lifeTaskCarRemoveTags": "ಟೋಲ್ ಟ್ಯಾಗ್, ಪಾರ್ಕಿಂಗ್ ಕಾರ್ಡ್ ಮತ್ತು ವೈಯಕ್ತಿಕ ವಸ್ತುಗಳನ್ನು ತೆಗೆಯಿರಿ",
+  "lifeTaskJobGiveDetails": "ಹೊಸ ಉದ್ಯೋಗದಾತರಿಗೆ ಬ್ಯಾಂಕ್ ವಿವರ ಮತ್ತು ತೆರಿಗೆ ಸಂಖ್ಯೆ ನೀಡಿ",
+  "lifeTaskJobJoinBenefits": "ಉದ್ಯೋಗದಾತರು ನೀಡುವ ವೈದ್ಯಕೀಯ ಕವರ್ ಮತ್ತು ಪಿಂಚಣಿಗೆ ಸೇರಿ",
+  "lifeTaskJobReturnItems": "ಲ್ಯಾಪ್‌ಟಾಪ್, ಕಾರ್ಡ್ ಅಥವಾ ಕೀಲಿಗಳಂತಹ ಕೆಲಸದ ವಸ್ತುಗಳನ್ನು ಹಿಂದಿರುಗಿಸಿ",
+  "lifeTaskJobLastPayslip": "ಕೊನೆಯ ಸಂಬಳ ಚೀಟಿ ಮತ್ತು ಕೆಲಸದ ದಿನಾಂಕಗಳನ್ನು ದೃಢಪಡಿಸುವ ಪತ್ರ ಕೇಳಿ",
+  "lifeTaskJobAskBenefits": "ನಿಮ್ಮ ವೈದ್ಯಕೀಯ ಕವರ್ ಮತ್ತು ಪಿಂಚಣಿಗೆ ಏನಾಗುತ್ತದೆ ಎಂದು ಕೇಳಿ",
+  "lifeTaskJobUnemployment": "ನಿರುದ್ಯೋಗ ಭತ್ಯೆಯ ಬಗ್ಗೆ ಈಗಲೇ ಕೇಳಿ. ಅರ್ಜಿಗಳಿಗೆ ಹೆಚ್ಚಾಗಿ ಗಡುವು ಇರುತ್ತದೆ.",
+  "lifeTaskJobPauseDebits": "ಡೆಬಿಟ್ ಆರ್ಡರ್ ಮತ್ತು ಚಂದಾದಾರಿಕೆಗಳ ಪಟ್ಟಿ ಮಾಡಿ, ಸಾಧ್ಯವಾದವನ್ನು ನಿಲ್ಲಿಸಿ",
+  "lifeTaskStudySaveLetters": "ಪ್ರವೇಶ ಪತ್ರ ಮತ್ತು ಶುಲ್ಕ ವಿವರಗಳ ಫೋಟೋಗಳನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskStudyFunding": "ವಿದ್ಯಾರ್ಥಿವೇತನ, ಸಾಲ ಅಥವಾ ಇತರ ಸಹಾಯದ ಗಡುವುಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
+  "lifeTaskRetirePension": "ನಿಮ್ಮ ಪಿಂಚಣಿ ಹೇಗೆ ಮತ್ತು ಯಾವಾಗ ಪಾವತಿಯಾಗುತ್ತದೆ ಎಂದು ಕೇಳಿ",
+  "lifeTaskRetireOwnCover": "ಕೆಲಸದ ಕವರ್ ಮುಗಿದರೆ ನಿಮ್ಮದೇ ವೈದ್ಯಕೀಯ ಕವರ್ ಮಾಡಿಸಿ",
+  "lifeTaskCountryTellBankTax": "ನೀವು ಹೊರಡುತ್ತಿರುವುದಾಗಿ ಬ್ಯಾಂಕ್ ಮತ್ತು ತೆರಿಗೆ ಕಚೇರಿಗೆ ತಿಳಿಸಿ",
+  "lifeTaskCountryScanCopies": "ಪ್ರತಿ ಮುಖ್ಯ ದಾಖಲೆಯ ಫೋಟೋವನ್ನು Vaultara ಗೆ ಸೇರಿಸಿ",
+  "lifeTaskCountryLicenceRules": "ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್ ಬದಲಿಸಬೇಕೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+  "lifeTaskChildOwnId": "ಅಗತ್ಯವಿದ್ದರೆ ಸ್ವಂತ ಗುರುತಿನ ಚೀಟಿಗೆ ಅರ್ಜಿ ಹಾಕಲು ಸಹಾಯ ಮಾಡಿ",
+  "lifeTaskChildBankAccount": "ಸ್ವಂತ ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯಲು ಸಹಾಯ ಮಾಡಿ",
+  "lifeTaskDeathCertificates": "ಮರಣ ಪ್ರಮಾಣಪತ್ರದ ಕೆಲವು ದೃಢೀಕೃತ ಪ್ರತಿಗಳನ್ನು ಪಡೆಯಿರಿ",
+  "lifeTaskDeathTellOrganisations": "ಬ್ಯಾಂಕ್, ವಿಮಾ ಕಂಪನಿಗಳು ಮತ್ತು ಉದ್ಯೋಗದಾತರಿಗೆ ತಿಳಿಸಿ",
+  "lifeTaskDeathFindWill": "ಉಯಿಲು ಹುಡುಕಿ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ",
+  "lifeTaskDeathStopReminders": "ನೀವು ಸಿದ್ಧರಾದಾಗ, ಅವರ ದಾಖಲೆಗಳ ಜ್ಞಾಪನೆಗಳನ್ನು ಆಫ್ ಮಾಡಿ",
+  "lifeTaskPhoneBlockSim": "ಸಿಮ್ ಕಾರ್ಡ್ ಬ್ಲಾಕ್ ಮಾಡಿಸಲು ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಕರೆ ಮಾಡಿ. ಇದು ಸಿಮ್ ಸ್ವಾಪ್ ವಂಚನೆ ತಡೆಯುತ್ತದೆ.",
+  "lifeTaskPhoneBlockBanking": "ಫೋನ್‌ನಲ್ಲಿ ಬ್ಯಾಂಕಿಂಗ್ ಬ್ಲಾಕ್ ಮಾಡಿಸಲು ಬ್ಯಾಂಕ್‌ಗೆ ಕರೆ ಮಾಡಿ",
+  "lifeTaskPhoneLockErase": "ಇನ್ನೊಂದು ಸಾಧನದಿಂದ ಫೋನ್ ಲಾಕ್ ಮಾಡಿ ಅಥವಾ ಅಳಿಸಿ",
+  "lifeTaskPhoneChangePasswords": "ಇಮೇಲ್ ಮತ್ತು ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ಬದಲಿಸಿ",
+  "lifeTaskReportToPolice": "ಪೊಲೀಸರಿಗೆ ದೂರು ನೀಡಿ ಮತ್ತು ಪ್ರಕರಣ ಸಂಖ್ಯೆ ಇಟ್ಟುಕೊಳ್ಳಿ",
+  "lifeTaskDisasterSafePlace": "ಎಲ್ಲರೂ ಸುರಕ್ಷಿತರಾಗಿದ್ದಾರೆ ಮತ್ತು ಉಳಿಯಲು ಸ್ಥಳವಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ",
+  "lifeTaskDisasterPhotos": "ಸ್ವಚ್ಛಗೊಳಿಸುವ ಮೊದಲು ಹಾನಿಯ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+  "lifeTaskDisasterContactInsurer": "ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ ವಿಮಾ ಕಂಪನಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ",
+  "lifeTaskDisasterProofPack": "ಪುರಾವೆ ಪ್ಯಾಕ್ ಮೂಲಕ ನಿಮ್ಮ ದಾಖಲೆಗಳ ಪ್ರತಿಗಳನ್ನು ಕಳುಹಿಸಿ",
+  "lifeTaskParentFindPapers": "ಅವರ ಮುಖ್ಯ ದಾಖಲೆಗಳು ಎಲ್ಲಿವೆ ಎಂದು ತಿಳಿಯಿರಿ",
+  "lifeTaskParentPermission": "ಅವರ ಪರವಾಗಿ ಬ್ಯಾಂಕ್, ವೈದ್ಯರು ಮತ್ತು ವಿಮಾ ಕಂಪನಿಯೊಂದಿಗೆ ಮಾತನಾಡಬಹುದೇ ಎಂದು ಕೇಳಿ",
+  "lifeTaskParentMedicines": "ಅವರ ಔಷಧಗಳು ಮತ್ತು ವೈದ್ಯರ ಪಟ್ಟಿ ಇಟ್ಟುಕೊಳ್ಳಿ",
+  "lifePlanDoClaim": "ಕ್ಲೈಮ್ ಮಾಡಿ",
+  "lifePlanStatusClaimed": "ಕ್ಲೈಮ್ ಮಾಡಲಾಗಿದೆ",
+  "lifePlanStartBy": "{weeks, plural, =1{{date} ಒಳಗೆ ಆರಂಭಿಸಿ. ಹೊಸದು ಸಾಮಾನ್ಯವಾಗಿ ಸುಮಾರು ಒಂದು ವಾರ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ.} other{{date} ಒಳಗೆ ಆರಂಭಿಸಿ. ಹೊಸದು ಸಾಮಾನ್ಯವಾಗಿ ಸುಮಾರು {weeks} ವಾರ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{ಈಗಲೇ ಆರಂಭಿಸಿ. ಹೊಸದು ಸಾಮಾನ್ಯವಾಗಿ ಸುಮಾರು ಒಂದು ವಾರ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ.} other{ಈಗಲೇ ಆರಂಭಿಸಿ. ಹೊಸದು ಸಾಮಾನ್ಯವಾಗಿ ಸುಮಾರು {weeks} ವಾರ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ನಿಮ್ಮ ಯೋಜನೆ",
+  "lifePlanWhenHappened": "ಇದು ಯಾವಾಗ ಆಯಿತು?",
+  "lifePlanReminderNudge": "ನಿಮ್ಮ ಯೋಜನೆಯಲ್ಲಿ ಇನ್ನೂ ಕೆಲಸ ಬಾಕಿ ಇದೆ. ಸಮಯ ಸಿಕ್ಕಾಗ ತೆರೆಯಿರಿ.",
+  "lifePlanReminderCheckIn": "ನಿಮ್ಮ ಹೊಸ ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ದಾಖಲೆಗಳು ಬಂದವೇ? ಪರಿಶೀಲಿಸಲು ಯೋಜನೆ ತೆರೆಯಿರಿ.",
+  "lifePlanDoFirst": "ಮೊದಲು ಇದನ್ನು ಮಾಡಿ",
+  "lifePlanSteps": "ಇತರ ಹಂತಗಳು",
+  "lifePlanAddOwnStep": "ನಿಮ್ಮ ಹಂತ ಸೇರಿಸಿ",
+  "lifePlanOwnStepHint": "ಉದಾಹರಣೆಗೆ: ಶಾಲೆಗೆ ತಿಳಿಸಿ",
+  "lifePlanOwnStepLimit": "ನೀವು 20 ರವರೆಗೆ ನಿಮ್ಮ ಹಂತಗಳನ್ನು ಸೇರಿಸಬಹುದು.",
+  "lifePlanReadAloud": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ",
+  "lifePlanStopReading": "ಓದುವುದನ್ನು ನಿಲ್ಲಿಸಿ",
+  "lifePlanReadAloudUnavailable": "ಈ ಫೋನ್‌ನಲ್ಲಿ ಗಟ್ಟಿಯಾಗಿ ಓದುವ ಸೌಲಭ್ಯ ಇಲ್ಲ.",
+  "lifePlanProofPack": "ಪುರಾವೆ ಪ್ಯಾಕ್ ರಚಿಸಿ",
+  "lifePlanOpenFamily": "ಕುಟುಂಬ ತೆರೆಯಿರಿ",
+  "lifePlanRemoved": "{count, plural, =1{ನೀವು ಅಳಿಸಿದ 1 ದಾಖಲೆಯನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.} other{ನೀವು ಅಳಿಸಿದ {count} ದಾಖಲೆಗಳನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "ಇವುಗಳನ್ನು ನವೀಕರಿಸಲು ಸಾಮಾನ್ಯವಾಗಿ ಸುಮಾರು {amount} ಖರ್ಚಾಗುತ್ತದೆ.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "ಹೊಸ ಮನೆಗೆ ಹೋಗುತ್ತಿದ್ದೀರಾ? ಇನ್ನೇನು ನವೀಕರಿಸಬೇಕು ನೋಡಿ."
 }

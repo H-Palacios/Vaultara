@@ -6846,4 +6846,330 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Fara tsarin ƙaura zuwa wata ƙasa. Vaultara yana nuna abin da za a shirya kafin ka tafi.';
+
+  @override
+  String get lifeGroupHome => 'Gida';
+
+  @override
+  String get lifeGroupFamily => 'Iyali';
+
+  @override
+  String get lifeGroupWork => 'Aiki da karatu';
+
+  @override
+  String get lifeGroupCarTravel => 'Mota da tafiya';
+
+  @override
+  String get lifeGroupEmergency => 'Wani abu ya faru';
+
+  @override
+  String get lifeEventCarBuy => 'Na sayi mota';
+
+  @override
+  String get lifeEventCarBuyBody => 'Yi inshora kafin ka tuka ta gida, sannan ka mayar da motar da sunanka.';
+
+  @override
+  String get lifeEventCarSell => 'Na sayar da mota';
+
+  @override
+  String get lifeEventCarSellBody => 'Sanar da ofishin lasisi game da sayarwar, kuma ka soke inshora idan motar ba taka ba ce.';
+
+  @override
+  String get lifeEventJobStart => 'Zan fara sabon aiki';
+
+  @override
+  String get lifeEventJobStartBody => 'Duba izininka kafin ka fara, sannan ka shirya katin aiki da alfanu.';
+
+  @override
+  String get lifeEventJobLeave => 'Zan bar aikina';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Mayar da kayan aiki kuma ka duba abin da zai faru da inshorar da aikinka ya ba ka.';
+
+  @override
+  String get lifeEventLostPhone => 'Wayata ta ɓace ko an sace ta';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Yi sauri. Duk wanda ke da wayarka da katin SIM zai iya shiga bankinka da imel ɗinka. Yi matakan farko yanzu.';
+
+  @override
+  String get lifeEventJobLoss => 'Na rasa aikina';
+
+  @override
+  String get lifeEventJobLossBody => 'Wannan yana da wuya. Ɗauki mataki ɗaya bayan ɗaya. Wasu buƙatu suna da wa\'adi, don haka fara da su.';
+
+  @override
+  String get lifeEventDisaster => 'Gobara, ambaliya ko sata a gida';
+
+  @override
+  String get lifeEventDisasterBody => 'Da farko ka tabbata kowa yana lafiya. Sannan ka ɗauki hotuna, ka tuntuɓi kamfanin inshora ka maye gurbin abin da ya ɓace.';
+
+  @override
+  String get lifeEventCaringParent => 'Ina kula da mahaifi ko mahaifiya';
+
+  @override
+  String get lifeEventCaringParentBody => 'Zaɓi mutumin da kake kulawa da shi. Duba takardunsa da inshorarsa, ka ajiye abin da kake buƙata kusa.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ka saya ko ka sayar?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Kana farawa ko kana barin?';
+
+  @override
+  String get lifeVariantBuy => 'Na saya';
+
+  @override
+  String get lifeVariantSell => 'Na sayar';
+
+  @override
+  String get lifeVariantStart => 'Ina farawa';
+
+  @override
+  String get lifeVariantLeave => 'Ina barin';
+
+  @override
+  String get lifeTaskRedirectPost => 'Nemi a riƙa aika wasiƙunka zuwa sabon adireshinka';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Ba da sabon adireshinka ga ma\'aikacinka, ofishin haraji, likita da makaranta';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Rufe ko canja asusun wutar lantarki, ruwa da intanet';
+
+  @override
+  String get lifeTaskMeterReadings => 'Ɗauki karatun mita da hotuna a ranar da za ka tashi';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Ƙara hoton takardun sayarwa ko canja mallaka a Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Mika makullai, rimot da katunan shiga';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Da farko ka sami shaidar hukuma ta sabon sunanka. Yawancin ofisoshi suna nema.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Sanar da bankinka, ma\'aikacinka, likita da ofishin haraji sabon sunanka';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Canja sunanka a imel, waya da asusun kan layi';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Ƙara hoton takardar shaidar aure a Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Duba wanda aka sanya a matsayin mai cin gajiya a manufofinka da asusunka';
+
+  @override
+  String get lifeTaskUpdateWill => 'Rubuta ko sabunta wasiyya';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Ƙara hoton hukuncin saki na ƙarshe a Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Rufe ko raba asusun haɗin gwiwa kuma ka canja kalmomin sirri na haɗin gwiwa';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Yi rajistar haihuwa kuma ka sami takardar shaidar haihuwa';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Ƙara jaririn a Iyali don a bibiyi takardunsa';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Mayar da motar da sunanka cikin lokacin da doka ta ba da';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Ƙara hoton yarjejeniyar sayarwa a Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Sanar da ofishin lasisi cewa ka sayar da motar kuma ka ajiye shaidar';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Cire alamomin biyan hanya, katunan ajiye mota da kayanka';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Ba da bayanan bankinka da lambar harajinka ga sabon ma\'aikacinka';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Shiga inshorar lafiya da fansho da ma\'aikaci ke bayarwa';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Mayar da kayan aiki kamar kwamfuta, kati ko makullai';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Nemi takardar albashinka ta ƙarshe da wasiƙar da ke tabbatar da kwanakin aikinka';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Tambayi abin da zai faru da inshorar lafiyarka da fansho';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Tambayi game da tallafin rashin aikin yi yanzu. Buƙatu sau da yawa suna da wa\'adi.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Lissafa cire kuɗi na atomatik da biyan kuɗin kowane wata, ka dakatar da abin da za ka iya';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Ƙara hotunan wasiƙar karɓa da bayanan kuɗin makaranta a Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Duba wa\'adin tallafin karatu, lamuni ko wani tallafi';
+
+  @override
+  String get lifeTaskRetirePension => 'Tambayi yadda da lokacin da za a biya fansho ɗinka';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Shirya inshorar lafiyarka idan ta wurin aiki ta ƙare';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Sanar da bankinka da ofishin haraji cewa za ka tafi';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Ƙara hoton kowace muhimmiyar takarda a Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Duba ko dole ne ka canja lasisin tuƙinka';
+
+  @override
+  String get lifeTaskChildOwnId => 'Taimaka masa ya nemi katin shaidarsa idan yana buƙata';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Taimaka masa ya buɗe asusun bankinsa';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Sami kwafi kaɗan da aka tabbatar na takardar shaidar mutuwa';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Sanar da banki, kamfanonin inshora da ma\'aikaci';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Nemo wasiyyar kuma ka tuntuɓi mai zartarwa';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Idan ka shirya, kashe tunatarwa na bayanansa';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Kira kamfanin wayarka don a toshe katin SIM. Wannan yana hana zamba ta canja SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Kira bankinka don a toshe banki a wayar';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Kulle ko goge wayar daga wata na\'ura';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Canja kalmomin sirri na imel da kafofin sada zumunta';
+
+  @override
+  String get lifeTaskReportToPolice => 'Kai rahoto ga \'yan sanda kuma ka ajiye lambar ƙara';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Tabbata kowa yana lafiya kuma yana da wurin zama';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Ɗauki hotunan ɓarna kafin ka share';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Tuntuɓi kamfanin inshora da wuri-wuri';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Aika kwafin takardunka da Fakitin shaida';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Gano inda ake ajiye muhimman takardunsa';
+
+  @override
+  String get lifeTaskParentPermission => 'Tambayi ko za ka iya magana a madadinsa da bankinsa, likitansa da kamfanin inshorarsa';
+
+  @override
+  String get lifeTaskParentMedicines => 'Ajiye jerin magungunansa da likitocinsa';
+
+  @override
+  String get lifePlanDoClaim => 'Yi da\'awa';
+
+  @override
+  String get lifePlanStatusClaimed => 'An yi da\'awa';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Fara kafin $date. Sabo yakan ɗauki kusan makonni $weeks.',
+      one: 'Fara kafin $date. Sabo yakan ɗauki kusan mako guda.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Fara yanzu. Sabo yakan ɗauki kusan makonni $weeks.',
+      one: 'Fara yanzu. Sabo yakan ɗauki kusan mako guda.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Shirinka';
+
+  @override
+  String get lifePlanWhenHappened => 'Yaushe abin ya faru?';
+
+  @override
+  String get lifePlanReminderNudge => 'Shirinka yana da abubuwan da za a yi. Buɗe shi idan ka sami lokaci.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Sabbin katunanka da takardunka sun iso? Buɗe shirin don dubawa.';
+
+  @override
+  String get lifePlanDoFirst => 'Yi wannan da farko';
+
+  @override
+  String get lifePlanSteps => 'Sauran matakai';
+
+  @override
+  String get lifePlanAddOwnStep => 'Ƙara matakinka';
+
+  @override
+  String get lifePlanOwnStepHint => 'Misali: Sanar da makaranta';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Kana iya ƙara matakai naka har 20.';
+
+  @override
+  String get lifePlanReadAloud => 'Karanta da ƙarfi';
+
+  @override
+  String get lifePlanStopReading => 'Dakatar da karatu';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Karatu da ƙarfi ba ya samuwa a wannan wayar.';
+
+  @override
+  String get lifePlanProofPack => 'Ƙirƙiri fakitin shaida';
+
+  @override
+  String get lifePlanOpenFamily => 'Buɗe Iyali';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bayanai $count da ka goge ana ɗaukarsu a matsayin an soke.',
+      one: 'Bayani 1 da ka goge ana ɗaukarsa a matsayin an soke.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Sabunta waɗannan yakan kai kusan $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Kana ƙaura zuwa sabon gida? Duba abin da kake buƙatar sabuntawa.';
 }

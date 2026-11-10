@@ -8165,5 +8165,428 @@
   "lifePlanReminderAfter": "Some things are still left to do. Open the plan to finish them.",
   "lifePlanSuggestCar": "Bought or sold a car? See what else to update.",
   "lifePlanSuggestTrip": "Moving there for a while?",
-  "lifePlanSuggestTripBody": "Start a plan for moving to another country. Vaultara shows what to sort out before you go."
+  "lifePlanSuggestTripBody": "Start a plan for moving to another country. Vaultara shows what to sort out before you go.",
+  "lifeGroupHome": "Home",
+  "@lifeGroupHome": {
+    "description": "Group heading in the life events picker."
+  },
+  "lifeGroupFamily": "Family",
+  "@lifeGroupFamily": {
+    "description": "Group heading in the life events picker."
+  },
+  "lifeGroupWork": "Work and study",
+  "@lifeGroupWork": {
+    "description": "Group heading in the life events picker."
+  },
+  "lifeGroupCarTravel": "Car and travel",
+  "@lifeGroupCarTravel": {
+    "description": "Group heading in the life events picker."
+  },
+  "lifeGroupEmergency": "Something went wrong",
+  "@lifeGroupEmergency": {
+    "description": "Group heading in the life events picker."
+  },
+  "lifeEventCarBuy": "I bought a car",
+  "@lifeEventCarBuy": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventCarBuyBody": "Get cover before you drive it home, then put the car in your name.",
+  "@lifeEventCarBuyBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventCarSell": "I sold a car",
+  "@lifeEventCarSell": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventCarSellBody": "Tell the licensing office about the sale and cancel the cover once the car is no longer yours.",
+  "@lifeEventCarSellBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventJobStart": "I am starting a new job",
+  "@lifeEventJobStart": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventJobStartBody": "Check your permits before you start, then set up your work card and benefits.",
+  "@lifeEventJobStartBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventJobLeave": "I am leaving my job",
+  "@lifeEventJobLeave": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventJobLeaveBody": "Return work items and check what happens to the cover your job gave you.",
+  "@lifeEventJobLeaveBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventLostPhone": "I lost my phone or it was stolen",
+  "@lifeEventLostPhone": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventLostPhoneBody": "Act fast. Someone with your phone and SIM card can get into your bank and email. Do the first steps right away.",
+  "@lifeEventLostPhoneBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventJobLoss": "I lost my job",
+  "@lifeEventJobLoss": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventJobLossBody": "This is hard. Take it one step at a time. Some claims have a deadline, so start with those.",
+  "@lifeEventJobLossBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventDisaster": "Fire, flood or break-in at home",
+  "@lifeEventDisaster": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventDisasterBody": "Make sure everyone is safe first. Then take photos, contact your insurer and replace what was lost.",
+  "@lifeEventDisasterBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeEventCaringParent": "I am looking after a parent",
+  "@lifeEventCaringParent": {
+    "description": "Life event option, first person"
+  },
+  "lifeEventCaringParentBody": "Pick the person you are caring for. Check their documents and cover, and keep what you need close by.",
+  "@lifeEventCaringParentBody": {
+    "description": "Short explanation shown when starting a plan for this life event."
+  },
+  "lifeVariantCarQuestion": "Did you buy or sell?",
+  "@lifeVariantCarQuestion": {
+    "description": "Question in the car life event plan."
+  },
+  "lifeVariantJobQuestion": "Are you starting or leaving?",
+  "@lifeVariantJobQuestion": {
+    "description": "Question in the job life event plan."
+  },
+  "lifeVariantBuy": "Bought",
+  "@lifeVariantBuy": {
+    "description": "Answer: bought a car."
+  },
+  "lifeVariantSell": "Sold",
+  "@lifeVariantSell": {
+    "description": "Answer: sold a car."
+  },
+  "lifeVariantStart": "Starting",
+  "@lifeVariantStart": {
+    "description": "Answer: starting a job."
+  },
+  "lifeVariantLeave": "Leaving",
+  "@lifeVariantLeave": {
+    "description": "Answer: leaving a job."
+  },
+  "lifeTaskRedirectPost": "Ask for your post to be sent to your new address",
+  "@lifeTaskRedirectPost": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskNewAddressEveryone": "Give your new address to your employer, tax office, doctor and school",
+  "@lifeTaskNewAddressEveryone": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskMoveUtilities": "Close or move your electricity, water and internet accounts",
+  "@lifeTaskMoveUtilities": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskMeterReadings": "Take meter readings and photos on the day you move out",
+  "@lifeTaskMeterReadings": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskSaveHomePapers": "Add a photo of the sale or transfer papers to Vaultara",
+  "@lifeTaskSaveHomePapers": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskHandOverKeys": "Hand over keys, remotes and access tags",
+  "@lifeTaskHandOverKeys": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskOfficialNameProof": "Get official proof of your new name first. Most offices ask for it.",
+  "@lifeTaskOfficialNameProof": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskTellNameChange": "Tell your bank, employer, doctor and tax office about your new name",
+  "@lifeTaskTellNameChange": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskUpdateOnlineAccounts": "Change your name on your email, phone and online accounts",
+  "@lifeTaskUpdateOnlineAccounts": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskSaveMarriageCertificate": "Add a photo of the marriage certificate to Vaultara",
+  "@lifeTaskSaveMarriageCertificate": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCheckBeneficiaries": "Check who is named as beneficiary on your policies and accounts",
+  "@lifeTaskCheckBeneficiaries": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskUpdateWill": "Make or update a will",
+  "@lifeTaskUpdateWill": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskSaveDivorceOrder": "Add a photo of the final divorce order to Vaultara",
+  "@lifeTaskSaveDivorceOrder": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskSplitSharedAccounts": "Close or split shared accounts and change shared passwords",
+  "@lifeTaskSplitSharedAccounts": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskRegisterBirth": "Register the birth and get the birth certificate",
+  "@lifeTaskRegisterBirth": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskAddBabyToFamily": "Add the baby in Family so their documents are tracked",
+  "@lifeTaskAddBabyToFamily": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCarRegisterInName": "Put the car in your name within the time the law allows",
+  "@lifeTaskCarRegisterInName": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCarSavePapers": "Add a photo of the sale agreement to Vaultara",
+  "@lifeTaskCarSavePapers": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCarNotifySale": "Tell the licensing office you sold the car and keep the proof",
+  "@lifeTaskCarNotifySale": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCarRemoveTags": "Remove toll tags, parking cards and personal items",
+  "@lifeTaskCarRemoveTags": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobGiveDetails": "Give your bank details and tax number to your new employer",
+  "@lifeTaskJobGiveDetails": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobJoinBenefits": "Join the medical cover and pension your employer offers",
+  "@lifeTaskJobJoinBenefits": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobReturnItems": "Return work items such as a laptop, card or keys",
+  "@lifeTaskJobReturnItems": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobLastPayslip": "Ask for your last payslip and a letter that confirms your work dates",
+  "@lifeTaskJobLastPayslip": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobAskBenefits": "Ask what happens to your medical cover and pension",
+  "@lifeTaskJobAskBenefits": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobUnemployment": "Ask about unemployment benefits now. Claims often have a deadline.",
+  "@lifeTaskJobUnemployment": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskJobPauseDebits": "List your debit orders and subscriptions, and pause what you can",
+  "@lifeTaskJobPauseDebits": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskStudySaveLetters": "Add photos of your acceptance letter and fee statements to Vaultara",
+  "@lifeTaskStudySaveLetters": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskStudyFunding": "Check the deadlines for bursaries, loans or other funding",
+  "@lifeTaskStudyFunding": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskRetirePension": "Ask how and when your pension will be paid",
+  "@lifeTaskRetirePension": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskRetireOwnCover": "Arrange your own medical cover if your work cover ends",
+  "@lifeTaskRetireOwnCover": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCountryTellBankTax": "Tell your bank and tax office that you are leaving",
+  "@lifeTaskCountryTellBankTax": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCountryScanCopies": "Add a photo of every important document to Vaultara",
+  "@lifeTaskCountryScanCopies": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskCountryLicenceRules": "Check whether you must swap your driving licence",
+  "@lifeTaskCountryLicenceRules": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskChildOwnId": "Help them apply for their own ID if they need one",
+  "@lifeTaskChildOwnId": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskChildBankAccount": "Help them open their own bank account",
+  "@lifeTaskChildBankAccount": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDeathCertificates": "Get a few certified copies of the death certificate",
+  "@lifeTaskDeathCertificates": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDeathTellOrganisations": "Tell the bank, insurers and employer",
+  "@lifeTaskDeathTellOrganisations": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDeathFindWill": "Find the will and contact the executor",
+  "@lifeTaskDeathFindWill": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDeathStopReminders": "When you are ready, turn off reminders for their records",
+  "@lifeTaskDeathStopReminders": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskPhoneBlockSim": "Call your network to block the SIM card. This stops SIM swap fraud.",
+  "@lifeTaskPhoneBlockSim": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskPhoneBlockBanking": "Call your bank to block banking on the phone",
+  "@lifeTaskPhoneBlockBanking": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskPhoneLockErase": "Lock or erase the phone from another device",
+  "@lifeTaskPhoneLockErase": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskPhoneChangePasswords": "Change your email and social media passwords",
+  "@lifeTaskPhoneChangePasswords": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskReportToPolice": "Report it to the police and keep the case number",
+  "@lifeTaskReportToPolice": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDisasterSafePlace": "Make sure everyone is safe and has a place to stay",
+  "@lifeTaskDisasterSafePlace": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDisasterPhotos": "Take photos of the damage before you clean up",
+  "@lifeTaskDisasterPhotos": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDisasterContactInsurer": "Contact your insurer as soon as you can",
+  "@lifeTaskDisasterContactInsurer": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskDisasterProofPack": "Send copies of your documents with Proof pack",
+  "@lifeTaskDisasterProofPack": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskParentFindPapers": "Find out where their important papers are kept",
+  "@lifeTaskParentFindPapers": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskParentPermission": "Ask if you may speak to their bank, doctor and insurer for them",
+  "@lifeTaskParentPermission": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifeTaskParentMedicines": "Keep a list of their medicines and doctors",
+  "@lifeTaskParentMedicines": {
+    "description": "A step in a life event plan that is not a saved record. Imperative, short."
+  },
+  "lifePlanDoClaim": "Make a claim",
+  "@lifePlanDoClaim": {
+    "description": "What to do with a record in a life event plan, such as a life policy after a death."
+  },
+  "lifePlanStatusClaimed": "Claimed",
+  "@lifePlanStatusClaimed": {
+    "description": "Status of a record in a life event plan."
+  },
+  "lifePlanStartBy": "{weeks, plural, =1{Start by {date}. A new one usually takes about a week.} other{Start by {date}. A new one usually takes about {weeks} weeks.}}",
+  "@lifePlanStartBy": {
+    "description": "When to start renewing so a new document is ready by the date of the event.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Start now. A new one usually takes about a week.} other{Start now. A new one usually takes about {weeks} weeks.}}",
+  "@lifePlanStartNow": {
+    "description": "Shown when the suggested start date has passed.",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Your plan",
+  "@lifePlanPrivateTitle": {
+    "description": "Notification title for a private life event, so the event does not show on a locked screen."
+  },
+  "lifePlanWhenHappened": "When did it happen?",
+  "@lifePlanWhenHappened": {
+    "description": "Date question for a life event that has already happened."
+  },
+  "lifePlanReminderNudge": "Your plan still has things to do. Open it when you have a moment.",
+  "@lifePlanReminderNudge": {
+    "description": "Reminder for a life event plan that has no date."
+  },
+  "lifePlanReminderCheckIn": "Did your new cards and documents arrive? Open the plan to check.",
+  "@lifePlanReminderCheckIn": {
+    "description": "Reminder 30 days after the date of a life event plan."
+  },
+  "lifePlanDoFirst": "Do this first",
+  "@lifePlanDoFirst": {
+    "description": "Heading for urgent steps in a life event plan."
+  },
+  "lifePlanSteps": "Other steps",
+  "@lifePlanSteps": {
+    "description": "Heading for steps in a life event plan that are not saved records."
+  },
+  "lifePlanAddOwnStep": "Add your own step",
+  "@lifePlanAddOwnStep": {
+    "description": "Button and dialog title to add a step to a life event plan."
+  },
+  "lifePlanOwnStepHint": "For example: Tell the school",
+  "@lifePlanOwnStepHint": {
+    "description": "Hint in the field for a step the user adds."
+  },
+  "lifePlanOwnStepLimit": "You can add up to 20 of your own steps.",
+  "@lifePlanOwnStepLimit": {
+    "description": "Shown when the user has added the most steps allowed."
+  },
+  "lifePlanReadAloud": "Read aloud",
+  "@lifePlanReadAloud": {
+    "description": "Button that reads a life event plan aloud."
+  },
+  "lifePlanStopReading": "Stop reading",
+  "@lifePlanStopReading": {
+    "description": "Button that stops reading a life event plan aloud."
+  },
+  "lifePlanReadAloudUnavailable": "Reading aloud is not available on this phone.",
+  "@lifePlanReadAloudUnavailable": {
+    "description": "Shown when text to speech is not available."
+  },
+  "lifePlanProofPack": "Make a proof pack",
+  "@lifePlanProofPack": {
+    "description": "Opens Proof pack with the records of a life event plan ticked."
+  },
+  "lifePlanOpenFamily": "Open Family",
+  "@lifePlanOpenFamily": {
+    "description": "Button that opens the Family screen from a life event plan."
+  },
+  "lifePlanRemoved": "{count, plural, =1{1 record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}",
+  "@lifePlanRemoved": {
+    "description": "Records deleted after a life event plan started.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Renewing these usually costs about {amount}.",
+  "@lifePlanCosts": {
+    "description": "The renewal costs of the records in a life event plan.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Moving to a new home? See what else to update.",
+  "@lifePlanSuggestMove": {
+    "description": "Offer to start a moving plan after a new lease or home cover is saved."
+  }
 }

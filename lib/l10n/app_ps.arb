@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "لا څه کارونه پاتې دي. د بشپړولو لپاره پلان پرانیزئ.",
   "lifePlanSuggestCar": "موټر مو واخیست یا وپلوره؟ وګورئ نور څه باید تازه شي.",
   "lifePlanSuggestTrip": "د یو څه وخت لپاره هلته کډه کوئ؟",
-  "lifePlanSuggestTripBody": "بل هېواد ته د کډې پلان پیل کړئ. Vaultara ښيي چې له تګ مخکې څه سم کړئ."
+  "lifePlanSuggestTripBody": "بل هېواد ته د کډې پلان پیل کړئ. Vaultara ښيي چې له تګ مخکې څه سم کړئ.",
+  "lifeGroupHome": "کور",
+  "lifeGroupFamily": "کورنۍ",
+  "lifeGroupWork": "کار او زده کړه",
+  "lifeGroupCarTravel": "موټر او سفر",
+  "lifeGroupEmergency": "یو څه ستونزه پېښه شوه",
+  "lifeEventCarBuy": "ما موټر واخیست",
+  "lifeEventCarBuyBody": "مخکې له دې چې یې کور ته یوسئ بیمه یې کړئ، بیا موټر په خپل نوم ثبت کړئ.",
+  "lifeEventCarSell": "ما موټر وپلوره",
+  "lifeEventCarSellBody": "د پلور په اړه د جواز دفتر ته خبر ورکړئ او کله چې موټر نور ستاسو نه وي بیمه لغوه کړئ.",
+  "lifeEventJobStart": "زه نوې دنده پیلوم",
+  "lifeEventJobStartBody": "له پیل مخکې خپلې اجازې وګورئ، بیا د کار کارت او ګټې برابرې کړئ.",
+  "lifeEventJobLeave": "زه دنده پرېږدم",
+  "lifeEventJobLeaveBody": "د کار توکي بېرته ورکړئ او وګورئ چې د دندې بیمه به څه کیږي.",
+  "lifeEventLostPhone": "زما ټیلیفون ورک شو یا غلا شو",
+  "lifeEventLostPhoneBody": "ژر عمل وکړئ. څوک چې ستاسو ټیلیفون او سیم کارت لري ستاسو بانک او برېښنالیک ته ننوتلی شي. لومړني ګامونه همدا اوس واخلئ.",
+  "lifeEventJobLoss": "زما دنده له لاسه ووته",
+  "lifeEventJobLossBody": "دا سخته ده. ګام په ګام لاړ شئ. ځینې غوښتنې وروستۍ نېټه لري، نو له هغو پیل وکړئ.",
+  "lifeEventDisaster": "په کور کې اور، سیلاب یا غلا",
+  "lifeEventDisasterBody": "لومړی ډاډ ترلاسه کړئ چې ټول خوندي دي. بیا عکسونه واخلئ، له بیمې شرکت سره اړیکه ونیسئ او ورک شوي شیان بیا جوړ کړئ.",
+  "lifeEventCaringParent": "زه د مور یا پلار پالنه کوم",
+  "lifeEventCaringParentBody": "هغه کس وټاکئ چې پالنه یې کوئ. د هغه اسناد او بیمه وګورئ او اړین شیان نږدې وساتئ.",
+  "lifeVariantCarQuestion": "تاسو واخیست که وپلوره؟",
+  "lifeVariantJobQuestion": "تاسو پیلوئ که پرېږدئ؟",
+  "lifeVariantBuy": "ما واخیست",
+  "lifeVariantSell": "ما وپلوره",
+  "lifeVariantStart": "پیلوم",
+  "lifeVariantLeave": "پرېږدم",
+  "lifeTaskRedirectPost": "وغواړئ چې ستاسو لیکونه نوي پتې ته ولېږل شي",
+  "lifeTaskNewAddressEveryone": "نوې پته کارګمارونکي، د مالیې دفتر، ډاکټر او ښوونځي ته ورکړئ",
+  "lifeTaskMoveUtilities": "د برېښنا، اوبو او انټرنېټ حسابونه وتړئ یا یې انتقال کړئ",
+  "lifeTaskMeterReadings": "د وتلو په ورځ د میټر لوستنې ولیکئ او عکسونه واخلئ",
+  "lifeTaskSaveHomePapers": "د پلور یا انتقال د اسنادو عکس Vaultara ته ورزیات کړئ",
+  "lifeTaskHandOverKeys": "کیلۍ، ریموټونه او د ننوتلو کارتونه وسپارئ",
+  "lifeTaskOfficialNameProof": "لومړی د خپل نوي نوم رسمي ثبوت ترلاسه کړئ. ډېری دفترونه یې غواړي.",
+  "lifeTaskTellNameChange": "بانک، کارګمارونکي، ډاکټر او د مالیې دفتر ته د نوي نوم په اړه ووایئ",
+  "lifeTaskUpdateOnlineAccounts": "په برېښنالیک، ټیلیفون او آنلاین حسابونو کې خپل نوم بدل کړئ",
+  "lifeTaskSaveMarriageCertificate": "د نکاح سند عکس Vaultara ته ورزیات کړئ",
+  "lifeTaskCheckBeneficiaries": "وګورئ چې ستاسو په بیمه پاڼو او حسابونو کې ګټه اخیستونکی څوک دی",
+  "lifeTaskUpdateWill": "وصیت ولیکئ یا یې تازه کړئ",
+  "lifeTaskSaveDivorceOrder": "د طلاق د وروستۍ پرېکړې عکس Vaultara ته ورزیات کړئ",
+  "lifeTaskSplitSharedAccounts": "ګډ حسابونه وتړئ یا یې ووېشئ او ګډ پاسورډونه بدل کړئ",
+  "lifeTaskRegisterBirth": "زیږون ثبت کړئ او د زیږون سند واخلئ",
+  "lifeTaskAddBabyToFamily": "ماشوم کورنۍ ته ورزیات کړئ چې اسناد یې وڅارل شي",
+  "lifeTaskCarRegisterInName": "موټر د قانون په ټاکلي وخت کې په خپل نوم ثبت کړئ",
+  "lifeTaskCarSavePapers": "د پلور تړون عکس Vaultara ته ورزیات کړئ",
+  "lifeTaskCarNotifySale": "د جواز دفتر ته ووایئ چې موټر مو پلورلی او ثبوت وساتئ",
+  "lifeTaskCarRemoveTags": "د سړک د محصول ټګونه، د پارکینګ کارتونه او شخصي توکي لرې کړئ",
+  "lifeTaskJobGiveDetails": "نوي کارګمارونکي ته خپل بانکي معلومات او د مالیې شمېره ورکړئ",
+  "lifeTaskJobJoinBenefits": "د کارګمارونکي له خوا وړاندې شوې روغتیایي بیمې او تقاعد سره یوځای شئ",
+  "lifeTaskJobReturnItems": "د کار توکي لکه لپټاپ، کارت یا کیلۍ بېرته ورکړئ",
+  "lifeTaskJobLastPayslip": "وروستۍ معاش پاڼه او د کار نېټې تاییدوونکی لیک وغواړئ",
+  "lifeTaskJobAskBenefits": "وپوښتئ چې ستاسو روغتیایي بیمه او تقاعد به څه کیږي",
+  "lifeTaskJobUnemployment": "همدا اوس د بېکارۍ مرستې په اړه وپوښتئ. غوښتنې اکثره وروستۍ نېټه لري.",
+  "lifeTaskJobPauseDebits": "اتوماتیک تادیات او ګډونونه ولیکئ او څه چې کولی شئ ودروئ",
+  "lifeTaskStudySaveLetters": "د منلو لیک او د فیس د صورت حسابونو عکسونه Vaultara ته ورزیات کړئ",
+  "lifeTaskStudyFunding": "د بورسونو، پورونو یا نورو مرستو وروستۍ نېټې وګورئ",
+  "lifeTaskRetirePension": "وپوښتئ چې تقاعد به مو څنګه او کله ورکول کیږي",
+  "lifeTaskRetireOwnCover": "که د کار بیمه پای ته ورسیده، خپله روغتیایي بیمه برابره کړئ",
+  "lifeTaskCountryTellBankTax": "بانک او د مالیې دفتر ته ووایئ چې ځئ",
+  "lifeTaskCountryScanCopies": "د هر مهم سند عکس Vaultara ته ورزیات کړئ",
+  "lifeTaskCountryLicenceRules": "وګورئ چې آیا د موټر چلولو جواز بدلول اړین دي",
+  "lifeTaskChildOwnId": "که اړتیا وي، د خپل تذکرې غوښتنې کې مرسته ورسره وکړئ",
+  "lifeTaskChildBankAccount": "د خپل بانکي حساب په پرانیستلو کې مرسته ورسره وکړئ",
+  "lifeTaskDeathCertificates": "د مړینې سند څو تصدیق شوې کاپۍ ترلاسه کړئ",
+  "lifeTaskDeathTellOrganisations": "بانک، د بیمې شرکتونه او کارګمارونکی خبر کړئ",
+  "lifeTaskDeathFindWill": "وصیت ومومئ او له اجرا کوونکي سره اړیکه ونیسئ",
+  "lifeTaskDeathStopReminders": "کله چې چمتو وئ، د هغه د ریکارډونو یادونې بندې کړئ",
+  "lifeTaskPhoneBlockSim": "د سیم کارت د بندولو لپاره خپل شبکې ته زنګ ووهئ. دا د سیم بدلولو درغلي مخه نیسي.",
+  "lifeTaskPhoneBlockBanking": "په ټیلیفون کې د بانکدارۍ د بندولو لپاره بانک ته زنګ ووهئ",
+  "lifeTaskPhoneLockErase": "ټیلیفون له بل وسیلې قفل یا پاک کړئ",
+  "lifeTaskPhoneChangePasswords": "د برېښنالیک او ټولنیزو رسنیو پاسورډونه بدل کړئ",
+  "lifeTaskReportToPolice": "پولیسو ته راپور ورکړئ او د قضیې شمېره وساتئ",
+  "lifeTaskDisasterSafePlace": "ډاډ ترلاسه کړئ چې ټول خوندي دي او د اوسېدو ځای لري",
+  "lifeTaskDisasterPhotos": "له پاکولو مخکې د زیان عکسونه واخلئ",
+  "lifeTaskDisasterContactInsurer": "څومره ژر چې کیږي له بیمې شرکت سره اړیکه ونیسئ",
+  "lifeTaskDisasterProofPack": "د خپلو اسنادو کاپۍ د ثبوت کڅوړې سره ولېږئ",
+  "lifeTaskParentFindPapers": "معلومه کړئ چې د هغه مهم کاغذونه چېرته ساتل کیږي",
+  "lifeTaskParentPermission": "وپوښتئ چې آیا د هغه پر ځای له بانک، ډاکټر او بیمې شرکت سره خبرې کولی شئ",
+  "lifeTaskParentMedicines": "د هغه د درملو او ډاکټرانو لیست وساتئ",
+  "lifePlanDoClaim": "د تاوان غوښتنه وکړئ",
+  "lifePlanStatusClaimed": "غوښتنه شوې",
+  "lifePlanStartBy": "{weeks, plural, one{تر {date} پورې پیل وکړئ. نوی معمولاً شاوخوا {weeks} اونۍ وخت نیسي.} other{تر {date} پورې پیل وکړئ. نوی معمولاً شاوخوا {weeks} اونۍ وخت نیسي.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{همدا اوس پیل وکړئ. نوی معمولاً شاوخوا {weeks} اونۍ وخت نیسي.} other{همدا اوس پیل وکړئ. نوی معمولاً شاوخوا {weeks} اونۍ وخت نیسي.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ستاسو پلان",
+  "lifePlanWhenHappened": "دا کله پېښ شو؟",
+  "lifePlanReminderNudge": "ستاسو پلان لا هم کارونه لري. کله چې وخت ولرئ پرانیزئ یې.",
+  "lifePlanReminderCheckIn": "ستاسو نوي کارتونه او اسناد راورسېدل؟ د کتلو لپاره پلان پرانیزئ.",
+  "lifePlanDoFirst": "لومړی دا وکړئ",
+  "lifePlanSteps": "نور ګامونه",
+  "lifePlanAddOwnStep": "خپل ګام ورزیات کړئ",
+  "lifePlanOwnStepHint": "د بېلګې په توګه: ښوونځي ته ووایئ",
+  "lifePlanOwnStepLimit": "تاسو تر 20 پورې خپل ګامونه ورزیاتولی شئ.",
+  "lifePlanReadAloud": "په لوړ غږ ولولئ",
+  "lifePlanStopReading": "لوستل ودروئ",
+  "lifePlanReadAloudUnavailable": "په دې ټیلیفون کې په لوړ غږ لوستل نشته.",
+  "lifePlanProofPack": "د ثبوت کڅوړه جوړه کړئ",
+  "lifePlanOpenFamily": "کورنۍ پرانیزئ",
+  "lifePlanRemoved": "{count, plural, one{{count} ریکارډ چې تاسو ړنګ کړ لغوه شوی ګڼل کیږي.} other{{count} ریکارډونه چې تاسو ړنګ کړل لغوه شوي ګڼل کیږي.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "د دې نوي کول معمولاً شاوخوا {amount} لګښت لري.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "نوي کور ته ځئ؟ وګورئ نور څه باید تازه کړئ."
 }

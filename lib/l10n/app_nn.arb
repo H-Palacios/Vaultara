@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Noko står framleis att. Opne planen for å gjere det ferdig.",
   "lifePlanSuggestCar": "Kjøpt eller selt bil? Sjå kva anna du må oppdatere.",
   "lifePlanSuggestTrip": "Flyttar du dit ei stund?",
-  "lifePlanSuggestTripBody": "Start ein plan for å flytte til eit anna land. Vaultara viser kva du må ordne før du reiser."
+  "lifePlanSuggestTripBody": "Start ein plan for å flytte til eit anna land. Vaultara viser kva du må ordne før du reiser.",
+  "lifeGroupHome": "Heim",
+  "lifeGroupFamily": "Familie",
+  "lifeGroupWork": "Jobb og studium",
+  "lifeGroupCarTravel": "Bil og reise",
+  "lifeGroupEmergency": "Noko gjekk gale",
+  "lifeEventCarBuy": "Eg har kjøpt bil",
+  "lifeEventCarBuyBody": "Forsikra bilen før du køyrer han heim, og registrer han så på deg.",
+  "lifeEventCarSell": "Eg har selt bil",
+  "lifeEventCarSellBody": "Meld salet til Statens vegvesen, og sei opp forsikringa når bilen ikkje lenger er din.",
+  "lifeEventJobStart": "Eg byrjar i ny jobb",
+  "lifeEventJobStartBody": "Sjekk løyva dine før du byrjar, og ordne så tilgangskort og gode.",
+  "lifeEventJobLeave": "Eg sluttar i jobben",
+  "lifeEventJobLeaveBody": "Lever tilbake jobbutstyr, og sjekk kva som skjer med forsikringane jobben gav deg.",
+  "lifeEventLostPhone": "Eg har mista telefonen, eller han er stolen",
+  "lifeEventLostPhoneBody": "Handle raskt. Den som har telefonen og SIM-kortet ditt, kan kome inn i banken og e-posten din. Ta dei første stega med ein gong.",
+  "lifeEventJobLoss": "Eg har mista jobben",
+  "lifeEventJobLossBody": "Dette er tungt. Ta eitt steg om gongen. Nokre søknader har frist, så byrj med dei.",
+  "lifeEventDisaster": "Brann, flaum eller innbrot heime",
+  "lifeEventDisasterBody": "Sørg først for at alle er trygge. Ta så bilete, kontakt forsikringsselskapet og erstatt det som gjekk tapt.",
+  "lifeEventCaringParent": "Eg tek meg av ein forelder",
+  "lifeEventCaringParentBody": "Vel personen du tek deg av. Sjekk dokumenta og forsikringane deira, og ha det du treng for handa.",
+  "lifeVariantCarQuestion": "Kjøpte eller selde du?",
+  "lifeVariantJobQuestion": "Byrjar eller sluttar du?",
+  "lifeVariantBuy": "Kjøpt",
+  "lifeVariantSell": "Selt",
+  "lifeVariantStart": "Byrjar",
+  "lifeVariantLeave": "Sluttar",
+  "lifeTaskRedirectPost": "Be om å få posten send vidare til ny adresse",
+  "lifeTaskNewAddressEveryone": "Gi den nye adressa til arbeidsgjevar, Skatteetaten, lege og skule",
+  "lifeTaskMoveUtilities": "Sei opp eller flytt straum, vatn og internett",
+  "lifeTaskMeterReadings": "Les av målarane og ta bilete den dagen du flyttar ut",
+  "lifeTaskSaveHomePapers": "Legg til eit bilete av kjøps- eller overdragingsdokumenta i Vaultara",
+  "lifeTaskHandOverKeys": "Lever nøklar, fjernkontrollar og tilgangsbrikker",
+  "lifeTaskOfficialNameProof": "Skaff først offisiell stadfesting på det nye namnet. Dei fleste kontor ber om det.",
+  "lifeTaskTellNameChange": "Sei frå om det nye namnet til bank, arbeidsgjevar, lege og Skatteetaten",
+  "lifeTaskUpdateOnlineAccounts": "Endre namnet på e-post, telefon og nettkontoar",
+  "lifeTaskSaveMarriageCertificate": "Legg til eit bilete av vigselsattesten i Vaultara",
+  "lifeTaskCheckBeneficiaries": "Sjekk kven som står som tilgodesett på forsikringar og kontoar",
+  "lifeTaskUpdateWill": "Lag eller oppdater testament",
+  "lifeTaskSaveDivorceOrder": "Legg til eit bilete av den endelege skilsmissebevillinga i Vaultara",
+  "lifeTaskSplitSharedAccounts": "Avslutt eller del felles kontoar og byt felles passord",
+  "lifeTaskRegisterBirth": "Registrer fødselen og få fødselsattest",
+  "lifeTaskAddBabyToFamily": "Legg til babyen i Familie så dokumenta vert følgde opp",
+  "lifeTaskCarRegisterInName": "Registrer bilen på deg innan fristen lova gir",
+  "lifeTaskCarSavePapers": "Legg til eit bilete av kjøpekontrakten i Vaultara",
+  "lifeTaskCarNotifySale": "Meld til Statens vegvesen at du har selt bilen, og ta vare på stadfestinga",
+  "lifeTaskCarRemoveTags": "Fjern bompengebrikke, parkeringskort og personlege ting",
+  "lifeTaskJobGiveDetails": "Gi den nye arbeidsgjevaren kontonummer og skattekort",
+  "lifeTaskJobJoinBenefits": "Meld deg på helseforsikring og pensjon som arbeidsgjevaren tilbyr",
+  "lifeTaskJobReturnItems": "Lever tilbake jobbutstyr som PC, kort eller nøklar",
+  "lifeTaskJobLastPayslip": "Be om siste lønsslipp og ein attest som stadfester arbeidsperioden",
+  "lifeTaskJobAskBenefits": "Spør kva som skjer med helseforsikring og pensjon",
+  "lifeTaskJobUnemployment": "Spør om dagpengar no. Søknader har ofte frist.",
+  "lifeTaskJobPauseDebits": "Lag ei liste over avtalegiro og abonnement, og set på pause det du kan",
+  "lifeTaskStudySaveLetters": "Legg til bilete av opptaksbrev og fakturaer for skulepengar i Vaultara",
+  "lifeTaskStudyFunding": "Sjekk fristane for stipend, lån eller anna støtte",
+  "lifeTaskRetirePension": "Spør korleis og når pensjonen vert utbetalt",
+  "lifeTaskRetireOwnCover": "Ordne eiga helseforsikring dersom den frå jobben fell bort",
+  "lifeTaskCountryTellBankTax": "Sei frå til banken og Skatteetaten at du flyttar",
+  "lifeTaskCountryScanCopies": "Legg til eit bilete av kvart viktig dokument i Vaultara",
+  "lifeTaskCountryLicenceRules": "Sjekk om du må byte førarkort",
+  "lifeTaskChildOwnId": "Hjelp dei å søkje om eigen ID om dei treng det",
+  "lifeTaskChildBankAccount": "Hjelp dei å opprette eigen bankkonto",
+  "lifeTaskDeathCertificates": "Skaff nokre stadfesta kopiar av dødsattesten",
+  "lifeTaskDeathTellOrganisations": "Sei frå til bank, forsikringsselskap og arbeidsgjevar",
+  "lifeTaskDeathFindWill": "Finn testamentet og kontakt bustyraren",
+  "lifeTaskDeathStopReminders": "Når du er klar, slå av påminningar for postane deira",
+  "lifeTaskPhoneBlockSim": "Ring mobilselskapet og sperr SIM-kortet. Det stoppar SIM-svindel.",
+  "lifeTaskPhoneBlockBanking": "Ring banken og sperr nettbanken på telefonen",
+  "lifeTaskPhoneLockErase": "Lås eller slett telefonen frå ei anna eining",
+  "lifeTaskPhoneChangePasswords": "Byt passord til e-post og sosiale medium",
+  "lifeTaskReportToPolice": "Meld det til politiet og ta vare på saksnummeret",
+  "lifeTaskDisasterSafePlace": "Sørg for at alle er trygge og har ein stad å bu",
+  "lifeTaskDisasterPhotos": "Ta bilete av skadane før du ryddar",
+  "lifeTaskDisasterContactInsurer": "Kontakt forsikringsselskapet så snart du kan",
+  "lifeTaskDisasterProofPack": "Send kopiar av dokumenta dine med Dokumentpakke",
+  "lifeTaskParentFindPapers": "Finn ut kvar dei viktige papira er",
+  "lifeTaskParentPermission": "Spør om du kan snakke med bank, lege og forsikring på vegner av dei",
+  "lifeTaskParentMedicines": "Ha ei liste over medisinane og legane deira",
+  "lifePlanDoClaim": "Meld krav",
+  "lifePlanStatusClaimed": "Krav meldt",
+  "lifePlanStartBy": "{weeks, plural, =1{Start innan {date}. Eit nytt tek vanlegvis om lag ei veke.} other{Start innan {date}. Eit nytt tek vanlegvis om lag {weeks} veker.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Start no. Eit nytt tek vanlegvis om lag ei veke.} other{Start no. Eit nytt tek vanlegvis om lag {weeks} veker.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Planen din",
+  "lifePlanWhenHappened": "Når skjedde det?",
+  "lifePlanReminderNudge": "Planen din har framleis ting å gjere. Opne han når du har eit augeblink.",
+  "lifePlanReminderCheckIn": "Har dei nye korta og dokumenta kome? Opne planen for å sjekke.",
+  "lifePlanDoFirst": "Gjer dette først",
+  "lifePlanSteps": "Andre steg",
+  "lifePlanAddOwnStep": "Legg til eige steg",
+  "lifePlanOwnStepHint": "Til dømes: Sei frå til skulen",
+  "lifePlanOwnStepLimit": "Du kan leggje til opptil 20 eigne steg.",
+  "lifePlanReadAloud": "Les høgt",
+  "lifePlanStopReading": "Stopp opplesing",
+  "lifePlanReadAloudUnavailable": "Opplesing er ikkje tilgjengeleg på denne telefonen.",
+  "lifePlanProofPack": "Lag ein dokumentpakke",
+  "lifePlanOpenFamily": "Opne Familie",
+  "lifePlanRemoved": "{count, plural, =1{1 post du har sletta, tel som avslutta.} other{{count} postar du har sletta, tel som avslutta.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Fornying av desse kostar vanlegvis om lag {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Flyttar du til ein ny heim? Sjå kva anna du må oppdatere."
 }

@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Masih ada beberapa perkara yang tinggal. Buka pelan untuk menyelesaikannya.",
   "lifePlanSuggestCar": "Membeli atau menjual kereta? Lihat apa lagi yang perlu dikemas kini.",
   "lifePlanSuggestTrip": "Berpindah ke sana untuk seketika?",
-  "lifePlanSuggestTripBody": "Mulakan pelan berpindah ke negara lain. Vaultara menunjukkan apa yang perlu diuruskan sebelum anda pergi."
+  "lifePlanSuggestTripBody": "Mulakan pelan berpindah ke negara lain. Vaultara menunjukkan apa yang perlu diuruskan sebelum anda pergi.",
+  "lifeGroupHome": "Rumah",
+  "lifeGroupFamily": "Keluarga",
+  "lifeGroupWork": "Kerja dan pengajian",
+  "lifeGroupCarTravel": "Kereta dan perjalanan",
+  "lifeGroupEmergency": "Ada masalah",
+  "lifeEventCarBuy": "Saya membeli kereta",
+  "lifeEventCarBuyBody": "Dapatkan insurans sebelum memandunya pulang, kemudian tukar nama kereta kepada anda.",
+  "lifeEventCarSell": "Saya menjual kereta",
+  "lifeEventCarSellBody": "Maklumkan penjualan kepada pejabat pendaftaran dan batalkan insurans apabila kereta bukan lagi milik anda.",
+  "lifeEventJobStart": "Saya memulakan kerja baharu",
+  "lifeEventJobStartBody": "Semak permit anda sebelum mula, kemudian sediakan kad kerja dan faedah.",
+  "lifeEventJobLeave": "Saya berhenti kerja",
+  "lifeEventJobLeaveBody": "Pulangkan barang kerja dan semak apa yang berlaku kepada perlindungan daripada kerja anda.",
+  "lifeEventLostPhone": "Telefon saya hilang atau dicuri",
+  "lifeEventLostPhoneBody": "Bertindak pantas. Sesiapa yang ada telefon dan kad SIM anda boleh masuk ke bank dan e-mel anda. Buat langkah pertama sekarang.",
+  "lifeEventJobLoss": "Saya hilang kerja",
+  "lifeEventJobLossBody": "Ini sukar. Ambil satu langkah demi satu. Sesetengah tuntutan ada tarikh akhir, jadi mulakan dengannya.",
+  "lifeEventDisaster": "Kebakaran, banjir atau pecah rumah",
+  "lifeEventDisasterBody": "Pastikan semua orang selamat dahulu. Kemudian ambil gambar, hubungi syarikat insurans dan gantikan yang hilang.",
+  "lifeEventCaringParent": "Saya menjaga ibu atau bapa",
+  "lifeEventCaringParentBody": "Pilih orang yang anda jaga. Semak dokumen dan perlindungannya, dan simpan yang anda perlukan berdekatan.",
+  "lifeVariantCarQuestion": "Anda membeli atau menjual?",
+  "lifeVariantJobQuestion": "Anda mula atau berhenti?",
+  "lifeVariantBuy": "Membeli",
+  "lifeVariantSell": "Menjual",
+  "lifeVariantStart": "Mula",
+  "lifeVariantLeave": "Berhenti",
+  "lifeTaskRedirectPost": "Minta surat anda dihantar ke alamat baharu",
+  "lifeTaskNewAddressEveryone": "Berikan alamat baharu kepada majikan, pejabat cukai, doktor dan sekolah",
+  "lifeTaskMoveUtilities": "Tutup atau pindahkan akaun elektrik, air dan internet",
+  "lifeTaskMeterReadings": "Catat bacaan meter dan ambil gambar pada hari anda berpindah",
+  "lifeTaskSaveHomePapers": "Tambah gambar dokumen jual beli atau pindah milik ke Vaultara",
+  "lifeTaskHandOverKeys": "Serahkan kunci, alat kawalan jauh dan kad akses",
+  "lifeTaskOfficialNameProof": "Dapatkan bukti rasmi nama baharu anda dahulu. Kebanyakan pejabat memintanya.",
+  "lifeTaskTellNameChange": "Beritahu bank, majikan, doktor dan pejabat cukai tentang nama baharu anda",
+  "lifeTaskUpdateOnlineAccounts": "Tukar nama anda dalam e-mel, telefon dan akaun dalam talian",
+  "lifeTaskSaveMarriageCertificate": "Tambah gambar sijil perkahwinan ke Vaultara",
+  "lifeTaskCheckBeneficiaries": "Semak siapa yang dinamakan sebagai penerima dalam polisi dan akaun anda",
+  "lifeTaskUpdateWill": "Buat atau kemas kini wasiat",
+  "lifeTaskSaveDivorceOrder": "Tambah gambar perintah cerai muktamad ke Vaultara",
+  "lifeTaskSplitSharedAccounts": "Tutup atau bahagikan akaun bersama dan tukar kata laluan bersama",
+  "lifeTaskRegisterBirth": "Daftar kelahiran dan dapatkan sijil kelahiran",
+  "lifeTaskAddBabyToFamily": "Tambah bayi dalam Keluarga supaya dokumennya dipantau",
+  "lifeTaskCarRegisterInName": "Tukar nama kereta kepada anda dalam tempoh yang dibenarkan undang-undang",
+  "lifeTaskCarSavePapers": "Tambah gambar perjanjian jual beli ke Vaultara",
+  "lifeTaskCarNotifySale": "Maklumkan pejabat pendaftaran bahawa anda menjual kereta dan simpan buktinya",
+  "lifeTaskCarRemoveTags": "Tanggalkan tag tol, kad letak kereta dan barang peribadi",
+  "lifeTaskJobGiveDetails": "Berikan butiran bank dan nombor cukai kepada majikan baharu",
+  "lifeTaskJobJoinBenefits": "Sertai perlindungan perubatan dan pencen yang ditawarkan majikan",
+  "lifeTaskJobReturnItems": "Pulangkan barang kerja seperti komputer riba, kad atau kunci",
+  "lifeTaskJobLastPayslip": "Minta slip gaji terakhir dan surat pengesahan tarikh kerja",
+  "lifeTaskJobAskBenefits": "Tanya apa yang berlaku kepada perlindungan perubatan dan pencen anda",
+  "lifeTaskJobUnemployment": "Tanya tentang faedah hilang pekerjaan sekarang. Tuntutan selalunya ada tarikh akhir.",
+  "lifeTaskJobPauseDebits": "Senaraikan debit langsung dan langganan, dan hentikan yang boleh",
+  "lifeTaskStudySaveLetters": "Tambah gambar surat tawaran dan penyata yuran ke Vaultara",
+  "lifeTaskStudyFunding": "Semak tarikh akhir biasiswa, pinjaman atau bantuan lain",
+  "lifeTaskRetirePension": "Tanya bagaimana dan bila pencen anda akan dibayar",
+  "lifeTaskRetireOwnCover": "Dapatkan perlindungan perubatan sendiri jika yang daripada kerja tamat",
+  "lifeTaskCountryTellBankTax": "Beritahu bank dan pejabat cukai bahawa anda akan pergi",
+  "lifeTaskCountryScanCopies": "Tambah gambar setiap dokumen penting ke Vaultara",
+  "lifeTaskCountryLicenceRules": "Semak sama ada anda perlu menukar lesen memandu",
+  "lifeTaskChildOwnId": "Bantu dia memohon kad pengenalan sendiri jika perlu",
+  "lifeTaskChildBankAccount": "Bantu dia membuka akaun bank sendiri",
+  "lifeTaskDeathCertificates": "Dapatkan beberapa salinan diperakui sijil kematian",
+  "lifeTaskDeathTellOrganisations": "Maklumkan bank, syarikat insurans dan majikan",
+  "lifeTaskDeathFindWill": "Cari wasiat dan hubungi wasi",
+  "lifeTaskDeathStopReminders": "Apabila anda bersedia, matikan peringatan untuk rekodnya",
+  "lifeTaskPhoneBlockSim": "Hubungi rangkaian anda untuk menyekat kad SIM. Ini menghalang penipuan tukar SIM.",
+  "lifeTaskPhoneBlockBanking": "Hubungi bank untuk menyekat perbankan di telefon",
+  "lifeTaskPhoneLockErase": "Kunci atau padam telefon dari peranti lain",
+  "lifeTaskPhoneChangePasswords": "Tukar kata laluan e-mel dan media sosial",
+  "lifeTaskReportToPolice": "Buat laporan polis dan simpan nombor laporan",
+  "lifeTaskDisasterSafePlace": "Pastikan semua orang selamat dan ada tempat tinggal",
+  "lifeTaskDisasterPhotos": "Ambil gambar kerosakan sebelum mengemas",
+  "lifeTaskDisasterContactInsurer": "Hubungi syarikat insurans secepat mungkin",
+  "lifeTaskDisasterProofPack": "Hantar salinan dokumen anda dengan Pek bukti",
+  "lifeTaskParentFindPapers": "Ketahui di mana dokumen pentingnya disimpan",
+  "lifeTaskParentPermission": "Tanya sama ada anda boleh bercakap bagi pihaknya dengan bank, doktor dan syarikat insurans",
+  "lifeTaskParentMedicines": "Simpan senarai ubat dan doktornya",
+  "lifePlanDoClaim": "Buat tuntutan",
+  "lifePlanStatusClaimed": "Sudah dituntut",
+  "lifePlanStartBy": "{weeks, plural, other{Mulakan sebelum {date}. Yang baharu biasanya mengambil kira-kira {weeks} minggu.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{Mulakan sekarang. Yang baharu biasanya mengambil kira-kira {weeks} minggu.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Pelan anda",
+  "lifePlanWhenHappened": "Bilakah ia berlaku?",
+  "lifePlanReminderNudge": "Pelan anda masih ada perkara untuk dibuat. Bukanya apabila anda ada masa.",
+  "lifePlanReminderCheckIn": "Adakah kad dan dokumen baharu anda sudah tiba? Buka pelan untuk menyemak.",
+  "lifePlanDoFirst": "Buat ini dahulu",
+  "lifePlanSteps": "Langkah lain",
+  "lifePlanAddOwnStep": "Tambah langkah sendiri",
+  "lifePlanOwnStepHint": "Contohnya: Beritahu sekolah",
+  "lifePlanOwnStepLimit": "Anda boleh menambah sehingga 20 langkah sendiri.",
+  "lifePlanReadAloud": "Baca dengan kuat",
+  "lifePlanStopReading": "Berhenti membaca",
+  "lifePlanReadAloudUnavailable": "Baca dengan kuat tidak tersedia di telefon ini.",
+  "lifePlanProofPack": "Buat pek bukti",
+  "lifePlanOpenFamily": "Buka Keluarga",
+  "lifePlanRemoved": "{count, plural, other{{count} rekod yang anda padam dikira sebagai dibatalkan.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Pembaharuan ini biasanya berharga kira-kira {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Berpindah ke rumah baharu? Lihat apa lagi yang perlu dikemas kini."
 }

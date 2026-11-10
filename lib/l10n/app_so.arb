@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Waxyaabo qaar ayaa weli haray. Fur qorshaha si aad u dhammaystirto.",
   "lifePlanSuggestCar": "Baabuur ma iibsatay ama ma iibisay? Eeg waxa kale ee la cusboonaysiinayo.",
   "lifePlanSuggestTrip": "Muddo ma u guuraysaa halkaas?",
-  "lifePlanSuggestTripBody": "Bilow qorshe aad ugu guurayso waddan kale. Vaultara waxay muujisaa waxa la habeeyo ka hor intaadan bixin."
+  "lifePlanSuggestTripBody": "Bilow qorshe aad ugu guurayso waddan kale. Vaultara waxay muujisaa waxa la habeeyo ka hor intaadan bixin.",
+  "lifeGroupHome": "Guri",
+  "lifeGroupFamily": "Qoyska",
+  "lifeGroupWork": "Shaqo iyo waxbarasho",
+  "lifeGroupCarTravel": "Baabuur iyo safar",
+  "lifeGroupEmergency": "Wax ayaa dhacay",
+  "lifeEventCarBuy": "Waxaan iibsaday baabuur",
+  "lifeEventCarBuyBody": "Caymi ka hor intaadan guriga u wadin, kadibna baabuurka magacaaga ku diiwaangeli.",
+  "lifeEventCarSell": "Waxaan iibiyay baabuur",
+  "lifeEventCarSellBody": "U sheeg xafiiska shatiyada iibka, oo jooji caymiska marka baabuurku aanu adiga kuu ahayn.",
+  "lifeEventJobStart": "Waxaan bilaabayaa shaqo cusub",
+  "lifeEventJobStartBody": "Hubi ruqsadahaaga ka hor intaadan bilaabin, kadibna diyaari kaarka shaqada iyo faa'iidooyinka.",
+  "lifeEventJobLeave": "Waxaan ka tagayaa shaqadayda",
+  "lifeEventJobLeaveBody": "Celi alaabta shaqada oo hubi waxa ku dhici doona caymiskii shaqadu ku siisay.",
+  "lifeEventLostPhone": "Taleefankaygii waa lumay ama waa la xaday",
+  "lifeEventLostPhoneBody": "Si degdeg ah u dhaqaaq. Qofka haysta taleefankaaga iyo kaarka SIM wuxuu geli karaa bangigaaga iyo iimaylkaaga. Hadda samee tallaabooyinka koowaad.",
+  "lifeEventJobLoss": "Shaqadaydii waan waayay",
+  "lifeEventJobLossBody": "Tani waa adag tahay. Tallaabo tallaabo u soco. Codsiyada qaar waxay leeyihiin waqti kama dambeys ah, markaa ka bilow.",
+  "lifeEventDisaster": "Dab, daad ama tuugo guriga",
+  "lifeEventDisasterBody": "Marka hore hubi in qof walba ammaan yahay. Kadib sawir qaad, la xiriir shirkadda caymiska oo beddel wixii lumay.",
+  "lifeEventCaringParent": "Waxaan daryeelayaa waalid",
+  "lifeEventCaringParentBody": "Dooro qofka aad daryeesho. Hubi dukumentiyadiisa iyo caymiskiisa, oo wixii aad u baahan tahay meel kuu dhow dhig.",
+  "lifeVariantCarQuestion": "Ma iibsatay mise ma iibisay?",
+  "lifeVariantJobQuestion": "Ma bilaabaysaa mise waad ka tagaysaa?",
+  "lifeVariantBuy": "Iibsaday",
+  "lifeVariantSell": "Iibiyay",
+  "lifeVariantStart": "Bilaabayaa",
+  "lifeVariantLeave": "Ka tagayaa",
+  "lifeTaskRedirectPost": "Codso in boostadaada loo diro cinwaankaaga cusub",
+  "lifeTaskNewAddressEveryone": "Sii cinwaankaaga cusub shaqo-bixiyaha, xafiiska canshuurta, dhakhtarka iyo dugsiga",
+  "lifeTaskMoveUtilities": "Xir ama wareeji akoonnada korontada, biyaha iyo internetka",
+  "lifeTaskMeterReadings": "Maalinta aad guurayso qor akhriska mitirka oo sawir qaad",
+  "lifeTaskSaveHomePapers": "Ku dar Vaultara sawirka waraaqaha iibka ama wareejinta",
+  "lifeTaskHandOverKeys": "Gacan-geli furayaasha, rimootyada iyo kaarka galitaanka",
+  "lifeTaskOfficialNameProof": "Marka hore hel caddeyn rasmi ah oo magacaaga cusub ah. Xafiisyada badankood way codsadaan.",
+  "lifeTaskTellNameChange": "U sheeg bangiga, shaqo-bixiyaha, dhakhtarka iyo xafiiska canshuurta magacaaga cusub",
+  "lifeTaskUpdateOnlineAccounts": "Ka beddel magacaaga iimaylka, taleefanka iyo akoonnada onlaynka",
+  "lifeTaskSaveMarriageCertificate": "Ku dar Vaultara sawirka shahaadada guurka",
+  "lifeTaskCheckBeneficiaries": "Hubi qofka loo qoray ka-faa'iideystaha caymisyadaada iyo akoonnadaada",
+  "lifeTaskUpdateWill": "Samee ama cusboonaysii dardaaran",
+  "lifeTaskSaveDivorceOrder": "Ku dar Vaultara sawirka go'aanka furiinka ee kama dambaysta ah",
+  "lifeTaskSplitSharedAccounts": "Xir ama qaybi akoonnada wadaagga ah oo beddel furaha sirta ee la wadaago",
+  "lifeTaskRegisterBirth": "Diiwaangeli dhalashada oo hel shahaadada dhalashada",
+  "lifeTaskAddBabyToFamily": "Ku dar ilmaha Qoyska si dukumentiyadiisa loola socdo",
+  "lifeTaskCarRegisterInName": "Baabuurka magacaaga ku diiwaangeli muddada sharcigu oggol yahay",
+  "lifeTaskCarSavePapers": "Ku dar Vaultara sawirka heshiiska iibka",
+  "lifeTaskCarNotifySale": "U sheeg xafiiska shatiyada inaad iibisay baabuurka oo hay caddeynta",
+  "lifeTaskCarRemoveTags": "Ka saar calaamadaha waddooyinka lacagta leh, kaarka baarkinka iyo alaabtaada",
+  "lifeTaskJobGiveDetails": "Sii shaqo-bixiyaha cusub faahfaahinta bangiga iyo lambarka canshuurta",
+  "lifeTaskJobJoinBenefits": "Ku biir caymiska caafimaadka iyo hawlgabka uu shaqo-bixiyuhu bixiyo",
+  "lifeTaskJobReturnItems": "Celi alaabta shaqada sida laptop, kaar ama furayaal",
+  "lifeTaskJobLastPayslip": "Codso warqadda mushaharka ugu dambeysay iyo warqad xaqiijinaysa taariikhaha shaqadaada",
+  "lifeTaskJobAskBenefits": "Weydii waxa ku dhici doona caymiska caafimaadka iyo hawlgabkaaga",
+  "lifeTaskJobUnemployment": "Hadda weydii gargaarka shaqo la'aanta. Codsiyadu inta badan waxay leeyihiin waqti kama dambeys ah.",
+  "lifeTaskJobPauseDebits": "Qor lacag-bixinta tooska ah iyo isdiiwaangelinta, oo jooji waxaad awoodo",
+  "lifeTaskStudySaveLetters": "Ku dar Vaultara sawirrada warqadda aqbalaadda iyo bayaannada khidmadda",
+  "lifeTaskStudyFunding": "Hubi waqtiyada kama dambaysta ah ee deeqaha, amaahda ama taageero kale",
+  "lifeTaskRetirePension": "Weydii sida iyo goorta hawlgabkaaga la bixin doono",
+  "lifeTaskRetireOwnCover": "Samayso caymis caafimaad oo adiga kuu gaar ah haddii kan shaqadu dhammaado",
+  "lifeTaskCountryTellBankTax": "U sheeg bangiga iyo xafiiska canshuurta inaad tagayso",
+  "lifeTaskCountryScanCopies": "Ku dar Vaultara sawirka dukumenti kasta oo muhiim ah",
+  "lifeTaskCountryLicenceRules": "Hubi haddii aad u baahan tahay inaad beddesho shatiga darawalnimada",
+  "lifeTaskChildOwnId": "Ka caawi inuu codsado kaarkiisa aqoonsiga haddii loo baahdo",
+  "lifeTaskChildBankAccount": "Ka caawi inuu furto akoon bangi oo isaga u gaar ah",
+  "lifeTaskDeathCertificates": "Hel dhowr nuqul oo la xaqiijiyay oo shahaadada dhimashada ah",
+  "lifeTaskDeathTellOrganisations": "U sheeg bangiga, shirkadaha caymiska iyo shaqo-bixiyaha",
+  "lifeTaskDeathFindWill": "Raadi dardaaranka oo la xiriir fuliyaha",
+  "lifeTaskDeathStopReminders": "Markaad diyaar noqoto, dami xusuusinta diiwaannadiisa",
+  "lifeTaskPhoneBlockSim": "Wac shabakaddaada si ay u xiraan kaarka SIM. Tani waxay joojisaa khiyaanada beddelka SIM.",
+  "lifeTaskPhoneBlockBanking": "Wac bangigaaga si ay u xiraan bangiga taleefanka",
+  "lifeTaskPhoneLockErase": "Ka quful ama tirtir taleefanka qalab kale",
+  "lifeTaskPhoneChangePasswords": "Beddel furaha sirta ee iimaylka iyo baraha bulshada",
+  "lifeTaskReportToPolice": "U warbixi booliska oo hay lambarka kiiska",
+  "lifeTaskDisasterSafePlace": "Hubi in qof walba ammaan yahay oo uu leeyahay meel uu joogo",
+  "lifeTaskDisasterPhotos": "Sawir burburka ka hor intaadan nadiifin",
+  "lifeTaskDisasterContactInsurer": "La xiriir shirkadda caymiska sida ugu dhaqsaha badan",
+  "lifeTaskDisasterProofPack": "Ku dir nuqullada dukumentiyadaada Xirmada caddaynta",
+  "lifeTaskParentFindPapers": "Ogow meesha waraaqahiisa muhiimka ah lagu hayo",
+  "lifeTaskParentPermission": "Weydii haddii aad isaga u hadli karto bangiga, dhakhtarka iyo shirkadda caymiska",
+  "lifeTaskParentMedicines": "Hay liiska daawooyinkiisa iyo dhakhaatiirtiisa",
+  "lifePlanDoClaim": "Samee dalab magdhow",
+  "lifePlanStatusClaimed": "Dalab la sameeyay",
+  "lifePlanStartBy": "{weeks, plural, =1{Bilow ka hor {date}. Mid cusub badanaa wuxuu qaataa qiyaastii toddobaad.} other{Bilow ka hor {date}. Mid cusub badanaa wuxuu qaataa qiyaastii {weeks} toddobaad.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Hadda bilow. Mid cusub badanaa wuxuu qaataa qiyaastii toddobaad.} other{Hadda bilow. Mid cusub badanaa wuxuu qaataa qiyaastii {weeks} toddobaad.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Qorshahaaga",
+  "lifePlanWhenHappened": "Goorma ayay dhacday?",
+  "lifePlanReminderNudge": "Qorshahaagu wali wuxuu leeyahay waxyaabo la sameeyo. Fur markaad waqti hesho.",
+  "lifePlanReminderCheckIn": "Kaararkaaga iyo dukumentiyadaada cusub ma yimaadeen? Fur qorshaha si aad u hubiso.",
+  "lifePlanDoFirst": "Marka hore tan samee",
+  "lifePlanSteps": "Tallaabooyin kale",
+  "lifePlanAddOwnStep": "Ku dar tallaabadaada",
+  "lifePlanOwnStepHint": "Tusaale: U sheeg dugsiga",
+  "lifePlanOwnStepLimit": "Waxaad ku dari kartaa ilaa 20 tallaabo oo adiga kuu gaar ah.",
+  "lifePlanReadAloud": "Kor u akhri",
+  "lifePlanStopReading": "Jooji akhriska",
+  "lifePlanReadAloudUnavailable": "Kor u akhrintu kuma jirto taleefankan.",
+  "lifePlanProofPack": "Samee xirmada caddaynta",
+  "lifePlanOpenFamily": "Fur Qoyska",
+  "lifePlanRemoved": "{count, plural, =1{1 diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.} other{{count} diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Cusboonaysiinta kuwan badanaa waxay ku kacdaa qiyaastii {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ma u guuraysaa guri cusub? Eeg waxa kale ee aad cusboonaysiinayso."
 }

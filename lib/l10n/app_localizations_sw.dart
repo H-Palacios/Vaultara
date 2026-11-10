@@ -6846,4 +6846,330 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Anza mpango wa kuhamia nchi nyingine. Vaultara inaonyesha cha kushughulikia kabla ya kuondoka.';
+
+  @override
+  String get lifeGroupHome => 'Nyumbani';
+
+  @override
+  String get lifeGroupFamily => 'Familia';
+
+  @override
+  String get lifeGroupWork => 'Kazi na masomo';
+
+  @override
+  String get lifeGroupCarTravel => 'Gari na safari';
+
+  @override
+  String get lifeGroupEmergency => 'Kuna tatizo limetokea';
+
+  @override
+  String get lifeEventCarBuy => 'Nimenunua gari';
+
+  @override
+  String get lifeEventCarBuyBody => 'Pata bima kabla ya kuliendesha nyumbani, kisha sajili gari kwa jina lako.';
+
+  @override
+  String get lifeEventCarSell => 'Nimeuza gari';
+
+  @override
+  String get lifeEventCarSellBody => 'Ijulishe ofisi ya leseni kuhusu mauzo, kisha sitisha bima gari likiacha kuwa lako.';
+
+  @override
+  String get lifeEventJobStart => 'Ninaanza kazi mpya';
+
+  @override
+  String get lifeEventJobStartBody => 'Kagua vibali vyako kabla ya kuanza, kisha andaa kadi ya kazi na marupurupu.';
+
+  @override
+  String get lifeEventJobLeave => 'Ninaacha kazi';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Rudisha vifaa vya kazi na uangalie kitakachotokea kwa bima uliyopata kazini.';
+
+  @override
+  String get lifeEventLostPhone => 'Simu yangu imepotea au imeibiwa';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Chukua hatua haraka. Mtu aliye na simu na SIM kadi yako anaweza kuingia benki na barua pepe yako. Fanya hatua za kwanza sasa hivi.';
+
+  @override
+  String get lifeEventJobLoss => 'Nimepoteza kazi';
+
+  @override
+  String get lifeEventJobLossBody => 'Hili ni gumu. Chukua hatua moja baada ya nyingine. Baadhi ya madai yana tarehe ya mwisho, kwa hivyo anza nayo.';
+
+  @override
+  String get lifeEventDisaster => 'Moto, mafuriko au wizi nyumbani';
+
+  @override
+  String get lifeEventDisasterBody => 'Kwanza hakikisha kila mtu yuko salama. Kisha piga picha, wasiliana na kampuni ya bima na ubadilishe kilichopotea.';
+
+  @override
+  String get lifeEventCaringParent => 'Ninamhudumia mzazi';
+
+  @override
+  String get lifeEventCaringParentBody => 'Chagua mtu unayemhudumia. Kagua hati na bima yake, na weka unachohitaji karibu.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ulinunua au uliuza?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Unaanza au unaacha?';
+
+  @override
+  String get lifeVariantBuy => 'Nimenunua';
+
+  @override
+  String get lifeVariantSell => 'Nimeuza';
+
+  @override
+  String get lifeVariantStart => 'Ninaanza';
+
+  @override
+  String get lifeVariantLeave => 'Ninaacha';
+
+  @override
+  String get lifeTaskRedirectPost => 'Omba barua zako zitumwe kwenye anwani mpya';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Mpe mwajiri, ofisi ya kodi, daktari na shule anwani yako mpya';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Funga au hamisha akaunti za umeme, maji na intaneti';
+
+  @override
+  String get lifeTaskMeterReadings => 'Siku unayohama, andika usomaji wa mita na upige picha';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Ongeza picha ya hati za mauzo au uhamisho kwenye Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Kabidhi funguo, rimoti na kadi za kuingia';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Kwanza pata uthibitisho rasmi wa jina lako jipya. Ofisi nyingi huuomba.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Ijulishe benki, mwajiri, daktari na ofisi ya kodi kuhusu jina lako jipya';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Badilisha jina lako kwenye barua pepe, simu na akaunti za mtandaoni';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Ongeza picha ya cheti cha ndoa kwenye Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Kagua nani ameandikwa kama mnufaika kwenye bima na akaunti zako';
+
+  @override
+  String get lifeTaskUpdateWill => 'Andika au sasisha wosia';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Ongeza picha ya amri ya mwisho ya talaka kwenye Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Funga au gawanya akaunti za pamoja na ubadilishe nywila za pamoja';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Sajili kuzaliwa na upate cheti cha kuzaliwa';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Mwongeze mtoto kwenye Familia ili hati zake zifuatiliwe';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Sajili gari kwa jina lako ndani ya muda unaoruhusiwa na sheria';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Ongeza picha ya mkataba wa mauzo kwenye Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Ijulishe ofisi ya leseni kuwa umeuza gari na uhifadhi uthibitisho';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Ondoa vibandiko vya ushuru wa barabara, kadi za maegesho na vitu binafsi';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Mpe mwajiri mpya maelezo ya benki na namba ya kodi';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Jiunge na bima ya afya na pensheni anayotoa mwajiri';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Rudisha vifaa vya kazi kama kompyuta, kadi au funguo';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Omba hati ya mshahara ya mwisho na barua inayothibitisha tarehe za kazi';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Uliza kitakachotokea kwa bima yako ya afya na pensheni';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Uliza kuhusu fao la kukosa ajira sasa. Madai mara nyingi yana tarehe ya mwisho.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Orodhesha malipo ya moja kwa moja na usajili, na usimamishe unavyoweza';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Ongeza picha za barua ya kukubaliwa na taarifa za ada kwenye Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Kagua tarehe za mwisho za ufadhili, mikopo au misaada mingine';
+
+  @override
+  String get lifeTaskRetirePension => 'Uliza jinsi na lini pensheni yako italipwa';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Panga bima yako ya afya ikiwa ya kazini itaisha';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Ijulishe benki na ofisi ya kodi kuwa unaondoka';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Ongeza picha ya kila hati muhimu kwenye Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Kagua kama lazima ubadilishe leseni ya udereva';
+
+  @override
+  String get lifeTaskChildOwnId => 'Msaidie kuomba kitambulisho chake ikiwa anakihitaji';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Msaidie kufungua akaunti yake ya benki';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Pata nakala chache zilizothibitishwa za cheti cha kifo';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Ijulishe benki, kampuni za bima na mwajiri';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Tafuta wosia na uwasiliane na msimamizi wa mirathi';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Ukiwa tayari, zima vikumbusho vya rekodi zake';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Piga simu kwa mtandao wako ili kuzuia SIM kadi. Hii huzuia ulaghai wa kubadilisha SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Piga simu benki ili kuzuia huduma za benki kwenye simu';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Funga au futa simu kutoka kifaa kingine';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Badilisha nywila za barua pepe na mitandao ya kijamii';
+
+  @override
+  String get lifeTaskReportToPolice => 'Ripoti polisi na uhifadhi namba ya kesi';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Hakikisha kila mtu yuko salama na ana mahali pa kukaa';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Piga picha za uharibifu kabla ya kusafisha';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Wasiliana na kampuni ya bima haraka iwezekanavyo';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Tuma nakala za hati zako kwa Kifurushi cha uthibitisho';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Jua hati zake muhimu zimehifadhiwa wapi';
+
+  @override
+  String get lifeTaskParentPermission => 'Uliza kama unaweza kuzungumza kwa niaba yake na benki, daktari na kampuni ya bima';
+
+  @override
+  String get lifeTaskParentMedicines => 'Weka orodha ya dawa zake na madaktari wake';
+
+  @override
+  String get lifePlanDoClaim => 'Wasilisha dai';
+
+  @override
+  String get lifePlanStatusClaimed => 'Dai limewasilishwa';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Anza kabla ya $date. Mpya kwa kawaida huchukua karibu wiki $weeks.',
+      one: 'Anza kabla ya $date. Mpya kwa kawaida huchukua karibu wiki moja.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Anza sasa. Mpya kwa kawaida huchukua karibu wiki $weeks.',
+      one: 'Anza sasa. Mpya kwa kawaida huchukua karibu wiki moja.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Mpango wako';
+
+  @override
+  String get lifePlanWhenHappened => 'Ilitokea lini?';
+
+  @override
+  String get lifePlanReminderNudge => 'Mpango wako bado una mambo ya kufanya. Ufungue ukipata muda.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Kadi na hati zako mpya zimefika? Fungua mpango ili kukagua.';
+
+  @override
+  String get lifePlanDoFirst => 'Fanya hili kwanza';
+
+  @override
+  String get lifePlanSteps => 'Hatua nyingine';
+
+  @override
+  String get lifePlanAddOwnStep => 'Ongeza hatua yako';
+
+  @override
+  String get lifePlanOwnStepHint => 'Kwa mfano: Ijulishe shule';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Unaweza kuongeza hadi hatua 20 zako.';
+
+  @override
+  String get lifePlanReadAloud => 'Soma kwa sauti';
+
+  @override
+  String get lifePlanStopReading => 'Acha kusoma';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Kusoma kwa sauti hakupatikani kwenye simu hii.';
+
+  @override
+  String get lifePlanProofPack => 'Tengeneza kifurushi cha uthibitisho';
+
+  @override
+  String get lifePlanOpenFamily => 'Fungua Familia';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rekodi $count ulizofuta zinahesabiwa kuwa zimesitishwa.',
+      one: 'Rekodi 1 uliyofuta inahesabiwa kuwa imesitishwa.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Kuhuisha hivi kwa kawaida hugharimu karibu $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Unahamia nyumba mpya? Angalia nini kingine cha kusasisha.';
 }

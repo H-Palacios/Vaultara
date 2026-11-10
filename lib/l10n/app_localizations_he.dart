@@ -6901,4 +6901,333 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'התחילו תוכנית למעבר למדינה אחרת. Vaultara מראה מה לסדר לפני היציאה.';
+
+  @override
+  String get lifeGroupHome => 'בית';
+
+  @override
+  String get lifeGroupFamily => 'משפחה';
+
+  @override
+  String get lifeGroupWork => 'עבודה ולימודים';
+
+  @override
+  String get lifeGroupCarTravel => 'רכב ונסיעות';
+
+  @override
+  String get lifeGroupEmergency => 'משהו השתבש';
+
+  @override
+  String get lifeEventCarBuy => 'קניתי רכב';
+
+  @override
+  String get lifeEventCarBuyBody => 'עשו ביטוח לפני שאתם נוסעים בו הביתה, ואז העבירו את הרכב על שמכם.';
+
+  @override
+  String get lifeEventCarSell => 'מכרתי רכב';
+
+  @override
+  String get lifeEventCarSellBody => 'דווחו על המכירה למשרד הרישוי ובטלו את הביטוח כשהרכב כבר לא שלכם.';
+
+  @override
+  String get lifeEventJobStart => 'אני מתחיל עבודה חדשה';
+
+  @override
+  String get lifeEventJobStartBody => 'בדקו את ההיתרים לפני שמתחילים, ואז סדרו כרטיס עובד והטבות.';
+
+  @override
+  String get lifeEventJobLeave => 'אני עוזב את העבודה';
+
+  @override
+  String get lifeEventJobLeaveBody => 'החזירו ציוד עבודה ובדקו מה קורה לכיסוי שהעבודה נתנה לכם.';
+
+  @override
+  String get lifeEventLostPhone => 'הטלפון שלי אבד או נגנב';
+
+  @override
+  String get lifeEventLostPhoneBody => 'פעלו מהר. מי שמחזיק בטלפון ובכרטיס ה-SIM שלכם יכול להיכנס לבנק ולמייל. עשו את הצעדים הראשונים מיד.';
+
+  @override
+  String get lifeEventJobLoss => 'איבדתי את העבודה';
+
+  @override
+  String get lifeEventJobLossBody => 'זה קשה. קחו צעד אחד בכל פעם. לחלק מהתביעות יש מועד אחרון, אז התחילו בהן.';
+
+  @override
+  String get lifeEventDisaster => 'שריפה, הצפה או פריצה בבית';
+
+  @override
+  String get lifeEventDisasterBody => 'קודם ודאו שכולם בטוחים. אחר כך צלמו, פנו לחברת הביטוח והחליפו את מה שאבד.';
+
+  @override
+  String get lifeEventCaringParent => 'אני מטפל בהורה';
+
+  @override
+  String get lifeEventCaringParentBody => 'בחרו את האדם שבו אתם מטפלים. בדקו את המסמכים והכיסוי שלו, ושמרו את מה שצריך בהישג יד.';
+
+  @override
+  String get lifeVariantCarQuestion => 'קניתם או מכרתם?';
+
+  @override
+  String get lifeVariantJobQuestion => 'מתחילים או עוזבים?';
+
+  @override
+  String get lifeVariantBuy => 'קניתי';
+
+  @override
+  String get lifeVariantSell => 'מכרתי';
+
+  @override
+  String get lifeVariantStart => 'מתחיל';
+
+  @override
+  String get lifeVariantLeave => 'עוזב';
+
+  @override
+  String get lifeTaskRedirectPost => 'בקשו שהדואר יישלח לכתובת החדשה';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'מסרו את הכתובת החדשה למעסיק, למס הכנסה, לרופא ולבית הספר';
+
+  @override
+  String get lifeTaskMoveUtilities => 'סגרו או העבירו את חשבונות החשמל, המים והאינטרנט';
+
+  @override
+  String get lifeTaskMeterReadings => 'רשמו קריאות מונים וצלמו ביום שאתם עוזבים';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'הוסיפו ל-Vaultara תמונה של מסמכי המכירה או ההעברה';
+
+  @override
+  String get lifeTaskHandOverKeys => 'מסרו מפתחות, שלטים ותגי כניסה';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'קודם השיגו אישור רשמי על השם החדש. רוב המשרדים מבקשים אותו.';
+
+  @override
+  String get lifeTaskTellNameChange => 'עדכנו את הבנק, המעסיק, הרופא ומס הכנסה על השם החדש';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'שנו את השם במייל, בטלפון ובחשבונות המקוונים';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'הוסיפו ל-Vaultara תמונה של תעודת הנישואין';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'בדקו מי רשום כמוטב בפוליסות ובחשבונות שלכם';
+
+  @override
+  String get lifeTaskUpdateWill => 'כתבו או עדכנו צוואה';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'הוסיפו ל-Vaultara תמונה של פסק הדין הסופי לגירושין';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'סגרו או חלקו חשבונות משותפים ושנו סיסמאות משותפות';
+
+  @override
+  String get lifeTaskRegisterBirth => 'רשמו את הלידה וקבלו תעודת לידה';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'הוסיפו את התינוק במשפחה כדי לעקוב אחרי המסמכים שלו';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'העבירו את הרכב על שמכם בזמן שהחוק מאפשר';
+
+  @override
+  String get lifeTaskCarSavePapers => 'הוסיפו ל-Vaultara תמונה של הסכם המכירה';
+
+  @override
+  String get lifeTaskCarNotifySale => 'דווחו למשרד הרישוי שמכרתם את הרכב ושמרו את האישור';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'הסירו תגי אגרה, כרטיסי חניה וחפצים אישיים';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'מסרו למעסיק החדש את פרטי הבנק ומספר תיק המס';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'הצטרפו לביטוח הבריאות והפנסיה שהמעסיק מציע';
+
+  @override
+  String get lifeTaskJobReturnItems => 'החזירו ציוד עבודה כמו מחשב נייד, כרטיס או מפתחות';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'בקשו את תלוש השכר האחרון ומכתב שמאשר את תאריכי העבודה';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'שאלו מה קורה לביטוח הבריאות ולפנסיה שלכם';
+
+  @override
+  String get lifeTaskJobUnemployment => 'בררו עכשיו לגבי דמי אבטלה. לתביעות יש לעיתים קרובות מועד אחרון.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'רשמו את הוראות הקבע והמנויים, והקפיאו מה שאפשר';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'הוסיפו ל-Vaultara תמונות של מכתב הקבלה ודפי שכר הלימוד';
+
+  @override
+  String get lifeTaskStudyFunding => 'בדקו מועדים למלגות, הלוואות או מימון אחר';
+
+  @override
+  String get lifeTaskRetirePension => 'שאלו איך ומתי תשולם הפנסיה';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'סדרו ביטוח בריאות משלכם אם הביטוח מהעבודה מסתיים';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'הודיעו לבנק ולמס הכנסה שאתם עוזבים';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'הוסיפו ל-Vaultara תמונה של כל מסמך חשוב';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'בדקו אם צריך להמיר את רישיון הנהיגה';
+
+  @override
+  String get lifeTaskChildOwnId => 'עזרו לו להגיש בקשה לתעודת זהות משלו אם צריך';
+
+  @override
+  String get lifeTaskChildBankAccount => 'עזרו לו לפתוח חשבון בנק משלו';
+
+  @override
+  String get lifeTaskDeathCertificates => 'השיגו כמה עותקים מאושרים של תעודת הפטירה';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'עדכנו את הבנק, חברות הביטוח והמעסיק';
+
+  @override
+  String get lifeTaskDeathFindWill => 'מצאו את הצוואה ופנו למנהל העיזבון';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'כשתהיו מוכנים, כבו את התזכורות לרשומות שלו';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'התקשרו לחברת הסלולר כדי לחסום את כרטיס ה-SIM. זה עוצר הונאת החלפת SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'התקשרו לבנק כדי לחסום את הבנקאות בטלפון';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'נעלו או מחקו את הטלפון ממכשיר אחר';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'שנו את הסיסמאות למייל ולרשתות החברתיות';
+
+  @override
+  String get lifeTaskReportToPolice => 'הגישו תלונה במשטרה ושמרו את מספר התיק';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'ודאו שכולם בטוחים ויש להם איפה לשהות';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'צלמו את הנזק לפני שמנקים';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'פנו לחברת הביטוח בהקדם האפשרי';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'שלחו עותקים של המסמכים עם חבילת הוכחות';
+
+  @override
+  String get lifeTaskParentFindPapers => 'בררו איפה נשמרים המסמכים החשובים שלו';
+
+  @override
+  String get lifeTaskParentPermission => 'שאלו אם מותר לכם לדבר בשמו עם הבנק, הרופא וחברת הביטוח';
+
+  @override
+  String get lifeTaskParentMedicines => 'שמרו רשימה של התרופות והרופאים שלו';
+
+  @override
+  String get lifePlanDoClaim => 'הגשת תביעה';
+
+  @override
+  String get lifePlanStatusClaimed => 'נתבע';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'התחילו עד $date. חדש לוקח בדרך כלל כ-$weeks שבועות.',
+      two: 'התחילו עד $date. חדש לוקח בדרך כלל כשבועיים.',
+      one: 'התחילו עד $date. חדש לוקח בדרך כלל כשבוע.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'התחילו עכשיו. חדש לוקח בדרך כלל כ-$weeks שבועות.',
+      two: 'התחילו עכשיו. חדש לוקח בדרך כלל כשבועיים.',
+      one: 'התחילו עכשיו. חדש לוקח בדרך כלל כשבוע.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'התוכנית שלך';
+
+  @override
+  String get lifePlanWhenHappened => 'מתי זה קרה?';
+
+  @override
+  String get lifePlanReminderNudge => 'בתוכנית שלך עוד יש דברים לעשות. פתחו אותה כשיש לכם רגע.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'הכרטיסים והמסמכים החדשים הגיעו? פתחו את התוכנית כדי לבדוק.';
+
+  @override
+  String get lifePlanDoFirst => 'עשו את זה קודם';
+
+  @override
+  String get lifePlanSteps => 'צעדים נוספים';
+
+  @override
+  String get lifePlanAddOwnStep => 'הוספת צעד משלך';
+
+  @override
+  String get lifePlanOwnStepHint => 'לדוגמה: לעדכן את בית הספר';
+
+  @override
+  String get lifePlanOwnStepLimit => 'אפשר להוסיף עד 20 צעדים משלך.';
+
+  @override
+  String get lifePlanReadAloud => 'הקראה';
+
+  @override
+  String get lifePlanStopReading => 'עצירת ההקראה';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'הקראה לא זמינה בטלפון הזה.';
+
+  @override
+  String get lifePlanProofPack => 'יצירת חבילת הוכחות';
+
+  @override
+  String get lifePlanOpenFamily => 'פתיחת משפחה';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count רשומות שמחקת נחשבות כמבוטלות.',
+      two: 'שתי רשומות שמחקת נחשבות כמבוטלות.',
+      one: 'רשומה אחת שמחקת נחשבת כמבוטלת.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'חידוש אלה עולה בדרך כלל בערך $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'עוברים לבית חדש? ראו מה עוד צריך לעדכן.';
 }

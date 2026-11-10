@@ -2163,5 +2163,136 @@
   "lifePlanReminderAfter": "Դեռ անելիքներ կան: Բացեք պլանը՝ դրանք ավարտելու համար:",
   "lifePlanSuggestCar": "Մեքենա՞ եք գնել կամ վաճառել: Տեսեք, էլ ինչ թարմացնել:",
   "lifePlanSuggestTrip": "Որոշ ժամանակով այնտե՞ղ եք տեղափոխվում",
-  "lifePlanSuggestTripBody": "Սկսեք այլ երկիր տեղափոխվելու պլան: Vaultara-ն ցույց է տալիս, թե ինչ կարգավորել մեկնելուց առաջ:"
+  "lifePlanSuggestTripBody": "Սկսեք այլ երկիր տեղափոխվելու պլան: Vaultara-ն ցույց է տալիս, թե ինչ կարգավորել մեկնելուց առաջ:",
+  "lifeGroupHome": "Տուն",
+  "lifeGroupFamily": "Ընտանիք",
+  "lifeGroupWork": "Աշխատանք և ուսում",
+  "lifeGroupCarTravel": "Մեքենա և ճանապարհորդություն",
+  "lifeGroupEmergency": "Ինչ-որ բան սխալ գնաց",
+  "lifeEventCarBuy": "Ես մեքենա գնեցի",
+  "lifeEventCarBuyBody": "Ապահովագրեք մեքենան՝ նախքան այն տուն տանելը, ապա գրանցեք այն ձեր անունով։",
+  "lifeEventCarSell": "Ես մեքենա վաճառեցի",
+  "lifeEventCarSellBody": "Վաճառքի մասին տեղեկացրեք հաշվառման գրասենյակին և չեղարկեք ապահովագրությունը, երբ մեքենան այլևս ձերը չէ։",
+  "lifeEventJobStart": "Ես նոր աշխատանք եմ սկսում",
+  "lifeEventJobStartBody": "Սկսելուց առաջ ստուգեք ձեր թույլտվությունները, ապա կարգավորեք աշխատանքային քարտը և արտոնությունները։",
+  "lifeEventJobLeave": "Ես թողնում եմ աշխատանքս",
+  "lifeEventJobLeaveBody": "Վերադարձրեք աշխատանքային իրերը և ստուգեք, թե ինչ կլինի աշխատանքից ստացած ապահովագրության հետ։",
+  "lifeEventLostPhone": "Հեռախոսս կորել է կամ գողացել են",
+  "lifeEventLostPhoneBody": "Գործեք արագ։ Ձեր հեռախոսն ու SIM քարտն ունեցողը կարող է մտնել ձեր բանկ և էլ. փոստ։ Առաջին քայլերն արեք հենց հիմա։",
+  "lifeEventJobLoss": "Ես կորցրել եմ աշխատանքս",
+  "lifeEventJobLossBody": "Սա դժվար է։ Գնացեք քայլ առ քայլ։ Որոշ դիմումներ ունեն վերջնաժամկետ, ուստի սկսեք դրանցից։",
+  "lifeEventDisaster": "Հրդեհ, ջրհեղեղ կամ կոտրանք տանը",
+  "lifeEventDisasterBody": "Նախ համոզվեք, որ բոլորն անվտանգ են։ Հետո լուսանկարեք, կապվեք ապահովագրողի հետ և փոխարինեք կորցրածը։",
+  "lifeEventCaringParent": "Ես խնամում եմ ծնողիս",
+  "lifeEventCaringParentBody": "Ընտրեք այն մարդուն, ում խնամում եք։ Ստուգեք նրա փաստաթղթերն ու ապահովագրությունը և անհրաժեշտը պահեք ձեռքի տակ։",
+  "lifeVariantCarQuestion": "Գնեցի՞ք, թե՞ վաճառեցիք",
+  "lifeVariantJobQuestion": "Սկսո՞ւմ եք, թե՞ հեռանում",
+  "lifeVariantBuy": "Գնեցի",
+  "lifeVariantSell": "Վաճառեցի",
+  "lifeVariantStart": "Սկսում եմ",
+  "lifeVariantLeave": "Հեռանում եմ",
+  "lifeTaskRedirectPost": "Խնդրեք, որ ձեր փոստն ուղարկվի նոր հասցեով",
+  "lifeTaskNewAddressEveryone": "Նոր հասցեն տվեք գործատուին, հարկային ծառայությանը, բժշկին և դպրոցին",
+  "lifeTaskMoveUtilities": "Փակեք կամ տեղափոխեք էլեկտրաէներգիայի, ջրի և ինտերնետի հաշիվները",
+  "lifeTaskMeterReadings": "Տեղափոխվելու օրը գրանցեք հաշվիչների ցուցմունքները և լուսանկարեք",
+  "lifeTaskSaveHomePapers": "Ավելացրեք վաճառքի կամ փոխանցման փաստաթղթերի լուսանկարը Vaultara-ում",
+  "lifeTaskHandOverKeys": "Հանձնեք բանալիները, հեռակառավարման վահանակները և մուտքի քարտերը",
+  "lifeTaskOfficialNameProof": "Նախ ստացեք ձեր նոր անվան պաշտոնական ապացույցը։ Գրասենյակների մեծ մասը պահանջում է այն։",
+  "lifeTaskTellNameChange": "Ձեր նոր անվան մասին տեղեկացրեք բանկին, գործատուին, բժշկին և հարկային ծառայությանը",
+  "lifeTaskUpdateOnlineAccounts": "Փոխեք ձեր անունը էլ. փոստում, հեռախոսում և առցանց հաշիվներում",
+  "lifeTaskSaveMarriageCertificate": "Ավելացրեք ամուսնության վկայականի լուսանկարը Vaultara-ում",
+  "lifeTaskCheckBeneficiaries": "Ստուգեք, թե ով է նշված որպես շահառու ձեր պոլիսներում և հաշիվներում",
+  "lifeTaskUpdateWill": "Կազմեք կամ թարմացրեք կտակը",
+  "lifeTaskSaveDivorceOrder": "Ավելացրեք ամուսնալուծության վերջնական որոշման լուսանկարը Vaultara-ում",
+  "lifeTaskSplitSharedAccounts": "Փակեք կամ բաժանեք ընդհանուր հաշիվները և փոխեք ընդհանուր գաղտնաբառերը",
+  "lifeTaskRegisterBirth": "Գրանցեք ծնունդը և ստացեք ծննդյան վկայականը",
+  "lifeTaskAddBabyToFamily": "Ավելացրեք երեխային Ընտանիքում, որպեսզի նրա փաստաթղթերը հետևվեն",
+  "lifeTaskCarRegisterInName": "Գրանցեք մեքենան ձեր անունով օրենքով թույլատրված ժամկետում",
+  "lifeTaskCarSavePapers": "Ավելացրեք առքուվաճառքի պայմանագրի լուսանկարը Vaultara-ում",
+  "lifeTaskCarNotifySale": "Տեղեկացրեք հաշվառման գրասենյակին, որ վաճառել եք մեքենան, և պահեք ապացույցը",
+  "lifeTaskCarRemoveTags": "Հանեք ճանապարհավճարի սարքերը, կայանատեղիի քարտերը և անձնական իրերը",
+  "lifeTaskJobGiveDetails": "Նոր գործատուին տվեք ձեր բանկային տվյալները և հարկային համարը",
+  "lifeTaskJobJoinBenefits": "Միացեք գործատուի առաջարկած բժշկական ապահովագրությանը և կենսաթոշակին",
+  "lifeTaskJobReturnItems": "Վերադարձրեք աշխատանքային իրերը, օրինակ՝ նոութբուք, քարտ կամ բանալիներ",
+  "lifeTaskJobLastPayslip": "Խնդրեք վերջին աշխատավարձի թերթիկը և աշխատանքի ամսաթվերը հաստատող նամակ",
+  "lifeTaskJobAskBenefits": "Հարցրեք, թե ինչ կլինի ձեր բժշկական ապահովագրության և կենսաթոշակի հետ",
+  "lifeTaskJobUnemployment": "Հիմա հարցրեք գործազրկության նպաստի մասին։ Դիմումները հաճախ վերջնաժամկետ ունեն։",
+  "lifeTaskJobPauseDebits": "Կազմեք ավտոմատ վճարումների և բաժանորդագրությունների ցանկ և դադարեցրեք հնարավորը",
+  "lifeTaskStudySaveLetters": "Ավելացրեք ընդունելության նամակի և վարձավճարի քաղվածքների լուսանկարները Vaultara-ում",
+  "lifeTaskStudyFunding": "Ստուգեք կրթաթոշակների, վարկերի կամ այլ ֆինանսավորման վերջնաժամկետները",
+  "lifeTaskRetirePension": "Հարցրեք, թե ինչպես և երբ կվճարվի ձեր կենսաթոշակը",
+  "lifeTaskRetireOwnCover": "Կազմակերպեք ձեր սեփական բժշկական ապահովագրությունը, եթե աշխատանքայինն ավարտվի",
+  "lifeTaskCountryTellBankTax": "Տեղեկացրեք բանկին և հարկային ծառայությանը, որ մեկնում եք",
+  "lifeTaskCountryScanCopies": "Ավելացրեք յուրաքանչյուր կարևոր փաստաթղթի լուսանկարը Vaultara-ում",
+  "lifeTaskCountryLicenceRules": "Ստուգեք, արդյոք պետք է փոխանակեք վարորդական վկայականը",
+  "lifeTaskChildOwnId": "Օգնեք նրան դիմել սեփական անձնագրի կամ նույնականացման քարտի համար, եթե պետք է",
+  "lifeTaskChildBankAccount": "Օգնեք նրան բացել սեփական բանկային հաշիվ",
+  "lifeTaskDeathCertificates": "Ստացեք մահվան վկայականի մի քանի վավերացված պատճեն",
+  "lifeTaskDeathTellOrganisations": "Տեղեկացրեք բանկին, ապահովագրողներին և գործատուին",
+  "lifeTaskDeathFindWill": "Գտեք կտակը և կապվեք կտակակատարի հետ",
+  "lifeTaskDeathStopReminders": "Երբ պատրաստ լինեք, անջատեք նրա գրառումների հիշեցումները",
+  "lifeTaskPhoneBlockSim": "Զանգահարեք օպերատորին՝ SIM քարտը արգելափակելու համար։ Սա կանխում է SIM փոխարինման խարդախությունը։",
+  "lifeTaskPhoneBlockBanking": "Զանգահարեք բանկ՝ հեռախոսով բանկային ծառայություններն արգելափակելու համար",
+  "lifeTaskPhoneLockErase": "Կողպեք կամ ջնջեք հեռախոսը մեկ այլ սարքից",
+  "lifeTaskPhoneChangePasswords": "Փոխեք էլ. փոստի և սոցիալական ցանցերի գաղտնաբառերը",
+  "lifeTaskReportToPolice": "Հայտնեք ոստիկանությանը և պահեք գործի համարը",
+  "lifeTaskDisasterSafePlace": "Համոզվեք, որ բոլորն անվտանգ են և ունեն մնալու տեղ",
+  "lifeTaskDisasterPhotos": "Մաքրելուց առաջ լուսանկարեք վնասները",
+  "lifeTaskDisasterContactInsurer": "Հնարավորինս շուտ կապվեք ապահովագրողի հետ",
+  "lifeTaskDisasterProofPack": "Ուղարկեք ձեր փաստաթղթերի պատճենները Ապացույցների փաթեթով",
+  "lifeTaskParentFindPapers": "Պարզեք, թե որտեղ են պահվում նրա կարևոր թղթերը",
+  "lifeTaskParentPermission": "Հարցրեք, թե կարող եք արդյոք նրա անունից խոսել բանկի, բժշկի և ապահովագրողի հետ",
+  "lifeTaskParentMedicines": "Պահեք նրա դեղերի և բժիշկների ցանկը",
+  "lifePlanDoClaim": "Ներկայացրեք պահանջ",
+  "lifePlanStatusClaimed": "Պահանջը ներկայացված է",
+  "lifePlanStartBy": "{weeks, plural, one{Սկսեք մինչև {date}։ Նորը սովորաբար տևում է մոտ {weeks} շաբաթ։} other{Սկսեք մինչև {date}։ Նորը սովորաբար տևում է մոտ {weeks} շաբաթ։}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Սկսեք հիմա։ Նորը սովորաբար տևում է մոտ {weeks} շաբաթ։} other{Սկսեք հիմա։ Նորը սովորաբար տևում է մոտ {weeks} շաբաթ։}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Ձեր պլանը",
+  "lifePlanWhenHappened": "Ե՞րբ է դա տեղի ունեցել",
+  "lifePlanReminderNudge": "Ձեր պլանում դեռ անելիքներ կան։ Բացեք այն, երբ ժամանակ ունենաք։",
+  "lifePlanReminderCheckIn": "Ձեր նոր քարտերն ու փաստաթղթերը եկե՞լ են։ Բացեք պլանը՝ ստուգելու համար։",
+  "lifePlanDoFirst": "Նախ արեք սա",
+  "lifePlanSteps": "Այլ քայլեր",
+  "lifePlanAddOwnStep": "Ավելացնել ձեր քայլը",
+  "lifePlanOwnStepHint": "Օրինակ՝ տեղեկացնել դպրոցին",
+  "lifePlanOwnStepLimit": "Կարող եք ավելացնել մինչև 20 սեփական քայլ։",
+  "lifePlanReadAloud": "Կարդալ բարձրաձայն",
+  "lifePlanStopReading": "Դադարեցնել ընթերցումը",
+  "lifePlanReadAloudUnavailable": "Բարձրաձայն ընթերցումը հասանելի չէ այս հեռախոսում։",
+  "lifePlanProofPack": "Ստեղծել ապացույցների փաթեթ",
+  "lifePlanOpenFamily": "Բացել Ընտանիքը",
+  "lifePlanRemoved": "{count, plural, one{Ձեր ջնջած {count} գրառումը համարվում է չեղարկված։} other{Ձեր ջնջած {count} գրառումները համարվում են չեղարկված։}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Սրանց նորացումը սովորաբար արժե մոտ {amount}։",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Տեղափոխվո՞ւմ եք նոր տուն։ Տեսեք, թե էլ ինչ պետք է թարմացնել։"
 }

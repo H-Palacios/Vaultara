@@ -2141,5 +2141,136 @@
   "lifePlanReminderAfter": "Kusekhona izinto ezisele. Vula uhlelo ukuze uziqede.",
   "lifePlanSuggestCar": "Uthenge noma wathengisa imoto? Bona okunye okufanele ukubuyekeze.",
   "lifePlanSuggestTrip": "Uthuthela lapho isikhashana?",
-  "lifePlanSuggestTripBody": "Qala uhlelo lokuthuthela kwelinye izwe. I-Vaultara ikhombisa okufanele ukuhlele ngaphambi kokuthi uhambe."
+  "lifePlanSuggestTripBody": "Qala uhlelo lokuthuthela kwelinye izwe. I-Vaultara ikhombisa okufanele ukuhlele ngaphambi kokuthi uhambe.",
+  "lifeGroupHome": "Ikhaya",
+  "lifeGroupFamily": "Umndeni",
+  "lifeGroupWork": "Umsebenzi nezifundo",
+  "lifeGroupCarTravel": "Imoto nohambo",
+  "lifeGroupEmergency": "Kukhona okwenzekile",
+  "lifeEventCarBuy": "Ngithenge imoto",
+  "lifeEventCarBuyBody": "Yifakele umshwalense ngaphambi kokuthi uyishayele uye ekhaya, bese uyibhalisa egameni lakho.",
+  "lifeEventCarSell": "Ngithengise imoto",
+  "lifeEventCarSellBody": "Tshela ihhovisi lamalayisense ngokuthengisa, bese ukhansela umshwalense uma imoto ingaseyona eyakho.",
+  "lifeEventJobStart": "Ngiqala umsebenzi omusha",
+  "lifeEventJobStartBody": "Hlola izimvume zakho ngaphambi kokuqala, bese uhlela ikhadi lomsebenzi nezinzuzo.",
+  "lifeEventJobLeave": "Ngiyawushiya umsebenzi wami",
+  "lifeEventJobLeaveBody": "Buyisa izinto zomsebenzi bese uhlola ukuthi kuzokwenzekani kumshwalense owawuwunikezwa ngumsebenzi.",
+  "lifeEventLostPhone": "Ngilahlekelwe ifoni noma yebiwe",
+  "lifeEventLostPhoneBody": "Shesha. Noma ubani onefoni yakho nekhadi le-SIM angangena ebhange nakwi-imeyili yakho. Yenza izinyathelo zokuqala manje.",
+  "lifeEventJobLoss": "Ngilahlekelwe umsebenzi",
+  "lifeEventJobLossBody": "Lokhu kunzima. Thatha isinyathelo esisodwa ngesikhathi. Ezinye izicelo zinosuku lokugcina, ngakho qala ngazo.",
+  "lifeEventDisaster": "Umlilo, izikhukhula noma ukugqekezwa ekhaya",
+  "lifeEventDisasterBody": "Qala uqinisekise ukuthi wonke umuntu uphephile. Bese uthatha izithombe, uxhumane nenkampani yomshwalense, ushintshe okulahlekile.",
+  "lifeEventCaringParent": "Nginakekela umzali",
+  "lifeEventCaringParentBody": "Khetha umuntu omnakekelayo. Hlola amadokhumenti akhe nomshwalense, ugcine eduze lokho okudingayo.",
+  "lifeVariantCarQuestion": "Uthenge noma uthengisile?",
+  "lifeVariantJobQuestion": "Uyaqala noma uyahamba?",
+  "lifeVariantBuy": "Ngithengile",
+  "lifeVariantSell": "Ngithengisile",
+  "lifeVariantStart": "Ngiyaqala",
+  "lifeVariantLeave": "Ngiyahamba",
+  "lifeTaskRedirectPost": "Cela ukuthi iposi lakho lithunyelwe ekhelini elisha",
+  "lifeTaskNewAddressEveryone": "Nika umqashi, ihhovisi lentela, udokotela nesikole ikheli lakho elisha",
+  "lifeTaskMoveUtilities": "Vala noma udlulisele ama-akhawunti kagesi, amanzi ne-inthanethi",
+  "lifeTaskMeterReadings": "Ngosuku ophuma ngalo, bhala amamitha bese uthatha izithombe",
+  "lifeTaskSaveHomePapers": "Engeza isithombe samaphepha okuthengisa noma okudlulisela ku-Vaultara",
+  "lifeTaskHandOverKeys": "Nikeza ngokhiye, amarimothi namakhadi okungena",
+  "lifeTaskOfficialNameProof": "Qala uthole ubufakazi obusemthethweni begama lakho elisha. Amahhovisi amaningi ayabucela.",
+  "lifeTaskTellNameChange": "Tshela ibhange, umqashi, udokotela nehhovisi lentela ngegama lakho elisha",
+  "lifeTaskUpdateOnlineAccounts": "Shintsha igama lakho ku-imeyili, efonini nakuma-akhawunti aku-inthanethi",
+  "lifeTaskSaveMarriageCertificate": "Engeza isithombe sesitifiketi somshado ku-Vaultara",
+  "lifeTaskCheckBeneficiaries": "Hlola ukuthi ubani ohlomulayo kuma-policy nakuma-akhawunti akho",
+  "lifeTaskUpdateWill": "Yenza noma ubuyekeze incwadi yefa",
+  "lifeTaskSaveDivorceOrder": "Engeza isithombe somyalelo wokugcina wesehlukaniso ku-Vaultara",
+  "lifeTaskSplitSharedAccounts": "Vala noma uhlukanise ama-akhawunti owabelana ngawo bese ushintsha amaphasiwedi owabelana ngawo",
+  "lifeTaskRegisterBirth": "Bhalisa ukuzalwa bese uthola isitifiketi sokuzalwa",
+  "lifeTaskAddBabyToFamily": "Engeza ingane kuMndeni ukuze amadokhumenti ayo alandelelwe",
+  "lifeTaskCarRegisterInName": "Bhalisa imoto egameni lakho ngesikhathi esivunyelwe umthetho",
+  "lifeTaskCarSavePapers": "Engeza isithombe sesivumelwano sokuthengisa ku-Vaultara",
+  "lifeTaskCarNotifySale": "Tshela ihhovisi lamalayisense ukuthi uthengise imoto bese ugcina ubufakazi",
+  "lifeTaskCarRemoveTags": "Khipha amathegi ezindlela zokukhokha, amakhadi okupaka nezinto zakho",
+  "lifeTaskJobGiveDetails": "Nika umqashi omusha imininingwane yebhange nenombolo yentela",
+  "lifeTaskJobJoinBenefits": "Joyina umshwalense wezempilo nempesheni okunikezwa ngumqashi",
+  "lifeTaskJobReturnItems": "Buyisa izinto zomsebenzi njenge-laptop, ikhadi noma okhiye",
+  "lifeTaskJobLastPayslip": "Cela isiliphu sokugcina seholo nencwadi eqinisekisa izinsuku zomsebenzi wakho",
+  "lifeTaskJobAskBenefits": "Buza ukuthi kuzokwenzekani kumshwalense wezempilo nempesheni yakho",
+  "lifeTaskJobUnemployment": "Buza manje nge-UIF noma usizo lokungasebenzi. Izicelo zivame ukuba nosuku lokugcina.",
+  "lifeTaskJobPauseDebits": "Bhala ama-oda okudonsa imali nemali yokubhalisa, bese umisa lokho ongakwazi",
+  "lifeTaskStudySaveLetters": "Engeza izithombe zencwadi yokwamukelwa nezitatimende zemali yesikole ku-Vaultara",
+  "lifeTaskStudyFunding": "Hlola izinsuku zokugcina zemifundaze, imalimboleko noma olunye usizo",
+  "lifeTaskRetirePension": "Buza ukuthi impesheni yakho izokhokhwa kanjani futhi nini",
+  "lifeTaskRetireOwnCover": "Hlela umshwalense wakho wezempilo uma owomsebenzi uphela",
+  "lifeTaskCountryTellBankTax": "Tshela ibhange nehhovisi lentela ukuthi uyahamba",
+  "lifeTaskCountryScanCopies": "Engeza isithombe sedokhumenti ngayinye ebalulekile ku-Vaultara",
+  "lifeTaskCountryLicenceRules": "Hlola ukuthi kudingeka yini ushintshe ilayisense yokushayela",
+  "lifeTaskChildOwnId": "Msize afake isicelo sikamazisi wakhe uma emdinga",
+  "lifeTaskChildBankAccount": "Msize avule eyakhe i-akhawunti yasebhange",
+  "lifeTaskDeathCertificates": "Thola amakhophi ambalwa aqinisekisiwe esitifiketi sokufa",
+  "lifeTaskDeathTellOrganisations": "Tshela ibhange, izinkampani zomshwalense nomqashi",
+  "lifeTaskDeathFindWill": "Thola incwadi yefa bese uxhumana nomphathi wefa",
+  "lifeTaskDeathStopReminders": "Uma usukulungele, cisha izikhumbuzo zamarekhodi akhe",
+  "lifeTaskPhoneBlockSim": "Shayela inethiwekhi yakho ukuze bavale ikhadi le-SIM. Lokhu kumisa ukukhwabanisa ngokushintsha i-SIM.",
+  "lifeTaskPhoneBlockBanking": "Shayela ibhange lakho ukuze bavale ukubhanga efonini",
+  "lifeTaskPhoneLockErase": "Khiya noma usule ifoni usebenzisa enye idivayisi",
+  "lifeTaskPhoneChangePasswords": "Shintsha amaphasiwedi e-imeyili nawezinkundla zokuxhumana",
+  "lifeTaskReportToPolice": "Bika emaphoyiseni bese ugcina inombolo yecala",
+  "lifeTaskDisasterSafePlace": "Qinisekisa ukuthi wonke umuntu uphephile futhi unendawo yokuhlala",
+  "lifeTaskDisasterPhotos": "Thatha izithombe zomonakalo ngaphambi kokuhlanza",
+  "lifeTaskDisasterContactInsurer": "Xhumana nenkampani yomshwalense ngokushesha",
+  "lifeTaskDisasterProofPack": "Thumela amakhophi amadokhumenti akho nge-Phakheji lobufakazi",
+  "lifeTaskParentFindPapers": "Thola ukuthi amaphepha akhe abalulekile agcinwe kuphi",
+  "lifeTaskParentPermission": "Buza ukuthi ungakhuluma egameni lakhe nebhange, udokotela nenkampani yomshwalense",
+  "lifeTaskParentMedicines": "Gcina uhlu lwemithi yakhe nodokotela bakhe",
+  "lifePlanDoClaim": "Faka isimangalo",
+  "lifePlanStatusClaimed": "Isimangalo sifakiwe",
+  "lifePlanStartBy": "{weeks, plural, =1{Qala ngaphambi kuka-{date}. Okusha kuvame ukuthatha cishe isonto elilodwa.} other{Qala ngaphambi kuka-{date}. Okusha kuvame ukuthatha cishe amasonto angu-{weeks}.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Qala manje. Okusha kuvame ukuthatha cishe isonto elilodwa.} other{Qala manje. Okusha kuvame ukuthatha cishe amasonto angu-{weeks}.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Uhlelo lwakho",
+  "lifePlanWhenHappened": "Kwenzeke nini?",
+  "lifePlanReminderNudge": "Uhlelo lwakho lusenezinto okufanele zenziwe. Luvule uma unesikhathi.",
+  "lifePlanReminderCheckIn": "Ingabe amakhadi namadokhumenti akho amasha afikile? Vula uhlelo ukuze uhlole.",
+  "lifePlanDoFirst": "Yenza lokhu kuqala",
+  "lifePlanSteps": "Ezinye izinyathelo",
+  "lifePlanAddOwnStep": "Engeza isinyathelo sakho",
+  "lifePlanOwnStepHint": "Isibonelo: Tshela isikole",
+  "lifePlanOwnStepLimit": "Ungengeza izinyathelo zakho ezifika ku-20.",
+  "lifePlanReadAloud": "Funda ngokuzwakalayo",
+  "lifePlanStopReading": "Yeka ukufunda",
+  "lifePlanReadAloudUnavailable": "Ukufunda ngokuzwakalayo akutholakali kule foni.",
+  "lifePlanProofPack": "Yenza iphakheji lobufakazi",
+  "lifePlanOpenFamily": "Vula Umndeni",
+  "lifePlanRemoved": "{count, plural, =1{Irekhodi eli-1 olisusile libalwa njengelikhanseliwe.} other{Amarekhodi angu-{count} owasusile abalwa njengakhanseliwe.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Ukuvuselela lokhu kuvame ukubiza cishe u-{amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Uthuthela ekhaya elisha? Bheka ukuthi yini okunye okufanele ukubuyekeze."
 }

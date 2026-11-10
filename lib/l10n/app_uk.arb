@@ -2166,5 +2166,136 @@
   "lifePlanReminderAfter": "Дещо ще не зроблено. Відкрийте план, щоб завершити.",
   "lifePlanSuggestCar": "Купили чи продали авто? Подивіться, що ще треба оновити.",
   "lifePlanSuggestTrip": "Переїжджаєте туди надовго?",
-  "lifePlanSuggestTripBody": "Почніть план переїзду до іншої країни. Vaultara покаже, що владнати до від'їзду."
+  "lifePlanSuggestTripBody": "Почніть план переїзду до іншої країни. Vaultara покаже, що владнати до від'їзду.",
+  "lifeGroupHome": "Дім",
+  "lifeGroupFamily": "Сім'я",
+  "lifeGroupWork": "Робота й навчання",
+  "lifeGroupCarTravel": "Авто й подорожі",
+  "lifeGroupEmergency": "Щось сталося",
+  "lifeEventCarBuy": "Я купив авто",
+  "lifeEventCarBuyBody": "Оформіть страховку до того, як поїдете додому, а потім переоформіть авто на себе.",
+  "lifeEventCarSell": "Я продав авто",
+  "lifeEventCarSellBody": "Повідомте про продаж у сервісний центр і розірвіть страховку, коли авто вже не ваше.",
+  "lifeEventJobStart": "Я починаю нову роботу",
+  "lifeEventJobStartBody": "Перед початком перевірте дозволи, а потім оформіть перепустку й пільги.",
+  "lifeEventJobLeave": "Я звільняюся з роботи",
+  "lifeEventJobLeaveBody": "Поверніть робочі речі й дізнайтеся, що буде зі страховкою від роботи.",
+  "lifeEventLostPhone": "Я загубив телефон, або його вкрали",
+  "lifeEventLostPhoneBody": "Дійте швидко. Той, у кого ваш телефон і SIM-картка, може зайти у ваш банк і пошту. Зробіть перші кроки відразу.",
+  "lifeEventJobLoss": "Я втратив роботу",
+  "lifeEventJobLossBody": "Це важко. Рухайтеся крок за кроком. Деякі заяви мають строк, тож почніть із них.",
+  "lifeEventDisaster": "Пожежа, затоплення чи крадіжка вдома",
+  "lifeEventDisasterBody": "Спершу переконайтеся, що всі в безпеці. Потім сфотографуйте, зв'яжіться зі страховою й відновіть утрачене.",
+  "lifeEventCaringParent": "Я доглядаю за батьком чи матір'ю",
+  "lifeEventCaringParentBody": "Оберіть людину, за якою доглядаєте. Перевірте її документи й страховки та тримайте потрібне під рукою.",
+  "lifeVariantCarQuestion": "Ви купили чи продали?",
+  "lifeVariantJobQuestion": "Ви починаєте чи йдете?",
+  "lifeVariantBuy": "Купив",
+  "lifeVariantSell": "Продав",
+  "lifeVariantStart": "Починаю",
+  "lifeVariantLeave": "Іду",
+  "lifeTaskRedirectPost": "Попросіть пересилати пошту на нову адресу",
+  "lifeTaskNewAddressEveryone": "Повідомте нову адресу роботодавцю, податковій, лікарю та школі",
+  "lifeTaskMoveUtilities": "Розірвіть або переоформіть договори на світло, воду й інтернет",
+  "lifeTaskMeterReadings": "У день виїзду зніміть показники лічильників і сфотографуйте їх",
+  "lifeTaskSaveHomePapers": "Додайте у Vaultara фото документів про продаж чи передачу",
+  "lifeTaskHandOverKeys": "Передайте ключі, пульти й перепустки",
+  "lifeTaskOfficialNameProof": "Спершу отримайте офіційне підтвердження нового імені. Більшість установ його вимагає.",
+  "lifeTaskTellNameChange": "Повідомте нове ім'я банку, роботодавцю, лікарю та податковій",
+  "lifeTaskUpdateOnlineAccounts": "Змініть ім'я в пошті, телефоні й онлайн-акаунтах",
+  "lifeTaskSaveMarriageCertificate": "Додайте у Vaultara фото свідоцтва про шлюб",
+  "lifeTaskCheckBeneficiaries": "Перевірте, хто вказаний вигодонабувачем у полісах і на рахунках",
+  "lifeTaskUpdateWill": "Складіть або оновіть заповіт",
+  "lifeTaskSaveDivorceOrder": "Додайте у Vaultara фото остаточного рішення про розлучення",
+  "lifeTaskSplitSharedAccounts": "Закрийте або розділіть спільні рахунки й змініть спільні паролі",
+  "lifeTaskRegisterBirth": "Зареєструйте народження й отримайте свідоцтво про народження",
+  "lifeTaskAddBabyToFamily": "Додайте малюка в Сім'ю, щоб стежити за його документами",
+  "lifeTaskCarRegisterInName": "Переоформіть авто на себе у строк, визначений законом",
+  "lifeTaskCarSavePapers": "Додайте у Vaultara фото договору купівлі-продажу",
+  "lifeTaskCarNotifySale": "Повідомте сервісний центр, що продали авто, і збережіть підтвердження",
+  "lifeTaskCarRemoveTags": "Зніміть транспондери, паркувальні картки й заберіть особисті речі",
+  "lifeTaskJobGiveDetails": "Передайте новому роботодавцю банківські реквізити й податковий номер",
+  "lifeTaskJobJoinBenefits": "Приєднайтеся до медичної страховки й пенсійної програми роботодавця",
+  "lifeTaskJobReturnItems": "Поверніть робочі речі, як-от ноутбук, перепустку чи ключі",
+  "lifeTaskJobLastPayslip": "Попросіть останній розрахунковий лист і довідку про період роботи",
+  "lifeTaskJobAskBenefits": "Дізнайтеся, що буде з медичною страховкою й пенсією",
+  "lifeTaskJobUnemployment": "Дізнайтеся про допомогу з безробіття вже зараз. Заяви часто мають строк.",
+  "lifeTaskJobPauseDebits": "Складіть список автоплатежів і підписок і призупиніть, що можна",
+  "lifeTaskStudySaveLetters": "Додайте у Vaultara фото листа про зарахування й квитанцій про оплату",
+  "lifeTaskStudyFunding": "Перевірте строки стипендій, кредитів та іншої підтримки",
+  "lifeTaskRetirePension": "Дізнайтеся, як і коли виплачуватимуть пенсію",
+  "lifeTaskRetireOwnCover": "Оформіть власну медичну страховку, якщо робоча закінчується",
+  "lifeTaskCountryTellBankTax": "Повідомте банку й податковій, що виїжджаєте",
+  "lifeTaskCountryScanCopies": "Додайте у Vaultara фото кожного важливого документа",
+  "lifeTaskCountryLicenceRules": "Дізнайтеся, чи треба обміняти посвідчення водія",
+  "lifeTaskChildOwnId": "Допоможіть оформити власне посвідчення особи, якщо потрібно",
+  "lifeTaskChildBankAccount": "Допоможіть відкрити власний банківський рахунок",
+  "lifeTaskDeathCertificates": "Отримайте кілька засвідчених копій свідоцтва про смерть",
+  "lifeTaskDeathTellOrganisations": "Повідомте банк, страхові компанії й роботодавця",
+  "lifeTaskDeathFindWill": "Знайдіть заповіт і зв'яжіться з виконавцем",
+  "lifeTaskDeathStopReminders": "Коли будете готові, вимкніть нагадування про його записи",
+  "lifeTaskPhoneBlockSim": "Зателефонуйте оператору, щоб заблокувати SIM-картку. Це зупинить шахрайство із заміною SIM.",
+  "lifeTaskPhoneBlockBanking": "Зателефонуйте в банк, щоб заблокувати мобільний банкінг",
+  "lifeTaskPhoneLockErase": "Заблокуйте або зітріть телефон з іншого пристрою",
+  "lifeTaskPhoneChangePasswords": "Змініть паролі від пошти й соцмереж",
+  "lifeTaskReportToPolice": "Заявіть у поліцію й збережіть номер справи",
+  "lifeTaskDisasterSafePlace": "Переконайтеся, що всі в безпеці й мають де жити",
+  "lifeTaskDisasterPhotos": "Сфотографуйте пошкодження до прибирання",
+  "lifeTaskDisasterContactInsurer": "Зв'яжіться зі страховою якомога швидше",
+  "lifeTaskDisasterProofPack": "Надішліть копії документів через Пакет підтверджень",
+  "lifeTaskParentFindPapers": "Дізнайтеся, де зберігаються його важливі папери",
+  "lifeTaskParentPermission": "Запитайте, чи можете ви говорити від його імені з банком, лікарем і страховою",
+  "lifeTaskParentMedicines": "Ведіть список його ліків і лікарів",
+  "lifePlanDoClaim": "Подати заяву",
+  "lifePlanStatusClaimed": "Заяву подано",
+  "lifePlanStartBy": "{weeks, plural, one{Почніть до {date}. Зазвичай новий займає близько {weeks} тижня.} few{Почніть до {date}. Зазвичай новий займає близько {weeks} тижнів.} many{Почніть до {date}. Зазвичай новий займає близько {weeks} тижнів.} other{Почніть до {date}. Зазвичай новий займає близько {weeks} тижня.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Почніть зараз. Зазвичай новий займає близько {weeks} тижня.} few{Почніть зараз. Зазвичай новий займає близько {weeks} тижнів.} many{Почніть зараз. Зазвичай новий займає близько {weeks} тижнів.} other{Почніть зараз. Зазвичай новий займає близько {weeks} тижня.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Ваш план",
+  "lifePlanWhenHappened": "Коли це сталося?",
+  "lifePlanReminderNudge": "У вашому плані ще є справи. Відкрийте його, коли матимете хвилинку.",
+  "lifePlanReminderCheckIn": "Нові картки й документи надійшли? Відкрийте план, щоб перевірити.",
+  "lifePlanDoFirst": "Спершу зробіть це",
+  "lifePlanSteps": "Інші кроки",
+  "lifePlanAddOwnStep": "Додати свій крок",
+  "lifePlanOwnStepHint": "Наприклад: Повідомити школу",
+  "lifePlanOwnStepLimit": "Можна додати до 20 своїх кроків.",
+  "lifePlanReadAloud": "Прочитати вголос",
+  "lifePlanStopReading": "Зупинити читання",
+  "lifePlanReadAloudUnavailable": "Читання вголос недоступне на цьому телефоні.",
+  "lifePlanProofPack": "Створити пакет підтверджень",
+  "lifePlanOpenFamily": "Відкрити Сім'ю",
+  "lifePlanRemoved": "{count, plural, one{{count} видалений запис вважається закритим.} few{{count} видалені записи вважаються закритими.} many{{count} видалених записів вважаються закритими.} other{{count} видаленого запису вважаються закритими.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Зазвичай їх оновлення коштує близько {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Переїжджаєте? Подивіться, що ще треба оновити."
 }

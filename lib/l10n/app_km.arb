@@ -1899,5 +1899,136 @@
   "lifePlanReminderAfter": "នៅមានកិច្ចការខ្លះនៅសល់។ បើកផែនការដើម្បីបញ្ចប់វា។",
   "lifePlanSuggestCar": "បានទិញ ឬលក់ឡាន? មើលថាត្រូវធ្វើបច្ចុប្បន្នភាពអ្វីទៀត។",
   "lifePlanSuggestTrip": "ផ្លាស់ទៅទីនោះមួយរយៈ?",
-  "lifePlanSuggestTripBody": "ចាប់ផ្ដើមផែនការផ្លាស់ទៅប្រទេសផ្សេង។ Vaultara បង្ហាញអ្វីដែលត្រូវរៀបចំមុនអ្នកចេញដំណើរ។"
+  "lifePlanSuggestTripBody": "ចាប់ផ្ដើមផែនការផ្លាស់ទៅប្រទេសផ្សេង។ Vaultara បង្ហាញអ្វីដែលត្រូវរៀបចំមុនអ្នកចេញដំណើរ។",
+  "lifeGroupHome": "ផ្ទះ",
+  "lifeGroupFamily": "គ្រួសារ",
+  "lifeGroupWork": "ការងារ និងការសិក្សា",
+  "lifeGroupCarTravel": "រថយន្ត និងការធ្វើដំណើរ",
+  "lifeGroupEmergency": "មានបញ្ហាកើតឡើង",
+  "lifeEventCarBuy": "ខ្ញុំបានទិញរថយន្ត",
+  "lifeEventCarBuyBody": "ទិញធានារ៉ាប់រងមុនបើកវាមកផ្ទះ បន្ទាប់មកដាក់រថយន្តក្នុងឈ្មោះអ្នក។",
+  "lifeEventCarSell": "ខ្ញុំបានលក់រថយន្ត",
+  "lifeEventCarSellBody": "ជូនដំណឹងការលក់ទៅការិយាល័យអាជ្ញាប័ណ្ណ ហើយបោះបង់ធានារ៉ាប់រង នៅពេលរថយន្តលែងជារបស់អ្នក។",
+  "lifeEventJobStart": "ខ្ញុំចាប់ផ្ដើមការងារថ្មី",
+  "lifeEventJobStartBody": "ពិនិត្យលិខិតអនុញ្ញាតមុនចាប់ផ្ដើម បន្ទាប់មករៀបចំកាតការងារ និងអត្ថប្រយោជន៍។",
+  "lifeEventJobLeave": "ខ្ញុំឈប់ពីការងារ",
+  "lifeEventJobLeaveBody": "ប្រគល់សម្ភារៈការងារវិញ ហើយពិនិត្យថាតើការធានាដែលការងារផ្ដល់ឱ្យនឹងទៅជាយ៉ាងណា។",
+  "lifeEventLostPhone": "ទូរស័ព្ទខ្ញុំបាត់ ឬត្រូវគេលួច",
+  "lifeEventLostPhoneBody": "ធ្វើឱ្យលឿន។ អ្នកដែលមានទូរស័ព្ទ និងស៊ីមកាតរបស់អ្នក អាចចូលធនាគារ និងអ៊ីមែលរបស់អ្នកបាន។ ធ្វើជំហានដំបូងភ្លាមៗ។",
+  "lifeEventJobLoss": "ខ្ញុំបាត់បង់ការងារ",
+  "lifeEventJobLossBody": "នេះពិបាក។ ធ្វើម្ដងមួយជំហាន។ ការស្នើសុំខ្លះមានកាលកំណត់ ដូច្នេះចាប់ផ្ដើមពីវាសិន។",
+  "lifeEventDisaster": "អគ្គិភ័យ ទឹកជំនន់ ឬចោរលួចនៅផ្ទះ",
+  "lifeEventDisasterBody": "ត្រូវប្រាកដថាគ្រប់គ្នាមានសុវត្ថិភាពសិន។ បន្ទាប់មកថតរូប ទាក់ទងក្រុមហ៊ុនធានារ៉ាប់រង ហើយជំនួសអ្វីដែលបាត់។",
+  "lifeEventCaringParent": "ខ្ញុំកំពុងមើលថែឪពុក ឬម្ដាយ",
+  "lifeEventCaringParentBody": "ជ្រើសរើសអ្នកដែលអ្នកមើលថែ។ ពិនិត្យឯកសារ និងការធានារបស់គាត់ ហើយទុកអ្វីដែលត្រូវការនៅក្បែរខ្លួន។",
+  "lifeVariantCarQuestion": "អ្នកបានទិញ ឬលក់?",
+  "lifeVariantJobQuestion": "អ្នកចាប់ផ្ដើម ឬឈប់?",
+  "lifeVariantBuy": "បានទិញ",
+  "lifeVariantSell": "បានលក់",
+  "lifeVariantStart": "ចាប់ផ្ដើម",
+  "lifeVariantLeave": "ឈប់",
+  "lifeTaskRedirectPost": "ស្នើឱ្យផ្ញើសំបុត្ររបស់អ្នកទៅអាសយដ្ឋានថ្មី",
+  "lifeTaskNewAddressEveryone": "ផ្ដល់អាសយដ្ឋានថ្មីដល់និយោជក ការិយាល័យពន្ធ វេជ្ជបណ្ឌិត និងសាលា",
+  "lifeTaskMoveUtilities": "បិទ ឬផ្ទេរគណនីអគ្គិសនី ទឹក និងអ៊ីនធឺណិត",
+  "lifeTaskMeterReadings": "កត់លេខកុងទ័រ និងថតរូបនៅថ្ងៃដែលអ្នកចេញ",
+  "lifeTaskSaveHomePapers": "បន្ថែមរូបថតឯកសារលក់ ឬផ្ទេរកម្មសិទ្ធិទៅ Vaultara",
+  "lifeTaskHandOverKeys": "ប្រគល់សោ រីម៉ូត និងកាតចូល",
+  "lifeTaskOfficialNameProof": "ទទួលភស្តុតាងផ្លូវការនៃឈ្មោះថ្មីរបស់អ្នកសិន។ ការិយាល័យភាគច្រើនស្នើសុំវា។",
+  "lifeTaskTellNameChange": "ប្រាប់ធនាគារ និយោជក វេជ្ជបណ្ឌិត និងការិយាល័យពន្ធអំពីឈ្មោះថ្មី",
+  "lifeTaskUpdateOnlineAccounts": "ប្ដូរឈ្មោះក្នុងអ៊ីមែល ទូរស័ព្ទ និងគណនីអនឡាញ",
+  "lifeTaskSaveMarriageCertificate": "បន្ថែមរូបថតសំបុត្រអាពាហ៍ពិពាហ៍ទៅ Vaultara",
+  "lifeTaskCheckBeneficiaries": "ពិនិត្យថាអ្នកណាជាអ្នកទទួលផលក្នុងបណ្ណសន្យា និងគណនីរបស់អ្នក",
+  "lifeTaskUpdateWill": "ធ្វើ ឬធ្វើបច្ចុប្បន្នភាពឆន្ទៈ",
+  "lifeTaskSaveDivorceOrder": "បន្ថែមរូបថតសាលក្រមលែងលះចុងក្រោយទៅ Vaultara",
+  "lifeTaskSplitSharedAccounts": "បិទ ឬបែងចែកគណនីរួម ហើយប្ដូរពាក្យសម្ងាត់រួម",
+  "lifeTaskRegisterBirth": "ចុះបញ្ជីកំណើត ហើយយកសំបុត្រកំណើត",
+  "lifeTaskAddBabyToFamily": "បន្ថែមទារកក្នុងគ្រួសារ ដើម្បីតាមដានឯកសាររបស់គេ",
+  "lifeTaskCarRegisterInName": "ដាក់រថយន្តក្នុងឈ្មោះអ្នកក្នុងរយៈពេលដែលច្បាប់អនុញ្ញាត",
+  "lifeTaskCarSavePapers": "បន្ថែមរូបថតកិច្ចសន្យាលក់ទៅ Vaultara",
+  "lifeTaskCarNotifySale": "ប្រាប់ការិយាល័យអាជ្ញាប័ណ្ណថាអ្នកបានលក់រថយន្ត ហើយរក្សាភស្តុតាង",
+  "lifeTaskCarRemoveTags": "ដកស្លាកបង់ថ្លៃផ្លូវ កាតចតរថយន្ត និងរបស់ផ្ទាល់ខ្លួន",
+  "lifeTaskJobGiveDetails": "ផ្ដល់ព័ត៌មានធនាគារ និងលេខពន្ធដល់និយោជកថ្មី",
+  "lifeTaskJobJoinBenefits": "ចូលរួមការធានាសុខភាព និងសោធននិវត្តន៍ដែលនិយោជកផ្ដល់",
+  "lifeTaskJobReturnItems": "ប្រគល់សម្ភារៈការងារ ដូចជាកុំព្យូទ័រយួរដៃ កាត ឬសោ",
+  "lifeTaskJobLastPayslip": "សុំបង្កាន់ដៃប្រាក់ខែចុងក្រោយ និងលិខិតបញ្ជាក់កាលបរិច្ឆេទការងារ",
+  "lifeTaskJobAskBenefits": "សួរថាការធានាសុខភាព និងសោធនរបស់អ្នកនឹងទៅជាយ៉ាងណា",
+  "lifeTaskJobUnemployment": "សួរអំពីប្រាក់ឧបត្ថម្ភអត់ការងារឥឡូវនេះ។ ការស្នើសុំច្រើនតែមានកាលកំណត់។",
+  "lifeTaskJobPauseDebits": "រាយការដកប្រាក់ស្វ័យប្រវត្តិ និងការជាវ ហើយផ្អាកអ្វីដែលអាចធ្វើបាន",
+  "lifeTaskStudySaveLetters": "បន្ថែមរូបថតលិខិតទទួលចូលរៀន និងរបាយការណ៍ថ្លៃសិក្សាទៅ Vaultara",
+  "lifeTaskStudyFunding": "ពិនិត្យកាលកំណត់អាហារូបករណ៍ កម្ចី ឬជំនួយផ្សេងៗ",
+  "lifeTaskRetirePension": "សួរថាសោធនរបស់អ្នកនឹងបើកយ៉ាងដូចម្ដេច និងពេលណា",
+  "lifeTaskRetireOwnCover": "រៀបចំការធានាសុខភាពផ្ទាល់ខ្លួន ប្រសិនបើការធានាពីការងារបញ្ចប់",
+  "lifeTaskCountryTellBankTax": "ប្រាប់ធនាគារ និងការិយាល័យពន្ធថាអ្នកនឹងចាកចេញ",
+  "lifeTaskCountryScanCopies": "បន្ថែមរូបថតឯកសារសំខាន់ៗទាំងអស់ទៅ Vaultara",
+  "lifeTaskCountryLicenceRules": "ពិនិត្យថាតើអ្នកត្រូវប្ដូរប័ណ្ណបើកបរឬទេ",
+  "lifeTaskChildOwnId": "ជួយគេដាក់ពាក្យសុំអត្តសញ្ញាណប័ណ្ណផ្ទាល់ខ្លួន ប្រសិនបើត្រូវការ",
+  "lifeTaskChildBankAccount": "ជួយគេបើកគណនីធនាគារផ្ទាល់ខ្លួន",
+  "lifeTaskDeathCertificates": "យកច្បាប់ចម្លងមរណភាពដែលបានបញ្ជាក់មួយចំនួន",
+  "lifeTaskDeathTellOrganisations": "ប្រាប់ធនាគារ ក្រុមហ៊ុនធានារ៉ាប់រង និងនិយោជក",
+  "lifeTaskDeathFindWill": "រកឆន្ទៈ ហើយទាក់ទងអ្នកអនុវត្តឆន្ទៈ",
+  "lifeTaskDeathStopReminders": "នៅពេលអ្នករួចរាល់ បិទការរំលឹកសម្រាប់កំណត់ត្រារបស់គាត់",
+  "lifeTaskPhoneBlockSim": "ហៅទៅប្រព័ន្ធទូរស័ព្ទដើម្បីបិទស៊ីមកាត។ វាបញ្ឈប់ការបោកប្រាស់ប្ដូរស៊ីម។",
+  "lifeTaskPhoneBlockBanking": "ហៅទៅធនាគារដើម្បីបិទសេវាធនាគារលើទូរស័ព្ទ",
+  "lifeTaskPhoneLockErase": "ចាក់សោ ឬលុបទូរស័ព្ទពីឧបករណ៍ផ្សេង",
+  "lifeTaskPhoneChangePasswords": "ប្ដូរពាក្យសម្ងាត់អ៊ីមែល និងបណ្ដាញសង្គម",
+  "lifeTaskReportToPolice": "រាយការណ៍ទៅប៉ូលីស ហើយរក្សាលេខសំណុំរឿង",
+  "lifeTaskDisasterSafePlace": "ប្រាកដថាគ្រប់គ្នាមានសុវត្ថិភាព និងមានកន្លែងស្នាក់នៅ",
+  "lifeTaskDisasterPhotos": "ថតរូបការខូចខាតមុនពេលសម្អាត",
+  "lifeTaskDisasterContactInsurer": "ទាក់ទងក្រុមហ៊ុនធានារ៉ាប់រងឱ្យបានឆាប់",
+  "lifeTaskDisasterProofPack": "ផ្ញើច្បាប់ចម្លងឯកសារជាមួយកញ្ចប់ភស្តុតាង",
+  "lifeTaskParentFindPapers": "ស្វែងយល់ថាឯកសារសំខាន់ៗរបស់គាត់ទុកនៅឯណា",
+  "lifeTaskParentPermission": "សួរថាតើអ្នកអាចនិយាយជំនួសគាត់ជាមួយធនាគារ វេជ្ជបណ្ឌិត និងក្រុមហ៊ុនធានារ៉ាប់រងបានឬទេ",
+  "lifeTaskParentMedicines": "រក្សាបញ្ជីថ្នាំ និងវេជ្ជបណ្ឌិតរបស់គាត់",
+  "lifePlanDoClaim": "ទាមទារសំណង",
+  "lifePlanStatusClaimed": "បានទាមទារ",
+  "lifePlanStartBy": "{weeks, plural, other{ចាប់ផ្ដើមមុន {date}។ ថ្មីមួយជាធម្មតាត្រូវការប្រហែល {weeks} សប្ដាហ៍។}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{ចាប់ផ្ដើមឥឡូវនេះ។ ថ្មីមួយជាធម្មតាត្រូវការប្រហែល {weeks} សប្ដាហ៍។}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ផែនការរបស់អ្នក",
+  "lifePlanWhenHappened": "វាកើតឡើងនៅពេលណា?",
+  "lifePlanReminderNudge": "ផែនការរបស់អ្នកនៅមានការងារត្រូវធ្វើ។ បើកវានៅពេលអ្នកទំនេរ។",
+  "lifePlanReminderCheckIn": "កាត និងឯកសារថ្មីរបស់អ្នកមកដល់ហើយឬនៅ? បើកផែនការដើម្បីពិនិត្យ។",
+  "lifePlanDoFirst": "ធ្វើនេះមុន",
+  "lifePlanSteps": "ជំហានផ្សេងទៀត",
+  "lifePlanAddOwnStep": "បន្ថែមជំហានផ្ទាល់ខ្លួន",
+  "lifePlanOwnStepHint": "ឧទាហរណ៍៖ ប្រាប់សាលា",
+  "lifePlanOwnStepLimit": "អ្នកអាចបន្ថែមជំហានផ្ទាល់ខ្លួនបានរហូតដល់ 20។",
+  "lifePlanReadAloud": "អានឮៗ",
+  "lifePlanStopReading": "ឈប់អាន",
+  "lifePlanReadAloudUnavailable": "ការអានឮៗមិនមាននៅលើទូរស័ព្ទនេះទេ។",
+  "lifePlanProofPack": "បង្កើតកញ្ចប់ភស្តុតាង",
+  "lifePlanOpenFamily": "បើកគ្រួសារ",
+  "lifePlanRemoved": "{count, plural, other{កំណត់ត្រា {count} ដែលអ្នកបានលុប ត្រូវរាប់ជាបានបោះបង់។}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "ការបន្តទាំងនេះជាធម្មតាចំណាយប្រហែល {amount}។",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "កំពុងផ្លាស់ទៅផ្ទះថ្មី? មើលអ្វីផ្សេងទៀតដែលត្រូវធ្វើបច្ចុប្បន្នភាព។"
 }

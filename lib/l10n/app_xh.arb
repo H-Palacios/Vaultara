@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Zisekhona izinto ezishiyekileyo. Vula isicwangciso ukuze uzigqibe.",
   "lifePlanSuggestCar": "Uthenge okanye uthengise imoto? Bona enye into ekufuneka uyihlaziye.",
   "lifePlanSuggestTrip": "Ufudukela apho okwexeshana?",
-  "lifePlanSuggestTripBody": "Qala isicwangciso sokufudukela kwelinye ilizwe. I-Vaultara ibonisa into ekufuneka uyilungise phambi kokuba uhambe."
+  "lifePlanSuggestTripBody": "Qala isicwangciso sokufudukela kwelinye ilizwe. I-Vaultara ibonisa into ekufuneka uyilungise phambi kokuba uhambe.",
+  "lifeGroupHome": "Ikhaya",
+  "lifeGroupFamily": "Usapho",
+  "lifeGroupWork": "Umsebenzi nezifundo",
+  "lifeGroupCarTravel": "Imoto nohambo",
+  "lifeGroupEmergency": "Kukho into eyenzekileyo",
+  "lifeEventCarBuy": "Ndithenge imoto",
+  "lifeEventCarBuyBody": "Yifakele i-inshorensi ngaphambi kokuba uyiqhubele ekhaya, emva koko uyibhalise egameni lakho.",
+  "lifeEventCarSell": "Ndithengise imoto",
+  "lifeEventCarSellBody": "Xelela iofisi yeelayisensi ngentengiso, uze urhoxise i-inshorensi xa imoto ingaseyiyo eyakho.",
+  "lifeEventJobStart": "Ndiqala umsebenzi omtsha",
+  "lifeEventJobStartBody": "Jonga iimvume zakho ngaphambi kokuqala, uze ulungise ikhadi lomsebenzi nezibonelelo.",
+  "lifeEventJobLeave": "Ndiyawushiya umsebenzi wam",
+  "lifeEventJobLeaveBody": "Buyisa izinto zomsebenzi uze ujonge ukuba kuza kwenzeka ntoni kwi-inshorensi oyinikwe ngumsebenzi.",
+  "lifeEventLostPhone": "Ndilahlekelwe yifowuni okanye ibiwe",
+  "lifeEventLostPhoneBody": "Khawuleza. Nabani na onefowuni yakho nekhadi le-SIM angangena ebhankini nakwi-imeyile yakho. Yenza amanyathelo okuqala ngoku.",
+  "lifeEventJobLoss": "Ndiphelelwe ngumsebenzi",
+  "lifeEventJobLossBody": "Oku kunzima. Thatha inyathelo elinye ngexesha. Amabango athile anomhla wokugqibela, ngoko qala ngawo.",
+  "lifeEventDisaster": "Umlilo, izikhukhula okanye ukuqhekezwa ekhaya",
+  "lifeEventDisasterBody": "Qala uqinisekise ukuba wonke umntu ukhuselekile. Emva koko thatha iifoto, qhagamshelana nenkampani ye-inshorensi uze utshintshe oko kulahlekileyo.",
+  "lifeEventCaringParent": "Ndinakekela umzali",
+  "lifeEventCaringParentBody": "Khetha umntu omnakekelayo. Jonga amaxwebhu akhe ne-inshorensi, ugcine kufutshane oko ukudingayo.",
+  "lifeVariantCarQuestion": "Uthenge okanye uthengise?",
+  "lifeVariantJobQuestion": "Uyaqala okanye uyahamba?",
+  "lifeVariantBuy": "Ndithengile",
+  "lifeVariantSell": "Ndithengisile",
+  "lifeVariantStart": "Ndiyaqala",
+  "lifeVariantLeave": "Ndiyahamba",
+  "lifeTaskRedirectPost": "Cela ukuba iposi yakho ithunyelwe kwidilesi entsha",
+  "lifeTaskNewAddressEveryone": "Nika iqesha, iofisi yerhafu, ugqirha nesikolo idilesi yakho entsha",
+  "lifeTaskMoveUtilities": "Vala okanye udlulisele ii-akhawunti zombane, amanzi ne-intanethi",
+  "lifeTaskMeterReadings": "Ngomhla ophuma ngawo, bhala iimitha uze uthathe iifoto",
+  "lifeTaskSaveHomePapers": "Yongeza ifoto yamaphepha entengiso okanye okudlulisela kwi-Vaultara",
+  "lifeTaskHandOverKeys": "Nikezela ngezitshixo, iirimothi neekhadi zokungena",
+  "lifeTaskOfficialNameProof": "Qala ufumane ubungqina obusemthethweni begama lakho elitsha. Uninzi lweeofisi luyabucela.",
+  "lifeTaskTellNameChange": "Xelela ibhanki, iqesha, ugqirha neofisi yerhafu ngegama lakho elitsha",
+  "lifeTaskUpdateOnlineAccounts": "Tshintsha igama lakho kwi-imeyile, kwifowuni nakwii-akhawunti ze-intanethi",
+  "lifeTaskSaveMarriageCertificate": "Yongeza ifoto yesatifikethi somtshato kwi-Vaultara",
+  "lifeTaskCheckBeneficiaries": "Jonga ukuba ngubani ozuzayo kwiipolisi nakwii-akhawunti zakho",
+  "lifeTaskUpdateWill": "Yenza okanye uhlaziye ilifa (incwadi yokugqibela)",
+  "lifeTaskSaveDivorceOrder": "Yongeza ifoto yomyalelo wokugqibela woqhawulo-mtshato kwi-Vaultara",
+  "lifeTaskSplitSharedAccounts": "Vala okanye wahlule ii-akhawunti ezabelwana ngazo uze utshintshe iiphasiwedi ezabelwana ngazo",
+  "lifeTaskRegisterBirth": "Bhalisa ukuzalwa uze ufumane isatifikethi sokuzalwa",
+  "lifeTaskAddBabyToFamily": "Yongeza usana kuSapho ukuze amaxwebhu alo alandelelwe",
+  "lifeTaskCarRegisterInName": "Bhalisa imoto egameni lakho ngexesha elivunyelwe ngumthetho",
+  "lifeTaskCarSavePapers": "Yongeza ifoto yesivumelwano sentengiso kwi-Vaultara",
+  "lifeTaskCarNotifySale": "Xelela iofisi yeelayisensi ukuba uthengise imoto uze ugcine ubungqina",
+  "lifeTaskCarRemoveTags": "Susa iithegi zeendlela zokuhlawula, iikhadi zokupaka nezinto zakho",
+  "lifeTaskJobGiveDetails": "Nika iqesha elitsha iinkcukacha zebhanki nenombolo yerhafu",
+  "lifeTaskJobJoinBenefits": "Joyina i-inshorensi yezempilo nompeshenali onikezelwa ngumqeshi",
+  "lifeTaskJobReturnItems": "Buyisa izinto zomsebenzi ezifana nelaptop, ikhadi okanye izitshixo",
+  "lifeTaskJobLastPayslip": "Cela isiliphu somvuzo sokugqibela nencwadi eqinisekisa imihla yomsebenzi wakho",
+  "lifeTaskJobAskBenefits": "Buza ukuba kuza kwenzeka ntoni kwi-inshorensi yezempilo nomhlalaphantsi wakho",
+  "lifeTaskJobUnemployment": "Buza ngoku nge-UIF okanye inkxaso yokungasebenzi. Amabango adla ngokuba nomhla wokugqibela.",
+  "lifeTaskJobPauseDebits": "Dwelisa ii-odolo zokutsala imali nemirhumo, uze umise oko unako",
+  "lifeTaskStudySaveLetters": "Yongeza iifoto zeleta yokwamkelwa neengxelo zemirhumo kwi-Vaultara",
+  "lifeTaskStudyFunding": "Jonga imihla yokugqibela yeebhasari, iimali-mboleko okanye olunye uncedo",
+  "lifeTaskRetirePension": "Buza ukuba umhlalaphantsi wakho uza kuhlawulwa njani nini",
+  "lifeTaskRetireOwnCover": "Lungiselela i-inshorensi yakho yezempilo ukuba eyomsebenzi iyaphela",
+  "lifeTaskCountryTellBankTax": "Xelela ibhanki neofisi yerhafu ukuba uyahamba",
+  "lifeTaskCountryScanCopies": "Yongeza ifoto yexwebhu ngalinye elibalulekileyo kwi-Vaultara",
+  "lifeTaskCountryLicenceRules": "Jonga ukuba kufuneka utshintshe ilayisensi yokuqhuba",
+  "lifeTaskChildOwnId": "Mncede afake isicelo sesazisi sakhe ukuba uyasifuna",
+  "lifeTaskChildBankAccount": "Mncede avule eyakhe i-akhawunti yebhanki",
+  "lifeTaskDeathCertificates": "Fumana iikopi ezimbalwa eziqinisekisiweyo zesatifikethi sokufa",
+  "lifeTaskDeathTellOrganisations": "Xelela ibhanki, iinkampani ze-inshorensi neqesha",
+  "lifeTaskDeathFindWill": "Fumana ilifa uze uqhagamshelane nomlawuli walo",
+  "lifeTaskDeathStopReminders": "Xa ulungile, cima izikhumbuzo zeerekhodi zakhe",
+  "lifeTaskPhoneBlockSim": "Tsalela inethiwekhi yakho ukuze bavale ikhadi le-SIM. Oku kumisa ubuqhetseba bokutshintsha i-SIM.",
+  "lifeTaskPhoneBlockBanking": "Tsalela ibhanki yakho ukuze bavale ibhanki kwifowuni",
+  "lifeTaskPhoneLockErase": "Tshixa okanye ucime ifowuni usebenzisa esinye isixhobo",
+  "lifeTaskPhoneChangePasswords": "Tshintsha iiphasiwedi ze-imeyile nemidiya yoluntu",
+  "lifeTaskReportToPolice": "Xela emapoliseni uze ugcine inombolo yetyala",
+  "lifeTaskDisasterSafePlace": "Qinisekisa ukuba wonke umntu ukhuselekile kwaye unendawo yokuhlala",
+  "lifeTaskDisasterPhotos": "Thatha iifoto zomonakalo ngaphambi kokucoca",
+  "lifeTaskDisasterContactInsurer": "Qhagamshelana nenkampani ye-inshorensi ngokukhawuleza",
+  "lifeTaskDisasterProofPack": "Thumela iikopi zamaxwebhu akho ngePakethe yobungqina",
+  "lifeTaskParentFindPapers": "Fumanisa apho amaphepha akhe abalulekileyo agcinwe khona",
+  "lifeTaskParentPermission": "Buza ukuba ungathetha egameni lakhe nebhanki, ugqirha nenkampani ye-inshorensi",
+  "lifeTaskParentMedicines": "Gcina uluhlu lwamayeza akhe noogqirha bakhe",
+  "lifePlanDoClaim": "Faka ibango",
+  "lifePlanStatusClaimed": "Ibango lifakiwe",
+  "lifePlanStartBy": "{weeks, plural, =1{Qala ngaphambi ko-{date}. Entsha idla ngokuthatha malunga neveki enye.} other{Qala ngaphambi ko-{date}. Entsha idla ngokuthatha malunga neeveki ezi-{weeks}.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Qala ngoku. Entsha idla ngokuthatha malunga neveki enye.} other{Qala ngoku. Entsha idla ngokuthatha malunga neeveki ezi-{weeks}.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Isicwangciso sakho",
+  "lifePlanWhenHappened": "Kwenzeka nini?",
+  "lifePlanReminderNudge": "Isicwangciso sakho sisenezinto ekufuneka zenziwe. Sivule xa unexesha.",
+  "lifePlanReminderCheckIn": "Ingaba amakhadi namaxwebhu akho amatsha afikile? Vula isicwangciso ukuze ujonge.",
+  "lifePlanDoFirst": "Yenza oku kuqala",
+  "lifePlanSteps": "Amanye amanyathelo",
+  "lifePlanAddOwnStep": "Yongeza elakho inyathelo",
+  "lifePlanOwnStepHint": "Umzekelo: Xelela isikolo",
+  "lifePlanOwnStepLimit": "Ungongeza ukuya kuma-20 amanyathelo akho.",
+  "lifePlanReadAloud": "Funda ngokuvakalayo",
+  "lifePlanStopReading": "Yeka ukufunda",
+  "lifePlanReadAloudUnavailable": "Ukufunda ngokuvakalayo akufumaneki kule fowuni.",
+  "lifePlanProofPack": "Yenza ipakethe yobungqina",
+  "lifePlanOpenFamily": "Vula Usapho",
+  "lifePlanRemoved": "{count, plural, =1{Irekhodi eli-1 olicimileyo libalwa njengelirhoxisiweyo.} other{Iirekhodi ezi-{count} ozicimileyo zibalwa njengezirhoxisiweyo.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Ukuhlaziya ezi kudla ngokuxabisa malunga ne-{amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ufudukela kwikhaya elitsha? Jonga ukuba yintoni enye ekufuneka uyihlaziye."
 }

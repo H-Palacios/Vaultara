@@ -6846,4 +6846,330 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'ወደ ሌላ አገር ለመዛወር እቅድ ይጀምሩ። Vaultara ከመሄድዎ በፊት ምን ማስተካከል እንዳለብዎ ያሳያል።';
+
+  @override
+  String get lifeGroupHome => 'ቤት';
+
+  @override
+  String get lifeGroupFamily => 'ቤተሰብ';
+
+  @override
+  String get lifeGroupWork => 'ሥራ እና ትምህርት';
+
+  @override
+  String get lifeGroupCarTravel => 'መኪና እና ጉዞ';
+
+  @override
+  String get lifeGroupEmergency => 'የሆነ ችግር ተፈጥሯል';
+
+  @override
+  String get lifeEventCarBuy => 'መኪና ገዛሁ';
+
+  @override
+  String get lifeEventCarBuyBody => 'ወደ ቤት ከመንዳትህ በፊት ኢንሹራንስ አግኝ፣ ከዚያ መኪናውን በስምህ አስመዝግብ።';
+
+  @override
+  String get lifeEventCarSell => 'መኪና ሸጥኩ';
+
+  @override
+  String get lifeEventCarSellBody => 'ሽያጩን ለፈቃድ ቢሮ አሳውቅ፣ መኪናው የአንተ ካልሆነ በኋላ ኢንሹራንሱን ሰርዝ።';
+
+  @override
+  String get lifeEventJobStart => 'አዲስ ሥራ እጀምራለሁ';
+
+  @override
+  String get lifeEventJobStartBody => 'ከመጀመርህ በፊት ፈቃዶችህን አረጋግጥ፣ ከዚያ የሥራ ካርድህንና ጥቅማ ጥቅሞችህን አዘጋጅ።';
+
+  @override
+  String get lifeEventJobLeave => 'ሥራዬን እለቃለሁ';
+
+  @override
+  String get lifeEventJobLeaveBody => 'የሥራ ዕቃዎችን መልስ፣ ሥራህ የሰጠህ ሽፋን ምን እንደሚሆን አረጋግጥ።';
+
+  @override
+  String get lifeEventLostPhone => 'ስልኬ ጠፋ ወይም ተሰረቀ';
+
+  @override
+  String get lifeEventLostPhoneBody => 'በፍጥነት እርምጃ ውሰድ። ስልክህና ሲም ካርድህ ያለው ሰው ወደ ባንክህና ኢሜይልህ መግባት ይችላል። የመጀመሪያዎቹን ደረጃዎች ወዲያውኑ አድርግ።';
+
+  @override
+  String get lifeEventJobLoss => 'ሥራዬን አጣሁ';
+
+  @override
+  String get lifeEventJobLossBody => 'ይህ ከባድ ነው። በአንድ ጊዜ አንድ ደረጃ ውሰድ። አንዳንድ የይገባኛል ጥያቄዎች የጊዜ ገደብ አላቸው፣ ስለዚህ በእነሱ ጀምር።';
+
+  @override
+  String get lifeEventDisaster => 'በቤት ውስጥ እሳት፣ ጎርፍ ወይም ስርቆት';
+
+  @override
+  String get lifeEventDisasterBody => 'በመጀመሪያ ሁሉም ደህና መሆናቸውን አረጋግጥ። ከዚያ ፎቶ አንሳ፣ የኢንሹራንስ ድርጅትህን አግኝ እና የጠፋውን ተካ።';
+
+  @override
+  String get lifeEventCaringParent => 'ወላጅን እየተንከባከብኩ ነው';
+
+  @override
+  String get lifeEventCaringParentBody => 'የምትንከባከበውን ሰው ምረጥ። ሰነዶቻቸውንና ሽፋናቸውን አረጋግጥ፣ የሚያስፈልግህንም በአቅራቢያ አስቀምጥ።';
+
+  @override
+  String get lifeVariantCarQuestion => 'ገዛህ ወይስ ሸጥክ?';
+
+  @override
+  String get lifeVariantJobQuestion => 'እየጀመርክ ነው ወይስ እየለቀቅክ?';
+
+  @override
+  String get lifeVariantBuy => 'ገዛሁ';
+
+  @override
+  String get lifeVariantSell => 'ሸጥኩ';
+
+  @override
+  String get lifeVariantStart => 'እየጀመርኩ';
+
+  @override
+  String get lifeVariantLeave => 'እየለቀቅኩ';
+
+  @override
+  String get lifeTaskRedirectPost => 'ፖስታህ ወደ አዲሱ አድራሻህ እንዲላክ ጠይቅ';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'አዲሱን አድራሻህን ለአሠሪህ፣ ለግብር ቢሮ፣ ለሐኪምህ እና ለትምህርት ቤት ስጥ';
+
+  @override
+  String get lifeTaskMoveUtilities => 'የኤሌክትሪክ፣ የውሃ እና የኢንተርኔት ሂሳቦችህን ዝጋ ወይም አዛውር';
+
+  @override
+  String get lifeTaskMeterReadings => 'በምትለቅበት ቀን የቆጣሪ ንባቦችንና ፎቶዎችን ውሰድ';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'የሽያጭ ወይም የዝውውር ሰነዶችን ፎቶ ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskHandOverKeys => 'ቁልፎችን፣ ሪሞቶችንና የመግቢያ ካርዶችን አስረክብ';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'በመጀመሪያ የአዲሱን ስምህን ኦፊሴላዊ ማረጋገጫ አግኝ። አብዛኞቹ ቢሮዎች ይጠይቁታል።';
+
+  @override
+  String get lifeTaskTellNameChange => 'ስለ አዲሱ ስምህ ለባንክህ፣ ለአሠሪህ፣ ለሐኪምህ እና ለግብር ቢሮ አሳውቅ';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'በኢሜይልህ፣ በስልክህ እና በኦንላይን መለያዎችህ ላይ ስምህን ቀይር';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'የጋብቻ የምስክር ወረቀቱን ፎቶ ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'በፖሊሲዎችህና በሂሳቦችህ ላይ ተጠቃሚ ተብሎ የተጻፈው ማን እንደሆነ አረጋግጥ';
+
+  @override
+  String get lifeTaskUpdateWill => 'ኑዛዜ አዘጋጅ ወይም አዘምን';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'የመጨረሻውን የፍቺ ውሳኔ ፎቶ ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'የጋራ ሂሳቦችን ዝጋ ወይም ከፋፍል፣ የጋራ የይለፍ ቃሎችን ቀይር';
+
+  @override
+  String get lifeTaskRegisterBirth => 'ልደቱን አስመዝግብና የልደት የምስክር ወረቀቱን አግኝ';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'ሰነዶቻቸው እንዲከታተሉ ሕፃኑን በቤተሰብ ውስጥ አክል';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'ሕጉ በሚፈቅደው ጊዜ ውስጥ መኪናውን በስምህ አስመዝግብ';
+
+  @override
+  String get lifeTaskCarSavePapers => 'የሽያጭ ስምምነቱን ፎቶ ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskCarNotifySale => 'መኪናውን እንደሸጥክ ለፈቃድ ቢሮ አሳውቅና ማረጋገጫውን ያዝ';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'የክፍያ መንገድ መለያዎችን፣ የመኪና ማቆሚያ ካርዶችንና የግል ዕቃዎችን አስወግድ';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'የባንክ ዝርዝሮችህንና የግብር ቁጥርህን ለአዲሱ አሠሪህ ስጥ';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'አሠሪህ የሚያቀርበውን የሕክምና ሽፋንና ጡረታ ተቀላቀል';
+
+  @override
+  String get lifeTaskJobReturnItems => 'እንደ ላፕቶፕ፣ ካርድ ወይም ቁልፎች ያሉ የሥራ ዕቃዎችን መልስ';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'የመጨረሻ የደመወዝ ወረቀትህንና የሥራ ቀናትህን የሚያረጋግጥ ደብዳቤ ጠይቅ';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'የሕክምና ሽፋንህና ጡረታህ ምን እንደሚሆን ጠይቅ';
+
+  @override
+  String get lifeTaskJobUnemployment => 'ስለ ሥራ አጥነት ጥቅማ ጥቅሞች አሁኑኑ ጠይቅ። ጥያቄዎች ብዙ ጊዜ የጊዜ ገደብ አላቸው።';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'የቀጥታ ክፍያዎችህንና ምዝገባዎችህን ዘርዝር፣ የምትችለውንም አቁም';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'የተቀባይነት ደብዳቤህንና የክፍያ መግለጫዎችህን ፎቶዎች ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskStudyFunding => 'የስኮላርሺፕ፣ የብድር ወይም የሌላ የገንዘብ ድጋፍ የጊዜ ገደቦችን አረጋግጥ';
+
+  @override
+  String get lifeTaskRetirePension => 'ጡረታህ እንዴትና መቼ እንደሚከፈል ጠይቅ';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'የሥራ ሽፋንህ ካበቃ የራስህን የሕክምና ሽፋን አዘጋጅ';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'እንደምትሄድ ለባንክህና ለግብር ቢሮ አሳውቅ';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'የእያንዳንዱን አስፈላጊ ሰነድ ፎቶ ወደ Vaultara አክል';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'መንጃ ፈቃድህን መቀየር እንዳለብህ አረጋግጥ';
+
+  @override
+  String get lifeTaskChildOwnId => 'ካስፈለጋቸው የራሳቸውን መታወቂያ እንዲያመለክቱ እርዳቸው';
+
+  @override
+  String get lifeTaskChildBankAccount => 'የራሳቸውን የባንክ ሂሳብ እንዲከፍቱ እርዳቸው';
+
+  @override
+  String get lifeTaskDeathCertificates => 'የሞት የምስክር ወረቀቱን ጥቂት የተረጋገጡ ቅጂዎች አግኝ';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'ለባንኩ፣ ለኢንሹራንስ ድርጅቶችና ለአሠሪው አሳውቅ';
+
+  @override
+  String get lifeTaskDeathFindWill => 'ኑዛዜውን ፈልግና የንብረት አስፈጻሚውን አግኝ';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'ዝግጁ ስትሆን ለመዝገቦቻቸው አስታዋሾችን አጥፋ';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'ሲም ካርዱን ለማገድ ወደ ኔትወርክህ ደውል። ይህ የሲም ቅያሪ ማጭበርበርን ያስቆማል።';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'በስልኩ ላይ ያለውን የባንክ አገልግሎት ለማገድ ወደ ባንክህ ደውል';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'ስልኩን ከሌላ መሣሪያ ቆልፍ ወይም አጥፋ';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'የኢሜይልና የማኅበራዊ ሚዲያ የይለፍ ቃሎችህን ቀይር';
+
+  @override
+  String get lifeTaskReportToPolice => 'ለፖሊስ አመልክትና የጉዳዩን ቁጥር ያዝ';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'ሁሉም ደህና መሆናቸውንና የሚያርፉበት ቦታ እንዳላቸው አረጋግጥ';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'ከማጽዳትህ በፊት የጉዳቱን ፎቶዎች አንሳ';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'በተቻለ ፍጥነት የኢንሹራንስ ድርጅትህን አግኝ';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'የሰነዶችህን ቅጂዎች በማስረጃ ጥቅል ላክ';
+
+  @override
+  String get lifeTaskParentFindPapers => 'አስፈላጊ ሰነዶቻቸው የት እንደሚቀመጡ እወቅ';
+
+  @override
+  String get lifeTaskParentPermission => 'በእነሱ ስም ከባንካቸው፣ ከሐኪማቸውና ከኢንሹራንስ ድርጅታቸው ጋር መነጋገር ትችል እንደሆነ ጠይቅ';
+
+  @override
+  String get lifeTaskParentMedicines => 'የመድኃኒቶቻቸውንና የሐኪሞቻቸውን ዝርዝር ያዝ';
+
+  @override
+  String get lifePlanDoClaim => 'የይገባኛል ጥያቄ አቅርብ';
+
+  @override
+  String get lifePlanStatusClaimed => 'ጥያቄ ቀርቧል';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'እስከ $date ጀምር። አዲሱ ብዙ ጊዜ $weeks ሳምንታት ገደማ ይወስዳል።',
+      one: 'እስከ $date ጀምር። አዲሱ ብዙ ጊዜ አንድ ሳምንት ገደማ ይወስዳል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'አሁን ጀምር። አዲሱ ብዙ ጊዜ $weeks ሳምንታት ገደማ ይወስዳል።',
+      one: 'አሁን ጀምር። አዲሱ ብዙ ጊዜ አንድ ሳምንት ገደማ ይወስዳል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'ዕቅድህ';
+
+  @override
+  String get lifePlanWhenHappened => 'መቼ ሆነ?';
+
+  @override
+  String get lifePlanReminderNudge => 'ዕቅድህ አሁንም የሚሠሩ ነገሮች አሉት። ጊዜ ሲኖርህ ክፈተው።';
+
+  @override
+  String get lifePlanReminderCheckIn => 'አዲሶቹ ካርዶችህና ሰነዶችህ ደረሱ? ለማረጋገጥ ዕቅዱን ክፈት።';
+
+  @override
+  String get lifePlanDoFirst => 'ይህን በመጀመሪያ አድርግ';
+
+  @override
+  String get lifePlanSteps => 'ሌሎች ደረጃዎች';
+
+  @override
+  String get lifePlanAddOwnStep => 'የራስህን ደረጃ አክል';
+
+  @override
+  String get lifePlanOwnStepHint => 'ለምሳሌ፦ ለትምህርት ቤቱ አሳውቅ';
+
+  @override
+  String get lifePlanOwnStepLimit => 'እስከ 20 የራስህን ደረጃዎች ማከል ትችላለህ።';
+
+  @override
+  String get lifePlanReadAloud => 'ጮክ ብለህ አንብብ';
+
+  @override
+  String get lifePlanStopReading => 'ማንበብ አቁም';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'ጮክ ብሎ ማንበብ በዚህ ስልክ ላይ አይገኝም።';
+
+  @override
+  String get lifePlanProofPack => 'የማስረጃ ጥቅል አዘጋጅ';
+
+  @override
+  String get lifePlanOpenFamily => 'ቤተሰብን ክፈት';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'የሰረዝካቸው $count መዝገቦች እንደተሰረዙ ይቆጠራሉ።',
+      one: 'የሰረዝከው 1 መዝገብ እንደተሰረዘ ይቆጠራል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'እነዚህን ማደስ ብዙ ጊዜ ወደ $amount ገደማ ያስወጣል።';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'ወደ አዲስ ቤት እየተዛወርክ ነው? ሌላ ምን ማዘመን እንዳለብህ ተመልከት።';
 }

@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Hîn tişt mane. Ji bo qedandinê planê veke.",
   "lifePlanSuggestCar": "Te otomobîlek kirî an firot? Binêre çi din divê were nûkirin.",
   "lifePlanSuggestTrip": "Tu ji bo demekê bar dikî wir?",
-  "lifePlanSuggestTripBody": "Planek ji bo barkirina welatekî din dest pê bike. Vaultara nîşan dide berî çûyînê çi saz bikî."
+  "lifePlanSuggestTripBody": "Planek ji bo barkirina welatekî din dest pê bike. Vaultara nîşan dide berî çûyînê çi saz bikî.",
+  "lifeGroupHome": "Mal",
+  "lifeGroupFamily": "Malbat",
+  "lifeGroupWork": "Kar û xwendin",
+  "lifeGroupCarTravel": "Erebe û rêwîtî",
+  "lifeGroupEmergency": "Tiştek xelet çû",
+  "lifeEventCarBuy": "Min erebeyek kirî",
+  "lifeEventCarBuyBody": "Berî ku tu wê bibî malê sîgorte bike, paşê erebeyê li ser navê xwe tomar bike.",
+  "lifeEventCarSell": "Min erebeyek firot",
+  "lifeEventCarSellBody": "Firotinê ji nivîsgeha lîsansê re ragihîne û gava erebe êdî ya te nebe sîgorteyê betal bike.",
+  "lifeEventJobStart": "Ez dest bi karekî nû dikim",
+  "lifeEventJobStartBody": "Berî destpêkirinê destûrên xwe kontrol bike, paşê karta kar û feydeyan amade bike.",
+  "lifeEventJobLeave": "Ez ji karê xwe derdikevim",
+  "lifeEventJobLeaveBody": "Tiştên kar vegerîne û kontrol bike ka dê çi bê serê sîgorteya ku karê te dabû te.",
+  "lifeEventLostPhone": "Telefona min winda bû an hate dizîn",
+  "lifeEventLostPhoneBody": "Zû tevbigere. Kesê ku telefon û karta te ya SIM heye dikare têkeve bank û e-nameya te. Gavên pêşîn niha bavêje.",
+  "lifeEventJobLoss": "Min karê xwe winda kir",
+  "lifeEventJobLossBody": "Ev dijwar e. Gav bi gav biçe. Hin daxwaz xwedî dawiyê ne, ji ber vê yekê ji wan dest pê bike.",
+  "lifeEventDisaster": "Agir, lehî an dizî li malê",
+  "lifeEventDisasterBody": "Pêşî piştrast bike ku her kes ewle ye. Paşê wêne bikişîne, bi sîgorteyê re têkilî dayne û tiştên winda nû bike.",
+  "lifeEventCaringParent": "Ez li dê an bavê xwe xwedî derdikevim",
+  "lifeEventCaringParentBody": "Kesê ku tu lê xwedî derdikevî hilbijêre. Belge û sîgorteya wî kontrol bike û tiştên pêwîst nêzîkî xwe bihêle.",
+  "lifeVariantCarQuestion": "Te kirî an firot?",
+  "lifeVariantJobQuestion": "Tu dest pê dikî an derdikevî?",
+  "lifeVariantBuy": "Min kirî",
+  "lifeVariantSell": "Min firot",
+  "lifeVariantStart": "Dest pê dikim",
+  "lifeVariantLeave": "Derdikevim",
+  "lifeTaskRedirectPost": "Bixwaze ku nameyên te ji navnîşana nû re bên şandin",
+  "lifeTaskNewAddressEveryone": "Navnîşana nû bide kardêr, nivîsgeha bacê, bijîşk û dibistanê",
+  "lifeTaskMoveUtilities": "Hesabên elektrîk, av û înternetê bigire an veguhezîne",
+  "lifeTaskMeterReadings": "Roja ku tu derdikevî xwendina sayaxan û wêneyan bigire",
+  "lifeTaskSaveHomePapers": "Wêneyê belgeyên firotin an veguhastinê li Vaultara zêde bike",
+  "lifeTaskHandOverKeys": "Mifte, kontrolên dûr û kartên ketinê radest bike",
+  "lifeTaskOfficialNameProof": "Pêşî delîla fermî ya navê xwe yê nû bistîne. Piraniya nivîsgehan wê dixwazin.",
+  "lifeTaskTellNameChange": "Navê xwe yê nû ji bank, kardêr, bijîşk û nivîsgeha bacê re bibêje",
+  "lifeTaskUpdateOnlineAccounts": "Navê xwe di e-name, telefon û hesabên serhêl de biguherîne",
+  "lifeTaskSaveMarriageCertificate": "Wêneyê belgeya zewacê li Vaultara zêde bike",
+  "lifeTaskCheckBeneficiaries": "Kontrol bike ka kî di polîçe û hesabên te de wek sûdmend hatiye nivîsîn",
+  "lifeTaskUpdateWill": "Wesiyetnameyekê binivîse an nû bike",
+  "lifeTaskSaveDivorceOrder": "Wêneyê biryara dawî ya veqetînê li Vaultara zêde bike",
+  "lifeTaskSplitSharedAccounts": "Hesabên hevpar bigire an parve bike û şîfreyên hevpar biguherîne",
+  "lifeTaskRegisterBirth": "Jidayikbûnê tomar bike û belgeya jidayikbûnê bistîne",
+  "lifeTaskAddBabyToFamily": "Pitikê li Malbatê zêde bike da ku belgeyên wî bên şopandin",
+  "lifeTaskCarRegisterInName": "Erebeyê di dema ku qanûn destûr dide de li ser navê xwe tomar bike",
+  "lifeTaskCarSavePapers": "Wêneyê peymana firotinê li Vaultara zêde bike",
+  "lifeTaskCarNotifySale": "Ji nivîsgeha lîsansê re bibêje ku te erebe firot û delîlê biparêze",
+  "lifeTaskCarRemoveTags": "Etîketên rêyê, kartên parkê û tiştên kesane rake",
+  "lifeTaskJobGiveDetails": "Agahiyên bankê û hejmara bacê bide kardêrê nû",
+  "lifeTaskJobJoinBenefits": "Beşdarî sîgorteya tenduristiyê û teqawîtiya ku kardêr pêşkêş dike bibe",
+  "lifeTaskJobReturnItems": "Tiştên kar ên wek laptop, kart an mifte vegerîne",
+  "lifeTaskJobLastPayslip": "Pusûleya meaşê ya dawî û nameyeke ku dîrokên karê te piştrast dike bixwaze",
+  "lifeTaskJobAskBenefits": "Bipirse ka dê çi bê serê sîgorteya tenduristî û teqawîtiya te",
+  "lifeTaskJobUnemployment": "Niha li ser alîkariya bêkariyê bipirse. Daxwaz pir caran xwedî dawiyê ne.",
+  "lifeTaskJobPauseDebits": "Lîsteya dayinên otomatîk û abonetiyan çêke û yên ku dikarî rawestîne",
+  "lifeTaskStudySaveLetters": "Wêneyên nameya pejirandinê û belgeyên xercê li Vaultara zêde bike",
+  "lifeTaskStudyFunding": "Dawiyên bûrs, deyn an alîkariyên din kontrol bike",
+  "lifeTaskRetirePension": "Bipirse ka teqawîtiya te dê çawa û kengî bê dayîn",
+  "lifeTaskRetireOwnCover": "Heke sîgorteya kar biqede, sîgorteya tenduristiyê ya xwe amade bike",
+  "lifeTaskCountryTellBankTax": "Ji bank û nivîsgeha bacê re bibêje ku tu diçî",
+  "lifeTaskCountryScanCopies": "Wêneyê her belgeyeke girîng li Vaultara zêde bike",
+  "lifeTaskCountryLicenceRules": "Kontrol bike ka divê tu ehliyeta xwe biguherînî",
+  "lifeTaskChildOwnId": "Heke pêwîst be, alîkariya wî bike ku ji bo nasnameya xwe serî lê bide",
+  "lifeTaskChildBankAccount": "Alîkariya wî bike ku hesabekî bankê yê xwe veke",
+  "lifeTaskDeathCertificates": "Çend kopiyên pejirandî yên belgeya mirinê bistîne",
+  "lifeTaskDeathTellOrganisations": "Bank, sîgorte û kardêr agahdar bike",
+  "lifeTaskDeathFindWill": "Wesiyetnameyê bibîne û bi pêkanîner re têkilî dayne",
+  "lifeTaskDeathStopReminders": "Gava tu amade bî, bîranînên tomarên wî vemirîne",
+  "lifeTaskPhoneBlockSim": "Ji bo girtina karta SIM li tora xwe bigere. Ev xapandina guherîna SIM radiwestîne.",
+  "lifeTaskPhoneBlockBanking": "Ji bo girtina bankeya li ser telefonê li bankê bigere",
+  "lifeTaskPhoneLockErase": "Telefonê ji amûreke din kilît bike an paqij bike",
+  "lifeTaskPhoneChangePasswords": "Şîfreyên e-name û medyaya civakî biguherîne",
+  "lifeTaskReportToPolice": "Ji polîsan re ragihîne û hejmara dosyayê biparêze",
+  "lifeTaskDisasterSafePlace": "Piştrast bike ku her kes ewle ye û cihekî mayînê heye",
+  "lifeTaskDisasterPhotos": "Berî paqijkirinê wêneyên zirarê bikişîne",
+  "lifeTaskDisasterContactInsurer": "Bi lez bi sîgorteya xwe re têkilî dayne",
+  "lifeTaskDisasterProofPack": "Kopiyên belgeyên xwe bi Pakêta delîlan bişîne",
+  "lifeTaskParentFindPapers": "Fêr bibe ka belgeyên wî yên girîng li ku têne parastin",
+  "lifeTaskParentPermission": "Bipirse ka tu dikarî li şûna wî bi bank, bijîşk û sîgorteya wî re biaxivî",
+  "lifeTaskParentMedicines": "Lîsteya derman û bijîşkên wî biparêze",
+  "lifePlanDoClaim": "Daxwaza tazmînatê bike",
+  "lifePlanStatusClaimed": "Daxwaz hate kirin",
+  "lifePlanStartBy": "{weeks, plural, one{Heta {date} dest pê bike. Yê nû bi gelemperî nêzî {weeks} hefteyê digire.} other{Heta {date} dest pê bike. Yê nû bi gelemperî nêzî {weeks} hefteyan digire.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Niha dest pê bike. Yê nû bi gelemperî nêzî {weeks} hefteyê digire.} other{Niha dest pê bike. Yê nû bi gelemperî nêzî {weeks} hefteyan digire.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Plana te",
+  "lifePlanWhenHappened": "Kengî qewimî?",
+  "lifePlanReminderNudge": "Plana te hîn karên kirinê hene. Gava demek te hebe veke.",
+  "lifePlanReminderCheckIn": "Kart û belgeyên te yên nû gihîştin? Ji bo kontrolê planê veke.",
+  "lifePlanDoFirst": "Pêşî vê bike",
+  "lifePlanSteps": "Gavên din",
+  "lifePlanAddOwnStep": "Gava xwe zêde bike",
+  "lifePlanOwnStepHint": "Mînak: Dibistanê agahdar bike",
+  "lifePlanOwnStepLimit": "Tu dikarî heta 20 gavên xwe zêde bikî.",
+  "lifePlanReadAloud": "Bi deng bixwîne",
+  "lifePlanStopReading": "Xwendinê rawestîne",
+  "lifePlanReadAloudUnavailable": "Xwendina bi deng li ser vê telefonê tune ye.",
+  "lifePlanProofPack": "Pakêta delîlan çêke",
+  "lifePlanOpenFamily": "Malbatê veke",
+  "lifePlanRemoved": "{count, plural, one{{count} tomara ku te jê bir wek betalkirî tê hesibandin.} other{{count} tomarên ku te jê birin wek betalkirî têne hesibandin.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Nûkirina van bi gelemperî nêzî {amount} e.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Tu diçî maleke nû? Binêre ka divê çi din nû bikî."
 }

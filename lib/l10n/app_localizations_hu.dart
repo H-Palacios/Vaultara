@@ -6846,4 +6846,330 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Indíts tervet egy másik országba költözéshez. A Vaultara megmutatja, mit kell elintézni indulás előtt.';
+
+  @override
+  String get lifeGroupHome => 'Otthon';
+
+  @override
+  String get lifeGroupFamily => 'Család';
+
+  @override
+  String get lifeGroupWork => 'Munka és tanulás';
+
+  @override
+  String get lifeGroupCarTravel => 'Autó és utazás';
+
+  @override
+  String get lifeGroupEmergency => 'Valami történt';
+
+  @override
+  String get lifeEventCarBuy => 'Autót vettem';
+
+  @override
+  String get lifeEventCarBuyBody => 'Kössön biztosítást, mielőtt hazavezeti, aztán írassa át az autót a nevére.';
+
+  @override
+  String get lifeEventCarSell => 'Eladtam egy autót';
+
+  @override
+  String get lifeEventCarSellBody => 'Jelentse be az eladást az okmányirodánál, és mondja fel a biztosítást, amint az autó már nem az öné.';
+
+  @override
+  String get lifeEventJobStart => 'Új munkahelyen kezdek';
+
+  @override
+  String get lifeEventJobStartBody => 'Kezdés előtt ellenőrizze az engedélyeit, aztán intézze el a belépőkártyát és a juttatásokat.';
+
+  @override
+  String get lifeEventJobLeave => 'Kilépek a munkahelyemről';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Adja vissza a munkahelyi eszközöket, és nézze meg, mi lesz a munkahely által adott fedezettel.';
+
+  @override
+  String get lifeEventLostPhone => 'Elvesztettem a telefonom, vagy ellopták';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Cselekedjen gyorsan. Akinél a telefonja és a SIM-kártyája van, hozzáférhet a bankjához és az e-mailjeihez. Tegye meg azonnal az első lépéseket.';
+
+  @override
+  String get lifeEventJobLoss => 'Elvesztettem az állásomat';
+
+  @override
+  String get lifeEventJobLossBody => 'Ez nehéz. Haladjon lépésről lépésre. Néhány kérelemnek határideje van, ezekkel kezdje.';
+
+  @override
+  String get lifeEventDisaster => 'Tűz, árvíz vagy betörés otthon';
+
+  @override
+  String get lifeEventDisasterBody => 'Először győződjön meg róla, hogy mindenki biztonságban van. Aztán fotózzon, keresse meg a biztosítót, és pótolja, ami elveszett.';
+
+  @override
+  String get lifeEventCaringParent => 'Egy szülőmről gondoskodom';
+
+  @override
+  String get lifeEventCaringParentBody => 'Válassza ki, akiről gondoskodik. Ellenőrizze az iratait és biztosításait, és tartsa kéznél, amire szüksége van.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Vett vagy eladott?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Kezd vagy távozik?';
+
+  @override
+  String get lifeVariantBuy => 'Vettem';
+
+  @override
+  String get lifeVariantSell => 'Eladtam';
+
+  @override
+  String get lifeVariantStart => 'Kezdek';
+
+  @override
+  String get lifeVariantLeave => 'Távozom';
+
+  @override
+  String get lifeTaskRedirectPost => 'Kérje a posta átirányítását az új címre';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Adja meg az új címét a munkáltatónak, az adóhivatalnak, az orvosnak és az iskolának';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Mondja fel vagy írassa át az áram-, víz- és internetszerződést';
+
+  @override
+  String get lifeTaskMeterReadings => 'A kiköltözés napján olvassa le és fotózza le a mérőórákat';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Adjon hozzá fotót az adásvételi vagy átruházási iratokról a Vaultarához';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Adja át a kulcsokat, távirányítókat és belépőket';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Először szerezzen hivatalos igazolást az új nevéről. A legtöbb hivatal kéri.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Értesítse a bankot, a munkáltatót, az orvost és az adóhivatalt az új nevéről';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Módosítsa a nevét az e-mailben, a telefonon és az online fiókokban';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Adjon hozzá fotót a házassági anyakönyvi kivonatról a Vaultarához';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Ellenőrizze, ki a kedvezményezett a szerződésein és számláin';
+
+  @override
+  String get lifeTaskUpdateWill => 'Készítsen vagy frissítsen végrendeletet';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Adjon hozzá fotót a jogerős válási ítéletről a Vaultarához';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Zárja le vagy ossza fel a közös számlákat, és változtassa meg a közös jelszavakat';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Anyakönyveztesse a születést, és kérje ki a születési anyakönyvi kivonatot';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Adja hozzá a babát a Családhoz, hogy követni lehessen az iratait';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Írassa át az autót a nevére a törvényes határidőn belül';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Adjon hozzá fotót az adásvételi szerződésről a Vaultarához';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Jelentse az okmányirodának, hogy eladta az autót, és őrizze meg az igazolást';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Vegye ki az útdíj-eszközöket, parkolókártyákat és személyes holmikat';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Adja meg az új munkáltatónak a bankszámlaszámát és adóazonosítóját';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Csatlakozzon a munkáltató egészségbiztosításához és nyugdíjprogramjához';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Adja vissza a munkahelyi eszközöket, például laptopot, kártyát, kulcsokat';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Kérje el az utolsó bérjegyzéket és egy igazolást a munkaviszony idejéről';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Kérdezze meg, mi lesz az egészségbiztosításával és nyugdíjával';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Érdeklődjön most az álláskeresési járadékról. A kérelmeknek gyakran határideje van.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Írja össze a csoportos beszedéseket és előfizetéseket, és szüneteltesse, amit tud';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Adjon hozzá fotókat a felvételi levélről és a díjértesítőkről a Vaultarához';
+
+  @override
+  String get lifeTaskStudyFunding => 'Ellenőrizze az ösztöndíjak, hitelek és egyéb támogatások határidejét';
+
+  @override
+  String get lifeTaskRetirePension => 'Kérdezze meg, hogyan és mikor folyósítják a nyugdíját';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Intézzen saját egészségbiztosítást, ha a munkahelyi megszűnik';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Értesítse a bankot és az adóhivatalt, hogy elköltözik';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Adjon hozzá fotót minden fontos iratról a Vaultarához';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Nézze meg, kell-e cserélnie a jogosítványát';
+
+  @override
+  String get lifeTaskChildOwnId => 'Segítsen neki saját személyi igazolványt igényelni, ha kell';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Segítsen neki saját bankszámlát nyitni';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Szerezzen néhány hitelesített másolatot a halotti anyakönyvi kivonatról';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Értesítse a bankot, a biztosítókat és a munkáltatót';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Keresse meg a végrendeletet, és vegye fel a kapcsolatot a végrehajtóval';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Ha készen áll, kapcsolja ki az emlékeztetőket a bejegyzéseire';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Hívja a szolgáltatóját, és tiltassa le a SIM-kártyát. Ez megállítja a SIM-csalást.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Hívja a bankját, és tiltassa le a telefonos bankolást';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Zárja le vagy törölje a telefont egy másik eszközről';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Változtassa meg az e-mail és a közösségi média jelszavait';
+
+  @override
+  String get lifeTaskReportToPolice => 'Tegyen feljelentést a rendőrségen, és őrizze meg az ügyszámot';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Győződjön meg róla, hogy mindenki biztonságban van és van hol laknia';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Fotózza le a károkat, mielőtt rendet rak';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Minél előbb keresse meg a biztosítóját';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Küldje el az iratai másolatát az Igazolási csomaggal';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Derítse ki, hol tartja a fontos iratait';
+
+  @override
+  String get lifeTaskParentPermission => 'Kérdezze meg, intézkedhet-e a nevében a banknál, az orvosnál és a biztosítónál';
+
+  @override
+  String get lifeTaskParentMedicines => 'Vezessen listát a gyógyszereiről és orvosairól';
+
+  @override
+  String get lifePlanDoClaim => 'Kárigény bejelentése';
+
+  @override
+  String get lifePlanStatusClaimed => 'Bejelentve';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Kezdje el $date-ig. Egy új általában körülbelül $weeks hetet vesz igénybe.',
+      one: 'Kezdje el $date-ig. Egy új általában körülbelül $weeks hetet vesz igénybe.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Kezdje el most. Egy új általában körülbelül $weeks hetet vesz igénybe.',
+      one: 'Kezdje el most. Egy új általában körülbelül $weeks hetet vesz igénybe.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Az ön terve';
+
+  @override
+  String get lifePlanWhenHappened => 'Mikor történt?';
+
+  @override
+  String get lifePlanReminderNudge => 'A tervében még van teendő. Nyissa meg, amikor lesz egy perce.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Megérkeztek az új kártyái és iratai? Nyissa meg a tervet, és ellenőrizze.';
+
+  @override
+  String get lifePlanDoFirst => 'Ezt tegye meg először';
+
+  @override
+  String get lifePlanSteps => 'További lépések';
+
+  @override
+  String get lifePlanAddOwnStep => 'Saját lépés hozzáadása';
+
+  @override
+  String get lifePlanOwnStepHint => 'Például: Szólni az iskolának';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Legfeljebb 20 saját lépést adhat hozzá.';
+
+  @override
+  String get lifePlanReadAloud => 'Felolvasás';
+
+  @override
+  String get lifePlanStopReading => 'Felolvasás leállítása';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'A felolvasás nem érhető el ezen a telefonon.';
+
+  @override
+  String get lifePlanProofPack => 'Igazolási csomag készítése';
+
+  @override
+  String get lifePlanOpenFamily => 'Család megnyitása';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count törölt bejegyzés megszüntetettnek számít.',
+      one: '$count törölt bejegyzés megszüntetettnek számít.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Ezek megújítása általában körülbelül $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Új otthonba költözik? Nézze meg, mit kell még frissítenie.';
 }

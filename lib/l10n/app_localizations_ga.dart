@@ -7030,4 +7030,330 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Tosaigh plean chun bogadh go tír eile. Taispeánann Vaultara cad atá le socrú sula n-imíonn tú.';
+
+  @override
+  String get lifeGroupHome => 'Baile';
+
+  @override
+  String get lifeGroupFamily => 'Teaghlach';
+
+  @override
+  String get lifeGroupWork => 'Obair agus staidéar';
+
+  @override
+  String get lifeGroupCarTravel => 'Carr agus taisteal';
+
+  @override
+  String get lifeGroupEmergency => 'Chuaigh rud éigin mícheart';
+
+  @override
+  String get lifeEventCarBuy => 'Cheannaigh mé carr';
+
+  @override
+  String get lifeEventCarBuyBody => 'Faigh árachas sula dtiomáineann tú abhaile é, ansin cuir an carr i d\'ainm féin.';
+
+  @override
+  String get lifeEventCarSell => 'Dhíol mé carr';
+
+  @override
+  String get lifeEventCarSellBody => 'Inis don oifig cheadúnaithe faoin díol agus cealaigh an t-árachas nuair nach leatsa an carr a thuilleadh.';
+
+  @override
+  String get lifeEventJobStart => 'Tá post nua á thosú agam';
+
+  @override
+  String get lifeEventJobStartBody => 'Seiceáil do cheadanna sula dtosaíonn tú, ansin socraigh do chárta oibre agus do shochair.';
+
+  @override
+  String get lifeEventJobLeave => 'Táim ag fágáil mo phoist';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Tabhair earraí oibre ar ais agus seiceáil cad a tharlóidh don chlúdach a thug do phost duit.';
+
+  @override
+  String get lifeEventLostPhone => 'Chaill mé mo ghuthán nó goideadh é';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Bí sciobtha. Is féidir le duine a bhfuil do ghuthán agus do chárta SIM aige dul isteach i do bhanc agus i do ríomhphost. Déan na chéad chéimeanna láithreach.';
+
+  @override
+  String get lifeEventJobLoss => 'Chaill mé mo phost';
+
+  @override
+  String get lifeEventJobLossBody => 'Tá sé seo deacair. Glac céim amháin ag an am. Tá spriocdháta ag roinnt éileamh, mar sin tosaigh leo sin.';
+
+  @override
+  String get lifeEventDisaster => 'Tine, tuile nó briseadh isteach sa bhaile';
+
+  @override
+  String get lifeEventDisasterBody => 'Déan cinnte ar dtús go bhfuil gach duine slán. Ansin glac grianghraif, déan teagmháil le d\'árachóir agus athsholáthair a cailleadh.';
+
+  @override
+  String get lifeEventCaringParent => 'Táim ag tabhairt aire do thuismitheoir';
+
+  @override
+  String get lifeEventCaringParentBody => 'Roghnaigh an duine a bhfuil tú ag tabhairt aire dó. Seiceáil a gcáipéisí agus a gclúdach, agus coinnigh a bhfuil uait in aice láimhe.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ar cheannaigh nó ar dhíol tú?';
+
+  @override
+  String get lifeVariantJobQuestion => 'An bhfuil tú ag tosú nó ag imeacht?';
+
+  @override
+  String get lifeVariantBuy => 'Ceannaithe';
+
+  @override
+  String get lifeVariantSell => 'Díolta';
+
+  @override
+  String get lifeVariantStart => 'Ag tosú';
+
+  @override
+  String get lifeVariantLeave => 'Ag imeacht';
+
+  @override
+  String get lifeTaskRedirectPost => 'Iarr go seolfar do phost chuig do sheoladh nua';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Tabhair do sheoladh nua d\'fhostóir, don oifig chánach, do dhochtúir agus don scoil';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Dún nó aistrigh do chuntais leictreachais, uisce agus idirlín';
+
+  @override
+  String get lifeTaskMeterReadings => 'Tóg léamha méadair agus grianghraif ar an lá a bhogann tú amach';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Cuir grianghraf de pháipéir an díola nó an aistrithe le Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Tabhair uait eochracha, cianrialtáin agus clibeanna rochtana';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Faigh cruthúnas oifigiúil ar d\'ainm nua ar dtús. Iarrann formhór na n-oifigí é.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Inis do do bhanc, d\'fhostóir, do dhochtúir agus don oifig chánach faoi d\'ainm nua';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Athraigh d\'ainm ar do ríomhphost, do ghuthán agus do chuntais ar líne';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Cuir grianghraf den teastas pósta le Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Seiceáil cé atá ainmnithe mar thairbhí ar do pholasaithe agus do chuntais';
+
+  @override
+  String get lifeTaskUpdateWill => 'Déan uacht nó nuashonraigh í';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Cuir grianghraf den ordú colscartha deiridh le Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Dún nó roinn cuntais chomhroinnte agus athraigh pasfhocail chomhroinnte';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Cláraigh an bhreith agus faigh an teastas breithe';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Cuir an leanbh le Teaghlach ionas go leanfar a gcáipéisí';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Cuir an carr i d\'ainm féin laistigh den am a cheadaíonn an dlí';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Cuir grianghraf den chomhaontú díola le Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Inis don oifig cheadúnaithe gur dhíol tú an carr agus coinnigh an cruthúnas';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Bain clibeanna dola, cártaí páirceála agus earraí pearsanta';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Tabhair do shonraí bainc agus d\'uimhir chánach d\'fhostóir nua';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Glac páirt sa chlúdach leighis agus sa phinsean a thairgeann d\'fhostóir';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Tabhair earraí oibre ar ais ar nós ríomhaire glúine, cárta nó eochracha';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Iarr do dhuillín pá deiridh agus litir a dhearbhaíonn dátaí d\'oibre';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Fiafraigh cad a tharlóidh do do chlúdach leighis agus do phinsean';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Fiafraigh faoi shochair dífhostaíochta anois. Is minic spriocdháta ag éilimh.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Liostaigh do dhochair dhíreacha agus síntiúis, agus cuir ar sos a bhfuil ar do chumas';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Cuir grianghraif de do litir ghlactha agus de ráitis táillí le Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Seiceáil na spriocdhátaí do sparánachtaí, iasachtaí nó maoiniú eile';
+
+  @override
+  String get lifeTaskRetirePension => 'Fiafraigh conas agus cathain a íocfar do phinsean';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Socraigh do chlúdach leighis féin má chríochnaíonn clúdach na hoibre';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Inis do do bhanc agus don oifig chánach go bhfuil tú ag imeacht';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Cuir grianghraf de gach cáipéis thábhachtach le Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Seiceáil an gcaithfidh tú do cheadúnas tiomána a mhalartú';
+
+  @override
+  String get lifeTaskChildOwnId => 'Cabhraigh leo iarratas a dhéanamh ar a gcárta aitheantais féin más gá';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Cabhraigh leo a gcuntas bainc féin a oscailt';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Faigh roinnt cóipeanna deimhnithe den teastas báis';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Inis don bhanc, do na hárachóirí agus don fhostóir';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Aimsigh an uacht agus déan teagmháil leis an seiceadóir';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Nuair a bheidh tú réidh, múch meabhrúcháin dá dtaifid';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Glaoigh ar do líonra chun an cárta SIM a bhac. Stopann sé seo calaois malartú SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Glaoigh ar do bhanc chun baincéireacht ar an nguthán a bhac';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Cuir glas ar an nguthán nó glan é ó ghléas eile';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Athraigh do phasfhocail ríomhphoist agus meán sóisialta';
+
+  @override
+  String get lifeTaskReportToPolice => 'Tuairiscigh é do na gardaí agus coinnigh uimhir an cháis';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Déan cinnte go bhfuil gach duine slán agus go bhfuil áit acu le fanacht';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Glac grianghraif den damáiste sula nglanann tú suas';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Déan teagmháil le d\'árachóir chomh luath agus is féidir';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Seol cóipeanna de do cháipéisí le Paca cruthúnais';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Faigh amach cá gcoinnítear a bpáipéir thábhachtacha';
+
+  @override
+  String get lifeTaskParentPermission => 'Fiafraigh an féidir leat labhairt thar a gceann lena mbanc, a ndochtúir agus a n-árachóir';
+
+  @override
+  String get lifeTaskParentMedicines => 'Coinnigh liosta dá gcógais agus dá ndochtúirí';
+
+  @override
+  String get lifePlanDoClaim => 'Déan éileamh';
+
+  @override
+  String get lifePlanStatusClaimed => 'Éilithe';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Tosaigh faoi $date. Tógann ceann nua thart ar $weeks seachtain de ghnáth.',
+      one: 'Tosaigh faoi $date. Tógann ceann nua thart ar sheachtain de ghnáth.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Tosaigh anois. Tógann ceann nua thart ar $weeks seachtain de ghnáth.',
+      one: 'Tosaigh anois. Tógann ceann nua thart ar sheachtain de ghnáth.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Do phlean';
+
+  @override
+  String get lifePlanWhenHappened => 'Cathain a tharla sé?';
+
+  @override
+  String get lifePlanReminderNudge => 'Tá rudaí le déanamh fós i do phlean. Oscail é nuair a bhíonn nóiméad agat.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Ar tháinig do chártaí agus do cháipéisí nua? Oscail an plean chun seiceáil.';
+
+  @override
+  String get lifePlanDoFirst => 'Déan é seo ar dtús';
+
+  @override
+  String get lifePlanSteps => 'Céimeanna eile';
+
+  @override
+  String get lifePlanAddOwnStep => 'Cuir do chéim féin leis';
+
+  @override
+  String get lifePlanOwnStepHint => 'Mar shampla: Inis don scoil';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Is féidir leat suas le 20 de do chéimeanna féin a chur leis.';
+
+  @override
+  String get lifePlanReadAloud => 'Léigh os ard';
+
+  @override
+  String get lifePlanStopReading => 'Stop ag léamh';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Níl léamh os ard ar fáil ar an nguthán seo.';
+
+  @override
+  String get lifePlanProofPack => 'Déan paca cruthúnais';
+
+  @override
+  String get lifePlanOpenFamily => 'Oscail Teaghlach';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Áirítear $count taifead a scrios tú mar cealaithe.',
+      one: 'Áirítear 1 taifead a scrios tú mar cealaithe.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Cosnaíonn sé thart ar $amount de ghnáth iad seo a athnuachan.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ag bogadh go teach nua? Féach cad eile atá le nuashonrú.';
 }

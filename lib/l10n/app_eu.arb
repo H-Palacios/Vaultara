@@ -2163,5 +2163,136 @@
   "lifePlanReminderAfter": "Oraindik gauza batzuk falta dira. Ireki plana amaitzeko.",
   "lifePlanSuggestCar": "Autoa erosi edo saldu duzu? Ikusi zer gehiago eguneratu behar den.",
   "lifePlanSuggestTrip": "Denbora batez bizitzera zoaz hara?",
-  "lifePlanSuggestTripBody": "Hasi beste herrialde batera joateko plan bat. Vaultarak erakusten du zer konpondu joan aurretik."
+  "lifePlanSuggestTripBody": "Hasi beste herrialde batera joateko plan bat. Vaultarak erakusten du zer konpondu joan aurretik.",
+  "lifeGroupHome": "Etxea",
+  "lifeGroupFamily": "Familia",
+  "lifeGroupWork": "Lana eta ikasketak",
+  "lifeGroupCarTravel": "Autoa eta bidaiak",
+  "lifeGroupEmergency": "Zerbait gaizki atera da",
+  "lifeEventCarBuy": "Auto bat erosi dut",
+  "lifeEventCarBuyBody": "Kontratatu asegurua etxera eraman aurretik, eta gero jarri autoa zure izenean.",
+  "lifeEventCarSell": "Auto bat saldu dut",
+  "lifeEventCarSellBody": "Jakinarazi salmenta trafiko bulegoari eta ezeztatu asegurua autoa zurea ez denean.",
+  "lifeEventJobStart": "Lan berri bat hasiko dut",
+  "lifeEventJobStartBody": "Egiaztatu baimenak hasi aurretik, eta gero konfiguratu lan-txartela eta onurak.",
+  "lifeEventJobLeave": "Lana utziko dut",
+  "lifeEventJobLeaveBody": "Itzuli laneko gauzak eta egiaztatu zer gertatzen den lanak ematen zizun estaldurarekin.",
+  "lifeEventLostPhone": "Mugikorra galdu dut edo lapurtu didate",
+  "lifeEventLostPhoneBody": "Jokatu azkar. Zure mugikorra eta SIM txartela dituenak zure bankuan eta posta elektronikoan sar daiteke. Egin lehen urratsak berehala.",
+  "lifeEventJobLoss": "Lana galdu dut",
+  "lifeEventJobLossBody": "Gogorra da. Urratsez urrats joan. Eskaera batzuek epea dute, beraz hasi horiekin.",
+  "lifeEventDisaster": "Sutea, uholdea edo lapurreta etxean",
+  "lifeEventDisasterBody": "Lehenik ziurtatu denak salbu daudela. Gero atera argazkiak, jarri harremanetan aseguru-etxearekin eta ordezkatu galdutakoa.",
+  "lifeEventCaringParent": "Guraso bat zaintzen ari naiz",
+  "lifeEventCaringParentBody": "Aukeratu zaintzen duzun pertsona. Egiaztatu haren agiriak eta estaldura, eta izan behar duzuna eskura.",
+  "lifeVariantCarQuestion": "Erosi ala saldu duzu?",
+  "lifeVariantJobQuestion": "Hasten ari zara ala uzten?",
+  "lifeVariantBuy": "Erosia",
+  "lifeVariantSell": "Saldua",
+  "lifeVariantStart": "Hasten",
+  "lifeVariantLeave": "Uzten",
+  "lifeTaskRedirectPost": "Eskatu zure posta helbide berrira bidaltzeko",
+  "lifeTaskNewAddressEveryone": "Eman helbide berria enpresari, Ogasunari, medikuari eta eskolari",
+  "lifeTaskMoveUtilities": "Eman baja edo aldatu argiaren, uraren eta internetaren kontuak",
+  "lifeTaskMeterReadings": "Hartu kontagailuen irakurketak eta atera argazkiak alde egiten duzun egunean",
+  "lifeTaskSaveHomePapers": "Gehitu salmenta edo eskualdatze paperen argazki bat Vaultara-n",
+  "lifeTaskHandOverKeys": "Eman giltzak, urruneko agintea eta sarbide-txartelak",
+  "lifeTaskOfficialNameProof": "Lortu lehenik izen berriaren froga ofiziala. Bulego gehienek eskatzen dute.",
+  "lifeTaskTellNameChange": "Jakinarazi izen berria bankuari, enpresari, medikuari eta Ogasunari",
+  "lifeTaskUpdateOnlineAccounts": "Aldatu izena posta elektronikoan, mugikorrean eta lineako kontuetan",
+  "lifeTaskSaveMarriageCertificate": "Gehitu ezkontza-ziurtagiriaren argazki bat Vaultara-n",
+  "lifeTaskCheckBeneficiaries": "Egiaztatu nor agertzen den onuradun gisa zure poliza eta kontuetan",
+  "lifeTaskUpdateWill": "Egin edo eguneratu testamentua",
+  "lifeTaskSaveDivorceOrder": "Gehitu dibortzio-epai irmoaren argazki bat Vaultara-n",
+  "lifeTaskSplitSharedAccounts": "Itxi edo banatu kontu partekatuak eta aldatu pasahitz partekatuak",
+  "lifeTaskRegisterBirth": "Erregistratu jaiotza eta lortu jaiotza-agiria",
+  "lifeTaskAddBabyToFamily": "Gehitu haurra Familian, haren agiriak jarraitzeko",
+  "lifeTaskCarRegisterInName": "Jarri autoa zure izenean legeak baimentzen duen epean",
+  "lifeTaskCarSavePapers": "Gehitu salerosketa-kontratuaren argazki bat Vaultara-n",
+  "lifeTaskCarNotifySale": "Jakinarazi trafiko bulegoari autoa saldu duzula eta gorde froga",
+  "lifeTaskCarRemoveTags": "Kendu bidesari-gailuak, aparkaleku-txartelak eta gauza pertsonalak",
+  "lifeTaskJobGiveDetails": "Eman banku-datuak eta zerga-zenbakia enpresa berriari",
+  "lifeTaskJobJoinBenefits": "Batu enpresak eskaintzen dituen osasun-aseguru eta pentsio planera",
+  "lifeTaskJobReturnItems": "Itzuli laneko gauzak, hala nola ordenagailua, txartela edo giltzak",
+  "lifeTaskJobLastPayslip": "Eskatu azken nomina eta lan-datak berresten dituen gutun bat",
+  "lifeTaskJobAskBenefits": "Galdetu zer gertatzen den zure osasun-aseguru eta pentsioarekin",
+  "lifeTaskJobUnemployment": "Galdetu orain langabezia-prestazioari buruz. Eskaerek askotan epea dute.",
+  "lifeTaskJobPauseDebits": "Egin helbideratzeen eta harpidetzen zerrenda, eta eten ahal duzuna",
+  "lifeTaskStudySaveLetters": "Gehitu onarpen-gutunaren eta matrikula-ordainagirien argazkiak Vaultara-n",
+  "lifeTaskStudyFunding": "Egiaztatu beka, mailegu edo bestelako laguntzen epeak",
+  "lifeTaskRetirePension": "Galdetu nola eta noiz ordainduko den zure pentsioa",
+  "lifeTaskRetireOwnCover": "Kontratatu zure osasun-asegurua laneko amaitzen bada",
+  "lifeTaskCountryTellBankTax": "Jakinarazi bankuari eta Ogasunari alde egiten duzula",
+  "lifeTaskCountryScanCopies": "Gehitu agiri garrantzitsu bakoitzaren argazki bat Vaultara-n",
+  "lifeTaskCountryLicenceRules": "Egiaztatu gidabaimena aldatu behar duzun",
+  "lifeTaskChildOwnId": "Lagundu bere NANa eskatzen behar badu",
+  "lifeTaskChildBankAccount": "Lagundu bere banku-kontua irekitzen",
+  "lifeTaskDeathCertificates": "Lortu heriotza-ziurtagiriaren kopia ziurtatu batzuk",
+  "lifeTaskDeathTellOrganisations": "Jakinarazi bankuari, aseguru-etxeei eta enpresari",
+  "lifeTaskDeathFindWill": "Aurkitu testamentua eta jarri harremanetan albazearekin",
+  "lifeTaskDeathStopReminders": "Prest zaudenean, desaktibatu haren erregistroen oroigarriak",
+  "lifeTaskPhoneBlockSim": "Deitu operadoreari SIM txartela blokeatzeko. Horrela SIM aldaketaren iruzurra eragozten da.",
+  "lifeTaskPhoneBlockBanking": "Deitu bankuari mugikorreko banka blokeatzeko",
+  "lifeTaskPhoneLockErase": "Blokeatu edo ezabatu mugikorra beste gailu batetik",
+  "lifeTaskPhoneChangePasswords": "Aldatu posta elektronikoaren eta sare sozialen pasahitzak",
+  "lifeTaskReportToPolice": "Salatu poliziari eta gorde salaketa-zenbakia",
+  "lifeTaskDisasterSafePlace": "Ziurtatu denak salbu daudela eta egoteko lekua dutela",
+  "lifeTaskDisasterPhotos": "Atera kalteen argazkiak garbitu aurretik",
+  "lifeTaskDisasterContactInsurer": "Jarri harremanetan aseguru-etxearekin lehenbailehen",
+  "lifeTaskDisasterProofPack": "Bidali zure agirien kopiak Froga-paketearekin",
+  "lifeTaskParentFindPapers": "Jakin non gordetzen dituen paper garrantzitsuak",
+  "lifeTaskParentPermission": "Galdetu haren izenean bankuarekin, medikuarekin eta aseguru-etxearekin hitz egin dezakezun",
+  "lifeTaskParentMedicines": "Izan haren sendagaien eta medikuen zerrenda",
+  "lifePlanDoClaim": "Egin erreklamazioa",
+  "lifePlanStatusClaimed": "Erreklamatua",
+  "lifePlanStartBy": "{weeks, plural, =1{Hasi {date} baino lehen. Berri batek astebete inguru behar izaten du.} other{Hasi {date} baino lehen. Berri batek {weeks} aste inguru behar izaten ditu.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Hasi orain. Berri batek astebete inguru behar izaten du.} other{Hasi orain. Berri batek {weeks} aste inguru behar izaten ditu.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Zure plana",
+  "lifePlanWhenHappened": "Noiz gertatu zen?",
+  "lifePlanReminderNudge": "Zure planak oraindik egitekoak ditu. Ireki une bat duzunean.",
+  "lifePlanReminderCheckIn": "Iritsi al dira txartel eta agiri berriak? Ireki plana egiaztatzeko.",
+  "lifePlanDoFirst": "Egin hau lehenik",
+  "lifePlanSteps": "Beste urrats batzuk",
+  "lifePlanAddOwnStep": "Gehitu zure urratsa",
+  "lifePlanOwnStepHint": "Adibidez: Eskolari jakinarazi",
+  "lifePlanOwnStepLimit": "Zure 20 urrats arte gehi ditzakezu.",
+  "lifePlanReadAloud": "Irakurri ozen",
+  "lifePlanStopReading": "Utzi irakurtzeari",
+  "lifePlanReadAloudUnavailable": "Ozen irakurtzea ez dago erabilgarri mugikor honetan.",
+  "lifePlanProofPack": "Sortu froga-paketea",
+  "lifePlanOpenFamily": "Ireki Familia",
+  "lifePlanRemoved": "{count, plural, =1{Ezabatu duzun erregistro 1 ezeztatutzat hartzen da.} other{Ezabatu dituzun {count} erregistro ezeztatutzat hartzen dira.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Hauek berritzeak {amount} inguru kostatzen du normalean.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Etxe berrira zoaz? Ikusi zer gehiago eguneratu behar duzun."
 }

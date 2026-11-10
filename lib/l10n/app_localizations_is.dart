@@ -6846,4 +6846,330 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Hefðu áætlun um flutning til annars lands. Vaultara sýnir hvað þarf að ganga frá áður en þú ferð.';
+
+  @override
+  String get lifeGroupHome => 'Heimili';
+
+  @override
+  String get lifeGroupFamily => 'Fjölskylda';
+
+  @override
+  String get lifeGroupWork => 'Vinna og nám';
+
+  @override
+  String get lifeGroupCarTravel => 'Bíll og ferðalög';
+
+  @override
+  String get lifeGroupEmergency => 'Eitthvað fór úrskeiðis';
+
+  @override
+  String get lifeEventCarBuy => 'Ég keypti bíl';
+
+  @override
+  String get lifeEventCarBuyBody => 'Tryggðu bílinn áður en þú keyrir hann heim og skráðu hann svo á þig.';
+
+  @override
+  String get lifeEventCarSell => 'Ég seldi bíl';
+
+  @override
+  String get lifeEventCarSellBody => 'Tilkynntu söluna til Samgöngustofu og segðu upp tryggingunni þegar bíllinn er ekki lengur þinn.';
+
+  @override
+  String get lifeEventJobStart => 'Ég er að byrja í nýrri vinnu';
+
+  @override
+  String get lifeEventJobStartBody => 'Athugaðu leyfin þín áður en þú byrjar og settu svo upp starfskort og hlunnindi.';
+
+  @override
+  String get lifeEventJobLeave => 'Ég er að hætta í vinnunni';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Skilaðu vinnuhlutum og athugaðu hvað verður um tryggingarnar sem vinnan veitti þér.';
+
+  @override
+  String get lifeEventLostPhone => 'Ég týndi símanum eða honum var stolið';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Bregstu hratt við. Sá sem er með símann og SIM-kortið getur komist í bankann og tölvupóstinn þinn. Taktu fyrstu skrefin strax.';
+
+  @override
+  String get lifeEventJobLoss => 'Ég missti vinnuna';
+
+  @override
+  String get lifeEventJobLossBody => 'Þetta er erfitt. Taktu eitt skref í einu. Sumar umsóknir hafa frest, svo byrjaðu á þeim.';
+
+  @override
+  String get lifeEventDisaster => 'Bruni, flóð eða innbrot heima';
+
+  @override
+  String get lifeEventDisasterBody => 'Gakktu fyrst úr skugga um að allir séu óhultir. Taktu svo myndir, hafðu samband við tryggingafélagið og bættu það sem tapaðist.';
+
+  @override
+  String get lifeEventCaringParent => 'Ég annast foreldri';
+
+  @override
+  String get lifeEventCaringParentBody => 'Veldu manneskjuna sem þú annast. Athugaðu skjöl hennar og tryggingar og hafðu það sem þú þarft við höndina.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Keyptir þú eða seldir?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Ertu að byrja eða hætta?';
+
+  @override
+  String get lifeVariantBuy => 'Keypti';
+
+  @override
+  String get lifeVariantSell => 'Seldi';
+
+  @override
+  String get lifeVariantStart => 'Byrja';
+
+  @override
+  String get lifeVariantLeave => 'Hætta';
+
+  @override
+  String get lifeTaskRedirectPost => 'Biddu um að pósturinn verði sendur á nýja heimilisfangið';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Gefðu vinnuveitanda, skattinum, lækni og skóla nýja heimilisfangið';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Segðu upp eða færðu rafmagn, vatn og net';
+
+  @override
+  String get lifeTaskMeterReadings => 'Lestu af mælum og taktu myndir daginn sem þú flytur út';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Bættu mynd af kaup- eða afsalsskjölum við í Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Afhentu lykla, fjarstýringar og aðgangskort';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Fáðu fyrst opinbera staðfestingu á nýja nafninu. Flestar stofnanir biðja um hana.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Láttu bankann, vinnuveitanda, lækni og skattinn vita af nýja nafninu';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Breyttu nafninu í tölvupósti, síma og netreikningum';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Bættu mynd af hjúskaparvottorðinu við í Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Athugaðu hver er skráður rétthafi á tryggingum og reikningum';
+
+  @override
+  String get lifeTaskUpdateWill => 'Gerðu eða uppfærðu erfðaskrá';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Bættu mynd af lokaúrskurði um skilnað við í Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Lokaðu eða skiptu sameiginlegum reikningum og breyttu sameiginlegum lykilorðum';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Skráðu fæðinguna og fáðu fæðingarvottorð';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Bættu barninu við í Fjölskyldu svo fylgst sé með skjölum þess';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Skráðu bílinn á þig innan lögbundins frests';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Bættu mynd af kaupsamningnum við í Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Tilkynntu Samgöngustofu að þú hafir selt bílinn og geymdu staðfestinguna';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Fjarlægðu veggjaldsmerki, bílastæðakort og persónulega muni';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Gefðu nýja vinnuveitandanum bankaupplýsingar og kennitölu';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Skráðu þig í sjúkratryggingu og lífeyri sem vinnuveitandinn býður';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Skilaðu vinnuhlutum eins og fartölvu, korti eða lyklum';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Biddu um síðasta launaseðil og bréf sem staðfestir starfstímann';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Spurðu hvað verður um sjúkratryggingu og lífeyri';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Spurðu strax um atvinnuleysisbætur. Umsóknir hafa oft frest.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Skráðu boðgreiðslur og áskriftir og settu á bið það sem hægt er';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Bættu myndum af inntökubréfi og skólagjaldayfirlitum við í Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Athugaðu fresti fyrir styrki, lán eða annan stuðning';
+
+  @override
+  String get lifeTaskRetirePension => 'Spurðu hvernig og hvenær lífeyrir verður greiddur';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Fáðu þína eigin sjúkratryggingu ef sú frá vinnunni fellur niður';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Láttu bankann og skattinn vita að þú sért að flytja';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Bættu mynd af hverju mikilvægu skjali við í Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Athugaðu hvort þú þurfir að skipta um ökuskírteini';
+
+  @override
+  String get lifeTaskChildOwnId => 'Hjálpaðu því að sækja um eigin skilríki ef þörf er á';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Hjálpaðu því að opna eigin bankareikning';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Fáðu nokkur staðfest afrit af dánarvottorðinu';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Láttu bankann, tryggingafélög og vinnuveitanda vita';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Finndu erfðaskrána og hafðu samband við skiptastjóra';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Þegar þú ert tilbúin(n), slökktu á áminningum fyrir skrár viðkomandi';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Hringdu í símafyrirtækið og láttu loka SIM-kortinu. Það stöðvar SIM-svik.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Hringdu í bankann og láttu loka fyrir bankaþjónustu í símanum';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Læstu eða hreinsaðu símann úr öðru tæki';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Breyttu lykilorðum fyrir tölvupóst og samfélagsmiðla';
+
+  @override
+  String get lifeTaskReportToPolice => 'Tilkynntu þetta til lögreglu og geymdu málsnúmerið';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Gakktu úr skugga um að allir séu óhultir og hafi samastað';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Taktu myndir af tjóninu áður en þú hreinsar';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Hafðu samband við tryggingafélagið sem fyrst';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Sendu afrit af skjölunum með Skjalapakka';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Finndu út hvar mikilvæg skjöl viðkomandi eru geymd';
+
+  @override
+  String get lifeTaskParentPermission => 'Spurðu hvort þú megir tala fyrir hönd viðkomandi við banka, lækni og tryggingafélag';
+
+  @override
+  String get lifeTaskParentMedicines => 'Haltu lista yfir lyf og lækna viðkomandi';
+
+  @override
+  String get lifePlanDoClaim => 'Gera kröfu';
+
+  @override
+  String get lifePlanStatusClaimed => 'Krafa gerð';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Byrjaðu fyrir $date. Nýtt tekur yfirleitt um $weeks vikur.',
+      one: 'Byrjaðu fyrir $date. Nýtt tekur yfirleitt um viku.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Byrjaðu núna. Nýtt tekur yfirleitt um $weeks vikur.',
+      one: 'Byrjaðu núna. Nýtt tekur yfirleitt um viku.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Áætlunin þín';
+
+  @override
+  String get lifePlanWhenHappened => 'Hvenær gerðist það?';
+
+  @override
+  String get lifePlanReminderNudge => 'Áætlunin þín á enn eftir verkefni. Opnaðu hana þegar þú hefur smá tíma.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Komu nýju kortin og skjölin? Opnaðu áætlunina til að athuga.';
+
+  @override
+  String get lifePlanDoFirst => 'Gerðu þetta fyrst';
+
+  @override
+  String get lifePlanSteps => 'Önnur skref';
+
+  @override
+  String get lifePlanAddOwnStep => 'Bæta við eigin skrefi';
+
+  @override
+  String get lifePlanOwnStepHint => 'Til dæmis: Láta skólann vita';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Þú getur bætt við allt að 20 eigin skrefum.';
+
+  @override
+  String get lifePlanReadAloud => 'Lesa upphátt';
+
+  @override
+  String get lifePlanStopReading => 'Hætta lestri';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Upplestur er ekki í boði í þessum síma.';
+
+  @override
+  String get lifePlanProofPack => 'Búa til skjalapakka';
+
+  @override
+  String get lifePlanOpenFamily => 'Opna Fjölskyldu';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skrár sem þú eyddir teljast uppsagðar.',
+      one: '1 skrá sem þú eyddir telst uppsögð.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Endurnýjun kostar yfirleitt um $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ertu að flytja? Sjáðu hvað annað þarf að uppfæra.';
 }

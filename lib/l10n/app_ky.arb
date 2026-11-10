@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Дагы аткара турган иштер бар. Бүтүрүү үчүн планды ачыңыз.",
   "lifePlanSuggestCar": "Унаа сатып алдыңызбы же саттыңызбы? Дагы эмнени жаңыртуу керек экенин караңыз.",
   "lifePlanSuggestTrip": "Ал жакка бир азга көчөсүзбү?",
-  "lifePlanSuggestTripBody": "Башка өлкөгө көчүү планын баштаңыз. Vaultara кетерден мурун эмнени жөнгө салуу керектигин көрсөтөт."
+  "lifePlanSuggestTripBody": "Башка өлкөгө көчүү планын баштаңыз. Vaultara кетерден мурун эмнени жөнгө салуу керектигин көрсөтөт.",
+  "lifeGroupHome": "Үй",
+  "lifeGroupFamily": "Үй-бүлө",
+  "lifeGroupWork": "Жумуш жана окуу",
+  "lifeGroupCarTravel": "Унаа жана саякат",
+  "lifeGroupEmergency": "Бир нерсе болду",
+  "lifeEventCarBuy": "Унаа сатып алдым",
+  "lifeEventCarBuyBody": "Үйгө айдап келээрден мурун камсыздандырыңыз, андан кийин унааны өз атыңызга каттаңыз.",
+  "lifeEventCarSell": "Унаа саттым",
+  "lifeEventCarSellBody": "Сатуу тууралуу каттоо кызматына билдириңиз жана унаа сиздики болбой калганда камсыздандырууну токтотуңуз.",
+  "lifeEventJobStart": "Жаңы жумуш баштайм",
+  "lifeEventJobStartBody": "Баштоодон мурун уруксаттарыңызды текшериңиз, андан кийин жумуш картасын жана жеңилдиктерди жөндөңүз.",
+  "lifeEventJobLeave": "Жумуштан кетем",
+  "lifeEventJobLeaveBody": "Жумуш буюмдарын кайтарыңыз жана жумуш берген камсыздандыруу эмне болорун текшериңиз.",
+  "lifeEventLostPhone": "Телефонумду жоготтум же уурдатып алдым",
+  "lifeEventLostPhoneBody": "Тез аракет кылыңыз. Телефонуңуз жана SIM картаңыз бар адам банкыңызга жана почтаңызга кире алат. Алгачкы кадамдарды азыр жасаңыз.",
+  "lifeEventJobLoss": "Жумушумдан айрылдым",
+  "lifeEventJobLossBody": "Бул оор. Бир-бирден кадам таштаңыз. Кээ бир арыздардын мөөнөтү бар, ошондуктан алардан баштаңыз.",
+  "lifeEventDisaster": "Үйдө өрт, суу ташкыны же уурулук",
+  "lifeEventDisasterBody": "Адегенде баары аман экенин текшериңиз. Андан кийин сүрөткө тартып, камсыздандыруучуга кайрылып, жоголгонду калыбына келтириңиз.",
+  "lifeEventCaringParent": "Ата-энеме кам көрөм",
+  "lifeEventCaringParentBody": "Кам көргөн адамды тандаңыз. Анын документтерин жана камсыздандыруусун текшерип, керектүүнү жаныңызда кармаңыз.",
+  "lifeVariantCarQuestion": "Сатып алдыңызбы же саттыңызбы?",
+  "lifeVariantJobQuestion": "Баштайсызбы же кетесизби?",
+  "lifeVariantBuy": "Сатып алдым",
+  "lifeVariantSell": "Саттым",
+  "lifeVariantStart": "Баштайм",
+  "lifeVariantLeave": "Кетем",
+  "lifeTaskRedirectPost": "Почтаңызды жаңы дарекке жөнөтүүнү сураңыз",
+  "lifeTaskNewAddressEveryone": "Жаңы даректи иш берүүчүгө, салык кызматына, дарыгерге жана мектепке бериңиз",
+  "lifeTaskMoveUtilities": "Электр, суу жана интернет эсептерин жабыңыз же которуңуз",
+  "lifeTaskMeterReadings": "Көчкөн күнү эсептегичтердин көрсөткүчтөрүн жазып, сүрөткө тартыңыз",
+  "lifeTaskSaveHomePapers": "Сатуу же өткөрүп берүү документтеринин сүрөтүн Vaultara'га кошуңуз",
+  "lifeTaskHandOverKeys": "Ачкычтарды, пульттарды жана кирүү карталарын тапшырыңыз",
+  "lifeTaskOfficialNameProof": "Адегенде жаңы атыңыздын расмий тастыктамасын алыңыз. Көпчүлүк мекемелер аны сурайт.",
+  "lifeTaskTellNameChange": "Жаңы атыңыз тууралуу банкка, иш берүүчүгө, дарыгерге жана салык кызматына билдириңиз",
+  "lifeTaskUpdateOnlineAccounts": "Почта, телефон жана онлайн аккаунттардагы атыңызды өзгөртүңүз",
+  "lifeTaskSaveMarriageCertificate": "Нике күбөлүгүнүн сүрөтүн Vaultara'га кошуңуз",
+  "lifeTaskCheckBeneficiaries": "Полистериңизде жана эсептериңизде ким пайда алуучу экенин текшериңиз",
+  "lifeTaskUpdateWill": "Керээз жазыңыз же жаңыртыңыз",
+  "lifeTaskSaveDivorceOrder": "Ажырашуу боюнча акыркы чечимдин сүрөтүн Vaultara'га кошуңуз",
+  "lifeTaskSplitSharedAccounts": "Жалпы эсептерди жабыңыз же бөлүңүз жана жалпы сырсөздөрдү алмаштырыңыз",
+  "lifeTaskRegisterBirth": "Төрөлүүнү каттап, туулгандыгы тууралуу күбөлүк алыңыз",
+  "lifeTaskAddBabyToFamily": "Документтерин көзөмөлдөө үчүн наристени Үй-бүлөгө кошуңуз",
+  "lifeTaskCarRegisterInName": "Унааны мыйзам уруксат берген мөөнөттө өз атыңызга каттаңыз",
+  "lifeTaskCarSavePapers": "Сатып алуу-сатуу келишиминин сүрөтүн Vaultara'га кошуңуз",
+  "lifeTaskCarNotifySale": "Унааны сатканыңызды каттоо кызматына билдирип, тастыктаманы сактаңыз",
+  "lifeTaskCarRemoveTags": "Акы төлөнүүчү жол түзмөктөрүн, токтотмо карталарын жана жеке буюмдарды алыңыз",
+  "lifeTaskJobGiveDetails": "Жаңы иш берүүчүгө банк маалыматтарын жана салык номериңизди бериңиз",
+  "lifeTaskJobJoinBenefits": "Иш берүүчү сунуштаган медициналык камсыздандырууга жана пенсияга кошулуңуз",
+  "lifeTaskJobReturnItems": "Ноутбук, карта же ачкыч сыяктуу жумуш буюмдарын кайтарыңыз",
+  "lifeTaskJobLastPayslip": "Акыркы эмгек акы баракчасын жана иштеген мөөнөттү тастыктаган кат сураңыз",
+  "lifeTaskJobAskBenefits": "Медициналык камсыздандыруу жана пенсияңыз эмне болорун сураңыз",
+  "lifeTaskJobUnemployment": "Жумушсуздук боюнча жөлөкпул тууралуу азыр сураңыз. Арыздардын көбүнчө мөөнөтү болот.",
+  "lifeTaskJobPauseDebits": "Автотөлөмдөрдүн жана жазылуулардын тизмесин түзүп, мүмкүн болгонун токтотуңуз",
+  "lifeTaskStudySaveLetters": "Кабыл алуу катынын жана төлөм документтеринин сүрөттөрүн Vaultara'га кошуңуз",
+  "lifeTaskStudyFunding": "Стипендия, кредит же башка колдоонун мөөнөттөрүн текшериңиз",
+  "lifeTaskRetirePension": "Пенсияңыз кантип жана качан төлөнөрүн сураңыз",
+  "lifeTaskRetireOwnCover": "Жумуштагы камсыздандыруу бүтсө, өзүңүздүн медициналык камсыздандырууну уюштуруңуз",
+  "lifeTaskCountryTellBankTax": "Кетээриңизди банкка жана салык кызматына билдириңиз",
+  "lifeTaskCountryScanCopies": "Ар бир маанилүү документтин сүрөтүн Vaultara'га кошуңуз",
+  "lifeTaskCountryLicenceRules": "Айдоочулук күбөлүгүңүздү алмаштыруу керекпи, текшериңиз",
+  "lifeTaskChildOwnId": "Керек болсо, өз ID картасына арыз берүүгө жардам бериңиз",
+  "lifeTaskChildBankAccount": "Өз банк эсебин ачууга жардам бериңиз",
+  "lifeTaskDeathCertificates": "Өлүм тууралуу күбөлүктүн бир нече күбөлөндүрүлгөн көчүрмөсүн алыңыз",
+  "lifeTaskDeathTellOrganisations": "Банкка, камсыздандыруучуларга жана иш берүүчүгө билдириңиз",
+  "lifeTaskDeathFindWill": "Керээзди таап, аткаруучу менен байланышыңыз",
+  "lifeTaskDeathStopReminders": "Даяр болгондо, анын жазууларынын эскертмелерин өчүрүңүз",
+  "lifeTaskPhoneBlockSim": "SIM картаны бөгөттөө үчүн операторго чалыңыз. Бул SIM алмаштыруу алдамчылыгын токтотот.",
+  "lifeTaskPhoneBlockBanking": "Телефондогу банкингди бөгөттөө үчүн банкка чалыңыз",
+  "lifeTaskPhoneLockErase": "Телефонду башка түзмөктөн кулпулаңыз же тазалаңыз",
+  "lifeTaskPhoneChangePasswords": "Почта жана социалдык тармактардын сырсөздөрүн алмаштырыңыз",
+  "lifeTaskReportToPolice": "Милицияга билдирип, иштин номерин сактаңыз",
+  "lifeTaskDisasterSafePlace": "Баары аман жана жашай турган жери бар экенин текшериңиз",
+  "lifeTaskDisasterPhotos": "Тазалаардан мурун зыяндын сүрөтүн тартыңыз",
+  "lifeTaskDisasterContactInsurer": "Мүмкүн болушунча тез камсыздандыруучуга кайрылыңыз",
+  "lifeTaskDisasterProofPack": "Документтериңиздин көчүрмөлөрүн Далилдер топтому менен жөнөтүңүз",
+  "lifeTaskParentFindPapers": "Анын маанилүү кагаздары кайда сакталарын билиңиз",
+  "lifeTaskParentPermission": "Анын атынан банк, дарыгер жана камсыздандыруучу менен сүйлөшсөңүз болобу, сураңыз",
+  "lifeTaskParentMedicines": "Анын дарыларынын жана дарыгерлеринин тизмесин кармаңыз",
+  "lifePlanDoClaim": "Төлөм талап кылуу",
+  "lifePlanStatusClaimed": "Талап кылынды",
+  "lifePlanStartBy": "{weeks, plural, one{{date} чейин баштаңыз. Жаңысы адатта болжол менен {weeks} жума алат.} other{{date} чейин баштаңыз. Жаңысы адатта болжол менен {weeks} жума алат.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Азыр баштаңыз. Жаңысы адатта болжол менен {weeks} жума алат.} other{Азыр баштаңыз. Жаңысы адатта болжол менен {weeks} жума алат.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Сиздин планыңыз",
+  "lifePlanWhenHappened": "Бул качан болду?",
+  "lifePlanReminderNudge": "Планыңызда дагы иштер бар. Убактыңыз болгондо ачыңыз.",
+  "lifePlanReminderCheckIn": "Жаңы карталарыңыз жана документтериңиз келдиби? Текшерүү үчүн планды ачыңыз.",
+  "lifePlanDoFirst": "Адегенде муну жасаңыз",
+  "lifePlanSteps": "Башка кадамдар",
+  "lifePlanAddOwnStep": "Өз кадамыңызды кошуу",
+  "lifePlanOwnStepHint": "Мисалы: Мектепке билдирүү",
+  "lifePlanOwnStepLimit": "20га чейин өз кадамыңызды кошо аласыз.",
+  "lifePlanReadAloud": "Үн чыгарып окуу",
+  "lifePlanStopReading": "Окууну токтотуу",
+  "lifePlanReadAloudUnavailable": "Бул телефондо үн чыгарып окуу жеткиликсиз.",
+  "lifePlanProofPack": "Далилдер топтомун түзүү",
+  "lifePlanOpenFamily": "Үй-бүлөнү ачуу",
+  "lifePlanRemoved": "{count, plural, one{Сиз өчүргөн {count} жазуу токтотулган деп эсептелет.} other{Сиз өчүргөн {count} жазуу токтотулган деп эсептелет.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Буларды жаңыртуу адатта болжол менен {amount} турат.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Жаңы үйгө көчүп жатасызбы? Дагы эмнени жаңыртуу керектигин караңыз."
 }

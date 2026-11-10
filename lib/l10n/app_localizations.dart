@@ -11658,6 +11658,606 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Start a plan for moving to another country. Vaultara shows what to sort out before you go.'**
   String get lifePlanSuggestTripBody;
+
+  /// Group heading in the life events picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get lifeGroupHome;
+
+  /// Group heading in the life events picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Family'**
+  String get lifeGroupFamily;
+
+  /// Group heading in the life events picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Work and study'**
+  String get lifeGroupWork;
+
+  /// Group heading in the life events picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Car and travel'**
+  String get lifeGroupCarTravel;
+
+  /// Group heading in the life events picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong'**
+  String get lifeGroupEmergency;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I bought a car'**
+  String get lifeEventCarBuy;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Get cover before you drive it home, then put the car in your name.'**
+  String get lifeEventCarBuyBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I sold a car'**
+  String get lifeEventCarSell;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell the licensing office about the sale and cancel the cover once the car is no longer yours.'**
+  String get lifeEventCarSellBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I am starting a new job'**
+  String get lifeEventJobStart;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your permits before you start, then set up your work card and benefits.'**
+  String get lifeEventJobStartBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I am leaving my job'**
+  String get lifeEventJobLeave;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Return work items and check what happens to the cover your job gave you.'**
+  String get lifeEventJobLeaveBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I lost my phone or it was stolen'**
+  String get lifeEventLostPhone;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Act fast. Someone with your phone and SIM card can get into your bank and email. Do the first steps right away.'**
+  String get lifeEventLostPhoneBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I lost my job'**
+  String get lifeEventJobLoss;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'This is hard. Take it one step at a time. Some claims have a deadline, so start with those.'**
+  String get lifeEventJobLossBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'Fire, flood or break-in at home'**
+  String get lifeEventDisaster;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure everyone is safe first. Then take photos, contact your insurer and replace what was lost.'**
+  String get lifeEventDisasterBody;
+
+  /// Life event option, first person
+  ///
+  /// In en, this message translates to:
+  /// **'I am looking after a parent'**
+  String get lifeEventCaringParent;
+
+  /// Short explanation shown when starting a plan for this life event.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick the person you are caring for. Check their documents and cover, and keep what you need close by.'**
+  String get lifeEventCaringParentBody;
+
+  /// Question in the car life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Did you buy or sell?'**
+  String get lifeVariantCarQuestion;
+
+  /// Question in the job life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you starting or leaving?'**
+  String get lifeVariantJobQuestion;
+
+  /// Answer: bought a car.
+  ///
+  /// In en, this message translates to:
+  /// **'Bought'**
+  String get lifeVariantBuy;
+
+  /// Answer: sold a car.
+  ///
+  /// In en, this message translates to:
+  /// **'Sold'**
+  String get lifeVariantSell;
+
+  /// Answer: starting a job.
+  ///
+  /// In en, this message translates to:
+  /// **'Starting'**
+  String get lifeVariantStart;
+
+  /// Answer: leaving a job.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaving'**
+  String get lifeVariantLeave;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for your post to be sent to your new address'**
+  String get lifeTaskRedirectPost;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Give your new address to your employer, tax office, doctor and school'**
+  String get lifeTaskNewAddressEveryone;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Close or move your electricity, water and internet accounts'**
+  String get lifeTaskMoveUtilities;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Take meter readings and photos on the day you move out'**
+  String get lifeTaskMeterReadings;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo of the sale or transfer papers to Vaultara'**
+  String get lifeTaskSaveHomePapers;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Hand over keys, remotes and access tags'**
+  String get lifeTaskHandOverKeys;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Get official proof of your new name first. Most offices ask for it.'**
+  String get lifeTaskOfficialNameProof;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell your bank, employer, doctor and tax office about your new name'**
+  String get lifeTaskTellNameChange;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Change your name on your email, phone and online accounts'**
+  String get lifeTaskUpdateOnlineAccounts;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo of the marriage certificate to Vaultara'**
+  String get lifeTaskSaveMarriageCertificate;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Check who is named as beneficiary on your policies and accounts'**
+  String get lifeTaskCheckBeneficiaries;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Make or update a will'**
+  String get lifeTaskUpdateWill;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo of the final divorce order to Vaultara'**
+  String get lifeTaskSaveDivorceOrder;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Close or split shared accounts and change shared passwords'**
+  String get lifeTaskSplitSharedAccounts;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Register the birth and get the birth certificate'**
+  String get lifeTaskRegisterBirth;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the baby in Family so their documents are tracked'**
+  String get lifeTaskAddBabyToFamily;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Put the car in your name within the time the law allows'**
+  String get lifeTaskCarRegisterInName;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo of the sale agreement to Vaultara'**
+  String get lifeTaskCarSavePapers;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell the licensing office you sold the car and keep the proof'**
+  String get lifeTaskCarNotifySale;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove toll tags, parking cards and personal items'**
+  String get lifeTaskCarRemoveTags;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Give your bank details and tax number to your new employer'**
+  String get lifeTaskJobGiveDetails;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Join the medical cover and pension your employer offers'**
+  String get lifeTaskJobJoinBenefits;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Return work items such as a laptop, card or keys'**
+  String get lifeTaskJobReturnItems;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for your last payslip and a letter that confirms your work dates'**
+  String get lifeTaskJobLastPayslip;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask what happens to your medical cover and pension'**
+  String get lifeTaskJobAskBenefits;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask about unemployment benefits now. Claims often have a deadline.'**
+  String get lifeTaskJobUnemployment;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'List your debit orders and subscriptions, and pause what you can'**
+  String get lifeTaskJobPauseDebits;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add photos of your acceptance letter and fee statements to Vaultara'**
+  String get lifeTaskStudySaveLetters;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the deadlines for bursaries, loans or other funding'**
+  String get lifeTaskStudyFunding;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask how and when your pension will be paid'**
+  String get lifeTaskRetirePension;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrange your own medical cover if your work cover ends'**
+  String get lifeTaskRetireOwnCover;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell your bank and tax office that you are leaving'**
+  String get lifeTaskCountryTellBankTax;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo of every important document to Vaultara'**
+  String get lifeTaskCountryScanCopies;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Check whether you must swap your driving licence'**
+  String get lifeTaskCountryLicenceRules;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Help them apply for their own ID if they need one'**
+  String get lifeTaskChildOwnId;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Help them open their own bank account'**
+  String get lifeTaskChildBankAccount;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Get a few certified copies of the death certificate'**
+  String get lifeTaskDeathCertificates;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell the bank, insurers and employer'**
+  String get lifeTaskDeathTellOrganisations;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Find the will and contact the executor'**
+  String get lifeTaskDeathFindWill;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'When you are ready, turn off reminders for their records'**
+  String get lifeTaskDeathStopReminders;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Call your network to block the SIM card. This stops SIM swap fraud.'**
+  String get lifeTaskPhoneBlockSim;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Call your bank to block banking on the phone'**
+  String get lifeTaskPhoneBlockBanking;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock or erase the phone from another device'**
+  String get lifeTaskPhoneLockErase;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Change your email and social media passwords'**
+  String get lifeTaskPhoneChangePasswords;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Report it to the police and keep the case number'**
+  String get lifeTaskReportToPolice;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure everyone is safe and has a place to stay'**
+  String get lifeTaskDisasterSafePlace;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Take photos of the damage before you clean up'**
+  String get lifeTaskDisasterPhotos;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact your insurer as soon as you can'**
+  String get lifeTaskDisasterContactInsurer;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Send copies of your documents with Proof pack'**
+  String get lifeTaskDisasterProofPack;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Find out where their important papers are kept'**
+  String get lifeTaskParentFindPapers;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask if you may speak to their bank, doctor and insurer for them'**
+  String get lifeTaskParentPermission;
+
+  /// A step in a life event plan that is not a saved record. Imperative, short.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep a list of their medicines and doctors'**
+  String get lifeTaskParentMedicines;
+
+  /// What to do with a record in a life event plan, such as a life policy after a death.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a claim'**
+  String get lifePlanDoClaim;
+
+  /// Status of a record in a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Claimed'**
+  String get lifePlanStatusClaimed;
+
+  /// When to start renewing so a new document is ready by the date of the event.
+  ///
+  /// In en, this message translates to:
+  /// **'{weeks, plural, =1{Start by {date}. A new one usually takes about a week.} other{Start by {date}. A new one usually takes about {weeks} weeks.}}'**
+  String lifePlanStartBy(String date, int weeks);
+
+  /// Shown when the suggested start date has passed.
+  ///
+  /// In en, this message translates to:
+  /// **'{weeks, plural, =1{Start now. A new one usually takes about a week.} other{Start now. A new one usually takes about {weeks} weeks.}}'**
+  String lifePlanStartNow(int weeks);
+
+  /// Notification title for a private life event, so the event does not show on a locked screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan'**
+  String get lifePlanPrivateTitle;
+
+  /// Date question for a life event that has already happened.
+  ///
+  /// In en, this message translates to:
+  /// **'When did it happen?'**
+  String get lifePlanWhenHappened;
+
+  /// Reminder for a life event plan that has no date.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan still has things to do. Open it when you have a moment.'**
+  String get lifePlanReminderNudge;
+
+  /// Reminder 30 days after the date of a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Did your new cards and documents arrive? Open the plan to check.'**
+  String get lifePlanReminderCheckIn;
+
+  /// Heading for urgent steps in a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Do this first'**
+  String get lifePlanDoFirst;
+
+  /// Heading for steps in a life event plan that are not saved records.
+  ///
+  /// In en, this message translates to:
+  /// **'Other steps'**
+  String get lifePlanSteps;
+
+  /// Button and dialog title to add a step to a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your own step'**
+  String get lifePlanAddOwnStep;
+
+  /// Hint in the field for a step the user adds.
+  ///
+  /// In en, this message translates to:
+  /// **'For example: Tell the school'**
+  String get lifePlanOwnStepHint;
+
+  /// Shown when the user has added the most steps allowed.
+  ///
+  /// In en, this message translates to:
+  /// **'You can add up to 20 of your own steps.'**
+  String get lifePlanOwnStepLimit;
+
+  /// Button that reads a life event plan aloud.
+  ///
+  /// In en, this message translates to:
+  /// **'Read aloud'**
+  String get lifePlanReadAloud;
+
+  /// Button that stops reading a life event plan aloud.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop reading'**
+  String get lifePlanStopReading;
+
+  /// Shown when text to speech is not available.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading aloud is not available on this phone.'**
+  String get lifePlanReadAloudUnavailable;
+
+  /// Opens Proof pack with the records of a life event plan ticked.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a proof pack'**
+  String get lifePlanProofPack;
+
+  /// Button that opens the Family screen from a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Family'**
+  String get lifePlanOpenFamily;
+
+  /// Records deleted after a life event plan started.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}'**
+  String lifePlanRemoved(int count);
+
+  /// The renewal costs of the records in a life event plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewing these usually costs about {amount}.'**
+  String lifePlanCosts(String amount);
+
+  /// Offer to start a moving plan after a new lease or home cover is saved.
+  ///
+  /// In en, this message translates to:
+  /// **'Moving to a new home? See what else to update.'**
+  String get lifePlanSuggestMove;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

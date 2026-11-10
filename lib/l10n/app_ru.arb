@@ -2124,5 +2124,136 @@
   "lifePlanReminderAfter": "Кое-что ещё не сделано. Откройте план, чтобы закончить.",
   "lifePlanSuggestCar": "Купили или продали машину? Посмотрите, что ещё нужно обновить.",
   "lifePlanSuggestTrip": "Переезжаете туда надолго?",
-  "lifePlanSuggestTripBody": "Начните план переезда в другую страну. Vaultara покажет, что уладить до отъезда."
+  "lifePlanSuggestTripBody": "Начните план переезда в другую страну. Vaultara покажет, что уладить до отъезда.",
+  "lifeGroupHome": "Дом",
+  "lifeGroupFamily": "Семья",
+  "lifeGroupWork": "Работа и учёба",
+  "lifeGroupCarTravel": "Машина и поездки",
+  "lifeGroupEmergency": "Что-то случилось",
+  "lifeEventCarBuy": "Я купил машину",
+  "lifeEventCarBuyBody": "Оформите страховку до того, как поедете домой, а затем зарегистрируйте машину на себя.",
+  "lifeEventCarSell": "Я продал машину",
+  "lifeEventCarSellBody": "Сообщите о продаже в регистрирующий орган и расторгните страховку, когда машина уже не ваша.",
+  "lifeEventJobStart": "Я выхожу на новую работу",
+  "lifeEventJobStartBody": "Перед началом проверьте разрешения, а затем оформите пропуск и льготы.",
+  "lifeEventJobLeave": "Я ухожу с работы",
+  "lifeEventJobLeaveBody": "Верните рабочие вещи и узнайте, что будет со страховкой от работы.",
+  "lifeEventLostPhone": "Я потерял телефон, или его украли",
+  "lifeEventLostPhoneBody": "Действуйте быстро. Тот, у кого ваш телефон и SIM-карта, может войти в ваш банк и почту. Сделайте первые шаги сразу.",
+  "lifeEventJobLoss": "Я потерял работу",
+  "lifeEventJobLossBody": "Это тяжело. Двигайтесь шаг за шагом. У некоторых заявлений есть срок, начните с них.",
+  "lifeEventDisaster": "Пожар, затопление или кража дома",
+  "lifeEventDisasterBody": "Сначала убедитесь, что все в безопасности. Затем сделайте фото, свяжитесь со страховой и восстановите утраченное.",
+  "lifeEventCaringParent": "Я ухаживаю за родителем",
+  "lifeEventCaringParentBody": "Выберите человека, за которым ухаживаете. Проверьте его документы и страховки и держите нужное под рукой.",
+  "lifeVariantCarQuestion": "Вы купили или продали?",
+  "lifeVariantJobQuestion": "Вы начинаете или уходите?",
+  "lifeVariantBuy": "Купил",
+  "lifeVariantSell": "Продал",
+  "lifeVariantStart": "Начинаю",
+  "lifeVariantLeave": "Ухожу",
+  "lifeTaskRedirectPost": "Попросите пересылать почту на новый адрес",
+  "lifeTaskNewAddressEveryone": "Сообщите новый адрес работодателю, налоговой, врачу и школе",
+  "lifeTaskMoveUtilities": "Расторгните или переоформите договоры на свет, воду и интернет",
+  "lifeTaskMeterReadings": "В день выезда снимите показания счётчиков и сделайте фото",
+  "lifeTaskSaveHomePapers": "Добавьте в Vaultara фото документов о продаже или передаче",
+  "lifeTaskHandOverKeys": "Передайте ключи, пульты и пропуска",
+  "lifeTaskOfficialNameProof": "Сначала получите официальное подтверждение нового имени. Большинство учреждений его требует.",
+  "lifeTaskTellNameChange": "Сообщите новое имя банку, работодателю, врачу и в налоговую",
+  "lifeTaskUpdateOnlineAccounts": "Измените имя в почте, телефоне и онлайн-аккаунтах",
+  "lifeTaskSaveMarriageCertificate": "Добавьте в Vaultara фото свидетельства о браке",
+  "lifeTaskCheckBeneficiaries": "Проверьте, кто указан выгодоприобретателем в полисах и на счетах",
+  "lifeTaskUpdateWill": "Составьте или обновите завещание",
+  "lifeTaskSaveDivorceOrder": "Добавьте в Vaultara фото окончательного решения о разводе",
+  "lifeTaskSplitSharedAccounts": "Закройте или разделите общие счета и смените общие пароли",
+  "lifeTaskRegisterBirth": "Зарегистрируйте рождение и получите свидетельство о рождении",
+  "lifeTaskAddBabyToFamily": "Добавьте малыша в Семью, чтобы следить за его документами",
+  "lifeTaskCarRegisterInName": "Зарегистрируйте машину на себя в срок, установленный законом",
+  "lifeTaskCarSavePapers": "Добавьте в Vaultara фото договора купли-продажи",
+  "lifeTaskCarNotifySale": "Сообщите в регистрирующий орган о продаже машины и сохраните подтверждение",
+  "lifeTaskCarRemoveTags": "Снимите транспондеры, парковочные карты и уберите личные вещи",
+  "lifeTaskJobGiveDetails": "Передайте новому работодателю банковские реквизиты и налоговый номер",
+  "lifeTaskJobJoinBenefits": "Подключитесь к медицинской страховке и пенсионной программе работодателя",
+  "lifeTaskJobReturnItems": "Верните рабочие вещи, например ноутбук, пропуск или ключи",
+  "lifeTaskJobLastPayslip": "Попросите последний расчётный лист и справку о периоде работы",
+  "lifeTaskJobAskBenefits": "Узнайте, что будет с медицинской страховкой и пенсией",
+  "lifeTaskJobUnemployment": "Узнайте о пособии по безработице прямо сейчас. У заявлений часто есть срок.",
+  "lifeTaskJobPauseDebits": "Составьте список автоплатежей и подписок и приостановите, что можно",
+  "lifeTaskStudySaveLetters": "Добавьте в Vaultara фото письма о зачислении и квитанций об оплате",
+  "lifeTaskStudyFunding": "Проверьте сроки стипендий, кредитов и другой поддержки",
+  "lifeTaskRetirePension": "Узнайте, как и когда будет выплачиваться пенсия",
+  "lifeTaskRetireOwnCover": "Оформите собственную медицинскую страховку, если рабочая заканчивается",
+  "lifeTaskCountryTellBankTax": "Сообщите банку и налоговой, что уезжаете",
+  "lifeTaskCountryScanCopies": "Добавьте в Vaultara фото каждого важного документа",
+  "lifeTaskCountryLicenceRules": "Узнайте, нужно ли менять водительские права",
+  "lifeTaskChildOwnId": "Помогите оформить собственное удостоверение личности, если нужно",
+  "lifeTaskChildBankAccount": "Помогите открыть собственный банковский счёт",
+  "lifeTaskDeathCertificates": "Получите несколько заверенных копий свидетельства о смерти",
+  "lifeTaskDeathTellOrganisations": "Сообщите банку, страховым компаниям и работодателю",
+  "lifeTaskDeathFindWill": "Найдите завещание и свяжитесь с исполнителем",
+  "lifeTaskDeathStopReminders": "Когда будете готовы, отключите напоминания по его записям",
+  "lifeTaskPhoneBlockSim": "Позвоните оператору и заблокируйте SIM-карту. Это остановит мошенничество с заменой SIM.",
+  "lifeTaskPhoneBlockBanking": "Позвоните в банк и заблокируйте мобильный банк",
+  "lifeTaskPhoneLockErase": "Заблокируйте или сотрите телефон с другого устройства",
+  "lifeTaskPhoneChangePasswords": "Смените пароли от почты и соцсетей",
+  "lifeTaskReportToPolice": "Заявите в полицию и сохраните номер дела",
+  "lifeTaskDisasterSafePlace": "Убедитесь, что все в безопасности и им есть где жить",
+  "lifeTaskDisasterPhotos": "Сфотографируйте ущерб до уборки",
+  "lifeTaskDisasterContactInsurer": "Свяжитесь со страховой как можно скорее",
+  "lifeTaskDisasterProofPack": "Отправьте копии документов через Пакет документов",
+  "lifeTaskParentFindPapers": "Узнайте, где хранятся его важные бумаги",
+  "lifeTaskParentPermission": "Спросите, можете ли вы говорить от его имени с банком, врачом и страховой",
+  "lifeTaskParentMedicines": "Ведите список его лекарств и врачей",
+  "lifePlanDoClaim": "Подать заявление",
+  "lifePlanStatusClaimed": "Заявление подано",
+  "lifePlanStartBy": "{weeks, plural, one{Начните до {date}. Обычно на новый уходит около {weeks} недели.} few{Начните до {date}. Обычно на новый уходит около {weeks} недель.} many{Начните до {date}. Обычно на новый уходит около {weeks} недель.} other{Начните до {date}. Обычно на новый уходит около {weeks} недели.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Начните сейчас. Обычно на новый уходит около {weeks} недели.} few{Начните сейчас. Обычно на новый уходит около {weeks} недель.} many{Начните сейчас. Обычно на новый уходит около {weeks} недель.} other{Начните сейчас. Обычно на новый уходит около {weeks} недели.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Ваш план",
+  "lifePlanWhenHappened": "Когда это случилось?",
+  "lifePlanReminderNudge": "В вашем плане ещё есть дела. Откройте его, когда будет минутка.",
+  "lifePlanReminderCheckIn": "Новые карты и документы пришли? Откройте план, чтобы проверить.",
+  "lifePlanDoFirst": "Сначала сделайте это",
+  "lifePlanSteps": "Другие шаги",
+  "lifePlanAddOwnStep": "Добавить свой шаг",
+  "lifePlanOwnStepHint": "Например: Сообщить в школу",
+  "lifePlanOwnStepLimit": "Можно добавить до 20 своих шагов.",
+  "lifePlanReadAloud": "Прочитать вслух",
+  "lifePlanStopReading": "Остановить чтение",
+  "lifePlanReadAloudUnavailable": "Чтение вслух недоступно на этом телефоне.",
+  "lifePlanProofPack": "Создать пакет документов",
+  "lifePlanOpenFamily": "Открыть Семью",
+  "lifePlanRemoved": "{count, plural, one{{count} удалённая запись считается закрытой.} few{{count} удалённые записи считаются закрытыми.} many{{count} удалённых записей считаются закрытыми.} other{{count} удалённой записи считаются закрытыми.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Обычно их обновление стоит около {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Переезжаете? Посмотрите, что ещё нужно обновить."
 }

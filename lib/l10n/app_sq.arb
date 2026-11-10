@@ -2163,5 +2163,136 @@
   "lifePlanReminderAfter": "Ka ende gjëra për të bërë. Hape planin për t'i përfunduar.",
   "lifePlanSuggestCar": "Bleve apo shite një makinë? Shiko çfarë tjetër duhet përditësuar.",
   "lifePlanSuggestTrip": "Po shpërngulesh atje për ca kohë?",
-  "lifePlanSuggestTripBody": "Fillo një plan për shpërngulje në një vend tjetër. Vaultara tregon çfarë të rregullosh para nisjes."
+  "lifePlanSuggestTripBody": "Fillo një plan për shpërngulje në një vend tjetër. Vaultara tregon çfarë të rregullosh para nisjes.",
+  "lifeGroupHome": "Shtëpia",
+  "lifeGroupFamily": "Familja",
+  "lifeGroupWork": "Puna dhe studimet",
+  "lifeGroupCarTravel": "Makina dhe udhëtimet",
+  "lifeGroupEmergency": "Ndodhi diçka",
+  "lifeEventCarBuy": "Bleva një makinë",
+  "lifeEventCarBuyBody": "Siguroje para se ta çosh në shtëpi, pastaj kaloje makinën në emrin tënd.",
+  "lifeEventCarSell": "Shita një makinë",
+  "lifeEventCarSellBody": "Njofto zyrën e regjistrimit për shitjen dhe anulo sigurimin kur makina nuk është më jotja.",
+  "lifeEventJobStart": "Po filloj një punë të re",
+  "lifeEventJobStartBody": "Kontrollo lejet para se të fillosh, pastaj rregullo kartën e punës dhe përfitimet.",
+  "lifeEventJobLeave": "Po largohem nga puna",
+  "lifeEventJobLeaveBody": "Kthe sendet e punës dhe kontrollo çfarë ndodh me sigurimin që të jepte puna.",
+  "lifeEventLostPhone": "Humba telefonin ose ma vodhën",
+  "lifeEventLostPhoneBody": "Vepro shpejt. Kushdo që ka telefonin dhe kartën SIM mund të hyjë në bankën dhe email-in tënd. Bëj hapat e parë menjëherë.",
+  "lifeEventJobLoss": "Humba punën",
+  "lifeEventJobLossBody": "Kjo është e vështirë. Ec hap pas hapi. Disa kërkesa kanë afat, ndaj fillo me to.",
+  "lifeEventDisaster": "Zjarr, përmbytje ose vjedhje në shtëpi",
+  "lifeEventDisasterBody": "Së pari sigurohu që të gjithë janë mirë. Pastaj bëj foto, kontakto sigurimin dhe zëvendëso atë që humbi.",
+  "lifeEventCaringParent": "Kujdesem për një prind",
+  "lifeEventCaringParentBody": "Zgjidh personin për të cilin kujdesesh. Kontrollo dokumentet dhe sigurimin e tij dhe mbaj pranë atë që të duhet.",
+  "lifeVariantCarQuestion": "E bleve apo e shite?",
+  "lifeVariantJobQuestion": "Po fillon apo po largohesh?",
+  "lifeVariantBuy": "E bleva",
+  "lifeVariantSell": "E shita",
+  "lifeVariantStart": "Filloj",
+  "lifeVariantLeave": "Largohem",
+  "lifeTaskRedirectPost": "Kërko që posta të të dërgohet në adresën e re",
+  "lifeTaskNewAddressEveryone": "Jepu adresën e re punëdhënësit, tatimeve, mjekut dhe shkollës",
+  "lifeTaskMoveUtilities": "Mbyll ose transfero llogaritë e energjisë, ujit dhe internetit",
+  "lifeTaskMeterReadings": "Ditën që largohesh, shëno matësat dhe bëj foto",
+  "lifeTaskSaveHomePapers": "Shto në Vaultara një foto të dokumenteve të shitjes ose kalimit",
+  "lifeTaskHandOverKeys": "Dorëzo çelësat, telekomandat dhe kartat e hyrjes",
+  "lifeTaskOfficialNameProof": "Së pari merr provë zyrtare të emrit të ri. Shumica e zyrave e kërkojnë.",
+  "lifeTaskTellNameChange": "Njofto bankën, punëdhënësin, mjekun dhe tatimet për emrin e ri",
+  "lifeTaskUpdateOnlineAccounts": "Ndrysho emrin në email, telefon dhe llogaritë online",
+  "lifeTaskSaveMarriageCertificate": "Shto në Vaultara një foto të certifikatës së martesës",
+  "lifeTaskCheckBeneficiaries": "Kontrollo kush është përfitues në policat dhe llogaritë e tua",
+  "lifeTaskUpdateWill": "Bëj ose përditëso testamentin",
+  "lifeTaskSaveDivorceOrder": "Shto në Vaultara një foto të vendimit përfundimtar të divorcit",
+  "lifeTaskSplitSharedAccounts": "Mbyll ose ndaj llogaritë e përbashkëta dhe ndrysho fjalëkalimet e përbashkëta",
+  "lifeTaskRegisterBirth": "Regjistro lindjen dhe merr certifikatën e lindjes",
+  "lifeTaskAddBabyToFamily": "Shto foshnjën te Familja që të ndiqen dokumentet e saj",
+  "lifeTaskCarRegisterInName": "Kaloje makinën në emrin tënd brenda afatit ligjor",
+  "lifeTaskCarSavePapers": "Shto në Vaultara një foto të kontratës së shitjes",
+  "lifeTaskCarNotifySale": "Njofto zyrën e regjistrimit që e shite makinën dhe ruaj provën",
+  "lifeTaskCarRemoveTags": "Hiq pajisjet e pagesës së rrugës, kartat e parkimit dhe sendet personale",
+  "lifeTaskJobGiveDetails": "Jepi punëdhënësit të ri të dhënat bankare dhe numrin tatimor",
+  "lifeTaskJobJoinBenefits": "Bashkohu me sigurimin shëndetësor dhe pensionin që ofron punëdhënësi",
+  "lifeTaskJobReturnItems": "Kthe sendet e punës si laptopi, karta ose çelësat",
+  "lifeTaskJobLastPayslip": "Kërko fletëpagesën e fundit dhe një vërtetim për periudhën e punës",
+  "lifeTaskJobAskBenefits": "Pyet çfarë ndodh me sigurimin shëndetësor dhe pensionin",
+  "lifeTaskJobUnemployment": "Pyet tani për pagesën e papunësisë. Kërkesat shpesh kanë afat.",
+  "lifeTaskJobPauseDebits": "Listo pagesat automatike dhe abonimet, dhe pezullo ato që mundesh",
+  "lifeTaskStudySaveLetters": "Shto në Vaultara foto të letrës së pranimit dhe faturave të tarifave",
+  "lifeTaskStudyFunding": "Kontrollo afatet për bursa, kredi ose mbështetje tjetër",
+  "lifeTaskRetirePension": "Pyet si dhe kur do të paguhet pensioni",
+  "lifeTaskRetireOwnCover": "Bëj sigurim shëndetësor tëndin nëse ai i punës mbaron",
+  "lifeTaskCountryTellBankTax": "Njofto bankën dhe tatimet që po largohesh",
+  "lifeTaskCountryScanCopies": "Shto në Vaultara një foto të çdo dokumenti të rëndësishëm",
+  "lifeTaskCountryLicenceRules": "Kontrollo nëse duhet ta këmbesh lejen e drejtimit",
+  "lifeTaskChildOwnId": "Ndihmoje të aplikojë për letërnjoftimin e vet nëse i duhet",
+  "lifeTaskChildBankAccount": "Ndihmoje të hapë llogarinë e vet bankare",
+  "lifeTaskDeathCertificates": "Merr disa kopje të noterizuara të certifikatës së vdekjes",
+  "lifeTaskDeathTellOrganisations": "Njofto bankën, kompanitë e sigurimit dhe punëdhënësin",
+  "lifeTaskDeathFindWill": "Gjej testamentin dhe kontakto ekzekutorin",
+  "lifeTaskDeathStopReminders": "Kur të jesh gati, çaktivizo kujtesat për të dhënat e tij",
+  "lifeTaskPhoneBlockSim": "Telefono operatorin për të bllokuar kartën SIM. Kjo ndalon mashtrimin me ndërrimin e SIM.",
+  "lifeTaskPhoneBlockBanking": "Telefono bankën për të bllokuar bankingun në telefon",
+  "lifeTaskPhoneLockErase": "Kyç ose fshi telefonin nga një pajisje tjetër",
+  "lifeTaskPhoneChangePasswords": "Ndrysho fjalëkalimet e email-it dhe rrjeteve sociale",
+  "lifeTaskReportToPolice": "Denoncoje në polici dhe ruaj numrin e çështjes",
+  "lifeTaskDisasterSafePlace": "Sigurohu që të gjithë janë mirë dhe kanë ku të qëndrojnë",
+  "lifeTaskDisasterPhotos": "Fotografo dëmet para se të pastrosh",
+  "lifeTaskDisasterContactInsurer": "Kontakto sigurimin sa më shpejt",
+  "lifeTaskDisasterProofPack": "Dërgo kopje të dokumenteve me Paketën e dëshmive",
+  "lifeTaskParentFindPapers": "Mëso ku i mban dokumentet e rëndësishme",
+  "lifeTaskParentPermission": "Pyet nëse mund të flasësh në emër të tij me bankën, mjekun dhe sigurimin",
+  "lifeTaskParentMedicines": "Mbaj një listë të ilaçeve dhe mjekëve të tij",
+  "lifePlanDoClaim": "Bëj kërkesë dëmshpërblimi",
+  "lifePlanStatusClaimed": "Kërkesa u bë",
+  "lifePlanStartBy": "{weeks, plural, one{Fillo deri më {date}. Një i ri zakonisht zgjat rreth {weeks} javë.} other{Fillo deri më {date}. Një i ri zakonisht zgjat rreth {weeks} javë.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Fillo tani. Një i ri zakonisht zgjat rreth {weeks} javë.} other{Fillo tani. Një i ri zakonisht zgjat rreth {weeks} javë.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Plani yt",
+  "lifePlanWhenHappened": "Kur ndodhi?",
+  "lifePlanReminderNudge": "Plani yt ka ende gjëra për të bërë. Hape kur të kesh një moment.",
+  "lifePlanReminderCheckIn": "A mbërritën kartat dhe dokumentet e reja? Hap planin për të kontrolluar.",
+  "lifePlanDoFirst": "Bëj këtë së pari",
+  "lifePlanSteps": "Hapa të tjerë",
+  "lifePlanAddOwnStep": "Shto hapin tënd",
+  "lifePlanOwnStepHint": "Për shembull: Njofto shkollën",
+  "lifePlanOwnStepLimit": "Mund të shtosh deri në 20 hapa të tu.",
+  "lifePlanReadAloud": "Lexo me zë",
+  "lifePlanStopReading": "Ndalo leximin",
+  "lifePlanReadAloudUnavailable": "Leximi me zë nuk është i disponueshëm në këtë telefon.",
+  "lifePlanProofPack": "Krijo një paketë dëshmish",
+  "lifePlanOpenFamily": "Hap Familjen",
+  "lifePlanRemoved": "{count, plural, one{{count} regjistrim që fshive llogaritet si i anuluar.} other{{count} regjistrime që fshive llogariten si të anuluara.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Rinovimi i tyre zakonisht kushton rreth {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Po kalon në një shtëpi të re? Shiko çfarë tjetër duhet përditësuar."
 }

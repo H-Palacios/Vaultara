@@ -6984,4 +6984,336 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Začnite načrt za selitev v drugo državo. Vaultara pokaže, kaj urediti pred odhodom.';
+
+  @override
+  String get lifeGroupHome => 'Dom';
+
+  @override
+  String get lifeGroupFamily => 'Družina';
+
+  @override
+  String get lifeGroupWork => 'Delo in študij';
+
+  @override
+  String get lifeGroupCarTravel => 'Avto in potovanja';
+
+  @override
+  String get lifeGroupEmergency => 'Nekaj se je zgodilo';
+
+  @override
+  String get lifeEventCarBuy => 'Kupil sem avto';
+
+  @override
+  String get lifeEventCarBuyBody => 'Avto zavarujte, preden ga peljete domov, nato ga prepišite nase.';
+
+  @override
+  String get lifeEventCarSell => 'Prodal sem avto';
+
+  @override
+  String get lifeEventCarSellBody => 'Prodajo prijavite na upravni enoti in prekinite zavarovanje, ko avto ni več vaš.';
+
+  @override
+  String get lifeEventJobStart => 'Začenjam novo službo';
+
+  @override
+  String get lifeEventJobStartBody => 'Pred začetkom preverite dovoljenja, nato uredite službeno kartico in ugodnosti.';
+
+  @override
+  String get lifeEventJobLeave => 'Odhajam iz službe';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Vrnite službene stvari in preverite, kaj bo z zavarovanjem, ki vam ga je dajala služba.';
+
+  @override
+  String get lifeEventLostPhone => 'Izgubil sem telefon ali so mi ga ukradli';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Ukrepajte hitro. Kdor ima vaš telefon in kartico SIM, lahko vstopi v vašo banko in e-pošto. Prve korake naredite takoj.';
+
+  @override
+  String get lifeEventJobLoss => 'Izgubil sem službo';
+
+  @override
+  String get lifeEventJobLossBody => 'To je težko. Pojdite korak za korakom. Nekatere vloge imajo rok, zato začnite z njimi.';
+
+  @override
+  String get lifeEventDisaster => 'Požar, poplava ali vlom doma';
+
+  @override
+  String get lifeEventDisasterBody => 'Najprej se prepričajte, da so vsi na varnem. Nato fotografirajte, pokličite zavarovalnico in nadomestite izgubljeno.';
+
+  @override
+  String get lifeEventCaringParent => 'Skrbim za starša';
+
+  @override
+  String get lifeEventCaringParentBody => 'Izberite osebo, za katero skrbite. Preverite njene dokumente in zavarovanje ter imejte potrebno pri roki.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Ste kupili ali prodali?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Začenjate ali odhajate?';
+
+  @override
+  String get lifeVariantBuy => 'Kupil';
+
+  @override
+  String get lifeVariantSell => 'Prodal';
+
+  @override
+  String get lifeVariantStart => 'Začenjam';
+
+  @override
+  String get lifeVariantLeave => 'Odhajam';
+
+  @override
+  String get lifeTaskRedirectPost => 'Zaprosite za preusmeritev pošte na nov naslov';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Nov naslov sporočite delodajalcu, FURS, zdravniku in šoli';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Prekinite ali prenesite pogodbe za elektriko, vodo in internet';
+
+  @override
+  String get lifeTaskMeterReadings => 'Na dan izselitve zapišite stanje števcev in fotografirajte';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Dodajte fotografijo dokumentov o prodaji ali prenosu v Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Predajte ključe, daljince in dostopne kartice';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Najprej pridobite uradno dokazilo o novem imenu. Večina uradov ga zahteva.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Novo ime sporočite banki, delodajalcu, zdravniku in FURS';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Spremenite ime v e-pošti, telefonu in spletnih računih';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Dodajte fotografijo poročnega lista v Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Preverite, kdo je naveden kot upravičenec na policah in računih';
+
+  @override
+  String get lifeTaskUpdateWill => 'Napišite ali posodobite oporoko';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Dodajte fotografijo pravnomočne sodbe o razvezi v Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Zaprite ali razdelite skupne račune in spremenite skupna gesla';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Prijavite rojstvo in pridobite rojstni list';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Dodajte dojenčka v Družino, da se spremljajo njegovi dokumenti';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Avto prepišite nase v zakonskem roku';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Dodajte fotografijo kupoprodajne pogodbe v Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Upravni enoti sporočite, da ste avto prodali, in shranite dokazilo';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Odstranite naprave za cestnino, parkirne kartice in osebne stvari';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Novemu delodajalcu dajte bančne podatke in davčno številko';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Pridružite se zdravstvenemu zavarovanju in pokojnini, ki ju ponuja delodajalec';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Vrnite službene stvari, kot so prenosnik, kartica ali ključi';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Zaprosite za zadnjo plačilno listo in potrdilo o obdobju zaposlitve';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Vprašajte, kaj bo z zdravstvenim zavarovanjem in pokojnino';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Takoj se pozanimajte o nadomestilu za brezposelnost. Vloge imajo pogosto rok.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Popišite trajnike in naročnine ter ustavite, kar lahko';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Dodajte fotografije sklepa o vpisu in položnic za šolnino v Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Preverite roke za štipendije, posojila ali drugo podporo';
+
+  @override
+  String get lifeTaskRetirePension => 'Vprašajte, kako in kdaj bo izplačana pokojnina';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Uredite lastno zdravstveno zavarovanje, če službeno preneha';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Banki in FURS sporočite, da odhajate';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Dodajte fotografijo vsakega pomembnega dokumenta v Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Preverite, ali morate zamenjati vozniško dovoljenje';
+
+  @override
+  String get lifeTaskChildOwnId => 'Pomagajte mu zaprositi za lastno osebno izkaznico, če jo potrebuje';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Pomagajte mu odpreti lasten bančni račun';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Pridobite nekaj overjenih kopij mrliškega lista';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Obvestite banko, zavarovalnice in delodajalca';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Poiščite oporoko in se obrnite na izvršitelja';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Ko boste pripravljeni, izklopite opomnike za njegove zapise';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Pokličite operaterja, naj blokira kartico SIM. To ustavi goljufijo z zamenjavo SIM.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Pokličite banko, naj blokira bančništvo na telefonu';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Zaklenite ali izbrišite telefon z druge naprave';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Spremenite gesla za e-pošto in družbena omrežja';
+
+  @override
+  String get lifeTaskReportToPolice => 'Prijavite to policiji in shranite številko zadeve';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Prepričajte se, da so vsi na varnem in imajo kje bivati';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Fotografirajte škodo, preden pospravite';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Čim prej pokličite zavarovalnico';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Pošljite kopije dokumentov s Paketom dokazil';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Ugotovite, kje hrani pomembne dokumente';
+
+  @override
+  String get lifeTaskParentPermission => 'Vprašajte, ali lahko v njegovem imenu govorite z banko, zdravnikom in zavarovalnico';
+
+  @override
+  String get lifeTaskParentMedicines => 'Vodite seznam njegovih zdravil in zdravnikov';
+
+  @override
+  String get lifePlanDoClaim => 'Uveljavi zahtevek';
+
+  @override
+  String get lifePlanStatusClaimed => 'Zahtevek oddan';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Začnite do $date. Nov običajno traja približno $weeks tednov.',
+      few: 'Začnite do $date. Nov običajno traja približno $weeks tedne.',
+      two: 'Začnite do $date. Nov običajno traja približno $weeks tedna.',
+      one: 'Začnite do $date. Nov običajno traja približno $weeks teden.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Začnite zdaj. Nov običajno traja približno $weeks tednov.',
+      few: 'Začnite zdaj. Nov običajno traja približno $weeks tedne.',
+      two: 'Začnite zdaj. Nov običajno traja približno $weeks tedna.',
+      one: 'Začnite zdaj. Nov običajno traja približno $weeks teden.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Vaš načrt';
+
+  @override
+  String get lifePlanWhenHappened => 'Kdaj se je to zgodilo?';
+
+  @override
+  String get lifePlanReminderNudge => 'V vašem načrtu je še nekaj dela. Odprite ga, ko boste imeli trenutek.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'So nove kartice in dokumenti prispeli? Odprite načrt in preverite.';
+
+  @override
+  String get lifePlanDoFirst => 'Najprej naredite to';
+
+  @override
+  String get lifePlanSteps => 'Drugi koraki';
+
+  @override
+  String get lifePlanAddOwnStep => 'Dodaj svoj korak';
+
+  @override
+  String get lifePlanOwnStepHint => 'Na primer: Obvesti šolo';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Dodate lahko do 20 svojih korakov.';
+
+  @override
+  String get lifePlanReadAloud => 'Preberi na glas';
+
+  @override
+  String get lifePlanStopReading => 'Ustavi branje';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Branje na glas na tem telefonu ni na voljo.';
+
+  @override
+  String get lifePlanProofPack => 'Ustvari paket dokazil';
+
+  @override
+  String get lifePlanOpenFamily => 'Odpri Družino';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count izbrisanih zapisov šteje kot prekinjene.',
+      few: '$count izbrisani zapisi štejejo kot prekinjeni.',
+      two: '$count izbrisana zapisa štejeta kot prekinjena.',
+      one: '$count izbrisan zapis šteje kot prekinjen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Obnova teh običajno stane približno $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Se selite v nov dom? Poglejte, kaj še posodobiti.';
 }

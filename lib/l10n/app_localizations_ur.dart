@@ -6846,4 +6846,330 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'دوسرے ملک منتقل ہونے کا منصوبہ شروع کریں۔ Vaultara دکھاتا ہے کہ جانے سے پہلے کیا طے کرنا ہے۔';
+
+  @override
+  String get lifeGroupHome => 'گھر';
+
+  @override
+  String get lifeGroupFamily => 'خاندان';
+
+  @override
+  String get lifeGroupWork => 'کام اور تعلیم';
+
+  @override
+  String get lifeGroupCarTravel => 'گاڑی اور سفر';
+
+  @override
+  String get lifeGroupEmergency => 'کچھ غلط ہو گیا';
+
+  @override
+  String get lifeEventCarBuy => 'میں نے گاڑی خریدی';
+
+  @override
+  String get lifeEventCarBuyBody => 'گھر لے جانے سے پہلے انشورنس کروائیں، پھر گاڑی اپنے نام کروائیں۔';
+
+  @override
+  String get lifeEventCarSell => 'میں نے گاڑی بیچی';
+
+  @override
+  String get lifeEventCarSellBody => 'فروخت کی اطلاع لائسنس دفتر کو دیں اور گاڑی آپ کی نہ رہنے پر انشورنس منسوخ کریں۔';
+
+  @override
+  String get lifeEventJobStart => 'میں نئی نوکری شروع کر رہا ہوں';
+
+  @override
+  String get lifeEventJobStartBody => 'شروع کرنے سے پہلے اپنے اجازت نامے دیکھیں، پھر ورک کارڈ اور مراعات سیٹ کریں۔';
+
+  @override
+  String get lifeEventJobLeave => 'میں نوکری چھوڑ رہا ہوں';
+
+  @override
+  String get lifeEventJobLeaveBody => 'کام کا سامان واپس کریں اور دیکھیں کہ نوکری سے ملنے والے کور کا کیا ہوگا۔';
+
+  @override
+  String get lifeEventLostPhone => 'میرا فون گم ہو گیا یا چوری ہو گیا';
+
+  @override
+  String get lifeEventLostPhoneBody => 'جلدی کریں۔ جس کے پاس آپ کا فون اور سم کارڈ ہے وہ آپ کے بینک اور ای میل میں جا سکتا ہے۔ پہلے قدم ابھی اٹھائیں۔';
+
+  @override
+  String get lifeEventJobLoss => 'میری نوکری چلی گئی';
+
+  @override
+  String get lifeEventJobLossBody => 'یہ مشکل ہے۔ ایک ایک قدم اٹھائیں۔ کچھ دعووں کی آخری تاریخ ہوتی ہے، ان سے شروع کریں۔';
+
+  @override
+  String get lifeEventDisaster => 'گھر میں آگ، سیلاب یا چوری';
+
+  @override
+  String get lifeEventDisasterBody => 'پہلے یقینی بنائیں کہ سب محفوظ ہیں۔ پھر تصاویر لیں، انشورنس کمپنی سے رابطہ کریں اور جو کھویا اسے دوبارہ بنوائیں۔';
+
+  @override
+  String get lifeEventCaringParent => 'میں والدین میں سے کسی کی دیکھ بھال کر رہا ہوں';
+
+  @override
+  String get lifeEventCaringParentBody => 'جس کی دیکھ بھال کر رہے ہیں اسے منتخب کریں۔ ان کے دستاویزات اور کور دیکھیں، اور ضروری چیزیں قریب رکھیں۔';
+
+  @override
+  String get lifeVariantCarQuestion => 'آپ نے خریدی یا بیچی؟';
+
+  @override
+  String get lifeVariantJobQuestion => 'آپ شروع کر رہے ہیں یا چھوڑ رہے ہیں؟';
+
+  @override
+  String get lifeVariantBuy => 'خریدی';
+
+  @override
+  String get lifeVariantSell => 'بیچی';
+
+  @override
+  String get lifeVariantStart => 'شروع کر رہا ہوں';
+
+  @override
+  String get lifeVariantLeave => 'چھوڑ رہا ہوں';
+
+  @override
+  String get lifeTaskRedirectPost => 'اپنی ڈاک نئے پتے پر بھیجنے کی درخواست کریں';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'آجر، ٹیکس دفتر، ڈاکٹر اور اسکول کو نیا پتہ دیں';
+
+  @override
+  String get lifeTaskMoveUtilities => 'بجلی، پانی اور انٹرنیٹ کے اکاؤنٹ بند یا منتقل کریں';
+
+  @override
+  String get lifeTaskMeterReadings => 'گھر چھوڑنے کے دن میٹر ریڈنگ اور تصاویر لیں';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'فروخت یا منتقلی کے کاغذات کی تصویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskHandOverKeys => 'چابیاں، ریموٹ اور داخلہ ٹیگ حوالے کریں';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'پہلے اپنے نئے نام کا سرکاری ثبوت لیں۔ زیادہ تر دفاتر یہ مانگتے ہیں۔';
+
+  @override
+  String get lifeTaskTellNameChange => 'بینک، آجر، ڈاکٹر اور ٹیکس دفتر کو نئے نام کے بارے میں بتائیں';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'ای میل، فون اور آن لائن اکاؤنٹس میں اپنا نام بدلیں';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'نکاح نامے کی تصویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'دیکھیں کہ آپ کی پالیسیوں اور اکاؤنٹس میں فائدہ اٹھانے والا کون ہے';
+
+  @override
+  String get lifeTaskUpdateWill => 'وصیت لکھیں یا اپ ڈیٹ کریں';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'طلاق کے حتمی حکم کی تصویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'مشترکہ اکاؤنٹس بند یا تقسیم کریں اور مشترکہ پاس ورڈ بدلیں';
+
+  @override
+  String get lifeTaskRegisterBirth => 'پیدائش کا اندراج کریں اور پیدائش کا سرٹیفکیٹ لیں';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'بچے کے دستاویزات پر نظر رکھنے کے لیے اسے خاندان میں شامل کریں';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'قانون کی دی گئی مدت میں گاڑی اپنے نام کروائیں';
+
+  @override
+  String get lifeTaskCarSavePapers => 'فروخت کے معاہدے کی تصویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskCarNotifySale => 'لائسنس دفتر کو بتائیں کہ آپ نے گاڑی بیچ دی ہے اور ثبوت رکھیں';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'ٹول ٹیگ، پارکنگ کارڈ اور ذاتی سامان نکال لیں';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'نئے آجر کو بینک کی تفصیلات اور ٹیکس نمبر دیں';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'آجر کی پیش کردہ میڈیکل کور اور پنشن میں شامل ہوں';
+
+  @override
+  String get lifeTaskJobReturnItems => 'لیپ ٹاپ، کارڈ یا چابیوں جیسا کام کا سامان واپس کریں';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'آخری تنخواہ کی سلپ اور کام کی تاریخوں کی تصدیق کا خط مانگیں';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'پوچھیں کہ آپ کی میڈیکل کور اور پنشن کا کیا ہوگا';
+
+  @override
+  String get lifeTaskJobUnemployment => 'بے روزگاری الاؤنس کے بارے میں ابھی پوچھیں۔ دعووں کی اکثر آخری تاریخ ہوتی ہے۔';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'خودکار ادائیگیوں اور سبسکرپشنز کی فہرست بنائیں اور جو ہو سکے روکیں';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'داخلہ خط اور فیس کی تفصیلات کی تصاویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskStudyFunding => 'اسکالرشپ، قرض یا دیگر امداد کی آخری تاریخیں دیکھیں';
+
+  @override
+  String get lifeTaskRetirePension => 'پوچھیں کہ آپ کی پنشن کیسے اور کب ملے گی';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'نوکری کی کور ختم ہو تو اپنی میڈیکل کور لیں';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'بینک اور ٹیکس دفتر کو بتائیں کہ آپ جا رہے ہیں';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'ہر اہم دستاویز کی تصویر Vaultara میں شامل کریں';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'دیکھیں کہ کیا ڈرائیونگ لائسنس بدلنا ہوگا';
+
+  @override
+  String get lifeTaskChildOwnId => 'ضرورت ہو تو اپنے شناختی کارڈ کے لیے درخواست دینے میں مدد کریں';
+
+  @override
+  String get lifeTaskChildBankAccount => 'اپنا بینک اکاؤنٹ کھولنے میں مدد کریں';
+
+  @override
+  String get lifeTaskDeathCertificates => 'ڈیتھ سرٹیفکیٹ کی چند تصدیق شدہ کاپیاں لیں';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'بینک، انشورنس کمپنیوں اور آجر کو اطلاع دیں';
+
+  @override
+  String get lifeTaskDeathFindWill => 'وصیت تلاش کریں اور وصی سے رابطہ کریں';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'جب آپ تیار ہوں، ان کے ریکارڈز کی یاد دہانیاں بند کریں';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'سم کارڈ بلاک کروانے کے لیے اپنے نیٹ ورک کو فون کریں۔ اس سے سم سواپ فراڈ رکتا ہے۔';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'فون پر بینکنگ بلاک کروانے کے لیے بینک کو فون کریں';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'کسی دوسرے آلے سے فون لاک یا صاف کریں';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'ای میل اور سوشل میڈیا کے پاس ورڈ بدلیں';
+
+  @override
+  String get lifeTaskReportToPolice => 'پولیس میں رپورٹ کریں اور کیس نمبر رکھیں';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'یقینی بنائیں کہ سب محفوظ ہیں اور رہنے کی جگہ ہے';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'صفائی سے پہلے نقصان کی تصاویر لیں';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'جتنی جلدی ہو سکے انشورنس کمپنی سے رابطہ کریں';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'ثبوت کا پیک سے اپنے دستاویزات کی کاپیاں بھیجیں';
+
+  @override
+  String get lifeTaskParentFindPapers => 'معلوم کریں کہ ان کے اہم کاغذات کہاں رکھے ہیں';
+
+  @override
+  String get lifeTaskParentPermission => 'پوچھیں کہ کیا آپ ان کی طرف سے بینک، ڈاکٹر اور انشورنس کمپنی سے بات کر سکتے ہیں';
+
+  @override
+  String get lifeTaskParentMedicines => 'ان کی دواؤں اور ڈاکٹروں کی فہرست رکھیں';
+
+  @override
+  String get lifePlanDoClaim => 'دعویٰ کریں';
+
+  @override
+  String get lifePlanStatusClaimed => 'دعویٰ کیا گیا';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '$date تک شروع کریں۔ نیا عام طور پر تقریباً $weeks ہفتے لیتا ہے۔',
+      one: '$date تک شروع کریں۔ نیا عام طور پر تقریباً $weeks ہفتہ لیتا ہے۔',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'ابھی شروع کریں۔ نیا عام طور پر تقریباً $weeks ہفتے لیتا ہے۔',
+      one: 'ابھی شروع کریں۔ نیا عام طور پر تقریباً $weeks ہفتہ لیتا ہے۔',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'آپ کا منصوبہ';
+
+  @override
+  String get lifePlanWhenHappened => 'یہ کب ہوا؟';
+
+  @override
+  String get lifePlanReminderNudge => 'آپ کے منصوبے میں ابھی کام باقی ہیں۔ وقت ملے تو کھولیں۔';
+
+  @override
+  String get lifePlanReminderCheckIn => 'کیا آپ کے نئے کارڈ اور دستاویزات آ گئے؟ دیکھنے کے لیے منصوبہ کھولیں۔';
+
+  @override
+  String get lifePlanDoFirst => 'پہلے یہ کریں';
+
+  @override
+  String get lifePlanSteps => 'دیگر قدم';
+
+  @override
+  String get lifePlanAddOwnStep => 'اپنا قدم شامل کریں';
+
+  @override
+  String get lifePlanOwnStepHint => 'مثلاً: اسکول کو بتائیں';
+
+  @override
+  String get lifePlanOwnStepLimit => 'آپ اپنے 20 تک قدم شامل کر سکتے ہیں۔';
+
+  @override
+  String get lifePlanReadAloud => 'بلند آواز سے پڑھیں';
+
+  @override
+  String get lifePlanStopReading => 'پڑھنا روکیں';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'اس فون پر بلند آواز سے پڑھنے کی سہولت دستیاب نہیں۔';
+
+  @override
+  String get lifePlanProofPack => 'ثبوت کا پیک بنائیں';
+
+  @override
+  String get lifePlanOpenFamily => 'خاندان کھولیں';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'آپ کے حذف کیے گئے $count ریکارڈ منسوخ شمار ہوتے ہیں۔',
+      one: 'آپ کا حذف کیا گیا $count ریکارڈ منسوخ شمار ہوتا ہے۔',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'انہیں تجدید کرنے پر عام طور پر تقریباً $amount لگتے ہیں۔';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'نئے گھر جا رہے ہیں؟ دیکھیں اور کیا اپ ڈیٹ کرنا ہے۔';
 }

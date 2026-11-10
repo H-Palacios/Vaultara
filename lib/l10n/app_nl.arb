@@ -2149,5 +2149,136 @@
   "lifePlanReminderAfter": "Er moet nog iets gebeuren. Open het plan om het af te ronden.",
   "lifePlanSuggestCar": "Een auto gekocht of verkocht? Bekijk wat je nog meer moet bijwerken.",
   "lifePlanSuggestTrip": "Ga je daar een tijd wonen?",
-  "lifePlanSuggestTripBody": "Start een plan voor een verhuizing naar een ander land. Vaultara laat zien wat je moet regelen voordat je gaat."
+  "lifePlanSuggestTripBody": "Start een plan voor een verhuizing naar een ander land. Vaultara laat zien wat je moet regelen voordat je gaat.",
+  "lifeGroupHome": "Thuis",
+  "lifeGroupFamily": "Gezin",
+  "lifeGroupWork": "Werk en studie",
+  "lifeGroupCarTravel": "Auto en reizen",
+  "lifeGroupEmergency": "Er is iets gebeurd",
+  "lifeEventCarBuy": "Ik heb een auto gekocht",
+  "lifeEventCarBuyBody": "Verzeker de auto voordat je hem naar huis rijdt en zet hem daarna op je naam.",
+  "lifeEventCarSell": "Ik heb een auto verkocht",
+  "lifeEventCarSellBody": "Meld de verkoop bij de RDW en zeg de verzekering op zodra de auto niet meer van jou is.",
+  "lifeEventJobStart": "Ik begin aan een nieuwe baan",
+  "lifeEventJobStartBody": "Controleer je vergunningen voordat je begint en regel daarna je pasje en arbeidsvoorwaarden.",
+  "lifeEventJobLeave": "Ik stop met mijn baan",
+  "lifeEventJobLeaveBody": "Lever werkspullen in en kijk wat er gebeurt met de verzekeringen via je werk.",
+  "lifeEventLostPhone": "Mijn telefoon is kwijt of gestolen",
+  "lifeEventLostPhoneBody": "Wees snel. Wie je telefoon en simkaart heeft, kan in je bank en e-mail komen. Doe de eerste stappen meteen.",
+  "lifeEventJobLoss": "Ik ben mijn baan kwijt",
+  "lifeEventJobLossBody": "Dit is zwaar. Doe het stap voor stap. Sommige aanvragen hebben een termijn, dus begin daarmee.",
+  "lifeEventDisaster": "Brand, overstroming of inbraak thuis",
+  "lifeEventDisasterBody": "Zorg eerst dat iedereen veilig is. Maak daarna foto's, neem contact op met je verzekeraar en vervang wat verloren is.",
+  "lifeEventCaringParent": "Ik zorg voor een ouder",
+  "lifeEventCaringParentBody": "Kies de persoon voor wie je zorgt. Controleer hun documenten en verzekeringen en houd bij de hand wat je nodig hebt.",
+  "lifeVariantCarQuestion": "Heb je gekocht of verkocht?",
+  "lifeVariantJobQuestion": "Begin je of stop je?",
+  "lifeVariantBuy": "Gekocht",
+  "lifeVariantSell": "Verkocht",
+  "lifeVariantStart": "Beginnen",
+  "lifeVariantLeave": "Stoppen",
+  "lifeTaskRedirectPost": "Laat je post doorsturen naar je nieuwe adres",
+  "lifeTaskNewAddressEveryone": "Geef je nieuwe adres door aan werkgever, Belastingdienst, huisarts en school",
+  "lifeTaskMoveUtilities": "Zeg stroom, water en internet op of verhuis ze mee",
+  "lifeTaskMeterReadings": "Noteer de meterstanden en maak foto's op de dag dat je vertrekt",
+  "lifeTaskSaveHomePapers": "Voeg een foto van de koop- of leveringsakte toe aan Vaultara",
+  "lifeTaskHandOverKeys": "Lever sleutels, afstandsbedieningen en toegangspassen in",
+  "lifeTaskOfficialNameProof": "Regel eerst officieel bewijs van je nieuwe naam. De meeste instanties vragen erom.",
+  "lifeTaskTellNameChange": "Geef je nieuwe naam door aan bank, werkgever, huisarts en Belastingdienst",
+  "lifeTaskUpdateOnlineAccounts": "Wijzig je naam bij e-mail, telefoon en online accounts",
+  "lifeTaskSaveMarriageCertificate": "Voeg een foto van de huwelijksakte toe aan Vaultara",
+  "lifeTaskCheckBeneficiaries": "Controleer wie als begunstigde op je polissen en rekeningen staat",
+  "lifeTaskUpdateWill": "Maak of wijzig een testament",
+  "lifeTaskSaveDivorceOrder": "Voeg een foto van de definitieve echtscheidingsbeschikking toe aan Vaultara",
+  "lifeTaskSplitSharedAccounts": "Sluit of verdeel gezamenlijke rekeningen en wijzig gedeelde wachtwoorden",
+  "lifeTaskRegisterBirth": "Doe aangifte van de geboorte en vraag de geboorteakte aan",
+  "lifeTaskAddBabyToFamily": "Voeg de baby toe aan Gezin zodat de documenten worden bijgehouden",
+  "lifeTaskCarRegisterInName": "Zet de auto op je naam binnen de wettelijke termijn",
+  "lifeTaskCarSavePapers": "Voeg een foto van het koopcontract toe aan Vaultara",
+  "lifeTaskCarNotifySale": "Meld bij de RDW dat je de auto hebt verkocht en bewaar het bewijs",
+  "lifeTaskCarRemoveTags": "Haal tolbadges, parkeerpassen en persoonlijke spullen eruit",
+  "lifeTaskJobGiveDetails": "Geef je nieuwe werkgever je rekeningnummer en BSN",
+  "lifeTaskJobJoinBenefits": "Meld je aan voor de zorgverzekering en het pensioen van je werkgever",
+  "lifeTaskJobReturnItems": "Lever werkspullen in, zoals laptop, pasje of sleutels",
+  "lifeTaskJobLastPayslip": "Vraag je laatste loonstrook en een werkgeversverklaring met je werkdata",
+  "lifeTaskJobAskBenefits": "Vraag wat er gebeurt met je zorgverzekering en pensioen",
+  "lifeTaskJobUnemployment": "Vraag nu naar een WW-uitkering. Aanvragen hebben vaak een termijn.",
+  "lifeTaskJobPauseDebits": "Zet je automatische incasso's en abonnementen op een rij en pauzeer wat kan",
+  "lifeTaskStudySaveLetters": "Voeg foto's van je toelatingsbrief en collegegeldoverzichten toe aan Vaultara",
+  "lifeTaskStudyFunding": "Controleer de deadlines voor beurzen, leningen of andere steun",
+  "lifeTaskRetirePension": "Vraag hoe en wanneer je pensioen wordt uitbetaald",
+  "lifeTaskRetireOwnCover": "Regel je eigen zorgverzekering als die via je werk stopt",
+  "lifeTaskCountryTellBankTax": "Laat je bank en de Belastingdienst weten dat je vertrekt",
+  "lifeTaskCountryScanCopies": "Voeg een foto van elk belangrijk document toe aan Vaultara",
+  "lifeTaskCountryLicenceRules": "Controleer of je je rijbewijs moet omwisselen",
+  "lifeTaskChildOwnId": "Help bij het aanvragen van een eigen ID-kaart als dat nodig is",
+  "lifeTaskChildBankAccount": "Help bij het openen van een eigen bankrekening",
+  "lifeTaskDeathCertificates": "Vraag een paar gewaarmerkte kopieën van de overlijdensakte aan",
+  "lifeTaskDeathTellOrganisations": "Laat de bank, verzekeraars en werkgever het weten",
+  "lifeTaskDeathFindWill": "Zoek het testament en neem contact op met de executeur",
+  "lifeTaskDeathStopReminders": "Zet herinneringen voor hun gegevens uit wanneer je er klaar voor bent",
+  "lifeTaskPhoneBlockSim": "Bel je provider om de simkaart te blokkeren. Dat stopt simkaartfraude.",
+  "lifeTaskPhoneBlockBanking": "Bel je bank om bankieren op de telefoon te blokkeren",
+  "lifeTaskPhoneLockErase": "Vergrendel of wis de telefoon vanaf een ander apparaat",
+  "lifeTaskPhoneChangePasswords": "Wijzig je wachtwoorden voor e-mail en sociale media",
+  "lifeTaskReportToPolice": "Doe aangifte bij de politie en bewaar het zaaknummer",
+  "lifeTaskDisasterSafePlace": "Zorg dat iedereen veilig is en ergens kan verblijven",
+  "lifeTaskDisasterPhotos": "Maak foto's van de schade voordat je opruimt",
+  "lifeTaskDisasterContactInsurer": "Neem zo snel mogelijk contact op met je verzekeraar",
+  "lifeTaskDisasterProofPack": "Stuur kopieën van je documenten met het Bewijspakket",
+  "lifeTaskParentFindPapers": "Zoek uit waar hun belangrijke papieren liggen",
+  "lifeTaskParentPermission": "Vraag of je namens hen met bank, arts en verzekeraar mag praten",
+  "lifeTaskParentMedicines": "Houd een lijst bij van hun medicijnen en artsen",
+  "lifePlanDoClaim": "Claim indienen",
+  "lifePlanStatusClaimed": "Geclaimd",
+  "lifePlanStartBy": "{weeks, plural, =1{Begin vóór {date}. Een nieuwe duurt meestal ongeveer een week.} other{Begin vóór {date}. Een nieuwe duurt meestal ongeveer {weeks} weken.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Begin nu. Een nieuwe duurt meestal ongeveer een week.} other{Begin nu. Een nieuwe duurt meestal ongeveer {weeks} weken.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Je plan",
+  "lifePlanWhenHappened": "Wanneer is het gebeurd?",
+  "lifePlanReminderNudge": "Je plan heeft nog dingen te doen. Open het als je even tijd hebt.",
+  "lifePlanReminderCheckIn": "Zijn je nieuwe passen en documenten binnen? Open het plan om te controleren.",
+  "lifePlanDoFirst": "Doe dit eerst",
+  "lifePlanSteps": "Andere stappen",
+  "lifePlanAddOwnStep": "Eigen stap toevoegen",
+  "lifePlanOwnStepHint": "Bijvoorbeeld: School inlichten",
+  "lifePlanOwnStepLimit": "Je kunt tot 20 eigen stappen toevoegen.",
+  "lifePlanReadAloud": "Voorlezen",
+  "lifePlanStopReading": "Stoppen met voorlezen",
+  "lifePlanReadAloudUnavailable": "Voorlezen is niet beschikbaar op deze telefoon.",
+  "lifePlanProofPack": "Bewijspakket maken",
+  "lifePlanOpenFamily": "Gezin openen",
+  "lifePlanRemoved": "{count, plural, =1{1 verwijderd gegeven telt als opgezegd.} other{{count} verwijderde gegevens tellen als opgezegd.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Vernieuwen kost meestal ongeveer {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ga je verhuizen? Bekijk wat je nog meer moet bijwerken."
 }

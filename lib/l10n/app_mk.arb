@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "Сè уште има што да се направи. Отворете го планот за да го завршите.",
   "lifePlanSuggestCar": "Купивте или продадовте автомобил? Видете што уште да ажурирате.",
   "lifePlanSuggestTrip": "Се селите таму на некое време?",
-  "lifePlanSuggestTripBody": "Започнете план за преселба во друга земја. Vaultara покажува што да средите пред заминување."
+  "lifePlanSuggestTripBody": "Започнете план за преселба во друга земја. Vaultara покажува што да средите пред заминување.",
+  "lifeGroupHome": "Дом",
+  "lifeGroupFamily": "Семејство",
+  "lifeGroupWork": "Работа и студии",
+  "lifeGroupCarTravel": "Автомобил и патувања",
+  "lifeGroupEmergency": "Нешто тргна наопаку",
+  "lifeEventCarBuy": "Купив автомобил",
+  "lifeEventCarBuyBody": "Осигурајте го пред да го возите дома, а потоа префрлете го автомобилот на ваше име.",
+  "lifeEventCarSell": "Продадов автомобил",
+  "lifeEventCarSellBody": "Пријавете ја продажбата во канцеларијата за регистрација и откажете го осигурувањето кога автомобилот веќе не е ваш.",
+  "lifeEventJobStart": "Почнувам нова работа",
+  "lifeEventJobStartBody": "Проверете ги дозволите пред да почнете, а потоа средете ја службената картичка и бенефициите.",
+  "lifeEventJobLeave": "Заминувам од работа",
+  "lifeEventJobLeaveBody": "Вратете ги службените предмети и проверете што ќе биде со осигурувањето што ви го даваше работата.",
+  "lifeEventLostPhone": "Го изгубив телефонот или ми беше украден",
+  "lifeEventLostPhoneBody": "Дејствувајте брзо. Кој го има вашиот телефон и SIM-картичка може да влезе во вашата банка и е-пошта. Направете ги првите чекори веднаш.",
+  "lifeEventJobLoss": "Ја изгубив работата",
+  "lifeEventJobLossBody": "Ова е тешко. Одете чекор по чекор. Некои барања имаат рок, па почнете со нив.",
+  "lifeEventDisaster": "Пожар, поплава или кражба дома",
+  "lifeEventDisasterBody": "Прво проверете дали сите се безбедни. Потоа фотографирајте, јавете се на осигурителот и заменете го изгубеното.",
+  "lifeEventCaringParent": "Се грижам за родител",
+  "lifeEventCaringParentBody": "Изберете ја личноста за која се грижите. Проверете ги нејзините документи и осигурување и чувајте го потребното при рака.",
+  "lifeVariantCarQuestion": "Купивте или продадовте?",
+  "lifeVariantJobQuestion": "Почнувате или заминувате?",
+  "lifeVariantBuy": "Купив",
+  "lifeVariantSell": "Продадов",
+  "lifeVariantStart": "Почнувам",
+  "lifeVariantLeave": "Заминувам",
+  "lifeTaskRedirectPost": "Побарајте поштата да се праќа на новата адреса",
+  "lifeTaskNewAddressEveryone": "Дајте ја новата адреса на работодавачот, УЈП, лекарот и училиштето",
+  "lifeTaskMoveUtilities": "Откажете или префрлете ги сметките за струја, вода и интернет",
+  "lifeTaskMeterReadings": "На денот на иселување запишете ги броилата и фотографирајте",
+  "lifeTaskSaveHomePapers": "Додајте фотографија од документите за продажба или пренос во Vaultara",
+  "lifeTaskHandOverKeys": "Предадете ги клучевите, далечинските и картичките за пристап",
+  "lifeTaskOfficialNameProof": "Прво обезбедете официјален доказ за новото име. Повеќето служби го бараат.",
+  "lifeTaskTellNameChange": "Известете ги банката, работодавачот, лекарот и УЈП за новото име",
+  "lifeTaskUpdateOnlineAccounts": "Сменете го името во е-поштата, телефонот и онлајн профилите",
+  "lifeTaskSaveMarriageCertificate": "Додајте фотографија од венчаниот лист во Vaultara",
+  "lifeTaskCheckBeneficiaries": "Проверете кој е наведен како корисник во полисите и сметките",
+  "lifeTaskUpdateWill": "Направете или ажурирајте тестамент",
+  "lifeTaskSaveDivorceOrder": "Додајте фотографија од конечната пресуда за развод во Vaultara",
+  "lifeTaskSplitSharedAccounts": "Затворете или поделете ги заедничките сметки и сменете ги заедничките лозинки",
+  "lifeTaskRegisterBirth": "Пријавете го раѓањето и земете извод од матичната книга на родените",
+  "lifeTaskAddBabyToFamily": "Додајте го бебето во Семејство за да се следат неговите документи",
+  "lifeTaskCarRegisterInName": "Префрлете го автомобилот на ваше име во законскиот рок",
+  "lifeTaskCarSavePapers": "Додајте фотографија од договорот за продажба во Vaultara",
+  "lifeTaskCarNotifySale": "Известете ја канцеларијата за регистрација дека го продадовте автомобилот и чувајте доказ",
+  "lifeTaskCarRemoveTags": "Извадете ги уредите за патарина, картичките за паркинг и личните работи",
+  "lifeTaskJobGiveDetails": "Дајте му ги на новиот работодавач банкарските податоци и даночниот број",
+  "lifeTaskJobJoinBenefits": "Зачленете се во здравственото осигурување и пензијата што ги нуди работодавачот",
+  "lifeTaskJobReturnItems": "Вратете ги службените предмети како лаптоп, картичка или клучеви",
+  "lifeTaskJobLastPayslip": "Побарајте последен платен лист и потврда за периодот на работа",
+  "lifeTaskJobAskBenefits": "Прашајте што ќе биде со здравственото осигурување и пензијата",
+  "lifeTaskJobUnemployment": "Распрашајте се веднаш за надомест за невработеност. Барањата често имаат рок.",
+  "lifeTaskJobPauseDebits": "Направете список на трајни налози и претплати и паузирајте што можете",
+  "lifeTaskStudySaveLetters": "Додајте фотографии од писмото за прием и изводите за школарина во Vaultara",
+  "lifeTaskStudyFunding": "Проверете ги роковите за стипендии, кредити или друга поддршка",
+  "lifeTaskRetirePension": "Прашајте како и кога ќе се исплаќа пензијата",
+  "lifeTaskRetireOwnCover": "Средете сопствено здравствено осигурување ако она од работата престане",
+  "lifeTaskCountryTellBankTax": "Известете ги банката и УЈП дека заминувате",
+  "lifeTaskCountryScanCopies": "Додајте фотографија од секој важен документ во Vaultara",
+  "lifeTaskCountryLicenceRules": "Проверете дали треба да ја замените возачката дозвола",
+  "lifeTaskChildOwnId": "Помогнете му да поднесе барање за сопствена лична карта ако му треба",
+  "lifeTaskChildBankAccount": "Помогнете му да отвори сопствена банкарска сметка",
+  "lifeTaskDeathCertificates": "Земете неколку заверени копии од изводот за смрт",
+  "lifeTaskDeathTellOrganisations": "Известете ги банката, осигурителите и работодавачот",
+  "lifeTaskDeathFindWill": "Најдете го тестаментот и јавете се на извршителот",
+  "lifeTaskDeathStopReminders": "Кога ќе бидете подготвени, исклучете ги потсетниците за неговите записи",
+  "lifeTaskPhoneBlockSim": "Јавете се на операторот да ја блокира SIM-картичката. Тоа ја спречува измамата со замена на SIM.",
+  "lifeTaskPhoneBlockBanking": "Јавете се во банката да го блокира банкарството на телефонот",
+  "lifeTaskPhoneLockErase": "Заклучете го или избришете го телефонот од друг уред",
+  "lifeTaskPhoneChangePasswords": "Сменете ги лозинките за е-пошта и социјални мрежи",
+  "lifeTaskReportToPolice": "Пријавете во полиција и чувајте го бројот на предметот",
+  "lifeTaskDisasterSafePlace": "Проверете дали сите се безбедни и имаат каде да престојуваат",
+  "lifeTaskDisasterPhotos": "Фотографирајте ја штетата пред да расчистите",
+  "lifeTaskDisasterContactInsurer": "Јавете се на осигурителот што е можно поскоро",
+  "lifeTaskDisasterProofPack": "Испратете копии од документите со Пакет со докази",
+  "lifeTaskParentFindPapers": "Дознајте каде се чуваат неговите важни документи",
+  "lifeTaskParentPermission": "Прашајте дали може да зборувате во негово име со банката, лекарот и осигурителот",
+  "lifeTaskParentMedicines": "Чувајте список на неговите лекови и лекари",
+  "lifePlanDoClaim": "Поднесете барање",
+  "lifePlanStatusClaimed": "Барањето е поднесено",
+  "lifePlanStartBy": "{weeks, plural, one{Почнете до {date}. Нов обично трае околу {weeks} недела.} other{Почнете до {date}. Нов обично трае околу {weeks} недели.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Почнете сега. Нов обично трае околу {weeks} недела.} other{Почнете сега. Нов обично трае околу {weeks} недели.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Вашиот план",
+  "lifePlanWhenHappened": "Кога се случи?",
+  "lifePlanReminderNudge": "Во вашиот план има уште работа. Отворете го кога ќе имате момент.",
+  "lifePlanReminderCheckIn": "Дали пристигнаа новите картички и документи? Отворете го планот за да проверите.",
+  "lifePlanDoFirst": "Прво направете го ова",
+  "lifePlanSteps": "Други чекори",
+  "lifePlanAddOwnStep": "Додајте свој чекор",
+  "lifePlanOwnStepHint": "На пример: Известете го училиштето",
+  "lifePlanOwnStepLimit": "Може да додадете до 20 свои чекори.",
+  "lifePlanReadAloud": "Прочитај на глас",
+  "lifePlanStopReading": "Запри читање",
+  "lifePlanReadAloudUnavailable": "Читањето на глас не е достапно на овој телефон.",
+  "lifePlanProofPack": "Направете пакет со докази",
+  "lifePlanOpenFamily": "Отвори Семејство",
+  "lifePlanRemoved": "{count, plural, one{{count} запис што го избришавте се смета за откажан.} other{{count} записи што ги избришавте се сметаат за откажани.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Обновувањето на овие обично чини околу {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Се селите во нов дом? Видете што уште треба да ажурирате."
 }

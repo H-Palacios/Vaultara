@@ -2167,5 +2167,136 @@
   "lifePlanReminderAfter": "ຍັງມີບາງສິ່ງເຫຼືອ. ເປີດແຜນເພື່ອເຮັດໃຫ້ແລ້ວ.",
   "lifePlanSuggestCar": "ຊື້ ຫຼື ຂາຍລົດ? ເບິ່ງວ່າຕ້ອງອັບເດດຫຍັງອີກ.",
   "lifePlanSuggestTrip": "ຍ້າຍໄປຢູ່ທີ່ນັ້ນຊົ່ວໄລຍະໜຶ່ງບໍ?",
-  "lifePlanSuggestTripBody": "ເລີ່ມແຜນຍ້າຍໄປປະເທດອື່ນ. Vaultara ສະແດງສິ່ງທີ່ຕ້ອງຈັດການກ່ອນທ່ານອອກເດີນທາງ."
+  "lifePlanSuggestTripBody": "ເລີ່ມແຜນຍ້າຍໄປປະເທດອື່ນ. Vaultara ສະແດງສິ່ງທີ່ຕ້ອງຈັດການກ່ອນທ່ານອອກເດີນທາງ.",
+  "lifeGroupHome": "ເຮືອນ",
+  "lifeGroupFamily": "ຄອບຄົວ",
+  "lifeGroupWork": "ວຽກ ແລະ ການຮຽນ",
+  "lifeGroupCarTravel": "ລົດ ແລະ ການເດີນທາງ",
+  "lifeGroupEmergency": "ມີບັນຫາເກີດຂຶ້ນ",
+  "lifeEventCarBuy": "ຂ້ອຍຊື້ລົດ",
+  "lifeEventCarBuyBody": "ຊື້ປະກັນໄພກ່ອນຂັບກັບເຮືອນ, ແລ້ວໂອນລົດມາເປັນຊື່ຂອງທ່ານ.",
+  "lifeEventCarSell": "ຂ້ອຍຂາຍລົດ",
+  "lifeEventCarSellBody": "ແຈ້ງການຂາຍໃຫ້ຫ້ອງການທະບຽນ ແລະ ຍົກເລີກປະກັນໄພເມື່ອລົດບໍ່ແມ່ນຂອງທ່ານແລ້ວ.",
+  "lifeEventJobStart": "ຂ້ອຍເລີ່ມວຽກໃໝ່",
+  "lifeEventJobStartBody": "ກວດໃບອະນຸຍາດກ່ອນເລີ່ມ, ແລ້ວຕັ້ງບັດພະນັກງານ ແລະ ສະຫວັດດີການ.",
+  "lifeEventJobLeave": "ຂ້ອຍອອກຈາກວຽກ",
+  "lifeEventJobLeaveBody": "ສົ່ງເຄື່ອງຂອງວຽກຄືນ ແລະ ກວດເບິ່ງວ່າປະກັນທີ່ວຽກໃຫ້ຈະເປັນແນວໃດ.",
+  "lifeEventLostPhone": "ໂທລະສັບຂ້ອຍເສຍ ຫຼື ຖືກລັກ",
+  "lifeEventLostPhoneBody": "ເຮັດໄວໆ. ຄົນທີ່ມີໂທລະສັບ ແລະ ຊິມກາດຂອງທ່ານສາມາດເຂົ້າທະນາຄານ ແລະ ອີເມວຂອງທ່ານໄດ້. ເຮັດຂັ້ນຕອນທຳອິດດຽວນີ້.",
+  "lifeEventJobLoss": "ຂ້ອຍເສຍວຽກ",
+  "lifeEventJobLossBody": "ນີ້ຍາກ. ເຮັດເທື່ອລະຂັ້ນ. ບາງຄຳຮ້ອງມີກຳນົດເວລາ, ສະນັ້ນເລີ່ມຈາກອັນນັ້ນ.",
+  "lifeEventDisaster": "ໄຟໄໝ້, ນ້ຳຖ້ວມ ຫຼື ຖືກລັກທີ່ເຮືອນ",
+  "lifeEventDisasterBody": "ກ່ອນອື່ນໝົດໃຫ້ແນ່ໃຈວ່າທຸກຄົນປອດໄພ. ແລ້ວຖ່າຍຮູບ, ຕິດຕໍ່ບໍລິສັດປະກັນໄພ ແລະ ເຮັດສິ່ງທີ່ເສຍໄປຄືນໃໝ່.",
+  "lifeEventCaringParent": "ຂ້ອຍກຳລັງເບິ່ງແຍງພໍ່ ຫຼື ແມ່",
+  "lifeEventCaringParentBody": "ເລືອກຄົນທີ່ທ່ານເບິ່ງແຍງ. ກວດເອກະສານ ແລະ ປະກັນຂອງເຂົາ, ແລະ ເກັບສິ່ງທີ່ຕ້ອງການໄວ້ໃກ້ໂຕ.",
+  "lifeVariantCarQuestion": "ທ່ານຊື້ ຫຼື ຂາຍ?",
+  "lifeVariantJobQuestion": "ທ່ານເລີ່ມ ຫຼື ອອກ?",
+  "lifeVariantBuy": "ຊື້",
+  "lifeVariantSell": "ຂາຍ",
+  "lifeVariantStart": "ເລີ່ມ",
+  "lifeVariantLeave": "ອອກ",
+  "lifeTaskRedirectPost": "ຂໍໃຫ້ສົ່ງຈົດໝາຍໄປທີ່ຢູ່ໃໝ່",
+  "lifeTaskNewAddressEveryone": "ໃຫ້ທີ່ຢູ່ໃໝ່ແກ່ນາຍຈ້າງ, ຫ້ອງການພາສີ, ທ່ານໝໍ ແລະ ໂຮງຮຽນ",
+  "lifeTaskMoveUtilities": "ປິດ ຫຼື ຍ້າຍບັນຊີໄຟຟ້າ, ນ້ຳປະປາ ແລະ ອິນເຕີເນັດ",
+  "lifeTaskMeterReadings": "ຈົດເລກມິເຕີ ແລະ ຖ່າຍຮູບໃນມື້ທີ່ຍ້າຍອອກ",
+  "lifeTaskSaveHomePapers": "ເພີ່ມຮູບເອກະສານການຂາຍ ຫຼື ການໂອນໃສ່ Vaultara",
+  "lifeTaskHandOverKeys": "ມອບກະແຈ, ຣີໂໝດ ແລະ ບັດເຂົ້າອອກ",
+  "lifeTaskOfficialNameProof": "ເອົາຫຼັກຖານທາງການຂອງຊື່ໃໝ່ກ່ອນ. ຫ້ອງການສ່ວນຫຼາຍຂໍມັນ.",
+  "lifeTaskTellNameChange": "ບອກທະນາຄານ, ນາຍຈ້າງ, ທ່ານໝໍ ແລະ ຫ້ອງການພາສີກ່ຽວກັບຊື່ໃໝ່",
+  "lifeTaskUpdateOnlineAccounts": "ປ່ຽນຊື່ໃນອີເມວ, ໂທລະສັບ ແລະ ບັນຊີອອນລາຍ",
+  "lifeTaskSaveMarriageCertificate": "ເພີ່ມຮູບໃບທະບຽນສົມລົດໃສ່ Vaultara",
+  "lifeTaskCheckBeneficiaries": "ກວດເບິ່ງວ່າໃຜເປັນຜູ້ຮັບຜົນປະໂຫຍດໃນກົມທັນ ແລະ ບັນຊີຂອງທ່ານ",
+  "lifeTaskUpdateWill": "ເຮັດ ຫຼື ອັບເດດພິໄນກຳ",
+  "lifeTaskSaveDivorceOrder": "ເພີ່ມຮູບຄຳຕັດສິນຢ່າຮ້າງສຸດທ້າຍໃສ່ Vaultara",
+  "lifeTaskSplitSharedAccounts": "ປິດ ຫຼື ແບ່ງບັນຊີຮ່ວມ ແລະ ປ່ຽນລະຫັດຜ່ານຮ່ວມ",
+  "lifeTaskRegisterBirth": "ແຈ້ງເກີດ ແລະ ເອົາໃບແຈ້ງເກີດ",
+  "lifeTaskAddBabyToFamily": "ເພີ່ມລູກນ້ອຍໃນຄອບຄົວ ເພື່ອຕິດຕາມເອກະສານ",
+  "lifeTaskCarRegisterInName": "ໂອນລົດເປັນຊື່ຂອງທ່ານພາຍໃນເວລາທີ່ກົດໝາຍກຳນົດ",
+  "lifeTaskCarSavePapers": "ເພີ່ມຮູບສັນຍາຊື້ຂາຍໃສ່ Vaultara",
+  "lifeTaskCarNotifySale": "ບອກຫ້ອງການທະບຽນວ່າທ່ານຂາຍລົດແລ້ວ ແລະ ເກັບຫຼັກຖານໄວ້",
+  "lifeTaskCarRemoveTags": "ເອົາແທັກທາງດ່ວນ, ບັດຈອດລົດ ແລະ ເຄື່ອງສ່ວນໂຕອອກ",
+  "lifeTaskJobGiveDetails": "ໃຫ້ຂໍ້ມູນທະນາຄານ ແລະ ເລກພາສີແກ່ນາຍຈ້າງໃໝ່",
+  "lifeTaskJobJoinBenefits": "ເຂົ້າຮ່ວມປະກັນສຸຂະພາບ ແລະ ບຳນານທີ່ນາຍຈ້າງສະເໜີ",
+  "lifeTaskJobReturnItems": "ສົ່ງເຄື່ອງຂອງວຽກຄືນ ເຊັ່ນ ແລັບທັອບ, ບັດ ຫຼື ກະແຈ",
+  "lifeTaskJobLastPayslip": "ຂໍໃບເງິນເດືອນສຸດທ້າຍ ແລະ ໃບຢັ້ງຢືນວັນທີເຮັດວຽກ",
+  "lifeTaskJobAskBenefits": "ຖາມວ່າປະກັນສຸຂະພາບ ແລະ ບຳນານຂອງທ່ານຈະເປັນແນວໃດ",
+  "lifeTaskJobUnemployment": "ຖາມກ່ຽວກັບເງິນຊ່ວຍເຫຼືອຄົນຫວ່າງງານດຽວນີ້. ຄຳຮ້ອງມັກມີກຳນົດເວລາ.",
+  "lifeTaskJobPauseDebits": "ລາຍການການຫັກເງິນອັດຕະໂນມັດ ແລະ ການສະໝັກສະມາຊິກ, ແລ້ວຢຸດສິ່ງທີ່ຢຸດໄດ້",
+  "lifeTaskStudySaveLetters": "ເພີ່ມຮູບຈົດໝາຍຕອບຮັບ ແລະ ໃບແຈ້ງຄ່າຮຽນໃສ່ Vaultara",
+  "lifeTaskStudyFunding": "ກວດກຳນົດເວລາທຶນການສຶກສາ, ເງິນກູ້ ຫຼື ການຊ່ວຍເຫຼືອອື່ນ",
+  "lifeTaskRetirePension": "ຖາມວ່າບຳນານຈະຈ່າຍແນວໃດ ແລະ ເມື່ອໃດ",
+  "lifeTaskRetireOwnCover": "ຈັດຫາປະກັນສຸຂະພາບເອງ ຖ້າປະກັນຈາກວຽກໝົດ",
+  "lifeTaskCountryTellBankTax": "ບອກທະນາຄານ ແລະ ຫ້ອງການພາສີວ່າທ່ານຈະອອກໄປ",
+  "lifeTaskCountryScanCopies": "ເພີ່ມຮູບເອກະສານສຳຄັນທຸກອັນໃສ່ Vaultara",
+  "lifeTaskCountryLicenceRules": "ກວດເບິ່ງວ່າຕ້ອງປ່ຽນໃບຂັບຂີ່ຫຼືບໍ່",
+  "lifeTaskChildOwnId": "ຊ່ວຍເຂົາຂໍບັດປະຈຳໂຕຂອງໂຕເອງ ຖ້າຕ້ອງການ",
+  "lifeTaskChildBankAccount": "ຊ່ວຍເຂົາເປີດບັນຊີທະນາຄານຂອງໂຕເອງ",
+  "lifeTaskDeathCertificates": "ເອົາສຳເນົາໃບມໍລະນະບັດທີ່ຮັບຮອງແລ້ວຈຳນວນໜຶ່ງ",
+  "lifeTaskDeathTellOrganisations": "ແຈ້ງທະນາຄານ, ບໍລິສັດປະກັນໄພ ແລະ ນາຍຈ້າງ",
+  "lifeTaskDeathFindWill": "ຊອກຫາພິໄນກຳ ແລະ ຕິດຕໍ່ຜູ້ຈັດການມໍລະດົກ",
+  "lifeTaskDeathStopReminders": "ເມື່ອທ່ານພ້ອມ, ປິດການແຈ້ງເຕືອນສຳລັບບັນທຶກຂອງເຂົາ",
+  "lifeTaskPhoneBlockSim": "ໂທຫາເຄືອຂ່າຍເພື່ອລັອກຊິມກາດ. ນີ້ຢຸດການສໍ້ໂກງປ່ຽນຊິມ.",
+  "lifeTaskPhoneBlockBanking": "ໂທຫາທະນາຄານເພື່ອລັອກການໃຊ້ທະນາຄານໃນໂທລະສັບ",
+  "lifeTaskPhoneLockErase": "ລັອກ ຫຼື ລຶບໂທລະສັບຈາກອຸປະກອນອື່ນ",
+  "lifeTaskPhoneChangePasswords": "ປ່ຽນລະຫັດຜ່ານອີເມວ ແລະ ສື່ສັງຄົມ",
+  "lifeTaskReportToPolice": "ແຈ້ງຕຳຫຼວດ ແລະ ເກັບເລກຄະດີໄວ້",
+  "lifeTaskDisasterSafePlace": "ໃຫ້ແນ່ໃຈວ່າທຸກຄົນປອດໄພ ແລະ ມີບ່ອນພັກ",
+  "lifeTaskDisasterPhotos": "ຖ່າຍຮູບຄວາມເສຍຫາຍກ່ອນທຳຄວາມສະອາດ",
+  "lifeTaskDisasterContactInsurer": "ຕິດຕໍ່ບໍລິສັດປະກັນໄພໄວທີ່ສຸດ",
+  "lifeTaskDisasterProofPack": "ສົ່ງສຳເນົາເອກະສານດ້ວຍຊຸດຫຼັກຖານ",
+  "lifeTaskParentFindPapers": "ຊອກໃຫ້ຮູ້ວ່າເອກະສານສຳຄັນຂອງເຂົາເກັບໄວ້ໃສ",
+  "lifeTaskParentPermission": "ຖາມວ່າທ່ານສາມາດລົມແທນເຂົາກັບທະນາຄານ, ທ່ານໝໍ ແລະ ບໍລິສັດປະກັນໄພໄດ້ບໍ່",
+  "lifeTaskParentMedicines": "ເກັບລາຍຊື່ຢາ ແລະ ທ່ານໝໍຂອງເຂົາ",
+  "lifePlanDoClaim": "ຍື່ນເຄລມ",
+  "lifePlanStatusClaimed": "ເຄລມແລ້ວ",
+  "lifePlanStartBy": "{weeks, plural, other{ເລີ່ມກ່ອນ {date}. ອັນໃໝ່ປົກກະຕິໃຊ້ເວລາປະມານ {weeks} ອາທິດ.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{ເລີ່ມດຽວນີ້. ອັນໃໝ່ປົກກະຕິໃຊ້ເວລາປະມານ {weeks} ອາທິດ.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "ແຜນຂອງທ່ານ",
+  "lifePlanWhenHappened": "ມັນເກີດຂຶ້ນເມື່ອໃດ?",
+  "lifePlanReminderNudge": "ແຜນຂອງທ່ານຍັງມີສິ່ງຕ້ອງເຮັດ. ເປີດເບິ່ງເມື່ອທ່ານວ່າງ.",
+  "lifePlanReminderCheckIn": "ບັດ ແລະ ເອກະສານໃໝ່ມາຮອດແລ້ວບໍ? ເປີດແຜນເພື່ອກວດເບິ່ງ.",
+  "lifePlanDoFirst": "ເຮັດອັນນີ້ກ່ອນ",
+  "lifePlanSteps": "ຂັ້ນຕອນອື່ນ",
+  "lifePlanAddOwnStep": "ເພີ່ມຂັ້ນຕອນຂອງທ່ານ",
+  "lifePlanOwnStepHint": "ຕົວຢ່າງ: ບອກໂຮງຮຽນ",
+  "lifePlanOwnStepLimit": "ທ່ານສາມາດເພີ່ມຂັ້ນຕອນຂອງທ່ານໄດ້ເຖິງ 20 ຂັ້ນຕອນ.",
+  "lifePlanReadAloud": "ອ່ານອອກສຽງ",
+  "lifePlanStopReading": "ຢຸດອ່ານ",
+  "lifePlanReadAloudUnavailable": "ການອ່ານອອກສຽງບໍ່ມີໃນໂທລະສັບນີ້.",
+  "lifePlanProofPack": "ສ້າງຊຸດຫຼັກຖານ",
+  "lifePlanOpenFamily": "ເປີດຄອບຄົວ",
+  "lifePlanRemoved": "{count, plural, other{ບັນທຶກ {count} ລາຍການທີ່ທ່ານລຶບ ຖືວ່າຍົກເລີກແລ້ວ.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "ການຕໍ່ອາຍຸເຫຼົ່ານີ້ປົກກະຕິມີຄ່າປະມານ {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "ກຳລັງຍ້າຍໄປເຮືອນໃໝ່ບໍ? ເບິ່ງວ່າຕ້ອງອັບເດດຫຍັງອີກ."
 }

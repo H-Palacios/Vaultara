@@ -2180,5 +2180,136 @@
   "lifePlanReminderAfter": "Nešto je još preostalo. Otvorite plan da to završite.",
   "lifePlanSuggestCar": "Kupili ste ili prodali auto? Pogledajte šta još ažurirati.",
   "lifePlanSuggestTrip": "Selite li se tamo na neko vrijeme?",
-  "lifePlanSuggestTripBody": "Započnite plan selidbe u drugu zemlju. Vaultara pokazuje šta srediti prije odlaska."
+  "lifePlanSuggestTripBody": "Započnite plan selidbe u drugu zemlju. Vaultara pokazuje šta srediti prije odlaska.",
+  "lifeGroupHome": "Dom",
+  "lifeGroupFamily": "Porodica",
+  "lifeGroupWork": "Posao i studij",
+  "lifeGroupCarTravel": "Auto i putovanja",
+  "lifeGroupEmergency": "Nešto je pošlo po zlu",
+  "lifeEventCarBuy": "Kupio sam auto",
+  "lifeEventCarBuyBody": "Osigurajte auto prije nego što ga dovezete kući, a zatim ga prepišite na svoje ime.",
+  "lifeEventCarSell": "Prodao sam auto",
+  "lifeEventCarSellBody": "Obavijestite ured za registraciju o prodaji i otkažite osiguranje kada auto više nije vaš.",
+  "lifeEventJobStart": "Počinjem novi posao",
+  "lifeEventJobStartBody": "Provjerite dozvole prije početka, a zatim uredite službenu karticu i beneficije.",
+  "lifeEventJobLeave": "Napuštam posao",
+  "lifeEventJobLeaveBody": "Vratite službene stvari i provjerite šta biva s osiguranjem koje vam je davao posao.",
+  "lifeEventLostPhone": "Izgubio sam telefon ili je ukraden",
+  "lifeEventLostPhoneBody": "Djelujte brzo. Neko s vašim telefonom i SIM karticom može ući u vašu banku i e-poštu. Odmah uradite prve korake.",
+  "lifeEventJobLoss": "Ostao sam bez posla",
+  "lifeEventJobLossBody": "Ovo je teško. Idite korak po korak. Neki zahtjevi imaju rok, pa počnite s njima.",
+  "lifeEventDisaster": "Požar, poplava ili provala u kući",
+  "lifeEventDisasterBody": "Prvo se uvjerite da su svi sigurni. Zatim fotografišite, javite se osiguravaču i zamijenite izgubljeno.",
+  "lifeEventCaringParent": "Brinem o roditelju",
+  "lifeEventCaringParentBody": "Odaberite osobu o kojoj brinete. Provjerite njene dokumente i osiguranje i držite potrebno nadohvat ruke.",
+  "lifeVariantCarQuestion": "Jeste li kupili ili prodali?",
+  "lifeVariantJobQuestion": "Počinjete li ili odlazite?",
+  "lifeVariantBuy": "Kupio",
+  "lifeVariantSell": "Prodao",
+  "lifeVariantStart": "Počinjem",
+  "lifeVariantLeave": "Odlazim",
+  "lifeTaskRedirectPost": "Zatražite da vam se pošta šalje na novu adresu",
+  "lifeTaskNewAddressEveryone": "Dajte novu adresu poslodavcu, poreskoj upravi, ljekaru i školi",
+  "lifeTaskMoveUtilities": "Zatvorite ili prenesite račune za struju, vodu i internet",
+  "lifeTaskMeterReadings": "Zapišite stanje brojila i fotografišite na dan iseljenja",
+  "lifeTaskSaveHomePapers": "Dodajte fotografiju dokumenata o prodaji ili prenosu u Vaultara",
+  "lifeTaskHandOverKeys": "Predajte ključeve, daljinske upravljače i pristupne kartice",
+  "lifeTaskOfficialNameProof": "Prvo pribavite službeni dokaz o novom imenu. Većina ureda ga traži.",
+  "lifeTaskTellNameChange": "Obavijestite banku, poslodavca, ljekara i poresku upravu o novom imenu",
+  "lifeTaskUpdateOnlineAccounts": "Promijenite ime na e-pošti, telefonu i online računima",
+  "lifeTaskSaveMarriageCertificate": "Dodajte fotografiju vjenčanog lista u Vaultara",
+  "lifeTaskCheckBeneficiaries": "Provjerite ko je naveden kao korisnik na vašim policama i računima",
+  "lifeTaskUpdateWill": "Napravite ili ažurirajte oporuku",
+  "lifeTaskSaveDivorceOrder": "Dodajte fotografiju pravosnažne presude o razvodu u Vaultara",
+  "lifeTaskSplitSharedAccounts": "Zatvorite ili podijelite zajedničke račune i promijenite zajedničke lozinke",
+  "lifeTaskRegisterBirth": "Prijavite rođenje i pribavite izvod iz matične knjige rođenih",
+  "lifeTaskAddBabyToFamily": "Dodajte bebu u Porodicu da biste pratili njene dokumente",
+  "lifeTaskCarRegisterInName": "Prepišite auto na svoje ime u zakonskom roku",
+  "lifeTaskCarSavePapers": "Dodajte fotografiju kupoprodajnog ugovora u Vaultara",
+  "lifeTaskCarNotifySale": "Obavijestite ured za registraciju da ste prodali auto i sačuvajte dokaz",
+  "lifeTaskCarRemoveTags": "Uklonite naljepnice za putarinu, parking kartice i lične stvari",
+  "lifeTaskJobGiveDetails": "Dajte bankovne podatke i poreski broj novom poslodavcu",
+  "lifeTaskJobJoinBenefits": "Uključite se u zdravstveno osiguranje i penziju koje nudi poslodavac",
+  "lifeTaskJobReturnItems": "Vratite službene stvari poput laptopa, kartice ili ključeva",
+  "lifeTaskJobLastPayslip": "Zatražite zadnju platnu listu i pismo koje potvrđuje datume rada",
+  "lifeTaskJobAskBenefits": "Pitajte šta biva sa zdravstvenim osiguranjem i penzijom",
+  "lifeTaskJobUnemployment": "Odmah se raspitajte o naknadi za nezaposlene. Zahtjevi često imaju rok.",
+  "lifeTaskJobPauseDebits": "Napravite popis trajnih naloga i pretplata i pauzirajte šta možete",
+  "lifeTaskStudySaveLetters": "Dodajte fotografije pisma o prijemu i izvoda o školarini u Vaultara",
+  "lifeTaskStudyFunding": "Provjerite rokove za stipendije, kredite i drugo finansiranje",
+  "lifeTaskRetirePension": "Pitajte kako i kada će se isplaćivati penzija",
+  "lifeTaskRetireOwnCover": "Uredite vlastito zdravstveno osiguranje ako službeno prestane",
+  "lifeTaskCountryTellBankTax": "Obavijestite banku i poresku upravu da odlazite",
+  "lifeTaskCountryScanCopies": "Dodajte fotografiju svakog važnog dokumenta u Vaultara",
+  "lifeTaskCountryLicenceRules": "Provjerite morate li zamijeniti vozačku dozvolu",
+  "lifeTaskChildOwnId": "Pomozite mu da podnese zahtjev za vlastitu ličnu kartu ako mu treba",
+  "lifeTaskChildBankAccount": "Pomozite mu da otvori vlastiti bankovni račun",
+  "lifeTaskDeathCertificates": "Pribavite nekoliko ovjerenih kopija izvoda iz matične knjige umrlih",
+  "lifeTaskDeathTellOrganisations": "Obavijestite banku, osiguravače i poslodavca",
+  "lifeTaskDeathFindWill": "Pronađite oporuku i javite se izvršiocu",
+  "lifeTaskDeathStopReminders": "Kada budete spremni, isključite podsjetnike za njegove zapise",
+  "lifeTaskPhoneBlockSim": "Nazovite mobilnog operatera da blokira SIM karticu. To sprječava prevaru zamjenom SIM-a.",
+  "lifeTaskPhoneBlockBanking": "Nazovite banku da blokira bankarstvo na telefonu",
+  "lifeTaskPhoneLockErase": "Zaključajte ili obrišite telefon s drugog uređaja",
+  "lifeTaskPhoneChangePasswords": "Promijenite lozinke za e-poštu i društvene mreže",
+  "lifeTaskReportToPolice": "Prijavite to policiji i sačuvajte broj predmeta",
+  "lifeTaskDisasterSafePlace": "Uvjerite se da su svi sigurni i da imaju gdje boraviti",
+  "lifeTaskDisasterPhotos": "Fotografišite štetu prije čišćenja",
+  "lifeTaskDisasterContactInsurer": "Javite se osiguravaču što prije",
+  "lifeTaskDisasterProofPack": "Pošaljite kopije dokumenata putem Paketa dokaza",
+  "lifeTaskParentFindPapers": "Saznajte gdje se čuvaju njegovi važni dokumenti",
+  "lifeTaskParentPermission": "Pitajte smijete li u njegovo ime razgovarati s bankom, ljekarom i osiguravačem",
+  "lifeTaskParentMedicines": "Vodite popis njegovih lijekova i ljekara",
+  "lifePlanDoClaim": "Podnesite zahtjev",
+  "lifePlanStatusClaimed": "Zahtjev podnesen",
+  "lifePlanStartBy": "{weeks, plural, one{Počnite do {date}. Novi obično traje oko {weeks} sedmicu.} few{Počnite do {date}. Novi obično traje oko {weeks} sedmice.} other{Počnite do {date}. Novi obično traje oko {weeks} sedmica.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, one{Počnite sada. Novi obično traje oko {weeks} sedmicu.} few{Počnite sada. Novi obično traje oko {weeks} sedmice.} other{Počnite sada. Novi obično traje oko {weeks} sedmica.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Vaš plan",
+  "lifePlanWhenHappened": "Kada se to desilo?",
+  "lifePlanReminderNudge": "Vaš plan još ima stvari za uraditi. Otvorite ga kada budete imali vremena.",
+  "lifePlanReminderCheckIn": "Jesu li stigle nove kartice i dokumenti? Otvorite plan da provjerite.",
+  "lifePlanDoFirst": "Prvo uradite ovo",
+  "lifePlanSteps": "Ostali koraci",
+  "lifePlanAddOwnStep": "Dodajte svoj korak",
+  "lifePlanOwnStepHint": "Na primjer: Obavijestite školu",
+  "lifePlanOwnStepLimit": "Možete dodati do 20 vlastitih koraka.",
+  "lifePlanReadAloud": "Pročitaj naglas",
+  "lifePlanStopReading": "Zaustavi čitanje",
+  "lifePlanReadAloudUnavailable": "Čitanje naglas nije dostupno na ovom telefonu.",
+  "lifePlanProofPack": "Napravite paket dokaza",
+  "lifePlanOpenFamily": "Otvori Porodicu",
+  "lifePlanRemoved": "{count, plural, one{{count} zapis koji ste izbrisali računa se kao otkazan.} few{{count} zapisa koja ste izbrisali računaju se kao otkazana.} other{{count} zapisa koje ste izbrisali računa se kao otkazano.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Obnova ovoga obično košta oko {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Selite se u novi dom? Pogledajte šta još treba ažurirati."
 }

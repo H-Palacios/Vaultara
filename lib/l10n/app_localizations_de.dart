@@ -6846,4 +6846,330 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Starte einen Plan für den Umzug in ein anderes Land. Vaultara zeigt, was du vor der Abreise erledigen musst.';
+
+  @override
+  String get lifeGroupHome => 'Zuhause';
+
+  @override
+  String get lifeGroupFamily => 'Familie';
+
+  @override
+  String get lifeGroupWork => 'Arbeit und Studium';
+
+  @override
+  String get lifeGroupCarTravel => 'Auto und Reisen';
+
+  @override
+  String get lifeGroupEmergency => 'Etwas ist passiert';
+
+  @override
+  String get lifeEventCarBuy => 'Ich habe ein Auto gekauft';
+
+  @override
+  String get lifeEventCarBuyBody => 'Schließen Sie die Versicherung ab, bevor Sie es nach Hause fahren, und melden Sie das Auto dann auf sich um.';
+
+  @override
+  String get lifeEventCarSell => 'Ich habe ein Auto verkauft';
+
+  @override
+  String get lifeEventCarSellBody => 'Melden Sie den Verkauf der Zulassungsstelle und kündigen Sie die Versicherung, sobald das Auto nicht mehr Ihnen gehört.';
+
+  @override
+  String get lifeEventJobStart => 'Ich fange einen neuen Job an';
+
+  @override
+  String get lifeEventJobStartBody => 'Prüfen Sie vor dem Start Ihre Genehmigungen und richten Sie dann Firmenausweis und Leistungen ein.';
+
+  @override
+  String get lifeEventJobLeave => 'Ich verlasse meinen Job';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Geben Sie Firmeneigentum zurück und prüfen Sie, was mit dem Schutz passiert, den Ihnen Ihr Job gab.';
+
+  @override
+  String get lifeEventLostPhone => 'Mein Handy ist verloren oder gestohlen';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Handeln Sie schnell. Wer Ihr Handy und Ihre SIM-Karte hat, kann auf Ihre Bank und Ihre E-Mails zugreifen. Erledigen Sie die ersten Schritte sofort.';
+
+  @override
+  String get lifeEventJobLoss => 'Ich habe meinen Job verloren';
+
+  @override
+  String get lifeEventJobLossBody => 'Das ist schwer. Gehen Sie Schritt für Schritt vor. Manche Anträge haben eine Frist, beginnen Sie damit.';
+
+  @override
+  String get lifeEventDisaster => 'Brand, Überschwemmung oder Einbruch zu Hause';
+
+  @override
+  String get lifeEventDisasterBody => 'Sorgen Sie zuerst dafür, dass alle in Sicherheit sind. Machen Sie dann Fotos, melden Sie sich bei der Versicherung und ersetzen Sie, was verloren ging.';
+
+  @override
+  String get lifeEventCaringParent => 'Ich kümmere mich um ein Elternteil';
+
+  @override
+  String get lifeEventCaringParentBody => 'Wählen Sie die Person, um die Sie sich kümmern. Prüfen Sie ihre Dokumente und Versicherungen und halten Sie Wichtiges griffbereit.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Haben Sie gekauft oder verkauft?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Fangen Sie an oder gehen Sie?';
+
+  @override
+  String get lifeVariantBuy => 'Gekauft';
+
+  @override
+  String get lifeVariantSell => 'Verkauft';
+
+  @override
+  String get lifeVariantStart => 'Anfangen';
+
+  @override
+  String get lifeVariantLeave => 'Gehen';
+
+  @override
+  String get lifeTaskRedirectPost => 'Lassen Sie Ihre Post an die neue Adresse nachsenden';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Geben Sie Arbeitgeber, Finanzamt, Arzt und Schule Ihre neue Adresse';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Kündigen oder übertragen Sie Strom, Wasser und Internet';
+
+  @override
+  String get lifeTaskMeterReadings => 'Lesen Sie am Auszugstag die Zähler ab und machen Sie Fotos';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Fügen Sie ein Foto der Kauf- oder Übertragungsunterlagen in Vaultara hinzu';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Übergeben Sie Schlüssel, Fernbedienungen und Zugangschips';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Besorgen Sie zuerst einen amtlichen Nachweis Ihres neuen Namens. Die meisten Stellen verlangen ihn.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Teilen Sie Bank, Arbeitgeber, Arzt und Finanzamt Ihren neuen Namen mit';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Ändern Sie Ihren Namen bei E-Mail, Handy und Online-Konten';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Fügen Sie ein Foto der Heiratsurkunde in Vaultara hinzu';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Prüfen Sie, wer in Ihren Policen und Konten als Begünstigter steht';
+
+  @override
+  String get lifeTaskUpdateWill => 'Erstellen oder aktualisieren Sie ein Testament';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Fügen Sie ein Foto des rechtskräftigen Scheidungsbeschlusses in Vaultara hinzu';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Schließen oder teilen Sie gemeinsame Konten und ändern Sie gemeinsame Passwörter';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Melden Sie die Geburt an und holen Sie die Geburtsurkunde';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Fügen Sie das Baby unter Familie hinzu, damit seine Dokumente verfolgt werden';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Melden Sie das Auto innerhalb der gesetzlichen Frist auf sich um';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Fügen Sie ein Foto des Kaufvertrags in Vaultara hinzu';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Melden Sie der Zulassungsstelle den Verkauf und bewahren Sie den Nachweis auf';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Entfernen Sie Maut-Boxen, Parkkarten und persönliche Sachen';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Geben Sie dem neuen Arbeitgeber Ihre Bankdaten und Steuernummer';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Melden Sie sich für Krankenversicherung und Rente beim Arbeitgeber an';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Geben Sie Firmeneigentum wie Laptop, Ausweis oder Schlüssel zurück';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Bitten Sie um die letzte Lohnabrechnung und eine Bestätigung Ihrer Beschäftigungszeit';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Fragen Sie, was mit Krankenversicherung und Rente passiert';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Fragen Sie jetzt nach Arbeitslosengeld. Anträge haben oft eine Frist.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Listen Sie Lastschriften und Abos auf und pausieren Sie, was geht';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Fügen Sie Fotos von Zulassungsbescheid und Gebührenbescheiden in Vaultara hinzu';
+
+  @override
+  String get lifeTaskStudyFunding => 'Prüfen Sie die Fristen für Stipendien, Darlehen oder andere Förderung';
+
+  @override
+  String get lifeTaskRetirePension => 'Fragen Sie, wie und wann Ihre Rente gezahlt wird';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Sorgen Sie für eine eigene Krankenversicherung, wenn die über die Arbeit endet';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Teilen Sie Bank und Finanzamt mit, dass Sie wegziehen';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Fügen Sie ein Foto jedes wichtigen Dokuments in Vaultara hinzu';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Prüfen Sie, ob Sie Ihren Führerschein umschreiben lassen müssen';
+
+  @override
+  String get lifeTaskChildOwnId => 'Helfen Sie beim Antrag auf einen eigenen Ausweis, falls nötig';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Helfen Sie beim Eröffnen eines eigenen Bankkontos';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Besorgen Sie einige beglaubigte Kopien der Sterbeurkunde';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Informieren Sie Bank, Versicherungen und Arbeitgeber';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Finden Sie das Testament und kontaktieren Sie den Testamentsvollstrecker';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Wenn Sie so weit sind, schalten Sie Erinnerungen für die Einträge der Person aus';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Rufen Sie Ihren Mobilfunkanbieter an und lassen Sie die SIM-Karte sperren. Das stoppt SIM-Swap-Betrug.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Rufen Sie Ihre Bank an und lassen Sie das Banking auf dem Handy sperren';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Sperren oder löschen Sie das Handy von einem anderen Gerät aus';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Ändern Sie die Passwörter für E-Mail und soziale Medien';
+
+  @override
+  String get lifeTaskReportToPolice => 'Zeigen Sie es bei der Polizei an und bewahren Sie das Aktenzeichen auf';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Sorgen Sie dafür, dass alle sicher sind und eine Unterkunft haben';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Fotografieren Sie die Schäden, bevor Sie aufräumen';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Melden Sie sich so schnell wie möglich bei Ihrer Versicherung';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Senden Sie Kopien Ihrer Dokumente mit dem Nachweis-Paket';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Finden Sie heraus, wo die wichtigen Unterlagen aufbewahrt werden';
+
+  @override
+  String get lifeTaskParentPermission => 'Fragen Sie, ob Sie im Namen der Person mit Bank, Arzt und Versicherung sprechen dürfen';
+
+  @override
+  String get lifeTaskParentMedicines => 'Führen Sie eine Liste ihrer Medikamente und Ärzte';
+
+  @override
+  String get lifePlanDoClaim => 'Anspruch geltend machen';
+
+  @override
+  String get lifePlanStatusClaimed => 'Geltend gemacht';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Beginnen Sie bis $date. Ein neues dauert meist etwa $weeks Wochen.',
+      one: 'Beginnen Sie bis $date. Ein neues dauert meist etwa eine Woche.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Beginnen Sie jetzt. Ein neues dauert meist etwa $weeks Wochen.',
+      one: 'Beginnen Sie jetzt. Ein neues dauert meist etwa eine Woche.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Ihr Plan';
+
+  @override
+  String get lifePlanWhenHappened => 'Wann ist es passiert?';
+
+  @override
+  String get lifePlanReminderNudge => 'In Ihrem Plan gibt es noch etwas zu tun. Öffnen Sie ihn, wenn Sie einen Moment Zeit haben.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Sind Ihre neuen Karten und Dokumente angekommen? Öffnen Sie den Plan, um es zu prüfen.';
+
+  @override
+  String get lifePlanDoFirst => 'Zuerst erledigen';
+
+  @override
+  String get lifePlanSteps => 'Weitere Schritte';
+
+  @override
+  String get lifePlanAddOwnStep => 'Eigenen Schritt hinzufügen';
+
+  @override
+  String get lifePlanOwnStepHint => 'Zum Beispiel: Schule informieren';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Sie können bis zu 20 eigene Schritte hinzufügen.';
+
+  @override
+  String get lifePlanReadAloud => 'Vorlesen';
+
+  @override
+  String get lifePlanStopReading => 'Vorlesen beenden';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Vorlesen ist auf diesem Handy nicht verfügbar.';
+
+  @override
+  String get lifePlanProofPack => 'Nachweis-Paket erstellen';
+
+  @override
+  String get lifePlanOpenFamily => 'Familie öffnen';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count von Ihnen gelöschte Einträge zählen als gekündigt.',
+      one: '1 von Ihnen gelöschter Eintrag zählt als gekündigt.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Die Erneuerung kostet meist etwa $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Ziehen Sie um? Sehen Sie, was Sie noch aktualisieren sollten.';
 }

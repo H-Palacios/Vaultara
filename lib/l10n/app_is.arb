@@ -2154,5 +2154,136 @@
   "lifePlanReminderAfter": "Enn er eitthvað eftir. Opnaðu áætlunina til að klára það.",
   "lifePlanSuggestCar": "Keyptir þú eða seldir bíl? Sjáðu hvað fleira þarf að uppfæra.",
   "lifePlanSuggestTrip": "Flytur þú þangað um tíma?",
-  "lifePlanSuggestTripBody": "Hefðu áætlun um flutning til annars lands. Vaultara sýnir hvað þarf að ganga frá áður en þú ferð."
+  "lifePlanSuggestTripBody": "Hefðu áætlun um flutning til annars lands. Vaultara sýnir hvað þarf að ganga frá áður en þú ferð.",
+  "lifeGroupHome": "Heimili",
+  "lifeGroupFamily": "Fjölskylda",
+  "lifeGroupWork": "Vinna og nám",
+  "lifeGroupCarTravel": "Bíll og ferðalög",
+  "lifeGroupEmergency": "Eitthvað fór úrskeiðis",
+  "lifeEventCarBuy": "Ég keypti bíl",
+  "lifeEventCarBuyBody": "Tryggðu bílinn áður en þú keyrir hann heim og skráðu hann svo á þig.",
+  "lifeEventCarSell": "Ég seldi bíl",
+  "lifeEventCarSellBody": "Tilkynntu söluna til Samgöngustofu og segðu upp tryggingunni þegar bíllinn er ekki lengur þinn.",
+  "lifeEventJobStart": "Ég er að byrja í nýrri vinnu",
+  "lifeEventJobStartBody": "Athugaðu leyfin þín áður en þú byrjar og settu svo upp starfskort og hlunnindi.",
+  "lifeEventJobLeave": "Ég er að hætta í vinnunni",
+  "lifeEventJobLeaveBody": "Skilaðu vinnuhlutum og athugaðu hvað verður um tryggingarnar sem vinnan veitti þér.",
+  "lifeEventLostPhone": "Ég týndi símanum eða honum var stolið",
+  "lifeEventLostPhoneBody": "Bregstu hratt við. Sá sem er með símann og SIM-kortið getur komist í bankann og tölvupóstinn þinn. Taktu fyrstu skrefin strax.",
+  "lifeEventJobLoss": "Ég missti vinnuna",
+  "lifeEventJobLossBody": "Þetta er erfitt. Taktu eitt skref í einu. Sumar umsóknir hafa frest, svo byrjaðu á þeim.",
+  "lifeEventDisaster": "Bruni, flóð eða innbrot heima",
+  "lifeEventDisasterBody": "Gakktu fyrst úr skugga um að allir séu óhultir. Taktu svo myndir, hafðu samband við tryggingafélagið og bættu það sem tapaðist.",
+  "lifeEventCaringParent": "Ég annast foreldri",
+  "lifeEventCaringParentBody": "Veldu manneskjuna sem þú annast. Athugaðu skjöl hennar og tryggingar og hafðu það sem þú þarft við höndina.",
+  "lifeVariantCarQuestion": "Keyptir þú eða seldir?",
+  "lifeVariantJobQuestion": "Ertu að byrja eða hætta?",
+  "lifeVariantBuy": "Keypti",
+  "lifeVariantSell": "Seldi",
+  "lifeVariantStart": "Byrja",
+  "lifeVariantLeave": "Hætta",
+  "lifeTaskRedirectPost": "Biddu um að pósturinn verði sendur á nýja heimilisfangið",
+  "lifeTaskNewAddressEveryone": "Gefðu vinnuveitanda, skattinum, lækni og skóla nýja heimilisfangið",
+  "lifeTaskMoveUtilities": "Segðu upp eða færðu rafmagn, vatn og net",
+  "lifeTaskMeterReadings": "Lestu af mælum og taktu myndir daginn sem þú flytur út",
+  "lifeTaskSaveHomePapers": "Bættu mynd af kaup- eða afsalsskjölum við í Vaultara",
+  "lifeTaskHandOverKeys": "Afhentu lykla, fjarstýringar og aðgangskort",
+  "lifeTaskOfficialNameProof": "Fáðu fyrst opinbera staðfestingu á nýja nafninu. Flestar stofnanir biðja um hana.",
+  "lifeTaskTellNameChange": "Láttu bankann, vinnuveitanda, lækni og skattinn vita af nýja nafninu",
+  "lifeTaskUpdateOnlineAccounts": "Breyttu nafninu í tölvupósti, síma og netreikningum",
+  "lifeTaskSaveMarriageCertificate": "Bættu mynd af hjúskaparvottorðinu við í Vaultara",
+  "lifeTaskCheckBeneficiaries": "Athugaðu hver er skráður rétthafi á tryggingum og reikningum",
+  "lifeTaskUpdateWill": "Gerðu eða uppfærðu erfðaskrá",
+  "lifeTaskSaveDivorceOrder": "Bættu mynd af lokaúrskurði um skilnað við í Vaultara",
+  "lifeTaskSplitSharedAccounts": "Lokaðu eða skiptu sameiginlegum reikningum og breyttu sameiginlegum lykilorðum",
+  "lifeTaskRegisterBirth": "Skráðu fæðinguna og fáðu fæðingarvottorð",
+  "lifeTaskAddBabyToFamily": "Bættu barninu við í Fjölskyldu svo fylgst sé með skjölum þess",
+  "lifeTaskCarRegisterInName": "Skráðu bílinn á þig innan lögbundins frests",
+  "lifeTaskCarSavePapers": "Bættu mynd af kaupsamningnum við í Vaultara",
+  "lifeTaskCarNotifySale": "Tilkynntu Samgöngustofu að þú hafir selt bílinn og geymdu staðfestinguna",
+  "lifeTaskCarRemoveTags": "Fjarlægðu veggjaldsmerki, bílastæðakort og persónulega muni",
+  "lifeTaskJobGiveDetails": "Gefðu nýja vinnuveitandanum bankaupplýsingar og kennitölu",
+  "lifeTaskJobJoinBenefits": "Skráðu þig í sjúkratryggingu og lífeyri sem vinnuveitandinn býður",
+  "lifeTaskJobReturnItems": "Skilaðu vinnuhlutum eins og fartölvu, korti eða lyklum",
+  "lifeTaskJobLastPayslip": "Biddu um síðasta launaseðil og bréf sem staðfestir starfstímann",
+  "lifeTaskJobAskBenefits": "Spurðu hvað verður um sjúkratryggingu og lífeyri",
+  "lifeTaskJobUnemployment": "Spurðu strax um atvinnuleysisbætur. Umsóknir hafa oft frest.",
+  "lifeTaskJobPauseDebits": "Skráðu boðgreiðslur og áskriftir og settu á bið það sem hægt er",
+  "lifeTaskStudySaveLetters": "Bættu myndum af inntökubréfi og skólagjaldayfirlitum við í Vaultara",
+  "lifeTaskStudyFunding": "Athugaðu fresti fyrir styrki, lán eða annan stuðning",
+  "lifeTaskRetirePension": "Spurðu hvernig og hvenær lífeyrir verður greiddur",
+  "lifeTaskRetireOwnCover": "Fáðu þína eigin sjúkratryggingu ef sú frá vinnunni fellur niður",
+  "lifeTaskCountryTellBankTax": "Láttu bankann og skattinn vita að þú sért að flytja",
+  "lifeTaskCountryScanCopies": "Bættu mynd af hverju mikilvægu skjali við í Vaultara",
+  "lifeTaskCountryLicenceRules": "Athugaðu hvort þú þurfir að skipta um ökuskírteini",
+  "lifeTaskChildOwnId": "Hjálpaðu því að sækja um eigin skilríki ef þörf er á",
+  "lifeTaskChildBankAccount": "Hjálpaðu því að opna eigin bankareikning",
+  "lifeTaskDeathCertificates": "Fáðu nokkur staðfest afrit af dánarvottorðinu",
+  "lifeTaskDeathTellOrganisations": "Láttu bankann, tryggingafélög og vinnuveitanda vita",
+  "lifeTaskDeathFindWill": "Finndu erfðaskrána og hafðu samband við skiptastjóra",
+  "lifeTaskDeathStopReminders": "Þegar þú ert tilbúin(n), slökktu á áminningum fyrir skrár viðkomandi",
+  "lifeTaskPhoneBlockSim": "Hringdu í símafyrirtækið og láttu loka SIM-kortinu. Það stöðvar SIM-svik.",
+  "lifeTaskPhoneBlockBanking": "Hringdu í bankann og láttu loka fyrir bankaþjónustu í símanum",
+  "lifeTaskPhoneLockErase": "Læstu eða hreinsaðu símann úr öðru tæki",
+  "lifeTaskPhoneChangePasswords": "Breyttu lykilorðum fyrir tölvupóst og samfélagsmiðla",
+  "lifeTaskReportToPolice": "Tilkynntu þetta til lögreglu og geymdu málsnúmerið",
+  "lifeTaskDisasterSafePlace": "Gakktu úr skugga um að allir séu óhultir og hafi samastað",
+  "lifeTaskDisasterPhotos": "Taktu myndir af tjóninu áður en þú hreinsar",
+  "lifeTaskDisasterContactInsurer": "Hafðu samband við tryggingafélagið sem fyrst",
+  "lifeTaskDisasterProofPack": "Sendu afrit af skjölunum með Skjalapakka",
+  "lifeTaskParentFindPapers": "Finndu út hvar mikilvæg skjöl viðkomandi eru geymd",
+  "lifeTaskParentPermission": "Spurðu hvort þú megir tala fyrir hönd viðkomandi við banka, lækni og tryggingafélag",
+  "lifeTaskParentMedicines": "Haltu lista yfir lyf og lækna viðkomandi",
+  "lifePlanDoClaim": "Gera kröfu",
+  "lifePlanStatusClaimed": "Krafa gerð",
+  "lifePlanStartBy": "{weeks, plural, =1{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um viku.} other{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um {weeks} vikur.}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, =1{Byrjaðu núna. Nýtt tekur yfirleitt um viku.} other{Byrjaðu núna. Nýtt tekur yfirleitt um {weeks} vikur.}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "Áætlunin þín",
+  "lifePlanWhenHappened": "Hvenær gerðist það?",
+  "lifePlanReminderNudge": "Áætlunin þín á enn eftir verkefni. Opnaðu hana þegar þú hefur smá tíma.",
+  "lifePlanReminderCheckIn": "Komu nýju kortin og skjölin? Opnaðu áætlunina til að athuga.",
+  "lifePlanDoFirst": "Gerðu þetta fyrst",
+  "lifePlanSteps": "Önnur skref",
+  "lifePlanAddOwnStep": "Bæta við eigin skrefi",
+  "lifePlanOwnStepHint": "Til dæmis: Láta skólann vita",
+  "lifePlanOwnStepLimit": "Þú getur bætt við allt að 20 eigin skrefum.",
+  "lifePlanReadAloud": "Lesa upphátt",
+  "lifePlanStopReading": "Hætta lestri",
+  "lifePlanReadAloudUnavailable": "Upplestur er ekki í boði í þessum síma.",
+  "lifePlanProofPack": "Búa til skjalapakka",
+  "lifePlanOpenFamily": "Opna Fjölskyldu",
+  "lifePlanRemoved": "{count, plural, =1{1 skrá sem þú eyddir telst uppsögð.} other{{count} skrár sem þú eyddir teljast uppsagðar.}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "Endurnýjun kostar yfirleitt um {amount}.",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "Ertu að flytja? Sjáðu hvað annað þarf að uppfæra."
 }

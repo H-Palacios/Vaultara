@@ -2166,5 +2166,136 @@
   "lifePlanReminderAfter": "ยังมีบางอย่างเหลืออยู่ เปิดแผนเพื่อทำให้เสร็จ",
   "lifePlanSuggestCar": "ซื้อหรือขายรถ? ดูว่าต้องอัปเดตอะไรอีก",
   "lifePlanSuggestTrip": "ย้ายไปอยู่ที่นั่นสักพักใช่ไหม?",
-  "lifePlanSuggestTripBody": "เริ่มแผนย้ายไปต่างประเทศ Vaultara จะแสดงสิ่งที่ต้องจัดการก่อนออกเดินทาง"
+  "lifePlanSuggestTripBody": "เริ่มแผนย้ายไปต่างประเทศ Vaultara จะแสดงสิ่งที่ต้องจัดการก่อนออกเดินทาง",
+  "lifeGroupHome": "บ้าน",
+  "lifeGroupFamily": "ครอบครัว",
+  "lifeGroupWork": "งานและการเรียน",
+  "lifeGroupCarTravel": "รถและการเดินทาง",
+  "lifeGroupEmergency": "มีเรื่องเกิดขึ้น",
+  "lifeEventCarBuy": "ฉันซื้อรถ",
+  "lifeEventCarBuyBody": "ทำประกันก่อนขับกลับบ้าน แล้วโอนรถเป็นชื่อของคุณ",
+  "lifeEventCarSell": "ฉันขายรถ",
+  "lifeEventCarSellBody": "แจ้งการขายกับกรมการขนส่ง และยกเลิกประกันเมื่อรถไม่ใช่ของคุณแล้ว",
+  "lifeEventJobStart": "ฉันเริ่มงานใหม่",
+  "lifeEventJobStartBody": "ตรวจใบอนุญาตก่อนเริ่มงาน แล้วจัดการบัตรพนักงานและสวัสดิการ",
+  "lifeEventJobLeave": "ฉันลาออกจากงาน",
+  "lifeEventJobLeaveBody": "คืนอุปกรณ์ของบริษัท และดูว่าความคุ้มครองที่ได้จากงานจะเป็นอย่างไร",
+  "lifeEventLostPhone": "โทรศัพท์หายหรือถูกขโมย",
+  "lifeEventLostPhoneBody": "รีบจัดการ คนที่มีโทรศัพท์และซิมการ์ดของคุณเข้าบัญชีธนาคารและอีเมลได้ ทำขั้นตอนแรกเดี๋ยวนี้",
+  "lifeEventJobLoss": "ฉันตกงาน",
+  "lifeEventJobLossBody": "เรื่องนี้ไม่ง่าย ค่อยๆ ทำทีละขั้น บางคำขอมีกำหนดเวลา จึงเริ่มจากเรื่องเหล่านั้นก่อน",
+  "lifeEventDisaster": "ไฟไหม้ น้ำท่วม หรือโจรขึ้นบ้าน",
+  "lifeEventDisasterBody": "ก่อนอื่นให้แน่ใจว่าทุกคนปลอดภัย จากนั้นถ่ายรูป ติดต่อบริษัทประกัน และทำสิ่งที่หายไปขึ้นใหม่",
+  "lifeEventCaringParent": "ฉันกำลังดูแลพ่อหรือแม่",
+  "lifeEventCaringParentBody": "เลือกคนที่คุณดูแล ตรวจเอกสารและความคุ้มครองของท่าน และเก็บสิ่งที่ต้องใช้ไว้ใกล้ตัว",
+  "lifeVariantCarQuestion": "คุณซื้อหรือขาย?",
+  "lifeVariantJobQuestion": "คุณเริ่มงานหรือลาออก?",
+  "lifeVariantBuy": "ซื้อ",
+  "lifeVariantSell": "ขาย",
+  "lifeVariantStart": "เริ่มงาน",
+  "lifeVariantLeave": "ลาออก",
+  "lifeTaskRedirectPost": "ขอให้ส่งจดหมายไปที่อยู่ใหม่",
+  "lifeTaskNewAddressEveryone": "แจ้งที่อยู่ใหม่กับนายจ้าง กรมสรรพากร แพทย์ และโรงเรียน",
+  "lifeTaskMoveUtilities": "ยกเลิกหรือย้ายบัญชีไฟฟ้า น้ำประปา และอินเทอร์เน็ต",
+  "lifeTaskMeterReadings": "จดเลขมิเตอร์และถ่ายรูปในวันที่ย้ายออก",
+  "lifeTaskSaveHomePapers": "เพิ่มรูปเอกสารซื้อขายหรือโอนกรรมสิทธิ์ใน Vaultara",
+  "lifeTaskHandOverKeys": "ส่งมอบกุญแจ รีโมต และบัตรผ่าน",
+  "lifeTaskOfficialNameProof": "ขอหลักฐานทางราชการของชื่อใหม่ก่อน หน่วยงานส่วนใหญ่ขอเอกสารนี้",
+  "lifeTaskTellNameChange": "แจ้งชื่อใหม่กับธนาคาร นายจ้าง แพทย์ และกรมสรรพากร",
+  "lifeTaskUpdateOnlineAccounts": "เปลี่ยนชื่อในอีเมล โทรศัพท์ และบัญชีออนไลน์",
+  "lifeTaskSaveMarriageCertificate": "เพิ่มรูปทะเบียนสมรสใน Vaultara",
+  "lifeTaskCheckBeneficiaries": "ตรวจว่าใครเป็นผู้รับผลประโยชน์ในกรมธรรม์และบัญชีของคุณ",
+  "lifeTaskUpdateWill": "ทำหรือแก้ไขพินัยกรรม",
+  "lifeTaskSaveDivorceOrder": "เพิ่มรูปคำพิพากษาหย่าฉบับสุดท้ายใน Vaultara",
+  "lifeTaskSplitSharedAccounts": "ปิดหรือแบ่งบัญชีร่วม และเปลี่ยนรหัสผ่านที่ใช้ร่วมกัน",
+  "lifeTaskRegisterBirth": "แจ้งเกิดและรับสูติบัตร",
+  "lifeTaskAddBabyToFamily": "เพิ่มลูกในครอบครัวเพื่อติดตามเอกสาร",
+  "lifeTaskCarRegisterInName": "โอนรถเป็นชื่อคุณภายในเวลาที่กฎหมายกำหนด",
+  "lifeTaskCarSavePapers": "เพิ่มรูปสัญญาซื้อขายใน Vaultara",
+  "lifeTaskCarNotifySale": "แจ้งกรมการขนส่งว่าขายรถแล้ว และเก็บหลักฐานไว้",
+  "lifeTaskCarRemoveTags": "ถอดอุปกรณ์ทางด่วน บัตรจอดรถ และของส่วนตัวออก",
+  "lifeTaskJobGiveDetails": "ให้ข้อมูลบัญชีธนาคารและเลขประจำตัวผู้เสียภาษีกับนายจ้างใหม่",
+  "lifeTaskJobJoinBenefits": "สมัครประกันสุขภาพและกองทุนสำรองเลี้ยงชีพที่นายจ้างมีให้",
+  "lifeTaskJobReturnItems": "คืนอุปกรณ์ของบริษัท เช่น โน้ตบุ๊ก บัตร หรือกุญแจ",
+  "lifeTaskJobLastPayslip": "ขอสลิปเงินเดือนล่าสุดและหนังสือรับรองการทำงาน",
+  "lifeTaskJobAskBenefits": "ถามว่าประกันสุขภาพและเงินบำนาญของคุณจะเป็นอย่างไร",
+  "lifeTaskJobUnemployment": "สอบถามเรื่องเงินทดแทนกรณีว่างงานตอนนี้ คำขอมักมีกำหนดเวลา",
+  "lifeTaskJobPauseDebits": "จดรายการหักบัญชีอัตโนมัติและการสมัครสมาชิก แล้วหยุดสิ่งที่หยุดได้",
+  "lifeTaskStudySaveLetters": "เพิ่มรูปจดหมายตอบรับและใบแจ้งค่าเล่าเรียนใน Vaultara",
+  "lifeTaskStudyFunding": "ตรวจกำหนดเวลาทุนการศึกษา เงินกู้ หรือความช่วยเหลืออื่น",
+  "lifeTaskRetirePension": "ถามว่าเงินบำนาญจะจ่ายอย่างไรและเมื่อใด",
+  "lifeTaskRetireOwnCover": "ทำประกันสุขภาพเองหากประกันจากงานสิ้นสุด",
+  "lifeTaskCountryTellBankTax": "แจ้งธนาคารและกรมสรรพากรว่าคุณจะย้ายออก",
+  "lifeTaskCountryScanCopies": "เพิ่มรูปเอกสารสำคัญทุกฉบับใน Vaultara",
+  "lifeTaskCountryLicenceRules": "ตรวจว่าต้องเปลี่ยนใบขับขี่หรือไม่",
+  "lifeTaskChildOwnId": "ช่วยลูกทำบัตรประชาชนเองหากจำเป็น",
+  "lifeTaskChildBankAccount": "ช่วยลูกเปิดบัญชีธนาคารของตัวเอง",
+  "lifeTaskDeathCertificates": "ขอสำเนารับรองใบมรณบัตรหลายชุด",
+  "lifeTaskDeathTellOrganisations": "แจ้งธนาคาร บริษัทประกัน และนายจ้าง",
+  "lifeTaskDeathFindWill": "หาพินัยกรรมและติดต่อผู้จัดการมรดก",
+  "lifeTaskDeathStopReminders": "เมื่อพร้อมแล้ว ปิดการแจ้งเตือนสำหรับรายการของท่าน",
+  "lifeTaskPhoneBlockSim": "โทรหาค่ายมือถือเพื่อระงับซิมการ์ด วิธีนี้หยุดการโกงด้วยการสลับซิม",
+  "lifeTaskPhoneBlockBanking": "โทรหาธนาคารเพื่อระงับแอปธนาคารบนโทรศัพท์",
+  "lifeTaskPhoneLockErase": "ล็อกหรือล้างข้อมูลโทรศัพท์จากอุปกรณ์อื่น",
+  "lifeTaskPhoneChangePasswords": "เปลี่ยนรหัสผ่านอีเมลและโซเชียลมีเดีย",
+  "lifeTaskReportToPolice": "แจ้งความกับตำรวจและเก็บเลขคดีไว้",
+  "lifeTaskDisasterSafePlace": "ให้แน่ใจว่าทุกคนปลอดภัยและมีที่พัก",
+  "lifeTaskDisasterPhotos": "ถ่ายรูปความเสียหายก่อนทำความสะอาด",
+  "lifeTaskDisasterContactInsurer": "ติดต่อบริษัทประกันให้เร็วที่สุด",
+  "lifeTaskDisasterProofPack": "ส่งสำเนาเอกสารด้วยชุดเอกสารยืนยัน",
+  "lifeTaskParentFindPapers": "หาว่าเอกสารสำคัญของท่านเก็บไว้ที่ไหน",
+  "lifeTaskParentPermission": "ถามว่าคุณพูดแทนท่านกับธนาคาร แพทย์ และบริษัทประกันได้หรือไม่",
+  "lifeTaskParentMedicines": "จดรายการยาและแพทย์ของท่านไว้",
+  "lifePlanDoClaim": "ยื่นเคลม",
+  "lifePlanStatusClaimed": "เคลมแล้ว",
+  "lifePlanStartBy": "{weeks, plural, other{เริ่มก่อน {date} ฉบับใหม่มักใช้เวลาประมาณ {weeks} สัปดาห์}}",
+  "@lifePlanStartBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanStartNow": "{weeks, plural, other{เริ่มเลยตอนนี้ ฉบับใหม่มักใช้เวลาประมาณ {weeks} สัปดาห์}}",
+  "@lifePlanStartNow": {
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanPrivateTitle": "แผนของคุณ",
+  "lifePlanWhenHappened": "เกิดขึ้นเมื่อไร?",
+  "lifePlanReminderNudge": "แผนของคุณยังมีสิ่งที่ต้องทำ เปิดดูเมื่อคุณว่าง",
+  "lifePlanReminderCheckIn": "บัตรและเอกสารใหม่มาถึงหรือยัง? เปิดแผนเพื่อตรวจสอบ",
+  "lifePlanDoFirst": "ทำสิ่งนี้ก่อน",
+  "lifePlanSteps": "ขั้นตอนอื่น",
+  "lifePlanAddOwnStep": "เพิ่มขั้นตอนของคุณเอง",
+  "lifePlanOwnStepHint": "เช่น แจ้งโรงเรียน",
+  "lifePlanOwnStepLimit": "คุณเพิ่มขั้นตอนของตัวเองได้สูงสุด 20 ขั้นตอน",
+  "lifePlanReadAloud": "อ่านออกเสียง",
+  "lifePlanStopReading": "หยุดอ่าน",
+  "lifePlanReadAloudUnavailable": "โทรศัพท์เครื่องนี้ไม่รองรับการอ่านออกเสียง",
+  "lifePlanProofPack": "สร้างชุดเอกสารยืนยัน",
+  "lifePlanOpenFamily": "เปิดครอบครัว",
+  "lifePlanRemoved": "{count, plural, other{รายการที่คุณลบ {count} รายการนับว่ายกเลิกแล้ว}}",
+  "@lifePlanRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifePlanCosts": "การต่ออายุรายการเหล่านี้มักมีค่าใช้จ่ายประมาณ {amount}",
+  "@lifePlanCosts": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "lifePlanSuggestMove": "กำลังย้ายบ้านใหม่? ดูว่ายังต้องอัปเดตอะไรอีก"
 }

@@ -6988,4 +6988,336 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lifePlanSuggestTripBody => 'Pradėkite persikraustymo į kitą šalį planą. Vaultara parodo, ką sutvarkyti prieš išvykstant.';
+
+  @override
+  String get lifeGroupHome => 'Namai';
+
+  @override
+  String get lifeGroupFamily => 'Šeima';
+
+  @override
+  String get lifeGroupWork => 'Darbas ir studijos';
+
+  @override
+  String get lifeGroupCarTravel => 'Automobilis ir kelionės';
+
+  @override
+  String get lifeGroupEmergency => 'Kažkas nutiko';
+
+  @override
+  String get lifeEventCarBuy => 'Nusipirkau automobilį';
+
+  @override
+  String get lifeEventCarBuyBody => 'Apdrauskite jį prieš parvažiuodami namo, tada perregistruokite automobilį savo vardu.';
+
+  @override
+  String get lifeEventCarSell => 'Pardaviau automobilį';
+
+  @override
+  String get lifeEventCarSellBody => 'Praneškite apie pardavimą registracijos įstaigai ir nutraukite draudimą, kai automobilis nebebus jūsų.';
+
+  @override
+  String get lifeEventJobStart => 'Pradedu naują darbą';
+
+  @override
+  String get lifeEventJobStartBody => 'Prieš pradėdami patikrinkite leidimus, tada susitvarkykite darbo kortelę ir naudas.';
+
+  @override
+  String get lifeEventJobLeave => 'Išeinu iš darbo';
+
+  @override
+  String get lifeEventJobLeaveBody => 'Grąžinkite darbo daiktus ir patikrinkite, kas bus su draudimu, kurį suteikė darbas.';
+
+  @override
+  String get lifeEventLostPhone => 'Pamečiau telefoną arba jį pavogė';
+
+  @override
+  String get lifeEventLostPhoneBody => 'Veikite greitai. Kas turi jūsų telefoną ir SIM kortelę, gali patekti į jūsų banką ir el. paštą. Pirmus žingsnius atlikite iš karto.';
+
+  @override
+  String get lifeEventJobLoss => 'Netekau darbo';
+
+  @override
+  String get lifeEventJobLossBody => 'Tai sunku. Eikite po vieną žingsnį. Kai kurie prašymai turi terminą, tad pradėkite nuo jų.';
+
+  @override
+  String get lifeEventDisaster => 'Gaisras, potvynis ar įsilaužimas namuose';
+
+  @override
+  String get lifeEventDisasterBody => 'Pirmiausia įsitikinkite, kad visi saugūs. Tada fotografuokite, susisiekite su draudiku ir atkurkite tai, kas prarasta.';
+
+  @override
+  String get lifeEventCaringParent => 'Rūpinuosi vienu iš tėvų';
+
+  @override
+  String get lifeEventCaringParentBody => 'Pasirinkite žmogų, kuriuo rūpinatės. Patikrinkite jo dokumentus ir draudimą ir laikykite reikalingus dalykus po ranka.';
+
+  @override
+  String get lifeVariantCarQuestion => 'Pirkote ar pardavėte?';
+
+  @override
+  String get lifeVariantJobQuestion => 'Pradedate ar išeinate?';
+
+  @override
+  String get lifeVariantBuy => 'Pirkau';
+
+  @override
+  String get lifeVariantSell => 'Pardaviau';
+
+  @override
+  String get lifeVariantStart => 'Pradedu';
+
+  @override
+  String get lifeVariantLeave => 'Išeinu';
+
+  @override
+  String get lifeTaskRedirectPost => 'Paprašykite peradresuoti paštą naujuoju adresu';
+
+  @override
+  String get lifeTaskNewAddressEveryone => 'Duokite naują adresą darbdaviui, mokesčių inspekcijai, gydytojui ir mokyklai';
+
+  @override
+  String get lifeTaskMoveUtilities => 'Nutraukite arba perkelkite elektros, vandens ir interneto sutartis';
+
+  @override
+  String get lifeTaskMeterReadings => 'Išsikraustymo dieną užrašykite skaitiklių rodmenis ir nufotografuokite';
+
+  @override
+  String get lifeTaskSaveHomePapers => 'Pridėkite pardavimo ar perleidimo dokumentų nuotrauką į Vaultara';
+
+  @override
+  String get lifeTaskHandOverKeys => 'Perduokite raktus, pultelius ir prieigos korteles';
+
+  @override
+  String get lifeTaskOfficialNameProof => 'Pirmiausia gaukite oficialų naujo vardo įrodymą. Dauguma įstaigų jo prašo.';
+
+  @override
+  String get lifeTaskTellNameChange => 'Praneškite apie naują vardą bankui, darbdaviui, gydytojui ir mokesčių inspekcijai';
+
+  @override
+  String get lifeTaskUpdateOnlineAccounts => 'Pakeiskite vardą el. pašte, telefone ir internetinėse paskyrose';
+
+  @override
+  String get lifeTaskSaveMarriageCertificate => 'Pridėkite santuokos liudijimo nuotrauką į Vaultara';
+
+  @override
+  String get lifeTaskCheckBeneficiaries => 'Patikrinkite, kas nurodytas naudos gavėju jūsų polisuose ir sąskaitose';
+
+  @override
+  String get lifeTaskUpdateWill => 'Sudarykite arba atnaujinkite testamentą';
+
+  @override
+  String get lifeTaskSaveDivorceOrder => 'Pridėkite galutinio sprendimo dėl skyrybų nuotrauką į Vaultara';
+
+  @override
+  String get lifeTaskSplitSharedAccounts => 'Uždarykite arba padalykite bendras sąskaitas ir pakeiskite bendrus slaptažodžius';
+
+  @override
+  String get lifeTaskRegisterBirth => 'Įregistruokite gimimą ir gaukite gimimo liudijimą';
+
+  @override
+  String get lifeTaskAddBabyToFamily => 'Pridėkite kūdikį prie Šeimos, kad būtų sekami jo dokumentai';
+
+  @override
+  String get lifeTaskCarRegisterInName => 'Perregistruokite automobilį savo vardu per įstatymo nustatytą laiką';
+
+  @override
+  String get lifeTaskCarSavePapers => 'Pridėkite pirkimo–pardavimo sutarties nuotrauką į Vaultara';
+
+  @override
+  String get lifeTaskCarNotifySale => 'Praneškite registracijos įstaigai, kad pardavėte automobilį, ir pasilikite įrodymą';
+
+  @override
+  String get lifeTaskCarRemoveTags => 'Išimkite kelių mokesčių įrenginius, stovėjimo korteles ir asmeninius daiktus';
+
+  @override
+  String get lifeTaskJobGiveDetails => 'Duokite naujam darbdaviui banko duomenis ir mokesčių numerį';
+
+  @override
+  String get lifeTaskJobJoinBenefits => 'Prisijunkite prie darbdavio siūlomo sveikatos draudimo ir pensijos';
+
+  @override
+  String get lifeTaskJobReturnItems => 'Grąžinkite darbo daiktus, pvz., nešiojamąjį kompiuterį, kortelę ar raktus';
+
+  @override
+  String get lifeTaskJobLastPayslip => 'Paprašykite paskutinio atlyginimo lapelio ir pažymos apie darbo laikotarpį';
+
+  @override
+  String get lifeTaskJobAskBenefits => 'Paklauskite, kas bus su sveikatos draudimu ir pensija';
+
+  @override
+  String get lifeTaskJobUnemployment => 'Dabar pasiteiraukite apie nedarbo išmoką. Prašymai dažnai turi terminą.';
+
+  @override
+  String get lifeTaskJobPauseDebits => 'Surašykite tiesioginio debeto mokėjimus ir prenumeratas ir sustabdykite, ką galite';
+
+  @override
+  String get lifeTaskStudySaveLetters => 'Pridėkite priėmimo laiško ir mokesčių išrašų nuotraukas į Vaultara';
+
+  @override
+  String get lifeTaskStudyFunding => 'Patikrinkite stipendijų, paskolų ar kitos paramos terminus';
+
+  @override
+  String get lifeTaskRetirePension => 'Paklauskite, kaip ir kada bus mokama pensija';
+
+  @override
+  String get lifeTaskRetireOwnCover => 'Pasirūpinkite savo sveikatos draudimu, jei darbo draudimas baigiasi';
+
+  @override
+  String get lifeTaskCountryTellBankTax => 'Praneškite bankui ir mokesčių inspekcijai, kad išvykstate';
+
+  @override
+  String get lifeTaskCountryScanCopies => 'Pridėkite kiekvieno svarbaus dokumento nuotrauką į Vaultara';
+
+  @override
+  String get lifeTaskCountryLicenceRules => 'Patikrinkite, ar reikia pasikeisti vairuotojo pažymėjimą';
+
+  @override
+  String get lifeTaskChildOwnId => 'Padėkite jam pateikti prašymą asmens tapatybės kortelei, jei reikia';
+
+  @override
+  String get lifeTaskChildBankAccount => 'Padėkite jam atidaryti savo banko sąskaitą';
+
+  @override
+  String get lifeTaskDeathCertificates => 'Gaukite kelias patvirtintas mirties liudijimo kopijas';
+
+  @override
+  String get lifeTaskDeathTellOrganisations => 'Praneškite bankui, draudikams ir darbdaviui';
+
+  @override
+  String get lifeTaskDeathFindWill => 'Suraskite testamentą ir susisiekite su vykdytoju';
+
+  @override
+  String get lifeTaskDeathStopReminders => 'Kai būsite pasiruošę, išjunkite jo įrašų priminimus';
+
+  @override
+  String get lifeTaskPhoneBlockSim => 'Paskambinkite operatoriui ir užblokuokite SIM kortelę. Tai sustabdo SIM keitimo sukčiavimą.';
+
+  @override
+  String get lifeTaskPhoneBlockBanking => 'Paskambinkite į banką ir užblokuokite bankininkystę telefone';
+
+  @override
+  String get lifeTaskPhoneLockErase => 'Užrakinkite arba ištrinkite telefoną iš kito įrenginio';
+
+  @override
+  String get lifeTaskPhoneChangePasswords => 'Pakeiskite el. pašto ir socialinių tinklų slaptažodžius';
+
+  @override
+  String get lifeTaskReportToPolice => 'Praneškite policijai ir pasilikite bylos numerį';
+
+  @override
+  String get lifeTaskDisasterSafePlace => 'Įsitikinkite, kad visi saugūs ir turi kur apsistoti';
+
+  @override
+  String get lifeTaskDisasterPhotos => 'Prieš tvarkydami nufotografuokite žalą';
+
+  @override
+  String get lifeTaskDisasterContactInsurer => 'Kuo greičiau susisiekite su draudiku';
+
+  @override
+  String get lifeTaskDisasterProofPack => 'Išsiųskite dokumentų kopijas su Įrodymų paketu';
+
+  @override
+  String get lifeTaskParentFindPapers => 'Sužinokite, kur laikomi jo svarbūs dokumentai';
+
+  @override
+  String get lifeTaskParentPermission => 'Paklauskite, ar galite jo vardu kalbėti su banku, gydytoju ir draudiku';
+
+  @override
+  String get lifeTaskParentMedicines => 'Turėkite jo vaistų ir gydytojų sąrašą';
+
+  @override
+  String get lifePlanDoClaim => 'Pateikti pretenziją';
+
+  @override
+  String get lifePlanStatusClaimed => 'Pretenzija pateikta';
+
+  @override
+  String lifePlanStartBy(String date, int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Pradėkite iki $date. Naujas paprastai užtrunka apie $weeks savaičių.',
+      many: 'Pradėkite iki $date. Naujas paprastai užtrunka apie $weeks savaitės.',
+      few: 'Pradėkite iki $date. Naujas paprastai užtrunka apie $weeks savaites.',
+      one: 'Pradėkite iki $date. Naujas paprastai užtrunka apie $weeks savaitę.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanStartNow(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Pradėkite dabar. Naujas paprastai užtrunka apie $weeks savaičių.',
+      many: 'Pradėkite dabar. Naujas paprastai užtrunka apie $weeks savaitės.',
+      few: 'Pradėkite dabar. Naujas paprastai užtrunka apie $weeks savaites.',
+      one: 'Pradėkite dabar. Naujas paprastai užtrunka apie $weeks savaitę.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lifePlanPrivateTitle => 'Jūsų planas';
+
+  @override
+  String get lifePlanWhenHappened => 'Kada tai nutiko?';
+
+  @override
+  String get lifePlanReminderNudge => 'Jūsų plane dar yra darbų. Atidarykite jį, kai turėsite minutę.';
+
+  @override
+  String get lifePlanReminderCheckIn => 'Ar atkeliavo naujos kortelės ir dokumentai? Atidarykite planą ir patikrinkite.';
+
+  @override
+  String get lifePlanDoFirst => 'Pirmiausia padarykite tai';
+
+  @override
+  String get lifePlanSteps => 'Kiti žingsniai';
+
+  @override
+  String get lifePlanAddOwnStep => 'Pridėti savo žingsnį';
+
+  @override
+  String get lifePlanOwnStepHint => 'Pavyzdžiui: Pranešti mokyklai';
+
+  @override
+  String get lifePlanOwnStepLimit => 'Galite pridėti iki 20 savo žingsnių.';
+
+  @override
+  String get lifePlanReadAloud => 'Skaityti garsiai';
+
+  @override
+  String get lifePlanStopReading => 'Sustabdyti skaitymą';
+
+  @override
+  String get lifePlanReadAloudUnavailable => 'Šiame telefone skaitymas garsiai nepasiekiamas.';
+
+  @override
+  String get lifePlanProofPack => 'Sukurti įrodymų paketą';
+
+  @override
+  String get lifePlanOpenFamily => 'Atidaryti Šeimą';
+
+  @override
+  String lifePlanRemoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jūsų ištrintų įrašų laikoma nutrauktais.',
+      many: '$count jūsų ištrinto įrašo laikoma nutrauktais.',
+      few: '$count jūsų ištrinti įrašai laikomi nutrauktais.',
+      one: '$count jūsų ištrintas įrašas laikomas nutrauktu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lifePlanCosts(String amount) {
+    return 'Jų atnaujinimas paprastai kainuoja apie $amount.';
+  }
+
+  @override
+  String get lifePlanSuggestMove => 'Kraustotės į naujus namus? Pažiūrėkite, ką dar reikia atnaujinti.';
 }
