@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "Kuukausiraportti",
   "storyBusiness3Body": "Joka kuukausi raportti näyttää, mikä on voimassa, mikä päättymässä ja mitä puuttuu.",
   "storyBusiness4Title": "Pyydä päivitystä",
-  "storyBusiness4Body": "Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse."
+  "storyBusiness4Body": "Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse.",
+  "categoryHealthAndMedical": "Terveys ja lääkinnällinen",
+  "categoryMembershipsAndSubscriptions": "Jäsenyydet ja tilaukset",
+  "subcategoryFirearmLicences": "Aseluvat",
+  "subcategoryInternationalDrivingPermits": "Kansainväliset ajokortit",
+  "subcategoryBoatAndPilotLicences": "Vene- ja lentolupakirjat",
+  "subcategorySafetyCertificates": "Ensiapu- ja turvallisuustodistukset",
+  "subcategoryElectricalComplianceCertificates": "Sähkötarkastuspöytäkirjat",
+  "subcategoryFireEquipmentServices": "Palolaitteiden huollot",
+  "subcategoryMedicalAidCards": "Sairausvakuutuskortit",
+  "subcategoryPrescriptions": "Reseptit",
+  "subcategoryVaccinations": "Rokotukset",
+  "subcategoryMedicalCertificates": "Lääkärintodistukset",
+  "subcategoryGymMemberships": "Kuntosalijäsenyydet",
+  "subcategoryClubMemberships": "Seurajäsenyydet",
+  "subcategorySubscriptions": "Tilaukset",
+  "subcategoryWarranties": "Takuut",
+  "yoursTag": "Oma",
+  "expiredBadge": "{count, plural, =1{{count} vanhentunut} other{{count} vanhentunutta}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Vaihda kuvake",
+  "categoryLookTitle": "Kuvake ja väri",
+  "categoryLookAppColour": "Sovelluksen väri",
+  "categoryLookHint": "Valittu nimen perusteella. Vaihda napauttamalla.",
+  "renameCategoryTitle": "Nimeä luokka uudelleen",
+  "renameGroupTitle": "Nimeä ryhmä uudelleen",
+  "nameInUse": "Nimi on jo käytössä täällä.",
+  "freeGroupsProgress": "Ilmaiset ryhmät: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Olet saavuttanut ilmaisversion rajan, {limit} omaa ryhmää. Päivitä Premiumiin, niin voit luoda rajattomasti ryhmiä.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Lajittele voimassaolon mukaan",
+  "recordsSortName": "Lajittele nimen mukaan",
+  "recordsSelect": "Valitse",
+  "recordsSelected": "{count, plural, =1{{count} valittu} other{{count} valittu}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Siirrä",
+  "recordsMoveTitle": "Siirrä kohteeseen",
+  "recordsMoved": "{count, plural, =1{{count} tietue siirretty} other{{count} tietuetta siirretty}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Poistetaanko {count} tietue?} other{Poistetaanko {count} tietuetta?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ne siirtyvät kohtaan ”Äskettäin poistetut”, josta voit palauttaa ne 30 päivän ajan.",
+  "recordsDeletedMany": "{count, plural, =1{{count} tietue poistettu} other{{count} tietuetta poistettu}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Vanhenee pian",
+  "recordsShowAll": "{count, plural, =1{Näytä kaikki tietueet} other{Näytä kaikki {count} tietuetta}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ryhmässä {group} ei vielä ole mitään",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skannaa kortti tai asiakirja tai lisää se käsin. Vaultara muistuttaa ennen kuin se vanhenee.",
+  "recordsScan": "Skannaa"
 }

@@ -2622,5 +2622,113 @@
   "storyBusiness3Title": "Hileko txostena",
   "storyBusiness3Body": "Hilero txosten batek erakusten du zer dagoen indarrean, zer iraungitzen ari den eta zer falta den.",
   "storyBusiness4Title": "Eskatu eguneratze bat",
-  "storyBusiness4Body": "Bidali esteka bat eta langileek beraiek igoko dute dokumentu berritua."
+  "storyBusiness4Body": "Bidali esteka bat eta langileek beraiek igoko dute dokumentu berritua.",
+  "categoryHealthAndMedical": "Osasuna eta medikuntza",
+  "categoryMembershipsAndSubscriptions": "Bazkidetzak eta harpidetzak",
+  "subcategoryFirearmLicences": "Arma-lizentziak",
+  "subcategoryInternationalDrivingPermits": "Nazioarteko gidabaimenak",
+  "subcategoryBoatAndPilotLicences": "Itsasontzi- eta pilotu-lizentziak",
+  "subcategorySafetyCertificates": "Lehen sorospen eta segurtasun ziurtagiriak",
+  "subcategoryElectricalComplianceCertificates": "Instalazio elektrikoaren buletinak",
+  "subcategoryFireEquipmentServices": "Suteen aurkako ekipoen mantentzea",
+  "subcategoryMedicalAidCards": "Osasun-txartelak",
+  "subcategoryPrescriptions": "Errezetak",
+  "subcategoryVaccinations": "Txertoak",
+  "subcategoryMedicalCertificates": "Mediku-ziurtagiriak",
+  "subcategoryGymMemberships": "Gimnasioko bazkidetzak",
+  "subcategoryClubMemberships": "Klubetako bazkidetzak",
+  "subcategorySubscriptions": "Harpidetzak",
+  "subcategoryWarranties": "Bermeak",
+  "yoursTag": "Zurea",
+  "expiredBadge": "{count, plural, =1{{count} iraungita} other{{count} iraungita}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Aldatu ikonoa",
+  "categoryLookTitle": "Ikonoa eta kolorea",
+  "categoryLookAppColour": "Aplikazioaren kolorea",
+  "categoryLookHint": "Izenaren arabera aukeratua. Sakatu aldatzeko.",
+  "renameCategoryTitle": "Aldatu kategoriaren izena",
+  "renameGroupTitle": "Aldatu taldearen izena",
+  "nameInUse": "Izen hori dagoeneko erabiltzen da hemen.",
+  "freeGroupsProgress": "Doako taldeak: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Doako planaren mugara iritsi zara: {limit} talde pertsonalizatu. Igo Premium-era talde mugagabeak sortzeko.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ordenatu iraungitze-dataren arabera",
+  "recordsSortName": "Ordenatu izenaren arabera",
+  "recordsSelect": "Hautatu",
+  "recordsSelected": "{count, plural, =1{{count} hautatuta} other{{count} hautatuta}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Eraman",
+  "recordsMoveTitle": "Eraman hona",
+  "recordsMoved": "{count, plural, =1{Erregistro {count} eraman da} other{{count} erregistro eraman dira}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Erregistro {count} ezabatu?} other{{count} erregistro ezabatu?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "«Duela gutxi ezabatuak» atalera joango dira, eta 30 egunez berreskura ditzakezu.",
+  "recordsDeletedMany": "{count, plural, =1{Erregistro {count} ezabatu da} other{{count} erregistro ezabatu dira}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Laster iraungiko da",
+  "recordsShowAll": "{count, plural, =1{Erakutsi erregistro guztiak} other{Erakutsi {count} erregistroak}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Oraindik ez dago ezer hemen: {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Eskaneatu txartela edo dokumentua, edo gehitu eskuz. Vaultarak gogoraraziko dizu iraungi aurretik.",
+  "recordsScan": "Eskaneatu"
 }

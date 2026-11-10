@@ -7930,4 +7930,184 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Stuur een link en personeel uploadt zelf het verlengde document.';
+
+  @override
+  String get categoryHealthAndMedical => 'Gezondheid en medisch';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Lidmaatschappen en abonnementen';
+
+  @override
+  String get subcategoryFirearmLicences => 'Wapenvergunningen';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Internationale rijbewijzen';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Vaar- en vliegbrevetten';
+
+  @override
+  String get subcategorySafetyCertificates => 'EHBO- en veiligheidscertificaten';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Keuringsrapporten elektra';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Onderhoud brandblusmiddelen';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Zorgpassen';
+
+  @override
+  String get subcategoryPrescriptions => 'Recepten';
+
+  @override
+  String get subcategoryVaccinations => 'Vaccinaties';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Medische verklaringen';
+
+  @override
+  String get subcategoryGymMemberships => 'Sportschoollidmaatschappen';
+
+  @override
+  String get subcategoryClubMemberships => 'Clublidmaatschappen';
+
+  @override
+  String get subcategorySubscriptions => 'Abonnementen';
+
+  @override
+  String get subcategoryWarranties => 'Garanties';
+
+  @override
+  String get yoursTag => 'Van jou';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verlopen',
+      one: '$count verlopen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Icoon wijzigen';
+
+  @override
+  String get categoryLookTitle => 'Icoon en kleur';
+
+  @override
+  String get categoryLookAppColour => 'App-kleur';
+
+  @override
+  String get categoryLookHint => 'Gekozen op basis van de naam. Tik om te wijzigen.';
+
+  @override
+  String get renameCategoryTitle => 'Categorie hernoemen';
+
+  @override
+  String get renameGroupTitle => 'Groep hernoemen';
+
+  @override
+  String get nameInUse => 'Die naam wordt hier al gebruikt.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Gratis groepen: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Je hebt de limiet van het gratis abonnement van $limit eigen groepen bereikt. Upgrade naar Premium voor onbeperkt groepen.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sorteren op vervaldatum';
+
+  @override
+  String get recordsSortName => 'Sorteren op naam';
+
+  @override
+  String get recordsSelect => 'Selecteren';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count geselecteerd',
+      one: '$count geselecteerd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Verplaatsen';
+
+  @override
+  String get recordsMoveTitle => 'Verplaatsen naar';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items verplaatst',
+      one: '$count item verplaatst',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items verwijderen?',
+      one: '$count item verwijderen?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ze gaan naar \'Recent verwijderd\', waar je ze 30 dagen lang kunt terugzetten.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items verwijderd',
+      one: '$count item verwijderd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Verloopt binnenkort';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Alle $count items tonen',
+      one: 'Alle items tonen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Nog niets in $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Scan de kaart of het document, of voeg het handmatig toe. Vaultara herinnert je voordat het verloopt.';
+
+  @override
+  String get recordsScan => 'Scannen';
 }

@@ -2613,5 +2613,113 @@
   "storyBusiness3Title": "Report mensile",
   "storyBusiness3Body": "Ogni mese un report mostra cosa è valido, cosa sta scadendo e cosa manca.",
   "storyBusiness4Title": "Richiedi un aggiornamento",
-  "storyBusiness4Body": "Invia un link e il personale carica da solo il documento rinnovato."
+  "storyBusiness4Body": "Invia un link e il personale carica da solo il documento rinnovato.",
+  "categoryHealthAndMedical": "Salute e medicina",
+  "categoryMembershipsAndSubscriptions": "Abbonamenti e iscrizioni",
+  "subcategoryFirearmLicences": "Porto d'armi",
+  "subcategoryInternationalDrivingPermits": "Patenti internazionali",
+  "subcategoryBoatAndPilotLicences": "Patenti nautiche e licenze di volo",
+  "subcategorySafetyCertificates": "Certificati di primo soccorso e sicurezza",
+  "subcategoryElectricalComplianceCertificates": "Certificati di conformità elettrica",
+  "subcategoryFireEquipmentServices": "Manutenzione antincendio",
+  "subcategoryMedicalAidCards": "Tessere sanitarie",
+  "subcategoryPrescriptions": "Prescrizioni",
+  "subcategoryVaccinations": "Vaccinazioni",
+  "subcategoryMedicalCertificates": "Certificati medici",
+  "subcategoryGymMemberships": "Abbonamenti in palestra",
+  "subcategoryClubMemberships": "Iscrizioni a club",
+  "subcategorySubscriptions": "Abbonamenti",
+  "subcategoryWarranties": "Garanzie",
+  "yoursTag": "Tuo",
+  "expiredBadge": "{count, plural, =1{{count} scaduto} other{{count} scaduti}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Cambia icona",
+  "categoryLookTitle": "Icona e colore",
+  "categoryLookAppColour": "Colore dell'app",
+  "categoryLookHint": "Scelta in base al nome. Tocca per cambiarla.",
+  "renameCategoryTitle": "Rinomina categoria",
+  "renameGroupTitle": "Rinomina gruppo",
+  "nameInUse": "Questo nome è già usato qui.",
+  "freeGroupsProgress": "Gruppi gratuiti: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Hai raggiunto il limite del piano Free di {limit} gruppi personalizzati. Passa a Premium per creare gruppi illimitati.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ordina per scadenza",
+  "recordsSortName": "Ordina per nome",
+  "recordsSelect": "Seleziona",
+  "recordsSelected": "{count, plural, =1{{count} selezionato} other{{count} selezionati}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Sposta",
+  "recordsMoveTitle": "Sposta in",
+  "recordsMoved": "{count, plural, =1{{count} elemento spostato} other{{count} elementi spostati}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Eliminare {count} elemento?} other{Eliminare {count} elementi?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Finiscono in «Eliminati di recente», dove puoi recuperarli per 30 giorni.",
+  "recordsDeletedMany": "{count, plural, =1{{count} elemento eliminato} other{{count} elementi eliminati}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "In scadenza",
+  "recordsShowAll": "{count, plural, =1{Mostra tutti gli elementi} other{Mostra tutti i {count} elementi}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ancora niente in {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Scansiona la tessera o il documento, oppure aggiungilo a mano. Vaultara ti avvisa prima della scadenza.",
+  "recordsScan": "Scansiona"
 }

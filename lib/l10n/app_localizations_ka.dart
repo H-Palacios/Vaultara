@@ -7926,4 +7926,184 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'გაგზავნეთ ბმული და თანამშრომელი თავად ატვირთავს განახლებულ დოკუმენტს.';
+
+  @override
+  String get categoryHealthAndMedical => 'ჯანმრთელობა და მედიცინა';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'წევრობები და გამოწერები';
+
+  @override
+  String get subcategoryFirearmLicences => 'იარაღის ლიცენზიები';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'საერთაშორისო მართვის მოწმობები';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'ნავისა და პილოტის ლიცენზიები';
+
+  @override
+  String get subcategorySafetyCertificates => 'პირველი დახმარებისა და უსაფრთხოების სერტიფიკატები';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'ელექტრო შესაბამისობის სერტიფიკატები';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'ხანძარსაწინააღმდეგო აღჭურვილობის მომსახურება';
+
+  @override
+  String get subcategoryMedicalAidCards => 'ჯანმრთელობის დაზღვევის ბარათები';
+
+  @override
+  String get subcategoryPrescriptions => 'რეცეპტები';
+
+  @override
+  String get subcategoryVaccinations => 'ვაქცინაციები';
+
+  @override
+  String get subcategoryMedicalCertificates => 'სამედიცინო ცნობები';
+
+  @override
+  String get subcategoryGymMemberships => 'სპორტდარბაზის წევრობები';
+
+  @override
+  String get subcategoryClubMemberships => 'კლუბის წევრობები';
+
+  @override
+  String get subcategorySubscriptions => 'გამოწერები';
+
+  @override
+  String get subcategoryWarranties => 'გარანტიები';
+
+  @override
+  String get yoursTag => 'თქვენი';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ვადაგასული',
+      one: '$count ვადაგასული',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'ხატულის შეცვლა';
+
+  @override
+  String get categoryLookTitle => 'ხატულა და ფერი';
+
+  @override
+  String get categoryLookAppColour => 'აპის ფერი';
+
+  @override
+  String get categoryLookHint => 'შერჩეულია სახელის მიხედვით. შესაცვლელად შეეხეთ.';
+
+  @override
+  String get renameCategoryTitle => 'კატეგორიის გადარქმევა';
+
+  @override
+  String get renameGroupTitle => 'ჯგუფის გადარქმევა';
+
+  @override
+  String get nameInUse => 'ეს სახელი აქ უკვე გამოიყენება.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'უფასო ჯგუფები: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'მიაღწიეთ უფასო გეგმის ლიმიტს — $limit საკუთარი ჯგუფი. შეუზღუდავი ჯგუფებისთვის გადადით Premium-ზე.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'დალაგება ვადის მიხედვით';
+
+  @override
+  String get recordsSortName => 'დალაგება სახელის მიხედვით';
+
+  @override
+  String get recordsSelect => 'არჩევა';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'არჩეულია $count',
+      one: 'არჩეულია $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'გადატანა';
+
+  @override
+  String get recordsMoveTitle => 'გადატანა აქ';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'გადატანილია $count ჩანაწერი',
+      one: 'გადატანილია $count ჩანაწერი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'წაიშალოს $count ჩანაწერი?',
+      one: 'წაიშალოს $count ჩანაწერი?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'ისინი გადავა „ახლახან წაშლილი“-ში, საიდანაც 30 დღის განმავლობაში შეგიძლიათ აღდგენა.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'წაიშალა $count ჩანაწერი',
+      one: 'წაიშალა $count ჩანაწერი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'მალე იწურება';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ყველა $count ჩანაწერის ჩვენება',
+      one: 'ყველა ჩანაწერის ჩვენება',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group ჯერ ცარიელია';
+  }
+
+  @override
+  String get recordsEmptyBody => 'დაასკანერეთ ბარათი ან დოკუმენტი, ან დაამატეთ ხელით. Vaultara შეგახსენებთ ვადის ამოწურვამდე.';
+
+  @override
+  String get recordsScan => 'სკანირება';
 }

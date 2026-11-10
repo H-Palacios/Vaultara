@@ -7930,4 +7930,184 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Bidali esteka bat eta langileek beraiek igoko dute dokumentu berritua.';
+
+  @override
+  String get categoryHealthAndMedical => 'Osasuna eta medikuntza';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Bazkidetzak eta harpidetzak';
+
+  @override
+  String get subcategoryFirearmLicences => 'Arma-lizentziak';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Nazioarteko gidabaimenak';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Itsasontzi- eta pilotu-lizentziak';
+
+  @override
+  String get subcategorySafetyCertificates => 'Lehen sorospen eta segurtasun ziurtagiriak';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Instalazio elektrikoaren buletinak';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Suteen aurkako ekipoen mantentzea';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Osasun-txartelak';
+
+  @override
+  String get subcategoryPrescriptions => 'Errezetak';
+
+  @override
+  String get subcategoryVaccinations => 'Txertoak';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Mediku-ziurtagiriak';
+
+  @override
+  String get subcategoryGymMemberships => 'Gimnasioko bazkidetzak';
+
+  @override
+  String get subcategoryClubMemberships => 'Klubetako bazkidetzak';
+
+  @override
+  String get subcategorySubscriptions => 'Harpidetzak';
+
+  @override
+  String get subcategoryWarranties => 'Bermeak';
+
+  @override
+  String get yoursTag => 'Zurea';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iraungita',
+      one: '$count iraungita',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Aldatu ikonoa';
+
+  @override
+  String get categoryLookTitle => 'Ikonoa eta kolorea';
+
+  @override
+  String get categoryLookAppColour => 'Aplikazioaren kolorea';
+
+  @override
+  String get categoryLookHint => 'Izenaren arabera aukeratua. Sakatu aldatzeko.';
+
+  @override
+  String get renameCategoryTitle => 'Aldatu kategoriaren izena';
+
+  @override
+  String get renameGroupTitle => 'Aldatu taldearen izena';
+
+  @override
+  String get nameInUse => 'Izen hori dagoeneko erabiltzen da hemen.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Doako taldeak: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Doako planaren mugara iritsi zara: $limit talde pertsonalizatu. Igo Premium-era talde mugagabeak sortzeko.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Ordenatu iraungitze-dataren arabera';
+
+  @override
+  String get recordsSortName => 'Ordenatu izenaren arabera';
+
+  @override
+  String get recordsSelect => 'Hautatu';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hautatuta',
+      one: '$count hautatuta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Eraman';
+
+  @override
+  String get recordsMoveTitle => 'Eraman hona';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count erregistro eraman dira',
+      one: 'Erregistro $count eraman da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count erregistro ezabatu?',
+      one: 'Erregistro $count ezabatu?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '«Duela gutxi ezabatuak» atalera joango dira, eta 30 egunez berreskura ditzakezu.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count erregistro ezabatu dira',
+      one: 'Erregistro $count ezabatu da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Laster iraungiko da';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Erakutsi $count erregistroak',
+      one: 'Erakutsi erregistro guztiak',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Oraindik ez dago ezer hemen: $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Eskaneatu txartela edo dokumentua, edo gehitu eskuz. Vaultarak gogoraraziko dizu iraungi aurretik.';
+
+  @override
+  String get recordsScan => 'Eskaneatu';
 }

@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Månadsrapport",
   "storyBusiness3Body": "Kvar månad viser ein rapport kva som er gyldig, kva som går ut, og kva som manglar.",
   "storyBusiness4Title": "Be om ei oppdatering",
-  "storyBusiness4Body": "Send ei lenkje, så lastar dei tilsette sjølve opp det fornya dokumentet."
+  "storyBusiness4Body": "Send ei lenkje, så lastar dei tilsette sjølve opp det fornya dokumentet.",
+  "categoryHealthAndMedical": "Helse og medisinsk",
+  "categoryMembershipsAndSubscriptions": "Medlemskap og abonnement",
+  "subcategoryFirearmLicences": "Våpenlisensar",
+  "subcategoryInternationalDrivingPermits": "Internasjonale førarkort",
+  "subcategoryBoatAndPilotLicences": "Båt- og flysertifikat",
+  "subcategorySafetyCertificates": "Førstehjelps- og tryggleiksbevis",
+  "subcategoryElectricalComplianceCertificates": "Samsvarserklæringar for elektro",
+  "subcategoryFireEquipmentServices": "Service på brannutstyr",
+  "subcategoryMedicalAidCards": "Helsekort",
+  "subcategoryPrescriptions": "Reseptar",
+  "subcategoryVaccinations": "Vaksinar",
+  "subcategoryMedicalCertificates": "Legeerklæringar",
+  "subcategoryGymMemberships": "Treningssentermedlemskap",
+  "subcategoryClubMemberships": "Klubbmedlemskap",
+  "subcategorySubscriptions": "Abonnement",
+  "subcategoryWarranties": "Garantiar",
+  "yoursTag": "Ditt",
+  "expiredBadge": "{count, plural, =1{{count} utgått} other{{count} utgått}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Byt ikon",
+  "categoryLookTitle": "Ikon og farge",
+  "categoryLookAppColour": "Fargen til appen",
+  "categoryLookHint": "Vald ut frå namnet. Trykk for å endre.",
+  "renameCategoryTitle": "Gi kategorien nytt namn",
+  "renameGroupTitle": "Gi gruppa nytt namn",
+  "nameInUse": "Det namnet er alt i bruk her.",
+  "freeGroupsProgress": "Gratis grupper: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Du har nådd grensa i gratisplanen på {limit} eigne grupper. Oppgrader til Premium for uavgrensa tal på grupper.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Sorter etter utløpsdato",
+  "recordsSortName": "Sorter etter namn",
+  "recordsSelect": "Vel",
+  "recordsSelected": "{count, plural, =1{{count} vald} other{{count} valde}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Flytt",
+  "recordsMoveTitle": "Flytt til",
+  "recordsMoved": "{count, plural, =1{{count} oppføring flytta} other{{count} oppføringar flytta}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Slette {count} oppføring?} other{Slette {count} oppføringar?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Dei hamnar i «Nyleg sletta», der du kan hente dei tilbake i 30 dagar.",
+  "recordsDeletedMany": "{count, plural, =1{{count} oppføring sletta} other{{count} oppføringar sletta}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Går snart ut",
+  "recordsShowAll": "{count, plural, =1{Vis alle oppføringar} other{Vis alle {count} oppføringar}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ingenting i {group} enno",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skann kortet eller dokumentet, eller legg det til manuelt. Vaultara minner deg på det før det går ut.",
+  "recordsScan": "Skann"
 }

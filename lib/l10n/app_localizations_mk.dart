@@ -7926,4 +7926,184 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Испратете врска и вработениот сам го прикачува обновениот документ.';
+
+  @override
+  String get categoryHealthAndMedical => 'Здравје и медицина';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Членства и претплати';
+
+  @override
+  String get subcategoryFirearmLicences => 'Дозволи за оружје';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Меѓународни возачки дозволи';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Дозволи за брод и пилот';
+
+  @override
+  String get subcategorySafetyCertificates => 'Сертификати за прва помош и безбедност';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Атести за електрични инсталации';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Сервис на противпожарна опрема';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Картички за здравствено осигурување';
+
+  @override
+  String get subcategoryPrescriptions => 'Рецепти';
+
+  @override
+  String get subcategoryVaccinations => 'Вакцинации';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Лекарски потврди';
+
+  @override
+  String get subcategoryGymMemberships => 'Членства во теретана';
+
+  @override
+  String get subcategoryClubMemberships => 'Членства во клубови';
+
+  @override
+  String get subcategorySubscriptions => 'Претплати';
+
+  @override
+  String get subcategoryWarranties => 'Гаранции';
+
+  @override
+  String get yoursTag => 'Ваше';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истечени',
+      one: '$count истечено',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Промени икона';
+
+  @override
+  String get categoryLookTitle => 'Икона и боја';
+
+  @override
+  String get categoryLookAppColour => 'Боја на апликацијата';
+
+  @override
+  String get categoryLookHint => 'Избрано според името. Допрете за промена.';
+
+  @override
+  String get renameCategoryTitle => 'Преименувај категорија';
+
+  @override
+  String get renameGroupTitle => 'Преименувај група';
+
+  @override
+  String get nameInUse => 'Ова име веќе се користи тука.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Бесплатни групи: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Го достигнавте ограничувањето на бесплатниот план од $limit сопствени групи. Преминете на Premium за неограничен број групи.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Подреди по датум на истекување';
+
+  @override
+  String get recordsSortName => 'Подреди по име';
+
+  @override
+  String get recordsSelect => 'Избери';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count избрани',
+      one: '$count избрано',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Премести';
+
+  @override
+  String get recordsMoveTitle => 'Премести во';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Преместени $count записи',
+      one: 'Преместен $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Да се избришат $count записи?',
+      one: 'Да се избрише $count запис?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Одат во „Неодамна избришани“, од каде што можете да ги вратите 30 дена.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Избришани $count записи',
+      one: 'Избришан $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Наскоро истекува';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Прикажи ги сите $count записи',
+      one: 'Прикажи ги сите записи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Сè уште нема ништо во $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Скенирајте ја картичката или документот или додајте рачно. Vaultara ќе ве потсети пред да истече.';
+
+  @override
+  String get recordsScan => 'Скенирај';
 }

@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "月度报告",
   "storyBusiness3Body": "每月报告会显示哪些有效、哪些即将到期、哪些缺失。",
   "storyBusiness4Title": "请求更新",
-  "storyBusiness4Body": "发送链接，员工自行上传续期后的证件。"
+  "storyBusiness4Body": "发送链接，员工自行上传续期后的证件。",
+  "categoryHealthAndMedical": "健康与医疗",
+  "categoryMembershipsAndSubscriptions": "会员与订阅",
+  "subcategoryFirearmLicences": "持枪许可证",
+  "subcategoryInternationalDrivingPermits": "国际驾照",
+  "subcategoryBoatAndPilotLicences": "船舶与飞行执照",
+  "subcategorySafetyCertificates": "急救与安全证书",
+  "subcategoryElectricalComplianceCertificates": "电气合格证明",
+  "subcategoryFireEquipmentServices": "消防设备维护",
+  "subcategoryMedicalAidCards": "医保卡",
+  "subcategoryPrescriptions": "处方",
+  "subcategoryVaccinations": "疫苗接种",
+  "subcategoryMedicalCertificates": "医疗证明",
+  "subcategoryGymMemberships": "健身房会员",
+  "subcategoryClubMemberships": "俱乐部会员",
+  "subcategorySubscriptions": "订阅",
+  "subcategoryWarranties": "保修与保证",
+  "yoursTag": "我的",
+  "expiredBadge": "{count, plural, =1{{count} 项已过期} other{{count} 项已过期}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "更换图标",
+  "categoryLookTitle": "图标和颜色",
+  "categoryLookAppColour": "应用颜色",
+  "categoryLookHint": "已根据名称选择。点按可更改。",
+  "renameCategoryTitle": "重命名类别",
+  "renameGroupTitle": "重命名分组",
+  "nameInUse": "此名称已在这里使用。",
+  "freeGroupsProgress": "免费分组：{current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "你已达到免费方案 {limit} 个自定义分组的上限。升级到 Premium 即可无限创建分组。",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "按到期日期排序",
+  "recordsSortName": "按名称排序",
+  "recordsSelect": "选择",
+  "recordsSelected": "{count, plural, =1{已选择 {count} 项} other{已选择 {count} 项}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "移动",
+  "recordsMoveTitle": "移动到",
+  "recordsMoved": "{count, plural, =1{已移动 {count} 条记录} other{已移动 {count} 条记录}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{删除 {count} 条记录？} other{删除 {count} 条记录？}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "它们会进入“最近删除”，30 天内可以恢复。",
+  "recordsDeletedMany": "{count, plural, =1{已删除 {count} 条记录} other{已删除 {count} 条记录}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "即将到期",
+  "recordsShowAll": "{count, plural, =1{显示所有记录} other{显示全部 {count} 条记录}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "还没有{group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "扫描卡片或文件，或手动添加。Vaultara 会在到期前提醒你。",
+  "recordsScan": "扫描"
 }

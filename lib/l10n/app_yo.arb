@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Ijabọ oṣooṣu",
   "storyBusiness3Body": "Ni oṣu kọọkan ijabọ kan fihan ohun ti o wulo, ohun ti n pari ati ohun ti o sonu.",
   "storyBusiness4Title": "Beere fun imudojuiwọn",
-  "storyBusiness4Body": "Fi ọna asopọ ranṣẹ ati pe oṣiṣẹ yoo gbe iwe ti a sọ di tuntun soke funrararẹ."
+  "storyBusiness4Body": "Fi ọna asopọ ranṣẹ ati pe oṣiṣẹ yoo gbe iwe ti a sọ di tuntun soke funrararẹ.",
+  "categoryHealthAndMedical": "Ìlera àti ìṣègùn",
+  "categoryMembershipsAndSubscriptions": "Ọmọ ẹgbẹ́ àti ìforúkọsílẹ̀",
+  "subcategoryFirearmLicences": "Ìwé àṣẹ ìbọn",
+  "subcategoryInternationalDrivingPermits": "Ìwé àṣẹ ìwakọ̀ àgbáyé",
+  "subcategoryBoatAndPilotLicences": "Ìwé àṣẹ ọkọ̀ ojú omi àti awakọ̀ òfuurufú",
+  "subcategorySafetyCertificates": "Ìwé ẹ̀rí ìrànlọ́wọ́ àkọ́kọ́ àti ààbò",
+  "subcategoryElectricalComplianceCertificates": "Ìwé ẹ̀rí ìbámu iná mànàmáná",
+  "subcategoryFireEquipmentServices": "Iṣẹ́ ohun èlò iná",
+  "subcategoryMedicalAidCards": "Káàdì ìbánigbófò ìlera",
+  "subcategoryPrescriptions": "Ìwé ìtọ́ni oògùn",
+  "subcategoryVaccinations": "Abẹ́rẹ́ àjẹsára",
+  "subcategoryMedicalCertificates": "Ìwé ẹ̀rí ìṣègùn",
+  "subcategoryGymMemberships": "Ọmọ ẹgbẹ́ jíìmù",
+  "subcategoryClubMemberships": "Ọmọ ẹgbẹ́ kílọ́bù",
+  "subcategorySubscriptions": "Ìforúkọsílẹ̀",
+  "subcategoryWarranties": "Ìdánilójú",
+  "yoursTag": "Tìrẹ",
+  "expiredBadge": "{count, plural, =1{{count} ti parí} other{{count} ti parí}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Yí àmì padà",
+  "categoryLookTitle": "Àmì àti àwọ̀",
+  "categoryLookAppColour": "Àwọ̀ áàpù",
+  "categoryLookHint": "A yàn án láti orúkọ. Tẹ̀ láti yí i padà.",
+  "renameCategoryTitle": "Yí orúkọ ẹ̀ka padà",
+  "renameGroupTitle": "Yí orúkọ ẹgbẹ́ padà",
+  "nameInUse": "Orúkọ yẹn ti wà ní lílò níbí.",
+  "freeGroupsProgress": "Ẹgbẹ́ ọ̀fẹ́: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "O ti dé òpin ètò Ọ̀fẹ́ tí ó jẹ́ ẹgbẹ́ àdáni {limit}. Gbéga sí Premium láti ṣẹ̀dá ẹgbẹ́ láìní òpin.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "To lẹ́sẹẹsẹ nípa ọjọ́ ìparí",
+  "recordsSortName": "To lẹ́sẹẹsẹ nípa orúkọ",
+  "recordsSelect": "Yàn",
+  "recordsSelected": "{count, plural, =1{A ti yan {count}} other{A ti yan {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Gbé lọ",
+  "recordsMoveTitle": "Gbé lọ sí",
+  "recordsMoved": "{count, plural, =1{A ti gbé àkọsílẹ̀ {count} lọ} other{A ti gbé àkọsílẹ̀ {count} lọ}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Pa àkọsílẹ̀ {count} rẹ́?} other{Pa àkọsílẹ̀ {count} rẹ́?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Wọ́n á lọ sí \"Ti parẹ laipẹ\", níbi tí o ti lè dá wọn padà fún ọjọ́ 30.",
+  "recordsDeletedMany": "{count, plural, =1{A ti pa àkọsílẹ̀ {count} rẹ́} other{A ti pa àkọsílẹ̀ {count} rẹ́}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Yóò parí láìpẹ́",
+  "recordsShowAll": "{count, plural, =1{Fi gbogbo àkọsílẹ̀ hàn} other{Fi gbogbo àkọsílẹ̀ {count} hàn}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Kò sí nǹkan kan nínú {group} síbẹ̀",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Ṣe àyẹ̀wò káàdì tàbí ìwé náà, tàbí fi kún un ní ọwọ́. Vaultara yóò rán ọ létí kí ó tó parí.",
+  "recordsScan": "Ṣe àyẹ̀wò"
 }

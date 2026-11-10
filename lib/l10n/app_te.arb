@@ -2625,5 +2625,113 @@
   "storyBusiness3Title": "నెలవారీ నివేదిక",
   "storyBusiness3Body": "ప్రతి నెల ఏది చెల్లుబాటులో ఉంది, ఏది గడువు ముగుస్తోంది, ఏది లేదో నివేదిక చూపిస్తుంది.",
   "storyBusiness4Title": "అప్‌డేట్ అడగండి",
-  "storyBusiness4Body": "లింక్ పంపండి, సిబ్బంది స్వయంగా పునరుద్ధరించిన పత్రాన్ని అప్‌లోడ్ చేస్తారు."
+  "storyBusiness4Body": "లింక్ పంపండి, సిబ్బంది స్వయంగా పునరుద్ధరించిన పత్రాన్ని అప్‌లోడ్ చేస్తారు.",
+  "categoryHealthAndMedical": "ఆరోగ్యం మరియు వైద్యం",
+  "categoryMembershipsAndSubscriptions": "సభ్యత్వాలు మరియు సబ్‌స్క్రిప్షన్‌లు",
+  "subcategoryFirearmLicences": "ఆయుధ లైసెన్సులు",
+  "subcategoryInternationalDrivingPermits": "అంతర్జాతీయ డ్రైవింగ్ పర్మిట్‌లు",
+  "subcategoryBoatAndPilotLicences": "పడవ మరియు పైలట్ లైసెన్సులు",
+  "subcategorySafetyCertificates": "ప్రథమ చికిత్స మరియు భద్రతా సర్టిఫికెట్లు",
+  "subcategoryElectricalComplianceCertificates": "విద్యుత్ అనుగుణ్యత సర్టిఫికెట్లు",
+  "subcategoryFireEquipmentServices": "అగ్నిమాపక పరికరాల సర్వీస్",
+  "subcategoryMedicalAidCards": "ఆరోగ్య బీమా కార్డులు",
+  "subcategoryPrescriptions": "ప్రిస్క్రిప్షన్‌లు",
+  "subcategoryVaccinations": "టీకాలు",
+  "subcategoryMedicalCertificates": "వైద్య సర్టిఫికెట్లు",
+  "subcategoryGymMemberships": "జిమ్ సభ్యత్వాలు",
+  "subcategoryClubMemberships": "క్లబ్ సభ్యత్వాలు",
+  "subcategorySubscriptions": "సబ్‌స్క్రిప్షన్‌లు",
+  "subcategoryWarranties": "వారంటీలు మరియు గ్యారంటీలు",
+  "yoursTag": "మీది",
+  "expiredBadge": "{count, plural, =1{{count} గడువు ముగిసింది} other{{count} గడువు ముగిశాయి}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "చిహ్నం మార్చు",
+  "categoryLookTitle": "చిహ్నం మరియు రంగు",
+  "categoryLookAppColour": "యాప్ రంగు",
+  "categoryLookHint": "పేరు ఆధారంగా ఎంచుకున్నాం. మార్చడానికి నొక్కండి.",
+  "renameCategoryTitle": "వర్గం పేరు మార్చు",
+  "renameGroupTitle": "గ్రూప్ పేరు మార్చు",
+  "nameInUse": "ఈ పేరు ఇక్కడ ఇప్పటికే వాడుకలో ఉంది.",
+  "freeGroupsProgress": "ఉచిత గ్రూప్‌లు: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "మీరు ఉచిత ప్లాన్‌లోని {limit} కస్టమ్ గ్రూప్‌ల పరిమితిని చేరుకున్నారు. అపరిమిత గ్రూప్‌ల కోసం Premiumకు అప్‌గ్రేడ్ చేయండి.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "గడువు తేదీ ప్రకారం క్రమపరచు",
+  "recordsSortName": "పేరు ప్రకారం క్రమపరచు",
+  "recordsSelect": "ఎంచుకో",
+  "recordsSelected": "{count, plural, =1{{count} ఎంచుకోబడింది} other{{count} ఎంచుకోబడ్డాయి}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "తరలించు",
+  "recordsMoveTitle": "ఇక్కడికి తరలించు",
+  "recordsMoved": "{count, plural, =1{{count} రికార్డ్ తరలించబడింది} other{{count} రికార్డులు తరలించబడ్డాయి}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} రికార్డ్ తొలగించాలా?} other{{count} రికార్డులు తొలగించాలా?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ఇవి \"ఇటీవల తొలగించినవి\"కి వెళ్తాయి, అక్కడి నుంచి 30 రోజుల వరకు తిరిగి తీసుకురావచ్చు.",
+  "recordsDeletedMany": "{count, plural, =1{{count} రికార్డ్ తొలగించబడింది} other{{count} రికార్డులు తొలగించబడ్డాయి}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "త్వరలో గడువు",
+  "recordsShowAll": "{count, plural, =1{అన్ని రికార్డులు చూపు} other{మొత్తం {count} రికార్డులు చూపు}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group}లో ఇంకా ఏమీ లేదు",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "కార్డ్ లేదా పత్రాన్ని స్కాన్ చేయండి, లేదా మీరే జోడించండి. గడువు ముగిసేలోపు Vaultara గుర్తు చేస్తుంది.",
+  "recordsScan": "స్కాన్"
 }

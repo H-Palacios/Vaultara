@@ -7926,4 +7926,184 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'লিংক পাঠান, কর্মী নিজেই নবায়ন করা নথি আপলোড করবেন।';
+
+  @override
+  String get categoryHealthAndMedical => 'স্বাস্থ্য ও চিকিৎসা';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'সদস্যপদ ও সাবস্ক্রিপশন';
+
+  @override
+  String get subcategoryFirearmLicences => 'আগ্নেয়াস্ত্রের লাইসেন্স';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'আন্তর্জাতিক ড্রাইভিং পারমিট';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'নৌকা ও পাইলট লাইসেন্স';
+
+  @override
+  String get subcategorySafetyCertificates => 'প্রাথমিক চিকিৎসা ও নিরাপত্তা সনদ';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'বৈদ্যুতিক সম্মতি সনদ';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'অগ্নিনির্বাপক সরঞ্জাম সার্ভিস';
+
+  @override
+  String get subcategoryMedicalAidCards => 'স্বাস্থ্যবিমা কার্ড';
+
+  @override
+  String get subcategoryPrescriptions => 'প্রেসক্রিপশন';
+
+  @override
+  String get subcategoryVaccinations => 'টিকা';
+
+  @override
+  String get subcategoryMedicalCertificates => 'মেডিকেল সনদ';
+
+  @override
+  String get subcategoryGymMemberships => 'জিম সদস্যপদ';
+
+  @override
+  String get subcategoryClubMemberships => 'ক্লাব সদস্যপদ';
+
+  @override
+  String get subcategorySubscriptions => 'সাবস্ক্রিপশন';
+
+  @override
+  String get subcategoryWarranties => 'ওয়ারেন্টি ও গ্যারান্টি';
+
+  @override
+  String get yoursTag => 'আপনার';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটির মেয়াদ শেষ',
+      one: '$countটির মেয়াদ শেষ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'আইকন বদলান';
+
+  @override
+  String get categoryLookTitle => 'আইকন ও রং';
+
+  @override
+  String get categoryLookAppColour => 'অ্যাপের রং';
+
+  @override
+  String get categoryLookHint => 'নাম দেখে বাছাই করা হয়েছে। বদলাতে ট্যাপ করুন।';
+
+  @override
+  String get renameCategoryTitle => 'বিভাগের নাম বদলান';
+
+  @override
+  String get renameGroupTitle => 'গ্রুপের নাম বদলান';
+
+  @override
+  String get nameInUse => 'এই নামটি এখানে আগে থেকেই ব্যবহৃত হচ্ছে।';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'ফ্রি গ্রুপ: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'আপনি ফ্রি প্ল্যানের $limitটি কাস্টম গ্রুপের সীমায় পৌঁছেছেন। সীমাহীন গ্রুপ তৈরি করতে Premium-এ আপগ্রেড করুন।';
+  }
+
+  @override
+  String get recordsSortExpiry => 'মেয়াদের তারিখ অনুযায়ী সাজান';
+
+  @override
+  String get recordsSortName => 'নাম অনুযায়ী সাজান';
+
+  @override
+  String get recordsSelect => 'বাছাই করুন';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি বাছাই করা',
+      one: '$countটি বাছাই করা',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'সরান';
+
+  @override
+  String get recordsMoveTitle => 'এখানে সরান';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি রেকর্ড সরানো হয়েছে',
+      one: '$countটি রেকর্ড সরানো হয়েছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি রেকর্ড মুছবেন?',
+      one: '$countটি রেকর্ড মুছবেন?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'এগুলো \"সম্প্রতি মুছে ফেলা\"-এ যাবে, সেখান থেকে 30 দিন পর্যন্ত ফিরিয়ে আনতে পারবেন।';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি রেকর্ড মোছা হয়েছে',
+      one: '$countটি রেকর্ড মোছা হয়েছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'শীঘ্রই মেয়াদ শেষ';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'সব $countটি রেকর্ড দেখান',
+      one: 'সব রেকর্ড দেখান',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group-এ এখনও কিছু নেই';
+  }
+
+  @override
+  String get recordsEmptyBody => 'কার্ড বা নথি স্ক্যান করুন, অথবা নিজে যোগ করুন। মেয়াদ শেষের আগে Vaultara আপনাকে মনে করিয়ে দেবে।';
+
+  @override
+  String get recordsScan => 'স্ক্যান';
 }

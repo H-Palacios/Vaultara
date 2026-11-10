@@ -7930,4 +7930,184 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Sende einen Link, und Mitarbeitende laden ihr verlängertes Dokument selbst hoch.';
+
+  @override
+  String get categoryHealthAndMedical => 'Gesundheit und Medizin';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Mitgliedschaften und Abos';
+
+  @override
+  String get subcategoryFirearmLicences => 'Waffenscheine';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Internationale Führerscheine';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Boots- und Pilotenscheine';
+
+  @override
+  String get subcategorySafetyCertificates => 'Erste-Hilfe- und Sicherheitszertifikate';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Elektro-Prüfprotokolle';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Brandschutzwartungen';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Krankenkassenkarten';
+
+  @override
+  String get subcategoryPrescriptions => 'Rezepte';
+
+  @override
+  String get subcategoryVaccinations => 'Impfungen';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Ärztliche Atteste';
+
+  @override
+  String get subcategoryGymMemberships => 'Fitnessstudio-Mitgliedschaften';
+
+  @override
+  String get subcategoryClubMemberships => 'Vereinsmitgliedschaften';
+
+  @override
+  String get subcategorySubscriptions => 'Abonnements';
+
+  @override
+  String get subcategoryWarranties => 'Garantien';
+
+  @override
+  String get yoursTag => 'Deins';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count abgelaufen',
+      one: '$count abgelaufen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Symbol ändern';
+
+  @override
+  String get categoryLookTitle => 'Symbol und Farbe';
+
+  @override
+  String get categoryLookAppColour => 'App-Farbe';
+
+  @override
+  String get categoryLookHint => 'Aus dem Namen gewählt. Zum Ändern tippen.';
+
+  @override
+  String get renameCategoryTitle => 'Kategorie umbenennen';
+
+  @override
+  String get renameGroupTitle => 'Gruppe umbenennen';
+
+  @override
+  String get nameInUse => 'Dieser Name wird hier schon verwendet.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Kostenlose Gruppen: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Du hast das Limit des Free-Plans von $limit eigenen Gruppen erreicht. Mit Premium kannst du unbegrenzt Gruppen erstellen.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Nach Ablaufdatum sortieren';
+
+  @override
+  String get recordsSortName => 'Nach Name sortieren';
+
+  @override
+  String get recordsSelect => 'Auswählen';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ausgewählt',
+      one: '$count ausgewählt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Verschieben';
+
+  @override
+  String get recordsMoveTitle => 'Verschieben nach';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Einträge verschoben',
+      one: '$count Eintrag verschoben',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Einträge löschen?',
+      one: '$count Eintrag löschen?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Sie kommen in „Kürzlich gelöscht“, wo du sie 30 Tage lang wiederherstellen kannst.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Einträge gelöscht',
+      one: '$count Eintrag gelöscht',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Bald fällig';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Alle $count Einträge anzeigen',
+      one: 'Alle Einträge anzeigen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Noch keine $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Scanne die Karte oder das Dokument oder füge es manuell hinzu. Vaultara erinnert dich, bevor es abläuft.';
+
+  @override
+  String get recordsScan => 'Scannen';
 }

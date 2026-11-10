@@ -2622,5 +2622,113 @@
   "storyBusiness3Title": "Raport mujor",
   "storyBusiness3Body": "Çdo muaj një raport tregon çfarë është e vlefshme, çfarë po skadon dhe çfarë mungon.",
   "storyBusiness4Title": "Kërko një përditësim",
-  "storyBusiness4Body": "Dërgo një lidhje dhe stafi ngarkon vetë dokumentin e rinovuar."
+  "storyBusiness4Body": "Dërgo një lidhje dhe stafi ngarkon vetë dokumentin e rinovuar.",
+  "categoryHealthAndMedical": "Shëndet dhe mjekësi",
+  "categoryMembershipsAndSubscriptions": "Anëtarësime dhe abonime",
+  "subcategoryFirearmLicences": "Leje armësh",
+  "subcategoryInternationalDrivingPermits": "Leje ndërkombëtare drejtimi",
+  "subcategoryBoatAndPilotLicences": "Leje varke dhe piloti",
+  "subcategorySafetyCertificates": "Certifikata ndihme të shpejtë dhe sigurie",
+  "subcategoryElectricalComplianceCertificates": "Certifikata të përputhshmërisë elektrike",
+  "subcategoryFireEquipmentServices": "Shërbimi i pajisjeve kundër zjarrit",
+  "subcategoryMedicalAidCards": "Karta të sigurimit shëndetësor",
+  "subcategoryPrescriptions": "Receta",
+  "subcategoryVaccinations": "Vaksinime",
+  "subcategoryMedicalCertificates": "Raporte mjekësore",
+  "subcategoryGymMemberships": "Anëtarësime në palestër",
+  "subcategoryClubMemberships": "Anëtarësime në klube",
+  "subcategorySubscriptions": "Abonime",
+  "subcategoryWarranties": "Garanci",
+  "yoursTag": "Juaji",
+  "expiredBadge": "{count, plural, =1{{count} i skaduar} other{{count} të skaduar}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Ndrysho ikonën",
+  "categoryLookTitle": "Ikona dhe ngjyra",
+  "categoryLookAppColour": "Ngjyra e aplikacionit",
+  "categoryLookHint": "Zgjedhur sipas emrit. Prek për ta ndryshuar.",
+  "renameCategoryTitle": "Riemërto kategorinë",
+  "renameGroupTitle": "Riemërto grupin",
+  "nameInUse": "Ky emër përdoret tashmë këtu.",
+  "freeGroupsProgress": "Grupe falas: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Keni arritur kufirin e planit Falas prej {limit} grupesh të personalizuara. Kaloni në Premium për grupe pa kufi.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Rendit sipas datës së skadimit",
+  "recordsSortName": "Rendit sipas emrit",
+  "recordsSelect": "Zgjidh",
+  "recordsSelected": "{count, plural, =1{{count} i zgjedhur} other{{count} të zgjedhur}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Zhvendos",
+  "recordsMoveTitle": "Zhvendos te",
+  "recordsMoved": "{count, plural, =1{U zhvendos {count} regjistrim} other{U zhvendosën {count} regjistrime}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Të fshihet {count} regjistrim?} other{Të fshihen {count} regjistrime?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Shkojnë te \"Të fshira së fundmi\", ku mund t'i riktheni për 30 ditë.",
+  "recordsDeletedMany": "{count, plural, =1{U fshi {count} regjistrim} other{U fshinë {count} regjistrime}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Skadon së shpejti",
+  "recordsShowAll": "{count, plural, =1{Shfaq të gjitha regjistrimet} other{Shfaq të {count} regjistrimet}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ende asgjë te {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skanoni kartën ose dokumentin, ose shtojeni me dorë. Vaultara ju kujton para se të skadojë.",
+  "recordsScan": "Skano"
 }

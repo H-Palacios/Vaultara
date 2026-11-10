@@ -7945,4 +7945,184 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Send a link and staff can upload their renewed document themselves.';
+
+  @override
+  String get categoryHealthAndMedical => 'Health and medical';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Memberships and subscriptions';
+
+  @override
+  String get subcategoryFirearmLicences => 'Firearm licences';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'International driving permits';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Boat and pilot licences';
+
+  @override
+  String get subcategorySafetyCertificates => 'First aid and safety certificates';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Electrical certificates of compliance';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Fire equipment services';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Medical aid cards';
+
+  @override
+  String get subcategoryPrescriptions => 'Prescriptions';
+
+  @override
+  String get subcategoryVaccinations => 'Vaccinations';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Medical certificates';
+
+  @override
+  String get subcategoryGymMemberships => 'Gym memberships';
+
+  @override
+  String get subcategoryClubMemberships => 'Club memberships';
+
+  @override
+  String get subcategorySubscriptions => 'Subscriptions';
+
+  @override
+  String get subcategoryWarranties => 'Warranties and guarantees';
+
+  @override
+  String get yoursTag => 'Yours';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expired',
+      one: '1 expired',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Change icon';
+
+  @override
+  String get categoryLookTitle => 'Icon and colour';
+
+  @override
+  String get categoryLookAppColour => 'App colour';
+
+  @override
+  String get categoryLookHint => 'Picked from the name. Tap to change it.';
+
+  @override
+  String get renameCategoryTitle => 'Rename category';
+
+  @override
+  String get renameGroupTitle => 'Rename group';
+
+  @override
+  String get nameInUse => 'That name is already in use here.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Free groups: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'You have reached the Free plan limit of $limit custom groups. Upgrade to Premium to create unlimited groups.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sort by expiry date';
+
+  @override
+  String get recordsSortName => 'Sort by name';
+
+  @override
+  String get recordsSelect => 'Select';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count selected',
+      one: '1 selected',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Move';
+
+  @override
+  String get recordsMoveTitle => 'Move to';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Moved $count records',
+      one: 'Moved 1 record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Delete $count records?',
+      one: 'Delete 1 record?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'They go to Recently deleted, where you can bring them back for 30 days.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Deleted $count records',
+      one: 'Deleted 1 record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Due soon';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Show all $count records',
+      one: 'Show all records',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'No $group yet';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Scan the card or document, or add it by hand. Vaultara reminds you before it expires.';
+
+  @override
+  String get recordsScan => 'Scan';
 }

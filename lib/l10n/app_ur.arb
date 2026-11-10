@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "ماہانہ رپورٹ",
   "storyBusiness3Body": "ہر ماہ رپورٹ دکھاتی ہے کہ کیا درست ہے، کیا ختم ہو رہا ہے اور کیا غائب ہے۔",
   "storyBusiness4Title": "اپ ڈیٹ کی درخواست کریں",
-  "storyBusiness4Body": "لنک بھیجیں اور عملہ خود تجدید شدہ دستاویز اپ لوڈ کرے گا۔"
+  "storyBusiness4Body": "لنک بھیجیں اور عملہ خود تجدید شدہ دستاویز اپ لوڈ کرے گا۔",
+  "categoryHealthAndMedical": "صحت اور طب",
+  "categoryMembershipsAndSubscriptions": "رکنیت اور سبسکرپشنز",
+  "subcategoryFirearmLicences": "اسلحہ لائسنس",
+  "subcategoryInternationalDrivingPermits": "بین الاقوامی ڈرائیونگ پرمٹ",
+  "subcategoryBoatAndPilotLicences": "کشتی اور پائلٹ لائسنس",
+  "subcategorySafetyCertificates": "ابتدائی طبی امداد اور حفاظتی سرٹیفکیٹ",
+  "subcategoryElectricalComplianceCertificates": "بجلی کے تصدیقی سرٹیفکیٹ",
+  "subcategoryFireEquipmentServices": "آگ بجھانے کے آلات کی سروس",
+  "subcategoryMedicalAidCards": "میڈیکل انشورنس کارڈ",
+  "subcategoryPrescriptions": "نسخے",
+  "subcategoryVaccinations": "ویکسینیشن",
+  "subcategoryMedicalCertificates": "طبی سرٹیفکیٹ",
+  "subcategoryGymMemberships": "جم کی رکنیت",
+  "subcategoryClubMemberships": "کلب کی رکنیت",
+  "subcategorySubscriptions": "سبسکرپشنز",
+  "subcategoryWarranties": "وارنٹی اور گارنٹی",
+  "yoursTag": "آپ کا",
+  "expiredBadge": "{count, plural, =1{{count} میعاد ختم} other{{count} میعاد ختم}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "آئیکن بدلیں",
+  "categoryLookTitle": "آئیکن اور رنگ",
+  "categoryLookAppColour": "ایپ کا رنگ",
+  "categoryLookHint": "نام کی بنیاد پر چنا گیا۔ بدلنے کے لیے ٹیپ کریں۔",
+  "renameCategoryTitle": "زمرے کا نام بدلیں",
+  "renameGroupTitle": "گروپ کا نام بدلیں",
+  "nameInUse": "یہ نام یہاں پہلے سے استعمال میں ہے۔",
+  "freeGroupsProgress": "مفت گروپ: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "آپ مفت پلان کی {limit} حسب ضرورت گروپس کی حد تک پہنچ گئے ہیں۔ لامحدود گروپ بنانے کے لیے Premium پر اپ گریڈ کریں۔",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "میعاد کی تاریخ سے ترتیب دیں",
+  "recordsSortName": "نام سے ترتیب دیں",
+  "recordsSelect": "منتخب کریں",
+  "recordsSelected": "{count, plural, =1{{count} منتخب} other{{count} منتخب}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "منتقل کریں",
+  "recordsMoveTitle": "یہاں منتقل کریں",
+  "recordsMoved": "{count, plural, =1{{count} ریکارڈ منتقل ہوا} other{{count} ریکارڈ منتقل ہوئے}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} ریکارڈ حذف کریں؟} other{{count} ریکارڈ حذف کریں؟}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "یہ \"حال ہی میں حذف شدہ\" میں چلے جائیں گے، جہاں سے آپ 30 دن تک انہیں واپس لا سکتے ہیں۔",
+  "recordsDeletedMany": "{count, plural, =1{{count} ریکارڈ حذف ہوا} other{{count} ریکارڈ حذف ہوئے}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "جلد ختم ہونے والا",
+  "recordsShowAll": "{count, plural, =1{تمام ریکارڈ دکھائیں} other{تمام {count} ریکارڈ دکھائیں}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} میں ابھی کچھ نہیں",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "کارڈ یا دستاویز اسکین کریں، یا ہاتھ سے شامل کریں۔ میعاد ختم ہونے سے پہلے Vaultara آپ کو یاد دلائے گا۔",
+  "recordsScan": "اسکین"
 }

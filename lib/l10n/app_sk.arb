@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Mesačný prehľad",
   "storyBusiness3Body": "Každý mesiac prehľad ukáže, čo platí, čo vyprší a čo chýba.",
   "storyBusiness4Title": "Požiadajte o aktualizáciu",
-  "storyBusiness4Body": "Pošlite odkaz a zamestnanec sám nahrá obnovený doklad."
+  "storyBusiness4Body": "Pošlite odkaz a zamestnanec sám nahrá obnovený doklad.",
+  "categoryHealthAndMedical": "Zdravie a medicína",
+  "categoryMembershipsAndSubscriptions": "Členstvá a predplatné",
+  "subcategoryFirearmLicences": "Zbrojné preukazy",
+  "subcategoryInternationalDrivingPermits": "Medzinárodné vodičské preukazy",
+  "subcategoryBoatAndPilotLicences": "Preukazy vodcu plavidla a pilota",
+  "subcategorySafetyCertificates": "Certifikáty prvej pomoci a BOZP",
+  "subcategoryElectricalComplianceCertificates": "Revízie elektroinštalácie",
+  "subcategoryFireEquipmentServices": "Revízie hasiacich prístrojov",
+  "subcategoryMedicalAidCards": "Preukazy poistenca",
+  "subcategoryPrescriptions": "Recepty",
+  "subcategoryVaccinations": "Očkovania",
+  "subcategoryMedicalCertificates": "Lekárske potvrdenia",
+  "subcategoryGymMemberships": "Permanentky do posilňovne",
+  "subcategoryClubMemberships": "Členstvá v kluboch",
+  "subcategorySubscriptions": "Predplatné",
+  "subcategoryWarranties": "Záruky",
+  "yoursTag": "Vaše",
+  "expiredBadge": "{count, plural, =1{{count} neplatné} other{Neplatné: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Zmeniť ikonu",
+  "categoryLookTitle": "Ikona a farba",
+  "categoryLookAppColour": "Farba aplikácie",
+  "categoryLookHint": "Vybraté podľa názvu. Ťuknutím zmeníte.",
+  "renameCategoryTitle": "Premenovať kategóriu",
+  "renameGroupTitle": "Premenovať skupinu",
+  "nameInUse": "Tento názov sa tu už používa.",
+  "freeGroupsProgress": "Skupiny zadarmo: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Dosiahli ste limit plánu Free: {limit} vlastných skupín. S Premium môžete vytvárať neobmedzene skupín.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Zoradiť podľa platnosti",
+  "recordsSortName": "Zoradiť podľa názvu",
+  "recordsSelect": "Vybrať",
+  "recordsSelected": "{count, plural, =1{Vybratý {count}} other{Vybraté: {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Presunúť",
+  "recordsMoveTitle": "Presunúť do",
+  "recordsMoved": "{count, plural, =1{Presunutý {count} záznam} few{Presunuté {count} záznamy} many{Presunutých {count} záznamu} other{Presunutých {count} záznamov}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Odstrániť {count} záznam?} few{Odstrániť {count} záznamy?} many{Odstrániť {count} záznamu?} other{Odstrániť {count} záznamov?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Presunú sa do „Nedávno odstránené“, kde ich môžete 30 dní obnoviť.",
+  "recordsDeletedMany": "{count, plural, =1{Odstránený {count} záznam} few{Odstránené {count} záznamy} many{Odstránených {count} záznamu} other{Odstránených {count} záznamov}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Čoskoro vyprší",
+  "recordsShowAll": "{count, plural, =1{Zobraziť všetky záznamy} other{Zobraziť všetky záznamy ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "V skupine {group} zatiaľ nič nie je",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Naskenujte kartu alebo doklad, alebo ho pridajte ručne. Vaultara vám pripomenie koniec platnosti.",
+  "recordsScan": "Skenovať"
 }

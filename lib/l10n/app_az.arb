@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "Aylıq hesabat",
   "storyBusiness3Body": "Hər ay hesabat nəyin etibarlı olduğunu, nəyin bitdiyini və nəyin çatışmadığını göstərir.",
   "storyBusiness4Title": "Yeniləmə istəyin",
-  "storyBusiness4Body": "Link göndərin, işçi yenilənmiş sənədi özü yükləyəcək."
+  "storyBusiness4Body": "Link göndərin, işçi yenilənmiş sənədi özü yükləyəcək.",
+  "categoryHealthAndMedical": "Sağlamlıq və tibb",
+  "categoryMembershipsAndSubscriptions": "Üzvlüklər və abunələr",
+  "subcategoryFirearmLicences": "Silah lisenziyaları",
+  "subcategoryInternationalDrivingPermits": "Beynəlxalq sürücülük vəsiqələri",
+  "subcategoryBoatAndPilotLicences": "Qayıq və pilot lisenziyaları",
+  "subcategorySafetyCertificates": "İlk yardım və təhlükəsizlik sertifikatları",
+  "subcategoryElectricalComplianceCertificates": "Elektrik uyğunluq sertifikatları",
+  "subcategoryFireEquipmentServices": "Yanğın avadanlığına xidmət",
+  "subcategoryMedicalAidCards": "Tibbi sığorta kartları",
+  "subcategoryPrescriptions": "Reseptlər",
+  "subcategoryVaccinations": "Peyvəndlər",
+  "subcategoryMedicalCertificates": "Tibbi arayışlar",
+  "subcategoryGymMemberships": "İdman zalı üzvlükləri",
+  "subcategoryClubMemberships": "Klub üzvlükləri",
+  "subcategorySubscriptions": "Abunələr",
+  "subcategoryWarranties": "Zəmanətlər",
+  "yoursTag": "Sizin",
+  "expiredBadge": "{count, plural, =1{{count} müddəti bitib} other{{count} müddəti bitib}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "İkonu dəyiş",
+  "categoryLookTitle": "İkon və rəng",
+  "categoryLookAppColour": "Tətbiqin rəngi",
+  "categoryLookHint": "Ada görə seçildi. Dəyişmək üçün toxunun.",
+  "renameCategoryTitle": "Kateqoriyanın adını dəyiş",
+  "renameGroupTitle": "Qrupun adını dəyiş",
+  "nameInUse": "Bu ad burada artıq istifadə olunur.",
+  "freeGroupsProgress": "Pulsuz qruplar: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Pulsuz planın {limit} fərdi qrup limitinə çatdınız. Limitsiz qruplar üçün Premium-a keçin.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Bitmə tarixinə görə sırala",
+  "recordsSortName": "Ada görə sırala",
+  "recordsSelect": "Seç",
+  "recordsSelected": "{count, plural, =1{{count} seçildi} other{{count} seçildi}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Köçür",
+  "recordsMoveTitle": "Bura köçür",
+  "recordsMoved": "{count, plural, =1{{count} qeyd köçürüldü} other{{count} qeyd köçürüldü}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} qeyd silinsin?} other{{count} qeyd silinsin?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Onlar \"Son silinənlər\" bölməsinə keçir, oradan 30 gün ərzində bərpa edə bilərsiniz.",
+  "recordsDeletedMany": "{count, plural, =1{{count} qeyd silindi} other{{count} qeyd silindi}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Tezliklə bitir",
+  "recordsShowAll": "{count, plural, =1{Bütün qeydləri göstər} other{Bütün {count} qeydi göstər}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} hələ boşdur",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Kartı və ya sənədi skan edin, ya da əl ilə əlavə edin. Vaultara müddəti bitməzdən əvvəl xatırladacaq.",
+  "recordsScan": "Skan et"
 }

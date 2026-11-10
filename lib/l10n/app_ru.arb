@@ -2583,5 +2583,113 @@
   "storyBusiness3Title": "Ежемесячный отчёт",
   "storyBusiness3Body": "Каждый месяц отчёт показывает, что действует, что истекает и чего не хватает.",
   "storyBusiness4Title": "Запросите обновление",
-  "storyBusiness4Body": "Отправьте ссылку, и сотрудник сам загрузит продлённый документ."
+  "storyBusiness4Body": "Отправьте ссылку, и сотрудник сам загрузит продлённый документ.",
+  "categoryHealthAndMedical": "Здоровье и медицина",
+  "categoryMembershipsAndSubscriptions": "Членства и подписки",
+  "subcategoryFirearmLicences": "Лицензии на оружие",
+  "subcategoryInternationalDrivingPermits": "Международные водительские удостоверения",
+  "subcategoryBoatAndPilotLicences": "Права на судно и лицензии пилота",
+  "subcategorySafetyCertificates": "Сертификаты первой помощи и безопасности",
+  "subcategoryElectricalComplianceCertificates": "Акты проверки электропроводки",
+  "subcategoryFireEquipmentServices": "Обслуживание противопожарного оборудования",
+  "subcategoryMedicalAidCards": "Полисы медицинского страхования",
+  "subcategoryPrescriptions": "Рецепты",
+  "subcategoryVaccinations": "Прививки",
+  "subcategoryMedicalCertificates": "Медицинские справки",
+  "subcategoryGymMemberships": "Абонементы в спортзал",
+  "subcategoryClubMemberships": "Членство в клубах",
+  "subcategorySubscriptions": "Подписки",
+  "subcategoryWarranties": "Гарантии",
+  "yoursTag": "Ваше",
+  "expiredBadge": "{count, plural, =1{{count} истёк} one{{count} истёк} few{{count} истекли} many{{count} истекли} other{{count} истекли}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Сменить значок",
+  "categoryLookTitle": "Значок и цвет",
+  "categoryLookAppColour": "Цвет приложения",
+  "categoryLookHint": "Подобран по названию. Нажмите, чтобы изменить.",
+  "renameCategoryTitle": "Переименовать категорию",
+  "renameGroupTitle": "Переименовать группу",
+  "nameInUse": "Это название здесь уже используется.",
+  "freeGroupsProgress": "Бесплатные группы: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Вы достигли лимита бесплатного плана: {limit} своих групп. Перейдите на Premium, чтобы создавать группы без ограничений.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Сортировать по сроку действия",
+  "recordsSortName": "Сортировать по названию",
+  "recordsSelect": "Выбрать",
+  "recordsSelected": "{count, plural, =1{Выбрана {count}} one{Выбрана {count}} few{Выбрано {count}} many{Выбрано {count}} other{Выбрано {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Переместить",
+  "recordsMoveTitle": "Переместить в",
+  "recordsMoved": "{count, plural, =1{Перемещена {count} запись} one{Перемещена {count} запись} few{Перемещены {count} записи} many{Перемещено {count} записей} other{Перемещено {count} записи}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Удалить {count} запись?} one{Удалить {count} запись?} few{Удалить {count} записи?} many{Удалить {count} записей?} other{Удалить {count} записи?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Они попадут в «Недавно удалённые», откуда их можно вернуть в течение 30 дней.",
+  "recordsDeletedMany": "{count, plural, =1{Удалена {count} запись} one{Удалена {count} запись} few{Удалены {count} записи} many{Удалено {count} записей} other{Удалено {count} записи}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Скоро истекает",
+  "recordsShowAll": "{count, plural, =1{Показать все записи} other{Показать все записи ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "В «{group}» пока пусто",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Отсканируйте карту или документ либо добавьте вручную. Vaultara напомнит до окончания срока.",
+  "recordsScan": "Сканировать"
 }

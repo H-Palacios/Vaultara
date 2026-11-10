@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "របាយការណ៍ប្រចាំខែ",
   "storyBusiness3Body": "រៀងរាល់ខែ របាយការណ៍បង្ហាញអ្វីដែលមានសុពលភាព អ្វីដែលកំពុងផុតកំណត់ និងអ្វីដែលខ្វះ។",
   "storyBusiness4Title": "ស្នើសុំការធ្វើបច្ចុប្បន្នភាព",
-  "storyBusiness4Body": "ផ្ញើតំណ ហើយបុគ្គលិកនឹងផ្ទុកឡើងឯកសារដែលបានបន្តដោយខ្លួនឯង។"
+  "storyBusiness4Body": "ផ្ញើតំណ ហើយបុគ្គលិកនឹងផ្ទុកឡើងឯកសារដែលបានបន្តដោយខ្លួនឯង។",
+  "categoryHealthAndMedical": "សុខភាព និងវេជ្ជសាស្ត្រ",
+  "categoryMembershipsAndSubscriptions": "សមាជិកភាព និងការជាវ",
+  "subcategoryFirearmLicences": "អាជ្ញាប័ណ្ណកាំភ្លើង",
+  "subcategoryInternationalDrivingPermits": "ប័ណ្ណបើកបរអន្តរជាតិ",
+  "subcategoryBoatAndPilotLicences": "អាជ្ញាប័ណ្ណទូក និងអ្នកបើកយន្តហោះ",
+  "subcategorySafetyCertificates": "វិញ្ញាបនបត្រសង្គ្រោះបឋម និងសុវត្ថិភាព",
+  "subcategoryElectricalComplianceCertificates": "វិញ្ញាបនបត្រអនុលោមភាពអគ្គិសនី",
+  "subcategoryFireEquipmentServices": "សេវាឧបករណ៍ពន្លត់អគ្គិភ័យ",
+  "subcategoryMedicalAidCards": "កាតធានារ៉ាប់រងសុខភាព",
+  "subcategoryPrescriptions": "វេជ្ជបញ្ជា",
+  "subcategoryVaccinations": "ការចាក់វ៉ាក់សាំង",
+  "subcategoryMedicalCertificates": "វិញ្ញាបនបត្រវេជ្ជសាស្ត្រ",
+  "subcategoryGymMemberships": "សមាជិកភាពកន្លែងហាត់ប្រាណ",
+  "subcategoryClubMemberships": "សមាជិកភាពក្លឹប",
+  "subcategorySubscriptions": "ការជាវ",
+  "subcategoryWarranties": "ការធានា",
+  "yoursTag": "របស់អ្នក",
+  "expiredBadge": "{count, plural, =1{ផុតកំណត់ {count}} other{ផុតកំណត់ {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ប្ដូររូបតំណាង",
+  "categoryLookTitle": "រូបតំណាង និងពណ៌",
+  "categoryLookAppColour": "ពណ៌កម្មវិធី",
+  "categoryLookHint": "បានជ្រើសតាមឈ្មោះ។ ចុចដើម្បីប្ដូរ។",
+  "renameCategoryTitle": "ប្ដូរឈ្មោះប្រភេទ",
+  "renameGroupTitle": "ប្ដូរឈ្មោះក្រុម",
+  "nameInUse": "ឈ្មោះនេះត្រូវបានប្រើនៅទីនេះរួចហើយ។",
+  "freeGroupsProgress": "ក្រុមឥតគិតថ្លៃ៖ {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "អ្នកបានដល់ដែនកំណត់នៃគម្រោងឥតគិតថ្លៃ គឺក្រុមផ្ទាល់ខ្លួន {limit}។ ដំឡើងទៅ Premium ដើម្បីបង្កើតក្រុមគ្មានដែនកំណត់។",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "តម្រៀបតាមកាលបរិច្ឆេទផុតកំណត់",
+  "recordsSortName": "តម្រៀបតាមឈ្មោះ",
+  "recordsSelect": "ជ្រើសរើស",
+  "recordsSelected": "{count, plural, =1{បានជ្រើស {count}} other{បានជ្រើស {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ផ្លាស់ទី",
+  "recordsMoveTitle": "ផ្លាស់ទីទៅ",
+  "recordsMoved": "{count, plural, =1{បានផ្លាស់ទីកំណត់ត្រា {count}} other{បានផ្លាស់ទីកំណត់ត្រា {count}}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{លុបកំណត់ត្រា {count}?} other{លុបកំណត់ត្រា {count}?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "វានឹងទៅកាន់ \"បានលុបថ្មីៗ\" ដែលអ្នកអាចយកមកវិញបានក្នុងរយៈពេល 30 ថ្ងៃ។",
+  "recordsDeletedMany": "{count, plural, =1{បានលុបកំណត់ត្រា {count}} other{បានលុបកំណត់ត្រា {count}}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ជិតផុតកំណត់",
+  "recordsShowAll": "{count, plural, =1{បង្ហាញកំណត់ត្រាទាំងអស់} other{បង្ហាញកំណត់ត្រាទាំង {count}}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "មិនទាន់មានអ្វីក្នុង {group} នៅឡើយ",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "ស្កេនកាត ឬឯកសារ ឬបន្ថែមដោយដៃ។ Vaultara នឹងរំលឹកអ្នកមុនពេលផុតកំណត់។",
+  "recordsScan": "ស្កេន"
 }

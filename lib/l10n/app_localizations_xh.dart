@@ -7926,4 +7926,184 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Thumela ikhonkco kwaye umsebenzi alayishe ngokwakhe uxwebhu oluhlaziyiweyo.';
+
+  @override
+  String get categoryHealthAndMedical => 'Impilo nonyango';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Ubulungu nemirhumo';
+
+  @override
+  String get subcategoryFirearmLicences => 'Iilayisenisi zemipu';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Iimvume zokuqhuba zamazwe ngamazwe';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Iilayisenisi zesikhephe nezomqhubi wenqwelomoya';
+
+  @override
+  String get subcategorySafetyCertificates => 'Izatifikethi zoncedo lokuqala nokhuseleko';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Izatifikethi zokuthobela zombane';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Inkonzo yezixhobo zomlilo';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Amakhadi einshorensi yempilo';
+
+  @override
+  String get subcategoryPrescriptions => 'Imiyalelo kagqirha';
+
+  @override
+  String get subcategoryVaccinations => 'Izitofu zokugonya';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Izatifikethi zonyango';
+
+  @override
+  String get subcategoryGymMemberships => 'Ubulungu bejim';
+
+  @override
+  String get subcategoryClubMemberships => 'Ubulungu beklabhu';
+
+  @override
+  String get subcategorySubscriptions => 'Imirhumo';
+
+  @override
+  String get subcategoryWarranties => 'Iziqinisekiso';
+
+  @override
+  String get yoursTag => 'Okwakho';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ziphelelwe lixesha',
+      one: '$count iphelelwe lixesha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Tshintsha uphawu';
+
+  @override
+  String get categoryLookTitle => 'Uphawu nombala';
+
+  @override
+  String get categoryLookAppColour => 'Umbala we-app';
+
+  @override
+  String get categoryLookHint => 'Lukhethwe ngegama. Cofa ukuze utshintshe.';
+
+  @override
+  String get renameCategoryTitle => 'Thiya kwakhona udidi';
+
+  @override
+  String get renameGroupTitle => 'Thiya kwakhona iqela';
+
+  @override
+  String get nameInUse => 'Elo gama sele lisetyenziswa apha.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Amaqela asimahla: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Ufikelele kumda wesicwangciso Sasimahla wamaqela angama-$limit owenzileyo. Phucula uye kwi-Premium ukuze wenze amaqela angenamda.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Lungelelanisa ngomhla wokuphelelwa';
+
+  @override
+  String get recordsSortName => 'Lungelelanisa ngegama';
+
+  @override
+  String get recordsSelect => 'Khetha';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kukhethwe $count',
+      one: 'Kukhethwe $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Hambisa';
+
+  @override
+  String get recordsMoveTitle => 'Hambisela ku-';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kuhanjiswe iirekhodi ezi-$count',
+      one: 'Kuhanjiswe irekhodi eli-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Cima iirekhodi ezi-$count?',
+      one: 'Cima irekhodi eli-$count?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ziya ku-\"Kususwe kutshanje\", apho unokuzibuyisa khona kwiintsuku ezingama-30.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kucinywe iirekhodi ezi-$count',
+      one: 'Kucinywe irekhodi eli-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Kuza kuphelelwa kungekudala';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bonisa zonke iirekhodi ezi-$count',
+      one: 'Bonisa zonke iirekhodi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Akukho nto ku-$group okwangoku';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Skena ikhadi okanye uxwebhu, okanye uyongeze ngesandla. I-Vaultara iya kukukhumbuza phambi kokuba liphelelwe.';
+
+  @override
+  String get recordsScan => 'Skena';
 }

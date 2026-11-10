@@ -8078,4 +8078,190 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Надішліть посилання, і працівник сам завантажить поновлений документ.';
+
+  @override
+  String get categoryHealthAndMedical => 'Здоров\'я і медицина';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Членства й підписки';
+
+  @override
+  String get subcategoryFirearmLicences => 'Дозволи на зброю';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Міжнародні посвідчення водія';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Права на судно та ліцензії пілота';
+
+  @override
+  String get subcategorySafetyCertificates => 'Сертифікати першої допомоги та безпеки';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Акти перевірки електромережі';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Обслуговування протипожежного обладнання';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Картки медичного страхування';
+
+  @override
+  String get subcategoryPrescriptions => 'Рецепти';
+
+  @override
+  String get subcategoryVaccinations => 'Щеплення';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Медичні довідки';
+
+  @override
+  String get subcategoryGymMemberships => 'Абонементи в спортзал';
+
+  @override
+  String get subcategoryClubMemberships => 'Членство в клубах';
+
+  @override
+  String get subcategorySubscriptions => 'Підписки';
+
+  @override
+  String get subcategoryWarranties => 'Гарантії';
+
+  @override
+  String get yoursTag => 'Ваше';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count прострочено',
+      one: '$count прострочено',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Змінити значок';
+
+  @override
+  String get categoryLookTitle => 'Значок і колір';
+
+  @override
+  String get categoryLookAppColour => 'Колір застосунку';
+
+  @override
+  String get categoryLookHint => 'Вибрано за назвою. Торкніться, щоб змінити.';
+
+  @override
+  String get renameCategoryTitle => 'Перейменувати категорію';
+
+  @override
+  String get renameGroupTitle => 'Перейменувати групу';
+
+  @override
+  String get nameInUse => 'Ця назва тут уже використовується.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Безкоштовні групи: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Ви досягли ліміту безкоштовного плану: $limit власних груп. Перейдіть на Premium, щоб створювати групи без обмежень.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Сортувати за терміном дії';
+
+  @override
+  String get recordsSortName => 'Сортувати за назвою';
+
+  @override
+  String get recordsSelect => 'Вибрати';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Вибрано $count',
+      one: 'Вибрано $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Перемістити';
+
+  @override
+  String get recordsMoveTitle => 'Перемістити до';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Переміщено $count записи',
+      many: 'Переміщено $count записів',
+      few: 'Переміщено $count записи',
+      one: 'Переміщено $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Видалити $count записи?',
+      many: 'Видалити $count записів?',
+      few: 'Видалити $count записи?',
+      one: 'Видалити $count запис?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Вони потраплять до «Нещодавно видалені», звідки їх можна повернути протягом 30 днів.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Видалено $count записи',
+      many: 'Видалено $count записів',
+      few: 'Видалено $count записи',
+      one: 'Видалено $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Скоро спливає';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Показати всі записи ($count)',
+      one: 'Показати всі записи',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'У «$group» поки порожньо';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Відскануйте картку чи документ або додайте вручну. Vaultara нагадає до закінчення терміну.';
+
+  @override
+  String get recordsScan => 'Сканувати';
 }

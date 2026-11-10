@@ -2613,5 +2613,113 @@
   "storyBusiness3Title": "Mánaðarskýrsla",
   "storyBusiness3Body": "Í hverjum mánuði sýnir skýrsla hvað er í gildi, hvað rennur út og hvað vantar.",
   "storyBusiness4Title": "Biddu um uppfærslu",
-  "storyBusiness4Body": "Sendu tengil og starfsfólk hleður sjálft upp endurnýjaða skjalinu."
+  "storyBusiness4Body": "Sendu tengil og starfsfólk hleður sjálft upp endurnýjaða skjalinu.",
+  "categoryHealthAndMedical": "Heilsa og læknisfræði",
+  "categoryMembershipsAndSubscriptions": "Aðild og áskriftir",
+  "subcategoryFirearmLicences": "Skotvopnaleyfi",
+  "subcategoryInternationalDrivingPermits": "Alþjóðleg ökuskírteini",
+  "subcategoryBoatAndPilotLicences": "Bátaréttindi og flugskírteini",
+  "subcategorySafetyCertificates": "Skírteini í skyndihjálp og öryggismálum",
+  "subcategoryElectricalComplianceCertificates": "Vottorð um raflagnir",
+  "subcategoryFireEquipmentServices": "Þjónusta við brunavarnabúnað",
+  "subcategoryMedicalAidCards": "Sjúkratryggingakort",
+  "subcategoryPrescriptions": "Lyfseðlar",
+  "subcategoryVaccinations": "Bólusetningar",
+  "subcategoryMedicalCertificates": "Læknisvottorð",
+  "subcategoryGymMemberships": "Líkamsræktaraðild",
+  "subcategoryClubMemberships": "Klúbbaðild",
+  "subcategorySubscriptions": "Áskriftir",
+  "subcategoryWarranties": "Ábyrgðir",
+  "yoursTag": "Þitt",
+  "expiredBadge": "{count, plural, =1{{count} útrunnið} other{{count} útrunnin}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Breyta tákni",
+  "categoryLookTitle": "Tákn og litur",
+  "categoryLookAppColour": "Litur forritsins",
+  "categoryLookHint": "Valið út frá nafninu. Ýttu til að breyta.",
+  "renameCategoryTitle": "Endurnefna flokk",
+  "renameGroupTitle": "Endurnefna hóp",
+  "nameInUse": "Þetta nafn er þegar í notkun hér.",
+  "freeGroupsProgress": "Ókeypis hópar: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Þú hefur náð hámarki ókeypis áskriftar, {limit} eigin hópum. Uppfærðu í Premium til að búa til ótakmarkaðan fjölda hópa.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Raða eftir gildistíma",
+  "recordsSortName": "Raða eftir nafni",
+  "recordsSelect": "Velja",
+  "recordsSelected": "{count, plural, =1{{count} valið} other{{count} valin}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Færa",
+  "recordsMoveTitle": "Færa í",
+  "recordsMoved": "{count, plural, =1{{count} færsla færð} other{{count} færslur færðar}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Eyða {count} færslu?} other{Eyða {count} færslum?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Þær fara í „Nýlega eytt“ þar sem þú getur endurheimt þær í 30 daga.",
+  "recordsDeletedMany": "{count, plural, =1{{count} færslu eytt} other{{count} færslum eytt}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Rennur brátt út",
+  "recordsShowAll": "{count, plural, =1{Sýna allar færslur} other{Sýna allar {count} færslur}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ekkert í {group} ennþá",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skannaðu kortið eða skjalið, eða bættu því við handvirkt. Vaultara minnir þig á áður en það rennur út.",
+  "recordsScan": "Skanna"
 }

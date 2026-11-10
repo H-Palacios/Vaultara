@@ -7926,4 +7926,184 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'አገናኝ ይላኩ፣ ሠራተኛው የታደሰውን ሰነድ ራሱ ይሰቅላል።';
+
+  @override
+  String get categoryHealthAndMedical => 'ጤና እና ሕክምና';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'አባልነቶች እና ምዝገባዎች';
+
+  @override
+  String get subcategoryFirearmLicences => 'የጦር መሣሪያ ፈቃዶች';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'ዓለም አቀፍ የመንጃ ፈቃዶች';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'የጀልባ እና የአብራሪ ፈቃዶች';
+
+  @override
+  String get subcategorySafetyCertificates => 'የመጀመሪያ እርዳታ እና የደህንነት ሰርተፊኬቶች';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'የኤሌክትሪክ ተገዢነት ሰርተፊኬቶች';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'የእሳት መከላከያ መሣሪያ አገልግሎት';
+
+  @override
+  String get subcategoryMedicalAidCards => 'የጤና መድን ካርዶች';
+
+  @override
+  String get subcategoryPrescriptions => 'የሐኪም ማዘዣዎች';
+
+  @override
+  String get subcategoryVaccinations => 'ክትባቶች';
+
+  @override
+  String get subcategoryMedicalCertificates => 'የሕክምና ማስረጃዎች';
+
+  @override
+  String get subcategoryGymMemberships => 'የጂም አባልነቶች';
+
+  @override
+  String get subcategoryClubMemberships => 'የክለብ አባልነቶች';
+
+  @override
+  String get subcategorySubscriptions => 'ምዝገባዎች';
+
+  @override
+  String get subcategoryWarranties => 'ዋስትናዎች';
+
+  @override
+  String get yoursTag => 'የእርስዎ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ጊዜያቸው አልፏል',
+      one: '$count ጊዜው አልፏል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'አዶ ቀይር';
+
+  @override
+  String get categoryLookTitle => 'አዶ እና ቀለም';
+
+  @override
+  String get categoryLookAppColour => 'የመተግበሪያው ቀለም';
+
+  @override
+  String get categoryLookHint => 'ከስሙ ተመርጧል። ለመቀየር ይንኩ።';
+
+  @override
+  String get renameCategoryTitle => 'ምድቡን እንደገና ሰይም';
+
+  @override
+  String get renameGroupTitle => 'ቡድኑን እንደገና ሰይም';
+
+  @override
+  String get nameInUse => 'ይህ ስም እዚህ አስቀድሞ ጥቅም ላይ ውሏል።';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'ነፃ ቡድኖች፦ $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'የነፃ ዕቅዱን የ$limit ብጁ ቡድኖች ገደብ ደርሰዋል። ያልተገደቡ ቡድኖችን ለመፍጠር ወደ Premium ያሻሽሉ።';
+  }
+
+  @override
+  String get recordsSortExpiry => 'በማብቂያ ቀን ደርድር';
+
+  @override
+  String get recordsSortName => 'በስም ደርድር';
+
+  @override
+  String get recordsSelect => 'ምረጥ';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተመርጠዋል',
+      one: '$count ተመርጧል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'አንቀሳቅስ';
+
+  @override
+  String get recordsMoveTitle => 'ወደዚህ አንቀሳቅስ';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መዝገቦች ተንቀሳቅሰዋል',
+      one: '$count መዝገብ ተንቀሳቅሷል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መዝገቦች ይሰረዙ?',
+      one: '$count መዝገብ ይሰረዝ?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'ወደ \"በቅርብ የተሰረዙ\" ይሄዳሉ፣ በ30 ቀናት ውስጥ መልሰው ማምጣት ይችላሉ።';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መዝገቦች ተሰርዘዋል',
+      one: '$count መዝገብ ተሰርዟል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'በቅርቡ ያበቃል';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ሁሉንም $count መዝገቦች አሳይ',
+      one: 'ሁሉንም መዝገቦች አሳይ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'በ$group ውስጥ እስካሁን ምንም የለም';
+  }
+
+  @override
+  String get recordsEmptyBody => 'ካርዱን ወይም ሰነዱን ይቃኙ፣ ወይም በእጅ ያክሉ። ጊዜው ከማለፉ በፊት Vaultara ያስታውስዎታል።';
+
+  @override
+  String get recordsScan => 'ቃኝ';
 }

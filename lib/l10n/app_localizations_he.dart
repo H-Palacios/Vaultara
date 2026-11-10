@@ -7985,4 +7985,184 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'שלחו קישור והעובד יעלה בעצמו את המסמך המחודש.';
+
+  @override
+  String get categoryHealthAndMedical => 'בריאות ורפואה';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'מינויים וחברויות';
+
+  @override
+  String get subcategoryFirearmLicences => 'רישיונות לנשק';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'רישיונות נהיגה בינלאומיים';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'רישיונות שיט וטיס';
+
+  @override
+  String get subcategorySafetyCertificates => 'תעודות עזרה ראשונה ובטיחות';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'אישורי בדיקת חשמל';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'תחזוקת ציוד כיבוי אש';
+
+  @override
+  String get subcategoryMedicalAidCards => 'כרטיסי קופת חולים';
+
+  @override
+  String get subcategoryPrescriptions => 'מרשמים';
+
+  @override
+  String get subcategoryVaccinations => 'חיסונים';
+
+  @override
+  String get subcategoryMedicalCertificates => 'אישורים רפואיים';
+
+  @override
+  String get subcategoryGymMemberships => 'מינויים לחדר כושר';
+
+  @override
+  String get subcategoryClubMemberships => 'חברויות במועדונים';
+
+  @override
+  String get subcategorySubscriptions => 'מינויים';
+
+  @override
+  String get subcategoryWarranties => 'אחריות';
+
+  @override
+  String get yoursTag => 'שלך';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'פג תוקף: $count',
+      one: 'פג תוקף: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'שינוי סמל';
+
+  @override
+  String get categoryLookTitle => 'סמל וצבע';
+
+  @override
+  String get categoryLookAppColour => 'צבע האפליקציה';
+
+  @override
+  String get categoryLookHint => 'נבחר לפי השם. הקש כדי לשנות.';
+
+  @override
+  String get renameCategoryTitle => 'שינוי שם הקטגוריה';
+
+  @override
+  String get renameGroupTitle => 'שינוי שם הקבוצה';
+
+  @override
+  String get nameInUse => 'השם הזה כבר בשימוש כאן.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'קבוצות בחינם: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'הגעת למגבלת התוכנית החינמית של $limit קבוצות מותאמות. שדרג ל-Premium כדי ליצור קבוצות ללא הגבלה.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'מיון לפי תאריך תפוגה';
+
+  @override
+  String get recordsSortName => 'מיון לפי שם';
+
+  @override
+  String get recordsSelect => 'בחירה';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נבחרו $count',
+      one: 'נבחר $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'העברה';
+
+  @override
+  String get recordsMoveTitle => 'העברה אל';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count רשומות הועברו',
+      one: 'רשומה אחת הועברה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'למחוק $count רשומות?',
+      one: 'למחוק רשומה אחת?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'הן יעברו אל \"נמחקו לאחרונה\", ושם אפשר לשחזר אותן במשך 30 יום.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count רשומות נמחקו',
+      one: 'רשומה אחת נמחקה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'יפוג בקרוב';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'הצגת כל $count הרשומות',
+      one: 'הצגת כל הרשומות',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'אין עדיין פריטים ב$group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'סרוק את הכרטיס או המסמך, או הוסף ידנית. Vaultara יזכיר לך לפני שהתוקף יפוג.';
+
+  @override
+  String get recordsScan => 'סריקה';
 }

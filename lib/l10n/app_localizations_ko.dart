@@ -7868,4 +7868,184 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => '링크를 보내면 직원이 갱신한 서류를 직접 올려요.';
+
+  @override
+  String get categoryHealthAndMedical => '건강 및 의료';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => '멤버십 및 구독';
+
+  @override
+  String get subcategoryFirearmLicences => '총기 소지 허가증';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => '국제운전면허증';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => '선박 및 조종사 면허';
+
+  @override
+  String get subcategorySafetyCertificates => '응급처치 및 안전 자격증';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => '전기 안전 점검 확인서';
+
+  @override
+  String get subcategoryFireEquipmentServices => '소방 설비 점검';
+
+  @override
+  String get subcategoryMedicalAidCards => '건강보험증';
+
+  @override
+  String get subcategoryPrescriptions => '처방전';
+
+  @override
+  String get subcategoryVaccinations => '예방접종';
+
+  @override
+  String get subcategoryMedicalCertificates => '진단서';
+
+  @override
+  String get subcategoryGymMemberships => '헬스장 회원권';
+
+  @override
+  String get subcategoryClubMemberships => '클럽 회원권';
+
+  @override
+  String get subcategorySubscriptions => '구독';
+
+  @override
+  String get subcategoryWarranties => '보증서';
+
+  @override
+  String get yoursTag => '내 항목';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '만료 $count개',
+      one: '만료 $count개',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => '아이콘 변경';
+
+  @override
+  String get categoryLookTitle => '아이콘 및 색상';
+
+  @override
+  String get categoryLookAppColour => '앱 색상';
+
+  @override
+  String get categoryLookHint => '이름에 맞춰 골랐어요. 탭하여 변경하세요.';
+
+  @override
+  String get renameCategoryTitle => '카테고리 이름 변경';
+
+  @override
+  String get renameGroupTitle => '그룹 이름 변경';
+
+  @override
+  String get nameInUse => '이미 사용 중인 이름입니다.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return '무료 그룹: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return '무료 플랜의 사용자 그룹 한도($limit개)에 도달했습니다. Premium으로 업그레이드하면 무제한으로 만들 수 있습니다.';
+  }
+
+  @override
+  String get recordsSortExpiry => '만료일순 정렬';
+
+  @override
+  String get recordsSortName => '이름순 정렬';
+
+  @override
+  String get recordsSelect => '선택';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count개 선택됨',
+      one: '$count개 선택됨',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => '이동';
+
+  @override
+  String get recordsMoveTitle => '이동할 위치';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '기록 $count개를 이동했습니다',
+      one: '기록 $count개를 이동했습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '기록 $count개를 삭제할까요?',
+      one: '기록 $count개를 삭제할까요?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '\'최근 삭제됨\'(으)로 이동하며 30일 동안 복원할 수 있습니다.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '기록 $count개를 삭제했습니다',
+      one: '기록 $count개를 삭제했습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => '곧 만료';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '기록 $count개 모두 보기',
+      one: '모든 기록 보기',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '아직 $group이(가) 없습니다';
+  }
+
+  @override
+  String get recordsEmptyBody => '카드나 문서를 스캔하거나 직접 추가하세요. 만료되기 전에 Vaultara가 알려 드립니다.';
+
+  @override
+  String get recordsScan => '스캔';
 }

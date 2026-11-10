@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "ڕاپۆرتی مانگانە",
   "storyBusiness3Body": "هەموو مانگێک ڕاپۆرتێک پیشان دەدات چی دروستە، چی بەسەردەچێت و چی کەمە.",
   "storyBusiness4Title": "داوای نوێکردنەوە بکە",
-  "storyBusiness4Body": "بەستەرێک بنێرە و کارمەندەکە خۆی بەڵگەنامە نوێکراوەکە بار دەکات."
+  "storyBusiness4Body": "بەستەرێک بنێرە و کارمەندەکە خۆی بەڵگەنامە نوێکراوەکە بار دەکات.",
+  "categoryHealthAndMedical": "تەندروستی و پزیشکی",
+  "categoryMembershipsAndSubscriptions": "ئەندامێتی و بەشداریکردن",
+  "subcategoryFirearmLicences": "مۆڵەتی چەک",
+  "subcategoryInternationalDrivingPermits": "مۆڵەتی شوفێری نێودەوڵەتی",
+  "subcategoryBoatAndPilotLicences": "مۆڵەتی بەلەم و فڕۆکەوان",
+  "subcategorySafetyCertificates": "بڕوانامەی فریاگوزاری سەرەتایی و سەلامەتی",
+  "subcategoryElectricalComplianceCertificates": "بڕوانامەی گونجاندنی کارەبا",
+  "subcategoryFireEquipmentServices": "خزمەتگوزاری ئامێری ئاگرکوژێنەوە",
+  "subcategoryMedicalAidCards": "کارتی بیمەی تەندروستی",
+  "subcategoryPrescriptions": "ڕەچەتە",
+  "subcategoryVaccinations": "کوتان",
+  "subcategoryMedicalCertificates": "ڕاپۆرتی پزیشکی",
+  "subcategoryGymMemberships": "ئەندامێتی هۆڵی وەرزش",
+  "subcategoryClubMemberships": "ئەندامێتی یانە",
+  "subcategorySubscriptions": "بەشداریکردن",
+  "subcategoryWarranties": "گەرەنتی",
+  "yoursTag": "هی تۆ",
+  "expiredBadge": "{count, plural, =1{{count} بەسەرچووە} other{{count} بەسەرچوون}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "گۆڕینی ئایکۆن",
+  "categoryLookTitle": "ئایکۆن و ڕەنگ",
+  "categoryLookAppColour": "ڕەنگی ئەپ",
+  "categoryLookHint": "بەپێی ناو هەڵبژێردرا. بۆ گۆڕین دەستی لێبدە.",
+  "renameCategoryTitle": "گۆڕینی ناوی هاوپۆل",
+  "renameGroupTitle": "گۆڕینی ناوی گروپ",
+  "nameInUse": "ئەم ناوە پێشتر لێرە بەکارهاتووە.",
+  "freeGroupsProgress": "گروپی بێبەرامبەر: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "گەیشتیتە سنووری پلانی بێبەرامبەر کە {limit} گروپی تایبەتە. بۆ گروپی بێسنوور بچۆ سەر Premium.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "ڕیزکردن بەپێی بەرواری بەسەرچوون",
+  "recordsSortName": "ڕیزکردن بەپێی ناو",
+  "recordsSelect": "هەڵبژاردن",
+  "recordsSelected": "{count, plural, =1{{count} هەڵبژێردرا} other{{count} هەڵبژێردران}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "گواستنەوە",
+  "recordsMoveTitle": "گواستنەوە بۆ",
+  "recordsMoved": "{count, plural, =1{{count} تۆمار گوازرایەوە} other{{count} تۆمار گوازرانەوە}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} تۆمار بسڕدرێتەوە؟} other{{count} تۆمار بسڕدرێنەوە؟}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "دەچنە «بەتازەیی سڕاوەکان»، لەوێ تا 30 ڕۆژ دەتوانیت بیانگەڕێنیتەوە.",
+  "recordsDeletedMany": "{count, plural, =1{{count} تۆمار سڕایەوە} other{{count} تۆمار سڕانەوە}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "بەم زووانە بەسەردەچێت",
+  "recordsShowAll": "{count, plural, =1{پیشاندانی هەموو تۆمارەکان} other{پیشاندانی هەموو {count} تۆمارەکە}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "هێشتا هیچ لە {group} دا نییە",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "کارت یان بەڵگەنامەکە سکان بکە، یان بە دەست زیادی بکە. Vaultara پێش بەسەرچوون بیرت دەخاتەوە.",
+  "recordsScan": "سکان"
 }

@@ -2639,5 +2639,113 @@
   "storyBusiness3Title": "Měsíční přehled",
   "storyBusiness3Body": "Každý měsíc přehled ukáže, co platí, co vyprší a co chybí.",
   "storyBusiness4Title": "Požádejte o aktualizaci",
-  "storyBusiness4Body": "Pošlete odkaz a zaměstnanec sám nahraje obnovený doklad."
+  "storyBusiness4Body": "Pošlete odkaz a zaměstnanec sám nahraje obnovený doklad.",
+  "categoryHealthAndMedical": "Zdraví a medicína",
+  "categoryMembershipsAndSubscriptions": "Členství a předplatné",
+  "subcategoryFirearmLicences": "Zbrojní průkazy",
+  "subcategoryInternationalDrivingPermits": "Mezinárodní řidičská oprávnění",
+  "subcategoryBoatAndPilotLicences": "Průkazy vůdce plavidla a pilota",
+  "subcategorySafetyCertificates": "Certifikáty první pomoci a BOZP",
+  "subcategoryElectricalComplianceCertificates": "Revize elektroinstalace",
+  "subcategoryFireEquipmentServices": "Revize hasicích přístrojů",
+  "subcategoryMedicalAidCards": "Kartičky zdravotní pojišťovny",
+  "subcategoryPrescriptions": "Recepty",
+  "subcategoryVaccinations": "Očkování",
+  "subcategoryMedicalCertificates": "Lékařská potvrzení",
+  "subcategoryGymMemberships": "Permanentky do posilovny",
+  "subcategoryClubMemberships": "Členství v klubech",
+  "subcategorySubscriptions": "Předplatné",
+  "subcategoryWarranties": "Záruky",
+  "yoursTag": "Vaše",
+  "expiredBadge": "{count, plural, =1{{count} propadlé} other{Propadlé: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Změnit ikonu",
+  "categoryLookTitle": "Ikona a barva",
+  "categoryLookAppColour": "Barva aplikace",
+  "categoryLookHint": "Vybráno podle názvu. Klepnutím změníte.",
+  "renameCategoryTitle": "Přejmenovat kategorii",
+  "renameGroupTitle": "Přejmenovat skupinu",
+  "nameInUse": "Tento název se tu už používá.",
+  "freeGroupsProgress": "Skupiny zdarma: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Dosáhli jste limitu tarifu Free: {limit} vlastních skupin. S Premium můžete vytvářet neomezeně skupin.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Řadit podle data platnosti",
+  "recordsSortName": "Řadit podle názvu",
+  "recordsSelect": "Vybrat",
+  "recordsSelected": "{count, plural, =1{Vybrán {count}} other{Vybráno: {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Přesunout",
+  "recordsMoveTitle": "Přesunout do",
+  "recordsMoved": "{count, plural, =1{Přesunut {count} záznam} few{Přesunuty {count} záznamy} many{Přesunuto {count} záznamu} other{Přesunuto {count} záznamů}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Smazat {count} záznam?} few{Smazat {count} záznamy?} many{Smazat {count} záznamu?} other{Smazat {count} záznamů?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Přesunou se do „Nedávno odstraněné“, kde je 30 dní můžete obnovit.",
+  "recordsDeletedMany": "{count, plural, =1{Smazán {count} záznam} few{Smazány {count} záznamy} many{Smazáno {count} záznamu} other{Smazáno {count} záznamů}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Brzy vyprší",
+  "recordsShowAll": "{count, plural, =1{Zobrazit všechny záznamy} other{Zobrazit všechny záznamy ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Ve skupině {group} zatím nic není",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Naskenujte kartu nebo doklad, nebo ho přidejte ručně. Vaultara vám připomene konec platnosti.",
+  "recordsScan": "Skenovat"
 }

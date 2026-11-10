@@ -2615,5 +2615,113 @@
   "storyBusiness3Title": "Μηνιαία αναφορά",
   "storyBusiness3Body": "Κάθε μήνα μια αναφορά δείχνει τι ισχύει, τι λήγει και τι λείπει.",
   "storyBusiness4Title": "Ζητήστε ενημέρωση",
-  "storyBusiness4Body": "Στείλτε σύνδεσμο και το μέλος του προσωπικού ανεβάζει μόνο του το ανανεωμένο έγγραφο."
+  "storyBusiness4Body": "Στείλτε σύνδεσμο και το μέλος του προσωπικού ανεβάζει μόνο του το ανανεωμένο έγγραφο.",
+  "categoryHealthAndMedical": "Υγεία και ιατρικά",
+  "categoryMembershipsAndSubscriptions": "Συνδρομές και μέλη",
+  "subcategoryFirearmLicences": "Άδειες οπλοφορίας",
+  "subcategoryInternationalDrivingPermits": "Διεθνείς άδειες οδήγησης",
+  "subcategoryBoatAndPilotLicences": "Άδειες σκάφους και πιλότου",
+  "subcategorySafetyCertificates": "Πιστοποιητικά πρώτων βοηθειών και ασφάλειας",
+  "subcategoryElectricalComplianceCertificates": "Πιστοποιητικά ηλεκτρικής εγκατάστασης",
+  "subcategoryFireEquipmentServices": "Συντήρηση πυροσβεστικού εξοπλισμού",
+  "subcategoryMedicalAidCards": "Κάρτες ασφάλισης υγείας",
+  "subcategoryPrescriptions": "Συνταγές",
+  "subcategoryVaccinations": "Εμβολιασμοί",
+  "subcategoryMedicalCertificates": "Ιατρικά πιστοποιητικά",
+  "subcategoryGymMemberships": "Συνδρομές γυμναστηρίου",
+  "subcategoryClubMemberships": "Συνδρομές σε συλλόγους",
+  "subcategorySubscriptions": "Συνδρομές",
+  "subcategoryWarranties": "Εγγυήσεις",
+  "yoursTag": "Δικό σας",
+  "expiredBadge": "{count, plural, =1{{count} έληξε} other{{count} έληξαν}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Αλλαγή εικονιδίου",
+  "categoryLookTitle": "Εικονίδιο και χρώμα",
+  "categoryLookAppColour": "Χρώμα εφαρμογής",
+  "categoryLookHint": "Επιλέχθηκε από το όνομα. Πατήστε για αλλαγή.",
+  "renameCategoryTitle": "Μετονομασία κατηγορίας",
+  "renameGroupTitle": "Μετονομασία ομάδας",
+  "nameInUse": "Αυτό το όνομα χρησιμοποιείται ήδη εδώ.",
+  "freeGroupsProgress": "Δωρεάν ομάδες: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Φτάσατε το όριο του δωρεάν προγράμματος των {limit} προσαρμοσμένων ομάδων. Αναβαθμίστε σε Premium για απεριόριστες ομάδες.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ταξινόμηση κατά ημερομηνία λήξης",
+  "recordsSortName": "Ταξινόμηση κατά όνομα",
+  "recordsSelect": "Επιλογή",
+  "recordsSelected": "{count, plural, =1{{count} επιλεγμένο} other{{count} επιλεγμένα}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Μετακίνηση",
+  "recordsMoveTitle": "Μετακίνηση σε",
+  "recordsMoved": "{count, plural, =1{Μετακινήθηκε {count} εγγραφή} other{Μετακινήθηκαν {count} εγγραφές}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Διαγραφή {count} εγγραφής;} other{Διαγραφή {count} εγγραφών;}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Πηγαίνουν στα «Πρόσφατα διαγραμμένα», όπου μπορείτε να τα επαναφέρετε για 30 ημέρες.",
+  "recordsDeletedMany": "{count, plural, =1{Διαγράφηκε {count} εγγραφή} other{Διαγράφηκαν {count} εγγραφές}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Λήγει σύντομα",
+  "recordsShowAll": "{count, plural, =1{Εμφάνιση όλων των εγγραφών} other{Εμφάνιση και των {count} εγγραφών}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Δεν υπάρχει ακόμα τίποτα στην ομάδα {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Σαρώστε την κάρτα ή το έγγραφο ή προσθέστε το χειροκίνητα. Το Vaultara θα σας υπενθυμίσει πριν λήξει.",
+  "recordsScan": "Σάρωση"
 }

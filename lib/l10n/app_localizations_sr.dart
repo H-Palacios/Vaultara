@@ -8001,6 +8001,189 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Пошаљите линк и запослени сам отпреми обновљени документ.';
+
+  @override
+  String get categoryHealthAndMedical => 'Здравље и медицина';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Чланства и претплате';
+
+  @override
+  String get subcategoryFirearmLicences => 'Дозволе за оружје';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Међународне возачке дозволе';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Дозволе за брод и пилота';
+
+  @override
+  String get subcategorySafetyCertificates => 'Сертификати прве помоћи и безбедности';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Атести електричних инсталација';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Сервис противпожарне опреме';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Картице здравственог осигурања';
+
+  @override
+  String get subcategoryPrescriptions => 'Рецепти';
+
+  @override
+  String get subcategoryVaccinations => 'Вакцинације';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Лекарска уверења';
+
+  @override
+  String get subcategoryGymMemberships => 'Чланства у теретани';
+
+  @override
+  String get subcategoryClubMemberships => 'Чланства у клубовима';
+
+  @override
+  String get subcategorySubscriptions => 'Претплате';
+
+  @override
+  String get subcategoryWarranties => 'Гаранције';
+
+  @override
+  String get yoursTag => 'Ваше';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекло: $count',
+      one: '$count истекло',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Промени икону';
+
+  @override
+  String get categoryLookTitle => 'Икона и боја';
+
+  @override
+  String get categoryLookAppColour => 'Боја апликације';
+
+  @override
+  String get categoryLookHint => 'Изабрано према називу. Додирните за промену.';
+
+  @override
+  String get renameCategoryTitle => 'Преименуј категорију';
+
+  @override
+  String get renameGroupTitle => 'Преименуј групу';
+
+  @override
+  String get nameInUse => 'Тај назив се овде већ користи.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Бесплатне групе: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Достигли сте ограничење бесплатног плана од $limit сопствених група. Пређите на Premium за неограничен број група.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Поређај по датуму истека';
+
+  @override
+  String get recordsSortName => 'Поређај по називу';
+
+  @override
+  String get recordsSelect => 'Изабери';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Изабрано: $count',
+      one: 'Изабрано: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Премести';
+
+  @override
+  String get recordsMoveTitle => 'Премести у';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Премештено $count записа',
+      few: 'Премештена $count записа',
+      one: 'Премештен $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Избрисати $count записа?',
+      few: 'Избрисати $count записа?',
+      one: 'Избрисати $count запис?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Иду у „Недавно обрисано”, одакле их можете вратити у року од 30 дана.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Избрисано $count записа',
+      few: 'Избрисана $count записа',
+      one: 'Избрисан $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Ускоро истиче';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Прикажи све записе ($count)',
+      one: 'Прикажи све записе',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'У групи $group још нема ништа';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Скенирајте картицу или документ или га додајте ручно. Vaultara вас подсећа пре истека.';
+
+  @override
+  String get recordsScan => 'Скенирај';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -15999,6 +16182,189 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get storyBusiness4Body => 'Пошаљите линк и запослени сам отпреми обновљени документ.';
+
+  @override
+  String get categoryHealthAndMedical => 'Здравље и медицина';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Чланства и претплате';
+
+  @override
+  String get subcategoryFirearmLicences => 'Дозволе за оружје';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Међународне возачке дозволе';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Дозволе за брод и пилота';
+
+  @override
+  String get subcategorySafetyCertificates => 'Сертификати прве помоћи и безбедности';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Атести електричних инсталација';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Сервис противпожарне опреме';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Картице здравственог осигурања';
+
+  @override
+  String get subcategoryPrescriptions => 'Рецепти';
+
+  @override
+  String get subcategoryVaccinations => 'Вакцинације';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Лекарска уверења';
+
+  @override
+  String get subcategoryGymMemberships => 'Чланства у теретани';
+
+  @override
+  String get subcategoryClubMemberships => 'Чланства у клубовима';
+
+  @override
+  String get subcategorySubscriptions => 'Претплате';
+
+  @override
+  String get subcategoryWarranties => 'Гаранције';
+
+  @override
+  String get yoursTag => 'Ваше';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекло: $count',
+      one: '$count истекло',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Промени икону';
+
+  @override
+  String get categoryLookTitle => 'Икона и боја';
+
+  @override
+  String get categoryLookAppColour => 'Боја апликације';
+
+  @override
+  String get categoryLookHint => 'Изабрано према називу. Додирните за промену.';
+
+  @override
+  String get renameCategoryTitle => 'Преименуј категорију';
+
+  @override
+  String get renameGroupTitle => 'Преименуј групу';
+
+  @override
+  String get nameInUse => 'Тај назив се овде већ користи.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Бесплатне групе: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Достигли сте ограничење бесплатног плана од $limit сопствених група. Пређите на Premium за неограничен број група.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Поређај по датуму истека';
+
+  @override
+  String get recordsSortName => 'Поређај по називу';
+
+  @override
+  String get recordsSelect => 'Изабери';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Изабрано: $count',
+      one: 'Изабрано: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Премести';
+
+  @override
+  String get recordsMoveTitle => 'Премести у';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Премештено $count записа',
+      few: 'Премештена $count записа',
+      one: 'Премештен $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Избрисати $count записа?',
+      few: 'Избрисати $count записа?',
+      one: 'Избрисати $count запис?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Иду у „Недавно обрисано”, одакле их можете вратити у року од 30 дана.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Избрисано $count записа',
+      few: 'Избрисана $count записа',
+      one: 'Избрисан $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Ускоро истиче';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Прикажи све записе ($count)',
+      one: 'Прикажи све записе',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'У групи $group још нема ништа';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Скенирајте картицу или документ или га додајте ручно. Vaultara вас подсећа пре истека.';
+
+  @override
+  String get recordsScan => 'Скенирај';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -23993,4 +24359,187 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get storyBusiness4Body => 'Pošaljite link i zaposleni sam otpremi obnovljeni dokument.';
+
+  @override
+  String get categoryHealthAndMedical => 'Zdravlje i medicina';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Članstva i pretplate';
+
+  @override
+  String get subcategoryFirearmLicences => 'Dozvole za oružje';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Međunarodne vozačke dozvole';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Dozvole za brod i pilota';
+
+  @override
+  String get subcategorySafetyCertificates => 'Sertifikati prve pomoći i bezbednosti';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Atesti električnih instalacija';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Servis protivpožarne opreme';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kartice zdravstvenog osiguranja';
+
+  @override
+  String get subcategoryPrescriptions => 'Recepti';
+
+  @override
+  String get subcategoryVaccinations => 'Vakcinacije';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Lekarska uverenja';
+
+  @override
+  String get subcategoryGymMemberships => 'Članstva u teretani';
+
+  @override
+  String get subcategoryClubMemberships => 'Članstva u klubovima';
+
+  @override
+  String get subcategorySubscriptions => 'Pretplate';
+
+  @override
+  String get subcategoryWarranties => 'Garancije';
+
+  @override
+  String get yoursTag => 'Vaše';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Isteklo: $count',
+      one: '$count isteklo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Promeni ikonu';
+
+  @override
+  String get categoryLookTitle => 'Ikona i boja';
+
+  @override
+  String get categoryLookAppColour => 'Boja aplikacije';
+
+  @override
+  String get categoryLookHint => 'Izabrano prema nazivu. Dodirnite za promenu.';
+
+  @override
+  String get renameCategoryTitle => 'Preimenuj kategoriju';
+
+  @override
+  String get renameGroupTitle => 'Preimenuj grupu';
+
+  @override
+  String get nameInUse => 'Taj naziv se ovde već koristi.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Besplatne grupe: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Dostigli ste ograničenje besplatnog plana od $limit sopstvenih grupa. Pređite na Premium za neograničen broj grupa.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Poređaj po datumu isteka';
+
+  @override
+  String get recordsSortName => 'Poređaj po nazivu';
+
+  @override
+  String get recordsSelect => 'Izaberi';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izabrano: $count',
+      one: 'Izabrano: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Premesti';
+
+  @override
+  String get recordsMoveTitle => 'Premesti u';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Premešteno $count zapisa',
+      few: 'Premeštena $count zapisa',
+      one: 'Premešten $count zapis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izbrisati $count zapisa?',
+      few: 'Izbrisati $count zapisa?',
+      one: 'Izbrisati $count zapis?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Idu u „Nedavno obrisano”, odakle ih možete vratiti u roku od 30 dana.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izbrisano $count zapisa',
+      few: 'Izbrisana $count zapisa',
+      one: 'Izbrisan $count zapis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Uskoro ističe';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Prikaži sve zapise ($count)',
+      one: 'Prikaži sve zapise',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'U grupi $group još nema ništa';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Skenirajte karticu ili dokument ili ga dodajte ručno. Vaultara vas podseća pre isteka.';
+
+  @override
+  String get recordsScan => 'Skeniraj';
 }

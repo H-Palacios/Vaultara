@@ -2608,5 +2608,113 @@
   "storyBusiness3Title": "Aylık rapor",
   "storyBusiness3Body": "Her ay bir rapor neyin geçerli olduğunu, neyin sona erdiğini ve neyin eksik olduğunu gösterir.",
   "storyBusiness4Title": "Güncelleme iste",
-  "storyBusiness4Body": "Bir bağlantı gönder, personel yenilenen belgeyi kendisi yüklesin."
+  "storyBusiness4Body": "Bir bağlantı gönder, personel yenilenen belgeyi kendisi yüklesin.",
+  "categoryHealthAndMedical": "Sağlık ve tıbbi",
+  "categoryMembershipsAndSubscriptions": "Üyelikler ve abonelikler",
+  "subcategoryFirearmLicences": "Silah ruhsatları",
+  "subcategoryInternationalDrivingPermits": "Uluslararası sürücü belgeleri",
+  "subcategoryBoatAndPilotLicences": "Tekne ve pilot lisansları",
+  "subcategorySafetyCertificates": "İlk yardım ve güvenlik sertifikaları",
+  "subcategoryElectricalComplianceCertificates": "Elektrik uygunluk belgeleri",
+  "subcategoryFireEquipmentServices": "Yangın ekipmanı bakımları",
+  "subcategoryMedicalAidCards": "Sağlık sigortası kartları",
+  "subcategoryPrescriptions": "Reçeteler",
+  "subcategoryVaccinations": "Aşılar",
+  "subcategoryMedicalCertificates": "Sağlık raporları",
+  "subcategoryGymMemberships": "Spor salonu üyelikleri",
+  "subcategoryClubMemberships": "Kulüp üyelikleri",
+  "subcategorySubscriptions": "Abonelikler",
+  "subcategoryWarranties": "Garantiler",
+  "yoursTag": "Sizin",
+  "expiredBadge": "{count, plural, =1{{count} süresi doldu} other{{count} süresi doldu}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Simgeyi değiştir",
+  "categoryLookTitle": "Simge ve renk",
+  "categoryLookAppColour": "Uygulama rengi",
+  "categoryLookHint": "Adına göre seçildi. Değiştirmek için dokunun.",
+  "renameCategoryTitle": "Kategoriyi yeniden adlandır",
+  "renameGroupTitle": "Grubu yeniden adlandır",
+  "nameInUse": "Bu ad burada zaten kullanılıyor.",
+  "freeGroupsProgress": "Ücretsiz gruplar: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Ücretsiz planın {limit} özel grup sınırına ulaştınız. Sınırsız grup oluşturmak için Premium'a yükseltin.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Son kullanma tarihine göre sırala",
+  "recordsSortName": "Ada göre sırala",
+  "recordsSelect": "Seç",
+  "recordsSelected": "{count, plural, =1{{count} seçildi} other{{count} seçildi}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Taşı",
+  "recordsMoveTitle": "Şuraya taşı",
+  "recordsMoved": "{count, plural, =1{{count} kayıt taşındı} other{{count} kayıt taşındı}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} kayıt silinsin mi?} other{{count} kayıt silinsin mi?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "\"Son silinenler\" bölümüne gider; 30 gün boyunca geri alabilirsiniz.",
+  "recordsDeletedMany": "{count, plural, =1{{count} kayıt silindi} other{{count} kayıt silindi}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Yakında doluyor",
+  "recordsShowAll": "{count, plural, =1{Tüm kayıtları göster} other{{count} kaydın tümünü göster}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} içinde henüz bir şey yok",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Kartı veya belgeyi tarayın ya da elle ekleyin. Vaultara süresi dolmadan önce size hatırlatır.",
+  "recordsScan": "Tara"
 }

@@ -7930,4 +7930,184 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Envía unha ligazón e o persoal sobe el mesmo o documento renovado.';
+
+  @override
+  String get categoryHealthAndMedical => 'Saúde e medicina';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Subscricións e cotas de socio';
+
+  @override
+  String get subcategoryFirearmLicences => 'Licenzas de armas';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Permisos de condución internacionais';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Titulacións náuticas e licenzas de piloto';
+
+  @override
+  String get subcategorySafetyCertificates => 'Certificados de primeiros auxilios e seguridade';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Boletíns de instalación eléctrica';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Mantemento de equipos contra incendios';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Tarxetas sanitarias';
+
+  @override
+  String get subcategoryPrescriptions => 'Receitas';
+
+  @override
+  String get subcategoryVaccinations => 'Vacinas';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Certificados médicos';
+
+  @override
+  String get subcategoryGymMemberships => 'Cotas do ximnasio';
+
+  @override
+  String get subcategoryClubMemberships => 'Cotas de clubs';
+
+  @override
+  String get subcategorySubscriptions => 'Subscricións';
+
+  @override
+  String get subcategoryWarranties => 'Garantías';
+
+  @override
+  String get yoursTag => 'Teu';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count caducados',
+      one: '$count caducado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Cambiar a icona';
+
+  @override
+  String get categoryLookTitle => 'Icona e cor';
+
+  @override
+  String get categoryLookAppColour => 'Cor da app';
+
+  @override
+  String get categoryLookHint => 'Escollida segundo o nome. Toca para cambiala.';
+
+  @override
+  String get renameCategoryTitle => 'Cambiar o nome da categoría';
+
+  @override
+  String get renameGroupTitle => 'Cambiar o nome do grupo';
+
+  @override
+  String get nameInUse => 'Ese nome xa se usa aquí.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Grupos gratuítos: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Chegaches ao límite do plan Gratuíto de $limit grupos personalizados. Pasa a Premium para crear grupos sen límite.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Ordenar por data de caducidade';
+
+  @override
+  String get recordsSortName => 'Ordenar por nome';
+
+  @override
+  String get recordsSelect => 'Seleccionar';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count seleccionados',
+      one: '$count seleccionado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Mover';
+
+  @override
+  String get recordsMoveTitle => 'Mover a';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Movéronse $count rexistros',
+      one: 'Moveuse $count rexistro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Queres eliminar $count rexistros?',
+      one: 'Queres eliminar $count rexistro?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Van a «Eliminados recentemente», onde podes recuperalos durante 30 días.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Elimináronse $count rexistros',
+      one: 'Eliminouse $count rexistro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Caduca pronto';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mostrar os $count rexistros',
+      one: 'Mostrar todos os rexistros',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Aínda non hai nada en $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Escanea a tarxeta ou o documento, ou engádeo a man. Vaultara avísate antes de que caduque.';
+
+  @override
+  String get recordsScan => 'Escanear';
 }

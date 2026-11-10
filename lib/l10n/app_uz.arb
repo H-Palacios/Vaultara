@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "Oylik hisobot",
   "storyBusiness3Body": "Har oy hisobot nima amalda, nimaning muddati tugayotgani va nima yetishmasligini koʻrsatadi.",
   "storyBusiness4Title": "Yangilashni soʻrang",
-  "storyBusiness4Body": "Havola yuboring, xodim yangilangan hujjatni oʻzi yuklaydi."
+  "storyBusiness4Body": "Havola yuboring, xodim yangilangan hujjatni oʻzi yuklaydi.",
+  "categoryHealthAndMedical": "Sogʻliq va tibbiyot",
+  "categoryMembershipsAndSubscriptions": "Aʼzoliklar va obunalar",
+  "subcategoryFirearmLicences": "Qurol litsenziyalari",
+  "subcategoryInternationalDrivingPermits": "Xalqaro haydovchilik guvohnomalari",
+  "subcategoryBoatAndPilotLicences": "Qayiq va uchuvchi litsenziyalari",
+  "subcategorySafetyCertificates": "Birinchi yordam va xavfsizlik sertifikatlari",
+  "subcategoryElectricalComplianceCertificates": "Elektr muvofiqlik sertifikatlari",
+  "subcategoryFireEquipmentServices": "Yongʻinga qarshi uskunalar xizmati",
+  "subcategoryMedicalAidCards": "Tibbiy sugʻurta kartalari",
+  "subcategoryPrescriptions": "Retseptlar",
+  "subcategoryVaccinations": "Emlashlar",
+  "subcategoryMedicalCertificates": "Tibbiy maʼlumotnomalar",
+  "subcategoryGymMemberships": "Sport zali aʼzoliklari",
+  "subcategoryClubMemberships": "Klub aʼzoliklari",
+  "subcategorySubscriptions": "Obunalar",
+  "subcategoryWarranties": "Kafolatlar",
+  "yoursTag": "Sizniki",
+  "expiredBadge": "{count, plural, =1{{count} ta muddati tugagan} other{{count} ta muddati tugagan}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Belgini almashtirish",
+  "categoryLookTitle": "Belgi va rang",
+  "categoryLookAppColour": "Ilova rangi",
+  "categoryLookHint": "Nomga qarab tanlandi. Almashtirish uchun bosing.",
+  "renameCategoryTitle": "Turkum nomini oʻzgartirish",
+  "renameGroupTitle": "Guruh nomini oʻzgartirish",
+  "nameInUse": "Bu nom bu yerda allaqachon ishlatilgan.",
+  "freeGroupsProgress": "Bepul guruhlar: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Bepul tarifning {limit} ta shaxsiy guruh chegarasiga yetdingiz. Cheksiz guruhlar uchun Premium tarifga oʻting.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Muddat sanasi boʻyicha saralash",
+  "recordsSortName": "Nom boʻyicha saralash",
+  "recordsSelect": "Tanlash",
+  "recordsSelected": "{count, plural, =1{{count} ta tanlandi} other{{count} ta tanlandi}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Koʻchirish",
+  "recordsMoveTitle": "Bu yerga koʻchirish",
+  "recordsMoved": "{count, plural, =1{{count} ta yozuv koʻchirildi} other{{count} ta yozuv koʻchirildi}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} ta yozuv oʻchirilsinmi?} other{{count} ta yozuv oʻchirilsinmi?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Ular \"Yaqinda oʻchirilganlar\" boʻlimiga tushadi, u yerdan 30 kun ichida qaytarish mumkin.",
+  "recordsDeletedMany": "{count, plural, =1{{count} ta yozuv oʻchirildi} other{{count} ta yozuv oʻchirildi}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Tez orada tugaydi",
+  "recordsShowAll": "{count, plural, =1{Barcha yozuvlarni koʻrsatish} other{Barcha {count} ta yozuvni koʻrsatish}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} hali boʻsh",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Karta yoki hujjatni skanerlang yoki qoʻlda qoʻshing. Muddati tugashidan oldin Vaultara eslatadi.",
+  "recordsScan": "Skanerlash"
 }

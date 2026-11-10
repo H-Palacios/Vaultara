@@ -2639,5 +2639,113 @@
   "storyBusiness3Title": "Informe mensual",
   "storyBusiness3Body": "Cada mes, un informe mostra què és vàlid, què caduca i què falta.",
   "storyBusiness4Title": "Demana una actualització",
-  "storyBusiness4Body": "Envia un enllaç i el personal puja ell mateix el document renovat."
+  "storyBusiness4Body": "Envia un enllaç i el personal puja ell mateix el document renovat.",
+  "categoryHealthAndMedical": "Salut i medicina",
+  "categoryMembershipsAndSubscriptions": "Subscripcions i quotes de soci",
+  "subcategoryFirearmLicences": "Llicències d'armes",
+  "subcategoryInternationalDrivingPermits": "Permisos de conduir internacionals",
+  "subcategoryBoatAndPilotLicences": "Titulacions nàutiques i llicències de pilot",
+  "subcategorySafetyCertificates": "Certificats de primers auxilis i seguretat",
+  "subcategoryElectricalComplianceCertificates": "Butlletins d'instal·lació elèctrica",
+  "subcategoryFireEquipmentServices": "Manteniment d'equips contra incendis",
+  "subcategoryMedicalAidCards": "Targetes sanitàries",
+  "subcategoryPrescriptions": "Receptes",
+  "subcategoryVaccinations": "Vacunes",
+  "subcategoryMedicalCertificates": "Certificats mèdics",
+  "subcategoryGymMemberships": "Quotes del gimnàs",
+  "subcategoryClubMemberships": "Quotes de clubs",
+  "subcategorySubscriptions": "Subscripcions",
+  "subcategoryWarranties": "Garanties",
+  "yoursTag": "Teu",
+  "expiredBadge": "{count, plural, =1{{count} caducat} other{{count} caducats}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Canvia la icona",
+  "categoryLookTitle": "Icona i color",
+  "categoryLookAppColour": "Color de l'app",
+  "categoryLookHint": "Triada segons el nom. Toca per canviar-la.",
+  "renameCategoryTitle": "Canvia el nom de la categoria",
+  "renameGroupTitle": "Canvia el nom del grup",
+  "nameInUse": "Aquest nom ja s'utilitza aquí.",
+  "freeGroupsProgress": "Grups gratuïts: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Has arribat al límit del pla Gratuït de {limit} grups personalitzats. Passa a Premium per crear grups sense límit.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ordena per data de caducitat",
+  "recordsSortName": "Ordena per nom",
+  "recordsSelect": "Selecciona",
+  "recordsSelected": "{count, plural, =1{{count} seleccionat} other{{count} seleccionats}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Mou",
+  "recordsMoveTitle": "Mou a",
+  "recordsMoved": "{count, plural, =1{S'ha mogut {count} registre} other{S'han mogut {count} registres}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Vols suprimir {count} registre?} other{Vols suprimir {count} registres?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Van a «Eliminats recentment», on els pots recuperar durant 30 dies.",
+  "recordsDeletedMany": "{count, plural, =1{S'ha suprimit {count} registre} other{S'han suprimit {count} registres}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Caduca aviat",
+  "recordsShowAll": "{count, plural, =1{Mostra tots els registres} other{Mostra els {count} registres}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Encara no hi ha res a {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Escaneja la targeta o el document, o afegeix-lo a mà. Vaultara t'avisa abans que caduqui.",
+  "recordsScan": "Escaneja"
 }

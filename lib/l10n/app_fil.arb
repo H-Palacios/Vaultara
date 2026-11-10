@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "Buwanang ulat",
   "storyBusiness3Body": "Bawat buwan, ipinapakita ng ulat kung ano ang valid, ano ang mag-e-expire at ano ang kulang.",
   "storyBusiness4Title": "Humingi ng update",
-  "storyBusiness4Body": "Magpadala ng link at ang staff mismo ang mag-a-upload ng na-renew na dokumento."
+  "storyBusiness4Body": "Magpadala ng link at ang staff mismo ang mag-a-upload ng na-renew na dokumento.",
+  "categoryHealthAndMedical": "Kalusugan at medikal",
+  "categoryMembershipsAndSubscriptions": "Mga membership at subscription",
+  "subcategoryFirearmLicences": "Mga lisensya sa baril",
+  "subcategoryInternationalDrivingPermits": "Mga international driving permit",
+  "subcategoryBoatAndPilotLicences": "Mga lisensya sa bangka at piloto",
+  "subcategorySafetyCertificates": "Mga sertipiko sa first aid at kaligtasan",
+  "subcategoryElectricalComplianceCertificates": "Mga sertipiko ng pagsunod sa kuryente",
+  "subcategoryFireEquipmentServices": "Serbisyo ng kagamitang pamatay-sunog",
+  "subcategoryMedicalAidCards": "Mga health insurance card",
+  "subcategoryPrescriptions": "Mga reseta",
+  "subcategoryVaccinations": "Mga bakuna",
+  "subcategoryMedicalCertificates": "Mga medical certificate",
+  "subcategoryGymMemberships": "Mga gym membership",
+  "subcategoryClubMemberships": "Mga club membership",
+  "subcategorySubscriptions": "Mga subscription",
+  "subcategoryWarranties": "Mga warranty at garantiya",
+  "yoursTag": "Iyo",
+  "expiredBadge": "{count, plural, =1{{count} expired} other{{count} expired}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Palitan ang icon",
+  "categoryLookTitle": "Icon at kulay",
+  "categoryLookAppColour": "Kulay ng app",
+  "categoryLookHint": "Pinili batay sa pangalan. I-tap para palitan.",
+  "renameCategoryTitle": "Palitan ang pangalan ng kategorya",
+  "renameGroupTitle": "Palitan ang pangalan ng grupo",
+  "nameInUse": "Ginagamit na ang pangalang iyan dito.",
+  "freeGroupsProgress": "Mga libreng grupo: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Naabot mo na ang limitasyon ng Free plan na {limit} custom na grupo. Mag-upgrade sa Premium para gumawa ng walang limitasyong grupo.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Ayusin ayon sa petsa ng pag-expire",
+  "recordsSortName": "Ayusin ayon sa pangalan",
+  "recordsSelect": "Pumili",
+  "recordsSelected": "{count, plural, =1{{count} ang napili} other{{count} ang napili}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Ilipat",
+  "recordsMoveTitle": "Ilipat sa",
+  "recordsMoved": "{count, plural, =1{Nailipat ang {count} record} other{Nailipat ang {count} record}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Burahin ang {count} record?} other{Burahin ang {count} record?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Mapupunta ang mga ito sa \"Kamakailang tinanggal\", kung saan maibabalik mo sila sa loob ng 30 araw.",
+  "recordsDeletedMany": "{count, plural, =1{Nabura ang {count} record} other{Nabura ang {count} record}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Malapit nang mag-expire",
+  "recordsShowAll": "{count, plural, =1{Ipakita ang lahat ng record} other{Ipakita ang lahat ng {count} record}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Wala pang laman ang {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "I-scan ang card o dokumento, o idagdag nang mano-mano. Paaalalahanan ka ng Vaultara bago ito mag-expire.",
+  "recordsScan": "I-scan"
 }

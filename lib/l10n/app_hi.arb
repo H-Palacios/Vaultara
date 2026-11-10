@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "मासिक रिपोर्ट",
   "storyBusiness3Body": "हर महीने रिपोर्ट दिखाती है कि क्या मान्य है, क्या समाप्त हो रहा है और क्या गायब है।",
   "storyBusiness4Title": "अपडेट माँगें",
-  "storyBusiness4Body": "लिंक भेजें और स्टाफ़ खुद रिन्यू किया गया दस्तावेज़ अपलोड करेगा।"
+  "storyBusiness4Body": "लिंक भेजें और स्टाफ़ खुद रिन्यू किया गया दस्तावेज़ अपलोड करेगा।",
+  "categoryHealthAndMedical": "स्वास्थ्य और चिकित्सा",
+  "categoryMembershipsAndSubscriptions": "सदस्यताएँ और सब्सक्रिप्शन",
+  "subcategoryFirearmLicences": "हथियार लाइसेंस",
+  "subcategoryInternationalDrivingPermits": "अंतरराष्ट्रीय ड्राइविंग परमिट",
+  "subcategoryBoatAndPilotLicences": "नाव और पायलट लाइसेंस",
+  "subcategorySafetyCertificates": "प्राथमिक चिकित्सा और सुरक्षा प्रमाणपत्र",
+  "subcategoryElectricalComplianceCertificates": "बिजली अनुपालन प्रमाणपत्र",
+  "subcategoryFireEquipmentServices": "अग्निशमन उपकरण सर्विस",
+  "subcategoryMedicalAidCards": "स्वास्थ्य बीमा कार्ड",
+  "subcategoryPrescriptions": "पर्चे",
+  "subcategoryVaccinations": "टीकाकरण",
+  "subcategoryMedicalCertificates": "मेडिकल प्रमाणपत्र",
+  "subcategoryGymMemberships": "जिम सदस्यता",
+  "subcategoryClubMemberships": "क्लब सदस्यता",
+  "subcategorySubscriptions": "सब्सक्रिप्शन",
+  "subcategoryWarranties": "वारंटी और गारंटी",
+  "yoursTag": "आपका",
+  "expiredBadge": "{count, plural, =1{{count} की अवधि खत्म} other{{count} की अवधि खत्म}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "आइकन बदलें",
+  "categoryLookTitle": "आइकन और रंग",
+  "categoryLookAppColour": "ऐप का रंग",
+  "categoryLookHint": "नाम के आधार पर चुना गया। बदलने के लिए टैप करें।",
+  "renameCategoryTitle": "श्रेणी का नाम बदलें",
+  "renameGroupTitle": "समूह का नाम बदलें",
+  "nameInUse": "यह नाम यहाँ पहले से इस्तेमाल में है।",
+  "freeGroupsProgress": "मुफ़्त समूह: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "आप मुफ़्त प्लान की {limit} कस्टम समूहों की सीमा तक पहुँच गए हैं। असीमित समूह बनाने के लिए Premium लें।",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "समाप्ति तिथि से क्रमबद्ध करें",
+  "recordsSortName": "नाम से क्रमबद्ध करें",
+  "recordsSelect": "चुनें",
+  "recordsSelected": "{count, plural, =1{{count} चुना गया} other{{count} चुने गए}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ले जाएँ",
+  "recordsMoveTitle": "यहाँ ले जाएँ",
+  "recordsMoved": "{count, plural, =1{{count} रिकॉर्ड ले जाया गया} other{{count} रिकॉर्ड ले जाए गए}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} रिकॉर्ड हटाएँ?} other{{count} रिकॉर्ड हटाएँ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ये \"हाल ही में हटाए गए\" में चले जाएँगे, जहाँ से आप 30 दिनों तक इन्हें वापस ला सकते हैं।",
+  "recordsDeletedMany": "{count, plural, =1{{count} रिकॉर्ड हटाया गया} other{{count} रिकॉर्ड हटाए गए}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "जल्द समाप्त",
+  "recordsShowAll": "{count, plural, =1{सभी रिकॉर्ड दिखाएँ} other{सभी {count} रिकॉर्ड दिखाएँ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} में अभी कुछ नहीं है",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "कार्ड या दस्तावेज़ स्कैन करें, या हाथ से जोड़ें। समाप्ति से पहले Vaultara आपको याद दिलाएगा।",
+  "recordsScan": "स्कैन करें"
 }

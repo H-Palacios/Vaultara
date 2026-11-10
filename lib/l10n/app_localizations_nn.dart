@@ -7930,4 +7930,184 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Send ei lenkje, så lastar dei tilsette sjølve opp det fornya dokumentet.';
+
+  @override
+  String get categoryHealthAndMedical => 'Helse og medisinsk';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Medlemskap og abonnement';
+
+  @override
+  String get subcategoryFirearmLicences => 'Våpenlisensar';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Internasjonale førarkort';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Båt- og flysertifikat';
+
+  @override
+  String get subcategorySafetyCertificates => 'Førstehjelps- og tryggleiksbevis';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Samsvarserklæringar for elektro';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Service på brannutstyr';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Helsekort';
+
+  @override
+  String get subcategoryPrescriptions => 'Reseptar';
+
+  @override
+  String get subcategoryVaccinations => 'Vaksinar';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Legeerklæringar';
+
+  @override
+  String get subcategoryGymMemberships => 'Treningssentermedlemskap';
+
+  @override
+  String get subcategoryClubMemberships => 'Klubbmedlemskap';
+
+  @override
+  String get subcategorySubscriptions => 'Abonnement';
+
+  @override
+  String get subcategoryWarranties => 'Garantiar';
+
+  @override
+  String get yoursTag => 'Ditt';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count utgått',
+      one: '$count utgått',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Byt ikon';
+
+  @override
+  String get categoryLookTitle => 'Ikon og farge';
+
+  @override
+  String get categoryLookAppColour => 'Fargen til appen';
+
+  @override
+  String get categoryLookHint => 'Vald ut frå namnet. Trykk for å endre.';
+
+  @override
+  String get renameCategoryTitle => 'Gi kategorien nytt namn';
+
+  @override
+  String get renameGroupTitle => 'Gi gruppa nytt namn';
+
+  @override
+  String get nameInUse => 'Det namnet er alt i bruk her.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Gratis grupper: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Du har nådd grensa i gratisplanen på $limit eigne grupper. Oppgrader til Premium for uavgrensa tal på grupper.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sorter etter utløpsdato';
+
+  @override
+  String get recordsSortName => 'Sorter etter namn';
+
+  @override
+  String get recordsSelect => 'Vel';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count valde',
+      one: '$count vald',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Flytt';
+
+  @override
+  String get recordsMoveTitle => 'Flytt til';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count oppføringar flytta',
+      one: '$count oppføring flytta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Slette $count oppføringar?',
+      one: 'Slette $count oppføring?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Dei hamnar i «Nyleg sletta», der du kan hente dei tilbake i 30 dagar.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count oppføringar sletta',
+      one: '$count oppføring sletta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Går snart ut';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vis alle $count oppføringar',
+      one: 'Vis alle oppføringar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Ingenting i $group enno';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Skann kortet eller dokumentet, eller legg det til manuelt. Vaultara minner deg på det før det går ut.';
+
+  @override
+  String get recordsScan => 'Skann';
 }

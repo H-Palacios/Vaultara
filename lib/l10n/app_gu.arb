@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "માસિક રિપોર્ટ",
   "storyBusiness3Body": "દર મહિને રિપોર્ટ બતાવે છે કે શું માન્ય છે, શું સમાપ્ત થાય છે અને શું ખૂટે છે.",
   "storyBusiness4Title": "અપડેટ માગો",
-  "storyBusiness4Body": "લિંક મોકલો અને સ્ટાફ પોતે રિન્યૂ થયેલો દસ્તાવેજ અપલોડ કરશે."
+  "storyBusiness4Body": "લિંક મોકલો અને સ્ટાફ પોતે રિન્યૂ થયેલો દસ્તાવેજ અપલોડ કરશે.",
+  "categoryHealthAndMedical": "આરોગ્ય અને તબીબી",
+  "categoryMembershipsAndSubscriptions": "સભ્યપદ અને સબ્સ્ક્રિપ્શન",
+  "subcategoryFirearmLicences": "હથિયાર લાઇસન્સ",
+  "subcategoryInternationalDrivingPermits": "આંતરરાષ્ટ્રીય ડ્રાઇવિંગ પરમિટ",
+  "subcategoryBoatAndPilotLicences": "બોટ અને પાઇલટ લાઇસન્સ",
+  "subcategorySafetyCertificates": "પ્રાથમિક સારવાર અને સલામતી પ્રમાણપત્રો",
+  "subcategoryElectricalComplianceCertificates": "વીજળી અનુપાલન પ્રમાણપત્રો",
+  "subcategoryFireEquipmentServices": "અગ્નિશામક સાધનોની સર્વિસ",
+  "subcategoryMedicalAidCards": "આરોગ્ય વીમા કાર્ડ",
+  "subcategoryPrescriptions": "પ્રિસ્ક્રિપ્શન",
+  "subcategoryVaccinations": "રસીકરણ",
+  "subcategoryMedicalCertificates": "તબીબી પ્રમાણપત્રો",
+  "subcategoryGymMemberships": "જિમ સભ્યપદ",
+  "subcategoryClubMemberships": "ક્લબ સભ્યપદ",
+  "subcategorySubscriptions": "સબ્સ્ક્રિપ્શન",
+  "subcategoryWarranties": "વૉરંટી અને ગૅરંટી",
+  "yoursTag": "તમારું",
+  "expiredBadge": "{count, plural, =1{{count}ની મુદત પૂરી} other{{count}ની મુદત પૂરી}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "આઇકન બદલો",
+  "categoryLookTitle": "આઇકન અને રંગ",
+  "categoryLookAppColour": "ઍપનો રંગ",
+  "categoryLookHint": "નામના આધારે પસંદ કર્યું. બદલવા માટે ટૅપ કરો.",
+  "renameCategoryTitle": "કૅટેગરીનું નામ બદલો",
+  "renameGroupTitle": "જૂથનું નામ બદલો",
+  "nameInUse": "આ નામ અહીં પહેલેથી વપરાય છે.",
+  "freeGroupsProgress": "મફત જૂથો: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "તમે મફત પ્લાનની {limit} કસ્ટમ જૂથોની મર્યાદાએ પહોંચી ગયા છો. અમર્યાદિત જૂથો બનાવવા Premium લો.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "મુદતની તારીખ મુજબ ગોઠવો",
+  "recordsSortName": "નામ મુજબ ગોઠવો",
+  "recordsSelect": "પસંદ કરો",
+  "recordsSelected": "{count, plural, =1{{count} પસંદ કર્યું} other{{count} પસંદ કર્યા}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ખસેડો",
+  "recordsMoveTitle": "અહીં ખસેડો",
+  "recordsMoved": "{count, plural, =1{{count} રેકોર્ડ ખસેડ્યો} other{{count} રેકોર્ડ ખસેડ્યા}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} રેકોર્ડ કાઢી નાખવો છે?} other{{count} રેકોર્ડ કાઢી નાખવા છે?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "તે \"તાજેતરમાં ડિલીટ કરેલ\"માં જશે, જ્યાંથી તમે 30 દિવસ સુધી પાછા લાવી શકો છો.",
+  "recordsDeletedMany": "{count, plural, =1{{count} રેકોર્ડ કાઢી નાખ્યો} other{{count} રેકોર્ડ કાઢી નાખ્યા}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ટૂંક સમયમાં મુદત પૂરી",
+  "recordsShowAll": "{count, plural, =1{બધા રેકોર્ડ બતાવો} other{બધા {count} રેકોર્ડ બતાવો}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group}માં હજી કંઈ નથી",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "કાર્ડ કે દસ્તાવેજ સ્કૅન કરો, અથવા જાતે ઉમેરો. મુદત પૂરી થાય તે પહેલાં Vaultara યાદ કરાવશે.",
+  "recordsScan": "સ્કૅન કરો"
 }

@@ -7926,4 +7926,184 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Aika hanyar haɗi kuma ma\'aikaci zai loda sabuwar takardar da kansa.';
+
+  @override
+  String get categoryHealthAndMedical => 'Lafiya da magani';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Membobi da biyan kuɗin rajista';
+
+  @override
+  String get subcategoryFirearmLicences => 'Lasisin bindiga';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Lasisin tuƙi na ƙasa da ƙasa';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Lasisin jirgin ruwa da matuƙi';
+
+  @override
+  String get subcategorySafetyCertificates => 'Takardun taimakon gaggawa da tsaro';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Takardun dacewar wutar lantarki';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Gyaran kayan kashe gobara';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Katunan inshorar lafiya';
+
+  @override
+  String get subcategoryPrescriptions => 'Takardun magani';
+
+  @override
+  String get subcategoryVaccinations => 'Alluran rigakafi';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Takardun shaidar likita';
+
+  @override
+  String get subcategoryGymMemberships => 'Membobin gidan motsa jiki';
+
+  @override
+  String get subcategoryClubMemberships => 'Membobin kulob';
+
+  @override
+  String get subcategorySubscriptions => 'Biyan kuɗin rajista';
+
+  @override
+  String get subcategoryWarranties => 'Garanti';
+
+  @override
+  String get yoursTag => 'Naka';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sun ƙare',
+      one: '$count ya ƙare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Canza alama';
+
+  @override
+  String get categoryLookTitle => 'Alama da launi';
+
+  @override
+  String get categoryLookAppColour => 'Launin manhaja';
+
+  @override
+  String get categoryLookHint => 'An zaɓa daga sunan. Taɓa don canzawa.';
+
+  @override
+  String get renameCategoryTitle => 'Sake sunan rukuni';
+
+  @override
+  String get renameGroupTitle => 'Sake sunan ƙungiya';
+
+  @override
+  String get nameInUse => 'Ana amfani da wannan sunan a nan tuni.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Ƙungiyoyin kyauta: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Ka kai iyakar shirin Kyauta na ƙungiyoyi $limit na kanka. Haɓaka zuwa Premium don ƙirƙirar ƙungiyoyi marasa iyaka.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Jera bisa ranar ƙarewa';
+
+  @override
+  String get recordsSortName => 'Jera bisa suna';
+
+  @override
+  String get recordsSelect => 'Zaɓa';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An zaɓi $count',
+      one: 'An zaɓi $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Matsar';
+
+  @override
+  String get recordsMoveTitle => 'Matsar zuwa';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An matsar da bayanai $count',
+      one: 'An matsar da bayani $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A share bayanai $count?',
+      one: 'A share bayani $count?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Za su je \"An goge kwanan nan\", inda za ka iya dawo da su cikin kwana 30.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An share bayanai $count',
+      one: 'An share bayani $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Zai ƙare nan ba da daɗewa ba';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nuna dukkan bayanai $count',
+      one: 'Nuna dukkan bayanai',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Babu komai a $group tukuna';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Duba katin ko takardar da kyamara, ko ka ƙara da hannu. Vaultara za ta tunatar da kai kafin ya ƙare.';
+
+  @override
+  String get recordsScan => 'Duba';
 }

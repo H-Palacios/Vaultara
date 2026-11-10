@@ -2620,5 +2620,113 @@
   "storyBusiness3Title": "گزارش ماهانه",
   "storyBusiness3Body": "هر ماه گزارشی نشان می‌دهد چه چیزی معتبر است، چه چیزی منقضی می‌شود و چه کم است.",
   "storyBusiness4Title": "درخواست به‌روزرسانی",
-  "storyBusiness4Body": "پیوندی بفرستید تا کارمند خودش مدرک تمدیدشده را بارگذاری کند."
+  "storyBusiness4Body": "پیوندی بفرستید تا کارمند خودش مدرک تمدیدشده را بارگذاری کند.",
+  "categoryHealthAndMedical": "سلامت و پزشکی",
+  "categoryMembershipsAndSubscriptions": "عضویت‌ها و اشتراک‌ها",
+  "subcategoryFirearmLicences": "مجوزهای سلاح گرم",
+  "subcategoryInternationalDrivingPermits": "گواهینامه‌های رانندگی بین‌المللی",
+  "subcategoryBoatAndPilotLicences": "گواهینامه‌های قایق و خلبانی",
+  "subcategorySafetyCertificates": "گواهی‌های کمک‌های اولیه و ایمنی",
+  "subcategoryElectricalComplianceCertificates": "گواهی‌های تأیید برق",
+  "subcategoryFireEquipmentServices": "سرویس تجهیزات آتش‌نشانی",
+  "subcategoryMedicalAidCards": "کارت‌های بیمه درمانی",
+  "subcategoryPrescriptions": "نسخه‌ها",
+  "subcategoryVaccinations": "واکسیناسیون‌ها",
+  "subcategoryMedicalCertificates": "گواهی‌های پزشکی",
+  "subcategoryGymMemberships": "عضویت باشگاه ورزشی",
+  "subcategoryClubMemberships": "عضویت در باشگاه‌ها",
+  "subcategorySubscriptions": "اشتراک‌ها",
+  "subcategoryWarranties": "ضمانت‌نامه‌ها",
+  "yoursTag": "مال شما",
+  "expiredBadge": "{count, plural, =1{{count} منقضی} other{{count} منقضی}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "تغییر نماد",
+  "categoryLookTitle": "نماد و رنگ",
+  "categoryLookAppColour": "رنگ برنامه",
+  "categoryLookHint": "از روی نام انتخاب شد. برای تغییر ضربه بزنید.",
+  "renameCategoryTitle": "تغییر نام دسته",
+  "renameGroupTitle": "تغییر نام گروه",
+  "nameInUse": "این نام قبلاً اینجا استفاده شده است.",
+  "freeGroupsProgress": "گروه‌های رایگان: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "به سقف طرح رایگان یعنی {limit} گروه سفارشی رسیده‌اید. برای ساخت گروه‌های نامحدود به Premium ارتقا دهید.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "مرتب‌سازی بر اساس تاریخ انقضا",
+  "recordsSortName": "مرتب‌سازی بر اساس نام",
+  "recordsSelect": "انتخاب",
+  "recordsSelected": "{count, plural, =1{{count} انتخاب شد} other{{count} انتخاب شد}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "انتقال",
+  "recordsMoveTitle": "انتقال به",
+  "recordsMoved": "{count, plural, =1{{count} مورد منتقل شد} other{{count} مورد منتقل شد}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} مورد حذف شود؟} other{{count} مورد حذف شود؟}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "به «اخیراً حذف شده» می‌روند و تا ۳۰ روز می‌توانید آن‌ها را برگردانید.",
+  "recordsDeletedMany": "{count, plural, =1{{count} مورد حذف شد} other{{count} مورد حذف شد}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "به‌زودی منقضی می‌شود",
+  "recordsShowAll": "{count, plural, =1{نمایش همه موارد} other{نمایش همه {count} مورد}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "هنوز چیزی در {group} نیست",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "کارت یا سند را اسکن کنید یا دستی اضافه کنید. Vaultara پیش از انقضا به شما یادآوری می‌کند.",
+  "recordsScan": "اسکن"
 }

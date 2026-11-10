@@ -7930,4 +7930,184 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse.';
+
+  @override
+  String get categoryHealthAndMedical => 'Terveys ja lääkinnällinen';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Jäsenyydet ja tilaukset';
+
+  @override
+  String get subcategoryFirearmLicences => 'Aseluvat';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Kansainväliset ajokortit';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Vene- ja lentolupakirjat';
+
+  @override
+  String get subcategorySafetyCertificates => 'Ensiapu- ja turvallisuustodistukset';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Sähkötarkastuspöytäkirjat';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Palolaitteiden huollot';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Sairausvakuutuskortit';
+
+  @override
+  String get subcategoryPrescriptions => 'Reseptit';
+
+  @override
+  String get subcategoryVaccinations => 'Rokotukset';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Lääkärintodistukset';
+
+  @override
+  String get subcategoryGymMemberships => 'Kuntosalijäsenyydet';
+
+  @override
+  String get subcategoryClubMemberships => 'Seurajäsenyydet';
+
+  @override
+  String get subcategorySubscriptions => 'Tilaukset';
+
+  @override
+  String get subcategoryWarranties => 'Takuut';
+
+  @override
+  String get yoursTag => 'Oma';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vanhentunutta',
+      one: '$count vanhentunut',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Vaihda kuvake';
+
+  @override
+  String get categoryLookTitle => 'Kuvake ja väri';
+
+  @override
+  String get categoryLookAppColour => 'Sovelluksen väri';
+
+  @override
+  String get categoryLookHint => 'Valittu nimen perusteella. Vaihda napauttamalla.';
+
+  @override
+  String get renameCategoryTitle => 'Nimeä luokka uudelleen';
+
+  @override
+  String get renameGroupTitle => 'Nimeä ryhmä uudelleen';
+
+  @override
+  String get nameInUse => 'Nimi on jo käytössä täällä.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Ilmaiset ryhmät: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Olet saavuttanut ilmaisversion rajan, $limit omaa ryhmää. Päivitä Premiumiin, niin voit luoda rajattomasti ryhmiä.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Lajittele voimassaolon mukaan';
+
+  @override
+  String get recordsSortName => 'Lajittele nimen mukaan';
+
+  @override
+  String get recordsSelect => 'Valitse';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count valittu',
+      one: '$count valittu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Siirrä';
+
+  @override
+  String get recordsMoveTitle => 'Siirrä kohteeseen';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tietuetta siirretty',
+      one: '$count tietue siirretty',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Poistetaanko $count tietuetta?',
+      one: 'Poistetaanko $count tietue?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ne siirtyvät kohtaan ”Äskettäin poistetut”, josta voit palauttaa ne 30 päivän ajan.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tietuetta poistettu',
+      one: '$count tietue poistettu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Vanhenee pian';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Näytä kaikki $count tietuetta',
+      one: 'Näytä kaikki tietueet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Ryhmässä $group ei vielä ole mitään';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Skannaa kortti tai asiakirja tai lisää se käsin. Vaultara muistuttaa ennen kuin se vanhenee.';
+
+  @override
+  String get recordsScan => 'Skannaa';
 }

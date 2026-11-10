@@ -2601,5 +2601,113 @@
   "storyBusiness3Title": "每月報告",
   "storyBusiness3Body": "每月報告會顯示哪些有效、哪些即將到期、哪些缺漏。",
   "storyBusiness4Title": "要求更新",
-  "storyBusiness4Body": "傳送連結，員工自行上傳續期後的證件。"
+  "storyBusiness4Body": "傳送連結，員工自行上傳續期後的證件。",
+  "categoryHealthAndMedical": "健康與醫療",
+  "categoryMembershipsAndSubscriptions": "會員與訂閱",
+  "subcategoryFirearmLicences": "槍枝執照",
+  "subcategoryInternationalDrivingPermits": "國際駕照",
+  "subcategoryBoatAndPilotLicences": "船舶與飛行執照",
+  "subcategorySafetyCertificates": "急救與安全證書",
+  "subcategoryElectricalComplianceCertificates": "電氣檢驗合格證明",
+  "subcategoryFireEquipmentServices": "消防設備保養",
+  "subcategoryMedicalAidCards": "健保卡",
+  "subcategoryPrescriptions": "處方箋",
+  "subcategoryVaccinations": "疫苗接種",
+  "subcategoryMedicalCertificates": "診斷證明",
+  "subcategoryGymMemberships": "健身房會員",
+  "subcategoryClubMemberships": "俱樂部會員",
+  "subcategorySubscriptions": "訂閱",
+  "subcategoryWarranties": "保固與保證",
+  "yoursTag": "我的",
+  "expiredBadge": "{count, plural, =1{{count} 項已過期} other{{count} 項已過期}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "更換圖示",
+  "categoryLookTitle": "圖示與顏色",
+  "categoryLookAppColour": "App 顏色",
+  "categoryLookHint": "已依名稱選擇。輕觸即可更改。",
+  "renameCategoryTitle": "重新命名類別",
+  "renameGroupTitle": "重新命名群組",
+  "nameInUse": "此名稱已在這裡使用。",
+  "freeGroupsProgress": "免費群組：{current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "你已達到免費方案 {limit} 個自訂群組的上限。升級至 Premium 即可無限建立群組。",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "依到期日排序",
+  "recordsSortName": "依名稱排序",
+  "recordsSelect": "選取",
+  "recordsSelected": "{count, plural, =1{已選取 {count} 項} other{已選取 {count} 項}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "移動",
+  "recordsMoveTitle": "移至",
+  "recordsMoved": "{count, plural, =1{已移動 {count} 筆紀錄} other{已移動 {count} 筆紀錄}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{要刪除 {count} 筆紀錄嗎？} other{要刪除 {count} 筆紀錄嗎？}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "它們會移至「最近刪除」，30 天內可以復原。",
+  "recordsDeletedMany": "{count, plural, =1{已刪除 {count} 筆紀錄} other{已刪除 {count} 筆紀錄}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "即將到期",
+  "recordsShowAll": "{count, plural, =1{顯示所有紀錄} other{顯示全部 {count} 筆紀錄}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "還沒有{group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "掃描卡片或文件，或手動新增。Vaultara 會在到期前提醒你。",
+  "recordsScan": "掃描"
 }

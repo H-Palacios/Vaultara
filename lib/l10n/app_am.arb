@@ -2646,5 +2646,113 @@
   "storyBusiness3Title": "ወርሃዊ ሪፖርት",
   "storyBusiness3Body": "በየወሩ ሪፖርት ምን ተቀባይነት እንዳለው፣ ምን እያበቃ እንደሆነ እና ምን እንደጎደለ ያሳያል።",
   "storyBusiness4Title": "ዝማኔ ይጠይቁ",
-  "storyBusiness4Body": "አገናኝ ይላኩ፣ ሠራተኛው የታደሰውን ሰነድ ራሱ ይሰቅላል።"
+  "storyBusiness4Body": "አገናኝ ይላኩ፣ ሠራተኛው የታደሰውን ሰነድ ራሱ ይሰቅላል።",
+  "categoryHealthAndMedical": "ጤና እና ሕክምና",
+  "categoryMembershipsAndSubscriptions": "አባልነቶች እና ምዝገባዎች",
+  "subcategoryFirearmLicences": "የጦር መሣሪያ ፈቃዶች",
+  "subcategoryInternationalDrivingPermits": "ዓለም አቀፍ የመንጃ ፈቃዶች",
+  "subcategoryBoatAndPilotLicences": "የጀልባ እና የአብራሪ ፈቃዶች",
+  "subcategorySafetyCertificates": "የመጀመሪያ እርዳታ እና የደህንነት ሰርተፊኬቶች",
+  "subcategoryElectricalComplianceCertificates": "የኤሌክትሪክ ተገዢነት ሰርተፊኬቶች",
+  "subcategoryFireEquipmentServices": "የእሳት መከላከያ መሣሪያ አገልግሎት",
+  "subcategoryMedicalAidCards": "የጤና መድን ካርዶች",
+  "subcategoryPrescriptions": "የሐኪም ማዘዣዎች",
+  "subcategoryVaccinations": "ክትባቶች",
+  "subcategoryMedicalCertificates": "የሕክምና ማስረጃዎች",
+  "subcategoryGymMemberships": "የጂም አባልነቶች",
+  "subcategoryClubMemberships": "የክለብ አባልነቶች",
+  "subcategorySubscriptions": "ምዝገባዎች",
+  "subcategoryWarranties": "ዋስትናዎች",
+  "yoursTag": "የእርስዎ",
+  "expiredBadge": "{count, plural, =1{{count} ጊዜው አልፏል} other{{count} ጊዜያቸው አልፏል}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "አዶ ቀይር",
+  "categoryLookTitle": "አዶ እና ቀለም",
+  "categoryLookAppColour": "የመተግበሪያው ቀለም",
+  "categoryLookHint": "ከስሙ ተመርጧል። ለመቀየር ይንኩ።",
+  "renameCategoryTitle": "ምድቡን እንደገና ሰይም",
+  "renameGroupTitle": "ቡድኑን እንደገና ሰይም",
+  "nameInUse": "ይህ ስም እዚህ አስቀድሞ ጥቅም ላይ ውሏል።",
+  "freeGroupsProgress": "ነፃ ቡድኖች፦ {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "የነፃ ዕቅዱን የ{limit} ብጁ ቡድኖች ገደብ ደርሰዋል። ያልተገደቡ ቡድኖችን ለመፍጠር ወደ Premium ያሻሽሉ።",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "በማብቂያ ቀን ደርድር",
+  "recordsSortName": "በስም ደርድር",
+  "recordsSelect": "ምረጥ",
+  "recordsSelected": "{count, plural, =1{{count} ተመርጧል} other{{count} ተመርጠዋል}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "አንቀሳቅስ",
+  "recordsMoveTitle": "ወደዚህ አንቀሳቅስ",
+  "recordsMoved": "{count, plural, =1{{count} መዝገብ ተንቀሳቅሷል} other{{count} መዝገቦች ተንቀሳቅሰዋል}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} መዝገብ ይሰረዝ?} other{{count} መዝገቦች ይሰረዙ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ወደ \"በቅርብ የተሰረዙ\" ይሄዳሉ፣ በ30 ቀናት ውስጥ መልሰው ማምጣት ይችላሉ።",
+  "recordsDeletedMany": "{count, plural, =1{{count} መዝገብ ተሰርዟል} other{{count} መዝገቦች ተሰርዘዋል}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "በቅርቡ ያበቃል",
+  "recordsShowAll": "{count, plural, =1{ሁሉንም መዝገቦች አሳይ} other{ሁሉንም {count} መዝገቦች አሳይ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "በ{group} ውስጥ እስካሁን ምንም የለም",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "ካርዱን ወይም ሰነዱን ይቃኙ፣ ወይም በእጅ ያክሉ። ጊዜው ከማለፉ በፊት Vaultara ያስታውስዎታል።",
+  "recordsScan": "ቃኝ"
 }

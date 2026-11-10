@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "പ്രതിമാസ റിപ്പോർട്ട്",
   "storyBusiness3Body": "ഓരോ മാസവും എന്താണ് സാധുവായത്, എന്താണ് കാലഹരണപ്പെടുന്നത്, എന്താണ് കാണാത്തത് എന്ന് റിപ്പോർട്ട് കാണിക്കുന്നു.",
   "storyBusiness4Title": "അപ്ഡേറ്റ് ആവശ്യപ്പെടുക",
-  "storyBusiness4Body": "ലിങ്ക് അയയ്ക്കുക, ജീവനക്കാർ സ്വയം പുതുക്കിയ രേഖ അപ്‌ലോഡ് ചെയ്യും."
+  "storyBusiness4Body": "ലിങ്ക് അയയ്ക്കുക, ജീവനക്കാർ സ്വയം പുതുക്കിയ രേഖ അപ്‌ലോഡ് ചെയ്യും.",
+  "categoryHealthAndMedical": "ആരോഗ്യവും വൈദ്യവും",
+  "categoryMembershipsAndSubscriptions": "അംഗത്വങ്ങളും സബ്‌സ്‌ക്രിപ്ഷനുകളും",
+  "subcategoryFirearmLicences": "ആയുധ ലൈസൻസുകൾ",
+  "subcategoryInternationalDrivingPermits": "അന്താരാഷ്ട്ര ഡ്രൈവിംഗ് പെർമിറ്റുകൾ",
+  "subcategoryBoatAndPilotLicences": "ബോട്ട്, പൈലറ്റ് ലൈസൻസുകൾ",
+  "subcategorySafetyCertificates": "പ്രഥമശുശ്രൂഷ, സുരക്ഷാ സർട്ടിഫിക്കറ്റുകൾ",
+  "subcategoryElectricalComplianceCertificates": "വൈദ്യുതി അനുരൂപ സർട്ടിഫിക്കറ്റുകൾ",
+  "subcategoryFireEquipmentServices": "അഗ്നിശമന ഉപകരണ സർവീസ്",
+  "subcategoryMedicalAidCards": "ആരോഗ്യ ഇൻഷുറൻസ് കാർഡുകൾ",
+  "subcategoryPrescriptions": "കുറിപ്പടികൾ",
+  "subcategoryVaccinations": "വാക്സിനേഷനുകൾ",
+  "subcategoryMedicalCertificates": "മെഡിക്കൽ സർട്ടിഫിക്കറ്റുകൾ",
+  "subcategoryGymMemberships": "ജിം അംഗത്വങ്ങൾ",
+  "subcategoryClubMemberships": "ക്ലബ് അംഗത്വങ്ങൾ",
+  "subcategorySubscriptions": "സബ്‌സ്‌ക്രിപ്ഷനുകൾ",
+  "subcategoryWarranties": "വാറന്റികളും ഗ്യാരന്റികളും",
+  "yoursTag": "നിങ്ങളുടേത്",
+  "expiredBadge": "{count, plural, =1{{count} കാലഹരണപ്പെട്ടു} other{{count} കാലഹരണപ്പെട്ടു}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ഐക്കൺ മാറ്റുക",
+  "categoryLookTitle": "ഐക്കണും നിറവും",
+  "categoryLookAppColour": "ആപ്പിന്റെ നിറം",
+  "categoryLookHint": "പേരിൽ നിന്ന് തിരഞ്ഞെടുത്തു. മാറ്റാൻ ടാപ്പ് ചെയ്യുക.",
+  "renameCategoryTitle": "വിഭാഗത്തിന്റെ പേര് മാറ്റുക",
+  "renameGroupTitle": "ഗ്രൂപ്പിന്റെ പേര് മാറ്റുക",
+  "nameInUse": "ഈ പേര് ഇവിടെ ഇതിനകം ഉപയോഗത്തിലുണ്ട്.",
+  "freeGroupsProgress": "സൗജന്യ ഗ്രൂപ്പുകൾ: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "സൗജന്യ പ്ലാനിലെ {limit} കസ്റ്റം ഗ്രൂപ്പുകളുടെ പരിധിയിൽ നിങ്ങൾ എത്തി. പരിധിയില്ലാത്ത ഗ്രൂപ്പുകൾക്കായി Premium-ലേക്ക് അപ്‌ഗ്രേഡ് ചെയ്യുക.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "കാലാവധി തീയതി പ്രകാരം അടുക്കുക",
+  "recordsSortName": "പേര് പ്രകാരം അടുക്കുക",
+  "recordsSelect": "തിരഞ്ഞെടുക്കുക",
+  "recordsSelected": "{count, plural, =1{{count} തിരഞ്ഞെടുത്തു} other{{count} തിരഞ്ഞെടുത്തു}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "നീക്കുക",
+  "recordsMoveTitle": "ഇവിടേക്ക് നീക്കുക",
+  "recordsMoved": "{count, plural, =1{{count} റെക്കോർഡ് നീക്കി} other{{count} റെക്കോർഡുകൾ നീക്കി}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} റെക്കോർഡ് ഇല്ലാതാക്കണോ?} other{{count} റെക്കോർഡുകൾ ഇല്ലാതാക്കണോ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ഇവ \"അടുത്തിടെ ഇല്ലാതാക്കിയവ\" എന്നതിലേക്ക് പോകും, അവിടെനിന്ന് 30 ദിവസം വരെ തിരികെ കൊണ്ടുവരാം.",
+  "recordsDeletedMany": "{count, plural, =1{{count} റെക്കോർഡ് ഇല്ലാതാക്കി} other{{count} റെക്കോർഡുകൾ ഇല്ലാതാക്കി}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ഉടൻ കാലഹരണപ്പെടും",
+  "recordsShowAll": "{count, plural, =1{എല്ലാ റെക്കോർഡുകളും കാണിക്കുക} other{എല്ലാ {count} റെക്കോർഡുകളും കാണിക്കുക}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} ൽ ഇതുവരെ ഒന്നുമില്ല",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "കാർഡോ രേഖയോ സ്കാൻ ചെയ്യുക, അല്ലെങ്കിൽ സ്വയം ചേർക്കുക. കാലാവധി കഴിയും മുമ്പ് Vaultara ഓർമ്മിപ്പിക്കും.",
+  "recordsScan": "സ്കാൻ"
 }

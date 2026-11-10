@@ -8008,4 +8008,184 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Trimite un link și angajatul încarcă singur documentul reînnoit.';
+
+  @override
+  String get categoryHealthAndMedical => 'Sănătate și medical';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Abonamente și calitate de membru';
+
+  @override
+  String get subcategoryFirearmLicences => 'Permise de port-armă';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Permise internaționale de conducere';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Permise de navigație și licențe de pilot';
+
+  @override
+  String get subcategorySafetyCertificates => 'Certificate de prim ajutor și siguranță';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Certificate de conformitate electrică';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Service echipamente de stingere a incendiilor';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Carduri de sănătate';
+
+  @override
+  String get subcategoryPrescriptions => 'Rețete';
+
+  @override
+  String get subcategoryVaccinations => 'Vaccinări';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Certificate medicale';
+
+  @override
+  String get subcategoryGymMemberships => 'Abonamente la sală';
+
+  @override
+  String get subcategoryClubMemberships => 'Abonamente la cluburi';
+
+  @override
+  String get subcategorySubscriptions => 'Abonamente';
+
+  @override
+  String get subcategoryWarranties => 'Garanții';
+
+  @override
+  String get yoursTag => 'Al tău';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expirate',
+      one: '$count expirat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Schimbă pictograma';
+
+  @override
+  String get categoryLookTitle => 'Pictogramă și culoare';
+
+  @override
+  String get categoryLookAppColour => 'Culoarea aplicației';
+
+  @override
+  String get categoryLookHint => 'Aleasă după nume. Atinge pentru a o schimba.';
+
+  @override
+  String get renameCategoryTitle => 'Redenumește categoria';
+
+  @override
+  String get renameGroupTitle => 'Redenumește grupul';
+
+  @override
+  String get nameInUse => 'Acest nume este deja folosit aici.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Grupuri gratuite: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Ai atins limita planului Gratuit de $limit grupuri personalizate. Treci la Premium pentru grupuri nelimitate.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Sortează după data expirării';
+
+  @override
+  String get recordsSortName => 'Sortează după nume';
+
+  @override
+  String get recordsSelect => 'Selectează';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count selectate',
+      one: '$count selectat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Mută';
+
+  @override
+  String get recordsMoveTitle => 'Mută în';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count înregistrări mutate',
+      one: '$count înregistrare mutată',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ștergi $count înregistrări?',
+      one: 'Ștergi $count înregistrare?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Ajung în „Șterse recent”, de unde le poți recupera timp de 30 de zile.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count înregistrări șterse',
+      one: '$count înregistrare ștearsă',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Expiră curând';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Arată toate cele $count înregistrări',
+      one: 'Arată toate înregistrările',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Încă nimic în $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Scanează cardul sau documentul ori adaugă-l manual. Vaultara îți amintește înainte să expire.';
+
+  @override
+  String get recordsScan => 'Scanează';
 }

@@ -2639,5 +2639,113 @@
   "storyBusiness3Title": "Mjesečni izvještaj",
   "storyBusiness3Body": "Svaki mjesec izvještaj pokazuje šta važi, šta ističe i šta nedostaje.",
   "storyBusiness4Title": "Zatražite ažuriranje",
-  "storyBusiness4Body": "Pošaljite link i zaposleni sam otpremi obnovljeni dokument."
+  "storyBusiness4Body": "Pošaljite link i zaposleni sam otpremi obnovljeni dokument.",
+  "categoryHealthAndMedical": "Zdravlje i medicina",
+  "categoryMembershipsAndSubscriptions": "Članstva i pretplate",
+  "subcategoryFirearmLicences": "Dozvole za oružje",
+  "subcategoryInternationalDrivingPermits": "Međunarodne vozačke dozvole",
+  "subcategoryBoatAndPilotLicences": "Dozvole za brod i pilota",
+  "subcategorySafetyCertificates": "Certifikati prve pomoći i sigurnosti",
+  "subcategoryElectricalComplianceCertificates": "Certifikati o ispravnosti elektroinstalacija",
+  "subcategoryFireEquipmentServices": "Servis protivpožarne opreme",
+  "subcategoryMedicalAidCards": "Kartice zdravstvenog osiguranja",
+  "subcategoryPrescriptions": "Recepti",
+  "subcategoryVaccinations": "Vakcinacije",
+  "subcategoryMedicalCertificates": "Ljekarska uvjerenja",
+  "subcategoryGymMemberships": "Članstva u teretani",
+  "subcategoryClubMemberships": "Članstva u klubovima",
+  "subcategorySubscriptions": "Pretplate",
+  "subcategoryWarranties": "Garancije",
+  "yoursTag": "Vaše",
+  "expiredBadge": "{count, plural, =1{{count} isteklo} other{Isteklo: {count}}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Promijeni ikonu",
+  "categoryLookTitle": "Ikona i boja",
+  "categoryLookAppColour": "Boja aplikacije",
+  "categoryLookHint": "Odabrano prema nazivu. Dodirnite za promjenu.",
+  "renameCategoryTitle": "Preimenuj kategoriju",
+  "renameGroupTitle": "Preimenuj grupu",
+  "nameInUse": "Taj naziv se ovdje već koristi.",
+  "freeGroupsProgress": "Besplatne grupe: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Dostigli ste ograničenje besplatnog plana od {limit} vlastitih grupa. Pređite na Premium za neograničen broj grupa.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Poredaj po datumu isteka",
+  "recordsSortName": "Poredaj po nazivu",
+  "recordsSelect": "Odaberi",
+  "recordsSelected": "{count, plural, =1{Odabrano: {count}} other{Odabrano: {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Premjesti",
+  "recordsMoveTitle": "Premjesti u",
+  "recordsMoved": "{count, plural, =1{Premješten {count} zapis} few{Premještena {count} zapisa} other{Premješteno {count} zapisa}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Izbrisati {count} zapis?} few{Izbrisati {count} zapisa?} other{Izbrisati {count} zapisa?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Idu u „Nedavno obrisano”, odakle ih možete vratiti u roku od 30 dana.",
+  "recordsDeletedMany": "{count, plural, =1{Izbrisan {count} zapis} few{Izbrisana {count} zapisa} other{Izbrisano {count} zapisa}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Uskoro ističe",
+  "recordsShowAll": "{count, plural, =1{Prikaži sve zapise} other{Prikaži sve zapise ({count})}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "U grupi {group} još nema ništa",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Skenirajte karticu ili dokument ili ga dodajte ručno. Vaultara vas podsjeća prije isteka.",
+  "recordsScan": "Skeniraj"
 }

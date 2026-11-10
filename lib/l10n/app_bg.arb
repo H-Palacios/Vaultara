@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "Месечен отчет",
   "storyBusiness3Body": "Всеки месец отчет показва какво е валидно, какво изтича и какво липсва.",
   "storyBusiness4Title": "Поискайте актуализация",
-  "storyBusiness4Body": "Изпратете връзка и служителят сам качва подновения документ."
+  "storyBusiness4Body": "Изпратете връзка и служителят сам качва подновения документ.",
+  "categoryHealthAndMedical": "Здраве и медицина",
+  "categoryMembershipsAndSubscriptions": "Членства и абонаменти",
+  "subcategoryFirearmLicences": "Разрешителни за оръжие",
+  "subcategoryInternationalDrivingPermits": "Международни шофьорски книжки",
+  "subcategoryBoatAndPilotLicences": "Свидетелства за кораб и пилот",
+  "subcategorySafetyCertificates": "Сертификати за първа помощ и безопасност",
+  "subcategoryElectricalComplianceCertificates": "Протоколи от електрически измервания",
+  "subcategoryFireEquipmentServices": "Обслужване на противопожарни уреди",
+  "subcategoryMedicalAidCards": "Здравноосигурителни карти",
+  "subcategoryPrescriptions": "Рецепти",
+  "subcategoryVaccinations": "Ваксинации",
+  "subcategoryMedicalCertificates": "Медицински бележки",
+  "subcategoryGymMemberships": "Карти за фитнес",
+  "subcategoryClubMemberships": "Членство в клубове",
+  "subcategorySubscriptions": "Абонаменти",
+  "subcategoryWarranties": "Гаранции",
+  "yoursTag": "Ваше",
+  "expiredBadge": "{count, plural, =1{{count} изтекъл} other{{count} изтекли}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "Смяна на иконата",
+  "categoryLookTitle": "Икона и цвят",
+  "categoryLookAppColour": "Цвят на приложението",
+  "categoryLookHint": "Избрана според името. Докоснете, за да смените.",
+  "renameCategoryTitle": "Преименуване на категория",
+  "renameGroupTitle": "Преименуване на група",
+  "nameInUse": "Това име вече се използва тук.",
+  "freeGroupsProgress": "Безплатни групи: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "Достигнахте лимита на безплатния план от {limit} собствени групи. Преминете към Premium за неограничен брой групи.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "Сортиране по дата на изтичане",
+  "recordsSortName": "Сортиране по име",
+  "recordsSelect": "Избиране",
+  "recordsSelected": "{count, plural, =1{{count} избран} other{{count} избрани}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "Преместване",
+  "recordsMoveTitle": "Преместване в",
+  "recordsMoved": "{count, plural, =1{Преместен е {count} запис} other{Преместени са {count} записа}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{Изтриване на {count} запис?} other{Изтриване на {count} записа?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "Отиват в „Наскоро изтрити“, откъдето можете да ги възстановите до 30 дни.",
+  "recordsDeletedMany": "{count, plural, =1{Изтрит е {count} запис} other{Изтрити са {count} записа}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "Изтича скоро",
+  "recordsShowAll": "{count, plural, =1{Показване на всички записи} other{Показване на всички {count} записа}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "Все още няма нищо в {group}",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "Сканирайте картата или документа или го добавете ръчно. Vaultara ще ви напомни преди да изтече.",
+  "recordsScan": "Сканиране"
 }

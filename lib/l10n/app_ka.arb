@@ -2626,5 +2626,113 @@
   "storyBusiness3Title": "ყოველთვიური ანგარიში",
   "storyBusiness3Body": "ყოველთვე ანგარიში აჩვენებს, რა მოქმედებს, რას გასდის ვადა და რა აკლია.",
   "storyBusiness4Title": "მოითხოვეთ განახლება",
-  "storyBusiness4Body": "გაგზავნეთ ბმული და თანამშრომელი თავად ატვირთავს განახლებულ დოკუმენტს."
+  "storyBusiness4Body": "გაგზავნეთ ბმული და თანამშრომელი თავად ატვირთავს განახლებულ დოკუმენტს.",
+  "categoryHealthAndMedical": "ჯანმრთელობა და მედიცინა",
+  "categoryMembershipsAndSubscriptions": "წევრობები და გამოწერები",
+  "subcategoryFirearmLicences": "იარაღის ლიცენზიები",
+  "subcategoryInternationalDrivingPermits": "საერთაშორისო მართვის მოწმობები",
+  "subcategoryBoatAndPilotLicences": "ნავისა და პილოტის ლიცენზიები",
+  "subcategorySafetyCertificates": "პირველი დახმარებისა და უსაფრთხოების სერტიფიკატები",
+  "subcategoryElectricalComplianceCertificates": "ელექტრო შესაბამისობის სერტიფიკატები",
+  "subcategoryFireEquipmentServices": "ხანძარსაწინააღმდეგო აღჭურვილობის მომსახურება",
+  "subcategoryMedicalAidCards": "ჯანმრთელობის დაზღვევის ბარათები",
+  "subcategoryPrescriptions": "რეცეპტები",
+  "subcategoryVaccinations": "ვაქცინაციები",
+  "subcategoryMedicalCertificates": "სამედიცინო ცნობები",
+  "subcategoryGymMemberships": "სპორტდარბაზის წევრობები",
+  "subcategoryClubMemberships": "კლუბის წევრობები",
+  "subcategorySubscriptions": "გამოწერები",
+  "subcategoryWarranties": "გარანტიები",
+  "yoursTag": "თქვენი",
+  "expiredBadge": "{count, plural, =1{{count} ვადაგასული} other{{count} ვადაგასული}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ხატულის შეცვლა",
+  "categoryLookTitle": "ხატულა და ფერი",
+  "categoryLookAppColour": "აპის ფერი",
+  "categoryLookHint": "შერჩეულია სახელის მიხედვით. შესაცვლელად შეეხეთ.",
+  "renameCategoryTitle": "კატეგორიის გადარქმევა",
+  "renameGroupTitle": "ჯგუფის გადარქმევა",
+  "nameInUse": "ეს სახელი აქ უკვე გამოიყენება.",
+  "freeGroupsProgress": "უფასო ჯგუფები: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "მიაღწიეთ უფასო გეგმის ლიმიტს — {limit} საკუთარი ჯგუფი. შეუზღუდავი ჯგუფებისთვის გადადით Premium-ზე.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "დალაგება ვადის მიხედვით",
+  "recordsSortName": "დალაგება სახელის მიხედვით",
+  "recordsSelect": "არჩევა",
+  "recordsSelected": "{count, plural, =1{არჩეულია {count}} other{არჩეულია {count}}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "გადატანა",
+  "recordsMoveTitle": "გადატანა აქ",
+  "recordsMoved": "{count, plural, =1{გადატანილია {count} ჩანაწერი} other{გადატანილია {count} ჩანაწერი}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{წაიშალოს {count} ჩანაწერი?} other{წაიშალოს {count} ჩანაწერი?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ისინი გადავა „ახლახან წაშლილი“-ში, საიდანაც 30 დღის განმავლობაში შეგიძლიათ აღდგენა.",
+  "recordsDeletedMany": "{count, plural, =1{წაიშალა {count} ჩანაწერი} other{წაიშალა {count} ჩანაწერი}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "მალე იწურება",
+  "recordsShowAll": "{count, plural, =1{ყველა ჩანაწერის ჩვენება} other{ყველა {count} ჩანაწერის ჩვენება}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} ჯერ ცარიელია",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "დაასკანერეთ ბარათი ან დოკუმენტი, ან დაამატეთ ხელით. Vaultara შეგახსენებთ ვადის ამოწურვამდე.",
+  "recordsScan": "სკანირება"
 }

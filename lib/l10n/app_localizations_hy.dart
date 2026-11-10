@@ -7926,4 +7926,184 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Ուղարկեք հղում, և աշխատակիցն ինքը կվերբեռնի թարմացված փաստաթուղթը։';
+
+  @override
+  String get categoryHealthAndMedical => 'Առողջություն և բժշկություն';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Անդամակցություններ և բաժանորդագրություններ';
+
+  @override
+  String get subcategoryFirearmLicences => 'Զենքի թույլտվություններ';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Միջազգային վարորդական վկայականներ';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Նավի և օդաչուի վկայականներ';
+
+  @override
+  String get subcategorySafetyCertificates => 'Առաջին օգնության և անվտանգության վկայագրեր';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Էլեկտրական համապատասխանության վկայագրեր';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Հրշեջ սարքավորումների սպասարկում';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Բժշկական ապահովագրության քարտեր';
+
+  @override
+  String get subcategoryPrescriptions => 'Դեղատոմսեր';
+
+  @override
+  String get subcategoryVaccinations => 'Պատվաստումներ';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Բժշկական տեղեկանքներ';
+
+  @override
+  String get subcategoryGymMemberships => 'Մարզասրահի անդամակցություններ';
+
+  @override
+  String get subcategoryClubMemberships => 'Ակումբների անդամակցություններ';
+
+  @override
+  String get subcategorySubscriptions => 'Բաժանորդագրություններ';
+
+  @override
+  String get subcategoryWarranties => 'Երաշխիքներ';
+
+  @override
+  String get yoursTag => 'Ձերը';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ի ժամկետն անցել է',
+      one: '$count-ի ժամկետն անցել է',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Փոխել պատկերակը';
+
+  @override
+  String get categoryLookTitle => 'Պատկերակ և գույն';
+
+  @override
+  String get categoryLookAppColour => 'Հավելվածի գույնը';
+
+  @override
+  String get categoryLookHint => 'Ընտրված է ըստ անվան։ Հպեք՝ փոխելու համար։';
+
+  @override
+  String get renameCategoryTitle => 'Վերանվանել կատեգորիան';
+
+  @override
+  String get renameGroupTitle => 'Վերանվանել խումբը';
+
+  @override
+  String get nameInUse => 'Այս անունն այստեղ արդեն օգտագործվում է։';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Անվճար խմբեր՝ $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Դուք հասել եք անվճար պլանի $limit անհատական խմբի սահմանին։ Անսահմանափակ խմբերի համար անցեք Premium-ի։';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Դասավորել ըստ ժամկետի';
+
+  @override
+  String get recordsSortName => 'Դասավորել ըստ անվան';
+
+  @override
+  String get recordsSelect => 'Ընտրել';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ընտրված է $count',
+      one: 'Ընտրված է $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Տեղափոխել';
+
+  @override
+  String get recordsMoveTitle => 'Տեղափոխել այստեղ';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Տեղափոխվեց $count գրառում',
+      one: 'Տեղափոխվեց $count գրառում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ջնջե՞լ $count գրառումները',
+      one: 'Ջնջե՞լ $count գրառումը',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Դրանք կտեղափոխվեն «Վերջերս ջնջվածներ», որտեղից կարող եք վերականգնել 30 օրվա ընթացքում։';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ջնջվեց $count գրառում',
+      one: 'Ջնջվեց $count գրառում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Շուտով կլրանա';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ցույց տալ բոլոր $count գրառումները',
+      one: 'Ցույց տալ բոլոր գրառումները',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group-ում դեռ ոչինչ չկա';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Սկանավորեք քարտը կամ փաստաթուղթը կամ ավելացրեք ձեռքով։ Vaultara-ն կհիշեցնի ժամկետը լրանալուց առաջ։';
+
+  @override
+  String get recordsScan => 'Սկանավորել';
 }

@@ -7866,4 +7866,184 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'လင့်ခ်ပို့ပါ၊ ဝန်ထမ်းက သက်တမ်းတိုးထားသော စာရွက်စာတမ်းကို ကိုယ်တိုင်တင်မည်။';
+
+  @override
+  String get categoryHealthAndMedical => 'ကျန်းမာရေးနှင့် ဆေးဘက်';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'အသင်းဝင်ခွင့်နှင့် စာရင်းသွင်းမှုများ';
+
+  @override
+  String get subcategoryFirearmLicences => 'သေနတ်လိုင်စင်များ';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'နိုင်ငံတကာ ယာဉ်မောင်းခွင့်လက်မှတ်များ';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'လှေနှင့် လေယာဉ်မှူး လိုင်စင်များ';
+
+  @override
+  String get subcategorySafetyCertificates => 'ရှေးဦးသူနာပြုနှင့် ဘေးကင်းရေး လက်မှတ်များ';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'လျှပ်စစ်စံချိန်မီ လက်မှတ်များ';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'မီးသတ်ကိရိယာ ဝန်ဆောင်မှု';
+
+  @override
+  String get subcategoryMedicalAidCards => 'ကျန်းမာရေးအာမခံကတ်များ';
+
+  @override
+  String get subcategoryPrescriptions => 'ဆေးညွှန်းများ';
+
+  @override
+  String get subcategoryVaccinations => 'ကာကွယ်ဆေးများ';
+
+  @override
+  String get subcategoryMedicalCertificates => 'ဆေးလက်မှတ်များ';
+
+  @override
+  String get subcategoryGymMemberships => 'အားကစားခန်း အသင်းဝင်ခွင့်';
+
+  @override
+  String get subcategoryClubMemberships => 'ကလပ် အသင်းဝင်ခွင့်';
+
+  @override
+  String get subcategorySubscriptions => 'စာရင်းသွင်းမှုများ';
+
+  @override
+  String get subcategoryWarranties => 'အာမခံချက်များ';
+
+  @override
+  String get yoursTag => 'သင့်ဟာ';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ခု သက်တမ်းကုန်',
+      one: '$count ခု သက်တမ်းကုန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'အိုင်ကွန် ပြောင်းရန်';
+
+  @override
+  String get categoryLookTitle => 'အိုင်ကွန်နှင့် အရောင်';
+
+  @override
+  String get categoryLookAppColour => 'အက်ပ်အရောင်';
+
+  @override
+  String get categoryLookHint => 'အမည်မှ ရွေးထားသည်။ ပြောင်းရန် တို့ပါ။';
+
+  @override
+  String get renameCategoryTitle => 'အမျိုးအစားအမည် ပြောင်းရန်';
+
+  @override
+  String get renameGroupTitle => 'အုပ်စုအမည် ပြောင်းရန်';
+
+  @override
+  String get nameInUse => 'ဤအမည်ကို ဤနေရာတွင် အသုံးပြုပြီးဖြစ်သည်။';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'အခမဲ့ အုပ်စုများ: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'အခမဲ့အစီအစဉ်၏ စိတ်ကြိုက်အုပ်စု $limit ခု ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ အကန့်အသတ်မဲ့ အုပ်စုများအတွက် Premium သို့ မြှင့်ပါ။';
+  }
+
+  @override
+  String get recordsSortExpiry => 'သက်တမ်းကုန်ရက်အလိုက် စီရန်';
+
+  @override
+  String get recordsSortName => 'အမည်အလိုက် စီရန်';
+
+  @override
+  String get recordsSelect => 'ရွေးရန်';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ခု ရွေးထား',
+      one: '$count ခု ရွေးထား',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'ရွှေ့ရန်';
+
+  @override
+  String get recordsMoveTitle => 'ဤနေရာသို့ ရွှေ့ရန်';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'မှတ်တမ်း $count ခု ရွှေ့ပြီး',
+      one: 'မှတ်တမ်း $count ခု ရွှေ့ပြီး',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'မှတ်တမ်း $count ခု ဖျက်မလား။',
+      one: 'မှတ်တမ်း $count ခု ဖျက်မလား။',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => '၎င်းတို့သည် \"မကြာသေးမီက ဖျက်ထားသည်များ\" သို့ ရောက်သွားပြီး ရက် 30 အတွင်း ပြန်ယူနိုင်သည်။';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'မှတ်တမ်း $count ခု ဖျက်ပြီး',
+      one: 'မှတ်တမ်း $count ခု ဖျက်ပြီး',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'မကြာမီ သက်တမ်းကုန်မည်';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'မှတ်တမ်း $count ခုလုံး ပြရန်',
+      one: 'မှတ်တမ်းအားလုံး ပြရန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return '$group တွင် မရှိသေးပါ';
+  }
+
+  @override
+  String get recordsEmptyBody => 'ကတ် သို့မဟုတ် စာရွက်စာတမ်းကို စကင်ဖတ်ပါ၊ သို့မဟုတ် ကိုယ်တိုင်ထည့်ပါ။ သက်တမ်းမကုန်မီ Vaultara က သတိပေးပါမည်။';
+
+  @override
+  String get recordsScan => 'စကင်ဖတ်ရန်';
 }

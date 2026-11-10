@@ -7868,4 +7868,184 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get storyBusiness4Body => 'Hantar pautan dan kakitangan memuat naik sendiri dokumen yang diperbaharui.';
+
+  @override
+  String get categoryHealthAndMedical => 'Kesihatan dan perubatan';
+
+  @override
+  String get categoryMembershipsAndSubscriptions => 'Keahlian dan langganan';
+
+  @override
+  String get subcategoryFirearmLicences => 'Lesen senjata api';
+
+  @override
+  String get subcategoryInternationalDrivingPermits => 'Permit memandu antarabangsa';
+
+  @override
+  String get subcategoryBoatAndPilotLicences => 'Lesen bot dan juruterbang';
+
+  @override
+  String get subcategorySafetyCertificates => 'Sijil pertolongan cemas dan keselamatan';
+
+  @override
+  String get subcategoryElectricalComplianceCertificates => 'Sijil pematuhan elektrik';
+
+  @override
+  String get subcategoryFireEquipmentServices => 'Servis peralatan kebakaran';
+
+  @override
+  String get subcategoryMedicalAidCards => 'Kad insurans perubatan';
+
+  @override
+  String get subcategoryPrescriptions => 'Preskripsi';
+
+  @override
+  String get subcategoryVaccinations => 'Vaksinasi';
+
+  @override
+  String get subcategoryMedicalCertificates => 'Sijil perubatan';
+
+  @override
+  String get subcategoryGymMemberships => 'Keahlian gim';
+
+  @override
+  String get subcategoryClubMemberships => 'Keahlian kelab';
+
+  @override
+  String get subcategorySubscriptions => 'Langganan';
+
+  @override
+  String get subcategoryWarranties => 'Waranti dan jaminan';
+
+  @override
+  String get yoursTag => 'Milik anda';
+
+  @override
+  String expiredBadge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tamat tempoh',
+      one: '$count tamat tempoh',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get changeIcon => 'Tukar ikon';
+
+  @override
+  String get categoryLookTitle => 'Ikon dan warna';
+
+  @override
+  String get categoryLookAppColour => 'Warna apl';
+
+  @override
+  String get categoryLookHint => 'Dipilih berdasarkan nama. Ketik untuk menukar.';
+
+  @override
+  String get renameCategoryTitle => 'Namakan semula kategori';
+
+  @override
+  String get renameGroupTitle => 'Namakan semula kumpulan';
+
+  @override
+  String get nameInUse => 'Nama itu sudah digunakan di sini.';
+
+  @override
+  String freeGroupsProgress(int current, int limit) {
+    return 'Kumpulan percuma: $current/$limit';
+  }
+
+  @override
+  String groupLimitReached(int limit) {
+    return 'Anda telah mencapai had pelan Percuma iaitu $limit kumpulan tersuai. Naik taraf ke Premium untuk mencipta kumpulan tanpa had.';
+  }
+
+  @override
+  String get recordsSortExpiry => 'Isih mengikut tarikh tamat tempoh';
+
+  @override
+  String get recordsSortName => 'Isih mengikut nama';
+
+  @override
+  String get recordsSelect => 'Pilih';
+
+  @override
+  String recordsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dipilih',
+      one: '$count dipilih',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsMove => 'Alihkan';
+
+  @override
+  String get recordsMoveTitle => 'Alihkan ke';
+
+  @override
+  String recordsMoved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rekod dialihkan',
+      one: '$count rekod dialihkan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsDeleteManyTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Padam $count rekod?',
+      one: 'Padam $count rekod?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsDeleteManyBody => 'Rekod akan masuk ke \"Baru Dipadam\", di mana anda boleh memulihkannya selama 30 hari.';
+
+  @override
+  String recordsDeletedMany(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rekod dipadam',
+      one: '$count rekod dipadam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recordsSectionSoon => 'Hampir tamat tempoh';
+
+  @override
+  String recordsShowAll(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tunjukkan semua $count rekod',
+      one: 'Tunjukkan semua rekod',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recordsEmptyTitle(String group) {
+    return 'Belum ada apa-apa dalam $group';
+  }
+
+  @override
+  String get recordsEmptyBody => 'Imbas kad atau dokumen, atau tambah secara manual. Vaultara akan mengingatkan anda sebelum tamat tempoh.';
+
+  @override
+  String get recordsScan => 'Imbas';
 }

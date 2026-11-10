@@ -2358,5 +2358,113 @@
   "storyBusiness3Title": "ಮಾಸಿಕ ವರದಿ",
   "storyBusiness3Body": "ಪ್ರತಿ ತಿಂಗಳು ವರದಿ ಯಾವುದು ಮಾನ್ಯ, ಯಾವುದು ಮುಕ್ತಾಯವಾಗುತ್ತಿದೆ ಮತ್ತು ಯಾವುದು ಕಾಣೆಯಾಗಿದೆ ಎಂದು ತೋರಿಸುತ್ತದೆ.",
   "storyBusiness4Title": "ಅಪ್‌ಡೇಟ್ ಕೇಳಿ",
-  "storyBusiness4Body": "ಲಿಂಕ್ ಕಳುಹಿಸಿ, ಸಿಬ್ಬಂದಿ ತಾವೇ ನವೀಕರಿಸಿದ ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡುತ್ತಾರೆ."
+  "storyBusiness4Body": "ಲಿಂಕ್ ಕಳುಹಿಸಿ, ಸಿಬ್ಬಂದಿ ತಾವೇ ನವೀಕರಿಸಿದ ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡುತ್ತಾರೆ.",
+  "categoryHealthAndMedical": "ಆರೋಗ್ಯ ಮತ್ತು ವೈದ್ಯಕೀಯ",
+  "categoryMembershipsAndSubscriptions": "ಸದಸ್ಯತ್ವಗಳು ಮತ್ತು ಚಂದಾದಾರಿಕೆಗಳು",
+  "subcategoryFirearmLicences": "ಶಸ್ತ್ರಾಸ್ತ್ರ ಪರವಾನಗಿಗಳು",
+  "subcategoryInternationalDrivingPermits": "ಅಂತರರಾಷ್ಟ್ರೀಯ ಚಾಲನಾ ಪರವಾನಗಿಗಳು",
+  "subcategoryBoatAndPilotLicences": "ದೋಣಿ ಮತ್ತು ಪೈಲಟ್ ಪರವಾನಗಿಗಳು",
+  "subcategorySafetyCertificates": "ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಮತ್ತು ಸುರಕ್ಷತಾ ಪ್ರಮಾಣಪತ್ರಗಳು",
+  "subcategoryElectricalComplianceCertificates": "ವಿದ್ಯುತ್ ಅನುಸರಣಾ ಪ್ರಮಾಣಪತ್ರಗಳು",
+  "subcategoryFireEquipmentServices": "ಅಗ್ನಿಶಾಮಕ ಸಾಧನಗಳ ಸರ್ವಿಸ್",
+  "subcategoryMedicalAidCards": "ಆರೋಗ್ಯ ವಿಮಾ ಕಾರ್ಡ್‌ಗಳು",
+  "subcategoryPrescriptions": "ಪ್ರಿಸ್ಕ್ರಿಪ್ಶನ್‌ಗಳು",
+  "subcategoryVaccinations": "ಲಸಿಕೆಗಳು",
+  "subcategoryMedicalCertificates": "ವೈದ್ಯಕೀಯ ಪ್ರಮಾಣಪತ್ರಗಳು",
+  "subcategoryGymMemberships": "ಜಿಮ್ ಸದಸ್ಯತ್ವಗಳು",
+  "subcategoryClubMemberships": "ಕ್ಲಬ್ ಸದಸ್ಯತ್ವಗಳು",
+  "subcategorySubscriptions": "ಚಂದಾದಾರಿಕೆಗಳು",
+  "subcategoryWarranties": "ವಾರಂಟಿ ಮತ್ತು ಗ್ಯಾರಂಟಿ",
+  "yoursTag": "ನಿಮ್ಮದು",
+  "expiredBadge": "{count, plural, =1{{count} ಅವಧಿ ಮುಗಿದಿದೆ} other{{count} ಅವಧಿ ಮುಗಿದಿವೆ}}",
+  "@expiredBadge": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeIcon": "ಐಕಾನ್ ಬದಲಿಸಿ",
+  "categoryLookTitle": "ಐಕಾನ್ ಮತ್ತು ಬಣ್ಣ",
+  "categoryLookAppColour": "ಆ್ಯಪ್ ಬಣ್ಣ",
+  "categoryLookHint": "ಹೆಸರಿನಿಂದ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ. ಬದಲಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "renameCategoryTitle": "ವರ್ಗದ ಹೆಸರು ಬದಲಿಸಿ",
+  "renameGroupTitle": "ಗುಂಪಿನ ಹೆಸರು ಬದಲಿಸಿ",
+  "nameInUse": "ಈ ಹೆಸರು ಇಲ್ಲಿ ಈಗಾಗಲೇ ಬಳಕೆಯಲ್ಲಿದೆ.",
+  "freeGroupsProgress": "ಉಚಿತ ಗುಂಪುಗಳು: {current}/{limit}",
+  "@freeGroupsProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupLimitReached": "ನೀವು ಉಚಿತ ಯೋಜನೆಯ {limit} ಕಸ್ಟಮ್ ಗುಂಪುಗಳ ಮಿತಿಯನ್ನು ತಲುಪಿದ್ದೀರಿ. ಅಮಿತ ಗುಂಪುಗಳಿಗಾಗಿ Premium ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ.",
+  "@groupLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSortExpiry": "ಅವಧಿ ದಿನಾಂಕದ ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ",
+  "recordsSortName": "ಹೆಸರಿನ ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ",
+  "recordsSelect": "ಆಯ್ಕೆ ಮಾಡಿ",
+  "recordsSelected": "{count, plural, =1{{count} ಆಯ್ಕೆಯಾಗಿದೆ} other{{count} ಆಯ್ಕೆಯಾಗಿವೆ}}",
+  "@recordsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsMove": "ಸರಿಸಿ",
+  "recordsMoveTitle": "ಇಲ್ಲಿಗೆ ಸರಿಸಿ",
+  "recordsMoved": "{count, plural, =1{{count} ದಾಖಲೆ ಸರಿಸಲಾಗಿದೆ} other{{count} ದಾಖಲೆಗಳನ್ನು ಸರಿಸಲಾಗಿದೆ}}",
+  "@recordsMoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyTitle": "{count, plural, =1{{count} ದಾಖಲೆ ಅಳಿಸಬೇಕೆ?} other{{count} ದಾಖಲೆಗಳನ್ನು ಅಳಿಸಬೇಕೆ?}}",
+  "@recordsDeleteManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsDeleteManyBody": "ಇವು \"ಇತ್ತೀಚೆಗೆ ಅಳಿಸಲಾದವು\" ಗೆ ಹೋಗುತ್ತವೆ, ಅಲ್ಲಿಂದ 30 ದಿನಗಳವರೆಗೆ ಮರಳಿ ತರಬಹುದು.",
+  "recordsDeletedMany": "{count, plural, =1{{count} ದಾಖಲೆ ಅಳಿಸಲಾಗಿದೆ} other{{count} ದಾಖಲೆಗಳನ್ನು ಅಳಿಸಲಾಗಿದೆ}}",
+  "@recordsDeletedMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsSectionSoon": "ಶೀಘ್ರದಲ್ಲೇ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
+  "recordsShowAll": "{count, plural, =1{ಎಲ್ಲಾ ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಿ} other{ಎಲ್ಲಾ {count} ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಿ}}",
+  "@recordsShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordsEmptyTitle": "{group} ನಲ್ಲಿ ಇನ್ನೂ ಏನೂ ಇಲ್ಲ",
+  "@recordsEmptyTitle": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "recordsEmptyBody": "ಕಾರ್ಡ್ ಅಥವಾ ದಾಖಲೆಯನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಅಥವಾ ಕೈಯಾರೆ ಸೇರಿಸಿ. ಅವಧಿ ಮುಗಿಯುವ ಮೊದಲು Vaultara ನೆನಪಿಸುತ್ತದೆ.",
+  "recordsScan": "ಸ್ಕ್ಯಾನ್"
 }
