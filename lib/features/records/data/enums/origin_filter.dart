@@ -1,1 +1,0 @@
-enum OriginFilter { all, preset, custom }
