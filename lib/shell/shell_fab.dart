@@ -13,6 +13,7 @@ import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/features/tools/view/life_plan_suggestions.dart';
 import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
+
 Widget? buildShellFab(
   BuildContext context,
   ShellState shell,
@@ -21,8 +22,8 @@ Widget? buildShellFab(
   if (MediaQuery.of(context).viewInsets.bottom > 0) return null;
 
   return IgnorePointer(
-    ignoring: shell.tutorialActive &&
-        shell.tutorialStep != TutorialStep.addRecordFab,
+    ignoring:
+        shell.tutorialActive && shell.tutorialStep != TutorialStep.addRecordFab,
     child: FloatingActionButton(
       key: shell.fabKey,
       backgroundColor: primaryColour,
@@ -39,8 +40,7 @@ void openAddRecord(
   RecordPrefill? prefill,
   String? sharedFilePath,
 }) {
-  final startedFromTutorial =
-      shell.tutorialStep == TutorialStep.addRecordFab;
+  final startedFromTutorial = shell.tutorialStep == TutorialStep.addRecordFab;
 
   if (!startedFromTutorial &&
       !RecordRepository.canAddRecord(isPremium: shell.isPremium)) {
@@ -80,6 +80,8 @@ void openAddRecord(
         repeatMonths: draft.repeatMonths,
         locked: draft.locked,
         inWallet: draft.inWallet,
+        keptIn: draft.keptIn,
+        lostLine: draft.lostLine,
         leadDays: draft.leadDays,
         reminderBaseId: DateTime.now().millisecondsSinceEpoch % 2147483647,
         householdId: draft.shared ? HouseholdRepository.householdId : null,
@@ -116,6 +118,7 @@ void openAddRecord(
     });
   }
 }
+
 void _showLimitReached(BuildContext context, ShellState shell) {
   final current = shell.isPremium
       ? RecordRepository.totalRecordsAll()

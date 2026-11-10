@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/records/logic/record_defaults.dart';
 import 'package:vaultara/features/records/logic/record_match.dart';
@@ -192,7 +193,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   bool moreDetailsOpen = false;
   int? repeatMonths;
   bool locked = false;
-  bool inWallet = false;
+  String? keptIn;
+  late final TextEditingController lostLineController;
   int? leadDays;
   bool shared = false;
   bool scanBusy = false;
@@ -245,7 +247,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
 
     selectedCategoryKey = draft?.categoryKey ?? widget.categoryKey;
 
-    selectedSubcategory = draft?.subcategoryName ??
+    selectedSubcategory =
+        draft?.subcategoryName ??
         widget.subcategoryKey ??
         widget.subcategoryName;
 
@@ -254,7 +257,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     holderId = draft?.holderId ?? widget.initialHolderId;
     repeatMonths = draft?.repeatMonths;
     locked = draft?.locked ?? false;
-    inWallet = draft?.inWallet ?? false;
+    keptIn = draft == null
+        ? null
+        : (draft.keptIn ?? (draft.inWallet ? KeptIn.wallet : null));
+    lostLineController = TextEditingController(text: draft?.lostLine ?? '');
     leadDays = draft?.leadDays;
     shared = draft?.shared ?? false;
     renewalCost = draft?.renewalCost;
@@ -275,16 +281,17 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       selectedCategoryKey = AddRecordTutorialSample.categoryKey;
       selectedSubcategory = AddRecordTutorialSample.subcategoryKey;
       expiryDate = AddRecordTutorialSampleAccessor.expiryDate();
-      expiryController.text =
-          expiryDate!.toIso8601String().substring(0, 10);
+      expiryController.text = expiryDate!.toIso8601String().substring(0, 10);
       reminderOffsetDays = AddRecordTutorialSample.reminderOffsetDays;
       reminderTouched = true;
       leadDays = AddRecordTutorialSample.leadDays;
-      inWallet = AddRecordTutorialSample.inWallet;
+      keptIn = AddRecordTutorialSample.inWallet ? KeptIn.wallet : null;
     }
-    moreDetailsOpen = repeatMonths != null ||
+    moreDetailsOpen =
+        repeatMonths != null ||
         locked ||
-        inWallet ||
+        keptIn != null ||
+        lostLineController.text.trim().isNotEmpty ||
         leadDays != null ||
         notesController.text.trim().isNotEmpty ||
         (renewalCost ?? 0) > 0 ||
@@ -350,10 +357,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
 
     if (isTutorialMode) {
-      nameController.text =
-          AddRecordTutorialSampleAccessor.recordName(context);
-      notesController.text =
-          AddRecordTutorialSampleAccessor.recordNotes(context);
+      nameController.text = AddRecordTutorialSampleAccessor.recordName(context);
+      notesController.text = AddRecordTutorialSampleAccessor.recordNotes(
+        context,
+      );
     }
   }
 
@@ -380,6 +387,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     notesFocus.dispose();
     nameController.dispose();
     notesController.dispose();
+    lostLineController.dispose();
     expiryController.dispose();
 
     if (isEditMode) PrivacyScreen.release();
@@ -451,8 +459,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   }
 
   void _registerReminderTutorialKeys() {
-    TutorialController.instance
-        .register(TutorialStep.setReminderField, reminderFieldKey);
+    TutorialController.instance.register(
+      TutorialStep.setReminderField,
+      reminderFieldKey,
+    );
   }
 
   void _unregisterReminderTutorialKeys() {
@@ -562,9 +572,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       final String? groupForName = appliedGroup ?? selectedSubcategory;
       final String? kindName =
           groupForName != null && groupForName == r.groupKey
-              ? _scanKindName(loc, r)
-              : null;
-      final String? name = r.suggestedName ??
+          ? _scanKindName(loc, r)
+          : null;
+      final String? name =
+          r.suggestedName ??
           kindName ??
           (groupForName != null
               ? _subcategoryLabelForKey(context, groupForName)
@@ -627,10 +638,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       final int limit = AttachmentRepository.limitFor(isPremium: isPremium);
       final int count = attachments.length + newAttachmentPaths.length;
       if (count < limit && !newAttachmentPaths.contains(outcome.imagePath)) {
-        newAttachmentPaths = <String>[
-          ...newAttachmentPaths,
-          outcome.imagePath,
-        ];
+        newAttachmentPaths = <String>[...newAttachmentPaths, outcome.imagePath];
       }
     }
 
@@ -675,7 +683,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       if (defaults.repeatMonths != null) filled = true;
     }
     if (!_walletTouched) {
-      inWallet = defaults.inWallet;
+      keptIn = defaults.inWallet ? KeptIn.wallet : null;
       if (defaults.inWallet) filled = true;
     }
     if (!reminderTouched && reminderOffsetDays == null) {
@@ -1012,8 +1020,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         !notesController.text.contains(notes)) {
       final String current = notesController.text.trimRight();
       final String joined = current.isEmpty ? notes : '$current\n$notes';
-      notesController.text =
-          joined.length > 4000 ? joined.substring(0, 4000) : joined;
+      notesController.text = joined.length > 4000
+          ? joined.substring(0, 4000)
+          : joined;
       moreDetailsOpen = true;
     }
   }
@@ -1102,8 +1111,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
 
     final DateTime initial =
         (expiryDate != null && expiryDate!.isAfter(todayOnly))
-            ? expiryDate!
-            : tomorrow;
+        ? expiryDate!
+        : tomorrow;
 
     final selected = await showDatePicker(
       context: context,
@@ -1116,8 +1125,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       final DateTime normalized = DateUtils.dateOnly(selected);
       setState(() {
         expiryDate = normalized;
-        expiryController.text =
-            normalized.toIso8601String().substring(0, 10);
+        expiryController.text = normalized.toIso8601String().substring(0, 10);
         expiryError = null;
       });
     }
@@ -1139,8 +1147,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   }
 
   List<String> _buildSubcategoryKeyList(String categoryKey) {
-    final preset =
-        PresetCatalog.groupsByCategory[categoryKey] ?? <String>[];
+    final preset = PresetCatalog.groupsByCategory[categoryKey] ?? <String>[];
     final custom = GroupRepository.getForCategory(categoryKey);
 
     final out = <String>[];
@@ -1196,8 +1203,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       context: context,
       isPremium: isPremium,
       initialDays: reminderOffsetDays,
-      isTutorialMode:
-          isReminderTutorialMode || (isTutorialMode && fullTour),
+      isTutorialMode: isReminderTutorialMode || (isTutorialMode && fullTour),
     );
 
     if (!mounted) return;
@@ -1249,12 +1255,15 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final formattedName = normaliseTitleCase(nameController.text);
 
     if (!isEditMode) {
-      categoryError =
-          selectedCategoryKey == null ? loc.editorErrorCategory : null;
-      subcategoryError =
-          selectedSubcategory == null ? loc.editorErrorGroup : null;
-      nameError =
-          formattedName.trim().isEmpty ? loc.recordEditorErrorName : null;
+      categoryError = selectedCategoryKey == null
+          ? loc.editorErrorCategory
+          : null;
+      subcategoryError = selectedSubcategory == null
+          ? loc.editorErrorGroup
+          : null;
+      nameError = formattedName.trim().isEmpty
+          ? loc.recordEditorErrorName
+          : null;
     }
 
     if (expiryDate == null) {
@@ -1300,9 +1309,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           expiryDate: DateUtils.dateOnly(expiryDate!),
           categoryKey: ck,
           categoryLabel: cl,
-          subcategoryName: selectedSubcategory ??
-              widget.initialInput?.subcategoryName ??
-              '',
+          subcategoryName:
+              selectedSubcategory ?? widget.initialInput?.subcategoryName ?? '',
           notes: notesController.text.trim().isEmpty
               ? null
               : notesController.text.trim(),
@@ -1314,12 +1322,14 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           costCurrency: renewalCost == null
               ? null
               : (costCurrency ??
-                  CostField.defaultCurrency(Localizations.localeOf(context))),
+                    CostField.defaultCurrency(Localizations.localeOf(context))),
           attachments: List<RecordAttachment>.of(attachments),
           newAttachmentPaths: List<String>.of(newAttachmentPaths),
           repeatMonths: repeatMonths,
           locked: locked,
-          inWallet: inWallet,
+          inWallet: keptIn == KeptIn.wallet,
+          keptIn: keptIn,
+          lostLine: KeptIn.cleanLine(lostLineController.text),
           leadDays: leadDays,
           shared: shared && HouseholdRepository.canEditShared,
         ),
@@ -1363,7 +1373,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       newAttachmentPaths.join(','),
       repeatMonths,
       locked,
-      inWallet,
+      keptIn,
+      lostLineController.text.trim(),
       leadDays,
       shared,
     ].join('|');
@@ -1388,12 +1399,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
     final scheme = Theme.of(context).colorScheme;
 
-    final baseSize =
-        Theme.of(context).textTheme.bodyMedium?.fontSize ?? 14.0;
+    final baseSize = Theme.of(context).textTheme.bodyMedium?.fontSize ?? 14.0;
     final double hintSize = (baseSize - 2).clamp(10.0, 40.0);
 
-    final bool isTamil =
-        Localizations.localeOf(context).languageCode == 'ta';
+    final bool isTamil = Localizations.localeOf(context).languageCode == 'ta';
 
     final Color hintColour = AppInputDecorations.hintColorFor(scheme);
 
@@ -1423,8 +1432,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final int displayCount = isPremium
         ? activeCount
         : lifetimeCount.clamp(0, limit).toInt();
-    final double progress =
-        limit == 0 ? 0 : (displayCount / limit).clamp(0.0, 1.0);
+    final double progress = limit == 0
+        ? 0
+        : (displayCount / limit).clamp(0.0, 1.0);
 
     final bool showScan = !isEditMode && !isReminderTutorialMode;
     final bool showExtras = !isReminderTutorialMode;
@@ -1432,7 +1442,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final int extrasFilled = [
       repeatMonths != null,
       locked,
-      inWallet,
+      keptIn != null,
       leadDays != null,
       notesController.text.trim().isNotEmpty,
       renewalCost != null && renewalCost! > 0,
@@ -1443,9 +1453,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final bool showPeople =
         showExtras && PeopleRepository.people.value.isNotEmpty;
 
-    final bool showShared = showExtras &&
-        !isAnyTutorialMode &&
-        HouseholdRepository.canEditShared;
+    final bool showShared =
+        showExtras && !isAnyTutorialMode && HouseholdRepository.canEditShared;
 
     final List<Widget> moreChildren = [
       if (showExtras) ...[
@@ -1487,7 +1496,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         const SizedBox(height: 10),
         CostField(
           amount: renewalCost,
-          currency: costCurrency ??
+          currency:
+              costCurrency ??
               CostField.defaultCurrency(Localizations.localeOf(context)),
           enabled: !isSaving,
           onChanged: (amount, currency) => setState(() {
@@ -1517,13 +1527,20 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                 onChanged: _onLockChanged,
               ),
               EditorWalletTile(
-                value: inWallet,
+                value: keptIn,
                 enabled: !isSaving,
                 onChanged: (value) => setState(() {
                   _walletTouched = true;
-                  inWallet = value;
+                  keptIn = value;
                 }),
               ),
+              if (KeptIn.cardGroups.contains(selectedSubcategory) ||
+                  lostLineController.text.trim().isNotEmpty)
+                EditorLostLineField(
+                  controller: lostLineController,
+                  enabled: !isSaving,
+                  onChanged: (_) => setState(() {}),
+                ),
               const SizedBox(height: 6),
               AttachmentStrip(
                 existing: attachments,

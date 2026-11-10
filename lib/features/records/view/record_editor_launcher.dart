@@ -9,6 +9,7 @@ import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/records/data/enums/record_editor_mode.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/logic/household_access.dart';
+
 Future<void> openRecordEditor({
   required BuildContext context,
   required TrackedItem record,
@@ -41,6 +42,8 @@ Future<void> openRecordEditor({
       repeatMonths: record.repeatMonths,
       locked: record.locked,
       inWallet: record.inWallet,
+      keptIn: record.place,
+      lostLine: record.lostLine,
       leadDays: record.leadDays,
       shared: record.isShared,
     ),
@@ -59,7 +62,10 @@ Future<void> openRecordEditor({
         repeatMonths: draft.repeatMonths,
         clearRepeat: draft.repeatMonths == null,
         locked: draft.locked,
-        inWallet: draft.inWallet,
+        keptIn: draft.keptIn,
+        clearKeptIn: draft.keptIn == null,
+        lostLine: draft.lostLine,
+        clearLostLine: draft.lostLine == null,
         leadDays: draft.leadDays,
         clearLeadDays: draft.leadDays == null,
       );
