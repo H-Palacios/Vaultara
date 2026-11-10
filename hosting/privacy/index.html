@@ -109,6 +109,7 @@
 <ul>
   <li><strong>Account details:</strong> your email address, display name and, if you choose to add one, a profile photo.</li>
   <li><strong>Records:</strong> for each document or record you add, its name, category, expiry date, notes and, if you choose to add them, document numbers (for example, a passport or licence number). If you add them, also where you keep it (for example your wallet or bag) and the phone number to call to block a lost card.</li>
+  <li><strong>Your categories and groups:</strong> the names of the categories and groups you create or rename, and the icon and colour you pick for a category.</li>
   <li><strong>Attachments:</strong> photos and PDF files you choose to attach to a record. You can choose to encrypt photos on your device before they are uploaded (see <a href="#security">section 12</a>).</li>
   <li><strong>People in your household:</strong> the names of family or household members you add, and the records you enter for them.</li>
   <li><strong>Trips:</strong> destinations, any cities or towns you add, travel dates, travellers, the reason for the trip, flights (where they leave from and land, dates and times) and the date you reach each country. For visa checks, the nationality and country of residence of each traveller.</li>
@@ -125,6 +126,7 @@
   <li><strong>Notification tokens:</strong> a Firebase Cloud Messaging token for each device, which lets us send push notifications to it.</li>
   <li><strong>Security history:</strong> sign-in events, including the device and a partially masked IP address (part of the address is hidden before we store it).</li>
   <li><strong>Two-step sign-in:</strong> if you turn it on, the information needed to check codes from your authenticator app.</li>
+  <li><strong>Pinned categories:</strong> which categories you pinned to the top of the Categories screen, so that the order is the same on all your devices.</li>
   <li><strong>Tutorial progress:</strong> which tutorials you finished, which chapters of the full tour you skipped and which "New here?" tips you closed, so that they are not shown again on your other devices.</li>
   <li><strong>Consent records:</strong> what you agreed to (for example, this policy, the Terms of Service or analytics) and when.</li>
   <li><strong>Analytics and advertising measurement:</strong> information about how the app is used, if analytics is turned on, and on Android your device's advertising ID, if you allow it (see <a href="#analytics">section 14</a>).</li>
@@ -287,8 +289,8 @@
     </tr>
     <tr>
       <td>Anthropic PBC</td>
-      <td>Powers the optional Ask Vaultara assistant on paid plans</td>
-      <td>The messages you send to the assistant, and the details of your records, people and trips that the assistant looks up to answer them (see <a href="#ai-assistant">section 13</a>). Nothing is sent if you do not use it.</td>
+      <td>Powers the optional Ask Vaultara assistant on paid plans, and suggests an icon for a new category</td>
+      <td>The messages you send to the assistant, and the details of your records, people and trips that the assistant looks up to answer them (see <a href="#ai-assistant">section 13</a>). Nothing is sent if you do not use it. When you type a name for a new category, that name only (see <a href="#icon-suggestions">section 13.1</a>).</td>
       <td>United States</td>
     </tr>
     <tr>
@@ -323,7 +325,7 @@
 
 <!-- 10 -->
 <h2 id="transfers">10. Transfers outside South Africa</h2>
-<p>Your information is stored on Google Cloud servers in the United States. If you use the Ask Vaultara assistant, your messages and the record details it looks up are also sent to Anthropic in the United States.</p>
+<p>Your information is stored on Google Cloud servers in the United States. If you use the Ask Vaultara assistant, your messages and the record details it looks up are also sent to Anthropic in the United States, as is the name you type for a new category so that an icon can be suggested for it.</p>
 <h3>Under POPIA</h3>
 <p>Section 72 of POPIA allows us to transfer personal information to another country if certain conditions are met. We rely on:</p>
 <ul>
@@ -410,7 +412,7 @@
 <h2 id="ai-assistant">13. The Ask Vaultara assistant</h2>
 <p>Ask Vaultara is an optional assistant available on paid plans. It uses an AI model provided by Anthropic.</p>
 <ul>
-  <li>Nothing is sent to Anthropic unless you use the assistant.</li>
+  <li>Nothing from your records or chats is sent to Anthropic unless you use the assistant. The only other thing Vaultara sends to Anthropic is the name of a new category, for an icon suggestion (see <a href="#icon-suggestions">section 13.1</a>).</li>
   <li>When you use it, your messages in the current chat are sent to Anthropic so that it can produce an answer. If you continue a saved chat, its earlier messages are sent too. You cannot send images or files to the assistant.</li>
   <li>To answer your question, the assistant can look up your information in Vaultara and send it to Anthropic. This can include the names, groups, categories, expiry dates, notes, renewal costs and reminder settings of your records and of records shared with your household, the names of the people you track records for, the passport countries and country of residence you saved for yourself and for them, your trips (dates, countries, cities or towns, travellers, reason for the trip, flights and arrival dates), and which plan you have. It does not look up document numbers or attachments. For locked records, it sees only that a locked record exists and its expiry date, not its name, group or notes.</li>
   <li>If you turned on Use my location for trips, the country your phone is in (for example "JP") is sent with each message, so that the assistant can tell whether you are at home or travelling. Your coordinates are never sent (see section 4.3).</li>
@@ -421,6 +423,15 @@
   <li>Anthropic does not use data sent through its commercial API to train its models by default.</li>
   <li>Do not send end-to-end encrypted photos or anything you would not want processed by Anthropic. Only send what you need for your question.</li>
   <li>Answers can be wrong. Always confirm important information with an official source.</li>
+</ul>
+
+<h3 id="icon-suggestions">13.1 Icon suggestions for new categories</h3>
+<p>When you make your own category, Vaultara picks an icon and colour for it from the name you type, on all plans.</p>
+<ul>
+  <li>The app first makes a guess on your phone. A moment later, the name you typed (up to 40 characters) is sent through our servers to Anthropic's AI model, which picks the best icon from a fixed list of about 40.</li>
+  <li>Only the name is sent to Anthropic. No records, people, dates, document numbers or photos are sent, and your account is not identified to Anthropic.</li>
+  <li>We do not save the name with the request. The name is saved in your account only when you create the category, together with the icon and colour.</li>
+  <li>You can tap the icon to choose a different one at any time. If you do not want the name sent, do not type a name you would not want processed by Anthropic; the same deletion and training terms apply as for the assistant above.</li>
 </ul>
 <p class="back-top"><a href="#top">Back to top</a></p>
 
