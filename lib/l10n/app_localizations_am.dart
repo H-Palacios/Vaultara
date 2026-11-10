@@ -7492,4 +7492,438 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'የመነሻ ማያዎ';
+
+  @override
+  String get tutorialsSubHome => 'ካርዶቹ ምን ማለት እንደሆኑ እና ሁሉም ነገር የት እንዳለ';
+
+  @override
+  String get tutorialsTitleRenew => 'መዝገብ ማደስ';
+
+  @override
+  String get tutorialsSubRenew => 'አስታዋሽ ሲመጣ ምን ማድረግ እንዳለብዎ';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'ቀን መቁጠሪያ እና ወጪዎች';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'በቀን መቁጠሪያዎ ውስጥ የማብቂያ ቀኖች እና የእድሳት ወጪ';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'ፎቶዎች እና ደህንነት';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'የሰነድ ፎቶዎች፣ ምስጠራ እና መቆለፊያዎች';
+
+  @override
+  String get tutorialsTitleSharing => 'በደህንነት ያጋሩ';
+
+  @override
+  String get tutorialsSubSharing => 'መዝገብ ያጋሩ፣ ጥቅል ይስሩ፣ አገናኝ ያቁሙ';
+
+  @override
+  String get tutorialsTitleImportScan => 'ይቃኙ እና ያስመጡ';
+
+  @override
+  String get tutorialsSubImportScan => 'ብዙ መዝገቦችን በፍጥነት ያክሉ';
+
+  @override
+  String get tutorialsTitleHousehold => 'የጋራ ቤተሰብ';
+
+  @override
+  String get tutorialsSubHousehold => 'ሌሎች መዝገቦችን እና አስታዋሾችን እንዲያጋሩ ይጋብዙ';
+
+  @override
+  String get tutorialsTitleLostWallet => 'የኪስ ቦርሳዬ ጠፍቷል';
+
+  @override
+  String get tutorialsSubLostWallet => 'አሁን ይዘጋጁ፣ ከጠፋ በፍጥነት ይንቀሳቀሱ';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'የሕይወት ክስተቶች';
+
+  @override
+  String get tutorialsSubLifeEvents => 'ለቤት ለውጥ፣ ለልጅ፣ ለአዲስ ሥራ እና ለሌሎችም ዕቅድ';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultaraን ይጠይቁ';
+
+  @override
+  String get tutorialsSubAsk => 'ከመዝገቦችዎ ጋር ይወያዩ ወይም ይናገሩ';
+
+  @override
+  String get tutorialsTitleBusiness => 'የBusiness መሣሪያዎች';
+
+  @override
+  String get tutorialsSubBusiness => 'የሠራተኞች ሰነዶች፣ አስታዋሾች እና ሪፖርቶች';
+
+  @override
+  String get tutorialsGroupBasics => 'መሠረታዊ ነገሮች';
+
+  @override
+  String get tutorialsGroupOnTop => 'ሁሉንም መከታተል';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'ጉዞ እና ቤተሰብ';
+
+  @override
+  String get tutorialsGroupEmergencies => 'የሕይወት ክስተቶች እና ድንገተኛ ሁኔታዎች';
+
+  @override
+  String get tutorialsGroupPaid => 'የሚከፈልባቸው ባህሪያት';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ደረጃዎች',
+      one: '$count ደረጃ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'የሚከፈልባቸው ዕቅዶች';
+
+  @override
+  String get tutorialsPaidNote => 'ይህን በማንኛውም ዕቅድ ማየት ይችላሉ። ባህሪው ራሱ የሚከፈልበት ዕቅድ ይፈልጋል።';
+
+  @override
+  String get tutorialsBack => 'ተመለስ';
+
+  @override
+  String get tutorialsTryIt => 'አሁን ይሞክሩ';
+
+  @override
+  String get tutorialHintText => 'እዚህ አዲስ ነዎት? አጭሩን ጉብኝት ይመልከቱ';
+
+  @override
+  String get tutorialHintPlay => 'አሳየኝ';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'ምዕራፍ $number ከ$total';
+  }
+
+  @override
+  String get tourContinue => 'ቀጥል';
+
+  @override
+  String get tourSkip => 'ዝለል';
+
+  @override
+  String get tourSkipped => 'ተዘሏል';
+
+  @override
+  String get tourDone => 'ሙሉውን ጉብኝት አይተዋል';
+
+  @override
+  String get tourRestart => 'እንደገና ጀምር';
+
+  @override
+  String get whatsNewBadge => 'አዲስ';
+
+  @override
+  String get whatsNewTitle => 'የኪስ ቦርሳዬ ጠፍቷል';
+
+  @override
+  String get whatsNewBody => 'ካርዶችዎን የሚያስቀምጡበትን ቦታ እና የእያንዳንዱን ባንክ የማገጃ ቁጥር ያስቀምጡ። ቦርሳዎ ከጠፋ ሁሉንም በደቂቃዎች ውስጥ ያግዳሉ።';
+
+  @override
+  String get whatsNewDismiss => 'ገባኝ';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'ተጨማሪ ዝርዝሮች ተጨማሪዎቹን ይይዛል፦ ማስታወሻዎች፣ መደጋገም፣ የእድሳት ጊዜ፣ የማን እንደሆነ፣ የት እንደሚያስቀምጡት፣ መቆለፊያ እና ፎቶዎች። ሲያስፈልግ ብቻ ይክፈቱት።';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'መዝገብን ከመታየቱ በፊት የጣት አሻራ ወይም የማያ ቆልፍ እንዲጠይቅ ይቆልፉት። የት እንደሚያስቀምጡት ይምረጡ፣ ለምሳሌ ቦርሳዎ፣ እና የሰነዱን ፎቶዎች ያክሉ።';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'ቦርሳዎ ጠፍቷል? በውስጡ የነበረውን ሁሉ ይመልከቱ፣ እያንዳንዱን ባንክ በአንድ መታ ይደውሉ እና ለቀሪው ደረጃዎቹን ይከተሉ።';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'የቤት ለውጥ፣ ልጅ፣ አዲስ ሥራ ወይም ድንገተኛ ሁኔታ? የሕይወት ክስተቶች ከመዝገቦችዎ፣ ደረጃዎችዎ እና ቀኖችዎ ጋር ዕቅድ ይሰጥዎታል።';
+
+  @override
+  String get storySampleQuestion => 'በዚህ ዓመት ምን ያበቃል?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'የእርስዎ $name በመጋቢት ያበቃል። ከአንድ ወር በፊት አስታዋሽ ይፈልጋሉ?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name በ30 ቀናት ውስጥ ያበቃል። ለማደስ መታ ያድርጉ።';
+  }
+
+  @override
+  String get storySampleGym => 'የጂም አባልነት';
+
+  @override
+  String get storySampleFirstAid => 'የመጀመሪያ እርዳታ ሰርተፊኬት';
+
+  @override
+  String get storySampleEncrypt => 'ፎቶዎችን አመስጥር';
+
+  @override
+  String get storySampleAppLock => 'የመተግበሪያ መቆለፊያ';
+
+  @override
+  String get storySampleHideApp => 'በመተግበሪያ መቀየሪያ ውስጥ ይዘትን ደብቅ';
+
+  @override
+  String get storyHome1Title => 'ቀንዎ በአንድ እይታ';
+
+  @override
+  String get storyHome1Body => 'የመነሻ ማያው ዛሬ አስፈላጊ የሆነውን ያሳያል፦ በቅርቡ የሚያበቃውን እና ምን ያህል መዝገቦች እንዳሉዎት።';
+
+  @override
+  String get storyHome2Title => 'ማንኛውንም ያግኙ';
+
+  @override
+  String get storyHome2Body => 'መዝገብን በስም፣ በቡድን ወይም በሰው ለማግኘት ፍለጋን መታ ያድርጉ።';
+
+  @override
+  String get storyHome3Title => 'ጉዞዎች እና ዕቅዶች';
+
+  @override
+  String get storyHome3Body => 'የሚያቅዷቸው ጉዞዎች እና በሂደት ላይ ያሉ የሕይወት ክስተት ዕቅዶች ከቀረው ጋር እዚህ ይታያሉ።';
+
+  @override
+  String get storyHome4Title => 'እርዳታ በአንድ መታ';
+
+  @override
+  String get storyHome4Body => 'የብልጭታ አዝራሩ «Vaultaraን ይጠይቁ»ን ይከፍታል። ፎቶዎ መገለጫዎን፣ ቅንብሮችን እና መማሪያዎችን ይከፍታል።';
+
+  @override
+  String get storyRenew1Title => 'አስታዋሽ ይመጣል';
+
+  @override
+  String get storyRenew1Body => 'መዝገብ ከማብቃቱ በፊት Vaultara ያስታውስዎታል። መዝገቡን ለመክፈት አስታዋሹን መታ ያድርጉ።';
+
+  @override
+  String get storyRenew2Title => 'አዲሱን ቀን ያስቀምጡ';
+
+  @override
+  String get storyRenew2Body => 'አድሰዋል? «አድስ»ን መታ ያድርጉ እና አዲሱን የማብቂያ ቀን ያስገቡ። አስታዋሾችዎ አብረው ይንቀሳቀሳሉ።';
+
+  @override
+  String get storyRenew3Title => 'እንዴት እንደሆነ እርግጠኛ አይደሉም?';
+
+  @override
+  String get storyRenew3Body => 'ብዙ መዝገቦች ደረጃዎቹን፣ ሰነዶቹን እና የተለመደውን ወጪ የያዘ መመሪያ አላቸው።';
+
+  @override
+  String get storyRenew4Title => 'ይደጋገም';
+
+  @override
+  String get storyRenew4Body => 'ለደንበኝነት ምዝገባዎች እና ዓመታዊ ክፍያዎች መደጋገምን ያብሩ፣ ቀኑም በራሱ ወደፊት ይሄዳል።';
+
+  @override
+  String get storyAsk1Title => 'በራስዎ ቃላት ይጠይቁ';
+
+  @override
+  String get storyAsk1Body => 'እንደ «በዚህ ዓመት ምን ያበቃል?» ያሉ ነገሮችን ይጠይቁ እና ከራስዎ መዝገቦች መልሶችን ያግኙ።';
+
+  @override
+  String get storyAsk2Title => 'ከመተየብ ይልቅ ይናገሩ';
+
+  @override
+  String get storyAsk2Body => 'ማይክሮፎኑን መታ ያድርጉ እና ይናገሩ። ቃላትዎ እየተናገሩ ሲሄዱ ይታያሉ፣ ወዲያውም መላክ ይችላሉ።';
+
+  @override
+  String get storyAsk3Title => 'እያንዳንዱን ለውጥ እርስዎ ያረጋግጣሉ';
+
+  @override
+  String get storyAsk3Body => 'መዝገብ እንዲታከል ወይም እንዲለወጥ ይጠይቁ፣ መጀመሪያ ካርድ ያያሉ። እስኪያረጋግጡ ድረስ ምንም አይቀመጥም።';
+
+  @override
+  String get storyAsk4Title => 'ማንኛውንም ለውጥ ይቀልብሱ';
+
+  @override
+  String get storyAsk4Body => 'ሐሳብዎን ቀይረዋል? እያንዳንዱ የተረጋገጠ ለውጥ ከዚያው ካርድ ሊቀለበስ ይችላል።';
+
+  @override
+  String get storyAsk5Title => 'ካቆሙበት ይቀጥሉ';
+
+  @override
+  String get storyAsk5Body => 'ውይይቶች በ«የውይይት ታሪክ» ውስጥ ለ90 ቀናት ይቀመጣሉ፣ የተጠቆሙ ጥያቄዎችም ለመጀመር ይረዱዎታል።';
+
+  @override
+  String get storyWallet1Title => 'መጀመሪያ ይዘጋጁ';
+
+  @override
+  String get storyWallet1Body => 'ካርድ ወይም ሰነድ ይክፈቱ እና የት እንደሚያስቀምጡት ይምረጡ፣ ለምሳሌ ቦርሳዎ ወይም ሻንጣዎ።';
+
+  @override
+  String get storyWallet2Title => 'የማገጃ ቁጥሩን ያስቀምጡ';
+
+  @override
+  String get storyWallet2Body => 'የእያንዳንዱን ባንክ የማገጃ ቁጥር አሁን ያክሉ። በካርዱ ላይ ነው፣ ሲፈልጉት ደግሞ ካርዱ አይኖርዎትም።';
+
+  @override
+  String get storyWallet3Title => 'ከጠፋ';
+
+  @override
+  String get storyWallet3Body => '«የኪስ ቦርሳዬ ጠፍቷል»ን ይክፈቱ እና «ጠፋ» ወይም «ተሰረቀ»ን መታ ያድርጉ። Vaultara በውስጡ የነበረውን ሁሉ ይዘረዝራል።';
+
+  @override
+  String get storyWallet4Title => 'ካርዶችን በደቂቃዎች ያግዱ';
+
+  @override
+  String get storyWallet4Body => 'እያንዳንዱን ባንክ በአንድ መታ ይደውሉ፣ ካርዶችን እንደታገዱ ምልክት ያድርጉ እና የሪፖርቱን ቁጥር ያስቀምጡ።';
+
+  @override
+  String get storyWallet5Title => 'ይተኩ እና ደህንነትዎን ይጠብቁ';
+
+  @override
+  String get storyWallet5Body => 'ሰነዶችዎን ይተኩ፣ ሲያስታውስዎት መግለጫዎችዎን ይፈትሹ እና ከተገኘ «አገኘሁት»ን መታ ያድርጉ።';
+
+  @override
+  String get storyLife1Title => 'ትልልቅ ጊዜያት፣ አንድ ዕቅድ';
+
+  @override
+  String get storyLife1Body => 'የቤት ለውጥ፣ ልጅ፣ አዲስ ሥራ ወይም ድንገተኛ ሁኔታ፦ በ«የሕይወት ክስተቶች» ውስጥ የሚሆነውን ይምረጡ።';
+
+  @override
+  String get storyLife2Title => 'መዝገቦችዎ በሥርዓት';
+
+  @override
+  String get storyLife2Body => 'ዕቅዱ የትኞቹን መዝገቦች ማዘመን፣ መሰረዝ ወይም ማደስ እንዳለብዎ እና የትኞቹን ማከል ሊያስፈልግዎ እንደሚችል ያሳያል።';
+
+  @override
+  String get storyLife3Title => 'ደረጃዎች እና ቀኖች';
+
+  @override
+  String get storyLife3Body => 'ደረጃዎች መዝገብ ያልሆነውን ይሸፍናሉ፣ የመጀመሪያ ቀኖችም ምንም እንዳይዘገይ መቼ ማመልከት እንዳለብዎ ይነግሩዎታል።';
+
+  @override
+  String get storyLife4Title => 'የራስዎ ያድርጉት';
+
+  @override
+  String get storyLife4Body => 'የራስዎን ደረጃዎች ያክሉ፣ ዕቅዱን እንደ PDF ያጋሩ እና በቀኑ አካባቢ አስታዋሾችን ያግኙ።';
+
+  @override
+  String get storyPhotos1Title => 'የሰነዶችዎ ፎቶዎች';
+
+  @override
+  String get storyPhotos1Body => 'ከመዝገቡ ውስጥ የካርድ ወይም የሰነድ የፊትና የኋላ ፎቶዎችን ያክሉ።';
+
+  @override
+  String get storyPhotos2Title => 'በስልክዎ ላይ የተመሰጠሩ';
+
+  @override
+  String get storyPhotos2Body => 'የፎቶ ምስጠራን ያብሩ፣ ፎቶዎቹም ከመሰቀላቸው በፊት በስልክዎ ላይ ይቆለፋሉ።';
+
+  @override
+  String get storyPhotos3Title => 'ሚስጥራዊ መዝገቦችን ይቆልፉ';
+
+  @override
+  String get storyPhotos3Body => 'መዝገብን ይቆልፉ፣ ከመከፈቱ በፊት የጣት አሻራ ወይም የማያ ቆልፍ ይጠይቃል።';
+
+  @override
+  String get storyPhotos4Title => 'መላውን መተግበሪያ ይቆልፉ';
+
+  @override
+  String get storyPhotos4Body => 'በደህንነት ቅንብሮች ውስጥ የመተግበሪያ መቆለፊያን ያብሩ እና መተግበሪያ ሲቀይሩ ይዘትን ይደብቁ።';
+
+  @override
+  String get storyShare1Title => 'አንድ መዝገብ ያጋሩ';
+
+  @override
+  String get storyShare1Body => 'መዝገብ ይክፈቱ እና ያንን መዝገብ ብቻ የሚያሳይ አገናኝ ያጋሩ፣ ሌላ ምንም።';
+
+  @override
+  String get storyShare2Title => 'የማስረጃ ጥቅል';
+
+  @override
+  String get storyShare2Body => 'የሚመርጧቸውን መዝገቦች ከፎቶዎቻቸው ጋር ለአከራይ፣ ለባንክ ወይም ለቢሮ በአንድ PDF ውስጥ ያስቀምጡ።';
+
+  @override
+  String get storyShare3Title => 'ቁጥጥሩን ይያዙ';
+
+  @override
+  String get storyShare3Body => '«የተጋሩ ሊንኮች» የፈጠሩትን እያንዳንዱን አገናኝ ያሳያል። ማንኛውንም በማንኛውም ጊዜ ያቁሙ፣ ከዚያ በኋላ አይከፈትም።';
+
+  @override
+  String get storyHousehold1Title => 'ቤተሰብዎን ይጋብዙ';
+
+  @override
+  String get storyHousehold1Body => 'የግብዣ ኮድ ወይም አገናኝ ያጋሩ። እያንዳንዱ ሰው በራሱ መለያ ይገባል።';
+
+  @override
+  String get storyHousehold2Title => 'አንድ የመዝገቦች ስብስብ';
+
+  @override
+  String get storyHousehold2Body => 'ሁሉም ተመሳሳይ የጋራ መዝገቦችን ያያሉ እና ተመሳሳይ አስታዋሾችን ያገኛሉ።';
+
+  @override
+  String get storyHousehold3Title => 'የማን ነው?';
+
+  @override
+  String get storyHousehold3Body => 'እያንዳንዱ መዝገብ የአንድ ሰው ሊሆን ይችላል። ስማቸው በመዝገቡ እና በአስታዋሾቹ ላይ ይታያል።';
+
+  @override
+  String get storyImport1Title => 'ካርድ ይቃኙ';
+
+  @override
+  String get storyImport1Body => 'የካርድ ወይም የሰነድ ፎቶ ያንሱ፣ Vaultara ስሙን እና የማብቂያ ቀኑን ይሞላልዎታል።';
+
+  @override
+  String get storyImport2Title => 'ዝርዝር ያስመጡ';
+
+  @override
+  String get storyImport2Body => 'ቀድሞውኑ የተመን ሉህ አለዎት? ያስመጡት እና ምንም ከመቀመጡ በፊት እያንዳንዱን ረድፍ ይፈትሹ።';
+
+  @override
+  String get storyImport3Title => 'ወደ Vaultara ያጋሩ';
+
+  @override
+  String get storyImport3Body => 'አዲስ መዝገብ ለመጀመር ፎቶ፣ PDF ወይም ጽሑፍ ከሌላ መተግበሪያ ወደ Vaultara ያጋሩ።';
+
+  @override
+  String get storyCosts1Title => 'በቀን መቁጠሪያዎ ውስጥ';
+
+  @override
+  String get storyCosts1Body => 'የማብቂያ ቀኖችን ከሌሎች ዕቅዶችዎ አጠገብ ወደ ስልክዎ ቀን መቁጠሪያ ያክሉ።';
+
+  @override
+  String get storyCosts2Title => 'የእድሳት ወጪ';
+
+  @override
+  String get storyCosts2Body => 'በመዝገብ ላይ የእድሳት ወጪን ያስገቡ፣ Vaultara በዓመት ምን ያህል እንደሚያወጡ ያሳያል።';
+
+  @override
+  String get storyCosts3Title => 'አስቀድመው ያቅዱ';
+
+  @override
+  String get storyCosts3Body => 'ውድ ወራት ሲመጡ አስቀድመው ይመልከቱ፣ ትልቅ እድሳት በጭራሽ እንዳያስደንቅዎ።';
+
+  @override
+  String get storyBusiness1Title => 'ቡድንዎን ይከታተሉ';
+
+  @override
+  String get storyBusiness1Body => 'ሠራተኞችን ያክሉ እና ሰርተፊኬቶቻቸውን፣ ፈቃዶቻቸውን እና ፍቃዶቻቸውን በአንድ ቦታ ያስቀምጡ።';
+
+  @override
+  String get storyBusiness2Title => 'የኢሜይል አስታዋሾች';
+
+  @override
+  String get storyBusiness2Body => 'ሠራተኞች ሰነዶቻቸው ከማብቃታቸው በፊት ኢሜይል ያገኛሉ፣ ያለ መተግበሪያውም እንኳ።';
+
+  @override
+  String get storyBusiness3Title => 'ወርሃዊ ሪፖርት';
+
+  @override
+  String get storyBusiness3Body => 'በየወሩ ሪፖርት ምን ተቀባይነት እንዳለው፣ ምን እያበቃ እንደሆነ እና ምን እንደጎደለ ያሳያል።';
+
+  @override
+  String get storyBusiness4Title => 'ዝማኔ ይጠይቁ';
+
+  @override
+  String get storyBusiness4Body => 'አገናኝ ይላኩ፣ ሠራተኛው የታደሰውን ሰነድ ራሱ ይሰቅላል።';
 }

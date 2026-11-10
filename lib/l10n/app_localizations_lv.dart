@@ -7560,4 +7560,439 @@ class AppLocalizationsLv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Tavs sākuma ekrāns';
+
+  @override
+  String get tutorialsSubHome => 'Ko nozīmē kartītes un kur viss atrodas';
+
+  @override
+  String get tutorialsTitleRenew => 'Ieraksta atjaunošana';
+
+  @override
+  String get tutorialsSubRenew => 'Ko darīt, kad pienāk atgādinājums';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendārs un izmaksas';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Derīguma termiņi kalendārā un atjaunošanas izmaksas';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotoattēli un drošība';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentu fotoattēli, šifrēšana un bloķēšana';
+
+  @override
+  String get tutorialsTitleSharing => 'Droša kopīgošana';
+
+  @override
+  String get tutorialsSubSharing => 'Kopīgot ierakstu, izveidot paketi, apturēt saiti';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skenēšana un importēšana';
+
+  @override
+  String get tutorialsSubImportScan => 'Ātri pievienot daudz ierakstu';
+
+  @override
+  String get tutorialsTitleHousehold => 'Kopīga mājsaimniecība';
+
+  @override
+  String get tutorialsSubHousehold => 'Uzaiciniet citus kopīgot ierakstus un atgādinājumus';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Pazaudēju maku';
+
+  @override
+  String get tutorialsSubLostWallet => 'Sagatavojies tagad un rīkojies ātri, ja tas pazūd';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Dzīves notikumi';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plāns pārcelšanās, bērna, jauna darba un citām reizēm';
+
+  @override
+  String get tutorialsTitleAsk => 'Jautāt Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Raksti vai runā ar saviem ierakstiem';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business rīki';
+
+  @override
+  String get tutorialsSubBusiness => 'Darbinieku dokumenti, atgādinājumi un pārskati';
+
+  @override
+  String get tutorialsGroupBasics => 'Pamati';
+
+  @override
+  String get tutorialsGroupOnTop => 'Visu kontrolēt';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Ceļojumi un ģimene';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Dzīves notikumi un ārkārtas situācijas';
+
+  @override
+  String get tutorialsGroupPaid => 'Maksas funkcijas';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count soļi',
+      one: '$count solis',
+      zero: '$count soļu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Maksas plāni';
+
+  @override
+  String get tutorialsPaidNote => 'To var apskatīt ar jebkuru plānu. Pašai funkcijai vajadzīgs maksas plāns.';
+
+  @override
+  String get tutorialsBack => 'Atpakaļ';
+
+  @override
+  String get tutorialsTryIt => 'Izmēģināt';
+
+  @override
+  String get tutorialHintText => 'Esi šeit jauns? Apskati īso ekskursiju';
+
+  @override
+  String get tutorialHintPlay => 'Parādīt';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$number. nodaļa no $total';
+  }
+
+  @override
+  String get tourContinue => 'Turpināt';
+
+  @override
+  String get tourSkip => 'Izlaist';
+
+  @override
+  String get tourSkipped => 'Izlaists';
+
+  @override
+  String get tourDone => 'Tu redzēji visu ekskursiju';
+
+  @override
+  String get tourRestart => 'Sākt no jauna';
+
+  @override
+  String get whatsNewBadge => 'Jaunums';
+
+  @override
+  String get whatsNewTitle => 'Pazaudēju maku';
+
+  @override
+  String get whatsNewBody => 'Saglabā, kur glabā kartes, un katras bankas bloķēšanas numuru. Ja pazaudēsi maku, visu nobloķēsi dažās minūtēs.';
+
+  @override
+  String get whatsNewDismiss => 'Skaidrs';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Vairāk informācijas ietver papildu lietas: piezīmes, atkārtošanu, atjaunošanas laiku, kam ieraksts pieder, kur to glabā, bloķēšanu un fotoattēlus. Atver to tikai tad, kad vajag.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Bloķē ierakstu, lai pirms parādīšanas tas prasītu pirksta nospiedumu vai ekrāna bloķēšanu. Izvēlies, kur to glabā, piemēram, makā, un pievieno dokumenta fotoattēlus.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Pazaudēji maku? Apskati visu, kas tajā bija, piezvani katrai bankai ar vienu pieskārienu un izpildi pārējos soļus.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Pārcelšanās, bērns, jauns darbs vai ārkārtas situācija? Dzīves notikumi dod plānu ar taviem ierakstiem, soļiem un datumiem.';
+
+  @override
+  String get storySampleQuestion => 'Kam šogad beidzas termiņš?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Tavam $name termiņš beidzas martā. Vai vēlies atgādinājumu mēnesi iepriekš?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name termiņš beidzas pēc 30 dienām. Pieskaries, lai atjaunotu.';
+  }
+
+  @override
+  String get storySampleGym => 'Sporta zāles abonements';
+
+  @override
+  String get storySampleFirstAid => 'Pirmās palīdzības sertifikāts';
+
+  @override
+  String get storySampleEncrypt => 'Šifrēt fotoattēlus';
+
+  @override
+  String get storySampleAppLock => 'Lietotnes bloķēšana';
+
+  @override
+  String get storySampleHideApp => 'Slēpt saturu lietotņu pārslēdzējā';
+
+  @override
+  String get storyHome1Title => 'Tava diena vienā skatienā';
+
+  @override
+  String get storyHome1Body => 'Sākuma ekrāns rāda, kas šodien ir svarīgs: kam drīz beidzas termiņš un cik ierakstu tev ir.';
+
+  @override
+  String get storyHome2Title => 'Atrodi visu';
+
+  @override
+  String get storyHome2Body => 'Pieskaries meklēšanai, lai atrastu ierakstu pēc nosaukuma, grupas vai personas.';
+
+  @override
+  String get storyHome3Title => 'Ceļojumi un plāni';
+
+  @override
+  String get storyHome3Body => 'Šeit redzami plānotie ceļojumi un notiekošie dzīves notikumu plāni ar to, kas vēl jāizdara.';
+
+  @override
+  String get storyHome4Title => 'Palīdzība ar vienu pieskārienu';
+
+  @override
+  String get storyHome4Body => 'Dzirksteles poga atver “Jautāt Vaultara”. Tavs foto atver profilu, iestatījumus un pamācības.';
+
+  @override
+  String get storyRenew1Title => 'Pienāk atgādinājums';
+
+  @override
+  String get storyRenew1Body => 'Pirms ieraksta termiņš beidzas, Vaultara tev atgādina. Pieskaries atgādinājumam, lai atvērtu ierakstu.';
+
+  @override
+  String get storyRenew2Title => 'Saglabā jauno datumu';
+
+  @override
+  String get storyRenew2Body => 'Atjaunoji? Pieskaries “Atjaunot” un ievadi jauno derīguma termiņu. Atgādinājumi pārvietojas līdzi.';
+
+  @override
+  String get storyRenew3Title => 'Nezini, kā?';
+
+  @override
+  String get storyRenew3Body => 'Daudziem ierakstiem ir ceļvedis ar soļiem, dokumentiem un parasto cenu.';
+
+  @override
+  String get storyRenew4Title => 'Lai atkārtojas';
+
+  @override
+  String get storyRenew4Body => 'Abonementiem un gada maksājumiem ieslēdz atkārtošanu, un datums pārbīdīsies pats.';
+
+  @override
+  String get storyAsk1Title => 'Jautā saviem vārdiem';
+
+  @override
+  String get storyAsk1Body => 'Jautā, piemēram, “Kam šogad beidzas termiņš?” un saņem atbildes no saviem ierakstiem.';
+
+  @override
+  String get storyAsk2Title => 'Runā, nevis raksti';
+
+  @override
+  String get storyAsk2Body => 'Pieskaries mikrofonam un runā. Vārdi parādās runājot, un vari uzreiz sūtīt.';
+
+  @override
+  String get storyAsk3Title => 'Katras izmaiņas apstiprini tu';
+
+  @override
+  String get storyAsk3Body => 'Palūdz pievienot vai mainīt ierakstu, un vispirms redzēsi kartīti. Nekas netiek saglabāts, kamēr neapstiprini.';
+
+  @override
+  String get storyAsk4Title => 'Atsauc jebkuras izmaiņas';
+
+  @override
+  String get storyAsk4Body => 'Pārdomāji? Katras apstiprinātās izmaiņas var atsaukt no tās pašas kartītes.';
+
+  @override
+  String get storyAsk5Title => 'Turpini, kur pārtrauci';
+
+  @override
+  String get storyAsk5Body => 'Sarunas glabājas 90 dienas sadaļā “Sarunu vēsture”, un ieteiktie jautājumi palīdz sākt.';
+
+  @override
+  String get storyWallet1Title => 'Vispirms sagatavojies';
+
+  @override
+  String get storyWallet1Body => 'Atver karti vai dokumentu un izvēlies, kur to glabā, piemēram, makā vai somā.';
+
+  @override
+  String get storyWallet2Title => 'Saglabā bloķēšanas numuru';
+
+  @override
+  String get storyWallet2Body => 'Pievieno katras bankas bloķēšanas numuru tagad. Tas ir uz kartes, kuras tev nebūs, kad to vajadzēs.';
+
+  @override
+  String get storyWallet3Title => 'Ja tas pazūd';
+
+  @override
+  String get storyWallet3Body => 'Atver “Pazaudēju maku” un pieskaries “Pazaudēts” vai “Nozagts”. Vaultara uzskaita visu, kas tajā bija.';
+
+  @override
+  String get storyWallet4Title => 'Bloķē kartes minūtēs';
+
+  @override
+  String get storyWallet4Body => 'Zvani katrai bankai ar vienu pieskārienu, atzīmē kartes kā bloķētas un saglabā iesnieguma numuru.';
+
+  @override
+  String get storyWallet5Title => 'Aizstāj un esi drošībā';
+
+  @override
+  String get storyWallet5Body => 'Aizstāj dokumentus, pārbaudi izrakstus, kad atgādinām, un pieskaries “Es to atradu”, ja tas atrodas.';
+
+  @override
+  String get storyLife1Title => 'Lieli brīži, viens plāns';
+
+  @override
+  String get storyLife1Body => 'Pārcelšanās, bērns, jauns darbs vai ārkārtas situācija: sadaļā “Dzīves notikumi” izvēlies, kas notiek.';
+
+  @override
+  String get storyLife2Title => 'Tavi ieraksti kārtībā';
+
+  @override
+  String get storyLife2Body => 'Plāns rāda, kurus ierakstus atjaunināt, atcelt vai pagarināt un kurus, iespējams, pievienot.';
+
+  @override
+  String get storyLife3Title => 'Soļi un datumi';
+
+  @override
+  String get storyLife3Body => 'Soļi aptver to, kas nav ieraksts, un sākuma datumi pasaka, kad pieteikties, lai nekas nenokavētos.';
+
+  @override
+  String get storyLife4Title => 'Padari to savu';
+
+  @override
+  String get storyLife4Body => 'Pievieno savus soļus, kopīgo plānu kā PDF un saņem atgādinājumus ap datumu.';
+
+  @override
+  String get storyPhotos1Title => 'Tavu dokumentu fotoattēli';
+
+  @override
+  String get storyPhotos1Body => 'Ierakstā pievieno kartes vai dokumenta priekšpuses un aizmugures fotoattēlus.';
+
+  @override
+  String get storyPhotos2Title => 'Šifrēti tālrunī';
+
+  @override
+  String get storyPhotos2Body => 'Ieslēdz fotoattēlu šifrēšanu, un tie tiek bloķēti tālrunī pirms augšupielādes.';
+
+  @override
+  String get storyPhotos3Title => 'Bloķē sensitīvus ierakstus';
+
+  @override
+  String get storyPhotos3Body => 'Bloķē ierakstu, un pirms atvēršanas tas prasīs pirksta nospiedumu vai ekrāna bloķēšanu.';
+
+  @override
+  String get storyPhotos4Title => 'Bloķē visu lietotni';
+
+  @override
+  String get storyPhotos4Body => 'Drošības iestatījumos ieslēdz lietotnes bloķēšanu un paslēp saturu, pārslēdzot lietotnes.';
+
+  @override
+  String get storyShare1Title => 'Kopīgo vienu ierakstu';
+
+  @override
+  String get storyShare1Body => 'Atver ierakstu un kopīgo saiti, kas rāda tikai šo ierakstu un neko citu.';
+
+  @override
+  String get storyShare2Title => 'Pierādījumu komplekts';
+
+  @override
+  String get storyShare2Body => 'Saliec izvēlētos ierakstus ar fotoattēliem vienā PDF izīrētājam, bankai vai iestādei.';
+
+  @override
+  String get storyShare3Title => 'Kontrole ir tavās rokās';
+
+  @override
+  String get storyShare3Body => '“Kopīgotās saites” rāda katru izveidoto saiti. Aptur jebkuru jebkurā laikā, un tā vairs neatvērsies.';
+
+  @override
+  String get storyHousehold1Title => 'Uzaicini savu mājsaimniecību';
+
+  @override
+  String get storyHousehold1Body => 'Kopīgo ielūguma kodu vai saiti. Katrs piesakās ar savu kontu.';
+
+  @override
+  String get storyHousehold2Title => 'Viens ierakstu kopums';
+
+  @override
+  String get storyHousehold2Body => 'Visi redz vienus un tos pašus kopīgos ierakstus un saņem tos pašus atgādinājumus.';
+
+  @override
+  String get storyHousehold3Title => 'Kam tas pieder?';
+
+  @override
+  String get storyHousehold3Body => 'Katrs ieraksts var piederēt kādam. Vārds redzams ierakstā un atgādinājumos.';
+
+  @override
+  String get storyImport1Title => 'Skenē karti';
+
+  @override
+  String get storyImport1Body => 'Nofotografē karti vai dokumentu, un Vaultara aizpildīs nosaukumu un derīguma termiņu tavā vietā.';
+
+  @override
+  String get storyImport2Title => 'Importē sarakstu';
+
+  @override
+  String get storyImport2Body => 'Tev jau ir izklājlapa? Importē to un pārbaudi katru rindu pirms saglabāšanas.';
+
+  @override
+  String get storyImport3Title => 'Kopīgo uz Vaultara';
+
+  @override
+  String get storyImport3Body => 'Kopīgo foto, PDF vai tekstu no citas lietotnes uz Vaultara, lai sāktu jaunu ierakstu.';
+
+  @override
+  String get storyCosts1Title => 'Tavā kalendārā';
+
+  @override
+  String get storyCosts1Body => 'Pievieno derīguma termiņus tālruņa kalendāram blakus citiem plāniem.';
+
+  @override
+  String get storyCosts2Title => 'Cik maksā atjaunošana';
+
+  @override
+  String get storyCosts2Body => 'Ievadi ierakstā atjaunošanas cenu, un Vaultara parāda, cik tu tērē gadā.';
+
+  @override
+  String get storyCosts3Title => 'Plāno laikus';
+
+  @override
+  String get storyCosts3Body => 'Redzi dārgos mēnešus jau iepriekš, lai liela atjaunošana tevi nekad nepārsteigtu.';
+
+  @override
+  String get storyBusiness1Title => 'Seko savai komandai';
+
+  @override
+  String get storyBusiness1Body => 'Pievieno darbiniekus un glabā viņu sertifikātus, atļaujas un licences vienuviet.';
+
+  @override
+  String get storyBusiness2Title => 'Atgādinājumi e-pastā';
+
+  @override
+  String get storyBusiness2Body => 'Darbinieki saņem e-pastu pirms dokumentu termiņa beigām, pat bez lietotnes.';
+
+  @override
+  String get storyBusiness3Title => 'Mēneša pārskats';
+
+  @override
+  String get storyBusiness3Body => 'Katru mēnesi pārskats parāda, kas ir derīgs, kam beidzas termiņš un kā trūkst.';
+
+  @override
+  String get storyBusiness4Title => 'Pieprasi atjauninājumu';
+
+  @override
+  String get storyBusiness4Body => 'Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu.';
 }

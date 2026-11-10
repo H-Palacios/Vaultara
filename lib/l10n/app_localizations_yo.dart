@@ -7441,4 +7441,437 @@ class AppLocalizationsYo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Iboju ile rẹ';
+
+  @override
+  String get tutorialsSubHome => 'Ohun ti awọn kaadi tumọ si ati ibi ti ohun gbogbo wa';
+
+  @override
+  String get tutorialsTitleRenew => 'Sọ igbasilẹ di tuntun';
+
+  @override
+  String get tutorialsSubRenew => 'Ohun ti o le ṣe nigbati iranti ba de';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalẹnda ati iye owo';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Awọn ọjọ ipari ninu kalẹnda rẹ ati iye ti isọdọtun n na';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Awọn fọto ati aabo';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Awọn fọto iwe, fifi koodu pamọ ati titiipa';
+
+  @override
+  String get tutorialsTitleSharing => 'Pin lailewu';
+
+  @override
+  String get tutorialsSubSharing => 'Pin igbasilẹ kan, ṣe idii kan, da ọna asopọ duro';
+
+  @override
+  String get tutorialsTitleImportScan => 'Ṣayẹwo ati gbe wọle';
+
+  @override
+  String get tutorialsSubImportScan => 'Ṣafikun ọpọlọpọ igbasilẹ ni kiakia';
+
+  @override
+  String get tutorialsTitleHousehold => 'Ile ti a pin';
+
+  @override
+  String get tutorialsSubHousehold => 'Pe awọn miiran lati pin awọn igbasilẹ ati awọn iranti';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Mo pàdánù àpamọ́wọ́ mi';
+
+  @override
+  String get tutorialsSubLostWallet => 'Mura silẹ bayi, ṣe ni kiakia ti o ba sọnu';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Àwọn ìṣẹ̀lẹ̀ ayé';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Eto fun gbigbe ile, ọmọ, iṣẹ tuntun ati diẹ sii';
+
+  @override
+  String get tutorialsTitleAsk => 'Béèrè Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Iwiregbe tabi sọrọ pẹlu awọn igbasilẹ rẹ';
+
+  @override
+  String get tutorialsTitleBusiness => 'Awọn irinṣẹ Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Awọn iwe oṣiṣẹ, awọn iranti ati awọn ijabọ';
+
+  @override
+  String get tutorialsGroupBasics => 'Awọn ipilẹ';
+
+  @override
+  String get tutorialsGroupOnTop => 'Mimọ ohun gbogbo';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Irin-ajo ati ẹbi';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Awọn iṣẹlẹ igbesi aye ati pajawiri';
+
+  @override
+  String get tutorialsGroupPaid => 'Awọn ẹya ti a sanwo fun';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Igbesẹ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Awọn eto ti a sanwo fun';
+
+  @override
+  String get tutorialsPaidNote => 'O le wo eyi pẹlu eto eyikeyi. Ẹya naa funrararẹ nilo eto ti a sanwo fun.';
+
+  @override
+  String get tutorialsBack => 'Pada';
+
+  @override
+  String get tutorialsTryIt => 'Gbiyanju bayi';
+
+  @override
+  String get tutorialHintText => 'Ṣe o jẹ tuntun nibi? Wo irin-ajo kukuru naa';
+
+  @override
+  String get tutorialHintPlay => 'Fi han mi';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Ori $number ninu $total';
+  }
+
+  @override
+  String get tourContinue => 'Tẹsiwaju';
+
+  @override
+  String get tourSkip => 'Fo';
+
+  @override
+  String get tourSkipped => 'Ti fo';
+
+  @override
+  String get tourDone => 'O ti ri gbogbo irin-ajo naa';
+
+  @override
+  String get tourRestart => 'Bẹrẹ lẹẹkansi';
+
+  @override
+  String get whatsNewBadge => 'Tuntun';
+
+  @override
+  String get whatsNewTitle => 'Mo pàdánù àpamọ́wọ́ mi';
+
+  @override
+  String get whatsNewBody => 'Fi ibi ti o tọju awọn kaadi rẹ pamọ ati nọmba idinamọ ti banki kọọkan. Ti apamọwọ rẹ ba sọnu, o dina ohun gbogbo ni iṣẹju diẹ.';
+
+  @override
+  String get whatsNewDismiss => 'O ye mi';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Awọn alaye diẹ sii ni awọn afikun: awọn akọsilẹ, atunṣe, akoko isọdọtun, ti tani o jẹ, ibi ti o tọju rẹ, titiipa ati awọn fọto. Ṣi i nikan nigbati o ba nilo rẹ.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Tii igbasilẹ kan ki o beere fun itẹka tabi titiipa iboju ṣaaju ki o to han. Yan ibi ti o tọju rẹ, bii apamọwọ rẹ, ki o ṣafikun awọn fọto iwe naa.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Apamọwọ sọnu? Wo ohun gbogbo ti o wa ninu rẹ, pe banki kọọkan pẹlu fifọwọkan kan ki o tẹle awọn igbesẹ fun iyoku.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Gbigbe ile, ọmọ, iṣẹ tuntun tabi pajawiri? Awọn iṣẹlẹ igbesi aye fun ọ ni eto pẹlu awọn igbasilẹ, igbesẹ ati ọjọ rẹ.';
+
+  @override
+  String get storySampleQuestion => 'Kini o pari ni ọdun yii?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name rẹ pari ni Oṣu Kẹta. Ṣe o fẹ iranti kan oṣu kan ṣaaju?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name pari ni ọjọ 30. Tẹ lati sọ di tuntun.';
+  }
+
+  @override
+  String get storySampleGym => 'Ẹgbẹ ile-idaraya';
+
+  @override
+  String get storySampleFirstAid => 'Iwe-ẹri iranlọwọ akọkọ';
+
+  @override
+  String get storySampleEncrypt => 'Fi koodu pamọ awọn fọto';
+
+  @override
+  String get storySampleAppLock => 'Titiipa app';
+
+  @override
+  String get storySampleHideApp => 'Fi akoonu pamọ ninu oluyipada app';
+
+  @override
+  String get storyHome1Title => 'Ọjọ rẹ ni iwo kan';
+
+  @override
+  String get storyHome1Body => 'Iboju ile fihan ohun ti o ṣe pataki loni: ohun ti yoo pari laipẹ ati iye igbasilẹ ti o ni.';
+
+  @override
+  String get storyHome2Title => 'Wa ohunkohun';
+
+  @override
+  String get storyHome2Body => 'Tẹ wiwa lati wa igbasilẹ nipasẹ orukọ, ẹgbẹ tabi eniyan.';
+
+  @override
+  String get storyHome3Title => 'Awọn irin-ajo ati awọn eto';
+
+  @override
+  String get storyHome3Body => 'Awọn irin-ajo ti o n gbero ati awọn eto iṣẹlẹ igbesi aye ti n lọ lọwọ han nibi, pẹlu ohun ti o ku.';
+
+  @override
+  String get storyHome4Title => 'Iranlọwọ ni fifọwọkan kan';
+
+  @override
+  String get storyHome4Body => 'Bọtini itanna ṣi «Béèrè Vaultara». Fọto rẹ ṣi profaili, awọn eto ati awọn ikẹkọ rẹ.';
+
+  @override
+  String get storyRenew1Title => 'Iranti kan de';
+
+  @override
+  String get storyRenew1Body => 'Ṣaaju ki igbasilẹ kan to pari, Vaultara leti rẹ. Tẹ iranti naa lati ṣi igbasilẹ naa.';
+
+  @override
+  String get storyRenew2Title => 'Fi ọjọ tuntun pamọ';
+
+  @override
+  String get storyRenew2Body => 'Ti sọ di tuntun? Tẹ «Sọ di tuntun» ki o tẹ ọjọ ipari tuntun sii. Awọn iranti rẹ yoo gbe pẹlu rẹ.';
+
+  @override
+  String get storyRenew3Title => 'Ko daju bawo?';
+
+  @override
+  String get storyRenew3Body => 'Ọpọlọpọ igbasilẹ ni itọsọna pẹlu awọn igbesẹ, awọn iwe ati iye owo ti o wọpọ.';
+
+  @override
+  String get storyRenew4Title => 'Jẹ ki o tun ṣe';
+
+  @override
+  String get storyRenew4Body => 'Fun awọn ṣiṣe alabapin ati awọn sisanwo ọdọọdun, tan atunṣe ati pe ọjọ yoo gbe siwaju funrararẹ.';
+
+  @override
+  String get storyAsk1Title => 'Beere ni awọn ọrọ tirẹ';
+
+  @override
+  String get storyAsk1Body => 'Beere awọn nkan bii «Kini o pari ni ọdun yii?» ki o gba awọn idahun lati awọn igbasilẹ rẹ.';
+
+  @override
+  String get storyAsk2Title => 'Sọrọ dipo titẹ';
+
+  @override
+  String get storyAsk2Body => 'Tẹ gbohungbohun ki o sọrọ. Awọn ọrọ rẹ han bi o ṣe n sọrọ ati pe o le firanṣẹ lẹsẹkẹsẹ.';
+
+  @override
+  String get storyAsk3Title => 'Iwọ ni o jẹrisi gbogbo iyipada';
+
+  @override
+  String get storyAsk3Body => 'Beere lati ṣafikun tabi yi igbasilẹ pada ati pe iwọ yoo kọkọ ri kaadi kan. Ko si ohun ti a fi pamọ titi iwọ o fi jẹrisi.';
+
+  @override
+  String get storyAsk4Title => 'Mu iyipada eyikeyi pada';
+
+  @override
+  String get storyAsk4Body => 'Ṣe o yi ọkan pada? Iyipada kọọkan ti a jẹrisi le ṣee mu pada lati kaadi kanna.';
+
+  @override
+  String get storyAsk5Title => 'Tẹsiwaju lati ibi ti o duro';
+
+  @override
+  String get storyAsk5Body => 'A tọju awọn iwiregbe fun ọjọ 90 ninu «Ìtàn ìbánisọ̀rọ̀», ati pe awọn ibeere ti a daba ṣe iranlọwọ fun ọ lati bẹrẹ.';
+
+  @override
+  String get storyWallet1Title => 'Mura silẹ ni akọkọ';
+
+  @override
+  String get storyWallet1Body => 'Ṣi kaadi tabi iwe kan ki o yan ibi ti o tọju rẹ, bii apamọwọ tabi apo rẹ.';
+
+  @override
+  String get storyWallet2Title => 'Fi nọmba idinamọ pamọ';
+
+  @override
+  String get storyWallet2Body => 'Ṣafikun nọmba idinamọ ti banki kọọkan bayi. O wa lori kaadi naa, eyiti iwọ kii yoo ni nigbati o ba nilo rẹ.';
+
+  @override
+  String get storyWallet3Title => 'Ti o ba sọnu';
+
+  @override
+  String get storyWallet3Body => 'Ṣi «Mo pàdánù àpamọ́wọ́ mi» ki o tẹ «Ó sọnù» tabi «Wọ́n jí i». Vaultara ṣe atokọ ohun gbogbo ti o wa ninu rẹ.';
+
+  @override
+  String get storyWallet4Title => 'Dina awọn kaadi ni iṣẹju';
+
+  @override
+  String get storyWallet4Body => 'Pe banki kọọkan pẹlu fifọwọkan kan, samisi awọn kaadi bi a ti dina ki o fi nọmba ijabọ pamọ.';
+
+  @override
+  String get storyWallet5Title => 'Rọpo ki o wa lailewu';
+
+  @override
+  String get storyWallet5Body => 'Rọpo awọn iwe rẹ, ṣayẹwo awọn alaye akọọlẹ nigbati a ba leti rẹ ki o tẹ «Mo ti rí i» ti o ba ri i.';
+
+  @override
+  String get storyLife1Title => 'Awọn akoko nla, eto kan';
+
+  @override
+  String get storyLife1Body => 'Gbigbe ile, ọmọ, iṣẹ tuntun tabi pajawiri: yan ninu «Àwọn ìṣẹ̀lẹ̀ ayé» ohun ti n ṣẹlẹ.';
+
+  @override
+  String get storyLife2Title => 'Awọn igbasilẹ rẹ, ti ṣeto';
+
+  @override
+  String get storyLife2Body => 'Eto naa fihan iru awọn igbasilẹ lati ṣe imudojuiwọn, fagile tabi sọ di tuntun, ati awọn ti o le nilo lati ṣafikun.';
+
+  @override
+  String get storyLife3Title => 'Awọn igbesẹ ati awọn ọjọ';
+
+  @override
+  String get storyLife3Body => 'Awọn igbesẹ bo ohun ti kii ṣe igbasilẹ, ati pe awọn ọjọ ibẹrẹ sọ fun ọ igba lati beere ki ohunkohun ma ba pẹ.';
+
+  @override
+  String get storyLife4Title => 'Ṣe e ni tirẹ';
+
+  @override
+  String get storyLife4Body => 'Ṣafikun awọn igbesẹ tirẹ, pin eto naa bi PDF ki o gba awọn iranti ni ayika ọjọ naa.';
+
+  @override
+  String get storyPhotos1Title => 'Awọn fọto ti awọn iwe rẹ';
+
+  @override
+  String get storyPhotos1Body => 'Lati inu igbasilẹ, ṣafikun awọn fọto iwaju ati ẹhin kaadi tabi iwe.';
+
+  @override
+  String get storyPhotos2Title => 'Ti fi koodu pamọ lori foonu rẹ';
+
+  @override
+  String get storyPhotos2Body => 'Tan fifi koodu pamọ fọto ati pe a tii wọn lori foonu rẹ ṣaaju ki a to gbe wọn soke.';
+
+  @override
+  String get storyPhotos3Title => 'Tii awọn igbasilẹ ifura';
+
+  @override
+  String get storyPhotos3Body => 'Tii igbasilẹ kan ati pe yoo beere fun itẹka tabi titiipa iboju ṣaaju ki o to ṣii.';
+
+  @override
+  String get storyPhotos4Title => 'Tii gbogbo app naa';
+
+  @override
+  String get storyPhotos4Body => 'Ninu awọn eto aabo, tan titiipa app ki o fi akoonu pamọ nigbati o ba yi app pada.';
+
+  @override
+  String get storyShare1Title => 'Pin igbasilẹ kan';
+
+  @override
+  String get storyShare1Body => 'Ṣi igbasilẹ kan ki o pin ọna asopọ ti o fi igbasilẹ yẹn nikan han, ko si ohun miiran.';
+
+  @override
+  String get storyShare2Title => 'Àpò ẹ̀rí';
+
+  @override
+  String get storyShare2Body => 'Fi awọn igbasilẹ ti o yan, pẹlu awọn fọto wọn, sinu PDF kan fun onile, banki tabi ọfiisi.';
+
+  @override
+  String get storyShare3Title => 'Ṣe akoso';
+
+  @override
+  String get storyShare3Body => '«Àwọn ọ̀nà asopọ̀ tí a pín» fihan gbogbo ọna asopọ ti o ṣe. Da eyikeyi duro nigbakugba ati pe kii yoo ṣii mọ.';
+
+  @override
+  String get storyHousehold1Title => 'Pe ile rẹ';
+
+  @override
+  String get storyHousehold1Body => 'Pin koodu ifiwepe tabi ọna asopọ. Eniyan kọọkan wọle pẹlu akọọlẹ tirẹ.';
+
+  @override
+  String get storyHousehold2Title => 'Eto igbasilẹ kan';
+
+  @override
+  String get storyHousehold2Body => 'Gbogbo eniyan ri awọn igbasilẹ ti a pin kanna ati gba awọn iranti kanna.';
+
+  @override
+  String get storyHousehold3Title => 'Ti tani?';
+
+  @override
+  String get storyHousehold3Body => 'Igbasilẹ kọọkan le jẹ ti ẹnikan. Orukọ wọn han lori rẹ ati ninu awọn iranti rẹ.';
+
+  @override
+  String get storyImport1Title => 'Ṣayẹwo kaadi kan';
+
+  @override
+  String get storyImport1Body => 'Ya fọto kaadi tabi iwe kan ati pe Vaultara yoo kun orukọ ati ọjọ ipari fun ọ.';
+
+  @override
+  String get storyImport2Title => 'Gbe atokọ wọle';
+
+  @override
+  String get storyImport2Body => 'Ṣe o ti ni iwe kaunti tẹlẹ? Gbe e wọle ki o ṣayẹwo ila kọọkan ṣaaju ki ohunkohun to fi pamọ.';
+
+  @override
+  String get storyImport3Title => 'Pin si Vaultara';
+
+  @override
+  String get storyImport3Body => 'Pin fọto, PDF tabi ọrọ lati app miiran si Vaultara lati bẹrẹ igbasilẹ tuntun.';
+
+  @override
+  String get storyCosts1Title => 'Ninu kalẹnda rẹ';
+
+  @override
+  String get storyCosts1Body => 'Ṣafikun awọn ọjọ ipari si kalẹnda foonu rẹ, lẹgbẹẹ awọn eto miiran rẹ.';
+
+  @override
+  String get storyCosts2Title => 'Iye ti isọdọtun n na';
+
+  @override
+  String get storyCosts2Body => 'Tẹ iye owo isọdọtun sii lori igbasilẹ kan ati pe Vaultara fihan iye ti o n na ni ọdun.';
+
+  @override
+  String get storyCosts3Title => 'Gbero siwaju';
+
+  @override
+  String get storyCosts3Body => 'Wo awọn oṣu ti o gbowolori ti n bọ ki isọdọtun nla ma ba ya ọ lẹnu rara.';
+
+  @override
+  String get storyBusiness1Title => 'Tẹle ẹgbẹ rẹ';
+
+  @override
+  String get storyBusiness1Body => 'Ṣafikun oṣiṣẹ ki o tọju awọn iwe-ẹri, awọn iyọọda ati awọn iwe-aṣẹ wọn ni aaye kan.';
+
+  @override
+  String get storyBusiness2Title => 'Awọn iranti imeeli';
+
+  @override
+  String get storyBusiness2Body => 'Oṣiṣẹ gba awọn imeeli ṣaaju ki awọn iwe wọn to pari, paapaa laisi app naa.';
+
+  @override
+  String get storyBusiness3Title => 'Ijabọ oṣooṣu';
+
+  @override
+  String get storyBusiness3Body => 'Ni oṣu kọọkan ijabọ kan fihan ohun ti o wulo, ohun ti n pari ati ohun ti o sonu.';
+
+  @override
+  String get storyBusiness4Title => 'Beere fun imudojuiwọn';
+
+  @override
+  String get storyBusiness4Body => 'Fi ọna asopọ ranṣẹ ati pe oṣiṣẹ yoo gbe iwe ti a sọ di tuntun soke funrararẹ.';
 }

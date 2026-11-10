@@ -12822,6 +12822,846 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 item listed below} other{{count} items listed below}}'**
   String lostWalletReportCount(int count);
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Home screen'**
+  String get tutorialsTitleHome;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'What the cards mean and where everything is'**
+  String get tutorialsSubHome;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewing a record'**
+  String get tutorialsTitleRenew;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'What to do when a reminder arrives'**
+  String get tutorialsSubRenew;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar and costs'**
+  String get tutorialsTitleCalendarCosts;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiry dates in your calendar and what renewals cost'**
+  String get tutorialsSubCalendarCosts;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos and security'**
+  String get tutorialsTitlePhotosSecurity;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Document photos, encryption and locks'**
+  String get tutorialsSubPhotosSecurity;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing safely'**
+  String get tutorialsTitleSharing;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a record, make a Proof pack, stop a link'**
+  String get tutorialsSubSharing;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan and import'**
+  String get tutorialsTitleImportScan;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Add many records quickly'**
+  String get tutorialsSubImportScan;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared household'**
+  String get tutorialsTitleHousehold;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite others to share records and reminders'**
+  String get tutorialsSubHousehold;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost my wallet'**
+  String get tutorialsTitleLostWallet;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Get ready now, act fast if it goes missing'**
+  String get tutorialsSubLostWallet;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Life events'**
+  String get tutorialsTitleLifeEvents;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'A plan for moving, a baby, a new job and more'**
+  String get tutorialsSubLifeEvents;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Vaultara'**
+  String get tutorialsTitleAsk;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat or talk to your records'**
+  String get tutorialsSubAsk;
+
+  /// Short title of a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Business tools'**
+  String get tutorialsTitleBusiness;
+
+  /// One line on what a tutorial covers.
+  ///
+  /// In en, this message translates to:
+  /// **'Staff records, reminders and reports'**
+  String get tutorialsSubBusiness;
+
+  /// Heading on the Tutorials screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Basics'**
+  String get tutorialsGroupBasics;
+
+  /// Heading on the Tutorials screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Staying on top'**
+  String get tutorialsGroupOnTop;
+
+  /// Heading on the Tutorials screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel and family'**
+  String get tutorialsGroupTravelFamily;
+
+  /// Heading on the Tutorials screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Life events and emergencies'**
+  String get tutorialsGroupEmergencies;
+
+  /// Heading on the Tutorials screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid features'**
+  String get tutorialsGroupPaid;
+
+  /// How long a tutorial is.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 step} other{{count} steps}}'**
+  String tutorialsSteps(int count);
+
+  /// Badge on a tutorial for a paid feature.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid plans'**
+  String get tutorialsPaidBadge;
+
+  /// Note at the end of a tutorial for a paid feature.
+  ///
+  /// In en, this message translates to:
+  /// **'You can watch this on any plan. Using the feature needs a paid plan.'**
+  String get tutorialsPaidNote;
+
+  /// Button that goes to the previous tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get tutorialsBack;
+
+  /// Button that opens the feature after a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Try it now'**
+  String get tutorialsTryIt;
+
+  /// Hint at the top of a screen.
+  ///
+  /// In en, this message translates to:
+  /// **'New here? Take the quick tour'**
+  String get tutorialHintText;
+
+  /// Button that plays a tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Show me'**
+  String get tutorialHintPlay;
+
+  /// Where the user is in the full tour.
+  ///
+  /// In en, this message translates to:
+  /// **'Chapter {number} of {total}'**
+  String tourChapter(int number, int total);
+
+  /// Button that plays the next chapter of the tour.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get tourContinue;
+
+  /// Button that skips a tour chapter.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get tourSkip;
+
+  /// A tour chapter the user skipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Skipped'**
+  String get tourSkipped;
+
+  /// Shown when every chapter is done.
+  ///
+  /// In en, this message translates to:
+  /// **'You have seen the whole tour'**
+  String get tourDone;
+
+  /// Button that restarts the tour.
+  ///
+  /// In en, this message translates to:
+  /// **'Start again'**
+  String get tourRestart;
+
+  /// Badge on the What's new card.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get whatsNewBadge;
+
+  /// Title of the What's new card.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost my wallet'**
+  String get whatsNewTitle;
+
+  /// Body of the What's new card.
+  ///
+  /// In en, this message translates to:
+  /// **'Save where you keep your cards and each bank\'s lost card number. If your wallet goes missing, block everything in minutes.'**
+  String get whatsNewBody;
+
+  /// Button that closes the What's new card.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get whatsNewDismiss;
+
+  /// Tip in a guided tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'More details holds the extras: notes, repeat, renewal time, whose record it is, where you keep it, lock and photos. Open it only when you need it.'**
+  String get tutorialAddRecordMoreDetails2;
+
+  /// Tip in a guided tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock a record to ask for your fingerprint or screen lock before showing it. Choose where you keep it, such as your wallet, and add photos of the document.'**
+  String get tutorialAddRecordProtect2;
+
+  /// Tip in a guided tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Lost your wallet? See everything you keep in it, call each bank with one tap and follow the steps to replace the rest.'**
+  String get tutorialSmartLostWallet2;
+
+  /// Tip in a guided tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'Moving, a new baby, a new job or an emergency? Life events gives you a plan with your records, steps and dates.'**
+  String get tutorialSmartLifeEvents2;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'What expires this year?'**
+  String get storySampleQuestion;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {name} expires in March. Want a reminder a month before?'**
+  String storySampleAnswer(String name);
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} expires in 30 days. Tap to renew.'**
+  String storySampleNotification(String name);
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'Gym membership'**
+  String get storySampleGym;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'First aid certificate'**
+  String get storySampleFirstAid;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'Encrypt photos'**
+  String get storySampleEncrypt;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'App lock'**
+  String get storySampleAppLock;
+
+  /// Sample text shown inside a tutorial illustration.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide content in the app switcher'**
+  String get storySampleHideApp;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Your day at a glance'**
+  String get storyHome1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Home shows what needs you today: anything expiring soon and how many records you keep.'**
+  String get storyHome1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Find anything'**
+  String get storyHome2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the search bar to find a record by its name, group or the person it belongs to.'**
+  String get storyHome2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Trips and plans'**
+  String get storyHome3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Trips you are planning and life event plans in progress show here, with what is left to do.'**
+  String get storyHome3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Help is one tap away'**
+  String get storyHome4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.'**
+  String get storyHome4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'A reminder arrives'**
+  String get storyRenew1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Before a record expires, Vaultara reminds you. Tap the reminder to open the record.'**
+  String get storyRenew1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the new date'**
+  String get storyRenew2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewed it? Tap Renew and enter the new expiry date. Your reminders move with it.'**
+  String get storyRenew2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sure how?'**
+  String get storyRenew3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Many records have a guide with the steps, documents and usual cost of renewing.'**
+  String get storyRenew3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Let it repeat'**
+  String get storyRenew4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'For subscriptions and yearly payments, turn on Repeat and the date moves forward by itself.'**
+  String get storyRenew4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask in your own words'**
+  String get storyAsk1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask things like “What expires this year?” and get answers from your own records.'**
+  String get storyAsk1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Talk instead of typing'**
+  String get storyAsk2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the microphone and speak. Your words appear as you talk, and you can send straight away.'**
+  String get storyAsk2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'You confirm every change'**
+  String get storyAsk3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.'**
+  String get storyAsk3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo any change'**
+  String get storyAsk4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Changed your mind? Every change you confirmed can be undone from the same card.'**
+  String get storyAsk4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick up where you left off'**
+  String get storyAsk5Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Chats are kept for 90 days in Chat history, and suggested questions help you get started.'**
+  String get storyAsk5Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Get ready first'**
+  String get storyWallet1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Open a card or document and choose where you keep it, such as your wallet or bag.'**
+  String get storyWallet1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the lost card number'**
+  String get storyWallet2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add each bank\'s lost card number now. It is printed on the card, which is gone when you need it.'**
+  String get storyWallet2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'If it goes missing'**
+  String get storyWallet3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Lost my wallet and tap Lost or Stolen. Vaultara lists everything that was inside.'**
+  String get storyWallet3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Block cards in minutes'**
+  String get storyWallet4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Call each bank with one tap, mark cards as blocked and keep the police case number.'**
+  String get storyWallet4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace and stay safe'**
+  String get storyWallet5Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace your documents, check your statements when reminded, and tap I found it if it turns up.'**
+  String get storyWallet5Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Big moments, one plan'**
+  String get storyLife1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Moving, a baby, a new job or an emergency: choose what is happening in Life events.'**
+  String get storyLife1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Your records, sorted'**
+  String get storyLife2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'The plan lists which records to update, cancel or renew, and which ones you may need to add.'**
+  String get storyLife2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Steps and dates'**
+  String get storyLife3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Steps cover what is not a record, and start-by dates tell you when to apply so nothing is late.'**
+  String get storyLife3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Make it yours'**
+  String get storyLife4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your own steps, share the plan as a PDF and get reminders around the date.'**
+  String get storyLife4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos of your documents'**
+  String get storyPhotos1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add photos of the front and back of a card or document from the record.'**
+  String get storyPhotos1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Encrypted on your phone'**
+  String get storyPhotos2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on photo encryption and photos are locked on your phone before they are uploaded.'**
+  String get storyPhotos2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock sensitive records'**
+  String get storyPhotos3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock a record and it asks for your fingerprint or screen lock before it opens.'**
+  String get storyPhotos3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock the whole app'**
+  String get storyPhotos4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'In Security and privacy, turn on app lock and hide the app\'s content when you switch apps.'**
+  String get storyPhotos4Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Share one record'**
+  String get storyShare1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Open a record and share a link that shows only that record, nothing else.'**
+  String get storyShare1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Proof pack'**
+  String get storyShare2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Put the records you choose, with their photos, into one PDF for a landlord, bank or office.'**
+  String get storyShare2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay in control'**
+  String get storyShare3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared links lists every link you made. Stop one at any time and it no longer opens.'**
+  String get storyShare3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite your household'**
+  String get storyHousehold1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Share an invite code or link. Each person signs in with their own account.'**
+  String get storyHousehold1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'One set of records'**
+  String get storyHousehold2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone sees the same shared records and gets the same reminders.'**
+  String get storyHousehold2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Whose is it?'**
+  String get storyHousehold3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Each record can belong to someone. Their name shows on it and in its reminders.'**
+  String get storyHousehold3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan a card'**
+  String get storyImport1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Snap a card or document and Vaultara fills in the name and expiry date for you.'**
+  String get storyImport1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Import a list'**
+  String get storyImport2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep a spreadsheet already? Import it and check each row before anything is saved.'**
+  String get storyImport2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Share into Vaultara'**
+  String get storyImport3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a photo, PDF or text from another app to Vaultara to start a new record.'**
+  String get storyImport3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'In your calendar'**
+  String get storyCosts1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add expiry dates to your phone\'s calendar, so they sit next to your other plans.'**
+  String get storyCosts1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'What renewals cost'**
+  String get storyCosts2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add what a renewal costs to a record and Vaultara shows what you spend each year.'**
+  String get storyCosts2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan ahead'**
+  String get storyCosts3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'See the expensive months coming, so a big renewal never takes you by surprise.'**
+  String get storyCosts3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Track your team'**
+  String get storyBusiness1Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Add staff and keep their certificates, permits and licences in one place.'**
+  String get storyBusiness1Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Email reminders'**
+  String get storyBusiness2Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Staff get email reminders before their documents expire, even without the app.'**
+  String get storyBusiness2Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly report'**
+  String get storyBusiness3Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'A report each month shows what is valid, what is expiring and what is missing.'**
+  String get storyBusiness3Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'Request an update'**
+  String get storyBusiness4Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a link and staff can upload their renewed document themselves.'**
+  String get storyBusiness4Body;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

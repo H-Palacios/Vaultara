@@ -7492,4 +7492,438 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'ستاسو کور سکرین';
+
+  @override
+  String get tutorialsSubHome => 'د کارتونو معنا او هر څه چیرې دي';
+
+  @override
+  String get tutorialsTitleRenew => 'د ریکارډ نوي کول';
+
+  @override
+  String get tutorialsSubRenew => 'کله چې یادونه راشي څه وکړئ';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'جنتري او لګښتونه';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'ستاسو په جنتري کې د پای نیټې او د نوي کولو لګښت';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'عکسونه او امنیت';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'د اسنادو عکسونه، کوډ کول او قلفونه';
+
+  @override
+  String get tutorialsTitleSharing => 'په خوندي ډول شریک کړئ';
+
+  @override
+  String get tutorialsSubSharing => 'ریکارډ شریک کړئ، کڅوړه جوړه کړئ، لینک ودروئ';
+
+  @override
+  String get tutorialsTitleImportScan => 'سکین او وارد کړئ';
+
+  @override
+  String get tutorialsSubImportScan => 'ډېر ریکارډونه ژر اضافه کړئ';
+
+  @override
+  String get tutorialsTitleHousehold => 'ګډه کورنۍ';
+
+  @override
+  String get tutorialsSubHousehold => 'نور د ریکارډونو او یادونو شریکولو ته راوبلئ';
+
+  @override
+  String get tutorialsTitleLostWallet => 'زما کیف ورک شو';
+
+  @override
+  String get tutorialsSubLostWallet => 'اوس چمتو شئ، که ورک شو ژر اقدام وکړئ';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'د ژوند پېښې';
+
+  @override
+  String get tutorialsSubLifeEvents => 'د کور بدلولو، ماشوم، نوې دندې او نورو لپاره پلان';
+
+  @override
+  String get tutorialsTitleAsk => 'له Vaultara وپوښتئ';
+
+  @override
+  String get tutorialsSubAsk => 'له خپلو ریکارډونو سره چیټ یا خبرې وکړئ';
+
+  @override
+  String get tutorialsTitleBusiness => 'د Business وسایل';
+
+  @override
+  String get tutorialsSubBusiness => 'د کارکوونکو اسناد، یادونې او راپورونه';
+
+  @override
+  String get tutorialsGroupBasics => 'بنسټیز شیان';
+
+  @override
+  String get tutorialsGroupOnTop => 'په هر څه خبر اوسئ';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'سفر او کورنۍ';
+
+  @override
+  String get tutorialsGroupEmergencies => 'د ژوند پېښې او بیړني حالتونه';
+
+  @override
+  String get tutorialsGroupPaid => 'پیسې لرونکي ځانګړنې';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ګامونه',
+      one: '$count ګام',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'پیسې لرونکي پلانونه';
+
+  @override
+  String get tutorialsPaidNote => 'تاسو دا په هر پلان کتلی شئ. پخپله ځانګړنه پیسې لرونکی پلان غواړي.';
+
+  @override
+  String get tutorialsBack => 'شاته';
+
+  @override
+  String get tutorialsTryIt => 'اوس یې وازمویئ';
+
+  @override
+  String get tutorialHintText => 'دلته نوي یاست؟ لنډ سفر وګورئ';
+
+  @override
+  String get tutorialHintPlay => 'راته یې وښایه';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'فصل $number له $total';
+  }
+
+  @override
+  String get tourContinue => 'دوام';
+
+  @override
+  String get tourSkip => 'پرېږده';
+
+  @override
+  String get tourSkipped => 'پرېښودل شو';
+
+  @override
+  String get tourDone => 'تاسو ټول سفر ولید';
+
+  @override
+  String get tourRestart => 'بیا پیل کړئ';
+
+  @override
+  String get whatsNewBadge => 'نوی';
+
+  @override
+  String get whatsNewTitle => 'زما کیف ورک شو';
+
+  @override
+  String get whatsNewBody => 'خوندي کړئ چې کارتونه چیرې ساتئ او د هر بانک د بندولو شمېره. که بټوه مو ورکه شي، په څو دقیقو کې هر څه بندوئ.';
+
+  @override
+  String get whatsNewDismiss => 'پوه شوم';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'نور جزئیات اضافي شیان لري: یادښتونه، تکرار، د نوي کولو وخت، د چا دی، چیرې یې ساتئ، قلف او عکسونه. یوازې د اړتیا پر وخت یې پرانیزئ.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'ریکارډ قلف کړئ ترڅو د ښودلو مخکې د ګوتې نښه یا د سکرین قلف وغواړي. وټاکئ چیرې یې ساتئ، لکه بټوه، او د سند عکسونه اضافه کړئ.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'بټوه مو ورکه شوه؟ هر هغه څه وګورئ چې پکې وو، په یو ټک هر بانک ته زنګ ووهئ او د پاتې لپاره ګامونه تعقیب کړئ.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'د کور بدلول، ماشوم، نوې دنده یا بیړنی حالت؟ د ژوند پېښې تاسو ته ستاسو د ریکارډونو، ګامونو او نیټو سره پلان درکوي.';
+
+  @override
+  String get storySampleQuestion => 'سږکال څه پای ته رسېږي؟';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'ستاسو $name په مارچ کې پای ته رسېږي. یوه میاشت مخکې یادونه غواړئ؟';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name په ۳۰ ورځو کې پای ته رسېږي. د نوي کولو لپاره ټک وکړئ.';
+  }
+
+  @override
+  String get storySampleGym => 'د جم غړیتوب';
+
+  @override
+  String get storySampleFirstAid => 'د لومړنیو مرستو سند';
+
+  @override
+  String get storySampleEncrypt => 'عکسونه کوډ کړئ';
+
+  @override
+  String get storySampleAppLock => 'د اپ قلف';
+
+  @override
+  String get storySampleHideApp => 'د اپونو په بدلوونکي کې منځپانګه پټه کړئ';
+
+  @override
+  String get storyHome1Title => 'ستاسو ورځ په یوه نظر';
+
+  @override
+  String get storyHome1Body => 'کور سکرین ښیي چې نن څه مهم دي: څه ژر پای ته رسېږي او څومره ریکارډونه لرئ.';
+
+  @override
+  String get storyHome2Title => 'هر څه ومومئ';
+
+  @override
+  String get storyHome2Body => 'د نوم، ډلې یا کس له مخې د ریکارډ موندلو لپاره لټون ټک کړئ.';
+
+  @override
+  String get storyHome3Title => 'سفرونه او پلانونه';
+
+  @override
+  String get storyHome3Body => 'هغه سفرونه چې پلانوئ یې او روان د ژوند پېښو پلانونه، د پاتې کارونو سره، دلته ښکاري.';
+
+  @override
+  String get storyHome4Title => 'مرسته په یو ټک';
+
+  @override
+  String get storyHome4Body => 'د سپرغۍ تڼۍ «له Vaultara وپوښتئ» پرانیزي. ستاسو عکس پروفایل، ترتیبات او زده کړې پرانیزي.';
+
+  @override
+  String get storyRenew1Title => 'یادونه راځي';
+
+  @override
+  String get storyRenew1Body => 'مخکې له دې چې ریکارډ پای ته ورسېږي، Vaultara تاسو ته یادونه کوي. د ریکارډ پرانیستلو لپاره یادونه ټک کړئ.';
+
+  @override
+  String get storyRenew2Title => 'نوې نیټه خوندي کړئ';
+
+  @override
+  String get storyRenew2Body => 'نوی مو کړ؟ «نوی کړئ» ټک کړئ او د پای نوې نیټه ولیکئ. یادونې ورسره ځي.';
+
+  @override
+  String get storyRenew3Title => 'ډاډه نه یاست څنګه؟';
+
+  @override
+  String get storyRenew3Body => 'ډېری ریکارډونه د ګامونو، اسنادو او عادي لګښت لارښود لري.';
+
+  @override
+  String get storyRenew4Title => 'پرېږدئ چې تکرار شي';
+
+  @override
+  String get storyRenew4Body => 'د ګډونونو او کلنیو تادیاتو لپاره تکرار چالان کړئ، نیټه به پخپله وړاندې ځي.';
+
+  @override
+  String get storyAsk1Title => 'په خپلو ټکو وپوښتئ';
+
+  @override
+  String get storyAsk1Body => 'لکه «سږکال څه پای ته رسېږي؟» وپوښتئ او له خپلو ریکارډونو ځواب ترلاسه کړئ.';
+
+  @override
+  String get storyAsk2Title => 'د لیکلو پر ځای خبرې وکړئ';
+
+  @override
+  String get storyAsk2Body => 'مایکروفون ټک کړئ او خبرې وکړئ. ستاسو ټکي د خبرو پر مهال ښکاري او سمدستي لېږلی شئ.';
+
+  @override
+  String get storyAsk3Title => 'هر بدلون تاسو تاییدوئ';
+
+  @override
+  String get storyAsk3Body => 'د ریکارډ اضافه کولو یا بدلولو غوښتنه وکړئ، لومړی به یو کارت ووینئ. تر تایید پورې هېڅ نه خوندي کېږي.';
+
+  @override
+  String get storyAsk4Title => 'هر بدلون بېرته واخلئ';
+
+  @override
+  String get storyAsk4Body => 'نظر مو بدل شو؟ هر تایید شوی بدلون له همغه کارت بېرته اخیستل کېدی شي.';
+
+  @override
+  String get storyAsk5Title => 'له هماغه ځایه دوام ورکړئ';
+
+  @override
+  String get storyAsk5Body => 'چیټونه ۹۰ ورځې په «د خبرو اترو تاریخچه» کې ساتل کېږي، او وړاندیز شوې پوښتنې د پیل کولو کې مرسته کوي.';
+
+  @override
+  String get storyWallet1Title => 'لومړی چمتو شئ';
+
+  @override
+  String get storyWallet1Body => 'کارت یا سند پرانیزئ او وټاکئ چیرې یې ساتئ، لکه بټوه یا بکس.';
+
+  @override
+  String get storyWallet2Title => 'د بندولو شمېره خوندي کړئ';
+
+  @override
+  String get storyWallet2Body => 'همدا اوس د هر بانک د بندولو شمېره اضافه کړئ. دا په کارت لیکل شوې، کوم چې د اړتیا پر وخت به درسره نه وي.';
+
+  @override
+  String get storyWallet3Title => 'که ورک شو';
+
+  @override
+  String get storyWallet3Body => '«زما کیف ورک شو» پرانیزئ او «ورکه شوې» یا «غلا شوې» ټک کړئ. Vaultara هر هغه څه لیست کوي چې پکې وو.';
+
+  @override
+  String get storyWallet4Title => 'په دقیقو کې کارتونه بند کړئ';
+
+  @override
+  String get storyWallet4Body => 'په یو ټک هر بانک ته زنګ ووهئ، کارتونه بند شوي نښه کړئ او د راپور شمېره خوندي کړئ.';
+
+  @override
+  String get storyWallet5Title => 'بدل یې کړئ او خوندي اوسئ';
+
+  @override
+  String get storyWallet5Body => 'اسناد بدل کړئ، د یادونې پر مهال صورت حسابونه وګورئ او که پیدا شو «ومې موندله» ټک کړئ.';
+
+  @override
+  String get storyLife1Title => 'لوې شېبې، یو پلان';
+
+  @override
+  String get storyLife1Body => 'د کور بدلول، ماشوم، نوې دنده یا بیړنی حالت: په «د ژوند پېښې» کې وټاکئ چې څه پېښېږي.';
+
+  @override
+  String get storyLife2Title => 'ستاسو ریکارډونه منظم';
+
+  @override
+  String get storyLife2Body => 'پلان ښیي چې کوم ریکارډونه تازه، لغوه یا نوي کړئ، او کوم شاید اضافه کړئ.';
+
+  @override
+  String get storyLife3Title => 'ګامونه او نیټې';
+
+  @override
+  String get storyLife3Body => 'ګامونه هغه څه پوښي چې ریکارډ نه دي، او د پیل نیټې وايي چې کله غوښتنه وکړئ ترڅو هېڅ ونه ځنډېږي.';
+
+  @override
+  String get storyLife4Title => 'خپل یې کړئ';
+
+  @override
+  String get storyLife4Body => 'خپل ګامونه اضافه کړئ، پلان د PDF په توګه شریک کړئ او د نیټې شاوخوا یادونې ترلاسه کړئ.';
+
+  @override
+  String get storyPhotos1Title => 'ستاسو د اسنادو عکسونه';
+
+  @override
+  String get storyPhotos1Body => 'له ریکارډ څخه د کارت یا سند د مخ او شا عکسونه اضافه کړئ.';
+
+  @override
+  String get storyPhotos2Title => 'په تلیفون کې کوډ شوي';
+
+  @override
+  String get storyPhotos2Body => 'د عکس کوډ کول چالان کړئ، عکسونه د پورته کولو مخکې په تلیفون کې قلف کېږي.';
+
+  @override
+  String get storyPhotos3Title => 'حساس ریکارډونه قلف کړئ';
+
+  @override
+  String get storyPhotos3Body => 'ریکارډ قلف کړئ، د پرانیستلو مخکې به د ګوتې نښه یا د سکرین قلف وغواړي.';
+
+  @override
+  String get storyPhotos4Title => 'ټول اپ قلف کړئ';
+
+  @override
+  String get storyPhotos4Body => 'په امنیتي ترتیباتو کې د اپ قلف چالان کړئ او د اپ بدلولو پر مهال منځپانګه پټه کړئ.';
+
+  @override
+  String get storyShare1Title => 'یو ریکارډ شریک کړئ';
+
+  @override
+  String get storyShare1Body => 'ریکارډ پرانیزئ او داسې لینک شریک کړئ چې یوازې هماغه ریکارډ ښیي، بل هېڅ نه.';
+
+  @override
+  String get storyShare2Title => 'د ثبوت کڅوړه';
+
+  @override
+  String get storyShare2Body => 'ټاکل شوي ریکارډونه د عکسونو سره د کور خاوند، بانک یا دفتر لپاره په یو PDF کې راټول کړئ.';
+
+  @override
+  String get storyShare3Title => 'کنټرول ستاسو په لاس';
+
+  @override
+  String get storyShare3Body => '«شریک شوي لینکونه» هر هغه لینک ښیي چې تاسو جوړ کړی. هر یو هر وخت ودروئ او نور به نه پرانیستل کېږي.';
+
+  @override
+  String get storyHousehold1Title => 'خپله کورنۍ راوبلئ';
+
+  @override
+  String get storyHousehold1Body => 'د بلنې کوډ یا لینک شریک کړئ. هر څوک په خپل حساب ننوځي.';
+
+  @override
+  String get storyHousehold2Title => 'د ریکارډونو یوه ټولګه';
+
+  @override
+  String get storyHousehold2Body => 'ټول یو شان ګډ ریکارډونه ویني او یو شان یادونې ترلاسه کوي.';
+
+  @override
+  String get storyHousehold3Title => 'د چا دی؟';
+
+  @override
+  String get storyHousehold3Body => 'هر ریکارډ د یو چا کېدی شي. نوم یې په ریکارډ او یادونو کې ښکاري.';
+
+  @override
+  String get storyImport1Title => 'کارت سکین کړئ';
+
+  @override
+  String get storyImport1Body => 'د کارت یا سند عکس واخلئ او Vaultara به نوم او د پای نیټه درته ډکه کړي.';
+
+  @override
+  String get storyImport2Title => 'لیست وارد کړئ';
+
+  @override
+  String get storyImport2Body => 'مخکې مو سپریډشیټ لرئ؟ وارد یې کړئ او د خوندي کولو مخکې هر قطار وګورئ.';
+
+  @override
+  String get storyImport3Title => 'Vaultara ته شریک کړئ';
+
+  @override
+  String get storyImport3Body => 'د نوي ریکارډ پیلولو لپاره له بل اپ څخه عکس، PDF یا متن Vaultara ته شریک کړئ.';
+
+  @override
+  String get storyCosts1Title => 'ستاسو په جنتري کې';
+
+  @override
+  String get storyCosts1Body => 'د پای نیټې د خپلو نورو پلانونو تر څنګ د تلیفون جنتري ته اضافه کړئ.';
+
+  @override
+  String get storyCosts2Title => 'د نوي کولو لګښت';
+
+  @override
+  String get storyCosts2Body => 'په ریکارډ کې د نوي کولو لګښت ولیکئ او Vaultara به وښیي چې په کال کې څومره لګوئ.';
+
+  @override
+  String get storyCosts3Title => 'مخکې پلان جوړ کړئ';
+
+  @override
+  String get storyCosts3Body => 'ګران میاشتې مخکې له مخکې ووینئ ترڅو یو لوی نوي کول مو هېڅکله حیران نه کړي.';
+
+  @override
+  String get storyBusiness1Title => 'خپله ډله وڅارئ';
+
+  @override
+  String get storyBusiness1Body => 'کارکوونکي اضافه کړئ او د هغوی سندونه، اجازې او جوازونه په یو ځای کې وساتئ.';
+
+  @override
+  String get storyBusiness2Title => 'د برېښنالیک یادونې';
+
+  @override
+  String get storyBusiness2Body => 'کارکوونکي د اسنادو له پای ته رسېدو مخکې برېښنالیک ترلاسه کوي، حتی له اپ پرته.';
+
+  @override
+  String get storyBusiness3Title => 'میاشتنی راپور';
+
+  @override
+  String get storyBusiness3Body => 'هره میاشت یو راپور ښیي چې څه اعتبار لري، څه پای ته رسېږي او څه کم دي.';
+
+  @override
+  String get storyBusiness4Title => 'د تازه کولو غوښتنه وکړئ';
+
+  @override
+  String get storyBusiness4Body => 'لینک ولېږئ او کارکوونکی به پخپله نوی شوی سند پورته کړي.';
 }

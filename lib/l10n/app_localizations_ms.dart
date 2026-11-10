@@ -7435,4 +7435,437 @@ class AppLocalizationsMs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Skrin utama anda';
+
+  @override
+  String get tutorialsSubHome => 'Maksud kad dan di mana semuanya berada';
+
+  @override
+  String get tutorialsTitleRenew => 'Memperbaharui rekod';
+
+  @override
+  String get tutorialsSubRenew => 'Apa yang perlu dibuat apabila peringatan tiba';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendar dan kos';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Tarikh tamat tempoh dalam kalendar dan kos pembaharuan';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Foto dan keselamatan';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Foto dokumen, penyulitan dan kunci';
+
+  @override
+  String get tutorialsTitleSharing => 'Kongsi dengan selamat';
+
+  @override
+  String get tutorialsSubSharing => 'Kongsi rekod, buat pek, hentikan pautan';
+
+  @override
+  String get tutorialsTitleImportScan => 'Imbas dan import';
+
+  @override
+  String get tutorialsSubImportScan => 'Tambah banyak rekod dengan cepat';
+
+  @override
+  String get tutorialsTitleHousehold => 'Isi rumah dikongsi';
+
+  @override
+  String get tutorialsSubHousehold => 'Jemput orang lain berkongsi rekod dan peringatan';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Dompet saya hilang';
+
+  @override
+  String get tutorialsSubLostWallet => 'Bersedia sekarang, bertindak pantas jika hilang';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Peristiwa hidup';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Pelan untuk berpindah, bayi, kerja baharu dan banyak lagi';
+
+  @override
+  String get tutorialsTitleAsk => 'Tanya Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Bersembang atau bercakap dengan rekod anda';
+
+  @override
+  String get tutorialsTitleBusiness => 'Alat Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Dokumen kakitangan, peringatan dan laporan';
+
+  @override
+  String get tutorialsGroupBasics => 'Asas';
+
+  @override
+  String get tutorialsGroupOnTop => 'Sentiasa terkawal';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Perjalanan dan keluarga';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Peristiwa hidup dan kecemasan';
+
+  @override
+  String get tutorialsGroupPaid => 'Ciri berbayar';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count langkah',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Pelan berbayar';
+
+  @override
+  String get tutorialsPaidNote => 'Anda boleh menonton ini dengan mana-mana pelan. Ciri itu sendiri memerlukan pelan berbayar.';
+
+  @override
+  String get tutorialsBack => 'Kembali';
+
+  @override
+  String get tutorialsTryIt => 'Cuba sekarang';
+
+  @override
+  String get tutorialHintText => 'Baru di sini? Ikuti lawatan ringkas';
+
+  @override
+  String get tutorialHintPlay => 'Tunjukkan';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Bab $number daripada $total';
+  }
+
+  @override
+  String get tourContinue => 'Teruskan';
+
+  @override
+  String get tourSkip => 'Langkau';
+
+  @override
+  String get tourSkipped => 'Dilangkau';
+
+  @override
+  String get tourDone => 'Anda telah melihat keseluruhan lawatan';
+
+  @override
+  String get tourRestart => 'Mula semula';
+
+  @override
+  String get whatsNewBadge => 'Baharu';
+
+  @override
+  String get whatsNewTitle => 'Dompet saya hilang';
+
+  @override
+  String get whatsNewBody => 'Simpan tempat anda letak kad dan nombor sekatan setiap bank. Jika dompet hilang, anda menyekat semuanya dalam beberapa minit.';
+
+  @override
+  String get whatsNewDismiss => 'Faham';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Butiran lanjut mengandungi tambahan: nota, ulangan, masa pembaharuan, milik siapa, disimpan di mana, kunci dan foto. Buka hanya apabila perlu.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Kunci rekod supaya ia meminta cap jari atau kunci skrin sebelum dipaparkan. Pilih tempat anda menyimpannya, contohnya dompet, dan tambah foto dokumen.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Dompet hilang? Lihat semua yang ada di dalamnya, telefon setiap bank dengan satu ketikan dan ikut langkah untuk selebihnya.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Berpindah, bayi, kerja baharu atau kecemasan? Peristiwa hidup memberi anda pelan dengan rekod, langkah dan tarikh anda.';
+
+  @override
+  String get storySampleQuestion => 'Apa yang tamat tempoh tahun ini?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name anda tamat tempoh pada bulan Mac. Mahu peringatan sebulan lebih awal?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name tamat tempoh dalam 30 hari. Ketik untuk memperbaharui.';
+  }
+
+  @override
+  String get storySampleGym => 'Keahlian gim';
+
+  @override
+  String get storySampleFirstAid => 'Sijil pertolongan cemas';
+
+  @override
+  String get storySampleEncrypt => 'Sulitkan foto';
+
+  @override
+  String get storySampleAppLock => 'Kunci apl';
+
+  @override
+  String get storySampleHideApp => 'Sembunyikan kandungan dalam penukar apl';
+
+  @override
+  String get storyHome1Title => 'Hari anda sekali imbas';
+
+  @override
+  String get storyHome1Body => 'Skrin utama menunjukkan perkara penting hari ini: apa yang akan tamat tempoh dan berapa banyak rekod anda.';
+
+  @override
+  String get storyHome2Title => 'Cari apa sahaja';
+
+  @override
+  String get storyHome2Body => 'Ketik carian untuk mencari rekod mengikut nama, kumpulan atau orang.';
+
+  @override
+  String get storyHome3Title => 'Perjalanan dan pelan';
+
+  @override
+  String get storyHome3Body => 'Perjalanan yang anda rancang dan pelan peristiwa hidup yang sedang berjalan, bersama baki tugasan, dipaparkan di sini.';
+
+  @override
+  String get storyHome4Title => 'Bantuan dengan satu ketikan';
+
+  @override
+  String get storyHome4Body => 'Butang kilauan membuka «Tanya Vaultara». Foto anda membuka profil, tetapan dan tutorial.';
+
+  @override
+  String get storyRenew1Title => 'Peringatan tiba';
+
+  @override
+  String get storyRenew1Body => 'Sebelum rekod tamat tempoh, Vaultara mengingatkan anda. Ketik peringatan untuk membuka rekod.';
+
+  @override
+  String get storyRenew2Title => 'Simpan tarikh baharu';
+
+  @override
+  String get storyRenew2Body => 'Sudah diperbaharui? Ketik «Perbaharui» dan masukkan tarikh tamat tempoh baharu. Peringatan turut beralih.';
+
+  @override
+  String get storyRenew3Title => 'Tidak pasti caranya?';
+
+  @override
+  String get storyRenew3Body => 'Banyak rekod ada panduan dengan langkah, dokumen dan kos biasa.';
+
+  @override
+  String get storyRenew4Title => 'Biarkan ia berulang';
+
+  @override
+  String get storyRenew4Body => 'Untuk langganan dan bayaran tahunan, hidupkan ulangan dan tarikh akan beralih sendiri.';
+
+  @override
+  String get storyAsk1Title => 'Tanya dengan kata-kata anda';
+
+  @override
+  String get storyAsk1Body => 'Tanya contohnya «Apa yang tamat tempoh tahun ini?» dan dapatkan jawapan daripada rekod anda sendiri.';
+
+  @override
+  String get storyAsk2Title => 'Bercakap dan bukannya menaip';
+
+  @override
+  String get storyAsk2Body => 'Ketik mikrofon dan bercakap. Perkataan muncul semasa anda bercakap dan boleh dihantar serta-merta.';
+
+  @override
+  String get storyAsk3Title => 'Anda mengesahkan setiap perubahan';
+
+  @override
+  String get storyAsk3Body => 'Minta untuk menambah atau mengubah rekod dan anda akan melihat kad dahulu. Tiada apa disimpan sehingga anda mengesahkan.';
+
+  @override
+  String get storyAsk4Title => 'Buat asal sebarang perubahan';
+
+  @override
+  String get storyAsk4Body => 'Berubah fikiran? Setiap perubahan yang disahkan boleh dibuat asal dari kad yang sama.';
+
+  @override
+  String get storyAsk5Title => 'Teruskan dari tempat anda berhenti';
+
+  @override
+  String get storyAsk5Body => 'Sembang disimpan 90 hari dalam «Sejarah sembang», dan soalan cadangan membantu anda bermula.';
+
+  @override
+  String get storyWallet1Title => 'Bersedia dahulu';
+
+  @override
+  String get storyWallet1Body => 'Buka kad atau dokumen dan pilih tempat anda menyimpannya, contohnya dompet atau beg.';
+
+  @override
+  String get storyWallet2Title => 'Simpan nombor sekatan';
+
+  @override
+  String get storyWallet2Body => 'Tambah nombor sekatan setiap bank sekarang. Ia tertera pada kad, yang tiada pada anda apabila diperlukan.';
+
+  @override
+  String get storyWallet3Title => 'Jika hilang';
+
+  @override
+  String get storyWallet3Body => 'Buka «Dompet saya hilang» dan ketik «Hilang» atau «Dicuri». Vaultara menyenaraikan semua yang ada di dalamnya.';
+
+  @override
+  String get storyWallet4Title => 'Sekat kad dalam beberapa minit';
+
+  @override
+  String get storyWallet4Body => 'Telefon setiap bank dengan satu ketikan, tandakan kad sebagai disekat dan simpan nombor laporan.';
+
+  @override
+  String get storyWallet5Title => 'Ganti dan kekal selamat';
+
+  @override
+  String get storyWallet5Body => 'Ganti dokumen anda, semak penyata apabila diingatkan dan ketik «Saya jumpa» jika ditemui.';
+
+  @override
+  String get storyLife1Title => 'Detik besar, satu pelan';
+
+  @override
+  String get storyLife1Body => 'Berpindah, bayi, kerja baharu atau kecemasan: pilih dalam «Peristiwa hidup» apa yang berlaku.';
+
+  @override
+  String get storyLife2Title => 'Rekod anda, teratur';
+
+  @override
+  String get storyLife2Body => 'Pelan menunjukkan rekod mana perlu dikemas kini, dibatalkan atau diperbaharui, dan mana yang mungkin perlu ditambah.';
+
+  @override
+  String get storyLife3Title => 'Langkah dan tarikh';
+
+  @override
+  String get storyLife3Body => 'Langkah meliputi perkara yang bukan rekod, dan tarikh mula memberitahu bila perlu memohon supaya tiada yang lewat.';
+
+  @override
+  String get storyLife4Title => 'Jadikan milik anda';
+
+  @override
+  String get storyLife4Body => 'Tambah langkah sendiri, kongsi pelan sebagai PDF dan dapatkan peringatan sekitar tarikh itu.';
+
+  @override
+  String get storyPhotos1Title => 'Foto dokumen anda';
+
+  @override
+  String get storyPhotos1Body => 'Dari rekod, tambah foto bahagian depan dan belakang kad atau dokumen.';
+
+  @override
+  String get storyPhotos2Title => 'Disulitkan pada telefon';
+
+  @override
+  String get storyPhotos2Body => 'Hidupkan penyulitan foto dan foto dikunci pada telefon sebelum dimuat naik.';
+
+  @override
+  String get storyPhotos3Title => 'Kunci rekod sensitif';
+
+  @override
+  String get storyPhotos3Body => 'Kunci rekod dan ia akan meminta cap jari atau kunci skrin sebelum dibuka.';
+
+  @override
+  String get storyPhotos4Title => 'Kunci seluruh apl';
+
+  @override
+  String get storyPhotos4Body => 'Dalam tetapan keselamatan, hidupkan kunci apl dan sembunyikan kandungan semasa menukar apl.';
+
+  @override
+  String get storyShare1Title => 'Kongsi satu rekod';
+
+  @override
+  String get storyShare1Body => 'Buka rekod dan kongsi pautan yang hanya menunjukkan rekod itu, tiada yang lain.';
+
+  @override
+  String get storyShare2Title => 'Pek bukti';
+
+  @override
+  String get storyShare2Body => 'Himpunkan rekod pilihan anda, bersama fotonya, dalam satu PDF untuk tuan rumah, bank atau pejabat.';
+
+  @override
+  String get storyShare3Title => 'Kekal mengawal';
+
+  @override
+  String get storyShare3Body => '«Pautan dikongsi» menunjukkan setiap pautan yang anda buat. Hentikan mana-mana pada bila-bila masa dan ia tidak akan dibuka lagi.';
+
+  @override
+  String get storyHousehold1Title => 'Jemput isi rumah anda';
+
+  @override
+  String get storyHousehold1Body => 'Kongsi kod atau pautan jemputan. Setiap orang log masuk dengan akaun sendiri.';
+
+  @override
+  String get storyHousehold2Title => 'Satu set rekod';
+
+  @override
+  String get storyHousehold2Body => 'Semua orang melihat rekod dikongsi yang sama dan mendapat peringatan yang sama.';
+
+  @override
+  String get storyHousehold3Title => 'Milik siapa?';
+
+  @override
+  String get storyHousehold3Body => 'Setiap rekod boleh menjadi milik seseorang. Namanya dipaparkan pada rekod dan dalam peringatan.';
+
+  @override
+  String get storyImport1Title => 'Imbas kad';
+
+  @override
+  String get storyImport1Body => 'Ambil foto kad atau dokumen dan Vaultara mengisi nama serta tarikh tamat tempoh untuk anda.';
+
+  @override
+  String get storyImport2Title => 'Import senarai';
+
+  @override
+  String get storyImport2Body => 'Sudah ada hamparan? Import dan semak setiap baris sebelum disimpan.';
+
+  @override
+  String get storyImport3Title => 'Kongsi ke Vaultara';
+
+  @override
+  String get storyImport3Body => 'Kongsi foto, PDF atau teks dari apl lain ke Vaultara untuk memulakan rekod baharu.';
+
+  @override
+  String get storyCosts1Title => 'Dalam kalendar anda';
+
+  @override
+  String get storyCosts1Body => 'Tambah tarikh tamat tempoh ke kalendar telefon, di sebelah pelan anda yang lain.';
+
+  @override
+  String get storyCosts2Title => 'Kos pembaharuan';
+
+  @override
+  String get storyCosts2Body => 'Masukkan kos pembaharuan pada rekod dan Vaultara menunjukkan perbelanjaan anda setahun.';
+
+  @override
+  String get storyCosts3Title => 'Rancang lebih awal';
+
+  @override
+  String get storyCosts3Body => 'Lihat bulan-bulan mahal lebih awal supaya pembaharuan besar tidak pernah mengejutkan anda.';
+
+  @override
+  String get storyBusiness1Title => 'Pantau pasukan anda';
+
+  @override
+  String get storyBusiness1Body => 'Tambah kakitangan dan simpan sijil, permit dan lesen mereka di satu tempat.';
+
+  @override
+  String get storyBusiness2Title => 'Peringatan e-mel';
+
+  @override
+  String get storyBusiness2Body => 'Kakitangan menerima e-mel sebelum dokumen mereka tamat tempoh, walaupun tanpa apl.';
+
+  @override
+  String get storyBusiness3Title => 'Laporan bulanan';
+
+  @override
+  String get storyBusiness3Body => 'Setiap bulan, laporan menunjukkan apa yang sah, apa yang akan tamat tempoh dan apa yang tiada.';
+
+  @override
+  String get storyBusiness4Title => 'Minta kemas kini';
+
+  @override
+  String get storyBusiness4Body => 'Hantar pautan dan kakitangan memuat naik sendiri dokumen yang diperbaharui.';
 }

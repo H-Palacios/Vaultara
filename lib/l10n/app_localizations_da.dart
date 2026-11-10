@@ -7496,4 +7496,438 @@ class AppLocalizationsDa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Din startskærm';
+
+  @override
+  String get tutorialsSubHome => 'Hvad kortene betyder, og hvor alt er';
+
+  @override
+  String get tutorialsTitleRenew => 'Forny en post';
+
+  @override
+  String get tutorialsSubRenew => 'Hvad du gør, når en påmindelse kommer';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalender og udgifter';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Udløbsdatoer i din kalender og hvad fornyelser koster';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotos og sikkerhed';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentfotos, kryptering og låse';
+
+  @override
+  String get tutorialsTitleSharing => 'Del sikkert';
+
+  @override
+  String get tutorialsSubSharing => 'Del en post, lav en pakke, stop et link';
+
+  @override
+  String get tutorialsTitleImportScan => 'Scan og importér';
+
+  @override
+  String get tutorialsSubImportScan => 'Tilføj mange poster hurtigt';
+
+  @override
+  String get tutorialsTitleHousehold => 'Delt husstand';
+
+  @override
+  String get tutorialsSubHousehold => 'Inviter andre til at dele poster og påmindelser';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Jeg har mistet min tegnebog';
+
+  @override
+  String get tutorialsSubLostWallet => 'Gør dig klar nu, og handl hurtigt, hvis den forsvinder';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Livsbegivenheder';
+
+  @override
+  String get tutorialsSubLifeEvents => 'En plan for flytning, en baby, et nyt job og mere';
+
+  @override
+  String get tutorialsTitleAsk => 'Spørg Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Skriv eller tal med dine poster';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business-værktøjer';
+
+  @override
+  String get tutorialsSubBusiness => 'Medarbejderdokumenter, påmindelser og rapporter';
+
+  @override
+  String get tutorialsGroupBasics => 'Det grundlæggende';
+
+  @override
+  String get tutorialsGroupOnTop => 'Hold styr på det';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Rejser og familie';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Livsbegivenheder og nødsituationer';
+
+  @override
+  String get tutorialsGroupPaid => 'Betalte funktioner';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count trin',
+      one: '1 trin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Betalte abonnementer';
+
+  @override
+  String get tutorialsPaidNote => 'Du kan se dette med ethvert abonnement. Selve funktionen kræver et betalt abonnement.';
+
+  @override
+  String get tutorialsBack => 'Tilbage';
+
+  @override
+  String get tutorialsTryIt => 'Prøv det nu';
+
+  @override
+  String get tutorialHintText => 'Ny her? Tag den hurtige rundvisning';
+
+  @override
+  String get tutorialHintPlay => 'Vis mig';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Kapitel $number af $total';
+  }
+
+  @override
+  String get tourContinue => 'Fortsæt';
+
+  @override
+  String get tourSkip => 'Spring over';
+
+  @override
+  String get tourSkipped => 'Sprunget over';
+
+  @override
+  String get tourDone => 'Du har set hele rundvisningen';
+
+  @override
+  String get tourRestart => 'Start forfra';
+
+  @override
+  String get whatsNewBadge => 'Ny';
+
+  @override
+  String get whatsNewTitle => 'Jeg har mistet min tegnebog';
+
+  @override
+  String get whatsNewBody => 'Gem, hvor du har dine kort, og hver banks spærrenummer. Mister du pungen, spærrer du det hele på få minutter.';
+
+  @override
+  String get whatsNewDismiss => 'Forstået';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Flere detaljer rummer det ekstra: noter, gentagelse, fornyelsestid, hvis posten er, hvor du har den, lås og fotos. Åbn det kun, når du har brug for det.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Lås en post, så den kræver fingeraftryk eller skærmlås, før den vises. Vælg, hvor du har den, fx i pungen, og tilføj fotos af dokumentet.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Mistet pungen? Se alt, der var i den, ring til hver bank med ét tryk, og følg trinene for resten.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Flytning, en baby, et nyt job eller en nødsituation? Livsbegivenheder giver dig en plan med dine poster, trin og datoer.';
+
+  @override
+  String get storySampleQuestion => 'Hvad udløber i år?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Dit $name udløber i marts. Vil du have en påmindelse en måned før?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name udløber om 30 dage. Tryk for at forny.';
+  }
+
+  @override
+  String get storySampleGym => 'Fitnessmedlemskab';
+
+  @override
+  String get storySampleFirstAid => 'Førstehjælpsbevis';
+
+  @override
+  String get storySampleEncrypt => 'Kryptér fotos';
+
+  @override
+  String get storySampleAppLock => 'Applås';
+
+  @override
+  String get storySampleHideApp => 'Skjul indholdet i appskifteren';
+
+  @override
+  String get storyHome1Title => 'Din dag på et øjeblik';
+
+  @override
+  String get storyHome1Body => 'Startskærmen viser, hvad der betyder noget i dag: hvad der snart udløber, og hvor mange poster du har.';
+
+  @override
+  String get storyHome2Title => 'Find alt';
+
+  @override
+  String get storyHome2Body => 'Tryk på søgning for at finde en post efter navn, gruppe eller person.';
+
+  @override
+  String get storyHome3Title => 'Rejser og planer';
+
+  @override
+  String get storyHome3Body => 'Rejser, du planlægger, og igangværende planer for livsbegivenheder vises her med det, der mangler.';
+
+  @override
+  String get storyHome4Title => 'Hjælp med ét tryk';
+
+  @override
+  String get storyHome4Body => 'Funkleknappen åbner \"Spørg Vaultara\". Dit billede åbner din profil, indstillinger og vejledninger.';
+
+  @override
+  String get storyRenew1Title => 'En påmindelse kommer';
+
+  @override
+  String get storyRenew1Body => 'Før en post udløber, minder Vaultara dig om det. Tryk på påmindelsen for at åbne posten.';
+
+  @override
+  String get storyRenew2Title => 'Gem den nye dato';
+
+  @override
+  String get storyRenew2Body => 'Fornyet? Tryk på \"Forny\", og indtast den nye udløbsdato. Dine påmindelser flytter med.';
+
+  @override
+  String get storyRenew3Title => 'Usikker på hvordan?';
+
+  @override
+  String get storyRenew3Body => 'Mange poster har en guide med trinene, dokumenterne og den sædvanlige pris.';
+
+  @override
+  String get storyRenew4Title => 'Lad den gentage';
+
+  @override
+  String get storyRenew4Body => 'Til abonnementer og årlige betalinger slår du gentagelse til, så datoen rykker frem af sig selv.';
+
+  @override
+  String get storyAsk1Title => 'Spørg med dine egne ord';
+
+  @override
+  String get storyAsk1Body => 'Spørg fx \"Hvad udløber i år?\", og få svar fra dine egne poster.';
+
+  @override
+  String get storyAsk2Title => 'Tal i stedet for at skrive';
+
+  @override
+  String get storyAsk2Body => 'Tryk på mikrofonen, og tal. Dine ord vises, mens du taler, og du kan sende med det samme.';
+
+  @override
+  String get storyAsk3Title => 'Du bekræfter hver ændring';
+
+  @override
+  String get storyAsk3Body => 'Bed om at tilføje eller ændre en post, og du ser først et kort. Intet gemmes, før du bekræfter.';
+
+  @override
+  String get storyAsk4Title => 'Fortryd enhver ændring';
+
+  @override
+  String get storyAsk4Body => 'Fortrudt? Hver bekræftet ændring kan fortrydes fra samme kort.';
+
+  @override
+  String get storyAsk5Title => 'Fortsæt, hvor du slap';
+
+  @override
+  String get storyAsk5Body => 'Chats gemmes i 90 dage i \"Samtalehistorik\", og foreslåede spørgsmål hjælper dig i gang.';
+
+  @override
+  String get storyWallet1Title => 'Gør dig klar først';
+
+  @override
+  String get storyWallet1Body => 'Åbn et kort eller dokument, og vælg, hvor du har det, fx i pungen eller tasken.';
+
+  @override
+  String get storyWallet2Title => 'Gem spærrenummeret';
+
+  @override
+  String get storyWallet2Body => 'Tilføj hver banks spærrenummer nu. Det står på kortet, som er væk, når du skal bruge det.';
+
+  @override
+  String get storyWallet3Title => 'Hvis den forsvinder';
+
+  @override
+  String get storyWallet3Body => 'Åbn \"Jeg har mistet min tegnebog\", og tryk på \"Mistet\" eller \"Stjålet\". Vaultara viser alt, hvad der var i den.';
+
+  @override
+  String get storyWallet4Title => 'Spær kort på få minutter';
+
+  @override
+  String get storyWallet4Body => 'Ring til hver bank med ét tryk, markér kort som spærret, og gem politiets journalnummer.';
+
+  @override
+  String get storyWallet5Title => 'Erstat og vær sikker';
+
+  @override
+  String get storyWallet5Body => 'Erstat dine dokumenter, tjek dine kontoudtog, når du bliver mindet om det, og tryk på \"Jeg har fundet den\", hvis den dukker op.';
+
+  @override
+  String get storyLife1Title => 'Store øjeblikke, én plan';
+
+  @override
+  String get storyLife1Body => 'Flytning, en baby, et nyt job eller en nødsituation: vælg i \"Livsbegivenheder\", hvad der sker.';
+
+  @override
+  String get storyLife2Title => 'Dine poster, sorteret';
+
+  @override
+  String get storyLife2Body => 'Planen viser, hvilke poster du skal opdatere, opsige eller forny, og hvilke du måske skal tilføje.';
+
+  @override
+  String get storyLife3Title => 'Trin og datoer';
+
+  @override
+  String get storyLife3Body => 'Trin dækker det, der ikke er en post, og startdatoer fortæller, hvornår du skal søge, så intet bliver for sent.';
+
+  @override
+  String get storyLife4Title => 'Gør den til din egen';
+
+  @override
+  String get storyLife4Body => 'Tilføj dine egne trin, del planen som PDF, og få påmindelser omkring datoen.';
+
+  @override
+  String get storyPhotos1Title => 'Fotos af dine dokumenter';
+
+  @override
+  String get storyPhotos1Body => 'Tilføj fra posten fotos af for- og bagsiden af et kort eller dokument.';
+
+  @override
+  String get storyPhotos2Title => 'Krypteret på din telefon';
+
+  @override
+  String get storyPhotos2Body => 'Slå fotokryptering til, så låses fotos på din telefon, før de uploades.';
+
+  @override
+  String get storyPhotos3Title => 'Lås følsomme poster';
+
+  @override
+  String get storyPhotos3Body => 'Lås en post, så beder den om fingeraftryk eller skærmlås, før den åbner.';
+
+  @override
+  String get storyPhotos4Title => 'Lås hele appen';
+
+  @override
+  String get storyPhotos4Body => 'Slå applås til i sikkerhedsindstillingerne, og skjul indholdet, når du skifter app.';
+
+  @override
+  String get storyShare1Title => 'Del én post';
+
+  @override
+  String get storyShare1Body => 'Åbn en post, og del et link, der kun viser den post, intet andet.';
+
+  @override
+  String get storyShare2Title => 'Dokumentpakke';
+
+  @override
+  String get storyShare2Body => 'Saml de poster, du vælger, med fotos i én PDF til en udlejer, bank eller myndighed.';
+
+  @override
+  String get storyShare3Title => 'Bevar kontrollen';
+
+  @override
+  String get storyShare3Body => '\"Delte links\" viser hvert link, du har lavet. Stop et når som helst, så åbner det ikke længere.';
+
+  @override
+  String get storyHousehold1Title => 'Inviter din husstand';
+
+  @override
+  String get storyHousehold1Body => 'Del en invitationskode eller et link. Hver person logger ind med sin egen konto.';
+
+  @override
+  String get storyHousehold2Title => 'Ét sæt poster';
+
+  @override
+  String get storyHousehold2Body => 'Alle ser de samme delte poster og får de samme påmindelser.';
+
+  @override
+  String get storyHousehold3Title => 'Hvis er den?';
+
+  @override
+  String get storyHousehold3Body => 'Hver post kan tilhøre nogen. Navnet står på posten og i dens påmindelser.';
+
+  @override
+  String get storyImport1Title => 'Scan et kort';
+
+  @override
+  String get storyImport1Body => 'Tag et billede af et kort eller dokument, så udfylder Vaultara navn og udløbsdato for dig.';
+
+  @override
+  String get storyImport2Title => 'Importér en liste';
+
+  @override
+  String get storyImport2Body => 'Har du allerede et regneark? Importér det, og tjek hver række, før noget gemmes.';
+
+  @override
+  String get storyImport3Title => 'Del til Vaultara';
+
+  @override
+  String get storyImport3Body => 'Del et foto, en PDF eller en tekst fra en anden app til Vaultara for at starte en ny post.';
+
+  @override
+  String get storyCosts1Title => 'I din kalender';
+
+  @override
+  String get storyCosts1Body => 'Føj udløbsdatoer til telefonens kalender, så de står ved siden af dine andre planer.';
+
+  @override
+  String get storyCosts2Title => 'Hvad fornyelser koster';
+
+  @override
+  String get storyCosts2Body => 'Angiv prisen på en fornyelse i en post, så viser Vaultara, hvad du bruger om året.';
+
+  @override
+  String get storyCosts3Title => 'Planlæg i god tid';
+
+  @override
+  String get storyCosts3Body => 'Se de dyre måneder komme, så en stor fornyelse aldrig overrasker dig.';
+
+  @override
+  String get storyBusiness1Title => 'Følg dit team';
+
+  @override
+  String get storyBusiness1Body => 'Tilføj medarbejdere, og saml deres certifikater, tilladelser og licenser ét sted.';
+
+  @override
+  String get storyBusiness2Title => 'Påmindelser på e-mail';
+
+  @override
+  String get storyBusiness2Body => 'Medarbejdere får e-mails, før deres dokumenter udløber, også uden appen.';
+
+  @override
+  String get storyBusiness3Title => 'Månedsrapport';
+
+  @override
+  String get storyBusiness3Body => 'Hver måned viser en rapport, hvad der er gyldigt, hvad der udløber, og hvad der mangler.';
+
+  @override
+  String get storyBusiness4Title => 'Bed om en opdatering';
+
+  @override
+  String get storyBusiness4Body => 'Send et link, så uploader medarbejderne selv det fornyede dokument.';
 }

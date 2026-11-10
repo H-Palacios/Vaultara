@@ -7492,4 +7492,438 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'A kezdőképernyőd';
+
+  @override
+  String get tutorialsSubHome => 'Mit jelentenek a kártyák, és hol mit találsz';
+
+  @override
+  String get tutorialsTitleRenew => 'Tétel megújítása';
+
+  @override
+  String get tutorialsSubRenew => 'Mi a teendő, ha emlékeztető érkezik';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Naptár és költségek';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Lejárati dátumok a naptárban, és mennyibe kerülnek a megújítások';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotók és biztonság';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumentumfotók, titkosítás és zárolás';
+
+  @override
+  String get tutorialsTitleSharing => 'Biztonságos megosztás';
+
+  @override
+  String get tutorialsSubSharing => 'Tétel megosztása, csomag készítése, hivatkozás leállítása';
+
+  @override
+  String get tutorialsTitleImportScan => 'Beolvasás és importálás';
+
+  @override
+  String get tutorialsSubImportScan => 'Sok tétel gyors hozzáadása';
+
+  @override
+  String get tutorialsTitleHousehold => 'Közös háztartás';
+
+  @override
+  String get tutorialsSubHousehold => 'Hívj meg másokat tételek és emlékeztetők megosztására';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Elvesztettem a pénztárcámat';
+
+  @override
+  String get tutorialsSubLostWallet => 'Készülj fel most, és cselekedj gyorsan, ha elveszik';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Életesemények';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Terv költözéshez, babához, új munkához és máshoz';
+
+  @override
+  String get tutorialsTitleAsk => 'Kérdezze a Vaultarát';
+
+  @override
+  String get tutorialsSubAsk => 'Csevegj vagy beszélj a tételeiddel';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business-eszközök';
+
+  @override
+  String get tutorialsSubBusiness => 'Munkatársi dokumentumok, emlékeztetők és jelentések';
+
+  @override
+  String get tutorialsGroupBasics => 'Az alapok';
+
+  @override
+  String get tutorialsGroupOnTop => 'Mindent szem előtt tartani';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Utazás és család';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Élethelyzetek és vészhelyzetek';
+
+  @override
+  String get tutorialsGroupPaid => 'Fizetős funkciók';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lépés',
+      one: '$count lépés',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Fizetős csomagok';
+
+  @override
+  String get tutorialsPaidNote => 'Ezt bármelyik csomaggal megnézheted. Magához a funkcióhoz fizetős csomag kell.';
+
+  @override
+  String get tutorialsBack => 'Vissza';
+
+  @override
+  String get tutorialsTryIt => 'Kipróbálom';
+
+  @override
+  String get tutorialHintText => 'Új vagy itt? Nézd meg a rövid bemutatót';
+
+  @override
+  String get tutorialHintPlay => 'Mutasd';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$number. fejezet / $total';
+  }
+
+  @override
+  String get tourContinue => 'Tovább';
+
+  @override
+  String get tourSkip => 'Kihagyás';
+
+  @override
+  String get tourSkipped => 'Kihagyva';
+
+  @override
+  String get tourDone => 'Megnézted a teljes bemutatót';
+
+  @override
+  String get tourRestart => 'Újrakezdés';
+
+  @override
+  String get whatsNewBadge => 'Új';
+
+  @override
+  String get whatsNewTitle => 'Elvesztettem a pénztárcámat';
+
+  @override
+  String get whatsNewBody => 'Mentsd el, hol tartod a kártyáidat, és minden bank letiltási számát. Ha elveszted a pénztárcát, perceken belül mindent letilthatsz.';
+
+  @override
+  String get whatsNewDismiss => 'Értem';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'A További részletek az extrákat tartalmazza: jegyzetek, ismétlés, megújítási idő, kié a tétel, hol tartod, zárolás és fotók. Csak akkor nyisd meg, ha kell.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Zárolj egy tételt, hogy megjelenítés előtt ujjlenyomatot vagy képernyőzárat kérjen. Válaszd ki, hol tartod, például a pénztárcában, és adj hozzá fotókat a dokumentumról.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Elvesztetted a pénztárcát? Nézd meg, mi volt benne, hívd fel egy koppintással az összes bankot, és kövesd a többi lépést.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Költözés, baba, új munka vagy vészhelyzet? Az Élethelyzetek tervet ad a tételeiddel, lépéseiddel és dátumaiddal.';
+
+  @override
+  String get storySampleQuestion => 'Mi jár le idén?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'A(z) $name márciusban lejár. Kérsz emlékeztetőt egy hónappal előtte?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'A(z) $name 30 nap múlva lejár. Koppints a megújításhoz.';
+  }
+
+  @override
+  String get storySampleGym => 'Edzőtermi bérlet';
+
+  @override
+  String get storySampleFirstAid => 'Elsősegély-tanúsítvány';
+
+  @override
+  String get storySampleEncrypt => 'Fotók titkosítása';
+
+  @override
+  String get storySampleAppLock => 'Alkalmazászár';
+
+  @override
+  String get storySampleHideApp => 'Tartalom elrejtése az alkalmazásváltóban';
+
+  @override
+  String get storyHome1Title => 'A napod egy pillantással';
+
+  @override
+  String get storyHome1Body => 'A kezdőképernyő azt mutatja, ami ma fontos: mi jár le hamarosan, és hány tételed van.';
+
+  @override
+  String get storyHome2Title => 'Találj meg bármit';
+
+  @override
+  String get storyHome2Body => 'Koppints a keresésre, hogy név, csoport vagy személy alapján megtalálj egy tételt.';
+
+  @override
+  String get storyHome3Title => 'Utak és tervek';
+
+  @override
+  String get storyHome3Body => 'Itt jelennek meg a tervezett utak és a folyamatban lévő élethelyzet-tervek, a hátralévő teendőkkel.';
+
+  @override
+  String get storyHome4Title => 'Segítség egy koppintással';
+
+  @override
+  String get storyHome4Body => 'A szikra gomb megnyitja a(z) „Kérdezze a Vaultarát” funkciót. A fotód a profilt, a beállításokat és az oktatóanyagokat nyitja meg.';
+
+  @override
+  String get storyRenew1Title => 'Emlékeztető érkezik';
+
+  @override
+  String get storyRenew1Body => 'Mielőtt egy tétel lejár, a Vaultara emlékeztet. Koppints az emlékeztetőre a tétel megnyitásához.';
+
+  @override
+  String get storyRenew2Title => 'Mentsd el az új dátumot';
+
+  @override
+  String get storyRenew2Body => 'Megújítottad? Koppints a(z) „Megújítás” gombra, és add meg az új lejárati dátumot. Az emlékeztetők is elmozdulnak.';
+
+  @override
+  String get storyRenew3Title => 'Nem tudod, hogyan?';
+
+  @override
+  String get storyRenew3Body => 'Sok tételhez tartozik útmutató a lépésekkel, a dokumentumokkal és a szokásos költséggel.';
+
+  @override
+  String get storyRenew4Title => 'Legyen ismétlődő';
+
+  @override
+  String get storyRenew4Body => 'Előfizetéseknél és éves díjaknál kapcsold be az ismétlést, és a dátum magától továbblép.';
+
+  @override
+  String get storyAsk1Title => 'Kérdezz a saját szavaiddal';
+
+  @override
+  String get storyAsk1Body => 'Kérdezd meg például: „Mi jár le idén?”, és válaszokat kapsz a saját tételeidből.';
+
+  @override
+  String get storyAsk2Title => 'Beszélj gépelés helyett';
+
+  @override
+  String get storyAsk2Body => 'Koppints a mikrofonra, és beszélj. A szavak beszéd közben jelennek meg, és azonnal elküldheted.';
+
+  @override
+  String get storyAsk3Title => 'Minden módosítást te hagysz jóvá';
+
+  @override
+  String get storyAsk3Body => 'Kérd egy tétel hozzáadását vagy módosítását, és először egy kártyát látsz. Semmi sem mentődik, amíg jóvá nem hagyod.';
+
+  @override
+  String get storyAsk4Title => 'Bármilyen módosítás visszavonása';
+
+  @override
+  String get storyAsk4Body => 'Meggondoltad magad? Minden jóváhagyott módosítás visszavonható ugyanarról a kártyáról.';
+
+  @override
+  String get storyAsk5Title => 'Folytasd, ahol abbahagytad';
+
+  @override
+  String get storyAsk5Body => 'A csevegések 90 napig megmaradnak itt: „Csevegési előzmények”, a javasolt kérdések pedig segítenek elindulni.';
+
+  @override
+  String get storyWallet1Title => 'Először készülj fel';
+
+  @override
+  String get storyWallet1Body => 'Nyiss meg egy kártyát vagy dokumentumot, és válaszd ki, hol tartod, például a pénztárcában vagy a táskában.';
+
+  @override
+  String get storyWallet2Title => 'Mentsd el a letiltási számot';
+
+  @override
+  String get storyWallet2Body => 'Add hozzá most minden bank letiltási számát. A kártyán van, ami nem lesz nálad, amikor szükséged lesz rá.';
+
+  @override
+  String get storyWallet3Title => 'Ha elveszik';
+
+  @override
+  String get storyWallet3Body => 'Nyisd meg: „Elvesztettem a pénztárcámat”, és koppints a(z) „Elveszett” vagy „Ellopták” lehetőségre. A Vaultara felsorolja, mi volt benne.';
+
+  @override
+  String get storyWallet4Title => 'Kártyák letiltása percek alatt';
+
+  @override
+  String get storyWallet4Body => 'Hívd fel egy koppintással az összes bankot, jelöld letiltottnak a kártyákat, és mentsd el a feljelentés számát.';
+
+  @override
+  String get storyWallet5Title => 'Pótold és maradj biztonságban';
+
+  @override
+  String get storyWallet5Body => 'Pótold a dokumentumaidat, nézd át a kivonatokat, amikor emlékeztetünk, és koppints a(z) „Megtaláltam” gombra, ha előkerül.';
+
+  @override
+  String get storyLife1Title => 'Nagy pillanatok, egy terv';
+
+  @override
+  String get storyLife1Body => 'Költözés, baba, új munka vagy vészhelyzet: válaszd ki itt, mi történik: „Életesemények”.';
+
+  @override
+  String get storyLife2Title => 'Rendben a tételeid';
+
+  @override
+  String get storyLife2Body => 'A terv megmutatja, mely tételeket frissítsd, mondd le vagy újítsd meg, és melyeket kell talán hozzáadnod.';
+
+  @override
+  String get storyLife3Title => 'Lépések és dátumok';
+
+  @override
+  String get storyLife3Body => 'A lépések azt fedik le, ami nem tétel, a kezdő dátumok pedig megmondják, mikor kell igényelni, hogy semmi ne késsen.';
+
+  @override
+  String get storyLife4Title => 'Szabd magadra';
+
+  @override
+  String get storyLife4Body => 'Adj hozzá saját lépéseket, oszd meg a tervet PDF-ként, és kapj emlékeztetőket a dátum körül.';
+
+  @override
+  String get storyPhotos1Title => 'Fotók a dokumentumaidról';
+
+  @override
+  String get storyPhotos1Body => 'A tételből adj hozzá fotót egy kártya vagy dokumentum elejéről és hátuljáról.';
+
+  @override
+  String get storyPhotos2Title => 'Titkosítva a telefonodon';
+
+  @override
+  String get storyPhotos2Body => 'Kapcsold be a fotótitkosítást, és a fotók a telefonodon zárolódnak feltöltés előtt.';
+
+  @override
+  String get storyPhotos3Title => 'Zárold az érzékeny tételeket';
+
+  @override
+  String get storyPhotos3Body => 'Zárolj egy tételt, és megnyitás előtt ujjlenyomatot vagy képernyőzárat kér.';
+
+  @override
+  String get storyPhotos4Title => 'Zárold az egész alkalmazást';
+
+  @override
+  String get storyPhotos4Body => 'A biztonsági beállításokban kapcsold be az alkalmazászárat, és rejtsd el a tartalmat alkalmazásváltáskor.';
+
+  @override
+  String get storyShare1Title => 'Egy tétel megosztása';
+
+  @override
+  String get storyShare1Body => 'Nyiss meg egy tételt, és ossz meg egy hivatkozást, amely csak azt a tételt mutatja, semmi mást.';
+
+  @override
+  String get storyShare2Title => 'Igazolási csomag';
+
+  @override
+  String get storyShare2Body => 'Tedd a kiválasztott tételeket fotóikkal együtt egyetlen PDF-be egy bérbeadónak, banknak vagy hivatalnak.';
+
+  @override
+  String get storyShare3Title => 'Te irányítasz';
+
+  @override
+  String get storyShare3Body => 'A(z) „Megosztott linkek” minden létrehozott hivatkozást mutat. Bármelyiket bármikor leállíthatod, és többé nem nyílik meg.';
+
+  @override
+  String get storyHousehold1Title => 'Hívd meg a háztartásodat';
+
+  @override
+  String get storyHousehold1Body => 'Ossz meg egy meghívókódot vagy hivatkozást. Mindenki a saját fiókjával lép be.';
+
+  @override
+  String get storyHousehold2Title => 'Egy közös tételkészlet';
+
+  @override
+  String get storyHousehold2Body => 'Mindenki ugyanazokat a közös tételeket látja, és ugyanazokat az emlékeztetőket kapja.';
+
+  @override
+  String get storyHousehold3Title => 'Kié?';
+
+  @override
+  String get storyHousehold3Body => 'Minden tétel tartozhat valakihez. A neve megjelenik a tételen és az emlékeztetőkben.';
+
+  @override
+  String get storyImport1Title => 'Kártya beolvasása';
+
+  @override
+  String get storyImport1Body => 'Fotózz le egy kártyát vagy dokumentumot, és a Vaultara kitölti a nevet és a lejárati dátumot.';
+
+  @override
+  String get storyImport2Title => 'Lista importálása';
+
+  @override
+  String get storyImport2Body => 'Van már táblázatod? Importáld, és ellenőrizz minden sort, mielőtt bármi mentődik.';
+
+  @override
+  String get storyImport3Title => 'Megosztás a Vaultarával';
+
+  @override
+  String get storyImport3Body => 'Ossz meg egy fotót, PDF-et vagy szöveget egy másik alkalmazásból a Vaultarával, hogy új tételt kezdj.';
+
+  @override
+  String get storyCosts1Title => 'A naptáradban';
+
+  @override
+  String get storyCosts1Body => 'Add hozzá a lejárati dátumokat a telefon naptárához, a többi terved mellé.';
+
+  @override
+  String get storyCosts2Title => 'Mennyibe kerülnek a megújítások';
+
+  @override
+  String get storyCosts2Body => 'Add meg egy tételnél a megújítás költségét, és a Vaultara megmutatja, mennyit költesz évente.';
+
+  @override
+  String get storyCosts3Title => 'Tervezz előre';
+
+  @override
+  String get storyCosts3Body => 'Lásd előre a drága hónapokat, hogy egy nagy megújítás soha ne érjen meglepetésként.';
+
+  @override
+  String get storyBusiness1Title => 'Kövesd a csapatodat';
+
+  @override
+  String get storyBusiness1Body => 'Adj hozzá munkatársakat, és tartsd egy helyen a tanúsítványaikat, engedélyeiket és jogosítványaikat.';
+
+  @override
+  String get storyBusiness2Title => 'E-mailes emlékeztetők';
+
+  @override
+  String get storyBusiness2Body => 'A munkatársak e-mailt kapnak, mielőtt a dokumentumaik lejárnak, alkalmazás nélkül is.';
+
+  @override
+  String get storyBusiness3Title => 'Havi jelentés';
+
+  @override
+  String get storyBusiness3Body => 'Minden hónapban egy jelentés mutatja, mi érvényes, mi jár le, és mi hiányzik.';
+
+  @override
+  String get storyBusiness4Title => 'Frissítés kérése';
+
+  @override
+  String get storyBusiness4Body => 'Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot.';
 }

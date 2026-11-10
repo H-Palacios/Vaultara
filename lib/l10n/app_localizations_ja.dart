@@ -7423,4 +7423,437 @@ class AppLocalizationsJa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'ホーム画面';
+
+  @override
+  String get tutorialsSubHome => 'カードの意味と各機能の場所';
+
+  @override
+  String get tutorialsTitleRenew => '記録を更新する';
+
+  @override
+  String get tutorialsSubRenew => 'リマインダーが届いたときの操作';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'カレンダーと費用';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'カレンダーの期限と更新にかかる費用';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => '写真とセキュリティ';
+
+  @override
+  String get tutorialsSubPhotosSecurity => '書類の写真、暗号化、ロック';
+
+  @override
+  String get tutorialsTitleSharing => '安全に共有';
+
+  @override
+  String get tutorialsSubSharing => '記録の共有、パック作成、リンクの停止';
+
+  @override
+  String get tutorialsTitleImportScan => 'スキャンとインポート';
+
+  @override
+  String get tutorialsSubImportScan => 'たくさんの記録をすばやく追加';
+
+  @override
+  String get tutorialsTitleHousehold => '世帯で共有';
+
+  @override
+  String get tutorialsSubHousehold => '記録とリマインダーを共有するよう家族を招待';
+
+  @override
+  String get tutorialsTitleLostWallet => '財布をなくした';
+
+  @override
+  String get tutorialsSubLostWallet => '今のうちに準備し、なくしたらすぐ行動';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'ライフイベント';
+
+  @override
+  String get tutorialsSubLifeEvents => '引っ越し、出産、転職などのプラン';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultaraに聞く';
+
+  @override
+  String get tutorialsSubAsk => '記録とチャットまたは会話';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business ツール';
+
+  @override
+  String get tutorialsSubBusiness => 'スタッフの書類、リマインダー、レポート';
+
+  @override
+  String get tutorialsGroupBasics => '基本';
+
+  @override
+  String get tutorialsGroupOnTop => 'しっかり管理';
+
+  @override
+  String get tutorialsGroupTravelFamily => '旅行と家族';
+
+  @override
+  String get tutorialsGroupEmergencies => 'ライフイベントと緊急時';
+
+  @override
+  String get tutorialsGroupPaid => '有料機能';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ステップ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => '有料プラン';
+
+  @override
+  String get tutorialsPaidNote => 'どのプランでも視聴できます。機能を使うには有料プランが必要です。';
+
+  @override
+  String get tutorialsBack => '戻る';
+
+  @override
+  String get tutorialsTryIt => '試してみる';
+
+  @override
+  String get tutorialHintText => 'はじめての方は短いツアーをどうぞ';
+
+  @override
+  String get tutorialHintPlay => '見てみる';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '第$number章 / 全$total章';
+  }
+
+  @override
+  String get tourContinue => '続ける';
+
+  @override
+  String get tourSkip => 'スキップ';
+
+  @override
+  String get tourSkipped => 'スキップ済み';
+
+  @override
+  String get tourDone => 'ツアーをすべて見ました';
+
+  @override
+  String get tourRestart => '最初から';
+
+  @override
+  String get whatsNewBadge => '新機能';
+
+  @override
+  String get whatsNewTitle => '財布をなくした';
+
+  @override
+  String get whatsNewBody => 'カードの保管場所と各銀行の利用停止番号を保存しましょう。財布をなくしても数分ですべて止められます。';
+
+  @override
+  String get whatsNewDismiss => 'OK';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => '詳細には追加項目があります：メモ、繰り返し、更新期間、持ち主、保管場所、ロック、写真。必要なときだけ開きましょう。';
+
+  @override
+  String get tutorialAddRecordProtect2 => '記録をロックすると、表示前に指紋や画面ロックが必要になります。財布など保管場所を選び、書類の写真を追加しましょう。';
+
+  @override
+  String get tutorialSmartLostWallet2 => '財布をなくしたら？入っていたものをすべて確認し、ワンタップで各銀行に電話して、残りの手順に沿って対応します。';
+
+  @override
+  String get tutorialSmartLifeEvents2 => '引っ越し、出産、転職、緊急時に。ライフイベントがあなたの記録、手順、日付をまとめたプランを用意します。';
+
+  @override
+  String get storySampleQuestion => '今年期限が切れるのは？';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$nameは3月に期限切れです。1か月前にリマインダーを設定しますか？';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$nameはあと30日で期限切れです。タップして更新。';
+  }
+
+  @override
+  String get storySampleGym => 'ジムの会員証';
+
+  @override
+  String get storySampleFirstAid => '救急救命講習の修了証';
+
+  @override
+  String get storySampleEncrypt => '写真を暗号化';
+
+  @override
+  String get storySampleAppLock => 'アプリのロック';
+
+  @override
+  String get storySampleHideApp => 'アプリ切り替え画面で内容を隠す';
+
+  @override
+  String get storyHome1Title => '今日の状況をひと目で';
+
+  @override
+  String get storyHome1Body => 'ホーム画面には今日大切なことが表示されます：まもなく期限切れのものと記録の件数です。';
+
+  @override
+  String get storyHome2Title => '何でも見つかる';
+
+  @override
+  String get storyHome2Body => '検索をタップして、名前、グループ、人で記録を探せます。';
+
+  @override
+  String get storyHome3Title => '旅行とプラン';
+
+  @override
+  String get storyHome3Body => '計画中の旅行や進行中のライフイベントのプランが、残りの作業とともにここに表示されます。';
+
+  @override
+  String get storyHome4Title => 'ワンタップでヘルプ';
+
+  @override
+  String get storyHome4Body => 'きらきらボタンで「Vaultaraに聞く」が開きます。プロフィール写真からはプロフィール、設定、チュートリアルを開けます。';
+
+  @override
+  String get storyRenew1Title => 'リマインダーが届く';
+
+  @override
+  String get storyRenew1Body => '期限切れの前に Vaultara がお知らせします。リマインダーをタップすると記録が開きます。';
+
+  @override
+  String get storyRenew2Title => '新しい日付を保存';
+
+  @override
+  String get storyRenew2Body => '更新しましたか？「更新」をタップして新しい有効期限を入力すると、リマインダーも一緒に移動します。';
+
+  @override
+  String get storyRenew3Title => 'やり方がわからない？';
+
+  @override
+  String get storyRenew3Body => '多くの記録に、手順、必要書類、一般的な費用をまとめたガイドがあります。';
+
+  @override
+  String get storyRenew4Title => '繰り返しにする';
+
+  @override
+  String get storyRenew4Body => 'サブスクや年払いは繰り返しをオンにすると、日付が自動で進みます。';
+
+  @override
+  String get storyAsk1Title => '自分の言葉で質問';
+
+  @override
+  String get storyAsk1Body => '「今年期限が切れるのは？」などと聞くと、自分の記録から答えが返ってきます。';
+
+  @override
+  String get storyAsk2Title => '入力せずに話す';
+
+  @override
+  String get storyAsk2Body => 'マイクをタップして話すと、話しながら文字が表示され、すぐに送信できます。';
+
+  @override
+  String get storyAsk3Title => '変更はすべてあなたが確認';
+
+  @override
+  String get storyAsk3Body => '記録の追加や変更を頼むと、まずカードが表示されます。確認するまで何も保存されません。';
+
+  @override
+  String get storyAsk4Title => 'どの変更も元に戻せる';
+
+  @override
+  String get storyAsk4Body => '気が変わったら、確認済みの変更は同じカードから元に戻せます。';
+
+  @override
+  String get storyAsk5Title => '続きから再開';
+
+  @override
+  String get storyAsk5Body => 'チャットは「チャット履歴」に90日間保存され、おすすめの質問で始めやすくなっています。';
+
+  @override
+  String get storyWallet1Title => 'まずは準備';
+
+  @override
+  String get storyWallet1Body => 'カードや書類を開き、財布やかばんなど保管場所を選びます。';
+
+  @override
+  String get storyWallet2Title => '利用停止番号を保存';
+
+  @override
+  String get storyWallet2Body => '各銀行の利用停止番号を今のうちに追加しましょう。番号はカードに書かれていますが、必要なときカードは手元にありません。';
+
+  @override
+  String get storyWallet3Title => 'なくしたら';
+
+  @override
+  String get storyWallet3Body => '「財布をなくした」を開き、「紛失」または「盗難」をタップ。Vaultara が入っていたものを一覧にします。';
+
+  @override
+  String get storyWallet4Title => '数分でカードを停止';
+
+  @override
+  String get storyWallet4Body => 'ワンタップで各銀行に電話し、カードを停止済みにして、届出番号を保存します。';
+
+  @override
+  String get storyWallet5Title => '再発行して安全に';
+
+  @override
+  String get storyWallet5Body => '書類を再発行し、お知らせが来たら明細を確認し、見つかったら「見つかった」をタップします。';
+
+  @override
+  String get storyLife1Title => '大きな節目に、ひとつのプラン';
+
+  @override
+  String get storyLife1Body => '引っ越し、出産、転職、緊急時：「ライフイベント」で何が起きたかを選びます。';
+
+  @override
+  String get storyLife2Title => '記録を整理';
+
+  @override
+  String get storyLife2Body => 'プランは更新・解約・継続すべき記録と、追加が必要かもしれない記録を示します。';
+
+  @override
+  String get storyLife3Title => '手順と日付';
+
+  @override
+  String get storyLife3Body => '手順は記録以外のやることをカバーし、開始日はいつ申請すれば間に合うかを教えてくれます。';
+
+  @override
+  String get storyLife4Title => '自分仕様に';
+
+  @override
+  String get storyLife4Body => '自分の手順を追加し、プランを PDF で共有し、日付の前後にリマインダーを受け取れます。';
+
+  @override
+  String get storyPhotos1Title => '書類の写真';
+
+  @override
+  String get storyPhotos1Body => '記録からカードや書類の表と裏の写真を追加します。';
+
+  @override
+  String get storyPhotos2Title => 'スマホで暗号化';
+
+  @override
+  String get storyPhotos2Body => '写真の暗号化をオンにすると、アップロード前にスマホ上でロックされます。';
+
+  @override
+  String get storyPhotos3Title => '大切な記録をロック';
+
+  @override
+  String get storyPhotos3Body => '記録をロックすると、開く前に指紋や画面ロックを求めます。';
+
+  @override
+  String get storyPhotos4Title => 'アプリ全体をロック';
+
+  @override
+  String get storyPhotos4Body => 'セキュリティ設定でアプリのロックをオンにし、アプリ切り替え時に内容を隠せます。';
+
+  @override
+  String get storyShare1Title => '1件だけ共有';
+
+  @override
+  String get storyShare1Body => '記録を開き、その記録だけを表示するリンクを共有します。それ以外は表示されません。';
+
+  @override
+  String get storyShare2Title => '証明書パック';
+
+  @override
+  String get storyShare2Body => '選んだ記録を写真ごと1つの PDF にまとめ、大家さん、銀行、役所に提出できます。';
+
+  @override
+  String get storyShare3Title => '管理はあなたの手に';
+
+  @override
+  String get storyShare3Body => '「共有したリンク」には作成したすべてのリンクが表示されます。いつでも停止でき、停止後は開けなくなります。';
+
+  @override
+  String get storyHousehold1Title => '家族を招待';
+
+  @override
+  String get storyHousehold1Body => '招待コードまたはリンクを共有します。各自が自分のアカウントでサインインします。';
+
+  @override
+  String get storyHousehold2Title => '記録はひとつに';
+
+  @override
+  String get storyHousehold2Body => '全員が同じ共有記録を見て、同じリマインダーを受け取ります。';
+
+  @override
+  String get storyHousehold3Title => '誰のもの？';
+
+  @override
+  String get storyHousehold3Body => '記録ごとに持ち主を設定でき、名前が記録とリマインダーに表示されます。';
+
+  @override
+  String get storyImport1Title => 'カードをスキャン';
+
+  @override
+  String get storyImport1Body => 'カードや書類を撮影すると、Vaultara が名前と有効期限を入力します。';
+
+  @override
+  String get storyImport2Title => 'リストをインポート';
+
+  @override
+  String get storyImport2Body => 'すでに表計算シートがありますか？インポートして、保存前に各行を確認できます。';
+
+  @override
+  String get storyImport3Title => 'Vaultara に共有';
+
+  @override
+  String get storyImport3Body => 'ほかのアプリから写真、PDF、テキストを Vaultara に共有して新しい記録を始められます。';
+
+  @override
+  String get storyCosts1Title => 'カレンダーに';
+
+  @override
+  String get storyCosts1Body => '有効期限をスマホのカレンダーに、ほかの予定と並べて追加します。';
+
+  @override
+  String get storyCosts2Title => '更新にかかる費用';
+
+  @override
+  String get storyCosts2Body => '記録に更新費用を入力すると、Vaultara が年間の支出を表示します。';
+
+  @override
+  String get storyCosts3Title => '早めに計画';
+
+  @override
+  String get storyCosts3Body => '出費の多い月を前もって把握し、大きな更新に慌てないようにします。';
+
+  @override
+  String get storyBusiness1Title => 'チームを管理';
+
+  @override
+  String get storyBusiness1Body => 'スタッフを追加し、資格、許可証、免許を一か所で管理します。';
+
+  @override
+  String get storyBusiness2Title => 'メールでリマインダー';
+
+  @override
+  String get storyBusiness2Body => 'スタッフは書類の期限前にメールを受け取ります。アプリがなくても大丈夫です。';
+
+  @override
+  String get storyBusiness3Title => '月次レポート';
+
+  @override
+  String get storyBusiness3Body => '毎月のレポートで、有効なもの、期限が近いもの、不足しているものがわかります。';
+
+  @override
+  String get storyBusiness4Title => '更新を依頼';
+
+  @override
+  String get storyBusiness4Body => 'リンクを送ると、スタッフが更新した書類を自分でアップロードします。';
 }

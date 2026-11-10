@@ -7433,4 +7433,437 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'သင့်ပင်မမျက်နှာပြင်';
+
+  @override
+  String get tutorialsSubHome => 'ကတ်များ၏ အဓိပ္ပာယ်နှင့် အရာအားလုံး ဘယ်မှာရှိသည်';
+
+  @override
+  String get tutorialsTitleRenew => 'မှတ်တမ်း သက်တမ်းတိုးခြင်း';
+
+  @override
+  String get tutorialsSubRenew => 'သတိပေးချက် ရောက်လာလျှင် ဘာလုပ်ရမည်';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'ပြက္ခဒိန်နှင့် ကုန်ကျစရိတ်';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'ပြက္ခဒိန်ထဲရှိ သက်တမ်းကုန်ရက်များနှင့် သက်တမ်းတိုးစရိတ်';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'ဓာတ်ပုံနှင့် လုံခြုံရေး';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'စာရွက်စာတမ်းဓာတ်ပုံ၊ ကုဒ်ဝှက်ခြင်းနှင့် လော့ခ်များ';
+
+  @override
+  String get tutorialsTitleSharing => 'လုံခြုံစွာ မျှဝေပါ';
+
+  @override
+  String get tutorialsSubSharing => 'မှတ်တမ်းမျှဝေ၊ ပက်ကေ့ချ်ပြုလုပ်၊ လင့်ခ်ရပ်ပါ';
+
+  @override
+  String get tutorialsTitleImportScan => 'စကန်နှင့် တင်သွင်းခြင်း';
+
+  @override
+  String get tutorialsSubImportScan => 'မှတ်တမ်းများစွာကို မြန်မြန်ထည့်ပါ';
+
+  @override
+  String get tutorialsTitleHousehold => 'မျှဝေထားသော အိမ်ထောင်စု';
+
+  @override
+  String get tutorialsSubHousehold => 'မှတ်တမ်းနှင့် သတိပေးချက်များ မျှဝေရန် အခြားသူများကို ဖိတ်ပါ';
+
+  @override
+  String get tutorialsTitleLostWallet => 'ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+
+  @override
+  String get tutorialsSubLostWallet => 'ယခုပြင်ဆင်ပါ၊ ပျောက်လျှင် မြန်မြန်ဆောင်ရွက်ပါ';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'ဘဝ အဖြစ်အပျက်များ';
+
+  @override
+  String get tutorialsSubLifeEvents => 'အိမ်ပြောင်း၊ ကလေး၊ အလုပ်သစ်နှင့် အခြားအတွက် အစီအစဉ်';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara ကို မေးရန်';
+
+  @override
+  String get tutorialsSubAsk => 'သင့်မှတ်တမ်းများနှင့် ချက်တင် သို့မဟုတ် စကားပြောပါ';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business ကိရိယာများ';
+
+  @override
+  String get tutorialsSubBusiness => 'ဝန်ထမ်းစာရွက်စာတမ်း၊ သတိပေးချက်နှင့် အစီရင်ခံစာ';
+
+  @override
+  String get tutorialsGroupBasics => 'အခြေခံများ';
+
+  @override
+  String get tutorialsGroupOnTop => 'အရာအားလုံးကို သတိထားခြင်း';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'ခရီးသွားခြင်းနှင့် မိသားစု';
+
+  @override
+  String get tutorialsGroupEmergencies => 'ဘဝဖြစ်ရပ်များနှင့် အရေးပေါ်အခြေအနေ';
+
+  @override
+  String get tutorialsGroupPaid => 'ငွေပေးရသော လုပ်ဆောင်ချက်များ';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အဆင့် $count ဆင့်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'ငွေပေးရသော အစီအစဉ်များ';
+
+  @override
+  String get tutorialsPaidNote => 'မည်သည့်အစီအစဉ်ဖြင့်မဆို ဤအရာကို ကြည့်နိုင်သည်။ လုပ်ဆောင်ချက်ကိုယ်တိုင်အတွက် ငွေပေးအစီအစဉ် လိုသည်။';
+
+  @override
+  String get tutorialsBack => 'နောက်သို့';
+
+  @override
+  String get tutorialsTryIt => 'ယခုစမ်းကြည့်ပါ';
+
+  @override
+  String get tutorialHintText => 'ဒီမှာ အသစ်လား? တိုတောင်းသော လမ်းညွှန်ကို ကြည့်ပါ';
+
+  @override
+  String get tutorialHintPlay => 'ပြပါ';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'အခန်း $number / $total';
+  }
+
+  @override
+  String get tourContinue => 'ဆက်လုပ်ပါ';
+
+  @override
+  String get tourSkip => 'ကျော်ပါ';
+
+  @override
+  String get tourSkipped => 'ကျော်ပြီး';
+
+  @override
+  String get tourDone => 'လမ်းညွှန်အားလုံး ကြည့်ပြီးပါပြီ';
+
+  @override
+  String get tourRestart => 'ပြန်စပါ';
+
+  @override
+  String get whatsNewBadge => 'အသစ်';
+
+  @override
+  String get whatsNewTitle => 'ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+
+  @override
+  String get whatsNewBody => 'ကတ်များ ဘယ်မှာထားသည်နှင့် ဘဏ်တစ်ခုစီ၏ ပိတ်ရန်နံပါတ်ကို သိမ်းပါ။ ပိုက်ဆံအိတ်ပျောက်လျှင် မိနစ်ပိုင်းအတွင်း အားလုံးပိတ်နိုင်သည်။';
+
+  @override
+  String get whatsNewDismiss => 'နားလည်ပြီ';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'နောက်ထပ်အသေးစိတ်တွင် အပိုများပါသည်- မှတ်စု၊ ထပ်ခါ၊ သက်တမ်းတိုးချိန်၊ မည်သူ့ပိုင်၊ ဘယ်မှာထား၊ လော့ခ်နှင့် ဓာတ်ပုံ။ လိုအပ်မှသာ ဖွင့်ပါ။';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'မပြမီ လက်ဗွေ သို့မဟုတ် မျက်နှာပြင်လော့ခ် တောင်းရန် မှတ်တမ်းကို လော့ခ်ချပါ။ ဘယ်မှာထားသည်ကို ရွေးပါ၊ ဥပမာ ပိုက်ဆံအိတ်၊ စာရွက်စာတမ်းဓာတ်ပုံ ထည့်ပါ။';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'ပိုက်ဆံအိတ် ပျောက်သွားလား? အထဲရှိသမျှကို ကြည့်ပါ၊ တစ်ချက်နှိပ်ဖြင့် ဘဏ်တစ်ခုစီကို ဖုန်းခေါ်ပြီး ကျန်အဆင့်များကို လိုက်နာပါ။';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'အိမ်ပြောင်း၊ ကလေး၊ အလုပ်သစ် သို့မဟုတ် အရေးပေါ်? ဘဝဖြစ်ရပ်များသည် သင့်မှတ်တမ်း၊ အဆင့်နှင့် ရက်စွဲများပါ အစီအစဉ်ကို ပေးသည်။';
+
+  @override
+  String get storySampleQuestion => 'ဒီနှစ် ဘာတွေ သက်တမ်းကုန်မလဲ?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'သင့် $name သည် မတ်လတွင် သက်တမ်းကုန်မည်။ တစ်လကြိုတင် သတိပေးချက် လိုချင်ပါသလား?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name သည် ရက် 30 အတွင်း သက်တမ်းကုန်မည်။ သက်တမ်းတိုးရန် နှိပ်ပါ။';
+  }
+
+  @override
+  String get storySampleGym => 'အားကစားရုံ အသင်းဝင်';
+
+  @override
+  String get storySampleFirstAid => 'ရှေးဦးသူနာပြု လက်မှတ်';
+
+  @override
+  String get storySampleEncrypt => 'ဓာတ်ပုံများ ကုဒ်ဝှက်ပါ';
+
+  @override
+  String get storySampleAppLock => 'အက်ပ်လော့ခ်';
+
+  @override
+  String get storySampleHideApp => 'အက်ပ်ပြောင်းစနစ်တွင် အကြောင်းအရာကို ဖျောက်ပါ';
+
+  @override
+  String get storyHome1Title => 'သင့်နေ့ကို တစ်ချက်ကြည့်ရုံဖြင့်';
+
+  @override
+  String get storyHome1Body => 'ပင်မမျက်နှာပြင်သည် ယနေ့အရေးကြီးသည်များကို ပြသည်- မကြာမီ သက်တမ်းကုန်မည့်အရာနှင့် သင့်တွင် မှတ်တမ်းမည်မျှရှိသည်။';
+
+  @override
+  String get storyHome2Title => 'မည်သည့်အရာမဆို ရှာပါ';
+
+  @override
+  String get storyHome2Body => 'အမည်၊ အုပ်စု သို့မဟုတ် လူဖြင့် မှတ်တမ်းရှာရန် ရှာဖွေမှုကို နှိပ်ပါ။';
+
+  @override
+  String get storyHome3Title => 'ခရီးစဉ်နှင့် အစီအစဉ်များ';
+
+  @override
+  String get storyHome3Body => 'သင်စီစဉ်နေသော ခရီးစဉ်များနှင့် လက်ရှိ ဘဝဖြစ်ရပ်အစီအစဉ်များ၊ ကျန်ရှိသည်များနှင့်အတူ ဤနေရာတွင် ပေါ်သည်။';
+
+  @override
+  String get storyHome4Title => 'တစ်ချက်နှိပ်ဖြင့် အကူအညီ';
+
+  @override
+  String get storyHome4Body => 'မီးပွားခလုတ်က «Vaultara ကို မေးရန်» ကို ဖွင့်သည်။ သင့်ဓာတ်ပုံက ပရိုဖိုင်၊ ဆက်တင်နှင့် သင်ခန်းစာများကို ဖွင့်သည်။';
+
+  @override
+  String get storyRenew1Title => 'သတိပေးချက် ရောက်လာသည်';
+
+  @override
+  String get storyRenew1Body => 'မှတ်တမ်း သက်တမ်းမကုန်မီ Vaultara က သတိပေးသည်။ မှတ်တမ်းဖွင့်ရန် သတိပေးချက်ကို နှိပ်ပါ။';
+
+  @override
+  String get storyRenew2Title => 'ရက်စွဲအသစ် သိမ်းပါ';
+
+  @override
+  String get storyRenew2Body => 'သက်တမ်းတိုးပြီးလား? «သက်တမ်းတိုးရန်» ကိုနှိပ်ပြီး သက်တမ်းကုန်ရက်အသစ် ထည့်ပါ။ သတိပေးချက်များလည်း လိုက်ရွှေ့သည်။';
+
+  @override
+  String get storyRenew3Title => 'ဘယ်လိုလုပ်ရမလဲ မသေချာဘူးလား?';
+
+  @override
+  String get storyRenew3Body => 'မှတ်တမ်းများစွာတွင် အဆင့်များ၊ စာရွက်စာတမ်းနှင့် ပုံမှန်ကုန်ကျစရိတ်ပါ လမ်းညွှန်ရှိသည်။';
+
+  @override
+  String get storyRenew4Title => 'ထပ်ခါဖြစ်ပါစေ';
+
+  @override
+  String get storyRenew4Body => 'စာရင်းသွင်းမှုနှင့် နှစ်စဉ်ပေးချေမှုများအတွက် ထပ်ခါကို ဖွင့်ပါ၊ ရက်စွဲသည် အလိုအလျောက် ရှေ့တိုးမည်။';
+
+  @override
+  String get storyAsk1Title => 'သင့်စကားဖြင့် မေးပါ';
+
+  @override
+  String get storyAsk1Body => '«ဒီနှစ် ဘာတွေ သက်တမ်းကုန်မလဲ?» ကဲ့သို့ မေးပြီး သင့်မှတ်တမ်းများမှ အဖြေရယူပါ။';
+
+  @override
+  String get storyAsk2Title => 'စာရိုက်မည့်အစား ပြောပါ';
+
+  @override
+  String get storyAsk2Body => 'မိုက်ကိုနှိပ်ပြီး ပြောပါ။ ပြောနေစဉ် စကားလုံးများ ပေါ်လာပြီး ချက်ချင်း ပို့နိုင်သည်။';
+
+  @override
+  String get storyAsk3Title => 'ပြောင်းလဲမှုတိုင်းကို သင်အတည်ပြုသည်';
+
+  @override
+  String get storyAsk3Body => 'မှတ်တမ်းထည့်ရန် သို့မဟုတ် ပြောင်းရန် တောင်းဆိုပါ၊ ပထမဆုံး ကတ်တစ်ခုကို မြင်ရမည်။ သင်အတည်မပြုမချင်း မည်သည့်အရာမျှ မသိမ်းပါ။';
+
+  @override
+  String get storyAsk4Title => 'မည်သည့်ပြောင်းလဲမှုကိုမဆို ပြန်ဖျက်ပါ';
+
+  @override
+  String get storyAsk4Body => 'စိတ်ပြောင်းသွားလား? အတည်ပြုထားသော ပြောင်းလဲမှုတိုင်းကို ထိုကတ်မှပင် ပြန်ဖျက်နိုင်သည်။';
+
+  @override
+  String get storyAsk5Title => 'ရပ်ခဲ့သည့်နေရာမှ ဆက်ပါ';
+
+  @override
+  String get storyAsk5Body => 'ချက်တင်များကို «စကားပြောမှတ်တမ်း» တွင် ရက် 90 သိမ်းထားပြီး အကြံပြုမေးခွန်းများက စတင်ရန် ကူညီသည်။';
+
+  @override
+  String get storyWallet1Title => 'ဦးစွာ ပြင်ဆင်ပါ';
+
+  @override
+  String get storyWallet1Body => 'ကတ် သို့မဟုတ် စာရွက်စာတမ်းကို ဖွင့်ပြီး ဘယ်မှာထားသည်ကို ရွေးပါ၊ ဥပမာ ပိုက်ဆံအိတ် သို့မဟုတ် အိတ်။';
+
+  @override
+  String get storyWallet2Title => 'ပိတ်ရန်နံပါတ် သိမ်းပါ';
+
+  @override
+  String get storyWallet2Body => 'ဘဏ်တစ်ခုစီ၏ ပိတ်ရန်နံပါတ်ကို ယခုထည့်ပါ။ ၎င်းသည် ကတ်ပေါ်တွင်ရှိပြီး လိုအပ်ချိန်တွင် ကတ်သည် သင့်ထံ ရှိမည်မဟုတ်ပါ။';
+
+  @override
+  String get storyWallet3Title => 'ပျောက်လျှင်';
+
+  @override
+  String get storyWallet3Body => '«ပိုက်ဆံအိတ် ပျောက်သွားသည်» ကိုဖွင့်ပြီး «ပျောက်သည်» သို့မဟုတ် «ခိုးခံရသည်» ကို နှိပ်ပါ။ Vaultara သည် အထဲရှိသမျှကို စာရင်းပြုစုသည်။';
+
+  @override
+  String get storyWallet4Title => 'မိနစ်ပိုင်းအတွင်း ကတ်ပိတ်ပါ';
+
+  @override
+  String get storyWallet4Body => 'တစ်ချက်နှိပ်ဖြင့် ဘဏ်တစ်ခုစီကို ဖုန်းခေါ်၊ ကတ်များကို ပိတ်ပြီးဟု အမှတ်အသားပြုပြီး တိုင်ကြားမှုနံပါတ် သိမ်းပါ။';
+
+  @override
+  String get storyWallet5Title => 'အစားထိုးပြီး လုံခြုံစွာနေပါ';
+
+  @override
+  String get storyWallet5Body => 'စာရွက်စာတမ်းများ အစားထိုးပါ၊ သတိပေးသည့်အခါ စာရင်းရှင်းတမ်းများ စစ်ပါ၊ တွေ့လျှင် «တွေ့ပြီ» ကို နှိပ်ပါ။';
+
+  @override
+  String get storyLife1Title => 'အရေးကြီးသောအချိန်၊ အစီအစဉ်တစ်ခု';
+
+  @override
+  String get storyLife1Body => 'အိမ်ပြောင်း၊ ကလေး၊ အလုပ်သစ် သို့မဟုတ် အရေးပေါ်- «ဘဝ အဖြစ်အပျက်များ» တွင် ဘာဖြစ်နေသည်ကို ရွေးပါ။';
+
+  @override
+  String get storyLife2Title => 'သင့်မှတ်တမ်းများ စနစ်တကျ';
+
+  @override
+  String get storyLife2Body => 'မည်သည့်မှတ်တမ်းကို အပ်ဒိတ်၊ ပယ်ဖျက် သို့မဟုတ် သက်တမ်းတိုးရမည်နှင့် မည်သည်ကို ထည့်ရန်လိုနိုင်သည်ကို အစီအစဉ်က ပြသည်။';
+
+  @override
+  String get storyLife3Title => 'အဆင့်နှင့် ရက်စွဲများ';
+
+  @override
+  String get storyLife3Body => 'အဆင့်များသည် မှတ်တမ်းမဟုတ်သည်များကို လွှမ်းခြုံပြီး မည်သည့်အရာမျှ နောက်မကျစေရန် ဘယ်အချိန်လျှောက်ရမည်ကို စတင်ရက်များက ပြောသည်။';
+
+  @override
+  String get storyLife4Title => 'သင့်ဟာ ဖြစ်အောင်လုပ်ပါ';
+
+  @override
+  String get storyLife4Body => 'ကိုယ်ပိုင်အဆင့်များ ထည့်ပါ၊ အစီအစဉ်ကို PDF အဖြစ် မျှဝေပြီး ရက်စွဲဝန်းကျင်တွင် သတိပေးချက်ရယူပါ။';
+
+  @override
+  String get storyPhotos1Title => 'သင့်စာရွက်စာတမ်း ဓာတ်ပုံများ';
+
+  @override
+  String get storyPhotos1Body => 'မှတ်တမ်းထဲမှ ကတ် သို့မဟုတ် စာရွက်စာတမ်း၏ ရှေ့နှင့် နောက်ဓာတ်ပုံများ ထည့်ပါ။';
+
+  @override
+  String get storyPhotos2Title => 'ဖုန်းပေါ်တွင် ကုဒ်ဝှက်ထားသည်';
+
+  @override
+  String get storyPhotos2Body => 'ဓာတ်ပုံကုဒ်ဝှက်ခြင်းကို ဖွင့်ပါ၊ မတင်မီ ဓာတ်ပုံများ ဖုန်းပေါ်တွင် လော့ခ်ကျမည်။';
+
+  @override
+  String get storyPhotos3Title => 'အရေးကြီးမှတ်တမ်းများ လော့ခ်ချပါ';
+
+  @override
+  String get storyPhotos3Body => 'မှတ်တမ်းကို လော့ခ်ချပါ၊ မဖွင့်မီ လက်ဗွေ သို့မဟုတ် မျက်နှာပြင်လော့ခ် တောင်းမည်။';
+
+  @override
+  String get storyPhotos4Title => 'အက်ပ်တစ်ခုလုံး လော့ခ်ချပါ';
+
+  @override
+  String get storyPhotos4Body => 'လုံခြုံရေးဆက်တင်တွင် အက်ပ်လော့ခ်ဖွင့်ပြီး အက်ပ်ပြောင်းချိန် အကြောင်းအရာကို ဖျောက်ပါ။';
+
+  @override
+  String get storyShare1Title => 'မှတ်တမ်းတစ်ခု မျှဝေပါ';
+
+  @override
+  String get storyShare1Body => 'မှတ်တမ်းဖွင့်ပြီး ထိုမှတ်တမ်းကိုသာ ပြသည့် လင့်ခ်ကို မျှဝေပါ၊ အခြားမရှိ။';
+
+  @override
+  String get storyShare2Title => 'သက်သေအထောက်အထား အစုံ';
+
+  @override
+  String get storyShare2Body => 'ရွေးချယ်ထားသော မှတ်တမ်းများကို ဓာတ်ပုံများနှင့်အတူ အိမ်ရှင်၊ ဘဏ် သို့မဟုတ် ရုံးအတွက် PDF တစ်ခုထဲ ထည့်ပါ။';
+
+  @override
+  String get storyShare3Title => 'ထိန်းချုပ်မှု သင့်လက်ထဲ';
+
+  @override
+  String get storyShare3Body => '«မျှဝေထားသော လင့်ခ်များ» သည် သင်ပြုလုပ်ခဲ့သော လင့်ခ်တိုင်းကို ပြသည်။ မည်သည့်လင့်ခ်ကိုမဆို အချိန်မရွေး ရပ်ပါ၊ ထို့နောက် မပွင့်တော့ပါ။';
+
+  @override
+  String get storyHousehold1Title => 'သင့်အိမ်ထောင်စုကို ဖိတ်ပါ';
+
+  @override
+  String get storyHousehold1Body => 'ဖိတ်ကြားကုဒ် သို့မဟုတ် လင့်ခ်ကို မျှဝေပါ။ လူတိုင်း ကိုယ်ပိုင်အကောင့်ဖြင့် ဝင်ရောက်သည်။';
+
+  @override
+  String get storyHousehold2Title => 'မှတ်တမ်းအစုံ တစ်ခု';
+
+  @override
+  String get storyHousehold2Body => 'လူတိုင်း တူညီသော မျှဝေမှတ်တမ်းများကို မြင်ပြီး တူညီသော သတိပေးချက်များ ရရှိသည်။';
+
+  @override
+  String get storyHousehold3Title => 'မည်သူ့ပိုင်လဲ?';
+
+  @override
+  String get storyHousehold3Body => 'မှတ်တမ်းတိုင်းသည် တစ်စုံတစ်ယောက်၏ ပိုင်ဆိုင်မှု ဖြစ်နိုင်သည်။ ၎င်းတို့၏အမည်ကို မှတ်တမ်းနှင့် သတိပေးချက်များတွင် ပြသည်။';
+
+  @override
+  String get storyImport1Title => 'ကတ်စကန်ဖတ်ပါ';
+
+  @override
+  String get storyImport1Body => 'ကတ် သို့မဟုတ် စာရွက်စာတမ်း ဓာတ်ပုံရိုက်ပါ၊ Vaultara က အမည်နှင့် သက်တမ်းကုန်ရက်ကို ဖြည့်ပေးမည်။';
+
+  @override
+  String get storyImport2Title => 'စာရင်း တင်သွင်းပါ';
+
+  @override
+  String get storyImport2Body => 'စာရင်းဇယား ရှိပြီးသားလား? တင်သွင်းပြီး မသိမ်းမီ အတန်းတိုင်းကို စစ်ပါ။';
+
+  @override
+  String get storyImport3Title => 'Vaultara သို့ မျှဝေပါ';
+
+  @override
+  String get storyImport3Body => 'မှတ်တမ်းအသစ်စရန် အခြားအက်ပ်မှ ဓာတ်ပုံ၊ PDF သို့မဟုတ် စာသားကို Vaultara သို့ မျှဝေပါ။';
+
+  @override
+  String get storyCosts1Title => 'သင့်ပြက္ခဒိန်ထဲတွင်';
+
+  @override
+  String get storyCosts1Body => 'သက်တမ်းကုန်ရက်များကို ဖုန်းပြက္ခဒိန်ထဲ အခြားအစီအစဉ်များဘေးတွင် ထည့်ပါ။';
+
+  @override
+  String get storyCosts2Title => 'သက်တမ်းတိုးစရိတ်';
+
+  @override
+  String get storyCosts2Body => 'မှတ်တမ်းတွင် သက်တမ်းတိုးစရိတ် ထည့်ပါ၊ တစ်နှစ်လျှင် မည်မျှသုံးသည်ကို Vaultara က ပြမည်။';
+
+  @override
+  String get storyCosts3Title => 'ကြိုတင်စီစဉ်ပါ';
+
+  @override
+  String get storyCosts3Body => 'ကုန်ကျစရိတ်များသောလများကို ကြိုမြင်ပါ၊ ကြီးမားသော သက်တမ်းတိုးမှုက ဘယ်တော့မှ အံ့အားသင့်စေမည်မဟုတ်။';
+
+  @override
+  String get storyBusiness1Title => 'သင့်အဖွဲ့ကို စောင့်ကြည့်ပါ';
+
+  @override
+  String get storyBusiness1Body => 'ဝန်ထမ်းများထည့်ပြီး ၎င်းတို့၏ လက်မှတ်၊ ခွင့်ပြုချက်နှင့် လိုင်စင်များကို တစ်နေရာတည်းတွင် ထားပါ။';
+
+  @override
+  String get storyBusiness2Title => 'အီးမေးလ် သတိပေးချက်များ';
+
+  @override
+  String get storyBusiness2Body => 'စာရွက်စာတမ်း သက်တမ်းမကုန်မီ ဝန်ထမ်းများ အီးမေးလ်ရရှိသည်၊ အက်ပ်မရှိလျှင်ပင်။';
+
+  @override
+  String get storyBusiness3Title => 'လစဉ်အစီရင်ခံစာ';
+
+  @override
+  String get storyBusiness3Body => 'လတိုင်း အစီရင်ခံစာက ဘာတရားဝင်သည်၊ ဘာသက်တမ်းကုန်တော့မည်နှင့် ဘာလိုနေသည်ကို ပြသည်။';
+
+  @override
+  String get storyBusiness4Title => 'အပ်ဒိတ် တောင်းဆိုပါ';
+
+  @override
+  String get storyBusiness4Body => 'လင့်ခ်ပို့ပါ၊ ဝန်ထမ်းက သက်တမ်းတိုးထားသော စာရွက်စာတမ်းကို ကိုယ်တိုင်တင်မည်။';
 }

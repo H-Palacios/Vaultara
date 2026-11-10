@@ -7496,4 +7496,438 @@ class AppLocalizationsEt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Sinu avakuva';
+
+  @override
+  String get tutorialsSubHome => 'Mida kaardid tähendavad ja kus kõik asub';
+
+  @override
+  String get tutorialsTitleRenew => 'Kirje uuendamine';
+
+  @override
+  String get tutorialsSubRenew => 'Mida teha, kui saabub meeldetuletus';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalender ja kulud';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Aegumiskuupäevad kalendris ja mida uuendused maksavad';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotod ja turvalisus';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Dokumendifotod, krüpteerimine ja lukud';
+
+  @override
+  String get tutorialsTitleSharing => 'Jaga turvaliselt';
+
+  @override
+  String get tutorialsSubSharing => 'Jaga kirjet, tee pakett, peata link';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skanni ja impordi';
+
+  @override
+  String get tutorialsSubImportScan => 'Lisa kiiresti palju kirjeid';
+
+  @override
+  String get tutorialsTitleHousehold => 'Jagatud majapidamine';
+
+  @override
+  String get tutorialsSubHousehold => 'Kutsu teisi kirjeid ja meeldetuletusi jagama';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Kaotasin rahakoti';
+
+  @override
+  String get tutorialsSubLostWallet => 'Valmistu kohe ja tegutse kiiresti, kui see kaob';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Elusündmused';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plaan kolimiseks, lapse sünniks, uueks tööks ja muuks';
+
+  @override
+  String get tutorialsTitleAsk => 'Küsi Vaultaralt';
+
+  @override
+  String get tutorialsSubAsk => 'Vestle või räägi oma kirjetega';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business-tööriistad';
+
+  @override
+  String get tutorialsSubBusiness => 'Töötajate dokumendid, meeldetuletused ja aruanded';
+
+  @override
+  String get tutorialsGroupBasics => 'Põhitõed';
+
+  @override
+  String get tutorialsGroupOnTop => 'Kõigel silm peal';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Reisid ja pere';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Elusündmused ja hädaolukorrad';
+
+  @override
+  String get tutorialsGroupPaid => 'Tasulised funktsioonid';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sammu',
+      one: '$count samm',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Tasulised paketid';
+
+  @override
+  String get tutorialsPaidNote => 'Saad seda vaadata iga paketiga. Funktsioon ise vajab tasulist paketti.';
+
+  @override
+  String get tutorialsBack => 'Tagasi';
+
+  @override
+  String get tutorialsTryIt => 'Proovi kohe';
+
+  @override
+  String get tutorialHintText => 'Oled uus? Vaata lühituuri';
+
+  @override
+  String get tutorialHintPlay => 'Näita';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Peatükk $number/$total';
+  }
+
+  @override
+  String get tourContinue => 'Jätka';
+
+  @override
+  String get tourSkip => 'Jäta vahele';
+
+  @override
+  String get tourSkipped => 'Vahele jäetud';
+
+  @override
+  String get tourDone => 'Oled kogu tuuri näinud';
+
+  @override
+  String get tourRestart => 'Alusta uuesti';
+
+  @override
+  String get whatsNewBadge => 'Uus';
+
+  @override
+  String get whatsNewTitle => 'Kaotasin rahakoti';
+
+  @override
+  String get whatsNewBody => 'Salvesta, kus sa kaarte hoiad, ja iga panga sulgemisnumber. Kui rahakott kaob, sulged kõik mõne minutiga.';
+
+  @override
+  String get whatsNewDismiss => 'Selge';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Rohkem üksikasju sisaldab lisasid: märkmed, kordumine, uuendusaeg, kellele kirje kuulub, kus seda hoiad, lukk ja fotod. Ava ainult vajadusel.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Lukusta kirje, et see nõuaks enne kuvamist sõrmejälge või ekraanilukku. Vali, kus seda hoiad, näiteks rahakotis, ja lisa dokumendi fotod.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Kaotasid rahakoti? Vaata, mis selles oli, helista igale pangale ühe puudutusega ja järgi ülejäänud samme.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Kolimine, laps, uus töö või hädaolukord? Elusündmused annab plaani sinu kirjete, sammude ja kuupäevadega.';
+
+  @override
+  String get storySampleQuestion => 'Mis tänavu aegub?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Sinu $name aegub märtsis. Kas soovid meeldetuletust kuu aega varem?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name aegub 30 päeva pärast. Puuduta uuendamiseks.';
+  }
+
+  @override
+  String get storySampleGym => 'Jõusaali liikmesus';
+
+  @override
+  String get storySampleFirstAid => 'Esmaabitunnistus';
+
+  @override
+  String get storySampleEncrypt => 'Krüpteeri fotod';
+
+  @override
+  String get storySampleAppLock => 'Rakenduse lukk';
+
+  @override
+  String get storySampleHideApp => 'Peida sisu rakenduste vahetajas';
+
+  @override
+  String get storyHome1Title => 'Sinu päev ühe pilguga';
+
+  @override
+  String get storyHome1Body => 'Avakuva näitab, mis on täna oluline: mis peagi aegub ja mitu kirjet sul on.';
+
+  @override
+  String get storyHome2Title => 'Leia kõik';
+
+  @override
+  String get storyHome2Body => 'Puuduta otsingut, et leida kirje nime, rühma või inimese järgi.';
+
+  @override
+  String get storyHome3Title => 'Reisid ja plaanid';
+
+  @override
+  String get storyHome3Body => 'Siin on sinu planeeritavad reisid ja käimasolevad elusündmuste plaanid koos järelejäänud tegevustega.';
+
+  @override
+  String get storyHome4Title => 'Abi ühe puudutusega';
+
+  @override
+  String get storyHome4Body => 'Sädemenupp avab „Küsi Vaultaralt“. Sinu foto avab profiili, seaded ja õpetused.';
+
+  @override
+  String get storyRenew1Title => 'Saabub meeldetuletus';
+
+  @override
+  String get storyRenew1Body => 'Enne kui kirje aegub, tuletab Vaultara sulle meelde. Puuduta meeldetuletust, et kirje avada.';
+
+  @override
+  String get storyRenew2Title => 'Salvesta uus kuupäev';
+
+  @override
+  String get storyRenew2Body => 'Uuendatud? Puuduta „Uuenda“ ja sisesta uus aegumiskuupäev. Meeldetuletused liiguvad kaasa.';
+
+  @override
+  String get storyRenew3Title => 'Ei tea, kuidas?';
+
+  @override
+  String get storyRenew3Body => 'Paljudel kirjetel on juhend sammude, dokumentide ja tavapärase hinnaga.';
+
+  @override
+  String get storyRenew4Title => 'Las see kordub';
+
+  @override
+  String get storyRenew4Body => 'Tellimuste ja aastamaksete puhul lülita kordumine sisse ja kuupäev liigub ise edasi.';
+
+  @override
+  String get storyAsk1Title => 'Küsi oma sõnadega';
+
+  @override
+  String get storyAsk1Body => 'Küsi näiteks „Mis tänavu aegub?“ ja saa vastused oma kirjetest.';
+
+  @override
+  String get storyAsk2Title => 'Räägi trükkimise asemel';
+
+  @override
+  String get storyAsk2Body => 'Puuduta mikrofoni ja räägi. Sõnad ilmuvad rääkimise ajal ja saad kohe saata.';
+
+  @override
+  String get storyAsk3Title => 'Sina kinnitad iga muudatuse';
+
+  @override
+  String get storyAsk3Body => 'Palu kirjet lisada või muuta ja näed esmalt kaarti. Midagi ei salvestata enne, kui kinnitad.';
+
+  @override
+  String get storyAsk4Title => 'Võta iga muudatus tagasi';
+
+  @override
+  String get storyAsk4Body => 'Mõtlesid ümber? Iga kinnitatud muudatuse saab samalt kaardilt tagasi võtta.';
+
+  @override
+  String get storyAsk5Title => 'Jätka sealt, kus pooleli jäid';
+
+  @override
+  String get storyAsk5Body => 'Vestlusi hoitakse 90 päeva jaotises „Vestluste ajalugu“ ja soovitatud küsimused aitavad alustada.';
+
+  @override
+  String get storyWallet1Title => 'Valmistu esmalt';
+
+  @override
+  String get storyWallet1Body => 'Ava kaart või dokument ja vali, kus seda hoiad, näiteks rahakotis või kotis.';
+
+  @override
+  String get storyWallet2Title => 'Salvesta sulgemisnumber';
+
+  @override
+  String get storyWallet2Body => 'Lisa kohe iga panga sulgemisnumber. See on kaardil, mida sul vajadusel enam pole.';
+
+  @override
+  String get storyWallet3Title => 'Kui see kaob';
+
+  @override
+  String get storyWallet3Body => 'Ava „Kaotasin rahakoti“ ja puuduta „Kadunud“ või „Varastatud“. Vaultara loetleb kõik, mis selles oli.';
+
+  @override
+  String get storyWallet4Title => 'Sulge kaardid minutitega';
+
+  @override
+  String get storyWallet4Body => 'Helista igale pangale ühe puudutusega, märgi kaardid suletuks ja salvesta avalduse number.';
+
+  @override
+  String get storyWallet5Title => 'Asenda ja püsi turvaliselt';
+
+  @override
+  String get storyWallet5Body => 'Asenda dokumendid, vaata meeldetuletuse peale väljavõtted üle ja puuduta „Leidsin selle“, kui see leitakse.';
+
+  @override
+  String get storyLife1Title => 'Suured hetked, üks plaan';
+
+  @override
+  String get storyLife1Body => 'Kolimine, laps, uus töö või hädaolukord: vali jaotises „Elusündmused“, mis toimub.';
+
+  @override
+  String get storyLife2Title => 'Sinu kirjed korras';
+
+  @override
+  String get storyLife2Body => 'Plaan näitab, milliseid kirjeid uuendada, tühistada või pikendada ja milliseid võib-olla lisada.';
+
+  @override
+  String get storyLife3Title => 'Sammud ja kuupäevad';
+
+  @override
+  String get storyLife3Body => 'Sammud katavad selle, mis pole kirje, ja alguskuupäevad ütlevad, millal taotleda, et miski ei hilineks.';
+
+  @override
+  String get storyLife4Title => 'Tee see enda omaks';
+
+  @override
+  String get storyLife4Body => 'Lisa oma sammud, jaga plaani PDF-ina ja saa kuupäeva paiku meeldetuletusi.';
+
+  @override
+  String get storyPhotos1Title => 'Sinu dokumentide fotod';
+
+  @override
+  String get storyPhotos1Body => 'Lisa kirjest kaardi või dokumendi esi- ja tagakülje fotod.';
+
+  @override
+  String get storyPhotos2Title => 'Telefonis krüpteeritud';
+
+  @override
+  String get storyPhotos2Body => 'Lülita fotode krüpteerimine sisse ja fotod lukustatakse telefonis enne üleslaadimist.';
+
+  @override
+  String get storyPhotos3Title => 'Lukusta tundlikud kirjed';
+
+  @override
+  String get storyPhotos3Body => 'Lukusta kirje ja see küsib enne avanemist sõrmejälge või ekraanilukku.';
+
+  @override
+  String get storyPhotos4Title => 'Lukusta kogu rakendus';
+
+  @override
+  String get storyPhotos4Body => 'Lülita turvaseadetes sisse rakenduse lukk ja peida sisu rakendust vahetades.';
+
+  @override
+  String get storyShare1Title => 'Jaga üht kirjet';
+
+  @override
+  String get storyShare1Body => 'Ava kirje ja jaga linki, mis näitab ainult seda kirjet ja mitte midagi muud.';
+
+  @override
+  String get storyShare2Title => 'Tõendipakett';
+
+  @override
+  String get storyShare2Body => 'Pane valitud kirjed koos fotodega ühte PDF-i üürileandjale, pangale või asutusele.';
+
+  @override
+  String get storyShare3Title => 'Kontroll on sinu käes';
+
+  @override
+  String get storyShare3Body => '„Jagatud lingid“ näitab iga loodud linki. Peata ükskõik milline igal ajal ja see ei avane enam.';
+
+  @override
+  String get storyHousehold1Title => 'Kutsu oma majapidamine';
+
+  @override
+  String get storyHousehold1Body => 'Jaga kutsekoodi või linki. Igaüks logib sisse oma kontoga.';
+
+  @override
+  String get storyHousehold2Title => 'Üks kirjete komplekt';
+
+  @override
+  String get storyHousehold2Body => 'Kõik näevad samu jagatud kirjeid ja saavad samu meeldetuletusi.';
+
+  @override
+  String get storyHousehold3Title => 'Kellele see kuulub?';
+
+  @override
+  String get storyHousehold3Body => 'Iga kirje võib kellelegi kuuluda. Nimi on näha kirjel ja meeldetuletustes.';
+
+  @override
+  String get storyImport1Title => 'Skanni kaarti';
+
+  @override
+  String get storyImport1Body => 'Pildista kaarti või dokumenti ja Vaultara täidab nime ja aegumiskuupäeva sinu eest.';
+
+  @override
+  String get storyImport2Title => 'Impordi loend';
+
+  @override
+  String get storyImport2Body => 'Sul on juba tabel? Impordi see ja vaata iga rida üle enne salvestamist.';
+
+  @override
+  String get storyImport3Title => 'Jaga Vaultarasse';
+
+  @override
+  String get storyImport3Body => 'Jaga fotot, PDF-i või teksti teisest rakendusest Vaultarasse, et alustada uut kirjet.';
+
+  @override
+  String get storyCosts1Title => 'Sinu kalendris';
+
+  @override
+  String get storyCosts1Body => 'Lisa aegumiskuupäevad telefoni kalendrisse teiste plaanide kõrvale.';
+
+  @override
+  String get storyCosts2Title => 'Mida uuendused maksavad';
+
+  @override
+  String get storyCosts2Body => 'Sisesta kirjesse uuenduse hind ja Vaultara näitab, palju sa aastas kulutad.';
+
+  @override
+  String get storyCosts3Title => 'Planeeri ette';
+
+  @override
+  String get storyCosts3Body => 'Näe kalleid kuid ette, et suur uuendus sind kunagi ei üllataks.';
+
+  @override
+  String get storyBusiness1Title => 'Jälgi oma meeskonda';
+
+  @override
+  String get storyBusiness1Body => 'Lisa töötajad ja hoia nende tunnistusi, lube ja litsentse ühes kohas.';
+
+  @override
+  String get storyBusiness2Title => 'Meeldetuletused e-postiga';
+
+  @override
+  String get storyBusiness2Body => 'Töötajad saavad e-kirja enne dokumentide aegumist ka ilma rakenduseta.';
+
+  @override
+  String get storyBusiness3Title => 'Kuuaruanne';
+
+  @override
+  String get storyBusiness3Body => 'Igal kuul näitab aruanne, mis kehtib, mis aegub ja mis puudub.';
+
+  @override
+  String get storyBusiness4Title => 'Küsi uuendust';
+
+  @override
+  String get storyBusiness4Body => 'Saada link ja töötaja laadib uuendatud dokumendi ise üles.';
 }

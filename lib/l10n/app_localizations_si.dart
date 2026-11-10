@@ -7491,4 +7491,438 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'ඔබේ මුල් තිරය';
+
+  @override
+  String get tutorialsSubHome => 'කාඩ්පත්වල තේරුම සහ සියල්ල කොහේද යන්න';
+
+  @override
+  String get tutorialsTitleRenew => 'වාර්තාවක් අලුත් කිරීම';
+
+  @override
+  String get tutorialsSubRenew => 'සිහිකැඳවීමක් ආ විට කළ යුතු දේ';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'දින දර්ශනය සහ වියදම්';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'දින දර්ශනයේ කල් ඉකුත් දින සහ අලුත් කිරීමේ වියදම';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'ඡායාරූප සහ ආරක්ෂාව';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'ලේඛන ඡායාරූප, සංකේතනය සහ අගුලු';
+
+  @override
+  String get tutorialsTitleSharing => 'ආරක්ෂිතව බෙදාගන්න';
+
+  @override
+  String get tutorialsSubSharing => 'වාර්තාවක් බෙදාගන්න, පැකේජයක් සාදන්න, සබැඳියක් නවත්වන්න';
+
+  @override
+  String get tutorialsTitleImportScan => 'ස්කෑන් සහ ආයාත කිරීම';
+
+  @override
+  String get tutorialsSubImportScan => 'වාර්තා බොහොමයක් ඉක්මනින් එක් කරන්න';
+
+  @override
+  String get tutorialsTitleHousehold => 'බෙදාගත් නිවස';
+
+  @override
+  String get tutorialsSubHousehold => 'වාර්තා සහ සිහිකැඳවීම් බෙදාගැනීමට අන් අයට ආරාධනා කරන්න';
+
+  @override
+  String get tutorialsTitleLostWallet => 'මගේ පසුම්බිය නැති වුණා';
+
+  @override
+  String get tutorialsSubLostWallet => 'දැන්ම සූදානම් වන්න, නැති වුවහොත් ඉක්මනින් ක්‍රියා කරන්න';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'ජීවිත සිදුවීම්';
+
+  @override
+  String get tutorialsSubLifeEvents => 'නිවස මාරුව, දරුවෙක්, නව රැකියාවක් සහ තවත් දේ සඳහා සැලසුමක්';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara ගෙන් අසන්න';
+
+  @override
+  String get tutorialsSubAsk => 'ඔබේ වාර්තා සමඟ කතාබහ කරන්න හෝ කතා කරන්න';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business මෙවලම්';
+
+  @override
+  String get tutorialsSubBusiness => 'කාර්ය මණ්ඩල ලේඛන, සිහිකැඳවීම් සහ වාර්තා';
+
+  @override
+  String get tutorialsGroupBasics => 'මූලික කරුණු';
+
+  @override
+  String get tutorialsGroupOnTop => 'සියල්ල ගැන අවධානයෙන්';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'සංචාර සහ පවුල';
+
+  @override
+  String get tutorialsGroupEmergencies => 'ජීවිත සිදුවීම් සහ හදිසි අවස්ථා';
+
+  @override
+  String get tutorialsGroupPaid => 'ගෙවන විශේෂාංග';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'පියවර $count',
+      one: 'පියවර $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'ගෙවන සැලසුම්';
+
+  @override
+  String get tutorialsPaidNote => 'ඕනෑම සැලසුමකින් මෙය නැරඹිය හැක. විශේෂාංගයට ගෙවන සැලසුමක් අවශ්‍යයි.';
+
+  @override
+  String get tutorialsBack => 'ආපසු';
+
+  @override
+  String get tutorialsTryIt => 'දැන් උත්සාහ කරන්න';
+
+  @override
+  String get tutorialHintText => 'මෙහි අලුත්ද? කෙටි චාරිකාව බලන්න';
+
+  @override
+  String get tutorialHintPlay => 'මට පෙන්වන්න';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'පරිච්ඡේදය $number / $total';
+  }
+
+  @override
+  String get tourContinue => 'ඉදිරියට';
+
+  @override
+  String get tourSkip => 'මඟ හරින්න';
+
+  @override
+  String get tourSkipped => 'මඟ හැරිණි';
+
+  @override
+  String get tourDone => 'ඔබ සම්පූර්ණ චාරිකාව බැලුවා';
+
+  @override
+  String get tourRestart => 'නැවත ආරම්භ කරන්න';
+
+  @override
+  String get whatsNewBadge => 'අලුත්';
+
+  @override
+  String get whatsNewTitle => 'මගේ පසුම්බිය නැති වුණා';
+
+  @override
+  String get whatsNewBody => 'ඔබ කාඩ්පත් තබන තැන සහ එක් එක් බැංකුවේ අවහිර කිරීමේ අංකය සුරකින්න. මුදල් පසුම්බිය නැති වුවහොත් මිනිත්තු කිහිපයකින් සියල්ල අවහිර කරනු ඇත.';
+
+  @override
+  String get whatsNewDismiss => 'තේරුණා';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'තවත් විස්තරවල අමතර දේ ඇත: සටහන්, පුනරාවර්තනය, අලුත් කිරීමේ කාලය, කාගේද, කොහේ තබනවාද, අගුල සහ ඡායාරූප. අවශ්‍ය විට පමණක් විවෘත කරන්න.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'පෙන්වීමට පෙර ඇඟිලි සලකුණ හෝ තිර අගුල ඉල්ලන ලෙස වාර්තාවක් අගුළු දමන්න. ඔබ එය තබන තැන තෝරන්න, උදා. මුදල් පසුම්බිය, ලේඛනයේ ඡායාරූප එක් කරන්න.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'මුදල් පසුම්බිය නැති වුණාද? එහි තිබූ සියල්ල බලන්න, එක් තට්ටුවකින් එක් එක් බැංකුවට අමතන්න, ඉතිරිය සඳහා පියවර අනුගමනය කරන්න.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'නිවස මාරුව, දරුවෙක්, නව රැකියාවක් හෝ හදිසියක්? ජීවිත සිදුවීම් ඔබේ වාර්තා, පියවර සහ දින සමඟ සැලසුමක් දෙයි.';
+
+  @override
+  String get storySampleQuestion => 'මේ වසරේ කල් ඉකුත් වන්නේ කුමක්ද?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'ඔබේ $name මාර්තුවේ කල් ඉකුත් වේ. මසකට පෙර සිහිකැඳවීමක් අවශ්‍යද?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name දින 30 කින් කල් ඉකුත් වේ. අලුත් කිරීමට තට්ටු කරන්න.';
+  }
+
+  @override
+  String get storySampleGym => 'ජිම් සාමාජිකත්වය';
+
+  @override
+  String get storySampleFirstAid => 'ප්‍රථමාධාර සහතිකය';
+
+  @override
+  String get storySampleEncrypt => 'ඡායාරූප සංකේතනය කරන්න';
+
+  @override
+  String get storySampleAppLock => 'යෙදුම් අගුල';
+
+  @override
+  String get storySampleHideApp => 'යෙදුම් මාරුකරුවේ අන්තර්ගතය සඟවන්න';
+
+  @override
+  String get storyHome1Title => 'එක් බැල්මකින් ඔබේ දිනය';
+
+  @override
+  String get storyHome1Body => 'මුල් තිරය අද වැදගත් දේ පෙන්වයි: ඉක්මනින් කල් ඉකුත් වන දේ සහ ඔබට වාර්තා කීයක් තිබේද යන්න.';
+
+  @override
+  String get storyHome2Title => 'ඕනෑම දෙයක් සොයන්න';
+
+  @override
+  String get storyHome2Body => 'නම, කණ්ඩායම හෝ පුද්ගලයා අනුව වාර්තාවක් සොයා ගැනීමට සෙවීම තට්ටු කරන්න.';
+
+  @override
+  String get storyHome3Title => 'සංචාර සහ සැලසුම්';
+
+  @override
+  String get storyHome3Body => 'ඔබ සැලසුම් කරන සංචාර සහ පවතින ජීවිත සිදුවීම් සැලසුම්, ඉතිරි දේ සමඟ, මෙහි දිස්වේ.';
+
+  @override
+  String get storyHome4Title => 'එක් තට්ටුවකින් උදව්';
+
+  @override
+  String get storyHome4Body => 'දීප්ති බොත්තම «Vaultara ගෙන් අසන්න» විවෘත කරයි. ඔබේ ඡායාරූපය පැතිකඩ, සැකසීම් සහ නිබන්ධන විවෘත කරයි.';
+
+  @override
+  String get storyRenew1Title => 'සිහිකැඳවීමක් පැමිණේ';
+
+  @override
+  String get storyRenew1Body => 'වාර්තාවක් කල් ඉකුත් වීමට පෙර Vaultara ඔබට මතක් කරයි. වාර්තාව විවෘත කිරීමට සිහිකැඳවීම තට්ටු කරන්න.';
+
+  @override
+  String get storyRenew2Title => 'නව දිනය සුරකින්න';
+
+  @override
+  String get storyRenew2Body => 'අලුත් කළාද? «අලුත් කරන්න» තට්ටු කර නව කල් ඉකුත් දිනය ඇතුළත් කරන්න. සිහිකැඳවීම් ද ඒ සමඟ ගමන් කරයි.';
+
+  @override
+  String get storyRenew3Title => 'කොහොමද කියා විශ්වාස නැද්ද?';
+
+  @override
+  String get storyRenew3Body => 'බොහෝ වාර්තාවලට පියවර, ලේඛන සහ සාමාන්‍ය වියදම සහිත මාර්ගෝපදේශයක් ඇත.';
+
+  @override
+  String get storyRenew4Title => 'පුනරාවර්තනය වීමට ඉඩ දෙන්න';
+
+  @override
+  String get storyRenew4Body => 'දායකත්ව සහ වාර්ෂික ගෙවීම් සඳහා පුනරාවර්තනය සක්‍රිය කරන්න, දිනය ඉබේම ඉදිරියට යයි.';
+
+  @override
+  String get storyAsk1Title => 'ඔබේම වචනවලින් අසන්න';
+
+  @override
+  String get storyAsk1Body => '«මේ වසරේ කල් ඉකුත් වන්නේ කුමක්ද?» වැනි දේ අසා ඔබේ වාර්තාවලින් පිළිතුරු ලබාගන්න.';
+
+  @override
+  String get storyAsk2Title => 'ටයිප් කරනවා වෙනුවට කතා කරන්න';
+
+  @override
+  String get storyAsk2Body => 'මයික් තට්ටු කර කතා කරන්න. කතා කරන විට වචන දිස්වන අතර වහාම යැවිය හැක.';
+
+  @override
+  String get storyAsk3Title => 'සෑම වෙනසක්ම ඔබ තහවුරු කරයි';
+
+  @override
+  String get storyAsk3Body => 'වාර්තාවක් එක් කිරීමට හෝ වෙනස් කිරීමට ඉල්ලන්න, පළමුව කාඩ්පතක් පෙනේ. ඔබ තහවුරු කරන තුරු කිසිවක් සුරැකෙන්නේ නැත.';
+
+  @override
+  String get storyAsk4Title => 'ඕනෑම වෙනසක් අහෝසි කරන්න';
+
+  @override
+  String get storyAsk4Body => 'අදහස වෙනස් වුණාද? තහවුරු කළ සෑම වෙනසක්ම එම කාඩ්පතෙන්ම අහෝසි කළ හැක.';
+
+  @override
+  String get storyAsk5Title => 'නැවැත්වූ තැන සිට ඉදිරියට යන්න';
+
+  @override
+  String get storyAsk5Body => 'කතාබස් දින 90 ක් «සංවාද ඉතිහාසය» හි තබා ඇති අතර යෝජිත ප්‍රශ්න ආරම්භ කිරීමට උදව් කරයි.';
+
+  @override
+  String get storyWallet1Title => 'පළමුව සූදානම් වන්න';
+
+  @override
+  String get storyWallet1Body => 'කාඩ්පතක් හෝ ලේඛනයක් විවෘත කර එය තබන තැන තෝරන්න, උදා. මුදල් පසුම්බිය හෝ බෑගය.';
+
+  @override
+  String get storyWallet2Title => 'අවහිර කිරීමේ අංකය සුරකින්න';
+
+  @override
+  String get storyWallet2Body => 'එක් එක් බැංකුවේ අවහිර කිරීමේ අංකය දැන්ම එක් කරන්න. එය කාඩ්පතේ ඇත, අවශ්‍ය විට කාඩ්පත ඔබ ළඟ නොමැත.';
+
+  @override
+  String get storyWallet3Title => 'නැති වුවහොත්';
+
+  @override
+  String get storyWallet3Body => '«මගේ පසුම්බිය නැති වුණා» විවෘත කර «නැති වුණා» හෝ «සොරකම් කළා» තට්ටු කරන්න. Vaultara එහි තිබූ සියල්ල ලැයිස්තුගත කරයි.';
+
+  @override
+  String get storyWallet4Title => 'මිනිත්තු කිහිපයකින් කාඩ්පත් අවහිර කරන්න';
+
+  @override
+  String get storyWallet4Body => 'එක් තට්ටුවකින් එක් එක් බැංකුවට අමතන්න, කාඩ්පත් අවහිර කළ ලෙස සලකුණු කරන්න, පැමිණිලි අංකය සුරකින්න.';
+
+  @override
+  String get storyWallet5Title => 'ප්‍රතිස්ථාපනය කර ආරක්ෂිතව සිටින්න';
+
+  @override
+  String get storyWallet5Body => 'ලේඛන ප්‍රතිස්ථාපනය කරන්න, මතක් කළ විට ප්‍රකාශ පරීක්ෂා කරන්න, හමු වුවහොත් «මට හමු වුණා» තට්ටු කරන්න.';
+
+  @override
+  String get storyLife1Title => 'විශාල මොහොත, එක් සැලසුමක්';
+
+  @override
+  String get storyLife1Body => 'නිවස මාරුව, දරුවෙක්, නව රැකියාවක් හෝ හදිසියක්: «ජීවිත සිදුවීම්» හි සිදුවන්නේ කුමක්දැයි තෝරන්න.';
+
+  @override
+  String get storyLife2Title => 'ඔබේ වාර්තා පිළිවෙළට';
+
+  @override
+  String get storyLife2Body => 'යාවත්කාලීන, අවලංගු හෝ අලුත් කළ යුතු වාර්තා සහ එක් කිරීමට සිදුවිය හැකි ඒවා සැලසුම පෙන්වයි.';
+
+  @override
+  String get storyLife3Title => 'පියවර සහ දින';
+
+  @override
+  String get storyLife3Body => 'පියවර වාර්තාවක් නොවන දේ ආවරණය කරන අතර, කිසිවක් ප්‍රමාද නොවීමට කවදා අයදුම් කළ යුතුද යන්න ආරම්භක දින කියයි.';
+
+  @override
+  String get storyLife4Title => 'එය ඔබේම කරගන්න';
+
+  @override
+  String get storyLife4Body => 'ඔබේම පියවර එක් කරන්න, සැලසුම PDF ලෙස බෙදාගන්න, දිනය අවට සිහිකැඳවීම් ලබාගන්න.';
+
+  @override
+  String get storyPhotos1Title => 'ඔබේ ලේඛනවල ඡායාරූප';
+
+  @override
+  String get storyPhotos1Body => 'වාර්තාවෙන් කාඩ්පතක හෝ ලේඛනයක ඉදිරිපස සහ පසුපස ඡායාරූප එක් කරන්න.';
+
+  @override
+  String get storyPhotos2Title => 'දුරකථනයේ සංකේතනය කර ඇත';
+
+  @override
+  String get storyPhotos2Body => 'ඡායාරූප සංකේතනය සක්‍රිය කරන්න, උඩුගත කිරීමට පෙර ඡායාරූප දුරකථනයේ අගුළු වැටේ.';
+
+  @override
+  String get storyPhotos3Title => 'සංවේදී වාර්තා අගුළු දමන්න';
+
+  @override
+  String get storyPhotos3Body => 'වාර්තාවක් අගුළු දමන්න, විවෘත වීමට පෙර එය ඇඟිලි සලකුණ හෝ තිර අගුල ඉල්ලයි.';
+
+  @override
+  String get storyPhotos4Title => 'සම්පූර්ණ යෙදුම අගුළු දමන්න';
+
+  @override
+  String get storyPhotos4Body => 'ආරක්ෂක සැකසීම්වල යෙදුම් අගුල සක්‍රිය කර යෙදුම් මාරු කරන විට අන්තර්ගතය සඟවන්න.';
+
+  @override
+  String get storyShare1Title => 'එක් වාර්තාවක් බෙදාගන්න';
+
+  @override
+  String get storyShare1Body => 'වාර්තාවක් විවෘත කර එම වාර්තාව පමණක් පෙන්වන සබැඳියක් බෙදාගන්න, වෙන කිසිවක් නැත.';
+
+  @override
+  String get storyShare2Title => 'සාක්ෂි පැකේජය';
+
+  @override
+  String get storyShare2Body => 'තෝරාගත් වාර්තා ඡායාරූප සමඟ නිවාස හිමියා, බැංකුව හෝ කාර්යාලය සඳහා එක් PDF එකකට දමන්න.';
+
+  @override
+  String get storyShare3Title => 'පාලනය ඔබ සතුයි';
+
+  @override
+  String get storyShare3Body => '«බෙදාගත් සබැඳි» ඔබ සෑදූ සෑම සබැඳියක්ම පෙන්වයි. ඕනෑම එකක් ඕනෑම විටෙක නවත්වන්න, ඉන්පසු එය විවෘත නොවේ.';
+
+  @override
+  String get storyHousehold1Title => 'ඔබේ නිවසට ආරාධනා කරන්න';
+
+  @override
+  String get storyHousehold1Body => 'ආරාධනා කේතයක් හෝ සබැඳියක් බෙදාගන්න. සෑම කෙනෙක්ම තම ගිණුමෙන් පුරනය වේ.';
+
+  @override
+  String get storyHousehold2Title => 'වාර්තා එක් කට්ටලයක්';
+
+  @override
+  String get storyHousehold2Body => 'සැමට එකම බෙදාගත් වාර්තා පෙනෙන අතර එකම සිහිකැඳවීම් ලැබේ.';
+
+  @override
+  String get storyHousehold3Title => 'මෙය කාගේද?';
+
+  @override
+  String get storyHousehold3Body => 'සෑම වාර්තාවක්ම යමෙකුට අයත් විය හැක. ඔවුන්ගේ නම වාර්තාවේ සහ සිහිකැඳවීම්වල පෙනේ.';
+
+  @override
+  String get storyImport1Title => 'කාඩ්පතක් ස්කෑන් කරන්න';
+
+  @override
+  String get storyImport1Body => 'කාඩ්පතක හෝ ලේඛනයක ඡායාරූපයක් ගන්න, Vaultara නම සහ කල් ඉකුත් දිනය පුරවයි.';
+
+  @override
+  String get storyImport2Title => 'ලැයිස්තුවක් ආයාත කරන්න';
+
+  @override
+  String get storyImport2Body => 'දැනටමත් පැතුරුම්පතක් තිබේද? එය ආයාත කර සුරැකීමට පෙර සෑම පේළියක්ම පරීක්ෂා කරන්න.';
+
+  @override
+  String get storyImport3Title => 'Vaultara වෙත බෙදාගන්න';
+
+  @override
+  String get storyImport3Body => 'නව වාර්තාවක් ආරම්භ කිරීමට වෙනත් යෙදුමකින් ඡායාරූපයක්, PDF හෝ පෙළක් Vaultara වෙත බෙදාගන්න.';
+
+  @override
+  String get storyCosts1Title => 'ඔබේ දින දර්ශනයේ';
+
+  @override
+  String get storyCosts1Body => 'කල් ඉකුත් දින ඔබේ අනෙකුත් සැලසුම් අසල දුරකථන දින දර්ශනයට එක් කරන්න.';
+
+  @override
+  String get storyCosts2Title => 'අලුත් කිරීමේ වියදම';
+
+  @override
+  String get storyCosts2Body => 'වාර්තාවක අලුත් කිරීමේ වියදම ඇතුළත් කරන්න, ඔබ වසරකට කොපමණ වියදම් කරනවාදැයි Vaultara පෙන්වයි.';
+
+  @override
+  String get storyCosts3Title => 'කලින් සැලසුම් කරන්න';
+
+  @override
+  String get storyCosts3Body => 'මිල අධික මාස කලින්ම දකින්න, විශාල අලුත් කිරීමක් කිසි විටෙක පුදුමයක් නොවේ.';
+
+  @override
+  String get storyBusiness1Title => 'ඔබේ කණ්ඩායම නිරීක්ෂණය කරන්න';
+
+  @override
+  String get storyBusiness1Body => 'කාර්ය මණ්ඩලය එක් කර ඔවුන්ගේ සහතික, අවසර සහ බලපත්‍ර එක තැනක තබන්න.';
+
+  @override
+  String get storyBusiness2Title => 'විද්‍යුත් තැපැල් සිහිකැඳවීම්';
+
+  @override
+  String get storyBusiness2Body => 'ලේඛන කල් ඉකුත් වීමට පෙර කාර්ය මණ්ඩලයට විද්‍යුත් තැපෑලක් ලැබේ, යෙදුම නොමැතිව වුවද.';
+
+  @override
+  String get storyBusiness3Title => 'මාසික වාර්තාව';
+
+  @override
+  String get storyBusiness3Body => 'සෑම මසකම වලංගු දේ, කල් ඉකුත් වන දේ සහ නැති දේ වාර්තාවක් පෙන්වයි.';
+
+  @override
+  String get storyBusiness4Title => 'යාවත්කාලීනයක් ඉල්ලන්න';
+
+  @override
+  String get storyBusiness4Body => 'සබැඳියක් යවන්න, කාර්ය මණ්ඩල සාමාජිකයා අලුත් කළ ලේඛනය තමාම උඩුගත කරයි.';
 }

@@ -7520,4 +7520,438 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Tu pantalla de inicio';
+
+  @override
+  String get tutorialsSubHome => 'Qué significan las tarjetas y dónde está todo';
+
+  @override
+  String get tutorialsTitleRenew => 'Renovar un registro';
+
+  @override
+  String get tutorialsSubRenew => 'Qué hacer cuando llega un recordatorio';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Calendario y costes';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Fechas de caducidad en tu calendario y lo que cuestan las renovaciones';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Fotos y seguridad';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Fotos de documentos, cifrado y bloqueos';
+
+  @override
+  String get tutorialsTitleSharing => 'Compartir con seguridad';
+
+  @override
+  String get tutorialsSubSharing => 'Compartir un registro, crear un paquete, detener un enlace';
+
+  @override
+  String get tutorialsTitleImportScan => 'Escanear e importar';
+
+  @override
+  String get tutorialsSubImportScan => 'Añadir muchos registros rápido';
+
+  @override
+  String get tutorialsTitleHousehold => 'Hogar compartido';
+
+  @override
+  String get tutorialsSubHousehold => 'Invita a otros a compartir registros y recordatorios';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Perdí mi cartera';
+
+  @override
+  String get tutorialsSubLostWallet => 'Prepárate ahora y actúa rápido si se pierde';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Eventos de vida';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Un plan para mudarte, un bebé, un nuevo trabajo y más';
+
+  @override
+  String get tutorialsTitleAsk => 'Pregunta a Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Chatea o habla con tus registros';
+
+  @override
+  String get tutorialsTitleBusiness => 'Herramientas Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Documentos del personal, recordatorios e informes';
+
+  @override
+  String get tutorialsGroupBasics => 'Lo básico';
+
+  @override
+  String get tutorialsGroupOnTop => 'Mantenerse al día';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Viajes y familia';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Acontecimientos vitales y emergencias';
+
+  @override
+  String get tutorialsGroupPaid => 'Funciones de pago';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pasos',
+      one: '1 paso',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Planes de pago';
+
+  @override
+  String get tutorialsPaidNote => 'Puedes verlo con cualquier plan. Usar la función requiere un plan de pago.';
+
+  @override
+  String get tutorialsBack => 'Atrás';
+
+  @override
+  String get tutorialsTryIt => 'Pruébalo ahora';
+
+  @override
+  String get tutorialHintText => '¿Eres nuevo? Haz el recorrido rápido';
+
+  @override
+  String get tutorialHintPlay => 'Muéstramelo';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Capítulo $number de $total';
+  }
+
+  @override
+  String get tourContinue => 'Continuar';
+
+  @override
+  String get tourSkip => 'Saltar';
+
+  @override
+  String get tourSkipped => 'Saltado';
+
+  @override
+  String get tourDone => 'Has visto todo el recorrido';
+
+  @override
+  String get tourRestart => 'Empezar de nuevo';
+
+  @override
+  String get whatsNewBadge => 'Nuevo';
+
+  @override
+  String get whatsNewTitle => 'Perdí mi cartera';
+
+  @override
+  String get whatsNewBody => 'Guarda dónde llevas tus tarjetas y el número de bloqueo de cada banco. Si pierdes la cartera, lo bloqueas todo en minutos.';
+
+  @override
+  String get whatsNewDismiss => 'Entendido';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Más detalles guarda los extras: notas, repetición, tiempo de renovación, de quién es el registro, dónde lo guardas, bloqueo y fotos. Ábrelo solo cuando lo necesites.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Bloquea un registro para pedir tu huella o el bloqueo de pantalla antes de mostrarlo. Elige dónde lo guardas, como tu cartera, y añade fotos del documento.';
+
+  @override
+  String get tutorialSmartLostWallet2 => '¿Perdiste la cartera? Mira todo lo que llevabas, llama a cada banco con un toque y sigue los pasos para reponer el resto.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => '¿Mudanza, un bebé, un nuevo trabajo o una emergencia? Acontecimientos vitales te da un plan con tus registros, pasos y fechas.';
+
+  @override
+  String get storySampleQuestion => '¿Qué caduca este año?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Tu $name caduca en marzo. ¿Quieres un recordatorio un mes antes?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name caduca en 30 días. Toca para renovar.';
+  }
+
+  @override
+  String get storySampleGym => 'Cuota del gimnasio';
+
+  @override
+  String get storySampleFirstAid => 'Certificado de primeros auxilios';
+
+  @override
+  String get storySampleEncrypt => 'Cifrar fotos';
+
+  @override
+  String get storySampleAppLock => 'Bloqueo de la app';
+
+  @override
+  String get storySampleHideApp => 'Ocultar el contenido en el selector de apps';
+
+  @override
+  String get storyHome1Title => 'Tu día de un vistazo';
+
+  @override
+  String get storyHome1Body => 'El inicio muestra lo que importa hoy: lo que caduca pronto y cuántos registros tienes.';
+
+  @override
+  String get storyHome2Title => 'Encuéntralo todo';
+
+  @override
+  String get storyHome2Body => 'Toca la búsqueda para encontrar un registro por nombre, grupo o persona.';
+
+  @override
+  String get storyHome3Title => 'Viajes y planes';
+
+  @override
+  String get storyHome3Body => 'Aquí aparecen los viajes que planeas y los planes de acontecimientos vitales en curso, con lo que queda por hacer.';
+
+  @override
+  String get storyHome4Title => 'Ayuda a un toque';
+
+  @override
+  String get storyHome4Body => 'El botón de destello abre «Pregunta a Vaultara». Tu foto abre tu perfil, los ajustes y los tutoriales.';
+
+  @override
+  String get storyRenew1Title => 'Llega un recordatorio';
+
+  @override
+  String get storyRenew1Body => 'Antes de que un registro caduque, Vaultara te avisa. Toca el recordatorio para abrir el registro.';
+
+  @override
+  String get storyRenew2Title => 'Guarda la nueva fecha';
+
+  @override
+  String get storyRenew2Body => '¿Lo renovaste? Toca «Renovar» e introduce la nueva fecha de caducidad. Tus recordatorios se mueven con ella.';
+
+  @override
+  String get storyRenew3Title => '¿No sabes cómo?';
+
+  @override
+  String get storyRenew3Body => 'Muchos registros tienen una guía con los pasos, los documentos y el coste habitual.';
+
+  @override
+  String get storyRenew4Title => 'Que se repita';
+
+  @override
+  String get storyRenew4Body => 'Para suscripciones y pagos anuales, activa la repetición y la fecha avanza sola.';
+
+  @override
+  String get storyAsk1Title => 'Pregunta con tus palabras';
+
+  @override
+  String get storyAsk1Body => 'Pregunta cosas como «¿Qué caduca este año?» y obtén respuestas de tus propios registros.';
+
+  @override
+  String get storyAsk2Title => 'Habla en vez de escribir';
+
+  @override
+  String get storyAsk2Body => 'Toca el micrófono y habla. Tus palabras aparecen mientras hablas y puedes enviar al momento.';
+
+  @override
+  String get storyAsk3Title => 'Confirmas cada cambio';
+
+  @override
+  String get storyAsk3Body => 'Pide añadir o cambiar un registro y primero verás una tarjeta. No se guarda nada hasta que confirmes.';
+
+  @override
+  String get storyAsk4Title => 'Deshaz cualquier cambio';
+
+  @override
+  String get storyAsk4Body => '¿Cambiaste de idea? Cada cambio confirmado se puede deshacer desde la misma tarjeta.';
+
+  @override
+  String get storyAsk5Title => 'Sigue donde lo dejaste';
+
+  @override
+  String get storyAsk5Body => 'Los chats se guardan 90 días en «Historial de chats», y las preguntas sugeridas te ayudan a empezar.';
+
+  @override
+  String get storyWallet1Title => 'Prepárate primero';
+
+  @override
+  String get storyWallet1Body => 'Abre una tarjeta o documento y elige dónde lo guardas, como tu cartera o tu bolso.';
+
+  @override
+  String get storyWallet2Title => 'Guarda el número de bloqueo';
+
+  @override
+  String get storyWallet2Body => 'Añade ya el número de bloqueo de cada banco. Viene en la tarjeta, que no tendrás cuando lo necesites.';
+
+  @override
+  String get storyWallet3Title => 'Si se pierde';
+
+  @override
+  String get storyWallet3Body => 'Abre «Perdí mi cartera» y toca «Perdida» o «Robada». Vaultara lista todo lo que había dentro.';
+
+  @override
+  String get storyWallet4Title => 'Bloquea tarjetas en minutos';
+
+  @override
+  String get storyWallet4Body => 'Llama a cada banco con un toque, marca las tarjetas como bloqueadas y guarda el número de denuncia.';
+
+  @override
+  String get storyWallet5Title => 'Repón y protégete';
+
+  @override
+  String get storyWallet5Body => 'Repón tus documentos, revisa tus extractos cuando te avisemos y toca «La encontré» si aparece.';
+
+  @override
+  String get storyLife1Title => 'Grandes momentos, un plan';
+
+  @override
+  String get storyLife1Body => 'Mudanza, un bebé, un nuevo trabajo o una emergencia: elige lo que pasa en «Eventos de vida».';
+
+  @override
+  String get storyLife2Title => 'Tus registros, ordenados';
+
+  @override
+  String get storyLife2Body => 'El plan indica qué registros actualizar, cancelar o renovar, y cuáles quizá debas añadir.';
+
+  @override
+  String get storyLife3Title => 'Pasos y fechas';
+
+  @override
+  String get storyLife3Body => 'Los pasos cubren lo que no es un registro, y las fechas de inicio te dicen cuándo solicitar para no llegar tarde.';
+
+  @override
+  String get storyLife4Title => 'Hazlo tuyo';
+
+  @override
+  String get storyLife4Body => 'Añade tus propios pasos, comparte el plan en PDF y recibe recordatorios alrededor de la fecha.';
+
+  @override
+  String get storyPhotos1Title => 'Fotos de tus documentos';
+
+  @override
+  String get storyPhotos1Body => 'Desde el registro, añade fotos del anverso y reverso de una tarjeta o documento.';
+
+  @override
+  String get storyPhotos2Title => 'Cifradas en tu teléfono';
+
+  @override
+  String get storyPhotos2Body => 'Activa el cifrado de fotos y se cifran en tu teléfono antes de subirse.';
+
+  @override
+  String get storyPhotos3Title => 'Bloquea registros sensibles';
+
+  @override
+  String get storyPhotos3Body => 'Bloquea un registro y te pedirá la huella o el bloqueo de pantalla antes de abrirse.';
+
+  @override
+  String get storyPhotos4Title => 'Bloquea toda la app';
+
+  @override
+  String get storyPhotos4Body => 'En los ajustes de seguridad, activa el bloqueo de la app y oculta su contenido al cambiar de app.';
+
+  @override
+  String get storyShare1Title => 'Comparte un registro';
+
+  @override
+  String get storyShare1Body => 'Abre un registro y comparte un enlace que muestra solo ese registro, nada más.';
+
+  @override
+  String get storyShare2Title => 'Paquete de pruebas';
+
+  @override
+  String get storyShare2Body => 'Reúne los registros que elijas, con sus fotos, en un PDF para un casero, un banco o una oficina.';
+
+  @override
+  String get storyShare3Title => 'Tú tienes el control';
+
+  @override
+  String get storyShare3Body => '«Enlaces compartidos» muestra cada enlace que creaste. Detén uno cuando quieras y deja de abrirse.';
+
+  @override
+  String get storyHousehold1Title => 'Invita a tu hogar';
+
+  @override
+  String get storyHousehold1Body => 'Comparte un código o enlace de invitación. Cada persona entra con su propia cuenta.';
+
+  @override
+  String get storyHousehold2Title => 'Un solo conjunto de registros';
+
+  @override
+  String get storyHousehold2Body => 'Todos ven los mismos registros compartidos y reciben los mismos recordatorios.';
+
+  @override
+  String get storyHousehold3Title => '¿De quién es?';
+
+  @override
+  String get storyHousehold3Body => 'Cada registro puede pertenecer a alguien. Su nombre aparece en él y en sus recordatorios.';
+
+  @override
+  String get storyImport1Title => 'Escanea una tarjeta';
+
+  @override
+  String get storyImport1Body => 'Haz una foto a una tarjeta o documento y Vaultara rellena el nombre y la fecha de caducidad.';
+
+  @override
+  String get storyImport2Title => 'Importa una lista';
+
+  @override
+  String get storyImport2Body => '¿Ya usas una hoja de cálculo? Impórtala y revisa cada fila antes de guardar nada.';
+
+  @override
+  String get storyImport3Title => 'Comparte a Vaultara';
+
+  @override
+  String get storyImport3Body => 'Comparte una foto, un PDF o un texto desde otra app a Vaultara para empezar un registro nuevo.';
+
+  @override
+  String get storyCosts1Title => 'En tu calendario';
+
+  @override
+  String get storyCosts1Body => 'Añade las fechas de caducidad al calendario de tu teléfono, junto a tus otros planes.';
+
+  @override
+  String get storyCosts2Title => 'Lo que cuestan las renovaciones';
+
+  @override
+  String get storyCosts2Body => 'Añade el coste de renovación a un registro y Vaultara muestra lo que gastas cada año.';
+
+  @override
+  String get storyCosts3Title => 'Planifica';
+
+  @override
+  String get storyCosts3Body => 'Mira venir los meses caros para que una renovación grande nunca te sorprenda.';
+
+  @override
+  String get storyBusiness1Title => 'Controla tu equipo';
+
+  @override
+  String get storyBusiness1Body => 'Añade al personal y guarda sus certificados, permisos y licencias en un solo lugar.';
+
+  @override
+  String get storyBusiness2Title => 'Recordatorios por correo';
+
+  @override
+  String get storyBusiness2Body => 'El personal recibe recordatorios por correo antes de que caduquen sus documentos, incluso sin la app.';
+
+  @override
+  String get storyBusiness3Title => 'Informe mensual';
+
+  @override
+  String get storyBusiness3Body => 'Cada mes, un informe muestra qué es válido, qué caduca y qué falta.';
+
+  @override
+  String get storyBusiness4Title => 'Pide una actualización';
+
+  @override
+  String get storyBusiness4Body => 'Envía un enlace y el personal sube su documento renovado por sí mismo.';
 }

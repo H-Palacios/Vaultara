@@ -7496,4 +7496,438 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Aloitusnäyttösi';
+
+  @override
+  String get tutorialsSubHome => 'Mitä kortit tarkoittavat ja missä kaikki on';
+
+  @override
+  String get tutorialsTitleRenew => 'Uusi tietue';
+
+  @override
+  String get tutorialsSubRenew => 'Mitä tehdä, kun muistutus tulee';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalenteri ja kulut';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Päättymispäivät kalenteriin ja mitä uusimiset maksavat';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Kuvat ja turvallisuus';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Asiakirjakuvat, salaus ja lukitukset';
+
+  @override
+  String get tutorialsTitleSharing => 'Jaa turvallisesti';
+
+  @override
+  String get tutorialsSubSharing => 'Jaa tietue, tee paketti, pysäytä linkki';
+
+  @override
+  String get tutorialsTitleImportScan => 'Skannaa ja tuo';
+
+  @override
+  String get tutorialsSubImportScan => 'Lisää monta tietuetta nopeasti';
+
+  @override
+  String get tutorialsTitleHousehold => 'Jaettu talous';
+
+  @override
+  String get tutorialsSubHousehold => 'Kutsu muita jakamaan tietueita ja muistutuksia';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Kadotin lompakkoni';
+
+  @override
+  String get tutorialsSubLostWallet => 'Valmistaudu nyt ja toimi nopeasti, jos se katoaa';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Elämäntapahtumat';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Suunnitelma muuttoon, vauvaan, uuteen työhön ja muuhun';
+
+  @override
+  String get tutorialsTitleAsk => 'Kysy Vaultaralta';
+
+  @override
+  String get tutorialsSubAsk => 'Keskustele tai puhu tietueidesi kanssa';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business-työkalut';
+
+  @override
+  String get tutorialsSubBusiness => 'Henkilöstön asiakirjat, muistutukset ja raportit';
+
+  @override
+  String get tutorialsGroupBasics => 'Perusteet';
+
+  @override
+  String get tutorialsGroupOnTop => 'Pysy ajan tasalla';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Matkat ja perhe';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Elämäntapahtumat ja hätätilanteet';
+
+  @override
+  String get tutorialsGroupPaid => 'Maksulliset ominaisuudet';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vaihetta',
+      one: '1 vaihe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Maksulliset tilaukset';
+
+  @override
+  String get tutorialsPaidNote => 'Voit katsoa tämän millä tahansa tilauksella. Itse ominaisuus vaatii maksullisen tilauksen.';
+
+  @override
+  String get tutorialsBack => 'Takaisin';
+
+  @override
+  String get tutorialsTryIt => 'Kokeile nyt';
+
+  @override
+  String get tutorialHintText => 'Uusi täällä? Katso pikaesittely';
+
+  @override
+  String get tutorialHintPlay => 'Näytä';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Luku $number/$total';
+  }
+
+  @override
+  String get tourContinue => 'Jatka';
+
+  @override
+  String get tourSkip => 'Ohita';
+
+  @override
+  String get tourSkipped => 'Ohitettu';
+
+  @override
+  String get tourDone => 'Olet nähnyt koko esittelyn';
+
+  @override
+  String get tourRestart => 'Aloita alusta';
+
+  @override
+  String get whatsNewBadge => 'Uutta';
+
+  @override
+  String get whatsNewTitle => 'Kadotin lompakkoni';
+
+  @override
+  String get whatsNewBody => 'Tallenna, missä pidät korttejasi, ja jokaisen pankin sulkunumero. Jos lompakko katoaa, suljet kaiken muutamassa minuutissa.';
+
+  @override
+  String get whatsNewDismiss => 'Selvä';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Lisätiedoissa ovat lisät: muistiinpanot, toisto, uusimisaika, kenen tietue on, missä pidät sitä, lukitus ja kuvat. Avaa vain tarvittaessa.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Lukitse tietue, niin se vaatii sormenjäljen tai näytön lukituksen ennen näyttämistä. Valitse, missä pidät sitä, kuten lompakossa, ja lisää kuvia asiakirjasta.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Kadotitko lompakon? Näe kaikki, mitä siinä oli, soita jokaiseen pankkiin yhdellä napautuksella ja seuraa loppujen vaiheita.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Muutto, vauva, uusi työ tai hätätilanne? Elämäntapahtumat antaa suunnitelman tietueineen, vaiheineen ja päivämäärineen.';
+
+  @override
+  String get storySampleQuestion => 'Mitä päättyy tänä vuonna?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name päättyy maaliskuussa. Haluatko muistutuksen kuukautta aiemmin?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name päättyy 30 päivän kuluttua. Uusi napauttamalla.';
+  }
+
+  @override
+  String get storySampleGym => 'Kuntosalijäsenyys';
+
+  @override
+  String get storySampleFirstAid => 'Ensiaputodistus';
+
+  @override
+  String get storySampleEncrypt => 'Salaa kuvat';
+
+  @override
+  String get storySampleAppLock => 'Sovelluslukitus';
+
+  @override
+  String get storySampleHideApp => 'Piilota sisältö sovellusvaihtajassa';
+
+  @override
+  String get storyHome1Title => 'Päiväsi yhdellä silmäyksellä';
+
+  @override
+  String get storyHome1Body => 'Aloitusnäyttö näyttää, mikä on tänään tärkeää: mitä päättyy pian ja kuinka monta tietuetta sinulla on.';
+
+  @override
+  String get storyHome2Title => 'Löydä kaikki';
+
+  @override
+  String get storyHome2Body => 'Napauta hakua löytääksesi tietueen nimen, ryhmän tai henkilön mukaan.';
+
+  @override
+  String get storyHome3Title => 'Matkat ja suunnitelmat';
+
+  @override
+  String get storyHome3Body => 'Suunnittelemasi matkat ja käynnissä olevat elämäntapahtumien suunnitelmat näkyvät tässä jäljellä olevine tehtävineen.';
+
+  @override
+  String get storyHome4Title => 'Apua yhdellä napautuksella';
+
+  @override
+  String get storyHome4Body => 'Kipinäpainike avaa kohdan ”Kysy Vaultaralta”. Kuvasi avaa profiilin, asetukset ja opetusohjelmat.';
+
+  @override
+  String get storyRenew1Title => 'Muistutus tulee';
+
+  @override
+  String get storyRenew1Body => 'Ennen kuin tietue päättyy, Vaultara muistuttaa sinua. Avaa tietue napauttamalla muistutusta.';
+
+  @override
+  String get storyRenew2Title => 'Tallenna uusi päivä';
+
+  @override
+  String get storyRenew2Body => 'Uusittu? Napauta ”Uusiminen” ja syötä uusi päättymispäivä. Muistutukset siirtyvät mukana.';
+
+  @override
+  String get storyRenew3Title => 'Etkö tiedä miten?';
+
+  @override
+  String get storyRenew3Body => 'Monessa tietueessa on opas, jossa on vaiheet, asiakirjat ja tavallinen hinta.';
+
+  @override
+  String get storyRenew4Title => 'Anna sen toistua';
+
+  @override
+  String get storyRenew4Body => 'Tilauksille ja vuosimaksuille kytke toisto päälle, niin päivä siirtyy eteenpäin itsestään.';
+
+  @override
+  String get storyAsk1Title => 'Kysy omin sanoin';
+
+  @override
+  String get storyAsk1Body => 'Kysy esimerkiksi ”Mitä päättyy tänä vuonna?” ja saat vastauksia omista tietueistasi.';
+
+  @override
+  String get storyAsk2Title => 'Puhu kirjoittamisen sijaan';
+
+  @override
+  String get storyAsk2Body => 'Napauta mikrofonia ja puhu. Sanat näkyvät puhuessasi, ja voit lähettää heti.';
+
+  @override
+  String get storyAsk3Title => 'Vahvistat jokaisen muutoksen';
+
+  @override
+  String get storyAsk3Body => 'Pyydä lisäämään tai muuttamaan tietue, niin näet ensin kortin. Mitään ei tallenneta ennen kuin vahvistat.';
+
+  @override
+  String get storyAsk4Title => 'Kumoa mikä tahansa muutos';
+
+  @override
+  String get storyAsk4Body => 'Muutitko mielesi? Jokaisen vahvistetun muutoksen voi kumota samasta kortista.';
+
+  @override
+  String get storyAsk5Title => 'Jatka siitä, mihin jäit';
+
+  @override
+  String get storyAsk5Body => 'Keskustelut säilyvät 90 päivää kohdassa ”Keskusteluhistoria”, ja ehdotetut kysymykset auttavat alkuun.';
+
+  @override
+  String get storyWallet1Title => 'Valmistaudu ensin';
+
+  @override
+  String get storyWallet1Body => 'Avaa kortti tai asiakirja ja valitse, missä pidät sitä, kuten lompakossa tai laukussa.';
+
+  @override
+  String get storyWallet2Title => 'Tallenna sulkunumero';
+
+  @override
+  String get storyWallet2Body => 'Lisää jokaisen pankin sulkunumero nyt. Se on kortissa, jota sinulla ei ole, kun tarvitset sitä.';
+
+  @override
+  String get storyWallet3Title => 'Jos se katoaa';
+
+  @override
+  String get storyWallet3Body => 'Avaa ”Kadotin lompakkoni” ja napauta ”Kadonnut” tai ”Varastettu”. Vaultara listaa kaiken, mitä siinä oli.';
+
+  @override
+  String get storyWallet4Title => 'Sulje kortit minuuteissa';
+
+  @override
+  String get storyWallet4Body => 'Soita jokaiseen pankkiin yhdellä napautuksella, merkitse kortit suljetuiksi ja tallenna rikosilmoituksen numero.';
+
+  @override
+  String get storyWallet5Title => 'Korvaa ja pysy turvassa';
+
+  @override
+  String get storyWallet5Body => 'Korvaa asiakirjasi, tarkista tiliotteet muistutuksen tullessa ja napauta ”Löysin sen”, jos se löytyy.';
+
+  @override
+  String get storyLife1Title => 'Suuret hetket, yksi suunnitelma';
+
+  @override
+  String get storyLife1Body => 'Muutto, vauva, uusi työ tai hätätilanne: valitse kohdassa ”Elämäntapahtumat”, mitä tapahtuu.';
+
+  @override
+  String get storyLife2Title => 'Tietueesi järjestyksessä';
+
+  @override
+  String get storyLife2Body => 'Suunnitelma näyttää, mitkä tietueet päivittää, peruuttaa tai uusia ja mitkä ehkä pitää lisätä.';
+
+  @override
+  String get storyLife3Title => 'Vaiheet ja päivämäärät';
+
+  @override
+  String get storyLife3Body => 'Vaiheet kattavat sen, mikä ei ole tietue, ja aloituspäivät kertovat, milloin hakea, jotta mikään ei myöhästy.';
+
+  @override
+  String get storyLife4Title => 'Tee siitä omasi';
+
+  @override
+  String get storyLife4Body => 'Lisää omia vaiheita, jaa suunnitelma PDF:nä ja saat muistutuksia päivän tienoilla.';
+
+  @override
+  String get storyPhotos1Title => 'Kuvat asiakirjoistasi';
+
+  @override
+  String get storyPhotos1Body => 'Lisää tietueesta kuvat kortin tai asiakirjan etu- ja takapuolesta.';
+
+  @override
+  String get storyPhotos2Title => 'Salattu puhelimessasi';
+
+  @override
+  String get storyPhotos2Body => 'Kytke kuvien salaus päälle, niin kuvat lukitaan puhelimessa ennen lähettämistä.';
+
+  @override
+  String get storyPhotos3Title => 'Lukitse arkaluonteiset tietueet';
+
+  @override
+  String get storyPhotos3Body => 'Lukitse tietue, niin se pyytää sormenjälkeä tai näytön lukitusta ennen avautumista.';
+
+  @override
+  String get storyPhotos4Title => 'Lukitse koko sovellus';
+
+  @override
+  String get storyPhotos4Body => 'Kytke sovelluslukitus päälle turvallisuusasetuksista ja piilota sisältö sovellusta vaihtaessa.';
+
+  @override
+  String get storyShare1Title => 'Jaa yksi tietue';
+
+  @override
+  String get storyShare1Body => 'Avaa tietue ja jaa linkki, joka näyttää vain sen tietueen, ei mitään muuta.';
+
+  @override
+  String get storyShare2Title => 'Todistepaketti';
+
+  @override
+  String get storyShare2Body => 'Kokoa valitsemasi tietueet kuvineen yhteen PDF:ään vuokranantajalle, pankille tai virastolle.';
+
+  @override
+  String get storyShare3Title => 'Pidä hallinta';
+
+  @override
+  String get storyShare3Body => '”Jaetut linkit” näyttää jokaisen luomasi linkin. Pysäytä mikä tahansa milloin vain, eikä se enää aukea.';
+
+  @override
+  String get storyHousehold1Title => 'Kutsu taloutesi';
+
+  @override
+  String get storyHousehold1Body => 'Jaa kutsukoodi tai linkki. Jokainen kirjautuu omalla tilillään.';
+
+  @override
+  String get storyHousehold2Title => 'Yksi tietuejoukko';
+
+  @override
+  String get storyHousehold2Body => 'Kaikki näkevät samat jaetut tietueet ja saavat samat muistutukset.';
+
+  @override
+  String get storyHousehold3Title => 'Kenen se on?';
+
+  @override
+  String get storyHousehold3Body => 'Jokainen tietue voi kuulua jollekulle. Hänen nimensä näkyy tietueessa ja muistutuksissa.';
+
+  @override
+  String get storyImport1Title => 'Skannaa kortti';
+
+  @override
+  String get storyImport1Body => 'Ota kuva kortista tai asiakirjasta, niin Vaultara täyttää nimen ja päättymispäivän puolestasi.';
+
+  @override
+  String get storyImport2Title => 'Tuo luettelo';
+
+  @override
+  String get storyImport2Body => 'Onko sinulla jo laskentataulukko? Tuo se ja tarkista jokainen rivi ennen tallennusta.';
+
+  @override
+  String get storyImport3Title => 'Jaa Vaultaraan';
+
+  @override
+  String get storyImport3Body => 'Jaa kuva, PDF tai teksti toisesta sovelluksesta Vaultaraan aloittaaksesi uuden tietueen.';
+
+  @override
+  String get storyCosts1Title => 'Kalenteriisi';
+
+  @override
+  String get storyCosts1Body => 'Lisää päättymispäivät puhelimen kalenteriin muiden suunnitelmiesi viereen.';
+
+  @override
+  String get storyCosts2Title => 'Mitä uusimiset maksavat';
+
+  @override
+  String get storyCosts2Body => 'Syötä tietueeseen uusimisen hinta, niin Vaultara näyttää, paljonko kulutat vuodessa.';
+
+  @override
+  String get storyCosts3Title => 'Suunnittele etukäteen';
+
+  @override
+  String get storyCosts3Body => 'Näe kalliit kuukaudet tulossa, jotta suuri uusiminen ei koskaan yllätä.';
+
+  @override
+  String get storyBusiness1Title => 'Seuraa tiimiäsi';
+
+  @override
+  String get storyBusiness1Body => 'Lisää henkilöstö ja säilytä heidän todistuksensa, lupansa ja lisenssinsä yhdessä paikassa.';
+
+  @override
+  String get storyBusiness2Title => 'Muistutukset sähköpostilla';
+
+  @override
+  String get storyBusiness2Body => 'Henkilöstö saa sähköpostin ennen asiakirjojen päättymistä, myös ilman sovellusta.';
+
+  @override
+  String get storyBusiness3Title => 'Kuukausiraportti';
+
+  @override
+  String get storyBusiness3Body => 'Joka kuukausi raportti näyttää, mikä on voimassa, mikä päättymässä ja mitä puuttuu.';
+
+  @override
+  String get storyBusiness4Title => 'Pyydä päivitystä';
+
+  @override
+  String get storyBusiness4Body => 'Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse.';
 }

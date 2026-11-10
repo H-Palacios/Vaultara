@@ -7492,4 +7492,438 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Ang iyong home screen';
+
+  @override
+  String get tutorialsSubHome => 'Kahulugan ng mga card at kung nasaan ang lahat';
+
+  @override
+  String get tutorialsTitleRenew => 'Mag-renew ng record';
+
+  @override
+  String get tutorialsSubRenew => 'Ano ang gagawin kapag may paalala';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Kalendaryo at gastos';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Mga petsa ng expiry sa kalendaryo at magkano ang renewal';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Mga larawan at seguridad';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Mga larawan ng dokumento, encryption at lock';
+
+  @override
+  String get tutorialsTitleSharing => 'Magbahagi nang ligtas';
+
+  @override
+  String get tutorialsSubSharing => 'Magbahagi ng record, gumawa ng pack, ihinto ang link';
+
+  @override
+  String get tutorialsTitleImportScan => 'I-scan at i-import';
+
+  @override
+  String get tutorialsSubImportScan => 'Magdagdag ng maraming record nang mabilis';
+
+  @override
+  String get tutorialsTitleHousehold => 'Pinagsasaluhang sambahayan';
+
+  @override
+  String get tutorialsSubHousehold => 'Imbitahan ang iba na magbahagi ng record at paalala';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Nawala ang wallet ko';
+
+  @override
+  String get tutorialsSubLostWallet => 'Maghanda ngayon, kumilos agad kapag nawala';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Mga pagbabago sa buhay';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Plano para sa paglipat, sanggol, bagong trabaho at iba pa';
+
+  @override
+  String get tutorialsTitleAsk => 'Magtanong sa Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'Mag-chat o makipag-usap sa iyong mga record';
+
+  @override
+  String get tutorialsTitleBusiness => 'Mga tool ng Business';
+
+  @override
+  String get tutorialsSubBusiness => 'Dokumento ng staff, paalala at ulat';
+
+  @override
+  String get tutorialsGroupBasics => 'Ang mga pangunahing kaalaman';
+
+  @override
+  String get tutorialsGroupOnTop => 'Pagbabantay sa lahat';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Paglalakbay at pamilya';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Mga pangyayari sa buhay at emergency';
+
+  @override
+  String get tutorialsGroupPaid => 'Mga bayad na feature';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hakbang',
+      one: '$count hakbang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Mga bayad na plano';
+
+  @override
+  String get tutorialsPaidNote => 'Mapapanood mo ito sa anumang plano. Kailangan ng bayad na plano para sa mismong feature.';
+
+  @override
+  String get tutorialsBack => 'Bumalik';
+
+  @override
+  String get tutorialsTryIt => 'Subukan ngayon';
+
+  @override
+  String get tutorialHintText => 'Bago ka rito? Panoorin ang maikling tour';
+
+  @override
+  String get tutorialHintPlay => 'Ipakita sa akin';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'Kabanata $number ng $total';
+  }
+
+  @override
+  String get tourContinue => 'Magpatuloy';
+
+  @override
+  String get tourSkip => 'Laktawan';
+
+  @override
+  String get tourSkipped => 'Nilaktawan';
+
+  @override
+  String get tourDone => 'Napanood mo na ang buong tour';
+
+  @override
+  String get tourRestart => 'Magsimula muli';
+
+  @override
+  String get whatsNewBadge => 'Bago';
+
+  @override
+  String get whatsNewTitle => 'Nawala ang wallet ko';
+
+  @override
+  String get whatsNewBody => 'I-save kung saan mo itinatago ang mga card at ang block number ng bawat bangko. Kapag nawala ang wallet, mabo-block mo ang lahat sa loob ng ilang minuto.';
+
+  @override
+  String get whatsNewDismiss => 'Gets ko';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Ang Higit pang detalye ay may mga dagdag: tala, pag-ulit, oras ng renewal, kanino ito, saan itinatago, lock at mga larawan. Buksan lang kapag kailangan.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'I-lock ang record para humingi ng fingerprint o screen lock bago ito ipakita. Piliin kung saan mo ito itinatago, gaya ng wallet, at magdagdag ng larawan ng dokumento.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Nawala ang wallet? Tingnan ang lahat ng laman nito, tawagan ang bawat bangko sa isang tap at sundin ang mga hakbang para sa iba pa.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Paglipat, sanggol, bagong trabaho o emergency? Binibigyan ka ng Mga pangyayari sa buhay ng plano kasama ang iyong mga record, hakbang at petsa.';
+
+  @override
+  String get storySampleQuestion => 'Ano ang mag-e-expire ngayong taon?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return 'Mag-e-expire ang iyong $name sa Marso. Gusto mo ba ng paalala isang buwan bago?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return 'Mag-e-expire ang $name sa loob ng 30 araw. I-tap para mag-renew.';
+  }
+
+  @override
+  String get storySampleGym => 'Membership sa gym';
+
+  @override
+  String get storySampleFirstAid => 'Sertipiko sa first aid';
+
+  @override
+  String get storySampleEncrypt => 'I-encrypt ang mga larawan';
+
+  @override
+  String get storySampleAppLock => 'App lock';
+
+  @override
+  String get storySampleHideApp => 'Itago ang laman sa app switcher';
+
+  @override
+  String get storyHome1Title => 'Ang iyong araw sa isang sulyap';
+
+  @override
+  String get storyHome1Body => 'Ipinapakita ng home screen ang mahalaga ngayon: ang malapit nang mag-expire at kung ilan ang iyong record.';
+
+  @override
+  String get storyHome2Title => 'Hanapin ang kahit ano';
+
+  @override
+  String get storyHome2Body => 'I-tap ang search para maghanap ng record ayon sa pangalan, grupo o tao.';
+
+  @override
+  String get storyHome3Title => 'Mga biyahe at plano';
+
+  @override
+  String get storyHome3Body => 'Dito lumalabas ang mga biyaheng pinaplano mo at ang mga kasalukuyang plano sa mga pangyayari sa buhay, kasama ang natitira.';
+
+  @override
+  String get storyHome4Title => 'Tulong sa isang tap';
+
+  @override
+  String get storyHome4Body => 'Binubuksan ng sparkle button ang «Magtanong sa Vaultara». Binubuksan ng iyong larawan ang profile, settings at mga tutorial.';
+
+  @override
+  String get storyRenew1Title => 'May dumating na paalala';
+
+  @override
+  String get storyRenew1Body => 'Bago mag-expire ang isang record, pinapaalalahanan ka ng Vaultara. I-tap ang paalala para buksan ang record.';
+
+  @override
+  String get storyRenew2Title => 'I-save ang bagong petsa';
+
+  @override
+  String get storyRenew2Body => 'Na-renew na? I-tap ang «I-renew» at ilagay ang bagong petsa ng expiry. Susunod din ang mga paalala.';
+
+  @override
+  String get storyRenew3Title => 'Hindi sigurado kung paano?';
+
+  @override
+  String get storyRenew3Body => 'Maraming record ang may gabay na may mga hakbang, dokumento at karaniwang gastos.';
+
+  @override
+  String get storyRenew4Title => 'Hayaang umulit';
+
+  @override
+  String get storyRenew4Body => 'Para sa subscription at taunang bayarin, i-on ang pag-ulit at kusang uusad ang petsa.';
+
+  @override
+  String get storyAsk1Title => 'Magtanong sa sarili mong salita';
+
+  @override
+  String get storyAsk1Body => 'Magtanong gaya ng «Ano ang mag-e-expire ngayong taon?» at makakuha ng sagot mula sa sarili mong mga record.';
+
+  @override
+  String get storyAsk2Title => 'Magsalita sa halip na mag-type';
+
+  @override
+  String get storyAsk2Body => 'I-tap ang mic at magsalita. Lumalabas ang mga salita habang nagsasalita ka at maipapadala agad.';
+
+  @override
+  String get storyAsk3Title => 'Ikaw ang nagkukumpirma sa bawat pagbabago';
+
+  @override
+  String get storyAsk3Body => 'Hilinging magdagdag o magbago ng record at makakakita ka muna ng card. Walang nase-save hangga\'t hindi mo kinukumpirma.';
+
+  @override
+  String get storyAsk4Title => 'I-undo ang anumang pagbabago';
+
+  @override
+  String get storyAsk4Body => 'Nagbago ang isip? Mai-undo ang bawat kinumpirmang pagbabago mula sa parehong card.';
+
+  @override
+  String get storyAsk5Title => 'Ituloy kung saan ka huminto';
+
+  @override
+  String get storyAsk5Body => 'Itinatago ang mga chat nang 90 araw sa «History ng chat», at tinutulungan ka ng mga mungkahing tanong na magsimula.';
+
+  @override
+  String get storyWallet1Title => 'Maghanda muna';
+
+  @override
+  String get storyWallet1Body => 'Buksan ang card o dokumento at piliin kung saan mo ito itinatago, gaya ng wallet o bag.';
+
+  @override
+  String get storyWallet2Title => 'I-save ang block number';
+
+  @override
+  String get storyWallet2Body => 'Idagdag ngayon ang block number ng bawat bangko. Nasa card ito, na wala sa iyo kapag kailangan mo.';
+
+  @override
+  String get storyWallet3Title => 'Kapag nawala';
+
+  @override
+  String get storyWallet3Body => 'Buksan ang «Nawala ang wallet ko» at i-tap ang «Nawala» o «Ninakaw». Ililista ng Vaultara ang lahat ng laman nito.';
+
+  @override
+  String get storyWallet4Title => 'I-block ang mga card sa loob ng ilang minuto';
+
+  @override
+  String get storyWallet4Body => 'Tawagan ang bawat bangko sa isang tap, markahang naka-block ang mga card at i-save ang numero ng report.';
+
+  @override
+  String get storyWallet5Title => 'Palitan at manatiling ligtas';
+
+  @override
+  String get storyWallet5Body => 'Palitan ang mga dokumento, suriin ang mga statement kapag pinaalalahanan at i-tap ang «Nahanap ko na» kapag nakita.';
+
+  @override
+  String get storyLife1Title => 'Malalaking sandali, isang plano';
+
+  @override
+  String get storyLife1Body => 'Paglipat, sanggol, bagong trabaho o emergency: piliin sa «Mga pagbabago sa buhay» kung ano ang nangyayari.';
+
+  @override
+  String get storyLife2Title => 'Maayos ang iyong mga record';
+
+  @override
+  String get storyLife2Body => 'Ipinapakita ng plano kung aling mga record ang ia-update, kakanselahin o ire-renew, at alin ang baka kailangang idagdag.';
+
+  @override
+  String get storyLife3Title => 'Mga hakbang at petsa';
+
+  @override
+  String get storyLife3Body => 'Saklaw ng mga hakbang ang hindi record, at sinasabi ng mga petsa ng simula kung kailan mag-a-apply para walang mahuli.';
+
+  @override
+  String get storyLife4Title => 'Gawin itong sa iyo';
+
+  @override
+  String get storyLife4Body => 'Magdagdag ng sarili mong hakbang, ibahagi ang plano bilang PDF at makakuha ng paalala malapit sa petsa.';
+
+  @override
+  String get storyPhotos1Title => 'Mga larawan ng iyong dokumento';
+
+  @override
+  String get storyPhotos1Body => 'Mula sa record, magdagdag ng larawan ng harap at likod ng card o dokumento.';
+
+  @override
+  String get storyPhotos2Title => 'Naka-encrypt sa iyong telepono';
+
+  @override
+  String get storyPhotos2Body => 'I-on ang photo encryption at mala-lock ang mga larawan sa telepono bago i-upload.';
+
+  @override
+  String get storyPhotos3Title => 'I-lock ang sensitibong record';
+
+  @override
+  String get storyPhotos3Body => 'I-lock ang record at hihingi ito ng fingerprint o screen lock bago bumukas.';
+
+  @override
+  String get storyPhotos4Title => 'I-lock ang buong app';
+
+  @override
+  String get storyPhotos4Body => 'Sa security settings, i-on ang app lock at itago ang laman kapag nagpapalit ng app.';
+
+  @override
+  String get storyShare1Title => 'Magbahagi ng isang record';
+
+  @override
+  String get storyShare1Body => 'Buksan ang record at magbahagi ng link na ipinapakita lang ang record na iyon, wala nang iba.';
+
+  @override
+  String get storyShare2Title => 'Pakete ng patunay';
+
+  @override
+  String get storyShare2Body => 'Ilagay ang mga record na pinili mo, kasama ang mga larawan, sa isang PDF para sa landlord, bangko o opisina.';
+
+  @override
+  String get storyShare3Title => 'Ikaw ang may kontrol';
+
+  @override
+  String get storyShare3Body => 'Ipinapakita ng «Mga ibinahaging link» ang bawat link na ginawa mo. Ihinto ang alinman kahit kailan at hindi na ito bubukas.';
+
+  @override
+  String get storyHousehold1Title => 'Imbitahan ang iyong sambahayan';
+
+  @override
+  String get storyHousehold1Body => 'Magbahagi ng invite code o link. Bawat isa ay nagsa-sign in gamit ang sariling account.';
+
+  @override
+  String get storyHousehold2Title => 'Isang set ng record';
+
+  @override
+  String get storyHousehold2Body => 'Iisa ang nakikitang shared record ng lahat at iisa ang natatanggap na paalala.';
+
+  @override
+  String get storyHousehold3Title => 'Kanino ito?';
+
+  @override
+  String get storyHousehold3Body => 'Bawat record ay maaaring pag-aari ng isang tao. Lumalabas ang kanilang pangalan dito at sa mga paalala.';
+
+  @override
+  String get storyImport1Title => 'Mag-scan ng card';
+
+  @override
+  String get storyImport1Body => 'Kunan ng larawan ang card o dokumento at pupunan ng Vaultara ang pangalan at petsa ng expiry.';
+
+  @override
+  String get storyImport2Title => 'Mag-import ng listahan';
+
+  @override
+  String get storyImport2Body => 'May spreadsheet ka na? I-import ito at suriin ang bawat row bago may ma-save.';
+
+  @override
+  String get storyImport3Title => 'Ibahagi sa Vaultara';
+
+  @override
+  String get storyImport3Body => 'Magbahagi ng larawan, PDF o text mula sa ibang app papunta sa Vaultara para magsimula ng bagong record.';
+
+  @override
+  String get storyCosts1Title => 'Sa iyong kalendaryo';
+
+  @override
+  String get storyCosts1Body => 'Idagdag ang mga petsa ng expiry sa kalendaryo ng telepono, katabi ng iba mong plano.';
+
+  @override
+  String get storyCosts2Title => 'Magkano ang renewal';
+
+  @override
+  String get storyCosts2Body => 'Ilagay ang gastos ng renewal sa record at ipapakita ng Vaultara kung magkano ang ginagastos mo bawat taon.';
+
+  @override
+  String get storyCosts3Title => 'Magplano nang maaga';
+
+  @override
+  String get storyCosts3Body => 'Makita nang maaga ang mga mahal na buwan para hindi ka kailanman mabigla ng malaking renewal.';
+
+  @override
+  String get storyBusiness1Title => 'Subaybayan ang iyong team';
+
+  @override
+  String get storyBusiness1Body => 'Magdagdag ng staff at itago ang kanilang mga sertipiko, permit at lisensya sa iisang lugar.';
+
+  @override
+  String get storyBusiness2Title => 'Mga paalala sa email';
+
+  @override
+  String get storyBusiness2Body => 'Nakakatanggap ang staff ng email bago mag-expire ang kanilang mga dokumento, kahit walang app.';
+
+  @override
+  String get storyBusiness3Title => 'Buwanang ulat';
+
+  @override
+  String get storyBusiness3Body => 'Bawat buwan, ipinapakita ng ulat kung ano ang valid, ano ang mag-e-expire at ano ang kulang.';
+
+  @override
+  String get storyBusiness4Title => 'Humingi ng update';
+
+  @override
+  String get storyBusiness4Body => 'Magpadala ng link at ang staff mismo ang mag-a-upload ng na-renew na dokumento.';
 }

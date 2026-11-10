@@ -7492,4 +7492,438 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'Басты экраныңыз';
+
+  @override
+  String get tutorialsSubHome => 'Карталардың мағынасы және бәрі қай жерде';
+
+  @override
+  String get tutorialsTitleRenew => 'Жазбаны жаңарту';
+
+  @override
+  String get tutorialsSubRenew => 'Еске салғыш келгенде не істеу керек';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'Күнтізбе және шығындар';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'Күнтізбедегі мерзімдер және жаңарту құны';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'Фотолар және қауіпсіздік';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'Құжат фотолары, шифрлау және құлыптар';
+
+  @override
+  String get tutorialsTitleSharing => 'Қауіпсіз бөлісу';
+
+  @override
+  String get tutorialsSubSharing => 'Жазбамен бөлісу, пакет жасау, сілтемені тоқтату';
+
+  @override
+  String get tutorialsTitleImportScan => 'Сканерлеу және импорттау';
+
+  @override
+  String get tutorialsSubImportScan => 'Көп жазбаны жылдам қосу';
+
+  @override
+  String get tutorialsTitleHousehold => 'Ортақ отбасы';
+
+  @override
+  String get tutorialsSubHousehold => 'Жазбалар мен еске салғыштарды бөлісуге басқаларды шақырыңыз';
+
+  @override
+  String get tutorialsTitleLostWallet => 'Әмиянымды жоғалттым';
+
+  @override
+  String get tutorialsSubLostWallet => 'Қазір дайындалыңыз, жоғалса тез әрекет етіңіз';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'Өмірлік оқиғалар';
+
+  @override
+  String get tutorialsSubLifeEvents => 'Көшу, бала, жаңа жұмыс және т.б. үшін жоспар';
+
+  @override
+  String get tutorialsTitleAsk => 'Vaultara-дан сұрау';
+
+  @override
+  String get tutorialsSubAsk => 'Жазбаларыңызбен чат жасаңыз немесе сөйлесіңіз';
+
+  @override
+  String get tutorialsTitleBusiness => 'Business құралдары';
+
+  @override
+  String get tutorialsSubBusiness => 'Қызметкер құжаттары, еске салғыштар және есептер';
+
+  @override
+  String get tutorialsGroupBasics => 'Негіздер';
+
+  @override
+  String get tutorialsGroupOnTop => 'Бәрін бақылауда ұстау';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'Саяхат және отбасы';
+
+  @override
+  String get tutorialsGroupEmergencies => 'Өмірлік оқиғалар және төтенше жағдайлар';
+
+  @override
+  String get tutorialsGroupPaid => 'Ақылы мүмкіндіктер';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count қадам',
+      one: '$count қадам',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'Ақылы жоспарлар';
+
+  @override
+  String get tutorialsPaidNote => 'Мұны кез келген жоспармен көре аласыз. Мүмкіндіктің өзі ақылы жоспарды талап етеді.';
+
+  @override
+  String get tutorialsBack => 'Артқа';
+
+  @override
+  String get tutorialsTryIt => 'Қазір байқап көру';
+
+  @override
+  String get tutorialHintText => 'Мұнда жаңасыз ба? Қысқа турды көріңіз';
+
+  @override
+  String get tutorialHintPlay => 'Көрсету';
+
+  @override
+  String tourChapter(int number, int total) {
+    return '$total ішінен $number-тарау';
+  }
+
+  @override
+  String get tourContinue => 'Жалғастыру';
+
+  @override
+  String get tourSkip => 'Өткізіп жіберу';
+
+  @override
+  String get tourSkipped => 'Өткізілді';
+
+  @override
+  String get tourDone => 'Турды толық көрдіңіз';
+
+  @override
+  String get tourRestart => 'Қайта бастау';
+
+  @override
+  String get whatsNewBadge => 'Жаңа';
+
+  @override
+  String get whatsNewTitle => 'Әмиянымды жоғалттым';
+
+  @override
+  String get whatsNewBody => 'Карталарыңызды қайда ұстайтыныңызды және әр банктің бұғаттау нөмірін сақтаңыз. Әмиян жоғалса, бәрін бірнеше минутта бұғаттайсыз.';
+
+  @override
+  String get whatsNewDismiss => 'Түсінікті';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'Қосымша мәліметтерде қосымшалар бар: жазбалар, қайталау, жаңарту уақыты, кімдікі, қайда сақталады, құлып және фотолар. Тек қажет кезде ашыңыз.';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'Жазбаны көрсетпес бұрын саусақ ізін немесе экран құлпын сұрайтындай етіп құлыптаңыз. Қайда сақтайтыныңызды таңдаңыз, мысалы әмиян, және құжат фотоларын қосыңыз.';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'Әмиян жоғалды ма? Ішіндегінің бәрін көріңіз, бір түртумен әр банкке қоңырау шалыңыз және қалған қадамдарды орындаңыз.';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'Көшу, бала, жаңа жұмыс немесе төтенше жағдай ма? Өмірлік оқиғалар жазбаларыңыз, қадамдарыңыз және күндеріңізбен жоспар береді.';
+
+  @override
+  String get storySampleQuestion => 'Биыл неның мерзімі бітеді?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name мерзімі наурызда бітеді. Бір ай бұрын еске салғыш керек пе?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name мерзімі 30 күннен кейін бітеді. Жаңарту үшін түртіңіз.';
+  }
+
+  @override
+  String get storySampleGym => 'Спортзал мүшелігі';
+
+  @override
+  String get storySampleFirstAid => 'Алғашқы көмек сертификаты';
+
+  @override
+  String get storySampleEncrypt => 'Фотоларды шифрлау';
+
+  @override
+  String get storySampleAppLock => 'Қолданба құлпы';
+
+  @override
+  String get storySampleHideApp => 'Қолданба ауыстырғышында мазмұнды жасыру';
+
+  @override
+  String get storyHome1Title => 'Күніңіз бір қарағанда';
+
+  @override
+  String get storyHome1Body => 'Басты экран бүгін маңыздыны көрсетеді: жақында мерзімі бітетіндер және қанша жазбаңыз бар.';
+
+  @override
+  String get storyHome2Title => 'Кез келгенін табыңыз';
+
+  @override
+  String get storyHome2Body => 'Атауы, тобы немесе адамы бойынша жазба табу үшін іздеуді түртіңіз.';
+
+  @override
+  String get storyHome3Title => 'Сапарлар және жоспарлар';
+
+  @override
+  String get storyHome3Body => 'Жоспарлап жатқан сапарларыңыз бен жүріп жатқан өмірлік оқиға жоспарлары қалған істерімен бірге осында көрінеді.';
+
+  @override
+  String get storyHome4Title => 'Бір түртумен көмек';
+
+  @override
+  String get storyHome4Body => 'Ұшқын түймесі «Vaultara-дан сұрау» ашады. Фотоңыз профильді, параметрлерді және оқулықтарды ашады.';
+
+  @override
+  String get storyRenew1Title => 'Еске салғыш келеді';
+
+  @override
+  String get storyRenew1Body => 'Жазба мерзімі біткенге дейін Vaultara еске салады. Жазбаны ашу үшін еске салғышты түртіңіз.';
+
+  @override
+  String get storyRenew2Title => 'Жаңа күнді сақтаңыз';
+
+  @override
+  String get storyRenew2Body => 'Жаңарттыңыз ба? «Жаңарту» түртіп, жаңа мерзімді енгізіңіз. Еске салғыштар да бірге жылжиды.';
+
+  @override
+  String get storyRenew3Title => 'Қалай екенін білмейсіз бе?';
+
+  @override
+  String get storyRenew3Body => 'Көп жазбада қадамдар, құжаттар және әдеттегі құны бар нұсқаулық бар.';
+
+  @override
+  String get storyRenew4Title => 'Қайталансын';
+
+  @override
+  String get storyRenew4Body => 'Жазылымдар мен жылдық төлемдер үшін қайталауды қосыңыз, күн өздігінен алға жылжиды.';
+
+  @override
+  String get storyAsk1Title => 'Өз сөзіңізбен сұраңыз';
+
+  @override
+  String get storyAsk1Body => '«Биыл неның мерзімі бітеді?» сияқты сұрап, өз жазбаларыңыздан жауап алыңыз.';
+
+  @override
+  String get storyAsk2Title => 'Терудің орнына сөйлеңіз';
+
+  @override
+  String get storyAsk2Body => 'Микрофонды түртіп сөйлеңіз. Сөйлеген кезде сөздер көрінеді және бірден жібере аласыз.';
+
+  @override
+  String get storyAsk3Title => 'Әр өзгерісті сіз растайсыз';
+
+  @override
+  String get storyAsk3Body => 'Жазба қосуды немесе өзгертуді сұраңыз, алдымен карта көресіз. Растамайынша ештеңе сақталмайды.';
+
+  @override
+  String get storyAsk4Title => 'Кез келген өзгерісті болдырмаңыз';
+
+  @override
+  String get storyAsk4Body => 'Ойыңыз өзгерді ме? Расталған әр өзгерісті сол картадан болдырмауға болады.';
+
+  @override
+  String get storyAsk5Title => 'Тоқтаған жерден жалғастырыңыз';
+
+  @override
+  String get storyAsk5Body => 'Чаттар «Чат тарихы» бөлімінде 90 күн сақталады, ұсынылған сұрақтар бастауға көмектеседі.';
+
+  @override
+  String get storyWallet1Title => 'Алдымен дайындалыңыз';
+
+  @override
+  String get storyWallet1Body => 'Картаны немесе құжатты ашып, қайда сақтайтыныңызды таңдаңыз, мысалы әмиян немесе сөмке.';
+
+  @override
+  String get storyWallet2Title => 'Бұғаттау нөмірін сақтаңыз';
+
+  @override
+  String get storyWallet2Body => 'Әр банктің бұғаттау нөмірін қазір қосыңыз. Ол картада жазылған, ал қажет кезде карта жаныңызда болмайды.';
+
+  @override
+  String get storyWallet3Title => 'Егер жоғалса';
+
+  @override
+  String get storyWallet3Body => '«Әмиянымды жоғалттым» ашып, «Жоғалды» немесе «Ұрланды» түртіңіз. Vaultara ішіндегінің бәрін тізімдейді.';
+
+  @override
+  String get storyWallet4Title => 'Карталарды минуттарда бұғаттаңыз';
+
+  @override
+  String get storyWallet4Body => 'Бір түртумен әр банкке қоңырау шалып, карталарды бұғатталған деп белгілеңіз және өтініш нөмірін сақтаңыз.';
+
+  @override
+  String get storyWallet5Title => 'Қалпына келтіріп, қауіпсіз болыңыз';
+
+  @override
+  String get storyWallet5Body => 'Құжаттарды қалпына келтіріңіз, еске салғанда үзінділерді тексеріңіз және табылса «Таптым» түртіңіз.';
+
+  @override
+  String get storyLife1Title => 'Үлкен сәттер, бір жоспар';
+
+  @override
+  String get storyLife1Body => 'Көшу, бала, жаңа жұмыс немесе төтенше жағдай: «Өмірлік оқиғалар» бөлімінде не болып жатқанын таңдаңыз.';
+
+  @override
+  String get storyLife2Title => 'Жазбаларыңыз реттелген';
+
+  @override
+  String get storyLife2Body => 'Жоспар қай жазбаларды жаңарту, тоқтату немесе ұзарту керектігін және қайсысын қосу қажет болуы мүмкін екенін көрсетеді.';
+
+  @override
+  String get storyLife3Title => 'Қадамдар және күндер';
+
+  @override
+  String get storyLife3Body => 'Қадамдар жазба емес істерді қамтиды, ал басталу күндері ештеңе кешікпеуі үшін қашан өтініш беру керектігін айтады.';
+
+  @override
+  String get storyLife4Title => 'Өзіңізге бейімдеңіз';
+
+  @override
+  String get storyLife4Body => 'Өз қадамдарыңызды қосыңыз, жоспарды PDF ретінде бөлісіңіз және күн маңында еске салғыштар алыңыз.';
+
+  @override
+  String get storyPhotos1Title => 'Құжаттарыңыздың фотолары';
+
+  @override
+  String get storyPhotos1Body => 'Жазбадан карта немесе құжаттың алдыңғы және артқы жағының фотоларын қосыңыз.';
+
+  @override
+  String get storyPhotos2Title => 'Телефонда шифрланған';
+
+  @override
+  String get storyPhotos2Body => 'Фото шифрлауды қосыңыз, фотолар жүктелмес бұрын телефонда құлыпталады.';
+
+  @override
+  String get storyPhotos3Title => 'Сезімтал жазбаларды құлыптаңыз';
+
+  @override
+  String get storyPhotos3Body => 'Жазбаны құлыптаңыз, ашылмас бұрын саусақ ізін немесе экран құлпын сұрайды.';
+
+  @override
+  String get storyPhotos4Title => 'Бүкіл қолданбаны құлыптаңыз';
+
+  @override
+  String get storyPhotos4Body => 'Қауіпсіздік параметрлерінде қолданба құлпын қосып, қолданба ауыстырғанда мазмұнды жасырыңыз.';
+
+  @override
+  String get storyShare1Title => 'Бір жазбамен бөлісіңіз';
+
+  @override
+  String get storyShare1Body => 'Жазбаны ашып, тек сол жазбаны көрсететін сілтемемен бөлісіңіз, басқа ештеңе жоқ.';
+
+  @override
+  String get storyShare2Title => 'Растау топтамасы';
+
+  @override
+  String get storyShare2Body => 'Таңдаған жазбаларды фотоларымен бірге үй иесі, банк немесе мекеме үшін бір PDF-ке жинаңыз.';
+
+  @override
+  String get storyShare3Title => 'Бақылау сізде';
+
+  @override
+  String get storyShare3Body => '«Бөліскен сілтемелер» сіз жасаған әр сілтемені көрсетеді. Кез келгенін кез келген уақытта тоқтатыңыз, ол енді ашылмайды.';
+
+  @override
+  String get storyHousehold1Title => 'Отбасыңызды шақырыңыз';
+
+  @override
+  String get storyHousehold1Body => 'Шақыру кодымен немесе сілтемемен бөлісіңіз. Әркім өз аккаунтымен кіреді.';
+
+  @override
+  String get storyHousehold2Title => 'Бір жазбалар жиыны';
+
+  @override
+  String get storyHousehold2Body => 'Барлығы бірдей ортақ жазбаларды көреді және бірдей еске салғыштар алады.';
+
+  @override
+  String get storyHousehold3Title => 'Кімдікі?';
+
+  @override
+  String get storyHousehold3Body => 'Әр жазба біреуге тиесілі болуы мүмкін. Оның аты жазбада және еске салғыштарда көрінеді.';
+
+  @override
+  String get storyImport1Title => 'Картаны сканерлеңіз';
+
+  @override
+  String get storyImport1Body => 'Картаның немесе құжаттың суретін түсіріңіз, Vaultara атауы мен мерзімін толтырады.';
+
+  @override
+  String get storyImport2Title => 'Тізімді импорттаңыз';
+
+  @override
+  String get storyImport2Body => 'Кесте бар ма? Импорттап, сақтамас бұрын әр жолды тексеріңіз.';
+
+  @override
+  String get storyImport3Title => 'Vaultara-ға бөлісіңіз';
+
+  @override
+  String get storyImport3Body => 'Жаңа жазба бастау үшін басқа қолданбадан фото, PDF немесе мәтінді Vaultara-ға бөлісіңіз.';
+
+  @override
+  String get storyCosts1Title => 'Күнтізбеңізде';
+
+  @override
+  String get storyCosts1Body => 'Мерзімдерді басқа жоспарларыңыздың жанына телефон күнтізбесіне қосыңыз.';
+
+  @override
+  String get storyCosts2Title => 'Жаңарту құны';
+
+  @override
+  String get storyCosts2Body => 'Жазбаға жаңарту құнын енгізіңіз, Vaultara жылына қанша жұмсайтыныңызды көрсетеді.';
+
+  @override
+  String get storyCosts3Title => 'Алдын ала жоспарлаңыз';
+
+  @override
+  String get storyCosts3Body => 'Қымбат айларды алдын ала көріңіз, үлкен жаңарту ешқашан кенеттен болмайды.';
+
+  @override
+  String get storyBusiness1Title => 'Командаңызды бақылаңыз';
+
+  @override
+  String get storyBusiness1Body => 'Қызметкерлерді қосып, олардың сертификаттарын, рұқсаттарын және лицензияларын бір жерде сақтаңыз.';
+
+  @override
+  String get storyBusiness2Title => 'Электрондық пошта еске салғыштары';
+
+  @override
+  String get storyBusiness2Body => 'Қызметкерлер құжаттарының мерзімі біткенге дейін хат алады, қолданбасыз да.';
+
+  @override
+  String get storyBusiness3Title => 'Айлық есеп';
+
+  @override
+  String get storyBusiness3Body => 'Әр ай есеп нені жарамды, нені мерзімі бітіп жатқанын және нені жетіспейтінін көрсетеді.';
+
+  @override
+  String get storyBusiness4Title => 'Жаңартуды сұраңыз';
+
+  @override
+  String get storyBusiness4Body => 'Сілтеме жіберіңіз, қызметкер жаңартылған құжатты өзі жүктейді.';
 }

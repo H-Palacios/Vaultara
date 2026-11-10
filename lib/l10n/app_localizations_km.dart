@@ -7433,4 +7433,437 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get tutorialsTitleHome => 'អេក្រង់ដើមរបស់អ្នក';
+
+  @override
+  String get tutorialsSubHome => 'អត្ថន័យនៃកាត និងកន្លែងដែលអ្វីៗនៅ';
+
+  @override
+  String get tutorialsTitleRenew => 'បន្តកំណត់ត្រា';
+
+  @override
+  String get tutorialsSubRenew => 'អ្វីដែលត្រូវធ្វើនៅពេលមានការរំលឹក';
+
+  @override
+  String get tutorialsTitleCalendarCosts => 'ប្រតិទិន និងថ្លៃចំណាយ';
+
+  @override
+  String get tutorialsSubCalendarCosts => 'កាលបរិច្ឆេទផុតកំណត់ក្នុងប្រតិទិន និងថ្លៃបន្ត';
+
+  @override
+  String get tutorialsTitlePhotosSecurity => 'រូបថត និងសុវត្ថិភាព';
+
+  @override
+  String get tutorialsSubPhotosSecurity => 'រូបថតឯកសារ ការអ៊ិនគ្រីប និងការចាក់សោ';
+
+  @override
+  String get tutorialsTitleSharing => 'ចែករំលែកដោយសុវត្ថិភាព';
+
+  @override
+  String get tutorialsSubSharing => 'ចែករំលែកកំណត់ត្រា បង្កើតកញ្ចប់ បញ្ឈប់តំណ';
+
+  @override
+  String get tutorialsTitleImportScan => 'ស្កេន និងនាំចូល';
+
+  @override
+  String get tutorialsSubImportScan => 'បន្ថែមកំណត់ត្រាច្រើនយ៉ាងរហ័ស';
+
+  @override
+  String get tutorialsTitleHousehold => 'គ្រួសារដែលចែករំលែក';
+
+  @override
+  String get tutorialsSubHousehold => 'អញ្ជើញអ្នកផ្សេងឱ្យចែករំលែកកំណត់ត្រា និងការរំលឹក';
+
+  @override
+  String get tutorialsTitleLostWallet => 'បាត់កាបូបរបស់ខ្ញុំ';
+
+  @override
+  String get tutorialsSubLostWallet => 'ត្រៀមខ្លួនឥឡូវ ហើយធ្វើសកម្មភាពភ្លាមបើបាត់';
+
+  @override
+  String get tutorialsTitleLifeEvents => 'ព្រឹត្តិការណ៍ក្នុងជីវិត';
+
+  @override
+  String get tutorialsSubLifeEvents => 'ផែនការសម្រាប់ការផ្លាស់ទីលំនៅ កូន ការងារថ្មី និងច្រើនទៀត';
+
+  @override
+  String get tutorialsTitleAsk => 'សួរ Vaultara';
+
+  @override
+  String get tutorialsSubAsk => 'ជជែក ឬនិយាយជាមួយកំណត់ត្រារបស់អ្នក';
+
+  @override
+  String get tutorialsTitleBusiness => 'ឧបករណ៍ Business';
+
+  @override
+  String get tutorialsSubBusiness => 'ឯកសារបុគ្គលិក ការរំលឹក និងរបាយការណ៍';
+
+  @override
+  String get tutorialsGroupBasics => 'មូលដ្ឋាន';
+
+  @override
+  String get tutorialsGroupOnTop => 'តាមដានអ្វីៗទាំងអស់';
+
+  @override
+  String get tutorialsGroupTravelFamily => 'ការធ្វើដំណើរ និងគ្រួសារ';
+
+  @override
+  String get tutorialsGroupEmergencies => 'ព្រឹត្តិការណ៍ជីវិត និងគ្រាអាសន្ន';
+
+  @override
+  String get tutorialsGroupPaid => 'មុខងារបង់ប្រាក់';
+
+  @override
+  String tutorialsSteps(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ជំហាន',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tutorialsPaidBadge => 'គម្រោងបង់ប្រាក់';
+
+  @override
+  String get tutorialsPaidNote => 'អ្នកអាចមើលវាជាមួយគម្រោងណាក៏បាន។ មុខងារខ្លួនឯងត្រូវការគម្រោងបង់ប្រាក់។';
+
+  @override
+  String get tutorialsBack => 'ថយក្រោយ';
+
+  @override
+  String get tutorialsTryIt => 'សាកល្បងឥឡូវ';
+
+  @override
+  String get tutorialHintText => 'ថ្មីនៅទីនេះ? មើលដំណើរកម្សាន្តខ្លី';
+
+  @override
+  String get tutorialHintPlay => 'បង្ហាញខ្ញុំ';
+
+  @override
+  String tourChapter(int number, int total) {
+    return 'ជំពូក $number នៃ $total';
+  }
+
+  @override
+  String get tourContinue => 'បន្ត';
+
+  @override
+  String get tourSkip => 'រំលង';
+
+  @override
+  String get tourSkipped => 'បានរំលង';
+
+  @override
+  String get tourDone => 'អ្នកបានមើលដំណើរកម្សាន្តទាំងមូល';
+
+  @override
+  String get tourRestart => 'ចាប់ផ្ដើមម្ដងទៀត';
+
+  @override
+  String get whatsNewBadge => 'ថ្មី';
+
+  @override
+  String get whatsNewTitle => 'បាត់កាបូបរបស់ខ្ញុំ';
+
+  @override
+  String get whatsNewBody => 'រក្សាទុកកន្លែងដែលអ្នកដាក់កាត និងលេខបិទកាតរបស់ធនាគារនីមួយៗ។ បើកាបូបបាត់ អ្នកបិទអ្វីៗទាំងអស់ក្នុងរយៈពេលប៉ុន្មាននាទី។';
+
+  @override
+  String get whatsNewDismiss => 'យល់ហើយ';
+
+  @override
+  String get tutorialAddRecordMoreDetails2 => 'ព័ត៌មានលម្អិតបន្ថែមមានផ្នែកបន្ថែម៖ កំណត់ចំណាំ ការធ្វើឡើងវិញ ពេលបន្ត ជារបស់អ្នកណា ទុកនៅឯណា សោ និងរូបថត។ បើកតែពេលត្រូវការ។';
+
+  @override
+  String get tutorialAddRecordProtect2 => 'ចាក់សោកំណត់ត្រាដើម្បីឱ្យវាសុំស្នាមម្រាមដៃ ឬសោអេក្រង់មុនបង្ហាញ។ ជ្រើសរើសកន្លែងទុក ដូចជាកាបូប ហើយបន្ថែមរូបថតឯកសារ។';
+
+  @override
+  String get tutorialSmartLostWallet2 => 'កាបូបបាត់? មើលអ្វីៗដែលនៅខាងក្នុង ហៅទៅធនាគារនីមួយៗដោយចុចតែម្ដង ហើយធ្វើតាមជំហានសម្រាប់ផ្នែកដែលនៅសល់។';
+
+  @override
+  String get tutorialSmartLifeEvents2 => 'ផ្លាស់ទីលំនៅ កូន ការងារថ្មី ឬគ្រាអាសន្ន? ព្រឹត្តិការណ៍ជីវិតផ្ដល់ផែនការជាមួយកំណត់ត្រា ជំហាន និងកាលបរិច្ឆេទរបស់អ្នក។';
+
+  @override
+  String get storySampleQuestion => 'តើអ្វីផុតកំណត់ឆ្នាំនេះ?';
+
+  @override
+  String storySampleAnswer(String name) {
+    return '$name របស់អ្នកផុតកំណត់ក្នុងខែមីនា។ ចង់បានការរំលឹកមុនមួយខែទេ?';
+  }
+
+  @override
+  String storySampleNotification(String name) {
+    return '$name ផុតកំណត់ក្នុងរយៈពេល 30 ថ្ងៃ។ ចុចដើម្បីបន្ត។';
+  }
+
+  @override
+  String get storySampleGym => 'សមាជិកភាពហាត់ប្រាណ';
+
+  @override
+  String get storySampleFirstAid => 'វិញ្ញាបនបត្រសង្គ្រោះបឋម';
+
+  @override
+  String get storySampleEncrypt => 'អ៊ិនគ្រីបរូបថត';
+
+  @override
+  String get storySampleAppLock => 'សោកម្មវិធី';
+
+  @override
+  String get storySampleHideApp => 'លាក់មាតិកាក្នុងកម្មវិធីប្ដូរ';
+
+  @override
+  String get storyHome1Title => 'ថ្ងៃរបស់អ្នកក្នុងមួយភ្លែត';
+
+  @override
+  String get storyHome1Body => 'អេក្រង់ដើមបង្ហាញអ្វីដែលសំខាន់ថ្ងៃនេះ៖ អ្វីដែលនឹងផុតកំណត់ឆាប់ៗ និងចំនួនកំណត់ត្រាដែលអ្នកមាន។';
+
+  @override
+  String get storyHome2Title => 'ស្វែងរកអ្វីក៏បាន';
+
+  @override
+  String get storyHome2Body => 'ចុចស្វែងរកដើម្បីរកកំណត់ត្រាតាមឈ្មោះ ក្រុម ឬមនុស្ស។';
+
+  @override
+  String get storyHome3Title => 'ដំណើរ និងផែនការ';
+
+  @override
+  String get storyHome3Body => 'ដំណើរដែលអ្នកកំពុងគ្រោង និងផែនការព្រឹត្តិការណ៍ជីវិតដែលកំពុងដំណើរការ រួមទាំងអ្វីដែលនៅសល់ បង្ហាញនៅទីនេះ។';
+
+  @override
+  String get storyHome4Title => 'ជំនួយដោយចុចតែម្ដង';
+
+  @override
+  String get storyHome4Body => 'ប៊ូតុងផ្កាភ្លើងបើក «សួរ Vaultara»។ រូបថតរបស់អ្នកបើកប្រវត្តិរូប ការកំណត់ និងមេរៀន។';
+
+  @override
+  String get storyRenew1Title => 'មានការរំលឹក';
+
+  @override
+  String get storyRenew1Body => 'មុនពេលកំណត់ត្រាផុតកំណត់ Vaultara រំលឹកអ្នក។ ចុចការរំលឹកដើម្បីបើកកំណត់ត្រា។';
+
+  @override
+  String get storyRenew2Title => 'រក្សាទុកកាលបរិច្ឆេទថ្មី';
+
+  @override
+  String get storyRenew2Body => 'បានបន្តហើយ? ចុច «បន្តសុពលភាព» ហើយបញ្ចូលកាលបរិច្ឆេទផុតកំណត់ថ្មី។ ការរំលឹកនឹងផ្លាស់ទីតាម។';
+
+  @override
+  String get storyRenew3Title => 'មិនប្រាកដថាធ្វើយ៉ាងម៉េច?';
+
+  @override
+  String get storyRenew3Body => 'កំណត់ត្រាជាច្រើនមានមគ្គុទ្ទេសក៍ជាមួយជំហាន ឯកសារ និងថ្លៃធម្មតា។';
+
+  @override
+  String get storyRenew4Title => 'ឱ្យវាធ្វើឡើងវិញ';
+
+  @override
+  String get storyRenew4Body => 'សម្រាប់ការជាវ និងការបង់ប្រចាំឆ្នាំ បើកការធ្វើឡើងវិញ ហើយកាលបរិច្ឆេទនឹងរំកិលទៅមុខដោយខ្លួនឯង។';
+
+  @override
+  String get storyAsk1Title => 'សួរជាពាក្យរបស់អ្នក';
+
+  @override
+  String get storyAsk1Body => 'សួរដូចជា «តើអ្វីផុតកំណត់ឆ្នាំនេះ?» ហើយទទួលចម្លើយពីកំណត់ត្រារបស់អ្នក។';
+
+  @override
+  String get storyAsk2Title => 'និយាយជំនួសការវាយ';
+
+  @override
+  String get storyAsk2Body => 'ចុចមីក្រូហ្វូនហើយនិយាយ។ ពាក្យលេចឡើងពេលអ្នកនិយាយ ហើយអាចផ្ញើបានភ្លាម។';
+
+  @override
+  String get storyAsk3Title => 'អ្នកបញ្ជាក់រាល់ការផ្លាស់ប្ដូរ';
+
+  @override
+  String get storyAsk3Body => 'សុំបន្ថែម ឬផ្លាស់ប្ដូរកំណត់ត្រា ហើយអ្នកនឹងឃើញកាតជាមុន។ គ្មានអ្វីត្រូវបានរក្សាទុករហូតដល់អ្នកបញ្ជាក់។';
+
+  @override
+  String get storyAsk4Title => 'មិនធ្វើវិញនូវការផ្លាស់ប្ដូរណាមួយ';
+
+  @override
+  String get storyAsk4Body => 'ប្ដូរចិត្ត? រាល់ការផ្លាស់ប្ដូរដែលបានបញ្ជាក់អាចមិនធ្វើវិញពីកាតដដែល។';
+
+  @override
+  String get storyAsk5Title => 'បន្តពីកន្លែងដែលអ្នកឈប់';
+
+  @override
+  String get storyAsk5Body => 'ការជជែកត្រូវបានរក្សាទុក 90 ថ្ងៃក្នុង «ប្រវត្តិជជែក» ហើយសំណួរដែលបានណែនាំជួយអ្នកចាប់ផ្ដើម។';
+
+  @override
+  String get storyWallet1Title => 'ត្រៀមខ្លួនជាមុន';
+
+  @override
+  String get storyWallet1Body => 'បើកកាត ឬឯកសារ ហើយជ្រើសរើសកន្លែងទុក ដូចជាកាបូប ឬកាតាប។';
+
+  @override
+  String get storyWallet2Title => 'រក្សាទុកលេខបិទកាត';
+
+  @override
+  String get storyWallet2Body => 'បន្ថែមលេខបិទកាតរបស់ធនាគារនីមួយៗឥឡូវនេះ។ វានៅលើកាត ដែលអ្នកនឹងមិនមាននៅពេលត្រូវការ។';
+
+  @override
+  String get storyWallet3Title => 'បើបាត់';
+
+  @override
+  String get storyWallet3Body => 'បើក «បាត់កាបូបរបស់ខ្ញុំ» ហើយចុច «បាត់» ឬ «ត្រូវគេលួច»។ Vaultara រាយអ្វីៗដែលនៅខាងក្នុង។';
+
+  @override
+  String get storyWallet4Title => 'បិទកាតក្នុងប៉ុន្មាននាទី';
+
+  @override
+  String get storyWallet4Body => 'ហៅទៅធនាគារនីមួយៗដោយចុចតែម្ដង សម្គាល់កាតថាបានបិទ ហើយរក្សាទុកលេខរបាយការណ៍។';
+
+  @override
+  String get storyWallet5Title => 'ជំនួស ហើយមានសុវត្ថិភាព';
+
+  @override
+  String get storyWallet5Body => 'ជំនួសឯកសារ ពិនិត្យរបាយការណ៍គណនីពេលត្រូវបានរំលឹក ហើយចុច «ខ្ញុំរកឃើញហើយ» បើរកឃើញ។';
+
+  @override
+  String get storyLife1Title => 'ពេលវេលាធំៗ ផែនការតែមួយ';
+
+  @override
+  String get storyLife1Body => 'ផ្លាស់ទីលំនៅ កូន ការងារថ្មី ឬគ្រាអាសន្ន៖ ជ្រើសរើសក្នុង «ព្រឹត្តិការណ៍ក្នុងជីវិត» ថាមានអ្វីកើតឡើង។';
+
+  @override
+  String get storyLife2Title => 'កំណត់ត្រារបស់អ្នកមានរបៀប';
+
+  @override
+  String get storyLife2Body => 'ផែនការបង្ហាញថាកំណត់ត្រាណាត្រូវធ្វើបច្ចុប្បន្នភាព បោះបង់ ឬបន្ត និងកំណត់ត្រាណាដែលប្រហែលត្រូវបន្ថែម។';
+
+  @override
+  String get storyLife3Title => 'ជំហាន និងកាលបរិច្ឆេទ';
+
+  @override
+  String get storyLife3Body => 'ជំហានគ្របដណ្ដប់អ្វីដែលមិនមែនជាកំណត់ត្រា ហើយកាលបរិច្ឆេទចាប់ផ្ដើមប្រាប់ពេលត្រូវដាក់ពាក្យ ដើម្បីកុំឱ្យអ្វីយឺត។';
+
+  @override
+  String get storyLife4Title => 'ធ្វើឱ្យវាជារបស់អ្នក';
+
+  @override
+  String get storyLife4Body => 'បន្ថែមជំហានផ្ទាល់ខ្លួន ចែករំលែកផែនការជា PDF ហើយទទួលការរំលឹកជុំវិញកាលបរិច្ឆេទ។';
+
+  @override
+  String get storyPhotos1Title => 'រូបថតឯកសាររបស់អ្នក';
+
+  @override
+  String get storyPhotos1Body => 'ពីក្នុងកំណត់ត្រា បន្ថែមរូបថតខាងមុខ និងខាងក្រោយនៃកាត ឬឯកសារ។';
+
+  @override
+  String get storyPhotos2Title => 'អ៊ិនគ្រីបនៅលើទូរស័ព្ទ';
+
+  @override
+  String get storyPhotos2Body => 'បើកការអ៊ិនគ្រីបរូបថត ហើយរូបថតត្រូវបានចាក់សោនៅលើទូរស័ព្ទមុនផ្ទុកឡើង។';
+
+  @override
+  String get storyPhotos3Title => 'ចាក់សោកំណត់ត្រាសំខាន់';
+
+  @override
+  String get storyPhotos3Body => 'ចាក់សោកំណត់ត្រា ហើយវានឹងសុំស្នាមម្រាមដៃ ឬសោអេក្រង់មុនបើក។';
+
+  @override
+  String get storyPhotos4Title => 'ចាក់សោកម្មវិធីទាំងមូល';
+
+  @override
+  String get storyPhotos4Body => 'ក្នុងការកំណត់សុវត្ថិភាព បើកសោកម្មវិធី ហើយលាក់មាតិកាពេលប្ដូរកម្មវិធី។';
+
+  @override
+  String get storyShare1Title => 'ចែករំលែកកំណត់ត្រាមួយ';
+
+  @override
+  String get storyShare1Body => 'បើកកំណត់ត្រា ហើយចែករំលែកតំណដែលបង្ហាញតែកំណត់ត្រានោះ គ្មានអ្វីផ្សេង។';
+
+  @override
+  String get storyShare2Title => 'កញ្ចប់ភស្តុតាង';
+
+  @override
+  String get storyShare2Body => 'ដាក់កំណត់ត្រាដែលអ្នកជ្រើសរើស រួមទាំងរូបថត ក្នុង PDF តែមួយសម្រាប់ម្ចាស់ផ្ទះ ធនាគារ ឬការិយាល័យ។';
+
+  @override
+  String get storyShare3Title => 'គ្រប់គ្រងដោយខ្លួនឯង';
+
+  @override
+  String get storyShare3Body => '«តំណដែលបានចែករំលែក» បង្ហាញរាល់តំណដែលអ្នកបានបង្កើត។ បញ្ឈប់តំណណាមួយនៅពេលណាក៏បាន ហើយវានឹងមិនបើកទៀត។';
+
+  @override
+  String get storyHousehold1Title => 'អញ្ជើញគ្រួសាររបស់អ្នក';
+
+  @override
+  String get storyHousehold1Body => 'ចែករំលែកលេខកូដ ឬតំណអញ្ជើញ។ ម្នាក់ៗចូលដោយគណនីផ្ទាល់ខ្លួន។';
+
+  @override
+  String get storyHousehold2Title => 'សំណុំកំណត់ត្រាតែមួយ';
+
+  @override
+  String get storyHousehold2Body => 'អ្នករាល់គ្នាឃើញកំណត់ត្រាដែលចែករំលែកដូចគ្នា ហើយទទួលការរំលឹកដូចគ្នា។';
+
+  @override
+  String get storyHousehold3Title => 'ជារបស់អ្នកណា?';
+
+  @override
+  String get storyHousehold3Body => 'កំណត់ត្រានីមួយៗអាចជារបស់នរណាម្នាក់។ ឈ្មោះបង្ហាញលើកំណត់ត្រា និងក្នុងការរំលឹក។';
+
+  @override
+  String get storyImport1Title => 'ស្កេនកាត';
+
+  @override
+  String get storyImport1Body => 'ថតរូបកាត ឬឯកសារ ហើយ Vaultara នឹងបំពេញឈ្មោះ និងកាលបរិច្ឆេទផុតកំណត់ឱ្យ។';
+
+  @override
+  String get storyImport2Title => 'នាំចូលបញ្ជី';
+
+  @override
+  String get storyImport2Body => 'មានសៀវភៅបញ្ជីរួចហើយ? នាំចូល ហើយពិនិត្យជួរនីមួយៗមុនរក្សាទុក។';
+
+  @override
+  String get storyImport3Title => 'ចែករំលែកទៅ Vaultara';
+
+  @override
+  String get storyImport3Body => 'ចែករំលែករូបថត PDF ឬអត្ថបទពីកម្មវិធីផ្សេងទៅ Vaultara ដើម្បីចាប់ផ្ដើមកំណត់ត្រាថ្មី។';
+
+  @override
+  String get storyCosts1Title => 'ក្នុងប្រតិទិនរបស់អ្នក';
+
+  @override
+  String get storyCosts1Body => 'បន្ថែមកាលបរិច្ឆេទផុតកំណត់ទៅប្រតិទិនទូរស័ព្ទ នៅក្បែរផែនការផ្សេងទៀត។';
+
+  @override
+  String get storyCosts2Title => 'ថ្លៃបន្ត';
+
+  @override
+  String get storyCosts2Body => 'បញ្ចូលថ្លៃបន្តលើកំណត់ត្រា ហើយ Vaultara បង្ហាញថាអ្នកចំណាយប៉ុន្មានក្នុងមួយឆ្នាំ។';
+
+  @override
+  String get storyCosts3Title => 'គ្រោងទុកជាមុន';
+
+  @override
+  String get storyCosts3Body => 'ឃើញខែដែលថ្លៃខ្ពស់ជាមុន ដើម្បីកុំឱ្យការបន្តធំៗធ្វើឱ្យអ្នកភ្ញាក់ផ្អើល។';
+
+  @override
+  String get storyBusiness1Title => 'តាមដានក្រុមរបស់អ្នក';
+
+  @override
+  String get storyBusiness1Body => 'បន្ថែមបុគ្គលិក ហើយរក្សាវិញ្ញាបនបត្រ លិខិតអនុញ្ញាត និងអាជ្ញាប័ណ្ណរបស់ពួកគេនៅកន្លែងតែមួយ។';
+
+  @override
+  String get storyBusiness2Title => 'ការរំលឹកតាមអ៊ីមែល';
+
+  @override
+  String get storyBusiness2Body => 'បុគ្គលិកទទួលអ៊ីមែលមុនឯកសាររបស់ពួកគេផុតកំណត់ ទោះគ្មានកម្មវិធីក៏ដោយ។';
+
+  @override
+  String get storyBusiness3Title => 'របាយការណ៍ប្រចាំខែ';
+
+  @override
+  String get storyBusiness3Body => 'រៀងរាល់ខែ របាយការណ៍បង្ហាញអ្វីដែលមានសុពលភាព អ្វីដែលកំពុងផុតកំណត់ និងអ្វីដែលខ្វះ។';
+
+  @override
+  String get storyBusiness4Title => 'ស្នើសុំការធ្វើបច្ចុប្បន្នភាព';
+
+  @override
+  String get storyBusiness4Body => 'ផ្ញើតំណ ហើយបុគ្គលិកនឹងផ្ទុកឡើងឯកសារដែលបានបន្តដោយខ្លួនឯង។';
 }
