@@ -36,6 +36,4 @@ enum TutorialStep {
   familyMe,
   familyAddPerson,
   familyRecordPerson,
-  plansTabs,
-  plansBilling,
 }
