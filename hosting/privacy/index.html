@@ -19,7 +19,7 @@
       <a href="/terms/">Terms of Service</a>
     </nav>
     <h1 id="top">Privacy Policy</h1>
-    <p class="meta"><span>Version 2026-11-10</span><span>Last updated 10 November 2026</span></p>
+    <p class="meta"><span>Version 2026-11-11</span><span>Last updated 11 November 2026</span></p>
   </div>
 </header>
 
@@ -125,7 +125,7 @@
   <li><strong>Device list:</strong> for each device signed in to your account, the device model, operating system version, app version and when it was last seen.</li>
   <li><strong>Notification tokens:</strong> a Firebase Cloud Messaging token for each device, which lets us send push notifications to it.</li>
   <li><strong>Security history:</strong> sign-in events, including the device and a partially masked IP address (part of the address is hidden before we store it).</li>
-  <li><strong>Two-step sign-in:</strong> if you turn it on, the information needed to check codes from your authenticator app.</li>
+  <li><strong>Two-step sign-in:</strong> if you turn it on, the information needed to check codes from your authenticator app. If you make backup codes, we keep only a one-way scrambled (salted hash) copy of each code, so nobody can read the codes back from our records, and a code is deleted once it has been used or replaced.</li>
   <li><strong>Insights you put off:</strong> which insights you chose to see later and until when, so they stay hidden on all your devices for that week.</li>
   <li><strong>Pinned categories:</strong> which categories you pinned to the top of the Categories screen, so that the order is the same on all your devices.</li>
   <li><strong>Tutorial progress:</strong> which tutorials you finished, which chapters of the full tour you skipped and which "New here?" tips you closed, so that they are not shown again on your other devices.</li>
@@ -397,7 +397,8 @@
 <ul>
   <li><strong>Encryption:</strong> information is encrypted in transit (HTTPS/TLS) and at rest on Google's servers.</li>
   <li><strong>End-to-end encrypted photos (optional):</strong> photos are encrypted on your device with a key that only you hold. We cannot read them. If you lose your key, we cannot recover these photos for you.</li>
-  <li><strong>Two-step sign-in:</strong> you can require a code from an authenticator app when you sign in.</li>
+  <li><strong>Two-step sign-in:</strong> you can require a code from an authenticator app when you sign in. Backup codes let you sign in if you lose your phone; using one turns two-step sign-in off, sends you a security alert and asks you to set it up again.</li>
+  <li><strong>Sign-in protection:</strong> a wrong email or password always gets the same message, so the sign-in screen does not reveal whether an account exists, and repeated wrong attempts are slowed down.</li>
   <li><strong>App lock:</strong> you can lock the app with your phone's fingerprint or face unlock.</li>
   <li><strong>Screenshot blocking:</strong> the app blocks screenshots and screen recording on sensitive screens.</li>
   <li><strong>Sign-in alerts:</strong> we send you a security alert email when your account is signed in to on a device we have not seen before. We also send an alert when your password is changed, when two-step sign-in is turned off, when someone asks to change your email address, and when all other devices are signed out.</li>
@@ -459,7 +460,7 @@
 <!-- 15 -->
 <h2 id="notifications">15. Notifications and emails</h2>
 <ul>
-  <li><strong>Local notifications</strong> are scheduled on your phone. You can turn them off in the app or in your phone's settings.</li>
+  <li><strong>Local notifications</strong> are scheduled on your phone. The app only asks your phone for permission to show them when you first set a reminder, not when you first open the app. You can turn them off in the app or in your phone's settings.</li>
   <li><strong>Push notifications</strong> use Firebase Cloud Messaging. We store a token for each of your devices so that we can send them. You can turn them off in your phone's settings.</li>
   <li><strong>Notification choices:</strong> whether you want reminders after a record expires, the Monday summary, pushes about shared household records and pushes about updates you asked for are saved to your account as on or off, so they apply on every device. Our servers read the last two before sending those pushes. Alerts about new sign-ins are always sent.</li>
   <li><strong>Your first name</strong> from your profile is used to greet you in reminders on your phone. Reminders for a locked record never show its name.</li>
