@@ -189,6 +189,7 @@ class _InsightsScreenState extends State<InsightsScreen>
       context,
       isPremium: true,
       sharedText: loc.insightAskPrompt(insight.heading, insight.body),
+      sendShared: true,
     );
   }
 

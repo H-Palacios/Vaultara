@@ -25,6 +25,8 @@ import 'package:vaultara/features/assistant/view/widgets/assistant_linked_text.d
 import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
+import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -33,6 +35,7 @@ Future<void> openAskVaultara(
   BuildContext context, {
   required bool isPremium,
   String? sharedText,
+  bool sendShared = false,
 }) {
   return Navigator.of(context, rootNavigator: true).push(
     MaterialPageRoute(
@@ -41,6 +44,7 @@ Future<void> openAskVaultara(
         builder: (_, premium) => AskVaultaraScreen(
           isPremium: premium,
           sharedText: sharedText,
+          sendShared: sendShared,
         ),
       ),
     ),
@@ -51,10 +55,15 @@ class AskVaultaraScreen extends StatefulWidget {
   final bool isPremium;
   final String? sharedText;
 
+  /// Sends [sharedText] straight away, as when Ask about this is tapped on
+  /// an insight, instead of leaving it in the text box to send by hand.
+  final bool sendShared;
+
   const AskVaultaraScreen({
     super.key,
     required this.isPremium,
     this.sharedText,
+    this.sendShared = false,
   });
 
   @override
@@ -78,6 +87,13 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   String _voiceBase = '';
   bool _sharedPrefilled = false;
   String _stoppedText = '';
+
+  // Read aloud for answers. Started on first use, so opening the chat does
+  // not load the speech engine.
+  final TtsService _tts = TtsService();
+  bool _ttsStarted = false;
+  AssistantMessage? _speakingMessage;
+  AssistantMessage? _pendingSpeech;
 
   @override
   void initState() {
@@ -158,6 +174,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       );
     }
     _run?.dispose();
+    _tts.stop();
     _focus.removeListener(_onFocus);
     _voice.problem.removeListener(_onVoiceProblem);
     _voice.dispose();
@@ -171,11 +188,58 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     if (mounted) setState(() {});
   }
 
+  void _onTtsState() {
+    if (!mounted) return;
+    setState(() {
+      if (_tts.speaking) {
+        // Reading started: the answer waiting to be read is now the one.
+        if (_pendingSpeech != null) {
+          _speakingMessage = _pendingSpeech;
+          _pendingSpeech = null;
+        }
+      } else if (!_tts.paused && _pendingSpeech == null) {
+        // Finished or stopped. Stopping the previous answer to start a new
+        // one also lands here, which must not clear the new one.
+        _speakingMessage = null;
+      }
+    });
+  }
+
+  /// Reads an answer aloud, or stops it if it is the one being read.
+  Future<void> _speak(AssistantMessage message) async {
+    if (identical(_speakingMessage, message)) {
+      _pendingSpeech = null;
+      _tts.stop();
+      setState(() => _speakingMessage = null);
+      return;
+    }
+    if (!_ttsStarted) {
+      _ttsStarted = true;
+      await _tts.init(context, _onTtsState);
+      if (!mounted) return;
+    }
+    if (!_tts.available) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        AppLocalizations.of(context)!.assistantErrorFailed,
+        icon: Icons.volume_off_rounded,
+      );
+      return;
+    }
+    _pendingSpeech = message;
+    setState(() => _speakingMessage = message);
+    await _tts.speak(AssistantPlainText.speech(message.text));
+  }
+
   void _prefillSharedText() {
     if (!mounted || _sharedPrefilled || !widget.isPremium) return;
     final text = widget.sharedText?.trim();
     if (text == null || text.isEmpty) return;
     _sharedPrefilled = true;
+    if (widget.sendShared && !_busy && !_loadingChat) {
+      _send(text);
+      return;
+    }
     final clipped = AssistantService.clip(text);
     _input.value = TextEditingValue(
       text: clipped,
@@ -251,8 +315,10 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         status: status,
       );
     }
-    return AssistantActionPreview.build(context, action)
-        .stored(loc, action.type, status);
+    return AssistantActionPreview.build(
+      context,
+      action,
+    ).stored(loc, action.type, status);
   }
 
   Future<void> _send(String text, {String? prompt}) async {
@@ -425,8 +491,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       locale: locale,
       onWords: (words, _) {
         if (!mounted) return;
-        final joined =
-            _voiceBase.isEmpty ? words : '$_voiceBase ${words.trim()}';
+        final joined = _voiceBase.isEmpty
+            ? words
+            : '$_voiceBase ${words.trim()}';
         _input.value = TextEditingValue(
           text: joined,
           selection: TextSelection.collapsed(offset: joined.length),
@@ -464,8 +531,10 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     final previous = message.actionStates[index];
     if (previous == AssistantActionState.busy) return;
     setState(() => message.actionStates[index] = AssistantActionState.busy);
-    final applied =
-        await AssistantActionLauncher.applyWithUndo(context, action);
+    final applied = await AssistantActionLauncher.applyWithUndo(
+      context,
+      action,
+    );
     final result = applied.result;
     if (!mounted) return;
     setState(() {
@@ -756,36 +825,31 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               child: !widget.isPremium
                   ? _PremiumGate(onSeePlans: () => openPlans(context))
                   : _loadingChat
-                      ? const Center(child: CircularProgressIndicator())
-                      : _messages.isEmpty
-                          ? _EmptyState(
-                              onSuggestion: (text) => _send(text),
-                            )
-                          : ListView.builder(
-                              controller: _scroll,
-                              padding:
-                                  const EdgeInsets.fromLTRB(16, 8, 16, 12),
-                              itemCount: _messages.length + (_busy ? 1 : 0),
-                              itemBuilder: (context, i) {
-                                if (i >= _messages.length) {
-                                  return _LiveThinking(run: _run);
-                                }
-                                return _buildMessage(
-                                  context,
-                                  _messages[i],
-                                  newest: i == _messages.length - 1,
-                                );
-                              },
-                            ),
+                  ? const Center(child: CircularProgressIndicator())
+                  : _messages.isEmpty
+                  ? _EmptyState(onSuggestion: (text) => _send(text))
+                  : ListView.builder(
+                      controller: _scroll,
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                      itemCount: _messages.length + (_busy ? 1 : 0),
+                      itemBuilder: (context, i) {
+                        if (i >= _messages.length) {
+                          return _LiveThinking(run: _run);
+                        }
+                        return _buildMessage(
+                          context,
+                          _messages[i],
+                          newest: i == _messages.length - 1,
+                        );
+                      },
+                    ),
             ),
             if (widget.isPremium)
               Container(
                 padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
                 decoration: BoxDecoration(
                   color: scheme.surface,
-                  border: Border(
-                    top: BorderSide(color: scheme.outlineVariant),
-                  ),
+                  border: Border(top: BorderSide(color: scheme.outlineVariant)),
                 ),
                 child: ValueListenableBuilder<bool>(
                   valueListenable: _voice.listening,
@@ -893,7 +957,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       final action = message.actions[i];
       final index = i;
       if (action.isOpen) {
-        extras.add(AssistantOpenButton(onPressed: () => _confirm(message, index)));
+        extras.add(
+          AssistantOpenButton(onPressed: () => _confirm(message, index)),
+        );
         continue;
       }
       extras.add(
@@ -902,8 +968,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           state: message.actionStates[i],
           onConfirm: () => _confirm(message, index),
           onCancel: () => _cancel(message, index),
-          onUndo:
-              message.undos[i] == null ? null : () => _undo(message, index),
+          onUndo: message.undos[i] == null ? null : () => _undo(message, index),
         ),
       );
     }
@@ -918,10 +983,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           AssistantOpenButton(
             onPressed: () => AssistantNavigator.open(
               context,
-              AssistantAction(
-                type: AssistantActionType.open,
-                screen: screen,
-              ),
+              AssistantAction(type: AssistantActionType.open, screen: screen),
             ),
           ),
         );
@@ -943,9 +1005,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         Align(
           alignment: AlignmentDirectional.centerStart,
           child: AssistantMessageTools(
-            text: message.text,
+            text: AssistantPlainText.clean(message.text),
             rating: message.rating,
             onRate: (rating) => _rate(message, rating),
+            onSpeak: () => _speak(message),
+            speaking: identical(_speakingMessage, message),
           ),
         ),
         if (extras.isNotEmpty)
@@ -1038,11 +1102,7 @@ class _EmptyState extends StatelessWidget {
         Text(
           loc.assistantIntroAll,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 15,
-            height: 1.4,
-            color: scheme.onSurface,
-          ),
+          style: TextStyle(fontSize: 15, height: 1.4, color: scheme.onSurface),
         ),
         const SizedBox(height: 20),
         Wrap(
