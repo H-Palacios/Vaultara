@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -14,7 +15,6 @@ import 'package:vaultara/core/data/models/renewal_entry.dart';
 import 'package:flutter/material.dart' show DateUtils;
 import 'package:vaultara/core/data/models/record_attachment.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
-import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/platform/home_widget_sync.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
@@ -23,6 +23,11 @@ import 'package:vaultara/features/tools/services/life_plan_reminders.dart';
 import 'package:vaultara/features/travel/services/trip_reminders.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
+import 'package:vaultara/core/data/user_name.dart';
+import 'package:vaultara/features/reminders/logic/reminder_budget.dart';
+import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
+import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 
 class RecordRepository {
   const RecordRepository._();
@@ -66,18 +71,36 @@ class RecordRepository {
     TripReminders.refreshSoon(TripRepository.trips.value);
     LifePlanReminders.refreshSoon(LifePlanRepository.plans.value);
     DailyDigestService.refreshSoon();
+    WeeklyRecapNotifier.refreshSoon();
     final loc = _loc();
     if (loc == null) return;
     unawaited(HomeWidgetSync.updateWith(loc));
   }
 
-  static String _firstName() => _auth.currentUser?.displayName ?? '';
+  /// The first name for reminders, from the profile document. The Firebase
+  /// display name was never set at registration, so it was always empty.
+  static String _firstName() => UserName.first;
+
+  /// Takes the first name from a freshly read users/{uid} document and, when
+  /// it changed, rewrites the reminders that greet the person by name.
+  static Future<void> refreshUserName(
+    Map<String, dynamic>? data,
+    String? displayName,
+  ) async {
+    final changed = await UserName.setFromProfile(data, displayName);
+    if (changed && _hasLoadedForUser) await _resyncAllReminders();
+  }
 
   static final Map<String, int> _sharedBaseIds = <String, int>{};
   static final Map<String, String> _sharedSignatures = <String, String>{};
   static const int _slotSpan = 7;
   static const int _tripIdStart = 0x60000000;
   static const int _tripIdEnd = 0x64000004;
+
+  /// The daily summary, the Monday summary, the test notification and pushes
+  /// shown while the app is open.
+  static const int _appIdStart = 0x64000004;
+  static const int _appIdEnd = 0x64000200;
 
   static CollectionReference<Map<String, dynamic>>? _collectionFor(
     TrackedItem record,
@@ -113,6 +136,9 @@ class RecordRepository {
 
   static bool _clashes(int candidate, Iterable<int> taken) {
     if (candidate + _slotSpan > _tripIdStart && candidate < _tripIdEnd) {
+      return true;
+    }
+    if (candidate + _slotSpan > _appIdStart && candidate < _appIdEnd) {
       return true;
     }
     if (candidate + _slotSpan > TripReminders.stayIdStart &&
@@ -377,35 +403,42 @@ class RecordRepository {
   static Future<void> _applyReminderForRecord(
     TrackedItem record, {
     bool keepSnooze = false,
+    Map<int, int>? budget,
   }) async {
     final loc = _loc();
     if (loc == null) return;
 
-    await ReminderScheduler.cancelSeries(
-      record.reminderBaseId,
-      keepSnooze: keepSnooze,
-    );
-
-    final days = ReminderScheduler.seriesOffset(
-      record.reminderOffsetDays,
-      record.leadDays,
-    );
-    if (days == null) return;
-
-    await ReminderScheduler.scheduleReminderSeries(
+    await ReminderScheduler.scheduleRecord(
       loc: loc,
-      baseNotificationId: record.reminderBaseId,
-      expiryDate: record.expiryDate,
-      initialOffsetDays: days,
-      steps: ReminderScheduler.seriesSteps(
-        record.reminderOffsetDays,
-        record.leadDays,
-      ),
-      leadDays: record.leadDays,
+      item: record,
       firstName: _firstName(),
-      recordName: RecordDisplayName.of(record, loc),
-      recordId: record.id,
+      keepSnooze: keepSnooze,
+      maxSteps: (budget ?? await _budget())[record.reminderBaseId],
     );
+  }
+
+  /// How many reminders each record may have scheduled, when there are more
+  /// than the phone keeps (see ReminderBudget). Records missing from the
+  /// result keep all of theirs.
+  static Future<Map<int, int>> _budget() async {
+    final at = await ReminderTimeService.getTime();
+    final fireTimes = <int, List<DateTime>>{};
+    for (final record in _allRecords()) {
+      final plan = ReminderScheduler.planFor(record);
+      if (plan.isEmpty) continue;
+      fireTimes[record.reminderBaseId] = [
+        for (final step in plan)
+          DateTime(
+            step.day.year,
+            step.day.month,
+            step.day.day,
+            at.hour,
+            at.minute,
+          ),
+      ];
+    }
+    final limit = Platform.isIOS ? ReminderBudget.ios : ReminderBudget.android;
+    return ReminderBudget.allowed(fireTimes, limit);
   }
 
   static Future<void> _migrateItemsToRecordsIfNeeded(String uid) async {
@@ -444,11 +477,14 @@ class RecordRepository {
     if (_hasLoadedForUser && _loadedUserId == user.uid) return;
 
     _store.clear();
+    await UserName.load();
+    await NotificationPrefs.load();
 
     await CategoryRepository.loadForCurrentUser();
     await _migrateItemsToRecordsIfNeeded(user.uid);
 
     final userDoc = await _firestore.collection('users').doc(user.uid).get();
+    await UserName.setFromProfile(userDoc.data(), user.displayName);
     final raw = userDoc.data()?['createdItemsCount'];
     _createdRecordsCount = raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
 
@@ -611,10 +647,12 @@ class RecordRepository {
   static Future<void> resyncAllReminders() => _resyncAllReminders();
 
   static Future<void> _resyncAllReminders() async {
+    final budget = await _budget();
     for (final record in _allRecords()) {
-      await _applyReminderForRecord(record, keepSnooze: true);
+      await _applyReminderForRecord(record, keepSnooze: true, budget: budget);
     }
     DailyDigestService.refreshSoon();
+    WeeklyRecapNotifier.refreshSoon();
   }
 
   static void _add(TrackedItem record) {
