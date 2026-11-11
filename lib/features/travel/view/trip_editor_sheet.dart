@@ -74,7 +74,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     _needsVisa = trip?.needsVisa ?? false;
     _needsVisaManual = trip?.needsVisaManual ?? false;
     _purpose = trip?.purpose ?? TripPurposes.fallback;
-    _travellers = {...(trip?.travellers ?? const <String>[SavedTrip.me])};
+    _travellers = {
+      ...(trip?.travellers ?? const <String>[SavedTrip.me]),
+    };
     _countries = List<String>.of(trip?.countries ?? const <String>[]);
     _flights = List<TripFlight>.of(trip?.flights ?? const <TripFlight>[]);
     if (trip != null && trip.countries.isNotEmpty && trip.hasAutoName) {
@@ -135,8 +137,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     final today = Dates.only(DateTime.now());
     final floor = _departure ?? today;
     final current = _return;
-    final initial =
-        current == null || current.isBefore(floor) ? floor : current;
+    final initial = current == null || current.isBefore(floor)
+        ? floor
+        : current;
     final horizon = DateTime(today.year + 6, 12, 31);
     final picked = await showDatePicker(
       context: context,
@@ -607,10 +610,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                   ],
                 ),
               ),
-              Icon(
-                Icons.chevron_right_rounded,
-                color: scheme.onSurfaceVariant,
-              ),
+              Icon(Icons.chevron_right_rounded, color: scheme.onSurfaceVariant),
             ],
           ),
         ),
@@ -679,15 +679,17 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       _places.text.trim(),
       _purpose.name,
       _flights
-          .map((f) => <Object?>[
-                f.from,
-                f.to,
-                f.toCountry,
-                f.departDate.millisecondsSinceEpoch,
-                f.departTime,
-                f.landDate.millisecondsSinceEpoch,
-                f.landTime,
-              ].join('/'))
+          .map(
+            (f) => <Object?>[
+              f.from,
+              f.to,
+              f.toCountry,
+              f.departDate.millisecondsSinceEpoch,
+              f.departTime,
+              f.landDate.millisecondsSinceEpoch,
+              f.landTime,
+            ].join('/'),
+          )
           .join(','),
     ].join('|');
   }
@@ -711,7 +713,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     final tripNights = departure != null && returnDate != null
         ? Dates.daysBetween(departure, returnDate)
         : null;
-    final maxHeight = MediaQuery.of(context).size.height * 0.9;
+    final maxHeight = MediaQuery.of(context).size.height * 0.92;
 
     return SafeArea(
       child: Padding(
@@ -747,10 +749,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: Text(
                             _nameError!,
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: scheme.error,
-                            ),
+                            style: TextStyle(fontSize: 12, color: scheme.error),
                           ),
                         ),
                       ],
@@ -801,10 +800,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: Text(
                             loc.travelFlightsOutsideDates,
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: scheme.error,
-                            ),
+                            style: TextStyle(fontSize: 12, color: scheme.error),
                           ),
                         ),
                       ] else if (_dateError != null) ...[
@@ -813,10 +809,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: Text(
                             _dateError!,
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: scheme.error,
-                            ),
+                            style: TextStyle(fontSize: 12, color: scheme.error),
                           ),
                         ),
                       ] else if (tripNights != null) ...[
@@ -910,8 +903,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                               ? loc.travelTripNameOptional
                               : SavedTrip.defaultName(
                                   _countries,
-                                  places:
-                                      SavedTrip.placesFromText(_places.text),
+                                  places: SavedTrip.placesFromText(
+                                    _places.text,
+                                  ),
                                 ),
                           hintFontSize: 14,
                           prefixIcon: const Icon(Icons.edit_note_rounded),
@@ -936,8 +930,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                 child: Row(
                   children: [
                     TextButton(
-                      onPressed:
-                          _saving ? null : () => Navigator.of(context).maybePop(),
+                      onPressed: _saving
+                          ? null
+                          : () => Navigator.of(context).maybePop(),
                       child: Text(loc.cancel),
                     ),
                     const Spacer(),

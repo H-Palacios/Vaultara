@@ -269,59 +269,66 @@ class _CostFieldState extends State<CostField> {
     final code = widget.currency.toUpperCase();
     final symbol = CostFormat.symbol(context, code);
 
-    final decoration = AppInputDecorations.field(
-      context,
-      labelText: loc.costFieldLabel,
-      hintText: loc.costFieldHint,
-      focused: _focus.hasFocus,
-      showLabel: _controller.text.isNotEmpty,
-      prefixIcon: Padding(
-        padding: const EdgeInsets.only(left: 14, right: 6),
-        child: Text(
-          symbol,
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: scheme.onSurfaceVariant,
-          ),
-        ),
-      ),
-      suffixIcon: Padding(
-        padding: const EdgeInsets.only(right: 6),
-        child: Tooltip(
-          message: loc.costCurrencyButtonTooltip,
-          child: TextButton(
-            onPressed: widget.enabled ? _pickCurrency : null,
-            style: TextButton.styleFrom(
-              minimumSize: const Size(0, 36),
-              padding: const EdgeInsets.only(left: 10, right: 4),
-              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              backgroundColor: scheme.primary.withValues(alpha: 0.08),
-              foregroundColor: scheme.primary,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+    final decoration =
+        AppInputDecorations.field(
+          context,
+          labelText: loc.costFieldLabel,
+          hintText: loc.costFieldHint,
+          focused: _focus.hasFocus,
+          showLabel: _controller.text.isNotEmpty,
+          prefixIcon: Padding(
+            padding: const EdgeInsets.only(left: 14, right: 6),
+            child: Text(
+              symbol,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: scheme.onSurfaceVariant,
               ),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  code,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w700,
+          ),
+          suffixIcon: Padding(
+            padding: const EdgeInsets.only(right: 6),
+            child: Tooltip(
+              message: loc.costCurrencyButtonTooltip,
+              child: TextButton(
+                onPressed: widget.enabled ? _pickCurrency : null,
+                style: TextButton.styleFrom(
+                  minimumSize: const Size(0, 36),
+                  padding: const EdgeInsets.only(left: 10, right: 4),
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  backgroundColor: scheme.primary.withValues(alpha: 0.08),
+                  foregroundColor: scheme.primary,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-                const Icon(Icons.arrow_drop_down_rounded, size: 20),
-              ],
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      code,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const Icon(Icons.arrow_drop_down_rounded, size: 20),
+                  ],
+                ),
+              ),
             ),
           ),
-        ),
-      ),
-    ).copyWith(
-      prefixIconConstraints: const BoxConstraints(minWidth: 0, minHeight: 0),
-      suffixIconConstraints: const BoxConstraints(minWidth: 0, minHeight: 0),
-    );
+        ).copyWith(
+          prefixIconConstraints: const BoxConstraints(
+            minWidth: 0,
+            minHeight: 0,
+          ),
+          suffixIconConstraints: const BoxConstraints(
+            minWidth: 0,
+            minHeight: 0,
+          ),
+        );
 
     return TextField(
       controller: _controller,
@@ -354,10 +361,8 @@ Future<String?> showCurrencyPicker(
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
-    builder: (_) => CurrencyPickerSheet(
-      selected: selected,
-      available: available?.toSet(),
-    ),
+    builder: (_) =>
+        CurrencyPickerSheet(selected: selected, available: available?.toSet()),
   );
 }
 
@@ -365,7 +370,11 @@ class CurrencyPickerSheet extends StatefulWidget {
   final String selected;
   final Set<String>? available;
 
-  const CurrencyPickerSheet({super.key, required this.selected, this.available});
+  const CurrencyPickerSheet({
+    super.key,
+    required this.selected,
+    this.available,
+  });
 
   @override
   State<CurrencyPickerSheet> createState() => _CurrencyPickerSheetState();
@@ -393,9 +402,7 @@ class _CurrencyPickerSheetState extends State<CurrencyPickerSheet> {
       final common = CostField.commonCurrencies
           .where(available.contains)
           .toList();
-      final rest = available
-          .where((code) => !common.contains(code))
-          .toList()
+      final rest = available.where((code) => !common.contains(code)).toList()
         ..sort();
       listed = <String>[...common, ...rest];
     }
@@ -430,7 +437,7 @@ class _CurrencyPickerSheetState extends State<CurrencyPickerSheet> {
     return Padding(
       padding: EdgeInsets.only(bottom: media.viewInsets.bottom),
       child: SizedBox(
-        height: media.size.height * 0.7,
+        height: media.size.height * 0.92,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           child: Column(
@@ -474,14 +481,16 @@ class _CurrencyPickerSheetState extends State<CurrencyPickerSheet> {
                           final code = codes[index];
                           final isSelected = code == selected;
                           return ListTile(
-                            contentPadding:
-                                const EdgeInsets.symmetric(horizontal: 4),
+                            contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 4,
+                            ),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(14),
                             ),
                             selected: isSelected,
-                            selectedTileColor:
-                                scheme.primary.withValues(alpha: 0.08),
+                            selectedTileColor: scheme.primary.withValues(
+                              alpha: 0.08,
+                            ),
                             leading: SizedBox(
                               width: 48,
                               child: Center(

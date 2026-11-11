@@ -28,11 +28,8 @@ Future<String?> showPassportCountryPicker(
     isScrollControlled: true,
     useSafeArea: true,
     showDragHandle: true,
-    builder: (_) => _PassportCountrySheet(
-      selected: selected,
-      title: title,
-      hint: hint,
-    ),
+    builder: (_) =>
+        _PassportCountrySheet(selected: selected, title: title, hint: hint),
   );
 }
 
@@ -41,11 +38,7 @@ class _PassportCountrySheet extends StatefulWidget {
   final String? title;
   final String? hint;
 
-  const _PassportCountrySheet({
-    required this.selected,
-    this.title,
-    this.hint,
-  });
+  const _PassportCountrySheet({required this.selected, this.title, this.hint});
 
   @override
   State<_PassportCountrySheet> createState() => _PassportCountrySheetState();
@@ -66,7 +59,7 @@ class _PassportCountrySheetState extends State<_PassportCountrySheet> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
-    final height = MediaQuery.of(context).size.height * 0.85;
+    final height = MediaQuery.of(context).size.height * 0.92;
 
     return SafeArea(
       child: Padding(
@@ -226,7 +219,7 @@ class _CountryPickerSheetState extends State<_CountryPickerSheet> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
-    final height = MediaQuery.of(context).size.height * 0.85;
+    final height = MediaQuery.of(context).size.height * 0.92;
 
     return SafeArea(
       child: Padding(
@@ -341,8 +334,9 @@ class _CountryPickerSheetState extends State<_CountryPickerSheet> {
                     SizedBox(
                       width: 140,
                       child: FilledButton(
-                        onPressed: () => Navigator.of(context)
-                            .pop(List<String>.of(_selected)),
+                        onPressed: () => Navigator.of(
+                          context,
+                        ).pop(List<String>.of(_selected)),
                         child: Text(loc.apply),
                       ),
                     ),
