@@ -3095,5 +3095,146 @@
       }
     }
   },
-  "homePinnedTitle": "Ainguratutako kategoriak"
+  "homePinnedTitle": "Ainguratutako kategoriak",
+  "notifAskTitle": "Jaso oroigarriak garaiz",
+  "notifAskBody": "Jakinarazpenak baimenduta badaude soilik abisa zaitzake Vaultarak zerbait iraungi aurretik. Oroigarriak eta kontuko alerta garrantzitsuak soilik bidaltzen ditugu.",
+  "notifAskAllow": "Baimendu jakinarazpenak",
+  "notifAskLater": "Orain ez",
+  "signInTooManyTries": "Saiakera gehiegi. Itxaron pixka bat berriro saiatu aurretik, edo berrezarri pasahitza.",
+  "signInWaitSeconds": "{seconds, plural, =1{Saiatu berriro {seconds} segundo barru} other{Saiatu berriro {seconds} segundo barru}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Babeskopia-kodeak",
+  "backupCodesIntro": "Telefonoa edo autentifikazio-aplikazioa galtzen baduzu, babeskopia-kode batekin has dezakezu saioa. Kode bakoitzak behin balio du.",
+  "backupCodesShownOnce": "Kode hauek behin bakarrik erakusten dira. Gorde leku seguru batean, telefono honetatik urrun.",
+  "backupCodesCopy": "Kopiatu",
+  "backupCodesSave": "Gorde edo partekatu",
+  "backupCodesSaved": "Kodeak gorde ditut",
+  "backupCodesLeft": "{count, plural, =0{Ez da babeskopia-koderik geratzen} =1{{count} babeskopia-kode geratzen da} other{{count} babeskopia-kode geratzen dira}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Sortu babeskopia-kodeak",
+  "backupCodesMakeNew": "Sortu kode berriak",
+  "backupCodesReplaceTitle": "Babeskopia-kode berriak sortu?",
+  "backupCodesReplaceBody": "Kode zaharrek berehala utziko diote funtzionatzeari.",
+  "backupCodesFileTitle": "Vaultara babeskopia-kodeak",
+  "backupCodesEachOnce": "Kode bakoitzak behin balio du. Gorde leku seguru batean.",
+  "backupCodesCopied": "Kodeak kopiatu dira. Minutu batean ezabatuko dira arbeletik.",
+  "backupCodesNone": "Oraindik ez da sortu",
+  "backupCodesTileHint": "Hasi saioa telefonoa galtzen baduzu",
+  "backupCodeUseTitle": "Erabili babeskopia-kode bat",
+  "backupCodeUseBody": "Idatzi gorde dituzun babeskopia-kodeetako bat. Bat erabiltzean bi urratseko egiaztapena desaktibatzen da, telefono berrian berriro konfigura dezazun.",
+  "backupCodeLabel": "Babeskopia-kodea",
+  "backupCodeFormat": "Babeskopia-kodeek itxura hau dute: ABCDE-FGHJK.",
+  "backupCodeWrong": "Kode horrek ez du funtzionatu. Egiaztatu eta saiatu berriro.",
+  "backupCodeBack": "Erabili nire autentifikazio-aplikazioa",
+  "twoStepStepOf": "{step}/{total}. urratsa",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Zure aplikazioan Vaultara ({email}) gisa agertuko da.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodeak 30 segundoz behin aldatzen dira. Idatzi orain ageri dena.",
+  "twoStepPaste": "Itsatsi",
+  "twoStepBackupNext": "Sortu babeskopia-kodeak telefono hau galduta ere saioa hasi ahal izateko.",
+  "twoStepAppLockTitle": "Blokeatu aplikazioa ere",
+  "twoStepAppLockBody": "Bi urratsek saio-hasiera babesten dute. Aplikazioaren blokeoak hatz-marka, aurpegia edo pantailaren blokeoa eskatzen du Vaultara irekitzen den bakoitzean.",
+  "twoStepAppLockAction": "Aktibatu aplikazioaren blokeoa",
+  "twoStepSignOutOthersBody": "Ezagutzen ez duzun leku batean hasi da saioa? Amaitu saioa beste gailuetan.",
+  "twoStepReviewDevices": "Berrikusi gailuak",
+  "twoStepSkipForNow": "Saltatu oraingoz",
+  "twoStepOffTitle": "Bi urratseko egiaztapena desaktibatuta dago",
+  "twoStepOffBody": "Babeskopia-kode batekin hasi duzu saioa; beraz, bi urratseko egiaztapena desaktibatu da. Konfiguratu berriro telefono honetan kontua babestuta mantentzeko.",
+  "expiryPlusYears": "{years, plural, =1{+{years} urte} other{+{years} urte}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Idatzi data",
+  "expiryTypeTitle": "Idatzi iraungitze-data",
+  "expiryTypeHint": "Adibidez {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Data hori ez dirudi zuzena. Probatu {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Data hori igaro da; beraz, erregistroa iraungita gisa gordeko da.",
+  "expiryEndsToday": "Gaur iraungitzen da.",
+  "saveAndAddAnother": "Gorde eta gehitu beste bat",
+  "quickStartTitle": "Hasiera azkarra",
+  "categoryCreatedAddGroup": "{name} sortu da. Talde bat gehitu nahi diozu?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} sortu da. Erregistro bat gehitu nahi diozu?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Ziurtagiriak",
+  "groupIdeaLicences": "Lizentziak",
+  "groupIdeaContracts": "Kontratuak",
+  "groupIdeaPermits": "Baimenak",
+  "groupIdeaInsurance": "Aseguruak",
+  "assistantCategoryAddTitle": "Kategoria berria",
+  "assistantCategoryAddNote": "Izenaren arabera aukeratzen da ikonoa. Geroago alda dezakezu.",
+  "assistantCategoryRenameTitle": "Aldatu kategoriaren izena",
+  "assistantGroupAddTitle": "Talde berria",
+  "assistantGroupRenameTitle": "Aldatu taldearen izena",
+  "assistantMoveTitle": "{count, plural, =1{Eraman {count} erregistro} other{Eraman {count} erregistro}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Leheneratu erregistroa",
+  "assistantRestoreNote": "Erregistroa eta haren oroigarriak itzultzen dira.",
+  "assistantStepCategories": "Zure kategoriak egiaztatzen…",
+  "assistantStepCosts": "Berritze-kostuak batzen…",
+  "assistantStepVisa": "Bisa-arauak egiaztatzen…"
 }

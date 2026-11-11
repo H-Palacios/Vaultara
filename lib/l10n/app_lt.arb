@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Prisegtos kategorijos"
+  "homePinnedTitle": "Prisegtos kategorijos",
+  "notifAskTitle": "Gaukite priminimus laiku",
+  "notifAskBody": "Vaultara gali jums priminti prieš kam nors pasibaigiant tik tada, kai pranešimai leidžiami. Siunčiame tik priminimus ir svarbius paskyros įspėjimus.",
+  "notifAskAllow": "Leisti pranešimus",
+  "notifAskLater": "Ne dabar",
+  "signInTooManyTries": "Per daug bandymų. Palaukite truputį prieš bandydami dar kartą arba atkurkite slaptažodį.",
+  "signInWaitSeconds": "{seconds, plural, one{Bandykite dar kartą po {seconds} sekundės} few{Bandykite dar kartą po {seconds} sekundžių} many{Bandykite dar kartą po {seconds} sekundės} other{Bandykite dar kartą po {seconds} sekundžių}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Atsarginiai kodai",
+  "backupCodesIntro": "Jei pamesite telefoną ar autentifikavimo programą, atsarginis kodas leis prisijungti. Kiekvienas kodas veikia vieną kartą.",
+  "backupCodesShownOnce": "Šie kodai rodomi tik vieną kartą. Išsaugokite juos saugioje vietoje, ne šiame telefone.",
+  "backupCodesCopy": "Kopijuoti",
+  "backupCodesSave": "Išsaugoti arba bendrinti",
+  "backupCodesSaved": "Išsaugojau kodus",
+  "backupCodesLeft": "{count, plural, =0{Neliko atsarginių kodų} one{Liko {count} atsarginis kodas} few{Liko {count} atsarginiai kodai} many{Liko {count} atsarginio kodo} other{Liko {count} atsarginių kodų}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Sukurti atsarginius kodus",
+  "backupCodesMakeNew": "Sukurti naujus kodus",
+  "backupCodesReplaceTitle": "Sukurti naujus atsarginius kodus?",
+  "backupCodesReplaceBody": "Seni kodai iškart nustos veikti.",
+  "backupCodesFileTitle": "Vaultara atsarginiai kodai",
+  "backupCodesEachOnce": "Kiekvienas kodas veikia vieną kartą. Laikykite juos saugioje vietoje.",
+  "backupCodesCopied": "Atsarginiai kodai nukopijuoti. Po minutės jie bus išvalyti iš iškarpinės.",
+  "backupCodesNone": "Dar nesukurta",
+  "backupCodesTileHint": "Prisijungimas pametus telefoną",
+  "backupCodeUseTitle": "Naudoti atsarginį kodą",
+  "backupCodeUseBody": "Įveskite vieną iš išsaugotų atsarginių kodų. Jį panaudojus išjungiamas patvirtinimas dviem veiksmais, kad galėtumėte jį iš naujo nustatyti naujame telefone.",
+  "backupCodeLabel": "Atsarginis kodas",
+  "backupCodeFormat": "Atsarginiai kodai atrodo taip: ABCDE-FGHJK.",
+  "backupCodeWrong": "Tas kodas netiko. Patikrinkite ir bandykite dar kartą.",
+  "backupCodeBack": "Naudoti autentifikavimo programą",
+  "twoStepStepOf": "{step} veiksmas iš {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Jūsų programoje bus rodoma kaip Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodai keičiasi kas 30 sekundžių. Įveskite dabar rodomą.",
+  "twoStepPaste": "Įklijuoti",
+  "twoStepBackupNext": "Sukurkite atsarginius kodus, kad galėtumėte prisijungti net pametę šį telefoną.",
+  "twoStepAppLockTitle": "Užrakinkite ir programą",
+  "twoStepAppLockBody": "Du veiksmai saugo prisijungimą. Programos užraktas kiekvieną kartą atidarant Vaultara prašo piršto atspaudo, veido arba ekrano užrakto.",
+  "twoStepAppLockAction": "Įjungti programos užraktą",
+  "twoStepSignOutOthersBody": "Prisijungta kažkur, ko neatpažįstate? Atsijunkite nuo kitų įrenginių.",
+  "twoStepReviewDevices": "Peržiūrėti įrenginius",
+  "twoStepSkipForNow": "Kol kas praleisti",
+  "twoStepOffTitle": "Patvirtinimas dviem veiksmais išjungtas",
+  "twoStepOffBody": "Prisijungėte atsarginiu kodu, todėl patvirtinimas dviem veiksmais buvo išjungtas. Nustatykite jį iš naujo šiame telefone, kad paskyra liktų apsaugota.",
+  "expiryPlusYears": "{years, plural, one{+{years} metai} few{+{years} metai} many{+{years} metų} other{+{years} metų}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Įvesti datą",
+  "expiryTypeTitle": "Įveskite galiojimo pabaigos datą",
+  "expiryTypeHint": "Pavyzdžiui {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ši data neatrodo teisinga. Pabandykite {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ši data jau praėjo, todėl įrašas bus išsaugotas kaip pasibaigęs.",
+  "expiryEndsToday": "Galioja iki šiandien.",
+  "saveAndAddAnother": "Išsaugoti ir pridėti kitą",
+  "quickStartTitle": "Greita pradžia",
+  "categoryCreatedAddGroup": "{name} sukurta. Pridėti grupę?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} sukurta. Pridėti įrašą?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikatai",
+  "groupIdeaLicences": "Licencijos",
+  "groupIdeaContracts": "Sutartys",
+  "groupIdeaPermits": "Leidimai",
+  "groupIdeaInsurance": "Draudimas",
+  "assistantCategoryAddTitle": "Nauja kategorija",
+  "assistantCategoryAddNote": "Piktograma parenkama pagal pavadinimą. Vėliau galėsite ją pakeisti.",
+  "assistantCategoryRenameTitle": "Pervadinti kategoriją",
+  "assistantGroupAddTitle": "Nauja grupė",
+  "assistantGroupRenameTitle": "Pervadinti grupę",
+  "assistantMoveTitle": "{count, plural, one{Perkelti {count} įrašą} few{Perkelti {count} įrašus} many{Perkelti {count} įrašo} other{Perkelti {count} įrašų}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Atkurti įrašą",
+  "assistantRestoreNote": "Įrašas ir jo priminimai grįžta.",
+  "assistantStepCategories": "Tikrinamos jūsų kategorijos…",
+  "assistantStepCosts": "Skaičiuojamos atnaujinimo išlaidos…",
+  "assistantStepVisa": "Tikrinamos vizų taisyklės…"
 }

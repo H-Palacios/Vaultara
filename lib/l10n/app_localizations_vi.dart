@@ -8357,4 +8357,249 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Danh mục đã ghim';
+
+  @override
+  String get notifAskTitle => 'Nhận lời nhắc đúng lúc';
+
+  @override
+  String get notifAskBody => 'Vaultara chỉ có thể nhắc bạn trước khi một thứ hết hạn nếu thông báo được cho phép. Chúng tôi chỉ gửi lời nhắc và cảnh báo quan trọng về tài khoản.';
+
+  @override
+  String get notifAskAllow => 'Cho phép thông báo';
+
+  @override
+  String get notifAskLater => 'Để sau';
+
+  @override
+  String get signInTooManyTries => 'Quá nhiều lần thử. Hãy đợi một lát trước khi thử lại, hoặc đặt lại mật khẩu.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Thử lại sau $seconds giây',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Mã dự phòng';
+
+  @override
+  String get backupCodesIntro => 'Nếu bạn mất điện thoại hoặc ứng dụng xác thực, mã dự phòng cho phép bạn đăng nhập. Mỗi mã chỉ dùng được một lần.';
+
+  @override
+  String get backupCodesShownOnce => 'Các mã này chỉ hiển thị một lần. Hãy lưu chúng ở nơi an toàn, tách biệt với điện thoại này.';
+
+  @override
+  String get backupCodesCopy => 'Sao chép';
+
+  @override
+  String get backupCodesSave => 'Lưu hoặc chia sẻ';
+
+  @override
+  String get backupCodesSaved => 'Tôi đã lưu mã';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Còn $count mã dự phòng',
+      zero: 'Không còn mã dự phòng nào',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Tạo mã dự phòng';
+
+  @override
+  String get backupCodesMakeNew => 'Tạo mã mới';
+
+  @override
+  String get backupCodesReplaceTitle => 'Tạo mã dự phòng mới?';
+
+  @override
+  String get backupCodesReplaceBody => 'Các mã cũ sẽ ngừng hoạt động ngay lập tức.';
+
+  @override
+  String get backupCodesFileTitle => 'Mã dự phòng Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Mỗi mã chỉ dùng được một lần. Hãy cất giữ ở nơi an toàn.';
+
+  @override
+  String get backupCodesCopied => 'Đã sao chép mã dự phòng. Mã sẽ bị xóa khỏi bộ nhớ tạm sau một phút.';
+
+  @override
+  String get backupCodesNone => 'Chưa tạo mã nào';
+
+  @override
+  String get backupCodesTileHint => 'Đăng nhập nếu bạn mất điện thoại';
+
+  @override
+  String get backupCodeUseTitle => 'Dùng mã dự phòng';
+
+  @override
+  String get backupCodeUseBody => 'Nhập một trong các mã dự phòng bạn đã lưu. Dùng mã sẽ tắt xác minh hai bước để bạn có thể thiết lập lại trên điện thoại mới.';
+
+  @override
+  String get backupCodeLabel => 'Mã dự phòng';
+
+  @override
+  String get backupCodeFormat => 'Mã dự phòng có dạng ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Mã đó không dùng được. Hãy kiểm tra và thử lại.';
+
+  @override
+  String get backupCodeBack => 'Dùng ứng dụng xác thực của tôi';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Bước $step/$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Mục này sẽ hiển thị là Vaultara ($email) trong ứng dụng của bạn.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Mã thay đổi sau mỗi 30 giây. Nhập mã đang hiển thị.';
+
+  @override
+  String get twoStepPaste => 'Dán';
+
+  @override
+  String get twoStepBackupNext => 'Hãy tạo mã dự phòng để vẫn đăng nhập được nếu bạn mất điện thoại này.';
+
+  @override
+  String get twoStepAppLockTitle => 'Khóa cả ứng dụng';
+
+  @override
+  String get twoStepAppLockBody => 'Hai bước bảo vệ việc đăng nhập. Khóa ứng dụng sẽ yêu cầu vân tay, khuôn mặt hoặc khóa màn hình mỗi khi mở Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Bật khóa ứng dụng';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Đang đăng nhập ở nơi bạn không nhận ra? Hãy đăng xuất khỏi các thiết bị khác.';
+
+  @override
+  String get twoStepReviewDevices => 'Xem lại thiết bị';
+
+  @override
+  String get twoStepSkipForNow => 'Bỏ qua lúc này';
+
+  @override
+  String get twoStepOffTitle => 'Xác minh hai bước đang tắt';
+
+  @override
+  String get twoStepOffBody => 'Bạn đã đăng nhập bằng mã dự phòng nên xác minh hai bước đã bị tắt. Hãy thiết lập lại trên điện thoại này để bảo vệ tài khoản.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years năm',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Nhập ngày';
+
+  @override
+  String get expiryTypeTitle => 'Nhập ngày hết hạn';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Ví dụ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ngày đó có vẻ không đúng. Hãy thử $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ngày này đã qua nên mục sẽ được lưu là đã hết hạn.';
+
+  @override
+  String get expiryEndsToday => 'Mục này hết hạn hôm nay.';
+
+  @override
+  String get saveAndAddAnother => 'Lưu và thêm mục khác';
+
+  @override
+  String get quickStartTitle => 'Bắt đầu nhanh';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Đã tạo $name. Thêm nhóm vào đó?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Đã tạo $name. Thêm mục vào đó?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Chứng chỉ';
+
+  @override
+  String get groupIdeaLicences => 'Giấy phép';
+
+  @override
+  String get groupIdeaContracts => 'Hợp đồng';
+
+  @override
+  String get groupIdeaPermits => 'Giấy phép đặc biệt';
+
+  @override
+  String get groupIdeaInsurance => 'Bảo hiểm';
+
+  @override
+  String get assistantCategoryAddTitle => 'Danh mục mới';
+
+  @override
+  String get assistantCategoryAddNote => 'Biểu tượng được chọn theo tên. Bạn có thể đổi sau.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Đổi tên danh mục';
+
+  @override
+  String get assistantGroupAddTitle => 'Nhóm mới';
+
+  @override
+  String get assistantGroupRenameTitle => 'Đổi tên nhóm';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Di chuyển $count mục',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Khôi phục mục';
+
+  @override
+  String get assistantRestoreNote => 'Mục và các lời nhắc của nó sẽ quay lại.';
+
+  @override
+  String get assistantStepCategories => 'Đang kiểm tra danh mục của bạn…';
+
+  @override
+  String get assistantStepCosts => 'Đang cộng chi phí gia hạn…';
+
+  @override
+  String get assistantStepVisa => 'Đang kiểm tra quy định thị thực…';
 }

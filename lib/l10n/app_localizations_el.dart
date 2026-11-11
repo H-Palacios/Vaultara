@@ -8421,4 +8421,253 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Καρφιτσωμένες κατηγορίες';
+
+  @override
+  String get notifAskTitle => 'Λάβετε τις υπενθυμίσεις σας εγκαίρως';
+
+  @override
+  String get notifAskBody => 'Το Vaultara μπορεί να σας υπενθυμίσει πριν λήξει κάτι μόνο αν επιτρέπονται οι ειδοποιήσεις. Στέλνουμε μόνο υπενθυμίσεις και σημαντικές ειδοποιήσεις λογαριασμού.';
+
+  @override
+  String get notifAskAllow => 'Να επιτρέπονται οι ειδοποιήσεις';
+
+  @override
+  String get notifAskLater => 'Όχι τώρα';
+
+  @override
+  String get signInTooManyTries => 'Πάρα πολλές προσπάθειες. Περιμένετε λίγο πριν δοκιμάσετε ξανά ή επαναφέρετε τον κωδικό σας.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Δοκιμάστε ξανά σε $seconds δευτερόλεπτα',
+      one: 'Δοκιμάστε ξανά σε $seconds δευτερόλεπτο',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Εφεδρικοί κωδικοί';
+
+  @override
+  String get backupCodesIntro => 'Αν χάσετε το τηλέφωνο ή την εφαρμογή ελέγχου ταυτότητας, ένας εφεδρικός κωδικός σάς επιτρέπει να συνδεθείτε. Κάθε κωδικός λειτουργεί μία φορά.';
+
+  @override
+  String get backupCodesShownOnce => 'Αυτοί οι κωδικοί εμφανίζονται μόνο μία φορά. Αποθηκεύστε τους σε ασφαλές μέρος, μακριά από αυτό το τηλέφωνο.';
+
+  @override
+  String get backupCodesCopy => 'Αντιγραφή';
+
+  @override
+  String get backupCodesSave => 'Αποθήκευση ή κοινοποίηση';
+
+  @override
+  String get backupCodesSaved => 'Αποθήκευσα τους κωδικούς μου';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Απομένουν $count εφεδρικοί κωδικοί',
+      one: 'Απομένει $count εφεδρικός κωδικός',
+      zero: 'Δεν απομένουν εφεδρικοί κωδικοί',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Δημιουργία εφεδρικών κωδικών';
+
+  @override
+  String get backupCodesMakeNew => 'Δημιουργία νέων κωδικών';
+
+  @override
+  String get backupCodesReplaceTitle => 'Δημιουργία νέων εφεδρικών κωδικών;';
+
+  @override
+  String get backupCodesReplaceBody => 'Οι παλιοί σας κωδικοί θα σταματήσουν να λειτουργούν αμέσως.';
+
+  @override
+  String get backupCodesFileTitle => 'Εφεδρικοί κωδικοί Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Κάθε κωδικός λειτουργεί μία φορά. Φυλάξτε τους σε ασφαλές μέρος.';
+
+  @override
+  String get backupCodesCopied => 'Οι εφεδρικοί κωδικοί αντιγράφηκαν. Θα διαγραφούν από το πρόχειρο σε ένα λεπτό.';
+
+  @override
+  String get backupCodesNone => 'Δεν έχουν δημιουργηθεί ακόμα';
+
+  @override
+  String get backupCodesTileHint => 'Σύνδεση αν χάσετε το τηλέφωνο';
+
+  @override
+  String get backupCodeUseTitle => 'Χρήση εφεδρικού κωδικού';
+
+  @override
+  String get backupCodeUseBody => 'Εισαγάγετε έναν από τους εφεδρικούς κωδικούς που αποθηκεύσατε. Η χρήση του απενεργοποιεί την επαλήθευση δύο βημάτων, ώστε να τη ρυθμίσετε ξανά στο νέο σας τηλέφωνο.';
+
+  @override
+  String get backupCodeLabel => 'Εφεδρικός κωδικός';
+
+  @override
+  String get backupCodeFormat => 'Οι εφεδρικοί κωδικοί μοιάζουν με ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Αυτός ο κωδικός δεν λειτούργησε. Ελέγξτε τον και δοκιμάστε ξανά.';
+
+  @override
+  String get backupCodeBack => 'Χρήση της εφαρμογής ελέγχου ταυτότητας';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Βήμα $step από $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Θα εμφανίζεται ως Vaultara ($email) στην εφαρμογή σας.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Οι κωδικοί αλλάζουν κάθε 30 δευτερόλεπτα. Εισαγάγετε αυτόν που φαίνεται τώρα.';
+
+  @override
+  String get twoStepPaste => 'Επικόλληση';
+
+  @override
+  String get twoStepBackupNext => 'Δημιουργήστε εφεδρικούς κωδικούς για να μπορείτε να συνδεθείτε ακόμα κι αν χάσετε αυτό το τηλέφωνο.';
+
+  @override
+  String get twoStepAppLockTitle => 'Κλειδώστε και την εφαρμογή';
+
+  @override
+  String get twoStepAppLockBody => 'Τα δύο βήματα προστατεύουν τη σύνδεση. Το κλείδωμα εφαρμογής ζητά δακτυλικό αποτύπωμα, πρόσωπο ή κλείδωμα οθόνης κάθε φορά που ανοίγει το Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Ενεργοποίηση κλειδώματος';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Συνδεθήκατε κάπου που δεν αναγνωρίζετε; Αποσυνδεθείτε από άλλες συσκευές.';
+
+  @override
+  String get twoStepReviewDevices => 'Έλεγχος συσκευών';
+
+  @override
+  String get twoStepSkipForNow => 'Παράλειψη προς το παρόν';
+
+  @override
+  String get twoStepOffTitle => 'Η επαλήθευση δύο βημάτων είναι απενεργοποιημένη';
+
+  @override
+  String get twoStepOffBody => 'Συνδεθήκατε με εφεδρικό κωδικό, οπότε η επαλήθευση δύο βημάτων απενεργοποιήθηκε. Ρυθμίστε την ξανά σε αυτό το τηλέφωνο για να μείνει προστατευμένος ο λογαριασμός σας.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years έτη',
+      one: '+$years έτος',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Πληκτρολόγηση ημερομηνίας';
+
+  @override
+  String get expiryTypeTitle => 'Πληκτρολογήστε την ημερομηνία λήξης';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Για παράδειγμα $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Αυτή η ημερομηνία δεν φαίνεται σωστή. Δοκιμάστε $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Αυτή η ημερομηνία έχει περάσει, οπότε η εγγραφή θα αποθηκευτεί ως ληγμένη.';
+
+  @override
+  String get expiryEndsToday => 'Λήγει σήμερα.';
+
+  @override
+  String get saveAndAddAnother => 'Αποθήκευση και προσθήκη άλλου';
+
+  @override
+  String get quickStartTitle => 'Γρήγορη έναρξη';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Η κατηγορία $name δημιουργήθηκε. Να προστεθεί ομάδα;';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Η ομάδα $name δημιουργήθηκε. Να προστεθεί εγγραφή;';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Πιστοποιητικά';
+
+  @override
+  String get groupIdeaLicences => 'Άδειες';
+
+  @override
+  String get groupIdeaContracts => 'Συμβόλαια';
+
+  @override
+  String get groupIdeaPermits => 'Εγκρίσεις';
+
+  @override
+  String get groupIdeaInsurance => 'Ασφάλειες';
+
+  @override
+  String get assistantCategoryAddTitle => 'Νέα κατηγορία';
+
+  @override
+  String get assistantCategoryAddNote => 'Το εικονίδιο επιλέγεται από το όνομα. Μπορείτε να το αλλάξετε αργότερα.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Μετονομασία κατηγορίας';
+
+  @override
+  String get assistantGroupAddTitle => 'Νέα ομάδα';
+
+  @override
+  String get assistantGroupRenameTitle => 'Μετονομασία ομάδας';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Μετακίνηση $count εγγραφών',
+      one: 'Μετακίνηση $count εγγραφής',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Επαναφορά εγγραφής';
+
+  @override
+  String get assistantRestoreNote => 'Η εγγραφή και οι υπενθυμίσεις της επιστρέφουν.';
+
+  @override
+  String get assistantStepCategories => 'Έλεγχος των κατηγοριών σας…';
+
+  @override
+  String get assistantStepCosts => 'Υπολογισμός κόστους ανανέωσης…';
+
+  @override
+  String get assistantStepVisa => 'Έλεγχος κανόνων βίζας…';
 }

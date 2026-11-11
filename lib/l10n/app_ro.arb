@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Categorii fixate"
+  "homePinnedTitle": "Categorii fixate",
+  "notifAskTitle": "Primește mementourile la timp",
+  "notifAskBody": "Vaultara îți poate aminti înainte să expire ceva doar dacă notificările sunt permise. Trimitem doar mementouri și alerte importante despre cont.",
+  "notifAskAllow": "Permite notificările",
+  "notifAskLater": "Nu acum",
+  "signInTooManyTries": "Prea multe încercări. Așteaptă puțin înainte să încerci din nou sau resetează-ți parola.",
+  "signInWaitSeconds": "{seconds, plural, one{Încearcă din nou peste {seconds} secundă} few{Încearcă din nou peste {seconds} secunde} other{Încearcă din nou peste {seconds} de secunde}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Coduri de rezervă",
+  "backupCodesIntro": "Dacă îți pierzi telefonul sau aplicația de autentificare, un cod de rezervă îți permite să te conectezi. Fiecare cod funcționează o dată.",
+  "backupCodesShownOnce": "Aceste coduri se afișează o singură dată. Salvează-le într-un loc sigur, departe de acest telefon.",
+  "backupCodesCopy": "Copiază",
+  "backupCodesSave": "Salvează sau trimite",
+  "backupCodesSaved": "Mi-am salvat codurile",
+  "backupCodesLeft": "{count, plural, =0{Nu a mai rămas niciun cod de rezervă} one{A rămas {count} cod de rezervă} few{Au rămas {count} coduri de rezervă} other{Au rămas {count} de coduri de rezervă}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Creează coduri de rezervă",
+  "backupCodesMakeNew": "Creează coduri noi",
+  "backupCodesReplaceTitle": "Creezi coduri de rezervă noi?",
+  "backupCodesReplaceBody": "Codurile vechi nu vor mai funcționa imediat.",
+  "backupCodesFileTitle": "Coduri de rezervă Vaultara",
+  "backupCodesEachOnce": "Fiecare cod funcționează o dată. Păstrează-le într-un loc sigur.",
+  "backupCodesCopied": "Coduri de rezervă copiate. Vor fi șterse din clipboard într-un minut.",
+  "backupCodesNone": "Niciunul creat încă",
+  "backupCodesTileHint": "Conectează-te dacă pierzi telefonul",
+  "backupCodeUseTitle": "Folosește un cod de rezervă",
+  "backupCodeUseBody": "Introdu unul dintre codurile de rezervă salvate. Folosirea lui dezactivează verificarea în doi pași, ca s-o poți configura din nou pe telefonul nou.",
+  "backupCodeLabel": "Cod de rezervă",
+  "backupCodeFormat": "Codurile de rezervă arată așa: ABCDE-FGHJK.",
+  "backupCodeWrong": "Codul nu a funcționat. Verifică-l și încearcă din nou.",
+  "backupCodeBack": "Folosește aplicația mea de autentificare",
+  "twoStepStepOf": "Pasul {step} din {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Va apărea ca Vaultara ({email}) în aplicație.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Codurile se schimbă la fiecare 30 de secunde. Introdu-l pe cel afișat acum.",
+  "twoStepPaste": "Lipește",
+  "twoStepBackupNext": "Creează coduri de rezervă ca să te poți conecta chiar dacă pierzi acest telefon.",
+  "twoStepAppLockTitle": "Blochează și aplicația",
+  "twoStepAppLockBody": "Verificarea în doi pași protejează conectarea. Blocarea aplicației cere amprenta, fața sau blocarea ecranului de fiecare dată când se deschide Vaultara.",
+  "twoStepAppLockAction": "Activează blocarea aplicației",
+  "twoStepSignOutOthersBody": "Conectat undeva ce nu recunoști? Deconectează-te de pe alte dispozitive.",
+  "twoStepReviewDevices": "Verifică dispozitivele",
+  "twoStepSkipForNow": "Omite deocamdată",
+  "twoStepOffTitle": "Verificarea în doi pași este dezactivată",
+  "twoStepOffBody": "Te-ai conectat cu un cod de rezervă, așa că verificarea în doi pași a fost dezactivată. Configureaz-o din nou pe acest telefon ca să-ți păstrezi contul protejat.",
+  "expiryPlusYears": "{years, plural, one{+{years} an} few{+{years} ani} other{+{years} de ani}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Scrie data",
+  "expiryTypeTitle": "Scrie data expirării",
+  "expiryTypeHint": "De exemplu {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Data nu pare corectă. Încearcă {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Această dată a trecut, așa că înregistrarea va fi salvată ca expirată.",
+  "expiryEndsToday": "Expiră astăzi.",
+  "saveAndAddAnother": "Salvează și adaugă încă unul",
+  "quickStartTitle": "Pornire rapidă",
+  "categoryCreatedAddGroup": "{name} a fost creată. Adaugi un grup?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} a fost creat. Adaugi o înregistrare?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificate",
+  "groupIdeaLicences": "Licențe",
+  "groupIdeaContracts": "Contracte",
+  "groupIdeaPermits": "Permise",
+  "groupIdeaInsurance": "Asigurări",
+  "assistantCategoryAddTitle": "Categorie nouă",
+  "assistantCategoryAddNote": "Pictograma se alege după nume. O poți schimba mai târziu.",
+  "assistantCategoryRenameTitle": "Redenumește categoria",
+  "assistantGroupAddTitle": "Grup nou",
+  "assistantGroupRenameTitle": "Redenumește grupul",
+  "assistantMoveTitle": "{count, plural, one{Mută {count} înregistrare} few{Mută {count} înregistrări} other{Mută {count} de înregistrări}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restaurează înregistrarea",
+  "assistantRestoreNote": "Înregistrarea și mementourile ei revin.",
+  "assistantStepCategories": "Se verifică categoriile tale…",
+  "assistantStepCosts": "Se adună costurile de reînnoire…",
+  "assistantStepVisa": "Se verifică regulile de viză…"
 }

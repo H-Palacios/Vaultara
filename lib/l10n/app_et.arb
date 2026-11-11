@@ -3246,5 +3246,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kinnitatud kategooriad"
+  "homePinnedTitle": "Kinnitatud kategooriad",
+  "notifAskTitle": "Saa meeldetuletused õigel ajal",
+  "notifAskBody": "Vaultara saab sind enne aegumist meelde tuletada ainult siis, kui teavitused on lubatud. Saadame ainult meeldetuletusi ja olulisi kontohoiatusi.",
+  "notifAskAllow": "Luba teavitused",
+  "notifAskLater": "Mitte praegu",
+  "signInTooManyTries": "Liiga palju katseid. Oota hetk enne uuesti proovimist või lähtesta parool.",
+  "signInWaitSeconds": "{seconds, plural, =1{Proovi uuesti {seconds} sekundi pärast} other{Proovi uuesti {seconds} sekundi pärast}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Varukoodid",
+  "backupCodesIntro": "Kui kaotad telefoni või autentimisrakenduse, saad varukoodiga sisse logida. Iga kood töötab ühe korra.",
+  "backupCodesShownOnce": "Neid koode näidatakse ainult üks kord. Hoia neid turvalises kohas, sellest telefonist eemal.",
+  "backupCodesCopy": "Kopeeri",
+  "backupCodesSave": "Salvesta või jaga",
+  "backupCodesSaved": "Olen koodid salvestanud",
+  "backupCodesLeft": "{count, plural, =0{Varukoode pole alles} =1{Alles on {count} varukood} other{Alles on {count} varukoodi}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Loo varukoodid",
+  "backupCodesMakeNew": "Loo uued koodid",
+  "backupCodesReplaceTitle": "Kas luua uued varukoodid?",
+  "backupCodesReplaceBody": "Vanad koodid lakkavad kohe töötamast.",
+  "backupCodesFileTitle": "Vaultara varukoodid",
+  "backupCodesEachOnce": "Iga kood töötab ühe korra. Hoia neid turvalises kohas.",
+  "backupCodesCopied": "Varukoodid kopeeritud. Need kustutatakse lõikelaualt minuti pärast.",
+  "backupCodesNone": "Veel pole loodud",
+  "backupCodesTileHint": "Logi sisse, kui kaotad telefoni",
+  "backupCodeUseTitle": "Kasuta varukoodi",
+  "backupCodeUseBody": "Sisesta üks salvestatud varukoodidest. Selle kasutamine lülitab kaheastmelise kinnitamise välja, et saaksid selle uues telefonis uuesti seadistada.",
+  "backupCodeLabel": "Varukood",
+  "backupCodeFormat": "Varukoodid näevad välja nagu ABCDE-FGHJK.",
+  "backupCodeWrong": "See kood ei töötanud. Kontrolli seda ja proovi uuesti.",
+  "backupCodeBack": "Kasuta autentimisrakendust",
+  "twoStepStepOf": "Samm {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Rakenduses kuvatakse see nimega Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Koodid vahetuvad iga 30 sekundi järel. Sisesta praegu kuvatav kood.",
+  "twoStepPaste": "Kleebi",
+  "twoStepBackupNext": "Loo varukoodid, et saaksid sisse logida ka siis, kui selle telefoni kaotad.",
+  "twoStepAppLockTitle": "Lukusta ka rakendus",
+  "twoStepAppLockBody": "Kaheastmeline kinnitamine kaitseb sisselogimist. Rakenduse lukk küsib iga kord Vaultara avamisel sõrmejälge, nägu või ekraanilukku.",
+  "twoStepAppLockAction": "Lülita rakenduse lukk sisse",
+  "twoStepSignOutOthersBody": "Sisse logitud kuskil, mida sa ei tunne? Logi teistest seadmetest välja.",
+  "twoStepReviewDevices": "Vaata seadmed üle",
+  "twoStepSkipForNow": "Jäta praegu vahele",
+  "twoStepOffTitle": "Kaheastmeline kinnitamine on väljas",
+  "twoStepOffBody": "Logisid sisse varukoodiga, seega lülitati kaheastmeline kinnitamine välja. Seadista see selles telefonis uuesti, et konto jääks kaitstuks.",
+  "expiryPlusYears": "{years, plural, =1{+{years} aasta} other{+{years} aastat}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Kirjuta kuupäev",
+  "expiryTypeTitle": "Kirjuta aegumiskuupäev",
+  "expiryTypeHint": "Näiteks {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "See kuupäev ei tundu õige. Proovi {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "See kuupäev on möödas, seega salvestatakse kirje aegununa.",
+  "expiryEndsToday": "See aegub täna.",
+  "saveAndAddAnother": "Salvesta ja lisa veel üks",
+  "quickStartTitle": "Kiire algus",
+  "categoryCreatedAddGroup": "{name} loodud. Kas lisada sinna rühm?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} loodud. Kas lisada sinna kirje?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikaadid",
+  "groupIdeaLicences": "Litsentsid",
+  "groupIdeaContracts": "Lepingud",
+  "groupIdeaPermits": "Load",
+  "groupIdeaInsurance": "Kindlustus",
+  "assistantCategoryAddTitle": "Uus kategooria",
+  "assistantCategoryAddNote": "Ikoon valitakse nime järgi. Saad seda hiljem muuta.",
+  "assistantCategoryRenameTitle": "Nimeta kategooria ümber",
+  "assistantGroupAddTitle": "Uus rühm",
+  "assistantGroupRenameTitle": "Nimeta rühm ümber",
+  "assistantMoveTitle": "{count, plural, =1{Teisalda {count} kirje} other{Teisalda {count} kirjet}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Taasta kirje",
+  "assistantRestoreNote": "Kirje ja selle meeldetuletused tulevad tagasi.",
+  "assistantStepCategories": "Kontrollin sinu kategooriaid…",
+  "assistantStepCosts": "Liidan uuendamise kulud kokku…",
+  "assistantStepVisa": "Kontrollin viisareegleid…"
 }

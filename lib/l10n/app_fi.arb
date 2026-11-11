@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kiinnitetyt kategoriat"
+  "homePinnedTitle": "Kiinnitetyt kategoriat",
+  "notifAskTitle": "Saat muistutukset ajallaan",
+  "notifAskBody": "Vaultara voi muistuttaa sinua ennen vanhenemista vain, jos ilmoitukset on sallittu. Lähetämme vain muistutuksia ja tärkeitä tilihälytyksiä.",
+  "notifAskAllow": "Salli ilmoitukset",
+  "notifAskLater": "Ei nyt",
+  "signInTooManyTries": "Liian monta yritystä. Odota hetki ennen kuin yrität uudelleen, tai nollaa salasanasi.",
+  "signInWaitSeconds": "{seconds, plural, =1{Yritä uudelleen {seconds} sekunnin kuluttua} other{Yritä uudelleen {seconds} sekunnin kuluttua}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Varakoodit",
+  "backupCodesIntro": "Jos kadotat puhelimesi tai todennussovelluksesi, voit kirjautua varakoodilla. Jokainen koodi toimii kerran.",
+  "backupCodesShownOnce": "Nämä koodit näytetään vain kerran. Tallenna ne turvalliseen paikkaan, erilleen tästä puhelimesta.",
+  "backupCodesCopy": "Kopioi",
+  "backupCodesSave": "Tallenna tai jaa",
+  "backupCodesSaved": "Olen tallentanut koodit",
+  "backupCodesLeft": "{count, plural, =0{Varakoodeja ei ole jäljellä} =1{{count} varakoodi jäljellä} other{{count} varakoodia jäljellä}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Luo varakoodit",
+  "backupCodesMakeNew": "Luo uudet koodit",
+  "backupCodesReplaceTitle": "Luodaanko uudet varakoodit?",
+  "backupCodesReplaceBody": "Vanhat koodisi lakkaavat toimimasta heti.",
+  "backupCodesFileTitle": "Vaultaran varakoodit",
+  "backupCodesEachOnce": "Jokainen koodi toimii kerran. Säilytä ne turvallisessa paikassa.",
+  "backupCodesCopied": "Varakoodit kopioitu. Ne poistetaan leikepöydältä minuutin kuluttua.",
+  "backupCodesNone": "Ei vielä luotu",
+  "backupCodesTileHint": "Kirjaudu, jos kadotat puhelimesi",
+  "backupCodeUseTitle": "Käytä varakoodia",
+  "backupCodeUseBody": "Anna jokin tallentamistasi varakoodeista. Sen käyttäminen poistaa kaksivaiheisen vahvistuksen käytöstä, jotta voit ottaa sen uudelleen käyttöön uudessa puhelimessa.",
+  "backupCodeLabel": "Varakoodi",
+  "backupCodeFormat": "Varakoodit näyttävät tältä: ABCDE-FGHJK.",
+  "backupCodeWrong": "Koodi ei toiminut. Tarkista se ja yritä uudelleen.",
+  "backupCodeBack": "Käytä todennussovellusta",
+  "twoStepStepOf": "Vaihe {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Se näkyy sovelluksessasi nimellä Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Koodit vaihtuvat 30 sekunnin välein. Anna nyt näkyvä koodi.",
+  "twoStepPaste": "Liitä",
+  "twoStepBackupNext": "Luo varakoodit, jotta voit kirjautua, vaikka kadottaisit tämän puhelimen.",
+  "twoStepAppLockTitle": "Lukitse myös sovellus",
+  "twoStepAppLockBody": "Kaksivaiheinen vahvistus suojaa kirjautumista. Sovelluslukko pyytää sormenjälkeä, kasvoja tai näytön lukitusta aina, kun Vaultara avataan.",
+  "twoStepAppLockAction": "Ota sovelluslukko käyttöön",
+  "twoStepSignOutOthersBody": "Kirjautunut jossain, jota et tunnista? Kirjaudu ulos muilta laitteilta.",
+  "twoStepReviewDevices": "Tarkista laitteet",
+  "twoStepSkipForNow": "Ohita nyt",
+  "twoStepOffTitle": "Kaksivaiheinen vahvistus on pois päältä",
+  "twoStepOffBody": "Kirjauduit varakoodilla, joten kaksivaiheinen vahvistus poistettiin käytöstä. Ota se uudelleen käyttöön tässä puhelimessa, jotta tilisi pysyy suojattuna.",
+  "expiryPlusYears": "{years, plural, =1{+{years} vuosi} other{+{years} vuotta}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Kirjoita päivämäärä",
+  "expiryTypeTitle": "Kirjoita vanhenemispäivä",
+  "expiryTypeHint": "Esimerkiksi {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Päivämäärä ei näytä oikealta. Kokeile {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Tämä päivä on mennyt, joten tietue tallennetaan vanhentuneena.",
+  "expiryEndsToday": "Tämä vanhenee tänään.",
+  "saveAndAddAnother": "Tallenna ja lisää toinen",
+  "quickStartTitle": "Pika-aloitus",
+  "categoryCreatedAddGroup": "{name} luotu. Lisätäänkö siihen ryhmä?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} luotu. Lisätäänkö siihen tietue?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Todistukset",
+  "groupIdeaLicences": "Lisenssit",
+  "groupIdeaContracts": "Sopimukset",
+  "groupIdeaPermits": "Luvat",
+  "groupIdeaInsurance": "Vakuutukset",
+  "assistantCategoryAddTitle": "Uusi luokka",
+  "assistantCategoryAddNote": "Kuvake valitaan nimen perusteella. Voit vaihtaa sen myöhemmin.",
+  "assistantCategoryRenameTitle": "Nimeä luokka uudelleen",
+  "assistantGroupAddTitle": "Uusi ryhmä",
+  "assistantGroupRenameTitle": "Nimeä ryhmä uudelleen",
+  "assistantMoveTitle": "{count, plural, =1{Siirrä {count} tietue} other{Siirrä {count} tietuetta}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Palauta tietue",
+  "assistantRestoreNote": "Tietue ja sen muistutukset palaavat.",
+  "assistantStepCategories": "Tarkistetaan luokkiasi…",
+  "assistantStepCosts": "Lasketaan uusimiskuluja…",
+  "assistantStepVisa": "Tarkistetaan viisumisääntöjä…"
 }

@@ -3098,5 +3098,146 @@
       }
     }
   },
-  "homePinnedTitle": "Закріплені категорії"
+  "homePinnedTitle": "Закріплені категорії",
+  "notifAskTitle": "Отримуйте нагадування вчасно",
+  "notifAskBody": "Vaultara може нагадати вам до закінчення терміну, лише якщо сповіщення дозволено. Ми надсилаємо лише нагадування та важливі сповіщення щодо облікового запису.",
+  "notifAskAllow": "Дозволити сповіщення",
+  "notifAskLater": "Не зараз",
+  "signInTooManyTries": "Забагато спроб. Зачекайте трохи перед новою спробою або скиньте пароль.",
+  "signInWaitSeconds": "{seconds, plural, one{Повторіть через {seconds} секунду} few{Повторіть через {seconds} секунди} many{Повторіть через {seconds} секунд} other{Повторіть через {seconds} секунди}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Резервні коди",
+  "backupCodesIntro": "Якщо ви втратите телефон або застосунок автентифікації, резервний код дозволить увійти. Кожен код працює один раз.",
+  "backupCodesShownOnce": "Ці коди показуються лише один раз. Збережіть їх у надійному місці, не на цьому телефоні.",
+  "backupCodesCopy": "Копіювати",
+  "backupCodesSave": "Зберегти або поділитися",
+  "backupCodesSaved": "Я зберіг коди",
+  "backupCodesLeft": "{count, plural, =0{Резервних кодів не залишилося} one{Залишився {count} резервний код} few{Залишилося {count} резервні коди} many{Залишилося {count} резервних кодів} other{Залишилося {count} резервного коду}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Створити резервні коди",
+  "backupCodesMakeNew": "Створити нові коди",
+  "backupCodesReplaceTitle": "Створити нові резервні коди?",
+  "backupCodesReplaceBody": "Старі коди одразу перестануть працювати.",
+  "backupCodesFileTitle": "Резервні коди Vaultara",
+  "backupCodesEachOnce": "Кожен код працює один раз. Зберігайте їх у надійному місці.",
+  "backupCodesCopied": "Резервні коди скопійовано. Через хвилину їх буде видалено з буфера обміну.",
+  "backupCodesNone": "Ще не створено",
+  "backupCodesTileHint": "Вхід, якщо ви втратили телефон",
+  "backupCodeUseTitle": "Використати резервний код",
+  "backupCodeUseBody": "Введіть один із збережених резервних кодів. Його використання вимикає двоетапну перевірку, щоб ви могли налаштувати її знову на новому телефоні.",
+  "backupCodeLabel": "Резервний код",
+  "backupCodeFormat": "Резервні коди мають такий вигляд: ABCDE-FGHJK.",
+  "backupCodeWrong": "Цей код не підійшов. Перевірте його та спробуйте ще раз.",
+  "backupCodeBack": "Використати застосунок автентифікації",
+  "twoStepStepOf": "Крок {step} з {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "У застосунку він відображатиметься як Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Коди змінюються кожні 30 секунд. Введіть той, що показано зараз.",
+  "twoStepPaste": "Вставити",
+  "twoStepBackupNext": "Створіть резервні коди, щоб увійти, навіть якщо втратите цей телефон.",
+  "twoStepAppLockTitle": "Заблокуйте й застосунок",
+  "twoStepAppLockBody": "Двоетапна перевірка захищає вхід. Блокування застосунку запитує відбиток пальця, обличчя або блокування екрана щоразу, коли відкривається Vaultara.",
+  "twoStepAppLockAction": "Увімкнути блокування застосунку",
+  "twoStepSignOutOthersBody": "Вхід виконано десь, чого ви не впізнаєте? Вийдіть на інших пристроях.",
+  "twoStepReviewDevices": "Переглянути пристрої",
+  "twoStepSkipForNow": "Пропустити поки",
+  "twoStepOffTitle": "Двоетапну перевірку вимкнено",
+  "twoStepOffBody": "Ви увійшли з резервним кодом, тому двоетапну перевірку було вимкнено. Налаштуйте її знову на цьому телефоні, щоб обліковий запис залишався захищеним.",
+  "expiryPlusYears": "{years, plural, one{+{years} рік} few{+{years} роки} many{+{years} років} other{+{years} року}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Ввести дату",
+  "expiryTypeTitle": "Введіть дату закінчення терміну",
+  "expiryTypeHint": "Наприклад {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ця дата виглядає неправильно. Спробуйте {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ця дата вже минула, тому запис буде збережено як прострочений.",
+  "expiryEndsToday": "Термін спливає сьогодні.",
+  "saveAndAddAnother": "Зберегти й додати ще",
+  "quickStartTitle": "Швидкий старт",
+  "categoryCreatedAddGroup": "{name}: категорію створено. Додати групу?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name}: групу створено. Додати запис?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Сертифікати",
+  "groupIdeaLicences": "Ліцензії",
+  "groupIdeaContracts": "Договори",
+  "groupIdeaPermits": "Дозволи",
+  "groupIdeaInsurance": "Страхування",
+  "assistantCategoryAddTitle": "Нова категорія",
+  "assistantCategoryAddNote": "Значок добирається за назвою. Його можна змінити пізніше.",
+  "assistantCategoryRenameTitle": "Перейменувати категорію",
+  "assistantGroupAddTitle": "Нова група",
+  "assistantGroupRenameTitle": "Перейменувати групу",
+  "assistantMoveTitle": "{count, plural, one{Перемістити {count} запис} few{Перемістити {count} записи} many{Перемістити {count} записів} other{Перемістити {count} запису}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Відновити запис",
+  "assistantRestoreNote": "Запис і його нагадування повернуться.",
+  "assistantStepCategories": "Перевіряємо ваші категорії…",
+  "assistantStepCosts": "Підраховуємо витрати на поновлення…",
+  "assistantStepVisa": "Перевіряємо візові правила…"
 }

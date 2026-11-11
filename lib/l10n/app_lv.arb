@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Piespraustās kategorijas"
+  "homePinnedTitle": "Piespraustās kategorijas",
+  "notifAskTitle": "Saņemiet atgādinājumus laikā",
+  "notifAskBody": "Vaultara var jums atgādināt pirms kaut kā termiņa beigām tikai tad, ja paziņojumi ir atļauti. Mēs sūtām tikai atgādinājumus un svarīgus konta brīdinājumus.",
+  "notifAskAllow": "Atļaut paziņojumus",
+  "notifAskLater": "Ne tagad",
+  "signInTooManyTries": "Pārāk daudz mēģinājumu. Brīdi pagaidiet pirms nākamā mēģinājuma vai atiestatiet paroli.",
+  "signInWaitSeconds": "{seconds, plural, zero{Mēģiniet vēlreiz pēc {seconds} sekundēm} one{Mēģiniet vēlreiz pēc {seconds} sekundes} other{Mēģiniet vēlreiz pēc {seconds} sekundēm}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Rezerves kodi",
+  "backupCodesIntro": "Ja pazaudējat tālruni vai autentifikācijas lietotni, ar rezerves kodu varat pierakstīties. Katrs kods darbojas vienreiz.",
+  "backupCodesShownOnce": "Šie kodi tiek parādīti tikai vienreiz. Saglabājiet tos drošā vietā, prom no šī tālruņa.",
+  "backupCodesCopy": "Kopēt",
+  "backupCodesSave": "Saglabāt vai kopīgot",
+  "backupCodesSaved": "Esmu saglabājis kodus",
+  "backupCodesLeft": "{count, plural, =0{Nav atlicis neviena rezerves koda} zero{Atlikuši {count} rezerves kodi} one{Atlicis {count} rezerves kods} other{Atlikuši {count} rezerves kodi}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Izveidot rezerves kodus",
+  "backupCodesMakeNew": "Izveidot jaunus kodus",
+  "backupCodesReplaceTitle": "Vai izveidot jaunus rezerves kodus?",
+  "backupCodesReplaceBody": "Vecie kodi uzreiz pārstās darboties.",
+  "backupCodesFileTitle": "Vaultara rezerves kodi",
+  "backupCodesEachOnce": "Katrs kods darbojas vienreiz. Glabājiet tos drošā vietā.",
+  "backupCodesCopied": "Rezerves kodi nokopēti. Pēc minūtes tie tiks notīrīti no starpliktuves.",
+  "backupCodesNone": "Vēl nav izveidoti",
+  "backupCodesTileHint": "Pierakstieties, ja pazaudējat tālruni",
+  "backupCodeUseTitle": "Izmantot rezerves kodu",
+  "backupCodeUseBody": "Ievadiet vienu no saglabātajiem rezerves kodiem. Tā izmantošana izslēdz divpakāpju verifikāciju, lai to varētu iestatīt no jauna jaunajā tālrunī.",
+  "backupCodeLabel": "Rezerves kods",
+  "backupCodeFormat": "Rezerves kodi izskatās šādi: ABCDE-FGHJK.",
+  "backupCodeWrong": "Šis kods nedarbojās. Pārbaudiet to un mēģiniet vēlreiz.",
+  "backupCodeBack": "Izmantot autentifikācijas lietotni",
+  "twoStepStepOf": "{step}. darbība no {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Lietotnē tas tiks rādīts kā Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodi mainās ik pēc 30 sekundēm. Ievadiet pašlaik redzamo.",
+  "twoStepPaste": "Ielīmēt",
+  "twoStepBackupNext": "Izveidojiet rezerves kodus, lai varētu pierakstīties pat tad, ja pazaudējat šo tālruni.",
+  "twoStepAppLockTitle": "Bloķējiet arī lietotni",
+  "twoStepAppLockBody": "Divpakāpju verifikācija aizsargā pierakstīšanos. Lietotnes bloķēšana prasa pirkstu nospiedumu, seju vai ekrāna bloķēšanu katru reizi, kad tiek atvērta Vaultara.",
+  "twoStepAppLockAction": "Ieslēgt lietotnes bloķēšanu",
+  "twoStepSignOutOthersBody": "Esat pierakstījies kaut kur, ko neatpazīstat? Izrakstieties citās ierīcēs.",
+  "twoStepReviewDevices": "Pārskatīt ierīces",
+  "twoStepSkipForNow": "Pagaidām izlaist",
+  "twoStepOffTitle": "Divpakāpju verifikācija ir izslēgta",
+  "twoStepOffBody": "Jūs pierakstījāties ar rezerves kodu, tāpēc divpakāpju verifikācija tika izslēgta. Iestatiet to no jauna šajā tālrunī, lai konts paliktu aizsargāts.",
+  "expiryPlusYears": "{years, plural, zero{+{years} gadi} one{+{years} gads} other{+{years} gadi}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Ierakstīt datumu",
+  "expiryTypeTitle": "Ierakstiet derīguma beigu datumu",
+  "expiryTypeHint": "Piemēram, {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Šis datums neizskatās pareizs. Mēģiniet {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Šis datums ir pagājis, tāpēc ieraksts tiks saglabāts kā beidzies.",
+  "expiryEndsToday": "Tas beidzas šodien.",
+  "saveAndAddAnother": "Saglabāt un pievienot vēl vienu",
+  "quickStartTitle": "Ātrais sākums",
+  "categoryCreatedAddGroup": "{name} izveidota. Pievienot grupu?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} izveidota. Pievienot ierakstu?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikāti",
+  "groupIdeaLicences": "Licences",
+  "groupIdeaContracts": "Līgumi",
+  "groupIdeaPermits": "Atļaujas",
+  "groupIdeaInsurance": "Apdrošināšana",
+  "assistantCategoryAddTitle": "Jauna kategorija",
+  "assistantCategoryAddNote": "Ikona tiek izvēlēta pēc nosaukuma. To varēsiet mainīt vēlāk.",
+  "assistantCategoryRenameTitle": "Pārdēvēt kategoriju",
+  "assistantGroupAddTitle": "Jauna grupa",
+  "assistantGroupRenameTitle": "Pārdēvēt grupu",
+  "assistantMoveTitle": "{count, plural, zero{Pārvietot {count} ierakstus} one{Pārvietot {count} ierakstu} other{Pārvietot {count} ierakstus}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Atjaunot ierakstu",
+  "assistantRestoreNote": "Ieraksts un tā atgādinājumi atgriežas.",
+  "assistantStepCategories": "Pārbauda jūsu kategorijas…",
+  "assistantStepCosts": "Saskaita atjaunošanas izmaksas…",
+  "assistantStepVisa": "Pārbauda vīzu noteikumus…"
 }

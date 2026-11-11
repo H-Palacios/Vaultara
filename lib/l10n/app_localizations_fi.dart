@@ -8421,4 +8421,253 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kiinnitetyt kategoriat';
+
+  @override
+  String get notifAskTitle => 'Saat muistutukset ajallaan';
+
+  @override
+  String get notifAskBody => 'Vaultara voi muistuttaa sinua ennen vanhenemista vain, jos ilmoitukset on sallittu. Lähetämme vain muistutuksia ja tärkeitä tilihälytyksiä.';
+
+  @override
+  String get notifAskAllow => 'Salli ilmoitukset';
+
+  @override
+  String get notifAskLater => 'Ei nyt';
+
+  @override
+  String get signInTooManyTries => 'Liian monta yritystä. Odota hetki ennen kuin yrität uudelleen, tai nollaa salasanasi.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Yritä uudelleen $seconds sekunnin kuluttua',
+      one: 'Yritä uudelleen $seconds sekunnin kuluttua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Varakoodit';
+
+  @override
+  String get backupCodesIntro => 'Jos kadotat puhelimesi tai todennussovelluksesi, voit kirjautua varakoodilla. Jokainen koodi toimii kerran.';
+
+  @override
+  String get backupCodesShownOnce => 'Nämä koodit näytetään vain kerran. Tallenna ne turvalliseen paikkaan, erilleen tästä puhelimesta.';
+
+  @override
+  String get backupCodesCopy => 'Kopioi';
+
+  @override
+  String get backupCodesSave => 'Tallenna tai jaa';
+
+  @override
+  String get backupCodesSaved => 'Olen tallentanut koodit';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count varakoodia jäljellä',
+      one: '$count varakoodi jäljellä',
+      zero: 'Varakoodeja ei ole jäljellä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Luo varakoodit';
+
+  @override
+  String get backupCodesMakeNew => 'Luo uudet koodit';
+
+  @override
+  String get backupCodesReplaceTitle => 'Luodaanko uudet varakoodit?';
+
+  @override
+  String get backupCodesReplaceBody => 'Vanhat koodisi lakkaavat toimimasta heti.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultaran varakoodit';
+
+  @override
+  String get backupCodesEachOnce => 'Jokainen koodi toimii kerran. Säilytä ne turvallisessa paikassa.';
+
+  @override
+  String get backupCodesCopied => 'Varakoodit kopioitu. Ne poistetaan leikepöydältä minuutin kuluttua.';
+
+  @override
+  String get backupCodesNone => 'Ei vielä luotu';
+
+  @override
+  String get backupCodesTileHint => 'Kirjaudu, jos kadotat puhelimesi';
+
+  @override
+  String get backupCodeUseTitle => 'Käytä varakoodia';
+
+  @override
+  String get backupCodeUseBody => 'Anna jokin tallentamistasi varakoodeista. Sen käyttäminen poistaa kaksivaiheisen vahvistuksen käytöstä, jotta voit ottaa sen uudelleen käyttöön uudessa puhelimessa.';
+
+  @override
+  String get backupCodeLabel => 'Varakoodi';
+
+  @override
+  String get backupCodeFormat => 'Varakoodit näyttävät tältä: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Koodi ei toiminut. Tarkista se ja yritä uudelleen.';
+
+  @override
+  String get backupCodeBack => 'Käytä todennussovellusta';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Vaihe $step/$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Se näkyy sovelluksessasi nimellä Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Koodit vaihtuvat 30 sekunnin välein. Anna nyt näkyvä koodi.';
+
+  @override
+  String get twoStepPaste => 'Liitä';
+
+  @override
+  String get twoStepBackupNext => 'Luo varakoodit, jotta voit kirjautua, vaikka kadottaisit tämän puhelimen.';
+
+  @override
+  String get twoStepAppLockTitle => 'Lukitse myös sovellus';
+
+  @override
+  String get twoStepAppLockBody => 'Kaksivaiheinen vahvistus suojaa kirjautumista. Sovelluslukko pyytää sormenjälkeä, kasvoja tai näytön lukitusta aina, kun Vaultara avataan.';
+
+  @override
+  String get twoStepAppLockAction => 'Ota sovelluslukko käyttöön';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Kirjautunut jossain, jota et tunnista? Kirjaudu ulos muilta laitteilta.';
+
+  @override
+  String get twoStepReviewDevices => 'Tarkista laitteet';
+
+  @override
+  String get twoStepSkipForNow => 'Ohita nyt';
+
+  @override
+  String get twoStepOffTitle => 'Kaksivaiheinen vahvistus on pois päältä';
+
+  @override
+  String get twoStepOffBody => 'Kirjauduit varakoodilla, joten kaksivaiheinen vahvistus poistettiin käytöstä. Ota se uudelleen käyttöön tässä puhelimessa, jotta tilisi pysyy suojattuna.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years vuotta',
+      one: '+$years vuosi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Kirjoita päivämäärä';
+
+  @override
+  String get expiryTypeTitle => 'Kirjoita vanhenemispäivä';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Esimerkiksi $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Päivämäärä ei näytä oikealta. Kokeile $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Tämä päivä on mennyt, joten tietue tallennetaan vanhentuneena.';
+
+  @override
+  String get expiryEndsToday => 'Tämä vanhenee tänään.';
+
+  @override
+  String get saveAndAddAnother => 'Tallenna ja lisää toinen';
+
+  @override
+  String get quickStartTitle => 'Pika-aloitus';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name luotu. Lisätäänkö siihen ryhmä?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name luotu. Lisätäänkö siihen tietue?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Todistukset';
+
+  @override
+  String get groupIdeaLicences => 'Lisenssit';
+
+  @override
+  String get groupIdeaContracts => 'Sopimukset';
+
+  @override
+  String get groupIdeaPermits => 'Luvat';
+
+  @override
+  String get groupIdeaInsurance => 'Vakuutukset';
+
+  @override
+  String get assistantCategoryAddTitle => 'Uusi luokka';
+
+  @override
+  String get assistantCategoryAddNote => 'Kuvake valitaan nimen perusteella. Voit vaihtaa sen myöhemmin.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Nimeä luokka uudelleen';
+
+  @override
+  String get assistantGroupAddTitle => 'Uusi ryhmä';
+
+  @override
+  String get assistantGroupRenameTitle => 'Nimeä ryhmä uudelleen';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Siirrä $count tietuetta',
+      one: 'Siirrä $count tietue',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Palauta tietue';
+
+  @override
+  String get assistantRestoreNote => 'Tietue ja sen muistutukset palaavat.';
+
+  @override
+  String get assistantStepCategories => 'Tarkistetaan luokkiasi…';
+
+  @override
+  String get assistantStepCosts => 'Lasketaan uusimiskuluja…';
+
+  @override
+  String get assistantStepVisa => 'Tarkistetaan viisumisääntöjä…';
 }

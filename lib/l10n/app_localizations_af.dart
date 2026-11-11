@@ -8421,4 +8421,253 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Vasgespelde kategorieë';
+
+  @override
+  String get notifAskTitle => 'Kry jou herinneringe betyds';
+
+  @override
+  String get notifAskBody => 'Vaultara kan jou net herinner voordat iets verval as kennisgewings toegelaat word. Ons stuur net herinneringe en belangrike rekeningwaarskuwings.';
+
+  @override
+  String get notifAskAllow => 'Laat kennisgewings toe';
+
+  @override
+  String get notifAskLater => 'Nie nou nie';
+
+  @override
+  String get signInTooManyTries => 'Te veel pogings. Wag \'n oomblik voordat jy weer probeer, of stel jou wagwoord terug.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Probeer weer oor $seconds sekondes',
+      one: 'Probeer weer oor $seconds sekonde',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Rugsteunkodes';
+
+  @override
+  String get backupCodesIntro => 'As jy jou foon of verifikasie-app verloor, laat \'n rugsteunkode jou aanmeld. Elke kode werk een keer.';
+
+  @override
+  String get backupCodesShownOnce => 'Hierdie kodes word net een keer gewys. Stoor hulle iewers veilig, weg van hierdie foon.';
+
+  @override
+  String get backupCodesCopy => 'Kopieer';
+
+  @override
+  String get backupCodesSave => 'Stoor of deel';
+
+  @override
+  String get backupCodesSaved => 'Ek het my kodes gestoor';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rugsteunkodes oor',
+      one: '$count rugsteunkode oor',
+      zero: 'Geen rugsteunkodes oor nie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Maak rugsteunkodes';
+
+  @override
+  String get backupCodesMakeNew => 'Maak nuwe kodes';
+
+  @override
+  String get backupCodesReplaceTitle => 'Maak nuwe rugsteunkodes?';
+
+  @override
+  String get backupCodesReplaceBody => 'Jou ou kodes sal dadelik ophou werk.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara-rugsteunkodes';
+
+  @override
+  String get backupCodesEachOnce => 'Elke kode werk een keer. Hou hulle iewers veilig.';
+
+  @override
+  String get backupCodesCopied => 'Rugsteunkodes gekopieer. Hulle word binne \'n minuut van die knipbord verwyder.';
+
+  @override
+  String get backupCodesNone => 'Nog geen gemaak nie';
+
+  @override
+  String get backupCodesTileHint => 'Meld aan as jy jou foon verloor';
+
+  @override
+  String get backupCodeUseTitle => 'Gebruik \'n rugsteunkode';
+
+  @override
+  String get backupCodeUseBody => 'Voer een van die rugsteunkodes in wat jy gestoor het. As jy een gebruik, word tweestapverifikasie afgeskakel sodat jy dit weer op jou nuwe foon kan opstel.';
+
+  @override
+  String get backupCodeLabel => 'Rugsteunkode';
+
+  @override
+  String get backupCodeFormat => 'Rugsteunkodes lyk soos ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Daardie kode het nie gewerk nie. Kontroleer dit en probeer weer.';
+
+  @override
+  String get backupCodeBack => 'Gebruik my verifikasie-app';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Stap $step van $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Dit sal as Vaultara ($email) in jou app verskyn.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodes verander elke 30 sekondes. Voer die een in wat nou gewys word.';
+
+  @override
+  String get twoStepPaste => 'Plak';
+
+  @override
+  String get twoStepBackupNext => 'Maak rugsteunkodes sodat jy steeds kan aanmeld as jy hierdie foon verloor.';
+
+  @override
+  String get twoStepAppLockTitle => 'Sluit ook die app';
+
+  @override
+  String get twoStepAppLockBody => 'Tweestap beskerm aanmelding. Appslot vra elke keer as Vaultara oopmaak vir jou vingerafdruk, gesig of skermslot.';
+
+  @override
+  String get twoStepAppLockAction => 'Skakel appslot aan';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Aangemeld op \'n plek wat jy nie herken nie? Meld af op ander toestelle.';
+
+  @override
+  String get twoStepReviewDevices => 'Hersien toestelle';
+
+  @override
+  String get twoStepSkipForNow => 'Slaan nou oor';
+
+  @override
+  String get twoStepOffTitle => 'Tweestapverifikasie is af';
+
+  @override
+  String get twoStepOffBody => 'Jy het met \'n rugsteunkode aangemeld, dus is tweestapverifikasie afgeskakel. Stel dit weer op hierdie foon op om jou rekening beskerm te hou.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years jaar',
+      one: '+$years jaar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Tik datum';
+
+  @override
+  String get expiryTypeTitle => 'Tik die vervaldatum';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Byvoorbeeld $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Daardie datum lyk nie reg nie. Probeer $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Hierdie datum is verby, dus sal die rekord as verval gestoor word.';
+
+  @override
+  String get expiryEndsToday => 'Dit verval vandag.';
+
+  @override
+  String get saveAndAddAnother => 'Stoor en voeg nog een by';
+
+  @override
+  String get quickStartTitle => 'Vinnige begin';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name geskep. Voeg \'n groep daarby?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name geskep. Voeg \'n rekord daarby?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikate';
+
+  @override
+  String get groupIdeaLicences => 'Lisensies';
+
+  @override
+  String get groupIdeaContracts => 'Kontrakte';
+
+  @override
+  String get groupIdeaPermits => 'Permitte';
+
+  @override
+  String get groupIdeaInsurance => 'Versekering';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nuwe kategorie';
+
+  @override
+  String get assistantCategoryAddNote => '\'n Ikoon word uit die naam gekies. Jy kan dit later verander.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Hernoem kategorie';
+
+  @override
+  String get assistantGroupAddTitle => 'Nuwe groep';
+
+  @override
+  String get assistantGroupRenameTitle => 'Hernoem groep';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Skuif $count rekords',
+      one: 'Skuif $count rekord',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Herstel rekord';
+
+  @override
+  String get assistantRestoreNote => 'Die rekord en sy herinneringe kom terug.';
+
+  @override
+  String get assistantStepCategories => 'Kyk na jou kategorieë…';
+
+  @override
+  String get assistantStepCosts => 'Tel hernuwingskoste op…';
+
+  @override
+  String get assistantStepVisa => 'Kyk na visumreëls…';
 }

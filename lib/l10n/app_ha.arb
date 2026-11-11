@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "Rukunonin da aka liƙa"
+  "homePinnedTitle": "Rukunonin da aka liƙa",
+  "notifAskTitle": "Samu tunatarwa a kan lokaci",
+  "notifAskBody": "Vaultara za ta iya tunatar da kai kafin wani abu ya ƙare ne kawai idan an ba da izinin sanarwa. Muna aika tunatarwa da muhimman faɗakarwar asusu kawai.",
+  "notifAskAllow": "Ba da izinin sanarwa",
+  "notifAskLater": "Ba yanzu ba",
+  "signInTooManyTries": "Ƙoƙari ya yi yawa. Jira kaɗan kafin sake gwadawa, ko sake saita kalmar sirrinka.",
+  "signInWaitSeconds": "{seconds, plural, =1{Sake gwadawa bayan daƙiƙa {seconds}} other{Sake gwadawa bayan daƙiƙa {seconds}}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Lambobin ajiya",
+  "backupCodesIntro": "Idan ka rasa wayarka ko manhajar tantancewa, lambar ajiya za ta ba ka damar shiga. Kowace lamba tana aiki sau ɗaya.",
+  "backupCodesShownOnce": "Ana nuna waɗannan lambobin sau ɗaya kawai. Ajiye su a wuri mai aminci, nesa da wannan wayar.",
+  "backupCodesCopy": "Kwafa",
+  "backupCodesSave": "Ajiye ko raba",
+  "backupCodesSaved": "Na ajiye lambobina",
+  "backupCodesLeft": "{count, plural, =0{Babu sauran lambar ajiya} =1{Lambar ajiya {count} ta rage} other{Lambobin ajiya {count} sun rage}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Ƙirƙiri lambobin ajiya",
+  "backupCodesMakeNew": "Ƙirƙiri sabbin lambobi",
+  "backupCodesReplaceTitle": "Ƙirƙiri sabbin lambobin ajiya?",
+  "backupCodesReplaceBody": "Tsoffin lambobinka za su daina aiki nan take.",
+  "backupCodesFileTitle": "Lambobin ajiya na Vaultara",
+  "backupCodesEachOnce": "Kowace lamba tana aiki sau ɗaya. Ajiye su a wuri mai aminci.",
+  "backupCodesCopied": "An kwafi lambobin ajiya. Za a share su daga allon kwafi cikin minti ɗaya.",
+  "backupCodesNone": "Ba a ƙirƙiri ko ɗaya ba tukuna",
+  "backupCodesTileHint": "Shiga idan ka rasa wayarka",
+  "backupCodeUseTitle": "Yi amfani da lambar ajiya",
+  "backupCodeUseBody": "Shigar da ɗaya daga cikin lambobin ajiya da ka ajiye. Amfani da ɗaya yana kashe tabbatarwa ta matakai biyu, don ka sake saita ta a sabuwar wayarka.",
+  "backupCodeLabel": "Lambar ajiya",
+  "backupCodeFormat": "Lambobin ajiya suna kama da ABCDE-FGHJK.",
+  "backupCodeWrong": "Wannan lambar ba ta yi aiki ba. Duba ta ka sake gwadawa.",
+  "backupCodeBack": "Yi amfani da manhajar tantancewa ta",
+  "twoStepStepOf": "Mataki na {step} cikin {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Za ta bayyana a matsayin Vaultara ({email}) a manhajarka.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Lambobi suna canzawa kowane daƙiƙa 30. Shigar da wadda ke nunawa yanzu.",
+  "twoStepPaste": "Liƙa",
+  "twoStepBackupNext": "Ƙirƙiri lambobin ajiya don ka iya shiga ko da ka rasa wannan wayar.",
+  "twoStepAppLockTitle": "Kulle manhajar ma",
+  "twoStepAppLockBody": "Matakai biyu suna kare shiga. Kulle manhaja yana neman zanen yatsa, fuska ko kulle allo duk lokacin da aka buɗe Vaultara.",
+  "twoStepAppLockAction": "Kunna kulle manhaja",
+  "twoStepSignOutOthersBody": "An shiga a wani wuri da ba ka sani ba? Fita daga sauran na'urori.",
+  "twoStepReviewDevices": "Duba na'urori",
+  "twoStepSkipForNow": "Tsallake yanzu",
+  "twoStepOffTitle": "An kashe tabbatarwa ta matakai biyu",
+  "twoStepOffBody": "Ka shiga da lambar ajiya, don haka an kashe tabbatarwa ta matakai biyu. Sake saita ta a wannan wayar don asusunka ya kasance a kare.",
+  "expiryPlusYears": "{years, plural, =1{+shekara {years}} other{+shekaru {years}}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Rubuta kwanan wata",
+  "expiryTypeTitle": "Rubuta ranar ƙarewa",
+  "expiryTypeHint": "Misali {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Wannan kwanan wata bai yi daidai ba. Gwada {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Wannan kwanan wata ya wuce, don haka za a ajiye bayanin a matsayin wanda ya ƙare.",
+  "expiryEndsToday": "Wannan yana ƙarewa yau.",
+  "saveAndAddAnother": "Ajiye ka ƙara wani",
+  "quickStartTitle": "Farawa da sauri",
+  "categoryCreatedAddGroup": "An ƙirƙiri {name}. A ƙara mata rukuni?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "An ƙirƙiri {name}. A ƙara mata bayani?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Takardun shaida",
+  "groupIdeaLicences": "Lasisi",
+  "groupIdeaContracts": "Kwangiloli",
+  "groupIdeaPermits": "Izini",
+  "groupIdeaInsurance": "Inshora",
+  "assistantCategoryAddTitle": "Sabon rukuni",
+  "assistantCategoryAddNote": "Ana zaɓar alama daga sunan. Za ka iya canza ta daga baya.",
+  "assistantCategoryRenameTitle": "Sake sunan rukuni",
+  "assistantGroupAddTitle": "Sabuwar ƙungiya",
+  "assistantGroupRenameTitle": "Sake sunan ƙungiya",
+  "assistantMoveTitle": "{count, plural, =1{Matsar da bayani {count}} other{Matsar da bayanai {count}}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Dawo da bayani",
+  "assistantRestoreNote": "Bayanin da tunatarwarsa za su dawo.",
+  "assistantStepCategories": "Ana duba rukunanka…",
+  "assistantStepCosts": "Ana lissafa kuɗin sabuntawa…",
+  "assistantStepVisa": "Ana duba dokokin biza…"
 }

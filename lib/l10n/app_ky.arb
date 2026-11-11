@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Кадалган категориялар"
+  "homePinnedTitle": "Кадалган категориялар",
+  "notifAskTitle": "Эскертмелерди өз убагында алыңыз",
+  "notifAskBody": "Билдирмелерге уруксат берилгенде гана Vaultara бир нерсенин мөөнөтү бүтө электе эскерте алат. Биз эскертмелерди жана маанилүү аккаунт кабарларын гана жөнөтөбүз.",
+  "notifAskAllow": "Билдирмелерге уруксат берүү",
+  "notifAskLater": "Азыр эмес",
+  "signInTooManyTries": "Өтө көп аракет. Кайра аракет кылардан мурун бир аз күтүңүз же сырсөздү калыбына келтириңиз.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} секунддан кийин кайра аракет кылыңыз} other{{seconds} секунддан кийин кайра аракет кылыңыз}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Камдык коддор",
+  "backupCodesIntro": "Телефонуңузду же аутентификатор колдонмосун жоготсоңуз, камдык код менен кире аласыз. Ар бир код бир жолу иштейт.",
+  "backupCodesShownOnce": "Бул коддор бир гана жолу көрсөтүлөт. Аларды бул телефондон алыс, коопсуз жерде сактаңыз.",
+  "backupCodesCopy": "Көчүрүү",
+  "backupCodesSave": "Сактоо же бөлүшүү",
+  "backupCodesSaved": "Коддорумду сактадым",
+  "backupCodesLeft": "{count, plural, =0{Камдык код калган жок} =1{{count} камдык код калды} other{{count} камдык код калды}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Камдык коддорду түзүү",
+  "backupCodesMakeNew": "Жаңы коддорду түзүү",
+  "backupCodesReplaceTitle": "Жаңы камдык коддор түзүлсүнбү?",
+  "backupCodesReplaceBody": "Эски коддоруңуз дароо иштебей калат.",
+  "backupCodesFileTitle": "Vaultara камдык коддору",
+  "backupCodesEachOnce": "Ар бир код бир жолу иштейт. Аларды коопсуз жерде сактаңыз.",
+  "backupCodesCopied": "Камдык коддор көчүрүлдү. Бир мүнөттөн кийин алмашуу буферинен өчүрүлөт.",
+  "backupCodesNone": "Азырынча түзүлө элек",
+  "backupCodesTileHint": "Телефонду жоготсоңуз кирүү",
+  "backupCodeUseTitle": "Камдык кодду колдонуу",
+  "backupCodeUseBody": "Сактаган камдык коддордун бирин киргизиңиз. Аны колдонуу эки баскычтуу текшерүүнү өчүрөт, ошондо аны жаңы телефондо кайра орното аласыз.",
+  "backupCodeLabel": "Камдык код",
+  "backupCodeFormat": "Камдык коддор ABCDE-FGHJK сыяктуу болот.",
+  "backupCodeWrong": "Ал код иштеген жок. Текшерип, кайра аракет кылыңыз.",
+  "backupCodeBack": "Аутентификатор колдонмомду колдонуу",
+  "twoStepStepOf": "{total} кадамдын {step}-кадамы",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Колдонмоңузда Vaultara ({email}) катары көрүнөт.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Коддор ар 30 секунд сайын өзгөрөт. Азыр көрүнүп турганын киргизиңиз.",
+  "twoStepPaste": "Чаптоо",
+  "twoStepBackupNext": "Бул телефонду жоготсоңуз да кире алышыңыз үчүн камдык коддорду түзүңүз.",
+  "twoStepAppLockTitle": "Колдонмону да кулпулаңыз",
+  "twoStepAppLockBody": "Эки баскыч кирүүнү коргойт. Колдонмо кулпусу Vaultara ачылган сайын манжа изин, жүздү же экран кулпусун сурайт.",
+  "twoStepAppLockAction": "Колдонмо кулпусун күйгүзүү",
+  "twoStepSignOutOthersBody": "Тааныбаган жерде кирип турасызбы? Башка түзмөктөрдөн чыгыңыз.",
+  "twoStepReviewDevices": "Түзмөктөрдү карап чыгуу",
+  "twoStepSkipForNow": "Азырынча өткөрүп жиберүү",
+  "twoStepOffTitle": "Эки баскычтуу текшерүү өчүк",
+  "twoStepOffBody": "Сиз камдык код менен кирдиңиз, ошондуктан эки баскычтуу текшерүү өчүрүлдү. Аккаунтуңуз корголуп турушу үчүн аны бул телефондо кайра орнотуңуз.",
+  "expiryPlusYears": "{years, plural, =1{+{years} жыл} other{+{years} жыл}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Күндү жазуу",
+  "expiryTypeTitle": "Мөөнөтү бүтүүчү күндү жазыңыз",
+  "expiryTypeHint": "Мисалы {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Бул күн туура эмес окшойт. {example} аракет кылыңыз.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Бул күн өтүп кеткен, ошондуктан жазуу мөөнөтү өткөн катары сакталат.",
+  "expiryEndsToday": "Мунун мөөнөтү бүгүн бүтөт.",
+  "saveAndAddAnother": "Сактап, дагы бирөөнү кошуу",
+  "quickStartTitle": "Тез баштоо",
+  "categoryCreatedAddGroup": "{name} түзүлдү. Ага топ кошулсунбу?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} түзүлдү. Ага жазуу кошулсунбу?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Сертификаттар",
+  "groupIdeaLicences": "Лицензиялар",
+  "groupIdeaContracts": "Келишимдер",
+  "groupIdeaPermits": "Уруксаттар",
+  "groupIdeaInsurance": "Камсыздандыруу",
+  "assistantCategoryAddTitle": "Жаңы категория",
+  "assistantCategoryAddNote": "Сүрөтчө аталышка жараша тандалат. Кийин өзгөртө аласыз.",
+  "assistantCategoryRenameTitle": "Категориянын атын өзгөртүү",
+  "assistantGroupAddTitle": "Жаңы топ",
+  "assistantGroupRenameTitle": "Топтун атын өзгөртүү",
+  "assistantMoveTitle": "{count, plural, =1{{count} жазууну жылдыруу} other{{count} жазууну жылдыруу}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Жазууну калыбына келтирүү",
+  "assistantRestoreNote": "Жазуу жана анын эскертмелери кайтып келет.",
+  "assistantStepCategories": "Категорияларыңыз текшерилүүдө…",
+  "assistantStepCosts": "Жаңыртуу чыгымдары эсептелүүдө…",
+  "assistantStepVisa": "Виза эрежелери текшерилүүдө…"
 }

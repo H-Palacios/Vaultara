@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "പിൻ ചെയ്ത വിഭാഗങ്ങൾ"
+  "homePinnedTitle": "പിൻ ചെയ്ത വിഭാഗങ്ങൾ",
+  "notifAskTitle": "നിങ്ങളുടെ ഓർമ്മപ്പെടുത്തലുകൾ കൃത്യസമയത്ത് നേടൂ",
+  "notifAskBody": "അറിയിപ്പുകൾ അനുവദിച്ചിട്ടുണ്ടെങ്കിൽ മാത്രമേ എന്തെങ്കിലും കാലഹരണപ്പെടുന്നതിന് മുമ്പ് Vaultara-യ്ക്ക് നിങ്ങളെ ഓർമ്മിപ്പിക്കാൻ കഴിയൂ. ഓർമ്മപ്പെടുത്തലുകളും പ്രധാന അക്കൗണ്ട് മുന്നറിയിപ്പുകളും മാത്രമേ ഞങ്ങൾ അയയ്ക്കൂ.",
+  "notifAskAllow": "അറിയിപ്പുകൾ അനുവദിക്കുക",
+  "notifAskLater": "ഇപ്പോൾ വേണ്ട",
+  "signInTooManyTries": "വളരെയധികം ശ്രമങ്ങൾ. വീണ്ടും ശ്രമിക്കുന്നതിന് മുമ്പ് അൽപ്പം കാത്തിരിക്കുക, അല്ലെങ്കിൽ പാസ്‌വേഡ് റീസെറ്റ് ചെയ്യുക.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} സെക്കൻഡിനുള്ളിൽ വീണ്ടും ശ്രമിക്കുക} other{{seconds} സെക്കൻഡിനുള്ളിൽ വീണ്ടും ശ്രമിക്കുക}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "ബാക്കപ്പ് കോഡുകൾ",
+  "backupCodesIntro": "ഫോണോ ഓതന്റിക്കേറ്റർ ആപ്പോ നഷ്ടപ്പെട്ടാൽ, ബാക്കപ്പ് കോഡ് ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യാം. ഓരോ കോഡും ഒരിക്കൽ മാത്രം പ്രവർത്തിക്കും.",
+  "backupCodesShownOnce": "ഈ കോഡുകൾ ഒരിക്കൽ മാത്രമേ കാണിക്കൂ. ഈ ഫോണിൽ നിന്ന് അകലെ സുരക്ഷിതമായ സ്ഥലത്ത് സംരക്ഷിക്കുക.",
+  "backupCodesCopy": "പകർത്തുക",
+  "backupCodesSave": "സംരക്ഷിക്കുക അല്ലെങ്കിൽ പങ്കിടുക",
+  "backupCodesSaved": "ഞാൻ കോഡുകൾ സംരക്ഷിച്ചു",
+  "backupCodesLeft": "{count, plural, =0{ബാക്കപ്പ് കോഡുകളൊന്നും ശേഷിക്കുന്നില്ല} =1{{count} ബാക്കപ്പ് കോഡ് ശേഷിക്കുന്നു} other{{count} ബാക്കപ്പ് കോഡുകൾ ശേഷിക്കുന്നു}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "ബാക്കപ്പ് കോഡുകൾ ഉണ്ടാക്കുക",
+  "backupCodesMakeNew": "പുതിയ കോഡുകൾ ഉണ്ടാക്കുക",
+  "backupCodesReplaceTitle": "പുതിയ ബാക്കപ്പ് കോഡുകൾ ഉണ്ടാക്കണോ?",
+  "backupCodesReplaceBody": "നിങ്ങളുടെ പഴയ കോഡുകൾ ഉടൻ പ്രവർത്തനം നിർത്തും.",
+  "backupCodesFileTitle": "Vaultara ബാക്കപ്പ് കോഡുകൾ",
+  "backupCodesEachOnce": "ഓരോ കോഡും ഒരിക്കൽ പ്രവർത്തിക്കും. സുരക്ഷിതമായ സ്ഥലത്ത് സൂക്ഷിക്കുക.",
+  "backupCodesCopied": "ബാക്കപ്പ് കോഡുകൾ പകർത്തി. ഒരു മിനിറ്റിനുള്ളിൽ ക്ലിപ്പ്ബോർഡിൽ നിന്ന് മായ്ക്കും.",
+  "backupCodesNone": "ഇതുവരെ ഉണ്ടാക്കിയിട്ടില്ല",
+  "backupCodesTileHint": "ഫോൺ നഷ്ടപ്പെട്ടാൽ സൈൻ ഇൻ ചെയ്യുക",
+  "backupCodeUseTitle": "ബാക്കപ്പ് കോഡ് ഉപയോഗിക്കുക",
+  "backupCodeUseBody": "നിങ്ങൾ സംരക്ഷിച്ച ബാക്കപ്പ് കോഡുകളിൽ ഒന്ന് നൽകുക. ഒന്ന് ഉപയോഗിച്ചാൽ രണ്ട്-ഘട്ട പരിശോധന ഓഫാകും, അതിനാൽ പുതിയ ഫോണിൽ വീണ്ടും സജ്ജീകരിക്കാം.",
+  "backupCodeLabel": "ബാക്കപ്പ് കോഡ്",
+  "backupCodeFormat": "ബാക്കപ്പ് കോഡുകൾ ABCDE-FGHJK പോലെയാണ്.",
+  "backupCodeWrong": "ആ കോഡ് പ്രവർത്തിച്ചില്ല. പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.",
+  "backupCodeBack": "എന്റെ ഓതന്റിക്കേറ്റർ ആപ്പ് ഉപയോഗിക്കുക",
+  "twoStepStepOf": "ഘട്ടം {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "നിങ്ങളുടെ ആപ്പിൽ ഇത് Vaultara ({email}) എന്ന് കാണിക്കും.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "കോഡുകൾ ഓരോ 30 സെക്കൻഡിലും മാറും. ഇപ്പോൾ കാണിക്കുന്നത് നൽകുക.",
+  "twoStepPaste": "ഒട്ടിക്കുക",
+  "twoStepBackupNext": "ഈ ഫോൺ നഷ്ടപ്പെട്ടാലും സൈൻ ഇൻ ചെയ്യാൻ ബാക്കപ്പ് കോഡുകൾ ഉണ്ടാക്കുക.",
+  "twoStepAppLockTitle": "ആപ്പും ലോക്ക് ചെയ്യുക",
+  "twoStepAppLockBody": "രണ്ട്-ഘട്ടം സൈൻ ഇൻ സംരക്ഷിക്കുന്നു. Vaultara തുറക്കുമ്പോഴെല്ലാം ആപ്പ് ലോക്ക് വിരലടയാളം, മുഖം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ചോദിക്കും.",
+  "twoStepAppLockAction": "ആപ്പ് ലോക്ക് ഓണാക്കുക",
+  "twoStepSignOutOthersBody": "തിരിച്ചറിയാത്ത എവിടെയെങ്കിലും സൈൻ ഇൻ ചെയ്തിട്ടുണ്ടോ? മറ്റ് ഉപകരണങ്ങളിൽ നിന്ന് സൈൻ ഔട്ട് ചെയ്യുക.",
+  "twoStepReviewDevices": "ഉപകരണങ്ങൾ പരിശോധിക്കുക",
+  "twoStepSkipForNow": "ഇപ്പോൾ ഒഴിവാക്കുക",
+  "twoStepOffTitle": "രണ്ട്-ഘട്ട പരിശോധന ഓഫാണ്",
+  "twoStepOffBody": "നിങ്ങൾ ബാക്കപ്പ് കോഡ് ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തതിനാൽ രണ്ട്-ഘട്ട പരിശോധന ഓഫാക്കി. അക്കൗണ്ട് സുരക്ഷിതമായി നിലനിർത്താൻ ഈ ഫോണിൽ വീണ്ടും സജ്ജീകരിക്കുക.",
+  "expiryPlusYears": "{years, plural, =1{+{years} വർഷം} other{+{years} വർഷം}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "തീയതി ടൈപ്പ് ചെയ്യുക",
+  "expiryTypeTitle": "കാലാവധി തീരുന്ന തീയതി ടൈപ്പ് ചെയ്യുക",
+  "expiryTypeHint": "ഉദാഹരണത്തിന് {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ആ തീയതി ശരിയായി തോന്നുന്നില്ല. {example} ശ്രമിക്കുക.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ഈ തീയതി കഴിഞ്ഞു, അതിനാൽ റെക്കോർഡ് കാലഹരണപ്പെട്ടതായി സംരക്ഷിക്കും.",
+  "expiryEndsToday": "ഇത് ഇന്ന് കാലഹരണപ്പെടുന്നു.",
+  "saveAndAddAnother": "സംരക്ഷിച്ച് മറ്റൊന്ന് ചേർക്കുക",
+  "quickStartTitle": "വേഗത്തിൽ തുടങ്ങാം",
+  "categoryCreatedAddGroup": "{name} ഉണ്ടാക്കി. ഇതിൽ ഒരു ഗ്രൂപ്പ് ചേർക്കണോ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} ഉണ്ടാക്കി. ഇതിൽ ഒരു റെക്കോർഡ് ചേർക്കണോ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "സർട്ടിഫിക്കറ്റുകൾ",
+  "groupIdeaLicences": "ലൈസൻസുകൾ",
+  "groupIdeaContracts": "കരാറുകൾ",
+  "groupIdeaPermits": "പെർമിറ്റുകൾ",
+  "groupIdeaInsurance": "ഇൻഷുറൻസ്",
+  "assistantCategoryAddTitle": "പുതിയ വിഭാഗം",
+  "assistantCategoryAddNote": "പേരിൽ നിന്ന് ഒരു ഐക്കൺ തിരഞ്ഞെടുക്കും. പിന്നീട് മാറ്റാം.",
+  "assistantCategoryRenameTitle": "വിഭാഗത്തിന്റെ പേര് മാറ്റുക",
+  "assistantGroupAddTitle": "പുതിയ ഗ്രൂപ്പ്",
+  "assistantGroupRenameTitle": "ഗ്രൂപ്പിന്റെ പേര് മാറ്റുക",
+  "assistantMoveTitle": "{count, plural, =1{{count} റെക്കോർഡ് നീക്കുക} other{{count} റെക്കോർഡുകൾ നീക്കുക}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "റെക്കോർഡ് പുനഃസ്ഥാപിക്കുക",
+  "assistantRestoreNote": "റെക്കോർഡും അതിന്റെ ഓർമ്മപ്പെടുത്തലുകളും തിരികെ വരും.",
+  "assistantStepCategories": "നിങ്ങളുടെ വിഭാഗങ്ങൾ പരിശോധിക്കുന്നു…",
+  "assistantStepCosts": "പുതുക്കൽ ചെലവുകൾ കൂട്ടുന്നു…",
+  "assistantStepVisa": "വിസ നിയമങ്ങൾ പരിശോധിക്കുന്നു…"
 }

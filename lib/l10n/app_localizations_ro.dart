@@ -8498,4 +8498,257 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Categorii fixate';
+
+  @override
+  String get notifAskTitle => 'Primește mementourile la timp';
+
+  @override
+  String get notifAskBody => 'Vaultara îți poate aminti înainte să expire ceva doar dacă notificările sunt permise. Trimitem doar mementouri și alerte importante despre cont.';
+
+  @override
+  String get notifAskAllow => 'Permite notificările';
+
+  @override
+  String get notifAskLater => 'Nu acum';
+
+  @override
+  String get signInTooManyTries => 'Prea multe încercări. Așteaptă puțin înainte să încerci din nou sau resetează-ți parola.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Încearcă din nou peste $seconds de secunde',
+      few: 'Încearcă din nou peste $seconds secunde',
+      one: 'Încearcă din nou peste $seconds secundă',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Coduri de rezervă';
+
+  @override
+  String get backupCodesIntro => 'Dacă îți pierzi telefonul sau aplicația de autentificare, un cod de rezervă îți permite să te conectezi. Fiecare cod funcționează o dată.';
+
+  @override
+  String get backupCodesShownOnce => 'Aceste coduri se afișează o singură dată. Salvează-le într-un loc sigur, departe de acest telefon.';
+
+  @override
+  String get backupCodesCopy => 'Copiază';
+
+  @override
+  String get backupCodesSave => 'Salvează sau trimite';
+
+  @override
+  String get backupCodesSaved => 'Mi-am salvat codurile';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au rămas $count de coduri de rezervă',
+      few: 'Au rămas $count coduri de rezervă',
+      one: 'A rămas $count cod de rezervă',
+      zero: 'Nu a mai rămas niciun cod de rezervă',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Creează coduri de rezervă';
+
+  @override
+  String get backupCodesMakeNew => 'Creează coduri noi';
+
+  @override
+  String get backupCodesReplaceTitle => 'Creezi coduri de rezervă noi?';
+
+  @override
+  String get backupCodesReplaceBody => 'Codurile vechi nu vor mai funcționa imediat.';
+
+  @override
+  String get backupCodesFileTitle => 'Coduri de rezervă Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Fiecare cod funcționează o dată. Păstrează-le într-un loc sigur.';
+
+  @override
+  String get backupCodesCopied => 'Coduri de rezervă copiate. Vor fi șterse din clipboard într-un minut.';
+
+  @override
+  String get backupCodesNone => 'Niciunul creat încă';
+
+  @override
+  String get backupCodesTileHint => 'Conectează-te dacă pierzi telefonul';
+
+  @override
+  String get backupCodeUseTitle => 'Folosește un cod de rezervă';
+
+  @override
+  String get backupCodeUseBody => 'Introdu unul dintre codurile de rezervă salvate. Folosirea lui dezactivează verificarea în doi pași, ca s-o poți configura din nou pe telefonul nou.';
+
+  @override
+  String get backupCodeLabel => 'Cod de rezervă';
+
+  @override
+  String get backupCodeFormat => 'Codurile de rezervă arată așa: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Codul nu a funcționat. Verifică-l și încearcă din nou.';
+
+  @override
+  String get backupCodeBack => 'Folosește aplicația mea de autentificare';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Pasul $step din $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Va apărea ca Vaultara ($email) în aplicație.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Codurile se schimbă la fiecare 30 de secunde. Introdu-l pe cel afișat acum.';
+
+  @override
+  String get twoStepPaste => 'Lipește';
+
+  @override
+  String get twoStepBackupNext => 'Creează coduri de rezervă ca să te poți conecta chiar dacă pierzi acest telefon.';
+
+  @override
+  String get twoStepAppLockTitle => 'Blochează și aplicația';
+
+  @override
+  String get twoStepAppLockBody => 'Verificarea în doi pași protejează conectarea. Blocarea aplicației cere amprenta, fața sau blocarea ecranului de fiecare dată când se deschide Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Activează blocarea aplicației';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Conectat undeva ce nu recunoști? Deconectează-te de pe alte dispozitive.';
+
+  @override
+  String get twoStepReviewDevices => 'Verifică dispozitivele';
+
+  @override
+  String get twoStepSkipForNow => 'Omite deocamdată';
+
+  @override
+  String get twoStepOffTitle => 'Verificarea în doi pași este dezactivată';
+
+  @override
+  String get twoStepOffBody => 'Te-ai conectat cu un cod de rezervă, așa că verificarea în doi pași a fost dezactivată. Configureaz-o din nou pe acest telefon ca să-ți păstrezi contul protejat.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years de ani',
+      few: '+$years ani',
+      one: '+$years an',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Scrie data';
+
+  @override
+  String get expiryTypeTitle => 'Scrie data expirării';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'De exemplu $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Data nu pare corectă. Încearcă $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Această dată a trecut, așa că înregistrarea va fi salvată ca expirată.';
+
+  @override
+  String get expiryEndsToday => 'Expiră astăzi.';
+
+  @override
+  String get saveAndAddAnother => 'Salvează și adaugă încă unul';
+
+  @override
+  String get quickStartTitle => 'Pornire rapidă';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name a fost creată. Adaugi un grup?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name a fost creat. Adaugi o înregistrare?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certificate';
+
+  @override
+  String get groupIdeaLicences => 'Licențe';
+
+  @override
+  String get groupIdeaContracts => 'Contracte';
+
+  @override
+  String get groupIdeaPermits => 'Permise';
+
+  @override
+  String get groupIdeaInsurance => 'Asigurări';
+
+  @override
+  String get assistantCategoryAddTitle => 'Categorie nouă';
+
+  @override
+  String get assistantCategoryAddNote => 'Pictograma se alege după nume. O poți schimba mai târziu.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Redenumește categoria';
+
+  @override
+  String get assistantGroupAddTitle => 'Grup nou';
+
+  @override
+  String get assistantGroupRenameTitle => 'Redenumește grupul';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mută $count de înregistrări',
+      few: 'Mută $count înregistrări',
+      one: 'Mută $count înregistrare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Restaurează înregistrarea';
+
+  @override
+  String get assistantRestoreNote => 'Înregistrarea și mementourile ei revin.';
+
+  @override
+  String get assistantStepCategories => 'Se verifică categoriile tale…';
+
+  @override
+  String get assistantStepCosts => 'Se adună costurile de reînnoire…';
+
+  @override
+  String get assistantStepVisa => 'Se verifică regulile de viză…';
 }

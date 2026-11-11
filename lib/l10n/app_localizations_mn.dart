@@ -8407,4 +8407,253 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Бэхэлсэн ангиллууд';
+
+  @override
+  String get notifAskTitle => 'Сануулгаа цагт нь аваарай';
+
+  @override
+  String get notifAskBody => 'Мэдэгдэл зөвшөөрөгдсөн үед л Vaultara ямар нэг зүйлийн хугацаа дуусахаас өмнө танд сануулж чадна. Бид зөвхөн сануулга болон бүртгэлийн чухал анхааруулга илгээдэг.';
+
+  @override
+  String get notifAskAllow => 'Мэдэгдэл зөвшөөрөх';
+
+  @override
+  String get notifAskLater => 'Одоо биш';
+
+  @override
+  String get signInTooManyTries => 'Хэт олон оролдлого. Дахин оролдохоосоо өмнө түр хүлээнэ үү, эсвэл нууц үгээ шинэчилнэ үү.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds секундын дараа дахин оролдоно уу',
+      one: '$seconds секундын дараа дахин оролдоно уу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Нөөц кодууд';
+
+  @override
+  String get backupCodesIntro => 'Утас эсвэл баталгаажуулах аппаа алдвал нөөц кодоор нэвтэрч болно. Код бүр нэг удаа ажиллана.';
+
+  @override
+  String get backupCodesShownOnce => 'Эдгээр код зөвхөн нэг удаа харагдана. Энэ утаснаас хол, аюулгүй газар хадгална уу.';
+
+  @override
+  String get backupCodesCopy => 'Хуулах';
+
+  @override
+  String get backupCodesSave => 'Хадгалах эсвэл хуваалцах';
+
+  @override
+  String get backupCodesSaved => 'Кодоо хадгалсан';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count нөөц код үлдсэн',
+      one: '$count нөөц код үлдсэн',
+      zero: 'Нөөц код үлдээгүй',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Нөөц код үүсгэх';
+
+  @override
+  String get backupCodesMakeNew => 'Шинэ код үүсгэх';
+
+  @override
+  String get backupCodesReplaceTitle => 'Шинэ нөөц код үүсгэх үү?';
+
+  @override
+  String get backupCodesReplaceBody => 'Хуучин кодууд тань шууд ажиллахаа болино.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara нөөц кодууд';
+
+  @override
+  String get backupCodesEachOnce => 'Код бүр нэг удаа ажиллана. Аюулгүй газар хадгална уу.';
+
+  @override
+  String get backupCodesCopied => 'Нөөц кодуудыг хуулсан. Нэг минутын дараа санах ойгоос устгагдана.';
+
+  @override
+  String get backupCodesNone => 'Одоогоор үүсгээгүй';
+
+  @override
+  String get backupCodesTileHint => 'Утсаа алдвал нэвтрэх';
+
+  @override
+  String get backupCodeUseTitle => 'Нөөц код ашиглах';
+
+  @override
+  String get backupCodeUseBody => 'Хадгалсан нөөц кодуудынхаа нэгийг оруулна уу. Үүнийг ашиглавал хоёр алхамт баталгаажуулалт унтарч, шинэ утсан дээрээ дахин тохируулах боломжтой болно.';
+
+  @override
+  String get backupCodeLabel => 'Нөөц код';
+
+  @override
+  String get backupCodeFormat => 'Нөөц кодууд ABCDE-FGHJK хэлбэртэй байдаг.';
+
+  @override
+  String get backupCodeWrong => 'Тэр код ажилласангүй. Шалгаад дахин оролдоно уу.';
+
+  @override
+  String get backupCodeBack => 'Баталгаажуулах аппаа ашиглах';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Алхам $step/$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Таны апп дээр Vaultara ($email) гэж харагдана.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Кодууд 30 секунд тутам солигддог. Одоо харагдаж буйг оруулна уу.';
+
+  @override
+  String get twoStepPaste => 'Буулгах';
+
+  @override
+  String get twoStepBackupNext => 'Энэ утсаа алдсан ч нэвтэрч чадахын тулд нөөц код үүсгэнэ үү.';
+
+  @override
+  String get twoStepAppLockTitle => 'Аппыг бас түгжих';
+
+  @override
+  String get twoStepAppLockBody => 'Хоёр алхам нэвтрэлтийг хамгаална. Аппын түгжээ Vaultara-г нээх бүрт хурууны хээ, царай эсвэл дэлгэцийн түгжээ асууна.';
+
+  @override
+  String get twoStepAppLockAction => 'Аппын түгжээг асаах';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Танихгүй газар нэвтэрсэн үү? Бусад төхөөрөмжөөс гарна уу.';
+
+  @override
+  String get twoStepReviewDevices => 'Төхөөрөмжүүдийг шалгах';
+
+  @override
+  String get twoStepSkipForNow => 'Одоохондоо алгасах';
+
+  @override
+  String get twoStepOffTitle => 'Хоёр алхамт баталгаажуулалт унтарсан';
+
+  @override
+  String get twoStepOffBody => 'Та нөөц кодоор нэвтэрсэн тул хоёр алхамт баталгаажуулалтыг унтраасан. Бүртгэлээ хамгаалахын тулд энэ утсан дээр дахин тохируулна уу.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years жил',
+      one: '+$years жил',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Огноо бичих';
+
+  @override
+  String get expiryTypeTitle => 'Дуусах огноог бичнэ үү';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Жишээ нь $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Тэр огноо зөв биш бололтой. $example гэж оролдоно уу.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Энэ огноо өнгөрсөн тул бичлэг хугацаа нь дууссан гэж хадгалагдана.';
+
+  @override
+  String get expiryEndsToday => 'Үүний хугацаа өнөөдөр дуусна.';
+
+  @override
+  String get saveAndAddAnother => 'Хадгалаад өөр нэгийг нэмэх';
+
+  @override
+  String get quickStartTitle => 'Хурдан эхлэл';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name үүслээ. Бүлэг нэмэх үү?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name үүслээ. Бичлэг нэмэх үү?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Гэрчилгээ';
+
+  @override
+  String get groupIdeaLicences => 'Лиценз';
+
+  @override
+  String get groupIdeaContracts => 'Гэрээ';
+
+  @override
+  String get groupIdeaPermits => 'Зөвшөөрөл';
+
+  @override
+  String get groupIdeaInsurance => 'Даатгал';
+
+  @override
+  String get assistantCategoryAddTitle => 'Шинэ ангилал';
+
+  @override
+  String get assistantCategoryAddNote => 'Нэрээс нь дүрс сонгогдоно. Дараа нь өөрчилж болно.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Ангиллын нэрийг өөрчлөх';
+
+  @override
+  String get assistantGroupAddTitle => 'Шинэ бүлэг';
+
+  @override
+  String get assistantGroupRenameTitle => 'Бүлгийн нэрийг өөрчлөх';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count бичлэг зөөх',
+      one: '$count бичлэг зөөх',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Бичлэгийг сэргээх';
+
+  @override
+  String get assistantRestoreNote => 'Бичлэг болон түүний сануулгууд буцаж ирнэ.';
+
+  @override
+  String get assistantStepCategories => 'Таны ангиллуудыг шалгаж байна…';
+
+  @override
+  String get assistantStepCosts => 'Шинэчлэлтийн зардлыг тооцож байна…';
+
+  @override
+  String get assistantStepVisa => 'Визний дүрмийг шалгаж байна…';
 }

@@ -3112,5 +3112,146 @@
       }
     }
   },
-  "homePinnedTitle": "Připnuté kategorie"
+  "homePinnedTitle": "Připnuté kategorie",
+  "notifAskTitle": "Dostávejte připomenutí včas",
+  "notifAskBody": "Vaultara vás může upozornit před vypršením platnosti jen tehdy, když jsou povolena oznámení. Posíláme jen připomenutí a důležitá upozornění k účtu.",
+  "notifAskAllow": "Povolit oznámení",
+  "notifAskLater": "Teď ne",
+  "signInTooManyTries": "Příliš mnoho pokusů. Chvíli počkejte, než to zkusíte znovu, nebo si obnovte heslo.",
+  "signInWaitSeconds": "{seconds, plural, =1{Zkuste to znovu za {seconds} sekundu} few{Zkuste to znovu za {seconds} sekundy} many{Zkuste to znovu za {seconds} sekundy} other{Zkuste to znovu za {seconds} sekund}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Záložní kódy",
+  "backupCodesIntro": "Pokud ztratíte telefon nebo ověřovací aplikaci, záložní kód vám umožní se přihlásit. Každý kód funguje jednou.",
+  "backupCodesShownOnce": "Tyto kódy se zobrazí jen jednou. Uložte si je na bezpečné místo mimo tento telefon.",
+  "backupCodesCopy": "Kopírovat",
+  "backupCodesSave": "Uložit nebo sdílet",
+  "backupCodesSaved": "Kódy mám uložené",
+  "backupCodesLeft": "{count, plural, =0{Nezbývá žádný záložní kód} =1{Zbývá {count} záložní kód} few{Zbývají {count} záložní kódy} many{Zbývá {count} záložního kódu} other{Zbývá {count} záložních kódů}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Vytvořit záložní kódy",
+  "backupCodesMakeNew": "Vytvořit nové kódy",
+  "backupCodesReplaceTitle": "Vytvořit nové záložní kódy?",
+  "backupCodesReplaceBody": "Staré kódy okamžitě přestanou fungovat.",
+  "backupCodesFileTitle": "Záložní kódy Vaultara",
+  "backupCodesEachOnce": "Každý kód funguje jednou. Uložte je na bezpečné místo.",
+  "backupCodesCopied": "Záložní kódy zkopírovány. Ze schránky se vymažou za minutu.",
+  "backupCodesNone": "Zatím žádné nevytvořeny",
+  "backupCodesTileHint": "Přihlášení, když ztratíte telefon",
+  "backupCodeUseTitle": "Použít záložní kód",
+  "backupCodeUseBody": "Zadejte jeden z uložených záložních kódů. Jeho použitím se vypne dvoufázové ověření, abyste ho mohli znovu nastavit na novém telefonu.",
+  "backupCodeLabel": "Záložní kód",
+  "backupCodeFormat": "Záložní kódy vypadají takto: ABCDE-FGHJK.",
+  "backupCodeWrong": "Tento kód nefungoval. Zkontrolujte ho a zkuste to znovu.",
+  "backupCodeBack": "Použít ověřovací aplikaci",
+  "twoStepStepOf": "Krok {step} z {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "V aplikaci se zobrazí jako Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kódy se mění každých 30 sekund. Zadejte ten, který se zobrazuje teď.",
+  "twoStepPaste": "Vložit",
+  "twoStepBackupNext": "Vytvořte si záložní kódy, abyste se mohli přihlásit, i když tento telefon ztratíte.",
+  "twoStepAppLockTitle": "Zamkněte i aplikaci",
+  "twoStepAppLockBody": "Dvoufázové ověření chrání přihlášení. Zámek aplikace vyžaduje otisk prstu, obličej nebo zámek obrazovky při každém otevření Vaultary.",
+  "twoStepAppLockAction": "Zapnout zámek aplikace",
+  "twoStepSignOutOthersBody": "Přihlášení někde, kde to neznáte? Odhlaste se z ostatních zařízení.",
+  "twoStepReviewDevices": "Zkontrolovat zařízení",
+  "twoStepSkipForNow": "Teď přeskočit",
+  "twoStepOffTitle": "Dvoufázové ověření je vypnuté",
+  "twoStepOffBody": "Přihlásili jste se záložním kódem, proto bylo dvoufázové ověření vypnuto. Nastavte ho znovu na tomto telefonu, aby byl váš účet chráněný.",
+  "expiryPlusYears": "{years, plural, =1{+{years} rok} few{+{years} roky} many{+{years} roku} other{+{years} let}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Napsat datum",
+  "expiryTypeTitle": "Napište datum vypršení",
+  "expiryTypeHint": "Například {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Toto datum nevypadá správně. Zkuste {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Toto datum už uplynulo, takže se záznam uloží jako prošlý.",
+  "expiryEndsToday": "Platnost končí dnes.",
+  "saveAndAddAnother": "Uložit a přidat další",
+  "quickStartTitle": "Rychlý start",
+  "categoryCreatedAddGroup": "Kategorie {name} vytvořena. Přidat do ní skupinu?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Skupina {name} vytvořena. Přidat do ní záznam?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certifikáty",
+  "groupIdeaLicences": "Licence",
+  "groupIdeaContracts": "Smlouvy",
+  "groupIdeaPermits": "Povolení",
+  "groupIdeaInsurance": "Pojištění",
+  "assistantCategoryAddTitle": "Nová kategorie",
+  "assistantCategoryAddNote": "Ikona se vybere podle názvu. Později ji můžete změnit.",
+  "assistantCategoryRenameTitle": "Přejmenovat kategorii",
+  "assistantGroupAddTitle": "Nová skupina",
+  "assistantGroupRenameTitle": "Přejmenovat skupinu",
+  "assistantMoveTitle": "{count, plural, =1{Přesunout {count} záznam} few{Přesunout {count} záznamy} many{Přesunout {count} záznamu} other{Přesunout {count} záznamů}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Obnovit záznam",
+  "assistantRestoreNote": "Záznam i jeho připomenutí se vrátí.",
+  "assistantStepCategories": "Kontroluji vaše kategorie…",
+  "assistantStepCosts": "Sčítám náklady na obnovení…",
+  "assistantStepVisa": "Kontroluji vízová pravidla…"
 }

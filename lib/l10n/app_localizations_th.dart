@@ -8345,4 +8345,249 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'หมวดหมู่ที่ปักหมุด';
+
+  @override
+  String get notifAskTitle => 'รับการแจ้งเตือนให้ทันเวลา';
+
+  @override
+  String get notifAskBody => 'Vaultara จะเตือนคุณก่อนสิ่งใดหมดอายุได้ก็ต่อเมื่ออนุญาตการแจ้งเตือนเท่านั้น เราส่งเฉพาะการเตือนและการแจ้งเตือนสำคัญเกี่ยวกับบัญชีเท่านั้น';
+
+  @override
+  String get notifAskAllow => 'อนุญาตการแจ้งเตือน';
+
+  @override
+  String get notifAskLater => 'ไว้ทีหลัง';
+
+  @override
+  String get signInTooManyTries => 'ลองหลายครั้งเกินไป โปรดรอสักครู่ก่อนลองอีกครั้ง หรือรีเซ็ตรหัสผ่าน';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'ลองอีกครั้งใน $seconds วินาที',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'รหัสสำรอง';
+
+  @override
+  String get backupCodesIntro => 'หากโทรศัพท์หรือแอปยืนยันตัวตนหาย คุณจะลงชื่อเข้าใช้ได้ด้วยรหัสสำรอง แต่ละรหัสใช้ได้ครั้งเดียว';
+
+  @override
+  String get backupCodesShownOnce => 'รหัสเหล่านี้จะแสดงเพียงครั้งเดียว โปรดเก็บไว้ในที่ปลอดภัย แยกจากโทรศัพท์เครื่องนี้';
+
+  @override
+  String get backupCodesCopy => 'คัดลอก';
+
+  @override
+  String get backupCodesSave => 'บันทึกหรือแชร์';
+
+  @override
+  String get backupCodesSaved => 'บันทึกรหัสแล้ว';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เหลือรหัสสำรอง $count รหัส',
+      zero: 'ไม่มีรหัสสำรองเหลือ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'สร้างรหัสสำรอง';
+
+  @override
+  String get backupCodesMakeNew => 'สร้างรหัสใหม่';
+
+  @override
+  String get backupCodesReplaceTitle => 'สร้างรหัสสำรองใหม่ไหม';
+
+  @override
+  String get backupCodesReplaceBody => 'รหัสเก่าจะใช้ไม่ได้ทันที';
+
+  @override
+  String get backupCodesFileTitle => 'รหัสสำรอง Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'แต่ละรหัสใช้ได้ครั้งเดียว โปรดเก็บไว้ในที่ปลอดภัย';
+
+  @override
+  String get backupCodesCopied => 'คัดลอกรหัสสำรองแล้ว จะถูกล้างออกจากคลิปบอร์ดภายในหนึ่งนาที';
+
+  @override
+  String get backupCodesNone => 'ยังไม่ได้สร้าง';
+
+  @override
+  String get backupCodesTileHint => 'ลงชื่อเข้าใช้หากโทรศัพท์หาย';
+
+  @override
+  String get backupCodeUseTitle => 'ใช้รหัสสำรอง';
+
+  @override
+  String get backupCodeUseBody => 'ป้อนรหัสสำรองที่คุณบันทึกไว้หนึ่งรหัส การใช้รหัสจะปิดการยืนยันแบบสองขั้นตอน เพื่อให้คุณตั้งค่าใหม่บนโทรศัพท์เครื่องใหม่ได้';
+
+  @override
+  String get backupCodeLabel => 'รหัสสำรอง';
+
+  @override
+  String get backupCodeFormat => 'รหัสสำรองมีลักษณะเช่น ABCDE-FGHJK';
+
+  @override
+  String get backupCodeWrong => 'รหัสนี้ใช้ไม่ได้ โปรดตรวจสอบแล้วลองอีกครั้ง';
+
+  @override
+  String get backupCodeBack => 'ใช้แอปยืนยันตัวตนของฉัน';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ขั้นตอน $step จาก $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'จะแสดงเป็น Vaultara ($email) ในแอปของคุณ';
+  }
+
+  @override
+  String get twoStepCodesChange => 'รหัสจะเปลี่ยนทุก 30 วินาที ป้อนรหัสที่แสดงอยู่ตอนนี้';
+
+  @override
+  String get twoStepPaste => 'วาง';
+
+  @override
+  String get twoStepBackupNext => 'สร้างรหัสสำรองเพื่อให้ลงชื่อเข้าใช้ได้แม้โทรศัพท์เครื่องนี้หาย';
+
+  @override
+  String get twoStepAppLockTitle => 'ล็อกแอปด้วย';
+
+  @override
+  String get twoStepAppLockBody => 'สองขั้นตอนช่วยปกป้องการลงชื่อเข้าใช้ การล็อกแอปจะขอลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอทุกครั้งที่เปิด Vaultara';
+
+  @override
+  String get twoStepAppLockAction => 'เปิดการล็อกแอป';
+
+  @override
+  String get twoStepSignOutOthersBody => 'ลงชื่อเข้าใช้อยู่ในที่ที่คุณไม่รู้จักใช่ไหม ออกจากระบบในอุปกรณ์อื่น';
+
+  @override
+  String get twoStepReviewDevices => 'ตรวจสอบอุปกรณ์';
+
+  @override
+  String get twoStepSkipForNow => 'ข้ามไปก่อน';
+
+  @override
+  String get twoStepOffTitle => 'การยืนยันแบบสองขั้นตอนปิดอยู่';
+
+  @override
+  String get twoStepOffBody => 'คุณลงชื่อเข้าใช้ด้วยรหัสสำรอง จึงมีการปิดการยืนยันแบบสองขั้นตอน โปรดตั้งค่าใหม่บนโทรศัพท์เครื่องนี้เพื่อปกป้องบัญชีของคุณ';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ปี',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'พิมพ์วันที่';
+
+  @override
+  String get expiryTypeTitle => 'พิมพ์วันหมดอายุ';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'ตัวอย่าง $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'วันที่นี้ดูไม่ถูกต้อง ลอง $example';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'วันที่นี้ผ่านไปแล้ว รายการจะถูกบันทึกเป็นหมดอายุ';
+
+  @override
+  String get expiryEndsToday => 'รายการนี้หมดอายุวันนี้';
+
+  @override
+  String get saveAndAddAnother => 'บันทึกและเพิ่มอีกรายการ';
+
+  @override
+  String get quickStartTitle => 'เริ่มต้นอย่างรวดเร็ว';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'สร้าง $name แล้ว เพิ่มกลุ่มไหม';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'สร้าง $name แล้ว เพิ่มรายการไหม';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'ใบรับรอง';
+
+  @override
+  String get groupIdeaLicences => 'ใบอนุญาต';
+
+  @override
+  String get groupIdeaContracts => 'สัญญา';
+
+  @override
+  String get groupIdeaPermits => 'ใบอนุญาตพิเศษ';
+
+  @override
+  String get groupIdeaInsurance => 'ประกันภัย';
+
+  @override
+  String get assistantCategoryAddTitle => 'หมวดหมู่ใหม่';
+
+  @override
+  String get assistantCategoryAddNote => 'ระบบจะเลือกไอคอนจากชื่อ คุณเปลี่ยนได้ภายหลัง';
+
+  @override
+  String get assistantCategoryRenameTitle => 'เปลี่ยนชื่อหมวดหมู่';
+
+  @override
+  String get assistantGroupAddTitle => 'กลุ่มใหม่';
+
+  @override
+  String get assistantGroupRenameTitle => 'เปลี่ยนชื่อกลุ่ม';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ย้าย $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'กู้คืนรายการ';
+
+  @override
+  String get assistantRestoreNote => 'รายการและการเตือนจะกลับมา';
+
+  @override
+  String get assistantStepCategories => 'กำลังตรวจสอบหมวดหมู่ของคุณ…';
+
+  @override
+  String get assistantStepCosts => 'กำลังรวมค่าต่ออายุ…';
+
+  @override
+  String get assistantStepVisa => 'กำลังตรวจสอบกฎวีซ่า…';
 }

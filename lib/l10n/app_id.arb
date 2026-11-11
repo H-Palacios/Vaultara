@@ -3086,5 +3086,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kategori yang disematkan"
+  "homePinnedTitle": "Kategori yang disematkan",
+  "notifAskTitle": "Dapatkan pengingat tepat waktu",
+  "notifAskBody": "Vaultara hanya bisa mengingatkan Anda sebelum sesuatu kedaluwarsa jika notifikasi diizinkan. Kami hanya mengirim pengingat dan peringatan akun yang penting.",
+  "notifAskAllow": "Izinkan notifikasi",
+  "notifAskLater": "Jangan sekarang",
+  "signInTooManyTries": "Terlalu banyak percobaan. Tunggu sebentar sebelum mencoba lagi, atau setel ulang kata sandi Anda.",
+  "signInWaitSeconds": "{seconds, plural, other{Coba lagi dalam {seconds} detik}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Kode cadangan",
+  "backupCodesIntro": "Jika Anda kehilangan ponsel atau aplikasi autentikator, kode cadangan memungkinkan Anda masuk. Setiap kode hanya berlaku sekali.",
+  "backupCodesShownOnce": "Kode ini hanya ditampilkan sekali. Simpan di tempat aman, jauh dari ponsel ini.",
+  "backupCodesCopy": "Salin",
+  "backupCodesSave": "Simpan atau bagikan",
+  "backupCodesSaved": "Saya sudah menyimpan kode saya",
+  "backupCodesLeft": "{count, plural, =0{Tidak ada kode cadangan tersisa} other{{count} kode cadangan tersisa}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Buat kode cadangan",
+  "backupCodesMakeNew": "Buat kode baru",
+  "backupCodesReplaceTitle": "Buat kode cadangan baru?",
+  "backupCodesReplaceBody": "Kode lama Anda akan langsung berhenti berfungsi.",
+  "backupCodesFileTitle": "Kode cadangan Vaultara",
+  "backupCodesEachOnce": "Setiap kode hanya berlaku sekali. Simpan di tempat aman.",
+  "backupCodesCopied": "Kode cadangan disalin. Kode akan dihapus dari papan klip dalam satu menit.",
+  "backupCodesNone": "Belum ada yang dibuat",
+  "backupCodesTileHint": "Masuk jika ponsel Anda hilang",
+  "backupCodeUseTitle": "Gunakan kode cadangan",
+  "backupCodeUseBody": "Masukkan salah satu kode cadangan yang Anda simpan. Menggunakannya akan menonaktifkan verifikasi dua langkah agar Anda bisa menyiapkannya lagi di ponsel baru.",
+  "backupCodeLabel": "Kode cadangan",
+  "backupCodeFormat": "Kode cadangan terlihat seperti ABCDE-FGHJK.",
+  "backupCodeWrong": "Kode itu tidak berhasil. Periksa dan coba lagi.",
+  "backupCodeBack": "Gunakan aplikasi autentikator saya",
+  "twoStepStepOf": "Langkah {step} dari {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Akan muncul sebagai Vaultara ({email}) di aplikasi Anda.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kode berganti setiap 30 detik. Masukkan kode yang tampil sekarang.",
+  "twoStepPaste": "Tempel",
+  "twoStepBackupNext": "Buat kode cadangan agar Anda tetap bisa masuk jika kehilangan ponsel ini.",
+  "twoStepAppLockTitle": "Kunci aplikasinya juga",
+  "twoStepAppLockBody": "Dua langkah melindungi proses masuk. Kunci aplikasi meminta sidik jari, wajah, atau kunci layar setiap kali Vaultara dibuka.",
+  "twoStepAppLockAction": "Aktifkan kunci aplikasi",
+  "twoStepSignOutOthersBody": "Masuk di tempat yang tidak Anda kenali? Keluar dari perangkat lain.",
+  "twoStepReviewDevices": "Tinjau perangkat",
+  "twoStepSkipForNow": "Lewati dulu",
+  "twoStepOffTitle": "Verifikasi dua langkah nonaktif",
+  "twoStepOffBody": "Anda masuk dengan kode cadangan, sehingga verifikasi dua langkah dinonaktifkan. Siapkan lagi di ponsel ini agar akun Anda tetap terlindungi.",
+  "expiryPlusYears": "{years, plural, other{+{years} tahun}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Ketik tanggal",
+  "expiryTypeTitle": "Ketik tanggal kedaluwarsa",
+  "expiryTypeHint": "Misalnya {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Tanggal itu sepertinya tidak benar. Coba {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Tanggal ini sudah lewat, jadi catatan akan disimpan sebagai kedaluwarsa.",
+  "expiryEndsToday": "Ini kedaluwarsa hari ini.",
+  "saveAndAddAnother": "Simpan dan tambah lagi",
+  "quickStartTitle": "Mulai cepat",
+  "categoryCreatedAddGroup": "{name} dibuat. Tambahkan grup ke dalamnya?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} dibuat. Tambahkan catatan ke dalamnya?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikat",
+  "groupIdeaLicences": "Lisensi",
+  "groupIdeaContracts": "Kontrak",
+  "groupIdeaPermits": "Izin",
+  "groupIdeaInsurance": "Asuransi",
+  "assistantCategoryAddTitle": "Kategori baru",
+  "assistantCategoryAddNote": "Ikon dipilih berdasarkan nama. Anda bisa mengubahnya nanti.",
+  "assistantCategoryRenameTitle": "Ganti nama kategori",
+  "assistantGroupAddTitle": "Grup baru",
+  "assistantGroupRenameTitle": "Ganti nama grup",
+  "assistantMoveTitle": "{count, plural, other{Pindahkan {count} catatan}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Pulihkan catatan",
+  "assistantRestoreNote": "Catatan dan pengingatnya kembali.",
+  "assistantStepCategories": "Memeriksa kategori Anda…",
+  "assistantStepCosts": "Menjumlahkan biaya perpanjangan…",
+  "assistantStepVisa": "Memeriksa aturan visa…"
 }

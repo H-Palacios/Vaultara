@@ -8417,4 +8417,253 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'ټاکل شوې کټګورۍ';
+
+  @override
+  String get notifAskTitle => 'خپل یادونې په وخت ترلاسه کړئ';
+
+  @override
+  String get notifAskBody => 'Vaultara تاسو ته د یو شي له پای ته رسېدو مخکې یوازې هغه وخت یادونه کولی شي چې خبرتیاوې اجازه ولري. موږ یوازې یادونې او مهم حساب خبرتیاوې لېږو.';
+
+  @override
+  String get notifAskAllow => 'خبرتیاوو ته اجازه ورکړئ';
+
+  @override
+  String get notifAskLater => 'اوس نه';
+
+  @override
+  String get signInTooManyTries => 'ډېرې هڅې. بیا هڅې مخکې لږ انتظار وکړئ، یا خپل پټنوم بیا تنظیم کړئ.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'په $seconds ثانیو کې بیا هڅه وکړئ',
+      one: 'په $seconds ثانیه کې بیا هڅه وکړئ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'بیک اپ کوډونه';
+
+  @override
+  String get backupCodesIntro => 'که مو تلیفون یا د تصدیق اپ ورک شي، بیک اپ کوډ تاسو ته د ننوتلو اجازه درکوي. هر کوډ یو ځل کار کوي.';
+
+  @override
+  String get backupCodesShownOnce => 'دا کوډونه یوازې یو ځل ښودل کېږي. دا په یو خوندي ځای کې، له دې تلیفون څخه لرې، وساتئ.';
+
+  @override
+  String get backupCodesCopy => 'کاپي';
+
+  @override
+  String get backupCodesSave => 'خوندي یا شریک کړئ';
+
+  @override
+  String get backupCodesSaved => 'ما خپل کوډونه خوندي کړل';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count بیک اپ کوډونه پاتې دي',
+      one: '$count بیک اپ کوډ پاتې دی',
+      zero: 'هېڅ بیک اپ کوډ پاتې نه دی',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'بیک اپ کوډونه جوړ کړئ';
+
+  @override
+  String get backupCodesMakeNew => 'نوي کوډونه جوړ کړئ';
+
+  @override
+  String get backupCodesReplaceTitle => 'نوي بیک اپ کوډونه جوړ شي؟';
+
+  @override
+  String get backupCodesReplaceBody => 'ستاسو زاړه کوډونه به سمدستي کار پرېږدي.';
+
+  @override
+  String get backupCodesFileTitle => 'د Vaultara بیک اپ کوډونه';
+
+  @override
+  String get backupCodesEachOnce => 'هر کوډ یو ځل کار کوي. په خوندي ځای کې یې وساتئ.';
+
+  @override
+  String get backupCodesCopied => 'بیک اپ کوډونه کاپي شول. په یوه دقیقه کې به له کلیپ بورډ څخه پاک شي.';
+
+  @override
+  String get backupCodesNone => 'تر اوسه نه دي جوړ شوي';
+
+  @override
+  String get backupCodesTileHint => 'که تلیفون مو ورک شو ننوځئ';
+
+  @override
+  String get backupCodeUseTitle => 'بیک اپ کوډ وکاروئ';
+
+  @override
+  String get backupCodeUseBody => 'له هغو بیک اپ کوډونو څخه یو ولیکئ چې خوندي کړي مو دي. د یوه کارول دوه ګامي تصدیق بندوي، ترڅو یې په نوي تلیفون کې بیا تنظیم کړئ.';
+
+  @override
+  String get backupCodeLabel => 'بیک اپ کوډ';
+
+  @override
+  String get backupCodeFormat => 'بیک اپ کوډونه د ABCDE-FGHJK په څېر ښکاري.';
+
+  @override
+  String get backupCodeWrong => 'هغه کوډ کار ونه کړ. وګورئ او بیا هڅه وکړئ.';
+
+  @override
+  String get backupCodeBack => 'زما د تصدیق اپ وکاروئ';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ګام $step له $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'ستاسو په اپ کې به د Vaultara ($email) په توګه ښکاره شي.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'کوډونه هر 30 ثانیې بدلېږي. هغه ولیکئ چې اوس ښکاري.';
+
+  @override
+  String get twoStepPaste => 'پېسټ';
+
+  @override
+  String get twoStepBackupNext => 'بیک اپ کوډونه جوړ کړئ ترڅو که دا تلیفون ورک شي هم ننوتلی شئ.';
+
+  @override
+  String get twoStepAppLockTitle => 'اپ هم قفل کړئ';
+
+  @override
+  String get twoStepAppLockBody => 'دوه ګامه ننوتل خوندي ساتي. د اپ قفل هر ځل چې Vaultara پرانیستل شي د ګوتې نښه، مخ یا د سکرین قفل غواړي.';
+
+  @override
+  String get twoStepAppLockAction => 'د اپ قفل چالان کړئ';
+
+  @override
+  String get twoStepSignOutOthersBody => 'په یو ناپېژندل شوي ځای کې ننوتي یاست؟ له نورو وسیلو ووځئ.';
+
+  @override
+  String get twoStepReviewDevices => 'وسیلې وګورئ';
+
+  @override
+  String get twoStepSkipForNow => 'اوس یې پرېږدئ';
+
+  @override
+  String get twoStepOffTitle => 'دوه ګامي تصدیق بند دی';
+
+  @override
+  String get twoStepOffBody => 'تاسو په بیک اپ کوډ ننوتلي، نو دوه ګامي تصدیق بند شو. د خپل حساب د ساتنې لپاره یې په دې تلیفون کې بیا تنظیم کړئ.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years کاله',
+      one: '+$years کال',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'نېټه ولیکئ';
+
+  @override
+  String get expiryTypeTitle => 'د پای نېټه ولیکئ';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'د بېلګې په توګه $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'هغه نېټه سمه نه ښکاري. $example وازمویئ.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'دا نېټه تېره شوې، نو ریکارډ به د پای ته رسېدلي په توګه خوندي شي.';
+
+  @override
+  String get expiryEndsToday => 'دا نن پای ته رسېږي.';
+
+  @override
+  String get saveAndAddAnother => 'خوندي کړئ او بل یو زیات کړئ';
+
+  @override
+  String get quickStartTitle => 'چټک پیل';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name جوړ شو. ګروپ ورته زیات شي؟';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name جوړ شو. ریکارډ ورته زیات شي؟';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'سندونه';
+
+  @override
+  String get groupIdeaLicences => 'جوازونه';
+
+  @override
+  String get groupIdeaContracts => 'تړونونه';
+
+  @override
+  String get groupIdeaPermits => 'اجازې';
+
+  @override
+  String get groupIdeaInsurance => 'بیمه';
+
+  @override
+  String get assistantCategoryAddTitle => 'نوې کټګوري';
+
+  @override
+  String get assistantCategoryAddNote => 'نښه له نوم څخه ټاکل کېږي. وروسته یې بدلولی شئ.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'د کټګورۍ نوم بدل کړئ';
+
+  @override
+  String get assistantGroupAddTitle => 'نوی ګروپ';
+
+  @override
+  String get assistantGroupRenameTitle => 'د ګروپ نوم بدل کړئ';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ریکارډونه ولېږدوئ',
+      one: '$count ریکارډ ولېږدوئ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'ریکارډ بېرته راولئ';
+
+  @override
+  String get assistantRestoreNote => 'ریکارډ او د هغه یادونې بېرته راځي.';
+
+  @override
+  String get assistantStepCategories => 'ستاسو کټګورۍ ګوري…';
+
+  @override
+  String get assistantStepCosts => 'د نوي کولو لګښتونه جمع کوي…';
+
+  @override
+  String get assistantStepVisa => 'د ویزې قواعد ګوري…';
 }

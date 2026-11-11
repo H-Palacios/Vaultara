@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "Закачени категории"
+  "homePinnedTitle": "Закачени категории",
+  "notifAskTitle": "Получавайте напомнянията си навреме",
+  "notifAskBody": "Vaultara може да ви напомни преди нещо да изтече само ако известията са разрешени. Изпращаме само напомняния и важни сигнали за акаунта.",
+  "notifAskAllow": "Разрешаване на известия",
+  "notifAskLater": "Не сега",
+  "signInTooManyTries": "Твърде много опити. Изчакайте малко, преди да опитате отново, или нулирайте паролата си.",
+  "signInWaitSeconds": "{seconds, plural, =1{Опитайте отново след {seconds} секунда} other{Опитайте отново след {seconds} секунди}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Резервни кодове",
+  "backupCodesIntro": "Ако загубите телефона или приложението за удостоверяване, резервен код ви позволява да влезете. Всеки код работи веднъж.",
+  "backupCodesShownOnce": "Тези кодове се показват само веднъж. Запазете ги на сигурно място, далеч от този телефон.",
+  "backupCodesCopy": "Копиране",
+  "backupCodesSave": "Запазване или споделяне",
+  "backupCodesSaved": "Запазих кодовете си",
+  "backupCodesLeft": "{count, plural, =0{Не остават резервни кодове} =1{Остава {count} резервен код} other{Остават {count} резервни кода}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Създаване на резервни кодове",
+  "backupCodesMakeNew": "Създаване на нови кодове",
+  "backupCodesReplaceTitle": "Да се създадат ли нови резервни кодове?",
+  "backupCodesReplaceBody": "Старите ви кодове ще спрат да работят веднага.",
+  "backupCodesFileTitle": "Резервни кодове за Vaultara",
+  "backupCodesEachOnce": "Всеки код работи веднъж. Пазете ги на сигурно място.",
+  "backupCodesCopied": "Резервните кодове са копирани. Ще бъдат изчистени от клипборда след минута.",
+  "backupCodesNone": "Още няма създадени",
+  "backupCodesTileHint": "Влизане, ако загубите телефона си",
+  "backupCodeUseTitle": "Използване на резервен код",
+  "backupCodeUseBody": "Въведете един от запазените резервни кодове. Използването му изключва потвърждаването в две стъпки, за да можете да го настроите отново на новия си телефон.",
+  "backupCodeLabel": "Резервен код",
+  "backupCodeFormat": "Резервните кодове изглеждат така: ABCDE-FGHJK.",
+  "backupCodeWrong": "Този код не проработи. Проверете го и опитайте отново.",
+  "backupCodeBack": "Използване на приложението за удостоверяване",
+  "twoStepStepOf": "Стъпка {step} от {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Ще се показва като Vaultara ({email}) в приложението ви.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Кодовете се сменят на всеки 30 секунди. Въведете показания в момента.",
+  "twoStepPaste": "Поставяне",
+  "twoStepBackupNext": "Създайте резервни кодове, за да можете да влезете дори ако загубите този телефон.",
+  "twoStepAppLockTitle": "Заключете и приложението",
+  "twoStepAppLockBody": "Двете стъпки пазят влизането. Заключването на приложението иска пръстов отпечатък, лице или заключване на екрана при всяко отваряне на Vaultara.",
+  "twoStepAppLockAction": "Включване на заключването",
+  "twoStepSignOutOthersBody": "Влезли сте някъде, което не разпознавате? Излезте от другите устройства.",
+  "twoStepReviewDevices": "Преглед на устройствата",
+  "twoStepSkipForNow": "Пропускане засега",
+  "twoStepOffTitle": "Потвърждаването в две стъпки е изключено",
+  "twoStepOffBody": "Влязохте с резервен код, затова потвърждаването в две стъпки беше изключено. Настройте го отново на този телефон, за да остане акаунтът ви защитен.",
+  "expiryPlusYears": "{years, plural, =1{+{years} година} other{+{years} години}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Въвеждане на дата",
+  "expiryTypeTitle": "Въведете датата на изтичане",
+  "expiryTypeHint": "Например {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Тази дата не изглежда правилна. Опитайте {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Тази дата е минала, така че записът ще бъде запазен като изтекъл.",
+  "expiryEndsToday": "Изтича днес.",
+  "saveAndAddAnother": "Запазване и добавяне на друг",
+  "quickStartTitle": "Бърз старт",
+  "categoryCreatedAddGroup": "{name} е създадена. Да се добави ли група?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} е създадена. Да се добави ли запис?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Сертификати",
+  "groupIdeaLicences": "Лицензи",
+  "groupIdeaContracts": "Договори",
+  "groupIdeaPermits": "Разрешителни",
+  "groupIdeaInsurance": "Застраховки",
+  "assistantCategoryAddTitle": "Нова категория",
+  "assistantCategoryAddNote": "Иконата се избира по името. Можете да я смените по-късно.",
+  "assistantCategoryRenameTitle": "Преименуване на категория",
+  "assistantGroupAddTitle": "Нова група",
+  "assistantGroupRenameTitle": "Преименуване на група",
+  "assistantMoveTitle": "{count, plural, =1{Преместване на {count} запис} other{Преместване на {count} записа}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Възстановяване на записа",
+  "assistantRestoreNote": "Записът и напомнянията му се връщат.",
+  "assistantStepCategories": "Проверка на категориите…",
+  "assistantStepCosts": "Пресмятане на разходите за подновяване…",
+  "assistantStepVisa": "Проверка на визовите правила…"
 }

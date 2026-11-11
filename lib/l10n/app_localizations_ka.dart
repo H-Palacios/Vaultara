@@ -8417,4 +8417,253 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'მიმაგრებული კატეგორიები';
+
+  @override
+  String get notifAskTitle => 'მიიღეთ შეხსენებები დროულად';
+
+  @override
+  String get notifAskBody => 'Vaultara-ს შეუძლია შეგახსენოთ რაიმეს ვადის გასვლამდე მხოლოდ მაშინ, თუ შეტყობინებები დაშვებულია. ვაგზავნით მხოლოდ შეხსენებებს და ანგარიშის მნიშვნელოვან გაფრთხილებებს.';
+
+  @override
+  String get notifAskAllow => 'შეტყობინებების დაშვება';
+
+  @override
+  String get notifAskLater => 'ახლა არა';
+
+  @override
+  String get signInTooManyTries => 'ძალიან ბევრი მცდელობა. ცოტა დაელოდეთ ხელახლა ცდამდე ან აღადგინეთ პაროლი.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'სცადეთ ხელახლა $seconds წამში',
+      one: 'სცადეთ ხელახლა $seconds წამში',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'სარეზერვო კოდები';
+
+  @override
+  String get backupCodesIntro => 'თუ ტელეფონს ან ავთენტიფიკატორ აპს დაკარგავთ, სარეზერვო კოდით შეძლებთ შესვლას. თითოეული კოდი ერთხელ მუშაობს.';
+
+  @override
+  String get backupCodesShownOnce => 'ეს კოდები მხოლოდ ერთხელ ჩანს. შეინახეთ ისინი უსაფრთხო ადგილას, ამ ტელეფონისგან შორს.';
+
+  @override
+  String get backupCodesCopy => 'კოპირება';
+
+  @override
+  String get backupCodesSave => 'შენახვა ან გაზიარება';
+
+  @override
+  String get backupCodesSaved => 'კოდები შევინახე';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დარჩა $count სარეზერვო კოდი',
+      one: 'დარჩა $count სარეზერვო კოდი',
+      zero: 'სარეზერვო კოდი აღარ დარჩა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'სარეზერვო კოდების შექმნა';
+
+  @override
+  String get backupCodesMakeNew => 'ახალი კოდების შექმნა';
+
+  @override
+  String get backupCodesReplaceTitle => 'შეიქმნას ახალი სარეზერვო კოდები?';
+
+  @override
+  String get backupCodesReplaceBody => 'ძველი კოდები მაშინვე შეწყვეტს მუშაობას.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara-ს სარეზერვო კოდები';
+
+  @override
+  String get backupCodesEachOnce => 'თითოეული კოდი ერთხელ მუშაობს. შეინახეთ უსაფრთხო ადგილას.';
+
+  @override
+  String get backupCodesCopied => 'სარეზერვო კოდები დაკოპირდა. ერთ წუთში წაიშლება ბუფერიდან.';
+
+  @override
+  String get backupCodesNone => 'ჯერ არ შექმნილა';
+
+  @override
+  String get backupCodesTileHint => 'შესვლა ტელეფონის დაკარგვისას';
+
+  @override
+  String get backupCodeUseTitle => 'სარეზერვო კოდის გამოყენება';
+
+  @override
+  String get backupCodeUseBody => 'შეიყვანეთ შენახული სარეზერვო კოდებიდან ერთ-ერთი. მისი გამოყენება გამორთავს ორსაფეხურიან დადასტურებას, რომ ახალ ტელეფონზე თავიდან დააყენოთ.';
+
+  @override
+  String get backupCodeLabel => 'სარეზერვო კოდი';
+
+  @override
+  String get backupCodeFormat => 'სარეზერვო კოდები ასე გამოიყურება: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'ეს კოდი არ იმუშავა. შეამოწმეთ და სცადეთ ხელახლა.';
+
+  @override
+  String get backupCodeBack => 'ჩემი ავთენტიფიკატორი აპის გამოყენება';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ნაბიჯი $step / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'თქვენს აპში გამოჩნდება როგორც Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'კოდები ყოველ 30 წამში იცვლება. შეიყვანეთ ახლა ნაჩვენები.';
+
+  @override
+  String get twoStepPaste => 'ჩასმა';
+
+  @override
+  String get twoStepBackupNext => 'შექმენით სარეზერვო კოდები, რომ შეძლოთ შესვლა ამ ტელეფონის დაკარგვის შემთხვევაშიც.';
+
+  @override
+  String get twoStepAppLockTitle => 'აპიც დაბლოკეთ';
+
+  @override
+  String get twoStepAppLockBody => 'ორსაფეხურიანი დადასტურება იცავს შესვლას. აპის დაბლოკვა Vaultara-ს ყოველ გახსნაზე ითხოვს თითის ანაბეჭდს, სახეს ან ეკრანის დაბლოკვას.';
+
+  @override
+  String get twoStepAppLockAction => 'აპის დაბლოკვის ჩართვა';
+
+  @override
+  String get twoStepSignOutOthersBody => 'შესული ხართ სადმე, რასაც ვერ ცნობთ? გამოდით სხვა მოწყობილობებიდან.';
+
+  @override
+  String get twoStepReviewDevices => 'მოწყობილობების ნახვა';
+
+  @override
+  String get twoStepSkipForNow => 'ახლა გამოტოვება';
+
+  @override
+  String get twoStepOffTitle => 'ორსაფეხურიანი დადასტურება გამორთულია';
+
+  @override
+  String get twoStepOffBody => 'სარეზერვო კოდით შეხვედით, ამიტომ ორსაფეხურიანი დადასტურება გამოირთო. თავიდან დააყენეთ ამ ტელეფონზე, რომ ანგარიში დაცული დარჩეს.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years წელი',
+      one: '+$years წელი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'თარიღის აკრეფა';
+
+  @override
+  String get expiryTypeTitle => 'აკრიფეთ ვადის გასვლის თარიღი';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'მაგალითად $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'ეს თარიღი სწორად არ გამოიყურება. სცადეთ $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'ეს თარიღი გავიდა, ამიტომ ჩანაწერი შეინახება როგორც ვადაგასული.';
+
+  @override
+  String get expiryEndsToday => 'ვადა დღეს გადის.';
+
+  @override
+  String get saveAndAddAnother => 'შენახვა და კიდევ ერთის დამატება';
+
+  @override
+  String get quickStartTitle => 'სწრაფი დაწყება';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name შეიქმნა. დაემატოს ჯგუფი?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name შეიქმნა. დაემატოს ჩანაწერი?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'სერტიფიკატები';
+
+  @override
+  String get groupIdeaLicences => 'ლიცენზიები';
+
+  @override
+  String get groupIdeaContracts => 'ხელშეკრულებები';
+
+  @override
+  String get groupIdeaPermits => 'ნებართვები';
+
+  @override
+  String get groupIdeaInsurance => 'დაზღვევა';
+
+  @override
+  String get assistantCategoryAddTitle => 'ახალი კატეგორია';
+
+  @override
+  String get assistantCategoryAddNote => 'ხატულა სახელის მიხედვით შეირჩევა. მოგვიანებით შეგიძლიათ შეცვალოთ.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'კატეგორიის გადარქმევა';
+
+  @override
+  String get assistantGroupAddTitle => 'ახალი ჯგუფი';
+
+  @override
+  String get assistantGroupRenameTitle => 'ჯგუფის გადარქმევა';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ჩანაწერის გადატანა',
+      one: '$count ჩანაწერის გადატანა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'ჩანაწერის აღდგენა';
+
+  @override
+  String get assistantRestoreNote => 'ჩანაწერი და მისი შეხსენებები ბრუნდება.';
+
+  @override
+  String get assistantStepCategories => 'ვამოწმებთ თქვენს კატეგორიებს…';
+
+  @override
+  String get assistantStepCosts => 'ვითვლით განახლების ხარჯებს…';
+
+  @override
+  String get assistantStepVisa => 'ვამოწმებთ სავიზო წესებს…';
 }

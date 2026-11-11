@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "Catagóirí greamaithe"
+  "homePinnedTitle": "Catagóirí greamaithe",
+  "notifAskTitle": "Faigh do mheabhrúcháin in am",
+  "notifAskBody": "Ní féidir le Vaultara tú a mheabhrú sula rachaidh rud éigin in éag ach amháin má tá fógraí ceadaithe. Ní sheolaimid ach meabhrúcháin agus foláirimh thábhachtacha cuntais.",
+  "notifAskAllow": "Ceadaigh fógraí",
+  "notifAskLater": "Ní anois",
+  "signInTooManyTries": "An iomarca iarrachtaí. Fan nóiméad sula ndéanfaidh tú iarracht arís, nó athshocraigh do phasfhocal.",
+  "signInWaitSeconds": "{seconds, plural, =1{Bain triail eile as i gceann {seconds} soicind} two{Bain triail eile as i gceann {seconds} shoicind} few{Bain triail eile as i gceann {seconds} shoicind} many{Bain triail eile as i gceann {seconds} soicind} other{Bain triail eile as i gceann {seconds} soicind}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Cóid chúltaca",
+  "backupCodesIntro": "Má chailleann tú d'fhón nó d'aip fíordheimhnithe, ligeann cód cúltaca duit síniú isteach. Oibríonn gach cód uair amháin.",
+  "backupCodesShownOnce": "Ní thaispeántar na cóid seo ach uair amháin. Sábháil iad in áit shábháilte, i bhfad ón bhfón seo.",
+  "backupCodesCopy": "Cóipeáil",
+  "backupCodesSave": "Sábháil nó comhroinn",
+  "backupCodesSaved": "Tá mo chóid sábháilte agam",
+  "backupCodesLeft": "{count, plural, =0{Níl aon chód cúltaca fágtha} =1{{count} chód cúltaca fágtha} two{{count} chód cúltaca fágtha} few{{count} chód cúltaca fágtha} many{{count} gcód cúltaca fágtha} other{{count} cód cúltaca fágtha}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Déan cóid chúltaca",
+  "backupCodesMakeNew": "Déan cóid nua",
+  "backupCodesReplaceTitle": "Cóid chúltaca nua a dhéanamh?",
+  "backupCodesReplaceBody": "Stopfaidh do sheanchóid ag obair láithreach.",
+  "backupCodesFileTitle": "Cóid chúltaca Vaultara",
+  "backupCodesEachOnce": "Oibríonn gach cód uair amháin. Coinnigh in áit shábháilte iad.",
+  "backupCodesCopied": "Cóipeáladh na cóid chúltaca. Glanfar ón ngearrthaisce iad i gceann nóiméid.",
+  "backupCodesNone": "Níl aon cheann déanta fós",
+  "backupCodesTileHint": "Sínigh isteach má chailleann tú d'fhón",
+  "backupCodeUseTitle": "Úsáid cód cúltaca",
+  "backupCodeUseBody": "Cuir isteach ceann de na cóid chúltaca a shábháil tú. Má úsáideann tú ceann, casfar fíorú dhá chéim as, ionas gur féidir leat é a shocrú arís ar d'fhón nua.",
+  "backupCodeLabel": "Cód cúltaca",
+  "backupCodeFormat": "Breathnaíonn cóid chúltaca mar ABCDE-FGHJK.",
+  "backupCodeWrong": "Níor oibrigh an cód sin. Seiceáil é agus bain triail eile as.",
+  "backupCodeBack": "Úsáid m'aip fíordheimhnithe",
+  "twoStepStepOf": "Céim {step} as {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Taispeánfar é mar Vaultara ({email}) i d'aip.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Athraíonn cóid gach 30 soicind. Cuir isteach an ceann atá le feiceáil anois.",
+  "twoStepPaste": "Greamaigh",
+  "twoStepBackupNext": "Déan cóid chúltaca ionas gur féidir leat síniú isteach fiú má chailleann tú an fón seo.",
+  "twoStepAppLockTitle": "Cuir glas ar an aip freisin",
+  "twoStepAppLockBody": "Cosnaíonn dhá chéim an síniú isteach. Iarrann glas na haipe do mhéarlorg, d'aghaidh nó glas an scáileáin gach uair a osclaítear Vaultara.",
+  "twoStepAppLockAction": "Cas glas na haipe air",
+  "twoStepSignOutOthersBody": "Sínithe isteach áit éigin nach n-aithníonn tú? Sínigh amach as gléasanna eile.",
+  "twoStepReviewDevices": "Athbhreithnigh gléasanna",
+  "twoStepSkipForNow": "Scipeáil anois",
+  "twoStepOffTitle": "Tá fíorú dhá chéim casta as",
+  "twoStepOffBody": "Shínigh tú isteach le cód cúltaca, mar sin casadh fíorú dhá chéim as. Socraigh arís é ar an bhfón seo chun do chuntas a choinneáil slán.",
+  "expiryPlusYears": "{years, plural, =1{+{years} bhliain} two{+{years} bhliain} few{+{years} bliana} many{+{years} mbliana} other{+{years} bliain}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Clóscríobh dáta",
+  "expiryTypeTitle": "Clóscríobh an dáta éaga",
+  "expiryTypeHint": "Mar shampla {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ní cosúil go bhfuil an dáta sin ceart. Bain triail as {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Tá an dáta seo caite, mar sin sábhálfar an taifead mar thaifead imithe in éag.",
+  "expiryEndsToday": "Rachaidh sé seo in éag inniu.",
+  "saveAndAddAnother": "Sábháil agus cuir ceann eile leis",
+  "quickStartTitle": "Tús tapa",
+  "categoryCreatedAddGroup": "Cruthaíodh {name}. Grúpa a chur leis?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Cruthaíodh {name}. Taifead a chur leis?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Teastais",
+  "groupIdeaLicences": "Ceadúnais",
+  "groupIdeaContracts": "Conarthaí",
+  "groupIdeaPermits": "Ceadanna",
+  "groupIdeaInsurance": "Árachas",
+  "assistantCategoryAddTitle": "Catagóir nua",
+  "assistantCategoryAddNote": "Roghnaítear deilbhín ón ainm. Is féidir leat é a athrú ar ball.",
+  "assistantCategoryRenameTitle": "Athainmnigh an chatagóir",
+  "assistantGroupAddTitle": "Grúpa nua",
+  "assistantGroupRenameTitle": "Athainmnigh an grúpa",
+  "assistantMoveTitle": "{count, plural, =1{Bog {count} taifead} two{Bog {count} thaifead} few{Bog {count} thaifead} many{Bog {count} dtaifead} other{Bog {count} taifead}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Athchóirigh an taifead",
+  "assistantRestoreNote": "Tagann an taifead agus a mheabhrúcháin ar ais.",
+  "assistantStepCategories": "Do chatagóirí á seiceáil…",
+  "assistantStepCosts": "Costais athnuachana á suimiú…",
+  "assistantStepVisa": "Rialacha víosa á seiceáil…"
 }

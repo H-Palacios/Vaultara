@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "پن کی گئی کیٹیگریز"
+  "homePinnedTitle": "پن کی گئی کیٹیگریز",
+  "notifAskTitle": "اپنی یاد دہانیاں بروقت حاصل کریں",
+  "notifAskBody": "اطلاعات کی اجازت ہو تو ہی Vaultara کسی چیز کی میعاد ختم ہونے سے پہلے آپ کو یاد دلا سکتا ہے۔ ہم صرف یاد دہانیاں اور اہم اکاؤنٹ الرٹس بھیجتے ہیں۔",
+  "notifAskAllow": "اطلاعات کی اجازت دیں",
+  "notifAskLater": "ابھی نہیں",
+  "signInTooManyTries": "بہت زیادہ کوششیں۔ دوبارہ کوشش کرنے سے پہلے تھوڑا انتظار کریں، یا اپنا پاس ورڈ ری سیٹ کریں۔",
+  "signInWaitSeconds": "{seconds, plural, one{{seconds} سیکنڈ میں دوبارہ کوشش کریں} other{{seconds} سیکنڈ میں دوبارہ کوشش کریں}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "بیک اپ کوڈز",
+  "backupCodesIntro": "اگر آپ کا فون یا تصدیقی ایپ گم ہو جائے تو بیک اپ کوڈ سے سائن ان کر سکتے ہیں۔ ہر کوڈ ایک بار کام کرتا ہے۔",
+  "backupCodesShownOnce": "یہ کوڈز صرف ایک بار دکھائے جاتے ہیں۔ انہیں اس فون سے دور کسی محفوظ جگہ محفوظ کریں۔",
+  "backupCodesCopy": "کاپی کریں",
+  "backupCodesSave": "محفوظ کریں یا شیئر کریں",
+  "backupCodesSaved": "میں نے اپنے کوڈز محفوظ کر لیے",
+  "backupCodesLeft": "{count, plural, =0{کوئی بیک اپ کوڈ باقی نہیں} one{{count} بیک اپ کوڈ باقی ہے} other{{count} بیک اپ کوڈز باقی ہیں}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "بیک اپ کوڈز بنائیں",
+  "backupCodesMakeNew": "نئے کوڈز بنائیں",
+  "backupCodesReplaceTitle": "نئے بیک اپ کوڈز بنائیں؟",
+  "backupCodesReplaceBody": "آپ کے پرانے کوڈز فوراً کام کرنا بند کر دیں گے۔",
+  "backupCodesFileTitle": "Vaultara بیک اپ کوڈز",
+  "backupCodesEachOnce": "ہر کوڈ ایک بار کام کرتا ہے۔ انہیں محفوظ جگہ پر رکھیں۔",
+  "backupCodesCopied": "بیک اپ کوڈز کاپی ہو گئے۔ ایک منٹ میں کلپ بورڈ سے مٹا دیے جائیں گے۔",
+  "backupCodesNone": "ابھی کوئی نہیں بنایا",
+  "backupCodesTileHint": "فون گم ہو تو سائن ان کریں",
+  "backupCodeUseTitle": "بیک اپ کوڈ استعمال کریں",
+  "backupCodeUseBody": "اپنے محفوظ کردہ بیک اپ کوڈز میں سے ایک درج کریں۔ اسے استعمال کرنے سے دو مرحلہ تصدیق بند ہو جاتی ہے، تاکہ آپ نئے فون پر اسے دوبارہ سیٹ کر سکیں۔",
+  "backupCodeLabel": "بیک اپ کوڈ",
+  "backupCodeFormat": "بیک اپ کوڈز ABCDE-FGHJK جیسے نظر آتے ہیں۔",
+  "backupCodeWrong": "وہ کوڈ کام نہیں کیا۔ چیک کر کے دوبارہ کوشش کریں۔",
+  "backupCodeBack": "میری تصدیقی ایپ استعمال کریں",
+  "twoStepStepOf": "مرحلہ {step} از {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "یہ آپ کی ایپ میں Vaultara ({email}) کے طور پر نظر آئے گا۔",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "کوڈز ہر 30 سیکنڈ میں بدلتے ہیں۔ ابھی نظر آنے والا کوڈ درج کریں۔",
+  "twoStepPaste": "پیسٹ کریں",
+  "twoStepBackupNext": "بیک اپ کوڈز بنائیں تاکہ یہ فون گم ہونے پر بھی آپ سائن ان کر سکیں۔",
+  "twoStepAppLockTitle": "ایپ کو بھی لاک کریں",
+  "twoStepAppLockBody": "دو مرحلے سائن ان کو محفوظ رکھتے ہیں۔ ایپ لاک ہر بار Vaultara کھلنے پر فنگر پرنٹ، چہرہ یا اسکرین لاک مانگتا ہے۔",
+  "twoStepAppLockAction": "ایپ لاک آن کریں",
+  "twoStepSignOutOthersBody": "کسی انجان جگہ سائن ان ہے؟ دوسرے آلات سے سائن آؤٹ کریں۔",
+  "twoStepReviewDevices": "آلات دیکھیں",
+  "twoStepSkipForNow": "ابھی چھوڑ دیں",
+  "twoStepOffTitle": "دو مرحلہ تصدیق بند ہے",
+  "twoStepOffBody": "آپ نے بیک اپ کوڈ سے سائن ان کیا، اس لیے دو مرحلہ تصدیق بند کر دی گئی۔ اپنا اکاؤنٹ محفوظ رکھنے کے لیے اس فون پر اسے دوبارہ سیٹ کریں۔",
+  "expiryPlusYears": "{years, plural, one{+{years} سال} other{+{years} سال}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "تاریخ ٹائپ کریں",
+  "expiryTypeTitle": "میعاد ختم ہونے کی تاریخ ٹائپ کریں",
+  "expiryTypeHint": "مثال کے طور پر {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "وہ تاریخ درست نہیں لگتی۔ {example} آزمائیں۔",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "یہ تاریخ گزر چکی ہے، اس لیے ریکارڈ میعاد ختم کے طور پر محفوظ ہوگا۔",
+  "expiryEndsToday": "اس کی میعاد آج ختم ہو رہی ہے۔",
+  "saveAndAddAnother": "محفوظ کریں اور ایک اور شامل کریں",
+  "quickStartTitle": "فوری آغاز",
+  "categoryCreatedAddGroup": "{name} بن گیا۔ اس میں گروپ شامل کریں؟",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} بن گیا۔ اس میں ریکارڈ شامل کریں؟",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "سرٹیفکیٹس",
+  "groupIdeaLicences": "لائسنس",
+  "groupIdeaContracts": "معاہدے",
+  "groupIdeaPermits": "اجازت نامے",
+  "groupIdeaInsurance": "بیمہ",
+  "assistantCategoryAddTitle": "نئی کیٹیگری",
+  "assistantCategoryAddNote": "نام سے آئیکن چنا جاتا ہے۔ آپ اسے بعد میں بدل سکتے ہیں۔",
+  "assistantCategoryRenameTitle": "کیٹیگری کا نام بدلیں",
+  "assistantGroupAddTitle": "نیا گروپ",
+  "assistantGroupRenameTitle": "گروپ کا نام بدلیں",
+  "assistantMoveTitle": "{count, plural, one{{count} ریکارڈ منتقل کریں} other{{count} ریکارڈز منتقل کریں}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ریکارڈ بحال کریں",
+  "assistantRestoreNote": "ریکارڈ اور اس کی یاد دہانیاں واپس آ جاتی ہیں۔",
+  "assistantStepCategories": "آپ کی کیٹیگریز چیک ہو رہی ہیں…",
+  "assistantStepCosts": "تجدید کے اخراجات جمع ہو رہے ہیں…",
+  "assistantStepVisa": "ویزا قوانین چیک ہو رہے ہیں…"
 }

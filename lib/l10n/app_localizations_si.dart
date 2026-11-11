@@ -8416,4 +8416,253 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'අමුණා ඇති කාණ්ඩ';
+
+  @override
+  String get notifAskTitle => 'ඔබේ සිහිකැඳවීම් නියමිත වේලාවට ලබා ගන්න';
+
+  @override
+  String get notifAskBody => 'දැනුම්දීම්වලට අවසර ඇත්නම් පමණක් යමක් කල් ඉකුත් වීමට පෙර Vaultara හට ඔබට මතක් කළ හැක. අපි සිහිකැඳවීම් සහ වැදගත් ගිණුම් ඇඟවීම් පමණක් යවන්නෙමු.';
+
+  @override
+  String get notifAskAllow => 'දැනුම්දීම්වලට අවසර දෙන්න';
+
+  @override
+  String get notifAskLater => 'දැන් නොවේ';
+
+  @override
+  String get signInTooManyTries => 'උත්සාහයන් ඕනෑවට වඩා. නැවත උත්සාහ කිරීමට පෙර මඳක් රැඳී සිටින්න, නැතහොත් මුරපදය යළි සකසන්න.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'තත්පර $secondsකින් නැවත උත්සාහ කරන්න',
+      one: 'තත්පර $secondsකින් නැවත උත්සාහ කරන්න',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'උපස්ථ කේත';
+
+  @override
+  String get backupCodesIntro => 'ඔබේ දුරකථනය හෝ සත්‍යාපන යෙදුම නැති වුවහොත්, උපස්ථ කේතයකින් පුරනය විය හැක. සෑම කේතයක්ම එක් වරක් පමණක් ක්‍රියා කරයි.';
+
+  @override
+  String get backupCodesShownOnce => 'මෙම කේත පෙන්වන්නේ එක් වරක් පමණි. මෙම දුරකථනයෙන් ඈත ආරක්ෂිත ස්ථානයක ඒවා සුරකින්න.';
+
+  @override
+  String get backupCodesCopy => 'පිටපත් කරන්න';
+
+  @override
+  String get backupCodesSave => 'සුරකින්න හෝ බෙදාගන්න';
+
+  @override
+  String get backupCodesSaved => 'මම කේත සුරැකුවෙමි';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'උපස්ථ කේත $countක් ඉතිරියි',
+      one: 'උපස්ථ කේත $countක් ඉතිරියි',
+      zero: 'උපස්ථ කේත කිසිවක් ඉතිරි නැත',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'උපස්ථ කේත සාදන්න';
+
+  @override
+  String get backupCodesMakeNew => 'නව කේත සාදන්න';
+
+  @override
+  String get backupCodesReplaceTitle => 'නව උපස්ථ කේත සාදන්නද?';
+
+  @override
+  String get backupCodesReplaceBody => 'ඔබේ පැරණි කේත වහාම ක්‍රියා කිරීම නවත්වයි.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara උපස්ථ කේත';
+
+  @override
+  String get backupCodesEachOnce => 'සෑම කේතයක්ම එක් වරක් ක්‍රියා කරයි. ආරක්ෂිත ස්ථානයක තබා ගන්න.';
+
+  @override
+  String get backupCodesCopied => 'උපස්ථ කේත පිටපත් විය. මිනිත්තුවකින් පසුරු පුවරුවෙන් ඉවත් කෙරේ.';
+
+  @override
+  String get backupCodesNone => 'තවම සාදා නැත';
+
+  @override
+  String get backupCodesTileHint => 'දුරකථනය නැති වුවහොත් පුරනය වන්න';
+
+  @override
+  String get backupCodeUseTitle => 'උපස්ථ කේතයක් භාවිත කරන්න';
+
+  @override
+  String get backupCodeUseBody => 'ඔබ සුරැකි උපස්ථ කේතවලින් එකක් ඇතුළු කරන්න. එකක් භාවිත කිරීමෙන් පියවර දෙකේ සත්‍යාපනය අක්‍රිය වේ, එවිට ඔබට එය නව දුරකථනයේ නැවත සැකසිය හැක.';
+
+  @override
+  String get backupCodeLabel => 'උපස්ථ කේතය';
+
+  @override
+  String get backupCodeFormat => 'උපස්ථ කේත ABCDE-FGHJK ලෙස පෙනේ.';
+
+  @override
+  String get backupCodeWrong => 'එම කේතය ක්‍රියා කළේ නැත. පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get backupCodeBack => 'මගේ සත්‍යාපන යෙදුම භාවිත කරන්න';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'පියවර $step / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'ඔබේ යෙදුමේ එය Vaultara ($email) ලෙස පෙන්වයි.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'කේත සෑම තත්පර 30කට වරක් වෙනස් වේ. දැන් පෙන්වන කේතය ඇතුළු කරන්න.';
+
+  @override
+  String get twoStepPaste => 'අලවන්න';
+
+  @override
+  String get twoStepBackupNext => 'මෙම දුරකථනය නැති වුවද පුරනය වීමට හැකි වන සේ උපස්ථ කේත සාදන්න.';
+
+  @override
+  String get twoStepAppLockTitle => 'යෙදුමත් අගුළු දමන්න';
+
+  @override
+  String get twoStepAppLockBody => 'පියවර දෙක පුරනය ආරක්ෂා කරයි. යෙදුම් අගුල Vaultara විවෘත කරන සෑම විටම ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල ඉල්ලයි.';
+
+  @override
+  String get twoStepAppLockAction => 'යෙදුම් අගුල ක්‍රියාත්මක කරන්න';
+
+  @override
+  String get twoStepSignOutOthersBody => 'ඔබ නොහඳුනන තැනක පුරනය වී ඇත්ද? වෙනත් උපාංගවලින් වරනය වන්න.';
+
+  @override
+  String get twoStepReviewDevices => 'උපාංග සමාලෝචනය කරන්න';
+
+  @override
+  String get twoStepSkipForNow => 'දැනට මඟ හරින්න';
+
+  @override
+  String get twoStepOffTitle => 'පියවර දෙකේ සත්‍යාපනය අක්‍රියයි';
+
+  @override
+  String get twoStepOffBody => 'ඔබ උපස්ථ කේතයකින් පුරනය වූ බැවින් පියවර දෙකේ සත්‍යාපනය අක්‍රිය කෙරිණි. ගිණුම ආරක්ෂිතව තබා ගැනීමට මෙම දුරකථනයේ එය නැවත සකසන්න.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+වසර $years',
+      one: '+වසර $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'දිනය ටයිප් කරන්න';
+
+  @override
+  String get expiryTypeTitle => 'කල් ඉකුත් වන දිනය ටයිප් කරන්න';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'උදාහරණයක් ලෙස $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'එම දිනය නිවැරදි ලෙස නොපෙනේ. $example උත්සාහ කරන්න.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'මෙම දිනය පසු වී ඇති බැවින් වාර්තාව කල් ඉකුත් වූ ලෙස සුරැකේ.';
+
+  @override
+  String get expiryEndsToday => 'මෙය අද කල් ඉකුත් වේ.';
+
+  @override
+  String get saveAndAddAnother => 'සුරකින්න සහ තවත් එකක් එක් කරන්න';
+
+  @override
+  String get quickStartTitle => 'ඉක්මන් ආරම්භය';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name සාදන ලදී. එයට කණ්ඩායමක් එක් කරන්නද?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name සාදන ලදී. එයට වාර්තාවක් එක් කරන්නද?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'සහතික';
+
+  @override
+  String get groupIdeaLicences => 'බලපත්‍ර';
+
+  @override
+  String get groupIdeaContracts => 'ගිවිසුම්';
+
+  @override
+  String get groupIdeaPermits => 'අවසරපත්‍ර';
+
+  @override
+  String get groupIdeaInsurance => 'රක්ෂණ';
+
+  @override
+  String get assistantCategoryAddTitle => 'නව ප්‍රවර්ගය';
+
+  @override
+  String get assistantCategoryAddNote => 'නම අනුව නිරූපකයක් තෝරා ගැනේ. පසුව වෙනස් කළ හැක.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'ප්‍රවර්ගය නැවත නම් කරන්න';
+
+  @override
+  String get assistantGroupAddTitle => 'නව කණ්ඩායම';
+
+  @override
+  String get assistantGroupRenameTitle => 'කණ්ඩායම නැවත නම් කරන්න';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'වාර්තා $countක් ගෙන යන්න',
+      one: 'වාර්තා $countක් ගෙන යන්න',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'වාර්තාව ප්‍රතිසාධනය කරන්න';
+
+  @override
+  String get assistantRestoreNote => 'වාර්තාව සහ එහි සිහිකැඳවීම් ආපසු එයි.';
+
+  @override
+  String get assistantStepCategories => 'ඔබේ ප්‍රවර්ග පරීක්ෂා කරමින්…';
+
+  @override
+  String get assistantStepCosts => 'අලුත් කිරීමේ වියදම් එකතු කරමින්…';
+
+  @override
+  String get assistantStepVisa => 'වීසා නීති පරීක්ෂා කරමින්…';
 }

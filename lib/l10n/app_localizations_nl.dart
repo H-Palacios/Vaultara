@@ -8421,4 +8421,253 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Vastgezette categorieën';
+
+  @override
+  String get notifAskTitle => 'Ontvang je herinneringen op tijd';
+
+  @override
+  String get notifAskBody => 'Vaultara kan je alleen herinneren voordat iets verloopt als meldingen zijn toegestaan. We sturen alleen herinneringen en belangrijke accountmeldingen.';
+
+  @override
+  String get notifAskAllow => 'Meldingen toestaan';
+
+  @override
+  String get notifAskLater => 'Niet nu';
+
+  @override
+  String get signInTooManyTries => 'Te veel pogingen. Wacht even voordat je het opnieuw probeert, of stel je wachtwoord opnieuw in.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Probeer het over $seconds seconden opnieuw',
+      one: 'Probeer het over $seconds seconde opnieuw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Back-upcodes';
+
+  @override
+  String get backupCodesIntro => 'Als je je telefoon of authenticator-app kwijtraakt, kun je met een back-upcode inloggen. Elke code werkt één keer.';
+
+  @override
+  String get backupCodesShownOnce => 'Deze codes worden maar één keer getoond. Bewaar ze op een veilige plek, niet op deze telefoon.';
+
+  @override
+  String get backupCodesCopy => 'Kopiëren';
+
+  @override
+  String get backupCodesSave => 'Opslaan of delen';
+
+  @override
+  String get backupCodesSaved => 'Ik heb mijn codes opgeslagen';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count back-upcodes over',
+      one: '$count back-upcode over',
+      zero: 'Geen back-upcodes meer over',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Back-upcodes maken';
+
+  @override
+  String get backupCodesMakeNew => 'Nieuwe codes maken';
+
+  @override
+  String get backupCodesReplaceTitle => 'Nieuwe back-upcodes maken?';
+
+  @override
+  String get backupCodesReplaceBody => 'Je oude codes werken dan meteen niet meer.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara-back-upcodes';
+
+  @override
+  String get backupCodesEachOnce => 'Elke code werkt één keer. Bewaar ze op een veilige plek.';
+
+  @override
+  String get backupCodesCopied => 'Back-upcodes gekopieerd. Ze worden over een minuut van het klembord gewist.';
+
+  @override
+  String get backupCodesNone => 'Nog geen gemaakt';
+
+  @override
+  String get backupCodesTileHint => 'Inloggen als je je telefoon kwijtraakt';
+
+  @override
+  String get backupCodeUseTitle => 'Een back-upcode gebruiken';
+
+  @override
+  String get backupCodeUseBody => 'Voer een van je opgeslagen back-upcodes in. Daarmee wordt verificatie in twee stappen uitgezet, zodat je die op je nieuwe telefoon opnieuw kunt instellen.';
+
+  @override
+  String get backupCodeLabel => 'Back-upcode';
+
+  @override
+  String get backupCodeFormat => 'Back-upcodes zien er zo uit: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Die code werkte niet. Controleer hem en probeer het opnieuw.';
+
+  @override
+  String get backupCodeBack => 'Mijn authenticator-app gebruiken';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Stap $step van $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Het verschijnt als Vaultara ($email) in je app.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Codes wisselen elke 30 seconden. Voer de code in die nu wordt getoond.';
+
+  @override
+  String get twoStepPaste => 'Plakken';
+
+  @override
+  String get twoStepBackupNext => 'Maak back-upcodes zodat je ook kunt inloggen als je deze telefoon kwijtraakt.';
+
+  @override
+  String get twoStepAppLockTitle => 'Vergrendel ook de app';
+
+  @override
+  String get twoStepAppLockBody => 'Twee stappen beschermen het inloggen. App-vergrendeling vraagt bij elke keer openen van Vaultara om je vingerafdruk, gezicht of schermvergrendeling.';
+
+  @override
+  String get twoStepAppLockAction => 'App-vergrendeling aanzetten';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ergens ingelogd dat je niet herkent? Log uit op andere apparaten.';
+
+  @override
+  String get twoStepReviewDevices => 'Apparaten bekijken';
+
+  @override
+  String get twoStepSkipForNow => 'Nu overslaan';
+
+  @override
+  String get twoStepOffTitle => 'Verificatie in twee stappen staat uit';
+
+  @override
+  String get twoStepOffBody => 'Je hebt ingelogd met een back-upcode, daarom is verificatie in twee stappen uitgezet. Stel het opnieuw in op deze telefoon om je account beschermd te houden.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years jaar',
+      one: '+$years jaar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Datum typen';
+
+  @override
+  String get expiryTypeTitle => 'Typ de vervaldatum';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Bijvoorbeeld $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Die datum lijkt niet te kloppen. Probeer $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Deze datum is al voorbij, dus het item wordt als verlopen opgeslagen.';
+
+  @override
+  String get expiryEndsToday => 'Dit verloopt vandaag.';
+
+  @override
+  String get saveAndAddAnother => 'Opslaan en nog een toevoegen';
+
+  @override
+  String get quickStartTitle => 'Snel starten';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name aangemaakt. Een groep toevoegen?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name aangemaakt. Een item toevoegen?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certificaten';
+
+  @override
+  String get groupIdeaLicences => 'Licenties';
+
+  @override
+  String get groupIdeaContracts => 'Contracten';
+
+  @override
+  String get groupIdeaPermits => 'Vergunningen';
+
+  @override
+  String get groupIdeaInsurance => 'Verzekeringen';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nieuwe categorie';
+
+  @override
+  String get assistantCategoryAddNote => 'Er wordt een pictogram gekozen op basis van de naam. Je kunt het later wijzigen.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Categorie hernoemen';
+
+  @override
+  String get assistantGroupAddTitle => 'Nieuwe groep';
+
+  @override
+  String get assistantGroupRenameTitle => 'Groep hernoemen';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items verplaatsen',
+      one: '$count item verplaatsen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Item herstellen';
+
+  @override
+  String get assistantRestoreNote => 'Het item en de herinneringen komen terug.';
+
+  @override
+  String get assistantStepCategories => 'Je categorieën controleren…';
+
+  @override
+  String get assistantStepCosts => 'Verlengingskosten optellen…';
+
+  @override
+  String get assistantStepVisa => 'Visumregels controleren…';
 }

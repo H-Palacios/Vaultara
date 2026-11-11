@@ -3112,5 +3112,146 @@
       }
     }
   },
-  "homePinnedTitle": "Categories fixades"
+  "homePinnedTitle": "Categories fixades",
+  "notifAskTitle": "Rep els recordatoris a temps",
+  "notifAskBody": "Vaultara només et pot avisar abans que caduqui alguna cosa si les notificacions estan permeses. Només enviem recordatoris i avisos importants del compte.",
+  "notifAskAllow": "Permet les notificacions",
+  "notifAskLater": "Ara no",
+  "signInTooManyTries": "Massa intents. Espera un moment abans de tornar-ho a provar o restableix la contrasenya.",
+  "signInWaitSeconds": "{seconds, plural, =1{Torna-ho a provar d'aquí a {seconds} segon} other{Torna-ho a provar d'aquí a {seconds} segons}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Codis de seguretat",
+  "backupCodesIntro": "Si perds el telèfon o l'aplicació d'autenticació, un codi de seguretat et permet iniciar la sessió. Cada codi funciona una vegada.",
+  "backupCodesShownOnce": "Aquests codis només es mostren una vegada. Desa'ls en un lloc segur, lluny d'aquest telèfon.",
+  "backupCodesCopy": "Copia",
+  "backupCodesSave": "Desa o comparteix",
+  "backupCodesSaved": "He desat els codis",
+  "backupCodesLeft": "{count, plural, =0{No queda cap codi de seguretat} =1{Queda {count} codi de seguretat} other{Queden {count} codis de seguretat}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Crea codis de seguretat",
+  "backupCodesMakeNew": "Crea codis nous",
+  "backupCodesReplaceTitle": "Vols crear codis de seguretat nous?",
+  "backupCodesReplaceBody": "Els codis antics deixaran de funcionar immediatament.",
+  "backupCodesFileTitle": "Codis de seguretat de Vaultara",
+  "backupCodesEachOnce": "Cada codi funciona una vegada. Guarda'ls en un lloc segur.",
+  "backupCodesCopied": "Codis copiats. S'esborraran del porta-retalls d'aquí a un minut.",
+  "backupCodesNone": "Encara no se n'ha creat cap",
+  "backupCodesTileHint": "Inicia la sessió si perds el telèfon",
+  "backupCodeUseTitle": "Utilitza un codi de seguretat",
+  "backupCodeUseBody": "Introdueix un dels codis de seguretat que has desat. Si en fas servir un, la verificació en dos passos es desactiva perquè la puguis tornar a configurar al telèfon nou.",
+  "backupCodeLabel": "Codi de seguretat",
+  "backupCodeFormat": "Els codis de seguretat tenen aquest aspecte: ABCDE-FGHJK.",
+  "backupCodeWrong": "Aquest codi no ha funcionat. Comprova'l i torna-ho a provar.",
+  "backupCodeBack": "Utilitza l'aplicació d'autenticació",
+  "twoStepStepOf": "Pas {step} de {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Es mostrarà com a Vaultara ({email}) a l'aplicació.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Els codis canvien cada 30 segons. Introdueix el que es mostra ara.",
+  "twoStepPaste": "Enganxa",
+  "twoStepBackupNext": "Crea codis de seguretat per poder iniciar la sessió encara que perdis aquest telèfon.",
+  "twoStepAppLockTitle": "Bloqueja també l'aplicació",
+  "twoStepAppLockBody": "La verificació en dos passos protegeix l'inici de sessió. El bloqueig de l'aplicació demana l'empremta, la cara o el bloqueig de pantalla cada vegada que s'obre Vaultara.",
+  "twoStepAppLockAction": "Activa el bloqueig de l'aplicació",
+  "twoStepSignOutOthersBody": "Has iniciat la sessió en algun lloc que no reconeixes? Tanca la sessió dels altres dispositius.",
+  "twoStepReviewDevices": "Revisa els dispositius",
+  "twoStepSkipForNow": "Omet per ara",
+  "twoStepOffTitle": "La verificació en dos passos està desactivada",
+  "twoStepOffBody": "Has iniciat la sessió amb un codi de seguretat, així que la verificació en dos passos s'ha desactivat. Torna-la a configurar en aquest telèfon per mantenir el compte protegit.",
+  "expiryPlusYears": "{years, plural, =1{+{years} any} other{+{years} anys}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Escriu la data",
+  "expiryTypeTitle": "Escriu la data de caducitat",
+  "expiryTypeHint": "Per exemple {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Aquesta data no sembla correcta. Prova {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Aquesta data ja ha passat, així que el registre es desarà com a caducat.",
+  "expiryEndsToday": "Caduca avui.",
+  "saveAndAddAnother": "Desa i afegeix-ne un altre",
+  "quickStartTitle": "Inici ràpid",
+  "categoryCreatedAddGroup": "S'ha creat {name}. Vols afegir-hi un grup?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "S'ha creat {name}. Vols afegir-hi un registre?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificats",
+  "groupIdeaLicences": "Llicències",
+  "groupIdeaContracts": "Contractes",
+  "groupIdeaPermits": "Permisos",
+  "groupIdeaInsurance": "Assegurances",
+  "assistantCategoryAddTitle": "Categoria nova",
+  "assistantCategoryAddNote": "La icona es tria a partir del nom. La pots canviar més tard.",
+  "assistantCategoryRenameTitle": "Canvia el nom de la categoria",
+  "assistantGroupAddTitle": "Grup nou",
+  "assistantGroupRenameTitle": "Canvia el nom del grup",
+  "assistantMoveTitle": "{count, plural, =1{Mou {count} registre} other{Mou {count} registres}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restaura el registre",
+  "assistantRestoreNote": "El registre i els seus recordatoris tornen.",
+  "assistantStepCategories": "S'estan comprovant les categories…",
+  "assistantStepCosts": "S'estan sumant els costos de renovació…",
+  "assistantStepVisa": "S'estan comprovant les normes de visat…"
 }

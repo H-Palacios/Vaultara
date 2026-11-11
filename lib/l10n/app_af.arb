@@ -3119,5 +3119,146 @@
       }
     }
   },
-  "homePinnedTitle": "Vasgespelde kategorieë"
+  "homePinnedTitle": "Vasgespelde kategorieë",
+  "notifAskTitle": "Kry jou herinneringe betyds",
+  "notifAskBody": "Vaultara kan jou net herinner voordat iets verval as kennisgewings toegelaat word. Ons stuur net herinneringe en belangrike rekeningwaarskuwings.",
+  "notifAskAllow": "Laat kennisgewings toe",
+  "notifAskLater": "Nie nou nie",
+  "signInTooManyTries": "Te veel pogings. Wag 'n oomblik voordat jy weer probeer, of stel jou wagwoord terug.",
+  "signInWaitSeconds": "{seconds, plural, =1{Probeer weer oor {seconds} sekonde} other{Probeer weer oor {seconds} sekondes}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Rugsteunkodes",
+  "backupCodesIntro": "As jy jou foon of verifikasie-app verloor, laat 'n rugsteunkode jou aanmeld. Elke kode werk een keer.",
+  "backupCodesShownOnce": "Hierdie kodes word net een keer gewys. Stoor hulle iewers veilig, weg van hierdie foon.",
+  "backupCodesCopy": "Kopieer",
+  "backupCodesSave": "Stoor of deel",
+  "backupCodesSaved": "Ek het my kodes gestoor",
+  "backupCodesLeft": "{count, plural, =0{Geen rugsteunkodes oor nie} =1{{count} rugsteunkode oor} other{{count} rugsteunkodes oor}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Maak rugsteunkodes",
+  "backupCodesMakeNew": "Maak nuwe kodes",
+  "backupCodesReplaceTitle": "Maak nuwe rugsteunkodes?",
+  "backupCodesReplaceBody": "Jou ou kodes sal dadelik ophou werk.",
+  "backupCodesFileTitle": "Vaultara-rugsteunkodes",
+  "backupCodesEachOnce": "Elke kode werk een keer. Hou hulle iewers veilig.",
+  "backupCodesCopied": "Rugsteunkodes gekopieer. Hulle word binne 'n minuut van die knipbord verwyder.",
+  "backupCodesNone": "Nog geen gemaak nie",
+  "backupCodesTileHint": "Meld aan as jy jou foon verloor",
+  "backupCodeUseTitle": "Gebruik 'n rugsteunkode",
+  "backupCodeUseBody": "Voer een van die rugsteunkodes in wat jy gestoor het. As jy een gebruik, word tweestapverifikasie afgeskakel sodat jy dit weer op jou nuwe foon kan opstel.",
+  "backupCodeLabel": "Rugsteunkode",
+  "backupCodeFormat": "Rugsteunkodes lyk soos ABCDE-FGHJK.",
+  "backupCodeWrong": "Daardie kode het nie gewerk nie. Kontroleer dit en probeer weer.",
+  "backupCodeBack": "Gebruik my verifikasie-app",
+  "twoStepStepOf": "Stap {step} van {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Dit sal as Vaultara ({email}) in jou app verskyn.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodes verander elke 30 sekondes. Voer die een in wat nou gewys word.",
+  "twoStepPaste": "Plak",
+  "twoStepBackupNext": "Maak rugsteunkodes sodat jy steeds kan aanmeld as jy hierdie foon verloor.",
+  "twoStepAppLockTitle": "Sluit ook die app",
+  "twoStepAppLockBody": "Tweestap beskerm aanmelding. Appslot vra elke keer as Vaultara oopmaak vir jou vingerafdruk, gesig of skermslot.",
+  "twoStepAppLockAction": "Skakel appslot aan",
+  "twoStepSignOutOthersBody": "Aangemeld op 'n plek wat jy nie herken nie? Meld af op ander toestelle.",
+  "twoStepReviewDevices": "Hersien toestelle",
+  "twoStepSkipForNow": "Slaan nou oor",
+  "twoStepOffTitle": "Tweestapverifikasie is af",
+  "twoStepOffBody": "Jy het met 'n rugsteunkode aangemeld, dus is tweestapverifikasie afgeskakel. Stel dit weer op hierdie foon op om jou rekening beskerm te hou.",
+  "expiryPlusYears": "{years, plural, =1{+{years} jaar} other{+{years} jaar}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Tik datum",
+  "expiryTypeTitle": "Tik die vervaldatum",
+  "expiryTypeHint": "Byvoorbeeld {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Daardie datum lyk nie reg nie. Probeer {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Hierdie datum is verby, dus sal die rekord as verval gestoor word.",
+  "expiryEndsToday": "Dit verval vandag.",
+  "saveAndAddAnother": "Stoor en voeg nog een by",
+  "quickStartTitle": "Vinnige begin",
+  "categoryCreatedAddGroup": "{name} geskep. Voeg 'n groep daarby?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} geskep. Voeg 'n rekord daarby?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikate",
+  "groupIdeaLicences": "Lisensies",
+  "groupIdeaContracts": "Kontrakte",
+  "groupIdeaPermits": "Permitte",
+  "groupIdeaInsurance": "Versekering",
+  "assistantCategoryAddTitle": "Nuwe kategorie",
+  "assistantCategoryAddNote": "'n Ikoon word uit die naam gekies. Jy kan dit later verander.",
+  "assistantCategoryRenameTitle": "Hernoem kategorie",
+  "assistantGroupAddTitle": "Nuwe groep",
+  "assistantGroupRenameTitle": "Hernoem groep",
+  "assistantMoveTitle": "{count, plural, =1{Skuif {count} rekord} other{Skuif {count} rekords}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Herstel rekord",
+  "assistantRestoreNote": "Die rekord en sy herinneringe kom terug.",
+  "assistantStepCategories": "Kyk na jou kategorieë…",
+  "assistantStepCosts": "Tel hernuwingskoste op…",
+  "assistantStepVisa": "Kyk na visumreëls…"
 }

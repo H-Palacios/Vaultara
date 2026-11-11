@@ -8355,4 +8355,249 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'ပင်ထိုးထားသော အမျိုးအစားများ';
+
+  @override
+  String get notifAskTitle => 'သင့်သတိပေးချက်များကို အချိန်မီ ရယူပါ';
+
+  @override
+  String get notifAskBody => 'အကြောင်းကြားချက်များကို ခွင့်ပြုထားမှသာ Vaultara သည် တစ်ခုခု သက်တမ်းကုန်ခင် သင့်ကို သတိပေးနိုင်ပါသည်။ ကျွန်ုပ်တို့သည် သတိပေးချက်များနှင့် အရေးကြီးသော အကောင့်သတိပေးချက်များကိုသာ ပို့ပါသည်။';
+
+  @override
+  String get notifAskAllow => 'အကြောင်းကြားချက်များကို ခွင့်ပြုပါ';
+
+  @override
+  String get notifAskLater => 'ယခု မဟုတ်ပါ';
+
+  @override
+  String get signInTooManyTries => 'ကြိုးစားမှု များလွန်းပါသည်။ ထပ်မကြိုးစားမီ ခဏစောင့်ပါ သို့မဟုတ် စကားဝှက်ကို ပြန်သတ်မှတ်ပါ။';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds စက္ကန့်အကြာတွင် ထပ်ကြိုးစားပါ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'အရန်ကုဒ်များ';
+
+  @override
+  String get backupCodesIntro => 'ဖုန်း သို့မဟုတ် အထောက်အထားစိစစ်သည့်အက်ပ် ပျောက်သွားပါက အရန်ကုဒ်ဖြင့် ဝင်ရောက်နိုင်ပါသည်။ ကုဒ်တစ်ခုစီကို တစ်ကြိမ်သာ အသုံးပြုနိုင်ပါသည်။';
+
+  @override
+  String get backupCodesShownOnce => 'ဤကုဒ်များကို တစ်ကြိမ်သာ ပြသပါမည်။ ဤဖုန်းနှင့်ဝေးသော လုံခြုံသည့်နေရာတွင် သိမ်းထားပါ။';
+
+  @override
+  String get backupCodesCopy => 'ကူးယူရန်';
+
+  @override
+  String get backupCodesSave => 'သိမ်းရန် သို့မဟုတ် မျှဝေရန်';
+
+  @override
+  String get backupCodesSaved => 'ကုဒ်များကို သိမ်းပြီးပါပြီ';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အရန်ကုဒ် $count ခု ကျန်ပါသည်',
+      zero: 'အရန်ကုဒ် မကျန်တော့ပါ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'အရန်ကုဒ်များ ပြုလုပ်ရန်';
+
+  @override
+  String get backupCodesMakeNew => 'ကုဒ်အသစ်များ ပြုလုပ်ရန်';
+
+  @override
+  String get backupCodesReplaceTitle => 'အရန်ကုဒ်အသစ်များ ပြုလုပ်မလား။';
+
+  @override
+  String get backupCodesReplaceBody => 'ကုဒ်ဟောင်းများ ချက်ချင်း အလုပ်မလုပ်တော့ပါ။';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara အရန်ကုဒ်များ';
+
+  @override
+  String get backupCodesEachOnce => 'ကုဒ်တစ်ခုစီကို တစ်ကြိမ်သာ အသုံးပြုနိုင်ပါသည်။ လုံခြုံသည့်နေရာတွင် သိမ်းထားပါ။';
+
+  @override
+  String get backupCodesCopied => 'အရန်ကုဒ်များ ကူးယူပြီးပါပြီ။ တစ်မိနစ်အတွင်း ကလစ်ဘုတ်မှ ဖျက်ပါမည်။';
+
+  @override
+  String get backupCodesNone => 'မပြုလုပ်ရသေးပါ';
+
+  @override
+  String get backupCodesTileHint => 'ဖုန်းပျောက်ပါက ဝင်ရောက်ရန်';
+
+  @override
+  String get backupCodeUseTitle => 'အရန်ကုဒ် အသုံးပြုရန်';
+
+  @override
+  String get backupCodeUseBody => 'သိမ်းထားသော အရန်ကုဒ်များထဲမှ တစ်ခုကို ထည့်ပါ။ ၎င်းကို အသုံးပြုပါက နှစ်ဆင့်အတည်ပြုခြင်း ပိတ်သွားမည်ဖြစ်၍ ဖုန်းအသစ်တွင် ပြန်လည်သတ်မှတ်နိုင်ပါသည်။';
+
+  @override
+  String get backupCodeLabel => 'အရန်ကုဒ်';
+
+  @override
+  String get backupCodeFormat => 'အရန်ကုဒ်များသည် ABCDE-FGHJK ကဲ့သို့ ဖြစ်ပါသည်။';
+
+  @override
+  String get backupCodeWrong => 'ထိုကုဒ် အလုပ်မလုပ်ပါ။ စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။';
+
+  @override
+  String get backupCodeBack => 'ကျွန်ုပ်၏ အထောက်အထားစိစစ်သည့်အက်ပ်ကို သုံးရန်';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'အဆင့် $step / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'သင့်အက်ပ်တွင် Vaultara ($email) အဖြစ် ပြသပါမည်။';
+  }
+
+  @override
+  String get twoStepCodesChange => 'ကုဒ်များသည် စက္ကန့် 30 တိုင်း ပြောင်းပါသည်။ ယခုပြသနေသောကုဒ်ကို ထည့်ပါ။';
+
+  @override
+  String get twoStepPaste => 'ကူးထည့်ရန်';
+
+  @override
+  String get twoStepBackupNext => 'ဤဖုန်း ပျောက်သွားလျှင်ပင် ဝင်ရောက်နိုင်ရန် အရန်ကုဒ်များ ပြုလုပ်ပါ။';
+
+  @override
+  String get twoStepAppLockTitle => 'အက်ပ်ကိုလည်း လော့ခ်ချပါ';
+
+  @override
+  String get twoStepAppLockBody => 'နှစ်ဆင့်သည် ဝင်ရောက်ခြင်းကို ကာကွယ်ပါသည်။ အက်ပ်လော့ခ်သည် Vaultara ဖွင့်တိုင်း လက်ဗွေ၊ မျက်နှာ သို့မဟုတ် မျက်နှာပြင်လော့ခ်ကို တောင်းပါသည်။';
+
+  @override
+  String get twoStepAppLockAction => 'အက်ပ်လော့ခ် ဖွင့်ရန်';
+
+  @override
+  String get twoStepSignOutOthersBody => 'မသိသောနေရာတွင် ဝင်ထားပါသလား။ အခြားစက်များမှ ထွက်ပါ။';
+
+  @override
+  String get twoStepReviewDevices => 'စက်များကို စစ်ဆေးရန်';
+
+  @override
+  String get twoStepSkipForNow => 'ယခု ကျော်ရန်';
+
+  @override
+  String get twoStepOffTitle => 'နှစ်ဆင့်အတည်ပြုခြင်း ပိတ်ထားပါသည်';
+
+  @override
+  String get twoStepOffBody => 'အရန်ကုဒ်ဖြင့် ဝင်ရောက်ခဲ့သဖြင့် နှစ်ဆင့်အတည်ပြုခြင်းကို ပိတ်လိုက်ပါသည်။ အကောင့်ကို ကာကွယ်ထားရန် ဤဖုန်းတွင် ပြန်လည်သတ်မှတ်ပါ။';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years နှစ်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'ရက်စွဲ ရိုက်ထည့်ရန်';
+
+  @override
+  String get expiryTypeTitle => 'သက်တမ်းကုန်ရက်ကို ရိုက်ထည့်ပါ';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'ဥပမာ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'ထိုရက်စွဲ မှန်ပုံမရပါ။ $example ကို စမ်းကြည့်ပါ။';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'ဤရက်စွဲ ကျော်လွန်သွားပြီဖြစ်၍ မှတ်တမ်းကို သက်တမ်းကုန်အဖြစ် သိမ်းပါမည်။';
+
+  @override
+  String get expiryEndsToday => 'ဤအရာသည် ယနေ့ သက်တမ်းကုန်ပါသည်။';
+
+  @override
+  String get saveAndAddAnother => 'သိမ်းပြီး နောက်တစ်ခု ထည့်ရန်';
+
+  @override
+  String get quickStartTitle => 'အမြန်စတင်ရန်';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name ကို ပြုလုပ်ပြီးပါပြီ။ အုပ်စုတစ်ခု ထည့်မလား။';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name ကို ပြုလုပ်ပြီးပါပြီ။ မှတ်တမ်းတစ်ခု ထည့်မလား။';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'လက်မှတ်များ';
+
+  @override
+  String get groupIdeaLicences => 'လိုင်စင်များ';
+
+  @override
+  String get groupIdeaContracts => 'စာချုပ်များ';
+
+  @override
+  String get groupIdeaPermits => 'ခွင့်ပြုချက်များ';
+
+  @override
+  String get groupIdeaInsurance => 'အာမခံ';
+
+  @override
+  String get assistantCategoryAddTitle => 'အမျိုးအစားအသစ်';
+
+  @override
+  String get assistantCategoryAddNote => 'အမည်မှ အိုင်ကွန်ကို ရွေးပါမည်။ နောက်မှ ပြောင်းနိုင်ပါသည်။';
+
+  @override
+  String get assistantCategoryRenameTitle => 'အမျိုးအစားအမည် ပြောင်းရန်';
+
+  @override
+  String get assistantGroupAddTitle => 'အုပ်စုအသစ်';
+
+  @override
+  String get assistantGroupRenameTitle => 'အုပ်စုအမည် ပြောင်းရန်';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'မှတ်တမ်း $count ခု ရွှေ့ရန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'မှတ်တမ်း ပြန်ယူရန်';
+
+  @override
+  String get assistantRestoreNote => 'မှတ်တမ်းနှင့် ၎င်း၏ သတိပေးချက်များ ပြန်ရောက်လာပါမည်။';
+
+  @override
+  String get assistantStepCategories => 'သင့်အမျိုးအစားများကို စစ်ဆေးနေသည်…';
+
+  @override
+  String get assistantStepCosts => 'သက်တမ်းတိုးစရိတ်များကို ပေါင်းနေသည်…';
+
+  @override
+  String get assistantStepVisa => 'ဗီဇာစည်းမျဉ်းများကို စစ်ဆေးနေသည်…';
 }

@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Qaybaha la dhejiyay"
+  "homePinnedTitle": "Qaybaha la dhejiyay",
+  "notifAskTitle": "Hel xasuusinahaaga waqtigooda",
+  "notifAskBody": "Vaultara waxay ku xasuusin kartaa ka hor inta aysan wax dhicin oo keliya haddii ogeysiisyada la oggolaado. Waxaan dirnaa oo keliya xasuusin iyo digniino muhiim ah oo xisaabta ku saabsan.",
+  "notifAskAllow": "Oggolow ogeysiisyada",
+  "notifAskLater": "Hadda maya",
+  "signInTooManyTries": "Isku day aad u badan. Wax yar sug ka hor intaadan mar kale isku dayin, ama dib u deji eraygaaga sirta ah.",
+  "signInWaitSeconds": "{seconds, plural, =1{Mar kale isku day {seconds} ilbiriqsi kadib} other{Mar kale isku day {seconds} ilbiriqsi kadib}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Koodhadhka kaydka",
+  "backupCodesIntro": "Haddii aad lumiso taleefankaaga ama abka xaqiijinta, kood kayd ah ayaa kuu oggolaanaya inaad gasho. Kood kasta hal mar ayuu shaqeeyaa.",
+  "backupCodesShownOnce": "Koodhadhkan hal mar oo keliya ayaa la tusaa. Ku kaydi meel ammaan ah, oo ka fog taleefankan.",
+  "backupCodesCopy": "Koobiyee",
+  "backupCodesSave": "Kaydi ama wadaag",
+  "backupCodesSaved": "Waan kaydiyay koodhadhkayga",
+  "backupCodesLeft": "{count, plural, =0{Kood kayd ah oo hadhay ma jiro} =1{{count} kood kayd ah ayaa hadhay} other{{count} kood kayd ah ayaa hadhay}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Samee koodhadh kayd ah",
+  "backupCodesMakeNew": "Samee koodhadh cusub",
+  "backupCodesReplaceTitle": "Ma la sameeyaa koodhadh kayd ah oo cusub?",
+  "backupCodesReplaceBody": "Koodhadhkaagii hore isla markiiba way joogsan doonaan.",
+  "backupCodesFileTitle": "Koodhadhka kaydka Vaultara",
+  "backupCodesEachOnce": "Kood kasta hal mar ayuu shaqeeyaa. Ku hay meel ammaan ah.",
+  "backupCodesCopied": "Koodhadhka kaydka waa la koobiyeeyay. Daqiiqad kadib ayaa laga tirtiri doonaa sabuuradda.",
+  "backupCodesNone": "Weli lama samayn",
+  "backupCodesTileHint": "Gal haddii aad lumiso taleefankaaga",
+  "backupCodeUseTitle": "Isticmaal kood kayd ah",
+  "backupCodeUseBody": "Geli mid ka mid ah koodhadhka kaydka aad kaydisay. Isticmaalkiisu wuxuu damiyaa xaqiijinta laba-tallaabo, si aad mar kale ugu dejiso taleefankaaga cusub.",
+  "backupCodeLabel": "Koodka kaydka",
+  "backupCodeFormat": "Koodhadhka kaydku waxay u eg yihiin ABCDE-FGHJK.",
+  "backupCodeWrong": "Koodkaasi ma shaqayn. Hubi oo mar kale isku day.",
+  "backupCodeBack": "Isticmaal abkayga xaqiijinta",
+  "twoStepStepOf": "Tallaabada {step} ee {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Abkaaga waxay ku muuqan doontaa Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Koodhadhku waxay is beddelaan 30 ilbiriqsi kasta. Geli kan hadda muuqda.",
+  "twoStepPaste": "Ku dheji",
+  "twoStepBackupNext": "Samee koodhadh kayd ah si aad u gali karto xitaa haddii aad lumiso taleefankan.",
+  "twoStepAppLockTitle": "Abka sidoo kale quful",
+  "twoStepAppLockBody": "Laba tallaabo ayaa ilaaliya galitaanka. Qufulka abku wuxuu weydiiyaa faraha, wejiga ama qufulka shaashadda mar kasta oo Vaultara la furo.",
+  "twoStepAppLockAction": "Daar qufulka abka",
+  "twoStepSignOutOthersBody": "Ma ku jirtaa meel aadan aqoon? Ka bax qalabyada kale.",
+  "twoStepReviewDevices": "Eeg qalabyada",
+  "twoStepSkipForNow": "Ka bood hadda",
+  "twoStepOffTitle": "Xaqiijinta laba-tallaabo waa dansan tahay",
+  "twoStepOffBody": "Waxaad ku gashay kood kayd ah, sidaas darteed xaqiijinta laba-tallaabo waa la damiyay. Mar kale ku deji taleefankan si xisaabtaadu u ahaato mid la ilaaliyo.",
+  "expiryPlusYears": "{years, plural, =1{+{years} sano} other{+{years} sano}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Qor taariikhda",
+  "expiryTypeTitle": "Qor taariikhda dhicitaanka",
+  "expiryTypeHint": "Tusaale {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Taariikhdaasi uma muuqato mid sax ah. Isku day {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Taariikhdani way dhaaftay, sidaas darteed diiwaanka waxaa loo kaydin doonaa sidii mid dhacay.",
+  "expiryEndsToday": "Kani maanta ayuu dhacayaa.",
+  "saveAndAddAnother": "Kaydi oo ku dar mid kale",
+  "quickStartTitle": "Bilow degdeg ah",
+  "categoryCreatedAddGroup": "{name} waa la sameeyay. Koox ma lagu daraa?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} waa la sameeyay. Diiwaan ma lagu daraa?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Shahaadooyin",
+  "groupIdeaLicences": "Liisamo",
+  "groupIdeaContracts": "Qandaraasyo",
+  "groupIdeaPermits": "Ruqsado",
+  "groupIdeaInsurance": "Caymis",
+  "assistantCategoryAddTitle": "Qayb cusub",
+  "assistantCategoryAddNote": "Calaamad ayaa laga doortaa magaca. Hadhow waad beddeli kartaa.",
+  "assistantCategoryRenameTitle": "Magaca qaybta beddel",
+  "assistantGroupAddTitle": "Koox cusub",
+  "assistantGroupRenameTitle": "Magaca kooxda beddel",
+  "assistantMoveTitle": "{count, plural, =1{U wareeji {count} diiwaan} other{U wareeji {count} diiwaan}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Soo celi diiwaanka",
+  "assistantRestoreNote": "Diiwaanka iyo xasuusinahiisu way soo laabanayaan.",
+  "assistantStepCategories": "Waxaa la hubinayaa qaybahaaga…",
+  "assistantStepCosts": "Waxaa la isku darayaa kharashyada cusboonaysiinta…",
+  "assistantStepVisa": "Waxaa la hubinayaa xeerarka fiisaha…"
 }

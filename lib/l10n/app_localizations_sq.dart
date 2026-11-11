@@ -8421,4 +8421,253 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kategoritë e fiksuara';
+
+  @override
+  String get notifAskTitle => 'Merrni kujtesat në kohë';
+
+  @override
+  String get notifAskBody => 'Vaultara mund t\'ju kujtojë para se diçka të skadojë vetëm nëse njoftimet lejohen. Dërgojmë vetëm kujtesa dhe sinjalizime të rëndësishme për llogarinë.';
+
+  @override
+  String get notifAskAllow => 'Lejo njoftimet';
+
+  @override
+  String get notifAskLater => 'Jo tani';
+
+  @override
+  String get signInTooManyTries => 'Shumë përpjekje. Prisni pak para se të provoni përsëri, ose rivendosni fjalëkalimin.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Provo përsëri pas $seconds sekondash',
+      one: 'Provo përsëri pas $seconds sekonde',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Kodet rezervë';
+
+  @override
+  String get backupCodesIntro => 'Nëse humbni telefonin ose aplikacionin e vërtetimit, një kod rezervë ju lejon të hyni. Çdo kod funksionon një herë.';
+
+  @override
+  String get backupCodesShownOnce => 'Këto kode shfaqen vetëm një herë. Ruajini në një vend të sigurt, larg këtij telefoni.';
+
+  @override
+  String get backupCodesCopy => 'Kopjo';
+
+  @override
+  String get backupCodesSave => 'Ruaj ose ndaj';
+
+  @override
+  String get backupCodesSaved => 'I ruajta kodet';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kanë mbetur $count kode rezervë',
+      one: 'Ka mbetur $count kod rezervë',
+      zero: 'Nuk ka mbetur asnjë kod rezervë',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Krijo kode rezervë';
+
+  @override
+  String get backupCodesMakeNew => 'Krijo kode të reja';
+
+  @override
+  String get backupCodesReplaceTitle => 'Të krijohen kode të reja rezervë?';
+
+  @override
+  String get backupCodesReplaceBody => 'Kodet e vjetra do të ndalojnë së punuari menjëherë.';
+
+  @override
+  String get backupCodesFileTitle => 'Kodet rezervë të Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Çdo kod funksionon një herë. Mbajini në një vend të sigurt.';
+
+  @override
+  String get backupCodesCopied => 'Kodet rezervë u kopjuan. Do të fshihen nga kujtesa e fragmenteve pas një minute.';
+
+  @override
+  String get backupCodesNone => 'Ende asnjë i krijuar';
+
+  @override
+  String get backupCodesTileHint => 'Hyr nëse humb telefonin';
+
+  @override
+  String get backupCodeUseTitle => 'Përdor një kod rezervë';
+
+  @override
+  String get backupCodeUseBody => 'Futni një nga kodet rezervë që keni ruajtur. Përdorimi i tij çaktivizon verifikimin me dy hapa, që ta konfiguroni sërish në telefonin e ri.';
+
+  @override
+  String get backupCodeLabel => 'Kod rezervë';
+
+  @override
+  String get backupCodeFormat => 'Kodet rezervë duken kështu: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Ai kod nuk funksionoi. Kontrollojeni dhe provoni përsëri.';
+
+  @override
+  String get backupCodeBack => 'Përdor aplikacionin tim të vërtetimit';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Hapi $step nga $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Do të shfaqet si Vaultara ($email) në aplikacionin tuaj.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodet ndryshojnë çdo 30 sekonda. Futni atë që shfaqet tani.';
+
+  @override
+  String get twoStepPaste => 'Ngjit';
+
+  @override
+  String get twoStepBackupNext => 'Krijoni kode rezervë që të mund të hyni edhe nëse e humbni këtë telefon.';
+
+  @override
+  String get twoStepAppLockTitle => 'Kyçe edhe aplikacionin';
+
+  @override
+  String get twoStepAppLockBody => 'Dy hapat mbrojnë hyrjen. Kyçja e aplikacionit kërkon gjurmën e gishtit, fytyrën ose kyçjen e ekranit sa herë hapet Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Aktivizo kyçjen e aplikacionit';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Keni hyrë diku që nuk e njihni? Dilni nga pajisjet e tjera.';
+
+  @override
+  String get twoStepReviewDevices => 'Shiko pajisjet';
+
+  @override
+  String get twoStepSkipForNow => 'Kapërce tani';
+
+  @override
+  String get twoStepOffTitle => 'Verifikimi me dy hapa është çaktivizuar';
+
+  @override
+  String get twoStepOffBody => 'Hytë me një kod rezervë, prandaj verifikimi me dy hapa u çaktivizua. Konfigurojeni sërish në këtë telefon që llogaria të mbetet e mbrojtur.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years vjet',
+      one: '+$years vit',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Shkruaj datën';
+
+  @override
+  String get expiryTypeTitle => 'Shkruani datën e skadimit';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Për shembull $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Kjo datë nuk duket e saktë. Provoni $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Kjo datë ka kaluar, prandaj regjistrimi do të ruhet si i skaduar.';
+
+  @override
+  String get expiryEndsToday => 'Skadon sot.';
+
+  @override
+  String get saveAndAddAnother => 'Ruaj dhe shto një tjetër';
+
+  @override
+  String get quickStartTitle => 'Fillim i shpejtë';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name u krijua. Të shtohet një grup?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name u krijua. Të shtohet një regjistrim?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certifikata';
+
+  @override
+  String get groupIdeaLicences => 'Licenca';
+
+  @override
+  String get groupIdeaContracts => 'Kontrata';
+
+  @override
+  String get groupIdeaPermits => 'Leje';
+
+  @override
+  String get groupIdeaInsurance => 'Sigurime';
+
+  @override
+  String get assistantCategoryAddTitle => 'Kategori e re';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikona zgjidhet sipas emrit. Mund ta ndryshoni më vonë.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Riemërto kategorinë';
+
+  @override
+  String get assistantGroupAddTitle => 'Grup i ri';
+
+  @override
+  String get assistantGroupRenameTitle => 'Riemërto grupin';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zhvendos $count regjistrime',
+      one: 'Zhvendos $count regjistrim',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Rikthe regjistrimin';
+
+  @override
+  String get assistantRestoreNote => 'Regjistrimi dhe kujtesat e tij kthehen.';
+
+  @override
+  String get assistantStepCategories => 'Po kontrollohen kategoritë tuaja…';
+
+  @override
+  String get assistantStepCosts => 'Po mblidhen kostot e rinovimit…';
+
+  @override
+  String get assistantStepVisa => 'Po kontrollohen rregullat e vizave…';
 }

@@ -3098,5 +3098,146 @@
       }
     }
   },
-  "homePinnedTitle": "หมวดหมู่ที่ปักหมุด"
+  "homePinnedTitle": "หมวดหมู่ที่ปักหมุด",
+  "notifAskTitle": "รับการแจ้งเตือนให้ทันเวลา",
+  "notifAskBody": "Vaultara จะเตือนคุณก่อนสิ่งใดหมดอายุได้ก็ต่อเมื่ออนุญาตการแจ้งเตือนเท่านั้น เราส่งเฉพาะการเตือนและการแจ้งเตือนสำคัญเกี่ยวกับบัญชีเท่านั้น",
+  "notifAskAllow": "อนุญาตการแจ้งเตือน",
+  "notifAskLater": "ไว้ทีหลัง",
+  "signInTooManyTries": "ลองหลายครั้งเกินไป โปรดรอสักครู่ก่อนลองอีกครั้ง หรือรีเซ็ตรหัสผ่าน",
+  "signInWaitSeconds": "{seconds, plural, other{ลองอีกครั้งใน {seconds} วินาที}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "รหัสสำรอง",
+  "backupCodesIntro": "หากโทรศัพท์หรือแอปยืนยันตัวตนหาย คุณจะลงชื่อเข้าใช้ได้ด้วยรหัสสำรอง แต่ละรหัสใช้ได้ครั้งเดียว",
+  "backupCodesShownOnce": "รหัสเหล่านี้จะแสดงเพียงครั้งเดียว โปรดเก็บไว้ในที่ปลอดภัย แยกจากโทรศัพท์เครื่องนี้",
+  "backupCodesCopy": "คัดลอก",
+  "backupCodesSave": "บันทึกหรือแชร์",
+  "backupCodesSaved": "บันทึกรหัสแล้ว",
+  "backupCodesLeft": "{count, plural, =0{ไม่มีรหัสสำรองเหลือ} other{เหลือรหัสสำรอง {count} รหัส}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "สร้างรหัสสำรอง",
+  "backupCodesMakeNew": "สร้างรหัสใหม่",
+  "backupCodesReplaceTitle": "สร้างรหัสสำรองใหม่ไหม",
+  "backupCodesReplaceBody": "รหัสเก่าจะใช้ไม่ได้ทันที",
+  "backupCodesFileTitle": "รหัสสำรอง Vaultara",
+  "backupCodesEachOnce": "แต่ละรหัสใช้ได้ครั้งเดียว โปรดเก็บไว้ในที่ปลอดภัย",
+  "backupCodesCopied": "คัดลอกรหัสสำรองแล้ว จะถูกล้างออกจากคลิปบอร์ดภายในหนึ่งนาที",
+  "backupCodesNone": "ยังไม่ได้สร้าง",
+  "backupCodesTileHint": "ลงชื่อเข้าใช้หากโทรศัพท์หาย",
+  "backupCodeUseTitle": "ใช้รหัสสำรอง",
+  "backupCodeUseBody": "ป้อนรหัสสำรองที่คุณบันทึกไว้หนึ่งรหัส การใช้รหัสจะปิดการยืนยันแบบสองขั้นตอน เพื่อให้คุณตั้งค่าใหม่บนโทรศัพท์เครื่องใหม่ได้",
+  "backupCodeLabel": "รหัสสำรอง",
+  "backupCodeFormat": "รหัสสำรองมีลักษณะเช่น ABCDE-FGHJK",
+  "backupCodeWrong": "รหัสนี้ใช้ไม่ได้ โปรดตรวจสอบแล้วลองอีกครั้ง",
+  "backupCodeBack": "ใช้แอปยืนยันตัวตนของฉัน",
+  "twoStepStepOf": "ขั้นตอน {step} จาก {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "จะแสดงเป็น Vaultara ({email}) ในแอปของคุณ",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "รหัสจะเปลี่ยนทุก 30 วินาที ป้อนรหัสที่แสดงอยู่ตอนนี้",
+  "twoStepPaste": "วาง",
+  "twoStepBackupNext": "สร้างรหัสสำรองเพื่อให้ลงชื่อเข้าใช้ได้แม้โทรศัพท์เครื่องนี้หาย",
+  "twoStepAppLockTitle": "ล็อกแอปด้วย",
+  "twoStepAppLockBody": "สองขั้นตอนช่วยปกป้องการลงชื่อเข้าใช้ การล็อกแอปจะขอลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอทุกครั้งที่เปิด Vaultara",
+  "twoStepAppLockAction": "เปิดการล็อกแอป",
+  "twoStepSignOutOthersBody": "ลงชื่อเข้าใช้อยู่ในที่ที่คุณไม่รู้จักใช่ไหม ออกจากระบบในอุปกรณ์อื่น",
+  "twoStepReviewDevices": "ตรวจสอบอุปกรณ์",
+  "twoStepSkipForNow": "ข้ามไปก่อน",
+  "twoStepOffTitle": "การยืนยันแบบสองขั้นตอนปิดอยู่",
+  "twoStepOffBody": "คุณลงชื่อเข้าใช้ด้วยรหัสสำรอง จึงมีการปิดการยืนยันแบบสองขั้นตอน โปรดตั้งค่าใหม่บนโทรศัพท์เครื่องนี้เพื่อปกป้องบัญชีของคุณ",
+  "expiryPlusYears": "{years, plural, other{+{years} ปี}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "พิมพ์วันที่",
+  "expiryTypeTitle": "พิมพ์วันหมดอายุ",
+  "expiryTypeHint": "ตัวอย่าง {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "วันที่นี้ดูไม่ถูกต้อง ลอง {example}",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "วันที่นี้ผ่านไปแล้ว รายการจะถูกบันทึกเป็นหมดอายุ",
+  "expiryEndsToday": "รายการนี้หมดอายุวันนี้",
+  "saveAndAddAnother": "บันทึกและเพิ่มอีกรายการ",
+  "quickStartTitle": "เริ่มต้นอย่างรวดเร็ว",
+  "categoryCreatedAddGroup": "สร้าง {name} แล้ว เพิ่มกลุ่มไหม",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "สร้าง {name} แล้ว เพิ่มรายการไหม",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "ใบรับรอง",
+  "groupIdeaLicences": "ใบอนุญาต",
+  "groupIdeaContracts": "สัญญา",
+  "groupIdeaPermits": "ใบอนุญาตพิเศษ",
+  "groupIdeaInsurance": "ประกันภัย",
+  "assistantCategoryAddTitle": "หมวดหมู่ใหม่",
+  "assistantCategoryAddNote": "ระบบจะเลือกไอคอนจากชื่อ คุณเปลี่ยนได้ภายหลัง",
+  "assistantCategoryRenameTitle": "เปลี่ยนชื่อหมวดหมู่",
+  "assistantGroupAddTitle": "กลุ่มใหม่",
+  "assistantGroupRenameTitle": "เปลี่ยนชื่อกลุ่ม",
+  "assistantMoveTitle": "{count, plural, other{ย้าย {count} รายการ}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "กู้คืนรายการ",
+  "assistantRestoreNote": "รายการและการเตือนจะกลับมา",
+  "assistantStepCategories": "กำลังตรวจสอบหมวดหมู่ของคุณ…",
+  "assistantStepCosts": "กำลังรวมค่าต่ออายุ…",
+  "assistantStepVisa": "กำลังตรวจสอบกฎวีซ่า…"
 }

@@ -3095,5 +3095,146 @@
       }
     }
   },
-  "homePinnedTitle": "Ամրացված կատեգորիաներ"
+  "homePinnedTitle": "Ամրացված կատեգորիաներ",
+  "notifAskTitle": "Ստացեք հիշեցումները ժամանակին",
+  "notifAskBody": "Vaultara-ն կարող է հիշեցնել ձեզ ինչ-որ բանի ժամկետի ավարտից առաջ միայն այն դեպքում, եթե ծանուցումները թույլատրված են։ Մենք ուղարկում ենք միայն հիշեցումներ և հաշվի կարևոր ազդանշաններ։",
+  "notifAskAllow": "Թույլատրել ծանուցումները",
+  "notifAskLater": "Ոչ հիմա",
+  "signInTooManyTries": "Չափազանց շատ փորձեր։ Մի պահ սպասեք նորից փորձելուց առաջ կամ վերակայեք գաղտնաբառը։",
+  "signInWaitSeconds": "{seconds, plural, one{Նորից փորձեք {seconds} վայրկյանից} other{Նորից փորձեք {seconds} վայրկյանից}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Պահուստային կոդեր",
+  "backupCodesIntro": "Եթե կորցնեք հեռախոսը կամ նույնականացման հավելվածը, պահուստային կոդը թույլ կտա մուտք գործել։ Յուրաքանչյուր կոդ աշխատում է մեկ անգամ։",
+  "backupCodesShownOnce": "Այս կոդերը ցուցադրվում են միայն մեկ անգամ։ Պահեք դրանք ապահով տեղում՝ այս հեռախոսից հեռու։",
+  "backupCodesCopy": "Պատճենել",
+  "backupCodesSave": "Պահել կամ կիսվել",
+  "backupCodesSaved": "Ես պահել եմ կոդերս",
+  "backupCodesLeft": "{count, plural, =0{Պահուստային կոդեր չեն մնացել} one{Մնացել է {count} պահուստային կոդ} other{Մնացել է {count} պահուստային կոդ}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Ստեղծել պահուստային կոդեր",
+  "backupCodesMakeNew": "Ստեղծել նոր կոդեր",
+  "backupCodesReplaceTitle": "Ստեղծե՞լ նոր պահուստային կոդեր",
+  "backupCodesReplaceBody": "Ձեր հին կոդերն անմիջապես կդադարեն աշխատել։",
+  "backupCodesFileTitle": "Vaultara-ի պահուստային կոդեր",
+  "backupCodesEachOnce": "Յուրաքանչյուր կոդ աշխատում է մեկ անգամ։ Պահեք դրանք ապահով տեղում։",
+  "backupCodesCopied": "Պահուստային կոդերը պատճենվեցին։ Մեկ րոպեից դրանք կջնջվեն սեղմատախտակից։",
+  "backupCodesNone": "Դեռ չեն ստեղծվել",
+  "backupCodesTileHint": "Մուտք գործեք, եթե կորցնեք հեռախոսը",
+  "backupCodeUseTitle": "Օգտագործել պահուստային կոդ",
+  "backupCodeUseBody": "Մուտքագրեք ձեր պահած պահուստային կոդերից մեկը։ Դրա օգտագործումն անջատում է երկքայլ հաստատումը, որպեսզի այն նորից կարգավորեք նոր հեռախոսում։",
+  "backupCodeLabel": "Պահուստային կոդ",
+  "backupCodeFormat": "Պահուստային կոդերն այսպիսին են՝ ABCDE-FGHJK։",
+  "backupCodeWrong": "Այդ կոդը չաշխատեց։ Ստուգեք և նորից փորձեք։",
+  "backupCodeBack": "Օգտագործել նույնականացման հավելվածս",
+  "twoStepStepOf": "Քայլ {step}՝ {total}-ից",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Ձեր հավելվածում այն կցուցադրվի որպես Vaultara ({email})։",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Կոդերը փոխվում են յուրաքանչյուր 30 վայրկյանը մեկ։ Մուտքագրեք հիմա ցուցադրվողը։",
+  "twoStepPaste": "Տեղադրել",
+  "twoStepBackupNext": "Ստեղծեք պահուստային կոդեր, որպեսզի կարողանաք մուտք գործել նույնիսկ այս հեռախոսը կորցնելու դեպքում։",
+  "twoStepAppLockTitle": "Կողպեք նաև հավելվածը",
+  "twoStepAppLockBody": "Երկքայլ հաստատումը պաշտպանում է մուտքը։ Հավելվածի կողպեքը Vaultara-ն ամեն անգամ բացելիս խնդրում է մատնահետք, դեմք կամ էկրանի կողպեք։",
+  "twoStepAppLockAction": "Միացնել հավելվածի կողպեքը",
+  "twoStepSignOutOthersBody": "Մուտք եք գործել մի տեղ, որը չեք ճանաչում։ Դուրս եկեք այլ սարքերից։",
+  "twoStepReviewDevices": "Դիտել սարքերը",
+  "twoStepSkipForNow": "Բաց թողնել հիմա",
+  "twoStepOffTitle": "Երկքայլ հաստատումն անջատված է",
+  "twoStepOffBody": "Դուք մուտք եք գործել պահուստային կոդով, ուստի երկքայլ հաստատումն անջատվել է։ Նորից կարգավորեք այն այս հեռախոսում՝ հաշիվը պաշտպանված պահելու համար։",
+  "expiryPlusYears": "{years, plural, one{+{years} տարի} other{+{years} տարի}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Գրել ամսաթիվը",
+  "expiryTypeTitle": "Գրեք ժամկետի ավարտի ամսաթիվը",
+  "expiryTypeHint": "Օրինակ՝ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Այդ ամսաթիվը ճիշտ չի թվում։ Փորձեք {example}։",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Այս ամսաթիվն անցել է, ուստի գրառումը կպահվի որպես ժամկետանց։",
+  "expiryEndsToday": "Այն լրանում է այսօր։",
+  "saveAndAddAnother": "Պահել և ավելացնել ևս մեկը",
+  "quickStartTitle": "Արագ սկիզբ",
+  "categoryCreatedAddGroup": "{name}-ը ստեղծվեց։ Ավելացնե՞լ խումբ։",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name}-ը ստեղծվեց։ Ավելացնե՞լ գրառում։",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Վկայականներ",
+  "groupIdeaLicences": "Լիցենզիաներ",
+  "groupIdeaContracts": "Պայմանագրեր",
+  "groupIdeaPermits": "Թույլտվություններ",
+  "groupIdeaInsurance": "Ապահովագրություն",
+  "assistantCategoryAddTitle": "Նոր կատեգորիա",
+  "assistantCategoryAddNote": "Պատկերակն ընտրվում է անունից։ Կարող եք հետո փոխել։",
+  "assistantCategoryRenameTitle": "Վերանվանել կատեգորիան",
+  "assistantGroupAddTitle": "Նոր խումբ",
+  "assistantGroupRenameTitle": "Վերանվանել խումբը",
+  "assistantMoveTitle": "{count, plural, one{Տեղափոխել {count} գրառում} other{Տեղափոխել {count} գրառում}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Վերականգնել գրառումը",
+  "assistantRestoreNote": "Գրառումը և դրա հիշեցումները վերադառնում են։",
+  "assistantStepCategories": "Ստուգում ենք ձեր կատեգորիաները…",
+  "assistantStepCosts": "Հաշվում ենք թարմացման ծախսերը…",
+  "assistantStepVisa": "Ստուգում ենք վիզայի կանոնները…"
 }

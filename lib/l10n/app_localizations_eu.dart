@@ -8421,4 +8421,253 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Ainguratutako kategoriak';
+
+  @override
+  String get notifAskTitle => 'Jaso oroigarriak garaiz';
+
+  @override
+  String get notifAskBody => 'Jakinarazpenak baimenduta badaude soilik abisa zaitzake Vaultarak zerbait iraungi aurretik. Oroigarriak eta kontuko alerta garrantzitsuak soilik bidaltzen ditugu.';
+
+  @override
+  String get notifAskAllow => 'Baimendu jakinarazpenak';
+
+  @override
+  String get notifAskLater => 'Orain ez';
+
+  @override
+  String get signInTooManyTries => 'Saiakera gehiegi. Itxaron pixka bat berriro saiatu aurretik, edo berrezarri pasahitza.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Saiatu berriro $seconds segundo barru',
+      one: 'Saiatu berriro $seconds segundo barru',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Babeskopia-kodeak';
+
+  @override
+  String get backupCodesIntro => 'Telefonoa edo autentifikazio-aplikazioa galtzen baduzu, babeskopia-kode batekin has dezakezu saioa. Kode bakoitzak behin balio du.';
+
+  @override
+  String get backupCodesShownOnce => 'Kode hauek behin bakarrik erakusten dira. Gorde leku seguru batean, telefono honetatik urrun.';
+
+  @override
+  String get backupCodesCopy => 'Kopiatu';
+
+  @override
+  String get backupCodesSave => 'Gorde edo partekatu';
+
+  @override
+  String get backupCodesSaved => 'Kodeak gorde ditut';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count babeskopia-kode geratzen dira',
+      one: '$count babeskopia-kode geratzen da',
+      zero: 'Ez da babeskopia-koderik geratzen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Sortu babeskopia-kodeak';
+
+  @override
+  String get backupCodesMakeNew => 'Sortu kode berriak';
+
+  @override
+  String get backupCodesReplaceTitle => 'Babeskopia-kode berriak sortu?';
+
+  @override
+  String get backupCodesReplaceBody => 'Kode zaharrek berehala utziko diote funtzionatzeari.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara babeskopia-kodeak';
+
+  @override
+  String get backupCodesEachOnce => 'Kode bakoitzak behin balio du. Gorde leku seguru batean.';
+
+  @override
+  String get backupCodesCopied => 'Kodeak kopiatu dira. Minutu batean ezabatuko dira arbeletik.';
+
+  @override
+  String get backupCodesNone => 'Oraindik ez da sortu';
+
+  @override
+  String get backupCodesTileHint => 'Hasi saioa telefonoa galtzen baduzu';
+
+  @override
+  String get backupCodeUseTitle => 'Erabili babeskopia-kode bat';
+
+  @override
+  String get backupCodeUseBody => 'Idatzi gorde dituzun babeskopia-kodeetako bat. Bat erabiltzean bi urratseko egiaztapena desaktibatzen da, telefono berrian berriro konfigura dezazun.';
+
+  @override
+  String get backupCodeLabel => 'Babeskopia-kodea';
+
+  @override
+  String get backupCodeFormat => 'Babeskopia-kodeek itxura hau dute: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Kode horrek ez du funtzionatu. Egiaztatu eta saiatu berriro.';
+
+  @override
+  String get backupCodeBack => 'Erabili nire autentifikazio-aplikazioa';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$step/$total. urratsa';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Zure aplikazioan Vaultara ($email) gisa agertuko da.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodeak 30 segundoz behin aldatzen dira. Idatzi orain ageri dena.';
+
+  @override
+  String get twoStepPaste => 'Itsatsi';
+
+  @override
+  String get twoStepBackupNext => 'Sortu babeskopia-kodeak telefono hau galduta ere saioa hasi ahal izateko.';
+
+  @override
+  String get twoStepAppLockTitle => 'Blokeatu aplikazioa ere';
+
+  @override
+  String get twoStepAppLockBody => 'Bi urratsek saio-hasiera babesten dute. Aplikazioaren blokeoak hatz-marka, aurpegia edo pantailaren blokeoa eskatzen du Vaultara irekitzen den bakoitzean.';
+
+  @override
+  String get twoStepAppLockAction => 'Aktibatu aplikazioaren blokeoa';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ezagutzen ez duzun leku batean hasi da saioa? Amaitu saioa beste gailuetan.';
+
+  @override
+  String get twoStepReviewDevices => 'Berrikusi gailuak';
+
+  @override
+  String get twoStepSkipForNow => 'Saltatu oraingoz';
+
+  @override
+  String get twoStepOffTitle => 'Bi urratseko egiaztapena desaktibatuta dago';
+
+  @override
+  String get twoStepOffBody => 'Babeskopia-kode batekin hasi duzu saioa; beraz, bi urratseko egiaztapena desaktibatu da. Konfiguratu berriro telefono honetan kontua babestuta mantentzeko.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years urte',
+      one: '+$years urte',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Idatzi data';
+
+  @override
+  String get expiryTypeTitle => 'Idatzi iraungitze-data';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Adibidez $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Data hori ez dirudi zuzena. Probatu $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Data hori igaro da; beraz, erregistroa iraungita gisa gordeko da.';
+
+  @override
+  String get expiryEndsToday => 'Gaur iraungitzen da.';
+
+  @override
+  String get saveAndAddAnother => 'Gorde eta gehitu beste bat';
+
+  @override
+  String get quickStartTitle => 'Hasiera azkarra';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name sortu da. Talde bat gehitu nahi diozu?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name sortu da. Erregistro bat gehitu nahi diozu?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Ziurtagiriak';
+
+  @override
+  String get groupIdeaLicences => 'Lizentziak';
+
+  @override
+  String get groupIdeaContracts => 'Kontratuak';
+
+  @override
+  String get groupIdeaPermits => 'Baimenak';
+
+  @override
+  String get groupIdeaInsurance => 'Aseguruak';
+
+  @override
+  String get assistantCategoryAddTitle => 'Kategoria berria';
+
+  @override
+  String get assistantCategoryAddNote => 'Izenaren arabera aukeratzen da ikonoa. Geroago alda dezakezu.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Aldatu kategoriaren izena';
+
+  @override
+  String get assistantGroupAddTitle => 'Talde berria';
+
+  @override
+  String get assistantGroupRenameTitle => 'Aldatu taldearen izena';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Eraman $count erregistro',
+      one: 'Eraman $count erregistro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Leheneratu erregistroa';
+
+  @override
+  String get assistantRestoreNote => 'Erregistroa eta haren oroigarriak itzultzen dira.';
+
+  @override
+  String get assistantStepCategories => 'Zure kategoriak egiaztatzen…';
+
+  @override
+  String get assistantStepCosts => 'Berritze-kostuak batzen…';
+
+  @override
+  String get assistantStepVisa => 'Bisa-arauak egiaztatzen…';
 }

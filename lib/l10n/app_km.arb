@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "ប្រភេទដែលបានខ្ទាស់"
+  "homePinnedTitle": "ប្រភេទដែលបានខ្ទាស់",
+  "notifAskTitle": "ទទួលការរំលឹករបស់អ្នកទាន់ពេល",
+  "notifAskBody": "Vaultara អាចរំលឹកអ្នកមុនពេលអ្វីមួយផុតកំណត់បាន លុះត្រាតែការជូនដំណឹងត្រូវបានអនុញ្ញាត។ យើងផ្ញើតែការរំលឹក និងការជូនដំណឹងគណនីសំខាន់ៗប៉ុណ្ណោះ។",
+  "notifAskAllow": "អនុញ្ញាតការជូនដំណឹង",
+  "notifAskLater": "មិនមែនឥឡូវនេះ",
+  "signInTooManyTries": "ការព្យាយាមច្រើនពេក។ សូមរង់ចាំបន្តិចមុនពេលព្យាយាមម្តងទៀត ឬកំណត់ពាក្យសម្ងាត់ឡើងវិញ។",
+  "signInWaitSeconds": "{seconds, plural, other{សូមព្យាយាមម្តងទៀតក្នុងរយៈពេល {seconds} វិនាទី}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "កូដបម្រុង",
+  "backupCodesIntro": "ប្រសិនបើអ្នកបាត់ទូរសព្ទ ឬកម្មវិធីផ្ទៀងផ្ទាត់ កូដបម្រុងអនុញ្ញាតឱ្យអ្នកចូលបាន។ កូដនីមួយៗប្រើបានតែម្តង។",
+  "backupCodesShownOnce": "កូដទាំងនេះបង្ហាញតែម្តងប៉ុណ្ណោះ។ សូមរក្សាទុកនៅកន្លែងមានសុវត្ថិភាព ឆ្ងាយពីទូរសព្ទនេះ។",
+  "backupCodesCopy": "ចម្លង",
+  "backupCodesSave": "រក្សាទុក ឬចែករំលែក",
+  "backupCodesSaved": "ខ្ញុំបានរក្សាទុកកូដរបស់ខ្ញុំហើយ",
+  "backupCodesLeft": "{count, plural, =0{គ្មានកូដបម្រុងនៅសល់ទេ} other{នៅសល់កូដបម្រុង {count}}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "បង្កើតកូដបម្រុង",
+  "backupCodesMakeNew": "បង្កើតកូដថ្មី",
+  "backupCodesReplaceTitle": "បង្កើតកូដបម្រុងថ្មីឬ?",
+  "backupCodesReplaceBody": "កូដចាស់របស់អ្នកនឹងឈប់ដំណើរការភ្លាមៗ។",
+  "backupCodesFileTitle": "កូដបម្រុង Vaultara",
+  "backupCodesEachOnce": "កូដនីមួយៗប្រើបានតែម្តង។ សូមរក្សាទុកនៅកន្លែងមានសុវត្ថិភាព។",
+  "backupCodesCopied": "បានចម្លងកូដបម្រុង។ វានឹងត្រូវលុបចេញពីក្ដារតម្បៀតខ្ទាស់ក្នុងមួយនាទី។",
+  "backupCodesNone": "មិនទាន់បានបង្កើតនៅឡើយ",
+  "backupCodesTileHint": "ចូលប្រសិនបើអ្នកបាត់ទូរសព្ទ",
+  "backupCodeUseTitle": "ប្រើកូដបម្រុង",
+  "backupCodeUseBody": "បញ្ចូលកូដបម្រុងមួយដែលអ្នកបានរក្សាទុក។ ការប្រើវានឹងបិទការផ្ទៀងផ្ទាត់ពីរជំហាន ដើម្បីឱ្យអ្នកអាចរៀបចំវាឡើងវិញនៅលើទូរសព្ទថ្មី។",
+  "backupCodeLabel": "កូដបម្រុង",
+  "backupCodeFormat": "កូដបម្រុងមើលទៅដូចជា ABCDE-FGHJK។",
+  "backupCodeWrong": "កូដនោះមិនដំណើរការទេ។ សូមពិនិត្យ ហើយព្យាយាមម្តងទៀត។",
+  "backupCodeBack": "ប្រើកម្មវិធីផ្ទៀងផ្ទាត់របស់ខ្ញុំ",
+  "twoStepStepOf": "ជំហាន {step} នៃ {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "វានឹងបង្ហាញជា Vaultara ({email}) នៅក្នុងកម្មវិធីរបស់អ្នក។",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "កូដប្តូររៀងរាល់ 30 វិនាទី។ សូមបញ្ចូលកូដដែលកំពុងបង្ហាញឥឡូវនេះ។",
+  "twoStepPaste": "បិទភ្ជាប់",
+  "twoStepBackupNext": "បង្កើតកូដបម្រុង ដើម្បីអាចចូលបាន ទោះបីអ្នកបាត់ទូរសព្ទនេះក៏ដោយ។",
+  "twoStepAppLockTitle": "ចាក់សោកម្មវិធីផងដែរ",
+  "twoStepAppLockBody": "ពីរជំហានការពារការចូល។ សោកម្មវិធីសុំស្នាមម្រាមដៃ មុខ ឬសោអេក្រង់ រាល់ពេលបើក Vaultara។",
+  "twoStepAppLockAction": "បើកសោកម្មវិធី",
+  "twoStepSignOutOthersBody": "បានចូលនៅកន្លែងដែលអ្នកមិនស្គាល់ឬ? ចាកចេញពីឧបករណ៍ផ្សេងទៀត។",
+  "twoStepReviewDevices": "ពិនិត្យឧបករណ៍",
+  "twoStepSkipForNow": "រំលងសិន",
+  "twoStepOffTitle": "ការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ",
+  "twoStepOffBody": "អ្នកបានចូលដោយកូដបម្រុង ដូច្នេះការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ។ សូមរៀបចំវាឡើងវិញនៅលើទូរសព្ទនេះ ដើម្បីការពារគណនីរបស់អ្នក។",
+  "expiryPlusYears": "{years, plural, other{+{years} ឆ្នាំ}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "វាយកាលបរិច្ឆេទ",
+  "expiryTypeTitle": "វាយកាលបរិច្ឆេទផុតកំណត់",
+  "expiryTypeHint": "ឧទាហរណ៍ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "កាលបរិច្ឆេទនោះមើលទៅមិនត្រឹមត្រូវ។ សាកល្បង {example}។",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "កាលបរិច្ឆេទនេះបានកន្លងផុតហើយ ដូច្នេះកំណត់ត្រានឹងត្រូវរក្សាទុកថាផុតកំណត់។",
+  "expiryEndsToday": "វាផុតកំណត់ថ្ងៃនេះ។",
+  "saveAndAddAnother": "រក្សាទុក ហើយបន្ថែមមួយទៀត",
+  "quickStartTitle": "ចាប់ផ្តើមរហ័ស",
+  "categoryCreatedAddGroup": "បានបង្កើត {name}។ បន្ថែមក្រុមទៅវាឬ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "បានបង្កើត {name}។ បន្ថែមកំណត់ត្រាទៅវាឬ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "វិញ្ញាបនបត្រ",
+  "groupIdeaLicences": "អាជ្ញាប័ណ្ណ",
+  "groupIdeaContracts": "កិច្ចសន្យា",
+  "groupIdeaPermits": "លិខិតអនុញ្ញាត",
+  "groupIdeaInsurance": "ធានារ៉ាប់រង",
+  "assistantCategoryAddTitle": "ប្រភេទថ្មី",
+  "assistantCategoryAddNote": "រូបតំណាងត្រូវបានជ្រើសពីឈ្មោះ។ អ្នកអាចប្តូរវានៅពេលក្រោយ។",
+  "assistantCategoryRenameTitle": "ប្តូរឈ្មោះប្រភេទ",
+  "assistantGroupAddTitle": "ក្រុមថ្មី",
+  "assistantGroupRenameTitle": "ប្តូរឈ្មោះក្រុម",
+  "assistantMoveTitle": "{count, plural, other{ផ្លាស់ទីកំណត់ត្រា {count}}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ស្ដារកំណត់ត្រា",
+  "assistantRestoreNote": "កំណត់ត្រា និងការរំលឹករបស់វាត្រឡប់មកវិញ។",
+  "assistantStepCategories": "កំពុងពិនិត្យប្រភេទរបស់អ្នក…",
+  "assistantStepCosts": "កំពុងបូកថ្លៃបន្ត…",
+  "assistantStepVisa": "កំពុងពិនិត្យច្បាប់ទិដ្ឋាការ…"
 }

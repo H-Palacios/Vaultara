@@ -3086,5 +3086,146 @@
       }
     }
   },
-  "homePinnedTitle": "קטגוריות מוצמדות"
+  "homePinnedTitle": "קטגוריות מוצמדות",
+  "notifAskTitle": "קבלו את התזכורות בזמן",
+  "notifAskBody": "Vaultara יכולה להזכיר לכם לפני שמשהו פג תוקף רק אם ההתראות מותרות. אנחנו שולחים רק תזכורות והתראות חשובות על החשבון.",
+  "notifAskAllow": "לאפשר התראות",
+  "notifAskLater": "לא עכשיו",
+  "signInTooManyTries": "יותר מדי ניסיונות. המתינו רגע לפני שתנסו שוב, או אפסו את הסיסמה.",
+  "signInWaitSeconds": "{seconds, plural, =1{נסו שוב בעוד שנייה {seconds}} two{נסו שוב בעוד {seconds} שניות} other{נסו שוב בעוד {seconds} שניות}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "קודי גיבוי",
+  "backupCodesIntro": "אם תאבדו את הטלפון או את אפליקציית האימות, קוד גיבוי יאפשר לכם להתחבר. כל קוד עובד פעם אחת.",
+  "backupCodesShownOnce": "הקודים האלה מוצגים פעם אחת בלבד. שמרו אותם במקום בטוח, הרחק מהטלפון הזה.",
+  "backupCodesCopy": "העתקה",
+  "backupCodesSave": "שמירה או שיתוף",
+  "backupCodesSaved": "שמרתי את הקודים",
+  "backupCodesLeft": "{count, plural, =0{לא נותרו קודי גיבוי} =1{נותר קוד גיבוי {count}} two{נותרו {count} קודי גיבוי} other{נותרו {count} קודי גיבוי}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "יצירת קודי גיבוי",
+  "backupCodesMakeNew": "יצירת קודים חדשים",
+  "backupCodesReplaceTitle": "ליצור קודי גיבוי חדשים?",
+  "backupCodesReplaceBody": "הקודים הישנים יפסיקו לעבוד מיד.",
+  "backupCodesFileTitle": "קודי גיבוי של Vaultara",
+  "backupCodesEachOnce": "כל קוד עובד פעם אחת. שמרו אותם במקום בטוח.",
+  "backupCodesCopied": "קודי הגיבוי הועתקו. הם יימחקו מהלוח בעוד דקה.",
+  "backupCodesNone": "עדיין לא נוצרו",
+  "backupCodesTileHint": "התחברות אם תאבדו את הטלפון",
+  "backupCodeUseTitle": "שימוש בקוד גיבוי",
+  "backupCodeUseBody": "הזינו אחד מקודי הגיבוי ששמרתם. שימוש בקוד מכבה את האימות הדו-שלבי, כדי שתוכלו להגדיר אותו מחדש בטלפון החדש.",
+  "backupCodeLabel": "קוד גיבוי",
+  "backupCodeFormat": "קודי גיבוי נראים כך: ABCDE-FGHJK.",
+  "backupCodeWrong": "הקוד לא עבד. בדקו אותו ונסו שוב.",
+  "backupCodeBack": "שימוש באפליקציית האימות שלי",
+  "twoStepStepOf": "שלב {step} מתוך {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "הוא יופיע באפליקציה בשם Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "הקודים מתחלפים כל 30 שניות. הזינו את הקוד שמוצג עכשיו.",
+  "twoStepPaste": "הדבקה",
+  "twoStepBackupNext": "צרו קודי גיבוי כדי שתוכלו להתחבר גם אם תאבדו את הטלפון הזה.",
+  "twoStepAppLockTitle": "נעלו גם את האפליקציה",
+  "twoStepAppLockBody": "האימות הדו-שלבי מגן על ההתחברות. נעילת האפליקציה מבקשת טביעת אצבע, פנים או נעילת מסך בכל פעם ש-Vaultara נפתחת.",
+  "twoStepAppLockAction": "הפעלת נעילת האפליקציה",
+  "twoStepSignOutOthersBody": "מחוברים במקום שאתם לא מזהים? התנתקו ממכשירים אחרים.",
+  "twoStepReviewDevices": "בדיקת מכשירים",
+  "twoStepSkipForNow": "דילוג לעכשיו",
+  "twoStepOffTitle": "האימות הדו-שלבי כבוי",
+  "twoStepOffBody": "התחברתם עם קוד גיבוי, ולכן האימות הדו-שלבי כובה. הגדירו אותו מחדש בטלפון הזה כדי שהחשבון יישאר מוגן.",
+  "expiryPlusYears": "{years, plural, =1{+שנה {years}} two{+{years} שנים} other{+{years} שנים}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "הקלדת תאריך",
+  "expiryTypeTitle": "הקלידו את תאריך התפוגה",
+  "expiryTypeHint": "לדוגמה {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "התאריך לא נראה תקין. נסו {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "התאריך הזה עבר, ולכן הרשומה תישמר כפגת תוקף.",
+  "expiryEndsToday": "התוקף פג היום.",
+  "saveAndAddAnother": "שמירה והוספת עוד אחת",
+  "quickStartTitle": "התחלה מהירה",
+  "categoryCreatedAddGroup": "{name} נוצרה. להוסיף לה קבוצה?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} נוצרה. להוסיף לה רשומה?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "תעודות",
+  "groupIdeaLicences": "רישיונות",
+  "groupIdeaContracts": "חוזים",
+  "groupIdeaPermits": "היתרים",
+  "groupIdeaInsurance": "ביטוח",
+  "assistantCategoryAddTitle": "קטגוריה חדשה",
+  "assistantCategoryAddNote": "סמל נבחר לפי השם. אפשר לשנות אותו אחר כך.",
+  "assistantCategoryRenameTitle": "שינוי שם הקטגוריה",
+  "assistantGroupAddTitle": "קבוצה חדשה",
+  "assistantGroupRenameTitle": "שינוי שם הקבוצה",
+  "assistantMoveTitle": "{count, plural, =1{העברת רשומה {count}} two{העברת {count} רשומות} other{העברת {count} רשומות}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "שחזור הרשומה",
+  "assistantRestoreNote": "הרשומה והתזכורות שלה חוזרות.",
+  "assistantStepCategories": "בודקים את הקטגוריות שלכם…",
+  "assistantStepCosts": "מחשבים את עלויות החידוש…",
+  "assistantStepVisa": "בודקים את כללי הוויזה…"
 }

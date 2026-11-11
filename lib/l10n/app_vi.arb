@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Danh mục đã ghim"
+  "homePinnedTitle": "Danh mục đã ghim",
+  "notifAskTitle": "Nhận lời nhắc đúng lúc",
+  "notifAskBody": "Vaultara chỉ có thể nhắc bạn trước khi một thứ hết hạn nếu thông báo được cho phép. Chúng tôi chỉ gửi lời nhắc và cảnh báo quan trọng về tài khoản.",
+  "notifAskAllow": "Cho phép thông báo",
+  "notifAskLater": "Để sau",
+  "signInTooManyTries": "Quá nhiều lần thử. Hãy đợi một lát trước khi thử lại, hoặc đặt lại mật khẩu.",
+  "signInWaitSeconds": "{seconds, plural, other{Thử lại sau {seconds} giây}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Mã dự phòng",
+  "backupCodesIntro": "Nếu bạn mất điện thoại hoặc ứng dụng xác thực, mã dự phòng cho phép bạn đăng nhập. Mỗi mã chỉ dùng được một lần.",
+  "backupCodesShownOnce": "Các mã này chỉ hiển thị một lần. Hãy lưu chúng ở nơi an toàn, tách biệt với điện thoại này.",
+  "backupCodesCopy": "Sao chép",
+  "backupCodesSave": "Lưu hoặc chia sẻ",
+  "backupCodesSaved": "Tôi đã lưu mã",
+  "backupCodesLeft": "{count, plural, =0{Không còn mã dự phòng nào} other{Còn {count} mã dự phòng}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Tạo mã dự phòng",
+  "backupCodesMakeNew": "Tạo mã mới",
+  "backupCodesReplaceTitle": "Tạo mã dự phòng mới?",
+  "backupCodesReplaceBody": "Các mã cũ sẽ ngừng hoạt động ngay lập tức.",
+  "backupCodesFileTitle": "Mã dự phòng Vaultara",
+  "backupCodesEachOnce": "Mỗi mã chỉ dùng được một lần. Hãy cất giữ ở nơi an toàn.",
+  "backupCodesCopied": "Đã sao chép mã dự phòng. Mã sẽ bị xóa khỏi bộ nhớ tạm sau một phút.",
+  "backupCodesNone": "Chưa tạo mã nào",
+  "backupCodesTileHint": "Đăng nhập nếu bạn mất điện thoại",
+  "backupCodeUseTitle": "Dùng mã dự phòng",
+  "backupCodeUseBody": "Nhập một trong các mã dự phòng bạn đã lưu. Dùng mã sẽ tắt xác minh hai bước để bạn có thể thiết lập lại trên điện thoại mới.",
+  "backupCodeLabel": "Mã dự phòng",
+  "backupCodeFormat": "Mã dự phòng có dạng ABCDE-FGHJK.",
+  "backupCodeWrong": "Mã đó không dùng được. Hãy kiểm tra và thử lại.",
+  "backupCodeBack": "Dùng ứng dụng xác thực của tôi",
+  "twoStepStepOf": "Bước {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Mục này sẽ hiển thị là Vaultara ({email}) trong ứng dụng của bạn.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Mã thay đổi sau mỗi 30 giây. Nhập mã đang hiển thị.",
+  "twoStepPaste": "Dán",
+  "twoStepBackupNext": "Hãy tạo mã dự phòng để vẫn đăng nhập được nếu bạn mất điện thoại này.",
+  "twoStepAppLockTitle": "Khóa cả ứng dụng",
+  "twoStepAppLockBody": "Hai bước bảo vệ việc đăng nhập. Khóa ứng dụng sẽ yêu cầu vân tay, khuôn mặt hoặc khóa màn hình mỗi khi mở Vaultara.",
+  "twoStepAppLockAction": "Bật khóa ứng dụng",
+  "twoStepSignOutOthersBody": "Đang đăng nhập ở nơi bạn không nhận ra? Hãy đăng xuất khỏi các thiết bị khác.",
+  "twoStepReviewDevices": "Xem lại thiết bị",
+  "twoStepSkipForNow": "Bỏ qua lúc này",
+  "twoStepOffTitle": "Xác minh hai bước đang tắt",
+  "twoStepOffBody": "Bạn đã đăng nhập bằng mã dự phòng nên xác minh hai bước đã bị tắt. Hãy thiết lập lại trên điện thoại này để bảo vệ tài khoản.",
+  "expiryPlusYears": "{years, plural, other{+{years} năm}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Nhập ngày",
+  "expiryTypeTitle": "Nhập ngày hết hạn",
+  "expiryTypeHint": "Ví dụ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ngày đó có vẻ không đúng. Hãy thử {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ngày này đã qua nên mục sẽ được lưu là đã hết hạn.",
+  "expiryEndsToday": "Mục này hết hạn hôm nay.",
+  "saveAndAddAnother": "Lưu và thêm mục khác",
+  "quickStartTitle": "Bắt đầu nhanh",
+  "categoryCreatedAddGroup": "Đã tạo {name}. Thêm nhóm vào đó?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Đã tạo {name}. Thêm mục vào đó?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Chứng chỉ",
+  "groupIdeaLicences": "Giấy phép",
+  "groupIdeaContracts": "Hợp đồng",
+  "groupIdeaPermits": "Giấy phép đặc biệt",
+  "groupIdeaInsurance": "Bảo hiểm",
+  "assistantCategoryAddTitle": "Danh mục mới",
+  "assistantCategoryAddNote": "Biểu tượng được chọn theo tên. Bạn có thể đổi sau.",
+  "assistantCategoryRenameTitle": "Đổi tên danh mục",
+  "assistantGroupAddTitle": "Nhóm mới",
+  "assistantGroupRenameTitle": "Đổi tên nhóm",
+  "assistantMoveTitle": "{count, plural, other{Di chuyển {count} mục}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Khôi phục mục",
+  "assistantRestoreNote": "Mục và các lời nhắc của nó sẽ quay lại.",
+  "assistantStepCategories": "Đang kiểm tra danh mục của bạn…",
+  "assistantStepCosts": "Đang cộng chi phí gia hạn…",
+  "assistantStepVisa": "Đang kiểm tra quy định thị thực…"
 }

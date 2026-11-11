@@ -8357,4 +8357,249 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get homePinnedTitle => '고정된 카테고리';
+
+  @override
+  String get notifAskTitle => '알림을 제때 받으세요';
+
+  @override
+  String get notifAskBody => '알림이 허용되어 있어야 Vaultara가 만료 전에 알려 드릴 수 있습니다. 알림과 중요한 계정 경고만 보냅니다.';
+
+  @override
+  String get notifAskAllow => '알림 허용';
+
+  @override
+  String get notifAskLater => '나중에';
+
+  @override
+  String get signInTooManyTries => '시도 횟수가 너무 많습니다. 잠시 후 다시 시도하거나 비밀번호를 재설정하세요.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds초 후 다시 시도하세요',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => '백업 코드';
+
+  @override
+  String get backupCodesIntro => '휴대전화나 인증 앱을 잃어버린 경우 백업 코드로 로그인할 수 있습니다. 각 코드는 한 번만 사용할 수 있습니다.';
+
+  @override
+  String get backupCodesShownOnce => '이 코드는 한 번만 표시됩니다. 이 휴대전화가 아닌 안전한 곳에 저장하세요.';
+
+  @override
+  String get backupCodesCopy => '복사';
+
+  @override
+  String get backupCodesSave => '저장 또는 공유';
+
+  @override
+  String get backupCodesSaved => '코드를 저장했습니다';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '백업 코드 $count개 남음',
+      zero: '남은 백업 코드 없음',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => '백업 코드 만들기';
+
+  @override
+  String get backupCodesMakeNew => '새 코드 만들기';
+
+  @override
+  String get backupCodesReplaceTitle => '새 백업 코드를 만드시겠습니까?';
+
+  @override
+  String get backupCodesReplaceBody => '이전 코드는 즉시 사용할 수 없게 됩니다.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara 백업 코드';
+
+  @override
+  String get backupCodesEachOnce => '각 코드는 한 번만 사용할 수 있습니다. 안전한 곳에 보관하세요.';
+
+  @override
+  String get backupCodesCopied => '백업 코드를 복사했습니다. 1분 후 클립보드에서 지워집니다.';
+
+  @override
+  String get backupCodesNone => '아직 만들지 않음';
+
+  @override
+  String get backupCodesTileHint => '휴대전화를 잃어버렸을 때 로그인';
+
+  @override
+  String get backupCodeUseTitle => '백업 코드 사용';
+
+  @override
+  String get backupCodeUseBody => '저장한 백업 코드 중 하나를 입력하세요. 코드를 사용하면 2단계 인증이 꺼지므로 새 휴대전화에서 다시 설정할 수 있습니다.';
+
+  @override
+  String get backupCodeLabel => '백업 코드';
+
+  @override
+  String get backupCodeFormat => '백업 코드는 ABCDE-FGHJK 형식입니다.';
+
+  @override
+  String get backupCodeWrong => '코드가 작동하지 않았습니다. 확인 후 다시 시도하세요.';
+
+  @override
+  String get backupCodeBack => '인증 앱 사용';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$total단계 중 $step단계';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return '앱에 Vaultara ($email)(으)로 표시됩니다.';
+  }
+
+  @override
+  String get twoStepCodesChange => '코드는 30초마다 바뀝니다. 지금 표시된 코드를 입력하세요.';
+
+  @override
+  String get twoStepPaste => '붙여넣기';
+
+  @override
+  String get twoStepBackupNext => '이 휴대전화를 잃어버려도 로그인할 수 있도록 백업 코드를 만드세요.';
+
+  @override
+  String get twoStepAppLockTitle => '앱도 잠그기';
+
+  @override
+  String get twoStepAppLockBody => '2단계 인증은 로그인을 보호합니다. 앱 잠금은 Vaultara를 열 때마다 지문, 얼굴 또는 화면 잠금을 요청합니다.';
+
+  @override
+  String get twoStepAppLockAction => '앱 잠금 켜기';
+
+  @override
+  String get twoStepSignOutOthersBody => '모르는 곳에서 로그인되어 있나요? 다른 기기에서 로그아웃하세요.';
+
+  @override
+  String get twoStepReviewDevices => '기기 확인';
+
+  @override
+  String get twoStepSkipForNow => '지금은 건너뛰기';
+
+  @override
+  String get twoStepOffTitle => '2단계 인증이 꺼져 있습니다';
+
+  @override
+  String get twoStepOffBody => '백업 코드로 로그인하여 2단계 인증이 꺼졌습니다. 계정을 보호하려면 이 휴대전화에서 다시 설정하세요.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years년',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => '날짜 입력';
+
+  @override
+  String get expiryTypeTitle => '만료일 입력';
+
+  @override
+  String expiryTypeHint(String example) {
+    return '예: $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return '날짜가 올바르지 않은 것 같습니다. $example 형식으로 입력해 보세요.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => '이 날짜는 이미 지났으므로 기록이 만료됨으로 저장됩니다.';
+
+  @override
+  String get expiryEndsToday => '오늘 만료됩니다.';
+
+  @override
+  String get saveAndAddAnother => '저장하고 하나 더 추가';
+
+  @override
+  String get quickStartTitle => '빠른 시작';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name을(를) 만들었습니다. 그룹을 추가할까요?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name을(를) 만들었습니다. 기록을 추가할까요?';
+  }
+
+  @override
+  String get groupIdeaCertificates => '증명서';
+
+  @override
+  String get groupIdeaLicences => '면허';
+
+  @override
+  String get groupIdeaContracts => '계약서';
+
+  @override
+  String get groupIdeaPermits => '허가증';
+
+  @override
+  String get groupIdeaInsurance => '보험';
+
+  @override
+  String get assistantCategoryAddTitle => '새 카테고리';
+
+  @override
+  String get assistantCategoryAddNote => '이름에 따라 아이콘이 선택됩니다. 나중에 바꿀 수 있습니다.';
+
+  @override
+  String get assistantCategoryRenameTitle => '카테고리 이름 변경';
+
+  @override
+  String get assistantGroupAddTitle => '새 그룹';
+
+  @override
+  String get assistantGroupRenameTitle => '그룹 이름 변경';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '기록 $count개 이동',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => '기록 복원';
+
+  @override
+  String get assistantRestoreNote => '기록과 알림이 다시 돌아옵니다.';
+
+  @override
+  String get assistantStepCategories => '카테고리를 확인하는 중…';
+
+  @override
+  String get assistantStepCosts => '갱신 비용을 계산하는 중…';
+
+  @override
+  String get assistantStepVisa => '비자 규정을 확인하는 중…';
 }

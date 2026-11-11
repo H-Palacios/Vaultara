@@ -3119,5 +3119,146 @@
       }
     }
   },
-  "homePinnedTitle": "الفئات المثبتة"
+  "homePinnedTitle": "الفئات المثبتة",
+  "notifAskTitle": "احصل على تذكيراتك في الوقت المناسب",
+  "notifAskBody": "لا يمكن لـ Vaultara تذكيرك قبل انتهاء صلاحية شيء ما إلا إذا كانت الإشعارات مسموحة. نرسل التذكيرات وتنبيهات الحساب المهمة فقط.",
+  "notifAskAllow": "السماح بالإشعارات",
+  "notifAskLater": "ليس الآن",
+  "signInTooManyTries": "محاولات كثيرة جدًا. انتظر قليلًا قبل المحاولة مرة أخرى، أو أعد تعيين كلمة المرور.",
+  "signInWaitSeconds": "{seconds, plural, =0{حاول مرة أخرى بعد {seconds} ثانية} =1{حاول مرة أخرى بعد {seconds} ثانية} two{حاول مرة أخرى بعد {seconds} ثانيتين} few{حاول مرة أخرى بعد {seconds} ثوانٍ} many{حاول مرة أخرى بعد {seconds} ثانية} other{حاول مرة أخرى بعد {seconds} ثانية}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "رموز احتياطية",
+  "backupCodesIntro": "إذا فقدت هاتفك أو تطبيق المصادقة، يتيح لك الرمز الاحتياطي تسجيل الدخول. يعمل كل رمز مرة واحدة.",
+  "backupCodesShownOnce": "تظهر هذه الرموز مرة واحدة فقط. احفظها في مكان آمن بعيدًا عن هذا الهاتف.",
+  "backupCodesCopy": "نسخ",
+  "backupCodesSave": "حفظ أو مشاركة",
+  "backupCodesSaved": "لقد حفظت رموزي",
+  "backupCodesLeft": "{count, plural, =0{لم يتبق أي رمز احتياطي} =1{تبقى {count} رمز احتياطي} two{تبقى {count} رمزان احتياطيان} few{تبقت {count} رموز احتياطية} many{تبقى {count} رمزًا احتياطيًا} other{تبقى {count} رمز احتياطي}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "إنشاء رموز احتياطية",
+  "backupCodesMakeNew": "إنشاء رموز جديدة",
+  "backupCodesReplaceTitle": "هل تريد إنشاء رموز احتياطية جديدة؟",
+  "backupCodesReplaceBody": "ستتوقف رموزك القديمة عن العمل فورًا.",
+  "backupCodesFileTitle": "رموز Vaultara الاحتياطية",
+  "backupCodesEachOnce": "يعمل كل رمز مرة واحدة. احتفظ بها في مكان آمن.",
+  "backupCodesCopied": "تم نسخ الرموز الاحتياطية. ستُمسح من الحافظة خلال دقيقة.",
+  "backupCodesNone": "لم يُنشأ أي منها بعد",
+  "backupCodesTileHint": "سجّل الدخول إذا فقدت هاتفك",
+  "backupCodeUseTitle": "استخدام رمز احتياطي",
+  "backupCodeUseBody": "أدخل أحد الرموز الاحتياطية التي حفظتها. استخدام أحدها يوقف التحقق بخطوتين، لتتمكن من إعداده مجددًا على هاتفك الجديد.",
+  "backupCodeLabel": "رمز احتياطي",
+  "backupCodeFormat": "تبدو الرموز الاحتياطية هكذا ABCDE-FGHJK.",
+  "backupCodeWrong": "لم يعمل هذا الرمز. تحقق منه وحاول مرة أخرى.",
+  "backupCodeBack": "استخدام تطبيق المصادقة",
+  "twoStepStepOf": "الخطوة {step} من {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "سيظهر باسم Vaultara ({email}) في تطبيقك.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "تتغير الرموز كل 30 ثانية. أدخل الرمز الظاهر الآن.",
+  "twoStepPaste": "لصق",
+  "twoStepBackupNext": "أنشئ رموزًا احتياطية حتى تتمكن من تسجيل الدخول إذا فقدت هذا الهاتف.",
+  "twoStepAppLockTitle": "اقفل التطبيق أيضًا",
+  "twoStepAppLockBody": "التحقق بخطوتين يحمي تسجيل الدخول. قفل التطبيق يطلب بصمتك أو وجهك أو قفل الشاشة في كل مرة يُفتح فيها Vaultara.",
+  "twoStepAppLockAction": "تشغيل قفل التطبيق",
+  "twoStepSignOutOthersBody": "هل سجّلت الدخول في مكان لا تعرفه؟ سجّل الخروج من الأجهزة الأخرى.",
+  "twoStepReviewDevices": "مراجعة الأجهزة",
+  "twoStepSkipForNow": "التخطي الآن",
+  "twoStepOffTitle": "التحقق بخطوتين متوقف",
+  "twoStepOffBody": "سجّلت الدخول برمز احتياطي، لذلك تم إيقاف التحقق بخطوتين. أعد إعداده على هذا الهاتف ليبقى حسابك محميًا.",
+  "expiryPlusYears": "{years, plural, =0{+{years} سنة} =1{+{years} سنة} two{+{years} سنتان} few{+{years} سنوات} many{+{years} سنة} other{+{years} سنة}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "كتابة التاريخ",
+  "expiryTypeTitle": "اكتب تاريخ الانتهاء",
+  "expiryTypeHint": "مثال: {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "لا يبدو هذا التاريخ صحيحًا. جرّب {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "هذا التاريخ قد مضى، لذلك سيُحفظ السجل على أنه منتهٍ.",
+  "expiryEndsToday": "تنتهي صلاحيته اليوم.",
+  "saveAndAddAnother": "حفظ وإضافة آخر",
+  "quickStartTitle": "بداية سريعة",
+  "categoryCreatedAddGroup": "تم إنشاء {name}. هل تريد إضافة مجموعة إليه؟",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "تم إنشاء {name}. هل تريد إضافة سجل إليها؟",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "شهادات",
+  "groupIdeaLicences": "تراخيص",
+  "groupIdeaContracts": "عقود",
+  "groupIdeaPermits": "تصاريح",
+  "groupIdeaInsurance": "تأمين",
+  "assistantCategoryAddTitle": "فئة جديدة",
+  "assistantCategoryAddNote": "تُختار أيقونة من الاسم. يمكنك تغييرها لاحقًا.",
+  "assistantCategoryRenameTitle": "إعادة تسمية الفئة",
+  "assistantGroupAddTitle": "مجموعة جديدة",
+  "assistantGroupRenameTitle": "إعادة تسمية المجموعة",
+  "assistantMoveTitle": "{count, plural, =0{نقل {count} سجل} =1{نقل {count} سجل} two{نقل {count} سجل} few{نقل {count} سجلات} many{نقل {count} سجلًا} other{نقل {count} سجل}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "استعادة السجل",
+  "assistantRestoreNote": "سيعود السجل وتذكيراته.",
+  "assistantStepCategories": "جارٍ التحقق من فئاتك…",
+  "assistantStepCosts": "جارٍ حساب تكاليف التجديد…",
+  "assistantStepVisa": "جارٍ التحقق من قواعد التأشيرة…"
 }

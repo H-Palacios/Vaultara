@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Бекітілген санаттар"
+  "homePinnedTitle": "Бекітілген санаттар",
+  "notifAskTitle": "Еске салғыштарды уақытында алыңыз",
+  "notifAskBody": "Хабарландыруларға рұқсат берілсе ғана Vaultara бірдеңенің мерзімі бітпес бұрын еске сала алады. Біз тек еске салғыштар мен маңызды есептік жазба ескертулерін жібереміз.",
+  "notifAskAllow": "Хабарландыруларға рұқсат беру",
+  "notifAskLater": "Қазір емес",
+  "signInTooManyTries": "Тым көп әрекет. Қайта көрмес бұрын сәл күтіңіз немесе құпия сөзді қалпына келтіріңіз.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} секундтан кейін қайталаңыз} other{{seconds} секундтан кейін қайталаңыз}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Сақтық кодтар",
+  "backupCodesIntro": "Телефоныңызды немесе аутентификатор қолданбасын жоғалтсаңыз, сақтық кодпен кіре аласыз. Әр код бір рет жұмыс істейді.",
+  "backupCodesShownOnce": "Бұл кодтар тек бір рет көрсетіледі. Оларды осы телефоннан алыс, қауіпсіз жерде сақтаңыз.",
+  "backupCodesCopy": "Көшіру",
+  "backupCodesSave": "Сақтау немесе бөлісу",
+  "backupCodesSaved": "Кодтарымды сақтадым",
+  "backupCodesLeft": "{count, plural, =0{Сақтық код қалмады} =1{{count} сақтық код қалды} other{{count} сақтық код қалды}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Сақтық кодтар жасау",
+  "backupCodesMakeNew": "Жаңа кодтар жасау",
+  "backupCodesReplaceTitle": "Жаңа сақтық кодтар жасалсын ба?",
+  "backupCodesReplaceBody": "Ескі кодтарыңыз бірден жұмыс істемей қалады.",
+  "backupCodesFileTitle": "Vaultara сақтық кодтары",
+  "backupCodesEachOnce": "Әр код бір рет жұмыс істейді. Оларды қауіпсіз жерде сақтаңыз.",
+  "backupCodesCopied": "Сақтық кодтар көшірілді. Олар бір минуттан кейін алмасу буферінен өшіріледі.",
+  "backupCodesNone": "Әлі жасалмаған",
+  "backupCodesTileHint": "Телефонды жоғалтсаңыз кіру",
+  "backupCodeUseTitle": "Сақтық кодты пайдалану",
+  "backupCodeUseBody": "Сақтаған сақтық кодтардың бірін енгізіңіз. Оны пайдалану екі қадамды растауды өшіреді, сонда оны жаңа телефонда қайта баптай аласыз.",
+  "backupCodeLabel": "Сақтық код",
+  "backupCodeFormat": "Сақтық кодтар ABCDE-FGHJK сияқты болады.",
+  "backupCodeWrong": "Ол код жұмыс істемеді. Тексеріп, қайта көріңіз.",
+  "backupCodeBack": "Аутентификатор қолданбамды пайдалану",
+  "twoStepStepOf": "{total} қадамның {step}-қадамы",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Қолданбаңызда Vaultara ({email}) ретінде көрсетіледі.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Кодтар әр 30 секунд сайын өзгереді. Қазір көрсетіліп тұрғанын енгізіңіз.",
+  "twoStepPaste": "Қою",
+  "twoStepBackupNext": "Осы телефонды жоғалтсаңыз да кіре алуыңыз үшін сақтық кодтар жасаңыз.",
+  "twoStepAppLockTitle": "Қолданбаны да құлыптаңыз",
+  "twoStepAppLockBody": "Екі қадам кіруді қорғайды. Қолданба құлпы Vaultara ашылған сайын саусақ ізін, бетті немесе экран құлпын сұрайды.",
+  "twoStepAppLockAction": "Қолданба құлпын қосу",
+  "twoStepSignOutOthersBody": "Танымайтын жерде кіргенсіз бе? Басқа құрылғылардан шығыңыз.",
+  "twoStepReviewDevices": "Құрылғыларды қарау",
+  "twoStepSkipForNow": "Әзірге өткізіп жіберу",
+  "twoStepOffTitle": "Екі қадамды растау өшірулі",
+  "twoStepOffBody": "Сіз сақтық кодпен кірдіңіз, сондықтан екі қадамды растау өшірілді. Есептік жазбаңыз қорғалуы үшін оны осы телефонда қайта баптаңыз.",
+  "expiryPlusYears": "{years, plural, =1{+{years} жыл} other{+{years} жыл}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Күнді жазу",
+  "expiryTypeTitle": "Мерзімі біту күнін жазыңыз",
+  "expiryTypeHint": "Мысалы {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Бұл күн дұрыс емес сияқты. {example} көріңіз.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Бұл күн өтіп кеткен, сондықтан жазба мерзімі өткен ретінде сақталады.",
+  "expiryEndsToday": "Мерзімі бүгін бітеді.",
+  "saveAndAddAnother": "Сақтап, тағы біреуін қосу",
+  "quickStartTitle": "Жылдам бастау",
+  "categoryCreatedAddGroup": "{name} жасалды. Топ қосылсын ба?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} жасалды. Жазба қосылсын ба?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Сертификаттар",
+  "groupIdeaLicences": "Лицензиялар",
+  "groupIdeaContracts": "Келісімшарттар",
+  "groupIdeaPermits": "Рұқсаттар",
+  "groupIdeaInsurance": "Сақтандыру",
+  "assistantCategoryAddTitle": "Жаңа санат",
+  "assistantCategoryAddNote": "Белгіше атауға қарай таңдалады. Оны кейін өзгерте аласыз.",
+  "assistantCategoryRenameTitle": "Санат атауын өзгерту",
+  "assistantGroupAddTitle": "Жаңа топ",
+  "assistantGroupRenameTitle": "Топ атауын өзгерту",
+  "assistantMoveTitle": "{count, plural, =1{{count} жазбаны жылжыту} other{{count} жазбаны жылжыту}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Жазбаны қалпына келтіру",
+  "assistantRestoreNote": "Жазба мен оның еске салғыштары қайтады.",
+  "assistantStepCategories": "Санаттарыңыз тексерілуде…",
+  "assistantStepCosts": "Жаңарту шығындары есептелуде…",
+  "assistantStepVisa": "Виза ережелері тексерілуде…"
 }

@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kategori yang disemat"
+  "homePinnedTitle": "Kategori yang disemat",
+  "notifAskTitle": "Dapatkan peringatan tepat pada masanya",
+  "notifAskBody": "Vaultara hanya boleh mengingatkan anda sebelum sesuatu tamat tempoh jika pemberitahuan dibenarkan. Kami hanya menghantar peringatan dan amaran akaun yang penting.",
+  "notifAskAllow": "Benarkan pemberitahuan",
+  "notifAskLater": "Bukan sekarang",
+  "signInTooManyTries": "Terlalu banyak cubaan. Tunggu sebentar sebelum mencuba lagi, atau tetapkan semula kata laluan anda.",
+  "signInWaitSeconds": "{seconds, plural, other{Cuba lagi dalam {seconds} saat}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Kod sandaran",
+  "backupCodesIntro": "Jika anda kehilangan telefon atau aplikasi pengesah, kod sandaran membolehkan anda log masuk. Setiap kod berfungsi sekali.",
+  "backupCodesShownOnce": "Kod ini hanya ditunjukkan sekali. Simpan di tempat selamat, jauh daripada telefon ini.",
+  "backupCodesCopy": "Salin",
+  "backupCodesSave": "Simpan atau kongsi",
+  "backupCodesSaved": "Saya sudah menyimpan kod saya",
+  "backupCodesLeft": "{count, plural, =0{Tiada kod sandaran lagi} other{{count} kod sandaran tinggal}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Buat kod sandaran",
+  "backupCodesMakeNew": "Buat kod baharu",
+  "backupCodesReplaceTitle": "Buat kod sandaran baharu?",
+  "backupCodesReplaceBody": "Kod lama anda akan berhenti berfungsi serta-merta.",
+  "backupCodesFileTitle": "Kod sandaran Vaultara",
+  "backupCodesEachOnce": "Setiap kod berfungsi sekali. Simpan di tempat selamat.",
+  "backupCodesCopied": "Kod sandaran disalin. Kod akan dikosongkan daripada papan keratan dalam seminit.",
+  "backupCodesNone": "Belum ada yang dibuat",
+  "backupCodesTileHint": "Log masuk jika telefon hilang",
+  "backupCodeUseTitle": "Gunakan kod sandaran",
+  "backupCodeUseBody": "Masukkan salah satu kod sandaran yang anda simpan. Menggunakannya akan mematikan pengesahan dua langkah supaya anda boleh menyediakannya semula pada telefon baharu.",
+  "backupCodeLabel": "Kod sandaran",
+  "backupCodeFormat": "Kod sandaran kelihatan seperti ABCDE-FGHJK.",
+  "backupCodeWrong": "Kod itu tidak berfungsi. Semak dan cuba lagi.",
+  "backupCodeBack": "Gunakan aplikasi pengesah saya",
+  "twoStepStepOf": "Langkah {step} daripada {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Ia akan dipaparkan sebagai Vaultara ({email}) dalam aplikasi anda.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kod bertukar setiap 30 saat. Masukkan kod yang dipaparkan sekarang.",
+  "twoStepPaste": "Tampal",
+  "twoStepBackupNext": "Buat kod sandaran supaya anda masih boleh log masuk jika kehilangan telefon ini.",
+  "twoStepAppLockTitle": "Kunci aplikasi juga",
+  "twoStepAppLockBody": "Dua langkah melindungi log masuk. Kunci aplikasi meminta cap jari, wajah atau kunci skrin setiap kali Vaultara dibuka.",
+  "twoStepAppLockAction": "Hidupkan kunci aplikasi",
+  "twoStepSignOutOthersBody": "Log masuk di tempat yang anda tidak kenali? Log keluar daripada peranti lain.",
+  "twoStepReviewDevices": "Semak peranti",
+  "twoStepSkipForNow": "Langkau dahulu",
+  "twoStepOffTitle": "Pengesahan dua langkah dimatikan",
+  "twoStepOffBody": "Anda log masuk dengan kod sandaran, jadi pengesahan dua langkah telah dimatikan. Sediakannya semula pada telefon ini supaya akaun anda kekal dilindungi.",
+  "expiryPlusYears": "{years, plural, other{+{years} tahun}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Taip tarikh",
+  "expiryTypeTitle": "Taip tarikh tamat tempoh",
+  "expiryTypeHint": "Contohnya {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Tarikh itu nampaknya tidak betul. Cuba {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Tarikh ini sudah berlalu, jadi rekod akan disimpan sebagai tamat tempoh.",
+  "expiryEndsToday": "Ini tamat tempoh hari ini.",
+  "saveAndAddAnother": "Simpan dan tambah satu lagi",
+  "quickStartTitle": "Mula pantas",
+  "categoryCreatedAddGroup": "{name} dibuat. Tambah kumpulan padanya?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} dibuat. Tambah rekod padanya?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sijil",
+  "groupIdeaLicences": "Lesen",
+  "groupIdeaContracts": "Kontrak",
+  "groupIdeaPermits": "Permit",
+  "groupIdeaInsurance": "Insurans",
+  "assistantCategoryAddTitle": "Kategori baharu",
+  "assistantCategoryAddNote": "Ikon dipilih berdasarkan nama. Anda boleh menukarnya kemudian.",
+  "assistantCategoryRenameTitle": "Namakan semula kategori",
+  "assistantGroupAddTitle": "Kumpulan baharu",
+  "assistantGroupRenameTitle": "Namakan semula kumpulan",
+  "assistantMoveTitle": "{count, plural, other{Alihkan {count} rekod}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Pulihkan rekod",
+  "assistantRestoreNote": "Rekod dan peringatannya kembali.",
+  "assistantStepCategories": "Menyemak kategori anda…",
+  "assistantStepCosts": "Mengira kos pembaharuan…",
+  "assistantStepVisa": "Menyemak peraturan visa…"
 }

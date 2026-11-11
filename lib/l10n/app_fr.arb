@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "Catégories épinglées"
+  "homePinnedTitle": "Catégories épinglées",
+  "notifAskTitle": "Recevez vos rappels à temps",
+  "notifAskBody": "Vaultara ne peut vous prévenir avant qu'un document expire que si les notifications sont autorisées. Nous n'envoyons que des rappels et des alertes importantes liées au compte.",
+  "notifAskAllow": "Autoriser les notifications",
+  "notifAskLater": "Pas maintenant",
+  "signInTooManyTries": "Trop de tentatives. Patientez un instant avant de réessayer, ou réinitialisez votre mot de passe.",
+  "signInWaitSeconds": "{seconds, plural, one{Réessayez dans {seconds} seconde} other{Réessayez dans {seconds} secondes}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Codes de secours",
+  "backupCodesIntro": "Si vous perdez votre téléphone ou votre application d'authentification, un code de secours vous permet de vous connecter. Chaque code ne fonctionne qu'une fois.",
+  "backupCodesShownOnce": "Ces codes ne s'affichent qu'une seule fois. Conservez-les en lieu sûr, loin de ce téléphone.",
+  "backupCodesCopy": "Copier",
+  "backupCodesSave": "Enregistrer ou partager",
+  "backupCodesSaved": "J'ai enregistré mes codes",
+  "backupCodesLeft": "{count, plural, =0{Plus aucun code de secours} one{{count} code de secours restant} other{{count} codes de secours restants}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Créer des codes de secours",
+  "backupCodesMakeNew": "Créer de nouveaux codes",
+  "backupCodesReplaceTitle": "Créer de nouveaux codes de secours ?",
+  "backupCodesReplaceBody": "Vos anciens codes cesseront de fonctionner immédiatement.",
+  "backupCodesFileTitle": "Codes de secours Vaultara",
+  "backupCodesEachOnce": "Chaque code ne fonctionne qu'une fois. Conservez-les en lieu sûr.",
+  "backupCodesCopied": "Codes de secours copiés. Ils seront effacés du presse-papiers dans une minute.",
+  "backupCodesNone": "Aucun créé pour l'instant",
+  "backupCodesTileHint": "Connexion si vous perdez votre téléphone",
+  "backupCodeUseTitle": "Utiliser un code de secours",
+  "backupCodeUseBody": "Saisissez l'un des codes de secours que vous avez enregistrés. L'utiliser désactive la validation en deux étapes pour que vous puissiez la configurer à nouveau sur votre nouveau téléphone.",
+  "backupCodeLabel": "Code de secours",
+  "backupCodeFormat": "Les codes de secours ressemblent à ABCDE-FGHJK.",
+  "backupCodeWrong": "Ce code n'a pas fonctionné. Vérifiez-le et réessayez.",
+  "backupCodeBack": "Utiliser mon application d'authentification",
+  "twoStepStepOf": "Étape {step} sur {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Il apparaîtra sous le nom Vaultara ({email}) dans votre application.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Les codes changent toutes les 30 secondes. Saisissez celui affiché maintenant.",
+  "twoStepPaste": "Coller",
+  "twoStepBackupNext": "Créez des codes de secours pour pouvoir vous connecter même si vous perdez ce téléphone.",
+  "twoStepAppLockTitle": "Verrouillez aussi l'application",
+  "twoStepAppLockBody": "La validation en deux étapes protège la connexion. Le verrouillage de l'application demande votre empreinte, votre visage ou le verrouillage de l'écran à chaque ouverture de Vaultara.",
+  "twoStepAppLockAction": "Activer le verrouillage",
+  "twoStepSignOutOthersBody": "Connecté quelque part que vous ne reconnaissez pas ? Déconnectez les autres appareils.",
+  "twoStepReviewDevices": "Vérifier les appareils",
+  "twoStepSkipForNow": "Ignorer pour l'instant",
+  "twoStepOffTitle": "La validation en deux étapes est désactivée",
+  "twoStepOffBody": "Vous vous êtes connecté avec un code de secours, la validation en deux étapes a donc été désactivée. Configurez-la à nouveau sur ce téléphone pour garder votre compte protégé.",
+  "expiryPlusYears": "{years, plural, one{+{years} an} other{+{years} ans}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Saisir la date",
+  "expiryTypeTitle": "Saisissez la date d'expiration",
+  "expiryTypeHint": "Par exemple {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Cette date ne semble pas correcte. Essayez {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Cette date est passée, l'élément sera donc enregistré comme expiré.",
+  "expiryEndsToday": "Expire aujourd'hui.",
+  "saveAndAddAnother": "Enregistrer et en ajouter un autre",
+  "quickStartTitle": "Démarrage rapide",
+  "categoryCreatedAddGroup": "{name} créé. Ajouter un groupe ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} créé. Ajouter un élément ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificats",
+  "groupIdeaLicences": "Licences",
+  "groupIdeaContracts": "Contrats",
+  "groupIdeaPermits": "Permis",
+  "groupIdeaInsurance": "Assurances",
+  "assistantCategoryAddTitle": "Nouvelle catégorie",
+  "assistantCategoryAddNote": "Une icône est choisie d'après le nom. Vous pourrez la changer plus tard.",
+  "assistantCategoryRenameTitle": "Renommer la catégorie",
+  "assistantGroupAddTitle": "Nouveau groupe",
+  "assistantGroupRenameTitle": "Renommer le groupe",
+  "assistantMoveTitle": "{count, plural, one{Déplacer {count} élément} other{Déplacer {count} éléments}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restaurer l'élément",
+  "assistantRestoreNote": "L'élément et ses rappels sont rétablis.",
+  "assistantStepCategories": "Vérification de vos catégories…",
+  "assistantStepCosts": "Calcul des frais de renouvellement…",
+  "assistantStepVisa": "Vérification des règles de visa…"
 }

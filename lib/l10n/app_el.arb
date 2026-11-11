@@ -3088,5 +3088,146 @@
       }
     }
   },
-  "homePinnedTitle": "Καρφιτσωμένες κατηγορίες"
+  "homePinnedTitle": "Καρφιτσωμένες κατηγορίες",
+  "notifAskTitle": "Λάβετε τις υπενθυμίσεις σας εγκαίρως",
+  "notifAskBody": "Το Vaultara μπορεί να σας υπενθυμίσει πριν λήξει κάτι μόνο αν επιτρέπονται οι ειδοποιήσεις. Στέλνουμε μόνο υπενθυμίσεις και σημαντικές ειδοποιήσεις λογαριασμού.",
+  "notifAskAllow": "Να επιτρέπονται οι ειδοποιήσεις",
+  "notifAskLater": "Όχι τώρα",
+  "signInTooManyTries": "Πάρα πολλές προσπάθειες. Περιμένετε λίγο πριν δοκιμάσετε ξανά ή επαναφέρετε τον κωδικό σας.",
+  "signInWaitSeconds": "{seconds, plural, =1{Δοκιμάστε ξανά σε {seconds} δευτερόλεπτο} other{Δοκιμάστε ξανά σε {seconds} δευτερόλεπτα}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Εφεδρικοί κωδικοί",
+  "backupCodesIntro": "Αν χάσετε το τηλέφωνο ή την εφαρμογή ελέγχου ταυτότητας, ένας εφεδρικός κωδικός σάς επιτρέπει να συνδεθείτε. Κάθε κωδικός λειτουργεί μία φορά.",
+  "backupCodesShownOnce": "Αυτοί οι κωδικοί εμφανίζονται μόνο μία φορά. Αποθηκεύστε τους σε ασφαλές μέρος, μακριά από αυτό το τηλέφωνο.",
+  "backupCodesCopy": "Αντιγραφή",
+  "backupCodesSave": "Αποθήκευση ή κοινοποίηση",
+  "backupCodesSaved": "Αποθήκευσα τους κωδικούς μου",
+  "backupCodesLeft": "{count, plural, =0{Δεν απομένουν εφεδρικοί κωδικοί} =1{Απομένει {count} εφεδρικός κωδικός} other{Απομένουν {count} εφεδρικοί κωδικοί}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Δημιουργία εφεδρικών κωδικών",
+  "backupCodesMakeNew": "Δημιουργία νέων κωδικών",
+  "backupCodesReplaceTitle": "Δημιουργία νέων εφεδρικών κωδικών;",
+  "backupCodesReplaceBody": "Οι παλιοί σας κωδικοί θα σταματήσουν να λειτουργούν αμέσως.",
+  "backupCodesFileTitle": "Εφεδρικοί κωδικοί Vaultara",
+  "backupCodesEachOnce": "Κάθε κωδικός λειτουργεί μία φορά. Φυλάξτε τους σε ασφαλές μέρος.",
+  "backupCodesCopied": "Οι εφεδρικοί κωδικοί αντιγράφηκαν. Θα διαγραφούν από το πρόχειρο σε ένα λεπτό.",
+  "backupCodesNone": "Δεν έχουν δημιουργηθεί ακόμα",
+  "backupCodesTileHint": "Σύνδεση αν χάσετε το τηλέφωνο",
+  "backupCodeUseTitle": "Χρήση εφεδρικού κωδικού",
+  "backupCodeUseBody": "Εισαγάγετε έναν από τους εφεδρικούς κωδικούς που αποθηκεύσατε. Η χρήση του απενεργοποιεί την επαλήθευση δύο βημάτων, ώστε να τη ρυθμίσετε ξανά στο νέο σας τηλέφωνο.",
+  "backupCodeLabel": "Εφεδρικός κωδικός",
+  "backupCodeFormat": "Οι εφεδρικοί κωδικοί μοιάζουν με ABCDE-FGHJK.",
+  "backupCodeWrong": "Αυτός ο κωδικός δεν λειτούργησε. Ελέγξτε τον και δοκιμάστε ξανά.",
+  "backupCodeBack": "Χρήση της εφαρμογής ελέγχου ταυτότητας",
+  "twoStepStepOf": "Βήμα {step} από {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Θα εμφανίζεται ως Vaultara ({email}) στην εφαρμογή σας.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Οι κωδικοί αλλάζουν κάθε 30 δευτερόλεπτα. Εισαγάγετε αυτόν που φαίνεται τώρα.",
+  "twoStepPaste": "Επικόλληση",
+  "twoStepBackupNext": "Δημιουργήστε εφεδρικούς κωδικούς για να μπορείτε να συνδεθείτε ακόμα κι αν χάσετε αυτό το τηλέφωνο.",
+  "twoStepAppLockTitle": "Κλειδώστε και την εφαρμογή",
+  "twoStepAppLockBody": "Τα δύο βήματα προστατεύουν τη σύνδεση. Το κλείδωμα εφαρμογής ζητά δακτυλικό αποτύπωμα, πρόσωπο ή κλείδωμα οθόνης κάθε φορά που ανοίγει το Vaultara.",
+  "twoStepAppLockAction": "Ενεργοποίηση κλειδώματος",
+  "twoStepSignOutOthersBody": "Συνδεθήκατε κάπου που δεν αναγνωρίζετε; Αποσυνδεθείτε από άλλες συσκευές.",
+  "twoStepReviewDevices": "Έλεγχος συσκευών",
+  "twoStepSkipForNow": "Παράλειψη προς το παρόν",
+  "twoStepOffTitle": "Η επαλήθευση δύο βημάτων είναι απενεργοποιημένη",
+  "twoStepOffBody": "Συνδεθήκατε με εφεδρικό κωδικό, οπότε η επαλήθευση δύο βημάτων απενεργοποιήθηκε. Ρυθμίστε την ξανά σε αυτό το τηλέφωνο για να μείνει προστατευμένος ο λογαριασμός σας.",
+  "expiryPlusYears": "{years, plural, =1{+{years} έτος} other{+{years} έτη}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Πληκτρολόγηση ημερομηνίας",
+  "expiryTypeTitle": "Πληκτρολογήστε την ημερομηνία λήξης",
+  "expiryTypeHint": "Για παράδειγμα {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Αυτή η ημερομηνία δεν φαίνεται σωστή. Δοκιμάστε {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Αυτή η ημερομηνία έχει περάσει, οπότε η εγγραφή θα αποθηκευτεί ως ληγμένη.",
+  "expiryEndsToday": "Λήγει σήμερα.",
+  "saveAndAddAnother": "Αποθήκευση και προσθήκη άλλου",
+  "quickStartTitle": "Γρήγορη έναρξη",
+  "categoryCreatedAddGroup": "Η κατηγορία {name} δημιουργήθηκε. Να προστεθεί ομάδα;",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Η ομάδα {name} δημιουργήθηκε. Να προστεθεί εγγραφή;",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Πιστοποιητικά",
+  "groupIdeaLicences": "Άδειες",
+  "groupIdeaContracts": "Συμβόλαια",
+  "groupIdeaPermits": "Εγκρίσεις",
+  "groupIdeaInsurance": "Ασφάλειες",
+  "assistantCategoryAddTitle": "Νέα κατηγορία",
+  "assistantCategoryAddNote": "Το εικονίδιο επιλέγεται από το όνομα. Μπορείτε να το αλλάξετε αργότερα.",
+  "assistantCategoryRenameTitle": "Μετονομασία κατηγορίας",
+  "assistantGroupAddTitle": "Νέα ομάδα",
+  "assistantGroupRenameTitle": "Μετονομασία ομάδας",
+  "assistantMoveTitle": "{count, plural, =1{Μετακίνηση {count} εγγραφής} other{Μετακίνηση {count} εγγραφών}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Επαναφορά εγγραφής",
+  "assistantRestoreNote": "Η εγγραφή και οι υπενθυμίσεις της επιστρέφουν.",
+  "assistantStepCategories": "Έλεγχος των κατηγοριών σας…",
+  "assistantStepCosts": "Υπολογισμός κόστους ανανέωσης…",
+  "assistantStepVisa": "Έλεγχος κανόνων βίζας…"
 }

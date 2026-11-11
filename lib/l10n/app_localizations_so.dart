@@ -8416,4 +8416,253 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Qaybaha la dhejiyay';
+
+  @override
+  String get notifAskTitle => 'Hel xasuusinahaaga waqtigooda';
+
+  @override
+  String get notifAskBody => 'Vaultara waxay ku xasuusin kartaa ka hor inta aysan wax dhicin oo keliya haddii ogeysiisyada la oggolaado. Waxaan dirnaa oo keliya xasuusin iyo digniino muhiim ah oo xisaabta ku saabsan.';
+
+  @override
+  String get notifAskAllow => 'Oggolow ogeysiisyada';
+
+  @override
+  String get notifAskLater => 'Hadda maya';
+
+  @override
+  String get signInTooManyTries => 'Isku day aad u badan. Wax yar sug ka hor intaadan mar kale isku dayin, ama dib u deji eraygaaga sirta ah.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Mar kale isku day $seconds ilbiriqsi kadib',
+      one: 'Mar kale isku day $seconds ilbiriqsi kadib',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Koodhadhka kaydka';
+
+  @override
+  String get backupCodesIntro => 'Haddii aad lumiso taleefankaaga ama abka xaqiijinta, kood kayd ah ayaa kuu oggolaanaya inaad gasho. Kood kasta hal mar ayuu shaqeeyaa.';
+
+  @override
+  String get backupCodesShownOnce => 'Koodhadhkan hal mar oo keliya ayaa la tusaa. Ku kaydi meel ammaan ah, oo ka fog taleefankan.';
+
+  @override
+  String get backupCodesCopy => 'Koobiyee';
+
+  @override
+  String get backupCodesSave => 'Kaydi ama wadaag';
+
+  @override
+  String get backupCodesSaved => 'Waan kaydiyay koodhadhkayga';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kood kayd ah ayaa hadhay',
+      one: '$count kood kayd ah ayaa hadhay',
+      zero: 'Kood kayd ah oo hadhay ma jiro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Samee koodhadh kayd ah';
+
+  @override
+  String get backupCodesMakeNew => 'Samee koodhadh cusub';
+
+  @override
+  String get backupCodesReplaceTitle => 'Ma la sameeyaa koodhadh kayd ah oo cusub?';
+
+  @override
+  String get backupCodesReplaceBody => 'Koodhadhkaagii hore isla markiiba way joogsan doonaan.';
+
+  @override
+  String get backupCodesFileTitle => 'Koodhadhka kaydka Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Kood kasta hal mar ayuu shaqeeyaa. Ku hay meel ammaan ah.';
+
+  @override
+  String get backupCodesCopied => 'Koodhadhka kaydka waa la koobiyeeyay. Daqiiqad kadib ayaa laga tirtiri doonaa sabuuradda.';
+
+  @override
+  String get backupCodesNone => 'Weli lama samayn';
+
+  @override
+  String get backupCodesTileHint => 'Gal haddii aad lumiso taleefankaaga';
+
+  @override
+  String get backupCodeUseTitle => 'Isticmaal kood kayd ah';
+
+  @override
+  String get backupCodeUseBody => 'Geli mid ka mid ah koodhadhka kaydka aad kaydisay. Isticmaalkiisu wuxuu damiyaa xaqiijinta laba-tallaabo, si aad mar kale ugu dejiso taleefankaaga cusub.';
+
+  @override
+  String get backupCodeLabel => 'Koodka kaydka';
+
+  @override
+  String get backupCodeFormat => 'Koodhadhka kaydku waxay u eg yihiin ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Koodkaasi ma shaqayn. Hubi oo mar kale isku day.';
+
+  @override
+  String get backupCodeBack => 'Isticmaal abkayga xaqiijinta';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Tallaabada $step ee $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Abkaaga waxay ku muuqan doontaa Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Koodhadhku waxay is beddelaan 30 ilbiriqsi kasta. Geli kan hadda muuqda.';
+
+  @override
+  String get twoStepPaste => 'Ku dheji';
+
+  @override
+  String get twoStepBackupNext => 'Samee koodhadh kayd ah si aad u gali karto xitaa haddii aad lumiso taleefankan.';
+
+  @override
+  String get twoStepAppLockTitle => 'Abka sidoo kale quful';
+
+  @override
+  String get twoStepAppLockBody => 'Laba tallaabo ayaa ilaaliya galitaanka. Qufulka abku wuxuu weydiiyaa faraha, wejiga ama qufulka shaashadda mar kasta oo Vaultara la furo.';
+
+  @override
+  String get twoStepAppLockAction => 'Daar qufulka abka';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ma ku jirtaa meel aadan aqoon? Ka bax qalabyada kale.';
+
+  @override
+  String get twoStepReviewDevices => 'Eeg qalabyada';
+
+  @override
+  String get twoStepSkipForNow => 'Ka bood hadda';
+
+  @override
+  String get twoStepOffTitle => 'Xaqiijinta laba-tallaabo waa dansan tahay';
+
+  @override
+  String get twoStepOffBody => 'Waxaad ku gashay kood kayd ah, sidaas darteed xaqiijinta laba-tallaabo waa la damiyay. Mar kale ku deji taleefankan si xisaabtaadu u ahaato mid la ilaaliyo.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years sano',
+      one: '+$years sano',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Qor taariikhda';
+
+  @override
+  String get expiryTypeTitle => 'Qor taariikhda dhicitaanka';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Tusaale $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Taariikhdaasi uma muuqato mid sax ah. Isku day $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Taariikhdani way dhaaftay, sidaas darteed diiwaanka waxaa loo kaydin doonaa sidii mid dhacay.';
+
+  @override
+  String get expiryEndsToday => 'Kani maanta ayuu dhacayaa.';
+
+  @override
+  String get saveAndAddAnother => 'Kaydi oo ku dar mid kale';
+
+  @override
+  String get quickStartTitle => 'Bilow degdeg ah';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name waa la sameeyay. Koox ma lagu daraa?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name waa la sameeyay. Diiwaan ma lagu daraa?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Shahaadooyin';
+
+  @override
+  String get groupIdeaLicences => 'Liisamo';
+
+  @override
+  String get groupIdeaContracts => 'Qandaraasyo';
+
+  @override
+  String get groupIdeaPermits => 'Ruqsado';
+
+  @override
+  String get groupIdeaInsurance => 'Caymis';
+
+  @override
+  String get assistantCategoryAddTitle => 'Qayb cusub';
+
+  @override
+  String get assistantCategoryAddNote => 'Calaamad ayaa laga doortaa magaca. Hadhow waad beddeli kartaa.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Magaca qaybta beddel';
+
+  @override
+  String get assistantGroupAddTitle => 'Koox cusub';
+
+  @override
+  String get assistantGroupRenameTitle => 'Magaca kooxda beddel';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U wareeji $count diiwaan',
+      one: 'U wareeji $count diiwaan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Soo celi diiwaanka';
+
+  @override
+  String get assistantRestoreNote => 'Diiwaanka iyo xasuusinahiisu way soo laabanayaan.';
+
+  @override
+  String get assistantStepCategories => 'Waxaa la hubinayaa qaybahaaga…';
+
+  @override
+  String get assistantStepCosts => 'Waxaa la isku darayaa kharashyada cusboonaysiinta…';
+
+  @override
+  String get assistantStepVisa => 'Waxaa la hubinayaa xeerarka fiisaha…';
 }

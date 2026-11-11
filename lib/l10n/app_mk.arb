@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Закачени категории"
+  "homePinnedTitle": "Закачени категории",
+  "notifAskTitle": "Добивајте ги потсетниците навреме",
+  "notifAskBody": "Vaultara може да ве потсети пред нешто да истече само ако известувањата се дозволени. Испраќаме само потсетници и важни предупредувања за сметката.",
+  "notifAskAllow": "Дозволи известувања",
+  "notifAskLater": "Не сега",
+  "signInTooManyTries": "Премногу обиди. Почекајте малку пред повторен обид или ресетирајте ја лозинката.",
+  "signInWaitSeconds": "{seconds, plural, one{Обидете се повторно за {seconds} секунда} other{Обидете се повторно за {seconds} секунди}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Резервни кодови",
+  "backupCodesIntro": "Ако го изгубите телефонот или апликацијата за автентикација, резервен код ви овозможува најава. Секој код работи еднаш.",
+  "backupCodesShownOnce": "Овие кодови се прикажуваат само еднаш. Зачувајте ги на безбедно место, подалеку од овој телефон.",
+  "backupCodesCopy": "Копирај",
+  "backupCodesSave": "Зачувај или сподели",
+  "backupCodesSaved": "Ги зачував кодовите",
+  "backupCodesLeft": "{count, plural, =0{Нема преостанати резервни кодови} one{Преостанува {count} резервен код} other{Преостануваат {count} резервни кодови}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Направи резервни кодови",
+  "backupCodesMakeNew": "Направи нови кодови",
+  "backupCodesReplaceTitle": "Да се направат нови резервни кодови?",
+  "backupCodesReplaceBody": "Старите кодови веднаш ќе престанат да работат.",
+  "backupCodesFileTitle": "Резервни кодови за Vaultara",
+  "backupCodesEachOnce": "Секој код работи еднаш. Чувајте ги на безбедно место.",
+  "backupCodesCopied": "Резервните кодови се копирани. Ќе се избришат од таблата за минута.",
+  "backupCodesNone": "Сè уште нема направени",
+  "backupCodesTileHint": "Најава ако го изгубите телефонот",
+  "backupCodeUseTitle": "Користи резервен код",
+  "backupCodeUseBody": "Внесете еден од резервните кодови што ги зачувавте. Користењето исклучува потврда во два чекора, за да ја поставите повторно на новиот телефон.",
+  "backupCodeLabel": "Резервен код",
+  "backupCodeFormat": "Резервните кодови изгледаат вака: ABCDE-FGHJK.",
+  "backupCodeWrong": "Тој код не функционираше. Проверете го и обидете се повторно.",
+  "backupCodeBack": "Користи ја мојата апликација за автентикација",
+  "twoStepStepOf": "Чекор {step} од {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Во апликацијата ќе се прикажува како Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Кодовите се менуваат на секои 30 секунди. Внесете го оној што се прикажува сега.",
+  "twoStepPaste": "Залепи",
+  "twoStepBackupNext": "Направете резервни кодови за да можете да се најавите дури и ако го изгубите овој телефон.",
+  "twoStepAppLockTitle": "Заклучете ја и апликацијата",
+  "twoStepAppLockBody": "Двата чекора ја штитат најавата. Заклучувањето на апликацијата бара отпечаток, лице или заклучување на екранот секогаш кога се отвора Vaultara.",
+  "twoStepAppLockAction": "Вклучи заклучување на апликацијата",
+  "twoStepSignOutOthersBody": "Најавени сте некаде што не го препознавате? Одјавете се од другите уреди.",
+  "twoStepReviewDevices": "Прегледај уреди",
+  "twoStepSkipForNow": "Прескокни засега",
+  "twoStepOffTitle": "Потврдата во два чекора е исклучена",
+  "twoStepOffBody": "Се најавивте со резервен код, па потврдата во два чекора е исклучена. Поставете ја повторно на овој телефон за сметката да остане заштитена.",
+  "expiryPlusYears": "{years, plural, one{+{years} година} other{+{years} години}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Внеси датум",
+  "expiryTypeTitle": "Внесете го датумот на истекување",
+  "expiryTypeHint": "На пример {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Тој датум не изгледа точно. Обидете се со {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Овој датум помина, па записот ќе биде зачуван како истечен.",
+  "expiryEndsToday": "Ова истекува денес.",
+  "saveAndAddAnother": "Зачувај и додај уште еден",
+  "quickStartTitle": "Брз почеток",
+  "categoryCreatedAddGroup": "{name} е создадена. Да се додаде група?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} е создадена. Да се додаде запис?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Сертификати",
+  "groupIdeaLicences": "Лиценци",
+  "groupIdeaContracts": "Договори",
+  "groupIdeaPermits": "Дозволи",
+  "groupIdeaInsurance": "Осигурување",
+  "assistantCategoryAddTitle": "Нова категорија",
+  "assistantCategoryAddNote": "Иконата се избира според името. Може да ја смените подоцна.",
+  "assistantCategoryRenameTitle": "Преименувај категорија",
+  "assistantGroupAddTitle": "Нова група",
+  "assistantGroupRenameTitle": "Преименувај група",
+  "assistantMoveTitle": "{count, plural, one{Премести {count} запис} other{Премести {count} записи}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Врати запис",
+  "assistantRestoreNote": "Записот и неговите потсетници се враќаат.",
+  "assistantStepCategories": "Ги проверувам вашите категории…",
+  "assistantStepCosts": "Ги собирам трошоците за обнова…",
+  "assistantStepVisa": "Ги проверувам правилата за визи…"
 }

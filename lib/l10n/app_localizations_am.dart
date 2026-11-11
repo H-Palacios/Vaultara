@@ -8417,4 +8417,253 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'የተሰኩ ምድቦች';
+
+  @override
+  String get notifAskTitle => 'አስታዋሾችዎን በሰዓቱ ያግኙ';
+
+  @override
+  String get notifAskBody => 'Vaultara አንድ ነገር ከማለቁ በፊት ሊያስታውስዎ የሚችለው ማሳወቂያዎች ከተፈቀዱ ብቻ ነው። የምንልከው አስታዋሾችን እና አስፈላጊ የመለያ ማንቂያዎችን ብቻ ነው።';
+
+  @override
+  String get notifAskAllow => 'ማሳወቂያዎችን ፍቀድ';
+
+  @override
+  String get notifAskLater => 'አሁን አይደለም';
+
+  @override
+  String get signInTooManyTries => 'በጣም ብዙ ሙከራዎች። እንደገና ከመሞከርዎ በፊት ትንሽ ይጠብቁ ወይም የይለፍ ቃልዎን ዳግም ያስጀምሩ።';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'በ$seconds ሰከንዶች ውስጥ እንደገና ይሞክሩ',
+      one: 'በ$seconds ሰከንድ ውስጥ እንደገና ይሞክሩ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'የመጠባበቂያ ኮዶች';
+
+  @override
+  String get backupCodesIntro => 'ስልክዎን ወይም የማረጋገጫ መተግበሪያዎን ካጡ፣ የመጠባበቂያ ኮድ እንዲገቡ ያስችልዎታል። እያንዳንዱ ኮድ አንድ ጊዜ ብቻ ይሰራል።';
+
+  @override
+  String get backupCodesShownOnce => 'እነዚህ ኮዶች የሚታዩት አንድ ጊዜ ብቻ ነው። ከዚህ ስልክ ርቀው ደህንነቱ በተጠበቀ ቦታ ያስቀምጧቸው።';
+
+  @override
+  String get backupCodesCopy => 'ቅዳ';
+
+  @override
+  String get backupCodesSave => 'አስቀምጥ ወይም አጋራ';
+
+  @override
+  String get backupCodesSaved => 'ኮዶቼን አስቀምጫለሁ';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count የመጠባበቂያ ኮዶች ቀርተዋል',
+      one: '$count የመጠባበቂያ ኮድ ቀርቷል',
+      zero: 'ምንም የመጠባበቂያ ኮድ አልቀረም',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'የመጠባበቂያ ኮዶችን ፍጠር';
+
+  @override
+  String get backupCodesMakeNew => 'አዲስ ኮዶችን ፍጠር';
+
+  @override
+  String get backupCodesReplaceTitle => 'አዲስ የመጠባበቂያ ኮዶችን ልፍጠር?';
+
+  @override
+  String get backupCodesReplaceBody => 'የድሮ ኮዶችዎ ወዲያውኑ መስራት ያቆማሉ።';
+
+  @override
+  String get backupCodesFileTitle => 'የVaultara የመጠባበቂያ ኮዶች';
+
+  @override
+  String get backupCodesEachOnce => 'እያንዳንዱ ኮድ አንድ ጊዜ ይሰራል። ደህንነቱ በተጠበቀ ቦታ ያስቀምጧቸው።';
+
+  @override
+  String get backupCodesCopied => 'የመጠባበቂያ ኮዶች ተቀድተዋል። በአንድ ደቂቃ ውስጥ ከቅንጥብ ሰሌዳው ይጠፋሉ።';
+
+  @override
+  String get backupCodesNone => 'እስካሁን አልተፈጠረም';
+
+  @override
+  String get backupCodesTileHint => 'ስልክዎን ካጡ ይግቡ';
+
+  @override
+  String get backupCodeUseTitle => 'የመጠባበቂያ ኮድ ተጠቀም';
+
+  @override
+  String get backupCodeUseBody => 'ካስቀመጧቸው የመጠባበቂያ ኮዶች አንዱን ያስገቡ። አንዱን መጠቀም ባለሁለት ደረጃ ማረጋገጫን ያጠፋል፣ ስለዚህ በአዲሱ ስልክዎ ላይ እንደገና ማዋቀር ይችላሉ።';
+
+  @override
+  String get backupCodeLabel => 'የመጠባበቂያ ኮድ';
+
+  @override
+  String get backupCodeFormat => 'የመጠባበቂያ ኮዶች እንደ ABCDE-FGHJK ይመስላሉ።';
+
+  @override
+  String get backupCodeWrong => 'ያ ኮድ አልሰራም። ያረጋግጡና እንደገና ይሞክሩ።';
+
+  @override
+  String get backupCodeBack => 'የማረጋገጫ መተግበሪያዬን ተጠቀም';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ደረጃ $step ከ$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'በመተግበሪያዎ ውስጥ እንደ Vaultara ($email) ሆኖ ይታያል።';
+  }
+
+  @override
+  String get twoStepCodesChange => 'ኮዶች በየ30 ሰከንዱ ይቀየራሉ። አሁን የሚታየውን ያስገቡ።';
+
+  @override
+  String get twoStepPaste => 'ለጥፍ';
+
+  @override
+  String get twoStepBackupNext => 'ይህን ስልክ ቢያጡም መግባት እንዲችሉ የመጠባበቂያ ኮዶችን ይፍጠሩ።';
+
+  @override
+  String get twoStepAppLockTitle => 'መተግበሪያውንም ቆልፍ';
+
+  @override
+  String get twoStepAppLockBody => 'ባለሁለት ደረጃ መግቢያን ይጠብቃል። የመተግበሪያ መቆለፊያ Vaultara በተከፈተ ቁጥር የጣት አሻራዎን፣ ፊትዎን ወይም የማያ ገጽ መቆለፊያዎን ይጠይቃል።';
+
+  @override
+  String get twoStepAppLockAction => 'የመተግበሪያ መቆለፊያን አብራ';
+
+  @override
+  String get twoStepSignOutOthersBody => 'በማያውቁት ቦታ ገብተዋል? ከሌሎች መሳሪያዎች ይውጡ።';
+
+  @override
+  String get twoStepReviewDevices => 'መሳሪያዎችን ይገምግሙ';
+
+  @override
+  String get twoStepSkipForNow => 'ለአሁን ዝለል';
+
+  @override
+  String get twoStepOffTitle => 'ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል';
+
+  @override
+  String get twoStepOffBody => 'በመጠባበቂያ ኮድ ስለገቡ ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል። መለያዎ እንደተጠበቀ እንዲቆይ በዚህ ስልክ ላይ እንደገና ያዋቅሩት።';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ዓመታት',
+      one: '+$years ዓመት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'ቀን ጻፍ';
+
+  @override
+  String get expiryTypeTitle => 'የሚያበቃበትን ቀን ይጻፉ';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'ለምሳሌ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'ያ ቀን ትክክል አይመስልም። $example ይሞክሩ።';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'ይህ ቀን አልፏል፣ ስለዚህ መዝገቡ እንደጊዜው ያለፈበት ሆኖ ይቀመጣል።';
+
+  @override
+  String get expiryEndsToday => 'ይህ ዛሬ ያበቃል።';
+
+  @override
+  String get saveAndAddAnother => 'አስቀምጥና ሌላ አክል';
+
+  @override
+  String get quickStartTitle => 'ፈጣን ጅምር';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name ተፈጥሯል። ቡድን ይጨመርበት?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name ተፈጥሯል። መዝገብ ይጨመርበት?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'የምስክር ወረቀቶች';
+
+  @override
+  String get groupIdeaLicences => 'ፈቃዶች';
+
+  @override
+  String get groupIdeaContracts => 'ውሎች';
+
+  @override
+  String get groupIdeaPermits => 'ፍቃዶች';
+
+  @override
+  String get groupIdeaInsurance => 'ኢንሹራንስ';
+
+  @override
+  String get assistantCategoryAddTitle => 'አዲስ ምድብ';
+
+  @override
+  String get assistantCategoryAddNote => 'አዶ ከስሙ ይመረጣል። በኋላ መቀየር ይችላሉ።';
+
+  @override
+  String get assistantCategoryRenameTitle => 'ምድቡን እንደገና ሰይም';
+
+  @override
+  String get assistantGroupAddTitle => 'አዲስ ቡድን';
+
+  @override
+  String get assistantGroupRenameTitle => 'ቡድኑን እንደገና ሰይም';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መዝገቦችን አንቀሳቅስ',
+      one: '$count መዝገብ አንቀሳቅስ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'መዝገቡን መልስ';
+
+  @override
+  String get assistantRestoreNote => 'መዝገቡ እና አስታዋሾቹ ይመለሳሉ።';
+
+  @override
+  String get assistantStepCategories => 'ምድቦችዎን በመፈተሽ ላይ…';
+
+  @override
+  String get assistantStepCosts => 'የእድሳት ወጪዎችን በማስላት ላይ…';
+
+  @override
+  String get assistantStepVisa => 'የቪዛ ደንቦችን በመፈተሽ ላይ…';
 }

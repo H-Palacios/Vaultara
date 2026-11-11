@@ -8365,4 +8365,253 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Àwọn ẹ̀ka tí a pinni';
+
+  @override
+  String get notifAskTitle => 'Gba àwọn ìrántí rẹ ní àkókò';
+
+  @override
+  String get notifAskBody => 'Vaultara lè rán ọ létí kí nǹkan tó parí nìkan bí a bá gba àwọn ìfitónilétí láàyè. A máa ń fi àwọn ìrántí àti àwọn ìkìlọ̀ àkáǹtì pàtàkì nìkan ránṣẹ́.';
+
+  @override
+  String get notifAskAllow => 'Gba àwọn ìfitónilétí láàyè';
+
+  @override
+  String get notifAskLater => 'Kì í ṣe báyìí';
+
+  @override
+  String get signInTooManyTries => 'Ìgbìyànjú ti pọ̀ jù. Dúró díẹ̀ kí o tó tún gbìyànjú, tàbí tún ọ̀rọ̀ aṣínà rẹ ṣe.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Tún gbìyànjú lẹ́yìn ìṣẹ́jú-àáyá $seconds',
+      one: 'Tún gbìyànjú lẹ́yìn ìṣẹ́jú-àáyá $seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Àwọn kóòdù àfipamọ́';
+
+  @override
+  String get backupCodesIntro => 'Bí o bá pàdánù fóònù rẹ tàbí áàpù ìjẹ́rìísí, kóòdù àfipamọ́ yóò jẹ́ kí o wọlé. Kóòdù kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan.';
+
+  @override
+  String get backupCodesShownOnce => 'Ẹ̀ẹ̀kan ṣoṣo ni a ń fi àwọn kóòdù wọ̀nyí hàn. Fi wọ́n pamọ́ sí ibi ààbò, jìnnà sí fóònù yìí.';
+
+  @override
+  String get backupCodesCopy => 'Dà á kọ';
+
+  @override
+  String get backupCodesSave => 'Fi pamọ́ tàbí pín';
+
+  @override
+  String get backupCodesSaved => 'Mo ti fi àwọn kóòdù mi pamọ́';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kóòdù àfipamọ́ $count ló kù',
+      one: 'Kóòdù àfipamọ́ $count ló kù',
+      zero: 'Kò sí kóòdù àfipamọ́ tó kù',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Ṣe àwọn kóòdù àfipamọ́';
+
+  @override
+  String get backupCodesMakeNew => 'Ṣe àwọn kóòdù tuntun';
+
+  @override
+  String get backupCodesReplaceTitle => 'Ṣe àwọn kóòdù àfipamọ́ tuntun?';
+
+  @override
+  String get backupCodesReplaceBody => 'Àwọn kóòdù àtijọ́ rẹ yóò dáwọ́ iṣẹ́ dúró lẹ́sẹ̀kẹsẹ̀.';
+
+  @override
+  String get backupCodesFileTitle => 'Àwọn kóòdù àfipamọ́ Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Kóòdù kọ̀ọ̀kan ń ṣiṣẹ́ lẹ́ẹ̀kan. Tọ́jú wọn sí ibi ààbò.';
+
+  @override
+  String get backupCodesCopied => 'A ti da àwọn kóòdù àfipamọ́ kọ. A ó pa wọ́n rẹ́ kúrò lórí pátákó ìdàkọ lẹ́yìn ìṣẹ́jú kan.';
+
+  @override
+  String get backupCodesNone => 'Kò tíì sí èyí tí a ṣe';
+
+  @override
+  String get backupCodesTileHint => 'Wọlé bí o bá pàdánù fóònù rẹ';
+
+  @override
+  String get backupCodeUseTitle => 'Lo kóòdù àfipamọ́';
+
+  @override
+  String get backupCodeUseBody => 'Tẹ ọ̀kan nínú àwọn kóòdù àfipamọ́ tí o fi pamọ́. Lílo ọ̀kan yóò pa ìjẹ́rìísí ìgbésẹ̀-méjì, kí o lè tún un ṣètò lórí fóònù tuntun rẹ.';
+
+  @override
+  String get backupCodeLabel => 'Kóòdù àfipamọ́';
+
+  @override
+  String get backupCodeFormat => 'Àwọn kóòdù àfipamọ́ dà bí ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Kóòdù yẹn kò ṣiṣẹ́. Ṣàyẹ̀wò rẹ̀ kí o tún gbìyànjú.';
+
+  @override
+  String get backupCodeBack => 'Lo áàpù ìjẹ́rìísí mi';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Ìgbésẹ̀ $step nínú $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Yóò hàn bí Vaultara ($email) nínú áàpù rẹ.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Àwọn kóòdù ń yípadà ní gbogbo ìṣẹ́jú-àáyá 30. Tẹ èyí tó ń hàn báyìí.';
+
+  @override
+  String get twoStepPaste => 'Lẹ̀ ẹ́';
+
+  @override
+  String get twoStepBackupNext => 'Ṣe àwọn kóòdù àfipamọ́ kí o lè wọlé bí o tilẹ̀ pàdánù fóònù yìí.';
+
+  @override
+  String get twoStepAppLockTitle => 'Ti áàpù náà pa pẹ̀lú';
+
+  @override
+  String get twoStepAppLockBody => 'Ìgbésẹ̀-méjì ń dáàbò bo ìwọlé. Títì áàpù ń béèrè ìka, ojú tàbí títì ojú-ìwé ní gbogbo ìgbà tí a bá ṣí Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Tan títì áàpù';
+
+  @override
+  String get twoStepSignOutOthersBody => 'O ti wọlé níbi tí o kò mọ̀? Jáde kúrò lórí àwọn ẹ̀rọ mìíràn.';
+
+  @override
+  String get twoStepReviewDevices => 'Ṣàyẹ̀wò àwọn ẹ̀rọ';
+
+  @override
+  String get twoStepSkipForNow => 'Fò ó fún báyìí';
+
+  @override
+  String get twoStepOffTitle => 'Ìjẹ́rìísí ìgbésẹ̀-méjì ti wà ní pípa';
+
+  @override
+  String get twoStepOffBody => 'O wọlé pẹ̀lú kóòdù àfipamọ́, nítorí náà a pa ìjẹ́rìísí ìgbésẹ̀-méjì. Tún un ṣètò lórí fóònù yìí kí àkáǹtì rẹ lè wà ní ààbò.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+ọdún $years',
+      one: '+ọdún $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Tẹ ọjọ́';
+
+  @override
+  String get expiryTypeTitle => 'Tẹ ọjọ́ ìparí';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Fún àpẹẹrẹ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ọjọ́ yẹn kò dàbí pé ó tọ̀nà. Gbìyànjú $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ọjọ́ yìí ti kọjá, nítorí náà a ó fi àkọsílẹ̀ náà pamọ́ bí èyí tó ti parí.';
+
+  @override
+  String get expiryEndsToday => 'Èyí ń parí lónìí.';
+
+  @override
+  String get saveAndAddAnother => 'Fi pamọ́ kí o sì fi òmíràn kún un';
+
+  @override
+  String get quickStartTitle => 'Ìbẹ̀rẹ̀ kíákíá';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'A ti ṣe $name. Fi ẹgbẹ́ kún un?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'A ti ṣe $name. Fi àkọsílẹ̀ kún un?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Àwọn ìwé-ẹ̀rí';
+
+  @override
+  String get groupIdeaLicences => 'Àwọn ìwé-àṣẹ';
+
+  @override
+  String get groupIdeaContracts => 'Àwọn àdéhùn';
+
+  @override
+  String get groupIdeaPermits => 'Àwọn ìyọ̀ǹda';
+
+  @override
+  String get groupIdeaInsurance => 'Ìbánigbófò';
+
+  @override
+  String get assistantCategoryAddTitle => 'Ẹ̀ka tuntun';
+
+  @override
+  String get assistantCategoryAddNote => 'A ń yan àmì láti inú orúkọ. O lè yí i padà nígbà míì.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Yí orúkọ ẹ̀ka padà';
+
+  @override
+  String get assistantGroupAddTitle => 'Ẹgbẹ́ tuntun';
+
+  @override
+  String get assistantGroupRenameTitle => 'Yí orúkọ ẹgbẹ́ padà';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gbé àwọn àkọsílẹ̀ $count lọ',
+      one: 'Gbé àkọsílẹ̀ $count lọ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Dá àkọsílẹ̀ padà';
+
+  @override
+  String get assistantRestoreNote => 'Àkọsílẹ̀ náà àti àwọn ìrántí rẹ̀ yóò padà.';
+
+  @override
+  String get assistantStepCategories => 'Ń ṣàyẹ̀wò àwọn ẹ̀ka rẹ…';
+
+  @override
+  String get assistantStepCosts => 'Ń ṣe àròpọ̀ owó ìsọdọ̀tun…';
+
+  @override
+  String get assistantStepVisa => 'Ń ṣàyẹ̀wò àwọn òfin físà…';
 }

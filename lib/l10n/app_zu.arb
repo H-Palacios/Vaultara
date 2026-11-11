@@ -3073,5 +3073,146 @@
       }
     }
   },
-  "homePinnedTitle": "Izigaba eziphiniwe"
+  "homePinnedTitle": "Izigaba eziphiniwe",
+  "notifAskTitle": "Thola izikhumbuzi zakho ngesikhathi",
+  "notifAskBody": "I-Vaultara ingakukhumbuza ngaphambi kokuba okuthile kuphelelwe yisikhathi kuphela uma izaziso zivunyelwe. Sithumela izikhumbuzi nezexwayiso ezibalulekile ze-akhawunti kuphela.",
+  "notifAskAllow": "Vumela izaziso",
+  "notifAskLater": "Hhayi manje",
+  "signInTooManyTries": "Imizamo eminingi kakhulu. Linda kancane ngaphambi kokuzama futhi, noma usethe kabusha iphasiwedi yakho.",
+  "signInWaitSeconds": "{seconds, plural, one{Zama futhi emuva kwamasekhondi angu-{seconds}} other{Zama futhi emuva kwamasekhondi angu-{seconds}}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Amakhodi okulondoloza",
+  "backupCodesIntro": "Uma ulahlekelwa ifoni noma uhlelo lokuqinisekisa, ikhodi yokulondoloza ikuvumela ukuthi ungene. Ikhodi ngayinye isebenza kanye.",
+  "backupCodesShownOnce": "Lawa makhodi aboniswa kanye kuphela. Wagcine endaweni ephephile, kude nale foni.",
+  "backupCodesCopy": "Kopisha",
+  "backupCodesSave": "Londoloza noma wabelane",
+  "backupCodesSaved": "Ngiwalondolozile amakhodi ami",
+  "backupCodesLeft": "{count, plural, =0{Ayikho ikhodi yokulondoloza esele} one{Kusele ikhodi yokulondoloza engu-{count}} other{Kusele amakhodi okulondoloza angu-{count}}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Yenza amakhodi okulondoloza",
+  "backupCodesMakeNew": "Yenza amakhodi amasha",
+  "backupCodesReplaceTitle": "Wenze amakhodi okulondoloza amasha?",
+  "backupCodesReplaceBody": "Amakhodi akho amadala azoyeka ukusebenza ngokushesha.",
+  "backupCodesFileTitle": "Amakhodi okulondoloza e-Vaultara",
+  "backupCodesEachOnce": "Ikhodi ngayinye isebenza kanye. Wagcine endaweni ephephile.",
+  "backupCodesCopied": "Amakhodi okulondoloza akopishiwe. Azosulwa ebhodini lokunamathisela emva komzuzu.",
+  "backupCodesNone": "Akukenziwa noyedwa okwamanje",
+  "backupCodesTileHint": "Ngena uma ulahlekelwe ifoni",
+  "backupCodeUseTitle": "Sebenzisa ikhodi yokulondoloza",
+  "backupCodeUseBody": "Faka eyodwa yamakhodi okulondoloza owagcinile. Ukuyisebenzisa kuvala ukuqinisekisa ngezinyathelo ezimbili, ukuze ukusethe futhi efonini yakho entsha.",
+  "backupCodeLabel": "Ikhodi yokulondoloza",
+  "backupCodeFormat": "Amakhodi okulondoloza abukeka kanje: ABCDE-FGHJK.",
+  "backupCodeWrong": "Leyo khodi ayisebenzanga. Yihlole bese uzama futhi.",
+  "backupCodeBack": "Sebenzisa uhlelo lwami lokuqinisekisa",
+  "twoStepStepOf": "Isinyathelo {step} kwezingu-{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Kuzovela njenge-Vaultara ({email}) kuhlelo lwakho.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Amakhodi ashintsha njalo emasekhondini angu-30. Faka ebonakalayo manje.",
+  "twoStepPaste": "Namathisela",
+  "twoStepBackupNext": "Yenza amakhodi okulondoloza ukuze ukwazi ukungena noma ulahlekelwe yile foni.",
+  "twoStepAppLockTitle": "Khiya nohlelo",
+  "twoStepAppLockBody": "Izinyathelo ezimbili zivikela ukungena. Ukhiye wohlelo ucela isigxivizo somunwe, ubuso noma ukhiye wesikrini njalo uma i-Vaultara ivulwa.",
+  "twoStepAppLockAction": "Vula ukhiye wohlelo",
+  "twoStepSignOutOthersBody": "Ungene endaweni ongayazi? Phuma kwamanye amadivayisi.",
+  "twoStepReviewDevices": "Buyekeza amadivayisi",
+  "twoStepSkipForNow": "Yeqa okwamanje",
+  "twoStepOffTitle": "Ukuqinisekisa ngezinyathelo ezimbili kuvaliwe",
+  "twoStepOffBody": "Ungene ngekhodi yokulondoloza, ngakho ukuqinisekisa ngezinyathelo ezimbili kwavalwa. Kusethe futhi kule foni ukuze i-akhawunti yakho ihlale ivikelekile.",
+  "expiryPlusYears": "{years, plural, one{+unyaka ongu-{years}} other{+iminyaka engu-{years}}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Thayipha usuku",
+  "expiryTypeTitle": "Thayipha usuku lokuphelelwa",
+  "expiryTypeHint": "Isibonelo {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Lolo suku alubukeki luqondile. Zama u-{example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Lolu suku seludlulile, ngakho irekhodi lizolondolozwa njengeliphelelwe yisikhathi.",
+  "expiryEndsToday": "Lokhu kuphelelwa namuhla.",
+  "saveAndAddAnother": "Londoloza bese wengeza enye",
+  "quickStartTitle": "Ukuqala ngokushesha",
+  "categoryCreatedAddGroup": "I-{name} yenziwe. Ingezwe iqembu?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "I-{name} yenziwe. Ingezwe irekhodi?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Izitifiketi",
+  "groupIdeaLicences": "Amalayisense",
+  "groupIdeaContracts": "Izinkontileka",
+  "groupIdeaPermits": "Izimvume",
+  "groupIdeaInsurance": "Umshwalense",
+  "assistantCategoryAddTitle": "Isigaba esisha",
+  "assistantCategoryAddNote": "Isithonjana sikhethwa ngokwegama. Ungasishintsha kamuva.",
+  "assistantCategoryRenameTitle": "Qamba kabusha isigaba",
+  "assistantGroupAddTitle": "Iqembu elisha",
+  "assistantGroupRenameTitle": "Qamba kabusha iqembu",
+  "assistantMoveTitle": "{count, plural, one{Hambisa irekhodi elingu-{count}} other{Hambisa amarekhodi angu-{count}}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Buyisa irekhodi",
+  "assistantRestoreNote": "Irekhodi nezikhumbuzi zalo kuyabuya.",
+  "assistantStepCategories": "Kuhlolwa izigaba zakho…",
+  "assistantStepCosts": "Kuhlanganiswa izindleko zokuvuselela…",
+  "assistantStepVisa": "Kuhlolwa imithetho ye-visa…"
 }

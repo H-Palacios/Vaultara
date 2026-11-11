@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "ピン留めしたカテゴリ"
+  "homePinnedTitle": "ピン留めしたカテゴリ",
+  "notifAskTitle": "リマインダーを時間どおりに受け取る",
+  "notifAskBody": "Vaultara が期限切れの前にお知らせできるのは、通知が許可されている場合だけです。送信するのはリマインダーと重要なアカウント通知のみです。",
+  "notifAskAllow": "通知を許可",
+  "notifAskLater": "今はしない",
+  "signInTooManyTries": "試行回数が多すぎます。少し待ってからもう一度お試しいただくか、パスワードをリセットしてください。",
+  "signInWaitSeconds": "{seconds, plural, other{{seconds} 秒後にもう一度お試しください}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "バックアップコード",
+  "backupCodesIntro": "スマートフォンや認証アプリをなくした場合は、バックアップコードでログインできます。各コードは 1 回だけ使えます。",
+  "backupCodesShownOnce": "これらのコードは一度しか表示されません。このスマートフォン以外の安全な場所に保存してください。",
+  "backupCodesCopy": "コピー",
+  "backupCodesSave": "保存または共有",
+  "backupCodesSaved": "コードを保存しました",
+  "backupCodesLeft": "{count, plural, =0{バックアップコードは残っていません} other{バックアップコード残り {count} 個}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "バックアップコードを作成",
+  "backupCodesMakeNew": "新しいコードを作成",
+  "backupCodesReplaceTitle": "新しいバックアップコードを作成しますか？",
+  "backupCodesReplaceBody": "古いコードはすぐに使えなくなります。",
+  "backupCodesFileTitle": "Vaultara バックアップコード",
+  "backupCodesEachOnce": "各コードは 1 回だけ使えます。安全な場所に保管してください。",
+  "backupCodesCopied": "バックアップコードをコピーしました。1 分後にクリップボードから消去されます。",
+  "backupCodesNone": "まだ作成されていません",
+  "backupCodesTileHint": "スマートフォンをなくしたときのログイン用",
+  "backupCodeUseTitle": "バックアップコードを使う",
+  "backupCodeUseBody": "保存したバックアップコードのいずれかを入力してください。使用すると 2 段階認証がオフになるので、新しいスマートフォンで設定し直せます。",
+  "backupCodeLabel": "バックアップコード",
+  "backupCodeFormat": "バックアップコードは ABCDE-FGHJK のような形式です。",
+  "backupCodeWrong": "このコードは使えませんでした。確認してもう一度お試しください。",
+  "backupCodeBack": "認証アプリを使う",
+  "twoStepStepOf": "ステップ {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "アプリには Vaultara ({email}) と表示されます。",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "コードは 30 秒ごとに変わります。今表示されているコードを入力してください。",
+  "twoStepPaste": "貼り付け",
+  "twoStepBackupNext": "このスマートフォンをなくしてもログインできるように、バックアップコードを作成してください。",
+  "twoStepAppLockTitle": "アプリもロックする",
+  "twoStepAppLockBody": "2 段階認証はログインを守ります。アプリロックは Vaultara を開くたびに指紋、顔、または画面ロックを求めます。",
+  "twoStepAppLockAction": "アプリロックをオンにする",
+  "twoStepSignOutOthersBody": "心当たりのない場所でログインしていますか？他のデバイスからログアウトしてください。",
+  "twoStepReviewDevices": "デバイスを確認",
+  "twoStepSkipForNow": "今はスキップ",
+  "twoStepOffTitle": "2 段階認証はオフです",
+  "twoStepOffBody": "バックアップコードでログインしたため、2 段階認証がオフになりました。アカウントを守るため、このスマートフォンで設定し直してください。",
+  "expiryPlusYears": "{years, plural, other{+{years} 年}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "日付を入力",
+  "expiryTypeTitle": "有効期限を入力",
+  "expiryTypeHint": "例: {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "その日付は正しくないようです。{example} の形式で入力してください。",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "この日付は過ぎているため、記録は期限切れとして保存されます。",
+  "expiryEndsToday": "今日が期限です。",
+  "saveAndAddAnother": "保存してもう 1 件追加",
+  "quickStartTitle": "クイックスタート",
+  "categoryCreatedAddGroup": "{name} を作成しました。グループを追加しますか？",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} を作成しました。記録を追加しますか？",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "証明書",
+  "groupIdeaLicences": "ライセンス",
+  "groupIdeaContracts": "契約",
+  "groupIdeaPermits": "許可証",
+  "groupIdeaInsurance": "保険",
+  "assistantCategoryAddTitle": "新しいカテゴリ",
+  "assistantCategoryAddNote": "名前からアイコンが選ばれます。あとで変更できます。",
+  "assistantCategoryRenameTitle": "カテゴリ名を変更",
+  "assistantGroupAddTitle": "新しいグループ",
+  "assistantGroupRenameTitle": "グループ名を変更",
+  "assistantMoveTitle": "{count, plural, other{{count} 件の記録を移動}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "記録を復元",
+  "assistantRestoreNote": "記録とそのリマインダーが元に戻ります。",
+  "assistantStepCategories": "カテゴリを確認しています…",
+  "assistantStepCosts": "更新費用を計算しています…",
+  "assistantStepVisa": "ビザの規則を確認しています…"
 }
