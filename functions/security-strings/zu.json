@@ -73,5 +73,20 @@
   "deleteButton": "Buyekeza beseususa",
   "deleteExpiry": "Isixhumanisi sisebenza kanye futhi siphelelwa yisikhathi ehoreni eli-1.",
   "deleteNotYou": "Uma ungacelanga lokhu, ungayishaya indiva le imeyili. I-akhawunti yakho ihlala injengoba injalo.",
-  "deleteFooter": "Sithumela le imeyili ngoba othile ucele ukususa i-akhawunti ye-Vaultara yaleli kheli."
+  "deleteFooter": "Sithumela le imeyili ngoba othile ucele ukususa i-akhawunti ye-Vaultara yaleli kheli.",
+
+  "signUpCodeSubject": "{code} yikhodi yakho ye-Vaultara",
+  "signUpCodeHeading": "Qedela ukwenza i-akhawunti yakho",
+  "signUpCodeBody": "Faka le khodi ku-Vaultara ukuze uqedele ukwenza i-akhawunti yakho.",
+  "signUpCodeExpiry": "Ikhodi iphelelwa yisikhathi emizuzwini engu-10. Uma ungazamanga ukwenza i-akhawunti ye-Vaultara, ungayishaya indiva le imeyili. Ayikho i-akhawunti eyenziwayo ngaphandle kwekhodi.",
+  "alreadyRegisteredSubject": "Usuvele une-akhawunti ye-Vaultara",
+  "alreadyRegisteredHeading": "Usuvele une-akhawunti",
+  "alreadyRegisteredBody": "Othile usanda kuzama ukwenza i-akhawunti ye-Vaultara ngaleli kheli le-imeyili. Usuvele unayo, ngakho ayikho i-akhawunti entsha eyenziwe.",
+  "alreadyRegisteredSignIn": "Uma bekunguwe, ngena ngephasiwedi yakho kuhlelo lokusebenza. Uyikhohliwe? Khetha entsha ngenkinobho engezansi.",
+  "alreadyRegisteredButton": "Khetha iphasiwedi entsha",
+  "alreadyRegisteredNotYou": "Uma bekungeyena wena, akudingeki wenze lutho. I-akhawunti yakho ayishintshile.",
+  "noAccountSubject": "Ayikho i-akhawunti ye-Vaultara yale imeyili",
+  "noAccountHeading": "Ayikho i-akhawunti ngale imeyili",
+  "noAccountBody": "Othile ucele ukusetha kabusha iphasiwedi ye-Vaultara yaleli kheli le-imeyili, kodwa ayikho i-akhawunti ye-Vaultara yalo. Uma bekunguwe, mhlawumbe wabhalisa ngelinye ikheli le-imeyili, noma ungenza i-akhawunti kuhlelo lokusebenza.",
+  "noAccountNotYou": "Uma bekungeyena wena, ungayishaya indiva le imeyili."
 }

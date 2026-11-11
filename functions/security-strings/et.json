@@ -73,5 +73,20 @@
   "deleteButton": "Vaata üle ja kustuta",
   "deleteExpiry": "Link töötab ühe korra ja aegub 1 tunni pärast.",
   "deleteNotYou": "Kui sa seda ei taotlenud, võid selle e-kirja eirata. Sinu konto jääb täpselt selliseks, nagu see on.",
-  "deleteFooter": "Saadame selle e-kirja, sest keegi palus kustutada selle aadressiga seotud Vaultara konto."
+  "deleteFooter": "Saadame selle e-kirja, sest keegi palus kustutada selle aadressiga seotud Vaultara konto.",
+
+  "signUpCodeSubject": "{code} on sinu Vaultara kood",
+  "signUpCodeHeading": "Lõpeta oma konto loomine",
+  "signUpCodeBody": "Sisesta see kood Vaultarasse, et konto loomine lõpetada.",
+  "signUpCodeExpiry": "Kood aegub 10 minuti pärast. Kui sa ei proovinud Vaultara kontot luua, võid seda kirja eirata. Ilma koodita kontot ei looda.",
+  "alreadyRegisteredSubject": "Sul on juba Vaultara konto",
+  "alreadyRegisteredHeading": "Sul on juba konto",
+  "alreadyRegisteredBody": "Keegi proovis just selle e-posti aadressiga Vaultara kontot luua. Sul on see juba olemas, seega uut kontot ei loodud.",
+  "alreadyRegisteredSignIn": "Kui see olid sina, logi rakenduses parooliga sisse. Unustasid? Vali allpool oleva nupuga uus.",
+  "alreadyRegisteredButton": "Vali uus parool",
+  "alreadyRegisteredNotYou": "Kui see polnud sina, ei pea sa midagi tegema. Sinu konto pole muutunud.",
+  "noAccountSubject": "Sellele e-postile pole Vaultara kontot",
+  "noAccountHeading": "Selle e-postiga kontot pole",
+  "noAccountBody": "Keegi palus selle e-posti aadressi Vaultara parooli lähtestada, kuid sellele pole Vaultara kontot. Kui see olid sina, registreerusid ehk teise e-posti aadressiga või saad rakenduses konto luua.",
+  "noAccountNotYou": "Kui see polnud sina, võid seda kirja eirata."
 }

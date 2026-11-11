@@ -73,5 +73,20 @@
   "deleteButton": "Vérifier et supprimer",
   "deleteExpiry": "Le lien ne fonctionne qu'une fois et expire dans 1 heure.",
   "deleteNotYou": "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet e-mail. Votre compte reste exactement tel qu'il est.",
-  "deleteFooter": "Nous vous envoyons cet e-mail car quelqu'un a demandé la suppression du compte Vaultara associé à cette adresse."
+  "deleteFooter": "Nous vous envoyons cet e-mail car quelqu'un a demandé la suppression du compte Vaultara associé à cette adresse.",
+
+  "signUpCodeSubject": "{code} est votre code Vaultara",
+  "signUpCodeHeading": "Terminez la création de votre compte",
+  "signUpCodeBody": "Saisissez ce code dans Vaultara pour terminer la création de votre compte.",
+  "signUpCodeExpiry": "Le code expire dans 10 minutes. Si vous n'avez pas essayé de créer un compte Vaultara, vous pouvez ignorer cet e-mail. Aucun compte n'est créé sans ce code.",
+  "alreadyRegisteredSubject": "Vous avez déjà un compte Vaultara",
+  "alreadyRegisteredHeading": "Vous avez déjà un compte",
+  "alreadyRegisteredBody": "Quelqu'un vient d'essayer de créer un compte Vaultara avec cette adresse e-mail. Vous en avez déjà un, donc aucun nouveau compte n'a été créé.",
+  "alreadyRegisteredSignIn": "Si c'était vous, connectez-vous avec votre mot de passe dans l'application. Vous l'avez oublié ? Choisissez-en un nouveau avec le bouton ci-dessous.",
+  "alreadyRegisteredButton": "Choisir un nouveau mot de passe",
+  "alreadyRegisteredNotYou": "Si ce n'était pas vous, vous n'avez rien à faire. Votre compte n'a pas changé.",
+  "noAccountSubject": "Aucun compte Vaultara pour cette adresse",
+  "noAccountHeading": "Aucun compte avec cette adresse",
+  "noAccountBody": "Quelqu'un a demandé à réinitialiser le mot de passe Vaultara de cette adresse e-mail, mais aucun compte Vaultara n'y est associé. Si c'était vous, vous vous êtes peut-être inscrit avec une autre adresse, ou vous pouvez créer un compte dans l'application.",
+  "noAccountNotYou": "Si ce n'était pas vous, vous pouvez ignorer cet e-mail."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Gaan na en vee uit",
   "deleteExpiry": "Die skakel werk een keer en verval oor 1 uur.",
   "deleteNotYou": "As jy nie hiervoor gevra het nie, kan jy hierdie e-pos ignoreer. Jou rekening bly presies soos dit is.",
-  "deleteFooter": "Ons stuur hierdie e-pos omdat iemand gevra het om die Vaultara-rekening vir hierdie adres uit te vee."
+  "deleteFooter": "Ons stuur hierdie e-pos omdat iemand gevra het om die Vaultara-rekening vir hierdie adres uit te vee.",
+
+  "signUpCodeSubject": "{code} is jou Vaultara-kode",
+  "signUpCodeHeading": "Voltooi die skep van jou rekening",
+  "signUpCodeBody": "Voer hierdie kode in Vaultara in om die skep van jou rekening te voltooi.",
+  "signUpCodeExpiry": "Die kode verval oor 10 minute. As jy nie probeer het om 'n Vaultara-rekening te skep nie, kan jy hierdie e-pos ignoreer. Geen rekening word sonder die kode geskep nie.",
+  "alreadyRegisteredSubject": "Jy het reeds 'n Vaultara-rekening",
+  "alreadyRegisteredHeading": "Jy het reeds 'n rekening",
+  "alreadyRegisteredBody": "Iemand het pas probeer om 'n Vaultara-rekening met hierdie e-posadres te skep. Jy het reeds een, dus is geen nuwe rekening geskep nie.",
+  "alreadyRegisteredSignIn": "As dit jy was, meld aan met jou wagwoord in die app. Vergeet? Kies 'n nuwe een met die knoppie hieronder.",
+  "alreadyRegisteredButton": "Kies 'n nuwe wagwoord",
+  "alreadyRegisteredNotYou": "As dit nie jy was nie, hoef jy niks te doen nie. Jou rekening het nie verander nie.",
+  "noAccountSubject": "Daar is geen Vaultara-rekening vir hierdie e-pos nie",
+  "noAccountHeading": "Geen rekening met hierdie e-pos nie",
+  "noAccountBody": "Iemand het gevra om die Vaultara-wagwoord vir hierdie e-posadres terug te stel, maar daar is geen Vaultara-rekening daarvoor nie. As dit jy was, het jy dalk met 'n ander e-posadres aangemeld, of jy kan 'n rekening in die app skep.",
+  "noAccountNotYou": "As dit nie jy was nie, kan jy hierdie e-pos ignoreer."
 }

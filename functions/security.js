@@ -40,8 +40,27 @@ function isDisposable(email) {
   return false;
 }
 
+// Password accounts are made by the startSignUp and completeSignUp
+// functions (signup.js), which never reveal whether an email is taken. The
+// Admin SDK they use does not run this function, so anything that reaches it
+// with a password came straight to the Firebase Auth API, around the app.
+// Older app versions sign up that way, so this is only enforced once
+// BLOCK_DIRECT_PASSWORD_SIGNUP=true is set, after those versions are gone.
+// Google and Apple sign-ins still create their accounts here.
+function isPasswordSignUp(event) {
+  const provider = event.additionalUserInfo?.providerId || event.credential?.providerId || "";
+  if (provider === "password") return true;
+  const providers = (event.data?.providerData || []).map((p) => p?.providerId);
+  return providers.length > 0 && providers.every((id) => id === "password");
+}
+
 exports.beforeSignup = beforeUserCreated({ maxInstances: 10 }, async (event) => {
   const email = event.data?.email || "";
+
+  if (process.env.BLOCK_DIRECT_PASSWORD_SIGNUP === "true" && isPasswordSignUp(event)) {
+    logger.warn("signup blocked: direct password sign-up");
+    throw new HttpsError("permission-denied", "use-the-app");
+  }
 
   if (isDisposable(email)) {
     logger.warn("signup blocked: disposable email");
@@ -949,6 +968,7 @@ exports.pruneSecurityDataJob = onSchedule(
 exports.deleteAccountNow = deleteAccountNow;
 exports.logSecurityEvent = logSecurityEvent;
 exports.queueSecurityAlert = queueSecurityAlert;
+exports.isDisposable = isDisposable;
 exports.parseUserAgent = parseUserAgent;
 exports.maskIp = maskIp;
 exports.maskEmail = maskEmail;

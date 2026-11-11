@@ -73,5 +73,20 @@
   "deleteButton": "Tinjau dan hapus",
   "deleteExpiry": "Tautan hanya berfungsi sekali dan kedaluwarsa dalam 1 jam.",
   "deleteNotYou": "Jika Anda tidak memintanya, Anda dapat mengabaikan email ini. Akun Anda tetap seperti semula.",
-  "deleteFooter": "Kami mengirim email ini karena seseorang meminta penghapusan akun Vaultara untuk alamat ini."
+  "deleteFooter": "Kami mengirim email ini karena seseorang meminta penghapusan akun Vaultara untuk alamat ini.",
+
+  "signUpCodeSubject": "{code} adalah kode Vaultara Anda",
+  "signUpCodeHeading": "Selesaikan pembuatan akun Anda",
+  "signUpCodeBody": "Masukkan kode ini di Vaultara untuk menyelesaikan pembuatan akun Anda.",
+  "signUpCodeExpiry": "Kode berlaku 10 menit. Jika Anda tidak mencoba membuat akun Vaultara, abaikan email ini. Tidak ada akun yang dibuat tanpa kode ini.",
+  "alreadyRegisteredSubject": "Anda sudah punya akun Vaultara",
+  "alreadyRegisteredHeading": "Anda sudah punya akun",
+  "alreadyRegisteredBody": "Seseorang baru saja mencoba membuat akun Vaultara dengan alamat email ini. Anda sudah punya akun, jadi tidak ada akun baru yang dibuat.",
+  "alreadyRegisteredSignIn": "Jika itu Anda, masuk dengan kata sandi Anda di aplikasi. Lupa? Pilih yang baru dengan tombol di bawah.",
+  "alreadyRegisteredButton": "Pilih kata sandi baru",
+  "alreadyRegisteredNotYou": "Jika itu bukan Anda, tidak perlu melakukan apa pun. Akun Anda tidak berubah.",
+  "noAccountSubject": "Tidak ada akun Vaultara untuk email ini",
+  "noAccountHeading": "Tidak ada akun dengan email ini",
+  "noAccountBody": "Seseorang meminta reset kata sandi Vaultara untuk alamat email ini, tetapi tidak ada akun Vaultara untuknya. Jika itu Anda, mungkin Anda mendaftar dengan alamat email lain, atau Anda bisa membuat akun di aplikasi.",
+  "noAccountNotYou": "Jika itu bukan Anda, abaikan email ini."
 }

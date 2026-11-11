@@ -73,5 +73,20 @@
   "deleteButton": "Jonga uze ucime",
   "deleteExpiry": "Ikhonkco lisebenza kanye kwaye liphelelwa lixesha kwiyure e-1.",
   "deleteNotYou": "Ukuba awukhange ucele oku, ungayihoya le imeyile. Iakhawunti yakho ihlala injengoko injalo.",
-  "deleteFooter": "Sithumela le imeyile kuba umntu othile ucele ukucima iakhawunti ye-Vaultara yale dilesi."
+  "deleteFooter": "Sithumela le imeyile kuba umntu othile ucele ukucima iakhawunti ye-Vaultara yale dilesi.",
+
+  "signUpCodeSubject": "{code} yikhowudi yakho ye-Vaultara",
+  "signUpCodeHeading": "Gqiba ukwenza i-akhawunti yakho",
+  "signUpCodeBody": "Faka le khowudi kwi-Vaultara ukuze ugqibe ukwenza i-akhawunti yakho.",
+  "signUpCodeExpiry": "Ikhowudi iphelelwa lixesha kwimizuzu eli-10. Ukuba awuzamanga ukwenza i-akhawunti ye-Vaultara, ungayihoya le imeyile. Akukho akhawunti yenziwayo ngaphandle kwekhowudi.",
+  "alreadyRegisteredSubject": "Sele une-akhawunti ye-Vaultara",
+  "alreadyRegisteredHeading": "Sele une-akhawunti",
+  "alreadyRegisteredBody": "Umntu othile usandul' ukuzama ukwenza i-akhawunti ye-Vaultara ngale dilesi ye-imeyile. Sele unayo, ngoko akukho akhawunti intsha yenziweyo.",
+  "alreadyRegisteredSignIn": "Ukuba ibinguwe, ngena ngegama lakho lokugqitha kwi-app. Ulibele? Khetha elitsha ngeqhosha elingezantsi.",
+  "alreadyRegisteredButton": "Khetha igama lokugqitha elitsha",
+  "alreadyRegisteredNotYou": "Ukuba ibingengowe, akukho nto ufuneka uyenze. I-akhawunti yakho ayitshintshanga.",
+  "noAccountSubject": "Akukho akhawunti ye-Vaultara yale imeyile",
+  "noAccountHeading": "Akukho akhawunti ngale imeyile",
+  "noAccountBody": "Umntu othile ucele ukuseta kwakhona igama lokugqitha le-Vaultara kule dilesi ye-imeyile, kodwa akukho akhawunti ye-Vaultara yayo. Ukuba ibinguwe, mhlawumbi wabhalisa ngenye idilesi ye-imeyile, okanye ungenza i-akhawunti kwi-app.",
+  "noAccountNotYou": "Ukuba ibingengowe, ungayihoya le imeyile."
 }

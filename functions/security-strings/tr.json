@@ -73,5 +73,20 @@
   "deleteButton": "İncele ve sil",
   "deleteExpiry": "Bağlantı bir kez çalışır ve 1 saat içinde geçerliliğini yitirir.",
   "deleteNotYou": "Bunu siz istemediyseniz, bu e-postayı yok sayabilirsiniz. Hesabınız olduğu gibi kalır.",
-  "deleteFooter": "Bu e-postayı, birisi bu adrese ait Vaultara hesabının silinmesini istediği için gönderiyoruz."
+  "deleteFooter": "Bu e-postayı, birisi bu adrese ait Vaultara hesabının silinmesini istediği için gönderiyoruz.",
+
+  "signUpCodeSubject": "{code} Vaultara kodunuzdur",
+  "signUpCodeHeading": "Hesabınızı oluşturmayı tamamlayın",
+  "signUpCodeBody": "Hesabınızı oluşturmayı tamamlamak için bu kodu Vaultara'ya girin.",
+  "signUpCodeExpiry": "Kodun süresi 10 dakika içinde dolar. Vaultara hesabı oluşturmaya çalışmadıysanız bu e-postayı yok sayabilirsiniz. Kod olmadan hesap oluşturulmaz.",
+  "alreadyRegisteredSubject": "Zaten bir Vaultara hesabınız var",
+  "alreadyRegisteredHeading": "Zaten bir hesabınız var",
+  "alreadyRegisteredBody": "Biri az önce bu e-posta adresiyle Vaultara hesabı oluşturmaya çalıştı. Zaten bir hesabınız olduğu için yeni hesap oluşturulmadı.",
+  "alreadyRegisteredSignIn": "Sizseniz uygulamada şifrenizle giriş yapın. Unuttunuz mu? Aşağıdaki düğmeyle yeni bir şifre seçin.",
+  "alreadyRegisteredButton": "Yeni şifre seç",
+  "alreadyRegisteredNotYou": "Siz değilseniz hiçbir şey yapmanız gerekmez. Hesabınız değişmedi.",
+  "noAccountSubject": "Bu e-posta için Vaultara hesabı yok",
+  "noAccountHeading": "Bu e-postayla hesap yok",
+  "noAccountBody": "Biri bu e-posta adresi için Vaultara şifresinin sıfırlanmasını istedi, ancak bu adres için Vaultara hesabı yok. Sizseniz belki başka bir e-posta adresiyle kaydoldunuz veya uygulamada hesap oluşturabilirsiniz.",
+  "noAccountNotYou": "Siz değilseniz bu e-postayı yok sayabilirsiniz."
 }

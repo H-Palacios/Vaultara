@@ -87,5 +87,20 @@
   "deleteButton": "Review and delete",
   "deleteExpiry": "The link works once and expires in 1 hour.",
   "deleteNotYou": "If you did not ask for this, you can ignore this email. Your account stays exactly as it is.",
-  "deleteFooter": "We send this email because someone asked to delete the Vaultara account for this address."
+  "deleteFooter": "We send this email because someone asked to delete the Vaultara account for this address.",
+
+  "signUpCodeSubject": "{code} is your Vaultara code",
+  "signUpCodeHeading": "Finish creating your account",
+  "signUpCodeBody": "Enter this code in Vaultara to finish creating your account.",
+  "signUpCodeExpiry": "The code expires in 10 minutes. If you did not try to create a Vaultara account, you can ignore this email. No account is made without the code.",
+  "alreadyRegisteredSubject": "You already have a Vaultara account",
+  "alreadyRegisteredHeading": "You already have an account",
+  "alreadyRegisteredBody": "Someone just tried to create a Vaultara account with this email address. You already have one, so no new account was made.",
+  "alreadyRegisteredSignIn": "If it was you, sign in with your password in the app. Forgot it? Choose a new one with the button below.",
+  "alreadyRegisteredButton": "Choose a new password",
+  "alreadyRegisteredNotYou": "If this was not you, you do not need to do anything. Your account has not changed.",
+  "noAccountSubject": "There is no Vaultara account for this email",
+  "noAccountHeading": "No account with this email",
+  "noAccountBody": "Someone asked to reset the Vaultara password for this email address, but there is no Vaultara account for it. If it was you, you may have signed up with a different email address, or you can create an account in the app.",
+  "noAccountNotYou": "If this was not you, you can ignore this email."
 }

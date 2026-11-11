@@ -73,5 +73,20 @@
   "deleteButton": "Dib u eeg oo tirtir",
   "deleteExpiry": "Link-gu hal mar ayuu shaqeeyaa wuxuuna dhacayaa 1 saac kadib.",
   "deleteNotYou": "Haddii aadan tan codsan, iska indha tir iimaylkan. Akoonkaagu sidiisa ayuu ahaanayaa.",
-  "deleteFooter": "Waxaan kuu soo dirnay iimaylkan sababtoo ah qof ayaa codsaday in la tirtiro akoonka Vaultara ee cinwaankan."
+  "deleteFooter": "Waxaan kuu soo dirnay iimaylkan sababtoo ah qof ayaa codsaday in la tirtiro akoonka Vaultara ee cinwaankan.",
+
+  "signUpCodeSubject": "{code} waa koodkaaga Vaultara",
+  "signUpCodeHeading": "Dhammee samaynta akoonkaaga",
+  "signUpCodeBody": "Geli koodkan Vaultara si aad u dhammaystirto samaynta akoonkaaga.",
+  "signUpCodeExpiry": "Koodku wuxuu dhacayaa 10 daqiiqo gudahood. Haddii aadan isku dayin inaad samayso akoon Vaultara, iska indho tir iimaylkan. Kood la'aan akoon lama sameeyo.",
+  "alreadyRegisteredSubject": "Waxaad horey u leedahay akoon Vaultara",
+  "alreadyRegisteredHeading": "Waxaad horey u leedahay akoon",
+  "alreadyRegisteredBody": "Qof ayaa hadda isku dayay inuu akoon Vaultara ku sameeyo cinwaankan iimaylka. Waxaad horey u leedahay mid, sidaas darteed akoon cusub lama samayn.",
+  "alreadyRegisteredSignIn": "Haddii adiga ahayd, abka ku gal eraygaaga sirta ah. Ma ilowday? Ku dooro mid cusub badhanka hoose.",
+  "alreadyRegisteredButton": "Dooro erey sir ah oo cusub",
+  "alreadyRegisteredNotYou": "Haddii aanad adiga ahayn, waxba uma baahnid inaad samayso. Akoonkaagu isma beddelin.",
+  "noAccountSubject": "Akoon Vaultara oo iimaylkan ah ma jiro",
+  "noAccountHeading": "Akoon iimaylkan leh ma jiro",
+  "noAccountBody": "Qof ayaa codsaday in dib loo dejiyo erayga sirta ah ee Vaultara ee cinwaankan iimaylka, laakiin akoon Vaultara oo isaga ah ma jiro. Haddii adiga ahayd, waxaa laga yaabaa inaad iska diiwaangelisay cinwaan kale, ama waxaad akoon ka samayn kartaa abka.",
+  "noAccountNotYou": "Haddii aanad adiga ahayn, iska indho tir iimaylkan."
 }

@@ -122,12 +122,15 @@ function supportBlock(s) {
   };
 }
 
-function compose(s, { subject, heading, name, paragraphs, rows, buttonBlock, after, footer }) {
+function compose(s, { subject, heading, name, paragraphs, rows, buttonBlock, after, footer, code }) {
   const greeting = name ? s.t("greeting", { name }) : s.t("greetingNoName");
   const details = detailRows(rows || []);
   const support = supportBlock(s);
   let body = paragraph(greeting, { bold: true, margin: "0 0 8px" });
   for (const p of paragraphs) body += paragraph(p);
+  if (code) {
+    body += `<p style="margin:18px 0;text-align:center;font-size:34px;font-weight:800;letter-spacing:8px;color:${COLORS.accent}">${escapeHtml(code)}</p>`;
+  }
   body += details.html;
   for (const p of after?.before || []) body += paragraph(p, { margin: "14px 0 0" });
   if (buttonBlock) {
@@ -139,6 +142,7 @@ function compose(s, { subject, heading, name, paragraphs, rows, buttonBlock, aft
   body += support.html;
 
   const text = [greeting, "", ...paragraphs, ""];
+  if (code) text.push(code, "");
   if (details.text.length) text.push(...details.text, "");
   for (const p of after?.before || []) text.push(p, "");
   if (buttonBlock) {
@@ -305,7 +309,57 @@ async function sendDeletionEmail({ email, userData, link, lang }, transporter) {
   await deliver(email, message, transporter);
 }
 
+// Sign-up and password help emails. The app shows the same "check your
+// email" screen whether or not an address has an account; only these emails,
+// which reach the owner of the address, say which case it is.
+async function sendSignUpCodeEmail({ email, code, lang }, transporter) {
+  const s = securityStrings(cleanLanguage(lang) || "en");
+  const message = compose(s, {
+    subject: s.t("signUpCodeSubject", { code }),
+    heading: s.t("signUpCodeHeading"),
+    name: "",
+    paragraphs: [s.t("signUpCodeBody")],
+    code,
+    rows: [],
+    after: { after: [s.t("signUpCodeExpiry")] },
+    footer: s.t("securityFooter"),
+  });
+  await deliver(email, message, transporter);
+}
+
+async function sendAlreadyRegisteredEmail({ email, lang, userData }, transporter) {
+  const s = securityStrings(cleanLanguage(lang) || userLanguage(userData || {}));
+  const message = compose(s, {
+    subject: s.t("alreadyRegisteredSubject"),
+    heading: s.t("alreadyRegisteredHeading"),
+    name: firstName(userData || {}),
+    paragraphs: [s.t("alreadyRegisteredBody"), s.t("alreadyRegisteredSignIn")],
+    rows: [],
+    buttonBlock: { url: await secureLink(email), label: s.t("alreadyRegisteredButton") },
+    after: { after: [s.t("alreadyRegisteredNotYou")] },
+    footer: s.t("securityFooter"),
+  });
+  await deliver(email, message, transporter);
+}
+
+async function sendNoAccountEmail({ email, lang }, transporter) {
+  const s = securityStrings(cleanLanguage(lang) || "en");
+  const message = compose(s, {
+    subject: s.t("noAccountSubject"),
+    heading: s.t("noAccountHeading"),
+    name: "",
+    paragraphs: [s.t("noAccountBody")],
+    rows: [],
+    after: { after: [s.t("noAccountNotYou")] },
+    footer: s.t("securityFooter"),
+  });
+  await deliver(email, message, transporter);
+}
+
 module.exports = {
+  sendSignUpCodeEmail,
+  sendAlreadyRegisteredEmail,
+  sendNoAccountEmail,
   supportEmailParam,
   supportEmail,
   formatWhen,

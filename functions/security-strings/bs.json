@@ -73,5 +73,20 @@
   "deleteButton": "Pregledaj i izbriši",
   "deleteExpiry": "Link radi jednom i ističe za 1 sat.",
   "deleteNotYou": "Ako ovo niste zatražili, možete zanemariti ovaj email. Vaš račun ostaje tačno onakav kakav jeste.",
-  "deleteFooter": "Šaljemo vam ovaj email jer je neko zatražio brisanje Vaultara računa za ovu adresu."
+  "deleteFooter": "Šaljemo vam ovaj email jer je neko zatražio brisanje Vaultara računa za ovu adresu.",
+
+  "signUpCodeSubject": "{code} je vaš Vaultara kod",
+  "signUpCodeHeading": "Završite pravljenje računa",
+  "signUpCodeBody": "Unesite ovaj kod u Vaultaru da završite pravljenje računa.",
+  "signUpCodeExpiry": "Kod ističe za 10 minuta. Ako niste pokušali napraviti Vaultara račun, možete zanemariti ovu poruku. Bez koda se ne pravi nijedan račun.",
+  "alreadyRegisteredSubject": "Već imate Vaultara račun",
+  "alreadyRegisteredHeading": "Već imate račun",
+  "alreadyRegisteredBody": "Neko je upravo pokušao napraviti Vaultara račun s ovom adresom e-pošte. Već imate račun, pa novi nije napravljen.",
+  "alreadyRegisteredSignIn": "Ako ste to bili vi, prijavite se lozinkom u aplikaciji. Zaboravili ste je? Izaberite novu dugmetom ispod.",
+  "alreadyRegisteredButton": "Izaberite novu lozinku",
+  "alreadyRegisteredNotYou": "Ako to niste bili vi, ne morate ništa raditi. Vaš račun nije promijenjen.",
+  "noAccountSubject": "Za ovu e-poštu ne postoji Vaultara račun",
+  "noAccountHeading": "Nema računa s ovom e-poštom",
+  "noAccountBody": "Neko je zatražio poništavanje Vaultara lozinke za ovu adresu e-pošte, ali za nju ne postoji Vaultara račun. Ako ste to bili vi, možda ste se registrovali drugom adresom e-pošte ili možete napraviti račun u aplikaciji.",
+  "noAccountNotYou": "Ako to niste bili vi, možete zanemariti ovu poruku."
 }

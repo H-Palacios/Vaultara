@@ -73,5 +73,20 @@
   "deleteButton": "Lelee ma hichapụ",
   "deleteExpiry": "Njikọ ahụ na-arụ ọrụ otu ugboro ma ọ ga-agwụ n'ime otu awa.",
   "deleteNotYou": "Ọ bụrụ na ọ bụghị gị rịọrọ nke a, ị nwere ike ileghara email a anya. Akaụntụ gị ga-anọ otu ọ dị.",
-  "deleteFooter": "Anyị na-eziga email a n'ihi na mmadụ rịọrọ ka e hichapụ akaụntụ Vaultara nke adreesị a."
+  "deleteFooter": "Anyị na-eziga email a n'ihi na mmadụ rịọrọ ka e hichapụ akaụntụ Vaultara nke adreesị a.",
+
+  "signUpCodeSubject": "{code} bụ koodu Vaultara gị",
+  "signUpCodeHeading": "Mechaa ịmepụta akaụntụ gị",
+  "signUpCodeBody": "Tinye koodu a na Vaultara iji mechaa ịmepụta akaụntụ gị.",
+  "signUpCodeExpiry": "Koodu ahụ ga-agwụ n'ime nkeji 10. Ọ bụrụ na ị gbalịghị ịmepụta akaụntụ Vaultara, ị nwere ike ileghara email a anya. Enweghị akaụntụ a na-emepụta na-enweghị koodu ahụ.",
+  "alreadyRegisteredSubject": "Ị nweela akaụntụ Vaultara",
+  "alreadyRegisteredHeading": "Ị nweela akaụntụ",
+  "alreadyRegisteredBody": "Mmadụ gbalịrị ugbu a ịmepụta akaụntụ Vaultara site na adreesị email a. Ị nweela otu, ya mere e mepụtaghị akaụntụ ọhụrụ.",
+  "alreadyRegisteredSignIn": "Ọ bụrụ na ọ bụ gị, banye site na paswọọdụ gị na ngwa ahụ. Ichefuru ya? Họrọ nke ọhụrụ site na bọtịnụ dị n'okpuru.",
+  "alreadyRegisteredButton": "Họrọ paswọọdụ ọhụrụ",
+  "alreadyRegisteredNotYou": "Ọ bụrụ na ọ bụghị gị, ọ dịghị ihe ị ga-eme. Akaụntụ gị agbanweghị.",
+  "noAccountSubject": "Enweghị akaụntụ Vaultara maka email a",
+  "noAccountHeading": "Enweghị akaụntụ nwere email a",
+  "noAccountBody": "Mmadụ rịọrọ ka a tọgharịa paswọọdụ Vaultara maka adreesị email a, mana enweghị akaụntụ Vaultara maka ya. Ọ bụrụ na ọ bụ gị, ikekwe ị debanyere aha site na adreesị email ọzọ, ma ọ bụ ị nwere ike ịmepụta akaụntụ na ngwa ahụ.",
+  "noAccountNotYou": "Ọ bụrụ na ọ bụghị gị, ị nwere ike ileghara email a anya."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Binêre û jê bibe",
   "deleteExpiry": "Girêdan carekê dixebite û piştî 1 saetê diqede.",
   "deleteNotYou": "Heke te ev nexwestibe, tu dikarî vê e-nameyê paşguh bikî. Hesabê te wekî xwe dimîne.",
-  "deleteFooter": "Em vê e-nameyê dişînin ji ber ku kesekî xwest hesabê Vaultara yê vê navnîşanê were jêbirin."
+  "deleteFooter": "Em vê e-nameyê dişînin ji ber ku kesekî xwest hesabê Vaultara yê vê navnîşanê were jêbirin.",
+
+  "signUpCodeSubject": "{code} koda te ya Vaultara ye",
+  "signUpCodeHeading": "Çêkirina hesabê xwe biqedîne",
+  "signUpCodeBody": "Vê kodê di Vaultara de binivîse da ku çêkirina hesabê te biqede.",
+  "signUpCodeExpiry": "Dema kodê di 10 deqeyan de diqede. Heke te hewl nedabe hesabekî Vaultara çêbikî, tu dikarî vê e-nameyê paşguh bikî. Bê kodê tu hesab nayê çêkirin.",
+  "alreadyRegisteredSubject": "Hesabekî te yê Vaultara berê heye",
+  "alreadyRegisteredHeading": "Hesabekî te berê heye",
+  "alreadyRegisteredBody": "Kesek niha hewl da bi vê navnîşana e-nameyê hesabekî Vaultara çêbike. Hesabekî te berê heye, loma hesabekî nû nehat çêkirin.",
+  "alreadyRegisteredSignIn": "Heke ew tu bûyî, di sepanê de bi şîfreya xwe têkeve. Te ji bîr kir? Bi bişkoka jêrîn yekî nû hilbijêre.",
+  "alreadyRegisteredButton": "Şîfreyek nû hilbijêre",
+  "alreadyRegisteredNotYou": "Heke ew ne tu bûyî, ne hewce ye tu tiştekî bikî. Hesabê te nehatiye guhertin.",
+  "noAccountSubject": "Ji bo vê e-nameyê hesabekî Vaultara tune",
+  "noAccountHeading": "Bi vê e-nameyê hesab tune",
+  "noAccountBody": "Kesek xwest şîfreya Vaultara ya vê navnîşana e-nameyê nû bike, lê ji bo wê hesabekî Vaultara tune. Heke ew tu bûyî, dibe ku te bi navnîşanek din xwe tomar kiribe, an tu dikarî di sepanê de hesabekî çêbikî.",
+  "noAccountNotYou": "Heke ew ne tu bûyî, tu dikarî vê e-nameyê paşguh bikî."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "مراجعة وحذف",
   "deleteExpiry": "يعمل الرابط مرة واحدة وتنتهي صلاحيته خلال ساعة واحدة.",
   "deleteNotYou": "إذا لم تطلب ذلك، يمكنك تجاهل هذه الرسالة. سيبقى حسابك كما هو تمامًا.",
-  "deleteFooter": "نرسل هذه الرسالة لأن شخصًا ما طلب حذف حساب Vaultara المرتبط بهذا العنوان."
+  "deleteFooter": "نرسل هذه الرسالة لأن شخصًا ما طلب حذف حساب Vaultara المرتبط بهذا العنوان.",
+
+  "signUpCodeSubject": "{code} هو رمز Vaultara الخاص بك",
+  "signUpCodeHeading": "أكمل إنشاء حسابك",
+  "signUpCodeBody": "أدخل هذا الرمز في Vaultara لإكمال إنشاء حسابك.",
+  "signUpCodeExpiry": "تنتهي صلاحية الرمز خلال 10 دقائق. إذا لم تحاول إنشاء حساب في Vaultara، يمكنك تجاهل هذه الرسالة. لا يُنشأ أي حساب بدون الرمز.",
+  "alreadyRegisteredSubject": "لديك حساب في Vaultara بالفعل",
+  "alreadyRegisteredHeading": "لديك حساب بالفعل",
+  "alreadyRegisteredBody": "حاول شخص ما للتو إنشاء حساب Vaultara بعنوان البريد هذا. لديك حساب بالفعل، لذلك لم يُنشأ حساب جديد.",
+  "alreadyRegisteredSignIn": "إذا كنت أنت، فسجّل الدخول بكلمة المرور في التطبيق. نسيتها؟ اختر كلمة جديدة بالزر أدناه.",
+  "alreadyRegisteredButton": "اختر كلمة مرور جديدة",
+  "alreadyRegisteredNotYou": "إذا لم تكن أنت، فلا داعي لفعل أي شيء. لم يتغير حسابك.",
+  "noAccountSubject": "لا يوجد حساب Vaultara لهذا البريد",
+  "noAccountHeading": "لا يوجد حساب بهذا البريد",
+  "noAccountBody": "طلب شخص ما إعادة تعيين كلمة مرور Vaultara لعنوان البريد هذا، لكن لا يوجد حساب Vaultara له. إذا كنت أنت، فربما سجلت بعنوان بريد آخر، أو يمكنك إنشاء حساب في التطبيق.",
+  "noAccountNotYou": "إذا لم تكن أنت، يمكنك تجاهل هذه الرسالة."
 }

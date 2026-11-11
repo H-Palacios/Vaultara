@@ -73,5 +73,20 @@
   "deleteButton": "Verifică și șterge",
   "deleteExpiry": "Linkul funcționează o singură dată și expiră într-o oră.",
   "deleteNotYou": "Dacă nu ai cerut asta, poți ignora acest email. Contul tău rămâne exact așa cum este.",
-  "deleteFooter": "Îți trimitem acest email pentru că cineva a cerut ștergerea contului Vaultara asociat acestei adrese."
+  "deleteFooter": "Îți trimitem acest email pentru că cineva a cerut ștergerea contului Vaultara asociat acestei adrese.",
+
+  "signUpCodeSubject": "{code} este codul tău Vaultara",
+  "signUpCodeHeading": "Termină de creat contul",
+  "signUpCodeBody": "Introdu acest cod în Vaultara ca să termini de creat contul.",
+  "signUpCodeExpiry": "Codul expiră în 10 minute. Dacă nu ai încercat să creezi un cont Vaultara, poți ignora acest e-mail. Fără cod nu se creează niciun cont.",
+  "alreadyRegisteredSubject": "Ai deja un cont Vaultara",
+  "alreadyRegisteredHeading": "Ai deja un cont",
+  "alreadyRegisteredBody": "Cineva tocmai a încercat să creeze un cont Vaultara cu această adresă de e-mail. Ai deja unul, așa că nu s-a creat un cont nou.",
+  "alreadyRegisteredSignIn": "Dacă ai fost tu, conectează-te cu parola în aplicație. Ai uitat-o? Alege una nouă cu butonul de mai jos.",
+  "alreadyRegisteredButton": "Alege o parolă nouă",
+  "alreadyRegisteredNotYou": "Dacă nu ai fost tu, nu trebuie să faci nimic. Contul tău nu s-a schimbat.",
+  "noAccountSubject": "Nu există niciun cont Vaultara pentru acest e-mail",
+  "noAccountHeading": "Niciun cont cu acest e-mail",
+  "noAccountBody": "Cineva a cerut resetarea parolei Vaultara pentru această adresă de e-mail, dar nu există niciun cont Vaultara pentru ea. Dacă ai fost tu, poate te-ai înregistrat cu altă adresă sau poți crea un cont în aplicație.",
+  "noAccountNotYou": "Dacă nu ai fost tu, poți ignora acest e-mail."
 }

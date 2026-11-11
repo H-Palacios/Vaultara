@@ -73,5 +73,20 @@
   "deleteButton": "Áttekintés és törlés",
   "deleteExpiry": "A link egyszer használható, és 1 óra múlva lejár.",
   "deleteNotYou": "Ha nem Ön kérte, figyelmen kívül hagyhatja ezt az emailt. A fiókja pontosan úgy marad, ahogy van.",
-  "deleteFooter": "Ezt az emailt azért küldjük, mert valaki kérte az ehhez a címhez tartozó Vaultara-fiók törlését."
+  "deleteFooter": "Ezt az emailt azért küldjük, mert valaki kérte az ehhez a címhez tartozó Vaultara-fiók törlését.",
+
+  "signUpCodeSubject": "{code} a Vaultara-kódod",
+  "signUpCodeHeading": "Fejezd be a fiókod létrehozását",
+  "signUpCodeBody": "Írd be ezt a kódot a Vaultarában a fiókod létrehozásának befejezéséhez.",
+  "signUpCodeExpiry": "A kód 10 perc múlva lejár. Ha nem próbáltál Vaultara-fiókot létrehozni, nyugodtan figyelmen kívül hagyhatod ezt az e-mailt. Kód nélkül nem jön létre fiók.",
+  "alreadyRegisteredSubject": "Már van Vaultara-fiókod",
+  "alreadyRegisteredHeading": "Már van fiókod",
+  "alreadyRegisteredBody": "Valaki épp most próbált Vaultara-fiókot létrehozni ezzel az e-mail-címmel. Neked már van egy, ezért nem jött létre új fiók.",
+  "alreadyRegisteredSignIn": "Ha te voltál, jelentkezz be a jelszavaddal az alkalmazásban. Elfelejtetted? Válassz újat az alábbi gombbal.",
+  "alreadyRegisteredButton": "Új jelszó választása",
+  "alreadyRegisteredNotYou": "Ha nem te voltál, nincs teendőd. A fiókod nem változott.",
+  "noAccountSubject": "Ehhez az e-mail-címhez nem tartozik Vaultara-fiók",
+  "noAccountHeading": "Ezzel az e-mail-címmel nincs fiók",
+  "noAccountBody": "Valaki kérte a Vaultara-jelszó visszaállítását ehhez az e-mail-címhez, de nem tartozik hozzá Vaultara-fiók. Ha te voltál, talán másik e-mail-címmel regisztráltál, vagy létrehozhatsz egy fiókot az alkalmazásban.",
+  "noAccountNotYou": "Ha nem te voltál, nyugodtan figyelmen kívül hagyhatod ezt az e-mailt."
 }

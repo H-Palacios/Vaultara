@@ -73,5 +73,20 @@
   "deleteButton": "Prüfen und löschen",
   "deleteExpiry": "Der Link funktioniert einmal und läuft in 1 Stunde ab.",
   "deleteNotYou": "Wenn du das nicht angefordert hast, kannst du diese E-Mail ignorieren. Dein Konto bleibt genau so, wie es ist.",
-  "deleteFooter": "Wir senden diese E-Mail, weil jemand angefordert hat, das Vaultara-Konto für diese Adresse zu löschen."
+  "deleteFooter": "Wir senden diese E-Mail, weil jemand angefordert hat, das Vaultara-Konto für diese Adresse zu löschen.",
+
+  "signUpCodeSubject": "{code} ist dein Vaultara-Code",
+  "signUpCodeHeading": "Schließe die Erstellung deines Kontos ab",
+  "signUpCodeBody": "Gib diesen Code in Vaultara ein, um die Erstellung deines Kontos abzuschließen.",
+  "signUpCodeExpiry": "Der Code läuft in 10 Minuten ab. Wenn du kein Vaultara-Konto erstellen wolltest, kannst du diese E-Mail ignorieren. Ohne den Code wird kein Konto erstellt.",
+  "alreadyRegisteredSubject": "Du hast schon ein Vaultara-Konto",
+  "alreadyRegisteredHeading": "Du hast schon ein Konto",
+  "alreadyRegisteredBody": "Gerade hat jemand versucht, mit dieser E-Mail-Adresse ein Vaultara-Konto zu erstellen. Du hast schon eins, deshalb wurde kein neues Konto erstellt.",
+  "alreadyRegisteredSignIn": "Wenn du das warst, melde dich in der App mit deinem Passwort an. Vergessen? Wähle mit dem Button unten ein neues.",
+  "alreadyRegisteredButton": "Neues Passwort wählen",
+  "alreadyRegisteredNotYou": "Wenn du das nicht warst, musst du nichts tun. Dein Konto wurde nicht geändert.",
+  "noAccountSubject": "Für diese E-Mail-Adresse gibt es kein Vaultara-Konto",
+  "noAccountHeading": "Kein Konto mit dieser E-Mail-Adresse",
+  "noAccountBody": "Jemand wollte das Vaultara-Passwort für diese E-Mail-Adresse zurücksetzen, aber dafür gibt es kein Vaultara-Konto. Wenn du das warst, hast du dich vielleicht mit einer anderen E-Mail-Adresse registriert, oder du kannst in der App ein Konto erstellen.",
+  "noAccountNotYou": "Wenn du das nicht warst, kannst du diese E-Mail ignorieren."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Athbhreithnigh agus scrios",
   "deleteExpiry": "Oibríonn an nasc uair amháin agus rachaidh sé in éag i gceann 1 uair an chloig.",
   "deleteNotYou": "Murar iarr tú é seo, is féidir leat neamhaird a dhéanamh den ríomhphost seo. Fanfaidh do chuntas díreach mar atá sé.",
-  "deleteFooter": "Seolaimid an ríomhphost seo mar gur iarr duine éigin an cuntas Vaultara don seoladh seo a scriosadh."
+  "deleteFooter": "Seolaimid an ríomhphost seo mar gur iarr duine éigin an cuntas Vaultara don seoladh seo a scriosadh.",
+
+  "signUpCodeSubject": "Is é {code} do chód Vaultara",
+  "signUpCodeHeading": "Críochnaigh do chuntas a chruthú",
+  "signUpCodeBody": "Cuir an cód seo isteach i Vaultara chun do chuntas a chruthú.",
+  "signUpCodeExpiry": "Rachaidh an cód in éag i gceann 10 nóiméad. Mura ndearna tú iarracht cuntas Vaultara a chruthú, is féidir leat neamhaird a dhéanamh den ríomhphost seo. Ní chruthaítear aon chuntas gan an cód.",
+  "alreadyRegisteredSubject": "Tá cuntas Vaultara agat cheana",
+  "alreadyRegisteredHeading": "Tá cuntas agat cheana",
+  "alreadyRegisteredBody": "Rinne duine éigin iarracht díreach anois cuntas Vaultara a chruthú leis an seoladh ríomhphoist seo. Tá ceann agat cheana, mar sin níor cruthaíodh cuntas nua.",
+  "alreadyRegisteredSignIn": "Más tusa a bhí ann, sínigh isteach le do phasfhocal san aip. Ar dhearmad tú é? Roghnaigh ceann nua leis an gcnaipe thíos.",
+  "alreadyRegisteredButton": "Roghnaigh pasfhocal nua",
+  "alreadyRegisteredNotYou": "Murab tusa a bhí ann, ní gá duit aon rud a dhéanamh. Níor athraíodh do chuntas.",
+  "noAccountSubject": "Níl aon chuntas Vaultara don ríomhphost seo",
+  "noAccountHeading": "Níl aon chuntas leis an ríomhphost seo",
+  "noAccountBody": "D'iarr duine éigin pasfhocal Vaultara an tseolta ríomhphoist seo a athshocrú, ach níl aon chuntas Vaultara aige. Más tusa a bhí ann, b'fhéidir gur chláraigh tú le seoladh eile, nó is féidir leat cuntas a chruthú san aip.",
+  "noAccountNotYou": "Murab tusa a bhí ann, is féidir leat neamhaird a dhéanamh den ríomhphost seo."
 }

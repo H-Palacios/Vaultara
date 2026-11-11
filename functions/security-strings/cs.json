@@ -73,5 +73,20 @@
   "deleteButton": "Zkontrolovat a smazat",
   "deleteExpiry": "Odkaz funguje jednou a jeho platnost vyprší za 1 hodinu.",
   "deleteNotYou": "Pokud jste o to nežádali, můžete tento e-mail ignorovat. Váš účet zůstane přesně tak, jak je.",
-  "deleteFooter": "Tento e-mail posíláme, protože někdo požádal o smazání účtu Vaultara pro tuto adresu."
+  "deleteFooter": "Tento e-mail posíláme, protože někdo požádal o smazání účtu Vaultara pro tuto adresu.",
+
+  "signUpCodeSubject": "{code} je váš kód pro Vaultaru",
+  "signUpCodeHeading": "Dokončete vytvoření účtu",
+  "signUpCodeBody": "Zadejte tento kód ve Vaultaře a dokončete vytvoření účtu.",
+  "signUpCodeExpiry": "Kód vyprší za 10 minut. Pokud jste se nepokoušeli vytvořit účet Vaultara, můžete tento e-mail ignorovat. Bez kódu se žádný účet nevytvoří.",
+  "alreadyRegisteredSubject": "Už máte účet Vaultara",
+  "alreadyRegisteredHeading": "Už máte účet",
+  "alreadyRegisteredBody": "Někdo se právě pokusil vytvořit účet Vaultara s touto e-mailovou adresou. Už jeden máte, takže nový účet nevznikl.",
+  "alreadyRegisteredSignIn": "Pokud jste to byli vy, přihlaste se v aplikaci svým heslem. Zapomněli jste ho? Zvolte nové tlačítkem níže.",
+  "alreadyRegisteredButton": "Zvolit nové heslo",
+  "alreadyRegisteredNotYou": "Pokud jste to nebyli vy, nemusíte nic dělat. Váš účet se nezměnil.",
+  "noAccountSubject": "K tomuto e-mailu neexistuje žádný účet Vaultara",
+  "noAccountHeading": "S tímto e-mailem není žádný účet",
+  "noAccountBody": "Někdo požádal o obnovení hesla k Vaultaře pro tuto e-mailovou adresu, ale žádný účet Vaultara k ní neexistuje. Pokud jste to byli vy, možná jste se zaregistrovali s jinou e-mailovou adresou, nebo si můžete vytvořit účet v aplikaci.",
+  "noAccountNotYou": "Pokud jste to nebyli vy, můžete tento e-mail ignorovat."
 }

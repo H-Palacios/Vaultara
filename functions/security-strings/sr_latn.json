@@ -73,5 +73,20 @@
   "deleteButton": "Pregledaj i obriši",
   "deleteExpiry": "Link radi jednom i ističe za 1 sat.",
   "deleteNotYou": "Ako ovo niste tražili, možete zanemariti ovaj email. Vaš nalog ostaje tačno onakav kakav jeste.",
-  "deleteFooter": "Šaljemo vam ovaj email jer je neko zatražio brisanje Vaultara naloga za ovu adresu."
+  "deleteFooter": "Šaljemo vam ovaj email jer je neko zatražio brisanje Vaultara naloga za ovu adresu.",
+
+  "signUpCodeSubject": "{code} je vaš Vaultara kod",
+  "signUpCodeHeading": "Završite pravljenje naloga",
+  "signUpCodeBody": "Unesite ovaj kod u Vaultaru da završite pravljenje naloga.",
+  "signUpCodeExpiry": "Kod ističe za 10 minuta. Ako niste pokušali da napravite Vaultara nalog, možete zanemariti ovu poruku. Bez koda se ne pravi nijedan nalog.",
+  "alreadyRegisteredSubject": "Već imate Vaultara nalog",
+  "alreadyRegisteredHeading": "Već imate nalog",
+  "alreadyRegisteredBody": "Neko je upravo pokušao da napravi Vaultara nalog sa ovom imejl adresom. Već imate nalog, pa novi nije napravljen.",
+  "alreadyRegisteredSignIn": "Ako ste to bili vi, prijavite se lozinkom u aplikaciji. Zaboravili ste je? Izaberite novu dugmetom ispod.",
+  "alreadyRegisteredButton": "Izaberite novu lozinku",
+  "alreadyRegisteredNotYou": "Ako to niste bili vi, ne morate ništa da radite. Vaš nalog nije promenjen.",
+  "noAccountSubject": "Za ovaj imejl ne postoji Vaultara nalog",
+  "noAccountHeading": "Nema naloga sa ovim imejlom",
+  "noAccountBody": "Neko je zatražio resetovanje Vaultara lozinke za ovu imejl adresu, ali za nju ne postoji Vaultara nalog. Ako ste to bili vi, možda ste se registrovali drugom adresom ili možete da napravite nalog u aplikaciji.",
+  "noAccountNotYou": "Ako to niste bili vi, možete zanemariti ovu poruku."
 }

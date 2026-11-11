@@ -73,5 +73,20 @@
   "deleteButton": "確認して削除",
   "deleteExpiry": "リンクは1回のみ有効で、1時間後に期限切れになります。",
   "deleteNotYou": "ご自身でリクエストしていない場合は、このメールを無視してください。アカウントはそのまま変わりません。",
-  "deleteFooter": "このメールは、このアドレスの Vaultara アカウントの削除がリクエストされたためお送りしています。"
+  "deleteFooter": "このメールは、このアドレスの Vaultara アカウントの削除がリクエストされたためお送りしています。",
+
+  "signUpCodeSubject": "{code} は Vaultara の確認コードです",
+  "signUpCodeHeading": "アカウントの作成を完了してください",
+  "signUpCodeBody": "このコードを Vaultara に入力して、アカウントの作成を完了してください。",
+  "signUpCodeExpiry": "コードの有効期限は 10 分です。Vaultara アカウントを作成しようとしていない場合は、このメールを無視してください。コードがなければアカウントは作成されません。",
+  "alreadyRegisteredSubject": "すでに Vaultara アカウントをお持ちです",
+  "alreadyRegisteredHeading": "すでにアカウントをお持ちです",
+  "alreadyRegisteredBody": "このメールアドレスで Vaultara アカウントを作成しようとする操作がありました。すでにアカウントをお持ちのため、新しいアカウントは作成されていません。",
+  "alreadyRegisteredSignIn": "ご本人の場合は、アプリでパスワードを使ってログインしてください。お忘れの場合は、下のボタンから新しいパスワードを設定してください。",
+  "alreadyRegisteredButton": "新しいパスワードを設定",
+  "alreadyRegisteredNotYou": "お心当たりがない場合は、何もする必要はありません。アカウントは変更されていません。",
+  "noAccountSubject": "このメールアドレスの Vaultara アカウントはありません",
+  "noAccountHeading": "このメールアドレスのアカウントはありません",
+  "noAccountBody": "このメールアドレスの Vaultara パスワードのリセットがリクエストされましたが、該当する Vaultara アカウントはありません。ご本人の場合は、別のメールアドレスで登録された可能性があります。アプリでアカウントを作成することもできます。",
+  "noAccountNotYou": "お心当たりがない場合は、このメールを無視してください。"
 }

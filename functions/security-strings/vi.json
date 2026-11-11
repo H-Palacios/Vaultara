@@ -73,5 +73,20 @@
   "deleteButton": "Xem lại và xóa",
   "deleteExpiry": "Liên kết chỉ dùng được một lần và hết hạn sau 1 giờ.",
   "deleteNotYou": "Nếu bạn không yêu cầu việc này, bạn có thể bỏ qua email này. Tài khoản của bạn sẽ được giữ nguyên.",
-  "deleteFooter": "Chúng tôi gửi email này vì có người đã yêu cầu xóa tài khoản Vaultara của địa chỉ này."
+  "deleteFooter": "Chúng tôi gửi email này vì có người đã yêu cầu xóa tài khoản Vaultara của địa chỉ này.",
+
+  "signUpCodeSubject": "{code} là mã Vaultara của bạn",
+  "signUpCodeHeading": "Hoàn tất việc tạo tài khoản",
+  "signUpCodeBody": "Nhập mã này trong Vaultara để hoàn tất việc tạo tài khoản.",
+  "signUpCodeExpiry": "Mã hết hạn sau 10 phút. Nếu bạn không thử tạo tài khoản Vaultara, bạn có thể bỏ qua email này. Không có tài khoản nào được tạo nếu thiếu mã.",
+  "alreadyRegisteredSubject": "Bạn đã có tài khoản Vaultara",
+  "alreadyRegisteredHeading": "Bạn đã có tài khoản",
+  "alreadyRegisteredBody": "Ai đó vừa thử tạo tài khoản Vaultara bằng địa chỉ email này. Bạn đã có tài khoản nên không có tài khoản mới nào được tạo.",
+  "alreadyRegisteredSignIn": "Nếu đó là bạn, hãy đăng nhập bằng mật khẩu trong ứng dụng. Quên rồi? Chọn mật khẩu mới bằng nút bên dưới.",
+  "alreadyRegisteredButton": "Chọn mật khẩu mới",
+  "alreadyRegisteredNotYou": "Nếu đó không phải bạn, bạn không cần làm gì. Tài khoản của bạn không thay đổi.",
+  "noAccountSubject": "Không có tài khoản Vaultara cho email này",
+  "noAccountHeading": "Không có tài khoản với email này",
+  "noAccountBody": "Ai đó đã yêu cầu đặt lại mật khẩu Vaultara cho địa chỉ email này, nhưng không có tài khoản Vaultara nào cho nó. Nếu đó là bạn, có thể bạn đã đăng ký bằng địa chỉ email khác, hoặc bạn có thể tạo tài khoản trong ứng dụng.",
+  "noAccountNotYou": "Nếu đó không phải bạn, bạn có thể bỏ qua email này."
 }

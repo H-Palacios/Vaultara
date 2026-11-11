@@ -73,5 +73,20 @@
   "deleteButton": "Semak dan padam",
   "deleteExpiry": "Pautan ini berfungsi sekali sahaja dan tamat tempoh dalam 1 jam.",
   "deleteNotYou": "Jika anda tidak meminta ini, anda boleh abaikan e-mel ini. Akaun anda kekal seperti sedia ada.",
-  "deleteFooter": "Kami menghantar e-mel ini kerana seseorang meminta untuk memadam akaun Vaultara bagi alamat ini."
+  "deleteFooter": "Kami menghantar e-mel ini kerana seseorang meminta untuk memadam akaun Vaultara bagi alamat ini.",
+
+  "signUpCodeSubject": "{code} ialah kod Vaultara anda",
+  "signUpCodeHeading": "Selesaikan pembuatan akaun anda",
+  "signUpCodeBody": "Masukkan kod ini dalam Vaultara untuk menyelesaikan pembuatan akaun anda.",
+  "signUpCodeExpiry": "Kod tamat tempoh dalam 10 minit. Jika anda tidak cuba membuat akaun Vaultara, abaikan e-mel ini. Tiada akaun dibuat tanpa kod ini.",
+  "alreadyRegisteredSubject": "Anda sudah mempunyai akaun Vaultara",
+  "alreadyRegisteredHeading": "Anda sudah mempunyai akaun",
+  "alreadyRegisteredBody": "Seseorang baru sahaja cuba membuat akaun Vaultara dengan alamat e-mel ini. Anda sudah mempunyai akaun, jadi tiada akaun baharu dibuat.",
+  "alreadyRegisteredSignIn": "Jika itu anda, log masuk dengan kata laluan anda dalam aplikasi. Lupa? Pilih yang baharu dengan butang di bawah.",
+  "alreadyRegisteredButton": "Pilih kata laluan baharu",
+  "alreadyRegisteredNotYou": "Jika itu bukan anda, anda tidak perlu berbuat apa-apa. Akaun anda tidak berubah.",
+  "noAccountSubject": "Tiada akaun Vaultara untuk e-mel ini",
+  "noAccountHeading": "Tiada akaun dengan e-mel ini",
+  "noAccountBody": "Seseorang meminta untuk menetapkan semula kata laluan Vaultara bagi alamat e-mel ini, tetapi tiada akaun Vaultara untuknya. Jika itu anda, mungkin anda mendaftar dengan alamat e-mel lain, atau anda boleh membuat akaun dalam aplikasi.",
+  "noAccountNotYou": "Jika itu bukan anda, abaikan e-mel ini."
 }

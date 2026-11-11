@@ -73,5 +73,20 @@
   "deleteButton": "Kagua na ufute",
   "deleteExpiry": "Kiungo hufanya kazi mara moja na kinaisha baada ya saa 1.",
   "deleteNotYou": "Ikiwa hukuomba hili, unaweza kupuuza barua pepe hii. Akaunti yako itabaki kama ilivyo.",
-  "deleteFooter": "Tunakutumia barua pepe hii kwa sababu mtu aliomba kufuta akaunti ya Vaultara ya anwani hii."
+  "deleteFooter": "Tunakutumia barua pepe hii kwa sababu mtu aliomba kufuta akaunti ya Vaultara ya anwani hii.",
+
+  "signUpCodeSubject": "{code} ndio msimbo wako wa Vaultara",
+  "signUpCodeHeading": "Maliza kuunda akaunti yako",
+  "signUpCodeBody": "Weka msimbo huu kwenye Vaultara ili kumaliza kuunda akaunti yako.",
+  "signUpCodeExpiry": "Msimbo utaisha muda baada ya dakika 10. Ikiwa hukujaribu kuunda akaunti ya Vaultara, unaweza kupuuza barua pepe hii. Hakuna akaunti inayoundwa bila msimbo.",
+  "alreadyRegisteredSubject": "Tayari una akaunti ya Vaultara",
+  "alreadyRegisteredHeading": "Tayari una akaunti",
+  "alreadyRegisteredBody": "Mtu amejaribu sasa hivi kuunda akaunti ya Vaultara kwa anwani hii ya barua pepe. Tayari una akaunti, kwa hivyo hakuna akaunti mpya iliyoundwa.",
+  "alreadyRegisteredSignIn": "Ikiwa ni wewe, ingia kwa nenosiri lako kwenye programu. Umelisahau? Chagua jipya kwa kitufe kilicho hapa chini.",
+  "alreadyRegisteredButton": "Chagua nenosiri jipya",
+  "alreadyRegisteredNotYou": "Ikiwa si wewe, huhitaji kufanya chochote. Akaunti yako haijabadilika.",
+  "noAccountSubject": "Hakuna akaunti ya Vaultara ya barua pepe hii",
+  "noAccountHeading": "Hakuna akaunti yenye barua pepe hii",
+  "noAccountBody": "Mtu ameomba kuweka upya nenosiri la Vaultara la anwani hii ya barua pepe, lakini hakuna akaunti ya Vaultara yake. Ikiwa ni wewe, huenda ulijisajili kwa anwani nyingine ya barua pepe, au unaweza kuunda akaunti kwenye programu.",
+  "noAccountNotYou": "Ikiwa si wewe, unaweza kupuuza barua pepe hii."
 }

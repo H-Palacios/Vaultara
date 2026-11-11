@@ -73,5 +73,20 @@
   "deleteButton": "Rishiko dhe fshi",
   "deleteExpiry": "Lidhja funksionon një herë dhe skadon pas 1 ore.",
   "deleteNotYou": "Nëse nuk e keni kërkuar këtë, mund ta shpërfillni këtë email. Llogaria juaj mbetet ashtu siç është.",
-  "deleteFooter": "Ju dërgojmë këtë email sepse dikush kërkoi të fshihet llogaria Vaultara për këtë adresë."
+  "deleteFooter": "Ju dërgojmë këtë email sepse dikush kërkoi të fshihet llogaria Vaultara për këtë adresë.",
+
+  "signUpCodeSubject": "{code} është kodi juaj Vaultara",
+  "signUpCodeHeading": "Përfundoni krijimin e llogarisë",
+  "signUpCodeBody": "Futni këtë kod në Vaultara për të përfunduar krijimin e llogarisë.",
+  "signUpCodeExpiry": "Kodi skadon pas 10 minutash. Nëse nuk keni provuar të krijoni llogari Vaultara, mund ta shpërfillni këtë email. Pa kodin nuk krijohet asnjë llogari.",
+  "alreadyRegisteredSubject": "Ju keni tashmë llogari Vaultara",
+  "alreadyRegisteredHeading": "Ju keni tashmë llogari",
+  "alreadyRegisteredBody": "Dikush sapo provoi të krijojë llogari Vaultara me këtë adresë email-i. Ju keni tashmë një, prandaj nuk u krijua llogari e re.",
+  "alreadyRegisteredSignIn": "Nëse ishit ju, hyni me fjalëkalimin në aplikacion. E harruat? Zgjidhni një të ri me butonin më poshtë.",
+  "alreadyRegisteredButton": "Zgjidhni fjalëkalim të ri",
+  "alreadyRegisteredNotYou": "Nëse nuk ishit ju, nuk keni nevojë të bëni asgjë. Llogaria juaj nuk ka ndryshuar.",
+  "noAccountSubject": "Nuk ka llogari Vaultara për këtë email",
+  "noAccountHeading": "Nuk ka llogari me këtë email",
+  "noAccountBody": "Dikush kërkoi të rivendosë fjalëkalimin Vaultara për këtë adresë email-i, por nuk ka llogari Vaultara për të. Nëse ishit ju, ndoshta u regjistruat me një adresë tjetër, ose mund të krijoni llogari në aplikacion.",
+  "noAccountNotYou": "Nëse nuk ishit ju, mund ta shpërfillni këtë email."
 }

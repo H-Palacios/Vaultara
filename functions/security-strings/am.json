@@ -73,5 +73,20 @@
   "deleteButton": "ገምግም እና ሰርዝ",
   "deleteExpiry": "አገናኙ አንድ ጊዜ ብቻ ይሠራል እና በ1 ሰዓት ውስጥ ጊዜው ያልፋል።",
   "deleteNotYou": "ይህን ካልጠየቁ ይህን ኢሜይል ችላ ማለት ይችላሉ። መለያዎ ልክ እንዳለ ይቆያል።",
-  "deleteFooter": "ይህን ኢሜይል የምንልከው አንድ ሰው የዚህን አድራሻ የVaultara መለያ እንዲሰረዝ ስለጠየቀ ነው።"
+  "deleteFooter": "ይህን ኢሜይል የምንልከው አንድ ሰው የዚህን አድራሻ የVaultara መለያ እንዲሰረዝ ስለጠየቀ ነው።",
+
+  "signUpCodeSubject": "{code} የእርስዎ የVaultara ኮድ ነው",
+  "signUpCodeHeading": "መለያዎን መፍጠር ያጠናቅቁ",
+  "signUpCodeBody": "መለያዎን መፍጠር ለማጠናቀቅ ይህን ኮድ በVaultara ውስጥ ያስገቡ።",
+  "signUpCodeExpiry": "ኮዱ በ10 ደቂቃ ውስጥ ጊዜው ያልፋል። የVaultara መለያ ለመፍጠር ካልሞከሩ ይህን ኢሜይል ችላ ማለት ይችላሉ። ያለ ኮዱ ምንም መለያ አይፈጠርም።",
+  "alreadyRegisteredSubject": "አስቀድሞ የVaultara መለያ አለዎት",
+  "alreadyRegisteredHeading": "አስቀድሞ መለያ አለዎት",
+  "alreadyRegisteredBody": "አንድ ሰው አሁን በዚህ ኢሜይል አድራሻ የVaultara መለያ ለመፍጠር ሞክሯል። አስቀድሞ መለያ ስላለዎት አዲስ መለያ አልተፈጠረም።",
+  "alreadyRegisteredSignIn": "እርስዎ ከሆኑ በመተግበሪያው ውስጥ በይለፍ ቃልዎ ይግቡ። ረስተዋል? ከታች ባለው አዝራር አዲስ ይምረጡ።",
+  "alreadyRegisteredButton": "አዲስ የይለፍ ቃል ይምረጡ",
+  "alreadyRegisteredNotYou": "እርስዎ ካልሆኑ ምንም ማድረግ አያስፈልግዎትም። መለያዎ አልተቀየረም።",
+  "noAccountSubject": "ለዚህ ኢሜይል የVaultara መለያ የለም",
+  "noAccountHeading": "በዚህ ኢሜይል መለያ የለም",
+  "noAccountBody": "አንድ ሰው ለዚህ ኢሜይል አድራሻ የVaultara የይለፍ ቃል ዳግም እንዲጀመር ጠይቋል፣ ግን ለእሱ የVaultara መለያ የለም። እርስዎ ከሆኑ በሌላ ኢሜይል አድራሻ ተመዝግበው ሊሆን ይችላል፣ ወይም በመተግበሪያው ውስጥ መለያ መፍጠር ይችላሉ።",
+  "noAccountNotYou": "እርስዎ ካልሆኑ ይህን ኢሜይል ችላ ማለት ይችላሉ።"
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Duba kuma share",
   "deleteExpiry": "Hanyar haɗin tana aiki sau ɗaya kuma za ta ƙare cikin awa 1.",
   "deleteNotYou": "Idan ba kai ne ka nemi wannan ba, za ka iya watsi da wannan imel. Asusunka zai kasance daidai yadda yake.",
-  "deleteFooter": "Muna aiko maka da wannan imel ne saboda wani ya nemi a share asusun Vaultara na wannan adireshin."
+  "deleteFooter": "Muna aiko maka da wannan imel ne saboda wani ya nemi a share asusun Vaultara na wannan adireshin.",
+
+  "signUpCodeSubject": "{code} ita ce lambar Vaultara ɗinka",
+  "signUpCodeHeading": "Kammala ƙirƙirar asusunka",
+  "signUpCodeBody": "Shigar da wannan lambar a Vaultara don kammala ƙirƙirar asusunka.",
+  "signUpCodeExpiry": "Lambar za ta ƙare cikin minti 10. Idan ba ka yi ƙoƙarin ƙirƙirar asusun Vaultara ba, za ka iya yin watsi da wannan imel. Ba a ƙirƙirar asusu ba tare da lambar ba.",
+  "alreadyRegisteredSubject": "Kana da asusun Vaultara tuni",
+  "alreadyRegisteredHeading": "Kana da asusu tuni",
+  "alreadyRegisteredBody": "Wani yanzu ya yi ƙoƙarin ƙirƙirar asusun Vaultara da wannan adireshin imel. Kana da ɗaya tuni, don haka ba a ƙirƙiri sabon asusu ba.",
+  "alreadyRegisteredSignIn": "Idan kai ne, shiga da kalmar sirrinka a manhajar. Ka manta? Zaɓi sabuwa da maɓallin da ke ƙasa.",
+  "alreadyRegisteredButton": "Zaɓi sabuwar kalmar sirri",
+  "alreadyRegisteredNotYou": "Idan ba kai ba ne, ba sai ka yi komai ba. Asusunka bai canza ba.",
+  "noAccountSubject": "Babu asusun Vaultara na wannan imel",
+  "noAccountHeading": "Babu asusu da wannan imel",
+  "noAccountBody": "Wani ya nemi a sake saita kalmar sirrin Vaultara na wannan adireshin imel, amma babu asusun Vaultara a gare shi. Idan kai ne, wataƙila ka yi rajista da wani adireshin imel, ko za ka iya ƙirƙirar asusu a manhajar.",
+  "noAccountNotYou": "Idan ba kai ba ne, za ka iya yin watsi da wannan imel."
 }

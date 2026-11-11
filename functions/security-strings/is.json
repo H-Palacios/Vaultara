@@ -73,5 +73,20 @@
   "deleteButton": "Fara yfir og eyða",
   "deleteExpiry": "Tengillinn virkar einu sinni og rennur út eftir 1 klukkustund.",
   "deleteNotYou": "Ef þú baðst ekki um þetta getur þú hunsað þennan tölvupóst. Reikningurinn þinn helst nákvæmlega eins og hann er.",
-  "deleteFooter": "Við sendum þennan tölvupóst vegna þess að einhver bað um að Vaultara-reikningnum fyrir þetta netfang yrði eytt."
+  "deleteFooter": "Við sendum þennan tölvupóst vegna þess að einhver bað um að Vaultara-reikningnum fyrir þetta netfang yrði eytt.",
+
+  "signUpCodeSubject": "{code} er Vaultara-kóðinn þinn",
+  "signUpCodeHeading": "Kláraðu að stofna aðganginn",
+  "signUpCodeBody": "Sláðu þennan kóða inn í Vaultara til að klára að stofna aðganginn.",
+  "signUpCodeExpiry": "Kóðinn rennur út eftir 10 mínútur. Ef þú reyndir ekki að stofna Vaultara-aðgang geturðu hunsað þennan tölvupóst. Enginn aðgangur er stofnaður án kóðans.",
+  "alreadyRegisteredSubject": "Þú ert nú þegar með Vaultara-aðgang",
+  "alreadyRegisteredHeading": "Þú ert nú þegar með aðgang",
+  "alreadyRegisteredBody": "Einhver reyndi rétt í þessu að stofna Vaultara-aðgang með þessu netfangi. Þú ert nú þegar með aðgang, svo enginn nýr var stofnaður.",
+  "alreadyRegisteredSignIn": "Ef þetta varst þú skaltu skrá þig inn með lykilorðinu í appinu. Gleymdirðu því? Veldu nýtt með hnappinum hér fyrir neðan.",
+  "alreadyRegisteredButton": "Velja nýtt lykilorð",
+  "alreadyRegisteredNotYou": "Ef þetta varst ekki þú þarftu ekki að gera neitt. Aðgangurinn þinn hefur ekki breyst.",
+  "noAccountSubject": "Enginn Vaultara-aðgangur er til fyrir þetta netfang",
+  "noAccountHeading": "Enginn aðgangur með þessu netfangi",
+  "noAccountBody": "Einhver bað um að endurstilla Vaultara-lykilorðið fyrir þetta netfang, en enginn Vaultara-aðgangur er til fyrir það. Ef þetta varst þú skráðirðu þig kannski með öðru netfangi, eða þú getur stofnað aðgang í appinu.",
+  "noAccountNotYou": "Ef þetta varst ekki þú geturðu hunsað þennan tölvupóst."
 }
