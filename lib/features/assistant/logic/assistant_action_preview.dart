@@ -56,12 +56,11 @@ class AssistantActionPreview {
     AppLocalizations loc,
     AssistantActionType type,
     String status,
-  ) =>
-      StoredProposal(
-        type: storedType(type),
-        summary: private ? '$title: ${loc.assistantLockedRecord}' : summary,
-        status: status,
-      );
+  ) => StoredProposal(
+    type: storedType(type),
+    summary: private ? '$title: ${loc.assistantLockedRecord}' : summary,
+    status: status,
+  );
 
   static String storedType(AssistantActionType type) {
     switch (type) {
@@ -88,6 +87,18 @@ class AssistantActionPreview {
         return 'location';
       case AssistantActionType.open:
         return 'open';
+      case AssistantActionType.categoryAdd:
+        return 'category_add';
+      case AssistantActionType.categoryRename:
+        return 'category_rename';
+      case AssistantActionType.groupAdd:
+        return 'group_add';
+      case AssistantActionType.groupRename:
+        return 'group_rename';
+      case AssistantActionType.move:
+        return 'move';
+      case AssistantActionType.restore:
+        return 'restore';
     }
   }
 
@@ -131,7 +142,108 @@ class AssistantActionPreview {
           subject: action.screen ?? '',
           rows: const <AssistantChangeRow>[],
         );
+      case AssistantActionType.categoryAdd:
+        return AssistantActionPreview(
+          title: f.loc.assistantCategoryAddTitle,
+          icon: Icons.create_new_folder_rounded,
+          subject: action.name ?? '',
+          rows: const <AssistantChangeRow>[],
+          note: f.loc.assistantCategoryAddNote,
+        );
+      case AssistantActionType.categoryRename:
+        return AssistantActionPreview(
+          title: f.loc.assistantCategoryRenameTitle,
+          icon: Icons.drive_file_rename_outline_rounded,
+          subject:
+              action.previousName ??
+              f.categoryName(action.categoryKey, action.categoryName),
+          rows: <AssistantChangeRow>[
+            AssistantChangeRow(
+              label: f.loc.familyNameLabel,
+              before: action.previousName,
+              after: action.name ?? '',
+            ),
+          ],
+        );
+      case AssistantActionType.groupAdd:
+        return AssistantActionPreview(
+          title: f.loc.assistantGroupAddTitle,
+          icon: Icons.create_new_folder_outlined,
+          subject: action.name ?? '',
+          rows: <AssistantChangeRow>[
+            AssistantChangeRow(
+              label: f.loc.editorCategory,
+              after: f.categoryName(action.categoryKey, action.categoryName),
+            ),
+          ],
+        );
+      case AssistantActionType.groupRename:
+        return AssistantActionPreview(
+          title: f.loc.assistantGroupRenameTitle,
+          icon: Icons.drive_file_rename_outline_rounded,
+          subject: action.previousName ?? '',
+          rows: <AssistantChangeRow>[
+            AssistantChangeRow(
+              label: f.loc.editorCategory,
+              after: f.categoryName(action.categoryKey, action.categoryName),
+            ),
+            AssistantChangeRow(
+              label: f.loc.familyNameLabel,
+              before: action.previousName,
+              after: action.name ?? '',
+            ),
+          ],
+        );
+      case AssistantActionType.move:
+        return _move(f, action);
+      case AssistantActionType.restore:
+        return AssistantActionPreview(
+          title: f.loc.assistantRestoreTitle,
+          icon: Icons.restore_from_trash_rounded,
+          subject: _recordName(f.loc, null, action.name),
+          rows: const <AssistantChangeRow>[],
+          note: f.loc.assistantRestoreNote,
+          private: action.name == null,
+        );
     }
+  }
+
+  static AssistantActionPreview _move(_Formatter f, AssistantAction action) {
+    final loc = f.loc;
+    final names = <String>[];
+    var locked = 0;
+    for (final id in action.recordIds) {
+      final record = RecordRepository.findById(id);
+      if (record == null) continue;
+      if (record.locked) {
+        locked++;
+      } else {
+        names.add(record.name);
+      }
+    }
+    if (names.isEmpty && locked == 0) names.addAll(action.recordNames);
+    final shown = names.take(3).join(', ');
+    final extra = action.recordIds.length - names.take(3).length;
+    final subject = extra > 0 && shown.isNotEmpty
+        ? '$shown +$extra'
+        : (shown.isEmpty ? loc.assistantLockedRecord : shown);
+    final groupKey = AssistantActionLauncher.resolveGroupKey(action);
+    final groupLabel = groupKey != null
+        ? f.group(groupKey)
+        : (action.groupName ?? '');
+    return AssistantActionPreview(
+      title: loc.assistantMoveTitle(action.recordIds.length),
+      icon: Icons.drive_file_move_rounded,
+      subject: subject,
+      rows: <AssistantChangeRow>[
+        AssistantChangeRow(
+          label: loc.editorCategory,
+          after: f.categoryName(action.categoryKey, action.categoryName),
+        ),
+        AssistantChangeRow(label: loc.editorGroup, after: groupLabel),
+      ],
+      private: names.isEmpty,
+    );
   }
 
   static AssistantActionPreview _add(_Formatter f, AssistantAction action) {
@@ -143,58 +255,70 @@ class AssistantActionPreview {
     if (group != null && group.isNotEmpty) {
       rows.add(AssistantChangeRow(label: loc.groupNameLabel, after: group));
     }
-    rows.add(AssistantChangeRow(
-      label: loc.editorExpiryDate,
-      after: action.expiryDate == null
-          ? loc.assistantActionNoDate
-          : f.date(action.expiryDate!),
-    ));
+    rows.add(
+      AssistantChangeRow(
+        label: loc.editorExpiryDate,
+        after: action.expiryDate == null
+            ? loc.assistantActionNoDate
+            : f.date(action.expiryDate!),
+      ),
+    );
     if (action.personId != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.csvImportFieldPerson,
-        after: f.person(action.personId, action.person),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.csvImportFieldPerson,
+          after: f.person(action.personId, action.person),
+        ),
+      );
     }
     if (action.notes != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.editorNotes,
-        after: f.notes(action.notes),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.editorNotes,
+          after: f.notes(action.notes),
+        ),
+      );
     }
     if (record != null) {
       if (record.renewalCost != null) {
-        rows.add(AssistantChangeRow(
-          label: loc.costFieldLabel,
-          after: f.cost(record.renewalCost, record.costCurrency),
-        ));
+        rows.add(
+          AssistantChangeRow(
+            label: loc.costFieldLabel,
+            after: f.cost(record.renewalCost, record.costCurrency),
+          ),
+        );
       }
-      rows.add(AssistantChangeRow(
-        label: loc.reminderTitle,
-        after: f.reminder(record.reminderOffsetDays),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.reminderTitle,
+          after: f.reminder(record.reminderOffsetDays),
+        ),
+      );
       if (record.leadDays != null) {
-        rows.add(AssistantChangeRow(
-          label: loc.leadLabel,
-          after: f.lead(record.leadDays),
-        ));
+        rows.add(
+          AssistantChangeRow(
+            label: loc.leadLabel,
+            after: f.lead(record.leadDays),
+          ),
+        );
       }
       if (record.repeatMonths != null) {
-        rows.add(AssistantChangeRow(
-          label: loc.repeatLabel,
-          after: f.repeat(record.repeatMonths),
-        ));
+        rows.add(
+          AssistantChangeRow(
+            label: loc.repeatLabel,
+            after: f.repeat(record.repeatMonths),
+          ),
+        );
       }
       if (record.locked) {
-        rows.add(AssistantChangeRow(
-          label: loc.recordLockTitle,
-          after: f.onOff(true),
-        ));
+        rows.add(
+          AssistantChangeRow(label: loc.recordLockTitle, after: f.onOff(true)),
+        );
       }
       if (record.inWallet) {
-        rows.add(AssistantChangeRow(
-          label: loc.walletTileTitle,
-          after: f.onOff(true),
-        ));
+        rows.add(
+          AssistantChangeRow(label: loc.walletTileTitle, after: f.onOff(true)),
+        );
       }
     }
     return AssistantActionPreview(
@@ -226,84 +350,106 @@ class AssistantActionPreview {
     final rows = <AssistantChangeRow>[];
 
     if (c.name != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.familyNameLabel,
-        before: visible?.name,
-        after: c.name!,
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.familyNameLabel,
+          before: visible?.name,
+          after: c.name!,
+        ),
+      );
     }
     if (c.groupKey != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.groupNameLabel,
-        before: visible == null ? null : f.group(visible.subcategoryName),
-        after: f.group(c.groupKey!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.groupNameLabel,
+          before: visible == null ? null : f.group(visible.subcategoryName),
+          after: f.group(c.groupKey!),
+        ),
+      );
     }
     if (c.expiryDate != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.editorExpiryDate,
-        before: record == null ? null : f.date(record.expiryDate),
-        after: f.date(c.expiryDate!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.editorExpiryDate,
+          before: record == null ? null : f.date(record.expiryDate),
+          after: f.date(c.expiryDate!),
+        ),
+      );
     }
     if (c.notes != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.editorNotes,
-        before: visible == null ? null : f.notes(visible.notes),
-        after: f.notes(c.notes!.value),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.editorNotes,
+          before: visible == null ? null : f.notes(visible.notes),
+          after: f.notes(c.notes!.value),
+        ),
+      );
     }
     if (c.renewalCost != null) {
       final currency = c.currency ?? record?.costCurrency;
-      rows.add(AssistantChangeRow(
-        label: loc.costFieldLabel,
-        before: visible == null
-            ? null
-            : f.cost(visible.renewalCost, visible.costCurrency),
-        after: f.cost(c.renewalCost!.value, currency),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.costFieldLabel,
+          before: visible == null
+              ? null
+              : f.cost(visible.renewalCost, visible.costCurrency),
+          after: f.cost(c.renewalCost!.value, currency),
+        ),
+      );
     }
     if (c.reminderDays != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.reminderTitle,
-        before: record == null ? null : f.reminder(record.reminderOffsetDays),
-        after: f.reminder(c.reminderDays!.value),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.reminderTitle,
+          before: record == null ? null : f.reminder(record.reminderOffsetDays),
+          after: f.reminder(c.reminderDays!.value),
+        ),
+      );
     }
     if (c.leadDays != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.leadLabel,
-        before: record == null ? null : f.lead(record.leadDays),
-        after: f.lead(c.leadDays!.value),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.leadLabel,
+          before: record == null ? null : f.lead(record.leadDays),
+          after: f.lead(c.leadDays!.value),
+        ),
+      );
     }
     if (c.repeatMonths != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.repeatLabel,
-        before: record == null ? null : f.repeat(record.repeatMonths),
-        after: f.repeat(c.repeatMonths!.value),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.repeatLabel,
+          before: record == null ? null : f.repeat(record.repeatMonths),
+          after: f.repeat(c.repeatMonths!.value),
+        ),
+      );
     }
     if (c.personId != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.csvImportFieldPerson,
-        before: visible == null ? null : f.person(visible.holderId, null),
-        after: f.person(c.personId!.value, c.person),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.csvImportFieldPerson,
+          before: visible == null ? null : f.person(visible.holderId, null),
+          after: f.person(c.personId!.value, c.person),
+        ),
+      );
     }
     if (c.locked != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.recordLockTitle,
-        before: record == null ? null : f.onOff(record.locked),
-        after: f.onOff(c.locked!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.recordLockTitle,
+          before: record == null ? null : f.onOff(record.locked),
+          after: f.onOff(c.locked!),
+        ),
+      );
     }
     if (c.inWallet != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.walletTileTitle,
-        before: record == null ? null : f.onOff(record.inWallet),
-        after: f.onOff(c.inWallet!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.walletTileTitle,
+          before: record == null ? null : f.onOff(record.inWallet),
+          after: f.onOff(c.inWallet!),
+        ),
+      );
     }
 
     return AssistantActionPreview(
@@ -329,16 +475,18 @@ class AssistantActionPreview {
       ),
     ];
     if (action.hasCost) {
-      rows.add(AssistantChangeRow(
-        label: loc.costFieldLabel,
-        before: visible == null
-            ? null
-            : f.cost(visible.renewalCost, visible.costCurrency),
-        after: f.cost(
-          action.renewalCost,
-          action.currency ?? record?.costCurrency,
+      rows.add(
+        AssistantChangeRow(
+          label: loc.costFieldLabel,
+          before: visible == null
+              ? null
+              : f.cost(visible.renewalCost, visible.costCurrency),
+          after: f.cost(
+            action.renewalCost,
+            action.currency ?? record?.costCurrency,
+          ),
         ),
-      ));
+      );
     }
     return AssistantActionPreview(
       title: loc.renewSheetTitle,
@@ -372,16 +520,20 @@ class AssistantActionPreview {
     final loc = f.loc;
     final rows = <AssistantChangeRow>[];
     if (action.nationality != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.visaPassportCountry,
-        after: f.country(action.nationality),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.visaPassportCountry,
+          after: f.country(action.nationality),
+        ),
+      );
     }
     if (action.residence != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.visaResidenceTitle,
-        after: f.country(action.residence),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.visaResidenceTitle,
+          after: f.country(action.residence),
+        ),
+      );
     }
     return AssistantActionPreview(
       title: loc.familyAddTitle,
@@ -400,29 +552,35 @@ class AssistantActionPreview {
     final person = isMe ? null : PeopleRepository.byId(action.personId);
     final rows = <AssistantChangeRow>[];
     if (action.name != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.familyNameLabel,
-        before: person?.name,
-        after: action.name!,
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.familyNameLabel,
+          before: person?.name,
+          after: action.name!,
+        ),
+      );
     }
     if (action.hasNationality) {
-      rows.add(AssistantChangeRow(
-        label: loc.visaPassportCountry,
-        before: f.country(
-          isMe ? NationalityRepository.mine.value : person?.nationality,
+      rows.add(
+        AssistantChangeRow(
+          label: loc.visaPassportCountry,
+          before: f.country(
+            isMe ? NationalityRepository.mine.value : person?.nationality,
+          ),
+          after: f.country(action.nationality),
         ),
-        after: f.country(action.nationality),
-      ));
+      );
     }
     if (action.hasResidence) {
-      rows.add(AssistantChangeRow(
-        label: loc.visaResidenceTitle,
-        before: f.country(
-          isMe ? NationalityRepository.myResidence.value : person?.residence,
+      rows.add(
+        AssistantChangeRow(
+          label: loc.visaResidenceTitle,
+          before: f.country(
+            isMe ? NationalityRepository.myResidence.value : person?.residence,
+          ),
+          after: f.country(action.residence),
         ),
-        after: f.country(action.residence),
-      ));
+      );
     }
     return AssistantActionPreview(
       title: loc.familyEditTitle,
@@ -478,7 +636,8 @@ class AssistantActionPreview {
     // The countries already have their own row, so the name only shows
     // under the title when the user gave the trip a name of its own.
     final name = action.name;
-    final subject = name == null ||
+    final subject =
+        name == null ||
             (action.countries.isNotEmpty &&
                 (name == SavedTrip.defaultName(action.countries) ||
                     name ==
@@ -496,91 +655,120 @@ class AssistantActionPreview {
     );
   }
 
-  static AssistantActionPreview _tripEdit(_Formatter f, AssistantAction action) {
+  static AssistantActionPreview _tripEdit(
+    _Formatter f,
+    AssistantAction action,
+  ) {
     final loc = f.loc;
     final c = action.tripChanges ?? const AssistantTripChanges();
-    final trip = action.tripId == null ? null : TripRepository.byId(action.tripId!);
+    final trip = action.tripId == null
+        ? null
+        : TripRepository.byId(action.tripId!);
     final rows = <AssistantChangeRow>[];
     if (c.name != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelTripNameOptional,
-        before: trip?.name,
-        after: c.name!,
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelTripNameOptional,
+          before: trip?.name,
+          after: c.name!,
+        ),
+      );
     }
     if (c.countries != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.assistantFieldCountryCount(
-          c.countries!.length > 1 || (trip?.countries.length ?? 0) > 1 ? 2 : 1,
+      rows.add(
+        AssistantChangeRow(
+          label: loc.assistantFieldCountryCount(
+            c.countries!.length > 1 || (trip?.countries.length ?? 0) > 1
+                ? 2
+                : 1,
+          ),
+          before: trip == null ? null : f.countries(trip.countries),
+          after: f.countries(c.countries!),
         ),
-        before: trip == null ? null : f.countries(trip.countries),
-        after: f.countries(c.countries!),
-      ));
+      );
     }
     if (c.places != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelPlacesLabel,
-        before: trip == null || trip.places.isEmpty
-            ? null
-            : trip.places.join(', '),
-        after: c.places!.isEmpty
-            ? loc.assistantValueNone
-            : c.places!.join(', '),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelPlacesLabel,
+          before: trip == null || trip.places.isEmpty
+              ? null
+              : trip.places.join(', '),
+          after: c.places!.isEmpty
+              ? loc.assistantValueNone
+              : c.places!.join(', '),
+        ),
+      );
     }
     if (c.departure != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelDeparture,
-        before: trip == null ? null : f.date(trip.start),
-        after: f.date(c.departure!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelDeparture,
+          before: trip == null ? null : f.date(trip.start),
+          after: f.date(c.departure!),
+        ),
+      );
     }
     if (c.returnDate != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelReturn,
-        before: trip == null ? null : f.date(trip.end),
-        after: f.date(c.returnDate!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelReturn,
+          before: trip == null ? null : f.date(trip.end),
+          after: f.date(c.returnDate!),
+        ),
+      );
     }
     if (c.travellers != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelSectionWho,
-        before: trip == null ? null : f.travellers(trip.travellers),
-        after: f.travellers(c.travellers!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelSectionWho,
+          before: trip == null ? null : f.travellers(trip.travellers),
+          after: f.travellers(c.travellers!),
+        ),
+      );
     }
     if (c.driving != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelDriving,
-        before: trip == null ? null : f.onOff(trip.driving),
-        after: f.onOff(c.driving!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelDriving,
+          before: trip == null ? null : f.onOff(trip.driving),
+          after: f.onOff(c.driving!),
+        ),
+      );
     }
     if (c.purpose != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.tripPurposeTitle,
-        before: trip == null ? null : TripPurposeText.label(loc, trip.purpose),
-        after: TripPurposeText.label(loc, c.purpose!),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.tripPurposeTitle,
+          before: trip == null
+              ? null
+              : TripPurposeText.label(loc, trip.purpose),
+          after: TripPurposeText.label(loc, c.purpose!),
+        ),
+      );
     }
     final arrivals = c.arrivals;
     if (arrivals != null) {
       for (final entry in arrivals.entries) {
-        rows.add(AssistantChangeRow(
-          label: loc.travelArriveIn(Countries.name(entry.key)),
-          after: f.date(entry.value),
-        ));
+        rows.add(
+          AssistantChangeRow(
+            label: loc.travelArriveIn(Countries.name(entry.key)),
+            after: f.date(entry.value),
+          ),
+        );
       }
     }
     final flights = c.flights;
     if (flights != null) {
-      rows.add(AssistantChangeRow(
-        label: loc.travelFlights,
-        before: trip == null || trip.flights.isEmpty
-            ? null
-            : f.flights(trip.flights),
-        after: flights.isEmpty ? loc.assistantValueNone : f.flights(flights),
-      ));
+      rows.add(
+        AssistantChangeRow(
+          label: loc.travelFlights,
+          before: trip == null || trip.flights.isEmpty
+              ? null
+              : f.flights(trip.flights),
+          after: flights.isEmpty ? loc.assistantValueNone : f.flights(flights),
+        ),
+      );
     }
     return AssistantActionPreview(
       title: loc.travelEditTrip,
@@ -634,6 +822,13 @@ class _Formatter {
     final custom = GroupRepository.labelForKey(key);
     if (custom != null && custom.trim().isNotEmpty) return custom;
     return PresetCatalog.groupLabel(context, key);
+  }
+
+  String categoryName(String? key, String? fallback) {
+    if (key == null) return fallback ?? '';
+    final label = AssistantActionLauncher.categoryLabel(context, key);
+    if (label == key && fallback != null) return fallback;
+    return label;
   }
 
   String notes(String? value) {

@@ -64,6 +64,12 @@ class AssistantStepLabel {
         return loc.assistantStepSetting;
       case 'screen':
         return loc.assistantStepScreen;
+      case 'categories':
+        return loc.assistantStepCategories;
+      case 'costs':
+        return loc.assistantStepCosts;
+      case 'visa':
+        return loc.assistantStepVisa;
     }
     return loc.assistantStepThinking;
   }

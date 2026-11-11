@@ -33,6 +33,9 @@ class AssistantStep {
     'trip_edit',
     'setting',
     'screen',
+    'categories',
+    'costs',
+    'visa',
   ];
 
   static AssistantStep? fromMap(Map<String, dynamic>? data) {
@@ -53,7 +56,9 @@ class AssistantStep {
     return AssistantStep(
       step: step,
       name: name is String && name.trim().isNotEmpty
-          ? (name.trim().length > 60 ? name.trim().substring(0, 60) : name.trim())
+          ? (name.trim().length > 60
+                ? name.trim().substring(0, 60)
+                : name.trim())
           : null,
       countries: countries,
     );
@@ -68,7 +73,9 @@ class AssistantRun {
       'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
   final String id = newId();
-  final ValueNotifier<AssistantStep?> step = ValueNotifier<AssistantStep?>(null);
+  final ValueNotifier<AssistantStep?> step = ValueNotifier<AssistantStep?>(
+    null,
+  );
   final ValueNotifier<bool> slow = ValueNotifier<bool>(false);
 
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _sub;
@@ -98,22 +105,19 @@ class AssistantRun {
 
   void start() {
     _armSlowTimer();
-    _sub = _ref?.snapshots().listen(
-      (snap) {
-        final next = AssistantStep.fromMap(snap.data());
-        if (next == null) return;
-        final current = step.value;
-        if (current != null &&
-            current.step == next.step &&
-            current.name == next.name) {
-          return;
-        }
-        step.value = next;
-        slow.value = false;
-        _armSlowTimer();
-      },
-      onError: (Object _) {},
-    );
+    _sub = _ref?.snapshots().listen((snap) {
+      final next = AssistantStep.fromMap(snap.data());
+      if (next == null) return;
+      final current = step.value;
+      if (current != null &&
+          current.step == next.step &&
+          current.name == next.name) {
+        return;
+      }
+      step.value = next;
+      slow.value = false;
+      _armSlowTimer();
+    }, onError: (Object _) {});
   }
 
   void _armSlowTimer() {
