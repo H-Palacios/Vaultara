@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "پۆلە جێگیرکراوەکان"
+  "homePinnedTitle": "پۆلە جێگیرکراوەکان",
+  "notifAskTitle": "بیرخەرەوەکانت لە کاتی خۆیدا وەربگرە",
+  "notifAskBody": "Vaultara تەنها کاتێک دەتوانێت پێش بەسەرچوونی شتێک بیرت بخاتەوە کە ئاگادارکردنەوەکان ڕێگەپێدراو بن. تەنها بیرخەرەوە و ئاگادارییە گرنگەکانی هەژمار دەنێرین.",
+  "notifAskAllow": "ڕێگە بە ئاگادارکردنەوەکان بدە",
+  "notifAskLater": "ئێستا نا",
+  "signInTooManyTries": "هەوڵی زۆر. کەمێک چاوەڕێ بکە پێش ئەوەی دووبارە هەوڵ بدەیتەوە، یان وشەی نهێنییەکەت ڕێکبخەرەوە.",
+  "signInWaitSeconds": "{seconds, plural, =1{دوای {seconds} چرکە دووبارە هەوڵ بدەرەوە} other{دوای {seconds} چرکە دووبارە هەوڵ بدەرەوە}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "کۆدە یەدەگەکان",
+  "backupCodesIntro": "ئەگەر مۆبایلەکەت یان بەرنامەی پشتڕاستکردنەوەکەت ون بکەیت، کۆدێکی یەدەگ ڕێگەت پێدەدات بچیتە ژوورەوە. هەر کۆدێک یەک جار کار دەکات.",
+  "backupCodesShownOnce": "ئەم کۆدانە تەنها یەک جار پیشان دەدرێن. لە شوێنێکی سەلامەت و دوور لەم مۆبایلە هەڵیانبگرە.",
+  "backupCodesCopy": "لەبەرگرتنەوە",
+  "backupCodesSave": "هەڵگرتن یان هاوبەشکردن",
+  "backupCodesSaved": "کۆدەکانم هەڵگرت",
+  "backupCodesLeft": "{count, plural, =0{هیچ کۆدێکی یەدەگ نەماوە} =1{{count} کۆدی یەدەگ ماوە} other{{count} کۆدی یەدەگ ماون}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "دروستکردنی کۆدی یەدەگ",
+  "backupCodesMakeNew": "دروستکردنی کۆدی نوێ",
+  "backupCodesReplaceTitle": "کۆدی یەدەگی نوێ دروست بکرێت؟",
+  "backupCodesReplaceBody": "کۆدە کۆنەکانت یەکسەر لە کار دەکەون.",
+  "backupCodesFileTitle": "کۆدە یەدەگەکانی Vaultara",
+  "backupCodesEachOnce": "هەر کۆدێک یەک جار کار دەکات. لە شوێنێکی سەلامەت هەڵیانبگرە.",
+  "backupCodesCopied": "کۆدە یەدەگەکان لەبەرگیرانەوە. دوای خولەکێک لە کلیپبۆرد دەسڕدرێنەوە.",
+  "backupCodesNone": "هێشتا هیچ دروست نەکراوە",
+  "backupCodesTileHint": "ئەگەر مۆبایلەکەت ون کرد بچۆ ژوورەوە",
+  "backupCodeUseTitle": "کۆدێکی یەدەگ بەکاربهێنە",
+  "backupCodeUseBody": "یەکێک لەو کۆدە یەدەگانەی هەڵتگرتوون بنووسە. بەکارهێنانی یەکێکیان پشتڕاستکردنەوەی دوو هەنگاوی دەکوژێنێتەوە، بۆ ئەوەی لە مۆبایلە نوێیەکەت دووبارە ڕێکی بخەیتەوە.",
+  "backupCodeLabel": "کۆدی یەدەگ",
+  "backupCodeFormat": "کۆدە یەدەگەکان وەک ABCDE-FGHJK دەردەکەون.",
+  "backupCodeWrong": "ئەو کۆدە کاری نەکرد. بیپشکنە و دووبارە هەوڵ بدەرەوە.",
+  "backupCodeBack": "بەرنامەی پشتڕاستکردنەوەکەم بەکاربهێنە",
+  "twoStepStepOf": "هەنگاوی {step} لە {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "لە بەرنامەکەتدا وەک Vaultara ({email}) دەردەکەوێت.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "کۆدەکان هەموو 30 چرکەیەک دەگۆڕێن. ئەوەی ئێستا دیارە بنووسە.",
+  "twoStepPaste": "لکاندن",
+  "twoStepBackupNext": "کۆدی یەدەگ دروست بکە بۆ ئەوەی ئەگەر ئەم مۆبایلەت ون کرد هێشتا بتوانیت بچیتە ژوورەوە.",
+  "twoStepAppLockTitle": "بەرنامەکەش قفڵ بکە",
+  "twoStepAppLockBody": "دوو هەنگاو چوونەژوورەوە دەپارێزێت. قفڵی بەرنامە هەر جارێک Vaultara بکرێتەوە پەنجەمۆر، ڕوو یان قفڵی شاشە داوا دەکات.",
+  "twoStepAppLockAction": "قفڵی بەرنامە چالاک بکە",
+  "twoStepSignOutOthersBody": "لە شوێنێک چوویتە ژوورەوە کە نایناسیتەوە؟ لە ئامێرەکانی تر بچۆ دەرەوە.",
+  "twoStepReviewDevices": "پێداچوونەوەی ئامێرەکان",
+  "twoStepSkipForNow": "ئێستا تێپەڕێنە",
+  "twoStepOffTitle": "پشتڕاستکردنەوەی دوو هەنگاو کوژاوەتەوە",
+  "twoStepOffBody": "بە کۆدێکی یەدەگ چوویتە ژوورەوە، بۆیە پشتڕاستکردنەوەی دوو هەنگاو کوژێنرایەوە. لەم مۆبایلەدا دووبارە ڕێکی بخەرەوە بۆ ئەوەی هەژمارەکەت پارێزراو بمێنێت.",
+  "expiryPlusYears": "{years, plural, =1{+{years} ساڵ} other{+{years} ساڵ}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "بەروار بنووسە",
+  "expiryTypeTitle": "بەرواری بەسەرچوون بنووسە",
+  "expiryTypeHint": "بۆ نموونە {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ئەو بەروارە دروست دیار نییە. {example} تاقی بکەرەوە.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ئەم بەروارە تێپەڕیوە، بۆیە تۆمارەکە وەک بەسەرچوو هەڵدەگیرێت.",
+  "expiryEndsToday": "ئەمڕۆ بەسەردەچێت.",
+  "saveAndAddAnother": "هەڵگرتن و زیادکردنی یەکێکی تر",
+  "quickStartTitle": "دەستپێکی خێرا",
+  "categoryCreatedAddGroup": "{name} دروستکرا. گرووپێکی بۆ زیاد بکرێت؟",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} دروستکرا. تۆمارێکی بۆ زیاد بکرێت؟",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "بڕوانامەکان",
+  "groupIdeaLicences": "مۆڵەتەکان",
+  "groupIdeaContracts": "گرێبەستەکان",
+  "groupIdeaPermits": "ڕێگەپێدانەکان",
+  "groupIdeaInsurance": "بیمە",
+  "assistantCategoryAddTitle": "پۆلی نوێ",
+  "assistantCategoryAddNote": "ئایکۆنێک لە ناوەکەوە هەڵدەبژێردرێت. دواتر دەتوانیت بیگۆڕیت.",
+  "assistantCategoryRenameTitle": "گۆڕینی ناوی پۆل",
+  "assistantGroupAddTitle": "گرووپی نوێ",
+  "assistantGroupRenameTitle": "گۆڕینی ناوی گرووپ",
+  "assistantMoveTitle": "{count, plural, =1{گواستنەوەی {count} تۆمار} other{گواستنەوەی {count} تۆمار}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "گەڕاندنەوەی تۆمار",
+  "assistantRestoreNote": "تۆمارەکە و بیرخەرەوەکانی دەگەڕێنەوە.",
+  "assistantStepCategories": "پشکنینی پۆلەکانت…",
+  "assistantStepCosts": "کۆکردنەوەی تێچووی نوێکردنەوە…",
+  "assistantStepVisa": "پشکنینی یاساکانی ڤیزا…"
 }

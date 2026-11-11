@@ -8417,4 +8417,253 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Rukunonin da aka liƙa';
+
+  @override
+  String get notifAskTitle => 'Samu tunatarwa a kan lokaci';
+
+  @override
+  String get notifAskBody => 'Vaultara za ta iya tunatar da kai kafin wani abu ya ƙare ne kawai idan an ba da izinin sanarwa. Muna aika tunatarwa da muhimman faɗakarwar asusu kawai.';
+
+  @override
+  String get notifAskAllow => 'Ba da izinin sanarwa';
+
+  @override
+  String get notifAskLater => 'Ba yanzu ba';
+
+  @override
+  String get signInTooManyTries => 'Ƙoƙari ya yi yawa. Jira kaɗan kafin sake gwadawa, ko sake saita kalmar sirrinka.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Sake gwadawa bayan daƙiƙa $seconds',
+      one: 'Sake gwadawa bayan daƙiƙa $seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Lambobin ajiya';
+
+  @override
+  String get backupCodesIntro => 'Idan ka rasa wayarka ko manhajar tantancewa, lambar ajiya za ta ba ka damar shiga. Kowace lamba tana aiki sau ɗaya.';
+
+  @override
+  String get backupCodesShownOnce => 'Ana nuna waɗannan lambobin sau ɗaya kawai. Ajiye su a wuri mai aminci, nesa da wannan wayar.';
+
+  @override
+  String get backupCodesCopy => 'Kwafa';
+
+  @override
+  String get backupCodesSave => 'Ajiye ko raba';
+
+  @override
+  String get backupCodesSaved => 'Na ajiye lambobina';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lambobin ajiya $count sun rage',
+      one: 'Lambar ajiya $count ta rage',
+      zero: 'Babu sauran lambar ajiya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Ƙirƙiri lambobin ajiya';
+
+  @override
+  String get backupCodesMakeNew => 'Ƙirƙiri sabbin lambobi';
+
+  @override
+  String get backupCodesReplaceTitle => 'Ƙirƙiri sabbin lambobin ajiya?';
+
+  @override
+  String get backupCodesReplaceBody => 'Tsoffin lambobinka za su daina aiki nan take.';
+
+  @override
+  String get backupCodesFileTitle => 'Lambobin ajiya na Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Kowace lamba tana aiki sau ɗaya. Ajiye su a wuri mai aminci.';
+
+  @override
+  String get backupCodesCopied => 'An kwafi lambobin ajiya. Za a share su daga allon kwafi cikin minti ɗaya.';
+
+  @override
+  String get backupCodesNone => 'Ba a ƙirƙiri ko ɗaya ba tukuna';
+
+  @override
+  String get backupCodesTileHint => 'Shiga idan ka rasa wayarka';
+
+  @override
+  String get backupCodeUseTitle => 'Yi amfani da lambar ajiya';
+
+  @override
+  String get backupCodeUseBody => 'Shigar da ɗaya daga cikin lambobin ajiya da ka ajiye. Amfani da ɗaya yana kashe tabbatarwa ta matakai biyu, don ka sake saita ta a sabuwar wayarka.';
+
+  @override
+  String get backupCodeLabel => 'Lambar ajiya';
+
+  @override
+  String get backupCodeFormat => 'Lambobin ajiya suna kama da ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Wannan lambar ba ta yi aiki ba. Duba ta ka sake gwadawa.';
+
+  @override
+  String get backupCodeBack => 'Yi amfani da manhajar tantancewa ta';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Mataki na $step cikin $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Za ta bayyana a matsayin Vaultara ($email) a manhajarka.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Lambobi suna canzawa kowane daƙiƙa 30. Shigar da wadda ke nunawa yanzu.';
+
+  @override
+  String get twoStepPaste => 'Liƙa';
+
+  @override
+  String get twoStepBackupNext => 'Ƙirƙiri lambobin ajiya don ka iya shiga ko da ka rasa wannan wayar.';
+
+  @override
+  String get twoStepAppLockTitle => 'Kulle manhajar ma';
+
+  @override
+  String get twoStepAppLockBody => 'Matakai biyu suna kare shiga. Kulle manhaja yana neman zanen yatsa, fuska ko kulle allo duk lokacin da aka buɗe Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Kunna kulle manhaja';
+
+  @override
+  String get twoStepSignOutOthersBody => 'An shiga a wani wuri da ba ka sani ba? Fita daga sauran na\'urori.';
+
+  @override
+  String get twoStepReviewDevices => 'Duba na\'urori';
+
+  @override
+  String get twoStepSkipForNow => 'Tsallake yanzu';
+
+  @override
+  String get twoStepOffTitle => 'An kashe tabbatarwa ta matakai biyu';
+
+  @override
+  String get twoStepOffBody => 'Ka shiga da lambar ajiya, don haka an kashe tabbatarwa ta matakai biyu. Sake saita ta a wannan wayar don asusunka ya kasance a kare.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+shekaru $years',
+      one: '+shekara $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Rubuta kwanan wata';
+
+  @override
+  String get expiryTypeTitle => 'Rubuta ranar ƙarewa';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Misali $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Wannan kwanan wata bai yi daidai ba. Gwada $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Wannan kwanan wata ya wuce, don haka za a ajiye bayanin a matsayin wanda ya ƙare.';
+
+  @override
+  String get expiryEndsToday => 'Wannan yana ƙarewa yau.';
+
+  @override
+  String get saveAndAddAnother => 'Ajiye ka ƙara wani';
+
+  @override
+  String get quickStartTitle => 'Farawa da sauri';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'An ƙirƙiri $name. A ƙara mata rukuni?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'An ƙirƙiri $name. A ƙara mata bayani?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Takardun shaida';
+
+  @override
+  String get groupIdeaLicences => 'Lasisi';
+
+  @override
+  String get groupIdeaContracts => 'Kwangiloli';
+
+  @override
+  String get groupIdeaPermits => 'Izini';
+
+  @override
+  String get groupIdeaInsurance => 'Inshora';
+
+  @override
+  String get assistantCategoryAddTitle => 'Sabon rukuni';
+
+  @override
+  String get assistantCategoryAddNote => 'Ana zaɓar alama daga sunan. Za ka iya canza ta daga baya.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Sake sunan rukuni';
+
+  @override
+  String get assistantGroupAddTitle => 'Sabuwar ƙungiya';
+
+  @override
+  String get assistantGroupRenameTitle => 'Sake sunan ƙungiya';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Matsar da bayanai $count',
+      one: 'Matsar da bayani $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Dawo da bayani';
+
+  @override
+  String get assistantRestoreNote => 'Bayanin da tunatarwarsa za su dawo.';
+
+  @override
+  String get assistantStepCategories => 'Ana duba rukunanka…';
+
+  @override
+  String get assistantStepCosts => 'Ana lissafa kuɗin sabuntawa…';
+
+  @override
+  String get assistantStepVisa => 'Ana duba dokokin biza…';
 }

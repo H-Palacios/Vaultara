@@ -8357,6 +8357,251 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get homePinnedTitle => '已置顶的类别';
+
+  @override
+  String get notifAskTitle => '按时收到提醒';
+
+  @override
+  String get notifAskBody => '只有在允许通知后，Vaultara 才能在到期前提醒你。我们只发送提醒和重要的账户提醒。';
+
+  @override
+  String get notifAskAllow => '允许通知';
+
+  @override
+  String get notifAskLater => '以后再说';
+
+  @override
+  String get signInTooManyTries => '尝试次数过多。请稍候再试，或重置密码。';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds 秒后重试',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => '备用码';
+
+  @override
+  String get backupCodesIntro => '如果你丢失了手机或身份验证器应用，可以使用备用码登录。每个备用码只能使用一次。';
+
+  @override
+  String get backupCodesShownOnce => '这些备用码只会显示一次。请将它们保存在安全的地方，不要放在这部手机上。';
+
+  @override
+  String get backupCodesCopy => '复制';
+
+  @override
+  String get backupCodesSave => '保存或分享';
+
+  @override
+  String get backupCodesSaved => '我已保存备用码';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '剩余 $count 个备用码',
+      zero: '没有剩余的备用码',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => '生成备用码';
+
+  @override
+  String get backupCodesMakeNew => '生成新备用码';
+
+  @override
+  String get backupCodesReplaceTitle => '要生成新的备用码吗？';
+
+  @override
+  String get backupCodesReplaceBody => '旧备用码将立即失效。';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara 备用码';
+
+  @override
+  String get backupCodesEachOnce => '每个备用码只能使用一次。请妥善保管。';
+
+  @override
+  String get backupCodesCopied => '已复制备用码。一分钟后将从剪贴板中清除。';
+
+  @override
+  String get backupCodesNone => '尚未生成';
+
+  @override
+  String get backupCodesTileHint => '丢失手机时用于登录';
+
+  @override
+  String get backupCodeUseTitle => '使用备用码';
+
+  @override
+  String get backupCodeUseBody => '输入你保存的某个备用码。使用后将关闭两步验证，以便你在新手机上重新设置。';
+
+  @override
+  String get backupCodeLabel => '备用码';
+
+  @override
+  String get backupCodeFormat => '备用码的格式类似 ABCDE-FGHJK。';
+
+  @override
+  String get backupCodeWrong => '该备用码无效。请检查后重试。';
+
+  @override
+  String get backupCodeBack => '使用我的身份验证器应用';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '第 $step 步，共 $total 步';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return '它会在你的应用中显示为 Vaultara ($email)。';
+  }
+
+  @override
+  String get twoStepCodesChange => '验证码每 30 秒更换一次。请输入当前显示的验证码。';
+
+  @override
+  String get twoStepPaste => '粘贴';
+
+  @override
+  String get twoStepBackupNext => '生成备用码，即使丢失这部手机也能登录。';
+
+  @override
+  String get twoStepAppLockTitle => '同时锁定应用';
+
+  @override
+  String get twoStepAppLockBody => '两步验证保护登录。应用锁会在每次打开 Vaultara 时要求指纹、面容或屏幕锁。';
+
+  @override
+  String get twoStepAppLockAction => '开启应用锁';
+
+  @override
+  String get twoStepSignOutOthersBody => '在你不认识的地方登录了？请退出其他设备。';
+
+  @override
+  String get twoStepReviewDevices => '查看设备';
+
+  @override
+  String get twoStepSkipForNow => '暂时跳过';
+
+  @override
+  String get twoStepOffTitle => '两步验证已关闭';
+
+  @override
+  String get twoStepOffBody => '你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years 年',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => '输入日期';
+
+  @override
+  String get expiryTypeTitle => '输入到期日期';
+
+  @override
+  String expiryTypeHint(String example) {
+    return '例如 $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return '该日期似乎不正确。请试试 $example。';
+  }
+
+  @override
+  String get expiryAlreadyPassed => '该日期已过，因此记录将保存为已过期。';
+
+  @override
+  String get expiryEndsToday => '今天到期。';
+
+  @override
+  String get saveAndAddAnother => '保存并继续添加';
+
+  @override
+  String get quickStartTitle => '快速开始';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '已创建 $name。要添加一个分组吗？';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '已创建 $name。要添加一条记录吗？';
+  }
+
+  @override
+  String get groupIdeaCertificates => '证书';
+
+  @override
+  String get groupIdeaLicences => '执照';
+
+  @override
+  String get groupIdeaContracts => '合同';
+
+  @override
+  String get groupIdeaPermits => '许可证';
+
+  @override
+  String get groupIdeaInsurance => '保险';
+
+  @override
+  String get assistantCategoryAddTitle => '新建类别';
+
+  @override
+  String get assistantCategoryAddNote => '将根据名称选择图标。你之后可以更改。';
+
+  @override
+  String get assistantCategoryRenameTitle => '重命名类别';
+
+  @override
+  String get assistantGroupAddTitle => '新建分组';
+
+  @override
+  String get assistantGroupRenameTitle => '重命名分组';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '移动 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => '恢复记录';
+
+  @override
+  String get assistantRestoreNote => '记录及其提醒将会恢复。';
+
+  @override
+  String get assistantStepCategories => '正在检查你的类别…';
+
+  @override
+  String get assistantStepCosts => '正在合计续期费用…';
+
+  @override
+  String get assistantStepVisa => '正在检查签证规定…';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -16700,6 +16945,251 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get homePinnedTitle => '已置顶的类别';
+
+  @override
+  String get notifAskTitle => '按时收到提醒';
+
+  @override
+  String get notifAskBody => '只有在允许通知后，Vaultara 才能在到期前提醒你。我们只发送提醒和重要的账户提醒。';
+
+  @override
+  String get notifAskAllow => '允许通知';
+
+  @override
+  String get notifAskLater => '以后再说';
+
+  @override
+  String get signInTooManyTries => '尝试次数过多。请稍候再试，或重置密码。';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds 秒后重试',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => '备用码';
+
+  @override
+  String get backupCodesIntro => '如果你丢失了手机或身份验证器应用，可以使用备用码登录。每个备用码只能使用一次。';
+
+  @override
+  String get backupCodesShownOnce => '这些备用码只会显示一次。请将它们保存在安全的地方，不要放在这部手机上。';
+
+  @override
+  String get backupCodesCopy => '复制';
+
+  @override
+  String get backupCodesSave => '保存或分享';
+
+  @override
+  String get backupCodesSaved => '我已保存备用码';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '剩余 $count 个备用码',
+      zero: '没有剩余的备用码',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => '生成备用码';
+
+  @override
+  String get backupCodesMakeNew => '生成新备用码';
+
+  @override
+  String get backupCodesReplaceTitle => '要生成新的备用码吗？';
+
+  @override
+  String get backupCodesReplaceBody => '旧备用码将立即失效。';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara 备用码';
+
+  @override
+  String get backupCodesEachOnce => '每个备用码只能使用一次。请妥善保管。';
+
+  @override
+  String get backupCodesCopied => '已复制备用码。一分钟后将从剪贴板中清除。';
+
+  @override
+  String get backupCodesNone => '尚未生成';
+
+  @override
+  String get backupCodesTileHint => '丢失手机时用于登录';
+
+  @override
+  String get backupCodeUseTitle => '使用备用码';
+
+  @override
+  String get backupCodeUseBody => '输入你保存的某个备用码。使用后将关闭两步验证，以便你在新手机上重新设置。';
+
+  @override
+  String get backupCodeLabel => '备用码';
+
+  @override
+  String get backupCodeFormat => '备用码的格式类似 ABCDE-FGHJK。';
+
+  @override
+  String get backupCodeWrong => '该备用码无效。请检查后重试。';
+
+  @override
+  String get backupCodeBack => '使用我的身份验证器应用';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '第 $step 步，共 $total 步';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return '它会在你的应用中显示为 Vaultara ($email)。';
+  }
+
+  @override
+  String get twoStepCodesChange => '验证码每 30 秒更换一次。请输入当前显示的验证码。';
+
+  @override
+  String get twoStepPaste => '粘贴';
+
+  @override
+  String get twoStepBackupNext => '生成备用码，即使丢失这部手机也能登录。';
+
+  @override
+  String get twoStepAppLockTitle => '同时锁定应用';
+
+  @override
+  String get twoStepAppLockBody => '两步验证保护登录。应用锁会在每次打开 Vaultara 时要求指纹、面容或屏幕锁。';
+
+  @override
+  String get twoStepAppLockAction => '开启应用锁';
+
+  @override
+  String get twoStepSignOutOthersBody => '在你不认识的地方登录了？请退出其他设备。';
+
+  @override
+  String get twoStepReviewDevices => '查看设备';
+
+  @override
+  String get twoStepSkipForNow => '暂时跳过';
+
+  @override
+  String get twoStepOffTitle => '两步验证已关闭';
+
+  @override
+  String get twoStepOffBody => '你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years 年',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => '输入日期';
+
+  @override
+  String get expiryTypeTitle => '输入到期日期';
+
+  @override
+  String expiryTypeHint(String example) {
+    return '例如 $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return '该日期似乎不正确。请试试 $example。';
+  }
+
+  @override
+  String get expiryAlreadyPassed => '该日期已过，因此记录将保存为已过期。';
+
+  @override
+  String get expiryEndsToday => '今天到期。';
+
+  @override
+  String get saveAndAddAnother => '保存并继续添加';
+
+  @override
+  String get quickStartTitle => '快速开始';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '已创建 $name。要添加一个分组吗？';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '已创建 $name。要添加一条记录吗？';
+  }
+
+  @override
+  String get groupIdeaCertificates => '证书';
+
+  @override
+  String get groupIdeaLicences => '执照';
+
+  @override
+  String get groupIdeaContracts => '合同';
+
+  @override
+  String get groupIdeaPermits => '许可证';
+
+  @override
+  String get groupIdeaInsurance => '保险';
+
+  @override
+  String get assistantCategoryAddTitle => '新建类别';
+
+  @override
+  String get assistantCategoryAddNote => '将根据名称选择图标。你之后可以更改。';
+
+  @override
+  String get assistantCategoryRenameTitle => '重命名类别';
+
+  @override
+  String get assistantGroupAddTitle => '新建分组';
+
+  @override
+  String get assistantGroupRenameTitle => '重命名分组';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '移动 $count 条记录',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => '恢复记录';
+
+  @override
+  String get assistantRestoreNote => '记录及其提醒将会恢复。';
+
+  @override
+  String get assistantStepCategories => '正在检查你的类别…';
+
+  @override
+  String get assistantStepCosts => '正在合计续期费用…';
+
+  @override
+  String get assistantStepVisa => '正在检查签证规定…';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -25043,4 +25533,249 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get homePinnedTitle => '已釘選的類別';
+
+  @override
+  String get notifAskTitle => '準時收到提醒';
+
+  @override
+  String get notifAskBody => '只有在允許通知後，Vaultara 才能在到期前提醒你。我們只會傳送提醒和重要的帳戶通知。';
+
+  @override
+  String get notifAskAllow => '允許通知';
+
+  @override
+  String get notifAskLater => '稍後再說';
+
+  @override
+  String get signInTooManyTries => '嘗試次數過多。請稍候再試，或重設密碼。';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds 秒後再試一次',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => '備用碼';
+
+  @override
+  String get backupCodesIntro => '如果遺失手機或驗證器應用程式，可以使用備用碼登入。每組備用碼只能使用一次。';
+
+  @override
+  String get backupCodesShownOnce => '這些備用碼只會顯示一次。請保存在安全的地方，不要放在這支手機上。';
+
+  @override
+  String get backupCodesCopy => '複製';
+
+  @override
+  String get backupCodesSave => '儲存或分享';
+
+  @override
+  String get backupCodesSaved => '我已儲存備用碼';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '剩餘 $count 組備用碼',
+      zero: '沒有剩餘的備用碼',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => '產生備用碼';
+
+  @override
+  String get backupCodesMakeNew => '產生新的備用碼';
+
+  @override
+  String get backupCodesReplaceTitle => '要產生新的備用碼嗎？';
+
+  @override
+  String get backupCodesReplaceBody => '舊的備用碼會立即失效。';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara 備用碼';
+
+  @override
+  String get backupCodesEachOnce => '每組備用碼只能使用一次。請妥善保管。';
+
+  @override
+  String get backupCodesCopied => '已複製備用碼。一分鐘後會從剪貼簿清除。';
+
+  @override
+  String get backupCodesNone => '尚未產生';
+
+  @override
+  String get backupCodesTileHint => '遺失手機時用於登入';
+
+  @override
+  String get backupCodeUseTitle => '使用備用碼';
+
+  @override
+  String get backupCodeUseBody => '輸入你儲存的其中一組備用碼。使用後會關閉兩步驟驗證，讓你在新手機上重新設定。';
+
+  @override
+  String get backupCodeLabel => '備用碼';
+
+  @override
+  String get backupCodeFormat => '備用碼的格式類似 ABCDE-FGHJK。';
+
+  @override
+  String get backupCodeWrong => '這組備用碼無效。請檢查後再試一次。';
+
+  @override
+  String get backupCodeBack => '使用我的驗證器應用程式';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '第 $step 步，共 $total 步';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return '在你的應用程式中會顯示為 Vaultara ($email)。';
+  }
+
+  @override
+  String get twoStepCodesChange => '驗證碼每 30 秒更換一次。請輸入目前顯示的驗證碼。';
+
+  @override
+  String get twoStepPaste => '貼上';
+
+  @override
+  String get twoStepBackupNext => '產生備用碼，即使遺失這支手機也能登入。';
+
+  @override
+  String get twoStepAppLockTitle => '同時鎖定應用程式';
+
+  @override
+  String get twoStepAppLockBody => '兩步驟驗證保護登入。應用程式鎖定會在每次開啟 Vaultara 時要求指紋、臉孔或螢幕鎖定。';
+
+  @override
+  String get twoStepAppLockAction => '開啟應用程式鎖定';
+
+  @override
+  String get twoStepSignOutOthersBody => '在你不認得的地方登入了？請登出其他裝置。';
+
+  @override
+  String get twoStepReviewDevices => '查看裝置';
+
+  @override
+  String get twoStepSkipForNow => '暫時略過';
+
+  @override
+  String get twoStepOffTitle => '兩步驟驗證已關閉';
+
+  @override
+  String get twoStepOffBody => '你使用備用碼登入，因此兩步驟驗證已關閉。請在這支手機上重新設定，以保護你的帳戶。';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years 年',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => '輸入日期';
+
+  @override
+  String get expiryTypeTitle => '輸入到期日';
+
+  @override
+  String expiryTypeHint(String example) {
+    return '例如 $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return '這個日期似乎不正確。請試試 $example。';
+  }
+
+  @override
+  String get expiryAlreadyPassed => '這個日期已過，因此記錄會儲存為已過期。';
+
+  @override
+  String get expiryEndsToday => '今天到期。';
+
+  @override
+  String get saveAndAddAnother => '儲存並繼續新增';
+
+  @override
+  String get quickStartTitle => '快速開始';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '已建立 $name。要新增群組嗎？';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '已建立 $name。要新增記錄嗎？';
+  }
+
+  @override
+  String get groupIdeaCertificates => '證書';
+
+  @override
+  String get groupIdeaLicences => '執照';
+
+  @override
+  String get groupIdeaContracts => '合約';
+
+  @override
+  String get groupIdeaPermits => '許可證';
+
+  @override
+  String get groupIdeaInsurance => '保險';
+
+  @override
+  String get assistantCategoryAddTitle => '新增類別';
+
+  @override
+  String get assistantCategoryAddNote => '會根據名稱選擇圖示。你之後可以變更。';
+
+  @override
+  String get assistantCategoryRenameTitle => '重新命名類別';
+
+  @override
+  String get assistantGroupAddTitle => '新增群組';
+
+  @override
+  String get assistantGroupRenameTitle => '重新命名群組';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '移動 $count 筆記錄',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => '還原記錄';
+
+  @override
+  String get assistantRestoreNote => '記錄及其提醒會恢復。';
+
+  @override
+  String get assistantStepCategories => '正在檢查你的類別…';
+
+  @override
+  String get assistantStepCosts => '正在加總續約費用…';
+
+  @override
+  String get assistantStepVisa => '正在檢查簽證規定…';
 }

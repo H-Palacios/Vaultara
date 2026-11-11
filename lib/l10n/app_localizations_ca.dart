@@ -8421,4 +8421,253 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Categories fixades';
+
+  @override
+  String get notifAskTitle => 'Rep els recordatoris a temps';
+
+  @override
+  String get notifAskBody => 'Vaultara només et pot avisar abans que caduqui alguna cosa si les notificacions estan permeses. Només enviem recordatoris i avisos importants del compte.';
+
+  @override
+  String get notifAskAllow => 'Permet les notificacions';
+
+  @override
+  String get notifAskLater => 'Ara no';
+
+  @override
+  String get signInTooManyTries => 'Massa intents. Espera un moment abans de tornar-ho a provar o restableix la contrasenya.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Torna-ho a provar d\'aquí a $seconds segons',
+      one: 'Torna-ho a provar d\'aquí a $seconds segon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Codis de seguretat';
+
+  @override
+  String get backupCodesIntro => 'Si perds el telèfon o l\'aplicació d\'autenticació, un codi de seguretat et permet iniciar la sessió. Cada codi funciona una vegada.';
+
+  @override
+  String get backupCodesShownOnce => 'Aquests codis només es mostren una vegada. Desa\'ls en un lloc segur, lluny d\'aquest telèfon.';
+
+  @override
+  String get backupCodesCopy => 'Copia';
+
+  @override
+  String get backupCodesSave => 'Desa o comparteix';
+
+  @override
+  String get backupCodesSaved => 'He desat els codis';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Queden $count codis de seguretat',
+      one: 'Queda $count codi de seguretat',
+      zero: 'No queda cap codi de seguretat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Crea codis de seguretat';
+
+  @override
+  String get backupCodesMakeNew => 'Crea codis nous';
+
+  @override
+  String get backupCodesReplaceTitle => 'Vols crear codis de seguretat nous?';
+
+  @override
+  String get backupCodesReplaceBody => 'Els codis antics deixaran de funcionar immediatament.';
+
+  @override
+  String get backupCodesFileTitle => 'Codis de seguretat de Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Cada codi funciona una vegada. Guarda\'ls en un lloc segur.';
+
+  @override
+  String get backupCodesCopied => 'Codis copiats. S\'esborraran del porta-retalls d\'aquí a un minut.';
+
+  @override
+  String get backupCodesNone => 'Encara no se n\'ha creat cap';
+
+  @override
+  String get backupCodesTileHint => 'Inicia la sessió si perds el telèfon';
+
+  @override
+  String get backupCodeUseTitle => 'Utilitza un codi de seguretat';
+
+  @override
+  String get backupCodeUseBody => 'Introdueix un dels codis de seguretat que has desat. Si en fas servir un, la verificació en dos passos es desactiva perquè la puguis tornar a configurar al telèfon nou.';
+
+  @override
+  String get backupCodeLabel => 'Codi de seguretat';
+
+  @override
+  String get backupCodeFormat => 'Els codis de seguretat tenen aquest aspecte: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Aquest codi no ha funcionat. Comprova\'l i torna-ho a provar.';
+
+  @override
+  String get backupCodeBack => 'Utilitza l\'aplicació d\'autenticació';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Pas $step de $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Es mostrarà com a Vaultara ($email) a l\'aplicació.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Els codis canvien cada 30 segons. Introdueix el que es mostra ara.';
+
+  @override
+  String get twoStepPaste => 'Enganxa';
+
+  @override
+  String get twoStepBackupNext => 'Crea codis de seguretat per poder iniciar la sessió encara que perdis aquest telèfon.';
+
+  @override
+  String get twoStepAppLockTitle => 'Bloqueja també l\'aplicació';
+
+  @override
+  String get twoStepAppLockBody => 'La verificació en dos passos protegeix l\'inici de sessió. El bloqueig de l\'aplicació demana l\'empremta, la cara o el bloqueig de pantalla cada vegada que s\'obre Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Activa el bloqueig de l\'aplicació';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Has iniciat la sessió en algun lloc que no reconeixes? Tanca la sessió dels altres dispositius.';
+
+  @override
+  String get twoStepReviewDevices => 'Revisa els dispositius';
+
+  @override
+  String get twoStepSkipForNow => 'Omet per ara';
+
+  @override
+  String get twoStepOffTitle => 'La verificació en dos passos està desactivada';
+
+  @override
+  String get twoStepOffBody => 'Has iniciat la sessió amb un codi de seguretat, així que la verificació en dos passos s\'ha desactivat. Torna-la a configurar en aquest telèfon per mantenir el compte protegit.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years anys',
+      one: '+$years any',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Escriu la data';
+
+  @override
+  String get expiryTypeTitle => 'Escriu la data de caducitat';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Per exemple $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Aquesta data no sembla correcta. Prova $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Aquesta data ja ha passat, així que el registre es desarà com a caducat.';
+
+  @override
+  String get expiryEndsToday => 'Caduca avui.';
+
+  @override
+  String get saveAndAddAnother => 'Desa i afegeix-ne un altre';
+
+  @override
+  String get quickStartTitle => 'Inici ràpid';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'S\'ha creat $name. Vols afegir-hi un grup?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'S\'ha creat $name. Vols afegir-hi un registre?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certificats';
+
+  @override
+  String get groupIdeaLicences => 'Llicències';
+
+  @override
+  String get groupIdeaContracts => 'Contractes';
+
+  @override
+  String get groupIdeaPermits => 'Permisos';
+
+  @override
+  String get groupIdeaInsurance => 'Assegurances';
+
+  @override
+  String get assistantCategoryAddTitle => 'Categoria nova';
+
+  @override
+  String get assistantCategoryAddNote => 'La icona es tria a partir del nom. La pots canviar més tard.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Canvia el nom de la categoria';
+
+  @override
+  String get assistantGroupAddTitle => 'Grup nou';
+
+  @override
+  String get assistantGroupRenameTitle => 'Canvia el nom del grup';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mou $count registres',
+      one: 'Mou $count registre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Restaura el registre';
+
+  @override
+  String get assistantRestoreNote => 'El registre i els seus recordatoris tornen.';
+
+  @override
+  String get assistantStepCategories => 'S\'estan comprovant les categories…';
+
+  @override
+  String get assistantStepCosts => 'S\'estan sumant els costos de renovació…';
+
+  @override
+  String get assistantStepVisa => 'S\'estan comprovant les normes de visat…';
 }

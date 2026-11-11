@@ -8486,4 +8486,256 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Piespraustās kategorijas';
+
+  @override
+  String get notifAskTitle => 'Saņemiet atgādinājumus laikā';
+
+  @override
+  String get notifAskBody => 'Vaultara var jums atgādināt pirms kaut kā termiņa beigām tikai tad, ja paziņojumi ir atļauti. Mēs sūtām tikai atgādinājumus un svarīgus konta brīdinājumus.';
+
+  @override
+  String get notifAskAllow => 'Atļaut paziņojumus';
+
+  @override
+  String get notifAskLater => 'Ne tagad';
+
+  @override
+  String get signInTooManyTries => 'Pārāk daudz mēģinājumu. Brīdi pagaidiet pirms nākamā mēģinājuma vai atiestatiet paroli.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Mēģiniet vēlreiz pēc $seconds sekundēm',
+      one: 'Mēģiniet vēlreiz pēc $seconds sekundes',
+      zero: 'Mēģiniet vēlreiz pēc $seconds sekundēm',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Rezerves kodi';
+
+  @override
+  String get backupCodesIntro => 'Ja pazaudējat tālruni vai autentifikācijas lietotni, ar rezerves kodu varat pierakstīties. Katrs kods darbojas vienreiz.';
+
+  @override
+  String get backupCodesShownOnce => 'Šie kodi tiek parādīti tikai vienreiz. Saglabājiet tos drošā vietā, prom no šī tālruņa.';
+
+  @override
+  String get backupCodesCopy => 'Kopēt';
+
+  @override
+  String get backupCodesSave => 'Saglabāt vai kopīgot';
+
+  @override
+  String get backupCodesSaved => 'Esmu saglabājis kodus';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atlikuši $count rezerves kodi',
+      one: 'Atlicis $count rezerves kods',
+      zero: 'Atlikuši $count rezerves kodi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Izveidot rezerves kodus';
+
+  @override
+  String get backupCodesMakeNew => 'Izveidot jaunus kodus';
+
+  @override
+  String get backupCodesReplaceTitle => 'Vai izveidot jaunus rezerves kodus?';
+
+  @override
+  String get backupCodesReplaceBody => 'Vecie kodi uzreiz pārstās darboties.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara rezerves kodi';
+
+  @override
+  String get backupCodesEachOnce => 'Katrs kods darbojas vienreiz. Glabājiet tos drošā vietā.';
+
+  @override
+  String get backupCodesCopied => 'Rezerves kodi nokopēti. Pēc minūtes tie tiks notīrīti no starpliktuves.';
+
+  @override
+  String get backupCodesNone => 'Vēl nav izveidoti';
+
+  @override
+  String get backupCodesTileHint => 'Pierakstieties, ja pazaudējat tālruni';
+
+  @override
+  String get backupCodeUseTitle => 'Izmantot rezerves kodu';
+
+  @override
+  String get backupCodeUseBody => 'Ievadiet vienu no saglabātajiem rezerves kodiem. Tā izmantošana izslēdz divpakāpju verifikāciju, lai to varētu iestatīt no jauna jaunajā tālrunī.';
+
+  @override
+  String get backupCodeLabel => 'Rezerves kods';
+
+  @override
+  String get backupCodeFormat => 'Rezerves kodi izskatās šādi: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Šis kods nedarbojās. Pārbaudiet to un mēģiniet vēlreiz.';
+
+  @override
+  String get backupCodeBack => 'Izmantot autentifikācijas lietotni';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$step. darbība no $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Lietotnē tas tiks rādīts kā Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodi mainās ik pēc 30 sekundēm. Ievadiet pašlaik redzamo.';
+
+  @override
+  String get twoStepPaste => 'Ielīmēt';
+
+  @override
+  String get twoStepBackupNext => 'Izveidojiet rezerves kodus, lai varētu pierakstīties pat tad, ja pazaudējat šo tālruni.';
+
+  @override
+  String get twoStepAppLockTitle => 'Bloķējiet arī lietotni';
+
+  @override
+  String get twoStepAppLockBody => 'Divpakāpju verifikācija aizsargā pierakstīšanos. Lietotnes bloķēšana prasa pirkstu nospiedumu, seju vai ekrāna bloķēšanu katru reizi, kad tiek atvērta Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Ieslēgt lietotnes bloķēšanu';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Esat pierakstījies kaut kur, ko neatpazīstat? Izrakstieties citās ierīcēs.';
+
+  @override
+  String get twoStepReviewDevices => 'Pārskatīt ierīces';
+
+  @override
+  String get twoStepSkipForNow => 'Pagaidām izlaist';
+
+  @override
+  String get twoStepOffTitle => 'Divpakāpju verifikācija ir izslēgta';
+
+  @override
+  String get twoStepOffBody => 'Jūs pierakstījāties ar rezerves kodu, tāpēc divpakāpju verifikācija tika izslēgta. Iestatiet to no jauna šajā tālrunī, lai konts paliktu aizsargāts.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years gadi',
+      one: '+$years gads',
+      zero: '+$years gadi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Ierakstīt datumu';
+
+  @override
+  String get expiryTypeTitle => 'Ierakstiet derīguma beigu datumu';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Piemēram, $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Šis datums neizskatās pareizs. Mēģiniet $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Šis datums ir pagājis, tāpēc ieraksts tiks saglabāts kā beidzies.';
+
+  @override
+  String get expiryEndsToday => 'Tas beidzas šodien.';
+
+  @override
+  String get saveAndAddAnother => 'Saglabāt un pievienot vēl vienu';
+
+  @override
+  String get quickStartTitle => 'Ātrais sākums';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name izveidota. Pievienot grupu?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name izveidota. Pievienot ierakstu?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikāti';
+
+  @override
+  String get groupIdeaLicences => 'Licences';
+
+  @override
+  String get groupIdeaContracts => 'Līgumi';
+
+  @override
+  String get groupIdeaPermits => 'Atļaujas';
+
+  @override
+  String get groupIdeaInsurance => 'Apdrošināšana';
+
+  @override
+  String get assistantCategoryAddTitle => 'Jauna kategorija';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikona tiek izvēlēta pēc nosaukuma. To varēsiet mainīt vēlāk.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Pārdēvēt kategoriju';
+
+  @override
+  String get assistantGroupAddTitle => 'Jauna grupa';
+
+  @override
+  String get assistantGroupRenameTitle => 'Pārdēvēt grupu';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pārvietot $count ierakstus',
+      one: 'Pārvietot $count ierakstu',
+      zero: 'Pārvietot $count ierakstus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Atjaunot ierakstu';
+
+  @override
+  String get assistantRestoreNote => 'Ieraksts un tā atgādinājumi atgriežas.';
+
+  @override
+  String get assistantStepCategories => 'Pārbauda jūsu kategorijas…';
+
+  @override
+  String get assistantStepCosts => 'Saskaita atjaunošanas izmaksas…';
+
+  @override
+  String get assistantStepVisa => 'Pārbauda vīzu noteikumus…';
 }

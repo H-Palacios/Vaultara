@@ -8417,4 +8417,253 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'دسته‌های سنجاق‌شده';
+
+  @override
+  String get notifAskTitle => 'یادآوری‌ها را به‌موقع دریافت کنید';
+
+  @override
+  String get notifAskBody => 'Vaultara فقط وقتی می‌تواند قبل از انقضای چیزی به شما یادآوری کند که اعلان‌ها مجاز باشند. ما فقط یادآوری‌ها و هشدارهای مهم حساب را می‌فرستیم.';
+
+  @override
+  String get notifAskAllow => 'اجازه دادن به اعلان‌ها';
+
+  @override
+  String get notifAskLater => 'حالا نه';
+
+  @override
+  String get signInTooManyTries => 'تلاش‌های بیش از حد. کمی صبر کنید و دوباره امتحان کنید، یا رمز عبور خود را بازنشانی کنید.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds ثانیه دیگر دوباره امتحان کنید',
+      one: '$seconds ثانیه دیگر دوباره امتحان کنید',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'کدهای پشتیبان';
+
+  @override
+  String get backupCodesIntro => 'اگر تلفن یا برنامه احراز هویت خود را گم کنید، کد پشتیبان به شما امکان ورود می‌دهد. هر کد یک بار کار می‌کند.';
+
+  @override
+  String get backupCodesShownOnce => 'این کدها فقط یک بار نمایش داده می‌شوند. آن‌ها را در جای امنی، دور از این تلفن، نگه دارید.';
+
+  @override
+  String get backupCodesCopy => 'کپی';
+
+  @override
+  String get backupCodesSave => 'ذخیره یا اشتراک‌گذاری';
+
+  @override
+  String get backupCodesSaved => 'کدهایم را ذخیره کردم';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کد پشتیبان باقی مانده',
+      one: '$count کد پشتیبان باقی مانده',
+      zero: 'هیچ کد پشتیبانی باقی نمانده',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'ساخت کدهای پشتیبان';
+
+  @override
+  String get backupCodesMakeNew => 'ساخت کدهای جدید';
+
+  @override
+  String get backupCodesReplaceTitle => 'کدهای پشتیبان جدید ساخته شود؟';
+
+  @override
+  String get backupCodesReplaceBody => 'کدهای قدیمی شما فوراً از کار می‌افتند.';
+
+  @override
+  String get backupCodesFileTitle => 'کدهای پشتیبان Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'هر کد یک بار کار می‌کند. آن‌ها را در جای امنی نگه دارید.';
+
+  @override
+  String get backupCodesCopied => 'کدهای پشتیبان کپی شد. تا یک دقیقه دیگر از کلیپ‌بورد پاک می‌شوند.';
+
+  @override
+  String get backupCodesNone => 'هنوز ساخته نشده';
+
+  @override
+  String get backupCodesTileHint => 'اگر تلفنتان را گم کردید وارد شوید';
+
+  @override
+  String get backupCodeUseTitle => 'استفاده از کد پشتیبان';
+
+  @override
+  String get backupCodeUseBody => 'یکی از کدهای پشتیبانی را که ذخیره کرده‌اید وارد کنید. استفاده از آن تأیید دومرحله‌ای را خاموش می‌کند تا بتوانید آن را روی تلفن جدیدتان دوباره راه‌اندازی کنید.';
+
+  @override
+  String get backupCodeLabel => 'کد پشتیبان';
+
+  @override
+  String get backupCodeFormat => 'کدهای پشتیبان شبیه ABCDE-FGHJK هستند.';
+
+  @override
+  String get backupCodeWrong => 'این کد کار نکرد. آن را بررسی کنید و دوباره امتحان کنید.';
+
+  @override
+  String get backupCodeBack => 'استفاده از برنامه احراز هویت';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'مرحله $step از $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'در برنامه شما به‌صورت Vaultara ($email) نمایش داده می‌شود.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'کدها هر ۳۰ ثانیه عوض می‌شوند. کدی را که اکنون نمایش داده می‌شود وارد کنید.';
+
+  @override
+  String get twoStepPaste => 'چسباندن';
+
+  @override
+  String get twoStepBackupNext => 'کدهای پشتیبان بسازید تا حتی اگر این تلفن را گم کردید بتوانید وارد شوید.';
+
+  @override
+  String get twoStepAppLockTitle => 'برنامه را هم قفل کنید';
+
+  @override
+  String get twoStepAppLockBody => 'تأیید دومرحله‌ای از ورود محافظت می‌کند. قفل برنامه هر بار که Vaultara باز می‌شود اثر انگشت، چهره یا قفل صفحه را می‌خواهد.';
+
+  @override
+  String get twoStepAppLockAction => 'روشن کردن قفل برنامه';
+
+  @override
+  String get twoStepSignOutOthersBody => 'جایی وارد شده‌اید که نمی‌شناسید؟ از دستگاه‌های دیگر خارج شوید.';
+
+  @override
+  String get twoStepReviewDevices => 'بررسی دستگاه‌ها';
+
+  @override
+  String get twoStepSkipForNow => 'فعلاً رد شو';
+
+  @override
+  String get twoStepOffTitle => 'تأیید دومرحله‌ای خاموش است';
+
+  @override
+  String get twoStepOffBody => 'با کد پشتیبان وارد شدید، بنابراین تأیید دومرحله‌ای خاموش شد. برای محافظت از حساب، آن را روی این تلفن دوباره راه‌اندازی کنید.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years سال',
+      one: '+$years سال',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'نوشتن تاریخ';
+
+  @override
+  String get expiryTypeTitle => 'تاریخ انقضا را بنویسید';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'برای مثال $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'این تاریخ درست به نظر نمی‌رسد. $example را امتحان کنید.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'این تاریخ گذشته است، بنابراین سابقه به‌عنوان منقضی ذخیره می‌شود.';
+
+  @override
+  String get expiryEndsToday => 'امروز منقضی می‌شود.';
+
+  @override
+  String get saveAndAddAnother => 'ذخیره و افزودن مورد دیگر';
+
+  @override
+  String get quickStartTitle => 'شروع سریع';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name ساخته شد. گروهی به آن اضافه شود؟';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name ساخته شد. سابقه‌ای به آن اضافه شود؟';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'گواهی‌ها';
+
+  @override
+  String get groupIdeaLicences => 'مجوزها';
+
+  @override
+  String get groupIdeaContracts => 'قراردادها';
+
+  @override
+  String get groupIdeaPermits => 'پروانه‌ها';
+
+  @override
+  String get groupIdeaInsurance => 'بیمه';
+
+  @override
+  String get assistantCategoryAddTitle => 'دسته جدید';
+
+  @override
+  String get assistantCategoryAddNote => 'نماد بر اساس نام انتخاب می‌شود. بعداً می‌توانید آن را تغییر دهید.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'تغییر نام دسته';
+
+  @override
+  String get assistantGroupAddTitle => 'گروه جدید';
+
+  @override
+  String get assistantGroupRenameTitle => 'تغییر نام گروه';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'انتقال $count سابقه',
+      one: 'انتقال $count سابقه',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'بازیابی سابقه';
+
+  @override
+  String get assistantRestoreNote => 'سابقه و یادآوری‌هایش برمی‌گردند.';
+
+  @override
+  String get assistantStepCategories => 'در حال بررسی دسته‌های شما…';
+
+  @override
+  String get assistantStepCosts => 'در حال جمع زدن هزینه‌های تمدید…';
+
+  @override
+  String get assistantStepVisa => 'در حال بررسی قوانین ویزا…';
 }

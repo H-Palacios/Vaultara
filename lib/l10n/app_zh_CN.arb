@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "已置顶的类别"
+  "homePinnedTitle": "已置顶的类别",
+  "notifAskTitle": "按时收到提醒",
+  "notifAskBody": "只有在允许通知后，Vaultara 才能在到期前提醒你。我们只发送提醒和重要的账户提醒。",
+  "notifAskAllow": "允许通知",
+  "notifAskLater": "以后再说",
+  "signInTooManyTries": "尝试次数过多。请稍候再试，或重置密码。",
+  "signInWaitSeconds": "{seconds, plural, other{{seconds} 秒后重试}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "备用码",
+  "backupCodesIntro": "如果你丢失了手机或身份验证器应用，可以使用备用码登录。每个备用码只能使用一次。",
+  "backupCodesShownOnce": "这些备用码只会显示一次。请将它们保存在安全的地方，不要放在这部手机上。",
+  "backupCodesCopy": "复制",
+  "backupCodesSave": "保存或分享",
+  "backupCodesSaved": "我已保存备用码",
+  "backupCodesLeft": "{count, plural, =0{没有剩余的备用码} other{剩余 {count} 个备用码}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "生成备用码",
+  "backupCodesMakeNew": "生成新备用码",
+  "backupCodesReplaceTitle": "要生成新的备用码吗？",
+  "backupCodesReplaceBody": "旧备用码将立即失效。",
+  "backupCodesFileTitle": "Vaultara 备用码",
+  "backupCodesEachOnce": "每个备用码只能使用一次。请妥善保管。",
+  "backupCodesCopied": "已复制备用码。一分钟后将从剪贴板中清除。",
+  "backupCodesNone": "尚未生成",
+  "backupCodesTileHint": "丢失手机时用于登录",
+  "backupCodeUseTitle": "使用备用码",
+  "backupCodeUseBody": "输入你保存的某个备用码。使用后将关闭两步验证，以便你在新手机上重新设置。",
+  "backupCodeLabel": "备用码",
+  "backupCodeFormat": "备用码的格式类似 ABCDE-FGHJK。",
+  "backupCodeWrong": "该备用码无效。请检查后重试。",
+  "backupCodeBack": "使用我的身份验证器应用",
+  "twoStepStepOf": "第 {step} 步，共 {total} 步",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "它会在你的应用中显示为 Vaultara ({email})。",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "验证码每 30 秒更换一次。请输入当前显示的验证码。",
+  "twoStepPaste": "粘贴",
+  "twoStepBackupNext": "生成备用码，即使丢失这部手机也能登录。",
+  "twoStepAppLockTitle": "同时锁定应用",
+  "twoStepAppLockBody": "两步验证保护登录。应用锁会在每次打开 Vaultara 时要求指纹、面容或屏幕锁。",
+  "twoStepAppLockAction": "开启应用锁",
+  "twoStepSignOutOthersBody": "在你不认识的地方登录了？请退出其他设备。",
+  "twoStepReviewDevices": "查看设备",
+  "twoStepSkipForNow": "暂时跳过",
+  "twoStepOffTitle": "两步验证已关闭",
+  "twoStepOffBody": "你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。",
+  "expiryPlusYears": "{years, plural, other{+{years} 年}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "输入日期",
+  "expiryTypeTitle": "输入到期日期",
+  "expiryTypeHint": "例如 {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "该日期似乎不正确。请试试 {example}。",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "该日期已过，因此记录将保存为已过期。",
+  "expiryEndsToday": "今天到期。",
+  "saveAndAddAnother": "保存并继续添加",
+  "quickStartTitle": "快速开始",
+  "categoryCreatedAddGroup": "已创建 {name}。要添加一个分组吗？",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "已创建 {name}。要添加一条记录吗？",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "证书",
+  "groupIdeaLicences": "执照",
+  "groupIdeaContracts": "合同",
+  "groupIdeaPermits": "许可证",
+  "groupIdeaInsurance": "保险",
+  "assistantCategoryAddTitle": "新建类别",
+  "assistantCategoryAddNote": "将根据名称选择图标。你之后可以更改。",
+  "assistantCategoryRenameTitle": "重命名类别",
+  "assistantGroupAddTitle": "新建分组",
+  "assistantGroupRenameTitle": "重命名分组",
+  "assistantMoveTitle": "{count, plural, other{移动 {count} 条记录}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "恢复记录",
+  "assistantRestoreNote": "记录及其提醒将会恢复。",
+  "assistantStepCategories": "正在检查你的类别…",
+  "assistantStepCosts": "正在合计续期费用…",
+  "assistantStepVisa": "正在检查签证规定…"
 }

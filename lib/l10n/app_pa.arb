@@ -3088,5 +3088,146 @@
       }
     }
   },
-  "homePinnedTitle": "ਪਿੰਨ ਕੀਤੀਆਂ ਸ਼੍ਰੇਣੀਆਂ"
+  "homePinnedTitle": "ਪਿੰਨ ਕੀਤੀਆਂ ਸ਼੍ਰੇਣੀਆਂ",
+  "notifAskTitle": "ਆਪਣੇ ਰਿਮਾਈਂਡਰ ਸਮੇਂ ਸਿਰ ਪ੍ਰਾਪਤ ਕਰੋ",
+  "notifAskBody": "ਸੂਚਨਾਵਾਂ ਦੀ ਇਜਾਜ਼ਤ ਹੋਣ 'ਤੇ ਹੀ Vaultara ਕਿਸੇ ਚੀਜ਼ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਵਾ ਸਕਦਾ ਹੈ। ਅਸੀਂ ਸਿਰਫ਼ ਰਿਮਾਈਂਡਰ ਅਤੇ ਜ਼ਰੂਰੀ ਖਾਤਾ ਚੇਤਾਵਨੀਆਂ ਭੇਜਦੇ ਹਾਂ।",
+  "notifAskAllow": "ਸੂਚਨਾਵਾਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ",
+  "notifAskLater": "ਹੁਣ ਨਹੀਂ",
+  "signInTooManyTries": "ਬਹੁਤ ਜ਼ਿਆਦਾ ਕੋਸ਼ਿਸ਼ਾਂ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਥੋੜ੍ਹਾ ਰੁਕੋ, ਜਾਂ ਆਪਣਾ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰੋ।",
+  "signInWaitSeconds": "{seconds, plural, one{{seconds} ਸਕਿੰਟ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ} other{{seconds} ਸਕਿੰਟਾਂ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "ਬੈਕਅੱਪ ਕੋਡ",
+  "backupCodesIntro": "ਜੇ ਤੁਹਾਡਾ ਫ਼ੋਨ ਜਾਂ ਪ੍ਰਮਾਣਕ ਐਪ ਗੁੰਮ ਹੋ ਜਾਵੇ, ਤਾਂ ਬੈਕਅੱਪ ਕੋਡ ਨਾਲ ਤੁਸੀਂ ਸਾਈਨ ਇਨ ਕਰ ਸਕਦੇ ਹੋ। ਹਰ ਕੋਡ ਇੱਕ ਵਾਰ ਕੰਮ ਕਰਦਾ ਹੈ।",
+  "backupCodesShownOnce": "ਇਹ ਕੋਡ ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ। ਇਨ੍ਹਾਂ ਨੂੰ ਇਸ ਫ਼ੋਨ ਤੋਂ ਦੂਰ ਕਿਸੇ ਸੁਰੱਖਿਅਤ ਥਾਂ 'ਤੇ ਸੰਭਾਲੋ।",
+  "backupCodesCopy": "ਕਾਪੀ ਕਰੋ",
+  "backupCodesSave": "ਸੰਭਾਲੋ ਜਾਂ ਸਾਂਝਾ ਕਰੋ",
+  "backupCodesSaved": "ਮੈਂ ਆਪਣੇ ਕੋਡ ਸੰਭਾਲ ਲਏ ਹਨ",
+  "backupCodesLeft": "{count, plural, =0{ਕੋਈ ਬੈਕਅੱਪ ਕੋਡ ਬਾਕੀ ਨਹੀਂ} one{{count} ਬੈਕਅੱਪ ਕੋਡ ਬਾਕੀ} other{{count} ਬੈਕਅੱਪ ਕੋਡ ਬਾਕੀ}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "ਬੈਕਅੱਪ ਕੋਡ ਬਣਾਓ",
+  "backupCodesMakeNew": "ਨਵੇਂ ਕੋਡ ਬਣਾਓ",
+  "backupCodesReplaceTitle": "ਕੀ ਨਵੇਂ ਬੈਕਅੱਪ ਕੋਡ ਬਣਾਉਣੇ ਹਨ?",
+  "backupCodesReplaceBody": "ਤੁਹਾਡੇ ਪੁਰਾਣੇ ਕੋਡ ਤੁਰੰਤ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦੇਣਗੇ।",
+  "backupCodesFileTitle": "Vaultara ਬੈਕਅੱਪ ਕੋਡ",
+  "backupCodesEachOnce": "ਹਰ ਕੋਡ ਇੱਕ ਵਾਰ ਕੰਮ ਕਰਦਾ ਹੈ। ਇਨ੍ਹਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਥਾਂ 'ਤੇ ਰੱਖੋ।",
+  "backupCodesCopied": "ਬੈਕਅੱਪ ਕੋਡ ਕਾਪੀ ਹੋ ਗਏ। ਇੱਕ ਮਿੰਟ ਵਿੱਚ ਕਲਿੱਪਬੋਰਡ ਤੋਂ ਹਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।",
+  "backupCodesNone": "ਹਾਲੇ ਕੋਈ ਨਹੀਂ ਬਣਾਇਆ",
+  "backupCodesTileHint": "ਫ਼ੋਨ ਗੁੰਮ ਹੋਣ 'ਤੇ ਸਾਈਨ ਇਨ ਕਰੋ",
+  "backupCodeUseTitle": "ਬੈਕਅੱਪ ਕੋਡ ਵਰਤੋ",
+  "backupCodeUseBody": "ਆਪਣੇ ਸੰਭਾਲੇ ਬੈਕਅੱਪ ਕੋਡਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦਰਜ ਕਰੋ। ਇਸਨੂੰ ਵਰਤਣ ਨਾਲ ਦੋ-ਪੜਾਵੀ ਪੁਸ਼ਟੀ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਇਸਨੂੰ ਨਵੇਂ ਫ਼ੋਨ 'ਤੇ ਦੁਬਾਰਾ ਸੈੱਟ ਕਰ ਸਕੋ।",
+  "backupCodeLabel": "ਬੈਕਅੱਪ ਕੋਡ",
+  "backupCodeFormat": "ਬੈਕਅੱਪ ਕੋਡ ABCDE-FGHJK ਵਰਗੇ ਦਿਸਦੇ ਹਨ।",
+  "backupCodeWrong": "ਉਹ ਕੋਡ ਕੰਮ ਨਹੀਂ ਕੀਤਾ। ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "backupCodeBack": "ਮੇਰੀ ਪ੍ਰਮਾਣਕ ਐਪ ਵਰਤੋ",
+  "twoStepStepOf": "ਪੜਾਅ {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "ਤੁਹਾਡੀ ਐਪ ਵਿੱਚ ਇਹ Vaultara ({email}) ਵਜੋਂ ਦਿਖੇਗਾ।",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "ਕੋਡ ਹਰ 30 ਸਕਿੰਟਾਂ ਵਿੱਚ ਬਦਲਦੇ ਹਨ। ਹੁਣ ਦਿਖ ਰਿਹਾ ਕੋਡ ਦਰਜ ਕਰੋ।",
+  "twoStepPaste": "ਪੇਸਟ ਕਰੋ",
+  "twoStepBackupNext": "ਬੈਕਅੱਪ ਕੋਡ ਬਣਾਓ ਤਾਂ ਜੋ ਇਹ ਫ਼ੋਨ ਗੁੰਮ ਹੋਣ 'ਤੇ ਵੀ ਤੁਸੀਂ ਸਾਈਨ ਇਨ ਕਰ ਸਕੋ।",
+  "twoStepAppLockTitle": "ਐਪ ਨੂੰ ਵੀ ਲਾਕ ਕਰੋ",
+  "twoStepAppLockBody": "ਦੋ-ਪੜਾਵੀ ਸਾਈਨ ਇਨ ਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖਦੀ ਹੈ। ਐਪ ਲਾਕ ਹਰ ਵਾਰ Vaultara ਖੁੱਲ੍ਹਣ 'ਤੇ ਫਿੰਗਰਪ੍ਰਿੰਟ, ਚਿਹਰਾ ਜਾਂ ਸਕ੍ਰੀਨ ਲਾਕ ਮੰਗਦਾ ਹੈ।",
+  "twoStepAppLockAction": "ਐਪ ਲਾਕ ਚਾਲੂ ਕਰੋ",
+  "twoStepSignOutOthersBody": "ਕਿਸੇ ਅਣਜਾਣ ਥਾਂ ਸਾਈਨ ਇਨ ਹੈ? ਹੋਰ ਡੀਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਊਟ ਕਰੋ।",
+  "twoStepReviewDevices": "ਡੀਵਾਈਸਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ",
+  "twoStepSkipForNow": "ਹੁਣ ਲਈ ਛੱਡੋ",
+  "twoStepOffTitle": "ਦੋ-ਪੜਾਵੀ ਪੁਸ਼ਟੀ ਬੰਦ ਹੈ",
+  "twoStepOffBody": "ਤੁਸੀਂ ਬੈਕਅੱਪ ਕੋਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕੀਤਾ, ਇਸ ਲਈ ਦੋ-ਪੜਾਵੀ ਪੁਸ਼ਟੀ ਬੰਦ ਕਰ ਦਿੱਤੀ ਗਈ। ਆਪਣਾ ਖਾਤਾ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ ਇਸ ਫ਼ੋਨ 'ਤੇ ਇਸਨੂੰ ਦੁਬਾਰਾ ਸੈੱਟ ਕਰੋ।",
+  "expiryPlusYears": "{years, plural, one{+{years} ਸਾਲ} other{+{years} ਸਾਲ}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "ਮਿਤੀ ਟਾਈਪ ਕਰੋ",
+  "expiryTypeTitle": "ਮਿਆਦ ਖਤਮ ਹੋਣ ਦੀ ਮਿਤੀ ਟਾਈਪ ਕਰੋ",
+  "expiryTypeHint": "ਉਦਾਹਰਨ ਲਈ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ਉਹ ਮਿਤੀ ਸਹੀ ਨਹੀਂ ਲੱਗਦੀ। {example} ਅਜ਼ਮਾਓ।",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ਇਹ ਮਿਤੀ ਲੰਘ ਚੁੱਕੀ ਹੈ, ਇਸ ਲਈ ਰਿਕਾਰਡ ਮਿਆਦ-ਪੁੱਗੇ ਵਜੋਂ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ।",
+  "expiryEndsToday": "ਇਸਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੁੰਦੀ ਹੈ।",
+  "saveAndAddAnother": "ਸੰਭਾਲੋ ਅਤੇ ਇੱਕ ਹੋਰ ਜੋੜੋ",
+  "quickStartTitle": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ",
+  "categoryCreatedAddGroup": "{name} ਬਣਾਈ ਗਈ। ਇਸ ਵਿੱਚ ਸਮੂਹ ਜੋੜਨਾ ਹੈ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} ਬਣਾਇਆ ਗਿਆ। ਇਸ ਵਿੱਚ ਰਿਕਾਰਡ ਜੋੜਨਾ ਹੈ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "ਸਰਟੀਫਿਕੇਟ",
+  "groupIdeaLicences": "ਲਾਇਸੈਂਸ",
+  "groupIdeaContracts": "ਇਕਰਾਰਨਾਮੇ",
+  "groupIdeaPermits": "ਪਰਮਿਟ",
+  "groupIdeaInsurance": "ਬੀਮਾ",
+  "assistantCategoryAddTitle": "ਨਵੀਂ ਸ਼੍ਰੇਣੀ",
+  "assistantCategoryAddNote": "ਨਾਮ ਤੋਂ ਆਈਕਨ ਚੁਣਿਆ ਜਾਂਦਾ ਹੈ। ਤੁਸੀਂ ਇਸਨੂੰ ਬਾਅਦ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ।",
+  "assistantCategoryRenameTitle": "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਦਲੋ",
+  "assistantGroupAddTitle": "ਨਵਾਂ ਸਮੂਹ",
+  "assistantGroupRenameTitle": "ਸਮੂਹ ਦਾ ਨਾਮ ਬਦਲੋ",
+  "assistantMoveTitle": "{count, plural, one{{count} ਰਿਕਾਰਡ ਹਿਲਾਓ} other{{count} ਰਿਕਾਰਡ ਹਿਲਾਓ}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ਰਿਕਾਰਡ ਬਹਾਲ ਕਰੋ",
+  "assistantRestoreNote": "ਰਿਕਾਰਡ ਅਤੇ ਇਸਦੇ ਰਿਮਾਈਂਡਰ ਵਾਪਸ ਆ ਜਾਂਦੇ ਹਨ।",
+  "assistantStepCategories": "ਤੁਹਾਡੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ…",
+  "assistantStepCosts": "ਨਵੀਨੀਕਰਨ ਖਰਚੇ ਜੋੜੇ ਜਾ ਰਹੇ ਹਨ…",
+  "assistantStepVisa": "ਵੀਜ਼ਾ ਨਿਯਮਾਂ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ…"
 }

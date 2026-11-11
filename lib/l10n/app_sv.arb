@@ -3074,5 +3074,146 @@
       }
     }
   },
-  "homePinnedTitle": "Fästa kategorier"
+  "homePinnedTitle": "Fästa kategorier",
+  "notifAskTitle": "Få dina påminnelser i tid",
+  "notifAskBody": "Vaultara kan bara påminna dig innan något går ut om aviseringar är tillåtna. Vi skickar bara påminnelser och viktiga kontovarningar.",
+  "notifAskAllow": "Tillåt aviseringar",
+  "notifAskLater": "Inte nu",
+  "signInTooManyTries": "För många försök. Vänta en stund innan du försöker igen, eller återställ lösenordet.",
+  "signInWaitSeconds": "{seconds, plural, =1{Försök igen om {seconds} sekund} other{Försök igen om {seconds} sekunder}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Reservkoder",
+  "backupCodesIntro": "Om du tappar bort telefonen eller autentiseringsappen kan du logga in med en reservkod. Varje kod fungerar en gång.",
+  "backupCodesShownOnce": "De här koderna visas bara en gång. Spara dem på ett säkert ställe, inte på den här telefonen.",
+  "backupCodesCopy": "Kopiera",
+  "backupCodesSave": "Spara eller dela",
+  "backupCodesSaved": "Jag har sparat mina koder",
+  "backupCodesLeft": "{count, plural, =0{Inga reservkoder kvar} =1{{count} reservkod kvar} other{{count} reservkoder kvar}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Skapa reservkoder",
+  "backupCodesMakeNew": "Skapa nya koder",
+  "backupCodesReplaceTitle": "Vill du skapa nya reservkoder?",
+  "backupCodesReplaceBody": "Dina gamla koder slutar fungera direkt.",
+  "backupCodesFileTitle": "Vaultara-reservkoder",
+  "backupCodesEachOnce": "Varje kod fungerar en gång. Förvara dem på ett säkert ställe.",
+  "backupCodesCopied": "Reservkoder kopierade. De rensas från urklipp om en minut.",
+  "backupCodesNone": "Inga skapade än",
+  "backupCodesTileHint": "Logga in om du tappar bort telefonen",
+  "backupCodeUseTitle": "Använd en reservkod",
+  "backupCodeUseBody": "Ange en av reservkoderna du har sparat. När du använder en stängs tvåstegsverifiering av, så att du kan konfigurera den igen på din nya telefon.",
+  "backupCodeLabel": "Reservkod",
+  "backupCodeFormat": "Reservkoder ser ut så här: ABCDE-FGHJK.",
+  "backupCodeWrong": "Koden fungerade inte. Kontrollera den och försök igen.",
+  "backupCodeBack": "Använd min autentiseringsapp",
+  "twoStepStepOf": "Steg {step} av {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Den visas som Vaultara ({email}) i appen.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Koderna byts var 30:e sekund. Ange den som visas nu.",
+  "twoStepPaste": "Klistra in",
+  "twoStepBackupNext": "Skapa reservkoder så att du kan logga in även om du tappar bort den här telefonen.",
+  "twoStepAppLockTitle": "Lås appen också",
+  "twoStepAppLockBody": "Tvåstegsverifiering skyddar inloggningen. Applåset frågar efter fingeravtryck, ansikte eller skärmlås varje gång Vaultara öppnas.",
+  "twoStepAppLockAction": "Slå på applås",
+  "twoStepSignOutOthersBody": "Inloggad någonstans du inte känner igen? Logga ut från andra enheter.",
+  "twoStepReviewDevices": "Granska enheter",
+  "twoStepSkipForNow": "Hoppa över nu",
+  "twoStepOffTitle": "Tvåstegsverifiering är avstängd",
+  "twoStepOffBody": "Du loggade in med en reservkod, så tvåstegsverifiering stängdes av. Konfigurera den igen på den här telefonen för att hålla kontot skyddat.",
+  "expiryPlusYears": "{years, plural, =1{+{years} år} other{+{years} år}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Skriv datum",
+  "expiryTypeTitle": "Skriv utgångsdatumet",
+  "expiryTypeHint": "Till exempel {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Det datumet ser inte rätt ut. Prova {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Det här datumet har passerat, så posten sparas som utgången.",
+  "expiryEndsToday": "Det här går ut i dag.",
+  "saveAndAddAnother": "Spara och lägg till en till",
+  "quickStartTitle": "Snabbstart",
+  "categoryCreatedAddGroup": "{name} har skapats. Lägga till en grupp?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} har skapats. Lägga till en post?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certifikat",
+  "groupIdeaLicences": "Licenser",
+  "groupIdeaContracts": "Avtal",
+  "groupIdeaPermits": "Tillstånd",
+  "groupIdeaInsurance": "Försäkringar",
+  "assistantCategoryAddTitle": "Ny kategori",
+  "assistantCategoryAddNote": "En ikon väljs utifrån namnet. Du kan ändra den senare.",
+  "assistantCategoryRenameTitle": "Byt namn på kategori",
+  "assistantGroupAddTitle": "Ny grupp",
+  "assistantGroupRenameTitle": "Byt namn på grupp",
+  "assistantMoveTitle": "{count, plural, =1{Flytta {count} post} other{Flytta {count} poster}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Återställ post",
+  "assistantRestoreNote": "Posten och dess påminnelser kommer tillbaka.",
+  "assistantStepCategories": "Kontrollerar dina kategorier…",
+  "assistantStepCosts": "Summerar förnyelsekostnader…",
+  "assistantStepVisa": "Kontrollerar visumregler…"
 }

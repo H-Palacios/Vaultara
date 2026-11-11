@@ -8417,4 +8417,253 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'پۆلە جێگیرکراوەکان';
+
+  @override
+  String get notifAskTitle => 'بیرخەرەوەکانت لە کاتی خۆیدا وەربگرە';
+
+  @override
+  String get notifAskBody => 'Vaultara تەنها کاتێک دەتوانێت پێش بەسەرچوونی شتێک بیرت بخاتەوە کە ئاگادارکردنەوەکان ڕێگەپێدراو بن. تەنها بیرخەرەوە و ئاگادارییە گرنگەکانی هەژمار دەنێرین.';
+
+  @override
+  String get notifAskAllow => 'ڕێگە بە ئاگادارکردنەوەکان بدە';
+
+  @override
+  String get notifAskLater => 'ئێستا نا';
+
+  @override
+  String get signInTooManyTries => 'هەوڵی زۆر. کەمێک چاوەڕێ بکە پێش ئەوەی دووبارە هەوڵ بدەیتەوە، یان وشەی نهێنییەکەت ڕێکبخەرەوە.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'دوای $seconds چرکە دووبارە هەوڵ بدەرەوە',
+      one: 'دوای $seconds چرکە دووبارە هەوڵ بدەرەوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'کۆدە یەدەگەکان';
+
+  @override
+  String get backupCodesIntro => 'ئەگەر مۆبایلەکەت یان بەرنامەی پشتڕاستکردنەوەکەت ون بکەیت، کۆدێکی یەدەگ ڕێگەت پێدەدات بچیتە ژوورەوە. هەر کۆدێک یەک جار کار دەکات.';
+
+  @override
+  String get backupCodesShownOnce => 'ئەم کۆدانە تەنها یەک جار پیشان دەدرێن. لە شوێنێکی سەلامەت و دوور لەم مۆبایلە هەڵیانبگرە.';
+
+  @override
+  String get backupCodesCopy => 'لەبەرگرتنەوە';
+
+  @override
+  String get backupCodesSave => 'هەڵگرتن یان هاوبەشکردن';
+
+  @override
+  String get backupCodesSaved => 'کۆدەکانم هەڵگرت';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کۆدی یەدەگ ماون',
+      one: '$count کۆدی یەدەگ ماوە',
+      zero: 'هیچ کۆدێکی یەدەگ نەماوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'دروستکردنی کۆدی یەدەگ';
+
+  @override
+  String get backupCodesMakeNew => 'دروستکردنی کۆدی نوێ';
+
+  @override
+  String get backupCodesReplaceTitle => 'کۆدی یەدەگی نوێ دروست بکرێت؟';
+
+  @override
+  String get backupCodesReplaceBody => 'کۆدە کۆنەکانت یەکسەر لە کار دەکەون.';
+
+  @override
+  String get backupCodesFileTitle => 'کۆدە یەدەگەکانی Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'هەر کۆدێک یەک جار کار دەکات. لە شوێنێکی سەلامەت هەڵیانبگرە.';
+
+  @override
+  String get backupCodesCopied => 'کۆدە یەدەگەکان لەبەرگیرانەوە. دوای خولەکێک لە کلیپبۆرد دەسڕدرێنەوە.';
+
+  @override
+  String get backupCodesNone => 'هێشتا هیچ دروست نەکراوە';
+
+  @override
+  String get backupCodesTileHint => 'ئەگەر مۆبایلەکەت ون کرد بچۆ ژوورەوە';
+
+  @override
+  String get backupCodeUseTitle => 'کۆدێکی یەدەگ بەکاربهێنە';
+
+  @override
+  String get backupCodeUseBody => 'یەکێک لەو کۆدە یەدەگانەی هەڵتگرتوون بنووسە. بەکارهێنانی یەکێکیان پشتڕاستکردنەوەی دوو هەنگاوی دەکوژێنێتەوە، بۆ ئەوەی لە مۆبایلە نوێیەکەت دووبارە ڕێکی بخەیتەوە.';
+
+  @override
+  String get backupCodeLabel => 'کۆدی یەدەگ';
+
+  @override
+  String get backupCodeFormat => 'کۆدە یەدەگەکان وەک ABCDE-FGHJK دەردەکەون.';
+
+  @override
+  String get backupCodeWrong => 'ئەو کۆدە کاری نەکرد. بیپشکنە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get backupCodeBack => 'بەرنامەی پشتڕاستکردنەوەکەم بەکاربهێنە';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'هەنگاوی $step لە $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'لە بەرنامەکەتدا وەک Vaultara ($email) دەردەکەوێت.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'کۆدەکان هەموو 30 چرکەیەک دەگۆڕێن. ئەوەی ئێستا دیارە بنووسە.';
+
+  @override
+  String get twoStepPaste => 'لکاندن';
+
+  @override
+  String get twoStepBackupNext => 'کۆدی یەدەگ دروست بکە بۆ ئەوەی ئەگەر ئەم مۆبایلەت ون کرد هێشتا بتوانیت بچیتە ژوورەوە.';
+
+  @override
+  String get twoStepAppLockTitle => 'بەرنامەکەش قفڵ بکە';
+
+  @override
+  String get twoStepAppLockBody => 'دوو هەنگاو چوونەژوورەوە دەپارێزێت. قفڵی بەرنامە هەر جارێک Vaultara بکرێتەوە پەنجەمۆر، ڕوو یان قفڵی شاشە داوا دەکات.';
+
+  @override
+  String get twoStepAppLockAction => 'قفڵی بەرنامە چالاک بکە';
+
+  @override
+  String get twoStepSignOutOthersBody => 'لە شوێنێک چوویتە ژوورەوە کە نایناسیتەوە؟ لە ئامێرەکانی تر بچۆ دەرەوە.';
+
+  @override
+  String get twoStepReviewDevices => 'پێداچوونەوەی ئامێرەکان';
+
+  @override
+  String get twoStepSkipForNow => 'ئێستا تێپەڕێنە';
+
+  @override
+  String get twoStepOffTitle => 'پشتڕاستکردنەوەی دوو هەنگاو کوژاوەتەوە';
+
+  @override
+  String get twoStepOffBody => 'بە کۆدێکی یەدەگ چوویتە ژوورەوە، بۆیە پشتڕاستکردنەوەی دوو هەنگاو کوژێنرایەوە. لەم مۆبایلەدا دووبارە ڕێکی بخەرەوە بۆ ئەوەی هەژمارەکەت پارێزراو بمێنێت.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ساڵ',
+      one: '+$years ساڵ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'بەروار بنووسە';
+
+  @override
+  String get expiryTypeTitle => 'بەرواری بەسەرچوون بنووسە';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'بۆ نموونە $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'ئەو بەروارە دروست دیار نییە. $example تاقی بکەرەوە.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'ئەم بەروارە تێپەڕیوە، بۆیە تۆمارەکە وەک بەسەرچوو هەڵدەگیرێت.';
+
+  @override
+  String get expiryEndsToday => 'ئەمڕۆ بەسەردەچێت.';
+
+  @override
+  String get saveAndAddAnother => 'هەڵگرتن و زیادکردنی یەکێکی تر';
+
+  @override
+  String get quickStartTitle => 'دەستپێکی خێرا';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name دروستکرا. گرووپێکی بۆ زیاد بکرێت؟';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name دروستکرا. تۆمارێکی بۆ زیاد بکرێت؟';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'بڕوانامەکان';
+
+  @override
+  String get groupIdeaLicences => 'مۆڵەتەکان';
+
+  @override
+  String get groupIdeaContracts => 'گرێبەستەکان';
+
+  @override
+  String get groupIdeaPermits => 'ڕێگەپێدانەکان';
+
+  @override
+  String get groupIdeaInsurance => 'بیمە';
+
+  @override
+  String get assistantCategoryAddTitle => 'پۆلی نوێ';
+
+  @override
+  String get assistantCategoryAddNote => 'ئایکۆنێک لە ناوەکەوە هەڵدەبژێردرێت. دواتر دەتوانیت بیگۆڕیت.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'گۆڕینی ناوی پۆل';
+
+  @override
+  String get assistantGroupAddTitle => 'گرووپی نوێ';
+
+  @override
+  String get assistantGroupRenameTitle => 'گۆڕینی ناوی گرووپ';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'گواستنەوەی $count تۆمار',
+      one: 'گواستنەوەی $count تۆمار',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'گەڕاندنەوەی تۆمار';
+
+  @override
+  String get assistantRestoreNote => 'تۆمارەکە و بیرخەرەوەکانی دەگەڕێنەوە.';
+
+  @override
+  String get assistantStepCategories => 'پشکنینی پۆلەکانت…';
+
+  @override
+  String get assistantStepCosts => 'کۆکردنەوەی تێچووی نوێکردنەوە…';
+
+  @override
+  String get assistantStepVisa => 'پشکنینی یاساکانی ڤیزا…';
 }

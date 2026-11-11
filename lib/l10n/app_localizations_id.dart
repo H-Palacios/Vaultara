@@ -8352,4 +8352,249 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kategori yang disematkan';
+
+  @override
+  String get notifAskTitle => 'Dapatkan pengingat tepat waktu';
+
+  @override
+  String get notifAskBody => 'Vaultara hanya bisa mengingatkan Anda sebelum sesuatu kedaluwarsa jika notifikasi diizinkan. Kami hanya mengirim pengingat dan peringatan akun yang penting.';
+
+  @override
+  String get notifAskAllow => 'Izinkan notifikasi';
+
+  @override
+  String get notifAskLater => 'Jangan sekarang';
+
+  @override
+  String get signInTooManyTries => 'Terlalu banyak percobaan. Tunggu sebentar sebelum mencoba lagi, atau setel ulang kata sandi Anda.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Coba lagi dalam $seconds detik',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Kode cadangan';
+
+  @override
+  String get backupCodesIntro => 'Jika Anda kehilangan ponsel atau aplikasi autentikator, kode cadangan memungkinkan Anda masuk. Setiap kode hanya berlaku sekali.';
+
+  @override
+  String get backupCodesShownOnce => 'Kode ini hanya ditampilkan sekali. Simpan di tempat aman, jauh dari ponsel ini.';
+
+  @override
+  String get backupCodesCopy => 'Salin';
+
+  @override
+  String get backupCodesSave => 'Simpan atau bagikan';
+
+  @override
+  String get backupCodesSaved => 'Saya sudah menyimpan kode saya';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kode cadangan tersisa',
+      zero: 'Tidak ada kode cadangan tersisa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Buat kode cadangan';
+
+  @override
+  String get backupCodesMakeNew => 'Buat kode baru';
+
+  @override
+  String get backupCodesReplaceTitle => 'Buat kode cadangan baru?';
+
+  @override
+  String get backupCodesReplaceBody => 'Kode lama Anda akan langsung berhenti berfungsi.';
+
+  @override
+  String get backupCodesFileTitle => 'Kode cadangan Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Setiap kode hanya berlaku sekali. Simpan di tempat aman.';
+
+  @override
+  String get backupCodesCopied => 'Kode cadangan disalin. Kode akan dihapus dari papan klip dalam satu menit.';
+
+  @override
+  String get backupCodesNone => 'Belum ada yang dibuat';
+
+  @override
+  String get backupCodesTileHint => 'Masuk jika ponsel Anda hilang';
+
+  @override
+  String get backupCodeUseTitle => 'Gunakan kode cadangan';
+
+  @override
+  String get backupCodeUseBody => 'Masukkan salah satu kode cadangan yang Anda simpan. Menggunakannya akan menonaktifkan verifikasi dua langkah agar Anda bisa menyiapkannya lagi di ponsel baru.';
+
+  @override
+  String get backupCodeLabel => 'Kode cadangan';
+
+  @override
+  String get backupCodeFormat => 'Kode cadangan terlihat seperti ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Kode itu tidak berhasil. Periksa dan coba lagi.';
+
+  @override
+  String get backupCodeBack => 'Gunakan aplikasi autentikator saya';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Langkah $step dari $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Akan muncul sebagai Vaultara ($email) di aplikasi Anda.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kode berganti setiap 30 detik. Masukkan kode yang tampil sekarang.';
+
+  @override
+  String get twoStepPaste => 'Tempel';
+
+  @override
+  String get twoStepBackupNext => 'Buat kode cadangan agar Anda tetap bisa masuk jika kehilangan ponsel ini.';
+
+  @override
+  String get twoStepAppLockTitle => 'Kunci aplikasinya juga';
+
+  @override
+  String get twoStepAppLockBody => 'Dua langkah melindungi proses masuk. Kunci aplikasi meminta sidik jari, wajah, atau kunci layar setiap kali Vaultara dibuka.';
+
+  @override
+  String get twoStepAppLockAction => 'Aktifkan kunci aplikasi';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Masuk di tempat yang tidak Anda kenali? Keluar dari perangkat lain.';
+
+  @override
+  String get twoStepReviewDevices => 'Tinjau perangkat';
+
+  @override
+  String get twoStepSkipForNow => 'Lewati dulu';
+
+  @override
+  String get twoStepOffTitle => 'Verifikasi dua langkah nonaktif';
+
+  @override
+  String get twoStepOffBody => 'Anda masuk dengan kode cadangan, sehingga verifikasi dua langkah dinonaktifkan. Siapkan lagi di ponsel ini agar akun Anda tetap terlindungi.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years tahun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Ketik tanggal';
+
+  @override
+  String get expiryTypeTitle => 'Ketik tanggal kedaluwarsa';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Misalnya $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Tanggal itu sepertinya tidak benar. Coba $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Tanggal ini sudah lewat, jadi catatan akan disimpan sebagai kedaluwarsa.';
+
+  @override
+  String get expiryEndsToday => 'Ini kedaluwarsa hari ini.';
+
+  @override
+  String get saveAndAddAnother => 'Simpan dan tambah lagi';
+
+  @override
+  String get quickStartTitle => 'Mulai cepat';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name dibuat. Tambahkan grup ke dalamnya?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name dibuat. Tambahkan catatan ke dalamnya?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikat';
+
+  @override
+  String get groupIdeaLicences => 'Lisensi';
+
+  @override
+  String get groupIdeaContracts => 'Kontrak';
+
+  @override
+  String get groupIdeaPermits => 'Izin';
+
+  @override
+  String get groupIdeaInsurance => 'Asuransi';
+
+  @override
+  String get assistantCategoryAddTitle => 'Kategori baru';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikon dipilih berdasarkan nama. Anda bisa mengubahnya nanti.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Ganti nama kategori';
+
+  @override
+  String get assistantGroupAddTitle => 'Grup baru';
+
+  @override
+  String get assistantGroupRenameTitle => 'Ganti nama grup';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pindahkan $count catatan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Pulihkan catatan';
+
+  @override
+  String get assistantRestoreNote => 'Catatan dan pengingatnya kembali.';
+
+  @override
+  String get assistantStepCategories => 'Memeriksa kategori Anda…';
+
+  @override
+  String get assistantStepCosts => 'Menjumlahkan biaya perpanjangan…';
+
+  @override
+  String get assistantStepVisa => 'Memeriksa aturan visa…';
 }

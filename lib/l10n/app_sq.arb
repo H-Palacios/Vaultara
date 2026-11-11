@@ -3095,5 +3095,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kategoritë e fiksuara"
+  "homePinnedTitle": "Kategoritë e fiksuara",
+  "notifAskTitle": "Merrni kujtesat në kohë",
+  "notifAskBody": "Vaultara mund t'ju kujtojë para se diçka të skadojë vetëm nëse njoftimet lejohen. Dërgojmë vetëm kujtesa dhe sinjalizime të rëndësishme për llogarinë.",
+  "notifAskAllow": "Lejo njoftimet",
+  "notifAskLater": "Jo tani",
+  "signInTooManyTries": "Shumë përpjekje. Prisni pak para se të provoni përsëri, ose rivendosni fjalëkalimin.",
+  "signInWaitSeconds": "{seconds, plural, one{Provo përsëri pas {seconds} sekonde} other{Provo përsëri pas {seconds} sekondash}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Kodet rezervë",
+  "backupCodesIntro": "Nëse humbni telefonin ose aplikacionin e vërtetimit, një kod rezervë ju lejon të hyni. Çdo kod funksionon një herë.",
+  "backupCodesShownOnce": "Këto kode shfaqen vetëm një herë. Ruajini në një vend të sigurt, larg këtij telefoni.",
+  "backupCodesCopy": "Kopjo",
+  "backupCodesSave": "Ruaj ose ndaj",
+  "backupCodesSaved": "I ruajta kodet",
+  "backupCodesLeft": "{count, plural, =0{Nuk ka mbetur asnjë kod rezervë} one{Ka mbetur {count} kod rezervë} other{Kanë mbetur {count} kode rezervë}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Krijo kode rezervë",
+  "backupCodesMakeNew": "Krijo kode të reja",
+  "backupCodesReplaceTitle": "Të krijohen kode të reja rezervë?",
+  "backupCodesReplaceBody": "Kodet e vjetra do të ndalojnë së punuari menjëherë.",
+  "backupCodesFileTitle": "Kodet rezervë të Vaultara",
+  "backupCodesEachOnce": "Çdo kod funksionon një herë. Mbajini në një vend të sigurt.",
+  "backupCodesCopied": "Kodet rezervë u kopjuan. Do të fshihen nga kujtesa e fragmenteve pas një minute.",
+  "backupCodesNone": "Ende asnjë i krijuar",
+  "backupCodesTileHint": "Hyr nëse humb telefonin",
+  "backupCodeUseTitle": "Përdor një kod rezervë",
+  "backupCodeUseBody": "Futni një nga kodet rezervë që keni ruajtur. Përdorimi i tij çaktivizon verifikimin me dy hapa, që ta konfiguroni sërish në telefonin e ri.",
+  "backupCodeLabel": "Kod rezervë",
+  "backupCodeFormat": "Kodet rezervë duken kështu: ABCDE-FGHJK.",
+  "backupCodeWrong": "Ai kod nuk funksionoi. Kontrollojeni dhe provoni përsëri.",
+  "backupCodeBack": "Përdor aplikacionin tim të vërtetimit",
+  "twoStepStepOf": "Hapi {step} nga {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Do të shfaqet si Vaultara ({email}) në aplikacionin tuaj.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodet ndryshojnë çdo 30 sekonda. Futni atë që shfaqet tani.",
+  "twoStepPaste": "Ngjit",
+  "twoStepBackupNext": "Krijoni kode rezervë që të mund të hyni edhe nëse e humbni këtë telefon.",
+  "twoStepAppLockTitle": "Kyçe edhe aplikacionin",
+  "twoStepAppLockBody": "Dy hapat mbrojnë hyrjen. Kyçja e aplikacionit kërkon gjurmën e gishtit, fytyrën ose kyçjen e ekranit sa herë hapet Vaultara.",
+  "twoStepAppLockAction": "Aktivizo kyçjen e aplikacionit",
+  "twoStepSignOutOthersBody": "Keni hyrë diku që nuk e njihni? Dilni nga pajisjet e tjera.",
+  "twoStepReviewDevices": "Shiko pajisjet",
+  "twoStepSkipForNow": "Kapërce tani",
+  "twoStepOffTitle": "Verifikimi me dy hapa është çaktivizuar",
+  "twoStepOffBody": "Hytë me një kod rezervë, prandaj verifikimi me dy hapa u çaktivizua. Konfigurojeni sërish në këtë telefon që llogaria të mbetet e mbrojtur.",
+  "expiryPlusYears": "{years, plural, one{+{years} vit} other{+{years} vjet}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Shkruaj datën",
+  "expiryTypeTitle": "Shkruani datën e skadimit",
+  "expiryTypeHint": "Për shembull {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Kjo datë nuk duket e saktë. Provoni {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Kjo datë ka kaluar, prandaj regjistrimi do të ruhet si i skaduar.",
+  "expiryEndsToday": "Skadon sot.",
+  "saveAndAddAnother": "Ruaj dhe shto një tjetër",
+  "quickStartTitle": "Fillim i shpejtë",
+  "categoryCreatedAddGroup": "{name} u krijua. Të shtohet një grup?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} u krijua. Të shtohet një regjistrim?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certifikata",
+  "groupIdeaLicences": "Licenca",
+  "groupIdeaContracts": "Kontrata",
+  "groupIdeaPermits": "Leje",
+  "groupIdeaInsurance": "Sigurime",
+  "assistantCategoryAddTitle": "Kategori e re",
+  "assistantCategoryAddNote": "Ikona zgjidhet sipas emrit. Mund ta ndryshoni më vonë.",
+  "assistantCategoryRenameTitle": "Riemërto kategorinë",
+  "assistantGroupAddTitle": "Grup i ri",
+  "assistantGroupRenameTitle": "Riemërto grupin",
+  "assistantMoveTitle": "{count, plural, one{Zhvendos {count} regjistrim} other{Zhvendos {count} regjistrime}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Rikthe regjistrimin",
+  "assistantRestoreNote": "Regjistrimi dhe kujtesat e tij kthehen.",
+  "assistantStepCategories": "Po kontrollohen kategoritë tuaja…",
+  "assistantStepCosts": "Po mblidhen kostot e rinovimit…",
+  "assistantStepVisa": "Po kontrollohen rregullat e vizave…"
 }

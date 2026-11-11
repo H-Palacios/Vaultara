@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "પિન કરેલી શ્રેણીઓ"
+  "homePinnedTitle": "પિન કરેલી શ્રેણીઓ",
+  "notifAskTitle": "તમારા રિમાઇન્ડર સમયસર મેળવો",
+  "notifAskBody": "સૂચનાઓની મંજૂરી હોય તો જ Vaultara કંઈક સમાપ્ત થાય તે પહેલાં તમને યાદ અપાવી શકે છે. અમે ફક્ત રિમાઇન્ડર અને મહત્વપૂર્ણ એકાઉન્ટ ચેતવણીઓ મોકલીએ છીએ.",
+  "notifAskAllow": "સૂચનાઓને મંજૂરી આપો",
+  "notifAskLater": "હમણાં નહીં",
+  "signInTooManyTries": "ઘણા બધા પ્રયાસો. ફરી પ્રયાસ કરતા પહેલાં થોડી રાહ જુઓ, અથવા તમારો પાસવર્ડ રીસેટ કરો.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} સેકન્ડમાં ફરી પ્રયાસ કરો} other{{seconds} સેકન્ડમાં ફરી પ્રયાસ કરો}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "બેકઅપ કોડ",
+  "backupCodesIntro": "જો તમે તમારો ફોન અથવા ઓથેન્ટિકેટર એપ ગુમાવો, તો બેકઅપ કોડથી તમે સાઇન ઇન કરી શકો છો. દરેક કોડ એક જ વાર કામ કરે છે.",
+  "backupCodesShownOnce": "આ કોડ ફક્ત એક જ વાર બતાવવામાં આવે છે. તેમને આ ફોનથી દૂર કોઈ સુરક્ષિત જગ્યાએ સાચવો.",
+  "backupCodesCopy": "કૉપિ કરો",
+  "backupCodesSave": "સાચવો અથવા શેર કરો",
+  "backupCodesSaved": "મેં મારા કોડ સાચવી લીધા છે",
+  "backupCodesLeft": "{count, plural, =0{કોઈ બેકઅપ કોડ બાકી નથી} =1{{count} બેકઅપ કોડ બાકી} other{{count} બેકઅપ કોડ બાકી}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "બેકઅપ કોડ બનાવો",
+  "backupCodesMakeNew": "નવા કોડ બનાવો",
+  "backupCodesReplaceTitle": "નવા બેકઅપ કોડ બનાવીએ?",
+  "backupCodesReplaceBody": "તમારા જૂના કોડ તરત જ કામ કરવાનું બંધ કરશે.",
+  "backupCodesFileTitle": "Vaultara બેકઅપ કોડ",
+  "backupCodesEachOnce": "દરેક કોડ એક જ વાર કામ કરે છે. તેમને સુરક્ષિત જગ્યાએ રાખો.",
+  "backupCodesCopied": "બેકઅપ કોડ કૉપિ થયા. એક મિનિટમાં ક્લિપબોર્ડ પરથી કાઢી નખાશે.",
+  "backupCodesNone": "હજી સુધી કોઈ બનાવ્યા નથી",
+  "backupCodesTileHint": "ફોન ગુમાવો તો સાઇન ઇન કરો",
+  "backupCodeUseTitle": "બેકઅપ કોડ વાપરો",
+  "backupCodeUseBody": "તમે સાચવેલા બેકઅપ કોડમાંથી એક દાખલ કરો. એક વાપરવાથી બે-પગલાંની ચકાસણી બંધ થાય છે, જેથી તમે તેને નવા ફોન પર ફરી સેટ કરી શકો.",
+  "backupCodeLabel": "બેકઅપ કોડ",
+  "backupCodeFormat": "બેકઅપ કોડ ABCDE-FGHJK જેવા દેખાય છે.",
+  "backupCodeWrong": "તે કોડ કામ ન કર્યો. તપાસો અને ફરી પ્રયાસ કરો.",
+  "backupCodeBack": "મારી ઓથેન્ટિકેટર એપ વાપરો",
+  "twoStepStepOf": "પગલું {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "તે તમારી એપમાં Vaultara ({email}) તરીકે દેખાશે.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "કોડ દર 30 સેકન્ડે બદલાય છે. અત્યારે દેખાતો કોડ દાખલ કરો.",
+  "twoStepPaste": "પેસ્ટ કરો",
+  "twoStepBackupNext": "આ ફોન ગુમાવો તો પણ સાઇન ઇન કરી શકો તે માટે બેકઅપ કોડ બનાવો.",
+  "twoStepAppLockTitle": "એપને પણ લૉક કરો",
+  "twoStepAppLockBody": "બે-પગલાં સાઇન ઇનને સુરક્ષિત રાખે છે. એપ લૉક દરેક વખતે Vaultara ખૂલે ત્યારે ફિંગરપ્રિન્ટ, ચહેરો અથવા સ્ક્રીન લૉક માંગે છે.",
+  "twoStepAppLockAction": "એપ લૉક ચાલુ કરો",
+  "twoStepSignOutOthersBody": "અજાણી જગ્યાએ સાઇન ઇન થયું છે? બીજાં ઉપકરણોમાંથી સાઇન આઉટ કરો.",
+  "twoStepReviewDevices": "ઉપકરણો તપાસો",
+  "twoStepSkipForNow": "હમણાં માટે છોડો",
+  "twoStepOffTitle": "બે-પગલાંની ચકાસણી બંધ છે",
+  "twoStepOffBody": "તમે બેકઅપ કોડથી સાઇન ઇન કર્યું, તેથી બે-પગલાંની ચકાસણી બંધ કરવામાં આવી. તમારું એકાઉન્ટ સુરક્ષિત રાખવા આ ફોન પર તેને ફરી સેટ કરો.",
+  "expiryPlusYears": "{years, plural, =1{+{years} વર્ષ} other{+{years} વર્ષ}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "તારીખ લખો",
+  "expiryTypeTitle": "સમાપ્તિ તારીખ લખો",
+  "expiryTypeHint": "ઉદાહરણ તરીકે {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "તે તારીખ સાચી લાગતી નથી. {example} અજમાવો.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "આ તારીખ વીતી ગઈ છે, તેથી રેકોર્ડ સમાપ્ત તરીકે સાચવાશે.",
+  "expiryEndsToday": "આ આજે સમાપ્ત થાય છે.",
+  "saveAndAddAnother": "સાચવો અને બીજું ઉમેરો",
+  "quickStartTitle": "ઝડપી શરૂઆત",
+  "categoryCreatedAddGroup": "{name} બનાવ્યું. તેમાં જૂથ ઉમેરીએ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} બનાવ્યું. તેમાં રેકોર્ડ ઉમેરીએ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "પ્રમાણપત્રો",
+  "groupIdeaLicences": "લાઇસન્સ",
+  "groupIdeaContracts": "કરારો",
+  "groupIdeaPermits": "પરમિટ",
+  "groupIdeaInsurance": "વીમો",
+  "assistantCategoryAddTitle": "નવી શ્રેણી",
+  "assistantCategoryAddNote": "નામ પરથી આઇકન પસંદ થાય છે. તમે પછી બદલી શકો છો.",
+  "assistantCategoryRenameTitle": "શ્રેણીનું નામ બદલો",
+  "assistantGroupAddTitle": "નવું જૂથ",
+  "assistantGroupRenameTitle": "જૂથનું નામ બદલો",
+  "assistantMoveTitle": "{count, plural, =1{{count} રેકોર્ડ ખસેડો} other{{count} રેકોર્ડ ખસેડો}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "રેકોર્ડ પાછો લાવો",
+  "assistantRestoreNote": "રેકોર્ડ અને તેના રિમાઇન્ડર પાછા આવે છે.",
+  "assistantStepCategories": "તમારી શ્રેણીઓ તપાસી રહ્યા છીએ…",
+  "assistantStepCosts": "નવીકરણ ખર્ચ ગણી રહ્યા છીએ…",
+  "assistantStepVisa": "વિઝા નિયમો તપાસી રહ્યા છીએ…"
 }

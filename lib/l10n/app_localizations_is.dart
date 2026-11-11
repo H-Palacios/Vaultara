@@ -8416,4 +8416,253 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Festir flokkar';
+
+  @override
+  String get notifAskTitle => 'Fáðu áminningarnar á réttum tíma';
+
+  @override
+  String get notifAskBody => 'Vaultara getur aðeins minnt þig á áður en eitthvað rennur út ef tilkynningar eru leyfðar. Við sendum aðeins áminningar og mikilvægar viðvaranir um aðganginn.';
+
+  @override
+  String get notifAskAllow => 'Leyfa tilkynningar';
+
+  @override
+  String get notifAskLater => 'Ekki núna';
+
+  @override
+  String get signInTooManyTries => 'Of margar tilraunir. Bíddu aðeins áður en þú reynir aftur, eða endurstilltu lykilorðið.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Reyndu aftur eftir $seconds sekúndur',
+      one: 'Reyndu aftur eftir $seconds sekúndu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Varakóðar';
+
+  @override
+  String get backupCodesIntro => 'Ef þú týnir símanum eða auðkenningarforritinu geturðu skráð þig inn með varakóða. Hver kóði virkar einu sinni.';
+
+  @override
+  String get backupCodesShownOnce => 'Þessir kóðar eru aðeins sýndir einu sinni. Geymdu þá á öruggum stað, fjarri þessum síma.';
+
+  @override
+  String get backupCodesCopy => 'Afrita';
+
+  @override
+  String get backupCodesSave => 'Vista eða deila';
+
+  @override
+  String get backupCodesSaved => 'Ég hef vistað kóðana';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count varakóðar eftir',
+      one: '$count varakóði eftir',
+      zero: 'Engir varakóðar eftir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Búa til varakóða';
+
+  @override
+  String get backupCodesMakeNew => 'Búa til nýja kóða';
+
+  @override
+  String get backupCodesReplaceTitle => 'Búa til nýja varakóða?';
+
+  @override
+  String get backupCodesReplaceBody => 'Gömlu kóðarnir hætta strax að virka.';
+
+  @override
+  String get backupCodesFileTitle => 'Varakóðar Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Hver kóði virkar einu sinni. Geymdu þá á öruggum stað.';
+
+  @override
+  String get backupCodesCopied => 'Varakóðar afritaðir. Þeir verða hreinsaðir af klippiborðinu eftir mínútu.';
+
+  @override
+  String get backupCodesNone => 'Engir búnir til enn';
+
+  @override
+  String get backupCodesTileHint => 'Skráðu þig inn ef þú týnir símanum';
+
+  @override
+  String get backupCodeUseTitle => 'Nota varakóða';
+
+  @override
+  String get backupCodeUseBody => 'Sláðu inn einn af varakóðunum sem þú vistaðir. Notkun hans slekkur á tveggja þrepa staðfestingu svo þú getir sett hana upp aftur á nýja símanum.';
+
+  @override
+  String get backupCodeLabel => 'Varakóði';
+
+  @override
+  String get backupCodeFormat => 'Varakóðar líta svona út: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Þessi kóði virkaði ekki. Athugaðu hann og reyndu aftur.';
+
+  @override
+  String get backupCodeBack => 'Nota auðkenningarforritið mitt';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Skref $step af $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Það birtist sem Vaultara ($email) í forritinu þínu.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kóðar breytast á 30 sekúndna fresti. Sláðu inn þann sem sést núna.';
+
+  @override
+  String get twoStepPaste => 'Líma';
+
+  @override
+  String get twoStepBackupNext => 'Búðu til varakóða svo þú getir skráð þig inn þótt þú týnir þessum síma.';
+
+  @override
+  String get twoStepAppLockTitle => 'Læstu forritinu líka';
+
+  @override
+  String get twoStepAppLockBody => 'Tveggja þrepa staðfesting verndar innskráningu. Forritalás biður um fingrafar, andlit eða skjálás í hvert sinn sem Vaultara er opnað.';
+
+  @override
+  String get twoStepAppLockAction => 'Kveikja á forritalás';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Skráð inn einhvers staðar sem þú þekkir ekki? Skráðu þig út af öðrum tækjum.';
+
+  @override
+  String get twoStepReviewDevices => 'Fara yfir tæki';
+
+  @override
+  String get twoStepSkipForNow => 'Sleppa í bili';
+
+  @override
+  String get twoStepOffTitle => 'Slökkt er á tveggja þrepa staðfestingu';
+
+  @override
+  String get twoStepOffBody => 'Þú skráðir þig inn með varakóða og því var slökkt á tveggja þrepa staðfestingu. Settu hana upp aftur á þessum síma til að halda aðganginum vernduðum.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ár',
+      one: '+$years ár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Slá inn dagsetningu';
+
+  @override
+  String get expiryTypeTitle => 'Sláðu inn gildislok';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Til dæmis $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Þessi dagsetning lítur ekki rétt út. Prófaðu $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Þessi dagsetning er liðin, svo færslan verður vistuð sem útrunnin.';
+
+  @override
+  String get expiryEndsToday => 'Þetta rennur út í dag.';
+
+  @override
+  String get saveAndAddAnother => 'Vista og bæta við annarri';
+
+  @override
+  String get quickStartTitle => 'Fljótleg byrjun';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name búinn til. Bæta við hóp?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name búinn til. Bæta við færslu?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Vottorð';
+
+  @override
+  String get groupIdeaLicences => 'Leyfi';
+
+  @override
+  String get groupIdeaContracts => 'Samningar';
+
+  @override
+  String get groupIdeaPermits => 'Heimildir';
+
+  @override
+  String get groupIdeaInsurance => 'Tryggingar';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nýr flokkur';
+
+  @override
+  String get assistantCategoryAddNote => 'Tákn er valið út frá nafninu. Þú getur breytt því síðar.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Endurnefna flokk';
+
+  @override
+  String get assistantGroupAddTitle => 'Nýr hópur';
+
+  @override
+  String get assistantGroupRenameTitle => 'Endurnefna hóp';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Færa $count færslur',
+      one: 'Færa $count færslu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Endurheimta færslu';
+
+  @override
+  String get assistantRestoreNote => 'Færslan og áminningar hennar koma aftur.';
+
+  @override
+  String get assistantStepCategories => 'Athuga flokkana þína…';
+
+  @override
+  String get assistantStepCosts => 'Legg saman endurnýjunarkostnað…';
+
+  @override
+  String get assistantStepVisa => 'Athuga reglur um vegabréfsáritanir…';
 }

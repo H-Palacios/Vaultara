@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kategoria zilizobandikwa"
+  "homePinnedTitle": "Kategoria zilizobandikwa",
+  "notifAskTitle": "Pata vikumbusho vyako kwa wakati",
+  "notifAskBody": "Vaultara inaweza kukukumbusha kabla kitu hakijaisha muda tu ikiwa arifa zimeruhusiwa. Tunatuma vikumbusho na arifa muhimu za akaunti pekee.",
+  "notifAskAllow": "Ruhusu arifa",
+  "notifAskLater": "Si sasa",
+  "signInTooManyTries": "Majaribio mengi mno. Subiri kidogo kabla ya kujaribu tena, au weka upya nenosiri lako.",
+  "signInWaitSeconds": "{seconds, plural, =1{Jaribu tena baada ya sekunde {seconds}} other{Jaribu tena baada ya sekunde {seconds}}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Misimbo ya akiba",
+  "backupCodesIntro": "Ukipoteza simu yako au programu ya uthibitishaji, msimbo wa akiba hukuruhusu kuingia. Kila msimbo hufanya kazi mara moja.",
+  "backupCodesShownOnce": "Misimbo hii huonyeshwa mara moja tu. Ihifadhi mahali salama, mbali na simu hii.",
+  "backupCodesCopy": "Nakili",
+  "backupCodesSave": "Hifadhi au shiriki",
+  "backupCodesSaved": "Nimehifadhi misimbo yangu",
+  "backupCodesLeft": "{count, plural, =0{Hakuna misimbo ya akiba iliyobaki} =1{Msimbo {count} wa akiba umebaki} other{Misimbo {count} ya akiba imebaki}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Tengeneza misimbo ya akiba",
+  "backupCodesMakeNew": "Tengeneza misimbo mipya",
+  "backupCodesReplaceTitle": "Tengeneza misimbo mipya ya akiba?",
+  "backupCodesReplaceBody": "Misimbo yako ya zamani itaacha kufanya kazi mara moja.",
+  "backupCodesFileTitle": "Misimbo ya akiba ya Vaultara",
+  "backupCodesEachOnce": "Kila msimbo hufanya kazi mara moja. Ihifadhi mahali salama.",
+  "backupCodesCopied": "Misimbo ya akiba imenakiliwa. Itafutwa kwenye ubao wa kunakili baada ya dakika moja.",
+  "backupCodesNone": "Bado haijatengenezwa",
+  "backupCodesTileHint": "Ingia ukipoteza simu yako",
+  "backupCodeUseTitle": "Tumia msimbo wa akiba",
+  "backupCodeUseBody": "Weka mojawapo ya misimbo ya akiba uliyohifadhi. Kuitumia huzima uthibitishaji wa hatua mbili ili uuweke tena kwenye simu yako mpya.",
+  "backupCodeLabel": "Msimbo wa akiba",
+  "backupCodeFormat": "Misimbo ya akiba inaonekana kama ABCDE-FGHJK.",
+  "backupCodeWrong": "Msimbo huo haukufanya kazi. Ukague kisha ujaribu tena.",
+  "backupCodeBack": "Tumia programu yangu ya uthibitishaji",
+  "twoStepStepOf": "Hatua {step} kati ya {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Itaonekana kama Vaultara ({email}) kwenye programu yako.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Misimbo hubadilika kila sekunde 30. Weka unaouona sasa.",
+  "twoStepPaste": "Bandika",
+  "twoStepBackupNext": "Tengeneza misimbo ya akiba ili uweze kuingia hata ukipoteza simu hii.",
+  "twoStepAppLockTitle": "Funga programu pia",
+  "twoStepAppLockBody": "Hatua mbili hulinda kuingia. Kufuli ya programu huomba alama ya kidole, uso au kufuli ya skrini kila mara Vaultara inapofunguliwa.",
+  "twoStepAppLockAction": "Washa kufuli ya programu",
+  "twoStepSignOutOthersBody": "Umeingia mahali usipopatambua? Toka kwenye vifaa vingine.",
+  "twoStepReviewDevices": "Kagua vifaa",
+  "twoStepSkipForNow": "Ruka kwa sasa",
+  "twoStepOffTitle": "Uthibitishaji wa hatua mbili umezimwa",
+  "twoStepOffBody": "Uliingia kwa msimbo wa akiba, kwa hivyo uthibitishaji wa hatua mbili ulizimwa. Uweke tena kwenye simu hii ili akaunti yako ibaki salama.",
+  "expiryPlusYears": "{years, plural, =1{+mwaka {years}} other{+miaka {years}}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Andika tarehe",
+  "expiryTypeTitle": "Andika tarehe ya kuisha",
+  "expiryTypeHint": "Kwa mfano {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Tarehe hiyo haionekani sahihi. Jaribu {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Tarehe hii imepita, kwa hivyo rekodi itahifadhiwa kama iliyoisha muda.",
+  "expiryEndsToday": "Hii inaisha leo.",
+  "saveAndAddAnother": "Hifadhi na uongeze nyingine",
+  "quickStartTitle": "Anza haraka",
+  "categoryCreatedAddGroup": "{name} imeundwa. Iongezewe kikundi?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} imeundwa. Iongezewe rekodi?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Vyeti",
+  "groupIdeaLicences": "Leseni",
+  "groupIdeaContracts": "Mikataba",
+  "groupIdeaPermits": "Vibali",
+  "groupIdeaInsurance": "Bima",
+  "assistantCategoryAddTitle": "Aina mpya",
+  "assistantCategoryAddNote": "Aikoni huchaguliwa kutokana na jina. Unaweza kuibadilisha baadaye.",
+  "assistantCategoryRenameTitle": "Badilisha jina la aina",
+  "assistantGroupAddTitle": "Kikundi kipya",
+  "assistantGroupRenameTitle": "Badilisha jina la kikundi",
+  "assistantMoveTitle": "{count, plural, =1{Hamisha rekodi {count}} other{Hamisha rekodi {count}}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Rejesha rekodi",
+  "assistantRestoreNote": "Rekodi na vikumbusho vyake vinarudi.",
+  "assistantStepCategories": "Inakagua aina zako…",
+  "assistantStepCosts": "Inajumlisha gharama za kusasisha…",
+  "assistantStepVisa": "Inakagua sheria za viza…"
 }

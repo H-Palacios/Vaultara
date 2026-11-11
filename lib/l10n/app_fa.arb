@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "دسته‌های سنجاق‌شده"
+  "homePinnedTitle": "دسته‌های سنجاق‌شده",
+  "notifAskTitle": "یادآوری‌ها را به‌موقع دریافت کنید",
+  "notifAskBody": "Vaultara فقط وقتی می‌تواند قبل از انقضای چیزی به شما یادآوری کند که اعلان‌ها مجاز باشند. ما فقط یادآوری‌ها و هشدارهای مهم حساب را می‌فرستیم.",
+  "notifAskAllow": "اجازه دادن به اعلان‌ها",
+  "notifAskLater": "حالا نه",
+  "signInTooManyTries": "تلاش‌های بیش از حد. کمی صبر کنید و دوباره امتحان کنید، یا رمز عبور خود را بازنشانی کنید.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} ثانیه دیگر دوباره امتحان کنید} other{{seconds} ثانیه دیگر دوباره امتحان کنید}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "کدهای پشتیبان",
+  "backupCodesIntro": "اگر تلفن یا برنامه احراز هویت خود را گم کنید، کد پشتیبان به شما امکان ورود می‌دهد. هر کد یک بار کار می‌کند.",
+  "backupCodesShownOnce": "این کدها فقط یک بار نمایش داده می‌شوند. آن‌ها را در جای امنی، دور از این تلفن، نگه دارید.",
+  "backupCodesCopy": "کپی",
+  "backupCodesSave": "ذخیره یا اشتراک‌گذاری",
+  "backupCodesSaved": "کدهایم را ذخیره کردم",
+  "backupCodesLeft": "{count, plural, =0{هیچ کد پشتیبانی باقی نمانده} =1{{count} کد پشتیبان باقی مانده} other{{count} کد پشتیبان باقی مانده}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "ساخت کدهای پشتیبان",
+  "backupCodesMakeNew": "ساخت کدهای جدید",
+  "backupCodesReplaceTitle": "کدهای پشتیبان جدید ساخته شود؟",
+  "backupCodesReplaceBody": "کدهای قدیمی شما فوراً از کار می‌افتند.",
+  "backupCodesFileTitle": "کدهای پشتیبان Vaultara",
+  "backupCodesEachOnce": "هر کد یک بار کار می‌کند. آن‌ها را در جای امنی نگه دارید.",
+  "backupCodesCopied": "کدهای پشتیبان کپی شد. تا یک دقیقه دیگر از کلیپ‌بورد پاک می‌شوند.",
+  "backupCodesNone": "هنوز ساخته نشده",
+  "backupCodesTileHint": "اگر تلفنتان را گم کردید وارد شوید",
+  "backupCodeUseTitle": "استفاده از کد پشتیبان",
+  "backupCodeUseBody": "یکی از کدهای پشتیبانی را که ذخیره کرده‌اید وارد کنید. استفاده از آن تأیید دومرحله‌ای را خاموش می‌کند تا بتوانید آن را روی تلفن جدیدتان دوباره راه‌اندازی کنید.",
+  "backupCodeLabel": "کد پشتیبان",
+  "backupCodeFormat": "کدهای پشتیبان شبیه ABCDE-FGHJK هستند.",
+  "backupCodeWrong": "این کد کار نکرد. آن را بررسی کنید و دوباره امتحان کنید.",
+  "backupCodeBack": "استفاده از برنامه احراز هویت",
+  "twoStepStepOf": "مرحله {step} از {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "در برنامه شما به‌صورت Vaultara ({email}) نمایش داده می‌شود.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "کدها هر ۳۰ ثانیه عوض می‌شوند. کدی را که اکنون نمایش داده می‌شود وارد کنید.",
+  "twoStepPaste": "چسباندن",
+  "twoStepBackupNext": "کدهای پشتیبان بسازید تا حتی اگر این تلفن را گم کردید بتوانید وارد شوید.",
+  "twoStepAppLockTitle": "برنامه را هم قفل کنید",
+  "twoStepAppLockBody": "تأیید دومرحله‌ای از ورود محافظت می‌کند. قفل برنامه هر بار که Vaultara باز می‌شود اثر انگشت، چهره یا قفل صفحه را می‌خواهد.",
+  "twoStepAppLockAction": "روشن کردن قفل برنامه",
+  "twoStepSignOutOthersBody": "جایی وارد شده‌اید که نمی‌شناسید؟ از دستگاه‌های دیگر خارج شوید.",
+  "twoStepReviewDevices": "بررسی دستگاه‌ها",
+  "twoStepSkipForNow": "فعلاً رد شو",
+  "twoStepOffTitle": "تأیید دومرحله‌ای خاموش است",
+  "twoStepOffBody": "با کد پشتیبان وارد شدید، بنابراین تأیید دومرحله‌ای خاموش شد. برای محافظت از حساب، آن را روی این تلفن دوباره راه‌اندازی کنید.",
+  "expiryPlusYears": "{years, plural, =1{+{years} سال} other{+{years} سال}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "نوشتن تاریخ",
+  "expiryTypeTitle": "تاریخ انقضا را بنویسید",
+  "expiryTypeHint": "برای مثال {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "این تاریخ درست به نظر نمی‌رسد. {example} را امتحان کنید.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "این تاریخ گذشته است، بنابراین سابقه به‌عنوان منقضی ذخیره می‌شود.",
+  "expiryEndsToday": "امروز منقضی می‌شود.",
+  "saveAndAddAnother": "ذخیره و افزودن مورد دیگر",
+  "quickStartTitle": "شروع سریع",
+  "categoryCreatedAddGroup": "{name} ساخته شد. گروهی به آن اضافه شود؟",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} ساخته شد. سابقه‌ای به آن اضافه شود؟",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "گواهی‌ها",
+  "groupIdeaLicences": "مجوزها",
+  "groupIdeaContracts": "قراردادها",
+  "groupIdeaPermits": "پروانه‌ها",
+  "groupIdeaInsurance": "بیمه",
+  "assistantCategoryAddTitle": "دسته جدید",
+  "assistantCategoryAddNote": "نماد بر اساس نام انتخاب می‌شود. بعداً می‌توانید آن را تغییر دهید.",
+  "assistantCategoryRenameTitle": "تغییر نام دسته",
+  "assistantGroupAddTitle": "گروه جدید",
+  "assistantGroupRenameTitle": "تغییر نام گروه",
+  "assistantMoveTitle": "{count, plural, =1{انتقال {count} سابقه} other{انتقال {count} سابقه}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "بازیابی سابقه",
+  "assistantRestoreNote": "سابقه و یادآوری‌هایش برمی‌گردند.",
+  "assistantStepCategories": "در حال بررسی دسته‌های شما…",
+  "assistantStepCosts": "در حال جمع زدن هزینه‌های تمدید…",
+  "assistantStepVisa": "در حال بررسی قوانین ویزا…"
 }

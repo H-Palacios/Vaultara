@@ -8436,4 +8436,253 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Pinned categories';
+
+  @override
+  String get notifAskTitle => 'Get your reminders on time';
+
+  @override
+  String get notifAskBody => 'Vaultara can only remind you before something expires if notifications are allowed. We only send reminders and important account alerts.';
+
+  @override
+  String get notifAskAllow => 'Allow notifications';
+
+  @override
+  String get notifAskLater => 'Not now';
+
+  @override
+  String get signInTooManyTries => 'Too many attempts. Wait a moment before trying again, or reset your password.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Try again in $seconds seconds',
+      one: 'Try again in $seconds second',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Backup codes';
+
+  @override
+  String get backupCodesIntro => 'If you lose your phone or authenticator app, a backup code lets you sign in. Each code works once.';
+
+  @override
+  String get backupCodesShownOnce => 'These codes are only shown once. Save them somewhere safe, away from this phone.';
+
+  @override
+  String get backupCodesCopy => 'Copy';
+
+  @override
+  String get backupCodesSave => 'Save or share';
+
+  @override
+  String get backupCodesSaved => 'I\'ve saved my codes';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count backup codes left',
+      one: '$count backup code left',
+      zero: 'No backup codes left',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Make backup codes';
+
+  @override
+  String get backupCodesMakeNew => 'Make new codes';
+
+  @override
+  String get backupCodesReplaceTitle => 'Make new backup codes?';
+
+  @override
+  String get backupCodesReplaceBody => 'Your old codes will stop working straight away.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara backup codes';
+
+  @override
+  String get backupCodesEachOnce => 'Each code works once. Keep these somewhere safe.';
+
+  @override
+  String get backupCodesCopied => 'Backup codes copied. They are cleared from the clipboard in a minute.';
+
+  @override
+  String get backupCodesNone => 'None made yet';
+
+  @override
+  String get backupCodesTileHint => 'Sign in if you lose your phone';
+
+  @override
+  String get backupCodeUseTitle => 'Use a backup code';
+
+  @override
+  String get backupCodeUseBody => 'Enter one of the backup codes you saved. Using one turns off two-step verification, so you can set it up again on your new phone.';
+
+  @override
+  String get backupCodeLabel => 'Backup code';
+
+  @override
+  String get backupCodeFormat => 'Backup codes look like ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'That code didn\'t work. Check it and try again.';
+
+  @override
+  String get backupCodeBack => 'Use my authenticator app';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Step $step of $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'It will show as Vaultara ($email) in your app.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Codes change every 30 seconds. Enter the one showing now.';
+
+  @override
+  String get twoStepPaste => 'Paste';
+
+  @override
+  String get twoStepBackupNext => 'Make backup codes so you can still sign in if you lose this phone.';
+
+  @override
+  String get twoStepAppLockTitle => 'Lock the app too';
+
+  @override
+  String get twoStepAppLockBody => 'Two-step protects sign-in. App lock asks for your fingerprint, face or screen lock each time Vaultara opens.';
+
+  @override
+  String get twoStepAppLockAction => 'Turn on app lock';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Signed in somewhere you don\'t recognise? Sign out of other devices.';
+
+  @override
+  String get twoStepReviewDevices => 'Review devices';
+
+  @override
+  String get twoStepSkipForNow => 'Skip for now';
+
+  @override
+  String get twoStepOffTitle => 'Two-step verification is off';
+
+  @override
+  String get twoStepOffBody => 'You signed in with a backup code, so two-step verification was turned off. Set it up again on this phone to keep your account protected.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years years',
+      one: '+$years year',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Type date';
+
+  @override
+  String get expiryTypeTitle => 'Type the expiry date';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'For example $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'That date doesn\'t look right. Try $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'This date has passed, so the record will be saved as expired.';
+
+  @override
+  String get expiryEndsToday => 'This expires today.';
+
+  @override
+  String get saveAndAddAnother => 'Save and add another';
+
+  @override
+  String get quickStartTitle => 'Quick start';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name created. Add a group to it?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name created. Add a record to it?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certificates';
+
+  @override
+  String get groupIdeaLicences => 'Licences';
+
+  @override
+  String get groupIdeaContracts => 'Contracts';
+
+  @override
+  String get groupIdeaPermits => 'Permits';
+
+  @override
+  String get groupIdeaInsurance => 'Insurance';
+
+  @override
+  String get assistantCategoryAddTitle => 'New category';
+
+  @override
+  String get assistantCategoryAddNote => 'An icon is picked from the name. You can change it later.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Rename category';
+
+  @override
+  String get assistantGroupAddTitle => 'New group';
+
+  @override
+  String get assistantGroupRenameTitle => 'Rename group';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Move $count records',
+      one: 'Move $count record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Restore record';
+
+  @override
+  String get assistantRestoreNote => 'The record and its reminders come back.';
+
+  @override
+  String get assistantStepCategories => 'Checking your categories…';
+
+  @override
+  String get assistantStepCosts => 'Adding up renewal costs…';
+
+  @override
+  String get assistantStepVisa => 'Checking visa rules…';
 }

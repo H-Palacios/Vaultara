@@ -8567,4 +8567,261 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Připnuté kategorie';
+
+  @override
+  String get notifAskTitle => 'Dostávejte připomenutí včas';
+
+  @override
+  String get notifAskBody => 'Vaultara vás může upozornit před vypršením platnosti jen tehdy, když jsou povolena oznámení. Posíláme jen připomenutí a důležitá upozornění k účtu.';
+
+  @override
+  String get notifAskAllow => 'Povolit oznámení';
+
+  @override
+  String get notifAskLater => 'Teď ne';
+
+  @override
+  String get signInTooManyTries => 'Příliš mnoho pokusů. Chvíli počkejte, než to zkusíte znovu, nebo si obnovte heslo.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Zkuste to znovu za $seconds sekund',
+      many: 'Zkuste to znovu za $seconds sekundy',
+      few: 'Zkuste to znovu za $seconds sekundy',
+      one: 'Zkuste to znovu za $seconds sekundu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Záložní kódy';
+
+  @override
+  String get backupCodesIntro => 'Pokud ztratíte telefon nebo ověřovací aplikaci, záložní kód vám umožní se přihlásit. Každý kód funguje jednou.';
+
+  @override
+  String get backupCodesShownOnce => 'Tyto kódy se zobrazí jen jednou. Uložte si je na bezpečné místo mimo tento telefon.';
+
+  @override
+  String get backupCodesCopy => 'Kopírovat';
+
+  @override
+  String get backupCodesSave => 'Uložit nebo sdílet';
+
+  @override
+  String get backupCodesSaved => 'Kódy mám uložené';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zbývá $count záložních kódů',
+      many: 'Zbývá $count záložního kódu',
+      few: 'Zbývají $count záložní kódy',
+      one: 'Zbývá $count záložní kód',
+      zero: 'Nezbývá žádný záložní kód',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Vytvořit záložní kódy';
+
+  @override
+  String get backupCodesMakeNew => 'Vytvořit nové kódy';
+
+  @override
+  String get backupCodesReplaceTitle => 'Vytvořit nové záložní kódy?';
+
+  @override
+  String get backupCodesReplaceBody => 'Staré kódy okamžitě přestanou fungovat.';
+
+  @override
+  String get backupCodesFileTitle => 'Záložní kódy Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Každý kód funguje jednou. Uložte je na bezpečné místo.';
+
+  @override
+  String get backupCodesCopied => 'Záložní kódy zkopírovány. Ze schránky se vymažou za minutu.';
+
+  @override
+  String get backupCodesNone => 'Zatím žádné nevytvořeny';
+
+  @override
+  String get backupCodesTileHint => 'Přihlášení, když ztratíte telefon';
+
+  @override
+  String get backupCodeUseTitle => 'Použít záložní kód';
+
+  @override
+  String get backupCodeUseBody => 'Zadejte jeden z uložených záložních kódů. Jeho použitím se vypne dvoufázové ověření, abyste ho mohli znovu nastavit na novém telefonu.';
+
+  @override
+  String get backupCodeLabel => 'Záložní kód';
+
+  @override
+  String get backupCodeFormat => 'Záložní kódy vypadají takto: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Tento kód nefungoval. Zkontrolujte ho a zkuste to znovu.';
+
+  @override
+  String get backupCodeBack => 'Použít ověřovací aplikaci';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Krok $step z $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'V aplikaci se zobrazí jako Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kódy se mění každých 30 sekund. Zadejte ten, který se zobrazuje teď.';
+
+  @override
+  String get twoStepPaste => 'Vložit';
+
+  @override
+  String get twoStepBackupNext => 'Vytvořte si záložní kódy, abyste se mohli přihlásit, i když tento telefon ztratíte.';
+
+  @override
+  String get twoStepAppLockTitle => 'Zamkněte i aplikaci';
+
+  @override
+  String get twoStepAppLockBody => 'Dvoufázové ověření chrání přihlášení. Zámek aplikace vyžaduje otisk prstu, obličej nebo zámek obrazovky při každém otevření Vaultary.';
+
+  @override
+  String get twoStepAppLockAction => 'Zapnout zámek aplikace';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Přihlášení někde, kde to neznáte? Odhlaste se z ostatních zařízení.';
+
+  @override
+  String get twoStepReviewDevices => 'Zkontrolovat zařízení';
+
+  @override
+  String get twoStepSkipForNow => 'Teď přeskočit';
+
+  @override
+  String get twoStepOffTitle => 'Dvoufázové ověření je vypnuté';
+
+  @override
+  String get twoStepOffBody => 'Přihlásili jste se záložním kódem, proto bylo dvoufázové ověření vypnuto. Nastavte ho znovu na tomto telefonu, aby byl váš účet chráněný.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years let',
+      many: '+$years roku',
+      few: '+$years roky',
+      one: '+$years rok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Napsat datum';
+
+  @override
+  String get expiryTypeTitle => 'Napište datum vypršení';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Například $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Toto datum nevypadá správně. Zkuste $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Toto datum už uplynulo, takže se záznam uloží jako prošlý.';
+
+  @override
+  String get expiryEndsToday => 'Platnost končí dnes.';
+
+  @override
+  String get saveAndAddAnother => 'Uložit a přidat další';
+
+  @override
+  String get quickStartTitle => 'Rychlý start';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Kategorie $name vytvořena. Přidat do ní skupinu?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Skupina $name vytvořena. Přidat do ní záznam?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certifikáty';
+
+  @override
+  String get groupIdeaLicences => 'Licence';
+
+  @override
+  String get groupIdeaContracts => 'Smlouvy';
+
+  @override
+  String get groupIdeaPermits => 'Povolení';
+
+  @override
+  String get groupIdeaInsurance => 'Pojištění';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nová kategorie';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikona se vybere podle názvu. Později ji můžete změnit.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Přejmenovat kategorii';
+
+  @override
+  String get assistantGroupAddTitle => 'Nová skupina';
+
+  @override
+  String get assistantGroupRenameTitle => 'Přejmenovat skupinu';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přesunout $count záznamů',
+      many: 'Přesunout $count záznamu',
+      few: 'Přesunout $count záznamy',
+      one: 'Přesunout $count záznam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Obnovit záznam';
+
+  @override
+  String get assistantRestoreNote => 'Záznam i jeho připomenutí se vrátí.';
+
+  @override
+  String get assistantStepCategories => 'Kontroluji vaše kategorie…';
+
+  @override
+  String get assistantStepCosts => 'Sčítám náklady na obnovení…';
+
+  @override
+  String get assistantStepVisa => 'Kontroluji vízová pravidla…';
 }

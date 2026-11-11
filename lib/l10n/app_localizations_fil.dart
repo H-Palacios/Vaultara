@@ -8411,4 +8411,253 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Mga naka-pin na kategorya';
+
+  @override
+  String get notifAskTitle => 'Matanggap ang iyong mga paalala sa tamang oras';
+
+  @override
+  String get notifAskBody => 'Mapapaalalahanan ka lang ng Vaultara bago mag-expire ang isang bagay kung pinapayagan ang mga notification. Mga paalala at mahahalagang alerto sa account lang ang ipinapadala namin.';
+
+  @override
+  String get notifAskAllow => 'Payagan ang mga notification';
+
+  @override
+  String get notifAskLater => 'Hindi ngayon';
+
+  @override
+  String get signInTooManyTries => 'Masyadong maraming pagsubok. Maghintay sandali bago subukan ulit, o i-reset ang iyong password.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Subukan ulit sa loob ng $seconds segundo',
+      one: 'Subukan ulit sa loob ng $seconds segundo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Mga backup code';
+
+  @override
+  String get backupCodesIntro => 'Kung mawala ang iyong telepono o authenticator app, makakapag-sign in ka gamit ang backup code. Isang beses lang gumagana ang bawat code.';
+
+  @override
+  String get backupCodesShownOnce => 'Isang beses lang ipapakita ang mga code na ito. I-save ang mga ito sa ligtas na lugar, malayo sa teleponong ito.';
+
+  @override
+  String get backupCodesCopy => 'Kopyahin';
+
+  @override
+  String get backupCodesSave => 'I-save o ibahagi';
+
+  @override
+  String get backupCodesSaved => 'Na-save ko na ang mga code';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count backup code ang natitira',
+      one: '$count backup code ang natitira',
+      zero: 'Wala nang natitirang backup code',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Gumawa ng mga backup code';
+
+  @override
+  String get backupCodesMakeNew => 'Gumawa ng mga bagong code';
+
+  @override
+  String get backupCodesReplaceTitle => 'Gumawa ng mga bagong backup code?';
+
+  @override
+  String get backupCodesReplaceBody => 'Agad na hindi na gagana ang mga luma mong code.';
+
+  @override
+  String get backupCodesFileTitle => 'Mga backup code ng Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Isang beses lang gumagana ang bawat code. Itago ang mga ito sa ligtas na lugar.';
+
+  @override
+  String get backupCodesCopied => 'Nakopya ang mga backup code. Buburahin ang mga ito sa clipboard sa loob ng isang minuto.';
+
+  @override
+  String get backupCodesNone => 'Wala pang nagagawa';
+
+  @override
+  String get backupCodesTileHint => 'Mag-sign in kung mawala ang iyong telepono';
+
+  @override
+  String get backupCodeUseTitle => 'Gumamit ng backup code';
+
+  @override
+  String get backupCodeUseBody => 'Ilagay ang isa sa mga backup code na na-save mo. Kapag gumamit ka nito, mao-off ang two-step verification para ma-set up mo ulit ito sa bago mong telepono.';
+
+  @override
+  String get backupCodeLabel => 'Backup code';
+
+  @override
+  String get backupCodeFormat => 'Ganito ang hitsura ng mga backup code: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Hindi gumana ang code na iyon. Suriin ito at subukan ulit.';
+
+  @override
+  String get backupCodeBack => 'Gamitin ang aking authenticator app';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Hakbang $step sa $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Lalabas ito bilang Vaultara ($email) sa iyong app.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Nagbabago ang mga code bawat 30 segundo. Ilagay ang nakikita ngayon.';
+
+  @override
+  String get twoStepPaste => 'I-paste';
+
+  @override
+  String get twoStepBackupNext => 'Gumawa ng mga backup code para makapag-sign in ka pa rin kung mawala mo ang teleponong ito.';
+
+  @override
+  String get twoStepAppLockTitle => 'I-lock din ang app';
+
+  @override
+  String get twoStepAppLockBody => 'Pinoprotektahan ng two-step ang pag-sign in. Hinihingi ng app lock ang iyong fingerprint, mukha o screen lock tuwing binubuksan ang Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'I-on ang app lock';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Naka-sign in sa lugar na hindi mo kilala? Mag-sign out sa ibang mga device.';
+
+  @override
+  String get twoStepReviewDevices => 'Suriin ang mga device';
+
+  @override
+  String get twoStepSkipForNow => 'Laktawan muna';
+
+  @override
+  String get twoStepOffTitle => 'Naka-off ang two-step verification';
+
+  @override
+  String get twoStepOffBody => 'Nag-sign in ka gamit ang backup code, kaya na-off ang two-step verification. I-set up ito ulit sa teleponong ito para manatiling protektado ang account mo.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years taon',
+      one: '+$years taon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'I-type ang petsa';
+
+  @override
+  String get expiryTypeTitle => 'I-type ang petsa ng pag-expire';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Halimbawa $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Mukhang hindi tama ang petsang iyon. Subukan ang $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Lumipas na ang petsang ito, kaya ise-save ang record bilang expired.';
+
+  @override
+  String get expiryEndsToday => 'Mag-e-expire ito ngayon.';
+
+  @override
+  String get saveAndAddAnother => 'I-save at magdagdag ng isa pa';
+
+  @override
+  String get quickStartTitle => 'Mabilis na simula';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Nagawa ang $name. Magdagdag ng grupo dito?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Nagawa ang $name. Magdagdag ng record dito?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Mga sertipiko';
+
+  @override
+  String get groupIdeaLicences => 'Mga lisensya';
+
+  @override
+  String get groupIdeaContracts => 'Mga kontrata';
+
+  @override
+  String get groupIdeaPermits => 'Mga permit';
+
+  @override
+  String get groupIdeaInsurance => 'Insurance';
+
+  @override
+  String get assistantCategoryAddTitle => 'Bagong kategorya';
+
+  @override
+  String get assistantCategoryAddNote => 'Pipili ng icon batay sa pangalan. Mapapalitan mo ito mamaya.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Palitan ang pangalan ng kategorya';
+
+  @override
+  String get assistantGroupAddTitle => 'Bagong grupo';
+
+  @override
+  String get assistantGroupRenameTitle => 'Palitan ang pangalan ng grupo';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ilipat ang $count record',
+      one: 'Ilipat ang $count record',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'I-restore ang record';
+
+  @override
+  String get assistantRestoreNote => 'Babalik ang record at ang mga paalala nito.';
+
+  @override
+  String get assistantStepCategories => 'Sinusuri ang iyong mga kategorya…';
+
+  @override
+  String get assistantStepCosts => 'Kinukuwenta ang gastos sa pag-renew…';
+
+  @override
+  String get assistantStepVisa => 'Sinusuri ang mga patakaran sa visa…';
 }

@@ -8365,4 +8365,253 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Ụdị ndị a pịnara';
+
+  @override
+  String get notifAskTitle => 'Nweta ihe ncheta gị n\'oge';
+
+  @override
+  String get notifAskBody => 'Vaultara nwere ike ichetara gị tupu ihe agwụ naanị ma ọ bụrụ na e kwere ka ọkwa bata. Anyị na-ezipụ naanị ihe ncheta na ọkwa akaụntụ dị mkpa.';
+
+  @override
+  String get notifAskAllow => 'Kwe ka ọkwa bata';
+
+  @override
+  String get notifAskLater => 'Ọ bụghị ugbu a';
+
+  @override
+  String get signInTooManyTries => 'Mgbalị karịrị akarị. Chere obere oge tupu ị nwaa ọzọ, ma ọ bụ tọgharịa paswọọdụ gị.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Nwaa ọzọ n\'ime sekọnd $seconds',
+      one: 'Nwaa ọzọ n\'ime sekọnd $seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Koodu ndabere';
+
+  @override
+  String get backupCodesIntro => 'Ọ bụrụ na ekwentị gị ma ọ bụ ngwa nyocha furu efu, koodu ndabere ga-enye gị ohere ịbanye. Koodu ọ bụla na-arụ ọrụ otu ugboro.';
+
+  @override
+  String get backupCodesShownOnce => 'A na-egosi koodu ndị a naanị otu ugboro. Chekwaa ha n\'ebe dị nchebe, n\'ebe dị anya site na ekwentị a.';
+
+  @override
+  String get backupCodesCopy => 'Detuo';
+
+  @override
+  String get backupCodesSave => 'Chekwaa ma ọ bụ kesaa';
+
+  @override
+  String get backupCodesSaved => 'Echekwala m koodu m';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Koodu ndabere $count fọdụrụ',
+      one: 'Koodu ndabere $count fọdụrụ',
+      zero: 'Koodu ndabere ọ bụla afọdụghị',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Mepụta koodu ndabere';
+
+  @override
+  String get backupCodesMakeNew => 'Mepụta koodu ọhụrụ';
+
+  @override
+  String get backupCodesReplaceTitle => 'Mepụta koodu ndabere ọhụrụ?';
+
+  @override
+  String get backupCodesReplaceBody => 'Koodu ochie gị ga-akwụsị ịrụ ọrụ ozugbo.';
+
+  @override
+  String get backupCodesFileTitle => 'Koodu ndabere Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Koodu ọ bụla na-arụ ọrụ otu ugboro. Chekwaa ha n\'ebe dị nchebe.';
+
+  @override
+  String get backupCodesCopied => 'E detuola koodu ndabere. A ga-ehichapụ ha na klipbọọdụ n\'ime otu nkeji.';
+
+  @override
+  String get backupCodesNone => 'Ọ dịbeghị nke e mepụtara';
+
+  @override
+  String get backupCodesTileHint => 'Banye ma ọ bụrụ na ekwentị gị efuo';
+
+  @override
+  String get backupCodeUseTitle => 'Jiri koodu ndabere';
+
+  @override
+  String get backupCodeUseBody => 'Tinye otu n\'ime koodu ndabere ị chekwara. Iji otu na-agbanyụ nkwenye nzọụkwụ abụọ, ka i nwee ike ịtọgharị ya na ekwentị ọhụrụ gị.';
+
+  @override
+  String get backupCodeLabel => 'Koodu ndabere';
+
+  @override
+  String get backupCodeFormat => 'Koodu ndabere dị ka ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Koodu ahụ arụghị ọrụ. Lelee ya ma nwaa ọzọ.';
+
+  @override
+  String get backupCodeBack => 'Jiri ngwa nyocha m';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Nzọụkwụ $step n\'ime $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Ọ ga-egosi dị ka Vaultara ($email) na ngwa gị.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Koodu na-agbanwe kwa sekọnd 30. Tinye nke na-egosi ugbu a.';
+
+  @override
+  String get twoStepPaste => 'Mado';
+
+  @override
+  String get twoStepBackupNext => 'Mepụta koodu ndabere ka i nwee ike ịbanye ọbụlagodi na ekwentị a efuo.';
+
+  @override
+  String get twoStepAppLockTitle => 'Kpọchiekwa ngwa ahụ';
+
+  @override
+  String get twoStepAppLockBody => 'Nzọụkwụ abụọ na-echedo mbanye. Mkpọchi ngwa na-arịọ akara mkpịsị aka, ihu ma ọ bụ mkpọchi ihuenyo oge ọ bụla e mepere Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Gbanye mkpọchi ngwa';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Abanyela n\'ebe ị na-amaghị? Pụọ na ngwaọrụ ndị ọzọ.';
+
+  @override
+  String get twoStepReviewDevices => 'Lelee ngwaọrụ';
+
+  @override
+  String get twoStepSkipForNow => 'Wụfee ugbu a';
+
+  @override
+  String get twoStepOffTitle => 'Nkwenye nzọụkwụ abụọ agbanyụọla';
+
+  @override
+  String get twoStepOffBody => 'Ị banyere site na koodu ndabere, ya mere a gbanyụrụ nkwenye nzọụkwụ abụọ. Tọgharịa ya na ekwentị a ka akaụntụ gị nọrọ na nchebe.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+afọ $years',
+      one: '+afọ $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Dee ụbọchị';
+
+  @override
+  String get expiryTypeTitle => 'Dee ụbọchị njedebe';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Dịka ọmụmaatụ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ụbọchị ahụ adịghị ka ọ ziri ezi. Nwaa $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ụbọchị a agafeela, ya mere a ga-echekwa ndekọ ahụ dị ka nke gwụrụ.';
+
+  @override
+  String get expiryEndsToday => 'Nke a na-agwụ taa.';
+
+  @override
+  String get saveAndAddAnother => 'Chekwaa ma tinye ọzọ';
+
+  @override
+  String get quickStartTitle => 'Mmalite ngwa ngwa';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'E mepụtala $name. Tinye otu na ya?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'E mepụtala $name. Tinye ndekọ na ya?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Asambodo';
+
+  @override
+  String get groupIdeaLicences => 'Ikikere';
+
+  @override
+  String get groupIdeaContracts => 'Nkwekọrịta';
+
+  @override
+  String get groupIdeaPermits => 'Ikike';
+
+  @override
+  String get groupIdeaInsurance => 'Inshọransị';
+
+  @override
+  String get assistantCategoryAddTitle => 'Ụdị ọhụrụ';
+
+  @override
+  String get assistantCategoryAddNote => 'A na-ahọrọ akara ngosi site na aha ya. Ị nwere ike ịgbanwe ya emesịa.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Gbanwee aha ụdị';
+
+  @override
+  String get assistantGroupAddTitle => 'Otu ọhụrụ';
+
+  @override
+  String get assistantGroupRenameTitle => 'Gbanwee aha otu';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bugharịa ndekọ $count',
+      one: 'Bugharịa ndekọ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Weghachi ndekọ';
+
+  @override
+  String get assistantRestoreNote => 'Ndekọ ahụ na ihe ncheta ya na-alọghachi.';
+
+  @override
+  String get assistantStepCategories => 'Na-elele ụdị gị…';
+
+  @override
+  String get assistantStepCosts => 'Na-agbakọ ego mmeghari ọhụrụ…';
+
+  @override
+  String get assistantStepVisa => 'Na-elele iwu visa…';
 }

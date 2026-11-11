@@ -3086,5 +3086,146 @@
       }
     }
   },
-  "homePinnedTitle": "Categorie fissate"
+  "homePinnedTitle": "Categorie fissate",
+  "notifAskTitle": "Ricevi i promemoria in tempo",
+  "notifAskBody": "Vaultara può avvisarti prima che qualcosa scada solo se le notifiche sono consentite. Inviamo solo promemoria e avvisi importanti sull'account.",
+  "notifAskAllow": "Consenti notifiche",
+  "notifAskLater": "Non ora",
+  "signInTooManyTries": "Troppi tentativi. Attendi un momento prima di riprovare oppure reimposta la password.",
+  "signInWaitSeconds": "{seconds, plural, =1{Riprova tra {seconds} secondo} other{Riprova tra {seconds} secondi}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Codici di backup",
+  "backupCodesIntro": "Se perdi il telefono o l'app di autenticazione, un codice di backup ti permette di accedere. Ogni codice funziona una volta.",
+  "backupCodesShownOnce": "Questi codici vengono mostrati una sola volta. Salvali in un posto sicuro, lontano da questo telefono.",
+  "backupCodesCopy": "Copia",
+  "backupCodesSave": "Salva o condividi",
+  "backupCodesSaved": "Ho salvato i miei codici",
+  "backupCodesLeft": "{count, plural, =0{Nessun codice di backup rimasto} =1{{count} codice di backup rimasto} other{{count} codici di backup rimasti}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Crea codici di backup",
+  "backupCodesMakeNew": "Crea nuovi codici",
+  "backupCodesReplaceTitle": "Creare nuovi codici di backup?",
+  "backupCodesReplaceBody": "I vecchi codici smetteranno subito di funzionare.",
+  "backupCodesFileTitle": "Codici di backup Vaultara",
+  "backupCodesEachOnce": "Ogni codice funziona una volta. Conservali in un posto sicuro.",
+  "backupCodesCopied": "Codici di backup copiati. Verranno cancellati dagli appunti tra un minuto.",
+  "backupCodesNone": "Nessuno creato finora",
+  "backupCodesTileHint": "Accedi se perdi il telefono",
+  "backupCodeUseTitle": "Usa un codice di backup",
+  "backupCodeUseBody": "Inserisci uno dei codici di backup che hai salvato. Usarne uno disattiva la verifica in due passaggi, così puoi configurarla di nuovo sul nuovo telefono.",
+  "backupCodeLabel": "Codice di backup",
+  "backupCodeFormat": "I codici di backup hanno questo aspetto: ABCDE-FGHJK.",
+  "backupCodeWrong": "Quel codice non ha funzionato. Controllalo e riprova.",
+  "backupCodeBack": "Usa la mia app di autenticazione",
+  "twoStepStepOf": "Passaggio {step} di {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Apparirà come Vaultara ({email}) nella tua app.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "I codici cambiano ogni 30 secondi. Inserisci quello mostrato ora.",
+  "twoStepPaste": "Incolla",
+  "twoStepBackupNext": "Crea codici di backup per poter accedere anche se perdi questo telefono.",
+  "twoStepAppLockTitle": "Blocca anche l'app",
+  "twoStepAppLockBody": "La verifica in due passaggi protegge l'accesso. Il blocco app chiede impronta, volto o blocco schermo ogni volta che si apre Vaultara.",
+  "twoStepAppLockAction": "Attiva il blocco app",
+  "twoStepSignOutOthersBody": "Accesso effettuato in un posto che non riconosci? Esci dagli altri dispositivi.",
+  "twoStepReviewDevices": "Controlla i dispositivi",
+  "twoStepSkipForNow": "Salta per ora",
+  "twoStepOffTitle": "La verifica in due passaggi è disattivata",
+  "twoStepOffBody": "Hai effettuato l'accesso con un codice di backup, quindi la verifica in due passaggi è stata disattivata. Configurala di nuovo su questo telefono per mantenere protetto l'account.",
+  "expiryPlusYears": "{years, plural, =1{+{years} anno} other{+{years} anni}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Digita la data",
+  "expiryTypeTitle": "Digita la data di scadenza",
+  "expiryTypeHint": "Ad esempio {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Questa data non sembra corretta. Prova {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Questa data è passata, quindi l'elemento verrà salvato come scaduto.",
+  "expiryEndsToday": "Scade oggi.",
+  "saveAndAddAnother": "Salva e aggiungi un altro",
+  "quickStartTitle": "Avvio rapido",
+  "categoryCreatedAddGroup": "{name} creata. Aggiungere un gruppo?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} creato. Aggiungere un elemento?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificati",
+  "groupIdeaLicences": "Licenze",
+  "groupIdeaContracts": "Contratti",
+  "groupIdeaPermits": "Permessi",
+  "groupIdeaInsurance": "Assicurazioni",
+  "assistantCategoryAddTitle": "Nuova categoria",
+  "assistantCategoryAddNote": "L'icona viene scelta in base al nome. Puoi cambiarla in seguito.",
+  "assistantCategoryRenameTitle": "Rinomina categoria",
+  "assistantGroupAddTitle": "Nuovo gruppo",
+  "assistantGroupRenameTitle": "Rinomina gruppo",
+  "assistantMoveTitle": "{count, plural, =1{Sposta {count} elemento} other{Sposta {count} elementi}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Ripristina elemento",
+  "assistantRestoreNote": "L'elemento e i suoi promemoria tornano.",
+  "assistantStepCategories": "Controllo delle tue categorie…",
+  "assistantStepCosts": "Calcolo dei costi di rinnovo…",
+  "assistantStepVisa": "Controllo delle regole sui visti…"
 }

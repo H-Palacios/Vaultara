@@ -10322,5 +10322,330 @@
   "homePinnedTitle": "Pinned categories",
   "@homePinnedTitle": {
     "description": "Heading of the pinned categories row on Home."
+  },
+  "notifAskTitle": "Get your reminders on time",
+  "@notifAskTitle": {
+    "description": "Title of the sheet asking to allow notifications, shown right after a reminder is set."
+  },
+  "notifAskBody": "Vaultara can only remind you before something expires if notifications are allowed. We only send reminders and important account alerts.",
+  "@notifAskBody": {
+    "description": "Text of the sheet asking to allow notifications."
+  },
+  "notifAskAllow": "Allow notifications",
+  "@notifAskAllow": {
+    "description": "Button that asks the phone to allow notifications."
+  },
+  "notifAskLater": "Not now",
+  "@notifAskLater": {
+    "description": "Button that closes the notification sheet without asking."
+  },
+  "signInTooManyTries": "Too many attempts. Wait a moment before trying again, or reset your password.",
+  "@signInTooManyTries": {
+    "description": "Shown on the sign-in screen after several wrong attempts."
+  },
+  "signInWaitSeconds": "{seconds, plural, =1{Try again in {seconds} second} other{Try again in {seconds} seconds}}",
+  "@signInWaitSeconds": {
+    "description": "Sign-in button text while the user must wait.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Backup codes",
+  "@backupCodesTitle": {
+    "description": "Title of the backup codes screen and of the tile that opens it."
+  },
+  "backupCodesIntro": "If you lose your phone or authenticator app, a backup code lets you sign in. Each code works once.",
+  "@backupCodesIntro": {
+    "description": "Explanation at the top of the backup codes screen."
+  },
+  "backupCodesShownOnce": "These codes are only shown once. Save them somewhere safe, away from this phone.",
+  "@backupCodesShownOnce": {
+    "description": "Warning above newly made backup codes."
+  },
+  "backupCodesCopy": "Copy",
+  "@backupCodesCopy": {
+    "description": "Button that copies the backup codes."
+  },
+  "backupCodesSave": "Save or share",
+  "@backupCodesSave": {
+    "description": "Button that saves or shares the backup codes as text."
+  },
+  "backupCodesSaved": "I've saved my codes",
+  "@backupCodesSaved": {
+    "description": "Button the user taps after saving their backup codes."
+  },
+  "backupCodesLeft": "{count, plural, =0{No backup codes left} =1{{count} backup code left} other{{count} backup codes left}}",
+  "@backupCodesLeft": {
+    "description": "How many unused backup codes the user has.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Make backup codes",
+  "@backupCodesMake": {
+    "description": "Button that makes a set of backup codes."
+  },
+  "backupCodesMakeNew": "Make new codes",
+  "@backupCodesMakeNew": {
+    "description": "Button that replaces the backup codes with a new set."
+  },
+  "backupCodesReplaceTitle": "Make new backup codes?",
+  "@backupCodesReplaceTitle": {
+    "description": "Title of the dialog before replacing backup codes."
+  },
+  "backupCodesReplaceBody": "Your old codes will stop working straight away.",
+  "@backupCodesReplaceBody": {
+    "description": "Text of the dialog before replacing backup codes."
+  },
+  "backupCodesFileTitle": "Vaultara backup codes",
+  "@backupCodesFileTitle": {
+    "description": "First line of the saved backup codes text, and the subject when sharing."
+  },
+  "backupCodesEachOnce": "Each code works once. Keep these somewhere safe.",
+  "@backupCodesEachOnce": {
+    "description": "Last line of the saved backup codes text."
+  },
+  "backupCodesCopied": "Backup codes copied. They are cleared from the clipboard in a minute.",
+  "@backupCodesCopied": {
+    "description": "Shown after copying the backup codes."
+  },
+  "backupCodesNone": "None made yet",
+  "@backupCodesNone": {
+    "description": "Subtitle of the backup codes tile when there are none."
+  },
+  "backupCodesTileHint": "Sign in if you lose your phone",
+  "@backupCodesTileHint": {
+    "description": "Subtitle of the backup codes tile while the count loads."
+  },
+  "backupCodeUseTitle": "Use a backup code",
+  "@backupCodeUseTitle": {
+    "description": "Link on the two-step sign-in sheet, and the title of backup code mode."
+  },
+  "backupCodeUseBody": "Enter one of the backup codes you saved. Using one turns off two-step verification, so you can set it up again on your new phone.",
+  "@backupCodeUseBody": {
+    "description": "Text in backup code mode on the sign-in sheet."
+  },
+  "backupCodeLabel": "Backup code",
+  "@backupCodeLabel": {
+    "description": "Label of the backup code field."
+  },
+  "backupCodeFormat": "Backup codes look like ABCDE-FGHJK.",
+  "@backupCodeFormat": {
+    "description": "Error when the entered backup code has the wrong shape."
+  },
+  "backupCodeWrong": "That code didn't work. Check it and try again.",
+  "@backupCodeWrong": {
+    "description": "Error when a backup code is not accepted."
+  },
+  "backupCodeBack": "Use my authenticator app",
+  "@backupCodeBack": {
+    "description": "Link back from backup code mode to the 6-digit code."
+  },
+  "twoStepStepOf": "Step {step} of {total}",
+  "@twoStepStepOf": {
+    "description": "Progress label in two-step setup.",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "It will show as Vaultara ({email}) in your app.",
+  "@twoStepAccountLabel": {
+    "description": "Tells the user how the account appears in their authenticator app.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Codes change every 30 seconds. Enter the one showing now.",
+  "@twoStepCodesChange": {
+    "description": "Hint under the 6-digit code field."
+  },
+  "twoStepPaste": "Paste",
+  "@twoStepPaste": {
+    "description": "Button that pastes a code from the clipboard."
+  },
+  "twoStepBackupNext": "Make backup codes so you can still sign in if you lose this phone.",
+  "@twoStepBackupNext": {
+    "description": "Text of the backup codes card after two-step is turned on."
+  },
+  "twoStepAppLockTitle": "Lock the app too",
+  "@twoStepAppLockTitle": {
+    "description": "Card title suggesting app lock after two-step is turned on."
+  },
+  "twoStepAppLockBody": "Two-step protects sign-in. App lock asks for your fingerprint, face or screen lock each time Vaultara opens.",
+  "@twoStepAppLockBody": {
+    "description": "Card text suggesting app lock."
+  },
+  "twoStepAppLockAction": "Turn on app lock",
+  "@twoStepAppLockAction": {
+    "description": "Button on the app lock card."
+  },
+  "twoStepSignOutOthersBody": "Signed in somewhere you don't recognise? Sign out of other devices.",
+  "@twoStepSignOutOthersBody": {
+    "description": "Card text suggesting a device review after two-step is turned on."
+  },
+  "twoStepReviewDevices": "Review devices",
+  "@twoStepReviewDevices": {
+    "description": "Button that opens the devices list."
+  },
+  "twoStepSkipForNow": "Skip for now",
+  "@twoStepSkipForNow": {
+    "description": "Button that leaves the next-steps cards."
+  },
+  "twoStepOffTitle": "Two-step verification is off",
+  "@twoStepOffTitle": {
+    "description": "Title of the dialog after signing in with a backup code."
+  },
+  "twoStepOffBody": "You signed in with a backup code, so two-step verification was turned off. Set it up again on this phone to keep your account protected.",
+  "@twoStepOffBody": {
+    "description": "Text of the dialog after signing in with a backup code."
+  },
+  "expiryPlusYears": "{years, plural, =1{+{years} year} other{+{years} years}}",
+  "@expiryPlusYears": {
+    "description": "Quick button under the expiry date that adds years.",
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Type date",
+  "@expiryTypeDate": {
+    "description": "Quick button that lets the user type the expiry date."
+  },
+  "expiryTypeTitle": "Type the expiry date",
+  "@expiryTypeTitle": {
+    "description": "Title of the dialog for typing a date."
+  },
+  "expiryTypeHint": "For example {example}",
+  "@expiryTypeHint": {
+    "description": "Helper text in the typed date field.",
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "That date doesn't look right. Try {example}.",
+  "@expiryTypeInvalid": {
+    "description": "Error when the typed date cannot be read or is out of range.",
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "This date has passed, so the record will be saved as expired.",
+  "@expiryAlreadyPassed": {
+    "description": "Note under the expiry date when it is in the past."
+  },
+  "expiryEndsToday": "This expires today.",
+  "@expiryEndsToday": {
+    "description": "Note under the expiry date when it is today."
+  },
+  "saveAndAddAnother": "Save and add another",
+  "@saveAndAddAnother": {
+    "description": "Button that saves a record and clears the form for the next one."
+  },
+  "quickStartTitle": "Quick start",
+  "@quickStartTitle": {
+    "description": "Heading above the common document buttons on an empty Add record sheet."
+  },
+  "categoryCreatedAddGroup": "{name} created. Add a group to it?",
+  "@categoryCreatedAddGroup": {
+    "description": "Shown after a category is made.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} created. Add a record to it?",
+  "@groupCreatedAddRecord": {
+    "description": "Shown after a group is made.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificates",
+  "@groupIdeaCertificates": {
+    "description": "Suggested group name."
+  },
+  "groupIdeaLicences": "Licences",
+  "@groupIdeaLicences": {
+    "description": "Suggested group name."
+  },
+  "groupIdeaContracts": "Contracts",
+  "@groupIdeaContracts": {
+    "description": "Suggested group name."
+  },
+  "groupIdeaPermits": "Permits",
+  "@groupIdeaPermits": {
+    "description": "Suggested group name."
+  },
+  "groupIdeaInsurance": "Insurance",
+  "@groupIdeaInsurance": {
+    "description": "Suggested group name."
+  },
+  "assistantCategoryAddTitle": "New category",
+  "@assistantCategoryAddTitle": {
+    "description": "Card title when Ask Vaultara prepares a new category."
+  },
+  "assistantCategoryAddNote": "An icon is picked from the name. You can change it later.",
+  "@assistantCategoryAddNote": {
+    "description": "Note on the new category card."
+  },
+  "assistantCategoryRenameTitle": "Rename category",
+  "@assistantCategoryRenameTitle": {
+    "description": "Card title when Ask Vaultara prepares a category rename."
+  },
+  "assistantGroupAddTitle": "New group",
+  "@assistantGroupAddTitle": {
+    "description": "Card title when Ask Vaultara prepares a new group."
+  },
+  "assistantGroupRenameTitle": "Rename group",
+  "@assistantGroupRenameTitle": {
+    "description": "Card title when Ask Vaultara prepares a group rename."
+  },
+  "assistantMoveTitle": "{count, plural, =1{Move {count} record} other{Move {count} records}}",
+  "@assistantMoveTitle": {
+    "description": "Card title when Ask Vaultara prepares moving records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restore record",
+  "@assistantRestoreTitle": {
+    "description": "Card title when Ask Vaultara prepares a restore from Recently deleted."
+  },
+  "assistantRestoreNote": "The record and its reminders come back.",
+  "@assistantRestoreNote": {
+    "description": "Note on the restore card."
+  },
+  "assistantStepCategories": "Checking your categories…",
+  "@assistantStepCategories": {
+    "description": "Shown while Ask Vaultara looks at categories and groups."
+  },
+  "assistantStepCosts": "Adding up renewal costs…",
+  "@assistantStepCosts": {
+    "description": "Shown while Ask Vaultara adds up renewal costs."
+  },
+  "assistantStepVisa": "Checking visa rules…",
+  "@assistantStepVisa": {
+    "description": "Shown while Ask Vaultara checks visa guidance."
   }
 }

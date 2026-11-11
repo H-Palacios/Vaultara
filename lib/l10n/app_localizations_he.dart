@@ -8472,4 +8472,257 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'קטגוריות מוצמדות';
+
+  @override
+  String get notifAskTitle => 'קבלו את התזכורות בזמן';
+
+  @override
+  String get notifAskBody => 'Vaultara יכולה להזכיר לכם לפני שמשהו פג תוקף רק אם ההתראות מותרות. אנחנו שולחים רק תזכורות והתראות חשובות על החשבון.';
+
+  @override
+  String get notifAskAllow => 'לאפשר התראות';
+
+  @override
+  String get notifAskLater => 'לא עכשיו';
+
+  @override
+  String get signInTooManyTries => 'יותר מדי ניסיונות. המתינו רגע לפני שתנסו שוב, או אפסו את הסיסמה.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'נסו שוב בעוד $seconds שניות',
+      two: 'נסו שוב בעוד $seconds שניות',
+      one: 'נסו שוב בעוד שנייה $seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'קודי גיבוי';
+
+  @override
+  String get backupCodesIntro => 'אם תאבדו את הטלפון או את אפליקציית האימות, קוד גיבוי יאפשר לכם להתחבר. כל קוד עובד פעם אחת.';
+
+  @override
+  String get backupCodesShownOnce => 'הקודים האלה מוצגים פעם אחת בלבד. שמרו אותם במקום בטוח, הרחק מהטלפון הזה.';
+
+  @override
+  String get backupCodesCopy => 'העתקה';
+
+  @override
+  String get backupCodesSave => 'שמירה או שיתוף';
+
+  @override
+  String get backupCodesSaved => 'שמרתי את הקודים';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נותרו $count קודי גיבוי',
+      two: 'נותרו $count קודי גיבוי',
+      one: 'נותר קוד גיבוי $count',
+      zero: 'לא נותרו קודי גיבוי',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'יצירת קודי גיבוי';
+
+  @override
+  String get backupCodesMakeNew => 'יצירת קודים חדשים';
+
+  @override
+  String get backupCodesReplaceTitle => 'ליצור קודי גיבוי חדשים?';
+
+  @override
+  String get backupCodesReplaceBody => 'הקודים הישנים יפסיקו לעבוד מיד.';
+
+  @override
+  String get backupCodesFileTitle => 'קודי גיבוי של Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'כל קוד עובד פעם אחת. שמרו אותם במקום בטוח.';
+
+  @override
+  String get backupCodesCopied => 'קודי הגיבוי הועתקו. הם יימחקו מהלוח בעוד דקה.';
+
+  @override
+  String get backupCodesNone => 'עדיין לא נוצרו';
+
+  @override
+  String get backupCodesTileHint => 'התחברות אם תאבדו את הטלפון';
+
+  @override
+  String get backupCodeUseTitle => 'שימוש בקוד גיבוי';
+
+  @override
+  String get backupCodeUseBody => 'הזינו אחד מקודי הגיבוי ששמרתם. שימוש בקוד מכבה את האימות הדו-שלבי, כדי שתוכלו להגדיר אותו מחדש בטלפון החדש.';
+
+  @override
+  String get backupCodeLabel => 'קוד גיבוי';
+
+  @override
+  String get backupCodeFormat => 'קודי גיבוי נראים כך: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'הקוד לא עבד. בדקו אותו ונסו שוב.';
+
+  @override
+  String get backupCodeBack => 'שימוש באפליקציית האימות שלי';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'שלב $step מתוך $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'הוא יופיע באפליקציה בשם Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'הקודים מתחלפים כל 30 שניות. הזינו את הקוד שמוצג עכשיו.';
+
+  @override
+  String get twoStepPaste => 'הדבקה';
+
+  @override
+  String get twoStepBackupNext => 'צרו קודי גיבוי כדי שתוכלו להתחבר גם אם תאבדו את הטלפון הזה.';
+
+  @override
+  String get twoStepAppLockTitle => 'נעלו גם את האפליקציה';
+
+  @override
+  String get twoStepAppLockBody => 'האימות הדו-שלבי מגן על ההתחברות. נעילת האפליקציה מבקשת טביעת אצבע, פנים או נעילת מסך בכל פעם ש-Vaultara נפתחת.';
+
+  @override
+  String get twoStepAppLockAction => 'הפעלת נעילת האפליקציה';
+
+  @override
+  String get twoStepSignOutOthersBody => 'מחוברים במקום שאתם לא מזהים? התנתקו ממכשירים אחרים.';
+
+  @override
+  String get twoStepReviewDevices => 'בדיקת מכשירים';
+
+  @override
+  String get twoStepSkipForNow => 'דילוג לעכשיו';
+
+  @override
+  String get twoStepOffTitle => 'האימות הדו-שלבי כבוי';
+
+  @override
+  String get twoStepOffBody => 'התחברתם עם קוד גיבוי, ולכן האימות הדו-שלבי כובה. הגדירו אותו מחדש בטלפון הזה כדי שהחשבון יישאר מוגן.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years שנים',
+      two: '+$years שנים',
+      one: '+שנה $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'הקלדת תאריך';
+
+  @override
+  String get expiryTypeTitle => 'הקלידו את תאריך התפוגה';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'לדוגמה $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'התאריך לא נראה תקין. נסו $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'התאריך הזה עבר, ולכן הרשומה תישמר כפגת תוקף.';
+
+  @override
+  String get expiryEndsToday => 'התוקף פג היום.';
+
+  @override
+  String get saveAndAddAnother => 'שמירה והוספת עוד אחת';
+
+  @override
+  String get quickStartTitle => 'התחלה מהירה';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name נוצרה. להוסיף לה קבוצה?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name נוצרה. להוסיף לה רשומה?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'תעודות';
+
+  @override
+  String get groupIdeaLicences => 'רישיונות';
+
+  @override
+  String get groupIdeaContracts => 'חוזים';
+
+  @override
+  String get groupIdeaPermits => 'היתרים';
+
+  @override
+  String get groupIdeaInsurance => 'ביטוח';
+
+  @override
+  String get assistantCategoryAddTitle => 'קטגוריה חדשה';
+
+  @override
+  String get assistantCategoryAddNote => 'סמל נבחר לפי השם. אפשר לשנות אותו אחר כך.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'שינוי שם הקטגוריה';
+
+  @override
+  String get assistantGroupAddTitle => 'קבוצה חדשה';
+
+  @override
+  String get assistantGroupRenameTitle => 'שינוי שם הקבוצה';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'העברת $count רשומות',
+      two: 'העברת $count רשומות',
+      one: 'העברת רשומה $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'שחזור הרשומה';
+
+  @override
+  String get assistantRestoreNote => 'הרשומה והתזכורות שלה חוזרות.';
+
+  @override
+  String get assistantStepCategories => 'בודקים את הקטגוריות שלכם…';
+
+  @override
+  String get assistantStepCosts => 'מחשבים את עלויות החידוש…';
+
+  @override
+  String get assistantStepVisa => 'בודקים את כללי הוויזה…';
 }

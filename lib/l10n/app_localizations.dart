@@ -14364,6 +14364,414 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Pinned categories'**
   String get homePinnedTitle;
+
+  /// Title of the sheet asking to allow notifications, shown right after a reminder is set.
+  ///
+  /// In en, this message translates to:
+  /// **'Get your reminders on time'**
+  String get notifAskTitle;
+
+  /// Text of the sheet asking to allow notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara can only remind you before something expires if notifications are allowed. We only send reminders and important account alerts.'**
+  String get notifAskBody;
+
+  /// Button that asks the phone to allow notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow notifications'**
+  String get notifAskAllow;
+
+  /// Button that closes the notification sheet without asking.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get notifAskLater;
+
+  /// Shown on the sign-in screen after several wrong attempts.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Wait a moment before trying again, or reset your password.'**
+  String get signInTooManyTries;
+
+  /// Sign-in button text while the user must wait.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds, plural, =1{Try again in {seconds} second} other{Try again in {seconds} seconds}}'**
+  String signInWaitSeconds(int seconds);
+
+  /// Title of the backup codes screen and of the tile that opens it.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup codes'**
+  String get backupCodesTitle;
+
+  /// Explanation at the top of the backup codes screen.
+  ///
+  /// In en, this message translates to:
+  /// **'If you lose your phone or authenticator app, a backup code lets you sign in. Each code works once.'**
+  String get backupCodesIntro;
+
+  /// Warning above newly made backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'These codes are only shown once. Save them somewhere safe, away from this phone.'**
+  String get backupCodesShownOnce;
+
+  /// Button that copies the backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get backupCodesCopy;
+
+  /// Button that saves or shares the backup codes as text.
+  ///
+  /// In en, this message translates to:
+  /// **'Save or share'**
+  String get backupCodesSave;
+
+  /// Button the user taps after saving their backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ve saved my codes'**
+  String get backupCodesSaved;
+
+  /// How many unused backup codes the user has.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No backup codes left} =1{{count} backup code left} other{{count} backup codes left}}'**
+  String backupCodesLeft(int count);
+
+  /// Button that makes a set of backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Make backup codes'**
+  String get backupCodesMake;
+
+  /// Button that replaces the backup codes with a new set.
+  ///
+  /// In en, this message translates to:
+  /// **'Make new codes'**
+  String get backupCodesMakeNew;
+
+  /// Title of the dialog before replacing backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Make new backup codes?'**
+  String get backupCodesReplaceTitle;
+
+  /// Text of the dialog before replacing backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Your old codes will stop working straight away.'**
+  String get backupCodesReplaceBody;
+
+  /// First line of the saved backup codes text, and the subject when sharing.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara backup codes'**
+  String get backupCodesFileTitle;
+
+  /// Last line of the saved backup codes text.
+  ///
+  /// In en, this message translates to:
+  /// **'Each code works once. Keep these somewhere safe.'**
+  String get backupCodesEachOnce;
+
+  /// Shown after copying the backup codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup codes copied. They are cleared from the clipboard in a minute.'**
+  String get backupCodesCopied;
+
+  /// Subtitle of the backup codes tile when there are none.
+  ///
+  /// In en, this message translates to:
+  /// **'None made yet'**
+  String get backupCodesNone;
+
+  /// Subtitle of the backup codes tile while the count loads.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in if you lose your phone'**
+  String get backupCodesTileHint;
+
+  /// Link on the two-step sign-in sheet, and the title of backup code mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a backup code'**
+  String get backupCodeUseTitle;
+
+  /// Text in backup code mode on the sign-in sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter one of the backup codes you saved. Using one turns off two-step verification, so you can set it up again on your new phone.'**
+  String get backupCodeUseBody;
+
+  /// Label of the backup code field.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup code'**
+  String get backupCodeLabel;
+
+  /// Error when the entered backup code has the wrong shape.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup codes look like ABCDE-FGHJK.'**
+  String get backupCodeFormat;
+
+  /// Error when a backup code is not accepted.
+  ///
+  /// In en, this message translates to:
+  /// **'That code didn\'t work. Check it and try again.'**
+  String get backupCodeWrong;
+
+  /// Link back from backup code mode to the 6-digit code.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my authenticator app'**
+  String get backupCodeBack;
+
+  /// Progress label in two-step setup.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of {total}'**
+  String twoStepStepOf(int step, int total);
+
+  /// Tells the user how the account appears in their authenticator app.
+  ///
+  /// In en, this message translates to:
+  /// **'It will show as Vaultara ({email}) in your app.'**
+  String twoStepAccountLabel(String email);
+
+  /// Hint under the 6-digit code field.
+  ///
+  /// In en, this message translates to:
+  /// **'Codes change every 30 seconds. Enter the one showing now.'**
+  String get twoStepCodesChange;
+
+  /// Button that pastes a code from the clipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste'**
+  String get twoStepPaste;
+
+  /// Text of the backup codes card after two-step is turned on.
+  ///
+  /// In en, this message translates to:
+  /// **'Make backup codes so you can still sign in if you lose this phone.'**
+  String get twoStepBackupNext;
+
+  /// Card title suggesting app lock after two-step is turned on.
+  ///
+  /// In en, this message translates to:
+  /// **'Lock the app too'**
+  String get twoStepAppLockTitle;
+
+  /// Card text suggesting app lock.
+  ///
+  /// In en, this message translates to:
+  /// **'Two-step protects sign-in. App lock asks for your fingerprint, face or screen lock each time Vaultara opens.'**
+  String get twoStepAppLockBody;
+
+  /// Button on the app lock card.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on app lock'**
+  String get twoStepAppLockAction;
+
+  /// Card text suggesting a device review after two-step is turned on.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in somewhere you don\'t recognise? Sign out of other devices.'**
+  String get twoStepSignOutOthersBody;
+
+  /// Button that opens the devices list.
+  ///
+  /// In en, this message translates to:
+  /// **'Review devices'**
+  String get twoStepReviewDevices;
+
+  /// Button that leaves the next-steps cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip for now'**
+  String get twoStepSkipForNow;
+
+  /// Title of the dialog after signing in with a backup code.
+  ///
+  /// In en, this message translates to:
+  /// **'Two-step verification is off'**
+  String get twoStepOffTitle;
+
+  /// Text of the dialog after signing in with a backup code.
+  ///
+  /// In en, this message translates to:
+  /// **'You signed in with a backup code, so two-step verification was turned off. Set it up again on this phone to keep your account protected.'**
+  String get twoStepOffBody;
+
+  /// Quick button under the expiry date that adds years.
+  ///
+  /// In en, this message translates to:
+  /// **'{years, plural, =1{+{years} year} other{+{years} years}}'**
+  String expiryPlusYears(int years);
+
+  /// Quick button that lets the user type the expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'Type date'**
+  String get expiryTypeDate;
+
+  /// Title of the dialog for typing a date.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the expiry date'**
+  String get expiryTypeTitle;
+
+  /// Helper text in the typed date field.
+  ///
+  /// In en, this message translates to:
+  /// **'For example {example}'**
+  String expiryTypeHint(String example);
+
+  /// Error when the typed date cannot be read or is out of range.
+  ///
+  /// In en, this message translates to:
+  /// **'That date doesn\'t look right. Try {example}.'**
+  String expiryTypeInvalid(String example);
+
+  /// Note under the expiry date when it is in the past.
+  ///
+  /// In en, this message translates to:
+  /// **'This date has passed, so the record will be saved as expired.'**
+  String get expiryAlreadyPassed;
+
+  /// Note under the expiry date when it is today.
+  ///
+  /// In en, this message translates to:
+  /// **'This expires today.'**
+  String get expiryEndsToday;
+
+  /// Button that saves a record and clears the form for the next one.
+  ///
+  /// In en, this message translates to:
+  /// **'Save and add another'**
+  String get saveAndAddAnother;
+
+  /// Heading above the common document buttons on an empty Add record sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick start'**
+  String get quickStartTitle;
+
+  /// Shown after a category is made.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} created. Add a group to it?'**
+  String categoryCreatedAddGroup(String name);
+
+  /// Shown after a group is made.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} created. Add a record to it?'**
+  String groupCreatedAddRecord(String name);
+
+  /// Suggested group name.
+  ///
+  /// In en, this message translates to:
+  /// **'Certificates'**
+  String get groupIdeaCertificates;
+
+  /// Suggested group name.
+  ///
+  /// In en, this message translates to:
+  /// **'Licences'**
+  String get groupIdeaLicences;
+
+  /// Suggested group name.
+  ///
+  /// In en, this message translates to:
+  /// **'Contracts'**
+  String get groupIdeaContracts;
+
+  /// Suggested group name.
+  ///
+  /// In en, this message translates to:
+  /// **'Permits'**
+  String get groupIdeaPermits;
+
+  /// Suggested group name.
+  ///
+  /// In en, this message translates to:
+  /// **'Insurance'**
+  String get groupIdeaInsurance;
+
+  /// Card title when Ask Vaultara prepares a new category.
+  ///
+  /// In en, this message translates to:
+  /// **'New category'**
+  String get assistantCategoryAddTitle;
+
+  /// Note on the new category card.
+  ///
+  /// In en, this message translates to:
+  /// **'An icon is picked from the name. You can change it later.'**
+  String get assistantCategoryAddNote;
+
+  /// Card title when Ask Vaultara prepares a category rename.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename category'**
+  String get assistantCategoryRenameTitle;
+
+  /// Card title when Ask Vaultara prepares a new group.
+  ///
+  /// In en, this message translates to:
+  /// **'New group'**
+  String get assistantGroupAddTitle;
+
+  /// Card title when Ask Vaultara prepares a group rename.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename group'**
+  String get assistantGroupRenameTitle;
+
+  /// Card title when Ask Vaultara prepares moving records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Move {count} record} other{Move {count} records}}'**
+  String assistantMoveTitle(int count);
+
+  /// Card title when Ask Vaultara prepares a restore from Recently deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore record'**
+  String get assistantRestoreTitle;
+
+  /// Note on the restore card.
+  ///
+  /// In en, this message translates to:
+  /// **'The record and its reminders come back.'**
+  String get assistantRestoreNote;
+
+  /// Shown while Ask Vaultara looks at categories and groups.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your categories…'**
+  String get assistantStepCategories;
+
+  /// Shown while Ask Vaultara adds up renewal costs.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding up renewal costs…'**
+  String get assistantStepCosts;
+
+  /// Shown while Ask Vaultara checks visa guidance.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking visa rules…'**
+  String get assistantStepVisa;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

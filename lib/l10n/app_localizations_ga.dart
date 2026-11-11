@@ -8610,4 +8610,265 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Catagóirí greamaithe';
+
+  @override
+  String get notifAskTitle => 'Faigh do mheabhrúcháin in am';
+
+  @override
+  String get notifAskBody => 'Ní féidir le Vaultara tú a mheabhrú sula rachaidh rud éigin in éag ach amháin má tá fógraí ceadaithe. Ní sheolaimid ach meabhrúcháin agus foláirimh thábhachtacha cuntais.';
+
+  @override
+  String get notifAskAllow => 'Ceadaigh fógraí';
+
+  @override
+  String get notifAskLater => 'Ní anois';
+
+  @override
+  String get signInTooManyTries => 'An iomarca iarrachtaí. Fan nóiméad sula ndéanfaidh tú iarracht arís, nó athshocraigh do phasfhocal.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Bain triail eile as i gceann $seconds soicind',
+      many: 'Bain triail eile as i gceann $seconds soicind',
+      few: 'Bain triail eile as i gceann $seconds shoicind',
+      two: 'Bain triail eile as i gceann $seconds shoicind',
+      one: 'Bain triail eile as i gceann $seconds soicind',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Cóid chúltaca';
+
+  @override
+  String get backupCodesIntro => 'Má chailleann tú d\'fhón nó d\'aip fíordheimhnithe, ligeann cód cúltaca duit síniú isteach. Oibríonn gach cód uair amháin.';
+
+  @override
+  String get backupCodesShownOnce => 'Ní thaispeántar na cóid seo ach uair amháin. Sábháil iad in áit shábháilte, i bhfad ón bhfón seo.';
+
+  @override
+  String get backupCodesCopy => 'Cóipeáil';
+
+  @override
+  String get backupCodesSave => 'Sábháil nó comhroinn';
+
+  @override
+  String get backupCodesSaved => 'Tá mo chóid sábháilte agam';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cód cúltaca fágtha',
+      many: '$count gcód cúltaca fágtha',
+      few: '$count chód cúltaca fágtha',
+      two: '$count chód cúltaca fágtha',
+      one: '$count chód cúltaca fágtha',
+      zero: 'Níl aon chód cúltaca fágtha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Déan cóid chúltaca';
+
+  @override
+  String get backupCodesMakeNew => 'Déan cóid nua';
+
+  @override
+  String get backupCodesReplaceTitle => 'Cóid chúltaca nua a dhéanamh?';
+
+  @override
+  String get backupCodesReplaceBody => 'Stopfaidh do sheanchóid ag obair láithreach.';
+
+  @override
+  String get backupCodesFileTitle => 'Cóid chúltaca Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Oibríonn gach cód uair amháin. Coinnigh in áit shábháilte iad.';
+
+  @override
+  String get backupCodesCopied => 'Cóipeáladh na cóid chúltaca. Glanfar ón ngearrthaisce iad i gceann nóiméid.';
+
+  @override
+  String get backupCodesNone => 'Níl aon cheann déanta fós';
+
+  @override
+  String get backupCodesTileHint => 'Sínigh isteach má chailleann tú d\'fhón';
+
+  @override
+  String get backupCodeUseTitle => 'Úsáid cód cúltaca';
+
+  @override
+  String get backupCodeUseBody => 'Cuir isteach ceann de na cóid chúltaca a shábháil tú. Má úsáideann tú ceann, casfar fíorú dhá chéim as, ionas gur féidir leat é a shocrú arís ar d\'fhón nua.';
+
+  @override
+  String get backupCodeLabel => 'Cód cúltaca';
+
+  @override
+  String get backupCodeFormat => 'Breathnaíonn cóid chúltaca mar ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Níor oibrigh an cód sin. Seiceáil é agus bain triail eile as.';
+
+  @override
+  String get backupCodeBack => 'Úsáid m\'aip fíordheimhnithe';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Céim $step as $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Taispeánfar é mar Vaultara ($email) i d\'aip.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Athraíonn cóid gach 30 soicind. Cuir isteach an ceann atá le feiceáil anois.';
+
+  @override
+  String get twoStepPaste => 'Greamaigh';
+
+  @override
+  String get twoStepBackupNext => 'Déan cóid chúltaca ionas gur féidir leat síniú isteach fiú má chailleann tú an fón seo.';
+
+  @override
+  String get twoStepAppLockTitle => 'Cuir glas ar an aip freisin';
+
+  @override
+  String get twoStepAppLockBody => 'Cosnaíonn dhá chéim an síniú isteach. Iarrann glas na haipe do mhéarlorg, d\'aghaidh nó glas an scáileáin gach uair a osclaítear Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Cas glas na haipe air';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Sínithe isteach áit éigin nach n-aithníonn tú? Sínigh amach as gléasanna eile.';
+
+  @override
+  String get twoStepReviewDevices => 'Athbhreithnigh gléasanna';
+
+  @override
+  String get twoStepSkipForNow => 'Scipeáil anois';
+
+  @override
+  String get twoStepOffTitle => 'Tá fíorú dhá chéim casta as';
+
+  @override
+  String get twoStepOffBody => 'Shínigh tú isteach le cód cúltaca, mar sin casadh fíorú dhá chéim as. Socraigh arís é ar an bhfón seo chun do chuntas a choinneáil slán.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years bliain',
+      many: '+$years mbliana',
+      few: '+$years bliana',
+      two: '+$years bhliain',
+      one: '+$years bhliain',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Clóscríobh dáta';
+
+  @override
+  String get expiryTypeTitle => 'Clóscríobh an dáta éaga';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Mar shampla $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ní cosúil go bhfuil an dáta sin ceart. Bain triail as $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Tá an dáta seo caite, mar sin sábhálfar an taifead mar thaifead imithe in éag.';
+
+  @override
+  String get expiryEndsToday => 'Rachaidh sé seo in éag inniu.';
+
+  @override
+  String get saveAndAddAnother => 'Sábháil agus cuir ceann eile leis';
+
+  @override
+  String get quickStartTitle => 'Tús tapa';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Cruthaíodh $name. Grúpa a chur leis?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Cruthaíodh $name. Taifead a chur leis?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Teastais';
+
+  @override
+  String get groupIdeaLicences => 'Ceadúnais';
+
+  @override
+  String get groupIdeaContracts => 'Conarthaí';
+
+  @override
+  String get groupIdeaPermits => 'Ceadanna';
+
+  @override
+  String get groupIdeaInsurance => 'Árachas';
+
+  @override
+  String get assistantCategoryAddTitle => 'Catagóir nua';
+
+  @override
+  String get assistantCategoryAddNote => 'Roghnaítear deilbhín ón ainm. Is féidir leat é a athrú ar ball.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Athainmnigh an chatagóir';
+
+  @override
+  String get assistantGroupAddTitle => 'Grúpa nua';
+
+  @override
+  String get assistantGroupRenameTitle => 'Athainmnigh an grúpa';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bog $count taifead',
+      many: 'Bog $count dtaifead',
+      few: 'Bog $count thaifead',
+      two: 'Bog $count thaifead',
+      one: 'Bog $count taifead',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Athchóirigh an taifead';
+
+  @override
+  String get assistantRestoreNote => 'Tagann an taifead agus a mheabhrúcháin ar ais.';
+
+  @override
+  String get assistantStepCategories => 'Do chatagóirí á seiceáil…';
+
+  @override
+  String get assistantStepCosts => 'Costais athnuachana á suimiú…';
+
+  @override
+  String get assistantStepVisa => 'Rialacha víosa á seiceáil…';
 }

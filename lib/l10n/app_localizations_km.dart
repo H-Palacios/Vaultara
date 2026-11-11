@@ -8355,4 +8355,249 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'ប្រភេទដែលបានខ្ទាស់';
+
+  @override
+  String get notifAskTitle => 'ទទួលការរំលឹករបស់អ្នកទាន់ពេល';
+
+  @override
+  String get notifAskBody => 'Vaultara អាចរំលឹកអ្នកមុនពេលអ្វីមួយផុតកំណត់បាន លុះត្រាតែការជូនដំណឹងត្រូវបានអនុញ្ញាត។ យើងផ្ញើតែការរំលឹក និងការជូនដំណឹងគណនីសំខាន់ៗប៉ុណ្ណោះ។';
+
+  @override
+  String get notifAskAllow => 'អនុញ្ញាតការជូនដំណឹង';
+
+  @override
+  String get notifAskLater => 'មិនមែនឥឡូវនេះ';
+
+  @override
+  String get signInTooManyTries => 'ការព្យាយាមច្រើនពេក។ សូមរង់ចាំបន្តិចមុនពេលព្យាយាមម្តងទៀត ឬកំណត់ពាក្យសម្ងាត់ឡើងវិញ។';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'សូមព្យាយាមម្តងទៀតក្នុងរយៈពេល $seconds វិនាទី',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'កូដបម្រុង';
+
+  @override
+  String get backupCodesIntro => 'ប្រសិនបើអ្នកបាត់ទូរសព្ទ ឬកម្មវិធីផ្ទៀងផ្ទាត់ កូដបម្រុងអនុញ្ញាតឱ្យអ្នកចូលបាន។ កូដនីមួយៗប្រើបានតែម្តង។';
+
+  @override
+  String get backupCodesShownOnce => 'កូដទាំងនេះបង្ហាញតែម្តងប៉ុណ្ណោះ។ សូមរក្សាទុកនៅកន្លែងមានសុវត្ថិភាព ឆ្ងាយពីទូរសព្ទនេះ។';
+
+  @override
+  String get backupCodesCopy => 'ចម្លង';
+
+  @override
+  String get backupCodesSave => 'រក្សាទុក ឬចែករំលែក';
+
+  @override
+  String get backupCodesSaved => 'ខ្ញុំបានរក្សាទុកកូដរបស់ខ្ញុំហើយ';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'នៅសល់កូដបម្រុង $count',
+      zero: 'គ្មានកូដបម្រុងនៅសល់ទេ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'បង្កើតកូដបម្រុង';
+
+  @override
+  String get backupCodesMakeNew => 'បង្កើតកូដថ្មី';
+
+  @override
+  String get backupCodesReplaceTitle => 'បង្កើតកូដបម្រុងថ្មីឬ?';
+
+  @override
+  String get backupCodesReplaceBody => 'កូដចាស់របស់អ្នកនឹងឈប់ដំណើរការភ្លាមៗ។';
+
+  @override
+  String get backupCodesFileTitle => 'កូដបម្រុង Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'កូដនីមួយៗប្រើបានតែម្តង។ សូមរក្សាទុកនៅកន្លែងមានសុវត្ថិភាព។';
+
+  @override
+  String get backupCodesCopied => 'បានចម្លងកូដបម្រុង។ វានឹងត្រូវលុបចេញពីក្ដារតម្បៀតខ្ទាស់ក្នុងមួយនាទី។';
+
+  @override
+  String get backupCodesNone => 'មិនទាន់បានបង្កើតនៅឡើយ';
+
+  @override
+  String get backupCodesTileHint => 'ចូលប្រសិនបើអ្នកបាត់ទូរសព្ទ';
+
+  @override
+  String get backupCodeUseTitle => 'ប្រើកូដបម្រុង';
+
+  @override
+  String get backupCodeUseBody => 'បញ្ចូលកូដបម្រុងមួយដែលអ្នកបានរក្សាទុក។ ការប្រើវានឹងបិទការផ្ទៀងផ្ទាត់ពីរជំហាន ដើម្បីឱ្យអ្នកអាចរៀបចំវាឡើងវិញនៅលើទូរសព្ទថ្មី។';
+
+  @override
+  String get backupCodeLabel => 'កូដបម្រុង';
+
+  @override
+  String get backupCodeFormat => 'កូដបម្រុងមើលទៅដូចជា ABCDE-FGHJK។';
+
+  @override
+  String get backupCodeWrong => 'កូដនោះមិនដំណើរការទេ។ សូមពិនិត្យ ហើយព្យាយាមម្តងទៀត។';
+
+  @override
+  String get backupCodeBack => 'ប្រើកម្មវិធីផ្ទៀងផ្ទាត់របស់ខ្ញុំ';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ជំហាន $step នៃ $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'វានឹងបង្ហាញជា Vaultara ($email) នៅក្នុងកម្មវិធីរបស់អ្នក។';
+  }
+
+  @override
+  String get twoStepCodesChange => 'កូដប្តូររៀងរាល់ 30 វិនាទី។ សូមបញ្ចូលកូដដែលកំពុងបង្ហាញឥឡូវនេះ។';
+
+  @override
+  String get twoStepPaste => 'បិទភ្ជាប់';
+
+  @override
+  String get twoStepBackupNext => 'បង្កើតកូដបម្រុង ដើម្បីអាចចូលបាន ទោះបីអ្នកបាត់ទូរសព្ទនេះក៏ដោយ។';
+
+  @override
+  String get twoStepAppLockTitle => 'ចាក់សោកម្មវិធីផងដែរ';
+
+  @override
+  String get twoStepAppLockBody => 'ពីរជំហានការពារការចូល។ សោកម្មវិធីសុំស្នាមម្រាមដៃ មុខ ឬសោអេក្រង់ រាល់ពេលបើក Vaultara។';
+
+  @override
+  String get twoStepAppLockAction => 'បើកសោកម្មវិធី';
+
+  @override
+  String get twoStepSignOutOthersBody => 'បានចូលនៅកន្លែងដែលអ្នកមិនស្គាល់ឬ? ចាកចេញពីឧបករណ៍ផ្សេងទៀត។';
+
+  @override
+  String get twoStepReviewDevices => 'ពិនិត្យឧបករណ៍';
+
+  @override
+  String get twoStepSkipForNow => 'រំលងសិន';
+
+  @override
+  String get twoStepOffTitle => 'ការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ';
+
+  @override
+  String get twoStepOffBody => 'អ្នកបានចូលដោយកូដបម្រុង ដូច្នេះការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ។ សូមរៀបចំវាឡើងវិញនៅលើទូរសព្ទនេះ ដើម្បីការពារគណនីរបស់អ្នក។';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ឆ្នាំ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'វាយកាលបរិច្ឆេទ';
+
+  @override
+  String get expiryTypeTitle => 'វាយកាលបរិច្ឆេទផុតកំណត់';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'ឧទាហរណ៍ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'កាលបរិច្ឆេទនោះមើលទៅមិនត្រឹមត្រូវ។ សាកល្បង $example។';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'កាលបរិច្ឆេទនេះបានកន្លងផុតហើយ ដូច្នេះកំណត់ត្រានឹងត្រូវរក្សាទុកថាផុតកំណត់។';
+
+  @override
+  String get expiryEndsToday => 'វាផុតកំណត់ថ្ងៃនេះ។';
+
+  @override
+  String get saveAndAddAnother => 'រក្សាទុក ហើយបន្ថែមមួយទៀត';
+
+  @override
+  String get quickStartTitle => 'ចាប់ផ្តើមរហ័ស';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'បានបង្កើត $name។ បន្ថែមក្រុមទៅវាឬ?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'បានបង្កើត $name។ បន្ថែមកំណត់ត្រាទៅវាឬ?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'វិញ្ញាបនបត្រ';
+
+  @override
+  String get groupIdeaLicences => 'អាជ្ញាប័ណ្ណ';
+
+  @override
+  String get groupIdeaContracts => 'កិច្ចសន្យា';
+
+  @override
+  String get groupIdeaPermits => 'លិខិតអនុញ្ញាត';
+
+  @override
+  String get groupIdeaInsurance => 'ធានារ៉ាប់រង';
+
+  @override
+  String get assistantCategoryAddTitle => 'ប្រភេទថ្មី';
+
+  @override
+  String get assistantCategoryAddNote => 'រូបតំណាងត្រូវបានជ្រើសពីឈ្មោះ។ អ្នកអាចប្តូរវានៅពេលក្រោយ។';
+
+  @override
+  String get assistantCategoryRenameTitle => 'ប្តូរឈ្មោះប្រភេទ';
+
+  @override
+  String get assistantGroupAddTitle => 'ក្រុមថ្មី';
+
+  @override
+  String get assistantGroupRenameTitle => 'ប្តូរឈ្មោះក្រុម';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ផ្លាស់ទីកំណត់ត្រា $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'ស្ដារកំណត់ត្រា';
+
+  @override
+  String get assistantRestoreNote => 'កំណត់ត្រា និងការរំលឹករបស់វាត្រឡប់មកវិញ។';
+
+  @override
+  String get assistantStepCategories => 'កំពុងពិនិត្យប្រភេទរបស់អ្នក…';
+
+  @override
+  String get assistantStepCosts => 'កំពុងបូកថ្លៃបន្ត…';
+
+  @override
+  String get assistantStepVisa => 'កំពុងពិនិត្យច្បាប់ទិដ្ឋាការ…';
 }

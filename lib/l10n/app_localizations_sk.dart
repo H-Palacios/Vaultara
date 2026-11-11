@@ -8565,4 +8565,261 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Pripnuté kategórie';
+
+  @override
+  String get notifAskTitle => 'Dostávajte pripomenutia včas';
+
+  @override
+  String get notifAskBody => 'Vaultara vás môže upozorniť pred skončením platnosti, len ak sú upozornenia povolené. Posielame len pripomenutia a dôležité upozornenia k účtu.';
+
+  @override
+  String get notifAskAllow => 'Povoliť upozornenia';
+
+  @override
+  String get notifAskLater => 'Teraz nie';
+
+  @override
+  String get signInTooManyTries => 'Príliš veľa pokusov. Chvíľu počkajte, kým to skúsite znova, alebo si obnovte heslo.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Skúste to znova o $seconds sekúnd',
+      many: 'Skúste to znova o $seconds sekundy',
+      few: 'Skúste to znova o $seconds sekundy',
+      one: 'Skúste to znova o $seconds sekundu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Záložné kódy';
+
+  @override
+  String get backupCodesIntro => 'Ak stratíte telefón alebo overovaciu aplikáciu, záložný kód vám umožní prihlásiť sa. Každý kód funguje raz.';
+
+  @override
+  String get backupCodesShownOnce => 'Tieto kódy sa zobrazia iba raz. Uložte si ich na bezpečné miesto mimo tohto telefónu.';
+
+  @override
+  String get backupCodesCopy => 'Kopírovať';
+
+  @override
+  String get backupCodesSave => 'Uložiť alebo zdieľať';
+
+  @override
+  String get backupCodesSaved => 'Kódy mám uložené';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zostáva $count záložných kódov',
+      many: 'Zostáva $count záložného kódu',
+      few: 'Zostávajú $count záložné kódy',
+      one: 'Zostáva $count záložný kód',
+      zero: 'Nezostáva žiadny záložný kód',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Vytvoriť záložné kódy';
+
+  @override
+  String get backupCodesMakeNew => 'Vytvoriť nové kódy';
+
+  @override
+  String get backupCodesReplaceTitle => 'Vytvoriť nové záložné kódy?';
+
+  @override
+  String get backupCodesReplaceBody => 'Staré kódy okamžite prestanú fungovať.';
+
+  @override
+  String get backupCodesFileTitle => 'Záložné kódy Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Každý kód funguje raz. Uložte ich na bezpečné miesto.';
+
+  @override
+  String get backupCodesCopied => 'Záložné kódy skopírované. Zo schránky sa vymažú o minútu.';
+
+  @override
+  String get backupCodesNone => 'Zatiaľ žiadne nevytvorené';
+
+  @override
+  String get backupCodesTileHint => 'Prihlásenie, ak stratíte telefón';
+
+  @override
+  String get backupCodeUseTitle => 'Použiť záložný kód';
+
+  @override
+  String get backupCodeUseBody => 'Zadajte jeden z uložených záložných kódov. Jeho použitím sa vypne dvojstupňové overenie, aby ste ho mohli znova nastaviť na novom telefóne.';
+
+  @override
+  String get backupCodeLabel => 'Záložný kód';
+
+  @override
+  String get backupCodeFormat => 'Záložné kódy vyzerajú takto: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Tento kód nefungoval. Skontrolujte ho a skúste to znova.';
+
+  @override
+  String get backupCodeBack => 'Použiť overovaciu aplikáciu';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Krok $step z $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'V aplikácii sa zobrazí ako Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kódy sa menia každých 30 sekúnd. Zadajte ten, ktorý sa zobrazuje teraz.';
+
+  @override
+  String get twoStepPaste => 'Prilepiť';
+
+  @override
+  String get twoStepBackupNext => 'Vytvorte si záložné kódy, aby ste sa mohli prihlásiť, aj keď tento telefón stratíte.';
+
+  @override
+  String get twoStepAppLockTitle => 'Zamknite aj aplikáciu';
+
+  @override
+  String get twoStepAppLockBody => 'Dvojstupňové overenie chráni prihlásenie. Zámka aplikácie pri každom otvorení Vaultary vyžaduje odtlačok prsta, tvár alebo zámku obrazovky.';
+
+  @override
+  String get twoStepAppLockAction => 'Zapnúť zámku aplikácie';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Prihlásenie niekde, čo nepoznáte? Odhláste sa z ostatných zariadení.';
+
+  @override
+  String get twoStepReviewDevices => 'Skontrolovať zariadenia';
+
+  @override
+  String get twoStepSkipForNow => 'Teraz preskočiť';
+
+  @override
+  String get twoStepOffTitle => 'Dvojstupňové overenie je vypnuté';
+
+  @override
+  String get twoStepOffBody => 'Prihlásili ste sa záložným kódom, preto bolo dvojstupňové overenie vypnuté. Nastavte ho znova na tomto telefóne, aby bol váš účet chránený.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years rokov',
+      many: '+$years roka',
+      few: '+$years roky',
+      one: '+$years rok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Napísať dátum';
+
+  @override
+  String get expiryTypeTitle => 'Napíšte dátum skončenia platnosti';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Napríklad $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Tento dátum nevyzerá správne. Skúste $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Tento dátum už uplynul, takže záznam sa uloží ako neplatný.';
+
+  @override
+  String get expiryEndsToday => 'Platnosť končí dnes.';
+
+  @override
+  String get saveAndAddAnother => 'Uložiť a pridať ďalší';
+
+  @override
+  String get quickStartTitle => 'Rýchly štart';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'Kategória $name vytvorená. Pridať do nej skupinu?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'Skupina $name vytvorená. Pridať do nej záznam?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Certifikáty';
+
+  @override
+  String get groupIdeaLicences => 'Licencie';
+
+  @override
+  String get groupIdeaContracts => 'Zmluvy';
+
+  @override
+  String get groupIdeaPermits => 'Povolenia';
+
+  @override
+  String get groupIdeaInsurance => 'Poistenie';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nová kategória';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikona sa vyberie podľa názvu. Neskôr ju môžete zmeniť.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Premenovať kategóriu';
+
+  @override
+  String get assistantGroupAddTitle => 'Nová skupina';
+
+  @override
+  String get assistantGroupRenameTitle => 'Premenovať skupinu';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Presunúť $count záznamov',
+      many: 'Presunúť $count záznamu',
+      few: 'Presunúť $count záznamy',
+      one: 'Presunúť $count záznam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Obnoviť záznam';
+
+  @override
+  String get assistantRestoreNote => 'Záznam aj jeho pripomenutia sa vrátia.';
+
+  @override
+  String get assistantStepCategories => 'Kontrolujem vaše kategórie…';
+
+  @override
+  String get assistantStepCosts => 'Sčítavam náklady na obnovenie…';
+
+  @override
+  String get assistantStepVisa => 'Kontrolujem vízové pravidlá…';
 }

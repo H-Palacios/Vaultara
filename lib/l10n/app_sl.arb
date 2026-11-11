@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Pripete kategorije"
+  "homePinnedTitle": "Pripete kategorije",
+  "notifAskTitle": "Prejemajte opomnike pravočasno",
+  "notifAskBody": "Vaultara vas lahko opomni, preden nekaj poteče, samo če so obvestila dovoljena. Pošiljamo samo opomnike in pomembna opozorila o računu.",
+  "notifAskAllow": "Dovoli obvestila",
+  "notifAskLater": "Ne zdaj",
+  "signInTooManyTries": "Preveč poskusov. Malo počakajte, preden poskusite znova, ali ponastavite geslo.",
+  "signInWaitSeconds": "{seconds, plural, one{Poskusite znova čez {seconds} sekundo} two{Poskusite znova čez {seconds} sekundi} few{Poskusite znova čez {seconds} sekunde} other{Poskusite znova čez {seconds} sekund}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Rezervne kode",
+  "backupCodesIntro": "Če izgubite telefon ali aplikacijo za preverjanje pristnosti, se lahko prijavite z rezervno kodo. Vsaka koda deluje enkrat.",
+  "backupCodesShownOnce": "Te kode so prikazane samo enkrat. Shranite jih na varno mesto, stran od tega telefona.",
+  "backupCodesCopy": "Kopiraj",
+  "backupCodesSave": "Shrani ali deli",
+  "backupCodesSaved": "Kode sem shranil",
+  "backupCodesLeft": "{count, plural, =0{Ni več rezervnih kod} one{Ostala je {count} rezervna koda} two{Ostali sta {count} rezervni kodi} few{Ostale so {count} rezervne kode} other{Ostalo je {count} rezervnih kod}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Ustvari rezervne kode",
+  "backupCodesMakeNew": "Ustvari nove kode",
+  "backupCodesReplaceTitle": "Želite ustvariti nove rezervne kode?",
+  "backupCodesReplaceBody": "Stare kode bodo takoj prenehale delovati.",
+  "backupCodesFileTitle": "Rezervne kode za Vaultara",
+  "backupCodesEachOnce": "Vsaka koda deluje enkrat. Hranite jih na varnem mestu.",
+  "backupCodesCopied": "Rezervne kode so kopirane. Iz odložišča bodo izbrisane čez minuto.",
+  "backupCodesNone": "Še nobena ni ustvarjena",
+  "backupCodesTileHint": "Prijava, če izgubite telefon",
+  "backupCodeUseTitle": "Uporabi rezervno kodo",
+  "backupCodeUseBody": "Vnesite eno od shranjenih rezervnih kod. Z njeno uporabo se izklopi preverjanje v dveh korakih, da ga lahko znova nastavite na novem telefonu.",
+  "backupCodeLabel": "Rezervna koda",
+  "backupCodeFormat": "Rezervne kode so videti takole: ABCDE-FGHJK.",
+  "backupCodeWrong": "Ta koda ni delovala. Preverite jo in poskusite znova.",
+  "backupCodeBack": "Uporabi mojo aplikacijo za preverjanje",
+  "twoStepStepOf": "Korak {step} od {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "V aplikaciji bo prikazano kot Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kode se spremenijo vsakih 30 sekund. Vnesite tisto, ki je prikazana zdaj.",
+  "twoStepPaste": "Prilepi",
+  "twoStepBackupNext": "Ustvarite rezervne kode, da se lahko prijavite tudi, če izgubite ta telefon.",
+  "twoStepAppLockTitle": "Zaklenite tudi aplikacijo",
+  "twoStepAppLockBody": "Dva koraka ščitita prijavo. Zaklepanje aplikacije ob vsakem odprtju Vaultare zahteva prstni odtis, obraz ali zaklepanje zaslona.",
+  "twoStepAppLockAction": "Vklopi zaklepanje aplikacije",
+  "twoStepSignOutOthersBody": "Ste prijavljeni nekje, česar ne prepoznate? Odjavite se iz drugih naprav.",
+  "twoStepReviewDevices": "Preglej naprave",
+  "twoStepSkipForNow": "Zaenkrat preskoči",
+  "twoStepOffTitle": "Preverjanje v dveh korakih je izklopljeno",
+  "twoStepOffBody": "Prijavili ste se z rezervno kodo, zato je bilo preverjanje v dveh korakih izklopljeno. Znova ga nastavite na tem telefonu, da bo račun ostal zaščiten.",
+  "expiryPlusYears": "{years, plural, one{+{years} leto} two{+{years} leti} few{+{years} leta} other{+{years} let}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Vpiši datum",
+  "expiryTypeTitle": "Vpišite datum poteka",
+  "expiryTypeHint": "Na primer {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ta datum se ne zdi pravilen. Poskusite {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ta datum je že mimo, zato bo zapis shranjen kot potekel.",
+  "expiryEndsToday": "To poteče danes.",
+  "saveAndAddAnother": "Shrani in dodaj še enega",
+  "quickStartTitle": "Hiter začetek",
+  "categoryCreatedAddGroup": "{name} je ustvarjena. Dodam skupino?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} je ustvarjena. Dodam zapis?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Potrdila",
+  "groupIdeaLicences": "Licence",
+  "groupIdeaContracts": "Pogodbe",
+  "groupIdeaPermits": "Dovoljenja",
+  "groupIdeaInsurance": "Zavarovanja",
+  "assistantCategoryAddTitle": "Nova kategorija",
+  "assistantCategoryAddNote": "Ikona je izbrana glede na ime. Pozneje jo lahko spremenite.",
+  "assistantCategoryRenameTitle": "Preimenuj kategorijo",
+  "assistantGroupAddTitle": "Nova skupina",
+  "assistantGroupRenameTitle": "Preimenuj skupino",
+  "assistantMoveTitle": "{count, plural, one{Premakni {count} zapis} two{Premakni {count} zapisa} few{Premakni {count} zapise} other{Premakni {count} zapisov}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Obnovi zapis",
+  "assistantRestoreNote": "Zapis in njegovi opomniki se vrnejo.",
+  "assistantStepCategories": "Preverjam vaše kategorije…",
+  "assistantStepCosts": "Seštevam stroške podaljšanja…",
+  "assistantStepVisa": "Preverjam pravila za vizume…"
 }

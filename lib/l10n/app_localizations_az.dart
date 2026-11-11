@@ -8417,4 +8417,253 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Bərkidilmiş kateqoriyalar';
+
+  @override
+  String get notifAskTitle => 'Xatırlatmaları vaxtında alın';
+
+  @override
+  String get notifAskBody => 'Vaultara bir şeyin müddəti bitmədən sizə yalnız bildirişlərə icazə verildikdə xatırlada bilər. Biz yalnız xatırlatmalar və vacib hesab xəbərdarlıqları göndəririk.';
+
+  @override
+  String get notifAskAllow => 'Bildirişlərə icazə ver';
+
+  @override
+  String get notifAskLater => 'İndi yox';
+
+  @override
+  String get signInTooManyTries => 'Həddindən çox cəhd. Yenidən cəhd etməzdən əvvəl bir az gözləyin və ya parolunuzu sıfırlayın.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds saniyədən sonra yenidən cəhd edin',
+      one: '$seconds saniyədən sonra yenidən cəhd edin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Ehtiyat kodlar';
+
+  @override
+  String get backupCodesIntro => 'Telefonunuzu və ya autentifikator tətbiqinizi itirsəniz, ehtiyat kod daxil olmağa imkan verir. Hər kod bir dəfə işləyir.';
+
+  @override
+  String get backupCodesShownOnce => 'Bu kodlar yalnız bir dəfə göstərilir. Onları bu telefondan uzaq, təhlükəsiz yerdə saxlayın.';
+
+  @override
+  String get backupCodesCopy => 'Kopyala';
+
+  @override
+  String get backupCodesSave => 'Saxla və ya paylaş';
+
+  @override
+  String get backupCodesSaved => 'Kodlarımı saxladım';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ehtiyat kod qalıb',
+      one: '$count ehtiyat kod qalıb',
+      zero: 'Ehtiyat kod qalmayıb',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Ehtiyat kodlar yarat';
+
+  @override
+  String get backupCodesMakeNew => 'Yeni kodlar yarat';
+
+  @override
+  String get backupCodesReplaceTitle => 'Yeni ehtiyat kodlar yaradılsın?';
+
+  @override
+  String get backupCodesReplaceBody => 'Köhnə kodlarınız dərhal işləməyi dayandıracaq.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara ehtiyat kodları';
+
+  @override
+  String get backupCodesEachOnce => 'Hər kod bir dəfə işləyir. Onları təhlükəsiz yerdə saxlayın.';
+
+  @override
+  String get backupCodesCopied => 'Ehtiyat kodlar kopyalandı. Bir dəqiqəyə mübadilə buferindən silinəcək.';
+
+  @override
+  String get backupCodesNone => 'Hələ yaradılmayıb';
+
+  @override
+  String get backupCodesTileHint => 'Telefonunuzu itirsəniz daxil olun';
+
+  @override
+  String get backupCodeUseTitle => 'Ehtiyat koddan istifadə et';
+
+  @override
+  String get backupCodeUseBody => 'Saxladığınız ehtiyat kodlardan birini daxil edin. Birindən istifadə etmək iki addımlı doğrulamanı söndürür ki, onu yeni telefonunuzda yenidən qura biləsiniz.';
+
+  @override
+  String get backupCodeLabel => 'Ehtiyat kod';
+
+  @override
+  String get backupCodeFormat => 'Ehtiyat kodlar ABCDE-FGHJK kimi görünür.';
+
+  @override
+  String get backupCodeWrong => 'Bu kod işləmədi. Yoxlayın və yenidən cəhd edin.';
+
+  @override
+  String get backupCodeBack => 'Autentifikator tətbiqimdən istifadə et';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Addım $step / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Tətbiqinizdə Vaultara ($email) kimi görünəcək.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodlar hər 30 saniyədən bir dəyişir. İndi göstəriləni daxil edin.';
+
+  @override
+  String get twoStepPaste => 'Yapışdır';
+
+  @override
+  String get twoStepBackupNext => 'Bu telefonu itirsəniz də daxil ola bilmək üçün ehtiyat kodlar yaradın.';
+
+  @override
+  String get twoStepAppLockTitle => 'Tətbiqi də kilidlə';
+
+  @override
+  String get twoStepAppLockBody => 'İki addımlı doğrulama girişi qoruyur. Tətbiq kilidi Vaultara hər açılanda barmaq izinizi, üzünüzü və ya ekran kilidinizi istəyir.';
+
+  @override
+  String get twoStepAppLockAction => 'Tətbiq kilidini aç';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Tanımadığınız yerdə daxil olunub? Digər cihazlardan çıxın.';
+
+  @override
+  String get twoStepReviewDevices => 'Cihazlara bax';
+
+  @override
+  String get twoStepSkipForNow => 'İndilik keç';
+
+  @override
+  String get twoStepOffTitle => 'İki addımlı doğrulama söndürülüb';
+
+  @override
+  String get twoStepOffBody => 'Ehtiyat kodla daxil oldunuz, ona görə iki addımlı doğrulama söndürüldü. Hesabınızı qorumaq üçün onu bu telefonda yenidən qurun.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years il',
+      one: '+$years il',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Tarixi yaz';
+
+  @override
+  String get expiryTypeTitle => 'Bitmə tarixini yazın';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Məsələn $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Bu tarix düzgün görünmür. $example sınayın.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Bu tarix keçib, ona görə qeyd müddəti bitmiş kimi saxlanacaq.';
+
+  @override
+  String get expiryEndsToday => 'Bunun müddəti bu gün bitir.';
+
+  @override
+  String get saveAndAddAnother => 'Saxla və başqasını əlavə et';
+
+  @override
+  String get quickStartTitle => 'Sürətli başlanğıc';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name yaradıldı. Ona qrup əlavə edilsin?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name yaradıldı. Ona qeyd əlavə edilsin?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikatlar';
+
+  @override
+  String get groupIdeaLicences => 'Lisenziyalar';
+
+  @override
+  String get groupIdeaContracts => 'Müqavilələr';
+
+  @override
+  String get groupIdeaPermits => 'İcazələr';
+
+  @override
+  String get groupIdeaInsurance => 'Sığorta';
+
+  @override
+  String get assistantCategoryAddTitle => 'Yeni kateqoriya';
+
+  @override
+  String get assistantCategoryAddNote => 'Ad əsasında ikon seçilir. Sonra dəyişə bilərsiniz.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Kateqoriyanın adını dəyiş';
+
+  @override
+  String get assistantGroupAddTitle => 'Yeni qrup';
+
+  @override
+  String get assistantGroupRenameTitle => 'Qrupun adını dəyiş';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count qeydi köçür',
+      one: '$count qeydi köçür',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Qeydi bərpa et';
+
+  @override
+  String get assistantRestoreNote => 'Qeyd və onun xatırlatmaları geri qayıdır.';
+
+  @override
+  String get assistantStepCategories => 'Kateqoriyalarınız yoxlanılır…';
+
+  @override
+  String get assistantStepCosts => 'Yeniləmə xərcləri hesablanır…';
+
+  @override
+  String get assistantStepVisa => 'Viza qaydaları yoxlanılır…';
 }

@@ -3088,5 +3088,146 @@
       }
     }
   },
-  "homePinnedTitle": "Categorías fijadas"
+  "homePinnedTitle": "Categorías fijadas",
+  "notifAskTitle": "Recibe tus recordatorios a tiempo",
+  "notifAskBody": "Vaultara solo puede avisarte antes de que algo caduque si las notificaciones están permitidas. Solo enviamos recordatorios y alertas importantes de la cuenta.",
+  "notifAskAllow": "Permitir notificaciones",
+  "notifAskLater": "Ahora no",
+  "signInTooManyTries": "Demasiados intentos. Espera un momento antes de volver a intentarlo o restablece tu contraseña.",
+  "signInWaitSeconds": "{seconds, plural, =1{Vuelve a intentarlo en {seconds} segundo} other{Vuelve a intentarlo en {seconds} segundos}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Códigos de respaldo",
+  "backupCodesIntro": "Si pierdes el teléfono o la app de autenticación, un código de respaldo te permite iniciar sesión. Cada código funciona una vez.",
+  "backupCodesShownOnce": "Estos códigos solo se muestran una vez. Guárdalos en un lugar seguro, lejos de este teléfono.",
+  "backupCodesCopy": "Copiar",
+  "backupCodesSave": "Guardar o compartir",
+  "backupCodesSaved": "Ya guardé mis códigos",
+  "backupCodesLeft": "{count, plural, =0{No quedan códigos de respaldo} =1{Queda {count} código de respaldo} other{Quedan {count} códigos de respaldo}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Crear códigos de respaldo",
+  "backupCodesMakeNew": "Crear códigos nuevos",
+  "backupCodesReplaceTitle": "¿Crear códigos de respaldo nuevos?",
+  "backupCodesReplaceBody": "Tus códigos antiguos dejarán de funcionar de inmediato.",
+  "backupCodesFileTitle": "Códigos de respaldo de Vaultara",
+  "backupCodesEachOnce": "Cada código funciona una vez. Guárdalos en un lugar seguro.",
+  "backupCodesCopied": "Códigos copiados. Se borrarán del portapapeles en un minuto.",
+  "backupCodesNone": "Aún no se ha creado ninguno",
+  "backupCodesTileHint": "Inicia sesión si pierdes el teléfono",
+  "backupCodeUseTitle": "Usar un código de respaldo",
+  "backupCodeUseBody": "Escribe uno de los códigos de respaldo que guardaste. Al usar uno se desactiva la verificación en dos pasos para que puedas configurarla de nuevo en tu teléfono nuevo.",
+  "backupCodeLabel": "Código de respaldo",
+  "backupCodeFormat": "Los códigos de respaldo tienen este aspecto: ABCDE-FGHJK.",
+  "backupCodeWrong": "Ese código no funcionó. Revísalo e inténtalo de nuevo.",
+  "backupCodeBack": "Usar mi app de autenticación",
+  "twoStepStepOf": "Paso {step} de {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Aparecerá como Vaultara ({email}) en tu app.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Los códigos cambian cada 30 segundos. Escribe el que se muestra ahora.",
+  "twoStepPaste": "Pegar",
+  "twoStepBackupNext": "Crea códigos de respaldo para poder iniciar sesión aunque pierdas este teléfono.",
+  "twoStepAppLockTitle": "Bloquea también la app",
+  "twoStepAppLockBody": "La verificación en dos pasos protege el inicio de sesión. El bloqueo de la app pide tu huella, tu cara o el bloqueo de pantalla cada vez que se abre Vaultara.",
+  "twoStepAppLockAction": "Activar el bloqueo de la app",
+  "twoStepSignOutOthersBody": "¿Sesión iniciada en un sitio que no reconoces? Cierra sesión en otros dispositivos.",
+  "twoStepReviewDevices": "Revisar dispositivos",
+  "twoStepSkipForNow": "Omitir por ahora",
+  "twoStepOffTitle": "La verificación en dos pasos está desactivada",
+  "twoStepOffBody": "Iniciaste sesión con un código de respaldo, así que se desactivó la verificación en dos pasos. Vuelve a configurarla en este teléfono para mantener tu cuenta protegida.",
+  "expiryPlusYears": "{years, plural, =1{+{years} año} other{+{years} años}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Escribir fecha",
+  "expiryTypeTitle": "Escribe la fecha de caducidad",
+  "expiryTypeHint": "Por ejemplo {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Esa fecha no parece correcta. Prueba {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Esta fecha ya pasó, así que el registro se guardará como caducado.",
+  "expiryEndsToday": "Caduca hoy.",
+  "saveAndAddAnother": "Guardar y añadir otro",
+  "quickStartTitle": "Inicio rápido",
+  "categoryCreatedAddGroup": "Se creó {name}. ¿Añadir un grupo?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Se creó {name}. ¿Añadir un registro?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificados",
+  "groupIdeaLicences": "Licencias",
+  "groupIdeaContracts": "Contratos",
+  "groupIdeaPermits": "Permisos",
+  "groupIdeaInsurance": "Seguros",
+  "assistantCategoryAddTitle": "Categoría nueva",
+  "assistantCategoryAddNote": "Se elige un icono según el nombre. Puedes cambiarlo más tarde.",
+  "assistantCategoryRenameTitle": "Cambiar nombre de la categoría",
+  "assistantGroupAddTitle": "Grupo nuevo",
+  "assistantGroupRenameTitle": "Cambiar nombre del grupo",
+  "assistantMoveTitle": "{count, plural, =1{Mover {count} registro} other{Mover {count} registros}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restaurar registro",
+  "assistantRestoreNote": "El registro y sus recordatorios vuelven.",
+  "assistantStepCategories": "Revisando tus categorías…",
+  "assistantStepCosts": "Sumando costes de renovación…",
+  "assistantStepVisa": "Revisando las normas de visado…"
 }

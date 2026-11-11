@@ -8417,4 +8417,253 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Mahkamlangan toifalar';
+
+  @override
+  String get notifAskTitle => 'Eslatmalarni o‘z vaqtida oling';
+
+  @override
+  String get notifAskBody => 'Bildirishnomalarga ruxsat berilgandagina Vaultara biror narsaning muddati tugashidan oldin eslata oladi. Biz faqat eslatmalar va muhim hisob ogohlantirishlarini yuboramiz.';
+
+  @override
+  String get notifAskAllow => 'Bildirishnomalarga ruxsat berish';
+
+  @override
+  String get notifAskLater => 'Hozir emas';
+
+  @override
+  String get signInTooManyTries => 'Juda ko‘p urinish. Qayta urinishdan oldin biroz kuting yoki parolni tiklang.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds soniyadan keyin qayta urining',
+      one: '$seconds soniyadan keyin qayta urining',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Zaxira kodlar';
+
+  @override
+  String get backupCodesIntro => 'Telefoningiz yoki autentifikator ilovangizni yo‘qotsangiz, zaxira kod bilan kira olasiz. Har bir kod bir marta ishlaydi.';
+
+  @override
+  String get backupCodesShownOnce => 'Bu kodlar faqat bir marta ko‘rsatiladi. Ularni bu telefondan uzoqda, xavfsiz joyda saqlang.';
+
+  @override
+  String get backupCodesCopy => 'Nusxalash';
+
+  @override
+  String get backupCodesSave => 'Saqlash yoki ulashish';
+
+  @override
+  String get backupCodesSaved => 'Kodlarimni saqladim';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta zaxira kod qoldi',
+      one: '$count ta zaxira kod qoldi',
+      zero: 'Zaxira kod qolmadi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Zaxira kodlar yaratish';
+
+  @override
+  String get backupCodesMakeNew => 'Yangi kodlar yaratish';
+
+  @override
+  String get backupCodesReplaceTitle => 'Yangi zaxira kodlar yaratilsinmi?';
+
+  @override
+  String get backupCodesReplaceBody => 'Eski kodlaringiz darhol ishlamay qoladi.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara zaxira kodlari';
+
+  @override
+  String get backupCodesEachOnce => 'Har bir kod bir marta ishlaydi. Ularni xavfsiz joyda saqlang.';
+
+  @override
+  String get backupCodesCopied => 'Zaxira kodlar nusxalandi. Ular bir daqiqadan so‘ng vaqtinchalik xotiradan o‘chiriladi.';
+
+  @override
+  String get backupCodesNone => 'Hali yaratilmagan';
+
+  @override
+  String get backupCodesTileHint => 'Telefonni yo‘qotsangiz kirish';
+
+  @override
+  String get backupCodeUseTitle => 'Zaxira koddan foydalanish';
+
+  @override
+  String get backupCodeUseBody => 'Saqlagan zaxira kodlaringizdan birini kiriting. Undan foydalanish ikki bosqichli tasdiqlashni o‘chiradi, shunda uni yangi telefonda qayta sozlay olasiz.';
+
+  @override
+  String get backupCodeLabel => 'Zaxira kod';
+
+  @override
+  String get backupCodeFormat => 'Zaxira kodlar ABCDE-FGHJK kabi ko‘rinadi.';
+
+  @override
+  String get backupCodeWrong => 'Bu kod ishlamadi. Tekshirib, qayta urining.';
+
+  @override
+  String get backupCodeBack => 'Autentifikator ilovamdan foydalanish';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$total bosqichdan $step-bosqich';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Ilovangizda Vaultara ($email) sifatida ko‘rinadi.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodlar har 30 soniyada o‘zgaradi. Hozir ko‘rinayotganini kiriting.';
+
+  @override
+  String get twoStepPaste => 'Joylash';
+
+  @override
+  String get twoStepBackupNext => 'Bu telefonni yo‘qotsangiz ham kira olishingiz uchun zaxira kodlar yarating.';
+
+  @override
+  String get twoStepAppLockTitle => 'Ilovani ham qulflang';
+
+  @override
+  String get twoStepAppLockBody => 'Ikki bosqich kirishni himoya qiladi. Ilova qulfi Vaultara har ochilganda barmoq izi, yuz yoki ekran qulfini so‘raydi.';
+
+  @override
+  String get twoStepAppLockAction => 'Ilova qulfini yoqish';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Tanimagan joyingizda kirilganmi? Boshqa qurilmalardan chiqing.';
+
+  @override
+  String get twoStepReviewDevices => 'Qurilmalarni ko‘rib chiqish';
+
+  @override
+  String get twoStepSkipForNow => 'Hozircha o‘tkazib yuborish';
+
+  @override
+  String get twoStepOffTitle => 'Ikki bosqichli tasdiqlash o‘chirilgan';
+
+  @override
+  String get twoStepOffBody => 'Siz zaxira kod bilan kirdingiz, shuning uchun ikki bosqichli tasdiqlash o‘chirildi. Hisobingiz himoyalangan bo‘lishi uchun uni bu telefonda qayta sozlang.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years yil',
+      one: '+$years yil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Sanani yozish';
+
+  @override
+  String get expiryTypeTitle => 'Amal qilish muddati tugash sanasini yozing';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Masalan $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Bu sana to‘g‘ri emasga o‘xshaydi. $example sinab ko‘ring.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Bu sana o‘tib ketgan, shuning uchun yozuv muddati o‘tgan sifatida saqlanadi.';
+
+  @override
+  String get expiryEndsToday => 'Buning muddati bugun tugaydi.';
+
+  @override
+  String get saveAndAddAnother => 'Saqlash va yana bittasini qo‘shish';
+
+  @override
+  String get quickStartTitle => 'Tez boshlash';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name yaratildi. Unga guruh qo‘shilsinmi?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name yaratildi. Unga yozuv qo‘shilsinmi?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikatlar';
+
+  @override
+  String get groupIdeaLicences => 'Litsenziyalar';
+
+  @override
+  String get groupIdeaContracts => 'Shartnomalar';
+
+  @override
+  String get groupIdeaPermits => 'Ruxsatnomalar';
+
+  @override
+  String get groupIdeaInsurance => 'Sug‘urta';
+
+  @override
+  String get assistantCategoryAddTitle => 'Yangi turkum';
+
+  @override
+  String get assistantCategoryAddNote => 'Belgi nomga qarab tanlanadi. Keyinroq o‘zgartirishingiz mumkin.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Turkum nomini o‘zgartirish';
+
+  @override
+  String get assistantGroupAddTitle => 'Yangi guruh';
+
+  @override
+  String get assistantGroupRenameTitle => 'Guruh nomini o‘zgartirish';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta yozuvni ko‘chirish',
+      one: '$count ta yozuvni ko‘chirish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Yozuvni tiklash';
+
+  @override
+  String get assistantRestoreNote => 'Yozuv va uning eslatmalari qaytadi.';
+
+  @override
+  String get assistantStepCategories => 'Turkumlaringiz tekshirilmoqda…';
+
+  @override
+  String get assistantStepCosts => 'Yangilash xarajatlari hisoblanmoqda…';
+
+  @override
+  String get assistantStepVisa => 'Viza qoidalari tekshirilmoqda…';
 }

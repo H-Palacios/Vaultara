@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kategoriyên derzîkirî"
+  "homePinnedTitle": "Kategoriyên derzîkirî",
+  "notifAskTitle": "Bîrxistinên xwe di wextê de bistîne",
+  "notifAskBody": "Vaultara tenê dikare berî ku tiştek biqede te bîne bîra te heke agahdarî destûrdayî bin. Em tenê bîrxistin û hişyariyên girîng ên hesabê dişînin.",
+  "notifAskAllow": "Destûrê bide agahdariyan",
+  "notifAskLater": "Ne niha",
+  "signInTooManyTries": "Gelek hewldan. Berî ku dîsa biceribînî hinekî bisekine, an jî şîfreya xwe nû bike.",
+  "signInWaitSeconds": "{seconds, plural, =1{Piştî {seconds} saniyeyê dîsa biceribîne} other{Piştî {seconds} saniyeyan dîsa biceribîne}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Kodên yedek",
+  "backupCodesIntro": "Heke tu telefona xwe an sepana piştrastkirinê winda bikî, kodek yedek dihêle tu têkevî. Her kod carekê dixebite.",
+  "backupCodesShownOnce": "Ev kod tenê carekê têne nîşandan. Wan li cihekî ewle, dûrî vê telefonê, tomar bike.",
+  "backupCodesCopy": "Kopî bike",
+  "backupCodesSave": "Tomar bike an parve bike",
+  "backupCodesSaved": "Min kodên xwe tomar kirin",
+  "backupCodesLeft": "{count, plural, =0{Tu kodek yedek nema} =1{{count} kodek yedek ma} other{{count} kodên yedek man}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Kodên yedek çêke",
+  "backupCodesMakeNew": "Kodên nû çêke",
+  "backupCodesReplaceTitle": "Kodên yedek ên nû bên çêkirin?",
+  "backupCodesReplaceBody": "Kodên te yên kevin dê yekser nexebitin.",
+  "backupCodesFileTitle": "Kodên yedek ên Vaultara",
+  "backupCodesEachOnce": "Her kod carekê dixebite. Wan li cihekî ewle biparêze.",
+  "backupCodesCopied": "Kodên yedek hatin kopîkirin. Piştî deqeyekê ji panoyê têne jêbirin.",
+  "backupCodesNone": "Hîn nehatine çêkirin",
+  "backupCodesTileHint": "Heke telefona xwe winda bikî têkeve",
+  "backupCodeUseTitle": "Kodek yedek bi kar bîne",
+  "backupCodeUseBody": "Yek ji kodên yedek ên ku te tomar kirine binivîse. Bikaranîna wê piştrastkirina du-gavî digire, da ku tu li ser telefona xwe ya nû dîsa saz bikî.",
+  "backupCodeLabel": "Koda yedek",
+  "backupCodeFormat": "Kodên yedek wek ABCDE-FGHJK xuya dikin.",
+  "backupCodeWrong": "Ew kod nexebitî. Kontrol bike û dîsa biceribîne.",
+  "backupCodeBack": "Sepana min a piştrastkirinê bi kar bîne",
+  "twoStepStepOf": "Gav {step} ji {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Di sepana te de wek Vaultara ({email}) xuya dibe.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kod her 30 saniyeyan diguherin. Ya ku niha xuya dike binivîse.",
+  "twoStepPaste": "Pêve bike",
+  "twoStepBackupNext": "Kodên yedek çêke da ku heke tu vê telefonê winda bikî jî bikaribî têkevî.",
+  "twoStepAppLockTitle": "Sepanê jî kilît bike",
+  "twoStepAppLockBody": "Du gav têketinê diparêzin. Kilîta sepanê her carê ku Vaultara vedibe şopa tiliyê, rû an kilîta ekranê dixwaze.",
+  "twoStepAppLockAction": "Kilîta sepanê veke",
+  "twoStepSignOutOthersBody": "Li cihekî ku tu nas nakî ketî? Ji amûrên din derkeve.",
+  "twoStepReviewDevices": "Amûran binêre",
+  "twoStepSkipForNow": "Niha derbas bike",
+  "twoStepOffTitle": "Piştrastkirina du-gavî girtî ye",
+  "twoStepOffBody": "Tu bi kodek yedek ketî, loma piştrastkirina du-gavî hate girtin. Ji bo ku hesabê te parastî bimîne wê li ser vê telefonê dîsa saz bike.",
+  "expiryPlusYears": "{years, plural, =1{+{years} sal} other{+{years} sal}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Dîrokê binivîse",
+  "expiryTypeTitle": "Dîroka qedandinê binivîse",
+  "expiryTypeHint": "Mînak {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ew dîrok rast xuya nake. {example} biceribîne.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ev dîrok derbas bûye, loma tomar wek qediyayî tê tomarkirin.",
+  "expiryEndsToday": "Ev îro diqede.",
+  "saveAndAddAnother": "Tomar bike û yekî din lê zêde bike",
+  "quickStartTitle": "Destpêka bilez",
+  "categoryCreatedAddGroup": "{name} hate çêkirin. Komek lê zêde bibe?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} hate çêkirin. Tomarek lê zêde bibe?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Bawername",
+  "groupIdeaLicences": "Lîsans",
+  "groupIdeaContracts": "Peyman",
+  "groupIdeaPermits": "Destûrname",
+  "groupIdeaInsurance": "Sîgorte",
+  "assistantCategoryAddTitle": "Kategoriya nû",
+  "assistantCategoryAddNote": "Îkon li gorî navî tê hilbijartin. Tu dikarî paşê biguherînî.",
+  "assistantCategoryRenameTitle": "Navê kategoriyê biguherîne",
+  "assistantGroupAddTitle": "Koma nû",
+  "assistantGroupRenameTitle": "Navê komê biguherîne",
+  "assistantMoveTitle": "{count, plural, =1{{count} tomar bibe} other{{count} tomaran bibe}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Tomarê vegerîne",
+  "assistantRestoreNote": "Tomar û bîrxistinên wê vedigerin.",
+  "assistantStepCategories": "Kategoriyên te têne kontrolkirin…",
+  "assistantStepCosts": "Lêçûnên nûkirinê têne hesibandin…",
+  "assistantStepVisa": "Rêgezên vîzeyê têne kontrolkirin…"
 }

@@ -3074,5 +3074,146 @@
       }
     }
   },
-  "homePinnedTitle": "已釘選的類別"
+  "homePinnedTitle": "已釘選的類別",
+  "notifAskTitle": "準時收到提醒",
+  "notifAskBody": "只有在允許通知後，Vaultara 才能在到期前提醒你。我們只會傳送提醒和重要的帳戶通知。",
+  "notifAskAllow": "允許通知",
+  "notifAskLater": "稍後再說",
+  "signInTooManyTries": "嘗試次數過多。請稍候再試，或重設密碼。",
+  "signInWaitSeconds": "{seconds, plural, other{{seconds} 秒後再試一次}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "備用碼",
+  "backupCodesIntro": "如果遺失手機或驗證器應用程式，可以使用備用碼登入。每組備用碼只能使用一次。",
+  "backupCodesShownOnce": "這些備用碼只會顯示一次。請保存在安全的地方，不要放在這支手機上。",
+  "backupCodesCopy": "複製",
+  "backupCodesSave": "儲存或分享",
+  "backupCodesSaved": "我已儲存備用碼",
+  "backupCodesLeft": "{count, plural, =0{沒有剩餘的備用碼} other{剩餘 {count} 組備用碼}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "產生備用碼",
+  "backupCodesMakeNew": "產生新的備用碼",
+  "backupCodesReplaceTitle": "要產生新的備用碼嗎？",
+  "backupCodesReplaceBody": "舊的備用碼會立即失效。",
+  "backupCodesFileTitle": "Vaultara 備用碼",
+  "backupCodesEachOnce": "每組備用碼只能使用一次。請妥善保管。",
+  "backupCodesCopied": "已複製備用碼。一分鐘後會從剪貼簿清除。",
+  "backupCodesNone": "尚未產生",
+  "backupCodesTileHint": "遺失手機時用於登入",
+  "backupCodeUseTitle": "使用備用碼",
+  "backupCodeUseBody": "輸入你儲存的其中一組備用碼。使用後會關閉兩步驟驗證，讓你在新手機上重新設定。",
+  "backupCodeLabel": "備用碼",
+  "backupCodeFormat": "備用碼的格式類似 ABCDE-FGHJK。",
+  "backupCodeWrong": "這組備用碼無效。請檢查後再試一次。",
+  "backupCodeBack": "使用我的驗證器應用程式",
+  "twoStepStepOf": "第 {step} 步，共 {total} 步",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "在你的應用程式中會顯示為 Vaultara ({email})。",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "驗證碼每 30 秒更換一次。請輸入目前顯示的驗證碼。",
+  "twoStepPaste": "貼上",
+  "twoStepBackupNext": "產生備用碼，即使遺失這支手機也能登入。",
+  "twoStepAppLockTitle": "同時鎖定應用程式",
+  "twoStepAppLockBody": "兩步驟驗證保護登入。應用程式鎖定會在每次開啟 Vaultara 時要求指紋、臉孔或螢幕鎖定。",
+  "twoStepAppLockAction": "開啟應用程式鎖定",
+  "twoStepSignOutOthersBody": "在你不認得的地方登入了？請登出其他裝置。",
+  "twoStepReviewDevices": "查看裝置",
+  "twoStepSkipForNow": "暫時略過",
+  "twoStepOffTitle": "兩步驟驗證已關閉",
+  "twoStepOffBody": "你使用備用碼登入，因此兩步驟驗證已關閉。請在這支手機上重新設定，以保護你的帳戶。",
+  "expiryPlusYears": "{years, plural, other{+{years} 年}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "輸入日期",
+  "expiryTypeTitle": "輸入到期日",
+  "expiryTypeHint": "例如 {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "這個日期似乎不正確。請試試 {example}。",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "這個日期已過，因此記錄會儲存為已過期。",
+  "expiryEndsToday": "今天到期。",
+  "saveAndAddAnother": "儲存並繼續新增",
+  "quickStartTitle": "快速開始",
+  "categoryCreatedAddGroup": "已建立 {name}。要新增群組嗎？",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "已建立 {name}。要新增記錄嗎？",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "證書",
+  "groupIdeaLicences": "執照",
+  "groupIdeaContracts": "合約",
+  "groupIdeaPermits": "許可證",
+  "groupIdeaInsurance": "保險",
+  "assistantCategoryAddTitle": "新增類別",
+  "assistantCategoryAddNote": "會根據名稱選擇圖示。你之後可以變更。",
+  "assistantCategoryRenameTitle": "重新命名類別",
+  "assistantGroupAddTitle": "新增群組",
+  "assistantGroupRenameTitle": "重新命名群組",
+  "assistantMoveTitle": "{count, plural, other{移動 {count} 筆記錄}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "還原記錄",
+  "assistantRestoreNote": "記錄及其提醒會恢復。",
+  "assistantStepCategories": "正在檢查你的類別…",
+  "assistantStepCosts": "正在加總續約費用…",
+  "assistantStepVisa": "正在檢查簽證規定…"
 }

@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "பின் செய்த வகைகள்"
+  "homePinnedTitle": "பின் செய்த வகைகள்",
+  "notifAskTitle": "உங்கள் நினைவூட்டல்களைச் சரியான நேரத்தில் பெறுங்கள்",
+  "notifAskBody": "அறிவிப்புகள் அனுமதிக்கப்பட்டால் மட்டுமே ஏதாவது காலாவதியாகும் முன் Vaultara உங்களுக்கு நினைவூட்ட முடியும். நினைவூட்டல்களையும் முக்கியமான கணக்கு எச்சரிக்கைகளையும் மட்டுமே அனுப்புகிறோம்.",
+  "notifAskAllow": "அறிவிப்புகளை அனுமதி",
+  "notifAskLater": "இப்போது வேண்டாம்",
+  "signInTooManyTries": "அதிகமான முயற்சிகள். மீண்டும் முயலும் முன் சற்று காத்திருக்கவும், அல்லது கடவுச்சொல்லை மீட்டமைக்கவும்.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} வினாடியில் மீண்டும் முயலவும்} other{{seconds} வினாடிகளில் மீண்டும் முயலவும்}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "காப்புக் குறியீடுகள்",
+  "backupCodesIntro": "உங்கள் ஃபோன் அல்லது அங்கீகரிப்புப் பயன்பாடு தொலைந்தால், காப்புக் குறியீடு மூலம் உள்நுழையலாம். ஒவ்வொரு குறியீடும் ஒருமுறை மட்டுமே வேலை செய்யும்.",
+  "backupCodesShownOnce": "இந்தக் குறியீடுகள் ஒருமுறை மட்டுமே காட்டப்படும். இந்த ஃபோனிலிருந்து தொலைவில் பாதுகாப்பான இடத்தில் சேமிக்கவும்.",
+  "backupCodesCopy": "நகலெடு",
+  "backupCodesSave": "சேமி அல்லது பகிர்",
+  "backupCodesSaved": "என் குறியீடுகளைச் சேமித்துவிட்டேன்",
+  "backupCodesLeft": "{count, plural, =0{காப்புக் குறியீடுகள் எதுவும் மீதமில்லை} =1{{count} காப்புக் குறியீடு மீதமுள்ளது} other{{count} காப்புக் குறியீடுகள் மீதமுள்ளன}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "காப்புக் குறியீடுகளை உருவாக்கு",
+  "backupCodesMakeNew": "புதிய குறியீடுகளை உருவாக்கு",
+  "backupCodesReplaceTitle": "புதிய காப்புக் குறியீடுகளை உருவாக்கவா?",
+  "backupCodesReplaceBody": "உங்கள் பழைய குறியீடுகள் உடனே வேலை செய்வதை நிறுத்தும்.",
+  "backupCodesFileTitle": "Vaultara காப்புக் குறியீடுகள்",
+  "backupCodesEachOnce": "ஒவ்வொரு குறியீடும் ஒருமுறை வேலை செய்யும். பாதுகாப்பான இடத்தில் வைக்கவும்.",
+  "backupCodesCopied": "காப்புக் குறியீடுகள் நகலெடுக்கப்பட்டன. ஒரு நிமிடத்தில் கிளிப்போர்டிலிருந்து அழிக்கப்படும்.",
+  "backupCodesNone": "இன்னும் உருவாக்கவில்லை",
+  "backupCodesTileHint": "ஃபோன் தொலைந்தால் உள்நுழைய",
+  "backupCodeUseTitle": "காப்புக் குறியீட்டைப் பயன்படுத்து",
+  "backupCodeUseBody": "நீங்கள் சேமித்த காப்புக் குறியீடுகளில் ஒன்றை உள்ளிடவும். ஒன்றைப் பயன்படுத்தினால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்படும், எனவே புதிய ஃபோனில் மீண்டும் அமைக்கலாம்.",
+  "backupCodeLabel": "காப்புக் குறியீடு",
+  "backupCodeFormat": "காப்புக் குறியீடுகள் ABCDE-FGHJK போல இருக்கும்.",
+  "backupCodeWrong": "அந்தக் குறியீடு வேலை செய்யவில்லை. சரிபார்த்து மீண்டும் முயலவும்.",
+  "backupCodeBack": "என் அங்கீகரிப்புப் பயன்பாட்டைப் பயன்படுத்து",
+  "twoStepStepOf": "படி {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "உங்கள் பயன்பாட்டில் இது Vaultara ({email}) என்று காட்டப்படும்.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "குறியீடுகள் ஒவ்வொரு 30 வினாடிக்கும் மாறும். இப்போது காட்டப்படுவதை உள்ளிடவும்.",
+  "twoStepPaste": "ஒட்டு",
+  "twoStepBackupNext": "இந்த ஃபோன் தொலைந்தாலும் உள்நுழைய காப்புக் குறியீடுகளை உருவாக்கவும்.",
+  "twoStepAppLockTitle": "பயன்பாட்டையும் பூட்டுங்கள்",
+  "twoStepAppLockBody": "இரண்டு படி உள்நுழைவைப் பாதுகாக்கிறது. Vaultara திறக்கப்படும் ஒவ்வொரு முறையும் பயன்பாட்டுப் பூட்டு கைரேகை, முகம் அல்லது திரைப் பூட்டைக் கேட்கும்.",
+  "twoStepAppLockAction": "பயன்பாட்டுப் பூட்டை இயக்கு",
+  "twoStepSignOutOthersBody": "தெரியாத இடத்தில் உள்நுழைந்துள்ளதா? பிற சாதனங்களிலிருந்து வெளியேறவும்.",
+  "twoStepReviewDevices": "சாதனங்களைப் பார்",
+  "twoStepSkipForNow": "இப்போது தவிர்",
+  "twoStepOffTitle": "இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டுள்ளது",
+  "twoStepOffBody": "காப்புக் குறியீட்டுடன் உள்நுழைந்ததால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டது. கணக்கைப் பாதுகாப்பாக வைக்க இந்த ஃபோனில் மீண்டும் அமைக்கவும்.",
+  "expiryPlusYears": "{years, plural, =1{+{years} ஆண்டு} other{+{years} ஆண்டுகள்}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "தேதியைத் தட்டச்சு செய்",
+  "expiryTypeTitle": "காலாவதி தேதியைத் தட்டச்சு செய்யவும்",
+  "expiryTypeHint": "எடுத்துக்காட்டு {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "அந்தத் தேதி சரியாகத் தெரியவில்லை. {example} முயலவும்.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "இந்தத் தேதி கடந்துவிட்டது, எனவே பதிவு காலாவதியானதாகச் சேமிக்கப்படும்.",
+  "expiryEndsToday": "இது இன்று காலாவதியாகிறது.",
+  "saveAndAddAnother": "சேமித்து மற்றொன்றைச் சேர்",
+  "quickStartTitle": "விரைவுத் தொடக்கம்",
+  "categoryCreatedAddGroup": "{name} உருவாக்கப்பட்டது. குழுவைச் சேர்க்கவா?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} உருவாக்கப்பட்டது. பதிவைச் சேர்க்கவா?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "சான்றிதழ்கள்",
+  "groupIdeaLicences": "உரிமங்கள்",
+  "groupIdeaContracts": "ஒப்பந்தங்கள்",
+  "groupIdeaPermits": "அனுமதிகள்",
+  "groupIdeaInsurance": "காப்பீடு",
+  "assistantCategoryAddTitle": "புதிய வகை",
+  "assistantCategoryAddNote": "பெயரின் அடிப்படையில் ஐகான் தேர்ந்தெடுக்கப்படும். பின்னர் மாற்றலாம்.",
+  "assistantCategoryRenameTitle": "வகையின் பெயரை மாற்று",
+  "assistantGroupAddTitle": "புதிய குழு",
+  "assistantGroupRenameTitle": "குழுவின் பெயரை மாற்று",
+  "assistantMoveTitle": "{count, plural, =1{{count} பதிவை நகர்த்து} other{{count} பதிவுகளை நகர்த்து}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "பதிவை மீட்டமை",
+  "assistantRestoreNote": "பதிவும் அதன் நினைவூட்டல்களும் திரும்ப வரும்.",
+  "assistantStepCategories": "உங்கள் வகைகளைச் சரிபார்க்கிறது…",
+  "assistantStepCosts": "புதுப்பிப்புச் செலவுகளைக் கூட்டுகிறது…",
+  "assistantStepVisa": "விசா விதிகளைச் சரிபார்க்கிறது…"
 }

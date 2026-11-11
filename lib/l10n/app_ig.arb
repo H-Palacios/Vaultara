@@ -3086,5 +3086,146 @@
       }
     }
   },
-  "homePinnedTitle": "Ụdị ndị a pịnara"
+  "homePinnedTitle": "Ụdị ndị a pịnara",
+  "notifAskTitle": "Nweta ihe ncheta gị n'oge",
+  "notifAskBody": "Vaultara nwere ike ichetara gị tupu ihe agwụ naanị ma ọ bụrụ na e kwere ka ọkwa bata. Anyị na-ezipụ naanị ihe ncheta na ọkwa akaụntụ dị mkpa.",
+  "notifAskAllow": "Kwe ka ọkwa bata",
+  "notifAskLater": "Ọ bụghị ugbu a",
+  "signInTooManyTries": "Mgbalị karịrị akarị. Chere obere oge tupu ị nwaa ọzọ, ma ọ bụ tọgharịa paswọọdụ gị.",
+  "signInWaitSeconds": "{seconds, plural, =1{Nwaa ọzọ n'ime sekọnd {seconds}} other{Nwaa ọzọ n'ime sekọnd {seconds}}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Koodu ndabere",
+  "backupCodesIntro": "Ọ bụrụ na ekwentị gị ma ọ bụ ngwa nyocha furu efu, koodu ndabere ga-enye gị ohere ịbanye. Koodu ọ bụla na-arụ ọrụ otu ugboro.",
+  "backupCodesShownOnce": "A na-egosi koodu ndị a naanị otu ugboro. Chekwaa ha n'ebe dị nchebe, n'ebe dị anya site na ekwentị a.",
+  "backupCodesCopy": "Detuo",
+  "backupCodesSave": "Chekwaa ma ọ bụ kesaa",
+  "backupCodesSaved": "Echekwala m koodu m",
+  "backupCodesLeft": "{count, plural, =0{Koodu ndabere ọ bụla afọdụghị} =1{Koodu ndabere {count} fọdụrụ} other{Koodu ndabere {count} fọdụrụ}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Mepụta koodu ndabere",
+  "backupCodesMakeNew": "Mepụta koodu ọhụrụ",
+  "backupCodesReplaceTitle": "Mepụta koodu ndabere ọhụrụ?",
+  "backupCodesReplaceBody": "Koodu ochie gị ga-akwụsị ịrụ ọrụ ozugbo.",
+  "backupCodesFileTitle": "Koodu ndabere Vaultara",
+  "backupCodesEachOnce": "Koodu ọ bụla na-arụ ọrụ otu ugboro. Chekwaa ha n'ebe dị nchebe.",
+  "backupCodesCopied": "E detuola koodu ndabere. A ga-ehichapụ ha na klipbọọdụ n'ime otu nkeji.",
+  "backupCodesNone": "Ọ dịbeghị nke e mepụtara",
+  "backupCodesTileHint": "Banye ma ọ bụrụ na ekwentị gị efuo",
+  "backupCodeUseTitle": "Jiri koodu ndabere",
+  "backupCodeUseBody": "Tinye otu n'ime koodu ndabere ị chekwara. Iji otu na-agbanyụ nkwenye nzọụkwụ abụọ, ka i nwee ike ịtọgharị ya na ekwentị ọhụrụ gị.",
+  "backupCodeLabel": "Koodu ndabere",
+  "backupCodeFormat": "Koodu ndabere dị ka ABCDE-FGHJK.",
+  "backupCodeWrong": "Koodu ahụ arụghị ọrụ. Lelee ya ma nwaa ọzọ.",
+  "backupCodeBack": "Jiri ngwa nyocha m",
+  "twoStepStepOf": "Nzọụkwụ {step} n'ime {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Ọ ga-egosi dị ka Vaultara ({email}) na ngwa gị.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Koodu na-agbanwe kwa sekọnd 30. Tinye nke na-egosi ugbu a.",
+  "twoStepPaste": "Mado",
+  "twoStepBackupNext": "Mepụta koodu ndabere ka i nwee ike ịbanye ọbụlagodi na ekwentị a efuo.",
+  "twoStepAppLockTitle": "Kpọchiekwa ngwa ahụ",
+  "twoStepAppLockBody": "Nzọụkwụ abụọ na-echedo mbanye. Mkpọchi ngwa na-arịọ akara mkpịsị aka, ihu ma ọ bụ mkpọchi ihuenyo oge ọ bụla e mepere Vaultara.",
+  "twoStepAppLockAction": "Gbanye mkpọchi ngwa",
+  "twoStepSignOutOthersBody": "Abanyela n'ebe ị na-amaghị? Pụọ na ngwaọrụ ndị ọzọ.",
+  "twoStepReviewDevices": "Lelee ngwaọrụ",
+  "twoStepSkipForNow": "Wụfee ugbu a",
+  "twoStepOffTitle": "Nkwenye nzọụkwụ abụọ agbanyụọla",
+  "twoStepOffBody": "Ị banyere site na koodu ndabere, ya mere a gbanyụrụ nkwenye nzọụkwụ abụọ. Tọgharịa ya na ekwentị a ka akaụntụ gị nọrọ na nchebe.",
+  "expiryPlusYears": "{years, plural, =1{+afọ {years}} other{+afọ {years}}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Dee ụbọchị",
+  "expiryTypeTitle": "Dee ụbọchị njedebe",
+  "expiryTypeHint": "Dịka ọmụmaatụ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ụbọchị ahụ adịghị ka ọ ziri ezi. Nwaa {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ụbọchị a agafeela, ya mere a ga-echekwa ndekọ ahụ dị ka nke gwụrụ.",
+  "expiryEndsToday": "Nke a na-agwụ taa.",
+  "saveAndAddAnother": "Chekwaa ma tinye ọzọ",
+  "quickStartTitle": "Mmalite ngwa ngwa",
+  "categoryCreatedAddGroup": "E mepụtala {name}. Tinye otu na ya?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "E mepụtala {name}. Tinye ndekọ na ya?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Asambodo",
+  "groupIdeaLicences": "Ikikere",
+  "groupIdeaContracts": "Nkwekọrịta",
+  "groupIdeaPermits": "Ikike",
+  "groupIdeaInsurance": "Inshọransị",
+  "assistantCategoryAddTitle": "Ụdị ọhụrụ",
+  "assistantCategoryAddNote": "A na-ahọrọ akara ngosi site na aha ya. Ị nwere ike ịgbanwe ya emesịa.",
+  "assistantCategoryRenameTitle": "Gbanwee aha ụdị",
+  "assistantGroupAddTitle": "Otu ọhụrụ",
+  "assistantGroupRenameTitle": "Gbanwee aha otu",
+  "assistantMoveTitle": "{count, plural, =1{Bugharịa ndekọ {count}} other{Bugharịa ndekọ {count}}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Weghachi ndekọ",
+  "assistantRestoreNote": "Ndekọ ahụ na ihe ncheta ya na-alọghachi.",
+  "assistantStepCategories": "Na-elele ụdị gị…",
+  "assistantStepCosts": "Na-agbakọ ego mmeghari ọhụrụ…",
+  "assistantStepVisa": "Na-elele iwu visa…"
 }

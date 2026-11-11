@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Kitűzött kategóriák"
+  "homePinnedTitle": "Kitűzött kategóriák",
+  "notifAskTitle": "Kapd meg időben az emlékeztetőket",
+  "notifAskBody": "A Vaultara csak akkor tud lejárat előtt emlékeztetni, ha az értesítések engedélyezve vannak. Csak emlékeztetőket és fontos fiókriasztásokat küldünk.",
+  "notifAskAllow": "Értesítések engedélyezése",
+  "notifAskLater": "Most nem",
+  "signInTooManyTries": "Túl sok próbálkozás. Várj egy kicsit, mielőtt újra próbálod, vagy állítsd vissza a jelszavad.",
+  "signInWaitSeconds": "{seconds, plural, =1{Próbáld újra {seconds} másodperc múlva} other{Próbáld újra {seconds} másodperc múlva}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Tartalékkódok",
+  "backupCodesIntro": "Ha elveszíted a telefonod vagy a hitelesítő alkalmazást, tartalékkóddal be tudsz jelentkezni. Minden kód egyszer működik.",
+  "backupCodesShownOnce": "Ezeket a kódokat csak egyszer mutatjuk meg. Mentsd őket biztonságos helyre, távol ettől a telefontól.",
+  "backupCodesCopy": "Másolás",
+  "backupCodesSave": "Mentés vagy megosztás",
+  "backupCodesSaved": "Elmentettem a kódokat",
+  "backupCodesLeft": "{count, plural, =0{Nem maradt tartalékkód} =1{{count} tartalékkód maradt} other{{count} tartalékkód maradt}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Tartalékkódok létrehozása",
+  "backupCodesMakeNew": "Új kódok létrehozása",
+  "backupCodesReplaceTitle": "Új tartalékkódokat hozol létre?",
+  "backupCodesReplaceBody": "A régi kódjaid azonnal megszűnnek működni.",
+  "backupCodesFileTitle": "Vaultara tartalékkódok",
+  "backupCodesEachOnce": "Minden kód egyszer működik. Tartsd őket biztonságos helyen.",
+  "backupCodesCopied": "Tartalékkódok másolva. Egy perc múlva törlődnek a vágólapról.",
+  "backupCodesNone": "Még nincs létrehozva",
+  "backupCodesTileHint": "Bejelentkezés, ha elveszíted a telefonod",
+  "backupCodeUseTitle": "Tartalékkód használata",
+  "backupCodeUseBody": "Add meg az egyik elmentett tartalékkódot. Használatával kikapcsol a kétlépcsős azonosítás, hogy az új telefonodon újra beállíthasd.",
+  "backupCodeLabel": "Tartalékkód",
+  "backupCodeFormat": "A tartalékkódok így néznek ki: ABCDE-FGHJK.",
+  "backupCodeWrong": "Ez a kód nem működött. Ellenőrizd, és próbáld újra.",
+  "backupCodeBack": "Hitelesítő alkalmazás használata",
+  "twoStepStepOf": "{step}. lépés / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Az alkalmazásodban Vaultara ({email}) néven jelenik meg.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "A kódok 30 másodpercenként változnak. Az éppen látható kódot add meg.",
+  "twoStepPaste": "Beillesztés",
+  "twoStepBackupNext": "Hozz létre tartalékkódokat, hogy akkor is be tudj jelentkezni, ha elveszíted ezt a telefont.",
+  "twoStepAppLockTitle": "Zárold az alkalmazást is",
+  "twoStepAppLockBody": "A kétlépcsős azonosítás a bejelentkezést védi. Az alkalmazászár a Vaultara minden megnyitásakor ujjlenyomatot, arcot vagy képernyőzárat kér.",
+  "twoStepAppLockAction": "Alkalmazászár bekapcsolása",
+  "twoStepSignOutOthersBody": "Ismeretlen helyen vagy bejelentkezve? Jelentkezz ki a többi eszközről.",
+  "twoStepReviewDevices": "Eszközök áttekintése",
+  "twoStepSkipForNow": "Most kihagyom",
+  "twoStepOffTitle": "A kétlépcsős azonosítás ki van kapcsolva",
+  "twoStepOffBody": "Tartalékkóddal jelentkeztél be, ezért a kétlépcsős azonosítás kikapcsolt. Állítsd be újra ezen a telefonon, hogy a fiókod védett maradjon.",
+  "expiryPlusYears": "{years, plural, =1{+{years} év} other{+{years} év}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Dátum beírása",
+  "expiryTypeTitle": "Írd be a lejárati dátumot",
+  "expiryTypeHint": "Például {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ez a dátum nem tűnik helyesnek. Próbáld így: {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ez a dátum már elmúlt, ezért a tétel lejártként lesz mentve.",
+  "expiryEndsToday": "Ez ma jár le.",
+  "saveAndAddAnother": "Mentés és újabb hozzáadása",
+  "quickStartTitle": "Gyors kezdés",
+  "categoryCreatedAddGroup": "{name} létrehozva. Hozzáadsz egy csoportot?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} létrehozva. Hozzáadsz egy tételt?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Tanúsítványok",
+  "groupIdeaLicences": "Licencek",
+  "groupIdeaContracts": "Szerződések",
+  "groupIdeaPermits": "Engedélyek",
+  "groupIdeaInsurance": "Biztosítások",
+  "assistantCategoryAddTitle": "Új kategória",
+  "assistantCategoryAddNote": "Az ikont a név alapján választjuk. Később módosíthatod.",
+  "assistantCategoryRenameTitle": "Kategória átnevezése",
+  "assistantGroupAddTitle": "Új csoport",
+  "assistantGroupRenameTitle": "Csoport átnevezése",
+  "assistantMoveTitle": "{count, plural, =1{{count} tétel áthelyezése} other{{count} tétel áthelyezése}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Tétel visszaállítása",
+  "assistantRestoreNote": "A tétel és az emlékeztetői visszakerülnek.",
+  "assistantStepCategories": "Kategóriák ellenőrzése…",
+  "assistantStepCosts": "Megújítási költségek összeadása…",
+  "assistantStepVisa": "Vízumszabályok ellenőrzése…"
 }

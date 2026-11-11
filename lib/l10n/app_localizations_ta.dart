@@ -8417,4 +8417,253 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'பின் செய்த வகைகள்';
+
+  @override
+  String get notifAskTitle => 'உங்கள் நினைவூட்டல்களைச் சரியான நேரத்தில் பெறுங்கள்';
+
+  @override
+  String get notifAskBody => 'அறிவிப்புகள் அனுமதிக்கப்பட்டால் மட்டுமே ஏதாவது காலாவதியாகும் முன் Vaultara உங்களுக்கு நினைவூட்ட முடியும். நினைவூட்டல்களையும் முக்கியமான கணக்கு எச்சரிக்கைகளையும் மட்டுமே அனுப்புகிறோம்.';
+
+  @override
+  String get notifAskAllow => 'அறிவிப்புகளை அனுமதி';
+
+  @override
+  String get notifAskLater => 'இப்போது வேண்டாம்';
+
+  @override
+  String get signInTooManyTries => 'அதிகமான முயற்சிகள். மீண்டும் முயலும் முன் சற்று காத்திருக்கவும், அல்லது கடவுச்சொல்லை மீட்டமைக்கவும்.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds வினாடிகளில் மீண்டும் முயலவும்',
+      one: '$seconds வினாடியில் மீண்டும் முயலவும்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'காப்புக் குறியீடுகள்';
+
+  @override
+  String get backupCodesIntro => 'உங்கள் ஃபோன் அல்லது அங்கீகரிப்புப் பயன்பாடு தொலைந்தால், காப்புக் குறியீடு மூலம் உள்நுழையலாம். ஒவ்வொரு குறியீடும் ஒருமுறை மட்டுமே வேலை செய்யும்.';
+
+  @override
+  String get backupCodesShownOnce => 'இந்தக் குறியீடுகள் ஒருமுறை மட்டுமே காட்டப்படும். இந்த ஃபோனிலிருந்து தொலைவில் பாதுகாப்பான இடத்தில் சேமிக்கவும்.';
+
+  @override
+  String get backupCodesCopy => 'நகலெடு';
+
+  @override
+  String get backupCodesSave => 'சேமி அல்லது பகிர்';
+
+  @override
+  String get backupCodesSaved => 'என் குறியீடுகளைச் சேமித்துவிட்டேன்';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count காப்புக் குறியீடுகள் மீதமுள்ளன',
+      one: '$count காப்புக் குறியீடு மீதமுள்ளது',
+      zero: 'காப்புக் குறியீடுகள் எதுவும் மீதமில்லை',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'காப்புக் குறியீடுகளை உருவாக்கு';
+
+  @override
+  String get backupCodesMakeNew => 'புதிய குறியீடுகளை உருவாக்கு';
+
+  @override
+  String get backupCodesReplaceTitle => 'புதிய காப்புக் குறியீடுகளை உருவாக்கவா?';
+
+  @override
+  String get backupCodesReplaceBody => 'உங்கள் பழைய குறியீடுகள் உடனே வேலை செய்வதை நிறுத்தும்.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara காப்புக் குறியீடுகள்';
+
+  @override
+  String get backupCodesEachOnce => 'ஒவ்வொரு குறியீடும் ஒருமுறை வேலை செய்யும். பாதுகாப்பான இடத்தில் வைக்கவும்.';
+
+  @override
+  String get backupCodesCopied => 'காப்புக் குறியீடுகள் நகலெடுக்கப்பட்டன. ஒரு நிமிடத்தில் கிளிப்போர்டிலிருந்து அழிக்கப்படும்.';
+
+  @override
+  String get backupCodesNone => 'இன்னும் உருவாக்கவில்லை';
+
+  @override
+  String get backupCodesTileHint => 'ஃபோன் தொலைந்தால் உள்நுழைய';
+
+  @override
+  String get backupCodeUseTitle => 'காப்புக் குறியீட்டைப் பயன்படுத்து';
+
+  @override
+  String get backupCodeUseBody => 'நீங்கள் சேமித்த காப்புக் குறியீடுகளில் ஒன்றை உள்ளிடவும். ஒன்றைப் பயன்படுத்தினால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்படும், எனவே புதிய ஃபோனில் மீண்டும் அமைக்கலாம்.';
+
+  @override
+  String get backupCodeLabel => 'காப்புக் குறியீடு';
+
+  @override
+  String get backupCodeFormat => 'காப்புக் குறியீடுகள் ABCDE-FGHJK போல இருக்கும்.';
+
+  @override
+  String get backupCodeWrong => 'அந்தக் குறியீடு வேலை செய்யவில்லை. சரிபார்த்து மீண்டும் முயலவும்.';
+
+  @override
+  String get backupCodeBack => 'என் அங்கீகரிப்புப் பயன்பாட்டைப் பயன்படுத்து';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'படி $step / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'உங்கள் பயன்பாட்டில் இது Vaultara ($email) என்று காட்டப்படும்.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'குறியீடுகள் ஒவ்வொரு 30 வினாடிக்கும் மாறும். இப்போது காட்டப்படுவதை உள்ளிடவும்.';
+
+  @override
+  String get twoStepPaste => 'ஒட்டு';
+
+  @override
+  String get twoStepBackupNext => 'இந்த ஃபோன் தொலைந்தாலும் உள்நுழைய காப்புக் குறியீடுகளை உருவாக்கவும்.';
+
+  @override
+  String get twoStepAppLockTitle => 'பயன்பாட்டையும் பூட்டுங்கள்';
+
+  @override
+  String get twoStepAppLockBody => 'இரண்டு படி உள்நுழைவைப் பாதுகாக்கிறது. Vaultara திறக்கப்படும் ஒவ்வொரு முறையும் பயன்பாட்டுப் பூட்டு கைரேகை, முகம் அல்லது திரைப் பூட்டைக் கேட்கும்.';
+
+  @override
+  String get twoStepAppLockAction => 'பயன்பாட்டுப் பூட்டை இயக்கு';
+
+  @override
+  String get twoStepSignOutOthersBody => 'தெரியாத இடத்தில் உள்நுழைந்துள்ளதா? பிற சாதனங்களிலிருந்து வெளியேறவும்.';
+
+  @override
+  String get twoStepReviewDevices => 'சாதனங்களைப் பார்';
+
+  @override
+  String get twoStepSkipForNow => 'இப்போது தவிர்';
+
+  @override
+  String get twoStepOffTitle => 'இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டுள்ளது';
+
+  @override
+  String get twoStepOffBody => 'காப்புக் குறியீட்டுடன் உள்நுழைந்ததால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டது. கணக்கைப் பாதுகாப்பாக வைக்க இந்த ஃபோனில் மீண்டும் அமைக்கவும்.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years ஆண்டுகள்',
+      one: '+$years ஆண்டு',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'தேதியைத் தட்டச்சு செய்';
+
+  @override
+  String get expiryTypeTitle => 'காலாவதி தேதியைத் தட்டச்சு செய்யவும்';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'எடுத்துக்காட்டு $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'அந்தத் தேதி சரியாகத் தெரியவில்லை. $example முயலவும்.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'இந்தத் தேதி கடந்துவிட்டது, எனவே பதிவு காலாவதியானதாகச் சேமிக்கப்படும்.';
+
+  @override
+  String get expiryEndsToday => 'இது இன்று காலாவதியாகிறது.';
+
+  @override
+  String get saveAndAddAnother => 'சேமித்து மற்றொன்றைச் சேர்';
+
+  @override
+  String get quickStartTitle => 'விரைவுத் தொடக்கம்';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name உருவாக்கப்பட்டது. குழுவைச் சேர்க்கவா?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name உருவாக்கப்பட்டது. பதிவைச் சேர்க்கவா?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'சான்றிதழ்கள்';
+
+  @override
+  String get groupIdeaLicences => 'உரிமங்கள்';
+
+  @override
+  String get groupIdeaContracts => 'ஒப்பந்தங்கள்';
+
+  @override
+  String get groupIdeaPermits => 'அனுமதிகள்';
+
+  @override
+  String get groupIdeaInsurance => 'காப்பீடு';
+
+  @override
+  String get assistantCategoryAddTitle => 'புதிய வகை';
+
+  @override
+  String get assistantCategoryAddNote => 'பெயரின் அடிப்படையில் ஐகான் தேர்ந்தெடுக்கப்படும். பின்னர் மாற்றலாம்.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'வகையின் பெயரை மாற்று';
+
+  @override
+  String get assistantGroupAddTitle => 'புதிய குழு';
+
+  @override
+  String get assistantGroupRenameTitle => 'குழுவின் பெயரை மாற்று';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count பதிவுகளை நகர்த்து',
+      one: '$count பதிவை நகர்த்து',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'பதிவை மீட்டமை';
+
+  @override
+  String get assistantRestoreNote => 'பதிவும் அதன் நினைவூட்டல்களும் திரும்ப வரும்.';
+
+  @override
+  String get assistantStepCategories => 'உங்கள் வகைகளைச் சரிபார்க்கிறது…';
+
+  @override
+  String get assistantStepCosts => 'புதுப்பிப்புச் செலவுகளைக் கூட்டுகிறது…';
+
+  @override
+  String get assistantStepVisa => 'விசா விதிகளைச் சரிபார்க்கிறது…';
 }

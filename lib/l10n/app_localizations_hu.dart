@@ -8417,4 +8417,253 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kitűzött kategóriák';
+
+  @override
+  String get notifAskTitle => 'Kapd meg időben az emlékeztetőket';
+
+  @override
+  String get notifAskBody => 'A Vaultara csak akkor tud lejárat előtt emlékeztetni, ha az értesítések engedélyezve vannak. Csak emlékeztetőket és fontos fiókriasztásokat küldünk.';
+
+  @override
+  String get notifAskAllow => 'Értesítések engedélyezése';
+
+  @override
+  String get notifAskLater => 'Most nem';
+
+  @override
+  String get signInTooManyTries => 'Túl sok próbálkozás. Várj egy kicsit, mielőtt újra próbálod, vagy állítsd vissza a jelszavad.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Próbáld újra $seconds másodperc múlva',
+      one: 'Próbáld újra $seconds másodperc múlva',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Tartalékkódok';
+
+  @override
+  String get backupCodesIntro => 'Ha elveszíted a telefonod vagy a hitelesítő alkalmazást, tartalékkóddal be tudsz jelentkezni. Minden kód egyszer működik.';
+
+  @override
+  String get backupCodesShownOnce => 'Ezeket a kódokat csak egyszer mutatjuk meg. Mentsd őket biztonságos helyre, távol ettől a telefontól.';
+
+  @override
+  String get backupCodesCopy => 'Másolás';
+
+  @override
+  String get backupCodesSave => 'Mentés vagy megosztás';
+
+  @override
+  String get backupCodesSaved => 'Elmentettem a kódokat';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tartalékkód maradt',
+      one: '$count tartalékkód maradt',
+      zero: 'Nem maradt tartalékkód',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Tartalékkódok létrehozása';
+
+  @override
+  String get backupCodesMakeNew => 'Új kódok létrehozása';
+
+  @override
+  String get backupCodesReplaceTitle => 'Új tartalékkódokat hozol létre?';
+
+  @override
+  String get backupCodesReplaceBody => 'A régi kódjaid azonnal megszűnnek működni.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara tartalékkódok';
+
+  @override
+  String get backupCodesEachOnce => 'Minden kód egyszer működik. Tartsd őket biztonságos helyen.';
+
+  @override
+  String get backupCodesCopied => 'Tartalékkódok másolva. Egy perc múlva törlődnek a vágólapról.';
+
+  @override
+  String get backupCodesNone => 'Még nincs létrehozva';
+
+  @override
+  String get backupCodesTileHint => 'Bejelentkezés, ha elveszíted a telefonod';
+
+  @override
+  String get backupCodeUseTitle => 'Tartalékkód használata';
+
+  @override
+  String get backupCodeUseBody => 'Add meg az egyik elmentett tartalékkódot. Használatával kikapcsol a kétlépcsős azonosítás, hogy az új telefonodon újra beállíthasd.';
+
+  @override
+  String get backupCodeLabel => 'Tartalékkód';
+
+  @override
+  String get backupCodeFormat => 'A tartalékkódok így néznek ki: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Ez a kód nem működött. Ellenőrizd, és próbáld újra.';
+
+  @override
+  String get backupCodeBack => 'Hitelesítő alkalmazás használata';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$step. lépés / $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Az alkalmazásodban Vaultara ($email) néven jelenik meg.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'A kódok 30 másodpercenként változnak. Az éppen látható kódot add meg.';
+
+  @override
+  String get twoStepPaste => 'Beillesztés';
+
+  @override
+  String get twoStepBackupNext => 'Hozz létre tartalékkódokat, hogy akkor is be tudj jelentkezni, ha elveszíted ezt a telefont.';
+
+  @override
+  String get twoStepAppLockTitle => 'Zárold az alkalmazást is';
+
+  @override
+  String get twoStepAppLockBody => 'A kétlépcsős azonosítás a bejelentkezést védi. Az alkalmazászár a Vaultara minden megnyitásakor ujjlenyomatot, arcot vagy képernyőzárat kér.';
+
+  @override
+  String get twoStepAppLockAction => 'Alkalmazászár bekapcsolása';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ismeretlen helyen vagy bejelentkezve? Jelentkezz ki a többi eszközről.';
+
+  @override
+  String get twoStepReviewDevices => 'Eszközök áttekintése';
+
+  @override
+  String get twoStepSkipForNow => 'Most kihagyom';
+
+  @override
+  String get twoStepOffTitle => 'A kétlépcsős azonosítás ki van kapcsolva';
+
+  @override
+  String get twoStepOffBody => 'Tartalékkóddal jelentkeztél be, ezért a kétlépcsős azonosítás kikapcsolt. Állítsd be újra ezen a telefonon, hogy a fiókod védett maradjon.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years év',
+      one: '+$years év',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Dátum beírása';
+
+  @override
+  String get expiryTypeTitle => 'Írd be a lejárati dátumot';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Például $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ez a dátum nem tűnik helyesnek. Próbáld így: $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ez a dátum már elmúlt, ezért a tétel lejártként lesz mentve.';
+
+  @override
+  String get expiryEndsToday => 'Ez ma jár le.';
+
+  @override
+  String get saveAndAddAnother => 'Mentés és újabb hozzáadása';
+
+  @override
+  String get quickStartTitle => 'Gyors kezdés';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name létrehozva. Hozzáadsz egy csoportot?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name létrehozva. Hozzáadsz egy tételt?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Tanúsítványok';
+
+  @override
+  String get groupIdeaLicences => 'Licencek';
+
+  @override
+  String get groupIdeaContracts => 'Szerződések';
+
+  @override
+  String get groupIdeaPermits => 'Engedélyek';
+
+  @override
+  String get groupIdeaInsurance => 'Biztosítások';
+
+  @override
+  String get assistantCategoryAddTitle => 'Új kategória';
+
+  @override
+  String get assistantCategoryAddNote => 'Az ikont a név alapján választjuk. Később módosíthatod.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Kategória átnevezése';
+
+  @override
+  String get assistantGroupAddTitle => 'Új csoport';
+
+  @override
+  String get assistantGroupRenameTitle => 'Csoport átnevezése';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tétel áthelyezése',
+      one: '$count tétel áthelyezése',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Tétel visszaállítása';
+
+  @override
+  String get assistantRestoreNote => 'A tétel és az emlékeztetői visszakerülnek.';
+
+  @override
+  String get assistantStepCategories => 'Kategóriák ellenőrzése…';
+
+  @override
+  String get assistantStepCosts => 'Megújítási költségek összeadása…';
+
+  @override
+  String get assistantStepVisa => 'Vízumszabályok ellenőrzése…';
 }

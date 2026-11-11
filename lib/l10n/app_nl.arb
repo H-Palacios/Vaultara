@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Vastgezette categorieën"
+  "homePinnedTitle": "Vastgezette categorieën",
+  "notifAskTitle": "Ontvang je herinneringen op tijd",
+  "notifAskBody": "Vaultara kan je alleen herinneren voordat iets verloopt als meldingen zijn toegestaan. We sturen alleen herinneringen en belangrijke accountmeldingen.",
+  "notifAskAllow": "Meldingen toestaan",
+  "notifAskLater": "Niet nu",
+  "signInTooManyTries": "Te veel pogingen. Wacht even voordat je het opnieuw probeert, of stel je wachtwoord opnieuw in.",
+  "signInWaitSeconds": "{seconds, plural, =1{Probeer het over {seconds} seconde opnieuw} other{Probeer het over {seconds} seconden opnieuw}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Back-upcodes",
+  "backupCodesIntro": "Als je je telefoon of authenticator-app kwijtraakt, kun je met een back-upcode inloggen. Elke code werkt één keer.",
+  "backupCodesShownOnce": "Deze codes worden maar één keer getoond. Bewaar ze op een veilige plek, niet op deze telefoon.",
+  "backupCodesCopy": "Kopiëren",
+  "backupCodesSave": "Opslaan of delen",
+  "backupCodesSaved": "Ik heb mijn codes opgeslagen",
+  "backupCodesLeft": "{count, plural, =0{Geen back-upcodes meer over} =1{{count} back-upcode over} other{{count} back-upcodes over}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Back-upcodes maken",
+  "backupCodesMakeNew": "Nieuwe codes maken",
+  "backupCodesReplaceTitle": "Nieuwe back-upcodes maken?",
+  "backupCodesReplaceBody": "Je oude codes werken dan meteen niet meer.",
+  "backupCodesFileTitle": "Vaultara-back-upcodes",
+  "backupCodesEachOnce": "Elke code werkt één keer. Bewaar ze op een veilige plek.",
+  "backupCodesCopied": "Back-upcodes gekopieerd. Ze worden over een minuut van het klembord gewist.",
+  "backupCodesNone": "Nog geen gemaakt",
+  "backupCodesTileHint": "Inloggen als je je telefoon kwijtraakt",
+  "backupCodeUseTitle": "Een back-upcode gebruiken",
+  "backupCodeUseBody": "Voer een van je opgeslagen back-upcodes in. Daarmee wordt verificatie in twee stappen uitgezet, zodat je die op je nieuwe telefoon opnieuw kunt instellen.",
+  "backupCodeLabel": "Back-upcode",
+  "backupCodeFormat": "Back-upcodes zien er zo uit: ABCDE-FGHJK.",
+  "backupCodeWrong": "Die code werkte niet. Controleer hem en probeer het opnieuw.",
+  "backupCodeBack": "Mijn authenticator-app gebruiken",
+  "twoStepStepOf": "Stap {step} van {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Het verschijnt als Vaultara ({email}) in je app.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Codes wisselen elke 30 seconden. Voer de code in die nu wordt getoond.",
+  "twoStepPaste": "Plakken",
+  "twoStepBackupNext": "Maak back-upcodes zodat je ook kunt inloggen als je deze telefoon kwijtraakt.",
+  "twoStepAppLockTitle": "Vergrendel ook de app",
+  "twoStepAppLockBody": "Twee stappen beschermen het inloggen. App-vergrendeling vraagt bij elke keer openen van Vaultara om je vingerafdruk, gezicht of schermvergrendeling.",
+  "twoStepAppLockAction": "App-vergrendeling aanzetten",
+  "twoStepSignOutOthersBody": "Ergens ingelogd dat je niet herkent? Log uit op andere apparaten.",
+  "twoStepReviewDevices": "Apparaten bekijken",
+  "twoStepSkipForNow": "Nu overslaan",
+  "twoStepOffTitle": "Verificatie in twee stappen staat uit",
+  "twoStepOffBody": "Je hebt ingelogd met een back-upcode, daarom is verificatie in twee stappen uitgezet. Stel het opnieuw in op deze telefoon om je account beschermd te houden.",
+  "expiryPlusYears": "{years, plural, =1{+{years} jaar} other{+{years} jaar}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Datum typen",
+  "expiryTypeTitle": "Typ de vervaldatum",
+  "expiryTypeHint": "Bijvoorbeeld {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Die datum lijkt niet te kloppen. Probeer {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Deze datum is al voorbij, dus het item wordt als verlopen opgeslagen.",
+  "expiryEndsToday": "Dit verloopt vandaag.",
+  "saveAndAddAnother": "Opslaan en nog een toevoegen",
+  "quickStartTitle": "Snel starten",
+  "categoryCreatedAddGroup": "{name} aangemaakt. Een groep toevoegen?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} aangemaakt. Een item toevoegen?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificaten",
+  "groupIdeaLicences": "Licenties",
+  "groupIdeaContracts": "Contracten",
+  "groupIdeaPermits": "Vergunningen",
+  "groupIdeaInsurance": "Verzekeringen",
+  "assistantCategoryAddTitle": "Nieuwe categorie",
+  "assistantCategoryAddNote": "Er wordt een pictogram gekozen op basis van de naam. Je kunt het later wijzigen.",
+  "assistantCategoryRenameTitle": "Categorie hernoemen",
+  "assistantGroupAddTitle": "Nieuwe groep",
+  "assistantGroupRenameTitle": "Groep hernoemen",
+  "assistantMoveTitle": "{count, plural, =1{{count} item verplaatsen} other{{count} items verplaatsen}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Item herstellen",
+  "assistantRestoreNote": "Het item en de herinneringen komen terug.",
+  "assistantStepCategories": "Je categorieën controleren…",
+  "assistantStepCosts": "Verlengingskosten optellen…",
+  "assistantStepVisa": "Visumregels controleren…"
 }

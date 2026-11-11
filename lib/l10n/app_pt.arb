@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Categorias fixadas"
+  "homePinnedTitle": "Categorias fixadas",
+  "notifAskTitle": "Receba os lembretes a tempo",
+  "notifAskBody": "O Vaultara só consegue avisar você antes de algo vencer se as notificações estiverem permitidas. Só enviamos lembretes e alertas importantes da conta.",
+  "notifAskAllow": "Permitir notificações",
+  "notifAskLater": "Agora não",
+  "signInTooManyTries": "Muitas tentativas. Aguarde um momento antes de tentar de novo ou redefina sua senha.",
+  "signInWaitSeconds": "{seconds, plural, one{Tente de novo em {seconds} segundo} other{Tente de novo em {seconds} segundos}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Códigos de backup",
+  "backupCodesIntro": "Se você perder o celular ou o app autenticador, um código de backup permite entrar. Cada código funciona uma vez.",
+  "backupCodesShownOnce": "Estes códigos só aparecem uma vez. Guarde-os em um lugar seguro, longe deste celular.",
+  "backupCodesCopy": "Copiar",
+  "backupCodesSave": "Salvar ou compartilhar",
+  "backupCodesSaved": "Já salvei meus códigos",
+  "backupCodesLeft": "{count, plural, =0{Nenhum código de backup restante} one{{count} código de backup restante} other{{count} códigos de backup restantes}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Criar códigos de backup",
+  "backupCodesMakeNew": "Criar novos códigos",
+  "backupCodesReplaceTitle": "Criar novos códigos de backup?",
+  "backupCodesReplaceBody": "Seus códigos antigos param de funcionar na hora.",
+  "backupCodesFileTitle": "Códigos de backup do Vaultara",
+  "backupCodesEachOnce": "Cada código funciona uma vez. Guarde-os em um lugar seguro.",
+  "backupCodesCopied": "Códigos de backup copiados. Eles serão apagados da área de transferência em um minuto.",
+  "backupCodesNone": "Nenhum criado ainda",
+  "backupCodesTileHint": "Entre se perder o celular",
+  "backupCodeUseTitle": "Usar um código de backup",
+  "backupCodeUseBody": "Digite um dos códigos de backup que você salvou. Usar um desativa a verificação em duas etapas para que você possa configurá-la de novo no celular novo.",
+  "backupCodeLabel": "Código de backup",
+  "backupCodeFormat": "Os códigos de backup têm este formato: ABCDE-FGHJK.",
+  "backupCodeWrong": "Esse código não funcionou. Confira e tente de novo.",
+  "backupCodeBack": "Usar meu app autenticador",
+  "twoStepStepOf": "Etapa {step} de {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Vai aparecer como Vaultara ({email}) no seu app.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Os códigos mudam a cada 30 segundos. Digite o que aparece agora.",
+  "twoStepPaste": "Colar",
+  "twoStepBackupNext": "Crie códigos de backup para conseguir entrar mesmo se perder este celular.",
+  "twoStepAppLockTitle": "Bloqueie o app também",
+  "twoStepAppLockBody": "A verificação em duas etapas protege o login. O bloqueio do app pede digital, rosto ou bloqueio de tela sempre que o Vaultara é aberto.",
+  "twoStepAppLockAction": "Ativar bloqueio do app",
+  "twoStepSignOutOthersBody": "Conectado em algum lugar que você não reconhece? Saia dos outros dispositivos.",
+  "twoStepReviewDevices": "Revisar dispositivos",
+  "twoStepSkipForNow": "Pular por enquanto",
+  "twoStepOffTitle": "A verificação em duas etapas está desativada",
+  "twoStepOffBody": "Você entrou com um código de backup, então a verificação em duas etapas foi desativada. Configure-a de novo neste celular para manter sua conta protegida.",
+  "expiryPlusYears": "{years, plural, one{+{years} ano} other{+{years} anos}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Digitar data",
+  "expiryTypeTitle": "Digite a data de vencimento",
+  "expiryTypeHint": "Por exemplo {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Essa data não parece certa. Tente {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Essa data já passou, então o registro será salvo como vencido.",
+  "expiryEndsToday": "Vence hoje.",
+  "saveAndAddAnother": "Salvar e adicionar outro",
+  "quickStartTitle": "Início rápido",
+  "categoryCreatedAddGroup": "{name} criada. Adicionar um grupo?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} criado. Adicionar um registro?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certificados",
+  "groupIdeaLicences": "Licenças",
+  "groupIdeaContracts": "Contratos",
+  "groupIdeaPermits": "Autorizações",
+  "groupIdeaInsurance": "Seguros",
+  "assistantCategoryAddTitle": "Nova categoria",
+  "assistantCategoryAddNote": "Um ícone é escolhido pelo nome. Você pode mudar depois.",
+  "assistantCategoryRenameTitle": "Renomear categoria",
+  "assistantGroupAddTitle": "Novo grupo",
+  "assistantGroupRenameTitle": "Renomear grupo",
+  "assistantMoveTitle": "{count, plural, one{Mover {count} registro} other{Mover {count} registros}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Restaurar registro",
+  "assistantRestoreNote": "O registro e seus lembretes voltam.",
+  "assistantStepCategories": "Verificando suas categorias…",
+  "assistantStepCosts": "Somando custos de renovação…",
+  "assistantStepVisa": "Verificando regras de visto…"
 }

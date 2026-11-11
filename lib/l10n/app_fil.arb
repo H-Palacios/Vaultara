@@ -3093,5 +3093,146 @@
       }
     }
   },
-  "homePinnedTitle": "Mga naka-pin na kategorya"
+  "homePinnedTitle": "Mga naka-pin na kategorya",
+  "notifAskTitle": "Matanggap ang iyong mga paalala sa tamang oras",
+  "notifAskBody": "Mapapaalalahanan ka lang ng Vaultara bago mag-expire ang isang bagay kung pinapayagan ang mga notification. Mga paalala at mahahalagang alerto sa account lang ang ipinapadala namin.",
+  "notifAskAllow": "Payagan ang mga notification",
+  "notifAskLater": "Hindi ngayon",
+  "signInTooManyTries": "Masyadong maraming pagsubok. Maghintay sandali bago subukan ulit, o i-reset ang iyong password.",
+  "signInWaitSeconds": "{seconds, plural, one{Subukan ulit sa loob ng {seconds} segundo} other{Subukan ulit sa loob ng {seconds} segundo}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Mga backup code",
+  "backupCodesIntro": "Kung mawala ang iyong telepono o authenticator app, makakapag-sign in ka gamit ang backup code. Isang beses lang gumagana ang bawat code.",
+  "backupCodesShownOnce": "Isang beses lang ipapakita ang mga code na ito. I-save ang mga ito sa ligtas na lugar, malayo sa teleponong ito.",
+  "backupCodesCopy": "Kopyahin",
+  "backupCodesSave": "I-save o ibahagi",
+  "backupCodesSaved": "Na-save ko na ang mga code",
+  "backupCodesLeft": "{count, plural, =0{Wala nang natitirang backup code} one{{count} backup code ang natitira} other{{count} backup code ang natitira}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Gumawa ng mga backup code",
+  "backupCodesMakeNew": "Gumawa ng mga bagong code",
+  "backupCodesReplaceTitle": "Gumawa ng mga bagong backup code?",
+  "backupCodesReplaceBody": "Agad na hindi na gagana ang mga luma mong code.",
+  "backupCodesFileTitle": "Mga backup code ng Vaultara",
+  "backupCodesEachOnce": "Isang beses lang gumagana ang bawat code. Itago ang mga ito sa ligtas na lugar.",
+  "backupCodesCopied": "Nakopya ang mga backup code. Buburahin ang mga ito sa clipboard sa loob ng isang minuto.",
+  "backupCodesNone": "Wala pang nagagawa",
+  "backupCodesTileHint": "Mag-sign in kung mawala ang iyong telepono",
+  "backupCodeUseTitle": "Gumamit ng backup code",
+  "backupCodeUseBody": "Ilagay ang isa sa mga backup code na na-save mo. Kapag gumamit ka nito, mao-off ang two-step verification para ma-set up mo ulit ito sa bago mong telepono.",
+  "backupCodeLabel": "Backup code",
+  "backupCodeFormat": "Ganito ang hitsura ng mga backup code: ABCDE-FGHJK.",
+  "backupCodeWrong": "Hindi gumana ang code na iyon. Suriin ito at subukan ulit.",
+  "backupCodeBack": "Gamitin ang aking authenticator app",
+  "twoStepStepOf": "Hakbang {step} sa {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Lalabas ito bilang Vaultara ({email}) sa iyong app.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Nagbabago ang mga code bawat 30 segundo. Ilagay ang nakikita ngayon.",
+  "twoStepPaste": "I-paste",
+  "twoStepBackupNext": "Gumawa ng mga backup code para makapag-sign in ka pa rin kung mawala mo ang teleponong ito.",
+  "twoStepAppLockTitle": "I-lock din ang app",
+  "twoStepAppLockBody": "Pinoprotektahan ng two-step ang pag-sign in. Hinihingi ng app lock ang iyong fingerprint, mukha o screen lock tuwing binubuksan ang Vaultara.",
+  "twoStepAppLockAction": "I-on ang app lock",
+  "twoStepSignOutOthersBody": "Naka-sign in sa lugar na hindi mo kilala? Mag-sign out sa ibang mga device.",
+  "twoStepReviewDevices": "Suriin ang mga device",
+  "twoStepSkipForNow": "Laktawan muna",
+  "twoStepOffTitle": "Naka-off ang two-step verification",
+  "twoStepOffBody": "Nag-sign in ka gamit ang backup code, kaya na-off ang two-step verification. I-set up ito ulit sa teleponong ito para manatiling protektado ang account mo.",
+  "expiryPlusYears": "{years, plural, one{+{years} taon} other{+{years} taon}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "I-type ang petsa",
+  "expiryTypeTitle": "I-type ang petsa ng pag-expire",
+  "expiryTypeHint": "Halimbawa {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Mukhang hindi tama ang petsang iyon. Subukan ang {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Lumipas na ang petsang ito, kaya ise-save ang record bilang expired.",
+  "expiryEndsToday": "Mag-e-expire ito ngayon.",
+  "saveAndAddAnother": "I-save at magdagdag ng isa pa",
+  "quickStartTitle": "Mabilis na simula",
+  "categoryCreatedAddGroup": "Nagawa ang {name}. Magdagdag ng grupo dito?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Nagawa ang {name}. Magdagdag ng record dito?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Mga sertipiko",
+  "groupIdeaLicences": "Mga lisensya",
+  "groupIdeaContracts": "Mga kontrata",
+  "groupIdeaPermits": "Mga permit",
+  "groupIdeaInsurance": "Insurance",
+  "assistantCategoryAddTitle": "Bagong kategorya",
+  "assistantCategoryAddNote": "Pipili ng icon batay sa pangalan. Mapapalitan mo ito mamaya.",
+  "assistantCategoryRenameTitle": "Palitan ang pangalan ng kategorya",
+  "assistantGroupAddTitle": "Bagong grupo",
+  "assistantGroupRenameTitle": "Palitan ang pangalan ng grupo",
+  "assistantMoveTitle": "{count, plural, one{Ilipat ang {count} record} other{Ilipat ang {count} record}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "I-restore ang record",
+  "assistantRestoreNote": "Babalik ang record at ang mga paalala nito.",
+  "assistantStepCategories": "Sinusuri ang iyong mga kategorya…",
+  "assistantStepCosts": "Kinukuwenta ang gastos sa pag-renew…",
+  "assistantStepVisa": "Sinusuri ang mga patakaran sa visa…"
 }

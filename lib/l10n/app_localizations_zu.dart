@@ -8417,4 +8417,253 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Izigaba eziphiniwe';
+
+  @override
+  String get notifAskTitle => 'Thola izikhumbuzi zakho ngesikhathi';
+
+  @override
+  String get notifAskBody => 'I-Vaultara ingakukhumbuza ngaphambi kokuba okuthile kuphelelwe yisikhathi kuphela uma izaziso zivunyelwe. Sithumela izikhumbuzi nezexwayiso ezibalulekile ze-akhawunti kuphela.';
+
+  @override
+  String get notifAskAllow => 'Vumela izaziso';
+
+  @override
+  String get notifAskLater => 'Hhayi manje';
+
+  @override
+  String get signInTooManyTries => 'Imizamo eminingi kakhulu. Linda kancane ngaphambi kokuzama futhi, noma usethe kabusha iphasiwedi yakho.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Zama futhi emuva kwamasekhondi angu-$seconds',
+      one: 'Zama futhi emuva kwamasekhondi angu-$seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Amakhodi okulondoloza';
+
+  @override
+  String get backupCodesIntro => 'Uma ulahlekelwa ifoni noma uhlelo lokuqinisekisa, ikhodi yokulondoloza ikuvumela ukuthi ungene. Ikhodi ngayinye isebenza kanye.';
+
+  @override
+  String get backupCodesShownOnce => 'Lawa makhodi aboniswa kanye kuphela. Wagcine endaweni ephephile, kude nale foni.';
+
+  @override
+  String get backupCodesCopy => 'Kopisha';
+
+  @override
+  String get backupCodesSave => 'Londoloza noma wabelane';
+
+  @override
+  String get backupCodesSaved => 'Ngiwalondolozile amakhodi ami';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusele amakhodi okulondoloza angu-$count',
+      one: 'Kusele ikhodi yokulondoloza engu-$count',
+      zero: 'Ayikho ikhodi yokulondoloza esele',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Yenza amakhodi okulondoloza';
+
+  @override
+  String get backupCodesMakeNew => 'Yenza amakhodi amasha';
+
+  @override
+  String get backupCodesReplaceTitle => 'Wenze amakhodi okulondoloza amasha?';
+
+  @override
+  String get backupCodesReplaceBody => 'Amakhodi akho amadala azoyeka ukusebenza ngokushesha.';
+
+  @override
+  String get backupCodesFileTitle => 'Amakhodi okulondoloza e-Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Ikhodi ngayinye isebenza kanye. Wagcine endaweni ephephile.';
+
+  @override
+  String get backupCodesCopied => 'Amakhodi okulondoloza akopishiwe. Azosulwa ebhodini lokunamathisela emva komzuzu.';
+
+  @override
+  String get backupCodesNone => 'Akukenziwa noyedwa okwamanje';
+
+  @override
+  String get backupCodesTileHint => 'Ngena uma ulahlekelwe ifoni';
+
+  @override
+  String get backupCodeUseTitle => 'Sebenzisa ikhodi yokulondoloza';
+
+  @override
+  String get backupCodeUseBody => 'Faka eyodwa yamakhodi okulondoloza owagcinile. Ukuyisebenzisa kuvala ukuqinisekisa ngezinyathelo ezimbili, ukuze ukusethe futhi efonini yakho entsha.';
+
+  @override
+  String get backupCodeLabel => 'Ikhodi yokulondoloza';
+
+  @override
+  String get backupCodeFormat => 'Amakhodi okulondoloza abukeka kanje: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Leyo khodi ayisebenzanga. Yihlole bese uzama futhi.';
+
+  @override
+  String get backupCodeBack => 'Sebenzisa uhlelo lwami lokuqinisekisa';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Isinyathelo $step kwezingu-$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Kuzovela njenge-Vaultara ($email) kuhlelo lwakho.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Amakhodi ashintsha njalo emasekhondini angu-30. Faka ebonakalayo manje.';
+
+  @override
+  String get twoStepPaste => 'Namathisela';
+
+  @override
+  String get twoStepBackupNext => 'Yenza amakhodi okulondoloza ukuze ukwazi ukungena noma ulahlekelwe yile foni.';
+
+  @override
+  String get twoStepAppLockTitle => 'Khiya nohlelo';
+
+  @override
+  String get twoStepAppLockBody => 'Izinyathelo ezimbili zivikela ukungena. Ukhiye wohlelo ucela isigxivizo somunwe, ubuso noma ukhiye wesikrini njalo uma i-Vaultara ivulwa.';
+
+  @override
+  String get twoStepAppLockAction => 'Vula ukhiye wohlelo';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ungene endaweni ongayazi? Phuma kwamanye amadivayisi.';
+
+  @override
+  String get twoStepReviewDevices => 'Buyekeza amadivayisi';
+
+  @override
+  String get twoStepSkipForNow => 'Yeqa okwamanje';
+
+  @override
+  String get twoStepOffTitle => 'Ukuqinisekisa ngezinyathelo ezimbili kuvaliwe';
+
+  @override
+  String get twoStepOffBody => 'Ungene ngekhodi yokulondoloza, ngakho ukuqinisekisa ngezinyathelo ezimbili kwavalwa. Kusethe futhi kule foni ukuze i-akhawunti yakho ihlale ivikelekile.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+iminyaka engu-$years',
+      one: '+unyaka ongu-$years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Thayipha usuku';
+
+  @override
+  String get expiryTypeTitle => 'Thayipha usuku lokuphelelwa';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Isibonelo $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Lolo suku alubukeki luqondile. Zama u-$example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Lolu suku seludlulile, ngakho irekhodi lizolondolozwa njengeliphelelwe yisikhathi.';
+
+  @override
+  String get expiryEndsToday => 'Lokhu kuphelelwa namuhla.';
+
+  @override
+  String get saveAndAddAnother => 'Londoloza bese wengeza enye';
+
+  @override
+  String get quickStartTitle => 'Ukuqala ngokushesha';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return 'I-$name yenziwe. Ingezwe iqembu?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return 'I-$name yenziwe. Ingezwe irekhodi?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Izitifiketi';
+
+  @override
+  String get groupIdeaLicences => 'Amalayisense';
+
+  @override
+  String get groupIdeaContracts => 'Izinkontileka';
+
+  @override
+  String get groupIdeaPermits => 'Izimvume';
+
+  @override
+  String get groupIdeaInsurance => 'Umshwalense';
+
+  @override
+  String get assistantCategoryAddTitle => 'Isigaba esisha';
+
+  @override
+  String get assistantCategoryAddNote => 'Isithonjana sikhethwa ngokwegama. Ungasishintsha kamuva.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Qamba kabusha isigaba';
+
+  @override
+  String get assistantGroupAddTitle => 'Iqembu elisha';
+
+  @override
+  String get assistantGroupRenameTitle => 'Qamba kabusha iqembu';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hambisa amarekhodi angu-$count',
+      one: 'Hambisa irekhodi elingu-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Buyisa irekhodi';
+
+  @override
+  String get assistantRestoreNote => 'Irekhodi nezikhumbuzi zalo kuyabuya.';
+
+  @override
+  String get assistantStepCategories => 'Kuhlolwa izigaba zakho…';
+
+  @override
+  String get assistantStepCosts => 'Kuhlanganiswa izindleko zokuvuselela…';
+
+  @override
+  String get assistantStepVisa => 'Kuhlolwa imithetho ye-visa…';
 }

@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "Бэхэлсэн ангиллууд"
+  "homePinnedTitle": "Бэхэлсэн ангиллууд",
+  "notifAskTitle": "Сануулгаа цагт нь аваарай",
+  "notifAskBody": "Мэдэгдэл зөвшөөрөгдсөн үед л Vaultara ямар нэг зүйлийн хугацаа дуусахаас өмнө танд сануулж чадна. Бид зөвхөн сануулга болон бүртгэлийн чухал анхааруулга илгээдэг.",
+  "notifAskAllow": "Мэдэгдэл зөвшөөрөх",
+  "notifAskLater": "Одоо биш",
+  "signInTooManyTries": "Хэт олон оролдлого. Дахин оролдохоосоо өмнө түр хүлээнэ үү, эсвэл нууц үгээ шинэчилнэ үү.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} секундын дараа дахин оролдоно уу} other{{seconds} секундын дараа дахин оролдоно уу}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Нөөц кодууд",
+  "backupCodesIntro": "Утас эсвэл баталгаажуулах аппаа алдвал нөөц кодоор нэвтэрч болно. Код бүр нэг удаа ажиллана.",
+  "backupCodesShownOnce": "Эдгээр код зөвхөн нэг удаа харагдана. Энэ утаснаас хол, аюулгүй газар хадгална уу.",
+  "backupCodesCopy": "Хуулах",
+  "backupCodesSave": "Хадгалах эсвэл хуваалцах",
+  "backupCodesSaved": "Кодоо хадгалсан",
+  "backupCodesLeft": "{count, plural, =0{Нөөц код үлдээгүй} =1{{count} нөөц код үлдсэн} other{{count} нөөц код үлдсэн}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Нөөц код үүсгэх",
+  "backupCodesMakeNew": "Шинэ код үүсгэх",
+  "backupCodesReplaceTitle": "Шинэ нөөц код үүсгэх үү?",
+  "backupCodesReplaceBody": "Хуучин кодууд тань шууд ажиллахаа болино.",
+  "backupCodesFileTitle": "Vaultara нөөц кодууд",
+  "backupCodesEachOnce": "Код бүр нэг удаа ажиллана. Аюулгүй газар хадгална уу.",
+  "backupCodesCopied": "Нөөц кодуудыг хуулсан. Нэг минутын дараа санах ойгоос устгагдана.",
+  "backupCodesNone": "Одоогоор үүсгээгүй",
+  "backupCodesTileHint": "Утсаа алдвал нэвтрэх",
+  "backupCodeUseTitle": "Нөөц код ашиглах",
+  "backupCodeUseBody": "Хадгалсан нөөц кодуудынхаа нэгийг оруулна уу. Үүнийг ашиглавал хоёр алхамт баталгаажуулалт унтарч, шинэ утсан дээрээ дахин тохируулах боломжтой болно.",
+  "backupCodeLabel": "Нөөц код",
+  "backupCodeFormat": "Нөөц кодууд ABCDE-FGHJK хэлбэртэй байдаг.",
+  "backupCodeWrong": "Тэр код ажилласангүй. Шалгаад дахин оролдоно уу.",
+  "backupCodeBack": "Баталгаажуулах аппаа ашиглах",
+  "twoStepStepOf": "Алхам {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Таны апп дээр Vaultara ({email}) гэж харагдана.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Кодууд 30 секунд тутам солигддог. Одоо харагдаж буйг оруулна уу.",
+  "twoStepPaste": "Буулгах",
+  "twoStepBackupNext": "Энэ утсаа алдсан ч нэвтэрч чадахын тулд нөөц код үүсгэнэ үү.",
+  "twoStepAppLockTitle": "Аппыг бас түгжих",
+  "twoStepAppLockBody": "Хоёр алхам нэвтрэлтийг хамгаална. Аппын түгжээ Vaultara-г нээх бүрт хурууны хээ, царай эсвэл дэлгэцийн түгжээ асууна.",
+  "twoStepAppLockAction": "Аппын түгжээг асаах",
+  "twoStepSignOutOthersBody": "Танихгүй газар нэвтэрсэн үү? Бусад төхөөрөмжөөс гарна уу.",
+  "twoStepReviewDevices": "Төхөөрөмжүүдийг шалгах",
+  "twoStepSkipForNow": "Одоохондоо алгасах",
+  "twoStepOffTitle": "Хоёр алхамт баталгаажуулалт унтарсан",
+  "twoStepOffBody": "Та нөөц кодоор нэвтэрсэн тул хоёр алхамт баталгаажуулалтыг унтраасан. Бүртгэлээ хамгаалахын тулд энэ утсан дээр дахин тохируулна уу.",
+  "expiryPlusYears": "{years, plural, =1{+{years} жил} other{+{years} жил}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Огноо бичих",
+  "expiryTypeTitle": "Дуусах огноог бичнэ үү",
+  "expiryTypeHint": "Жишээ нь {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Тэр огноо зөв биш бололтой. {example} гэж оролдоно уу.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Энэ огноо өнгөрсөн тул бичлэг хугацаа нь дууссан гэж хадгалагдана.",
+  "expiryEndsToday": "Үүний хугацаа өнөөдөр дуусна.",
+  "saveAndAddAnother": "Хадгалаад өөр нэгийг нэмэх",
+  "quickStartTitle": "Хурдан эхлэл",
+  "categoryCreatedAddGroup": "{name} үүслээ. Бүлэг нэмэх үү?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} үүслээ. Бичлэг нэмэх үү?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Гэрчилгээ",
+  "groupIdeaLicences": "Лиценз",
+  "groupIdeaContracts": "Гэрээ",
+  "groupIdeaPermits": "Зөвшөөрөл",
+  "groupIdeaInsurance": "Даатгал",
+  "assistantCategoryAddTitle": "Шинэ ангилал",
+  "assistantCategoryAddNote": "Нэрээс нь дүрс сонгогдоно. Дараа нь өөрчилж болно.",
+  "assistantCategoryRenameTitle": "Ангиллын нэрийг өөрчлөх",
+  "assistantGroupAddTitle": "Шинэ бүлэг",
+  "assistantGroupRenameTitle": "Бүлгийн нэрийг өөрчлөх",
+  "assistantMoveTitle": "{count, plural, =1{{count} бичлэг зөөх} other{{count} бичлэг зөөх}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Бичлэгийг сэргээх",
+  "assistantRestoreNote": "Бичлэг болон түүний сануулгууд буцаж ирнэ.",
+  "assistantStepCategories": "Таны ангиллуудыг шалгаж байна…",
+  "assistantStepCosts": "Шинэчлэлтийн зардлыг тооцож байна…",
+  "assistantStepVisa": "Визний дүрмийг шалгаж байна…"
 }

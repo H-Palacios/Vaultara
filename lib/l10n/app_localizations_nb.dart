@@ -8421,4 +8421,253 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Festede kategorier';
+
+  @override
+  String get notifAskTitle => 'Få påminnelsene i tide';
+
+  @override
+  String get notifAskBody => 'Vaultara kan bare minne deg på noe før det utløper hvis varsler er tillatt. Vi sender bare påminnelser og viktige kontovarsler.';
+
+  @override
+  String get notifAskAllow => 'Tillat varsler';
+
+  @override
+  String get notifAskLater => 'Ikke nå';
+
+  @override
+  String get signInTooManyTries => 'For mange forsøk. Vent litt før du prøver igjen, eller tilbakestill passordet.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Prøv igjen om $seconds sekunder',
+      one: 'Prøv igjen om $seconds sekund',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Reservekoder';
+
+  @override
+  String get backupCodesIntro => 'Hvis du mister telefonen eller autentiseringsappen, kan du logge på med en reservekode. Hver kode virker én gang.';
+
+  @override
+  String get backupCodesShownOnce => 'Disse kodene vises bare én gang. Lagre dem et trygt sted, borte fra denne telefonen.';
+
+  @override
+  String get backupCodesCopy => 'Kopier';
+
+  @override
+  String get backupCodesSave => 'Lagre eller del';
+
+  @override
+  String get backupCodesSaved => 'Jeg har lagret kodene';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reservekoder igjen',
+      one: '$count reservekode igjen',
+      zero: 'Ingen reservekoder igjen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Lag reservekoder';
+
+  @override
+  String get backupCodesMakeNew => 'Lag nye koder';
+
+  @override
+  String get backupCodesReplaceTitle => 'Vil du lage nye reservekoder?';
+
+  @override
+  String get backupCodesReplaceBody => 'De gamle kodene slutter å virke med en gang.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara-reservekoder';
+
+  @override
+  String get backupCodesEachOnce => 'Hver kode virker én gang. Oppbevar dem et trygt sted.';
+
+  @override
+  String get backupCodesCopied => 'Reservekoder kopiert. De fjernes fra utklippstavlen om ett minutt.';
+
+  @override
+  String get backupCodesNone => 'Ingen laget ennå';
+
+  @override
+  String get backupCodesTileHint => 'Logg på hvis du mister telefonen';
+
+  @override
+  String get backupCodeUseTitle => 'Bruk en reservekode';
+
+  @override
+  String get backupCodeUseBody => 'Skriv inn en av reservekodene du har lagret. Når du bruker en, slås totrinnsbekreftelse av, slik at du kan konfigurere den på nytt på den nye telefonen.';
+
+  @override
+  String get backupCodeLabel => 'Reservekode';
+
+  @override
+  String get backupCodeFormat => 'Reservekoder ser slik ut: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Den koden virket ikke. Sjekk den og prøv igjen.';
+
+  @override
+  String get backupCodeBack => 'Bruk autentiseringsappen min';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Trinn $step av $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Den vises som Vaultara ($email) i appen.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodene skifter hvert 30. sekund. Skriv inn den som vises nå.';
+
+  @override
+  String get twoStepPaste => 'Lim inn';
+
+  @override
+  String get twoStepBackupNext => 'Lag reservekoder så du fortsatt kan logge på hvis du mister denne telefonen.';
+
+  @override
+  String get twoStepAppLockTitle => 'Lås appen også';
+
+  @override
+  String get twoStepAppLockBody => 'Totrinnsbekreftelse beskytter påloggingen. Applås ber om fingeravtrykk, ansikt eller skjermlås hver gang Vaultara åpnes.';
+
+  @override
+  String get twoStepAppLockAction => 'Slå på applås';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Pålogget et sted du ikke kjenner igjen? Logg av andre enheter.';
+
+  @override
+  String get twoStepReviewDevices => 'Gå gjennom enheter';
+
+  @override
+  String get twoStepSkipForNow => 'Hopp over nå';
+
+  @override
+  String get twoStepOffTitle => 'Totrinnsbekreftelse er av';
+
+  @override
+  String get twoStepOffBody => 'Du logget på med en reservekode, så totrinnsbekreftelse ble slått av. Konfigurer den på nytt på denne telefonen for å holde kontoen beskyttet.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years år',
+      one: '+$years år',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Skriv dato';
+
+  @override
+  String get expiryTypeTitle => 'Skriv utløpsdatoen';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'For eksempel $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Den datoen ser ikke riktig ut. Prøv $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Denne datoen har passert, så oppføringen lagres som utløpt.';
+
+  @override
+  String get expiryEndsToday => 'Denne utløper i dag.';
+
+  @override
+  String get saveAndAddAnother => 'Lagre og legg til en til';
+
+  @override
+  String get quickStartTitle => 'Hurtigstart';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name er opprettet. Legge til en gruppe?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name er opprettet. Legge til en oppføring?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikater';
+
+  @override
+  String get groupIdeaLicences => 'Lisenser';
+
+  @override
+  String get groupIdeaContracts => 'Kontrakter';
+
+  @override
+  String get groupIdeaPermits => 'Tillatelser';
+
+  @override
+  String get groupIdeaInsurance => 'Forsikring';
+
+  @override
+  String get assistantCategoryAddTitle => 'Ny kategori';
+
+  @override
+  String get assistantCategoryAddNote => 'Et ikon velges ut fra navnet. Du kan endre det senere.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Gi kategorien nytt navn';
+
+  @override
+  String get assistantGroupAddTitle => 'Ny gruppe';
+
+  @override
+  String get assistantGroupRenameTitle => 'Gi gruppen nytt navn';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Flytt $count oppføringer',
+      one: 'Flytt $count oppføring',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Gjenopprett oppføring';
+
+  @override
+  String get assistantRestoreNote => 'Oppføringen og påminnelsene kommer tilbake.';
+
+  @override
+  String get assistantStepCategories => 'Sjekker kategoriene dine…';
+
+  @override
+  String get assistantStepCosts => 'Legger sammen fornyelseskostnader…';
+
+  @override
+  String get assistantStepVisa => 'Sjekker visumregler…';
 }

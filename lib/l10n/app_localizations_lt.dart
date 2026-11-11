@@ -8563,4 +8563,261 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Prisegtos kategorijos';
+
+  @override
+  String get notifAskTitle => 'Gaukite priminimus laiku';
+
+  @override
+  String get notifAskBody => 'Vaultara gali jums priminti prieš kam nors pasibaigiant tik tada, kai pranešimai leidžiami. Siunčiame tik priminimus ir svarbius paskyros įspėjimus.';
+
+  @override
+  String get notifAskAllow => 'Leisti pranešimus';
+
+  @override
+  String get notifAskLater => 'Ne dabar';
+
+  @override
+  String get signInTooManyTries => 'Per daug bandymų. Palaukite truputį prieš bandydami dar kartą arba atkurkite slaptažodį.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Bandykite dar kartą po $seconds sekundžių',
+      many: 'Bandykite dar kartą po $seconds sekundės',
+      few: 'Bandykite dar kartą po $seconds sekundžių',
+      one: 'Bandykite dar kartą po $seconds sekundės',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Atsarginiai kodai';
+
+  @override
+  String get backupCodesIntro => 'Jei pamesite telefoną ar autentifikavimo programą, atsarginis kodas leis prisijungti. Kiekvienas kodas veikia vieną kartą.';
+
+  @override
+  String get backupCodesShownOnce => 'Šie kodai rodomi tik vieną kartą. Išsaugokite juos saugioje vietoje, ne šiame telefone.';
+
+  @override
+  String get backupCodesCopy => 'Kopijuoti';
+
+  @override
+  String get backupCodesSave => 'Išsaugoti arba bendrinti';
+
+  @override
+  String get backupCodesSaved => 'Išsaugojau kodus';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Liko $count atsarginių kodų',
+      many: 'Liko $count atsarginio kodo',
+      few: 'Liko $count atsarginiai kodai',
+      one: 'Liko $count atsarginis kodas',
+      zero: 'Neliko atsarginių kodų',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Sukurti atsarginius kodus';
+
+  @override
+  String get backupCodesMakeNew => 'Sukurti naujus kodus';
+
+  @override
+  String get backupCodesReplaceTitle => 'Sukurti naujus atsarginius kodus?';
+
+  @override
+  String get backupCodesReplaceBody => 'Seni kodai iškart nustos veikti.';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara atsarginiai kodai';
+
+  @override
+  String get backupCodesEachOnce => 'Kiekvienas kodas veikia vieną kartą. Laikykite juos saugioje vietoje.';
+
+  @override
+  String get backupCodesCopied => 'Atsarginiai kodai nukopijuoti. Po minutės jie bus išvalyti iš iškarpinės.';
+
+  @override
+  String get backupCodesNone => 'Dar nesukurta';
+
+  @override
+  String get backupCodesTileHint => 'Prisijungimas pametus telefoną';
+
+  @override
+  String get backupCodeUseTitle => 'Naudoti atsarginį kodą';
+
+  @override
+  String get backupCodeUseBody => 'Įveskite vieną iš išsaugotų atsarginių kodų. Jį panaudojus išjungiamas patvirtinimas dviem veiksmais, kad galėtumėte jį iš naujo nustatyti naujame telefone.';
+
+  @override
+  String get backupCodeLabel => 'Atsarginis kodas';
+
+  @override
+  String get backupCodeFormat => 'Atsarginiai kodai atrodo taip: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Tas kodas netiko. Patikrinkite ir bandykite dar kartą.';
+
+  @override
+  String get backupCodeBack => 'Naudoti autentifikavimo programą';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return '$step veiksmas iš $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Jūsų programoje bus rodoma kaip Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kodai keičiasi kas 30 sekundžių. Įveskite dabar rodomą.';
+
+  @override
+  String get twoStepPaste => 'Įklijuoti';
+
+  @override
+  String get twoStepBackupNext => 'Sukurkite atsarginius kodus, kad galėtumėte prisijungti net pametę šį telefoną.';
+
+  @override
+  String get twoStepAppLockTitle => 'Užrakinkite ir programą';
+
+  @override
+  String get twoStepAppLockBody => 'Du veiksmai saugo prisijungimą. Programos užraktas kiekvieną kartą atidarant Vaultara prašo piršto atspaudo, veido arba ekrano užrakto.';
+
+  @override
+  String get twoStepAppLockAction => 'Įjungti programos užraktą';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Prisijungta kažkur, ko neatpažįstate? Atsijunkite nuo kitų įrenginių.';
+
+  @override
+  String get twoStepReviewDevices => 'Peržiūrėti įrenginius';
+
+  @override
+  String get twoStepSkipForNow => 'Kol kas praleisti';
+
+  @override
+  String get twoStepOffTitle => 'Patvirtinimas dviem veiksmais išjungtas';
+
+  @override
+  String get twoStepOffBody => 'Prisijungėte atsarginiu kodu, todėl patvirtinimas dviem veiksmais buvo išjungtas. Nustatykite jį iš naujo šiame telefone, kad paskyra liktų apsaugota.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years metų',
+      many: '+$years metų',
+      few: '+$years metai',
+      one: '+$years metai',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Įvesti datą';
+
+  @override
+  String get expiryTypeTitle => 'Įveskite galiojimo pabaigos datą';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Pavyzdžiui $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ši data neatrodo teisinga. Pabandykite $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ši data jau praėjo, todėl įrašas bus išsaugotas kaip pasibaigęs.';
+
+  @override
+  String get expiryEndsToday => 'Galioja iki šiandien.';
+
+  @override
+  String get saveAndAddAnother => 'Išsaugoti ir pridėti kitą';
+
+  @override
+  String get quickStartTitle => 'Greita pradžia';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name sukurta. Pridėti grupę?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name sukurta. Pridėti įrašą?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Sertifikatai';
+
+  @override
+  String get groupIdeaLicences => 'Licencijos';
+
+  @override
+  String get groupIdeaContracts => 'Sutartys';
+
+  @override
+  String get groupIdeaPermits => 'Leidimai';
+
+  @override
+  String get groupIdeaInsurance => 'Draudimas';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nauja kategorija';
+
+  @override
+  String get assistantCategoryAddNote => 'Piktograma parenkama pagal pavadinimą. Vėliau galėsite ją pakeisti.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Pervadinti kategoriją';
+
+  @override
+  String get assistantGroupAddTitle => 'Nauja grupė';
+
+  @override
+  String get assistantGroupRenameTitle => 'Pervadinti grupę';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Perkelti $count įrašų',
+      many: 'Perkelti $count įrašo',
+      few: 'Perkelti $count įrašus',
+      one: 'Perkelti $count įrašą',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Atkurti įrašą';
+
+  @override
+  String get assistantRestoreNote => 'Įrašas ir jo priminimai grįžta.';
+
+  @override
+  String get assistantStepCategories => 'Tikrinamos jūsų kategorijos…';
+
+  @override
+  String get assistantStepCosts => 'Skaičiuojamos atnaujinimo išlaidos…';
+
+  @override
+  String get assistantStepVisa => 'Tikrinamos vizų taisyklės…';
 }

@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "Mahkamlangan toifalar"
+  "homePinnedTitle": "Mahkamlangan toifalar",
+  "notifAskTitle": "Eslatmalarni o‘z vaqtida oling",
+  "notifAskBody": "Bildirishnomalarga ruxsat berilgandagina Vaultara biror narsaning muddati tugashidan oldin eslata oladi. Biz faqat eslatmalar va muhim hisob ogohlantirishlarini yuboramiz.",
+  "notifAskAllow": "Bildirishnomalarga ruxsat berish",
+  "notifAskLater": "Hozir emas",
+  "signInTooManyTries": "Juda ko‘p urinish. Qayta urinishdan oldin biroz kuting yoki parolni tiklang.",
+  "signInWaitSeconds": "{seconds, plural, one{{seconds} soniyadan keyin qayta urining} other{{seconds} soniyadan keyin qayta urining}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Zaxira kodlar",
+  "backupCodesIntro": "Telefoningiz yoki autentifikator ilovangizni yo‘qotsangiz, zaxira kod bilan kira olasiz. Har bir kod bir marta ishlaydi.",
+  "backupCodesShownOnce": "Bu kodlar faqat bir marta ko‘rsatiladi. Ularni bu telefondan uzoqda, xavfsiz joyda saqlang.",
+  "backupCodesCopy": "Nusxalash",
+  "backupCodesSave": "Saqlash yoki ulashish",
+  "backupCodesSaved": "Kodlarimni saqladim",
+  "backupCodesLeft": "{count, plural, =0{Zaxira kod qolmadi} one{{count} ta zaxira kod qoldi} other{{count} ta zaxira kod qoldi}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Zaxira kodlar yaratish",
+  "backupCodesMakeNew": "Yangi kodlar yaratish",
+  "backupCodesReplaceTitle": "Yangi zaxira kodlar yaratilsinmi?",
+  "backupCodesReplaceBody": "Eski kodlaringiz darhol ishlamay qoladi.",
+  "backupCodesFileTitle": "Vaultara zaxira kodlari",
+  "backupCodesEachOnce": "Har bir kod bir marta ishlaydi. Ularni xavfsiz joyda saqlang.",
+  "backupCodesCopied": "Zaxira kodlar nusxalandi. Ular bir daqiqadan so‘ng vaqtinchalik xotiradan o‘chiriladi.",
+  "backupCodesNone": "Hali yaratilmagan",
+  "backupCodesTileHint": "Telefonni yo‘qotsangiz kirish",
+  "backupCodeUseTitle": "Zaxira koddan foydalanish",
+  "backupCodeUseBody": "Saqlagan zaxira kodlaringizdan birini kiriting. Undan foydalanish ikki bosqichli tasdiqlashni o‘chiradi, shunda uni yangi telefonda qayta sozlay olasiz.",
+  "backupCodeLabel": "Zaxira kod",
+  "backupCodeFormat": "Zaxira kodlar ABCDE-FGHJK kabi ko‘rinadi.",
+  "backupCodeWrong": "Bu kod ishlamadi. Tekshirib, qayta urining.",
+  "backupCodeBack": "Autentifikator ilovamdan foydalanish",
+  "twoStepStepOf": "{total} bosqichdan {step}-bosqich",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Ilovangizda Vaultara ({email}) sifatida ko‘rinadi.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodlar har 30 soniyada o‘zgaradi. Hozir ko‘rinayotganini kiriting.",
+  "twoStepPaste": "Joylash",
+  "twoStepBackupNext": "Bu telefonni yo‘qotsangiz ham kira olishingiz uchun zaxira kodlar yarating.",
+  "twoStepAppLockTitle": "Ilovani ham qulflang",
+  "twoStepAppLockBody": "Ikki bosqich kirishni himoya qiladi. Ilova qulfi Vaultara har ochilganda barmoq izi, yuz yoki ekran qulfini so‘raydi.",
+  "twoStepAppLockAction": "Ilova qulfini yoqish",
+  "twoStepSignOutOthersBody": "Tanimagan joyingizda kirilganmi? Boshqa qurilmalardan chiqing.",
+  "twoStepReviewDevices": "Qurilmalarni ko‘rib chiqish",
+  "twoStepSkipForNow": "Hozircha o‘tkazib yuborish",
+  "twoStepOffTitle": "Ikki bosqichli tasdiqlash o‘chirilgan",
+  "twoStepOffBody": "Siz zaxira kod bilan kirdingiz, shuning uchun ikki bosqichli tasdiqlash o‘chirildi. Hisobingiz himoyalangan bo‘lishi uchun uni bu telefonda qayta sozlang.",
+  "expiryPlusYears": "{years, plural, one{+{years} yil} other{+{years} yil}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Sanani yozish",
+  "expiryTypeTitle": "Amal qilish muddati tugash sanasini yozing",
+  "expiryTypeHint": "Masalan {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Bu sana to‘g‘ri emasga o‘xshaydi. {example} sinab ko‘ring.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Bu sana o‘tib ketgan, shuning uchun yozuv muddati o‘tgan sifatida saqlanadi.",
+  "expiryEndsToday": "Buning muddati bugun tugaydi.",
+  "saveAndAddAnother": "Saqlash va yana bittasini qo‘shish",
+  "quickStartTitle": "Tez boshlash",
+  "categoryCreatedAddGroup": "{name} yaratildi. Unga guruh qo‘shilsinmi?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} yaratildi. Unga yozuv qo‘shilsinmi?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikatlar",
+  "groupIdeaLicences": "Litsenziyalar",
+  "groupIdeaContracts": "Shartnomalar",
+  "groupIdeaPermits": "Ruxsatnomalar",
+  "groupIdeaInsurance": "Sug‘urta",
+  "assistantCategoryAddTitle": "Yangi turkum",
+  "assistantCategoryAddNote": "Belgi nomga qarab tanlanadi. Keyinroq o‘zgartirishingiz mumkin.",
+  "assistantCategoryRenameTitle": "Turkum nomini o‘zgartirish",
+  "assistantGroupAddTitle": "Yangi guruh",
+  "assistantGroupRenameTitle": "Guruh nomini o‘zgartirish",
+  "assistantMoveTitle": "{count, plural, one{{count} ta yozuvni ko‘chirish} other{{count} ta yozuvni ko‘chirish}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Yozuvni tiklash",
+  "assistantRestoreNote": "Yozuv va uning eslatmalari qaytadi.",
+  "assistantStepCategories": "Turkumlaringiz tekshirilmoqda…",
+  "assistantStepCosts": "Yangilash xarajatlari hisoblanmoqda…",
+  "assistantStepVisa": "Viza qoidalari tekshirilmoqda…"
 }

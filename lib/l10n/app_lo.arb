@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "ໝວດໝູ່ທີ່ປັກໝຸດ"
+  "homePinnedTitle": "ໝວດໝູ່ທີ່ປັກໝຸດ",
+  "notifAskTitle": "ຮັບການແຈ້ງເຕືອນໃຫ້ທັນເວລາ",
+  "notifAskBody": "Vaultara ສາມາດເຕືອນທ່ານກ່ອນສິ່ງໃດໝົດອາຍຸໄດ້ກໍຕໍ່ເມື່ອອະນຸຍາດການແຈ້ງເຕືອນເທົ່ານັ້ນ. ພວກເຮົາສົ່ງແຕ່ການເຕືອນ ແລະ ການແຈ້ງເຕືອນບັນຊີທີ່ສຳຄັນເທົ່ານັ້ນ.",
+  "notifAskAllow": "ອະນຸຍາດການແຈ້ງເຕືອນ",
+  "notifAskLater": "ບໍ່ແມ່ນຕອນນີ້",
+  "signInTooManyTries": "ພະຍາຍາມຫຼາຍເກີນໄປ. ລໍຖ້າຈັກໜ້ອຍກ່ອນລອງໃໝ່ ຫຼື ຕັ້ງລະຫັດຜ່ານໃໝ່.",
+  "signInWaitSeconds": "{seconds, plural, other{ລອງໃໝ່ໃນອີກ {seconds} ວິນາທີ}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "ລະຫັດສຳຮອງ",
+  "backupCodesIntro": "ຖ້າທ່ານເຮັດໂທລະສັບ ຫຼື ແອັບຢືນຢັນເສຍ, ລະຫັດສຳຮອງຈະໃຫ້ທ່ານເຂົ້າສູ່ລະບົບໄດ້. ແຕ່ລະລະຫັດໃຊ້ໄດ້ຄັ້ງດຽວ.",
+  "backupCodesShownOnce": "ລະຫັດເຫຼົ່ານີ້ສະແດງພຽງຄັ້ງດຽວ. ເກັບໄວ້ບ່ອນປອດໄພ ຫ່າງຈາກໂທລະສັບນີ້.",
+  "backupCodesCopy": "ສຳເນົາ",
+  "backupCodesSave": "ບັນທຶກ ຫຼື ແບ່ງປັນ",
+  "backupCodesSaved": "ຂ້ອຍບັນທຶກລະຫັດແລ້ວ",
+  "backupCodesLeft": "{count, plural, =0{ບໍ່ມີລະຫັດສຳຮອງເຫຼືອ} other{ເຫຼືອລະຫັດສຳຮອງ {count} ລະຫັດ}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "ສ້າງລະຫັດສຳຮອງ",
+  "backupCodesMakeNew": "ສ້າງລະຫັດໃໝ່",
+  "backupCodesReplaceTitle": "ສ້າງລະຫັດສຳຮອງໃໝ່ບໍ?",
+  "backupCodesReplaceBody": "ລະຫັດເກົ່າຂອງທ່ານຈະໃຊ້ບໍ່ໄດ້ທັນທີ.",
+  "backupCodesFileTitle": "ລະຫັດສຳຮອງ Vaultara",
+  "backupCodesEachOnce": "ແຕ່ລະລະຫັດໃຊ້ໄດ້ຄັ້ງດຽວ. ເກັບໄວ້ບ່ອນປອດໄພ.",
+  "backupCodesCopied": "ສຳເນົາລະຫັດສຳຮອງແລ້ວ. ຈະຖືກລຶບອອກຈາກຄລິບບອດພາຍໃນໜຶ່ງນາທີ.",
+  "backupCodesNone": "ຍັງບໍ່ໄດ້ສ້າງ",
+  "backupCodesTileHint": "ເຂົ້າສູ່ລະບົບຖ້າໂທລະສັບເສຍ",
+  "backupCodeUseTitle": "ໃຊ້ລະຫັດສຳຮອງ",
+  "backupCodeUseBody": "ປ້ອນລະຫັດສຳຮອງໜຶ່ງທີ່ທ່ານບັນທຶກໄວ້. ການໃຊ້ມັນຈະປິດການຢືນຢັນສອງຂັ້ນຕອນ ເພື່ອໃຫ້ທ່ານຕັ້ງຄ່າໃໝ່ໃນໂທລະສັບໃໝ່ໄດ້.",
+  "backupCodeLabel": "ລະຫັດສຳຮອງ",
+  "backupCodeFormat": "ລະຫັດສຳຮອງມີລັກສະນະຄື ABCDE-FGHJK.",
+  "backupCodeWrong": "ລະຫັດນັ້ນໃຊ້ບໍ່ໄດ້. ກວດເບິ່ງແລ້ວລອງໃໝ່.",
+  "backupCodeBack": "ໃຊ້ແອັບຢືນຢັນຂອງຂ້ອຍ",
+  "twoStepStepOf": "ຂັ້ນຕອນ {step} ຈາກ {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "ຈະສະແດງເປັນ Vaultara ({email}) ໃນແອັບຂອງທ່ານ.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "ລະຫັດປ່ຽນທຸກ 30 ວິນາທີ. ປ້ອນລະຫັດທີ່ສະແດງຢູ່ຕອນນີ້.",
+  "twoStepPaste": "ວາງ",
+  "twoStepBackupNext": "ສ້າງລະຫັດສຳຮອງເພື່ອໃຫ້ເຂົ້າສູ່ລະບົບໄດ້ ເຖິງວ່າຈະເຮັດໂທລະສັບນີ້ເສຍ.",
+  "twoStepAppLockTitle": "ລັອກແອັບນຳ",
+  "twoStepAppLockBody": "ສອງຂັ້ນຕອນປົກປ້ອງການເຂົ້າສູ່ລະບົບ. ການລັອກແອັບຈະຂໍລາຍນິ້ວມື, ໃບໜ້າ ຫຼື ການລັອກໜ້າຈໍທຸກຄັ້ງທີ່ເປີດ Vaultara.",
+  "twoStepAppLockAction": "ເປີດການລັອກແອັບ",
+  "twoStepSignOutOthersBody": "ເຂົ້າສູ່ລະບົບຢູ່ບ່ອນທີ່ທ່ານບໍ່ຮູ້ຈັກບໍ? ອອກຈາກອຸປະກອນອື່ນ.",
+  "twoStepReviewDevices": "ກວດເບິ່ງອຸປະກອນ",
+  "twoStepSkipForNow": "ຂ້າມໄປກ່ອນ",
+  "twoStepOffTitle": "ການຢືນຢັນສອງຂັ້ນຕອນປິດຢູ່",
+  "twoStepOffBody": "ທ່ານເຂົ້າສູ່ລະບົບດ້ວຍລະຫັດສຳຮອງ ດັ່ງນັ້ນການຢືນຢັນສອງຂັ້ນຕອນຈຶ່ງຖືກປິດ. ຕັ້ງຄ່າໃໝ່ໃນໂທລະສັບນີ້ເພື່ອປົກປ້ອງບັນຊີຂອງທ່ານ.",
+  "expiryPlusYears": "{years, plural, other{+{years} ປີ}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "ພິມວັນທີ",
+  "expiryTypeTitle": "ພິມວັນໝົດອາຍຸ",
+  "expiryTypeHint": "ຕົວຢ່າງ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ວັນທີນັ້ນເບິ່ງຄືບໍ່ຖືກຕ້ອງ. ລອງ {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ວັນທີນີ້ຜ່ານໄປແລ້ວ ດັ່ງນັ້ນບັນທຶກຈະຖືກເກັບເປັນໝົດອາຍຸ.",
+  "expiryEndsToday": "ອັນນີ້ໝົດອາຍຸມື້ນີ້.",
+  "saveAndAddAnother": "ບັນທຶກ ແລະ ເພີ່ມອີກອັນ",
+  "quickStartTitle": "ເລີ່ມດ່ວນ",
+  "categoryCreatedAddGroup": "ສ້າງ {name} ແລ້ວ. ເພີ່ມກຸ່ມໃສ່ບໍ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "ສ້າງ {name} ແລ້ວ. ເພີ່ມບັນທຶກໃສ່ບໍ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "ໃບຢັ້ງຢືນ",
+  "groupIdeaLicences": "ໃບອະນຸຍາດ",
+  "groupIdeaContracts": "ສັນຍາ",
+  "groupIdeaPermits": "ໃບອະນຸຍາດພິເສດ",
+  "groupIdeaInsurance": "ປະກັນໄພ",
+  "assistantCategoryAddTitle": "ໝວດໝູ່ໃໝ່",
+  "assistantCategoryAddNote": "ໄອຄອນຈະຖືກເລືອກຈາກຊື່. ທ່ານປ່ຽນໄດ້ພາຍຫຼັງ.",
+  "assistantCategoryRenameTitle": "ປ່ຽນຊື່ໝວດໝູ່",
+  "assistantGroupAddTitle": "ກຸ່ມໃໝ່",
+  "assistantGroupRenameTitle": "ປ່ຽນຊື່ກຸ່ມ",
+  "assistantMoveTitle": "{count, plural, other{ຍ້າຍ {count} ບັນທຶກ}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ກູ້ຄືນບັນທຶກ",
+  "assistantRestoreNote": "ບັນທຶກ ແລະ ການເຕືອນຂອງມັນຈະກັບຄືນມາ.",
+  "assistantStepCategories": "ກຳລັງກວດໝວດໝູ່ຂອງທ່ານ…",
+  "assistantStepCosts": "ກຳລັງລວມຄ່າຕໍ່ອາຍຸ…",
+  "assistantStepVisa": "ກຳລັງກວດກົດວີຊາ…"
 }

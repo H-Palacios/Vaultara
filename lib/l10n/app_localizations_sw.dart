@@ -8417,4 +8417,253 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kategoria zilizobandikwa';
+
+  @override
+  String get notifAskTitle => 'Pata vikumbusho vyako kwa wakati';
+
+  @override
+  String get notifAskBody => 'Vaultara inaweza kukukumbusha kabla kitu hakijaisha muda tu ikiwa arifa zimeruhusiwa. Tunatuma vikumbusho na arifa muhimu za akaunti pekee.';
+
+  @override
+  String get notifAskAllow => 'Ruhusu arifa';
+
+  @override
+  String get notifAskLater => 'Si sasa';
+
+  @override
+  String get signInTooManyTries => 'Majaribio mengi mno. Subiri kidogo kabla ya kujaribu tena, au weka upya nenosiri lako.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Jaribu tena baada ya sekunde $seconds',
+      one: 'Jaribu tena baada ya sekunde $seconds',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Misimbo ya akiba';
+
+  @override
+  String get backupCodesIntro => 'Ukipoteza simu yako au programu ya uthibitishaji, msimbo wa akiba hukuruhusu kuingia. Kila msimbo hufanya kazi mara moja.';
+
+  @override
+  String get backupCodesShownOnce => 'Misimbo hii huonyeshwa mara moja tu. Ihifadhi mahali salama, mbali na simu hii.';
+
+  @override
+  String get backupCodesCopy => 'Nakili';
+
+  @override
+  String get backupCodesSave => 'Hifadhi au shiriki';
+
+  @override
+  String get backupCodesSaved => 'Nimehifadhi misimbo yangu';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Misimbo $count ya akiba imebaki',
+      one: 'Msimbo $count wa akiba umebaki',
+      zero: 'Hakuna misimbo ya akiba iliyobaki',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Tengeneza misimbo ya akiba';
+
+  @override
+  String get backupCodesMakeNew => 'Tengeneza misimbo mipya';
+
+  @override
+  String get backupCodesReplaceTitle => 'Tengeneza misimbo mipya ya akiba?';
+
+  @override
+  String get backupCodesReplaceBody => 'Misimbo yako ya zamani itaacha kufanya kazi mara moja.';
+
+  @override
+  String get backupCodesFileTitle => 'Misimbo ya akiba ya Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Kila msimbo hufanya kazi mara moja. Ihifadhi mahali salama.';
+
+  @override
+  String get backupCodesCopied => 'Misimbo ya akiba imenakiliwa. Itafutwa kwenye ubao wa kunakili baada ya dakika moja.';
+
+  @override
+  String get backupCodesNone => 'Bado haijatengenezwa';
+
+  @override
+  String get backupCodesTileHint => 'Ingia ukipoteza simu yako';
+
+  @override
+  String get backupCodeUseTitle => 'Tumia msimbo wa akiba';
+
+  @override
+  String get backupCodeUseBody => 'Weka mojawapo ya misimbo ya akiba uliyohifadhi. Kuitumia huzima uthibitishaji wa hatua mbili ili uuweke tena kwenye simu yako mpya.';
+
+  @override
+  String get backupCodeLabel => 'Msimbo wa akiba';
+
+  @override
+  String get backupCodeFormat => 'Misimbo ya akiba inaonekana kama ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Msimbo huo haukufanya kazi. Ukague kisha ujaribu tena.';
+
+  @override
+  String get backupCodeBack => 'Tumia programu yangu ya uthibitishaji';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Hatua $step kati ya $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Itaonekana kama Vaultara ($email) kwenye programu yako.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Misimbo hubadilika kila sekunde 30. Weka unaouona sasa.';
+
+  @override
+  String get twoStepPaste => 'Bandika';
+
+  @override
+  String get twoStepBackupNext => 'Tengeneza misimbo ya akiba ili uweze kuingia hata ukipoteza simu hii.';
+
+  @override
+  String get twoStepAppLockTitle => 'Funga programu pia';
+
+  @override
+  String get twoStepAppLockBody => 'Hatua mbili hulinda kuingia. Kufuli ya programu huomba alama ya kidole, uso au kufuli ya skrini kila mara Vaultara inapofunguliwa.';
+
+  @override
+  String get twoStepAppLockAction => 'Washa kufuli ya programu';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Umeingia mahali usipopatambua? Toka kwenye vifaa vingine.';
+
+  @override
+  String get twoStepReviewDevices => 'Kagua vifaa';
+
+  @override
+  String get twoStepSkipForNow => 'Ruka kwa sasa';
+
+  @override
+  String get twoStepOffTitle => 'Uthibitishaji wa hatua mbili umezimwa';
+
+  @override
+  String get twoStepOffBody => 'Uliingia kwa msimbo wa akiba, kwa hivyo uthibitishaji wa hatua mbili ulizimwa. Uweke tena kwenye simu hii ili akaunti yako ibaki salama.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+miaka $years',
+      one: '+mwaka $years',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Andika tarehe';
+
+  @override
+  String get expiryTypeTitle => 'Andika tarehe ya kuisha';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Kwa mfano $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Tarehe hiyo haionekani sahihi. Jaribu $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Tarehe hii imepita, kwa hivyo rekodi itahifadhiwa kama iliyoisha muda.';
+
+  @override
+  String get expiryEndsToday => 'Hii inaisha leo.';
+
+  @override
+  String get saveAndAddAnother => 'Hifadhi na uongeze nyingine';
+
+  @override
+  String get quickStartTitle => 'Anza haraka';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name imeundwa. Iongezewe kikundi?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name imeundwa. Iongezewe rekodi?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Vyeti';
+
+  @override
+  String get groupIdeaLicences => 'Leseni';
+
+  @override
+  String get groupIdeaContracts => 'Mikataba';
+
+  @override
+  String get groupIdeaPermits => 'Vibali';
+
+  @override
+  String get groupIdeaInsurance => 'Bima';
+
+  @override
+  String get assistantCategoryAddTitle => 'Aina mpya';
+
+  @override
+  String get assistantCategoryAddNote => 'Aikoni huchaguliwa kutokana na jina. Unaweza kuibadilisha baadaye.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Badilisha jina la aina';
+
+  @override
+  String get assistantGroupAddTitle => 'Kikundi kipya';
+
+  @override
+  String get assistantGroupRenameTitle => 'Badilisha jina la kikundi';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hamisha rekodi $count',
+      one: 'Hamisha rekodi $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Rejesha rekodi';
+
+  @override
+  String get assistantRestoreNote => 'Rekodi na vikumbusho vyake vinarudi.';
+
+  @override
+  String get assistantStepCategories => 'Inakagua aina zako…';
+
+  @override
+  String get assistantStepCosts => 'Inajumlisha gharama za kusasisha…';
+
+  @override
+  String get assistantStepVisa => 'Inakagua sheria za viza…';
 }

@@ -3088,5 +3088,146 @@
       }
     }
   },
-  "homePinnedTitle": "Festede kategorier"
+  "homePinnedTitle": "Festede kategorier",
+  "notifAskTitle": "Få påminnelsene i tide",
+  "notifAskBody": "Vaultara kan bare minne deg på noe før det utløper hvis varsler er tillatt. Vi sender bare påminnelser og viktige kontovarsler.",
+  "notifAskAllow": "Tillat varsler",
+  "notifAskLater": "Ikke nå",
+  "signInTooManyTries": "For mange forsøk. Vent litt før du prøver igjen, eller tilbakestill passordet.",
+  "signInWaitSeconds": "{seconds, plural, =1{Prøv igjen om {seconds} sekund} other{Prøv igjen om {seconds} sekunder}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Reservekoder",
+  "backupCodesIntro": "Hvis du mister telefonen eller autentiseringsappen, kan du logge på med en reservekode. Hver kode virker én gang.",
+  "backupCodesShownOnce": "Disse kodene vises bare én gang. Lagre dem et trygt sted, borte fra denne telefonen.",
+  "backupCodesCopy": "Kopier",
+  "backupCodesSave": "Lagre eller del",
+  "backupCodesSaved": "Jeg har lagret kodene",
+  "backupCodesLeft": "{count, plural, =0{Ingen reservekoder igjen} =1{{count} reservekode igjen} other{{count} reservekoder igjen}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Lag reservekoder",
+  "backupCodesMakeNew": "Lag nye koder",
+  "backupCodesReplaceTitle": "Vil du lage nye reservekoder?",
+  "backupCodesReplaceBody": "De gamle kodene slutter å virke med en gang.",
+  "backupCodesFileTitle": "Vaultara-reservekoder",
+  "backupCodesEachOnce": "Hver kode virker én gang. Oppbevar dem et trygt sted.",
+  "backupCodesCopied": "Reservekoder kopiert. De fjernes fra utklippstavlen om ett minutt.",
+  "backupCodesNone": "Ingen laget ennå",
+  "backupCodesTileHint": "Logg på hvis du mister telefonen",
+  "backupCodeUseTitle": "Bruk en reservekode",
+  "backupCodeUseBody": "Skriv inn en av reservekodene du har lagret. Når du bruker en, slås totrinnsbekreftelse av, slik at du kan konfigurere den på nytt på den nye telefonen.",
+  "backupCodeLabel": "Reservekode",
+  "backupCodeFormat": "Reservekoder ser slik ut: ABCDE-FGHJK.",
+  "backupCodeWrong": "Den koden virket ikke. Sjekk den og prøv igjen.",
+  "backupCodeBack": "Bruk autentiseringsappen min",
+  "twoStepStepOf": "Trinn {step} av {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Den vises som Vaultara ({email}) i appen.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodene skifter hvert 30. sekund. Skriv inn den som vises nå.",
+  "twoStepPaste": "Lim inn",
+  "twoStepBackupNext": "Lag reservekoder så du fortsatt kan logge på hvis du mister denne telefonen.",
+  "twoStepAppLockTitle": "Lås appen også",
+  "twoStepAppLockBody": "Totrinnsbekreftelse beskytter påloggingen. Applås ber om fingeravtrykk, ansikt eller skjermlås hver gang Vaultara åpnes.",
+  "twoStepAppLockAction": "Slå på applås",
+  "twoStepSignOutOthersBody": "Pålogget et sted du ikke kjenner igjen? Logg av andre enheter.",
+  "twoStepReviewDevices": "Gå gjennom enheter",
+  "twoStepSkipForNow": "Hopp over nå",
+  "twoStepOffTitle": "Totrinnsbekreftelse er av",
+  "twoStepOffBody": "Du logget på med en reservekode, så totrinnsbekreftelse ble slått av. Konfigurer den på nytt på denne telefonen for å holde kontoen beskyttet.",
+  "expiryPlusYears": "{years, plural, =1{+{years} år} other{+{years} år}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Skriv dato",
+  "expiryTypeTitle": "Skriv utløpsdatoen",
+  "expiryTypeHint": "For eksempel {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Den datoen ser ikke riktig ut. Prøv {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Denne datoen har passert, så oppføringen lagres som utløpt.",
+  "expiryEndsToday": "Denne utløper i dag.",
+  "saveAndAddAnother": "Lagre og legg til en til",
+  "quickStartTitle": "Hurtigstart",
+  "categoryCreatedAddGroup": "{name} er opprettet. Legge til en gruppe?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} er opprettet. Legge til en oppføring?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikater",
+  "groupIdeaLicences": "Lisenser",
+  "groupIdeaContracts": "Kontrakter",
+  "groupIdeaPermits": "Tillatelser",
+  "groupIdeaInsurance": "Forsikring",
+  "assistantCategoryAddTitle": "Ny kategori",
+  "assistantCategoryAddNote": "Et ikon velges ut fra navnet. Du kan endre det senere.",
+  "assistantCategoryRenameTitle": "Gi kategorien nytt navn",
+  "assistantGroupAddTitle": "Ny gruppe",
+  "assistantGroupRenameTitle": "Gi gruppen nytt navn",
+  "assistantMoveTitle": "{count, plural, =1{Flytt {count} oppføring} other{Flytt {count} oppføringer}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Gjenopprett oppføring",
+  "assistantRestoreNote": "Oppføringen og påminnelsene kommer tilbake.",
+  "assistantStepCategories": "Sjekker kategoriene dine…",
+  "assistantStepCosts": "Legger sammen fornyelseskostnader…",
+  "assistantStepVisa": "Sjekker visumregler…"
 }

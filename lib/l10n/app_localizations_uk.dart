@@ -8582,4 +8582,261 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Закріплені категорії';
+
+  @override
+  String get notifAskTitle => 'Отримуйте нагадування вчасно';
+
+  @override
+  String get notifAskBody => 'Vaultara може нагадати вам до закінчення терміну, лише якщо сповіщення дозволено. Ми надсилаємо лише нагадування та важливі сповіщення щодо облікового запису.';
+
+  @override
+  String get notifAskAllow => 'Дозволити сповіщення';
+
+  @override
+  String get notifAskLater => 'Не зараз';
+
+  @override
+  String get signInTooManyTries => 'Забагато спроб. Зачекайте трохи перед новою спробою або скиньте пароль.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Повторіть через $seconds секунди',
+      many: 'Повторіть через $seconds секунд',
+      few: 'Повторіть через $seconds секунди',
+      one: 'Повторіть через $seconds секунду',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Резервні коди';
+
+  @override
+  String get backupCodesIntro => 'Якщо ви втратите телефон або застосунок автентифікації, резервний код дозволить увійти. Кожен код працює один раз.';
+
+  @override
+  String get backupCodesShownOnce => 'Ці коди показуються лише один раз. Збережіть їх у надійному місці, не на цьому телефоні.';
+
+  @override
+  String get backupCodesCopy => 'Копіювати';
+
+  @override
+  String get backupCodesSave => 'Зберегти або поділитися';
+
+  @override
+  String get backupCodesSaved => 'Я зберіг коди';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Залишилося $count резервного коду',
+      many: 'Залишилося $count резервних кодів',
+      few: 'Залишилося $count резервні коди',
+      one: 'Залишився $count резервний код',
+      zero: 'Резервних кодів не залишилося',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Створити резервні коди';
+
+  @override
+  String get backupCodesMakeNew => 'Створити нові коди';
+
+  @override
+  String get backupCodesReplaceTitle => 'Створити нові резервні коди?';
+
+  @override
+  String get backupCodesReplaceBody => 'Старі коди одразу перестануть працювати.';
+
+  @override
+  String get backupCodesFileTitle => 'Резервні коди Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Кожен код працює один раз. Зберігайте їх у надійному місці.';
+
+  @override
+  String get backupCodesCopied => 'Резервні коди скопійовано. Через хвилину їх буде видалено з буфера обміну.';
+
+  @override
+  String get backupCodesNone => 'Ще не створено';
+
+  @override
+  String get backupCodesTileHint => 'Вхід, якщо ви втратили телефон';
+
+  @override
+  String get backupCodeUseTitle => 'Використати резервний код';
+
+  @override
+  String get backupCodeUseBody => 'Введіть один із збережених резервних кодів. Його використання вимикає двоетапну перевірку, щоб ви могли налаштувати її знову на новому телефоні.';
+
+  @override
+  String get backupCodeLabel => 'Резервний код';
+
+  @override
+  String get backupCodeFormat => 'Резервні коди мають такий вигляд: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Цей код не підійшов. Перевірте його та спробуйте ще раз.';
+
+  @override
+  String get backupCodeBack => 'Використати застосунок автентифікації';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Крок $step з $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'У застосунку він відображатиметься як Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Коди змінюються кожні 30 секунд. Введіть той, що показано зараз.';
+
+  @override
+  String get twoStepPaste => 'Вставити';
+
+  @override
+  String get twoStepBackupNext => 'Створіть резервні коди, щоб увійти, навіть якщо втратите цей телефон.';
+
+  @override
+  String get twoStepAppLockTitle => 'Заблокуйте й застосунок';
+
+  @override
+  String get twoStepAppLockBody => 'Двоетапна перевірка захищає вхід. Блокування застосунку запитує відбиток пальця, обличчя або блокування екрана щоразу, коли відкривається Vaultara.';
+
+  @override
+  String get twoStepAppLockAction => 'Увімкнути блокування застосунку';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Вхід виконано десь, чого ви не впізнаєте? Вийдіть на інших пристроях.';
+
+  @override
+  String get twoStepReviewDevices => 'Переглянути пристрої';
+
+  @override
+  String get twoStepSkipForNow => 'Пропустити поки';
+
+  @override
+  String get twoStepOffTitle => 'Двоетапну перевірку вимкнено';
+
+  @override
+  String get twoStepOffBody => 'Ви увійшли з резервним кодом, тому двоетапну перевірку було вимкнено. Налаштуйте її знову на цьому телефоні, щоб обліковий запис залишався захищеним.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years року',
+      many: '+$years років',
+      few: '+$years роки',
+      one: '+$years рік',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Ввести дату';
+
+  @override
+  String get expiryTypeTitle => 'Введіть дату закінчення терміну';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Наприклад $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ця дата виглядає неправильно. Спробуйте $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ця дата вже минула, тому запис буде збережено як прострочений.';
+
+  @override
+  String get expiryEndsToday => 'Термін спливає сьогодні.';
+
+  @override
+  String get saveAndAddAnother => 'Зберегти й додати ще';
+
+  @override
+  String get quickStartTitle => 'Швидкий старт';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name: категорію створено. Додати групу?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name: групу створено. Додати запис?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Сертифікати';
+
+  @override
+  String get groupIdeaLicences => 'Ліцензії';
+
+  @override
+  String get groupIdeaContracts => 'Договори';
+
+  @override
+  String get groupIdeaPermits => 'Дозволи';
+
+  @override
+  String get groupIdeaInsurance => 'Страхування';
+
+  @override
+  String get assistantCategoryAddTitle => 'Нова категорія';
+
+  @override
+  String get assistantCategoryAddNote => 'Значок добирається за назвою. Його можна змінити пізніше.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Перейменувати категорію';
+
+  @override
+  String get assistantGroupAddTitle => 'Нова група';
+
+  @override
+  String get assistantGroupRenameTitle => 'Перейменувати групу';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Перемістити $count запису',
+      many: 'Перемістити $count записів',
+      few: 'Перемістити $count записи',
+      one: 'Перемістити $count запис',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Відновити запис';
+
+  @override
+  String get assistantRestoreNote => 'Запис і його нагадування повернуться.';
+
+  @override
+  String get assistantStepCategories => 'Перевіряємо ваші категорії…';
+
+  @override
+  String get assistantStepCosts => 'Підраховуємо витрати на поновлення…';
+
+  @override
+  String get assistantStepVisa => 'Перевіряємо візові правила…';
 }

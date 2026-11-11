@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "ಪಿನ್ ಮಾಡಿದ ವರ್ಗಗಳು"
+  "homePinnedTitle": "ಪಿನ್ ಮಾಡಿದ ವರ್ಗಗಳು",
+  "notifAskTitle": "ನಿಮ್ಮ ಜ್ಞಾಪನೆಗಳನ್ನು ಸಮಯಕ್ಕೆ ಪಡೆಯಿರಿ",
+  "notifAskBody": "ಅಧಿಸೂಚನೆಗಳಿಗೆ ಅನುಮತಿ ಇದ್ದರೆ ಮಾತ್ರ Vaultara ಯಾವುದಾದರೂ ಅವಧಿ ಮುಗಿಯುವ ಮೊದಲು ನಿಮಗೆ ನೆನಪಿಸಬಹುದು. ನಾವು ಜ್ಞಾಪನೆಗಳು ಮತ್ತು ಮುಖ್ಯ ಖಾತೆ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಮಾತ್ರ ಕಳುಹಿಸುತ್ತೇವೆ.",
+  "notifAskAllow": "ಅಧಿಸೂಚನೆಗಳಿಗೆ ಅನುಮತಿಸಿ",
+  "notifAskLater": "ಈಗ ಬೇಡ",
+  "signInTooManyTries": "ತುಂಬಾ ಪ್ರಯತ್ನಗಳು. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುವ ಮೊದಲು ಸ್ವಲ್ಪ ಕಾಯಿರಿ, ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} ಸೆಕೆಂಡ್‌ನಲ್ಲಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ} other{{seconds} ಸೆಕೆಂಡ್‌ಗಳಲ್ಲಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳು",
+  "backupCodesIntro": "ನಿಮ್ಮ ಫೋನ್ ಅಥವಾ ದೃಢೀಕರಣ ಆ್ಯಪ್ ಕಳೆದುಹೋದರೆ, ಬ್ಯಾಕಪ್ ಕೋಡ್ ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಬಹುದು. ಪ್ರತಿಯೊಂದು ಕೋಡ್ ಒಮ್ಮೆ ಮಾತ್ರ ಕೆಲಸ ಮಾಡುತ್ತದೆ.",
+  "backupCodesShownOnce": "ಈ ಕೋಡ್‌ಗಳನ್ನು ಒಮ್ಮೆ ಮಾತ್ರ ತೋರಿಸಲಾಗುತ್ತದೆ. ಈ ಫೋನ್‌ನಿಂದ ದೂರ ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಉಳಿಸಿ.",
+  "backupCodesCopy": "ನಕಲಿಸಿ",
+  "backupCodesSave": "ಉಳಿಸಿ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಿ",
+  "backupCodesSaved": "ನನ್ನ ಕೋಡ್‌ಗಳನ್ನು ಉಳಿಸಿದ್ದೇನೆ",
+  "backupCodesLeft": "{count, plural, =0{ಯಾವುದೇ ಬ್ಯಾಕಪ್ ಕೋಡ್ ಉಳಿದಿಲ್ಲ} =1{{count} ಬ್ಯಾಕಪ್ ಕೋಡ್ ಉಳಿದಿದೆ} other{{count} ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳು ಉಳಿದಿವೆ}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸಿ",
+  "backupCodesMakeNew": "ಹೊಸ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸಿ",
+  "backupCodesReplaceTitle": "ಹೊಸ ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸಬೇಕೆ?",
+  "backupCodesReplaceBody": "ನಿಮ್ಮ ಹಳೆಯ ಕೋಡ್‌ಗಳು ತಕ್ಷಣ ಕೆಲಸ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸುತ್ತವೆ.",
+  "backupCodesFileTitle": "Vaultara ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳು",
+  "backupCodesEachOnce": "ಪ್ರತಿಯೊಂದು ಕೋಡ್ ಒಮ್ಮೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಇಡಿ.",
+  "backupCodesCopied": "ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳನ್ನು ನಕಲಿಸಲಾಗಿದೆ. ಒಂದು ನಿಮಿಷದಲ್ಲಿ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ನಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ.",
+  "backupCodesNone": "ಇನ್ನೂ ರಚಿಸಿಲ್ಲ",
+  "backupCodesTileHint": "ಫೋನ್ ಕಳೆದುಹೋದರೆ ಸೈನ್ ಇನ್ ಮಾಡಿ",
+  "backupCodeUseTitle": "ಬ್ಯಾಕಪ್ ಕೋಡ್ ಬಳಸಿ",
+  "backupCodeUseBody": "ನೀವು ಉಳಿಸಿದ ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳಲ್ಲಿ ಒಂದನ್ನು ನಮೂದಿಸಿ. ಒಂದನ್ನು ಬಳಸಿದರೆ ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಹೊಸ ಫೋನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಹೊಂದಿಸಬಹುದು.",
+  "backupCodeLabel": "ಬ್ಯಾಕಪ್ ಕೋಡ್",
+  "backupCodeFormat": "ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳು ABCDE-FGHJK ನಂತೆ ಕಾಣುತ್ತವೆ.",
+  "backupCodeWrong": "ಆ ಕೋಡ್ ಕೆಲಸ ಮಾಡಲಿಲ್ಲ. ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "backupCodeBack": "ನನ್ನ ದೃಢೀಕರಣ ಆ್ಯಪ್ ಬಳಸಿ",
+  "twoStepStepOf": "ಹಂತ {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "ನಿಮ್ಮ ಆ್ಯಪ್‌ನಲ್ಲಿ ಇದು Vaultara ({email}) ಎಂದು ಕಾಣುತ್ತದೆ.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "ಕೋಡ್‌ಗಳು ಪ್ರತಿ 30 ಸೆಕೆಂಡ್‌ಗಳಿಗೆ ಬದಲಾಗುತ್ತವೆ. ಈಗ ತೋರಿಸುತ್ತಿರುವುದನ್ನು ನಮೂದಿಸಿ.",
+  "twoStepPaste": "ಅಂಟಿಸಿ",
+  "twoStepBackupNext": "ಈ ಫೋನ್ ಕಳೆದುಹೋದರೂ ಸೈನ್ ಇನ್ ಮಾಡಲು ಬ್ಯಾಕಪ್ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸಿ.",
+  "twoStepAppLockTitle": "ಆ್ಯಪ್ ಅನ್ನೂ ಲಾಕ್ ಮಾಡಿ",
+  "twoStepAppLockBody": "ಎರಡು ಹಂತ ಸೈನ್ ಇನ್ ಅನ್ನು ರಕ್ಷಿಸುತ್ತದೆ. ಆ್ಯಪ್ ಲಾಕ್ ಪ್ರತಿಬಾರಿ Vaultara ತೆರೆಯುವಾಗ ಬೆರಳಚ್ಚು, ಮುಖ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಕೇಳುತ್ತದೆ.",
+  "twoStepAppLockAction": "ಆ್ಯಪ್ ಲಾಕ್ ಆನ್ ಮಾಡಿ",
+  "twoStepSignOutOthersBody": "ಗೊತ್ತಿಲ್ಲದ ಕಡೆ ಸೈನ್ ಇನ್ ಆಗಿದೆಯೇ? ಇತರ ಸಾಧನಗಳಿಂದ ಸೈನ್ ಔಟ್ ಮಾಡಿ.",
+  "twoStepReviewDevices": "ಸಾಧನಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
+  "twoStepSkipForNow": "ಈಗ ಬಿಟ್ಟುಬಿಡಿ",
+  "twoStepOffTitle": "ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ",
+  "twoStepOffBody": "ನೀವು ಬ್ಯಾಕಪ್ ಕೋಡ್ ಬಳಸಿ ಸೈನ್ ಇನ್ ಮಾಡಿದ್ದರಿಂದ ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ. ನಿಮ್ಮ ಖಾತೆ ಸುರಕ್ಷಿತವಾಗಿರಲು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಹೊಂದಿಸಿ.",
+  "expiryPlusYears": "{years, plural, =1{+{years} ವರ್ಷ} other{+{years} ವರ್ಷಗಳು}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ",
+  "expiryTypeTitle": "ಮುಕ್ತಾಯ ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ",
+  "expiryTypeHint": "ಉದಾಹರಣೆಗೆ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ಆ ದಿನಾಂಕ ಸರಿಯಾಗಿ ಕಾಣುತ್ತಿಲ್ಲ. {example} ಪ್ರಯತ್ನಿಸಿ.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ಈ ದಿನಾಂಕ ಕಳೆದಿದೆ, ಆದ್ದರಿಂದ ದಾಖಲೆಯನ್ನು ಅವಧಿ ಮುಗಿದಂತೆ ಉಳಿಸಲಾಗುತ್ತದೆ.",
+  "expiryEndsToday": "ಇದು ಇಂದು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ.",
+  "saveAndAddAnother": "ಉಳಿಸಿ ಮತ್ತು ಇನ್ನೊಂದು ಸೇರಿಸಿ",
+  "quickStartTitle": "ತ್ವರಿತ ಆರಂಭ",
+  "categoryCreatedAddGroup": "{name} ರಚಿಸಲಾಗಿದೆ. ಅದಕ್ಕೆ ಗುಂಪು ಸೇರಿಸಬೇಕೆ?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} ರಚಿಸಲಾಗಿದೆ. ಅದಕ್ಕೆ ದಾಖಲೆ ಸೇರಿಸಬೇಕೆ?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "ಪ್ರಮಾಣಪತ್ರಗಳು",
+  "groupIdeaLicences": "ಪರವಾನಗಿಗಳು",
+  "groupIdeaContracts": "ಒಪ್ಪಂದಗಳು",
+  "groupIdeaPermits": "ಅನುಮತಿ ಪತ್ರಗಳು",
+  "groupIdeaInsurance": "ವಿಮೆ",
+  "assistantCategoryAddTitle": "ಹೊಸ ವರ್ಗ",
+  "assistantCategoryAddNote": "ಹೆಸರಿನಿಂದ ಐಕಾನ್ ಆಯ್ಕೆಯಾಗುತ್ತದೆ. ನಂತರ ಬದಲಾಯಿಸಬಹುದು.",
+  "assistantCategoryRenameTitle": "ವರ್ಗದ ಹೆಸರು ಬದಲಿಸಿ",
+  "assistantGroupAddTitle": "ಹೊಸ ಗುಂಪು",
+  "assistantGroupRenameTitle": "ಗುಂಪಿನ ಹೆಸರು ಬದಲಿಸಿ",
+  "assistantMoveTitle": "{count, plural, =1{{count} ದಾಖಲೆ ಸರಿಸಿ} other{{count} ದಾಖಲೆಗಳನ್ನು ಸರಿಸಿ}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ದಾಖಲೆ ಮರುಸ್ಥಾಪಿಸಿ",
+  "assistantRestoreNote": "ದಾಖಲೆ ಮತ್ತು ಅದರ ಜ್ಞಾಪನೆಗಳು ಹಿಂತಿರುಗುತ್ತವೆ.",
+  "assistantStepCategories": "ನಿಮ್ಮ ವರ್ಗಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…",
+  "assistantStepCosts": "ನವೀಕರಣ ವೆಚ್ಚಗಳನ್ನು ಲೆಕ್ಕಿಸಲಾಗುತ್ತಿದೆ…",
+  "assistantStepVisa": "ವೀಸಾ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"
 }

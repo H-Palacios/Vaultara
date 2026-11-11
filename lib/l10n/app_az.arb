@@ -2831,5 +2831,146 @@
       }
     }
   },
-  "homePinnedTitle": "Bərkidilmiş kateqoriyalar"
+  "homePinnedTitle": "Bərkidilmiş kateqoriyalar",
+  "notifAskTitle": "Xatırlatmaları vaxtında alın",
+  "notifAskBody": "Vaultara bir şeyin müddəti bitmədən sizə yalnız bildirişlərə icazə verildikdə xatırlada bilər. Biz yalnız xatırlatmalar və vacib hesab xəbərdarlıqları göndəririk.",
+  "notifAskAllow": "Bildirişlərə icazə ver",
+  "notifAskLater": "İndi yox",
+  "signInTooManyTries": "Həddindən çox cəhd. Yenidən cəhd etməzdən əvvəl bir az gözləyin və ya parolunuzu sıfırlayın.",
+  "signInWaitSeconds": "{seconds, plural, =1{{seconds} saniyədən sonra yenidən cəhd edin} other{{seconds} saniyədən sonra yenidən cəhd edin}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Ehtiyat kodlar",
+  "backupCodesIntro": "Telefonunuzu və ya autentifikator tətbiqinizi itirsəniz, ehtiyat kod daxil olmağa imkan verir. Hər kod bir dəfə işləyir.",
+  "backupCodesShownOnce": "Bu kodlar yalnız bir dəfə göstərilir. Onları bu telefondan uzaq, təhlükəsiz yerdə saxlayın.",
+  "backupCodesCopy": "Kopyala",
+  "backupCodesSave": "Saxla və ya paylaş",
+  "backupCodesSaved": "Kodlarımı saxladım",
+  "backupCodesLeft": "{count, plural, =0{Ehtiyat kod qalmayıb} =1{{count} ehtiyat kod qalıb} other{{count} ehtiyat kod qalıb}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Ehtiyat kodlar yarat",
+  "backupCodesMakeNew": "Yeni kodlar yarat",
+  "backupCodesReplaceTitle": "Yeni ehtiyat kodlar yaradılsın?",
+  "backupCodesReplaceBody": "Köhnə kodlarınız dərhal işləməyi dayandıracaq.",
+  "backupCodesFileTitle": "Vaultara ehtiyat kodları",
+  "backupCodesEachOnce": "Hər kod bir dəfə işləyir. Onları təhlükəsiz yerdə saxlayın.",
+  "backupCodesCopied": "Ehtiyat kodlar kopyalandı. Bir dəqiqəyə mübadilə buferindən silinəcək.",
+  "backupCodesNone": "Hələ yaradılmayıb",
+  "backupCodesTileHint": "Telefonunuzu itirsəniz daxil olun",
+  "backupCodeUseTitle": "Ehtiyat koddan istifadə et",
+  "backupCodeUseBody": "Saxladığınız ehtiyat kodlardan birini daxil edin. Birindən istifadə etmək iki addımlı doğrulamanı söndürür ki, onu yeni telefonunuzda yenidən qura biləsiniz.",
+  "backupCodeLabel": "Ehtiyat kod",
+  "backupCodeFormat": "Ehtiyat kodlar ABCDE-FGHJK kimi görünür.",
+  "backupCodeWrong": "Bu kod işləmədi. Yoxlayın və yenidən cəhd edin.",
+  "backupCodeBack": "Autentifikator tətbiqimdən istifadə et",
+  "twoStepStepOf": "Addım {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Tətbiqinizdə Vaultara ({email}) kimi görünəcək.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodlar hər 30 saniyədən bir dəyişir. İndi göstəriləni daxil edin.",
+  "twoStepPaste": "Yapışdır",
+  "twoStepBackupNext": "Bu telefonu itirsəniz də daxil ola bilmək üçün ehtiyat kodlar yaradın.",
+  "twoStepAppLockTitle": "Tətbiqi də kilidlə",
+  "twoStepAppLockBody": "İki addımlı doğrulama girişi qoruyur. Tətbiq kilidi Vaultara hər açılanda barmaq izinizi, üzünüzü və ya ekran kilidinizi istəyir.",
+  "twoStepAppLockAction": "Tətbiq kilidini aç",
+  "twoStepSignOutOthersBody": "Tanımadığınız yerdə daxil olunub? Digər cihazlardan çıxın.",
+  "twoStepReviewDevices": "Cihazlara bax",
+  "twoStepSkipForNow": "İndilik keç",
+  "twoStepOffTitle": "İki addımlı doğrulama söndürülüb",
+  "twoStepOffBody": "Ehtiyat kodla daxil oldunuz, ona görə iki addımlı doğrulama söndürüldü. Hesabınızı qorumaq üçün onu bu telefonda yenidən qurun.",
+  "expiryPlusYears": "{years, plural, =1{+{years} il} other{+{years} il}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Tarixi yaz",
+  "expiryTypeTitle": "Bitmə tarixini yazın",
+  "expiryTypeHint": "Məsələn {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Bu tarix düzgün görünmür. {example} sınayın.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Bu tarix keçib, ona görə qeyd müddəti bitmiş kimi saxlanacaq.",
+  "expiryEndsToday": "Bunun müddəti bu gün bitir.",
+  "saveAndAddAnother": "Saxla və başqasını əlavə et",
+  "quickStartTitle": "Sürətli başlanğıc",
+  "categoryCreatedAddGroup": "{name} yaradıldı. Ona qrup əlavə edilsin?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} yaradıldı. Ona qeyd əlavə edilsin?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikatlar",
+  "groupIdeaLicences": "Lisenziyalar",
+  "groupIdeaContracts": "Müqavilələr",
+  "groupIdeaPermits": "İcazələr",
+  "groupIdeaInsurance": "Sığorta",
+  "assistantCategoryAddTitle": "Yeni kateqoriya",
+  "assistantCategoryAddNote": "Ad əsasında ikon seçilir. Sonra dəyişə bilərsiniz.",
+  "assistantCategoryRenameTitle": "Kateqoriyanın adını dəyiş",
+  "assistantGroupAddTitle": "Yeni qrup",
+  "assistantGroupRenameTitle": "Qrupun adını dəyiş",
+  "assistantMoveTitle": "{count, plural, =1{{count} qeydi köçür} other{{count} qeydi köçür}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Qeydi bərpa et",
+  "assistantRestoreNote": "Qeyd və onun xatırlatmaları geri qayıdır.",
+  "assistantStepCategories": "Kateqoriyalarınız yoxlanılır…",
+  "assistantStepCosts": "Yeniləmə xərcləri hesablanır…",
+  "assistantStepVisa": "Viza qaydaları yoxlanılır…"
 }

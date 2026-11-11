@@ -8345,4 +8345,249 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'ピン留めしたカテゴリ';
+
+  @override
+  String get notifAskTitle => 'リマインダーを時間どおりに受け取る';
+
+  @override
+  String get notifAskBody => 'Vaultara が期限切れの前にお知らせできるのは、通知が許可されている場合だけです。送信するのはリマインダーと重要なアカウント通知のみです。';
+
+  @override
+  String get notifAskAllow => '通知を許可';
+
+  @override
+  String get notifAskLater => '今はしない';
+
+  @override
+  String get signInTooManyTries => '試行回数が多すぎます。少し待ってからもう一度お試しいただくか、パスワードをリセットしてください。';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds 秒後にもう一度お試しください',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'バックアップコード';
+
+  @override
+  String get backupCodesIntro => 'スマートフォンや認証アプリをなくした場合は、バックアップコードでログインできます。各コードは 1 回だけ使えます。';
+
+  @override
+  String get backupCodesShownOnce => 'これらのコードは一度しか表示されません。このスマートフォン以外の安全な場所に保存してください。';
+
+  @override
+  String get backupCodesCopy => 'コピー';
+
+  @override
+  String get backupCodesSave => '保存または共有';
+
+  @override
+  String get backupCodesSaved => 'コードを保存しました';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'バックアップコード残り $count 個',
+      zero: 'バックアップコードは残っていません',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'バックアップコードを作成';
+
+  @override
+  String get backupCodesMakeNew => '新しいコードを作成';
+
+  @override
+  String get backupCodesReplaceTitle => '新しいバックアップコードを作成しますか？';
+
+  @override
+  String get backupCodesReplaceBody => '古いコードはすぐに使えなくなります。';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara バックアップコード';
+
+  @override
+  String get backupCodesEachOnce => '各コードは 1 回だけ使えます。安全な場所に保管してください。';
+
+  @override
+  String get backupCodesCopied => 'バックアップコードをコピーしました。1 分後にクリップボードから消去されます。';
+
+  @override
+  String get backupCodesNone => 'まだ作成されていません';
+
+  @override
+  String get backupCodesTileHint => 'スマートフォンをなくしたときのログイン用';
+
+  @override
+  String get backupCodeUseTitle => 'バックアップコードを使う';
+
+  @override
+  String get backupCodeUseBody => '保存したバックアップコードのいずれかを入力してください。使用すると 2 段階認証がオフになるので、新しいスマートフォンで設定し直せます。';
+
+  @override
+  String get backupCodeLabel => 'バックアップコード';
+
+  @override
+  String get backupCodeFormat => 'バックアップコードは ABCDE-FGHJK のような形式です。';
+
+  @override
+  String get backupCodeWrong => 'このコードは使えませんでした。確認してもう一度お試しください。';
+
+  @override
+  String get backupCodeBack => '認証アプリを使う';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ステップ $step/$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'アプリには Vaultara ($email) と表示されます。';
+  }
+
+  @override
+  String get twoStepCodesChange => 'コードは 30 秒ごとに変わります。今表示されているコードを入力してください。';
+
+  @override
+  String get twoStepPaste => '貼り付け';
+
+  @override
+  String get twoStepBackupNext => 'このスマートフォンをなくしてもログインできるように、バックアップコードを作成してください。';
+
+  @override
+  String get twoStepAppLockTitle => 'アプリもロックする';
+
+  @override
+  String get twoStepAppLockBody => '2 段階認証はログインを守ります。アプリロックは Vaultara を開くたびに指紋、顔、または画面ロックを求めます。';
+
+  @override
+  String get twoStepAppLockAction => 'アプリロックをオンにする';
+
+  @override
+  String get twoStepSignOutOthersBody => '心当たりのない場所でログインしていますか？他のデバイスからログアウトしてください。';
+
+  @override
+  String get twoStepReviewDevices => 'デバイスを確認';
+
+  @override
+  String get twoStepSkipForNow => '今はスキップ';
+
+  @override
+  String get twoStepOffTitle => '2 段階認証はオフです';
+
+  @override
+  String get twoStepOffBody => 'バックアップコードでログインしたため、2 段階認証がオフになりました。アカウントを守るため、このスマートフォンで設定し直してください。';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years 年',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => '日付を入力';
+
+  @override
+  String get expiryTypeTitle => '有効期限を入力';
+
+  @override
+  String expiryTypeHint(String example) {
+    return '例: $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'その日付は正しくないようです。$example の形式で入力してください。';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'この日付は過ぎているため、記録は期限切れとして保存されます。';
+
+  @override
+  String get expiryEndsToday => '今日が期限です。';
+
+  @override
+  String get saveAndAddAnother => '保存してもう 1 件追加';
+
+  @override
+  String get quickStartTitle => 'クイックスタート';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name を作成しました。グループを追加しますか？';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name を作成しました。記録を追加しますか？';
+  }
+
+  @override
+  String get groupIdeaCertificates => '証明書';
+
+  @override
+  String get groupIdeaLicences => 'ライセンス';
+
+  @override
+  String get groupIdeaContracts => '契約';
+
+  @override
+  String get groupIdeaPermits => '許可証';
+
+  @override
+  String get groupIdeaInsurance => '保険';
+
+  @override
+  String get assistantCategoryAddTitle => '新しいカテゴリ';
+
+  @override
+  String get assistantCategoryAddNote => '名前からアイコンが選ばれます。あとで変更できます。';
+
+  @override
+  String get assistantCategoryRenameTitle => 'カテゴリ名を変更';
+
+  @override
+  String get assistantGroupAddTitle => '新しいグループ';
+
+  @override
+  String get assistantGroupRenameTitle => 'グループ名を変更';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件の記録を移動',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => '記録を復元';
+
+  @override
+  String get assistantRestoreNote => '記録とそのリマインダーが元に戻ります。';
+
+  @override
+  String get assistantStepCategories => 'カテゴリを確認しています…';
+
+  @override
+  String get assistantStepCosts => '更新費用を計算しています…';
+
+  @override
+  String get assistantStepVisa => 'ビザの規則を確認しています…';
 }

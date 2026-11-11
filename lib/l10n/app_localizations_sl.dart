@@ -8573,4 +8573,261 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Pripete kategorije';
+
+  @override
+  String get notifAskTitle => 'Prejemajte opomnike pravočasno';
+
+  @override
+  String get notifAskBody => 'Vaultara vas lahko opomni, preden nekaj poteče, samo če so obvestila dovoljena. Pošiljamo samo opomnike in pomembna opozorila o računu.';
+
+  @override
+  String get notifAskAllow => 'Dovoli obvestila';
+
+  @override
+  String get notifAskLater => 'Ne zdaj';
+
+  @override
+  String get signInTooManyTries => 'Preveč poskusov. Malo počakajte, preden poskusite znova, ali ponastavite geslo.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Poskusite znova čez $seconds sekund',
+      few: 'Poskusite znova čez $seconds sekunde',
+      two: 'Poskusite znova čez $seconds sekundi',
+      one: 'Poskusite znova čez $seconds sekundo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Rezervne kode';
+
+  @override
+  String get backupCodesIntro => 'Če izgubite telefon ali aplikacijo za preverjanje pristnosti, se lahko prijavite z rezervno kodo. Vsaka koda deluje enkrat.';
+
+  @override
+  String get backupCodesShownOnce => 'Te kode so prikazane samo enkrat. Shranite jih na varno mesto, stran od tega telefona.';
+
+  @override
+  String get backupCodesCopy => 'Kopiraj';
+
+  @override
+  String get backupCodesSave => 'Shrani ali deli';
+
+  @override
+  String get backupCodesSaved => 'Kode sem shranil';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ostalo je $count rezervnih kod',
+      few: 'Ostale so $count rezervne kode',
+      two: 'Ostali sta $count rezervni kodi',
+      one: 'Ostala je $count rezervna koda',
+      zero: 'Ni več rezervnih kod',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Ustvari rezervne kode';
+
+  @override
+  String get backupCodesMakeNew => 'Ustvari nove kode';
+
+  @override
+  String get backupCodesReplaceTitle => 'Želite ustvariti nove rezervne kode?';
+
+  @override
+  String get backupCodesReplaceBody => 'Stare kode bodo takoj prenehale delovati.';
+
+  @override
+  String get backupCodesFileTitle => 'Rezervne kode za Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Vsaka koda deluje enkrat. Hranite jih na varnem mestu.';
+
+  @override
+  String get backupCodesCopied => 'Rezervne kode so kopirane. Iz odložišča bodo izbrisane čez minuto.';
+
+  @override
+  String get backupCodesNone => 'Še nobena ni ustvarjena';
+
+  @override
+  String get backupCodesTileHint => 'Prijava, če izgubite telefon';
+
+  @override
+  String get backupCodeUseTitle => 'Uporabi rezervno kodo';
+
+  @override
+  String get backupCodeUseBody => 'Vnesite eno od shranjenih rezervnih kod. Z njeno uporabo se izklopi preverjanje v dveh korakih, da ga lahko znova nastavite na novem telefonu.';
+
+  @override
+  String get backupCodeLabel => 'Rezervna koda';
+
+  @override
+  String get backupCodeFormat => 'Rezervne kode so videti takole: ABCDE-FGHJK.';
+
+  @override
+  String get backupCodeWrong => 'Ta koda ni delovala. Preverite jo in poskusite znova.';
+
+  @override
+  String get backupCodeBack => 'Uporabi mojo aplikacijo za preverjanje';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Korak $step od $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'V aplikaciji bo prikazano kot Vaultara ($email).';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kode se spremenijo vsakih 30 sekund. Vnesite tisto, ki je prikazana zdaj.';
+
+  @override
+  String get twoStepPaste => 'Prilepi';
+
+  @override
+  String get twoStepBackupNext => 'Ustvarite rezervne kode, da se lahko prijavite tudi, če izgubite ta telefon.';
+
+  @override
+  String get twoStepAppLockTitle => 'Zaklenite tudi aplikacijo';
+
+  @override
+  String get twoStepAppLockBody => 'Dva koraka ščitita prijavo. Zaklepanje aplikacije ob vsakem odprtju Vaultare zahteva prstni odtis, obraz ali zaklepanje zaslona.';
+
+  @override
+  String get twoStepAppLockAction => 'Vklopi zaklepanje aplikacije';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Ste prijavljeni nekje, česar ne prepoznate? Odjavite se iz drugih naprav.';
+
+  @override
+  String get twoStepReviewDevices => 'Preglej naprave';
+
+  @override
+  String get twoStepSkipForNow => 'Zaenkrat preskoči';
+
+  @override
+  String get twoStepOffTitle => 'Preverjanje v dveh korakih je izklopljeno';
+
+  @override
+  String get twoStepOffBody => 'Prijavili ste se z rezervno kodo, zato je bilo preverjanje v dveh korakih izklopljeno. Znova ga nastavite na tem telefonu, da bo račun ostal zaščiten.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years let',
+      few: '+$years leta',
+      two: '+$years leti',
+      one: '+$years leto',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Vpiši datum';
+
+  @override
+  String get expiryTypeTitle => 'Vpišite datum poteka';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Na primer $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ta datum se ne zdi pravilen. Poskusite $example.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ta datum je že mimo, zato bo zapis shranjen kot potekel.';
+
+  @override
+  String get expiryEndsToday => 'To poteče danes.';
+
+  @override
+  String get saveAndAddAnother => 'Shrani in dodaj še enega';
+
+  @override
+  String get quickStartTitle => 'Hiter začetek';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name je ustvarjena. Dodam skupino?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name je ustvarjena. Dodam zapis?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Potrdila';
+
+  @override
+  String get groupIdeaLicences => 'Licence';
+
+  @override
+  String get groupIdeaContracts => 'Pogodbe';
+
+  @override
+  String get groupIdeaPermits => 'Dovoljenja';
+
+  @override
+  String get groupIdeaInsurance => 'Zavarovanja';
+
+  @override
+  String get assistantCategoryAddTitle => 'Nova kategorija';
+
+  @override
+  String get assistantCategoryAddNote => 'Ikona je izbrana glede na ime. Pozneje jo lahko spremenite.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Preimenuj kategorijo';
+
+  @override
+  String get assistantGroupAddTitle => 'Nova skupina';
+
+  @override
+  String get assistantGroupRenameTitle => 'Preimenuj skupino';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Premakni $count zapisov',
+      few: 'Premakni $count zapise',
+      two: 'Premakni $count zapisa',
+      one: 'Premakni $count zapis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Obnovi zapis';
+
+  @override
+  String get assistantRestoreNote => 'Zapis in njegovi opomniki se vrnejo.';
+
+  @override
+  String get assistantStepCategories => 'Preverjam vaše kategorije…';
+
+  @override
+  String get assistantStepCosts => 'Seštevam stroške podaljšanja…';
+
+  @override
+  String get assistantStepVisa => 'Preverjam pravila za vizume…';
 }

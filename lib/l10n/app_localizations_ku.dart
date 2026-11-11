@@ -8417,4 +8417,253 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'Kategoriyên derzîkirî';
+
+  @override
+  String get notifAskTitle => 'Bîrxistinên xwe di wextê de bistîne';
+
+  @override
+  String get notifAskBody => 'Vaultara tenê dikare berî ku tiştek biqede te bîne bîra te heke agahdarî destûrdayî bin. Em tenê bîrxistin û hişyariyên girîng ên hesabê dişînin.';
+
+  @override
+  String get notifAskAllow => 'Destûrê bide agahdariyan';
+
+  @override
+  String get notifAskLater => 'Ne niha';
+
+  @override
+  String get signInTooManyTries => 'Gelek hewldan. Berî ku dîsa biceribînî hinekî bisekine, an jî şîfreya xwe nû bike.';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: 'Piştî $seconds saniyeyan dîsa biceribîne',
+      one: 'Piştî $seconds saniyeyê dîsa biceribîne',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'Kodên yedek';
+
+  @override
+  String get backupCodesIntro => 'Heke tu telefona xwe an sepana piştrastkirinê winda bikî, kodek yedek dihêle tu têkevî. Her kod carekê dixebite.';
+
+  @override
+  String get backupCodesShownOnce => 'Ev kod tenê carekê têne nîşandan. Wan li cihekî ewle, dûrî vê telefonê, tomar bike.';
+
+  @override
+  String get backupCodesCopy => 'Kopî bike';
+
+  @override
+  String get backupCodesSave => 'Tomar bike an parve bike';
+
+  @override
+  String get backupCodesSaved => 'Min kodên xwe tomar kirin';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kodên yedek man',
+      one: '$count kodek yedek ma',
+      zero: 'Tu kodek yedek nema',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'Kodên yedek çêke';
+
+  @override
+  String get backupCodesMakeNew => 'Kodên nû çêke';
+
+  @override
+  String get backupCodesReplaceTitle => 'Kodên yedek ên nû bên çêkirin?';
+
+  @override
+  String get backupCodesReplaceBody => 'Kodên te yên kevin dê yekser nexebitin.';
+
+  @override
+  String get backupCodesFileTitle => 'Kodên yedek ên Vaultara';
+
+  @override
+  String get backupCodesEachOnce => 'Her kod carekê dixebite. Wan li cihekî ewle biparêze.';
+
+  @override
+  String get backupCodesCopied => 'Kodên yedek hatin kopîkirin. Piştî deqeyekê ji panoyê têne jêbirin.';
+
+  @override
+  String get backupCodesNone => 'Hîn nehatine çêkirin';
+
+  @override
+  String get backupCodesTileHint => 'Heke telefona xwe winda bikî têkeve';
+
+  @override
+  String get backupCodeUseTitle => 'Kodek yedek bi kar bîne';
+
+  @override
+  String get backupCodeUseBody => 'Yek ji kodên yedek ên ku te tomar kirine binivîse. Bikaranîna wê piştrastkirina du-gavî digire, da ku tu li ser telefona xwe ya nû dîsa saz bikî.';
+
+  @override
+  String get backupCodeLabel => 'Koda yedek';
+
+  @override
+  String get backupCodeFormat => 'Kodên yedek wek ABCDE-FGHJK xuya dikin.';
+
+  @override
+  String get backupCodeWrong => 'Ew kod nexebitî. Kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get backupCodeBack => 'Sepana min a piştrastkirinê bi kar bîne';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'Gav $step ji $total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'Di sepana te de wek Vaultara ($email) xuya dibe.';
+  }
+
+  @override
+  String get twoStepCodesChange => 'Kod her 30 saniyeyan diguherin. Ya ku niha xuya dike binivîse.';
+
+  @override
+  String get twoStepPaste => 'Pêve bike';
+
+  @override
+  String get twoStepBackupNext => 'Kodên yedek çêke da ku heke tu vê telefonê winda bikî jî bikaribî têkevî.';
+
+  @override
+  String get twoStepAppLockTitle => 'Sepanê jî kilît bike';
+
+  @override
+  String get twoStepAppLockBody => 'Du gav têketinê diparêzin. Kilîta sepanê her carê ku Vaultara vedibe şopa tiliyê, rû an kilîta ekranê dixwaze.';
+
+  @override
+  String get twoStepAppLockAction => 'Kilîta sepanê veke';
+
+  @override
+  String get twoStepSignOutOthersBody => 'Li cihekî ku tu nas nakî ketî? Ji amûrên din derkeve.';
+
+  @override
+  String get twoStepReviewDevices => 'Amûran binêre';
+
+  @override
+  String get twoStepSkipForNow => 'Niha derbas bike';
+
+  @override
+  String get twoStepOffTitle => 'Piştrastkirina du-gavî girtî ye';
+
+  @override
+  String get twoStepOffBody => 'Tu bi kodek yedek ketî, loma piştrastkirina du-gavî hate girtin. Ji bo ku hesabê te parastî bimîne wê li ser vê telefonê dîsa saz bike.';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years sal',
+      one: '+$years sal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'Dîrokê binivîse';
+
+  @override
+  String get expiryTypeTitle => 'Dîroka qedandinê binivîse';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'Mînak $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'Ew dîrok rast xuya nake. $example biceribîne.';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'Ev dîrok derbas bûye, loma tomar wek qediyayî tê tomarkirin.';
+
+  @override
+  String get expiryEndsToday => 'Ev îro diqede.';
+
+  @override
+  String get saveAndAddAnother => 'Tomar bike û yekî din lê zêde bike';
+
+  @override
+  String get quickStartTitle => 'Destpêka bilez';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name hate çêkirin. Komek lê zêde bibe?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name hate çêkirin. Tomarek lê zêde bibe?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'Bawername';
+
+  @override
+  String get groupIdeaLicences => 'Lîsans';
+
+  @override
+  String get groupIdeaContracts => 'Peyman';
+
+  @override
+  String get groupIdeaPermits => 'Destûrname';
+
+  @override
+  String get groupIdeaInsurance => 'Sîgorte';
+
+  @override
+  String get assistantCategoryAddTitle => 'Kategoriya nû';
+
+  @override
+  String get assistantCategoryAddNote => 'Îkon li gorî navî tê hilbijartin. Tu dikarî paşê biguherînî.';
+
+  @override
+  String get assistantCategoryRenameTitle => 'Navê kategoriyê biguherîne';
+
+  @override
+  String get assistantGroupAddTitle => 'Koma nû';
+
+  @override
+  String get assistantGroupRenameTitle => 'Navê komê biguherîne';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tomaran bibe',
+      one: '$count tomar bibe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'Tomarê vegerîne';
+
+  @override
+  String get assistantRestoreNote => 'Tomar û bîrxistinên wê vedigerin.';
+
+  @override
+  String get assistantStepCategories => 'Kategoriyên te têne kontrolkirin…';
+
+  @override
+  String get assistantStepCosts => 'Lêçûnên nûkirinê têne hesibandin…';
+
+  @override
+  String get assistantStepVisa => 'Rêgezên vîzeyê têne kontrolkirin…';
 }

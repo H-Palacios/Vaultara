@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "අමුණා ඇති කාණ්ඩ"
+  "homePinnedTitle": "අමුණා ඇති කාණ්ඩ",
+  "notifAskTitle": "ඔබේ සිහිකැඳවීම් නියමිත වේලාවට ලබා ගන්න",
+  "notifAskBody": "දැනුම්දීම්වලට අවසර ඇත්නම් පමණක් යමක් කල් ඉකුත් වීමට පෙර Vaultara හට ඔබට මතක් කළ හැක. අපි සිහිකැඳවීම් සහ වැදගත් ගිණුම් ඇඟවීම් පමණක් යවන්නෙමු.",
+  "notifAskAllow": "දැනුම්දීම්වලට අවසර දෙන්න",
+  "notifAskLater": "දැන් නොවේ",
+  "signInTooManyTries": "උත්සාහයන් ඕනෑවට වඩා. නැවත උත්සාහ කිරීමට පෙර මඳක් රැඳී සිටින්න, නැතහොත් මුරපදය යළි සකසන්න.",
+  "signInWaitSeconds": "{seconds, plural, one{තත්පර {seconds}කින් නැවත උත්සාහ කරන්න} other{තත්පර {seconds}කින් නැවත උත්සාහ කරන්න}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "උපස්ථ කේත",
+  "backupCodesIntro": "ඔබේ දුරකථනය හෝ සත්‍යාපන යෙදුම නැති වුවහොත්, උපස්ථ කේතයකින් පුරනය විය හැක. සෑම කේතයක්ම එක් වරක් පමණක් ක්‍රියා කරයි.",
+  "backupCodesShownOnce": "මෙම කේත පෙන්වන්නේ එක් වරක් පමණි. මෙම දුරකථනයෙන් ඈත ආරක්ෂිත ස්ථානයක ඒවා සුරකින්න.",
+  "backupCodesCopy": "පිටපත් කරන්න",
+  "backupCodesSave": "සුරකින්න හෝ බෙදාගන්න",
+  "backupCodesSaved": "මම කේත සුරැකුවෙමි",
+  "backupCodesLeft": "{count, plural, =0{උපස්ථ කේත කිසිවක් ඉතිරි නැත} one{උපස්ථ කේත {count}ක් ඉතිරියි} other{උපස්ථ කේත {count}ක් ඉතිරියි}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "උපස්ථ කේත සාදන්න",
+  "backupCodesMakeNew": "නව කේත සාදන්න",
+  "backupCodesReplaceTitle": "නව උපස්ථ කේත සාදන්නද?",
+  "backupCodesReplaceBody": "ඔබේ පැරණි කේත වහාම ක්‍රියා කිරීම නවත්වයි.",
+  "backupCodesFileTitle": "Vaultara උපස්ථ කේත",
+  "backupCodesEachOnce": "සෑම කේතයක්ම එක් වරක් ක්‍රියා කරයි. ආරක්ෂිත ස්ථානයක තබා ගන්න.",
+  "backupCodesCopied": "උපස්ථ කේත පිටපත් විය. මිනිත්තුවකින් පසුරු පුවරුවෙන් ඉවත් කෙරේ.",
+  "backupCodesNone": "තවම සාදා නැත",
+  "backupCodesTileHint": "දුරකථනය නැති වුවහොත් පුරනය වන්න",
+  "backupCodeUseTitle": "උපස්ථ කේතයක් භාවිත කරන්න",
+  "backupCodeUseBody": "ඔබ සුරැකි උපස්ථ කේතවලින් එකක් ඇතුළු කරන්න. එකක් භාවිත කිරීමෙන් පියවර දෙකේ සත්‍යාපනය අක්‍රිය වේ, එවිට ඔබට එය නව දුරකථනයේ නැවත සැකසිය හැක.",
+  "backupCodeLabel": "උපස්ථ කේතය",
+  "backupCodeFormat": "උපස්ථ කේත ABCDE-FGHJK ලෙස පෙනේ.",
+  "backupCodeWrong": "එම කේතය ක්‍රියා කළේ නැත. පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
+  "backupCodeBack": "මගේ සත්‍යාපන යෙදුම භාවිත කරන්න",
+  "twoStepStepOf": "පියවර {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "ඔබේ යෙදුමේ එය Vaultara ({email}) ලෙස පෙන්වයි.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "කේත සෑම තත්පර 30කට වරක් වෙනස් වේ. දැන් පෙන්වන කේතය ඇතුළු කරන්න.",
+  "twoStepPaste": "අලවන්න",
+  "twoStepBackupNext": "මෙම දුරකථනය නැති වුවද පුරනය වීමට හැකි වන සේ උපස්ථ කේත සාදන්න.",
+  "twoStepAppLockTitle": "යෙදුමත් අගුළු දමන්න",
+  "twoStepAppLockBody": "පියවර දෙක පුරනය ආරක්ෂා කරයි. යෙදුම් අගුල Vaultara විවෘත කරන සෑම විටම ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල ඉල්ලයි.",
+  "twoStepAppLockAction": "යෙදුම් අගුල ක්‍රියාත්මක කරන්න",
+  "twoStepSignOutOthersBody": "ඔබ නොහඳුනන තැනක පුරනය වී ඇත්ද? වෙනත් උපාංගවලින් වරනය වන්න.",
+  "twoStepReviewDevices": "උපාංග සමාලෝචනය කරන්න",
+  "twoStepSkipForNow": "දැනට මඟ හරින්න",
+  "twoStepOffTitle": "පියවර දෙකේ සත්‍යාපනය අක්‍රියයි",
+  "twoStepOffBody": "ඔබ උපස්ථ කේතයකින් පුරනය වූ බැවින් පියවර දෙකේ සත්‍යාපනය අක්‍රිය කෙරිණි. ගිණුම ආරක්ෂිතව තබා ගැනීමට මෙම දුරකථනයේ එය නැවත සකසන්න.",
+  "expiryPlusYears": "{years, plural, one{+වසර {years}} other{+වසර {years}}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "දිනය ටයිප් කරන්න",
+  "expiryTypeTitle": "කල් ඉකුත් වන දිනය ටයිප් කරන්න",
+  "expiryTypeHint": "උදාහරණයක් ලෙස {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "එම දිනය නිවැරදි ලෙස නොපෙනේ. {example} උත්සාහ කරන්න.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "මෙම දිනය පසු වී ඇති බැවින් වාර්තාව කල් ඉකුත් වූ ලෙස සුරැකේ.",
+  "expiryEndsToday": "මෙය අද කල් ඉකුත් වේ.",
+  "saveAndAddAnother": "සුරකින්න සහ තවත් එකක් එක් කරන්න",
+  "quickStartTitle": "ඉක්මන් ආරම්භය",
+  "categoryCreatedAddGroup": "{name} සාදන ලදී. එයට කණ්ඩායමක් එක් කරන්නද?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} සාදන ලදී. එයට වාර්තාවක් එක් කරන්නද?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "සහතික",
+  "groupIdeaLicences": "බලපත්‍ර",
+  "groupIdeaContracts": "ගිවිසුම්",
+  "groupIdeaPermits": "අවසරපත්‍ර",
+  "groupIdeaInsurance": "රක්ෂණ",
+  "assistantCategoryAddTitle": "නව ප්‍රවර්ගය",
+  "assistantCategoryAddNote": "නම අනුව නිරූපකයක් තෝරා ගැනේ. පසුව වෙනස් කළ හැක.",
+  "assistantCategoryRenameTitle": "ප්‍රවර්ගය නැවත නම් කරන්න",
+  "assistantGroupAddTitle": "නව කණ්ඩායම",
+  "assistantGroupRenameTitle": "කණ්ඩායම නැවත නම් කරන්න",
+  "assistantMoveTitle": "{count, plural, one{වාර්තා {count}ක් ගෙන යන්න} other{වාර්තා {count}ක් ගෙන යන්න}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "වාර්තාව ප්‍රතිසාධනය කරන්න",
+  "assistantRestoreNote": "වාර්තාව සහ එහි සිහිකැඳවීම් ආපසු එයි.",
+  "assistantStepCategories": "ඔබේ ප්‍රවර්ග පරීක්ෂා කරමින්…",
+  "assistantStepCosts": "අලුත් කිරීමේ වියදම් එකතු කරමින්…",
+  "assistantStepVisa": "වීසා නීති පරීක්ෂා කරමින්…"
 }

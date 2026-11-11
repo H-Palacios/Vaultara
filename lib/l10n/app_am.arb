@@ -3119,5 +3119,146 @@
       }
     }
   },
-  "homePinnedTitle": "የተሰኩ ምድቦች"
+  "homePinnedTitle": "የተሰኩ ምድቦች",
+  "notifAskTitle": "አስታዋሾችዎን በሰዓቱ ያግኙ",
+  "notifAskBody": "Vaultara አንድ ነገር ከማለቁ በፊት ሊያስታውስዎ የሚችለው ማሳወቂያዎች ከተፈቀዱ ብቻ ነው። የምንልከው አስታዋሾችን እና አስፈላጊ የመለያ ማንቂያዎችን ብቻ ነው።",
+  "notifAskAllow": "ማሳወቂያዎችን ፍቀድ",
+  "notifAskLater": "አሁን አይደለም",
+  "signInTooManyTries": "በጣም ብዙ ሙከራዎች። እንደገና ከመሞከርዎ በፊት ትንሽ ይጠብቁ ወይም የይለፍ ቃልዎን ዳግም ያስጀምሩ።",
+  "signInWaitSeconds": "{seconds, plural, =1{በ{seconds} ሰከንድ ውስጥ እንደገና ይሞክሩ} other{በ{seconds} ሰከንዶች ውስጥ እንደገና ይሞክሩ}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "የመጠባበቂያ ኮዶች",
+  "backupCodesIntro": "ስልክዎን ወይም የማረጋገጫ መተግበሪያዎን ካጡ፣ የመጠባበቂያ ኮድ እንዲገቡ ያስችልዎታል። እያንዳንዱ ኮድ አንድ ጊዜ ብቻ ይሰራል።",
+  "backupCodesShownOnce": "እነዚህ ኮዶች የሚታዩት አንድ ጊዜ ብቻ ነው። ከዚህ ስልክ ርቀው ደህንነቱ በተጠበቀ ቦታ ያስቀምጧቸው።",
+  "backupCodesCopy": "ቅዳ",
+  "backupCodesSave": "አስቀምጥ ወይም አጋራ",
+  "backupCodesSaved": "ኮዶቼን አስቀምጫለሁ",
+  "backupCodesLeft": "{count, plural, =0{ምንም የመጠባበቂያ ኮድ አልቀረም} =1{{count} የመጠባበቂያ ኮድ ቀርቷል} other{{count} የመጠባበቂያ ኮዶች ቀርተዋል}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "የመጠባበቂያ ኮዶችን ፍጠር",
+  "backupCodesMakeNew": "አዲስ ኮዶችን ፍጠር",
+  "backupCodesReplaceTitle": "አዲስ የመጠባበቂያ ኮዶችን ልፍጠር?",
+  "backupCodesReplaceBody": "የድሮ ኮዶችዎ ወዲያውኑ መስራት ያቆማሉ።",
+  "backupCodesFileTitle": "የVaultara የመጠባበቂያ ኮዶች",
+  "backupCodesEachOnce": "እያንዳንዱ ኮድ አንድ ጊዜ ይሰራል። ደህንነቱ በተጠበቀ ቦታ ያስቀምጧቸው።",
+  "backupCodesCopied": "የመጠባበቂያ ኮዶች ተቀድተዋል። በአንድ ደቂቃ ውስጥ ከቅንጥብ ሰሌዳው ይጠፋሉ።",
+  "backupCodesNone": "እስካሁን አልተፈጠረም",
+  "backupCodesTileHint": "ስልክዎን ካጡ ይግቡ",
+  "backupCodeUseTitle": "የመጠባበቂያ ኮድ ተጠቀም",
+  "backupCodeUseBody": "ካስቀመጧቸው የመጠባበቂያ ኮዶች አንዱን ያስገቡ። አንዱን መጠቀም ባለሁለት ደረጃ ማረጋገጫን ያጠፋል፣ ስለዚህ በአዲሱ ስልክዎ ላይ እንደገና ማዋቀር ይችላሉ።",
+  "backupCodeLabel": "የመጠባበቂያ ኮድ",
+  "backupCodeFormat": "የመጠባበቂያ ኮዶች እንደ ABCDE-FGHJK ይመስላሉ።",
+  "backupCodeWrong": "ያ ኮድ አልሰራም። ያረጋግጡና እንደገና ይሞክሩ።",
+  "backupCodeBack": "የማረጋገጫ መተግበሪያዬን ተጠቀም",
+  "twoStepStepOf": "ደረጃ {step} ከ{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "በመተግበሪያዎ ውስጥ እንደ Vaultara ({email}) ሆኖ ይታያል።",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "ኮዶች በየ30 ሰከንዱ ይቀየራሉ። አሁን የሚታየውን ያስገቡ።",
+  "twoStepPaste": "ለጥፍ",
+  "twoStepBackupNext": "ይህን ስልክ ቢያጡም መግባት እንዲችሉ የመጠባበቂያ ኮዶችን ይፍጠሩ።",
+  "twoStepAppLockTitle": "መተግበሪያውንም ቆልፍ",
+  "twoStepAppLockBody": "ባለሁለት ደረጃ መግቢያን ይጠብቃል። የመተግበሪያ መቆለፊያ Vaultara በተከፈተ ቁጥር የጣት አሻራዎን፣ ፊትዎን ወይም የማያ ገጽ መቆለፊያዎን ይጠይቃል።",
+  "twoStepAppLockAction": "የመተግበሪያ መቆለፊያን አብራ",
+  "twoStepSignOutOthersBody": "በማያውቁት ቦታ ገብተዋል? ከሌሎች መሳሪያዎች ይውጡ።",
+  "twoStepReviewDevices": "መሳሪያዎችን ይገምግሙ",
+  "twoStepSkipForNow": "ለአሁን ዝለል",
+  "twoStepOffTitle": "ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል",
+  "twoStepOffBody": "በመጠባበቂያ ኮድ ስለገቡ ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል። መለያዎ እንደተጠበቀ እንዲቆይ በዚህ ስልክ ላይ እንደገና ያዋቅሩት።",
+  "expiryPlusYears": "{years, plural, =1{+{years} ዓመት} other{+{years} ዓመታት}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "ቀን ጻፍ",
+  "expiryTypeTitle": "የሚያበቃበትን ቀን ይጻፉ",
+  "expiryTypeHint": "ለምሳሌ {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ያ ቀን ትክክል አይመስልም። {example} ይሞክሩ።",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ይህ ቀን አልፏል፣ ስለዚህ መዝገቡ እንደጊዜው ያለፈበት ሆኖ ይቀመጣል።",
+  "expiryEndsToday": "ይህ ዛሬ ያበቃል።",
+  "saveAndAddAnother": "አስቀምጥና ሌላ አክል",
+  "quickStartTitle": "ፈጣን ጅምር",
+  "categoryCreatedAddGroup": "{name} ተፈጥሯል። ቡድን ይጨመርበት?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} ተፈጥሯል። መዝገብ ይጨመርበት?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "የምስክር ወረቀቶች",
+  "groupIdeaLicences": "ፈቃዶች",
+  "groupIdeaContracts": "ውሎች",
+  "groupIdeaPermits": "ፍቃዶች",
+  "groupIdeaInsurance": "ኢንሹራንስ",
+  "assistantCategoryAddTitle": "አዲስ ምድብ",
+  "assistantCategoryAddNote": "አዶ ከስሙ ይመረጣል። በኋላ መቀየር ይችላሉ።",
+  "assistantCategoryRenameTitle": "ምድቡን እንደገና ሰይም",
+  "assistantGroupAddTitle": "አዲስ ቡድን",
+  "assistantGroupRenameTitle": "ቡድኑን እንደገና ሰይም",
+  "assistantMoveTitle": "{count, plural, =1{{count} መዝገብ አንቀሳቅስ} other{{count} መዝገቦችን አንቀሳቅስ}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "መዝገቡን መልስ",
+  "assistantRestoreNote": "መዝገቡ እና አስታዋሾቹ ይመለሳሉ።",
+  "assistantStepCategories": "ምድቦችዎን በመፈተሽ ላይ…",
+  "assistantStepCosts": "የእድሳት ወጪዎችን በማስላት ላይ…",
+  "assistantStepVisa": "የቪዛ ደንቦችን በመፈተሽ ላይ…"
 }

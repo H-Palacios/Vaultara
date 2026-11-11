@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Przypięte kategorie"
+  "homePinnedTitle": "Przypięte kategorie",
+  "notifAskTitle": "Otrzymuj przypomnienia na czas",
+  "notifAskBody": "Vaultara może przypomnieć Ci o czymś przed wygaśnięciem tylko wtedy, gdy powiadomienia są dozwolone. Wysyłamy tylko przypomnienia i ważne alerty dotyczące konta.",
+  "notifAskAllow": "Zezwól na powiadomienia",
+  "notifAskLater": "Nie teraz",
+  "signInTooManyTries": "Zbyt wiele prób. Odczekaj chwilę przed kolejną próbą albo zresetuj hasło.",
+  "signInWaitSeconds": "{seconds, plural, one{Spróbuj ponownie za {seconds} sekundę} few{Spróbuj ponownie za {seconds} sekundy} many{Spróbuj ponownie za {seconds} sekund} other{Spróbuj ponownie za {seconds} sekundy}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Kody zapasowe",
+  "backupCodesIntro": "Jeśli zgubisz telefon lub aplikację uwierzytelniającą, kod zapasowy pozwoli Ci się zalogować. Każdy kod działa raz.",
+  "backupCodesShownOnce": "Te kody są wyświetlane tylko raz. Zapisz je w bezpiecznym miejscu, z dala od tego telefonu.",
+  "backupCodesCopy": "Kopiuj",
+  "backupCodesSave": "Zapisz lub udostępnij",
+  "backupCodesSaved": "Zapisałem kody",
+  "backupCodesLeft": "{count, plural, =0{Nie pozostał żaden kod zapasowy} one{Pozostał {count} kod zapasowy} few{Pozostały {count} kody zapasowe} many{Pozostało {count} kodów zapasowych} other{Pozostało {count} kodu zapasowego}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Utwórz kody zapasowe",
+  "backupCodesMakeNew": "Utwórz nowe kody",
+  "backupCodesReplaceTitle": "Utworzyć nowe kody zapasowe?",
+  "backupCodesReplaceBody": "Stare kody od razu przestaną działać.",
+  "backupCodesFileTitle": "Kody zapasowe Vaultara",
+  "backupCodesEachOnce": "Każdy kod działa raz. Przechowuj je w bezpiecznym miejscu.",
+  "backupCodesCopied": "Kody zapasowe skopiowane. Za minutę zostaną usunięte ze schowka.",
+  "backupCodesNone": "Jeszcze nie utworzono",
+  "backupCodesTileHint": "Zaloguj się, jeśli zgubisz telefon",
+  "backupCodeUseTitle": "Użyj kodu zapasowego",
+  "backupCodeUseBody": "Wpisz jeden z zapisanych kodów zapasowych. Jego użycie wyłącza weryfikację dwuetapową, aby można było skonfigurować ją ponownie na nowym telefonie.",
+  "backupCodeLabel": "Kod zapasowy",
+  "backupCodeFormat": "Kody zapasowe wyglądają tak: ABCDE-FGHJK.",
+  "backupCodeWrong": "Ten kod nie zadziałał. Sprawdź go i spróbuj ponownie.",
+  "backupCodeBack": "Użyj aplikacji uwierzytelniającej",
+  "twoStepStepOf": "Krok {step} z {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "W aplikacji będzie widoczne jako Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kody zmieniają się co 30 sekund. Wpisz ten, który widać teraz.",
+  "twoStepPaste": "Wklej",
+  "twoStepBackupNext": "Utwórz kody zapasowe, aby móc się zalogować nawet po zgubieniu tego telefonu.",
+  "twoStepAppLockTitle": "Zablokuj też aplikację",
+  "twoStepAppLockBody": "Weryfikacja dwuetapowa chroni logowanie. Blokada aplikacji prosi o odcisk palca, twarz lub blokadę ekranu przy każdym otwarciu Vaultary.",
+  "twoStepAppLockAction": "Włącz blokadę aplikacji",
+  "twoStepSignOutOthersBody": "Zalogowano w miejscu, którego nie rozpoznajesz? Wyloguj się z innych urządzeń.",
+  "twoStepReviewDevices": "Przejrzyj urządzenia",
+  "twoStepSkipForNow": "Pomiń na razie",
+  "twoStepOffTitle": "Weryfikacja dwuetapowa jest wyłączona",
+  "twoStepOffBody": "Zalogowano się kodem zapasowym, więc weryfikacja dwuetapowa została wyłączona. Skonfiguruj ją ponownie na tym telefonie, aby konto pozostało chronione.",
+  "expiryPlusYears": "{years, plural, one{+{years} rok} few{+{years} lata} many{+{years} lat} other{+{years} roku}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Wpisz datę",
+  "expiryTypeTitle": "Wpisz datę ważności",
+  "expiryTypeHint": "Na przykład {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Ta data nie wygląda poprawnie. Spróbuj {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Ta data już minęła, więc wpis zostanie zapisany jako wygasły.",
+  "expiryEndsToday": "Wygasa dzisiaj.",
+  "saveAndAddAnother": "Zapisz i dodaj kolejny",
+  "quickStartTitle": "Szybki start",
+  "categoryCreatedAddGroup": "Utworzono {name}. Dodać grupę?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "Utworzono {name}. Dodać wpis?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Certyfikaty",
+  "groupIdeaLicences": "Licencje",
+  "groupIdeaContracts": "Umowy",
+  "groupIdeaPermits": "Zezwolenia",
+  "groupIdeaInsurance": "Ubezpieczenia",
+  "assistantCategoryAddTitle": "Nowa kategoria",
+  "assistantCategoryAddNote": "Ikona jest dobierana na podstawie nazwy. Możesz ją później zmienić.",
+  "assistantCategoryRenameTitle": "Zmień nazwę kategorii",
+  "assistantGroupAddTitle": "Nowa grupa",
+  "assistantGroupRenameTitle": "Zmień nazwę grupy",
+  "assistantMoveTitle": "{count, plural, one{Przenieś {count} wpis} few{Przenieś {count} wpisy} many{Przenieś {count} wpisów} other{Przenieś {count} wpisu}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Przywróć wpis",
+  "assistantRestoreNote": "Wpis i jego przypomnienia wracają.",
+  "assistantStepCategories": "Sprawdzanie kategorii…",
+  "assistantStepCosts": "Sumowanie kosztów odnowienia…",
+  "assistantStepVisa": "Sprawdzanie zasad wizowych…"
 }

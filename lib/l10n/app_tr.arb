@@ -3081,5 +3081,146 @@
       }
     }
   },
-  "homePinnedTitle": "Sabitlenen kategoriler"
+  "homePinnedTitle": "Sabitlenen kategoriler",
+  "notifAskTitle": "Hatırlatıcılarınızı zamanında alın",
+  "notifAskBody": "Vaultara, bir şeyin süresi dolmadan önce sizi yalnızca bildirimlere izin verildiyse uyarabilir. Yalnızca hatırlatıcılar ve önemli hesap uyarıları göndeririz.",
+  "notifAskAllow": "Bildirimlere izin ver",
+  "notifAskLater": "Şimdi değil",
+  "signInTooManyTries": "Çok fazla deneme. Tekrar denemeden önce biraz bekleyin veya şifrenizi sıfırlayın.",
+  "signInWaitSeconds": "{seconds, plural, one{{seconds} saniye sonra tekrar deneyin} other{{seconds} saniye sonra tekrar deneyin}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "Yedek kodlar",
+  "backupCodesIntro": "Telefonunuzu veya kimlik doğrulama uygulamanızı kaybederseniz yedek kodla giriş yapabilirsiniz. Her kod bir kez çalışır.",
+  "backupCodesShownOnce": "Bu kodlar yalnızca bir kez gösterilir. Bu telefondan uzakta, güvenli bir yerde saklayın.",
+  "backupCodesCopy": "Kopyala",
+  "backupCodesSave": "Kaydet veya paylaş",
+  "backupCodesSaved": "Kodlarımı kaydettim",
+  "backupCodesLeft": "{count, plural, =0{Yedek kod kalmadı} one{{count} yedek kod kaldı} other{{count} yedek kod kaldı}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "Yedek kod oluştur",
+  "backupCodesMakeNew": "Yeni kodlar oluştur",
+  "backupCodesReplaceTitle": "Yeni yedek kodlar oluşturulsun mu?",
+  "backupCodesReplaceBody": "Eski kodlarınız hemen çalışmayı bırakır.",
+  "backupCodesFileTitle": "Vaultara yedek kodları",
+  "backupCodesEachOnce": "Her kod bir kez çalışır. Güvenli bir yerde saklayın.",
+  "backupCodesCopied": "Yedek kodlar kopyalandı. Bir dakika içinde panodan silinecek.",
+  "backupCodesNone": "Henüz oluşturulmadı",
+  "backupCodesTileHint": "Telefonunuzu kaybederseniz giriş yapın",
+  "backupCodeUseTitle": "Yedek kod kullan",
+  "backupCodeUseBody": "Kaydettiğiniz yedek kodlardan birini girin. Bir kod kullanmak iki adımlı doğrulamayı kapatır; böylece yeni telefonunuzda yeniden kurabilirsiniz.",
+  "backupCodeLabel": "Yedek kod",
+  "backupCodeFormat": "Yedek kodlar ABCDE-FGHJK gibi görünür.",
+  "backupCodeWrong": "Bu kod çalışmadı. Kontrol edip tekrar deneyin.",
+  "backupCodeBack": "Kimlik doğrulama uygulamamı kullan",
+  "twoStepStepOf": "Adım {step}/{total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "Uygulamanızda Vaultara ({email}) olarak görünecek.",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "Kodlar her 30 saniyede bir değişir. Şu anda görüneni girin.",
+  "twoStepPaste": "Yapıştır",
+  "twoStepBackupNext": "Bu telefonu kaybetseniz bile giriş yapabilmek için yedek kodlar oluşturun.",
+  "twoStepAppLockTitle": "Uygulamayı da kilitleyin",
+  "twoStepAppLockBody": "İki adım girişi korur. Uygulama kilidi, Vaultara her açıldığında parmak izi, yüz veya ekran kilidi ister.",
+  "twoStepAppLockAction": "Uygulama kilidini aç",
+  "twoStepSignOutOthersBody": "Tanımadığınız bir yerde oturum mu açık? Diğer cihazlardan çıkış yapın.",
+  "twoStepReviewDevices": "Cihazları incele",
+  "twoStepSkipForNow": "Şimdilik atla",
+  "twoStepOffTitle": "İki adımlı doğrulama kapalı",
+  "twoStepOffBody": "Yedek kodla giriş yaptığınız için iki adımlı doğrulama kapatıldı. Hesabınızı korumak için bu telefonda yeniden kurun.",
+  "expiryPlusYears": "{years, plural, one{+{years} yıl} other{+{years} yıl}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "Tarihi yaz",
+  "expiryTypeTitle": "Son kullanma tarihini yazın",
+  "expiryTypeHint": "Örneğin {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "Bu tarih doğru görünmüyor. {example} deneyin.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "Bu tarih geçti, bu yüzden kayıt süresi dolmuş olarak kaydedilecek.",
+  "expiryEndsToday": "Bunun süresi bugün doluyor.",
+  "saveAndAddAnother": "Kaydet ve bir tane daha ekle",
+  "quickStartTitle": "Hızlı başlangıç",
+  "categoryCreatedAddGroup": "{name} oluşturuldu. Bir grup eklensin mi?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} oluşturuldu. Bir kayıt eklensin mi?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "Sertifikalar",
+  "groupIdeaLicences": "Lisanslar",
+  "groupIdeaContracts": "Sözleşmeler",
+  "groupIdeaPermits": "İzinler",
+  "groupIdeaInsurance": "Sigorta",
+  "assistantCategoryAddTitle": "Yeni kategori",
+  "assistantCategoryAddNote": "Simge, ada göre seçilir. Daha sonra değiştirebilirsiniz.",
+  "assistantCategoryRenameTitle": "Kategoriyi yeniden adlandır",
+  "assistantGroupAddTitle": "Yeni grup",
+  "assistantGroupRenameTitle": "Grubu yeniden adlandır",
+  "assistantMoveTitle": "{count, plural, one{{count} kaydı taşı} other{{count} kaydı taşı}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "Kaydı geri yükle",
+  "assistantRestoreNote": "Kayıt ve hatırlatıcıları geri gelir.",
+  "assistantStepCategories": "Kategorileriniz kontrol ediliyor…",
+  "assistantStepCosts": "Yenileme maliyetleri toplanıyor…",
+  "assistantStepVisa": "Vize kuralları kontrol ediliyor…"
 }

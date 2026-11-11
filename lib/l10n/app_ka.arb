@@ -3099,5 +3099,146 @@
       }
     }
   },
-  "homePinnedTitle": "მიმაგრებული კატეგორიები"
+  "homePinnedTitle": "მიმაგრებული კატეგორიები",
+  "notifAskTitle": "მიიღეთ შეხსენებები დროულად",
+  "notifAskBody": "Vaultara-ს შეუძლია შეგახსენოთ რაიმეს ვადის გასვლამდე მხოლოდ მაშინ, თუ შეტყობინებები დაშვებულია. ვაგზავნით მხოლოდ შეხსენებებს და ანგარიშის მნიშვნელოვან გაფრთხილებებს.",
+  "notifAskAllow": "შეტყობინებების დაშვება",
+  "notifAskLater": "ახლა არა",
+  "signInTooManyTries": "ძალიან ბევრი მცდელობა. ცოტა დაელოდეთ ხელახლა ცდამდე ან აღადგინეთ პაროლი.",
+  "signInWaitSeconds": "{seconds, plural, =1{სცადეთ ხელახლა {seconds} წამში} other{სცადეთ ხელახლა {seconds} წამში}}",
+  "@signInWaitSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesTitle": "სარეზერვო კოდები",
+  "backupCodesIntro": "თუ ტელეფონს ან ავთენტიფიკატორ აპს დაკარგავთ, სარეზერვო კოდით შეძლებთ შესვლას. თითოეული კოდი ერთხელ მუშაობს.",
+  "backupCodesShownOnce": "ეს კოდები მხოლოდ ერთხელ ჩანს. შეინახეთ ისინი უსაფრთხო ადგილას, ამ ტელეფონისგან შორს.",
+  "backupCodesCopy": "კოპირება",
+  "backupCodesSave": "შენახვა ან გაზიარება",
+  "backupCodesSaved": "კოდები შევინახე",
+  "backupCodesLeft": "{count, plural, =0{სარეზერვო კოდი აღარ დარჩა} =1{დარჩა {count} სარეზერვო კოდი} other{დარჩა {count} სარეზერვო კოდი}}",
+  "@backupCodesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupCodesMake": "სარეზერვო კოდების შექმნა",
+  "backupCodesMakeNew": "ახალი კოდების შექმნა",
+  "backupCodesReplaceTitle": "შეიქმნას ახალი სარეზერვო კოდები?",
+  "backupCodesReplaceBody": "ძველი კოდები მაშინვე შეწყვეტს მუშაობას.",
+  "backupCodesFileTitle": "Vaultara-ს სარეზერვო კოდები",
+  "backupCodesEachOnce": "თითოეული კოდი ერთხელ მუშაობს. შეინახეთ უსაფრთხო ადგილას.",
+  "backupCodesCopied": "სარეზერვო კოდები დაკოპირდა. ერთ წუთში წაიშლება ბუფერიდან.",
+  "backupCodesNone": "ჯერ არ შექმნილა",
+  "backupCodesTileHint": "შესვლა ტელეფონის დაკარგვისას",
+  "backupCodeUseTitle": "სარეზერვო კოდის გამოყენება",
+  "backupCodeUseBody": "შეიყვანეთ შენახული სარეზერვო კოდებიდან ერთ-ერთი. მისი გამოყენება გამორთავს ორსაფეხურიან დადასტურებას, რომ ახალ ტელეფონზე თავიდან დააყენოთ.",
+  "backupCodeLabel": "სარეზერვო კოდი",
+  "backupCodeFormat": "სარეზერვო კოდები ასე გამოიყურება: ABCDE-FGHJK.",
+  "backupCodeWrong": "ეს კოდი არ იმუშავა. შეამოწმეთ და სცადეთ ხელახლა.",
+  "backupCodeBack": "ჩემი ავთენტიფიკატორი აპის გამოყენება",
+  "twoStepStepOf": "ნაბიჯი {step} / {total}",
+  "@twoStepStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "twoStepAccountLabel": "თქვენს აპში გამოჩნდება როგორც Vaultara ({email}).",
+  "@twoStepAccountLabel": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoStepCodesChange": "კოდები ყოველ 30 წამში იცვლება. შეიყვანეთ ახლა ნაჩვენები.",
+  "twoStepPaste": "ჩასმა",
+  "twoStepBackupNext": "შექმენით სარეზერვო კოდები, რომ შეძლოთ შესვლა ამ ტელეფონის დაკარგვის შემთხვევაშიც.",
+  "twoStepAppLockTitle": "აპიც დაბლოკეთ",
+  "twoStepAppLockBody": "ორსაფეხურიანი დადასტურება იცავს შესვლას. აპის დაბლოკვა Vaultara-ს ყოველ გახსნაზე ითხოვს თითის ანაბეჭდს, სახეს ან ეკრანის დაბლოკვას.",
+  "twoStepAppLockAction": "აპის დაბლოკვის ჩართვა",
+  "twoStepSignOutOthersBody": "შესული ხართ სადმე, რასაც ვერ ცნობთ? გამოდით სხვა მოწყობილობებიდან.",
+  "twoStepReviewDevices": "მოწყობილობების ნახვა",
+  "twoStepSkipForNow": "ახლა გამოტოვება",
+  "twoStepOffTitle": "ორსაფეხურიანი დადასტურება გამორთულია",
+  "twoStepOffBody": "სარეზერვო კოდით შეხვედით, ამიტომ ორსაფეხურიანი დადასტურება გამოირთო. თავიდან დააყენეთ ამ ტელეფონზე, რომ ანგარიში დაცული დარჩეს.",
+  "expiryPlusYears": "{years, plural, =1{+{years} წელი} other{+{years} წელი}}",
+  "@expiryPlusYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "expiryTypeDate": "თარიღის აკრეფა",
+  "expiryTypeTitle": "აკრიფეთ ვადის გასვლის თარიღი",
+  "expiryTypeHint": "მაგალითად {example}",
+  "@expiryTypeHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryTypeInvalid": "ეს თარიღი სწორად არ გამოიყურება. სცადეთ {example}.",
+  "@expiryTypeInvalid": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryAlreadyPassed": "ეს თარიღი გავიდა, ამიტომ ჩანაწერი შეინახება როგორც ვადაგასული.",
+  "expiryEndsToday": "ვადა დღეს გადის.",
+  "saveAndAddAnother": "შენახვა და კიდევ ერთის დამატება",
+  "quickStartTitle": "სწრაფი დაწყება",
+  "categoryCreatedAddGroup": "{name} შეიქმნა. დაემატოს ჯგუფი?",
+  "@categoryCreatedAddGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupCreatedAddRecord": "{name} შეიქმნა. დაემატოს ჩანაწერი?",
+  "@groupCreatedAddRecord": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupIdeaCertificates": "სერტიფიკატები",
+  "groupIdeaLicences": "ლიცენზიები",
+  "groupIdeaContracts": "ხელშეკრულებები",
+  "groupIdeaPermits": "ნებართვები",
+  "groupIdeaInsurance": "დაზღვევა",
+  "assistantCategoryAddTitle": "ახალი კატეგორია",
+  "assistantCategoryAddNote": "ხატულა სახელის მიხედვით შეირჩევა. მოგვიანებით შეგიძლიათ შეცვალოთ.",
+  "assistantCategoryRenameTitle": "კატეგორიის გადარქმევა",
+  "assistantGroupAddTitle": "ახალი ჯგუფი",
+  "assistantGroupRenameTitle": "ჯგუფის გადარქმევა",
+  "assistantMoveTitle": "{count, plural, =1{{count} ჩანაწერის გადატანა} other{{count} ჩანაწერის გადატანა}}",
+  "@assistantMoveTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "assistantRestoreTitle": "ჩანაწერის აღდგენა",
+  "assistantRestoreNote": "ჩანაწერი და მისი შეხსენებები ბრუნდება.",
+  "assistantStepCategories": "ვამოწმებთ თქვენს კატეგორიებს…",
+  "assistantStepCosts": "ვითვლით განახლების ხარჯებს…",
+  "assistantStepVisa": "ვამოწმებთ სავიზო წესებს…"
 }

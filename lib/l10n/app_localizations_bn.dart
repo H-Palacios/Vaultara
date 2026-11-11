@@ -8417,4 +8417,253 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get homePinnedTitle => 'পিন করা বিভাগ';
+
+  @override
+  String get notifAskTitle => 'সময়মতো আপনার রিমাইন্ডার পান';
+
+  @override
+  String get notifAskBody => 'নোটিফিকেশন অনুমোদিত থাকলেই কেবল Vaultara কিছু মেয়াদোত্তীর্ণ হওয়ার আগে আপনাকে মনে করিয়ে দিতে পারে। আমরা শুধু রিমাইন্ডার এবং গুরুত্বপূর্ণ অ্যাকাউন্ট সতর্কতা পাঠাই।';
+
+  @override
+  String get notifAskAllow => 'নোটিফিকেশন অনুমোদন করুন';
+
+  @override
+  String get notifAskLater => 'এখন নয়';
+
+  @override
+  String get signInTooManyTries => 'অনেকবার চেষ্টা হয়েছে। আবার চেষ্টা করার আগে একটু অপেক্ষা করুন, অথবা পাসওয়ার্ড রিসেট করুন।';
+
+  @override
+  String signInWaitSeconds(int seconds) {
+    String _temp0 = intl.Intl.pluralLogic(
+      seconds,
+      locale: localeName,
+      other: '$seconds সেকেন্ড পরে আবার চেষ্টা করুন',
+      one: '$seconds সেকেন্ড পরে আবার চেষ্টা করুন',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesTitle => 'ব্যাকআপ কোড';
+
+  @override
+  String get backupCodesIntro => 'ফোন বা অথেনটিকেটর অ্যাপ হারালে একটি ব্যাকআপ কোড দিয়ে সাইন ইন করতে পারবেন। প্রতিটি কোড একবারই কাজ করে।';
+
+  @override
+  String get backupCodesShownOnce => 'এই কোডগুলো কেবল একবার দেখানো হয়। এই ফোন থেকে দূরে কোনো নিরাপদ জায়গায় সেগুলো রাখুন।';
+
+  @override
+  String get backupCodesCopy => 'কপি করুন';
+
+  @override
+  String get backupCodesSave => 'সেভ বা শেয়ার করুন';
+
+  @override
+  String get backupCodesSaved => 'আমি কোডগুলো সেভ করেছি';
+
+  @override
+  String backupCodesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি ব্যাকআপ কোড বাকি',
+      one: '$countটি ব্যাকআপ কোড বাকি',
+      zero: 'কোনো ব্যাকআপ কোড বাকি নেই',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get backupCodesMake => 'ব্যাকআপ কোড তৈরি করুন';
+
+  @override
+  String get backupCodesMakeNew => 'নতুন কোড তৈরি করুন';
+
+  @override
+  String get backupCodesReplaceTitle => 'নতুন ব্যাকআপ কোড তৈরি করবেন?';
+
+  @override
+  String get backupCodesReplaceBody => 'আপনার পুরোনো কোডগুলো সঙ্গে সঙ্গে কাজ করা বন্ধ করবে।';
+
+  @override
+  String get backupCodesFileTitle => 'Vaultara ব্যাকআপ কোড';
+
+  @override
+  String get backupCodesEachOnce => 'প্রতিটি কোড একবার কাজ করে। নিরাপদ জায়গায় রাখুন।';
+
+  @override
+  String get backupCodesCopied => 'ব্যাকআপ কোড কপি হয়েছে। এক মিনিটের মধ্যে ক্লিপবোর্ড থেকে মুছে যাবে।';
+
+  @override
+  String get backupCodesNone => 'এখনও তৈরি হয়নি';
+
+  @override
+  String get backupCodesTileHint => 'ফোন হারালে সাইন ইন করুন';
+
+  @override
+  String get backupCodeUseTitle => 'ব্যাকআপ কোড ব্যবহার করুন';
+
+  @override
+  String get backupCodeUseBody => 'আপনার সেভ করা ব্যাকআপ কোডগুলোর একটি লিখুন। একটি ব্যবহার করলে দুই-ধাপ যাচাই বন্ধ হয়ে যায়, যাতে আপনি নতুন ফোনে আবার সেট আপ করতে পারেন।';
+
+  @override
+  String get backupCodeLabel => 'ব্যাকআপ কোড';
+
+  @override
+  String get backupCodeFormat => 'ব্যাকআপ কোড দেখতে ABCDE-FGHJK এর মতো।';
+
+  @override
+  String get backupCodeWrong => 'কোডটি কাজ করেনি। যাচাই করে আবার চেষ্টা করুন।';
+
+  @override
+  String get backupCodeBack => 'আমার অথেনটিকেটর অ্যাপ ব্যবহার করুন';
+
+  @override
+  String twoStepStepOf(int step, int total) {
+    return 'ধাপ $step/$total';
+  }
+
+  @override
+  String twoStepAccountLabel(String email) {
+    return 'আপনার অ্যাপে এটি Vaultara ($email) হিসেবে দেখাবে।';
+  }
+
+  @override
+  String get twoStepCodesChange => 'কোড প্রতি 30 সেকেন্ডে বদলায়। এখন যেটি দেখাচ্ছে সেটি লিখুন।';
+
+  @override
+  String get twoStepPaste => 'পেস্ট করুন';
+
+  @override
+  String get twoStepBackupNext => 'এই ফোন হারালেও সাইন ইন করতে ব্যাকআপ কোড তৈরি করুন।';
+
+  @override
+  String get twoStepAppLockTitle => 'অ্যাপটিও লক করুন';
+
+  @override
+  String get twoStepAppLockBody => 'দুই-ধাপ সাইন ইন সুরক্ষিত রাখে। অ্যাপ লক প্রতিবার Vaultara খোলার সময় আঙুলের ছাপ, মুখ বা স্ক্রিন লক চায়।';
+
+  @override
+  String get twoStepAppLockAction => 'অ্যাপ লক চালু করুন';
+
+  @override
+  String get twoStepSignOutOthersBody => 'অচেনা কোথাও সাইন ইন হয়েছে? অন্য ডিভাইস থেকে সাইন আউট করুন।';
+
+  @override
+  String get twoStepReviewDevices => 'ডিভাইস দেখুন';
+
+  @override
+  String get twoStepSkipForNow => 'এখন বাদ দিন';
+
+  @override
+  String get twoStepOffTitle => 'দুই-ধাপ যাচাই বন্ধ আছে';
+
+  @override
+  String get twoStepOffBody => 'আপনি ব্যাকআপ কোড দিয়ে সাইন ইন করেছেন, তাই দুই-ধাপ যাচাই বন্ধ করা হয়েছে। অ্যাকাউন্ট সুরক্ষিত রাখতে এই ফোনে আবার সেট আপ করুন।';
+
+  @override
+  String expiryPlusYears(int years) {
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '+$years বছর',
+      one: '+$years বছর',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get expiryTypeDate => 'তারিখ লিখুন';
+
+  @override
+  String get expiryTypeTitle => 'মেয়াদ শেষের তারিখ লিখুন';
+
+  @override
+  String expiryTypeHint(String example) {
+    return 'উদাহরণ $example';
+  }
+
+  @override
+  String expiryTypeInvalid(String example) {
+    return 'তারিখটি সঠিক মনে হচ্ছে না। $example চেষ্টা করুন।';
+  }
+
+  @override
+  String get expiryAlreadyPassed => 'এই তারিখ পেরিয়ে গেছে, তাই রেকর্ডটি মেয়াদোত্তীর্ণ হিসেবে সেভ হবে।';
+
+  @override
+  String get expiryEndsToday => 'এটির মেয়াদ আজ শেষ।';
+
+  @override
+  String get saveAndAddAnother => 'সেভ করে আরেকটি যোগ করুন';
+
+  @override
+  String get quickStartTitle => 'দ্রুত শুরু';
+
+  @override
+  String categoryCreatedAddGroup(String name) {
+    return '$name তৈরি হয়েছে। এতে একটি গ্রুপ যোগ করবেন?';
+  }
+
+  @override
+  String groupCreatedAddRecord(String name) {
+    return '$name তৈরি হয়েছে। এতে একটি রেকর্ড যোগ করবেন?';
+  }
+
+  @override
+  String get groupIdeaCertificates => 'সনদপত্র';
+
+  @override
+  String get groupIdeaLicences => 'লাইসেন্স';
+
+  @override
+  String get groupIdeaContracts => 'চুক্তি';
+
+  @override
+  String get groupIdeaPermits => 'পারমিট';
+
+  @override
+  String get groupIdeaInsurance => 'বিমা';
+
+  @override
+  String get assistantCategoryAddTitle => 'নতুন ক্যাটাগরি';
+
+  @override
+  String get assistantCategoryAddNote => 'নাম থেকে একটি আইকন বেছে নেওয়া হয়। পরে বদলাতে পারবেন।';
+
+  @override
+  String get assistantCategoryRenameTitle => 'ক্যাটাগরির নাম বদলান';
+
+  @override
+  String get assistantGroupAddTitle => 'নতুন গ্রুপ';
+
+  @override
+  String get assistantGroupRenameTitle => 'গ্রুপের নাম বদলান';
+
+  @override
+  String assistantMoveTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি রেকর্ড সরান',
+      one: '$countটি রেকর্ড সরান',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get assistantRestoreTitle => 'রেকর্ড ফিরিয়ে আনুন';
+
+  @override
+  String get assistantRestoreNote => 'রেকর্ড এবং এর রিমাইন্ডার ফিরে আসবে।';
+
+  @override
+  String get assistantStepCategories => 'আপনার ক্যাটাগরি দেখা হচ্ছে…';
+
+  @override
+  String get assistantStepCosts => 'নবায়ন খরচ যোগ করা হচ্ছে…';
+
+  @override
+  String get assistantStepVisa => 'ভিসার নিয়ম দেখা হচ্ছে…';
 }
