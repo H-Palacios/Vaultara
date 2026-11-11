@@ -17,6 +17,7 @@ import 'package:vaultara/features/billing/view/plans_screen.dart';
 import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 
 import '../../logic/category_order.dart';
+import '../../logic/group_ideas.dart';
 import '../records/records_screen.dart';
 import 'widgets/add_group_sheet.dart';
 import 'widgets/group_card.dart';
@@ -25,10 +26,15 @@ class GroupsScreen extends StatefulWidget {
   final CategoryItem category;
   final bool isPremium;
 
+  /// Opens Add group as soon as the screen shows, used right after a new
+  /// category is made.
+  final bool openAddGroupOnStart;
+
   const GroupsScreen({
     super.key,
     required this.category,
     required this.isPremium,
+    this.openAddGroupOnStart = false,
   });
 
   @override
@@ -52,7 +58,9 @@ class _GroupsScreenState extends State<GroupsScreen> {
   @override
   void initState() {
     super.initState();
-    _load();
+    _load().then((_) {
+      if (widget.openAddGroupOnStart && mounted) _openAddGroupSheet();
+    });
   }
 
   @override
@@ -81,6 +89,12 @@ class _GroupsScreenState extends State<GroupsScreen> {
     return GroupRepository.labelForCategoryKey(widget.category.key, key) ?? key;
   }
 
+  List<String> _allNames() => <String>[
+    for (final key in _presetGroupKeys) _label(key),
+    for (final key in _customGroupKeys) _label(key),
+    ...GroupRepository.getDeletedForCategory(widget.category.key),
+  ];
+
   /// The message to show when [name] is already a group here, or null.
   String? _nameTaken(String name, {String? except}) {
     final wanted = name.trim().toLowerCase();
@@ -108,7 +122,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
     );
   }
 
-  void _openRecords(String groupKey) {
+  void _openRecords(String groupKey, {bool addNow = false}) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -118,6 +132,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
             category: widget.category,
             groupKey: groupKey,
             isPremium: isPremium,
+            openAddOnStart: addNow,
           ),
         ),
       ),
@@ -152,8 +167,14 @@ class _GroupsScreenState extends State<GroupsScreen> {
                 },
               ),
         extraCheck: (name) => _nameTaken(name),
+        suggestions: GroupIdeas.forCategory(
+          loc,
+          categoryKey: widget.category.key,
+          categoryName: widget.category.label,
+          takenNames: _allNames(),
+        ),
         onCreate: (name) async {
-          await GroupRepository.addGroup(
+          final groupKey = await GroupRepository.addGroup(
             categoryKey: widget.category.key,
             name: name,
           );
@@ -161,7 +182,15 @@ class _GroupsScreenState extends State<GroupsScreen> {
           await _load(forceReload: true);
 
           if (!mounted) return;
-          ActionFeedbackSnackbar.showAdded(context, name);
+          ActionFeedbackSnackbar.showInfoWithAction(
+            context,
+            loc.groupCreatedAddRecord(name),
+            icon: Icons.check_circle_rounded,
+            actionLabel: loc.addRecord,
+            onAction: () {
+              if (mounted) _openRecords(groupKey, addNow: true);
+            },
+          );
         },
       ),
     );

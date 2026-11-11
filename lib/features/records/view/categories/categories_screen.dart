@@ -209,14 +209,23 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
             return;
           }
 
-          ActionFeedbackSnackbar.showAdded(context, newCategory.label);
           setState(() {});
+          final loc = AppLocalizations.of(context)!;
+          ActionFeedbackSnackbar.showInfoWithAction(
+            context,
+            loc.categoryCreatedAddGroup(newCategory.label),
+            icon: Icons.check_circle_rounded,
+            actionLabel: loc.addGroupTitle,
+            onAction: () {
+              if (mounted) _openCategory(newCategory, addGroup: true);
+            },
+          );
         },
       ),
     );
   }
 
-  void _openCategory(CategoryItem category) {
+  void _openCategory(CategoryItem category, {bool addGroup = false}) {
     widget.onCategoryOpened?.call(category.key);
 
     Navigator.push(
@@ -224,8 +233,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) =>
-              GroupsScreen(category: category, isPremium: isPremium),
+          builder: (_, isPremium) => GroupsScreen(
+            category: category,
+            isPremium: isPremium,
+            openAddGroupOnStart: addGroup,
+          ),
         ),
       ),
     ).then((_) {
