@@ -8725,4 +8725,45 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'בודקים את כללי הוויזה…';
+
+  @override
+  String get signUpCheckEmailTitle => 'בדקו את האימייל';
+
+  @override
+  String get signUpAlreadyHint => 'אם לכתובת הזו כבר יש חשבון Vaultara, האימייל מסביר מה לעשות במקום זאת.';
+
+  @override
+  String get signUpCodeWrong => 'הקוד שגוי או שפג תוקפו. בדקו את האימייל האחרון מ-Vaultara, או הקישו על שלח קוד שוב.';
+
+  @override
+  String get signUpCreatedSignIn => 'החשבון מוכן. חזרו והתחברו עם האימייל והסיסמה.';
+
+  @override
+  String get signUpResent => 'שלחנו אימייל חדש.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'האם התכוונתם ל-$email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'בדקו את האימייל והסיסמה. שכחתם את הסיסמה, או שאתם חדשים ב-Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'אם קיים חשבון Vaultara לאימייל הזה, קישור לאיפוס בדרך. בדקו את תיבת הדואר הנכנס.';
+
+  @override
+  String get socialContinueGoogle => 'המשך עם Google';
+
+  @override
+  String get socialContinueApple => 'המשך עם Apple';
+
+  @override
+  String get socialOr => 'או';
+
+  @override
+  String get socialNotAvailable => 'אפשרות ההתחברות הזו לא זמינה כרגע. השתמשו באימייל ובסיסמה במקום.';
+
+  @override
+  String get socialAccountExists => 'לאימייל הזה כבר יש חשבון Vaultara. התחברו עם האימייל והסיסמה.';
 }

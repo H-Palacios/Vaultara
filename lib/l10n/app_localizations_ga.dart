@@ -8871,4 +8871,45 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Rialacha víosa á seiceáil…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Seiceáil do ríomhphost';
+
+  @override
+  String get signUpAlreadyHint => 'Má tá cuntas Vaultara ag an seoladh seo cheana, míníonn an ríomhphost cad atá le déanamh ina ionad.';
+
+  @override
+  String get signUpCodeWrong => 'Tá an cód sin mícheart nó imithe in éag. Seiceáil an ríomhphost is déanaí ó Vaultara, nó tapáil Athsheol an cód.';
+
+  @override
+  String get signUpCreatedSignIn => 'Tá do chuntas réidh. Téigh ar ais agus sínigh isteach le do ríomhphost agus do phasfhocal.';
+
+  @override
+  String get signUpResent => 'Sheolamar ríomhphost nua.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'An raibh $email i gceist agat?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Seiceáil an ríomhphost agus an pasfhocal. Ar dhearmad tú do phasfhocal, nó an bhfuil tú nua ar Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Má tá cuntas Vaultara ann don ríomhphost seo, tá nasc athshocraithe ar an mbealach. Seiceáil do bhosca isteach.';
+
+  @override
+  String get socialContinueGoogle => 'Lean ar aghaidh le Google';
+
+  @override
+  String get socialContinueApple => 'Lean ar aghaidh le Apple';
+
+  @override
+  String get socialOr => 'nó';
+
+  @override
+  String get socialNotAvailable => 'Níl an rogha síniú isteach seo ar fáil faoi láthair. Úsáid do ríomhphost agus do phasfhocal ina ionad.';
+
+  @override
+  String get socialAccountExists => 'Tá cuntas Vaultara ag an ríomhphost seo cheana. Sínigh isteach le do ríomhphost agus do phasfhocal.';
 }

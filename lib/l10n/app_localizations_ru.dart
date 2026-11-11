@@ -8845,4 +8845,45 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Проверяем визовые правила…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Проверьте почту';
+
+  @override
+  String get signUpAlreadyHint => 'Если у этого адреса уже есть аккаунт Vaultara, в письме объясняется, что делать вместо этого.';
+
+  @override
+  String get signUpCodeWrong => 'Этот код неверный или устарел. Проверьте самое новое письмо от Vaultara или нажмите «Отправить код еще раз».';
+
+  @override
+  String get signUpCreatedSignIn => 'Ваш аккаунт готов. Вернитесь и войдите с помощью почты и пароля.';
+
+  @override
+  String get signUpResent => 'Мы отправили новое письмо.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Вы имели в виду $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Проверьте почту и пароль. Забыли пароль или вы впервые в Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Если для этого адреса есть аккаунт Vaultara, ссылка для сброса уже в пути. Проверьте входящие.';
+
+  @override
+  String get socialContinueGoogle => 'Продолжить с Google';
+
+  @override
+  String get socialContinueApple => 'Продолжить с Apple';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialNotAvailable => 'Этот способ входа сейчас недоступен. Используйте вместо него почту и пароль.';
+
+  @override
+  String get socialAccountExists => 'У этого адреса уже есть аккаунт Vaultara. Войдите с помощью почты и пароля.';
 }

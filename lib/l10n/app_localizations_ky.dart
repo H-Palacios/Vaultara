@@ -8666,4 +8666,45 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Виза эрежелери текшерилүүдө…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Электрондук почтаңызды текшериңиз';
+
+  @override
+  String get signUpAlreadyHint => 'Эгер бул почтанын Vaultara аккаунту мурунтан бар болсо, катта анын ордуна эмне кылуу керектиги түшүндүрүлөт.';
+
+  @override
+  String get signUpCodeWrong => 'Бул код туура эмес же мөөнөтү өткөн. Vaultara\'дан келген эң жаңы катты текшериңиз же Кодду кайра жөнөтүү баскычын басыңыз.';
+
+  @override
+  String get signUpCreatedSignIn => 'Аккаунтуңуз даяр. Артка кайтып, почтаңыз жана сырсөзүңүз менен кириңиз.';
+
+  @override
+  String get signUpResent => 'Жаңы кат жөнөттүк.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email дегиңиз келдиби?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Почта менен сырсөздү текшериңиз. Сырсөздү унуттуңузбу же Vaultara\'да жаңысызбы?';
+
+  @override
+  String get passwordResetIfAccount => 'Бул почта үчүн Vaultara аккаунту бар болсо, калыбына келтирүү шилтемеси жолдо. Кирүү кутуңузду текшериңиз.';
+
+  @override
+  String get socialContinueGoogle => 'Google менен улантуу';
+
+  @override
+  String get socialContinueApple => 'Apple менен улантуу';
+
+  @override
+  String get socialOr => 'же';
+
+  @override
+  String get socialNotAvailable => 'Бул кирүү ыкмасы азыр жеткиликсиз. Анын ордуна почтаңызды жана сырсөзүңүздү колдонуңуз.';
+
+  @override
+  String get socialAccountExists => 'Бул почтанын Vaultara аккаунту мурунтан бар. Почтаңыз жана сырсөзүңүз менен кириңиз.';
 }

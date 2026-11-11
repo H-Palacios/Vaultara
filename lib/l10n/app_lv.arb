@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Ieraksts un tā atgādinājumi atgriežas.",
   "assistantStepCategories": "Pārbauda jūsu kategorijas…",
   "assistantStepCosts": "Saskaita atjaunošanas izmaksas…",
-  "assistantStepVisa": "Pārbauda vīzu noteikumus…"
+  "assistantStepVisa": "Pārbauda vīzu noteikumus…",
+  "signUpCheckEmailTitle": "Pārbaudiet e-pastu",
+  "signUpAlreadyHint": "Ja šai e-pasta adresei jau ir Vaultara konts, vēstulē ir paskaidrots, ko darīt tā vietā.",
+  "signUpCodeWrong": "Šis kods ir nepareizs vai beidzies. Pārbaudiet jaunāko Vaultara vēstuli vai pieskarieties Nosūtīt kodu vēlreiz.",
+  "signUpCreatedSignIn": "Jūsu konts ir gatavs. Atgriezieties un pierakstieties ar savu e-pastu un paroli.",
+  "signUpResent": "Mēs nosūtījām jaunu vēstuli.",
+  "emailDidYouMean": "Vai domājāt {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Pārbaudiet e-pastu un paroli. Aizmirsāt paroli vai esat jauns Vaultara lietotājs?",
+  "passwordResetIfAccount": "Ja šai e-pasta adresei ir Vaultara konts, atiestatīšanas saite jau ir ceļā. Pārbaudiet iesūtni.",
+  "socialContinueGoogle": "Turpināt ar Google",
+  "socialContinueApple": "Turpināt ar Apple",
+  "socialOr": "vai",
+  "socialNotAvailable": "Šī pierakstīšanās iespēja pašlaik nav pieejama. Tā vietā izmantojiet savu e-pastu un paroli.",
+  "socialAccountExists": "Šai e-pasta adresei jau ir Vaultara konts. Pierakstieties ar savu e-pastu un paroli."
 }

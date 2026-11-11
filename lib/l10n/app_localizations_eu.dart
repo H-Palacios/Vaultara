@@ -8670,4 +8670,45 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Bisa-arauak egiaztatzen…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Begiratu zure posta';
+
+  @override
+  String get signUpAlreadyHint => 'Helbide honek dagoeneko Vaultara konturen bat badu, mezuak azaltzen du zer egin horren ordez.';
+
+  @override
+  String get signUpCodeWrong => 'Kode hori okerra da edo iraungi egin da. Begiratu Vaultararen azken mezua, edo sakatu Bidali kodea berriro.';
+
+  @override
+  String get signUpCreatedSignIn => 'Zure kontua prest dago. Itzuli eta hasi saioa zure posta eta pasahitzarekin.';
+
+  @override
+  String get signUpResent => 'Mezu berri bat bidali dizugu.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email esan nahi zenuen?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Egiaztatu posta eta pasahitza. Pasahitza ahaztu zaizu, edo berria zara Vaultaran?';
+
+  @override
+  String get passwordResetIfAccount => 'Posta honentzat Vaultara konturik badago, pasahitza berrezartzeko esteka bidean da. Begiratu sarrera-ontzia.';
+
+  @override
+  String get socialContinueGoogle => 'Jarraitu Google-rekin';
+
+  @override
+  String get socialContinueApple => 'Jarraitu Apple-rekin';
+
+  @override
+  String get socialOr => 'edo';
+
+  @override
+  String get socialNotAvailable => 'Saioa hasteko aukera hau ez dago erabilgarri orain. Erabili zure posta eta pasahitza.';
+
+  @override
+  String get socialAccountExists => 'Posta honek dagoeneko badu Vaultara kontu bat. Hasi saioa zure posta eta pasahitzarekin.';
 }

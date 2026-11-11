@@ -8600,4 +8600,45 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'ဗီဇာစည်းမျဉ်းများကို စစ်ဆေးနေသည်…';
+
+  @override
+  String get signUpCheckEmailTitle => 'သင့်အီးမေးလ်ကို စစ်ဆေးပါ';
+
+  @override
+  String get signUpAlreadyHint => 'ဤအီးမေးလ်တွင် Vaultara အကောင့် ရှိပြီးသားဖြစ်ပါက အစားထိုး ဘာလုပ်ရမည်ကို အီးမေးလ်တွင် ရှင်းပြထားပါသည်။';
+
+  @override
+  String get signUpCodeWrong => 'ထိုကုဒ် မှားနေသည် သို့မဟုတ် သက်တမ်းကုန်သွားပါပြီ။ Vaultara ထံမှ နောက်ဆုံးအီးမေးလ်ကို စစ်ဆေးပါ သို့မဟုတ် ကုဒ် ပြန်ပို့ရန် ကို နှိပ်ပါ။';
+
+  @override
+  String get signUpCreatedSignIn => 'သင့်အကောင့် အဆင်သင့်ဖြစ်ပါပြီ။ နောက်သို့ပြန်သွားပြီး အီးမေးလ်နှင့် စကားဝှက်ဖြင့် ဝင်ရောက်ပါ။';
+
+  @override
+  String get signUpResent => 'အီးမေးလ်အသစ် ပို့လိုက်ပါပြီ။';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email ကို ဆိုလိုပါသလား။';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'အီးမေးလ်နှင့် စကားဝှက်ကို စစ်ဆေးပါ။ စကားဝှက် မေ့သွားပါသလား သို့မဟုတ် Vaultara တွင် အသစ်ဖြစ်ပါသလား။';
+
+  @override
+  String get passwordResetIfAccount => 'ဤအီးမေးလ်အတွက် Vaultara အကောင့် ရှိပါက ပြန်သတ်မှတ်ရန် လင့်ခ် ပို့နေပါပြီ။ ဝင်စာပုံးကို စစ်ဆေးပါ။';
+
+  @override
+  String get socialContinueGoogle => 'Google ဖြင့် ဆက်လုပ်ရန်';
+
+  @override
+  String get socialContinueApple => 'Apple ဖြင့် ဆက်လုပ်ရန်';
+
+  @override
+  String get socialOr => 'သို့မဟုတ်';
+
+  @override
+  String get socialNotAvailable => 'ဤဝင်ရောက်နည်းကို ယခု အသုံးမပြုနိုင်ပါ။ အစား သင့်အီးမေးလ်နှင့် စကားဝှက်ကို သုံးပါ။';
+
+  @override
+  String get socialAccountExists => 'ဤအီးမေးလ်တွင် Vaultara အကောင့် ရှိပြီးသားဖြစ်သည်။ အီးမေးလ်နှင့် စကားဝှက်ဖြင့် ဝင်ရောက်ပါ။';
 }

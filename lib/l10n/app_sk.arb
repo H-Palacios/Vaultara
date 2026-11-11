@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Záznam aj jeho pripomenutia sa vrátia.",
   "assistantStepCategories": "Kontrolujem vaše kategórie…",
   "assistantStepCosts": "Sčítavam náklady na obnovenie…",
-  "assistantStepVisa": "Kontrolujem vízové pravidlá…"
+  "assistantStepVisa": "Kontrolujem vízové pravidlá…",
+  "signUpCheckEmailTitle": "Skontrolujte e-mail",
+  "signUpAlreadyHint": "Ak už má tento e-mail účet Vaultara, e-mail vysvetlí, čo urobiť namiesto toho.",
+  "signUpCodeWrong": "Tento kód je nesprávny alebo vypršal. Pozrite si najnovší e-mail od Vaultary alebo ťuknite na Znovu odoslať kód.",
+  "signUpCreatedSignIn": "Váš účet je pripravený. Vráťte sa a prihláste sa e-mailom a heslom.",
+  "signUpResent": "Poslali sme nový e-mail.",
+  "emailDidYouMean": "Mysleli ste {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Skontrolujte e-mail a heslo. Zabudli ste heslo, alebo ste vo Vaultare noví?",
+  "passwordResetIfAccount": "Ak k tomuto e-mailu existuje účet Vaultara, odkaz na obnovenie je na ceste. Skontrolujte doručenú poštu.",
+  "socialContinueGoogle": "Pokračovať cez Google",
+  "socialContinueApple": "Pokračovať cez Apple",
+  "socialOr": "alebo",
+  "socialNotAvailable": "Tento spôsob prihlásenia teraz nie je dostupný. Použite namiesto toho e-mail a heslo.",
+  "socialAccountExists": "Tento e-mail už má účet Vaultara. Prihláste sa e-mailom a heslom."
 }

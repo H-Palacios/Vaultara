@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Înregistrarea și mementourile ei revin.",
   "assistantStepCategories": "Se verifică categoriile tale…",
   "assistantStepCosts": "Se adună costurile de reînnoire…",
-  "assistantStepVisa": "Se verifică regulile de viză…"
+  "assistantStepVisa": "Se verifică regulile de viză…",
+  "signUpCheckEmailTitle": "Verifică-ți e-mailul",
+  "signUpAlreadyHint": "Dacă acest e-mail are deja un cont Vaultara, mesajul explică ce să faci în schimb.",
+  "signUpCodeWrong": "Codul este greșit sau a expirat. Verifică cel mai nou e-mail de la Vaultara sau atinge Retrimite codul.",
+  "signUpCreatedSignIn": "Contul tău este gata. Întoarce-te și conectează-te cu e-mailul și parola.",
+  "signUpResent": "Am trimis un e-mail nou.",
+  "emailDidYouMean": "Te refereai la {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Verifică e-mailul și parola. Ți-ai uitat parola sau ești nou în Vaultara?",
+  "passwordResetIfAccount": "Dacă există un cont Vaultara pentru acest e-mail, un link de resetare e pe drum. Verifică-ți căsuța de e-mail.",
+  "socialContinueGoogle": "Continuă cu Google",
+  "socialContinueApple": "Continuă cu Apple",
+  "socialOr": "sau",
+  "socialNotAvailable": "Această opțiune de conectare nu este disponibilă acum. Folosește în schimb e-mailul și parola.",
+  "socialAccountExists": "Acest e-mail are deja un cont Vaultara. Conectează-te cu e-mailul și parola."
 }

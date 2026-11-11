@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "ದಾಖಲೆ ಮತ್ತು ಅದರ ಜ್ಞಾಪನೆಗಳು ಹಿಂತಿರುಗುತ್ತವೆ.",
   "assistantStepCategories": "ನಿಮ್ಮ ವರ್ಗಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…",
   "assistantStepCosts": "ನವೀಕರಣ ವೆಚ್ಚಗಳನ್ನು ಲೆಕ್ಕಿಸಲಾಗುತ್ತಿದೆ…",
-  "assistantStepVisa": "ವೀಸಾ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"
+  "assistantStepVisa": "ವೀಸಾ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…",
+  "signUpCheckEmailTitle": "ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ",
+  "signUpAlreadyHint": "ಈ ಇಮೇಲ್‌ಗೆ ಈಗಾಗಲೇ Vaultara ಖಾತೆ ಇದ್ದರೆ, ಬದಲಿಗೆ ಏನು ಮಾಡಬೇಕು ಎಂದು ಇಮೇಲ್ ವಿವರಿಸುತ್ತದೆ.",
+  "signUpCodeWrong": "ಆ ಕೋಡ್ ತಪ್ಪಾಗಿದೆ ಅಥವಾ ಅವಧಿ ಮುಗಿದಿದೆ. Vaultara ದಿಂದ ಬಂದ ಹೊಸ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ, ಅಥವಾ ಕೋಡ್ ಮತ್ತೆ ಕಳುಹಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "signUpCreatedSignIn": "ನಿಮ್ಮ ಖಾತೆ ಸಿದ್ಧವಾಗಿದೆ. ಹಿಂದಕ್ಕೆ ಹೋಗಿ ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+  "signUpResent": "ನಾವು ಹೊಸ ಇಮೇಲ್ ಕಳುಹಿಸಿದ್ದೇವೆ.",
+  "emailDidYouMean": "ನೀವು {email} ಎಂದು ಅರ್ಥೈಸಿದ್ದೀರಾ?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಪರಿಶೀಲಿಸಿ. ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರಾ, ಅಥವಾ Vaultara ಗೆ ಹೊಸಬರೇ?",
+  "passwordResetIfAccount": "ಈ ಇಮೇಲ್‌ಗೆ Vaultara ಖಾತೆ ಇದ್ದರೆ, ಮರುಹೊಂದಿಸುವ ಲಿಂಕ್ ಬರುತ್ತಿದೆ. ನಿಮ್ಮ ಇನ್‌ಬಾಕ್ಸ್ ಪರಿಶೀಲಿಸಿ.",
+  "socialContinueGoogle": "Google ಮೂಲಕ ಮುಂದುವರಿಯಿರಿ",
+  "socialContinueApple": "Apple ಮೂಲಕ ಮುಂದುವರಿಯಿರಿ",
+  "socialOr": "ಅಥವಾ",
+  "socialNotAvailable": "ಈ ಸೈನ್ ಇನ್ ಆಯ್ಕೆ ಈಗ ಲಭ್ಯವಿಲ್ಲ. ಬದಲಿಗೆ ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಬಳಸಿ.",
+  "socialAccountExists": "ಈ ಇಮೇಲ್‌ಗೆ ಈಗಾಗಲೇ Vaultara ಖಾತೆ ಇದೆ. ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ."
 }

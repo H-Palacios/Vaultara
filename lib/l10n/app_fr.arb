@@ -3234,5 +3234,25 @@
   "assistantRestoreNote": "L'élément et ses rappels sont rétablis.",
   "assistantStepCategories": "Vérification de vos catégories…",
   "assistantStepCosts": "Calcul des frais de renouvellement…",
-  "assistantStepVisa": "Vérification des règles de visa…"
+  "assistantStepVisa": "Vérification des règles de visa…",
+  "signUpCheckEmailTitle": "Vérifiez vos e-mails",
+  "signUpAlreadyHint": "Si cette adresse a déjà un compte Vaultara, l'e-mail explique quoi faire à la place.",
+  "signUpCodeWrong": "Ce code est incorrect ou a expiré. Consultez le dernier e-mail de Vaultara ou touchez Renvoyer le code.",
+  "signUpCreatedSignIn": "Votre compte est prêt. Revenez en arrière et connectez-vous avec votre e-mail et votre mot de passe.",
+  "signUpResent": "Nous avons envoyé un nouvel e-mail.",
+  "emailDidYouMean": "Vouliez-vous dire {email} ?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Vérifiez l'e-mail et le mot de passe. Mot de passe oublié, ou nouveau sur Vaultara ?",
+  "passwordResetIfAccount": "S'il existe un compte Vaultara pour cette adresse, un lien de réinitialisation est en route. Consultez votre boîte de réception.",
+  "socialContinueGoogle": "Continuer avec Google",
+  "socialContinueApple": "Continuer avec Apple",
+  "socialOr": "ou",
+  "socialNotAvailable": "Cette option de connexion n'est pas disponible pour le moment. Utilisez plutôt votre e-mail et votre mot de passe.",
+  "socialAccountExists": "Cette adresse a déjà un compte Vaultara. Connectez-vous avec votre e-mail et votre mot de passe."
 }

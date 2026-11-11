@@ -3227,5 +3227,25 @@
   "assistantRestoreNote": "הרשומה והתזכורות שלה חוזרות.",
   "assistantStepCategories": "בודקים את הקטגוריות שלכם…",
   "assistantStepCosts": "מחשבים את עלויות החידוש…",
-  "assistantStepVisa": "בודקים את כללי הוויזה…"
+  "assistantStepVisa": "בודקים את כללי הוויזה…",
+  "signUpCheckEmailTitle": "בדקו את האימייל",
+  "signUpAlreadyHint": "אם לכתובת הזו כבר יש חשבון Vaultara, האימייל מסביר מה לעשות במקום זאת.",
+  "signUpCodeWrong": "הקוד שגוי או שפג תוקפו. בדקו את האימייל האחרון מ-Vaultara, או הקישו על שלח קוד שוב.",
+  "signUpCreatedSignIn": "החשבון מוכן. חזרו והתחברו עם האימייל והסיסמה.",
+  "signUpResent": "שלחנו אימייל חדש.",
+  "emailDidYouMean": "האם התכוונתם ל-{email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "בדקו את האימייל והסיסמה. שכחתם את הסיסמה, או שאתם חדשים ב-Vaultara?",
+  "passwordResetIfAccount": "אם קיים חשבון Vaultara לאימייל הזה, קישור לאיפוס בדרך. בדקו את תיבת הדואר הנכנס.",
+  "socialContinueGoogle": "המשך עם Google",
+  "socialContinueApple": "המשך עם Apple",
+  "socialOr": "או",
+  "socialNotAvailable": "אפשרות ההתחברות הזו לא זמינה כרגע. השתמשו באימייל ובסיסמה במקום.",
+  "socialAccountExists": "לאימייל הזה כבר יש חשבון Vaultara. התחברו עם האימייל והסיסמה."
 }

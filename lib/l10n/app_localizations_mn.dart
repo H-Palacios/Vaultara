@@ -8656,4 +8656,45 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Визний дүрмийг шалгаж байна…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Имэйлээ шалгана уу';
+
+  @override
+  String get signUpAlreadyHint => 'Хэрэв энэ имэйл аль хэдийн Vaultara бүртгэлтэй бол оронд нь юу хийхийг имэйлд тайлбарласан байна.';
+
+  @override
+  String get signUpCodeWrong => 'Тэр код буруу эсвэл хугацаа нь дууссан. Vaultara-аас ирсэн хамгийн сүүлийн имэйлийг шалгах эсвэл Код дахин илгээх дээр дарна уу.';
+
+  @override
+  String get signUpCreatedSignIn => 'Таны бүртгэл бэлэн боллоо. Буцаж очоод имэйл, нууц үгээрээ нэвтэрнэ үү.';
+
+  @override
+  String get signUpResent => 'Бид шинэ имэйл илгээлээ.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Та $email гэж хэлэх гэсэн үү?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Имэйл болон нууц үгээ шалгана уу. Нууц үгээ мартсан уу, эсвэл Vaultara-д шинэ үү?';
+
+  @override
+  String get passwordResetIfAccount => 'Энэ имэйлд Vaultara бүртгэл байгаа бол сэргээх холбоос замдаа явж байна. Ирсэн имэйлээ шалгана уу.';
+
+  @override
+  String get socialContinueGoogle => 'Google-ээр үргэлжлүүлэх';
+
+  @override
+  String get socialContinueApple => 'Apple-ээр үргэлжлүүлэх';
+
+  @override
+  String get socialOr => 'эсвэл';
+
+  @override
+  String get socialNotAvailable => 'Энэ нэвтрэх сонголт одоогоор боломжгүй байна. Оронд нь имэйл, нууц үгээ ашиглана уу.';
+
+  @override
+  String get socialAccountExists => 'Энэ имэйл аль хэдийн Vaultara бүртгэлтэй. Имэйл, нууц үгээрээ нэвтэрнэ үү.';
 }

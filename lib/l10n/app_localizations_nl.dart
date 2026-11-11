@@ -8670,4 +8670,45 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Visumregels controleren…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Controleer je e-mail';
+
+  @override
+  String get signUpAlreadyHint => 'Als dit e-mailadres al een Vaultara-account heeft, legt de e-mail uit wat je in plaats daarvan kunt doen.';
+
+  @override
+  String get signUpCodeWrong => 'Die code is onjuist of verlopen. Bekijk de nieuwste e-mail van Vaultara of tik op Code opnieuw verzenden.';
+
+  @override
+  String get signUpCreatedSignIn => 'Je account is klaar. Ga terug en log in met je e-mailadres en wachtwoord.';
+
+  @override
+  String get signUpResent => 'We hebben een nieuwe e-mail gestuurd.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Bedoelde je $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Controleer e-mailadres en wachtwoord. Wachtwoord vergeten, of nieuw bij Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Als er een Vaultara-account voor dit e-mailadres is, is een resetlink onderweg. Bekijk je inbox.';
+
+  @override
+  String get socialContinueGoogle => 'Doorgaan met Google';
+
+  @override
+  String get socialContinueApple => 'Doorgaan met Apple';
+
+  @override
+  String get socialOr => 'of';
+
+  @override
+  String get socialNotAvailable => 'Deze inlogoptie is nu niet beschikbaar. Gebruik in plaats daarvan je e-mailadres en wachtwoord.';
+
+  @override
+  String get socialAccountExists => 'Dit e-mailadres heeft al een Vaultara-account. Log in met je e-mailadres en wachtwoord.';
 }

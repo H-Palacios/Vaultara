@@ -8670,4 +8670,45 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Tarkistetaan viisumisääntöjä…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Tarkista sähköpostisi';
+
+  @override
+  String get signUpAlreadyHint => 'Jos tällä sähköpostiosoitteella on jo Vaultara-tili, viestissä kerrotaan, mitä tehdä sen sijaan.';
+
+  @override
+  String get signUpCodeWrong => 'Koodi on väärä tai vanhentunut. Katso uusin viesti Vaultaralta tai napauta Lähetä koodi uudelleen.';
+
+  @override
+  String get signUpCreatedSignIn => 'Tilisi on valmis. Palaa takaisin ja kirjaudu sähköpostillasi ja salasanallasi.';
+
+  @override
+  String get signUpResent => 'Lähetimme uuden viestin.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Tarkoititko $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Tarkista sähköposti ja salasana. Unohditko salasanasi, vai oletko uusi Vaultarassa?';
+
+  @override
+  String get passwordResetIfAccount => 'Jos tälle sähköpostille on Vaultara-tili, palautuslinkki on tulossa. Tarkista saapuneet viestit.';
+
+  @override
+  String get socialContinueGoogle => 'Jatka Googlella';
+
+  @override
+  String get socialContinueApple => 'Jatka Applella';
+
+  @override
+  String get socialOr => 'tai';
+
+  @override
+  String get socialNotAvailable => 'Tämä kirjautumistapa ei ole nyt käytettävissä. Käytä sen sijaan sähköpostia ja salasanaa.';
+
+  @override
+  String get socialAccountExists => 'Tällä sähköpostilla on jo Vaultara-tili. Kirjaudu sähköpostillasi ja salasanallasi.';
 }

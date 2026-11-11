@@ -8597,4 +8597,45 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Memeriksa aturan visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Periksa email Anda';
+
+  @override
+  String get signUpAlreadyHint => 'Jika email ini sudah punya akun Vaultara, email tersebut menjelaskan apa yang perlu dilakukan.';
+
+  @override
+  String get signUpCodeWrong => 'Kode itu salah atau sudah kedaluwarsa. Periksa email terbaru dari Vaultara, atau ketuk Kirim ulang kode.';
+
+  @override
+  String get signUpCreatedSignIn => 'Akun Anda sudah siap. Kembali dan masuk dengan email dan kata sandi Anda.';
+
+  @override
+  String get signUpResent => 'Kami mengirim email baru.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Maksud Anda $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Periksa email dan kata sandi. Lupa kata sandi, atau baru di Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Jika ada akun Vaultara untuk email ini, tautan reset sedang dikirim. Periksa kotak masuk Anda.';
+
+  @override
+  String get socialContinueGoogle => 'Lanjutkan dengan Google';
+
+  @override
+  String get socialContinueApple => 'Lanjutkan dengan Apple';
+
+  @override
+  String get socialOr => 'atau';
+
+  @override
+  String get socialNotAvailable => 'Opsi masuk ini sedang tidak tersedia. Gunakan email dan kata sandi Anda.';
+
+  @override
+  String get socialAccountExists => 'Email ini sudah punya akun Vaultara. Masuk dengan email dan kata sandi Anda.';
 }

@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "ریکارڈ اور اس کی یاد دہانیاں واپس آ جاتی ہیں۔",
   "assistantStepCategories": "آپ کی کیٹیگریز چیک ہو رہی ہیں…",
   "assistantStepCosts": "تجدید کے اخراجات جمع ہو رہے ہیں…",
-  "assistantStepVisa": "ویزا قوانین چیک ہو رہے ہیں…"
+  "assistantStepVisa": "ویزا قوانین چیک ہو رہے ہیں…",
+  "signUpCheckEmailTitle": "اپنی ای میل دیکھیں",
+  "signUpAlreadyHint": "اگر اس ای میل کا پہلے سے Vaultara اکاؤنٹ ہے تو ای میل میں بتایا گیا ہوگا کہ اس کے بجائے کیا کرنا ہے۔",
+  "signUpCodeWrong": "وہ کوڈ غلط ہے یا اس کی میعاد ختم ہو گئی ہے۔ Vaultara کی تازہ ترین ای میل دیکھیں، یا کوڈ دوبارہ بھیجیں پر ٹیپ کریں۔",
+  "signUpCreatedSignIn": "آپ کا اکاؤنٹ تیار ہے۔ واپس جائیں اور اپنی ای میل اور پاس ورڈ سے سائن ان کریں۔",
+  "signUpResent": "ہم نے نئی ای میل بھیجی ہے۔",
+  "emailDidYouMean": "کیا آپ کا مطلب {email} تھا؟",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ای میل اور پاس ورڈ چیک کریں۔ پاس ورڈ بھول گئے، یا Vaultara پر نئے ہیں؟",
+  "passwordResetIfAccount": "اگر اس ای میل کے لیے Vaultara اکاؤنٹ ہے تو ری سیٹ لنک آ رہا ہے۔ اپنا ان باکس دیکھیں۔",
+  "socialContinueGoogle": "Google کے ساتھ جاری رکھیں",
+  "socialContinueApple": "Apple کے ساتھ جاری رکھیں",
+  "socialOr": "یا",
+  "socialNotAvailable": "سائن ان کا یہ طریقہ ابھی دستیاب نہیں ہے۔ اس کے بجائے اپنی ای میل اور پاس ورڈ استعمال کریں۔",
+  "socialAccountExists": "اس ای میل کا پہلے سے Vaultara اکاؤنٹ ہے۔ اپنی ای میل اور پاس ورڈ سے سائن ان کریں۔"
 }

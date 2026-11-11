@@ -8590,4 +8590,45 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'กำลังตรวจสอบกฎวีซ่า…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ตรวจสอบอีเมลของคุณ';
+
+  @override
+  String get signUpAlreadyHint => 'หากอีเมลนี้มีบัญชี Vaultara อยู่แล้ว อีเมลจะอธิบายว่าควรทำอย่างไรแทน';
+
+  @override
+  String get signUpCodeWrong => 'รหัสนี้ไม่ถูกต้องหรือหมดอายุแล้ว ตรวจสอบอีเมลล่าสุดจาก Vaultara หรือแตะ ส่งรหัสอีกครั้ง';
+
+  @override
+  String get signUpCreatedSignIn => 'บัญชีของคุณพร้อมแล้ว กลับไปและลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ';
+
+  @override
+  String get signUpResent => 'เราส่งอีเมลใหม่แล้ว';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'คุณหมายถึง $email ใช่ไหม';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ตรวจสอบอีเมลและรหัสผ่าน ลืมรหัสผ่าน หรือเพิ่งเริ่มใช้ Vaultara';
+
+  @override
+  String get passwordResetIfAccount => 'หากมีบัญชี Vaultara สำหรับอีเมลนี้ ลิงก์รีเซ็ตกำลังส่งไป ตรวจสอบกล่องจดหมายของคุณ';
+
+  @override
+  String get socialContinueGoogle => 'ดำเนินการต่อด้วย Google';
+
+  @override
+  String get socialContinueApple => 'ดำเนินการต่อด้วย Apple';
+
+  @override
+  String get socialOr => 'หรือ';
+
+  @override
+  String get socialNotAvailable => 'ตัวเลือกการลงชื่อเข้าใช้นี้ไม่พร้อมใช้งานในขณะนี้ ใช้อีเมลและรหัสผ่านของคุณแทน';
+
+  @override
+  String get socialAccountExists => 'อีเมลนี้มีบัญชี Vaultara อยู่แล้ว ลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ';
 }

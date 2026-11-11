@@ -8666,4 +8666,45 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'விசா விதிகளைச் சரிபார்க்கிறது…';
+
+  @override
+  String get signUpCheckEmailTitle => 'உங்கள் மின்னஞ்சலைப் பாருங்கள்';
+
+  @override
+  String get signUpAlreadyHint => 'இந்த மின்னஞ்சலுக்கு ஏற்கனவே Vaultara கணக்கு இருந்தால், அதற்குப் பதிலாக என்ன செய்ய வேண்டும் என்பதை மின்னஞ்சல் விளக்கும்.';
+
+  @override
+  String get signUpCodeWrong => 'அந்தக் குறியீடு தவறானது அல்லது காலாவதியானது. Vaultara-இன் புதிய மின்னஞ்சலைப் பாருங்கள், அல்லது குறியீட்டை மீண்டும் அனுப்பு என்பதைத் தட்டவும்.';
+
+  @override
+  String get signUpCreatedSignIn => 'உங்கள் கணக்கு தயார். திரும்பிச் சென்று உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லுடன் உள்நுழையவும்.';
+
+  @override
+  String get signUpResent => 'புதிய மின்னஞ்சலை அனுப்பினோம்.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'நீங்கள் $email என்று சொல்ல வந்தீர்களா?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'மின்னஞ்சலையும் கடவுச்சொல்லையும் சரிபார்க்கவும். கடவுச்சொல்லை மறந்துவிட்டீர்களா, அல்லது Vaultara-க்குப் புதியவரா?';
+
+  @override
+  String get passwordResetIfAccount => 'இந்த மின்னஞ்சலுக்கு Vaultara கணக்கு இருந்தால், மீட்டமைப்பு இணைப்பு வந்துகொண்டிருக்கிறது. உங்கள் இன்பாக்ஸைப் பாருங்கள்.';
+
+  @override
+  String get socialContinueGoogle => 'Google மூலம் தொடரவும்';
+
+  @override
+  String get socialContinueApple => 'Apple மூலம் தொடரவும்';
+
+  @override
+  String get socialOr => 'அல்லது';
+
+  @override
+  String get socialNotAvailable => 'இந்த உள்நுழைவு விருப்பம் இப்போது கிடைக்கவில்லை. அதற்குப் பதிலாக உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லைப் பயன்படுத்தவும்.';
+
+  @override
+  String get socialAccountExists => 'இந்த மின்னஞ்சலுக்கு ஏற்கனவே Vaultara கணக்கு உள்ளது. உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லுடன் உள்நுழையவும்.';
 }

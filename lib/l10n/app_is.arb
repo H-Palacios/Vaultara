@@ -3227,5 +3227,25 @@
   "assistantRestoreNote": "Færslan og áminningar hennar koma aftur.",
   "assistantStepCategories": "Athuga flokkana þína…",
   "assistantStepCosts": "Legg saman endurnýjunarkostnað…",
-  "assistantStepVisa": "Athuga reglur um vegabréfsáritanir…"
+  "assistantStepVisa": "Athuga reglur um vegabréfsáritanir…",
+  "signUpCheckEmailTitle": "Athugaðu tölvupóstinn",
+  "signUpAlreadyHint": "Ef þetta netfang er nú þegar með Vaultara-aðgang útskýrir tölvupósturinn hvað þú átt að gera í staðinn.",
+  "signUpCodeWrong": "Þessi kóði er rangur eða útrunninn. Skoðaðu nýjasta tölvupóstinn frá Vaultara eða ýttu á Senda kóða aftur.",
+  "signUpCreatedSignIn": "Aðgangurinn þinn er tilbúinn. Farðu til baka og skráðu þig inn með netfangi og lykilorði.",
+  "signUpResent": "Við sendum nýjan tölvupóst.",
+  "emailDidYouMean": "Áttirðu við {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Athugaðu netfang og lykilorð. Gleymdirðu lykilorðinu, eða ertu ný(r) í Vaultara?",
+  "passwordResetIfAccount": "Ef Vaultara-aðgangur er til fyrir þetta netfang er endurstillingartengill á leiðinni. Athugaðu innhólfið.",
+  "socialContinueGoogle": "Halda áfram með Google",
+  "socialContinueApple": "Halda áfram með Apple",
+  "socialOr": "eða",
+  "socialNotAvailable": "Þessi innskráningarleið er ekki í boði núna. Notaðu frekar netfang og lykilorð.",
+  "socialAccountExists": "Þetta netfang er nú þegar með Vaultara-aðgang. Skráðu þig inn með netfangi og lykilorði."
 }

@@ -3253,5 +3253,25 @@
   "assistantRestoreNote": "El registre i els seus recordatoris tornen.",
   "assistantStepCategories": "S'estan comprovant les categories…",
   "assistantStepCosts": "S'estan sumant els costos de renovació…",
-  "assistantStepVisa": "S'estan comprovant les normes de visat…"
+  "assistantStepVisa": "S'estan comprovant les normes de visat…",
+  "signUpCheckEmailTitle": "Revisa el correu",
+  "signUpAlreadyHint": "Si aquest correu ja té un compte de Vaultara, el missatge explica què has de fer.",
+  "signUpCodeWrong": "Aquest codi és incorrecte o ha caducat. Revisa el correu més recent de Vaultara o toca Torna a enviar el codi.",
+  "signUpCreatedSignIn": "El teu compte està a punt. Torna enrere i inicia la sessió amb el correu i la contrasenya.",
+  "signUpResent": "T'hem enviat un correu nou.",
+  "emailDidYouMean": "Volies dir {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Comprova el correu i la contrasenya. Has oblidat la contrasenya o ets nou a Vaultara?",
+  "passwordResetIfAccount": "Si hi ha un compte de Vaultara per a aquest correu, t'arribarà un enllaç per restablir la contrasenya. Revisa la safata d'entrada.",
+  "socialContinueGoogle": "Continua amb Google",
+  "socialContinueApple": "Continua amb Apple",
+  "socialOr": "o",
+  "socialNotAvailable": "Aquesta opció d'inici de sessió no està disponible ara mateix. Fes servir el correu i la contrasenya.",
+  "socialAccountExists": "Aquest correu ja té un compte de Vaultara. Inicia la sessió amb el correu i la contrasenya."
 }

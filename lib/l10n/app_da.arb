@@ -3253,5 +3253,25 @@
   "assistantRestoreNote": "Posten og dens påmindelser kommer tilbage.",
   "assistantStepCategories": "Tjekker dine kategorier…",
   "assistantStepCosts": "Lægger fornyelsesomkostninger sammen…",
-  "assistantStepVisa": "Tjekker visumregler…"
+  "assistantStepVisa": "Tjekker visumregler…",
+  "signUpCheckEmailTitle": "Tjek din e-mail",
+  "signUpAlreadyHint": "Hvis denne e-mail allerede har en Vaultara-konto, forklarer e-mailen, hvad du skal gøre i stedet.",
+  "signUpCodeWrong": "Den kode er forkert eller udløbet. Tjek den nyeste e-mail fra Vaultara, eller tryk på Send kode igen.",
+  "signUpCreatedSignIn": "Din konto er klar. Gå tilbage, og log ind med din e-mail og adgangskode.",
+  "signUpResent": "Vi har sendt en ny e-mail.",
+  "emailDidYouMean": "Mente du {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Tjek e-mail og adgangskode. Har du glemt din adgangskode, eller er du ny i Vaultara?",
+  "passwordResetIfAccount": "Hvis der er en Vaultara-konto til denne e-mail, er et link til nulstilling på vej. Tjek din indbakke.",
+  "socialContinueGoogle": "Fortsæt med Google",
+  "socialContinueApple": "Fortsæt med Apple",
+  "socialOr": "eller",
+  "socialNotAvailable": "Denne loginmulighed er ikke tilgængelig lige nu. Brug din e-mail og adgangskode i stedet.",
+  "socialAccountExists": "Denne e-mail har allerede en Vaultara-konto. Log ind med din e-mail og adgangskode."
 }

@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "नोंद आणि तिची स्मरणपत्रे परत येतात.",
   "assistantStepCategories": "तुमच्या श्रेणी तपासत आहे…",
   "assistantStepCosts": "नूतनीकरण खर्च मोजत आहे…",
-  "assistantStepVisa": "व्हिसा नियम तपासत आहे…"
+  "assistantStepVisa": "व्हिसा नियम तपासत आहे…",
+  "signUpCheckEmailTitle": "तुमचा ईमेल तपासा",
+  "signUpAlreadyHint": "या ईमेलचे आधीच Vaultara खाते असल्यास, त्याऐवजी काय करायचे ते ईमेलमध्ये सांगितले आहे.",
+  "signUpCodeWrong": "तो कोड चुकीचा आहे किंवा त्याची मुदत संपली आहे. Vaultara चा सर्वात नवीन ईमेल तपासा, किंवा कोड पुन्हा पाठवा वर टॅप करा.",
+  "signUpCreatedSignIn": "तुमचे खाते तयार आहे. परत जा आणि तुमच्या ईमेल आणि पासवर्डने साइन इन करा.",
+  "signUpResent": "आम्ही नवीन ईमेल पाठवला आहे.",
+  "emailDidYouMean": "तुम्हाला {email} म्हणायचे होते का?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ईमेल आणि पासवर्ड तपासा. पासवर्ड विसरलात, की Vaultara वर नवीन आहात?",
+  "passwordResetIfAccount": "या ईमेलसाठी Vaultara खाते असल्यास, रीसेट लिंक येत आहे. तुमचा इनबॉक्स तपासा.",
+  "socialContinueGoogle": "Google सह सुरू ठेवा",
+  "socialContinueApple": "Apple सह सुरू ठेवा",
+  "socialOr": "किंवा",
+  "socialNotAvailable": "हा साइन इन पर्याय सध्या उपलब्ध नाही. त्याऐवजी तुमचा ईमेल आणि पासवर्ड वापरा.",
+  "socialAccountExists": "या ईमेलचे आधीच Vaultara खाते आहे. तुमच्या ईमेल आणि पासवर्डने साइन इन करा."
 }

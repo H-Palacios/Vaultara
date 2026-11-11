@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Zapis in njegovi opomniki se vrnejo.",
   "assistantStepCategories": "Preverjam vaše kategorije…",
   "assistantStepCosts": "Seštevam stroške podaljšanja…",
-  "assistantStepVisa": "Preverjam pravila za vizume…"
+  "assistantStepVisa": "Preverjam pravila za vizume…",
+  "signUpCheckEmailTitle": "Preverite e-pošto",
+  "signUpAlreadyHint": "Če ima ta e-poštni naslov že račun Vaultara, sporočilo pojasni, kaj storiti namesto tega.",
+  "signUpCodeWrong": "Ta koda je napačna ali je potekla. Preverite najnovejše sporočilo od Vaultare ali tapnite Ponovno pošlji kodo.",
+  "signUpCreatedSignIn": "Vaš račun je pripravljen. Vrnite se in se prijavite z e-pošto in geslom.",
+  "signUpResent": "Poslali smo novo sporočilo.",
+  "emailDidYouMean": "Ste mislili {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Preverite e-pošto in geslo. Ste pozabili geslo ali ste novi v Vaultari?",
+  "passwordResetIfAccount": "Če za ta e-poštni naslov obstaja račun Vaultara, je povezava za ponastavitev na poti. Preverite prejeto pošto.",
+  "socialContinueGoogle": "Nadaljuj z Googlom",
+  "socialContinueApple": "Nadaljuj z Applom",
+  "socialOr": "ali",
+  "socialNotAvailable": "Ta način prijave trenutno ni na voljo. Namesto tega uporabite e-pošto in geslo.",
+  "socialAccountExists": "Ta e-poštni naslov že ima račun Vaultara. Prijavite se z e-pošto in geslom."
 }

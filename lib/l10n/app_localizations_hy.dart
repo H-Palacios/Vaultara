@@ -8666,4 +8666,45 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Ստուգում ենք վիզայի կանոնները…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Ստուգեք ձեր էլ. փոստը';
+
+  @override
+  String get signUpAlreadyHint => 'Եթե այս էլ. հասցեն արդեն ունի Vaultara հաշիվ, նամակում բացատրված է, թե փոխարենն ինչ անել։';
+
+  @override
+  String get signUpCodeWrong => 'Այդ կոդը սխալ է կամ ժամկետանց։ Ստուգեք Vaultara-ի ամենավերջին նամակը կամ հպեք Վերաուղարկել կոդը։';
+
+  @override
+  String get signUpCreatedSignIn => 'Ձեր հաշիվը պատրաստ է։ Վերադարձեք և մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։';
+
+  @override
+  String get signUpResent => 'Մենք նոր նամակ ուղարկեցինք։';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Նկատի ունեի՞ք $email';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Ստուգեք էլ. հասցեն և գաղտնաբառը։ Մոռացե՞լ եք գաղտնաբառը, թե՞ նոր եք Vaultara-ում։';
+
+  @override
+  String get passwordResetIfAccount => 'Եթե այս էլ. հասցեի համար Vaultara հաշիվ կա, վերակայման հղումը ճանապարհին է։ Ստուգեք մուտքի արկղը։';
+
+  @override
+  String get socialContinueGoogle => 'Շարունակել Google-ով';
+
+  @override
+  String get socialContinueApple => 'Շարունակել Apple-ով';
+
+  @override
+  String get socialOr => 'կամ';
+
+  @override
+  String get socialNotAvailable => 'Մուտքի այս տարբերակը հիմա հասանելի չէ։ Փոխարենն օգտագործեք ձեր էլ. հասցեն և գաղտնաբառը։';
+
+  @override
+  String get socialAccountExists => 'Այս էլ. հասցեն արդեն ունի Vaultara հաշիվ։ Մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։';
 }

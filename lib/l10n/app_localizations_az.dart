@@ -8666,4 +8666,45 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Viza qaydaları yoxlanılır…';
+
+  @override
+  String get signUpCheckEmailTitle => 'E-poçtunuzu yoxlayın';
+
+  @override
+  String get signUpAlreadyHint => 'Bu e-poçtun artıq Vaultara hesabı varsa, məktub bunun əvəzinə nə etməli olduğunuzu izah edir.';
+
+  @override
+  String get signUpCodeWrong => 'Bu kod səhvdir və ya müddəti bitib. Vaultara-dan gələn ən yeni məktuba baxın və ya Kodu yenidən göndər düyməsinə toxunun.';
+
+  @override
+  String get signUpCreatedSignIn => 'Hesabınız hazırdır. Geri qayıdın və e-poçt və parolunuzla daxil olun.';
+
+  @override
+  String get signUpResent => 'Yeni məktub göndərdik.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email nəzərdə tuturdunuz?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'E-poçtu və parolu yoxlayın. Parolu unutmusunuz, yoxsa Vaultara-da yenisiniz?';
+
+  @override
+  String get passwordResetIfAccount => 'Bu e-poçt üçün Vaultara hesabı varsa, sıfırlama linki yoldadır. Gələnlər qutunuzu yoxlayın.';
+
+  @override
+  String get socialContinueGoogle => 'Google ilə davam et';
+
+  @override
+  String get socialContinueApple => 'Apple ilə davam et';
+
+  @override
+  String get socialOr => 'və ya';
+
+  @override
+  String get socialNotAvailable => 'Bu giriş seçimi hazırda əlçatan deyil. Bunun əvəzinə e-poçt və parolunuzdan istifadə edin.';
+
+  @override
+  String get socialAccountExists => 'Bu e-poçtun artıq Vaultara hesabı var. E-poçt və parolunuzla daxil olun.';
 }

@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "កំណត់ត្រា និងការរំលឹករបស់វាត្រឡប់មកវិញ។",
   "assistantStepCategories": "កំពុងពិនិត្យប្រភេទរបស់អ្នក…",
   "assistantStepCosts": "កំពុងបូកថ្លៃបន្ត…",
-  "assistantStepVisa": "កំពុងពិនិត្យច្បាប់ទិដ្ឋាការ…"
+  "assistantStepVisa": "កំពុងពិនិត្យច្បាប់ទិដ្ឋាការ…",
+  "signUpCheckEmailTitle": "ពិនិត្យអ៊ីមែលរបស់អ្នក",
+  "signUpAlreadyHint": "ប្រសិនបើអ៊ីមែលនេះមានគណនី Vaultara រួចហើយ អ៊ីមែលនឹងពន្យល់ពីអ្វីដែលត្រូវធ្វើជំនួសវិញ។",
+  "signUpCodeWrong": "លេខកូដនោះមិនត្រឹមត្រូវ ឬផុតកំណត់ហើយ។ សូមពិនិត្យអ៊ីមែលចុងក្រោយពី Vaultara ឬចុច ផ្ញើលេខកូដម្ដងទៀត។",
+  "signUpCreatedSignIn": "គណនីរបស់អ្នករួចរាល់ហើយ។ សូមត្រឡប់ក្រោយ ហើយចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។",
+  "signUpResent": "យើងបានផ្ញើអ៊ីមែលថ្មី។",
+  "emailDidYouMean": "តើអ្នកចង់និយាយថា {email} មែនទេ?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "សូមពិនិត្យអ៊ីមែល និងពាក្យសម្ងាត់។ ភ្លេចពាក្យសម្ងាត់ ឬទើបមកប្រើ Vaultara?",
+  "passwordResetIfAccount": "ប្រសិនបើមានគណនី Vaultara សម្រាប់អ៊ីមែលនេះ តំណកំណត់ឡើងវិញកំពុងផ្ញើមក។ សូមពិនិត្យប្រអប់សំបុត្រ។",
+  "socialContinueGoogle": "បន្តជាមួយ Google",
+  "socialContinueApple": "បន្តជាមួយ Apple",
+  "socialOr": "ឬ",
+  "socialNotAvailable": "ជម្រើសចូលនេះមិនអាចប្រើបានឥឡូវនេះទេ។ សូមប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នកជំនួសវិញ។",
+  "socialAccountExists": "អ៊ីមែលនេះមានគណនី Vaultara រួចហើយ។ សូមចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។"
 }

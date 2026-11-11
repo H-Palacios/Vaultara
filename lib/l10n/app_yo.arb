@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Àkọsílẹ̀ náà àti àwọn ìrántí rẹ̀ yóò padà.",
   "assistantStepCategories": "Ń ṣàyẹ̀wò àwọn ẹ̀ka rẹ…",
   "assistantStepCosts": "Ń ṣe àròpọ̀ owó ìsọdọ̀tun…",
-  "assistantStepVisa": "Ń ṣàyẹ̀wò àwọn òfin físà…"
+  "assistantStepVisa": "Ń ṣàyẹ̀wò àwọn òfin físà…",
+  "signUpCheckEmailTitle": "Ṣàyẹ̀wò ímeèlì rẹ",
+  "signUpAlreadyHint": "Bí ímeèlì yìí bá ti ní àkáǹtì Vaultara tẹ́lẹ̀, ímeèlì náà yóò ṣàlàyé ohun tí o lè ṣe dípò bẹ́ẹ̀.",
+  "signUpCodeWrong": "Kóòdù yẹn kò tọ̀nà tàbí ó ti parí. Ṣàyẹ̀wò ímeèlì tuntun jùlọ láti Vaultara, tàbí tẹ Tun koodu ranse.",
+  "signUpCreatedSignIn": "Àkáǹtì rẹ ti ṣetán. Padà sẹ́yìn kí o wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ.",
+  "signUpResent": "A ti fi ímeèlì tuntun ránṣẹ́.",
+  "emailDidYouMean": "Ṣé {email} ni o ní lọ́kàn?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Ṣàyẹ̀wò ímeèlì àti ọ̀rọ̀ aṣínà. Ṣé o gbàgbé ọ̀rọ̀ aṣínà rẹ, tàbí o jẹ́ tuntun sí Vaultara?",
+  "passwordResetIfAccount": "Bí àkáǹtì Vaultara bá wà fún ímeèlì yìí, ìjápọ̀ àtúntò ń bọ̀. Ṣàyẹ̀wò àpótí ìwọlé rẹ.",
+  "socialContinueGoogle": "Tẹ̀síwájú pẹ̀lú Google",
+  "socialContinueApple": "Tẹ̀síwájú pẹ̀lú Apple",
+  "socialOr": "tàbí",
+  "socialNotAvailable": "Ọ̀nà ìwọlé yìí kò sí báyìí. Lo ímeèlì àti ọ̀rọ̀ aṣínà rẹ dípò rẹ̀.",
+  "socialAccountExists": "Ímeèlì yìí ti ní àkáǹtì Vaultara tẹ́lẹ̀. Wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ."
 }

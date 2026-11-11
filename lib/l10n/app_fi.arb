@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Tietue ja sen muistutukset palaavat.",
   "assistantStepCategories": "Tarkistetaan luokkiasi…",
   "assistantStepCosts": "Lasketaan uusimiskuluja…",
-  "assistantStepVisa": "Tarkistetaan viisumisääntöjä…"
+  "assistantStepVisa": "Tarkistetaan viisumisääntöjä…",
+  "signUpCheckEmailTitle": "Tarkista sähköpostisi",
+  "signUpAlreadyHint": "Jos tällä sähköpostiosoitteella on jo Vaultara-tili, viestissä kerrotaan, mitä tehdä sen sijaan.",
+  "signUpCodeWrong": "Koodi on väärä tai vanhentunut. Katso uusin viesti Vaultaralta tai napauta Lähetä koodi uudelleen.",
+  "signUpCreatedSignIn": "Tilisi on valmis. Palaa takaisin ja kirjaudu sähköpostillasi ja salasanallasi.",
+  "signUpResent": "Lähetimme uuden viestin.",
+  "emailDidYouMean": "Tarkoititko {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Tarkista sähköposti ja salasana. Unohditko salasanasi, vai oletko uusi Vaultarassa?",
+  "passwordResetIfAccount": "Jos tälle sähköpostille on Vaultara-tili, palautuslinkki on tulossa. Tarkista saapuneet viestit.",
+  "socialContinueGoogle": "Jatka Googlella",
+  "socialContinueApple": "Jatka Applella",
+  "socialOr": "tai",
+  "socialNotAvailable": "Tämä kirjautumistapa ei ole nyt käytettävissä. Käytä sen sijaan sähköpostia ja salasanaa.",
+  "socialAccountExists": "Tällä sähköpostilla on jo Vaultara-tili. Kirjaudu sähköpostillasi ja salasanallasi."
 }

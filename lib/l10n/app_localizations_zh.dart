@@ -8602,6 +8602,47 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantStepVisa => '正在检查签证规定…';
+
+  @override
+  String get signUpCheckEmailTitle => '查看你的邮箱';
+
+  @override
+  String get signUpAlreadyHint => '如果这个邮箱已经有 Vaultara 账户，邮件会说明你该怎么做。';
+
+  @override
+  String get signUpCodeWrong => '该验证码不正确或已过期。请查看 Vaultara 发来的最新邮件，或点按“重新发送验证码”。';
+
+  @override
+  String get signUpCreatedSignIn => '你的账户已准备就绪。请返回并使用邮箱和密码登录。';
+
+  @override
+  String get signUpResent => '我们已发送一封新邮件。';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '你是想输入 $email 吗？';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => '请检查邮箱和密码。忘记密码了，还是第一次使用 Vaultara？';
+
+  @override
+  String get passwordResetIfAccount => '如果这个邮箱有 Vaultara 账户，重置链接正在发送中。请查看收件箱。';
+
+  @override
+  String get socialContinueGoogle => '使用 Google 继续';
+
+  @override
+  String get socialContinueApple => '使用 Apple 继续';
+
+  @override
+  String get socialOr => '或';
+
+  @override
+  String get socialNotAvailable => '此登录方式目前不可用。请改用邮箱和密码。';
+
+  @override
+  String get socialAccountExists => '这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -17190,6 +17231,47 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantStepVisa => '正在检查签证规定…';
+
+  @override
+  String get signUpCheckEmailTitle => '查看你的邮箱';
+
+  @override
+  String get signUpAlreadyHint => '如果这个邮箱已经有 Vaultara 账户，邮件会说明你该怎么做。';
+
+  @override
+  String get signUpCodeWrong => '该验证码不正确或已过期。请查看 Vaultara 发来的最新邮件，或点按“重新发送验证码”。';
+
+  @override
+  String get signUpCreatedSignIn => '你的账户已准备就绪。请返回并使用邮箱和密码登录。';
+
+  @override
+  String get signUpResent => '我们已发送一封新邮件。';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '你是想输入 $email 吗？';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => '请检查邮箱和密码。忘记密码了，还是第一次使用 Vaultara？';
+
+  @override
+  String get passwordResetIfAccount => '如果这个邮箱有 Vaultara 账户，重置链接正在发送中。请查看收件箱。';
+
+  @override
+  String get socialContinueGoogle => '使用 Google 继续';
+
+  @override
+  String get socialContinueApple => '使用 Apple 继续';
+
+  @override
+  String get socialOr => '或';
+
+  @override
+  String get socialNotAvailable => '此登录方式目前不可用。请改用邮箱和密码。';
+
+  @override
+  String get socialAccountExists => '这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -25778,4 +25860,45 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantStepVisa => '正在檢查簽證規定…';
+
+  @override
+  String get signUpCheckEmailTitle => '查看你的電子郵件';
+
+  @override
+  String get signUpAlreadyHint => '如果這個電子郵件已經有 Vaultara 帳戶，郵件會說明你該怎麼做。';
+
+  @override
+  String get signUpCodeWrong => '這個驗證碼不正確或已過期。請查看 Vaultara 寄來的最新郵件，或點按「重新發送驗證碼」。';
+
+  @override
+  String get signUpCreatedSignIn => '你的帳戶已準備就緒。請返回並使用電子郵件和密碼登入。';
+
+  @override
+  String get signUpResent => '我們已寄出新的郵件。';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '你是想輸入 $email 嗎？';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => '請檢查電子郵件和密碼。忘記密碼了，還是第一次使用 Vaultara？';
+
+  @override
+  String get passwordResetIfAccount => '如果這個電子郵件有 Vaultara 帳戶，重設連結正在寄送中。請查看收件匣。';
+
+  @override
+  String get socialContinueGoogle => '使用 Google 繼續';
+
+  @override
+  String get socialContinueApple => '使用 Apple 繼續';
+
+  @override
+  String get socialOr => '或';
+
+  @override
+  String get socialNotAvailable => '這個登入方式目前無法使用。請改用電子郵件和密碼。';
+
+  @override
+  String get socialAccountExists => '這個電子郵件已經有 Vaultara 帳戶。請使用電子郵件和密碼登入。';
 }

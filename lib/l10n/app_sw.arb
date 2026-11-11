@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Rekodi na vikumbusho vyake vinarudi.",
   "assistantStepCategories": "Inakagua aina zako…",
   "assistantStepCosts": "Inajumlisha gharama za kusasisha…",
-  "assistantStepVisa": "Inakagua sheria za viza…"
+  "assistantStepVisa": "Inakagua sheria za viza…",
+  "signUpCheckEmailTitle": "Angalia barua pepe yako",
+  "signUpAlreadyHint": "Ikiwa barua pepe hii tayari ina akaunti ya Vaultara, barua pepe itaeleza la kufanya badala yake.",
+  "signUpCodeWrong": "Msimbo huo si sahihi au umeisha muda. Angalia barua pepe mpya zaidi kutoka Vaultara, au gusa Tuma tena nambari ya siri.",
+  "signUpCreatedSignIn": "Akaunti yako iko tayari. Rudi nyuma uingie kwa barua pepe na nenosiri lako.",
+  "signUpResent": "Tumetuma barua pepe mpya.",
+  "emailDidYouMean": "Ulimaanisha {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Angalia barua pepe na nenosiri. Umesahau nenosiri, au wewe ni mgeni kwenye Vaultara?",
+  "passwordResetIfAccount": "Ikiwa kuna akaunti ya Vaultara ya barua pepe hii, kiungo cha kuweka upya kiko njiani. Angalia kikasha chako.",
+  "socialContinueGoogle": "Endelea na Google",
+  "socialContinueApple": "Endelea na Apple",
+  "socialOr": "au",
+  "socialNotAvailable": "Njia hii ya kuingia haipatikani sasa. Tumia barua pepe na nenosiri lako badala yake.",
+  "socialAccountExists": "Barua pepe hii tayari ina akaunti ya Vaultara. Ingia kwa barua pepe na nenosiri lako."
 }

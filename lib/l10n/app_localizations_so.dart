@@ -8665,4 +8665,45 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Waxaa la hubinayaa xeerarka fiisaha…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Hubi iimaylkaaga';
+
+  @override
+  String get signUpAlreadyHint => 'Haddii iimaylkan uu horey u leeyahay akoon Vaultara, iimaylku wuxuu sharxayaa waxa aad samayn lahayd beddelkeeda.';
+
+  @override
+  String get signUpCodeWrong => 'Koodkaasi waa khalad ama wuu dhacay. Hubi iimaylka ugu cusub ee Vaultara, ama taabo Dir koodka mar kale.';
+
+  @override
+  String get signUpCreatedSignIn => 'Akoonkaagu waa diyaar. Dib u laabo oo ku gal iimaylkaaga iyo eraygaaga sirta ah.';
+
+  @override
+  String get signUpResent => 'Waxaan dirnay iimayl cusub.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ma waxaad ula jeeday $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Hubi iimaylka iyo erayga sirta ah. Ma ilowday erayga sirta ah, mise waxaad ku cusub tahay Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Haddii uu jiro akoon Vaultara oo iimaylkan ah, xiriirka dib-u-dejintu waa soo socdaa. Hubi sanduuqaaga fariimaha.';
+
+  @override
+  String get socialContinueGoogle => 'Ku sii wad Google';
+
+  @override
+  String get socialContinueApple => 'Ku sii wad Apple';
+
+  @override
+  String get socialOr => 'ama';
+
+  @override
+  String get socialNotAvailable => 'Habkan galitaanku hadda lama heli karo. Beddelkeeda isticmaal iimaylkaaga iyo eraygaaga sirta ah.';
+
+  @override
+  String get socialAccountExists => 'Iimaylkan wuxuu horey u leeyahay akoon Vaultara. Ku gal iimaylkaaga iyo eraygaaga sirta ah.';
 }

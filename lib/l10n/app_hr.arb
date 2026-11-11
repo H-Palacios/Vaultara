@@ -3227,5 +3227,25 @@
   "assistantRestoreNote": "Zapis i njegovi podsjetnici se vraćaju.",
   "assistantStepCategories": "Provjeravam vaše kategorije…",
   "assistantStepCosts": "Zbrajam troškove obnove…",
-  "assistantStepVisa": "Provjeravam pravila za vize…"
+  "assistantStepVisa": "Provjeravam pravila za vize…",
+  "signUpCheckEmailTitle": "Provjerite e-poštu",
+  "signUpAlreadyHint": "Ako ova e-pošta već ima Vaultara račun, poruka objašnjava što učiniti umjesto toga.",
+  "signUpCodeWrong": "Taj je kod pogrešan ili je istekao. Provjerite najnoviju poruku od Vaultare ili dodirnite Ponovno pošalji kôd.",
+  "signUpCreatedSignIn": "Vaš je račun spreman. Vratite se i prijavite e-poštom i lozinkom.",
+  "signUpResent": "Poslali smo novu poruku.",
+  "emailDidYouMean": "Jeste li mislili {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Provjerite e-poštu i lozinku. Zaboravili ste lozinku ili ste novi u Vaultari?",
+  "passwordResetIfAccount": "Ako za ovu e-poštu postoji Vaultara račun, poveznica za poništavanje je na putu. Provjerite pristiglu poštu.",
+  "socialContinueGoogle": "Nastavi s Googleom",
+  "socialContinueApple": "Nastavi s Appleom",
+  "socialOr": "ili",
+  "socialNotAvailable": "Ova opcija prijave trenutačno nije dostupna. Umjesto toga upotrijebite e-poštu i lozinku.",
+  "socialAccountExists": "Ova e-pošta već ima Vaultara račun. Prijavite se e-poštom i lozinkom."
 }

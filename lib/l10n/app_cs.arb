@@ -3253,5 +3253,25 @@
   "assistantRestoreNote": "Záznam i jeho připomenutí se vrátí.",
   "assistantStepCategories": "Kontroluji vaše kategorie…",
   "assistantStepCosts": "Sčítám náklady na obnovení…",
-  "assistantStepVisa": "Kontroluji vízová pravidla…"
+  "assistantStepVisa": "Kontroluji vízová pravidla…",
+  "signUpCheckEmailTitle": "Zkontrolujte e-mail",
+  "signUpAlreadyHint": "Pokud už má tento e-mail účet Vaultara, e-mail vysvětlí, co udělat místo toho.",
+  "signUpCodeWrong": "Tento kód je špatný nebo vypršel. Podívejte se na nejnovější e-mail od Vaultary nebo klepněte na Znovu odeslat kód.",
+  "signUpCreatedSignIn": "Váš účet je připravený. Vraťte se a přihlaste se e-mailem a heslem.",
+  "signUpResent": "Poslali jsme nový e-mail.",
+  "emailDidYouMean": "Mysleli jste {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Zkontrolujte e-mail a heslo. Zapomněli jste heslo, nebo jste ve Vaultaře noví?",
+  "passwordResetIfAccount": "Pokud k tomuto e-mailu existuje účet Vaultara, odkaz pro obnovení je na cestě. Zkontrolujte doručenou poštu.",
+  "socialContinueGoogle": "Pokračovat přes Google",
+  "socialContinueApple": "Pokračovat přes Apple",
+  "socialOr": "nebo",
+  "socialNotAvailable": "Tento způsob přihlášení teď není dostupný. Použijte místo toho e-mail a heslo.",
+  "socialAccountExists": "Tento e-mail už má účet Vaultara. Přihlaste se e-mailem a heslem."
 }

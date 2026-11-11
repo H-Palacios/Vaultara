@@ -8602,4 +8602,45 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Menyemak peraturan visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Semak e-mel anda';
+
+  @override
+  String get signUpAlreadyHint => 'Jika e-mel ini sudah mempunyai akaun Vaultara, e-mel itu menerangkan apa yang perlu dilakukan sebaliknya.';
+
+  @override
+  String get signUpCodeWrong => 'Kod itu salah atau sudah tamat tempoh. Semak e-mel terbaharu daripada Vaultara, atau ketik Hantar semula kod.';
+
+  @override
+  String get signUpCreatedSignIn => 'Akaun anda sudah sedia. Kembali dan log masuk dengan e-mel dan kata laluan anda.';
+
+  @override
+  String get signUpResent => 'Kami telah menghantar e-mel baharu.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Adakah maksud anda $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Semak e-mel dan kata laluan. Lupa kata laluan, atau baharu di Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Jika ada akaun Vaultara untuk e-mel ini, pautan tetapan semula sedang dihantar. Semak peti masuk anda.';
+
+  @override
+  String get socialContinueGoogle => 'Teruskan dengan Google';
+
+  @override
+  String get socialContinueApple => 'Teruskan dengan Apple';
+
+  @override
+  String get socialOr => 'atau';
+
+  @override
+  String get socialNotAvailable => 'Pilihan log masuk ini tidak tersedia sekarang. Gunakan e-mel dan kata laluan anda.';
+
+  @override
+  String get socialAccountExists => 'E-mel ini sudah mempunyai akaun Vaultara. Log masuk dengan e-mel dan kata laluan anda.';
 }

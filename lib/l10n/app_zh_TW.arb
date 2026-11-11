@@ -3215,5 +3215,25 @@
   "assistantRestoreNote": "記錄及其提醒會恢復。",
   "assistantStepCategories": "正在檢查你的類別…",
   "assistantStepCosts": "正在加總續約費用…",
-  "assistantStepVisa": "正在檢查簽證規定…"
+  "assistantStepVisa": "正在檢查簽證規定…",
+  "signUpCheckEmailTitle": "查看你的電子郵件",
+  "signUpAlreadyHint": "如果這個電子郵件已經有 Vaultara 帳戶，郵件會說明你該怎麼做。",
+  "signUpCodeWrong": "這個驗證碼不正確或已過期。請查看 Vaultara 寄來的最新郵件，或點按「重新發送驗證碼」。",
+  "signUpCreatedSignIn": "你的帳戶已準備就緒。請返回並使用電子郵件和密碼登入。",
+  "signUpResent": "我們已寄出新的郵件。",
+  "emailDidYouMean": "你是想輸入 {email} 嗎？",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "請檢查電子郵件和密碼。忘記密碼了，還是第一次使用 Vaultara？",
+  "passwordResetIfAccount": "如果這個電子郵件有 Vaultara 帳戶，重設連結正在寄送中。請查看收件匣。",
+  "socialContinueGoogle": "使用 Google 繼續",
+  "socialContinueApple": "使用 Apple 繼續",
+  "socialOr": "或",
+  "socialNotAvailable": "這個登入方式目前無法使用。請改用電子郵件和密碼。",
+  "socialAccountExists": "這個電子郵件已經有 Vaultara 帳戶。請使用電子郵件和密碼登入。"
 }

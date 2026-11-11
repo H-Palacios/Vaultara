@@ -3229,5 +3229,25 @@
   "assistantRestoreNote": "El registro y sus recordatorios vuelven.",
   "assistantStepCategories": "Revisando tus categorías…",
   "assistantStepCosts": "Sumando costes de renovación…",
-  "assistantStepVisa": "Revisando las normas de visado…"
+  "assistantStepVisa": "Revisando las normas de visado…",
+  "signUpCheckEmailTitle": "Revisa tu correo",
+  "signUpAlreadyHint": "Si este correo ya tiene una cuenta de Vaultara, el mensaje explica qué hacer en su lugar.",
+  "signUpCodeWrong": "Ese código es incorrecto o ha caducado. Revisa el correo más reciente de Vaultara o toca Reenviar código.",
+  "signUpCreatedSignIn": "Tu cuenta está lista. Vuelve atrás e inicia sesión con tu correo y contraseña.",
+  "signUpResent": "Te enviamos un correo nuevo.",
+  "emailDidYouMean": "¿Quisiste decir {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Revisa el correo y la contraseña. ¿Olvidaste tu contraseña o eres nuevo en Vaultara?",
+  "passwordResetIfAccount": "Si hay una cuenta de Vaultara para este correo, te llegará un enlace para restablecer la contraseña. Revisa tu bandeja de entrada.",
+  "socialContinueGoogle": "Continuar con Google",
+  "socialContinueApple": "Continuar con Apple",
+  "socialOr": "o",
+  "socialNotAvailable": "Esta opción de inicio de sesión no está disponible ahora. Usa tu correo y contraseña.",
+  "socialAccountExists": "Este correo ya tiene una cuenta de Vaultara. Inicia sesión con tu correo y contraseña."
 }

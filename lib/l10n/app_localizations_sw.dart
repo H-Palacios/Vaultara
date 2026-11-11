@@ -8666,4 +8666,45 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Inakagua sheria za viza…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Angalia barua pepe yako';
+
+  @override
+  String get signUpAlreadyHint => 'Ikiwa barua pepe hii tayari ina akaunti ya Vaultara, barua pepe itaeleza la kufanya badala yake.';
+
+  @override
+  String get signUpCodeWrong => 'Msimbo huo si sahihi au umeisha muda. Angalia barua pepe mpya zaidi kutoka Vaultara, au gusa Tuma tena nambari ya siri.';
+
+  @override
+  String get signUpCreatedSignIn => 'Akaunti yako iko tayari. Rudi nyuma uingie kwa barua pepe na nenosiri lako.';
+
+  @override
+  String get signUpResent => 'Tumetuma barua pepe mpya.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ulimaanisha $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Angalia barua pepe na nenosiri. Umesahau nenosiri, au wewe ni mgeni kwenye Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ikiwa kuna akaunti ya Vaultara ya barua pepe hii, kiungo cha kuweka upya kiko njiani. Angalia kikasha chako.';
+
+  @override
+  String get socialContinueGoogle => 'Endelea na Google';
+
+  @override
+  String get socialContinueApple => 'Endelea na Apple';
+
+  @override
+  String get socialOr => 'au';
+
+  @override
+  String get socialNotAvailable => 'Njia hii ya kuingia haipatikani sasa. Tumia barua pepe na nenosiri lako badala yake.';
+
+  @override
+  String get socialAccountExists => 'Barua pepe hii tayari ina akaunti ya Vaultara. Ingia kwa barua pepe na nenosiri lako.';
 }

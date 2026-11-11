@@ -8822,4 +8822,45 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Kontrolujem vízové pravidlá…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Skontrolujte e-mail';
+
+  @override
+  String get signUpAlreadyHint => 'Ak už má tento e-mail účet Vaultara, e-mail vysvetlí, čo urobiť namiesto toho.';
+
+  @override
+  String get signUpCodeWrong => 'Tento kód je nesprávny alebo vypršal. Pozrite si najnovší e-mail od Vaultary alebo ťuknite na Znovu odoslať kód.';
+
+  @override
+  String get signUpCreatedSignIn => 'Váš účet je pripravený. Vráťte sa a prihláste sa e-mailom a heslom.';
+
+  @override
+  String get signUpResent => 'Poslali sme nový e-mail.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Mysleli ste $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Skontrolujte e-mail a heslo. Zabudli ste heslo, alebo ste vo Vaultare noví?';
+
+  @override
+  String get passwordResetIfAccount => 'Ak k tomuto e-mailu existuje účet Vaultara, odkaz na obnovenie je na ceste. Skontrolujte doručenú poštu.';
+
+  @override
+  String get socialContinueGoogle => 'Pokračovať cez Google';
+
+  @override
+  String get socialContinueApple => 'Pokračovať cez Apple';
+
+  @override
+  String get socialOr => 'alebo';
+
+  @override
+  String get socialNotAvailable => 'Tento spôsob prihlásenia teraz nie je dostupný. Použite namiesto toho e-mail a heslo.';
+
+  @override
+  String get socialAccountExists => 'Tento e-mail už má účet Vaultara. Prihláste sa e-mailom a heslom.';
 }

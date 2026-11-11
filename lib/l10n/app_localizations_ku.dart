@@ -8666,4 +8666,45 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Rêgezên vîzeyê têne kontrolkirin…';
+
+  @override
+  String get signUpCheckEmailTitle => 'E-nameya xwe kontrol bike';
+
+  @override
+  String get signUpAlreadyHint => 'Heke ev e-name berê hesabekî Vaultara hebe, e-name dibêje ku li şûna wê çi bikî.';
+
+  @override
+  String get signUpCodeWrong => 'Ew kod çewt e an dema wê derbas bûye. E-nameya herî nû ya Vaultara kontrol bike, an li Kodê dîsa bişîne bitikîne.';
+
+  @override
+  String get signUpCreatedSignIn => 'Hesabê te amade ye. Vegere û bi e-name û şîfreya xwe têkeve.';
+
+  @override
+  String get signUpResent => 'Me e-nameyek nû şand.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Mebesta te $email bû?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'E-name û şîfreyê kontrol bike. Te şîfreya xwe ji bîr kir, an tu li Vaultara nû yî?';
+
+  @override
+  String get passwordResetIfAccount => 'Heke ji bo vê e-nameyê hesabekî Vaultara hebe, girêdana nûkirinê di rê de ye. Qutiya xwe ya hatinê kontrol bike.';
+
+  @override
+  String get socialContinueGoogle => 'Bi Google berdewam bike';
+
+  @override
+  String get socialContinueApple => 'Bi Apple berdewam bike';
+
+  @override
+  String get socialOr => 'an';
+
+  @override
+  String get socialNotAvailable => 'Ev rêya têketinê niha ne berdest e. Li şûna wê e-name û şîfreya xwe bi kar bîne.';
+
+  @override
+  String get socialAccountExists => 'Ev e-name berê hesabekî Vaultara heye. Bi e-name û şîfreya xwe têkeve.';
 }

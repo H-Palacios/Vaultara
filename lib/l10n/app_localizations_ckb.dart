@@ -8666,4 +8666,45 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'پشکنینی یاساکانی ڤیزا…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ئیمەیڵەکەت بپشکنە';
+
+  @override
+  String get signUpAlreadyHint => 'ئەگەر ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەبێت، نامەکە ڕوونی دەکاتەوە کە لە جیاتی ئەوە چی بکەیت.';
+
+  @override
+  String get signUpCodeWrong => 'ئەو کۆدە هەڵەیە یان بەسەرچووە. نوێترین ئیمەیڵی Vaultara بپشکنە، یان لە ناردنەوەی کۆد بدە.';
+
+  @override
+  String get signUpCreatedSignIn => 'هەژمارەکەت ئامادەیە. بگەڕێوە و بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە.';
+
+  @override
+  String get signUpResent => 'ئیمەیڵێکی نوێمان نارد.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'مەبەستت $email بوو؟';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ئیمەیڵ و وشەی نهێنی بپشکنە. وشەی نهێنیت لەبیرچووە، یان لە Vaultara نوێیت؟';
+
+  @override
+  String get passwordResetIfAccount => 'ئەگەر هەژماری Vaultara بۆ ئەم ئیمەیڵە هەبێت، بەستەری ڕێکخستنەوە لە ڕێگادایە. سندوقی نامەکانت بپشکنە.';
+
+  @override
+  String get socialContinueGoogle => 'بەردەوامبوون بە Google';
+
+  @override
+  String get socialContinueApple => 'بەردەوامبوون بە Apple';
+
+  @override
+  String get socialOr => 'یان';
+
+  @override
+  String get socialNotAvailable => 'ئەم ڕێگای چوونەژوورەوەیە ئێستا بەردەست نییە. لە جیاتی ئەوە ئیمەیڵ و وشەی نهێنییەکەت بەکاربهێنە.';
+
+  @override
+  String get socialAccountExists => 'ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەیە. بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە.';
 }

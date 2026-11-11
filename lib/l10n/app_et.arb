@@ -3387,5 +3387,25 @@
   "assistantRestoreNote": "Kirje ja selle meeldetuletused tulevad tagasi.",
   "assistantStepCategories": "Kontrollin sinu kategooriaid…",
   "assistantStepCosts": "Liidan uuendamise kulud kokku…",
-  "assistantStepVisa": "Kontrollin viisareegleid…"
+  "assistantStepVisa": "Kontrollin viisareegleid…",
+  "signUpCheckEmailTitle": "Vaata oma e-posti",
+  "signUpAlreadyHint": "Kui sellel e-posti aadressil on juba Vaultara konto, selgitab kiri, mida selle asemel teha.",
+  "signUpCodeWrong": "See kood on vale või aegunud. Vaata Vaultara uusimat kirja või puuduta Saada kood uuesti.",
+  "signUpCreatedSignIn": "Sinu konto on valmis. Mine tagasi ja logi sisse oma e-posti ja parooliga.",
+  "signUpResent": "Saatsime uue kirja.",
+  "emailDidYouMean": "Kas mõtlesid {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Kontrolli e-posti ja parooli. Unustasid parooli või oled Vaultaras uus?",
+  "passwordResetIfAccount": "Kui sellele e-postile on Vaultara konto, on lähtestamislink teel. Vaata oma postkasti.",
+  "socialContinueGoogle": "Jätka Google'iga",
+  "socialContinueApple": "Jätka Apple'iga",
+  "socialOr": "või",
+  "socialNotAvailable": "See sisselogimisviis pole praegu saadaval. Kasuta selle asemel oma e-posti ja parooli.",
+  "socialAccountExists": "Sellel e-postil on juba Vaultara konto. Logi sisse oma e-posti ja parooliga."
 }

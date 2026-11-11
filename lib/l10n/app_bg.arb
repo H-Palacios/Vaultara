@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "Записът и напомнянията му се връщат.",
   "assistantStepCategories": "Проверка на категориите…",
   "assistantStepCosts": "Пресмятане на разходите за подновяване…",
-  "assistantStepVisa": "Проверка на визовите правила…"
+  "assistantStepVisa": "Проверка на визовите правила…",
+  "signUpCheckEmailTitle": "Проверете имейла си",
+  "signUpAlreadyHint": "Ако този имейл вече има акаунт във Vaultara, имейлът обяснява какво да направите вместо това.",
+  "signUpCodeWrong": "Този код е грешен или е изтекъл. Проверете най-новия имейл от Vaultara или докоснете Повторно изпращане на кода.",
+  "signUpCreatedSignIn": "Акаунтът ви е готов. Върнете се и влезте с имейла и паролата си.",
+  "signUpResent": "Изпратихме нов имейл.",
+  "emailDidYouMean": "Имахте предвид {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Проверете имейла и паролата. Забравили сте паролата си или сте нови във Vaultara?",
+  "passwordResetIfAccount": "Ако има акаунт във Vaultara за този имейл, връзка за нулиране е на път. Проверете входящата си поща.",
+  "socialContinueGoogle": "Продължаване с Google",
+  "socialContinueApple": "Продължаване с Apple",
+  "socialOr": "или",
+  "socialNotAvailable": "Тази опция за влизане не е налична в момента. Използвайте имейла и паролата си.",
+  "socialAccountExists": "Този имейл вече има акаунт във Vaultara. Влезте с имейла и паролата си."
 }

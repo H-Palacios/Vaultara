@@ -8666,4 +8666,45 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'ভিসার নিয়ম দেখা হচ্ছে…';
+
+  @override
+  String get signUpCheckEmailTitle => 'আপনার ইমেল দেখুন';
+
+  @override
+  String get signUpAlreadyHint => 'এই ইমেলের যদি আগেই Vaultara অ্যাকাউন্ট থাকে, তাহলে ইমেলে বলা থাকবে এর বদলে কী করতে হবে।';
+
+  @override
+  String get signUpCodeWrong => 'কোডটি ভুল বা মেয়াদোত্তীর্ণ। Vaultara-র সর্বশেষ ইমেল দেখুন, অথবা কোড পুনরায় পাঠান ট্যাপ করুন।';
+
+  @override
+  String get signUpCreatedSignIn => 'আপনার অ্যাকাউন্ট তৈরি। ফিরে গিয়ে আপনার ইমেল ও পাসওয়ার্ড দিয়ে সাইন ইন করুন।';
+
+  @override
+  String get signUpResent => 'আমরা একটি নতুন ইমেল পাঠিয়েছি।';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'আপনি কি $email বোঝাতে চেয়েছেন?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ইমেল ও পাসওয়ার্ড যাচাই করুন। পাসওয়ার্ড ভুলে গেছেন, নাকি Vaultara-তে নতুন?';
+
+  @override
+  String get passwordResetIfAccount => 'এই ইমেলের জন্য Vaultara অ্যাকাউন্ট থাকলে, রিসেট লিঙ্ক আসছে। আপনার ইনবক্স দেখুন।';
+
+  @override
+  String get socialContinueGoogle => 'Google দিয়ে চালিয়ে যান';
+
+  @override
+  String get socialContinueApple => 'Apple দিয়ে চালিয়ে যান';
+
+  @override
+  String get socialOr => 'অথবা';
+
+  @override
+  String get socialNotAvailable => 'এই সাইন ইন বিকল্পটি এখন উপলব্ধ নেই। এর বদলে আপনার ইমেল ও পাসওয়ার্ড ব্যবহার করুন।';
+
+  @override
+  String get socialAccountExists => 'এই ইমেলের আগেই একটি Vaultara অ্যাকাউন্ট আছে। আপনার ইমেল ও পাসওয়ার্ড দিয়ে সাইন ইন করুন।';
 }

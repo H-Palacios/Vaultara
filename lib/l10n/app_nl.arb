@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Het item en de herinneringen komen terug.",
   "assistantStepCategories": "Je categorieën controleren…",
   "assistantStepCosts": "Verlengingskosten optellen…",
-  "assistantStepVisa": "Visumregels controleren…"
+  "assistantStepVisa": "Visumregels controleren…",
+  "signUpCheckEmailTitle": "Controleer je e-mail",
+  "signUpAlreadyHint": "Als dit e-mailadres al een Vaultara-account heeft, legt de e-mail uit wat je in plaats daarvan kunt doen.",
+  "signUpCodeWrong": "Die code is onjuist of verlopen. Bekijk de nieuwste e-mail van Vaultara of tik op Code opnieuw verzenden.",
+  "signUpCreatedSignIn": "Je account is klaar. Ga terug en log in met je e-mailadres en wachtwoord.",
+  "signUpResent": "We hebben een nieuwe e-mail gestuurd.",
+  "emailDidYouMean": "Bedoelde je {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Controleer e-mailadres en wachtwoord. Wachtwoord vergeten, of nieuw bij Vaultara?",
+  "passwordResetIfAccount": "Als er een Vaultara-account voor dit e-mailadres is, is een resetlink onderweg. Bekijk je inbox.",
+  "socialContinueGoogle": "Doorgaan met Google",
+  "socialContinueApple": "Doorgaan met Apple",
+  "socialOr": "of",
+  "socialNotAvailable": "Deze inlogoptie is nu niet beschikbaar. Gebruik in plaats daarvan je e-mailadres en wachtwoord.",
+  "socialAccountExists": "Dit e-mailadres heeft al een Vaultara-account. Log in met je e-mailadres en wachtwoord."
 }

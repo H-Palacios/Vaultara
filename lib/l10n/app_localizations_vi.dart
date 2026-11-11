@@ -8602,4 +8602,45 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Đang kiểm tra quy định thị thực…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Kiểm tra email của bạn';
+
+  @override
+  String get signUpAlreadyHint => 'Nếu email này đã có tài khoản Vaultara, email sẽ giải thích bạn nên làm gì thay vào đó.';
+
+  @override
+  String get signUpCodeWrong => 'Mã đó không đúng hoặc đã hết hạn. Hãy xem email mới nhất từ Vaultara, hoặc nhấn Gửi lại mã.';
+
+  @override
+  String get signUpCreatedSignIn => 'Tài khoản của bạn đã sẵn sàng. Hãy quay lại và đăng nhập bằng email và mật khẩu.';
+
+  @override
+  String get signUpResent => 'Chúng tôi đã gửi email mới.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Có phải ý bạn là $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Kiểm tra email và mật khẩu. Bạn quên mật khẩu hay mới dùng Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Nếu có tài khoản Vaultara cho email này, liên kết đặt lại đang được gửi đến. Hãy kiểm tra hộp thư đến.';
+
+  @override
+  String get socialContinueGoogle => 'Tiếp tục với Google';
+
+  @override
+  String get socialContinueApple => 'Tiếp tục với Apple';
+
+  @override
+  String get socialOr => 'hoặc';
+
+  @override
+  String get socialNotAvailable => 'Cách đăng nhập này hiện không khả dụng. Hãy dùng email và mật khẩu thay thế.';
+
+  @override
+  String get socialAccountExists => 'Email này đã có tài khoản Vaultara. Hãy đăng nhập bằng email và mật khẩu.';
 }

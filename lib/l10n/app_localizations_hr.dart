@@ -8744,4 +8744,45 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Provjeravam pravila za vize…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Provjerite e-poštu';
+
+  @override
+  String get signUpAlreadyHint => 'Ako ova e-pošta već ima Vaultara račun, poruka objašnjava što učiniti umjesto toga.';
+
+  @override
+  String get signUpCodeWrong => 'Taj je kod pogrešan ili je istekao. Provjerite najnoviju poruku od Vaultare ili dodirnite Ponovno pošalji kôd.';
+
+  @override
+  String get signUpCreatedSignIn => 'Vaš je račun spreman. Vratite se i prijavite e-poštom i lozinkom.';
+
+  @override
+  String get signUpResent => 'Poslali smo novu poruku.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Jeste li mislili $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Provjerite e-poštu i lozinku. Zaboravili ste lozinku ili ste novi u Vaultari?';
+
+  @override
+  String get passwordResetIfAccount => 'Ako za ovu e-poštu postoji Vaultara račun, poveznica za poništavanje je na putu. Provjerite pristiglu poštu.';
+
+  @override
+  String get socialContinueGoogle => 'Nastavi s Googleom';
+
+  @override
+  String get socialContinueApple => 'Nastavi s Appleom';
+
+  @override
+  String get socialOr => 'ili';
+
+  @override
+  String get socialNotAvailable => 'Ova opcija prijave trenutačno nije dostupna. Umjesto toga upotrijebite e-poštu i lozinku.';
+
+  @override
+  String get socialAccountExists => 'Ova e-pošta već ima Vaultara račun. Prijavite se e-poštom i lozinkom.';
 }

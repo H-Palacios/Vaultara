@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "A tétel és az emlékeztetői visszakerülnek.",
   "assistantStepCategories": "Kategóriák ellenőrzése…",
   "assistantStepCosts": "Megújítási költségek összeadása…",
-  "assistantStepVisa": "Vízumszabályok ellenőrzése…"
+  "assistantStepVisa": "Vízumszabályok ellenőrzése…",
+  "signUpCheckEmailTitle": "Nézd meg az e-mailjeidet",
+  "signUpAlreadyHint": "Ha ehhez az e-mail-címhez már tartozik Vaultara-fiók, az e-mail elmagyarázza, mit tegyél helyette.",
+  "signUpCodeWrong": "Ez a kód hibás vagy lejárt. Nézd meg a Vaultara legújabb e-mailjét, vagy koppints a Kód újraküldése gombra.",
+  "signUpCreatedSignIn": "A fiókod kész. Menj vissza, és jelentkezz be az e-mail-címeddel és a jelszavaddal.",
+  "signUpResent": "Új e-mailt küldtünk.",
+  "emailDidYouMean": "Erre gondoltál: {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Ellenőrizd az e-mail-címet és a jelszót. Elfelejtetted a jelszavad, vagy új vagy a Vaultarában?",
+  "passwordResetIfAccount": "Ha ehhez az e-mail-címhez tartozik Vaultara-fiók, a visszaállító link úton van. Nézd meg a beérkező leveleidet.",
+  "socialContinueGoogle": "Folytatás Google-fiókkal",
+  "socialContinueApple": "Folytatás Apple-fiókkal",
+  "socialOr": "vagy",
+  "socialNotAvailable": "Ez a bejelentkezési mód most nem érhető el. Használd helyette az e-mail-címedet és a jelszavadat.",
+  "socialAccountExists": "Ehhez az e-mail-címhez már tartozik Vaultara-fiók. Jelentkezz be az e-mail-címeddel és a jelszavaddal."
 }

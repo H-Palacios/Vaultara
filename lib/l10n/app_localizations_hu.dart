@@ -8666,4 +8666,45 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Vízumszabályok ellenőrzése…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Nézd meg az e-mailjeidet';
+
+  @override
+  String get signUpAlreadyHint => 'Ha ehhez az e-mail-címhez már tartozik Vaultara-fiók, az e-mail elmagyarázza, mit tegyél helyette.';
+
+  @override
+  String get signUpCodeWrong => 'Ez a kód hibás vagy lejárt. Nézd meg a Vaultara legújabb e-mailjét, vagy koppints a Kód újraküldése gombra.';
+
+  @override
+  String get signUpCreatedSignIn => 'A fiókod kész. Menj vissza, és jelentkezz be az e-mail-címeddel és a jelszavaddal.';
+
+  @override
+  String get signUpResent => 'Új e-mailt küldtünk.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Erre gondoltál: $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Ellenőrizd az e-mail-címet és a jelszót. Elfelejtetted a jelszavad, vagy új vagy a Vaultarában?';
+
+  @override
+  String get passwordResetIfAccount => 'Ha ehhez az e-mail-címhez tartozik Vaultara-fiók, a visszaállító link úton van. Nézd meg a beérkező leveleidet.';
+
+  @override
+  String get socialContinueGoogle => 'Folytatás Google-fiókkal';
+
+  @override
+  String get socialContinueApple => 'Folytatás Apple-fiókkal';
+
+  @override
+  String get socialOr => 'vagy';
+
+  @override
+  String get socialNotAvailable => 'Ez a bejelentkezési mód most nem érhető el. Használd helyette az e-mail-címedet és a jelszavadat.';
+
+  @override
+  String get socialAccountExists => 'Ehhez az e-mail-címhez már tartozik Vaultara-fiók. Jelentkezz be az e-mail-címeddel és a jelszavaddal.';
 }

@@ -8660,4 +8660,45 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Sinusuri ang mga patakaran sa visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Tingnan ang iyong email';
+
+  @override
+  String get signUpAlreadyHint => 'Kung may Vaultara account na ang email na ito, ipapaliwanag ng email kung ano ang dapat gawin sa halip.';
+
+  @override
+  String get signUpCodeWrong => 'Mali o expired na ang code na iyon. Tingnan ang pinakabagong email mula sa Vaultara, o i-tap ang Ipadala muli ang code.';
+
+  @override
+  String get signUpCreatedSignIn => 'Handa na ang iyong account. Bumalik at mag-sign in gamit ang iyong email at password.';
+
+  @override
+  String get signUpResent => 'Nagpadala kami ng bagong email.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email ba ang ibig mong sabihin?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Tingnan ang email at password. Nakalimutan mo ang password mo, o bago ka sa Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Kung may Vaultara account para sa email na ito, parating na ang link para i-reset. Tingnan ang iyong inbox.';
+
+  @override
+  String get socialContinueGoogle => 'Magpatuloy gamit ang Google';
+
+  @override
+  String get socialContinueApple => 'Magpatuloy gamit ang Apple';
+
+  @override
+  String get socialOr => 'o';
+
+  @override
+  String get socialNotAvailable => 'Hindi available ngayon ang opsyong ito sa pag-sign in. Gamitin na lang ang iyong email at password.';
+
+  @override
+  String get socialAccountExists => 'May Vaultara account na ang email na ito. Mag-sign in gamit ang iyong email at password.';
 }

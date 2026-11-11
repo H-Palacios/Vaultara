@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Diiwaanka iyo xasuusinahiisu way soo laabanayaan.",
   "assistantStepCategories": "Waxaa la hubinayaa qaybahaaga…",
   "assistantStepCosts": "Waxaa la isku darayaa kharashyada cusboonaysiinta…",
-  "assistantStepVisa": "Waxaa la hubinayaa xeerarka fiisaha…"
+  "assistantStepVisa": "Waxaa la hubinayaa xeerarka fiisaha…",
+  "signUpCheckEmailTitle": "Hubi iimaylkaaga",
+  "signUpAlreadyHint": "Haddii iimaylkan uu horey u leeyahay akoon Vaultara, iimaylku wuxuu sharxayaa waxa aad samayn lahayd beddelkeeda.",
+  "signUpCodeWrong": "Koodkaasi waa khalad ama wuu dhacay. Hubi iimaylka ugu cusub ee Vaultara, ama taabo Dir koodka mar kale.",
+  "signUpCreatedSignIn": "Akoonkaagu waa diyaar. Dib u laabo oo ku gal iimaylkaaga iyo eraygaaga sirta ah.",
+  "signUpResent": "Waxaan dirnay iimayl cusub.",
+  "emailDidYouMean": "Ma waxaad ula jeeday {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Hubi iimaylka iyo erayga sirta ah. Ma ilowday erayga sirta ah, mise waxaad ku cusub tahay Vaultara?",
+  "passwordResetIfAccount": "Haddii uu jiro akoon Vaultara oo iimaylkan ah, xiriirka dib-u-dejintu waa soo socdaa. Hubi sanduuqaaga fariimaha.",
+  "socialContinueGoogle": "Ku sii wad Google",
+  "socialContinueApple": "Ku sii wad Apple",
+  "socialOr": "ama",
+  "socialNotAvailable": "Habkan galitaanku hadda lama heli karo. Beddelkeeda isticmaal iimaylkaaga iyo eraygaaga sirta ah.",
+  "socialAccountExists": "Iimaylkan wuxuu horey u leeyahay akoon Vaultara. Ku gal iimaylkaaga iyo eraygaaga sirta ah."
 }

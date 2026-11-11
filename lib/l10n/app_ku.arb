@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Tomar û bîrxistinên wê vedigerin.",
   "assistantStepCategories": "Kategoriyên te têne kontrolkirin…",
   "assistantStepCosts": "Lêçûnên nûkirinê têne hesibandin…",
-  "assistantStepVisa": "Rêgezên vîzeyê têne kontrolkirin…"
+  "assistantStepVisa": "Rêgezên vîzeyê têne kontrolkirin…",
+  "signUpCheckEmailTitle": "E-nameya xwe kontrol bike",
+  "signUpAlreadyHint": "Heke ev e-name berê hesabekî Vaultara hebe, e-name dibêje ku li şûna wê çi bikî.",
+  "signUpCodeWrong": "Ew kod çewt e an dema wê derbas bûye. E-nameya herî nû ya Vaultara kontrol bike, an li Kodê dîsa bişîne bitikîne.",
+  "signUpCreatedSignIn": "Hesabê te amade ye. Vegere û bi e-name û şîfreya xwe têkeve.",
+  "signUpResent": "Me e-nameyek nû şand.",
+  "emailDidYouMean": "Mebesta te {email} bû?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "E-name û şîfreyê kontrol bike. Te şîfreya xwe ji bîr kir, an tu li Vaultara nû yî?",
+  "passwordResetIfAccount": "Heke ji bo vê e-nameyê hesabekî Vaultara hebe, girêdana nûkirinê di rê de ye. Qutiya xwe ya hatinê kontrol bike.",
+  "socialContinueGoogle": "Bi Google berdewam bike",
+  "socialContinueApple": "Bi Apple berdewam bike",
+  "socialOr": "an",
+  "socialNotAvailable": "Ev rêya têketinê niha ne berdest e. Li şûna wê e-name û şîfreya xwe bi kar bîne.",
+  "socialAccountExists": "Ev e-name berê hesabekî Vaultara heye. Bi e-name û şîfreya xwe têkeve."
 }

@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "Yozuv va uning eslatmalari qaytadi.",
   "assistantStepCategories": "Turkumlaringiz tekshirilmoqda…",
   "assistantStepCosts": "Yangilash xarajatlari hisoblanmoqda…",
-  "assistantStepVisa": "Viza qoidalari tekshirilmoqda…"
+  "assistantStepVisa": "Viza qoidalari tekshirilmoqda…",
+  "signUpCheckEmailTitle": "Pochtangizni tekshiring",
+  "signUpAlreadyHint": "Agar bu pochtada allaqachon Vaultara hisobi bo‘lsa, xatda buning o‘rniga nima qilish kerakligi tushuntiriladi.",
+  "signUpCodeWrong": "Bu kod noto‘g‘ri yoki muddati o‘tgan. Vaultara’dan kelgan eng yangi xatni tekshiring yoki Kodni qayta yuborish tugmasini bosing.",
+  "signUpCreatedSignIn": "Hisobingiz tayyor. Orqaga qayting va pochtangiz hamda parolingiz bilan kiring.",
+  "signUpResent": "Yangi xat yubordik.",
+  "emailDidYouMean": "{email} demoqchimidingiz?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Pochta va parolni tekshiring. Parolni unutdingizmi yoki Vaultara’da yangimisiz?",
+  "passwordResetIfAccount": "Agar bu pochta uchun Vaultara hisobi bo‘lsa, tiklash havolasi yo‘lda. Kiruvchi xatlarni tekshiring.",
+  "socialContinueGoogle": "Google orqali davom etish",
+  "socialContinueApple": "Apple orqali davom etish",
+  "socialOr": "yoki",
+  "socialNotAvailable": "Bu kirish usuli hozir mavjud emas. Buning o‘rniga pochtangiz va parolingizdan foydalaning.",
+  "socialAccountExists": "Bu pochtada allaqachon Vaultara hisobi bor. Pochtangiz va parolingiz bilan kiring."
 }

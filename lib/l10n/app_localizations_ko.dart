@@ -8602,4 +8602,45 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantStepVisa => '비자 규정을 확인하는 중…';
+
+  @override
+  String get signUpCheckEmailTitle => '이메일을 확인하세요';
+
+  @override
+  String get signUpAlreadyHint => '이 이메일에 이미 Vaultara 계정이 있다면 대신 무엇을 해야 하는지 이메일에서 안내합니다.';
+
+  @override
+  String get signUpCodeWrong => '코드가 올바르지 않거나 만료되었습니다. Vaultara에서 온 최신 이메일을 확인하거나 코드 재전송을 탭하세요.';
+
+  @override
+  String get signUpCreatedSignIn => '계정이 준비되었습니다. 돌아가서 이메일과 비밀번호로 로그인하세요.';
+
+  @override
+  String get signUpResent => '새 이메일을 보냈습니다.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email을(를) 입력하려고 하셨나요?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => '이메일과 비밀번호를 확인하세요. 비밀번호를 잊으셨나요, 아니면 Vaultara가 처음이신가요?';
+
+  @override
+  String get passwordResetIfAccount => '이 이메일에 Vaultara 계정이 있다면 재설정 링크를 보내드립니다. 받은편지함을 확인하세요.';
+
+  @override
+  String get socialContinueGoogle => 'Google로 계속하기';
+
+  @override
+  String get socialContinueApple => 'Apple로 계속하기';
+
+  @override
+  String get socialOr => '또는';
+
+  @override
+  String get socialNotAvailable => '이 로그인 방법은 지금 사용할 수 없습니다. 이메일과 비밀번호를 사용하세요.';
+
+  @override
+  String get socialAccountExists => '이 이메일에는 이미 Vaultara 계정이 있습니다. 이메일과 비밀번호로 로그인하세요.';
 }

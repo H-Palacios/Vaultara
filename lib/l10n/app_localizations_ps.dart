@@ -8666,4 +8666,45 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'د ویزې قواعد ګوري…';
+
+  @override
+  String get signUpCheckEmailTitle => 'خپل برېښنالیک وګورئ';
+
+  @override
+  String get signUpAlreadyHint => 'که دا برېښنالیک دمخه د Vaultara حساب ولري، برېښنالیک به تشریح کړي چې پر ځای یې څه وکړئ.';
+
+  @override
+  String get signUpCodeWrong => 'هغه کوډ ناسم دی یا یې موده تېره شوې. د Vaultara وروستی برېښنالیک وګورئ، یا کوډ بیا ولیږئ وټکوئ.';
+
+  @override
+  String get signUpCreatedSignIn => 'ستاسو حساب چمتو دی. بېرته لاړ شئ او په خپل برېښنالیک او پټنوم ننوځئ.';
+
+  @override
+  String get signUpResent => 'موږ نوی برېښنالیک ولېږه.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'ستاسو مطلب $email و؟';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'برېښنالیک او پټنوم وګورئ. پټنوم مو هېر کړی، که په Vaultara کې نوي یاست؟';
+
+  @override
+  String get passwordResetIfAccount => 'که د دې برېښنالیک لپاره د Vaultara حساب وي، د بیا تنظیم لینک په لاره کې دی. خپل ان باکس وګورئ.';
+
+  @override
+  String get socialContinueGoogle => 'له Google سره دوام ورکړئ';
+
+  @override
+  String get socialContinueApple => 'له Apple سره دوام ورکړئ';
+
+  @override
+  String get socialOr => 'یا';
+
+  @override
+  String get socialNotAvailable => 'د ننوتلو دا لاره اوس شتون نه لري. پر ځای یې خپل برېښنالیک او پټنوم وکاروئ.';
+
+  @override
+  String get socialAccountExists => 'دا برېښنالیک دمخه د Vaultara حساب لري. په خپل برېښنالیک او پټنوم ننوځئ.';
 }

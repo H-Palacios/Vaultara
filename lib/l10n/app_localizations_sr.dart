@@ -8749,6 +8749,47 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Проверавам правила за визе…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Проверите имејл';
+
+  @override
+  String get signUpAlreadyHint => 'Ако овај имејл већ има Vaultara налог, порука објашњава шта да урадите уместо тога.';
+
+  @override
+  String get signUpCodeWrong => 'Тај код је погрешан или је истекао. Проверите најновију поруку од Vaultare или додирните Поново пошаљи код.';
+
+  @override
+  String get signUpCreatedSignIn => 'Ваш налог је спреман. Вратите се и пријавите се имејлом и лозинком.';
+
+  @override
+  String get signUpResent => 'Послали смо нову поруку.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Да ли сте мислили $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Проверите имејл и лозинку. Заборавили сте лозинку или сте нови у Vaultari?';
+
+  @override
+  String get passwordResetIfAccount => 'Ако за овај имејл постоји Vaultara налог, линк за ресетовање је на путу. Проверите пријемно сандуче.';
+
+  @override
+  String get socialContinueGoogle => 'Настави помоћу Google-а';
+
+  @override
+  String get socialContinueApple => 'Настави помоћу Apple-а';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialNotAvailable => 'Ова опција пријаве тренутно није доступна. Уместо тога користите имејл и лозинку.';
+
+  @override
+  String get socialAccountExists => 'Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -17495,6 +17536,47 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantStepVisa => 'Проверавам правила за визе…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Проверите имејл';
+
+  @override
+  String get signUpAlreadyHint => 'Ако овај имејл већ има Vaultara налог, порука објашњава шта да урадите уместо тога.';
+
+  @override
+  String get signUpCodeWrong => 'Тај код је погрешан или је истекао. Проверите најновију поруку од Vaultare или додирните Поново пошаљи код.';
+
+  @override
+  String get signUpCreatedSignIn => 'Ваш налог је спреман. Вратите се и пријавите се имејлом и лозинком.';
+
+  @override
+  String get signUpResent => 'Послали смо нову поруку.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Да ли сте мислили $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Проверите имејл и лозинку. Заборавили сте лозинку или сте нови у Vaultari?';
+
+  @override
+  String get passwordResetIfAccount => 'Ако за овај имејл постоји Vaultara налог, линк за ресетовање је на путу. Проверите пријемно сандуче.';
+
+  @override
+  String get socialContinueGoogle => 'Настави помоћу Google-а';
+
+  @override
+  String get socialContinueApple => 'Настави помоћу Apple-а';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialNotAvailable => 'Ова опција пријаве тренутно није доступна. Уместо тога користите имејл и лозинку.';
+
+  @override
+  String get socialAccountExists => 'Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -26237,4 +26319,45 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantStepVisa => 'Proveravam pravila za vize…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Proverite imejl';
+
+  @override
+  String get signUpAlreadyHint => 'Ako ovaj imejl već ima Vaultara nalog, poruka objašnjava šta da uradite umesto toga.';
+
+  @override
+  String get signUpCodeWrong => 'Taj kod je pogrešan ili je istekao. Proverite najnoviju poruku od Vaultare ili dodirnite Ponovo pošalji kod.';
+
+  @override
+  String get signUpCreatedSignIn => 'Vaš nalog je spreman. Vratite se i prijavite se imejlom i lozinkom.';
+
+  @override
+  String get signUpResent => 'Poslali smo novu poruku.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Da li ste mislili $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Proverite imejl i lozinku. Zaboravili ste lozinku ili ste novi u Vaultari?';
+
+  @override
+  String get passwordResetIfAccount => 'Ako za ovaj imejl postoji Vaultara nalog, link za resetovanje je na putu. Proverite prijemno sanduče.';
+
+  @override
+  String get socialContinueGoogle => 'Nastavi pomoću Google-a';
+
+  @override
+  String get socialContinueApple => 'Nastavi pomoću Apple-a';
+
+  @override
+  String get socialOr => 'ili';
+
+  @override
+  String get socialNotAvailable => 'Ova opcija prijave trenutno nije dostupna. Umesto toga koristite imejl i lozinku.';
+
+  @override
+  String get socialAccountExists => 'Ovaj imejl već ima Vaultara nalog. Prijavite se imejlom i lozinkom.';
 }

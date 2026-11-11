@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Rekod dan peringatannya kembali.",
   "assistantStepCategories": "Menyemak kategori anda…",
   "assistantStepCosts": "Mengira kos pembaharuan…",
-  "assistantStepVisa": "Menyemak peraturan visa…"
+  "assistantStepVisa": "Menyemak peraturan visa…",
+  "signUpCheckEmailTitle": "Semak e-mel anda",
+  "signUpAlreadyHint": "Jika e-mel ini sudah mempunyai akaun Vaultara, e-mel itu menerangkan apa yang perlu dilakukan sebaliknya.",
+  "signUpCodeWrong": "Kod itu salah atau sudah tamat tempoh. Semak e-mel terbaharu daripada Vaultara, atau ketik Hantar semula kod.",
+  "signUpCreatedSignIn": "Akaun anda sudah sedia. Kembali dan log masuk dengan e-mel dan kata laluan anda.",
+  "signUpResent": "Kami telah menghantar e-mel baharu.",
+  "emailDidYouMean": "Adakah maksud anda {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Semak e-mel dan kata laluan. Lupa kata laluan, atau baharu di Vaultara?",
+  "passwordResetIfAccount": "Jika ada akaun Vaultara untuk e-mel ini, pautan tetapan semula sedang dihantar. Semak peti masuk anda.",
+  "socialContinueGoogle": "Teruskan dengan Google",
+  "socialContinueApple": "Teruskan dengan Apple",
+  "socialOr": "atau",
+  "socialNotAvailable": "Pilihan log masuk ini tidak tersedia sekarang. Gunakan e-mel dan kata laluan anda.",
+  "socialAccountExists": "E-mel ini sudah mempunyai akaun Vaultara. Log masuk dengan e-mel dan kata laluan anda."
 }

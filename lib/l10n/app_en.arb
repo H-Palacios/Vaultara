@@ -10647,5 +10647,62 @@
   "assistantStepVisa": "Checking visa rules…",
   "@assistantStepVisa": {
     "description": "Shown while Ask Vaultara checks visa guidance."
+  },
+  "signUpCheckEmailTitle": "Check your email",
+  "@signUpCheckEmailTitle": {
+    "description": "Title of the screen after Create account, where the 6-digit code is entered."
+  },
+  "signUpAlreadyHint": "If this email already has a Vaultara account, the email explains what to do instead.",
+  "@signUpAlreadyHint": {
+    "description": "Note under the email address on the sign-up code screen."
+  },
+  "signUpCodeWrong": "That code is wrong or has expired. Check the newest email from Vaultara, or tap Resend code.",
+  "@signUpCodeWrong": {
+    "description": "Error for a wrong, expired or missing sign-up code."
+  },
+  "signUpCreatedSignIn": "Your account is ready. Go back and sign in with your email and password.",
+  "@signUpCreatedSignIn": {
+    "description": "Shown if the account was made but signing in straight away did not work."
+  },
+  "signUpResent": "We sent a new email.",
+  "@signUpResent": {
+    "description": "Shown after Resend code on the sign-up code screen."
+  },
+  "emailDidYouMean": "Did you mean {email}?",
+  "@emailDidYouMean": {
+    "description": "Suggestion under an email field when the address looks mistyped.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Check the email and password. Forgot your password, or new to Vaultara?",
+  "@signInWrongDetailsHelp": {
+    "description": "Card under the sign-in form after a wrong email or password, above Forgot password and Create account."
+  },
+  "passwordResetIfAccount": "If there's a Vaultara account for this email, a reset link is on its way. Check your inbox.",
+  "@passwordResetIfAccount": {
+    "description": "Shown after asking for a password reset. The same for every email."
+  },
+  "socialContinueGoogle": "Continue with Google",
+  "@socialContinueGoogle": {
+    "description": "Button that signs in or creates an account with Google."
+  },
+  "socialContinueApple": "Continue with Apple",
+  "@socialContinueApple": {
+    "description": "Button that signs in or creates an account with Apple."
+  },
+  "socialOr": "or",
+  "@socialOr": {
+    "description": "Divider between the Google and Apple buttons and the email form."
+  },
+  "socialNotAvailable": "This sign-in option isn't available right now. Use your email and password instead.",
+  "@socialNotAvailable": {
+    "description": "Shown when Google or Apple sign-in is not set up or not available."
+  },
+  "socialAccountExists": "This email already has a Vaultara account. Sign in with your email and password.",
+  "@socialAccountExists": {
+    "description": "Shown when Google or Apple sign-in uses an email that already has a password account."
   }
 }
