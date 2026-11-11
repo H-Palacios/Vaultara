@@ -89,11 +89,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
     if (changed != true) return;
 
-    CategoryRepository.clearForSignOut();
-    RecordRepository.clearForSignOut();
-    GroupRepository.clearForSignOut();
-    await CategoryRepository.loadForCurrentUser();
-    await RecordRepository.loadForCurrentUser();
+    // Reload in place: signing the stores out cancelled every reminder.
+    await CategoryRepository.loadForCurrentUser(force: true);
+    await RecordRepository.reload();
     await GroupRepository.loadForCurrentUser(forceReload: true);
 
     if (!mounted) return;

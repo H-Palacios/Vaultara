@@ -136,35 +136,35 @@ class _ProfileScreenState extends State<ProfileScreen> {
       MaterialPageRoute(
         builder: (_) => PremiumBuilder(
           initial: widget.isPremium,
-          builder: (_, isPremium) => PlansScreen(
-            isPremium: isPremium,
-            onUpgrade: widget.onUpgrade,
-          ),
+          builder: (_, isPremium) =>
+              PlansScreen(isPremium: isPremium, onUpgrade: widget.onUpgrade),
         ),
       ),
     );
   }
 
   void _openAccount() {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const AccountScreen()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const AccountScreen()));
   }
 
   void _openFamily() {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const FamilyScreen()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const FamilyScreen()));
   }
 
   void _openTutorials() {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const TutorialsScreen()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const TutorialsScreen()));
   }
 
   Future<void> _openSubscriptionManagement() async {
-    final uri = Uri.parse('https://play.google.com/store/account/subscriptions');
+    final uri = Uri.parse(
+      'https://play.google.com/store/account/subscriptions',
+    );
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
@@ -195,8 +195,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     if (changed != true) return;
 
-    CategoryRepository.clearForSignOut();
-    await CategoryRepository.loadForCurrentUser();
+    await CategoryRepository.loadForCurrentUser(force: true);
   }
 
   @override
@@ -213,10 +212,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             ScreenHeader(title: t.profileHeaderTitle),
             const SizedBox(height: 16),
-            ProfileHeaderCard(
-              profile: _profile,
-              isPremium: widget.isPremium,
-            ),
+            ProfileHeaderCard(profile: _profile, isPremium: widget.isPremium),
             const SizedBox(height: 20),
             _SectionHeader(text: t.profile_app_settings_title),
             SettingsTile(
@@ -368,10 +364,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         size: 18,
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                       ),
-                onTap: () => PdfExport.exportAll(
-                  context,
-                  isPremium: isPremium,
-                ),
+                onTap: () => PdfExport.exportAll(context, isPremium: isPremium),
               ),
             ),
             const SizedBox(height: 12),
@@ -446,10 +439,7 @@ class _SectionHeader extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8),
       child: Text(
         text,
-        style: const TextStyle(
-          fontSize: 13,
-          fontWeight: FontWeight.w700,
-        ),
+        style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
       ),
     );
   }
