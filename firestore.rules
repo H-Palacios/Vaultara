@@ -384,11 +384,13 @@ service cloud.firestore {
     function validPreference() {
       // done and hints hold tutorial ids, for preferences/tutorials. pins
       // holds pinned category keys, for preferences/pinnedCategories.
+      // snoozed holds insights put off with Later, for preferences/insights.
       return smallDoc(20)
         && optionalList('labels', 100)
         && optionalList('pins', 100)
         && optionalList('done', 60)
-        && optionalList('hints', 60);
+        && optionalList('hints', 60)
+        && optionalList('snoozed', 60);
     }
 
     function assistantExpiryOk(d) {
