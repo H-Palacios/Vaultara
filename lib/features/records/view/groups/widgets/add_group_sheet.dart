@@ -17,12 +17,16 @@ class AddGroupSheet extends StatelessWidget {
   /// Returns the message to show when the name is already used here.
   final String? Function(String name)? extraCheck;
 
+  /// Group name ideas shown as chips when adding (not when renaming).
+  final List<String> suggestions;
+
   const AddGroupSheet({
     super.key,
     required this.onCreate,
     this.limit,
     this.initialName,
     this.extraCheck,
+    this.suggestions = const <String>[],
   });
 
   @override
@@ -38,6 +42,7 @@ class AddGroupSheet extends StatelessWidget {
       initialName: initialName,
       limit: renaming ? null : limit,
       extraCheck: extraCheck,
+      suggestions: renaming ? const <String>[] : suggestions,
       messages: NameValidationMessages(
         empty: loc.groupErrorEmpty,
         tooShort: loc.groupErrorTooShort,

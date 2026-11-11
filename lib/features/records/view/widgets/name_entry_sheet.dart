@@ -24,6 +24,9 @@ class NameEntrySheet extends StatefulWidget {
   /// Returns the message to show, or null when the name is fine.
   final String? Function(String formattedName)? extraCheck;
 
+  /// Names offered as chips under the field; tapping one fills it in.
+  final List<String> suggestions;
+
   const NameEntrySheet({
     super.key,
     required this.title,
@@ -36,6 +39,7 @@ class NameEntrySheet extends StatefulWidget {
     this.initialName,
     this.accessory,
     this.extraCheck,
+    this.suggestions = const <String>[],
   });
 
   @override
@@ -140,6 +144,28 @@ class _NameEntrySheetState extends State<NameEntrySheet> {
                         errorText: _errorText,
                       ),
                     ),
+                    if (widget.suggestions.isNotEmpty && !_limitReached) ...[
+                      const SizedBox(height: 10),
+                      Wrap(
+                        spacing: 6,
+                        runSpacing: 4,
+                        children: [
+                          for (final idea in widget.suggestions)
+                            ActionChip(
+                              visualDensity: VisualDensity.compact,
+                              label: Text(idea),
+                              onPressed: () {
+                                _controller.value = TextEditingValue(
+                                  text: idea,
+                                  selection: TextSelection.collapsed(
+                                    offset: idea.length,
+                                  ),
+                                );
+                              },
+                            ),
+                        ],
+                      ),
+                    ],
                     if (widget.accessory != null) ...[
                       const SizedBox(height: 12),
                       widget.accessory!(context, _controller.text),

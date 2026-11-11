@@ -14,7 +14,7 @@ class TextSearch {
     bool fuzzy = false,
   }) {
     final trimmed = query.trim();
-    final needle = fold(trimmed);
+    final needle = spelling(fold(trimmed));
 
     if (needle.isEmpty) {
       return SearchResult<T>(
@@ -29,7 +29,7 @@ class TextSearch {
     final queryWords = _words(needle);
 
     for (final item in items) {
-      final text = fold(textOf(item));
+      final text = spelling(fold(textOf(item)));
       if (text.contains(needle)) {
         exact.add(item);
       } else if (fuzzy && _nearMatch(queryWords, _words(text))) {
@@ -124,6 +124,14 @@ class TextSearch {
     'ύ': 'υ',
     'ώ': 'ω',
   };
+
+  /// Folds British and American spellings together, so "license" finds
+  /// "Driving Licence" and the other way round. Expects folded text.
+  static String spelling(String folded) => folded
+      .replaceAll('licens', 'licenc')
+      .replaceAll('defens', 'defenc')
+      .replaceAll('jewelry', 'jewellery')
+      .replaceAll('center', 'centre');
 
   /// Lower case with common accents removed, for comparing text.
   static String fold(String input) {

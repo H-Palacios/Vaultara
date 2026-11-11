@@ -6,9 +6,11 @@ class InputValidator {
   /// True when [value] has a character that does not belong in a name.
   /// Letters and numbers in any language are fine, as are spaces and a few
   /// marks people use in names: - & ' . , / ( ) +
+  /// The zero-width joiners that Persian, Sinhala, Telugu and other scripts
+  /// need inside words, and the Uzbek ‘ and ʻ apostrophes, are allowed too.
   static bool containsSymbols(String value) {
     return RegExp(
-      r"[^\p{L}\p{M}\p{N}\s\-&'’.,/()+]",
+      "[^\\p{L}\\p{M}\\p{N}\\s\\-&'\u2019\u2018\u02bb.,/()+\u200c\u200d]",
       unicode: true,
     ).hasMatch(value);
   }

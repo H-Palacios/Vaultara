@@ -42,6 +42,9 @@ import 'package:vaultara/features/scan/logic/scan_parser.dart';
 import 'package:vaultara/features/records/logic/name_validator.dart';
 import 'package:vaultara/features/scan/services/document_scanner.dart';
 import 'package:vaultara/features/records/view/editor/editor_actions_row.dart';
+import 'package:vaultara/features/records/view/editor/editor_expiry_quick.dart';
+import 'package:vaultara/features/records/view/editor/editor_quick_start.dart';
+import 'package:vaultara/features/records/logic/expiry_dates.dart';
 import 'package:vaultara/features/records/view/editor/editor_category_group_fields.dart';
 import 'package:vaultara/features/records/view/editor/editor_free_limit_banner.dart';
 import 'package:vaultara/features/records/view/editor/editor_more_details.dart';
@@ -559,8 +562,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final DateTime? scannedExpiry = r.expiryDate;
     if (scannedExpiry != null) {
       final DateTime d = DateUtils.dateOnly(scannedExpiry);
-      final DateTime pickerLast = DateTime(DateTime.now().year + 20);
-      if (!d.isAfter(pickerLast)) {
+      if (ExpiryDates.inRange(d)) {
         expiryDate = d;
         expiryController.text = d.toIso8601String().substring(0, 10);
         expiryError = null;
@@ -996,9 +998,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final DateTime? expiry = p.expiryDate;
     if (expiry != null && (overwrite || expiryDate == null)) {
       final DateTime day = DateUtils.dateOnly(expiry);
-      final DateTime today = DateUtils.dateOnly(DateTime.now());
-      final DateTime last = DateTime(DateTime.now().year + 20);
-      if (day.isAfter(today) && !day.isAfter(last)) {
+      if (ExpiryDates.inRange(day)) {
         expiryDate = day;
         expiryController.text = day.toIso8601String().substring(0, 10);
         expiryError = null;
@@ -1095,6 +1095,23 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
   }
 
+  void _onQuickStart(QuickStartItem item) {
+    final loc = AppLocalizations.of(context)!;
+    final bool known = _buildCategoryKeyList().contains(item.categoryKey);
+    if (!known) return;
+    _onCategoryChanged(item.categoryKey);
+    _onGroupChanged(item.groupKey);
+    if (nameController.text.trim().isEmpty) {
+      final String? name = switch (item.groupKey) {
+        'passports' => loc.scanNamePassport,
+        'id_cards' => loc.scanNameIdCard,
+        _ => null,
+      };
+      if (name != null) nameController.text = name;
+    }
+    nameFocus.requestFocus();
+  }
+
   void _onNameEdited(String _) {
     if (nameError != null) {
       setState(() => nameError = null);
@@ -1104,30 +1121,24 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   Future<void> _onExpiryTapped() async {
     if (isAnyTutorialMode) return;
 
-    final now = DateTime.now();
-    final todayOnly = DateTime(now.year, now.month, now.day);
-    final tomorrow = todayOnly.add(const Duration(days: 1));
-
-    final DateTime initial =
-        (expiryDate != null && expiryDate!.isAfter(todayOnly))
-        ? expiryDate!
-        : tomorrow;
-
     final selected = await showDatePicker(
       context: context,
-      initialDate: initial,
-      firstDate: tomorrow,
-      lastDate: DateTime(now.year + 20),
+      initialDate: ExpiryDates.pickerInitial(expiryDate),
+      firstDate: ExpiryDates.first(),
+      lastDate: ExpiryDates.last(),
+      initialEntryMode: DatePickerEntryMode.calendar,
     );
 
-    if (selected != null && mounted) {
-      final DateTime normalized = DateUtils.dateOnly(selected);
-      setState(() {
-        expiryDate = normalized;
-        expiryController.text = normalized.toIso8601String().substring(0, 10);
-        expiryError = null;
-      });
-    }
+    if (selected != null && mounted) _setExpiry(selected);
+  }
+
+  void _setExpiry(DateTime day) {
+    final DateTime normalized = DateUtils.dateOnly(day);
+    setState(() {
+      expiryDate = normalized;
+      expiryController.text = ExpiryDates.iso(normalized);
+      expiryError = null;
+    });
   }
 
   List<String> _buildCategoryKeyList() {
@@ -1224,7 +1235,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
   }
 
-  Future<void> _onSavePressed() async {
+  Future<void> _onSavePressed({bool addAnother = false}) async {
     if (isTutorialMode) {
       final bool fullTour = TutorialController.instance.isFullTour;
       final BuildContext? rootCtx = fullTour
@@ -1352,7 +1363,38 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       ActionFeedbackSnackbar.showAdded(context, formattedName);
     }
 
+    if (addAnother && !isEditMode) {
+      _resetForNext();
+      return;
+    }
+
     Navigator.pop(context);
+  }
+
+  /// Clears what belongs to the record just saved and keeps what the next
+  /// one is likely to share: category, group, person, reminder and repeat.
+  void _resetForNext() {
+    setState(() {
+      isSaving = false;
+      nameController.clear();
+      notesController.clear();
+      expiryController.clear();
+      lostLineController.clear();
+      expiryDate = null;
+      renewalCost = null;
+      attachments = <RecordAttachment>[];
+      newAttachmentPaths = <String>[];
+      scanBanner = null;
+      scanFailed = false;
+      scannedNationality = null;
+      _declinedMatchId = null;
+      _assistHint = null;
+      _groupSuggestion = null;
+      nameError = null;
+      expiryError = null;
+    });
+    _initialSignature = _signature();
+    nameFocus.requestFocus();
   }
 
   String? _initialSignature;
@@ -1560,7 +1602,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       ],
     ];
 
-    final double maxHeight = MediaQuery.of(context).size.height * 0.9;
+    final double maxHeight = MediaQuery.of(context).size.height * 0.92;
 
     return PopScope(
       canPop: !isAnyTutorialMode,
@@ -1634,6 +1676,15 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                 const SizedBox(height: 12),
                               ],
                               if (!isEditMode) ...[
+                                if (_canAssist &&
+                                    selectedCategoryKey == null &&
+                                    selectedSubcategory == null &&
+                                    widget.prefill == null &&
+                                    widget.sharedFilePath == null)
+                                  EditorQuickStart(
+                                    enabled: !isSaving && !scanBusy,
+                                    onPicked: _onQuickStart,
+                                  ),
                                 EditorCategoryGroupFields(
                                   categoryFieldKey: categoryFieldKey,
                                   subcategoryFieldKey: subcategoryFieldKey,
@@ -1712,6 +1763,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                 hintSize: hintSize,
                                 onTap: _onExpiryTapped,
                               ),
+                              if (!isAnyTutorialMode)
+                                EditorExpiryQuick(
+                                  expiryDate: expiryDate,
+                                  enabled: !isSaving,
+                                  onPicked: _setExpiry,
+                                ),
                               const SizedBox(height: 4),
                             ],
                           ),
@@ -1756,6 +1813,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                     isSaving: isSaving,
                     onCancel: _onCancelPressed,
                     onSave: _onSavePressed,
+                    onSaveAndAddAnother: isEditMode || isAnyTutorialMode
+                        ? null
+                        : () => _onSavePressed(addAnother: true),
                   ),
                 ),
               ],

@@ -1,3 +1,4 @@
+import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -49,6 +50,10 @@ class RecordsScreen extends StatefulWidget {
   final String? focusRecordId;
   final String? initialSearch;
 
+  /// Opens Add record as soon as the screen shows, used right after a new
+  /// group is made.
+  final bool openAddOnStart;
+
   const RecordsScreen({
     super.key,
     required this.category,
@@ -56,6 +61,7 @@ class RecordsScreen extends StatefulWidget {
     required this.isPremium,
     this.focusRecordId,
     this.initialSearch,
+    this.openAddOnStart = false,
   });
 
   @override
@@ -95,6 +101,12 @@ class _RecordsScreenState extends State<RecordsScreen> {
     DayClock.day.addListener(_onDayChanged);
 
     _loadFirstName();
+
+    if (widget.openAddOnStart) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _openAddRecordSheet();
+      });
+    }
   }
 
   @override
@@ -202,10 +214,11 @@ class _RecordsScreenState extends State<RecordsScreen> {
         if (!mounted) return;
 
         if (!scheduled && record.reminderOffsetDays != null) {
-          ActionFeedbackSnackbar.showNotificationsDisabled(
+          await NotificationAsk.afterReminderSet(
             context,
             onOpenSettings: _openNotificationSettings,
           );
+          if (!mounted) return;
         }
 
         setState(() {});
