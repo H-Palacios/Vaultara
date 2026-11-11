@@ -14,12 +14,17 @@ import 'package:vaultara/features/reminders/logic/reminder_copy.dart';
 import 'package:vaultara/features/reminders/logic/reminder_offsets.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
-import 'package:intl/intl.dart';
-import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/reminders/services/notification_action_router.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/platform/background_notification_actions.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
+import 'package:vaultara/core/data/user_name.dart';
+import 'package:vaultara/core/navigation/navigator_key.dart';
+import 'package:vaultara/features/reminders/logic/reminder_plan.dart';
+import 'package:vaultara/features/reminders/logic/reminder_timing.dart';
+import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 
 class ReminderScheduler {
   static final FlutterLocalNotificationsPlugin _plugin =
@@ -32,12 +37,15 @@ class ReminderScheduler {
 
   static int _id(int base, int slot) => notificationSlotId(base, slot);
 
-  static NotificationDetails _detailsFor(AppLocalizations loc, {required bool withActions}) {
+  static NotificationDetails _detailsFor(
+    AppLocalizations loc, {
+    required bool withActions,
+  }) {
     return NotificationDetails(
       android: AndroidNotificationDetails(
-        'expiry_reminders',
-        'Expiry reminders',
-        channelDescription: 'Notifications reminding you of upcoming expiry dates',
+        kNotificationChannelId,
+        loc.notifChannelName,
+        channelDescription: loc.notifChannelDescription,
         importance: Importance.high,
         priority: Priority.high,
         icon: _kNotificationIcon,
@@ -77,6 +85,45 @@ class ReminderScheduler {
       loc = lookupAppLocalizations(const Locale('en'));
     }
     return (loc.notificationActionRenewed, loc.notificationActionTomorrow);
+  }
+
+  /// The app's language when a screen is open, otherwise the phone's.
+  static AppLocalizations channelLoc() {
+    final context = appContext;
+    final fromContext = context == null ? null : AppLocalizations.of(context);
+    if (fromContext != null) return fromContext;
+    try {
+      return lookupAppLocalizations(PlatformDispatcher.instance.locale);
+    } catch (_) {
+      return lookupAppLocalizations(const Locale('en'));
+    }
+  }
+
+  static String? _channelLocale;
+
+  /// Names the Android reminder channel in the app's language. Android shows
+  /// this name in the phone's notification settings, and it was always in
+  /// English. Creating a channel that exists only updates its name and
+  /// description, so the person's sound and importance choices are kept.
+  static Future<void> localiseChannel([AppLocalizations? loc]) async {
+    if (!Platform.isAndroid) return;
+    final l = loc ?? channelLoc();
+    if (_channelLocale == l.localeName) return;
+    try {
+      final android = _plugin
+          .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin
+          >();
+      await android?.createNotificationChannel(
+        AndroidNotificationChannel(
+          kNotificationChannelId,
+          l.notifChannelName,
+          description: l.notifChannelDescription,
+          importance: Importance.high,
+        ),
+      );
+      _channelLocale = l.localeName;
+    } catch (_) {}
   }
 
   static Future<void> init() async {
@@ -141,7 +188,10 @@ class ReminderScheduler {
       final status = await Permission.notification.request();
       if (!status.isGranted) return _allowedCache = false;
 
-      final android = _plugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
+      final android = _plugin
+          .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin
+          >();
       return _allowedCache = await android?.areNotificationsEnabled() ?? true;
     }
 
@@ -164,31 +214,179 @@ class ReminderScheduler {
   }) async {
     await init();
 
-    final offset = item.reminderOffsetDays;
-    final start = seriesOffset(offset, item.leadDays);
-
+    final start = seriesOffset(item.reminderOffsetDays, item.leadDays);
     if (start == null) {
       await cancelSeries(item.reminderBaseId, keepSnooze: keepSnooze);
       return true;
     }
 
     if (!await notificationsAllowed()) return false;
-    await cancelSeries(item.reminderBaseId, keepSnooze: keepSnooze);
-
-    await scheduleReminderSeries(
+    await scheduleRecord(
       loc: loc,
-      baseNotificationId: item.reminderBaseId,
-      expiryDate: item.expiryDate,
-      initialOffsetDays: start,
-      steps: seriesSteps(offset, item.leadDays),
+      item: item,
       firstName: firstName,
-      recordName: RecordDisplayName.of(item, loc),
-      recordId: item.id,
-      leadDays: item.leadDays,
+      keepSnooze: keepSnooze,
     );
-
     return true;
   }
+
+  /// The reminders a record still has to come, in date order.
+  static List<PlannedReminder> planFor(TrackedItem item, {DateTime? today}) {
+    if (item.isDeleted) return const <PlannedReminder>[];
+    final start = seriesOffset(item.reminderOffsetDays, item.leadDays);
+    if (start == null) return const <PlannedReminder>[];
+    final steps = seriesSteps(item.reminderOffsetDays, item.leadDays);
+    final offsets = steps == null
+        ? ReminderOffsets.forInitial(start)
+        : (List<int>.from(steps)..sort((a, b) => b.compareTo(a)));
+    final int? leadStep =
+        item.leadDays ??
+        (steps != null && offsets.isNotEmpty ? offsets.first : null);
+    final repeats = (item.repeatMonths ?? 0) > 0;
+    return ReminderPlan.build(
+      expiryDate: item.expiryDate,
+      offsets: offsets,
+      leadStep: leadStep,
+      afterExpiry:
+          !repeats && NotificationPrefs.get(NotificationKind.afterExpiry),
+      today: Dates.only(today ?? DateTime.now()),
+    );
+  }
+
+  /// Schedules a record's reminders, replacing any it had. [maxSteps] keeps
+  /// only the soonest ones, when the phone's limit is shared between many
+  /// records (see ReminderBudget).
+  static Future<void> scheduleRecord({
+    required AppLocalizations loc,
+    required TrackedItem item,
+    String? firstName,
+    bool keepSnooze = false,
+    int? maxSteps,
+  }) async {
+    await init();
+    await cancelSeries(item.reminderBaseId, keepSnooze: keepSnooze);
+    if (!await notificationsAllowed()) return;
+    if (await DailyDigestService.isEnabled()) {
+      DailyDigestService.refreshSoon();
+      return;
+    }
+    await localiseChannel(loc);
+
+    var plan = planFor(item);
+    if (maxSteps != null && plan.length > maxSteps) {
+      plan = plan.take(maxSteps < 0 ? 0 : maxSteps).toList();
+    }
+    if (plan.isEmpty) return;
+
+    final name = (firstName ?? '').trim().isNotEmpty
+        ? firstName!.trim()
+        : UserName.first;
+    final person = PeopleRepository.byId(item.holderId)?.name;
+    final details = _detailsFor(loc, withActions: item.id != null);
+    final at = await ReminderTimeService.getTime();
+    final now = DateTime.now();
+    final log = await _todayLog(now);
+    var logChanged = false;
+
+    for (final step in plan) {
+      final key = ReminderTodayLog.seriesKey(
+        item.reminderBaseId,
+        step.offsetDays,
+      );
+      final fire = ReminderTiming.fireAt(
+        day: step.day,
+        hour: at.hour,
+        minute: at.minute,
+        now: now,
+        sentToday: log.has(key),
+      );
+      if (fire == null) continue;
+      if (Dates.only(step.day) == Dates.only(now) && log.add(key)) {
+        logChanged = true;
+      }
+
+      final text = ReminderCopy.forStep(
+        loc: loc,
+        offsetDays: step.offsetDays,
+        expiryDate: item.expiryDate,
+        recordName: item.name,
+        personName: person,
+        firstName: name,
+        locked: item.locked,
+        isLead: step.isLead,
+        isLast: step.isLast,
+        useName: step.useName,
+      );
+
+      await _plugin.zonedSchedule(
+        _id(item.reminderBaseId, step.slot),
+        text.title,
+        text.body,
+        tz.TZDateTime.from(fire, tz.local),
+        details,
+        payload: item.id == null
+            ? null
+            : encodeNotificationPayload(
+                id: item.id!,
+                baseId: item.reminderBaseId,
+                title: text.title,
+                body: text.body,
+                renewLabel: loc.notificationActionRenewed,
+                snoozeLabel: loc.notificationActionTomorrow,
+                hour: at.hour,
+                minute: at.minute,
+              ),
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+      );
+    }
+
+    if (logChanged) await _saveTodayLog(log);
+  }
+
+  static const String _todayKey = 'reminderToday_v1';
+  static ReminderTodayLog? _log;
+  static Future<void> _logChain = Future<void>.value();
+
+  static Future<ReminderTodayLog> _todayLog(DateTime now) async {
+    final day = ReminderTodayLog.epochDay(now);
+    final cached = _log;
+    if (cached != null && cached.day == day) return cached;
+    String? raw;
+    try {
+      raw = (await SharedPreferences.getInstance()).getString(_todayKey);
+    } catch (_) {}
+    return _log = ReminderTodayLog.decode(raw, now);
+  }
+
+  static Future<void> _saveTodayLog(ReminderTodayLog log) {
+    _logChain = _logChain.then((_) async {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString(_todayKey, log.encode());
+      } catch (_) {}
+    });
+    return _logChain;
+  }
+
+  /// Sends a notification straight away so the person can check reminders
+  /// reach this phone. Returns false when notifications are not allowed.
+  static Future<bool> sendTest(AppLocalizations loc) async {
+    await init();
+    if (!await ensurePermissions()) return false;
+    await localiseChannel(loc);
+    await _plugin.show(
+      kTestNotificationId,
+      loc.notifTestTitle,
+      loc.notifTestBody,
+      _detailsFor(loc, withActions: false),
+    );
+    return true;
+  }
+
+  /// Reserved for the test notification.
+  static const int kTestNotificationId = 0x64000061;
 
   static int? seriesOffset(int? offset, int? leadDays) {
     if (offset != null) return offset >= 0 ? offset : null;
@@ -207,16 +405,14 @@ class ReminderScheduler {
     final merged = <int>{
       ...ReminderOffsets.forInitial(leadDays),
       ...ReminderOffsets.forInitial(offset),
-    }.toList()
-      ..sort((a, b) => b.compareTo(a));
+    }.toList()..sort((a, b) => b.compareTo(a));
     if (merged.length <= ReminderOffsets.maxNotificationsPerRecord) {
       return merged;
     }
     final keep = <int>{
       merged.first,
       ...ReminderOffsets.forInitial(offset),
-    }.toList()
-      ..sort((a, b) => b.compareTo(a));
+    }.toList()..sort((a, b) => b.compareTo(a));
     return keep.take(ReminderOffsets.maxNotificationsPerRecord).toList();
   }
 
@@ -229,14 +425,18 @@ class ReminderScheduler {
     if (!await notificationsAllowed()) return;
 
     final at = await ReminderTimeService.getTime();
-    final tomorrow = Dates.only(DateTime.now()).add(const Duration(days: 1));
-    final fire = tomorrow.add(Duration(hours: at.hour, minutes: at.minute));
-    final date = DateFormat('d MMMM y', SafeLocale.date(loc.localeName))
-        .format(item.expiryDate);
+    final now = DateTime.now();
+    // Built from the calendar date so a clock change tonight does not move it.
+    final fire = DateTime(now.year, now.month, now.day + 1, at.hour, at.minute);
 
-    final displayName = RecordDisplayName.of(item, loc);
-    final title = loc.snoozeTitle(displayName);
-    final body = loc.snoozeBody(date, displayName);
+    final text = ReminderCopy.snooze(
+      loc: loc,
+      expiryDate: item.expiryDate,
+      displayName: RecordDisplayName.of(item, loc),
+      locked: item.locked,
+    );
+    final title = text.title;
+    final body = text.body;
 
     await _plugin.zonedSchedule(
       _id(item.reminderBaseId, _snoozeSlot),
@@ -261,96 +461,6 @@ class ReminderScheduler {
           UILocalNotificationDateInterpretation.absoluteTime,
     );
   }
-  static Future<void> scheduleReminderSeries({
-    required AppLocalizations loc,
-    required int baseNotificationId,
-    required DateTime expiryDate,
-    required int initialOffsetDays,
-    List<int>? steps,
-    required String firstName,
-    required String recordName,
-    String? recordId,
-    int? leadDays,
-  }) async {
-    await init();
-    if (!await notificationsAllowed()) return;
-    if (await DailyDigestService.isEnabled()) {
-      DailyDigestService.refreshSoon();
-      return;
-    }
-    final details = _detailsFor(loc, withActions: recordId != null);
-    final fireTime = await ReminderTimeService.getTime();
-    final offsets = steps == null
-        ? ReminderOffsets.forInitial(initialOffsetDays)
-        : (List<int>.from(steps)..sort((a, b) => b.compareTo(a)));
-    final int? leadStep = leadDays ??
-        (steps != null && offsets.isNotEmpty ? offsets.first : null);
-
-    for (int i = 0; i < offsets.length; i++) {
-      final offset = offsets[i];
-
-      final fireAt = _fireTimeFor(
-        expiryDate: expiryDate,
-        offsetDays: offset,
-        at: fireTime,
-      );
-      if (fireAt == null) continue;
-
-      final text = ReminderCopy.forStep(
-        loc: loc,
-        position: i + 1,
-        total: offsets.length,
-        offsetDays: offset,
-        expiryDate: expiryDate,
-        firstName: firstName,
-        recordName: recordName,
-        isLeadStep: i == 0 && leadStep != null && offset == leadStep,
-      );
-
-      await _plugin.zonedSchedule(
-        _id(baseNotificationId, i),
-        text.title,
-        text.body,
-        fireAt,
-        details,
-        payload: recordId == null
-            ? null
-            : encodeNotificationPayload(
-                id: recordId,
-                baseId: baseNotificationId,
-                title: text.title,
-                body: text.body,
-                renewLabel: loc.notificationActionRenewed,
-                snoozeLabel: loc.notificationActionTomorrow,
-                hour: fireTime.hour,
-                minute: fireTime.minute,
-              ),
-        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-        uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime,
-      );
-    }
-  }
-  static tz.TZDateTime? _fireTimeFor({
-    required DateTime expiryDate,
-    required int offsetDays,
-    required TimeOfDay at,
-  }) {
-    final now = DateTime.now();
-    final today = Dates.only(now);
-    final targetDay =
-        Dates.only(expiryDate).subtract(Duration(days: offsetDays));
-
-    if (targetDay.isBefore(today)) return null;
-
-    var fire =
-        targetDay.add(Duration(hours: at.hour, minutes: at.minute));
-    if (!fire.isAfter(now)) {
-      fire = now.add(const Duration(minutes: 2));
-    }
-
-    return tz.TZDateTime.from(fire, tz.local);
-  }
 
   static Future<void> scheduleOnDay({
     required int id,
@@ -364,8 +474,21 @@ class ReminderScheduler {
     await init();
     if (!await notificationsAllowed()) return;
     final at = time ?? await ReminderTimeService.getTime();
-    final fireAt = _fireTimeFor(expiryDate: day, offsetDays: 0, at: at);
-    if (fireAt == null) return;
+    final now = DateTime.now();
+    final log = await _todayLog(now);
+    final key = ReminderTodayLog.singleKey(id);
+    final fire = ReminderTiming.fireAt(
+      day: day,
+      hour: at.hour,
+      minute: at.minute,
+      now: now,
+      sentToday: log.has(key),
+    );
+    if (fire == null) return;
+    if (Dates.only(day) == Dates.only(now) && log.add(key)) {
+      await _saveTodayLog(log);
+    }
+    final fireAt = tz.TZDateTime.from(fire, tz.local);
 
     await _plugin.zonedSchedule(
       id,
